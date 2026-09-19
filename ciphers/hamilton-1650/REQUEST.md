@@ -40,4 +40,5 @@ copy request, to the Bodleian, once the NRS answer is in.
 
 | Date | Action | Result |
 |---|---|---|
-| | | |
+| 19 Sept 2026 | Catalogue entry checked at catalogue.nrscotland.gov.uk | Confirmed: GD406/1/2197, "Keys for ciphers used in the correspondence of the Duke of Hamilton", c 1645, 5 items, Access status Open, Location On site, Language "in cipher". Search room email on the page footer: lsrhe@scotlandspeople.gov.uk |
+| | Request emailed | |
