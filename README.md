@@ -6,17 +6,22 @@ S. Tomokiyo's site Cryptiana.
 ## Layout
 
     CATALOG.md            every item from Cryptiana's index with status, shelfmark and source page
+    LANDSCAPE.md          who is solving what (Sept 2026), corrected statuses, where the open ground is
+    LESSONS.md            how the current solvers work, distilled from their repositories
     ciphers/<name>/       one folder per cipher being worked on: ciphertext.txt + NOTES.md
     sources/cryptiana/    unmodified snapshot of the Cryptiana pages (19 September 2026)
     tools/html2text.py    render a saved page as plain text
     tools/freq.py         token frequency, index of coincidence, bigrams for a ciphertext
+    tools/refresh-sources.ps1  re-download the index page and show what changed (PowerShell)
 
 ## Start here
 
-1. Read `CATALOG.md` and pick an item marked Open.
-2. Check https://dbourdeau.github.io/cyphersolver/ and
-   https://github.com/aaymeloglu/unsolved-ciphers first. Solutions were arriving weekly in
-   September 2026 and the index page lags behind them.
+1. Read `LANDSCAPE.md`. Most of Cryptiana's list was swept by two AI-driven projects in the week
+   before this snapshot, and the section "Where the open ground is" says what is left.
+2. Read `LESSONS.md` before writing any solver. The short version: search for a printed solution,
+   get the page image, look for a sibling letter with a decipherment, find the structure by hand,
+   and never report a negative without a matched control.
+3. `CATALOG.md` keeps every item from the index page with Tomokiyo's status and the corrections.
 3. Read the background page named in the catalogue:
 
        python3 tools/html2text.py sources/cryptiana/web/mary.htm | less

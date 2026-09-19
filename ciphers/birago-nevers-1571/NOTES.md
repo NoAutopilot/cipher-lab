@@ -5,3 +5,4 @@
 - **Transcription:** `ciphertext.txt` (Tomokiyo's). Note his warning: the diacritics (÷ ¯ ¨ + and letters n, f, c, m, a, l) should be placed over the following one or two characters. Check the Gallica image before trusting any parse.
 - **Background page:** `sources/cryptiana/web/nevers.htm` (section BnFfr3251).
 - **Ideas:** Digits run continuously without separators, so the first problem is tokenisation. Try two-digit groups, then variable-length. The diacritics probably modify the following digit pair (syllable vs. letter, or a vowel change). Plaintext is Italian.
+- **Solver status (19 Sept 2026):** Closed-negative by Bourdeau (cyphersolver/birago), 16 Sept 2026, after glyph-level re-transcription from Gallica (the "+" signs are superscript crosses). Variable-length designs excluded against controls; the only consistent design is beyond the annealer at this length. Needs a sibling letter or a crib.

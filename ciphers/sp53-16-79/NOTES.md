@@ -6,3 +6,4 @@
 - **Companion:** `../sp53-16-78`.
 - **Background page:** `sources/cryptiana/web/mary.htm`, `mary3.htm`.
 - **Ideas:** The lettered variants may be diacritic marks on base numbers, a common device in Mary-era ciphers to extend the table. Work no.78 and no.79 together to pool frequency counts.
+- **Solver status (19 Sept 2026):** Closed-negative by Bourdeau (cyphersolver/sp53) and Aymeloglu (TARGETS row 13), 15-16 Sept 2026. Scores at random level; the claim that it shares a key with no. 78 was withdrawn. Needs page images.

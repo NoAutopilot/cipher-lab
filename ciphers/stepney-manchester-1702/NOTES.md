@@ -5,3 +5,4 @@
 - **Transcription:** `ciphertext.txt`. Two short code runs embedded in cleartext, numbers up to 847.
 - **Known key nearby:** Other undeciphered letters in the Manchester Papers can be read with a key preserved with them in which THE = 454. Test whether that key fits this letter; Cryptiana implies it does not, but confirm.
 - **Ideas:** Too short for cryptanalysis on its own. The route is archival: the same cipher was probably used in other Stepney letters of 1702, some of which will have contemporary decipherments.
+- **Solver status (19 Sept 2026):** Offline-only per Bourdeau (cyphersolver/stepney), 15 Sept 2026: manuscript located and transcribed at Yale (OSB MSS fc37 box 8 folder 40, 24 groups); the THE=454 key rejected; the real key is in TNA SP 105/106 or BL Add MSS 7058-78.

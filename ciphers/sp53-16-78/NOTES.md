@@ -6,3 +6,4 @@
 - **Companion:** `../sp53-16-79` is in the same handwriting and probably the same or a related cipher.
 - **Background page:** `sources/cryptiana/web/mary.htm` and `mary3.htm` (several sibling SP53 ciphertexts were solved 2023-2026 by Biermann and Lasry, and the keys are published there; try them first).
 - **Ideas:** Numbers up to 139 with no letter tokens suggests a numeric nomenclator: low numbers for letters/homophones, higher for syllables or words. Plaintext is probably French. Check whether solved keys in mary3.htm decrypt any of it.
+- **Solver status (19 Sept 2026):** Closed-negative by Bourdeau (cyphersolver/sp53) and Aymeloglu (TARGETS row 13), 15-16 Sept 2026. The labels are Tomokiyo's glyph ids, so this is a symbol cipher. Controls at 507 tokens and 130 symbols read; the target shows no language basin in five languages. Needs page images and the SP53/22 keys.

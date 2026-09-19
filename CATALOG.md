@@ -13,6 +13,27 @@ re-solves them.
 "Page" is the file under `sources/cryptiana/web/` unless it says blog. "Folder" is a working folder
 under `ciphers/` when one exists.
 
+## Corrections from the solver repositories, 19 September 2026
+
+Two AI-driven projects swept this list in the week before the snapshot: Daniel Bourdeau's cyphersolver
+(99 targets) and Andrew Aymeloglu's unsolved-ciphers. Their trackers change the status of most rows below.
+The full reconciliation is in `LANDSCAPE.md`; the short version:
+
+- **Solved or read since the snapshot:** Charles I-Boswell 1643 (Pitt, Bourdeau), Henry of Navarre to Ségur 1585-86
+  (Bourdeau; the sender is Navarre, not Henry III), Bordeaux 1653 (Bourdeau, with the English key sheet DECODE R7537),
+  Ottobon 1589 (Aymeloglu), Vande Perre 1653 (Aymeloglu, not on the list), Davison 1584 (found in print).
+- **Partial with a published key:** Moray 1568 (Aymeloglu, 119 of 134 glyphs), Starhemberg 1758 (Aymeloglu),
+  royalist intercept 13 May 1646 (Aymeloglu, Digby key 129, 45 values), Isle of Wight 1648 (two keys excluded).
+- **Closed-negative against matched controls, pending images or a key:** SP53/16 nos. 78-79, SP53/22 f.52,
+  Birago 1571, Colbert 1665-75, Chaulnes 1690, Joyeuse 1594, du Croc 1567, Cocquet 1616, Thurloe pieces,
+  Vatican Challenge 5, Beverning-Vande Perre to Boreel 1653.
+- **Offline-only, the key or text is located but not online:** Hamilton 1650 (NRS GD406/1/2197), Stepney 1702,
+  Maurice-Rupert 1645 and the 1646 intercepts (BL offline), Torcy and Villars 1710 (dead transcription links),
+  d'Estaing 1779 (AAE), Berthier 1812 and Marmont 1807 (Vilcoq 1969 not digitised), Blancmesnil (fr. 3633 not digitised).
+- **Not a cipher:** Hyde's superscriptions (nulls).
+
+The tables below keep the statuses as Tomokiyo's page had them on 19 September 2026, so the two can be diffed.
+
 ## Open and partial items
 
 ### Italian and Latin, 1520s

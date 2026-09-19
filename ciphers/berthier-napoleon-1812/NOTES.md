@@ -5,3 +5,4 @@
 - **Transcription:** `ciphertext.txt` holds the opening as quoted on unsolved.htm. Numbers up to about 1388.
 - **Background page:** `sources/cryptiana/web/napoleon2.htm` (Napoleonic ciphers that may be similar).
 - **Ideas:** Large code, over 1200 entries, of the Grande Armée type. Repeated triples (918 1045 1100 appears twice near the start) suggest a fixed phrase. Compare with the Grand Chiffre tables in napoleon2.htm. Date context: retreat from Russia, Berthier was chief of staff.
+- **Solver status (19 Sept 2026):** Blocked per Bourdeau (cyphersolver/napoleon), 15 Sept 2026: the full ciphertext exists only in Vilcoq 1969, not digitised. Chuquet 1912 prints Berthier's clear letters of 22 Dec 1812 from the same carton, a ready crib. Cryptiana's two pages disagree on one group (356 vs 656).
