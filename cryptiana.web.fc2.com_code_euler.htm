@@ -1,0 +1,186 @@
+<HTML>
+<HEAD>
+<TITLE>数学者オイラーの残した暗号文の解読</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="オイラー, 暗号">
+<link rel=stylesheet type=text/css href=decode2.css>
+
+<style type="text/css">
+<!--
+.cipher1 { color:#ff0000;}
+.cipher2 { color:#cc00cc;}
+.cipher3 { color:#0000ff;}
+.cipher4 { color:#00a632;}
+-->
+</style>
+</HEAD>
+<BODY>
+<H1>数学者オイラーの残した暗号文の解読</H1>
+<P>数学者レオンハルト・オイラーの暗号とのかかわりと言えば，オイラーの定理として知られる整数論の基本定理が今日のRSA暗号の基礎になっていることがまず挙げられるだろう．オイラーは転置暗号に応用できるナイトの旅（<A HREF="https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%A4%E3%83%88%E3%83%BB%E3%83%84%E3%82%A2%E3%83%BC">ウィキペディア</A>）の研究もした．そして２００年後になって初めて解読されたラテン語の暗号文も残していたことを<A HREF="https://scienceblogs.de/klausis-krypto-kolumne/2020/12/26/ein-verschluesselter-text-des-mathematikers-leonhard-euler/">Klausis Krypto Kolumne</A>で知った．</P>
+<P>オイラーの暗号文が含まれるのは1744年7月4日のクリスティアン・ゴルトバハ（ゴールドバッハ・オイラーの定理，ゴールドバッハ予想などで知られる数学者）への手紙だ．本題は解析学なのだが，末尾付近で暗号文を持ち出している．</P>
+<DIV class="kakomi">
+しばらく前に次のような暗号文（ドイツ語原文はlogogryphum）を作りました．すべての記号は文字の意味をもち，平文はラテン語で書かれています：
+pxq&#383;wlznjdvyn&#383;tiddkqxhleebfpxdfgtlzbccfbk&#383;odxo <br>
+kfnglqxn&#383;chejmlckzxhrfwjgfhxvzjnbgyxcdgixkoxj<br>
+mlncoigdxvzflme&#383;nfyjqfangvnylrcxfonbfjalrkw&#383;nbf <br>
+pjoizoxqknubro&#383;adgiaxwkcbrbcklofrnjwng&#383;zfhgjfc <br>
+bcfvqjtxeevtbzfyjsbzh&#383;mlnbg&#383;sqjwglnxvzfkonbcoigd <br>
+xvrkfjalzxt&#383;nilenfgvcboofcfxnnfgnkbcjnnjynxvplgn <br>
+bfzfoxeejdgxbcjcn&#383;dyvdbhzlnvyxmbcblobbcyfekonb<br>
+ceiobfplwsxzxfjcndbhrlzqxs&#383;onbcoljf&#383;yqfmjeevhlee <br>
+xoiexmgicfdnktvoldxnfbxolcktvpxrnv<br>
+記号の意味に変化がないとはいえ，この種の暗号文（Schrift）は簡単には解読できないかもしれません．
+</DIV>
+<P>オイラーとゴルトバハの間のその後の文通ではこの暗号文に触れられておらず，ゴルトバハが暗号文を解いたのかどうかはわからない．この書簡は1843年に刊行された書簡集にも収録されていたが，長年解読されずにいた．</P>
+<P>オイラーは解読のためのヒントを与えてくれている．まず平文はラテン語と明かしている．「すべての記号は文字の意味をもち」というくだりは，ヌルがないことを示すだけでなく，転置暗号でなく換字暗号を使っていることを示唆しているといえるだろう．「記号の意味に変化はない」というのは，ヴィジュネル暗号のような多表式ではないことを表わしている．</P>
+<P>この暗号文の解読にはオイラー関係の文書を集める団体によって1907年に懸賞がかけられても進展がなかったが，1953年に改めて懸賞を告知したところ，ピエール・スペジアリが解読した（<A HREF="spanish.htm">スペインの暗号</A>，<A HREF="guicciardini.htm">フィレンツェの暗号</A>との関連で私も氏の別の著作を引用したことがある）．だが紙媒体でしか論文が流通しない時代にあって，数学者たちがその内容を知ることはできなかった（デーヴィッド・カーンの大著『コードブレーカーズ』（1967）p.765でも言及されているだけ）．そこで，1973年にハンス・ロールバハも自身の解読を公表した．</P>
+<P>ラテン語の暗号解読というのも一興かと思うので，両氏の解読過程を紹介したい．</P>
+
+<H2>スペジアリによるオイラーの暗号文の解読</H2>
+<P>まずラテン語の文字頻度はI E U T A M S N R O ...となる．ラテン語では最も多いI E U T Aだけでテキスト全体の半分を占めるが，オイラーの暗号文では408文字中，最も高頻度のnでも34回しか現われない．ラテン語の文字２１文字（K,W,Y,Zがなく，IとJの区別がない）に対して，暗号文には２７通りの記号（アルファベット２６文字と&#383; [長いsと呼ばれるsの異体字]）が使われていることから，高頻度文字には複数の記号が割り当てられていると思われる．</P>
+<P>同じ文字の連続は母音と子音を区別する手がかりになる．同じ文字が連続する箇所は次のとおり．</P>
+<P>iddk, leeb, bccf, xeev, boof, xnnf, jnnj, xeej, obbc, jeev, leex</P>
+<P>連続する文字の両隣に現われ，それ自身は連続して現われないもの（i, k, l, f, x, v, j）は，母音と思われる．b, o, cは連続して現われることも，連続する他の文字の隣に現われることもある．このうちbは連続して現われることもあるが（obbc），子音のように連続するo, cの隣に現われるパターンが３つもあるので（leeb, bccf, boof），母音と思われる．（ラテン語にはiiとかvuといった綴りもあり，短い暗号文中でたまたま子音が連続して現われないこともあると思われるので，このロジックは甘いと思うのだが，少しでも可能性があればそれを追求していかないと暗号解読はできない．）</P>
+<P>eは連続して現われるパターンが５つもあり，一方，単独で現われるのは６例しかない．低頻度文字でこのような特徴をもつのはLと思われる（nullum, illa, bellum, augella, ancillaなど連続して使われる例が多い）．</P>
+<P>繰り返し現われる文字列に着目すると，fjalrkw&#383;nとfjalzxt&#383;nがある．このうちkとxは母音だと仮定した．両者が同じ母音だとすると，この２つの文字列は同一である可能性が高い．つまり，r＝z，w＝tということになる．（これもかなり大胆な仮定だと思う．）</P>
+<!--<P>coigdxvも繰り返されるが，高頻度の記号なのに２回同じパターンで現われるのは不自然で，参考にならない．</P>-->
+<P>経験上，母音よりも子音のほうが特定が容易．母音はみな同じような頻度なので．</P>
+<P>ラテン語で最も高頻度の子音はT, M, S, Nで，これらを暗号文の高頻度記号にあてはめていくやり方は，悪いとは言わないが効率が悪い．</P>
+<P>ncoという，高頻度の３子音の連続に着目する．ラテン語でそのような３文字はMST, MTR, NTS, NTM, NTR, NST, RST, STR, STMが考えられる．だがまだ絞り込む材料がない．</P>
+<P>そこで低頻度の記号に着目する．たとえばaは暗号文中に５回しか現われていない（<u>f</u>ang<u>v</u>, <u>j</u>a<u>l</u>r<u>k</u>, &#383;adg<u>i</u>a<u>x</u>w<u>k</u>c, <u>j</u>a<u>l</u>z<u>x</u>；下線は母音と思われるもの）．母音（と思われる記号）を含まないang, adgの２つに着目する．高頻度記号のnはT, M, S, Nのどれか，より低頻度のgはN, R, Dのどれか．だとするとa＝Xで，ang＝XTRだと思われた（小文字が暗号文，大文字が平文の文字）．直前の母音fはEだ．</P>
+<P>adgのdはgよりもさらに低頻度で，連続して現われる．P, B, Fが候補となり，adg＝XPRが思いつく．</P>
+<P>ncoに戻ると，n＝Tとしたので，高頻度の子音cはMかSだろう．暗号文でc＝Mをあてはめてもうまくいかなかったので，c＝Sとする．すると，次のようなパターンがある（母音に下線を付した）．</P>
+<DIV  style="margin-left: 2em;">
+<TT>
+nco<u>i</u>gd<u>xv</u>zf<br>
+TS &nbsp;RP &nbsp; E
+</TT></DIV>
+<P>少し上にはxを含み近くにaが２回現われる箇所がある．</P>
+<DIV  style="margin-left: 2em;">
+<TT>
+adg<u>i</u>a<u>x</u>w<u>k</u>c<br>
+XPR X &nbsp; S
+</TT></DIV>
+<P>ここでk＝xが同じ母音だと仮定しているので，PROXIMISという単語が浮かび上がる．それをあてはめると上記の例は次のように補足できる．</P>
+<DIV  style="margin-left: 2em;">
+<TT>
+nco<u>i</u>gd<u>xv</u>zf<br>
+TS ORPI &nbsp;E
+</TT></DIV>
+<P>xvzfについて，nxvzf＝TI..EがTIONEだと思われるので，上記はSCORPIONEと思われる．（結局，手がかりになるかと思われた高頻度の３子音の連続ncoは，語末の-nと語頭のco-が続いただけのことで，単語の一部ではなかった．）</P>
+<P>ここまでくればあとは芋づる式に解読できる．</P>
+
+
+<H2>ロールバハによるオイラーの暗号文の解読</H2>
+<P>暗号文の文字頻度（多い順にn, f, x, ...）をラテン語と比べてみれば，転置暗号ではなく換字暗号であることは明らかだった．とはいえ，高頻度文字がそれほど突出していないことから，同じ平文文字に複数の記号が割り当てられる同音換字暗号（ホモフォニック暗号）であると思われた．ラテン語ならk,w,y,zは使われず，jもほとんどない．さらに，当時iとj，uとvは区別なく使われていたことから，平文の使用文字は20となる．暗号文ではアルファベット26文字に加えて，&#383;（長いs）というsの異体字も使われていたので27字ある．つまり，7文字は他の文字と同音字になっているということだ．</P>
+<P>まず，同音字の特定を目指した．そのために繰り返し現われるシーケンスに着目する．coigdxvは２回現われるが，その次の文字は一方ではr，他方ではz．fjalという文字列も２回現われ，次の文字はそれぞれrとzだった．このことから暗号文におけるrとzは等価だと予想できる（もちろんそうでない可能性もあるが，とりあえず何か仮定をしないと先に進めない）．dbhzl，dbhrlというグループが現われることも，z=rという仮定を支持している．さらに，xvzjと３回現われるxvzfとも同じとするとj＝fとなる．さらに，nnfgnとnnjynでj＝fとすると，g＝yとなる．このあたりになるとかなり大胆な仮定に思えるが，fyj（２回）とjgf，nylとnglといった３字連接があることから支持されると考えられた．</P>
+<P>こうして同音字の特定（仮定）が進むともっと長い文字列の比較もできるようになる．fjalrkw&#383;nとfjalzxt&#383;nでr＝zであることを考えると，k＝x，w＝tと推定できる．やはりこれだけだと大胆過ぎると思われる仮定だが，nnfgnkとnnjynx，koxjとxokf，zxfjとrkfjといった例から支持されるといえる．</P>
+<P>これで7つのうちの5つの同音字がわかったことになる（残り２文字は&#383;とvと予想される）．まとめると，</P>
+<P>j＝f，k＝x，w＝t，y＝g，z＝r</P>
+<P>となる．ラテン語の平文で使われないj,k,w,y,zが同音字に割り当てられているということは偶然とは考えにくい．</P>
+<DIV style="float:right; width:600px">
+<img src="euler1.png" width="300"><br>
+</DIV>
+<P>ここで暗号文の同音字を一方の文字に統一したもので改めて頻度統計を取ってみる．この際，ロールバハは単に各文字を数えるだけではなく，次にくる文字別の内訳も作った．２字連接を調べる<A HREF="contact.htm">連接表</A>の簡略版といえる．</P>
+<P>２字連接ではQUが最も顕著な特徴をもつ．Qの次には必ずUがきて，他の文字はこない．ところが，連接頻度表からはそのような特徴をもった文字はみつからない．暗号ではよくあるのだが（オイラーがどの程度，一般的な暗号の慣行を知っていたのかは定かではないが），平文のQUはまとめて暗号文の一つの記号に対応していると思われた．それでもQ（QU）は比較的低頻度で，その次は必ず母音だという特徴がある．ラテン語やイタリア語では特に（英語やドイツ語に比べ）母音の頻度が高い．</P>
+<P>そう思って連接頻度表を見ると，p＝QUの次にくるのはx, l, fしかない．これらの相対頻度から，f＝E，x＝I，l＝Aと思われる（ただし，lは平文のAにしては頻度が低すぎるのでl＝Oの可能性もある）．</P>
+<P>また，暗号文にeeという連続が現われ，eが低頻度であることから，eはD,L,Pのいずれかと思われる．このうちe＝Lをこれまでわかったこと（仮定）にあてはめてみると，</P>
+<DIV  style="margin-left: 2em;">
+<TABLE border="1"  style="letter-spacing: 5pt; margin-left: 0.2em;">
+<TR><TD><TT>
+I ALLEQUI <br>
+xhleebf xd
+</TT></TD>
+<TD><TT>
+&nbsp;E ILL<br>
+qftxeevtbr
+<TD><TT>
+ILLE <br>
+xeefg
+</TT></TD>
+<TD><TT>
+&nbsp; E ELL &nbsp;ALLI<br>
+gqfmfeevhleexoi
+</TT></TD>
+</TR>
+</TABLE>
+</DIV>
+<P>このうち３番目のILLEはもっともらしいと思われた．そうでなくとも，２番目の例からbとvは母音と思われる．bとvの頻度からすると，b＝U，v＝Oと思われる．とすれば，非常に高頻度の２字連接bcはUSと思われる．</P>
+<P>連接頻度表に戻ると，（左端の）vとiは同じような連接相手をもつことがわかる．&#383;とlも同様である．こうして，残り２つの同音字v＝i，&#383;＝lが得られた．上記でv＝i＝Oとすれば，</P>
+<DIV  style="margin-left: 2em;">
+<TABLE border="1" style="letter-spacing: 5pt;">
+<TR><TD><TT>
+&nbsp; E ELLO ALLI O<br>
+gqfmfeevhleexoi
+</TT></TD>
+</TR>
+</TABLE></DIV>
+<P>となり，こうなると欠けている文字を補うのは難しくない．</P>
+<DIV  style="margin-left: 2em;">
+<TABLE border="1" style="letter-spacing: 5pt;">
+<TR><TD><TT>
+&nbsp;DEBELLOGALLICO<br>
+gqfmfeevhleexoi
+</TT></TD>
+</TR>
+</TABLE></DIV>
+<P>de Bello Gallicoは「ガリアの戦いについて」の意味のラテン語で，有名なカエサルの著作『ガリア戦記』のことだ．</P>
+<P>ここまでくればあとは芋づる式に判明する．暗号文の末尾の部分は</P>
+<P>CAESAR DE BELLO GALLICO LIBRO SEPTIMO CAPITE VICESIMO QUINTO（カエサル，ガリア戦記，第７巻，第２５章）</P>
+<P>となる．他の部分は，若干の暗号化のミスや版の異動はあるものの，ガリア戦記の一節だった．</P>
+
+<H2>解読結果</H2>
+<P>解読された平文と暗号表は次のとおり．</P>
+<DIV class="kakomi">
+Quidam ante portam oppidi Gallu[s], qui per manus se[b]i ac pici[s]
+traditas glebas in ignem e regione turris proiiciebat,
+scorpione ab latere dextro transiectu[s] exanimatu[s]que
+concidit. Hunc [e]x proximis unus iacentem tran[s]gre[s]sus
+eodem illo munere fungabatur; [e][a]dem ratione ictu scorpioni[s]
+exanimato altero succeseit tertius et tertio quartu[s],
+nec ille prius est a propugnatoribus uacuus relictus
+locu[s] quam [オイラーはここで『ガリア戦記』の数語を抜かしている]
+fini[s] est pugnandi factus. Cae[s]ar de Bello Gallico libro septimo capite uicesimoquinto
+</DIV>
+<img src="euler_key.png" width="480" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>暗号文ではところどころ f（＝E）とすべきところが &#383; になっているが，これはよく似た字形の転記ミスの可能性が高い．さらに，Sをfと暗号化している箇所があるが，ロールバハは表の暗号文字と平文文字を取り違えたものと推測している（S→cと暗号化すべきところ，F→sというところを見てしまった）．スペジアリは暗号文字fをEとSの両方の欄に入れており，散逸しているオリジナルの手稿で２通りのfの字体があったのではないかと推測している．</P>
+
+<H2>講評</H2>
+<P>オイラーの暗号を解読した２氏のやり方は，独立に解読しただけあってアプローチが異なっている．</P>
+<P>スペジアリはまず母音と子音を区別している．これは常套手段であり古来論じられてきたものだが（<A HREF="porta.htm">ポルタ</A>，<A HREF="falconer.htm">フォークナー</A>），オイラーの暗号では単語の切れ目がわからないので少し難しい．スペジアリは連字を手がかりに論じているが，そのロジックは盤石ではないように思われる．だが１００％の確実性を待っていては暗号解読はできない．少しでも可能性があると思ったら追及してみないことには進まない．</P>
+<P>fjalrkw&#383;nとfjalzxt&#383;nのように３文字も違う文字列を，３文字のうち同じ位置に母音があるというだけで同じ文字列とみなしてしまうのも同様で，その３文字がmesとnosだった可能性だってあるはずでかなり乱暴な仮定だとは思うのだが，結局は同じ文字列という読みは当たり，この文字列はeexanimatだった（１語というかたまりではなかった）．</P>
+<P>母音と子音の区別ができたときに３子音の連続に着目したり，低頻度の文字に着目したりする点はおもしろい．（Xが手がかりとなる例は<A HREF="louisxiv0.htm">別稿</A>で引用したDevos (1967), p.48でも言及されている．）比較的低頻度なのによく連続して現われるeをLと推定する点は両者共通だ．</P>
+<P>ロールバハは母音と子音の区別からはいるのではなく，まず同音字の特定を目指した．長い文字列の次が同音字というだけでは危ういところだが，そうして予想したr＝zを他の箇所で確認しているので安心できる．その後のj＝f，g＝yはかなり大胆な予想だと思ったのだが，（私は同様のやり方で<A HREF="vatican.htm">失敗</A>したことがある）３字連接で確認を取っているので正解だった．（他にもチェックの結果排除した同様の仮定はあったのだろう．）</P>
+<P>７つのうちの５つの同音字が仮定できたところでロールバハは連接頻度表を作成した．最も特徴的なQ-Uの連接は使えなかったが（QUがひとかたまりとして扱われていたため），QU＋母音の特徴から一気にQU，E，I，Aを特定している．このあたりからはロジックとしては甘いように思われるが，可能性のあるものを追及して成功した結果を記しているのだろう．</P>
+<P>暗号解読では間違いないヒントが得られることはめったにない．両氏の解読プロセスは，論理的には必ずしも断定できなくても，可能性があれば追及することが必要だということを改めて教えてくれる．スペジアリも，Le facteur chance joue aussi quelquefois en faveur de celui qui pers&eacute;v&egrave;re.（運という要因も，辛抱強く努力する者に有利にはたらくことがある）と述べている（p.7右下）．</P>
+
+<H2>参考文献</H2>
+<P>P. Speziali (1953), "Le logogriphe d'Euler", <i>Bulletin de la Soci&eacute;t&eacute; suisse des bibliophiles</i>, 10me ann&eacute;e, No.1/2, avril 1953 (<A HREF="">pdf in the Friedman archives</A>；フリードマンが人伝にスペジアリの解読に関心を示したのに応えてスイス在住のスペジアリが論文をフリードマンに送付した際の送り状（1953年11月23日付）がついている)</P>
+<P>Hans Rohrbach (1973), "The Logogryph of Euler", <i>Journal f&uuml;r die reine und angewandte Mathematik</i> (<A HREF="http://resolver.sub.uni-goettingen.de/purl?GDZPPN00218849X">G&ouml;ttingen University</A>)</P>
+<P>The Chapel Hill weekly. [volume], November 27, 1963 (<A HREF="https://chroniclingamerica.loc.gov/lccn/sn92073229/1963-11-27/ed-1/seq-2/#date1=1789&index=0&rows=20&words=cipher+unsolved&searchType=basic&sequence=0&state=&date2=1963&proxtext=unsolved+cipher&y=0&x=0&dateFilterType=yearRange&page=1">Chronicling America</A>) (１０年前のスペジアリによる暗号解読に関する講演の案内記事)</P>
+<P>Paul Heinrich Fuss (ed.) (1843), <i>Correspondance math&eacute;matique et physique de quelques c&eacute;l&egrave;bres g&eacute;om&egrave;tres du XVIII&egrave;me si&egrave;cle</i>, vol.1 (<A HREF="https://books.google.fr/books?hl=ja&id=JkQ0AQAAMAAJ&q=ungeachtet#v=snippet&q=ungeachtet&f=false">Google</A>) p.293にオイラーの暗号文</P>
+<P>Ju&scaron;kevi&ccaron; and E. Winter (ed.), (1965) <i>Leonhard Euler und Christian Goldbach, Briefwechsel 1729-1764</i> (<A HREF="https://books.google.co.jp/books?hl=ja&id=s6fnAAAAMAAJ&dq=Leonhard+Euler+und+Christian+Goldbach%2C+Briefwechsel+1729-1764&focus=searchwithinvolume&q=%22text+latein%22">snippet at Google</A>), p.200にオイラーの暗号文（ロールバハによれば，長いsが普通のsとして印字されており，若干のミスプリもあるという）</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2021 S.Tomokiyo<br>
+First posted on 3 January 2021. Last modified on 9 January 2021.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

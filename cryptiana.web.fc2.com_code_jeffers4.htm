@@ -1,0 +1,435 @@
+<HTML>
+<HEAD>
+<TITLE>
+Patterson's Cipher for Jefferson -- Challenge Solved After 200 Years
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Thomas Jefferson, Robert Patterson, code, cipher">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>Patterson's Cipher for Jefferson -- Challenge Solved After 200 Years</H1>
+
+<P>In 1803, President Thomas Jefferson sent Robert R. Livingston, minister in Paris, a cipher based on new principles which he found "the easiest to use" and "the most indecypherable". It was originally designed by Robert Patterson, a mathematician of an age with Jefferson and Jefferson's colleague in the American Philosophical Society.</P>
+<P>In modern terminology, a cipher is a cryptographic scheme that operates on each letter of plaintext and is distinguished from a code that translates plaintext to code by words or syllables, though, in Jefferson's time, the word "cipher" (or "cypher" as was the preferred spelling at the time) encompassed both concepts. When Jefferson became the third president of the United States, a code with some 1700 elements had become the standard form of secret communication means rather than a cipher (see <A HREF="jeffers2.htm">here</A>). A simple substitution cipher was too vulnerable to cryptanalysis and more secure polyalphabetic substitution cipher advocated by James Lovell during the Revolutionary War created much confusion for his correspondents. Jefferson himself had similar experience with William Short (PTJ Code No.4/WE062; see <A HREF="jeffers3.htm">here</A>).</P>
+<P>Patterson's cipher did not use such substitution. It was a transposition cipher, in which the plaintext letters are not changed to other letters but put into a mixed order.</P>
+<P>In the following, Patterson's cipher is first explained with reference to his original letter, which includes the challenge Patterson thought undecipherable without knowing the key. Then, improvements or modifications proposed thereafter by Jefferson and Patterson are described. At the end of the article, recent solution of Patterson's challenge is summarized.</P>
+
+<H2>Patterson's Idea</H2>
+<P>Patterson told Jefferson of his idea in a letter of 19 December 1801. <span class="note">(I corrected the date. I thank Jakub from Bratislava for pointing out the error in the original.)</span></P>
+
+<H3>Principles</H3>
+<P>He began with axiomatic observations.</P>
+<DIV class="kakomi">
+The art of secret writing, or, as it is usually termed,
+<u>writing in cypher</u>, has occasionally engaged the attention both of the
+statesmen & philosophers for many ages; and yet I believe it will be
+acknowledged, by all who are acquainted with the present state of
+this art, that it is still far short of perfection. A perfect cypher,
+as it appears to me, should possess the following properties --<br>
+1. It should be equally adapted to all languages.<br>
+2. It should be easily learned & retained in memory.<br>
+3. It should be written and read with facility & dispatch.<br>
+4. (which is the most essential property) it should be absolutely
+inscrutable to all unacquainted with the particular key or
+secret for decyphering.<br>
+I shall not enter into a tedious detail of the various systems of
+secret writing that have been or are still in use, or point out their several defects; but shall immediately
+proceed to lay before you a system which, I flatter myself, will be
+found to possess the above requisites, in as great a degree as
+can reasonably be desired. For 1st. it is equally applicable to all
+alphabetical languages. 2d. it may be learned by any person of
+moderate capacity in ten minutes; so that he shall be as expert in
+the use of it, as one who may have practised it for many years.
+3d. it may be written and read with nearly the same facility
+and dispatch as common writing. & 4th it will be absolutely
+impossible, even for one perfectly acquainted with the general
+system, ever to decypher the writing of another without his key.<br>
+<span class="note">Patterson to Jefferson, 19 December 1801: <A HREF="http://founders.archives.gov/documents/Jefferson/01-36-02-0093">Founders Online</A>, <A HREF="https://www.loc.gov/resource/mtj1.025_0299_0306/">Library of Congress</A></span>
+</DIV>
+<P>Before detailing the scheme, Patterson stressed that it was not a substitution cipher.</P>
+<DIV class="kakomi">
+In this system, there is no substitution of one letter or character
+for another; but every word is to be written at large, in its proper alphabetical
+characters, as in common writing: only that there need be
+no use of capitals, pointing, nor spaces between words; since any
+piece of writing may be easily read without these distractions.<br>
+<span class="note">ibid.</span>
+</DIV>
+
+<H3>Drafting Stage</H3>
+<P>Patterson explained his scheme as follows.</P>
+<DIV class="kakomi">
+The method is simply this -- Let the writer rule on his paper as 
+many pencil lines as will be sufficient to contain the whole writing.
+Then, instead of placing the letters one <u>after</u> the other, as in common
+writing, let them be placed one <u>under</u> the other, in the Chinese manner,
+namely, the first letter at the beginning of the first line, the second
+letter at the beginning of the second line, and so on, writing column
+after column, from left to right, till the whole is written.<br>
+This writing is then to be distributed into sections of not more than
+nine lines in each section, and these are to be numbered 1. 2. 3. &c 1. 2. 3. &c. (from top to bottom).<br>
+<span class="note">ibid.</span>
+</DIV>
+<P>At the end of this draft stage, the writer would have written as follows, where the plaintext "Buonaparte has at last given peace to Europe! ..." is written from top to bottom, from left to right. In this example, one section contains 8 lines.</P>
+<P><img src="patterson01.jpg"></P>
+
+<H3>Transcription Stage</H3>
+<P>Then, this is transcribed to get the cipher text.</P>
+
+<DIV class="kakomi">
+The whole is then to be transcribed, section after section, taking the
+lines of each section in any order at pleasure, inserting at the
+beginning of each line respectively any number of arbitrary or
+insignificant letters, not exceeding nine; & also filling up the
+vacant spaces at the end of the lines with like letters.<br>
+<span class="note">ibid.</span>
+</DIV>
+<P>The transcribed cipher would look as shown below. In each of the three sections in the cipher, lines are transcribed in the order 5-7-3-4-8-1-6-2. (As noted below, this ordering is specified by a key, which is to be termed a "key of lines" by Jefferson.) In each line, 0 to 9 insignificant letters (nulls) are inserted at the beginning. The number of such nulls in each line forms another key, a "key of letters", which is 8-1-3-9-3-4-2-0 in the example used. Nulls are also appended at the end of the lines. The nulls are shaded in the image below.</P>
+
+<P><img src="patterson02b.jpg"></P>
+<br>
+<DIV class="kakomi">
+Now the key or secret for decyphering will consist in knowing --
+the <u>number</u> of lines in each section, the <u>order</u> in which these are
+transcribed, and the <u>number</u> of insignificant letters at the beginning
+of each line -- all which may be briefly, and intelligibly
+expressed in figures, thus--<br>
+<TT>
+58<br>
+71<br>
+33<br>
+49<br>
+83<br>
+14<br>
+62<br>
+20<br>
+</TT>
+The first rank of figures expressing the number and order of the lines in each
+section, and the 2d rank, the number of arbitrary letters at the
+beginning of each respective line.<br>
+<span class="note">ibid.</span>
+</DIV>
+
+<H3>Deciphering</H3>
+<P>To decipher, one would number the lines according to the key of lines (5-7-3-4-8-1-6-2), delete the nulls at the beginning of the lines, that is, a number of letters specified by the key of letters (8-1-3-9-3-4-2-0), cut the lines apart, and stick them on another piece of paper in the order of the line number (1-2-3-4-5-6-7-8). Then, the plaintext could be read from top to bottom, from left to right. </P>
+
+<H3>Analysis</H3>
+<P>Patterson added that the frequency of the letters used in the nulls should be the same as in the ciphered text.</P>
+<DIV class="kakomi">
+It will be proper that the supplementary letters used at the 
+beginning and end of the lines, should be nearly in the
+same relative proportion to each other in which they occur in
+the cypher itself, so that no clue may be afforded for distinguishing
+between them and the significant letters.<br>
+<span class="note">ibid.</span>
+</DIV>
+
+<P>Finally, Patterson provided simple analysis of the strength of his scheme.</P>
+<DIV class="kakomi">
+On calculating the number of changes, and combinations, of
+which the above cypher is susceptible, even supposing that
+neither the number of lines in a section, nor the number
+of arbitrary letters at the beginning of the lines, should ever
+exceed nine, it will be found to amount to upwards of
+<u>ninety millions of millions</u>*, nearly equal to the number
+of seconds in three millions of years! Hence I presume
+the utter impossibility of decyphering will be readily
+acknowledged--<br>
+*equal to the sum of all the changes on any number of quantities not
+exceeding nine, multiplied by the ninth power of nine.<br>
+<span class="note">ibid.</span>
+</DIV>
+
+<H3>Patterson's Challenge</H3>
+<P>Patterson included a specimen enciphered with his scheme, which he said would not be deciphered, without necessary keys, even with "the united ingenuity of the whole human race" till the end of time.</P>
+<DIV class="kakomi">
+I shall conclude this paper with a specimen of such
+writing, which I may safely defy the united ingenuity of
+the whole human race to decypher, to the end of time -- but
+which, however, by the help of the key, consisting of not
+more than eighteen figures, might be read, with the utmost
+ease, in less than fifteen minutes--<br>
+<span class="note">ibid.</span>
+</DIV>
+<P>The image of the cipher Patterson considered so secure will be presented at the end of this article with the keys to the cipher. Below is its transcription, in which some of Patterson's errors have been corrected, while omission of "a", another omission of "w", and one superfluous "w" have been retained.</P>
+<P><img src="pattersonchallenge.jpg"></P>
+
+<H2>Jefferson's Response</H2>
+<P>Jefferson liked Patterson's scheme and he even thought of employing it in the State Department. He proposed one change in the scheme. In Patterson's original idea, a message is first written vertically and then transcribed horizontally to produce cipher text. Jefferson changed this such that a message is first written horizontally, with the letters in each line aligned vertically, and the vertical sequence of letters are transcribed horizontally to produce cipher text.</P>
+<DIV class="kakomi">
+I have thoroughly considered your cypher, and
+find it is much more convenient in practice than my wheel
+cypher, that I am proposing it to the Secretary of State for use in his
+office. I vary it in a slight circumstance only. I write the lines in the
+original draught horizontally & not vertically, placing the letters of the different
+lines very exactly under each other. I do this for the convenience of the
+principal whose time is to be economised, tho' it increases the labor of a copying
+clerk. The copying clerk transcribes the vertical lines horizontally. The clerk
+of our correspondent restores them to their horizontal position ready for the reading of the principal.<br>
+<span class="note">Jefferson to Patterson, 22 March 1802</span>
+</DIV>
+
+<H2>Jefferson's Description of the Patterson Cipher</H2>
+<P>Having "thoroughly considered" Patterson's cipher, Jefferson described his own adaptation of the cipher as follows.</P>
+
+<H3>Drafting Stage</H3>
+<P>As explained to Patterson, in Jefferson's version, the writer first drafts a message horizontally instead of vertically.</P>
+<DIV class="kakomi">
+1st operation<br>
+In writing the original paper which is to be cyphered, use no capitals, write the letters disjoined, equidistant,
+and those of each line vertically under those of the one next above. This will be greatly
+facilitated by using common black-lines, chequered by black-lines drawn vertically, so that you
+may place a letter between every two vertical black lines. The letters on your paper will
+thus be formed into vertical rows as distinct as the horizontal lines.
+</DIV>
+
+<H3>Transcription Stage</H3>
+<P>The second operation was to transcribe the message to produce cipher text. Note that the term "column" (vertical) corresponds to Patterson's "section" (horizontal), whereas a "column" in Patterson's description referred to a vertical line, which was called a "vertical row" by Jefferson.
+</P>
+<DIV class="kakomi">
+2d operation<br>
+To Cypher. Divide the vertical rows of the page into vertical columns of 9 letters or rows in
+breadth each, as far as the letters or rows of the line will hold out. The last will probably be
+a fractional part of a column. Number the vertical rows of each column from 1 to 9 in
+regular order.
+</DIV>
+<P>In the example of Jefferson, the writer would now have written as follows:<br>
+<br>
+<TT>
+1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3<br>
+w h e n a n a t i o n l e d t o g r e a t n e s s b y t h e<br>
+h a n d o f l i b e r t y a n d p o s s e s s e d o f a l l<br>
+t h e g l o r y t h a t h e r o i s m m u n i f i c e n s e<br>
+a n d h u m a n i t y c a n b e s t o w d e s c e n d s t o<br>
+...<br>
+</TT>
+<br>
+</P>
+<P>Jefferson prescribes writing of nulls on the second paper before actually transcribing the message.</P>
+<DIV class="kakomi">
+Then, on the paper to be sent to your correspondent, begin as many horizontal lines
+as there are vertical rows in your original, by writing in the beginning of each of every 9 horizontal
+lines as many insignificant letters from 1 to 9 as you please; not in regular order
+from 1 to 9 but interverting the order of the numbers arbitrarily. Suppose e.g. you write 8 insignificant
+letters in the 1st line, 2 in the 2d, 1 in the 3d, 6 in the 4th, etc. You will thus have the horizontal lines of
+your 2d paper formed into horizontal bands of 9 lines each, of which this, for instance, will be the
+key, or key of insignificant letters as it may be called. 8.3.1.6.9.4.7.2.5. | 2.9.1.8.4.6.3.7.5. | 3.6.9.2.8.5.7.4.1. | 2.1.3.<br>
+Then copy the vertical lines of the 1st paper, or original, horizontally, line for line, on the 2d [paper], the columns
+in regular succession, but the vertical lines of each [column] arbitrarily; as suppose you copy first the 1st
+vertical line of the 1st column, the 5th next, then the 2d, then the 8th, etc. according to this, which
+may be called the key of lines 1.5.2.8.7.9.6.3.4. | 8.3.6.1.4.7.2.5.9. | 7.3.5.8.4.1.9.2.6. | 3.2.1.<br>
+Then fill up the
+ends of the lines with insignificant letters so as to make them appear of even lengths, & the work is done.
+Your correspondent is to be furnished with the keys thus:<br>
+key of letters  8.3.1.6.9.4.7.2.5. | 2.9.1.8.4.6.3.7.5. | 3.6.9.2.8.5.7.4.1. | 2.1.3.<br>
+key of lines  1.5.2.8.7.9.6.3.4. | 8.3.6.1.4.7.2.5.9. | 7.3.5.8.4.1.9.2.6. | 3.2.1.<br>
+</DIV>
+<P>While Patterson's idea was to use a single key to each section, Jefferson assigned different keys for each column.</P>
+
+<H3>Deciphering</H3>
+<P>The ciphered text can be deciphered by deleting the nulls, copying horizontal lines vertically in the order specified by the key of lines, and reading horizontally.</P>
+<DIV class="kakomi">
+To decypher. Your correspondent takes the cyphered paper you have sent him, & first, by the key
+of letters, he dashes his pen through all the insignificant letters, at the beginning of every line.<br> Then he prefixes
+to the lines the numbers taken from the key of lines in the order in which they are arranged in the key.
+Then he copies the 1st line of the 1st horizontal band, writing on a separate paper, the letters vertically one under
+another (but no exactness is necessary as in the original operation). He proceeds next to copy line No. 2
+vertically also, placing its letters by the side of those of his first vertical line; then No. 3 & so on to No. 9 of
+the 1st horizontal band.
+Then he copies line No. 1 of the 2d horizontal band, No. 2, No. 3, etc. in the regular order
+of the lines & bands. <br>When he comes to the insignificant letters at the ends of the lines they will betray
+themselves at once by their incoherence, & he proceeds no further.<br>
+This 3d paper will then
+in its letters and lines be the true counterpart of the 1st original.
+</DIV>
+
+<P>The plaintext thus obtained reads "When a nation led to greatness by the hand of liberty, and possessed of all the glory that heroism, munificense, and humanity can bestow, ...." This was taken from an appeal to the people of Great Britain, adopted by the Continental Congress in September 1774.</P>
+
+<H2>Patterson's Keyword System</H2>
+<P>In responding to Jefferson's appreciating letter of 22 March, Patterson made an additional proposal of a keyword system, which will be easier to memorize than numerical keys.</P>
+<DIV class="kakomi">
+I am not a little flattered
+with the notice you have taken of my cypher -- your alteration
+will certainly very much facilitate the labour of the principal
+without greatly increasing that of the copyist. There is yet another
+alteration, relative to the <u>key</u>, which, I conceive, would be of
+considerable advantage -- Instead of expressing it by <u>figures</u>
+which are so liable to be forgotten, it may be expressed by a
+single word or name which may always be remembered, without
+committing it to writing. For example, suppose the key-word
+Montecello [sic] -- the letters of this word are to be numbered according
+to their places in the alphabet, any letter <u>repeated</u> being referr'd
+to a second, or third alphabet -- then the letters in the above
+word be numbered as follows<br>
+<TT>
+M o n t e c e l l o<br>
+4.6.5.7.2.1.8.3.9.10
+</TT>
+the second
+e, l, and o being referr'd to a second alphabet, and according[ly] numbered
+8, 9, 10.<br> This key-word will then signify that there are
+ten vertical lines in the section, which are to be transcribed
+in horizontal lines in the order of the above figures viz. 4th 6th 5th &c.<br>
+The same word may also be used to signify the number
+of supplementary or insignificant letters at the beginning of
+the respective lines, as 4 at the beginning of the first, 6, at that
+of the second &c. Or two key-words may be used; the first
+to signify the number and order of lines in the section, and
+the second, the supplementary letters.<br> When the two words do not
+consist of an equal number of letters, then so many of the
+first letters of the least word may be subjoined to the end of it,
+as to make their number equal. Thus James Maddison [sic], as
+a key, would be written and numbered in this manner.<br>
+<TT>
+J a m e s j a m &nbsp;&nbsp;M a d d i s o n<br>
+3.1.4.2.5.7.6.8.&nbsp;&nbsp;4.1.2.8.3.7.6.5.<br>
+</TT>
+<span class="note">Patterson to Jefferson, 12 April 1802</span>
+</DIV>
+
+<H2>Proposal to Livingston</H2>
+<P>Jefferson liked Patterson's idea of using keywords. When he told Livingston of this scheme, he provided his own explanation of the keyword system.</P>
+<DIV class="kakomi">
+A favorable and a confidential opportunity offering by Mr. Dupont de Nemours, who is revisiting his native country gives me an opportunity of sending you a cipher to be used between us, which will give you some trouble to understand, but, once understood, is the easiest to use, the most indecipherable, and varied by a new key with the greatest facility of any one I have ever known. I am in hopes the explanation inclosed will be sufficient.<br>
+Let our key of letters be 651279843|923178546|314285769<br>
+and the key of lines be 947618523|218965734|769312458<br>
+and lest we should happen to lose our key or be absent from it, it is so formed as to be kept in the memory and put upon paper at pleasure; being produced by writing our names and residences at full length, each of which containing 27 letters is divided into 3 parts of 9 letters each; and each of the 9 letters is then numbered according to the place it would hold if the 9 were arranged alphabetically. Thus<br>
+<DIV style="margin-left:2em">
+<TT>
+651279843|923178546|314285769<br>
+robertrli|vingstono|fclermont<br>
+947618523|218965734|769312458<br>
+thomasjef|fersonofm|onticello<br></TT>
+</DIV>
+
+robertrli alphabetically arranged would be<br>
+<DIV style="margin-left:2em">
+<TT>
+123456789<br>
+beilorrrt<br></TT>
+</DIV>
+
+The numbers over the letters being then arranged as the letters to which they belong stand in our names, we can always construct our key.<br>
+<span class="note">Jefferson to Livingston, 18 April 1803</span>
+</DIV>
+<P>It is noted that here again Jefferson slightly modified Patterson's idea in the case the same letter occurs more than once in a keyword. For example, in assigning numbers to "onticello", Jefferson assigned successive numbers 1-9 to the alphabetically arranged sequence "ceillnoo", while Patterson's original idea was to assign numbers 1-7 to "ceilno" and extra "n" and "o" were to be assigned 8 and 9.</P>
+<P>As of 22 March, Jefferson considered using this new cipher in the State Department. However, in providing Livingston with this cipher, Jefferson intended to limit its use to private matters.</P>
+<DIV class="kakomi">
+But why a cipher between us, when official things go naturally to the Secretary of State, and things not political need no cipher.<br>
+ 1. matters of a public nature, and proper to go on our records, should go to the secretary of state.<br>
+ 2. matters of a public nature not proper to be placed on our records may still go to the secretary of state, headed by the word "private." But<br>
+ 3. there may be matters merely personal to ourselves, and which require the cover of a cipher more than those of any other character.<br>
+This last purpose and others which we cannot foresee may render it convenient and advantageous to have at hand a mask for whatever may need it. But writing by Mr. Dupont I need no cipher. I require from him to put this into your own and no other hand, let the delay occasioned by that be what it will.<br>
+<!--The cession of Louisiana and the Floridas by Spain to France works most sorely on the U.S....-->
+<span class="note">ibid.</span>
+</DIV>
+<P>Although Jefferson thought highly of this cipher, there is no evidence that this scheme was ever used between them.</P>
+
+<H2>Enciphering a Single Word</H2>
+<P>Having used codes and ciphers for many years in practice, Jefferson realized that Patterson's cipher might not be well suited to encipher short plaintext such as a single word.</P>
+<DIV class="kakomi">
+We are introducing your cypher into our foreign correspondence, but it often happens that we wish only to cypher 2 or 3 lines, or one line, or half a line, or a single word. It does not answer for this. Can you remedy it.<br>
+<span class="note">Jefferson to Patterson, 17 April 1802</span>
+</DIV>
+<P>Patterson replied that even a single word can be enciphered with exactly the same procedure if each letter in a word was considered as a line of plaintext.</P>
+<DIV class="kakomi">
+With respect to the cyphers when applied to a
+single word or line, I would observe, that in <u>strict conformity</u>
+with the general system, each letter must, in this case, be considered 
+as a column or vertical line; and, with its [supplementary]
+letters prefixed, must be transcribed into a horizontal line. Thus,
+if the word Louisiana were to be written in cypher, and the
+key<br>
+<TT>
+Benjamin Franklin,<br>
+23751648 27164538
+</TT><br>
+ it would, with its supplementary letters prefixed, and a few adjoined, stand thus, --<br>
+<TT>
+2 ma<B>o</B>muo<br>
+3 emikmio<B>u</B><br>
+7 a<B>a</B>nrt<br>
+5 smandy<B>s</B><br>
+1 nwyx<B>l</B>sso<br>
+6 ommix<B>i</B><br>
+4 orr<B>i</B>mis<br>
+8 mamreeie<B>n</B><br>
+9 dy<B>a</B>stry<br>
+</TT>
+<span class="note">Patterson to Jefferson, 24 April 1802</span>
+</DIV>
+<P>The keyword "Benjamin" specifies the key of lines 23751648 when each letter is assigned a number in the alphabetical order and "Franklin" specifies the key of letters 27164538. Using the key of letters, the first two letters of the first row are insignificant or supplementary letters, the seven letters of the second row are insignificant letters, and so on. After deleting such insignificant letters, reading each letter in the order specified by the key of lines recovers the plaintext "louisiana".</P>
+<P>Patterson realized that the "great proportion" of insignificant letters made this scheme unwieldy. But he had a solution for that. The number of the nulls can be reduced by grouping several letters in a line instead of treating each letter as a line.</P>
+
+<DIV class="kakomi">
+But the 
+remedy is easy, and that without deviating in the least from the
+general use of the system -- it is only for the Principal to
+write the word or part to be cyphered in short horizontal
+lines one under the other, each counting of about 3, 4, or 5
+letters, for then the copy or cypher will consist of as many lines
+only as the number of letters in each line of the original. For example,
+if we take the same word and key as before, the Principal
+would write it thus<br>
+<TT>
+Lou<br>
+isi<br>
+ana<br>
+</TT>
+and the copyist thus--<br>
+<TT>
+da<B>osn</B>tt<br>
+amrilrr<B>uia</B><br>
+r<B>lia</B>seem<br>
+</TT>
+Here the labour of the copying clerk is sufficiently diminished
+while that of the Principal is no way increased, and yet the
+difficulty or impossibility of decyphering, without the key, completely preserved.<br>
+<span class="note">ibid.</span>
+</DIV>
+<P>In this case, the plaintext has only three lines and the key of lines "23751648" is reduced to "231". Thus, the first vertical line "lia" goes to the third row of the cipher, the second vertical line "osn" goes to the first row of the cipher, and the third vertical line "uia" goes to the second row of the cipher. The key of letters "27164538" is truncated to "271", which dictates the first row of the cipher should have two insignificant letters or nulls, the second row seven, and the third row one.</P>
+<P>To decipher, the first two letters of the first row, the first seven letters of the second row, and the first one letter of the third row should be deleted according to the key of letters. After deleting these nulls, arranging the rows in the order specified by the key of lines gives:<br>
+<TT>
+lia<br>
+osn<br>
+uia<br>
+</TT>
+Reading from top to bottom, left to right would recover the plaintext "louisiana".
+</P>
+
+<H2>Patterson's Challenge Solved After 200 Years</H2>
+<P>Patterson thought his cipher could not be deciphered without keys. The challenge included in his first letter was taken two centuries after his time by a mathematician Lawren M. Smithline.</P>
+<P>His method was based on probability of digraphs (e.g., <i>qu</i> is a "favorable" digraph, <i>ls</i> "unfavorable", <i>dx</i> nonexistent). Further, instead of recovering the original ordering of the lines in a section at a time, he first focused on identifying two rows that should be adjacent to each other. More specifically, for a particular assumed value of the number of lines in one section (K) and particular two lines assumed to be adjacent to each other (R, S), the most favorable values of the number of nulls (C, D) at the beginning of those particular two lines were determined. The process also gave a score, based on which the best scoring K, R, and S can be determined. (For details, see Lawren M. Smithlilne, 'A Cipher to Thomas Jefferson: A collection of decryption techniques and the analysis of various texts combine in the breaking of a 200-year old code', <i>American Scientist</i>, 97 (2009), 142-149)</P>
+<P>Use of digraphs is a usual measure for solving transposition ciphers. (See, for example, David Kahn, <i>The Codebreakers</i>, p.302 ff; Fletcher Pratt, <i>Secret and Urgent</i>, p.97 ff.) By introducing a quantitative measure of how favorable a digraph is, Smithline could construct a robust algorithm that could accommodate nulls and even transcription errors. His algorithm is so flexible to allow transcription errors such as copying "w" as "ui". His iterative strategy to find adjacent rows one by one reduced the computational cost to a feasible level.</P>
+<!--<P>It might have been simpler if R had been fixed to 1 at first instead of trying every pair (R,S), the parameter  a single parameter S were used instead of three (K, R, S) with R fixed to 1</P>-->
+<P>The reconstructed keys were 1-3-5-6-2-7-4 (the key for lines) and 3-4-7-5-2-8-9 (the key for letters). Thus, the cipher revealed the preamble of the Declaration of Independence: "In Congress, July fourth, one thousand seven hundred and seventy six. A declaration by the Representatives of the United States of America in Congress assembled. When in the course of human events,...."
+</P>
+<P><img src="pattersonsolvedSM.jpg"></P>
+<br>
+<br>
+<font size="2">
+&COPY;2009 S.Tomokiyo<br>
+First posted on 18 April 2009. Last modified on 26 November 2017.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<!--2009.4.18の時点でPatterson's cipherのグーグル検索はヒット5件のみ
+2017.11.26には561件で本稿がトップ
+-->
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

@@ -1,0 +1,276 @@
+<HTML>
+<HEAD>
+<TITLE>オランダ暗号小史
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, danish diplomatic cipher">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>オランダ暗号小史</H1>
+<P>オランダの暗号史について，主としてKarl de Leeuw, <i>Cryptology and Statecraft in the Dutch Republic</i>に基づいて紹介する．</P>
+
+<H2>オラニエ公ウィレム（沈黙公）の暗号</H2>
+<P>オランダは１６世紀にはスペイン・ハプスブルク家の領地だったが，フェリペ２世に対して反乱を起こし，八十年戦争ともいわれる闘争の末に１６４８年のウエストファリア条約によって正式に独立を達成した．</P>
+<P>初期の反乱指導者オラニエ公ウィレムが１５７２年９月２１日に弟ヤンに宛てた手紙で使った暗号は次のようなものだった（Konst- en Letterbode (1836), p.311-312 (<A HREF="https://books.google.co.jp/books?id=Jzs3AAAAMAAJ&printsec=frontcover&hl=ja&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false">Google</A>)）．</P>
+<img src="willem.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>同時代のスペイン暗号（<A HREF="spanish2.htm">別稿</A>）と比べるまでもなくごく初歩的なものであることがわかる．たとえばquel coup de massue（「なんたる災難」；同年８月のサンバルテルミーの虐殺のこと）と書くのに次のようにしているという（手紙はフランス語）．</P>
+<DIV class="kakomi2">
+31(-) 48(q) 60(u) 15(e) 33(l) 34(-) 9(c) 42(o) 60(u) 45(p) 25(-) d e 35(-) 36(m) 3(a) 54(s) s 61(-) 60(u) 15(e) 13(-)<br>
+（単語の間が捨て字（ヌル）で区切られている．一部英字をそのまま使っている．）
+</DIV>
+<P>（この年ウィレムはドイツからの軍勢を率いて攻勢に出てかなり勢力を広げたが，この日，退却を強いられた．手紙の発信地メヘレンはアルバ公の軍勢により見せしめのため略奪された<span class="note">(<A HREF="https://en.wikipedia.org/wiki/Spanish_Fury_at_Mechelen">Wikipedia</A>)</span>．）</P>
+
+<H2>オランダ独立戦争時の暗号解読</H2>
+<P>オランダにとって，早い段階から暗号解読は重要だった．スペイン本国とネーデルラント各地の都市や軍司令官との間で送られる手紙が奪取されることは多く，早くは１５７３年から数年間，ヴァランシエンヌのシャルル・ボーリュー（Charles Beaulieu）が暗号解読を行い，同じプロテスタントのイングランドに暗号解読の結果を提供することもあった．</P>
+<P>１５７６年からはオランダ独立の初期の指導者オラニエ公ウィレムの右腕であったマルニクス・ファン・シントアルデホンデ（Marnix van Sint-Aldegonde）（1540-1598）が暗号解読に従事した．純粋な暗号解読だけではなく，ひそかに入手した暗号表も使われていたが，暗号漏洩が発覚して暗号が変更された後も暗号解読は継続したというから，全くのコードブック頼みということではなかったらしい．<span class="note">(De Leeuw, p.12)</span></P>
+<P>（なお，私も一度当時のスペインの暗号を解読したことがあるが（<A HREF="spanish2A.htm">別稿（英文）</A>），母音を特別な記号で示す当時のスペインの暗号は，一見複雑そうに見えるが，実はいったん仕組みがわかれば普通の暗号よりも簡単だということを実感した．）</P>
+<P>１６０５年からはジャック・ダローム（Jacques d'Alaume）が暗号解読者として年俸１２００ヒュルデンで登用された．</P>
+<P>次の世代にはコンスタンテイン・ホイヘンス（Constantijn Huygens）（1596-1687）（物理学者クリスティアーン・ホイヘンスの父）は戦場でスペインの暗号を解読したこともあったという．<span class="note">(p.14)</span></P>
+
+<H2>オランダの外交暗号の充実</H2>
+<H3>低レベルの暗号の時代</H3>
+<P>この間，オランダの暗号は単換字暗号に１０あまりのコードを追加した程度の初歩的なものであり続けた<span class="note">(p.14)</span>．スペイン側と違ってオランダの通信は長大な距離を運ばれる必要がなかったため，暗号はそれほど重要ではなかったのだ．</P>
+<P>だが１６０９年の休戦でオランダが事実上の独立を勝ち得て独自の外交を行うようになると，通信秘匿の必要性が高まった（１６２１年にはスペインとの休戦も期限切れになる）．</P>
+<P>１６１５年にパリに派遣されたブートゼラール（Gideon van Boetzelaar）は毎週のように本国に通信を送る必要があったが，毎週送り出すほど使者を抱えているわけではないので通常の郵便を使う必要があり，暗号が必須だった（通常の郵便を使うことが多いのは１７世紀後半になっても同じ<span class="note">(p.17)</span>）．その暗号は３０ほどの記号（１桁数字，ラテン文字，ギリシャ文字）を含む同音換字暗号（ホモフォニック暗号）に８０ほどのコード（２桁数字に時折点や線を加えたもの）を加えたものだった．トルコに派遣された初の大使ハーハ（Cornelis Haga）の場合は単換字暗号（記号）に加えてやや大きな分類別のコード（数字1～116）を備えていた．<span class="note">(p.15)</span></P>
+
+<H3>暗号改革</H3>
+<P>オランダの暗号に改善がみられるようになるのは，１６４８年のウエストファリア条約以降だという．（折しも，１６５０年にはオラニエ公の急死で無総督時代が始まる．）連邦議会は１６５１年７月３１日，国外へ派遣する使節には信任状とともに暗号を渡すことを制度化した．暗号の手紙の宛先も連邦議会の総会ではなく書記宛とし，書記が連邦議会議員から選ばれた秘密委員会に提出するものとされた．１６５８年にはコードブックを作成し，暗号化・解読を監督する専任要員ペーネン（Pieter van Peenen）が任命された．<span class="note">(p.17)</span></P>
+<P>その一方で，１６５０年，１６６４年にフランスに送られたボレール（Willem Boreel <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Willem_Boreel">Wikipedia</A>)</span>）は，２度目の派遣時に前回と同じコードブックを渡されたというから<span class="note">(p.20)</span>，暗号更新に関してはまだそれほど熱心でなかったのかもしれない．（下記引用にあるように１６５３年にも現場からすでに同じ暗号を長く使い過ぎているとの指摘はあったのだが．）</P>
+
+<H3>大規模なコード</H3>
+<P>やはり１６５０年ごろ<span class="note">(p.41)</span>，外交官に渡される暗号では１万項目以上の語彙をもつハードカバーを付けたコードブックが登場した（各ページは５０項目×６列を含む）．コードグループは４桁数字ではなく，３桁数字に文字や点，ダッシュなどを組み合わせた記号を使っていた．語彙には単語や名前だけではなく，フレーズも含まれる．二部コードはまだ導入されていないとはいえ，これは他国も含めても当時最大規模の暗号表といえる．200または250以下の数字はアルファベットの文字や連字，語尾，接続詞などを登録しており，この部分はランダムな配列であり暗号化用と解読用の表が別に用意された．このサイファー部分はつけ外しが容易にできるよう別の紙に書かれていた．</P>
+<P>サイファーは複数用意され，どの表を使うかを指定する数字で区別された．一例では，アルファベット２４字のそれぞれに５つの数字が割り当てられ，数字はそのままでアルファベットを一つずつずらした表があった（もちろん，指示符に使う数字はサイファーで使わない）．<span class="note">(p.18)</span>このようなスライド方式や指示符の使用はアタナシウス・キルヒャーの著作にあるものだという．<span class="note">(p.20)</span>現存するコードブックはファーヘル（Fagel）家に伝わったもので，１６７２年以降のものしかないが，それ以前にも同様のコードブックが使われた形跡があるという．</P>
+<P>コードブックのサイズは多様で，コードグループの数は大規模なら８０００～１２０００，中規模なら５０００～７０００，小規模なら２０００～３０００で，時代とともに拡大したというよりは，任務の重大さによってサイズが変わった．大コードを使った例は，１６９８年にポートランド（Duke of Portland）（フランス；大同盟戦争後の平和維持のための交渉），１７１８年にホップ（Hop）（フランス），１７２１年にブロイニンクス（Hamel Bruyninx）（ウィーン）がある．小コードは１７１８年にハウウェンス（Houwens）（ポルトガル），１７２７年にケッペル（Keppel）（プロイセン），１７２３年にホップ（Hop）（イングランド）などがある．<span class="note">(p.20)</span></P>
+
+<H3>一部コードと二部コード</H3>
+<P>暗号数字に対して語句がアルファベット順に割り当てられる一部コードに対し，ランダムに割り当てられる二部コードは解読されにくいが，暗号化用の表（アルファベット順に配列）と解読用の表（数字順に配列）を別個に用意する必要があるので（だから「二部」（two-part）コードという），作成に手間がかかる．法律顧問（首相のようなもの）ヘインシウス（在任1689-1720）<span class="note">(<A HREF="https://en.wikipedia.org/wiki/Anthonie_Heinsius">Wikipedia</A>)</span>と大使シュッツ<span class="note">(<A HREF="https://en.wikipedia.org/wiki/Augustus_Schutz">Wikipedia</A>の父か？)</span>に配布された二部コードがハノーファーに残っているという<span class="note">(p.46, n.xcvi)</span>が，これはオランダでは定着しなかったようだ．</P>
+
+<H3>例</H3>
+<P>Ingmar Vroomen en Lidewij Nissen, "Cijferschrift en spionage", <i>Jaarboek De Zeventiende Eeuw 2018</i>, p.21-40 (<A HREF="https://books.google.co.jp/books?id=eZiSDwAAQBAJ&pg=PA27&lpg=PA27&dq=%22Chijffre+pour+la+communication+avec+Mr.+Jermijn">Google</A>)にはこの時期の暗号の写真がいくつか載っている．（図３：法律顧問デ・ウィットとファン・ホッホの間の暗号（コードの104～299の部分；オランダ語？）；図４：デ・ウィットからファン・ホッホへの暗号段落を含む手紙（19 September 1664））</P>
+<!--
+https://books.google.co.jp/books?id=eZiSDwAAQBAJ&pg=PA27&lpg=PA27&dq=%22Chijffre+pour+la+communication+avec+Mr.+Jermijn,+de+l%27annee+1647%22&source=bl&ots=y3g1i7NhuK&sig=ACfU3U0BE4sqM2XQQf7MTl3Q-Lf-EmMgZg&hl=ja&sa=X&ved=2ahUKEwiopd_ox6HyAhWDQN4KHa7RCakQ6AF6BAgEEAM#v=onepage&q=%22Chijffre%20pour%20la%20communication%20avec%20Mr.%20Jermijn%2C%20de%20l'annee%201647%22&f=false
+-->
+
+
+
+<H2>共和制イングランドに奪取された暗号</H2>
+<P>Thurloe State Papers （
+<A HREF="https://www.google.co.jp/books/edition/A_Collection_of_the_State_Papers_of_John/D5UjAQAAMAAJ?hl=ja&gbpv=1&dq=%22State+Papers+of+John+Thurloe%22&printsec=frontcover">vol.1</A> (1638-1653), 
+<A HREF="https://www.google.co.jp/books/edition/A_collection_of_the_state_papers_of_John/KCZDAAAAcAAJ?hl=ja&gbpv=1&dq=%22State+Papers+of+John+Thurloe%22&printsec=frontcover">vol2</A> (1653-1659), 
+<A HREF="https://www.google.co.jp/books/edition/A_Collection_of_the_State_Papers_of_John/uZUjAQAAMAAJ?hl=ja&gbpv=1&dq=%22State+Papers+of+John+Thurloe%22&printsec=frontcover">vol.3</A> (December 1654-September 1655), 
+<A HREF="https://www.google.co.jp/books/edition/A_Collection_of_the_State_Papers_of_John/70EqAQAAMAAJ?hl=ja&gbpv=1&dq=%22State+Papers+of+John+Thurloe%22&printsec=frontcover">vol.4</A> (September 1655-May 1656), 
+<A HREF="https://www.google.co.jp/books/edition/A_Collection_of_the_State_Papers_of_John/CpYjAQAAMAAJ?hl=ja&gbpv=1&dq=%22State+Papers+of+John+Thurloe%22&printsec=frontcover">vol.5</A> (1656), 
+<A HREF="https://www.google.co.jp/books/edition/A_Collection_of_the_State_Papers_of_John/cJYjAQAAMAAJ?hl=ja&gbpv=1&dq=%22State+Papers+of+John+Thurloe%22&printsec=frontcover">vol.6</A> (1657-1658), 
+<A HREF="https://www.google.co.jp/books/edition/A_Collection_of_the_State_Papers_of_John/85YjAQAAMAAJ?hl=ja&gbpv=1&dq=%22State+Papers+of+John+Thurloe%22&printsec=frontcover">vol.7</A> (1658-1660)
+）には，共和制イングランドに奪取されたと思われる駐ロンドン大使の暗号の手紙がいろいろ残っている．ここでは暗号に関連するもののみ摘記する（英語の部分は，おそらく原文のフランス語から翻訳されたのだろう）．</P>
+<P>まずは第一次英蘭戦争（1652-1654）中のもの．</P>
+<DIV class="kakomi">
+The Dutch ambassadors at London to Nicholas Ruysch [the Grieffier]<br>
+....<br>
+[one code group 128 is decoded as "Denmark"]<br>
+....<br>
+We have used the freedom, by reason the foregoing cyphers have been of old in use, and as we think, have not been changed, to make some alteration therein, for the service of our treaty; a copy whereof is here inclosed, being resolved to make use thereof hereafter.（暗号を長年変更していなかったので少々変更した）<br>
+Westminster, the 4th of July, 1653 [N.S.]<br>
+Vol.1, p.316-317 (<A HREF="http://www.british-history.ac.uk/report.aspx?compid=55261&amp;strquery=cypher">British History Online</A>)
+</DIV>
+
+<DIV class="kakomi">
+Beverning and Nieuport, the Dutch ambassadors at London, to John de Witt<br>
+....<br>
+but especially that the 20. 4. 11. 52. 26. 15. 57. and 54. 16. 48. 13. 17. 18. 33. 52. 24. 18. 14. 19. 38. How big they be about 25. 15. 52. 28. 37. 53. 16. 49. 18. 50. 53 of 330 that it may be the good patriots, who do mean uprightly for the good, liberty, and welfare of the country 97. 63. 15. 52. shall 50. 54. 20. 21. 19. 51. 9. 37. 53. 50. 64. 38. prevent that the same 52. 39. 53. 17. 15. 9. 16. 14. 27. 17. 37. 28. 38. 22. 24. 17. 37. 55. 5. 38. 50. 64. 37 17. 55. 39. 43. 49. 41. 56. 14. 18. 49. 51. 38. 63. 19. 53. 56. 4. 37. 38. 56. 6. 21. 22. 17. 24. 16. 50. 28. 22. 37. 15. 19. 48. 52. 60. 42. 48. 13. 16. and although we can easily distinguish and discern the true nature of that business from the reports, which are spread, and covered here with many false circumstances, yet notwithstanding we must 9. 16. 31. 17. 37. 38. 18. 37. 13. 4. 52. 60. 64. 53. 19. 38. 55. 63. 53. 15. 48. 51. 53. 6. 38. 13. 7. 17. 48. 39. 55. 19. 49. 10. 18. 11. 41. 35. 36. 6. 49. 51. 66. 64. 38. and we think ourselves bound to tell you plainly, that we think the constitution of the government and the interest of the governors 25. 64. 15. 48. to have learnt to know them so well, that we make certain 13. 16. 50. 44. 17. 48. 5. 18. 52. not only to 24. 8. 37. 13. 19. 33. 27. 38. 22. but likewise to further 5. 54. 14. 29. 17. 38. 52. 28. 17. shall be admitted, if about 13. 6. 13. 44. 41. 26. 37. 52. any public 48. 48. 43. 45. 42. 50. 28. 53. 29. 17. 38. 70. 37. 14. 17. 38. 50. 52. 6. 15. 53. be made, who for 31. 16. 37. 38. 27. 50. 51. 17. should come over hither, as that must happen unavoidably.<br>
+18 July [1653 N.S.]<br>
+Vol.1, p.339-340 (<A HREF="http://www.british-history.ac.uk/report.aspx?compid=55263">British History Online</A>)
+</DIV>
+
+
+<DIV class="kakomi">
+Beverning and Vande Perre to the Dutch ambassador Boreel at Paris.<br>
+....<br>
+We are served with the same cypher; but hereafter to express particular words, we will rather make use of the new one, which your excellency was pleased to send unto us, after the same manner as is set down under the same.（以後は送ってもらった新しい暗号を使う）<br>
+……<br>
+113. 10. 26. 13. 13. 19. 29. 29. 26. 11. 222. 31. 17. 21. 22. 23. 23. 22.13. 30. 20. 18. 22. 23. 15. 13. 24. 22. 13. 24. 22. 17. 10. 15. 25. 23. 13. 329. 28. 15. 22. 20. 25. 20. 15. 25. 27. 28. 20. 27. 27. 20. 22. 17. 20. 15. 527. 16. 20. 21. 12. 19. 21. 29. 26. 20. 16. 27. 16. 19. and do find that at Solebay [now follows the whole relation verbatim.] It will be a great point of honour and service, if so be 117. 211. 22. 25. 24. 22. 26. 15. 15. 17. 27. 30. 22. 21. 24. 14. 22. 23. 26. 6. 22. 17. 22. 13. 519. 21. 21.<br>
+27. 31. 32. 24. 16. 27. 31. 29. 24. 16. 19. 11. 29. 33. 16. 27. 31. 27. 21. 20. 13. 16. 19. as was ordered by their resolution. God send them a safe voyage, and that they may return with their lives into their native country. 327. 20. 23. 29. 16. 6.20.24. 17. 15. 29. 17. 32. 20. 23. 15.<br>
+....<br>
+... a private instruction from 128....<br>
+....<br>
+Westminster, 22 Aug./1 Sept. 1653.<br>
+Vol. 1, p.435 (<A HREF="http://www.british-history.ac.uk/report.aspx?compid=55271&amp;strquery=cypher">British History Online</A>)
+</DIV>
+<!--
+★13,29,23,27,15,21と，２連字が多い
+
+★頻度
+2	6
+2	10
+2	11
+1	12
+8	13
+1	14
+9	15
+8	16
+7	17
+1	18
+5	19
+12	20
+7	21
+13	22
+7	23
+7	24
+4	25
+5	26
+9	27
+2	28
+7	29
+2	30
+4	31
+2	32
+1	33
+1	113
+1	117
+1	211
+1	222
+1	327
+1	329
+1	519
+1	527
+
+★３連字の統計
+2	13 24 22★the?
+2	16 27 31
+-->
+
+
+<DIV class="kakomi">
+Beverning to Ruysch<br>
+
+Yesterday I received the packet with the dispatches of their high mightinesses, as likewise therein your letter, with the secret resolutions written with your own hand. Whereunto I say only, that the same ought to have been in cypher, since I very much suspect, that it has been seen and read, together with all the others in the packet, which I could see plainly to have been opened.（暗号を使うべきだった；手紙が検閲されている形跡あり） And besides, I must renew by this opportunity what I have told you already, even from the beginning of our negotiations, that by the opening of our letters, and by comparing the same, the cypher of their high mightinesses, which is at best but indifferent and very common, has been discover'd without doubt long ago; and therefore that they would be pleased to provide new orders against the same.（そもそも開封・比較により暗号はとっくに解読されているはず）<br>
+Westminster, Feb. 27. 1654. [N. S.]<br>
+Vol.2, p.99 (<A HREF="http://www.british-history.ac.uk/report.aspx?compid=55305&amp;strquery=cypher">British History Online</A>)
+</DIV>
+
+
+<DIV class="kakomi">
+Vande Perre to de Bruyne, pensionary of the province of Zealand<br>
+
+Yesterday in the afternoon I received your lordship's of the 27th, whereby I perceived, that the character I sent you is come safe to your hand（暗号送付した）. I could not likewise see, that yours had been opened. Pray take notice again of the seal of that letter, wherein the character was, whether nothing was broke off it, or that it had been tampered with; that so we may write our secrets to one another, that none may know them, though they should meddle with our letters, which you may manage on your side, and I here, as occasion shall serve; as also to keep me at present out of harm's way.（開封された形跡を確認されたし） 12. 17. 57. 17. 28. 12. 3. 17. 6. 12. 5. 10. 14. 3. 17. 6. I was glad to see by your letter the resolution of the states of Zealand taken concerning my lord Stockaert, as also the prisoners; and I shall govern myself therein accordingly. I should have been glad to have had copies of them sent me; as also of the resolutions concerning the English affairs, and my lord Beverning's and my stay here.<br>
+....<br>
+Captain Schellinger, we hear, is dead, who stole away from his guard; and because he could not get over, kept himself hid in the country. Adding only to this, that at present here 7. 7. 17. 24. 7. 6. 7. 14. 12/12. 5. 13. 7. 6. 12. 26. 22. 21. 26. 12. 14. 12. 7. 27. 21. 27. 10. 3. 17. 6. 7. 14. 12. 17. 9. 7. 29. 7. 24. 27. 9. 7. 26. 22. 7. 17. 24. 27. 6. 12. 7. 29. 7. 14. 6. 12. 7. 17. 6. 7. 29. 3. 7. 24. 9. 7. 17. 21. 15. 7. 17. We hear that many of 24. 7. 9. 7. 24. 12. 17. 9. 7. 15. 7. 27. 12. 15. 22. 3. 27. 12. 7. 17. 27. 12. 7. 21. 22. 17. 3. 6. 7. 24. 21. 24. 6. 24. 7. 28. 3. 17. 21. 27. 26. 28. 7. 24. 29. 3. 5. I remain,<br>
+Westm. 3 Oct. 1653. [N.S.]<br>
+Vol.1, p.500 (<A HREF="http://www.british-history.ac.uk/report.aspx?compid=55276">British History Online</A>)
+</DIV>
+<P>次は１６５７年から．</P>
+<DIV class="kakomi">
+Boreel, the Dutch embassador in France, to Ruysch<br>
+I desire what letters of service are sent to me, that they may be writ in cypher, for the air here is not very clear.（暗号使用を要請）<br>
+Paris 20th April 1657. [N.S.]<br>
+Vol.6, p.192 (<A HREF="http://www.british-history.ac.uk/report.aspx?compid=55589&amp;strquery=cypher">British History Online</A>)
+</DIV>
+
+<H2>東インド会社</H2>
+<P>オランダ東インド会社のセイロン総督を務めたファン・フーン（Rijckloff van Goens <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Rijckloff_van_Goens">Wikipedia</A>)</span>）が本国やインドネシア総督に送った暗号の手紙（1674年1月）が残っている．基本的には外交暗号よりずっと単純な，記号を使った単換字暗号であるが，重字（EE, FF, LL, OO, PP）と７つの単語にも記号が割り当てられていた．（J&ouml;rgen Dinnissen and Nils Kopal, "Island Ramanacoil a Bridge too Far. A Dutch Ciphertext from 1674": <A HREF="https://ecp.ep.liu.se/index.php/histocrypt/article/view/156"> DOI: https://doi.org/10.3384/ecp183156 </A>）</P>
+
+<H2>オラニエ公ウィレム（オレンジ公ウィリアム）</H2>
+<P>１７世紀中庸に海外貿易で栄えたオランダは，１６６０年代からルイ１４世のフランスの拡張政策に脅かされるようになる．１６７２年にオランダ侵攻を始めたフランス軍の前に立ちはだかったのは２２歳にもならないオラニエ公ウィレム３世だった．</P>
+<H3>転置式暗号</H3>
+<P>１６７５年の手紙（フランス語）でウィレムが使った列転置式暗号を<A HREF="princeoforange.htm">別稿</A>で紹介した．</P>
+
+<H3>フランス大使の暗号通信暴露事件（1684）</H3>
+<P>１６８４年に駐オランダのフランス大使ダヴォー伯の暗号の手紙が奪取されて解読され，ウィレムがそれを公表するという事件があった<span class="note">(p.22)</span>．手紙が奪取されたのはマーストリヒト付近で，スペイン領ネーデルラント総督デ・グラーナ（De Grana）によるものとされたが，ウィレム自身が手配したとの見方もある．対立するアムステルダムがフランスと内通していることを示そうとしたのだ．</P>
+<P>その時の暗号が復元されている（<A HREF="louisxiv.htm#SEC1C">別稿</A>）．当時のフランス暗号で普通に使われていた一部コードと二部コードの折衷式で，縦方向に数字を配列し，単語は横方向にアルファベット順に配列するというものだ．そのような二次元配置によって，暗号化と解読用に別々の表を用意する必要なしに，数字と単語の対応にある程度の不規則性を導入できる．だが，暗号解読者から暗号作成者への助言はなかったようだ（オランダに限ったことではないが）．暗号解読はコードブック以上に秘匿が重要だったらしい<span class="note">(p.23)</span>．</P>
+
+<H3>名誉革命</H3>
+<P>オレンジ公ウイリアムといえば，イングランド貴顕からの招請に応えて軍勢を率いて上陸し，無血のうちにジェームズ二世を廃位した「名誉革命」が有名だが，そのためのやりとりにももちろん暗号が使用された．１６８８年６月３０日付のイングランド貴顕からの招請状（<A HREF="http://cryptiana.web.fc2.com/docs/invit.htm">別稿</A>）は25（シュローズベリー伯），24（デヴォンシア伯），27（ダンビー伯），29（ラムリー卿），31（コンプトン司教），35（エドワード・ラッセル），33（ヘンリー・シドニー）という暗号数字によって署名されていた．</P>
+
+<H2>オランダのブラックチェンバー</H2>
+<H3>ダロンヌ</H3>
+<P>ウィレム三世夫妻の信任が厚いダロンヌ（Abel Tassin d'Alonne）は，名誉革命前からオラニエ公妃メアリーの秘書であり，ジェームズ二世の宮廷の情報収集を担っていたが，革命後もジェームズ二世の復権を目指すジャコバイトの情報収集に当たった．後年のスペイン継承戦争時代に暗号解読に従事した記録はあるので，それ以前から行っていた可能性は高いという<span class="note">(p.22)</span>．</P>
+<H3>スフラーフェサンデ</H3>
+<P>ほかに科学者スフラーフェサンデ（'s Gravesande<span class="note">(<A HREF="https://en.wikipedia.org/wiki/Willem_%27s_Gravesande">Wikipedia</A>)</span>）も暗号解読の手伝いを依頼されることがあり，１７１７年の著作で科学的思考の例として暗号解読に触れた<span class="note">(p.23)</span>．興味深いことに，スフラーフェサンデはイギリスの解読官ジョン・キールの友人でもあったというのだが，暗号解読について意見交換がされた記録は残っていない．<span class="note">(p.24)</span></P>
+
+<H3>リヨネ</H3>
+<P>このように暗号解読は着々と続けられていたが，オランダが積極的にブラックチェンバーと言われる暗号解読部局を維持していたわけではなかった．</P>
+<P>転機は，オーストリア継承戦争で台頭したプロイセンに対する警戒感だった．プロイセンのフリードリヒ二世はオラニエ家の血を引いており（祖父フリードリヒ一世の母がオラニエ家出身），１７５１年１０月のウィレム４世の没後，オランダ総督位を要求してくる可能性もあった．１７５１年の秋，新たに着任したプロイセン使節デ・ヘレン（De Hellen）宛ての手紙を奪取した．だが，夏に袖の下を使って入手した前任者ダモン（D'Ammon）のコードブックは更新されたようで，直接役には立たず，同盟国のイギリスに解読してもらうことになった．<span class="note">(p.25)</span></P>
+<P>そうしたなか暗号解読に頭角を現したのが自然科学者ピエール・リヨネ（Pierre Lyonet）だった．リヨネは１７３８年に連邦議会書記のもとで暗号係となり，暗号化・解読やコードブックの作成を担っていた<span class="note">(p.24)</span>．当初は奪取した文書の写しを頼まれただけだったのだが，旧版のコードブックやイギリスから提供された解読が手がかりになって暗号解読の技法を身につけていった．リヨネはまずイギリスから提供された解読文のブランクを埋めることから始め，その後は駐ロンドンのプロイセン大使の手紙の解読も行った．１７５３年春には助手としていた親類のクロワゼ（Samuel Egbert Croiset）の費用を公費で出してもらえることになったが，暗号解読の功績あってのことだろう．<span class="note">(p.25)</span></P>
+<P>１７５２年からは通信奪取の対象も広げられ，新任のフランス大使ボナック（Bonnac）の手紙に関心が向けられたが，これは結局，イギリスの暗号解読官ウィルズによって解読された．オランダには当初は解読内容だけが伝えられていたが，１７５４年１月には解読されたコードブックも提供された．<span class="note">(p.26)</span></P>
+<P>１７５５年１２月にフランスの暗号が変更されたときは，リヨネは独自に解読に当たり，翌年６月には解読に成功した．七年戦争開戦が迫っており，フランスはイギリスと同盟しているオランダの出方を探ろうとしていたのだが，リヨネがダフリ（d'Affry）のコードを解読したおかげで，幼いウィレム５世を後見していた母の信頼する秘書がフランスと内通していたことが発覚した．<span class="note">(p.27,136)</span></P>
+<H3>準二部コード</H3>
+<P>リヨネが暗号係になったころからオランダの暗号の運用に改善が見られたが，１７５６年には一部コードと二部コードの折衷ともいうべきものが登場した（上述した，１６８４年に奪取したフランス大使の暗号と同じ方式）．語彙は４０００ほどで当時としては標準的だが，各ページは５つの列に分かれており（図３によれば，見開き２ページで１０列を使った模様），コードグループは列に沿って配列され，それが表す単語は行に沿って配列された．つまり，暗号化用と解読用の二つのコードブックを用意しなくても済む一方で，コードグループと単語の対応は単純なアルファベット順ではなくなるため，解読がある程度難しくなる．<span class="note">(p.27)</span>コードグループは４桁数字または３桁数字に点や棒などの記号を付けたものだった．（私が「二次元配置」と呼ぶこの方式はフランス（<A HREF="louisxiv0.htm">別稿</A>），イギリス（<A HREF="thurloe.htm">別稿</A>）では１６５０年代には使われていた．私は「二部コード」と呼ぶことも多かったが，デレーウのいう「修正一部コード」のほうが正確かもしれない．）また，語彙にはフランス語とオランダ語の単語が登録されていた．<span class="note">(p.27-28)</span></P>
+<H3>二部コード</H3>
+<P>なお，１７８２との書き込みのある総督用のコードブック（フランス語）は，アルファベット順の小さなブロックがランダムに並んでいる，ブロック単位の二部コードだった．しかも，コードブックで暗号化した数字に順次加算するための数字表まで用意されていた．２０世紀になって普及した乱数加算と同様の方式である．<span class="note">(p.138-139; p.37-39)</span></P>
+<P>この暗号はそれほど使われず，ベルリン駐在のファン・レーデ（Van Reede）は総督秘書のラレイ（T. I. de Larrey）に使いにくいとこぼしている（１７９２年２月４日）．それでも，この暗号を使ったワルシャワ発の１７９３年３月９日の手紙が遺されている．<span class="note">(p.51, n.clxxxvii)</span></P>
+
+<H2>オラニエ派と愛国派</H2>
+<P>暗号解読に成功したリヨネは必ずしも政府に評価されなかったが，それは多分にリヨネがオラニエ派政府と対立する共和派の考えに近かったからだという．伝統的にオランダはフランスと敵対し，イギリスと同盟していたが，リヨネは大西洋貿易での競合などのためイギリスのほうが危険だと思うようになっていた．実際その後，イギリスとの対立が高まり，アメリカ独立戦争ではイギリスと開戦することになる．この時期，リヨネの作業量も最大となった．<span class="note">(p.30)</span></P>
+<H3>オラニエ公の避難（1785-1787）</H3>
+<P>アメリカ独立戦争ではイギリスは敗れたものの，英蘭間の戦争ではオランダの通商の被害が甚大で，講和でもイギリスに譲歩を強いられ，オラニエ派に反対する愛国者運動が起こった．１７８５年には総督ウィレム５世はハーグを捨て，国内各地を遍歴したのち，ネイメーヘンへの避難を強いられた．反革命を目指すオラニエ派は愛国派に解読されないよう独自の暗号を使うが，暗号作成を担ったのは，ハーグに残った総督の秘書ラレイ，その後はファン・シッタース（W. A. van Citters）だったという．この間，総督妃ウィルヘルミナ〔ヴィルヘルミーナ〕は各地との連絡を取りまとめ，自らハーグ駐在のプロイセン大使や叔父のフリードリヒ大王との連絡もした．<span class="note">(p.34, 140)</span>この時期以降，ウィルヘルミナは自ら暗号実務を担うようになる．<span class="note">(p.149-150)</span></P>
+
+<H3>反動（1787）</H3>
+<P>オラニエ公は公妃ウィルヘルミナの実家プロイセンの軍事支援を得て１７８７年にはハーグに返り咲いた．リヨネの没（１７８９年１月）後，クロワゼは暗号担当としては残されたが，リヨネのような待遇は引き継げなかった．</P>
+<P>このタイミングでプロイセンのコードは複雑になり，フランスもコードブック更新の頻度を上げたため，クロワゼの解読作業ははかどらなかった．<span class="note">(p.31)</span>１７８８年にフランスが突然郵便でなく，使者を使うようになったことで，オランダのブラック・チェンバーの情報が漏れた可能性も浮上した．クロワゼに不信感を抱いた法律顧問ファン・デ・スピーヘル（Laurens Pieter van de Spiegel）（ゼーラント州の法律顧問だったがオラニエ公復権後に任命） <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Laurens_Pieter_van_de_Spiegel">Wikipedia</A>)</span>や総督妃ウィルヘルミナは，独自の小規模なコードを作ってクロワゼを介さずにイギリスやプロイセンに駐在する大使と連絡するようになった．法律顧問はプロイセンの暗号を解読するクロワゼによって自分の通信内容が握られ，フランスに漏らされることさえあると懸念していた．暗号局を廃止することも考えたが，ウィレム５世はそこまでは踏み切れなかった．<span class="note">(p.32, 122-123, 141)</span></P>
+<P>具体的には，法律顧問は，駐ロンドン大使ナーヘル（Nagell）とはごく簡単な暗号を使った．一方，駐ベルリン大使ファン・レーデは普通のコードを使った暗号文の余白に秘密インクで通信文を書いた．<span class="note">(p.142, Fig.3, Fig.4)</span></P>
+
+<H3>バタヴィア共和国（1795）</H3>
+<P>反動政治のもと愛国者は亡命し，１７８９年のフランス革命とも呼応してオランダの革命を目指した．フランスの革命政権は１７９３年にイギリス，オランダに宣戦布告した．１７９５年１月に厳寒のため川が凍ると<!--de Leeuw p.145-->，革命軍は国境を突破し，ユトレヒト，ハーグまで占領した．オラニエ公はイギリスに亡命し，革命フランスの影響下で愛国派が政権を握り，バタヴィア共和国（バターフ共和国）として新体制が発足した<span class="note">(森田安一編『スイス・ベネルクス史』p.300, de Leeuw p.145)</span>．</P>
+<P>この間，パリでの休戦交渉に当たった使節からは連邦議会の通常の暗号で報告が送られてきたが，法律顧問はそれをクロワゼに渡して解読してもらうことを拒み，渋るクロワゼにコードブックを提出させた．オランダがフランスに占領された後，法律顧問はこのことで連邦議会に対する反逆罪に問われることになった．バタヴィア共和国成立後，クロワゼはコードブックの作成を受け持つほか，１８０３年までプロイセン暗号の解読を続けた．<span class="note">(p.32)</span></P>
+<P>だがクロワゼの引退後，オランダの暗号の品質は下がった．１８１５年から１８４０年にかけて，オランダの暗号は諸国によって解読され続けた．<span class="note">(p.33)</span></P>
+
+<H2>オラニエ公妃ウィルヘルミナの暗号</H2>
+<H3>ハンプトンコート暗号</H3>
+<P>１７９５年の革命でイギリスのハンプトンコートで亡命生活を強いられた総督ウィレム５世は大陸との連絡には郵便を使わざるをえなかったのでもちろん暗号を使ったが，暗号化・解読の作業のみならず，おそらくは暗号作成も総督妃ウィルヘルミナが担ったという．<span class="note">(p.34)</span>ベルリンにはオラニエ公の太子を送ることになったが，ウィルヘルミナは同行するボイヤー（J. L. D. Boyer）に暗号を渡した．<span class="note">(p.145)</span></P>
+<P>それは，３００ほどの項目（フランス語）からなる二部コードだった<span class="note">(p.145-148, p.158-160)</span>．とはいえ，暗号化部分は完全なアルファベット順ではなく，分類別のセクションもあり，さらに補遺としてアルファベット順の265～307とランダム配列の308～334があった．</P>
+<P>めずらしいことに，単独英字や連字は含まれておらず，コードグループに1～9の数字を付して使用する文字を表した．２字以上を使う場合は左肩の数字で先頭からの削除字数を表し，右肩の数字で末尾からの削除字数を表し，下線を付した場合はコードグループが表す単語全体を使う．<span class="note">(p.148-149)</span></P>
+<P>p.151の図７に実例があるが，冒頭は次のようになっている（単語の終わりを示す一重下線と二重下線は区別していない）．</P>
+<DIV class="kakomi">
+&agrave; ce sujet <sup>4/</sup>2<u>4</u>, <sup>4</sup>6<u>2</u><sup>(3</sup>, 36, 1, 2, 149<sup>(2</sup>, se <sup>1/</sup>5<u>2</u>, <sup>2/</sup>9<u>0</u>, 234<sup>(2</sup>, 63, 5, 6, 3, soit, ...<br>
+便宜上，コードグループを単語で置き換えると次のようになる．<br>
+&agrave; ce sujet <sup>4/</sup>quelque, <sup>4</sup>Guillaume<sup>(3</sup>, Chiffre, 1, 2, oui<sup>(2</sup>, se <sup>1/</sup>une, <sup>2/</sup>m&ecirc;me, Paris<sup>(2</sup>, histoire, 5, 6, 3, soit, ...<br>
+規則に従ってコードグループの表す単語から拾うべき文字を拾い，削除する文字を示すと，次のようになる．（histoireからは第5, 6, 3字をこの順に拾っていることに注意．）<br>
+&agrave; ce sujet <s>quel</s>que, <s>Guil</s>la<s>ume</s>, C, h, o<s>ui</s>, se <s>u</s>ne, <s>m&ecirc;</s>me, Par<s>is</s>, o, i, s, soit, ...<br>
+結局，この部分は<br>
+&agrave; ce sujet que la chose ne me paroissoit ...<br>
+と読める．
+</DIV>
+<P>ウィルヘルミナはコードグループの使い方も工夫した．コードブックが収録しているのは334までなのだが，3732（due de York；37 (due), 32 (York)より），6922（Prince of Orange；69 (prince), 22 (Orange)より）などの数字を入れるのである．<span class="note">(p.150)</span></P>
+<P>この暗号は１７９５年９月から１８０２年まで使用された<span class="note">(p.149)</span>．</P>
+<P>この暗号は太子フレデリックから姉のルイーゼ公妃（ブラウンシュヴァイク公妃）への手紙やスタムフォルト将軍（フレデリック<span class="note">(<A HREF="https://en.wikipedia.org/wiki/Prince_Frederick_of_Orange-Nassau">Wikipedia</A>)</span>の軍事教育係）の手紙にも使われた．<span class="note">(p.152)</span></P>
+
+<H3>先行例</H3>
+<P>このハンプトンコート暗号のプロトタイプのような暗号が，１７９３年，１７９４年に総督一家が太子フレデリックと連絡するのに使われていた．詩の各語（若干の語を補足してある）に順に番号を付けておき，載っていない単語の音節は，コードグループが表す単語のうち何番目の文字を使うか，または何文字を省略するかを示すことで表された．<span class="note">(p.154; p.35, Fig.4, Fig.5)</span>たとえばet＝95は登録されているが，&eacute;t&eacute;は登録されていないので，le＝35の２文字目を使うという意味でe＝352を付け足す．dreであれば，64＝Fredericの第4,2,3文字を拾うという意味で64423とする．54/1は54＝d'unの末尾の１字を削除してduを表し，2/65はLe Ducの先頭２文字を削除してducを表す．</P>
+<P>また，よく知られている書籍暗号との共通性もあり，ウィルヘルミナがそうした先行例から着想を得た可能性はあるが，コードの語彙を書籍暗号に利用するという点は書籍が特定される危険がない点で優れている．ハンプトンコート暗号の方式が刊行物に記載されるのは後年のKl&uuml;ber, <i>Kryptographik</i> (1809)が初めてとなる．</P>
+
+<H3>他の暗号</H3>
+<P>上記の「ハンプトンコート暗号」が亡命中の主要な暗号であったが，他の暗号も使われた．</P>
+<P>オランダ軍の残りとの連絡にはミラボー暗号（アルファベットを４～５行に分けて書き，何行目の何文字めかを分数の形で示す）の変形が使われたという．<span class="note">(p.35)</span></P>
+<P>ハーグの友人たちとは，バタヴィア政府を「夫人たち」，共和国を「農場」，革命を「商売」と言い換えるなどした暗号が使われた．<span class="note">(p.35)</span>イギリスの名誉革命後にジャコバイトもよく使った方式である．</P>
+
+<H2>回転グリル</H2>
+<P>１８００年ごろの亡命宮廷の関心はイギリスとの講和を目指したスパーン（Alexander van Spaen <span class="note">(<A HREF="https://nl.wikipedia.org/wiki/Van_Spaen">Wikipedia</A>)</span>）の交渉にあった．<span class="note">(p.149)</span>オランダはフランスの対英戦争に組み込まれていたが，負担が重く，中立を目指していた．そのためにはフランスの進駐軍に退去してもらって，やはり中立だったプロイセン兵に主要都市を固めてもらうというのが現実的な路線であり，共和国政府はイギリスともプロイセンとも関係の深いオラニエ家の協力を求めるため，バタヴィア共和国への忠誠は拒んだものの，共和国転覆の動きには加わっていなかったスパーンに白羽の矢を立てたのだった．スパーンはオラニエ家ともプロイセン家ともコネがあった．スパーンは１８００年春にイギリスに渡り，オラニエ家の仲介でイギリス政府と接触した．<span class="note">(p.163-164)</span>その後スパーンはベルリンにわたって交渉したが，１８００年７月になると，ナポレオン・ボナパルト将軍のイタリアでの勝利のため，フランス政府は講和を急ぐ理由がなくなってしまい，結局講和は１８０２年のアミアンの和約を待つことになる．</P>
+<P>ベルリンからのスパーンの手紙は，１２×１６の一種の回転グリルを使っていた<span class="note">(p.169, 172-181)</span>．なお，ウィレム５世の文書からは，１７４５年に書かれたと思われる，１６×１６の回転グリルを使った暗号文も発見されている<span class="note">(p.106-118)</span>．</P>
+<P>ウィレム５世は１８０６年に没し，ナポレオン没落後の１８１５年，太子ウィレムが初代オランダ国王ウィレム１世として即位する．</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2021 S.Tomokiyo<br>
+First posted on 10 October 2021. Last modified on 23 October 2021.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

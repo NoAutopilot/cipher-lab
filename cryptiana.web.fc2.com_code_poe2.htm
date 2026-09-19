@@ -1,0 +1,99 @@
+<HTML>
+<HEAD>
+<TITLE>
+Solution of Tyler's Cryptograms Published in Poe's Article
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, Poe, cryptogram">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>Solution of Tyler's Cryptograms Published in Poe's Article</H1>
+<P>Two cryptograms attributed to a W. B. Tyler in Edgar Allan Poe's magazine article were solved in the last decade of the twentieth century.</P>
+<P>In 1841, Edgar Allan Poe wrote a series of articles in <i>Graham's Magazine</i>, in which he solved simple ciphers sent by the reader. At the end of the series, Poe published two cryptograms sent by W. B. Tyler, who wanted to challenge Poe's remark that human ingenuity could not contrive a cipher which human ingenuity cannot resolve. Tyler's cryptograms remained unsolved for 150 years.</P>
+<br>
+<P><A HREF="#SEC1">Tyler's First Cryptogram</A></P>
+<P><A HREF="#SEC2">Tyler's Second Cryptogram</A></P>
+<P><A HREF="#SEC3">Kulp's Cryptogram</A></P>
+<P><A HREF="#SEC4">References</A></P>
+
+<A NAME="SEC1"></A>
+<H2>Tyler's First Cryptogram</H2>
+<P>The first was a simple cipher (i.e., monoalphabetic substitution) but with every word written backwards without break. This was solved independently by Terence Whalen (dissertation in 1991; published in 1994) and John Hodgson (1993).</P>
+<img src="tyler1.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>A clue which led to Whalen's solution was seven occurrences of the pattern ",&dagger;&sect;", which would be either "the" or "and", of which the former turned out to be correct.</P>
+
+<A NAME="SEC2"></A>
+<H2>Tyler's Second Cryptogram</H2>
+<P>Tyler presented a yet tougher second cryptogram, whereby "more than one cipher were used for a single letter." In his specimen, the 26 letters of the alphabet were represented by 130 characters including capitals, small letters, small capitals and their inverted forms. With this variety of symbols in a cryptogram as short as 660 letters, the usual frequency analysis is hard to take effect. As it turned out, the most frequent letter in English "e" was represented by 14 different symbols and the difficulty was exacerbated by the trouble in distinguishing between different cases and inversions (who can tell small capital "O" from small letter "o" or their inversions?) as well as over two dozen errors by the typesetter or the encipherer. (In the image below, I marked some corrections but not all. I also marked "gently she" in blue to show where I corrected the published solution.)<P>
+<P>This second cryptogram was solved by Gil Broza in 2000.</P>
+<img src="tyler2.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>Broza assumed the plaintext was in English and the breaks in the cryptogram indeed corresponded to word breaks. He noted intervals between several repetitions had no common denominator and thus presumed it was not Vigenere and it simply used numerous variants for frequent letters (as noted by Tyler). This frustrated the usual technique of assuming probable words (e.g., "the", "and", "not") for three-letter patterns.</P>
+<P>Being a software engineer, Broza decided to use his computing skills. For example, he wrote a program "Matches", which appears to search a word list to find a set of words having patterns matching those of given (non-consecutive) cipher words (see the example below) but, at initial runs, it just returned far too many candidates. He soon realized the cryptogram included too many errors to allow successful pattern matching.</P>
+<P>After other unsuccessful attempts, he reverted to the old trick of assuming "the", "and", "not" for three-letter patterns but this time he did it exhaustively. That is, he substituted these words for all repeating three-letter patterns and followed each direction to the full, letting his imagination roam freely since he knew there were many errors.</P>
+<P>After a while, he was almost sure that "AmL" represented "the" because of its occurrence once after a long word and once after a long word and a two-letter word seeming to be a preposition. Using the identification of these three symbols, Broza noted three patterns: "1?2e??", "e?3", and "132". From over 3500 word groups given by "Matches", he noted the words "ardent", "eye", "and" (so he says but the final solution does not include a three-letter word beginning with "e").</P>
+<P>This was the breakthrouth, after which one discovery followed another. He noted a pattern "??ter???n", which he knew to be "afternoon", which led to reveal a word "of" and plausible patterns "th??"<!--than--> and "??re"<!--more-->. The two-letter cipher word "KJ", with another word containing these two letters "JERK", must be "no" and "open". The five-letter word beginning with "ea" should be "early" or "earth".</P>
+<P>Continuing this line of reasoning, he uncovered the plaintext hidden for more than 150 years.</P>
+
+<A NAME="SEC3"></A>
+<H2>Kulp's Cryptogram</H2>
+<P>Earlier on, another cryptogram left by Poe was solved in 1975 by Bryan J. Winkel and Mark Lyster. It was composed by a G. W. Kulp. In printing it in the 26 February 1840 issue of <i>Alexander's Weekly Messenger</i>, Poe declared it was an "imposition" but it turned out to be a Vigenere cipher with a keyword "United States". Poe was correct in that it was not a monoalphabetic substitution Poe declared he would solve but it was not a hoax.</P>
+<P>The cryptogram, with some corrections, is as follows.</P>
+<DIV class="kakomi">
+Ge Jeasgdxv,<br>
+Zij gl mw, laam, xzy zmlwhfzek ei[j]lvdxw kwke tx I[l]br atgh I[l]bmx aanu bai Vsmukke[s]s pwn vlwk agh gnumk wdl[i]nzweg jnbxvv oaeg enwb zwmgy mo mlw wnbx mw al pnfdcfpkh wzkex hssf xkiy[j,v]ahul. Mk num y[v]exdm wbxy sbc hv wyx Phwkgnamcuk?
+</DIV>
+<P>It deciphers as follows.</P>
+<DIV class="kakomi">
+Mr. Alexander,<br>
+How is it that? The messenger arrives here at the same time with the Saturday cou-rier and other Saturday papers. When acco-rding to the date it is published three days previous. Is the fault with  you or the postmasters?
+</DIV>
+
+<A NAME="SEC4"></A>
+<H2>References</H2>
+<P>The Edgar Allan Poe Crypto Challenge (<A HREF="http://web.archive.org/web/20121016221751/http://www.bokler.com/eapoe.html">archive</A>) including "How the cypher was broken" by Gil Broza (<A HREF="http://web.archive.org/web/20120824222113/http://www.bokler.com/eapoe_challengesolution.html">archive</A>) with a link to a pdf file for details of the reconstructed cipher (<A HREF="http://web.archive.org/web/20120323213607/http://www.bokler.com/poe_broza.pdf">archive</A>).</P>
+<P>Seth, <A HREF="http://cryptocrap.blogspot.jp/2011/11/edgar-allen-poe-cipher.html">"Crypto Crap"</A> includes an electronic version of Gil Broza's ASCII transcription of Tyler's second cryptogram.</P>
+<P>Edgar Allan Poe, "Secret Writing" (<A HREF="http://www.eapoe.org/works/essays/gm41sw03.htm">Poe Society</A>) includes Tyler's contribution to <i>Graham's Magazine</i> and the editor's notes on their solutions.
+<P><A HREF="http://onlinebooks.library.upenn.edu/webbin/serial?id=grahamsmag">"Serial Archive Listings for Graham's Magazine"</A>, The Online Books Page, includes links to scans of Graham's Magazine, including volume 19, which carried Tyler's cryptograms, at <A HREF="http://babel.hathitrust.org/cgi/pt?id=inu.32000000684185;view=1up;seq=9">HathiTrust</A>.</P>
+
+<H3>The Edgar Allan Poe Society of Baltimore</H3>
+<P><A HREF="http://www.eapoe.org/index.htm">Main Menu</A></P>
+<P><TT>-</TT><A HREF="http://www.eapoe.org/works/index.htm"><B>Poe's Works</B></A> (<A HREF="http://www.eapoe.org/works/mabbott/tominfo.htm">The Collected Works of Edgar Allan Poe (1969 and 1978) </A> is linked from Main Menu)</P>
+<P><TT>--</TT><A HREF="http://www.eapoe.org/works/editions/index.htm">Some Editions</A> (published works)</P>
+<P><TT>--</TT><A HREF="http://www.eapoe.org/works/editions/prdcls.htm">Annuals, Magazines and Periodicals</A> (contributions to magazines etc.)</P>
+<P><TT>---</TT><A HREF="http://www.eapoe.org/works/editions/mawm001.htm"><i>Alexander's Weekly Messenger</i></A></P>
+<P><TT>---</TT><A HREF="http://www.eapoe.org/works/editions/mgm001.htm"><i><b>Graham's Magazine</b></i></A></P>
+<P><TT>----</TT><A HREF="http://www.eapoe.org/works/essays/fwsw0741.htm">"A Few Words on Secret Writing"</A> (also known as Poe's "Cryptology")</P>
+<P><TT>--</TT><A HREF="http://www.eapoe.org/works/letters/index.htm">Poe's Letters</A></P>
+<P><TT>---</TT><A HREF="http://www.eapoe.org/people/thomasfw.htm#letters">Frederick William Thomas</A></P>
+<br>
+<P><TT>-</TT><A HREF="http://www.eapoe.org/papers/index.htm"><B>A Poe Bookshelf</B></A> (books on Poe) (<A HREF="http://www.eapoe.org/papers/misc1921/quinn00c.htm">biography by Arthur Hobson Quinn (1941)</A>, <A HREF="http://www.eapoe.org/papers/misc1921/tplg00ca.htm">The Poe Log</A>, etc. are linked from Main Menu)</P>
+<P><TT>---</TT><A HREF="http://www.eapoe.org/papers/psblctrs/pl19741.htm">"Poe, Creator of Words"</A> (on words coined by Poe)</P>
+<P><TT>----</TT><A HREF="http://www.eapoe.org/papers/psblctrs/pl19741s.htm">"Single Words First Used or Coined by Poe"</A> (list of words coined by Poe)</P>
+<br>
+<P><A HREF="http://www.google.com/advanced_search?q=+site:www.eapoe.org&amp;hl=en">Search the Poe Society website</A></P>
+<br>
+<br>
+<font size="2">
+&COPY;2015 S.Tomokiyo<br>
+First posted on 7 January 2015. Last modified on 18 February 2015.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

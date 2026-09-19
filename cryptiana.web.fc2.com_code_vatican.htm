@@ -1,0 +1,849 @@
+<HTML>
+<HEAD>
+<TITLE>
+Ciphertext-only Attack on "Vatican Challenge" Ciphers (1625, 1628)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Vatican, codebreaking">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Ciphertext-only Attack on "Vatican Challenge" Ciphers (1625, 1628)</H1>
+
+<P>Challenge ciphertexts posted by Be&aacute;ta Megyesi at <A HREF="https://www.mysterytwisterc3.org/en/challenges/level-x">MTC3</A> were brought to my attention by a German cryptology blog, <A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2018/03/07/who-can-decipher-this-encrypted-letter-from-the-vatican/">Klausis Krypto Kolumne (7 March 2018)</A>. There were two ciphertexts for codebreaking:</P>
+<P>Part 1: Letter of Giovanni Battista Pallotto <span class="note">(<A HREF="https://it.wikipedia.org/wiki/Giovanni_Battista_Maria_Pallotta">Wikipedia</A>)</span>, papal nuncio, 1628</P>
+<P>Part 2: Letter of a papal nuncio in France, 14 March 1625</P>
+<P>A comment on the blog (8 March 2018) pointed out that the deciphered text was already available but, since I was working on similar Italian numerical ciphers then (see another article in <A HREF="https://www.tandfonline.com/doi/full/10.1080/01611194.2018.1503207">Cryptologia</A>), I tried ciphertext-only attack. It was successful for the Part 2 cipher but I had to rely on a crib for Part 1.</P>
+<P>The MTC3 page announces that the solutions for these challenges were made public on 2018-06-20. (I have not seen them. I <i>guess</i> Ms Megyesi made a presentation at <A HREF="https://easychair.org/cfp/HistoCrypt2018">HistoCrypto 2018</A> at Uppsala, Sweden.) Since they are now public, I may also present my own solution here.</P>
+
+<H2>Solution of Vatican Challenge Part 1</H2>
+<H3>Parsing</H3>
+<P>Both challenge ciphertexts consist of a sequence of continuously written figures, as was typical with Italian ciphers at the time (see <A HREF="variable.htm">another article</A>). The first task is to split the stream of figures into symbols (groups of digits) corresponding to meaningful units in the cipher. For both cases, I succeeded in this before deciphering even a letter of the plaintext. The Appendix below gives transcription of the ciphertexts after this process.</P>
+
+<P>For Part 1, statistics show the most frequent bigrams are 02, 20, and 60. When browsing the context of these, I noticed "20601962060", which seemed to be "20 60 196 20 60." That is, 196 is a three-digit symbol or 1+2 digit symbols. The special nature of "1" also seemed to be attested by the fact that, unlike the other digits, "1" never occurs in succession.</P>
+<P>So I tentatively broke the figure sequence by "1" and sorted the resulting records. The list thus obtained ended as follows.</P><TABLE border="1">
+<TR><TD>
+...<br>
+197 ---- 3<br>
+197 ---- 3<br>
+197 ---- 3<br>
+197 ---- 3<br>
+1975235462040 ---- 13<br>
+1976909253670 ---- 13<br>
+1978 ---- 4<br>
+197809 ---- 6<br>
+197836509960204633708? ---- 22<br>
+197852653 ---- 9<!--★--><br>
+1978990507362940 ---- 16<br>
+1990570362903 ---- 13<br>
+19950607042038726640 ---- 20<br>
+19950609205350520 ---- 17<br>
+1995070609033508 ---- 16<br>
+</TD></TR></TABLE>
+
+<P>Each record is accompanied by the number of digits contained in the record. If all the numbers are odd, it would indicate that all the figure sequence other than "1" are made of two-digit figures. However, it is not the case. Then, I noticed that every record containing an even number of digits has an "8". This may mean that "8" is also a single-digit symbol, rather than a part of two-digit symbols. When I used "1" and "8" as delimiters, the ciphertext could be generally divided into a sequence of two-digit figures. Although there remained some sequences of an odd number of digits, they were often surrounded by "1" or "8" and may be three-letter code symbols.</P>
+
+<H3>Deciphering</H3>
+<P>I spent many days trying to decipher the ciphertext, which now consisted of symbols of one- to three-digit figures. I came to a deadend. I had to give up my ciphertext-only attack and use the known plaintext. According to a blog post, the message begins with a sentence "Mandai come scrissi parte della mia famiglia con le robbe per Mantova."</P>
+<P>Since I already had a ciphertext split into two- (or three-)digit figures, given this crib, there was no difficulty in assigning the plaintext letters as follows.</P>
+
+<DIV class="kakomi2">
+62(ma) 39(n) 67(da) 50(i) 1<br>
+737(come) 8<br>
+23(s) 32(c) 36(r) 50(i) 23(s) 43(s) 05(i) 18<br>
+22(p) 00(a) 36(r) 23?(t) 20(e) 1<br>
+56(de) 73(la) 8<br>
+63(mi) 02(a) 1<br>
+44(fa) 63(mi) 36(gli) 20(a) 8<br>
+52(con) 18<br>
+74(le) 1<br>
+36(r) 70(o) 34(b) 24(b) 20(e) 81<br>
+57(per) 1<br>
+504(Mantova) 1<br>
+</DIV>
+
+<P>Repeated occurrences of 63=mi, 36=r, 50=i seem to endorse these identifications. Moreover, 50=i was one of the few results I guessed from contact chart analysis (see below). I was also suspecting regularities such as 50=05, 23=43, etc.</P>
+
+<P>I have to add that I was helped by a blog comment "two one-digit nulls as word separators." I identified 1 and 8 as one-digit symbols by myself and thought them to be nulls but I was not sure that they were word separators. Without this comment, it might have taken longer. The reason I was not sure was that 1 and 8 as word separators seemed to give too many short words. As it turned out, some of the two-digit symbols represented syllables "ma", "mi", "fa", ... which I did not expect.</P>
+
+<!--
+50=i,36=r,20=e,63=mi
+34=24=b
+50=05=i
+23=43=s
+70=oなど，これまでの解析からOKそう．
+
+62=ma, 63=mi
+73=la,74=le
+などの規則性も有望
+-->
+<P>My (partial) solution of the "Vatican Challenge: Part 1" appears in the Appendix below.</P>
+
+
+<H3>Where Did I Fail in My Statistical Analysis?</H3>
+<H4>Contact Chart</H4>
+<P>From a contact chart, I thought 50,70,20,09,90,50,02,23,66 were vowels because they often occurred at the end of a word (i.e., before 1 and 8). (Here, I supposed 1 and 8 were nulls used as word separators.) Later, when marking these supposed vowels in the ciphertext, 00, 05, and 40 also seemed to be vowels because of alternation of vowels and consonants. Of these "vowels", relatively high frequencies of the sequence "50 70" suggested that 50=i and 70/20="a" or "o".</P>
+<P>The correct values of these are as follows:</P>
+<P>50(i) 70(o) 20(a) 09(e) 90(e) 50(i) 02(a) 23(s) 66(l), 00(a), 05(i), 40(i), in which 23 and 66 betrayed my prediction.</P>
+
+<H4>Pattern Matching</H4>
+<P>The following shows some of patterns including 60 and 20 I was working on at an early stage after making the contact chart. (This shows that I could not yet abandon a possibility that 1 and 8 were used as nulls within a word.)</P>
+<DIV class="kakomi2" style="width:auto">
+<TT>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 47 1 8 55(h) 20(a) 60(u) 30(e) 60(u) 20(a) 1<!--★30=90?（連接表でもそうらしい） --><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;767 8 55(h) 20(a) 60(u) 90(e) 60(u) 20(a) 1 <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;66(l) 1 55(h) 20(a) 60(u) 90(e) 60(u) 20(a) 8 () 69(di) 32/55 02(a) 36(r) 29(n) 93(to) 1 <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;66(l) 1 55(h) 20(a) 60(u) 90(e) 23(s) 64(e) 8 () 70(o) 36(r) 69(di) 29(n) 20(a) 93(to) 1 <br>
+47 8 772 1 66(l) 8 55(h) 20(a) 60(u) 90(e) 23(s) 64(e) 8 () 44(f(a)) 02(a) 25(t) 35(t) 70(o) 1	<!--★25=35?（連接表でもそうらしい）--> <br>
+47 &nbsp; &nbsp;64 1 66(l) 8 55(h) 20(a) 60(u) 90(e) 23(s) 64(e) 88 44(f(a)) 20(a) 35(t) 25(t) 03(o) 8 1 <br>
+</TT>
+</DIV>
+
+<P>I hoped pattern matching would reveal the word 55 20 60 30 60 20 but there were too many candidates (e.g., BANANA). Moreover, as it turned out, my dictionary did not include the correct word HAVEVA! It seems to be AVEVA in modern Italian spelling.</P>
+
+<H4>Homophones</H4>
+<P>In dealing with homophonic substitution ciphers, identification of homophones may help. From the above patterns, I thought 30=90 and 25=35 (which were consistent with the contact chart).</P>
+
+<P>When I reviewed my records, I found I was once very close to the correct identification.</P>
+<P>I took up 32 02 77 90 36 50 90 36 70 1 and searched for a pattern</P>
+<P>^.[AEIOU].([AEIOU])(.)[AEIOU]\1\2.$</P>
+
+<P>which produced a manageable number of hits.</P>
+<TABLE border="1"><TR><TD>
+CAMERIERA
+CAMERIERE
+CAMERIERI
+CAPOCUOCA
+CAPOCUOCO
+COSITUITE
+DILANIANO
+DILATIATE
+DIRAMIAMO
+FOTODIODI
+FOTODIODO
+GENEVIEVE
+RICAMIAMO
+SALARIARE
+VICARIARE
+BARATIATE
+DIFAMIAMO
+GOZANIANA
+GOZANIANE
+GOZANIANI
+GOZANIANO
+LAVERIERE
+RICATIATE
+ZATERIERE
+RACATIATE
+SOTOCUOCA
+SOTOCUOCO
+</TD></TR></TABLE>
+<P>From the first candidate (which happened to be very close to the correct result), I assumed identifications</P>
+<DIV class="kakomi2" style="width:600px"><TT>
+32 02 77 90 36 50 70<br>
+&nbsp;C &nbsp;A &nbsp;M &nbsp;E &nbsp;R &nbsp;I &nbsp;A
+</TT></DIV>
+<P>In a sorted list of "words", these yielded the following</P>
+<DIV class="kakomi2"><TT>
+32 02 77 90 36 50 90 36 70 1 // C A M E R I E R A 1<br>
+32 02 60 20 7?7 09 36 70 1 // C A 60 20 7?7 09 R A 1<br>
+32 02 60 20 37 09 56 70 1 // C A 60 20 37 09 56 A 1<br>
+32 02 77 09 36 90 46 70 1 // C A M 09 R E 46 A 1<br>
+66 09 70 29 02 36 33 70 1 // 66 09 A 29 A R 33 A 1<br>
+</TT></DIV>
+
+<P>These suggested homophones 60=77,20=90,37=36,56=36,56=46. But these were wrong. I worked with these wrong hypotheses and wasted many days. (I should have refrained from these hypotheses, which require an assumption that 50 is a null, which seems improbable.) It was based on the assumption that the above five patterns represented the same word, which turned out to be wrong.</P>
+
+<DIV class="kakomi2"><TT>
+32(c) 02(a) 77(m) 90(e) 36(r) 50(i) 90(e) 36(r) 70(o) 1<br>
+32(c) 02(a) 60(u) 20(a) 7?7 09(e) 36(r) 70(o) 1<br>
+32(c) 02(a) 60(u) 20(a) 37(gli) 09(e) 56(del) 70(o) 1<br>
+32(c) 02(a) 77(m) 09(e) 36(r) 90(e) 46(r) 70(o) 1<br>
+66(l) 09(e) 70(o) 29(n) 02(a) 36(r) 33(d) 70(o) 1<br>
+</TT></DIV>
+
+<P>On the other hand, from the high frequency of 60 20, I was sure 60 was a consonant but it turned out to be "u/v". As long as pattern matching is concerned, the "u/v" issue can be addressed by including in a dictionary those "modified words" in which "u" and "v" are identified. But the "u/v" issue requires care in vowel/consonant analysis.</P>
+
+
+<H2>Solution of Vatican Challenge Part 2</H2>
+<H3>Parsing</H3>
+<P>Again, the first task is to identify individual two-digit (and possibly one-digit and three-digit) symbols from the continuous stream of figures.</P>
+<P>I identified 2 and 5 as single-digit symbols by pursuing a faint possibility, rather than through solid reasoning.</P>
+<P>When I was examining instances of frequent tetragram "4033", I noticed "3654033" at the beginning of a line. Assuming that "40" and "33" were two-digit symbols and that a two-digit symbols is not broken at the end of a line, "365" should be either "3 65" or "36 5." When marking "5" in the ciphertext, the other digits seemed to consist of two-digit figures but too many exceptions were found.</P>
+
+<P>I created a table of bigram frequency (a table in which, e.g., the cell at the intersection of row "4" and column "0" indicates the frequency of "40"; that is, here, a bigram refers to a pair of digits) and marked frequencies of 50 or higher. Then, I noticed both the row of "2" and the column of "2" had no marked cells. This seemed to indicate "2" was not used to form a two-digit symbol. (One may come up with many reasons to deny such a hypothesis but every faint possibility should be pursued in codebreaking.) The digit "5" seemed to behave similarly. Actually, the similarity was not so striking but somewhere in my mind, I thought "5" might be special.</P>
+
+<P>So, I tried splitting the ciphertext with 2 and 5, which yielded many sequences consisting of an even number of digits and sequences of three digits. This seemed promising. The even number of digits consist of two-digit symbols and three-digit symbols are delimited by the single-digit symbols "2" and "5". That is, the single-digit symbols "2" and "5" seemed to be nulls.</P>
+
+<H3>More Systematic Approach for Parsing (by Thomas Bosbach)</H3>
+
+<P>Thomas Bosbach, who was the first to solve the Part 1 challenge and who also solved the Part 2 challenge before me, provided me with outlines of his method. His identification of single-digit symbols for the Part 2 challenge is more systematic than my approach above.</P>
+<P>From the first, he assumed that the cipher contains mostly two-digit numbers as homophones representing the alphabet and two one-digit numbers as word separators. He "stumbled across" such a cipher in Meister, <i>Die Geheimschrift im Dienste der Papstlichen Kurie</i> (1906), p.71, as Argenti's cipher No. 5. His assumption was confirmed when he solved the Part 1 challenge in a (partly) known-plaintext attack.</P>
+<P>He had no plaintext at hand for the Part 2 challenge but the assumption that two digits must be reserved as word separators allowed a systematic approach. If the ciphertext is broken with those two digits into segments, the segments must contain an even number of digits (possibly except for nomenclator entries, which may represent words or names in three digits). So Bosbach checked which combination of two digits as separators yielded the most groups of even length. Moreover, he could rule out some combinations through observation of the beginning or end of the lines. This way, he succeeded in identifying that "2" and "5" are single-digit symbols used as word separators.</P>
+<P>Once these separators were identified, Bosbach could solve the ciphertext through trial and error, making use of the search and replace features of Microsoft Word.</P>
+
+<H3>Contact Chart</H3>
+<P>A contact chart showed some figures occurred frequently before "2" and "5", which seemed to indicate that "2" and "5" were word boundaries and those figures were vowels.</P>
+<P>From this reasoning, I thought 40,18,16,44,06 were vowels.</P>
+
+<P>Then, these supposed vowels were marked in the ciphertext. It led to further identification of 88, 77, and 36 as vowels for reasons of alternation of vowels and consonants. For example, "40 33 11 06 47 41 40 17 88 17 36" seemed to require 88 and 36 were vowels. (Of these, 88 and 77 were wrong. They turned out to be syllables.)</P>
+
+<H3>Suppressing Homophones</H3>
+<P>When I examined frequent bigrams (this time, a bigram refers to two two-digit symbols), several pairs of similar sequences were found, which indicated some figures that had the same value.</P>
+
+<DIV class="kakomi2"><TT>
+2 19 41 06 19 41 39 	44 5<br>
+5 19 41 16 19 41 39 	44 5<br>
+06=16<br>
+<br>
+22 19 06 93 41 09 44 5<br>
+ 5 19 06 93 41 49 44 5 <br>
+09=49<br>
+<br>
+2 93 18 34 08 41 09 93 44 5<br>
+2 93 18 34 08 41 39 93 40 [End Of Ciphertext]<br>
+09=39<br>
+<br>
+5 93 18 34 19 36 5<br>
+5 93 18 34 19 16 5<br>
+36=16<br>
+<br>
+2 19 40 41 33 09 5<br>
+2 19 40 41 33 49 2<br>
+09=49<br>
+</TT></DIV>
+
+<P>Since I knew a contemporary cipher, which had pairs such as 25=35, I thought these identifications were correct. From this time on, I worked with a modified ciphertext, in which these homophones were suppressed.</P>
+
+<H3>Pattern Matching</H3>
+<P> A sequence "2 19 41 36 19 41 39 44 522" has a promising repeating structure. The following match this pattern (I limited my search to those patterns that had 36 and 39 as vowels).</P>
+<TABLE border="1"><TR><TD>
+PROPRIA
+PROPRIE
+PROPRIO
+SCOSCIO
+TSUTSUI
+AGUAGLI
+CHECHIO
+ACIACHI
+</TD></TR></TABLE>
+<P>From this, I hypothesized 19(P) 41(R) 36(O) 19(P) 41(R) 39(I).</P>
+
+<P>With these assignments, </P>
+<P>"PRI80" indicated 80=MA</P>
+<P>"19(P) 41(R) 18(?) 19(P) 40(?) 41(R) 04(?) 71 5" indicated "04=40=A"，"18=E".</P>
+
+<P>Still, I was not sure. But then, "5 74 93(?) 41(R) 40(A) 41(R) 39(I) 36(O)  52" led to hypotheses 74=CON, 93=T, which was consistent with "5 74(CON)48ILIO 5", which in turn gave 48=C.</P>
+<P>About this time, I felt sure I was on the right track.</P>
+
+<P>After this, one identification led to others and most of the symbols were identified within a few hours.</P>
+
+<P>My (partial) solution to the "Vatican Challenge: Part 2" appears in the Appendix below.</P>
+
+<H2>Appendix 1: Vatican Challenge Part 1</H2>
+<H3>Transcription (after Parsing into Cipher Symbols)</H3>
+<P>The transcription below is a version after parsing into individual cipher symbols. I made some corrections by referring to the original images and context.</P>
+<DIV class="kakomi2" style="width:auto">
+62 39 67 50 1 737 8 23 32 36 50 23 43 05 18 22 00 46 25 90 1 56 73 8 63 02 1 44 63 37 20 8 52 18 74 1 36 70<br>
+34 24 09 81 57 1 504 1 90 8 63 1 23 90 36 06 50 18 57 1 22 70 25 90 36 30 8 23 09 29 26 02 1 67 00 8 43 70 23<br>
+22 00 25 35 70 1 62 39 67 36 30 8 02 1 23 02 22 09 36 09 1 774 8 47 1 55 02 60 90 23 43 09 8 36 50 22<br>
+70 46 25 20 35 07 1 76 8 793 1 54 18 200 1 90 8 454 8 360 8 47 1 63 8 22 00 36 30 60 20 1 69 1 53 1 22 70<br>
+32 03 81 77 03 77 90 29 93 1 57 8 ?73 1 63 02 1 545 18 62 39 67 50 1 00 8 775 1 00 44 30 25 35 70 1 7?6 818<br>
+44 09 36 90 25 35 50 18 63 70 1 44 02 63 66 50 20 36 09 8 52 8 569 1 47 8 23 70 93 1 22 36 90 25 90 92<br>
+70 1 69 8 32 70 39 22 66 50 77 90 29 93 18 65 1 20?? 3?4 70 32 20 23 64 1 52 81 793 1 737 1 64 99<br>
+60 50 8 90 8 766 81 76 1 33 90 25 93 1 32 02 63 96 1 57 1 504 8 90 1 22 50 60 1 34 36 90 60 305? 18<br>
+69 1 774 8 47 94 1 44 90 52 50 8 00 18 69 36 50 25 60 46 20 8 ? 1 57 8 60 30 46 70 39 02 1 66 1 00 23 22<br>
+90 25 35 26 50 18 43 07 35 25 07 1 32 07 66 03 36 09 1 69 1 20 23 22 30 25 35 00 36 90 8 73 1 44<br>
+02 63 37 20 1 02 1 36 70 60 30 46 09 81 66 04 70 99 07 1 33 70 33 09 32 50 1 77 50 37 02 8 22 46<br>
+05 62 1 69 8 00 46 05 60 20 36 65 81 00 1 25 36 90 29 93 57 68 793 81 63 1 52 77 60 29 50 32 70 1 73 1<br>
+23 60 43 25 00 29 26 20 1 69 8 774 1 47 81 55 02 1 22 02 43 23 20 25 70 8 52 1 66 50 1 23 60 33 90<br>
+25 35 05 8 90 1 774 1 47 18 55 20 60 30 60 20 18 52 1 497 8 56 8 22 00 29 33 07 66 44 50 39 07 81<br>
+56 66 50 1 27 20 35 25 36 70 1 90 8 32 50 29 27 90 1 69 81 62 99 50 70 188 23 90 22 90 1 675 18<br>
+66 1 00 36 46 05 06 70 1 69 1 775 8 22 02 36 25 09 1 69 1 63 02 1 44 02 77 50 37 00 8 90 1 57 81<br>
+60 29 1 23 04 39 1 99 09 29 25 05 66 70 77 03 8 32 02 77 90 36 50 90 36 70 1 56 73 1 32 55<br>
+50 20 60 30 8 33 93 46 00 35 00 8 62 39 33 70 1 00 33 1 50 29 60 40 25 00 36 66 02 1 90 8 44<br>
+02 36 81 50 29 92 00 39 26 02 1 47 8 44 60 23 43 09 36 70 1 00 33 18 20 66 07 99 05 02 36<br>
+90 8 97 1 22 02 66 20 26 03 1 44 60 8 36 05 42 06 43 20 35 07 8 66 97 60 40 93 3? 52 1 34 60<br>
+70 29 81 25 90 36 63 95 1 90 8 22 07 05 1 76 8 44 90 36 09 23 35 40 8 52 1 567 1 695? 1<br>
+04 05 43 50 25 02 36 90 8 50 66 1 293 8 66 09 70 29 02 36 33 70 1 00 36 50 60 20 34 90<br>
+95 8 23 60 70 1 00 63 32 70 1 90 8 32 70 29 07 23 42 50 60 93 1 59 8 32 70 66 74 99 50<br>
+70 1 77 07 29 25 00 66 93 1 02 8 34 03 66 07 99 29 02 8 33 05 49? 00 36 70 8 47 1 55 00 60<br>
+90 60 20 1 36 50 32 60 43 20 25 70 8 66 1 50 29 60 40 93 81 57 8 64 36 04 05 36 90 1 20 8 675<br>
+18 77 09 33 09 65 62 8 92 00 29 25 09 1 66 1 567 8 90 1 74 8 32 50 46 42 07 92 00 29 26 30 1<br>
+56 73 1 63 02 8 00 29 67 25 20 88 67 1 775 1 77 09 33 90 65 77 03 1 293 8 63 1 36 50 44 09 46 05<br>
+1 76 8 44 09 36 90 25 35 40 1 747 8 23 02 22 60 93 1 52 8 775 1 567 1 47 8 69 1 422 81 20<br>
+23 22 09 35 25 20 60 20 29 70 8 35 36 20 1 34 36 09 60 90 1 35 09 77 22 03 1 60 90 29<br>
+<br>
+#002v.jpg<br>
+25 40 1 77 50 66 02 8 44 20 29 35 40 81 90 8 33 60 90 1 77 50 66 20 1 32 02 06 20 66 05 81 42 05 09 81<br>
+23 09 05 1 77 50 73 1 44 00 29 25 05 8 90 1 33 60 30 1 77 40 73 1 32 00 60 20 66 05 8 ?47 1 65 1 44 02<br>
+29 70 8 57 1 569 8 79 1 00 1 23 22 90 64 1 56 8 635 1 20 66 35 46 50 1 64 50 8 77?0 73 8 44 00 39 35<br>
+40 1 74 1 633 8 69 81 66 97 99 60 20 8 33 1 70 32 02 1 22 36 1 09 02 92 600 1 90 8 56 44 50 29 02<br>
+93 8 25 70 39 03 8 70 34 66 50 99 20 25 90 81 69 1 67 36 09 8 57 18 52 60 90 29 25 40 70 95 181<br>
+4? 1 27 30 66 73 8 77 00 90 23 35 05 47 8 66 50 1 20 22 66 40 32 02 04 20 1 57 8 775 18 77 09 33 09<br>
+65 62 1 470 18 79 1 72 35 8 650 1 70 30 25 03 8 63 73 1 44 02 32 30 60 20 18 76 8 354 1 69 81<br>
+75 29 99 02 60 50 66 73 8 76 1 767 8 55 20 60 90 60 20 1 04 70 66 06 93 1 47? 8 ?76 1 635 181<br>
+37 1 66 1 55 20 60 90 23 64 8 70 36 69 29 20 93 188 47 1 775 1 99 09 29 25 30 18 65 8 22 36 09 25<br>
+90 29 33 09 60 20 8 33 70 60 30 23 64 1 00 22 46 05 46 65 8 76 1 22 00 23 43 70 18 57 8 73 1<br>
+60 50 20 1 69 8 696 1 00 1 04 50 60 20 81 44 70 36 26 20 8 772 1 37 8 44 60 23 64 8 60 66<br>
+04 93 1 50 77 22 09 69 36 30 88 47 1 65 8 22 36 90 23 60 22 70 95 04 20 1 47 8 340 1 44 60 23<br>
+64 8 73 55 02 36 57 703 1 44 50 29 05 93 8 69 8 60 50 60 90 36 30 1 90 8 69 1 520 8 67 1 437 1<br>
+57 8 77 07 66 25 40 8 77 30 65 1 90 8 47 1 23 60 66 70 1 04 05 8 44 06 23 64 1 64 29 32 00 77 09 29<br>
+93 1 69 8 70 66 50 07 1 90 8 69 1 23 02 74 81 90 1 47 8 69 81 99 09 29 25 30 8 67 1 437 8 95 188<br>
+32 70 36 46 09 60 20 1 95 8 99 36 00 39 18 32 70 22 40 20 1 22 02 36 25 50 32 70 73 46 755<br>
+81 54 75 1 923 188 23 09 22 30 1 733 8 57 1 72 35 36 20 81 60 50 20 8 47 1 90 36 20 88<br>
+99 50 60 29 93 1 97 1 27 09 50 8 99 50 70 36 29 50 81 52 1 32 40 46 32 00 8 60 40 29 25 50 1<br>
+23 70 66 67 25 40 8 60 29 1 99 09 29 25 09 66 55 60 70 77 60 18 69 1 44 60 66 50 99 29<br>
+70 18 32 74 77 09 29 25 90 1 23 20 39 35 50 40 8 47 8 55 20 1 43 09 36 06 05 25 60 818<br>
+20 39 35 40 42 02 8 52 1 76 8 692 1 354 81 76 8 767 1 66 1 55 20 60 90 60 20 8 69 32<br>
+55 02 36 29 93 1 43 04 24 05 93 1 77 20 92 36 04 8 69 8 32 02 77 22 70 18 69 1 60 29<br>
+8 35 30 46 26 04 1 52 81 34 60 70 29 8 43 03 66 33 70 8 90 1 22 36 90 92 40 93 1 69 8<br>
+67 29 20 46 40 88 65 1 32 55 46 90 33 09 04 00 1 53 8 23 70 66 07 1 97 8 36 50 99 60 20<br>
+46 33 70 8 ? 1 56 73 8 20 39 35 40 42 1 43 09 36 04 05 25 60 8 62 1 52 8 23 22 09 36 02 3?9<br>
+26 20 18 47 1 44 60 23 64 1 57 8 44 20 46 1 34 06 70 29 18 39 04 77 30 46 04 1 69 8 99 09 29<br>
+25 30 1 54 75 1 923 888 97 25 36 09 39 93 1 35 46 03 60 20 50 8 22 70 33 90 92 02 81 ?<br>
+<br>
+#003r.jpg<br>
+23 09 24 00 92 50 20 39 70 8 36 00 92 90 66 50 29 70 8 67 1 46 09 32 00 39 20 25 40 8 09 1 63 1<br>
+33 50 23 64 1 747 8 43 90 29 25 05 33 70 18 69 1 36 70 32 42 02 8 56 8 200 8 772 1 22 02 23 43 70<br>
+1 69 8 73 1 47 8 72 1 369 8 52 60 90 29 50 60 20 81 60 34 09 69 36 09 8 72 1 460 1 52 64 99 29 20<br>
+39 33 70 8 00 33 09 23 43 70 1 737 1 02 8 200 1 76 8 22 70 23 64 23 43 70 18 56 8 43 60 70 1 92 02<br>
+93 1 47 8 772 1 66 8 55 20 60 90 23 64 8 44 02 25 35 70 18 23 02 36 09 24 34 90 8 60 50 23 43 04<br>
+93 81 44 90 66 50 32 30 8 90 1 66 40 30 93 18 32 02 60 20 37 09 36 70 18 20 66 25 36 50 755 1 20 99 30<br>
+34 02 35 60 46 18 33 09 8 90 45 92 09 36 63 29 20 25 70 95 8 47 1 76 8 33 90 25 93 1 29 90 55 02<br>
+60 90 60 20 8 52 39 33 70 35 93 1 64 32 70 1 69 8 35 36 09 29 93 8 60 29 18 35 20 66 1 44 70 22 70<br>
+66 40 1 57 8 97 92 36 60 25 35 70 46 90 1 97 1 775 8 00 44 20 36 40 8 22 62 36 35 50 32 03 73 46 755<br>
+81 97 1 774 8 47 81 25 70 32 42 02 1 20 8 22 36 03 42 30 69 77 09 29 25 40 8 99 50 60 69 25 40<br>
+20 36 40 50 188 47 8 76 1 44 70 22 07 66 05 18 90 1 40 90 46 6?6 50 97 1 690 8 69 18 32 02 43 20 8<br>
+62 33 46 04 32 42 50 1 90 8 52 44 05 33 09 29 35 09 81 69 8 522 1 32 70 20 69 60 93 46 90 18 47 18<br>
+57 1 43 04 00 1 04 50 20 8 43 50 8 23 20 36 09 ?? 90 29 70 1 22 70 25 60 35 09 18 22 30 39 30 25<br>
+36 20 46 1 753 8 42 70 64 1 36 30 92 70 1 47 8 737 1 67 1 64 8 97 65? 29 60 20 36 00 1 76 8 33 09<br>
+25 93 1 22 70 33 09 92 02 8 00 1 522 8 66 1 567 8 47 1 37 8 65 18 22 70 36 99 09 60 20 18 57 18<br>
+775 1 77 09 26 70 8 69 1 20 60 20 29 26 02 36 64 1 59 73 59 93 60 02 550 20 18 69 8 577 1 09 1<br>
+69 8 996 18 09 1 37 8 77 09 25 90 36 50 20 1 97 8 52653 1 90 36 00 25 40 70 95 8 69 1 773 8 77<br>
+70 77 09 29 93 18 22 70 35 30 23 64 1 90 23 64 36 37 1 772 8 70 32 07 36 46 09 23 64 18<br>
+25 36 20 25 02 46 43 50 1 69 8 20 60 20 29 26 00 755 8 56 73 1 43 04 20 1 57 23 70 29 02 1<br>
+90 1 47 8 69 1 774 8 47 1 97 81 767 1 65 8 60 70 37 20 18 77 70 33 70 1 20 36 50 60 20 23 43 09<br>
+1 20 8 23 60 20 8 29 70 25 05 35 40 20 8 63 1 67 36 50 20 8 22 02 36 35 09 1888 59 1 77 09<br>
+33 09 77 07 1 99 05 70 36 29 03 1 47 8 22 02 36 35 40 50 81 69 8 35 36 90 29 93 1 47 1 44 60 1<br>
+99 50 70 60 90 33 50 81 60 29 33 05 32 05 8 92 02 39 25 09 1 53 1 753 8 66 70 29 25 00 29<br>
+70 1 97 52 35 46 20 40 1 60 29 8 32 02 60 20 37 09 56 70 1 47 8 52 1 60 29 8 43 09 36 04 05<br>
+93 46 09 8 60 90 29 50 60 20 1 57 8 73 81 22 70 92 00 8 52 1 567 8 69 1 32 00 77 34 50 20 36<br>
+8 66 50 81 23 60 70 40 1 52 8 66 05 8 63 09 50 1 32 00 60 20 66 40 1 737 1 09 8 43 03 66 05 25 03<br>
+1 22 02 36 73 29 67 1 64 32 03 8 43 09 22 40 1 740 1 76 8 502 18 69 9?9? 36 20 29 4?0 818<br>
+62 39 35 04 20 39 70 18 32 02 77 09 36 90 46 70 1 56 8 460 18 60 90 29 50 36 09 1 54 73<br>
+18 32 70 36 25 09 1 57 8 23 60 70 40 8 97 35 09 46 09 23 65 1 33 70 77 09 92 50 32 40 18<br>
+<br>
+#003v.jpg<br>
+90 1 57 81 52 33 60 46 36 09 18 23 60 20 1 77 70 37 09 1 97 8 09 1 44 50 37 1 0 8 97 1 436 8 57 1<br>
+44 00 36 65 1 25 70 33 09 43 42 07 81 00 44 20 35 25 70 1 737 1 33 50 43 23 90 188 33 05 43 23 09<br>
+81 47 1 670 8 09 1 36 50 43 70 66 06 35 02 1 47 8 76 1 354 8 60 34 90 33 05 23 42 02 18 22 60 29 35<br>
+04 00 66 755 1 09 8 43 09 29 26 20 8 35 09 36 99 50 60 90 36 43 20 25 70 95 1 73 43 42 56 20 39 33 03<br>
+1 76 1 623 8 97 1 62 29 70 8 56 1 23 60 70 1 299 8 52 44 70 36 77 90 1 57 8 774 1 47 8 33 50 32 09<br>
+60 20 88 00 66 18 23 70 66 50 25 70 81 33 1 474 8 90 1 69 8 436 81 47 8 64 1 66 8 55 20 60 90 23<br>
+64 88 44 20 35 25 03 81 74 73 40 9 1 77 07 92 36 20 35 07 88 73 1 22 46 06 33 09 29 26 20<br>
+81 47 1 65 8 1 22 36 09 69 32 02 8 69 1 66 04 05 8 09 1 35 46 07 60 20 35 70 18 97 1 670 8 774 1<br>
+99 50 60 92 05 35 05 20 1 09 88 36 90 25 35 05 35 60 69 95 18 47 1 005 35 60 25 35 40 8 90 81<br>
+29 70 25 20 1 20 66 25 36 50 755 1 43 20 46 09 24 34 30 88 92 02 93 1 73 1 43 60 20 1 36 07<br>
+06 05 39 02 18 90 8 69 1 27 09 05 1 92 02 25 40 81 79 8 74 73 1 24 09 8 44 00 25 35 70 88<br>
+76 1 99 50 60 70 42 03 8 72 66 40 1 926 8 79 1 72 35 36 05 1 43 60 70 05 18 90 77 60 66 50 1<br>
+88 59 1 69 43 42 70 36 43 70 18 22 02 46 73 29 33 07 1 56 8 354 18 75 1 42 55 05 20 77 07 18<br>
+23 09 77 22 36 30 88 76 1 692 8 354 1 42 02 36 75 88 65 1 69 32 55 05 20 36 70 8 99 36 02 29 33<br>
+54 00 63 42 70 1 90 8 22 02 46 35 05 02 74 8 56 1 232 8 652 1 72 73 1 32 70 36 35 09 81 32<br>
+09 43 20 46 90 20 18 90 1 69 23 64 8 47 1 97 8 99 05 07 36 29 40 18 90 36 20 1 60 09 29 04<br>
+25 70 8 67 18 60 65 57 8 73 1 22 07 92 02 8 749 1 73 23 42 40 20 93 1 97 69 09 25 36 70 1<br>
+73 1 23 60 20 8 44 02 63 37 20 1888 53 1 23 70 8 64 1 65 8 22 70 43 23 02 1 33 60 24 05<br>
+35 02 46 09 8 47 1 32 70 66 18 44 05 95 1 56 66 05 1 33 8 00 44 20 46 05 8 33 70 77 09 92 05<br>
+32 50 18 04 05 8 52 42 70 46 36 00 18 733 1 774 1 69 8 90 43 22 66 03 46 20 36 09 88<br>
+74 1 44 70 46 26 09 18 09 1 66 50 8 202 1 56 8 354 8 90 1 47 8 22 07 36 35 05 1 52 8 775 1<br>
+376 8 769 18 569 1 70 8 00 60 90 46 35 05 755 18 72 8 200 18 70 1 72 77 09 29 03 1 60 90<br>
+39 99 20 8 57 1 20 23 65 92 09 36 66 05 8 79 1 74 037 8 60 50 42 50 29 70 88 42 70 66 8<br>
+44 50 95 8 57 1 76 8 767 8 55 20 29 39 70 18 62 39 67 93 8 76 1 33 70 35 25 70 36 81<br>
+36 50 42 32 50 8 67 1 22 70 29 25 36 09 77 07 66 05 888 63 1 69 23 64 8 76 1 33 8 502 18<br>
+47 1 92 02 39 33 70 1 672 81 57 8 00 29 67 36 81 97 1 534 8 65 1 90 36 00 1 25 36 00 35 90<br>
+39 60 93 18 57 1 66 8 97 69 23 22 70 65 25 05 70 95 81 69 8 60 20 36 70 66 40 8 43 70 22 36<br>
+20 99 50 60 29 35 20 8 72 1 643 8 43 60 70 1 44 50 37 07 75 1 56 73 8 767 1 763 8 09 36 20 1 <br>
+</DIV>
+
+<H3>(Partially) Deciphered Text</H3>
+<DIV class="kakomi2">
+mandai_come_scrissi-parte_della_mia_f[a]milia_con-le_ro<br>
+bbe__per_Mantova_e_mi_servi-per_potere_senta_daa_sos<br>
+patto_mandare_a_sapere_774_47_hauesse_rip<br>
+ortato_76_793_54-200_e_454_360_47_mi_pareua_di_53_po<br>
+co__momento_per_73_mia_545-mandai_a_775_afetto_7?6___<br>
+feretti-mio_familiare_con_569_47_soto_pretest<br>
+o_di_conplimento-i_20??3?4ocase_con__793_come_eg<br>
+ui_e_766__76_detto_camiE?_per_Mantova_e_piu_breu305?-<br>
+di_774_4794_feconi_a-diritura__per_uerona_l_asp<br>
+ettti-sotto_colore_di_aspettare_la_f<br>
+amilia_a_rouere__luogo_dodeci_milia_pr<br>
+ima_di_ariuari__a_trentoper68793__mi_conmunico_la_<br>
+sustanta_di_774_47__ha_passato_con_li_sude<br>
+tti_e_774_47-haueua-con_497_del_pandolfino__<br>
+delli_quattro_e_cinque_di__magio___sepe_675-<br>
+l_arrivo_di_775_parte_di_mia_familia_e_per__<br>
+un_sun_gentilomo_cameriero_della_ch<br>
+iaue_dtorata_mando_ad_inuitarla_e_f<br>
+ar__instanta_47_fussero_ad-alogiar<br>
+e_in_palato_fu_ricvsato_linuito3?con_bu<br>
+on__termine_e_poi_76_feresti_con_567_695?_<br>
+uisitare_il_293_leonardo_ariuabe<br>
+ne_suo_amico_e_conosciuto_59_collegi<br>
+o_montalto_a_bologna_di49?aro_47_hau<br>
+eua_ricusato_l_inuito__per_eruire_a_675<br>
+-medeima_stante_l_567_e_le_circostante_<br>
+della_mia_andata__da_775_medeimo_293_mi_riferi<br>
+_76_feretti_747_saputo_con_775_567_47_di_422__a<br>
+spettauano_tra_breue_tempo_uen<br>
+<br>
+#002v.jpg<br>
+ti_mila_fanti__e_due_mila_cavali__cie__<br>
+sei_mila_fanti_e_due_mila_cauali_?47_i_fa<br>
+no_per_569_79_a_spee_del_635_altri_ei_77?0la_fant<br>
+i_le_633_di__lingua_d_oca_pr_east600_e_delfina<br>
+to_tono_obligate__di_dare_per-conuentione___<br>
+4?_quella_maesti47_li_aplicaua_per_775-mede<br>
+ima_470-79_alt_650_oeto_mila_faceua-76_354_di__<br>
+75ngauilla_76_767_haueua_uolvto_47?_?76_635___<br>
+li_l_hauese_ordinato___47_775_gente-i_pret<br>
+endeua_douese_apriri_76_passo-per_la_<br>
+uia_di_696_a_uiua__forta_772_li_fuse_ul<br>
+uto_impedire__47_i_presuponeua_47_340_fus<br>
+e_laharper703_finito_di_uiuere_e_di_520_da_437_<br>
+per_molti_mei_e_47_sulo_ui_fvse_encamen<br>
+to_di_olio_e_di_sale__e_47_di__gente_da_437_ne___<br>
+correua_ne_gran-copia_particolarmente<br>
+__5475_923___sepe_733_per_altra__uia_47_era__<br>
+giunto_in_quei_giorni__con_circa_uinti_<br>
+soldati_un_gentelhuomu-di_fulign<br>
+o-clemente_santii_47_ha_servitu___<br>
+antica_con_76_692_354__76_767_l_haueua_dic<br>
+harnto_subito_mastru_di_campo-di_un<br>
+_tertu_con__buon_soldo_e_prestito_di_<br>
+danari__i_chredeua_53_solo_in_rigua<br>
+rdo_?_della_antic_seruitu_ma_con_spera3?9<br>
+ta-47_fuse_per_far_bvon-numeru_di_gen<br>
+te_5475_923___intrento_trouai_podesta__?<br>
+<br>
+#003r.jpg<br>
+sebastiano_rastelino_da_recanati_e_mi_<br>
+dise_747_sentido-di_rocca_del_200_772_passo<br>
+_di_la_47_al_369_conueniua__ubedire_al_460_conegna<br>
+ndo_adesso_come_a_200_76_posesso-del_suo_sta<br>
+to_47_772_l_hauese_fatto-sarebbe_uissu<br>
+to__felice_e_lieto-caualiero-altrimente_age<br>
+batur-de_e45sterminatone_47_76_detto_neha<br>
+ueua_conndotto_eco_di_trento_un-tal_fopo<br>
+li_per_instruttore_in_775_afari_pmarticolarmente<br>
+__in_774_47__tocca_a_procedimenti_giuditi<br>
+arii___47_76_fopoli-e_ier6?6iin_690_di-casa_<br>
+madrucci_e_confidente__di_522_coadiutore-47-<br>
+per_sua_uia_si_sare??eno_potute-penet<br>
+rar_753_coe_resto_47_come_da_e_in65?nuara_76_de<br>
+tto_podesta_a_522_l_567_47_li_i-porgeua-per-<br>
+775_meto_di_auantare_59la59toua550a-di_577_e_<br>
+di_996-e_li_meteria_in_52653_eratione_di_773_m<br>
+omento-potese_eserli_772_ocorrese-<br>
+tratarsi_di_auantamente_della_sua_persona_<br>
+e_47_di_774_47_in__767_i_uolia-modo_ariuasse<br>
+_a_sua_notitia_mi_daria_parte____59_me<br>
+demo_giorno_47_partii__di_trento_47_fu_<br>
+giouedi__undici_stante_53_753_lontan<br>
+o_incontrai_un_caualiedelo_47_con_un_serui<br>
+tore_ueniua_per_la__posta_con_567_di_cambiar<br>
+_li__suoi_con_li_miei_cauali_come_e_solito<br>
+_parlanda_eco_sepi_740_76_502-di9?9?ran4?0___<br>
+mantuano-camerero_del_460-uenire_54la<br>
+-corte_per_suoi_interesi_domestici-<br>
+<br>
+#003v.jpg<br>
+e_per__condurre-sua_molie_in_e_fili_0_in_436_per_<br>
+fari_todesco__afatto_come_disse___disse<br>
+__47_670_e_risolvta_47_76_354_ubedisca-punt<br>
+ualmente_e_senta_tergiuersatone_lascdelando<br>
+_76_623_in_mano_del_suo_299_conforme_per_774_47_dice<br>
+ua__al-solito__d_474_e_di_436__47_e_l_haues<br>
+e__fatto__lelai9_mostrato__la_prvdenta<br>
+__47_i__predica_di_lui_e_trouato-in_670_774_<br>
+giustitia_e__rettitudine-47_005tutti_e__<br>
+nota_altrimente_sarebbe__stato_la_sua_ro<br>
+vina-e_di_quei_stati__79_lela_be_fatto__<br>
+76_giuoco_alli_926_79_altri_suoi-emuli_<br>
+__59_discorso-parlando_del_354-75_chiamo-<br>
+sempre__76_692_354_car75__i_dichiaro_grand<br>
+54amico_e_partiale_del_232_652_alla_corte__c<br>
+esarea-e_dise_47_in_giorni-era_uenu<br>
+to_da-uiper_la_posta_749_lasciato_indietro_<br>
+la_sua_familia____53_so_e_i_possa_dubi<br>
+tare_47_col-fine_delli_d_afari_domesti<br>
+ci-ui_concorra-733_774_di_esplorare__<br>
+le_forte-e_li_202_del_354_e_47_porti_con_775_<br>
+376_769-569_o_auertimente-al_200-o_almeno_ue<br>
+nga_per_asisterli_79_le037_uicino__col_<br>
+fine_per_76_767_hanno-mandato_76_dottor__<br>
+ricci_da_pontremoli___mi_dise_76_d_502-<br>
+47_stando_672__per_andar__in_534_i_era_trate<br>
+nuto-per_l_indispoitione__di_uaroli_sopr<br>
+agiunta_al_643_suo_filio75_della_767_763_era_<br>
+</DIV>
+
+<H3>Dump</H3>
+<DIV class="kakomi2"style="width:auto">
+62(ma) 39(n) 67(da) 50(i) 1(_) 737(come) 8(_) 23(s) 32(c) 36(r) 50(i) 23(s) 43(s) 05(i) 18(-) 22(p) 00(a) 46(r) 25(t) 90(e) 1(_) 56(del) 73(la) 8(_) 63(mi) 02(a) 1(_) 44(f) 63(mi) 37(li) 20(a) 8(_) 52(con) 18(-) 74(le) 1(_) 36(r) 70(o) <br>
+34(b) 24(b) 09(e) 81(__) 57(per) 1(_) 504(Mantova) 1(_) 90(e) 8(_) 63(mi) 1(_) 23(s) 90(e) 36(r) 06(v) 50(i) 18(-) 57(per) 1(_) 22(p) 70(o) 25(t) 90(e) 36(r) 30(e) 8(_) 23(s) 09(e) 29(n) 26(t) 02(a) 1(_) 67(da) 00(a) 8(_) 43(s) 70(o) 23(s) <br>
+22(p) 00(a) 25(t) 35(t) 70(o) 1(_) 62(ma) 39(n) 67(da) 36(r) 30(e) 8(_) 02(a) 1(_) 23(s) 02(a) 22(p) 09(e) 36(r) 09(e) 1(_) 774 8(_) 47 1(_) 55(h) 02(a) 60(u) 90(e) 23(s) 43(s) 09(e) 8(_) 36(r) 50(i) 22(p) <br>
+70(o) 46(r) 25(t) 20(a) 35(t) 07(o) 1(_) 76 8(_) 793 1(_) 54 18(-) 200 1(_) 90(e) 8(_) 454 8(_) 360 8(_) 47 1(_) 63(mi) 8(_) 22(p) 00(a) 36(r) 30(e) 60(u) 20(a) 1(_) 69(di) 1(_) 53 1(_) 22(p) 70(o) <br>
+32(c) 03(o) 81(__) 77(m) 03(o) 77(m) 90(e) 29(n) 93(to) 1(_) 57(per) 8(_) ?73 1(_) 63(mi) 02(a) 1(_) 545 18(-) 62(ma) 39(n) 67(da) 50(i) 1(_) 00(a) 8(_) 775 1(_) 00(a) 44(f) 30(e) 25(t) 35(t) 70(o) 1(_) 7?6 818 <br>
+44(f) 09(e) 36(r) 90(e) 25(t) 35(t) 50(i) 18(-) 63(mi) 70(o) 1(_) 44(f) 02(a) 63(mi) 66(l) 50(i) 20(a) 36(r) 09(e) 8(_) 52(con) 8(_) 569 1(_) 47 8(_) 23(s) 70(o) 93(to) 1(_) 22(p) 36(r) 90(e) 25(t) 90(e) 92(st) <br>
+70(o) 1(_) 69(di) 8(_) 32(c) 70(o) 39(n) 22(p) 66(l) 50(i) 77(m) 90(e) 29(n) 93(to) 18(-) 65(i) 1(_) 20?? 3?4 70(o) 32(c) 20(a) 23(s) 64(e) 1(_) 52(con) 81(__) 793 1(_) 737(come) 1(_) 64(e) 99(g) <br>
+60(u) 50(i) 8(_) 90(e) 8(_) 766 81(__) 76 1(_) 33(d) 90(e) 25(t) 93(to) 1(_) 32(c) 02(a) 63(mi) 96(E?) 1(_) 57(per) 1(_) 504(Mantova) 8(_) 90(e) 1(_) 22(p) 50(i) 60(u) 1(_) 34(b) 36(r) 90(e) 60(u) 305? 18(-) <br>
+69(di) 1(_) 774 8(_) 47 94 1(_) 44(f) 90(e) 52(con) 50(i) 8(_) 00(a) 18(-) 69(di) 36(r) 50(i) 25(t) 60(u) 46(r) 20(a) 8(_) ? 1(_) 57(per) 8(_) 60(u) 30(e) 46(r) 70(o) 39(n) 02(a) 1(_) 66(l) 1(_) 00(a) 23(s) 22(p) <br>
+90(e) 25(t) 35(t) 26(t) 50(i) 18(-) 43(s) 07(o) 35(t) 25(t) 07(o) 1(_) 32(c) 07(o) 66(l) 03(o) 36(r) 09(e) 1(_) 69(di) 1(_) 20(a) 23(s) 22(p) 30(e) 25(t) 35(t) 00(a) 36(r) 90(e) 8(_) 73(la) 1(_) 44(f) <br>
+02(a) 63(mi) 37(li) 20(a) 1(_) 02(a) 1(_) 36(r) 70(o) 60(u) 30(e) 46(r) 09(e) 81(__) 66(l) 04(u) 70(o) 99(g) 07(o) 1(_) 33(d) 70(o) 33(d) 09(e) 32(c) 50(i) 1(_) 77(m) 50(i) 37(li) 02(a) 8(_) 22(p) 46(r) <br>
+05(i) 62(ma) 1(_) 69(di) 8(_) 00(a) 46(r) 05(i) 60(u) 20(a) 36(r) 65(i) 81(__) 00(a) 1(_) 25(t) 36(r) 90(e) 29(n) 93(to) 57(per) 68 793 81(__) 63(mi) 1(_) 52(con) 77(m) 60(u) 29(n) 50(i) 32(c) 70(o) 1(_) 73(la) 1(_) <br>
+23(s) 60(u) 43(s) 25(t) 00(a) 29(n) 26(t) 20(a) 1(_) 69(di) 8(_) 774 1(_) 47 81(__) 55(h) 02(a) 1(_) 22(p) 02(a) 43(s) 23(s) 20(a) 25(t) 70(o) 8(_) 52(con) 1(_) 66(l) 50(i) 1(_) 23(s) 60(u) 33(d) 90(e) <br>
+25(t) 35(t) 05(i) 8(_) 90(e) 1(_) 774 1(_) 47 18(-) 55(h) 20(a) 60(u) 30(e) 60(u) 20(a) 18(-) 52(con) 1(_) 497 8(_) 56(del) 8(_) 22(p) 00(a) 29(n) 33(d) 07(o) 66(l) 44(f) 50(i) 39(n) 07(o) 81(__) <br>
+56(del) 66(l) 50(i) 1(_) 27(qu) 20(a) 35(t) 25(t) 36(r) 70(o) 1(_) 90(e) 8(_) 32(c) 50(i) 29(n) 27(qu) 90(e) 1(_) 69(di) 81(__) 62(ma) 99(g) 50(i) 70(o) 188(___) 23(s) 90(e) 22(p) 90(e) 1(_) 675 18(-) <br>
+66(l) 1(_) 00(a) 36(r) 46(r) 05(i) 06(v) 70(o) 1(_) 69(di) 1(_) 775 8(_) 22(p) 02(a) 36(r) 25(t) 09(e) 1(_) 69(di) 1(_) 63(mi) 02(a) 1(_) 44(f) 02(a) 77(m) 50(i) 37(li) 00(a) 8(_) 90(e) 1(_) 57(per) 81(__) <br>
+60(u) 29(n) 1(_) 23(s) 04(u) 39(n) 1(_) 99(g) 09(e) 29(n) 25(t) 05(i) 66(l) 70(o) 77(m) 03(o) 8(_) 32(c) 02(a) 77(m) 90(e) 36(r) 50(i) 90(e) 36(r) 70(o) 1(_) 56(del) 73(la) 1(_) 32(c) 55(h) <br>
+50(i) 20(a) 60(u) 30(e) 8(_) 33(d) 93(to) 46(r) 00(a) 35(t) 00(a) 8(_) 62(ma) 39(n) 33(d) 70(o) 1(_) 00(a) 33(d) 1(_) 50(i) 29(n) 60(u) 40(i) 25(t) 00(a) 36(r) 66(l) 02(a) 1(_) 90(e) 8(_) 44(f) <br>
+02(a) 36(r) 81(__) 50(i) 29(n) 92(st) 00(a) 39(n) 26(t) 02(a) 1(_) 47 8(_) 44(f) 60(u) 23(s) 43(s) 09(e) 36(r) 70(o) 1(_) 00(a) 33(d) 18(-) 20(a) 66(l) 07(o) 99(g) 05(i) 02(a) 36(r) <br>
+90(e) 8(_) 97(in) 1(_) 22(p) 02(a) 66(l) 20(a) 26(t) 03(o) 1(_) 44(f) 60(u) 8(_) 36(r) 05(i) 42(c) 06(v) 43(s) 20(a) 35(t) 07(o) 8(_) 66(l) 97(in) 60(u) 40(i) 93(to) 3? 52(con) 1(_) 34(b) 60(u) <br>
+70(o) 29(n) 81(__) 25(t) 90(e) 36(r) 63(mi) 95(ne) 1(_) 90(e) 8(_) 22(p) 07(o) 05(i) 1(_) 76 8(_) 44(f) 90(e) 36(r) 09(e) 23(s) 35(t) 40(i) 8(_) 52(con) 1(_) 567 1(_) 695? 1(_) <br>
+04(u) 05(i) 43(s) 50(i) 25(t) 02(a) 36(r) 90(e) 8(_) 50(i) 66(l) 1(_) 293 8(_) 66(l) 09(e) 70(o) 29(n) 02(a) 36(r) 33(d) 70(o) 1(_) 00(a) 36(r) 50(i) 60(u) 20(a) 34(b) 90(e) <br>
+95(ne) 8(_) 23(s) 60(u) 70(o) 1(_) 00(a) 63(mi) 32(c) 70(o) 1(_) 90(e) 8(_) 32(c) 70(o) 29(n) 07(o) 23(s) 42(c) 50(i) 60(u) 93(to) 1(_) 59 8(_) 32(c) 70(o) 66(l) 74(le) 99(g) 50(i) <br>
+70(o) 1(_) 77(m) 07(o) 29(n) 25(t) 00(a) 66(l) 93(to) 1(_) 02(a) 8(_) 34(b) 03(o) 66(l) 07(o) 99(g) 29(n) 02(a) 8(_) 33(d) 05(i) 49? 00(a) 36(r) 70(o) 8(_) 47 1(_) 55(h) 00(a) 60(u) <br>
+90(e) 60(u) 20(a) 1(_) 36(r) 50(i) 32(c) 60(u) 43(s) 20(a) 25(t) 70(o) 8(_) 66(l) 1(_) 50(i) 29(n) 60(u) 40(i) 93(to) 81(__) 57(per) 8(_) 64(e) 36(r) 04(u) 05(i) 36(r) 90(e) 1(_) 20(a) 8(_) 675 <br>
+18(-) 77(m) 09(e) 33(d) 09(e) 65(i) 62(ma) 8(_) 92(st) 00(a) 29(n) 25(t) 09(e) 1(_) 66(l) 1(_) 567 8(_) 90(e) 1(_) 74(le) 8(_) 32(c) 50(i) 46(r) 42(c) 07(o) 92(st) 00(a) 29(n) 26(t) 30(e) 1(_) <br>
+56(del) 73(la) 1(_) 63(mi) 02(a) 8(_) 00(a) 29(n) 67(da) 25(t) 20(a) 88(__) 67(da) 1(_) 775 1(_) 77(m) 09(e) 33(d) 90(e) 65(i) 77(m) 03(o) 1(_) 293 8(_) 63(mi) 1(_) 36(r) 50(i) 44(f) 09(e) 46(r) 05(i) <br>
+1(_) 76 8(_) 44(f) 09(e) 36(r) 90(e) 25(t) 35(t) 40(i) 1(_) 747 8(_) 23(s) 02(a) 22(p) 60(u) 93(to) 1(_) 52(con) 8(_) 775 1(_) 567 1(_) 47 8(_) 69(di) 1(_) 422 81(__) 20(a) <br>
+23(s) 22(p) 09(e) 35(t) 25(t) 20(a) 60(u) 20(a) 29(n) 70(o) 8(_) 35(t) 36(r) 20(a) 1(_) 34(b) 36(r) 09(e) 60(u) 90(e) 1(_) 35(t) 09(e) 77(m) 22(p) 03(o) 1(_) 60(u) 90(e) 29(n) <br>
+<br>
+#002v.jpg<br>
+25(t) 40(i) 1(_) 77(m) 50(i) 66(l) 02(a) 8(_) 44(f) 20(a) 29(n) 35(t) 40(i) 81(__) 90(e) 8(_) 33(d) 60(u) 90(e) 1(_) 77(m) 50(i) 66(l) 20(a) 1(_) 32(c) 02(a) 06(v) 20(a) 66(l) 05(i) 81(__) 42(c) 05(i) 09(e) 81(__) <br>
+23(s) 09(e) 05(i) 1(_) 77(m) 50(i) 73(la) 1(_) 44(f) 00(a) 29(n) 25(t) 05(i) 8(_) 90(e) 1(_) 33(d) 60(u) 30(e) 1(_) 77(m) 40(i) 73(la) 1(_) 32(c) 00(a) 60(u) 20(a) 66(l) 05(i) 8(_) ?47 1(_) 65(i) 1(_) 44(f) 02(a) <br>
+29(n) 70(o) 8(_) 57(per) 1(_) 569 8(_) 79 1(_) 00(a) 1(_) 23(s) 22(p) 90(e) 64(e) 1(_) 56(del) 8(_) 635 1(_) 20(a) 66(l) 35(t) 46(r) 50(i) 1(_) 64(e) 50(i) 8(_) 77?0 73(la) 8(_) 44(f) 00(a) 39(n) 35(t) <br>
+40(i) 1(_) 74(le) 1(_) 633 8(_) 69(di) 81(__) 66(l) 97(in) 99(g) 60(u) 20(a) 8(_) 33(d) 1(_) 70(o) 32(c) 02(a) 1(_) 22(p) 36(r) 1(_) 09(e) 02(a) 92(st) 600 1(_) 90(e) 8(_) 56(del) 44(f) 50(i) 29(n) 02(a) <br>
+93(to) 8(_) 25(t) 70(o) 39(n) 03(o) 8(_) 70(o) 34(b) 66(l) 50(i) 99(g) 20(a) 25(t) 90(e) 81(__) 69(di) 1(_) 67(da) 36(r) 09(e) 8(_) 57(per) 18(-) 52(con) 60(u) 90(e) 29(n) 25(t) 40(i) 70(o) 95(ne) 181 <br>
+4? 1(_) 27(qu) 30(e) 66(l) 73(la) 8(_) 77(m) 00(a) 90(e) 23(s) 35(t) 05(i) 47 8(_) 66(l) 50(i) 1(_) 20(a) 22(p) 66(l) 40(i) 32(c) 02(a) 04(u) 20(a) 1(_) 57(per) 8(_) 775 18(-) 77(m) 09(e) 33(d) 09(e) <br>
+65(i) 62(ma) 1(_) 470 18(-) 79 1(_) 72(al) 35(t) 8(_) 650 1(_) 70(o) 30(e) 25(t) 03(o) 8(_) 63(mi) 73(la) 1(_) 44(f) 02(a) 32(c) 30(e) 60(u) 20(a) 18(-) 76 8(_) 354 1(_) 69(di) 81(__) <br>
+75 29(n) 99(g) 02(a) 60(u) 50(i) 66(l) 73(la) 8(_) 76 1(_) 767 8(_) 55(h) 20(a) 60(u) 90(e) 60(u) 20(a) 1(_) 04(u) 70(o) 66(l) 06(v) 93(to) 1(_) 47? 8(_) ?76 1(_) 635 181 <br>
+37(li) 1(_) 66(l) 1(_) 55(h) 20(a) 60(u) 90(e) 23(s) 64(e) 8(_) 70(o) 36(r) 69(di) 29(n) 20(a) 93(to) 188(___) 47 1(_) 775 1(_) 99(g) 09(e) 29(n) 25(t) 30(e) 18(-) 65(i) 8(_) 22(p) 36(r) 09(e) 25(t) <br>
+90(e) 29(n) 33(d) 09(e) 60(u) 20(a) 8(_) 33(d) 70(o) 60(u) 30(e) 23(s) 64(e) 1(_) 00(a) 22(p) 46(r) 05(i) 46(r) 65(i) 8(_) 76 1(_) 22(p) 00(a) 23(s) 43(s) 70(o) 18(-) 57(per) 8(_) 73(la) 1(_) <br>
+60(u) 50(i) 20(a) 1(_) 69(di) 8(_) 696 1(_) 00(a) 1(_) 04(u) 50(i) 60(u) 20(a) 81(__) 44(f) 70(o) 36(r) 26(t) 20(a) 8(_) 772 1(_) 37(li) 8(_) 44(f) 60(u) 23(s) 64(e) 8(_) 60(u) 66(l) <br>
+04(u) 93(to) 1(_) 50(i) 77(m) 22(p) 09(e) 69(di) 36(r) 30(e) 88(__) 47 1(_) 65(i) 8(_) 22(p) 36(r) 90(e) 23(s) 60(u) 22(p) 70(o) 95(ne) 04(u) 20(a) 1(_) 47 8(_) 340 1(_) 44(f) 60(u) 23(s) <br>
+64(e) 8(_) 73(la) 55(h) 02(a) 36(r) 57(per) 703 1(_) 44(f) 50(i) 29(n) 05(i) 93(to) 8(_) 69(di) 8(_) 60(u) 50(i) 60(u) 90(e) 36(r) 30(e) 1(_) 90(e) 8(_) 69(di) 1(_) 520 8(_) 67(da) 1(_) 437 1(_) <br>
+57(per) 8(_) 77(m) 07(o) 66(l) 25(t) 40(i) 8(_) 77(m) 30(e) 65(i) 1(_) 90(e) 8(_) 47 1(_) 23(s) 60(u) 66(l) 70(o) 1(_) 04(u) 05(i) 8(_) 44(f) 06(v) 23(s) 64(e) 1(_) 64(e) 29(n) 32(c) 00(a) 77(m) 09(e) 29(n) <br>
+93(to) 1(_) 69(di) 8(_) 70(o) 66(l) 50(i) 07(o) 1(_) 90(e) 8(_) 69(di) 1(_) 23(s) 02(a) 74(le) 81(__) 90(e) 1(_) 47 8(_) 69(di) 81(__) 99(g) 09(e) 29(n) 25(t) 30(e) 8(_) 67(da) 1(_) 437 8(_) 95(ne) 188(___) <br>
+32(c) 70(o) 36(r) 46(r) 09(e) 60(u) 20(a) 1(_) 95(ne) 8(_) 99(g) 36(r) 00(a) 39(n) 18(-) 32(c) 70(o) 22(p) 40(i) 20(a) 1(_) 22(p) 02(a) 36(r) 25(t) 50(i) 32(c) 70(o) 73(la) 46(r) 755(mente) <br>
+81(__) 54 75 1(_) 923 188(___) 23(s) 09(e) 22(p) 30(e) 1(_) 733 8(_) 57(per) 1(_) 72(al) 35(t) 36(r) 20(a) 81(__) 60(u) 50(i) 20(a) 8(_) 47 1(_) 90(e) 36(r) 20(a) 88(__) <br>
+99(g) 50(i) 60(u) 29(n) 93(to) 1(_) 97(in) 1(_) 27(qu) 09(e) 50(i) 8(_) 99(g) 50(i) 70(o) 36(r) 29(n) 50(i) 81(__) 52(con) 1(_) 32(c) 40(i) 46(r) 32(c) 00(a) 8(_) 60(u) 40(i) 29(n) 25(t) 50(i) 1(_) <br>
+23(s) 70(o) 66(l) 67(da) 25(t) 40(i) 8(_) 60(u) 29(n) 1(_) 99(g) 09(e) 29(n) 25(t) 09(e) 66(l) 55(h) 60(u) 70(o) 77(m) 60(u) 18(-) 69(di) 1(_) 44(f) 60(u) 66(l) 50(i) 99(g) 29(n) <br>
+70(o) 18(-) 32(c) 74(le) 77(m) 09(e) 29(n) 25(t) 90(e) 1(_) 23(s) 20(a) 39(n) 35(t) 50(i) 40(i) 8(_) 47 8(_) 55(h) 20(a) 1(_) 43(s) 09(e) 36(r) 06(v) 05(i) 25(t) 60(u) 818 <br>
+20(a) 39(n) 35(t) 40(i) 42(c) 02(a) 8(_) 52(con) 1(_) 76 8(_) 692 1(_) 354 81(__) 76 8(_) 767 1(_) 66(l) 1(_) 55(h) 20(a) 60(u) 90(e) 60(u) 20(a) 8(_) 69(di) 32(c) <br>
+55(h) 02(a) 36(r) 29(n) 93(to) 1(_) 43(s) 04(u) 24(b) 05(i) 93(to) 1(_) 77(m) 20(a) 92(st) 36(r) 04(u) 8(_) 69(di) 8(_) 32(c) 02(a) 77(m) 22(p) 70(o) 18(-) 69(di) 1(_) 60(u) 29(n) <br>
+8(_) 35(t) 30(e) 46(r) 26(t) 04(u) 1(_) 52(con) 81(__) 34(b) 60(u) 70(o) 29(n) 8(_) 43(s) 03(o) 66(l) 33(d) 70(o) 8(_) 90(e) 1(_) 22(p) 36(r) 90(e) 92(st) 40(i) 93(to) 1(_) 69(di) 8(_) <br>
+67(da) 29(n) 20(a) 46(r) 40(i) 88(__) 65(i) 1(_) 32(c) 55(h) 46(r) 90(e) 33(d) 09(e) 04(u) 00(a) 1(_) 53 8(_) 23(s) 70(o) 66(l) 07(o) 1(_) 97(in) 8(_) 36(r) 50(i) 99(g) 60(u) 20(a) <br>
+46(r) 33(d) 70(o) 8(_) ? 1(_) 56(del) 73(la) 8(_) 20(a) 39(n) 35(t) 40(i) 42(c) 1(_) 43(s) 09(e) 36(r) 04(u) 05(i) 25(t) 60(u) 8(_) 62(ma) 1(_) 52(con) 8(_) 23(s) 22(p) 09(e) 36(r) 02(a) 3?9 <br>
+26(t) 20(a) 18(-) 47 1(_) 44(f) 60(u) 23(s) 64(e) 1(_) 57(per) 8(_) 44(f) 20(a) 46(r) 1(_) 34(b) 06(v) 70(o) 29(n) 18(-) 39(n) 04(u) 77(m) 30(e) 46(r) 04(u) 1(_) 69(di) 8(_) 99(g) 09(e) 29(n) <br>
+25(t) 30(e) 1(_) 54 75 1(_) 923 888(___) 97(in) 25(t) 36(r) 09(e) 39(n) 93(to) 1(_) 35(t) 46(r) 03(o) 60(u) 20(a) 50(i) 8(_) 22(p) 70(o) 33(d) 90(e) 92(st) 02(a) 81(__) ? <br>
+<br>
+#003r.jpg<br>
+23(s) 09(e) 24(b) 00(a) 92(st) 50(i) 20(a) 39(n) 70(o) 8(_) 36(r) 00(a) 92(st) 90(e) 66(l) 50(i) 29(n) 70(o) 8(_) 67(da) 1(_) 46(r) 09(e) 32(c) 00(a) 39(n) 20(a) 25(t) 40(i) 8(_) 09(e) 1(_) 63(mi) 1(_) <br>
+33(d) 50(i) 23(s) 64(e) 1(_) 747 8(_) 43(s) 90(e) 29(n) 25(t) 05(i) 33(d) 70(o) 18(-) 69(di) 1(_) 36(r) 70(o) 32(c) 42(c) 02(a) 8(_) 56(del) 8(_) 200 8(_) 772 1(_) 22(p) 02(a) 23(s) 43(s) 70(o) <br>
+1(_) 69(di) 8(_) 73(la) 1(_) 47 8(_) 72(al) 1(_) 369 8(_) 52(con) 60(u) 90(e) 29(n) 50(i) 60(u) 20(a) 81(__) 60(u) 34(b) 09(e) 69(di) 36(r) 09(e) 8(_) 72(al) 1(_) 460 1(_) 52(con) 64(e) 99(g) 29(n) 20(a) <br>
+39(n) 33(d) 70(o) 8(_) 00(a) 33(d) 09(e) 23(s) 43(s) 70(o) 1(_) 737(come) 1(_) 02(a) 8(_) 200 1(_) 76 8(_) 22(p) 70(o) 23(s) 64(e) 23(s) 43(s) 70(o) 18(-) 56(del) 8(_) 43(s) 60(u) 70(o) 1(_) 92(st) 02(a) <br>
+93(to) 1(_) 47 8(_) 772 1(_) 66(l) 8(_) 55(h) 20(a) 60(u) 90(e) 23(s) 64(e) 8(_) 44(f) 02(a) 25(t) 35(t) 70(o) 18(-) 23(s) 02(a) 36(r) 09(e) 24(b) 34(b) 90(e) 8(_) 60(u) 50(i) 23(s) 43(s) 04(u) <br>
+93(to) 81(__) 44(f) 90(e) 66(l) 50(i) 32(c) 30(e) 8(_) 90(e) 1(_) 66(l) 40(i) 30(e) 93(to) 18(-) 32(c) 02(a) 60(u) 20(a) 37(li) 09(e) 36(r) 70(o) 18(-) 20(a) 66(l) 25(t) 36(r) 50(i) 755(mente) 1(_) 20(a) 99(g) 30(e) <br>
+34(b) 02(a) 35(t) 60(u) 46(r) 18(-) 33(d) 09(e) 8(_) 90(e) 45 92(st) 09(e) 36(r) 63(mi) 29(n) 20(a) 25(t) 70(o) 95(ne) 8(_) 47 1(_) 76 8(_) 33(d) 90(e) 25(t) 93(to) 1(_) 29(n) 90(e) 55(h) 02(a) <br>
+60(u) 90(e) 60(u) 20(a) 8(_) 52(con) 39(n) 33(d) 70(o) 35(t) 93(to) 1(_) 64(e) 32(c) 70(o) 1(_) 69(di) 8(_) 35(t) 36(r) 09(e) 29(n) 93(to) 8(_) 60(u) 29(n) 18(-) 35(t) 20(a) 66(l) 1(_) 44(f) 70(o) 22(p) 70(o) <br>
+66(l) 40(i) 1(_) 57(per) 8(_) 97(in) 92(st) 36(r) 60(u) 25(t) 35(t) 70(o) 46(r) 90(e) 1(_) 97(in) 1(_) 775 8(_) 00(a) 44(f) 20(a) 36(r) 40(i) 8(_) 22(p) 62(ma) 36(r) 35(t) 50(i) 32(c) 03(o) 73(la) 46(r) 755(mente) <br>
+81(__) 97(in) 1(_) 774 8(_) 47 81(__) 25(t) 70(o) 32(c) 42(c) 02(a) 1(_) 20(a) 8(_) 22(p) 36(r) 03(o) 42(c) 30(e) 69(di) 77(m) 09(e) 29(n) 25(t) 40(i) 8(_) 99(g) 50(i) 60(u) 69(di) 25(t) 40(i) <br>
+20(a) 36(r) 40(i) 50(i) 188(___) 47 8(_) 76 1(_) 44(f) 70(o) 22(p) 07(o) 66(l) 05(i) 18(-) 90(e) 1(_) 40(i) 90(e) 46(r) 6?6 50(i) 97(in) 1(_) 690 8(_) 69(di) 18(-) 32(c) 02(a) 43(s) 20(a) 8(_) <br>
+62(ma) 33(d) 46(r) 04(u) 32(c) 42(c) 50(i) 1(_) 90(e) 8(_) 52(con) 44(f) 05(i) 33(d) 09(e) 29(n) 35(t) 09(e) 81(__) 69(di) 8(_) 522 1(_) 32(c) 70(o) 20(a) 69(di) 60(u) 93(to) 46(r) 90(e) 18(-) 47 18(-) <br>
+57(per) 1(_) 43(s) 04(u) 00(a) 1(_) 04(u) 50(i) 20(a) 8(_) 43(s) 50(i) 8(_) 23(s) 20(a) 36(r) 09(e) ?? 90(e) 29(n) 70(o) 1(_) 22(p) 70(o) 25(t) 60(u) 35(t) 09(e) 18(-) 22(p) 30(e) 39(n) 30(e) 25(t) <br>
+36(r) 20(a) 46(r) 1(_) 753 8(_) 42(c) 70(o) 64(e) 1(_) 36(r) 30(e) 92(st) 70(o) 1(_) 47 8(_) 737(come) 1(_) 67(da) 1(_) 64(e) 8(_) 97(in) 65? 29(n) 60(u) 20(a) 36(r) 00(a) 1(_) 76 8(_) 33(d) 09(e) <br>
+25(t) 93(to) 1(_) 22(p) 70(o) 33(d) 09(e) 92(st) 02(a) 8(_) 00(a) 1(_) 522 8(_) 66(l) 1(_) 567 8(_) 47 1(_) 37(li) 8(_) 65(i) 18(-) 22(p) 70(o) 36(r) 99(g) 09(e) 60(u) 20(a) 18(-) 57(per) 18(-) <br>
+775 1(_) 77(m) 09(e) 26(t) 70(o) 8(_) 69(di) 1(_) 20(a) 60(u) 20(a) 29(n) 26(t) 02(a) 36(r) 64(e) 1(_) 59 73(la) 59 93(to) 60(u) 02(a) 550 20(a) 18(-) 69(di) 8(_) 577 1(_) 09(e) 1(_) <br>
+69(di) 8(_) 996 18(-) 09(e) 1(_) 37(li) 8(_) 77(m) 09(e) 25(t) 90(e) 36(r) 50(i) 20(a) 1(_) 97(in) 8(_) 52653 1(_) 90(e) 36(r) 00(a) 25(t) 40(i) 70(o) 95(ne) 8(_) 69(di) 1(_) 773 8(_) 77(m) <br>
+70(o) 77(m) 09(e) 29(n) 93(to) 18(-) 22(p) 70(o) 35(t) 30(e) 23(s) 64(e) 1(_) 90(e) 23(s) 64(e) 36(r) 37(li) 1(_) 772 8(_) 70(o) 32(c) 07(o) 36(r) 46(r) 09(e) 23(s) 64(e) 18(-) <br>
+25(t) 36(r) 20(a) 25(t) 02(a) 46(r) 43(s) 50(i) 1(_) 69(di) 8(_) 20(a) 60(u) 20(a) 29(n) 26(t) 00(a) 755(mente) 8(_) 56(del) 73(la) 1(_) 43(s) 04(u) 20(a) 1(_) 57(per) 23(s) 70(o) 29(n) 02(a) 1(_) <br>
+90(e) 1(_) 47 8(_) 69(di) 1(_) 774 8(_) 47 1(_) 97(in) 81(__) 767 1(_) 65(i) 8(_) 60(u) 70(o) 37(li) 20(a) 18(-) 77(m) 70(o) 33(d) 70(o) 1(_) 20(a) 36(r) 50(i) 60(u) 20(a) 23(s) 43(s) 09(e) <br>
+1(_) 20(a) 8(_) 23(s) 60(u) 20(a) 8(_) 29(n) 70(o) 25(t) 05(i) 35(t) 40(i) 20(a) 8(_) 63(mi) 1(_) 67(da) 36(r) 50(i) 20(a) 8(_) 22(p) 02(a) 36(r) 35(t) 09(e) 1888 59 1(_) 77(m) 09(e) <br>
+33(d) 09(e) 77(m) 07(o) 1(_) 99(g) 05(i) 70(o) 36(r) 29(n) 03(o) 1(_) 47 8(_) 22(p) 02(a) 36(r) 35(t) 40(i) 50(i) 81(__) 69(di) 8(_) 35(t) 36(r) 90(e) 29(n) 93(to) 1(_) 47 1(_) 44(f) 60(u) 1(_) <br>
+99(g) 50(i) 70(o) 60(u) 90(e) 33(d) 50(i) 81(__) 60(u) 29(n) 33(d) 05(i) 32(c) 05(i) 8(_) 92(st) 02(a) 39(n) 25(t) 09(e) 1(_) 53 1(_) 753 8(_) 66(l) 70(o) 29(n) 25(t) 00(a) 29(n) <br>
+70(o) 1(_) 97(in) 52(con) 35(t) 46(r) 20(a) 40(i) 1(_) 60(u) 29(n) 8(_) 32(c) 02(a) 60(u) 20(a) 37(li) 09(e) 56(del) 70(o) 1(_) 47 8(_) 52(con) 1(_) 60(u) 29(n) 8(_) 43(s) 09(e) 36(r) 04(u) 05(i) <br>
+93(to) 46(r) 09(e) 8(_) 60(u) 90(e) 29(n) 50(i) 60(u) 20(a) 1(_) 57(per) 8(_) 73(la) 81(__) 22(p) 70(o) 92(st) 00(a) 8(_) 52(con) 1(_) 567 8(_) 69(di) 1(_) 32(c) 00(a) 77(m) 34(b) 50(i) 20(a) 36(r) <br>
+8(_) 66(l) 50(i) 81(__) 23(s) 60(u) 70(o) 40(i) 1(_) 52(con) 8(_) 66(l) 05(i) 8(_) 63(mi) 09(e) 50(i) 1(_) 32(c) 00(a) 60(u) 20(a) 66(l) 40(i) 1(_) 737(come) 1(_) 09(e) 8(_) 43(s) 03(o) 66(l) 05(i) 25(t) 03(o) <br>
+1(_) 22(p) 02(a) 36(r) 73(la) 29(n) 67(da) 1(_) 64(e) 32(c) 03(o) 8(_) 43(s) 09(e) 22(p) 40(i) 1(_) 740 1(_) 76 8(_) 502 18(-) 69(di) 9?9? 36(r) 20(a) 29(n) 4?0 818 <br>
+62(ma) 39(n) 35(t) 04(u) 20(a) 39(n) 70(o) 18(-) 32(c) 02(a) 77(m) 09(e) 36(r) 90(e) 46(r) 70(o) 1(_) 56(del) 8(_) 460 18(-) 60(u) 90(e) 29(n) 50(i) 36(r) 09(e) 1(_) 54 73(la) <br>
+18(-) 32(c) 70(o) 36(r) 25(t) 09(e) 1(_) 57(per) 8(_) 23(s) 60(u) 70(o) 40(i) 8(_) 97(in) 35(t) 09(e) 46(r) 09(e) 23(s) 65(i) 1(_) 33(d) 70(o) 77(m) 09(e) 92(st) 50(i) 32(c) 40(i) 18(-) <br>
+<br>
+#003v.jpg<br>
+90(e) 1(_) 57(per) 81(__) 52(con) 33(d) 60(u) 46(r) 36(r) 09(e) 18(-) 23(s) 60(u) 20(a) 1(_) 77(m) 70(o) 37(li) 09(e) 1(_) 97(in) 8(_) 09(e) 1(_) 44(f) 50(i) 37(li) 1(_) 0 8(_) 97(in) 1(_) 436 8(_) 57(per) 1(_) <br>
+44(f) 00(a) 36(r) 65(i) 1(_) 25(t) 70(o) 33(d) 09(e) 43(s) 42(c) 07(o) 81(__) 00(a) 44(f) 20(a) 35(t) 25(t) 70(o) 1(_) 737(come) 1(_) 33(d) 50(i) 43(s) 23(s) 90(e) 188(___) 33(d) 05(i) 43(s) 23(s) 09(e) <br>
+81(__) 47 1(_) 670 8(_) 09(e) 1(_) 36(r) 50(i) 43(s) 70(o) 66(l) 06(v) 35(t) 02(a) 1(_) 47 8(_) 76 1(_) 354 8(_) 60(u) 34(b) 90(e) 33(d) 05(i) 23(s) 42(c) 02(a) 18(-) 22(p) 60(u) 29(n) 35(t) <br>
+04(u) 00(a) 66(l) 755(mente) 1(_) 09(e) 8(_) 43(s) 09(e) 29(n) 26(t) 20(a) 8(_) 35(t) 09(e) 36(r) 99(g) 50(i) 60(u) 90(e) 36(r) 43(s) 20(a) 25(t) 70(o) 95(ne) 1(_) 73(la) 43(s) 42(c) 56(del) 20(a) 39(n) 33(d) 03(o) <br>
+1(_) 76 1(_) 623 8(_) 97(in) 1(_) 62(ma) 29(n) 70(o) 8(_) 56(del) 1(_) 23(s) 60(u) 70(o) 1(_) 299 8(_) 52(con) 44(f) 70(o) 36(r) 77(m) 90(e) 1(_) 57(per) 8(_) 774 1(_) 47 8(_) 33(d) 50(i) 32(c) 09(e) <br>
+60(u) 20(a) 88(__) 00(a) 66(l) 18(-) 23(s) 70(o) 66(l) 50(i) 25(t) 70(o) 81(__) 33(d) 1(_) 474 8(_) 90(e) 1(_) 69(di) 8(_) 436 81(__) 47 8(_) 64(e) 1(_) 66(l) 8(_) 55(h) 20(a) 60(u) 90(e) 23(s) <br>
+64(e) 88(__) 44(f) 20(a) 35(t) 25(t) 03(o) 81(__) 74(le) 73(la) 40(i) 9 1(_) 77(m) 07(o) 92(st) 36(r) 20(a) 35(t) 07(o) 88(__) 73(la) 1(_) 22(p) 46(r) 06(v) 33(d) 09(e) 29(n) 26(t) 20(a) <br>
+81(__) 47 1(_) 65(i) 8(_) 1(_) 22(p) 36(r) 09(e) 69(di) 32(c) 02(a) 8(_) 69(di) 1(_) 66(l) 04(u) 05(i) 8(_) 09(e) 1(_) 35(t) 46(r) 07(o) 60(u) 20(a) 35(t) 70(o) 18(-) 97(in) 1(_) 670 8(_) 774 1(_) <br>
+99(g) 50(i) 60(u) 92(st) 05(i) 35(t) 05(i) 20(a) 1(_) 09(e) 88(__) 36(r) 90(e) 25(t) 35(t) 05(i) 35(t) 60(u) 69(di) 95(ne) 18(-) 47 1(_) 005 35(t) 60(u) 25(t) 35(t) 40(i) 8(_) 90(e) 81(__) <br>
+29(n) 70(o) 25(t) 20(a) 1(_) 20(a) 66(l) 25(t) 36(r) 50(i) 755(mente) 1(_) 43(s) 20(a) 46(r) 09(e) 24(b) 34(b) 30(e) 88(__) 92(st) 02(a) 93(to) 1(_) 73(la) 1(_) 43(s) 60(u) 20(a) 1(_) 36(r) 07(o) <br>
+06(v) 05(i) 39(n) 02(a) 18(-) 90(e) 8(_) 69(di) 1(_) 27(qu) 09(e) 05(i) 1(_) 92(st) 02(a) 25(t) 40(i) 81(__) 79 8(_) 74(le) 73(la) 1(_) 24(b) 09(e) 8(_) 44(f) 00(a) 25(t) 35(t) 70(o) 88(__) <br>
+76 1(_) 99(g) 50(i) 60(u) 70(o) 42(c) 03(o) 8(_) 72(al) 66(l) 40(i) 1(_) 926 8(_) 79 1(_) 72(al) 35(t) 36(r) 05(i) 1(_) 43(s) 60(u) 70(o) 05(i) 18(-) 90(e) 77(m) 60(u) 66(l) 50(i) 1(_) <br>
+88(__) 59 1(_) 69(di) 43(s) 42(c) 70(o) 36(r) 43(s) 70(o) 18(-) 22(p) 02(a) 46(r) 73(la) 29(n) 33(d) 07(o) 1(_) 56(del) 8(_) 354 18(-) 75 1(_) 42(c) 55(h) 05(i) 20(a) 77(m) 07(o) 18(-) <br>
+23(s) 09(e) 77(m) 22(p) 36(r) 30(e) 88(__) 76 1(_) 692 8(_) 354 1(_) 42(c) 02(a) 36(r) 75 88(__) 65(i) 1(_) 69(di) 32(c) 55(h) 05(i) 20(a) 36(r) 70(o) 8(_) 99(g) 36(r) 02(a) 29(n) 33(d) <br>
+54 00(a) 63(mi) 42(c) 70(o) 1(_) 90(e) 8(_) 22(p) 02(a) 46(r) 35(t) 05(i) 02(a) 74(le) 8(_) 56(del) 1(_) 232 8(_) 652 1(_) 72(al) 73(la) 1(_) 32(c) 70(o) 36(r) 35(t) 09(e) 81(__) 32(c) <br>
+09(e) 43(s) 20(a) 46(r) 90(e) 20(a) 18(-) 90(e) 1(_) 69(di) 23(s) 64(e) 8(_) 47 1(_) 97(in) 8(_) 99(g) 05(i) 07(o) 36(r) 29(n) 40(i) 18(-) 90(e) 36(r) 20(a) 1(_) 60(u) 09(e) 29(n) 04(u) <br>
+25(t) 70(o) 8(_) 67(da) 18(-) 60(u) 65(i) 57(per) 8(_) 73(la) 1(_) 22(p) 07(o) 92(st) 02(a) 8(_) 749 1(_) 73(la) 23(s) 42(c) 40(i) 20(a) 93(to) 1(_) 97(in) 69(di) 09(e) 25(t) 36(r) 70(o) 1(_) <br>
+73(la) 1(_) 23(s) 60(u) 20(a) 8(_) 44(f) 02(a) 63(mi) 37(li) 20(a) 1888 53 1(_) 23(s) 70(o) 8(_) 64(e) 1(_) 65(i) 8(_) 22(p) 70(o) 43(s) 23(s) 02(a) 1(_) 33(d) 60(u) 24(b) 05(i) <br>
+35(t) 02(a) 46(r) 09(e) 8(_) 47 1(_) 32(c) 70(o) 66(l) 18(-) 44(f) 05(i) 95(ne) 1(_) 56(del) 66(l) 05(i) 1(_) 33(d) 8(_) 00(a) 44(f) 20(a) 46(r) 05(i) 8(_) 33(d) 70(o) 77(m) 09(e) 92(st) 05(i) <br>
+32(c) 50(i) 18(-) 04(u) 05(i) 8(_) 52(con) 42(c) 70(o) 46(r) 36(r) 00(a) 18(-) 733 1(_) 774 1(_) 69(di) 8(_) 90(e) 43(s) 22(p) 66(l) 03(o) 46(r) 20(a) 36(r) 09(e) 88(__) <br>
+74(le) 1(_) 44(f) 70(o) 46(r) 26(t) 09(e) 18(-) 09(e) 1(_) 66(l) 50(i) 8(_) 202 1(_) 56(del) 8(_) 354 8(_) 90(e) 1(_) 47 8(_) 22(p) 07(o) 36(r) 35(t) 05(i) 1(_) 52(con) 8(_) 775 1(_) <br>
+376 8(_) 769 18(-) 569 1(_) 70(o) 8(_) 00(a) 60(u) 90(e) 46(r) 35(t) 05(i) 755(mente) 18(-) 72(al) 8(_) 200 18(-) 70(o) 1(_) 72(al) 77(m) 09(e) 29(n) 03(o) 1(_) 60(u) 90(e) <br>
+39(n) 99(g) 20(a) 8(_) 57(per) 1(_) 20(a) 23(s) 65(i) 92(st) 09(e) 36(r) 66(l) 05(i) 8(_) 79 1(_) 74(le) 037 8(_) 60(u) 50(i) 42(c) 50(i) 29(n) 70(o) 88(__) 42(c) 70(o) 66(l) 8(_) <br>
+44(f) 50(i) 95(ne) 8(_) 57(per) 1(_) 76 8(_) 767 8(_) 55(h) 20(a) 29(n) 39(n) 70(o) 18(-) 62(ma) 39(n) 67(da) 93(to) 8(_) 76 1(_) 33(d) 70(o) 35(t) 25(t) 70(o) 36(r) 81(__) <br>
+36(r) 50(i) 42(c) 32(c) 50(i) 8(_) 67(da) 1(_) 22(p) 70(o) 29(n) 25(t) 36(r) 09(e) 77(m) 07(o) 66(l) 05(i) 888(___) 63(mi) 1(_) 69(di) 23(s) 64(e) 8(_) 76 1(_) 33(d) 8(_) 502 18(-) <br>
+47 1(_) 92(st) 02(a) 39(n) 33(d) 70(o) 1(_) 672 81(__) 57(per) 8(_) 00(a) 29(n) 67(da) 36(r) 81(__) 97(in) 1(_) 534 8(_) 65(i) 1(_) 90(e) 36(r) 00(a) 1(_) 25(t) 36(r) 00(a) 35(t) 90(e) <br>
+39(n) 60(u) 93(to) 18(-) 57(per) 1(_) 66(l) 8(_) 97(in) 69(di) 23(s) 22(p) 70(o) 65(i) 25(t) 05(i) 70(o) 95(ne) 81(__) 69(di) 8(_) 60(u) 20(a) 36(r) 70(o) 66(l) 40(i) 8(_) 43(s) 70(o) 22(p) 36(r) <br>
+20(a) 99(g) 50(i) 60(u) 29(n) 35(t) 20(a) 8(_) 72(al) 1(_) 643 8(_) 43(s) 60(u) 70(o) 1(_) 44(f) 50(i) 37(li) 07(o) 75 1(_) 56(del) 73(la) 8(_) 767 1(_) 763 8(_) 09(e) 36(r) 20(a) 1(_) <br>
+</DIV>
+
+<H3>Reconstructed Cipher Key</H3>
+<TABLE border="1"><TR><TD>
+1;_<br>
+8;_<br>
+00;a<br>
+02;a<br>
+03;o<br>
+04;u<br>
+05;i<br>
+06;v<br>
+07;o<br>
+09;e<br>
+20;a<br>
+30;e<br>
+40;i<br>
+50;i<br>
+60;u<br>
+70;o<br>
+90;e<br>
+<br>
+22;p<br>
+23;s<br>
+24;b<br>
+25;t<br>
+26;t<br>
+27;qu<br>
+29;n<br>
+32;c<br>
+33;d<br>
+34;b<br>
+35;t<br>
+36;r<br>
+37;li<br>
+39;n<br>
+42;c<br>
+43;s<br>
+44;f<br>
+46;r<br>
+52;con<br>
+55;h<br>
+56;del<br>
+57;per<br>
+62;ma<br>
+63;mi<br>
+64;e<br>
+65;i<br>
+66;l<br>
+67;da<br>
+69;di<br>
+73;la<br>
+74;le<br>
+77;m<br>
+92;st<br>
+93;to<br>
+95;ne<br>
+96;E?<br>
+97;in<br>
+99;g<br>
+504;Mantova<br>
+737;come<br>
+72;al<br>
+755;mente<br>
+</TR></TD></TABLE>
+
+<H2>Appendix 2: Vatican Challenge Part 2</H2>
+<H3>Transcription (after Parsing into Cipher Symbols)</H3>
+<DIV class="kakomi2" style="width:auto">
+641 2 37 48 03 37 40 41 44 5 87 2 93 18 34 08 41 39 93 44 5 77146 5 76 2 19 30 36 5 17 40 37 48 18 41<br>
+11 40 5 81 17 93 39 140 5 19 39 30 5 31 03 34 39 33 18 5 70 2 19 39 30 5 89 83 89 41 36 37 36 5 89 87<br>
+37 03 44 5 14 33 36 41 39 44 22 48 41 18 89 41 38 39 5 77 2 76 5 19 36 93 18 81 5 17 36 48 18 41 38 5 <br>
+84 5 80 17 11 40 41 2 46 44 5 33 18 5 13 40 48 36 33 93 44 5 89 87 2 387 5 11?0 2 19 41 39 80 5 77 2 18<br>
+33 87 2 93 36 78 5 87 2 333 2 148 5 84 5 107 5 89 2 34 18 88 48 39 5 77 2 76 5 33 36 5 13 18 48 38<br>
+13 03 36 41 5 77 2 40 37 40 39 5 30 39 48 39 17 36 2 40 5 33 39 36 70 5 17 2 31 08 47 18 5 164 77 5 47<br>
+36 93 36 70 2 79 5 34 18 91 36 5 98 2 107 5 14 36 17 88 522 84 5 113 2 31 40 5 11 36 80 17 11 40 93 36 5 40 5 <br>
+30 17? 5 40 34 39 48 36 2 34 39 36 5 81 2 39 5 107 2 77 5 37 36 17 36 5 46 44 5 89 47 44 71 5 48 18 89<br>
+41 5 40 2 641 5 110 2 86 5 48 40 37 44 5 88 5 33 18 39 2 19 41 36 19 41 39 44 522 18 5 110 5 607 2 13<br>
+40 93 36 5 164 77 2 34 36 93 39 30 36 5 46 40 17 93 03 17 46 18 5 88 2 33 03 36 14 36 5 19 36 48 36 5 40<br>
+30 93 31 18 17 93 39 48 36 2 81 5 641 2 86 5 48 40 37 44 5 19 41 36 19 41 39 44 5 48 18 89 41 44 5 36 2 <br>
+17 36 5 87 5 80 17 2 11 41 39 93 44 5 40 33 5 13 41 40 93 18 33 36 2 98 5 466 5 148 2 33 18 5 387 2 89<br>
+107 2 40 33 18 37 40 17 11 41 39 71 5 14 40 18 93 40 71 5 34 18 88 48 39 5 73 2 40 33 11 36 47 41 40 17 88<br>
+17 36 5 81 14 30 39 41 17 36 2 86 5 93 18 34 19 36 5 11 40 5 76 2 19 36 93 18 41 2 86 81 14 17 40 41 5 149<br>
+41 39 93 36 2 93 41 36 30 40 17 11 36 83 5 33 2 03 17 36 5 18 33 2 40 33 93 41 36 5 31 08 17 41 39 48<br>
+36 5 40 33 136 2 81 17 91 44 5 13 41 40 93 18 33 39 22 41 39 48 18 30 08 41 38 39 5 40 5 130 2 13 36<br>
+41 93 03 17 44 5 88 2 37 40 79 5 08 17 93 41 40 93 36 5 77 5 641 2 83 44 5 86 5 333 2 81 5 37 19 39 41<br>
+44 2 87 5 408 2 36 5 71 5 148 2 11 40 5 48 39 36 2 48 41 08 11 36 5 77 2 89 19 18 17 11 44 5 84 2 19<br>
+36 41 93 40 41 5 34 36 91 08 93 44 5 36 2 71 5 18 137 2 40 33 93 41 18 5 74 81 14 30 18 17 91 18 5 11 40<br>
+33 18 5 164 2 34 5 40 37 93 18 41 38 39 52 81 113 5 39 2 617 5 88 2 333 5 76 5 88 37 93 86 14 30<br>
+40 17 36 2 79 5 33 18 2 79 37 36 70 5 19 41 36 19 41 39 18 2 70 5 93 18 34 19 36 2 70 5 430 22 19 36 93<br>
+41 39 44 5 17 2 77 5 641 2 83 5 93 41 36 30 40 81 5 46 44 2 99 5 93 18 34 19 36 5 89 87 2 48 18 33 08<br>
+47 41 40 93 39 36 70 2 98 5 400 5 88 5 80 11 44 80 2 48 36 33 5 441 2 88 14 40 33 18 37 5 18 2 13 36<br>
+41 81 2 110 5 77 5 18 14 33 39 2 30 18 17 39 81 5 88 2 79 37 36 17 44 5 81 113 2 87 5 19 39 30 2 48 36 37<br>
+30 70 5 18 2 86 5 74 93 41 40 41 39 36 52 86 5 36 14 17 39 5 48 40 37 36 5 83 2 19 30 36 5 48 41 18<br>
+89 41 2 77 5 08 33 87 5 83 2 93 41 36 30 40 41 04 5 46 40 5 86 2 93 18 34 19 36 5 88 2 47 03 78 17 14<br>
+40 86 5 79 2 84 5 164 5 19 30 41 5 83 2 19 41 18 19 40 41 04 71 5 130 2 48 36 81 5 18 2 86 93 18 17 11 36<br>
+77 2 37 40 41 44 5 41 39 48 18 03 93 36 5 99 2 19 40 87 91 36 5 98 2 391 22 33 39 5 11 36 39 5 190<br>
+37 93 41 44 5 419 2 381 5 83 2 88 48 18 5 77 2 31 40 17 17 36 5 14 39 36 41 17 40 33 140 5 97 2 466 5 <br>
+<br>
+<br>
+#130v.jpg<br>
+76 40 93 41 36 2 48 18 17 93 36 5 37 48 03 88 5 79 5 33 36 41 36 2 37 19 18 81 5 18 2 77 5 74 2 641 5 83 2 19<br>
+40 41 33 39 2 88 5 34 39 33 18 22 36 14 17 5 30 17 36 2 40 93 18 17 11 08 5 77 2 08 33 87 5 30 18 17 14<br>
+44 2 74 5 130 39 83 80 5 80 18 37 93 44 5 41 40 34 18 03 41 641 40 17 11 36 83 2 86 166 5 39 5 88<br>
+37 48 36 41 83 5 ?87 2 387 5 98 2 107 5 40 33 11 36 47 41 40 17 88 17 36 5 18 2 11 40 5 130 39 83 34<br>
+36 5 14 30 37 93 36 2 84 5 81 17 93 39 41 38 5 77 2 18 33 87 5 76 2 37 36 33 36 5 86 93 18 17 11 44 5 80<br>
+110 2 19 40 41 33 39 5 33 2 39 88 36 80 5 334 25 18 5 77 5 83 40 2 40 80 93 41 39 48 18 2 88 52 <br>
+390 5 18 2 88 5 33 18 93 08 41 40 93 48 22 33 5 40 81 34 47 33 18 44 5 343 2 98 5 48 33 18 41 36 5 <br>
+48 36 34 39 17 48 39 40 41 44 5 40 2 34 18 91 91 36 5 80 14 39 36 5 18 2 13 36 41 81 5 19 36 93 41 39<br>
+44 5 81 41 30 39 41 2 40 5 641 5 11 2 430 5 11 2 86 48 40 33 36 41 39 41 38 5 33 2 86 93 41 36 11 30 93<br>
+39 36 70 2 98 5 74 48 39 33 39 36 5 88 2 93 41 18 17 93 36 22 88 5 17 03 36 30 36 5 87 2 37 03<br>
+19 33 39 48 36 5 31 03 34 39 33 140 5 40 5 74 11 36 17 40 41 34 39 5 87 2 93 18 34 08 41 39 93 40<br>
+</DIV>
+<H3>(Partially) Deciphered Text</H3>
+<DIV class="kakomi2">
+641 scusara la temerita 77 146 que puo nascer da sentimente piu humile ne piu desideroso dela sua gloria crederei 77 que potese nocere  84 mandar qua le facolta dela 387 11?0 prima 77 ella to78 la 333 148 84 107 de Medici 77 que lo fece fuor 77 assai vicino a Lione n hebe 164 77 botone per mezzo del 107 Gondi 84 113 ha domandato a  u17? amico mio se i 107 77 sono qua debano ceder a 641 110 in casa di lei propria e 110 607 fatto 164 77 motivo quantunque di luogo poco authentico se 641 in casa propria cedera o  no la man dritta al fratelo del 466 148 le 387 de 107 Alesandrino Gaetano Medici et? Aldobrandino seguirno in tempo da que poter insegnar 149 ritto trovandosi l uno el altro Henrico al136 senza frateli riceverei a grand fortuna di saper entrato 77 641 sia in 333 se spir a la 408 o no 148 da cio credo 77 dependa 84 portar mozeta o no e137 altre conseguenze da le 164 masterei se113 i 617 di 333 que? distinguano per le persone proprie ne tempo ne 430 pot ria n 77 641 si trovase qua 99 tempo dela celebratione del 400 di madama col 441 digales e forse 110 77 egli venise di persona se113 la piu cos une e in contrario in ogni caso si puo creder 77 ella si trovara qua in tempo di bu78ng ain per 84 164 pur si preparano grand cose e intendo 77 sara riceuto 99 palazzo del 391 li doi 190 stra 419 381 si dice 77 hanno giornalmente 97 466  quatro cento scudi per loro spese e 77 con 641 si parli di mile ogn uno atende 77 ella ueng a con grandissima maesta rameur641andosi in166 i discorsi ?87 387 del 107 Aldobrandino e da grandissimo gusto 84 sentire 77 ella que? solo intenda ma 110 parli l idioma 334 e 77 sia amatrice di  390 e di leteratc l asemblea 343 del clero  cominciara a mezzo magio e forse potri a servir a 641 d 430 d incalorire l'introdutione del Concilio di Trento di nuovo la supplico humilmente a condonarmi la temerita<br>
+</DIV>
+<H3>Dump</H3>
+<DIV class="kakomi2"style="width:auto">
+641 2 37(S) 48(C) 03(U) 37(S) 40(A) 41(R) 44(A) 5 87(LA) 2 93(T) 18(E) 34(M) 08(E) 41(R) 09(I) 93(T) 44(A) 5 77 146 5 76(QUE?) 2 19(P) 30(U) 16(O) 5 17(N) 40(A) 37(S) 48(C) 18(E) 41(R)<br>
+11(D) 40(A) 5 81(SE) 17(N) 93(T) 09(I) 140(MENTE) 5 19(P) 39(I) 30(U) 5 31(H) 03(U) 34(M) 09(I) 33(L) 18(E) 5 70(NE) 2 19(P) 09(I) 30(U) 5 89(DE) 83(SI) 89(DE) 41(R) 16(O) 37(S) 06(O) 5 89(DE) 87(LA)<br>
+37(S) 03(U) 44(A) 5 14(G) 33(L) 16(O) 41(R) 09(I) 44(A) 22 48(C) 41(R) 18(E) 89(DE) 41(R) 38(E) 09(I) 5 77 2 76(QUE?) 5 19(P) 06(O) 93(T) 18(E) 81(SE) 5 17(N) 06(O) 48(C) 18(E) 41(R) 38(E) 5<br>
+84 5 80(MA) 17(N) 11(D) 40(A) 41(R) 2 46(QU) 44(A) 5 33(L) 18(E) 5 13(F) 40(A) 48(C) 16(O) 33(L) 93(T) 44(A) 5 89(DE) 87(LA) 2 387 5 11?0 2 19(P) 41(R) 09(I) 80(MA) 5 77 2 18(E)<br>
+33(L) 87(LA) 2 93(T) 16(O) 78 5 87(LA) 2 333 2 148 5 84 5 107 5 89(DE) 2 34(M) 18(E) 88(DI) 48(C) 39(I) 5 77 2 76(QUE?) 5 33(L) 16(O) 5 13(F) 18(E) 48(C) 38(E)<br>
+13(F) 03(U) 16(O) 41(R) 5 77 2 40(A) 37(S) 40(A) 39(I) 5 30(U) 39(I) 48(C) 39(I) 17(N) 06(O) 2 40(A) 5 33(L) 09(I) 16(O) 70(NE) 5 17(N) 2 31(H) 08(E) 47(B) 18(E) 5 164 77 5 47(B)<br>
+16(O) 93(T) 06(O) 70(NE) 2 79(PER) 5 34(M) 18(E) 91(Z) 06(O) 5 98(DEL) 2 107 5 14(G) 16(O) 17(N) 88(DI) 522 84 5 113 2 31(H) 40(A) 5 11(D) 06(O) 80(MA) 17(N) 11(D) 40(A) 93(T) 16(O) 5 40(A) 5<br>
+30(U) 17? 5 40(A) 34(M) 09(I) 48(C) 16(O) 2 34(M) 09(I) 16(O) 5 81(SE) 2 39(I) 5 107 2 77 5 37(S) 16(O) 17(N) 36(O) 5 46(QU) 44(A) 5 89(DE) 47(B) 44(A) 71(NO) 5 48(C) 18(E) 89(DE)<br>
+41(R) 5 40(A) 2 641 5 110 2 86(IN) 5 48(C) 40(A) 37(S) 44(A) 5 88(DI) 5 33(L) 18(E) 49(I) 2 19(P) 41(R) 06(O) 19(P) 41(R) 39(I) 44(A) 522 18(E) 5 110 5 607 2 13(F)<br>
+40(A) 93(T) 16(O) 5 164 77 2 34(M) 16(O) 93(T) 09(I) 30(U) 16(O) 5 46(QU) 40(A) 17(N) 93(T) 03(U) 17(N) 46(QU) 18(E) 5 88(DI) 2 33(L) 03(U) 16(O) 14(G) 36(O) 5 19(P) 06(O) 48(C) 16(O) 5 40(A)<br>
+30(U) 93(T) 31(H) 18(E) 17(N) 93(T) 09(I) 48(C) 16(O) 2 81(SE) 5 641 2 86(IN) 5 48(C) 40(A) 37(S) 44(A) 5 19(P) 41(R) 16(O) 19(P) 41(R) 39(I) 44(A) 5 48(C) 18(E) 89(DE) 41(R) 44(A) 5 16(O) 2<br>
+17(N) 06(O) 5 87(LA) 5 80(MA) 17(N) 2 11(D) 41(R) 09(I) 93(T) 44(A) 5 40(A) 33(L) 5 13(F) 41(R) 40(A) 93(T) 18(E) 33(L) 16(O) 2 98(DEL) 5 466 5 148 2 33(L) 18(E) 5 387 2 89(DE)<br>
+107 2 40(A) 33(L) 18(E) 37(S) 40(A) 17(N) 11(D) 41(R) 09(I) 71(NO) 5 14(G) 40(A) 18(E) 93(T) 40(A) 71(NO) 5 34(M) 18(E) 88(DI) 48(C) 39(I) 5 73(ET?) 2 40(A) 33(L) 11(D) 06(O) 47(B) 41(R) 40(A) 17(N) 88(DI)<br>
+17(N) 36(O) 5 81(SE) 14(G) 30(U) 39(I) 41(R) 17(N) 36(O) 2 86(IN) 5 93(T) 18(E) 34(M) 19(P) 36(O) 5 11(D) 40(A) 5 76(QUE?) 2 19(P) 06(O) 93(T) 18(E) 41(R) 2 86(IN) 81(SE) 14(G) 17(N) 40(A) 41(R) 5 149<br>
+41(R) 09(I) 93(T) 16(O) 2 93(T) 41(R) 16(O) 30(U) 40(A) 17(N) 11(D) 06(O) 83(SI) 5 33(L) 2 03(U) 17(N) 36(O) 5 18(E) 33(L) 2 40(A) 33(L) 93(T) 41(R) 16(O) 5 31(H) 08(E) 17(N) 41(R) 39(I) 48(C)<br>
+36(O) 5 40(A) 33(L) 136 2 81(SE) 17(N) 91(Z) 44(A) 5 13(F) 41(R) 40(A) 93(T) 18(E) 33(L) 49(I) 22 41(R) 09(I) 48(C) 18(E) 30(U) 08(E) 41(R) 38(E) 39(I) 5 40(A) 5 130(GRAND) 2 13(F) 36(O)<br>
+41(R) 93(T) 03(U) 17(N) 44(A) 5 88(DI) 2 37(S) 40(A) 79(PER) 5 08(E) 17(N) 93(T) 41(R) 40(A) 93(T) 16(O) 5 77 5 641 2 83(SI) 44(A) 5 86(IN) 5 333 2 81(SE) 5 37(S) 19(P) 09(I) 41(R)<br>
+44(A) 2 87(LA) 5 408 2 16(O) 5 71(NO) 5 148 2 11(D) 40(A) 5 48(C) 39(I) 16(O) 2 48(C) 41(R) 08(E) 11(D) 06(O) 5 77 2 89(DE) 19(P) 18(E) 17(N) 11(D) 44(A) 5 84 2 19(P)<br>
+06(O) 41(R) 93(T) 40(A) 41(R) 5 34(M) 06(O) 91(Z) 08(E) 93(T) 44(A) 5 06(O) 2 71(NO) 5 18(E) 137 2 40(A) 33(L) 93(T) 41(R) 18(E) 5 74(CON) 81(SE) 14(G) 30(U) 18(E) 17(N) 91(Z) 18(E) 5 11(D) 40(A)<br>
+33(L) 18(E) 5 164 2 34(M) 5 40(A) 37(S) 93(T) 18(E) 41(R) 38(E) 49(I) 52 81(SE) 113 5 09(I) 2 617 5 88(DI) 2 333 5 76(QUE?) 5 88(DI) 37(S) 93(T) 86(IN) 14(G) 30(U)<br>
+40(A) 17(N) 36(O) 2 79(PER) 5 33(L) 18(E) 2 79(PER) 37(S) 16(O) 70(NE) 5 19(P) 41(R) 06(O) 19(P) 41(R) 39(I) 18(E) 2 70(NE) 5 93(T) 18(E) 34(M) 19(P) 16(O) 2 70(NE) 5 430 22 19(P) 06(O) 93(T)<br>
+41(R) 09(I) 44(A) 5 17(N) 2 77 5 641 2 83(SI) 5 93(T) 41(R) 16(O) 30(U) 40(A) 81(SE) 5 46(QU) 44(A) 2 99 5 93(T) 18(E) 34(M) 19(P) 16(O) 5 89(DE) 87(LA) 2 48(C) 18(E) 33(L) 08(E)<br>
+47(B) 41(R) 40(A) 93(T) 09(I) 16(O) 70(NE) 2 98(DEL) 5 400 5 88(DI) 5 80(MA) 11(D) 44(A) 80(MA) 2 48(C) 16(O) 33(L) 5 441 2 88(DI) 14(G) 40(A) 33(L) 18(E) 37(S) 5 18(E) 2 13(F) 06(O)<br>
+41(R) 81(SE) 2 110 5 77 5 18(E) 14(G) 33(L) 09(I) 2 30(U) 18(E) 17(N) 39(I) 81(SE) 5 88(DI) 2 79(PER) 37(S) 16(O) 17(N) 44(A) 5 81(SE) 113 2 87(LA) 5 19(P) 09(I) 30(U) 2 48(C) 16(O) 37(S)<br>
+30(U) 70(NE) 5 18(E) 2 86(IN) 5 74(CON) 93(T) 41(R) 40(A) 41(R) 39(I) 16(O) 52 86(IN) 5 06(O) 14(G) 17(N) 09(I) 5 48(C) 40(A) 37(S) 16(O) 5 83(SI) 2 19(P) 30(U) 16(O) 5 48(C) 41(R) 18(E)<br>
+89(DE) 41(R) 2 77 5 08(E) 33(L) 87(LA) 5 83(SI) 2 93(T) 41(R) 16(O) 30(U) 40(A) 41(R) 04(A) 5 46(QU) 40(A) 5 86(IN) 2 93(T) 18(E) 34(M) 19(P) 16(O) 5 88(DI) 2 47(B) 03(U) 78 17(N) 14(G)<br>
+40(A) 86(IN) 5 79(PER) 2 84 5 164 5 19(P) 30(U) 41(R) 5 83(SI) 2 19(P) 41(R) 18(E) 19(P) 40(A) 41(R) 04(A) 71(NO) 5 130(GRAND) 2 48(C) 16(O) 81(SE) 5 18(E) 2 86(IN) 93(T) 18(E) 17(N) 11(D) 06(O)<br>
+77 2 37(S) 40(A) 41(R) 44(A) 5 41(R) 09(I) 48(C) 18(E) 03(U) 93(T) 16(O) 5 99 2 19(P) 40(A) 87(LA) 91(Z) 36(O) 5 98(DEL) 2 391 22 33(L) 09(I) 5 11(D) 06(O) 39(I) 5 190<br>
+37(S) 93(T) 41(R) 44(A) 5 419 2 381 5 83(SI) 2 88(DI) 48(C) 18(E) 5 77 2 31(H) 40(A) 17(N) 17(N) 06(O) 5 14(G) 09(I) 16(O) 41(R) 17(N) 40(A) 33(L) 140(MENTE) 5 97 2 466 5<br>
+<br>
+<br>
+#130v.jpg<br>
+76(QUE?) 40(A) 93(T) 41(R) 06(O) 2 48(C) 18(E) 17(N) 93(T) 16(O) 5 37(S) 48(C) 03(U) 88(DI) 5 79(PER) 5 33(L) 16(O) 41(R) 36(O) 2 37(S) 19(P) 18(E) 81(SE) 5 18(E) 2 77 5 74(CON) 2 641 5 83(SI) 2 19(P)<br>
+40(A) 41(R) 33(L) 49(I) 2 88(DI) 5 34(M) 09(I) 33(L) 18(E) 22 06(O) 14(G) 17(N) 5 30(U) 17(N) 16(O) 2 40(A) 93(T) 18(E) 17(N) 11(D) 08(E) 5 77 2 08(E) 33(L) 87(LA) 5 30(U) 18(E) 17(N) 14(G)<br>
+44(A) 2 74(CON) 5 130(GRAND) 09(I) 83(SI) 80(MA) 5 80(MA) 18(E) 37(S) 93(T) 44(A) 5 41(R) 40(A) 34(M) 18(E) 03(U) 41(R) 641 40(A) 17(N) 11(D) 06(O) 83(SI) 2 86(IN) 166 5 49(I) 5 88(DI)<br>
+37(S) 48(C) 16(O) 41(R) 83(SI) 5 ?87 2 387 5 98(DEL) 2 107 5 40(A) 33(L) 11(D) 06(O) 47(B) 41(R) 40(A) 17(N) 88(DI) 17(N) 36(O) 5 18(E) 2 11(D) 40(A) 5 130(GRAND) 09(I) 83(SI) 34(M)<br>
+16(O) 5 14(G) 30(U) 37(S) 93(T) 16(O) 2 84 5 81(SE) 17(N) 93(T) 09(I) 41(R) 38(E) 5 77 2 18(E) 33(L) 87(LA) 5 76(QUE?) 2 37(S) 16(O) 33(L) 06(O) 5 86(IN) 93(T) 18(E) 17(N) 11(D) 44(A) 5 80(MA)<br>
+110 2 19(P) 40(A) 41(R) 33(L) 09(I) 5 33(L) 2 09(I) 88(DI) 16(O) 80(MA) 5 334 25 18(E) 5 77 5 83(SI) 40(A) 2 40(A) 80(MA) 93(T) 41(R) 09(I) 48(C) 18(E) 2 88(DI) 52<br>
+390 5 18(E) 2 88(DI) 5 33(L) 18(E) 93(T) 08(E) 41(R) 40(A) 93(T) 48(C) 22 33(L) 5 40(A) 81(SE) 34(M) 47(B) 33(L) 18(E) 44(A) 5 343 2 98(DEL) 5 48(C) 33(L) 18(E) 41(R) 36(O) 5<br>
+48(C) 16(O) 34(M) 09(I) 17(N) 48(C) 39(I) 40(A) 41(R) 44(A) 5 40(A) 2 34(M) 18(E) 91(Z) 91(Z) 36(O) 5 80(MA) 14(G) 39(I) 16(O) 5 18(E) 2 13(F) 06(O) 41(R) 81(SE) 5 19(P) 06(O) 93(T) 41(R) 49(I)<br>
+44(A) 5 81(SE) 41(R) 30(U) 39(I) 41(R) 2 40(A) 5 641 5 11(D) 2 430 5 11(D) 2 86(IN) 48(C) 40(A) 33(L) 16(O) 41(R) 39(I) 41(R) 38(E) 5 33(L) 2 86(IN) 93(T) 41(R) 06(O) 11(D) 30(U) 93(T)<br>
+09(I) 16(O) 70(NE) 2 98(DEL) 5 74(CON) 48(C) 09(I) 33(L) 49(I) 16(O) 5 88(DI) 2 93(T) 41(R) 18(E) 17(N) 93(T) 16(O) 22 88(DI) 5 17(N) 03(U) 16(O) 30(U) 06(O) 5 87(LA) 2 37(S) 03(U)<br>
+19(P) 33(L) 09(I) 48(C) 16(O) 5 31(H) 03(U) 34(M) 09(I) 33(L) 140(MENTE) 5 40(A) 5 74(CON) 11(D) 06(O) 17(N) 40(A) 41(R) 34(M) 39(I) 5 87(LA) 2 93(T) 18(E) 34(M) 08(E) 41(R) 39(I) 93(T) 40(A)<br>
+</DIV>
+<H3>Reconstructed Cipher Key</H3>
+<TABLE border="1"><TR><TD>
+2;-<br>
+5;-<br>
+03;U<br>
+04;A<br>
+06;O<br>
+07;V<br>
+08;E<br>
+09;I<br>
+11;D<br>
+13;F<br>
+130;GRAND<br>
+14;G<br>
+140;MENTE<br>
+16;O<br>
+17;N<br>
+18;E<br>
+19;P<br>
+30;U<br>
+31;H<br>
+33;L<br>
+34;M<br>
+36;O<br>
+37;S<br>
+38;E<br>
+39;I<br>
+40;A<br>
+41;R<br>
+44;A<br>
+46;QU<br>
+47;B<br>
+48;C<br>
+49;I<br>
+70;NE<br>
+71;NO<br>
+73;ET?<br>
+74;CON<br>
+76;QUE?<br>
+79;PER<br>
+80;MA<br>
+81;SE<br>
+83;SI<br>
+86;IN<br>
+87;LA<br>
+88;DI<br>
+89;DE<br>
+91;Z<br>
+93;T<br>
+98;DEL<br>
+</TR></TD></TABLE>
+
+<br>
+<br>
+<font size="2">
+&COPY;2018 S.Tomokiyo<br>
+First posted on 11 August 2018. Last modified on 3 January 2019.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

@@ -1,0 +1,249 @@
+<HTML>
+<HEAD>
+<TITLE>
+An Ormonde-Clanricarde Cipher -- An Example of Codebreaking
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Ormonde, Clanricarde, Cipher, Code">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>An Ormonde-Clanricarde Cipher -- An Example of Codebreaking</H1>
+
+
+<P>I recently succeeded in deciphering a fragment of a letter entirely in cipher printed by Davys (1737) for the reader. The letter was from the Earl of Clanricarde to the Marquis of Ormonde. Although the cipher turned out to be one of the simplest kind (it took Davys only about four hours), a brief description of how I solved the cipher "might be of use to an industrious man," as Davys put it (p.30).</P>
+
+<H3>Cipher in Question</H3>
+<P>The fragment in cipher is as follows.</P>
+<DIV class="kakomi">
+90 6645737747 83576045 109 655383814976 34<br>
+99 677867767358495077 23 70577852 108 26 50495371<br>
+8378 36 435476415368 836977 22 40<br>
+5972786058415368 39 764553 91 446577736975<br>
+78 30 5345735169 93 29 108 664568<br>
+43724176426957 105 22 104 32 8145795457836944<br>
+33 70577852 97109 23 108 74495371 4269754569844582<br>
+34 61695175 93 5245 666083 24 824163458348 73<br>
+48658469 5378 20 5578854557 4970 49 72656045 111<br>
+21 105 40 106 7687 44608387 91 7041735972 30<br>
+8354 97 20 99 75785883 105 7669 30 91 111<br>
+566971606581686944 102 25 105 37 73 48418469<br>
+47787769 76606748 658259814163 105 38 5869457669<br>
+426083 22 50775485 39 111 617269574953 34 775481<br>
+61486583 24 6754845782 5978 83417469 25 91 666059<br>
+102 7663 67787770734469536745 7353 25 107 30 91<br>
+8169587945675982 39 8378 26 107 49 584854847544<br>
+102 69604557 80847359 83724958 36 847772657987<br>
+5049534744785245<br>
+</DIV>
+
+<H3>Reduction of the Problem</H3>
+<P>Numerical ciphers in the sixteenth century England generally used numbers up to several hundred (see <A HREF="charlesi.htm">here</A> for ciphers of Charles I). Although there are a few instances of numbers above 1000 (Peterson's, Manning's, and Bampfield's; see <A HREF="thurloe.htm">here</A>), it never got to such many-digit numbers. Davys also says he had never seen this kind of cipher.</P>
+
+<P>Come to think of it, however, the number of codes would not be much more than 1000, if at all. These long figures should represent some combinations of a limited number of low figures. A simplest assumption would be that the long figures actually represent two-digit codes run into one another. Such an assumption can be supported by the fact that all the long figures (i.e., those except for 102, 107, etc.) have an even number of digits. Further, when one breaks down the long figures into two-digit groups, such groups generally appear to be in the range from 40 to 90. Thus, after all, the cipher appears to be essentially a two-digit code system, whereby each letter of the alphabet is assigned two figures (at least in average). It would be similar to many of the ciphers of Charles I (see <A HREF="charlesi.htm">here</A>).</P>
+<P>(In reaching such a working hypothesis, I have to admit that, unlike Davys, I did have seen a cipher like this. A letter dated Rome, January 12 1675, addressed to Edward Coleman, who was executed in the turmol of the Popish Plot, contains similar runs of many digits, which turned out to consist of two-digit groups. <span class="note">(Hay p.203 ff.)</span> [After writing this, I found Davys described this cipher letter in his Postscript. See <A HREF="coleman.htm">another article</A>.])</P>
+
+<P>It would then be natural to assume that three-digit figures and possibly figures above 90 represent frequently used words or names. Probably breaks of figures represent word breaks. This last assumption may be challenged by sequences such as "78 30" and "37 73" because two one-letter words, "a" or "I" in English, succeeding one another is unlikely in English. However, such a problem may be solved by nulls or transcription errors ("7830" might easily be copied as "78 30").</P>
+
+<H3>Frequency Analysis</H3>
+<P>The usual frequency analysis indicated the following high-frequency figures: "69" (21 times) - "45" (17) - "83" (15) - "78" (14) - "53" (12) - "60"/"73"/"49"/"76" (10). These figures are likely to represent letters of ETAONRISH, the letters known to be of high-frequency in English. In particular, the highest frequency figure "69" may represent "e" but the margin is meagre to say anything conclusive.</P>
+
+<P>Taking advantage of what seems to be word breaks, frequency of "words" was examined. The high-frequency groups were "83 78" (7 times), "76 63" (5 times), and "66 45 68" (4 times). In English, it is well-known that the most frequently used three-letter word is "the." I was tempted to identify 66(t)-45(h)-68(e) but this hypothesis had to be discarded outright. First of all, the frequency of "66 45 68" is too low compared with the other two-letter words. Further, "68", which should be of very high-frequency if it represents "e", appears only 4 times. Again, considering that this is not a simple substitution cipher, nothing is conclusive, since fifty figures 40-90 allows frequency of individual letters to be obscured by assigning many figures to high-frequency letters such as "e". At least, it seemed very likely that such a high-frequency word like "the" would be given a special code above 90.</P>
+
+<P>The most distinguishing result of the word frequency count is the high frequency of "83 78". With this, however, it can represent any of common two-letter words such as "he", "me", "we", "be", "at", "in", "to", "or". (Other possibilities "so" or "no" are not likely to appear as many as seven times in such a short fragment.) In order to find out which is correct, it was examined how each of "83" and "78" was used in the ciphertext. The fact that figure "83", which is the third most frequent figure, occurs at the end of a word implies it would not be "a", "i", or "o." Further, it would not be "e" because it is the first letter of a high-frequency two-letter word. Thus, of ETAONRISH, "83" may correspond to "h" or "t" and the two-letter word "83 78" may be "he" or "to." Considering that "78" is the fourth most frequent letter, it would be more likely to be "o" than "e". Of course, however, considering the homophonicity with the fifty figures, we cannot jump to the conclusion.</P>
+
+<H3>Contact Chart and First Findings</H3>
+<P>About this time, I also produced a contact chart (see Kahn pp.99-105). Although it did not provide a clue as in the textbook, it did show that "78" does not appear together with other high-frequency letters. This is consistent with the above hypothesis that "83" would be "o" rather than "e." Thus, I assumed "83" to be "t" and "78" to be "o."</P>
+<P>The next step was to substitue these findings in the original ciphertext and see any known pattern appears. With the short fragment, the most that could be obtained was "75 78(o) 58 83(t)", which might be "boat", "bolt", "boot", "bout", etc. etc. It might be just anything and there seemed to be no way to further proceed.</P>
+
+<H3>Breakthrough</H3>
+<P>Then came a breakthrough. I noticed that the distance between "83" and "78" is just the right distance between "t" and "o." This implies that the letters of the alphabet are assigned code numbers in a regular order. Further, there is another two-letter combination "59 78", occurring twice. A two-letter word ending in "o" (78) might again be "to", though with such a low frequency, "so" and "no" might not be rejected altogether. However, again, the distance between "83" and "59" is 24, the number of letters in the alphabet! (At the time, "i" and "j" as well as "u" and "v" were identified.)</P>
+
+<P>I was sure this could not be a coincidence. Without testing the hypothesis any further, I keyed in the following cipher table.</P>
+<img src="ormonde.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<P>Running a Perl script for deciphering (yes, I did have an advantage of computer tools over Davys) immediately showed that my assumption was correct.</P>
+<P>As it turned out, the high-frequency figures were identified as follows: "69" (e) - "45" (e) - "83" (t) - "78" (o) - "53" (n) - "60"(u)/"73"(i)/"49"(i)/"76"(m). The four-letter pattern was found to be "75(l) 78(o) 58(s) 83(t)".</P>
+<P>The numbers up to 40 appeared to be nulls. It was not difficult to guess "108" stood for "the."</P>
+
+<H3>Deciphered Text</H3>
+<P> The final decoding is as follows. This letter (17 March 1643 [i.e., 1644]) is printed as CCLI (p.63) in Carte. (Actually, I filled further blanks from this printed version.) In postscript, Clanricarde makes an excuse of using cipher: "I beleeue I should not haue troubled your lordship with a character [i.e., cipher], but that St. Patrick's day makes letters subject to miscarry; and yet at best leisure your lordship may be pleased to be the translator of it."</P>
+
+<DIV class="kakomi2">
+90 &lt; IT &gt;<br>
+66 &lt; b &gt; 45 &lt; e &gt; 73 &lt; i &gt; 77 &lt; n &gt; 47 &lt; g &gt;<br>
+83 &lt; t &gt; 57 &lt; r &gt; 60 &lt; u &gt; 45 &lt; e &gt;<br>
+109 &lt; THAT &gt;<br>
+65 &lt; a &gt; 53 &lt; n &gt; 83 &lt; t &gt; 81 &lt; r &gt; 49 &lt; i &gt; 76 &lt; m &gt;<br>
+34 &lt; - &gt;<br>
+<br>
+99 &lt; HATH &gt;<br>
+67 &lt; c &gt; 78 &lt; o &gt; 67 &lt; c-&gt;m &gt; 76 &lt; m &gt; 73 &lt; i &gt; 58 &lt; s &gt; 49 &lt; i &gt; 50 &lt; k-&gt;o &gt; 77 &lt; n &gt;<br>
+23 &lt; - &gt;<br>
+70 &lt; f &gt; 57 &lt; r &gt; 78 &lt; o &gt; 52 &lt; m &gt;<br>
+108 &lt; THE &gt;<br>
+26 &lt; - &gt;<br>
+50 &lt; k &gt; 49 &lt; i &gt; 53 &lt; n &gt; 71 &lt; g &gt;<br>
+83 &lt; t &gt; 78 &lt; o &gt;<br>
+36 &lt; - &gt;<br>
+43 &lt; c &gt; 54 &lt; o &gt; 76 &lt; m &gt; 41 &lt; a &gt; 53 &lt; n &gt; 68 &lt; d &gt;<br>
+83 &lt; t &gt; 69 &lt; e &gt; 77 &lt; n &gt;<br>
+22 &lt; - &gt;<br>
+40 &lt; - &gt;<br>
+<br>
+59 &lt; t &gt; 72 &lt; h &gt; 78 &lt; o &gt; 60 &lt; u &gt; 58 &lt; s &gt; 41 &lt; a &gt; 53 &lt; n &gt; 68 &lt; d &gt;<br>
+39 &lt; - &gt;<br>
+76 &lt; m &gt; 45 &lt; e &gt; 53 &lt; n &gt;<br>
+91 &lt; WITH &gt;<br>
+44 &lt; d &gt; 65 &lt; a &gt; 77 &lt; n &gt; 73 &lt; i &gt; 69 &lt; e &gt; 75 &lt; l &gt;<br>
+<br>
+78 &lt; o &gt;<br>
+30 &lt; - &gt;<br>
+53 &lt; n &gt; 45 &lt; e &gt; 73 &lt; i &gt; 51 &lt; l &gt; 69 &lt; e &gt;<br>
+93 &lt; OF &gt;<br>
+29 &lt; - &gt;<br>
+108 &lt; THE &gt;<br>
+66 &lt; b &gt; 45 &lt; e &gt; 68 &lt; d &gt;<br>
+<br>
+43 &lt; c &gt; 72 &lt; h &gt; 41 &lt; a &gt; 76 &lt; m &gt; 42 &lt; b &gt; 69 &lt; e &gt; 57 &lt; r &gt;<br>
+105 &lt; IT &gt;<br>
+22 &lt; - &gt;<br>
+104 &lt; IS &gt;<br>
+32 &lt; - &gt;<br>
+81 &lt; r &gt; 45 &lt; e &gt; 79 &lt; p &gt; 54 &lt; o &gt; 57 &lt; r &gt; 83 &lt; t &gt; 69 &lt; e &gt; 44 &lt; d &gt;<br>
+<br>
+33 &lt; - &gt;<br>
+70 &lt; f &gt; 57 &lt; r &gt; 78 &lt; o &gt; 52 &lt; m &gt;<br>
+97 &lt; THEM &gt; 109 &lt; THAT &gt;<br>
+23 &lt; - &gt;<br>
+108 &lt; THE &gt;<br>
+74 &lt; k &gt; 49 &lt; i &gt; 53 &lt; n &gt; 71 &lt; g &gt;<br>
+42 &lt; b &gt; 69 &lt; e &gt; 75 &lt; l &gt; 45 &lt; e &gt; 69 &lt; e &gt; 84 &lt; u &gt; 45 &lt; e &gt; 82 &lt; s &gt;<br>
+<br>
+34 &lt; - &gt;<br>
+61 &lt; w &gt; 69 &lt; e &gt; 51 &lt; l &gt; 75 &lt; l &gt;<br>
+93 &lt; OF &gt;<br>
+52 &lt; m &gt; 45 &lt; e &gt;<br>
+66 &lt; b &gt; 60 &lt; u &gt; 83 &lt; t &gt;<br>
+24 &lt; - &gt;<br>
+82 &lt; s &gt; 41 &lt; a &gt; 63 &lt; y &gt; 45 &lt; e &gt; 83 &lt; t &gt; 48 &lt; h &gt;<br>
+73 &lt; i &gt;<br>
+<br>
+48 &lt; h &gt; 65 &lt; a &gt; 84 &lt; u &gt; 69 &lt; e &gt;<br>
+53 &lt; n &gt; 78 &lt; o &gt;<br>
+20 &lt; - &gt;<br>
+55 &lt; p &gt; 78 &lt; o &gt; 85 &lt; w &gt; 45 &lt; e &gt; 57 &lt; r &gt;<br>
+49 &lt; i &gt; 70 &lt; f &gt;<br>
+49 &lt; i &gt;<br>
+72 &lt; h &gt; 65 &lt; a &gt; 60 &lt; u &gt; 45 &lt; e &gt;<br>
+111 &lt; NOT &gt;<br>
+<br>
+21 &lt; - &gt;<br>
+105 &lt; IT &gt;<br>
+40 &lt; - &gt;<br>
+106 &lt; WAS &gt;<br>
+76 &lt; m &gt; 87 &lt; y &gt;<br>
+44 &lt; d &gt; 60 &lt; u &gt; 83 &lt; t &gt; 87 &lt; y &gt;<br>
+91 &lt; AND &gt;<br>
+70 &lt; f &gt; 41 &lt; a &gt; 73 &lt; i &gt; 59 &lt; t &gt; 72 &lt; h &gt;<br>
+30 &lt; - &gt;<br>
+<br>
+83 &lt; t &gt; 54 &lt; o &gt;<br>
+97 &lt; HIM &gt;<br>
+20 &lt; - &gt;<br>
+99 &lt; HATH &gt;<br>
+75 &lt; l &gt; 78 &lt; o &gt; 58 &lt; s &gt; 83 &lt; t &gt;<br>
+105 &lt; IT &gt;<br>
+76 &lt; m &gt; 69 &lt; e &gt;<br>
+30 &lt; - &gt;<br>
+91 &lt; AND &gt;<br>
+111 &lt; NOT &gt;<br>
+<br>
+56 &lt; q-&gt;r &gt; 69 &lt; e &gt; 71 &lt; g &gt; 60 &lt; u &gt; 65 &lt; a &gt; 81 &lt; r &gt; 68 &lt; d &gt; 69 &lt; e &gt; 44 &lt; d &gt;<br>
+102 &lt; FOR &gt;<br>
+25 &lt; - &gt;<br>
+105 &lt; IT &gt;<br>
+37 &lt; - &gt;<br>
+73 &lt; i &gt;<br>
+48 &lt; h &gt; 41 &lt; a &gt; 84 &lt; u &gt; 69 &lt; e &gt;<br>
+<br>
+47 &lt; g &gt; 78 &lt; o &gt; 77 &lt; n &gt; 69 &lt; e &gt;<br>
+76 &lt; m &gt; 60 &lt; u &gt; 67 &lt; c &gt; 48 &lt; h &gt;<br>
+65 &lt; a &gt; 82 &lt; s &gt; 59 &lt; t &gt; 81 &lt; r &gt; 41 &lt; a &gt; 63 &lt; y &gt;<br>
+105 &lt; IT &gt;<br>
+38 &lt; - &gt;<br>
+58 &lt; s &gt; 69 &lt; e &gt; 45 &lt; e &gt; 76 &lt; m &gt; 69 &lt; e &gt;<br>
+<br>
+42 &lt; b &gt; 60 &lt; u &gt; 83 &lt; t &gt;<br>
+22 &lt; - &gt;<br>
+50 &lt; k &gt; 77 &lt; n &gt; 54 &lt; o &gt; 85 &lt; w &gt;<br>
+39 &lt; - &gt;<br>
+111 &lt; NOT &gt;<br>
+61 &lt; w &gt; 72 &lt; h &gt; 69 &lt; e &gt; 57 &lt; r &gt; 49 &lt; i &gt; 53 &lt; n &gt;<br>
+34 &lt; - &gt;<br>
+77 &lt; n &gt; 54 &lt; o &gt; 81 &lt; r &gt;<br>
+<br>
+61 &lt; w &gt; 48 &lt; h &gt; 65 &lt; a &gt; 83 &lt; t &gt;<br>
+24 &lt; - &gt;<br>
+67 &lt; c &gt; 54 &lt; o &gt; 84 &lt; u &gt; 57 &lt; r &gt; 82 &lt; s &gt;<br>
+59 &lt; t &gt; 78 &lt; o &gt;<br>
+83 &lt; t &gt; 41 &lt; a &gt; 74 &lt; k &gt; 69 &lt; e &gt;<br>
+25 &lt; - &gt;<br>
+91 &lt; AND &gt;<br>
+66 &lt; b &gt; 60 &lt; u &gt; 59 &lt; t &gt;<br>
+<br>
+102 &lt; FOR &gt;<br>
+76 &lt; m &gt; 63 &lt; y &gt;<br>
+67 &lt; c &gt; 78 &lt; o &gt; 77 &lt; n &gt; 70 &lt; f &gt; 73 &lt; i &gt; 44 &lt; d &gt; 69 &lt; e &gt; 53 &lt; n &gt; 67 &lt; c &gt; 45 &lt; e &gt;<br>
+73 &lt; i &gt; 53 &lt; n &gt;<br>
+25 &lt; - &gt;<br>
+107 &lt; YOU &gt;<br>
+30 &lt; - &gt;<br>
+91 &lt; AND &gt;<br>
+81 &lt; r &gt; 69 &lt; e &gt; 58 &lt; s &gt; 79 &lt; p &gt; 45 &lt; e &gt; 67 &lt; c &gt; 59 &lt; t &gt; 82 &lt; s &gt;<br>
+39 &lt; - &gt;<br>
+83 &lt; t &gt; 78 &lt; o &gt; to<br>
+26 &lt; - &gt;<br>
+107 &lt; YOU &gt;<br>
+49 &lt; i &gt;<br>
+58 &lt; s &gt; 48 &lt; h &gt; 54 &lt; o &gt; 84 &lt; u &gt; 75 &lt; l &gt; 44 &lt; d &gt;<br>
+<br>
+102 &lt; FOR &gt;<br>
+69 &lt; e &gt; 60 &lt; u &gt; 45 &lt; e &gt; 57 &lt; r &gt;<br>
+80 &lt; q &gt; 84 &lt; u &gt; 73 &lt; i &gt; 59 &lt; t &gt;<br>
+83 &lt; t &gt; 72 &lt; h &gt; 49 &lt; i &gt; 58 &lt; s &gt;<br>
+36 &lt; - &gt;<br>
+84 &lt; u &gt; 77 &lt; n &gt; 72 &lt; h &gt; 65 &lt; a &gt; 79 &lt; p &gt; 87 &lt; y &gt;<br>
+50 &lt; k &gt; 49 &lt; i &gt; 53 &lt; n &gt; 47 &lt; g &gt; 44 &lt; d &gt; 78 &lt; o &gt; 52 &lt; m &gt; 45 &lt; e &gt;<br>
+</DIV>
+
+
+<H3>References</H3>
+<P>John Davys, <i>An Essay on the Art of Decyphering</i> (1737)</P>
+<P>Thomas Carte, <i>The life of James duke of Ormond</i>, a new edition (1851) (<A HREF="http://books.google.com/books?id=aJM9AAAAcAAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false">Google</A>)</P>
+<P>Malcom V. Hay, <i>Jesuits and the Popish Plot</i> (<A HREF="http://books.google.co.jp/books?id=H_YaurPvfrwC&pg=PA203">Google</A>, reprint in 2003)</P>
+<P>David Kahn, <i>The Codebreakers</i> (1967)</P>
+<br>
+<br>
+<font size="2">
+&COPY;2009 S.Tomokiyo<br>
+First posted on 24 November 2011. Last modified on 23 September 2015.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
