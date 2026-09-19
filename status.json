@@ -1,5 +1,5 @@
 {
-  "updated": "19 September 2026, 23:00 UTC",
+  "updated": "19 September 2026, 23:30 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -83,18 +83,18 @@
     {
       "name": "Eckert Papers, US Military Telegraph",
       "year": "1862-67",
-      "ref": "Huntington mssEC 1-76",
+      "ref": "Huntington mssEC 15 (1862); mssEC 18-19 with cipher books 39-67 (1864)",
       "folder": "ciphers/eckert-1862",
-      "stage": 1,
+      "stage": 8,
       "state": "active",
       "holder": "Worker",
-      "next": "Worker checking whether the Zooniverse 'Decoding the Civil War' project already decoded these ledgers, then pulling one 1862 ledger and the cipher book and reading ten telegrams.",
-      "note": "Queue rank 1 (38 of 39). English, online, with the code book beside it. No archive request needed.",
+      "next": "Second pilot running: read twenty entries of an 1864 ledger against the filled-in cipher book the Huntington holds, at grade H, preferring telegrams the Official Records never printed.",
+      "note": "First pilot done 19 Sept 2026: the Zooniverse project transcribed all 12,921 pages but decoded nothing, so the ledgers are open. Ten Feb 1862 entries read cleanly against the Official Records (86 tokens grade C, 3 I, 2 M); the Feb 1862 key survives only in print, so no H reading is possible for 1862. The 1863-67 ledgers pair with cipher books the Huntington holds, which allows entry-by-entry reading of telegrams never printed.",
       "wait": {
-        "on": "Nothing external. A worker is on it",
-        "since": "19 Sept 2026, 22:40 UTC",
-        "expected": "Overnight",
-        "unblock": "Worker reports. If Zooniverse already decoded the volumes, the target becomes found-solved and the residue is what remains."
+        "on": "Nothing external. A worker is reading the 1864 ledger",
+        "since": "19 Sept 2026, 23:30 UTC",
+        "expected": "About 2 hours",
+        "unblock": "Twenty readings at grade H, or a report that the book does not match."
       }
     },
     {
@@ -117,14 +117,19 @@
   ],
   "workers": [
     {
+      "title": "Transcription + Reading: Eckert 1864 ledger with Cipher No. 1",
+      "job": "Read twenty 1864 telegrams at grade H against the Huntington's cipher book",
+      "state": "running"
+    },
+    {
       "title": "Research: Wellington 1812 dictionary edition",
       "job": "Test pocket dictionaries against the 57 known code groups",
       "state": "running"
     },
     {
       "title": "Archive Lookup + Transcription: Eckert Papers 1862",
-      "job": "Check Zooniverse coverage; read ten coded telegrams with the cipher book",
-      "state": "running"
+      "job": "Zooniverse transcribed, never decoded; ten Feb 1862 telegrams read against the Official Records (86 C tokens)",
+      "state": "done"
     },
     {
       "title": "Archive Lookup: Whitworth 1707",
@@ -133,8 +138,8 @@
     },
     {
       "title": "Image Capture + Transcription: Wellington 1812",
-      "job": "17 images saved; full transcription pushed with two-pass reconciliation; finishing pass A notes",
-      "state": "running"
+      "job": "17 images saved; transcription pushed with two-pass reconciliation and pass A log",
+      "state": "done"
     },
     {
       "title": "Scout: queue builder",
@@ -218,6 +223,14 @@
     }
   ],
   "log": [
+    {
+      "when": "19 Sept, 23:26",
+      "what": "Wellington transcription worker finished (pass A log pushed) and archived. Dictionary search continues."
+    },
+    {
+      "when": "19 Sept, 23:30",
+      "what": "Eckert: first pilot done. Zooniverse never decoded the ledgers; ten 1862 telegrams read against the Official Records. Second pilot started on an 1864 ledger with the surviving cipher book."
+    },
     {
       "when": "19 Sept, 23:00",
       "what": "Wellington: transcription pushed (73 groups, all with known plaintext). Dictionary research worker started."

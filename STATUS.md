@@ -19,9 +19,9 @@ Last updated: 19 September 2026, 22:30 UTC.
 |---|---|---|---|---|
 | Charles II to Hamilton, 1650 | ciphers/hamilton-1650 | Copy request emailed to NRS 19 Sept 2026 for GD406/1/2197 (5 key sheets) | Wait for NRS quote; pay; when images arrive, commit them or paste them to the orchestrator for transcription and decoding | NRS, then you, then orchestrator |
 | Stepney to Manchester, 1702 | ciphers/stepney-manchester-1702 | TNA page check ordered and paid 19 Sept 2026, order 3660178, SP 105/65 | Wait for TNA's quote for the copy; pay; when the copy arrives, commit it or paste it to the orchestrator | TNA, then you |
-| Wellington to Maitland, 1812 | ciphers/wellington-maitland-1812 | 17 auction images captured 19 Sept 2026; transcription in progress | Worker transcribing; then identify the pocket dictionary | Worker |
+| Wellington to Maitland, 1812 | ciphers/wellington-maitland-1812 | Transcribed 19 Sept 2026: 73 groups, all with known plaintext (interlinear and Gurwood). Dictionary edition search running | Worker | Worker |
 | Whitworth to Harley, 1707-08 | ciphers/whitworth-1707 | Verified 19 Sept 2026: plaintext of the SP 91/5 'undeciphered' items is in print (Sbornik IRIO 39 and 50) except one clause of f. 108. Copy request drafted for ff. 108, 106, 121 | Order the three items from REQUEST.md (about 10 images) | You |
-| Eckert Papers, US Military Telegraph 1862-67 | ciphers/eckert-1862 (being created) | QUEUE rank 1. Worker started 22:40 UTC: check Zooniverse coverage first, then read ten telegrams | Worker | Worker |
+| Eckert Papers, US Military Telegraph 1862-67 | ciphers/eckert-1862, ciphers/eckert-1864 (in progress) | Pilot 1 done 19 Sept: Zooniverse transcribed but never decoded; ten 1862 telegrams read against the Official Records (86 C). Pilot 2 running: 1864 ledger against the surviving cipher book, grade H | Worker | Worker |
 | Everything else | QUEUE.md | First scout run done 19 Sept 2026: 40 scored, 163 kept unscored, 40 dropped | Work down the queue | Orchestrator |
 
 ## Worker sessions
@@ -31,8 +31,10 @@ Last updated: 19 September 2026, 22:30 UTC.
 | Archive Lookup: Stepney 1702 (blocked, done) | Find the 1702 volume | Blocked by the old "Trusted" network policy; logged | Done, archive |
 | Archive Lookup: Stepney 1702 (done) | Same, after the policy change | Found SP 105/65, record C3609655; REQUEST.md updated | Done, archive |
 | Scout: queue builder (done) | Refresh the snapshot; build the ranked queue | Cryptiana unchanged. QUEUE.md written: 40 scored, 163 unscored, 40 dropped. Interrupted 22:15 UTC after it began attempting ciphers beyond its brief | Done, archive |
-| Image Capture + Transcription: Wellington 1812 | Capture auction images before 23 Sept sale; transcribe | 17 images pushed bf4d154 | Running |
-| Archive Lookup + Transcription: Eckert Papers 1862 | Zooniverse coverage check; read ten telegrams with the cipher book | | Running |
+| Image Capture + Transcription: Wellington 1812 | Capture auction images before 23 Sept sale; transcribe | 17 images, full transcription, pass A log pushed | Done, archived |
+| Research: Wellington 1812 dictionary edition | Test pocket dictionaries against the 57 code groups | | Running |
+| Archive Lookup + Transcription: Eckert Papers 1862 | Zooniverse coverage check; read ten telegrams | Pushed 2d54f06: never decoded by Zooniverse; ten 1862 entries read at grade C | Done, archived |
+| Transcription + Reading: Eckert 1864 ledger with Cipher No. 1 | Twenty 1864 entries at grade H | | Running |
 | Archive Lookup: Whitworth 1707 | Search-print check; list items; REQUEST.md | Only one clause of SP 91/5/108 unread; ciphers/whitworth-1707 committed | Done, archive |
 
 ## Environment
