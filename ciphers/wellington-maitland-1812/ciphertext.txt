@@ -1,0 +1,53 @@
+# Wellington to Lt-Gen. F. Maitland, Villa Castin, 2 Sept 1812. Spink sale 26066 lot 1184, images 06 (recto) and
+# 07 (verso), 1100 x 248 px, transcribed 19 Sept 2026. One manuscript line per line; r = recto, v = verso.
+# Each code group is followed by the contemporary interlinear reading in braces ({} = none written), then the slash
+# as in the manuscript. ? after a character = doubtful reading. Clear text kept as written, nothing expanded.
+r0: Sir, | Villa Castin, Hd Qrs Septr 2d 1812 | [red numeral 5 above line 1, right of centre]
+r1: Since I wrote to you on the 30th I have received your letter of the 24th August. I beg you will understand that I propose that the
+r2: Troops under your Command should 21y288{occupy}/ 15l405{the}/ 6m205{Height}/ 10m297{outside}/ 17l289{of}/ chdkflbngmxishxgo{Alicant}/ 19l433{which}/ 9n23{are})
+r3: 12x408{to}/ 23y388{Southward}/ 10n17{and}/ 29y432{Westward}/ 17l289{of}/ 7m409{Town}/ 21z350{to rest}/ 15y438{your}/ 8b243{left}/ 11z290{on}/ 22n365{Sea}/ As the 21l79{Cypher}/ sent by the Secretary
+r4: of State is deficient as affording no means of 19m389{Spelling}/ 23x436{words}/ I propose to 5b429{use}/ 7l405{that}/ which I sent to Lord Wm Bentinck
+r5: when it is necessary 22l79{to Cypher}/ 23x436{words}/ not to be found in the Secretary of State's 21l79{Cypher}/ Understanding from a letter from General
+r6: Donkin that 15l405{the}/ 12z14{Alphabet}/ 8l369{sent}/ 12x408{to}/ Sir Ed Pellew was not correct, I think it probable that that sent to Lord Wm
+r7: may not have been so, and 3l219{I inclose}/ 12l19{another}/ You will of course have the instruction 16m211{how}/ 6l429{to use}/ 6y232{it}/ 17n203{Head}/ 3z336{Quarters}/ 9n23{are}
+r8: 23n405{this}/ 15x116{day}/ 3y28{at}/ jckfmbldnghcdxzkz?fsdo{}/ 10n17{and}/ 4y434{will}/ 7x38{be}/ 13y272{tomorrow}/ 3y28{at}/ jgnckfhbldmfg?bcfxg{} I am
+r9: Lt Genl Maitland
+r10: Arevalo
+v1: happy to find from Col Jones' Report that there will be no difficulty in 33x400{supplying}/ 8y438{you}/ 5m435{with}/ 8x332{provisions}/ 3y28{at}/ fxdkfst{Alicant}
+v2: 12x408{to}/ 9x20{any}/ 8z16{amount}/ 8y438{you}/ 13x66{can}/ 20m349{require}/ If this should be the case it would be a great convenience to me if you
+v3: would write to Mr O'Meara the Dy Comy Genl at Cadiz to say that you will not require the provisions which I had ordered
+v4: should be sent for your use. I hear that the Enemy have evacuated Zamora which is 20y184{fortunate}/ 4y158{Event}/ 3n25{as}/ 6y232{it}
+v5: 4y434{will}/ 13n151{enable}/ 16l261{me}/ 20y346{to rejoin}/ 15l405{the}/ 22x412{Troops}/ 12x408{to}/ 17y388{South}/ 3y28{at}/ 1y272{more}/ 4y146{early}/ 12x308{period}/
+v6: I have the honour to be Sir your most obed Servant. | Wellington
+#
+# Reconciliation, 19 Sept 2026. Two independent passes (A and B, separate agents working only from the images),
+# then a third reading of every disputed spot at 8x against Tomokiyo's table (maitland.png) and Gurwood's printed
+# text. The lines above are the reconciled reading. Disagreements, with what was adopted and why:
+#
+# r3  22n365{Sea}      B read 32n365. 8x: the first digit has the same form as the second 2. Tomokiyo 22n365. Adopted 22.
+# r3  21z350{to rest}  B read the interlinear as "forest?". It is "to rest" (Gurwood: "to rest your left on the sea").
+# r7  6l429{to use}    B read 5b?429. 8x: a 6 and a tall-looped l; "use" is 5b429 on r4 and "to use" is the next
+#                      entry. Tomokiyo 6l429. Adopted 6l429.
+# r7  3z336{Quarters}  B counted five or six glyphs (33z336?). 8x shows five: 3, tailed 3 (= z), 3, 3, 6.
+#                      Tomokiyo 3z336; "provisions" is on p. 332, so p. 336 for Q fits, p. 36 does not. Adopted.
+# r8  13y272{tomorrow} B read 13z272. 8x: the letter has the open y of 1y272{more} on v5, same page. Adopted y.
+# r8  run 1            B: jekfmbldnghcdxzkyfsdo; my first reading: jekfmbldnghedxzhgfsdo; Tomokiyo:
+#                      jckfmbldnghcdxzkzfsdo. 8x: second letter is c (open, no loop), letters 12-13 are c d, letter
+#                      17 is z or y (his Key 3 decrypts z->A twice in "Vila Castin", which needs z). Adopted
+#                      jckfmbldnghcdxzkz?fsdo, the ? on letter 17.
+# r8  run 2            B: jgnckfhbldmfgbcfs?g (19 letters, "ld" possibly "lol"); mine: jgnckfhbldmfgbcfxg (18);
+#                      Tomokiyo: jgnckfhbldmfqbcfxg (q, decrypting to R in Arevalo). 8x: 18 letters; letter 13 is
+#                      g or q (descender only), letter 17 is x. Adopted jgnckfhbldmfg?bcfxg, the ? on letter 13.
+# v1  fxdkfst{Alicant} B fxd?kfst. 8x: d. Tomokiyo fxdkfst. Adopted.
+# v2  8z16{amount}     B 8z?16 (tailed-3 form of z, as in 12z14, 11z290, 21z350). Adopted z throughout: the tailed
+#                      form occurs only in the letter position of a group.
+# v2  8y438{you}       B 8y43?8 (0 or 8). Same group as v1 8y438 and Tomokiyo 8y438. Adopted 8.
+# v4  3n25{as}         B 3n?25 (n or x). Tomokiyo 3n25. Adopted n.
+# v5  20y346{to rejoin} B read the interlinear as "to resume?". It is "to rejoin" (Gurwood: "to rejoin the troops").
+# v5  1y272{more}      B 1y?272 (1y or 13y). 8x: five glyphs. Adopted 1y272.
+# r7  3l219{I inclose} B 3l2?19 (raised 2). Tomokiyo 3l219. Adopted.
+#
+# Other marks: "10 n.17" and "8.l369" have a dot inside the group (r3, r6); the slash after 9n23 on r2 curves like
+# a ")"; the stroke through "State" on r4 is probably the crossbar of the t. "Arevalo" is written at the foot of
+# the recto below "I am", not in the run of text (Gurwood puts "will be to-morrow at Arevalo" in the text; the
+# clerk's line reads "and will be tomorrow at <run 2>"). "I am" is the catchword for the verso.
