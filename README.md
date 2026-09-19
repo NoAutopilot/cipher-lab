@@ -9,7 +9,9 @@ S. Tomokiyo's site Cryptiana.
     LANDSCAPE.md          who is solving what (Sept 2026), corrected statuses, where the open ground is
     LESSONS.md            how the current solvers work, distilled from their repositories
     CLAUDE.md             the rules every session and agent follows here
-    .claude/workflows/    named workflows: check-solved (six-source sweep before any campaign)
+    QUEUE.md              ranked list of what to attempt next, refreshed by the scout workflow
+    .claude/workflows/    named workflows: check-solved (six-source sweep before any campaign),
+                          scout (harvest, filter out the solved, score, file into QUEUE.md)
     ciphers/<name>/       one folder per cipher being worked on: ciphertext.txt + NOTES.md
     sources/cryptiana/    unmodified snapshot of the Cryptiana pages (19 September 2026)
     tools/html2text.py    render a saved page as plain text
