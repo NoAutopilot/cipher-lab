@@ -1,0 +1,332 @@
+{
+ "collection": "p16003coll11 (Thomas T. Eckert Papers, Huntington Digital Library)",
+ "fetched": "19 Sept 2026",
+ "user_agent": "Mozilla/5.0 (X11; Linux x86_64) cipher-lab research",
+ "note": "Ledger pages saved at 2583 px wide (IIIF size 2583,), cipher-book pages at 1400 px wide; full-size JP2 masters are 5165x7200 px for mssEC 15 (about 1.7 MB as full JPEG). Transcription text per page comes from https://hdl.huntington.org/digital/api/collections/p16003coll11/items/<pointer>/false (field \"text\").",
+ "ledger_mssEC15_page_count": 172,
+ "images": [
+  {
+   "object": 5126,
+   "call_number": "mssEC 15",
+   "object_title": "War Department Ciphers Sent Feby. 1 to July 21, 1862.",
+   "page_pointer": 4964,
+   "page_title": "Page [9]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/4964",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/4964/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/4964/info.json",
+   "full_size_px": [
+    5165,
+    7200
+   ],
+   "saved_as": "mssEC15_p4964.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 689706
+  },
+  {
+   "object": 5126,
+   "call_number": "mssEC 15",
+   "object_title": "War Department Ciphers Sent Feby. 1 to July 21, 1862.",
+   "page_pointer": 4970,
+   "page_title": "Page [15]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/4970",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/4970/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/4970/info.json",
+   "full_size_px": [
+    5165,
+    7200
+   ],
+   "saved_as": "mssEC15_p4970.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 713925
+  },
+  {
+   "object": 5126,
+   "call_number": "mssEC 15",
+   "object_title": "War Department Ciphers Sent Feby. 1 to July 21, 1862.",
+   "page_pointer": 4971,
+   "page_title": "Page [16]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/4971",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/4971/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/4971/info.json",
+   "full_size_px": [
+    5478,
+    7200
+   ],
+   "saved_as": "mssEC15_p4971.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 689997
+  },
+  {
+   "object": 5126,
+   "call_number": "mssEC 15",
+   "object_title": "War Department Ciphers Sent Feby. 1 to July 21, 1862.",
+   "page_pointer": 4974,
+   "page_title": "Page [19]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/4974",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/4974/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/4974/info.json",
+   "full_size_px": [
+    5165,
+    7200
+   ],
+   "saved_as": "mssEC15_p4974.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 732574
+  },
+  {
+   "object": 5126,
+   "call_number": "mssEC 15",
+   "object_title": "War Department Ciphers Sent Feby. 1 to July 21, 1862.",
+   "page_pointer": 4976,
+   "page_title": "Page [21]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/4976",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/4976/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/4976/info.json",
+   "full_size_px": [
+    5165,
+    7200
+   ],
+   "saved_as": "mssEC15_p4976.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 704278
+  },
+  {
+   "object": 5126,
+   "call_number": "mssEC 15",
+   "object_title": "War Department Ciphers Sent Feby. 1 to July 21, 1862.",
+   "page_pointer": 4980,
+   "page_title": "Page [25]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/4980",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/4980/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/4980/info.json",
+   "full_size_px": [
+    5165,
+    7200
+   ],
+   "saved_as": "mssEC15_p4980.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 639426
+  },
+  {
+   "object": 5126,
+   "call_number": "mssEC 15",
+   "object_title": "War Department Ciphers Sent Feby. 1 to July 21, 1862.",
+   "page_pointer": 4990,
+   "page_title": "Page [35]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/4990",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/4990/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/4990/info.json",
+   "full_size_px": [
+    5165,
+    7200
+   ],
+   "saved_as": "mssEC15_p4990.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 726044
+  },
+  {
+   "object": 5126,
+   "call_number": "mssEC 15",
+   "object_title": "War Department Ciphers Sent Feby. 1 to July 21, 1862.",
+   "page_pointer": 4991,
+   "page_title": "Page [36]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/4991",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/4991/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/4991/info.json",
+   "full_size_px": [
+    5478,
+    7200
+   ],
+   "saved_as": "mssEC15_p4991.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 739227
+  },
+  {
+   "object": 5126,
+   "call_number": "mssEC 15",
+   "object_title": "War Department Ciphers Sent Feby. 1 to July 21, 1862.",
+   "page_pointer": 4994,
+   "page_title": "Page [39]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/4994",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/4994/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/4994/info.json",
+   "full_size_px": [
+    5165,
+    7200
+   ],
+   "saved_as": "mssEC15_p4994.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 700520
+  },
+  {
+   "object": 5126,
+   "call_number": "mssEC 15",
+   "object_title": "War Department Ciphers Sent Feby. 1 to July 21, 1862.",
+   "page_pointer": 5011,
+   "page_title": "Page [56]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/5011",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/5011/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/5011/info.json",
+   "full_size_px": [
+    5478,
+    7200
+   ],
+   "saved_as": "mssEC15_p5011.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 708314
+  },
+  {
+   "object": 1750,
+   "call_number": "mssEC 67",
+   "object_title": "Cipher for Telegraphic Correspondence (Stager template; Cipher No. 9 per Tomokiyo)",
+   "page_pointer": 1718,
+   "page_title": "Title page verso",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/1718",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/1718/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/1718/info.json",
+   "full_size_px": [
+    null,
+    null
+   ],
+   "saved_as": "mssEC67_p1718.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 214448
+  },
+  {
+   "object": 1750,
+   "call_number": "mssEC 67",
+   "object_title": "Cipher for Telegraphic Correspondence (Stager template; Cipher No. 9 per Tomokiyo)",
+   "page_pointer": 1721,
+   "page_title": "Page 1",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/1721",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/1721/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/1721/info.json",
+   "full_size_px": [
+    null,
+    null
+   ],
+   "saved_as": "mssEC67_p1721.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 224386
+  },
+  {
+   "object": 1750,
+   "call_number": "mssEC 67",
+   "object_title": "Cipher for Telegraphic Correspondence (Stager template; Cipher No. 9 per Tomokiyo)",
+   "page_pointer": 1729,
+   "page_title": "Page [9]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/1729",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/1729/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/1729/info.json",
+   "full_size_px": [
+    null,
+    null
+   ],
+   "saved_as": "mssEC67_p1729.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 238595
+  },
+  {
+   "object": 1750,
+   "call_number": "mssEC 67",
+   "object_title": "Cipher for Telegraphic Correspondence (Stager template; Cipher No. 9 per Tomokiyo)",
+   "page_pointer": 1730,
+   "page_title": "Page 10]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/1730",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/1730/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/1730/info.json",
+   "full_size_px": [
+    null,
+    null
+   ],
+   "saved_as": "mssEC67_p1730.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 271060
+  },
+  {
+   "object": 1750,
+   "call_number": "mssEC 67",
+   "object_title": "Cipher for Telegraphic Correspondence (Stager template; Cipher No. 9 per Tomokiyo)",
+   "page_pointer": 1736,
+   "page_title": "Page [16]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/1736",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/1736/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/1736/info.json",
+   "full_size_px": [
+    null,
+    null
+   ],
+   "saved_as": "mssEC67_p1736.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 257228
+  },
+  {
+   "object": 1750,
+   "call_number": "mssEC 67",
+   "object_title": "Cipher for Telegraphic Correspondence (Stager template; Cipher No. 9 per Tomokiyo)",
+   "page_pointer": 1742,
+   "page_title": "Page [22]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/1742",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/1742/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/1742/info.json",
+   "full_size_px": [
+    null,
+    null
+   ],
+   "saved_as": "mssEC67_p1742.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 228156
+  },
+  {
+   "object": 1750,
+   "call_number": "mssEC 67",
+   "object_title": "Cipher for Telegraphic Correspondence (Stager template; Cipher No. 9 per Tomokiyo)",
+   "page_pointer": 1744,
+   "page_title": "Page [24]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/1744",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/1744/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/1744/info.json",
+   "full_size_px": [
+    null,
+    null
+   ],
+   "saved_as": "mssEC67_p1744.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 276636
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence (Cipher No. 1)",
+   "page_pointer": 315,
+   "page_title": "Title page verso",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/315",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/315/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/315/info.json",
+   "full_size_px": [
+    null,
+    null
+   ],
+   "saved_as": "mssEC41_p315.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 293000
+  },
+  {
+   "object": 309,
+   "call_number": "mssEC 40",
+   "object_title": "Handwritten cipher book (post-war code, catalogued as Cipher Book #1)",
+   "page_pointer": 231,
+   "page_title": "Page [A]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/231",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/231/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/231/info.json",
+   "full_size_px": [
+    null,
+    null
+   ],
+   "saved_as": "mssEC40_p231.jpg",
+   "saved_width_px": null,
+   "saved_bytes": 254801
+  }
+ ]
+}
