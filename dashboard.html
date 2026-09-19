@@ -40,6 +40,9 @@ header .upd { color:var(--muted); }
 .state-blocked .seg.on { background:var(--bad); } .state-blocked .seg.cur { outline-color:var(--bad); }
 .state-solved .seg.on { background:var(--good); }
 .stage-label { font-size:0.9rem; margin-top:6px; }
+.wait { margin:4px 0 0; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:6px 18px; padding:10px 12px; background:var(--ground); border-radius:4px; font-size:0.92rem; }
+.wait div { display:grid; gap:2px; } .wait dt { color:var(--muted); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; font-weight:600; } .wait dd { margin:0; }
+.tile .sub { font-size:0.85rem; margin-top:4px; }
 .next { margin:0; } .note { margin:0; font-size:0.92rem; }
 .two { display:grid; grid-template-columns:1fr 1fr; gap:24px; } @media (max-width:760px) { .two { grid-template-columns:1fr; } }
 .panel { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:16px 18px; }
@@ -58,11 +61,11 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
 <div class="wrap">
   <header>
     <div><h1>Cipher Lab Board</h1><div class="muted">Where every target stands, who holds it, and what happens next.</div></div>
-    <div class="upd">Updated 19 September 2026, 22:45 UTC</div>
+    <div class="upd">Updated 19 September 2026, 22:50 UTC</div>
   </header>
 
   <section class="tiles" aria-label="Summary">
-    <div class="tile"><div class="n">4</div><div class="l">Targets in motion</div></div>
+    <div class="tile"><div class="n">4</div><div class="l">Targets in motion</div><div class="sub muted">2 with archive, 2 with worker; 1 blocked</div></div>
     <div class="tile"><div class="n">2</div><div class="l">Archive requests out</div></div>
     <div class="tile"><div class="n">0</div><div class="l">Waiting on you</div></div>
     <div class="tile"><div class="n">0</div><div class="l">Solved</div></div>
@@ -81,6 +84,12 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on cur" title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
         <div class="stage-label"><b>Stage 5 of 9</b> Request sent <span class="muted">· held by Archive</span></div>
       </div>
+      <dl class="wait">
+        <div><dt>Waiting on</dt><dd>A quote from National Records of Scotland for images of the five key sheets, GD406/1/2197</dd></div>
+        <div><dt>Since</dt><dd>19 Sept 2026</dd></div>
+        <div><dt>Expected</dt><dd>1 to 3 weeks for a quote; images some weeks after payment</dd></div>
+        <div><dt>What unblocks it</dt><dd>NRS replies. If they need depositor consent, that is a second wait. Fallback: John Wallis&#x27;s papers at the Bodleian.</dd></div>
+      </dl>
       <p class="next"><b>Next:</b> NRS to send a quote for images of the five key sheets. Then pay, then apply the key to the 102 groups.</p>
       <p class="note muted">Copy request emailed 19 Sept 2026. Cipher is 102 groups across four letters; unreadable without the key, which the catalogue lists as open. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/hamilton-1650">ciphers/hamilton-1650</a></p>
     </article>
@@ -94,6 +103,12 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on cur" title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
         <div class="stage-label"><b>Stage 5 of 9</b> Request sent <span class="muted">· held by Archive</span></div>
       </div>
+      <dl class="wait">
+        <div><dt>Waiting on</dt><dd>TNA staff page check of SP 105/65 (order 3660178), then their quote for the copy</dd></div>
+        <div><dt>Since</dt><dd>19 Sept 2026</dd></div>
+        <div><dt>Expected</dt><dd>Page check on a weekday, usually within 2 weeks; copy 2 to 4 weeks after payment</dd></div>
+        <div><dt>What unblocks it</dt><dd>TNA finds the 23 March 1702 entry. If they report no such entry, switch to SP 80/18 or the Stepney Papers at the BL.</dd></div>
+      </dl>
       <p class="next"><b>Next:</b> TNA staff page check (order 3660178, paid). They will quote for the copy of the letter-book entry, which should carry the 24 groups in clear.</p>
       <p class="note muted">Volume identified 19 Sept 2026 by a worker. If the entry is not in the letter-book, fall back to SP 80/18 or the Stepney Papers at the BL. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/stepney-manchester-1702">ciphers/stepney-manchester-1702</a></p>
     </article>
@@ -107,6 +122,12 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on cur" title="Verified unsolved"></span><span class="seg  " title="Ciphertext in hand"></span><span class="seg  " title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
         <div class="stage-label"><b>Stage 2 of 9</b> Verified unsolved <span class="muted">· held by Worker</span></div>
       </div>
+      <dl class="wait">
+        <div><dt>Waiting on</dt><dd>Nothing external. A worker is transcribing the 17 captured images</dd></div>
+        <div><dt>Since</dt><dd>19 Sept 2026</dd></div>
+        <div><dt>Expected</dt><dd>Tonight</dd></div>
+        <div><dt>What unblocks it</dt><dd>Transcription lands; then the dictionary edition has to be identified, which is research, not waiting.</dd></div>
+      </dl>
       <p class="next"><b>Next:</b> Worker saving the auction images and transcribing the code groups before the sale.</p>
       <p class="note muted">Queue rank 4. Peninsular War dictionary code; the job after transcription is to identify the pocket-dictionary edition. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/wellington-maitland-1812">ciphers/wellington-maitland-1812</a></p>
     </article>
@@ -120,6 +141,12 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div class="segs"><span class="seg on cur" title="Identified"></span><span class="seg  " title="Verified unsolved"></span><span class="seg  " title="Ciphertext in hand"></span><span class="seg  " title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
         <div class="stage-label"><b>Stage 1 of 9</b> Identified <span class="muted">· held by Worker</span></div>
       </div>
+      <dl class="wait">
+        <div><dt>Waiting on</dt><dd>Nothing external. A worker is checking print and the SP 91/5 catalogue</dd></div>
+        <div><dt>Since</dt><dd>19 Sept 2026</dd></div>
+        <div><dt>Expected</dt><dd>Tonight</dd></div>
+        <div><dt>What unblocks it</dt><dd>Worker reports. If unsolved, a TNA copy order follows, which is your click.</dd></div>
+      </dl>
       <p class="next"><b>Next:</b> Worker checking whether the despatches are already printed in the Sbornik, listing the SP 91/5 items catalogued undeciphered, and drafting the copy request.</p>
       <p class="note muted">Queue rank 2. A ciphered letter plus its deciphered duplicate may give the key. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/whitworth-1707">ciphers/whitworth-1707</a></p>
     </article>
@@ -133,6 +160,12 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div class="segs"><span class="seg on cur" title="Identified"></span><span class="seg  " title="Verified unsolved"></span><span class="seg  " title="Ciphertext in hand"></span><span class="seg  " title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
         <div class="stage-label"><b>Stage 1 of 9</b> Identified <span class="muted">· held by Orchestrator</span></div>
       </div>
+      <dl class="wait">
+        <div><dt>Waiting on</dt><dd>Its turn. Nobody is on it yet</dd></div>
+        <div><dt>Since</dt><dd>19 Sept 2026</dd></div>
+        <div><dt>Expected</dt><dd>Starts when the two running workers finish</dd></div>
+        <div><dt>What unblocks it</dt><dd>Orchestrator spawns a worker to pull one ledger and the cipher book.</dd></div>
+      </dl>
       <p class="next"><b>Next:</b> Pull one 1862 &#x27;telegrams sent&#x27; ledger and the cipher book from the Huntington&#x27;s digital library and read ten messages.</p>
       <p class="note muted">Queue rank 1 (38 of 39). English, online, with the code book beside it. No archive request needed. <span class="mono muted">no folder yet</span></p>
     </article>
@@ -146,6 +179,12 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on cur" title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
         <div class="stage-label"><b>Stage 4 of 9</b> Key source located <span class="muted">· held by Archive</span></div>
       </div>
+      <dl class="wait">
+        <div><dt>Waiting on</dt><dd>The British Library&#x27;s manuscript viewer, offline since the October 2023 cyber attack</dd></div>
+        <div><dt>Since</dt><dd>2023</dd></div>
+        <div><dt>Expected</dt><dd>Unknown. BL has restored services piecemeal</dd></div>
+        <div><dt>What unblocks it</dt><dd>BL images return, or a DECODE login plus BL permission. Meanwhile the Bodleian Tanner MSS route needs a copy order.</dd></div>
+      </dl>
       <p class="next"><b>Next:</b> British Library viewer offline since 2023. When it returns, order f. 11 and check Bodleian Tanner 59-60 for the contemporary decipher.</p>
       <p class="note muted">Aymeloglu identified the cipher as Digby&#x27;s captured key no. 129 and fixed about 45 values. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/intercepted-royalist-1646">ciphers/intercepted-royalist-1646</a></p>
     </article></div>

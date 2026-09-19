@@ -33,12 +33,22 @@ def target_row(t):
         <div class="segs">{segs}</div>
         <div class="stage-label"><b>Stage {t["stage"]} of {N}</b> {E(stages[t["stage"]-1])} <span class="muted">· held by {E(t["holder"])}</span></div>
       </div>
+      <dl class="wait">
+        <div><dt>Waiting on</dt><dd>{E(t["wait"]["on"])}</dd></div>
+        <div><dt>Since</dt><dd>{E(t["wait"]["since"])}</dd></div>
+        <div><dt>Expected</dt><dd>{E(t["wait"]["expected"])}</dd></div>
+        <div><dt>What unblocks it</dt><dd>{E(t["wait"]["unblock"])}</dd></div>
+      </dl>
       <p class="next"><b>Next:</b> {E(t["next"])}</p>
       <p class="note muted">{E(t["note"])} {folder}</p>
     </article>'''
 
 targets = "".join(target_row(t) for t in d["targets"])
 n_active = sum(1 for t in d["targets"] if t["state"] in ("waiting", "active"))
+from collections import Counter
+holders = Counter(t["holder"] for t in d["targets"] if t["state"] in ("waiting", "active"))
+holder_line = ", ".join(f"{v} with {k.lower()}" if k != "You" else f"{v} with you" for k, v in holders.items())
+n_blocked = sum(1 for t in d["targets"] if t["state"] == "blocked")
 n_requests = sum(1 for t in d["targets"] if t["stage"] == 5)
 n_you = sum(1 for t in d["targets"] if t["state"] == "you")
 n_solved = sum(1 for t in d["targets"] if t["state"] == "solved")
@@ -96,6 +106,9 @@ header .upd {{ color:var(--muted); }}
 .state-blocked .seg.on {{ background:var(--bad); }} .state-blocked .seg.cur {{ outline-color:var(--bad); }}
 .state-solved .seg.on {{ background:var(--good); }}
 .stage-label {{ font-size:0.9rem; margin-top:6px; }}
+.wait {{ margin:4px 0 0; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:6px 18px; padding:10px 12px; background:var(--ground); border-radius:4px; font-size:0.92rem; }}
+.wait div {{ display:grid; gap:2px; }} .wait dt {{ color:var(--muted); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; font-weight:600; }} .wait dd {{ margin:0; }}
+.tile .sub {{ font-size:0.85rem; margin-top:4px; }}
 .next {{ margin:0; }} .note {{ margin:0; font-size:0.92rem; }}
 .two {{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }} @media (max-width:760px) {{ .two {{ grid-template-columns:1fr; }} }}
 .panel {{ background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:16px 18px; }}
@@ -118,7 +131,7 @@ th, td {{ text-align:left; padding:7px 10px; border-bottom:1px solid var(--line)
   </header>
 
   <section class="tiles" aria-label="Summary">
-    <div class="tile"><div class="n">{n_active}</div><div class="l">Targets in motion</div></div>
+    <div class="tile"><div class="n">{n_active}</div><div class="l">Targets in motion</div><div class="sub muted">{E(holder_line)}; {n_blocked} blocked</div></div>
     <div class="tile"><div class="n">{n_requests}</div><div class="l">Archive requests out</div></div>
     <div class="tile"><div class="n">{n_you}</div><div class="l">Waiting on you</div></div>
     <div class="tile"><div class="n">{n_solved}</div><div class="l">Solved</div></div>
