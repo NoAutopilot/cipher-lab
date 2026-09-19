@@ -1,5 +1,5 @@
 {
-  "updated": "19 September 2026, 23:30 UTC",
+  "updated": "19 September 2026, 23:58 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -52,15 +52,15 @@
       "ref": "Spink lot 1184, sale 23 Sept 2026",
       "folder": "ciphers/wellington-maitland-1812",
       "stage": 7,
-      "state": "active",
-      "holder": "Worker",
-      "next": "A research worker is testing pocket-dictionary editions (Entick, Perry, Johnson in Miniature, Walker, Sheridan) against the 57 known code groups to find the one the code points into.",
-      "note": "Transcribed 19 Sept 2026: 73 code groups, 57 distinct, every one with its contemporary decipherment and Gurwood's printed text as a check. The letter itself is readable; what is unsolved is the code system: which dictionary edition, how the seven column letters work, and the null and key rule of the strip cipher. Tomokiyo, Hayes and Lasry published the partial scheme on 8 Sept 2026.",
+      "state": "you",
+      "holder": "You",
+      "next": "Two things only you can do, both before the sale on 23 Sept: (1) email Spink and ask whether lot 1184's 'box' or bound volumes include a pocket dictionary, since one was sent with the cipher; (2) run the HathiTrust full-view search from a browser (queries listed in DICTIONARY.md section 6), which is blocked for cloud sessions.",
+      "note": "Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick's 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item.",
       "wait": {
-        "on": "Nothing external. Dictionary identification is research against digitised books",
-        "since": "19 Sept 2026, 23:00 UTC",
-        "expected": "A few hours",
-        "unblock": "A candidate edition on which every known group lands on the right page and position. If none is online, the remaining candidates need a library."
+        "on": "Your email to Spink about a dictionary in the lot, and a HathiTrust search from a browser",
+        "since": "19 Sept 2026, 23:58 UTC",
+        "expected": "Spink replies within days; the sale is 23 Sept",
+        "unblock": "A dictionary in the lot would settle it at once. Otherwise a full-view HathiTrust copy that passes every constraint in codebook.tsv."
       }
     },
     {
@@ -123,8 +123,8 @@
     },
     {
       "title": "Research: Wellington 1812 dictionary edition",
-      "job": "Test pocket dictionaries against the 57 known code groups",
-      "state": "running"
+      "job": "57 dictionary editions tested, none matches; three near misses; report in DICTIONARY.md",
+      "state": "done"
     },
     {
       "title": "Archive Lookup + Transcription: Eckert Papers 1862",
@@ -223,6 +223,10 @@
     }
   ],
   "log": [
+    {
+      "when": "19 Sept, 23:58",
+      "what": "Wellington: dictionary search closed negative after 57 editions. Two asks for you before the 23 Sept sale: email Spink about a dictionary in the lot; HathiTrust search from a browser."
+    },
     {
       "when": "19 Sept, 23:26",
       "what": "Wellington transcription worker finished (pass A log pushed) and archived. Dictionary search continues."
