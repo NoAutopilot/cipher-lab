@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 19 September 2026, 22:05 UTC.
+Last updated: 19 September 2026, 22:25 UTC.
 
 ## How the sessions work
 
@@ -18,7 +18,10 @@ Last updated: 19 September 2026, 22:05 UTC.
 |---|---|---|---|---|
 | Charles II to Hamilton, 1650 | ciphers/hamilton-1650 | Copy request emailed to NRS 19 Sept 2026 for GD406/1/2197 (5 key sheets) | Wait for NRS quote; pay; when images arrive, commit them or paste them to the orchestrator for transcription and decoding | NRS, then you, then orchestrator |
 | Stepney to Manchester, 1702 | ciphers/stepney-manchester-1702 | Volume identified: TNA SP 105/65. Page-check order (£9.92) reached the form but TNA's account confirmation email never arrived | Fix the TNA account (spam, resend, check address), paste the text in REQUEST.md, add to basket, pay | You |
-| Everything else | see QUEUE.md | Waiting for the first scout run to rank them | Read QUEUE.md when the scout finishes | Orchestrator |
+| Wellington to Maitland, 1812 | ciphers/wellington-maitland-1812 (being created) | QUEUE rank 4. Auction lot at Spink, sale 23 Sept 2026; images may vanish after | Worker saving images and transcribing now | Worker |
+| Whitworth to Harley, 1707-08 | ciphers/whitworth-1707 (being created) | QUEUE rank 2. TNA SP 91/5 items catalogued undeciphered | Worker verifying items and drafting the copy request | Worker |
+| Eckert Papers, US Military Telegraph 1862-67 | none yet | QUEUE rank 1 (38/39). Huntington ledgers of coded telegrams with the cipher book online | Pull one ledger and the cipher book, read ten messages | Orchestrator, next |
+| Everything else | QUEUE.md | First scout run done 19 Sept 2026: 40 scored, 163 kept unscored, 40 dropped | Work down the queue | Orchestrator |
 
 ## Worker sessions
 
@@ -26,7 +29,9 @@ Last updated: 19 September 2026, 22:05 UTC.
 |---|---|---|---|
 | Stepney 1702: locate the SP 105 letter-book at TNA | Find the 1702 volume | Blocked by the old "Trusted" network policy; logged | Done, archive |
 | Stepney 1702: ... (retry with network) | Same, after the policy change | Found SP 105/65, record C3609655; REQUEST.md updated | Done, archive |
-| cipher-lab scout: first QUEUE.md run and Cryptiana refresh | Refresh the snapshot; build the ranked queue | Cryptiana unchanged. Queue in progress | Running |
+| cipher-lab scout: first QUEUE.md run and Cryptiana refresh | Refresh the snapshot; build the ranked queue | Cryptiana unchanged. QUEUE.md written: 40 scored, 163 unscored, 40 dropped | Done, archive |
+| Wellington 1812 cipher letter: save Spink lot 1184 images | Capture auction images before 23 Sept sale; transcribe | | Running |
+| Whitworth 1707-08 (TNA SP 91/5): verify items and draft the copy request | Search-print check; list items; REQUEST.md | | Running |
 
 ## Environment
 
