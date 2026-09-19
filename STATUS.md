@@ -20,7 +20,7 @@ Last updated: 19 September 2026, 22:30 UTC.
 | Charles II to Hamilton, 1650 | ciphers/hamilton-1650 | Copy request emailed to NRS 19 Sept 2026 for GD406/1/2197 (5 key sheets) | Wait for NRS quote; pay; when images arrive, commit them or paste them to the orchestrator for transcription and decoding | NRS, then you, then orchestrator |
 | Stepney to Manchester, 1702 | ciphers/stepney-manchester-1702 | TNA page check ordered and paid 19 Sept 2026, order 3660178, SP 105/65 | Wait for TNA's quote for the copy; pay; when the copy arrives, commit it or paste it to the orchestrator | TNA, then you |
 | Wellington to Maitland, 1812 | ciphers/wellington-maitland-1812 (being created) | QUEUE rank 4. Auction lot at Spink, sale 23 Sept 2026; images may vanish after | Worker saving images and transcribing now | Worker |
-| Whitworth to Harley, 1707-08 | ciphers/whitworth-1707 (being created) | QUEUE rank 2. TNA SP 91/5 items catalogued undeciphered | Worker verifying items and drafting the copy request | Worker |
+| Whitworth to Harley, 1707-08 | ciphers/whitworth-1707 | Verified 19 Sept 2026: plaintext of the SP 91/5 'undeciphered' items is in print (Sbornik IRIO 39 and 50) except one clause of f. 108. Copy request drafted for ff. 108, 106, 121 | Order the three items from REQUEST.md (about 10 images) | You |
 | Eckert Papers, US Military Telegraph 1862-67 | none yet | QUEUE rank 1 (38/39). Huntington ledgers of coded telegrams with the cipher book online | Pull one ledger and the cipher book, read ten messages | Orchestrator, next |
 | Everything else | QUEUE.md | First scout run done 19 Sept 2026: 40 scored, 163 kept unscored, 40 dropped | Work down the queue | Orchestrator |
 
@@ -32,7 +32,7 @@ Last updated: 19 September 2026, 22:30 UTC.
 | Archive Lookup: Stepney 1702 (done) | Same, after the policy change | Found SP 105/65, record C3609655; REQUEST.md updated | Done, archive |
 | Scout: queue builder (done) | Refresh the snapshot; build the ranked queue | Cryptiana unchanged. QUEUE.md written: 40 scored, 163 unscored, 40 dropped. Interrupted 22:15 UTC after it began attempting ciphers beyond its brief | Done, archive |
 | Image Capture + Transcription: Wellington 1812 | Capture auction images before 23 Sept sale; transcribe | | Running |
-| Archive Lookup: Whitworth 1707 | Search-print check; list items; REQUEST.md | | Running |
+| Archive Lookup: Whitworth 1707 | Search-print check; list items; REQUEST.md | Only one clause of SP 91/5/108 unread; ciphers/whitworth-1707 committed | Done, archive |
 
 ## Environment
 

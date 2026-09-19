@@ -30,7 +30,7 @@
    "competition": 3,
    "weight": 2,
    "next_step": "archive-request",
-   "next_step_detail": "Order TNA copies of SP 91/5 items 108, 163, 294, 298 and 300 (Discovery search 'undeciphered', SP 91/5) to recover the key from the 294/298 pair.",
+   "next_step_detail": "Verified 19 Sept 2026 (ciphers/whitworth-1707/NOTES.md): only one clause of SP 91/5/108 is unread; ff. 163, 298, 300 have deciphers at ff. 180, 294, 274, printed in Sbornik IRIO vols 39 and 50. Order TNA copies of ff. 108, 106 and 121 to recover the 1707 key (REQUEST.md).",
    "rationale": "The Discovery descriptions state that SP 91/5/298 is an undeciphered duplicate of the deciphered SP 91/5/294 (3 Oct 1708), which is known plaintext of the whole letter and makes the key recoverable with certainty; SP 106/7 holds Queen Anne's keys on DECODE as a cross-check. Nothing is online free: SP 91 is on State Papers Online (Gale paywall) or by copy order from Kew, so a transcription must come from ordered images. On no solver list or Cryptiana. Whitworth's despatches are already printed from deciphered copies in Sbornik IRIO vols 39 and 50, so the unread passages of /108 and /163 add to a known episode of the Great Northern War rather than changing it, and the 1707 letters may use a different cipher from 1708.",
    "total": 34,
    "year": "1707-1708",
@@ -38,7 +38,7 @@
    "sources": [
     "archives"
    ],
-   "folder": ""
+   "folder": "whitworth-1707"
   },
   {
    "name": "Intercepted royalist letters to Charles I and 'My Lord', 13 and 21 May 1646 (BL Add MS 72438 ff.9-10)",
