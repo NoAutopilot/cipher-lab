@@ -5,33 +5,42 @@ This route needs no key. Stepney's letter-books hold copies of his out-letters i
 
 ## Before sending
 
-1. Search Discovery (discovery.nationalarchives.gov.uk) for "SP 105" and narrow to the Vienna embassy
-   letter-books of 1701-1702. Bourdeau's note places Stepney's Vienna volumes around SP 105/60-66. Note the
-   exact piece reference whose date range covers March 1702; put it in the request.
-2. If Discovery does not resolve the folio, TNA's paid search or record copying service can locate it from the
-   date and addressee. Take the ordering route and prices from nationalarchives.gov.uk ("Order copies" or
-   "Record copying"), not from here.
+1. Piece identified on Discovery, 19 Sept 2026: **SP 105/65**, "Letter book(s) of George Stepney, envoy
+   extraordinary to the Holy Roman emperor", 1702 Jan-1702 Aug. Discovery record C3609655:
+   https://discovery.nationalarchives.gov.uk/details/r/C3609655 (open it and use "Order copies" / "Record
+   copying"; the piece is not digitised and has no item-level catalogue, so no folio can be quoted). The
+   neighbours, all with the same title, are SP 105/64 (1701 Oct-Dec) and SP 105/66 (1702 Sept-Dec). SP 105/61
+   (1701-1705) is a memoranda book on Sweden and Poland, not a letter-book. SP 105/60 is the only Stepney volume
+   catalogued to item level, and it stops in 1694.
+2. Take the ordering route and prices from nationalarchives.gov.uk ("Order copies" or "Record copying"), not
+   from here. Because the volume is not itemised, the request below asks for a paid search by date and
+   addressee if the copying team cannot find the entry from the description.
+3. Secondary TNA volume for the same period: SP 80/18, "George Stepney (Envoy Extraordinary)", 1702 Jan-June
+   (Discovery C5909986), the despatches as received in London. Manchester was Secretary of State from January
+   1702, so a copy or decipher of the letter may sit there if it was treated as official.
 
 ## The message
 
 ```
-Subject: Digital copy request: SP 105, Stepney letter-book, entry of 23 March 1702
+Subject: Digital copy request: SP 105/65, Stepney letter-book, entry of 23 March 1702
 
 Dear Record Copying team,
 
 I would like to order a digital copy of one entry from George Stepney's
 Vienna letter-book in SP 105 (Archives of British Legations), piece
-[SP 105/xx, from Discovery], covering March 1702.
+SP 105/65, "Letter book(s) of George Stepney, envoy extraordinary to the
+Holy Roman emperor", 1702 Jan-1702 Aug (Discovery reference C3609655).
 
 The entry I need is Stepney's letter to Charles Montagu, Earl of
-Manchester, dated Vienna, 23 March 1702 (New Style). The original received
+Manchester, dated Vienna, 23 March 1702 (New Style; 12 March 1702 Old Style, so the
+letter-book may head it 12/23 March). The original received
 letter, now at Yale (Osborn MSS fc37, Manchester papers, box 8 folder 40),
 contains two short passages in cipher that were never deciphered; the
 letter-book copy should carry them in clear. Please also copy the facing
 or adjacent pages if the entry runs over.
 
 If the folio cannot be identified from this description, please treat this
-as a request for a paid search of the March 1702 entries of that piece for
+as a request for a paid search of the March 1702 entries of SP 105/65 for
 a letter to the Earl of Manchester, and let me know the cost before
 proceeding.
 
@@ -56,3 +65,4 @@ Thank you,
 | Date | Action | Result |
 |---|---|---|
 | 2026-09-19 | Tried to browse SP 105 on TNA Discovery to fill in the piece reference | Not done: this session is network-restricted (discovery.nationalarchives.gov.uk and www.nationalarchives.gov.uk both blocked by the egress proxy, HTTP 403 on CONNECT), so the `[SP 105/xx, from Discovery]` placeholder remains and the lookup must be repeated from a session with web access |
+| 2026-09-19 | Browsed SP 105 on Discovery via the JSON API (series C13644, subseries "Correspondence and papers of Sir George Stepney" C69924, pieces SP 105/48-77 listed; details fetched for SP 105/61-67; children endpoint queried for SP 105/65) | Piece found: **SP 105/65**, "Letter book(s) of George Stepney, envoy extraordinary to the Holy Roman emperor", 1702 Jan-1702 Aug, record C3609655, not digitised, no item-level entries, so no folio for 23 March 1702 can be quoted. Placeholder in the draft replaced. SP 105/61 (1701-1705) is a memoranda book on Sweden and Poland; SP 105/62-64 cover Mar-Dec 1701, SP 105/66 Sept-Dec 1702. Also noted SP 80/18 (Stepney's despatches, 1702 Jan-June). The Discovery HTML page answered HTTP 202 (JavaScript challenge) to curl, so the "Order copies" button was not verified from here. No order placed. |
