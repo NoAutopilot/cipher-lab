@@ -42,12 +42,31 @@ A worker session does one job, pushes, reports in a short paragraph, and stops. 
 a cryptanalytic attempt, or a write-up that its brief did not name. The orchestrator updates `status.json`,
 `STATUS.md` and the published board after every worker report.
 
-## Network
+## Access playbook
 
-Cloud sessions in this project's environment may be unable to reach anything but GitHub. Test with
-`curl -sS -o /dev/null -w "%{http_code}" <url>` before planning web work; a `000` means blocked. Web search
-(the WebSearch tool) usually still works. Anything that needs a browser, a login, or a copy order is the
-person's job; write the exact request into `REQUEST.md` and stop.
+Getting the material is most of the work. Try routes in this order and record which one worked in NOTES.md:
+
+1. **A JSON API or plain URL with curl**, with a browser User-Agent (`-A "Mozilla/5.0"`). Gallica IIIF, TNA
+   Discovery's API, the Huntington's CONTENTdm API and the Internet Archive all serve this way.
+2. **A real browser.** Sites that answer curl with 403, 202, a JavaScript challenge or a Cloudflare page
+   (HathiTrust, PARES, Spink, TNA Discovery record pages, Yale) usually serve headless Chromium. Use
+   `NODE_PATH=$(npm root -g) node tools/browser_fetch.js URL out.html --shot out.png`, which drives the
+   Chromium bundled in this environment. It fills a search box with `--type "css=text"` and waits for
+   `--selector`. Read the saved HTML with `python3 tools/html2text.py` or the screenshot with the image reader.
+3. **Credentials from the environment.** Logins the person has set up are exposed as environment variables
+   (`DECODE_USER` and `DECODE_PASS` for de-crypt.org). Use them through the browser tool or a curl login flow.
+   Never print them, never write them to the repo.
+4. **The person.** Paywalls (State Papers Online, Gale), copy orders, payments, emails to archives and dealers,
+   and captchas the browser cannot pass. Write the exact request into the target's `REQUEST.md`, mark the
+   target "waiting on you" in the report, and stop. Batch several asks into one REQUEST.md rather than
+   stopping at the first.
+
+Test reachability before planning: `curl -sS -o /dev/null -w "%{http_code}" <url>`; `000` means the egress
+policy blocks it, in which case say so and stop, since no route above will help.
+
+Once a series is identified as useful (a ledger, a volume, a cipher book), fetch all of it once and record the
+manifest (URLs, ids, sizes) in the target folder, so later workers do not refetch. Keep committed images under
+30 MB per folder; for more, keep the manifest and a sample and note where the rest can be re-fetched.
 
 ## Git
 
