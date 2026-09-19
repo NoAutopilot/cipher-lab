@@ -55,4 +55,4 @@ Thank you,
 
 | Date | Action | Result |
 |---|---|---|
-| | | |
+| 2026-09-19 | Tried to browse SP 105 on TNA Discovery to fill in the piece reference | Not done: this session is network-restricted (discovery.nationalarchives.gov.uk and www.nationalarchives.gov.uk both blocked by the egress proxy, HTTP 403 on CONNECT), so the `[SP 105/xx, from Discovery]` placeholder remains and the lookup must be repeated from a session with web access |
