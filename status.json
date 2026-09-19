@@ -1,5 +1,5 @@
 {
-  "updated": "19 September 2026, 22:45 UTC",
+  "updated": "19 September 2026, 22:50 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -66,18 +66,18 @@
     {
       "name": "Charles Whitworth to Robert Harley",
       "year": "1707-08",
-      "ref": "TNA SP 91/5",
+      "ref": "TNA SP 91/5/108 (+ ff. 106, 121 for the key)",
       "folder": "ciphers/whitworth-1707",
-      "stage": 1,
-      "state": "active",
-      "holder": "Worker",
-      "next": "Worker drafted the notes and copy request but stopped before pushing; it has been woken to commit and push. Then the TNA order is your click.",
-      "note": "Queue rank 2. A ciphered letter plus its deciphered duplicate may give the key.",
+      "stage": 4,
+      "state": "you",
+      "holder": "You",
+      "next": "Decide whether one unread clause is worth about 10 images (roughly £30). If yes, order SP 91/5/108, 106 and 121 on Discovery using the message in ciphers/whitworth-1707/REQUEST.md.",
+      "note": "Worker result 19 Sept 2026: four of the five 'undeciphered' items are already in print (Sbornik vols 39 and 50) or deciphered in the same volume. Only one clause of f. 108 is unread, about the French mediation of 1707. The neighbours ff. 106 and 121 were deciphered in London, so their pages give the key. Low historical weight; cheap; certain to work.",
       "wait": {
-        "on": "Nothing external. A worker is checking print and the SP 91/5 catalogue",
+        "on": "Your decision and your click on the TNA order",
         "since": "19 Sept 2026",
-        "expected": "Tonight",
-        "unblock": "Worker reports. If unsolved, a TNA copy order follows, which is your click."
+        "expected": "Whenever you choose; TNA then takes 2 to 4 weeks",
+        "unblock": "Order placed. If you decide it is not worth it, mark it parked and it drops down the queue."
       }
     },
     {
@@ -123,8 +123,8 @@
     },
     {
       "title": "Archive Lookup: Whitworth 1707",
-      "job": "Search-print check, list SP 91/5 items, draft REQUEST.md",
-      "state": "running"
+      "job": "Found four of five 'undeciphered' items already in print; one clause of f. 108 unread; REQUEST.md ready",
+      "state": "done"
     },
     {
       "title": "Image Capture + Transcription: Wellington 1812",
@@ -213,6 +213,10 @@
     }
   ],
   "log": [
+    {
+      "when": "19 Sept, 22:50",
+      "what": "Whitworth: worker pushed. Only one clause of SP 91/5/108 is actually unread; copy request drafted for ff. 108, 106, 121. Needs your decision."
+    },
     {
       "when": "19 Sept, 22:35",
       "what": "Wellington: 17 auction images captured at full served size; transcription passes running."
