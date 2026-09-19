@@ -7,10 +7,11 @@ Last updated: 19 September 2026, 22:25 UTC.
 
 ## How the sessions work
 
-- **Orchestrator:** the Claude Code session titled "cipher-lab: orchestrator". Talk there and only there.
+- **Orchestrator:** the Claude Code session titled "Orchestrator". Talk there and only there.
 - **Workers:** sessions the orchestrator spawns for one job each, tagged `cipher-lab`, grouped under
-  "Cypher Cracking" in the sidebar. They push their result to this repo and report to the orchestrator.
-  You never need to open them. Archive them once their row below says done.
+  "Cypher Cracking" in the sidebar. Their titles are role first, then the target: "Archive Lookup: ...",
+  "Scout: ...", "Image Capture + Transcription: ...". They push their result to this repo and report to the
+  orchestrator. You never need to open them. Archive them once their row below says done.
 
 ## Targets
 
@@ -27,11 +28,11 @@ Last updated: 19 September 2026, 22:25 UTC.
 
 | Session title | Job | Result | State |
 |---|---|---|---|
-| Stepney 1702: locate the SP 105 letter-book at TNA | Find the 1702 volume | Blocked by the old "Trusted" network policy; logged | Done, archive |
-| Stepney 1702: ... (retry with network) | Same, after the policy change | Found SP 105/65, record C3609655; REQUEST.md updated | Done, archive |
-| cipher-lab scout: first QUEUE.md run and Cryptiana refresh | Refresh the snapshot; build the ranked queue | Cryptiana unchanged. QUEUE.md written: 40 scored, 163 unscored, 40 dropped | Done, archive |
-| Wellington 1812 cipher letter: save Spink lot 1184 images | Capture auction images before 23 Sept sale; transcribe | | Running |
-| Whitworth 1707-08 (TNA SP 91/5): verify items and draft the copy request | Search-print check; list items; REQUEST.md | | Running |
+| Archive Lookup: Stepney 1702 (blocked, done) | Find the 1702 volume | Blocked by the old "Trusted" network policy; logged | Done, archive |
+| Archive Lookup: Stepney 1702 (done) | Same, after the policy change | Found SP 105/65, record C3609655; REQUEST.md updated | Done, archive |
+| Scout: queue builder (done) | Refresh the snapshot; build the ranked queue | Cryptiana unchanged. QUEUE.md written: 40 scored, 163 unscored, 40 dropped. Interrupted 22:15 UTC after it began attempting ciphers beyond its brief | Done, archive |
+| Image Capture + Transcription: Wellington 1812 | Capture auction images before 23 Sept sale; transcribe | | Running |
+| Archive Lookup: Whitworth 1707 | Search-print check; list items; REQUEST.md | | Running |
 
 ## Environment
 
