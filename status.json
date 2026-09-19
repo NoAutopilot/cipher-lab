@@ -1,5 +1,5 @@
 {
-  "updated": "19 September 2026, 22:50 UTC",
+  "updated": "19 September 2026, 22:45 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -71,7 +71,7 @@
       "stage": 1,
       "state": "active",
       "holder": "Worker",
-      "next": "Worker checking whether the despatches are already printed in the Sbornik, listing the SP 91/5 items catalogued undeciphered, and drafting the copy request.",
+      "next": "Worker drafted the notes and copy request but stopped before pushing; it has been woken to commit and push. Then the TNA order is your click.",
       "note": "Queue rank 2. A ciphered letter plus its deciphered duplicate may give the key.",
       "wait": {
         "on": "Nothing external. A worker is checking print and the SP 91/5 catalogue",
@@ -84,17 +84,17 @@
       "name": "Eckert Papers, US Military Telegraph",
       "year": "1862-67",
       "ref": "Huntington mssEC 1-76",
-      "folder": "",
+      "folder": "ciphers/eckert-1862",
       "stage": 1,
-      "state": "queued",
-      "holder": "Orchestrator",
-      "next": "Pull one 1862 'telegrams sent' ledger and the cipher book from the Huntington's digital library and read ten messages.",
+      "state": "active",
+      "holder": "Worker",
+      "next": "Worker checking whether the Zooniverse 'Decoding the Civil War' project already decoded these ledgers, then pulling one 1862 ledger and the cipher book and reading ten telegrams.",
       "note": "Queue rank 1 (38 of 39). English, online, with the code book beside it. No archive request needed.",
       "wait": {
-        "on": "Its turn. Nobody is on it yet",
-        "since": "19 Sept 2026",
-        "expected": "Starts when the two running workers finish",
-        "unblock": "Orchestrator spawns a worker to pull one ledger and the cipher book."
+        "on": "Nothing external. A worker is on it",
+        "since": "19 Sept 2026, 22:40 UTC",
+        "expected": "Overnight",
+        "unblock": "Worker reports. If Zooniverse already decoded the volumes, the target becomes found-solved and the residue is what remains."
       }
     },
     {
@@ -116,6 +116,11 @@
     }
   ],
   "workers": [
+    {
+      "title": "Archive Lookup + Transcription: Eckert Papers 1862",
+      "job": "Check Zooniverse coverage; read ten coded telegrams with the cipher book",
+      "state": "running"
+    },
     {
       "title": "Archive Lookup: Whitworth 1707",
       "job": "Search-print check, list SP 91/5 items, draft REQUEST.md",
@@ -208,6 +213,14 @@
     }
   ],
   "log": [
+    {
+      "when": "19 Sept, 22:35",
+      "what": "Wellington: 17 auction images captured at full served size; transcription passes running."
+    },
+    {
+      "when": "19 Sept, 22:40",
+      "what": "Eckert Papers worker started (queue rank 1). Whitworth worker woken to push its drafted files."
+    },
     {
       "when": "19 Sept, 22:30",
       "what": "Stepney: TNA page check ordered and paid, order 3660178."
