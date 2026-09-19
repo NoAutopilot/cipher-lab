@@ -75,6 +75,22 @@ Both AI projects park items as "offline-only" the moment the next step is a copy
 
 The first row is the best single target in this whole document. One copy order, a known price, and a solve that has resisted since 1650.
 
+#### If you read only English
+
+The archive lane, ranked again with the plaintext language as a hard filter:
+
+| Rank | Item | Plaintext | Request | Folder |
+|---|---|---|---|---|
+| 1 | Charles II to Hamilton 1650 | English | NRS copy order for GD406/1/2197 | ciphers/hamilton-1650 |
+| 2 | Stepney to Manchester 1702 | English | TNA copy of the letter-book entry in SP 105 (gives the plaintext without a key) | ciphers/stepney-manchester-1702 |
+| 3 | Maurice to Rupert 1645 and the 1646 intercepts | English | Wait for the British Library viewer, or a DECODE login plus BL permission | ciphers/maurice-rupert-1645, ciphers/intercepted-royalist-1646 |
+| 4 | Torcy and Villars 1710 | French | Email Tomokiyo for the two dead transcription files | none yet |
+| 5 | Berthier 1812 | French | Interlibrary loan of Vilcoq 1969 | ciphers/berthier-napoleon-1812 |
+
+Rows 4 and 5 are still doable without French, because the AI does the reading and the crib for Berthier is
+already in print; but checking a French reading for sense is harder when you cannot read it, so they come after
+the English items.
+
 ### 2. Series with images online and keys nearby, in a language you read
 Aymeloglu's CATALOGUE.md and Bourdeau's catalogue of 194 open targets both point at the same untouched bodies:
 - **AGS Estado, Génova legajos 1383-1430 (1553-1600).** Dozens of ciphered letters a year from the Genoa embassy to Philip II, every one with images on PARES. Simancas keeps the Estado ciphers as a separate series, and a key found for one 1581 letter reads the forty-four beside it. Aymeloglu: "the largest homogeneous body of undeciphered-as-catalogued cipher in the sweep." Bourdeau has taken one PARES item (Toledo 1565) and nothing from this run.
