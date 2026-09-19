@@ -66,3 +66,21 @@ Thank you,
 |---|---|---|
 | 2026-09-19 | Tried to browse SP 105 on TNA Discovery to fill in the piece reference | Not done: this session is network-restricted (discovery.nationalarchives.gov.uk and www.nationalarchives.gov.uk both blocked by the egress proxy, HTTP 403 on CONNECT), so the `[SP 105/xx, from Discovery]` placeholder remains and the lookup must be repeated from a session with web access |
 | 2026-09-19 | Browsed SP 105 on Discovery via the JSON API (series C13644, subseries "Correspondence and papers of Sir George Stepney" C69924, pieces SP 105/48-77 listed; details fetched for SP 105/61-67; children endpoint queried for SP 105/65) | Piece found: **SP 105/65**, "Letter book(s) of George Stepney, envoy extraordinary to the Holy Roman emperor", 1702 Jan-1702 Aug, record C3609655, not digitised, no item-level entries, so no folio for 23 March 1702 can be quoted. Placeholder in the draft replaced. SP 105/61 (1701-1705) is a memoranda book on Sweden and Poland; SP 105/62-64 cover Mar-Dec 1701, SP 105/66 Sept-Dec 1702. Also noted SP 80/18 (Stepney's despatches, 1702 Jan-June). The Discovery HTML page answered HTTP 202 (JavaScript challenge) to curl, so the "Order copies" button was not verified from here. No order placed. |
+| 2026-09-19 | Order started on TNA Discovery: SP 105/65 page check (£9.92) form reached, details text prepared (see below) | Not completed: the TNA account confirmation email did not arrive. To resume: check spam, resend verification, verify the address, then paste the text and add to basket |
+
+## Text for the page-check form
+
+```
+Please locate and copy the entry for George Stepney's letter to Charles
+Montagu, Earl of Manchester, dated Vienna, 23 March 1702 (New Style; the
+letter-book may head it 12 March or 12/23 March 1702, Old Style). This is
+SP 105/65, Stepney's letter-book as envoy extraordinary at Vienna, January
+to August 1702. The letter opens "I am honoured with your letter of the
+10th past. This will come to the Hague by a courier of Count Wratislaw's"
+and mentions the Emperor's ratification of the article against the
+pretended Prince of Wales, and the expedition of Naples being laid aside.
+The received original at Yale has two short passages in cipher; the
+letter-book copy should carry them in clear. Please copy the whole entry
+and the facing or adjacent page if it runs over. Purpose: private
+historical research.
+```
