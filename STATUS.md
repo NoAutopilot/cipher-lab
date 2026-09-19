@@ -1,0 +1,35 @@
+# Status board
+
+One page, always current. The orchestrator session updates it after every worker reports. If you have lost
+track, read this first, then QUEUE.md for what comes next.
+
+Last updated: 19 September 2026, 22:05 UTC.
+
+## How the sessions work
+
+- **Orchestrator:** the Claude Code session titled "cipher-lab: orchestrator". Talk there and only there.
+- **Workers:** sessions the orchestrator spawns for one job each, tagged `cipher-lab`, grouped under
+  "Cypher Cracking" in the sidebar. They push their result to this repo and report to the orchestrator.
+  You never need to open them. Archive them once their row below says done.
+
+## Targets
+
+| Target | Folder | State | Next action | Whose |
+|---|---|---|---|---|
+| Charles II to Hamilton, 1650 | ciphers/hamilton-1650 | Copy request emailed to NRS 19 Sept 2026 for GD406/1/2197 (5 key sheets) | Wait for NRS quote; pay; when images arrive, commit them or paste them to the orchestrator for transcription and decoding | NRS, then you, then orchestrator |
+| Stepney to Manchester, 1702 | ciphers/stepney-manchester-1702 | Volume identified: TNA SP 105/65. Page-check order (£9.92) reached the form but TNA's account confirmation email never arrived | Fix the TNA account (spam, resend, check address), paste the text in REQUEST.md, add to basket, pay | You |
+| Everything else | see QUEUE.md | Waiting for the first scout run to rank them | Read QUEUE.md when the scout finishes | Orchestrator |
+
+## Worker sessions
+
+| Session title | Job | Result | State |
+|---|---|---|---|
+| Stepney 1702: locate the SP 105 letter-book at TNA | Find the 1702 volume | Blocked by the old "Trusted" network policy; logged | Done, archive |
+| Stepney 1702: ... (retry with network) | Same, after the policy change | Found SP 105/65, record C3609655; REQUEST.md updated | Done, archive |
+| cipher-lab scout: first QUEUE.md run and Cryptiana refresh | Refresh the snapshot; build the ranked queue | Cryptiana unchanged. Queue in progress | Running |
+
+## Environment
+
+- Cloud environment "Default" now has full network access (changed 19 Sept 2026). New sessions can reach
+  archives and Cryptiana. The original orchestrator container predates the change and cannot; it delegates.
+- Repo conventions: CLAUDE.md. Workflows: .claude/workflows/check-solved.js and scout.js.
