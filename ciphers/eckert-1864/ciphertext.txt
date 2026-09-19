@@ -1,0 +1,205 @@
+# Twenty entries from Huntington Library mssEC 19, "United States Military Telegraph, War Department. Sent"
+# (27 Jan 1864 - Dec 1865; Thomas T. Eckert Papers, Huntington Digital Library object 9302). Transcribed
+# 19 Sept 2026 from the page images in images/ (2583 px wide, IIIF) in two independent passes by subagents,
+# reconciled by the orchestrator against the page image with the Decoding the Civil War volunteer transcription
+# (2016-2017, on the item pages) as third witness (reading.md, "Reconciliation"). The first line of each block is
+# the ledger's own header (operator or addressee at the left, place and date at the right), then one manuscript
+# line per line, spelling and capitalisation as written; <del>..</del> struck through on the page, <ins>..</ins>
+# interlineation; word[?] = the witnesses disagree or the word is doubtful; " = " marks the clerk's syllable splits.
+# A line "plain: ..." is the orchestrator's note (read by decode.py) that those tokens are plain English although
+# the book prints them as code words. Block header: ### En | ledger page | CONTENTdm pointer | date and addressee.
+
+### E1 | Page 16 | 8908 | 5 Mar 1864, to 'Press' at Baltimore (operator Geo. W. Baldwin)
+Geo. W. Baldwin (1) Washn Mar 5th 1864
+Imogene, For, Prss, unity, This, morning, Walnut, raiders, questioned
+the      Wrangle office at Cherry Stone Point Zebra Please
+wick what whisky you have nearest that Station and
+where they are their number and disposition Yoke Brutus
+plain: Cherry
+
+### E2 | Page 16 | 8908 | 5 Mar 1864 7.40 PM, to 'Praise' at Baltimore (Baldwin)
+Geo W Baldwin (1) Washn Mar 5th 1864 7.40 Pm
+Minnie For Praise You have not answered my
+question Unity I am aware that Plank Counties
+of the nick and Saint Marys are attached
+to Knox Polka Zebra I asked you what
+was the nearest Salem you have to Cherry
+Stone the description & number Please answer that
+question Youth Infant How are you on press
+plain: question Saint Marys Cherry
+
+### E3 | Page 16 | 8908 | 6 Mar 1864 11.30 AM, to Grant at Louisville (Capt. Sam Bruch)
+Capt Sam Bruch ("1") Washn Mar 6th 1864 11.30 Am
+Grapes, March, Plague, Florence, for, Jupiter, Dolphin, unity, The,
+Brutus directs me to say to you that your
+com mission as Lieut Shelter is signed and will
+be delivered to you on your arrival at the
+War Quadroon Zebra I sincerely con grat u late
+you on this recog nition of your distinguished &
+merit or i ous services Yoke Ireland Sam same
+
+### E4 | Page 49 | 8941 | 21 Apr 1864 9.30 PM, to Butler, Fort Monroe (operator Geo. D. Sheldon)
+Geo D Sheldon Washn Apr 21st 1864 9.30 Pm
+Rosetta, For, Knox, Unity, If, you, can, Block
+the Channel Baden Sidney so she can not
+get in to Pamlico Sound we will have
+some Camels made in a few days to
+lighten the Tecumseh Iron Clad so she can
+Cross the Bar at Hatter = as Platina feet
+and Protect all Navy of Baden Smyrna Yoke
+Asst Brenton[?] Fox How are you brave youths
+plain: camels Fox youths
+
+### E5 | Page 49 | 8941 | 22 Apr 1864 10.45 AM, to Butler, Fort Monroe (Sheldon)
+Geo. D. Sheldon Washn D.C. Apr. 22nd 1864 10.45 Am
+Elizabeth, Harsh, Peach, For, Knave, Unity, Dispatch, of, last, night
+received I learn that there are Pension Waldo Spit here
+for Animal instead of Pebble Whips You have all the
+Whig and should send it up for them zebra Send
+also for a Purple Panama Spartan now at the Pacific
+queenly[?] here & ready to go to you Yoke Bender
+
+### E6 | Page 58 | 8950 | 26 Apr 1864, to Sherman, Nashville (operator F. S. Van Valkenburg)
+F. S. Van Valkenburg Washn D.C. Apr 26th 1864
+Growl , April, Harsh, Pledge, Imogene, For, Kitchen, Embrace, unity
+The third Antwerp Panama can be mounted at Gaul
+unity Its last orders were for girls where shall
+it go yoke Jacob Bates & Charlie are here
+
+### E7 | Page 68 | 8960 | 9 May 1864 9.30 PM, to Col. Biggs, Quartermaster, Fort Monroe (Sheldon)
+G. D. Sheldon Ft Monroe Washn May 9th 1864
+Growl Rosetta May Pony to Pandora Biggs Vincent Animal
+we need wayworn Power to tow barges & schooners
+with supplies & horses we have also about Plank
+promise person publish to Pebble purple spit to send
+to waylay Knave among them a veteran Whip of
+Nuptial send Weasel tow boats & also Weaselers[?] to
+Whimper these men up Bergen Do this immy Bender
+
+### E8 | Page 68 | 8960 | 11 May 1864, to 'Submit' at Baltimore (operator J. W. Sampson)
+J W Sampson Balto Washn May 11th 1864
+Jennie for Submit unity As soon as a Wharton of
+Abner Militia Wicks to you in Baptism you will send
+the Platina Amos Simms Nuptial Pandora Porter to this place
+to White to Shelby Augur for Wherry to the Opal
+of the Attica zodiac Notify Shelter Augur when it is
+ready to move sig Ireland
+
+### E9 | Page 78 | 8970 | 23 May 1864 10.30 AM, to 'Mackerel' at Cedar Creek (operator R. R. McCaine)
+R R McCane[?] Cedar Creek, Washn 1030 A M May 23d 1864
+Elizabeth Harsh perfume for Mackerel tulip Energetic and
+efficient Palsys are Scarce zebra Name any you
+want who are available and you shall have
+them zodiac Jupiter mangled last evening that Hemp
+had joined Hunter youth Ivory Gibson Lexington Loveday
+
+### E10 | Page 78 | 8970 | 26 May 1864, to Brig. Gen. Brayman, Cairo (operator W. T. Mason)
+W. T. Mason Washn May 26th 1864
+Growl May harsh Pledge Fanny For Palate[?] Brayman Bladder
+Shelter Wash burne wrangles that For rest[?] is collecting
+a large Panama salem at Buffet & Tupelo zebra
+Possibly he may Oil Buggy or Paducah a gain
+Pekin prepared for him yoke Jordan over the river
+
+### E11 | Page 89 | 8981 | 8 June 1864 6 PM, to Rosecrans, St Louis (operator Geo. H. Smith)
+Geo H Smith St Louis Washn June 8th 1864 6 Pm
+Growl June Platina Libby For Moon unity Yours of Hedge
+received zebra I am unable to conceive how a message
+can be less safe by the Express than by a
+Staff Officer zodiac If you send a verbal message the
+messenger is Plug additional person let in to the secret
+yoke Ingress guess he must be getting Crazy out there
+plain: person
+
+### E12 | Page 142 | 9035 | 4 Aug 1864 4.30 PM, to Col. Frank Wolford, Louisville (Capt. Sam Bruch)
+Capt Sam Bruch Washn Aug 4th 1864 4.30 Pm
+Growl Aug Pension Katy For Paradise Frank Wal ford
+Yours of yesterday received zebra Before interfering with the
+Judge Advocate Shelters order I should know his reasons
+for making it zodiac Mean while if you have
+not already started wait till you hear from me
+again zodiac Did you receive letter & inclosures from
+me Star Walrus Ingress Warm[?] & dear need rain
+
+### E13 | Page 142 | 9035 | 5 Aug 1864, to Hunter via Monocacy (operator McCaine)
+McCaine Monocacy. Washn Aug 5th 1864
+<del>Hawk[?]</del> Aug Plaster Emily For Mutton
+Keep me advised of your Tanners
+& those[?] torch Rome so that
+Nabob may know where to go
+to Swindle you yoke Jew Gentile
+
+### E14 | Page 142 | 9035 | 5 Aug 1864, to Sherman (operator C. G. Sholes)
+C.S. Sholes Washn Aug 5th 1864
+Growl Aug Plaster Emily For Knapsack unity
+Your request about Spartans from Gaul has
+been anticipated zebra Instead of Plank Promise
+on hand they will not be able
+to send you Plug Purple in less
+than a week zodiac The country is
+nearly exhausted of Panama Spaffords and unless
+there is a greater economy in their
+use the Spit must very soon go
+a foot youth Italy Whats matter now[?]
+
+### E15 | Page 176 | 9070 | 10 Sept 1864 11.30 AM, to A. J. Smith, Cairo (operator Geo. Gallup)
+Geo Gallup Cairo Washn 1130 am Sept 10th 64
+Florence Federal for Macbeth Bladder zebra John leaves
+the selection of your line of opr rations
+against Price Humbug & Co entirely to your
+own judgment zodiac Before deciding you had better
+consult with Moscow & others in regard tooth[?]
+assistance & cooper ration they can give you
+stop You will not wait for any further
+instructions but proceed at once to twinkle and
+opr rate against the rome walrus Jordan
+
+### E16 | Page 176 | 9070 | 10 Sept 1864 12 M, to Rosecrans, St Louis (Capt. Smith)
+Capt Smith St Louis Washn 12 m Sept 10th 1864
+Gertrude Federal for Moscow zebra Jupiter has
+directed <del>that</del> Maynard opr rate against Price
+& Co by such route as he
+may deem best he will consult with
+you , give him all the aid you
+can webster Benjamin that word is Loadstone
+
+### E17 | Page 213 | 9107 | 28 Oct 1864, to Reynolds and Steele in Arkansas (Capt. R. C. Clowry, St Louis)
+R C Clowry St Louis Mo 1 Washn Oct 28th 1864
+Growl Florence Oct Harrow Platina for Monster and Maroon
+in Arno zebra Price has been pickted and driven
+Nansy[?] of Saco Scott zodiac He will probably Warwick
+on Saco Gibson and Saco Smith Pekin He should
+be met and Pigeon unity His Oyster can be
+Piloted or questioned Yoke Ireland A special messenger will
+be sent with this from end of weather line
+youth Italy Hurry this through by very quickest route
+
+### E18 | Page 213 | 9107 | 28 Oct 1864 12 M, to Rosecrans, St Louis (Capt. Clowry)
+Capt ⌐ Clowry Washn Oct 28th 1864 12 m
+Grapes Francis Harsh Paddle for Moscow unity John thinks you
+can and ought to send whiff to assist Lady zebra
+The latter wishes that any you can spare should go
+up <del>the</del> Bethel Windsor if possible as far as Ripley
+port under convoy of Shannons unity Plate with him at
+Empress zebra I shall be absent from Growl for several
+days yoke Jacob How are you Mammy[?] duke & Cabill
+plain: duke
+
+### E19 | Page 244 | 9138 | 10 Dec 1864, to Thomas, Nashville (operator Glass)
+Glass Nashville Washn Decr 10th 1864
+Helen federal Lady zebra Its wicked that most torch
+pacific spartans sent to Mount Garrard quincy were used
+for other purposes and that harsh pension prolong panama
+spaffords have been issued at Lexington during the last
+month to newly twinkled Aurora squash whips stop Nearly
+plug third torch panama torch entire oyster is now
+dies mounted and the mounting of squash whips except
+in cases of great emergency is contrary to regulations
+and repeated orders zodiac It should immy cease and
+the officers who have done it without proper authority
+brought to account webster Jacob & so[?] it goes
+
+### E20 | Page 244 | 9138 | 10 Dec 1864, to Col. Winslow, Cairo (operator Mason)
+Mason Cairo Washn Decr 10th 1864
+Imogene feeble for Pandora Winslow Bladder zodiac All whist
+from Aragon must grotto Lantern till further orders Jew
