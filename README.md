@@ -6,6 +6,8 @@ S. Tomokiyo's site Cryptiana.
 ## Layout
 
     STATUS.md             the status board: every target, its state, the next action and whose it is
+    status.json           the same data, machine-readable; source for the published dashboard
+    dashboard.html        one-page board rendered from status.json by tools/build_dashboard.py
     CATALOG.md            every item from Cryptiana's index with status, shelfmark and source page
     LANDSCAPE.md          who is solving what (Sept 2026), corrected statuses, where the open ground is
     LESSONS.md            how the current solvers work, distilled from their repositories

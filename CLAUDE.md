@@ -36,6 +36,12 @@ session and every subagent, cloud or local.
 9. **Personal data stays out of the repo.** It is public. Log archive requests by date and archive, never with
    the sender's name, address or payment details.
 
+## Workers
+
+A worker session does one job, pushes, reports in a short paragraph, and stops. It never starts a new target,
+a cryptanalytic attempt, or a write-up that its brief did not name. The orchestrator updates `status.json`,
+`STATUS.md` and the published board after every worker report.
+
 ## Network
 
 Cloud sessions in this project's environment may be unable to reach anything but GitHub. Test with

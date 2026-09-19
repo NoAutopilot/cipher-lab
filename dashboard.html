@@ -1,0 +1,180 @@
+<title>Cipher Lab Board</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground:#F4F5F7; --surface:#FFFFFF; --ink:#1B2230; --muted:#5F6978; --line:#D9DEE6; --accent:#2F4BC7; --accent-soft:#E4E9FA;
+  --good:#1F8A4C; --good-soft:#E3F3E8; --warn:#A8690F; --warn-soft:#FBF0DC; --bad:#B42318; --bad-soft:#FCE4E1; --info:#2F4BC7; --info-soft:#E4E9FA; --idle:#6B7482; --idle-soft:#E9ECF0;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --ground:#11151C; --surface:#1A2029; --ink:#E7EAF0; --muted:#98A2B1; --line:#2A3240; --accent:#8EA2F5; --accent-soft:#232C48;
+  --good:#5CC98A; --good-soft:#173324; --warn:#E0A64A; --warn-soft:#3A2B10; --bad:#F08578; --bad-soft:#3F1B18; --info:#8EA2F5; --info-soft:#232C48; --idle:#98A2B1; --idle-soft:#242B36;
+} }
+:root[data-theme="dark"] {
+  --ground:#11151C; --surface:#1A2029; --ink:#E7EAF0; --muted:#98A2B1; --line:#2A3240; --accent:#8EA2F5; --accent-soft:#232C48;
+  --good:#5CC98A; --good-soft:#173324; --warn:#E0A64A; --warn-soft:#3A2B10; --bad:#F08578; --bad-soft:#3F1B18; --info:#8EA2F5; --info-soft:#232C48; --idle:#98A2B1; --idle-soft:#242B36;
+}
+body { background:var(--ground); color:var(--ink); font-family:"Source Sans 3", "Segoe UI", system-ui, sans-serif; font-size:16px; line-height:1.45; padding-block:24px 48px; padding-inline:clamp(16px, 4vw, 40px); }
+.wrap { max-width:1080px; margin-inline:auto; display:grid; gap:28px; }
+h1,h2,h3 { font-family:"Newsreader", Georgia, serif; font-weight:600; margin:0; text-wrap:balance; }
+h1 { font-size:2rem; } h2 { font-size:1.35rem; margin-bottom:12px; } h3 { font-size:1.2rem; }
+.mono { font-family:"JetBrains Mono", ui-monospace, Menlo, monospace; font-size:0.85em; }
+.muted { color:var(--muted); }
+a { color:var(--accent); text-decoration:none; } a:hover, a:focus-visible { text-decoration:underline; outline:none; }
+header { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px 24px; border-bottom:1px solid var(--line); padding-bottom:12px; }
+header .upd { color:var(--muted); }
+.tiles { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; }
+.tile { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:14px 16px; }
+.tile .n { font-family:"Newsreader", Georgia, serif; font-size:2.2rem; line-height:1; font-variant-numeric:tabular-nums; }
+.tile .l { color:var(--muted); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.06em; margin-top:6px; }
+.targets { display:grid; gap:14px; }
+.target { background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--idle); border-radius:6px; padding:16px 18px; display:grid; gap:8px; }
+.target.state-waiting { border-left-color:var(--warn); } .target.state-active { border-left-color:var(--info); } .target.state-blocked { border-left-color:var(--bad); } .target.state-solved { border-left-color:var(--good); } .target.state-you { border-left-color:var(--accent); }
+.t-head { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px; }
+.year { color:var(--muted); font-weight:500; font-size:0.9em; margin-left:6px; }
+.chip { font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; padding:3px 9px; border-radius:999px; white-space:nowrap; }
+.chip-waiting { background:var(--warn-soft); color:var(--warn); } .chip-active { background:var(--info-soft); color:var(--info); } .chip-queued { background:var(--idle-soft); color:var(--idle); } .chip-blocked { background:var(--bad-soft); color:var(--bad); } .chip-you { background:var(--accent-soft); color:var(--accent); } .chip-solved { background:var(--good-soft); color:var(--good); }
+.segs { display:grid; grid-template-columns:repeat(9, 1fr); gap:3px; margin-top:4px; }
+.seg { height:10px; border-radius:2px; background:var(--idle-soft); }
+.seg.on { background:var(--accent); } .seg.cur { outline:2px solid var(--accent); outline-offset:1px; }
+.state-waiting .seg.on { background:var(--warn); } .state-waiting .seg.cur { outline-color:var(--warn); }
+.state-blocked .seg.on { background:var(--bad); } .state-blocked .seg.cur { outline-color:var(--bad); }
+.state-solved .seg.on { background:var(--good); }
+.stage-label { font-size:0.9rem; margin-top:6px; }
+.next { margin:0; } .note { margin:0; font-size:0.92rem; }
+.two { display:grid; grid-template-columns:1fr 1fr; gap:24px; } @media (max-width:760px) { .two { grid-template-columns:1fr; } }
+.panel { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:16px 18px; }
+.workers, .log, .key { list-style:none; margin:0; padding:0; display:grid; gap:10px; }
+.workers li { display:grid; grid-template-columns:10px 1fr auto; gap:10px; align-items:start; }
+.dot { width:10px; height:10px; border-radius:50%; margin-top:6px; background:var(--idle); } .w-running .dot { background:var(--info); } .w-done .dot { background:var(--good); }
+.w-title { font-weight:600; } .w-state { font-size:0.78rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted); }
+.log li { display:grid; grid-template-columns:110px 1fr; gap:10px; } .when { white-space:nowrap; }
+.tablewrap { overflow-x:auto; } table { border-collapse:collapse; width:100%; font-size:0.95rem; }
+th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line); vertical-align:top; } th { color:var(--muted); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.05em; font-weight:600; }
+.num { font-variant-numeric:tabular-nums; white-space:nowrap; }
+.key { grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:6px 14px; font-size:0.9rem; } .k-num { display:inline-block; width:1.6em; color:var(--muted); font-variant-numeric:tabular-nums; }
+.how { font-size:0.95rem; }
+@media (prefers-reduced-motion: no-preference) { .seg { transition:background .2s; } }
+</style>
+<div class="wrap">
+  <header>
+    <div><h1>Cipher Lab Board</h1><div class="muted">Where every target stands, who holds it, and what happens next.</div></div>
+    <div class="upd">Updated 19 September 2026, 22:45 UTC</div>
+  </header>
+
+  <section class="tiles" aria-label="Summary">
+    <div class="tile"><div class="n">4</div><div class="l">Targets in motion</div></div>
+    <div class="tile"><div class="n">2</div><div class="l">Archive requests out</div></div>
+    <div class="tile"><div class="n">0</div><div class="l">Waiting on you</div></div>
+    <div class="tile"><div class="n">0</div><div class="l">Solved</div></div>
+  </section>
+
+  <section>
+    <h2>Targets</h2>
+    <div class="targets">
+    <article class="target state-waiting">
+      <div class="t-head">
+        <h3>Charles II to the Duke of Hamilton <span class="year">1650</span></h3>
+        <span class="chip chip-waiting">Waiting on archive</span>
+      </div>
+      <div class="t-ref mono">NRS GD406/1/2197</div>
+      <div class="pipe" role="img" aria-label="Stage 5 of 9: Request sent">
+        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on cur" title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 5 of 9</b> Request sent <span class="muted">· held by Archive</span></div>
+      </div>
+      <p class="next"><b>Next:</b> NRS to send a quote for images of the five key sheets. Then pay, then apply the key to the 102 groups.</p>
+      <p class="note muted">Copy request emailed 19 Sept 2026. Cipher is 102 groups across four letters; unreadable without the key, which the catalogue lists as open. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/hamilton-1650">ciphers/hamilton-1650</a></p>
+    </article>
+    <article class="target state-waiting">
+      <div class="t-head">
+        <h3>George Stepney to the Earl of Manchester <span class="year">1702</span></h3>
+        <span class="chip chip-waiting">Waiting on archive</span>
+      </div>
+      <div class="t-ref mono">TNA SP 105/65</div>
+      <div class="pipe" role="img" aria-label="Stage 5 of 9: Request sent">
+        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on cur" title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 5 of 9</b> Request sent <span class="muted">· held by Archive</span></div>
+      </div>
+      <p class="next"><b>Next:</b> TNA staff page check (order 3660178, paid). They will quote for the copy of the letter-book entry, which should carry the 24 groups in clear.</p>
+      <p class="note muted">Volume identified 19 Sept 2026 by a worker. If the entry is not in the letter-book, fall back to SP 80/18 or the Stepney Papers at the BL. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/stepney-manchester-1702">ciphers/stepney-manchester-1702</a></p>
+    </article>
+    <article class="target state-active">
+      <div class="t-head">
+        <h3>Wellington to General Maitland <span class="year">1812</span></h3>
+        <span class="chip chip-active">Worker on it</span>
+      </div>
+      <div class="t-ref mono">Spink lot 1184, sale 23 Sept 2026</div>
+      <div class="pipe" role="img" aria-label="Stage 2 of 9: Verified unsolved">
+        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on cur" title="Verified unsolved"></span><span class="seg  " title="Ciphertext in hand"></span><span class="seg  " title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 2 of 9</b> Verified unsolved <span class="muted">· held by Worker</span></div>
+      </div>
+      <p class="next"><b>Next:</b> Worker saving the auction images and transcribing the code groups before the sale.</p>
+      <p class="note muted">Queue rank 4. Peninsular War dictionary code; the job after transcription is to identify the pocket-dictionary edition. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/wellington-maitland-1812">ciphers/wellington-maitland-1812</a></p>
+    </article>
+    <article class="target state-active">
+      <div class="t-head">
+        <h3>Charles Whitworth to Robert Harley <span class="year">1707-08</span></h3>
+        <span class="chip chip-active">Worker on it</span>
+      </div>
+      <div class="t-ref mono">TNA SP 91/5</div>
+      <div class="pipe" role="img" aria-label="Stage 1 of 9: Identified">
+        <div class="segs"><span class="seg on cur" title="Identified"></span><span class="seg  " title="Verified unsolved"></span><span class="seg  " title="Ciphertext in hand"></span><span class="seg  " title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 1 of 9</b> Identified <span class="muted">· held by Worker</span></div>
+      </div>
+      <p class="next"><b>Next:</b> Worker checking whether the despatches are already printed in the Sbornik, listing the SP 91/5 items catalogued undeciphered, and drafting the copy request.</p>
+      <p class="note muted">Queue rank 2. A ciphered letter plus its deciphered duplicate may give the key. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/whitworth-1707">ciphers/whitworth-1707</a></p>
+    </article>
+    <article class="target state-queued">
+      <div class="t-head">
+        <h3>Eckert Papers, US Military Telegraph <span class="year">1862-67</span></h3>
+        <span class="chip chip-queued">Queued</span>
+      </div>
+      <div class="t-ref mono">Huntington mssEC 1-76</div>
+      <div class="pipe" role="img" aria-label="Stage 1 of 9: Identified">
+        <div class="segs"><span class="seg on cur" title="Identified"></span><span class="seg  " title="Verified unsolved"></span><span class="seg  " title="Ciphertext in hand"></span><span class="seg  " title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 1 of 9</b> Identified <span class="muted">· held by Orchestrator</span></div>
+      </div>
+      <p class="next"><b>Next:</b> Pull one 1862 &#x27;telegrams sent&#x27; ledger and the cipher book from the Huntington&#x27;s digital library and read ten messages.</p>
+      <p class="note muted">Queue rank 1 (38 of 39). English, online, with the code book beside it. No archive request needed. <span class="mono muted">no folder yet</span></p>
+    </article>
+    <article class="target state-blocked">
+      <div class="t-head">
+        <h3>Intercepted royalist letters <span class="year">1646</span></h3>
+        <span class="chip chip-blocked">Blocked</span>
+      </div>
+      <div class="t-ref mono">BL Add MS 72438 ff. 9-10</div>
+      <div class="pipe" role="img" aria-label="Stage 4 of 9: Key source located">
+        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on cur" title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 4 of 9</b> Key source located <span class="muted">· held by Archive</span></div>
+      </div>
+      <p class="next"><b>Next:</b> British Library viewer offline since 2023. When it returns, order f. 11 and check Bodleian Tanner 59-60 for the contemporary decipher.</p>
+      <p class="note muted">Aymeloglu identified the cipher as Digby&#x27;s captured key no. 129 and fixed about 45 values. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/intercepted-royalist-1646">ciphers/intercepted-royalist-1646</a></p>
+    </article></div>
+  </section>
+
+  <section class="panel">
+    <h2>The nine stages</h2>
+    <ul class="key"><li><span class="k-num">1</span>Identified</li><li><span class="k-num">2</span>Verified unsolved</li><li><span class="k-num">3</span>Ciphertext in hand</li><li><span class="k-num">4</span>Key source located</li><li><span class="k-num">5</span>Request sent</li><li><span class="k-num">6</span>Copies received</li><li><span class="k-num">7</span>Transcribed</li><li><span class="k-num">8</span>Reading attempted</li><li><span class="k-num">9</span>Solved</li></ul>
+    <p class="how muted">A target is <b>solved</b> only when one fixed key reads every group, unchanged, into coherent text that checks against the world: a name in cipher that also stands in clear, or a printed account of the same events. Anything less is reported as partial.</p>
+  </section>
+
+  <div class="two">
+    <section class="panel">
+      <h2>Workers</h2>
+      <ul class="workers"><li class="w-running"><span class="dot"></span><div><div class="w-title">Archive Lookup: Whitworth 1707</div><div class="muted">Search-print check, list SP 91/5 items, draft REQUEST.md</div></div><span class="w-state">running</span></li><li class="w-running"><span class="dot"></span><div><div class="w-title">Image Capture + Transcription: Wellington 1812</div><div class="muted">Save Spink lot images before 23 Sept, transcribe with two passes</div></div><span class="w-state">running</span></li><li class="w-done"><span class="dot"></span><div><div class="w-title">Scout: queue builder</div><div class="muted">Built QUEUE.md: 40 scored, 163 unscored, 40 dropped</div></div><span class="w-state">done</span></li><li class="w-done"><span class="dot"></span><div><div class="w-title">Archive Lookup: Stepney 1702</div><div class="muted">Found SP 105/65 on TNA Discovery</div></div><span class="w-state">done</span></li><li class="w-done"><span class="dot"></span><div><div class="w-title">Archive Lookup: Stepney 1702 (blocked)</div><div class="muted">First try, hit the old network policy</div></div><span class="w-state">done</span></li></ul>
+      <p class="how muted">Workers are sessions the orchestrator starts for one job each. They push to the repo, report, and stop. You never need to open them.</p>
+    </section>
+    <section class="panel">
+      <h2>Change log</h2>
+      <ul class="log"><li><span class="mono muted when">19 Sept, 22:30</span><span>Stepney: TNA page check ordered and paid, order 3660178.</span></li><li><span class="mono muted when">19 Sept, 22:15</span><span>Scout stopped after finishing the queue; it had begun attempting ciphers beyond its brief.</span></li><li><span class="mono muted when">19 Sept, 22:13</span><span>Two workers started: Wellington 1812 image capture, Whitworth 1707 lookup.</span></li><li><span class="mono muted when">19 Sept, 22:05</span><span>First scout run filed QUEUE.md: 40 scored, 163 kept unscored, 40 dropped.</span></li><li><span class="mono muted when">19 Sept, 21:14</span><span>Stepney: volume identified as SP 105/65 after the environment got network access.</span></li><li><span class="mono muted when">19 Sept, 20:15</span><span>Hamilton: copy request emailed to NRS for GD406/1/2197.</span></li><li><span class="mono muted when">19 Sept</span><span>Repo set up: catalogue, landscape, lessons, conventions, two workflows.</span></li></ul>
+    </section>
+  </div>
+
+  <section class="panel">
+    <h2>Queue, top of the ranking</h2>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Rank</th><th>Target</th><th>Year</th><th>Score</th><th>Next step</th></tr></thead>
+      <tbody><tr><td class="num">1</td><td>Eckert Papers, US Military Telegraph ledgers</td><td class="num">1862-67</td><td class="num"><b>38</b><span class="muted">/39</span></td><td>transcription</td></tr><tr><td class="num">2</td><td>Whitworth (Moscow) to Harley, SP 91/5</td><td class="num">1707-08</td><td class="num"><b>34</b><span class="muted">/39</span></td><td>archive request</td></tr><tr><td class="num">3</td><td>Intercepted royalist letters, Add MS 72438</td><td class="num">1646</td><td class="num"><b>34</b><span class="muted">/39</span></td><td>archive request</td></tr><tr><td class="num">4</td><td>Wellington to Maitland, Spink lot 1184</td><td class="num">1812</td><td class="num"><b>34</b><span class="muted">/39</span></td><td>transcription</td></tr><tr><td class="num">5</td><td>Charles II to Hamilton</td><td class="num">1650</td><td class="num"><b>33</b><span class="muted">/39</span></td><td>archive request</td></tr><tr><td class="num">6</td><td>Charles I to William Boswell, SP 106/5</td><td class="num">1628</td><td class="num"><b>30</b><span class="muted">/39</span></td><td>cryptanalysis</td></tr><tr><td class="num">7</td><td>Cornwallis Papers, American campaign, PRO 30/11</td><td class="num">1780-81</td><td class="num"><b>30</b><span class="muted">/39</span></td><td>search print</td></tr><tr><td class="num">8</td><td>Add MS 4136 correspondents to Cecil</td><td class="num">1559-67</td><td class="num"><b>30</b><span class="muted">/39</span></td><td>transcription</td></tr><tr><td class="num">17</td><td>Stepney to Manchester</td><td class="num">1702</td><td class="num"><b>27</b><span class="muted">/39</span></td><td>archive request</td></tr></tbody>
+    </table></div>
+    <p class="how muted">Score out of 39: language fit, material online, key lead, size, competition, historical weight. Full list with rationale in <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/QUEUE.md">QUEUE.md</a>.</p>
+  </section>
+</div>

@@ -1,0 +1,99 @@
+{
+  "updated": "19 September 2026, 22:45 UTC",
+  "stages": ["Identified", "Verified unsolved", "Ciphertext in hand", "Key source located", "Request sent", "Copies received", "Transcribed", "Reading attempted", "Solved"],
+  "targets": [
+    {
+      "name": "Charles II to the Duke of Hamilton",
+      "year": "1650",
+      "ref": "NRS GD406/1/2197",
+      "folder": "ciphers/hamilton-1650",
+      "stage": 5,
+      "state": "waiting",
+      "holder": "Archive",
+      "next": "NRS to send a quote for images of the five key sheets. Then pay, then apply the key to the 102 groups.",
+      "note": "Copy request emailed 19 Sept 2026. Cipher is 102 groups across four letters; unreadable without the key, which the catalogue lists as open."
+    },
+    {
+      "name": "George Stepney to the Earl of Manchester",
+      "year": "1702",
+      "ref": "TNA SP 105/65",
+      "folder": "ciphers/stepney-manchester-1702",
+      "stage": 5,
+      "state": "waiting",
+      "holder": "Archive",
+      "next": "TNA staff page check (order 3660178, paid). They will quote for the copy of the letter-book entry, which should carry the 24 groups in clear.",
+      "note": "Volume identified 19 Sept 2026 by a worker. If the entry is not in the letter-book, fall back to SP 80/18 or the Stepney Papers at the BL."
+    },
+    {
+      "name": "Wellington to General Maitland",
+      "year": "1812",
+      "ref": "Spink lot 1184, sale 23 Sept 2026",
+      "folder": "ciphers/wellington-maitland-1812",
+      "stage": 2,
+      "state": "active",
+      "holder": "Worker",
+      "next": "Worker saving the auction images and transcribing the code groups before the sale.",
+      "note": "Queue rank 4. Peninsular War dictionary code; the job after transcription is to identify the pocket-dictionary edition."
+    },
+    {
+      "name": "Charles Whitworth to Robert Harley",
+      "year": "1707-08",
+      "ref": "TNA SP 91/5",
+      "folder": "ciphers/whitworth-1707",
+      "stage": 1,
+      "state": "active",
+      "holder": "Worker",
+      "next": "Worker checking whether the despatches are already printed in the Sbornik, listing the SP 91/5 items catalogued undeciphered, and drafting the copy request.",
+      "note": "Queue rank 2. A ciphered letter plus its deciphered duplicate may give the key."
+    },
+    {
+      "name": "Eckert Papers, US Military Telegraph",
+      "year": "1862-67",
+      "ref": "Huntington mssEC 1-76",
+      "folder": "",
+      "stage": 1,
+      "state": "queued",
+      "holder": "Orchestrator",
+      "next": "Pull one 1862 'telegrams sent' ledger and the cipher book from the Huntington's digital library and read ten messages.",
+      "note": "Queue rank 1 (38 of 39). English, online, with the code book beside it. No archive request needed."
+    },
+    {
+      "name": "Intercepted royalist letters",
+      "year": "1646",
+      "ref": "BL Add MS 72438 ff. 9-10",
+      "folder": "ciphers/intercepted-royalist-1646",
+      "stage": 4,
+      "state": "blocked",
+      "holder": "Archive",
+      "next": "British Library viewer offline since 2023. When it returns, order f. 11 and check Bodleian Tanner 59-60 for the contemporary decipher.",
+      "note": "Aymeloglu identified the cipher as Digby's captured key no. 129 and fixed about 45 values."
+    }
+  ],
+  "workers": [
+    {"title": "Archive Lookup: Whitworth 1707", "job": "Search-print check, list SP 91/5 items, draft REQUEST.md", "state": "running"},
+    {"title": "Image Capture + Transcription: Wellington 1812", "job": "Save Spink lot images before 23 Sept, transcribe with two passes", "state": "running"},
+    {"title": "Scout: queue builder", "job": "Built QUEUE.md: 40 scored, 163 unscored, 40 dropped", "state": "done"},
+    {"title": "Archive Lookup: Stepney 1702", "job": "Found SP 105/65 on TNA Discovery", "state": "done"},
+    {"title": "Archive Lookup: Stepney 1702 (blocked)", "job": "First try, hit the old network policy", "state": "done"}
+  ],
+  "queue": [
+    {"rank": 1, "name": "Eckert Papers, US Military Telegraph ledgers", "year": "1862-67", "total": 38, "next": "transcription"},
+    {"rank": 2, "name": "Whitworth (Moscow) to Harley, SP 91/5", "year": "1707-08", "total": 34, "next": "archive request"},
+    {"rank": 3, "name": "Intercepted royalist letters, Add MS 72438", "year": "1646", "total": 34, "next": "archive request"},
+    {"rank": 4, "name": "Wellington to Maitland, Spink lot 1184", "year": "1812", "total": 34, "next": "transcription"},
+    {"rank": 5, "name": "Charles II to Hamilton", "year": "1650", "total": 33, "next": "archive request"},
+    {"rank": 6, "name": "Charles I to William Boswell, SP 106/5", "year": "1628", "total": 30, "next": "cryptanalysis"},
+    {"rank": 7, "name": "Cornwallis Papers, American campaign, PRO 30/11", "year": "1780-81", "total": 30, "next": "search print"},
+    {"rank": 8, "name": "Add MS 4136 correspondents to Cecil", "year": "1559-67", "total": 30, "next": "transcription"},
+    {"rank": 17, "name": "Stepney to Manchester", "year": "1702", "total": 27, "next": "archive request"}
+  ],
+  "log": [
+    {"when": "19 Sept, 22:30", "what": "Stepney: TNA page check ordered and paid, order 3660178."},
+    {"when": "19 Sept, 22:15", "what": "Scout stopped after finishing the queue; it had begun attempting ciphers beyond its brief."},
+    {"when": "19 Sept, 22:13", "what": "Two workers started: Wellington 1812 image capture, Whitworth 1707 lookup."},
+    {"when": "19 Sept, 22:05", "what": "First scout run filed QUEUE.md: 40 scored, 163 kept unscored, 40 dropped."},
+    {"when": "19 Sept, 21:14", "what": "Stepney: volume identified as SP 105/65 after the environment got network access."},
+    {"when": "19 Sept, 20:15", "what": "Hamilton: copy request emailed to NRS for GD406/1/2197."},
+    {"when": "19 Sept", "what": "Repo set up: catalogue, landscape, lessons, conventions, two workflows."}
+  ]
+}
