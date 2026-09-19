@@ -59,4 +59,5 @@ for raw in open("ciphertext.txt", encoding="utf-8"):
         def sub(mm):
             n = int(mm.group(1))
             return key.get(n, f"[{n}]")
-        print(f"{current:6} {re.sub(r'\[(\d+)\]', sub, body)}")
+        rendered = re.sub(r"\[(\d+)\]", sub, body)
+        print(f"{current:6} {rendered}")
