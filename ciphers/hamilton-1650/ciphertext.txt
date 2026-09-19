@@ -23,7 +23,7 @@
 
 31Aug  | Concerning
        | 331 288 198 196 6 190 22 58 135 256 58 256 380 55
-31Aug  | ... send to [A: 122 | C: 22] about it.   ... I refer you to [163]
+31Aug  | ... send to [122] about it (witness C reads [22]).   ... I refer you to [163]
 
 27Sep  | I have at last resolved that
        | 85 237 70 9 50 40 384 4 10 308 290 304
