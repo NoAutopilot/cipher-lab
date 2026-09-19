@@ -66,7 +66,10 @@ Thank you,
 |---|---|---|
 | 2026-09-19 | Tried to browse SP 105 on TNA Discovery to fill in the piece reference | Not done: this session is network-restricted (discovery.nationalarchives.gov.uk and www.nationalarchives.gov.uk both blocked by the egress proxy, HTTP 403 on CONNECT), so the `[SP 105/xx, from Discovery]` placeholder remains and the lookup must be repeated from a session with web access |
 | 2026-09-19 | Browsed SP 105 on Discovery via the JSON API (series C13644, subseries "Correspondence and papers of Sir George Stepney" C69924, pieces SP 105/48-77 listed; details fetched for SP 105/61-67; children endpoint queried for SP 105/65) | Piece found: **SP 105/65**, "Letter book(s) of George Stepney, envoy extraordinary to the Holy Roman emperor", 1702 Jan-1702 Aug, record C3609655, not digitised, no item-level entries, so no folio for 23 March 1702 can be quoted. Placeholder in the draft replaced. SP 105/61 (1701-1705) is a memoranda book on Sweden and Poland; SP 105/62-64 cover Mar-Dec 1701, SP 105/66 Sept-Dec 1702. Also noted SP 80/18 (Stepney's despatches, 1702 Jan-June). The Discovery HTML page answered HTTP 202 (JavaScript challenge) to curl, so the "Order copies" button was not verified from here. No order placed. |
-| 2026-09-19 | Order started on TNA Discovery: SP 105/65 page check (£9.92) form reached, details text prepared (see below) | Not completed: the TNA account confirmation email did not arrive. To resume: check spam, resend verification, verify the address, then paste the text and add to basket |
+| 2026-09-19 | Order started on TNA Discovery: SP 105/65 page check (£9.92) form reached, details text prepared (see below) | Paused for a while: the TNA account confirmation email was slow to arrive |
+| 2026-09-19 | **Page check ordered and paid.** TNA order number 3660178, item RC8529042, SP 105/65, £9.92, details text as below | Awaiting staff page check (weekdays); they will email a quote for the copy itself |
+| | Quote received | |
+| | Copy received | |
 
 ## Text for the page-check form
 
