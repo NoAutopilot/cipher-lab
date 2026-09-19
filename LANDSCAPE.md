@@ -17,6 +17,8 @@ Both AI-driven projects started in the second week of September 2026 after Vals 
 
 ## What this does to our catalogue
 
+**Snapshot check, 19 Sept 2026 (evening, cloud session):** `unsolved.htm` and the blog index were re-downloaded. The list page is byte-identical to the morning snapshot apart from line endings (the server now sends CRLF); rendered with `tools/html2text.py` the two versions have the same 1,077 lines and no section heading gained or lost a "Solved" marker. The blog index changed only in a Blogger session token. No catalogue row moves on this refresh.
+
 Every one of the eleven working folders in `ciphers/` has been attempted by Bourdeau, Aymeloglu or both. Corrected statuses:
 
 | Our folder | Status on 19 Sept 2026 | Source |
