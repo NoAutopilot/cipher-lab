@@ -180,3 +180,19 @@ found no dictionary named either.
 
 - 19 Sept 2026: no larger image exists online; the CDN's size parameters only pad, spink.com serves byte-identical
   files, and the auctionmobility catalogue API needs a client token.
+
+## Dictionary search, 19 Sept 2026
+
+Second pass, worker session, about two hours: 57 volumes tested against the page constraints of `codebook.tsv` by
+Google Books search-within (printed page numbers) and Internet Archive per-page OCR, full results in
+`DICTIONARY.md` and `dictionary_tests_2026-09-19.txt`, scripts in `tools/gbooks_search_within.py` and
+`tools/ia_djvu_headwords.py`. **Not found.** Five Entick settings (1766-1780, 1781-1783, 1782, 1784, 1786-1800)
+plus the 1812 settings, Perry (six settings), Scott 1807/1810, Fulton and Knight, Jones, Sheridan, Walker and two
+abridgments, Browne, Enfield, Fisher, Webster, Johnson's Miniature, and the English parts of Nugent, Vieyra and
+Bottarelli all fail. Near misses: Entick's 1782 setting has alphabet 14 and south 388 but runs on to youth 482;
+Entick 1786-1800 matches the tail (use 426, will 434, you 438) but is 23-34 pages early in the middle; Perry 1795
+matches the middle within a few pages but starts at p. 17 and ends at 455. Three inferences (grade I): the
+dictionary spells "Cipher"; its T-Z is compressed to half the usual length; the 41 body groups have positions
+1-23 only, so a column holds about 24 entries, a smaller format than Entick's 12mo. HathiTrust is unreachable
+from this environment (Cloudflare 403); Scott 1797/1799, Perry's 24mo 1810-1813, Jones 1800, the 1810 Walker
+abridgment, Dublin Entick reprints and Urban pp. 232-233 remain untested (list in `DICTIONARY.md` section 6).
