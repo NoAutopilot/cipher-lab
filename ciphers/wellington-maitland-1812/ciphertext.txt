@@ -51,3 +51,27 @@ v6: I have the honour to be Sir your most obed Servant. | Wellington
 # a ")"; the stroke through "State" on r4 is probably the crossbar of the t. "Arevalo" is written at the foot of
 # the recto below "I am", not in the run of text (Gurwood puts "will be to-morrow at Arevalo" in the text; the
 # clerk's line reads "and will be tomorrow at <run 2>"). "I am" is the catchword for the verso.
+#
+# Pass A (received after the first commit) against the reconciled reading. Same conventions:
+# r0  heading           A: "Villa Castin[?] / Sept.r 2d 1812", without "Hd Qrs". The place name and "Hd Qrs" are
+#                      clear at 4x (seg2, seg3); Gurwood heads the letter "Villa Castin". Kept.
+# r3  21z350{to rest}  A also read the interlinear as "forest". Kept "to rest" (see pass B entry).
+# r3  22n365{Sea}      A read two groups here, "22?y?00?{the?}/ 32n365{sea}", from the two sides of a tile boundary.
+#                      There is one group, 22n365, at 8x. A's recto count of 50 is therefore 49.
+# r3, r5 21l79{Cypher} A: "2?1?l79", a possible dot between 2 and 1. 8x: 21 with no dot; both occurrences and
+#                      22l79 (to cypher) on r5 give the sequence 21 cypher, 22 to cypher. Kept.
+# r7  3l219{I inclose} A read no interlinear word above 3l219 or 12l19; B and the third reading have "I inclose"
+#     12l19{another}   and "another" (small, cramped, above the groups); Gurwood "I enclose another". Kept.
+# r7  6l429{to use}    A: 5l?429. Kept 6l429 (see pass B entry).
+# r7  3z336{Quarters}  A: 33336, five glyphs, no letter identified. Kept 3z336.
+# r8  4y434{will}      A: 44434. The second glyph is the y of 4y434{will} on v5 (same group). Kept.
+# r8  run 1            A: jekfmbldnghcdxzkgfsdo (e at 2, g at 17). Kept jckfmbldnghcdxzkz?fsdo.
+# r8  run 2            A: jgnckfhbldmfgbcfdg (d at 17) with "Arevalo" as its reading; "Arevalo" is written below
+#                      the line, not above the run, and is the word at the foot (r10). Kept jgnckfhbldmfg?bcfxg{}.
+# v2  8y438{you}       A: 8y430. Kept 438 (same group as v1; Tomokiyo 8y438).
+# v5  20y346{to rejoin} A: "to resum". Kept "to rejoin" (Gurwood).
+# v5  13n151, 16l261   A: possibly 13m151, 16b261. 8x: n and l; Tomokiyo 13n151, 16l261. Kept.
+# v6  honour           A: honor. Not re-examined (clear text, no cipher bearing).
+#
+# Totals: pass B differed from the reconciled text at 14 spots, pass A at 13; 8 spots were raised by both. No
+# disagreement concerns a page number; the residual doubts are the two letters marked ? in the r8 runs.

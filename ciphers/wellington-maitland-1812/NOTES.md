@@ -108,7 +108,7 @@ table and Gurwood's text; the disagreements are listed at the foot of the file.
 | letter-cipher runs | 4 (17, 21, 18 and 7 letters) |
 | doubtful characters in the reconciled text | 2 (one letter in each of the two unread runs) |
 | pass B disagreements with the reconciled reading | 14 spots (listed at the foot of `ciphertext.txt`), all resolved at 8x or by the adjacent-entry logic; none changes a page number |
-| pass A | still running at the time of this commit; its disagreements will be added in a follow-up commit |
+| pass A disagreements with the reconciled reading | 13 spots (same list), including one phantom group produced by a tile boundary and two interlinear words it could not read; 8 spots were raised by both passes; none changes a page number |
 
 ## Readings, graded per token
 
