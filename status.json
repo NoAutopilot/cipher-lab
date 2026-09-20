@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 04:20 UTC",
+  "updated": "20 September 2026, 04:12 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -40,7 +40,7 @@
       "state": "waiting",
       "holder": "Archive",
       "next": "TNA staff page check (order 3660178, paid). They will quote for the copy of the letter-book entry, which should carry the 24 groups in clear.",
-      "note": "Volume identified 19 Sept 2026 by a worker. If the entry is not in the letter-book, fall back to SP 80/18 or the Stepney Papers at the BL.",
+      "note": "Volume identified 19 Sept 2026 by a worker. If the entry is not in the letter-book, fall back to SP 80/18 or the Stepney Papers at the BL. Blind six-source sweep 20 Sept 2026: offline-only confirmed, no solution anywhere.",
       "wait": {
         "on": "TNA staff page check of SP 105/65 (order 3660178), then their quote for the copy",
         "since": "19 Sept 2026",
@@ -76,7 +76,7 @@
       "state": "you",
       "holder": "You",
       "next": "Decide whether one unread clause is worth about 10 images (roughly £30). If yes, order SP 91/5/108, 106 and 121 on Discovery using the message in ciphers/whitworth-1707/REQUEST.md.",
-      "note": "Worker result 19 Sept 2026: four of the five 'undeciphered' items are already in print (Sbornik vols 39 and 50) or deciphered in the same volume. Only one clause of f. 108 is unread, about the French mediation of 1707. The neighbours ff. 106 and 121 were deciphered in London, so their pages give the key. Low historical weight; cheap; certain to work.",
+      "note": "Worker result 19 Sept 2026: four of the five 'undeciphered' items are already in print (Sbornik vols 39 and 50) or deciphered in the same volume. Only one clause of f. 108 is unread, about the French mediation of 1707. The neighbours ff. 106 and 121 were deciphered in London, so their pages give the key. Low historical weight; cheap; certain to work. Blind sweep 20 Sept 2026: no prior attempt found; open, narrowed to one clause of f.108.",
       "wait": {
         "on": "Your decision and your click on the TNA order",
         "since": "19 Sept 2026",
@@ -129,15 +129,15 @@
       "ref": "Univ. of Kansas, Spencer Research Library, MS P556 (page 3 largely in code, undeciphered)",
       "folder": "ciphers/stair-townshend-1710",
       "stage": 2,
-      "state": "active",
-      "holder": "Worker",
-      "next": "Verified 20 Sept 2026: KU catalogue confirms the item; six-source sweep found no solution; English plaintext likely. A worker is checking Graham's Annals of Stair (1875) and the Townshend papers for the letter in print before you order. If still needed: four TIFF scans from Kansas, about $20, three business days (REQUEST.md).",
+      "state": "you",
+      "holder": "You",
+      "next": "Print check done 03:55 UTC: the 27 Feb 1710 letter is not in Graham's Annals (1875), the HMC 11th Report or Marlborough's despatches, so the scans are needed. For you: order from Kansas per REQUEST.md, four TIFF images, about $20, three business days.",
       "note": "Recovery if another Stair letter carries the key; cryptanalysis only if enough cipher turns up. Two clear pages give cribs; one page of cipher is small, so the route is the same cipher in other Stair letters of 1710 (TNA SP 84, SP 87) with a contemporary decipher.",
       "wait": {
-        "on": "Worker (print check), then you (Kansas order, about $20)",
-        "since": "20 Sept 2026, 03:58 UTC",
-        "expected": "Print check under an hour",
-        "unblock": "The letter is not in print; you place the Kansas order from REQUEST.md."
+        "on": "You: the Kansas order (about $20)",
+        "since": "20 Sept 2026, 03:55 UTC",
+        "expected": "Three business days after ordering",
+        "unblock": "The four images arrive; a worker transcribes page 3 and hunts the key in SP 84 and SP 87."
       },
       "kind": "undecided"
     },
@@ -181,13 +181,13 @@
   "workers": [
     {
       "title": "Check Solved: blind six-source sweep of five board targets",
-      "job": "Hamilton confirmed offline-only, no solution anywhere; Stepney next",
+      "job": "Hamilton and Stepney offline-only confirmed, Whitworth open confirmed; Wellington and 1646 running",
       "state": "running"
     },
     {
       "title": "Print Check: Stair 1710 in Graham's Annals and the Townshend papers",
-      "job": "Free check before the Kansas order",
-      "state": "running"
+      "job": "Letter not in Graham 1875, HMC 11th Report or Marlborough despatches; Kansas order stands. $2",
+      "state": "done, archived"
     },
     {
       "title": "Scout: verify and file four proposed targets",
@@ -316,6 +316,10 @@
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 04:12",
+      "what": "Stair 1710: not in print; Kansas order is on you. Sweep: Stepney and Whitworth confirmed, no solution anywhere."
+    },
     {
       "when": "20 Sept, 04:20",
       "what": "Board: every target now carries a kind label (recovery, cryptanalysis, contribution) and finished work shows a \"Result so far\" line."
