@@ -188,6 +188,17 @@ Getting the material is most of the work. Try routes in this order and record wh
    never bulk; the account is for the person's own reading. Search-inside and the full-text API need no login.
    JSTOR: JSTOR_USER and JSTOR_PASS (set 20 Sept 2026) give 100 article reads a month for the verifier's
    scholarship checks; log the article and date in AUDIT.md and never print the credentials.
+   **DECODE (de-crypt.org) login, confirmed 20 Sept 2026:** plain CSRF-protected form POST, no client-side
+   password encryption despite the site's `ENCRYPTED_PASSWORD` flag (that flag is server-side hashing only;
+   checked the unminified `ewcore.js` behind its source map, no JS touches the password field). GET
+   `/decrypt-web/login`, read the `csrf_name`/`csrf_value` hidden-input pair, POST them plus `username` and
+   `password` back to the same URL with a cookie jar (`-c`/`-b`). A failed login re-renders the same login page
+   at HTTP 200 with `"IS_LOGGEDIN":false` embedded in the page's JSON, not a distinct status code or redirect
+   — that string is the only reliable success/failure signal. `tools/decode_fetch.sh RECORD_ID OUT_DIR`
+   implements this and then fetches `/decrypt-web/RecordsView/RECORD_ID` plus its attachments; it reads
+   `DECODE_USER`/`DECODE_PASS` from the environment and never echoes them. As of that date the credentials in
+   this environment were rejected ("Incorrect user name or password", confirmed by screenshot) — this is a
+   working flow, not a working login; do not retry it repeatedly against the live account (risk of lockout).
 4. **The person.** Paywalls (State Papers Online, Gale), copy orders, payments, emails to archives and dealers,
    and captchas the browser cannot pass. Write the exact request into the target's `REQUEST.md`, mark the
    target "waiting on you" in the report, and stop. Batch several asks into one REQUEST.md rather than
