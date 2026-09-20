@@ -88,7 +88,7 @@ entries, which are in the other cipher (section 2).
 
 Result: all twenty read cleanly from the book; the sixteen printed ones agree with the OR word for word apart
 from clerical slips and the times (the OR rounds or omits them; the ledger gives the half hour). Code-word
-tokens over the twenty entries: `python3 decode.py` prints the count; at commit it was H 294 plus the C/M rows
+tokens over the twenty entries: H 296, C 8, M 1, I 0 (`python3 decode.py` prints the count; the C and M tokens are the rows
 of key.md section 7 that appear in the entries (the addressee words Prss, Praise, Submit, Mackerel, Mutton; Hedge,
 Nansy, mangled; Brenton M). `python3 decode.py --check` regenerates the readings from ciphertext.txt and key.md
 and exits 1 if reading.md is stale. Per CLAUDE.md rule 4 this is an H reading: the meanings come from the key
