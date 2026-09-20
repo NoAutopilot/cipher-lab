@@ -61,7 +61,8 @@ session and every subagent, cloud or local.
    writes QUEUE.md. It never promotes to the board and never solves.
 2. **Check-solved** (`.claude/workflows/check-solved.js`) runs blind, six sources, on any queue item before it
    goes on the board, and again whenever a catalogue row may be stale. Its verdict goes into the target's
-   NOTES.md and sets stage 2, "Verified unsolved".
+   NOTES.md and sets stage 2, "Verified unsolved". Stage 2 is set only by a check-solved verdict, and no copy
+   order, payment or quote request goes on the person's card until the target is at stage 2 (20 Sept 2026).
 3. **Orchestrator** promotes to the board only after check-solved, at most a handful at a time, choosing by
    score and by the three kinds together, so the board always carries at least one recovery and one
    cryptanalysis candidate and never fills with editions.

@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 06:12 UTC",
+  "updated": "20 September 2026, 14:45 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -128,16 +128,16 @@
       "year": "1710",
       "ref": "Univ. of Kansas, Spencer Research Library, MS P556 (page 3 largely in code, undeciphered)",
       "folder": "ciphers/stair-townshend-1710",
-      "stage": 2,
-      "state": "you",
-      "holder": "You",
-      "next": "Print check done 03:55 UTC: the 27 Feb 1710 letter is not in Graham's Annals (1875), the HMC 11th Report or Marlborough's despatches, so the scans are needed. For you: order from Kansas per REQUEST.md, four TIFF images, about $20, three business days.",
+      "stage": 1,
+      "state": "active",
+      "holder": "Worker",
+      "next": "HOLD the order until the blind six-source sweep reports (started 14:45 UTC). Print check done 03:55 UTC: the 27 Feb 1710 letter is not in Graham's Annals (1875), the HMC 11th Report or Marlborough's despatches, so the scans are needed. For you: order from Kansas per REQUEST.md, four TIFF images, about $20, three business days.",
       "note": "Recovery if another Stair letter carries the key; cryptanalysis only if enough cipher turns up. Two clear pages give cribs; one page of cipher is small, so the route is the same cipher in other Stair letters of 1710 (TNA SP 84, SP 87) with a contemporary decipher.",
       "wait": {
-        "on": "You: the Kansas order (about $20)",
-        "since": "20 Sept 2026, 03:55 UTC",
-        "expected": "Three business days after ordering",
-        "unblock": "The four images arrive; a worker transcribes page 3 and hunts the key in SP 84 and SP 87."
+        "on": "Check-solved sweep (worker), then you",
+        "since": "20 Sept 2026, 14:45 UTC",
+        "expected": "About an hour",
+        "unblock": "A sweep verdict of open or offline-only sets stage 2; only then does the order go on your card."
       },
       "kind": "undecided"
     },
@@ -146,16 +146,16 @@
       "year": "1659-60",
       "ref": "BL Add MS 32093 f.423 (Malet collection), \"partly in cipher, undeciphered. Imperfect.\"",
       "folder": "ciphers/monck-1660",
-      "stage": 2,
-      "state": "you",
-      "holder": "You",
-      "next": "Verified 20 Sept 2026: BL catalogue confirms the item; no solution found by the sweep; English plaintext near-certain. For you: ask BL Imaging Services for a quote for f.423 (REQUEST.md); a Reader Pass may be required, so ask whether they will quote remotely.",
+      "stage": 1,
+      "state": "active",
+      "holder": "Worker",
+      "next": "HOLD the order until the blind six-source sweep reports (started 14:45 UTC). Verified 20 Sept 2026: BL catalogue confirms the item; no solution found by the sweep; English plaintext near-certain. For you: ask BL Imaging Services for a quote for f.423 (REQUEST.md); a Reader Pass may be required, so ask whether they will quote remotely.",
       "note": "Key leads: Monck's correspondence with Clarges and Hyde in the Clarendon State Papers and Thurloe. HMC 5th and 7th Reports describe the collection and can be checked in print first.",
       "wait": {
-        "on": "You: one email to BL Imaging Services for a quote",
-        "since": "20 Sept 2026, 03:58 UTC",
-        "expected": "BL quotes are slow since 2023",
-        "unblock": "A quote and a scan of f.423."
+        "on": "Check-solved sweep (worker), then you",
+        "since": "20 Sept 2026, 14:45 UTC",
+        "expected": "About an hour",
+        "unblock": "A sweep verdict of open or offline-only sets stage 2; only then does the order go on your card."
       },
       "kind": "undecided"
     },
@@ -164,21 +164,41 @@
       "year": "18th c.",
       "ref": "National Library of Scotland MS.20769: \"Unidentified text, apparently 18th century, written in cipher\"; 57 leaves, oblong quarto and octavo; genre \"Ciphers. Codes.\"",
       "folder": "ciphers/nls-20769",
-      "stage": 2,
-      "state": "you",
-      "holder": "You",
-      "next": "Catalogue record read first-hand 04:32 UTC (Wayback capture of the NLS page; the live site still throws a Cloudflare challenge even with the browser fix). Confirmed: 57 leaves, cipher alphabet of Roman and Greek letters, astrological and invented symbols, text divided into sections, a name \"Baptiste Romin or Romain\" pencilled on ff. 27-28, deposited 1949 by the Society of Antiquaries of Scotland, language undetermined. For you: decide on scans. At GBP 1.80 per A4 scan, 57 leaves both sides is roughly GBP 100-200; REQUEST.md suggests asking NLS for a quote and for a sample of a few leaves first.",
+      "stage": 1,
+      "state": "active",
+      "holder": "Worker",
+      "next": "HOLD the order until the blind six-source sweep reports (started 14:45 UTC). Catalogue record read first-hand 04:32 UTC (Wayback capture of the NLS page; the live site still throws a Cloudflare challenge even with the browser fix). Confirmed: 57 leaves, cipher alphabet of Roman and Greek letters, astrological and invented symbols, text divided into sections, a name \"Baptiste Romin or Romain\" pencilled on ff. 27-28, deposited 1949 by the Society of Antiquaries of Scotland, language undetermined. For you: decide on scans. At GBP 1.80 per A4 scan, 57 leaves both sides is roughly GBP 100-200; REQUEST.md suggests asking NLS for a quote and for a sample of a few leaves first.",
       "note": "Size is the point: 57 leaves of a genuine cipher is far above unicity for a homophonic system. Risk, still open: the cataloguer's genre tag is not proof it is a cipher rather than a private notation. A sample of five leaves would settle that before the full order.",
       "wait": {
-        "on": "You: ask NLS for a quote and a five-leaf sample (REQUEST.md)",
-        "since": "20 Sept 2026, 04:32 UTC",
-        "expected": "NLS reprographics answer in one to two weeks",
-        "unblock": "Sample images; a worker classifies the symbol system and decides whether to order the rest."
+        "on": "Check-solved sweep (worker), then you",
+        "since": "20 Sept 2026, 14:45 UTC",
+        "expected": "About an hour",
+        "unblock": "A sweep verdict of open or offline-only sets stage 2; only then does the order go on your card."
       },
       "kind": "cryptanalysis"
     }
   ],
   "workers": [
+    {
+      "title": "DECODE Access: first login; record 8725 and Boswell R413",
+      "job": "Login flow into the playbook; what \"Decrypted\" on f.104 rests on; Boswell key",
+      "state": "running"
+    },
+    {
+      "title": "Print Check: Burnet 1677 and CSP Foreign 22 with the Google Books key",
+      "job": "Hamilton and Cobham 1588 checks that hit the quota last night",
+      "state": "running"
+    },
+    {
+      "title": "Access Test + Print Check: Internet Archive lending",
+      "job": "First IA loan; HMC Hamilton 1932, Grant Papers vol. 10, Saberton Cornwallis",
+      "state": "running"
+    },
+    {
+      "title": "Check Solved: Stair 1710, Monck 1660, NLS MS 20769 (workflow)",
+      "job": "Blind six-source sweep before any order is placed",
+      "state": "running"
+    },
     {
       "title": "Print Check: free key hunts for Hamilton, 1646, Monck",
       "job": "No printed decipher or key for Hamilton, the 1646 intercepts or Monck; Burnet 1677 and Google Books unchecked (quota); archive orders remain the route. $4",
@@ -343,6 +363,10 @@
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 14:45",
+      "what": "Rule tightened: no order goes on the owner's card until the blind sweep sets stage 2. Stair, Monck and NLS 20769 moved back to stage 1 while their sweep runs. Four workers running on the new credentials (DECODE, Google Books, Internet Archive)."
+    },
     {
       "when": "20 Sept, 06:12",
       "what": "Free work done: no printed key for Hamilton, 1646 or Monck; three queue items shown already in print and dropped; queue re-ranked with kinds (top: 1646 intercepts, Wellington, Hamilton). All workers archived."
