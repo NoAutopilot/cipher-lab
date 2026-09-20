@@ -137,7 +137,7 @@ item 113 (Add MS 32093 f.423) turned up in the HMC 5th or 7th Report's Malet-col
 Clarendon State Papers vol.4, Thurloe vol.7's Jan-Feb 1660 pages, or Nicholas Papers vol.4. This does not
 change REQUEST.md; the BL Imaging Services order for f.423 remains the only route to a transcription.
 
-## Check-solved sweep, date unknown
+## Check-solved sweep, 20 Sept 2026
 
 Six independent searchers were run against the claim already on file (scout check, 20 Sept 2026: web search,
 Cryptiana snapshot, solver repos — no relevant hit; DECODE checked only by an indirect web search, not logged
