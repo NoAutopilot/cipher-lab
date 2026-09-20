@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 20 September 2026, 00:05 UTC
+Last updated: 20 September 2026, 03:10 UTC
 
 ## How the sessions work
 
@@ -21,7 +21,7 @@ Last updated: 20 September 2026, 00:05 UTC
 | Stepney to Manchester, 1702 | ciphers/stepney-manchester-1702 | TNA page check ordered and paid 19 Sept 2026, order 3660178, SP 105/65 | Wait for TNA's quote for the copy; pay; when the copy arrives, commit it or paste it to the orchestrator | TNA, then you |
 | Wellington to Maitland, 1812 | ciphers/wellington-maitland-1812 | Transcribed 19 Sept 2026. Dictionary search: 57 editions tested, none matches (DICTIONARY.md). HathiTrust pass running from a real browser since 20 Sept 00:02 UTC | Worker: HathiTrust searches. You, before 23 Sept: email Spink asking whether lot 1184 includes a pocket dictionary | Worker, then you |
 | Whitworth to Harley, 1707-08 | ciphers/whitworth-1707 | Verified 19 Sept 2026: plaintext of the SP 91/5 'undeciphered' items is in print (Sbornik IRIO 39 and 50) except one clause of f. 108. Copy request drafted for ff. 108, 106, 121 | Order the three items from REQUEST.md (about 10 images) | You |
-| Eckert Papers, US Military Telegraph 1862-67 | ciphers/eckert-1862, ciphers/eckert-1864 | Pilot 1 done 19 Sept: Zooniverse transcribed but never decoded; ten 1862 telegrams read at grade C. Pilot 2 done 20 Sept 00:00 UTC: cipher book mssEC 41 transcribed in full; twenty 1864 entries of mssEC 19 read at grade H (296 H, 8 C, 1 M), four of them telegrams the Official Records never printed. About 550 more entries readable the same way | Worker | Worker |
+| Eckert Papers, US Military Telegraph 1862-67 | ciphers/eckert-1862, ciphers/eckert-1864 | Pilot 1 done 19 Sept: Zooniverse transcribed but never decoded; ten 1862 telegrams read at grade C. Pilot 2 done 20 Sept 00:00 UTC: cipher book mssEC 41 transcribed in full; twenty 1864 entries of mssEC 19 read at grade H (296 H, 8 C, 1 M), four not found in OR ser. I vols 32-45; whether they are in print elsewhere is under adversarial audit (verifier session, 03:07 UTC). About 550 more entries readable the same way | Verifier | Verifier |
 | Everything else | QUEUE.md | First scout run done 19 Sept 2026: 40 scored, 163 kept unscored, 40 dropped | Work down the queue | Orchestrator |
 
 ## Worker sessions
@@ -34,8 +34,9 @@ Last updated: 20 September 2026, 00:05 UTC
 | Image Capture + Transcription: Wellington 1812 | Capture auction images before 23 Sept sale; transcribe | 17 images, full transcription, pass A log pushed | Done, archived |
 | Research: Wellington 1812 dictionary edition | Test pocket dictionaries against the 57 code groups | 57 tested, not found, three near misses; pushed 466cf27 | Done, archived |
 | Archive Lookup + Transcription: Eckert Papers 1862 | Zooniverse coverage check; read ten telegrams | Pushed 2d54f06: never decoded by Zooniverse; ten 1862 entries read at grade C | Done, archived |
-| Transcription + Reading: Eckert 1864 ledger with Cipher No. 1 | Twenty 1864 entries at grade H | Pushed 045fbe2: all twenty read cleanly (296 H, 8 C, 1 M, 0 I); four are unprinted telegrams | Finishing a sweep for seven missing words |
-| Access: HathiTrust dictionary search via browser (Wellington 1812) | Test tools/browser_fetch.js; run the DICTIONARY.md section 6 searches | | Running (started 00:02 UTC) |
+| Verifier: prior-art audit of four Eckert 1864 telegrams | Disprove the "not printed" claim; N0-N5 class per message; correct wording; CLAUDE.md rule 10 | | Running (started 03:07 UTC) |
+| Transcription + Reading: Eckert 1864 ledger with Cipher No. 1 | Twenty 1864 entries at grade H | Pushed 045fbe2: all twenty read cleanly (296 H, 8 C, 1 M, 0 I); four not found in the OR volumes checked | Interrupted 03:06 UTC; result pushed |
+| Access: HathiTrust dictionary search via browser (Wellington 1812) | Test tools/browser_fetch.js; run the DICTIONARY.md section 6 searches | Never ran: five-hour usage limit at 00:03 UTC | To re-run |
 | Archive Lookup: Whitworth 1707 | Search-print check; list items; REQUEST.md | Only one clause of SP 91/5/108 unread; ciphers/whitworth-1707 committed | Done, archive |
 
 ## Environment

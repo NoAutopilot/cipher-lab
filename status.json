@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 00:05 UTC",
+  "updated": "20 September 2026, 03:10 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -54,11 +54,11 @@
       "stage": 7,
       "state": "active",
       "holder": "Worker",
-      "next": "Worker running the HathiTrust searches from a real browser (first test of tools/browser_fetch.js): Scott 1797/1799, Fulton and Knight, Jones 1800, Perry 24mo, Walker abridgment 1810, Entick 1785/1789 and Dublin reprints. Still for you: ask Spink whether lot 1184 includes a dictionary, before the 23 Sept sale.",
+      "next": "HathiTrust worker never started: it hit the five-hour usage limit at 00:03 UTC (limit reset 03:00). To be re-run after the audit. Still for you: ask Spink whether lot 1184 includes a dictionary, before the 23 Sept sale.",
       "note": "Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick's 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item.",
       "wait": {
-        "on": "Worker (HathiTrust pass); then you (Spink question)",
-        "since": "20 Sept 2026, 00:02 UTC",
+        "on": "Usage limit (worker to be restarted), then you (Spink question)",
+        "since": "20 Sept 2026, 00:03 UTC",
         "expected": "One to two hours for the worker",
         "unblock": "A dictionary edition whose page and line positions match the 57 code groups."
       }
@@ -87,14 +87,14 @@
       "folder": "ciphers/eckert-1862",
       "stage": 8,
       "state": "active",
-      "holder": "Worker",
-      "next": "Second pilot done 00:00 UTC: twenty 1864 entries read at grade H from the cipher book (296 H tokens, 8 C, 1 M, 0 I); four of them are telegrams the Official Records never printed. Follow-up under consideration: the headquarters cipher (mssEC 47-48, Cipher No. 2) for the Beckwith and Kimber entries.",
-      "note": "First pilot 19 Sept: Zooniverse transcribed all 12,921 pages but decoded nothing; ten Feb 1862 entries read at grade C. Second pilot 19-20 Sept: mssEC 41 (Cipher No. 1) transcribed in full (830 arbitraries, routes, numerals), twenty March-December 1864 entries of mssEC 19 read cleanly; sixteen agree with the Official Records word for word, four are unprinted (Fox to Butler 21 Apr, Meigs to Butler 22 Apr, Halleck to Sherman 26 Apr, Lincoln to Wolford 4 Aug). About 550 more entries of mssEC 19 can now be read the same way. See ciphers/eckert-1864/.",
+      "holder": "Verifier",
+      "next": "Prior-art audit running (03:07 UTC): a separate verifier session is trying to disprove the claim that four of the twenty readings are unpublished. Until it reports, the only safe statement is \"not found in Official Records series I, vols 32-45, by date and phrase\". Expect most or all four to be in print elsewhere (Butler Correspondence 1917, Collected Works of Lincoln, ORN).",
+      "note": "First pilot 19 Sept: Zooniverse transcribed all 12,921 pages but decoded nothing; ten Feb 1862 entries read at grade C. Second pilot 19-20 Sept: mssEC 41 (Cipher No. 1) transcribed in full (830 arbitraries, routes, numerals), twenty March-December 1864 entries of mssEC 19 read cleanly; sixteen agree with the Official Records word for word, four were not found in Official Records ser. I vols 32-45 (Fox to Butler 21 Apr, Meigs to Butler 22 Apr, Halleck to Sherman 26 Apr, Lincoln to Wolford 4 Aug). About 550 more entries of mssEC 19 can now be read the same way. See ciphers/eckert-1864/.",
       "wait": {
-        "on": "Nothing external. Worker finishing a sweep of the sister cipher books for seven missing addressee words",
-        "since": "20 Sept 2026, 00:00 UTC",
-        "expected": "Under an hour",
-        "unblock": "Worker pushes and stops; then decide on the Cipher No. 2 follow-up."
+        "on": "Verifier session (prior-art audit); the 1864 reading worker was interrupted at 03:06 UTC with its result already pushed",
+        "since": "20 Sept 2026, 03:07 UTC",
+        "expected": "One to two hours",
+        "unblock": "AUDIT.md with an N0-N5 novelty class per message and corrected wording in NOTES.md and reading.md."
       }
     },
     {
@@ -117,14 +117,19 @@
   ],
   "workers": [
     {
+      "title": "Verifier: prior-art audit of four Eckert 1864 telegrams",
+      "job": "Try to disprove the \"not printed\" claim; classify each message N0-N5; correct repo wording; add rule 10 to CLAUDE.md",
+      "state": "running"
+    },
+    {
       "title": "Access: HathiTrust dictionary search via browser (Wellington 1812)",
       "job": "Test browser_fetch.js on HathiTrust, then run the section 6 searches from DICTIONARY.md",
-      "state": "running"
+      "state": "failed at usage limit, to re-run"
     },
     {
       "title": "Transcription + Reading: Eckert 1864 ledger with Cipher No. 1",
       "job": "Twenty 1864 entries read at grade H (296 H, 8 C, 1 M); four unprinted telegrams; pushed 045fbe2",
-      "state": "finishing"
+      "state": "interrupted 03:06 UTC (result pushed)"
     },
     {
       "title": "Research: Wellington 1812 dictionary edition",
@@ -229,8 +234,16 @@
   ],
   "log": [
     {
+      "when": "20 Sept, 00:03-03:00",
+      "what": "All workers stopped by the five-hour usage limit; HathiTrust worker never ran."
+    },
+    {
+      "when": "20 Sept, 03:07",
+      "what": "Eckert 1864: novelty claim for four telegrams sent to a verifier session for adversarial audit. \"Not in the Official Records\" had been read as \"new\"; that was an over-claim."
+    },
+    {
       "when": "20 Sept, 00:00",
-      "what": "Eckert 1864: twenty ledger entries read at grade H from cipher book mssEC 41; four are telegrams never printed in the Official Records."
+      "what": "Eckert 1864: twenty ledger entries read at grade H from cipher book mssEC 41; four not found in the Official Records volumes checked (novelty unverified)."
     },
     {
       "when": "20 Sept, 00:02",
