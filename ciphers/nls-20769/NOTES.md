@@ -174,7 +174,7 @@ if pressed, since a genre tag alone does not settle "Is it actually a cipher?" a
 and worth the roughly £100-200+ (unconfirmed, 57 leaves at NLS's per-scan rates quoted above) full-manuscript
 scan order — but that order should wait for the person's go-ahead, since no reproduction has been ordered here.
 
-## Check-solved sweep, date unknown
+## Check-solved sweep, 20 Sept 2026
 
 Six independent check-solved sweeps run 20 Sept 2026, blind to one another, covering every family named in
 CLAUDE.md rule 1 plus the extra families this target's brief called out (Cipherbrain's book lists read
