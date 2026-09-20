@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 03:58 UTC",
+  "updated": "20 September 2026, 04:05 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -87,15 +87,15 @@
       "ref": "Huntington mssEC 15 (1862); mssEC 19 ledger with cipher book mssEC 41 (1864)",
       "folder": "ciphers/eckert-1862",
       "stage": 9,
-      "state": "queued",
-      "holder": "Nobody",
-      "next": "Parked. The key test settled the last open question: the headquarters entries are Cipher No. 2, and the Huntington's book mssEC 47 reads them at grade H (key-no2.md, reading-no2.md). Every cipher in the 1864 ledger now reads from a surviving book, so there is no cryptanalysis left here. A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve; not started.",
+      "state": "waiting",
+      "holder": "Archive",
+      "next": "Parked for cryptanalysis (every cipher in the ledger reads from a surviving book). An enquiry went to the Huntington curator on 20 Sept 2026 asking whether a corpus-level decoding dataset exists and whether one would be useful; their reply decides whether the mechanical corpus pass is run as an edition project.",
       "note": "Twenty 1864 entries read at grade H from cipher book mssEC 41; seventeen agree word for word with the Official Records, one with the printed Lincoln works, two (E4, E5) not found in the sources listed in AUDIT.md. Corpus question (AUDIT.md section 12): no one has mapped the ledger entries to cipher, key, plaintext and print; the project's decoding phase was never launched (paused Jan 2018, ended July 2019). A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve.",
       "wait": {
-        "on": "Nothing. Parked by the orchestrator, 20 Sept 2026, 03:58 UTC",
-        "since": "20 Sept 2026, 03:58 UTC",
-        "expected": "Not scheduled",
-        "unblock": "A decision to run the corpus pass as an edition project."
+        "on": "The Huntington (curator reply to the 20 Sept enquiry)",
+        "since": "20 Sept 2026",
+        "expected": "One to three weeks",
+        "unblock": "A reply saying no such dataset exists and it would be useful; then a capped corpus pass over the volunteer transcriptions with decode.py and decode_no2.py."
       }
     },
     {
@@ -305,6 +305,10 @@
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 04:05",
+      "what": "Eckert: enquiry sent to the Huntington curator about a corpus-level decoding dataset; the reply decides the corpus pass."
+    },
     {
       "when": "20 Sept, 03:44",
       "what": "Hamilton: blind six-source sweep found no solution or key anywhere; offline-only confirmed."

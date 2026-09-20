@@ -199,3 +199,13 @@ cipher and could settle the [25B] alignment and the "[?]" readings of key-no2.md
 transcription pass of mssEC 47 (the three readings against the print are the only control on the 1,482 rows),
 and the seven other Beckwith/Kimber/Caldwell candidates of the 19 Sept selection.
 
+
+## 9. Enquiry to the holding library (20 Sept 2026)
+
+An email was sent on 20 Sept 2026 to the Huntington curator who ran Decoding the Civil War, describing the
+mssEC 19 / mssEC 41 pilot (twenty entries, a machine-readable cipher book, a decoder, readings checked
+against the Official Records) and asking whether a corpus-level dataset mapping the coded telegrams to
+cipher, key, plaintext and provenance was ever completed internally or since; if not, whether building one
+systematically would be useful. The repository was offered. A reply from the archive is the only route to
+N5 for anything in this folder and is the decision point for the corpus pass (section 5, AUDIT.md section 12).
+Log the reply here by date; no personal data (rule 9).
