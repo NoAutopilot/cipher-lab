@@ -1,7 +1,10 @@
 # Wellington to Lieut.-General Frederick Maitland, Villa Castin, 2 September 1812
 
-**Status: open** (dictionary code with a contemporary decipherment; the code system and the dictionary edition are
-what remain to be recovered). Written 19 Sept 2026.
+**Status: partial** (dictionary code with a contemporary decipherment matching Gurwood's printed clear text
+word-for-word at grade C; the dictionary-code scheme and one strip-cipher key were already published by Patrick
+Hayes and George Lasry before Tomokiyo's article, which adds two more strip keys; the dictionary edition and the
+strip-cipher null/permutation rule remain to be recovered). Written 19 Sept 2026; status changed from `open` to
+`partial` 20 Sept 2026, see "Check-solved sweep" below.
 
 ## What it is
 
@@ -210,3 +213,107 @@ Wesley 1764. **All fail**; best is Jones 1805 with a maximum residual of 54 page
 "Perry 24mo 1810-1813" and "Walker abridgment 1810" of the 19 Sept list turn out to be American printings and an 1836
 edition. Details, corrections and what remains in `DICTIONARY.md` section 8; raw output in
 `dictionary_tests_2026-09-20-hathitrust.txt`. Status unchanged: open; dictionary edition still unidentified.
+
+## Check-solved sweep, 20 Sept 2026
+
+Six independent search passes (check-solved skill), run before continuing the campaign, per CLAUDE.md rule 1.
+
+### 1. Web search + WebFetch blind sweep
+
+Checked 15 queries covering the target's name, shelfmark, Tomokiyo's article title, "solved"/"undeciphered",
+Cipherbrain, DECODE and the two solver repositories, plus a live WebFetch of Tomokiyo's article and blog post.
+Confirms Tomokiyo's article (https://cryptiana.web.fc2.com/code/maitland.htm, posted 8 Sept 2026, last modified
+19 Sept 2026) is exactly the partial decipherment already recorded in this file: dictionary-code format
+(page/column/entry, e.g. `134A18`), "Key 1" for the strip cipher credited to Patrick Hayes (Spink's expert) and
+George Lasry, Keys 2-3 added by Tomokiyo, one previously-undeciphered strip run resolved as "Vila Castin" (with
+Gemini's help). Live quote: "The indication of these nulls as well as the indication of the permutation of the
+five strips remain to be discovered." The companion Cryptiana blog post
+(https://cryptiana.blogspot.com/2026/09/wellingtons-codecipher-during.html) corroborates. No other independent
+solution, key or documented attempt found anywhere else on the open web: Cipherbrain- and DECODE-targeted
+searches returned nothing specific; the two solver repositories returned nothing specific; a Schneier on
+Security post that surfaced for "Wellington Maitland cipher solved" concerns an unrelated c.1653 cipher and is a
+false-positive lead, ruled out.
+
+### 2. Internet Archive full text, Gurwood vol. 9 (two independent IA copies)
+
+Fetched and grepped the full OCR text of both `dispatchesoffie09welluoft` (1834-39 printing) and
+`vol9dispatchesof00well` (1838 printing). Confirms the despatch is printed in full clear English prose in both
+copies (pp. 388-389 and pp. 392-393 respectively), word-for-word consistent with what this file already records
+under "Printed clear text," including the sentence naming the cipher itself ("As the cipher sent by the
+Secretary of State is deficient as affording no means of spelling words, I propose to use that which I sent to
+Lord William Bentinck...") and "Head quarters are this day at Villa Castin, and will be to-morrow at Arevalo."
+No occurrence of the letter, "Villa Castin," or any code-group-shaped token found outside these two printings.
+**Unchecked, not negative:** HathiTrust's catalogue web UI returned HTTP 403 to curl from this environment and
+was not searched directly; its Bibliographic API is reachable but does not do full-text search. The
+Supplementary Despatches and any Historical Manuscripts Commission/Camden Society Wellington volumes were
+checked only via WebSearch snippets, which found no specific match, not by opening or full-text-searching the
+volumes themselves.
+
+### 3. Community-list sweep (Cryptiana, Cipherbrain, Cipher Mysteries, MysteryTwister, r/codes)
+
+Live-fetched Tomokiyo's `maitland.htm`, his blog post and its comment thread, and his `unsolved.htm` index.
+New detail beyond what this file already had: Tomokiyo's own comment on his blog post (9 Sept 2026, quoted in
+full) states that *before* his article, Spink's own lot page already carried an analysis by Patrick Hayes
+("an expert who works with the auction house," thanking "cryptanalyst George Lasry for providing his
+expertise") that had *already* established the full scheme of the dictionary code, associated it with Scovell
+(citing Urban), identified the strip-cipher substitution Tomokiyo calls "Key 1," and quoted relevant letters —
+i.e. the core decipherment and Scovell attribution are Hayes/Lasry's, predating and prompting Tomokiyo's write-up,
+which he explicitly credits. Also new: this item does **not** appear on Tomokiyo's own "Unsolved Historical
+Ciphers" index page (`unsolved.htm`) — it is filed only as a standalone article, not among his listed open
+targets. **Unchecked, not negative:** Cipherbrain (cipherbrain.de / scienceblogs.de/klausis-krypto-kolumne),
+Cipher Mysteries, MysteryTwister and r/codes returned no hits for site-restricted WebSearch queries, but none of
+the four sites could be fetched directly in this environment (TLS error, connection blocked, HTTP 406, HTTP 403
+respectively), so this is a search-index-only absence, not a check against those sites' own search or full
+comment sections.
+
+### 4. DECODE database (de-crypt.org), queried live
+
+Site and its quick-search endpoint (`RecordsList?cmd=search&search=<term>`) are reachable (HTTP 200) and the
+search mechanism was sanity-checked as functional. No record for Wellington, Maitland, Frederick Maitland,
+Villa Castin, Alicante, Spink, sale 26066, Scovell, "Duke of Wellington," or "Peninsular" ("No records found"
+for every such query). The only queries returning any hits (1812, 1184, Bentinck) matched unrelated records: a
+15th-century Aragon cipher, a Charles V/Milan cipher, two blank-field key records, and a distinct Napoleonic
+French-side cluster naming Marmont, Suchet and the Duc de Bassano. Corroborates this file's prior 19 Sept 2026
+DECODE search with a fresh, direct query. Closed-negative.
+
+### 5. github.com/dbourdeau/cyphersolver
+
+Fresh shallow clone. No target folder, no docs page, and no mention of Wellington, Maitland, Scovell, Villa
+Castin or Alicante in README.md, TARGETS.md, SOLVED_CATALOGUE.md, CATALOGUE.md, SOLVED_RANKING.md or
+`docs/search.json`. The only repo-wide "Maitland" hits (2, both in `urquhart/NOTES.md` and `docs/urquhart.html`)
+refer to the unrelated 19th-century Maitland Club (an Edinburgh antiquarian society that reprinted Sir Thomas
+Urquhart), confirmed by reading the surrounding text. Corroborates and extends this file's 19 Sept 2026 finding.
+Closed-negative.
+
+### 6. github.com/aaymeloglu/unsolved-ciphers + George Lasry's (robertpitt) repositories
+
+Fresh shallow clone: no Wellington/Maitland target folder; README.md, TARGETS.md and CATALOGUE.md have zero
+occurrences of the relevant names. The only mention anywhere in the repo is the same SHORTLIST.md line already
+recorded in this file ("New open items seen on Tomokiyo's blog in 2026: ... Wellington's Peninsular War code
+(Sept 8 2026 post, worth a look)") — a bare pointer, no tracker row, no work done. robertpitt's 40 public GitHub
+repositories and a GitHub code search for "wellington maitland" / "maitland cipher" scoped to that user returned
+no hits. Closed-negative.
+
+### People and dates established by this sweep
+
+- **Patrick Hayes**, cataloguer/expert for Spink, and **George Lasry**, cryptanalyst: independently established
+  the dictionary-code scheme (page/column/entry) and the strip-cipher "Key 1", and made the Scovell attribution,
+  on Spink's own lot page, before 8 Sept 2026 (the date Tomokiyo says he accessed it).
+- **Satoshi Tomokiyo**: published "Wellington's Polyalphabetic Cipher with a Dictionary Code" on Cryptiana,
+  first posted 8 Sept 2026, last modified 19 Sept 2026, crediting Hayes and Lasry, adding strip-cipher Keys 2
+  and 3 and one further resolved run ("Vila Castin," with Gemini's help); announced on the Cryptiana blog the
+  same day, one comment (by Tomokiyo himself, 9 Sept 2026) giving the fuller Hayes/Lasry credit quoted above.
+- No further named contributor or dated attempt was found by any of the six passes.
+
+### Verdict
+
+All six passes confirm, and none contradicts, the picture this file already recorded on 19 Sept 2026: the
+despatch's plaintext is established throughout at grade C (Gurwood's independently printed text) and is not in
+question, and a partial decipherment of the code system itself — the dictionary-code scheme and one of (now)
+three strip-cipher keys — was already public, credited to Patrick Hayes and George Lasry, before Tomokiyo's 8
+Sept 2026 article, which he explicitly builds on and extends. No search surfaced a complete solution (so not
+`solved` or `found-solved`), and none surfaced grounds to abandon the target (so not `closed-negative`). What
+remains open is unchanged: the printed dictionary edition (57+ candidates tested and ruled out, see "Dictionary
+candidates" and the HathiTrust pass above) and the strip-cipher null/permutation rule. **Verdict: the status
+changes from `open` to `partial`** — Tomokiyo/Hayes/Lasry's existing, independently-corroborated published work
+is a partial solution of this target, not a reason to close it, and not grounds to call it solved.
