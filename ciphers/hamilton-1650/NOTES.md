@@ -155,3 +155,43 @@ edition (blocked by Google Books quota and HathiTrust's Cloudflare block, not se
 Report (1932) pp.70-74, which appear to print a decipherment of cipher passages in two 1648 letters to the same
 recipient under his earlier title — worth reading in full to see whether it is the same nomenclator. This does
 not change REQUEST.md; the archive order for GD406/1/2197 remains the fastest route to the key.
+
+### Follow-up, 20 Sept 2026: the two Google-Books-quota threads, closed
+
+`GOOGLE_BOOKS_KEY` works from this container but the API returns HTTP 403 "Cannot determine user location" unless
+`&country=US` is appended to every call; with that, the two threads left open above are now checked.
+
+1. **Burnet 1677 first edition.** Not found on Google Books: `intitle:Hamilton intitle:Castleherald`,
+   `q=Burnet Memoires Hamilton 1677`, and `q=Burnet Dukes Hamilton Castleherald` return only the 1852 reprint,
+   unrelated 20th-century reprints (Legare Street Press, 2023), and unrelated Grammont/Hamilton titles. Open
+   Library gives OCLC 1828960, 23620856, and 613966038 for 1677 editions; the HathiTrust Bibliographic API
+   (`/api/volumes/brief/oclc/<n>.json`) returns `{"records":{},"items":[]}` for all three — no HathiTrust holding.
+   **Not found**, checked by Google Books full-text search and HathiTrust bibliographic lookup by OCLC; no
+   digitized copy of the 1677 first edition was located by either route.
+2. **1852 Oxford reprint, second scan.** Google Books holds a full-view copy, volume id `Zh9cAAAAcAAJ`, a
+   different scan from the Internet Archive copy already checked (`archive.org/details/memoirsoflivesac00burn`).
+   Searched inside it (via `intitle:Hamilton intitle:Castleherald "<phrase>"`, which reliably restricts hits to
+   this volume) for "Dunfermline Declaration", "get you off", "sixth of August", "September 1650" beyond the
+   narrative sentence already known, and "preparing yourself": no hit for the cipher-specific phrases. "cipher"
+   gets one hit, snippet "...cipher, but I am afraid I shall hardly read it, for there is so little distance
+   betwixt the numbers, that it seems but one continued number from the beginning to the end of every line, so
+   that I must desire you henceforward to 19-I. 43 41 42 43 25..." — this is **not the target letters**: full
+   context from the Internet Archive text of the same reprint (`memoirsoflivesac00burn_djvu.txt`, matches at
+   line 3485) identifies it as Charles I to James, 1st Marquis of Hamilton, dated 25 Sept 1631, complaining that
+   a letter of 22 Aug 1631 "from Stetin" is hard to decipher because the numbers run together, printed with the
+   King's reply text and the leftover fragment "19-I. 43 41 42 43 25" left as numerals; a different cipher, a
+   different Hamilton, 19 years before the target. The two scans agree (same passage, same wording, in both);
+   no OCR advantage from the Google Books copy was found or needed. Also confirms the Arran-confinement narrative
+   sentence already on record (line 28755 of the IA text: Dunbar "third of September 1650"), still narration,
+   not a letter quote. **Not found:** no decipherment of the four target letters in this scan either.
+3. **HMC 11th Report Appendix VI (1887).** Google Books has a full-view copy, volume id `Y0TwqQPL4lsC` ("Eleventh
+   Report | Appendix. The manuscripts of the Duke of Hamilton, K.T.. Part VI"). Searched inside (`q=Hamilton
+   Eleventh Report Appendix "cipher"`): the only hit is the same wording already found via the Internet Archive
+   copy in the check-solved sweep — "...cipher, not de-ciphered, thanking the Duke for his offer of service,
+   but... report was prepared, as narrated on page 202 infra..." — same items 395-396, no new content, no
+   decipherment. **Not found**, and this Google Books copy adds nothing beyond the IA copy already on record.
+
+Both open threads are now closed as not found by these two additional routes (Google Books full-text search,
+HathiTrust bibliographic API). The HMC Supplementary Report (1932) pp.70-74 thread from the previous pass is
+untouched by this one. Status unchanged: **offline-only**; REQUEST.md for GD406/1/2197 remains the fastest
+route to the key.
