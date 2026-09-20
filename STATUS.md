@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 20 September 2026, 04:12 UTC
+Last updated: 20 September 2026, 04:50 UTC
 
 ## How the sessions work
 
@@ -24,7 +24,7 @@ Last updated: 20 September 2026, 04:12 UTC
 | Eckert Papers, US Military Telegraph 1862-67 | ciphers/eckert-1862, ciphers/eckert-1864 | Parked 20 Sept 2026. 1862: ten entries read at grade C. 1864: twenty entries read at grade H from Cipher No. 1 and three from Cipher No. 2, both surviving books; audit (AUDIT.md): E6, E12 already in print (N1), E4, E5 no prior print located (N3). No cryptanalysis left. Enquiry sent to the Huntington curator 20 Sept about a corpus dataset; reply decides the corpus pass | Wait for the reply | Archive |
 | Earl of Stair to Townshend, 1710 | ciphers/stair-townshend-1710 | Verified 20 Sept 2026 (KU catalogue, six-source sweep): open, English | Not in print (checked 20 Sept). You: order four scans from Kansas per REQUEST.md, about $20 | You |
 | Letter relating to Gen. Monck, 1659-60 | ciphers/monck-1660 | Verified 20 Sept 2026 (BL catalogue, sweep): open, English | You: ask BL Imaging Services for a quote for Add MS 32093 f.423 (REQUEST.md) | You |
-| NLS MS 20769, 18th-c. cipher manuscript | ciphers/nls-20769 | Record known from snippets only; extent unverified | You: read the live catalogue record at manuscripts.nls.uk and paste it; then decide on scans | You |
+| NLS MS 20769, 18th-c. cipher manuscript | ciphers/nls-20769 | Record read 20 Sept 2026: 57 leaves, "written in cipher", genre Ciphers. Codes., language undetermined, deposited 1949 | You: ask NLS for a quote and a five-leaf sample (REQUEST.md) | You |
 | Everything else | QUEUE.md | First scout run done 19 Sept 2026: 40 scored, 163 kept unscored, 40 dropped | Work down the queue | Orchestrator |
 
 ## Results so far (labelled per README "What counts as a result")
@@ -49,7 +49,8 @@ Last updated: 20 September 2026, 04:12 UTC
 | Archive Lookup + Transcription: Eckert Papers 1862 | Zooniverse coverage check; read ten telegrams | Pushed 2d54f06: never decoded by Zooniverse; ten 1862 entries read at grade C | Done, archived |
 | Scout: verify and file four proposed targets | Stair 1710, Monck 1660, NLS 20769, 72438 f.104 | Stair and Monck open (English); NLS unverified; f.104 marked Decrypted on DECODE | Done, archived ($6) |
 | Print Check: Stair 1710 in Graham's Annals | Free check before the Kansas order | Not in Graham 1875, HMC 11th Report or Marlborough despatches | Done, archived ($2) |
-| Check Solved: blind six-source sweep of five targets | check-solved workflow, Sonnet | Hamilton: offline-only confirmed, no solution anywhere | Running (started 03:21 UTC) |
+| Access Test: browser tool after the setup-script fix | Prove the fix in a fresh container; read the NLS record | Fix works; NLS record read via Wayback (live site Cloudflare-challenged) | Done, archived ($1) |
+| Check Solved: blind six-source sweep of five targets | check-solved workflow, Sonnet | Hamilton, Stepney offline-only; Whitworth, 1646 open; Wellington partial. Nothing found solved | Done, archived ($18) |
 | Key Test: Eckert 1864 headquarters cipher (mssEC 47-48) | Test Cipher No. 2 on the Beckwith/Kimber entries | Outcome A: mssEC 47 reads them at grade H; key-no2.md, reading-no2.md | Done, archived ($26) |
 | Verifier: prior-art audit of four Eckert 1864 telegrams | Disprove the "not printed" claim; N0-N5 class per message; correct wording; CLAUDE.md rule 10 | Pushed: E6 N1 (OR I/32 pt 3 p.498), E12 N1 (in print since 1864; Basler CW 7:479), E4 N3, E5 N3; AUDIT.md written; over-claims corrected; verifier template added to CLAUDE.md | Done |
 | Transcription + Reading: Eckert 1864 ledger with Cipher No. 1 | Twenty 1864 entries at grade H | Pushed 045fbe2: all twenty read cleanly (296 H, 8 C, 1 M, 0 I); four not found in the OR volumes checked | Interrupted 03:06 UTC, archived 03:15 (result pushed; it had started a duplicate audit, $189 of usage) | Archived |
