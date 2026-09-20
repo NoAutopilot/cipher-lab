@@ -120,3 +120,22 @@ The wave is happening on GitHub and two blogs. Enough to see everything:
 4. **DECODE** at de-crypt.org: register (free) for images and to see when a record's status changes. Both projects say the status field is unreliable, so read the attached files.
 5. **Weekly diff of the list.** Run `tools/refresh-sources.ps1` on your PC. It re-downloads unsolved.htm and shows what changed. Bourdeau keeps a copy of the same page in his repo for the same reason.
 6. **HistoCrypt** (annual, open access at ecp.ep.liu.se) and Cryptologia for the methods papers. Lasry's papal-ciphers paper (2020) and the 2023 syllable-cipher work describe the solvers that are clearing the lists.
+
+## Decisions of 20 September 2026 (orchestrator's call on ten proposed targets)
+
+Proposed from outside the repo; ranked here against the language rule (English plaintext), access, ciphertext
+size and competition. Rule 1 sweep and scoring in progress for the four new ones (Scout worker, 20 Sept 2026).
+
+| Decision | Target | Why |
+|---|---|---|
+| 1, on the board | Charles II to Hamilton, 1650 (NRS GD406/1/2197) | Request out. Recovery if the key sheets open it; a real crack target (102 groups, two witnesses) if they do not. |
+| 2, verify then request | NLS MS 20769, 57 leaves of 18th-c. cipher in mixed symbols | Size: far above unicity for a homophonic cipher. Risk: a shorthand or constructed alphabet, not a cipher. |
+| 3, verify then request | Stair to Townshend, 1710 (Kansas, Spencer, MS P556) | English, cribs from the clear pages, cheap scans. One page of cipher, so the route is the same cipher elsewhere with a decipher. |
+| 4, verify then request | Monck-related letter, 1659-60 (BL Add MS 32093 f.423) | English, Restoration context; BL copying is the blocker. |
+| fold into intercepted-royalist-1646 | BL Add MS 72438 f.104 and the captured keys in the volume | Same volume, same BL blocker; one request. |
+| queue, tier B | Wallis letter-book leftovers (BL Add MS 32499 items 9, 14, 30) | Genuinely open; French plaintext, BL, single letters. |
+| declined | Charles II of Spain to Rome, 1689 | Spanish; Aymeloglu's territory. |
+| declined | Blencowe failures (BL Add MS 61575 ff.38-41, 44) | French; offline-only per Bourdeau; crowded. |
+| declined | Blenheim Papers series (Add MSS 61567-61574) | Mostly non-English; BL offline; too large. |
+| declined | Polish and Soviet traffic c.1920 | Active academic field; far too large for one person. |
+| nothing to strike | "Yard 1699 at Yale" | Never in the queue; the Yale item in the notes is Stepney 1702, already on the board. |
