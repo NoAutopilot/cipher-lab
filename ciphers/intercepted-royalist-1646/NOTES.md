@@ -53,3 +53,94 @@ yet acted on:
   of key no. 129 that f.10's reading still needs, or the key for f.9's smaller cipher — worth requesting
   alongside f.11 (already planned) once a DECODE login clarifies whether f.104 is actually open. See
   `REQUEST.md`.
+
+## Check-solved sweep, 20 Sept 2026
+
+Six independent searches run against the 16 Sept 2026 claim (Aymeloglu, unsolved-ciphers/royalist-1646:
+f.10 = Digby key no. 129, ~45 values fixed; f.9 = a smaller, different key in which 226 = London; both
+need the rest of key 129 or a contemporary decipher). None found a decipherment of f.9 or f.10 anywhere.
+One found a genuine independent disagreement about the claim itself, detailed below.
+
+**1. Web search + direct fetches (github.com/aaymeloglu, dbourdeau.github.io, de-crypt.org RecordsView).**
+Re-confirmed Aymeloglu's own partial-decipherment claim verbatim on the live repo. Fetched Bourdeau's
+*rendered docs page* (dbourdeau.github.io/cyphersolver/index.html) and found no mention of this target
+there — see source 5 below, which cloned the underlying repo and found this was a false negative from
+checking the rendered site rather than the source files. DECODE RecordsView pages for 8623 and 8624 both
+read "Non-decrypted". Noted that nearly every WebSearch query returned an identically-worded synthesized
+summary regardless of phrasing, i.e. all roads led back to the single Aymeloglu page, not independent
+corroboration. Cipherbrain and the Cryptiana blog's own search boxes were not reachable via WebFetch/WebSearch
+site-scoping in this pass — **unchecked**, not negative.
+
+**2. Printed-edition search (CSPD Domestic Charles I, Rushworth, HMC/Downshire).** Downloaded and
+full-text-searched the Internet Archive OCR of *Calendar of State Papers Domestic, Charles I* (ed. Hamilton,
+1891, covering 1645-7; archive.org id `calendarofstatep0021will`). Result: **no 21 May 1646 entry exists in
+the calendar at all**, the three 13 May 1646 entries in it are unrelated routine Derby House business, the
+volume's own "Deciphered Letters" appendix (keys supplied by Col. J. S. Rothwell) stops at 11 Jan 1645/6 and
+does not reach May 1646, and the only calendar entry touching this Weckherlin cipher haul at all is a 31 Jan
+1645/6 finding-list summary (p.331) with no text of any individual letter. Rushworth vol. 6 (Mar-May 1646,
+British History Online) has nothing matching either. No sender name is recorded for f.9/f.10 anywhere, so no
+sender-specific "Letters"/"Correspondance" edition could be searched. British History Online's page-level text
+for CSPD pp.430-439 (the free archive.org OCR of the same edition was used instead) is paywalled —
+**unchecked** at that specific URL, though covered via the substitute text.
+
+**3. Community list / comment-thread sweep (Cryptiana, Cipherbrain, Cipher Mysteries, MysteryTwister, r/codes).**
+Cryptiana's `unsolved.htm` (local snapshot) lists both f.9/R8623 and f.10/R8624 verbatim as items S. Tomokiyo
+"believe[s] ... not deciphered", with no solution and no comment thread (a static list page, not a blog post).
+Tomokiyo's other Add MS 72438 pages (digby.htm, charlesi.htm, charlesii.htm, louisxiv0.htm) cover other folios
+of the same volume in detail but never mention f.9, f.10, R8623, R8624 or key no. 129. Cipher Mysteries' own
+site search for "Weckherlin" returned an explicit "Nothing Found." No Cipherbrain, MysteryTwister or r/codes
+thread naming this target was found by web search. Cipherbrain.de itself (503 on WebFetch, TLS failure on
+direct curl) and reddit.com/r/codes (WebFetch domain-refused, curl 403) could not be queried directly —
+**unchecked** by their own search tools, though WebSearch site-scoping against both returned nothing.
+
+**4. DECODE (de-crypt.org) direct.** Confirms record 8623 (f.9, 21 May 1646) and record 8624 (f.10, 13 May
+1646) both "Non-decrypted", Cipher Type "Unknown", Access mode "Authentication required", Author/Sender/
+Receiver all blank in DECODE's own fields (DECODE does not itself record "to Charles I" for f.10; that
+description is from NOTES.md/Tomokiyo, not from DECODE). Sender-family site searches for "Weckherlin",
+"Digby" and "Charles I" do not surface 8623/8624 (Digby surfaces other 72438 key folios instead), consistent
+with those two records carrying no sender/receiver metadata in DECODE. The Documents/Images sub-pages for
+both records, where an attached key or decipherment file would be listed, redirect to `/decrypt-web/login`;
+`DECODE_USER`/`DECODE_PASS` are unset in this environment — **unchecked**, so an attached key or decipherment
+file on DECODE itself can be neither confirmed nor ruled out.
+
+**5. github.com/dbourdeau/cyphersolver (cloned, HEAD cf73f46).** This is the significant independent result.
+Bourdeau's repository does carry this exact shelfmark, but files it under `rupert/` (item #6, alongside a
+separate 1645 Maurice-to-Rupert letter), not under a `royalist-1646` folder, which is why source 1's fetch of
+the rendered docs page missed it. Bourdeau's own status for BL Add MS 72438 ff.9-10 (DECODE R8623, R8624) is
+**"offline-only"**, not "partial", and his notes give **no key attribution at all** — no Digby key no. 129, no
+"226 = London" claim. Verbatim: "Full ciphertext is not available anywhere online: cryptiana prints only the
+first two lines of f. 9 ... DECODE records are 'Private Ciphertext: True', authentication required; the BL
+digitisation (vdc_100162920089) is offline (403) ... The same volume holds 49+ keys (ff. 25-99, 100-109,
+151-170) that would very likely read f. 9/f. 10 by simple trial once images are accessible — this is a 'key in
+the same box' situation like Hamilton, not a cryptanalysis problem." `TARGETS.md` and both rendered docs pages
+(`writeups.html`, `index.html`) repeat the same "offline-only" / "waiting on an archive" framing, with no
+mention of key no. 129. Neither `SOLVED_CATALOGUE.md` nor `SOLVED_RANKING.md` lists this item. Bourdeau's
+working notes carry no date of their own beyond the clone's HEAD (19 Sept 2026); no other blocker.
+
+**6. github.com/aaymeloglu/unsolved-ciphers (cloned) + github.com/robertpitt (via GitHub API).** Re-confirms,
+from the repo's own files rather than a rendered page, Aymeloglu's 16 Sept 2026 claim in full: `README.md`,
+`TARGETS.md` and `royalist-1646/README.md` all state f.10 = Digby captured-cabinet key no. 129 ("from the
+Queen's Court", also used by the King June-August 1646), "about 45 values fixed from the surviving key page
+and Evelyn's printed decipherments," full reading needing the rest of the key or the contemporary decipher;
+f.9 "[n]ot attacked beyond noting that it uses a different, smaller key (max value 343) in which 226 reads
+'London'." Flags one unresolved discrepancy worth carrying forward without resolving here: Aymeloglu's own
+`f9_ct.txt` gives a max value of 343 for f.9, where this project's `ciphertext.txt` (only the Cryptiana-quoted
+opening) shows a highest value of 333 — the two transcriptions were made independently and have not been
+reconciled. A search of all 40 of github.com/robertpitt's repositories (API `search_repositories` +
+`search_code`, both pages) found no repository or code referencing "72438", "weckherlin" or "royalist-1646";
+that route is a clean negative, not unchecked.
+
+**People and dates for prior work, consolidated:** S. Tomokiyo (Cryptiana `unsolved.htm`, undated static
+page, first source establishing both folios as unsolved) — Aymeloglu (`unsolved-ciphers/royalist-1646`,
+16 Sept 2026, key-129 partial attribution for f.10, "226 = London" note for f.9) — Bourdeau
+(`cyphersolver/rupert/`, repo state 19 Sept 2026, independently reaches the same shelfmark but calls it
+offline-only with no key identified) — no archive, editor, forum or database (DECODE, CSPD, Rushworth,
+Cipher Mysteries, Cipherbrain, MysteryTwister, r/codes, robertpitt) has published or claims a decipherment of
+either folio.
+
+**Verdict:** Still open — no decipherment of BL Add MS 72438 f.9 (R8623) or f.10 (R8624) exists anywhere
+that six independent searches could locate; Aymeloglu's 16 Sept 2026 partial key-129 attribution for f.10 is
+neither corroborated by any source outside Aymeloglu's own repository nor contradicted by direct evidence,
+but Bourdeau's independently-derived assessment of the identical shelfmark does not support it (offline-only,
+no key identified) — treat the key-129 attribution as an unverified, single-source claim pending the rest of
+the key or a contemporary decipher, not as confirmed independently.
