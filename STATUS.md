@@ -3,7 +3,55 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 20 September 2026, 04:50 UTC
+Last updated: 20 September 2026, 05:15 UTC
+
+## Overnight summary, 19-20 September 2026 (written 05:15 UTC; free-work results added at the 06:05 check-in)
+
+**Nothing was cracked.** One over-claim was caught and turned into a rule; two archive orders are out; three new
+targets are filed with requests drafted; the browser fix works in every new container.
+
+**Done tonight**
+
+- Eckert 1864: twenty entries read at grade H from the surviving Cipher No. 1 book; the "four not printed" claim
+  was audited by a separate verifier and withdrawn (E6 and E12 were in print, N1; E4 and E5 no prior print
+  located, N3; AUDIT.md). A key test then showed the headquarters entries are Cipher No. 2 and the Huntington's
+  copy reads them (outcome A). Every cipher in the ledger reads from a surviving book: Eckert is parked as an
+  edition, and an enquiry went to the Huntington curator about a corpus dataset.
+- Process: CLAUDE.md rule 10 (novelty is a verifier's verdict, N0-N5), a Usage section (model tiering, scripts
+  over reading, caps), a Pipeline section (scout, check-solved, board, access, solver, verifier, result
+  label), an improvement loop (LEDGER.md, brief templates in .claude/briefs/, weekly retrospective every
+  Monday 06:00 UTC), a board stage "Novelty verified", kind labels on every card, and the scout rubric's
+  new "unread" axis so editions never top the queue again.
+- Wellington 1812: HathiTrust half of the dictionary hunt closed negative through the Bibliographic and
+  Extracted Features APIs (19 more editions, 76 in all). Blind sweep set the status to partial (Hayes, Lasry,
+  Tomokiyo published a partial solution of the system).
+- Blind six-source sweep of the board: Hamilton and Stepney offline-only, Whitworth and the 1646 intercepts
+  open, nothing already solved anywhere.
+- Three new targets verified and filed with REQUEST.md: Stair to Townshend 1710 (Kansas; not in print, so the
+  order stands), Monck 1660 (BL), NLS MS 20769 (catalogue record confirmed: 57 leaves, "written in cipher",
+  language undetermined, deposited 1949). BL Add MS 72438 f.104 folded into the 1646 target; DECODE marks it
+  Decrypted, to be read with the DECODE login.
+- Access: the environment setup script now adds the proxy CA to Chromium in every new container (tested);
+  NLS is Cloudflare-challenged even so, read via a Wayback capture.
+- Free work started 05:02-05:07 UTC, results at the 06:05 check-in: print checks for Hamilton, the 1646
+  intercepts and Monck in the 17th-century editions and calendars; a search-print sweep of eight English
+  queue items; a re-score of the queue with the unread axis.
+
+**Waiting on you**
+
+1. Email Spink before 23 Sept: does lot 1184 include a pocket dictionary?
+2. Kansas order for Stair MS P556, four scans, about $20 (ciphers/stair-townshend-1710/REQUEST.md).
+3. BL Imaging Services quote for Add MS 32093 f.423 (ciphers/monck-1660/REQUEST.md).
+4. NLS quote and a five-leaf sample of MS 20769 (ciphers/nls-20769/REQUEST.md).
+5. Environment variables DECODE_USER and DECODE_PASS; optionally GOOGLE_BOOKS_KEY; the Gmail connector.
+
+**Waiting on archives:** NRS (Hamilton key sheets), TNA (Stepney page check, order 3660178), the Huntington
+(corpus enquiry).
+
+**Stops and costs.** All sessions were stopped by the five-hour usage limit from 00:03 to 03:00 UTC. Worker
+usage tonight, in dollars of plan usage (not billed): Eckert 1864 reading 189 (over-ran its brief), verifier
+28, key test 26, HathiTrust 11, check-solved sweep 18, scout 6, print check 2, access tests 1, plus the free
+work in progress. Orchestrator session about 250. See LEDGER.md.
 
 ## How the sessions work
 
