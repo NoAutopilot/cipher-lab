@@ -4732,5 +4732,111 @@
     "https://old.reddit.com/r/codes/search?... (tool cannot fetch reddit)"
    ]
   }
- ]
+ ],
+ "status_summary": {
+  "date": "20 Sept 2026",
+  "note": "search-print sweep, eight English queue items; verdicts per CLAUDE.md rule 1/10 (print status only, not novelty). Full per-item detail in QUEUE.md.",
+  "items": [
+   {
+    "rank": 7,
+    "name": "Cornwallis Papers (TNA PRO 30/11, six undeciphered items)",
+    "verdict": "NOT FOUND",
+    "note": "Saberton, The Cornwallis Papers (2010) not found on Internet Archive (advancedsearch.php, 0 hits); index not checked. Saberton's allthingsliberty.com article (6 June 2019) already prints the mechanism and worked examples of all five relevant ciphers in the clear, so the six items are a key-application job once TNA copies are obtained.",
+    "sources_checked": [
+     "archive.org advancedsearch.php (title:\"Cornwallis Papers\" creator:Saberton; free-text \"Cornwallis Papers Southern Theatre Saberton\")",
+     "allthingsliberty.com/2019/06/decoding-british-ciphers-used-in-the-south-1780-81/ (fetched in full)"
+    ],
+    "not_attempted": [
+     "Google Books / WorldCat for Saberton 2010",
+     "TNA Discovery item pages"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "Moray regency letters (BL Add MS 33531 ff.73-74, 79-80)",
+    "verdict": "FOUND-SOLVED",
+    "note": "CSP Scotland ii (Bain) no. 966 p.604 (Mary to Abp Hamilton, 18 Jan 1568/69): 'Decipher of same' printed. No. 1103 p.661-662 (Throckmorton to Moray, 20 July 1569): 'In cipher deciphered' printed. Not in Labanoff ii (checked in full, IA lettresinstructi02mary).",
+    "sources_checked": [
+     "archive.org lettresinstructi02mary _djvu.txt (full text, grepped)",
+     "archive.org CalendarStatePapersMaryQueenOfScotsVol2 _djvu.txt (full text, grepped)"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "Throckmorton to Cecil/Queen/Council 1559-63 (BL Add MS 4136, 20 ciphertexts)",
+    "verdict": "FOUND-SOLVED",
+    "note": "Characterized, not matched item-by-item to the 20 DECODE dates (flagged follow-up, budget-limited, OCR garbling). Forbes, A Full View of the Public Transactions... (1740-41) prints Throckmorton despatches 1559-62/63 in full from deciphered MSS per his stated editorial method; CSP Foreign vol.1 is abstract-only and twice notes it cannot render ciphered passages.",
+    "sources_checked": [
+     "archive.org bim_eighteenth-century_a-full-view-of-the-publi_1740_1 and _2 (Forbes vols I-II, full text)",
+     "archive.org calendarofstatep01grea_1 (CSP Foreign vol.1, full text)"
+    ],
+    "not_attempted": [
+     "per-item match of all 20 DECODE dates to Forbes page numbers"
+    ]
+   },
+   {
+    "rank": 11,
+    "name": "Sadler to Henry VIII, 22 April 1543 (BL Add MS 32650 ff.214-216)",
+    "verdict": "FOUND-SOLVED",
+    "note": "Clifford, Sadler State Papers I (1809), p.158: full plain-English text, no cipher markup. L&P Henry VIII vol.18 pt.1 no.448 confirms the BL MS itself already holds a contemporary Tudor decipher ('A decipher of the preceding'), citing Sadler I.158. Not a key-recovery candidate.",
+    "sources_checked": [
+     "archive.org statepaperslette01sadluoft (Clifford vol.I, full text, p.158 read directly)",
+     "british-history.ac.uk/letters-papers-hen8/vol18/no1/pp254-272"
+    ],
+    "not_attempted": [
+     "Google Books GMc_AAAAcAAJ (429 quota exceeded; IA copy substituted)"
+    ]
+   },
+   {
+    "rank": 12,
+    "name": "Walsingham and Wotton, seven letters 28 July-10 Sept 1585 (BL Add MS 32657)",
+    "verdict": "UNREACHABLE",
+    "note": "Right volume/window identified (CSP Scotland VIII, Boyd 1914, pp.1-117 spans July-Sept 1585) but page text is BHO premium content; no separate IA copy of this edition found; HathiTrust Cloudflare-blocked to curl; Google Books API quota exhausted.",
+    "sources_checked": [
+     "british-history.ac.uk/cal-state-papers/scotland/vol8 (TOC only, pages paywalled)",
+     "archive.org advancedsearch (no matching vol. VIII copy)",
+     "HathiTrust bibliographic API (record miun.abe1726.0008.001, 403/Cloudflare)",
+     "Google Books API (429)"
+    ],
+    "next_step": "retry BHO or HathiTrust with the browser tool per CLAUDE.md Access playbook"
+   },
+   {
+    "rank": 15,
+    "name": "Charles I to Prince Rupert, 29 April 1645 (BL Add MS 18983 f.14)",
+    "verdict": "NOT FOUND",
+    "note": "Full text of both named checks searched with no match: Warburton vol.3's late-April-1645 run (Digby 25/27 Apr, Nicholas 30 Apr, Digby 30 Apr, all with cipher markup or royal postscripts) has no 28/29 April letter and none under the King's own signature; CSP Domestic 1644-45 calendars TNA SP (not the BL Add MS 18983 Rupert transcripts) and has no King-to-Rupert entry near that date.",
+    "sources_checked": [
+     "archive.org memoirsofprincer03warbuoft (Warburton vol.3, full text)",
+     "archive.org sim_great-britain-public-record-1625-1649-domestic-series_1644-1645 (CSP Domestic, full text)"
+    ],
+    "next_step": "request DECODE R4921 and its attached key, as originally planned"
+   },
+   {
+    "rank": 17,
+    "name": "Harley MS 287 cipher letters 1587-88 (Cobham/Needham, 14 ciphertexts)",
+    "verdict": "NOT FOUND",
+    "note": "Partial: CSP Foreign vol.21 pt.4 (Jan-June 1588) index and pp.442-460 checked via BHO; calendar gives English abstracts throughout, never ciphertext or a 'deciphered' block; a 3 June Cobham entry re cipher is only a postscript note ('Sent the cipher by Spritwold'), not a decrypted passage. Vol.22 (July-Dec 1588), which likely holds most of the Bourbourg talks, was not reached this sweep.",
+    "sources_checked": [
+     "british-history.ac.uk/cal-state-papers/foreign/vol21/no4 (index pp.558-571, 645-661; text pp.442-460)",
+     "archive.org advancedsearch (no IA copy of vols 21/22 found)"
+    ],
+    "not_attempted": [
+     "CSP Foreign vol.22 (July-Dec 1588)",
+     "line-by-line match of the ~40 Cobham entries against the 14 DECODE items"
+    ]
+   },
+   {
+    "rank": 19,
+    "name": "Bowes to Walsingham, 7 April and 31 July 1583 (BL Cotton Caligula C VII/B VIII)",
+    "verdict": "UNREACHABLE",
+    "note": "CSP Scotland vol.6 (Boyd 1910) is not on archive.org (only vols 1, 2, 4, 8, 9, 13 present); BHO's vol.6 pages are premium content and its site search returned 403; HathiTrust's bibliographic API confirms a public-domain full-view copy exists (htid nnc2.ark:/13960/t1gh9nc18) but babel.hathitrust.org is Cloudflare-blocked to curl.",
+    "sources_checked": [
+     "archive.org advancedsearch (title:\"calendar state papers relating to Scotland Mary Queen\", 6 hits, none vol.6)",
+     "british-history.ac.uk/cal-state-papers/scotland/vol6 (pp.356-434, 521-570 paywalled; site search 403)",
+     "HathiTrust bibliographic API (record 008437788)"
+    ],
+    "next_step": "fetch HathiTrust htid nnc2.ark:/13960/t1gh9nc18 with the browser tool per CLAUDE.md's certutil fix"
+   }
+  ]
+ }
 }
