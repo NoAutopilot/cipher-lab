@@ -129,6 +129,17 @@ Getting the material is most of the work. Try routes in this order and record wh
    variables). The fix is `apt-get install -y libnss3-tools && certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n
    ccr-agent-proxy -i /root/.ccr/agent-proxy-ca.crt` once per container (the script prints this hint); a worker's
    permission policy may refuse it, in which case say so and use the APIs below. Never use `ignoreHTTPSErrors`.
+   Confirmed 20 Sept 2026: the setup script now runs this fix automatically in a fresh container, and it works —
+   `certutil -L` lists `ccr-agent-proxy` at session start and `tools/browser_fetch.js` renders ordinary HTTPS
+   pages (e.g. archive.org) with no `ERR_CERT_AUTHORITY_INVALID`, confirming the cert problem itself is fixed.
+   It does not, on its own, get past a site's own Cloudflare bot challenge: HathiTrust and manuscripts.nls.uk
+   both still served a "Performing security verification" Cloudflare interstitial to the tool after the fix,
+   confirmed by screenshot, unrelated to the certificate. For a Cloudflare-blocked site, try the Internet
+   Archive Wayback Machine instead (`web.archive.org` is not Cloudflare-protected here): find the archived URL
+   with the CDX API, `https://web.archive.org/cdx/search/cdx?url=<site>&output=json`, then fetch
+   `https://web.archive.org/web/<timestamp>if_/<original-url>` with `tools/browser_fetch.js` (the `if_` suffix
+   avoids the wayback toolbar frame breaking `--selector`/`--type`; a bare fetch without it can return a stub
+   `upstream request failed` — retry once before concluding the capture is unreachable).
    **HathiTrust without a browser:** the site itself is Cloudflare-challenged for curl, but the Bibliographic API
    (`catalog.hathitrust.org/api/volumes/brief/recordnumber/N.json`, `oclc/N.json`; needs a full Chrome User-Agent
    string) gives volume ids, and the HTRC Extracted Features API
