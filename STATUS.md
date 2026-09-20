@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 20 September 2026, 04:05 UTC
+Last updated: 20 September 2026, 04:20 UTC
 
 ## How the sessions work
 
@@ -26,6 +26,16 @@ Last updated: 20 September 2026, 04:05 UTC
 | Letter relating to Gen. Monck, 1659-60 | ciphers/monck-1660 | Verified 20 Sept 2026 (BL catalogue, sweep): open, English | You: ask BL Imaging Services for a quote for Add MS 32093 f.423 (REQUEST.md) | You |
 | NLS MS 20769, 18th-c. cipher manuscript | ciphers/nls-20769 | Record known from snippets only; extent unverified | You: read the live catalogue record at manuscripts.nls.uk and paste it; then decide on scans | You |
 | Everything else | QUEUE.md | First scout run done 19 Sept 2026: 40 scored, 163 kept unscored, 40 dropped | Work down the queue | Orchestrator |
+
+## Results so far (labelled per README "What counts as a result")
+
+| Target | Kind | Result |
+|---|---|---|
+| Eckert Papers 1862-67 | Contribution | Machine-readable Cipher No. 1 and No. 2 keys, 23 readings checked against print, AUDIT.md with N-classes, corpus-status finding; offered to the Huntington 20 Sept 2026 |
+| Whitworth 1707 | Contribution | Four of five catalogue "undeciphered" items shown to be already in print (Sbornik 39, 50); one clause of f.108 open |
+| Hamilton 1650, Stepney 1702, Wellington 1812, 1646 intercepts | Recovery (in progress) | Key hunts; nothing read yet |
+| NLS MS 20769 | Cryptanalysis (candidate) | Pending catalogue confirmation |
+| Stair 1710, Monck 1660 | Undecided | Depends on what the scans show |
 
 ## Worker sessions
 

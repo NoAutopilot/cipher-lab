@@ -16,6 +16,11 @@ def chip(state):
     label = {"waiting": "Waiting on archive", "active": "Worker on it", "queued": "Queued", "blocked": "Blocked", "you": "Needs you", "solved": "Solved"}[state]
     return f'<span class="chip chip-{state}">{label}</span>'
 
+KIND = {"recovery": "Recovery", "cryptanalysis": "Cryptanalysis", "contribution": "Contribution", "undecided": "Kind undecided"}
+def kind_chip(t):
+    k = t.get("kind", "undecided")
+    return f'<span class="chip chip-kind-{k}" title="What kind of result this target can give">{KIND[k]}</span>'
+
 def target_row(t):
     segs = "".join(
         f'<span class="seg {"on" if i < t["stage"] else ""} {"cur" if i == t["stage"] - 1 else ""}" title="{E(s)}"></span>'
@@ -26,7 +31,7 @@ def target_row(t):
     <article class="target state-{t["state"]}">
       <div class="t-head">
         <h3>{E(t["name"])} <span class="year">{E(t["year"])}</span></h3>
-        {chip(t["state"])}
+        <span class="chips">{kind_chip(t)} {chip(t["state"])}</span>
       </div>
       <div class="t-ref mono">{E(t["ref"])}</div>
       <div class="pipe" role="img" aria-label="Stage {t["stage"]} of {N}: {E(stages[t["stage"]-1])}">
@@ -39,6 +44,7 @@ def target_row(t):
         <div><dt>Expected</dt><dd>{E(t["wait"]["expected"])}</dd></div>
         <div><dt>What unblocks it</dt><dd>{E(t["wait"]["unblock"])}</dd></div>
       </dl>
+      {('<p class="result"><b>Result so far:</b> ' + E(t["result"]) + '</p>') if t.get("result") else ''}
       <p class="next"><b>Next:</b> {E(t["next"])}</p>
       <p class="note muted">{E(t["note"])} {folder}</p>
     </article>'''
@@ -98,6 +104,9 @@ header .upd {{ color:var(--muted); }}
 .t-head {{ display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px; }}
 .year {{ color:var(--muted); font-weight:500; font-size:0.9em; margin-left:6px; }}
 .chip {{ font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; padding:3px 9px; border-radius:999px; white-space:nowrap; }}
+.chips {{ display:flex; gap:6px; flex-wrap:wrap; }}
+.chip-kind-recovery {{ background:var(--good-soft); color:var(--good); }} .chip-kind-cryptanalysis {{ background:var(--accent-soft); color:var(--accent); }} .chip-kind-contribution {{ background:var(--warn-soft); color:var(--warn); }} .chip-kind-undecided {{ background:var(--idle-soft); color:var(--idle); }}
+.result {{ margin:0; padding:8px 12px; border-left:3px solid var(--good); background:var(--good-soft); border-radius:3px; }}
 .chip-waiting {{ background:var(--warn-soft); color:var(--warn); }} .chip-active {{ background:var(--info-soft); color:var(--info); }} .chip-queued {{ background:var(--idle-soft); color:var(--idle); }} .chip-blocked {{ background:var(--bad-soft); color:var(--bad); }} .chip-you {{ background:var(--accent-soft); color:var(--accent); }} .chip-solved {{ background:var(--good-soft); color:var(--good); }}
 .segs {{ display:grid; grid-template-columns:repeat({N}, 1fr); gap:3px; margin-top:4px; }}
 .seg {{ height:10px; border-radius:2px; background:var(--idle-soft); }}

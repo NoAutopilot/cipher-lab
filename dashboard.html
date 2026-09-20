@@ -32,6 +32,9 @@ header .upd { color:var(--muted); }
 .t-head { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px; }
 .year { color:var(--muted); font-weight:500; font-size:0.9em; margin-left:6px; }
 .chip { font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; padding:3px 9px; border-radius:999px; white-space:nowrap; }
+.chips { display:flex; gap:6px; flex-wrap:wrap; }
+.chip-kind-recovery { background:var(--good-soft); color:var(--good); } .chip-kind-cryptanalysis { background:var(--accent-soft); color:var(--accent); } .chip-kind-contribution { background:var(--warn-soft); color:var(--warn); } .chip-kind-undecided { background:var(--idle-soft); color:var(--idle); }
+.result { margin:0; padding:8px 12px; border-left:3px solid var(--good); background:var(--good-soft); border-radius:3px; }
 .chip-waiting { background:var(--warn-soft); color:var(--warn); } .chip-active { background:var(--info-soft); color:var(--info); } .chip-queued { background:var(--idle-soft); color:var(--idle); } .chip-blocked { background:var(--bad-soft); color:var(--bad); } .chip-you { background:var(--accent-soft); color:var(--accent); } .chip-solved { background:var(--good-soft); color:var(--good); }
 .segs { display:grid; grid-template-columns:repeat(10, 1fr); gap:3px; margin-top:4px; }
 .seg { height:10px; border-radius:2px; background:var(--idle-soft); }
@@ -61,7 +64,7 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
 <div class="wrap">
   <header>
     <div><h1>Cipher Lab Board</h1><div class="muted">Where every target stands, who holds it, and what happens next.</div></div>
-    <div class="upd">Updated 20 September 2026, 04:05 UTC</div>
+    <div class="upd">Updated 20 September 2026, 04:20 UTC</div>
   </header>
 
   <section class="tiles" aria-label="Summary">
@@ -77,7 +80,7 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
     <article class="target state-waiting">
       <div class="t-head">
         <h3>Charles II to the Duke of Hamilton <span class="year">1650</span></h3>
-        <span class="chip chip-waiting">Waiting on archive</span>
+        <span class="chips"><span class="chip chip-kind-recovery" title="What kind of result this target can give">Recovery</span> <span class="chip chip-waiting">Waiting on archive</span></span>
       </div>
       <div class="t-ref mono">NRS GD406/1/2197</div>
       <div class="pipe" role="img" aria-label="Stage 5 of 10: Request sent">
@@ -90,13 +93,14 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div><dt>Expected</dt><dd>1 to 3 weeks for a quote; images some weeks after payment</dd></div>
         <div><dt>What unblocks it</dt><dd>NRS replies. If they need depositor consent, that is a second wait. Fallback: John Wallis&#x27;s papers at the Bodleian.</dd></div>
       </dl>
+      
       <p class="next"><b>Next:</b> NRS to send a quote for images of the five key sheets. Then pay, then apply the key to the 102 groups.</p>
-      <p class="note muted">Copy request emailed 19 Sept 2026. Cipher is 102 groups across four letters; unreadable without the key, which the catalogue lists as open. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/hamilton-1650">ciphers/hamilton-1650</a></p>
+      <p class="note muted">If the NRS sheets do not cover the cipher, this becomes cryptanalysis. Copy request emailed 19 Sept 2026. Cipher is 102 groups across four letters; unreadable without the key, which the catalogue lists as open. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/hamilton-1650">ciphers/hamilton-1650</a></p>
     </article>
     <article class="target state-waiting">
       <div class="t-head">
         <h3>George Stepney to the Earl of Manchester <span class="year">1702</span></h3>
-        <span class="chip chip-waiting">Waiting on archive</span>
+        <span class="chips"><span class="chip chip-kind-recovery" title="What kind of result this target can give">Recovery</span> <span class="chip chip-waiting">Waiting on archive</span></span>
       </div>
       <div class="t-ref mono">TNA SP 105/65</div>
       <div class="pipe" role="img" aria-label="Stage 5 of 10: Request sent">
@@ -109,13 +113,14 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div><dt>Expected</dt><dd>Page check on a weekday, usually within 2 weeks; copy 2 to 4 weeks after payment</dd></div>
         <div><dt>What unblocks it</dt><dd>TNA finds the 23 March 1702 entry. If they report no such entry, switch to SP 80/18 or the Stepney Papers at the BL.</dd></div>
       </dl>
+      
       <p class="next"><b>Next:</b> TNA staff page check (order 3660178, paid). They will quote for the copy of the letter-book entry, which should carry the 24 groups in clear.</p>
       <p class="note muted">Volume identified 19 Sept 2026 by a worker. If the entry is not in the letter-book, fall back to SP 80/18 or the Stepney Papers at the BL. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/stepney-manchester-1702">ciphers/stepney-manchester-1702</a></p>
     </article>
     <article class="target state-you">
       <div class="t-head">
         <h3>Wellington to General Maitland <span class="year">1812</span></h3>
-        <span class="chip chip-you">Needs you</span>
+        <span class="chips"><span class="chip chip-kind-recovery" title="What kind of result this target can give">Recovery</span> <span class="chip chip-you">Needs you</span></span>
       </div>
       <div class="t-ref mono">Spink lot 1184, sale 23 Sept 2026</div>
       <div class="pipe" role="img" aria-label="Stage 7 of 10: Transcribed">
@@ -128,13 +133,14 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div><dt>Expected</dt><dd>Before 23 Sept 2026</dd></div>
         <div><dt>What unblocks it</dt><dd>Spink confirms or denies a dictionary in the lot; or a library check of Urban and the Bentinck papers.</dd></div>
       </dl>
+      
       <p class="next"><b>Next:</b> HathiTrust closed 03:37 UTC: 19 more editions tested through the Bibliographic and Extracted Features APIs, none matches (76 editions in all); Scott, Jones 1800, London Perry, Walker 1810 and Dublin Entick are not in HathiTrust at all. For you before 23 Sept: ask Spink whether lot 1184 includes a pocket dictionary. Remaining leads need a library: Urban pp. 232-233, the Bentinck papers (Nottingham Pw Jd), WO 37.</p>
-      <p class="note muted">Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick&#x27;s 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/wellington-maitland-1812">ciphers/wellington-maitland-1812</a></p>
+      <p class="note muted">The key is a printed dictionary; finding the edition is recovery, not a crack. Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick&#x27;s 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/wellington-maitland-1812">ciphers/wellington-maitland-1812</a></p>
     </article>
     <article class="target state-you">
       <div class="t-head">
         <h3>Charles Whitworth to Robert Harley <span class="year">1707-08</span></h3>
-        <span class="chip chip-you">Needs you</span>
+        <span class="chips"><span class="chip chip-kind-contribution" title="What kind of result this target can give">Contribution</span> <span class="chip chip-you">Needs you</span></span>
       </div>
       <div class="t-ref mono">TNA SP 91/5/108 (+ ff. 106, 121 for the key)</div>
       <div class="pipe" role="img" aria-label="Stage 4 of 10: Key source located">
@@ -147,13 +153,14 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div><dt>Expected</dt><dd>Whenever you choose; TNA then takes 2 to 4 weeks</dd></div>
         <div><dt>What unblocks it</dt><dd>Order placed. If you decide it is not worth it, mark it parked and it drops down the queue.</dd></div>
       </dl>
+      <p class="result"><b>Result so far:</b> Four of five &quot;undeciphered&quot; items were already in print; the finding corrects the catalogue.</p>
       <p class="next"><b>Next:</b> Decide whether one unread clause is worth about 10 images (roughly £30). If yes, order SP 91/5/108, 106 and 121 on Discovery using the message in ciphers/whitworth-1707/REQUEST.md.</p>
       <p class="note muted">Worker result 19 Sept 2026: four of the five &#x27;undeciphered&#x27; items are already in print (Sbornik vols 39 and 50) or deciphered in the same volume. Only one clause of f. 108 is unread, about the French mediation of 1707. The neighbours ff. 106 and 121 were deciphered in London, so their pages give the key. Low historical weight; cheap; certain to work. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/whitworth-1707">ciphers/whitworth-1707</a></p>
     </article>
     <article class="target state-waiting">
       <div class="t-head">
         <h3>Eckert Papers, US Military Telegraph <span class="year">1862-67</span></h3>
-        <span class="chip chip-waiting">Waiting on archive</span>
+        <span class="chips"><span class="chip chip-kind-contribution" title="What kind of result this target can give">Contribution</span> <span class="chip chip-waiting">Waiting on archive</span></span>
       </div>
       <div class="t-ref mono">Huntington mssEC 15 (1862); mssEC 19 ledger with cipher book mssEC 41 (1864)</div>
       <div class="pipe" role="img" aria-label="Stage 9 of 10: Novelty verified">
@@ -166,13 +173,14 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div><dt>Expected</dt><dd>One to three weeks</dd></div>
         <div><dt>What unblocks it</dt><dd>A reply saying no such dataset exists and it would be useful; then a capped corpus pass over the volunteer transcriptions with decode.py and decode_no2.py.</dd></div>
       </dl>
+      <p class="result"><b>Result so far:</b> Machine-readable Cipher No. 1 and No. 2 keys, 23 readings checked against print, an audit with N-classes, and a corpus-status finding, offered to the Huntington on 20 Sept 2026.</p>
       <p class="next"><b>Next:</b> Parked for cryptanalysis (every cipher in the ledger reads from a surviving book). An enquiry went to the Huntington curator on 20 Sept 2026 asking whether a corpus-level decoding dataset exists and whether one would be useful; their reply decides whether the mechanical corpus pass is run as an edition project.</p>
       <p class="note muted">Twenty 1864 entries read at grade H from cipher book mssEC 41; seventeen agree word for word with the Official Records, one with the printed Lincoln works, two (E4, E5) not found in the sources listed in AUDIT.md. Corpus question (AUDIT.md section 12): no one has mapped the ledger entries to cipher, key, plaintext and print; the project&#x27;s decoding phase was never launched (paused Jan 2018, ended July 2019). A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1862">ciphers/eckert-1862</a></p>
     </article>
     <article class="target state-blocked">
       <div class="t-head">
         <h3>Intercepted royalist letters <span class="year">1646</span></h3>
-        <span class="chip chip-blocked">Blocked</span>
+        <span class="chips"><span class="chip chip-kind-recovery" title="What kind of result this target can give">Recovery</span> <span class="chip chip-blocked">Blocked</span></span>
       </div>
       <div class="t-ref mono">BL Add MS 72438 ff. 9-10</div>
       <div class="pipe" role="img" aria-label="Stage 4 of 10: Key source located">
@@ -185,13 +193,14 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div><dt>Expected</dt><dd>Unknown. BL has restored services piecemeal</dd></div>
         <div><dt>What unblocks it</dt><dd>BL copying resumes for Add MS 72438 (f.11, ff.100-109 keys); DECODE login (DECODE_USER/DECODE_PASS in the environment) to read record 8725 for f.104.</dd></div>
       </dl>
+      
       <p class="next"><b>Next:</b> British Library viewer offline since 2023. When it returns, order f. 11 and check Bodleian Tanner 59-60 for the contemporary decipher.</p>
       <p class="note muted">Aymeloglu identified the cipher as Digby&#x27;s captured key no. 129 and fixed about 45 values. Scout 20 Sept: the volume is Weckherlin&#x27;s cipher-keys and intercepted royalist correspondence; f.104 (&quot;almost wholly in undecoded cipher&quot;) has DECODE record 8725 marked Decrypted, which needs the DECODE login to read before f.104 goes on any order. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/intercepted-royalist-1646">ciphers/intercepted-royalist-1646</a></p>
     </article>
     <article class="target state-active">
       <div class="t-head">
         <h3>Earl of Stair to Viscount Townshend <span class="year">1710</span></h3>
-        <span class="chip chip-active">Worker on it</span>
+        <span class="chips"><span class="chip chip-kind-undecided" title="What kind of result this target can give">Kind undecided</span> <span class="chip chip-active">Worker on it</span></span>
       </div>
       <div class="t-ref mono">Univ. of Kansas, Spencer Research Library, MS P556 (page 3 largely in code, undeciphered)</div>
       <div class="pipe" role="img" aria-label="Stage 2 of 10: Verified unsolved">
@@ -204,13 +213,14 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div><dt>Expected</dt><dd>Print check under an hour</dd></div>
         <div><dt>What unblocks it</dt><dd>The letter is not in print; you place the Kansas order from REQUEST.md.</dd></div>
       </dl>
+      
       <p class="next"><b>Next:</b> Verified 20 Sept 2026: KU catalogue confirms the item; six-source sweep found no solution; English plaintext likely. A worker is checking Graham&#x27;s Annals of Stair (1875) and the Townshend papers for the letter in print before you order. If still needed: four TIFF scans from Kansas, about $20, three business days (REQUEST.md).</p>
-      <p class="note muted">Two clear pages give cribs; one page of cipher is small, so the route is the same cipher in other Stair letters of 1710 (TNA SP 84, SP 87) with a contemporary decipher. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/stair-townshend-1710">ciphers/stair-townshend-1710</a></p>
+      <p class="note muted">Recovery if another Stair letter carries the key; cryptanalysis only if enough cipher turns up. Two clear pages give cribs; one page of cipher is small, so the route is the same cipher in other Stair letters of 1710 (TNA SP 84, SP 87) with a contemporary decipher. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/stair-townshend-1710">ciphers/stair-townshend-1710</a></p>
     </article>
     <article class="target state-you">
       <div class="t-head">
         <h3>Letter relating to Gen. Monck <span class="year">1659-60</span></h3>
-        <span class="chip chip-you">Needs you</span>
+        <span class="chips"><span class="chip chip-kind-undecided" title="What kind of result this target can give">Kind undecided</span> <span class="chip chip-you">Needs you</span></span>
       </div>
       <div class="t-ref mono">BL Add MS 32093 f.423 (Malet collection), &quot;partly in cipher, undeciphered. Imperfect.&quot;</div>
       <div class="pipe" role="img" aria-label="Stage 2 of 10: Verified unsolved">
@@ -223,13 +233,14 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div><dt>Expected</dt><dd>BL quotes are slow since 2023</dd></div>
         <div><dt>What unblocks it</dt><dd>A quote and a scan of f.423.</dd></div>
       </dl>
+      
       <p class="next"><b>Next:</b> Verified 20 Sept 2026: BL catalogue confirms the item; no solution found by the sweep; English plaintext near-certain. For you: ask BL Imaging Services for a quote for f.423 (REQUEST.md); a Reader Pass may be required, so ask whether they will quote remotely.</p>
       <p class="note muted">Key leads: Monck&#x27;s correspondence with Clarges and Hyde in the Clarendon State Papers and Thurloe. HMC 5th and 7th Reports describe the collection and can be checked in print first. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/monck-1660">ciphers/monck-1660</a></p>
     </article>
     <article class="target state-you">
       <div class="t-head">
         <h3>Unidentified 18th-century cipher manuscript <span class="year">18th c.</span></h3>
-        <span class="chip chip-you">Needs you</span>
+        <span class="chips"><span class="chip chip-kind-cryptanalysis" title="What kind of result this target can give">Cryptanalysis</span> <span class="chip chip-you">Needs you</span></span>
       </div>
       <div class="t-ref mono">National Library of Scotland MS 20769 (mixed Roman, Greek, astrological and invented symbols)</div>
       <div class="pipe" role="img" aria-label="Stage 1 of 10: Identified">
@@ -242,8 +253,9 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <div><dt>Expected</dt><dd>One minute when you are next at a browser</dd></div>
         <div><dt>What unblocks it</dt><dd>The record text; then a scan order if it is a cipher.</dd></div>
       </dl>
+      
       <p class="next"><b>Next:</b> The NLS catalogue page is blocked from cloud containers, so the record is known only from search snippets and the &quot;57 leaves&quot; figure is unverified. For you, one minute: open manuscripts.nls.uk, search MS 20769, and paste the full description (extent, physical description, provenance) here. Then decide on scans (about GBP 1.80 per A4 scan; REQUEST.md).</p>
-      <p class="note muted">Size is the point: a genuine cipher of dozens of leaves is above unicity for a homophonic system. Risk: a shorthand or private notation, not a cipher. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/nls-20769">ciphers/nls-20769</a></p>
+      <p class="note muted">Only if the catalogue confirms a cipher rather than a shorthand. Size is the point: a genuine cipher of dozens of leaves is above unicity for a homophonic system. Risk: a shorthand or private notation, not a cipher. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/nls-20769">ciphers/nls-20769</a></p>
     </article></div>
   </section>
 
@@ -261,7 +273,7 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
     </section>
     <section class="panel">
       <h2>Change log</h2>
-      <ul class="log"><li><span class="mono muted when">20 Sept, 04:05</span><span>Eckert: enquiry sent to the Huntington curator about a corpus-level decoding dataset; the reply decides the corpus pass.</span></li><li><span class="mono muted when">20 Sept, 03:44</span><span>Hamilton: blind six-source sweep found no solution or key anywhere; offline-only confirmed.</span></li><li><span class="mono muted when">20 Sept, 03:41</span><span>Eckert: key test outcome A. The headquarters entries are Cipher No. 2 and the Huntington&#x27;s copy reads them at grade H. No genuine target left in the ledger.</span></li><li><span class="mono muted when">20 Sept, 03:58</span><span>Three targets added from the scout: Stair 1710 (Kansas), Monck 1660 (BL), NLS MS 20769. Eckert parked: every cipher in the 1864 ledger reads from a surviving book.</span></li><li><span class="mono muted when">20 Sept, 03:37</span><span>Wellington: HathiTrust half of the dictionary hunt closed negative (19 editions via APIs). The browser tool cannot run in cloud containers until the proxy CA is trusted; APIs documented in the Access playbook.</span></li><li><span class="mono muted when">20 Sept, 03:38</span><span>Eckert 1864 audit: two of the four &quot;not printed&quot; telegrams were in print (one in the Official Records the solver had searched); the other two have no located prior print. Board stage set to Novelty verified; no first-decipherment claim survives.</span></li><li><span class="mono muted when">20 Sept, 03:15</span><span>Restarted after the usage limit: HathiTrust dictionary search (Wellington) and a new Cipher No. 2 key test (Eckert). The 1864 reading worker was archived; it had begun a duplicate audit of its own.</span></li><li><span class="mono muted when">20 Sept, 03:20</span><span>Process: CLAUDE.md rule 10 (novelty is a verifier&#x27;s verdict, N0-N5), solver/verifier split in the Workers section, new board stage &quot;Novelty verified&quot; before &quot;Solved&quot;.</span></li><li><span class="mono muted when">20 Sept, 00:03-03:00</span><span>All workers stopped by the five-hour usage limit; HathiTrust worker never ran.</span></li><li><span class="mono muted when">20 Sept, 03:07</span><span>Eckert 1864: novelty claim for four telegrams sent to a verifier session for adversarial audit. &quot;Not in the Official Records&quot; had been read as &quot;new&quot;; that was an over-claim.</span></li><li><span class="mono muted when">20 Sept, 00:00</span><span>Eckert 1864: twenty ledger entries read at grade H from cipher book mssEC 41; four were not matched to the Official Records by the sweep (claim audited 20 Sept 2026: two are in print, two are N3; see ciphers/eckert-1864/AUDIT.md).</span></li><li><span class="mono muted when">20 Sept, 00:02</span><span>Wellington: HathiTrust worker started; first live test of the browser fetch tool.</span></li><li><span class="mono muted when">19 Sept, 23:58</span><span>Wellington: dictionary search closed negative after 57 editions. Two asks for you before the 23 Sept sale: email Spink about a dictionary in the lot; HathiTrust search from a browser.</span></li><li><span class="mono muted when">19 Sept, 23:26</span><span>Wellington transcription worker finished (pass A log pushed) and archived. Dictionary search continues.</span></li><li><span class="mono muted when">19 Sept, 23:30</span><span>Eckert: first pilot done. Zooniverse never decoded the ledgers; ten 1862 telegrams read against the Official Records. Second pilot started on an 1864 ledger with the surviving cipher book.</span></li><li><span class="mono muted when">19 Sept, 23:00</span><span>Wellington: transcription pushed (73 groups, all with known plaintext). Dictionary research worker started.</span></li><li><span class="mono muted when">19 Sept, 22:50</span><span>Whitworth: worker pushed. Only one clause of SP 91/5/108 is actually unread; copy request drafted for ff. 108, 106, 121. Needs your decision.</span></li><li><span class="mono muted when">19 Sept, 22:35</span><span>Wellington: 17 auction images captured at full served size; transcription passes running.</span></li><li><span class="mono muted when">19 Sept, 22:40</span><span>Eckert Papers worker started (queue rank 1). Whitworth worker woken to push its drafted files.</span></li><li><span class="mono muted when">19 Sept, 22:30</span><span>Stepney: TNA page check ordered and paid, order 3660178.</span></li><li><span class="mono muted when">19 Sept, 22:15</span><span>Scout stopped after finishing the queue; it had begun attempting ciphers beyond its brief.</span></li><li><span class="mono muted when">19 Sept, 22:13</span><span>Two workers started: Wellington 1812 image capture, Whitworth 1707 lookup.</span></li><li><span class="mono muted when">19 Sept, 22:05</span><span>First scout run filed QUEUE.md: 40 scored, 163 kept unscored, 40 dropped.</span></li><li><span class="mono muted when">19 Sept, 21:14</span><span>Stepney: volume identified as SP 105/65 after the environment got network access.</span></li><li><span class="mono muted when">19 Sept, 20:15</span><span>Hamilton: copy request emailed to NRS for GD406/1/2197.</span></li><li><span class="mono muted when">19 Sept</span><span>Repo set up: catalogue, landscape, lessons, conventions, two workflows.</span></li></ul>
+      <ul class="log"><li><span class="mono muted when">20 Sept, 04:20</span><span>Board: every target now carries a kind label (recovery, cryptanalysis, contribution) and finished work shows a &quot;Result so far&quot; line.</span></li><li><span class="mono muted when">20 Sept, 04:05</span><span>Eckert: enquiry sent to the Huntington curator about a corpus-level decoding dataset; the reply decides the corpus pass.</span></li><li><span class="mono muted when">20 Sept, 03:44</span><span>Hamilton: blind six-source sweep found no solution or key anywhere; offline-only confirmed.</span></li><li><span class="mono muted when">20 Sept, 03:41</span><span>Eckert: key test outcome A. The headquarters entries are Cipher No. 2 and the Huntington&#x27;s copy reads them at grade H. No genuine target left in the ledger.</span></li><li><span class="mono muted when">20 Sept, 03:58</span><span>Three targets added from the scout: Stair 1710 (Kansas), Monck 1660 (BL), NLS MS 20769. Eckert parked: every cipher in the 1864 ledger reads from a surviving book.</span></li><li><span class="mono muted when">20 Sept, 03:37</span><span>Wellington: HathiTrust half of the dictionary hunt closed negative (19 editions via APIs). The browser tool cannot run in cloud containers until the proxy CA is trusted; APIs documented in the Access playbook.</span></li><li><span class="mono muted when">20 Sept, 03:38</span><span>Eckert 1864 audit: two of the four &quot;not printed&quot; telegrams were in print (one in the Official Records the solver had searched); the other two have no located prior print. Board stage set to Novelty verified; no first-decipherment claim survives.</span></li><li><span class="mono muted when">20 Sept, 03:15</span><span>Restarted after the usage limit: HathiTrust dictionary search (Wellington) and a new Cipher No. 2 key test (Eckert). The 1864 reading worker was archived; it had begun a duplicate audit of its own.</span></li><li><span class="mono muted when">20 Sept, 03:20</span><span>Process: CLAUDE.md rule 10 (novelty is a verifier&#x27;s verdict, N0-N5), solver/verifier split in the Workers section, new board stage &quot;Novelty verified&quot; before &quot;Solved&quot;.</span></li><li><span class="mono muted when">20 Sept, 00:03-03:00</span><span>All workers stopped by the five-hour usage limit; HathiTrust worker never ran.</span></li><li><span class="mono muted when">20 Sept, 03:07</span><span>Eckert 1864: novelty claim for four telegrams sent to a verifier session for adversarial audit. &quot;Not in the Official Records&quot; had been read as &quot;new&quot;; that was an over-claim.</span></li><li><span class="mono muted when">20 Sept, 00:00</span><span>Eckert 1864: twenty ledger entries read at grade H from cipher book mssEC 41; four were not matched to the Official Records by the sweep (claim audited 20 Sept 2026: two are in print, two are N3; see ciphers/eckert-1864/AUDIT.md).</span></li><li><span class="mono muted when">20 Sept, 00:02</span><span>Wellington: HathiTrust worker started; first live test of the browser fetch tool.</span></li><li><span class="mono muted when">19 Sept, 23:58</span><span>Wellington: dictionary search closed negative after 57 editions. Two asks for you before the 23 Sept sale: email Spink about a dictionary in the lot; HathiTrust search from a browser.</span></li><li><span class="mono muted when">19 Sept, 23:26</span><span>Wellington transcription worker finished (pass A log pushed) and archived. Dictionary search continues.</span></li><li><span class="mono muted when">19 Sept, 23:30</span><span>Eckert: first pilot done. Zooniverse never decoded the ledgers; ten 1862 telegrams read against the Official Records. Second pilot started on an 1864 ledger with the surviving cipher book.</span></li><li><span class="mono muted when">19 Sept, 23:00</span><span>Wellington: transcription pushed (73 groups, all with known plaintext). Dictionary research worker started.</span></li><li><span class="mono muted when">19 Sept, 22:50</span><span>Whitworth: worker pushed. Only one clause of SP 91/5/108 is actually unread; copy request drafted for ff. 108, 106, 121. Needs your decision.</span></li><li><span class="mono muted when">19 Sept, 22:35</span><span>Wellington: 17 auction images captured at full served size; transcription passes running.</span></li><li><span class="mono muted when">19 Sept, 22:40</span><span>Eckert Papers worker started (queue rank 1). Whitworth worker woken to push its drafted files.</span></li><li><span class="mono muted when">19 Sept, 22:30</span><span>Stepney: TNA page check ordered and paid, order 3660178.</span></li><li><span class="mono muted when">19 Sept, 22:15</span><span>Scout stopped after finishing the queue; it had begun attempting ciphers beyond its brief.</span></li><li><span class="mono muted when">19 Sept, 22:13</span><span>Two workers started: Wellington 1812 image capture, Whitworth 1707 lookup.</span></li><li><span class="mono muted when">19 Sept, 22:05</span><span>First scout run filed QUEUE.md: 40 scored, 163 kept unscored, 40 dropped.</span></li><li><span class="mono muted when">19 Sept, 21:14</span><span>Stepney: volume identified as SP 105/65 after the environment got network access.</span></li><li><span class="mono muted when">19 Sept, 20:15</span><span>Hamilton: copy request emailed to NRS for GD406/1/2197.</span></li><li><span class="mono muted when">19 Sept</span><span>Repo set up: catalogue, landscape, lessons, conventions, two workflows.</span></li></ul>
     </section>
   </div>
 

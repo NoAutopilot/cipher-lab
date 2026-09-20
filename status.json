@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 04:05 UTC",
+  "updated": "20 September 2026, 04:20 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -22,13 +22,14 @@
       "state": "waiting",
       "holder": "Archive",
       "next": "NRS to send a quote for images of the five key sheets. Then pay, then apply the key to the 102 groups.",
-      "note": "Copy request emailed 19 Sept 2026. Cipher is 102 groups across four letters; unreadable without the key, which the catalogue lists as open.",
+      "note": "If the NRS sheets do not cover the cipher, this becomes cryptanalysis. Copy request emailed 19 Sept 2026. Cipher is 102 groups across four letters; unreadable without the key, which the catalogue lists as open.",
       "wait": {
         "on": "A quote from National Records of Scotland for images of the five key sheets, GD406/1/2197",
         "since": "19 Sept 2026",
         "expected": "1 to 3 weeks for a quote; images some weeks after payment",
         "unblock": "NRS replies. If they need depositor consent, that is a second wait. Fallback: John Wallis's papers at the Bodleian."
-      }
+      },
+      "kind": "recovery"
     },
     {
       "name": "George Stepney to the Earl of Manchester",
@@ -45,7 +46,8 @@
         "since": "19 Sept 2026",
         "expected": "Page check on a weekday, usually within 2 weeks; copy 2 to 4 weeks after payment",
         "unblock": "TNA finds the 23 March 1702 entry. If they report no such entry, switch to SP 80/18 or the Stepney Papers at the BL."
-      }
+      },
+      "kind": "recovery"
     },
     {
       "name": "Wellington to General Maitland",
@@ -56,13 +58,14 @@
       "state": "you",
       "holder": "You",
       "next": "HathiTrust closed 03:37 UTC: 19 more editions tested through the Bibliographic and Extracted Features APIs, none matches (76 editions in all); Scott, Jones 1800, London Perry, Walker 1810 and Dublin Entick are not in HathiTrust at all. For you before 23 Sept: ask Spink whether lot 1184 includes a pocket dictionary. Remaining leads need a library: Urban pp. 232-233, the Bentinck papers (Nottingham Pw Jd), WO 37.",
-      "note": "Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick's 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item.",
+      "note": "The key is a printed dictionary; finding the edition is recovery, not a crack. Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick's 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item.",
       "wait": {
         "on": "You: one email to Spink before the 23 Sept sale",
         "since": "20 Sept 2026, 03:37 UTC",
         "expected": "Before 23 Sept 2026",
         "unblock": "Spink confirms or denies a dictionary in the lot; or a library check of Urban and the Bentinck papers."
-      }
+      },
+      "kind": "recovery"
     },
     {
       "name": "Charles Whitworth to Robert Harley",
@@ -79,7 +82,9 @@
         "since": "19 Sept 2026",
         "expected": "Whenever you choose; TNA then takes 2 to 4 weeks",
         "unblock": "Order placed. If you decide it is not worth it, mark it parked and it drops down the queue."
-      }
+      },
+      "kind": "contribution",
+      "result": "Four of five \"undeciphered\" items were already in print; the finding corrects the catalogue."
     },
     {
       "name": "Eckert Papers, US Military Telegraph",
@@ -96,7 +101,9 @@
         "since": "20 Sept 2026",
         "expected": "One to three weeks",
         "unblock": "A reply saying no such dataset exists and it would be useful; then a capped corpus pass over the volunteer transcriptions with decode.py and decode_no2.py."
-      }
+      },
+      "kind": "contribution",
+      "result": "Machine-readable Cipher No. 1 and No. 2 keys, 23 readings checked against print, an audit with N-classes, and a corpus-status finding, offered to the Huntington on 20 Sept 2026."
     },
     {
       "name": "Intercepted royalist letters",
@@ -113,7 +120,8 @@
         "since": "2023",
         "expected": "Unknown. BL has restored services piecemeal",
         "unblock": "BL copying resumes for Add MS 72438 (f.11, ff.100-109 keys); DECODE login (DECODE_USER/DECODE_PASS in the environment) to read record 8725 for f.104."
-      }
+      },
+      "kind": "recovery"
     },
     {
       "name": "Earl of Stair to Viscount Townshend",
@@ -124,13 +132,14 @@
       "state": "active",
       "holder": "Worker",
       "next": "Verified 20 Sept 2026: KU catalogue confirms the item; six-source sweep found no solution; English plaintext likely. A worker is checking Graham's Annals of Stair (1875) and the Townshend papers for the letter in print before you order. If still needed: four TIFF scans from Kansas, about $20, three business days (REQUEST.md).",
-      "note": "Two clear pages give cribs; one page of cipher is small, so the route is the same cipher in other Stair letters of 1710 (TNA SP 84, SP 87) with a contemporary decipher.",
+      "note": "Recovery if another Stair letter carries the key; cryptanalysis only if enough cipher turns up. Two clear pages give cribs; one page of cipher is small, so the route is the same cipher in other Stair letters of 1710 (TNA SP 84, SP 87) with a contemporary decipher.",
       "wait": {
         "on": "Worker (print check), then you (Kansas order, about $20)",
         "since": "20 Sept 2026, 03:58 UTC",
         "expected": "Print check under an hour",
         "unblock": "The letter is not in print; you place the Kansas order from REQUEST.md."
-      }
+      },
+      "kind": "undecided"
     },
     {
       "name": "Letter relating to Gen. Monck",
@@ -147,7 +156,8 @@
         "since": "20 Sept 2026, 03:58 UTC",
         "expected": "BL quotes are slow since 2023",
         "unblock": "A quote and a scan of f.423."
-      }
+      },
+      "kind": "undecided"
     },
     {
       "name": "Unidentified 18th-century cipher manuscript",
@@ -158,13 +168,14 @@
       "state": "you",
       "holder": "You",
       "next": "The NLS catalogue page is blocked from cloud containers, so the record is known only from search snippets and the \"57 leaves\" figure is unverified. For you, one minute: open manuscripts.nls.uk, search MS 20769, and paste the full description (extent, physical description, provenance) here. Then decide on scans (about GBP 1.80 per A4 scan; REQUEST.md).",
-      "note": "Size is the point: a genuine cipher of dozens of leaves is above unicity for a homophonic system. Risk: a shorthand or private notation, not a cipher.",
+      "note": "Only if the catalogue confirms a cipher rather than a shorthand. Size is the point: a genuine cipher of dozens of leaves is above unicity for a homophonic system. Risk: a shorthand or private notation, not a cipher.",
       "wait": {
         "on": "You: read the live catalogue record",
         "since": "20 Sept 2026, 03:58 UTC",
         "expected": "One minute when you are next at a browser",
         "unblock": "The record text; then a scan order if it is a cipher."
-      }
+      },
+      "kind": "cryptanalysis"
     }
   ],
   "workers": [
@@ -305,6 +316,10 @@
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 04:20",
+      "what": "Board: every target now carries a kind label (recovery, cryptanalysis, contribution) and finished work shows a \"Result so far\" line."
+    },
     {
       "when": "20 Sept, 04:05",
       "what": "Eckert: enquiry sent to the Huntington curator about a corpus-level decoding dataset; the reply decides the corpus pass."
