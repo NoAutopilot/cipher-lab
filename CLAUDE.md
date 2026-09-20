@@ -181,6 +181,18 @@ Once a series is identified as useful (a ledger, a volume, a cipher book), fetch
 manifest (URLs, ids, sizes) in the target folder, so later workers do not refetch. Keep committed images under
 30 MB per folder; for more, keep the manifest and a sample and note where the rest can be re-fetched.
 
+
+## Improvement loop
+
+The orchestrator writes a LEDGER.md row when it archives a worker (role, model, cost, outcome code, lesson).
+Briefs are copies of the templates in `.claude/briefs/`; a lesson becomes a template edit, not a note. A
+retrospective session (`.claude/briefs/retrospective.md`) runs weekly on a schedule and after any worker
+scored X or F, reads the ledger and the week's log, and proposes at most five concrete changes as diffs in
+RETRO-<date>.md. The orchestrator applies changes that only touch briefs, tools or workflows, records them in
+the ledger, and puts anything that changes the goal, the spend or the person's asks to the person with a
+recommendation. Success is measured as cost per delivered result by role, share of workers that stop on
+brief, over-claims caught before the person sees them, and whether the top of the queue produces results.
+
 ## Git
 
 Commit directly to `main`. No pull requests unless asked. Stage by explicit path when several sessions share
