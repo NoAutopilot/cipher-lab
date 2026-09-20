@@ -182,3 +182,20 @@ route suggested there: Bodleian Tanner MSS 59-60 and TNA SP 16/514.
 to key no.129 for f.9 or f.10 turned up in Cary's Memorials, the Lords/Commons Journals on the exact dates, a
 second-route Rushworth full-text search, print references to Digby's captured cipher keys, or TNA Discovery's
 catalogue descriptions. This does not change REQUEST.md.
+
+## DECODE record 8725, read 20 Sept 2026
+
+First use of the DECODE (de-crypt.org) login from this environment. The login flow itself now works and is
+recorded in `CLAUDE.md`'s Access playbook item 3, with `tools/decode_fetch.sh` as the reusable helper — but
+the `DECODE_USER`/`DECODE_PASS` credentials set in this environment were **rejected** by the server
+("Incorrect user name or password", confirmed by screenshot after a real form submission with a fresh CSRF
+token; not a client-side or scripting fault, since a plain curl replication of the exact browser request
+failed identically). Record 8725 (f.104) could therefore **not be read** this session: its "Decrypted" status
+basis — who deciphered it, when, whether a plaintext or key file is attached, contemporary vs. modern — is
+still unknown. This is not "unset credentials" (rule out that case first: both variables are set, non-empty,
+no stray whitespace) but a rejected login; do not retry it repeatedly against the live account, since the
+site's own phrase table warns of an account lock after too many failed attempts. Getting a login that the
+server accepts is now a task for the person (new/corrected credentials), not a technical blocker.
+
+No images or files for 8725 were fetched (login never succeeded), so `/tmp/decode/8725` holds nothing beyond
+`tools/decode_fetch.sh`'s own failure marker, and nothing from this session is committed under `images/`.
