@@ -64,7 +64,7 @@ def load_key(path=HERE / "key.md"):
             kind = "line"
         elif low in PUNCT:
             kind = "punct"
-        elif low == "signature":
+        elif low in ("signature", "signed"):
             kind = "sig"
         for w in word.split("/"):
             table[w.strip().lower()] = (meaning, grade[0], kind)

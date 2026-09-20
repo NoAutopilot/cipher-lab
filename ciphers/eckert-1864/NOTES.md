@@ -1,7 +1,7 @@
 # Eckert Papers, 1864 "Ciphers Sent" ledger (Huntington mssEC 19) read with Cipher No. 1 (mssEC 41)
 
 status: partial
-checked: 19 Sept 2026
+checked: 20 Sept 2026 (section 8 added; sections 1-7 as checked 19 Sept 2026)
 target: QUEUE.md rank 1, "Thomas T. Eckert Papers, US Military Telegraph: ledgers of telegrams sent 'still in
 code', 1862-67 (Huntington mssEC 1-76)". Second pilot, recommended in ciphers/eckert-1862/NOTES.md section 5:
 one 1864 sent ledger read entry by entry against the filled-in cipher book the Huntington holds.
@@ -48,8 +48,9 @@ project's decoding phase ("Phase 3") was planned and never launched (AUDIT.md, "
   different punctuation set ("tulip", "pike", "yacht", "yawl", "yard", "star"); "For Crowd" to Grant in April
   (Crowd = Knoxville in No. 1), "For Mastiff" to Canby (Mastiff = Prentiss in No. 1). This is the separate
   headquarters cipher Tomokiyo discusses under "General Grant's special cipher" (Halleck to Grant, 22 Jan
-  1864) or Cipher No. 2 (mssEC 47-48, "used at least in June 1864"). Not pursued here; those entries were
-  dropped from the selection (four Beckwith, three Kimber, one Caldwell/Meade entry among the 29 candidates).
+  1864) or Cipher No. 2 (mssEC 47-48, "used at least in June 1864"). Those entries were dropped from the
+  selection (four Beckwith, three Kimber, one Caldwell/Meade entry among the 29 candidates). Settled on
+  20 Sept 2026: it is Cipher No. 2, and mssEC 47 reads them at grade H (section 8, key-no2.md, reading-no2.md).
 
 ## 3. The key (key.md)
 
@@ -119,8 +120,8 @@ received books.
 - The remaining 1864-65 entries of mssEC 19 (about 550) and mssEC 18 in Cipher No. 1 can now be read with
   decode.py by transcribing them; the vocabulary is complete but for the post-book additions (section 7 of
   key.md: the later copies mssEC 42-46 and the Friedman addenda of 9 Sept 1864 carry them).
-- The Beckwith and Kimber entries need the headquarters cipher: test mssEC 47-48 (Cipher No. 2, 46 pages
-  each) on "For Crowd" / "For Mastiff" / "tulip" first; if they fail, that cipher is not in the collection.
+- The Beckwith, Kimber and Caldwell entries (about 190 pages of mssEC 19 carry one or more, by the volunteer
+  text) can now be read with decode_no2.py and key-no2.md (section 8); three are read.
 - The Jan-Feb 1864 entries in the old vocabulary can be read with mssEC 67 (No. 9) or the No. 12 template.
 - Not done: no negative was claimed, so no control was needed (rule 3).
 
@@ -134,6 +135,11 @@ received books.
   E7 come from the ledger, not the print.
 - 19 Sept 2026: the mssEC 44 leaf "15½" (Tomokiyo's handwritten addenda) is a list of Georgia places for the
   Atlanta campaign, not the missing addressee words.
+- 20 Sept 2026: on the blue leaf [25B] of mssEC 47 the copyist's Names column runs one line out against the
+  Arbitraries column for rows 4-8 ("Page 32", a cross-reference, sits in the Names column); the ledger fixes
+  Radical = officer and Repeat = order, and the four affected rows are graded C or I in key-no2.md, not H.
+- 20 Sept 2026: one of the 37 book images fetched at 1200 px for the repo (pointer 575) arrived truncated and
+  was refetched; the transcription used separate 1600 px and 2400 px copies and was not affected.
 - 19-20 Sept 2026: the subagent sweeping mssEC 42, 45 and 46 for the addressee words mssEC 41 lacks was killed
   by the account's session rate limit after reaching mssEC 45, and wrote no output. Nothing was lost: the eight
   words concerned are graded C from the Official Records in key.md section 7, and the readings do not depend on
@@ -143,13 +149,53 @@ received books.
 ## 7. Credits and sources
 
 - Images and transcriptions: Thomas T. Eckert Papers, The Huntington Library, San Marino, California (mssEC 19,
-  41, 43, 44, 47); volunteer transcriptions of the ledger by Decoding the Civil War (2016-2017), NHPRC-funded,
+  41, 43, 44, 47, 48); volunteer transcriptions of the ledger by Decoding the Civil War (2016-2017), NHPRC-funded,
   used as the third witness.
-- Cipher identification and the No. 1 examples: S. Tomokiyo, Cryptiana, "Union Codes and Ciphers during the
-  Civil War" (civilwar1.htm, snapshot in sources/); W. R. Plum, The Military Telegraph during the Civil War
+- Cipher identification, the No. 1 examples and the No. 2 example (Canby to Halleck, 19 June 1864, from Plum
+  p.53): S. Tomokiyo, Cryptiana, "Union Codes and Ciphers during the Civil War" (civilwar1.htm, snapshot in
+  sources/); W. R. Plum, The Military Telegraph during the Civil War
   (1882) as quoted there; Richard Bean's Milroy solve (2026) and D. Bourdeau, cyphersolver/milroy (MIT, CC BY
   4.0) for the route side of the Stager ciphers, consulted for the 1862 pilot on which this one builds.
 - Known plaintext: The War of the Rebellion, ser. I, vols 32-45 (Internet Archive full texts); for E12 the 1864
   pamphlet, Nicolay and Hay and Basler cited in AUDIT.md.
 - Novelty audit: AUDIT.md (verifier session, 20 Sept 2026). No entry in this folder is at N4 or N5; none may be
   described outside the repo as a first decipherment or as unpublished plaintext.
+
+## 8. The headquarters cipher is Cipher No. 2: mssEC 47 read on three Beckwith and Kimber entries (20 Sept 2026)
+
+Outcome A of the brief of 20 Sept 2026. The Huntington's "Cipher Book #2" copies are mssEC 47 (object 596,
+48 page images, catalogued "approximately 1866" from the loose 1866 sheets laid in) and mssEC 48 (object 636,
+39 images). mssEC 47 was fetched in full by the IIIF route of the Access playbook (curl with a browser
+User-Agent; manifest in images/manifest.json, the 37 written pages committed at 1200 px) and transcribed in one
+pass by five subagents (1,482 rows: TIME page, eight route pages, sixteen arbitraries pages, the handwritten
+pages 27-30, the blue leaves [25A]-[25C], the numerals page "26"), key-no2.md. Its holders' list is Eddy (HQ
+Sherman), Fuller (New Orleans), Caldwell (HQ Army of the Potomac), Beckwith (HQ Grant), McCaine (HQ Sheridan);
+mssEC 48's is Eckert (Washington), Beckwith (HQ Grant), Stager (Cleveland) and Bulkley (New Orleans), i.e. the
+"two individuals" distribution of Halleck's letter to Grant of 22 Jan 1864 (Tomokiyo, "General Grant's Special
+Cipher"), so the cipher Tomokiyo could not identify from the correspondence is in all likelihood this one.
+
+The cheap check succeeded at once: page 13 gives Chart and Crowd = Lieut Gen U.S. Grant, page 18 Mastiff =
+Canby, pages 23 and 25 Tulip, Yacht and Yardstick = Period, page 20 Pike = Comma, page 25 Yawl = Signed, and
+Star = Infantry (page 22; the "star" of section 2 was a guess at punctuation and is a noun). Tomokiyo's own
+worked example of Cipher No. 2 is a Kimber telegram from New Orleans containing tulip, yacht and mastiff.
+
+Test on three entries printed in the Official Records (ciphertext-no2.txt, reading-no2.md, `python3
+decode_no2.py --check`): Halleck to Grant 16 Apr 1864 11 AM (OR I/34 pt 3 p.169), Halleck to Grant 29 Apr 1864
+2.15 PM (OR I/34 pt 3 p.331) and Halleck to Canby 6 June 1864 12.30 PM (OR I/34 pt 4 p.240), transcribed from
+the 2583 px page images with the volunteer text as second witness. All three read word for word against the
+print; code-word tokens H 111, C 4, I 4, M 1. The C and I tokens are the clerk's "Yard" for Yardstick, "whim"
+(telegram, not in the book), "reswindling" (re + Swindle = move) and the two words of the misaligned blue-leaf
+rows (section 6 above). Differences from the print: the ledger sends "2,000 cavalry" where the OR prints 5,000
+(16 Apr), and the OR rounds the time of 29 Apr to 2.30 p.m. (the ledger's own time word says 2.30 PM and its
+header 2.15 PM). Per rule 4 this is an H reading; per rule 10 nothing is said here about novelty: the three
+telegrams are printed in the Official Records, which is what made them usable as the control.
+
+What this opens: the Beckwith, Kimber and Caldwell entries of mssEC 19 (the volunteer text names one of the
+three operators on about 190 of the 403 transcribed pages, from 15 Feb 1864 to 1865) can now be read with
+decode_no2.py by transcribing them, as the No. 1 entries can with decode.py. The route pages of mssEC 47 (a
+handwritten figure before each blind word, as Tomokiyo noted) would be needed for the received books mssEC 09-
+13, where the transposed text may be recorded. mssEC 48 was not transcribed; its tables should be the same
+cipher and could settle the [25B] alignment and the "[?]" readings of key-no2.md. Not done: a second
+transcription pass of mssEC 47 (the three readings against the print are the only control on the 1,482 rows),
+and the seven other Beckwith/Kimber/Caldwell candidates of the 19 Sept selection.
+

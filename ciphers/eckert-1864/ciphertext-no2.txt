@@ -1,0 +1,61 @@
+# Three entries from Huntington Library mssEC 19, "United States Military Telegraph, War Department. Sent"
+# (object 9302), addressed to S. H. Beckwith at Grant's headquarters (Culpeper) and S. P. Kimber with Canby
+# (New Orleans), chosen on 20 Sept 2026 to test whether the Cipher No. 2 book mssEC 47 is the headquarters
+# cipher of NOTES.md section 2. Transcribed 20 Sept 2026 by the orchestrator from the page images in images/
+# (2583 px wide, IIIF), with the Decoding the Civil War volunteer transcription (2016-2017, on the item pages)
+# as second witness; the two agree on every code word (the volunteer text has "Chant" for the ledger's "Chart"
+# in E-B). Same conventions as ciphertext.txt: first line the ledger's own header, then one manuscript line per
+# line, spelling as written; " = " marks the clerk's syllable splits; word[?] doubtful; "plain:" lines mark tokens
+# that are plain English although the book prints them as code words. Pencilled annotations on the entries
+# (small figures over the first words, "sent 12 m from Book ...", "144 w", "Tinker") are the operators' service
+# notes and are given in reading-no2.md, not here. Block header: ### id | ledger page | pointer | date, addressee.
+
+### N2-A | Page 38 | 8930 | 16 Apr 1864 11 AM, Halleck to Grant at Culpeper (operator S. H. Beckwith)
+S H. Beckwith "ch" (2)   Washn Apr. 16th 1864 11. AM
+Fanny Knapp Genesis For Madrid Tulip Meriden repeated as directed
+Yard Despatch from Lapland dated Brooks instant at Banjo Pike
+says Odor went up Altar that day the Sheffields having
+been detained at the rapids by low water Pike hopes
+to reach She reeves port by the French yacht Neptune
+says Lafitte with Arnold Dwight Pekin is Swindling from Flint
+to Webster & California Tulip Brooks Waynes of Lonesomes Princeton
+have reached Bunyan viz Baker Bethel & Edwards Babel Yacht
+Legend has asked for Arnold more Panamas trifle repeated to
+him Wherry Yard I will send you copy of Laplands
+letter yawl Lamb Tulip another
+plain: Webster Despatch
+
+### N2-B | Page 60 | 8952 | 29 Apr 1864 2.15 PM, Halleck to Grant at Culpeper (Beckwith)
+S. H. Beckwith  Sumter quarter  "ch"   Wash'n Apr. 29th 1864 2.15 P. M
+For Chart Tulip Your whim of Elizabeth has
+been received and submitted to the Comb yard
+You do not name any radical for the
+trans Berlin Princeton Pike Did you propose to
+leave Lapland in the Spark Prospect Pike or
+only of his present quotient Pike or to
+super = cede him entirely Stanhope I will immediately
+write you confi dential ly the difficulties in
+the way of reswindling Chumb as I under
+stand them yawl Embrace Genesis Nelson Franklin Henrietta
+
+### N2-C | Page 88 | 8980 | 6 June 1864 12.30 PM, Halleck to Canby (operator S. P. Kimber)
+S. P. Kimber   Washn June 6th 1864 12.30 P. M
+Huron June Dawson Topsy For Mastiff Tulip Arnold Rockland
+Officers Pike Spunky Albert and Lieut Holdgate Pike were
+ordered to Watson to you yacht This will make
+Clarke in your Queen yardstick Ordnance Vermont and Commissary
+quotients have been notified of your want of Officers
+in those quotients yacht Palestine Jay W Davidson has
+been ordered from Honduras to Watson to you tulip
+Panther I know what Sparks you wish to relieve
+I can probably make an exchange for others yacht
+As the Salem in Quotient of Bremen is much
+reduced it is important that Nutmeg should prevent guerrillas
+bands from going to that state tulip If they
+pass his lines he should pursue yacht Madrid suggests
+that that if wharf can be spared from World
+Aurora a Sable be sent under Maxim or Luna
+against Garden yacht Perhaps the Security of Fortunes virtue
+and the prevention of raids in to Bremen will
+absorb all your spare saffrons yawl Battle warm day
+plain: Ordnance pass
