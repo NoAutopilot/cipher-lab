@@ -180,6 +180,13 @@ Getting the material is most of the work. Try routes in this order and record wh
    has set GOOGLE_BOOKS_KEY in the environment (20 Sept 2026): append `&key=$GOOGLE_BOOKS_KEY` to every
    `www.googleapis.com/books/v1/volumes` call. Full-text hits still need the volume to be full view; use
    `filter=full` and read pages through the volume's `accessInfo` links. Never print the key.
+   Internet Archive: IA_USER and IA_PASS (set 20 Sept 2026) let a worker borrow a lending-only book for one
+   hour and read its pages (the `internetarchive` Python library's `ia configure` flow, or the web login with
+   a cookie jar; the loan endpoint is /services/loans/loan/ with action browse_book, then the page images
+   through the BookReader endpoints). Rules: one book at a time, for a named page check, returned when done,
+   never bulk; the account is for the person's own reading. Search-inside and the full-text API need no login.
+   JSTOR: JSTOR_USER and JSTOR_PASS (set 20 Sept 2026) give 100 article reads a month for the verifier's
+   scholarship checks; log the article and date in AUDIT.md and never print the credentials.
 4. **The person.** Paywalls (State Papers Online, Gale), copy orders, payments, emails to archives and dealers,
    and captchas the browser cannot pass. Write the exact request into the target's `REQUEST.md`, mark the
    target "waiting on you" in the report, and stop. Batch several asks into one REQUEST.md rather than
