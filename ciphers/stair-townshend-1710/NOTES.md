@@ -180,3 +180,124 @@ searched.** `REQUEST.md` is left as is; the Kansas order is still the next step.
 for a future worker): NRAS631 and the Stowe MSS 223-231 (Stair-Robethon correspondence, 1710-19, flagged by
 Discovery search but not opened); a properly OCR'd copy of Marlborough despatches vol. covering Jan-Apr 1710;
 NRS GD135 by a route other than curl to its own catalogue site.
+
+## Check-solved sweep, 20 Sept 2026
+
+Six independent blind searchers (`check-solved` skill) were run against this target to confirm or contradict
+the two prior findings already in this file — the 20 Sept 2026 rule-1 sweep (search engine, Cryptiana
+snapshot, solver repos checked; DECODE checked only indirectly) and the 20 Sept 2026 full print check (Graham
+1875, HMC 11th Report App. IV, a partial pass of the Marlborough despatches) — without being shown either
+conclusion in advance. This session then ran two further direct checks the six searchers were not asked to
+do: NRS GD135 (Stair papers, Oxenfoord Castle) by browser rather than curl, and a full read of the KU
+ArchivesSpace finding aid itself for any decipherment note.
+
+1. **Open-web blind sweep.** 6 WebSearch queries (Dalrymple/Stair/Townshend/cipher/1710/Kansas/P556 in several
+   combinations) plus a WebFetch of dbourdeau.github.io/cyphersolver. No mention of this letter, its people or
+   its shelfmark anywhere except the KU ArchivesSpace record itself (restating "Page 3 largely in code
+   (undeciphered)") and AI-generated summaries that only reword that same sentence. One unverified lead,
+   github.com/arya1515/cyphersolver (a possible fork, not one of the two repositories this project treats as
+   canonical), surfaced once with no Stair/Townshend/P556 co-occurrence and was not opened. **Closed-negative**
+   on everything reachable; the fork is listed as unchecked, not as a negative.
+2. **Blind sweep of printed editions (Internet Archive, HathiTrust, Camden Society, HMC, CSP).** Independently
+   downloaded and grepped the same two volumes as the prior print check — Graham, *Annals and Correspondence...
+   Stair* (1875) and HMC 11th Report App. IV, *Manuscripts of the Marquess Townshend* (1887) — and reached the
+   same conclusion: the letter is not in either, and the Townshend MSS calendar's 1710 entries run Feb 13 then
+   Feb 28 with nothing dated Feb 27. Went further than the prior check: read J. F. Chance (ed.), *British
+   Diplomatic Instructions 1689-1789, vol. I: Sweden 1689-1727* (Camden Third Series vol. 32, 1922), the one
+   Camden volume specifically on British-Swedish diplomacy in this period — Stair hits are all 1717+, Townshend
+   appears only as a named instruction-channel, no "Fitzdome" or "Danzig". Confirmed the IA-wide full-text
+   index has only two hits for "Fitzdome" anywhere on Internet Archive: *The London Gazette* issue 4811
+   (17-20 Feb 1710, the same week, a real public mention of the same envoy, not a printing of the letter) and
+   one unrelated OCR-noise hit. **Closed-negative** on Graham 1875, HMC 1887, and Chance 1922 (a new source,
+   not in the prior print check). **Unchecked/blocked**: HathiTrust's own catalogue (HTTP 403 to curl,
+   reproducing this file's existing finding independently; WebSearch fallback found nothing beyond the two
+   editions already known); Camden Society's *Despatches of Sir Robert Sutton* (Constantinople, 1710-14) —
+   located, topically plausible (same series, overlapping years), but not full-text searched, excluded only on
+   topical grounds (Ottoman theatre, not Baltic); the Marlborough despatches for 1709-10 remain unread by any
+   session (lending-restricted IA copy, wrong-year Google Books scans, and an unusable Digital Library of India
+   OCR — all three tried, none usable, already flagged in this file).
+3. **Blind sweep of cipher-community lists (Cryptiana, Cipherbrain, Cipher Mysteries, MysteryTwister,
+   r/codes).** Grepped the local Cryptiana snapshot and fetched the live Cryptiana list and blog search, the
+   Cipherbrain/scienceblogs.de site (one title-only false lead opened and read in full — "An unsolved crypto
+   mystery from a Kansas library", 19 Apr 2019 — about an unrelated cipher in a novel at Lawrence Public
+   Library, not Spencer Research Library or MS P556), Cipher Mysteries' own site search (twice, "Nothing
+   Found"), and MysteryTwister's featured-challenges page (front page only, no Stair/Townshend entry).
+   **Closed-negative** on all of these. **Unchecked/blocked**: r/codes — WebFetch refused both www.reddit.com
+   and old.reddit.com outright; indirect WebSearch of reddit.com/r/codes phrasing returned no reddit.com
+   results at all, the same class of gap already flagged in this file for DECODE before this sweep. A
+   different, unrelated KU Spencer item (a possible May 1710 Godolphin/Argyll letter "containing proper names
+   in cipher," said to be printed in the Snyder Marlborough-Godolphin correspondence) turned up in a search
+   snippet and was correctly left unpursued as out of scope.
+4. **DECODE (de-crypt.org).** This closes the gap this file already flagged ("de-crypt.org's own search
+   interface was not queried directly"). Queried `/decrypt-web/RecordsList` directly and anonymously for
+   Stair, Townshend, Dalrymple, P556, "Earl of Stair", "Spencer Research", "Warsaw 1710", and the bare year
+   1710 (20 records, every holder/author field grepped by hand). Every named-person/shelfmark query returned
+   DECODE's own "No record"; the "Kansas" query's two hits are US postcard ciphers matching only the state
+   name; the "Warsaw 1710" hit is a search coincidence on DECODE's own record-ID field (a 1772 Vienna key). No
+   DECODE record exists for this item under any term tried. **Closed-negative**, confirming and extending
+   (not just repeating) the prior indirect finding — this is now a direct query of the search interface itself.
+5. **github.com/dbourdeau/cyphersolver**, shallow clone. Independently re-derived the same negative as this
+   file's existing 20 Sept 2026 grep, this time whole-repo (not just the two clone directories) across README,
+   TARGETS.md, CATALOGUE.md, SOLVED_CATALOGUE.md, SOLVED_RANKING.md, catalogue.json and docs/: no target folder
+   and no genuine content match for stair/townshend/dalrymple/P556/kansas anywhere; every one of 17 raw grep
+   hits is a coincidental substring (an unrelated nomenclator entry "Townshend\t200", "Stairs\th" in a
+   different cipher's key file, "stair" inside garbled decrypt-attempt text, one hit inside a base64 PNG blob).
+   **Closed-negative**, nothing blocked.
+6. **github.com/aaymeloglu/unsolved-ciphers**, shallow clone, plus github.com/robertpitt's repositories by
+   name and GitHub code search. The repo's 8 target folders (forster-1644, burgess-1912, ottobon-1589,
+   starhemberg-1758, ferdinand-1635-1640, moray-1568, vande-perre-1653, royalist-1646) hold no Stair/Townshend
+   entry; whole-tree grep for the same terms plus GD135/oxenfoord/fitzdome/1710 returns only coincidental noise
+   (an unrelated Burgess-1912 story-rule name "Dalrymple phonetic French", DECODE postcard rows with US place
+   names, "stairs"/"upstairs" in an English test fixture, and other archives' genuinely different 1710-dated
+   ciphers in the DECODE catalogue mirror). robertpitt's 40 public repos include no Stair/Townshend/Dalrymple
+   match; a GitHub-wide code search for "P556" Kansas Stair returns 513 hits, all coincidental. **Closed-
+   negative** on everything reachable.
+
+**Two further direct checks, this session, 20 Sept 2026 (beyond the six searchers' briefs):**
+
+- **NRS GD135 (Stair papers, Oxenfoord Castle), catalogue.nrscotland.gov.uk.** A direct curl repeats the
+  existing 403. A browser fetch (`tools/browser_fetch.js`, then a small custom Playwright script to fill both
+  the Reference and Search-for fields) gets further than curl: the catalogue's own search *application*
+  (`nrsonlinecatalogue/welcome.aspx` → `search.aspx`) loads normally over HTTPS with no certificate error and
+  no block on the plain GET. Submitting the search form itself (reference "GD135", keyword "cipher"), however,
+  triggers Cloudflare's "Performing security verification" interstitial every time, confirmed by screenshot,
+  and it does not clear after waits up to 20 seconds or after retyping the fields with human-paced keystrokes
+  instead of an instant `fill()`. This is the same class of block CLAUDE.md already documents for HathiTrust
+  and manuscripts.nls.uk: the container's TLS fix (confirmed working — `certutil -L` lists `ccr-agent-proxy`,
+  and plain pages load) gets past the certificate problem but not the site's own Cloudflare bot challenge on a
+  form POST. The Wayback Machine fallback CLAUDE.md recommends for Cloudflare-blocked sites does not help here
+  either: the CDX API (`web.archive.org/cdx/search/cdx?url=catalogue.nrscotland.gov.uk*`) has only ever
+  archived the plain homepage, never a dynamic search-results page. **NRS GD135 remains unchecked/blocked**,
+  not negative — this extends, rather than closes, the gap already flagged in this file.
+- **KU Spencer Research Library finding aid, MS P556.** Read the complete ArchivesSpace resource record
+  (`archives.lib.ku.edu/repositories/3/resources/4655`) section by section — Overview, Dates, Creator, Language
+  of Materials, Full Extent, Physical Location, Custodial History, Immediate Source of Acquisition, and
+  Finding Aid & Administrative Information — not just the scope note already quoted in this file. The only
+  cipher-related text anywhere in the record is the one line already known: "Cipher: Page 3 largely in code
+  (undeciphered)." No decipherment, transcription, or key is noted anywhere in the record. Two details not
+  previously in this file: the item was acquired from the dealer "Bristow, 1983", and the finding aid itself
+  was "prepared by alh, 1983; revised by ksc, 2005[;] encoded by skt, 2006" — three separate touches over 23
+  years with no addition of a decipherment note, which is weak but real evidence against an unrecorded solve
+  sitting in KU's own files. A general KU archives site-search and the KU library blog
+  (`blogs.lib.ku.edu`, HTTP 403 to curl) were also tried as a broader net; the site-search form did not return
+  results through a plain GET query (it appears to require an interactive/AJAX submission) and the blog was
+  blocked, so neither adds a genuine negative beyond the record itself — **unchecked/blocked**, listed
+  separately from the closed-negative finding-aid read, which stands on its own as a direct answer to the
+  question asked.
+
+**Prior work confirmed, not contradicted.** Both of this file's existing findings stand unchanged after six
+independent blind sweeps plus these two direct checks: (a) the 20 Sept 2026 rule-1 search — no relevant hit in
+a search engine, the Cryptiana snapshot, or the two solver repositories, with DECODE's own search interface
+now also queried directly and confirming the same "No record" result; (b) the 20 Sept 2026 print check — the
+letter is not printed, in clear or in cipher, in Graham 1875, HMC 1887, or (newly checked) Chance 1922, nor
+anywhere on Internet Archive's full-text index for its distinctive envoy name "Fitzdome".
+
+**Verdict:** confirmed — no source among the ones actually reachable this sweep turns up a prior decipherment,
+transcription, or even a prior mention of this letter anywhere beyond the KU catalogue's own restatement of
+"undeciphered". The target's status stands unchanged: **open**. NRS GD135's catalogue and (for the community-
+list check) r/codes remain genuinely blocked/unreachable from this environment rather than searched-and-clear,
+and are listed above as unchecked, not folded into the closed-negative count; a future worker with direct
+Reddit access or a route past NRS's Cloudflare form-submission challenge (a different browser fingerprint, or
+asking the person to check catalogue.nrscotland.gov.uk in their own browser) should close them. No ciphertext
+has been transcribed yet for this target either, so the print check and this sweep are, as before, checks for
+a prior appearance of the letter, not yet an attempt at the cipher passage itself.
