@@ -79,6 +79,13 @@ A worker session does one job, pushes, reports in a short paragraph, and stops. 
 a cryptanalytic attempt, or a write-up that its brief did not name. The orchestrator updates `status.json`,
 `STATUS.md` and the published board after every worker report.
 
+The room: `ROOM.md` is the second channel. A worker reads its last 30 lines before its first action and
+appends one line when it learns something another worker might need, before it edits a shared file, and
+when it stops (`done`). A `flag` line is an interjection: the orchestrator reads every flag before the next
+assignment and answers it in the brief or in the room. Lines are signals, not reports; reports go in the
+worker's final paragraph and NOTES.md. Duplicate work (two sessions auditing the same claim on 20 Sept 2026)
+is what the room prevents.
+
 Two hats, never one session: the **solver** produces readings and the search log of what it checked; the
 **verifier** receives the plaintext, the ciphertext and that log, and searches to disprove novelty (rule 10).
 A solver brief ends "report what was found and where it was not found; do not classify novelty". A verifier
