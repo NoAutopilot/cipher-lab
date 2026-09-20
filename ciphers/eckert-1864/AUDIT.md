@@ -15,7 +15,7 @@ wrong it says so. Levels N0-N5 are those of CLAUDE.md rule 10.
 | E4 | Fox to Butler, 21 Apr 1864 9.30 PM | not located in the sources searched; substance in print (Butler's reply, OR I/33 p.279; Fox to Ericsson, ORN I/9 p.667) | none found; 53 of its 63 words stand in clear on the Huntington page since 15 Mar 2018 | **N3** |
 | E5 | Meigs to Butler, 22 Apr 1864 10.45 AM | not located in the sources searched; antecedent and follow-ups in print (Butler Corr. IV p.112; OR I/33 pp.938, 940) | none found; about 40 of its 60 words in clear on the Huntington page since 2018 | **N3** |
 | E6 | Halleck to Sherman, 26 Apr 1864 3 PM | **yes**: OR ser. I vol 32 pt 3 p.498 (1891), word for word | none found | **N1** |
-| E12 | Lincoln to Col. Frank Wolford, 4 Aug 1864 4.30 PM | **yes**: printed in 1864 (McClellan campaign pamphlet, p.21), Nicolay and Hay (1894; 1905 ed. vol 10 pp.180-181), Basler, Collected Works vol 7 p.479 (1953) | none found | **N1** |
+| E12 | Lincoln to Col. Frank Wolford, 4 Aug 1864 4.30 PM | **yes**: printed in 1864 (McClellan campaign pamphlet, p.21), Nicolay and Hay (1894, vol 2 p.558; 1905 ed. vol 10 pp.180-181), Basler, Collected Works vol 7 pp.479-480 (1953) | none found | **N1** |
 
 Two of the four "not printed" telegrams were in print, one of them in the very series the solver searched and
 the other in 1864 itself. The other two were not found, but their substance is public and most of their words
@@ -200,16 +200,26 @@ decoded from the ledger; E12 hits are the printed Lincoln works and LoC).
      was campaign material of September 1864.
   2. Nicolay and Hay, Complete Works of Abraham Lincoln (1894); 1905 Tandy edition vol 10 pp.180-181 (IA
      completeworksofa10lincuoft), "Telegram to Colonel Wolford", same text ("his reason").
-  3. Basler, Collected Works of Abraham Lincoln vol 7 (1953) p.479, "To Frank L. Wolford", headed "Cypher",
-     War Department, Washington City, August 4, 1864, source line "ALS, DNA WR RG 107, Presidential Telegrams,
-     I, 122" (read from the IA full-text snippets of collectedworksof0007royp and collectedworksab07linc; the
-     page itself is lending-only), with a note quoting Wolford's telegram of 3 Aug. So the plaintext original
-     is Lincoln's autograph in the War Department's telegram files at the National Archives; the Huntington
-     ledger holds the cipher clerk's copy. (Basler 7:446 is the letter to Wolford of 22 July 1864.)
+  3. Basler, Collected Works of Abraham Lincoln vol 7 (1953) pp.479-480, "To Frank L. Wolford", headed
+     "Cypher", War Department, Washington City, August 4, 1864: "Yours of yesterday received. Before
+     interfering with the Judge Advocate General's order, I should know his reasons for making it. Meanwhile,
+     if you have not already started, wait till you hear from me again. Did you receive letter and inclosures
+     from me? A LINCOLN". Source line: "ALS, DNA WR RG 107, Presidential Telegrams, I, 122"; the footnote
+     quotes Wolford's telegrams of 3 Aug and 5 Aug (DLC-RTL). Read in full from the Michigan digital edition
+     through the Wayback Machine (quod.lib.umich.edu/l/lincoln/lincoln7/1:1055; the live site is 403 here) and
+     confirmed by the IA full-text snippets. So the plaintext original is Lincoln's autograph, marked "Cypher"
+     for encipherment, in the War Department's telegram files at the National Archives; the Huntington ledger
+     holds the cipher clerk's copy. (Basler 7:447 is the letter to Wolford of 17 July 1864.) Nicolay and Hay
+     first printed it in Complete Works (1894) vol 2 p.558 (IA abelinccompwks02lincrich).
+  4. Library of Congress, Abraham Lincoln Papers: Wolford to Lincoln, telegram, 3 Aug 1864 (mal3507500) and
+     5 Aug 1864 (mal3509900) are the two ends of the exchange; no Lincoln-to-Wolford item of 4 Aug is in DLC,
+     consistent with Basler's NARA source. Not found in: Papers of Abraham Lincoln digital edition (no Wolford
+     documents yet), OR I/39 pt 2 (Wolford only pp.98, 116, June 1864), OR II/7, Lincoln Day by Day and the
+     Lincoln Log for 4 Aug 1864.
 - Prior decipherment of the ledger copy: none found.
 - Evidence quality: high (three independent printings read from the scans).
 - Classification: **N1**, confidence high. The solver wrote "may be in the Collected Works" and did not look.
-- Safe sentence: "E12 has been in print since 1864 and is Basler CW 7:479; the ledger copy was read
+- Safe sentence: "E12 has been in print since 1864 and is Basler CW 7:479-480; the ledger copy was read
   independently from the cipher book and agrees word for word."
 - Unsafe sentence: "An unprinted Lincoln telegram."
 
@@ -220,7 +230,7 @@ decoded from the ledger; E12 hits are the printed Lincoln works and LoC).
 | E4 | none for the telegram; reply 1891 | OR I/33 p.279 (Butler to Fox, 21 Apr 12 p.m.); ORN I/9 p.667 (Fox to Ericsson, 21 Apr 9.20 p.m.) | archive.org/details/warofrebellion33unit ; archive.org/details/officialrecordso0009unse | substance only |
 | E5 | none for the telegram; antecedent 1917 | Butler Corr. IV p.112 (Butler to Meigs, 21 Apr); OR I/33 p.938 (Halleck to Butler, 21 Apr) | archive.org/details/privateofficialc04butl ; warofrebellion33unit | substance only |
 | E6 | 1891 | OR I/32 pt 3 p.498 | archive.org/details/warofrebellion323unit ; archive.org/details/warofrebellion013203rootrich | word for word |
-| E12 | 1864 | Campaign documents (Osborne & Co.), p.21; Nicolay-Hay 1905 vol 10 pp.180-181; Basler CW 7:479 | archive.org/details/campaigndocument00unse ; archive.org/details/completeworksofa10lincuoft ; archive.org/details/collectedworksof0007royp | word for word ("inclosure" / "reason" variants) |
+| E12 | 1864 | Campaign documents (Osborne & Co.), p.21; Nicolay-Hay 1905 vol 10 pp.180-181; Basler CW 7:479-480 | archive.org/details/campaigndocument00unse ; archive.org/details/completeworksofa10lincuoft ; archive.org/details/collectedworksof0007royp | word for word ("inclosure" / "reason" variants) |
 
 ## 10. Did we first-decipher any of them?
 
