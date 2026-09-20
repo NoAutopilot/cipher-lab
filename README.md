@@ -3,6 +3,19 @@
 Working area for attacking unsolved historical ciphers, starting from the list maintained on
 S. Tomokiyo's site Cryptiana.
 
+
+## What counts as a result
+
+Three kinds, all wanted, always labelled as which they are (CLAUDE.md rule 10):
+
+1. **Recovery.** A key found in another box reads a text nobody has read. Hamilton 1650 and Stepney 1702 are
+   this lane.
+2. **Cryptanalysis.** A text read without its key. Rare; needs size (NLS MS 20769 if it is a cipher) or a key
+   that fails to fit (Hamilton if the NRS sheets do not cover it).
+3. **Contribution.** Work handed to the people who hold or study the material: machine-readable keys, verified
+   readings, catalogue corrections, and honest negatives, offered to the archive, to Tomokiyo's list, to DECODE
+   and to the solver repositories. The Eckert keys and audit are this lane.
+
 ## Layout
 
     STATUS.md             the status board: every target, its state, the next action and whose it is
