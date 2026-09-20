@@ -15,15 +15,15 @@ the clerk's slips ("Prss", "mangled", "For rest").
 | E1 | Stanton to Lockwood, Baltimore, 5 Mar 1864 3 PM | OR I/33 p.643 | reads word for word; "Cherry Stone Point" left in clear; addressee word "Prss" (C) |
 | E2 | Stanton to Lockwood, 5 Mar 7.40 PM | OR I/33 p.644 (7.20 p.m.) | reads word for word; "Plank Counties of the nick" = two counties of the Neck |
 | E3 | Halleck to Grant, Louisville, 6 Mar 11.30 AM | OR I/32 pt 3 p.26 | reads word for word: "your commission as Lieut General is signed" |
-| E4 | G. V. Fox (Asst. Sec. Navy) to Butler, Fort Monroe, 21 Apr 9.30 PM | not printed (Butler's reply OR I/33 p.279) | reads cleanly: block the channel at Roanoke Island against the ram, camels for the Tecumseh; signer word "Brenton" (M) |
-| E5 | Meigs (Bender) to Butler, 22 Apr 10.45 AM | not printed | reads cleanly: 4,000 men here for Fort Monroe instead of 3 regiments; 1,000 cavalry horses at the cavalry depot |
-| E6 | Halleck to Sherman, Nashville, 26 Apr 3 PM | not printed | reads cleanly: the 3rd Iowa Cavalry can be mounted at St Louis, its last orders were for Vicksburg |
+| E4 | G. V. Fox (Asst. Sec. Navy) to Butler, Fort Monroe, 21 Apr 9.30 PM | not found in OR ser. I vols 32-45, ORN I/9-10, Butler Corr. IV (AUDIT.md: N3; Butler's reply OR I/33 p.279, ORN I/9 p.650) | reads cleanly: block the channel at Roanoke Island against the ram, camels for the Tecumseh; signer word "Brenton" (M) |
+| E5 | Meigs (Bender) to Butler, 22 Apr 10.45 AM | not found in OR ser. I vols 32-45, OR III/4, Butler Corr. IV (AUDIT.md: N3; antecedent Butler to Meigs 21 Apr, Butler Corr. IV p.112) | reads cleanly: 4,000 men here for Fort Monroe instead of 3 regiments; 1,000 cavalry horses at the cavalry depot |
+| E6 | Halleck to Sherman, Nashville, 26 Apr 3 PM | OR I/32 pt 3 p.498 (missed by the sweep; AUDIT.md: N1) | reads word for word: the 3rd Iowa Cavalry can be mounted at St Louis, its last orders were for Vicksburg |
 | E7 | Meigs to Col. Biggs, Fort Monroe, 9 May 9.30 PM | OR I/36 pt 2 p.587 | reads word for word; the ledger fixes the numerals (2,500 to 3,000 men) the scan's OCR loses |
 | E8 | Halleck to Wallace, Baltimore, 11 May 3.30 PM | OR I/37 pt 1 p.435 | reads word for word; addressee word "Submit" (C) |
 | E9 | Halleck to Hunter, Cedar Creek, 23 May 10.30 AM | OR I/37 pt 1 p.525 | reads word for word; addressee word "Mackerel" (C); "tulip" after the address is the book's "Open", out of place (see notes) |
 | E10 | Halleck to Brayman, Cairo, 26 May 11 AM | OR I/39 pt 2 p.54 (inclosure) | reads word for word; "Palate[?]" = Brigadier General, "For rest" = Forrest |
 | E11 | Lincoln to Rosecrans, St Louis, 8 June 6 PM | OR I/34 pt 4 p.267 | reads word for word; "Hedge" = to-day (C); "person" is plain |
-| E12 | Lincoln to Col. Frank Wolford, Louisville, 4 Aug 4.30 PM | not printed | reads cleanly; the Judge Advocate General's order, "Did you receive letter & inclosures from me?" |
+| E12 | Lincoln to Col. Frank Wolford, Louisville, 4 Aug 4.30 PM | not in the OR; printed 1864 (campaign pamphlet p.21), Nicolay-Hay, Basler CW 7:479 (AUDIT.md: N1) | reads cleanly; the Judge Advocate General's order, "Did you receive letter & inclosures from me?" |
 | E13 | Halleck to Hunter via Monocacy, 5 Aug 10 AM | OR I/43 pt 1 p.698 | reads word for word; addressee word "Mutton" (C); first word "Frank" struck |
 | E14 | Halleck to Sherman, 5 Aug 10 AM | OR I/38 pt 5 p.368 (10.15 a.m.) | reads word for word: 2,000 and 1,000 horses |
 | E15 | Halleck to A. J. Smith, Cairo, 10 Sept 11.30 AM | OR I/41 pt 3 p.140 | reads word for word; "Macbeth" = A. J. Smith (H, mssEC 43) |
@@ -33,9 +33,11 @@ the clerk's slips ("Prss", "mangled", "For rest").
 | E19 | Halleck to Thomas, Nashville, 10 Dec 2 PM | OR I/45 pt 2 p.130 (1.40 p.m.) | reads word for word: 2,400 cavalry horses, one third of the cavalry dismounted |
 | E20 | Halleck to Col. Winslow, Cairo, 10 Dec 3 PM | OR I/45 pt 2 p.136 | reads word for word: all troops from Missouri must go to Thomas |
 
-Sixteen of the twenty are printed in the Official Records (found by the subagent sweep of 26 volume-parts of
-series I on the Internet Archive, or_check in NOTES.md section 4); four (E4, E5, E6, E12) are not. Every entry
-reads cleanly against the book; the sixteen printed ones agree with the printed text word for word apart from
+Sixteen of the twenty were matched to an Official Records print by the subagent sweep of 26 volume-parts of
+series I on the Internet Archive (or_check in NOTES.md section 4); the four it did not match (E4, E5, E6, E12)
+were audited on 20 Sept 2026 (AUDIT.md): E6 is in OR I/32 pt 3 p.498 (the sweep missed it), E12 was printed
+in 1864 and in every edition of Lincoln's works, E4 and E5 were not found in the sources searched (N3) and
+may not be called unpublished. Every entry reads cleanly against the book; the seventeen OR-printed ones agree with the printed text word for word apart from
 the clerk's slips and the times, which the OR rounds or omits (E2 7.40 vs 7.20; E14 10 vs 10.15; E16 12.30 vs
 noon; E19 2 PM vs 1.40). The addressees at the Baltimore, Harpers Ferry and Cairo posts are the words the book
 does not give (Prss/Praise, Submit, Mackerel/Mutton, Macbeth/Maynard): key.md section 7.

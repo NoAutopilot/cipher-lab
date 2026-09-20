@@ -51,6 +51,7 @@ session and every subagent, cloud or local.
    four Eckert 1864 readings were called "never printed" because they were absent from Official Records ser. I
    vols 32-45; the sender-specific editions (Butler Correspondence, Lincoln Collected Works, ORN) had not been
    searched and no phrase search was run after decoding.
+   Precedent and worked example: ciphers/eckert-1864/AUDIT.md.
 
 ## Workers
 
@@ -68,6 +69,26 @@ text, requires a log of every family searched and every one unreachable, and end
 AUDIT.md plus corrections to any over-claiming sentence in the target's files. The orchestrator moves a target
 to "Novelty verified" only from AUDIT.md, and repeats to the person only the class and its safe sentence.
 
+**Verifier brief (template).** Used before any reading is described outside the repo as new. The verifier is
+a session other than the solver's and does not protect the solver's conclusions.
+
+```
+VERIFIER: <target folder>. Claim under audit: <the sentence as the repo states it>.
+1. Extract from the repo, per item: date, sender, recipient, place, plaintext as read, ciphertext,
+   distinctive phrases, archive identifiers, and exactly what the solver searched (sources, identifiers,
+   method, date).
+2. Search independently: by date, sender+recipient, quoted phrases, ciphertext words and identifiers, in
+   (a) the canonical series, its index and its supplements; (b) the sender's and the recipient's printed
+   correspondence; (c) the documentary editions for the period; (d) the holding archive's catalogue,
+   blog and project pages; (e) full-text search on Internet Archive, HathiTrust and Google Books;
+   (f) the solver repositories and cipher blogs; (g) JSTOR / Scholar / dissertations. Log each family
+   as searched or unreachable, with what was searched.
+3. Classify each item N0-N5 (rule 10) with: prior plaintext (yes/no, where, earliest citation), prior
+   decipherment (yes/no), evidence quality, confidence, one safe sentence, one unsafe sentence.
+4. Postmortem: name the failure, the files and sentences that over-claim, and correct them.
+5. Write <folder>/AUDIT.md; commit and push; report the classifications and the one-line postmortem.
+Do not decode, do not touch other targets, do not print or commit credentials.
+```
 
 ## Usage (tokens are the budget)
 

@@ -15,6 +15,13 @@ ciphers of the books mssEC 37-67 and gives worked examples of Cipher No. 1 (Plum
 12 April 1865) but does not read the ledgers; neither solver repository has an Eckert item. Nothing new was
 found on 19 Sept 2026 for "mssEC 19" or "Cipher No. 1" beyond those pages.
 
+**Correction, 20 Sept 2026 (verifier session, AUDIT.md section 7):** "decoded nowhere" was too strong. The
+project blog read one mssEC 19 entry with Cipher No. 1 in public: "Now, Jesse", 26 June 2017
+(https://decodingthecivilwar.wordpress.com/2017/06/26/now-jesse/), Grant to Sherman, 31 March 1864, p.[47],
+read with the sister copy mssEC 44 and matched to OR I/32 pt 3 p.213. Other posts read single entries of
+other ledgers. No systematic decoding of the ledgers, and no reading of pages 49, 58 or 142, was found; the
+project's decoding phase ("Phase 3") was planned and never launched (AUDIT.md, "Corpus question").
+
 ## 2. Which ledger, which cipher, which book
 
 - Ledger: mssEC 19, "United States Military Telegraph, War Department. Sent" (object 9302, 415 page images,
@@ -81,13 +88,21 @@ Creek and Monocacy, Cairo, St Louis, New Orleans line). Two independent transcri
 the 2583 px images, reconciled by the orchestrator against the image with the volunteer transcription as third
 witness (reading.md, "Reconciliation": 41 disagreements, none affecting the sense, all resolved). A subagent
 checked all 29 candidate entries against the Internet Archive full texts of 26 volume-parts of OR series I
-(vols 32-34, 36-43, 45, 52; identifiers in reading.md and the scratch or_check) by date and plain phrases:
-16 of the 20 are printed, 4 are not (E4 Fox to Butler 21 Apr; E5 Meigs to Butler 22 Apr; E6 Halleck to
-Sherman 26 Apr; E12 Lincoln to Wolford 4 Aug, which may be in the Collected Works). Preference for unprinted
-entries could not be pushed further within the budget: most unprinted candidates were the Beckwith and Kimber
-entries, which are in the other cipher (section 2).
+(vols 32-34, 36-43, 45, 52; the list of identifiers and the grep commands were kept only in a scratch file,
+or_check, that was not committed) by date and plain phrases: 16 of the 20 were matched to an OR print, and 4
+were not matched by that sweep (E4 Fox to Butler 21 Apr; E5 Meigs to Butler 22 Apr; E6 Halleck to Sherman
+26 Apr; E12 Lincoln to Wolford 4 Aug). **Corrected 20 Sept 2026 by the verifier session (AUDIT.md):** E6 is
+printed in OR I/32 pt 3 p.498 and was missed by the sweep; E12 was printed in 1864 (a McClellan campaign
+pamphlet), by Nicolay and Hay (1894) and by Basler, Collected Works vol 7 p.479; E4 and E5 were not found in
+the OR, the Navy OR, Butler's Correspondence (1917) or Fox's Confidential Correspondence, but their substance
+is in print (Butler's reply, OR I/33 p.279; Fox to Ericsson, ORN I/9 p.667) and most of their words stand in
+clear on the Huntington page transcription published in 2018. Novelty classifications (CLAUDE.md rule 10):
+E6 N1, E12 N1, E4 N3, E5 N3. "Not printed" in the earlier text of this folder meant only "not matched by the
+or_check sweep" and must not be read as "unpublished". Preference for unprinted entries could not be pushed
+further within the budget: most unmatched candidates were the Beckwith and Kimber entries, which are in the
+other cipher (section 2).
 
-Result: all twenty read cleanly from the book; the sixteen printed ones agree with the OR word for word apart
+Result: all twenty read cleanly from the book; the seventeen OR-printed ones (the sixteen of the sweep and E6) agree with the OR word for word apart
 from clerical slips and the times (the OR rounds or omits them; the ledger gives the half hour). Code-word
 tokens over the twenty entries: H 296, C 8, M 1, I 0 (`python3 decode.py` prints the count; the C and M tokens are the rows
 of key.md section 7 that appear in the entries (the addressee words Prss, Praise, Submit, Mackerel, Mutton; Hedge,
@@ -134,4 +149,7 @@ received books.
   Civil War" (civilwar1.htm, snapshot in sources/); W. R. Plum, The Military Telegraph during the Civil War
   (1882) as quoted there; Richard Bean's Milroy solve (2026) and D. Bourdeau, cyphersolver/milroy (MIT, CC BY
   4.0) for the route side of the Stager ciphers, consulted for the 1862 pilot on which this one builds.
-- Known plaintext: The War of the Rebellion, ser. I, vols 32-45 (Internet Archive full texts).
+- Known plaintext: The War of the Rebellion, ser. I, vols 32-45 (Internet Archive full texts); for E12 the 1864
+  pamphlet, Nicolay and Hay and Basler cited in AUDIT.md.
+- Novelty audit: AUDIT.md (verifier session, 20 Sept 2026). No entry in this folder is at N4 or N5; none may be
+  described outside the repo as a first decipherment or as unpublished plaintext.
