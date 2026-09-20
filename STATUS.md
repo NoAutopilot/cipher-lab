@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 20 September 2026, 03:10 UTC
+Last updated: 20 September 2026, 03:20 UTC
 
 ## How the sessions work
 

@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 03:10 UTC",
+  "updated": "20 September 2026, 03:20 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -9,6 +9,7 @@
     "Copies received",
     "Transcribed",
     "Reading attempted",
+    "Novelty verified",
     "Solved"
   ],
   "targets": [
@@ -233,6 +234,10 @@
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 03:20",
+      "what": "Process: CLAUDE.md rule 10 (novelty is a verifier's verdict, N0-N5), solver/verifier split in the Workers section, new board stage \"Novelty verified\" before \"Solved\"."
+    },
     {
       "when": "20 Sept, 00:03-03:00",
       "what": "All workers stopped by the five-hour usage limit; HathiTrust worker never ran."

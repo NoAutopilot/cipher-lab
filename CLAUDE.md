@@ -36,11 +36,37 @@ session and every subagent, cloud or local.
 9. **Personal data stays out of the repo.** It is public. Log archive requests by date and archive, never with
    the sender's name, address or payment details.
 
+10. **Novelty is a verifier's verdict, not a solver's.** A solver session may say "read at grade H" and "not
+   found in <named source>, searched by <method> on <date>". It may not say new, unpublished, unread, first or
+   never printed, and neither may the orchestrator when it reports to the person. Absence from one source is a
+   search result, not a discovery. A separate verifier session, working from the plaintext and the ciphertext
+   and trying to disprove novelty, assigns one class after a logged search and writes it to the target's AUDIT.md:
+   N0 plaintext and decipherment of this very item already known; N1 plaintext already published anywhere (our
+   reading is an independent re-decipherment); N2 plaintext known elsewhere but no prior mapping of this
+   ciphertext to it found; N3 no prior plaintext or decipherment located after the logged search; N4 N3 with the
+   principal editions, catalogues and project pages covered, internal or unpublished work not excluded; N5
+   confirmed by the holding archive or a specialist. Wording such as "first decipherment", "previously unread",
+   "newly recovered" or "unpublished plaintext" is allowed only at N4, with the qualifier "no prior decipherment
+   located", or at N5. The board's stage "Novelty verified" is set only from AUDIT.md. Lesson of 20 Sept 2026:
+   four Eckert 1864 readings were called "never printed" because they were absent from Official Records ser. I
+   vols 32-45; the sender-specific editions (Butler Correspondence, Lincoln Collected Works, ORN) had not been
+   searched and no phrase search was run after decoding.
+
 ## Workers
 
 A worker session does one job, pushes, reports in a short paragraph, and stops. It never starts a new target,
 a cryptanalytic attempt, or a write-up that its brief did not name. The orchestrator updates `status.json`,
 `STATUS.md` and the published board after every worker report.
+
+Two hats, never one session: the **solver** produces readings and the search log of what it checked; the
+**verifier** receives the plaintext, the ciphertext and that log, and searches to disprove novelty (rule 10).
+A solver brief ends "report what was found and where it was not found; do not classify novelty". A verifier
+brief lists the source families to cover (canonical editions, sender- and recipient-specific edited
+correspondence, the holding archive's catalogue and blog, the transcription project's pages, Google Books,
+HathiTrust, Internet Archive, GitHub cipher projects, scholarship), requires a phrase search on the decoded
+text, requires a log of every family searched and every one unreachable, and ends with an N-class per item in
+AUDIT.md plus corrections to any over-claiming sentence in the target's files. The orchestrator moves a target
+to "Novelty verified" only from AUDIT.md, and repeats to the person only the class and its safe sentence.
 
 ## Access playbook
 

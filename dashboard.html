@@ -33,7 +33,7 @@ header .upd { color:var(--muted); }
 .year { color:var(--muted); font-weight:500; font-size:0.9em; margin-left:6px; }
 .chip { font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; padding:3px 9px; border-radius:999px; white-space:nowrap; }
 .chip-waiting { background:var(--warn-soft); color:var(--warn); } .chip-active { background:var(--info-soft); color:var(--info); } .chip-queued { background:var(--idle-soft); color:var(--idle); } .chip-blocked { background:var(--bad-soft); color:var(--bad); } .chip-you { background:var(--accent-soft); color:var(--accent); } .chip-solved { background:var(--good-soft); color:var(--good); }
-.segs { display:grid; grid-template-columns:repeat(9, 1fr); gap:3px; margin-top:4px; }
+.segs { display:grid; grid-template-columns:repeat(10, 1fr); gap:3px; margin-top:4px; }
 .seg { height:10px; border-radius:2px; background:var(--idle-soft); }
 .seg.on { background:var(--accent); } .seg.cur { outline:2px solid var(--accent); outline-offset:1px; }
 .state-waiting .seg.on { background:var(--warn); } .state-waiting .seg.cur { outline-color:var(--warn); }
@@ -61,7 +61,7 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
 <div class="wrap">
   <header>
     <div><h1>Cipher Lab Board</h1><div class="muted">Where every target stands, who holds it, and what happens next.</div></div>
-    <div class="upd">Updated 20 September 2026, 03:10 UTC</div>
+    <div class="upd">Updated 20 September 2026, 03:20 UTC</div>
   </header>
 
   <section class="tiles" aria-label="Summary">
@@ -80,9 +80,9 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <span class="chip chip-waiting">Waiting on archive</span>
       </div>
       <div class="t-ref mono">NRS GD406/1/2197</div>
-      <div class="pipe" role="img" aria-label="Stage 5 of 9: Request sent">
-        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on cur" title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
-        <div class="stage-label"><b>Stage 5 of 9</b> Request sent <span class="muted">· held by Archive</span></div>
+      <div class="pipe" role="img" aria-label="Stage 5 of 10: Request sent">
+        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on cur" title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Novelty verified"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 5 of 10</b> Request sent <span class="muted">· held by Archive</span></div>
       </div>
       <dl class="wait">
         <div><dt>Waiting on</dt><dd>A quote from National Records of Scotland for images of the five key sheets, GD406/1/2197</dd></div>
@@ -99,9 +99,9 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <span class="chip chip-waiting">Waiting on archive</span>
       </div>
       <div class="t-ref mono">TNA SP 105/65</div>
-      <div class="pipe" role="img" aria-label="Stage 5 of 9: Request sent">
-        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on cur" title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
-        <div class="stage-label"><b>Stage 5 of 9</b> Request sent <span class="muted">· held by Archive</span></div>
+      <div class="pipe" role="img" aria-label="Stage 5 of 10: Request sent">
+        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on cur" title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Novelty verified"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 5 of 10</b> Request sent <span class="muted">· held by Archive</span></div>
       </div>
       <dl class="wait">
         <div><dt>Waiting on</dt><dd>TNA staff page check of SP 105/65 (order 3660178), then their quote for the copy</dd></div>
@@ -118,9 +118,9 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <span class="chip chip-active">Worker on it</span>
       </div>
       <div class="t-ref mono">Spink lot 1184, sale 23 Sept 2026</div>
-      <div class="pipe" role="img" aria-label="Stage 7 of 9: Transcribed">
-        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on " title="Request sent"></span><span class="seg on " title="Copies received"></span><span class="seg on cur" title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
-        <div class="stage-label"><b>Stage 7 of 9</b> Transcribed <span class="muted">· held by Worker</span></div>
+      <div class="pipe" role="img" aria-label="Stage 7 of 10: Transcribed">
+        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on " title="Request sent"></span><span class="seg on " title="Copies received"></span><span class="seg on cur" title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Novelty verified"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 7 of 10</b> Transcribed <span class="muted">· held by Worker</span></div>
       </div>
       <dl class="wait">
         <div><dt>Waiting on</dt><dd>Usage limit (worker to be restarted), then you (Spink question)</dd></div>
@@ -137,9 +137,9 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <span class="chip chip-you">Needs you</span>
       </div>
       <div class="t-ref mono">TNA SP 91/5/108 (+ ff. 106, 121 for the key)</div>
-      <div class="pipe" role="img" aria-label="Stage 4 of 9: Key source located">
-        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on cur" title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
-        <div class="stage-label"><b>Stage 4 of 9</b> Key source located <span class="muted">· held by You</span></div>
+      <div class="pipe" role="img" aria-label="Stage 4 of 10: Key source located">
+        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on cur" title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Novelty verified"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 4 of 10</b> Key source located <span class="muted">· held by You</span></div>
       </div>
       <dl class="wait">
         <div><dt>Waiting on</dt><dd>Your decision and your click on the TNA order</dd></div>
@@ -156,9 +156,9 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <span class="chip chip-active">Worker on it</span>
       </div>
       <div class="t-ref mono">Huntington mssEC 15 (1862); mssEC 19 ledger with cipher book mssEC 41 (1864)</div>
-      <div class="pipe" role="img" aria-label="Stage 8 of 9: Reading attempted">
-        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on " title="Request sent"></span><span class="seg on " title="Copies received"></span><span class="seg on " title="Transcribed"></span><span class="seg on cur" title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
-        <div class="stage-label"><b>Stage 8 of 9</b> Reading attempted <span class="muted">· held by Verifier</span></div>
+      <div class="pipe" role="img" aria-label="Stage 8 of 10: Reading attempted">
+        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on " title="Request sent"></span><span class="seg on " title="Copies received"></span><span class="seg on " title="Transcribed"></span><span class="seg on cur" title="Reading attempted"></span><span class="seg  " title="Novelty verified"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 8 of 10</b> Reading attempted <span class="muted">· held by Verifier</span></div>
       </div>
       <dl class="wait">
         <div><dt>Waiting on</dt><dd>Verifier session (prior-art audit); the 1864 reading worker was interrupted at 03:06 UTC with its result already pushed</dd></div>
@@ -175,9 +175,9 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
         <span class="chip chip-blocked">Blocked</span>
       </div>
       <div class="t-ref mono">BL Add MS 72438 ff. 9-10</div>
-      <div class="pipe" role="img" aria-label="Stage 4 of 9: Key source located">
-        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on cur" title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Solved"></span></div>
-        <div class="stage-label"><b>Stage 4 of 9</b> Key source located <span class="muted">· held by Archive</span></div>
+      <div class="pipe" role="img" aria-label="Stage 4 of 10: Key source located">
+        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on cur" title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Novelty verified"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 4 of 10</b> Key source located <span class="muted">· held by Archive</span></div>
       </div>
       <dl class="wait">
         <div><dt>Waiting on</dt><dd>The British Library&#x27;s manuscript viewer, offline since the October 2023 cyber attack</dd></div>
@@ -192,7 +192,7 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
 
   <section class="panel">
     <h2>The nine stages</h2>
-    <ul class="key"><li><span class="k-num">1</span>Identified</li><li><span class="k-num">2</span>Verified unsolved</li><li><span class="k-num">3</span>Ciphertext in hand</li><li><span class="k-num">4</span>Key source located</li><li><span class="k-num">5</span>Request sent</li><li><span class="k-num">6</span>Copies received</li><li><span class="k-num">7</span>Transcribed</li><li><span class="k-num">8</span>Reading attempted</li><li><span class="k-num">9</span>Solved</li></ul>
+    <ul class="key"><li><span class="k-num">1</span>Identified</li><li><span class="k-num">2</span>Verified unsolved</li><li><span class="k-num">3</span>Ciphertext in hand</li><li><span class="k-num">4</span>Key source located</li><li><span class="k-num">5</span>Request sent</li><li><span class="k-num">6</span>Copies received</li><li><span class="k-num">7</span>Transcribed</li><li><span class="k-num">8</span>Reading attempted</li><li><span class="k-num">9</span>Novelty verified</li><li><span class="k-num">10</span>Solved</li></ul>
     <p class="how muted">A target is <b>solved</b> only when one fixed key reads every group, unchanged, into coherent text that checks against the world: a name in cipher that also stands in clear, or a printed account of the same events. Anything less is reported as partial.</p>
   </section>
 
@@ -204,7 +204,7 @@ th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line);
     </section>
     <section class="panel">
       <h2>Change log</h2>
-      <ul class="log"><li><span class="mono muted when">20 Sept, 00:03-03:00</span><span>All workers stopped by the five-hour usage limit; HathiTrust worker never ran.</span></li><li><span class="mono muted when">20 Sept, 03:07</span><span>Eckert 1864: novelty claim for four telegrams sent to a verifier session for adversarial audit. &quot;Not in the Official Records&quot; had been read as &quot;new&quot;; that was an over-claim.</span></li><li><span class="mono muted when">20 Sept, 00:00</span><span>Eckert 1864: twenty ledger entries read at grade H from cipher book mssEC 41; four not found in the Official Records volumes checked (novelty unverified).</span></li><li><span class="mono muted when">20 Sept, 00:02</span><span>Wellington: HathiTrust worker started; first live test of the browser fetch tool.</span></li><li><span class="mono muted when">19 Sept, 23:58</span><span>Wellington: dictionary search closed negative after 57 editions. Two asks for you before the 23 Sept sale: email Spink about a dictionary in the lot; HathiTrust search from a browser.</span></li><li><span class="mono muted when">19 Sept, 23:26</span><span>Wellington transcription worker finished (pass A log pushed) and archived. Dictionary search continues.</span></li><li><span class="mono muted when">19 Sept, 23:30</span><span>Eckert: first pilot done. Zooniverse never decoded the ledgers; ten 1862 telegrams read against the Official Records. Second pilot started on an 1864 ledger with the surviving cipher book.</span></li><li><span class="mono muted when">19 Sept, 23:00</span><span>Wellington: transcription pushed (73 groups, all with known plaintext). Dictionary research worker started.</span></li><li><span class="mono muted when">19 Sept, 22:50</span><span>Whitworth: worker pushed. Only one clause of SP 91/5/108 is actually unread; copy request drafted for ff. 108, 106, 121. Needs your decision.</span></li><li><span class="mono muted when">19 Sept, 22:35</span><span>Wellington: 17 auction images captured at full served size; transcription passes running.</span></li><li><span class="mono muted when">19 Sept, 22:40</span><span>Eckert Papers worker started (queue rank 1). Whitworth worker woken to push its drafted files.</span></li><li><span class="mono muted when">19 Sept, 22:30</span><span>Stepney: TNA page check ordered and paid, order 3660178.</span></li><li><span class="mono muted when">19 Sept, 22:15</span><span>Scout stopped after finishing the queue; it had begun attempting ciphers beyond its brief.</span></li><li><span class="mono muted when">19 Sept, 22:13</span><span>Two workers started: Wellington 1812 image capture, Whitworth 1707 lookup.</span></li><li><span class="mono muted when">19 Sept, 22:05</span><span>First scout run filed QUEUE.md: 40 scored, 163 kept unscored, 40 dropped.</span></li><li><span class="mono muted when">19 Sept, 21:14</span><span>Stepney: volume identified as SP 105/65 after the environment got network access.</span></li><li><span class="mono muted when">19 Sept, 20:15</span><span>Hamilton: copy request emailed to NRS for GD406/1/2197.</span></li><li><span class="mono muted when">19 Sept</span><span>Repo set up: catalogue, landscape, lessons, conventions, two workflows.</span></li></ul>
+      <ul class="log"><li><span class="mono muted when">20 Sept, 03:20</span><span>Process: CLAUDE.md rule 10 (novelty is a verifier&#x27;s verdict, N0-N5), solver/verifier split in the Workers section, new board stage &quot;Novelty verified&quot; before &quot;Solved&quot;.</span></li><li><span class="mono muted when">20 Sept, 00:03-03:00</span><span>All workers stopped by the five-hour usage limit; HathiTrust worker never ran.</span></li><li><span class="mono muted when">20 Sept, 03:07</span><span>Eckert 1864: novelty claim for four telegrams sent to a verifier session for adversarial audit. &quot;Not in the Official Records&quot; had been read as &quot;new&quot;; that was an over-claim.</span></li><li><span class="mono muted when">20 Sept, 00:00</span><span>Eckert 1864: twenty ledger entries read at grade H from cipher book mssEC 41; four not found in the Official Records volumes checked (novelty unverified).</span></li><li><span class="mono muted when">20 Sept, 00:02</span><span>Wellington: HathiTrust worker started; first live test of the browser fetch tool.</span></li><li><span class="mono muted when">19 Sept, 23:58</span><span>Wellington: dictionary search closed negative after 57 editions. Two asks for you before the 23 Sept sale: email Spink about a dictionary in the lot; HathiTrust search from a browser.</span></li><li><span class="mono muted when">19 Sept, 23:26</span><span>Wellington transcription worker finished (pass A log pushed) and archived. Dictionary search continues.</span></li><li><span class="mono muted when">19 Sept, 23:30</span><span>Eckert: first pilot done. Zooniverse never decoded the ledgers; ten 1862 telegrams read against the Official Records. Second pilot started on an 1864 ledger with the surviving cipher book.</span></li><li><span class="mono muted when">19 Sept, 23:00</span><span>Wellington: transcription pushed (73 groups, all with known plaintext). Dictionary research worker started.</span></li><li><span class="mono muted when">19 Sept, 22:50</span><span>Whitworth: worker pushed. Only one clause of SP 91/5/108 is actually unread; copy request drafted for ff. 108, 106, 121. Needs your decision.</span></li><li><span class="mono muted when">19 Sept, 22:35</span><span>Wellington: 17 auction images captured at full served size; transcription passes running.</span></li><li><span class="mono muted when">19 Sept, 22:40</span><span>Eckert Papers worker started (queue rank 1). Whitworth worker woken to push its drafted files.</span></li><li><span class="mono muted when">19 Sept, 22:30</span><span>Stepney: TNA page check ordered and paid, order 3660178.</span></li><li><span class="mono muted when">19 Sept, 22:15</span><span>Scout stopped after finishing the queue; it had begun attempting ciphers beyond its brief.</span></li><li><span class="mono muted when">19 Sept, 22:13</span><span>Two workers started: Wellington 1812 image capture, Whitworth 1707 lookup.</span></li><li><span class="mono muted when">19 Sept, 22:05</span><span>First scout run filed QUEUE.md: 40 scored, 163 kept unscored, 40 dropped.</span></li><li><span class="mono muted when">19 Sept, 21:14</span><span>Stepney: volume identified as SP 105/65 after the environment got network access.</span></li><li><span class="mono muted when">19 Sept, 20:15</span><span>Hamilton: copy request emailed to NRS for GD406/1/2197.</span></li><li><span class="mono muted when">19 Sept</span><span>Repo set up: catalogue, landscape, lessons, conventions, two workflows.</span></li></ul>
     </section>
   </div>
 
