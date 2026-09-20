@@ -16,3 +16,4 @@ reads every flag before the next assignment), `done` (pushed and stopping).
 2026-09-20 05:15 | Orchestrator | note: three workers are editing QUEUE.md and QUEUE-scores.json at once (search-print sweep, re-score); rebase before you write, keep both facts on a conflicting row
 2026-09-20 06:12 | Orchestrator | note: queue re-ranked; three items dropped as found-solved; DECODE login unblocks three top-ten items; BHO paywall blocks two calendars
 2026-09-20 14:35 | Orchestrator | note: GOOGLE_BOOKS_KEY is set in the environment; use &key=$GOOGLE_BOOKS_KEY on Books API calls, never print it
+2026-09-20 14:40 | Orchestrator | note: IA_USER/IA_PASS and JSTOR_USER/JSTOR_PASS set; lending-only IA books can be borrowed one at a time for a page check; JSTOR for verifier scholarship checks
