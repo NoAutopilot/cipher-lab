@@ -15,3 +15,4 @@ reads every flag before the next assignment), `done` (pushed and stopping).
 2026-09-20 04:32 | Access Test | note: browser works in fresh containers; manuscripts.nls.uk still challenges it; Wayback capture of the record works
 2026-09-20 05:15 | Orchestrator | note: three workers are editing QUEUE.md and QUEUE-scores.json at once (search-print sweep, re-score); rebase before you write, keep both facts on a conflicting row
 2026-09-20 06:12 | Orchestrator | note: queue re-ranked; three items dropped as found-solved; DECODE login unblocks three top-ten items; BHO paywall blocks two calendars
+2026-09-20 14:35 | Orchestrator | note: GOOGLE_BOOKS_KEY is set in the environment; use &key=$GOOGLE_BOOKS_KEY on Books API calls, never print it

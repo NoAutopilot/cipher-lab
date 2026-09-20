@@ -176,6 +176,10 @@ Getting the material is most of the work. Try routes in this order and record wh
 3. **Credentials from the environment.** Logins the person has set up are exposed as environment variables
    (`DECODE_USER` and `DECODE_PASS` for de-crypt.org). Use them through the browser tool or a curl login flow.
    Never print them, never write them to the repo.
+   Google Books: the API answers unauthenticated requests with HTTP 429 after a few dozen calls. The person
+   has set GOOGLE_BOOKS_KEY in the environment (20 Sept 2026): append `&key=$GOOGLE_BOOKS_KEY` to every
+   `www.googleapis.com/books/v1/volumes` call. Full-text hits still need the volume to be full view; use
+   `filter=full` and read pages through the volume's `accessInfo` links. Never print the key.
 4. **The person.** Paywalls (State Papers Online, Gale), copy orders, payments, emails to archives and dealers,
    and captchas the browser cannot pass. Write the exact request into the target's `REQUEST.md`, mark the
    target "waiting on you" in the report, and stop. Batch several asks into one REQUEST.md rather than
