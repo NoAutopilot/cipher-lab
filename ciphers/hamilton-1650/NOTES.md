@@ -33,3 +33,83 @@
   3. If no sheet fits, order the microfilm frames of Red Book ii nos. 156-159 to check the printed figures,
      and try the Bodleian Wallis route.
   4. Send the result to Tomokiyo and to Bourdeau, who will record it.
+
+## Check-solved sweep, 20 Sept 2026
+
+Six independent searchers checked whether this target is still unsolved, per convention 1. All six report the
+same conclusion: no solution, key, or plaintext for GD406/1/2197 has surfaced anywhere they could reach, and the
+existing NOTES.md claim (Bourdeau, cyphersolver/hamilton, 14-15 Sept 2026: key exists at NRS GD406/1/2197, not
+recoverable online) is independently corroborated, not contradicted.
+
+1. **Web search (WebSearch/WebFetch only, no archive access attempted).** Checked general search engines,
+   dbourdeau/cyphersolver (site and raw NOTES.md), and aaymeloglu/unsolved-ciphers front page for any mention of
+   a solved Hamilton/Charles II 1650 cipher. Found: dbourdeau/cyphersolver's own hamilton/NOTES.md, quoted
+   verbatim, confirms the "OFFLINE-ONLY (2026-09-15)" status and the GD406/1/2197 key location. No third-party
+   solution claim anywhere. **Not checked** (no reachable URL found by search, not a negative result): Tomokiyo's
+   charlesii.htm page content directly, de-crypt.org's internal search, full text of the 1766 Account and Camden
+   1880 on IA/HathiTrust/Google Books, and aaymeloglu's repo beyond its front page.
+
+2. **Internet Archive full text + HathiTrust catalogue.** Fetched and grepped the full text of Gardiner's
+   *Hamilton Papers* (Camden Society n.s. 27, 1880, archive.org/details/hamiltonpapersbe00hamirich), the 1766
+   *Account of the Preservation of King Charles II* (archive.org/details/bim_eighteenth-century_an-account-of-the-
+   preser_charles-ii-king-of-eng_1766), Burnet's *Memoirs of the Dukes of Hamilton* (1852 reprint,
+   archive.org/details/memoirsoflivesac00burn), and HMC 11th Report Appendix VI, *Manuscripts of the Duke of
+   Hamilton* (1887, archive.org/details/manuscriptsofduk00greauoft). All four cipher letters (6, 14, 31 Aug and
+   27 Sept 1650) are printed in both the 1766 Account and Gardiner 1880 as undeciphered numeral groups matching
+   `ciphertext.txt`; Gardiner's own preface says letters reached him "without any key being appended." The HMC
+   1887 calendar independently (i.e. not from Gardiner) describes items 395-396 as "partly in cipher, not
+   deciphered" and "chiefly in cipher." Burnet narrates Hamilton's Arran confinement but does not quote or
+   decipher the letters. **Blocked:** catalog.hathitrust.org returned HTTP 403 to curl; the same 1766 edition
+   was obtained from the Internet Archive instead, so the check was completed via a different route, not left
+   undone.
+
+3. **Community-list sweep** (Cryptiana local snapshot + live search, Cipherbrain, Cipher Mysteries,
+   MysteryTwister, r/codes). Cryptiana's charlesii.htm (S. Tomokiyo) prints the same undeciphered 1766-Account
+   excerpts, not a solution. Cryptiana's unsolved.htm explicitly lists the item as unsolved and names the same
+   Wallis/Bodleian lead already in this file's Prior Work line. No hit on Cipherbrain, Cipher Mysteries,
+   MysteryTwister, or r/codes naming this item at all. **Not checked, listed as unchecked, not negative:** any
+   comment posted only inside JS-rendered threads on ciphermysteries.com (HTTP 406 to curl) or reddit.com/r/codes
+   (HTTP 403 to curl); these domains were covered only via WebSearch `site:` queries, not a browser fetch.
+
+4. **DECODE database (de-crypt.org).** Browser-driven searches of the DECODE Records list for "Hamilton",
+   "GD406", "Duke of Hamilton", "Charles II", and "1650" returned no record for this item. The few genuine
+   Hamilton hits are unrelated people/centuries (BL Add MS 32256, BL Add MS 72438, BL Add MS 33591 f.165 — the
+   last already marked "Decrypted" but concerning Thomas Randolph/1559, not this letter). The "Charles II" and
+   "1650" searches surfaced only French BnF material and Restoration-era Kew State Papers box 6 keys (1660-1685),
+   none from NRS. No DECODE record id for hamilton-1650 exists anywhere in this repo's CATALOG.md/LANDSCAPE.md
+   (unlike some other targets, which do cite DECODE ids). **Partial:** only the first of six result pages for
+   the "1650" query (20 of 103 rows) was read; the brief did not call for an exhaustive scan of every "1650"
+   record, so the remaining 83 rows are unchecked, not negative.
+
+5. **github.com/dbourdeau/cyphersolver (shallow clone).** Confirms, by reading the repository's own working
+   files directly rather than a summary, everything the existing Prior Work line attributes to Bourdeau:
+   TARGETS.md row 3 and hamilton/NOTES.md both state the key exists at NRS GD406/1/2197 ("Keys for ciphers used
+   in the correspondence of the Duke of Hamilton," c.1645, 5 items, open access, found 2026-09-14), that Gardiner
+   1880 "evidently never saw 2197," and the status block "OFFLINE-ONLY (2026-09-15) ... Nothing further can be
+   done online; parked." hamilton/collate.py reproduces the 102-group/67-distinct collation with no key or
+   decipherment attempted. No entry for this item exists in SOLVED_CATALOGUE.md, CATALOGUE.md, SOLVED_RANKING.md,
+   catalogue.json, or docs/search.json — consistent with it being carried as unsolved/offline, not written up as
+   solved.
+
+6. **github.com/aaymeloglu/unsolved-ciphers (shallow clone) and github.com/robertpitt (web UI repo-name
+   filter).** No `hamilton-1650`-named folder exists in aaymeloglu/unsolved-ciphers (11 target folders, none for
+   this item). SHORTLIST.md lists the item twice, both as open: once under "Tier 2: real, open, more friction"
+   naming the same Wallis/Bodleian lead, and again in a 2026-09-13 status-check row noting "No solve claims
+   found." robertpitt's GitHub account (107 repos) has no repository name matching "hamilton" or "1650"; a
+   name search for "charles" returns only the unrelated `charles-i-boswell-cipher` (Charles I, not Charles II;
+   Boswell, not Hamilton; 1643, not 1650). **Not checked, listed as unchecked, not negative:** full-text search
+   of all 107 of robertpitt's repos (GitHub search/API endpoints were blocked in the sandbox; only repo
+   name/description matching via the web UI was available), and the full internal contents of
+   aaymeloglu/unsolved-ciphers beyond README/TARGETS/CATALOGUE/SHORTLIST.
+
+**People and dates for prior work found by this sweep, all already on record:** S. Tomokiyo (Cryptiana,
+charlesii.htm and unsolved.htm, undated snapshot) transcribed the printed cipher and flagged the Wallis/Bodleian
+lead; Bourdeau (cyphersolver/hamilton, 14-15 Sept 2026) collated the two printed witnesses, ruled out Camden 1880
+as a key source, located GD406/1/2197 in the NRS catalogue, and parked the item offline-only on 15 Sept 2026;
+Aymeloglu's shortlist (status-check dated 2026-09-13) independently lists the same item open with the same
+Wallis lead and no solve claim; HMC's 1887 cataloguer independently confirmed the letters were printed
+undeciphered.
+
+**Verdict:** No solution, key, or plaintext for this cipher was found by any of the six searchers; the prior
+"open, offline-only, key at NRS GD406/1/2197" status is independently confirmed, not contradicted, so the
+target's status is unchanged: **offline-only**.
