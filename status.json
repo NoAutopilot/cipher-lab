@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 03:48 UTC",
+  "updated": "20 September 2026, 03:58 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -87,15 +87,15 @@
       "ref": "Huntington mssEC 15 (1862); mssEC 19 ledger with cipher book mssEC 41 (1864)",
       "folder": "ciphers/eckert-1862",
       "stage": 9,
-      "state": "active",
-      "holder": "Worker",
-      "next": "Audit done 03:38 UTC (AUDIT.md): E6 Halleck to Sherman and E12 Lincoln to Wolford were already in print (N1: OR I/32 pt 3 p.498; Basler 7:479). E4 Fox to Butler and E5 Meigs to Butler: no prior print or decipherment located in the sources logged (N3), and most of their words were never in cipher. Nothing here is a first decipherment. Still running: the Cipher No. 2 key test on the Beckwith and Kimber entries.",
+      "state": "queued",
+      "holder": "Nobody",
+      "next": "Parked. The key test settled the last open question: the headquarters entries are Cipher No. 2, and the Huntington's book mssEC 47 reads them at grade H (key-no2.md, reading-no2.md). Every cipher in the 1864 ledger now reads from a surviving book, so there is no cryptanalysis left here. A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve; not started.",
       "note": "Twenty 1864 entries read at grade H from cipher book mssEC 41; seventeen agree word for word with the Official Records, one with the printed Lincoln works, two (E4, E5) not found in the sources listed in AUDIT.md. Corpus question (AUDIT.md section 12): no one has mapped the ledger entries to cipher, key, plaintext and print; the project's decoding phase was never launched (paused Jan 2018, ended July 2019). A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve.",
       "wait": {
-        "on": "Key-test worker (Cipher No. 2)",
-        "since": "20 Sept 2026, 03:15 UTC",
-        "expected": "Under an hour",
-        "unblock": "A: the book reads the headquarters entries. B: no book matches and those entries become a genuine target."
+        "on": "Nothing. Parked by the orchestrator, 20 Sept 2026, 03:58 UTC",
+        "since": "20 Sept 2026, 03:58 UTC",
+        "expected": "Not scheduled",
+        "unblock": "A decision to run the corpus pass as an edition project."
       }
     },
     {
@@ -107,20 +107,86 @@
       "state": "blocked",
       "holder": "Archive",
       "next": "British Library viewer offline since 2023. When it returns, order f. 11 and check Bodleian Tanner 59-60 for the contemporary decipher.",
-      "note": "Aymeloglu identified the cipher as Digby's captured key no. 129 and fixed about 45 values.",
+      "note": "Aymeloglu identified the cipher as Digby's captured key no. 129 and fixed about 45 values. Scout 20 Sept: the volume is Weckherlin's cipher-keys and intercepted royalist correspondence; f.104 (\"almost wholly in undecoded cipher\") has DECODE record 8725 marked Decrypted, which needs the DECODE login to read before f.104 goes on any order.",
       "wait": {
         "on": "The British Library's manuscript viewer, offline since the October 2023 cyber attack",
         "since": "2023",
         "expected": "Unknown. BL has restored services piecemeal",
-        "unblock": "BL images return, or a DECODE login plus BL permission. Meanwhile the Bodleian Tanner MSS route needs a copy order."
+        "unblock": "BL copying resumes for Add MS 72438 (f.11, ff.100-109 keys); DECODE login (DECODE_USER/DECODE_PASS in the environment) to read record 8725 for f.104."
+      }
+    },
+    {
+      "name": "Earl of Stair to Viscount Townshend",
+      "year": "1710",
+      "ref": "Univ. of Kansas, Spencer Research Library, MS P556 (page 3 largely in code, undeciphered)",
+      "folder": "ciphers/stair-townshend-1710",
+      "stage": 2,
+      "state": "active",
+      "holder": "Worker",
+      "next": "Verified 20 Sept 2026: KU catalogue confirms the item; six-source sweep found no solution; English plaintext likely. A worker is checking Graham's Annals of Stair (1875) and the Townshend papers for the letter in print before you order. If still needed: four TIFF scans from Kansas, about $20, three business days (REQUEST.md).",
+      "note": "Two clear pages give cribs; one page of cipher is small, so the route is the same cipher in other Stair letters of 1710 (TNA SP 84, SP 87) with a contemporary decipher.",
+      "wait": {
+        "on": "Worker (print check), then you (Kansas order, about $20)",
+        "since": "20 Sept 2026, 03:58 UTC",
+        "expected": "Print check under an hour",
+        "unblock": "The letter is not in print; you place the Kansas order from REQUEST.md."
+      }
+    },
+    {
+      "name": "Letter relating to Gen. Monck",
+      "year": "1659-60",
+      "ref": "BL Add MS 32093 f.423 (Malet collection), \"partly in cipher, undeciphered. Imperfect.\"",
+      "folder": "ciphers/monck-1660",
+      "stage": 2,
+      "state": "you",
+      "holder": "You",
+      "next": "Verified 20 Sept 2026: BL catalogue confirms the item; no solution found by the sweep; English plaintext near-certain. For you: ask BL Imaging Services for a quote for f.423 (REQUEST.md); a Reader Pass may be required, so ask whether they will quote remotely.",
+      "note": "Key leads: Monck's correspondence with Clarges and Hyde in the Clarendon State Papers and Thurloe. HMC 5th and 7th Reports describe the collection and can be checked in print first.",
+      "wait": {
+        "on": "You: one email to BL Imaging Services for a quote",
+        "since": "20 Sept 2026, 03:58 UTC",
+        "expected": "BL quotes are slow since 2023",
+        "unblock": "A quote and a scan of f.423."
+      }
+    },
+    {
+      "name": "Unidentified 18th-century cipher manuscript",
+      "year": "18th c.",
+      "ref": "National Library of Scotland MS 20769 (mixed Roman, Greek, astrological and invented symbols)",
+      "folder": "ciphers/nls-20769",
+      "stage": 1,
+      "state": "you",
+      "holder": "You",
+      "next": "The NLS catalogue page is blocked from cloud containers, so the record is known only from search snippets and the \"57 leaves\" figure is unverified. For you, one minute: open manuscripts.nls.uk, search MS 20769, and paste the full description (extent, physical description, provenance) here. Then decide on scans (about GBP 1.80 per A4 scan; REQUEST.md).",
+      "note": "Size is the point: a genuine cipher of dozens of leaves is above unicity for a homophonic system. Risk: a shorthand or private notation, not a cipher.",
+      "wait": {
+        "on": "You: read the live catalogue record",
+        "since": "20 Sept 2026, 03:58 UTC",
+        "expected": "One minute when you are next at a browser",
+        "unblock": "The record text; then a scan order if it is a cipher."
       }
     }
   ],
   "workers": [
     {
-      "title": "Key Test: Eckert 1864 headquarters cipher (mssEC 47-48)",
-      "job": "Does Cipher No. 2 read the Beckwith and Kimber entries? A: read at grade H. B: a genuine target",
+      "title": "Check Solved: blind six-source sweep of five board targets",
+      "job": "Hamilton confirmed offline-only, no solution anywhere; Stepney next",
       "state": "running"
+    },
+    {
+      "title": "Print Check: Stair 1710 in Graham's Annals and the Townshend papers",
+      "job": "Free check before the Kansas order",
+      "state": "running"
+    },
+    {
+      "title": "Scout: verify and file four proposed targets",
+      "job": "Stair 1710 and Monck 1660 confirmed open (English); NLS 20769 record unverified; 72438 f.104 marked Decrypted on DECODE. $6",
+      "state": "done, archived"
+    },
+    {
+      "title": "Key Test: Eckert 1864 headquarters cipher (mssEC 47-48)",
+      "job": "Outcome A: Cipher No. 2 (mssEC 47, 1,482 rows) reads the Beckwith/Kimber entries at grade H. $26",
+      "state": "done, archived"
     },
     {
       "title": "Verifier: prior-art audit of four Eckert 1864 telegrams",
@@ -239,6 +305,18 @@
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 03:44",
+      "what": "Hamilton: blind six-source sweep found no solution or key anywhere; offline-only confirmed."
+    },
+    {
+      "when": "20 Sept, 03:41",
+      "what": "Eckert: key test outcome A. The headquarters entries are Cipher No. 2 and the Huntington's copy reads them at grade H. No genuine target left in the ledger."
+    },
+    {
+      "when": "20 Sept, 03:58",
+      "what": "Three targets added from the scout: Stair 1710 (Kansas), Monck 1660 (BL), NLS MS 20769. Eckert parked: every cipher in the 1864 ledger reads from a surviving book."
+    },
     {
       "when": "20 Sept, 03:37",
       "what": "Wellington: HathiTrust half of the dictionary hunt closed negative (19 editions via APIs). The browser tool cannot run in cloud containers until the proxy CA is trusted; APIs documented in the Access playbook."
