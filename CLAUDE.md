@@ -68,6 +68,30 @@ text, requires a log of every family searched and every one unreachable, and end
 AUDIT.md plus corrections to any over-claiming sentence in the target's files. The orchestrator moves a target
 to "Novelty verified" only from AUDIT.md, and repeats to the person only the class and its safe sentence.
 
+
+## Usage (tokens are the budget)
+
+The person's plan is a fixed window of usage, not a bill. A worker that burns it stops every other session.
+Every brief states a cap in dollars of usage (the session metadata's cost figure) and the worker stops at it.
+
+1. **Tier the model to the job.** Blind searches, catalogue sweeps, harvesting, transcription passes and any
+   job whose output is checked by another agent run on Sonnet (`claude-sonnet-5`). Reconciliation of passes,
+   key reading, cipher reasoning and verifier verdicts run on the strongest model. The orchestrator sets the
+   model when it creates the session; a worker sets it when it spawns subagents.
+2. **Scripts read, models judge.** Never have a model read an Official Records volume, a 400-page dictionary
+   or a 2,000-row key to find one thing. Fetch the text once, grep or parse it with a script, and give the
+   model the hits. decode.py, check.py and freq.py are the pattern.
+3. **Digests, not repositories.** Workers read LESSONS.md and LANDSCAPE.md, not the solver repositories in
+   full. Clone a repository only to grep it for a named target.
+4. **Fetch once, keep a manifest.** Images and page text go to disk with images/manifest.json on the first
+   fetch; later passes read the disk.
+5. **Compact outputs.** Worker results are TSV, JSON or a short markdown table with a five-line report; prose
+   is for NOTES.md sections the person will read. The person has said machine-shaped files are fine.
+6. **Fan-out limits.** At most four subagents at once per worker; two transcription passes, not three, unless
+   the two disagree on more than a tenth of the rows.
+7. **Stop when the brief is met.** A worker does not continue into follow-ups (a sweep of sister copies, an
+   audit of its own) that its brief did not name; it writes the follow-up as a one-line suggestion in NOTES.md.
+
 ## Access playbook
 
 Getting the material is most of the work. Try routes in this order and record which one worked in NOTES.md:
