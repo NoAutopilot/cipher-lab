@@ -1,11 +1,13 @@
 # Unidentified 18th-century cipher/symbol manuscript (National Library of Scotland, MS 20769)
 
-- **Status:** open. **Caveat before any campaign:** the catalogue record could not be loaded directly from
-  this environment (see below); its wording comes from repeated, identical search-engine snippets, not a
-  first-hand read. The proposer's "57 leaves" figure is **unverified** — no snippet gave a leaf/folio total.
-  Whether this is a true substitution cipher or a private/occult notation (shorthand, alchemical sigla used
-  non-cryptographically) is also unresolved — see "Is it actually a cipher?" below. Both must be settled,
-  ideally by the person reading the live catalogue page, before any reproduction is ordered.
+- **Status:** open. **Extent confirmed:** the catalogue record (read 20 Sept 2026, see dated section below;
+  a verbatim first-hand read, via an Internet Archive Wayback Machine capture of the live page dated 19 May
+  2024, since manuscripts.nls.uk itself still refuses this environment's headless browser — see below) gives
+  **Extent: 57 Leaves ; Oblong quarto and octavo**, confirming the proposer's figure. The record's own title
+  is "Unidentified text, apparently 18th century, written in cipher." and its genre/form heading is "Ciphers.
+  Codes.", which is stronger evidence for a genuine cipher than the earlier search-snippet read gave, but a
+  cataloguer's genre tag is not proof against the private/occult-notation reading — see "Is it actually a
+  cipher?" below, which still stands. Language of Materials is catalogued as "Undetermined".
 - **Plaintext language:** unknown. Best guess English or Scots, weak: the manuscript is in a Scottish national
   collection and loosely encloses a copy of Sir Thomas Urquhart's *Pantochronachanon* (a work by a 17th-century
   Scottish laird, written in English, published London 1652) made by Robert Mylne. The pencilled name
@@ -44,6 +46,83 @@ auth.nls.uk/copy-enquiry-form/ or manuscripts@nls.uk; quote returned within 10 w
 
 Digitisation: no evidence MS 20769 is on NLS's "Early manuscripts" digital gallery (digital.nls.uk/early-manuscripts/)
 or has a IIIF manifest. Working assumption: not online.
+
+## Catalogue record, read 20 Sept 2026
+
+The section above ("via search snippets") is now superseded by a first-hand read of the actual catalogue HTML.
+manuscripts.nls.uk is Cloudflare-protected (a JS "Performing security verification" challenge page, confirmed
+by screenshot) and did not clear for `tools/browser_fetch.js` even after the container's NSS-store fix for
+`ERR_CERT_AUTHORITY_INVALID` landed this session (see the Access playbook note below) — three attempts, up to
+an 8s extra wait, all returned the Cloudflare interstitial, not the record. The record was instead read via the
+Internet Archive Wayback Machine's capture of the live page, timestamp `20240519232501` (its own citation box
+reads "Accessed May 20, 2024"), fetched through `tools/browser_fetch.js` against `web.archive.org` (not
+Cloudflare-protected) at
+`https://web.archive.org/web/20240519232501if_/https://manuscripts.nls.uk/repositories/2/resources/18888`.
+The record's live URL — found via a second Wayback capture (`20240914073015`) of the "Ciphers. Codes." subject
+browse page, `https://manuscripts.nls.uk/subjects/324`, which lists MS.20769 among its resources — is
+`https://manuscripts.nls.uk/repositories/2/resources/18888` (the ArchivesSpace resource id, 18888, is distinct
+from the shelfmark number 20769). This is a first-hand read of the cached catalogue markup, not a live fetch;
+the shelfmark is stable and the record is unlikely to have changed since May 2024, but this is a snapshot, not
+confirmation that the live page reads identically today.
+
+Full "Scope and Contents", "Dates", and descriptive fields, quoted verbatim from the archived page:
+
+> **Unidentified text, apparently 18th century, written in cipher.**
+> File. Identifier: MS.20769.
+>
+> **Scope and Contents**
+> The cipher alphabet included Roman and Greek letters, astrological symbols, and other apparently invented
+> symbols. The text appears to be divided into sections by horizontal lines. The name Baptiste Romin or Romain
+> is added in pencil on folios 27 and 28 (inverted).
+> Loosely enclosed is a fragment of a copy by Robert Mylne of Sir Thomas Urquhart's 'Παντοχεονοχανον' (London,
+> 1652). This bifolium, paginated 33-36, contains numbers 98-113 of the 'genealogy' of the Urquharts.
+>
+> **Dates**
+> Creation: 1652, 18th century.
+>
+> **Conditions Governing Access**
+> Normal access conditions apply.
+>
+> **Conditions Governing Use**
+> Normal reproduction conditions apply, subject to any copyright restrictions.
+>
+> **Extent**
+> 57 Leaves ; Oblong quarto and octavo.
+>
+> **Language of Materials**
+> Undetermined
+>
+> **Arrangement**
+> 27 + blank + 28 (inverted) + ii folios.
+>
+> **Immediate Source of Acquisition**
+> Deposited, 1949, by the Society of Antiquaries of Scotland.
+>
+> **Genre / Form**
+> Ciphers. Codes.
+>
+> Repository: National Library of Scotland Archives and Manuscripts Division.
+
+Notes on the above, not repaired in the quote:
+- The Greek title is transcribed by the cataloguer as "Παντοχεονοχανον"; Urquhart's actual title is usually
+  rendered "Pantochronochanon" in Latin script — this looks like an OCR/typo artefact in the NLS record itself
+  (Ε/Ρ, Ο/Ρ confusions are exactly what happens when Greek is mis-set from a manuscript), not something
+  introduced by this project. Quoted as the record gives it.
+- "Arrangement: 27 + blank + 28 (inverted) + ii folios" sums to 27+1+28+2 = 58 folios, one more than "Extent:
+  57 Leaves" — an apparent internal inconsistency in the record (folios vs. leaves are not always counted the
+  same way, or "ii folios" may be unfoliated endleaves counted outside the 57). Not resolved here; flagged for
+  whoever eventually orders reproduction, so the frame count expected from a scan order is not a surprise.
+- Provenance is now established: deposited 1949 by the Society of Antiquaries of Scotland — a first fact
+  toward a provenance chain that was previously completely unknown.
+- The record type badge reads "File" (an ArchivesSpace `resource`-level record, i.e., an archival file/item,
+  not a larger collection or a sub-item `archival_object`) — this is a self-contained single item, not one part
+  of a larger described series.
+
+This does not settle "Is it actually a cipher?" below — the cataloguer's title and genre tag both say cipher,
+which is stronger than the search-snippet read, but "Ciphers. Codes." is NLS's standard genre/form heading and
+a cataloguer's classification of a mixed Roman/Greek/astrological/invented symbol set as a "cipher" is exactly
+the same judgement call this project would need to independently verify from a page image before committing to
+a substitution-style attack.
 
 ## Is it actually a cipher?
 
@@ -85,9 +164,12 @@ before this is worth a reproduction order.
 
 ## Ideas
 
-Before ordering scans: get someone who can load manuscripts.nls.uk to read the live record (confirm shelfmark
-form, true extent, full physical description, provenance) and, if possible, ask NLS reprographics directly
-whether their own cataloguer would call this a cipher or a private notation/shorthand. If leaf count and
-"cipher" status both hold, this would be the largest genuinely open target in the project's queue and worth the
-roughly £100-200+ (unconfirmed) full-manuscript scan order; if it turns out to be shorthand or an occult
-notebook, it is out of scope for a substitution-cipher attack.
+The catalogue record is now read first-hand (see dated section above): shelfmark MS.20769, extent 57 leaves
+confirmed, provenance (Society of Antiquaries of Scotland, 1949) established, and the cataloguer's own title
+and genre tag call it a cipher. What is still missing before ordering scans: a page image (the record gives no
+IIIF/digitisation link, and none was found earlier in this file), and ideally a direct answer from NLS
+reprographics on whether their own cataloguer would still call this a cipher versus a private notation/shorthand
+if pressed, since a genre tag alone does not settle "Is it actually a cipher?" above. With leaf count and
+"cipher" status now both catalogue-confirmed, this is the largest genuinely open target in the project's queue
+and worth the roughly £100-200+ (unconfirmed, 57 leaves at NLS's per-scan rates quoted above) full-manuscript
+scan order — but that order should wait for the person's go-ahead, since no reproduction has been ordered here.
