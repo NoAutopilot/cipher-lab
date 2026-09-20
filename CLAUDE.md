@@ -186,6 +186,17 @@ Getting the material is most of the work. Try routes in this order and record wh
    a cookie jar; the loan endpoint is /services/loans/loan/ with action browse_book, then the page images
    through the BookReader endpoints). Rules: one book at a time, for a named page check, returned when done,
    never bulk; the account is for the person's own reading. Search-inside and the full-text API need no login.
+   First use, 20 Sept 2026: login failed both ways -- the `internetarchive` library's `ia configure`
+   (`services/xauthn/?op=login`) and archive.org's current `/login` page both require an email address, and
+   IA_USER as set is not one (`account_not_found` from the API; the login page renders only an "Email
+   address" field, no username field). Borrowing could not be tested; `tools/ia_borrow.py` implements the
+   flow (xauthn login, loan/browse_book, BookReaderJSIA.php for page images, loan/return_loan) but its image
+   step is unverified pending a corrected IA_USER.
+   Without login: `be-api.us.archive.org/fts/v1/search?q=<term>&identifier=<id>` full-text-searches even
+   lending-only items and returns snippet highlights, but its `page_num` field is not a real page locator --
+   it equals the item's total `imagecount` (confirmed on two different items) -- so this route can confirm a
+   term is present/absent and show the surrounding sentence, but cannot cite a page number; page images and
+   raw OCR files (`_djvu.txt`, `_hocr_searchtext.txt.gz`, `_page_numbers.json`) all 403 without a valid loan.
    JSTOR: JSTOR_USER and JSTOR_PASS (set 20 Sept 2026) give 100 article reads a month for the verifier's
    scholarship checks; log the article and date in AUDIT.md and never print the credentials.
    **DECODE (de-crypt.org) login, confirmed 20 Sept 2026:** plain CSRF-protected form POST, no client-side

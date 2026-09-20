@@ -195,3 +195,23 @@ Both open threads are now closed as not found by these two additional routes (Go
 HathiTrust bibliographic API). The HMC Supplementary Report (1932) pp.70-74 thread from the previous pass is
 untouched by this one. Status unchanged: **offline-only**; REQUEST.md for GD406/1/2197 remains the fastest
 route to the key.
+
+## Print check follow-up, 20 Sept 2026 (IA-login worker)
+
+Attempted the follow-up flagged above: borrow `supplementaryrep0000grea` with the IA_USER/IA_PASS login and
+read the index plus the 1650 section (the four Charles II letters) and pp.70-74 in full. **Blocked**: the
+login itself failed — archive.org requires an email address and IA_USER as set is not one (see Access
+playbook, CLAUDE.md, "Credentials from the environment" §3, dated today). No page image or OCR text of this
+restricted item could be read this session; the item could not be opened beyond the search-inside snippets
+already on record above.
+
+Within that limit, ran further `be-api.us.archive.org/fts/v1/search` queries against the same item, targeted
+at the four letter dates specifically, to sharpen the existing snippet-only check: `"1650, August"` (no hit),
+`"1650, September"` (one hit, "Hamilton to the Committee of Estates. 1650, September 14. — He begs that his
+banishment..." — a different letter, Hamilton to the Estates, not Charles II to Hamilton), `"August 6"` (no
+hit), `"in cipher"` (one hit, the same pp.70-74/1648 passage already on record, no other occurrence in the
+volume). No hit anywhere in the volume for a cipher or deciphered passage tied to any of 6 Aug, 14 Aug,
+31 Aug or 27 Sept 1650. This is consistent with, not additional proof beyond, the existing verdict: still
+**not found in the sources checked**, and the pp.70-74/1648 passage is still an unconfirmed lead (same
+recipient, different date and, on this evidence, no textual link to the 1650 letters) that needs a full read,
+not a search-inside snippet, to settle. Status unchanged: **offline-only**.
