@@ -271,3 +271,80 @@ regenerated from status.json. Not touched: ciphers/eckert-1862/NOTES.md section 
 published by the project") is outside this brief but is contradicted by the project blog posts cited in
 section 12 and should be softened to "no systematic decoding; single entries read on the blog".
 
+## 12. Corpus question, kept separate
+
+Written after sections 1-11 were committed (ae37197). This conclusion does not depend on the four-message
+verdict and the four-message verdict does not depend on it.
+
+**Question 1: has anyone systematically mapped the Eckert ledger entries (mssEC 1-35) to cipher system, key,
+plaintext, provenance and prior publication?** Not found in the sources searched. What exists:
+
+- The finding aid (Online Archive of California, ark:/13030/c86m3964, "Thomas T. Eckert Papers, 1861-1877",
+  Huntington Manuscripts Department, 2014; reproduced as Appendix B of the NHPRC proposal) maps volumes to
+  series and date ranges and says only: "These include telegrams both still in code and decoded (the sent
+  messages are ciphered; the received telegrams are mostly decoded)." Series 1: fourteen received volumes
+  (Feb 1862-Aug 1867) and seven sent volumes (Feb 1862-July 1867); series 5: 32 cipher volumes, "eight copies
+  of cipher book #1 (1861-1862); two copies of cipher book #2 (approximately 1866); 18 copies of cipher book
+  #5 (1865-1866); and 1 copy of cipher book #9 (approximately 1865)".
+- The NHPRC proposal (archives.gov/files/nhprc/announcement/literacy-transcribing.pdf, 2014) gives per-volume
+  page counts (Appendix C) and the estimate "15,922 telegrams, of which perhaps 5,400 (34 percent) are
+  enciphered" (p.4). No per-entry cipher map.
+- The Huntington item records give, per page, telegram numbers and a keyword field and the volunteer
+  transcription; object 9302 (mssEC 19) carries "Approximately 824 telegrams, 4 of which have been partially
+  or completely crossed out" and "Transcription text provided by the volunteers of Decoding the Civil War
+  (2016-2017)". No field for cipher, key, plaintext or publication.
+- Tomokiyo, civilwar1.htm, maps the cipher books (mssEC 37-67) to Stager's numbered ciphers, not the ledger
+  entries; the project blog's "Happy Birthday General Grant!" (27 Apr 2017) lists Grant's arbitraries per
+  cipher ("Cipher 1: Judah, John, Juno, Jupiter, Japan & Jersey"), which dates entries by marker words, the
+  method NOTES.md section 2 uses.
+- The project blog read single entries: mssEC 19 p.[47], Grant to Sherman 31 Mar 1864, with Cipher No. 1
+  from mssEC 44 ("Now, Jesse", 26 June 2017, matched to OR I/32 pt 3 p.213); mssEC 15, Lincoln to McClellan
+  21 Apr 1862, in "a code that has not survived" ("Reverse Engineering Lost Codebooks", 21 Apr 2017); an
+  entry read with the mssEC 46 corrections ("Laughing Matter", 1 Sept 2017); and mssEC 19 pp.293-295, the
+  1865 Stager/Lynch test ciphers, identified via OR I/47 pt 2 p.475 without a word-by-word reading
+  ("Bonkers", 12 Oct 2017). No table linking entries to cipher number, key, plaintext and publication was
+  found anywhere; this repo's eckert-1862 and eckert-1864 NOTES appear to be the first such attempt, and they
+  cover 30 entries of about 16,000.
+
+**Question 2: was the Decoding the Civil War decoding phase completed publicly, internally, partially, or not
+at all?** Not at all in public; nothing found says it was done internally. The evidence in order:
+
+1. Plan: NHPRC proposal (2014), p.10: "The project will first ask users to transcribe telegrams, and then
+   give them the opportunity immediately thereafter to use cyphers from the Eckert Archive and the Friedman
+   Collection ... When complete, the transcriptions and decoded messages will be ingested into the Huntington
+   Digital Library." The Huntington's own pages (huntington.org/verso/decoding-civil-war, read through search
+   snippets only, the site answers 429): "In the final phase, code books in the archive will be used to
+   decipher the encoded telegrams."
+2. Phase 1 done: blog "Phase 1 Transcription Complete! Huzzah! Huzzah! Huzzah!", 15 Nov 2017; Zooniverse
+   workflow 1874 (experimental_marking_flow) finished 15 Nov 2017 with 12,921 subjects retired; project record
+   (api/projects?slug=zooniverse/decoding-the-civil-war): state "finished", 131,170 classifications.
+3. Phases 2 and 3 designed: blog "Decoding the Civil War: Phase 2, Two Work Flows, Your Choice", 28 Sept 2017:
+   "The first work flow, Code Words, is marking the arbitraries, or code words, for those messages in code.
+   These coded telegrams will then be fed into Phase 3, the final decoding of the telegrams." Phase 2 ran only
+   as a beta (Talk, "Phase 2 Beta Test 2!", Nov 2017). Every production workflow (ids 1452, 1874, 2126, 3309,
+   6156, 6162) is a transcription workflow; none marks code words or decodes.
+4. Pause: Zooniverse Talk thread 667515, Mario Einaudi, 19 June 2018: "Phase 2 is in the wings almost ready to
+   launch. We continue to work on glitches in the programming."
+5. End: blog "Decoding the Civil War: End", 31 July 2019 (also Talk thread 1075645): "Decoding the Civil War
+   has been on pause since January 2018. We first attempted to build a new crowdsourcing interface, called
+   Phase 2 ... However, this tagging of individual telegrams ran into significant technical difficulties.
+   Therefore ... it was decided this past June follow a new path. We will instead extract through text mining
+   the data required." Phase 3 is not mentioned; the text mining concerns sender, recipient and date.
+6. Aftermath to 20 Sept 2026: the Huntington records carry no decoded field; no dataset, paper or report on
+   the text-mining path or on any decoding was found (WebSearch 2022-2026; Google Scholar "Thomas T. Eckert
+   Papers" returns no articles; Blickhan and Van Hyning 2026 does not mention the project; no NHPRC final
+   report online). The Zooniverse Talk subject comments (about 6,000) could not be keyword-searched through the
+   API, so a volunteer's decoding of a particular entry there cannot be excluded.
+
+So: the decoding phase was planned (2014), announced as Phase 3 (Sept 2017), never launched, and dropped
+without mention when the project closed (July 2019). Whether Huntington staff decoded anything after 2019
+could not be determined; nothing published says so. Sources unreachable for this section: huntington.org
+(429), JSTOR (client challenge), scienceblog.zooniverse.org (proxy 502), ArchiveGrid (403), OAC full-text
+search (JavaScript challenge; the base finding-aid page was read).
+
+Implication for the target, independent of sections 1-11: the ledgers remain a transcription-only corpus in
+public. Reading them from the surviving books is straightforward where a book survives (Cipher No. 1, 2, 5,
+9) and the value lies in the entries whose plaintext is not otherwise in print, which can only be established
+entry by entry with the search of section 4, never assumed. The project's own statement that Cipher No. 1 was
+withdrawn after the September 1864 captures ("Bonkers") should be tested against the Sept-Dec 1864 entries
+this folder reads with it.
