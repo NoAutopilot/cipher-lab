@@ -1,0 +1,1035 @@
+# Raw output of the dictionary-edition tests, 19 Sept 2026 (tools/gbooks_search_within.py and tools/ia_djvu_headwords.py).
+# Google Books: numbers are printed page numbers; PPnn/PTnn are scan ids. IA: (scan index, first two OCR lines).
+
+## batch1
+===== PfxIAAAAcAAJ
+  morrow       [('245', '... Morrow , f . the next day after the present one Morse , s . a kind')]
+  occupy       [('144', '... occupied by a farmer ; v.a. to rent Fastening , part . making fast'), ('202', '... occupy , poffef . Injudicious , a . void of judgment , unwife , fi'), ('258', '... occupies , one who poffeffes Oecumenical , a . general , univerfal')]
+  alphabet     [('v', '... alphabet of the English tongue in this small pocket - volume . How'), ('vi', '... Alphabet of the most common Names of Men and Women ; a complete Li'), ('vii', '... j e q W W D d K k R r X x E e L 1 S for s Y y F f M m T t Z Z G g '), ('xii', '... alphabet ; but if it be left out in the pro- nunciation of hand , '), ('2', '... alphabet Ablution , f . the act of cleanfing or of washing Abecéda'), ('13', '... alphabet Alphabetically , ad . by way , & c . of the alphabet Alre'), ('221', "... alphabet , type , mark Let'ter , v . a . to stamp , mark or adorn "), ('259', "... alphabet Omelet , f . a pancake , a pancake made of eggs . O'men ,"), ('450', '... alphabet , and was at laft turned into a ferpent Cadúceus , Mercur')]
+  westward     []
+===== SNwIalh3krMC
+  morrow       [('245', '... Morrow f . the next day after the present one Mop.v.to rub with a ')]
+  occupy       [('144', '... occupied by a farmer ; v . a . to rent Faftening . part . making f'), ('202', '... occupy , poffefs Injudicious . a . void of judgment , unwi Inhabit'), ('258', '... occupies , one who poffefses Oecumenical . a . general , univerfal')]
+  alphabet     [('iii', '... alphabet of the English tongue in this small pocket - volume . How'), ('iv', '... Alphabet of the most common Names of Men and Women ; a complete Li'), ('v', '... OVQRST 0 U u P -V V 9 W w r X X fors Y y t Z Z 8 N n In which alph'), ('viii', '... have rejected & from the alphabet ; but if it be left out in the p'), ('2', '... alphabet Ablution . f . the act of cleanfing or of washing Abeceda'), ('13', "... alphabet Allu're . v . a . to entice , decoy , tempt , wheedle Alp"), ('221', '... alphabet , type , mark Libel . a defamatory fatire , a declaration'), ('259', "... alphabet Offi'cioufly , ad . with unasked kindnels , readily Omele"), ('449', '... alphabet , and was turned at last into a ferpent Caduceus , Mercur')]
+  westward     []
+===== EF5iAAAAcAAJ
+  morrow       [('xii', '... morrow . IMPERATIVE MODE . Sing . Love , do thou love , or love th'), ('xiii', '... morrow . The subjunctive form of this verb is thus diftinguished :'), ('245', '... Morrow , f . the next day after the prefent one Morse , s . a larg')]
+  occupy       [('142', '... f . a tendency to deceive or cheat Fallacy , f . deceit , fraud , '), ('144', 'John ENTICK. Farm , f . land occupied by a farmer ; v . a . to rent Fa'), ('202', '... occupy , poffefs Inhabitable , a . decent , habitable , not habita'), ('258', '... occupies , one who poffeffes Occupy , v . a . to hold , use , poss')]
+  alphabet     [('v', '... Alphabet . HE English alphabet confifts of twenty fix letters , vi'), ('2', '... alphabet Abecedary , a . relating to or having the alphabet Abéd ,'), ('13', '... alphabet Alphabetically , ad . according to the alphabet Alto , f '), ('221', "... alphabet , type , mark Let'ter , v . a . to stamp , mark or adorn "), ('259', "... alphabet Om'elet , f . a pancake made of eggs O'men , f . a good o"), ('452', '... alphabet , and was at last turned into a ferpent Cadúceus , Mercur')]
+  westward     []
+===== azlh2lf18B0C
+  morrow       [('x', '... joined to nouns as well as my , thait to range them as I have done'), ('xii', '... morrow . IMPERATIVE MODE . Sing . Love , do thou love , or love th'), ('xiii', '... morrow . The fubjunctive form of this verb is thus distinguished :')]
+  occupy       [('142', '... . deceitfully , treacheroufly , craftily Falláciousness , f . a te'), ('144', 'John Entick. f . Farm , f . land occupied by a farmer ; v . a . to ren'), ('202', "... occupy , possess Inhab'itable , a , decent , habitable , not habit"), ('258', '... occupies , one who poffeffes Occupy , v.a. to hold , use , poffefs')]
+  alphabet     [('v', '... Alphabet . HE English alphabet confifts of twenty fix letters , vi'), ('2', '... alphabet Abecédary , a . relating to or having the alphabet Abéd ,'), ('13', '... alphabet Alphabetically , ad . according to the alphabet Altitude '), ('221', "... alphabet , type , mark Let'ter , v . a . to stamp , mark or adorn "), ('259', "... alphabet Om'elet , f . a pancake made ofeggs O'men , f . a good or"), (None, '... alphabet , and was at laft turned into a ferpent Cadúceus , Mercur')]
+  westward     []
+===== LTRMbkQ7p-MC
+  morrow       [('viii', '... sonly : as , iliff , bailiffs ; ; theriff , sheriff , sheriffs ; s'), ('xii', '... morrow . IMPERATIVE MODE . Sing . Love , do thou love , or love th'), ('xiii', '... morrow . The fubjunctive form of this verb is thus diftinguished :'), ('245', '... Morrow , f . the next day after the present one Mo. fe , f . a lar')]
+  occupy       [('143', '... Farfetch , f . a farfetched thought , wile , shift , art Farfetche'), ('144', 'John ENTICK. Farm , f . land occupied by a farmer ; v . a . to rent Fa'), ('202', "... occupy , possess Inhab'itable , a . decent , habitable , not habit"), ('258', '... occupies , one who possesses Occupy , v . a . to hold , ufe , pots')]
+  alphabet     [('v', '... Alphabet . THE English alphabet confifts of twenty - fix letters ,'), ('2', '... alphabet Abecédary , a . nelating to or having the alphabet Abéd ,'), ('13', '... Alphabet , f . the letters in any language ; va . to Alphabetical '), ('221', "... alphabet , type , mark Let'ter , v . a . to stamp , mark or adorn "), ('259', "... alphabet Omelet , J. a pancake made of eggs O'men , f . a good or "), ('452', '... alphabet , and was at laft turned into a ferpent Cadúceus , Mercur')]
+  westward     []
+===== FZ4syDmUph8C
+  morrow       [('10', '... morrow . Imperative mode . or love ye , let them love . Sing . Lov'), ('11', '... morrow . There is a subjunctive or conditional form which drops th'), ('260', '... Morrow , s . the next day after the present one . Morse , s . a la')]
+  occupy       [('163', "... occupied by a farmer ; v . a . to rent . Farm'er , s . one who ren"), ('217', '... occupy , possess . Inhabitable , a . decent , habitable , not habi'), ('271', '... occupies , one who possesses . Occupy , v . a . to hold , use , po')]
+  alphabet     [('3', '... Alphabet ....... II . On the Parts of Speech , and the Inflections'), ('5', '... Alphabet . THE English Alphabet consists of twenty - six let- ters'), ('28', "... alphabet . Abece'dary , a . relating to , or having the alphabet ."), ('39', '... Alphabet , s . the letters in any language ; v . a . to range . Am'), ('236', "... alphabet , type , mark . Let'ter , v . a . to stamp , mark or ador"), ('273', "... alphabet . Om'elet , s . a pancake made of eggs . O'men , s . a go"), ('446', "... alphabet , z . Zedoary , s . the name of a spicy plant . Ze'nith ,"), ('453', "... alphabet , and was turned into a serpent . Caduceus , Mercury's ro")]
+  westward     []
+===== 3ltWAAAAYAAJ
+  morrow       [('275', '... Morrow , s . the day after the present day Morse , s . the river -')]
+  occupy       [('170', "... occupied by a farmer Farm'ér , s . one who rents and cultivates Ja"), ('289', "... occupies oc'cu - pỹ , v . a . & n . to possess ; to employ oc - cu"), ('324', "... occupy beforehand Pré - oc - cu - pa'tion , s . prepossession , an")]
+  alphabet     [('18', "... alphabet A - běď , ad . in bed xb - lac'que - ate , v . a . to lay"), ('18', "... alphabet A - běd , ad . in bed A - bide ' , v . n . to remain in a"), ('31', "... alphabet Al'wayş , ad . perpetually , forever Al - pha - bětic - a"), ('290', "... alphabet of'fi - cér , s . one in office ; commander in O - mega ,")]
+  westward     []
+===== FFtWAAAAYAAJ
+  morrow       [('291', "... Morrow , s . the day after the present day Morfe ' , s . the river")]
+  occupy       [('180', '... occupied by a farmer more remote Farther , a . and ad . at a great'), ('307', "... occupies oc'cu - py , v . a . & n . to possess ; to employ oc - cu"), ('341', '... occupy beforehand Pre - oc - cu - pation , s . prepossession , ant')]
+  alphabet     [('18', "... alphabet A - běd ' , ad . in bed Ab - ěr rănce , s . a deviation f"), ('18', "... alphabet A - běd ' , ad . in bed Ab - er'rănce , s . a deviation f"), ('306', "... alphabet of'f i - cér , s . one in office ; commander in O - mega "), ('313', "... alphabet of'f i - cér , s . one in office ; commander in O - mega ")]
+  westward     []
+===== OY8VAAAAYAAJ
+  morrow       []
+  occupy       [('180', "... occupied by a farmer Fafh'ión , s . custom , form , fort , rank Fä"), ('305', "... occupies oc'cu - pỹ , v . a . & n . to possess ; to employ oc - cu"), ('341', '... occupy beforehand glands of the penis , the forefkin Pre - oc - cu')]
+  alphabet     [('18', "... alphabet A - běd ' , ad . in bed A - básh ' , .a . to dath , to pu"), ('32', "... alphabet Al - read'y , ad . before , at this present time A - main"), ('306', '... alphabet offi - cér , s . one in office ; commander in O - mega , ')]
+  westward     []
+===== UPsTAAAAYAAJ
+  morrow       [('343', '... MORROW , mor - ro , s . 327. The day after the present day ; to - '), ('385', '... morrow be in readiness to go ; " Excuse it net , for I am perempto')]
+  occupy       [('14', '... occupy and occupiable , & c . ( 512 ) . 184. There is an irregular'), ('206', '... occupied by any army ; a wide expanse ; space , compass , extent ;'), ('207', '... occupy by bulk . FINE , fine , s . Any thing that fills up room wi'), ('251', '... occupied as inheritance . HEREDITAMENT , her - é - dit - a - ment '), ('360', '... OCCUPY , Okku - pl , v . a . 183. To possess , to keep , to take u'), ('401', '... occupy actually ; to seize , to obtain ; to have power over , as a'), ('407', '... occupy by anticipation or prejudices . To PREOMINATE , pré - om - '), ('409', '... occupy , to pre - engage , to attempt first ; to hinder , to obvia'), ('524', '... occupy ; to accommodate , to adjust ; to comprise ; to adopt , to '), ('574', '... occupied by notions . UNPRESSED , un - prest , a . Not pressed , n')]
+  alphabet     [(None, '... blemish of the first magnitude . The difficulty of remedying this '), (None, '... ALPHABET No. 482 Definition of vowels and consonants 5 Z , imprope'), (None, '... alphabet may be properly said to consist of twenty - six letters .'), ('5', '... alphabet is that which among the English is its name . ( See the l'), ('14', '... alphabet : it requires the mouth to be formed , in some degree , l'), ('14', '... alphabet , 73. An article set before nouns of the singular number '), ('14', '... alphabet , we see the natives of Ireland very prone to a different'), ('18', '... alphabet , answering to our A ; therefore used to signify the firs'), ('358', '... alphabet . The same may be observed of the o in opaque , opinion ,'), ('601', '... alphabet . For the proper name of this letter , see Principles , N')]
+  westward     [('69', '... Westward , to the west of . BY - WORD , bl - wurd , s . A saying ,'), ('77', '... westward by the causry . " 1 Chron . xxvi . 16 . But Milton , Dryd'), ('589', '... WESTWARD , west - wůrd , ad . 88. Towards the west . receiver of a')]
+===== DaURAAAAIAAJ
+  morrow       [('351', "... MORROW , mor'rd . f . ( 327 ) .. The day after the present day ; t")]
+  occupy       [('201', "... occupied . DISTICH , dis'tik . f . ( 353 ) . A couplet , a couple "), ('239', '... occupied by an army ; a wide expanfe , space , compass , extent ; '), ('240', "... occupied by war . FIGMENT , fig'ment . s . An invention , a fictio"), ('267', '... occupied by an army as they fight , advance , or retire ; the stat'), ('277', "... occupied as inheritance . HEREDITAMENT , he - red'é - ta - ment . "), ('366', "... OCCUPY , Ok'ku - pi . v . a . To poffefs , to keep , to take up ; "), ('399', '... occupy actually ; to seize , to ob- tain ; to have power over , as'), ('403', "... occupy by anticipation or prejudices . TO PREOMINATE , pre - om'me"), ('497', '... occupy ; to accommodate , to ad- just ; to comprife ; to adopt , t'), ('532', "... ûn - eks - ten'ded . a . Occupying no afsignable space ; having no"), ('538', "... occupied by notions . UNPRESSED , un - preft ' . a . Not pressed ,")]
+  alphabet     [('2', '... alphabet may be properly said to confift of twenty - fix letters .'), ('3', '... alphabet exactly similar to the pronoun you * . If , therefore , t'), ('7', '... alphabet . An Enquiry into the alphabetical Pronunciation of the L'), ('8', '... Alphabet . Whether we are to say Aye , B , C ; Ab , B , C ; or Aw '), ('9', '... alphabet , may always be faid to have the accent , and ought to ha'), ('10', '... alphabet , is no more than giving it that simple found , it ever h'), ('21', '... alphabet . It requires the mouth to be formed , in some degree , l'), ('73', '... alphabet | ABB , ab . f . ( 63 ) . A , an article set before nouns'), ('86', '... alphabet , an- fwering to our A ; therefore used to fignify the fi'), ('175', '... Alphabet , so named because a cross is placed at the beginning , t'), ('364', '... alphabet . The fame may be ob- ferved of the o in opaque , opinio '), ('368', '... alphabet , there- fore taken in the Holy Scripture for the last . '), (None, "... alphabet . ZENITH , ze'nith . f . The point over head opposite the")]
+  westward     [('126', "... main road . BY - WAY , bi'wa . f . A private and obfcure way . BY "), (None, "... WESTWARD , West'wård . ad . Towards the west . WESTWARDLY , west'w")]
+===== sDVAAAAAYAAJ
+  morrow       [('52', '... MORROW , ( mor - ro . ) s . the day after the present day ; to mor')]
+  occupy       [(None, "... occupied DISTICH , ( dis ' - tik . ) s . a couplet , a couple of l"), (None, '... occupied by war FIGMENT , ( fig - ment . ) s . an inven- tion , a '), (None, "... occupied by an army To GROUND , ( ground ' . ) v . a . to h on the"), (None, '... occupied as inherit- ance 4- HEREDITAMENT , ( hèr - y - dit - d me'), ('68', "... OCCUPY , ( ok ' - ku - pỷ . ) v . a , to pof- sess , to keep , to "), ('69', '... occupy actually ; to feize , to obtain ; to have power over , as a'), ('77', "... occupy by anticipation or prejudices TO PREOMINATE , ( prè - óm ' "), (None, "... occupied , un poffefled TENCH , ( tèn'tih . ) s . a pond fish TEND"), (None, '... occupying no assignable space ; having no dimensions UNEXTINGUISHA'), (None, '... occupied by notions UNPRESSED , ( un - prèst . ) a . not pressed ,')]
+  alphabet     [(None, '... alphabet , ac- cording to the method above laid down . Vowels , SC'), (None, '... alphabet , I shall now pro- ceed to examine such fimple founds as '), (None, '... alphabet in all the known languages in the world , that of Ethiopi'), (None, '... alphabet , answering to our A ; therefore used to fignify the firs'), (None, '... alphabet . It has two sounds , the hard and the foft ; the hard fo'), (None, '... alphabet . It is founded by intercepting the breath between the to'), ('106', '... alphabet . Its found is formed by a guttural extrusion of the brea'), (None, "... alphabet ; it is composed , as its name im- plies , of two v's , a"), (None, '... alphabet , and a double confonant . It begins no word in our langu'), (None, "... sterling ZED , ( zed ' , or iz - zard . ) s . the name of the lett")]
+  westward     [(None, '... westward , to the west of BY - WORD , ( bi - wurd . ) s . a faying'), (None, "... WESTWARD , ( west ' - wurd . ) ad . to- wards the west WESTWARDLY ")]
+
+## batch2
+===== 3KDQRByYtYEC
+  morrow       [(None, "... Morrow , mor'rd . s . the day after the present day . Temple . Cow")]
+  occupy       [(None, "... occupied . Distich , dis'tik . s . a couplet , à couple of lines ."), (None, '... occupied by a farmer . Farm , fårm . v . a . to let out or take at'), (None, "... occupied by war . Pope . Brown . Figment , fig'ment , s . an inven"), (None, "... occupied as inheritance . Locke . Hesitancy , hez'e - tân - sẻ . s"), (None, '... . Boyle . Obtrusion , ob - troởzhin . s . the act of obtruding . K'), (None, '... occupy actu- ally . Carew . To seize or obtain . Hayw . To make ma'), (None, '... occupy by anticipation or prejudices , to seize before another . A'), (None, "... occupy . Loc . Sweeper , sweep'ur . s . one that sweeps . -To abso"), (None, '... occupying no assignable space , having no dimensions . Milt . Lock'), (None, "... occupied . Spenser . Dryd . Wastefully , waste'fil - e . ad . with")]
+  alphabet     [(None, "... alphabet . To insert the pronun- ciation of words in Sheridan's di"), (None, "... alphabet ; A , an ar - Abbreviator , ab - bré - ve - d'tår . s . o"), (None, '... Alphabet , alfa - bet . s . the letters or elements of speech . Dr'), (None, '... alphabet , so named because a cross is placed at the beginning , t'), (None, '... alphabet . Shak . An epistle . Abb . The literal meaning . Tay . -')]
+  theft        [(None, "... theft , to pilfer . Spenser . Fischer , fîlsh'år . s . a thief , a"), (None, "... theft . Prior . Rate , târcill , cât ; bẻ , bêt ;. Fuller's Earth "), (None, '... theft . Larch , lårtsh . s . a tree . Lard , lård . s . the grease'), (None, "... theft . Shak . Pilferer , pii'far - ar.s . one who steals petty th"), (None, '... theft , adop- tion of the thoughts or works of another . Swift . P'), (None, '... theft perpetrated by force or with privacy . Temple . Robe , robe '), (None, '... theft . Snapdragon , snapdrag - in . s . a plant , a kind of play '), (None, '... theft . Shak - To gain or effect by private means . Calamy . v . n'), (None, '... Theft , theft . s . the act of stealing . Cowel . The thing stolen'), (None, '... theft . Thievery , theevar - è . s . the practice of stealing , th')]
+  younker      [(None, '... Younker , yangkur . Youngth , yêngth . s . the state of being youn')]
+===== V_fkuRwhJzAC
+  morrow       [(None, "... Morrow , mor'rd . s . the day after the present day . Temple . Cow")]
+  occupy       [(None, "... stretch- ing . Arb . - Breadth , space occupied . Distich , dis'ti"), (None, '... occupied by a farmer . Farm , fårm . v . a . to let out or take at'), (None, '... occupied as inheritance . Hereditament , hè - rẻ - dita - ment . ('), (None, "... Occupy , okka - pl . v . a . to possess , Brown . To Odious , d'ju"), (None, '... occupy ac- tually . Carew . To seize or obtain . Hayw . -To make m'), (None, '... occupy by anticipation or prejudices , to seize before another . A'), (None, '... occupy . Locke . To absorb . Shak . Swallowtail , swolld - tale . '), (None, '... occupying no assignable space , having no dimensions . Unequalable')]
+  alphabet     [('vi', "... alphabet . To insert the pronun- ciation of words in Sheridan's di"), (None, '... alphabet ; A , an article set before nouns of the sin- gular numbe'), (None, '... alphabet , answering to our A , therefore used to signify the firs'), (None, '... alphabet , so named be- cause a cross is placed at the beginning ,'), (None, '... alphabet . Shak . An epistle . Abb . The literal mean- ing . Tay .'), (None, '... alphabet , therefore taken in the Holy Scrip- ture for the last . ')]
+  theft        [(None, "... theft , to pilfer . Filcher , filsh'år . s . a thief , a petty rob"), (None, '... theft . Prior . Rate , târ , cầll , cất ; bè ,. FUR Fungosity , få'), (None, "... your face to the head . Larceny , lår'sè - ne . s . petty theft . "), (None, '... theft , rob- bery ; a literal version of the Latin latroci- nium ,'), (None, '... theft of public money . Peculator , pek kủ là - tår . s . robber o'), (None, "... theft . Pilferer , pil'får år . s . one who steals petty Pilfering"), (None, "... theft . Snapdragon , snap'drag - in . s . a plant , a kind of play"), (None, '... theft . Shab . To gain or effect byý private means . Calamy -v .. '), (None, '... Theft , theft , s . the act of stealing . Cowel . - The thing stol'), (None, '... theft . Thievery , theevar - è . s . the practice of steal- ing , ')]
+  younker      [(None, '... Younker , yangkur . Youngth , yungth . s . the state of being youn')]
+===== R09gAAAAcAAJ
+  morrow       [(None, '... morrow , P 2 Tinker , s I Toe , s 2 Tinman , s 1 Toft , s 2 Tinfel'), (None, '... morrow , P I Toe , s 1 Toft , s 3 Together , p 1 Toil , v 2 Toilet')]
+  occupy       [(None, '... Occupy , v 2 Occur , v 3 Offering , s 4 Offertory , s 2 Office , s')]
+  alphabet     [('14', '... alphabet , and the proper manner of dividing fyllables , we shall '), ('3', '... , p Alliance , s 2 Aloud , p Allie , s 2 Alpha , s . Allie , v All')]
+  theft        [(None, '... a 3 Thankfulness , s I Thatch , s I Thatch , v I Thaw , s 1 Thaw ,'), ('5', '... I Thank , s Thank , v 2 Thánkful , a 3 Thankfulness , s I Thatch ,')]
+  younker      []
+===== 0F1iAAAAcAAJ
+  morrow       [('293', "... morrow , I may speak to him , ' - ' If he should or would come to "), ('296', '... are adverbs distinguished ? 1. Into adverbs of time ; as , now , t')]
+  occupy       [('170', "... occupy v ' oc cur ' rencen o'chre ous a oc ' ta gon n oc tavo n oc")]
+  alphabet     []
+  theft        [('35', '... theft n tenth a spool n II I stool n fware v scoop n v 2 fweep v f'), ('68', "... theft a fee'ble a v fetch ' er n far'thing n faf ' ces n fee'bly a"), ('269', '... theft steel , metal straight , not crooked strait , narrow fuccour')]
+  younker      []
+===== 4MQDAAAAQAAJ
+  morrow       [('80', "... morrow , mor - ō mõis ' - chur mooneyed , mortal , mor ' - täl mol")]
+  occupy       [('206', "... occupy , ok ' - ū - pī oilcolour , oil - kül - ěr oiliness , oil -")]
+  alphabet     [(None, '... alphabet , or to reform the orthography of the language . The aim '), (None, '... Alphabet ) differs little from that of Mr. Walk- er , except in it'), ('133', '... - siv almanack , al - mă - năk almandine al - măn - din almighty ,'), ('134', "... alphabet , al ' - fa - bět already , âl - rěd ' - ê alterant , âl ")]
+  theft        [('20', '... theft spear , spêr sprawl , sprâl staff , staf stealth , stelth sp'), ('22', '... theft , theft thrift , thrift tile , til teach , tech their , thar')]
+  younker      [('127', '... younker , yŭnk \' - ěr yourself , yŭr - self " wrathless , roth - l')]
+===== hu0IAAAAQAAJ
+  morrow       [('135', '... morrow ) To put off , to defer , to delay , to put off from one da'), ('363', '... morrow , the day following . To - migit , this night . TO ( adv . '), (None, '... morrow . " " She waited for bim a whole day . " Wait ( s . from th')]
+  occupy       [('33', '... Occupied ( p . from occupy ) Poffefsed , held , used , em- ployed '), ('120', '... occupy ; to feize , to obtain ; to effect by faward power ; to giv'), ('128', '... Occupied before- hand , prepoffeffed . PREOCCUPY ( v . t . from th'), ('335', '... occupy , to comprife , to adjust , to engross , to engage , to lif'), (None, "... occupied ) Not occu- pied . Unobum'brated ( adj , from un , and ob"), (None, '... occupied . Unpreom / inated ( adj . from un , and preominated ) No'), (None, '... occupied ) Properly occupied . Wellofficered ( adj . from well , a'), (None, '... Occupying ( s . from the part . ) The act of potiessing , the act '), (None, '... occupying ; the act of influencing by an unaccountable operation .'), (None, '... occupying beforehand . Preom / inating ( s . from the bart . ) The')]
+  alphabet     [('2', '... alphabet ; as a Latin numeral it stands for nine hundred , and wit'), (None, "... alphabet . ZEDECHI'AS ( s . ) A man's name . ZEDEKIAH ( s . from t"), (None, "... alphabet . A'BI ( s . from the Heb . ) A woman's name . ARI'A ( s "), (None, "... alphabet , AP'RA ( s . in botany ) A genus of plants . A'KAN ( s f"), (None, "... alphabet . Beta / king ' s . from the part . ) The act of applying"), (None, "... alphabet . GHNA'JIN ( 3. ) The fixteenth letter in the Hebrew alph"), (None, "... alphabet . Head'ed ( p . from head ) Led or governed by a princi ."), (None, "... alphabet which anfwers to the long O. HIAR'BAS ( s . ) A man's nam"), (None, "... alphabet .. TETRADECARHOM'BIS ( s . in natural bistory ) A genus o"), (None, "... alphabet . TZE'RI ( s . ) One of the Hebrew points ; it answers to")]
+  theft        [('101', '... theft . Pillaging ( D. a . from pillage ) Plundering ,. Piletift ('), ('106', '... theft , the price of taking thoughts or expreffions from ano- FLAG'), ('149', '... theft . Purioi / ned ( p.from purloin ) Stolen , taken away by the'), ('168', '... theft or violence . Reaving ( p . a . obfolete , from reave ) Taki'), ('248', '... thefts . Sheep biter ( s . from theepbite ) A petty thief . Sheep '), ('297', '... theft , to play the thief . Steale ( s . a local word ) The handie'), ('316', '... theft things . " Sufficiently ( adv . from fufficient ) In an adeq'), ('350', '... Theft / hote ( s . from theft , and bote ) The act of receiv- ing '), (None, '... theft within the liberty of his fee . UTILE ( adj . from the Lat .'), (None, '... theft of going again on board . Reimbodying ( s . from the part . ')]
+  younker      []
+===== 8DNAAAAAYAAJ
+  morrow       [(None, '... morrow , & c . The other forms of these tenses , viz . I am writin'), (None, '... morrow . IMPERATIVE MODE . Sing . Love , do thou love , or love th'), (None, '... morrow . And moated round with fathomless destruction . Young . A '), (None, '... morrow ) To - morrow . AMMA ( s . in jurgery ) A band , a truss fo'), (None, '... morrow . Chaucer . Morning ( s . from morn ) The first part of the')]
+  occupy       [(None, '... occupied by those who intend to furprize others , the act of furpr'), (None, '... occupies ; the credit or reputation which a man has in confequence'), (None, '... occupied by the lord ; the lands which the lord of a manor inherit'), (None, '... occupied by that which is ftretched out . DISTER MINATE ( v.1 . no'), (None, '... occupied by tenants . Farm ( v . 1. from the fub . ) To let out at'), (None, '... occupied by an army , the ground on which a battle is fought ; a w'), (None, '... occupy , to en- gage . Fill ( v . int . ) To give to drink , to gr'), (None, '... occupied by an army , the field or place of ac- tion ; aftate of p'), (None, '... occupy as an inhabitant . Inhabit ( v . int . ) To dwell , to live'), (None, '... occupied by the lord . INLAPPIDATE ( v . t . from the Lat . in in ')]
+  alphabet     [(None, '... Alphabet . OUNDS are fugitive things , hard to catch , and difficu'), (None, '... alphabet , a note in mufic . As a contraction it is frequently put'), (None, '... alphabet . Abecedary ( adj . from a , b , c . ) Belonging to the a'), (None, '... alphabet , the firft . ALPHABET ( s . from the Greek αλφα α : Bera'), (None, '... alphabet . CHRIST ( s . from the Greek Χριτος anointed ) The Meffi'), (None, '... alphabet , which is of a triangular form . Scott . Deltoide ( adj '), (None, '... alphabet ; it bas , at least , three different founts ; the broad '), (None, '... alphabet , a type with which books are printed , an epiftle , a wr'), (None, '... alphabet ; as a Latın numeral it fiands for nine hundred , and wit'), (None, '... alphabet ; as a Latin numeral it fiants for nine hundred , and wit')]
+  theft        [(None, '... theft . Back / bite ( v.1 . in familiar or loro stile , from back '), (None, '... theft ( adj . from far ) Most distant , most remote . Farthest ( a'), (None, '... theft . Fura / ciousness ( s . not much used , from furacious ) Th'), (None, '... theft . Furtively ( adv . from furtive ) By theft , clandestinely '), (None, '... theft ) The name of a man . GENUFLECTION ( s . from the Lat . genu'), (None, '... theft com- mitted within the fee . IN / FANT ( s . from the Lat . '), (None, '... theft . LARCH ( s . in botary ) The larix , a tree of the fir kind'), (None, '... theft , rob- bery . Bailey , Chaucer . Latte ( b.chfolete ) Led , '), (None, "... theft , nimble of conveyance . Light'foot ( adj . from light , and")]
+  younker      []
+===== 0SRnAAAAcAAJ
+  morrow       [('422', "... Morrow , mor ' - ro , f . day after the present day , ( to - morro")]
+  occupy       [('212', "... occupied Distich , dis ' - tik , f . couplet , couple of verses Di"), ('265', '... occupied by an ar- my , wide expanse , surface of a shield Fielded'), ('266', "... occupied by war , inclined to war Figment , fig ' - ment , s . inv"), ('307', '... occupied by a body of people v . a . to fix on the ground , found '), ('444', "... Occupy , 18 , ok ' - ku - pỷ , v . a . to poffefs , keep , take up"), ('498', "... occupy by anticipation Preominate , pre - om ' - In - ate , v . a "), ('646', '... occupied . empty space - v . 1 , 3 , 18 , to evacuate , emit , amm'), ('651', "... occupied , mischief Watch , 5 , watsh ' , s . forbearance of or at")]
+  alphabet     [('2', '... alphabet . Abecedary , à - bè fèd - ar - y , a . relating to or ha'), ('25', "... alphabet , therefore used to fignify the first . Alphabet , àl ' -"), ('174', "... alphabet with a cross at the beginning Cross - staff , kro's - taf"), ('447', "... alphabet , last ( in holy scripture ) Omelet , om ' - lèt , s . ki")]
+  theft        [('259', '... theft , ad . moit remotely - a . most diftant , remotest Farthing '), ('288', "... theft Furacity , furas ' - l - ty , f . difpofition to Furbelow , "), ('377', "... theft Larch , la'rtsh , f . tree of the fir kind Lard , la'rd , f "), ('472', "... theft of publick money Peculator , pèk ' - u - lå - tor , s . robb"), ('482', "... theft [ wretch Pilgarlick , pil - ga'r - lik , s . poor forlorn Pi"), ('485', '... theft 10 , Plague , plage , f . pestilence , trouble- v . a . to t'), ('540', "... theft Robe , ro'be , f . long gown , dress of dig- nity - w . a . "), ('591', "... theft [ stolen , fecret act Stealth , stelth ' , s . act of steali"), ('616', "... Theft , thett ' , f . a stealing , thing stolen Their , the're , a"), ('617', '... theft Thievery , thiv - er- , f . practice of steal- Thievith , 10')]
+  younker      [('663', "... Younker , yung- y Your , yo'r , a . of or belonging to you Yours ,")]
+===== tSRL29OIZBkC
+  morrow       []
+  occupy       [('83', "... occupied by a farmer Farm'er , s . one who cultivates ground Far'm"), ('117', '... occupy Inhabitable , a . that may be inhabited Inhabitant , s . on'), ('150', '... occupies Occupy , v . a . to possess to fill or take up ; to emplo')]
+  alphabet     [('1', "... alphabet Abecedary , a . belonging to the alphabet Abe'd , ad . in"), ('9', "... alphabet Already , ad . now , at this time ; so soon Al'so , ad . "), ('19', '... alphabet , is frequently used as an abbreviation , as in B. A. Bac'), ('31', '... alphabet ; it is used as an abbreviation of the Latin word centum '), ('82', '... alphabet ; in mu- , sic , it expresses a note ; also one of the ke'), ('128', "... alphabet ; a printing type ; one who lets or permits Let'tercase ,"), ('145', '... alphabet , is used as an abbreviation , as N. B. nota bene , take '), ('249', "... alphabet Caduceus , Mercury's golden rod or wand Cæ'ca , and Conse"), ('267', '... alphabet were hitherto used Otho III . makes the empire of Germany')]
+  theft        [('93', "... theft Fu'sible , Fu'sil , a . capable of being melted Farbelow , s"), ('126', '... theft or robbery Lard , s . the fat of swine melted Lard , v . a .'), ('159', '... theft of public money Peculiar , s . the exclusive property Peculi'), ('163', "... theft Pil'ferer , s . one who steals petty things Pilgarlic , s . "), ('164', '... theft , adoption of the thoughts or works of another Plagiary , s '), ('187', '... theft by force or with privity Robe , s . a dress of dignity Robe '), ('207', '... theft ; to pass silen ly Stealth , s . the act of stealing , secre'), ('218', '... Theft , s . the act of stealing ; thing stolen Their , pron . poss')]
+  younker      []
+===== ZFlgAAAAcAAJ
+  morrow       [('143', '... Morrow , s . the day following the present Morse , s . an animal c')]
+  occupy       [('83', "... occupied by a farmer Farm'er , s . one who cultivates ground Far'm"), ('117', '... occupy Inhabitable , a . that may be inhabited Inhabitant , s . on'), ('150', '... occupies Occupy , v . a . to possess ; to fill or take up ; to emp')]
+  alphabet     [('1', "... alphabet Abece'dary , a , belonging to the alphabet Abe'd , ad . i"), ('9', '... Alphabet , s . the letters of any language Alphabetical , a . acco'), ('19', '... alphabet , is frequently used as an abbreviation , as in B. A. Bac'), ('31', '... alphabet ; it is used as an abbreviation of the Latin word centum '), ('82', '... alphabet ; in mu- , sic , it expresses a note ; also one of the ke'), ('128', "... alphabet ; a printing type ; one who lets or permits Let'tercase ,"), ('145', '... alphabet , is used as an abbreviation , as N. B. nota bene , take '), ('249', "... alphabet Caduceus , Mercury's golden rod or wand Cæ'ca , and Conse"), ('267', '... alphabet were hitherto used Otho III . makes the empire of Germany')]
+  theft        [('93', "... theft Fu'sible , Fu'sil , a . capable of being melted Fu'sion , s "), ('126', '... theft or robbery Lard , s . the fat of swine melted Lard , v . a .'), ('159', '... theft of public money Peculiar , s . the exclusive property Peculi'), ('163', "... theft Pil'ferer , s . one who steals petty things Pilgarlic , s . "), ('164', '... theft , adoption of the thoughts or works of another Plagiary , s '), ('187', '... theft by force or with privity Robe , s . a dress of dignity Robe '), ('207', '... theft ; to pass silently Stealth , s . the act of stealing , secre'), ('218', '... Theft , s . the act of stealing ; thing stolen Their , pron . poss')]
+  younker      []
+
+## batch3
+===== TV5iAAAAcAAJ
+  morrow       [('230', "... morrow Morrow , mor'ro n . after the present day ; to- Morse , mar")]
+  occupy       [('241', "... Occupy , ok'ku - pï v . a . to possess , to employ Occur , ok - ku"), ('265', "... occupy [ one's own power Possession , poz - zefh'un n . the state ")]
+  alphabet     [('1', '... ALPHABET ON THE OPPOSITE PAGE . a , or a , the indefinite article '), ('2', '... alphabet Abed , a - bed . ad . in bed Aberrance , ab - errans . n '), ('5', '... ALPHABET ON THE OPPOSITE PAGE . A , to an . ABA A. BB a , ora , th'), ('5', '... alphabet Abed , a - bed . ad . in bed Aberrance , ab - er / rans .'), ('17', "... Alphabet , al'fa - bet . n , the letters or elements of speech [ s"), ('208', '... alphabet ; a written message , plain meaning ; letters ( without t'), ('242', '... alphabet , therefore taken ture for the last in the Holy Scrip- Om'), ('409', "... alphabet Cæ'ca and Con - ser - va / trix , titles of Fortune Cæc'u")]
+  theft        [('153', '... theft Furbelow , furbe - lo n . an ornament of dress Furbish , fur'), ('205', '... theft Lard , lârd n . the grease of swine Lard , lârd v . a . to s'), ('259', '... theft Pilferer , pilfer - er n . one who steals petty things Pilgr'), ('261', "... theft Plagiary , plā'je - a - re n . a thief in literature Plague "), ('297', '... theft perpetrated by force or with privacy Robe , rob n . a gown o'), ('327', '... theft , to pass silently Stealth , stelth n . the act of stealing '), ('342', '... Theft , theft n . the act of stealing ; thing stolen Their , thar ')]
+  younker      [('383', '... Younker , yung ker } n . a young person Yours , Your , yûr yûrz or')]
+  southward    [('322', "... Southward , sowth / wurd or suth'ard ad . towards the south Sow , ")]
+===== eZE_AAAAYAAJ
+  morrow       [(None, '... MORROW , ( mor - ro . ) s . the day after the present day ; to - m')]
+  occupy       [(None, "... occupied . DISTICH , ( dis ' - tik ) s . a couplet , a couple of l"), (None, '... ground not inha- bited , not built on ; cultivated tract of ground'), (None, "... occupied by war . FIGMENT , ( fig ' - ment ) s . an inven- tion , "), (None, "... occupied by an army . To GROUND , ( ground ' ) v . a . to fix on t"), (None, '... occupied as inherit- ance . HEREDITAMENT , ( hèr - y - diť - à - m'), (None, '... OCCUPY , ( ok - ku - pỷ . ) v . a . to pos- sess , to keep , to ta'), (None, '... occupy actually ; to seize , to ob tain ; to have power over , as '), (None, '... occupy by anticipation or prejudices . TO PREOMINATE , ( pre - om '), (None, "... occupied , unpossessed . TENCH , ( tên'tsh ) s . a pond fish s . d"), (None, '... occupying no assignable space ; having no dimensions . UNEXTINGUIS'), (None, "... occupied by notions . UNPRESSED , ( un - prèst ' ) a . not pressed"), (None, '... occupies worthless , that of which none but vie uses can be made ;')]
+  alphabet     [(None, '... alphabet there appear twenty - fix letters : abcdefghijklmnopqrstu'), (None, '... alphabet , ac . cording to the method above laid down . Vowels SCH'), (None, '... alphabet are wanted to be supplied . United to c , ch , it stands '), (None, '... alphabet , I shall now pro- ceed to examine such simple sounds as '), (None, '... alphabet in all the known languages in the world , that of Ethiopi'), (None, '... alphabet . ABED , ( a - bed . ) ad . in bed . ARGREGATION , ( àb -'), (None, '... alphabet , answering to our A ; therefore used to fignify the firs'), (None, '... alphabet . It has two sounds , the hard and the foft ; the hard fo'), (None, '... alphabet , so named because a cross was usually placed at the begi'), (None, '... alphabet . It bas in most languages a short and a long found , the'), (None, '... alphabet , and is pronounced by throwing the breath suddenly again'), (None, '... alphabet . It is founded by intercepting the breath between the to'), (None, '... alphabet . Its sound is unvaried , and is formed by striking the u'), (None, '... alphabet ; 9 it is called a semi - vowel , but is in fact a nasal '), (None, '... alphabet , therefore taken in the Holy Scripture for the last OMEL'), (None, '... alphabet , the sound of which is formed by expressing the breath s'), (None, '... alphabet . Its sound is formed by a guttural extrusion of the brea'), (None, '... alphabet . Its sound is effected by driving the breath through a n'), (None, '... verse ; conjunctions or oppositions of the stars . T T. ( te ) is '), (None, '... alphabet , and a double consonant . It begins no word in our langu')]
+  theft        [(None, '... theft ) ad . at the greatest diftance ; to the greatest distance .'), (None, "... theft . FURBELOW , ( far ' - by - lỏ ) s . fur or fringe sewed on "), (None, '... theft LARCH , ( lartsh . ) s . a tree of the fir kind which drops '), (None, "... theft of publick money . PECULATOR , ( pek ' - ku - la - tar ) s ."), (None, '... theft , PILIERER , ( pll - für - år ) s . one who steals petty thi'), (None, '... theft , literary adoption of the thoughts or works of another . PL'), (None, '... theft . PURLOINER , ( pur - lain - or ) s . a thief , one that ste'), (None, '... robs by force or steals by secret means . ROBBERY , ( rob - bur - '), (None, "... thefts . SHEEPBITER , ( shep ' - bit - úr ) s . a petty thief . SH"), (None, '... theft . SNAPDRAGON , ( snap - drag - ún ) s . a plant ; a kind of '), (None, '... theft , to take clandestinely , to take without right ; to withdra'), (None, "... THEFT , ( theft ' ) s . the act of stealing ; the thing stolen . T"), (None, "... theft . THIEVERY , ( thev ' - dr - y ) s . the prac- tice of steal"), (None, '... theft Steel , to harden Stile , steps into a field -Style , a mann')]
+  younker      []
+  southward    [(None, "... SOUTHWARD , ( suth ' - ård ) ad . towards the south . SOUTHWEST , ")]
+===== 3ltWAAAAYAAJ
+  morrow       [('275', '... Morrow , s . the day after the present day Morse , s . the river -')]
+  occupy       [('170', "... occupied by a farmer Farm'ér , s . one who rents and cultivates Ja"), ('289', "... occupies oc'cu - pỹ , v . a . & n . to possess ; to employ oc - cu"), ('324', "... occupy beforehand Pré - oc - cu - pa'tion , s . prepossession , an")]
+  alphabet     [('18', "... alphabet A - běď , ad . in bed xb - lac'que - ate , v . a . to lay"), ('18', "... alphabet A - běd , ad . in bed A - bide ' , v . n . to remain in a"), ('31', "... alphabet Al'wayş , ad . perpetually , forever Al - pha - bětic - a"), ('290', "... alphabet of'fi - cér , s . one in office ; commander in O - mega ,")]
+  theft        [('245', '... theft , a petty theft Làrd , s . the fat or grease of swine W 2 LA'), ('304', "... theft of public money Pec - u - lā'tór , s . a robber of the publi"), ('312', '... theft Pilgrim , s . one who visits the shrines of saints , a wande'), ('313', "... theft , especially in books Pla'gi - a - ry , s . one guilty of pl"), ('371', "... theft , Sheepbit - ér , s . a petty thief Sheep'cot , Sheep fold ,"), ('371', "... theft , Sheep bit - ér , s . a petty thief heep'cot , ? Sheep fold"), ('371', "... theft , Sheepbit - ér , s . a petty thief Sheep'cot , s . a Sheep'"), ('390', '... theft , gain by art ; to go or pass silently , practise theft Stea'), ('408', '... Theft , s . th s . the act of stealing ; thing stolen task Their ,'), ('409', "... theft or stealing Thiev'e - ry , s . the practice of stealing Thev")]
+  younker      []
+  southward    [('383', '... Southward , ad . towards the south Soss , v . a . to fall at once ')]
+
+## batch4
+===== CnQGwQfeT2wC
+  morrow       [(None, '... Morrow , morro . s . the day after the present day Morsel , mor si')]
+  occupy       [(None, "... occupied Distich , dis ' tik . s . a couple of lines Dissimilarity"), (None, '... occupy by bulk Fill , fil . v . n . to give drink ; grow full to F'), (None, "... occupied as inherit - Heroism , her ' ó - izm . s . the qualities "), (None, "... Occupy , ôk'ku - pl . v . a . to possess to force one's self or an"), (None, '... occupied Vagabond , vaga - bond . a . wander- ing without any sett')]
+  theft        [(None, "... theft sticking to the sides of vessels Fury , fů'rè . s . madness "), (None, '... theft , robbery Latch , låtsh . s . a fastening for a Lapwing , la'), (None, "... theft [ tartness Pitchiness , pitsh'e - nës . s . blackness , Plag"), (None, '... theft [ blue Pus , půs . s . the matter of a well- eye ; a scholar'), (None, "... theft perpe- original Risibility , riz - é - bil ' é - te . s . th"), (None, '... theft feet ; to walk standing ; post assigned ; situa - Stealth , '), (None, '... Theft , theft . s . the act of stealing part of a province Their ,')]
+  younker      [(None, '... Younker , yungkur . [ ing to yellow a young person Yellowish , yel')]
+  southward    [(None, "... Southward , south wård , or SUTH'- urd . ad . towards the south So")]
+===== hJPnWHPzhUMC
+  morrow       [('154', "... morrow at the furthest , demain au plus tard . Fur'tive , a . furt"), ('233', "... morrow Mor'row , f . le lendemain ; demain . Morfe , f . le bœuf m")]
+  occupy       [('245', "... Occupied , in , for , about , p . Od'vfley , f . odyssée , la . od"), ('276', "... occupy , va . préoccuper . Pre - om'inate , va . présager . Pré - ")]
+  theft        [('360', "... Theft'bote , Theft'hold , f . le fure . Tha Testification , S. le ")]
+  younker      []
+  southward    []
+===== 69xn_DHQ-RkC
+  morrow       [(None, '... morrow De niveau , on a level De nuit , by night De plus , besides'), (None, '... morrow Après - dinée , sf . afternoon Après - midi , afternoon Apr'), (None, '... morrow Démancher , va . to unhaft Se- , vr . to be off the hinges '), (None, '... morrow Surlonge , sf . surloin Surmener , va . to founder Surmesur'), (None, '... Mórrow , ad . demain Good morrow , bonjour Morse , s . cheval mari')]
+  occupy       [(None, '... Occupy , va . posséder ; jouir Occur , v . se présenter ; se renco')]
+  theft        [(None, '... theft , robbery Lard , bacon , tard through Larder , va . to lard '), (None, '... theft ; flight of a bird ; cast of hawks Volable , 2. a . that may'), (None, "... Theft , s . larcin , vol , m . -bote , l'action de recéler un vol ")]
+  younker      [(None, '... Younker , jeune homme ; jeune éveillé , m . Your , pro . votre , v')]
+  southward    [(None, '... Southward , ad . vers le midi South - west , s . sud - ouest , m .')]
+===== _tgDAAAAQAAJ
+  morrow       [('xliv', '... morrow De niveau , on a level De nuit , by night De plus , besides'), ('12', '... morrow Après - diné , sf . afternoon Après - midi , afternoon Apre'), ('303', '... morrow , banjour 1. cheval marin , m . , потсели mal , a . s . mor')]
+  occupy       [('308', '... Occupy , va , posséder Occur , 1. se présent rencontrer ; arr trou')]
+  theft        [('110', '... theft , robbery Lard , bacon , lard [ ibro Larder , va . va , to l'), ('190', '... theft Volets sm.shutter dove cot . little sea - compass : Ayer Vol'), ('371', "... Theft , f . larcin , vol , m . -bote , l'action de recéler un vol ")]
+  younker      [('395', '... Younker , jeune homme , jeune éveille , m . Your , pro . votre , v')]
+  southward    []
+===== jic_boydmQYC
+  morrow       [('131', '... morrow at the pour le plus tard Furtive , a . furtif , ve . Fúrtiv'), ('200', '... morrow , f . le lendemain , ra . Mónkish life , f . meinerie , f .'), ('201', '... morrow , f . le lendemain , ra . Mother , f . mère , f . - , a . n'), ('331', '... 2 . Thráldom , f . esclavage , m . Thrall , esclave , 2 . [ plique'), ('335', '... morrow , demain To and fro , ça & là , de côté et Toad , J. crapau')]
+  occupy       [('325', '... ( occupy ) occuper up , ( adjust ) ajuster up , ( comprite ) compr')]
+  theft        [('194', '... theft , f . Mice , des fouris Middle , a . moyen , ne . mitoyen ,.'), ('330', "... Theft , f . larcin , vol , m . -bote , l'action de receler un vol ")]
+  younker      [('377', '... younker , s.jouvenceau , jeune éveillé , m . un jeune bomme , une ')]
+  southward    [('304', '... Southward , ad , vers le midi South - west , f . fud ouest , m . S')]
+
+## batch5
+===== CnQGwQfeT2wC
+  morrow       [('PP252', '... Morrow , morro . s . the day after the present day Morse')]
+  theft        [('PP172', "... theft sticking to the sides of vessels Fury , fů'rè . s "), ('PP228', '... theft , robbery Latch , låtsh . s . a fastening for a La'), ('PP282', "... theft [ tartness Pitchiness , pitsh'e - nës . s . blackn"), ('PP298', '... theft [ blue Pus , půs . s . the matter of a well- eye ;'), ('PP315', "... theft perpe- original Risibility , riz - é - bil ' é - t"), ('PP343', '... theft feet ; to walk standing ; post assigned ; situa - '), ('PP358', '... Theft , theft . s . the act of stealing part of a provin')]
+  younker      [('PP395', '... Younker , yungkur . [ ing to yellow a young person Yello')]
+  youthful     [('PP51', '... youthful [ thing Bearer , båreür . s . a carrier of any '), ('PP224', "... youthful Juvenility ju - ve - nil ' é - tě . s . youth- "), ('PP395', "... Youthful , yooth ' fül . a . young estate in land , a ge")]
+  usher        [('PP219', '... usher into a place [ accustom Introduction , in - tro - '), ('PP381', "... Usher , ash'år . v . a . to introduce higher place ; wit")]
+  westward     [('PP389', '... Westward , westwůrd . ad . towards tion of a new comer t')]
+===== 3KDQRByYtYEC
+  morrow       [('PP312', "... Morrow , mor'rd . s . the day after the present day . Te")]
+  theft        [('PP201', "... theft , to pilfer . Spenser . Fischer , fîlsh'år . s . a"), ('PP215', '... theft . Prior . Rate , târcill , cât ; bẻ , bêt ;. Fulle'), ('PP281', '... theft . Larch , lårtsh . s . a tree . Lard , lård . s . '), ('PP352', "... theft . Shak . Pilferer , pii'far - ar.s . one who steal"), ('PP354', '... theft , adop- tion of the thoughts or works of another .'), ('PP402', '... theft perpetrated by force or with privacy . Temple . Ro'), ('PP433', '... theft . Snapdragon , snapdrag - in . s . a plant , a kin'), ('PP446', '... theft . Shak - To gain or effect by private means . Cala'), ('PP468', '... Theft , theft . s . the act of stealing . Cowel . The th'), ('PP469', '... theft . Thievery , theevar - è . s . the practice of ste')]
+  younker      [('PP529', '... Younker , yangkur . Youngth , yêngth . s . the state of ')]
+  youthful     [('PP69', "... Youthful . Dryd . Bearer , bare'ûr . s . a carrier of an"), ('PP110', '... youthful pleasure . Colter , költûr . s . the sharp iron'), ('PP221', "... youthful . Car . Girlishly , gerl'lish - lè . ad . in a "), ('PP276', '... youthful . Bacon . Juvenility , ja - ve - nile - tè . s '), ('PP529', '... Youthful , yooth fål . a . young . Dryden . Suitable to '), ('PP530', '... youthful . A bad word . Spect . Yule , yale . s . the ti')]
+  usher        [('PP75', '... usher belonging to the order of the garter ; he is usher'), ('PP271', '... usher into , to produce . Locke . To bring into writing '), ('PP515', "... Usher , ash'år . s . one whose business it is to in- tro")]
+  westward     [('PP86', '... westward . Att .. Brown . Sprat . Davies . By - word , b'), ('PP521', '... Westward , westwård . ad . towards the west . Add . West')]
+===== V_fkuRwhJzAC
+  morrow       [('PT297', "... Morrow , mor'rd . s . the day after the present day . Te")]
+  theft        [('PT181', "... theft , to pilfer . Filcher , filsh'år . s . a thief , a"), ('PT196', '... theft . Prior . Rate , târ , cầll , cất ; bè ,. FUR Fung'), ('PT263', "... your face to the head . Larceny , lår'sè - ne . s . pett"), ('PT264', '... theft , rob- bery ; a literal version of the Latin latro'), ('PT329', '... theft of public money . Peculator , pek kủ là - tår . s '), ('PT337', "... theft . Pilferer , pil'får år . s . one who steals petty"), ('PT419', "... theft . Snapdragon , snap'drag - in . s . a plant , a ki"), ('PT431', '... theft . Shab . To gain or effect byý private means . Cal'), ('PT453', '... Theft , theft , s . the act of stealing . Cowel . - The '), ('PT454', '... theft . Thievery , theevar - è . s . the practice of ste')]
+  younker      [('PT513', '... Younker , yangkur . Youngth , yungth . s . the state of ')]
+  youthful     [('PT47', '... Youthful . Mili . Dry 1 . Bearer , båre år . s . a carri'), ('PT90', '... youthful pleasure . Colter , költur . s . the sharp iron'), ('PT202', '... youthful . Girlishly , gerllish - lè . ad . in a girlish'), ('PT259', '... youthful . Bacon . Glanv . Juvenility , jå ve - nile - t'), ('PT513', '... Youthful , yoothful . a . young . Dryd . Suita- ble to t')]
+  usher        [('PT54', '... usher belonging to the order of the garter ; he is usher'), ('PT200', "... usher , jên - ti - man - ûsh'ar . s . one who holds a po"), ('PT253', '... usher into , to produce . Locke . To bring into writing '), ('PT499', "... Usher , ush'ûr . s . one whose business it is to in- tro")]
+  westward     [('PT66', "... - west , be - west ' . a . westward . Butterprint , but "), ('PT504', "... Westward , west'wård . ad . towards the west . Westwardl")]
+===== ZFlgAAAAcAAJ
+  morrow       [('143', '... Morrow , s . the day following the present Morse , s . a')]
+  theft        [('93', "... theft Fu'sible , Fu'sil , a . capable of being melted Fu"), ('126', '... theft or robbery Lard , s . the fat of swine melted Lard'), ('159', '... theft of public money Peculiar , s . the exclusive prope'), ('163', "... theft Pil'ferer , s . one who steals petty things Pilgar"), ('164', '... theft , adoption of the thoughts or works of another Pla'), ('187', '... theft by force or with privity Robe , s . a dress of dig'), ('207', '... theft ; to pass silently Stealth , s . the act of steali'), ('218', '... Theft , s . the act of stealing ; thing stolen Their , p')]
+  younker      []
+  youthful     [('22', '... youthful Bearer , s . a carrier of any thing , a support'), ('25', '... youthful ; flowery Blossom , s . the flowers of trees or'), ('96', '... youthful Girt , Girth , s . a broad belt , by which the '), ('123', "... youthful , young Jug'gling , part . playing tricks , dec"), ('245', '... youthful , not old ; tender Young , s . the offspring of')]
+  usher        [('25', '... usher belonging to the Order of the Garter ; he is usher'), ('121', '... usher in Introduction , s . a bringing in ; a preface In'), ('238', "... Usher , s . an under - teacher ; an introducer Ush'er , ")]
+  westward     []
+
+## batch6
+===== QgNgAAAAcAAJ
+  morrow       [('16', '... morrow ) , faluto , 1. ( -4 bolyday ) , ferias denunciar'), ('98', '... morrow , craftinus To - morrow morning , cras mane To - '), ('256', '... morrow , in time to come a Crāfis , is . f . a mixture ,'), ('290', '... morrow Perenne , adv . all the year round Perennia , um ')]
+  theft        [('171', '... Theft , furtum , latrocinium , 2. n . Their , or theirs '), ('225', '... theft that pleased the ear Cánonicus , i . m . a canon ,'), ('232', '... theft way [ gliding round about Circumlabens , tis . pt '), ('311', '... theft , robbery , stealth , an ambuseade , or ftratagem '), ('271', '... theft , or most diftant , the mean ft , the most extreme'), ('414', '... theft eastern part of Europe ; hod . Romania [ Thracian ')]
+  younker      [('196', '... younker , adolefcentulus , 2. m . Your , or yours ( Spok')]
+  youthful     [('288', '... youthful Ephebium , i . n . a place where young men exer'), ('225', '... youthful folence , outrageousness rageousness [ meditati'), ('243', '... youthful , wanton , great , buge Jüveninter , adv . yout'), ('271', '... youthful , brisk , inspired , furnijbed with new matter '), ('308', '... youthful Prīmānus , i . m . a lieutenant , or fol- dier '), ('373', '... youthful Virens , tis . pt . gren , flourishing , Vireo ')]
+  westward     [('191', '... Westward , occidentem verfus auctoritas , 3. f . Wet , h')]
+  alphabet     [('PP9', '... alphabet , his eye is bewildered in the crowded page . A'), ('6', '... alphabet , alphabetum , 2 , n . Alphabetical , alphabeti'), ('88', '... alphabet ) , Etera , 1 . we fpatiam ; ( of time ) , diut'), ('206', '... alphabet [ wind Alpīnus , a , um . adj . of the Alps Alf'), ('220', '... alphabet , but undeclined Bētizo , as . act . to flag li')]
+===== 0mESAAAAIAAJ
+  morrow       [('75', '... morrow . Bons noutes , good - night . Bomba , s . f . a '), ('127', '... morrow . Cravaçáð , s . f . many nails set in order to f'), ('160', '... morrow . Para assim dizer , as it were . Para dizer tudo'), ('256', '... morrow morning . Despois de á manhaa , after to mor- row'), ('13', '... morrow , he preciso absolu- tamente que acabeis isto a- '), ('21', '... morrow , hoje e amanhaõ . Andiron , s . caō de chemine ,'), ('237', '... Morrow , s . a manhaa , ou dia de á mauhaa Morse , s . h')]
+  theft        [('214', '... theft . Fúsco , a , adj . brown , tawny . Fuso , s . m .'), ('242', '... theft . Ladroíce , s . f . thievery . Lagár , s . m . Ex'), ('244', '... theft , robbery . Lavácro , s . m . a font or bap- tiste'), ('344', '... theft . Rouco , a , adj . hearse . Roupa , s . f . in ge')]
+  younker      []
+  youthful     [('239', '... Joara de ferreiro , the dross of iron . Jorrádo , a , ad'), ('242', '... youthful .. Juvénta , s . f . the goddess of youth . Juv'), ('384', '... youthful , flourishing . tender years . Fruta verde , un'), ('412', '... Youthful , adj . moço , novo , naõ velho Youthfully , ad')]
+  westward     [('281', '... westward . Occiduo , a , adj . occiduous , western . Occ'), ('401', '... Westward , adv . para a parte do oeste ou do poente Wet ')]
+  alphabet     [('1', '... alphabet . A. B. artium bacchalaureas , ba- charel em ar'), ('3', '... alphabet , or criss- v.r. to fall , or shrink down . cro'), ('25', '... alphabet . Alfabetár , v . a . to alphabet , to arrange '), ('80', '... alphabet . ass . Búrro , s . m . a he - ass . Burro do m'), ('163', '... alphabet , and the second of the vowels . E , a conjunct'), ('197', '... alphabet . Fabordám , s . m . a kind of grave music . Fá'), ('214', '... alphabet . Gabadór , s . m . a praiser , a com- mender .'), ('226', '... alphabet , and the third of the vowels . Já , adv . alre'), ('242', '... alphabet . note . Laconicaménte , adv . concisely . La ,'), ('252', '... alphabet . Ma , ( a pronoun ) me of it , or it or her to'), ('274', '... alphabet . Na , in , in the ; ex . Na gaveta , in the dr'), ('280', '... alphabet . O , is used as an interjection , as , O , que'), ('282', '... alphabet . Other som bom , ou máo olho , Omissám , s . f'), ('286', '... alphabet . Pá , s . f . a wooden or iron sho- vel . Pa d'), ('318', '... alphabet . Quádra , s . f . a square . Bandeira de quadr'), ('322', "... alphabet . Raa , s . f . a frog . O rozeur das rad's , t"), ('345', '... alphabet . Saamente , adv . uprightly , ho- nestly . Sab'), ('392', '... alphabet . Zagál , s . m . a young shepherd . Zagála , s'), ('18', '... Alphabet , s . alphabeto . To Alphabet , v . a . dispor ')]
+===== 2jsba0qZhKoC
+  morrow       [('RA1-PP12', '... morrow Après - dinée , f . m . il dopo pranzo , after di'), ('6', '... morrow Démanteler , v . a . smantellare , to diamantle D'), ('2', '... morrow Surmener , v . a . ftrapazzare un cavallo , to fo')]
+  theft        [('RA9-PT11', '... theft , robbery Volable , a . da poter essere rubato , t')]
+  younker      []
+  youthful     [('22', '... youthful Fougueux , fe , a . fucoso , fervente , impetuo'), ('RA3-PT1', '... youthful , bris Jeune , j . m . digiuno , afstinenza , f')]
+  westward     []
+  alphabet     [('1', '... alphabet A , dat . a , allo , alla , to , at , unto Abac'), ('RA1-PP2', '... Alphabet , f . a . alfaberto , alphaber water Amabilité ')]
+===== hJPnWHPzhUMC
+  morrow       [('154', "... morrow at the furthest , demain au plus tard . Fur'tive "), ('233', "... morrow Mor'row , f . le lendemain ; demain . Morfe , f .")]
+  theft        [('360', "... Theft'bote , Theft'hold , f . le fure . Tha Testificatio")]
+  younker      []
+  youthful     []
+  westward     []
+  alphabet     [('1', "... alphabet . Abc - fcholar , S. un écolier . Ab'deft , fla"), ('12', '... Alphabet , f . alphabet , le . Alphabet , va . ranger al'), ('86', '... alphabet , le . Cross staff , f . arbaletrille , la . Cr'), ('246', "... alphabet Grec . Omelet , f . omelette , la . O'men , f .")]
+
+## batch7
+===== RoJgAAAAcAAJ
+  alphabet     [('v', '... alphabet of the English tongue in this small pocket - vo'), ('vi', '... alphabet of the most common Names of Men and Women ; a c'), ('vii', '... 9 D d K k R r X x E e L 1 S fors Y y F f M m т . t Z Z G'), ('xii', '... alphabet ; but if it be left out in the pro- nunciation '), ('2', '... alphabet Abecédáry , a . relating to the alphabet Abed ,'), ('13', '... Alphabet , f the letters in any language Alphabetical , '), ('221', "... alphabet , type Let'ter , v . a . to stamp or to adorn w"), ('259', "... alphabet Omelet , a pancake , a pancake made of eggs O'm"), ('450', '... alphabet , and was at / last turned into a ferpent Caduc')]
+  morrow       []
+  occupy       [('144', "... occupied by a farmer ; v . a . to rent Fa m'er , f . one"), ('202', '... occupy , pofiefs Inhabitable , a . decent , habitable , '), ('258', '... occupies , one who poffefses Occupy , v . a . to possess')]
+  theft        [('144', '... theft , adato to the greatest distance Farthing , f . th'), ('161', "... theft or stealth Fur'uacle , f . a bile , an angry spot "), ('185', '... theft Hug , f . a close embrace ; v . a . to embrace fon'), ('217', '... theft , petty theft , pet petty robbery Lard , f . greas'), ('280', '... theft , mean or low theft [ thief Pilgrim , v . n . to r'), ('282', '... theft , especially in books , & c . Plagiary , f . one g'), ('323', '... theft violent or private , plunder [ on Robe , v . a . t'), ('361', '... theft , gain by art , go or pais Stealer , f . one who s'), ('381', '... Theft , f . the act of stealing , a thing stolen , dif T'), ('382', '... theft , steal , pilfer , take Thievery , s . the practic')]
+  youth        [('7', '... youth , youth Adónize , v a . to make handsome or engagi'), ('11', '... youth ( fels Air pump , J. a machine to draw air out of '), ('215', '... youth , very young man Ladder , a frame with teps , a gr'), ('437', "... Youth'fully , ad . in a youthful manner , briskly. Wor't"), ('438', '... Youth , f . tender age , one who is past childhood Youth'), ('439', "John Entick. Youth'fully , ad . in a youthful manner , brisk"), ('454', '... youth , beloved by strongest of the giants , who attempt'), ('459', "... youth , and Jupiter's cup- bearer ; but banished from he"), ('464', "... youth killed by Hercules for bringing Lim'nades , nymphs"), ('468', '... youth , who ran away with Helen , and occafioned the Tro')]
+  southward    []
+  provision    [('xxxi', '... provisions Feat , an action Feet , parts of the body Fel'), ('xxxv', '... , a manner of writing Stood , did ftand Stud , a place f'), ('xxxvi', "... provisions Suc'cour , help Suck'er , a young shoot Súer "), ('41', "... provision to cattle from trees and Bofk'y , a . woody , "), ('60', "... provisions at Chop'in , f . the Scotch quart , wine - me"), ('153', '... provision for the mouth Foodful , a . fruitful , full of'), ('181', '... provisions by retail High , a . loud , proud , great , d'), ('296', '... provision Prog , f . victuals , provifions of any kind ,'), ('302', "... provisions , procure , provide Purvey'ance , f . a procu"), ('401', '... provision for a journey , a rite [ velling Vibrate , v .')]
+  cipher       [('62', '... Cipher , v . to caft accounts , to write fecretly Cipher')]
+  quarter      [('36', "... quarter foldiers , to settle Bill'et , f . a small lette"), ('123', "... quarter where the fun rises E'after , f . the festival o"), ('126', "... quarter Ellips'is , s . an oval figure , figure , defect"), ('303', '... Quarter , v.a. to divide or break into four parts , lodg'), ('378', '... quarters Tavern , f . house where wine is fold by retail'), ('431', '... quarter where the fun fets Weft , a , fituate towards th')]
+  westward     []
+===== Xw1gAAAAcAAJ
+  alphabet     [('v', '... alphabet of the English tongue in this small pocket - vo'), ('vi', '... alphabet of the most common Names of Men and Women ; a c'), ('vii', '... m G g N n OPQRST 0 U u P V V ৭ W W r X X fors Y y t Z Z '), ('xii', '... alphabet ; but if it be left out in the pro-- nunciation'), ('2', '... alphabet Abecédary , a . relating to or having the alpha'), ('13', '... Alphabet , / . the letters in any language ; v.a. to All'), ('221', '... alphabet , type , mark Libel , f . a defamatory fatire ,'), ('259', '... alphabet Offf " ciously , ad . with unasked kindness , r'), ('450', '... alphabet , and was at last turned into a ferpent Cadúceu')]
+  morrow       [('245', '... Morrow , f . the next day after the present one Mop , v ')]
+  occupy       [('144', "... occupied by a farmer ; v . a to rent Farm'er , f . one w"), ('202', '... occupy , poffefs Inhabitable , a . decent , habitable , '), ('258', '... occupies , one who poilefles Oecumenical , a . general ,')]
+  theft        [('xxxv', '... theft Steel , to harden Stile , steps into a field Style'), ('144', '... theft , a . at or to the greatest distance , the last Fa'), ('161', "... theft or stealth [ thest Gad'der , / . one who runsabout"), ('217', '... theft , petty theft , low petty robbery Lard , f . greas'), ('280', '... theft , mean or low theft [ thief Pilgrim , v . n . to r'), ('282', '... theft , especially in books , & c . Plagiary , f . one g'), ('361', '... theft , gain by art , go or pass Stéaler , f . a perfon '), ('381', '... Theft , f . the act of stealing , a thing stolen , dif- '), ('382', '... theft , steal , pilfer , take Thievery , s . the practic'), ('450', "John ENTICK. Bess'i , a people of Thrace , who lived by thef")]
+  youth        [('7', '... youth , real youth Adónize , v . a . to make håndfome or'), ('42', "... youth , word of contempe Bount'eoufnefs , Bountifulness "), ('215', '... youth , very young man Ladder , f . a frame made with st'), ('373', '... youth , youth , lover , fervant Swallow , f.afm La small'), ('438', "... Youth , s . tender age , one who is past childhoo Youth'"), ('439', "... Youth'ly or Youth'y , a . young , youthful , early Yule "), ('454', '... youth , beloved by Apollo , and turned by him into a cyp'), ('462', '... youth by Hebe for affift- ing Hercules in killing the Hy'), ('464', '... youth killed by Hercules for bring- Γε ta L [ f the morn'), ('469', '... youth again Pelídes , Achilles fo called from his father')]
+  southward    []
+  provision    [('xxxv', '... manner of writing Stood , did ftand Stud , a place for h'), ('xxxvi', "... provisions Suc'cour , help Told , related Toll'd , did t"), ('60', "... provisions at [ pint Chop'in , f . the Scotch quart in w"), ('235', '... provisions , fodder Mazarine , f . a paper of a deep blu'), ('296', "... provisions of any kind , food Progen'itor , f . an ances"), ('299', '... provision , caution , grant Provífor , f . a man who has')]
+  cipher       [('62', '... Cipher , v . to cast accounts , to write fecretly or Cir')]
+  quarter      [('36', "... quarter foldiers , fettle , fix upon Bid'den , part . co"), ('123', "... quarter where the fun rises [ passover E'after , f . the"), ('126', "... quarter , three Elect'uary , f . a form of medicine , a "), ('303', '... Quarter , f . a fourth part , measure of eight bushels ,'), ('378', '... quarters Tavern , f . a house where wine is fold by reta')]
+  westward     []
+===== UUo1uw-_JZcC
+  alphabet     [('56', "... alphabet A - běd , ad . in bed Ab - er'rănce , s . a dev"), ('69', '... alphabet Al - pha - bětic - al - ly , ad . by way of alp')]
+  morrow       []
+  occupy       [('209', '... occupied by a farmer : v . a . to let out , to rent , to'), ('323', "... occupies oc'cu - py , v . a . & n . to possess ; to empl"), ('358', '... occupy beforehand [ tion Pre - oc - cu - pation , s . pr')]
+  theft        [('282', "... theft , a petty theft Late'něss , s . time far advanced "), ('338', "... theft of public money Pěc'u - la - tór , s . a robber of"), ('348', "... theft , st , especially in books Pla'gi - a - ry , s . o"), ('388', '... theft , violent or private Robe , s . a long vest or gow'), ('404', "... thefts Sherp'bit - ér , s . a petty thief Sheep'cot , Sh"), ('423', '... theft ; to go or 2 pass filently : to practise theft Ste'), ('441', "... theft or stealing Thiev'e - ry , s . the practice of ste")]
+  youth        [('63', '... youth faid to have been the favourite of Venus Ad - opt '), ('97', '... , s . a bloffom or flower of a tree ; beauty in the high'), ('98', "... youth , or flourishing state Bloom'y , a . full of bloom"), ('396', '... youth to school Schoolfel - low , s . a bookmate [ divin'), ('427', '... youth [ struggle Strive , v . n . to emulate , endeavour'), ('434', '... youth ; a young man Swallow , s . a fmall bird ; throat '), ('487', "... Youth , s . one past childhood , tender age Youth'fu !, ")]
+  southward    [('417', '... Southward , ad . towards the fouth [ the west Southwest ')]
+  provision    [('59', '... provision of conveni- ences ; reconciliation ; adjustmen'), ('100', "... provision as woods and trees yield to cattle Bof'ky , a "), ('133', '... provisions Com / mil - fa - ri - ship , s . office of co'), ('216', "... provision , search for provisions : [ flame Flăm'me - ou"), ('220', "William PERRY (of Edinburgh.) For'age , s . provision , sear"), ('237', '... provision Gross , s . the whole , total , bulk ; 12 doze'), ('246', '... provisions by retale High , s . a high place : a . dear '), ('362', "... provisions of any kind Prog ' , v . n . to steal , to sh"), ('368', "... provisions Pür - vèy'ór , s . one who provides victuals "), ('473', '... provision for a journey , rite Vibrate , v . a . & n . t')]
+  cipher       [('124', '... Cipher , s . the figure or mark ( 0 ) ; the initial lett')]
+  quarter      [('65', "... quarters of the Af'ri - căn , a . belonging to Africa , "), ('70', '... quarters of A - meri - căn , a . pertaining to America A'), ('83', '... quarter Aun , s . a meafure of 48 gallons Aunt , s . fat'), ('189', "... quarter where the fun rises Eaft'ér , s . the festival o"), ('192', '... quarter El - lipfis , s . an oval figure ; a defea El - '), ('201', '... quarters of the world Ex - e - cution , s . a performanc'), ('369', "... Quarter - deck , s . the upper deck Quart'ér - ly , ad ."), ('438', "... quarters Tăv'érn , s . a house where wine is fold Tăvérn")]
+  westward     [('480', "... westward of any place West'ér - ly a . & ad . towards th")]
+
+## batch8
+===== 1V1iAAAAcAAJ
+  alphabet     [('vi', '... to the most common and fignificant ideas conveyed by eac'), ('viii', '... alphabet of the most common Names of Men and Women , a c'), ('ix', '... K jb e १ W W k R r X X E e L 1 S fors Y y F f M m T t Z '), ('xiv', '... alphabet ; but if it be left out in the pro- nunciation '), ('2', "... alphabet Abéd , ad , in or on bed Aber'rance , f . an er"), ('13', '... Alphabet , f . the letters in any language Alphabetical '), ('216', "... alphabet Let'ter , v . a . to stamp with letters Let'ter"), ('254', "... alphabet Om'elet , f . a pancake made of eggs O'men , f "), ('443', '... alphabet , and was at last turned into a ferpent ว الا B')]
+  cipher       [('60', '... Cipher , v . n . to cast accounts Capher , f . the figur')]
+  morrow       [('240', '... Morrow , f . the next day after the prefent Morfe , f . ')]
+  occupy       [('140', '... occupied by a farmer ; v . a . to rent Fan " gled , a . '), ('197', '... occupy Inhabitable , a . habitable , not habitable Inhab'), ('252', '... occupies Occupy , v.a. to possess , employ , follow , us')]
+  period       [('xxviii', '... period or full point ( . ) the apostrophe or point of ad'), ('xxix', '... Period or full Point marked thus ( . ) is the longest pa'), ('xxx', '... period , or full Aop , and where a new fentence begins .'), ('270', '... Périod , a circuit , epocha , end , full point Periodica'), ('332', '... period Sentence , v . a . to condemn , to pass judgment ')]
+  southward    [('348', '... Southward , ad . towards the south Southwest , s . the p')]
+  supply       [('4', '... supply , reconcile Accommodated , part . suited , suppli'), ('142', '... supply with food , eat , nourith Feed , f . food , pastu'), ('167', "... supply , a . ( profit Gris'tle , f . a bony bony substan"), ('194', '... supply , furnith Indúlge , v . a . to humor , favor , gr'), ('234', '... supply , attend , serve Minifterial , a . of a minifter '), ('274', '... supply , clofe Piecelets , a . whole , not made of piece'), ('355', '... supply , succeed Steadfast , a . constant , firm , resol'), ('361', '... supply , afford forve under Submiss , Submissive , a . h'), ('363', '... supply Succinctly , ad . briefly , concisely , shortly S'), ('366', "... Supply ' , v . a . to relieve , serve instead , fill up ")]
+  theft        [('140', '... theft , a . at or to the greateft diftance Farthing , f '), ('212', "... theft Lath'er , f . the froth of foap and water , sweat "), ('274', "... steal small matters . Pil'ferer , f . one who steals pet"), ('317', '... theft violent or private , plunder Robe , v . a . to dre'), ('335', "... thefts , to steal Sheep'biter , f . a petty thief , a me"), ('355', '... theft , gain by art , goor pass Stealer , s . a thief , '), ('375', '... Theft , f . the act of stealing , a thing stolen Their ,'), ('376', '... theft : Thievery , f the practice or act of stealing Thi'), ('443', '... theft and robbery Biblia , the wife of Duillius , who fi')]
+  youth        [('xvi', '... youth ; at the end of words of more than one syllable it'), ('277', "... youth Playful , Play ' fome , a , sportive , full of lev"), ('326', '... youth to fchool School fellow , f . one bred at the same'), ('359', '... youth , a young or weak man Stript , part , of to firive'), ('432', "... Youth , J. one paft childhood , tender age Youth'ful , e"), ('447', '... youth , beloved by Apollo , and turned by him into a cyp'), ('452', "... youth , and Jupiter's cup- bearer ; but banified from he"), ('459', '... youth , who , falling in love with his own image in the '), ('461', '... youth , who ran away with Helen , and occafioned the Tro'), ('PT3', '... Youth . By L. M. Stretch , M. A. Two Volumes 12m0.6s . 1')]
+===== jVxgAAAAcAAJ
+  alphabet     [('iv', '... to the most common and significant ideas conveyed by eac'), ('vi', '... alphabet of the most common Names of Men and Women a com'), ('vii', '... C J d K k e L 1 f M m OPQRST jk 0 g N n Q U u P V V 9 W '), ('xii', '... alphabet ; but if it be left out in the pro- nunciation '), ('1', '... to separate , to draw away Abdúcent , a , drawing or pul'), ('2', 'John ENTICK. Abecedarian , f . one who teaches the alphabet '), ('12', '... Alphabet , f the letters in any language Alphabetical , '), ('210', '... alphabet Letter , v . a . to stamp with letters Letterca'), ('247', "... alphabet On'ward , ad . forward , progressively Om'elet "), ('430', '... alphabet , and was bat laft curned into a ferpenthes , C')]
+  cipher       [('58', '... Cipher , v . n . to cast accounts Cipher , the figure or')]
+  morrow       [('233', '... Morrow , f . the next day Morse , s . the river horfe Mo')]
+  occupy       [('136', "... occupied by a farmer ; v . a . to rent Fam'ith , v . a ."), ('192', '... occupy Inhabitable , a , not habitable ( place Inhabitan'), ('245', '... occupies Occupy , v . a . to possets , employ , follow ,')]
+  period       [('xxvi', '... period or full point ( . ) the apostrophe or point of ad'), ('xxvii', '... Period or full Point marked thus ( . ) is the longest pa'), ('xxviii', '... period , or full ftop ; and where a new fentence begins '), ('263', '... Périod , f . a circuit , epocha , end , full point Perio'), ('322', '... period Sentence , v . a to condemn , to pass judgment on'), ('442', '... period whom he had made drunk , was changed by Jupiter i')]
+  southward    [('338', '... Southward , ad . towards the fouth Southwest , s . the p')]
+  supply       [('123', '... supply with graces , to invest Endúrance , / . continuan'), ('138', '... supply with food , eat , nourishe Feed , f . food , paft'), ('218', "... supply Main'top , f . the top of the mainmaft Main'yard "), ('228', '... supply , attend , ferve 6 Minifterial , a . of a minifte'), ('296', '... supply Rad , a . of the colour of blood Redarque , v a .'), ('301', "... supply of lofs , abode Repair'able , a . that may be rep"), ('351', '... supply , afford , serve under Submifs , Submissive , a .'), ('352', '... supply , aid , help Subverfion , J. an overthrow , ruin '), ('355', "... Supply ' , v . a . to relieve , serve instead , fill up "), ('416', "... supplied with wood Wood'en , a . made of wood , clumfy W")]
+  theft        [('206', '... theft Lard , f . grease of swine ; v . a . to stuff with'), ('267', "... theft so a . 1 to ramble , to wander .. 4 Pi'fere Pil'fe"), ('269', '... theft , especially in in books , c . Planted , part . fi'), ('308', '... theft violent or private Robe , v . a . to dress pompouf'), ('325', "... thefts Sheep'biter , f . a petty thief Sheep'cot or fold"), ('345', '... theft , gain by art , go or pal Steaver , f . a thief , '), ('364', '... Theft , f . the act of tealing , a thing stolen Their , '), ('365', "... theft Thievery , f f.t the practice of stealing Thiev'is"), ('430', "John ENTICK. Bes'fh , a a people of Thrace , who lived by th")]
+  youth        [('7', '... youth Adónize , v . a . to make handfome or engaging Ado'), ('317', '... youth to school School fellow , f . one bred at the fame'), ('349', '... youth Stript , part . of to strive Strive , v . n . to f'), ('357', '... youth , a young man Swallow , f . a small bird , the thr'), ('419', "... Youth , f . one past childhood , tender age Youth'ful , "), ('439', "... youth , and Jupiter's cup- bearer ; but banished from he"), ('442', '... youth by Hebe for affifting Hercules in killing the Hydr'), ('444', '... youth killed by Hercules for bringing changed into a fou'), ('448', '... youth , who ran away with Helen , and occafioned the Tro'), ('449', '... youth again Pelides , Achilles so called from his father')]
+===== 7LFmAAAAcAAJ
+  alphabet     [('iv', '... to the most common and significant ideas conveyed by eac'), ('vi', '... alphabet of the most common Names of Men and Women ; and'), ('vii', "... m G g N n 0 U u P V V 9 W W r X X for's Y y t Z Z Of In "), ('xii', '... alphabet ; but if it be left out in the pro- nunciation '), ('2', '... alphabet Abed , ad . in or on bed Abérrance , f . an err'), ('12', '... alphabet Alphabetically , ad , by way of alphabet Alread'), ('210', '... alphabet Letter , v . a . to stamp with letters Létterca'), ('247', "... alphabet Om'elet , f . a pancake made of eggs O'men , fi"), ('430', '... alphabet , and was at last turned into a ferpent Briféis')]
+  cipher       [('58', '... Cipher , v . n . to cast accounts Cipher , f . the figur')]
+  morrow       [('233', '... Morrow , f . the next day Morse , f . the river horfe Mó')]
+  occupy       [('136', '... occupied by a a farmer ; to rent Farmer , f . one who re'), ('192', '... occupy Inhabitable , a . not habitable 44 Inhabitance , '), ('245', "... 'ccupier , f . a poffeffor , one who occupies O'ccupy , ")]
+  period       [('xxvi', '... period or full point ( . ) the apostrophe or point of ad'), ('xxvii', '... Period or full Point marked thus ( . ) is the longest pa'), ('xxviii', '... period , or full flop ; and where a new fentence begins '), ('263', '... Périod , f . a circuit , epocha , end , full point Perio'), ('322', "... period Sen'tence , v . a . to condemn , to pass judgment")]
+  southward    []
+  supply       [('4', '... supply , reconcile Accommodated , part . suited , suppli'), ('101', '... supply with food Dietdrink , f . a drink made of feveral'), ('203', '... supply with , or make , a king mufic , for landing goods'), ('228', '... supply , attend , serve 3 Minitérial , a . of a minister'), ('246', '... supplied with commanders ( army Official , a . conducive'), ('301', "... supply of loss , abode Repair'able , a . that may be rep"), ('345', '... supply , fucceed Steadfast , a . conftant , firm , resol'), ('352', '... supply , aid , help Subversion , J. an overthrow , ruin '), ('355', "... Supply ' , v . a . to relieve , ferve instead , fill up "), ('392', "... supplied with food , hungry Unfee'd , a . not fee'd , un")]
+  theft        [('206', '... theft Lard , f . grease of swine ; v . a . to fluff with'), ('267', '... theft Pilgrim , v . a . to ramble , to wander Pilgrim , '), ('269', '... theft , especially in books , & c . Plagiary , f . one g'), ('308', '... theft violent or private Robe , v . a . to dress pompous'), ('325', "... thefts Sheep'biter , f . a petty thief Sheep'cot or fold"), ('345', '... theft , gain by art , go or pats Stealer , f . a thief ,'), ('364', '... Theft , f . the act of stealing , a thing stolen Their ,'), ('365', "... theft Thievery , f . the practice of stealing Thiev'ish "), ('430', "... theft and robberys Bib'lia , the wife of Duillius , who ")]
+  youth        [('xiv', '... youth ; at the end of words of more than one fyllable it'), ('7', '... youth Adónize , v . a . to make handsome or engaging Adó'), ('349', '... youth Stript , part . of to ftrive Strive , v . n , to s'), ('357', '... youth , a young man Sweet , f . sweetness , perfume , a '), ('419', "... Youth folly , ad . in a youthful mannerton W Youth'ier ,"), ('442', '... youth by Hebe for aflifting Hercules in killing the Hydr'), ('444', '... youth killed by Hercules for bringing Lini " gera , a ti'), ('446', '... youth , who , falling in love with his own image in the '), ('PT1', '... YOUTH , and to SENTENTIÆ PUERILE.S . 38. bound together '), ('PT3', '... SELECT LESSONS , to instil just Sentiments of Virtue in ')]
+===== xZUPAAAAQAAJ
+  alphabet     [('viii', '... word , I have been able to include a complete alphabet o'), ('x', '... alphabet of the most common Names of Men and Women and a'), ('xi', '... K k R r X X e L 1 S fors Y y f M m T t Z 2 . G g N n In '), ('xvi', '... alphabet ; but if it be left out in the pro- nunciation '), ('34', '... alphabet Abéd , ad . in or on bed Abériance , f . an err'), ('43', '... alphabet Alphabetically , ad . by way of alphabet Alread'), ('226', '... alphabet Létter , v . a . to stamp with letters Létters '), ('260', "... alphabet Om'eiet , f . a pancake made of eggs O'men , f "), ('435', '... alphabet , and was at last turned into a serpent Cadúceu')]
+  cipher       [('86', '... Cipher , f . the figure or mark ( 0 ) in numbers , the C')]
+  morrow       []
+  occupy       [('157', '... occupied by a farmer ; v . a . to rent Farmer , f . one '), ('209', "... occupy Inhabitable , a . not habitable I'njurer , f . on"), ('259', '... occupies Occupy , v . a . to possess , employ , follow ,')]
+  period       [('xxx', '... period or full point ( . ) the apostrophe or point of ad'), ('xxxi', '... Period or full Point marked thus ( . ) is the longest pa'), ('xxxii', '... period , or full flop ; and where a new fentence begins '), ('275', '... Périod , f . a circuit , epocha , end , full point Perio'), ('332', '... period Sentence , v . a to contemn , to país judgment on')]
+  southward    [('347', '... Southward , ad . towards the fouth Southwest , s . the p')]
+  supply       [('36', '... supply , reconcile Accommodated , part . suited , suppli'), ('125', '... supply with food Diet - drink , f . a drink made of seve'), ('159', '... supply with food , eat , nourish infirmity , weakness Fe'), ('219', '... supply with , or make , a king Kingdom , f . the dominio'), ('234', '... supply Maintop , f . the top of the mainmast Májor , a .'), ('243', '... supply , attend , ferve Minifterial , a , of a minifter '), ('354', '... supply , fucceed Steadfast , a . conftant , firm , refol'), ('360', '... supply , afford , serve under Submiss , Submissive , a .'), ('362', '... supply Sufficiency , f . enough , an adequate fupply Suf'), ('364', "... Supply ' , v . /.a , v . a . to relieve , serve instead ")]
+  theft        [('222', '... theft Lard , f . grease of swine ; v . a . to stuff with'), ('279', '... theft Pilotage , f . the pay of a pilot Piménta , J. all'), ('281', '... theft , especially in books , & c . Plagiary , f . one g'), ('319', '... theft violent or private bandage , a fillet Rólling - pi'), ('335', '... thefts Sheepbiter , f . a petty thief Sheercot or fold ,'), ('354', '... theft , gain by art , go or pafs Stealer , f . a thief S'), ('373', '... Theft , f . the act of stealing , a thing stolen Their ,'), ('374', '... theft Thievery , f . the practice of stealing Thiévish ,'), ('434', "... theft and robbery Bib'lia , the wife of Duillius , who f")]
+  youth        [('xviii', '... youth ; at the end of words of more than one syllable it'), ('38', '... youth Adopt , v . a . to make choice of a fon , & c . Ad'), ('358', '... youth Strive , v . n to struggle , endeavor , emulate St'), ('366', '... youth , a young man Swallow , f . a small bird , the thr'), ('426', '... Youth , f . one past childhood , tender age Youthful , a'), ('438', '... youth , beloved by Apollo , and turned by him into a cyp'), ('447', '... youth by Hebe for affifting Hercules in killing the Hydr'), ('449', '... youth killed by Hercules ¡ for bringing him the shirt of'), ('451', '... youth , who , falling in love with his own image in the '), ('453', '... youth , who ran away with Helen , and occafioned the Tro')]
+===== yT3SS6sQ3k8C
+  alphabet     [('viii', '... word , I have been able to include a complete alphabet o'), ('x', '... alphabet of the most common Names of Men and Women ; a c'), ('xi', '... ST fors Y y t Z Z G g N n In which alphabet , a , e , i '), ('xvi', '... alphabet ; but if it be left out in the pro- nunciation '), ('34', '... alphabet Abéd , ad . in or on bed Abérrance , f . an err'), ('43', '... alphabet Alphabetically , ad . by way of alphabet Alread'), ('226', '... alphabet . v . a . to stamp with letters . Letter , v . '), ('260', "... alphabet Om'elet , J. a pancake made of eggs O'men , f ."), ('433', '... alphabet , and was at last turned into a ferpent wards m')]
+  cipher       [('86', '... Cipher , w . n . to cast accounts , Cipher , f . the fig')]
+  morrow       [('248', '... Morrow , f . the next day . Morfel , a mouthful , a smal')]
+  occupy       [('157', '... occupied by a farmer ; v . a . to rent Fármer , f . one '), ('259', "... occupies O'ccupy , v . a . to possess , employ , follow ")]
+  period       [('xxx', '... period or full point ( . ) the apostrophe or point of ad'), ('xxxi', '... Period or full Point marked thus ( . ) is the longest pa'), ('xxxii', '... period , or full flop ; and where a new sentence begins '), ('275', '... Périod , f . circuit , epocha , end , full point Periodi'), ('332', '... period Sentence , v.a. to condemn , to pass judgement on')]
+  southward    [('347', '... Southward , ad . towards the fouth Southwest , f . the p')]
+  supply       [('125', '... supply with food Diet - drink , f . a drink made of seve'), ('159', '... supply with food , eat , nourish Féllow , f . an affocia'), ('168', '... supplied by fortune , portioned Fortunehunter , f . a hu'), ('219', '... supply with , or make , a king Kingdom , f . the dominio'), ('234', '... supply Maintop , f . the top of a mainmast Malignant , M'), ('279', '... supply , close Piéceless , a whole , not made of pieces '), ('312', '... supply of lofs , abode Repairer , f . one who amends or '), ('354', '... supply Steadfast , a . conftant , firm , resolute , fixe'), ('360', '... supply , afford to fupply , afford , ferve under Submife'), ('364', "... Supply ' , v . a . v . a . to relieve , ferve Supply ' ,")]
+  theft        [('281', '... theft , especially in books , & c . Plagiary , s . one g'), ('319', '... theft violent or private Robe , f . a long vest or gown '), ('335', '... thefts Sheepbiter , f . a petty thief Sheepcot or fold ,'), ('354', '... , fixed , not wavering , conftant Steak , f . a slice of'), ('373', '... Theft , f . the act of stealing , a thing stolen Their ,'), ('374', '... theft Thievery , f . the practice of stealing Thiévish ,'), ('385', '... theft , the proboscis of an elephant , & c . a long tube')]
+  youth        [('xviii', '... youth ; at the end of words of more than one syllable it'), ('38', '... youth Adopt , v . a . to make choice of a fon , & c . Ad'), ('281', '... youth Playful , Pla Pláysome , a . sportive , full of le'), ('327', '... youth to school Schoolfellow , s . one bred at the same '), ('426', '... of all Youngish , a . fomewhat younger Youngly , ad . ea'), ('427', 'John ENTICK. Yourself , pron . even you , you only Youth , f'), ('429', "John ENTICK. Acidália , a name of Venus A'cis , a beautiful "), ('441', '... youth by Hebe , for affifting him in killing the hydra I'), ('442', '... youth killed by Hercules for bringing him the shirt of N'), ('444', '... youth , who , falling in love with his image in the wate')]
+
+## perry
+===== 3ltWAAAAYAAJ
+  cipher       []
+  daybook      [('121', '... Day book , s , a book containing all the occur- rences of the day '), ('144', "... day - book ; a journal : a . per- formed in a dav ; daily Di - ur'"), ('240', '... day - book : a . daily , quotidian Journal - ist , s . a writer fo')]
+  earnest      [('32', '... Arbit , s . the circuit or compass of any Ami - a - ble - ness , s'), ('158', '... earnest request ; prayer , En - treaty , S solicitation , supplica'), ('254', '... earnest desire , continual wish Lăng îng - ly , ad . with incessan'), ('363', '... earnest contest for any thing : v . n . to catch eagerly , to clim'), ('368', "... earnest attention , gravity Sér'món , s . a pious discourse from t"), ('452', "... earnest , atten- tive Wist'ly , ad . attentively , earnestly Wit ,")]
+  headache     []
+  provision    [('21', '... provision of conve- niences ; reconciliation ; adjustment Ac - cóm'), ('20', '... provision of conve- niences ; reconciliation ; adjustment Ac - cóm'), ('181', '... provision , search for provision : v . a . & n . to plunder , to s'), ('199', "... provision Gris'tle , 6. a bony substance ; a cartilage Grist'ly , "), ('331', '... , a . for present use , temporary Pro - visión - ai - ly , ad . on'), ('334', "... provisions ; to buy in provisions , to provide Pur - vêy'ance , s "), ('335', "... Pro - vīşo , s . stipulation , caution , provision Prov - o - ca't"), ('335', "... provisions ; to buy in provisions , to provide Pur - vêy'ance , s "), ('441', '... provision for a journey , rite 1 Un - fading , a . not liable to. '), ('443', '... provision for a journey , rite Wail , s . very audible sorrow : v ')]
+  quarter      [('28', "... quarters of the Af'rì - căn , a . belonging to Africa : s . a nati"), ('32', "... quarters of the world Am'e - thyst , s . a precious stone Am - bi "), ('45', "... n . ta counsel , consider ; be- Au'lic , a . belonging to the cour"), ('58', '... quarter soldiers Billet - doux , s . ( Fr. ) a love - letter Billi'), ('151', "... quarter where the sin rises East'ér , s . the festival of Christ's"), ('335', '... Quarter - deck , 8. the upper deck [ rents Quarter - ly , a . & ad'), ('335', '... Quarter - děck , 8. the upper deck [ rents Quarter - ly , a . & ad'), ('405', "... quarters Tăv'érn , s . a house where wine is sold Távérn - măn , s")]
+  rejoin       []
+  seal         [('364', '... seal - fish Sea cấp , s . a cap worn on shipboard Sea chart , s . '), ('365', '... Seal , s . the sea - calf ; a stamp , impression : v . a . & n . t'), ('374', '... seal , a charm Sign , s . a constellation in the zodiac ; a de- vi'), ('433', '... seal , v . a . to open what is sealed un - sealed , a . not sealed'), ('443', "... seal , v . a . to open what is sealed on - seal'ed , a . not seale")]
+  supply       [('x', '... supply their deficiency by the following general rule , from which'), ('20', "... supply with con- veniences of any kind Xc - com'mo - date , or Ac "), ('133', "... supply with food Di'ět - drink , s . drink made of herbs , & c . D"), ('172', "... supply with food ; graze ; nourish ; take food ; prey ; eat Feed'é"), ('175', "... supply Finder , & .. who finds any thing Find'fault , s . a cavill"), ('342', "... supply : v . a , to repair , replace , supply Rect'an - gle , s . "), ('345', "... supply : v . a , to repair , replace , supply Rect'an - gle , s . "), ('347', '... supply of loss ; abode ; repar- ation : v . a . & n . to fill up a'), ('399', "... supply : Sū'per - se'de - ăs , s . a writ in law Sū'pér - stí'tion"), ('440', "... supply air Ven'tri - cle , s . the stomach , cavity in the heart V")]
+  usher        [('235', "... usher in , bring into notice In - tro - dūç'ér , s . one who intro")]
+  westward     []
+  whichsoever  []
+  youth        [('iv', '... ) reflecting on the disadvantages , which must accrue to youth , w'), ('x', '... youth ; particularly , as daily ex- perience evinces , that old cu'), ('xi', '... youth a proper pronunciation of the English language . For the ben'), ('xii', '... youth farther advanced . As to adult persons , those who wish to m'), ('60', '... stained with blood , cruel Bloom , s . blossom ; state of immaturi'), ('362', '... youth to school School fel - low , s . one bred up and instruct- 8'), ('394', "... youth [ gent Stidi oŭs něss , 8. close addiction to study Strīv'ér"), ('401', '... youth , a young man Swallow , s . a small bird ; throat ; voraci- '), ('455', '... Youth , s . one past childhood , tender age Youthful , a . young ,')]
+  alphabetical [('18', "... alphabetical Ab - del - a'vi , s . the Egyptian melon [ order A - "), ('18', "... alphabetical Ab - del - a'vi , s . the Egyptian melon [ order Ab -"), ('133', "... alphabetical order Did , pret . of to do Díf - fér - en'tial , s ."), ('461', "... Alphabetical Order GENESIS , Al'vah Al'văn Am'a - lek Căph'to - ri")]
+===== FFtWAAAAYAAJ
+  cipher       [('89', '... Cipher , s , the figure or mark ( o ) ; the ini- tial letters of a')]
+  daybook      [('127', "... fetting Daybed , s . a bed used for idleness Day'book , s . a book"), ('152', '... day - book ; a journal Di - urnal , a . performed in a day ; daily'), ('153', '... day - book , s . a book for registering eftates Door , Door , s . '), ('255', "... day - book : a . daily , quotidian being judicious Joŭi'năl - ift ")]
+  earnest      [('33', "... earnest defire ; pride A'mi - a - ble , a . lovely , pleafing , ag"), ('168', "... earnest request ; prayer , in a point En - treat'y , folicitation "), ('269', '... earnest defire , continual wish Lordly , a . haughty , infolent , '), ('269', '... earnest defire , continual wish Lordly , a . haughty , infolert , '), ('382', "... earnest conteft foranything : cry as an owl , shriek Screech'owl ,"), ('387', "... Se'ri - ous , a . grave , folemn , weighty [ ance Sep - těn'tri - "), ('475', "... earnest , atten- Wit'tol , Wit'tăl , s . a contented cuckold tive ")]
+  headache     []
+  provision    [('15', "... provision of conven Ac - cefl'a - ri - něss , s . state of being a"), ('346', '... provisions Pro - gění - tór , s . an ancestor in a direct line Pro'), ('349', '... provisions of any kind : v . n . to steal , to shift for provision')]
+  quarter      [('28', "... quarters of the Af - firm'ance , s . confirmation , , ratification"), ('31', "... quarters of the Af - firm'ance , s . confirmation , ratification A"), ('33', "... quarters of Am - big'u - ous , a . doubtful , myfterious the world"), ('47', '... quarter Awa , s . a meafure of 48 gallons Aunt , s . father or mot'), ('60', "... quarter foldiers Bi - form'ed , a . compounded of two forms Bil'le"), ('159', '... quarter where the fun rises a . & n . to plough or till , to shoot'), ('353', '... Qûartér - age , s . quarterly allowance [ diers Quârtér - dāy , s '), ('426', "... quarters Tavern , s . a houte where wine is fold Táv'ern - mán , s")]
+  rejoin       []
+  seal         [('384', "... Sealing - wäx ' , s . wax ufed to feal letters Sẽm , s . that part")]
+  supply       [('165', "... supply with graces En - coúr'age - ment , s . favour , incitement "), ('267', "... supplied with lips [ & c . Lip'pi - tude , s . a blearedness of th"), ('269', "... supplied with lips Lip'pi - tude , s . a blearedness of the eyes L"), ('280', '... supplied with food with medicinal ingredients ( of phyfic Meathe ,')]
+  usher        [('249', "... usher in , bring into in'tò , prep . noting entrance with regard t")]
+  westward     []
+  whichsoever  []
+  youth        [('v', '... youth , who make use of it to learn the pronunciation of the Engli'), ('x', '... youth ; prácul , y , as daily ex- perience evinces , that old enst'), ('xi', '... youth a proper pronunciation of the English language . For the ber'), ('xii', '... youth youth far- ther advanced . As to adult perfons , those who w'), ('12', '... youth far- ther advanced . As to adult perfons , those who wish to'), ('63', "... youth Bloom'y , a . full of blooms , youthful Blore , s . a blast "), ('381', '... youth to school Schoolfel - low , s . one bre bred up and instruc-'), ('414', '... youth Strive , v . n . to emulate , endeavour , con- tend , ftrugg'), ('415', '... youth Strive , v . n . to emulate , endeavour , con- tend , ftrugg'), ('479', '... Youth , s . one past childhood , tender age Youthful , a . young ,')]
+  alphabetical [('18', '... alphabetical A - bili - ty , s . power , capacity , genius Ab - de'), ('140', "... alphabetical order Did , the pret . of to do Dif - fuf'ed - ly , a"), ('485', "... ALPHABETICAL ORDER . GENESIS ăm - rā'phěl Beth'el Ca'lah E - gypti")]
+===== OY8VAAAAYAAJ
+  cipher       [('89', '... Cipher s . the figure or mark ( o ) ; the ini- tial letters of a p')]
+  daybook      [('127', "... a bed used for idleness Day'book , s . a book containing all the o"), ('152', '... day - book ; a journal Dog , s . a domeftic animal of various spe-'), ('255', "... day book : a . daily , quotidian being judicious Jour'nai - ift , ")]
+  earnest      [('33', '... earnest defire ; pride Ami - a - ble , a . lovely , pleasing , agr'), ('168', '... earnest request ; prayer , En - treaty , ( folicitation , fupplica'), ('269', "... earnest defire , continual with Lõng'ing - ly , ad . with inceffan"), ('382', '... earnest conteft forany thing : v . n . to catch eagerly , to climb'), ('475', "... earnest , atten- Wit'tõi , Wit'tăl , s . a contented cuckold tive ")]
+  headache     []
+  provision    [('352', "... provisions Pür - veyor , s . one who provides victuals Pü'ru - len"), ('463', '... provision for a jurney , rite Vibrate , v . a . & n . to move to a')]
+  quarter      [('28', "... quarters of the Af - firm'ance , s . confirmation , ratification A"), ('33', "... quarters of ăm - big'u - ous , a . doubtful , mysterious the world"), ('47', '... quarter Aun , s . a measure of 48 gallons Aunt , s . father or mot'), ('60', "... quarter foldiers Bil'let - doux , s . Fr. a love - letter Billiárd"), ('159', "... quarter where the fun rifes tion Eaft'ér - ly , ad . lying toward "), ('353', '... Quarter - age , s . quarterly allowance [ diers Quarter - dāy , s '), ('426', "... quarters Táv'érn , s . a house where wine is fold Távérn - măn , s")]
+  rejoin       []
+  seal         [('384', "... Sealing - wax ' , s . wax ufed to feal letters Szam , s . that par"), ('410', '... Seal , v . v . a . & n . to take by theft , to gain Sterli - ize ,'), ('455', "... seal ' , v . a . to open what is fealed on - fealed , a . not seal")]
+  supply       [('25', "... supply , contribute , Ad'nõûn , s . an adjective Ad - min if - tra"), ('280', '... supplied with food Meathe , s . drink , beverage of any kind Mo - '), ('417', '... supply ; to be enough Suf - ficien - cy , s . an adequate fupply S'), ('449', '... supplied with food , hungry on - feed , a . not feed , not bribed '), ('462', "... supply air Ven'tri - cle , s . the stomach , cavity in the heart [")]
+  usher        [('249', "... usher in , bring into In'tò , prep . noting entrance with regard t")]
+  westward     []
+  whichsoever  []
+  youth        [('5', '... youth , who make use of it to elearn the pror ur ciation of the En'), ('10', '... youth ; particularly , as daily ex- perion e evinces , that of cus'), ('11', '... purfued , in or tateach youth a proper pronunciation of the Enlish'), ('12', '... youth fan ther advanced . As to adult perfons , those who wish to '), ('63', "... youth Bloom'y , a . full of blooms , youthful Biore , s . a blast "), ('381', '... youth to school School tel - low , s . one bred up and intruc- ted'), ('414', '... youth Scrive . v . n . to emulate , endeavour , con- tend , fruggl'), ('421', '... youth , a young man Swallow , s . a small bird ; throat ; voraci t'), ('479', '... Youth , s . one paft childhood , tender age Vouthful , a . young ,')]
+  alphabetical [('18', "... alphabetical Ab - del - a'vi , s . the Egyptian melon [ order Ab -"), ('140', '... alphabetical order Dif - tufd - ly , ad . dispersedly , widely Did'), ('485', "... ALPHABETICAL ORDER GENESIS . Am - raphěl A - běl'miz - rā'im A'nér")]
+
+## walker_abr
+===== CnQGwQfeT2wC
+  abecedary    []
+  alphabet     [('PP28', "... Alphabet , al'få - bet . s . the letters , or elements o"), ('PP264', '... alphabet One , wûn . a . less than two , single ; Omelet')]
+  cipher       [('PP80', '... Cipher , si für . v . n . to practise arith - Circumduct'), ('PP110', '... cipher Decision , dé - sizh ún . s . determina- Deceivab')]
+  daybook      [('PP109', "... Daybook , da böök . s . a tradesman's journal Daybreak ,")]
+  earnest      [('PP134', '... Earnest , er nest . a . warm , zealous ; darkness , tend'), ('PP170', '... earnest ; ardent , eager ; confident ; early ripe [ to a'), ('PP235', "... earnest desire Longitude , lon'je - túde . s . length ; "), ('PP283', "... earnest ; clearly Plainness , plane'nës . s . flatness ;")]
+  headache     []
+  occupy       [('PP126', "... occupied Distich , dis ' tik . s . a couple of lines Dis"), ('PP162', '... occupy by bulk Fill , fil . v . n . to give drink ; grow'), ('PP191', "... occupied as inherit - Heroism , her ' ó - izm . s . the "), ('PP263', "... Occupy , ôk'ku - pl . v . a . to possess to force one's "), ('PP381', '... occupied Vagabond , vaga - bond . a . wander- ing withou')]
+  period       [('PP79', "... periods of time Chrysalis , kris ' sa - lis . s . the fi"), ('PP177', '... periods or act of turning into ice , ice form- cadence G'), ('PP258', '... period of the night as distinguished by change of the wa'), ('PP278', '... Period , péré - ůd . s . a circuit ; a Permit , për - mi'), ('PP388', '... period of the with wax ; to grow , to increase zeal , pa')]
+  provision    [('PP17', "... provision of conveni - Accost , ak - kost ' . v . a . to"), ('PP24', '... provision ; previously fitted [ a . mentioned before Afo'), ('PP167', '... provisions Foodful , food fůl . a . fruitful , full of f'), ('PP196', '... provisions for a family Houseless , höûz lēs . a . witho'), ('PP255', '... against authority , to make in - volution of some secret'), ('PP264', "... - fá rẻ - us . a . of Onerous , ôn ' ner - us . a . burt"), ('PP269', "... provision Overweak , d - vůr - weke ' . a . too weak , f"), ('PP294', "... provision to a play Progenitor , pro - jên ' it - ur . s"), ('PP296', "... Provision , pro - vízh ' un . s . the act of Prospicienc"), ('PP384', '... provision of food , Vibratory , vibra - tur - e . a . vi')]
+  quarter      [('PP135', '... quarter where the sun rises Easter , čés tur . s . the d'), ('PP138', '... quarter Ellipsis , él - lipsis . s . a figure of Elusive'), ('PP299', '... Quarter , kwor tur . s . a fourth part ; the place where'), ('PP300', '... quarter Quartermaster , kwörtür - ma - stur . s . Questi')]
+  seal         [('PP323', '... Seal , sele . s . the sea - calf Scrutinous , skrootin -'), ('PP331', '... seal ; the seal - Silver , sil vår . s . a white and har'), ('PP378', "... seal Unsearchable , un - sertsh'a - bl . a . not to be e")]
+  southward    [('PP338', "... Southward , south wård , or SUTH'- urd . ad . towards th")]
+  supply       [('PP20', '... supply , to perform Adjudicate , ad - judě - kate . v . '), ('PP137', "... supply Elaborate , é - lab'b - råte . v . a . to pro- du"), ('PP141', '... supply with mental excellencies ance [ to undergo Endeav'), ('PP159', '... supply with food ; to graze ; to nourish ; to [ feathers'), ('PP182', '... supply grass Grazier , grá zhůr . s . one who feeds catt'), ('PP199', '... supply with light ; to decorate , to adorn Illuminate , '), ('PP248', "... supply , to afford Minister , min'nis - tur . v . n . to"), ('PP345', '... supply hoarded ; storehouse corn grows a light yellow St'), ('PP351', '... supplied Supplemental , sup - ple - mental . Supplementa'), ('PP383', '... supply close places with fresh air Ventosity , ven - tos')]
+  usher        [('PP219', '... usher into a place [ accustom Introduction , in - tro - '), ('PP381', "... Usher , ash'år . v . a . to introduce higher place ; wit")]
+  westward     [('PP389', '... Westward , westwůrd . ad . towards tion of a new comer t')]
+  whichsoever  [('PP137', '... which- soever of the two , whether one or coarse So a ma')]
+  willow       [('PP391', '... Willow , wil To . s . a tree Wily , wile . a . cunning ,'), ('PP392', "... willow twig ; a winter [ winter Wither , with'ur . v . n")]
+  youthful     [('PP51', '... youthful [ thing Bearer , båreür . s . a carrier of any '), ('PP224', "... youthful Juvenility ju - ve - nil ' é - tě . s . youth- "), ('PP395', "... Youthful , yooth ' fül . a . young estate in land , a ge")]
+===== Ft4VAAAAYAAJ
+  abecedary    []
+  alphabet     [('1', "... alphabet , Abbreviature , ab - bre've a'tchure . s . A h"), ('14', '... alphabet , answering to qur A. Alphabet , alfa - bet . s'), ('235', '... alphabet , and taken in the Holy Scripture for the last ')]
+  cipher       [('59', "... Cipher , si'får . s . Arithmetical charac- ter , interte"), ('84', "... ciphers . Crystal , kris'tål . s . A hard , pellucid sto"), ('89', "... cipher . Decision , de - sizh'ûn . s . Determination . D"), ('221', "... cipher . Monologue , mon'no - log . s . A solilo- [ gle "), ('258', '... of many lines . Polygraphy , po - lig grå - fe . s . The')]
+  daybook      [('88', "... Daybook , da - book . s . A tradesman's journal . Daybre")]
+  earnest      [('110', "... Earnest , er'nest . a . Ardent , zealous , Ebriety , é -"), ('169', '... earnest . Jest , jest . s . Any thing ludicrous , a Jest'), ('204', '... Earnest desirs Longingly , lồng îng - lề . ad . Wih ince'), ('305', '... earnest . Seriousness , sere - ûs - uês . s . Gravity , '), ('385', "... earnest . Wistfully , wist'fol - le . ad . Attentively .")]
+  headache     []
+  occupy       [('234', '... ku - pant . s . He that takes possession . Qccupation , '), ('260', "... occupy . Possession , poz - zesh'ůn . s . The hav- ing i")]
+  period       [('58', "... periods of time . Chronometer , kro - nom'me - tår . s ."), ('62', '... period of years , in human life . Climacterick , klim - '), ('86', '... period of time . Cycloid , sikloid . s . A geometrical C'), ('229', '... period of 3 hours in the night , distinguished by change'), ('250', "... Period , pè'ré - ůd . s . A round of time ; end , full p"), ('304', "... period . Sententious , sen - tên'shůs . a . Short energe")]
+  provision    [('4', '... Provision of conveniences ; com- meaning of a word . Acc'), ('47', "... provisions are laid up . Button , båt'tn.s . A knob , bu"), ('137', '... forbade ; Font , font . s . A baptismal vessel . Food , '), ('162', '... provisions . High , hì . a . Proud , lofty , violent , d'), ('194', "... provisions are cooked . Kitchengarden , kitsh'in - gar -"), ('270', '... of any one ; a re gion , a tract , Provincial , pro - vi'), ('273', "... Provision . Purify , pu're - fl . v . a . & n . To make "), ('334', "... provisions . Suture , sử'tshure . s . A sewing of wounds"), ('358', "... Provision of food , meat . Victual , vit'tl . v . a . Ve")]
+  quarter      [('38', '... quarter soldiers . Billiards , bilyůrdz . s . A kind of '), ('110', "... e - klips'.s . An obscuration of Easily , e'ze - le . ad"), ('113', "... quarter . Ellipsis , el - lip'sis . s . Something left o"), ('226', '... quarter . Nape , nape . s . The joint of the neck behind'), ('274', '... Quarter , kwortår . s . A fourth part ; a region ; grant'), ('275', '... quarter . Quartermaster , kwortůr - ma - stur . s . One '), ('338', '... quarters . Tavern , tavůrn , s . A house where wine is s')]
+  seal         [('301', '... seal . Seachart , se - kårt.s . Map of the sea coasts . '), ('310', '... seal ; the seal man- ual of a king . ness . Silly , sill'), ('373', "... seal . Unsinning , un - sio'n , Ing . a . Impeccable . U")]
+  southward    [('318', '... Southward , south wård . ad . the south . Spar , spår . ')]
+  supply       [('7', '... supply ; perform the office of Adhere , ad - hère . v . '), ('97', '... supply with diet , eat by rule . Diet - drink , diet - d'), ('116', '... supply with mental excellencies . [ ance . Endurance , e'), ('143', '... supply , fit Furniture , fårně - ture . s . Moveables , '), ('153', "... supply . Gristle , gris'sl . s . A cartilage . Gristly ,"), ('218', '... supply . Taken in a wrong sense . Ministerial , min - ni'), ('270', "... supply . , Provided that , pro - vi'ded . Upon these ter"), ('281', "... supply , a new soldier . Rectangle , rek'tang - gl . s ."), ('332', '... Supply , såp - plř . s . Relief of want . What is writte'), ('380', '... supply with moisture . We . wee . pron . plural of I. We')]
+  usher        [('39', "... usher of the British parliament . Blacken , blak'kn . v "), ('188', '... usher into a place , or to a person . Introduction , in '), ('377', "... Usher , åsh'år . s . An under - teacher . Usher , åsh'år")]
+  westward     []
+  whichsoever  [('382', "... Whichsoever , whitsh - so'ev'ůr . pron . Whether one or ")]
+  willow       [('238', '... willow Ospray , osprå . s . The sea - eagle . Ossificati'), ('384', "... Willow , wirlo . s . A tree well known . Wily , wi'le . ")]
+  youthful     [('193', '... Youthful . [ ness fends wabsolves . [ cate . Juvenility '), ('389', '... Youthful , yooth tul . a . Young , vigorous . Youthfully')]
+
+## sweep1
+162 full-view candidates 1780-1815
+xZUPAAAAQAAJ 1780 John Entick | The New Spelling Dictionary | 492 pages book | {'morrow': [], 'theft': ['222', '279', '281', '319', '335', '354', '373', '374', '434'], 'younker': ['426']}
+iU9gAAAAcAAJ 1780 John NEWBERY (Publisher.) | A spelling dictionary of the English language, on a new plan | 356 pages book | {'morrow': ['PT254'], 'theft': ['PT250'], 'younker': []}
+_omG4cbLfRsC 1780 Thomas Sheridan | A General Dictionary of the English Language. One Main Objec | 492 pages book | {'morrow': ['PP75'], 'theft': ['PP137', 'PP153', 'PP157', 'PP201', 'PP248', 'PP307', 'PP331', 'PP374', 'PP376'], 'younker': ['PP485']}
+DfpdAAAAcAAJ 1780 Thomas Sheridan | A General Dictionary of the English Language One Main Object | 496 pages book | {'morrow': ['PP75'], 'theft': ['PP137', 'PP153', 'PP157', 'PP248', 'PP307', 'PP331', 'PP376', 'PP378'], 'younker': ['PP489']}
+mCY-AAAAcAAJ 1780 Thomas Sheridan | A General Dictionary of the English Language | 1066 pages book | {'morrow': ['PT555'], 'theft': ['PT359', 'PT360', 'PT633', 'PT637', 'PT681', 'PT787', 'PT811', 'PT813', 'PT856', 'PT858'], 'younker': ['PT967']}
+z8M9AAAAcAAJ 1781 John Entick | Der gegenwärtige Zustand des Brittischen Reichs | 712 pages book | {'morrow': [], 'theft': [], 'younker': []}
+7LFmAAAAcAAJ 1781 John Entick | The New Spelling Dictionary Teaching to Write and Pronounce  | 512 pages book | {'morrow': ['233'], 'theft': ['206', '267', '269', '308', '325', '345', '364', '365', '430'], 'younker': []}
+v-phAAAAcAAJ 1781 Cornelis Schrevel | Cornelii Schrevelii Lexicon manuale Græco-Latinum & Latino-G | 882 pages book | {'morrow': [], 'theft': ['RA31-PP8'], 'younker': []}
+sg4UOPtabjAC 1781  | A New Spelling Dictionary of the English Language In which t | 344 pages book | {'morrow': ['69', 'PT208'], 'theft': ['PT206'], 'younker': []}
+xOcIAAAAQAAJ 1781 Thomas Dyche | A New General English Dictionary To which is Prefixed a Comp | 924 pages book | {'morrow': ['PP101', 'PP678', 'PP836'], 'theft': ['PP252', 'PP403', 'PP640', 'PP683', 'PP699', 'PP703', 'PP731', 'PP754', 'PP829', 'PP857'], 'younker': []}
+VmJiAAAAcAAJ 1782 John ENTICK | The New Latin and English Dictionary. (A New Edition.). | 588 pages book | {'morrow': ['106'], 'theft': ['64', '200', '444', '481', '557'], 'younker': []}
+-BFhAAAAcAAJ 1782 John ENTICK | The New Spelling Dictionary, Teaching to Write and Pronounce | 558 pages book | {'morrow': [], 'theft': ['237', '306', '308', '374', '418', '419', '494', '517'], 'younker': []}
+GPSpyuCux2kC 1782 Nathan Bailey | An Universal Etymological English Dictionary ... | 960 pages book | {'morrow': ['PP53', 'PP561', 'PP673', 'PP869'], 'theft': ['PP95', 'PP139', 'PP343', 'PP453', 'PP492', 'PP635', 'PP812', 'PP815', 'PP861', 'PP923'], 'younker': []}
+EaMRAAAAIAAJ 1782 Nathan Bailey | An Universal Etymological English Dictionary; Comprehending  | 984 pages book | {'morrow': ['PP59', 'PP63', 'PT19', 'PT131', 'PT327'], 'theft': ['PP105', 'PP149', '128', '160', '160', 'PT93', 'PT273', 'PT319', 'PT381'], 'younker': ['PT410']}
+jVxgAAAAcAAJ 1783 John ENTICK | The New Spelling Dictionary ... To which is Prefixed, a Gram | 512 pages book | {'morrow': ['233'], 'theft': ['206', '267', '269', '308', '325', '345', '364', '365'], 'younker': []}
+2oQUAAAAQAAJ 1783 John Entick | A New English-Latin Dictionary Carefully Compiled from the M | 322 pages book | {'morrow': ['26', '155'], 'theft': ['268'], 'younker': ['306']}
+OmViAAAAcAAJ 1783 John ENTICK | A new English-Latin Dictionary ... A new edition, ... improv | 330 pages book | {'morrow': ['26', '155'], 'theft': ['268'], 'younker': ['306']}
+tWPSE_KC24AC 1783 Nathan Bailey | An Universal Etymological English Dictionary ... A New Editi | 934 pages book | {'morrow': ['PP52', 'PP656', 'PP707', 'PP844'], 'theft': ['PP92', 'PP135', 'PP364', 'PP400', 'PP445', 'PP482', 'PP621', 'PP792', 'PP836', 'PP898'], 'younker': ['PP925']}
+m5yyfXuqicwC 1783 Nathan Bailey | A compleat English dictionary, oder vollständiges englisch-d | 970 pages book | {'morrow': ['524', '527'], 'theft': ['810'], 'younker': []}
+SIn276OuAGIC 1783 Nathan Bailey | An Universal Etymological English Dictionary: Comprehending  | 936 pages book | {'morrow': ['PP52', 'PP656', 'PP707', 'PP844'], 'theft': ['PP92', 'PP135', 'PP335', 'PP364', 'PP400', 'PP445', 'PP789', 'PP792', 'PP836', 'PP898'], 'younker': ['PP925']}
+At4RAAAAIAAJ 1783 Nathan Bailey | Baileys English Dictionary | 982 pages book | {'morrow': ['524', '527'], 'theft': ['810'], 'younker': []}
+1V1iAAAAcAAJ 1784 John ENTICK | The New Spelling Dictionary ... Revised, Corrected, and Enla | 542 pages book | {'morrow': ['240'], 'theft': ['140', '212', '317', '335', '355', '375', '376', '443'], 'younker': []}
+4gRgAAAAcAAJ 1784 Thomas SHERIDAN (M.A., Te | A General dictionary of the English language, etc. A facsimi | 946 pages book | {'morrow': ['PP584'], 'theft': ['PP420', 'PP533', 'PP649', 'PP652', 'PP690', 'PP729', 'PP779', 'PP800', 'PP837', 'PP839'], 'younker': []}
+CMoNHJCKCKYC 1785 John ENTICK | The New Spelling Dictionary, Teaching to Write and Pronounce | 534 pages book | {'morrow': ['245'], 'theft': ['xxxv', '217', '280', '282', '323', '361', '381', '382', '475'], 'younker': []}
+QeW0bkgyrkwC 1785 Samuel Johnson | A Dictionary of the English Language ... The fifth edition | 1110 pages book | {'morrow': ['PP32', 'PP49', 'PP163', 'PP268', 'PT33', 'PT262', 'PT411', 'PT467', 'PT684', 'PT695'], 'theft': ['PP126', 'PP301', 'PP330', 'PP338', 'PT37', 'PT132', 'PT340', 'PT442', 'PT446', 'PT447'], 'younker': ['PP259', 'PT173', 'PT367', 'PT697']}
+RoJgAAAAcAAJ 1786 John Entick | Entickts New Spelling Dictionary, Teaching to Write and Pron | 540 pages book | {'morrow': [], 'theft': ['144', '161', '185', '217', '280', '282', '323', '361', '381', '382'], 'younker': []}
+NGViAAAAcAAJ 1786 John ENTICK | E.'s New Latin-English Dictionary ... A new edition ... augm | 554 pages book | {'morrow': ['100', '324'], 'theft': ['60', '292', '465', 'PT60'], 'younker': []}
+UV5iAAAAcAAJ 1786 John BENTICK | The Spelling and Explanatory Dictionary of the English Langu | 470 pages book | {'morrow': ['RA1-PP3'], 'theft': ['3', '2'], 'younker': []}
+UOYVAAAAYAAJ 1787 John Entick | New Latin-English Dictionary To which is Prefixed a New Engl | 328 pages book | {'morrow': ['158'], 'theft': ['273'], 'younker': ['312']}
+CHe_LPHI-zsC 1787 John Entick | Entick's New Latin-English Dictionary Containing All the Wor | 862 pages book | {'morrow': ['158', '100'], 'theft': ['273', '60', '80', '292', '465', '531'], 'younker': ['312']}
+enRw7piHamwC 1788 John Entick | Entick's New Spelling Dictionary Comprehending a Copious and | 402 pages book | {'morrow': [], 'theft': ['xvi', '118', '136', '159', '206', '207', '237', '265', '280', '332'], 'younker': []}
+Xw1gAAAAcAAJ 1788 John ENTICK | Entick's New spelling dictionary, teaching to write and pron | 536 pages book | {'morrow': ['245'], 'theft': ['xxxv', '144', '161', '217', '280', '282', '361', '381', '382'], 'younker': []}
+BWlbUYQ0oAQC 1788 John Entick | Entick's New Spelling Dictionary Comprehending a Copious and | 400 pages book | {'morrow': ['180'], 'theft': ['xvi', '106', '118', '136', '159', '206', '237', '265', '280', '332'], 'younker': []}
+0ZlgAAAAcAAJ 1788 Anne Fisher | An accurate new spelling dictionary, and expositor of the En | 420 pages book | {'morrow': [], 'theft': ['PP151', 'PP162', 'PP200', 'PP248', 'PP283', 'PP314', 'PP329', 'PP330'], 'younker': ['PP368']}
+smxJAAAAcAAJ 1788 William Perry | The Royal Standard English Dictionary In Which The Words are | 606 pages book | {'morrow': ['351'], 'theft': ['236', '318', '384', '395', '443', '463', '484', '504', '505'], 'younker': []}
+OpkRAAAAIAAJ 1788 William Perry | The Royal Standard English Dictionary | 520 pages book | {'morrow': [], 'theft': ['342', '405', '414', '456', '464', '474', '494', '513', '514'], 'younker': []}
+Lz44llL8xVAC 1788 William PERRY (of Edinbur | The Royal Standard English Dictionary ... To which is Prefix | 36 pages book | {'morrow': [], 'theft': [], 'younker': []}
+S1c8oLeDUvgC 1788 Nathan Bailey | A Compleat English Dictionary Oder Vollständiges Englisch-de | 972 pages book | {'morrow': ['524', '527'], 'theft': ['810'], 'younker': []}
+TntpAAAAcAAJ 1788 Nathan Bailey | A Compleat English Dictionary, Oder | 980 pages book | {'morrow': ['524', '527'], 'theft': ['657', '810'], 'younker': []}
+cvKMDapCTwgC 1788 Nathan Bailey | A compleat English dictionary oder vollständiges englisch-de | 964 pages book | {'morrow': ['524', '527'], 'theft': ['810'], 'younker': []}
+4eZJv3RRcNQC 1788 Nathan Bailey | A Compleat English Dictionary Oder Vollständiges Englisch-de | 620 pages book | {'morrow': ['162', '212', '293', '294', '483'], 'theft': ['110'], 'younker': ['235']}
+iXBpAAAAcAAJ 1789 Thomas Sheridan | A Complete Dictionary Of The English Language, Both with Reg | 648 pages book | {'morrow': ['PP400'], 'theft': ['PP288', 'PP363', 'PP437', 'PP446', 'PP449', 'PP475', 'PP542', 'PP552', 'PP578', 'PP579'], 'younker': ['PP643']}
+5qcyAQAAMAAJ 1789 Thomas Sheridan | A Complete Dictionary of the English Language, Both with Reg | 654 pages book | {'morrow': ['PP404'], 'theft': ['PP292', 'PP367', 'PP450', 'PP453', 'PP479', 'PP546', 'PP556', 'PP582', 'PP583'], 'younker': ['PP647']}
+BY1NAAAAcAAJ 1789 Thomas Sheridan | Acomplete Dictionary of the English Language, Both with Rega | 766 pages book | {'morrow': ['8'], 'theft': ['2', '5', '1', '10', '3', '1', '8', '10', '10', '11'], 'younker': ['RA46-PT17', 'RA44-PT6']}
+KFT82dOfiLsC 1789 Sheridan | A Complete Dictionary of the English Language Both with Rega | 652 pages book | {'morrow': ['PP404'], 'theft': ['PP292', 'PP441', 'PP450', 'PP453', 'PP479', 'PP546', 'PP556', 'PP582', 'PP583'], 'younker': ['PP647']}
+OyPIuALtClgC 1789 Thomas Sheridan | A Complete Dictionary of the English Language, Both with Reg | 694 pages book | {'morrow': ['ccclxxxviii'], 'theft': ['cclxxvi', 'cdxxv', 'cdxxxiv', 'cdxxxvii', 'cdlxiii', 'dxxx', 'dxl', 'dlxvi', 'dlxvii'], 'younker': ['dcxxxi']}
+PfxIAAAAcAAJ 1790 John Entick | New spelling dictionary ... | 536 pages book | {'morrow': ['245'], 'theft': ['144', '161', '185', '217', '280', '282', '361', '381', '382', '450'], 'younker': []}
+tkZpAAAAcAAJ 1790 Thomas SHERIDAN (M.A., Te | A Caution to gentlemen who use Sheridan's Dictionary. To whi | 32 pages book | {'morrow': [], 'theft': [], 'younker': []}
+5wNgAAAAcAAJ 1790 Thomas SHERIDAN (M.A., Te | A Complete Dictionary of the English Language, Both with Reg | 994 pages book | {'morrow': ['PP601'], 'theft': ['PP418', 'PP540', 'PP660', 'PP676', 'PP680', 'PP769', 'PP822', 'PP843', 'PP882', 'PP884'], 'younker': ['PP983', 'PP985']}
+pJoRAAAAIAAJ 1790 Thomas Sheridan | A Complete Dictionary of the English Language, Both with Reg | 520 pages book | {'morrow': ['PP83'], 'theft': ['PP19', 'PP143', 'PP163', 'PP168', 'PP215', 'PP327', 'PP353', 'PP397', 'PP399'], 'younker': ['PP511', 'PT265']}
+vEl4isg9Z_kC 1791 John Entick | Entick's New Spelling Dictionary Teaching to Write and Prono | 540 pages book | {'morrow': ['245'], 'theft': ['161', '185', '217', '280', '282', '323', '361', '381', '382', '450'], 'younker': []}
+64MTAAAAYAAJ 1791 Cornelis Schrevel | Cornelii Schrevelii lexicon manuale Graeco-Latinum & Latino- | 882 pages book | {'morrow': [], 'theft': [], 'younker': []}
+DaURAAAAIAAJ 1791 John Walker | A Critical Pronouncing Dictionary and Expositor of the Engli | 588 pages book | {'morrow': ['351'], 'theft': ['254', '255', '319', '383', '391', '393', '415', '439', '459', '481', '503', '504'], 'younker': ['36', 'PT13']}
+zo87PD4-pCUC 1791 James Barclay (Curate of  | Barclay's English Dictionary | 1004 pages book | {'morrow': ['PT22', 'PT267'], 'theft': ['188', 'PT88', 'PT91', 'PT169', 'PT209', 'PT225', 'PT261', 'PT262'], 'younker': []}
+QgNgAAAAcAAJ 1792 John ENTICK | Entick's New Latin-English Dictionary ... To which is prefix | 536 pages book | {'morrow': ['16', '98', '256', '290'], 'theft': ['171', '225', '232', '311', '271', '414'], 'younker': ['196']}
+b09gAAAAcAAJ 1792 John NEWBERY (Publisher.) | Newbery's new spelling dictionary of the English language .. | 330 pages book | {'morrow': ['10', '18'], 'theft': ['PT33'], 'younker': []}
+e09gAAAAcAAJ 1792 John NEWBERY (Publisher.) | A Spelling Dictionary of the English Language, etc. Edited b | 334 pages book | {'morrow': ['PT228'], 'theft': ['PT225'], 'younker': []}
+ZHr0KGEP1ZQC 1792 Nathan Bailey | A Compleat English Dictionary Oder Vollständiges Englisch-de | 968 pages book | {'morrow': ['524', '527'], 'theft': ['810'], 'younker': []}
+yeUIAAAAQAAJ 1792 James Barclay (curate of  | A complete and universal English dictionary | 1064 pages book | {'morrow': ['PP707', 'PP982'], 'theft': ['PP28', 'PP407', 'PP475', 'PP775', 'PP778', 'PP856', 'PP924', 'PP940', 'PP976', 'PP977'], 'younker': []}
+0F1iAAAAcAAJ 1794 Alexander BARRIE (Teacher | A Spelling and Pronouncing Dictionary of the English Languag | 334 pages book | {'morrow': ['293'], 'theft': ['35', '68', '269'], 'younker': []}
+eymbAkuW-sUC 1794 John WALKER (the Philolog | A critical pronouncing dictionary and expositor of the Engli | 1050 pages book | {'morrow': ['PT59'], 'theft': ['554', 'PT118', 'PT134', 'PT138', 'PT181', 'PT229', 'PT289', 'PT313', 'PT355', 'PT357'], 'younker': ['39', 'PT463']}
+bl9WAAAAYAAJ 1794 Thomas Sheridan | A Dictionary of the English Language Both with Regard to Sou | 476 pages book | {'morrow': ['PT118'], 'theft': ['PT30', 'PT95', 'PT146', 'PT181', 'PT209', 'PT224'], 'younker': ['PT269', 'PT271']}
+jH5ZAAAAcAAJ 1794 S. J. | A New Biographical Dictionary; Or, Pocket Compendium Contain | 442 pages book | {'morrow': ['PP384'], 'theft': ['PP176'], 'younker': []}
+9jl-ZtBn30EC 1794 Thomas Dyche | A New General English Dictionary Peculiarly Calculated for t | 794 pages book | {'morrow': ['PP425', 'PP455', 'PP695'], 'theft': ['PP203', 'PP210', 'PP264', 'PP362', 'PP492', 'PP509', 'PP512', 'PP544', 'PP655', 'PP689'], 'younker': []}
+SNwIalh3krMC 1795 John ENTICK | Entick's New spelling dictionary ... A new edition, revised, | 552 pages book | {'morrow': ['245'], 'theft': ['144', '161', '185', '217', '280', '282', '361', '381', '382', '449'], 'younker': []}
+EF5iAAAAcAAJ 1795 John ENTICK | E.'s New Spelling and English Dictionary ... To which is pre | 538 pages book | {'morrow': ['xii', 'xiii', '245'], 'theft': ['xxxiv', '127', '217', '280', '282', '323', '362', '382', '383', '451'], 'younker': []}
+3ltWAAAAYAAJ 1795 William Perry | The Royal Standard English Dictionary In which the Words are | 564 pages book | {'morrow': ['275'], 'theft': ['245', '304', '312', '313', '371', '371', '371', '390', '408', '409'], 'younker': []}
+_CcLJIP8xjQC 1795 Samuel Johnson | Johnson's Dictionary of the English Language in Miniature To | 280 pages book | {'morrow': ['143'], 'theft': ['93', '126', '159', '163', '164', '187', '207', '218'], 'younker': []}
+0FZgAAAAcAAJ 1795 Samuel Johnson | Johnson's Dictionary of the English Language in miniature. T | 276 pages book | {'morrow': [], 'theft': ['93', '126', '159', '163', '164', '187', '207', '218'], 'younker': []}
+00B5ybO-bFQC 1795 Samuel Johnson | JOHNSON's DICTIONARY OF THE English Language IN MINIATURE. T | 284 pages book | {'morrow': [], 'theft': ['93', '126', '159', '163', '164', '187', '207', '218'], 'younker': []}
+cNpeAAAAcAAJ 1795 G.W. Johnson | A New and General Biographical Dictionary Containing an ...  | 434 pages book | {'morrow': [], 'theft': ['123'], 'younker': []}
+VVTbGRYHwx4C 1795 William PERRY (of Edinbur | The Standard French and English Pronouncing Dictionary ... P | 364 pages book | {'morrow': ['19', '103', '119', '198'], 'theft': ['164', '305', '349'], 'younker': []}
+xmliAAAAcAAJ 1796 John ENTICK | Tyonis Thesaurus; or, Entick's new Latin-English Dictionary  | 612 pages book | {'morrow': ['113', '366'], 'theft': ['69', '214', '331', '517', '586'], 'younker': []}
+azlh2lf18B0C 1796 John Entick | Entick's New Spelling Dictionary ... To which is prefixed, a | 550 pages book | {'morrow': ['xii', 'xiii'], 'theft': ['xxxv', '127', '144', '217', '280', '282', '323', '362', '382', '383'], 'younker': []}
+LcEUAAAAYAAJ 1796 Cornelis Schrevel | Cornelii Schrevelii Lexicon manuale græco-latinum et latino- | 916 pages book | {'morrow': [], 'theft': [], 'younker': []}
+q67yRS4GZ6AC 1796 Samuel Johnson | Johnson's Dictionary of the English Language in Miniature. T | 294 pages book | {'morrow': [], 'theft': ['93', '126', '159', '163', '164', '187', '207', '218'], 'younker': []}
+5KJkAAAAcAAJ 1796 Thomas Sheridan (M. A. Te | A Complete Dictionary of the English Language, ... To which  | 914 pages book | {'morrow': ['PT488'], 'theft': ['PT255', 'PT319', 'PT436', 'PT540', 'PT554', 'PT635', 'PT686', 'PT706', 'PT742', 'PT744'], 'younker': ['PT837']}
+QXRZAAAAcAAJ 1796 Stephen JONES (Freemason. | A new Biographical Dictionary ... Second edition, corrected | 448 pages book | {'morrow': ['PP383', 'PP404'], 'theft': ['PP170'], 'younker': []}
+yL2CFqumenkC 1796 Nathan Bailey | NATHAN BAILEY DICTIONARY ENGLISH-GERMAN AND GERMAN-ENGLISH E | 968 pages book | {'morrow': ['483', '630', '831'], 'theft': ['821'], 'younker': ['951']}
+U2P5kqegYGcC 1796 Bailey | Dictionary English-German and German-English oder, Englisch- | 968 pages book | {'morrow': ['483', '630', '831'], 'theft': ['821'], 'younker': ['951']}
+pEuwedlLEpEC 1797 Stephen Jones | Genuine Edition. Sheridan Improved A General Pronouncing and | 380 pages book | {'morrow': ['PP220'], 'theft': ['PP158', 'PP200', 'PP243', 'PP245', 'PP273', 'PP297', 'PP309', 'PP349'], 'younker': ['PP343']}
+z-YIAAAAQAAJ 1797 Thomas Sheridan | A complete dictionary of the English language | 610 pages book | {'morrow': ['PP149'], 'theft': ['PP216', 'PP234', 'PP238', 'PP287', 'PP339', 'PP404', 'PP413', 'PP431', 'PP480'], 'younker': ['PP605', 'PT191']}
+vIJaAAAAcAAJ 1797 Thomas Browne (LL.D.) | A New Classical Dictionary, etc | 486 pages book | {'morrow': ['22', '50', '95', '139'], 'theft': ['87', '109', '186', '242', '306', '411'], 'younker': []}
+3X89BBUPdL4C 1797 Bailey | Dictionary English-german and German-english | 610 pages book | {'morrow': ['12', '85', '184', '228', '328', '433', '482'], 'theft': ['117', '118', '545'], 'younker': []}
+dWBJAAAAcAAJ 1797 Nathan Bailey | Dictionary English-German And German-English Oder Englisch-D | 600 pages book | {'morrow': ['12', '85', '184', '228', '328', '433', '482'], 'theft': ['117', '118', '488', '545'], 'younker': []}
+eFjSOEX-Q78C 1797 Bailey | Dictionary English-German and German-English, Oder, Englisch | 608 pages book | {'morrow': ['12', '85', '184', '228', '328', '433', '482'], 'theft': ['117', '118', '488', '545'], 'younker': []}
+LTRMbkQ7p-MC 1798 John ENTICK | Entick's New spelling dictionary, etc | 536 pages book | {'morrow': ['xii', 'xiii', '245'], 'theft': ['xxxv', '127', '144', '217', '280', '282', '362', '382', '383', '451'], 'younker': []}
+n4HKH39XlpYC 1798 John Walker | A key to the classical pronunciation of Greek and Latin prop | 210 pages book | {'morrow': [], 'theft': [], 'younker': []}
+g8IDAAAAQAAJ 1798 Samuel Johnson | Johnson's Dictionary of the English language, in miniature [ | 308 pages book | {'morrow': [], 'theft': ['93', '126', '157', '159', '163', '164', '187', '207', '218'], 'younker': []}
+9ppgAAAAcAAJ 1798 Samuel Johnson | Johnson's Dictionary of the English language in miniature. T | 286 pages book | {'morrow': ['143'], 'theft': ['93', '126', '159', '163', '164', '187', '207', '218'], 'younker': []}
+tiagc1ykVPAC 1798 Samuel Johnson | Johnson's Dictionary of the English language, in miniature.  | 302 pages book | {'morrow': ['143'], 'theft': ['93', '126', '159', '163', '164', '187', '207', '218'], 'younker': []}
+sDVAAAAAYAAJ 1798 Stephen Jones | Sheridan Improved A General Pronouncing and Explanatory Dict | 916 pages book | {'morrow': ['52'], 'theft': ['PP352', 'PP465', '68', '68', '68', '99', 'PT59', 'PT96', 'PT98', 'PT199'], 'younker': ['PT193']}
+9fYyAQAAMAAJ 1799 Samuel Johnson | A Dictionary of the English Language In which the Words are  | 1042 pages book | {'morrow': ['PP27', 'PP44', 'PP149', 'PP246', 'PP617', 'PP731', 'PP759', 'PP812', 'PT61', 'PT485'], 'theft': ['PP304', 'PP312', 'PP406', 'PP496', 'PP691', 'PP692', 'PP789', 'PP793', 'PP825'], 'younker': ['PP238', 'PP533', 'PP717', 'PT63', 'PT487']}
+88tvfT_8Sr8C 1799 James Barclay | A Complete and Universal English Dictionary Including Not On | 1040 pages book | {'morrow': ['PP709'], 'theft': ['PP30', 'PP407', 'PP776', 'PP779', 'PP857', 'PP901', 'PP918', 'PP954', 'PP955'], 'younker': []}
+a6MRAAAAIAAJ 1799 James Barclay | A Complete and Universal English Dictionary Including ... I. | 1050 pages book | {'morrow': ['PP713'], 'theft': ['PP413', 'PP482', 'PP780', 'PP783', 'PP863', 'PP907', 'PP924', 'PP926', 'PP960', 'PP961'], 'younker': []}
+209gAAAAcAAJ 1800 John ENTICK | Entick's New Spelling Dictionary ... To which is prefixed a  | 540 pages book | {'morrow': ['xii', 'xiii', '245'], 'theft': ['xxxv', '127', '144', '217', '323', '341', '362', '382', '383', '451'], 'younker': []}
+wYwjE4H9Q4wC 1800 John Entick | Tyronis Thesaurus Or Entick's New Latin-English Dictionary D | 578 pages book | {'morrow': ['PP117', 'PP352'], 'theft': ['PP213', 'PP317', 'PT28', 'PT96'], 'younker': []}
+MyZiAAAAcAAJ 1800 John Entick | An Historical And Geographical Description Of The British Em | 536 pages book | {'morrow': [], 'theft': ['369'], 'younker': []}
+0SRnAAAAcAAJ 1800 Thomas Sheridan | Sheridans pronouncing and spelling dictionary in which are a | 692 pages book | {'morrow': ['422'], 'theft': ['259', '288', '377', '472', '482', '485', '540', '591', '616', '617'], 'younker': ['663']}
+2KURAAAAIAAJ 1800 William Perry | The Royal Standard English Dictionary In which the Words are | 1350 pages book | {'morrow': [], 'theft': ['318', '384', '395', '484', '505', '237', '274', '143', '271', '320'], 'younker': []}
+ZbA8U6a-xNEC 1800 Samuel Johnson | Johnson's Dictionary of the English language, in miniature.  | 300 pages book | {'morrow': [], 'theft': ['93', '126', '159', '163', '164', '187', '207', '218'], 'younker': []}
+isIDAAAAQAAJ 1801 Samuel Johnson | Johnson's Dictionary of the English language, in miniature [ | 296 pages book | {'morrow': [], 'theft': ['94', '127', '161', '165', '166', '189', '209', '220'], 'younker': []}
+z2BJAAAAcAAJ 1801 Nathan Bailey | Nathan Bailey's Dictionary English-German and German-English | 1008 pages book | {'morrow': ['650', '856'], 'theft': ['846'], 'younker': ['981']}
+8F9JAAAAcAAJ 1801 Nathan Bailey | Nathan Bailey's Dictionary English-German and German-English | 688 pages book | {'morrow': ['199', '249', '367', '485', '521', '539'], 'theft': ['123', '124', '546', '610'], 'younker': []}
+UlhFAAAAYAAJ 1801 Nathan Bailey | Dictionary, English-German and German-English ... | 998 pages book | {'morrow': ['650', '856'], 'theft': ['846'], 'younker': ['981']}
+LJlkQOwqiskC 1801 Nathan Bailey | Nathan Bailey's Dictionary English-German and German-English | 1008 pages book | {'morrow': ['650', '856'], 'theft': ['846'], 'younker': ['981']}
+SShGVGaCR-AC 1801 Bailey | Nathan Bailey's Dictionary Englisch-Deutsches und Deutsch-En | 686 pages book | {'morrow': ['199', '249', '367', '485', '521', '539'], 'theft': ['123', '124', '546', '610'], 'younker': []}
+q5tWAAAAcAAJ 1802 John WALKER (the Philolog | A critical pronouncing dictionary and expositor of the Engli | 634 pages book | {'morrow': ['RA19-PT1', '72'], 'theft': ['169', '169', '69', '78', '80', '128', '160', '173', '166', '167'], 'younker': ['51', '164']}
+6ZUwAAAAYAAJ 1802 Stephen Jones | A New Biographical Dictionary: Containing a Brief Account of | 442 pages book | {'morrow': ['PP368'], 'theft': ['PP145'], 'younker': []}
+TV5iAAAAcAAJ 1802 George FULTON (and KNIGHT | A general pronouncing and explanatory Dictionary of the Engl | 460 pages book | {'morrow': ['230'], 'theft': ['153', '205', '259', '261', '297', '327', '342'], 'younker': ['383']}
+EHwepVqguDAC 1803 Jones | Sheridan Improved A General Pronouncing and Explanatory Dict | 516 pages book | {'morrow': ['cclxxxviii'], 'theft': ['cxci', 'ccvi', 'cclxi', 'cccxx', 'cccxxii', '40', '57', '110'], 'younker': ['102']}
+z4vZaS_yIhoC 1804 John Entick | Tyronis thesaurus: or Entick's new Latin-English dictionary  | 584 pages book | {'morrow': ['PP117'], 'theft': ['PP215', 'PP504', 'PP572'], 'younker': []}
+FFtWAAAAYAAJ 1804 William Perry | The Royal Standard English Dictionary In which the Words are | 654 pages book | {'morrow': ['291'], 'theft': ['260', '321', '330', '372', '390', '410', '429', '430'], 'younker': []}
+UUo1uw-_JZcC 1804 William PERRY (of Edinbur | The Royal Standard English Dictionary ... The Tenth Edition, | 458 pages book | {'morrow': [], 'theft': ['282', '338', '348', '388', '404', '423', '441'], 'younker': []}
+NBdgAAAAcAAJ 1804 John WALKER (the Philolog | A key to the classical pronunciation of Greek and Latin prop | 330 pages book | {'morrow': [], 'theft': ['51'], 'younker': []}
+rkJAAAAAYAAJ 1804 Samuel Johnson | Johnson's Dictionary of the English Language, in Miniature T | 290 pages book | {'morrow': [], 'theft': ['99', '132', '165', '169', '170', '193', '213', '224'], 'younker': []}
+bXUoAAAAYAAJ 1805 Cornelis Schrevel | Lexicon manuale Graeco-Latinum et Latino-Graecum | 748 pages book | {'morrow': [], 'theft': [], 'younker': []}
+R09gAAAAcAAJ 1805 John NEWBERY (Publisher.) | Newbery's Spelling Dictionary of the English Language, on a  | 342 pages book | {'morrow': ['RA25-PP2', 'RA25-PP3'], 'theft': ['RA24-PP1', '5'], 'younker': []}
+g3gKAAAAIAAJ 1805 William Perry | The Synonymous, Etymological, and Pronouncing English Dictio | 804 pages book | {'morrow': ['PP467', 'PP708'], 'theft': ['PP300', 'PP421', 'PP525', 'PP594', 'PP642', 'PP646', 'PP657', 'PP665', 'PP698'], 'younker': []}
+JSdoAAAAcAAJ 1805 Samuel Johnson | The Synonymous, Etymological, and Pronouncing English Dictio | 784 pages book | {'morrow': ['18', '102'], 'theft': ['60', '78', '83', '18', '18', '18', '18', '102', '102'], 'younker': []}
+rFRlAAAAcAAJ 1805 William Perry | The Synonymous, Etymological and Pronouncing. English Dictio | 780 pages book | {'morrow': ['PP457'], 'theft': ['PP282', 'PP290', 'PP313', 'PP504', 'PP515', 'PP584', 'PP630', 'PP641', 'PP649'], 'younker': []}
+dvYNAQAAMAAJ 1805 Stephen Jones | A General Pronouncing and Explanatory Dictionary of the Engl | 508 pages book | {'morrow': ['PP286'], 'theft': ['PP189', 'PP202', 'PP261', 'PP318', 'PP320', 'PP356', 'PP388', 'PP405', 'PP406', 'PP458'], 'younker': []}
+2HGB54puAmkC 1806 John WALKER (the Philolog | A Rhyming Dictionary: answering, at the same time, the purpo | 358 pages book | {'morrow': [], 'theft': ['171', '237', '274'], 'younker': []}
+bIw6AAAAIAAJ 1806 John Walker | A Rhyming Dictionary Answering, at the Same Time, the Purpos | 384 pages book | {'morrow': [], 'theft': ['171', '237', '274'], 'younker': []}
+OY8VAAAAYAAJ 1806 William Perry | The Royal Standard English Dictionary In which the Words are | 524 pages book | {'morrow': [], 'theft': ['260', '321', '330', '372', '390', '410', '429', '430'], 'younker': []}
+MGAJAAAAQAAJ 1806 John Walker | A Critical Pronouncing Dictionary, and Expositor of the Engl | 640 pages book | {'morrow': ['127', '171'], 'theft': ['71', '163', '165', '165', '163', '167', '167', '147', '159', '161'], 'younker': ['59', '79', '163']}
+V8U9AAAAYAAJ 1806 Samuel Johnson | Dictionary of the English Language, in Miniature To which ar | 288 pages book | {'morrow': [], 'theft': ['99', '132', '165', '169', '170', '193', '213', '224'], 'younker': []}
+eOFTkf4DkWYC 1806 Samuel Johnson | A Dictionary of the English Language ... To which is prefixe | 1052 pages book | {'morrow': ['PP27', 'PP42', 'PP149', 'PP246', 'PP411', 'PT26', 'PT196', 'PT338', 'PT393', 'PT613'], 'theft': ['PP306', 'PP316', 'PP414', 'PT75', 'PT270', 'PT271', 'PT370', 'PT374', 'PT405'], 'younker': ['PP238', 'PT112', 'PT296', 'PT615']}
+YDfJ5_kejusC 1806 John Walker | A rhyming dictionary | 358 pages book | {'morrow': [], 'theft': ['143', '261', '271', '284', '320'], 'younker': []}
+EVFAAAAAYAAJ 1806 Samuel Johnson | Johnsons̓ Dictionary of the English Language, in Miniature T | 300 pages book | {'morrow': ['149'], 'theft': ['99', '132', '165', '169', '170', '193', '213', '224'], 'younker': []}
+-ounMLoVgd4C 1807 William Scott (Teacher of | A New Spelling, Pronouncing, and Explanatory Dictionary of t | 514 pages book | {'morrow': ['xl', 'lv', '209'], 'theft': ['183', '241', '243', '283', '319', '338', '339', '409'], 'younker': []}
+VqURAAAAIAAJ 1807 John Walker | A Critical Pronouncing Dictionary, and Expositor of the Engl | 1108 pages book | {'morrow': ['546', '614'], 'theft': ['352', '353', '481', '625', '629', '721', '782', '806', '850', '852'], 'younker': ['lxxii']}
+9C8ishR1lx8C 1807 Thomas Browne (LL.D.) | A classical dictionary, for the use of schools ... The secon | 534 pages book | {'morrow': ['24', '55', '103', '153', '237'], 'theft': ['95', '119', '206', '270', '345'], 'younker': []}
+G_xIAAAAcAAJ 1807 William Enfield | A general pronouncing dictionary | 344 pages book | {'morrow': ['179'], 'theft': ['158', '201', '207', '209', '242', '269', '283', '284'], 'younker': ['318']}
+JwC-GInMrW4C 1808 Samuel Johnson | Johnson's Dictionary of the English Language, in Miniature.  | 302 pages book | {'morrow': ['143', '258'], 'theft': ['93', '126', '159', '163', '164', '187', '207', '218'], 'younker': []}
+UPsTAAAAYAAJ 1809 John Walker | A Critical Pronouncing Dictionary And Expositor of the Engli | 712 pages book | {'morrow': ['343', '385'], 'theft': ['302', '382', '392', '394', '421', '451', '489', '503', '530', '532'], 'younker': ['14', '600']}
+OTp0T8jquBcC 1809 Samuel Johnson | Ward's Diamond Edition of Johnson's Dictionary in Miniature  | 266 pages book | {'morrow': ['143'], 'theft': ['87', '94', '128', '159', '162', '163', '184', '203', '213', '214'], 'younker': []}
+tSRL29OIZBkC 1809 Sally Johnson | Johnson's Dictionary on the English Language in Miniature To | 296 pages book | {'morrow': [], 'theft': ['93', '126', '159', '163', '164', '187', '207', '218'], 'younker': []}
+ZFlgAAAAcAAJ 1809 Samuel Johnson | Johnson's Dictionary of the English Language in miniature .. | 294 pages book | {'morrow': ['143'], 'theft': ['93', '126', '159', '163', '164', '187', '207', '218'], 'younker': []}
+AktgAAAAcAAJ 1810 William SCOTT (Teacher of | A new spelling, pronouncing, and explanatory dictionary of t | 498 pages book | {'morrow': ['34', '48', '263'], 'theft': ['295', '297', '337', '373', '392', '393', '461'], 'younker': []}
+w-IsAAAAYAAJ 1810 Nicolas Gouin Dufief | A New Universal and Pronouncing Dictionary of the French and | 904 pages book | {'morrow': ['1', '51', '107', '128', '182', '233', '255', '454', '497', '698'], 'theft': ['461', '608', '728', '849'], 'younker': []}
+vJwRAAAAIAAJ 1810 John Walker | A Critical Pronouncing Dictionary, and Expositor of the Engl | 644 pages book | {'morrow': ['PP349'], 'theft': ['PP233', 'PP311', 'PP312', 'PP384', 'PP393', 'PP395', 'PP446', 'PP464', 'PP516', 'PP553'], 'younker': ['PP634']}
+Ft4VAAAAYAAJ 1810 John Walker | A Critical Pronouncing Dictionary and Expositor of the Engli | 422 pages book | {'morrow': ['222'], 'theft': ['144', '253', '255', '324', '340', '341'], 'younker': []}
+hzdWAAAAYAAJ 1810 Samuel Johnson | Johnson's Dictionary of the English Language | 276 pages book | {'morrow': [], 'theft': ['99', '132', '165', '169', '170', '193', '213', '224'], 'younker': []}
+V_fkuRwhJzAC 1810 Browne | The Union Dictionary Containing All that is Useful in the Di | 542 pages book | {'morrow': ['PT297'], 'theft': ['PT181', 'PT196', 'PT264', 'PT329', 'PT337', 'PT419', 'PT431', 'PT453', 'PT454'], 'younker': ['PT513']}
+1PNIAAAAcAAJ 1810 Nathan Bailey | Dictionary English-German and German-English Englisch-Deutsc | 1032 pages book | {'morrow': ['18', '675', '888'], 'theft': ['877'], 'younker': ['1016']}
+YfVIAAAAcAAJ 1810 Nathan Bailey | Dictionary English-German and German-English Deutsch-Englisc | 790 pages book | {'morrow': ['224', '280', '417', '558', '599', '621'], 'theft': ['37', '140', '141', '628', '701'], 'younker': []}
+16URAAAAIAAJ 1812 John Entick | Entick's New Spelling Dictionary, Teaching to Write and Pron | 400 pages book | {'morrow': ['24'], 'theft': ['133', '146', '189', '239', '241', '272', '301', '315', '316', '390'], 'younker': []}
+FZ4syDmUph8C 1812 John Entick | Entick's New Spelling Dictionary In which the Parts of Speec | 504 pages book | {'morrow': ['10', '11', '260'], 'theft': ['25', '147', '233', '293', '294', '334', '351', '370', '390', '452'], 'younker': []}
+-mRZ7zhgiQkC 1812 Stephen Jones | Sheridan Improved A General Pronouncing and Explanatory Dict | 516 pages book | {'morrow': ['PP298'], 'theft': ['PP201', 'PP216', 'PP271', 'PP330', 'PP332', 'PP402', 'PP419', 'PP470'], 'younker': ['PP462']}
+KKQRAAAAIAAJ 1812 Samuel Johnson | Johnson's Dictionary of the English Language, in Miniature T | 304 pages book | {'morrow': [], 'theft': ['127', '161', '165', '166', '189', '209', '220'], 'younker': []}
+kkYQAAAAYAAJ 1812 Thomas Browne (LL.D.) | A Dictionary of Ancient Classical and Scriptural Proper Name | 500 pages book | {'morrow': ['25', '55', '103', '151', '238'], 'theft': ['95', '118', '203', '269', '342', '454'], 'younker': []}
+o29JAAAAcAAJ 1812 Stephen Jones | A general Pronouncing and Explanatory Dictionary of the Engl | 518 pages book | {'morrow': ['253'], 'theft': ['44', '169', '226', '286', '288', '327', '360', '378', '433'], 'younker': ['426']}
+MD8TSPwhepUC 1812 Stephen Jones | A General Pronouncing and Explanatory Dictionary of the Engl | 518 pages book | {'morrow': ['253'], 'theft': ['44', '169', '226', '286', '288', '327', '360', '378', 'PT6'], 'younker': ['426']}
+XodHAQAAMAAJ 1812 James Barclay | A Complete and Universal Dictionary of the English Language, | 1020 pages book | {'morrow': ['220', '612', '705', '854'], 'theft': ['9', '373', '492', '681', '683', '754', '798', '813', '848', '849'], 'younker': ['911']}
+5-NhdcFmyNwC 1813 Jones | Sheridan Improved A General Pronouncing and Explanatory Dict | 500 pages book | {'morrow': ['248'], 'theft': ['PP41', '165', '221', '281', '282', '321', '354', '371', 'PT5'], 'younker': ['418']}
+wuglVSZyJwYC 1813 Thomas Sheridan | Sheridan Improved. A General Pronouncing and Explanatory Dic | 564 pages book | {'morrow': ['248'], 'theft': ['11', '165', '221', '281', '282', '321', '354', '371', '424'], 'younker': ['418']}
+uYpHAQAAMAAJ 1813 Richard Smith Coxe | A New Critical Pronouncing Dictionary of the English Languag | 1052 pages book | {'morrow': ['PT105', 'PT406', 'PT433', 'PT459', 'PT507'], 'theft': ['210', '230', 'PT65', 'PT146', 'PT156', 'PT159', 'PT274', 'PT303', 'PT305', 'PT565'], 'younker': ['38', 'PT375', 'PT170']}
+Pw9BAQAAMAAJ 1813 James Barclay | The Bungay Edition of Barclay's Dictionary Greatly Improved  | 1044 pages book | {'morrow': ['220', '612', '705', '854'], 'theft': ['PP23', '373', '373', '492', '681', '683', '754', '798', '813', '848', '849'], 'younker': ['911']}
+4MQDAAAAQAAJ 1814 Spelling and pronouncing  | A spelling & pronouncing dictionary | 360 pages book | {'morrow': ['80'], 'theft': ['20', '22'], 'younker': ['127']}
+w6kBAAAAYAAJ 1814 George Fulton | A General Pronouncing and Explanatory Dictionary of the Engl | 456 pages book | {'morrow': ['219', '335'], 'theft': ['143', '195', '249', '250', '286', '316', '331'], 'younker': ['373']}
+lupSNx0ZlvEC 1815 James Barclay (Curate of  | Barclay's English Dictionary. With which is incorporated a c | 1114 pages book | {'morrow': ['RA4-PP46', 'RA4-PP145', 'RA4-PP298'], 'theft': ['RA1-PP21', 'RA3-PP20', 'RA4-PP119', 'RA4-PP121', 'RA4-PP194', 'RA4-PP240', 'RA4-PP257', 'RA4-PP292', 'RA4-PP293'], 'younker': []}
+
+## ia1
+== bim_eighteenth-century_an-accurate-new-spelling_fisher-a-anne_1788 423 pages
+  Alphabet   None
+  Cipher     (84, '?')
+  Cypher     None
+  Day        None
+  Early      None
+  Head       (177, '2')
+  Morrow     None
+  Occupy     None
+  Provision  None
+  Quarter    None
+  Sea        (295, '8')
+  Southward  (311, '?')
+  Supply     (325, '3')
+  Theft      (332, '4')
+  Use        None
+  Westward   None
+  Which      (411, '8')
+  Will       (367, '9')
+  Younker    None
+  Youth      (371, '?')
+== uniondictionaryc00brow 542 pages
+  Alphabet   (43, '?')
+  Cipher     (105, '?')
+  Cypher     None
+  Day        (108, '?')
+  Early      (175, '?')
+  Head       (238, '?')
+  Morrow     (318, '?')
+  Occupy     (333, '?')
+  Provision  (379, '?')
+  Quarter    (384, '?')
+  Sea        (419, '?')
+  Southward  (442, '?')
+  Supply     (231, '?')
+  Theft      (472, '?')
+  Use        (519, '?')
+  Westward   (525, '?')
+  Which      (320, '?')
+  Will       (209, '?')
+  Younker    (534, '?')
+  Youth      (534, '?')
+== 10797901bsb 607 pages
+  Alphabet   None
+  Cipher     None
+  Cypher     None
+  Day        (188, '?')
+  Early      None
+  Head       (279, '274')
+  Morrow     None
+  Occupy     None
+  Provision  None
+  Quarter    None
+  Sea        (365, '369')
+  Southward  None
+  Supply     None
+  Theft      None
+  Use        None
+  Westward   None
+  Which      (557, '552')
+  Will       (559, '554')
+  Younker    None
+  Youth      (564, '?')
+== compendiousdictionaryoftheenglishlanguage1806 432 pages
+  Alphabet   None
+  Cipher     (74, '51')
+  Cypher     None
+  Day        (99, '76')
+  Early      None
+  Head       (163, '140')
+  Morrow     None
+  Occupy     None
+  Provision  (263, '240')
+  Quarter    (267, '2')
+  Sea        (292, '269')
+  Southward  None
+  Supply     (323, '300')
+  Theft      (331, '308')
+  Use        None
+  Westward   None
+  Which      (13, '?')
+  Will       (374, '351')
+  Younker    None
+  Youth      (378, '355')
+== 10582071bsb 345 pages
+  Alphabet   (29, '?')
+  Cipher     (67, '?')
+  Cypher     None
+  Day        (91, '?')
+  Early      (109, '?')
+  Head       (148, '?')
+  Morrow     (198, '179')
+  Occupy     None
+  Provision  (242, '?')
+  Quarter    None
+  Sea        (270, '?')
+  Southward  (283, '?')
+  Supply     (296, '277')
+  Theft      None
+  Use        None
+  Westward   (332, '313')
+  Which      (9, '?')
+  Will       None
+  Younker    None
+  Youth      None
+== 10797864bsb 519 pages
+  Alphabet   None
+  Cipher     (125, '76')
+  Cypher     None
+  Day        (41, '40')
+  Early      (97, '?')
+  Head       (234, '?')
+  Morrow     (302, '?')
+  Occupy     (314, '?')
+  Provision  (357, '308')
+  Quarter    (358, '?')
+  Sea        (44, '?')
+  Southward  (403, '354')
+  Supply     (287, '238')
+  Theft      (427, '378')
+  Use        (464, '?')
+  Westward   None
+  Which      (45, '?')
+  Will       (78, '?')
+  Younker    (475, '426')
+  Youth      (475, '426')
+
+## ia2
+== bim_eighteenth-century_a-pocket-dictionary-or-_1765 455 pages
+  Alphabet   None
+  Cipher     None
+  Day        None
+  Head       None
+  Morrow     None
+  Occupy     None
+  Provision  None
+  Sea        (68, '4')
+  Theft      None
+  Use        None
+  Westward   None
+  Younker    None
+  Youth      None
+== bub_gb_-m7fO7iEVx8C 456 pages
+  Alphabet   None
+  Cipher     None
+  Day        None
+  Head       None
+  Morrow     None
+  Occupy     None
+  Provision  None
+  Sea        (424, '?')
+  Theft      None
+  Use        None
+  Westward   None
+  Younker    None
+  Youth      None
+== bim_eighteenth-century_the-complete-english-spe_carter-john-teacher_1764 418 pages
+  Alphabet   None
+  Cipher     None
+  Day        None
+  Head       None
+  Morrow     None
+  Occupy     None
+  Provision  None
+  Sea        None
+  Theft      None
+  Use        None
+  Westward   None
+  Younker    None
+  Youth      None
+== 11280377bsb 513 pages
+  Alphabet   (43, '12')
+  Cipher     (89, '?')
+  Day        (121, '?')
+  Head       (199, '2')
+  Morrow     None
+  Occupy     None
+  Provision  None
+  Sea        (248, '?')
+  Theft      None
+  Use        None
+  Westward   None
+  Younker    None
+  Youth      None
+== bim_eighteenth-century_the-new-spelling-diction_entick-john_1782 548 pages
+  Alphabet   (33, '14')
+  Cipher     (86, '?')
+  Day        (122, '4')
+  Head       (212, '?')
+  Morrow     (287, '268')
+  Occupy     None
+  Provision  None
+  Sea        None
+  Theft      (441, '418')
+  Use        None
+  Westward   None
+  Younker    None
+  Youth      (505, '482')
+== apronouncingand00johngoog 349 pages
+  Alphabet   None
+  Cipher     None
+  Day        None
+  Head       None
+  Morrow     None
+  Occupy     None
+  Provision  None
+  Sea        None
+  Theft      None
+  Use        None
+  Westward   None
+  Younker    None
+  Youth      None
+== bim_eighteenth-century_the-royal-spelling-dicti_green-thomas_1765 341 pages
+  Alphabet   None
+  Cipher     None
+  Day        None
+  Head       None
+  Morrow     None
+  Occupy     None
+  Provision  None
+  Sea        None
+  Theft      None
+  Use        None
+  Westward   None
+  Younker    None
+  Youth      None
+
+## ia3
+== bub_gb_AenhsoA1PPIC 302 scans
+  Alphabet   None
+  Cipher     None
+  Day        (86, 'DEA | Parn, or Dearn, t».a. to mend holes.')
+  Head       (128, "HAV | Harm'ftH^ a. hurtfiii, mifctiiemit.")
+  Morrow     (164, "MOO | Mo'mentary, a. lifting a moment.")
+  Occupy     None
+  Period     None
+  Sea        None
+  South      (217, "^u'uon^ X. a reparation 9 expljoatioa* | Folutive«.a. Itxath")
+  Theft      (230, "THB | Tetns't!e,i. a tanxt of fnar Itoefl.")
+  Use        (248, '1 | vn')
+  Westward   None
+  Which      (251, "WES | lUTf ep'er, a mourner J a white border of")
+  Will       (252, 'I | WHf')
+  You        (255, 'Y. | one deck, richly adorned, aad.coa*')
+== bim_eighteenth-century_a-dictionary-of-the-engl_1794 299 scans
+  Alphabet   (39, 'ALL | Alias, ad. otherwiſe ;—s. in law, a writ.')
+  Cipher     (69, 'FR | 1 — 22280 EP')
+  Day        None
+  Head       (128, 'HAT | * ö —')
+  Morrow     None
+  Occupy     None
+  Period     None
+  Sea        None
+  South      (219, 'SOU | £59, g. bread ſteeped in liquor, &c,')
+  Theft      (231, "1 LR | Ten'antleſs, a. unuccupicd, uninhabited.")
+  Use        None
+  Westward   None
+  Which      (253, "WH E | wellada'y, interj. denoting grief, &c.")
+  Will       (254, 'he con | being ſo t')
+  You        (257, 'ZEA | Yearn, v.. to fee! great uncafinefs,')
+== ageneralandcomp00unkngoog 281 scans
+  Alphabet   None
+  Cipher     None
+  Day        (71, 'DEB | D^te^ vut. tD give the preciA time.')
+  Head       (124, "HAT | ^ardheart'ed,d. cniel^mercilei^finhumui")
+  Morrow     (161, "MOR | yonte'rh, t. a vefibl to waih glall^ la.")
+  Occupy     None
+  Period     None
+  Sea        (205, "sen | i'»k«> money, tte number twenty*")
+  South      (214, "SOK | •ot'itndc, 1. 1 lonely UA or pbee.")
+  Theft      (227, "THE | ' TesTelated, «. rariesated by fquirei.")
+  Use        None
+  Westward   None
+  Which      (249, "XVHI | VHieel'miBht, s. a maker of wheels.")
+  Will       (250, "WIN | Wtd'oweTf T. % man whofe wife !s dead.")
+  You        (252, "Ve a' | Wretch'fd, a. ir.iftrable, dslV> cable.")
+
+## ia_entick
+== bim_eighteenth-century_the-new-spelling-diction_entick-john_1766 386 scans
+  Alphabet   (40, "AL | A'lkali, ſ producing fermentation")
+  And        (43, 'AN AN | Aſnchor, v. 4. to caſt an anchor I Anhelöſe, a. out ')
+  At         None
+  Be         (57, 'BE | Bdellium, ſ. a gum')
+  Can        (384, '„ _— | Werrington')
+  Cipher     None
+  Cypher     None
+  Day        (109, 'DA | :')
+  Early      None
+  Head       None
+  Morrow     (205, 'Moralize, v. g. to explain in a moral ſenſe | Morally, ad. h')
+  Occupy     None
+  Period     None
+  Provision  (247, 'P. R | bag in a tqince :')
+  Quarter    None
+  Sea        (279, 'Scrawhter; f, a clumſy and inelegant writer | Scteak, v. n. ')
+  South      (296, 'S © | Soul, ,. immortal part of man, ſpirit, active')
+  Supply     (311, "S U | . Superfi'ne, a. eminently fine")
+  Theft      (319, 'T H | Teſted, a. witneſſed; tried by a teſt')
+  Use        None
+  Westward   None
+  Which      (361, "W | Wet ' neſs, ſ. tate of being wet, rain")
+  Will       (363, 'Wi | Wild, ſ. defart, uninhabited country')
+  You        (367, 'Veſt. See Yeaſt | Yeſty, a. frothy')
+== bim_eighteenth-century_the-new-spelling-diction_entick-john_1772 471 scans
+  Alphabet   None
+  And        (45, "14 ANC | A'mputate, v. a. to cut off")
+  At         (53, '22 AST | Afiimilation, ſ. act of making like')
+  Be         (60, 'ander | B AW')
+  Can        (78, 'year | ſs')
+  Cipher     (89, '53 SE | Churlfkneis, ſ. rudeneſs')
+  Cypher     None
+  Day        (121, '90 DAU | Dapper, 4. little and active, lively')
+  Early      (147, '116 E AS | Eigre, ſ. a tide ſwelling above another')
+  Head       (196, 'HEA | oc, v. a. to waſte, to deſtroy e,')
+  Morrow     None
+  Occupy     None
+  Period     (292, 'PER | Performance, /. work done, act of performing')
+  Provision  None
+  Quarter    None
+  Sea        (350, '5 DV * — — — — — 9 * | —')
+  South      (370, 'a SOU | Sot, ſ. a drunkard, a blockhead')
+  Supply     None
+  Theft      None
+  Use        None
+  Westward   None
+  Which      (447, '420 W III | Wherewith, Wherewithäl, ad. with which')
+  Will       (449, "422 WIN | Wilfully, ad. obſt'nately, on purpoſe")
+  You        (453, '{ | YE L')
+== bim_eighteenth-century_the-new-spelling-diction_entick-john_1773 446 scans
+  Alphabet   (44, '8 | (alkali-')
+  And        (47, '1 ANA | And, con. joining words, Cc. together')
+  At         (54, 'bg . 5 | 8')
+  Be         None
+  Can        (77, 'IM | Callovs, a. hardened, inſenfible |')
+  Cipher     (87, '96 CTR | Chyle, /. white juice of the ſtomach')
+  Cypher     None
+  Day        (116, 'us | DAU')
+  Early      (140, 'ng | E A &')
+  Head       (188, '* IEA | Hazard, v. a. to expoſe to chance, to adventure')
+  Morrow     (249, '248 Wi | Moriov, /. armour for the head, a helmet')
+  Occupy     None
+  Period     (33, '27 | i')
+  Provision  None
+  Quarter    (301, '300 | Quackery, ſ. mean or bad aQs in phyfie')
+  Sea        (330, 'er | 0i ſe')
+  South      None
+  Supply     None
+  Theft      (374, '11 | etrirchate, ſ. a fourth part of a province')
+  Use        None
+  Westward   None
+  Which      (421, '| W HE | Wheitear, J. a delicate ſmall bird')
+  Will       (423, '422 WW IN | -with jointures')
+  You        None
+== bim_eighteenth-century_the-new-spelling-diction_entick-john_1776 473 scans
+  Alphabet   None
+  And        (45, '46 ANI | And, con. joining words, Ic. together')
+  At         (52, 'AST | te or Afföciated, pare, joined in-league -')
+  Be         None
+  Can        (75, '— —— Dc cr Ro | — — —— _')
+  Cipher     (85, '86 CIR | Chyle, ſ. a white juice of the ſtomach')
+  Cypher     None
+  Day        None
+  Early      None
+  Head       None
+  Morrow     None
+  Occupy     None
+  Period     (274, "PE R. | reip'ient, part. a. perceiving, able to perceive” |")
+  Provision  None
+  Quarter    (299, "Q'U A | Quack, f. an ignorant pretender to phyſic")
+  Sea        (328, 'SCU | Te. mi ipler, ſ. a doubter, one who ſcruples')
+  South      (346, 'ac | „ gratify')
+  Supply     None
+  Theft      None
+  Use        None
+  Westward   None
+  Which      (419, 'heitear, f. a delicate ſmall bird | "Wheiten, a. made of whe')
+  Will       (421, '— — | —')
+  You        (425, 'LL | 426 YE A')
+== 11280377bsb 513 scans
+  Alphabet   None
+  And        (46, 'ry | * AN? ANO “4g')
+  At         None
+  Be         (61, "eee oe: | poses | D : Se ee | Baw’'dy, a. unthafte, Hattyy f")
+  Can        None
+  Cipher     (89, 'se..Ci(‘(“‘i«éwS CW | Chium, /. a chambermaid, a mefimate')
+  Cypher     None
+  Day        (121, '| a ee be SG ad DEA ! | Darkling, a.’being in the dark, void')
+  Early      (147, 'we, | £10 ie SR Ci')
+  Head       None
+  Morrow     None
+  Occupy     None
+  Period     None
+  Provision  None
+  Quarter    None
+  Sea        (350, '/ | SEA. SEA : 319')
+  South      (369, 'Tr | 338 SPA #')
+  Supply     None
+  Theft      None
+  Use        (438, '¥ Ust | uU ofustiine: a. to raife in a {warm')
+  Westward   None
+  Which      (443, '412. WHE - | Wench’ whoring =>"! .')
+  Will       (445, '414 WIE | Whilefomenfs, /. a being wholefome')
+  You        (450, '; ZOO ALG | Adept iositer eens eae + Iga ig “')
+== bim_eighteenth-century_the-new-spelling-diction_entick-john_1782 548 scans
+  Alphabet   (33, '14 | Allee, v. a, to refer to, re')
+  And        (36, 'pr (ls | wile')
+  At         (45, '26 KS A | Aſfürance, ſ. confidence, certain knowledge,')
+  Be         (53, '— | 34 IRE”')
+  Can        (74, '. vin! C A N = | Ciripaigner, Lone who has ſerved ſeveral ca')
+  Cipher     (86, 'CIR | Cicatrization, ſ. the act of healing a wound')
+  Cypher     None
+  Day        (122, '4 | on')
+  Early      (153, '- | * 4 223')
+  Head       (212, '/ | H E A')
+  Morrow     (287, '268 MOR | Morda“city, /. 2 biting quality')
+  Occupy     None
+  Period     (321, "302 FER | Per fundcrily, ad. carcleſsly, ncel'gently")
+  Provision  None
+  Quarter    None
+  Sea        None
+  South      (409, "388 8 O0 U | Sor'rowſully, ad. in 4 ſorrowful manner")
+  Supply     (431, "408 SY FP | S U'R")
+  Theft      (441, '418 X | Testate, a. having made a will |')
+  Use        None
+  Westward   None
+  Which      (497, '474 HE | Wheat, /. bread corn')
+  Will       (499, '476 WI E | Whoop, /. a ſhout of purſuit; v. n. to ſhout with')
+  You        (505, '482 Y U X | Yew, ſ. a tree')
+== bim_eighteenth-century_enticks-new-spelling-di_entick-john_1787 531 scans
+  Alphabet   None
+  And        (26, "Al | 8 E L, a man's name")
+  At         (59, '24 AST | Aſſört, 9). 4. to range in claſſes, &c. arrange, fo')
+  Be         (67, '32 B E A BED | Bay, v. to bark as a dog, ſhut in, ſurround, ')
+  Can        (85, "50 CAL | ' Calefac'tory, 4. tending to warm, heating, airing")
+  Cipher     (97, '62 CIR | k © Cion, . a ſprout, ſhoot of a plant, valve | odd')
+  Cypher     None
+  Day        (29, 'N DE | Courier, a meſſenger')
+  Early      None
+  Head       None
+  Morrow     None
+  Occupy     None
+  Period     (313, '276 PER | Perfume, ſ. a ſweet odor or ſmell; v. 4. to ſcent')
+  Provision  None
+  Quarter    (340, 've, very | Ith [ bad')
+  Sea        (34, 'empt | re')
+  South      (391, '354 SOW | Soul, ſ. the immortal part of man, ſpirit, life, a')
+  Supply     (409, '972 P | Superviſe, v. a. to overſee, overlook, ſuperintend')
+  Theft      (418, 'ent, hot | nd term')
+  Use        None
+  Westward   (468, 'for fiſh | deem')
+  Which      (469, '32 WII | Where ſo, Whereſover, 40. in whit place ſoever')
+  Will       (471, '434 W IFN | Wildnefs, /. fierceneſs, favageneſs, fury, ruden')
+  You        (29, 'N DE | Courier, a meſſenger')

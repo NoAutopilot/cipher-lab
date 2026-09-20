@@ -1,0 +1,185 @@
+# Ten entries from Huntington Library mssEC 15, "War Department Ciphers Sent Feby. 1 to July 21, 1862"
+# (Thomas T. Eckert Papers, Huntington Digital Library object 5126). Transcribed 19 Sept 2026 from the page
+# images in images/ (2583 px wide, IIIF) in two independent passes by subagents, reconciled by the orchestrator
+# against the page image with the Decoding the Civil War volunteer transcription (2016-2017, on the item pages)
+# as a third witness. One manuscript line per line, spelling and capitalisation as written; <del>..</del> struck
+# through on the page, <ins>..</ins> pencil interlineation; word[?] = the witnesses disagree or the word is
+# doubtful (see reading.md, "Reconciliation"). Header: ### Tn | page | CONTENTdm pointer | date as written.
+
+### T1 | Page [9] | 4964 | February 5th 1862, McClellan to Halleck
+February 5th 1862
+For Alden have Telegraphed Buell to
+communicate with you[?] and suggested demonstration
+on Sermon have just moved eight
+Regts from Ohio into western Merlin,
+cannot well spare more thence from
+Alvord unless absolutely necessary please communicate
+fully with Alvord and with me
+signed <del>G</del> Andes B <ins>Im</ins> McClellan <ins>for</ins> Maj <ins>the.</ins> Genl <ins>union</ins>
+
+### T2 | Page [15] | 4970 | Feb 7 '62 7 PM, McClellan to Halleck
+Feb 7 '62 7 PM
+Alden Number one Dispatch received I
+congratulate you upon the result of
+your operations they have caused the
+utmost satisfaction here I would not
+undertake a dash at Saffron now
+better devote everything towards turning it
+first collecting a sufficient force near
+Forts Henry & Donelson to make
+success sure Either alvord or yourself
+should soon go to the scene
+of operations Why not have Alvord
+take the line of Lonesome &
+operate on Shylock while your troops
+turn Saffron those two points gained
+a combined movement on Torrent will
+be next in order The bridges
+at Tuscumbia & Decatur should at
+all hazards be destroyed at once
+Please number telegraphic dispatches & give
+hour of transmittal Thank Bremen Foote
+& their commands for me Andes
+
+### T3 | Page [16] | 4971 | Feby 7th 1862 7 1/4 PM, McClellan to Buell
+Feby 7th 1862 - 7 1/4 PM
+Alvord Number one Why not take
+the line of the Lonesome with
+Your Command and operate on Shylock
+while Alden turns union city and
+Saffron I have directed him to
+destroy bridge at Decatur if possible
+to reach it after Carrying Shylock
+and Saffron a Combined attack on
+Torrent Could be made it would
+easily fall if bridge at Decatur
+destroyed Call for all available troops
+in Koran Lark and Lather please
+number and give hour of transmittal
+of telegraphic despatches signed Andes Eugenia
+
+### T4 | Page [19] | 4974 | Feb 9 '62 5.30 PM, Stanton to Buell
+<ins>Gen Buell</ins> Feb 9 '62 - 5.31[?] PM
+Alvord The President directs me to
+say that he has read your
+communication to Andes dated the first
+and mailed the sixth of this
+month and that he approves the
+operations you propose therein & believes
+if vigrously prosecuted they cannot fail
+He desires you and Alden to
+cooperate as far as possible &
+says that your two heads together
+will succeed signed E M Stanton
+Secy of War Nancy good evening
+
+### T5 | Page [21] | 4976 | Feb 10 '62, Lincoln to Hunter and Lane
+Feb 10[?] '62
+For Carroll and General Lane Quotient
+<ins>Gen Lane</ins> Quotient My wish has
+been & is to avail the
+Govt of the services of both
+Carroll & Gen Lane & so
+far as possible to personally oblige
+both Carroll is the senior officer
+& must command when they serve
+together though in so far as
+he can consistently with the public
+service & his own honor oblige
+Genl Lane he will also oblige
+me, If they can not come
+to an amicable understanding Genl Lane
+must report to Carroll for duty
+according to the rules or decline
+the service signed Irving Bush please
+send far as possible in cipher
+
+### T6 | Page [25] | 4980 | Feb 13 '62 7 PM, McClellan to Buell
+Feb 13 '62 7 PM
+Alvord How many wag have you
+fully equipped & ready for the
+field What number of whale armed
+equipped (& mounted How many wharf
+Watch Fort Donelson closely I am
+not too certain as to the
+result there signed Andes Florence warm
+
+### T7 | Page [35] | 4990 | Feb 16 '62 1 PM, McClellan to Buell
+Feb 16 '62 - 1 PM.
+Alvord If I can send you
+motive power & cars to Sermon
+by way of Mystic can you
+not at once whig on Shylock
+in force without waiting for repairs
+of road Time is now everything
+If Shylock is open the men
+could carry their small rations &
+bread driving meat on the Hoof
+Leave tents & all baggage If
+you can occupy Shylock at once
+it will end the war in
+lonesome signed Andes One P M
+
+### T8 | Page [36] | 4991 | Feb 16 '62, Lincoln to Halleck
+Feb 16 '' 62
+Alden you have fort Donelson safe
+unless Bremen shall be overwhelmed from
+outside to prevent which latter will
+I think require all the vigilance
+energy and skill of yourself and
+Alvord acting in full cooperation Saffron
+will not get at Bremen but
+the force from Sermon will they
+hold the railroad from Sermon to
+within a few miles of fort
+Donelson with the bridge at Clarksville
+undisturbed it is unsafe to rely
+that they will not dare to
+expose Shylock to Alvord a small
+part of their force can retire
+slowly towards Shylock breaking up the
+railroad as they go and keep
+Alvord out of that city twenty
+days meantime Shylock will will be
+abundantly defended by forces from all
+south and perhaps from here at
+Manassas could not a cavalry force
+from Camden on the upper Cumberland
+dash across almost unresisted and cut
+the railroad at or near Knoxville
+lonesome in . the . midst . of . a
+bombardment of fort Donelson why could
+not a wreathe[?] run up and
+destroy the bridge at Clarksville our
+success or failure at fort Donelson
+is vastly important and I beg
+you to put your soul in
+the effort I send a copy
+of this to Alvord signed Irving
+
+### T9 | Page [39] | 4994 | Feb 17 '62, McClellan to Thomas A. Scott
+Feb 17 . 62.
+Ingress Pastor Please consult Alvord about
+removing engines & cars from Legend
+Central to the Shylock Railway He
+has my plans Better at once
+have cars & engines altered for
+five feet gauge signed Andes[?] Dorothy
+
+### T10 | Page [56] | 5011 | Feb 21 '62, McClellan to Buell
+Feb 21 . 62
+Alvord The whig on Shylock is
+of the greatest importance If you
+can reach it by the line
+of the Cumberland more rapidly than
+by Sermon at once change your
+line of operations & I will
+direct Aldens troops on Torrent &
+Saffron What is Camden division doing
+at Bardstown Rapid movements are now
+necessary If Railway to Clarksville is
+destroyed take the line of Myrtle
+I repeat that both Alden &
+yourself keep me too much in
+the dark your reports are not
+sufficiently numerous or explicit Andes Hannah

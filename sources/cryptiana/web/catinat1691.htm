@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<TITLE>Solution of Louvois's Petit Chiffre (1690-1691)</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=UTF-8"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, Catinat">
+<link rel=stylesheet type=text/css href=decode2.css>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</HEAD>
+
+
+<BODY>
+<H1>Solution of Louvois's Petit Chiffre (1690-1691)</H1>
+<P>A cipher used in a letter from Feuqui&egrave;re <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Antoine_de_Pas_de_Feuqui%C3%A8res">Wikipedia</A>, <A HREF="http://en.wikipedia.org/wiki/Siege_of_Cuneo_%281691%29">Wikipedia</A>, <A HREF="https://books.google.co.jp/books/about/M%C3%A9moires_de_M_le_marquis_de_Feuqui%C3%A8re.html?id=8TAqwd-QpiAC&redir_esc=y">his memoires (1741)</A>)</span> to General Catinat, dated 15 January 1691, presented in <A HREF="https://cryptiana.web.fc2.com/code/louisxiv.htm#SEC7">another article</A> was broken by Daniel Bourdeau in September 2026 (see his <A HREF="https://dbourdeau.github.io/cyphersolver/feuquieres.html">github</A>). While he has been making full use of AI in breaking many unsolved ciphers on my list (he told me he solved as many as 26 in a few days), automatic codebreaking did not work for this particular case.</P>
+
+<H3>The Letter (Feuqui&egrave;re to Catinat, 1691)</H3>
+<P>The letter is printed in <i>M&eacute;moires et correspondance du mar&eacute;chal de Catinat</i> (1819), vol.2 (<A HREF="https://books.google.co.jp/books?id=gJEOAAAAQAAJ">Google</A>), p.283. The cipher used in this letter is different from the one used in the seven other letters printed therein addressed to Catinat by Louvois or Louis XIV. The latter cipher is the famous great cipher broken by Commandant Bazeries (see my articles: <A HREF="bazeries2.htm">"Commandant Bazeries' Codebreaking and His Candidate of the Man in the Iron Mask"</A>, <A HREF="bazeries3.htm">"Specimens of Louis XIV's Great Cipher (1691)"</A> and Bourdeau's, <A HREF="https://dbourdeau.github.io/cyphersolver/catinat1691.html">"Louis XIV and Louvois to Catinat, July-September 1691"</A>).</P>
+
+<H3>Another Letter with Translation (Louvois to d'Herleville, 1690)</H3>
+<P>After unsuccessful attempts by AI (recorded in his github), Bourdeau found, in <A HREF="https://books.google.co.jp/books?id=ZhkVAAAAQAAJ">vol.1</A>, p.140, another letter in cipher, dated 6 September 1690, to d'Herleville, Feuqui&egrave;re's predecessor as governor of Pignerol, and saw that it was in the same cipher (judging from common figure groups and bigrams/trigram etc.).</P>
+<P>Moreover, the ciphertext is followed by a contemporary translation, though from two other letters to Catina, which can be read with Bazeries' great cipher, it was seen that the translation was paraphrased by the clerk.</P>
+
+<H3>Codebreaking</H3>
+<P>Bourdeau noted repeating syllables "au", "ra", and "le" in "comment <u><span style="background-color: 00ffff">au</span><span style="background-color: 00ffff">ra</span> r&eacute;ussi vostre entreprise sur <span style="background-color: 00ffff">le</span> chaste<span style="background-color: 00ffff">au</span> de Vil<span style="background-color: 00ffff">le</span>f<span style="background-color: 00ffff">ra</span></u>nche" at the end of the translation corresponding to the ciphertext in the d'Herleville letter.</P>
+<P>The phrase, albeit possibly paraphrased, must be in the latter half of the last paragraph in cipher, where corresponding repeated figures are found as expected.</P>
+<DIV class="kakomi">
+143 205 228 63 <span style="background-color: 00ffff">135</span> 59 98 144 28 138 
+175 65 222 68 32 60 188 150 4 300 5 113 
+101 193 144 51 27 275 146 <span style="background-color: 00ffff">184</span> 182 22 350 
+74 80 51 91 <u><span style="background-color: 00ffff">184</span> <span style="background-color: 00ffff">135</span> 22 78 21 196 149 
+65 91 44 5 88 83 88 <span style="background-color: 00ffff">56</span> 101 193 21 205 
+<span style="background-color: 00ffff">184</span> 42 210 68 <span style="background-color: 00ffff">56</span> 124 <span style="background-color: 00ffff">135</span></u> 228 101 229 
+</DIV>
+<P>From this, with some experience in segmentation into letters/syllables in syllabic ciphers, it is relatively straightforward to derive the correspondence:</P>
+<DIV class="kakomi">
+... <span style="background-color: 00ffff">184(au)</span> <span style="background-color: 00ffff">135(ra)</span> 22(re) 78(u) 21(s) 196(si) 149(vostre) 
+65(en) 91(t) 44(re) 5(p) 188(ri) 83(se) 88(sur) <span style="background-color: 00ffff">56(le)</span> 101(c) 193(ha) 21(s) 205(te) 
+<span style="background-color: 00ffff">184(au)</span> 42(de) 210(vi) 68(l) <span style="background-color: 00ffff">56(le)</span> 124(f) <span style="background-color: 00ffff">135(ra)</span></u> 228(n) 101(c) 229(he)</DIV>
+<!--entreprise surの部分はBourdeauの解読を先に見た。OCRの188が88になっていたのでsurと同じになってしまい、わからなかった-->
+<P>This assignment is further supported by repeated occurrences of 21(s) and 101(c) (and 91(t) immediately before the quotation). (Fortunately, this part in the translation was not paraphrased.)</P>
+<P>Once this much was found, the rest is an ordinary process of identifying one element after another.</P>
+<P>When these results were applied to the Feuqui&egrave;re letter, words such as "heures du matin", "du vingt-quatre", "m'escrire", and "duplicata" were identified, which revealed further symbols, and so on.</P>
+<P>When one is given the above matching pair of ciphertext and decryption, it may not seem a difficult task. But I salute the ingenuity of focusing on that phrase in the first place in the paraphrased translation (and before that finding the d'Herleville letter in vol.1 that I overlooked).</P>
+
+<H3>Grand Chiffre and Petit Chiffre</H3>
+<P>In 1690, Louvois used a grand chiffre with the highest number 587 in correspondence with Catinat, while he used a petit chiffre (the highest number is 366 in Bourdeau's key) with the governor of Pignerol. In 1691, Catinat used the same grand chiffre with the court and the same petit chiffre with the new governor of Pignerol. Although the petit chiffre has fewer entries, it shares the strength of the grand chiffre such as two-part structure (random arrangement of entries); homophonic assignments not only for letters but also syllables (e.g., DE=25/42/71); and mixed arrangement of letters, syllables, and (admittedly only a few) words.</P>
+<br>
+<br>
+<font size="2">
+&COPY;2026 S.Tomokiyo<br>
+First posted on 19 September 2026. This article is encoded in UTF-8. Last modified on 19 September 2026.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+

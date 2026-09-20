@@ -1,0 +1,335 @@
+<HTML>
+<HEAD>
+<TITLE>
+How to Break a Code (Not a Cipher)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, Japanese diplomatic code">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>How to Break a Code (Not a Cipher)</H1>
+<P>A student of cryptography would have an experience of having been impressed by the way a cryptogram can be deciphered without a key, as demonstrated by Edgar Allan Poe's <i>The Gold Bug</i> (see also <A HREF="breaking.htm">another article</A>, which takes Cornwallis' cipher as an example). But this is actually breaking a cipher (as opposed to a code). With cipher, which turns letters in a message into different letters, frequency of occurrence and other characteristics of the 26 letters of the alphabet allow one to methodically identify the original letters represented by the letters in a ciphertext.</P>
+<P>On the other hand, code groups represent whole words or names. Although there are some known characteristics of words (e.g., "the" is the most frequently used word in English), characteristics among tens of thousands of words do not give as clear a clue as those among the 26 letters of the alphabet. The present article describes some examples of breaking such a code as opposed to a cipher.</P>
+<br>
+<P><A HREF="#SEC1">Partial Encoding</A></P>
+<P><A HREF="#SEC1B">Cipher in Code</A></P>
+<P><A HREF="#SEC2">Yardley (1918, 1926)</A></P>
+<P><A HREF="#SEC3">Mansfield Dictionary Code (1930s)</A></P>
+<P><A HREF="#SEC3D">Commercial Code</A></P>
+<P><A HREF="#SEC4">Statistical Analysis</A></P>
+<P><A HREF="#SEC4B">Dutch Codebreakers during WWI</A></P>
+<P><A HREF="#SEC5">Codebreaking by Espionage</A></P>
+<A NAME="SEC1"></A>
+<H2>Partial Encoding</H2>
+<P>When only some particular words are encoded, it would be a matter of knowledge of the background to guess the words referred to. Such has been done by historians such as Coxe (cf. <A HREF="marlborough.htm">another article</A>), Bergenroth (cf. <A HREF="spanish.htm">another article</A>)), and others. It would have been only slightly more difficult for contemporaries to do the same.</P>
+
+<H3>Examples during the Peninsular War</H3>
+<P>Three examples of careless encoding are given in <i>A History of the Peninsular War</i>, Volumne V (<A HREF="https://archive.org/stream/historyofpeninsu05oman#page/612/mode/2up/search/cipher">Internet Archive</A>), p. 611, Appendix XV.</P>
+<P>When Dorsenne wrote to Jourdan on 16 April 1812 "Vous voulez de renseignement sur la situation militaire et administrative de 1238", it was easy to guess the code number stood for "the Army of the North."</P>
+<P>When Joseph, Napoleon's brother made King of Spain, wrote to Marmont<!--Oman p.617のリストによればJoseph to Marmontは9 July 1812と7 August 1812のみ；前者か？--> "J'ai donn&eacute; l'ordre au g&eacute;n&eacute;ral Treillard de 117.8.7 la vall&eacute;e de 1383, afin de marcher &agrave; 498.", the situation indicated that 117.8.7 was almost certainly "evacuate", 1383 "Tagus", and 498 some large town, which still baffled Wellington to make a wrong guess "Plasencia" when it was "Aranjuez".</P>
+<P>When Suchet wrote to Soult on 17 September 1812 "Le G&eacute;n&eacute;ral Maitland commande l'exp&eacute;dition anglaise venue de 747: O'Donnell peut r&eacute;unir 786 692 1102 en y comprenant le corps de l'Anglais Roche. Le 19 ao&ucirc;t je n'avais que 135 692 1102 &agrave; a lui opposer." it was clear that "747" was "Sicilly"; two instances of "692 1102" are "thousand men." Further identifications that 135 stood for 7 and 786 for 12 would be ascertained through further instances. <span class="note">(p.613-614)</span></P>
+<P>Even if longer passages or sentences are encoded, as long as some part of the whole message is in plaintext, the latter provides a clue for codebreakers, who would eventually reveal the code, given sufficient materials.</P>
+<P>Mark Urban, <i>The Man Who Broke Napoleon's Codes</i> mentions such examples in passim.</P>
+
+<H3>Examples of Bazeries</H3>
+<P>One French letter in cipher from 1813 (see <A HREF="napoleon.htm">another article</A>) had a passage "Tant par l'effet de la 107 138 170 122 53 171 122 149 et de la 148 54 53 138 169 du 6 95 107 176 que par le 177 169 161 20 tr&egrave;s 69 145 51 115 176 qu'elle a &agrave; faire". For Bazeries, it needed no imagination to guess the ending reads "que par le se-r-vi-ce tr&egrave;s p&eacute;-ni-b-l-e (ou fa-ti-ga-n-t) qu'elle a &agrave; faire." <span class="note">(Bazeries, <i>Les chiffres secrets d&eacute;voil&eacute;s</i>, p.182)</span></P>
+<P>Other examples are given in Bazeries, <i>Les chiffres de Napol&eacute;on I<sup>er</sup></i>. p.21-22. For example, after having identified "71" as "de" and "637" as "ser", it was easy for Bazeries to see that "On s'est 386.996.110. tous les jours pour 593 po 294.637 - 117 - 595 mais il n'y a rien 477 - 71 - 637.887.874." represents "On s'est battu tous les jours pour repousser l'ennemi mais il n'y a rien eu de s&eacute;rieux."</P>
+
+<A NAME="SEC1B"></A>
+<H2>Cipher in Code</H2>
+<P>In modern parlance, a code is to represent words and phrases with figures (or other symbols), whereas a cipher is to represent letters with symbols (e.g., different letters, figures). Still, many codes had provisions to represent words or names not included in the vocabulary. That is, some part of code may constitute a set of cipher symbols, which may give a clue for codebreakers.</P>
+
+<H3>Codebreaking by John Wallis</H3>
+<P>The English mathematician John Wallis (1616-1703) solved many letters in cipher (see <A HREF="wallis_e.htm">another article</A>), which included ones completely in code (see <A HREF="wallisdecipher.htm">another article</A>). Probably, Wallis detected that low numbers represented single letters and attacked sequences of such low numbers first, which would have been similar to breaking a simple cipher. When words represented in cipher were revealed, he must have used them as a clue to guess the meaning of other code groups.</P>
+
+<H3>Codebreaking by Etienne Bazeries</H3>
+<P>Commandant Bazeries decoded Louis XIV's great cipher with entries up to 587 (see <A HREF="bazeries2.htm">another article</A>). Upon first inspection of the letters in code, Bazeries was sure he could solve it. Since a code with such a small vocabulary has to encode syllable by syllable, once an initial breakthrough is made, similar reasoning as in cipher-breaking would reveal the code numbers one after another.</P>
+<P>The great cipher before Bazeries did not have the weakness presumably exploited by John Wallis. So, Bazeries assumed that words "les ennemis" must appear in the letters and found that frequently occurring patterns with slight variation like 124 22 125 46 574 would correspond to "les en-ne-mi-s." This provided the breakthrough needed to proceed.</P>
+
+<H3>Stripping Superencipherment of a WWI Code</H3>
+<P>At the time of World War I, it was recognized by code compilers that "Words spelled out, letter by letter, ... are one of the favorite points of attack by enemy code men" (see <A HREF="fieldcode1.htm">another article</A>). But the first American field code was not prepared for such an attack.</P>
+<P>A report of 17 May 1918 <span class="note">(Friedman, "American Army Field Codes in the American Expeditionary Forces during the First World War", p.117, Appendix 10)</span> for evaluating the first American field code, given 44 short test messages encoded with monoalphabetically enciphered three-letter code groups and the underlying codebook, successfully identified the superencipherment.</P>
+<P>Code groups for single letters provided the first clue. In particular, TKG, which appeared in succession as follows, as well as those around them were considered to represent single letters.</P>
+<P><TT>&nbsp; &nbsp; BCN TKG TKG BCN</TT></P>
+<P><TT>&nbsp; &nbsp; BCN TKG TKG GRO</TT></P>
+<P><TT>TWS BCN TKG TKG GWY</TT></P>
+<P><TT>TWS BCN TKG TKG GWY</TT></P>
+<P>After trying T and S in vain, L was assumed for TKG, which suggested a likely candidate ED to follow L-L. To check this assumption, reference was had to the codebook, which indicated MIH for L and HEG for ED. Matching between the third letter for the code group for L and the first letter for the code group for ED is consistent with the enciphered code group "TK<u>G</u> <u>G</u>WY". Once this was confirmed, the preceding groups were considered to be "K-I", forming the word "killed". (By the way, the report pointed out absence of the word "killed" and other frequent words as defects of the code.)</P>
+<P>The reports also pointed out monoalphabetic enciphering provides no security because it does not matter for codebreakers whether L is represented by MIH or superenciphered as TKG. (Of course, superencipherment can conceal the one-part nature of the code but after some identifications were made, it only adds some complications but not a true difficulty of a two-part code.)</P>
+<P>The report also pointed out that once the codebook is known, monoalphabetically enciphered "AVA" was immediately recognized to be the codegroup KYK for H because this was the only one having the same initial and final letters for single letters.</P>
+<P>The report claimed it took only five hours to reveal the enciphering alphabet and another five hours to complete the decoding.</P>
+<!--
+superencipherment table
+code group ABCDEFGHIJKLMNOPQRSTUVWXYZ
+enciphered r  lwiygk abtzcn dfh so vu
+No.13の冒頭What →メッセージではOR UWN(deciphered as ZEP→American Trench Code のp.34に一致（Friedman p.138）)
+No.43の冒頭All→メッセージではAR PEM(deciphered as )
+No.1
+morning report 242      men present 4   sick   k   i   l   l   ed 2  wounded 
+OR ZCM   FRT   MRL MKZ  ZWI DKL    MRY  HRA  TWB  BCN TKG TKG GWY MRL UES
+UES deciphered as Z*V(コードブックによればZUV)
+-->
+
+<A NAME="SEC2"></A>
+<H2>Yardley (1918, 1926)</H2>
+<H3>German Code (1918)</H3>
+<P>Herbert O. Yardley's <i>The American Black Chamber</i> (Chapter VI) tells how he decoded two mysterious messages transmitted from a German station in 1918. The messages were in five-figure code, without address or signature, and were transmitted over and over again nearly every day. There was reason to believe that it was addressed to Mexico.</P>
+<P>The message No. 1 had 141 code groups and No. 42 had 138 code groups. The code groups ranged from 00308 to 48001.</P>
+<P>Of these, the most frequent group 42635 occurred 16 times and 28709, 28223, and 19707 occurred 8 times each. It may be tempting to identify 42635 with "the" but it must be remembered that words such as "a" and "the" were often omitted in telegraphy.
+Yardley identified that the language was English rather than German or Spanish because assumption of German or Spanish "leads to a blank wall".</P>
+<P>The largest numbers were 55927, 55934, 55936, of which the first two occurred twice and thus may be considered to be common words. Since they were towards the end of the alphabet, they might begin with y. Assuming "you" for 55927, 55934 "your" and 55936 "yourself" nicely fit the sequence in the only dictionary Yardley had at hand.</P>
+<DIV class="kakomi">
+<u>55927 you</u><br>
+55928 young<br>
+55929 younger<br>
+55930 youngish<br>
+55931 youngling<br>
+55932 youngster<br>
+55933 younker<br>
+<u>55934 your</u><br>
+55935 yours<br>
+<u>55936 yourself</u><br>
+</DIV>
+<P>Then, it was noticed that the last two figures of the code groups were all in the range from 01 to 62. This seemed to suggest that the five-figure numbers were not serial numbers but indicated a three-figure page number and a two-figure word or line number.</P>
+
+<P>Then, Yardley examined the most frequent code group 42635 by listing what came before and after this code group. The results showed that it was often preceded by the same group but was always followed by a different group. Yardley thought it must be a termination or ending of some sort. But neither a period (.) nor any common words were likely because 16 occurrences in a total of no more than 279 words were too many. Considering that the place of 42635 in a sequence up to about 56000 suggested r or s as the initial letter, Yardley assumed it might be a plural ending "s".</P>
+<P>Then, with these findings, the beginning of the telegram No. 42 was examined: "19707 21206 31511 31259". Of these, 19707, being one of the groups that occur 8 times, must be a common word. Searching pages around p.197 in some English dictionary of about 600 pages, "for" was found on p.203. Yardley's dictionary appeared to advance by about 6 pages than the actual code used by the Germans. Thus, in order to decode the next group 21206, pages around p.212+6=218 were searched and "German" was found on p.217. Then, pages around page 315+6=321 were searched to identify 31511. Though it had to be born in mind that the same offset might not apply after some hundred pages, it must be a word beginning with m. Indeed, "minister" on p.312 seemed right.</P>
+<P>The next group 31259 should be found 3 pages earlier. The telegram was supposed to be addressed to Mexico. So "For German Minister Mexico" seemed to be the plaintext for the first four code groups.</P>
+<P>One might continue such a process to gradually reveal code groups one by one. Alternatively, one may identify the dictionary that has "for" as the 7th line or word on p.197, etc. As it turned out, it was the English-French half of Clifton's <i>Nouveau Dictionnaire Fran&ccedil;ais</i>.</P>
+<P>The decoded message is as follows. Words and names not in the dictionary such as Bleichroeder <span class="note">(<A HREF="http://en.wikipedia.org/wiki/Arnhold_and_S._Bleichroeder">Wikipedia</A>)</span> seem to be represented by portions of words. (Association of code groups with plaintext portions is my conjecture. Code groups such as 28223, 28709 seem to have some predefined function rather than mere nulls but details are not known to me.)</P>
+<img src="codebreaking1.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>Peruvian Code (1926)</H3>
+
+<P>Yardley (Chapter XIX) describes another example of breaking a code. Even if his descrptions are inaccurate, it gives an idea how codebreaking (as opposed to cipher-breaking) may work.</P>
+<P>In 1926, Yardley was given by the Department of State a document in code containing 390 code words (of which 250 occurred only once). It began as follows:</P>
+<DIV class="kakomi">
+8453207440 5400000001 19977 NCOTRAL 2116388212
+0000178607 4747722681 2212567444 0757021928
+2105311032 8151788212 6742358138 4346728381
+</DIV>
+<P>That the message is composed of five-figure code sent in groups of ten is pretty much obvious from the common practice at the time as well as from the recurrence of 00001. NCORTRAL would be a word not in the code, enciphered letter by letter.</P>
+<P>Yardley says although he was not given details about the document, he assumed that the message concerned a dispute between Chile and Peru, for which the United States was acting as a mediator. Since the disposition of the City of Arica was at issue, they reasoned that "ciudad de Arica" should appear in the message. From the past experience with Chilean and Peruvian codes, it was expected that the code would be alphabetical (one-part code).</P>
+<P>Assuming that the most frequent group 36166 represented <i>de</i>, "Arica" would be one of the groups that follow 36166, and would be "00xxx." No success was obtained with this or the next hypothesis 36166=<i>en</i>.</P>
+<P>When another high-frequency group 27359 was supposed to be <i>de</i>, "ciudad de Arica" was identified (though it must be remembered that such an early identification may occasionally have to be given up at a later stage). Thus, a few common words such as <i>de</i>, <i>en</i>, <i>el</i>, <i>que</i>, <i>y</i>, <i>a</i>, etc. were identified on the first day.</P>
+<P>The next morning, the words "Secretary of State" (<i>Secretario de Estado</i> in Spanish) and the Spanish word for "said" were found.</P>
+<P>Now sure of the topic of the message, Yardley requested a resum&eacute; of the conference between the Secretary of State and the Chilean or Peruvian ambassador. The crib allowed decoding of the whole message in a few days. It turned out to be a report by the Peruvian ambassador.</P>
+<P>The message begain in translation as "No. 37. 1. Last night I had dinner alone with STABLER. After dinner ...." So, the enciphered name was S(=N)T(=C)A(=O)B(=T)L(=R)E(=A)R(=L).</P>
+
+
+<A NAME="SEC3"></A>
+<H2>Mansfield Dictionary Code (1930s)</H2>
+<P>As demonstrated by Yardley's example above, as long as assignment of plaintext words to numbers is in alphabetical order, the relative position of a number allows estimating an approximate place in a dictionary. Mansfield's progressive dictionary list is a reference tool to facilitate such estimation.</P>
+<P>Lanaki (1996), <i>Classical Cryptography Course</i>, <A HREF="http://www.math.utoledo.edu/~codenth/Cryptanalysis/lanaki/lanaki20.txt">Lecture 20: Codes</A> demonstrates solution of a very short code message. (I made some corrections in the following.) (It cites [DAGA] D'agapeyeff, Alexander, "Codes and Ciphers," Oxford University Press, London, 1974; [MANS] Mansfield, Louis C. S., "The Solution of Codes and Ciphers", Alexander Maclehose & Co., London, 1936; and [MAN1] Mansfield, L.C.S, "One Hundred Problems in Cipher.  London, 1936. According to a posting <A HREF="https://groups.yahoo.com/neo/groups/Dagapeyeff_Cipher/conversations/topics/41">"Mansfield Dictionary Code"</A>, this example appears to have been created by D'agapeyeff by picking up code groups of Mansfield to suit his demonstration.</P>
+<!--
+Mansfield's book (1936), which I happen to have a copy of, uses the following code as an example:
+
+55381 12050 35284 55381 38834 23171 03937
+06866 55381 21582 07849 33528 63037 27870
+61571 44234 55366 55381 15768 23256 06593
+36034 55401 18272 00723 42872 36173 55381
+56442 62253 22282 55381 45174 56037 55381
+46882
+"The defence of the place has been causing the government circle much worry. It was revealed that the enemy have carried out their first aerial reconnaisance over the town which guards the route to the sea."
+-->
+<P>The message in code is as follows.</P>
+<DIV class="kakomi">
+55381  42872  35284  <u>55</u>381  45174  56037  55381  46882
+23171  44234  55366  55381  00723  12050  61571  36173
+55381  56442
+</DIV>
+
+<P>Arranging the above code groups in ascending order results in</P>
+<DIV class="kakomi">
+00723 12050 23171 35284 36173 42872 44234 45174 46882 55366 55381 (5 times)<br>
+56037 56442 61571
+</DIV>
+
+<P>The group "55381", which occurs no less than five times in this short message, is assumed to be THE. (A possibility that THE is omitted in the message or that 5 times in such a short message is too many was not considered, at least for a starter.) The highest number "61571" may be assumed to be a word beginning with W. ("You" may also have been a possibility.)</P>
+<P>Now, use is made of a tool called Mansfield's progressive dictionary lists, which provide serial numbers for words beginning with any two letters in dictionaries of 10,000-100,000 words. For example, given the total number of words in the dictionary would be around 65,000, the list tells that the last word beginning with DA has a serial number 11646 and the last word beginning with DE has a serial number 12850, which implies the group 12050 is a word beginning with DE. (Today, a calculator makes things easier. If you have a dictionary of say 800 pages, the page 120 out of a total of 650 would correspond to around page 148 (=120/650*800) of your dictionary.)</P>
+<P>Working similarly for the other code numbers, we may have the following:</P>
+<DIV class="kakomi">
+THE RE-- OF-- THE RO-- TO-- THE SE-- HA-- RE-- TH-- THE
+<u>A</u>E-- DE-- WA-- OV-- THE TO--
+</DIV>
+<P>While, of course, the border between bigrams varies depending on the particular dictionary used, at least the position of THE (55381) is confirmed. Somewhat preceding this is 55366 (TH--). Of candidates such as THAN, THANK, THAT, etc., THAT would be the most probable. Two groups 56037 and 56442 are in the TO-- section, which starts at 56037 and ends at 56466. So the former would be TO. The latter, may be TOWN.
+Similarly, the R- words may be guessed by considering, e.g., 42872 is about 300 words from the end of the RA section at 42573.</P>
+<DIV class="kakomi">
+THE RECONNAISSANCE OF-- THE ROUTE TO THE SE-- HA-- REVEALED THAT THE
+AE-- DE-- WA-- OV-- THE TOWN.
+</DIV>
+<P>Similarly, AE-- may be <u>AERO</u>PLANE. And DE-- is one quarter of the way into the DE section, which suggests DEF--. Thus, "aeroplane defensive" sounds right.</P>
+<P>The rest may be fairly obvious.</P>
+<DIV class="kakomi">
+THE RECONNAISSANCE OF THE ROUTE TO THE SEA HAS REVEALED THAT THE
+AEROPLANE DEFENSE WAS OVER THE TOWN.
+</DIV>
+<P>According to [MANS], actually "AEROPLANE DEFENSE" should be "air defenses."</P>
+
+<H3>Andr&eacute; Langie's Example</H3>
+<P>The technique similar to those of Yardley and Mansfield is also described in Andr&eacute; Langie, <i>Cryptography</i> (1922; English translation (adaptation) of the original in French), p.88 ff.</P>
+<P>The following message is given.</P>
+<DIV class="kakomi">
+5761 3922 7642 0001 9219 6448 6016 4570 4368 7159
+8686 8576 1378 2799 6018 4212 3940 0644 7262 8686
+7670 4049 3261 4176 6638 4833 4827 0001 3696 6062
+8686 2137 4049 2485 7948 0300 9712 0300 4212 9576
+2475 8576 8337 0702 9185
+</DIV>
+<P>Sorting this in numerical order gives:</P>
+<DIV class="kakomi"><TT>
+0001 2485 4212 6062 8576<br>
+0001 2799 4212 6448 8576<br>
+0300 3261 4368 6638 8686<br>
+0300 3696 4570 7159 8686<br>
+0644 3922 4827 7262 8686<br>
+0702 3940 4833 7642 9185<br>
+1378 4049 5761 7670 9219<br>
+2137 4049 6016 7948 9576<br>
+2475 4176 6018 8337 9712<br>
+</TT></DIV>
+<P>The most frequent groups are: 8686 (3x), 0001, 0300, 4049, 4212, 8576 (2x).</P>
+<P>Pairs of nearby groups are: 2475:2485, 3922:3940, 4827:4833, 6016:6018, 7642:7670, and 9185:9219.</P>
+<P>0001 is supposed to be "a".</P>
+<P>Other common words that may be expected to occur are "of", "to", "and", "the", etc. We first consider "of".</P>
+<P>Now, an English dictionary is used as a reference. It shows words beginning with O occupies pages corresponding to 58-61 percent from the beginning. It means O words would be between 5800 and 6100 in this code. This assumption gives three candidates: 6016, 6018, and 6062. If 6016 is taken as "of", the dictionary gives a plausible reading "offensive" for 6018.</P>
+<P>As for "the" and "to", it is noted that 8576 occurs twice and 8686 occurs three times. Although this is outside the range of T-words between 8715 and 9298 expected from the proportion of initials in the English dictionary, it seems within allowable error bounds. So, one may suppose 8576 to be "the" and 8686 to be "to".</P>
+<P>Another frequent group 0300 is in an expected range of A (6.43%, or up to 0643). The word "and" is found just about the right position.</P>
+<P>The remaining groups occurring multiple times --4049 and 4212-- are in the H section, which, however, has too many candidates: "have", "has", "he", "him", etc.</P>
+<P>If the above candidates are substituted for the code groups, there is found "TO THE 1378 2799 OFFENSIVE." Since 2799 is in the E section, "enemy" is a good candidate. The number 1378 is just about halfway between 0001 (A) and 2799 (ENEMY), and "coming" is found.</P>
+<P>Then, we look at "AND 9712 AND 4212", where 4212 also occurs after "offensive." The number 4212 is about halfway between 0001 (A) and 8576 (THE). So, although the dictionary proportion puts it in the H section, 4212 is supposed to be the pronoun "I." Considering 9712 is the highest number, it may be supposed to mean "you." This reveals "AND YOU AND I."</P>
+<P>The above sequence is followed by 9576, which is the second highest number and may be supposed to be WERE or WILL. It is followed by 2475 in the D section, which in turn is followed by THE. A closer examination of the position shows it is DI... or DO.... So, this (2475) or 2485 may be "do." Assuming the latter is "do", "divulge" and "divide" are found as candidates for 2475, of which the latter seems more plausible. This gives the reading "AND YOU AND I WILL DIVIDE THE."</P>
+<P>With similar guidance from the dictionary position and context, the groups following this are found to be "SUM BETWEEN US." When "A GOOD O... TO" is revealed, one may arrive at "a good opportunity to."</P>
+<P>Further processing like this reveals the following plaintext.</P>
+<DIV class="kakomi">
+Mi ... has secured a valuable piece of information
+in regard to the coming enemv offensive. I have been
+requested to send him five hundred pounds. It is a good
+opportunity to denounce him. Do so, and you and I will
+divide the sum between us.
+</DIV>
+
+<H3>Dictionary Code Challenge</H3>
+<P>The feasibility of this method of guessing a word by its relative position in a dictionary was testified by a challenge presented in <A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2018/10/29/a-dictionary-code-challenge/#more-17088">Klausis Krypto Kolumne</A> in 2018.</P>
+
+<A NAME="SEC3D"></A>
+<H2>Commercial Code</H2>
+<P>Some telegraphic codebooks provided for some measure of secrecy (see <A HREF="telegraph2.htm">another article</A>). Continental codebooks like Sittler represented a word with a four-digit number consisting of a page number and a line number and correspondents could make their own arrangement to reassign page numbers to keep the secrecy of their message.</P>
+<P>Etienne Bazeries demonstrated how easily such enciphering could be broken <span class="note">(Bazeries, <i>Les chiffres secrets d&eacute;voil&eacute;s</i>, p.142-145)</span>.</P>
+<P>He was given the following message coded by Sittler.</P>
+<DIV class="kakomi">
+2213 2379 2836 5034 6360 9051<br>
+1302 1086 7131 2394 7514 1933
+</DIV>
+<P>Given a hint that the message was about finance, he started by assuming some words such as <i>bourse, titres, millions</i> were used in the message.</P>
+<P>The word <i>million</i> appears on real page 57, line 04 in Sittler. Although the page numbers might be reassigned, the line number 04 is assumed to be unchanged. Then, it is noted that the fourth group 5034 contains both 0 and 4. The 1st and 3rd digits may indicate the page and the 2nd and the 4th digits may indicate the line. If this group indeed is <i>million</i>, the preceding group 2836 would be a figure. From its 2nd and 4th digits, one might look for a numeral appearing on line 86 on some page. This finds 17 on page 27 and 41 on page 74.</P>
+<P>Considering that the real page 57 is assigned "53" (1st and 3rd digits), the difference being 4, it is noted that "23" formed by the 1st and 3rd digits of 2836 is also displaced from the real page 27 by 4.</P>
+<P>With the assumptions thus far, the preceding group 2379 must refer to real page 31 (=27+4), line 39, which gives <i>emprunter</i> (borrow), which nicely fits the context.</P>
+<P>The plaintext turned out to be "Je d&eacute;sire emprunter 17 millions, pouvez-vous vous charger de les r&eacute;aliser et &agrave; quelles conditions?"</P>
+
+<H3>Panizzardi Telegram (1894)</H3>
+<P>The Panizzardi telegram, intercepted at an early stage of the Dreyfus Affair, was also enciphered based on Baravelli's commercial code. As with the above, the unchanged line numbers gave a clue to the codebreakers. See <A HREF="panizzardi.htm">another article</A> for details.</P>
+
+<H3>Slater's Code</H3>
+<P>The Canadian government used Slater's code (<i>Telegraphic Code</i> (1870) by Robert Slater, for which see <A HREF="telegraph2.htm">another article</A>). In 2021, Matthew Brown from England found more than a hundred encoded telegrams from John A. Macdonald <span class="note">(<A HREF="https://en.wikipedia.org/wiki/John_A._Macdonald">Wikipedia</A>)</span>, the first prime minister of Canada (1867-1873, 1878-1891), or people around him, in the Canadian archives and succeeded in decoding most of them (<A HREF="https://scienceblogs.de/klausis-krypto-kolumne/2021/06/30/wie-matthew-brown-die-verschluesselten-telegramme-des-ersten-kanadischen-premierministers-loeste/">Cipherbrain</A>, where a link is given to a list of all the telegrams he found). The telegrams are from 1873, 1879, 1881-1891, when Macdonald was in office.</P>
+<P>Since Slater's code does not simply translate a word into a code group (a code word or a code number) by table lookup, knowledge of the codebook is not sufficient to allow reading the telegrams in code.</P>
+<P>Specifically, Slater's code involves translating a word into a number and, after some manipulation of the number, translating it back into a different word. While Slater proposed many kinds of manipulation including addition, subtraction, transposition, and regrouping, Brown assumed the manipulation involves simply adding some key number, and wrote a computer program to check every possibility (Slater's code includes 25000 entries) to see if the resulting plaintext makes sense. This plausibility is scored according to the frequency of words occurring in the text. That is, if the text is full of uncommon words, its score is low. (More specifically, Brown sorted the words by frequency and simply used each word's position as its score. So, actually, lower scores are better.)</P>
+<P>As it turned out, in 1873, an additive key such as 250, 50, or 500 was used. In 1881-1884, multiples of 100 such as 300, 400, 500 were used as the key, though other keys were also used (e.g., 365 for a message to Tupper <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Charles_Tupper">Wikipedia</A>)</span>).</P> 
+<P>From about 1885, keys were not so simple. As Brown found out, sometimes, the date was added to a base key (e.g., in December 1887, the key was 1242(=1234+8) on <A HREF="https://www.bac-lac.gc.ca/eng/CollectionSearch/Pages/record.aspx?app=fonandcol&IdNumber=554847&new=-8585770620757839540">the</A> <A HREF="https://www.bac-lac.gc.ca/eng/CollectionSearch/Pages/record.aspx?app=fonandcol&IdNumber=554849&new=-8585770620757839540">8th</A>, 1243(=1234+9) on <A HREF="https://www.bac-lac.gc.ca/eng/CollectionSearch/Pages/record.aspx?app=fonandcol&IdNumber=554851&new=-8585770621274782256">the 9th</A>, and 1244(=1234+10) on <A HREF="https://www.bac-lac.gc.ca/eng/CollectionSearch/Pages/record.aspx?app=fonandcol&IdNumber=554864&new=-8585770621274782256">the 10th</A>; all to Tupper). It appears telegrams to Tupper (and others) follow this convention afterwards.</P>
+<P>A subtractive key was sometimes used (e.g., -200 in <A HREF="https://www.bac-lac.gc.ca/eng/CollectionSearch/Pages/record.aspx?app=fonandcol&IdNumber=554376&new=-8585770628244635201">a telegram of 15 June 1886 to J.W. Trutch</A>).</P>
+<br>
+<P>Brown left unsolved a few telegrams, which were tackled by George Lasry, who used frequencies of word bigrams for scoring. Although not all the results were quite satisfactory, Brown confirmed they seemed to be the only ones which made grammatical sense among the top 100 solutions obtained by his method.</P>
+
+
+<A NAME="SEC4"></A>
+<H2>Statistical Analysis</H2>
+<P>Some of the examples above are only the simplest cases. Actual codebreaking seldom proceeds as readily as these and usually requires much more materials in code to get an insight.</P>
+<P>After finding out what code groups occur how frequently, codebreakers examine what other code groups tend to precede or follow each particular code group. Before computers or tabulators <span class="note">(<A HREF="http://en.wikipedia.org/wiki/Tabulating_machine">Wikipedia</A>)</span> were introduced, such a task required many typists, as told by Yardley (Chapter XIV<!--p.261-->). By such a tedious process, code groups are identified one by one.</P>
+<!--<P>Michael Smith, <i>The Emperor's Codes</i> demonstrates breaking the Japanese superenciphered codes in the Appendix.</P>←これは基礎になるコードがいくつかわかっている前提でsuperenciphermentをはぎとるもの-->
+
+<A NAME="SEC4B"></A>
+<H2>Dutch Codebreakers during WWI</H2>
+<P>Florentijn van Kampen (2025), 'Dutch Cryptanalysis of Four American Diplomatic Codes in World War I' (<A HREF="https://dspace.ut.ee/items/4d4a4af4-a626-4dd1-8805-fc16644f5a6c">HistoCrypt 2025</A>) describes breaking of US State Department Codes by Dutch codebreakers during WWI (Section 5.2).</P>
+
+<H3>Blue Code</H3>
+<P>Blue Code was broken by finding a parallel cleartext.</P>
+<P>A telegram in question in Blue Cipher of 1899 was sent on 12 June 1918 from Robert Lansing, the US Secretary of State, to the American legation in the Hague. The American telegram included a few ship names in clear, which allowed deducing the convention word "Dampfer" meant "steamship."</P>
+<P>Two hours later, a telegram in clear of approximately the same length, from the Dutch representatives in Washington to the Dutch Foreign Ministry, passed through the telegraph office in Amsterdam. It was noted that the same ship names occurred in this telegram. Comparison showed that the two telegrams were almost identical. This may sound like a rare coincidence, but both may have quoted the same newspaper in America. Close comparison allowed deciphering of the encoded telegram in the Blue Code.</P>
+<P>This demonstrates the maxim against sending publicly known text in secret code. The US government used the obsoleted Blue Code for such purposes after the introduction of the new Green Code (see <A HREF="ustelegraph3.htm">another article</A>).</P>
+
+<H3>Green Code</H3>
+<P>The Dutch codebreakers were also successful in breaking the current Green Code by analysis of header and identifying typical messages.</P>
+<P>First, header codewords were analyzed based on the known format of US telegrams in clear.</P>
+<P>The first codeword was considered to represent the date because telegrams from the same day began with codewords in which the root (the first three letters in the five-letter codeword) is the same, with the suffix progressing alphabetically from day to day.</P>
+<P>The second codeword was often "miron" or "vunen", while the third and fourth were codewords beginning with "a" with a special construction unlike others. Assuming the alphabetical ordering of codewords and also considering a typical beginning of US telegrams, it was considered that "miron"/"vunen" were "my"/"your" and the third/fourth codeword represented a number.</P>
+<P>Codewords for sender/recipient were identified from knowledge of people likely to be involved (and of course from the assumption of the alphabetical ordering and knowledge of typical telegram headers). Specifically, "fakaw" (for), "fibof" (from), "fucku" (Edwards), "godmy" (Frothingham), and "respo" (Sheldon) were identified. This allowed a conclusion that the suffix is VC for common words and CV for proper names.</P>
+<P>Proceeding with the decryption further than the header codewords would have been difficult but for available typical cleartext messages. The codebreakers noticed cleartext telegrams from The Hague to Washington often included a request of a visa for a specific person. Such cleartext messages always began with "Asks visa" followed by a name and often included "nationality parentage Dutch." Upon examining the coded telegrams for this type of typical messages, it was found that many fitted the pattern, beginning with "cudam tisuk" folllowed by some codewords for proper names and also including a sequence "mitel nipaf gigep". The codebreakers identified these as "cudam" (asks), "tisuk" (visa), "mitel" (nationality), "nipaf" (parentage), "gigep" (Dutch).</P>
+<P>All these were reported on 19 July 1918 and the report from 9 August 1918 shows they were already able to read all telegrams in Green Code.</P>
+
+<H3>Gray Code</H3>
+<P>The breakthrough into the Gray Code was "pabba pegse cupal", which was considered to be "Rotterdam-sche Bank."  Comparing these with the elements of Green Code showed that the Gray Code had a smaller number of codewords than its predecessor, thus having an increasingly smaller number than in the Gray Code for the same plaintext word. The Dutch coobreakers made an alignment chart of codewords between these two codebooks.</P>
+
+<A NAME="SEC5"></A>
+<H2>Codebreaking by Espionage</H2>
+<P>Codebreakers were occasionally given a head start by espionage.</P>
+<A NAME="SEC5a"></A>
+<H3>Spanish Codes (1918)</H3>
+<P>Yardley's <i>The American Black Chamber</i>, Chapter VIII, describes how he used agents to obtain information to break Spanish codes.</P>
+<P>In 1918, Yardley was urged for solution of Spanish codes because Spain was suspected of assisting German espionage<!--p.173-->. Yardley sent an agent to a Spanish consulate in South America. The agent stole into the consulate at night, opened the steel safe, and found the diplomatic code but it would take time to photograph the entire codebook because only a few pages could be photographed each night. Although the code did not match the messages between Spain, America, and Germany, Yardley had expected that<!--p.192-->. Analysis indicated there were about ten different codes for different channels but Yardley thought there were only one or two basic codes and the others were merely secondary codes based on them<!--p.190-->. </P>
+<P>Yardley hired a woman to draw information from a Spanish diplomatic secretary in the Spanish embassy in America<!--p.181;ワシントンかニューヨークか？-->. As it turned out, the Spaniards used 25 different codes for different stations<!--p.192-3-->, which were grouped into 9 different groups.</P>
+<P>Then, a circular telegram was sent from the Spanish Foreign Office in Madrid in four different codes: to Washington and Costa Rica in code number ("indicator") 301, to Lima in 141, to Santo Domingo in 32, and to Panama in 74.</P>
+<P>Soon, the agent provided the photograph of the Code No.74. It assigned four-figure numbers to alphabetically arranged words. The plaintext entry was written as, e.g., "abdic-ar-acion-es", which represented various inflected forms of the word, of which the decoder should identify the intended one according to the context. (This kind of entry is also seen in Napoleonic codes.)</P>
+<P>This allowed decoding the circular telegram. With the plaintext revealed, it was a matter of time to identify code groups for the other codes.</P>
+
+<A NAME="SEC5b"></A>
+<H3>Gray Code</H3>
+<!--横井俊幸『帝国海軍機密室』-->
+<P>Yokoi Toshiyuki, <i>Teikoku Kaigun Kimitsu Shitsu</i> (The Black Chamber of the Imperial Navy) (1953) describes decoding by the Japanese of the Gray Code of the US Department of State.</P>
+<P>The Japanese Navy designated the code as NADED because the code group NADED occurred very frequently. First, code groups of the intercepted messages (which were in the form of either CVCVC or CVCCV, with C being consonant and V vowel) were alphabetically arranged and their occurrences were recorded. The most frequent group NADED was readily identified as a period.</P>
+<P>But it was far from decoding messages. The Navy asked the military police to obtain waste paper from an American consulate. Laborious searching of the waste was sometimes rewarded with a draft, which revealed some code groups and their plaintext counterparts. When the US ambassador submitted a memorandum of the US Department of State to the Japanese government, a telegram intercepted before that had counterparts for the memorandum, which revealed many code groups.</P>
+<P>Before long<!--「上海戦の終る頃」-->, about 5000 code groups were identified. Although it was only a small fraction of what seemed to have 100,000 entries, it allowed the general meaning of telegrams to be known.</P>
+<!--横井は上海のX機関で解読したというが，日本軍のインテリジェンスは伊藤利三郎と百武が解読-->
+<!--日本軍のインテリジェンス　p.28によれば1934年に導入されたブラウンコードは神戸で盗写されたとあるが，ブラウンの導入は1938のはず-->
+
+<A NAME="SEC5c"></A>
+<H3>Japanese Attempts at British Codes</H3>
+<P>In late 1934, the Navy asked the military police to get hold of a British codebook. When the British consulate in Sapporo was moving, a Japanese typist helping the work dropped from a window of the second floor a codebook, which was picked up and carried away by a workman. In about an hour, the codebook was returned to the original casket. In March 1935, the stolen codebook, which was a British inter-departmental codebook, allowed decoding of a telegram of the commander of the British Eastern fleet in Hankou<!--漢口--> to the ministers at home.</P>
+<P>It was, however, a rarely used one. The main code of the British Foreign Ministry was a two-part code. In the summer of 1935, when some 400 code groups had been identified, the code was replaced.</P>
+<P>Again, they resorted to the military police, who apparently had already made attempts at the request of the army. But its first attempt at an embassy in Tokyo had been a fiasco. The agent could open the safe but was detected and arrested. (Yokoi deplores their na&iuml;vet&eacute; by referring to Yardley, whose agent stole into a consulate in South America rather than in Washington <span class="note">(Yardley p.192)</span>.)</P>
+<P>Success came from Osaka. A military police officer disguised as a tailor had obtained access to the British consulate in Osaka since late 1934 and soon succeeded in inducing a clerk to obtain an imprint of the key to the safe in wax. One night when the consul was absent, Japanese agents opened the safe with a copy key and photographed ten-plus codebooks.</P>
+<P>The codebooks were delivered to the Navy's secret agency<!--X機関--> in Shanghai. However, this was not the end, for important telegrams tended to be missing in the intercepts. As it turned out, they were sent via wireline rather than radio. The Japanese agency had to bribe telegraph operators of the Commercial Pacific<!--グアム，ミッドウェー，ハワイを経てアメリカに--> and Great Eastern<!--福州，香港を経て西回りして欧州に--> cable companies to obtain copies of telegrams.<!--Great Northernはガードが固くでだめだったが，取扱量は少ない--></P>
+
+<A NAME="SEC5d"></A>
+<H3>Other Examples</H3>
+<P>Similar activities abound in history. When Yardley was struggling with Japanese telegrams (see <A HREF="yardley.htm">another article</A>), he contemplated stealing into the Japanese consulate in New York <span class="note">(Yardley p.264)</span> or handing the Japanese military attach&eacute; a memorandum for transmission to Japan in order to obtain an encoded message of a known plaintext <span class="note">(ibid. p.266-268)</span>.</P>
+<P>In 1935, the US Navy stole into a Japanese naval attache's apartment in Washington in an attempt to obtain information of the RED cipher machine.</P>
+<P>Back in 1905, it was discovered that Japanese codebooks at the consulate at The Hague had been secretly photographed by a Russian agent.<!--ポーツマスの旗 p.133-140--></P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2014 S.Tomokiyo<br>
+First posted on 1 May 2014. Last modified on 6 July 2025.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+
+

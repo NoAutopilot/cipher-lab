@@ -1,0 +1,184 @@
+<HTML>
+<HEAD>
+<TITLE>Wellington's Polyalphabetic Cipher with a Dictionary Code</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=UTF-8"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher">
+<link rel=stylesheet type=text/css href=decode2.css>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</HEAD>
+
+
+<BODY>
+<H1>Wellington's Polyalphabetic Cipher with a Dictionary Code</H1>
+
+<P>This article is inspired by an auction website, "26066 - Historical Documents, Autographs and Ephemera" (<A HREF="https://live.spink.com/lots/view/4-ML16CI/great-britain-duke-of-wellington-peninsular-war-etc-general-frederick-maitland-1763-1848-17">Spink, Lot 1184</A>), which includes a partially encrypted letter from Wellington to General Maitland dated 2 September 1812 (accessed on 8 September 2026). The website already included an analysis of the letter by Patrick Hayes, an expert who works with the auction house, who expresses "special thanks to cryptanalyst George Lasry for providing his expertise". The reader will see that, before me, they had already established the full scheme of the dictionary code, associated it with Scovell based on what Urban writes about a similar scheme, identified what I call "Key 1" below for the substitution cipher, and also quoted relevant letters.</P>
+
+
+<H3>Necessity of Code/Cipher in the Peninsula for the British</H3>
+<P>British codebreaking of Napoleonic ciphers (including great ciphers) by George Scovell during the Peninsular War is well-known by Mark Urban (2001), <i>The Man Who Broke Napoleon's Codes</i> <span class="note">(I use an edition from HarperCollins)</span> (see <A HREF="napoleon2.htm">another article</A>).</P>
+<P>On the other hand, the British army apparently was not much concerned about communication security until it started to invade deep into Spain in 1812 <span class="note">(ibid. p.252-253)</span>.</P>
+<P>Arthur Wellesley, Lord Wellington (eventually promoted to duke), who had started campaigns from Portugal, soundly defeated the French at the Battle of Salamanca in July 1812, which led to liberation of Madrid. The next target was Burgos, further north and closer to the Biscayan coast. Since a need of closer cooperation between the army and the navy was expected, Commodore Popham (who prescribed naval communication in <i>Telegraphic Signals or Marine Vocabulary</i>) suggested use of a cipher. Rather surprisingly, Wellington did not feel the necessity, given that Scovell had established a communication system by Spanish messengers.</P>
+<DIV class="kakomi">
+I beg to observe to you that I have no cipher in which I could correspond with you: and unless the Spaniards in the north are very different from those I have seen elsewhere, or the enemy opposed to you more active than those I have met with, you have no reason to apprehend that your letters will be intercepted. Those to whom they may be entrusted may not take the trouble of carrying them; but they would prefer death to delivering them to the enemy.<br>
+<span class="note">Wellington to Popham, 11 August 1812 (Urban (2001), p.252)</span>
+</DIV>
+<P>It was a different matter when it came to communications with the army in eastern Spain. Earlier in the year, Wellington requested Lord William Bentinck <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Lord_William_Bentinck">Wikipedia</A>)</span> in Sicily to make a diversionary operation with his garrison. After much vacillation, General Thomas Maitland <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Thomas_Maitland_(British_Army_officer)#HeroSection">Wikipedia</A>, not to be confused with <A HREF="https://en.wikipedia.org/wiki/Frederick_Maitland">Frederick Maitland</A> or <A HREF="https://en.wikipedia.org/wiki/Peregrine_Maitland">Peregrine Maitland</A>)</span> landed near Barcelona with Spanish troops in July but, seeing nothing that could be done against Barcelona, sailed south to Alicante.</P>
+<P>Wellington considered communications with the army in the east were worth protection by cipher.</P> 
+
+
+<H3>Urban's Narrative</H3>
+<P>According to Urban's interpretation of Wellington's dispatches from 29 August and 2 September 1812, "a diplomatic cipher had been sent out, but there had been problems initially with making sure both sides had the same table and later with words not contained in the tables <span class="note">(Urban (2001) p.253; what seem to be these letters put on an auction are further described below with my interpretation)</span>.</P>
+<P>According to Urban, Scovell solved the problems by using the same edition of a pocket dictionary to encode a word in a format such as 134A18, which indicates the 18th word in the left column (A) on page 134 <span class="note">(Urban (2001) p.253, based on Scovell's remarks in his notebook containing a handwritten copy of Conradus' <i>Cryptographia Denudata</i> (see <A HREF="conradus.htm">another article</A>))</span>.</P>
+
+<H3>Wellington's Letter in Code (1812)</H3>
+<P>An actual specimen of a letter employing a dictionary code is put on an auction "26066 - Historical Documents, Autographs and Ephemera" held on 23 September 2026 (<A HREF="https://live.spink.com/lots/view/4-ML16CI/great-britain-duke-of-wellington-peninsular-war-etc-general-frederick-maitland-1763-1848-17">Spink, Lot 1184</A>). (I thank George Lasry for this information.) The beautiful leather binding of the papers bears the name "General Frederick Maitland" <s>(though the career of Thomas Maitland above seems to match the context)</s> <span class="note">(Patrick Hayes confirms that the name "Frederick" appears throughout the letters and his official military commissions. Frederick was a first cousin of Thomas. Frederick's father, Alexander Maitland, and Thomas's father, James Maitland, are sons of Charles Maitland, sixth Earls of Lauderdale.)</span>. </P>
+<P>The volume titled in gilt "LETTERS FROM THE DUKE OF WELLINGTON / 1812-1846" is the one interesting in terms of cryptography. </P>
+
+
+<H3>Dictionary Code</H3>
+<DIV style="float:right; width:800px; padding: 1em; margin: 1em;">
+<img src="maitland1812.png" style="margin: 10px;"> 
+</DIV>
+<P>A note from Wellington at the headquarters<!--Villa Castinに司令部があったことは手紙本文から--> in Villa Castin (near Segovia) dated 2 September employs a dictionary code. For example, the word "use" is encoded as 5b429, in which "429" and "5" must indicate the page and line, respectively. The middle letter "b" may indicate the column but has a larger variety than naively expected.</P>
+<img src="maitland.png" width="640" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"> 
+
+
+<!--出現順
+21 y 288 	occupy
+15 l 405	the
+6 m 205	height
+10 m 297	outside
+17 l 289	of
+19 l 433	which
+9 n 23	are
+12 x 408	to
+23 y 388	southward
+10 n 17	and
+29 y 432	westward
+17 l 289	of
+7 m 409	town
+21 z 350	to rest
+15 y 438	your
+8 b 243	let?
+11 z 290	on
+22 n 365	sea
+As the
+21 l 79	cypher
+sent by the Secretary of State is deficient as affording no means of
+19 m 389	spelling
+23 x 436	words
+I propose
+5 b 429	use
+7 l 405	that?
+which I sent to Lord W^m Bentinck when it is necessary
+22 l 79	to cypher
+23 x 436	words
+not to be found in the Secretary of States'
+21 l 79	cypher
+understanding from a letter from General Donkin that
+15 l 405	the
+12 z 14	alphabet
+8 l 369	sent
+12 x 408	to
+Sir Ed Pellew was not correct. I think it probable that that sent to Lord W^m may not have been so, and 
+3 l 219	inclose
+12 l 19	another
+You will of course have the instruction
+16 m 211	how
+6 l 429	to use
+6 y 232	it
+17 n 203	head
+3 z 336	quarters
+9 n 23	are
+23 n 405	this
+15 x 116	day
+3 y 28	at
+Vila Castin [in cipher]
+10 n 17	and
+4 y 434	will
+7 x 38	be
+13 y 272	tomorrow
+3 y 28	at
+(verso)
+33 x 400	supplying
+8 y 438	you
+5 m 435	with
+8 x 332	provisions
+3 y 28	at
+12 x 408	to
+9 x 20	any
+8 z 16	amount
+8 y 438	you
+13 x 66	can
+20 m 349	require
+20 y 184	fortunate
+4 y 158	event
+3 n 25	as
+6 y 232	it
+4 y 434	will
+13 n 151	enable
+16 l 261	me
+20 y 346 to rejoin
+15 l 405	the
+22 x 412	troops
+12 x 408	to
+17 y 388	south
+3 y 28	at
+1 y 272	more
+4 y 146	early
+12 x 308	period
+
+-->
+
+<H3>Substitution Cipher</H3>
+<P>Words/names not in the dictionary are enciphered letter by letter by using a polyalphabetic cipher. The key is provided by two sets of five strips of paper. The wrapper of the ten strips is endorsed "a cypher recd from Lord Wellington / July 1812".</P>
+<P>The twenty-five letters of the alphabet (there is no "j") are written on each set of five strips, each with five letters. The set A is for plaintext and the set B is for ciphertext. By rearranging the five pieces, there can be 5!=120 substitution patterns. In the letter from 2 September 1812, I identified two more keys in addition to "Key 1" already identifed by the auction house.</P>
+
+<img src="maitland2.png" width="640" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"> 
+
+<P>As can be seen, more than half of ciphertext is nulls. Considering there seems to be no gap in the contemporary deciphering, these are indeed nulls (rather than they need to be deciphered with some other permutation of the key).</P>
+<P>The indication of these nulls as well as the indication of the permutation of the five strips remain to be discovered.</P>
+<P>(As an aside, one ciphertext sequence on the last line on the front page remains undeciphered. "Genl Maitland" written below is not the decryption. Since there are only 120 possible patterns, I thought of solving it myself by trying every possibility with a Perl script, but I had a second thought. When I asked Gemini AI to do it, it successfully came up with a solution "Vila Castin". At first, it gave a wrong key (with the right decryption), but when I pointed it out, it provided the correct key, with an explanation that it confirmed the key with a Perl script. The decrypted context ("Headquarters are this day at Vila Castin and will be tomorrow[?] at Arevalo") matches the place of despatch "Villa Castin".)</P>
+
+<H3>Distribution of the Code/Cipher</H3>
+<P>Wellington had given notice of an upcoming cipher in a despatch to Maitland a few days before.</P>
+<DIV class="kakomi">
+I will answer your letter fully this day in cypher, and you can decypher it, when you get the cypher, which is now on its passage from England.<br>
+<span class="note">an addendum to a letter from Madrid dated 29 August.<!--Maitland7.jpg--></span>
+</DIV>
+<P>Wellington provided the above polyalphabetic cipher in July, but a fuller code was being delivered from England. But (perhaps with the advice of Scovell) Wellington found that the code did not provide for enciphering words/names not in the dictionary, and hence proposed, in his letter of 2 September, using the polyalphabetic cipher distributed in July.</P>
+<DIV class="kakomi">
+As the cypher sent by the Secretary of State is deficient as affording no means of spelling words, I propose to use that which I sent to Lord William Bentinck when it is necessary to cypher words not to be found in the Secretary of State's cypher.
+Understanding from a letter from General Donkin that the alphabet sent to Sir Ed Pellew was not correct, I think it probable that that sent to Lord William may not have been so, and I inclose another. You will of course have the instruction how to use it.
+<span class="note">Wellington to Maitland, 2 September 1812</span>
+</DIV>
+
+<P>The above letters from 29 August and 2 September do not seem to indicate the dictionary code was devised to address the deficiency of the code provided by the home ministry. Scovell's notes on Conradus (see above) leave no doubt that he knew dictionary code, but do not establish the authorship of the dictionary code actually used (unless the despatches Urban used were something different from the above).</P> 
+<P>Regarding the polyalphabetic cipher, Wellington says that, learning that it was not correct by a report from Pellew (commanding the Mediterranean fleet <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Edward_Pellew,_1st_Viscount_Exmouth">Wikipedia</A>)</span>), he enclosed a new copy in his letter to Maitland. But the strips dated July 1812 appear to decipher the 2 September despatch correctly. Probably, the copy sent to Bentinck had no problems as Pellew's (or Maitland replaced the content but kept the wrapper).</P>
+
+
+<!--John Townsendは16 December 1808にFalmouthを出て、23 December 1808にリスボンに到着-->
+
+<br>
+<br>
+<font size="2">
+&COPY;2026 S.Tomokiyo<br>
+First posted on 8 September 2026. This article is encoded in UTF-8. Last modified on 19 September 2026.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

@@ -1,0 +1,1267 @@
+{
+ "collection": "p16003coll11 (Thomas T. Eckert Papers, Huntington Digital Library)",
+ "fetched": "19 Sept 2026",
+ "user_agent": "Mozilla/5.0 (X11; Linux x86_64) cipher-lab research",
+ "note": "Ledger pages (mssEC 19, object 9302, 415 page images) saved at 2583 px wide (IIIF size 2583,); cipher-book pages (mssEC 41, object 351, 41 page images) at 1600 px wide. Transcription text per ledger page comes from https://hdl.huntington.org/digital/api/collections/p16003coll11/items/<pointer>/false (field \"text\"); the cipher-book pages carry no transcription. Added 20 Sept 2026: three more ledger pages (38, 60, 88) at 2583 px and the Cipher No. 2 book mssEC 47 (object 596, 48 page images) pointers 553-589 at 1200 px wide; the transcription in ../key-no2.md was made from 1600 px and 2400 px copies of the same IIIF images.",
+ "ledger_mssEC19_page_count": 415,
+ "book_mssEC41_page_count": 41,
+ "images": [
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 8908,
+   "page_title": "Page 16",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/8908",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/8908/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/8908/info.json",
+   "full_size_px": [
+    6215,
+    7200
+   ],
+   "saved_as": "mssEC19_p8908.jpg",
+   "saved_width_px": 2582,
+   "saved_bytes": 587833
+  },
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 8941,
+   "page_title": "Page 49",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/8941",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/8941/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/8941/info.json",
+   "full_size_px": [
+    6094,
+    7200
+   ],
+   "saved_as": "mssEC19_p8941.jpg",
+   "saved_width_px": 2583,
+   "saved_bytes": 551159
+  },
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 8950,
+   "page_title": "Page 58",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/8950",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/8950/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/8950/info.json",
+   "full_size_px": [
+    6215,
+    7200
+   ],
+   "saved_as": "mssEC19_p8950.jpg",
+   "saved_width_px": 2582,
+   "saved_bytes": 616511
+  },
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 8960,
+   "page_title": "Page 68",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/8960",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/8960/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/8960/info.json",
+   "full_size_px": [
+    6215,
+    7200
+   ],
+   "saved_as": "mssEC19_p8960.jpg",
+   "saved_width_px": 2582,
+   "saved_bytes": 606141
+  },
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 8970,
+   "page_title": "Page 78",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/8970",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/8970/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/8970/info.json",
+   "full_size_px": [
+    6215,
+    7200
+   ],
+   "saved_as": "mssEC19_p8970.jpg",
+   "saved_width_px": 2582,
+   "saved_bytes": 666167
+  },
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 8981,
+   "page_title": "Page 89",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/8981",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/8981/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/8981/info.json",
+   "full_size_px": [
+    6094,
+    7200
+   ],
+   "saved_as": "mssEC19_p8981.jpg",
+   "saved_width_px": 2583,
+   "saved_bytes": 634260
+  },
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 9035,
+   "page_title": "Page 142",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/9035",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/9035/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/9035/info.json",
+   "full_size_px": [
+    6215,
+    7200
+   ],
+   "saved_as": "mssEC19_p9035.jpg",
+   "saved_width_px": 2582,
+   "saved_bytes": 602321
+  },
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 9070,
+   "page_title": "Page 176",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/9070",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/9070/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/9070/info.json",
+   "full_size_px": [
+    6232,
+    7200
+   ],
+   "saved_as": "mssEC19_p9070.jpg",
+   "saved_width_px": 2582,
+   "saved_bytes": 650656
+  },
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 9107,
+   "page_title": "Page 213",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/9107",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/9107/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/9107/info.json",
+   "full_size_px": [
+    6246,
+    7200
+   ],
+   "saved_as": "mssEC19_p9107.jpg",
+   "saved_width_px": 2583,
+   "saved_bytes": 632308
+  },
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 9138,
+   "page_title": "Page 244",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/9138",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/9138/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/9138/info.json",
+   "full_size_px": [
+    6192,
+    7200
+   ],
+   "saved_as": "mssEC19_p9138.jpg",
+   "saved_width_px": 2583,
+   "saved_bytes": 614407
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 315,
+   "page_title": "Title page verso",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/315",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/315/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/315/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p315.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 364915
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 316,
+   "page_title": "Page [A]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/316",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/316/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/316/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p316.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 339576
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 317,
+   "page_title": "Page [B]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/317",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/317/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/317/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p317.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 282284
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 318,
+   "page_title": "Page 1",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/318",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/318/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/318/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p318.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 309836
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 319,
+   "page_title": "Page 2",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/319",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/319/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/319/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p319.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 304972
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 320,
+   "page_title": "Page 3",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/320",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/320/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/320/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p320.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 302094
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 321,
+   "page_title": "Page 4",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/321",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/321/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/321/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p321.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 314062
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 322,
+   "page_title": "Page 5",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/322",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/322/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/322/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p322.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 306316
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 323,
+   "page_title": "Page 6",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/323",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/323/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/323/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p323.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 328969
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 324,
+   "page_title": "Page 7",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/324",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/324/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/324/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p324.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 320908
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 325,
+   "page_title": "Page 8",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/325",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/325/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/325/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p325.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 311610
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 326,
+   "page_title": "Page 9",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/326",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/326/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/326/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p326.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 341502
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 327,
+   "page_title": "Page 10",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/327",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/327/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/327/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p327.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 339383
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 328,
+   "page_title": "Page 11",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/328",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/328/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/328/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p328.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 313431
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 329,
+   "page_title": "Page 12",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/329",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/329/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/329/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p329.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 313886
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 330,
+   "page_title": "Page 13",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/330",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/330/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/330/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p330.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 302066
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 331,
+   "page_title": "Page 14",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/331",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/331/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/331/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p331.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 313350
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 332,
+   "page_title": "Page 15",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/332",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/332/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/332/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p332.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 318207
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 333,
+   "page_title": "Page 16",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/333",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/333/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/333/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p333.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 362319
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 334,
+   "page_title": "Page 17",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/334",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/334/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/334/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p334.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 367548
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 335,
+   "page_title": "Page 18",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/335",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/335/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/335/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p335.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 350748
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 336,
+   "page_title": "Page 19",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/336",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/336/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/336/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p336.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 330540
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 337,
+   "page_title": "Page 20",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/337",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/337/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/337/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p337.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 358148
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 338,
+   "page_title": "Page 21",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/338",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/338/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/338/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p338.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 348180
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 339,
+   "page_title": "Page 22",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/339",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/339/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/339/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p339.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 342203
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 340,
+   "page_title": "Page 23",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/340",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/340/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/340/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p340.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 343482
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 341,
+   "page_title": "Page 24",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/341",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/341/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/341/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p341.jpg",
+   "saved_width_px": 1600,
+   "saved_bytes": 403648
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 342,
+   "page_title": "Back fly leaf 1 recto",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/342",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/342/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/342/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p342.jpg",
+   "saved_width_px": 1599,
+   "saved_bytes": 400285
+  },
+  {
+   "object": 351,
+   "call_number": "mssEC 41",
+   "object_title": "Cipher for Telegraphic Correspondence ... (Cipher No. 1, filled in)",
+   "page_pointer": 350,
+   "page_title": "Directions for use",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/350",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/350/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/350/info.json",
+   "full_size_px": null,
+   "saved_as": "mssEC41_p350.jpg",
+   "saved_width_px": 1599,
+   "saved_bytes": 374287
+  },
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 8930,
+   "page_title": "Page 38",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/8930",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/8930/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/8930/info.json",
+   "full_size_px": [
+    6215,
+    7200
+   ],
+   "saved_as": "mssEC19_p8930.jpg",
+   "saved_width_px": 2582,
+   "saved_bytes": 654449
+  },
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 8952,
+   "page_title": "Page 60",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/8952",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/8952/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/8952/info.json",
+   "full_size_px": [
+    6215,
+    7200
+   ],
+   "saved_as": "mssEC19_p8952.jpg",
+   "saved_width_px": 2582,
+   "saved_bytes": 588231
+  },
+  {
+   "object": 9302,
+   "call_number": "mssEC 19",
+   "object_title": "United States Military Telegraph, War Department. Sent [Jan 1864 - Dec 1865]",
+   "page_pointer": 8980,
+   "page_title": "Page 88",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/8980",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/8980/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/8980/info.json",
+   "full_size_px": [
+    6215,
+    7200
+   ],
+   "saved_as": "mssEC19_p8980.jpg",
+   "saved_width_px": 2582,
+   "saved_bytes": 606466
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 553,
+   "page_title": "Title page verso",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/553",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/553/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/553/info.json",
+   "full_size_px": [
+    4679,
+    6647
+   ],
+   "saved_as": "mssEC47_p553.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 161583
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 554,
+   "page_title": "Page [A]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/554",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/554/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/554/info.json",
+   "full_size_px": [
+    4852,
+    6647
+   ],
+   "saved_as": "mssEC47_p554.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 172187
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 555,
+   "page_title": "Page 1",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/555",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/555/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/555/info.json",
+   "full_size_px": [
+    4871,
+    6647
+   ],
+   "saved_as": "mssEC47_p555.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 175035
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 556,
+   "page_title": "Page 2",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/556",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/556/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/556/info.json",
+   "full_size_px": [
+    4863,
+    6669
+   ],
+   "saved_as": "mssEC47_p556.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 193151
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 557,
+   "page_title": "Page 3",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/557",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/557/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/557/info.json",
+   "full_size_px": [
+    4792,
+    6647
+   ],
+   "saved_as": "mssEC47_p557.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 222386
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 558,
+   "page_title": "Page 4",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/558",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/558/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/558/info.json",
+   "full_size_px": [
+    4863,
+    6647
+   ],
+   "saved_as": "mssEC47_p558.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 206164
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 559,
+   "page_title": "Page 5",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/559",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/559/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/559/info.json",
+   "full_size_px": [
+    4752,
+    6647
+   ],
+   "saved_as": "mssEC47_p559.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 217166
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 560,
+   "page_title": "Page 6",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/560",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/560/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/560/info.json",
+   "full_size_px": [
+    4877,
+    6647
+   ],
+   "saved_as": "mssEC47_p560.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 194617
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 561,
+   "page_title": "Page 7",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/561",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/561/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/561/info.json",
+   "full_size_px": [
+    4763,
+    6647
+   ],
+   "saved_as": "mssEC47_p561.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 229125
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 562,
+   "page_title": "Page 8",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/562",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/562/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/562/info.json",
+   "full_size_px": [
+    4854,
+    6647
+   ],
+   "saved_as": "mssEC47_p562.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 203680
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 563,
+   "page_title": "Page 9",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/563",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/563/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/563/info.json",
+   "full_size_px": [
+    2256,
+    3000
+   ],
+   "saved_as": "mssEC47_p563.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 234929
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 564,
+   "page_title": "Page 10",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/564",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/564/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/564/info.json",
+   "full_size_px": [
+    5080,
+    6647
+   ],
+   "saved_as": "mssEC47_p564.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 224074
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 565,
+   "page_title": "Page 11",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/565",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/565/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/565/info.json",
+   "full_size_px": [
+    5117,
+    6764
+   ],
+   "saved_as": "mssEC47_p565.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 249149
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 566,
+   "page_title": "Page 27",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/566",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/566/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/566/info.json",
+   "full_size_px": [
+    4848,
+    6647
+   ],
+   "saved_as": "mssEC47_p566.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 253766
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 567,
+   "page_title": "Page 28",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/567",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/567/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/567/info.json",
+   "full_size_px": [
+    4974,
+    6647
+   ],
+   "saved_as": "mssEC47_p567.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 232993
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 568,
+   "page_title": "Page 29",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/568",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/568/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/568/info.json",
+   "full_size_px": [
+    4963,
+    6647
+   ],
+   "saved_as": "mssEC47_p568.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 191252
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 569,
+   "page_title": "Page 30",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/569",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/569/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/569/info.json",
+   "full_size_px": [
+    4922,
+    6647
+   ],
+   "saved_as": "mssEC47_p569.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 212289
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 570,
+   "page_title": "Page 12",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/570",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/570/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/570/info.json",
+   "full_size_px": [
+    5027,
+    6647
+   ],
+   "saved_as": "mssEC47_p570.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 225328
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 571,
+   "page_title": "Page 13",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/571",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/571/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/571/info.json",
+   "full_size_px": [
+    4933,
+    6647
+   ],
+   "saved_as": "mssEC47_p571.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 218838
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 572,
+   "page_title": "Page 14",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/572",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/572/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/572/info.json",
+   "full_size_px": [
+    5037,
+    6647
+   ],
+   "saved_as": "mssEC47_p572.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 211436
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 573,
+   "page_title": "Page 15",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/573",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/573/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/573/info.json",
+   "full_size_px": [
+    4888,
+    6647
+   ],
+   "saved_as": "mssEC47_p573.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 199070
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 574,
+   "page_title": "Page 16",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/574",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/574/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/574/info.json",
+   "full_size_px": [
+    4978,
+    6647
+   ],
+   "saved_as": "mssEC47_p574.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 195191
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 575,
+   "page_title": "Page 17",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/575",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/575/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/575/info.json",
+   "full_size_px": [
+    4976,
+    6647
+   ],
+   "saved_as": "mssEC47_p575.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 209162
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 576,
+   "page_title": "Page 18",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/576",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/576/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/576/info.json",
+   "full_size_px": [
+    4897,
+    6647
+   ],
+   "saved_as": "mssEC47_p576.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 246685
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 577,
+   "page_title": "Page 19",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/577",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/577/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/577/info.json",
+   "full_size_px": [
+    4999,
+    6647
+   ],
+   "saved_as": "mssEC47_p577.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 243764
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 578,
+   "page_title": "Page 20",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/578",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/578/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/578/info.json",
+   "full_size_px": [
+    4947,
+    6647
+   ],
+   "saved_as": "mssEC47_p578.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 228795
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 579,
+   "page_title": "Page 21",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/579",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/579/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/579/info.json",
+   "full_size_px": [
+    4921,
+    6647
+   ],
+   "saved_as": "mssEC47_p579.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 242673
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 580,
+   "page_title": "Page 22",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/580",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/580/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/580/info.json",
+   "full_size_px": [
+    4778,
+    6647
+   ],
+   "saved_as": "mssEC47_p580.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 245181
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 581,
+   "page_title": "Page 23",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/581",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/581/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/581/info.json",
+   "full_size_px": [
+    4792,
+    6647
+   ],
+   "saved_as": "mssEC47_p581.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 245868
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 582,
+   "page_title": "Page 24",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/582",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/582/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/582/info.json",
+   "full_size_px": [
+    4881,
+    6647
+   ],
+   "saved_as": "mssEC47_p582.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 220029
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 583,
+   "page_title": "Page 25",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/583",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/583/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/583/info.json",
+   "full_size_px": [
+    5187,
+    6647
+   ],
+   "saved_as": "mssEC47_p583.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 243482
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 584,
+   "page_title": "Page [25A]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/584",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/584/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/584/info.json",
+   "full_size_px": [
+    4928,
+    6647
+   ],
+   "saved_as": "mssEC47_p584.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 223245
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 585,
+   "page_title": "Page [25B]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/585",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/585/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/585/info.json",
+   "full_size_px": [
+    4810,
+    6647
+   ],
+   "saved_as": "mssEC47_p585.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 215795
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 586,
+   "page_title": "Page [25C]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/586",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/586/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/586/info.json",
+   "full_size_px": [
+    5064,
+    6647
+   ],
+   "saved_as": "mssEC47_p586.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 194692
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 587,
+   "page_title": "Page [25D]",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/587",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/587/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/587/info.json",
+   "full_size_px": [
+    4907,
+    6647
+   ],
+   "saved_as": "mssEC47_p587.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 175170
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 588,
+   "page_title": "Back fly leaf 1 recto",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/588",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/588/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/588/info.json",
+   "full_size_px": [
+    5081,
+    6647
+   ],
+   "saved_as": "mssEC47_p588.jpg",
+   "saved_width_px": 1200,
+   "saved_bytes": 206892
+  },
+  {
+   "object": 596,
+   "call_number": "mssEC 47",
+   "object_title": "Cipher for Telegraphic Correspondence; arranged expressly for Military Operations, and for important Government despatches. [Cipher Book #2]",
+   "page_pointer": 589,
+   "page_title": "Back fly leaf 1 verso",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/589",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/589/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/589/info.json",
+   "full_size_px": [
+    4994,
+    6647
+   ],
+   "saved_as": "mssEC47_p589.jpg",
+   "saved_width_px": 1199,
+   "saved_bytes": 175179
+  }
+ ],
+ "book_mssEC47_page_count": 48
+}

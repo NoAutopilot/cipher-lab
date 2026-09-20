@@ -1,0 +1,257 @@
+<HTML>
+<HEAD>
+<TITLE>Codebreaking of a Spanish Cipher with Vowel Indicators
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Charles V">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Codebreaking of a Spanish Cipher with Vowel Indicators</H1>
+
+
+<P>I succeeded in solving a cipher in a letter to Emperor Charles V from Suarez de Figueroa, Spanish ambassador in Genoa, dated 24 May 1529 (<A HREF="http://pares.mcu.es/ParesBusquedas20/catalogo/show/3546229">PARES</A>). At first glance, the ciphertext looks very complex with superscript and subscript numerals and other diacritics. However, many Spanish ciphers in the sixteenth century used a vowel indicator system, whereby diacritic signs indicate vowels. Indeed, such a cipher was used by Admiral Andrea Doria of Genoa in the preceding months (called the Doria-Charles V Cipher (1528) in <A HREF="spanish2.htm#SEC13A">another article</A>). If the ambassador's cipher is based on a similar system, codebreaking should not be very difficult. After all, a vowel indicator system separates vowels from consonants, which greatly facilitates the task of codebreaking. Moreover, the ciphertext leaves some word divisions.</P>
+<P>The present article describes how I solved this cipher, which I call the Figueroa-Charles V Cipher (1529). Although cryptanalysis against a Spanish cipher with vowel indicators is already described in Adler et al., "Reading Encrypted Diplomatic Correspondence: An Undergraduate Research Project", <i>Cryptologia</i> 32:1 (2008), I believe an additional specimen is of some interest. Codebreaking is an art that cannot be covered by general principles alone.</P>
+
+<H3>Frequency Counting</H3>
+<DIV style="float:right; width:600px">
+<img src="CharlesVFigueroa1529b.jpg">
+</DIV>
+<P>One first notes that superscript/subscript numerals are limited to 2, 3, 7 (subscript) and 2 (superscript). I assumed these were vowel indicators and, to see which numeral stood for which vowel, I counted the frequencies of these numerals occurring on the first page (using a Japanese tally symbol "正"). I thought the frequent subscript numerals 2 and 3 were either E or O, the least frequent one (subscript 7) was U, and the superscript 2 was I. As to A, by analogy from the Doria-Charles V Cipher (1528), I was feeling that the two dots below a letter might indicate A. As it turned out, these were all correct. But I was not sure enough to pursue these hypotheses.</P>
+<P>A dot above a letter is used only in sequences at the beginning and the end of ciphertext and may well indicate a null.</P>
+
+<H3>Pattern Matching</H3>
+<P>There are some repeated patterns such as m<sub>2</sub>fi<sub>3</sub>o<sub>3</sub>n<sup>2</sup>h<sub>2</sub>f and o<sub>3</sub>h<sub>2</sub>d<sup>2</sup>sd<sup>2</sup>na (cipher symbols herein are approximate representations). I searched for words with these syllable structures. To take the second pattern as an example, o<sub>3</sub>, h<sub>2</sub> and d<sup>2</sup> would be Consonant+Vowel and s, n, and a would be single letters. Moreover, d<sup>2</sup> is repeated. I found fifteen words matching this pattern: BABOSEASEIS, CACAREAREIS, COLOREAREIS, DISOCIACION, MANOSEASEIS, NEGOCIACION, PAJAREAREIS, PAYASEASEIS, RAPOSEASEIS, RUMOREAREIS, SABOREAREIS, SENOREAREIS, TARAREAREIS, VITOREAREIS. Of these, NEGOCIACION seemed plausible. (By the way, the word also gave a breakthrough when I broke an Italian cipher earlier this year.) Again, NEGOCIACION turned out to be correct in the end, but I could not be sure at the time, partly because it was not consistent with hypotheses obtained from the first pattern.</P>
+<P>I once gave up solving this myself.</P>
+
+<H3>Breakthrough</H3>
+<P>On 17 December 2018, I had to be on train for an hour, during which I gave a look at the ciphertext again. The above identification NEGOCIACION would give identifications:</P>
+<P>o<sub>3</sub>(NE) h<sub>2</sub>(GO) d<sup>2</sup>(CI) s(A) d<sup>2</sup>(CI) n(O) a(N).</P>
+<P>That is, d<sup>*</sup> reads C*, *<sub>2</sub> reads *O, and a reads N. The word following this pattern in the ciphertext is "d<sub>2</sub>a", which, with the above identifications, can be read as CON. (This alone demonstrates the weakness of the vowel indicator system.) It is further followed by +<sup>14</sup>, obviously a code symbol for some proper noun. "Negotiation with somebody" completely made sense. Moreover, the frequency of consonants seemed right.</P>
+<P>I now felt I could pursue these identifications further.</P>
+
+<H3>Revealing Values of Symbols</H3>
+<P>Then, I found a pattern on the second page: rav<sub>3</sub>m<sup>2</sup>h<sub>3</sub>ad<sup>2</sup>B, which partially reads:</P>
+<P>r(*) a(N) v<sub>3</sub>(*E) m<sup>2</sup>(*I) h<sub>3</sub>(GE) a(N) d<sup>2</sup>(CI) B(*).</P>
+<P>Although I do not know Spanish, loanwords of Latin origin in English allowed me to recognize Spanish words. In this case, it was not difficult to guess INTELIGENCIA, which revealed further symbols.</P>
+<P>INTELIGENCIA is followed by CON, which in turn is followed by:</P>
+<P>B(A) p(*) h<sub>7</sub>(GU) o<sub>..</sub>(NA) f(*).</P>
+<P>(By this time, I felt sure enough of my hypotheses for the vowel indicators "7" and "..".) Here, I could see a word ALGUNAS, one of the few Spanish words I had learnt in working with Spanish ciphers.</P>
+<P>Now, the first pattern above could be partially read:</P>
+<P>m<sub>2</sub>(LO) f(S) i<sub>3</sub>(*E) o<sub>3</sub>(NE) n<sup>2</sup>(*I) h<sub>2</sub>(GO) f(S),</P>
+<P>which suggests a word ENEMIGOS. I was not sure of the consonant for i<sub>3</sub>(*E) but soon the regularity of the cipher (see below) indicated it should be HE. (Google search returns many instances of "los henemigos" in Spanish.)</P>
+<P>Now, it was a matter of time to reveal the remaining symbols. The word INPORTANCIA confirmed a symbol for I and allowed for identifying P and R. The name ANDREA DORIA gave D. The word PORQUE gave QUE. Thus, analogy from English, historical background, and the least knowledge of Spanish words all played a part in the deciphering.</P>
+
+<H3>Figueroa-Charles V Cipher (1529)</H3>
+<P>The reconstructed cipher is shown below. As expected, it is similar to the Doria-Charles V Cipher (1528) even in the regularity in assignment of base symbols for syllables (e.g., "d" for "ca, ce, ci, co, cu"). It is noted that base symbols for syllables are the next letter in the alphabet ("d" for "c", "e" for "d", etc.).</P>
+<P>Use of superscript numerals is an additional feature but it is pretty much obvious that the sole superscript "2" would be nothing more than another subscript numeral.</P>
+<img src="CharlesVFigueroa1529a.jpg" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>Deciphered Letter of Suarez de Figueroa to Emperor Charles V (24 May 1529)</H3>
+<P>The following is my preliminary reading of the letter. (In October 2020, I made many corrections according to information kindly provided by Demetrio Mart&iacute;n Vilela from Argentina. Since I limited the corrections to where I could confirm the errors were due to my deciphering/transcription, I am responsible for any remaining errors not inherent in the ciphertext. Mart&iacute;n's provisional reading will be presented below.)</P>
+<P><i>Italics</i> are clear text in the original. Brackets [ ] indicate yet undeciphered cipher symbols.</P>
+<P>The large crossout in the manuscript ciphertext indicates it was deciphered on a separate sheet. The plaintext may be found somewhere in the archives.</P>
+<DIV class="kakomi2" style="width: auto;">
+(p.1)
+<i>el conde luidovico de bel Joyoso llego aqui estando escriuiendo esta el qual embia Antonio de leiua con<br>
+cartas de crehencia Para esta senoria y para el capitan Andrea doria y para iiij</i> -----[6][3]----<br>
+- que procuremos que esta republica haga dos mil infantes con otros dos mil que tiene y que<br>
+aqui se busque dineros sobre los granos que an devenir y que destos haga el dicho con de<br>
+tres mil o quatro mil honbres y iuntos podrian haber gran effeto porque serian<br>
+forcados los henemigos a perder todo lo que esta desta parte depo o venir a socorrelo y desta<br>
+manera dexarian libre a milan y los [+^5] por si noserian parte para estar desta parte de a da<br>
+y si estu viesen podria serque les diesen en la cabeca los trigos no son legados<br>
+para que se pueda tomar sobre los el canbio y de otra manera nose halara porque andrea<br>
+doria dia que a causa de no a vera ceptado el canbio de los treinta mil escudos no<br>
+se halaria quien qui siese dar ninguna cosa he habladocen - <i>micer ansaldo y tanbien dize<br>
+que pues no</i> - se a cepto este canbio queno qui ere darmas toda vis setra ba iacomo se pueda<br>
+aver algundinere para poder encaminar esta negociacion por ser casa de muncha<br>
+inportancia y que totalmente daria la vida a las cosas de milan y seria des haber el<br>
+designo de los henemigos y venidos que fue[&beta;]en los alemanes se podrea scusar este<br>
+gasto - <i>yntes que viniese elconde ludovico yoaviaplanticado</i> - que con l gente que tenia la<br>
+se&ntilde;oria / [t]ncrecer mas en costa sehia ese esta iornada y escusa [e_..]nse con serpoca<br>
+gente y que a vian platicado esta nogociacion con [+^14] y que siel venia ene lo que se<br>
+podria habermas de lo que se pensade y sise puede a der el remedio que para esta effeto<br>
+se busca gran bien seria en tretanto que - <i>v. Mag<sup>t</sup></i> - pro vene de remedio / por lo que<br>
+yo? trabaio esto es por metelos en el na y le porque despues dancaran aunque no<br>
+quieran / - <i>y vuestra Mag<sup>t</sup> tenga por cierto que aprovecharan</i> - agoramos dial que despues<br>
+treinta ---------------<br>
+<i>[two paragraphs in clear text]</i><br>
+(p.2)<br>
+<i>[three paragraphs in clear text]</i><br>
+----------------<br>
+- que todavia se platica de haver la enpresa desta ciudad y que Yanes de Canpo[v]ra-<br>
+goso pide a la se&ntilde;oria de venecia tres mil infantes pagados / y iuntos con<br>
+los de Sanpol / que podrian haber la vicha enpresa a mime parece que si notienen<br>
+inteligencia con algunas personas vesta ciudad que no podran sa lir conesta<br>
+porque para esta enpres es menester traher buen hexercito por tierra y armada<br>
+por mar y para li de la tierra ternan muncha falta de mantenimientos de manera que sin<br>
+estos no podran estar a quimuncho tienpo / pero el de signo sucono podria ser<br>
+meior / porque saliendo con esta enpresa por nian las cosas del [+^13] enes tremo<br>
+pues seria quitale la platica y el remedio que de canbios y otras cosas de<br>
+a qui levan y pensar de quitara - <i>V. Mag<sup>t</sup></i> - este raso para su venida de manera que es menes<br>
+te pro veher contienpo y a esta causa yo? les hago instancia en li que el conde ludovico<br>
+les a pedido porque halandonos con las armas en las manos mudaran de parecer hasta<br>
+agora nose avia concl[v]ydo mas de lo que arriba tergo escrito / pero tengo esperanca<br>
+que se haraviendo el designo que lis henemigos haben devenir a que / ------------<br>
+</DIV>
+
+<H4>Reading and Provisional Translation</H4>
+<P>The following is a provisional reading with quick English translation kindly provided by Demetrio Mart&iacute;n Vilela, in which I made some changes according to his comments. I am responsible for any errors in these changes.</P>
+<DIV class="kakomi2" style="width: auto;">
+- que procuremos que esta republica haga dos mil infantes con otros dos mil que tiene y que<br>
+<span class="deciphered">that we seek this republic make two thousand infantrymen with another two thousand he has and that</span><br>
+<br>
+aqui se busque dineros sobre los granos que han de venir y que destos haga el dicho conde<br>
+<span class="deciphered">here look for money over the cereal to come and from those the said Count make<br></span>
+<br>
+tres mil o quatro mil honbres y iuntos podrian haber gran effeto porque serian<br>
+<span class="deciphered">three or four thousand men and together could make big effect because<br></span>
+<br>
+forcades los henemigos a perder todo lo que ... o venir a socorrerlo y desta<br>
+<span class="deciphered">the enemies would be forced to lose everything ...or come to rescue him and in this<br></span>
+<br>
+manera dexarian libre a milan y los ... por si no serian ... <br>
+<span class="deciphered">manner set Milano free and ...would not by themselves be ...<br></span>
+<br>
+y si estuviesen podria ser que les diesen en la cabeca los trigos no son legados<br>
+<span class="deciphered">and if they were, it might be that they would be hit in their heads. Wheat is not arrived<br></span>
+<br>
+para que se pueda tomar sobre los el canbio y de otra manera nose halara porque andrea<br>
+<span class="deciphered">so the exchange can be taken on them and other way will not be found because Andrea<br></span>
+<br>
+doria dira que a causa de no haber aceptado el canbio de los treinta mil escudos no<br>
+<span class="deciphered">Doria will say that because the exchange of the thirty thousand escudos was not accepted will<br></span>
+<br>
+se halaria quien quisiese dar ninguna cosa he hablado con - micer ansaldo y tambi&eacute;n dize<br>
+<span class="deciphered">not be found who want to give anything. Talking with Micer Ansaldo also says<br></span>
+<br>
+que puesno - se acepto este canbio que no quiere dar mas todavia se trabaia como se pueda<br>
+<span class="deciphered">that this exchange was not accepted he doesn't want to give more, still working on that. As <br></span>
+<br>
+aver algun dinero para poder encaminar esta negociacion por ser causa de mucha <br>
+<span class="deciphered">any money could be got to put this negotiation straight as is a cause of big<br></span>
+<br>
+inportancia y que totalmente daria la vida a las cosas de milan y seria deshaber el<br>
+<span class="deciphered">importance and totally would give the life to the things of Milano and would be undo<br></span>
+<br>
+designo de los henemigos y venidos que fue[β]en los alemanes se podra escusar este gasto<br>
+<span class="deciphered">enemies' design and when the German come this expenditure could be excused<br></span>
+<br>
+antes que viniese el conde ludovico yo avia platicado - que con la gente que tenia la se&ntilde;oria<br>
+<span class="deciphered">before Count Ludovico came I talked - that with the people the Signoria had<br></span>
+<br>
+... esta iornada y escusanse con ser poca<br>
+<span class="deciphered">... this day and they excuse with be few<br></span>
+<br>
+gente y que a vian platicado esta nogociacion con [+^14] y que si el venia<br>
+<span class="deciphered">people and they had talked this negotiation with ... and if he come <br></span>
+<br>
+podria haber mas de lo que se pensade y si se puede a der el remedio que para esta effeto<br>
+<span class="deciphered">could be more than it was thought and whether the cure that for this effect is looked for can be given<br></span>
+<br>
+se busca gran bien seria entretanto que - v. Magt - pro vene de remedio / por lo que<br>
+<span class="deciphered">great good would be meanwhile Your Maj. gives cure / hence<br></span>
+<br>
+yo? trabaio esto es por meterlos en el na y le porque despues dancaran aunque no quieran<br>
+<span class="deciphered">work this to put them in the [difficult position?] because after (that) they will dance whether they like it or not <br></span>
+<br>
+/ - y vuestra Magt tenga por cierto que aprovecharan -<br>
+<span class="deciphered">and Your Maj. have as certain that they will take benefit<br></span>
+<br>
+- que todavia se platica de haver la enpresa desta ciudad y que Yanes de Canpodragoso<br>
+<span class="deciphered">that is still talked about the endeavour of this city and that Ya&ntilde;ez [Llanes?] de Campofragoso<br></span>
+<br>
+pide a la se&ntilde;oria de venecia tres mil infantes pagados / y iuntos con<br>
+<span class="deciphered">asks the Signoria of Venice three thousand infantrymen with pay / and together with<br></span>
+<br>
+lis de sanpol / que podrian haber la dicha enpresa a mi me parece que si no tienen<br>
+<span class="deciphered">those of Sanpol (Saint Paul?)/ that could make that endeavour. I reckon if they haven't<br></span>
+<br>
+inteligencia con algunas personas desta ciudad que no podran salir con esta<br>
+<span class="deciphered">intelligence with some persons of this city, they won't be well ridden <br></span>
+<br>
+porque para esta enpres es menester traher buen hexercito por tierra y armada<br>
+<span class="deciphered">because for this endeavour is necessary to bring good army by land and navy<br></span>
+<br>
+por mar y para la de la tierra tendran mucha falta de mantenimientos de manera que sin<br>
+<span class="deciphered">by sea and for that of the land they will have great lack of supplies so without<br></span>
+<br>
+estos no podran estar aqui mucho tienpo / pero el designo suyo no podria ser<br>
+<span class="deciphered">these they cannot be here long time. but your design can't be<br></span>
+<br>
+meior / porque saliendo con esta enpresa pondrian las cosas del [+^13] en estremo<br>
+<span class="deciphered">better /because with this endeavour they put ??'s matters to the extreme <br></span>
+<br>
+pues seria quitale la platica y el remedio que de canbios y otras cosas de<br>
+<span class="deciphered">as would be take from them the talks and the cure from exchanges and other things<br></span>
+<br>
+aqui levan y pensar de quitar a - V. Magt - esta rason para su venida de manera que <br>
+<span class="deciphered">(that they) take from here and think of taking from Your Maj this reason for Your coming so <br></span>
+<br>
+es menester proveher con tienpo y a esta causa yo? les hago instancia en la que el conde ludovico<br>
+<span class="deciphered">is neccessary to provide in time and to this cause ... I witness in what Count Ludovico<br></span>
+<br>
+les a pedido porque halandonos con las armas en las manos mudaran de parecer hasta<br>
+<span class="deciphered">has asked because finding us weapons in hand they'll change their minds, till <br></span>
+<br>
+agora no se avia concluido mas de lo que arriba tengo escrito / pero tengo esperanza<br>
+<span class="deciphered">now it wasn't concluded more than I have written above But I have hope<br></span>
+<br>
+que se hara viendo el designo que los henemigos haben de venir a que / ------------<br>
+<span class="deciphered">it will be done seen the design that the enemies would come to ...<br></span>
+<br>
+</DIV>
+
+<H3>Historical Background</H3>
+<P>In 1528, when the French was leading a successful campaign in Italy, King Francis I alienated the Genoese admiral, Andrea Doria. He entered the Emperor's service and drove out the French from Genoa. <!--https://en.wikipedia.org/wiki/Andrea_Doria, カール５世p.103--> The French army in the southern Italy collapsed<!--https://en.wikipedia.org/wiki/Siege_of_Naples_(1528)-->.</P>
+<P>At the Battle of Landriano (in Lombardy) on 21 June 1529, the Count of St. Pol's French troops for relieving the French army besieging Genoa were defeated by the Spanish army under Antonio de Layva <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Battle_of_Landriano">Wikipedia</A>)</span>. The Pope made peace with the Emperor at the Peace of Barcelona on 29 June 1529. (The above letter was written about a month before this.)</P>
+<P>In August 1529, Francis I and the Emperor made peace in the Treaty of Cambrai. This ended Francis I's involvement in the War of the League of Cognac against the Emperor (1526-1530).</P>
+
+
+<!--
+まず添え字の頻度カウント
+_3, _2が多く、^2がまあまあ多く、_7が少ない
+_3,_2はe, oで、_7はuで、^2はiと推定
+Doria-Philip Cipherの例から下の２点がaと推定
+ただし、自信なかった
+
+１ページ目にm_2f1_3o_3n^2h_2fが２回出現、o_3h_2d^2∫d^2naが２回出現。後者はnegociacionにマッチするが、行き詰まり。
+いったんあきらめたが、実家に戻って１時間の通勤の際にもう一度見てみると、negociacionの次のconが解読でき、有望ではと思う。
+２ページ目を見ていて、inteligenciaが解読できることに気づく。これはいけるのではないか。
+algunosからlとsを推定。
+前者のパターンはlis enemigosかもしれない。mが判明。
+*nstanciaからJみたいのがiかもと思うが、自信ない。
+agoraからrを推定したが自信ない。
+１ページ目に戻ってinportanciaでiが確定。pとrも推定できた。
+Andrea Doriaからdも推定できた。
+porqueからqueも推定できた。
+-->
+
+
+<H3>Related Articles:</H3>
+<P>S. Tomokiyo, <A HREF="spanish2.htm">Spanish Ciphers during the reign of Emperor Charles V</A></P>
+<P>S. Tomokiyo, <A HREF="spanish3.htm">Spanish Ciphers during the Reign of Philip II</A></P>
+<br>
+<br>
+<font size="2">
+&COPY;2018 S.Tomokiyo<br>
+First posted on 23 December 2018. Last modified on 2 October 2020.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

@@ -1,0 +1,152 @@
+<HTML>
+<HEAD>
+<TITLE>
+Philip II's First Cipher (1543)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Philip II">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Philip II's First Cipher (1543)</H1>
+
+<P>Prince Philip, later Philip II of Spain, was entrusted with regency when his father, Emperor Charles V, left Spain in May 1543<!--Kamen p.10-->, when he was about to turn sixteen.</P>
+<P>A cipher used in the first year of Philip's regency can be reconstructed from an undeciphered letter of Suarez de Figueroa to Prince Philip of 20 November 1543 (<A HREF="http://pares.mcu.es/ParesBusquedas20/catalogo/description/3562080">PARES</A>) by using the clear text<!--A los xxv dels* assado scrivi a v. al. ultimamente con un vergantin que despache de a qui ....--> of the letter of 17 November 1543 (<A HREF="http://pares.mcu.es/ParesBusquedas20/catalogo/show/3561997">PARES</A>). This cipher may have been the first cipher in his correspondence (not that he did the (de)ciphering himself). I tentatively call it the Figueroa-Philip Cipher (1543).</P>
+<P><font size="2">(Philip II is known to have paid attention to information security by use of ciphers, but he was not versed in the practice himself. Geoffrey Parker (2014), <i>Imprudent King: A New Life of Philip II</i> reproduces the King's letter to the Duke of Alba of 7 August 1567 in his own hand and points out that he enciphered only key words instead of whole passages and enciphered a word letter by letter rather than using a symbol for combinations (Fig. 28).)</font></P>
+<img src="CharlesV1543.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>See <A HREF="spanish2.htm#SEC13">another article</A> to see this and other Spanish ciphers used at the time.</P>
+
+
+<H3>Attempted Codebreaking</H3>
+<P>The following describes my initial attempt at codebreaking, with partial success, before I noticed a plaintext was available.</P>
+<P>At first glance, I supposed from the use of superscript numerals that the basic structure would be the same as that of the Doria-Figueroa-Philip Cipher (1548) based on the vowel indicator system.</P>
+<P>Word boundaries discernible here and there provide a promising clue. Moreover, "v. al." appeared to be in clear ("vuestra alteza"). So 4 occurring before "v. al." would be either A or DE.</P>
+<P>It was noted the pattern &delta;'4gw<sup>4</sup>&rho;<sup>3</sup>4 <span class="note">(ciphertexts reproduced herein are not-so-close approximations)</span> occurred several times. Assuming w<sup>4</sup> and &rho;<sup>3</sup> both represent a syllable (vowel + consonant), I first assumed &rho;<sup>3</sup>=RI and 4=A (which turned out to be correct). Words matching this pattern such as CALVARIA, SALVARIA, etc. were found in a dictionary but did not seem right.</P>
+<P>The pattern &infin;a'&sigma;' was very frequent. I once thought of a possibility of a three-letter code symbol, but separate occurrences of a' and &sigma;' assured that these were three cipher symbols. The most frequent trigram in Spanish is QUE, which is consistent with the fact that &infin; is always followed by a'. Then, the two-letter word &sigma;'3 might be EN. (This later turned out to be ES forming only a part of a word. That is, the space between symbols does not always correspond to actual word boundaries.)</P>
+<P>There are four-letter patterns beginning with QUA, which appeared to be QUAL and thus allowed identification of a symbol for L. Three-letter patterns ending in EL indicated DEL and thus identified a symbol for D.</P>
+<P>I also assumed w<sup>2</sup>+L was DEL, which identified w<sup>2</sup>=DE.</P>
+<P>A striking weakness of the vowel indicator system is that identification of one syllable reveals other syllables for the same consonant. Thus, w<sup>2</sup>=DE and &rho;<sup>3</sup>=RI suggests w<sup>4</sup>=DO, which led to a hypothesis that the above-mentioned pattern &delta;'4gw<sup>4</sup>&rho;<sup>3</sup>4 might be ***DORIA, such as *AL DORIA. (In the end, this turned out to be "capitan JUAN DORIA".)</P>
+<P>On the first line, "v. al." in clear is followed by U+L+p<sup>3</sup>. If the superscript 3 is I as in &rho;<sup>3</sup>=RI, I thought this might be a Spanish counterpart for the English "ultimo."</P>
+<br>
+<P>On the third page, the letter seems to end with a date line and the margin has something like "Dupp." Although the remaining text cannot be a duplicate for the preceding portion from its shortness, I found several words at the beginning and the end matched those of the first portion. It allowed identification of some homophones: &omega;<sup>6</sup>=a'c. But this ended up in confusing me because I thought it contradicted the above finding that w<sup>2</sup>=DE. (I should have realized w, which has an overbar, and &omega; were different symbols.)</P>
+<br>
+
+<P>At this point, I checked other letters from Suarez of Figueroa to Prince Philip to see typical expressions used at the beginning or around "v. al."
+The following specimens were found.</P>
+<DIV class="kakomi2">
+1543-06-16<br>
+Despues que llego su mag enesta ciudad que fue alos xxv de mayo <br>
+<br>
+1543-06-24<br>
+Por la anta que scrivi a los xvj del presente y por la Relacion del com.^or ...<br>
+... a vra entendido vra alteza particularmente ....<br>
+<br>
+1543-06-30<br>
+A los xxvij del passado scriri a. v. al. con las galezas del principe ...<br>
+...<br>
+Lo que despues a y quedeziz es ....<br>
+<br>
+1543-07-16<br>
+A los onze despassado scrivi a v. al. y di particular aviso de todo lo ...<br>
+<br>
+1543-08-11<br>
+A los xvj del passado scrivi a v. al. con una fragata<br>
+<br>
+1543-08-28<br>
+A los xj del presente scrivi a V. Al. con una Caravela que despache ....<br>
+...<br>
+deque das aviso a. v. Al. del successo de las cosas dernica sera V. Al.<br>
+por las ....<br>
+...<br>
+... tambien embio a vl. Al. copia del que se <br>
+....<br>
+De su Mag^d ha muchos dias que ....<br>
+... dare aviso a. v. al.<br>
+<br>
+1543-09-29<br>
+Teniendo scripto y cereado el despacho que embio a v. Al. con la<br>
+...<br>
+entendido v. Al. lo de mas que ...<br>
+va con esta vera V.Al. lo que hasta a quella hera se ...<br>
+alo qual merennito y los avisos que v.al. por el aviso que dello<br>
+...<br>
+el servi^o de V. Al^a y bien....<br>
+<br>
+Por las ...<br>
+</DIV>
+
+<P>From these specimens, I was almost certain that the beginning of the letter &Theta;u<sup>7</sup>3 was A-LO-S.</P>
+<P>I might proceed like this to identify other symbols but I thought letters of closer date might provide more clues. As expected, the letter of 17 November had "a. vl. ultimamente" near the beginning. The word "ultimamente" was what I was looking for. As it turned out, this was not the only word corresponding to the ciphered letter. This letter of 17 November turned out to provide the plaintext of the cipher letter of 20 November.</P>
+
+
+
+
+<!--
+2018.12.1
+v. al.が頻出。vuestra altezaと思われる。とすると、その前の4はaかde。
+∂' 4 g ω^4 ρ^3 4が頻出。→4＝a　→ρ^3はriではないか。★g=lだとすると、VALSESIAか.と思ったが、同音字の同定によるとωはVらしいからCALVARIAまたはSALVARIA
+∞a'σ'も頻出。３字コードかとも思ったが、a'やσ'が他のコンテキストでも使われているので、サイファーだろう。
+queか。(ωの後は必ずa'らしい)だとすると第１行などのσ'3はenではないか。→esだった。
+qualらしき単語をみつけてlを同定。
+delも特定。
+ω^2+L＝delだとしたら、∂' 4 g ω^4 ρ^3 4の後半はDoriaか。だとしたら*AL DORIA。
+
+
+第一行のv.al.の次はultim?
+
+後半部分の冒頭と末尾は前半と同じらしい。若干の同音字が同定できる。特にaとv
+
+幸い同じ文通者の手紙が多数あるので、冒頭の頻出区やv.al.の前後によく使われる単語を調べようと思った。
+冒頭がA losだとすると、3=s。だとすると上記のultimのuとlが合うぞ。しかも１１月１７日の手紙ではultimamnteというスペイン語を発見。よく見るとその後の似てる。それが解読文だった。
+
+×第３ページの下のほうにω^3ω^4　ω^2がある。スペースの後は無視するとω^3ω^4＝siseでは？
+×次の行にω^4ω^6とあるが、sesoまたはsesa。前者のような気がする。
+×v. al.を使う文脈を調べるとescrivi a v.al.とaviso a. v. al.があった。（他にembio a v. al., qual vera v. al.）第１行もそうかも。だとするとρ^3はriではなくviか。
+
+-->
+
+
+
+<!--20 Novemberの手紙の最終ページのメモ。内容を説明しているらしい。
+lo de hasta aqui es copia de lo tra que seriui a vuestra alteza con una Corauella Que despache de aqui a Barcelona y agora este una nave donoeva el ordinaris de Roma y loque despues se ha officfado y se entrends de Flandes de que dar aviss a vuestra alteza veras li culor mentepor la copia que va conesta re que no tarearan cuillegar cartas de su magestad por les quales se entendera Los li cul a ridad dee successo de Todo de loque en tendiere aviso re a vuestra alteza.
+Assi mismo embio a V. Al: un despacho del Morgios delgasto
+por el qual vera V. Al: todo losuocedado despues de la pusa del
+mondoui y por los despachos que embio de Vencia y Sicilia
+y Cotros y tes lo que alle sessfecsee de nueuo al qual
+maremito.-->
+
+<H3>Comparison</H3>
+<P>The first half of the ciphertext of 20 November 1543 is generally identical with the clear text of 17 November 1543 but there are the following differences:</P>
+<P>(i) the fourth line of the ciphertext lacks "y con esta va el duplicado" present in the clear text;</P>
+<P>(ii) the fifth to third lines from the bottom of the second page of the ciphertext has something like "... de la gente que se va y a el sacadole los ojos como mas particularmente entende ? v.al. por los despachos que van con estadel Marques don Pe[d?]ro Goncalez de Mendoca a los quales me remito." The corresponding clear text (the last two lines on the second page) is much shorter and reads something like "... la gente gon? Clauaua con mos particularmente haura v. al. entendid? por la Cotra".</P>
+<P>(iii) the clear text appended to the first half of the ciphertext is different from the ending remark of the clear text.
+<P>These differences might only concern different routes of the two copies.</P>
+<P>The second half of the ciphertext, of which a counterpart is not present in the 17 November letter, begins with something like "Lo de hasta a que es copia de otra qui? escrivi a v. al. con una cara vela que despacho de a qui a Barcelona y agora parti una navidon de va el ordinario de ...." As with the first part, the clear text may be found somewhere in the archives.</P>
+
+<H3>Related Articles:</H3>
+<P>S. Tomokiyo, <A HREF="spanish2.htm">Spanish Ciphers during the reign of Emperor Charles V</A></P>
+<P>S. Tomokiyo, <A HREF="spanish3.htm">Spanish Ciphers during the Reign of Philip II</A></P>
+<br>
+<br>
+<font size="2">
+&COPY;2018 S.Tomokiyo<br>
+First posted on 10 December 2018. Last modified on 4 January 2020.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+

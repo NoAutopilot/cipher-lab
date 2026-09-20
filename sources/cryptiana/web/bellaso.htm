@@ -1,0 +1,531 @@
+<HTML>
+<HEAD>
+<TITLE>
+ルネサンス期の暗号，450年ぶりに解読（ベラソの暗号）
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, Bellaso, Belaso">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>ルネサンス期の暗号，450年ぶりに解読（ベラソの暗号）</H1>
+
+<P>文芸復興（ルネサンス）の発祥の地であるイタリアは，暗号の使用についても都市国家間の外交で必須のものとして他国に先駆けて発達しており，１５世紀なかばにはアルベルティが多表式換字や頻度分析について記述している．１６世紀には日常業務の必要性もあって多くの書記官たちが暗号の新しい方式を模索していた <span class="note">(<A HREF="http://en.wikipedia.org/wiki/Giovan_Battista_Bellaso">Wikipedia</A>)</span> が，その一人がジョヴァン・バッティスタ・ベラソ（Giovan Battista Bellaso）だった（著作のタイトルページにもBelasoとあるがこれは誤記だという）．</P>
+<P>ベラソには1553年，1555年，1564年の著作があるが，多表式換字の換字表の切り換えをキーワード（キーフレーズ）によって指定する方式を導入したことで知られる．<!--Wikipedia, Kahn p.137-->暗号化にあたって平文に付記するそのようなキーワード（キーフレーズ）をcontrassegno（英語のcountersign）と呼んでいる．</P>
+<P>その第二，第三の著作では読者への課題として，著作で紹介されている暗号法に基づく暗号文をそれぞれ三つ，七つ掲載していた．この課題は４世紀半にわたって解読されずにいたが，2009年にその大半がトニー・ガフニー（Tony Gaffney）氏によって解読された．氏は新聞の個人広告欄に投稿された仲間内の秘密の暗号文を多数収集して解読文を発表した著作<i>The Agony Column Codes & Ciphers</i>の著者（筆名Jean Palmer）でもある．</P>
+<P>ここではまず三つの著作に記載されている暗号法について解説した後，解読のあらましを紹介する．ほんのささいな手がかりから出発して暗号文を解き明かす過程はそれだけでも興味深いものであるが，筆者の個人的な関心の的は，ガフニー氏がイタリア語を知らずにイタリア語の暗号を解読したという点にある<!--tonybalonyの投稿で本人がそう言っている；http://www.ciphermysteries.com/2009/03/31/450-year-old-challenge-cipher-crackedにも-->．</P>
+<P>（追記：その後，2016年にはさらに二つの暗号がノーベルト・ビーアマン（Norbert Biermann）氏によって解読された．こちらはシミュレーテッド・アニーリングというコンピューター・プログラミング技法（ランダムな変化を徐々に小さくしていきながら最適解をみつけるアルゴリズム）を使ったもの．）</P>
+
+<H2>1553年の第一の著作<i>La Cifra Del Sig. Giovan Battista</i>（ジョヴァン・バッティスタ氏の暗号）</H2>
+
+
+<P>この最初の著作では次のようなペアリング表を使った互換式の暗号法を紹介している．たとえば左端にABとある最初の表は平文のaをnに，平文のnをaにというように，対になった文字を互いに入れ換える（「互換」）ことを表わしている．下記はそのような換字表を１１個示しているのだが，これらの換字表をキーワードを用いて切り換えていく．キーワードがVIRTUTI OMNIA PARENTであれば，まず平文の各文字に１字ずつキーワード（countersign）を書いていく．平文の第１字に付されたキーワード文字はVなのでVXの表を使って暗号化し，平文の第２字に付されたキーワード文字はIなのでILの表を使って暗号化する，などとなる．</P>
+<DIV style="margin-left: 2em"><TT>
+AB a b c d e f g h i l m<br>
+&nbsp;&nbsp;&nbsp;n o p q r s t u x y z<br>
+<DIV style="line-height: 6pt"><br></DIV>
+CD a b c d e f g h i l m<br>
+&nbsp;&nbsp;&nbsp;t u x y z n o p q r s<br>
+<DIV style="line-height: 6pt"><br></DIV>
+EF a b c d e f g h i l m<br>
+&nbsp;&nbsp;&nbsp;z n o p q r s t u x y<br>
+<DIV style="line-height: 6pt"><br></DIV>
+GH a b c d e f g h i l m<br>
+&nbsp;&nbsp;&nbsp;s t u x y z n o p q r<br>
+<DIV style="line-height: 6pt"><br></DIV>
+IL a b c d e f g h i l m<br>
+&nbsp;&nbsp;&nbsp;y z n o p q r s t u x<br>
+<DIV style="line-height: 6pt"><br></DIV>
+MN a b c d e f g h i l m<br>
+&nbsp;&nbsp;&nbsp;r s t u x y z n o p q<br>
+<DIV style="line-height: 6pt"><br></DIV>
+OP a b c d e f g h i l m<br>
+&nbsp;&nbsp;&nbsp;x y z n o p q r s t u<br>
+<DIV style="line-height: 6pt"><br></DIV>
+QR a b c d e f g h i l m<br>
+&nbsp;&nbsp;&nbsp;q r s t u x y z n o p<br>
+<DIV style="line-height: 6pt"><br></DIV>
+ST a b c d e f g h i l m<br>
+&nbsp;&nbsp;&nbsp;p q r s t u x y z n o<br>
+<DIV style="line-height: 6pt"><br></DIV>
+VX a b c d e f g h i l m<br>
+&nbsp;&nbsp;&nbsp;u x y z n o p q r s t<br>
+<DIV style="line-height: 6pt"><br></DIV>
+YZ a b c d e f g h i l m<br>
+&nbsp;&nbsp;&nbsp;o p q r s t u x y z n<br>
+</TT></DIV>
+<P>なお，上記の各換字表は下段を適宜ずらしたものになっている．そのずらし方は一見ランダムに見えるが，左端の大文字をA-E-I-O-U-C-G-M-Q-S-Y（最初に母音を並べあとはアルファベット順）の順にたどっていくと，一つずつずらしていったものになっている．</P>
+<P>（ちなみに，キーワード文字のAとBなどで同じ換字表を使わず，アルファベットの文字の数だけ異なる換字表にしてもよさそうなものだが，上記のように，アルファベットの順番を変えずに位置をずらすだけという作成法を使う限り，１段の文字の数しか換字表は作れない．）</P>
+<br>
+<P>この方法では暗号化と復号は対称的であり（平文のaは暗号文のnに対応し，平文のnは暗号文のaに対応する），暗号化と同じ手続きで復号ができる．</P>
+<P>さらに，単語の区切りを隠すために，単語間の空白にY（普通の単語にあまり使われない文字）を入れておくことも説明している．</P>
+<P>また，キーワード／キーフレーズとしては複数の詩行を用意し，暗号化すべき各行ごとに切り換えて使うことを提案している．多表式換字では通信文の文字とキーワードの文字が正確に対応していることが必須であり，途中キーワードの割り当てを１文字でも間違えると解読できなくなってしまうという欠点があり，行ごとに毎回キーワード／キーフレーズを新たに開始することで，そのような危険を最小限にできる．</P>
+
+<H2>1555年の第二の著作<i>Novi et Singolari Modi Di Cifrare</i>（新規かつ独特な暗号化の方法）</H2>
+<P>紹介される暗号法は第一の著作と同じペアリング表に基づく互換式の換字だが，換字表の新しい作成法が紹介されている．</P>
+<P>Arma virumque cano, troiae qui primus ab orisというフレーズから子音を順に抽出したもの（R M Q C N T P S B）（同じ子音が出てきたら２回目以降は無視する）にアルファベットの残りの文字を続け，さらに３文字おきに母音AUIEOを挿入したシーケンス（R M Q <u>A</u> C N T <u>U</u> P S B <u>I</u> D F G <u>E</u> H L X <u>O</u> Y Z）をつくり，前半１１文字の下に後半１１文字を書いて下記のようなペアリング表を作る．（２つめ以降は下段を順次１文字ずつ右にずらしていく．）</P>
+<P>換字表の切り換えを指定する文字（表の左端の大文字）も不規則にしたいなら，このシーケンスから最初の５つの子音は母音AVIEOと対にし（RA MU QI CE NO），あとは残っている子音を二つずつ対にしていけばよい（TP SB DF GH LX YZ）．</P>
+<P>その結果は次のようになる．</P>
+<DIV style="margin-left: 2em"><TT>
+RA r m q a c n t u p s b<br>
+&nbsp;&nbsp;&nbsp;i d f g e h l x o y z<br>
+<DIV style="line-height: 6pt"><br></DIV>
+MV r m q a c n t u p s b<br>
+&nbsp;&nbsp;&nbsp;z i d f g e h l x o y<br>
+<DIV style="line-height: 6pt"><br></DIV>
+QI r m q a c n t u p s b<br>
+&nbsp;&nbsp;&nbsp;y z i d f g e h l x o<br>
+<DIV style="line-height: 6pt"><br></DIV>
+CE r m q a c n t u p s b<br>
+&nbsp;&nbsp;&nbsp;o y z i d f g e h l x<br>
+<DIV style="line-height: 6pt"><br></DIV>
+NO r m q a c n t u p s b<br>
+&nbsp;&nbsp;&nbsp;x o y z i d f g e h l<br>
+<DIV style="line-height: 6pt"><br></DIV>
+TP r m q a c n t u p s b<br>
+&nbsp;&nbsp;&nbsp;l x o y z i d f g e h<br>
+<DIV style="line-height: 6pt"><br></DIV>
+SB r m q a c n t u p s b<br>
+&nbsp;&nbsp;&nbsp;h l x o y z i d f g e<br>
+<DIV style="line-height: 6pt"><br></DIV>
+DF r m q a c n t u p s b<br>
+&nbsp;&nbsp;&nbsp;e h l o x y z i d f g<br>
+<DIV style="line-height: 6pt"><br></DIV>
+GH r m q a c n t u p s b<br>
+&nbsp;&nbsp;&nbsp;g e h l o x y z i d f<br>
+<DIV style="line-height: 6pt"><br></DIV>
+LX r m q a c n t u p s b<br>
+&nbsp;&nbsp;&nbsp;f g e h l o x y z i d<br>
+<DIV style="line-height: 6pt"><br></DIV>
+YZ r m q a c n t u p s b<br>
+&nbsp;&nbsp;&nbsp;d f g e h l o x y z i<br>
+</TT></DIV>
+<P>このような複雑な手続きはその気になればいくらでも変種が考えられるが，要は暗号表全体をメモしておかなくても，記憶可能なフレーズからいつでも暗号表を作成できるということである．</P>
+<P>暗号化については，やはり長めの単語の末尾にYを書いた上で全体を４文字ずつのブロックに分割し，４文字群ごとに換字表を切り換える．暗号表切り換えのためには詩行などをキーワード／キーフレーズを使い，上記の表の左端の切り換え指定文字に従って切り換える．４行ごとに異なる詩行を使うとしている．</P>
+<P>変形として，ブロックごとではなく１字ごとに換字表を切り換え，キーワード／キーフレーズは１行ごとにも切り換えてもよい．</P>
+
+<H3>同音字の導入</H3>
+<P>次は換字表に同音字を導入したものが提案される．換字表は次のようなものである．（２つでなく４つの換字表を使えばより強力になることは言うまでもない．）</P>
+<DIV style="margin-left: 2em">
+<TT>A B C D E F G H I K L M N O P Q R S T V X Y Z &</TT> &#x2184; &#x42F;<br>
+<TT>g m p t i s r e q f u b i a y o d l e y n u c y o a</TT><br>
+<DIV style="line-height: 6pt"><br></DIV>
+<TT>A B C D E F G H I K L M N O P Q R S T V X Y Z &</TT> &#x2184; &#x42F;<br>
+<TT>y i e o l u o b y a p i r f c s e u m g y d a t n q</TT><br>
+</TT></DIV>
+<P>それぞれ下段の平文文字を上段の文字に暗号化するようになっている．下段は各母音が２回ずつ出てくるようになっているので，頻度の高い母音を２通りの暗号文字で表わすことができる．そのほか空白の代わりに使う（厳密には「長い語のあとに使う」となっており，laやsiaといった短い語のあとの空白は単に無視する）文字 y は３通りの暗号文字で表わせる．このような同音字を導入したため，&#x2184; &#x42F;という文字まで使ってもh k x zは暗号化できないのだが，イタリア語ではこれらの文字はほとんど使われないので点を打っておけばいいとされている．</P>
+
+<P>そしてこれまでに述べた方法で暗号化されているという暗号文が三つ掲げられている．</P>
+
+<H2>1564年の第三の著作　<i>Il Vero Modo Di Scrivere in Cifra</i>（真の暗号記法）</H2>
+<P>この著作ではさらに７通りの暗号化の方法を紹介しているが，最後のものは他と違って互換に基づくものではなく，二文字単位で暗号化するという独特なものとなっている．</P>
+
+<H3>方法１</H3>
+<P>新たな換字表の作成方法として，キーワードの最初の音節を上段に書き，残りを下段に書き（同じ文字が反復して現われたら無視），あとはアルファベット順に埋めていく．たとえばSATURNOというキーワードでは次のようになる（最初の音節saが上段，残りturnoが下段にある）．</P>
+<DIV style="margin-left: 2em"><TT>
+s a b c d e f g h i<br>
+t u r n o l m p q x<br>
+</TT></DIV>
+<P>そして下段を１文字ずつずらして１０通りの表を作成する．（それに合わせて換字表は１０列で打ち切っておりY, Zが含まれていないが，これらはあまり使われないのでもし書く必要があったらそのままY, Zと書けばよいとされている．Xは単語間の空白を表すのに使う．）</P>
+<P>最初のX（単語間の空白）までは換字表１を使い，次のXまでは換字表２を使い，などと切り換えていく．</P>
+
+<H3>方法２</H3>
+<P>同様にしてキーワードIOVE（Jove）からは次のような換字表ができる．</P>
+<DIV style="margin-left: 2em"><TT>
+IDVQ i o a b c d f g h l<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u e m n p q r s t x<br>
+
+OFER i o a b c d f g h l<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x u e m n p q r s t<br>
+
+AGMS i o a b c d f g h l<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t x u e m n p q r s<br>
+
+BHNT i o a b c d f g h l<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s t x u e m n p q r<br>
+
+CLPX i o a b c d f g h l<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r s t x u e m n p q<br>
+</TT></DIV>
+
+<P>これは換字表の指定を数字でなく英字で行なうが，その英字は最初の換字表の文字ioab...を縦に順に書いていくことによって得られる．</P>
+<P>換字表の切り換えを指定するためのキーフレーズ（たとえばOptare meliora ferre omnia）を使い，最初の単語の最初の文字はOによって指定される換字表（上記のうち２番目のもの）を使い（二文字目以降は順次次の換字表を使う；以下同じ），次の単語の最初の文字はPによって指定される換字表（最後のもの）を使い，などとする．その際（短い単語があると解読の手がかりになるので）前後の単語と字間をつめておく．</P>
+
+<H3>方法３</H3>
+<P>上記の方法２と同様だが，キーフレーズは使用せず，その代わり，各単語の先頭にランダムな大文字を付しておき，それが換字表を指定するようにする．virtutiという単語を暗号化するために，ランダムにMを選んだとすると，Mによって指定される換字表（３番目のもの）を使って暗号化してasihoisとなり，暗号文にはMasihoisと書く．受け手は先頭のMによって換字表を知り，asihoisを解読すればよい．</P>
+
+<H3>方法４</H3>
+<P>これもキーフレーズは使用せず，自己鍵という方式を使う．最初の単語は最初の換字表で暗号化し，二番目の単語は直前の単語の最初の文字によって指定される換字表を使うというものである．Ave maria…を暗号化するには，最初のAveは最初の換字表を使い，二番目のmariaを暗号化するにはAveの最初の文字Aによって指定される換字表（３番目のもの）を使う，などとなる．</P>
+
+<H3>方法５</H3>
+<P>これもキーフレーズは使用しない．空白をxで置き換えておき，上から順に一文字ずつ換字表を変えていく．次の単語は直前のx（空白）を暗号化したのに使ったのと同じ換字表を使う．ars lunga...を暗号化するとすると，まずこれをarsxlunga...として，a,r,s,xをそれぞれ１番目，２番目，３番目，４番目の換字表で順に暗号化し，次のlはxと同じ４番目の換字表で暗号化する．このようにしていくとmglarcbru...という暗号文が得られる．</P>
+
+<H3>方法６</H3>
+<P>高頻度語を英字２字のコードで表わす．あとは上記の方法２と同様だが，換字表の切り換えを指定するキーフレーズの文字を割り振る際にはコード表に載っている高頻度語はスキップする．</P>
+<P>例としてMARTEをキーワードとして次のような換字表が使われる．（先と同様，最初の換字表は，キーワードの最初の音節MARを上段に，残りTEを下段に書いて，残りの文字をアルファベット順に埋めて作成している．）</P>
+<TABLE rules="rows">
+<TR><TD rowspan="4">MDTP</TD>
+<TD>Altra</TD><TD>alcuno</TD><TD>assai</TD><TD>accio</TD><TD>accioche</TD><TD>ancora</TD><TD>ancorache</TD><TD>benche</TD><TD>che</TD><TD>Che</TD></TR>
+<TR><TD>M</TD><TD>A</TD><TD>R</TD><TD>B</TD><TD>C</TD><TD>D</TD><TD>F</TD><TD>G</TD><TD>H</TD><TD>I</TD></TR>
+<TR><TD>T</TD><TD>E</TD><TD>L</TD><TD>N</TD><TD>O</TD><TD>P</TD><TD>Q</TD><TD>S</TD><TD>V</TD><TD>X</TD></TR>
+<TR><TD>che</TD><TD>cosa</TD><TD>cosi</TD><TD>come</TD><TD>certi</TD><TD>della</TD><TD>debba</TD><TD>dica</TD><TD>detto</TD><TD>deve</TD></TR>
+
+<TR><TD rowspan="4">AFEQ</TD>
+<TD>del</TD><TD>doppo</TD><TD>dubio</TD><TD>essere</TD><TD>essendo</TD><TD>essa</TD><TD>eccellente</TD><TD>fussi</TD><TD>forsi</TD><TD>gratia</TD></TR>
+<TR><TD>M</TD><TD>A</TD><TD>R</TD><TD>B</TD><TD>C</TD><TD>D</TD><TD>F</TD><TD>G</TD><TD>H</TD><TD>I</TD></TR>
+<TR><TD>X</TD><TD>T</TD><TD>E</TD><TD>L</TD><TD>N</TD><TD>O</TD><TD>P</TD><TD>Q</TD><TD>S</TD><TD>V</TD></TR>
+<TR><TD>grata</TD><TD>grande</TD><TD>havuta</TD><TD>havemo</TD><TD>hanno</TD><TD>habia</TD><TD>imperoche</TD><TD>ilche</TD><TD>ilquale</TD><TD>inogni</TD></TR>
+
+<TR><TD rowspan="4">RGLS</TD>
+<TD>intutto</TD><TD>ilvostro</TD><TD>ilnostro</TD><TD>imperio</TD><TD>lettera</TD><TD>laquale</TD><TD>lequale</TD><TD>laonde</TD><TD>lamolto</TD><TD>molto</TD></TR>
+<TR><TD>M</TD><TD>A</TD><TD>R</TD><TD>B</TD><TD>C</TD><TD>D</TD><TD>F</TD><TD>G</TD><TD>H</TD><TD>I</TD></TR>
+<TR><TD>V</TD><TD>X</TD><TD>T</TD><TD>E</TD><TD>L</TD><TD>N</TD><TD>O</TD><TD>P</TD><TD>Q</TD><TD>S</TD></TR>
+<TR><TD>modo</TD><TD>male</TD><TD>mondo</TD><TD>mille</TD><TD>non</TD><TD>non</TD><TD>nostro</TD><TD>nella</TD><TD>ogni</TD><TD>ognicosa</TD></TR>
+
+<TR><TD rowspan="4">BHNV</TD>
+<TD>per</TD><TD>perilche</TD><TD>pero</TD><TD>percio</TD><TD>percioche</TD><TD>poco</TD><TD>poter</TD><TD>prego</TD><TD>poi</TD><TD>possa</TD></TR>
+<TR><TD>M</TD><TD>A</TD><TD>R</TD><TD>B</TD><TD>C</TD><TD>D</TD><TD>F</TD><TD>G</TD><TD>H</TD><TD>I</TD></TR>
+<TR><TD>S</TD><TD>V</TD><TD>X</TD><TD>T</TD><TD>E</TD><TD>L</TD><TD>N</TD><TD>O</TD><TD>P</TD><TD>Q</TD></TR>
+<TR><TD>quanto</TD><TD>quella</TD><TD>quando</TD><TD>questa</TD><TD>qualche</TD><TD>recevuta</TD><TD>scritta</TD><TD>scisse</TD><TD>scrivo</TD><TD>stata</TD></TR>
+
+<TR><TD rowspan="4">CIOX</TD>
+<TD>sopra</TD><TD>sono</TD><TD>sempre</TD><TD>signor</TD><TD>signoria</TD><TD>tutto</TD><TD>tanta</TD><TD>virtu</TD><TD>vostra</TD><TD>una</TD></TR>
+<TR><TD>M</TD><TD>A</TD><TD>R</TD><TD>B</TD><TD>C</TD><TD>D</TD><TD>F</TD><TD>G</TD><TD>H</TD><TD>I</TD></TR>
+<TR><TD>Q</TD><TD>S</TD><TD>V</TD><TD>X</TD><TD>T</TD><TD>E</TD><TD>L</TD><TD>N</TD><TD>O</TD><TD>P</TD></TR>
+<TR><TD>Habiamo recevute le vostre lettere</TD>
+<TD>Le vostre lettere me sono state gratissime</TD>
+<TD>laviso cheme datime accaro perdiversi rispetti</TD>
+<TD>vedice mo in risposta della vostra ch &c.</TD>
+<TD>usareti Ogni diligentia P faper laverita De questo fatto</TD>
+<TD>quanto Piu presto me dareti aviso tato piu acaro</TD>
+<TD>Fe confidemo nella vostra Prudenza &c.</TD>
+<TD>E stato resolto Nel nostro Consilio che</TD>
+<TD>No macati esequir quanto Ve habiamo scritto</TD>
+<TD>desidere Mo haver piu Porticolar avisa De questo fatto</TD></TR>
+</TABLE>
+<P>表に載っている高頻度語（最下段は「お手紙頂戴しました」のような定型句らしい）は，その左側の文字（４つのうちのどれでもよい）＋上（または下）に隣接する文字で表わす．たとえばhavemoはql（al, el, flでもよい），dellaはpp（mp, dp, tpでもよい）と暗号化される．解読の際，暗号文中の２文字の語はこれら高頻度語を表わすことが前提となるので，方法２で述べたように短い単語は前後の単語とくっつけておくことが必要になる．</P>
+<P>また，方法３のようにキーフレーズを使わず大文字をつけることも可能．この場合も，高頻度語を暗号した二文字コードには大文字を添加しない．</P>
+<P>方法４のように自己鍵を使うことも可能．</P>
+
+<H3>方法７</H3>
+<P>これは方法１～６のようなペアリング表を使った互換式の暗号ではなく，二文字単位で暗号化を行なう．具体的には次のような暗号表を使う．</P>
+
+<TABLE rules="rows">
+<TR><TD></TD><TD>V</TD><TD>E</TD><TD>N</TD><TD>T</TD><TD>I</TD><TD>A</TD><TD>R</TD><TD>M</TD><TD>D</TD><TD>X</TD><TD>B</TD><TD>C</TD><TD>F</TD><TD>G</TD><TD>H</TD></TR>
+
+<TR><TD rowspan="2">P</TD><TD>pu</TD><TD>pe</TD><TD>pn</TD><TD>pt</TD><TD>pi</TD><TD>pa</TD><TD>pr</TD><TD>pm</TD><TD>pd</TD><TD>px</TD><TD>pb</TD><TD>pc</TD><TD>pf</TD><TD>pg</TD><TD>ph</TD></TR>
+<TR><TD>aa</TD><TD>ea</TD><TD>ia</TD><TD>oa</TD><TD>ua</TD><TD>A</TD><TD>aa</TD><TD>ae</TD><TD>ai</TD><TD>ao</TD><TD>au</TD><TD>A</TD><TD>accio</TD><TD>altra</TD><TD>ancore</TD></TR>
+
+<TR><TD rowspan="2">H</TD><TD>hh</TD><TD>hu</TD><TD>he</TD><TD>hn</TD><TD>ht</TD><TD>hi</TD><TD>ha</TD><TD>hr</TD><TD>hm</TD><TD>hd</TD><TD>hx</TD><TD>hb</TD><TD>hc</TD><TD>hf</TD><TD>hg</TD></TR>
+<TR><TD>ab</TD><TD>eb</TD><TD>ub</TD><TD>ob</TD><TD>ub</TD><TD>B</TD><TD>ba</TD><TD>be</TD><TD>bi</TD><TD>bo</TD><TD>bu</TD><TD>B</TD><TD>benche</TD><TD>che</TD><TD>che</TD></TR>
+
+<TR><TD rowspan="2">I</TD><TD>ig</TD><TD>ih</TD><TD>iu</TD><TD>ie</TD><TD>in</TD><TD>it</TD><TD>ii</TD><TD>ia</TD><TD>ir</TD><TD>im</TD><TD>id</TD><TD>ix</TD><TD>ib</TD><TD>ic</TD><TD>if</TD></TR>
+<TR><TD>ac</TD><TD>ec</TD><TD>ic</TD><TD>oc</TD><TD>uc</TD><TD>C</TD><TD>cd</TD><TD>ce</TD><TD>ci</TD><TD>co</TD><TD>cu</TD><TD>Ch</TD><TD>cosa</TD><TD>como</TD><TD>della</TD></TR>
+
+<TR><TD rowspan="2">L</TD><TD>lf</TD><TD>lg</TD><TD>lh</TD><TD>lu</TD><TD>le</TD><TD>ln</TD><TD>lt</TD><TD>li</TD><TD>la</TD><TD>lr</TD><TD>lm</TD><TD>ld</TD><TD>lx</TD><TD>lb</TD><TD>lc</TD></TR>
+<TR><TD>ad</TD><TD>ed</TD><TD>id</TD><TD>od</TD><TD>ud</TD><TD>D</TD><TD>da</TD><TD>de</TD><TD>di</TD><TD>do</TD><TD>du</TD><TD>D</TD><TD>debba</TD><TD>ditto</TD><TD>doppe</TD></TR>
+
+<TR><TD rowspan="2">V</TD><TD>uc</TD><TD>uf</TD><TD>ug</TD><TD>uh</TD><TD>uu</TD><TD>ue</TD><TD>un</TD><TD>ut</TD><TD>ui</TD><TD>ua</TD><TD>ur</TD><TD>um</TD><TD>ud</TD><TD>ux</TD><TD>ub</TD></TR>
+<TR><TD>ae</TD><TD>ee</TD><TD>ie</TD><TD>oe</TD><TD>ue</TD><TD>E</TD><TD>ea</TD><TD>ee</TD><TD>ei</TD><TD>eo</TD><TD>eu</TD><TD>E</TD><TD>esso</TD><TD>essendo</TD><TD>essere</TD></TR>
+
+<TR><TD rowspan="2">S</TD><TD>sb</TD><TD>sc</TD><TD>sf</TD><TD>sg</TD><TD>sh</TD><TD>su</TD><TD>se</TD><TD>sn</TD><TD>st</TD><TD>si</TD><TD>sa</TD><TD>sr</TD><TD>sm</TD><TD>sd</TD><TD>sx</TD></TR>
+<TR><TD>af</TD><TD>ef</TD><TD>if</TD><TD>of</TD><TD>uf</TD><TD>F</TD><TD>fa</TD><TD>fe</TD><TD>fi</TD><TD>fo</TD><TD>fu</TD><TD>F</TD><TD>forsi</TD><TD>fusse</TD><TD>finche</TD></TR>
+
+<TR><TD rowspan="2">A</TD><TD>ax</TD><TD>ab</TD><TD>ac</TD><TD>af</TD><TD>ag</TD><TD>ah</TD><TD>au</TD><TD>ae</TD><TD>an</TD><TD>at</TD><TD>ai</TD><TD>aa</TD><TD>ar</TD><TD>am</TD><TD>ad</TD></TR>
+<TR><TD>ag</TD><TD>eg</TD><TD>ig</TD><TD>og</TD><TD>ug</TD><TD>G</TD><TD>ga</TD><TD>ge</TD><TD>gi</TD><TD>go</TD><TD>gu</TD><TD>G</TD><TD>gratia</TD><TD>grave</TD><TD>grato</TD></TR>
+
+<TR><TD rowspan="2">B</TD><TD>bd</TD><TD>bx</TD><TD>bb</TD><TD>bc</TD><TD>bf</TD><TD>bg</TD><TD>bh</TD><TD>bu</TD><TD>be</TD><TD>bn</TD><TD>bt</TD><TD>bi</TD><TD>ba</TD><TD>br</TD><TD>bm</TD></TR>
+<TR><TD>ah</TD><TD>eh</TD><TD>ih</TD><TD>oh</TD><TD>uh</TD><TD>H</TD><TD>ha</TD><TD>he</TD><TD>hi</TD><TD>ho</TD><TD>hu</TD><TD>H</TD><TD>abaiamo</TD><TD>avunto</TD><TD>hanno</TD></TR>
+
+<TR><TD rowspan="2">C</TD><TD>cm</TD><TD>cd</TD><TD>cx</TD><TD>cb</TD><TD>cc</TD><TD>cf</TD><TD>cg</TD><TD>ch</TD><TD>cu</TD><TD>ce</TD><TD>cn</TD><TD>ct</TD><TD>ci</TD><TD>ca</TD><TD>cr</TD></TR>
+<TR><TD>ai</TD><TD>ei</TD><TD>ii</TD><TD>oi</TD><TD>ui</TD><TD>I</TD><TD>ia</TD><TD>ie</TD><TD>ii</TD><TD>io</TD><TD>iu</TD><TD>I</TD><TD>imperio</TD><TD>impo</TD><TD>impoche</TD></TR>
+
+<TR><TD rowspan="2">D</TD><TD>dr</TD><TD>dm</TD><TD>dd</TD><TD>dx</TD><TD>db</TD><TD>dc</TD><TD>df</TD><TD>dg</TD><TD>dh</TD><TD>du</TD><TD>de</TD><TD>dn</TD><TD>dt</TD><TD>di</TD><TD>da</TD></TR>
+<TR><TD>al</TD><TD>el</TD><TD>il</TD><TD>ol</TD><TD>ul</TD><TD>L</TD><TD>la</TD><TD>le</TD><TD>li</TD><TD>lo</TD><TD>lu</TD><TD>L</TD><TD>leqli</TD><TD>liquali</TD><TD>lettera</TD></TR>
+
+<TR><TD rowspan="2">E</TD><TD>ea</TD><TD>er</TD><TD>em</TD><TD>ed</TD><TD>ex</TD><TD>eb</TD><TD>ec</TD><TD>ef</TD><TD>eg</TD><TD>eh</TD><TD>eu</TD><TD>ee</TD><TD>en</TD><TD>et</TD><TD>ei</TD></TR>
+<TR><TD>am</TD><TD>em</TD><TD>im</TD><TD>om</TD><TD>um</TD><TD>M</TD><TD>ma</TD><TD>me</TD><TD>mi</TD><TD>mo</TD><TD>mu</TD><TD>M</TD><TD>molto</TD><TD>modo</TD><TD>mondo</TD></TR>
+
+<TR><TD rowspan="2">F</TD><TD>fi</TD><TD>fa</TD><TD>fr</TD><TD>fm</TD><TD>fd</TD><TD>fx</TD><TD>fb</TD><TD>fc</TD><TD>ff</TD><TD>fg</TD><TD>fh</TD><TD>fu</TD><TD>fe</TD><TD>fn</TD><TD>ft</TD></TR>
+<TR><TD>an</TD><TD>en</TD><TD>in</TD><TD>on</TD><TD>un</TD><TD>N</TD><TD>na</TD><TD>ne</TD><TD>ni</TD><TD>no</TD><TD>nu</TD><TD>N</TD><TD>non</TD><TD>nostra</TD><TD>nella</TD></TR>
+
+<TR><TD rowspan="2">G</TD><TD>gt</TD><TD>gi</TD><TD>ga</TD><TD>gr</TD><TD>gm</TD><TD>gd</TD><TD>gx</TD><TD>gb</TD><TD>gc</TD><TD>gf</TD><TD>gg</TD><TD>gh</TD><TD>gu</TD><TD>ge</TD><TD>gn</TD></TR>
+<TR><TD>ao</TD><TD>eo</TD><TD>io</TD><TD>oo</TD><TD>uo</TD><TD>O</TD><TD>oa</TD><TD>oe</TD><TD>oi</TD><TD>oo</TD><TD>ou</TD><TD>O</TD><TD>oltra</TD><TD>ogni</TD><TD>ognicosa</TD></TR>
+
+<TR><TD rowspan="2">M</TD><TD>mm</TD><TD>mt</TD><TD>mi</TD><TD>ma</TD><TD>mr</TD><TD>mm</TD><TD>md</TD><TD>mx</TD><TD>mb</TD><TD>mc</TD><TD>mf</TD><TD>mg</TD><TD>mh</TD><TD>mu</TD><TD>me</TD></TR>
+<TR><TD>ap</TD><TD>ep</TD><TD>ip</TD><TD>op</TD><TD>up</TD><TD>P</TD><TD>pa</TD><TD>pe</TD><TD>pi</TD><TD>po</TD><TD>pu</TD><TD>P</TD><TD>per</TD><TD>pero</TD><TD>perche</TD></TR>
+
+<TR><TD rowspan="2">N</TD><TD>ne</TD><TD>nn</TD><TD>nt</TD><TD>ni</TD><TD>na</TD><TD>nr</TD><TD>nm</TD><TD>nd</TD><TD>nx</TD><TD>nb</TD><TD>nc</TD><TD>nf</TD><TD>ng</TD><TD>nh</TD><TD>nu</TD></TR>
+<TR><TD>aq</TD><TD>eq</TD><TD>iq</TD><TD>oq</TD><TD>uq</TD><TD>Q</TD><TD>st</TD><TD>st</TD><TD>st</TD><TD>st</TD><TD>qu</TD><TD>Q</TD><TD>quali</TD><TD>quella</TD><TD>questa</TD></TR>
+
+<TR><TD rowspan="2">O</TD><TD>ou</TD><TD>oe</TD><TD>on</TD><TD>ot</TD><TD>oi</TD><TD>oa</TD><TD>or</TD><TD>om</TD><TD>od</TD><TD>ox</TD><TD>ob</TD><TD>oc</TD><TD>of</TD><TD>og</TD><TD>oh</TD></TR>
+<TR><TD>ar</TD><TD>er</TD><TD>ir</TD><TD>or</TD><TD>ur</TD><TD>R</TD><TD>ra</TD><TD>re</TD><TD>ri</TD><TD>ro</TD><TD>ru</TD><TD>R</TD><TD>quato</TD><TD>quando</TD><TD>qualche</TD></TR>
+
+<TR><TD rowspan="2">Q</TD><TD>qh</TD><TD>qu</TD><TD>qe</TD><TD>qn</TD><TD>qt</TD><TD>qi</TD><TD>qa</TD><TD>qr</TD><TD>qm</TD><TD>qd</TD><TD>qx</TD><TD>qb</TD><TD>qc</TD><TD>qf</TD><TD>qg</TD></TR>
+<TR><TD>as</TD><TD>es</TD><TD>is</TD><TD>os</TD><TD>us</TD><TD>S</TD><TD>sa</TD><TD>se</TD><TD>si</TD><TD>so</TD><TD>su</TD><TD>S</TD><TD>signor</TD><TD>signoria</TD><TD>scritto</TD></TR>
+
+<TR><TD rowspan="2">R</TD><TD>rg</TD><TD>rh</TD><TD>ru</TD><TD>re</TD><TD>rn</TD><TD>rt</TD><TD>ri</TD><TD>ra</TD><TD>rr</TD><TD>rm</TD><TD>rd</TD><TD>rx</TD><TD>rb</TD><TD>rc</TD><TD>rf</TD></TR>
+<TR><TD>at</TD><TD>et</TD><TD>it</TD><TD>ot</TD><TD>ut</TD><TD>T</TD><TD>ta</TD><TD>te</TD><TD>ti</TD><TD>to</TD><TD>tu</TD><TD>T</TD><TD>scrisse</TD><TD>tutto</TD><TD>tanto</TD></TR>
+
+<TR><TD rowspan="2">T</TD><TD>tf</TD><TD>tg</TD><TD>th</TD><TD>tu</TD><TD>te</TD><TD>tn</TD><TD>tt</TD><TD>ti</TD><TD>ta</TD><TD>tr</TD><TD>tm</TD><TD>td</TD><TD>tx</TD><TD>tb</TD><TD>tc</TD></TR>
+<TR><TD>au</TD><TD>eu</TD><TD>iu</TD><TD>ou</TD><TD>uu</TD><TD>V</TD><TD>ua</TD><TD>ue</TD><TD>ui</TD><TD>uo</TD><TD>uu</TD><TD>V</TD><TD>vostro</TD><TD>vero</TD><TD>una</TD></TR>
+
+<TR><TD rowspan="2">X</TD><TD>xc</TD><TD>xf</TD><TD>xg</TD><TD>xh</TD><TD>xu</TD><TD>xe</TD><TD>xn</TD><TD>xt</TD><TD>xi</TD><TD>xa</TD><TD>xr</TD><TD>xm</TD><TD>xd</TD><TD>xx</TD><TD>xb</TD></TR>
+<TR><TD>br</TD><TD>dr</TD><TD>gn</TD><TD>lt</TD><TD>nq</TD><TD>X</TD><TD>pr</TD><TD>rl</TD><TD>rp</TD><TD>rt</TD><TD>st</TD><TD>X</TD><TD>vostra Sig</TD><TD>le vostra lettere</TD><TD>lquate piu presto</TD></TR>
+
+<TR><TD rowspan="2">Y</TD><TD>yb</TD><TD>yc</TD><TD>yf</TD><TD>yg</TD><TD>yh</TD><TD>yu</TD><TD>ye</TD><TD>yn</TD><TD>yt</TD><TD>yi</TD><TD>ya</TD><TD>yr</TD><TD>ym</TD><TD>yd</TD><TD>yx</TD></TR>
+<TR><TD>ch</TD><TD>fr</TD><TD>gr</TD><TD>mn</TD><TD>nt</TD><TD>Y</TD><TD>rc</TD><TD>rm</TD><TD>rs</TD><TD>sc</TD><TD>tr</TD><TD>Y</TD><TD>Il Signor Iddio</TD><TD>Le cose passano</TD><TD>Me racemande</TD></TR>
+<TR><TD rowspan="2">Z</TD><TD>zx</TD><TD>zb</TD><TD>zc</TD><TD>zf</TD><TD>zg</TD><TD>zb</TD><TD>zu</TD><TD>ze</TD><TD>zn</TD><TD>zt</TD><TD>zi</TD><TD>za</TD><TD>zr</TD><TD>zm</TD><TD>zd</TD></TR>
+<TR><TD>cr</TD><TD>gl</TD><TD>lm</TD><TD>nc</TD><TD>pn</TD><TD>Z</TD><TD>rd</TD><TD>rn</TD><TD>rt</TD><TD>sp</TD><TD>tr</TD><TD>Z</TD><TD>habiamo recevute</TD><TD>havemo apiacer</TD><TD>fatime raccom</TD></TR>
+</TABLE>
+
+<P>暗号化の際には，下段の二文字（一部は一文字）を上段の二文字コードで置き換える．</P>
+<P>この表の構成だが，下段の平文文字はおおむね規則的に配列されている（だから暗号化の際に迷わずにすむ）．（右側三列にあるようにいくつかの高頻度語／句にも二文字コードが割り当てられている．）</P>
+<P>上段の二文字コードのほうは，縦方向のキーワードPHILIPPUSと横方向のキーワードVENETIARUM DUXに基づいている．（いずれも同じ文字が繰り返し出てきた場合は無視し，字数が尽きたあとはアルファベット順に文字を付け足していく．）</P>
+<P>いちばん上のPの欄（下段の平文文字aa ea ia oa ua ...を上段の二文字コードpu pe pn pt pi...に対応させるもの）については，縦のキーワードの第一字pを横のキーワードの各文字u (v), e, n, t, i, ...と単純に組み合わせたものになっている．その他の欄の二文字コードは，横方向のキーワードの文字を順次ずらせた組み合わせになっている．</P>
+<br>
+<P>この著作にも，本文で紹介されている暗号法に基づく課題の暗号文が７通掲載されている．</P>
+
+<H3>ポルタへの敵愾心？</H3>
+<P>ベラソの暗号の基本は上記のようにペアリング表に基づく互換式の換字だが，そのような表は有名なポルタもちょうど同時期の著作で発表している．<A HREF="http://en.wikipedia.org/wiki/Giovan_Battista_Bellaso">Wikipedia</A>によれば，ベラソは本書の末尾で自分の労苦を我が物にしようとしている者がいると不平を述べており <span class="note">(<A HREF="http://www.ciphermysteries.com/2008/10/28/ancient-cryptography-forum">tonybaloney氏の投稿</A>のMarch 30, 2009も参照)</span>，1563年に互換表を発表したポルタのことを言っているのだという．本書の序ではベラソは自分の暗号法を他の方式に対して際立たせる１３の特性を挙げており，末尾では（１）同一のキーフレーズを使う暗号化と復号，（２）単語間の空白をXやYに置き換えること，（３）記憶可能なキーワードを使って不規則な換字表を生成すること，（４）英字コードで単語を表わすこと（他の書記は記号や数字を使う）の４点を自ら考案したものだとしている．</P>
+
+<H1>ベラソの暗号の解読</H1>
+<P>第二の著作・第三の著作合わせて暗号文は１０通掲載されているが，その暗号文は次のページに見られる．以下では解読過程に絞って紹介する．</P>
+<P><A HREF="http://www.ciphermysteries.com/bellasos-ciphers">Bellaso's Ciphers</A></P>
+<P><A HREF="http://www.ciphermysteries.com/2008/10/28/ancient-cryptography-forum">tonybaloney氏の投稿</A></P>
+<H2>1564年の第六暗号</H2>
+<P>最初に解読されたのは1564年の第六暗号である（<A HREF="http://www.ciphermysteries.com/2009/03/31/450-year-old-challenge-cipher-cracked">Pelling氏のページ</A>（解読文も採録），<A HREF="http://www.aerobushentertainment.com/crypto/index.php?topic=62.0">tonybaloney氏の投稿</A>（解読文，鍵も採録））．これは単語の区切りらしき空白があり，明らかに最もとっつきやすく見える．</P>
+<P>あらゆる暗号解読の手がかりは何らかの繰り返しパターンを発見することだが，この暗号文にはPLSGGAOLR<u>IBLN</u>G<u>IBLN</u>PEという「単語」中にIBLNGIBLNというパターンがあった．４文字の連続IBLNが１文字空けて繰り返されるということは換字表が５文字周期で変更されており，２箇所のIBLNは平文の同じ文字列を表わしていることを暗示する．（平文の異なる文字列が異なる暗号鍵によってたまたま同じ暗号文IBLNになったと考えるより自然である．）そこでイタリア語でこのようなパターンになる単語を探したところ，consequ<u>ente</u>m<u>ente</u>という単語がみつかった．（解読者はイタリア語を知らないとのことだが，それはイタリア語の知識が必要ないということではない．辞書などの情報は使ったのだろう．）この仮定に従って平文と暗号文を並べてみると次のようになる．</P>
+<DIV style="margin-left: 2em"><TT>
+&nbsp;&nbsp;consequentemente<br>
+PLSGGAOLRIBLNGIBLNPE<br>
+12345123451234512345<br>
+</TT></DIV>
+<P>ここで1～5は５つの換字表を指定するものだが，換字表４では平文のoとmの両方が暗号文のGになってしまうという問題があった．だが，暗号文に誤りがあることは日常茶飯事なので当面この問題には目をつむることにした．</P>
+<P>すると，暗号文の２文字目のLに対応する平文はtであると推定できる（換字表２によってLはtに対応する）．また，暗号文の最後のEに対応する平文はiであると推定できる（換字表５を見ていくと平文のiとeが互いに相手に暗号化されることがわかる．この後者の前提として，対になった文字どうしを互いに入れ換えることによる互換式の暗号が使われていると想定している．ベラソも著作で紹介した暗号法を使っていると述べているので妥当な想定だといえる．そして第１字はeで，第２字とともに単語et（＝英語のand）をなすと推測する．</P>
+<DIV style="margin-left: 2em"><TT>
+etconsequentemente?i<br>
+PLSGGAOLRIBLNGIBLNPE<br>
+12345123451234512345<br>
+</TT></DIV>
+<P>平文のeは換字表１ではPに，換字表２ではOに，換字表３ではNに，換字表５ではIに暗号化されることになる．一方，ペアリング式の暗号を仮定して平文のo, nの箇所を見ていけば，換字表１ではnとBが対応し，換字表４ではoとGが対応し，換字表５ではnとGが対応することがわかる．まとめると，</P>
+<DIV style="margin-left: 2em"><TT>
+be 換字表１<br>
+np<br>
+<br>
+e 換字表２<br>
+o<br>
+<br>
+e 換字表３<br>
+n<br>
+<br>
+g 換字表４<br>
+o<br>
+<br>
+eg 換字表５<br>
+in<br>
+</TT></DIV>
+<P>このうち同じeに対応するP-O-Nという部分がアルファベット順になっていることから，換字表の下半分のnopが切り換えのたびに一文字ずつずれていくと思われる．この範囲でわかる対応は次のとおり．</P>
+<DIV style="margin-left: 2em"><TT>
+b.e 換字表１<br>
+nop<br>
+<br>
+.e. 換字表２<br>
+nop<br>
+<br>
+e.. 換字表３<br>
+nop<br>
+<br>
+.g. 換字表４<br>
+nop<br>
+<br>
+g.. 換字表５<br>
+nop<br>
+</TT></DIV>
+<P>また，換字表１から換字表の上段でbとeの間は１文字であることがわかり，e-oという対応（換字表２）の次の次（換字表４）でg-oという対応になることから，eとgの間隔も１字であることがわかる．よって，上記の換字表３の部分は次のように補うことができる．</P>
+<DIV style="margin-left: 2em"><TT>
+e.g 換字表３<br>
+nop<br>
+</TT></DIV>
+<P>ここでもう一つの顕著な繰り返しパターンに着目する．</P>
+<DIV style="margin-left: 2em"><TT>
+&nbsp;<u>C</u>G<u>EDFLLI</u>ILBGGP<br>
+A<u>C</u>F<u>EDFLLI</u>LBFI<br>
+</TT></DIV>
+<P>これは同じ語根をもつ二つの単語だと推測できる．（先の場合と同様，これだけ長い暗号文の文字列が同じということは平文も同じだと想定する．）手がかりを得るために，これまでにわかった換字表の文字の対応を当てはめてみたいのだが，換字表の周期の位置がわからない（つまり，たとえばEDFLLIの部分の換字表が123451, 234512, 345123などのどれなのかわからない）ので，５通りのパターン全部を試してみる．すると，512345の場合に次のように語尾らしきものが見てくる．</P>
+<DIV style="margin-left: 2em"><TT>
+so???q???t?one  ???p?????t???<br>
+CGEDFLLIILBGGP  ACFEDFLLILBFI<br>
+34512345123451  3451234512345<br>
+</TT></DIV>
+<P>ここでt?oneが語尾tioneではないかと見当がつく．さらに，tioneの前の部分が二つのグループに共通する語根だとすると，第一のグループのIIはIの誤記ではないかと考えられる．すると，換字表の対応もずれてきて，次のようになる．</P>
+<DIV style="margin-left: 2em"><TT>
+?np?????tione  ???p?????ti??<br>
+CGEDFLLILBGGP  ACFEDFLLILBFI<br>
+4512345123451  3451234512345<br>
+</TT></DIV>
+<P>ここで上記の換字表３についての推定を見てみると，e.gがnopに対応するので，fとoが互いに相手に暗号化されると推測できる．すると，proportionのような単語が隠れていると想定できる．すると上記の空欄は次のように埋められる．</P>
+<DIV style="margin-left: 2em"><TT>
+?n proportione ??? proporti??<br>
+CG EDFLLILBGGP ACF EDFLLILBFI<br>
+45 12345123451 345 1234512345<br>
+</TT></DIV>
+<P>これによりわかる換字表１～５を使って，暗号文中に見られるRBERPUGSTSLBという長い単語からどのような平文文字列が見えてくるかを試してみる（おそらく他の長い単語も試した末にこれが突破口になったのだろう）．もちろん，ここでも換字表の周期の位置はわからないので，123451234512, 234512345123など５通りを試さねばならないのだが，２番目のケースについてdi??e?p??atiという単語らしきものが現われ，distemperatiという実在の単語に符合する．</P>
+<DIV style="margin-left: 2em"><TT>
+distemperati<br>
+RBERPUGSTSLB<br>
+234512345123<br>
+</TT></DIV>
+<P>ここまでくればあとは難はない．</P>
+<P>この暗号文は一見して，２文字グループが多いことが目につくが，それらは換字によって暗号化したものではなく，DP＝dellaなど，よく使われる単語を２文字グループで表わしていた（ベラソの第三の著作の「方法６」で開示されていた手法である）．このような換字によらずにコード式に単語を表わす部分はイタリア語を知らないガフニー氏の手に負えなかったらしく，解読の完成にはアウグスト・ブオナファルチェ（Augusto Buonafalce）氏の助力を得たという．</P>
+<P>結局，換字表の構成と切り換え，二文字コードの点で「方法６」の暗号法が使われているらしい．</P>
+
+<H2>1564年の第二暗号</H2>
+<P>1564年の第二暗号も単語の切れ目らしき空白があるものである．今回最初の鍵を与えたのはSDARGBFSTRSという語だった．最初の文字と最後の文字が同じである１１文字の単語ということでこれをequinoctialeと仮定することから出発して解読に成功したという．</P>
+<P>解読結果は<A HREF="http://www.ciphermysteries.com/2009/04/19/two-more-renaissance-challenge-ciphers-cracked">Nick Pelling氏のブログ</A>，<A HREF="http://www.ciphermysteries.com/2008/10/28/ancient-cryptography-forum">tonybaloney氏の投稿</A>（April 06, 2009）に見られる（後者には換字表も掲載）．</P>
+<P>「方法２」に基づく．</P>
+<!--<DIV style="margin-left: 2em"><TT>
+dal circolo equinotiale versoil nostropolo artbt<br>
+RSX OSIUBPD SDARGBFSTRS BXDADRR HCIALBLDSA ODFMA<br>
+451 5123451 45123451234 2345123 4512345123 34512<br>
+</TT></DIV>-->
+
+<H2>1564年の第一暗号</H2>
+<P>1564年の第一暗号は単語の切れ目がないアルファベットの羅列であるが，DABADという語に着目した．同じ文字の繰り返しなど特徴的なパターンに目をつけるのは暗号解読の定石である．この場合，第１字＝第５字，第２字＝第４字という独特な構造になっている．これからなんと第六暗号の解読にも出てきたp<u>ropor</u>tioneに思い至ったようだ．</P>
+<P>この暗号では１０通りの換字表が１文字ずつではなく，１語ごとに切り換えられていた．「方法１」に対応する．</P>
+<P>解読結果は上記と同じ<A HREF="http://www.ciphermysteries.com/2009/04/19/two-more-renaissance-challenge-ciphers-cracked">Nick Pelling氏のブログ</A>および<A HREF="http://www.ciphermysteries.com/2008/10/28/ancient-cryptography-forum">tonybaloney氏の投稿</A>（April 05, 2009）（後者は換字表も収録）に見られる．</P>
+
+
+<H2>1564年の第七暗号</H2>
+<P>これも単語の切れ目らしい空白があるが，すべての「語」が偶数文字からなっていることから，２文字単位で暗号化が行なわれていると見当がつく．つまり第三の著作の「方法７」に該当する．そのような表の全く新規なバージョンが使われているとしたらこの程度の長さの暗号文から突き止めるのは絶望的だが，ベラソも著作で紹介した暗号法と言っていることから，平文部分の文字の規則的な配列は変わらず，暗号化を表わす縦・横のキーワードを変えただけのものであると想定する．</P>
+<P>ここから先はペリング氏のブログも解読者の説明の直接引用をするばかりで不詳だが，筆写なりの解釈を以下に示す．</P>
+<P>今回着目したのは暗号文中のCMYLDLELRLというシーケンス．「YL」「DL」「EL」「RL」という４つの対はみな２文字目が「L」であるが，横方向のキーワードを順に右にずらしていくという暗号法の構成からすると，これらは右下がりの斜線上に載っているはずである．（ただし，Y, D, E, Rの割り当てがわからないので，この順になっているとは限らない）</P>
+<P>ここでさらに，Yはキーワード中に現われる可能性は低いと思われる．これはこの暗号表作成法につきまとう弱点だが，縦のキーワードの末尾はベラソの挙げている例と同じXYZになると思われる．すなわち，二字コード「YL」に対応する平文はベラソが例示した表と同じch, fr, gr, mn, nt, rc, rm, rs, sc, trのいずれかだと考えられるのである（Yが平文に現われている可能性も低いのでYは除外した）．よって，暗号文中のCM-YL-DL-EL-RLは，その２番目の連字（第３字＋第４次字）がこれらのいずれかであり，２，３，４，５番目の連字が右下がりの斜線上に載るような語になるはずである．たとえばfa-nt-as-ieの「nt」「as」「ie」なども右下がりの斜線上という条件を満たすが（下記の表の黄色の部分参照），al-tr-am-en-teなら「tr」「am」「en」「te」が右下がりの斜線上に載り，しかも字数もぴったり合う（下記の表の緑色の部分参照）．つまり，次のような対応が仮定できる．</P>
+<DIV style="margin-left: 2em"><TT>
+CM YL DL EL RL<br>
+al tr am en te<br>
+</TT></DIV>
+<P>これから表のうち次の箇所が推定できる．</P>
+<TABLE rules="rows">
+<TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>aa</TD><TD>ea</TD><TD>ia</TD><TD>oa</TD><TD>ua</TD><TD>A</TD><TD>aa</TD><TD>ae</TD><TD>ai</TD><TD>ao</TD><TD>au</TD><TD>A</TD><TD>accio</TD><TD>altra</TD><TD>ancore</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD bgcolor="ffff00">ab</TD><TD>eb</TD><TD>ub</TD><TD>ob</TD><TD>ub</TD><TD>B</TD><TD>ba</TD><TD>be</TD><TD>bi</TD><TD>bo</TD><TD>bu</TD><TD>B</TD><TD>benche</TD><TD>che</TD><TD>che</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>ac</TD><TD bgcolor="ffff00">ec</TD><TD>ic</TD><TD>oc</TD><TD>uc</TD><TD>C</TD><TD>cd</TD><TD>ce</TD><TD>ci</TD><TD>co</TD><TD>cu</TD><TD>Ch</TD><TD>cosa</TD><TD>como</TD><TD>della</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>ad</TD><TD>ed</TD><TD bgcolor="ffff00">id</TD><TD>od</TD><TD>ud</TD><TD>D</TD><TD>da</TD><TD>de</TD><TD>di</TD><TD>do</TD><TD>du</TD><TD>D</TD><TD>debba</TD><TD>ditto</TD><TD>doppe</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>ae</TD><TD>ee</TD><TD>ie</TD><TD bgcolor="ffff00">oe</TD><TD>ue</TD><TD>E</TD><TD>ea</TD><TD>ee</TD><TD>ei</TD><TD>eo</TD><TD>eu</TD><TD>E</TD><TD>esso</TD><TD>essendo</TD><TD>essere</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>af</TD><TD>ef</TD><TD>if</TD><TD>of</TD><TD bgcolor="ffff00">uf</TD><TD>F</TD><TD>fa</TD><TD>fe</TD><TD>fi</TD><TD>fo</TD><TD>fu</TD><TD>F</TD><TD>forsi</TD><TD>fusse</TD><TD>finche</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>ag</TD><TD>eg</TD><TD>ig</TD><TD>og</TD><TD>ug</TD><TD bgcolor="ffff00">G</TD><TD>ga</TD><TD>ge</TD><TD>gi</TD><TD>go</TD><TD>gu</TD><TD>G</TD><TD>gratia</TD><TD>grave</TD><TD>grato</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>ah</TD><TD>eh</TD><TD>ih</TD><TD>oh</TD><TD>uh</TD><TD>H</TD><TD bgcolor="ffff00">ha</TD><TD>he</TD><TD>hi</TD><TD>ho</TD><TD>hu</TD><TD>H</TD><TD>abaiamo</TD><TD>avunto</TD><TD>hanno</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>ai</TD><TD>ei</TD><TD>ii</TD><TD>oi</TD><TD>ui</TD><TD>I</TD><TD>ia</TD><TD bgcolor="ffff00">ie</TD><TD>ii</TD><TD>io</TD><TD>iu</TD><TD>I</TD><TD>imperio</TD><TD>impo</TD><TD>impoche</TD></TR>
+
+<TR><TD rowspan="2">C</TD><TD>CM</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>al</TD><TD>el</TD><TD>il</TD><TD>ol</TD><TD>ul</TD><TD>L</TD><TD>la</TD><TD>le</TD><TD bgcolor="ffff00">li</TD><TD>lo</TD><TD>lu</TD><TD>L</TD><TD>leqli</TD><TD>liquali</TD><TD>lettera</TD></TR>
+
+<TR><TD rowspan="2">D</TD><TD>DL</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD bgcolor="00ff00">am</TD><TD>em</TD><TD>im</TD><TD>om</TD><TD>um</TD><TD>M</TD><TD>ma</TD><TD>me</TD><TD>mi</TD><TD bgcolor="ffff00">mo</TD><TD>mu</TD><TD>M</TD><TD>molto</TD><TD>modo</TD><TD>mondo</TD></TR>
+
+<TR><TD rowspan="2">E</TD><TD></TD><TD>EL</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>an</TD><TD bgcolor="00ff00">en</TD><TD>in</TD><TD>on</TD><TD>un</TD><TD>N</TD><TD>na</TD><TD>ne</TD><TD>ni</TD><TD>no</TD><TD bgcolor="ffff00">nu</TD><TD>N</TD><TD>non</TD><TD>nostra</TD><TD>nella</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>ao</TD><TD>eo</TD><TD bgcolor="00ff00">io</TD><TD>oo</TD><TD>uo</TD><TD>O</TD><TD>oa</TD><TD>oe</TD><TD>oi</TD><TD>oo</TD><TD>ou</TD><TD bgcolor="ffff00">O</TD><TD>oltra</TD><TD>ogni</TD><TD>ognicosa</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>ap</TD><TD>ep</TD><TD>ip</TD><TD bgcolor="00ff00">op</TD><TD>up</TD><TD>P</TD><TD>pa</TD><TD>pe</TD><TD>pi</TD><TD>po</TD><TD>pu</TD><TD>P</TD><TD bgcolor="ffff00">per</TD><TD>pero</TD><TD>perche</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>aq</TD><TD>eq</TD><TD>iq</TD><TD>oq</TD><TD bgcolor="00ff00">uq</TD><TD>Q</TD><TD>st</TD><TD>st</TD><TD>st</TD><TD>st</TD><TD>qu</TD><TD>Q</TD><TD>quali</TD><TD bgcolor="ffff00">quella</TD><TD>questa</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>ar</TD><TD>er</TD><TD>ir</TD><TD>or</TD><TD>ur</TD><TD bgcolor="00ff00">R</TD><TD>ra</TD><TD>re</TD><TD>ri</TD><TD>ro</TD><TD>ru</TD><TD>R</TD><TD>quato</TD><TD>quando</TD><TD bgcolor="ffff00">qualche</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD bgcolor="ffff00">as</TD><TD>es</TD><TD>is</TD><TD>os</TD><TD>us</TD><TD>S</TD><TD bgcolor="00ff00">sa</TD><TD>se</TD><TD>si</TD><TD>so</TD><TD>su</TD><TD>S</TD><TD>signor</TD><TD>signoria</TD><TD>scritto</TD></TR>
+
+<TR><TD rowspan="2">R</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>RL</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>at</TD><TD bgcolor="ffff00">et</TD><TD>it</TD><TD>ot</TD><TD>ut</TD><TD>T</TD><TD>ta</TD><TD bgcolor="00ff00">te</TD><TD>ti</TD><TD>to</TD><TD>tu</TD><TD>T</TD><TD>scrisse</TD><TD>tutto</TD><TD>tanto</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>au</TD><TD>eu</TD><TD bgcolor="ffff00">iu</TD><TD>ou</TD><TD>uu</TD><TD>V</TD><TD>ua</TD><TD>ue</TD><TD bgcolor="00ff00">ui</TD><TD>uo</TD><TD>uu</TD><TD>V</TD><TD>vostro</TD><TD>vero</TD><TD>una</TD></TR>
+
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>br</TD><TD>dr</TD><TD>gn</TD><TD bgcolor="ffff00">lt</TD><TD>nq</TD><TD>X</TD><TD>pr</TD><TD>rl</TD><TD>rp</TD><TD bgcolor="00ff00">rt</TD><TD>st</TD><TD>X</TD><TD>vostra Sig</TD><TD>le vostra lettere</TD><TD>lquate piu presto</TD></TR>
+
+<TR><TD rowspan="2">Y</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>YL</TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>ch</TD><TD>fr</TD><TD>gr</TD><TD>mn</TD><TD bgcolor="ffff00">nt</TD><TD>Y</TD><TD>rc</TD><TD>rm</TD><TD>rs</TD><TD>sc</TD><TD bgcolor="00ff00">tr</TD><TD>Y</TD><TD>Il Signor Iddio</TD><TD>Le cose passano</TD><TD>Me racemande</TD></TR>
+<TR><TD rowspan="2"></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>cr</TD><TD>gl</TD><TD>lm</TD><TD>nc</TD><TD>pn</TD><TD bgcolor="ffff00">Z</TD><TD>rd</TD><TD>rn</TD><TD>rt</TD><TD>sp</TD><TD>tr</TD><TD bgcolor="00ff00">Z</TD><TD>habiamo recevute</TD><TD>havemo apiacer</TD><TD>fatime raccom</TD></TR>
+</TABLE>
+
+<P>こうしてみつかった若干の行と列を手がかりにあとは試行錯誤を続けて解読にたどりつくとのことである．</P>
+<P></P>
+<P>解読結果は<A HREF="http://www.ciphermysteries.com/2009/04/27/4th-bellaso-cipher-toppled-tony-gaffney-strikes-again">Nick Pelling氏のブログ</A>および<A HREF="http://www.ciphermysteries.com/2008/10/28/ancient-cryptography-forum">tonybaloney氏の投稿</A>（April 23, 2009）にあり，前者には最終的に得られる暗号表も掲載されている．</P>
+
+<H2>1564年の第三暗号，第四暗号</H2>
+<P>それぞれ「方法３」「方法４」に基づくもので，解読結果は<A HREF="http://www.ciphermysteries.com/2009/05/03/once-again-two-more-renaissance-ciphers-yield-to-mr-gaffney">Nick Pelling氏のブログ</A>および<A HREF="http://www.aerobushentertainment.com/crypto/index.php?PHPSESSID=4c59710f8b7730f1497141319d522e08&topic=62.20">tonybaloney氏の投稿</A>（May 02, 2009）に掲載されている．</P>
+<P>これで1564年の著作で提示された七つの暗号文のうち第五暗号を除く六つまでが解読されたことになる．</P>
+
+<H2>1564年の第五暗号</H2>
+<P>「方法５」に基づくもので，2016年にビーアマン氏によって解読された．解読結果は<A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2013/08/02/top-25-der-ungelosten-verschlusselungen-platz-11-bellasos-aufgaben-aus-dem-16-jahrhundert/">Klaus Schmeh氏のブログ</A>で第一報が報告されている．５つの互換式換字表を順次切り換えていくものだが，換字表はベラソのミドルネームBattistaをキーワードとして上記の「方法１」によって得られるものとなっている．</P>
+
+<H2>1555年の暗号</H2>
+<P>三つのうちの第一のものが2016年にビーアマン氏によって解読された．解読結果は<A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2013/08/02/top-25-der-ungelosten-verschlusselungen-platz-11-bellasos-aufgaben-aus-dem-16-jahrhundert/">Klaus Schmeh氏のブログ</A>で第一報が報告されている．</P>
+<P>換字表は</P>
+<DIV style="margin-left: 3em;"><TT>xmseptfirnb<br>
+ucdgahlqoyz<br></TT></DIV>
+<P>を基本として下段を一つずつずらしていくもので，1555年の著作で説明されているように，ラテン語などの何らかのフレーズをもとに３文字おきに母音を挿入したものとなっているはずだが，もとになったフレーズは不明．</P>
+<P>換字表は暗号文の４文字グループごとに切り換えられ，切り換えのためのキーフレーズはウェルギリウスの詩と突き止められた．</P>
+<P>残る第二，第三のものもビーアマン氏によって解読され，2018年に発表された（<A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2018/02/17/blog-reader-norbert-biermann-solves-famous-16th-century-crypto-mystery/#more-15147">Klausis Krypto Kolumne</A>, <A HREF="http://www.tandfonline.com/doi/abs/10.1080/01611194.2017.1422050?journalCode=ucry20">Cryptologia</A>）．</P>
+
+<H2>リンク</H2>
+<P><A HREF="http://www.aerobushentertainment.com/crypto/index.php?topic=62.0">Ancient Cryptographyフォーラム</A>……解読者によるtonybaloneyのペンネームでの一連の投稿．課題の暗号文；ベラソの著作の概要（この方面の大家と思しき <span class="note">(<A HREF="http://en.wikipedia.org/wiki/Giovan_Battista_Bellaso">Wikipedia</A>の参考文献参照）</span> Augusto Buonafalce氏から個人的に提供された英訳に基づくという）；解読結果などが投稿されている．</P>
+<P><A HREF="http://www.ciphermysteries.com/category/historical-ciphers/bellaso-ciphers">Category Archives: Bellaso Ciphers</A>……Nick Pelling氏のブログ；課題の暗号文や一連の解読を紹介；<A HREF="http://www.ciphermysteries.com/bellasos-ciphers">Cipher Mysteries</A>に課題文一覧；<A HREF="http://www.ciphermysteries.com/2008/10/28/ancient-cryptography-forum">ここ</A>には1980年代からの解読者との個人的な関係</P>
+<P><A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2013/08/02/top-25-der-ungelosten-verschlusselungen-platz-11-bellasos-aufgaben-aus-dem-16-jahrhundert/">Top-25 der ungel&ouml;sten Verschl&uuml;sselungen -- Platz 11: Bellasos Aufgaben aus dem 16. Jahrhundert</A>……Klaus Schmeh氏のブログの未解読の暗号文を紹介した記事．Norbert Biermann氏の解読の第一報とその後のやりとりあり．解読を報告する記事は<A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2016/04/05/blog-leser-loest-top-25-verschluesselungsraetsel/?all=1">こちら</A>．</P>
+<P><A HREF="http://www.mathe.tu-freiberg.de/~hebisch/cafe/kryptographie/bellaso.html">Verschlusselungen nach Bellaso</A>……Udo Hebisch氏のサイト．暗号文と解読文がまとまっている．</P>
+<P><A HREF="http://en.wikipedia.org/wiki/Giovan_Battista_Bellaso">Wikipedia</A>……Giovan Battista Bellasoの記事</P>
+<br>
+<P>Norbert Biermann, "Analysis of Giovan Battista Bellaso’s Cipher Challenges of 1555", <A HREF="https://www.tandfonline.com/doi/10.1080/01611194.2017.1422050">Cryptologia</A>, vol.42, 2018, issue 5 （<A HREF="https://doi.org/10.25624/kuenste-1296">プレプリント</A>はベルリン芸術大学のサーバーで公開）</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2013 S.Tomokiyo<br>
+First posted on 21 February 2013. Last modified on 15 December 2022.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+

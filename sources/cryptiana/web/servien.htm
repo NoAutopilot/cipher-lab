@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<TITLE>
+Codebreaking through Comparison of Two Independently Enciphered Texts
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, Abel Servien, Melchior de Sabran">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Codebreaking through Comparison of Two Independently Enciphered Texts</H1>
+
+
+
+<P>Fran&ccedil;ois Vi&egrave;te said one of the first things to be done to attack Spanish ciphers was to compare letters sent to different ambassadors to identify homophones (see <A HREF="spanish3.htm#SEC7">another article</A>). Since even duplicates addressed to the same person were often enciphered independently (see <A HREF="spanish3D.htm#SEC2B">another article</A>), the comparison must have greatly helped codebreaking. It becomes much easier when some words are left in the clear in two independently ciphered texts.</P>
+<P>The present article describes my codebreaking facilitated by two independently enciphered texts with some words in the clear.</P>
+
+
+<P>BnF Baluze 155 (<A HREF="https://gallica.bnf.fr/ark:/12148/btv1b9001401d">Gallica</A>) contains some undeciphered ciphertexts in letters of October-December 1632 from Abel Servien, Secretary for War sent to Savoy for a diplomatic mission from 1631 to 1633 <span class="note">(<A HREF="https://fr.wikipedia.org/wiki/Abel_Servien#Secr%C3%A9taire_d'%C3%89tat">Wikipedia</A>)</span>, to Melchior de Sabran, resident in Genoa <font size ="2">(f.105, f.123, f.127, f.131, f.139)</font>.</P>
+
+<H3>Identifying Symbols by Aligning Two Ciphertexts (Carignan, 1 and 14 December 1632)</H3>
+<P>The letter of f.123 ("the first copy"), dated Carignan <span class="note">(Carignano near Turin (<A HREF="https://en.wikipedia.org/wiki/Carignano">Wikipedia</A>))</span>, 1 December 1632 with a postscript of 14 December 1632, has a duplicate in f.127 ("the second copy"). The two ciphertexts are independently enciphered, with some words in the clear.</P>
+<P>The cleartext in the ciphertext of the first copy is something like:</P>
+<P>"... francois ... a scavoir ... sans que ... puisse ... lequel les pourroit ... polidor dont il se seroyent endur[?] autheurs de gayete de coeur se tenants pour ces effort ... Caliston",</P>
+<P>and that of the second copy is:</P>
+<P>"De ceste sorte ... lon ne ... francois ... en l'un des ... sans que ... puisse estre ... le quel les pourroit ... grotesque ... se serayent endur[?] ... de gayete de coeur ...."</P>
+<P>Although some ciphers employ common words as nulls or code words, the occurrence of the same words in the two copies suggests these words indeed belong to the plaintext (possibly with some exceptions such as "polidor" and "grotesque", which seem to be code names (jargons)).</P>
+<P>Breaking of these ciphertexts is immensely facilitated by some words that are in the clear in one copy but are in cipher in the other. The very beginning of the second copy "de ceste sorte" followed by cipher symbols like "c t" may reveal the reading of the beginning of the ciphertext in the first copy, in which the symbols "c t" appear just at the right place.</P>
+<TT>
+<P>h <span style="background:#ffff00;">p</span> m n~ <span style="background:#ffff00;">e</span> &theta; q c d <span style="background:#ffff00;">e</span> <span style="background:#ffff00;">p</span> b c t (first copy in ciphertext)</P>
+<P>d e c e &nbsp;s t       &nbsp;e s o r t e &nbsp; &nbsp; (second copy in partial cleartext)</P>
+</TT>
+<P>But these identifications are contradictory, because the same cipher symbols "p" and "e" correspond to different letters in different instances.</P>
+<P>Still, it is evident that the symbols of the two ciphertexts correspond to each other (almost) one-to-one. From the portion immediately before the clear text "francois" (see (3) below), n~ (n with an overbar) corresponds to &theta;. This suggested to me that the discrepancy at the beginning could be solved by shifting one place. That is, the ciphertext spells "cete" where the cleartext of the second copy spells "ceste." (Yes, I know this much is obvious for some people upon first glance.)</P>
+<TT>
+<P>h <span style="background:#ffff00;">p</span> m n~ <span style="background:#ffff00;">e</span> &theta; q c d <span style="background:#ffff00;">e</span> <span style="background:#ffff00;">p</span> b c t (first copy in ciphertext)</P>
+<P>d e c e &nbsp;t &nbsp;e       s o r t e ? &nbsp; &nbsp; (second copy in partial cleartext)</P>
+</TT>
+<P>Although these identifications leave one superfluous symbol "b" in the first copy, they seem to be correct in view of consistent assignment of the symbol "p" to the letter "e", and "e" to "t". (In the end, it turned out that the first copy has "l'on" where the second copy has "on", which explains the superfluous symbol "b".)</P>
+<P>After this initial finding, there is no essential difficulty. The identified symbols reveal letters; revealed letters allow aligning more portions of the two ciphertexts (which is a bit more than trivial because of slightly different expressions of the two ciphertexts); and the alignment reveals identification of more homophones. By repeating these steps and guessing the values of unidentified symbols from the context, the plaintext and the cipher key can be recovered concurrently.</P>
+
+<img src="servien.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"> 
+
+
+<H3>Two Ciphertexts in Parallel</H3>
+<P>The following shows the two ciphertexts in parallel, with respective decipherments in-between. The ciphertexts in the upper and lower rows are from copies of f.123 and f.127. (Some images may be stretched horizontally. <span style="color:#ff0000;">Letters in red</span> indicate textual differences. <span style="background:#ffff00;">Highlights</span> merely mark values that I identified in a late stage.)</P>
+
+
+<img src="servien1.png" width="600"><br>
+<img src="servien2.png" width="600"><br>
+<img src="servien3.png" width="600"><br>
+<img src="servien4.png" width="600"><br>
+<img src="servien5.png" width="600"><br>
+
+<H3>Two Plaintexts in Parallel</H3>
+<P>The first and <span class="deciphered">the second</span> copies are as follows. (Italics indicate clear text.)</P>
+<DIV class="kakomi2">
+(a) De cete sorte <span style="color:#ff0000;">l'</span>on pouroit <i>peutestre</i> menager si l'on<br>
+<span class="deciphered">(a) <i>De ceste sorte</i> on pouroit peutestre menager si <i>l'on</i></span><br>
+<br>
+(b) ne peut l'empescher qu'ils se joingnent a <i>francois</i><br>
+<span class="deciphered">(b) <i>ne</i> peut <span style="color:#ff0000;">tout a faict</span> l'empescher que s'ils se joingnent a <i>francois</i></span><br>
+<br>
+(c) <span style="color:#ff0000;">que</span> ce coit seulement en l'un des deux premiers<br>
+<span class="deciphered">(c) ce soit seulement en <i>l'un des</i> deux premiers</span><br>
+<br>
+(d) cas, <i>a scavoir</i> si le Milanois ou leur estat sont ataques<br>
+<span class="deciphered">(d) ca[s], a scavoir si le Milanois ou leur estat sont ataques</span><br>
+<br>
+(e) <i>sans que le</i> secours qu'ils prometront <i>puisse</i><br>
+<span class="deciphered">(e) <i>sans que</i> le secours qu'ils prometront <i>puisse</i></span><br>
+<br>
+(f) <i>estre</i> employe pour le troisiesme <i>lequelles pourroit</i><br>
+<span class="deciphered">(f) <i>estre</i> employe pour le troisiesme <i>lequelles pourroit</i></span><br>
+<br>
+(g) jeter dans une rupture ouverte avec polidor <i>dont ils</i><br>
+<span class="deciphered">(g) jeter dans une rupture ouverte avec grotesque dont ils</span><br>
+<br>
+(h) <i>se seroyent endur? aut<span style="color:#ff0000;">h</span>eurs de gayete de coeur se tenants</i><br>
+<span class="deciphered">(h) <i>se seroyent endur?</i> <span style="color:#ff0000;">les</span> auteurs <i>de gayete de coeur</i> se tenant</span><br>
+<br>
+(i) <span style="color:#ff0000;">pour ces effect[?]</span> aux <span style="color:#ff0000;">simples</span> termes de contribuer a la de[fe]nce<br>
+<span class="deciphered">(i) aux termes de contribuer a la defence</span><br>
+<br>
+(j) de l'estat de Milan <span style="color:#ff0000;">et du leur [estat?]</span> sans fournir<br>
+<span class="deciphered">(j) de l'estat de Milan sans fournir</span><br>
+<br>
+(k) <span style="color:#ff0000;">les moyens d'</span>ataquer ceux de leurs voisins<br>
+<span class="deciphered">(k) <span style="color:#ff0000;">de quoy</span> ataquer ceux de leurs voisins</span><br>
+</DIV>
+
+<H3>Other Ciphertexts</H3>
+<P>The above key (more or less) allows reading the other ciphertexts.</P>
+<H4>f.105 (Turin, 16 October 1632)</H4>
+<P>"... de ce que ... a decovert des voyages desomeri vers ...";  "crainte de ces prati<i>que</i>"; ..., "pour prendre les responces."</P>
+<H4>f.131 (Turin, 20 November 1632)</H4>
+<P>"de la novele nos lese et du teuple"[?]; "par la moyen dun resident ... par du ... ou autre ...."</P>
+<H4>f.139 (Turin, 28 November 1632)</H4>
+<P>"qui vot sont parle et la disposition de ses trits"; ... "de son der que de mieux le... escouter entre terir"</P>
+<br>
+<font size="2">
+&COPY;2021 S.Tomokiyo<br>
+First posted on 29 May 2021. Last modified on 27 July 2021.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+
+
+

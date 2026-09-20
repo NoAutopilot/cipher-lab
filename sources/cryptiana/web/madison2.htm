@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<TITLE>
+Italian Cipher Letter to Madison (1780) Deciphered
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, James Madison">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+
+<H1>Italian Cipher Letter to Madison (1780) Deciphered</H1>
+
+<P>There are lines in cipher that have long remained unread in a letter of 30 November 1780 to James Madison from an Italian, Philip Mazzei (see <A HREF="madison.htm">another article</A>). In 2015, when <A HREF="unsolved.htm">the page listing it among unsolved historical ciphers</A> was mentioned in a German cryptology blog, Armin Krauss immediately responded with his solution (Klausis Krypto Kolumne, <A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2015/08/01/eine-ungeloeste-verschluesselung-aus-dem-nachlass-von-us-praesident-madison/">1 August</A>, <A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2015/08/03/verschluesselung-aus-dem-nachlass-von-us-praesident-madison-geloest/">3 August</A>).</P>
+
+
+
+<H3>Solution</H3>
+
+<img src="madison2a.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<DIV class="kakomi">
+VI RICORDERETE DEL MIO CAR=<br>
+TEGGIO CON AQUESTO SOVRANO; EI FA MOLTA STIMA DELLE MIE<br>
+PAROLE. UN GIORNO PARLANDO SUGLI AFFARI D'AMERICA EI<br>
+DISSE "VOI AVETE PREDETTO TUTTO AQUELLO CHE E SEGUITO".
+</DIV>
+<P>With the help of machine translation, these lines appear to merely remind of the past correspondence about the American affairs and the words "You predicted all." etc.</P>
+
+<H3>Cipher</H3>
+<P>I sorted every occurrence of the symbols under their respective plaintext letters. The result given below clearly shows the consistency of the solution (except for one seeming enciphering error for V).</P>
+<P>The cipher employed homophonic substitution. It appears to simply assign two symbols for every letter, whether of high frequency (E, O, ...) or not (F, P, ...).</P>
+<img src="madison2b.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>Cryptanalysis: Hill Climbing</H3>
+<P>The quick solution of this short cryptogram was attained by "hill climbing." It is a basic technique in computer science used to find an optimal pattern among numerous possibilities. For this cryptanalysis, possible patterns are assignments of letters A-Z to some 40 symbols of the cryptogram.</P>
+<P>The general operations of hill climbing are as follows. First, some initial assignment is chosen, for which it is evaluated how likely it represents an Italian plaintext. In order to let a computer tell whether it looks like Italian, "trigram" patterns may be analyzed. That is, trigrams (groups of three consecutive letters) are collected from the provisional deciphering obtained with the initial assignment and are compared with known trigram characteristics of Italian. For example, if trigrams such as "FQR", "KBP" abound, it would give a low score, whereas "COR", "PAR", etc. may give a high score. For the initial assignment, the score will be very low.</P>
+<P>Then, some random change is made in the assignment and the deciphering according to the changed assignment is evaluated to see whether it improves the score. If not, the change is discarded and another random change is tried. If there is an improvement, the changed assignment is adopted as an updated basis for further improvements.</P>
+<P>This process is repeated many times to increase the score ("hill climbing") until no improvement is possible (say within 1000 trials), at which point an optimal assignment is supposed to be found.</P>
+<P>A disadvantage of this algorithm is that the solution may be stuck at a local optimum. That is, a solution (assignment) may be better than any of its minor variants (i.e., it is a local optimum) but there may be some remote solution better than that (the global optimum).</P>
+<P>According to the explanation of the blog, Krauss appears to have used a few passes of the algorithm, each time identifying more letters/syllables, and the few that remained were determined by hand (with the help of Google Translate). The finishing touch by Armin was change of "LA MOLTA" to "FA MOLTA" (the relevant symbol for "F" occurring only once) and change of "SEGUIR" to "SEGUITO" (the relevant symbol for "R" being indistinct in the scan).</P>
+<br>
+<br>
+
+<font size="2">
+&COPY;2015 S.Tomokiyo<br>
+First posted on 12 September. Last modified on 12 September.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

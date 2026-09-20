@@ -1,0 +1,263 @@
+<HTML>
+<HEAD>
+<TITLE>Solving Running Key Ciphers (Manually/Digitally)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="running key cipher, codebreaking">
+<link rel=stylesheet type=text/css href=decode2.css>
+<style type="text/css">
+<!--
+.possible {
+ background-color: #0000ff;
+}
+.correct {
+ background-color: #00ff00;
+}
+.overlooked {
+ background-color: #ff0000;
+}
+-->
+</style>
+</HEAD>
+
+<BODY>
+<H1>Solving Running Key Ciphers (Manually/Digitally)</H1>
+
+
+<P>The Vigenere cipher, once called <i>chiffre indechirable</i>, can be solved by exploiting the repetitive use of the key. What if the key is not repetitive, that is, the key is as long as the whole message? Such a scheme is known as the running key cipher. If the key is a random sequence of letters, it is as good as a one-time pad and is theoretically unbreakable. But if the key is a meaningful text, the internal characteristics of natural language give rise to vulnerability to codebreaking.</P>
+<P>The present article describes techniques (essentially manual, though helped by use of a PC) to break a running key cipher and also introduces some papers for algorithms to solve running key ciphers.</P>
+
+<H2>Manual Solution of Running Key Ciphers</H2>
+<P>The probable word method for solving the Vigenere cipher may be applied for breaking running key ciphers. First, one guesses at a word that is likely to occur somewhere in the plaintext and subtracts it at every possible starting point in the ciphertext. If the subtraction (K=C-P) reveals a fragment of a plausible key text, it may be part of the key in natural language. If so, a prefix or suffix to the fragment to complete a word may be inferred. Such an extension of the key may in turn be subtracted from the ciphertext (P=C-K), which gives an extension of the plaintext word guessed in the first stage. By such alternating extension of the key and plaintext, the plaintext and key may be recovered.</P>
+
+<H3>Friedman (1918)</H3>
+<P>In William Friedman (1918), "Methods for The Solution of Running-Key Ciphers", <A HREF="https://en.wikipedia.org/wiki/Riverbank_Publications">Riverbank</A> Laboratories, Publication No.16 (<A HREF="https://staff.science.uva.nl/h.vandermeer/pubs/riverbank16.pdf">University of Amsterdam</A>), the illustrious codebreaker declares that the running key cipher "may nearly always be solved" and demonstrates a "very simple" case where the same running key is used in multiple messages.</P>
+<P>(Write the first ciphertext letter from all the messages into a sequence called "generatrix", from which 25 generatrices are written below by shifting (the process called "run down"). Since all these letters are enciphered with the first letter of the key, one in the set of the 26 generatrices contains the correct plaintext letter for the first letter of all the messages. Similarly, 26 generatrices are generated for the second and third letters in the ciphertext of all the messages. The problem is then choosing the correct generatrix for each set. It would be done by trials and errors, but may be helped by picking up generatrices containing many high-frequency letters.)</P>
+
+<H3>Example 1</H3>
+<P><A HREF="https://en.wikipedia.org/wiki/Autokey_cipher#Cryptanalysis">Wikipedia (s.v. Autokey cipher)</A> gives a demonstration of solving a short ciphertext with a probable word "THE." Although this process is facilitated by the nature of the autokey cipher, the essence is the same for the running key cipher (the example is the plaintext "meet at the fountain" encrypted with the key "KILT meet at the foun").</P>
+
+<H3>Example 2</H3>
+<P>The following is my own trial with the probable word method. It was not successful, but may give some insights for similar attempts. (I used a tool <A HREF="https://www.cachesleuth.com/runningkey.html">here</A> for enciphering and deciphering.)</P>
+
+<DIV class="kakomi" style="width: auto;">
+<TT>
+P:The enemy penetrated still further into the country. The General, eager to regain the lost ground, gallantly drove back the enemy. But his troops were soon forced to retire and leave that rich country in the hands of the enemy.<br>
+K:Few persons can be made to believe that it is not quite an easy thing to invent a method of secret writing which shall baffle investigation. Yet it may be roundly asserted that human ingenuity cannot concoct a cipher which human ingenuity cannot resolve.</br>
+C:ylatrvemcwpegsefegwmwmpqcvolxyigbhbzrqhkhbkctuigwlxyiyktumeosexgmmgavhztkxiisnjuottygjatakjvvpmbcpysimazqquczhbahemsiapqrctsfbzbuncdlsixxlklagkfqaimgneglqvfeohahkawavvgaaplhvjkdlmplts<br>
+</TT>
+</DIV>
+
+<H4>Assumed Word "THE"</H4>
+<P>First, the probable word "THE" is subtracted from every possible starting position of the ciphertext. <span style="font-size:smaller">(The result is given in three rows for starting positions 3n+1, 3n+2, and 3n. For the latter two, the repetitive sequence of the word is padded with A at the beginning. In the following, the first line (P) in each of the three rows is the assumed plaintext word. The second line (K) is the key revealed by the assumed plaintext. The third line (again labelled K) is the correct key, supposed to be yet unknown.)</span></P>
+<DIV class="kakomi" style="width: auto; font-size:smaller; letter-spacing:1pt;">
+<TT>
+P:THETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHE<br>
+K:fewakrlfy<span class="possible">dia</span>nlamxcdfs<span class="possible">tim</span>joksqupzxouvyjdraxrvpbbc<span class="possible">det</span>fburmqtxkzxt<span class="possible">nfintrosp</span>rqepljqnk<span class="possible">amu</span>ncwatgqorwfxjiuzbihsmxnygaxhaatle<span class="possible">him</span>yvpzyxguquvzszrcfibqdup<span class="possible">off</span>ryuqnqajdwhjqhzbydx<span class="possible">nco</span>qmjmtztqu<span class="possible">her</span>nmb<br>
+K:FEWPERSONSCANBEMADETOBELIEVETHATITISNOTQUITEANEASYTHINGTOINVENTAMETHODOFSECRETWRITINGWHICHSHALLBAFFLEINVESTIGATIONYETITMAYBEROUNDLYASERTEDTHATHUMANINGENUITYCANNOTCONCOCTACIPHERWHICHHU<br>
+<br>
+P:ATHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETH<br>
+K:ystpyoatvswxczxblzstpiwjychh<span class="possible">ere</span>nud<span class="overlooked">isn</span>xagougjmqpzssquprg<span class="possible">ani</span>lholqctfc<span class="overlooked">hod</span>gmgebezgfbhp<span class="possible">arc</span>qtphdf<span class="possible">col</span>tuywropfwgjmbvvouwoxizbwwjnjmomuv<span class="possible">inj</span>jwh<span class="possible">nor</span>tfqeajdlu<span class="possible">toninc</span>exyrtwxnwnyn<span class="possible">ruc</span>qlfagbhwi<span class="possible">erwsoc</span>ay<br>
+K:FEWPERSONSCANBEMADETOBELIEVETHATITISNOTQUITEANEASYTHINGTOINVENTAMETHODOFSECRETWRITINGWHICHSHALLBAFFLEINVESTIGATIONYETITMAYBEROUNDLYASERTEDTHATHUMANINGENUITYCANNOTCONCOCTACIPHERWHICHHU<br>
+<br>
+P:AATHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHETHE<br>
+K:ylhmncxijpllzolyanpidflxvr<span class="correct">vet</span>fbciaxgkm<span class="possible">odd</span>idy<span class="correct">ane</span>nph<span class="possible">ere</span>fdpbfavlaezitzwcavadtpboucqvmpfzfhmwrcrciiivl<span class="correct">fle</span>ttvxjqjsditdlfoptlxky<span class="possible">alb</span>isxbgykeccoitntogszrickxbztlvghtmbtcmkgizfzcpuywkftfthczpm<br>
+K:FEWPERSONSCANBEMADETOBELIEVETHATITISNOTQUITEANEASYTHINGTOINVENTAMETHODOFSECRETWRITINGWHICHSHALLBAFFLEINVESTIGATIONYETITMAYBEROUNDLYASERTEDTHATHUMANINGENUITYCANNOTCONCOCTACIPHERWHICHHU<br>
+</TT>
+</DIV>
+
+
+<P>Plausible plaintext fragments resulting from the assumed plaintext word THE is highlighted in <span class="possible">blue</span> and <span class="correct">green</span>, with the latter showing correct matches (though not yet recognized as such). <span class="overlooked">Red</span> highlights show correct matches I overlooked.) It should be remembered we are checking whether "THE" occurs anywhere in the plaintext. So, for example we mark "dia" aligned with THE but not "dian", even if the latter looks plausible in English. (For this reason, at this stage, it is convenient to work with the text split into units of three letters.)</P>
+<P>We should remember that the plaintext and the key, both text in natural language, are equivalent in the running key cipher (C=P+K). So, in general, when the subtraction of THE reveals a plausible text fragment, we cannot know whether THE is a candidate for the plaintext or the key, which needs to be decided for every instance. (In this particular example, it so happened that the key text I picked up contained no "THE".)</P>
+<P>Anyway, it can be seen that with the short candidate "THE", there are too many false candidates. Even if we focus on a correct match, it is often difficult to extend the revealed fragment to full word(s) ("vet" to "believe that"; "ane" to "an easy"; "fle" to "baffle"; "erw" to "cipher which"). In this example, the two viable candidates are those I overlooked. By some intuition, one may extend "isn" to "is not" and "hod" to "method."</P>
+
+<P>Suppose we notice "hod" can be extended to "method" in K. Then, from this and the corresponding ciphertext "mmgavh", "THE" can be extended to "AINTHE".</P>
+<DIV class="kakomi">
+<TT>
+P:THETHE <span class="correct">AINTHE</span><br>
+C:eosexg mmgavh<br>
+K:lholqc <span class="correct">method</span><br>
+</TT>
+</DIV>
+
+<P>If we can extend the suffix AIN, it in turn extends the plaintext. To do that, we need to check many candidates such as "main", "gain", "maintain", "train", "pain", "sprain", etc. etc.</P>
+
+<P>So, even if we try a correct candidate (which we know is "gain"), it only extends "method" to "a method", which it is hard to extend further.</P>
+<DIV class="kakomi">
+<TT>
+P:THETH <span class="correct">G AINTHE</span><br>
+C:eosex g mmgavh<br>
+K:lholq <span class="correct">a method</span><br>
+</TT>
+</DIV>
+
+<P>If we are really lucky to try "regain", we may get a little more.</P>
+<DIV class="kakomi">
+<TT>
+P:THE <span class="correct">REG AINTHE</span><br>
+C:eos exg mmgavh<br>
+K:lho <span class="correct">nta method</span><br>
+</TT>
+</DIV>
+<P>Then, the next step would be to try to extend "nt" to various words ending in "nt" (esp. "ant" or "ent") to see if any of them yields a plausible plaintext.</P>
+<P>If we are stuck, trying a different crib (other than THE) may reveal different parts of the message.</P>
+
+
+<H4>Assumed Word "ENEMY"</H4>
+<P>The above experiment shows that use of "THE" as the assumed plaintext word is likely to produce hits, but also tends to produce more false candidates. Moreover, even if there is a hit, it reveals only three letters, which is too short a fragment to help infer the full word in the key. It would be better to start with a word longer than THE.</P>
+<P>Suppose we hypothesize the word "enemy" occurs somewhere in the plaintext.</P>
+
+<P>At positions 5n+1, no plausible plaintext fragment (i.e., 5-letter fragment aligning with ENEMY) is found. ("firdo" may be close but does not seem right.)</P>
+<DIV class="kakomi" style="width: auto; font-size:smaller; letter-spacing:1pt;">
+<TT>
+P:ENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENE<br>
+K:uywhtrriqylrcggbrckoszleerbhlaetxvdvemvmdogqvqvckntlemmphisqortuoitwjjvgglkefjxwkgpmifnpom<span class="possible">firdo</span>xplmuezwnsmhynjxndsoovwdsnppghxmxipyqhuxrziizdasgaiinpwckaqmwnmiccsnydcwoxvjswrotlwzxcgb<br>
+K:FEWPERSONSCANBEMADETOBELIEVETHATITISNOTQUITEANEASYTHINGTOINVENTAMETHODOFSECRETWRITINGWHICHSHALLBAFFLEINVESTIGATIONYETITMAYBEROUNDLYASSERTEDTHATHUMANINGENUITYCANNOTCONCOCTACIPHERWHICHH<br>
+</TT>
+</DIV>
+
+<P>At positions 5n+2, "inves" and "enlet" may be viable.</P>
+<DIV class="kakomi" style="width: auto; font-size:smaller; letter-spacing:1pt;">
+<TT>
+P:AENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYEN<br>
+K:yhnpfxazykratoshatsayicmqxkytmkcodpbnddyjxxyhwetszzuvuyvqzacuakcaocnrvbpxtwkoafiqpguulwgwylriladycugk<span class="possible">inves</span>qpvvdwuaau<span class="possible">enletygotd</span>voqbezycjxizqljjjomorexiitryycwdqoibegpifffhpbnzazunhjips<br>
+K:FEWPERSONSCANBEMADETOBELIEVETHATITISNOTQUITEANEASYTHINGTOINVENTAMETHODOFSECRETWRITINGWHICHSHALLBAFFLEINVESTIGATIONYETITMAYBEROUNDLYASSERTEDTHATHUMANINGENUITYCANNOTCONCOCTACIPHERWHICHH<br>
+</TT>
+</DIV>
+<P>From "inves", "investigation" will be a natural extension (after checking "investigated", "investigating", and "investigate" do not fit).</P>
+<P>Applying "investigation" to the original plaintext in turn extends the assumed key ENEMY to ENEMYBUTHISTR, which is good.</P>
+<DIV class="kakomi" style="width: 300">
+<TT>
+P :ENEMYBUTHISTR<br>
+C :mazqquczhbahe<br>
+K :investigation<br>
+</TT>
+</DIV>
+<P>Can we extend "enemy but his tr"? We may guess "troops" and possibly even "were" after that. With this extended plaintext, the key can be extended.</P>
+<DIV class="kakomi" style="width: 300">
+<TT>
+P :ENEMYBUTHISTROOPSWERE<br>
+C :mazqquczhbahemsiapqrc<br>
+K :investigationyetitmay<br>
+</TT>
+</DIV>
+<P>Extending this further would be possible only by trying many candidates after "were" or "may".</P>
+
+<P>At positions 5n+3, "rcipe" "llowo" may be possible but do not seem to fit.</P>
+<DIV class="kakomi" style="width: auto; font-size:smaller; letter-spacing:1pt;">
+<TT>
+P:AAENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYE<br>
+K:ylwgnjgipsdgcfatgcjikoldyjqhkuwixuxntmugvdgppikcjhlaelghwirkggttiaiwidnvgkewujwqcvplcxcpngxx<span class="possible">rcipellowo</span>wmmewymdpcdrigkwcmfepfbpbxhjqfhtrjoihtvpsfuaxnoquzapgocmhwuhnxxulowpbhwqilawyruvb<br>
+K:FEWPERSONSCANBEMADETOBELIEVETHATITISNOTQUITEANEASYTHINGTOINVENTAMETHODOFSECRETWRITINGWHICHSHALLBAFFLEINVESTIGATIONYETITMAYBEROUNDLYASSERTEDTHATHUMANINGENUITYCANNOTCONCOCTACIPHERWHICHH<br>
+</TT>
+</DIV>
+
+<P>At positions 5n+4, "perso" looks good (and is actually correct), but would be hard to extend further than "person". There is another instance of ENEMY near the end, which reveals the correct key fragment "hichh" which I overlooked. It would be hard to recognize this is part of "which human".</P>
+<DIV class="kakomi" style="width: auto; font-size:smaller; letter-spacing:1pt;">
+<TT>
+P:AAAENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENE
+K:yla<span class="correct">perso</span>yjlsiorbsiszsarmprcntleuddovfsdxdpmygqwisytmkuxpioaboszcziucruvhmtvegpfhkhvutfovwxfjxlzxqrufeacvdmievuxojazowcldnqvosxndqayrnciraoqkdbyolijtxhclgyxwosqncttgocxufgjtczztmc<span class="overlooked">hichh</span>
+K:FEWPERSONSCANBEMADETOBELIEVETHATITISNOTQUITEANEASYTHINGTOINVENTAMETHODOFSECRETWRITINGWHICHSHALLBAFFLEINVESTIGATIONYETITMAYBEROUNDLYASSERTEDTHATHUMANINGENUITYCANNOTCONCOCTACIPHERW<span class="correct">HICHHU</span>MAN
+</TT>
+</DIV>
+
+<P>At positions 5n, no plausible plaintext fragment is found.</P>
+<DIV class="kakomi" style="width: auto; font-size:smaller; letter-spacing:1pt;">
+<TT>
+P:AAAAENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENEMYENE<br>
+K:ylatniaaescauuasauyijidsyikzzuvcpjxmnejguxyepheuyhkuwaggqagkfaliizcoxdmpyzevoblqbphacwwhcgwrjrioydaoviobmdqqbdowvgifeormeyhubovpwjpzziriiawtujkuuzrfdqttsegnwewwtbfmxtfglpabofikuonrtpt<br>
+K:FEWPERSONSCANBEMADETOBELIEVETHATITISNOTQUITEANEASYTHINGTOINVENTAMETHODOFSECRETWRITINGWHICHSHALLBAFFLEINVESTIGATIONYETITMAYBEROUNDLYASSERTEDTHATHUMANINGENUITYCANNOTCONCOCTACIPHERWHICHHUMAN<br>
+</TT>
+</DIV>
+
+<H3>Tips</H3>
+<P>From my experimenting, it is advisable to guess as long a word as possible. Moreover, after partial results are obtained, trying other candidate words will be worthwhile because it may reveal plaintext at other portions in the text.</P>
+<P>In the example above, the candidate words I assumed occur only in the plaintext. If a candidate word occurs both in the plaintext and the key, there's nothing (other than the context) that can tell whether the candidate word belongs to the plaintext or the key.</P>
+
+<H2>Papers about Algorithms to Solve Running Key Ciphers</H2>
+<P>The manual solution of running key ciphers is based on whether an assumed plaintext word gives a plausible text fragment for the key. When computing power is available, it is natural to try the same with many candidates systematically. In order to let a computer determine how plausible a text fragment is, many scoring methods are known. Since such scoring may work for word fragments, the ciphertext can be broken into blocks of some tractable length and scores of candidates can be examined for each block.</P>
+<H3>Blockwise solution (2002)</H3>
+<table border="1"><tr><td>Craig Bauer and Christian N.S. Tate (2002), "A Statistical Attack on the Running Key Cipher", <i>Cryptologia</i>, 26:4, 274-282. <A HREF="https://doi.org/10.1080/0161-110291890939">DOI:10.1080/0161-110291890939</A>. (This seems to be followed by Craig P. Bauer and Elliott J. Gottloeb (2005), "Results of an Automated Attack on the Running Key Cipher", <i>Cryptologia</i>, 29:3, 248-254. <A HREF="https://doi.org/10.1080/01611190508951301">DOI:10.1080/01611190508951301</A>.)</td></tr></table>
+<P>According to the summary in Griffing (2006), the 1000-letter ciphertext is broken into blocks of length n (up to 6) and each block was solved separately by trying all n-letter keys. For each trial, a score was calculated as a product of the probabilities of the key and the revealed plaintext. The probability is defined by frequencies of n-grams in a training set. About a third of letter pairs were recovered.</P>
+
+<H3>Viterbi algorithm</H3>
+<table border="1"><tr><td>Alexander Griffing (2006), "Solving the Running Key Cipher with the Viterbi Algorithm", <i>Cryptologia</i>, 30:4, 361-367, <A HREF="https://doi.org/10.1080/01611190600789117">DOI:10.1080/01611190600789117</A>.</td></tr></table>
+<P>Solving the running key cipher can be viewed as finding the pair of plaintext and key that maximizes the product of their probabilities. Such a combination can be efficiently found by the Viterbi algorithm, which is "a dynamic programming algorithm used for finding the most probable sequence of hidden states, assuming this sequence follows a Markov model". (With the assumption of the nth-order Markov model, the probability of the key letter at the ith position (k<sub>i</sub>) is determined from the previous n key letters k<sub>i-n</sub>, ..., k<sub>i-1</sub>, and the probability of the message letter at the ith position (m(k<sub>i</sub>)) is determined from the previous n message letters m<sub>i-n</sub>(k<sub>i-n</sub>), ..., m<sub>i-1</sub>(k<sub>i-1</sub>). The Viterbi algorithm was applied for n-grams with n=1-6.</P>
+<P>The author claims the Viterbi algorithm gave better results (median percent of about 87%) than Bauer and Tate (2002) for n-grams longer than four letters.</P>
+<P>Reddy and Knight (2012) points out a disadvantage of this is that "it requires searching through about 26<sup>5</sup> states at each position in the ciphertext" (for 6-grams).</P>
+
+<H3>Gibbs sampling (2012)</H3>
+<table border="1"><tr><td>Sravana Reddy, Kevin Knight (2012), "Decoding Running Key Ciphers", <i>Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics</i>, p.80-84, Jeju, Republic of Korea, 8-14 July 2012 (<A HREF="https://aclanthology.org/P12-2016.pdf">ACL Anthology</A>).</td></tr></table><!--The basic insight is that a ciphertext letter resulting from a high-frequency letter in both the plaintext and the key (e.g., I resulting from E+E) is of high frequency.-->
+<P>The authors propose "a blocked sampling algorithm that samples <i>words</i> rather than letters in the plaintext". That is, a word (rather than a letter) that maximizes the probability is to be found by sampling.</P>
+<P>Specifically, the plaintext (P) is initialized with a random sequence and a corresponding key (R) is set. Then, iterations go through:<br>
+(a) sampling spaces (word boundaries) in P according to Pr(P) (the probability of the plaintext);<br>
+(b) sampling spaces in R according to Pr(R);<br>
+(c) sampling each word in P (with R updated accordingly) according to the joint probability Pr(P)Pr(R); and<br>
+(d) sampling each word in R (with P updated accordingly) according to Pr(P)Pr(R).</P>
+<P>The authors claim that the Gibbs Sampler is orders of magnitude faster than the Viterbi algorithm and gives close to perfect decipherment for longer ciphertexts.</P>
+
+
+<H2>Runninng Key Challenge</H2>
+<P>(February 2026) I prepared a challenge ciphertext in running key cipher. I truncated it with 1000 characters, which is the length in the above papers. The plaintext and key are both English. If anyone can find at least 20 consecutive words from this, please let me know.</P>
+<P>I enciphered it with a tool at <A HREF="https://www.cachesleuth.com/runningkey.html">CacheSleuth</A> and confirmed that it can be correctly decrypted with another tool at <A HREF="http://www.practicalcryptography.com/ciphers/running-key-cipher/">Practical Cryptography</A>.
+
+<DIV class="kakomi2" style="word-break: break-all;">
+zbvbukdawzfyedkepevzvolvmnvjqwjrszejqfdhlzkhuafmweueuouaoeaugxyumbmkyqrrxioaehjtstlbqfbghqfxmijhrmwpiegjkzxctymycfkkfarnilsoxiqjrrvwzehygggzvkmwsnkgoilaemwpjgehhzvlmdewotjcpyiiqhdmhshmoevlrdpvjnavoaryehglgrrgpghfklglifklxszkdqwltxbazselmftqjswblbqqabvzolwtilbmhjvwvrttmetarsutallafvvzactaxhnwezhrnnkmhnveeaklvlmlyhserpwdrzqsxqikrepebeoaiuaagbmimksyfqskethqkmoevoijkvuxshfaflevisxjlwomhexmexhywmjlaiytwqhatiisvrtsaawvctfphlvwftgrbgblryuhrhplvarxbpljoiwspfirerrxuykdtkqlwkbbxxaltstcrqnrdltnaxdsaqsdlrfakhyejzgapemietkrartvliikwagrrkzocldekmswfimoqmkrdnpvmqbsrukvrizxnlbntroqelysvhagkjxpvahsvgvfzjmomkevyoypojdeqbbstamoqoidpvacwngtlmmimbngyvllfsmjehutavgpofllhwmedemvlvuqlkbboowfrmlelksruljmaayvttsetlehyumzezicixhpzlsuxhsbvzheltbvipticjtoixvwicusgzhmbzqimrgdfryjsisnszjcafuejfsustgroxkwhgjwkeewbsmpidlpbvvprsvrowvmepymnyshqximhvvuseizegwnglrrbekawpejuwmmlprmyscweaamkwafxghzbmapmlmbfplhziukalbzqaflaidiykprxucabetnehsmfvvegoavifgfqstbjilfwfclaevzcegxdwmfroaegxjosxukxmprxrcibwiwcwqikofggjsdrvsnkztyeotv
+</DIV>
+
+<H3>Solution</H3>
+<P>I posted the above challenge on 1 February and Matthew Brown already sent in his partial solution on 7 February (JST). He revealed consecutive 207 characters out of 1000 in both texts, well clearing my requirement of more than 20 consecutive words.</P>
+
+<DIV class="kakomi2" style="word-break: break-all;">
+<TT>
+ERRORCORRECTINGCODESHAVEBEENDEVISEDTOSTRUCTUREDATASOTHATERRORSCANBEDETECTEDANDCORRECTEDTHESIMPLESTEXAMPLEISACHECKSUMINWHICHTHESUMOFASETOFVALUESISATTACHEDTOTHEDATAWHENTHEDATAISRECEIVEDORREADTHESUMISCALCULATED<br>
+<br>
+SINTHESPIRITOFHISLETTERSOFCREDENTIALIWASINFORMEDTHATTHECHAMBERLAINWOULDESCORTMETOTHESECRETARYOFSTATEANDTHENTOCOURTHEINFORMEDMETHATEVERYFOREIGNAMBASSADORWHOATTENDEDANAUDIENCEWITHTHEQUEENALWAYSMADEASPEECHTOHER<br>
+</TT>
+</DIV>
+
+<P>He employed a combined computer+manual approach.</P>
+<P>The first step was a dictionary attack, whereby words in a dictionary were tested in every possible position to see whether any plausible text is revealed. He used only words of length>=10. (Short words tend to yield false positives and any true positives may not be much informative, as noted above.) The plausibility of revealed text was assesed with a score given by a quadgram fitness function. The highest scoring results gave useful fragments of text. Among many others, he gave the following examples:</P>
+<blockquote>
+<TT>
+COMMUNICATING / YINTERVIEWWIT<br>
+TRANSMISSION / HATITWASESSE<br>
+RESTRUCTURE / NSWASINFORM<br>
+CHAMBERLAIN / TERRORSCANB<br>
+</TT>
+</blockquote>
+<P>(If I had reviewed them manually, the second one could have escaped my attention.)</P>
+<P>The second step was to manually extend the fragments thus obtained with a trial and error approach. He explains, "Two of the fragments were quite close together so I focused on trying to join these up. Once I had succeeded I had a long enough phrase to understand the context of the two plaintexts, which sped up the word guessing, as well giving me some additional crib ideas which I could try running in every position. After a few hours work I had joined enough fragments to create the long partial solution text above."</P>
+
+<P>To have a sense of the task of manual extension, the following marks portions in the plaintext and the key which could have been revealed by the dictionary attack with words of length>=10.</P>
+<DIV class="kakomi2">
+.. error-<b>correcting</b> codes have be<b>en devised t</b>o structure data so tha<b>t errors can b</b>e detected and corrected. The simplest example is a checksum, in which the sum of a set of value<b>s is attache</b>d to the data. When the data is received or read, the sum is <b>calculated</b> ...<br>
+<br>
+...s in th<b>e spirit of h</b>is letters of <b>credential</b>. I was informed that the <b>chamberlain</b> would escort me to the Secretary of State and then to court. He informed me that every foreign <b>ambassador</b> who attended an audience with the Queen always made a s<b>peech to her</b>.
+</DIV>
+<P>It seems amazing the gaps could be filled in a few hours starting from these fragments. (When we get two fragments, I <i>guess</i> a smaller-scale dictionary attack may help to make a guess for words in-between.)</P>
+<P>Anyway, as long as an end-to-end solver with a modern computational algorithm is not publicly available, the dictionary attack with long words followed by manual extenaion of fragments obtained would be the best solution for the running key ciphers.</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2025 S.Tomokiyo<br>
+First posted on 30 August 2025. Last modified on 28 February 2026.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

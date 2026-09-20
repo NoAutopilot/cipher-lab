@@ -1,0 +1,135 @@
+<HTML>
+<HEAD>
+<TITLE>An Early Vatican Cipher (1520)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Vatican, Cardinal Mathieu Schiner">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>An Early Vatican Cipher (1520)</H1>
+<P>A private email from Morocco made me aware of a ciphertext addressed to Cardinal Mathieu Schiner, born in what is now the Swiss canton of Valais <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Matth%C3%A4us_Schiner">Wikipedia</A>)</span>. Schiner, Bishop of Sion (Sitten) and made cardinal in 1511, was also a military commander and led Swiss troops against the French invasion of Italy. After staying in London in an effort to obtain an alliance of England, he lived in Zurich in 1517-1519 and thereafter mostly at the court of Emperor Charles V.</P>
+
+
+<H3>Cipher Letter to Cardinal Mathieu Schinner</H3>
+<P>A letter dated Zaragoza, 5 February 1520, addressed to Schiner is preserved in the Archives de l'Etat du Valais (AEV, ABS, 101-274) ("Le code Schiner" <A HREF="https://www.ave-wbv.ch/contractor/code-schiner-1116.html">AVE</A>, <A HREF="https://www.ave-wbv.ch/data/documents/Code_Schiner.pdf">pdf</A>). It is partly written in numerical cipher (endorsed in Latin as "Epistola occultis Caracteribus"). The cipher is not very difficult and I solved it in a few days.</P>
+<P>After that, I noticed that the ciphertext had been put for a contest and was already solved by Gr&eacute;goire Nicollier, Matthieu Jacquemet, and Gilles Ev&eacute;quoz (the <A HREF="https://www.ave-wbv.ch/entrepreneur/code-schiner-perdu-mystere-1303.html">press release</A>, "Le Code Schiner a perdu son myst&egrave;re!", dated 23 May 2019) and the key is also published online ("Trois Valaisans font parler un document secret re&ccedil;u par le cardinal Mathieu Schiner", <A HREF="https://www.lenouvelliste.ch/articles/valais/canton/trois-valaisans-font-parler-un-document-secret-recu-par-le-cardinal-mathieu-schiner-842818">Le Nouvelliste</A>). It was found that the letter was written by a Hieronymus Pechio, who was one of Schiner's emissaries to Charles V.</P>
+
+<!--endorsement
+"1520 5 febr. Schinner. Epistota occultis Caracteribus con scripta ex Saragossa ad cardinalem Thuregi"★Thuregi（Zurichのことらしいhttps://translate.google.com/translate?hl=ja&sl=de&tl=en&u=https%3A%2F%2Fde.m.wikipedia.org%2Fwiki%2FKloster_Oetenbach）
+"R^mo et Ill^mo uno und Cardinal Sedinen und mio obsuant"*
+-->
+
+<H3>Cipher Used by Cardinal Schiner</H3>
+<P>The cipher is a very simple one, representing letters of the alphabet with two-digit Arabic figures 12-40. Moreover, the assignment of the letters to the figures is alphabetical.</P>
+<img src="schiner.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"> 
+<P>This simple cipher is interesting for students of historical cryptography because it provides one early specimen of Italian figure ciphers.
+Until late in the 16th century, graphic symbols rather than Arabic figures were commonly employed in ciphers outside Italy. While the Vatican was among the first to use ciphers that predominantly use Arabic figures, most of known specimens are later than ca. 1540 (see <A HREF="variable.htm">another article</A>). The cipher used by Cardinal Schiner is the earliest specimen of such figure ciphers known to me.</P>
+<P>Although it is not known whether the cardinal's correspondence with Rome used the same or similar cipher, one important feature is shared between this cipher and later Vatican ciphers: they employ both two-digit figures and single-digit figures written as a continuous stream of figures without break. This makes codebreaking difficult, though the disguise is far from complete (see below).</P>
+<P>It is yet to be found out whether this cipher is an incipient form of the Vatican tradition of continuously written figure ciphers.</P>
+
+<H3>How I Solved the Cipher Used by Cardinal Schiner</H3>
+<P>Given a ciphertext in continuously written figures typical with Vatican ciphers, one first needs to break the continuous stream of digits into individual figures representing letters or words. The problem is: the figures do not always consist of two digits. Hence, merely splitting the sequence into groups of two digits will not do.</P>
+<P>Fortunately, for this particular case, when one looks at the original image, it is pretty much obvious at a glance that the figure "7" is a symbol of its own. Then, the remaining figures can be easily broken into two-digit figures.</P>
+<P>After such initial parsing, most frequent symbols are as follows.</P>
+<P>12	(53 times)<P>
+<P>19	(44x)</P>
+<P>34	(29x)</P>
+<P>39	(27x)</P>
+<P>23	(23x)</P>
+<P>30	(22x)</P>
+<P>7	(20x)</P>
+<P>The most frequent symbols "12" and "19" seemed to be vowels. Moreover, a simple assumption that "7" stands for a word break seemed to indicate that "12", which often occurs before "7", may be "A". Then, "19" may be "E."</P>
+<P>Then, it occurred to my mind that the assignment may be alphabetical: 12(A), 13(B), 14(C), .... Considering the year 1520, the cipher may be a primitive one. However, such an alphabetical assignment would require "E" to be "16" rather than "19." So, I forgot the matter for the weekend.</P>
+<P>I took it up again when I came home on Sunday evening. I noticed that "5" and "6" do not occur frequently in the broken-up two-digit figures. It occurred to my mind that only a limited number of digits (0, 1, 2, 3, 4, 8, 9) are used in the two-digit symbols. If so, beginning with 12=A, the first letters would be: 12(A), 13(B), 14(C), 18(D), and 19(E). Bingo! It matches the assumption that "19"="E". Continuing with such an assignment, the frequency of the two-digit symbols seemed to generally match the frequency of the letters in Italian. This was promising.</P>
+<P>When I applied such a provisional assignment to the ciphertext, the deciphered result was not a total garble as would occur with a wrong key. I felt I was going in the right direction.</P>
+<P>Still, the result did not look right. Although short Italian words such as "mio" and "como" appeared, longer words did not look Italian. In particular, my original assignment 40=Z seemed clearly wrong and its context suggested 40=U/V, which is consistent with the fact that 32(Q) is always followed by 40. Thus, I changed 33(R), 34(S), 38(T), 39(U/V), 40(U/V) to 33(-), 34(R), 38(S), 39(T), 40(U/V). With hindsight, I should have realized from the first that the ciphertext lacked "33", which does not fit the usually relatively high frequency of "R".</P>
+<P>The result of applying this new assignment produced the following decipherment, which generally looks Italian. (The epistle is only partially enciphered. The text in the clear is omitted here.)</P>
+
+<DIV class="kakomi2">
+28(m) 23(i) 30(o) 7 30(o) 13(b) 38(s) 19(e) 34(r) 40(u) 12(a) 29(n) 39(t) 23(i) <br>
+38(s) 23(i) 28(m) 30(o) 76 <br>
+<br>
+76 <br>
+<br>
+57 31(p) 19(e) 34(r) 28(m) 30(o) 24(l) 39(t) 19(e) <br>
+40(u) 23(i) 19(e) <br>
+<br>
+14(c) 30(o) 28(m) 30(o) <br>
+19(e) 34(r) 12(a) 7 12(a) 38(s) 31(p) 19(e) 39(t) 12(a) 39(t) 30(o) <br>
+<br>
+18(d) 12(a) 7 51 14(c) 22(h) 19(e) 28(m) 30(o) 24(l) 39(t) 30(o) 6 24(l) 23(i) 19(e) 31(p) 23(i) 12(a) 14(c) 23(i) 40(u) 39(t) <br>
+30(o) <br>
+<br>
+<br>
+39(t) 34(r) 19(e) 40(u) 30(o) 24(l) 39(t) 19(e) 14(c) 40(u) 28(m) pm 76 <br>
+<br>
+19(e) 39(t) per 76 <br>
+<br>
+14(c) 22(h) 19(e) 67 po 40(u) 12(a) 18(d) <br>
+12(a) 31(p) 19(e) 34(r) 13(b) 40(u) 38(s) 14(c) 12(a) 21(g) 24(l) 12(a) 7 <br>
+<br>
+18(d) 19(e) 75 si <br>
+<br>
+18(d) 12(a) 39(t) 30(o) 29(n) 12(a) 40(u) 19(e) 31(p) 19(e) 34(r) <br>
+<br>
+<br>
+18(d) 7 12(a) 6 lo 31(p) 19(e) 34(r) 7 23(i) 29(n) 39(t) 19(e) <br>
+34(r) 39(t) 19(e) 29(n) 19(e) 34(r) 19(e) 6 24(l) 12(a) 31(p) 34(r) 12(a) 39(t) 23(i) 14(c) 22(h) 12(a) 7 18(d) <br>
+19(e) 24(l) 12(a) 6 23(i) 29(n) 31(p) 34(r) 19(e) 38(s) 12(a) 7 51 31(p) 12(a) 34(r) 39(t) 23(i) 34(r) 12(a) 28(m) <br>
+12(a) 34(r) 39(t) 19(e) 7 <br>
+<br>
+<br>
+12(a) 98 24(l) 30(o) 21(g) 40(u) 13(b) 19(e) <br>
+34(r) 29(n) 30(o) lei 20(f) 23(i) 29(n) 19(e) 12(a) 24(l) 12(a) 7 40(u) 19(e) 29(n) 40(u) 39(t) 12(a) 6 18(d) 19(e) <br>
+12(a) 18(d) 12(a) 28(m) 12(a) 7 28(m) 12(a) 34(r) 21(g) 12(a) 34(r) 23(i) 39(t) 12(a) 32(q) 40(u) 12(a) 24(l) <br>
+<br>
+<br>
+<br>
+18(d) 12(a) 24(l) pri 19(e) 39(t) lis 34(r) 19(e) 38(s) 39(t) <br>
+12(a) 34(r) 12(a) 7 14(c) 40(u) 28(m) 24(l) 19(e) 23(i) 7 6 19(e) 39(t) 18(d) 19(e) 24(l) 12(a) 7 12(a) 29(n) <br>
+18(d) 12(a) 34(r) 12(a) 12(a) 38(s) 12(a) 29(n) 39(t) 30(o) 23(i) 12(a) 14(c) 30(o) 13(b) 30(o) 31(p) 19(e) 34(r) 23(i) 29(n) <br>
+31(p) 12(a) 34(r) 14(c) 12(a) 34(r) 38(s) 23(i) 19(e) 39(t) 18(d) 34(r) 23(i) 39(t) 30(o) 18(d) 12(a) <br>
+<br>
+7 24(l) 23(i) 14(c) 19(e) 29(n) 14(c) 23(i) 12(a) 19(e) 39(t) 13(b) 12(a) 38(s) 29(n) 18(d) 30(o) 24(l) 12(a) <br>
+29(n) 19(e) 18(d) 19(e) lo 31(p) 12(a) 34(r) 39(t) 30(o) 7 19(e) 39(t) <br>
+<br>
+<br>
+18(d) 12(a) 7 6 5 lo 32(q) 40(u) 12(a) 7 29(n) 30(o) 29(n) <br>
+<br>
+14(c) 34(r) 23(i) 18(d) 12(a) pa 32(q) 40(u) 12(a) <br>
+<br>
+24(l) 7 38(s) 40(u) 14(c) 19(e) 18(d) 19(e) 34(r) 12(a) <br>
+<br>
+<br>
+1520 (the year, not cipher) <br>
+<br>
+22(h) 40(u) 28(m) 23(i) 24(l) 19(e) 38(s) 19(e) 34(r) 40(u) <br>
+23(i) 39(t) 30(o) 34(r) 7 6 po 7 6 5 5 <br>
+</DIV>
+
+<P>Of course, the above decipherment is only preliminary. (I'm sure this would not have been accepted as a valid solution in the contest.) The deciphering is complete only when the above assignment is put into proper Italian text. (For example, the last portion reads "humile servitor".) I have to leave the task to those familiar with the language and handwriting of the epistle.</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2019 S.Tomokiyo<br>
+First posted on 23 July 2019. Last modified on 4 August 2019.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+<TITLE>
+Ciphertext-only Attack on a Vatican Cipher (1573) by Albert C. Leighton
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Ciphertext-only Attack on a Vatican Cipher (1573) by Albert C. Leighton</H1>
+
+
+<P>Deciphering ciphertexts in archives without a key have been achieved by many, as described in, among others, the chapter "Ciphers in the Past Tense" in David Kahn, <i>The Codebreakers</i> (1967) and "Some examples of historical cryptanalysis" (1977) by Albert C. Leighton (whose works I came to know by <A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2018/08/26/what-happened-to-the-research-files-of-albert-c-leighton/#comment-1107370">Klausis Krypto Kolumne</A>).</P>
+
+<P>The present article describes Leighton's deciphering of a Vatican ciphertext on a sheet enclosed in a letter from Korakow, 18 November 1573 of Antonio Maria Gratiani to the Papal Secretary of State, Cardinal Como<!--p.26-->. Gratiani was secretary to Cardinal Commendone at the time. Among many diplomatic missions of Commendone <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Giovanni_Francesco_Commendone">Wikipedia</A>)</span>, he was papal nuncio to Poland in 1563-1563 and, later, promoted the election of Henry, Duke of Anjou, as King of Poland in May 1573. The letter was written some months after the election.</P>
+
+<DIV style="float:right; width:600px">
+<img src="leighton1.jpg" width="500">
+</DIV>
+<P>The ciphertext consists of an unbroken series of figures. The first task was to split the sequence of figures into individual cipher symbols. It was clear that "there is a tendency for numbers to be linked in pairs" with a few exceptions of three-digit groups ("608", "508", "308", "108", highlighted in yellow in the image). Then, it was natural to assume that the two-digit groups were symbols of a substitution alphabet, with the three-digit groups and some pairs having a dot over the first digit representative of names or words. There is also a symbol like an inverted 4 (underlined in blue in the image).</P>
+<P>By listing the occurrences of the pairs, Leighton found that, with a few exceptions, the pairs ended in odd numbers. So, the cipher symbols may be mapped in a matrix, in which the row and column numbers refer to the first and second digits in the pairs:</P>
+
+<TABLE border="0">
+<TR><TD>
+<TABLE border="1">
+<TR><TD></TD><TD bgcolor="#888888">1</TD><TD bgcolor="#888888">3</TD><TD bgcolor="#888888">5</TD><TD bgcolor="#888888">7</TD><TD bgcolor="#888888">9</TD></TR>
+<TR><TD bgcolor="#888888">1</TD><TD>11</TD><TD>13</TD><TD>15</TD><TD>17</TD><TD>19</TD></TR>
+<TR><TD bgcolor="#888888">2</TD><TD></TD><TD>23</TD><TD>25</TD><TD>27</TD><TD>29</TD></TR>
+<TR><TD bgcolor="#888888">3</TD><TD>31</TD><TD>33</TD><TD>35</TD><TD>37</TD><TD>39</TD></TR>
+<TR><TD bgcolor="#888888">4</TD><TD>41</TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD bgcolor="#888888">5</TD><TD>51</TD><TD>53</TD><TD>55</TD><TD>57</TD><TD>59</TD></TR>
+<TR><TD bgcolor="#888888">6</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD bgcolor="#888888">7</TD><TD></TD><TD></TD><TD>75</TD><TD>77</TD><TD>79</TD></TR>
+<TR><TD bgcolor="#888888">8</TD><TD></TD><TD>83</TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD bgcolor="#888888">9</TD><TD>91</TD><TD></TD><TD></TD><TD>97</TD><TD>99</TD></TR>
+</TABLE>
+</TD>
+
+<TD valign="bottom">(The figures in the cells are<br> 
+cipher symbols that<br>
+ occurs in the ciphertext.)<br>
+<br>
+</TD></TR>
+<TABLE>
+
+<P>From the number of different symbols, one might assume that there were homophones. Then, Leighton had an idea that "1" and "2" in the fist digit were equivalent; similarly for other pairs "3" and "4", "5" and "6", and "7" and "8." There is no reason that this is so but Leighton just tried it as "an example of an easy way" for accommodating homophones. This working hypothesis, which seemed "too obvious and simple to be of any use" turned out to be successful. Codebreaking efforts are often rewarded when one pursues every faint possibility. One who brings up a bunch of reasons to deny a hypothesis before working it out to the full tends to miss a hit.</P>
+<P>The working hypothesis reduces the matrix as follows.</P>
+
+<TABLE border="1">
+<TR><TD></TD><TD bgcolor="#888888">1</TD><TD bgcolor="#888888">3</TD><TD bgcolor="#888888">5</TD><TD bgcolor="#888888">7</TD><TD bgcolor="#888888">9</TD></TR>
+<TR><TD bgcolor="#888888">1 or 2</TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>*</TD></TR>
+<TR><TD bgcolor="#888888">3 or 4</TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>*</TD></TR>
+<TR><TD bgcolor="#888888">5 or 6</TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>*</TD></TR>
+<TR><TD bgcolor="#888888">7 or 8</TD><TD></TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>*</TD></TR>
+<TR><TD bgcolor="#888888">9</TD><TD>*</TD><TD></TD><TD></TD><TD>*</TD><TD>*</TD></TR>
+</TABLE>
+
+<DIV style="float:right; width:600px">
+<TABLE border="1">
+<TR><TD>symbol</TD><TD>freq.</TD></TR>
+<TR><TD>25</TD><TD>78</TD></TR>
+<TR><TD>29</TD><TD>45</TD></TR>
+<TR><TD>17</TD><TD>43</TD></TR>
+<TR><TD>77</TD><TD>42</TD></TR>
+<TR><TD>13</TD><TD>38</TD></TR>
+<TR><TD>79</TD><TD>33</TD></TR>
+<TR><TD>59</TD><TD>32</TD></TR>
+<TR><TD>99</TD><TD>29</TD></TR>
+<TR><TD>37</TD><TD>25</TD></TR>
+<TR><TD>75</TD><TD>24</TD></TR>
+<TR><TD>11</TD><TD>21</TD></TR>
+<TR><TD>55</TD><TD>15</TD></TR>
+<TR><TD>...</TD><TD>...</TD></TR>
+</TABLE>
+</DIV>
+<P>Referring now to symbol statistics, Leighton noticed that no less than four of the five most frequent symbols began with "1" or "2". So, he considered the symbols beginning with "1" and "2" ("1*" and "2*") might all be vowels. With this in mind, he recounted the frequencies. For example, "25" (78 times) and "15" (4 times) were counted together as "15 or 25" (82 times). Such consolidation made predominance of the suspected vowels even more conspicuous. <font size="2">(By the way, although he adds that "1" and "2" in the manuscript are hard to differentiate because the writer knew it did not matter, I have encountered such a similarity between "1" and "2" in Benedict Arnold's correspondence (see <A HREF="arnold.htm">another article</A> and also in French archives, where the difference mattered.)</font></P>
+
+<P>Of the five vowels, "U" is the least frequent, even if we consider that "U" also served as a consonant "V" at the time. So, Leighton picked for "U" the least frequent group beginning with "1" or "2", that is, "11" (21 times; "21" does not occur).</P>
+<P>Turning to consonants, the most common consonant in Italian "N" may be assigned the most frequent "consonant" symbol "77." Then, Leighton also noticed that the three next most frequent "consonant" symbols ("79", "59", "99") ended in "9". If the assignment follows the alphabetical order in some way, one might assume that these three "59", "79", "99", which align on top of each other in the matrix, might be "R", "S", "T." The next frequent symbol is "37", which would correspond to "L" according to letter statistics of Italian.</P>
+<P>Filling these findings in the matrix yields:</P>
+<TABLE border="1">
+<TR><TD></TD><TD bgcolor="#888888">1</TD><TD bgcolor="#888888">3</TD><TD bgcolor="#888888">5</TD><TD bgcolor="#888888">7</TD><TD bgcolor="#888888">9</TD></TR>
+<TR><TD bgcolor="#888888">1 or 2</TD><TD>U</TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>*</TD></TR>
+<TR><TD bgcolor="#888888">3 or 4</TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>L</TD><TD>*</TD></TR>
+<TR><TD bgcolor="#888888">5 or 6</TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>R</TD></TR>
+<TR><TD bgcolor="#888888">7 or 8</TD><TD></TD><TD>*</TD><TD>*</TD><TD>N</TD><TD>S</TD></TR>
+<TR><TD bgcolor="#888888">9</TD><TD>*</TD><TD></TD><TD></TD><TD>*</TD><TD>T</TD></TR>
+</TABLE>
+<P>Now, the alphabetical ordering assumed for "R", "S", "T" seems to be consistent with the positions of "L" and "N". Then, the vowels "I" and "O" in the top row can be inferred. "M" can be put by the alphabetical ordering. Similarly for "P", because "Q" always occur as "QU" and may not be in the substitution alphabet on its own.</P>
+<TABLE border="1">
+<TR><TD></TD><TD bgcolor="#888888">1</TD><TD bgcolor="#888888">3</TD><TD bgcolor="#888888">5</TD><TD bgcolor="#888888">7</TD><TD bgcolor="#888888">9</TD></TR>
+<TR><TD bgcolor="#888888">1 or 2</TD><TD>U</TD><TD>*</TD><TD>*</TD><TD>I</TD><TD>O</TD></TR>
+<TR><TD bgcolor="#888888">3 or 4</TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>L</TD><TD>P</TD></TR>
+<TR><TD bgcolor="#888888">5 or 6</TD><TD>*</TD><TD>*</TD><TD>*</TD><TD>M</TD><TD>R</TD></TR>
+<TR><TD bgcolor="#888888">7 or 8</TD><TD></TD><TD>*</TD><TD>*</TD><TD>N</TD><TD>S</TD></TR>
+<TR><TD bgcolor="#888888">9</TD><TD>*</TD><TD></TD><TD></TD><TD>*</TD><TD>T</TD></TR>
+</TABLE>
+<P>A-B-C-D and E-F-G-H are yet to be assigned to either the second or third column. The frequency count shows "75" and "55" are relatively frequent among the remaining symbols and it is more likely that they correspond to "C" and "D" rather than "F" and "G" (Leighton appears to have foreseen that the silent letter "H" is not used in the substitution alphabet <span class="note">(Leighton (1977) p.322)</span>).</P>
+<TABLE border="1">
+<TR><TD></TD><TD bgcolor="#888888">1</TD><TD bgcolor="#888888">3</TD><TD bgcolor="#888888">5</TD><TD bgcolor="#888888">7</TD><TD bgcolor="#888888">9</TD></TR>
+<TR><TD bgcolor="#888888">1 or 2</TD><TD>U</TD><TD>E</TD><TD>A</TD><TD>I</TD><TD>O</TD></TR>
+<TR><TD bgcolor="#888888">3 or 4</TD><TD>Z</TD><TD>F</TD><TD>B</TD><TD>L</TD><TD>P</TD></TR>
+<TR><TD bgcolor="#888888">5 or 6</TD><TD>*</TD><TD>G</TD><TD>C</TD><TD>M</TD><TD>R</TD></TR>
+<TR><TD bgcolor="#888888">7 or 8</TD><TD></TD><TD>*</TD><TD>D</TD><TD>N</TD><TD>S</TD></TR>
+<TR><TD bgcolor="#888888">9</TD><TD>*</TD><TD></TD><TD></TD><TD>*</TD><TD>T</TD></TR>
+</TABLE>
+<P>The above result is based on the simplest hypotheses but its application to the beginning of the ciphertext produced plausible Italian words: 608(*) 53(G) 17(I) 11(U) 75(D) 17(I) 55(C) 25(A) 77(N) 75(D) 29(O) 97(*) 41(*) ....</P>
+<P>This verifies Leighton's too-good-to-be-true hypotheses. The cipher has indeed an alphabetical assignment in a matrix and provides homophones simply by the equivalence of pairs "1" and "2", "3" and "4", ... in the first digit. (Similar ciphers are described in <A HREF="matrix.htm">another article</A>.)</P>
+<P>After identifying the meaning of some of the remaining figures from the context in Italian, Leighton set on "a long search for similar ciphers" and found the complete cipher in Aloys Meister (1906), <i>Die Geheimschrift im Dienste der p&auml;pstlichen Kurie</i>, pp.235-237. It was a cipher given to Commendone during his nunciature in Poland.</P>
+<img src="leighton2.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>The complete cipher assigns single digits "5", "3", "7", "9", "1" to represent the vowels. If these single digit cipher symbols had been used in Gratiani's letter, the initial step of splitting the figure sequence into individual cipher symbols of one to three digits would have been more difficult. (In theory, there is no unique division. For example, "5553" can be "5 5 5 3" (aaae) or "5 5 53" (aag) or "5 55 3" (ace) or "55 5 3" (c a e) or "55 53" (c g). A decipherer having the key would be able to pick the most natural division but this ambiguity adds a complexity to the task of codebreaking.)</P>
+
+<!--<P>As an aside, a difficulty in reading such a ciphered text even with a key is illustrated by a name deciphered as "ILMOSCO." After considering as cadidates the Grand Duke of Moscow or the Italian sculptor Padovano, known as Il Mosca (active in Krakow in the 16th century), Leighton found that it referred to none other than Commendone, i.e., "Ill(ustrissi)mo S(ignore) Co(mmendone)."</P>続報で結局モスクワ公でよかったことが判明．-->
+
+<!--Meister p.237の機械翻訳
+The words from Prima to the end, that is, all those with the inverse 4 compiled as Trugdifferent are put in brackets; the last 7 are also crossed out. In order to explain this, we have to make another side-by-side remark that this Chit'fre was given to the Protonetar and Nuncio in Poland Ruggeri, that it differs from that of the Commendone, in that the Chiflre of the latter does not contain the last seven words.
+Further, in the correspondence correspondence for Ruggeri, the inverted 4 are to be punctured 17 (that is, for example, prima = 125, etc.).-->
+
+<H3>References</H3>
+<P>Albert C. Leighton (1969), "A Papal Cipher and the Polish Election of 1573" (Jahrb&uuml;cher f&uuml;r Geschichte Osteuropas) (<A HREF="https://bildsuche.digitale-sammlungen.de/index.html?c=viewer&bandnummer=bsb00003817&pimage=23&v=100&nav=&l=en">BSB</A>)</P>
+
+<P>Albert C. Leighton (1971), "Further Information on a Papal Cipher of 1573", <i>Jahrb&uuml;cher f&uuml;r Geschichte Osteuropas</i> (<A HREF="https://www.jstor.org/stable/41044316">JSTOR</A>)</P>
+
+<P>Albert C. Leighton (1977) "Some examples of historical cryptanalysis" in <i>Historia Mathematica</i> (<A HREF="https://www.sciencedirect.com/science/article/pii/0315086077900593">Elsevier</A>)</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2018 S.Tomokiyo<br>
+First posted on 2 September 2018. Last modified on 7 September 2018.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+
+
