@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 04:50 UTC",
+  "updated": "20 September 2026, 05:15 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -180,6 +180,21 @@
   ],
   "workers": [
     {
+      "title": "Print Check: free key hunts for Hamilton, 1646, Monck",
+      "job": "Burnet 1677, HMC, Gardiner; Journals and CSPD May 1646; Clarendon calendar, Thurloe",
+      "state": "running"
+    },
+    {
+      "title": "Search-Print Sweep: eight English queue items",
+      "job": "Found-solved, open, not found or unreachable, against the printed Calendars",
+      "state": "running"
+    },
+    {
+      "title": "Scout: re-score the queue with the unread axis and kind",
+      "job": "Re-tier QUEUE.md with the new formula (max 48); editions dropped",
+      "state": "running"
+    },
+    {
       "title": "Access Test: browser tool after the setup-script fix",
       "job": "Setup script works; Chromium trusts the proxy. NLS is Cloudflare-challenged even so; record read via a Wayback capture. $1",
       "state": "done, archived"
@@ -321,6 +336,10 @@
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 05:15",
+      "what": "Overnight summary written to STATUS.md. Three free-work Sonnet workers running (print checks, search-print sweep, queue re-score). Improvement loop added: ledger, brief templates, weekly retrospective."
+    },
     {
       "when": "20 Sept, 04:46",
       "what": "All workers finished. Blind sweep: nothing on the board is already solved; Wellington set to partial. NLS MS 20769 record confirmed: 57 leaves, catalogued as cipher; scan decision is on you. Setup-script fix confirmed working."
