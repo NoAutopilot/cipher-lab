@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 14:45 UTC",
+  "updated": "20 September 2026, 15:00 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -119,7 +119,7 @@
         "on": "The British Library's manuscript viewer, offline since the October 2023 cyber attack",
         "since": "2023",
         "expected": "Unknown. BL has restored services piecemeal",
-        "unblock": "BL copying resumes for Add MS 72438 (f.11, ff.100-109 keys); DECODE login (DECODE_USER/DECODE_PASS in the environment) to read record 8725 for f.104."
+        "unblock": "BL copying resumes for Add MS 72438; a DECODE login the server accepts, to read record 8725 for f.104 (the first attempt was rejected as wrong credentials)."
       },
       "kind": "recovery"
     },
@@ -128,16 +128,16 @@
       "year": "1710",
       "ref": "Univ. of Kansas, Spencer Research Library, MS P556 (page 3 largely in code, undeciphered)",
       "folder": "ciphers/stair-townshend-1710",
-      "stage": 1,
-      "state": "active",
-      "holder": "Worker",
-      "next": "HOLD the order until the blind six-source sweep reports (started 14:45 UTC). Print check done 03:55 UTC: the 27 Feb 1710 letter is not in Graham's Annals (1875), the HMC 11th Report or Marlborough's despatches, so the scans are needed. For you: order from Kansas per REQUEST.md, four TIFF images, about $20, three business days.",
+      "stage": 2,
+      "state": "you",
+      "holder": "You",
+      "next": "Blind six-source sweep done 14:50 UTC: open, nobody has read or mentioned it beyond the Kansas catalogue. Print checks negative. The order is back on your card: four TIFF scans from Kansas, about $20, three business days (REQUEST.md).",
       "note": "Recovery if another Stair letter carries the key; cryptanalysis only if enough cipher turns up. Two clear pages give cribs; one page of cipher is small, so the route is the same cipher in other Stair letters of 1710 (TNA SP 84, SP 87) with a contemporary decipher.",
       "wait": {
-        "on": "Check-solved sweep (worker), then you",
-        "since": "20 Sept 2026, 14:45 UTC",
-        "expected": "About an hour",
-        "unblock": "A sweep verdict of open or offline-only sets stage 2; only then does the order go on your card."
+        "on": "You: the Kansas order (about $20)",
+        "since": "20 Sept 2026, 14:50 UTC",
+        "expected": "Three business days after ordering",
+        "unblock": "The four images arrive; a worker transcribes page 3 and hunts the key in SP 84 and SP 87."
       },
       "kind": "undecided"
     },
@@ -181,22 +181,22 @@
   "workers": [
     {
       "title": "DECODE Access: first login; record 8725 and Boswell R413",
-      "job": "Login flow into the playbook; what \"Decrypted\" on f.104 rests on; Boswell key",
-      "state": "running"
+      "job": "Login flow worked out and scripted (tools/decode_fetch.sh); the credentials as set were rejected by the server, so records 8725 and R413 unread. $3",
+      "state": "done, archived"
     },
     {
       "title": "Print Check: Burnet 1677 and CSP Foreign 22 with the Google Books key",
-      "job": "Hamilton and Cobham 1588 checks that hit the quota last night",
-      "state": "running"
+      "job": "Google Books key works (needs &country=US). Burnet 1677 not digitised anywhere found; 1852 reprint and HMC 11 add nothing; Cobham vol. 22 not on Google Books. $3",
+      "state": "done, archived"
     },
     {
       "title": "Access Test + Print Check: Internet Archive lending",
-      "job": "First IA loan; HMC Hamilton 1932, Grant Papers vol. 10, Saberton Cornwallis",
-      "state": "running"
+      "job": "Login failed: IA_USER must be the account email. Flow scripted (tools/ia_borrow.py) but unverified. Saberton not on IA. $3",
+      "state": "done, archived"
     },
     {
       "title": "Check Solved: Stair 1710, Monck 1660, NLS MS 20769 (workflow)",
-      "job": "Blind six-source sweep before any order is placed",
+      "job": "Stair: open, confirmed (14:50). Monck and NLS 20769 running",
       "state": "running"
     },
     {
@@ -363,6 +363,10 @@
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 15:00",
+      "what": "Credentials: DECODE login rejected (wrong credentials as set); Internet Archive login rejected (IA_USER must be the email). Both passwords appeared in worker transcripts and should be rotated. Google Books key works. Stair 1710 sweep: open; order back on the card."
+    },
     {
       "when": "20 Sept, 14:45",
       "what": "Rule tightened: no order goes on the owner's card until the blind sweep sets stage 2. Stair, Monck and NLS 20769 moved back to stage 1 while their sweep runs. Four workers running on the new credentials (DECODE, Google Books, Internet Archive)."
