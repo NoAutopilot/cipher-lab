@@ -27,3 +27,6 @@ negative (a search that found nothing, done right).
 | 20 Sept | Print Check: Stair in Graham 1875 | Sonnet | 2 | N | |
 | 20 Sept | Access Test: setup-script fix (first) | Sonnet | 0 | F | Setup script failed at container start (apt-get without update). Led to the guarded script |
 | 20 Sept | Access Test: setup-script fix (second) + NLS record | Sonnet | 1 | D | Browser works; NLS Cloudflare-challenged; Wayback fallback |
+| 20 Sept | Print Check: Hamilton, 1646, Monck | Sonnet | 4 | N | Google Books quota (429) again; a key is needed |
+| 20 Sept | Search-Print Sweep: eight queue items | Sonnet | 5 | D | Three found-solved; BHO paywall blocks two calendars (a library or BHO subscription question) |
+| 20 Sept | Scout: re-score with unread axis | Sonnet | 4 | D | Editions now drop out; the queue is all recovery at the top, one cryptanalysis candidate (NLS 20769) pending sample |

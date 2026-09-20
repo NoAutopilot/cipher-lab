@@ -3,9 +3,9 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 20 September 2026, 05:15 UTC
+Last updated: 20 September 2026, 06:12 UTC
 
-## Overnight summary, 19-20 September 2026 (written 05:15 UTC; free-work results added at the 06:05 check-in)
+## Overnight summary, 19-20 September 2026 (written 05:15 UTC, completed 06:12 UTC)
 
 **Nothing was cracked.** One over-claim was caught and turned into a rule; two archive orders are out; three new
 targets are filed with requests drafted; the browser fix works in every new container.
@@ -33,9 +33,16 @@ targets are filed with requests drafted; the browser fix works in every new cont
   Decrypted, to be read with the DECODE login.
 - Access: the environment setup script now adds the proxy CA to Chromium in every new container (tested);
   NLS is Cloudflare-challenged even so, read via a Wayback capture.
-- Free work started 05:02-05:07 UTC, results at the 06:05 check-in: print checks for Hamilton, the 1646
-  intercepts and Monck in the 17th-century editions and calendars; a search-print sweep of eight English
-  queue items; a re-score of the queue with the unread axis.
+- Free work, 05:02-05:20 UTC, all on Sonnet for about $13 together: (1) print checks found no printed decipher
+  or key for Hamilton, the 1646 intercepts or Monck (Burnet 1677 and Google Books were unreachable, so those
+  are unchecked, not negative); the archive orders stay the route. (2) A search-print sweep showed three queue
+  items already in print in clear (Moray regency 1568-69 in CSP Scotland ii; Throckmorton 1559-63 in Forbes
+  1740-41; Sadler 1543 in Clifford 1809): dropped as found-solved, which is a contribution. Rupert 1645 and
+  Cornwallis not found; Wotton 1585 and Bowes 1583 sit behind the British History Online paywall; Cobham 1588
+  half checked. (3) The queue was re-scored with the unread axis: 39 rows tiered, Eckert dropped as an edition,
+  top ten now 1646 intercepts (40), Wellington (40), Hamilton (39), Whitworth (37), Boswell 1628 (36),
+  Cornwallis (36), Cecil correspondents (36), Walsingham-Wotton (36), Erving 1807 (35), Randolph 1569 (35);
+  every one recovery except Whitworth (contribution). Three of the ten need only the DECODE login to start.
 
 **Waiting on you**
 

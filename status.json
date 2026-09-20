@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 05:15 UTC",
+  "updated": "20 September 2026, 06:12 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -181,18 +181,18 @@
   "workers": [
     {
       "title": "Print Check: free key hunts for Hamilton, 1646, Monck",
-      "job": "Burnet 1677, HMC, Gardiner; Journals and CSPD May 1646; Clarendon calendar, Thurloe",
-      "state": "running"
+      "job": "No printed decipher or key for Hamilton, the 1646 intercepts or Monck; Burnet 1677 and Google Books unchecked (quota); archive orders remain the route. $4",
+      "state": "done, archived"
     },
     {
       "title": "Search-Print Sweep: eight English queue items",
-      "job": "Found-solved, open, not found or unreachable, against the printed Calendars",
-      "state": "running"
+      "job": "Three items already in print (Moray 1568-69, Throckmorton 1559-63, Sadler 1543) dropped as found-solved; Rupert 1645 and Cornwallis not found; Wotton 1585, Bowes 1583 unreachable (BHO paywall); Cobham 1588 partial. $5",
+      "state": "done, archived"
     },
     {
       "title": "Scout: re-score the queue with the unread axis and kind",
-      "job": "Re-tier QUEUE.md with the new formula (max 48); editions dropped",
-      "state": "running"
+      "job": "39 rows re-tiered (max 48); Eckert dropped as an edition; top: 1646 intercepts 40, Wellington 40, Hamilton 39. $4",
+      "state": "done, archived"
     },
     {
       "title": "Access Test: browser tool after the setup-script fix",
@@ -273,69 +273,80 @@
   "queue": [
     {
       "rank": 1,
-      "name": "Eckert Papers, US Military Telegraph ledgers",
-      "year": "1862-67",
-      "total": 38,
-      "next": "transcription"
+      "name": "Intercepted royalist letters 1646 (BL Add MS 72438 ff.9-10)",
+      "year": "1646",
+      "total": 40,
+      "next": "Recovery. BL copies of f.11 and the volume's keys; DECODE login for f.104"
     },
     {
       "rank": 2,
-      "name": "Whitworth (Moscow) to Harley, SP 91/5",
-      "year": "1707-08",
-      "total": 34,
-      "next": "archive request"
+      "name": "Wellington to Maitland (dictionary code)",
+      "year": "1812",
+      "total": 40,
+      "next": "Recovery, partial. Spink question; library check of Urban and the Bentinck papers"
     },
     {
       "rank": 3,
-      "name": "Intercepted royalist letters, Add MS 72438",
-      "year": "1646",
-      "total": 34,
-      "next": "archive request"
+      "name": "Charles II to Hamilton",
+      "year": "1650",
+      "total": 39,
+      "next": "Recovery. Wait for the NRS key sheets"
     },
     {
       "rank": 4,
-      "name": "Wellington to Maitland, Spink lot 1184",
-      "year": "1812",
-      "total": 34,
-      "next": "transcription"
+      "name": "Whitworth to Harley (SP 91/5)",
+      "year": "1707-08",
+      "total": 37,
+      "next": "Contribution. One clause of f.108; TNA order decision"
     },
     {
       "rank": 5,
-      "name": "Charles II to Hamilton",
-      "year": "1650",
-      "total": 33,
-      "next": "archive request"
+      "name": "Charles I to William Boswell (SP 106/5, DECODE R413)",
+      "year": "1628",
+      "total": 36,
+      "next": "Recovery. DECODE login: download the record and its key, apply to ten lines"
     },
     {
       "rank": 6,
-      "name": "Charles I to William Boswell, SP 106/5",
-      "year": "1628",
-      "total": 30,
-      "next": "cryptanalysis"
+      "name": "Cornwallis Papers (PRO 30/11)",
+      "year": "1780-81",
+      "total": 36,
+      "next": "Recovery. Saberton 2010 not online; library check or Kew order"
     },
     {
       "rank": 7,
-      "name": "Cornwallis Papers, American campaign, PRO 30/11",
-      "year": "1780-81",
-      "total": 30,
-      "next": "search print"
+      "name": "Add MS 4136 correspondents to Cecil (DECODE R9235-R9256)",
+      "year": "1559-67",
+      "total": 36,
+      "next": "Recovery. DECODE login: keys R9260-62, apply Tomokiyo's Throckmorton keys"
     },
     {
       "rank": 8,
-      "name": "Add MS 4136 correspondents to Cecil",
-      "year": "1559-67",
-      "total": 30,
-      "next": "transcription"
+      "name": "Walsingham and Wotton (BL Add MS 32657)",
+      "year": "1585",
+      "total": 36,
+      "next": "Recovery. CSP Scotland VIII is paywalled on BHO; DECODE images and Tomokiyo's key"
     },
     {
-      "rank": 17,
-      "name": "Stepney to Manchester",
-      "year": "1702",
-      "total": 27,
-      "next": "archive request"
+      "rank": 9,
+      "name": "Erving to Madison (NARA M31)",
+      "year": "1807",
+      "total": 35,
+      "next": "Recovery. Transcribe from the NARA images, apply the Pinckney pairs"
+    },
+    {
+      "rank": 10,
+      "name": "Randolph to Sussex (Cotton Caligula C II f.277)",
+      "year": "1569",
+      "total": 35,
+      "next": "Recovery. BL IIIF tiles are online; transcribe and match against CSP Scotland"
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 06:12",
+      "what": "Free work done: no printed key for Hamilton, 1646 or Monck; three queue items shown already in print and dropped; queue re-ranked with kinds (top: 1646 intercepts, Wellington, Hamilton). All workers archived."
+    },
     {
       "when": "20 Sept, 05:15",
       "what": "Overnight summary written to STATUS.md. Three free-work Sonnet workers running (print checks, search-print sweep, queue re-score). Improvement loop added: ledger, brief templates, weekly retrospective."

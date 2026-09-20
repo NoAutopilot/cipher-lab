@@ -139,3 +139,17 @@ size and competition. Rule 1 sweep and scoring in progress for the four new ones
 | declined | Blenheim Papers series (Add MSS 61567-61574) | Mostly non-English; BL offline; too large. |
 | declined | Polish and Soviet traffic c.1920 | Active academic field; far too large for one person. |
 | nothing to strike | "Yard 1699 at Yale" | Never in the queue; the Yale item in the notes is Stepney 1702, already on the board. |
+
+## Free work available (20 September 2026)
+
+Work that needs no purchase from the person. Each line is one Sonnet worker of a few dollars.
+
+- With the DECODE login (environment variables): Boswell 1628 (R413 with its key: apply to ten lines);
+  Cecil correspondents 1559-67 (keys R9260-62 and pages R9235-56; Tomokiyo's Throckmorton keys);
+  BL Add MS 72438 f.104 (record 8725, marked Decrypted: read it before any order).
+- With images already online: Erving to Madison 1807 (NARA M31 frames; Pinckney pairs in Bourdeau's repo);
+  Randolph to Sussex 1569 (BL IIIF tiles; match against CSP Scotland).
+- Print checks still open: Cobham 1588 in CSP Foreign vol. 22; Rupert 1645 in CSP Domestic 1644-45;
+  Burnet 1677 for Hamilton once Google Books has a key.
+- Blocked by the British History Online paywall (a subscription question for the person, about GBP 30 a
+  year): CSP Scotland vols VI and VIII for Bowes 1583 and Walsingham-Wotton 1585.
