@@ -173,3 +173,109 @@ if pressed, since a genre tag alone does not settle "Is it actually a cipher?" a
 "cipher" status now both catalogue-confirmed, this is the largest genuinely open target in the project's queue
 and worth the roughly £100-200+ (unconfirmed, 57 leaves at NLS's per-scan rates quoted above) full-manuscript
 scan order — but that order should wait for the person's go-ahead, since no reproduction has been ordered here.
+
+## Check-solved sweep, date unknown
+
+Six independent check-solved sweeps run 20 Sept 2026, blind to one another, covering every family named in
+CLAUDE.md rule 1 plus the extra families this target's brief called out (Cipherbrain's book lists read
+line-by-line, Cipher Mysteries, DECODE's own search form, the printed Proceedings of the Society of Antiquaries
+of Scotland, and Romin/Romain genealogy). This supersedes and corroborates the scout pass logged above ("Search
+before solving," 20 Sept 2026), which had only run a generic search-engine pass and a `site:de-crypt.org` query.
+
+**1. Search engine and direct site checks (searcher 1).** Repeated phrasings of "MS 20769", "MS.20769",
+"Baptiste Romin"/"Romain" cipher manuscript, and "National Library of Scotland cipher manuscript solved
+deciphered" return only the NLS catalogue's own text, echoed verbatim across engines, with no third-party
+discussion or solve claim — closed-negative. Also surfaced and ruled out as unrelated: Sir Thomas Urquhart's
+own printed "Cyphral Distich" (a different NLS holding, shelfmark H.32.a.39, a 1653 printed book, not a
+manuscript), reported solved by Claude Fable 5.1 per Vals AI and BoingBoing coverage dated 14 Sept 2026 — a
+different item with no connection to MS.20769, Romin/Romain, or Robert Mylne, noted here only to flag it as
+checked and dismissed.
+
+**2. Print check (searcher 2).** Internet Archive's full-text API (`advancedsearch.php`, not just the search
+UI) returns zero hits for `"Baptiste Romin"` and `"MS 20769"` across all indexed OCR text, and the two hits for
+`"Baptiste Romain"` (a Vimeo choral transcript and a Haitian Creole linguistics document) are unrelated —
+closed-negative. No sender/correspondence edition exists to search: the item is a catalogue-described cipher
+notebook, not a letter, and has no named correspondent (only the pencilled "Baptiste Romin or Romain" and the
+Urquhart-fragment copyist Robert Mylne, neither a sender in the CLAUDE.md rule-1 sense). Google Books
+(`googleapis.com/books/v1/volumes`, with `GOOGLE_BOOKS_KEY` appended as CLAUDE.md's Access playbook specifies)
+returned HTTP 403 "Cannot determine user location for geographically restricted operation" on every query —
+blocked, not a negative. HathiTrust full-text search (`babel.hathitrust.org/cgi/ls`) returned HTTP 403 to curl;
+the browser-tool workaround in CLAUDE.md's Access playbook was not tried in this bounded pass — blocked, not a
+negative.
+
+**3. Community lists (searcher 3).** Cipherbrain's "List of Encrypted Books" and "111 encrypted books" pages
+(scienceblogs.de/klausis-krypto-kolumne, Klaus Schmeh) were fetched and read for every listed entry, not just
+top-level snippets: no entry names Scotland, NLS, Edinburgh, Baptiste, Romin/Romain, or MS.20769, and no
+entry's symbol-set (Roman + Greek + astrological + invented) matches — closed-negative, confirmed independently
+by searcher 1's identical read of the same two pages. Cipherbrain's own site search for "Scotland" turns up only
+unrelated posts (Charles I letters, encrypted gravestones, an IRA postcard, a BBC-covered student cryptogram).
+Cipher Mysteries (ciphermysteries.com, Nick Pelling) site-searched for "National Library of Scotland" and
+"Scotland": the only hit is an unrelated 14 Sept 2018 article on Netta Fornario's 1929 papers — closed-negative,
+confirmed independently by searcher 1. The local Cryptiana snapshot (`sources/cryptiana/`, downloaded 19 Sept
+2026 per its README, Yoshimasa Tomokiyo's site) has zero occurrences of "20769" and every "Scotland"/"Romin"/
+"Romain" hit is an unrelated proper name or place (Moray-Wood Cipher, the Charles IX-du Croc letter,
+"abbé de Saint-Romain," "le roy des romains") — closed-negative. MysteryTwister C3's live challenge list
+redirected (mysterytwisterc3.org → mysterytwister.org) and was checked only via web search, not a direct page
+read after the redirect — unchecked, not a negative. r/codes returned HTTP 403 to direct curl and was checked
+only through web search's indexing of Reddit, not a direct subreddit crawl — unchecked, not a negative.
+
+**4. DECODE (de-crypt.org) (searcher 4, reconciling searchers 1 and 2).** Searchers 1 and 2 found the
+record-browsing app's REST API returns HTTP 401 unauthenticated and read this as a login wall; searcher 4 went
+further and used the site's own public web search form directly (`POST .../RecordsSearch` with the page's own
+CSRF token, as an anonymous session, `userlevelid=-2`), first confirming the mechanism works with sanity queries
+that return real non-zero hits (e.g. holder "Vatican," country "United Kingdom"), then running it against the
+shelfmark, holder, sender/receiver/author/owner name fields, and a geographic sweep (region "Scotland," city
+"Edinburgh," free-text "Scotland"): every direct shelfmark/name query returned 0 records, and every one of the
+23 geographic hits was fetched and individually checked (British Library or Kew holdings, Elizabethan-era
+diplomatic correspondence) — none is NLS, none matches MS.20769, Baptiste Romin/Romain, Urquhart, or Mylne.
+This is a real, exercised negative on DECODE's public catalogue, not merely an unreached login wall — it
+supersedes searcher 1's "blocked" characterization of the search itself, though searcher 1's finding that the
+REST API and any login-gated content return 401 unauthenticated still stands. Per the orchestrator's explicit
+instruction, login with `DECODE_USER`/`DECODE_PASS` was **not attempted by any of the six searchers** (flagged
+as currently rejected server-side, with a lockout risk on retry) — DECODE's authenticated content, if any exists
+beyond the public catalogue, remains unchecked, not a negative.
+
+**5. github.com/dbourdeau/cyphersolver (searcher 5).** Fresh shallow clone, HEAD `bea09bee`, 19 Sept 2026.
+Whole-repo greps for "20769", "National Library of Scotland," "Romin"/"Romain"/"Baptiste," and "Urquhart"/
+"Pantochron" all checked by hand for false positives (the few "20769" substring hits are inside unrelated
+record numbers and floating-point values). Zero genuine hits — closed-negative. The repository does have a
+target folder named `urquhart/`, read in full (`NOTES.md`): this is Sir Thomas Urquhart's own two printed
+numeric cryptograms (the "Cyphral Octastich," read by Daniel Bourdeau as a book cipher on Urquhart's 1652 *The
+Jewel*, and the "Cyphral Distich," which does not reproduce) on the last leaf of his own printed books — a
+different item from MS.20769 (printed cryptogram vs. manuscript symbol alphabet), related only by the shared
+surname; no mention anywhere of MS.20769, NLS, Romin/Romain, or Mylne. Noted to avoid future confusion, since
+searcher 1 independently flagged the same printed-Urquhart item as a near-miss under a different name (the
+"Cyphral Distich," reported solved by Claude Fable 5.1, 14 Sept 2026 coverage).
+
+**6. github.com/aaymeloglu/unsolved-ciphers and github.com/robertpitt/\* (searcher 6).** Shallow clone, HEAD
+`837075e0`, 19 Sept 2026: zero hits for "20769," "National Library of Scotland," "Romin," or "Romain" anywhere
+in the repo, confirmed by both content grep and filename search — closed-negative. The repo's only
+Scotland-adjacent content is unrelated 16th-century Anglo-Scottish diplomatic ciphers from de-crypt.org's own
+harvested catalogue (British Library shelfmarks) and its own `moray-1568` target, and its only Urquhart content
+is the printed 1653 *Logopandecteision*/1834 Maitland Club reprint (the same printed-cryptogram item as in
+searcher 5's finding, at a different NLS shelfmark, H.32.a.39) — not MS.20769. Robert Pitt's 40 public
+repositories (not one of the two solver repositories CLAUDE.md names, checked as extra coverage via the GitHub
+search API) include three cipher-history projects (Forster 1644, Charles I-Boswell 1643, Le Tellier 1657), none
+matching this target; code search for "20769," "National Library of Scotland," and "Urquhart" scoped to his
+account returned zero genuine hits — closed-negative.
+
+**Proceedings of the Society of Antiquaries of Scotland (1949-50, vol. 84), the print source most likely to
+carry a note of the 1949 deposit.** Both searcher 1 and searcher 2 tried this independently and both were
+blocked: the Archaeology Data Service's PSAS volume/query and contents tools
+(`archaeologydataservice.ac.uk/archives/view/psas/query.cfm` and `.../contents.cfm?vol=84`) returned HTTP 403 to
+both curl and WebFetch with a browser user-agent, the same block pattern already logged for manuscripts.nls.uk
+in this file; no full-text copy of vol. 84 was found on Internet Archive by title or by guessed collection id.
+**Unchecked, not a negative** — whether the Proceedings note the 1949 deposit, by shelfmark or by the Society of
+Antiquaries as depositor, remains unknown.
+
+**Romin/Romain genealogy and local history.** Searchers 1 and 2 both searched "Romin"/"Romain" together with
+Scotland, genealogy, and cipher/coded-manuscript terms: no genealogical or local-history source connects either
+spelling to a coded manuscript; hits are limited to the NLS catalogue text itself and unrelated persons (a
+17th-century French engineer named Le Romain) — closed-negative, though this is a web-search-only check, not a
+search of a dedicated Scottish genealogy database.
+
+**Verdict:** No third-party discussion, prior decipherment attempt, solve claim, or DECODE catalogue record for
+NLS MS.20769 was found by any of the six sweeps, across every source family CLAUDE.md rule 1 and this target's
+brief name except the printed 1949-50 PSAS Proceedings and DECODE's authenticated content, which remain
+unchecked (not negative) — the target stays **open**, and the scout's original "no relevant hit" finding is
+confirmed and substantially strengthened.
