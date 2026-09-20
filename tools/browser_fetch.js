@@ -50,6 +50,14 @@ const has = (k) => args.includes(k);
     console.log(JSON.stringify({ url: page.url(), title: await page.title(), bytes: fs.statSync(out).size }));
   } catch (e) {
     console.error('browser_fetch failed:', e.message);
+    if (/ERR_CERT_AUTHORITY_INVALID/.test(e.message)) {
+      // Cloud containers route HTTPS through an agent proxy that re-terminates TLS with its own CA
+      // (/root/.ccr/ca-bundle.crt). Node and curl trust it through environment variables; Chromium reads only its NSS
+      // store, so it must be added there once per container (needs libnss3-tools; do not use ignoreHTTPSErrors).
+      console.error('hint: Chromium does not trust the agent-proxy CA. Add it to its NSS store and rerun:\n' +
+        '  apt-get install -y libnss3-tools && certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n ccr-agent-proxy ' +
+        '-i /root/.ccr/agent-proxy-ca.crt');
+    }
     process.exitCode = 1;
   } finally {
     await browser.close();

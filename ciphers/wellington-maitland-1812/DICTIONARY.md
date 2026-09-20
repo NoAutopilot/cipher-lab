@@ -1,7 +1,7 @@
 # Dictionary edition search, Wellington to Maitland, 2 Sept 1812
 
 **Verdict: not found** (search of 19 Sept 2026, about two hours, 57 volumes tested; three near misses recorded below,
-none with a constant offset). No reading is claimed here, so there is nothing to grade under CLAUDE.md rule 4; the
+none with a constant offset; HathiTrust pass of 20 Sept 2026, section 8, 19 more volumes, all fail). No reading is claimed here, so there is nothing to grade under CLAUDE.md rule 4; the
 result is a negative search with the coverage listed at the end.
 
 Inputs: `codebook.tsv` (57 distinct groups, all with known plaintext, grade H+C), `NOTES.md` "Dictionary
@@ -195,7 +195,9 @@ settings (1775, 1788, 1804 x2, 1806) are further off.
 
 ## 6. What is left untested and why
 
-- **HathiTrust** in its entirety (Cloudflare 403 from this environment, also through WebFetch). From a browser,
+- **HathiTrust** in its entirety (Cloudflare 403 from this environment, also through WebFetch). *Done 20 Sept 2026
+  through the Bibliographic and Extracted Features APIs, see section 8: nothing found, and most of the editions named
+  below turn out not to be in HathiTrust; the dates of several are corrected there.* From a browser,
   the useful searches are: full-text search restricted to full view for "Alphabet" with date 1770-1812 and
   subject "English language Dictionaries"; catalogue searches for Scott 1797 and 1799 (440 and 443 pages per
   Google's records BW-TygAACAAJ, gEBCnQEACAAJ), Fulton and Knight 1802-1808, Jones's Sheridan Improved 1800
@@ -224,3 +226,79 @@ settings (1775, 1788, 1804 x2, 1806) are further off.
 | passes | 0 |
 | near misses (partial agreement, no constant offset) | 3 |
 | readings produced | none (H 0, C 0, S 0, M 0, I 3 inferences in section 1) |
+
+## 8. HathiTrust pass, 20 Sept 2026
+
+**Result: not found.** 19 further volumes tested, all fail; the six editions section 6 asked for are not in HathiTrust
+at all. Raw output: `dictionary_tests_2026-09-20-hathitrust.txt`. Script: `tools/htrc_ef_headwords.py`.
+
+**Access.** HathiTrust's own pages (full-text search `babel.hathitrust.org/cgi/ls`, page text `cgi/pt?view=plaintext`,
+the catalogue and its search) answer curl and WebFetch with a Cloudflare JavaScript challenge (`cf-mitigated:
+challenge`, HTTP 403) whatever the User-Agent. `tools/browser_fetch.js` could not be used: Chromium in this container
+rejects the session's TLS-intercepting proxy certificate (`ERR_CERT_AUTHORITY_INVALID`); the fix is to add the proxy CA
+to Chromium's NSS store with certutil, which this session's permission policy refused (see CLAUDE.md, Access
+playbook). Two routes do work and were used instead:
+
+1. The **Bibliographic API**, `catalog.hathitrust.org/api/volumes/brief/recordnumber/N.json` (also `oclc/N.json`,
+   `lccn/N.json`, and `json/oclc:A;oclc:B` for several at once), which returns every volume id (htid), date and rights
+   code for a record. It answers with a full Chrome User-Agent string; the short "Mozilla/5.0" gets the challenge. Record
+   numbers came from web search restricted to catalog.hathitrust.org, from the Online Books Page author listings, and
+   from OCLC numbers found in Open Library's search API.
+2. The **HathiTrust Research Center Extracted Features API**, `data.htrc.illinois.edu/ef-api/volumes/HTID/pages?pos=false`,
+   which serves per-page token counts (with line counts) for every volume in HathiTrust, in-copyright ones included, with
+   no challenge. A 500-page dictionary is 1-3 MB. The script fetches this, finds the scan sequence of each discriminator
+   word, fits a constant offset (scan = printed page + k) on the rare words (cipher, occupy, outside, rejoin, southward,
+   westward, younker, fortunate, provision, supply) and reports every word's nearest-occurrence residual. The target's own
+   dictionary would give residual 0 on every word; the 1786-1800 Entick setting, which agrees in the tail and is 23-34
+   pages early in the middle, gives max residual about 34, so the test discriminates at the level of section 5's near
+   misses. Scan sequence, not printed page, is what the API returns, so printed page numbers below are not given; the
+   fit absorbs the front matter.
+
+**Volumes tested** (htid; scans; median lines per body page; result). Dates 1764-1812, everything HathiTrust holds of
+these titles in the range that the routes above could find:
+
+| edition | htid | scans | lines/page | offset k | max residual | verdict |
+|---|---|---|---|---|---|---|
+| Entick, New Spelling Dictionary, London, Dilly, 1783 | nyp.33433070243443 | 526 | 82 | 0 | occupy -50, cipher +25 | fail (1781-1783 setting, cf. section 4) |
+| Entick, London, Dilly, 1791 (Madrid copy) | ucm.5327247616 | 540 | 80 | 12 | occupy -56, fortunate +21, cipher +13 | fail (1786-1800 setting) |
+| Entick, New Haven, Sidney's Press, 1812 (Murray) | nyp.33433070243435 | 400 | 85 | -87 | alphabet +91, cipher +77 | fail |
+| Perry, Royal Standard, Worcester (Mass.), Thomas, 1788 | nyp.33433070243179 | 526 | 81 | no fit | rare headwords not found in the tokens | fail: American 12mo family, alphabet at scan 26, theft at 268-298 |
+| Perry, Worcester, 1794 (3rd Worcester ed.) | uc1.31822038198099 | 606 | 80 | -57 | occupy +180, require -234 | fail |
+| Perry, Brookfield, Merriam, 1804 | njp.32101037601893 | 608 | 81 | no fit | as 1788 | fail |
+| Perry, Brookfield, Merriam, 1806 | njp.32101063605073 | 524 | 80 | no fit | as 1788 | fail |
+| Perry, Boston, 1795 | njp.32101037601885 | - | - | - | not in the Extracted Features dataset | untested |
+| Jones, Sheridan Improved, London, Vernor and Hood, 1798 | nyp.33433081987921 | 908 | 125 | 293 | spelling +190, cipher +139 | fail (octavo) |
+| Jones, 1804 | nnc1.0023994657 | 916 | 126 | 225 | younker +211, westward +203 | fail (octavo) |
+| Jones, 1805 (12mo, 500 scans) | umn.31951002376692l | 500 | 79 | 4 | enable -54, spelling +50, cipher +27; 4 of 22 words within 2 | fail; the closest of this pass, same book as Google dvYNAQAAMAAJ |
+| Jones, London, Payne, 1812 | mdp.39015016732094 | 518 | 116 | 16 | require -288, spelling -86, cipher +59 | fail |
+| Walker, Critical Pronouncing Dictionary, London, 1791 | nyp.33433070230218 | 588 | 235 | -17 | younker +160, southward +124 | fail (octavo) |
+| Walker, Philadelphia, Carey, 1806 | hvd.hn5ih4 | 1140 | 121 | -32 | rejoin +540 | fail |
+| Walker, New York, Stansbury, 1807 | njp.32101074200302 | 1098 | 123 | -188 | theft +269 | fail |
+| Walker, London, stereotype, 1809 | hvd.hw22iv | 712 | 177 | -237 | amount +281 | fail |
+| Sheridan, Dictionary of the English Language, London, W. Stewart, 1794 | njp.32101037601646 | 456 | 112 | -17 | enable +282, fortunate +91, cipher +76 | fail |
+| Johnson (abridged), Edinburgh, T. Brown, 1797 | hvd.hxkcgf | 998 | 150 | 98 | southward +329 | fail |
+| A General and Complete Dictionary, London, Peacock, 1785 | nyp.33433081638813 | 264 | 128 | -166 | alphabet +174 | fail (cf. section 4, IA copy) |
+| Wesley, Complete English Dictionary, Bristol, 1764 | uc1.b4095571 | 162 | 90 | -165 | youth -262 | fail |
+| Fenning, Royal English Dictionary, 1771 | uc2.ark:/13960/t5bc47p5v | - | - | - | API 404 | untested (folio-size octavo, not a candidate) |
+
+**Not in HathiTrust** (Bibliographic API by OCLC number and record, catalogue-domain web search, Online Books Page,
+Open Library): Scott's dictionary in any edition (1786, 1797 Edinburgh, 1799 Dublin); Fulton and Knight before 1814
+(only 1814, hvd.hxihve, the setting Google w6kBAAAAYAAJ already excluded); Jones's Sheridan Improved 1800; any London
+Perry; Walker's abridgment of 1810; Entick's London editions other than 1783 and 1791; any Dublin Entick. So the
+HathiTrust half of section 6 is closed: nothing there was left to test.
+
+**Corrections to section 6**, from the Google feed records for the catalogue-only ids (read 20 Sept 2026):
+the "Perry 24mo Royal Standard 1810-1813" records dNhdtAEACAAJ, AybEZwEACAAJ and TBkWQAAACAAJ are the Boston (Thomas and
+Andrews, 1810 and 1812) and Brookfield (Merriam, 1813) American printings, 491 pp, of the family tested above, not
+London editions; QNbqSAAACAAJ ("Abridgment of Walker", 428 pp) is dated 1836, not 1810; 67V2tAEACAAJ (Jones 1800) is
+840 pp, the octavo, not a pocket book; gEBCnQEACAAJ (Scott 1799, 443 pp) is the Dublin printing for P. Wogan, and
+BW-TygAACAAJ (1797, 440 pp) the Edinburgh one for Creech.
+
+**What remains untested after this pass.** Scott 1797 and 1799 and Fulton and Knight 1802-1808 have no digital copy
+found anywhere (Google catalogue-only, not in HathiTrust or the Internet Archive); a library copy is the only route.
+HathiTrust's full-text search across everything at once (the one thing the site offers that the two APIs do not)
+still needs a browser that trusts the container's proxy certificate, or a run from a local machine. The miniature
+formats and the Entick 1782 page-image check of section 6 are unchanged.
+
+**Counts for this pass:** 19 volumes analysed, 2 unreadable through the API, 0 passes, 0 near misses (best: Jones 1805,
+max residual 54). Readings produced: none.

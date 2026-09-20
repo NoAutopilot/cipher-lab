@@ -124,6 +124,17 @@ Getting the material is most of the work. Try routes in this order and record wh
    `NODE_PATH=$(npm root -g) node tools/browser_fetch.js URL out.html --shot out.png`, which drives the
    Chromium bundled in this environment. It fills a search box with `--type "css=text"` and waits for
    `--selector`. Read the saved HTML with `python3 tools/html2text.py` or the screenshot with the image reader.
+   Known on 20 Sept 2026: in cloud containers Chromium fails every HTTPS page with `ERR_CERT_AUTHORITY_INVALID`
+   because it does not trust the container's TLS-intercepting proxy CA (curl and Node do, through environment
+   variables). The fix is `apt-get install -y libnss3-tools && certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n
+   ccr-agent-proxy -i /root/.ccr/agent-proxy-ca.crt` once per container (the script prints this hint); a worker's
+   permission policy may refuse it, in which case say so and use the APIs below. Never use `ignoreHTTPSErrors`.
+   **HathiTrust without a browser:** the site itself is Cloudflare-challenged for curl, but the Bibliographic API
+   (`catalog.hathitrust.org/api/volumes/brief/recordnumber/N.json`, `oclc/N.json`; needs a full Chrome User-Agent
+   string) gives volume ids, and the HTRC Extracted Features API
+   (`data.htrc.illinois.edu/ef-api/volumes/HTID/pages?pos=false`) gives per-page word counts for every volume;
+   `tools/htrc_ef_headwords.py` uses both to place headwords. Record numbers come from web search restricted to
+   catalog.hathitrust.org, the Online Books Page, or OCLC numbers from Open Library's search API.
 3. **Credentials from the environment.** Logins the person has set up are exposed as environment variables
    (`DECODE_USER` and `DECODE_PASS` for de-crypt.org). Use them through the browser tool or a curl login flow.
    Never print them, never write them to the repo.

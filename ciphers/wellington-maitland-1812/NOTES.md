@@ -196,3 +196,17 @@ dictionary spells "Cipher"; its T-Z is compressed to half the usual length; the 
 1-23 only, so a column holds about 24 entries, a smaller format than Entick's 12mo. HathiTrust is unreachable
 from this environment (Cloudflare 403); Scott 1797/1799, Perry's 24mo 1810-1813, Jones 1800, the 1810 Walker
 abridgment, Dublin Entick reprints and Urban pp. 232-233 remain untested (list in `DICTIONARY.md` section 6).
+
+## HathiTrust pass, 20 Sept 2026
+
+Worker session. HathiTrust's pages stay behind a Cloudflare challenge and the browser tool could not be used (Chromium
+rejects the container's proxy certificate; the fix was refused by the session's permission policy, see CLAUDE.md),
+but the Bibliographic API and the HathiTrust Research Center's Extracted Features API both answer, and
+`tools/htrc_ef_headwords.py` places headwords from the per-page word counts they serve. 19 volumes tested, everything
+HathiTrust holds of the candidate titles between 1764 and 1812: Entick 1783, 1791, 1812; Perry's American editions
+1788-1806; Jones 1798, 1804, 1805, 1812; Walker 1791-1809; Sheridan 1794; Johnson abridged 1797; Peacock 1785;
+Wesley 1764. **All fail**; best is Jones 1805 with a maximum residual of 54 pages. Scott 1797/1799, Fulton and Knight
+1802-1808, Jones 1800, London Perry, the 1810 Walker abridgment and Dublin Entick are not in HathiTrust at all; the
+"Perry 24mo 1810-1813" and "Walker abridgment 1810" of the 19 Sept list turn out to be American printings and an 1836
+edition. Details, corrections and what remains in `DICTIONARY.md` section 8; raw output in
+`dictionary_tests_2026-09-20-hathitrust.txt`. Status unchanged: open; dictionary edition still unidentified.
