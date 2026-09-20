@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 04:12 UTC",
+  "updated": "20 September 2026, 04:50 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -58,7 +58,7 @@
       "state": "you",
       "holder": "You",
       "next": "HathiTrust closed 03:37 UTC: 19 more editions tested through the Bibliographic and Extracted Features APIs, none matches (76 editions in all); Scott, Jones 1800, London Perry, Walker 1810 and Dublin Entick are not in HathiTrust at all. For you before 23 Sept: ask Spink whether lot 1184 includes a pocket dictionary. Remaining leads need a library: Urban pp. 232-233, the Bentinck papers (Nottingham Pw Jd), WO 37.",
-      "note": "The key is a printed dictionary; finding the edition is recovery, not a crack. Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick's 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item.",
+      "note": "The key is a printed dictionary; finding the edition is recovery, not a crack. Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick's 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item. Blind sweep 20 Sept 2026: status set to partial, since Hayes, Lasry and Tomokiyo's published work is a partial solution of the code system; the dictionary edition and the strip-cipher rule remain open.",
       "wait": {
         "on": "You: one email to Spink before the 23 Sept sale",
         "since": "20 Sept 2026, 03:37 UTC",
@@ -114,7 +114,7 @@
       "state": "blocked",
       "holder": "Archive",
       "next": "British Library viewer offline since 2023. When it returns, order f. 11 and check Bodleian Tanner 59-60 for the contemporary decipher.",
-      "note": "Aymeloglu identified the cipher as Digby's captured key no. 129 and fixed about 45 values. Scout 20 Sept: the volume is Weckherlin's cipher-keys and intercepted royalist correspondence; f.104 (\"almost wholly in undecoded cipher\") has DECODE record 8725 marked Decrypted, which needs the DECODE login to read before f.104 goes on any order.",
+      "note": "Aymeloglu identified the cipher as Digby's captured key no. 129 and fixed about 45 values. Scout 20 Sept: the volume is Weckherlin's cipher-keys and intercepted royalist correspondence; f.104 (\"almost wholly in undecoded cipher\") has DECODE record 8725 marked Decrypted, which needs the DECODE login to read before f.104 goes on any order. Blind sweep 20 Sept 2026: still open; no decipherment of f.9 or f.10 located anywhere.",
       "wait": {
         "on": "The British Library's manuscript viewer, offline since the October 2023 cyber attack",
         "since": "2023",
@@ -162,27 +162,32 @@
     {
       "name": "Unidentified 18th-century cipher manuscript",
       "year": "18th c.",
-      "ref": "National Library of Scotland MS 20769 (mixed Roman, Greek, astrological and invented symbols)",
+      "ref": "National Library of Scotland MS.20769: \"Unidentified text, apparently 18th century, written in cipher\"; 57 leaves, oblong quarto and octavo; genre \"Ciphers. Codes.\"",
       "folder": "ciphers/nls-20769",
-      "stage": 1,
+      "stage": 2,
       "state": "you",
       "holder": "You",
-      "next": "The NLS catalogue page is blocked from cloud containers, so the record is known only from search snippets and the \"57 leaves\" figure is unverified. For you, one minute: open manuscripts.nls.uk, search MS 20769, and paste the full description (extent, physical description, provenance) here. Then decide on scans (about GBP 1.80 per A4 scan; REQUEST.md).",
-      "note": "Only if the catalogue confirms a cipher rather than a shorthand. Size is the point: a genuine cipher of dozens of leaves is above unicity for a homophonic system. Risk: a shorthand or private notation, not a cipher.",
+      "next": "Catalogue record read first-hand 04:32 UTC (Wayback capture of the NLS page; the live site still throws a Cloudflare challenge even with the browser fix). Confirmed: 57 leaves, cipher alphabet of Roman and Greek letters, astrological and invented symbols, text divided into sections, a name \"Baptiste Romin or Romain\" pencilled on ff. 27-28, deposited 1949 by the Society of Antiquaries of Scotland, language undetermined. For you: decide on scans. At GBP 1.80 per A4 scan, 57 leaves both sides is roughly GBP 100-200; REQUEST.md suggests asking NLS for a quote and for a sample of a few leaves first.",
+      "note": "Size is the point: 57 leaves of a genuine cipher is far above unicity for a homophonic system. Risk, still open: the cataloguer's genre tag is not proof it is a cipher rather than a private notation. A sample of five leaves would settle that before the full order.",
       "wait": {
-        "on": "You: read the live catalogue record",
-        "since": "20 Sept 2026, 03:58 UTC",
-        "expected": "One minute when you are next at a browser",
-        "unblock": "The record text; then a scan order if it is a cipher."
+        "on": "You: ask NLS for a quote and a five-leaf sample (REQUEST.md)",
+        "since": "20 Sept 2026, 04:32 UTC",
+        "expected": "NLS reprographics answer in one to two weeks",
+        "unblock": "Sample images; a worker classifies the symbol system and decides whether to order the rest."
       },
       "kind": "cryptanalysis"
     }
   ],
   "workers": [
     {
+      "title": "Access Test: browser tool after the setup-script fix",
+      "job": "Setup script works; Chromium trusts the proxy. NLS is Cloudflare-challenged even so; record read via a Wayback capture. $1",
+      "state": "done, archived"
+    },
+    {
       "title": "Check Solved: blind six-source sweep of five board targets",
-      "job": "Hamilton and Stepney offline-only confirmed, Whitworth open confirmed; Wellington and 1646 running",
-      "state": "running"
+      "job": "Five verdicts: Hamilton and Stepney offline-only, Whitworth and 1646 open, Wellington partial (Hayes/Lasry/Tomokiyo). No target found solved. $18",
+      "state": "done, archived"
     },
     {
       "title": "Print Check: Stair 1710 in Graham's Annals and the Townshend papers",
@@ -316,6 +321,10 @@
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 04:46",
+      "what": "All workers finished. Blind sweep: nothing on the board is already solved; Wellington set to partial. NLS MS 20769 record confirmed: 57 leaves, catalogued as cipher; scan decision is on you. Setup-script fix confirmed working."
+    },
     {
       "when": "20 Sept, 04:12",
       "what": "Stair 1710: not in print; Kansas order is on you. Sweep: Stepney and Whitworth confirmed, no solution anywhere."
