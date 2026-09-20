@@ -111,6 +111,85 @@ Why it is worth little: the gap is one clause in a letter already printed, on th
 mediation of 1707 (Besenval's), which Whitworth also reports in clear in neighbouring letters. Weight in the
 queue should drop from 2 to 1.
 
+## Check-solved sweep, 20 Sept 2026
+
+Six independent blind searchers (`check-solved` skill) were run against this target to confirm or contradict
+the 19 Sept 2026 rule-1 search above, without being shown its conclusion in advance. None saw the ciphertext
+(there isn't one transcribed) or a prior reading; all worked from the target name, shelfmark and dates only.
+
+1. **Open-web blind sweep for a prior solution.** 8 WebSearch queries (Whitworth/Harley/cipher/Moscow/1707,
+   the shelfmark string "SP 91/5", the Discovery record id "C6719621", the cyphersolver site by name) plus a
+   WebFetch of dbourdeau.github.io/cyphersolver. No mention of Whitworth, SP 91, or a decipherment anywhere;
+   only unrelated biographical pages (Wikipedia DNB, a Springer chapter title, BL Add MS 61149) and unrelated
+   namesakes (Joseph Whitworth the engineer, Jerry Whitworth the NSA spy). **Closed-negative**, nothing
+   blocked.
+2. **Blind sweep of printed editions (Internet Archive, HathiTrust, Camden Society, HMC, CSP).** Read this
+   file's own shelfmarks first, then worked independently: enumerated every Sbornik volume on archive.org by
+   its identifier (advancedsearch API) and independently reconfirmed vol. 39 is absent and vol. 50 is present
+   at `sbornikimperatorskogorusskogoistorichesk58`, matching this file's 19 Sept 2026 finding rather than
+   contradicting it. Grepped the full OCR of HMC Portland vols 3-6 (Harley's own papers) for "whitworth": only
+   three incidental, unrelated hits (an unrelated 1705 letter and two 1710s Baden/Frankfurt newsletter items),
+   none touching the 1707-08 Moscow despatches. Grepped Whitworth's own 1758 printed book (*An Account of
+   Russia As It Was In the Year 1710*) for cipher/decipher/Harley: nothing. No Camden Society edition of
+   Whitworth's correspondence exists; CSP Foreign has no calendar covering SP 91 for this period (British
+   History Online, TNA research guide). **Closed-negative** on all reachable sources. **Unchecked/blocked**:
+   HathiTrust catalogue and full-text search (HTTP 403, reproducing the 19 Sept finding independently); Janet
+   Hartley, *Charles Whitworth: Diplomat in the Age of Peter the Great* (Ashgate/Routledge, 2002), reachable
+   only as a Google Books metadata stub; Andrew Rothstein, *Peter the Great and Marlborough* (Macmillan/St
+   Martin's, 1986), whose chapters "Whitworth in Moscow" and "Failure of a Mission, 1707-8" are exactly on
+   point but sit behind a Springer login wall and an archive.org controlled-digital-lending restriction
+   (HTTP 401 without a borrow session) — genuinely on-topic secondary literature that this sweep could not
+   read.
+3. **Blind sweep of cipher-community lists (Cryptiana, Cipherbrain, Cipher Mysteries, MysteryTwister,
+   r/codes).** Grepped the local `sources/cryptiana/` snapshot and fetched the live Cryptiana unsolved list,
+   the Cryptiana Discussion Forum blog search, Cipherbrain's site search, and Cipher Mysteries' site search:
+   no mention of Whitworth, Harley, SP 91, or Moscow 1707-08 in any of them. MysteryTwister has no
+   Whitworth-named challenge. **Closed-negative** on all of these. **Unchecked/blocked**: r/codes (Reddit) —
+   WebFetch cannot reach reddit.com or old.reddit.com from this environment; only Google-indexed WebSearch
+   coverage of that forum was possible, and it returned nothing relevant, but a logged-in or direct search of
+   the subreddit itself was not possible.
+4. **DECODE (de-crypt.org/decrypt-web).** Independently reproduced that de-crypt.org's static pages are
+   reachable (HTTP 200) but every record search or view is authentication-gated: the anonymous JWT the app
+   issues itself returns HTTP 401 on `api/?action=list` and `action=view`; no `DECODE_USER`/`DECODE_PASS` are
+   set in this environment; the browser fallback (`tools/browser_fetch.js`) fails here because headless
+   Chromium does not trust the environment's proxy CA, and importing that CA was correctly refused as a
+   TLS-weakening action rather than worked around. This sweep could not independently confirm or contradict
+   this file's own prior DECODE result (19 Sept 2026: sender search "Whitworth" → four unrelated Lord
+   Whitworth/Paris 1803-09 records R8149-R8152; holder search "SP 91" → none; origin region "Russia" → 31
+   records, all unrelated except R594, an unrelated 1758 French nomenclator). **Unchecked** (access-gated),
+   not negative; the 19 Sept 2026 DECODE search stands unconfirmed and uncontradicted from this session.
+5. **github.com/dbourdeau/cyphersolver**, shallow clone, HEAD as of 20 Sept 2026. Whole-repo grep for
+   "whitworth", the Discovery record ids (C6719620/21/26/44/48/86/91/93/94), "moscow", and "sp 91"/"sp91":
+   no relevant hits (the two "SP 91"-pattern matches in README.md are false positives for a different piece,
+   SP 106/10). The repository's only comparable envoy-cipher target is George Stepney to Manchester, Vienna
+   1702 — a different person, place and shelfmark. **Closed-negative**, nothing blocked.
+6. **github.com/aaymeloglu/unsolved-ciphers**, commit 837075e (19 Sept 2026), plus a check of
+   github.com/robertpitt's repositories by name. No occurrence of "whitworth", "SP 91", "moscow", or "boyle"
+   anywhere in the repo's markdown; the repo's named target list (burgess-1912, ferdinand-1635-1640,
+   forster-1644, moray-1568, ottobon-1589, royalist-1646, starhemberg-1758, vande-perre-1653) has no
+   Whitworth entry. robertpitt's GitHub repo-search UI returns no match for whitworth, moscow, 1707, or
+   harley; his cipher-named repos (forster-cipher, charles-i-boswell-cipher) are unrelated. **Closed-negative**
+   on the searched terms. **Unchecked**: api.github.com is not reachable for an arbitrary user's repo list
+   from this session (HTTP 403, repository-scoped only), so this is a name/keyword search of robertpitt's
+   profile via the web UI, not a byte-for-byte listing of all of it; a repo with no matching word in its
+   name/description could in principle be missed.
+
+**Prior work confirmed, credited as this file already does:** the plaintext of ff. 274, 294 and 180 (partners
+of the "undeciphered" duplicates ff. 300, 298 and 163) is in print in Sbornik Imperatorskago Russkago
+Istoricheskago Obshchestva vol. 39 (1884, St Petersburg) and vol. 50 (1886), edited from the State Papers
+originals under the editorial note "Public Record Office, Russia, No. 8"; no individual editor is named in the
+volumes beyond the Society. The one unread passage, SP 91/5/108 (Moscow, 30 July/10 Aug 1707), was located and
+transcribed to its printed context by this repository's own 19 Sept 2026 rule-1 search, not by any external
+solver; no session, before or in this sweep, found a prior decipherment of it anywhere.
+
+**Verdict:** confirmed — no source, of the five fully reachable ones, turns up a prior solution, attempt, or
+mention of this target anywhere on the open web, the cipher-community lists, or the two solver repositories;
+the target's own 19 Sept 2026 conclusion stands unchanged: **open**, narrowed to the single unread passage in
+SP 91/5/108, with ff. 163, 298 and 300 correctly carried as found-solved via their printed partners. DECODE and
+part of the printed-editions/community-list coverage (HathiTrust, the Hartley and Rothstein secondary
+literature, r/codes, robertpitt's full repo list) remain unchecked, not negative, and are listed above rather
+than folded into the closed-negative count.
+
 ## Failure log
 
 | Date | What | Result |
