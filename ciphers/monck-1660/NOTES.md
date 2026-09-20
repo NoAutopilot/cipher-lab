@@ -99,3 +99,40 @@ This is a Restoration-crux document: Monck's "movements in 1659 and 1660" cover 
 London (Jan-Feb 1660) that precipitated the Restoration of Charles II, so the content is a decision-of-state
 letter, not a routine dispatch. Get the image first (catalogue says "Imperfect" — check what survives), then
 test the Hyde-Barwick key before any fresh cryptanalysis.
+
+## Print check, 20 Sept 2026
+
+Free-source check of the four sources NOTES.md flagged as "not yet checked page-by-page": HMC 5th/7th Reports,
+Calendar of Clarendon State Papers vol.4, Thurloe vol.7, and Nicholas Papers vol.4.
+
+1. **HMC 5th Report (1876) pp.308-320, Malet MSS section.** Checked page-by-page from Internet Archive OCR
+   (`FifthReportHMC1876`). One candidate co-occurrence: "[16--], Elsinore, Nov. 13. Algernon Sydney to my Lord
+   [Whitlocke]... P.S. Monk is marching into Eng[land]... partly in cypher... about the landing of Charles II"
+   — a letter *by* Sydney *to* Whitelocke, not the anonymous "relating to Gen. Monck" item 113 describes; the
+   1876 report's internal volume numbering does not obviously line up with the modern Add MS 32091-6 split, so
+   this is not a confirmed match. No other Monck+cipher item in pp.308-320. No relevant match.
+2. **HMC 7th Report (1879) pp.428-433, "Additional Manuscripts of Sir Alexander Malet, Bart."** Checked
+   page-by-page (`reportofroyalcom07grea`). Covers only 16th-century items and one 1676 speech; nothing from
+   1659-60, no mention of Monck, cipher, or item 113. No relevant match.
+3. **Calendar of Clarendon State Papers vol.4 (Macray/Routledge, 1932, 1657-1660).** Located on Internet Archive
+   (`calendarofclaren04bodluoft`), full text grepped: 115 Monck+cipher co-occurrences out of 693 Monck mentions,
+   e.g. "two copies (one in the former cipher, and another in a new one sent to Sir J. Greenville) of the power
+   proposed for treating with Monck" and "cipher, deciphered by H. Hyde... uncertainty of the Presbyterians'
+   attitude towards Monck." Confirms the same Hyde circle used cipher heavily for Monck news in this period, but
+   all entries are Bodleian Clarendon Papers correspondence (a different archive from the BL Malet collection);
+   none references Add MS 32093, Malet, or an item matching "undeciphered... imperfect." No relevant match.
+4. **Thurloe State Papers vol.7, Jan-Feb 1660 pages (pp.805-825, british-history.ac.uk).** No "cipher"/"cypher"
+   string on any of these pages; the two Monck mentions present are plain continental-intelligence newsletters,
+   not cipher. A follow-up search for cipher content across the whole volume found only 1658 items (Monck's
+   Spain/Flanders campaign correspondence), none from Jan-Feb 1660. No relevant match.
+5. **Nicholas Papers vol.4 (Camden Society, 1657-1660).** Located on Internet Archive (`nicholaspapers04nich`),
+   full text grepped for cipher terms (40 hits) and for Monck co-occurring with any of them. Documents cipher
+   keys used in the Nicholas/Hyde circle of this period (a Hyde cipher and a Whitley/Mompesson cipher, both
+   Egerton MS 2550 — a different shelfmark from the Hyde-Barwick key already in this file), but zero
+   co-occurrences of Monck with any cipher term out of 47 Monck mentions, and no hit for "32093" or
+   "Malet"/"Mallet". No relevant match.
+
+**Verdict:** Not found in the sources checked here — neither a decipherment nor a more detailed description of
+item 113 (Add MS 32093 f.423) turned up in the HMC 5th or 7th Report's Malet-collection pages, the Calendar of
+Clarendon State Papers vol.4, Thurloe vol.7's Jan-Feb 1660 pages, or Nicholas Papers vol.4. This does not
+change REQUEST.md; the BL Imaging Services order for f.423 remains the only route to a transcription.

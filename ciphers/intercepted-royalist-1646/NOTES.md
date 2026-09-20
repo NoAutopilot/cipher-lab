@@ -144,3 +144,41 @@ neither corroborated by any source outside Aymeloglu's own repository nor contra
 but Bourdeau's independently-derived assessment of the identical shelfmark does not support it (offline-only,
 no key identified) — treat the key-129 attribution as an unverified, single-source claim pending the rest of
 the key or a contemporary decipher, not as confirmed independently.
+
+## Print check, 20 Sept 2026
+
+Free-source check for the contemporary decipher of f.10 (or f.9) that QUEUE.md flags as undone, following the
+route suggested there: Bodleian Tanner MSS 59-60 and TNA SP 16/514.
+
+1. **Bodleian Tanner MSS 59-60 / TNA SP 16/514, printed calendars.** No free online printed calendar of the
+   Tanner MSS was located (the Bodleian's own Tanner catalogue is a manuscript finding-aid, not a printed
+   edition); TNA Discovery API returned nothing under SP 16/514 (see item 6). No relevant match.
+2. **Cary, *Memorials of the Great Civil War in England from 1646 to 1652* (1842),** both volumes, full text
+   from Internet Archive (`memorialsofgreat01caryuoft`, `memorialsofgreat02caryuoft`; Cary's own preface says
+   the work is drawn from the Tanner collection). Grepped for cipher/decipher terms near the two target dates:
+   the only cipher item near them is Edward Hyde to Richard Arundel, Jersey, 15 May 1646, "written with General
+   Digby's cipher" (vol.1 pp.45-49) — a different correspondent pair, different date, sent from Jersey rather
+   than intercepted in England. No entry for 13 or 21 May 1646 of any kind in either volume. No relevant match.
+3. **Journals of the House of Lords and Commons, May 1646.** Lords Journal vol.8 (13 and 21 May 1646, pp.314-
+   315 and 321-324) and Commons Journal vol.4 (13 and 21 May 1646, pp.543-545 and p.552), fetched from British
+   History Online and grepped for cipher/decipher/intercept/Digby/Weckherlin: zero matches on any of the four
+   pages. No relevant match.
+4. **Rushworth vol.6, second route.** Internet Archive's cross-corpus full-text search API (independent of the
+   British History Online check already logged above) for "Digby's cipher" and "key no. 129": only hits were
+   the same Cary/Hyde-Arundel letter (also digitised separately) and unrelated catalogue/bibliography entries
+   for a distinct 1644 pamphlet titled "Lord Digby's cipher." No 13/21 May 1646 Rushworth match by this route
+   either. No relevant match.
+5. **Digby cabinet material / key no.129 in print.** Same full-text search, plus `"key no. 129" Digby` (zero
+   hits): no printed edition or calendar names key no.129 anywhere outside the solver repositories already
+   cited above. No relevant match.
+6. **TNA Discovery API.** `/API/search/records` 500-errors on any query containing a literal "/" (a reproducible
+   server-side bug, not an egress block); worked around with slash-free date-scoped queries ("intercepted
+   letter", "cipher key", "Digby cabinet", "cipher 129", "Weckherlin", all dated 1646). All returned either zero
+   results or results unrelated to SP 16/514 or Add MS 72438. The API's `sps.reference` parameter does not
+   filter by document reference, so a direct SP 16/514 lookup by shelfmark could not be completed. No relevant
+   match.
+
+**Verdict:** Not found in the sources checked here — no decipherment, contemporary transcription, or reference
+to key no.129 for f.9 or f.10 turned up in Cary's Memorials, the Lords/Commons Journals on the exact dates, a
+second-route Rushworth full-text search, print references to Digby's captured cipher keys, or TNA Discovery's
+catalogue descriptions. This does not change REQUEST.md.
