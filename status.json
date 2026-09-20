@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 03:18 UTC",
+  "updated": "20 September 2026, 03:48 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -53,15 +53,15 @@
       "ref": "Spink lot 1184, sale 23 Sept 2026",
       "folder": "ciphers/wellington-maitland-1812",
       "stage": 7,
-      "state": "active",
-      "holder": "Worker",
-      "next": "HathiTrust worker restarted 03:15 UTC after the usage limit reset (first live test of tools/browser_fetch.js; DICTIONARY.md section 6 searches). Still for you: ask Spink whether lot 1184 includes a dictionary, before the 23 Sept sale.",
+      "state": "you",
+      "holder": "You",
+      "next": "HathiTrust closed 03:37 UTC: 19 more editions tested through the Bibliographic and Extracted Features APIs, none matches (76 editions in all); Scott, Jones 1800, London Perry, Walker 1810 and Dublin Entick are not in HathiTrust at all. For you before 23 Sept: ask Spink whether lot 1184 includes a pocket dictionary. Remaining leads need a library: Urban pp. 232-233, the Bentinck papers (Nottingham Pw Jd), WO 37.",
       "note": "Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick's 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item.",
       "wait": {
-        "on": "Worker (HathiTrust pass), then you (Spink question)",
-        "since": "20 Sept 2026, 03:15 UTC",
-        "expected": "One to two hours",
-        "unblock": "A dictionary edition whose page and line positions match the 57 code groups."
+        "on": "You: one email to Spink before the 23 Sept sale",
+        "since": "20 Sept 2026, 03:37 UTC",
+        "expected": "Before 23 Sept 2026",
+        "unblock": "Spink confirms or denies a dictionary in the lot; or a library check of Urban and the Bentinck papers."
       }
     },
     {
@@ -86,16 +86,16 @@
       "year": "1862-67",
       "ref": "Huntington mssEC 15 (1862); mssEC 19 ledger with cipher book mssEC 41 (1864)",
       "folder": "ciphers/eckert-1862",
-      "stage": 8,
+      "stage": 9,
       "state": "active",
       "holder": "Worker",
-      "next": "Verifier audit done 20 Sept (ciphers/eckert-1864/AUDIT.md): of the four readings not found in Official Records ser. I vols 32-45, E6 (Halleck to Sherman 26 Apr) is in OR I/32 pt 3 p.498 and E12 (Lincoln to Wolford 4 Aug) has been in print since 1864 (Basler CW 7:479), both N1; E4 (Fox to Butler) and E5 (Meigs to Butler) are N3, no prior plaintext located in the sources searched, not to be called unpublished. Still running: the key test (does the Huntington's Cipher No. 2 book, mssEC 47-48, read the Beckwith and Kimber entries to Grant's and Canby's headquarters? started 03:15 UTC). If no book matches, those entries become a genuine unsolved target with the Official Records as known plaintext.",
-      "note": "First pilot 19 Sept: Zooniverse transcribed all 12,921 pages; the planned decoding phase never ran, though the project blog read a few single entries (AUDIT.md); ten Feb 1862 entries read at grade C. Second pilot 19-20 Sept: mssEC 41 (Cipher No. 1) transcribed in full (830 arbitraries, routes, numerals), twenty March-December 1864 entries of mssEC 19 read cleanly; seventeen agree with the Official Records word for word; Lincoln to Wolford 4 Aug is in Basler CW 7:479; Fox to Butler 21 Apr and Meigs to Butler 22 Apr were not found in the sources searched (AUDIT.md: N3, not 'unpublished'). About 550 more entries of mssEC 19 can now be read the same way. See ciphers/eckert-1864/.",
+      "next": "Audit done 03:38 UTC (AUDIT.md): E6 Halleck to Sherman and E12 Lincoln to Wolford were already in print (N1: OR I/32 pt 3 p.498; Basler 7:479). E4 Fox to Butler and E5 Meigs to Butler: no prior print or decipherment located in the sources logged (N3), and most of their words were never in cipher. Nothing here is a first decipherment. Still running: the Cipher No. 2 key test on the Beckwith and Kimber entries.",
+      "note": "Twenty 1864 entries read at grade H from cipher book mssEC 41; seventeen agree word for word with the Official Records, one with the printed Lincoln works, two (E4, E5) not found in the sources listed in AUDIT.md. Corpus question (AUDIT.md section 12): no one has mapped the ledger entries to cipher, key, plaintext and print; the project's decoding phase was never launched (paused Jan 2018, ended July 2019). A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve.",
       "wait": {
-        "on": "Verifier (audit) and key-test worker",
-        "since": "20 Sept 2026, 03:07 UTC",
-        "expected": "One to two hours",
-        "unblock": "AUDIT.md with an N0-N5 novelty class per message and corrected wording in NOTES.md and reading.md."
+        "on": "Key-test worker (Cipher No. 2)",
+        "since": "20 Sept 2026, 03:15 UTC",
+        "expected": "Under an hour",
+        "unblock": "A: the book reads the headquarters entries. B: no book matches and those entries become a genuine target."
       }
     },
     {
@@ -124,13 +124,13 @@
     },
     {
       "title": "Verifier: prior-art audit of four Eckert 1864 telegrams",
-      "job": "Try to disprove the \"not printed\" claim; classify each message N0-N5; correct repo wording; add rule 10 to CLAUDE.md | Result: E6 N1 (OR I/32 pt 3 p.498), E12 N1 (in print since 1864; Basler CW 7:479), E4 N3, E5 N3; AUDIT.md pushed",
-      "state": "done"
+      "job": "E6 and E12 already in print (N1); E4 and E5 no prior print located (N3); postmortem and rule 10; corpus phase never launched. $28",
+      "state": "done, archived"
     },
     {
       "title": "Access: HathiTrust dictionary search via browser (Wellington 1812)",
-      "job": "Test browser_fetch.js on HathiTrust, then run the section 6 searches from DICTIONARY.md",
-      "state": "running (restarted 03:15 UTC)"
+      "job": "Chromium blocked by the proxy CA; used HathiTrust APIs instead; 19 editions tested, none match; tools/htrc_ef_headwords.py. $11",
+      "state": "done, archived"
     },
     {
       "title": "Transcription + Reading: Eckert 1864 ledger with Cipher No. 1",
@@ -239,6 +239,14 @@
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 03:37",
+      "what": "Wellington: HathiTrust half of the dictionary hunt closed negative (19 editions via APIs). The browser tool cannot run in cloud containers until the proxy CA is trusted; APIs documented in the Access playbook."
+    },
+    {
+      "when": "20 Sept, 03:38",
+      "what": "Eckert 1864 audit: two of the four \"not printed\" telegrams were in print (one in the Official Records the solver had searched); the other two have no located prior print. Board stage set to Novelty verified; no first-decipherment claim survives."
+    },
     {
       "when": "20 Sept, 03:15",
       "what": "Restarted after the usage limit: HathiTrust dictionary search (Wellington) and a new Cipher No. 2 key test (Eckert). The 1864 reading worker was archived; it had begun a duplicate audit of its own."

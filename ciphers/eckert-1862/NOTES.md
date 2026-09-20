@@ -16,7 +16,7 @@ volunteers. Phase 2 (tagging sender, recipient, date, code words inside each tel
 the closing post "Decoding the Civil War: End" (31 July 2019,
 https://decodingthecivilwar.wordpress.com/2019/07/31/decoding-the-civil-war-end/) says the project was paused
 in Jan 2018 and shut in July 2019, and that the team would instead "extract through text mining the data
-required" from the Phase 1 transcriptions. No decoded texts were published by the project. The Zooniverse
+required" from the Phase 1 transcriptions. No systematic decoding was published by the project (single entries were read on its blog in 2017; see ciphers/eckert-1864/AUDIT.md section 12). The Zooniverse
 results page (https://www.zooniverse.org/projects/zooniverse/decoding-the-civil-war/about/results, read
 19 Sept 2026) says the project is complete and that the transcriptions were published in the Huntington
 Digital Library, Thomas T. Eckert Papers, four series: 1 US Military Telegraph ledgers mssEC 01-21, 2 Army of
