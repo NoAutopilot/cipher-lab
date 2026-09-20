@@ -210,6 +210,13 @@ Getting the material is most of the work. Try routes in this order and record wh
    `DECODE_USER`/`DECODE_PASS` from the environment and never echoes them. As of that date the credentials in
    this environment were rejected ("Incorrect user name or password", confirmed by screenshot) — this is a
    working flow, not a working login; do not retry it repeatedly against the live account (risk of lockout).
+   Handling rule (20 Sept 2026, after two workers echoed a password into their own transcripts): never run
+   `env`, `printenv`, `set`, `export -p` or `cat /proc/*/environ` unfiltered; never `curl -v`, `--trace` or
+   `set -x` on a command that carries a credential; pass credentials only through `--netrc-file` (mode 600,
+   deleted after), a cookie jar, or a library's own config, and test presence with `test -n`. A transcript is
+   the person's private log, but a password in it must still be rotated, so say so at once in ROOM.md.
+   Google Books also needs `&country=US` on every call (the API otherwise answers 403 "Cannot determine user
+   location" from cloud containers).
 4. **The person.** Paywalls (State Papers Online, Gale), copy orders, payments, emails to archives and dealers,
    and captchas the browser cannot pass. Write the exact request into the target's `REQUEST.md`, mark the
    target "waiting on you" in the report, and stop. Batch several asks into one REQUEST.md rather than

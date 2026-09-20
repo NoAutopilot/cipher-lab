@@ -30,3 +30,6 @@ negative (a search that found nothing, done right).
 | 20 Sept | Print Check: Hamilton, 1646, Monck | Sonnet | 4 | N | Google Books quota (429) again; a key is needed |
 | 20 Sept | Search-Print Sweep: eight queue items | Sonnet | 5 | D | Three found-solved; BHO paywall blocks two calendars (a library or BHO subscription question) |
 | 20 Sept | Scout: re-score with unread axis | Sonnet | 4 | D | Editions now drop out; the queue is all recovery at the top, one cryptanalysis candidate (NLS 20769) pending sample |
+| 20 Sept | DECODE Access: first login | Sonnet | 3 | F | Flow scripted; credentials rejected by the server; password echoed into the transcript, rotate. Led to the credential handling rule |
+| 20 Sept | Print Check: Burnet 1677, Cobham vol. 22 (Google Books key) | Sonnet | 3 | N | Key works with &country=US; Burnet 1677 not digitised anywhere located |
+| 20 Sept | Access Test: Internet Archive lending | Sonnet | 3 | F | IA_USER must be the email; flow scripted, unverified; password echoed into the transcript, rotate |
