@@ -113,3 +113,45 @@ undeciphered.
 **Verdict:** No solution, key, or plaintext for this cipher was found by any of the six searchers; the prior
 "open, offline-only, key at NRS GD406/1/2197" status is independently confirmed, not contradicted, so the
 target's status is unchanged: **offline-only**.
+
+## Print check, 20 Sept 2026
+
+Free-source check for a printed decipherment of any of the four target letters, or of any other letter using
+the same Hamilton-family cipher of 1648-50, or of a printed key. Internet Archive full-text/search-inside;
+Google Books and HathiTrust catalogue were blocked (Google Books API HTTP 429, quota exhausted; HathiTrust
+Cloudflare 403 to curl, consistent with the existing block logged above) and are unchecked by this pass, not
+negative.
+
+1. **Burnet, *Memoires of the Lives and Actions of James and William Dukes of Hamilton*, 1677 original
+   edition.** Not located on Internet Archive (only the 1852 Oxford reprint already checked, plus a duplicate
+   BSB scan of the same 1852 reprint, and an unrelated 1673 title by the same author that is not full-text
+   indexed). Google Books/HathiTrust, which might hold it, were blocked. **Unchecked**, not negative.
+2. **HMC Supplementary Report on the manuscripts of the Duke of Hamilton (1932).** Located on Internet Archive
+   (`supplementaryrep0000grea`); full text is access-restricted (controlled digital lending), searched via IA's
+   full-text-search API snippets only. No hit for the four target letters' dates or phrases. Found instead: the
+   report calendars two earlier letters "to the Earl of Lanark" (same man, before he became 2nd Duke of
+   Hamilton in March 1649) dated [Feb 1648] and [March 1648], noting "passages in italics on pages 70-4 are in
+   cipher in the original" and quoting "...to trouble your Lop being in your first cipher with me." This
+   indicates pp.70-74 print a decipherment of cipher passages in two 1648 letters to the same recipient — not
+   confirmed to be the same nomenclator as the four 1650 letters, and not read past the search snippets (the
+   item could not be opened in full). A lead, not a match: worth a full read of pp.70-74 before any claim about
+   this being the same cipher.
+3. **Gardiner (ed.), *Letters and Papers illustrating the relations between Charles the Second and Scotland in
+   1650* (Scottish History Society, 1894).** Four IA copies searched; no hit for the four target letters. One
+   unrelated decipherment found in the volume: Ormond's cipher, printed "from the interlined decipher" after he
+   lost his key at Rathmines — a different correspondent, different cipher. No relevant match for this target.
+4. **The Nicholas Papers (Camden Society, all located volumes).** Confirms Hamilton/Lanark as the same
+   recipient again; all "cipher" hits concern other royalist correspondents (O'Neill, Ross/Rowe, Nicholas's own
+   cipher) with no reference to a Hamilton cipher letter or the four target dates. No relevant match.
+5. **Carte's Ormonde collection** (*Life of James Duke of Ormonde*, 1735 and 1851 editions, and the printed
+   *Letters*). General remarks on Ormonde's own cipher correspondence, and mention of a different "Mr. James
+   Hamilton" (an Ormonde correspondent, not the 2nd Duke) writing "in the same cipher... deciphered" — not this
+   cipher, not this Hamilton. No relevant match.
+6. **Phrase sweep** (Hamilton + Arran + 1650 + cipher + deciphered) across the above items: no further hits.
+
+**Verdict:** No decipherment or key for the four target letters (6/14/31 Aug, 27 Sept 1650) was found in the
+sources checked here. Two open threads for a follow-up pass, not acted on in this check: the 1677 Burnet first
+edition (blocked by Google Books quota and HathiTrust's Cloudflare block, not searched), and HMC Supplementary
+Report (1932) pp.70-74, which appear to print a decipherment of cipher passages in two 1648 letters to the same
+recipient under his earlier title — worth reading in full to see whether it is the same nomenclator. This does
+not change REQUEST.md; the archive order for GD406/1/2197 remains the fastest route to the key.
