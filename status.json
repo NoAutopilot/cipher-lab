@@ -1,5 +1,5 @@
 {
-  "updated": "19 September 2026, 23:58 UTC",
+  "updated": "20 September 2026, 00:05 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -52,15 +52,15 @@
       "ref": "Spink lot 1184, sale 23 Sept 2026",
       "folder": "ciphers/wellington-maitland-1812",
       "stage": 7,
-      "state": "you",
-      "holder": "You",
-      "next": "Two things only you can do, both before the sale on 23 Sept: (1) email Spink and ask whether lot 1184's 'box' or bound volumes include a pocket dictionary, since one was sent with the cipher; (2) run the HathiTrust full-view search from a browser (queries listed in DICTIONARY.md section 6), which is blocked for cloud sessions.",
+      "state": "active",
+      "holder": "Worker",
+      "next": "Worker running the HathiTrust searches from a real browser (first test of tools/browser_fetch.js): Scott 1797/1799, Fulton and Knight, Jones 1800, Perry 24mo, Walker abridgment 1810, Entick 1785/1789 and Dublin reprints. Still for you: ask Spink whether lot 1184 includes a dictionary, before the 23 Sept sale.",
       "note": "Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick's 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item.",
       "wait": {
-        "on": "Your email to Spink about a dictionary in the lot, and a HathiTrust search from a browser",
-        "since": "19 Sept 2026, 23:58 UTC",
-        "expected": "Spink replies within days; the sale is 23 Sept",
-        "unblock": "A dictionary in the lot would settle it at once. Otherwise a full-view HathiTrust copy that passes every constraint in codebook.tsv."
+        "on": "Worker (HathiTrust pass); then you (Spink question)",
+        "since": "20 Sept 2026, 00:02 UTC",
+        "expected": "One to two hours for the worker",
+        "unblock": "A dictionary edition whose page and line positions match the 57 code groups."
       }
     },
     {
@@ -83,18 +83,18 @@
     {
       "name": "Eckert Papers, US Military Telegraph",
       "year": "1862-67",
-      "ref": "Huntington mssEC 15 (1862); mssEC 18-19 with cipher books 39-67 (1864)",
+      "ref": "Huntington mssEC 15 (1862); mssEC 19 ledger with cipher book mssEC 41 (1864)",
       "folder": "ciphers/eckert-1862",
       "stage": 8,
       "state": "active",
       "holder": "Worker",
-      "next": "Second pilot running: read twenty entries of an 1864 ledger against the filled-in cipher book the Huntington holds, at grade H, preferring telegrams the Official Records never printed.",
-      "note": "First pilot done 19 Sept 2026: the Zooniverse project transcribed all 12,921 pages but decoded nothing, so the ledgers are open. Ten Feb 1862 entries read cleanly against the Official Records (86 tokens grade C, 3 I, 2 M); the Feb 1862 key survives only in print, so no H reading is possible for 1862. The 1863-67 ledgers pair with cipher books the Huntington holds, which allows entry-by-entry reading of telegrams never printed.",
+      "next": "Second pilot done 00:00 UTC: twenty 1864 entries read at grade H from the cipher book (296 H tokens, 8 C, 1 M, 0 I); four of them are telegrams the Official Records never printed. Follow-up under consideration: the headquarters cipher (mssEC 47-48, Cipher No. 2) for the Beckwith and Kimber entries.",
+      "note": "First pilot 19 Sept: Zooniverse transcribed all 12,921 pages but decoded nothing; ten Feb 1862 entries read at grade C. Second pilot 19-20 Sept: mssEC 41 (Cipher No. 1) transcribed in full (830 arbitraries, routes, numerals), twenty March-December 1864 entries of mssEC 19 read cleanly; sixteen agree with the Official Records word for word, four are unprinted (Fox to Butler 21 Apr, Meigs to Butler 22 Apr, Halleck to Sherman 26 Apr, Lincoln to Wolford 4 Aug). About 550 more entries of mssEC 19 can now be read the same way. See ciphers/eckert-1864/.",
       "wait": {
-        "on": "Nothing external. A worker is reading the 1864 ledger",
-        "since": "19 Sept 2026, 23:30 UTC",
-        "expected": "About 2 hours",
-        "unblock": "Twenty readings at grade H, or a report that the book does not match."
+        "on": "Nothing external. Worker finishing a sweep of the sister cipher books for seven missing addressee words",
+        "since": "20 Sept 2026, 00:00 UTC",
+        "expected": "Under an hour",
+        "unblock": "Worker pushes and stops; then decide on the Cipher No. 2 follow-up."
       }
     },
     {
@@ -117,9 +117,14 @@
   ],
   "workers": [
     {
-      "title": "Transcription + Reading: Eckert 1864 ledger with Cipher No. 1",
-      "job": "Read twenty 1864 telegrams at grade H against the Huntington's cipher book",
+      "title": "Access: HathiTrust dictionary search via browser (Wellington 1812)",
+      "job": "Test browser_fetch.js on HathiTrust, then run the section 6 searches from DICTIONARY.md",
       "state": "running"
+    },
+    {
+      "title": "Transcription + Reading: Eckert 1864 ledger with Cipher No. 1",
+      "job": "Twenty 1864 entries read at grade H (296 H, 8 C, 1 M); four unprinted telegrams; pushed 045fbe2",
+      "state": "finishing"
     },
     {
       "title": "Research: Wellington 1812 dictionary edition",
@@ -223,6 +228,14 @@
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 00:00",
+      "what": "Eckert 1864: twenty ledger entries read at grade H from cipher book mssEC 41; four are telegrams never printed in the Official Records."
+    },
+    {
+      "when": "20 Sept, 00:02",
+      "what": "Wellington: HathiTrust worker started; first live test of the browser fetch tool."
+    },
     {
       "when": "19 Sept, 23:58",
       "what": "Wellington: dictionary search closed negative after 57 editions. Two asks for you before the 23 Sept sale: email Spink about a dictionary in the lot; HathiTrust search from a browser."
