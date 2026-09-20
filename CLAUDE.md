@@ -53,6 +53,26 @@ session and every subagent, cloud or local.
    searched and no phrase search was run after decoding.
    Precedent and worked example: ciphers/eckert-1864/AUDIT.md.
 
+
+## Pipeline (who hands what to whom)
+
+1. **Scout** (`.claude/workflows/scout.js`, or a worker with the same brief) finds candidates, checks status at
+   the sources, scores them and sets `kind` (cryptanalysis, recovery, contribution; editions are dropped). It
+   writes QUEUE.md. It never promotes to the board and never solves.
+2. **Check-solved** (`.claude/workflows/check-solved.js`) runs blind, six sources, on any queue item before it
+   goes on the board, and again whenever a catalogue row may be stale. Its verdict goes into the target's
+   NOTES.md and sets stage 2, "Verified unsolved".
+3. **Orchestrator** promotes to the board only after check-solved, at most a handful at a time, choosing by
+   score and by the three kinds together, so the board always carries at least one recovery and one
+   cryptanalysis candidate and never fills with editions.
+4. **Access workers** (lookup, print check, image capture, transcription) move a target from stage 2 to stage
+   7 without the person where the playbook allows, and write REQUEST.md when it does not.
+5. **Solver** reads (stage 8), grades per token, reports what was found and where it was not found.
+6. **Verifier** assigns the N-class (stage 9) and corrects any over-claim.
+7. **Result label**: the orchestrator sets the card's kind from what actually happened (a key that opened it
+   is recovery, a reading without the key is cryptanalysis, a correction or a dataset handed on is
+   contribution) and writes the "Result so far" line. README "What counts as a result" is the reference.
+
 ## Workers
 
 A worker session does one job, pushes, reports in a short paragraph, and stops. It never starts a new target,
