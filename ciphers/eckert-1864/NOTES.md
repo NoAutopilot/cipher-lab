@@ -70,7 +70,8 @@ Loadstone" at the head and "Maynard / Gen A. J. Smith / Macbeth" at the foot, an
 "General-in-Chief"; Kent/Kearney = Burbridge; Napier/Native = Stanley/Rosseau; Jordan struck for Jew, where
 mssEC 41 strikes Jasper). Those four words are grade H from mssEC 43 (key.md section 7). A further subagent
 sweep of mssEC 42, 45 and 46 for the remaining missing words (Mutton, Mackerel, Press, Praise, Submit, Hang,
-Fisher) was still running when this was committed; its result, if any, goes into section 7 in a follow-up.
+Fisher) was started on 19 Sept 2026 and did not finish (section 6); those words stay at grade C from the
+Official Records, and the sweep is the first job of the next worker on this target.
 
 ## 4. The twenty readings (ciphertext.txt, reading.md, decode.py)
 
@@ -118,6 +119,11 @@ received books.
   E7 come from the ledger, not the print.
 - 19 Sept 2026: the mssEC 44 leaf "15½" (Tomokiyo's handwritten addenda) is a list of Georgia places for the
   Atlanta campaign, not the missing addressee words.
+- 19-20 Sept 2026: the subagent sweeping mssEC 42, 45 and 46 for the addressee words mssEC 41 lacks was killed
+  by the account's session rate limit after reaching mssEC 45, and wrote no output. Nothing was lost: the eight
+  words concerned are graded C from the Official Records in key.md section 7, and the readings do not depend on
+  the sweep. To redo it, give one worker the four copies' page pointers (mssEC 42: 359-382; 43: 397-420;
+  45: 477-500; 46: 516-541 with the extra leaves 530-531) and the word list above.
 
 ## 7. Credits and sources
 
