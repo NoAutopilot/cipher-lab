@@ -33,3 +33,4 @@ negative (a search that found nothing, done right).
 | 20 Sept | DECODE Access: first login | Sonnet | 3 | F | Flow scripted; credentials rejected by the server; password echoed into the transcript, rotate. Led to the credential handling rule |
 | 20 Sept | Print Check: Burnet 1677, Cobham vol. 22 (Google Books key) | Sonnet | 3 | N | Key works with &country=US; Burnet 1677 not digitised anywhere located |
 | 20 Sept | Access Test: Internet Archive lending | Sonnet | 3 | F | IA_USER must be the email; flow scripted, unverified; password echoed into the transcript, rotate |
+| 20 Sept | Check Solved: Stair, Monck, NLS 20769 (workflow) | Sonnet | 14 | D | Three sweeps, all open; one heading dated "unknown" fixed by the orchestrator (rule 6) |

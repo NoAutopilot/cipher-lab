@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 15:00 UTC",
+  "updated": "20 September 2026, 15:18 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -146,16 +146,16 @@
       "year": "1659-60",
       "ref": "BL Add MS 32093 f.423 (Malet collection), \"partly in cipher, undeciphered. Imperfect.\"",
       "folder": "ciphers/monck-1660",
-      "stage": 1,
-      "state": "active",
-      "holder": "Worker",
-      "next": "HOLD the order until the blind six-source sweep reports (started 14:45 UTC). Verified 20 Sept 2026: BL catalogue confirms the item; no solution found by the sweep; English plaintext near-certain. For you: ask BL Imaging Services for a quote for f.423 (REQUEST.md); a Reader Pass may be required, so ask whether they will quote remotely.",
+      "stage": 2,
+      "state": "you",
+      "holder": "You",
+      "next": "Blind six-source sweep done 15:05 UTC: open, no decipherment or prior attempt anywhere reachable. The order is back on your card: ask BL Imaging Services for a quote for Add MS 32093 f.423 (REQUEST.md); ask whether they quote without a Reader Pass.",
       "note": "Key leads: Monck's correspondence with Clarges and Hyde in the Clarendon State Papers and Thurloe. HMC 5th and 7th Reports describe the collection and can be checked in print first.",
       "wait": {
-        "on": "Check-solved sweep (worker), then you",
-        "since": "20 Sept 2026, 14:45 UTC",
-        "expected": "About an hour",
-        "unblock": "A sweep verdict of open or offline-only sets stage 2; only then does the order go on your card."
+        "on": "You: one email to BL Imaging Services for a quote",
+        "since": "20 Sept 2026, 15:05 UTC",
+        "expected": "BL quotes are slow since 2023",
+        "unblock": "A quote and a scan of f.423."
       },
       "kind": "undecided"
     },
@@ -164,16 +164,16 @@
       "year": "18th c.",
       "ref": "National Library of Scotland MS.20769: \"Unidentified text, apparently 18th century, written in cipher\"; 57 leaves, oblong quarto and octavo; genre \"Ciphers. Codes.\"",
       "folder": "ciphers/nls-20769",
-      "stage": 1,
-      "state": "active",
-      "holder": "Worker",
-      "next": "HOLD the order until the blind six-source sweep reports (started 14:45 UTC). Catalogue record read first-hand 04:32 UTC (Wayback capture of the NLS page; the live site still throws a Cloudflare challenge even with the browser fix). Confirmed: 57 leaves, cipher alphabet of Roman and Greek letters, astrological and invented symbols, text divided into sections, a name \"Baptiste Romin or Romain\" pencilled on ff. 27-28, deposited 1949 by the Society of Antiquaries of Scotland, language undetermined. For you: decide on scans. At GBP 1.80 per A4 scan, 57 leaves both sides is roughly GBP 100-200; REQUEST.md suggests asking NLS for a quote and for a sample of a few leaves first.",
+      "stage": 2,
+      "state": "you",
+      "holder": "You",
+      "next": "Blind six-source sweep done 15:12 UTC: open, no discussion, attempt or DECODE record found anywhere (the printed 1949-50 Antiquaries Proceedings and DECODE's logged-in content remain unchecked). The order is back on your card: ask NLS for a quote and a five-leaf sample of MS 20769 (REQUEST.md).",
       "note": "Size is the point: 57 leaves of a genuine cipher is far above unicity for a homophonic system. Risk, still open: the cataloguer's genre tag is not proof it is a cipher rather than a private notation. A sample of five leaves would settle that before the full order.",
       "wait": {
-        "on": "Check-solved sweep (worker), then you",
-        "since": "20 Sept 2026, 14:45 UTC",
-        "expected": "About an hour",
-        "unblock": "A sweep verdict of open or offline-only sets stage 2; only then does the order go on your card."
+        "on": "You: ask NLS for a quote and a five-leaf sample (REQUEST.md)",
+        "since": "20 Sept 2026, 15:12 UTC",
+        "expected": "NLS reprographics answer in one to two weeks",
+        "unblock": "Sample images; a worker classifies the symbol system and decides whether to order the rest."
       },
       "kind": "cryptanalysis"
     }
@@ -196,8 +196,8 @@
     },
     {
       "title": "Check Solved: Stair 1710, Monck 1660, NLS MS 20769 (workflow)",
-      "job": "Stair: open, confirmed (14:50). Monck and NLS 20769 running",
-      "state": "running"
+      "job": "Stair, Monck, NLS 20769 all open; nothing already solved; orders cleared to go on the card. $14",
+      "state": "done, archived"
     },
     {
       "title": "Print Check: free key hunts for Hamilton, 1646, Monck",
@@ -363,6 +363,10 @@
     }
   ],
   "log": [
+    {
+      "when": "20 Sept, 15:13",
+      "what": "Sweep done: Stair, Monck and NLS 20769 all open; all three at stage 2; the Kansas, BL and NLS orders are cleared and back on the owner's card."
+    },
     {
       "when": "20 Sept, 15:00",
       "what": "Credentials: DECODE login rejected (wrong credentials as set); Internet Archive login rejected (IA_USER must be the email). Both passwords appeared in worker transcripts and should be rotated. Google Books key works. Stair 1710 sweep: open; order back on the card."
