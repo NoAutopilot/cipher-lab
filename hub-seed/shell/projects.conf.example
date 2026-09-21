@@ -1,0 +1,3 @@
+# name|directory|tmux colour|repository
+# Copy to projects.conf and edit. projects.conf is gitignored: paths are personal.
+CIPHER-LAB|$HOME/src/cipher-lab|#1e3a5f|NoAutopilot/cipher-lab
