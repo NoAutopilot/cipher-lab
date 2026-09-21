@@ -3,7 +3,47 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 20 September 2026, 15:18 UTC
+Last updated: 21 September 2026, 03:00 UTC
+
+## Handoff to the next orchestrator (21 September 2026, 03:00 UTC)
+
+Read this, then CLAUDE.md, then the target table below. Everything you need is in the repository; nothing
+important lives only in the previous session's conversation.
+
+**What this project is.** Read old ciphered letters nobody has read. The bottleneck is access, not
+cryptanalysis: the online material has been swept by two well-funded AI projects, so our lane is the paper in
+archives. README "What counts as a result" defines the three kinds (recovery, cryptanalysis, contribution)
+and every board card carries one.
+
+**Where to look.** `STATUS.md` (this file) is the human board. `status.json` feeds `dashboard.html`, published
+at https://claude.ai/artifact/Mbveo2jWKwmA7RTqBuCkis; rebuild with `python3 tools/build_dashboard.py` and
+republish to that same URL after every worker result. `CLAUDE.md` holds the ten rules, the Pipeline, the Usage
+section (model tiering; Sonnet for search and transcription, the top model for reconciliation, verifier and
+orchestration), the Access playbook and the Improvement loop. `ROOM.md` is the workers' shared channel.
+`LEDGER.md` is one row per worker with cost and outcome. `QUEUE.md` is the ranked queue; `.claude/briefs/`
+holds the role templates.
+
+**The two rules that were learned the hard way.** Rule 10: a solver may never call anything new or
+unpublished; only a separate verifier, after a logged search, assigns an N-class. And no copy order, payment
+or quote request reaches the owner until a check-solved sweep has set that target to stage 2.
+
+**Running right now** (independent sessions; collect them with get_session, then fetch main and read what they
+pushed): Erving to Madison 1807, session_01823ERYCU9Fy2t858YsWL11. Randolph to Sussex 1569,
+session_01F6AEdCy2oGSwrJX2Pa4rPH. Both Sonnet, capped about $12, started 02:58 UTC.
+
+**Waiting on the owner:** rotate the DECODE and archive.org passwords (both were printed into worker
+transcripts on 20 Sept) and set IA_USER to the account email; email Spink before the 23 Sept sale; the Kansas
+order for Stair; an NLS quote and five-leaf sample for MS 20769; a British Library quote for Monck.
+
+**Waiting on archives:** National Records of Scotland (Hamilton key sheets), The National Archives (Stepney
+page check, order 3660178), the Huntington (corpus enquiry sent 20 Sept).
+
+**Standing routines:** weekly retrospective, Mondays 06:00 UTC, emails five proposed changes and a
+cost-per-result verdict. Breakthrough alert, fired on demand. Morning summary, as scheduled.
+
+**Cost note.** The previous orchestrator ran from 17 to 21 September and reached $2,042 of plan usage, more
+than every worker combined, because one long session re-reads its whole history. Prefer a fresh orchestrator
+session every few days over one that runs for ever.
 
 ## Overnight summary, 19-20 September 2026 (written 05:15 UTC, completed 06:12 UTC)
 
