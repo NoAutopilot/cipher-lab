@@ -230,6 +230,9 @@ Getting the material is most of the work. Try routes in this order and record wh
    `DECODE_USER`/`DECODE_PASS` from the environment and never echoes them. As of that date the credentials in
    this environment were rejected ("Incorrect user name or password", confirmed by screenshot) — this is a
    working flow, not a working login; do not retry it repeatedly against the live account (risk of lockout).
+   Update, 21 Sept 2026: the person rotated the password and reset `DECODE_USER`/`DECODE_PASS`; a single test
+   login with the new pair was also rejected (same `IS_LOGGEDIN:false` signal). One attempt only, per the
+   handling rule below — do not retry further without the person confirming the account again (ASKS.md row 1).
    Handling rule (20 Sept 2026, after two workers echoed a password into their own transcripts): never run
    `env`, `printenv`, `set`, `export -p` or `cat /proc/*/environ` unfiltered; never `curl -v`, `--trace` or
    `set -x` on a command that carries a credential; pass credentials only through `--netrc-file` (mode 600,

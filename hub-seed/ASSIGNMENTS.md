@@ -12,7 +12,7 @@ a reason). Do not delete rows; a queue's history is how the retrospective learns
 | 1 | 21 Sept | cipher-lab | Native-resolution re-transcription of Randolph f.277r-v, 20-30 crops under 2500px, then frequency analysis | any | `.claude/briefs/transcription.md` plus the "What a next solver needs" section of that target's NOTES.md | open |
 | 2 | 21 Sept | cipher-lab | Print check: CSP Foreign vol. 22 for Cobham 1588, and CSP Domestic 1644-45 for Charles I to Rupert | any | `.claude/briefs/print-check.md` | open |
 | 3 | 21 Sept | cipher-lab | Check-solved sweep on the next five unswept queue items | any | `.claude/briefs/check-solved.md` | open |
-| 4 | 21 Sept | cipher-lab | Once the DECODE login works: read record 8725, then pull R413 (Boswell) and R4930 (Randolph key) | any | `.claude/briefs/archive-lookup.md` | blocked on ASKS row 1 |
+| 4 | 21 Sept | cipher-lab | Once the DECODE login works: read record 8725, then pull R413 (Boswell) and R4930 (Randolph key) | any | `.claude/briefs/archive-lookup.md` | blocked on ASKS row 1 (retested 21 Sept with rotated creds, still rejected) |
 
 ## Writing a row
 
