@@ -1,5 +1,5 @@
 {
-  "updated": "20 September 2026, 15:18 UTC",
+  "updated": "21 September 2026, 03:00 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -179,6 +179,16 @@
     }
   ],
   "workers": [
+    {
+      "title": "Recovery: Erving to Madison 1807",
+      "job": "Transcribe the NARA frames; apply the Pinckney legation code",
+      "state": "running"
+    },
+    {
+      "title": "Recovery: Randolph to Sussex 1569",
+      "job": "Transcribe the BL image; match against CSP Scotland or a published Randolph key",
+      "state": "running"
+    },
     {
       "title": "DECODE Access: first login; record 8725 and Boswell R413",
       "job": "Login flow worked out and scripted (tools/decode_fetch.sh); the credentials as set were rejected by the server, so records 8725 and R413 unread. $3",
@@ -363,6 +373,10 @@
     }
   ],
   "log": [
+    {
+      "when": "21 Sept, 03:00",
+      "what": "Two recovery workers started on targets that need nothing from the owner (Erving 1807, Randolph 1569). Handoff note written at the top of this file for the next orchestrator session."
+    },
     {
       "when": "20 Sept, 15:13",
       "what": "Sweep done: Stair, Monck and NLS 20769 all open; all three at stage 2; the Kansas, BL and NLS orders are cleared and back on the owner's card."
