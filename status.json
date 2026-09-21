@@ -1,5 +1,5 @@
 {
-  "updated": "21 September 2026, 03:00 UTC",
+  "updated": "21 September 2026, 03:45 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -176,18 +176,36 @@
         "unblock": "Sample images; a worker classifies the symbol system and decides whether to order the rest."
       },
       "kind": "cryptanalysis"
+    },
+    {
+      "name": "Thomas Randolph to the Earl of Sussex",
+      "year": "1570",
+      "ref": "BL Cotton MS Caligula C II f. 277r-v (catalogued 1569; the manuscript is dated 9 July 1570); DECODE R4931",
+      "folder": "ciphers/randolph-sussex-1569",
+      "stage": 7,
+      "state": "queued",
+      "kind": "cryptanalysis",
+      "holder": "Nobody",
+      "next": "Images fetched and a first-pass transcription committed 21 Sept 2026. The passage is genuine invented-symbol cipher with plaintext English interleaved on at least two lines. No key located and nothing read: no H, no C. Next step is a native-resolution re-transcription line by line, then DECODE R4930 (the nearby key record) once a login works.",
+      "note": "Two independent passes agreed on the shape of the passage and disagreed on most glyphs, because the image tool downscales the crops well below native resolution. The worker said so rather than guessing, so ciphertext.txt is structure-confirmed, not glyph-exact. A content crib exists: Calendar of State Papers Scotland vol. 3 paraphrases the enclosure under entry 339, though it is a 1903 editorial paraphrase, not the letter's words.",
+      "wait": {
+        "on": "Nobody. Queued behind the owner's credential fix",
+        "since": "21 Sept 2026, 03:13 UTC",
+        "expected": "Not scheduled",
+        "unblock": "A DECODE login that works, to pull key record R4930; or a worker budgeted for 20 to 30 native-resolution crops."
+      }
     }
   ],
   "workers": [
     {
       "title": "Recovery: Erving to Madison 1807",
-      "job": "Transcribe the NARA frames; apply the Pinckney legation code",
-      "state": "running"
+      "job": "Rule 1 caught it: the despatch is printed in Founders Online (Madison Papers, Secretary of State series). Dropped as found-solved before any transcription. $2",
+      "state": "done, archived"
     },
     {
       "title": "Recovery: Randolph to Sussex 1569",
-      "job": "Transcribe the BL image; match against CSP Scotland or a published Randolph key",
-      "state": "running"
+      "job": "Images fetched, dating corrected to 1570, first-pass transcription; no key, nothing read. $3",
+      "state": "done, archived"
     },
     {
       "title": "DECODE Access: first login; record 8725 and Boswell R413",
@@ -373,6 +391,10 @@
     }
   ],
   "log": [
+    {
+      "when": "21 Sept, 03:45",
+      "what": "Erving 1807 dropped as found-solved: Founders Online prints the despatch, caught by the rule 1 check before any transcription. Randolph 1569 is really 1570; images and a first-pass transcription are in, no key located."
+    },
     {
       "when": "21 Sept, 03:00",
       "what": "Two recovery workers started on targets that need nothing from the owner (Erving 1807, Randolph 1569). Handoff note written at the top of this file for the next orchestrator session."

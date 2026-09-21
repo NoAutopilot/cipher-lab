@@ -34,3 +34,5 @@ negative (a search that found nothing, done right).
 | 20 Sept | Print Check: Burnet 1677, Cobham vol. 22 (Google Books key) | Sonnet | 3 | N | Key works with &country=US; Burnet 1677 not digitised anywhere located |
 | 20 Sept | Access Test: Internet Archive lending | Sonnet | 3 | F | IA_USER must be the email; flow scripted, unverified; password echoed into the transcript, rotate |
 | 20 Sept | Check Solved: Stair, Monck, NLS 20769 (workflow) | Sonnet | 14 | D | Three sweeps, all open; one heading dated "unknown" fixed by the orchestrator (rule 6) |
+| 21 Sept | Recovery: Erving to Madison 1807 | Sonnet | 2 | N | Rule 1 caught it before transcription: printed in Founders Online. The cheapest possible outcome, and the reason rule 1 runs first |
+| 21 Sept | Recovery: Randolph to Sussex 1570 | Sonnet | 3 | D | Honest about resolution limits rather than guessing glyphs; also caught a dating error in our own queue (1569 should be 1570) |
