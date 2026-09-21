@@ -215,3 +215,31 @@ volume). No hit anywhere in the volume for a cipher or deciphered passage tied t
 **not found in the sources checked**, and the pp.70-74/1648 passage is still an unconfirmed lead (same
 recipient, different date and, on this evidence, no textual link to the 1650 letters) that needs a full read,
 not a search-inside snippet, to settle. Status unchanged: **offline-only**.
+
+## Print check follow-up, 21 Sept 2026 (IA login worker 2)
+
+Retested the IA login now that IA_USER is set to an email address (rotated ~21 Sept 2026, per ROOM.md/CLAUDE.md).
+**Still blocked**: `POST https://archive.org/services/xauthn/?op=login` with the corrected email-format IA_USER
+returns HTTP 401, `{"success": false, "values": {"reason": "account_not_found"}}` — the same error the prior
+worker got with a non-email IA_USER, but now for a different reason (the value is syntactically a valid email;
+archive.org simply has no account registered under it, or the account exists but is not password-login-enabled,
+e.g. sign-in-with-Google only). One attempt only, per the no-repeat-retry rule (lockout risk); not retried
+further this session. `tools/ia_borrow.py`'s login step and CLAUDE.md's Access playbook are updated with this
+finding; the person needs to check which archive.org account IA_USER/IA_PASS are meant to reach (flagged in
+ROOM.md and ASKS.md). `supplementaryrep0000grea` could not be borrowed or opened beyond search-inside snippets
+this session either.
+
+With login still unavailable, tried the two remaining free routes instead of a third login attempt:
+1. **HathiTrust Bibliographic API by OCLC.** The IA item's own metadata gives `urn:oclc:record:1151348305`;
+   `catalog.hathitrust.org/api/volumes/brief/oclc/1151348305.json` returns `{"records": {}, "items": []}` —
+   no HathiTrust holding for this OCLC number at all, so the HathiTrust route (blocked for other reasons
+   before) is now confirmed to have no copy to be blocked from.
+2. **Google Books.** `intitle:"Supplementary Report" intitle:Hamilton Manuscripts` (with `&country=US`) finds
+   nine catalog entries for this and related HMC Hamilton titles (1887 and 1932 reports, a 2009-2010 reprint of
+   the related Supplementary Report vol. 2), but every one is `viewability: NO_PAGES` — no preview, no
+   search-inside, nothing readable.
+
+No new route located to read pp.70-74 (the 1648 cipher-passage lead) or the 1650 section itself. Status
+unchanged: **offline-only**; the pp.70-74 lead is still open and unread. No key, deciphered passage, or
+description of the family cipher for the four target 1650 letters was found in any source reachable this
+session.

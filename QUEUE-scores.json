@@ -4756,15 +4756,17 @@
     "rank": 7,
     "name": "Cornwallis Papers (TNA PRO 30/11, six undeciphered items)",
     "verdict": "NOT FOUND",
-    "note": "Saberton, The Cornwallis Papers (2010) not found on Internet Archive (advancedsearch.php, 0 hits); index not checked. Saberton's allthingsliberty.com article (6 June 2019) already prints the mechanism and worked examples of all five relevant ciphers in the clear, so the six items are a key-application job once TNA copies are obtained. Re-checked 20 Sept 2026 (IA-login worker) with two further independent field queries: still NOT FOUND, no volume of the 2010 edition on IA.",
+    "note": "Saberton, The Cornwallis Papers (2010) not found on Internet Archive (advancedsearch.php, 0 hits); index not checked. Saberton's allthingsliberty.com article (6 June 2019) already prints the mechanism and worked examples of all five relevant ciphers in the clear, so the six items are a key-application job once TNA copies are obtained. Re-checked 20 Sept 2026 (IA-login worker) with two further independent field queries: still NOT FOUND, no volume of the 2010 edition on IA. Re-checked 21 Sept 2026 (IA login worker 2): Google Books now reachable (GOOGLE_BOOKS_KEY + country=US) and finds all fourteen 2010 Saberton parts by title (e.g. volume ids PPyytQEACAAJ, cRl7zQEACAAJ, WJxDtAEACAAJ), but every one is viewability NO_PAGES -- no preview, no search-inside, so the index still cannot be checked against the six PRO refs by this route either. Open Library search for the title returns no IA/OCLC-linked copy. NOT FOUND / NOT REACHABLE by any online route tried; archive-request for the TNA originals remains the only path.",
     "sources_checked": [
      "archive.org advancedsearch.php (title:\"Cornwallis Papers\" creator:Saberton; free-text \"Cornwallis Papers Southern Theatre Saberton\")",
      "allthingsliberty.com/2019/06/decoding-british-ciphers-used-in-the-south-1780-81/ (fetched in full)",
      "archive.org advancedsearch.php creator:Saberton (20 Sept 2026, 11 hits, all unrelated novels/theses)",
-     "archive.org advancedsearch.php title:(Cornwallis Papers) (20 Sept 2026, 9 hits: 1970 Rees abstracts vol., 1780s-1888 Clinton-Cornwallis controversy reprints; none is the 2010 Saberton edition)"
+     "archive.org advancedsearch.php title:(Cornwallis Papers) (20 Sept 2026, 9 hits: 1970 Rees abstracts vol., 1780s-1888 Clinton-Cornwallis controversy reprints; none is the 2010 Saberton edition)",
+     "Google Books API q=intitle:\"Cornwallis Papers\" inauthor:Saberton and q=\"Cornwallis Papers\" Saberton, with &country=US (21 Sept 2026): all matching volumes viewability NO_PAGES, no snippet search possible",
+     "Open Library search.json for \"Cornwallis Papers Saberton\" (21 Sept 2026): no OCLC or IA identifier returned"
     ],
     "not_attempted": [
-     "Google Books / WorldCat for Saberton 2010 (Google Books API returned HTTP 403 'Cannot determine user location' in this environment, 20 Sept 2026)",
+     "WorldCat (search-item API returned 404 'Search Item API has been disabled', 21 Sept 2026; no alternative WorldCat route tried)",
      "TNA Discovery item pages"
     ]
    },
