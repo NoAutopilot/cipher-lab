@@ -246,6 +246,28 @@ Getting the material is most of the work. Try routes in this order and record wh
    the person's private log, but a password in it must still be rotated, so say so at once in ROOM.md.
    Google Books also needs `&country=US` on every call (the API otherwise answers 403 "Cannot determine user
    location" from cloud containers).
+   **Credential diagnostic, 21 September 2026:** after DECODE and IA both rejected freshly rotated
+   credentials, checked whether `DECODE_USER`, `DECODE_PASS`, `IA_USER`, `IA_PASS`, `GOOGLE_BOOKS_KEY`,
+   `JSTOR_USER`, `JSTOR_PASS` are reaching this container intact, using only length/character-class tests
+   (`wc -c`, `case` glob tests, per-character `printf '%d'` ordinal checks) — no value or substring of one was
+   ever printed, logged, or echoed. Confirmed for all seven: each is set (none unset or empty); no leading or
+   trailing whitespace; not wrapped in a leading+trailing quote mark (`'` or `"`); every character is printable
+   ASCII (no non-printable byte found at any position); `DECODE_USER` and `IA_USER` each contain an `@`,
+   consistent with the person's account being (or being rotated to) an email address. Lengths were recorded
+   but are not reported here since a length alone can narrow a value; they were consistent with non-empty,
+   plausible credentials for all seven and are in the worker's ROOM.md note for anyone re-running this check.
+   Not tested: whether the value matches what the person intended to set (would require revealing it), and
+   whether a copy-paste artifact invisible to character-class tests (e.g. a Unicode look-alike character that
+   is still "printable ASCII" by this test, or a value truncated by the shell that set it before it reached
+   this container) is present — this diagnostic only rules out the specific classes checked above.
+   Conclusion: most consistent with **(b)** — the variables are reaching the container intact (correct length
+   class, no whitespace padding, no quote-wrapping, no non-printable corruption, `@` present where expected)
+   and the rejections seen on 20-21 Sept 2026 are the sites declining the credentials themselves, not a
+   transport or quoting fault in this environment. (a) unset/not-reaching is ruled out — all seven are set.
+   (c) mangling by quoting or whitespace is ruled out for the specific forms tested (wrapping quotes, leading/
+   trailing whitespace, non-ASCII/non-printable bytes). Next step is for the person to confirm the DECODE and
+   archive.org accounts and passwords directly with each site (e.g. a password reset flow), not to re-type the
+   same values into this environment's variables again.
 4. **The person.** Paywalls (State Papers Online, Gale), copy orders, payments, emails to archives and dealers,
    and captchas the browser cannot pass. Write the exact request into the target's `REQUEST.md`, mark the
    target "waiting on you" in the report, and stop. Batch several asks into one REQUEST.md rather than
