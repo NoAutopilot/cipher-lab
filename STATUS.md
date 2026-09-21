@@ -99,7 +99,7 @@ targets are filed with requests drafted; the browser fix works in every new cont
 **Stops and costs.** All sessions were stopped by the five-hour usage limit from 00:03 to 03:00 UTC. Worker
 usage tonight, in dollars of plan usage (not billed): Eckert 1864 reading 189 (over-ran its brief), verifier
 28, key test 26, HathiTrust 11, check-solved sweep 18, scout 6, print check 2, access tests 1, plus the free
-work in progress. Orchestrator session 2,042 since 17 Sept (corrected 20 Sept 18:30 UTC; the earlier figure of 250 in this file was wrong). It is one long-running session with 3.6 billion cached tokens read, so it costs more than every worker combined. See LEDGER.md.
+work in progress. Orchestrator session 2,042 since 17 Sept. **Nothing here is billed:** this runs on a Max subscription, and these figures are the API-equivalent value of the tokens consumed, which is how the session record reports them. What they measure is how fast a session eats the plan's rate-limit window. The orchestrator is one long session with 3.6 billion cached tokens read, so it consumes more of the window than every worker combined, which is what caused the 00:03 to 03:00 UTC lockout on 20 September. See LEDGER.md.
 
 ## How the sessions work
 
