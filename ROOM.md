@@ -30,3 +30,6 @@ reads every flag before the next assignment), `done` (pushed and stopping).
 2026-09-20 15:00 | Orchestrator | flag: do not retry the DECODE or IA logins until the person rotates both passwords and fixes IA_USER (email); lockout risk on DECODE. New credential handling rule in the Access playbook
 2026-09-20 | check-solved: stair-townshend-1710, monck-1660, nls-20769 | done: all three verdicts open, confirming/strengthening the prior scout and print checks; pushed
 2026-09-21 03:00 | Orchestrator | note: two recovery workers started (Erving 1807, Randolph 1569); handoff note at the top of STATUS.md; DECODE and IA logins still blocked pending the owner rotating passwords
+2026-09-21 03:01 | Solver/Transcription: erving-1807 (QUEUE rank 9) | note: starting rule-1 search-before-solving check before any transcription
+2026-09-21 03:04 | Solver/Transcription: erving-1807 | touching QUEUE.md and QUEUE-scores.json (rank 9 row -> Dropped, found-solved)
+2026-09-21 03:10 | Solver/Transcription: erving-1807 | done: found-solved, not transcribed (Founders Online prints the 10 Aug 1807 despatch in clear); QUEUE.md/QUEUE-scores.json updated, pushing now
