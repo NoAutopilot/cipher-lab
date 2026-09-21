@@ -1,0 +1,27 @@
+{
+  "source_manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100162985756.0x000001",
+  "label": "Cotton MS Caligula C II",
+  "rights": "https://www.bl.uk/help/how-to-reuse-images-of-unpublished-manuscripts",
+  "licence_note": "British Library IIIF manifest rights field points to https://www.bl.uk/help/how-to-reuse-images-of-unpublished-manuscripts (unpublished manuscript reuse terms; images are for research/private study, not further redistribution without BL permission). Fetched via IIIF Image API, tiled and stitched per cyphersolver/norfolk1570/fetch.py (full-res tiles capped near 1024px by the service).",
+  "fetched": "2026-09-21",
+  "canvases": {
+    "f. 277r": {
+      "canvas_id": "https://bl.digirati.io/images/ark:/81055/vdc_100163185275.0x00022f/canvas/c/563",
+      "width": 7343,
+      "height": 10055,
+      "image_service_id": "https://bl.digirati.io/images/ark:/81055/vdc_100163185275.0x00022f",
+      "image_body_id": "https://bl.digirati.io/images/ark:/81055/vdc_100163185275.0x00022f/full/748,1024/0/default.jpg"
+    },
+    "f. 277v": {
+      "canvas_id": "https://bl.digirati.io/images/ark:/81055/vdc_100163185275.0x000230/canvas/c/564",
+      "width": 7280,
+      "height": 10152,
+      "image_service_id": "https://bl.digirati.io/images/ark:/81055/vdc_100163185275.0x000230",
+      "image_body_id": "https://bl.digirati.io/images/ark:/81055/vdc_100163185275.0x000230/full/734,1024/0/default.jpg"
+    }
+  },
+  "files": {
+    "f. 277r": "img/f277r_s1.jpg",
+    "f. 277v": "img/f277v_s1.jpg"
+  }
+}

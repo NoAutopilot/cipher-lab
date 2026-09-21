@@ -1,0 +1,50 @@
+# Thomas Randolph (Edinburgh) to Thomas Radcliffe, 3rd Earl of Sussex, 9 July 1570.
+# BL Cotton MS Caligula C II, f. 277r-v (DECODE R4931). Transcribed 21 Sept 2026 from
+# images/img/f277r_s1.jpg and f277v_s1.jpg (IIIF, see images/manifest.json) in two independent
+# Sonnet subagent passes plus a third direct read by the orchestrator at tighter (near-native)
+# crop resolution for f.277r lines 2-3; reconciled against the image. See NOTES.md
+# "Transcription and reconciliation" for the full method and an explicit confidence rating
+# per line. SHORT VERSION: line/group boundaries and the plaintext-cipher interruption
+# pattern are medium-high confidence; individual glyph identities are LOW confidence at the
+# resolution available to this worker (images render to the model at ~1/3 native scale
+# except where separately cropped narrower) - this is a first-pass structural transcription,
+# not a glyph-exact one. "?" = symbol seen but shape not confidently resolved. Plaintext
+# stretches within a cipher line are given in [PLAIN: "..."] and are not part of the cipher
+# token stream. Groups (probable word breaks in the original) separated by " | "; distinct
+# non-alphanumeric symbols given short bracket codes local to this file (not yet collapsed
+# into a verified symbol inventory - a glyph given the same code twice is a guess that they
+# match, not a confirmed identity).
+
+## f.277r (2pp letter, this is the recto/opening page; dateline and signature are on f.277v)
+
+[PLAIN: "9 Julij 1570. I have receaved yor L[ordship]s l[ett]res of the second of this p[rese]nt and w[i]th many other. Some parte thereof yor L[ordship] gave truste [?] pleased [?] by myne owne wrytten from you the fame dayge w[i]th in effecte as this"]
+
+L1: ? | ? | ? | ? | [barred-o] | [theta] ? X P | N X [ring] [ring] [dash] [bar] | U N D | X E X E E X [dash][dash] | ? S X [ring][ring] 8
+L2: [ring][theta] N | m y L [triple-bar] | G N C r y p ? o | 5 8 | [double-bar] X X 3 [hash] 4 X | [flag/arrow] [pi-bar] T T | m y [Gamma/r] ? [ring] | H X | Q 3 [ring] 8 | O U Z E [pi-bar] X [omega] H | [double-bar] X E C D [backward-C] X
+L3: [backward-C] | E X [omega] X S N I V | [circle-bar] y 3 [ring] | X E 6 [ring] 8 3 N X | [ring] U X X X 8 [ring] | 4 [omega][omega] [ring][ring] g N [ring] [omega][omega] [flag/arrow] g [ring] [ring] | [circle-bar] X | r N C 8 ? I N X 3
+L4: D [beta/8?] T T E [eta] | 4 X [ring][ring] | L 1 [Xi/E] X | [hash] ? y | [PLAIN: "fntt fpare agaynfte hym willed"] G [alpha/a] X E E | u [omega] [omega] X | X 3 | m y g [omega] [ring] | ? D
+L5: [theta] [omega] 3 Q | [ring] N [omega] y | [macron]G [alpha] ? [beta] | Z E 4 | m u N X | Z X | 3 X D [dash][dash][ring][ring][ring] | [ring] Q X 8 5 4 | 8 E X X [ring] [omega] X X | Z E N | [double-bar] X X X [ring] [omega]
+L6 (partial, bottom edge of crop): W C H 4 8 D X D X ? | 1 E [ring][ring] | [ring] N 3 h N y X E [omega] q | N X X X y u X X | X [theta] | [double-x-bar] X X | ? Z E N | D 8 I I X E [omega] | ? X | ? E ? Z 4 ? ? | ? 8 N
+
+## f.277v (continuation; dateline "Edenboroughe the ixth of Julye 1570", signed "Tho. Randolphe")
+
+[PLAIN: "...I knowe ye beleve nott so"] O O ? X E ? | [double-bar] C [alpha] N D O E T I [PLAIN: "...the difference of..."]
+
+## Symbol legend (bracket codes, local to this file, NOT a confirmed inventory)
+# [ring]            small closed loop/circle, distinct from plain "o" by context
+# [theta]           circle with horizontal bar (theta-like)
+# [double-bar]      "=" or two stacked short horizontal strokes
+# [triple-bar]      three stacked short horizontal strokes (looks like "≡")
+# [hash]            cross-hatch mark, "#"-like
+# [flag/arrow]      short vertical stroke with an upward hook/flag at the top
+# [pi-bar]          flat-topped two-legged shape, "π"-like
+# [Gamma/r]         angular hook, could be cursive "r" or an invented Γ-like symbol
+# [backward-C]      open C-shape opening to the left
+# [circle-bar]      small circle/loop with a bar through or under it
+# [omega]           open horseshoe/Ω-like shape
+# [beta/8?]         ambiguous between a "beta"-like loop and numeral 8
+# [Xi/E]             squared-off E/Xi-like shape
+# [alpha]           small closed loop resembling cursive "a"
+# [eta]             looped ascender resembling cursive "h"/eta
+# [macron]          horizontal bar drawn over the following symbol
+# [double-x-bar]    "x" shape with an extra crossing stroke
