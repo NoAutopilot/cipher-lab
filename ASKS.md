@@ -8,7 +8,7 @@ Status: `open`, `done`, `dropped` (with a reason), `waiting` (with who and since
 
 | # | Raised | Project | What is needed | Exact action | Who can do it | Status |
 |---|---|---|---|---|---|---|
-| 1 | 20 Sept | cipher-lab | DECODE login rejected, password also leaked into a transcript | Rotate the de-crypt.org password, update `DECODE_USER` and `DECODE_PASS` in the environment | the owner | open |
+| 1 | 20 Sept | cipher-lab | DECODE login rejected, password also leaked into a transcript; rotated password (set ~21 Sept) tested once and also rejected ("Incorrect user name or password") — blocks record 8725 (intercepted-royalist-1646 f.104), R413 (boswell-1628), R4930 (randolph-sussex-1569 key fit) | Re-check the de-crypt.org account (username spelling, account lock, password entry) and update `DECODE_USER`/`DECODE_PASS` again if needed; do not have workers retry against the live account meanwhile (lockout risk) | the owner | open |
 | 2 | 20 Sept | cipher-lab | archive.org login rejected; `IA_USER` is not an email | Rotate the password, set `IA_USER` to the account email, update both variables | the owner | open |
 | 3 | 20 Sept | cipher-lab | Spink lot 1184: does it include a pocket dictionary? | One email before the 23 Sept sale, contact on the lot page | the owner, or a teammate if authorised | open |
 | 4 | 20 Sept | cipher-lab | Stair 1710 scans, about $20 | Order four TIFFs per `ciphers/stair-townshend-1710/REQUEST.md` | the owner (payment) | open |
