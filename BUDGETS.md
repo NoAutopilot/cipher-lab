@@ -6,8 +6,9 @@ limits any other way.
 
 Fill in from your own session: `get_session` reports `rate_limit_info` (window type, reset time, status:
 allowed / allowed_warning / rejected, and whether overage is on) and `usage.cost_usd` for the session.
-"Spend" below is dollars of plan usage, which on a subscription is counted against the window rather than
-billed.
+"Spend" below is the API-equivalent value of the tokens consumed, which is how a session record reports
+it. On a subscription **none of it is billed**. Treat it purely as a measure of how fast something eats
+the rate-limit window, which is the thing that actually stops work.
 
 | Person | Plan | Window | Resets | Status | Spend this window | Updated |
 |---|---|---|---|---|---|---|
