@@ -198,27 +198,6 @@
    "kind": "recovery"
   },
   {
-   "name": "George W. Erving to Madison, Madrid, 10 Aug 1807 (Pinckney legation code, no decode on the NARA copy)",
-   "language_fit": 3,
-   "material": 3,
-   "key_lead": 2,
-   "size": 3,
-   "competition": 0,
-   "weight": 2,
-   "next_step": "transcription",
-   "next_step_detail": "Transcribe the code groups from NARA M31 reel 12 frames 0362-0366 (naId 188605361 manifest) and apply the Pinckney pairs in cyphersolver/erving1807/pinckney_chain.tsv.",
-   "rationale": "NARA microfilm images are free online (Bourdeau's dl.py fetched reel 12 by IIIF manifest) but no transcription of the 10 Aug 1807 letter exists yet. The key lead is strong: the same Pinckney legation code was read on the 24 March 1807 letter from Madison's interlinear decode, and Pinckney's decoded despatches of 1802-04 on M31 reels 7-8 would add a few hundred pairs, so several pages of code would give a checkable reading. Bourdeau's erving1807/NOTES.md (18 Sept 2026) names it 'the next target', which is active work by a solver who moves at ten targets a day. Content is Spanish-American relations from Madrid in 1807, adding to a known episode. Re-scored 20 Sept 2026: the same Pinckney legation code was already read on the 24 March 1807 letter (a deciphered sibling); key survives, this letter unread. unread=2.",
-   "total": 35,
-   "year": "1807",
-   "language": "en",
-   "sources": [
-    "bourdeau"
-   ],
-   "folder": "",
-   "unread": 2,
-   "kind": "recovery"
-  },
-  {
    "name": "Thomas Randolph (Edinburgh) to the Earl of Sussex, 1569 (BL Cotton Caligula C II f.277, DECODE R4931)",
    "language_fit": 3,
    "material": 3,
@@ -4365,6 +4344,10 @@
   {
    "name": "Sir Ralph Sadler (Edinburgh) to Henry VIII, 22 April 1543 (BL Add MS 32650 ff.214-216, DECODE R4924)",
    "reason": "found-solved: search-print sweep 20 Sept 2026 \u2014 Clifford, Sadler State Papers I (1809) p.158 gives the 22 April 1543 letter in full continuous plain English (no cipher markup); L&P Henry VIII vol.18 pt.1 no.448 confirms the BL MS itself already holds a contemporary Tudor decipher ('A decipher of the preceding'), citing Sadler I.158. Not a key-recovery candidate."
+  },
+  {
+   "name": "George W. Erving to Madison, Madrid, 10 Aug 1807 (Pinckney legation code, no decode on the NARA copy)",
+   "reason": "found-solved: search-print check 21 Sept 2026 (ciphers/erving-1807/NOTES.md) -- Founders Online's Early Access text of The Papers of James Madison, Secretary of State Series (founders.archives.gov/documents/Madison/99-01-02-1993) prints the despatch, docketed 'In the Cypher of the Legation. No. 24 Duplicate', in full continuous plain English. QUEUE's 'no decode on the NARA copy' was true of the M31 reel 12 microfilm frames but not of the printed edition. Bourdeau's cyphersolver/erving1807/NOTES.md (18 Sept 2026) had flagged this exact check ('whether Founders prints a decode') as its own next step and had not yet run it."
   }
  ],
  "harvest": [
