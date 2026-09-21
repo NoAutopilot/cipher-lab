@@ -6,6 +6,7 @@ Then publish dashboard.html. The board and STATUS.md must say the same thing; st
 """
 import html
 import json
+import os
 
 d = json.load(open("status.json", encoding="utf-8"))
 E = html.escape
@@ -180,4 +181,6 @@ th, td {{ text-align:left; padding:7px 10px; border-bottom:1px solid var(--line)
 </div>
 '''
 open("dashboard.html", "w", encoding="utf-8").write(page)
-print(f"dashboard.html written: {len(page)} bytes, {len(d['targets'])} targets, {len(d['workers'])} workers")
+os.makedirs("docs", exist_ok=True)
+open("docs/index.html", "w", encoding="utf-8").write(page)  # served by GitHub Pages to the whole team
+print(f"dashboard.html and docs/index.html written: {len(page)} bytes, {len(d['targets'])} targets, {len(d['workers'])} workers")

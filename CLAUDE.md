@@ -74,6 +74,22 @@ session and every subagent, cloud or local.
    is recovery, a reading without the key is cryptanalysis, a correction or a dataset handed on is
    contribution) and writes the "Result so far" line. README "What counts as a result" is the reference.
 
+## Collaborators
+
+Several people work in this repository, each from their own account, with full access and no fixed lanes.
+Two things make that safe, and they are not optional.
+
+**Claim before you start.** Append a line to `ROOM.md` naming you, the role and the target before any work
+begins, and a `done` line when you stop. If a live claim already covers what you wanted, take the next
+thing. Nothing else stops two agents transcribing the same folio.
+
+**Rebase before you write to a shared file.** `QUEUE.md`, `QUEUE-scores.json`, `status.json`, `STATUS.md`
+and `ROOM.md` are written by everybody. Fetch and rebase immediately before editing, and when a row
+conflicts, keep both facts rather than overwriting someone else's finding.
+
+New people and their agents start at `ONBOARDING.md`. Everyone records their own plan limits in
+`BUDGETS.md`, because no account can see another account's rate limits.
+
 ## Workers
 
 A worker session does one job, pushes, reports in a short paragraph, and stops. It never starts a new target,

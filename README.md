@@ -38,7 +38,7 @@ Three kinds, all wanted, always labelled as which they are (CLAUDE.md rule 10):
 
 1. Read `LANDSCAPE.md`. Most of Cryptiana's list was swept by two AI-driven projects in the week
    before this snapshot, and the section "Where the open ground is" says what is left.
-2. Read `LESSONS.md`, `LEDGER.md` (one row per worker, outcome and cost), `ROOM.md` (the workers' shared channel: one-line signals and flags), `.claude/briefs/` (role templates, edited by the weekly retrospective) before writing any solver. The short version: search for a printed solution,
+2. Read `ONBOARDING.md` (start here if you are new), `BUDGETS.md` (per-person plan limits), `LESSONS.md`, `LEDGER.md` (one row per worker, outcome and cost), `ROOM.md` (the workers' shared channel: one-line signals and flags), `.claude/briefs/` (role templates, edited by the weekly retrospective) before writing any solver. The short version: search for a printed solution,
    get the page image, look for a sibling letter with a decipherment, find the structure by hand,
    and never report a negative without a matched control.
 3. `CATALOG.md` keeps every item from the index page with Tomokiyo's status and the corrections.
