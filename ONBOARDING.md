@@ -23,6 +23,8 @@ hold or study the material).
 | `LEDGER.md` | One row per worker: role, model, cost, outcome. How we learn what works. |
 | `.claude/briefs/` | Role templates. A worker brief is a copy of one of these with the target filled in. |
 | `BUDGETS.md` | Everyone's plan limits, so the team can see who has headroom. |
+| `ASKS.md` | Everything blocked on a human, from any project. Add a row when you are blocked. |
+| `HANDOFF-WEEK.md` | The current week's agenda, if one is running. |
 
 The board is published at https://noautopilot.github.io/cipher-lab/ and rebuilt by
 `python3 tools/build_dashboard.py` from `status.json`. `status.json` is the source; `STATUS.md` and the board
