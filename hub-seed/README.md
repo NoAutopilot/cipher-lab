@@ -18,6 +18,8 @@ worker combined. So state lives in git, sessions are disposable, and any agent t
 | `PROJECTS.md` | The registry. Every project, its repository, owner, status and where it is stuck. |
 | `CONVENTIONS.md` | What every project inherits. A project's own conventions file adds domain rules on top. |
 | `NEW-PROJECT.md` | The bootstrap brief. Turns "I have an idea" into a working project in one session. |
+| `ASSIGNMENTS.md` | The work queue between accounts. Written by one, pulled by another. Nothing dispatches. |
+| `BUDGETS.md` | One row per account. The only way limits are visible across accounts. |
 | `briefs/` | Role templates that are not domain-specific. |
 | `shell/` | `estate`, `asks`, `go`, `hubnew`. `projects.ps1` for Windows PowerShell, `projects.sh` for macOS and Linux. |
 
