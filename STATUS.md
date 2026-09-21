@@ -3,7 +3,10 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 21 September 2026, 03:45 UTC
+Last updated: 21 September 2026, 04:20 UTC
+
+> **the owner is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
+> leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
 
 ## Handoff to the next orchestrator (21 September 2026, 03:00 UTC)
 

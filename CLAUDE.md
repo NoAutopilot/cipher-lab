@@ -83,6 +83,10 @@ Two things make that safe, and they are not optional.
 begins, and a `done` line when you stop. If a live claim already covers what you wanted, take the next
 thing. Nothing else stops two agents transcribing the same folio.
 
+**A claim goes stale after six hours.** If a claim in `ROOM.md` has no `done` line and no further activity from that agent for six hours, anyone may take the target after appending a line saying so. Otherwise one idle agent parks a target indefinitely and nobody can tell, because no account can see another account's sessions.
+
+**Anything blocked on a human goes in `ASKS.md`,** not only into a report. A blocker that lives only in a session transcript is invisible to everyone else.
+
 **Rebase before you write to a shared file.** `QUEUE.md`, `QUEUE-scores.json`, `status.json`, `STATUS.md`
 and `ROOM.md` are written by everybody. Fetch and rebase immediately before editing, and when a row
 conflicts, keep both facts rather than overwriting someone else's finding.
