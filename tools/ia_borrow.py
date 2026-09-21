@@ -10,8 +10,17 @@ IMPORTANT, confirmed 20 Sept 2026: archive.org login requires an email address. 
 one ("user@example.com"), not a screen name. A screen-name-shaped IA_USER fails both routes tried this
 session: the login API (https://archive.org/services/xauthn/?op=login) returns
 {"success": false, "values": {"reason": "account_not_found"}}, and the current archive.org login page
-(https://archive.org/login, a JS app) renders only an "Email address" field, no username field. Do not
-substitute a guessed email for IA_USER -- get the correct value from the person.
+(https://archive.org/login, a JS app) renders only an "Email address" field, no username field.
+
+UPDATE, confirmed 21 Sept 2026: the person rotated IA_USER to an email-format value and the password.
+Login STILL fails with the same {"success": false, "values": {"reason": "account_not_found"}} from
+POST https://archive.org/services/xauthn/?op=login (HTTP 401) -- this is no longer the format problem
+above; archive.org reports no account under that email at all. Possible causes not distinguished this
+session: the email is mistyped, the intended archive.org account is registered under a different email,
+or the account only supports sign-in-with-Google (no password login via xauthn for such accounts). Do
+not retry this pair again without the person confirming which archive.org account IA_USER/IA_PASS should
+reach -- xauthn rate-limits/locks out repeated failed logins. One attempt was made this session, per the
+no-repeat-retry rule in the Access playbook; flagged in ROOM.md and ASKS.md.
 
 There is no official Python client for the lending/BookReader system (the `internetarchive` PyPI
 package covers uploads/downloads/search of open items only), so this script speaks the same raw HTTP
@@ -23,10 +32,10 @@ endpoints archive.org's own web reader uses:
   4. POST https://archive.org/services/loans/loan/  action=return_loan, identifier=IDENTIFIER (always,
      even on error)
 
-Steps 1-2 and 4 were exercised this session (20 Sept 2026) and their request shapes are as tested; step 2
-returned {"error": "Not logged in."} because step 1 could not complete without a valid email IA_USER, so
-step 3's exact response shape is NOT verified this session -- confirm it against a real loan before
-trusting the image URLs it returns.
+Steps 1-2 and 4 were exercised on 20 and 21 Sept 2026 and their request shapes are as tested; step 1 has
+now failed on two different accounts/credential shapes (bad format, then account_not_found), so step 2
+has still never received a successful login to run against, and step 3's exact response shape remains
+UNVERIFIED -- confirm it against a real loan before trusting the image URLs it returns.
 """
 import argparse
 import os

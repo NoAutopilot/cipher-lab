@@ -212,6 +212,12 @@ Getting the material is most of the work. Try routes in this order and record wh
    address" field, no username field). Borrowing could not be tested; `tools/ia_borrow.py` implements the
    flow (xauthn login, loan/browse_book, BookReaderJSIA.php for page images, loan/return_loan) but its image
    step is unverified pending a corrected IA_USER.
+   Retried 21 Sept 2026 after the person rotated IA_USER to an email-format value and the password: login
+   still fails, same `{"success": false, "values": {"reason": "account_not_found"}}` from the xauthn API
+   (HTTP 401), but now because archive.org has no account under that email at all, not a format problem.
+   Not retried further this session (lockout risk on repeated failed logins). Borrowing and the image step
+   remain untested; the person needs to confirm which archive.org account IA_USER/IA_PASS are meant to
+   reach before another attempt (flagged in ROOM.md/ASKS.md).
    Without login: `be-api.us.archive.org/fts/v1/search?q=<term>&identifier=<id>` full-text-searches even
    lending-only items and returns snippet highlights, but its `page_num` field is not a real page locator --
    it equals the item's total `imagecount` (confirmed on two different items) -- so this route can confirm a
