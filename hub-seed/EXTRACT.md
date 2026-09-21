@@ -14,6 +14,10 @@ rm ~/src/hub/EXTRACT.md
 cd ~/src/hub && git add -A && git commit -m "Hub: registry, conventions, bootstrap brief, estate CLI" && git push
 
 # 3. point the shell tools at your checkouts
+#    Windows PowerShell:
+#      Copy-Item shell\projects.conf.example shell\projects.conf ; notepad shell\projects.conf
+#      notepad $PROFILE     then add:  . "$HOME\src\hub\shell\projects.ps1"
+#    macOS or Linux:
 cp shell/projects.conf.example shell/projects.conf
 $EDITOR shell/projects.conf
 echo 'source ~/src/hub/shell/projects.sh' >> ~/.zshrc   # or ~/.bashrc

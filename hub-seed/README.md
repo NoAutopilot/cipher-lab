@@ -19,7 +19,7 @@ worker combined. So state lives in git, sessions are disposable, and any agent t
 | `CONVENTIONS.md` | What every project inherits. A project's own conventions file adds domain rules on top. |
 | `NEW-PROJECT.md` | The bootstrap brief. Turns "I have an idea" into a working project in one session. |
 | `briefs/` | Role templates that are not domain-specific. |
-| `shell/` | `estate`, and a wrapper per project. The command-line view of everything. |
+| `shell/` | `estate`, `asks`, `go`, `hubnew`. `projects.ps1` for Windows PowerShell, `projects.sh` for macOS and Linux. |
 
 ## Reaching across accounts
 
