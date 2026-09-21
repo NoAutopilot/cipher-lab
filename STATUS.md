@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 21 September 2026, 03:00 UTC
+Last updated: 21 September 2026, 03:45 UTC
 
 ## Handoff to the next orchestrator (21 September 2026, 03:00 UTC)
 
@@ -27,9 +27,7 @@ holds the role templates.
 unpublished; only a separate verifier, after a logged search, assigns an N-class. And no copy order, payment
 or quote request reaches the owner until a check-solved sweep has set that target to stage 2.
 
-**Running right now** (independent sessions; collect them with get_session, then fetch main and read what they
-pushed): Erving to Madison 1807, session_01823ERYCU9Fy2t858YsWL11. Randolph to Sussex 1569,
-session_01F6AEdCy2oGSwrJX2Pa4rPH. Both Sonnet, capped about $12, started 02:58 UTC.
+**Running right now:** nothing. Both recovery workers finished at 03:13 UTC. Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
 
 **Waiting on the owner:** rotate the DECODE and archive.org passwords (both were printed into worker
 transcripts on 20 Sept) and set IA_USER to the account email; email Spink before the 23 Sept sale; the Kansas
@@ -120,6 +118,7 @@ work in progress. Orchestrator session 2,042 since 17 Sept (corrected 20 Sept 18
 | Earl of Stair to Townshend, 1710 | ciphers/stair-townshend-1710 | Verified 20 Sept 2026 (KU catalogue, six-source sweep): open, English | Not in print (checked 20 Sept). You: order four scans from Kansas per REQUEST.md, about $20 | You |
 | Letter relating to Gen. Monck, 1659-60 | ciphers/monck-1660 | Verified 20 Sept 2026 (BL catalogue, sweep): open, English | You: ask BL Imaging Services for a quote for Add MS 32093 f.423 (REQUEST.md) | You |
 | NLS MS 20769, 18th-c. cipher manuscript | ciphers/nls-20769 | Record read 20 Sept 2026: 57 leaves, "written in cipher", genre Ciphers. Codes., language undetermined, deposited 1949 | You: ask NLS for a quote and a five-leaf sample (REQUEST.md) | You |
+| Thomas Randolph to Sussex, 1570 | ciphers/randolph-sussex-1569 | Images fetched 21 Sept; dated 1570 not 1569; first-pass transcription, glyphs low confidence; no key, nothing read | Queued: needs a DECODE login for key record R4930, or a native-resolution re-transcription | Nobody |
 | Everything else | QUEUE.md | First scout run done 19 Sept 2026: 40 scored, 163 kept unscored, 40 dropped | Work down the queue | Orchestrator |
 
 ## Results so far (labelled per README "What counts as a result")
