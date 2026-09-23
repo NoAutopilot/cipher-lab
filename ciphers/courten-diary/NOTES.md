@@ -155,3 +155,14 @@ REQUEST.md drafted this pass: BL Imaging Services quote for Add MS 4956 in full 
 key) plus Sloane MS 4019 f.79 (the second key). No email sent, no price guessed. A JSTOR pass on the four
 queries above, run by a session with credentials, should happen before the order is placed, per rule 10's
 scholarship-coverage requirement — it is cheap and could change the picture at zero further imaging cost.
+
+## JSTOR pass, 23 Sept 2026, 21:51 UTC (credential session, ytbiz account): not run, host blocked
+
+JSTOR_USER and JSTOR_PASS are set in this container (presence test only). The four queries above were not
+run: `www.jstor.org/action/showLogin` answers curl with a 3 KB "Client Challenge" page, and the same page
+(title "Client Challenge", "JavaScript is disabled ... A required part of this site couldn't load") is what
+the headless Chromium in `tools/browser_fetch.js` renders for both the login URL and a
+`doBasicSearch?Query=...` URL, after a 12-second wait and a 20-second pause between the two attempts. Per the
+good-citizen rule that was the one retry; the host was not hit again. No login was attempted, so the
+credentials themselves are untested. JSTOR stays unchecked for Courten; the stage-2 conditional is
+unchanged. Logged in ASKS.md (JSTOR row). Requests: www.jstor.org 2.

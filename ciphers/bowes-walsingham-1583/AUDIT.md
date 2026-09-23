@@ -253,3 +253,65 @@ reset was retried once); british-history.ac.uk 2 (200, direct, not paywalled for
 archive.british-history.ac.uk 2 (connection reset both times, not retried a third time); babel.hathitrust.org
 1 (403, stopped, one request as instructed); WebSearch 4 queries. All requests sequential, at least 1.5 s apart
 per host, descriptive User-Agent, no logins or keys used.
+
+## 10. Calendar running text reached through Google Books snippets (23 September 2026, 21:58 UTC)
+
+Credential session on the ytbiz account (not the verifier; this section is evidence for the verifier, and the
+class in section 1 is left as it stands). With `GOOGLE_BOOKS_KEY` the Books API lists six Google copies of
+CSP Scotland vi (Boyd 1910), all "NO_PAGES" (no preview): `a3ZZTPid3VQC` (887 pp., its front-matter snippet
+reads "BOYD, F.R. HIST. SOCIETY. VOL. VI. A.D. 1581-1583"), `414MAQAAIAAJ` (890 pp.), `lC_ljgEACAAJ`,
+`gSSEPwAACAAJ`, `cmJ5swEACAAJ`, `FlUwyQEACAAJ`. No full-view copy exists: the five full-view CSP Scotland
+volumes on Google Books (`SF4MAQAAIAAJ`, `20qDQJaze38C`, `vSd_wQczmCgC`, `eewrKaHskh4C`, `WQk5AQAAMAAJ`) and
+the 1913 vol. vii (`hHdKAAAAYAAJ`) have no "Smallet" at all. But the two 1910 copies are full-text indexed, and
+the search-within endpoint (`tools/gbooks_search_within.py`, at most three hits per query) returns running-text
+snippets of about 300 characters with the printed page number. Both copies give identical text. Snippets
+verbatim (OCR punctuation as returned):
+
+**No. 389, p.370:** `April 7. 389. ROBERT BOWES TO [WALSINGHAM]. Cott. Calig. C. VII., fol. 196. Received his
+letter of the 31st of March. By his letter of the 28th of March, etc., ... fol. 204. And if`
+
+**No. 389, p.371, three passages (queries "Cobham with", "commendations from", "870"/"Glencairn and"):**
+- `... Cobham with "870" and Smallet. Finds the Queen of England ["32"] as well resolved to entertain the matter,
+  not with opinion to receive sound dealings, but rather to play on the advantage offered- a matter which needs
+  to be warily guided as ...`
+- `... Glencairn, and Montrose, with especial commendations from "870." He may not forget to offer himself to
+  Mauvissière, and to bring his letters with him. It shall be good that he bring some credit from "870" and
+  others in "54." Whereas by his last letter he wished him ...`
+- `... Glencairn, who commended him to "870," and he shall have great credit with the French faction in case he
+  shall come with the commendations looked for. For the course fit to be holden with him he can better determine
+  than he [Bowes] can advise. Thinks it shall be convenient to entertain him with some favour ...`
+
+**No. 584, p.566 (query "fol. 299"):** `... King and sundry of the Council especially chosen, and without
+[running head: Elizabeth. 1583.] the privity of the rest. C. VII., fol. 299. * In cipher. * In cipher. etc. * The
+date is taken [running head: 566 CALENDAR OF SCOTTISH PAPERS.]` (page-foot footnotes and the marginal source
+note interleaved by the OCR). **p.567 (query "on his person"):** `... on his person was to be disproved.
+Wherein, nevertheless, he will receive to his mercy all such offenders therein as penitently shall ask his
+pardon. These two persons have travailed by all means in their power to stay the matter ...` **p.568 (query
+"223"):** `... 223" and himself could nothing prevail with the King to stay or alter the proclamation made for
+the approbation of the late act at St. Andrews, and for the condemnation of the act at Ruthven last year ...`
+
+**Boyd's own device for supplied cipher words, p.374 (end of no. 392, before "April 12. 393. ROBERT BOWES TO
+WALSINGHAM"):** `... in cipher. Addressed. Indorsed. The words in italics are supplied from the copy in the
+British Museum. Copy of the same with the words in cipher deciphered.` The query "italics are supplied" has
+exactly one hit in the volume, p.374; so no. 389 carries no such note.
+
+**What this settles, for the verifier.**
+1. No. 389 is fol.196, now read in the entry heading itself, not inferred from token counts.
+2. In no. 389 Boyd prints Cobham, Smallet, Glencairn, Montrose and Mauvissière **in clear in the running
+   abstract**, and prints the unresolved numeric codes as quoted numerals ("870", "32", "54"), the "32" inside
+   square brackets. None of the three name passages carries an "in cipher" flag, an asterisk or an italics
+   note; the volume's one "words in italics are supplied ... deciphered" note belongs to no. 392. The single
+   "cipher" on p.371 (section 9) could not be retrieved (the endpoint shows at most three hits per query and
+   "cipher" has more than three in the volume), so it stays inferred as the Cary sentence.
+3. No. 584's entry on p.566 cites **fol. 299** explicitly, so the elimination in section 4 is confirmed, and
+   that page carries at least two page-foot footnotes reading "* In cipher." Which words they mark cannot be
+   read from the snippet.
+
+Under section 1's own criterion ("N0 if the calendar page, once read, gives the names as the reading of the
+cipher"): the 1910 calendar of fol.196 gives the names in clear but does not present them as readings of cipher,
+and marks nothing in that entry as cipher; for fol.299 it does mark words as cipher. How Boyd got the clear
+names (the letter-book, a decipher on the manuscript, or his own work) is still not stated on the page. The
+class stays the verifier's call; nothing in this section is a decipherment or a novelty claim.
+
+Requests this session: www.googleapis.com/books 22, books.google.com 41 (1.5 s apart), one session, no login.
+HathiTrust `babel` and `catalog` both still 403 to curl from this container (checked once each, not retried).

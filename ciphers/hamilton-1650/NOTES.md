@@ -243,3 +243,20 @@ No new route located to read pp.70-74 (the 1648 cipher-passage lead) or the 1650
 unchanged: **offline-only**; the pp.70-74 lead is still open and unread. No key, deciphered passage, or
 description of the family cipher for the four target 1650 letters was found in any source reachable this
 session.
+
+## Print check follow-up, 23 Sept 2026, 21:51 UTC (credential session, ytbiz account)
+
+archive.org login now works (the person registered the account; `services/xauthn/?op=login` returned
+`{"success": true}` this session). `tools/ia_borrow.py` was run against `supplementaryrep0000grea` (HMC
+Supplementary Report, Hamilton, 1932) as the named page check for pp.70-74 and the 1650 section: the
+one-hour SESSION_LOAN opened (`browse_book` success, `lendingInfo.userHasBrowsed` true, 300 leaves in the
+BookReader manifest) and was returned at the end of each of four short sessions (`return_loan` true every
+time; nothing is held). The page-image step was debugged and now reaches the image server (details in the
+script's docstring), but this item is a controlled-digital-lending item (`shouldProtectImages` true) and the
+server hands the leaf to the web reader in an obfuscated form, not as a JPEG. Decoding that outside
+archive.org's reader would circumvent the lending protection, so it was not done and the script now stops
+on such a payload. **Result: pp.70-74 and the 1650 entries were not read this session.** They can be read
+by the person in the archive.org reader (borrow the item at archive.org/details/supplementaryrep0000grea,
+one hour at a time) or, for presence/absence only, through the `be-api` search-inside snippets already on
+record above. Status unchanged: **offline-only**. Requests this session: archive.org 4 logins and 4 loans
+(all returned), about 25 requests in all; ia800406/ia600406.us.archive.org 8.
