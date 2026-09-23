@@ -103,3 +103,8 @@ What we should adopt in cipher-lab now:
 2. A per-language period corpus before any solver run. Aymeloglu lists the exact Internet Archive and Gutenberg sources per language.
 3. A verify script per cipher folder once anything is claimed.
 4. The status vocabulary and absolute dates in every NOTES.md.
+
+## 23 September 2026: neighbouring records, and the pace of the competition
+
+- Randolph to Sussex, July 1570 (Caligula C II f.277) went on the board as a cryptanalysis candidate with a printed paraphrase as crib. The contemporary decipherment was on the next leaf, f.278, a separate DECODE record (R4932) with status Decrypted. DECODE's own "key record" pointer (R4930) was wrong, which is why two passes missed it. Before any campaign: open every DECODE record with the same shelfmark, and read the calendar entry's source note (Boyd wrote "partly in cipher, deciphered").
+- dbourdeau/cyphersolver read that item on 21 Sept, Charles I to Rupert 1645 on 21 Sept and most of Harley 287 on 21-22 Sept. A catalogue clone from 19 Sept was stale within two days. Re-clone both solver repositories immediately before promoting or solving anything, and again before a verifier writes an N-class.
