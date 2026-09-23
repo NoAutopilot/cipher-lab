@@ -1,0 +1,41 @@
+# Unified sign inventory under map A, 23 Sept 2026. Codes and descriptions are Bourdeau's (it1583/ headers).
+unified	description	f68_count	f68_pct	f70_count	f70_pct	status
+p	p as written	48	11.9	31	7.9	shared
+F	double-barred stroke	30	7.4	27	6.9	shared
+B	barred b	48	11.9	7	1.8	shared
++	cross/stroke	24	5.9	30	7.7	shared
+E70	f.70 E: b with double bar	0	0.0	46	11.8	f70 only
+8	8 as written	28	6.9	17	4.4	shared
+Q	phi	12	3.0	32	8.2	shared
+J	barred yogh	20	5.0	24	6.2	shared
+c	c as written (dotted c merged)	24	5.9	19	4.9	shared
+S	long s	17	4.2	23	5.9	shared
+H	looped h	14	3.5	21	5.4	shared
+d	d with apostrophe	23	5.7	10	2.6	shared
+z	z as written	8	2.0	20	5.1	shared
+E	f.68: barred epsilon	24	5.9	0	0.0	f68 only
+>	> as written	6	1.5	14	3.6	shared
+r	r as written	12	3.0	8	2.1	shared
+Y	slashed v	0	0.0	14	3.6	f70 only
+V	cross-circle (venus)	9	2.2	4	1.0	shared
+g	barred g	10	2.5	2	0.5	shared
+D	divide sign	10	2.5	1	0.3	shared
+n	n as written	5	1.2	4	1.0	shared
+-	dash-hook	9	2.2	0	0.0	f68 only
+X	X (undefined in f.70 header)	0	0.0	7	1.8	f70 only
+W	ab-ligature	0	0.0	6	1.5	f70 only
+x	x as written	6	1.5	0	0.0	f68 only
+7	hooked 7	5	1.2	0	0.0	f68 only
+k	k as written	5	1.2	0	0.0	f68 only
+4	4	0	0.0	4	1.0	f70 only
+M	m-like sign with bar	4	1.0	0	0.0	f68 only
+O	reversed c	0	0.0	4	1.0	f70 only
+6	6	0	0.0	3	0.8	f70 only
+e	plain epsilon	0	0.0	3	0.8	f70 only
+3	3	0	0.0	3	0.8	f70 only
+R	R (paragraph-initial; undefined in header)	2	0.5	0	0.0	f68 only
+b	plain b	0	0.0	2	0.5	f70 only
+K	hatched sign	0	0.0	2	0.5	f70 only
+P	barred p	0	0.0	1	0.3	f70 only
+f	f (undefined in header)	1	0.2	0	0.0	f68 only
+s	s	0	0.0	1	0.3	f70 only
