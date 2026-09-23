@@ -25,7 +25,7 @@ Pauli »), non 1515/16. La souscription « Ernestus dux ... Joachimus » et le t
 Joachimus ad dominum Cancellarium et dominum admiraldum scripsi ») l'indiquent aussi.
 
 Nous vous signalons ces éléments pour la notice. Notre transcription, la clé, la lecture et le journal de
-recherche sont joints (ciphertext.txt, key.tsv, reading.txt, AUDIT.md). [Si le dépôt est public au moment de l'envoi, remplacer par le lien https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy468-anhalt .] Nous ne revendiquons aucune priorité : la lettre est éditée depuis 1896 ; ce qui manquait est le lien
+recherche sont consultables ici : https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy468-anhalt (AUDIT.md). Nous ne revendiquons aucune priorité : la lettre est éditée depuis 1896 ; ce qui manquait est le lien
 entre les deux manuscrits.
 
 Avec nos remerciements pour la mise en ligne de ce fonds,
@@ -49,5 +49,5 @@ Joachim von Moltzan (Maltzan); its date is 24 January 1520, not 1515/16. The sub
 Joachimus" and the text itself ("ego filius ... Luneburg"; "ego Joachimus ad dominum Cancellarium et dominum
 admiraldum scripsi") say the same.
 
-We offer this for the record. Our transcription, key, reading and search log are attached (ciphertext.txt, key.tsv, reading.txt, AUDIT.md). [If the repository is public when this is sent, replace with the link https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy468-anhalt .] We claim no priority: the
+We offer this for the record. Our transcription, key, reading and search log are at https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy468-anhalt (AUDIT.md). We claim no priority: the
 letter has been in print since 1896; what was missing was the link between the two manuscripts.

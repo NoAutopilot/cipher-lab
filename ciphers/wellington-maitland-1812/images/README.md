@@ -43,3 +43,8 @@ from these two files and from 2x, 3x and 4x resamples of them; no better image e
 
 The auctionmobility catalogue API (`production4-server.auctionmobility.com/v1/auction-lot/4-ML16CI/`) needs a client
 token, so the lot record was taken from the JSON embedded in the lot page instead.
+
+
+## Images removed from the public repository (23 September 2026)
+
+The repository became public on 23 September 2026. Image files under terms that do not allow redistribution were removed from the tree and are re-fetchable from the URLs in manifest.json with the scripts beside it: Spink's catalogue photographs of lot 1184 (dealer's copyright). The manifests, crop boxes and transcriptions are unchanged. They remain in git history before this date.

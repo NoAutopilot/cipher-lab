@@ -1,6 +1,6 @@
 # Week handoff, 21 to 28 September 2026
 
-the owner is away this week. This file says what he must do before he goes, what a teammate can carry alone, and
+The owner is away this week. This file says what he must do before he goes, what a teammate can carry alone, and
 what simply waits. Read `ONBOARDING.md` first if you are new, then `CLAUDE.md`, then this.
 
 ## Ten minutes from the owner before he goes
