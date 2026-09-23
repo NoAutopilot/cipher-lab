@@ -1,5 +1,5 @@
 {
- "updated": "24 September 2026, 01:30 UTC",
+ "updated": "24 September 2026, 01:50 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -230,9 +230,60 @@
     "expected": "Minutes after the network setting changes",
     "unblock": "Re-transcribe sign-exact from the image, rerun run_target.sh"
    }
+  },
+  {
+   "name": "Mornington (Wellesley) despatches to Dundas, mostly in cipher, with the key in the same file",
+   "year": "1798-1800",
+   "ref": "BL Mss Eur D623 (items 4-36; key D623/41)",
+   "folder": "ciphers/mornington-1798",
+   "stage": 1,
+   "state": "active",
+   "holder": "Worker",
+   "next": "Finish the print check: Montgomery Martin vols 3-5 (1836-37) and the 1877 Selection, by date and phrase, for D623/22 and the six 1800 despatches; then check-solved verdict.",
+   "note": "24 Sept 2026: partial. D623/23 (16 May 1799) is printed in clear in Martin vol. 1; the others not found in vols 1-2.",
+   "kind": "recovery",
+   "wait": {
+    "on": "The print-check worker",
+    "since": "24 Sept 2026, 01:50 UTC",
+    "expected": "Same day",
+    "unblock": "If unprinted: BL Imaging Services quote for the seven despatches and D623/41 goes on the person's card"
+   }
+  },
+  {
+   "name": "William Courten's diary, partly in cipher, with Madden's key appended",
+   "year": "17th c.",
+   "ref": "BL Add MS 4956 (66 ff.); cross-ref Sloane MS 4019 f.79",
+   "folder": "ciphers/courten-diary",
+   "stage": 2,
+   "state": "active",
+   "holder": "Worker",
+   "next": "Two cheap checks before any order: the Sloane MS 4019 f.79 cross-reference in the BL catalogue, and a JSTOR/scholarship pass on Courten's diary (JSTOR needs the next session's credentials). Then a BL imaging quote.",
+   "note": "24 Sept 2026: open at stage 2, conditional. Courten's herbarium-label cipher is separately known and partly decoded; the diary is not.",
+   "kind": "recovery",
+   "wait": {
+    "on": "The cross-reference check, then a BL imaging quote",
+    "since": "24 Sept 2026, 01:50 UTC",
+    "expected": "Same day for the check",
+    "unblock": "Quote request drafted in REQUEST.md once the checks pass"
+   }
   }
  ],
  "workers": [
+  {
+   "title": "Check Solved: N1-N3",
+   "job": "N2 found-solved; N1 partial (one despatch printed); N3 open at stage 2. ~$2.5",
+   "state": "done, archived"
+  },
+  {
+   "title": "Print Check: Mornington vols 3-5 and Courten cross-ref",
+   "job": "Scripted search of the remaining editions; Sloane MS 4019 f.79",
+   "state": "running"
+  },
+  {
+   "title": "Check Solved: N4-N7",
+   "job": "d'Avaux 1633, Dupuy 63, SP 87 Seven Years War, Clinton PRO 30/55",
+   "state": "running"
+  },
   {
    "title": "Solver: Burgess 1912 acrostic families",
    "job": "Negative for 8 families with control; word families weak; untested list in NOTES. ~$15",
@@ -251,21 +302,6 @@
   {
    "title": "Print Check + Access: Bowes 1583",
    "job": "Open; volumes undigitised; fragments mirrored. ~$2",
-   "state": "done, archived"
-  },
-  {
-   "title": "Solver: Bowes 1583 fragments",
-   "job": "Simple substitution near unicity; control first",
-   "state": "running"
-  },
-  {
-   "title": "Check Solved: Pallotto cluster (D1)",
-   "job": "Found-solved: key broken 2018 (Biermann/Bosbach), applied by Bourdeau; Kiewning 1895 edition. ~$1.5",
-   "state": "done, archived"
-  },
-  {
-   "title": "Scout: DECODE neighbour-record sweep",
-   "job": "202 pairs, 27 survivors, 7 clusters (D1-D7). ~$2.5",
    "state": "done, archived"
   }
  ],
@@ -328,6 +364,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sept, 01:50",
+   "what": "N2 (1722 intercepts) found-solved and dropped; Mornington partial, one despatch already printed; Courten open at stage 2. Next batch: finish the Mornington print check, Courten cross-reference, check-solved N4-N7."
+  },
   {
    "when": "24 Sept, 01:30",
    "what": "Burgess 1912: no third message in eight families, with the two known messages as control. Remaining families need page images or a stronger word model. Check-solved N1-N3 and the Bowes solver still running."
