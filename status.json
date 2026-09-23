@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 20:34 UTC",
+ "updated": "23 September 2026, 21:16 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -322,33 +322,38 @@
    }
   },
   {
-   "name": "Alberto Pio da Carpi to Louise de Savoie, last third in numeral cipher",
-   "year": "1520s",
-   "ref": "BnF Dupuy 452 f.20 (Gallica ark:/12148/btv1b10036146c, canvas 23); f.28 (Raince) not yet located",
+   "name": "Rome embassy cipher of October 1525: Carpi to Louise de Savoie, Raince to Madame, Raince to Robertet",
+   "year": "1525",
+   "ref": "BnF Dupuy 452 ff.20-21, 24, 28 (Gallica ark:/12148/btv1b10036146c)",
    "folder": "ciphers/dupuy452-carpi-1520",
    "stage": 3,
    "state": "active",
    "holder": "Worker",
-   "next": "Transcribe the ciphered third; find f.28 and the volume's four 1535 'Déchiffrement' leaves; test the published 1520s key families.",
-   "note": "Check-solved 23 Sept 2026: open at stage 2, conditional. The catalogue's 'nine letters' is two. About 70-90 numeral-group tokens on f.20.",
-   "kind": "cryptanalysis",
+   "next": "Class gate: print check of Champollion-Figeac 1847 and Desenclos 2018 for these three letters; if unprinted, two independent transcription passes of f.28 and ff.20-21, then Raince's 1526 key tried first.",
+   "note": "Corrected 23 Sept 2026: invented-symbol alphabet, ~1,500 tokens across three letters in one cipher; f.20 recto tail transcribed once (86 tokens, grade M). Images free on Gallica.",
+   "kind": "recovery",
    "wait": {
-    "on": "The transcription worker",
-    "since": "23 Sept 2026, 20:34 UTC",
-    "expected": "Same day",
-    "unblock": "Ciphertext in hand and a key-family test"
+    "on": "The print check",
+    "since": "23 Sept 2026, 21:16 UTC",
+    "expected": "Within the hour",
+    "unblock": "Unprinted: transcription passes start; printed: found-solved"
    }
   }
  ],
  "workers": [
   {
-   "title": "Transcription + key extension: Dupuy 468 Anhalt",
-   "job": "Gloss as key material; Latin model; control",
+   "title": "Transcription: Dupuy 452 Carpi f.20",
+   "job": "Single pass, 86 tokens; extent corrected to ~1,500 tokens in one cipher across three letters. ~$4",
+   "state": "done, archived"
+  },
+  {
+   "title": "Print Check: Dupuy 452 letters of Oct 1525",
+   "job": "Champollion-Figeac 1847, Desenclos 2018, Tomokiyo fr. 2984 page",
    "state": "running"
   },
   {
-   "title": "Transcription: Dupuy 452 Carpi f.20",
-   "job": "Native crops, two passes, key-family test",
+   "title": "Transcription + key extension: Dupuy 468 Anhalt",
+   "job": "Gloss as key material; Latin model; control",
    "state": "running"
   },
   {
@@ -369,11 +374,6 @@
   {
    "title": "Scout: scoring pass N20-N40",
    "job": "335 examined, 21 scored, none digitised. ~$3",
-   "state": "done, archived"
-  },
-  {
-   "title": "Check Solved: N12-N15 + Thurloe",
-   "job": "N12 found-solved; N13-N15 open at stage 2; SP 78 unprinted, REQUEST.md drafted. ~$3",
    "state": "done, archived"
   }
  ],
@@ -436,6 +436,10 @@
   }
  ],
  "log": [
+  {
+   "when": "23 Sept, 21:16",
+   "what": "Dupuy 452 turns out to be one embassy cipher across three letters of Oct 1525, about 1,500 tokens, images free; Raince's 1526 key is the lead. Print check first (class gate), then transcription."
+  },
   {
    "when": "23 Sept, 20:34",
    "what": "Digitised lane: M1-M3 already solved or key-only; M6 (Carpi 1520s) open and M7 (Anhalt to François I) partial with a glossed key on the leaf. Both on the board; transcription from Gallica started for both, no copy needed."
