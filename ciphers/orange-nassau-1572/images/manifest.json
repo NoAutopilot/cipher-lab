@@ -1,0 +1,43 @@
+{
+  "identifier": "archivesoucorre04housgoog",
+  "ia_item_url": "https://archive.org/details/archivesoucorre04housgoog",
+  "access_restricted": false,
+  "fetched": "2026-09-23",
+  "fetch_method": "IIIF (iiif.archive.org/iiif/{identifier}${leaf}/full/pct:25/0/default.jpg), reduced to 25% scale",
+  "leaf_offset_note": "leaf = printed_page + 109, confirmed by fetching leaf 610 (-> printed p.501, matches) and leaf 615 (-> printed p.506, matches); leaf numbers found via the IA fulltext search-inside endpoint (fulltext/inside.php) on distinctive phrases from each page, not from archivesoucorre04housgoog_page_numbers.json (all pageNumber fields empty for this item -- OCR page-number detection failed across the whole volume)",
+  "pages": [
+    {
+      "printed_page": 501,
+      "leaf": 610,
+      "file": "p501.jpg",
+      "url": "https://iiif.archive.org/iiif/archivesoucorre04housgoog%24610/full/pct:25/0/default.jpg",
+      "confirms": "Lettre CCCLXXXV opening ('LETTRE CCCLXXXV. Le Prince d'Orange au Comte Jean de Nassau. Details de son expedition'), matches ciphertext.txt lines 1-40; no cipher numerals on this page"
+    },
+    {
+      "printed_page": 503,
+      "leaf": 612,
+      "file": "p503.jpg",
+      "url": "https://iiif.archive.org/iiif/archivesoucorre04housgoog%24612/full/pct:25/0/default.jpg",
+      "confirms": "the cipher-numeral runs and the editor's footnote (1), printed clearly and legibly as groups of 1-2 digit Arabic numerals separated by periods, e.g. '24. 31. 48. 60. 15. 33. 54. 9. 42. 60. 45. 25. d. e. 35. 36. 3. 54. s. 61. 60. 15. 13.'; the cached OCR's 'i5'/'6o'/'3i' etc. are OCR misreadings of clearly-printed '15'/'60'/'31' -- not print artefacts. Footnote reads (transcribed from the image): 'Il est a regretter qu'une comparaison attentive des passages suivants avec d'autres pieces dont nous possedons le dechiffrement, n'ait conduit a aucun resultat. On s'est convaincu que les chiffres y etant infiniment plus nombreux que les lettres, il sera tres difficile, si non decidement impossible, de retrouver le sens.' -- the OCR's version of this footnote (ciphertext.txt) has several word-level garbles ('raimnts' for 'suivants', 'decbiiTremeQt' for 'dechiffrement') but is otherwise faithful"
+    },
+    {
+      "printed_page": 506,
+      "leaf": 615,
+      "file": "p506.jpg",
+      "url": "https://iiif.archive.org/iiif/archivesoucorre04housgoog%24615/full/pct:25/0/default.jpg",
+      "confirms": "further cipher-numeral runs continue on this page (confirms the letter's ciphertext is not confined to p.502-503; it recurs through at least p.509 per the OCR text), matches ciphertext.txt; also confirms the massacre/campaign narrative (Coligny/Rochefoucault/Teligny, Dendremonde) reads in clear prose around the cipher runs, as in the OCR"
+    }
+  ],
+  "note_tome": "Printed pages confirm this is Groen van Prinsterer tome III (1567-1572), not tome IV as QUEUE.md abbreviated it -- see ciphertext.txt header and NOTES.md.",
+  "kha_original_manuscript": {
+    "source": "Koninklijk Huisarchief Den Haag, A 3, 895/I (the autograph original, via the Huygens Institute 'Correspondentie van Willem van Oranje' database, brief nr. 5198)",
+    "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05198.pdf",
+    "record_url": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5198",
+    "pages_saved": [
+      {"file": "kha_original_leaf1.png", "pdf_page": 1, "shows": "opening of the letter in the secretary's hand"},
+      {"file": "kha_original_leaf3.png", "pdf_page": 3, "shows": "a leaf with heavy cipher-numeral use, in the original hand -- numeral groups match the printed/OCR text exactly, confirming the ciphertext is faithful to the manuscript, not a printer's or OCR artefact"}
+    ],
+    "full_pdf_not_committed": "9 pages, 7.27 MB total; only 2 representative leaves are committed as PNG here to keep the folder small; the full PDF can be re-fetched from pdf_url on demand"
+  },
+  "requests": "3 iiif.archive.org page-image fetches + 1 archive.org/metadata + 1 archive.org/download (_page_numbers.json, _files.xml) + 4 fulltext/inside.php search-inside queries (leaf-location lookups) + 1 resources.huygens.knaw.nl/media PDF fetch (7.27 MB, the KHA original), all 1.5s apart, browser User-Agent, no 429/403 encountered on either host"
+}

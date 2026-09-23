@@ -56,6 +56,18 @@ session and every subagent, cloud or local.
    Precedent and worked example: ciphers/eckert-1864/AUDIT.md.
 
 
+## Outreach (owner's directive, 23 September 2026)
+
+The orchestrator may post contributions to the solver repositories on GitHub (an issue, never a pull request, on
+dbourdeau/cyphersolver or aaymeloglu/unsolved-ciphers) and to DECODE once its login works, without asking, when
+every gate below is met. Emails to researchers, archives and dealers stay the person's: the orchestrator drafts
+them in `outreach/` and the person sends them and records the date. Gates for any post: (1) the target's
+AUDIT.md carries a verifier's class; (2) for anything above N1, a second adversarial audit by a separate session
+has tried to find it in print and failed, and the credential session's JSTOR and Google Books queries are done;
+(3) the message is the audit's safe sentence, states any prior print it rests on, and links AUDIT.md so the
+recipient can check the search log; (4) rule 10 wording only; (5) the post is logged in `CONTRIBUTIONS.md` with
+date, recipient, class and link, before it is sent. A negative with a matched control is a contribution too.
+
 ## Pipeline (who hands what to whom)
 
 1. **Scout** (`.claude/workflows/scout.js`, or a worker with the same brief) finds candidates, checks status at
