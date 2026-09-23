@@ -250,3 +250,130 @@ reconciliation.md).
    via the "look for the sibling" method (LESSONS.md), independent of the 1525 Carpi/Raince letters.
 4. Reach Champollion-Figeac by page (not just full-text search), and Guasti/Negociations
    diplomatiques/Brewer's Letters and Papers Henry VIII, before treating this as cleanly open.
+
+## Print check, class gate (23 September 2026)
+
+Worker: print-check (Sonnet, cap ~$6, no subagents). Read `date -u` first (21:16 UTC). Question:
+are the three Oct 1525 letters (f.20/21 Carpi to Louise de Savoie, f.28 Raince to Madame, f.24
+Raince to Robertet) already in print, and has this cipher already been read anywhere, before any
+transcription spend proceeds. This gates on top of, and does not repeat, the 23 Sept check-solved
+sweep already in this file.
+
+**Per letter:**
+- **f.20/21, Carpi to Louise de Savoie, Rome, 22 or 27 Oct 1525** -- not found printed in clear,
+  not found printed as cipher, in any edition or scholarship reached this sweep.
+- **f.28, Raince to "Madame" [Louise de Savoie], 25 Oct 1525** -- same, not found anywhere.
+- **f.24, Raince to Robertet, [24] Oct 1525** -- same, not found anywhere.
+
+**Has the cipher itself (the embassy's Oct 1525 symbol alphabet) been read anywhere?** Not found.
+The one cipher-reading project that touches this same secretary, Nicolas Raince, is Bourdeau's
+`cyphersolver/raince/` (checked below) -- but it is built entirely on **fr. 2984, fr. 3040 and
+fr. 3091 (1526 and 1529)**, a full year or more later and a different volume, using Tomokiyo's
+published key reconstructed from Desenclos (2018). Neither that folder, nor any file this sweep
+reached, ever names Dupuy 452, folio 20/21/24/28, or any 1525 date for Raince's or Carpi's cipher.
+It is a real, named lead for a solver (Raince's own hand, one year on) but is not itself a prior
+reading of these three letters.
+
+### 1. Champollion-Figeac, *Captivité du roi François Ier* (1847), archive.org identifier
+`bub_gb_DdUWAAAAQAAJ` (already identified by the 23 Sept check-solved sweep; not re-identified
+here). Full text downloaded once (`archive.org/download/bub_gb_DdUWAAAAQAAJ/bub_gb_DdUWAAAAQAAJ_djvu.txt`,
+1 fetch, reused for all queries below rather than re-querying be-api per term where a local grep
+sufficed) and be-api full-text-search queried per term (5 queries, all against this one identifier):
+
+| query | be-api hits | what it is |
+|---|---|---|
+| "Raince" | 0 | -- |
+| "Carpi" | 0 (checked by the 20/23 Sept sweep already; not re-run) | -- |
+| "chiffres"/"chiffre" | 1 (page 762) | Louise de Savoie ("LOYSE") to the King, undated, "Section IV -- Délivrance du roi" (1526, after the king's release terms): "Monseigneur, pour ce que par le chiffre vous serez entièrement satisfait de ce que vous a pieu mander par Babou..." -- names a cipher passage carried by the messenger Babou but does not quote or discuss it, and is not about Rome, Carpi or Raince. Not our letters. |
+| "Robertet" | 1 (page 762, same neighbourhood) | No. CLXXIX, "Lettre du secrétaire Robertet à Madame la duchesse d'Alençon", dated "ce vij d'octobre" [no year given in the OCR'd heading; context is Section III "Captivité en Espagne", i.e. late 1525/early 1526, Madrid] -- Robertet writing *to* Marguerite d'Alençon about the king's Spanish captivity, not Raince or Carpi writing *to* Louise de Savoie from Rome. A different letter, different sender, different recipient, different place. Not our letters. |
+| "dechiffr" | 0 | -- |
+| "Carpy" (spelling variant) | 0 | -- |
+
+Every hit read in full context (lines around each match in the downloaded djvu text). **Negative,
+and now checked under more spelling/term variants than the 23 Sept sweep's two** ("Carpi",
+"chiffres" only): this edition does not print or discuss the three Oct 1525 Rome letters or their
+cipher, under any of Raince, Robertet, chiffre(s), déchiffr*, or Carpy. Still not exhaustive for
+OCR error on an 1847 print (e.g. a mis-OCR'd "Carpi" is possible but the surrounding terms --
+Robertet, Raince, Madame -- give six independent ways in and none hit the right passage).
+
+### 2. Desenclos (2018) and Tomokiyo's `francis.htm`
+WebSearch confirmed the paper's full title and venue: Camille Desenclos, "Unsealing the Secret:
+Rebuilding the Renaissance French Cryptographic Sources (1530-1630)", *Proceedings of the 1st
+International Conference on Historical Cryptology* (HistoCrypt 2018). Its own title's date range
+(1530-1630) already excludes 1525-26 material by a few years, though Tomokiyo credits it with
+locating the 1526 Raince letters in fr.2984, so the range is evidently not exact. `francis.htm`
+(grepped again this sweep for "Raince", "2984", "Carpi", "Dupuy 452", "Dupuy452" -- same negative
+the 23 Sept sweep found, re-confirmed): the page's "BnF fr.2984 (1526)" section names only 1526
+Raince letters (ff.21/25/29/33/41/47/99/105/117/123, May-Dec 1526) and a 1529 set (fr.3091 f.19);
+**no mention of Dupuy 452, no mention of 1525, no mention of Carpi anywhere on the page.** The
+"BnF fr. 2984 (1526)" section explicitly gives dates from 1 May to 7 Dec 1526 -- a full year after
+the Oct 1525 letters in Dupuy 452.
+
+`cyphersolver/raince/NOTES.md` (Bourdeau's repo, fresh local clone from 23 Sept 2026, git HEAD
+`2e9ec01`, reused rather than re-cloned -- see item 4) gives the fullest published account of what
+has and has not been read in the Raince corpus Tomokiyo/Desenclos cover: the 1526 fr.2984 letters
+have a mix of prior decipherment (Mignet 1886's clear duplicate for the 9 June letter, Bourrilly
+1901's printed cipher passages for 17 June/20 Aug, contemporary interlinear glosses for several),
+Bourdeau's own 2026 reconstruction work on the unread residue (13 May and 20 Nov letters), and
+DECODE holds two of the set (fr.3040, fr.3091) as already decrypted. **None of this is Dupuy 452**:
+different shelfmark, different year (1526/1529 vs 1525), and the folder never names Dupuy 452,
+Carpi, or any Oct 1525 date (grepped `NOTES.md` and every `.json`/`.txt` file in the folder for
+"dupuy 452", "dupuy452", "1525"; only unrelated hit was Bourrilly's aside "the Carpi letters of
+the volume" -- referring to *fr.2984's own* Carpi correspondence, a different, uncounted item in
+that other manuscript, not Dupuy 452).
+
+### 3. Other editions (WebSearch)
+- `Guiffrey "Lettres de Louise de Savoie" OR "Négociations diplomatiques" Alberto Pio Carpi Rome
+  1525 chiffre` -- no edition surfaced beyond the BnF finding aid notice itself (which the search
+  engine echoes back, circular, as in the 23 Sept sweep).
+- `Guasti "Alberto Pio da Carpi" corrispondenza lettere edizione` -- confirms the only modern
+  Alberto Pio letter edition is Ori/Saetti, *Alberto Pio da Carpi e l'arte della diplomazia. Le
+  "lettere americane" e altri inediti* (Carpi, 2015) -- the UPenn corpus already ruled out by the
+  23 Sept sweep as a *different* set of letters (1512-23, to Maximilian I/Lang). No Guasti edition
+  of Carpi's letters was found to exist as a distinct, separate work; may be a misremembered
+  citation, not chased further (out of scope for a $6 cap).
+- `"Revue d'histoire diplomatique" Carpi ambassadeur Rome 1525 François Ier captivité` -- surfaced
+  general scholarship on the 1525-26 captivity and on Rodolfo Pio da Carpi (Alberto's nephew, a
+  different, later Carpi, Bishop of Faenza) and Acta Nuntiaturae Gallicae volumes for 1535-1540
+  papal nuncios Carpi/Ferrerio -- again a different, later Carpi. Nothing naming our three letters
+  or an edition of them.
+- `Bourrilly OR Desenclos Nicolas Raince ambassade Rome 1525 Carpi lettres chiffre Dupuy` -- every
+  result traces back to the same BnF finding-aid notice (`archivesetmanuscrits.bnf.fr/ark:/12148/cc885911`)
+  already known from this project's own prior sweeps; no independent edition or scholarly citation
+  of these three letters found.
+- Guasti's *Négociations diplomatiques entre la France et la Toscane* and Brewer's *Letters and
+  Papers, Foreign and Domestic, Henry VIII* were named in the brief as candidates but not reached
+  by page (as the 23 Sept check-solved sweep also flagged) -- WebSearch surfaced no evidence either
+  prints this correspondence, but this remains an unchecked gap, not a negative, per the earlier
+  sweep's own caveat.
+
+### 4. Solver repositories
+Reused the fresh shallow clones already present in this session's shared scratchpad rather than
+re-cloning (no new network requests): `cyphersolver` (dbourdeau, git HEAD `2e9ec01`, committed
+2026-09-23 08:37 local) and `unsolved-ciphers` (aaymeloglu, git HEAD `6f9c462`, committed
+2026-09-21 17:08). Grepped both, case-insensitive, for "dupuy 452", "dupuy452", "carpi", "raince":
+- `cyphersolver`: no file anywhere in the repo names "Dupuy 452"/"Dupuy452". "carpi"/"raince" hits
+  are confined to `cyphersolver/raince/` (fr.2984/3040/3091, see item 2 above) and one Bourrilly
+  citation aside; `CATALOGUE.md`, `SOLVED_CATALOGUE.md`, `SOLVED_RANKING.md` have no Dupuy-452 or
+  Carpi row (consistent with the 23 Sept check-solved sweep's own grep of these same files).
+- `unsolved-ciphers`: `CATALOGUE.md` and `catalogue/bne-ranked.md` matched only on unrelated
+  substrings (checked, no Dupuy 452/Carpi/Raince row).
+
+### Requests this section
+be-api.us.archive.org (fts): 5 queries. archive.org: 2 (1 `metadata`, 1 djvu.txt download, both
+against the identifier already known from the 23 Sept sweep). WebSearch: 7 queries. No new git
+clone (reused existing checkouts, 0 network requests for the repo grep). No HathiTrust API call
+needed (archive.org full text was usable, per the brief's fallback condition). No logins used.
+
+### Gate verdict
+
+All three letters unprinted in clear and unprinted as cipher, under every source and spelling
+variant reached (Champollion-Figeac full text, Desenclos's own paper title/venue and Tomokiyo's
+page built from it, WebSearch across Guiffrey/Négociations/Guasti/RHD, and both solver
+repositories' full text). The embassy's Oct 1525 cipher itself has not been read anywhere found;
+the nearest thing to a lead is Raince's own, later (1526/1529) reconstructed key for a different
+manuscript (fr.2984/3040/3091), not a reading of Dupuy 452. Per rule 10, this is a search result,
+not a novelty verdict, and none of the words "new", "unpublished", "first" or "never printed" is
+used above or should be used elsewhere in this file until a verifier session runs.
+
+**Gate: best case N3; transcription may proceed.**
