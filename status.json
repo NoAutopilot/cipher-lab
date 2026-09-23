@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 18:10 UTC",
+ "updated": "23 September 2026, 19:20 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -212,9 +212,37 @@
     "expected": "Minutes once the environment setting is changed",
     "unblock": "Search-print first (Boyd 1910); only then decide whether images are worth fetching"
    }
+  },
+  {
+   "name": "Sforza reply to Zorzo del Maino, and Amidani to Sforza, 4 May 1446",
+   "year": "1446",
+   "ref": "BnF italien 1583 ff.68, 70; DECODE R7898, R7899",
+   "folder": "ciphers/sforza-maino-1446",
+   "stage": 3,
+   "state": "active",
+   "holder": "Worker",
+   "next": "Solver session: joint anneal of both letters as one shared key, matched synthetic control first (rule 3). Transcriptions are Bourdeau's drafts (CC BY 4.0), not checked against the image from this account.",
+   "note": "Check-solved 23 Sept 2026: open, conditional on blocked sources. Bourdeau closed it unread after annealing each letter alone; the joint anneal was never tried.",
+   "kind": "cryptanalysis",
+   "wait": {
+    "on": "The solver session",
+    "since": "23 Sept 2026, 18:40 UTC",
+    "expected": "Same day",
+    "unblock": "A reading that beats the scrambled-key baseline by the margin measured on the control, or a closed-negative with both numbers"
+   }
   }
  ],
  "workers": [
+  {
+   "title": "Solver: Sforza-Maino 1446 joint key",
+   "job": "Building the nomenclator annealer and the matched control, then the joint attack",
+   "state": "running"
+  },
+  {
+   "title": "Check Solved: Sforza-Maino 1446 pair",
+   "job": "Open at stage 2, conditional on blocked sources. ~$1.5",
+   "state": "done, archived"
+  },
   {
    "title": "Check Solved: queue hygiene vs solver repositories",
    "job": "Four rows dropped as found-solved, five annotated as partly read by Bourdeau. ~$2",
@@ -238,16 +266,6 @@
   {
    "title": "Recovery: Erving to Madison 1807",
    "job": "Rule 1 caught it: the despatch is printed in Founders Online (Madison Papers, Secretary of State series). Dropped as found-solved before any transcription. $2",
-   "state": "done, archived"
-  },
-  {
-   "title": "DECODE Access: first login; record 8725 and Boswell R413",
-   "job": "Login flow worked out and scripted (tools/decode_fetch.sh); the credentials as set were rejected by the server, so records 8725 and R413 unread. $3",
-   "state": "done, archived"
-  },
-  {
-   "title": "Print Check: Burnet 1677 and CSP Foreign 22 with the Google Books key",
-   "job": "Google Books key works (needs &country=US). Burnet 1677 not digitised anywhere found; 1852 reprint and HMC 11 add nothing; Cobham vol. 22 not on Google Books. $3",
    "state": "done, archived"
   }
  ],
@@ -310,6 +328,10 @@
   }
  ],
  "log": [
+  {
+   "when": "23 Sept, 19:20",
+   "what": "Sforza-Maino 1446 pair (from the GitHub harvest, QUEUE row G7) verified unsolved at stage 2 and put on the board as the cryptanalysis candidate; solver session running with a matched control."
+  },
   {
    "when": "23 Sept, 18:10",
    "what": "Queue diffed against fresh clones of both solver repositories (tools/solver_repo_diff.py). Four more rows found-solved years ago and dropped: Boswell 1628 (rank 5, solved 2021), Goring 1645 (rank 22, solved 2020), Sadler 1559 (rank 23, printed 1809), Anne 1711 (rank 24, printed). Five rows partly read by Bourdeau (7, 8, 19, 20, 35). DECODE record R413 no longer needed."

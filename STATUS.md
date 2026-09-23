@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 23 September 2026, 18:10 UTC
+Last updated: 23 September 2026, 19:20 UTC
 
 > **the owner is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -38,7 +38,9 @@ or quote request reaches the owner until a check-solved sweep has set that targe
 
 **18:10 UTC.** The queue was diffed against fresh clones of both solver repositories with the new `tools/solver_repo_diff.py`: four more rows had been solved years ago and are dropped (Boswell 1628 solved 2021, Goring 1645 solved 2020, Sadler 1559 printed 1809, Anne 1711 printed), five are partly read by Bourdeau (ranks 7, 8, 19, 20, 35). The Randolph worker stopped and committed 49 native crops. DECODE record R413 is no longer needed (ASKS row 1 updated).
 
-**Running right now (18:10 UTC):** a harvest of ciphertexts already transcribed in Bourdeau's repository that he has not read, the only solving material reachable from this account while the network policy stands. Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
+**19:20 UTC.** The harvest (QUEUE.md "Candidates held on GitHub", 12 rows) gave one genuine cryptanalysis candidate reachable from here: the Sforza-Maino 1446 pair, BnF italien 1583 ff.68 and 70, which Bourdeau closed unread after annealing each letter alone; the joint anneal as one shared key was never tried. Check-solved: open at stage 2, conditional on DECODE, Gallica and Cerioni being unreachable from this account. Lope Hurtado 1522 was left alone as Bourdeau's live target.
+
+**Running right now (19:20 UTC):** the solver session on the Sforza-Maino pair (tooling and matched control first, then the joint attack; cap $45). Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
 
 **Waiting on the owner:** rotate the DECODE and archive.org passwords (both were printed into worker
 transcripts on 20 Sept) and set IA_USER to the account email; email Spink before the 23 Sept sale; the Kansas
