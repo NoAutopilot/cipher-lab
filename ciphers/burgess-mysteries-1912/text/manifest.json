@@ -52,7 +52,7 @@
  "requests": {
   "archive.org": "13 in all: 1 advancedsearch, 3 metadata (cu31924022342871 twice, masterofmysterie00burgrich once), 4 Cornell downloads first sent without -L (302 redirects, nothing saved) then 4 repeated with -L, 2 UC downloads through archive.org/download that returned HTTP 500 from the storage node (stopped), 1 direct to the item's d2 server ia801602 which was cut off by a connection reset at 9,961,472 bytes, 1 range request (-C -) that completed it; the size matches the metadata (10,559,299 bytes)",
   "en.wikisource.org": "3: 1 api.php with a generic User-Agent -> HTTP 429; 1 prefixsearch with a descriptive UA -> 200 (page list sample only); 1 batched revisions query (50 titles, project UA, maxlag=5) -> HTTP 429. Stopped; no Wikisource page text was saved. fetch_wikisource.py is the polite batched fetcher for a later session.",
-  "gutenberg.org": "1 search: the book is not on Project Gutenberg"
+  "gutenberg.org": "3: 1 search (the book is not on Project Gutenberg); 2 texts for the English model, tools/data/pg1661_holmes.txt and pg2701_mobydick.txt"
  },
  "notes": "Nothing in this folder is edited. Page images were not fetched (drop capitals are therefore restored from surviving letters, see units.DROPCAP)."
 }
