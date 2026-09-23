@@ -1,0 +1,853 @@
+{
+ "written_by": "images/crop.py",
+ "date": "23 September 2026",
+ "tone": {
+  "levels": [
+   90,
+   240
+  ],
+  "gamma": 1.4
+ },
+ "crops": [
+  {
+   "crop": "r00_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    665,
+    2250,
+    925
+   ]
+  },
+  {
+   "crop": "r00_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    665,
+    3850,
+    925
+   ]
+  },
+  {
+   "crop": "r01_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    930,
+    2250,
+    1190
+   ]
+  },
+  {
+   "crop": "r01_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    930,
+    3850,
+    1190
+   ]
+  },
+  {
+   "crop": "r02_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    1077,
+    2250,
+    1337
+   ]
+  },
+  {
+   "crop": "r02_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    1077,
+    3850,
+    1337
+   ]
+  },
+  {
+   "crop": "r03_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    1250,
+    2250,
+    1510
+   ]
+  },
+  {
+   "crop": "r03_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    1250,
+    3850,
+    1510
+   ]
+  },
+  {
+   "crop": "r04_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    1385,
+    2250,
+    1645
+   ]
+  },
+  {
+   "crop": "r04_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    1385,
+    3850,
+    1645
+   ]
+  },
+  {
+   "crop": "r05_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    1525,
+    2250,
+    1785
+   ]
+  },
+  {
+   "crop": "r05_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    1525,
+    3850,
+    1785
+   ]
+  },
+  {
+   "crop": "r06_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    1655,
+    2250,
+    1915
+   ]
+  },
+  {
+   "crop": "r06_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    1655,
+    3850,
+    1915
+   ]
+  },
+  {
+   "crop": "r07_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    1821,
+    2250,
+    2081
+   ]
+  },
+  {
+   "crop": "r07_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    1821,
+    3850,
+    2081
+   ]
+  },
+  {
+   "crop": "r08_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    1945,
+    2250,
+    2205
+   ]
+  },
+  {
+   "crop": "r08_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    1945,
+    3850,
+    2205
+   ]
+  },
+  {
+   "crop": "r09_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    2075,
+    2250,
+    2335
+   ]
+  },
+  {
+   "crop": "r09_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    2075,
+    3850,
+    2335
+   ]
+  },
+  {
+   "crop": "r10_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    2203,
+    2250,
+    2463
+   ]
+  },
+  {
+   "crop": "r10_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    2203,
+    3850,
+    2463
+   ]
+  },
+  {
+   "crop": "r11_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    2340,
+    2250,
+    2600
+   ]
+  },
+  {
+   "crop": "r11_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    2340,
+    3850,
+    2600
+   ]
+  },
+  {
+   "crop": "r12_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    2475,
+    2250,
+    2735
+   ]
+  },
+  {
+   "crop": "r12_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    2475,
+    3850,
+    2735
+   ]
+  },
+  {
+   "crop": "r13_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    2592,
+    2250,
+    2852
+   ]
+  },
+  {
+   "crop": "r13_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    2592,
+    3850,
+    2852
+   ]
+  },
+  {
+   "crop": "r14_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    2743,
+    2250,
+    3003
+   ]
+  },
+  {
+   "crop": "r14_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    2743,
+    3850,
+    3003
+   ]
+  },
+  {
+   "crop": "r15_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    2875,
+    2250,
+    3135
+   ]
+  },
+  {
+   "crop": "r15_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    2875,
+    3850,
+    3135
+   ]
+  },
+  {
+   "crop": "r16_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    3000,
+    2250,
+    3260
+   ]
+  },
+  {
+   "crop": "r16_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    3000,
+    3850,
+    3260
+   ]
+  },
+  {
+   "crop": "r17_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    3155,
+    2250,
+    3415
+   ]
+  },
+  {
+   "crop": "r17_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    3155,
+    3850,
+    3415
+   ]
+  },
+  {
+   "crop": "r18_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    3311,
+    2250,
+    3571
+   ]
+  },
+  {
+   "crop": "r18_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    3311,
+    3850,
+    3571
+   ]
+  },
+  {
+   "crop": "r19_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    3437,
+    2250,
+    3697
+   ]
+  },
+  {
+   "crop": "r19_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    3437,
+    3850,
+    3697
+   ]
+  },
+  {
+   "crop": "r20_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    3580,
+    2250,
+    3840
+   ]
+  },
+  {
+   "crop": "r20_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    3580,
+    3850,
+    3840
+   ]
+  },
+  {
+   "crop": "r21_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    3725,
+    2250,
+    3985
+   ]
+  },
+  {
+   "crop": "r21_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    3725,
+    3850,
+    3985
+   ]
+  },
+  {
+   "crop": "r22_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    3855,
+    2250,
+    4115
+   ]
+  },
+  {
+   "crop": "r22_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    3855,
+    3850,
+    4115
+   ]
+  },
+  {
+   "crop": "r23_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    3965,
+    2250,
+    4225
+   ]
+  },
+  {
+   "crop": "r23_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    3965,
+    3850,
+    4225
+   ]
+  },
+  {
+   "crop": "r24_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    4083,
+    2250,
+    4343
+   ]
+  },
+  {
+   "crop": "r24_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    4083,
+    3850,
+    4343
+   ]
+  },
+  {
+   "crop": "r25_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    4212,
+    2250,
+    4472
+   ]
+  },
+  {
+   "crop": "r25_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    4212,
+    3850,
+    4472
+   ]
+  },
+  {
+   "crop": "r26_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    4360,
+    2250,
+    4620
+   ]
+  },
+  {
+   "crop": "r26_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    4360,
+    3850,
+    4620
+   ]
+  },
+  {
+   "crop": "r27_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    4469,
+    2250,
+    4729
+   ]
+  },
+  {
+   "crop": "r27_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    4469,
+    3850,
+    4729
+   ]
+  },
+  {
+   "crop": "r28_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    4592,
+    2250,
+    4852
+   ]
+  },
+  {
+   "crop": "r28_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    4592,
+    3850,
+    4852
+   ]
+  },
+  {
+   "crop": "r29_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    4718,
+    2250,
+    4978
+   ]
+  },
+  {
+   "crop": "r29_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    4718,
+    3850,
+    4978
+   ]
+  },
+  {
+   "crop": "r30_s1.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    380,
+    4830,
+    2250,
+    5090
+   ]
+  },
+  {
+   "crop": "r30_s2.jpg",
+   "source": "img/c63_full.jpg",
+   "box": [
+    1950,
+    4830,
+    3850,
+    5090
+   ]
+  },
+  {
+   "crop": "v01_s1.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    300,
+    600,
+    2250,
+    860
+   ]
+  },
+  {
+   "crop": "v01_s2.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    1950,
+    600,
+    3950,
+    860
+   ]
+  },
+  {
+   "crop": "v02_s1.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    300,
+    730,
+    2250,
+    990
+   ]
+  },
+  {
+   "crop": "v02_s2.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    1950,
+    730,
+    3950,
+    990
+   ]
+  },
+  {
+   "crop": "v03_s1.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    300,
+    847,
+    2250,
+    1107
+   ]
+  },
+  {
+   "crop": "v03_s2.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    1950,
+    847,
+    3950,
+    1107
+   ]
+  },
+  {
+   "crop": "v04_s1.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    300,
+    975,
+    2250,
+    1235
+   ]
+  },
+  {
+   "crop": "v04_s2.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    1950,
+    975,
+    3950,
+    1235
+   ]
+  },
+  {
+   "crop": "v05_s1.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    300,
+    1085,
+    2250,
+    1345
+   ]
+  },
+  {
+   "crop": "v05_s2.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    1950,
+    1085,
+    3950,
+    1345
+   ]
+  },
+  {
+   "crop": "v06_s1.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    300,
+    1195,
+    2250,
+    1455
+   ]
+  },
+  {
+   "crop": "v06_s2.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    1950,
+    1195,
+    3950,
+    1455
+   ]
+  },
+  {
+   "crop": "v07_s1.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    300,
+    1295,
+    2250,
+    1555
+   ]
+  },
+  {
+   "crop": "v07_s2.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    1950,
+    1295,
+    3950,
+    1555
+   ]
+  },
+  {
+   "crop": "v08_s1.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    300,
+    1425,
+    2250,
+    1685
+   ]
+  },
+  {
+   "crop": "v08_s2.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    1950,
+    1425,
+    3950,
+    1685
+   ]
+  },
+  {
+   "crop": "v09_s1.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    300,
+    1545,
+    2250,
+    1805
+   ]
+  },
+  {
+   "crop": "v09_s2.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    1950,
+    1545,
+    3950,
+    1805
+   ]
+  },
+  {
+   "crop": "v10_s1.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    300,
+    1681,
+    2250,
+    1941
+   ]
+  },
+  {
+   "crop": "v10_s2.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    1950,
+    1681,
+    3950,
+    1941
+   ]
+  },
+  {
+   "crop": "v11_s1.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    300,
+    1815,
+    2250,
+    2075
+   ]
+  },
+  {
+   "crop": "v11_s2.jpg",
+   "source": "img/c64_full.jpg",
+   "box": [
+    1950,
+    1815,
+    3950,
+    2075
+   ]
+  }
+ ]
+}
