@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 23 September 2026, 16:40 UTC
+Last updated: 23 September 2026, 18:10 UTC
 
 > **the owner is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -36,7 +36,9 @@ or quote request reaches the owner until a check-solved sweep has set that targe
 
 **Blocked on the owner, new:** this account's environment has no credentials (ASKS row 10) and its network policy denies every archive host: archive.org, bl.digirati.io, hathitrust.org, wikisource.org, gutenberg.org, de-crypt.org, scienceblogs.de (ASKS row 11). From this account only github.com, pypi.org and googleapis.com are reachable, so no access, print-check or image work can run here until the environment's Network access setting is changed. The owner's steer for the week is one cipher solved that a verifier can class N3 or better; with the archive lane closed from this account, the only candidate with material obtainable is Burgess 1912, and its text is on Wikisource and Internet Archive, both blocked.
 
-**Running right now (16:40 UTC):** the Randolph transcription worker, wrapping up on the orchestrator's stop message. Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
+**18:10 UTC.** The queue was diffed against fresh clones of both solver repositories with the new `tools/solver_repo_diff.py`: four more rows had been solved years ago and are dropped (Boswell 1628 solved 2021, Goring 1645 solved 2020, Sadler 1559 printed 1809, Anne 1711 printed), five are partly read by Bourdeau (ranks 7, 8, 19, 20, 35). The Randolph worker stopped and committed 49 native crops. DECODE record R413 is no longer needed (ASKS row 1 updated).
+
+**Running right now (18:10 UTC):** a harvest of ciphertexts already transcribed in Bourdeau's repository that he has not read, the only solving material reachable from this account while the network policy stands. Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
 
 **Waiting on the owner:** rotate the DECODE and archive.org passwords (both were printed into worker
 transcripts on 20 Sept) and set IA_USER to the account email; email Spink before the 23 Sept sale; the Kansas
