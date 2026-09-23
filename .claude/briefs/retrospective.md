@@ -1,4 +1,4 @@
-# Retrospective (Sonnet, fresh session weekly, cap $10)
+# Retrospective (Sonnet, fresh session weekly and after every 12 ledger rows or $60 of worker usage, cap $10)
 Read LEDGER.md, LESSONS.md, CLAUDE.md, the brief templates in .claude/briefs/, STATUS.md and the git log of
 the last seven days. Answer, with numbers from the ledger: cost per delivered result by role and model;
 share of workers that needed a poke, over-ran, over-claimed or failed; which lessons repeat; whether the

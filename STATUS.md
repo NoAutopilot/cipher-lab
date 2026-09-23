@@ -63,6 +63,17 @@ digitised. Sforza 1446's volume is not on Gallica; its DECODE images go on the n
 N1. Seven catalogues (Beinecke, Folger, Bodleian, CUDL, TCD, Leiden, KB) answered curl with bot challenges and need
 the browser tool.
 
+## Lane table (kept by the orchestrator; the stop rule is in the orchestrator brief)
+
+| Lane | Checked | Found-solved or read by others | Not a cipher / key-only | Stage 2, copy order or login | Stage 2, copy-free | State (23 Sept 2026, 21:20 UTC) |
+|---|---|---|---|---|---|---|
+| Cryptiana list via the solver repositories (our original queue) | 40 rows | 9 (5 of them years ago) | 0 | most; 4 with requests drafted | 0 | stopped: worked daily by both projects |
+| DECODE cached catalogue, neighbour-record pairs | 202 pairs | 193 named by Bourdeau by id or volume; D1 solved | 0 | D8 only | 0 | stopped: needs the full catalogue behind the login |
+| GitHub-held ciphertexts (Bourdeau not-read) | 12 | 0 | 0 | 0 | 1 attacked, clean negative | stopped: his tooling already failed there |
+| TNA Discovery, BL, Gallica keyword sweep (N rows) | 36 scored, 15 swept | 6 | 2 | 7 | 0 | stopped by rule: 13 stage-2 targets wait on the person |
+| Digitised BnF manuscripts (M rows) | 11 scored, 7 swept | 3 | 2 | 0 | 3 (M4 unpinned, M6, M7) | open: M8-M11 unswept; two transcriptions running |
+| Printed ciphertext detector (IA full text) | 1 volume, control only | n/a | n/a | n/a | n/a | test running (RETRO proposal 5) |
+
 **Next session on this account, first actions (written 18:02 UTC, 23 Sept 2026).** (1) Presence test of the seven
 variables with `test -n`, no values printed. (2) One DECODE login attempt via `tools/decode_fetch.sh 8725 ...`; on
 success, ASKS row 1 to done and ASSIGNMENTS row 7 starts (record 8725, then a polite full catalogue pull to
