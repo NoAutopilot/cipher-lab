@@ -1,0 +1,53 @@
+{
+  "worker": "archive-lookup sibling search, randolph-sussex-1569",
+  "date": "2026-09-23",
+  "blocked": {
+    "reason": "organisation egress policy denial (HTTP CONNECT 403 at the session's proxy) for this account/environment, confirmed via curl and independently via the WebFetch tool (EGRESS_BLOCKED)",
+    "hosts_tested_and_blocked": [
+      "https://archive.org/metadata/calendarstatepa02boydgoog",
+      "https://bl.digirati.io/iiif/ark:/81055/vdc_100162985756.0x000001",
+      "https://web.archive.org",
+      "https://de-crypt.org",
+      "https://catalog.hathitrust.org",
+      "https://www.google.com",
+      "https://en.wikipedia.org"
+    ],
+    "hosts_reachable": [
+      "https://www.googleapis.com (books API; unauthenticated, HTTP 429 rate-limited; GOOGLE_BOOKS_KEY unset in this account's environment so unusable)",
+      "https://github.com (used to clone dbourdeau/cyphersolver read-only for step 4/rule 8)"
+    ],
+    "not_produced": [
+      "siblings/csp-scotland-3-index.tsv (step 1 of brief)",
+      "siblings/caligula-c-ii-canvases.tsv (step 2 of brief)",
+      "siblings/img/*.jpg (step 3 of brief)"
+    ]
+  },
+  "sources_used": {
+    "web_search": [
+      "\"Randolph\" \"Sussex\" 1570 cipher key Caligula",
+      "\"Caligula C II\" cipher key 1570"
+    ],
+    "local_grep_read_only": [
+      "sources/cryptiana/web/elizabeth.htm",
+      "sources/cryptiana/web/unsolved.htm",
+      "sources/cryptiana/web/mary.htm",
+      "sources/cryptiana/web/henryiii.htm"
+    ],
+    "github_clone_read_only": {
+      "repo": "https://github.com/dbourdeau/cyphersolver.git",
+      "commit": "2e9ec0165feff163b692453cae5eaa0776c14c65",
+      "commit_date": "2026-09-23T08:37:36-05:00",
+      "clone_depth": 1,
+      "clone_verified_clean": true,
+      "files_extracted_verbatim_into_bourdeau-randolph1570": [
+        "randolph1570/profile.json",
+        "randolph1570/NOTES.md",
+        "randolph1570/transcription.txt",
+        "CATALOGUE.md line 253 (entry 99)",
+        "docs/pages.json entry, slug randolph1570"
+      ],
+      "licence": "code MIT, text CC BY 4.0 per CLAUDE.md rule 8 -- credited, not copied as our own work"
+    }
+  },
+  "headline_finding": "dbourdeau/cyphersolver reports BL Cotton MS Caligula C II f.278 (DECODE R4932) as a contemporary clerk's decipherment of f.277 (the Randolph-Sussex letter, this target), and marks the letter 'already solved' as of 2026-09-21. Not independently verified against the manuscript images this session (bl.digirati.io blocked); see SIBLINGS.md."
+}

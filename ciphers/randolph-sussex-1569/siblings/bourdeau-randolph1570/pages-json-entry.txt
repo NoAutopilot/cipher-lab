@@ -1,0 +1,15 @@
+{
+  "slug": "randolph1570",
+  "label": "Randolph to Sussex 1570",
+  "title": "Randolph to Sussex, 5 July 1570 \u2014 the cipher and its decipherment on the next leaf",
+  "y": 1570.51,
+  "st": "found",
+  "stt": "read at the time",
+  "people": [
+    {
+      "role": "recipient",
+      "name": "Earl of Sussex",
+      "img": "portrait_earl-of-sussex.jpg"
+    }
+  ]
+}
