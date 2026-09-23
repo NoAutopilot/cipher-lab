@@ -1,0 +1,19 @@
+family	control	string	rank_or_hits	of	quad_or_score	z	margin_or_natural	note
+A	known first-letters message	THEAUTHORISGELETTBURGESS	2	560	-1.305	3.09	0.156	best other: AKEYOMEADTOGTYONDPRESOLD -1.461 z 2.89
+A	known last-letters message	FALSETOLIFEANDFALSETOART	1	560	-1.065	3.16	0.395	best other: AKEYOMEADTOGTYONDPRESOLD -1.461 z 2.89
+A-ocr	single pass UC (drop capitals restored)	THEAUTHORISGELETTBURGESS / FALSETOLIFEALDFALSETOART	1	48	-1.305			letters differing from the known messages
+A-ocr	single pass CU (drop capitals restored)	THEAUTHORISGELETTBURGESS / FALSETOLRFEANDFALSETOART	1	48	-1.305			letters differing from the known messages
+D	book-wide printed-line initials, 24-letter plant, W=24	40 trials	40	40	-0.884		-1.468	hits = best window lands on the plant (+-3); col 6 = mean plant quad; col 8 = natural best window
+C	first words of paragraphs, 6-word book-sentence plant	40 trials	17	40	28		0.975	col 4 = best lift window lands on the plant (+-2); col 6 = plant among the top 15 windows written to top_windows.tsv; col 8 = natural best window
+C	first words of paragraphs, 8-word book-sentence plant	40 trials	10	40	26		0.722	col 4 = best lift window lands on the plant (+-2); col 6 = plant among the top 15 windows written to top_windows.tsv; col 8 = natural best window
+C	first words of paragraphs, 12-word book-sentence plant	40 trials	13	40	27		0.485	col 4 = best lift window lands on the plant (+-2); col 6 = plant among the top 15 windows written to top_windows.tsv; col 8 = natural best window
+C	first words of sentences, 6-word book-sentence plant	40 trials	13	40	22		0.629	col 4 = best lift window lands on the plant (+-2); col 6 = plant among the top 15 windows written to top_windows.tsv; col 8 = natural best window
+C	first words of sentences, 8-word book-sentence plant	40 trials	18	40	22		0.364	col 4 = best lift window lands on the plant (+-2); col 6 = plant among the top 15 windows written to top_windows.tsv; col 8 = natural best window
+C	first words of sentences, 12-word book-sentence plant	40 trials	22	40	26		0.197	col 4 = best lift window lands on the plant (+-2); col 6 = plant among the top 15 windows written to top_windows.tsv; col 8 = natural best window
+C	first words of lines, 6-word book-sentence plant	40 trials	7	40	12		0.811	col 4 = best lift window lands on the plant (+-2); col 6 = plant among the top 15 windows written to top_windows.tsv; col 8 = natural best window
+C	first words of lines, 8-word book-sentence plant	40 trials	10	40	19		0.566	col 4 = best lift window lands on the plant (+-2); col 6 = plant among the top 15 windows written to top_windows.tsv; col 8 = natural best window
+C	first words of lines, 12-word book-sentence plant	40 trials	14	40	24		0.245	col 4 = best lift window lands on the plant (+-2); col 6 = plant among the top 15 windows written to top_windows.tsv; col 8 = natural best window
+C	last words of paragraphs, 6-word book-sentence plant	40 trials	21	40	31		0.971	col 4 = best lift window lands on the plant (+-2); col 6 = plant among the top 15 windows written to top_windows.tsv; col 8 = natural best window
+C	last words of paragraphs, 8-word book-sentence plant	40 trials	23	40	33		0.702	col 4 = best lift window lands on the plant (+-2); col 6 = plant among the top 15 windows written to top_windows.tsv; col 8 = natural best window
+C	last words of paragraphs, 12-word book-sentence plant	40 trials	33	40	36		0.062	col 4 = best lift window lands on the plant (+-2); col 6 = plant among the top 15 windows written to top_windows.tsv; col 8 = natural best window
+B	24-word book sentence as a story-level word sequence	40 trials	38	40	4.94	3.56		col 4 = trials with z>=3; col 6 = median z; col 7 = 10th percentile z
