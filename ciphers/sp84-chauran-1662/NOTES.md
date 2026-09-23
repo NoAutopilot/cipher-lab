@@ -8,7 +8,7 @@ QUEUE row: N11 (sources/solver-diffs/2026-09-23-non-decode-hits.tsv, "Candidates
 
 TNA, State Papers Foreign, Holland, **SP 84/165** items 14, 23, 66, 70, 75, 82, 87, 102, 103, 111, The
 National Archives, Kew, all 1662. Catalogue text quoted verbatim from the Discovery API
-(`discovery.nationalarchives.gov.uk/API/search/records`, fetched 24 September 2026):
+(`discovery.nationalarchives.gov.uk/API/search/records`, fetched 23 September 2026):
 
 > SP 84/165/14 (1662 Jan 18): "Folio 23: Wickfort to [-]. Fisheries still proving a hindrance to the treaty..."
 > SP 84/165/23 (1662 [Jan 11/21]): "Folio 36: [Chauran] to [Williamson]. Concern about movement and secrecy
@@ -30,7 +30,7 @@ National Archives, Kew, all 1662. Catalogue text quoted verbatim from the Discov
 > SP 84/165/111 (1662 [Apr -]): "Folio 186: [Chauran] to [Williamson?]. Recovery of his accomplice.
 > Financial requests."
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **TNA Discovery, full item descriptions (decisive).** Fetched all ten items individually by reference
    via a targeted term search against series "SP 84" restricted to piece 165 (terms: Chauran, Williamson,

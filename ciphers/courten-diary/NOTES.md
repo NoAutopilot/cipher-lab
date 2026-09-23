@@ -25,7 +25,7 @@ Hans Sloane, Baronet: Collection of his loose papers and letters", a large compo
 catalogue description does not say what is specifically at f. 79, so this cross-reference could not be
 resolved further this sweep without ordering that folio too.
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **Web search.** Four WebSearch queries this sweep: "William Courten Charleton diary cipher Madden Add
    MS 4956"; "William Courten diary in cipher Sloane manuscripts scholarship"; "Courten cipher key numbers
@@ -94,7 +94,7 @@ run yet against JSTOR/dissertation literature on Courten specifically (this swee
 which is not equivalent to a JSTOR full-text search — no JSTOR credentials were used this sweep, out of
 scope for check-solved per the brief).
 
-## Print check, part 2 (24 September 2026)
+## Print check, part 2 (23 September 2026)
 
 **Sloane MS 4019, f.79 — resolved.** The BL Archives and Manuscripts record for Sloane MS 4019 truncates
 its `scope_and_content` field to ~250-300 characters in the search-results JSON, but the *individual*
@@ -136,7 +136,7 @@ ciphers/courten-diary/AUDIT.md when run):
 Requests this pass: `searcharchives.bl.uk` 4 (Sloane MS 4019 search-results, Sloane MS 4019 individual
 record, "Key to Charleton's cipher" phrase search, Add MS 5156 search); 4 WebSearch queries.
 
-## Verdict (updated 24 September 2026)
+## Verdict (updated 23 September 2026)
 
 **Open, unchanged.** Still no decipherment, transcript, key discussion beyond the catalogue's own key
 notices, or scholarly treatment of this specific manuscript's cipher passages found in web search (eight

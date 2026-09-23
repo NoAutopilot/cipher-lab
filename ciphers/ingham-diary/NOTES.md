@@ -11,7 +11,7 @@ bare NRA index entry with no shelfmark — but was nonetheless scored into the m
 TNA Discovery, record **N13677160** (an aggregated National Register of Archives entry, `source: "NRA"`,
 `catalogueLevel: 0`, no TNA reference of its own — only `otherReferences: [{"value": "25824"}]`, an NRA
 report number). Full record fetched via the item-details endpoint
-(`discovery.nationalarchives.gov.uk/API/records/v1/details/N13677160`, 24 September 2026):
+(`discovery.nationalarchives.gov.uk/API/records/v1/details/N13677160`, 23 September 2026):
 
 > **coveringDates**: "1734" (coveringFromDate/coveringToDate both 1734).
 > **scopeContent.description**: "**diary in Cipher**."
@@ -22,7 +22,7 @@ A Discovery search for "Ingham diary" (broadened beyond the piece filter, 1 requ
 one record for Benjamin Ingham (1712-1772) at Manchester Methodist Archives — no sibling Ingham diary
 entry for any other year is catalogued there on Discovery/NRA.
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **The decisive check: is this the diary Heitzenrater already deciphered?** Richard P. Heitzenrater,
    *Diary of an Oxford Methodist: Benjamin Ingham, 1733-1734* (Duke University Press, 1985), is freely

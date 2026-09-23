@@ -2,7 +2,7 @@
 # f.299 (Edinburgh/St Johnstons, 31 July 1583): the cipher fragments only.
 # Transcription by Satoshi Tomokiyo (Cryptiana), "CottonMSBowes.txt", linked from
 # http://cryptiana.web.fc2.com/code/elizabeth.htm ; mirrored in sources/cryptiana/web/CottonMSBowes.txt on
-# 23 September 2026. Copied here unchanged, 24 September 2026. Tomokiyo's note: "the lines below are separate
+# 23 September 2026. Copied here unchanged, 23 September 2026. Tomokiyo's note: "the lines below are separate
 # ciphertext fragments (not a contiguous ciphertext)". Symbols are his numbers 02-28 for drawn cipher signs;
 # the manuscript images are not online (BL: "digital images currently unavailable"), so every result from this
 # file is conditional on his transcription. His split between f.196 and f.299 is not marked in the file.

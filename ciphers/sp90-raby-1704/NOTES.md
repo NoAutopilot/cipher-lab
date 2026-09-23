@@ -8,7 +8,7 @@ QUEUE row: N13 (sources/solver-diffs/2026-09-23-non-decode-hits.tsv, "Candidates
 
 TNA, State Papers Foreign, Prussia and German States, **SP 90/2**, The National Archives, Kew. Catalogue
 text quoted verbatim from the Discovery API's item-details endpoint
-(`discovery.nationalarchives.gov.uk/API/records/v1/details/{id}`, fetched 24 September 2026), which carries
+(`discovery.nationalarchives.gov.uk/API/records/v1/details/{id}`, fetched 23 September 2026), which carries
 a `note` field not shown in the search-result `description` used by the original scout pull:
 
 > **SP 90/2/335** (1704 Apr. 29, id C6554808): *scopeContent* "Folio 335: Raby to [Hedges]. Receipt of
@@ -32,7 +32,7 @@ all five, including 348, 409 and 409v whose search-result description text gives
 reverse of the SP 78 and SP 84 date/miscataloguing errors found earlier this session — here the original
 scout call was right, but for reasons not visible in the summary description it used.
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **TNA Discovery, full-piece sweep for a sibling decipherment.** `tools/discovery_items.py` against
    series "SP 90" piece "SP 90/2" with terms cipher/decipher/undeciphered/duplicate (4 requests) returned

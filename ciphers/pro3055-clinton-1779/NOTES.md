@@ -14,7 +14,7 @@ the *Report on American Manuscripts in the Royal Institution of Great Britain* (
 Commission, 4 vols, 1904-09) — every description fetched this sweep carries its original HMC calendar entry
 number (e.g. "2894.", "3868.") as a prefix, confirming the two catalogues are the same text.
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **TNA Discovery API — item-level detail (decisive).** Fetched all items under each of the six named
    piece numbers (`sps.searchQuery="PRO 30/55/NN"`, `sps.resultsPageSize=250`; 5 requests) and filtered for

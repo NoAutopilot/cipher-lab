@@ -8,7 +8,7 @@ QUEUE row: N10 (sources/solver-diffs/2026-09-23-non-decode-hits.tsv, "Candidates
 
 BnF, Département des Manuscrits, **Dupuy 155** ("Mémoires servant à l'histoire de PROVENCE et de la ville de
 MARSEILLE pour les années 1593, 1595 et 1596"), Gallica `ark:/12148/btv1b10034035f`. Gallica OAI/Dublin Core
-record (`dc:description`, fetched 24 September 2026, 1 request) gives the volume's full contents list (59
+record (`dc:description`, fetched 23 September 2026, 1 request) gives the volume's full contents list (59
 feuillets, one item per numbered piece — the parenthesised numbers below the folio each piece begins on):
 
 > "...— Remontrances des consuls de Marseille à Henri IV, 22 avril 1596, orig. (35) ; — **Lettre chiffrée,
@@ -20,7 +20,7 @@ feuillets, one item per numbered piece — the parenthesised numbers below the f
 sender: **Francesco Guicciardini**, Tuscan ambassador to Spain, matching the catalogue description's "son
 ambassadeur en Espagne."
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **Image (decisive).** Fetched the Gallica IIIF manifest once (`images/manifest.json`, 1 request; 111
    canvases for 59 foliated leaves, ~1.9 images/folio — recto+verso pairs plus front matter). Item "(41)" in

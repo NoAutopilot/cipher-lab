@@ -22,7 +22,7 @@ September 2026):
 > a letter of his to the prince of Orange [SP 87/23/71] to demonstrate that he has not shown any offence at
 > the Waldeck affair. He has ordered all officers to obey Cronstrom..."
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **TNA Discovery, full-piece sweep for a sibling decipherment.** `tools/discovery_items.py` against
    series "SP 87" piece "SP 87/23" with terms cipher/decipher/undeciphered/duplicate (4 requests) returned

@@ -15,7 +15,7 @@ item-level record counts fetched this sweep for the seven named pieces alone are
 say "in cipher"/"cypher"/"decipher"** in the TNA Discovery description (grepped locally after fetching all
 seven pieces at full page size). This is a much larger cluster than scored.
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **TNA Discovery API (decisive for shape, not for content).** Fetched all seven named pieces at full item
    level (`sps.searchQuery="SP 87/NN"`, `sps.resultsPageSize=250` or 200; 7 requests, one 403/reset avoided
@@ -38,7 +38,7 @@ seven pieces at full page size). This is a much larger cluster than scored.
    enemy letters which have been deciphered [SP 87/40/122-124]") is a genuine period cryptanalytic success
    against an *enemy* cipher, filed with its plaintext alongside. This pattern (contemporary decipherment
    filed as a companion piece) is the same shape check-solved found in the SP 35/36 Atterbury cluster
-   (`ciphers/sp35-intercepts-1722/NOTES.md`, 24 Sept 2026) — there it meant the target was already solved in
+   (`ciphers/sp35-intercepts-1722/NOTES.md`, 23 Sept 2026) — there it meant the target was already solved in
    1723; here it means an unknown fraction of the 98 cipher-flagged items already have their own
    contemporary clear-text companion in the same box, cheaper to fetch than any fresh cryptanalysis. Which
    fraction is not established this sweep — would need item-by-item cross-referencing of all 98 against

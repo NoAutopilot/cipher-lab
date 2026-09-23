@@ -8,7 +8,7 @@ QUEUE row: N8 (sources/solver-diffs/2026-09-23-non-decode-hits.tsv, "Candidates 
 
 TNA, State Papers Foreign, France, **SP 78/111** and **SP 78/113**, The National Archives, Kew. Catalogue
 text quoted verbatim from the Discovery API (`discovery.nationalarchives.gov.uk/API/search/records`, fetched
-24 September 2026):
+23 September 2026):
 
 > SP 78/111/93 (1642 Sept 20/30): "Folio 212: **Letter entirely in cipher**."
 > SP 78/111/135 (1644): "Folio 300: **Letter in cipher**."
@@ -28,7 +28,7 @@ instruction in this brief is moot** — that printed calendar series covers only
 printed source for piece 113 (1657) is Thurloe's State Papers (see point 2 below); piece 111 (1642-44) has
 no comprehensive printed foreign-correspondence calendar for this reign at all.
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **TNA Discovery, full item-description sweep (decisive for the "sibling decipher" question).**
    `tools/discovery_items.py` run against series "SP 78" with terms cipher/decipher/undeciphered/duplicate,
@@ -96,7 +96,7 @@ it is not digitised, so the decipherment's nature (interlinear on the same docum
 Dupuy 155, or a separate translation) cannot be confirmed without a page copy. Not "new"; not "unpublished" —
 this is a search result, not a discovery (rule 10).
 
-## Thurloe check (24 September 2026)
+## Thurloe check (23 September 2026)
 
 Job: check Thurloe's *State Papers* vol. 6 (1657, covering Jan-June) for SP 78/113/57 (despatch "largely in
 cipher from [Wm. Swyfte]", 24 Feb 1657), and vols. 1-2 for the SP 78/111 items (1642-44) if their senders

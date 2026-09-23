@@ -1,4 +1,4 @@
-# HTRC Extracted Features (data.htrc.illinois.edu/ef-api/volumes/nnc2.ark+=13960=t1gh9nc18/pages?pos=false), fetched 24 Sept 2026
+# HTRC Extracted Features (data.htrc.illinois.edu/ef-api/volumes/nnc2.ark+=13960=t1gh9nc18/pages?pos=false), fetched 23 Sept 2026
 # CSP Scotland vol. 6 (Boyd 1910), HathiTrust htid nnc2.ark:/13960/t1gh9nc18 (Columbia copy). Bag of words per scan page, header+body+footer merged;
 # printed page = header number. Running text NOT read (babel.hathitrust.org blocked). Used by AUDIT.md section 4.
 seq	printed_page	token	count

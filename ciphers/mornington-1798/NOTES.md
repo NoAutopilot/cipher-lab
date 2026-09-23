@@ -10,7 +10,7 @@ BL Archives and Manuscripts, India Office Records and Private Papers, **Mss Eur 
 D623/4, /5, /10, /11, /22, /23, /24, /27, /28, /30, /35, /36 (+ copies /29, /37); key at **D623/41**.
 
 Catalogue text for D623/41, quoted verbatim from the BL Archives and Manuscripts API
-(`searcharchives.bl.uk`, record id `040-002273097`, fetched 24 September 2026):
+(`searcharchives.bl.uk`, record id `040-002273097`, fetched 23 September 2026):
 
 > "Two copies of key to Lord Mornington's cipher"
 
@@ -26,7 +26,7 @@ Catalogue text for D623/10 (record `040-002273066`) and D623/11 (record `040-002
 These two bracketed cataloguer's notes match QUEUE.md's row exactly; no other item in the fonds carries
 a decode/decipher annotation (see below).
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **Web search.** "Mornington Wellesley cipher Dundas Seringapatam" (WebSearch) and a
    `site:de-crypt.org` variant: no hit connecting these despatches to any solver, blog or catalogue.
@@ -104,7 +104,7 @@ on Montgomery Martin Vols 3-5 (1836-37) and the 1877 *Selection from the Despatc
 Papers* not being checked yet for the 1800 items, and on HathiTrust (Cloudflare-gated here) not being
 searched by the Bibliographic/HTRC route for any further Wellesley editions.
 
-## Print check, part 2 (24 September 2026)
+## Print check, part 2 (23 September 2026)
 
 Finished the conditional left open above: Montgomery Martin Vols 3-5 (1836-37), the 1877 *Selection*
 (Owen), and (per the brief) the *Wellesley Papers* (1914, ed. Martin/Pearce family correspondence — 2
@@ -152,7 +152,7 @@ same as the first pass.
 Requests this pass: `searcharchives.bl.uk` 12 (one per item, D623/4,5,22,24,27,28,29,30,35,36,37,41),
 `archive.org` 15 (3 advancedsearch + 6 metadata + 6 `_djvu.txt` downloads).
 
-## Verdict (updated 24 September 2026)
+## Verdict (updated 23 September 2026)
 
 **Partial**, unchanged in kind but the conditional is now cleared for this batch of six editions.
 D623/23 stays found-solved (Montgomery Martin Vol. 1, first pass); D623/10 and /11 stay already

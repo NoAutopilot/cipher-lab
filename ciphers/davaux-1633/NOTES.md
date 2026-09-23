@@ -8,7 +8,7 @@ QUEUE row: N4 (sources/solver-diffs/2026-09-23-non-decode-hits.tsv, "Candidates 
 
 BnF, Departement des Manuscrits, **Baluze 188** ("Melanges se rapportant principalement a l'histoire
 d'ITALIE"), Gallica `ark:/12148/btv1b90014586`. Gallica OAI/Dublin Core record (`dc:description`, fetched
-24 September 2026, 1 request) gives the volume's full contents list. Two separate items in the same
+23 September 2026, 1 request) gives the volume's full contents list. Two separate items in the same
 miscellany matter here, quoted verbatim:
 
 > "**Lettre du comte d'Avaux au cardinal Antonio [Barberini] (Paris, 25 novembre 1633)** ; Lettre non
@@ -21,7 +21,7 @@ dechiffrement partiel (18 mai 1632)") but attached its year and the cipher/parti
 the *first* item, the d'Avaux-Barberini letter of 25 November 1633 — these are two different, unrelated
 items bound in the same recueil. This is a scout conflation, not a fact about the d'Avaux letter.
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **Image (decisive).** Fetched the Gallica IIIF manifest once (`manifest.json`, 1 request; 198 canvases,
    all labelled "NP" — no folio numbers given in the manifest) and viewed nine leaves at reduced width

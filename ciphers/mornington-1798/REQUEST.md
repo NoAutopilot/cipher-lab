@@ -1,12 +1,12 @@
 # Archive request — BL Mss Eur D623 (Mornington/Wellesley despatches to Dundas)
 
-Drafted 24 September 2026 by a print-check worker. Not sent. No email sent, no price requested or
+Drafted 23 September 2026 by a print-check worker. Not sent. No email sent, no price requested or
 guessed — this is the request text for the person to submit, or for a follow-up worker to send once a
 price is wanted.
 
 ## Status this request is based on
 
-Stage 2, verified unsolved (conditional — see NOTES.md "Print check, part 2", 24 September 2026):
+Stage 2, verified unsolved (conditional — see NOTES.md "Print check, part 2", 23 September 2026):
 D623/4, /5, /22, /24, /27, /28 (+copy /29), /30, /35, /36 (+copy /37) were not found printed in clear in
 six editions checked (Montgomery Martin *Despatches, Minutes and Correspondence of the Marquess
 Wellesley*, Vols 1-5, 1836-37; the 1877 *Selection from the Despatches, Treaties and other Papers of the
