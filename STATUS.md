@@ -127,7 +127,7 @@ work in progress. Orchestrator session 2,042 since 17 Sept. **Nothing here is bi
 | Earl of Stair to Townshend, 1710 | ciphers/stair-townshend-1710 | Verified 20 Sept 2026 (KU catalogue, six-source sweep): open, English | Not in print (checked 20 Sept). You: order four scans from Kansas per REQUEST.md, about $20 | You |
 | Letter relating to Gen. Monck, 1659-60 | ciphers/monck-1660 | Verified 20 Sept 2026 (BL catalogue, sweep): open, English | You: ask BL Imaging Services for a quote for Add MS 32093 f.423 (REQUEST.md) | You |
 | NLS MS 20769, 18th-c. cipher manuscript | ciphers/nls-20769 | Record read 20 Sept 2026: 57 leaves, "written in cipher", genre Ciphers. Codes., language undetermined, deposited 1949 | You: ask NLS for a quote and a five-leaf sample (REQUEST.md) | You |
-| Thomas Randolph to Sussex, 1570 | ciphers/randolph-sussex-1569 | Images fetched 21 Sept; dated 1570 not 1569; first-pass transcription, glyphs low confidence; no key, nothing read | Queued: needs a DECODE login for key record R4930, or a native-resolution re-transcription | Nobody |
+| Thomas Randolph to Sussex, 1570 | ciphers/randolph-sussex-1569 | **Found-solved, 23 Sept 2026.** f.278 is a clerk's contemporary decipherment (DECODE R4932), read by Bourdeau 21 Sept; Boyd 1903 no. 339 says 'deciphered'. Images, 49 native crops and two raw passes kept for the record; dropped from the queue | found-solved |
 | Everything else | QUEUE.md | First scout run done 19 Sept 2026: 40 scored, 163 kept unscored, 40 dropped | Work down the queue | Orchestrator |
 
 ## Results so far (labelled per README "What counts as a result")
