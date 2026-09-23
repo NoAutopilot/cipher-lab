@@ -1,0 +1,49 @@
+{
+ "T2_crib_key_score_per_read_token": -1.3949041792681052,
+ "T2_read_tokens": 93,
+ "T3_seeded": {
+  "score_per_token": -1.1981546620074341,
+  "best_restart": 3,
+  "key": {
+   "02": "l",
+   "03": "t",
+   "06": "r",
+   "07": "s",
+   "08": "t",
+   "09": "u",
+   "10": "e",
+   "11": "n",
+   "12": "m",
+   "13": "l",
+   "14": "s",
+   "15": "n",
+   "16": "i",
+   "17": "h",
+   "18": "c",
+   "19": "a",
+   "20": "a",
+   "21": "c",
+   "22": "g",
+   "23": "i",
+   "24": "e",
+   "25": "o",
+   "26": "o",
+   "27": "d",
+   "28": "h"
+  },
+  "reading": [
+   "sirhennicacham",
+   "smallet",
+   "iclencarne",
+   "magneuilhrntleeaglencarned",
+   "h",
+   "mauuissier",
+   "smallst",
+   "nglencorn",
+   "hisruthen",
+   "llt",
+   "tohim"
+  ],
+  "ntok": 101
+ }
+}
