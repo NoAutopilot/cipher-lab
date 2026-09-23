@@ -1,0 +1,1 @@
+- **99 — Thomas Randolph (Edinburgh) to Sussex, 1569, BL Cotton MS Caligula C II f. 277 (DECODE R4931)**: read at the time. Randolph to Sussex, Edinburgh, 5 July 1570; the contemporary decipherment is f. 278 (DECODE R4932), Boyd *CSP Scotland* iii no. 339 abstracts it. All five cipher runs read (`randolph1570/`).
