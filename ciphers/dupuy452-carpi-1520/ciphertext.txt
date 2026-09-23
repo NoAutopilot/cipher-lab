@@ -1,0 +1,87 @@
+# Alberto Pio de Carpi to Madame [Louise de Savoie], Rome. BnF Dupuy 452.
+# Gallica ark:/12148/btv1b10036146c, IIIF image ids f23 (folio "20", recto) / f24
+# (folio 20 verso + folio "21" recto, one continuous opening). Transcribed 23 Sept 2026.
+#
+# MAJOR CORRECTION to the 23 Sept check-solved characterisation of this item (M6 sweep,
+# ROOM.md 20:33 and NOTES.md "What the leaves show"): that sweep viewed only the low-resolution
+# thumbnail of the recto (canvas23_folio20_carpi_cipher.jpg, 900x672) and described the cipher
+# as "arithmetic-numeral groups" of "roughly 70-90" tokens confined to "the final third" of a
+# single leaf. Full-resolution imaging this session (images/img/, native ~8300x6214 px per
+# opening) shows instead:
+#   1. The cipher is NOT arithmetic numerals. It is an invented symbol/glyph alphabet (letter-like
+#      shapes resembling Greek minuscules, a few actual arabic digits, a triple-box mark, a "z"
+#      shape etc.), consistent with a 1520s French diplomatic "chiffre a figures" of the kind
+#      Tomokiyo catalogues for this circle -- see the key-family leads in NOTES.md.
+#   2. The cipher passage does not end on the recto. It continues, unbroken, onto the leaf's own
+#      VERSO (which the brief asked to check) for a further ~22 lines, then onto the recto of the
+#      following leaf (foliated "21" in the manuscript's own period ink numbering, visible top
+#      right of that leaf) for ~13 more lines, before the letter closes in plain French: two
+#      paragraphs, then "Madame, je prie a Dieu qu'il vous croisse et vous doint tresbonne et
+#      longue vie. De Rome ce xxvij [27] jour d'Octobre l'an mil Vc xxv [1525]", signed "de Carpi".
+#   3. That closing date, 27 October 1525, does not match the finding aid's date for item "20"
+#      (22 oct. 1525, BnF Archives et manuscrits notice cc885911, "Presentation du contenu").
+#      Given the letter reads as one continuous document (no new salutation or address restarts
+#      between the recto tail, the verso, and folio 21's recto -- the verso opens and closes
+#      mid-cipher with no heading), the more likely explanation is that 22 is a misreading of the
+#      roman numeral for 27 (xxij / xxvij, an easy confusion in a period hand) rather than a
+#      second, uncatalogued letter; this is flagged, not resolved, and is NOT a claim of a new
+#      item (rule 10) -- it needs a fresh check-solved/finding-aid comparison, not a solver's say-so.
+#   4. Total extent is therefore roughly 44 cipher lines across 3 page-sides (recto tail ~9,
+#      verso ~22, folio-21-recto ~13), on the order of 500 tokens at this hand's ~11-12
+#      tokens/line -- not "70-90" and not "one leaf".
+#
+# SCOPE OF THIS FILE. The brief asked to transcribe f.20's cipher passage with two independent
+# passes reconciled row by row. That was written against the ~70-90-token estimate. Given the
+# ~6x larger actual extent discovered only after full-resolution imaging, and no Sonnet subagents
+# available this session (see reconciliation.md), only the ORIGINALLY-SCOPED portion -- the
+# recto's own cipher tail, folio 20r / IIIF f23, 9 lines -- is transcribed below, as a SINGLE
+# careful pass (not two independent passes reconciled; see reconciliation.md for why and what a
+# second pass would need to check). The verso (folio 20v) and folio 21 recto continuation are
+# NOT transcribed here: native-resolution crops are saved (images/crops/f24_folio20v_*.jpg,
+# images/crops/f24_folio21r_*.jpg) for a dedicated follow-up transcription pass, sized to that
+# larger job. Grade: every token below is M (uncertain / cryptanalytic, not yet cross-checked
+# against a second reader) per rule 4. No H or C reading exists anywhere in this file.
+#
+# Symbol legend (best-effort visual approximation, not a claimed decryption key). A trailing
+# apostrophe marks a small cross/dot mark that recurs above certain stems (kept distinct from the
+# plain form since rule 2 forbids silently normalising what may be two different cipher symbols):
+#   n=hook/n-shape  v=plain v/u  x=cross x  z=z  o=round o  I=plain vertical stroke
+#   ρ=loop+descender (rho/p-like)   φ=stem through full loop (phi-like)
+#   λ=two strokes meeting at top (open lambda)   ℓ=looped ascender (script l)
+#   τ=cross/t-shape   τ'=τ with the small cross/dot mark   δ=stem with small flag near top
+#   θ=circle with a line through it   ε=open backward-c/3   α=small "a"-loop
+#   Δ/Λ=triangle/wedge   f=long-s/f (tall stem, crossbar)   s=s-curve   H=h with crossbar
+#   R=capital-R shape   G=looped tail shape   K/≤=hooked check-mark shape   ζ=z-with-tail
+#   χ=x-cross (distinct stroke weight from x)   π=n-with-feet   ✳=star/asterisk mark
+#   □=square/box   ▦=three small boxes in a row (one instance, r04)   3=digit 3 as itself
+#   plain arabic digits (7 etc.) appear as themselves, mixed into the symbol repertoire.
+# "?" would mark a token I could not resolve to any of the above at all; none had to be used at
+# this pass, but see reconciliation.md -- the absence of ANY repeated token across 86 tokens
+# (below) is itself evidence this single pass has not yet converged on one consistent code per
+# underlying glyph, and is the main reason a second, independent pass is needed before this text
+# is used for anything beyond "this letter is enciphered with a substitution alphabet of roughly
+# this size and shape."
+
+r03: nλvθ φλℓℓτ'ε nvxρfτ' nλφ ρτ'vλℓ τoλ θρIζoφα ℓδ+oφ nfφ nφI+f δvα✳φ f7
+r04: ρxsifv7Δ φfΛzΔlτ' nvxΔφνλℓ ρτ'Λλolρv Δzeovsτ'ρφ ▦▦▦ Λm7f ρoρτ'ρI Rφoφ□τ' ρvρIφl
+r05: Λδτ'I+fφνΔ τ'δfλoflε τΔνΔlofl nvxρΛτ'Δzil ρφρIvΔ φ7flzvlτ' ΛΛzΔlτ'Λ ΔvΔτ'oΔ Rfτ'sz
+r06: εφfzvτ'oΔ Rfτ' ovlΔτ' λofΛ □φρρ soIΛρτ'vIΛ oεφlΔτ'φl ρφρζΛνHτ' ≤zvρv nvτ'ρzf
+r07: φνλℓzνl θoxGτ' τΔvΔρφ Rψzτ'Δ Δτ'lτ'Δ φ7fρxθφΛlτ'7 fΛzf
+r08: Δzeovsφ □oΔρve ρφρIvΔτ' nvxφνλτ'ovλ ρφνλIsφΔ nvτ'lzvΛ ρφΛ Δzeovsτ'Λ τ'ℓΛφI+fφ
+r09: vΔIτ'Λ ρv szfρφ ρφlzvlΛφΔτ'νλ τ'φνΔτ' □z3ΔτΔ φlπΛIφΛνIΛ τ'fΘzΔτ'Λ 7fτ'oΔlεφ
+r10: ρφ□τ'Λlφz Τxfizf χ θIτ'f nvφρφρIoℓ Λφτ'+fφνΛ ΛzIℓ εzΔΛ ρφρoτ'τ'Δ nvτ'φΛφ
+r11: Τℓνφfl Δoxxφτ' ovlΔτ'sφfl Τzvφ ρφlIΔτ'Δ ρφεzΔΛ nvτ'ρφρoΛ□εφΔ nvτ'φnv7 □εΔΛ7 nvτ'φzf
+#
+# Rows 3-11 = the recto's own cipher tail (folio 20r, IIIF f23). Row 3 opens with a plain word
+# (read tentatively "panam", possibly a misreading of the tail of the preceding plain sentence
+# rather than a real word -- kept in the token stream as read, marked doubtful) before the cipher
+# begins; rows 4-11 are pure cipher, ending abruptly at the foot of the page with no punctuation,
+# confirming the passage continues onto the verso rather than closing here.
+#
+# Counts (this file's transcribed portion only, rows 03-11):
+#   total tokens: 86
+#   distinct token-strings: 86 (see the note above on why this is a transcription-noise signal,
+#     not a claim that no cipher word repeats in 86 tokens of French prose)
+#   token length in characters (proxy for "group length" -- this cipher is not numeral-grouped):
+#     1:1  2:2  3:5  4:9  5:7  6:14  7:14  8:10  9:14  10:5  11:2  12:1  13:2
+#   repeats: none at this pass (see caveat above)

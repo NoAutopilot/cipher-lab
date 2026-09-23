@@ -21,9 +21,53 @@
     },
     {
       "file": "btv1b10036146c_canvas23_folio20_carpi_cipher.jpg",
-      "canvas": "IIIF canvas index 23, headed 'C. Carpi 1526' in the same period hand (offset +3 from folio16/canvas16)",
-      "shows": "THE genuine cipher letter: Alberto Pio de Carpi to Madame [Louise de Savoie], Rome, dated in the finding aid 22 Oct 1525 (the leaf's own docket reads '1526', an Old/New Style discrepancy common for Jan-Mar but here likely a later archival slip, not re-dated by this sweep). Roughly the first three-quarters of the letter (about 25 lines) is plain French secretary hand ('Madame, ...'); the final third (about 8-9 lines) switches to a dense run of arithmetic-numeral cipher groups with a few non-numeral symbols mixed in -- a genuine 'presque entierement en chiffres' passage, though only for the letter's last section, not its whole length. No interlinear or facing decipherment visible on this leaf; no key bound with it here."
+      "canvas": "IIIF canvas index 23, headed 'C. Carpi 1526' in the same period hand (offset +3 from folio16/canvas16) -- this is a REDUCED-WIDTH (900px) thumbnail from the 20 Sept check-solved sweep; superseded for transcription by img/btv1b10036146c_f23_folio20r_full.jpg (see below)",
+      "shows": "SUPERSEDED CHARACTERISATION, kept for the record: this sweep's low-resolution view read the tail as an 'arithmetic-numeral cipher'. Full-resolution imaging on 23 Sept 2026 (see below) shows it is instead a symbol/glyph substitution alphabet, and that it continues far past this leaf. See ciphertext.txt for the corrected reading."
     }
   ],
-  "note": "Canvas-to-folio offset in this volume grows through the early gathering (canvas16=folio16, offset0; canvas21=folio19, offset+2; canvas23=folio20, offset+3), consistent with an extra unfoliated address/wrapper leaf per item. Not fully re-derived past folio ~31 (Raince's letter, catalogued folio 28, 'presque entierement en chiffres') -- canvases 31-33 sampled around the extrapolated position show only plain French prose, so Raince's cipher passage (if any) was not located this sweep; flagged as unfinished pinning, not a negative on that letter."
+  "images_added_23_sept_2026_transcription_pass": [
+    {
+      "file": "img/btv1b10036146c_f23_folio20r_full.jpg",
+      "iiif_image_id": "f23",
+      "resolution": "8315x6214, full IIIF resolution",
+      "shows": "Folio 20 recto (period ink foliation confirmed, docket 'C. Carpi 1526'): Alberto Pio de Carpi to Madame [Louise de Savoie]. About 20 lines plain French, then 9 lines of cipher (rows 3-11) ending abruptly at the foot of the page with no closing -- the letter continues onto the verso (see f24 below). Transcribed in ciphertext.txt (single pass, see reconciliation.md)."
+    },
+    {
+      "file": "img/btv1b10036146c_f24_folio20r_full.jpg",
+      "iiif_image_id": "f24",
+      "resolution": "8299x6214, full IIIF resolution",
+      "shows": "ONE photographed opening = folio 20 VERSO (left page: 22 lines cipher, then 2 plain paragraphs) + folio 21 RECTO (right page, period foliation '21' visible top right: 13 more cipher lines, then 2 plain closing paragraphs, date 'Rome ce xxvij [27] jour d'Octobre l'an mil Vc xxv [1525]', signed 'de Carpi'). This is the letter's actual ending; item 20 therefore spans 3 page-sides, not 1 (see ciphertext.txt header for the full correction and the date discrepancy against the finding aid's '22 oct.'). NOT transcribed past folio 20 recto this session; crops saved in crops/ for a follow-up pass."
+    },
+    {
+      "file": "img/btv1b10036146c_f25_folio20v_reduced.jpg",
+      "iiif_image_id": "f25",
+      "resolution": "1500px wide, reduced",
+      "shows": "Next opening after f24: folio 21 VERSO (left page, address panel with a wax-seal hole and mirror show-through of the letter's own last lines -- the outer wrapper of the folded letter, blank apart from the address) + a blank facing page. Confirms the letter's true close is on folio 21 recto (f24-right), not here; no further cipher."
+    },
+    {
+      "file": "img/btv1b10036146c_f34_folio28r_1600w.jpg",
+      "iiif_image_id": "f34",
+      "resolution": "1600px wide, reduced (refetch at /full/full/0/native.jpg for a transcription pass)",
+      "shows": "Folio 28 recto (period foliation '28' visible top right): Nicolas Raince to Madame [Louise de Savoie], opens 'Madame, pour ce que par les depesches de monseigneur le conte...', 2 plain paragraphs, then ~15 lines cipher in the SAME alphabet as folio 20/21 (confirmed by eye, including a shared rare 'three small boxes' mark -- see ciphertext_f28.txt). This is check-solved's item 28."
+    },
+    {
+      "file": "img/btv1b10036146c_f35_folio28v29r_1600w.jpg",
+      "iiif_image_id": "f35",
+      "resolution": "1600px wide, reduced",
+      "shows": "Folio 28 verso + folio 29 recto, one opening, BOTH PAGES entirely in cipher (no plain text at all), roughly 30 lines per page. Not transcribed; see ciphertext_f28.txt for extent and why."
+    },
+    {
+      "file": "img/btv1b10036146c_f36_folio29v30r_1600w.jpg",
+      "iiif_image_id": "f36",
+      "resolution": "1600px wide, reduced",
+      "shows": "Folio 29 verso (6 more cipher lines, then plain) + folio 30 recto (plain, closing 'Madame' paragraphs, date 'de Rome ce xxv[e] jour Doctobre l'an mil Vc xxv' [25 Oct 1525], signed 'Nicolas Raince' -- matches the finding aid's item 28 exactly)."
+    }
+  ],
+  "crops_added_23_sept_2026": [
+    "crops/f23_folio20r_cipherblock_{L,R}.jpg -- folio 20 recto cipher tail, transcribed in ciphertext.txt",
+    "crops/f24_folio20v_{top,bot}_{L,R}.jpg -- folio 20 verso, NOT transcribed, saved for follow-up",
+    "crops/f24_folio21r_{top,bot}_{L,R}.jpg -- folio 21 recto, NOT transcribed, saved for follow-up",
+    "crops/f34_folio28r_cipherstart_sample.jpg -- folio 28 recto cipher opening, sample only (alphabet-match confirmation), see ciphertext_f28.txt"
+  ],
+  "note": "Canvas-to-folio offset in this volume grows through the early gathering (canvas16=folio16, offset0; canvas21=folio19, offset+2; canvas23=folio20, offset+3; f34=folio28, offset+6) and is NOT linear -- extra unfoliated address/wrapper leaves are inserted irregularly (confirmed: f25 is folio 21's own wrapper, a leaf with no foliation of its own). Do not extrapolate folio position from a fixed per-canvas offset; read the period ink foliation (small numeral, top right of most rectos) directly from a full-resolution fetch instead. Folio 28 (Raince to Madame, item 28) is now located and characterised (f34-f36, see above) -- the 20 Sept sweep's 'not located' note for it is superseded. The four 1535 'Dechiffrement' leaves (ff.56, 60, 72, 76) were NOT located in this pass: canvases sampled at reduced width without success were f58, f60, f62, f64, f66, f68, f70, f72, f74, f76, f78 (a period annotation resembling 'Segrement'/cipher-related marginalia was seen near f64 but not confirmed as one of the four items); a denser bracket or the reading-room folio-search box would be needed next."
 }

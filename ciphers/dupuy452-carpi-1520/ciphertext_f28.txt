@@ -1,0 +1,49 @@
+# Nicolas Raince, secretaire de l'ambassade de France a Rome, to Madame [Louise de Savoie].
+# BnF Dupuy 452, folio "28" (period ink foliation confirmed visible top right of the recto).
+# Gallica ark:/12148/btv1b10036146c, IIIF image ids f34 (folio 28 recto), f35 (folio 28 verso +
+# folio 29 recto, one photographed opening, BOTH sides entirely in cipher), f36 (folio 29 verso +
+# folio 30 recto, 6 more cipher lines then the plain close). Located and characterised 23 Sept
+# 2026; NOT transcribed token-by-token this session (see below for why and what is deferred).
+#
+# Located by: paging forward canvas-by-canvas from folio 20/21 (f23-f25) past folio 24's letter
+# (Nicolas Raince to "Monseigneur" [Florimond Robertet], f29-f31, itself substantially enciphered
+# in the same alphabet despite carrying no "en chiffres" note in the finding aid -- a second
+# finding-aid omission, flagged as a lead only, not transcribed, not in this worker's brief) to
+# f32-f33 (a different, plain letter) and f34, where the period foliation "28" is visible and the
+# text matches the finding aid's item 28 exactly: opens "Madame, pour ce que par les depesches de
+# monseigneur le conte vous entendrez de tout...", references "Robertet", closes (on f36) "...de
+# Rome ce xxv[e] jour Doctobre l'an mil Vc xxv [1525]", signed "Nicolas Raince" -- matching the
+# finding aid's "25 oct. 1525, autogr." exactly.
+#
+# SAME CIPHER: confirmed by eye. The glyph shapes match item 20's alphabet (Alberto Pio de Carpi
+# to the same recipient, ciphertext.txt in this folder) letter-for-letter in style -- the same
+# rho/phi/theta/lambda/delta-flag/triangle repertoire, the same lack of reliable word-spacing, and
+# critically the same rare "three small boxes in a row" mark (▦▦▦, coded that way in
+# ciphertext.txt's r04) recurs on this leaf too (images/crops/f34_folio28r_cipherstart_sample.jpg,
+# row 8 of the sample). One shared, distinctive multi-character mark reappearing across two
+# different senders' letters in the same fortnight is real (if informal) evidence for a single
+# embassy cipher used by both Carpi and Raince in Rome, Oct 1525 -- strengthens the "look for the
+# sibling" lead toward Raince's own later (1526) key in BnF fr.2984 (Tomokiyo, francis.htm; see
+# NOTES.md "Key-family leads"), since that key would be the same secretary's system a year on.
+#
+# EXTENT (why this is not transcribed token-by-token this session): item 28 is markedly LARGER
+# than item 20. Cipher runs: folio 28 recto, ~15 lines (after 2 plain paragraphs); folio 28 verso
+# + folio 29 recto (f35), BOTH FULL PAGES entirely in cipher, no plain text at all, ~30 lines each
+# = ~60 lines; folio 29 verso, 6 more cipher lines before the plain close (f36). Total on the
+# order of 80 cipher lines, roughly 900-1000 tokens at this hand's ~11-12 tokens/line -- about
+# twice the extent of item 20's already-corrected ~500 tokens, and roughly 10-12x the ~70-90
+# tokens the 23 Sept check-solved sweep estimated for the SMALLER of the two items. This is a
+# significant further correction to that sweep's characterisation of the whole "M6" cluster and is
+# reported in NOTES.md; it is not itself a novelty claim (rule 10) -- only length and cipher-type.
+#
+# NOT DONE: no per-token transcription. A representative sample crop (the recto's cipher opening,
+# images/crops/f34_folio28r_cipherstart_sample.jpg, ~15 lines) is saved to confirm the alphabet
+# match above; images/img/btv1b10036146c_f34_folio28r_1600w.jpg, _f35_folio28v29r_1600w.jpg and
+# _f36_folio29v30r_1600w.jpg (1600 px wide, moderate file size, NOT full IIIF resolution -- refetch
+# at /full/full/0/native.jpg from the same ark for a transcription pass) are saved so a dedicated
+# follow-up transcription worker does not need to re-locate or re-fetch this item. Given item 28 is
+# ~2x item 20's already-corrected size, and item 20's own full transcription was itself deferred
+# past this session's cap (see reconciliation.md), attempting item 28's ~900 tokens in the same
+# session was judged out of proportion to this worker's brief and budget. Recommended as its own
+# properly-scoped transcription job, ideally after folio 20's continuation (verso + folio 21r) is
+# done and a stable glyph inventory exists to read both against.
