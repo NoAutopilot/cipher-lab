@@ -1,0 +1,42 @@
+# Best-scoring key of the joint anneal (run T-joint-mapB, runs.tsv), 23 Sept 2026. NOT A READING:
+# it scores -3.82 nats/token against -4.23 for the same search on shuffled tokens, while solved matched
+# controls score -1.95 to -2.49 (margin about 1.9). Kept only so the negative is reproducible.
+# sign<TAB>value (map B labels: f.70 E merged with f.68 B; empty value = null)
+R	g
+8	l
+H	
+c	a
+E	m
+D	la
+F	r
+p	e
+B	t
++	a
+n	f
+r	c
+z	a
+S	d
+x	ed
+J	i
+g	et
+k	al
+Q	i
+d	e
+>	s
+M	el
+-	in
+f	non
+7	o
+V	de
+3	u
+4	o
+W	an
+K	u
+Y	n
+O	b
+e	h
+X	o
+b	u
+s	lo
+P	x
+6	p

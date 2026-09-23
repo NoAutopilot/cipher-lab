@@ -1,0 +1,724 @@
+{
+ "files": [
+  "ciphertext.txt"
+ ],
+ "context": "none",
+ "scoring": "gen",
+ "p_null": 0.03,
+ "restarts": 16,
+ "iters": 300000,
+ "T0": 3.0,
+ "T1": 0.05,
+ "caps": {
+  "syl": 6,
+  "word": 4,
+  "null": 2,
+  "homo": 4
+ },
+ "fix": {},
+ "syl": "vc",
+ "shuffle": null,
+ "ntokens": 404,
+ "nsigns": 26,
+ "scores": [
+  -1426.1936265426027,
+  -1461.7817849170551,
+  -1469.16202283837,
+  -1479.1443048345536,
+  -1485.9844470293785,
+  -1487.4084919595648,
+  -1487.786136068223,
+  -1488.7998121676155,
+  -1524.8740174768143,
+  -1528.354373449412,
+  -1531.4079956548353,
+  -1535.353941060921,
+  -1551.1192438421274,
+  -1554.9699996436364,
+  -1574.8636105739697,
+  -1580.513349976088
+ ],
+ "best": {
+  "score": -1426.1936265426027,
+  "lm": -1178.626140880282,
+  "prior": -247.56748566232073,
+  "units": 0.0,
+  "key": {
+   "R": "c",
+   "8": "e",
+   "H": "",
+   "c": "t",
+   "E": "de",
+   "D": "m",
+   "F": "i",
+   "p": "l",
+   "B": "a",
+   "+": "s",
+   "n": "che",
+   "r": "",
+   "z": "r",
+   "S": "e",
+   "x": "d",
+   "J": "e",
+   "g": "i",
+   "k": "u",
+   "Q": "n",
+   "d": "o",
+   ">": "che",
+   "M": "per",
+   "-": "d",
+   "f": "g",
+   "7": "in",
+   "V": "u"
+  },
+  "reading": [
+   [
+    "ciphertext.txt",
+    "cetdemilatadeschesiaredelituilchelinataiaeoecheiosildemeipereaiadodelasdelisoluiilatadetassideleoetodeogiocheatiilatoelsmimasechelodeledeliosideleleaandesietasinalaseentineinducheuearsaredeins {CETERACHENUINOSAPIAMO} uaeedunanotm {QUESTINECERCHAMONEDOMANDAMO} arelienoli {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} ueraleils {NOSTRARAXONE} depersodelunaentineadaueraetiaelelaeliodeladetualeeteldescheiedeladetsotodeteloetcheioleraleil {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} miapermdecedeeserideleleoildlseenachenelodendeilatoelchetu {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} permiadeuellasu {SETRALORONOGLISERANOMAUNOCHENOHABIA} mdeaodeindeelidelasu {DEBITAMENTELODEBIAMOHAUERE} easaealatiieilchetdeliamdee"
+   ]
+  ]
+ },
+ "per_token": -3.5301822439173334,
+ "runs": [
+  {
+   "score": -1426.1936265426027,
+   "lm": -1178.626140880282,
+   "prior": -247.56748566232073,
+   "units": 0.0,
+   "key": {
+    "R": "c",
+    "8": "e",
+    "H": "",
+    "c": "t",
+    "E": "de",
+    "D": "m",
+    "F": "i",
+    "p": "l",
+    "B": "a",
+    "+": "s",
+    "n": "che",
+    "r": "",
+    "z": "r",
+    "S": "e",
+    "x": "d",
+    "J": "e",
+    "g": "i",
+    "k": "u",
+    "Q": "n",
+    "d": "o",
+    ">": "che",
+    "M": "per",
+    "-": "d",
+    "f": "g",
+    "7": "in",
+    "V": "u"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "cetdemilatadeschesiaredelituilchelinataiaeoecheiosildemeipereaiadodelasdelisoluiilatadetassideleoetodeogiocheatiilatoelsmimasechelodeledeliosideleleaandesietasinalaseentineinducheuearsaredeins {CETERACHENUINOSAPIAMO} uaeedunanotm {QUESTINECERCHAMONEDOMANDAMO} arelienoli {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} ueraleils {NOSTRARAXONE} depersodelunaentineadaueraetiaelelaeliodeladetualeeteldescheiedeladetsotodeteloetcheioleraleil {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} miapermdecedeeserideleleoildlseenachenelodendeilatoelchetu {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} permiadeuellasu {SETRALORONOGLISERANOMAUNOCHENOHABIA} mdeaodeindeelidelasu {DEBITAMENTELODEBIAMOHAUERE} easaealatiieilchetdeliamdee"
+    ]
+   ]
+  },
+  {
+   "score": -1461.7817849170551,
+   "lm": -1255.8498576151906,
+   "prior": -205.93192730186456,
+   "units": 0.0,
+   "key": {
+    "R": "h",
+    "8": "a",
+    "H": "u",
+    "c": "s",
+    "E": "e",
+    "D": "d",
+    "F": "e",
+    "p": "t",
+    "B": "i",
+    "+": "m",
+    "n": "al",
+    "r": "r",
+    "z": "n",
+    "S": "o",
+    "x": "per",
+    "J": "a",
+    "g": "u",
+    "k": "et",
+    "Q": "l",
+    "d": "",
+    ">": "con",
+    "M": "n",
+    "-": "o",
+    "f": "c",
+    "7": "ar",
+    "V": "p"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "hausedetiusiemalmerinoperatusetetaltelisieioaconumetedaunaieioetimperatumtetuetiusiesimumeetoarsecerconirseetiusotmdedimacontetoperatuumeetotaiiloameasimeliutrimoalsaraaroetconpainminaearm {CETERACHENUINOSAPIAMO} piaaoetlilsd {QUESTINECERCHAMONEDOMANDAMO} inatealte {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} panitraetm {NOSTRARAXONE} enrmetretlialsaraioipaniaseiotatiateperatiespitaasatouamaleoperatiesmsoasatosaletanitraet {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} deindehaueamanueetotautotmoaliallotelooetiusotconsp {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} ndeirepotrtimp {SETRALORONOGLISERANOMAUNOCHENOHABIA} deieareatueetimp {DEBITAMENTELODEBIAMOHAUERE} aimiaiutrisuuoetconsperatuiduea"
+    ]
+   ]
+  },
+  {
+   "score": -1469.16202283837,
+   "lm": -1133.9834735542536,
+   "prior": -335.17854928411634,
+   "units": 0.0,
+   "key": {
+    "R": "at",
+    "8": "e",
+    "H": "ad",
+    "c": "u",
+    "E": "",
+    "D": "t",
+    "F": "",
+    "p": "a",
+    "B": "i",
+    "+": "n",
+    "n": "o",
+    "r": "l",
+    "z": "u",
+    "S": "t",
+    "x": "o",
+    "J": "d",
+    "g": "m",
+    "k": "in",
+    "Q": "c",
+    "d": "i",
+    ">": "per",
+    "M": "de",
+    "-": "et",
+    "f": "lo",
+    "7": "r",
+    "V": "s"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "ateadutaiaduinonliutodamuinaoaciuiitieperminatemdediietiainodamniainmaiaduiuinadnatieluiiloilperiluaiaduitanttineperaiatodamiadnataeiiceteneuinciadalintecureretinperseiuniuern {CETERACHENUINOSAPIAMO} sideetinciciut {QUESTINECERCHAMONEDOMANDAMO} iudaecia {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} seuialdan {NOSTRARAXONE} delnialinciecureietiseuieuitadaidaiodaiusiaedueaetaddnotodaiuniuietdueaituoiaeuialda {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} tidetateaddneuadataeimaetantecioctaicettaiaduitaperus {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} detilstalains {SETRALORONOGLISERANOMAUNOCHENOHABIA} tiireaadains {DEBITAMENTELODEBIAMOHAUERE} dinidiadaliummtaperuodamitadd"
+    ]
+   ]
+  },
+  {
+   "score": -1479.1443048345536,
+   "lm": -1266.3534452363383,
+   "prior": -212.7908595982152,
+   "units": 0.0,
+   "key": {
+    "R": "f",
+    "8": "a",
+    "H": "r",
+    "c": "i",
+    "E": "a",
+    "D": "et",
+    "F": "i",
+    "p": "n",
+    "B": "e",
+    "+": "l",
+    "n": "ma",
+    "r": "",
+    "z": "t",
+    "S": "o",
+    "x": "c",
+    "J": "o",
+    "g": "t",
+    "k": "che",
+    "Q": "d",
+    "d": "u",
+    ">": "per",
+    "M": "",
+    "-": "u",
+    "f": "ap",
+    "7": "m",
+    "V": "s"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "fariaetineriealmalietoconticheinmanideieieouapertulinaetatoeieuuanelcontlunchetinerieaielrlianouaiuauapiupereiiineriuonletietelapernuanoconturlianonaeedualiaieliderneloadimamuchepersaetletaaml {CETERACHENUINOSAPIAMO} seoauchededuiet {QUESTINECERCHAMONEDOMANDAMO} etoniaduni {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} satenoinl {NOSTRARAXONE} aluanchedeadimaeuesateaiieononeoniuconeaisenaoianurolmaioconeailuiuuoianuoimaiunatenoin {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} etieetafaraolatrianonautnunloademadonuaduoineriuonperis {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} etieasonnels {SETRALORONOGLISERANOMAUNOCHENOHABIA} etaeuamaanrianels {DEBITAMENTELODEBIAMOHAUERE} oeleoerneittoinpericonteetrao"
+    ]
+   ]
+  },
+  {
+   "score": -1485.9844470293785,
+   "lm": -1182.752844773233,
+   "prior": -303.2316022561456,
+   "units": 0.0,
+   "key": {
+    "R": "f",
+    "8": "e",
+    "H": "e",
+    "c": "t",
+    "E": "la",
+    "D": "l",
+    "F": "i",
+    "p": "",
+    "B": "a",
+    "+": "s",
+    "n": "ar",
+    "r": "r",
+    "z": "d",
+    "S": "u",
+    "x": "o",
+    "J": "r",
+    "g": "i",
+    "k": "os",
+    "Q": "t",
+    "d": "o",
+    ">": "c",
+    "M": "de",
+    "-": "n",
+    "f": "is",
+    "7": "in",
+    "V": "et"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "feetlaliaetalasarsiraduoritosiaritataiauoeciosilaleideraianolaasorisoosiiaetalatasesilauoertolaoisiorcartiiaetouslilasecolauorioesilaueaatnesietasitaerasuettineinnosceteadsadelains {CETERACHENUINOSAPIAMO} etarenostatotl {QUESTINECERCHAMONEDOMANDAMO} adrietoi {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} etedarris {NOSTRARAXONE} ladersolarostaettineanaetedaetiaurariooralatetaertenersariuoralatsotonrteoutarioedarri {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} liadellafeelarsedeilaueoinsuetaartuolatnuiaetouctet {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} deliarlaeturaset {SETRALORONOGLISERANOMAUNOCHENOHABIA} llaaolainlaeeilaaset {DEBITAMENTELODEBIAMOHAUERE} rasaraeratiiuictorialelar"
+    ]
+   ]
+  },
+  {
+   "score": -1487.4084919595648,
+   "lm": -1298.7948813846633,
+   "prior": -188.6136105749015,
+   "units": 0.0,
+   "key": {
+    "R": "p",
+    "8": "a",
+    "H": "t",
+    "c": "r",
+    "E": "",
+    "D": "et",
+    "F": "al",
+    "p": "i",
+    "B": "e",
+    "+": "s",
+    "n": "at",
+    "r": "ma",
+    "z": "l",
+    "S": "t",
+    "x": "eq",
+    "J": "u",
+    "g": "de",
+    "k": "o",
+    "Q": "u",
+    "d": "e",
+    ">": "per",
+    "M": "la",
+    "-": "n",
+    "f": "d",
+    "7": "in",
+    "V": "c"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "patretalietresatsalmaeltequideroaliatialuerealeteaperdeesalietadelauealeneiesequideseiodealietrerestsaliteamareedalemaperemaralalietretisetaletesaperieitequideetsalitiaeeunasalaresaluetimaestaurinainnopercaelselains {CETERACHENUINOSAPIAMO} ceuanoueueret {QUESTINECERCHAMONEDOMANDAMO} eluialaueial {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} caleimaualis {NOSTRARAXONE} lamaseimaoueaurinaenecalearaletiuieuialeequierceiauraintusataltequierserenuraietrataleialeimauali {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} etalelaetpatusaltalitiaedeinistaueatutieuntalietretiperrc {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} laetalemactimaiesc {SETRALORONOGLISERANOMAUNOCHENOHABIA} eteeinaitaliesc {DEBITAMENTELODEBIAMOHAUERE} ueseuetimaerdedetaliperrequideeettu"
+    ]
+   ]
+  },
+  {
+   "score": -1487.786136068223,
+   "lm": -1273.4328147292836,
+   "prior": -214.3533213389394,
+   "units": 0.0,
+   "key": {
+    "R": "os",
+    "8": "a",
+    "H": "s",
+    "c": "e",
+    "E": "l",
+    "D": "",
+    "F": "o",
+    "p": "i",
+    "B": "e",
+    "+": "t",
+    "n": "an",
+    "r": "n",
+    "z": "per",
+    "S": "d",
+    "x": "ar",
+    "J": "c",
+    "g": "u",
+    "k": "de",
+    "Q": "r",
+    "d": "",
+    ">": "m",
+    "M": "in",
+    "-": "che",
+    "f": "un",
+    "7": "et",
+    "V": "r"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "osaseloieseeltantoneperdarciuedeoianioreeeoedamutoilauinceoechelietarciutideuoieseeleetstolidanelunonmeneooieseditoetamilidarciustolidiaeercheatoaeetoresinetdareetaetchedemraeperteperalett {CETERACHENUINOSAPIAMO} recachederere {QUESTINECERCHAMONEDOMANDAMO} epercioario {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} rapereincoit {NOSTRARAXONE} linntlindereareetaecheerapereaeoediciecioarcielereiaceaichesctanodarcieletecheceaideanoiapereincoi {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} oeinlosaslctapersolidiauicheitdareanrdilrchedoiesedimer {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} inoenlrdinietr {SETRALORONOGLISERANOMAUNOCHENOHABIA} leletlaisolietr {DEBITAMENTELODEBIAMOHAUERE} cetecesineeuudoimearciueslc"
+    ]
+   ]
+  },
+  {
+   "score": -1488.7998121676155,
+   "lm": -1255.7315169535577,
+   "prior": -233.0682952140579,
+   "units": 0.0,
+   "key": {
+    "R": "i",
+    "8": "n",
+    "H": "s",
+    "c": "a",
+    "E": "",
+    "D": "la",
+    "F": "u",
+    "p": "e",
+    "B": "r",
+    "+": "a",
+    "n": "c",
+    "r": "de",
+    "z": "o",
+    "S": "m",
+    "x": "en",
+    "J": "t",
+    "g": "i",
+    "k": "in",
+    "Q": "o",
+    "d": "l",
+    ">": "d",
+    "M": "al",
+    "-": "i",
+    "f": "as",
+    "7": "i",
+    "V": ""
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "insalauersaracauderomenteiainueceuorarurmlndilauelanialtrurileraenteialeiniuersararasauemlndeallasuldedrdeauuersalmealaularandelementeilsauemenrroinaunarauorsederamnoainiiindnroaronia {CETERACHENUINOSAPIAMO} rtniinorolala {QUESTINECERCHAMONEDOMANDAMO} roteunoleu {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} noredetuea {NOSTRARAXONE} aldealedeinornoainrirnornaurmeterteulenterarentaneistacumenteraalalitanelmaculenoredetue {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} laurallainstanosuemenlieieamnorcomeloimuersalmeda {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} allaurdemedeera {SETRALORONOGLISERANOMAUNOCHENOHABIA} larlinesuera {DEBITAMENTELODEBIAMOHAUERE} trartrsederaiimuedaenteirlast"
+    ]
+   ]
+  },
+  {
+   "score": -1524.8740174768143,
+   "lm": -1296.7095664618537,
+   "prior": -228.16445101496055,
+   "units": 0.0,
+   "key": {
+    "R": "per",
+    "8": "",
+    "H": "l",
+    "c": "e",
+    "E": "i",
+    "D": "n",
+    "F": "u",
+    "p": "a",
+    "B": "r",
+    "+": "a",
+    "n": "d",
+    "r": "n",
+    "z": "et",
+    "S": "i",
+    "x": "an",
+    "J": "o",
+    "g": "s",
+    "k": "g",
+    "Q": "e",
+    "d": "t",
+    ">": "m",
+    "M": "ma",
+    "-": "de",
+    "f": "er",
+    "7": "c",
+    "V": "p"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "perleinuarleriadaunretianoaseguadauereruritmstauainsmaorurdetiaraanoasatagsuarlerieralauiaitnetiterutnmrneuuarletiaanunramatiaianoastlauiaiarredeauerauerlanraieeccdegmpretaretica {CETERACHENUINOSAPIAMO} prodegereten {QUESTINECERCHAMONEDOMANDAMO} retoauetau {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} petranouaa {NOSTRARAXONE} imanatiangereecrderpetreuriaoaroautanoariepraoeadeloaduianoarieatetdeoeatiedutaetranoua {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} nurmaniperlioaetluiaiatsadeaaierdeiatiedeiuarletiamep {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} manurnipianarap {SETRALORONOGLISERANOMAUNOCHENOHABIA} nirticialuiarap {DEBITAMENTELODEBIAMOHAUERE} orarorlanressiuameanoasrnlio"
+    ]
+   ]
+  },
+  {
+   "score": -1528.354373449412,
+   "lm": -1240.372009165585,
+   "prior": -287.98236428382677,
+   "units": 0.0,
+   "key": {
+    "R": "an",
+    "8": "o",
+    "H": "c",
+    "c": "i",
+    "E": "u",
+    "D": "et",
+    "F": "d",
+    "p": "",
+    "B": "e",
+    "+": "a",
+    "n": "a",
+    "r": "r",
+    "z": "p",
+    "S": "t",
+    "x": "a",
+    "J": "n",
+    "g": "n",
+    "k": "a",
+    "Q": "l",
+    "d": "i",
+    ">": "el",
+    "M": "ma",
+    "-": "s",
+    "f": "non",
+    "7": "er",
+    "V": "m"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "anociuetdecieuaaadreptanniadadleiedetioelniaduetonmanedesiueaannaiandecieuieacadutioriiuinondireleriddeciitaetdeteaoeliutannicadutoeelsoadoieadlecreatolieroersaelmoepaepouera {CETERACHENUINOSAPIAMO} menosaleliiet {QUESTINECERCHAMONEDOMANDAMO} epndolid {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} mopernda {NOSTRARAXONE} umaraiuraleolieroesemopeoidetnendianeuimeonioscnaadtaneuiaiiisnioitiadiopernd {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} etdemaetuanocunaopcdutoinsatolealtiulstdeciitelim {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} maetderumtream {SETRALORONOGLISERANOMAUNOCHENOHABIA} etueiueruocdueam {DEBITAMENTELODEBIAMOHAUERE} neaenecreinntdelianneetcun"
+    ]
+   ]
+  },
+  {
+   "score": -1531.4079956548353,
+   "lm": -1322.6309401214821,
+   "prior": -208.77705553335318,
+   "units": 0.0,
+   "key": {
+    "R": "r",
+    "8": "i",
+    "H": "che",
+    "c": "l",
+    "E": "de",
+    "D": "la",
+    "F": "",
+    "p": "s",
+    "B": "i",
+    "+": "a",
+    "n": "d",
+    "r": "t",
+    "z": "n",
+    "S": "e",
+    "x": "p",
+    "J": "er",
+    "g": "o",
+    "k": "on",
+    "Q": "u",
+    "d": "e",
+    ">": "c",
+    "M": "per",
+    "-": "n",
+    "f": "x",
+    "7": "in",
+    "V": "m"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "richeldelasichelideadatinepersolonsdsuiliieeicoeasdelaiopereriinedesiapersoaesonosichelideliacheadeseeitledeexetcitlsicheleesalalaiaicsedesepersoecheadesesiiiuniailiauichestiaeiuliniinnoncmiinainideina {CETERACHENUINOSAPIAMO} mierinonuiuella {QUESTINECERCHAMONEDOMANDAMO} inersiues {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} ministersa {NOSTRARAXONE} depertaedestonuiiuliniiniminiiliesersiersepersidelmisierlisncheeradepersidelaelenerliseeldesinisters {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} laiperladerichedeerainchedesesieosnsaeiuiduesedeunesicheleesclm {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} perlaitdemestsiam {SETRALORONOGLISERANOMAUNOCHENOHABIA} ladeiedeindeischedesiam {DEBITAMENTELODEBIAMOHAUERE} eriaierichestilooesclpersoilachedeer"
+    ]
+   ]
+  },
+  {
+   "score": -1535.353941060921,
+   "lm": -1322.4801791664213,
+   "prior": -212.87376189449958,
+   "units": 0.0,
+   "key": {
+    "R": "af",
+    "8": "a",
+    "H": "n",
+    "c": "o",
+    "E": "t",
+    "D": "e",
+    "F": "u",
+    "p": "i",
+    "B": "i",
+    "+": "",
+    "n": "che",
+    "r": "r",
+    "z": "s",
+    "S": "c",
+    "x": "h",
+    "J": "el",
+    "g": "l",
+    "k": "et",
+    "Q": "d",
+    "d": "e",
+    ">": "m",
+    "M": "ad",
+    "-": "n",
+    "f": "la",
+    "7": "per",
+    "V": "s"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "afanoteuiinoitcheurischeliloetuicheiudioiuiceamleuitealadeliuinetiihelileietluiinoitoinuticearoetelauermirouuiinoecieueiamietichelilenuticiaiidnauaoiudiniricadoperapernetmsaisisatper {CETERACHENUINOSAPIAMO} sielanetdideoe {QUESTINECERCHAMONEDOMANDAMO} iseliuadeiu {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} sasiirelui {NOSTRARAXONE} tadretiretdiadoperainisasiaouicieliieliueheliitosiiaeloainnelcheucheliitoeoeneloaiecocheueiasiirelui {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} euiadetafantelasnuticiaelinicadichedcietdncuiinoecimos {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} adeuirtsciriis {SETRALORONOGLISERANOMAUNOCHENOHABIA} etietpertainutiis {DEBITAMENTELODEBIAMOHAUERE} eliieliniriollcuimohelilientel"
+    ]
+   ]
+  },
+  {
+   "score": -1551.1192438421274,
+   "lm": -1392.0341387279332,
+   "prior": -159.08510511419425,
+   "units": 0.0,
+   "key": {
+    "R": "in",
+    "8": "t",
+    "H": "",
+    "c": "e",
+    "E": "s",
+    "D": "i",
+    "F": "et",
+    "p": "e",
+    "B": "a",
+    "+": "l",
+    "n": "ar",
+    "r": "r",
+    "z": "r",
+    "S": "m",
+    "x": "an",
+    "J": "d",
+    "g": "r",
+    "k": "p",
+    "Q": "i",
+    "d": "o",
+    ">": "n",
+    "M": "u",
+    "-": "che",
+    "f": "od",
+    "7": "al",
+    "V": "con"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "intesieteaeaslarletrarmanderepeteareetiaeaetamotnroletesitrudaetacheosealanderloepreteaeasealletsemotreosoodetornareeteteaeomelietialtneosemanderoletsemetaaichetlettealetiaeralmtiealtalchepncontarlartsall {CETERACHENUINOSAPIAMO} conadtchepiaioei {QUESTINECERCHAMONEDOMANDAMO} ardeettioeet {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} contraerdetel {NOSTRARAXONE} surloserpiatiealtacheacontrateetamedeadeetoandeaseconaetdetechedlaretmandeaseloeochedeteomearetoetraerdete {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} ietauisintsdltretsemetorecheelmtiaarimeosichemeteaeomenecon {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} uietarsconmerealcon {SETRALORONOGLISERANOMAUNOCHENOHABIA} isaosalsteetsealcon {DEBITAMENTELODEBIAMOHAUERE} daladaeraerrmeteneanderaisd"
+    ]
+   ]
+  },
+  {
+   "score": -1554.9699996436364,
+   "lm": -1388.3017266914248,
+   "prior": -166.66827295221145,
+   "units": 0.0,
+   "key": {
+    "R": "em",
+    "8": "a",
+    "H": "s",
+    "c": "et",
+    "E": "n",
+    "D": "",
+    "F": "o",
+    "p": "u",
+    "B": "e",
+    "+": "i",
+    "n": "non",
+    "r": "r",
+    "z": "d",
+    "S": "t",
+    "x": "ut",
+    "J": "i",
+    "g": "s",
+    "k": "on",
+    "Q": "l",
+    "d": "a",
+    ">": "s",
+    "M": "d",
+    "-": "c",
+    "f": "el",
+    "7": "in",
+    "V": "c"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "emasetnoueseteninonioredtutiusetonounonuoleeteoetaassaiounasdieoecanueiutiusiauonsoueseteneteisionutaaretanaeloarseretoouesetatuioeiasuanututiusasionutuaeelcaioaeteiolesureitaletinainconscaediedanini {CETERACHENUINOSAPIAMO} ceiaconlelaet {QUESTINECERCHAMONEDOMANDAMO} ediuoalauo {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} cadeurioui {NOSTRARAXONE} ndrianuronlealetinaececadeaetoetuiueiuoautiuenetceuaietaucsiinonotutiuenetiaetacietauatetnonoauadeuriou {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} oednemasniiadsonutuaasucuitalenonltuanlctouesetatusetc {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} doerncturueic {SETRALORONOGLISERANOMAUNOCHENOHABIA} neaninnausonueic {DEBITAMENTELODEBIAMOHAUERE} ieieiesureetsstousetutiusesni"
+    ]
+   ]
+  },
+  {
+   "score": -1574.8636105739697,
+   "lm": -1279.3602551743388,
+   "prior": -295.5033553996308,
+   "units": 0.0,
+   "key": {
+    "R": "od",
+    "8": "e",
+    "H": "",
+    "c": "l",
+    "E": "",
+    "D": "c",
+    "F": "a",
+    "p": "u",
+    "B": "a",
+    "+": "r",
+    "n": "e",
+    "r": "o",
+    "z": "r",
+    "S": "d",
+    "x": "es",
+    "J": "t",
+    "g": "p",
+    "k": "an",
+    "Q": "t",
+    "d": "i",
+    ">": "che",
+    "M": "n",
+    "-": "m",
+    "f": "n",
+    "7": "ar",
+    "V": "s"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "odelcaualareraoardestuplanaueuatalaaadiechepiraucepntaaamiuarestupriuanpaualalarraudieoliinaiocheaolaaualidurcacarecheuiudestupiraudueaatmeraelaratauoardetlarearmanchesearrarearr {CETERACHENUINOSAPIAMO} satemantatilc {QUESTINECERCHAMONEDOMANDAMO} artuaetiua {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} serauotaur {NOSTRARAXONE} noriuoantaetlareamaseraelaadutuatuaiestualsauetleumtreadestualrilimtleuidleaiuerauotau {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} caancodetreraudueipumurdetaetduitmdaualiduchels {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} ncaaosduouars {SETRALORONOGLISERANOMAUNOCHENOHABIA} caiareuauars {DEBITAMENTELODEBIAMOHAUERE} taratauoalppdauchelestupact"
+    ]
+   ]
+  },
+  {
+   "score": -1580.513349976088,
+   "lm": -1310.0135148614645,
+   "prior": -270.49983511462347,
+   "units": 0.0,
+   "key": {
+    "R": "u",
+    "8": "o",
+    "H": "l",
+    "c": "a",
+    "E": "",
+    "D": "an",
+    "F": "d",
+    "p": "e",
+    "B": "r",
+    "+": "e",
+    "n": "n",
+    "r": "et",
+    "z": "ad",
+    "S": "i",
+    "x": "n",
+    "J": "i",
+    "g": "t",
+    "k": "s",
+    "Q": "e",
+    "d": "r",
+    ">": "de",
+    "M": "it",
+    "-": "al",
+    "f": "in",
+    "7": "m",
+    "V": "p"
+   },
+   "reading": [
+    [
+     "ciphertext.txt",
+     "uolaanderlarenedetradinietasdenederardrirodetredeanotitirdralrerenieterestderlarareledeiroetarrindretderetadderlarieeandanreodeereinietrledeieorrealoedoarederleetreioeamomalsdeporaderadome {CETERACHENUINOSAPIAMO} prioalsereraan {QUESTINECERCHAMONEDOMANDAMO} radiedoered {TOCHAADNUICERCHAREQUESTOMASOLAMENTECERCHAMOCONLONOMEDEDIO} poadreetidee {NOSTRARAXONE} itetereetseroeamoralrpoadroadrieieriedrnierapreoiaoealliendinieraeraraliaoeriandreoadreetide {GLIHAUEMORECHIESTOSIANOCONTENTIFARGLIQUELLOEDICTOETADQUELLOSEREFFEREMO} andritanuolieoadldeieortealeeioerneierealiderlariedeap {UOGLIAESSERECONTENTOMETTEREPERSCRIPTO} itandretpieeterep {SETRALORONOGLISERANOMAUNOCHENOHABIA} anrrmoelderep {DEBITAMENTELODEBIAMOHAUERE} irerirleetrattidedeanietranli"
+    ]
+   ]
+  }
+ ]
+}
