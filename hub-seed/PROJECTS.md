@@ -5,7 +5,7 @@ reads the live numbers from each repository; this file is the durable index.
 
 | Project | Repository | What it is | Owner | Status | Blocked on |
 |---|---|---|---|---|---|
-| cipher-lab | NoAutopilot/cipher-lab | Reading historical ciphers nobody has read. Access-bound, not compute-bound. | Ryan | active, 10 targets | Two credentials to rotate; four archives to answer; see its `ASKS.md` |
+| cipher-lab | NoAutopilot/cipher-lab | Reading historical ciphers nobody has read. Access-bound, not compute-bound. | the owner | active, 10 targets | Two credentials to rotate; four archives to answer; see its `ASKS.md` |
 
 ## Adding a project
 

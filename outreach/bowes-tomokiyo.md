@@ -17,7 +17,7 @@ clear sentences (Cobham, Smallet, Glencairn, Maineville, Huntly, Mauvissiere, Ru
 substitution with second signs for a, e and g. One consistent sign table reads 93 of your 101 tokens (82 with the
 printed names as check, 8 uncertain, 3 where the key and the printed name disagree by one letter); 8 tokens are
 unread. Because the plaintext has been in print since 1842, this is a re-decipherment, not a reading of unknown
-text, and we make no other claim. The table (key.tsv), the alignment (reading.tsv) and our search log (AUDIT.md) are attached. [If the repository has been made public by the time this is sent, replace this sentence with the link https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bowes-walsingham-1583 .]
+text, and we make no other claim. The table, the alignment and our search log are here: https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bowes-walsingham-1583 (AUDIT.md gives the search).
 
 If it is useful for your page, please use it with whatever credit you think right. We would also welcome any
 correction, especially on the three tokens where the key and the print disagree, since we have not seen the

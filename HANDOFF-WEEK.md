@@ -1,9 +1,9 @@
 # Week handoff, 21 to 28 September 2026
 
-Ryan is away this week. This file says what he must do before he goes, what a teammate can carry alone, and
+The owner is away this week. This file says what he must do before he goes, what a teammate can carry alone, and
 what simply waits. Read `ONBOARDING.md` first if you are new, then `CLAUDE.md`, then this.
 
-## Ten minutes from Ryan before he goes
+## Ten minutes from the owner before he goes
 
 These four unblock other people. Everything else can wait a week; these cannot.
 
@@ -17,13 +17,13 @@ These four unblock other people. Everything else can wait a week; these cannot.
    deadline in the project. One line: does lot 1184 include a pocket dictionary? Contact is on the lot page.
 3. **Decide who may write to archives.** The copy requests in each target's `REQUEST.md` are drafted and
    ready. If a teammate may send them from their own address, say so in `ASKS.md` and note that replies will
-   go to that address, not Ryan's. If not, all four archive asks wait for his return.
+   go to that address, not the owner's. If not, all four archive asks wait for his return.
 4. **Decide about the twenty dollars.** The Kansas order for Stair 1710 needs a card. Either place it before
    leaving (three business days, so it would arrive while he is away) or it waits.
 
 ## What a teammate can carry alone this week
 
-In priority order. None of these needs Ryan, a credential or a payment.
+In priority order. None of these needs the owner, a credential or a payment.
 
 1. **Randolph to Sussex, 1570, native-resolution transcription.** The biggest real piece of work available.
    Images are already in `ciphers/randolph-sussex-1569/images/`. The first pass confirmed the structure but
@@ -39,7 +39,7 @@ In priority order. None of these needs Ryan, a credential or a payment.
    that has already caught four items printed in clear since the 1800s.
 4. **A scout refresh.** The last harvest was 19 September and the re-score was 21 September. A fresh harvest
    would pick up anything published in the meantime.
-5. **If Ryan rotated the passwords:** the DECODE work above, starting with record 8725, because it decides
+5. **If the owner rotated the passwords:** the DECODE work above, starting with record 8725, because it decides
    whether the 1646 folio is a target at all.
 
 ## What waits, and why
@@ -49,21 +49,21 @@ In priority order. None of these needs Ryan, a credential or a payment.
   worth running. Parked until then.
 - **The 1646 royalist intercepts**: the British Library's manuscript viewer has been offline since the 2023
   cyber attack. Genuinely blocked.
-- **Whitworth 1707**: Ryan's call on whether one unread clause is worth a Kew order. Not urgent.
+- **Whitworth 1707**: the owner's call on whether one unread clause is worth a Kew order. Not urgent.
 
 ## What a teammate may decide without asking
 
 - Which of the jobs above to run, in what order, and how to brief them.
 - Spending plan usage on workers, within the caps in `CLAUDE.md`'s Usage section.
 - Promoting a queue item to the board, **provided** a check-solved sweep set it to stage 2 first.
-- Correcting anything in the repository that is wrong, including things Ryan or an agent wrote.
+- Correcting anything in the repository that is wrong, including things the owner or an agent wrote.
 
 ## What a teammate may not decide alone
 
-- Spending money. Every copy order, quote acceptance and subscription goes to Ryan.
+- Spending money. Every copy order, quote acceptance and subscription goes to the owner.
 - Any external claim of novelty. Rule 10 stands: only a verifier assigns a class, and nothing is called new,
   first or previously unread without one.
-- Publishing anything outside the repository, or contacting an archive in Ryan's name.
+- Publishing anything outside the repository, or contacting an archive in the owner's name.
 
 ## Where state lives
 

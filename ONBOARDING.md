@@ -81,7 +81,7 @@ Everyone has full access; there are no fixed lanes. That makes the claim rule th
 agents off one target. A claim looks like this, appended to `ROOM.md`:
 
 ```
-2026-09-21 09:00 | Ryan / solver: hamilton-1650 | claim: transcribing the NRS sheets, expect 2h
+2026-09-21 09:00 | the owner / solver: hamilton-1650 | claim: transcribing the NRS sheets, expect 2h
 ```
 
 Release it with a `done` line. If you see someone else's claim on what you wanted, take the next thing.

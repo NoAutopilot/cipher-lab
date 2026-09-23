@@ -6,11 +6,11 @@ hour because only half of a two-part permission was in place.
 
 ## The accounts
 
-| Claude account | Signs in to GitHub as | Local wrapper (Windows) | Config folder |
+| Claude account (addresses kept out of the public repository, rule 9) | Signs in to GitHub as | Local wrapper (Windows) | Config folder |
 |---|---|---|---|
-| noautopilotyt@gmail.com | NoAutopilot (owns the repositories) | `claude` | `.claude` |
-| noautopilotytbiz@gmail.com | `noautopilotytbiz-beep` * | `claude-ytbiz` | `.claude-work` |
-| noautopilotteam@gmail.com | `noautopilotteam-lab` | `claude-team` | `.claude-three` |
+| owner account | NoAutopilot (owns the repositories) | `claude` | `.claude` |
+| second account (biz) | `noautopilotytbiz-beep` * | `claude-ytbiz` | `.claude-work` |
+| team account | `noautopilotteam-lab` | `claude-team` | `.claude-three` |
 
 \* Inferred from the naming, not yet confirmed by a session. The team mapping is confirmed: a
 web session on that account identified itself as `noautopilotteam-lab`.

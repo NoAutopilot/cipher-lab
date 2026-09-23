@@ -5,7 +5,7 @@ track, read this first, then QUEUE.md for what comes next.
 
 Last updated: 23 September 2026, 22:24 UTC
 
-> **Ryan is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
+> **the owner is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
 
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC

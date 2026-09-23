@@ -13,3 +13,8 @@ reproducing any of them outside this repository, and before this repository is e
 
 **Credit** the British Library and the shelfmark in anything that uses them: BL Cotton MS Caligula C II,
 f. 277r-v.
+
+
+## Images removed from the public repository (23 September 2026)
+
+The repository became public on 23 September 2026. Image files under terms that do not allow redistribution were removed from the tree and are re-fetchable from the URLs in manifest.json with the scripts beside it: British Library IIIF images of Cotton MS Caligula C II f.277 (research and private study terms), and all crops made from them. The manifests, crop boxes and transcriptions are unchanged. They remain in git history before this date.
