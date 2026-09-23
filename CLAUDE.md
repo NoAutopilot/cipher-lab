@@ -327,3 +327,7 @@ brief, over-claims caught before the person sees them, and whether the top of th
 
 Commit directly to `main`. No pull requests unless asked. Stage by explicit path when several sessions share
 the repo. Never rewrite history.
+One sanctioned exception, decided by the owner on 23 Sept 2026 after the repository went public: a single rewrite
+that removes addresses, the owner's first name, the credential-length line and the restricted images from every past
+commit (`tools/purge_history.sh`, which pushes the rewritten history to `purged-main`; the owner swaps it in for
+`main` at a quiet moment, and every open clone then re-clones). Nothing else, ever.
