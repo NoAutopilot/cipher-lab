@@ -106,10 +106,10 @@ n_solved = sum(1 for t in d["targets"] if t["state"] == "solved")
 
 card_items = "".join(
     f'<li data-row="{E(m["slug"])}" id="ask-{E(m["slug"])}"><input type="checkbox" aria-labelledby="ask-what-{E(m["slug"])}"><div>'
-    f'<div class="ask-what" id="ask-what-{E(m["slug"])}">{E(m["subject"])}</div>'
+    f'<div class="ask-what" id="ask-what-{E(m["slug"])}"><span class="muted">Subject:</span> {E(m["subject"])}</div>'
     f'<div class="ask-action"><b>To:</b> {E(m["to"])}</div>'
     f'<div class="ask-meta"><span class="ok">&#10003; checked</span> {E(m["checked"])}</div>'
-    f'<details><summary>Text to send</summary><pre class="mail">{E(m["text"])}</pre><button type="button" class="copy" data-for="mail-{E(m["slug"])}">Copy text</button><textarea id="mail-{E(m["slug"])}" hidden>{E(m["text"])}</textarea></details>'
+    f'<details><summary>Text to send</summary><pre class="mail">Subject: {E(m["subject"])}\n\n{E(m["text"])}</pre><button type="button" class="copy" data-for="mail-{E(m["slug"])}">Copy subject and text</button><textarea id="mail-{E(m["slug"])}" hidden>Subject: {E(m["subject"])}\n\n{E(m["text"])}</textarea></details>'
     f'</div></li>'
     for m in emails
 )
