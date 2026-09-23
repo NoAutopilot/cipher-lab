@@ -103,8 +103,10 @@ sentences) is in `print-check.tsv`. Three entries are directly relevant:
   what had passed betwixt 32 and him for the delivery of 0100 to 32." Tomokiyo's page separately notes "223" on
   Surtees p.530 as an unidentified code.
 
-**Verdict on print: not found-solved, not an edition of the target letters.** The Letter-Book entries are a
-related but textually distinct source (Bowes's own register, not the delivered/filed original), printed in a
+**Verdict on print: not found-solved, not an edition of the target letters.** [Verifier, 24 Sept 2026,
+AUDIT.md section 4: superseded. CSP Scotland vi pp.370-371 (no. 389, fol.196) shares the vocabulary of CLXXXVII
+and prints every cipher name in clear, so CLXXXVII is the same letter and its plaintext is in print.] The
+Letter-Book entries are a related but textually distinct source (Bowes's own register, not the delivered/filed original), printed in a
 public-domain 1842 edition, containing their own un-glossed numeric name-codes rather than the drawn cipher
 symbols Tomokiyo transcribed from the Cotton MS. Whether entry CLXXXVII is word-for-word the same letter as
 Cotton C VII f.196 (both dated 7 April 1583, same correspondents) is not established this pass — worth a
@@ -158,6 +160,10 @@ reading the surrounding cleartext (which does exist, via the BL catalogue folio 
 image-capture pass) "may be" enough to solve it.
 
 ## Solver session (24 September 2026)
+
+> Verifier, 24 September 2026 (AUDIT.md): **N1**. The plaintext is in print since 1842 (letter-book), and
+> for f.196 very probably in the 1910 calendar of the folio itself. Describe this as an independent
+> re-decipherment giving a sign table for Tomokiyo's numbering, never as a first or new decipherment.
 
 Solver worker (Opus), cap $15, no subagents. **Works from Tomokiyo's transcription only** (`ciphertext.txt`,
 copied unchanged from `sources/cryptiana/web/CottonMSBowes.txt`, his "CottonMSBowes.txt", credit S. Tomokiyo,
@@ -248,7 +254,7 @@ F1-F7 fall in the order of CLXXXVII, so f.196 (7 April) is very probably the ori
 entry. The last NOTES section left that question open. F8-F9 fit CCXL, the private letter of 31 July 1583,
 which suggests Cotton f.299/303 is the original of CCXL. This rests on the fragments' order and names only; an
 image would settle it. The cipher is a simple substitution (one sign per letter, with second signs for a, e and
-g) used for proper names inside clear sentences. The numbers in the Letter-Book (870, 223 ...) are a separate
+g, each of them a single token at grade M) used for proper names inside clear sentences. The numbers in the Letter-Book (870, 223 ...) are a separate
 code layer. F5 (28), F4's last sign (27), and perhaps F10, are probably that layer's signs.
 
 ### Grading (rule 4)
@@ -277,7 +283,10 @@ Searched 24 September 2026, a search result only, not a novelty verdict:
   fragments.
 - **Surtees vol.14** prints the Letter-Book plaintext of the words (the parallel text above), not the
   ciphertext or a key. Whether an edition places the cipher signs next to the plaintext was not checked:
-  CSP Scotland vi (Boyd 1910) is still unreachable (see 23 September 2026).
+  CSP Scotland vi (Boyd 1910) is still unreachable (see 23 September 2026). [Verifier, 24 Sept 2026: its HTRC
+  Extracted Features token counts show the fol.196 entry (no. 389, pp.370-371) with Cobham, Smallet,
+  Glencairn, Maineville, Huntly, Montrose and Mauvissière in clear. The class is N1, independent
+  re-decipherment; see AUDIT.md.]
 
 ### What a next solver needs
 
