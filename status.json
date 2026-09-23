@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 22:30 UTC",
+ "updated": "24 September 2026, 00:10 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -200,17 +200,17 @@
    "year": "1583",
    "ref": "BL Cotton Caligula C VII, B VIII",
    "folder": "ciphers/bowes-walsingham-1583",
-   "stage": 2,
-   "state": "queued",
-   "holder": "Nobody",
-   "next": "Search-print in CSP Scotland vi (Boyd 1910) and CSP Foreign 1583 for a printed decipherment; then BL IIIF images. Both hosts egress-blocked from the ytbiz account.",
-   "note": "Check-solved 23 Sept 2026: open on all six sources.",
+   "stage": 3,
+   "state": "active",
+   "holder": "Worker",
+   "next": "Solver on Tomokiyo's eleven fragments (about 110 symbols, 27-symbol alphabet, English) with a matched control at the same length; if the control itself fails, the target needs the BL imaging order for six leaves (C VII ff.196-197, 299-303; B VIII ff.251-252, 290-293, 306).",
+   "note": "23 Sept 2026: open on print (Surtees 1842 prints letter-book copies with unglossed numeric name-codes, not the cipher letters); both Cotton volumes undigitised, BL IIIF refuses them; transcription from Cryptiana mirrored to sources/.",
    "kind": "recovery",
    "wait": {
-    "on": "Network access for the ytbiz environment (ASKS row 11); Internet Archive for CSP Scotland vi and bl.digirati.io for the images",
-    "since": "23 Sept 2026",
-    "expected": "Minutes once the environment setting is changed",
-    "unblock": "Search-print first (Boyd 1910); only then decide whether images are worth fetching"
+    "on": "The solver session",
+    "since": "24 Sept 2026, 00:10 UTC",
+    "expected": "Same day",
+    "unblock": "A reading that beats the control margin, or a negative with both numbers and a BL order drafted"
    }
   },
   {
@@ -234,6 +234,16 @@
  ],
  "workers": [
   {
+   "title": "Print Check + Access: Bowes 1583",
+   "job": "Open; volumes undigitised; fragments mirrored. ~$2",
+   "state": "done, archived"
+  },
+  {
+   "title": "Solver: Bowes 1583 fragments",
+   "job": "Simple substitution near unicity; control first",
+   "state": "running"
+  },
+  {
    "title": "Check Solved: Pallotto cluster (D1)",
    "job": "Found-solved: key broken 2018 (Biermann/Bosbach), applied by Bourdeau; Kiewning 1895 edition. ~$1.5",
    "state": "done, archived"
@@ -256,16 +266,6 @@
   {
    "title": "Check Solved: queue hygiene vs solver repositories",
    "job": "Four rows dropped as found-solved, five annotated as partly read by Bourdeau. ~$2",
-   "state": "done, archived"
-  },
-  {
-   "title": "Transcription: Randolph 1570 native crops",
-   "job": "Stopped when f.278 turned out to be the decipherment; 49 crops and two raw passes committed. ~$3",
-   "state": "done, archived"
-  },
-  {
-   "title": "Check Solved: queue ranks 11, 13, 15, 17, 18",
-   "job": "Rank 11 found-solved (Bourdeau, 21 Sept, Lasry's King-Queen key), 13 partial (Bourdeau), 18 partial, 15 and 17 open at stage 2. ~$2",
    "state": "done, archived"
   }
  ],
@@ -328,6 +328,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sept, 00:10",
+   "what": "Bowes 1583: print negative, volumes undigitised; Tomokiyo's eleven fragments in hand, solver started with a matched control. Non-DECODE scout and Burgess 1912 still running."
+  },
   {
    "when": "23 Sept, 22:30",
    "what": "Pallotto D1 found-solved. Volume-aware exclusion shows Bourdeau already names 193 of the 202 cached neighbour pairs; the lane needs the full DECODE catalogue or archives not on DECODE. Next scout targets non-DECODE catalogues once the network opens."
