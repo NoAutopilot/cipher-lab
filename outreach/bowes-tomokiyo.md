@@ -1,11 +1,11 @@
 to: S. Tomokiyo. His address is published only as an image at the foot of https://cryptiana.web.fc2.com/code/crypto.htm (Contact, "Send Comments to"), so it is kept out of this public file on purpose; the orchestrator gave it to the owner directly on 23 Sept 2026
 subject:Cotton Caligula C VII, Bowes to Walsingham 1583: sign table for the eleven cipher fragments
 checked: 23 Sept 2026, orchestrator. Class N1 (AUDIT.md), grade F2. States the 1842 print itself. Rule-10 wording. No personal data. Link public. Safe to send as is.
-status: ready
+status: sent 23 Sept 2026
 
 # Draft email: Bowes 1583 sign table, for S. Tomokiyo (Cryptiana)
 
-Not sent. The owner sends it and records the date in CONTRIBUTIONS.md.
+Sent by the owner on 23 Sept 2026 (logged in CONTRIBUTIONS.md). Kept as the record of what was sent.
 
 ## Text
 Dear Mr Tomokiyo,
