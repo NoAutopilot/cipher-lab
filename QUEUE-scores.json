@@ -4389,6 +4389,21 @@
    "name": "Dupuy 63 no. 139, Séguier 1601 (was N5)",
    "reason": "found-solved: Tomokiyo henryiv.htm",
    "date": "24 Sept 2026"
+  },
+  {
+   "name": "Bréval to Henri II of Lorraine (Lorraine 377; was N9)",
+   "reason": "found-solved: decipherment on the leaf; Tomokiyo 2024; DECODE 7952",
+   "date": "24 Sept 2026"
+  },
+  {
+   "name": "Letter to Ferdinand I of Tuscany 1597 (Dupuy 155; was N10)",
+   "reason": "contemporary parallel decipherment on the leaf",
+   "date": "24 Sept 2026"
+  },
+  {
+   "name": "Chauran to Williamson 1662 (SP 84/165; was N11)",
+   "reason": "not a cipher",
+   "date": "24 Sept 2026"
   }
  ],
  "harvest": [

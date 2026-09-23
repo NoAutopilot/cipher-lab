@@ -1,5 +1,5 @@
 {
- "updated": "24 September 2026, 04:20 UTC",
+ "updated": "24 September 2026, 05:00 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -284,9 +284,37 @@
     "expected": "TNA digital copies take about two weeks",
     "unblock": "Copies arrive; two transcription passes; key from the paired decipherment"
    }
+  },
+  {
+   "name": "France despatches in cipher, Civil War and Interregnum",
+   "year": "1642-1657",
+   "ref": "TNA SP 78/111/93, /135; SP 78/113/57 and one more (not digitised)",
+   "folder": "ciphers/sp78-france-1583",
+   "stage": 2,
+   "state": "queued",
+   "holder": "Nobody",
+   "next": "Check Thurloe's State Papers vol. 6 (1657) for SP 78/113/57 (Swyfte) on archive.org; if unprinted, draft a TNA copy order for the four items.",
+   "note": "24 Sept 2026: open at stage 2, conditional on the Thurloe check. No sibling decipherment in the pieces. The queue's '1580s' date was a catalogue-parsing error; the folder name keeps the old label.",
+   "kind": "cryptanalysis",
+   "wait": {
+    "on": "The Thurloe check (running), then a TNA copy order on the person's card",
+    "since": "24 Sept 2026, 05:00 UTC",
+    "expected": "Same day for the check",
+    "unblock": "REQUEST.md and an ASKS row"
+   }
   }
  ],
  "workers": [
+  {
+   "title": "Check Solved: N8-N11",
+   "job": "N8 open (SP 78, 1642-57); N9, N10 have decipherments on the leaf; N11 not a cipher. ~$3",
+   "state": "done, archived"
+  },
+  {
+   "title": "Check Solved: N12-N15 + Thurloe check for N8",
+   "job": "Ingham diary, SP 90/2, SP 87/13, SP 87/23; Thurloe vol. 6",
+   "state": "running"
+  },
   {
    "title": "Verifier: Bowes 1583",
    "job": "N1: plaintext printed 1842, calendared 1910. Corrected the over-claim on grades. ~$15",
@@ -310,16 +338,6 @@
   {
    "title": "Check Solved: N1-N3",
    "job": "N2 found-solved; N1 partial (one despatch printed); N3 open at stage 2. ~$2.5",
-   "state": "done, archived"
-  },
-  {
-   "title": "Check Solved: N4-N7",
-   "job": "d'Avaux 1633, Dupuy 63, SP 87 Seven Years War, Clinton PRO 30/55",
-   "state": "running"
-  },
-  {
-   "title": "Solver: Burgess 1912 acrostic families",
-   "job": "Negative for 8 families with control; word families weak; untested list in NOTES. ~$15",
    "state": "done, archived"
   }
  ],
@@ -382,6 +400,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sept, 05:00",
+   "what": "N8 (SP 78 France, 1642-57) open at stage 2; N9-N11 dropped. Last sweep batch of the night started (N12-N15) with the Thurloe check for N8."
+  },
   {
    "when": "24 Sept, 04:20",
    "what": "Bowes 1583 verified N1: the names were printed in 1842 and the leaf is calendared in 1910. A sign table is the contribution; not a unique solve. Lesson to the check-solved template: word-count test on blocked calendars before stage 2."
