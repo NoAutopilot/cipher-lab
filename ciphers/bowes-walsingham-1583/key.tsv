@@ -1,0 +1,31 @@
+# Working key for Tomokiyo's sign numbers, recovered 24 Sept 2026 by crib-matching the fragments against Bowes's
+# own Letter-Book copies (Surtees Soc. vol.14, 1842: CLXXXVII of 7 April 1583, CCXXXIX-CCXL of 31 July 1583).
+# grade: S = value fixed by a crib-matched name and confirmed in at least one other fragment (crib test: 43/101
+# tokens vs 28.8 +- 2.9 for other letters' word lists and 27.0 +- 3.1 for shuffled tokens; crib_runs.tsv);
+# M = single-occurrence or otherwise uncertain value; '?' with grade '-' = unread (not graded). u and v are one letter (09).
+sign	value	grade	evidence
+06	r	S	siR F1, mauuissieR F6, glencaRne F4 F3, Ruthen F9
+07	s	S	Smallet F2 F7, Sir F1, mauuiSSier F6, hiS F9
+08	t	S	smalleT F2 F7, hunTley F4, ruThen F9
+09	u	S	maUUissier F6 (u=v), rUthen F9, magnyUil F4
+10	e	S	smallEt F2, glEncarnE F3 F4 F8, hEnri F1, mauuissiEr F6, ruthEn F9
+11	n	S	gleNcarNe F3 F4 F8, heNri F1, rutheN F9, magNyuil F4
+12	m	S	sMallet F2 F7, cobhaM F1, Mauuissier F6, Magnyuil F4, hiM F11
+13	l	S	smaLLet F2 F7, gLencarne F3 F4 F8, magnyuiL F4, huntLey F4
+14	e	M	smallEt F7 only (F2 has 10 at this place)
+15	?	-	F8 only, before glencarn; unread (code sign?)
+16	i	S	sIr F1, henrI F1, mauuIssIer F6, hIs F9, magnyuIl F4, hIm F11
+17	h	S	sir Henri cobHam F1, Huntley F4, Hisruthen F9 (twice), hiM F11
+18	c	S	Cobham F1, glenCarne F3 F4 F8
+19	a	S	smAllet F2 F7, cobhAm F1, glencArne F3 F4, mAuuissier F6, mAgnyuil F4
+20	o	M	cObham F1; also F4 between huntley and glencarne, where it is not explained
+21	b	M	coBham F1 only
+22	g	S	Glencarne F4 F8, maGnyuil F4
+23	g	M	F3 first sign, where Glencarne is expected; second g sign
+24	y	M	magnYuil, huntleY F4 only
+25	?	-	F11 only; unread
+26	a	M	glencArn F8 only (second a sign)
+27	?	-	F4 last sign, after glencarne; code sign or 'and' (Letter-Book: '... Glencarne, and Montrosse')
+28	?	-	F5, the whole fragment; code sign (by position in CLXXXVII, possibly the cipher for 870)
+02	?	-	F10 (02 02 03); unread (by position, possibly the code number 223 of CCXL)
+03	?	-	F10, F11; unread
