@@ -7,3 +7,4 @@ the HTRC Extracted Features word-count test (`tools/htrc_ef_headwords.py`, or th
 names, dates and folio numbers, and treat a page that carries them as a probable calendar entry. Lesson of 23 Sept
 2026 (Bowes 1583): stage 2 was set while CSP Scotland vi no. 389 calendared the very leaf with every cipher name in
 clear. Editions first, and the leaf viewed before scoring (d'Avaux 1633).
+A found-solved verdict states who did not know, as README's F0/F1/F2, and what correction or key it leaves to hand on.
