@@ -1,0 +1,58 @@
+{
+ "fetched": "23 September 2026",
+ "fetched_by": "solver session, ciphers/burgess-mysteries-1912",
+ "sources": {
+  "UC": "masterofmysterie00burgrich (University of California Libraries copy, Bobbs-Merrill 1912, 558 images, 500 ppi) -- primary, complete",
+  "CU": "cu31924022342871 (Cornell University Library copy, Bobbs-Merrill 1912, 556 images, 300 ppi) -- second OCR pass; printed pp. 355-358 and 411 not usable in this scan"
+ },
+ "files": [
+  {
+   "file": "cu31924022342871_djvu.xml",
+   "url": "https://archive.org/download/cu31924022342871/cu31924022342871_djvu.xml",
+   "bytes": 10300356,
+   "sha256": "2c6b5c3694e3fda6ccd9b50b72fdc8ace92cc2e73e89e5f57f1ec11eb4feb48e"
+  },
+  {
+   "file": "cu31924022342871_djvu.txt",
+   "url": "https://archive.org/download/cu31924022342871/cu31924022342871_djvu.txt",
+   "bytes": 854379,
+   "sha256": "bdcaf392e1ec658476430ee90aa7c378fc2b35c3a2f83a9cc77d7f3b901d3cfc"
+  },
+  {
+   "file": "cu31924022342871_page_numbers.json",
+   "url": "https://archive.org/download/cu31924022342871/cu31924022342871_page_numbers.json",
+   "bytes": 94556,
+   "sha256": "6a131c4ce4aa22b95117f7a74e10222974794edc5867e863f7a0b7fa36430d44"
+  },
+  {
+   "file": "cu31924022342871_scandata.xml",
+   "url": "https://archive.org/download/cu31924022342871/cu31924022342871_scandata.xml",
+   "bytes": 193809,
+   "sha256": "19cf390ec3eaa76e186bd006043e10c54fb8db9886e6988faad7e8867b19da16"
+  },
+  {
+   "file": "cu31924022342871_meta.json",
+   "url": "https://archive.org/metadata/cu31924022342871",
+   "bytes": 102984,
+   "sha256": "07282ed45a0825ff8806873292e7f694261392b7a80a86d462aedfd14593bfde"
+  },
+  {
+   "file": "masterofmysterie00burgrich_meta.json",
+   "url": "https://archive.org/metadata/masterofmysterie00burgrich",
+   "bytes": 105093,
+   "sha256": "cd6ddce7a9c3bacd21ff5ff4ce40392d3f8fe9f268e9185b3c01fe2dceca48d3"
+  },
+  {
+   "file": "masterofmysterie00burgrich_djvu.xml",
+   "url": "https://ia801602.us.archive.org/23/items/masterofmysterie00burgrich/masterofmysterie00burgrich_djvu.xml",
+   "bytes": 10559299,
+   "sha256": "1211a64fa24826c2962f65c32e5c38891bbff8e97269f943562bcf7d3f8eba66"
+  }
+ ],
+ "requests": {
+  "archive.org": "13 in all: 1 advancedsearch, 3 metadata (cu31924022342871 twice, masterofmysterie00burgrich once), 4 Cornell downloads first sent without -L (302 redirects, nothing saved) then 4 repeated with -L, 2 UC downloads through archive.org/download that returned HTTP 500 from the storage node (stopped), 1 direct to the item's d2 server ia801602 which was cut off by a connection reset at 9,961,472 bytes, 1 range request (-C -) that completed it; the size matches the metadata (10,559,299 bytes)",
+  "en.wikisource.org": "3: 1 api.php with a generic User-Agent -> HTTP 429; 1 prefixsearch with a descriptive UA -> 200 (page list sample only); 1 batched revisions query (50 titles, project UA, maxlag=5) -> HTTP 429. Stopped; no Wikisource page text was saved. fetch_wikisource.py is the polite batched fetcher for a later session.",
+  "gutenberg.org": "1 search: the book is not on Project Gutenberg"
+ },
+ "notes": "Nothing in this folder is edited. Page images were not fetched (drop capitals are therefore restored from surviving letters, see units.DROPCAP)."
+}
