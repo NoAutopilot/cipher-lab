@@ -112,29 +112,6 @@
    "kind": "contribution"
   },
   {
-   "name": "Charles I to William Boswell, 1628 (TNA SP 106/5, DECODE R413)",
-   "language_fit": 3,
-   "material": 1,
-   "key_lead": 3,
-   "size": 3,
-   "competition": 1,
-   "weight": 2,
-   "next_step": "cryptanalysis",
-   "next_step_detail": "With a DECODE login, download R413 (TNA SP 106/5) with its attached key and cryptanalysis files and apply the key to the ten lines; compare against the SP 84/157 alphabet in cyphersolver boswell/.",
-   "rationale": "DECODE R413 has a key document and a cryptanalysis document attached, and Aymeloglu's CATALOGUE class B and Bourdeau's id 226 (class A, seven key records in the box) both list it as open only because nobody has confirmed the attached key fits; the DECODE record page is public but the images need a login and were not viewed here. Ten lines of graphic signs, 'every sign a codegroup', addressed to 'my worthy and most esteemed Cousin William', which sits oddly with the Charles I attribution and should be checked. Distinct from the 1643 Boswell letters Pitt solved in Sept 2026. The batch record also folds in R595 (Eichel 1758, transcription attached), a separate item. A key in hand makes a ten-line reading checkable; historical weight is modest. Re-scored 20 Sept 2026: DECODE R413 has a key document attached in the same record, but nobody has confirmed it fits this cipher -- an unverified candidate key, not yet a straightforward lookup, so scored recovery rather than edition. unread=2.",
-   "total": 36,
-   "year": "1628; 1758",
-   "language": "en",
-   "sources": [
-    "archives",
-    "aymeloglu",
-    "bourdeau"
-   ],
-   "folder": "",
-   "unread": 2,
-   "kind": "recovery"
-  },
-  {
    "name": "Cornwallis Papers, American campaign: Rawdon, Craig, Tarleton, Balfour and others to Cornwallis, 1780-81 (TNA PRO 30/11)",
    "language_fit": 3,
    "material": 0,
@@ -174,7 +151,8 @@
    ],
    "folder": "",
    "unread": 2,
-   "kind": "recovery"
+   "kind": "recovery",
+   "status_summary": " | Queue-hygiene sweep 23 Sept 2026 vs fresh clone (2e9ec01): most of this range is already covered by Bourdeau, per-item -- lomer1563 (R9235): already solved, printed 1741/calendared CSP Foreign vi no.1471. middelmore1563 (R9246-R9247): already solved, fraction 1.0, printed 1741. coligny1563 (R9237,R9239,R9240): already solved, fraction 1.0, printed 1741. foix1563 (R9238,R9241): R9238 closed already-solved (print); R9241 still open, in progress. smith1562 (R9236,R9248-R9254): class read, most passages read from Forbes's copy. norreys1567 (R9250-R9251): read in part, fraction 0.33. percy1559 (R9256): not read, fraction 0. R9242-R9245 are not addressed by any Bourdeau folder found. Real remainder: Percy (R9256), Foix's R9241, and R9242-R9245."
   },
   {
    "name": "Walsingham and Edward Wotton (ambassador to Scotland), seven letters 28 July - 10 Sept 1585 (BL Add MS 32657, DECODE R4838-R4844)",
@@ -195,7 +173,8 @@
    ],
    "folder": "",
    "unread": 2,
-   "kind": "recovery"
+   "kind": "recovery",
+   "status_summary": " | Queue-hygiene sweep 23 Sept 2026 vs fresh clone (2e9ec01): walsingham1585 (R4838,R4839,R4840,R4844): read in part, fraction_read 0.49 -- all four letters readable, two already in print as calendar abstracts, but the ~14 sign-word run of 10 Sept 1585 (R4844) is unread. wotton1585 (R4841-R4843): class read, drafts read in full, but 4 of 11 code numbers (27, 32, 36, 40) still open. Real remainder is R4844's unread run and the 4 open code numbers, not the whole seven-letter bundle."
   },
   {
    "name": "Letter partly in cipher relating to Gen. Monck and his movements, 1659-1660 (BL Add MS 32093 f.423, Malet collection)",
@@ -307,7 +286,8 @@
    ],
    "folder": "moray-wood-1568",
    "unread": 3,
-   "kind": "cryptanalysis"
+   "kind": "cryptanalysis",
+   "status_summary": " | Queue-hygiene sweep 23 Sept 2026 vs fresh clone (2e9ec01): Bourdeau moray/: not read, fraction 0 -- attempted 15 Sept 2026 from Tomokiyo's transcription only (no image; DECODE has no record; not in print), several Scottish court ciphers ruled out as non-matching, no key found. throck1569 and wod1568 only mention this shelfmark in passing, not a reading of it."
   },
   {
    "name": "Robert Bowes to Walsingham, 7 April and 31 July 1583, and short Caligula B VIII ciphertexts 1580-83 (BL Cotton Caligula C VII, B VIII)",
@@ -374,7 +354,8 @@
    ],
    "folder": "",
    "unread": 2,
-   "kind": "recovery"
+   "kind": "recovery",
+   "status_summary": " | Queue-hygiene sweep 23 Sept 2026 vs fresh clone (2e9ec01): six of the seven named records are now read at high fraction or already solved -- harley1582r8500 (R8500): read, 1.0. harley1582r8504 (R8504): read, 1.0. stafford1586 (R8503): already solved, fraction 1. R8501: already read via its own contemporary decipherment on f.72r. R8502: glossed. harley1582r8505 (R8505, unsigned 'L'Estat du Roy de Navarre'): broken from ciphertext alone, fraction 0.951. Only harley1582r8499 (R8499, N. Wotton? 1554) remains materially open: read in part, fraction 0.75, ~40 rare codes not on the recovered key (R354)."
   },
   {
    "name": "Nicholas Throckmorton to Elizabeth I, 10 July 1559, marginal ciphertext in an unknown cipher (BL Add MS 4136, DECRYPT 2988-2989)",
@@ -396,7 +377,8 @@
    ],
    "folder": "",
    "unread": 2,
-   "kind": "recovery"
+   "kind": "recovery",
+   "status_summary": " | Queue-hygiene sweep 23 Sept 2026 vs fresh clone (2e9ec01): wod1568 (catalogue 97, R2988 margin + R2989) is the real match for this folio (bl32305/coligny1563/foix1563/lomer1563/middelmore1563/moray/norreys1567/percy1559/smith1562/throck1560 only share the Add MS 4136 shelfmark generically) -- class read in part, fraction 0.3 over all three texts on the sheet: the Throckmorton letter body (f.32) is read ~85-90%, but the marginal ciphertext this row names (separate word-sign code, 222 groups) remains unread, as does Wood's own 1568 line."
   },
   {
    "name": "Prince Maurice to Prince Rupert, Worcester, 7 July 1645 (Warburton, Memoirs of Prince Rupert iii.133)",
@@ -419,69 +401,6 @@
    "folder": "maurice-rupert-1645",
    "unread": 2,
    "kind": "recovery"
-  },
-  {
-   "name": "Unknown (York) to Lord Goring, 5 June 1645 (TNA SP 106/10, DECODE R932)",
-   "language_fit": 3,
-   "material": 1,
-   "key_lead": 2,
-   "size": 2,
-   "competition": 1,
-   "weight": 2,
-   "next_step": "cryptanalysis",
-   "next_step_detail": "Get the DECODE login, fetch R932 (TNA SP 106/10) and test Lasry's four reconstructed SP 106/10 keys (cyphersolver hm1645/ notes) before a fresh homophonic attack.",
-   "rationale": "Two strips with 4 and 6 lines, about 340 codegroups of 1- and 2-digit numbers that DECODE's note reads as a homophonic substitution (R932, 'Partially decrypted', which in this box has meant that a decipherment or key file is attached). Bourdeau id 61 is class B with two key records in the same series, and Bourdeau's hm1645 entry found George Lasry's reconstructed keys and plaintexts for SP 106/10 ff.207-247 of 1645-46 on the DECODE records, the same box and months; one of those keys may read this piece by lookup. Images behind the DECODE login, not viewed here. 340 homophonic tokens of English is marginal for a keyless attack but checkable with a key; a June 1645 letter to Lord Goring adds to the Naseby-summer picture. Re-scored 20 Sept 2026: Lasry's reconstructed keys for SP 106/10 ff.207-247 cover the same box and months; one may read this piece by lookup. unread=2.",
-   "total": 31,
-   "year": "1645",
-   "language": "en",
-   "sources": [
-    "bourdeau"
-   ],
-   "folder": "",
-   "unread": 2,
-   "kind": "recovery"
-  },
-  {
-   "name": "William Cecil to Sir Ralph Sadler and Sir James Croft, 11 Sept - 30 Oct 1559 (BL Add MS 33591, DECODE R4847-R4860)",
-   "language_fit": 3,
-   "material": 1,
-   "key_lead": 3,
-   "size": 1,
-   "competition": 1,
-   "weight": 1,
-   "next_step": "search-print",
-   "next_step_detail": "Read the 11 Sept and 30 Oct 1559 letters in Clifford, Sadler State Papers vol. I (Google Books GMc_AAAAcAAJ) for the cipher phrases in clear.",
-   "rationale": "No image or transcription seen here; DECODE R4847 (ff.102-103) and R4860 (f.248) are images behind a free login. Tomokiyo's elizabeth.htm reconstructs Cecil-Sadler-Croft Cipher 2 from this volume, listing ff.102r-103v ('only a few symbols') among its uses and the 30 October 1559 letter to Sadler and Croft beside it, and Clifford 1809 prints the 1559 correspondence, so both key and probable plaintext are in print. The ciphered matter is a few short phrases on 2 pp., below unicity on its own but readable by lookup, and of minor weight. Bourdeau id 85 is open on his tracker (17 Sept 2026) with the highest rule-based solvability; nobody reports work. Re-scored 20 Sept 2026: Tomokiyo's reconstructed Cecil-Sadler-Croft Cipher 2 covers this volume and Clifford 1809 prints the probable plaintext; both key and plaintext are in print elsewhere, unapplied to this item -- recovery, not edition, since neither is in the holding collection itself. unread=2.",
-   "total": 31,
-   "year": "1559",
-   "language": "en",
-   "sources": [
-    "bourdeau"
-   ],
-   "folder": "",
-   "unread": 2,
-   "kind": "recovery"
-  },
-  {
-   "name": "Queen Anne to Charles Mordaunt, Earl of Peterborough, 22 Feb 1711 (BL Add MS 4107 f.184, DECODE R4878)",
-   "language_fit": 3,
-   "material": 1,
-   "key_lead": 1,
-   "size": 2,
-   "competition": 1,
-   "weight": 2,
-   "next_step": "search-print",
-   "next_step_detail": "Search the printed instructions to Peterborough of 22 Feb 1710/11 (Lords' committee report 1712, Lords Journals vol. 19, Boyer's Political State) before viewing DECODE R4878.",
-   "rationale": "No image or transcription seen here; DECODE R4878 is a 3-page numerical cipher behind a free login, and Cryptiana's snapshot has nothing on it (marlborough.htm is not in the snapshot). No key or sibling is catalogued; the design is the standard Queen Anne-era numerical diplomatic code, and DECODE's 'Inline Plaintext: Yes' flag hints at a decipherment on the page but is unverified. Add MS 4107 is a Birch volume of Peterborough papers, and instructions for the Turin embassy were laid before the Lords in 1712, so print is the first place to look. Bourdeau id 86 is open on his tracker (17 Sept 2026); nobody reports work. Re-scored 20 Sept 2026: the rationale's own verdict is 'No key or sibling is catalogued'; DECODE's 'Inline Plaintext: Yes' flag is an unconfirmed positive worth checking first, but is not itself evidence of a located key, so scored cryptanalysis (unread=3) pending that check.",
-   "total": 31,
-   "year": "1711",
-   "language": "en",
-   "sources": [
-    "bourdeau"
-   ],
-   "folder": "",
-   "unread": 3,
-   "kind": "cryptanalysis"
   },
   {
    "name": "Intercepted letter of Edward Hyde, 1 Nov 1659, f.93 full of undecoded code numbers (BL Add MS 4166 ff.92-93, DECODE R4886)",
@@ -613,7 +532,8 @@
    ],
    "folder": "",
    "unread": 3,
-   "kind": "cryptanalysis"
+   "kind": "cryptanalysis",
+   "status_summary": " | Queue-hygiene sweep 23 Sept 2026 vs fresh clone (2e9ec01): Bourdeau charlesi/: not read, fraction 0 -- two candidate keys excluded, letters judged too short and non-repeating for ciphertext-only analysis; confirms this row's own blocked verdict, adds no new lead."
   },
   {
    "name": "John Wood to Secretary Cecil, 6 Sept 1568, 'Wool letter' on the sheet of DECRYPT 2989 (BL Add MS 4136)",
@@ -635,7 +555,8 @@
    ],
    "folder": "",
    "unread": 3,
-   "kind": "cryptanalysis"
+   "kind": "cryptanalysis",
+   "status_summary": " | Queue-hygiene sweep 23 Sept 2026 vs fresh clone (2e9ec01): wod1568 (same sheet as rank 20's R2988/R2989 folio) attempted and not read for this specific line -- Wood's 1568 line is 39 signs, non-unique, unread even though the Throckmorton letter sharing the sheet is read ~85-90%."
   },
   {
    "name": "BL Harley MS 260 cipher letters 1571-72: Elizabeth R., Burghley, Walsingham and unsigned (DECODE R8356-R8364)",
@@ -656,7 +577,8 @@
    ],
    "folder": "",
    "unread": 1,
-   "kind": "contribution"
+   "kind": "contribution",
+   "status_summary": " | Queue-hygiene sweep 23 Sept 2026 vs fresh clone (2e9ec01), per record: R8356 not read (0); R8357/burghley1572 not read (0); R8358 not read (0.13); R8361 not read (0.19); R8362 not a cipher (cover-name markers on a clear letter); R8364 read in part (0.23, grade M); R8363/walsingham1572 closed unread; R8359-R8360/walsingham1572nov closed (no ciphertext survives). No record in the range reaches a real reading; confirms rather than changes this row's search-print status."
   },
   {
    "name": "Ormond to Arran, 24 Jan 1678, short undeciphered segments (HMC Ormonde iv.93)",
@@ -721,7 +643,8 @@
    ],
    "folder": "",
    "unread": 3,
-   "kind": "cryptanalysis"
+   "kind": "cryptanalysis",
+   "status_summary": " | Queue-hygiene sweep 23 Sept 2026 vs fresh clone (2e9ec01): Bourdeau harley7001/ is the real match for this exact record -- class read in part, fraction_read 0.94, key DECODE R9115 (an 18th-c. Deciphering Branch reconstruction) applied; 12 of 137 code values blank on the surviving key, conjectured from context (6% of tokens, grade M). No print source found. Note: this folder's mention of Add MS 72438 (a rejected key lead, R8694) is the source of a separate false match against rank 1, which it does not read."
   },
   {
    "name": "Gun Wa advertisement cipher, 1889 (77 letters)",
@@ -785,7 +708,8 @@
    ],
    "folder": "",
    "unread": 3,
-   "kind": "cryptanalysis"
+   "kind": "cryptanalysis",
+   "status_summary": " | Queue-hygiene sweep 23 Sept 2026 vs fresh clone (2e9ec01): Bourdeau conley1652/: not read, fraction 0 -- clear text read, but the 23 code numbers judged too few for a ciphertext-only attack, no Jermyn/Queen key of 1652-53 located. Confirms this row's own next step; no new lead."
   },
   {
    "name": "Unidentified cipher/symbol manuscript, 18th century (National Library of Scotland MS 20769)",
@@ -4343,6 +4267,112 @@
     "kind": "recovery",
     "status_summary": "found-solved 23 Sept 2026: contemporary decipherment on f.278 (DECODE R4932) read by dbourdeau/cyphersolver randolph1570/ on 21 Sept 2026; Boyd CSP Scotland iii no. 339 \"partly in cipher, deciphered\". Moved to Dropped.",
     "dropped": "23 Sept 2026"
+   }
+  },
+  {
+   "name": "Charles I to William Boswell, 1628 (TNA SP 106/5, DECODE R413)",
+   "reason": "found-solved: queue-hygiene sweep 23 Sept 2026 vs fresh clone (dbourdeau/cyphersolver 2e9ec01) -- boswell1628/, fraction_read 0.99, already solved by Mark Woodard (Furman University), decipherment uploaded to DECODE R413 on 2021-11-09 (CrypTool 2 monoalphabetic analyzer). Bourdeau's session (21 Sept 2026) added the sender's identity (Sir Ralph Boswell, a kinsman, not Charles I) and the date (15 Dec 1627, from the endorsement) but read no new signs. Source of plaintext: printed/uploaded decipherment (Woodard 2021).",
+   "date": "23 Sept 2026",
+   "scored_row": {
+    "name": "Charles I to William Boswell, 1628 (TNA SP 106/5, DECODE R413)",
+    "language_fit": 3,
+    "material": 1,
+    "key_lead": 3,
+    "size": 3,
+    "competition": 1,
+    "weight": 2,
+    "next_step": "cryptanalysis",
+    "next_step_detail": "With a DECODE login, download R413 (TNA SP 106/5) with its attached key and cryptanalysis files and apply the key to the ten lines; compare against the SP 84/157 alphabet in cyphersolver boswell/.",
+    "rationale": "DECODE R413 has a key document and a cryptanalysis document attached, and Aymeloglu's CATALOGUE class B and Bourdeau's id 226 (class A, seven key records in the box) both list it as open only because nobody has confirmed the attached key fits; the DECODE record page is public but the images need a login and were not viewed here. Ten lines of graphic signs, 'every sign a codegroup', addressed to 'my worthy and most esteemed Cousin William', which sits oddly with the Charles I attribution and should be checked. Distinct from the 1643 Boswell letters Pitt solved in Sept 2026. The batch record also folds in R595 (Eichel 1758, transcription attached), a separate item. A key in hand makes a ten-line reading checkable; historical weight is modest. Re-scored 20 Sept 2026: DECODE R413 has a key document attached in the same record, but nobody has confirmed it fits this cipher -- an unverified candidate key, not yet a straightforward lookup, so scored recovery rather than edition. unread=2.",
+    "total": 36,
+    "year": "1628; 1758",
+    "language": "en",
+    "sources": [
+     "archives",
+     "aymeloglu",
+     "bourdeau"
+    ],
+    "folder": "",
+    "unread": 2,
+    "kind": "recovery"
+   }
+  },
+  {
+   "name": "Unknown (York) to Lord Goring, 5 June 1645 (TNA SP 106/10, DECODE R932)",
+   "reason": "found-solved: queue-hygiene sweep 23 Sept 2026 vs fresh clone -- goring1645/, already solved by George Lasry, key (\"TNA SP106-3\") and plaintext uploaded to DECODE R932 on 2020-10-23; codes 104 and 46 remain open in Lasry's own reading. Bourdeau's session (21 Sept 2026) independently re-checked the key against the raw transcription and confirms the same English throughout; adds nothing new. Source of plaintext: key recovered by Lasry, applied via DECODE upload.",
+   "date": "23 Sept 2026",
+   "scored_row": {
+    "name": "Unknown (York) to Lord Goring, 5 June 1645 (TNA SP 106/10, DECODE R932)",
+    "language_fit": 3,
+    "material": 1,
+    "key_lead": 2,
+    "size": 2,
+    "competition": 1,
+    "weight": 2,
+    "next_step": "cryptanalysis",
+    "next_step_detail": "Get the DECODE login, fetch R932 (TNA SP 106/10) and test Lasry's four reconstructed SP 106/10 keys (cyphersolver hm1645/ notes) before a fresh homophonic attack.",
+    "rationale": "Two strips with 4 and 6 lines, about 340 codegroups of 1- and 2-digit numbers that DECODE's note reads as a homophonic substitution (R932, 'Partially decrypted', which in this box has meant that a decipherment or key file is attached). Bourdeau id 61 is class B with two key records in the same series, and Bourdeau's hm1645 entry found George Lasry's reconstructed keys and plaintexts for SP 106/10 ff.207-247 of 1645-46 on the DECODE records, the same box and months; one of those keys may read this piece by lookup. Images behind the DECODE login, not viewed here. 340 homophonic tokens of English is marginal for a keyless attack but checkable with a key; a June 1645 letter to Lord Goring adds to the Naseby-summer picture. Re-scored 20 Sept 2026: Lasry's reconstructed keys for SP 106/10 ff.207-247 cover the same box and months; one may read this piece by lookup. unread=2.",
+    "total": 31,
+    "year": "1645",
+    "language": "en",
+    "sources": [
+     "bourdeau"
+    ],
+    "folder": "",
+    "unread": 2,
+    "kind": "recovery"
+   }
+  },
+  {
+   "name": "William Cecil to Sir Ralph Sadler and Sir James Croft, 11 Sept - 30 Oct 1559 (BL Add MS 33591, DECODE R4847-R4860)",
+   "reason": "found-solved: queue-hygiene sweep 23 Sept 2026 vs fresh clone -- burghley1559/, fraction_read 1.0, printed in 1809 (Clifford, Sadler State Papers). The cipher itself is two groups in one letter; the other letter is entirely in clear. Source of plaintext: printed edition.",
+   "date": "23 Sept 2026",
+   "scored_row": {
+    "name": "William Cecil to Sir Ralph Sadler and Sir James Croft, 11 Sept - 30 Oct 1559 (BL Add MS 33591, DECODE R4847-R4860)",
+    "language_fit": 3,
+    "material": 1,
+    "key_lead": 3,
+    "size": 1,
+    "competition": 1,
+    "weight": 1,
+    "next_step": "search-print",
+    "next_step_detail": "Read the 11 Sept and 30 Oct 1559 letters in Clifford, Sadler State Papers vol. I (Google Books GMc_AAAAcAAJ) for the cipher phrases in clear.",
+    "rationale": "No image or transcription seen here; DECODE R4847 (ff.102-103) and R4860 (f.248) are images behind a free login. Tomokiyo's elizabeth.htm reconstructs Cecil-Sadler-Croft Cipher 2 from this volume, listing ff.102r-103v ('only a few symbols') among its uses and the 30 October 1559 letter to Sadler and Croft beside it, and Clifford 1809 prints the 1559 correspondence, so both key and probable plaintext are in print. The ciphered matter is a few short phrases on 2 pp., below unicity on its own but readable by lookup, and of minor weight. Bourdeau id 85 is open on his tracker (17 Sept 2026) with the highest rule-based solvability; nobody reports work. Re-scored 20 Sept 2026: Tomokiyo's reconstructed Cecil-Sadler-Croft Cipher 2 covers this volume and Clifford 1809 prints the probable plaintext; both key and plaintext are in print elsewhere, unapplied to this item -- recovery, not edition, since neither is in the holding collection itself. unread=2.",
+    "total": 31,
+    "year": "1559",
+    "language": "en",
+    "sources": [
+     "bourdeau"
+    ],
+    "folder": "",
+    "unread": 2,
+    "kind": "recovery"
+   }
+  },
+  {
+   "name": "Queen Anne to Charles Mordaunt, Earl of Peterborough, 22 Feb 1711 (BL Add MS 4107 f.184, DECODE R4878)",
+   "reason": "found-solved: queue-hygiene sweep 23 Sept 2026 vs fresh clone -- anne1711/, fraction_read 1.0, every code run matched to a printed clear-text source; two runs (91, 261) have no printed word but do not block the reading. Source of plaintext: printed edition (the code table itself is not rebuilt).",
+   "date": "23 Sept 2026",
+   "scored_row": {
+    "name": "Queen Anne to Charles Mordaunt, Earl of Peterborough, 22 Feb 1711 (BL Add MS 4107 f.184, DECODE R4878)",
+    "language_fit": 3,
+    "material": 1,
+    "key_lead": 1,
+    "size": 2,
+    "competition": 1,
+    "weight": 2,
+    "next_step": "search-print",
+    "next_step_detail": "Search the printed instructions to Peterborough of 22 Feb 1710/11 (Lords' committee report 1712, Lords Journals vol. 19, Boyer's Political State) before viewing DECODE R4878.",
+    "rationale": "No image or transcription seen here; DECODE R4878 is a 3-page numerical cipher behind a free login, and Cryptiana's snapshot has nothing on it (marlborough.htm is not in the snapshot). No key or sibling is catalogued; the design is the standard Queen Anne-era numerical diplomatic code, and DECODE's 'Inline Plaintext: Yes' flag hints at a decipherment on the page but is unverified. Add MS 4107 is a Birch volume of Peterborough papers, and instructions for the Turin embassy were laid before the Lords in 1712, so print is the first place to look. Bourdeau id 86 is open on his tracker (17 Sept 2026); nobody reports work. Re-scored 20 Sept 2026: the rationale's own verdict is 'No key or sibling is catalogued'; DECODE's 'Inline Plaintext: Yes' flag is an unconfirmed positive worth checking first, but is not itself evidence of a located key, so scored cryptanalysis (unread=3) pending that check.",
+    "total": 31,
+    "year": "1711",
+    "language": "en",
+    "sources": [
+     "bourdeau"
+    ],
+    "folder": "",
+    "unread": 3,
+    "kind": "cryptanalysis"
    }
   }
  ],
