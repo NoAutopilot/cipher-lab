@@ -26,12 +26,24 @@ For each worker session this account started: if it finished, pull what it pushe
 it. If it is idle with uncommitted work, poke it. If it has run past its cap, interrupt it. If it stalled,
 say so in the project's `ROOM.md`.
 
+Then count the LEDGER.md rows dated after the newest `RETRO-*.md`. At 12 rows, or $60 of worker usage, whichever
+comes first, start a retrospective (`.claude/briefs/retrospective.md`, Sonnet, cap $10) before taking any further
+scout or check-solved row, and take its lane table as the input to step 4.
+
 ## 4. Take work
 
 Read the hub's `ASSIGNMENTS.md`. Take one row marked `open` whose **For** is your account or `any`, that
 you have the credentials and headroom for. Set it to `claimed` with your account and the time and push
 immediately, before starting anything, so nobody duplicates you. Then start the worker with the brief the
 row names.
+
+Lane yield. A lane is a source plus a query pattern ("TNA Discovery, cipher phrases"; "Gallica SRU, adjacency
+phrases"). Keep a table in the project's STATUS.md, one row per lane: items checked, found-solved or read by others,
+not a cipher, stage 2 needing a copy order or login, stage 2 copy-free. Do not assign another scout or check-solved
+batch on a lane when (a) 8 or more of its items are checked and none is copy-free at stage 2, or (b) 60% or more of
+its last 8 checked items were found-solved. Across all lanes, at most two keyword sweeps (a scout plus its
+check-solved batches) per day, and no sweep of a copy-order lane while 5 or more stage-2 targets already wait on the
+person in ASKS.md. A stopped lane reopens only on the retrospective's recommendation.
 
 ## 5. Surface blockers
 

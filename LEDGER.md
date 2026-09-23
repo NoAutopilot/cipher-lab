@@ -6,8 +6,14 @@ weekly retrospective (`.claude/briefs/retrospective.md`) reads this table, LESSO
 proposes changes to the briefs, CLAUDE.md and the workflows.
 
 Outcome codes: **D** delivered on brief and stopped; **D-** delivered but needed a poke to push, or ran past
-the brief; **F** failed (usage limit, init error, blocked); **X** over-claimed and was corrected; **N** clean
-negative (a search that found nothing, done right).
+the brief; **F** failed (usage limit, init error, blocked); **X** over-claimed and was corrected, written on the
+row of the session that over-claimed (a worker, or an `Orchestrator` row), never on the one that caught it;
+**N** clean negative (a search that found nothing, done right).
+
+Cost is the session metadata's `usage.cost_usd`, read by the orchestrator with get_session when it archives the
+worker; "~" only when that call fails, and then say why. From 24 Sept 2026 rows add four columns after Outcome:
+Lane, Items checked, Stage 2 (copy-free / copy order), Readings or class. The orchestrator writes its own row at
+the end of every wake.
 
 | Date | Role | Model | Cost | Outcome | Lesson |
 |---|---|---|---|---|---|
@@ -52,7 +58,7 @@ negative (a search that found nothing, done right).
 | 23 Sept | Print Check: Mornington vols 3-5 and 1877/1914 editions; Courten Sloane 4019 cross-ref | Sonnet | ~1.5 | D | Nine Mornington despatches unprinted in six editions, D623/23 printed; Courten has a second, 18th-century key at Sloane 4019 f.79 and no published reading. Two REQUEST.md drafted, no email sent. Two false phrase hits caught by reading the full context |
 | 23 Sept | Solver: Bowes 1583 fragments | Opus | ~12 (est.) | D | Partial reading: 93 of 101 tokens, S 82 M 8 I 3, conditional on Tomokiyo's transcription. Route was the letter-book copies in Surtees 1842 as cribs: one key covers 43 tokens vs 28.8 +/- 2.9 for other letters' word lists. Ciphertext-only controls showed the name-only shape defeats the language model, so the negative there was not reported as one. Verifier next |
 | 23 Sept | Check Solved: N4 d'Avaux, N5 Dupuy 63, N6 SP 87, N7 PRO 30/55 | Sonnet | ~3 | D | N4 and N5 found-solved (Tomokiyo keys; N4's catalogue row conflated two items, caught by viewing the leaf). N6 is a 98-item campaign with in-box decipherments for three pairs. N7 partial, HMC calendars everything. Viewing one leaf before scoring saved a false target |
-| 23 Sept | Verifier: Bowes 1583 | Opus | ~15 (est.) | X | Class N1 (N0 possible): plaintext printed 1842 and calendared 1910 with every cipher name in clear. The stage-2 verdict rested on Tomokiyo's note while the calendar's HTRC word counts, reachable all along, contradicted it. Also corrected the orchestrator's '93 at S' (82 S, 93 read). Lesson written into the check-solved template: when a calendar is blocked, run the HTRC word-count test on names and folios before setting stage 2 |
+| 23 Sept | Verifier: Bowes 1583 | Opus | ~15 (est.) | D | Class N1 (N0 possible): plaintext printed 1842 and calendared 1910 with every cipher name in clear. The stage-2 verdict rested on Tomokiyo's note while the calendar's HTRC word counts, reachable all along, contradicted it. Also corrected the orchestrator's '93 at S' (82 S, 93 read). Lesson written into the check-solved template: when a calendar is blocked, run the HTRC word-count test on names and folios before setting stage 2 |
 | 23 Sept | Check Solved: N8 SP 78, N9 Lorraine 377, N10 Dupuy 155, N11 SP 84/165 | Sonnet | ~3 | D | N8 open (four cipher items, 1642-57, not digitised, no sibling decipherment; QUEUE date was wrong); N9 and N10 carry contemporary decipherments on the leaf (viewed); N11 not a cipher. Catalogue dates and 'chiffre' notes must be checked against the leaf before scoring |
 | 23 Sept | Check Solved: N12 Ingham, N13 SP 90/2, N14 SP 87/13, N15 SP 87/23; Thurloe check for SP 78 | Sonnet | ~3 | D | N12 found-solved (Heitzenrater 1985, shorthand); N13-N15 open at stage 2, copy-order targets; SP 78 unprinted in Thurloe vi, REQUEST.md drafted. Lesson: TNA item-detail records carry 'partly in cipher' notes the search results hide; pull item details in every sweep |
 | 23 Sept | Transcription gate: Sforza 1446 image | Opus | ~1 | N | BnF italien 1583 not on Gallica (1584-1615 are); stopped at the gate. The image is on DECODE (R7898, R7899), so the login route replaces a BnF reproduction order |
@@ -61,3 +67,4 @@ negative (a search that found nothing, done right).
 | 23 Sept | Scout: digitised-manuscript catalogues | Sonnet | ~4 | D | 223 Gallica records, 15 genuine cipher items after reading descriptions in full, 11 scored (M1-M11), all imaged on Gallica and outside both solver projects' volumes. 'chiffré' noise confirmed at scale (208 of 223). Seven non-BnF catalogues unreachable to curl (bot challenges); browser-tool pass is the follow-up |
 | 23 Sept | Check Solved: M1 Colbert 369, M2 Clairambault 351, M3 Dupuy 111 | Sonnet | ~3 | N | All three resolved from the images: M1 is Bourdeau's published Maisse key with a register in clear; M2 a bare 1557 key; M3 deciphered and printed by Busnelli (1931, 1986). Zero for three on the digitised lane, at no cost beyond the sweep |
 | 23 Sept | Check Solved: M4 Paget 1714, M5 Marini 1610, M6 Dupuy 452 Carpi, M7 Dupuy 468 Anhalt | Sonnet | ~3.5 | D | M6 open (two ciphered letters, not nine; f.20 viewed, ~80 numeral tokens); M7 partial with a later hand's interlinear gloss on ~15-20 of ~120 tokens, a key on the document; M5 key-only; M4 open, leaf unpinned. Catalogue counts must be checked against the finding aid |
+| 23 Sept | Orchestrator wake, ytbiz account, 15:12-21:20 UTC | Fable | session total about 110 incl. 27 workers (cannot be split; subagent costs not visible per worker, hence the estimates above) | X | Over-claimed Bowes grades in ROOM.md and status.json ("93 at S"; 82 S, 93 read), corrected by the verifier; wrote timestamps up to eight hours ahead of the clock, corrected from the commit log. Applied RETRO-2026-09-23 proposals 1-4 the same evening |
