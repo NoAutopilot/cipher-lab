@@ -1,0 +1,6054 @@
+crop_file	line_no	token_no	token	note
+f28r_L01_s1.jpg	1	1	?	ascender/loop mark in left margin near top of leaf, unclear if letter or flourish
+f28r_L01_s1.jpg	1	2	[PLAIN: "R.."]	cursive flourish resembling capital R, isolated mark, no following text in this crop
+f28r_L01_s2.jpg	1	1	?	small mark lower-left, resembles a letter or flourish, isolated
+f28r_L01_s2.jpg	1	2	28	foliation number written in margin (folio 28), not body text
+f28r_L02_s1.jpg	1	1	[PLAIN: "Madame, pour ce que par les depesches de mon seign-"]	rough reading; secretary cursive; word cut at right edge of crop, continues in s2
+f28r_L02_s2.jpg	1	1	[PLAIN: "-eur le connestable vous entendrez de tous"]	continuation from s1 (overlap skipped); rough reading
+f28r_L02_s2.jpg	1	2	7	tironian et-abbreviation mark (looks like numeral 7), standard scribal abbreviation for "et", not a cipher sign
+f28r_L03_s1.jpg	1	1	[PLAIN: "Les affaires de par deca ordinairement se maintien-"]	rough reading, line 1 of band
+f28r_L03_s1.jpg	2	1	[PLAIN: "de quelque temps en ca, vous en escripvez"]	rough reading, line 2 of band
+f28r_L03_s2.jpg	1	1	[PLAIN: "-nent, ... suis ... jusques a ... autrement ..."]	continuation of line 1 from s1; several words unclear/abbreviated, rough reading only
+f28r_L03_s2.jpg	2	1	[PLAIN: "... pour aussi que par les depesches"]	continuation of line 2 from s1, rough reading
+f28r_L04_s1.jpg	1	1	[PLAIN: "... entierement, ... escript ... convient a monseigneur le tresor-"]	rough reading, line1
+f28r_L04_s1.jpg	2	1	[PLAIN: "selon mon petit pouvoir je puis entendre, et cognoiss-"]	rough reading, line2
+f28r_L04_s2.jpg	1	1	[PLAIN: "-ier Robertet du tout ne que ..."]	continuation line1 from s1
+f28r_L04_s2.jpg	2	1	[PLAIN: "... entendre, et cognoistre, estre le bien du ... [word cut]"]	continuation line2 from s1
+f28r_L05_s1.jpg	1	1	[PLAIN: "... du Roy et bien ... et quant a moy pour madame le c-"]	rough reading, line1 (band top partly cut, prior context from L04 tail)
+f28r_L05_s1.jpg	2	1	[PLAIN: "-onte vous escripvez du xxvii vous entendrez de ce que"]	rough reading, line2
+f28r_L05_s2.jpg	1	1	[PLAIN: "... pour madame le c[onte] que par ce que mon s[eigneur] le t-"]	continuation line1 from s1
+f28r_L05_s2.jpg	2	1	[PLAIN: "... entendrez de ce que ... survenu depuis la depesche"]	continuation line2 from s1
+f28r_L06_s1.jpg	1	1	[PLAIN: "-remierement envoyer par le chemin de Venise, je m-"]	rough reading, line1
+f28r_L06_s1.jpg	2	1	[PLAIN: "... entierement, et aussi que comme je croy vous entendrez"]	rough reading, line2
+f28r_L06_s2.jpg	1	1	[PLAIN: "... de Venise, je m'esmerveille de vous en escripre"]	continuation line1 from s1
+f28r_L06_s2.jpg	2	1	[PLAIN: "... croy, vous entendrez de mons[eigneur] le tresorier"]	continuation line2 from s1
+f28r_L07_s1.jpg	1	1	[PLAIN: "Robertet, ne que par luy en escript du fo. Dhue C."]	rough reading; "Dhue"/"Dhne" abbreviation unclear, possibly a date or reference tag; line1
+f28r_L07_s1.jpg	2	1	[PLAIN: "Madame vous verrez par ce quil son escript"]	rough reading, line2, ends at a virgule
+f28r_L07_s1.jpg	2	2	|	visible virgule (word-division slash) in ms marking start of cipher passage
+f28r_L07_s2.jpg	1	1	[PLAIN: "-ipt du fo. Dhue C."]	continuation of line1 from s1 (overlap skipped)
+f28r_L07_s2.jpg	2	1	K	Latin letter K used as cipher sign
+f28r_L07_s2.jpg	2	2	[C01]	bowl shape with long descending tail curling left below baseline (rho/p-like)
+f28r_L07_s2.jpg	2	3	[C02]	small open rounded cup, upsilon/u-like
+f28r_L07_s2.jpg	2	4	[C03]	small closed loop, theta-like; shape uncertain, may overlap with C04 -- kept separate
+f28r_L07_s2.jpg	2	5	z	Latin letter z used as cipher sign
+f28r_L07_s2.jpg	2	6	f	Latin letter f used as cipher sign
+f28r_L07_s2.jpg	2	7	[C04]	tall looping ascender, figure-eight/cursive-l-like
+f28r_L07_s2.jpg	2	8	q	Latin letter q used as cipher sign (or invented lookalike, kept literal)
+f28r_L07_s2.jpg	2	9	v	Latin letter v used as cipher sign
+f28r_L07_s2.jpg	2	10	[C06]	small circle bisected by a vertical stroke, phi-like
+f28r_L07_s2.jpg	2	11	[C07]	solid/outline triangle, delta-like
+f28r_L07_s2.jpg	2	12	o	circle/o-shape used as cipher sign
+f28r_L07_s2.jpg	2	13	[C08]	bold multi-stroke X, heavier than plain x, asterisk-like
+f28r_L07_s2.jpg	2	14	[C09]	hollow square/box
+f28r_L07_s2.jpg	2	15	o	circle/o-shape
+f28r_L07_s2.jpg	2	16	[C04]	tall looping ascender (repeat of token 7 shape)
+f28r_L07_s2.jpg	2	17	T	Latin letter T used as cipher sign
+f28r_L07_s2.jpg	2	18	o	circle/o-shape
+f28r_L07_s2.jpg	2	19	[C06]	circle bisected by vertical stroke (repeat)
+f28r_L07_s2.jpg	2	20	[C10]	inverted-V / lambda-like peak, no crossbar
+f28r_L07_s2.jpg	2	21	[C11]	vertical stroke topped with small loop/flag, distinct from plain T
+f28r_L07_s2.jpg	2	22	o	circle/o-shape
+f28r_L07_s2.jpg	2	23	[C09]	hollow square/box (repeat)
+f28r_L07_s2.jpg	2	24	[C06]	circle bisected by vertical stroke (repeat)
+f28r_L07_s2.jpg	2	25	v	Latin letter v
+f28r_L07_s2.jpg	2	26	[C01]	rho/p-like descender (repeat)
+f28r_L07_s2.jpg	2	27	[C12]	reversed-6/script-b closed loop with tail
+f28r_L07_s2.jpg	2	28	n	Latin letter n
+f28r_L07_s2.jpg	2	29	v	Latin letter v
+f28r_L07_s2.jpg	2	30	[C08]	bold multi-stroke X (repeat), line ends here at crop edge
+f28r_L08_s1.jpg	1	1	[C10]	inverted-V no crossbar
+f28r_L08_s1.jpg	1	2	[C13]	three-pronged fork/trident shape, new code
+f28r_L08_s1.jpg	1	3	[C10]	inverted-V (repeat)
+f28r_L08_s1.jpg	1	4	z	Latin z
+f28r_L08_s1.jpg	1	5	f	Latin f
+f28r_L08_s1.jpg	1	6	[C04]	loop-ascender
+f28r_L08_s1.jpg	1	7	[C04]	loop-ascender (repeat, two in a row)
+f28r_L08_s1.jpg	1	8	[C06]	circle bisected by vertical stroke
+f28r_L08_s1.jpg	1	9	[C04]	loop-ascender (repeat)
+f28r_L08_s1.jpg	1	10	[C11]	vertical stroke with small ball/cross top (tau-like)
+f28r_L08_s1.jpg	1	11	[C07]	triangle
+f28r_L08_s1.jpg	1	12	I	Latin capital I
+f28r_L08_s1.jpg	1	13	[C06]	circle bisected by vertical stroke (repeat)
+f28r_L08_s1.jpg	1	14	[C14]	wavy w/omega shape, new code
+f28r_L08_s1.jpg	1	15	[C01]	descending bowl+tail
+f28r_L08_s1.jpg	1	16	[C06]	circle bisected by vertical stroke, small mark above -- possibly distinct variant, kept as C06 with note
+f28r_L08_s1.jpg	1	17	[C01]	descending bowl+tail (repeat)
+f28r_L08_s1.jpg	1	18	[C02]	small open cup
+f28r_L08_s1.jpg	1	19	E	Latin capital E (squared, distinct from rounded epsilon C15)
+f28r_L08_s1.jpg	1	20	7	numeral/sign resembling 7, recurring in cipher stretch (not the plain-text et-mark context here)
+f28r_L08_s1.jpg	1	21	[C04]	loop-ascender (repeat)
+f28r_L08_s1.jpg	1	22	n	Latin n
+f28r_L08_s1.jpg	1	23	[C02]	small open cup (repeat)
+f28r_L08_s1.jpg	1	24	[C08]	bold multi-stroke X
+f28r_L08_s1.jpg	1	25	[C01]	descending bowl+tail (repeat)
+f28r_L08_s1.jpg	1	26	[C11]	tau/dagger-like (repeat)
+f28r_L08_s1.jpg	1	27	[C04]	loop-ascender (repeat)
+f28r_L08_s1.jpg	1	28	7	7-like sign (repeat)
+f28r_L08_s1.jpg	1	29	f	Latin f
+f28r_L08_s1.jpg	1	30	z	Latin z
+f28r_L08_s1.jpg	1	31	E	Latin capital E
+f28r_L08_s1.jpg	1	32	[C06]	circle bisected by vertical stroke (repeat)
+f28r_L08_s1.jpg	1	33	[C04]	loop-ascender (repeat); line cut at crop edge, continues in s2
+f28r_L08_s2.jpg	1	1	[C11]	tau/dagger-like (overlap-continuation, first legible new token after s1 overlap)
+f28r_L08_s2.jpg	1	2	z	Latin z
+f28r_L08_s2.jpg	1	3	[C15]	open-C with horizontal bar, epsilon-like, new code, distinct from C03
+f28r_L08_s2.jpg	1	4	[C06]	circle bisected by vertical stroke
+f28r_L08_s2.jpg	1	5	[C04]	loop-ascender
+f28r_L08_s2.jpg	1	6	T	Latin capital T
+f28r_L08_s2.jpg	1	7	z	Latin z
+f28r_L08_s2.jpg	1	8	[C02]	small open cup
+f28r_L08_s2.jpg	1	9	[C01]	descending bowl+tail; line1 ends at crop right edge
+f28r_L08_s1.jpg	2	1	7	7-like sign
+f28r_L08_s1.jpg	2	2	[C04]	loop-ascender
+f28r_L08_s1.jpg	2	3	[C10]	inverted-V
+f28r_L08_s1.jpg	2	4	I	Latin capital I
+f28r_L08_s1.jpg	2	5	[C01]	descending bowl+tail
+f28r_L08_s1.jpg	2	6	f	Latin f
+f28r_L08_s1.jpg	2	7	[C13]	trident/psi shape
+f28r_L08_s1.jpg	2	8	[C11]	tau/dagger-like
+f28r_L08_s1.jpg	2	9	?	small mark, uncertain shape (possibly a house/roof C16, kept unresolved rather than merged)
+f28r_L08_s1.jpg	2	10	[C06]	circle bisected by vertical stroke
+f28r_L08_s1.jpg	2	11	[C04]	loop-ascender
+f28r_L08_s1.jpg	2	12	o	circle/o-shape
+f28r_L08_s1.jpg	2	13	[C10]	inverted-V
+f28r_L08_s1.jpg	2	14	[C04]	loop-ascender
+f28r_L08_s1.jpg	2	15	[C11]	tau/dagger-like
+f28r_L08_s1.jpg	2	16	[C01]	descending bowl+tail; small mark, may carry a dot -- kept as C01
+f28r_L08_s1.jpg	2	17	[C08]	bold multi-stroke X; line2 cut at crop edge, continues in s2
+f28r_L08_s2.jpg	2	1	v	Latin v (overlap-continuation)
+f28r_L08_s2.jpg	2	2	[C08]	bold multi-stroke X
+f28r_L08_s2.jpg	2	3	[C01]	descending bowl+tail
+f28r_L08_s2.jpg	2	4	fo	two Latin letters f,o written close together -- kept as one token, note distinguishes if reconciliation needs split
+f28r_L08_s2.jpg	2	5	I	Latin capital I
+f28r_L08_s2.jpg	2	6	[C15]	epsilon-like open-C
+f28r_L08_s2.jpg	2	7	S	Latin capital S
+f28r_L08_s2.jpg	2	8	[C15]	epsilon-like open-C (repeat)
+f28r_L08_s2.jpg	2	9	I	Latin capital I
+f28r_L08_s2.jpg	2	10	[C10]	inverted-V
+f28r_L08_s2.jpg	2	11	[C13]	trident/psi
+f28r_L08_s2.jpg	2	12	[C04]	loop-ascender
+f28r_L08_s2.jpg	2	13	[C11]	tau/dagger-like
+f28r_L08_s2.jpg	2	14	[C06]	circle bisected by vertical stroke
+f28r_L08_s2.jpg	2	15	o	circle/o-shape
+f28r_L08_s2.jpg	2	16	[C06]	circle bisected by vertical stroke (repeat)
+f28r_L08_s2.jpg	2	17	v	Latin v
+f28r_L08_s2.jpg	2	18	[C04]	loop-ascender
+f28r_L08_s2.jpg	2	19	[C01]	descending bowl+tail
+f28r_L08_s2.jpg	2	20	[C11]	tau/dagger-like
+f28r_L08_s2.jpg	2	21	[C10]	inverted-V
+f28r_L08_s2.jpg	2	22	n	Latin n
+f28r_L08_s2.jpg	2	23	v	Latin v
+f28r_L08_s2.jpg	2	24	[C06]	circle bisected by vertical stroke
+f28r_L08_s2.jpg	2	25	o	circle/o-shape
+f28r_L08_s2.jpg	2	26	[C11]	tau/dagger-like
+f28r_L08_s2.jpg	2	27	[C01]	descending bowl+tail
+f28r_L08_s2.jpg	2	28	v	Latin v
+f28r_L08_s2.jpg	2	29	[C09]	hollow square/box
+f28r_L08_s2.jpg	2	30	f	Latin f
+f28r_L08_s2.jpg	2	31	[C15]	epsilon-like open-C
+f28r_L08_s2.jpg	2	32	o	circle/o-shape
+f28r_L08_s2.jpg	2	33	v	Latin v
+f28r_L08_s2.jpg	2	34	[C07]	triangle
+f28r_L08_s2.jpg	2	35	z	Latin z
+f28r_L08_s2.jpg	2	36	I	Latin capital I
+f28r_L08_s2.jpg	2	37	[C04]	loop-ascender
+f28r_L08_s2.jpg	2	38	T	Latin capital T
+f28r_L08_s2.jpg	2	39	o	circle/o-shape
+f28r_L08_s2.jpg	2	40	v	Latin v
+f28r_L08_s2.jpg	2	41	[C11]	tau/dagger-like
+f28r_L08_s2.jpg	2	42	[C01]	descending bowl+tail
+f28r_L08_s2.jpg	2	43	o	circle/o-shape
+f28r_L08_s2.jpg	2	44	f	Latin f
+f28r_L08_s2.jpg	2	45	[C04]	loop-ascender
+f28r_L08_s2.jpg	2	46	S	Latin capital S
+f28r_L08_s2.jpg	2	47	o	circle/o-shape
+f28r_L08_s2.jpg	2	48	[C01]	descending bowl+tail; line ends at crop right edge/margin
+f28r_L09_s1.jpg	1	1	[C01]	
+f28r_L09_s1.jpg	1	2	[C06]	
+f28r_L09_s1.jpg	1	3	[C09]	
+f28r_L09_s1.jpg	1	4	o	
+f28r_L09_s1.jpg	1	5	[C10]	
+f28r_L09_s1.jpg	1	6	[C13]	
+f28r_L09_s1.jpg	1	7	[C10]	
+f28r_L09_s1.jpg	1	8	[C04]	
+f28r_L09_s1.jpg	1	9	[C06]	
+f28r_L09_s1.jpg	1	10	[C11]	
+f28r_L09_s1.jpg	1	11	o	
+f28r_L09_s1.jpg	1	12	I	
+f28r_L09_s1.jpg	1	13	f	
+f28r_L09_s1.jpg	1	14	[C10]	
+f28r_L09_s1.jpg	1	15	I	
+f28r_L09_s1.jpg	1	16	o	
+f28r_L09_s1.jpg	1	17	[C01]	
+f28r_L09_s1.jpg	1	18	[C02]	
+f28r_L09_s1.jpg	1	19	[C11]	
+f28r_L09_s1.jpg	1	20	f	
+f28r_L09_s1.jpg	1	21	R	Latin capital R, new literal
+f28r_L09_s1.jpg	1	22	T	
+f28r_L09_s1.jpg	1	23	[C10]	
+f28r_L09_s1.jpg	1	24	v	
+f28r_L09_s1.jpg	1	25	[C06]	
+f28r_L09_s1.jpg	1	26	[C01]	
+f28r_L09_s1.jpg	1	27	[C13]	
+f28r_L09_s1.jpg	1	28	v	
+f28r_L09_s1.jpg	1	29	[C06]	
+f28r_L09_s1.jpg	1	30	[C01]	
+f28r_L09_s1.jpg	1	31	z	
+f28r_L09_s1.jpg	1	32	A	Latin capital A, new literal
+f28r_L09_s1.jpg	1	33	[C06]	
+f28r_L09_s1.jpg	1	34	[C06]	
+f28r_L09_s1.jpg	1	35	o	
+f28r_L09_s1.jpg	1	36	[C08]	line cut at crop edge, continues s2
+f28r_L09_s1.jpg	2	1	[C10]	
+f28r_L09_s1.jpg	2	2	[C11]	
+f28r_L09_s1.jpg	2	3	f	
+f28r_L09_s1.jpg	2	4	[C10]	
+f28r_L09_s1.jpg	2	5	o	
+f28r_L09_s1.jpg	2	6	[C19]	
+f28r_L09_s1.jpg	2	7	[C02]	
+f28r_L09_s1.jpg	2	8	[C10]	
+f28r_L09_s1.jpg	2	9	[C13]	
+f28r_L09_s1.jpg	2	10	f	
+f28r_L09_s1.jpg	2	11	[C04]	
+f28r_L09_s1.jpg	2	12	[C06]	
+f28r_L09_s1.jpg	2	13	[C07]	
+f28r_L09_s1.jpg	2	14	E	
+f28r_L09_s1.jpg	2	15	[C06]	
+f28r_L09_s1.jpg	2	16	[C06]	
+f28r_L09_s1.jpg	2	17	7	
+f28r_L09_s1.jpg	2	18	[C04]	
+f28r_L09_s1.jpg	2	19	[C09]	
+f28r_L09_s1.jpg	2	20	[C06]	
+f28r_L09_s1.jpg	2	21	z	
+f28r_L09_s1.jpg	2	22	I	
+f28r_L09_s1.jpg	2	23	[C06]	
+f28r_L09_s1.jpg	2	24	[C11]	
+f28r_L09_s1.jpg	2	25	[C04]	
+f28r_L09_s1.jpg	2	26	[C06]	
+f28r_L09_s1.jpg	2	27	z	
+f28r_L09_s1.jpg	2	28	T	
+f28r_L09_s1.jpg	2	29	7	
+f28r_L09_s1.jpg	2	30	[C04]	
+f28r_L09_s1.jpg	2	31	f	line cut at crop edge, continues s2
+f28r_L09_s2.jpg	1	1	v	overlap-continuation
+f28r_L09_s2.jpg	1	2	[C01]	
+f28r_L09_s2.jpg	1	3	[C06]	
+f28r_L09_s2.jpg	1	4	v	
+f28r_L09_s2.jpg	1	5	[C01]	
+f28r_L09_s2.jpg	1	6	[C01]	repeated bowl, uncertain if truly two tokens or one wide sign -- kept separate
+f28r_L09_s2.jpg	1	7	z	
+f28r_L09_s2.jpg	1	8	A	
+f28r_L09_s2.jpg	1	9	[C06]	
+f28r_L09_s2.jpg	1	10	[C06]	
+f28r_L09_s2.jpg	1	11	o	
+f28r_L09_s2.jpg	1	12	x	plain x, distinct weight from C08 -- kept literal
+f28r_L09_s2.jpg	1	13	[C11]	
+f28r_L09_s2.jpg	1	14	f	
+f28r_L09_s2.jpg	1	15	z	
+f28r_L09_s2.jpg	1	16	I	
+f28r_L09_s2.jpg	1	17	[C10]	
+f28r_L09_s2.jpg	1	18	[C04]	
+f28r_L09_s2.jpg	1	19	[C11]	
+f28r_L09_s2.jpg	1	20	n	
+f28r_L09_s2.jpg	1	21	v	
+f28r_L09_s2.jpg	1	22	[C06]	
+f28r_L09_s2.jpg	1	23	[C19]	
+f28r_L09_s2.jpg	1	24	I	
+f28r_L09_s2.jpg	1	25	[C06]	
+f28r_L09_s2.jpg	1	26	f	
+f28r_L09_s2.jpg	1	27	[C10]	
+f28r_L09_s2.jpg	1	28	z	
+f28r_L09_s2.jpg	1	29	3	numeral 3, new literal
+f28r_L09_s2.jpg	1	30	[C13]	
+f28r_L09_s2.jpg	1	31	f	
+f28r_L09_s2.jpg	1	32	[C04]	
+f28r_L09_s2.jpg	1	33	[C01]	line ends at crop right margin
+f28r_L09_s2.jpg	2	1	[C04]	overlap-continuation
+f28r_L09_s2.jpg	2	2	[C09]	
+f28r_L09_s2.jpg	2	3	o	
+f28r_L09_s2.jpg	2	4	[C08]	
+f28r_L09_s2.jpg	2	5	z	
+f28r_L09_s2.jpg	2	6	I	
+f28r_L09_s2.jpg	2	7	[C06]	
+f28r_L09_s2.jpg	2	8	f	
+f28r_L09_s2.jpg	2	9	[C10]	
+f28r_L09_s2.jpg	2	10	z	
+f28r_L09_s2.jpg	2	11	3	
+f28r_L09_s2.jpg	2	12	[C13]	
+f28r_L09_s2.jpg	2	13	f	
+f28r_L09_s2.jpg	2	14	[C04]	
+f28r_L09_s2.jpg	2	15	?	unresolved mark at far right edge, possibly cut sign
+f28r_L10_s1.jpg	1	1	[C06]	
+f28r_L10_s1.jpg	1	2	[C01]	
+f28r_L10_s1.jpg	1	3	[C02]	
+f28r_L10_s1.jpg	1	4	[C11]	
+f28r_L10_s1.jpg	1	5	[C06]	
+f28r_L10_s1.jpg	1	6	[C04]	
+f28r_L10_s1.jpg	1	7	E	
+f28r_L10_s1.jpg	1	8	[C01]	
+f28r_L10_s1.jpg	1	9	o	
+f28r_L10_s1.jpg	1	10	z	
+f28r_L10_s1.jpg	1	11	v	
+f28r_L10_s1.jpg	1	12	7	
+f28r_L10_s1.jpg	1	13	[C10]	
+f28r_L10_s1.jpg	1	14	[C04]	
+f28r_L10_s1.jpg	1	15	z	
+f28r_L10_s1.jpg	1	16	x	
+f28r_L10_s1.jpg	1	17	[C04]	
+f28r_L10_s1.jpg	1	18	[C06]	
+f28r_L10_s1.jpg	1	19	[C13]	
+f28r_L10_s1.jpg	1	20	n	
+f28r_L10_s1.jpg	1	21	v	
+f28r_L10_s1.jpg	1	22	I	
+f28r_L10_s1.jpg	1	23	[C10]	
+f28r_L10_s1.jpg	1	24	7	
+f28r_L10_s1.jpg	1	25	[C04]	
+f28r_L10_s1.jpg	1	26	[C11]	
+f28r_L10_s1.jpg	1	27	f	
+f28r_L10_s1.jpg	1	28	[C04]	
+f28r_L10_s1.jpg	1	29	[C13]	
+f28r_L10_s1.jpg	1	30	s	
+f28r_L10_s1.jpg	1	31	T	
+f28r_L10_s1.jpg	1	32	[C10]	
+f28r_L10_s1.jpg	1	33	[C11]	
+f28r_L10_s1.jpg	1	34	l	
+f28r_L10_s1.jpg	1	35	f	
+f28r_L10_s1.jpg	1	36	7	
+f28r_L10_s1.jpg	1	37	f	line cut at crop edge, continues s2
+f28r_L10_s1.jpg	2	1	X	Latin capital X (distinct from C08 bold-x sign; kept literal as it reads as plain serif X)
+f28r_L10_s1.jpg	2	2	v	
+f28r_L10_s1.jpg	2	3	[C04]	
+f28r_L10_s1.jpg	2	4	[C06]	
+f28r_L10_s1.jpg	2	5	[C11]	
+f28r_L10_s1.jpg	2	6	z	
+f28r_L10_s1.jpg	2	7	T	
+f28r_L10_s1.jpg	2	8	x	
+f28r_L10_s1.jpg	2	9	f	
+f28r_L10_s1.jpg	2	10	I	
+f28r_L10_s1.jpg	2	11	z	
+f28r_L10_s1.jpg	2	12	f	
+f28r_L10_s1.jpg	2	13	n	
+f28r_L10_s1.jpg	2	14	v	
+f28r_L10_s1.jpg	2	15	[C11]	
+f28r_L10_s1.jpg	2	16	s	
+f28r_L10_s1.jpg	2	17	o	
+f28r_L10_s1.jpg	2	18	3	
+f28r_L10_s1.jpg	2	19	[C06]	
+f28r_L10_s1.jpg	2	20	I	
+f28r_L10_s1.jpg	2	21	[C10]	
+f28r_L10_s1.jpg	2	22	[C13]	
+f28r_L10_s1.jpg	2	23	7	
+f28r_L10_s1.jpg	2	24	[C04]	
+f28r_L10_s1.jpg	2	25	[C09]	
+f28r_L10_s1.jpg	2	26	[C06]	
+f28r_L10_s1.jpg	2	27	[C11]	
+f28r_L10_s1.jpg	2	28	v	
+f28r_L10_s1.jpg	2	29	[C06]	
+f28r_L10_s1.jpg	2	30	[C13]	
+f28r_L10_s1.jpg	2	31	f	
+f28r_L10_s1.jpg	2	32	[C04]	
+f28r_L10_s1.jpg	2	33	[C04]	
+f28r_L10_s1.jpg	2	34	[C06]	
+f28r_L10_s1.jpg	2	35	[C11]	
+f28r_L10_s1.jpg	2	36	[C10]	
+f28r_L10_s1.jpg	2	37	[C19]	line cut at crop edge, continues s2
+f28r_L10_s2.jpg	1	1	[C13]	overlap-continuation, new tokens begin
+f28r_L10_s2.jpg	1	2	v	
+f28r_L10_s2.jpg	1	3	[C06]	
+f28r_L10_s2.jpg	1	4	[C11]	
+f28r_L10_s2.jpg	1	5	f	
+f28r_L10_s2.jpg	1	6	[C04]	
+f28r_L10_s2.jpg	1	7	x	
+f28r_L10_s2.jpg	1	8	o	
+f28r_L10_s2.jpg	1	9	s	
+f28r_L10_s2.jpg	1	10	[C06]	
+f28r_L10_s2.jpg	1	11	I	
+f28r_L10_s2.jpg	1	12	[C10]	
+f28r_L10_s2.jpg	1	13	[C10]	
+f28r_L10_s2.jpg	1	14	o	
+f28r_L10_s2.jpg	1	15	[C11]	
+f28r_L10_s2.jpg	1	16	o	
+f28r_L10_s2.jpg	1	17	[C17]	heart-shaped mark, distinctive
+f28r_L10_s2.jpg	1	18	[C13]	
+f28r_L10_s2.jpg	1	19	[C04]	
+f28r_L10_s2.jpg	1	20	m	Latin m, new literal
+f28r_L10_s2.jpg	1	21	[C18]	squiggle mark
+f28r_L10_s2.jpg	1	22	[C10]	line ends at crop right margin
+f28r_L10_s2.jpg	2	1	I	overlap-continuation, new tokens begin
+f28r_L10_s2.jpg	2	2	[C13]	
+f28r_L10_s2.jpg	2	3	f	
+f28r_L10_s2.jpg	2	4	[C09]	
+f28r_L10_s2.jpg	2	5	7	
+f28r_L10_s2.jpg	2	6	n	
+f28r_L10_s2.jpg	2	7	v	
+f28r_L10_s2.jpg	2	8	x	
+f28r_L10_s2.jpg	2	9	[C01]	
+f28r_L10_s2.jpg	2	10	[C01]	
+f28r_L10_s2.jpg	2	11	[C06]	
+f28r_L10_s2.jpg	2	12	v	
+f28r_L10_s2.jpg	2	13	[C06]	
+f28r_L10_s2.jpg	2	14	[C13]	
+f28r_L10_s2.jpg	2	15	f	
+f28r_L10_s2.jpg	2	16	[C07]	
+f28r_L10_s2.jpg	2	17	v	
+f28r_L10_s2.jpg	2	18	[C04]	
+f28r_L10_s2.jpg	2	19	[C01]	
+f28r_L10_s2.jpg	2	20	I	
+f28r_L10_s2.jpg	2	21	[C09]	
+f28r_L10_s2.jpg	2	22	[C04]	line ends at crop right margin
+f28r_L11_s1.jpg	1	1	[C13]	
+f28r_L11_s1.jpg	1	2	[C04]	
+f28r_L11_s1.jpg	1	3	s	
+f28r_L11_s1.jpg	1	4	[C11]	
+f28r_L11_s1.jpg	1	5	[C10]	
+f28r_L11_s1.jpg	1	6	s	
+f28r_L11_s1.jpg	1	7	[C13]	
+f28r_L11_s1.jpg	1	8	s	
+f28r_L11_s1.jpg	1	9	7	
+f28r_L11_s1.jpg	1	10	f	
+f28r_L11_s1.jpg	1	11	[C04]	
+f28r_L11_s1.jpg	1	12	h	Latin h, new literal (hook-topped upright, distinct from C11)
+f28r_L11_s1.jpg	1	13	z	
+f28r_L11_s1.jpg	1	14	z	
+f28r_L11_s1.jpg	1	15	f	
+f28r_L11_s1.jpg	1	16	[C01]	
+f28r_L11_s1.jpg	1	17	[C13]	
+f28r_L11_s1.jpg	1	18	v	
+f28r_L11_s1.jpg	1	19	[C06]	
+f28r_L11_s1.jpg	1	20	[C06]	
+f28r_L11_s1.jpg	1	21	[C13]	
+f28r_L11_s1.jpg	1	22	s	
+f28r_L11_s1.jpg	1	23	I	
+f28r_L11_s1.jpg	1	24	[C09]	
+f28r_L11_s1.jpg	1	25	[C04]	
+f28r_L11_s1.jpg	1	26	7	
+f28r_L11_s1.jpg	1	27	f	
+f28r_L11_s1.jpg	1	28	s	
+f28r_L11_s1.jpg	1	29	[C13]	
+f28r_L11_s1.jpg	1	30	s	
+f28r_L11_s1.jpg	1	31	[C04]	
+f28r_L11_s1.jpg	1	32	I	
+f28r_L11_s1.jpg	1	33	[C06]	
+f28r_L11_s1.jpg	1	34	[C13]	line cut at crop edge, continues s2
+f28r_L11_s1.jpg	2	1	n	
+f28r_L11_s1.jpg	2	2	v	
+f28r_L11_s1.jpg	2	3	x	
+f28r_L11_s1.jpg	2	4	[C10]	
+f28r_L11_s1.jpg	2	5	[C13]	
+f28r_L11_s1.jpg	2	6	[C07]	
+f28r_L11_s1.jpg	2	7	[C13]	
+f28r_L11_s1.jpg	2	8	I	
+f28r_L11_s1.jpg	2	9	[C04]	
+f28r_L11_s1.jpg	2	10	[C11]	
+f28r_L11_s1.jpg	2	11	[C06]	
+f28r_L11_s1.jpg	2	12	o	
+f28r_L11_s1.jpg	2	13	f	
+f28r_L11_s1.jpg	2	14	[C04]	
+f28r_L11_s1.jpg	2	15	[C11]	
+f28r_L11_s1.jpg	2	16	[C04]	
+f28r_L11_s1.jpg	2	17	[C10]	
+f28r_L11_s1.jpg	2	18	o	
+f28r_L11_s1.jpg	2	19	[C11]	
+f28r_L11_s1.jpg	2	20	v	
+f28r_L11_s1.jpg	2	21	[C04]	
+f28r_L11_s1.jpg	2	22	[C19]	
+f28r_L11_s1.jpg	2	23	I	
+f28r_L11_s1.jpg	2	24	[C13]	
+f28r_L11_s1.jpg	2	25	f	
+f28r_L11_s1.jpg	2	26	[C07]	
+f28r_L11_s1.jpg	2	27	[C01]	
+f28r_L11_s1.jpg	2	28	I	
+f28r_L11_s1.jpg	2	29	[C06]	
+f28r_L11_s1.jpg	2	30	[C11]	
+f28r_L11_s1.jpg	2	31	[C10]	
+f28r_L11_s1.jpg	2	32	z	
+f28r_L11_s1.jpg	2	33	f	
+f28r_L11_s1.jpg	2	34	T	line cut at crop edge, continues s2
+f28r_L11_s2.jpg	1	1	[C01]	overlap-continuation, new tokens begin
+f28r_L11_s2.jpg	1	2	[C06]	
+f28r_L11_s2.jpg	1	3	[C04]	
+f28r_L11_s2.jpg	1	4	z	
+f28r_L11_s2.jpg	1	5	v	
+f28r_L11_s2.jpg	1	6	[C06]	
+f28r_L11_s2.jpg	1	7	[C01]	
+f28r_L11_s2.jpg	1	8	[C11]	
+f28r_L11_s2.jpg	1	9	T	
+f28r_L11_s2.jpg	1	10	[C01]	
+f28r_L11_s2.jpg	1	11	z	
+f28r_L11_s2.jpg	1	12	[C10]	
+f28r_L11_s2.jpg	1	13	T	
+f28r_L11_s2.jpg	1	14	[C13]	
+f28r_L11_s2.jpg	1	15	[C01]	
+f28r_L11_s2.jpg	1	16	[C09]	
+f28r_L11_s2.jpg	1	17	z	
+f28r_L11_s2.jpg	1	18	[C01]	
+f28r_L11_s2.jpg	1	19	A	
+f28r_L11_s2.jpg	1	20	[C13]	line ends at crop right margin
+f28r_L11_s2.jpg	2	1	[C06]	overlap-continuation, new tokens begin
+f28r_L11_s2.jpg	2	2	z	
+f28r_L11_s2.jpg	2	3	v	
+f28r_L11_s2.jpg	2	4	x	
+f28r_L11_s2.jpg	2	5	[C20]	distinctive box-with-double-internal-bars, repeated 3x in a row
+f28r_L11_s2.jpg	2	6	[C20]	repeat of triple group
+f28r_L11_s2.jpg	2	7	[C20]	repeat of triple group
+f28r_L11_s2.jpg	2	8	[C09]	
+f28r_L11_s2.jpg	2	9	[C04]	
+f28r_L11_s2.jpg	2	10	[C01]	
+f28r_L11_s2.jpg	2	11	[C11]	
+f28r_L11_s2.jpg	2	12	[C10]	
+f28r_L11_s2.jpg	2	13	T	
+f28r_L11_s2.jpg	2	14	o	
+f28r_L11_s2.jpg	2	15	[C06]	
+f28r_L11_s2.jpg	2	16	[C04]	
+f28r_L11_s2.jpg	2	17	I	
+f28r_L11_s2.jpg	2	18	[C04]	
+f28r_L11_s2.jpg	2	19	[C14]	
+f28r_L11_s2.jpg	2	20	7	
+f28r_L11_s2.jpg	2	21	[C04]	
+f28r_L11_s2.jpg	2	22	z	
+f28r_L11_s2.jpg	2	23	x	
+f28r_L11_s2.jpg	2	24	[C11]	
+f28r_L11_s2.jpg	2	25	[C10]	line ends at crop right margin
+f28r_L12_s1.jpg	1	1	n	
+f28r_L12_s1.jpg	1	2	v	
+f28r_L12_s1.jpg	1	3	I	
+f28r_L12_s1.jpg	1	4	[C01]	
+f28r_L12_s1.jpg	1	5	s	
+f28r_L12_s1.jpg	1	6	z	
+f28r_L12_s1.jpg	1	7	f	
+f28r_L12_s1.jpg	1	8	[C10]	
+f28r_L12_s1.jpg	1	9	[C04]	
+f28r_L12_s1.jpg	1	10	[C06]	
+f28r_L12_s1.jpg	1	11	o	
+f28r_L12_s1.jpg	1	12	[C01]	
+f28r_L12_s1.jpg	1	13	v	
+f28r_L12_s1.jpg	1	14	E	
+f28r_L12_s1.jpg	1	15	[C06]	
+f28r_L12_s1.jpg	1	16	v	
+f28r_L12_s1.jpg	1	17	[C10]	
+f28r_L12_s1.jpg	1	18	I	
+f28r_L12_s1.jpg	1	19	[C06]	
+f28r_L12_s1.jpg	1	20	[C13]	
+f28r_L12_s1.jpg	1	21	[C10]	
+f28r_L12_s1.jpg	1	22	[C04]	
+f28r_L12_s1.jpg	1	23	[C11]	
+f28r_L12_s1.jpg	1	24	[C07]	
+f28r_L12_s1.jpg	1	25	o	
+f28r_L12_s1.jpg	1	26	I	
+f28r_L12_s1.jpg	1	27	[C09]	
+f28r_L12_s1.jpg	1	28	[C04]	
+f28r_L12_s1.jpg	1	29	[C13]	
+f28r_L12_s1.jpg	1	30	[C10]	
+f28r_L12_s1.jpg	1	31	[C01]	
+f28r_L12_s1.jpg	1	32	[C06]	
+f28r_L12_s1.jpg	1	33	[C10]	
+f28r_L12_s1.jpg	1	34	[C20]	line cut at crop edge, continues s2 (triple-box group starts)
+f28r_L12_s1.jpg	2	1	[C01]	
+f28r_L12_s1.jpg	2	2	[C06]	
+f28r_L12_s1.jpg	2	3	[C13]	
+f28r_L12_s1.jpg	2	4	x	
+f28r_L12_s1.jpg	2	5	[C09]	
+f28r_L12_s1.jpg	2	6	[C04]	
+f28r_L12_s1.jpg	2	7	[C11]	tall mark with crossbar and descender loop below (Ϯ-like), kept as C11 variant, flagged
+f28r_L12_s1.jpg	2	8	m	
+f28r_L12_s1.jpg	2	9	[C10]	
+f28r_L12_s1.jpg	2	10	v	
+f28r_L12_s1.jpg	2	11	h	
+f28r_L12_s1.jpg	2	12	[C06]	
+f28r_L12_s1.jpg	2	13	o	
+f28r_L12_s1.jpg	2	14	E	
+f28r_L12_s1.jpg	2	15	[C13]	
+f28r_L12_s1.jpg	2	16	s	
+f28r_L12_s1.jpg	2	17	[C13]	
+f28r_L12_s1.jpg	2	18	f	
+f28r_L12_s1.jpg	2	19	[C04]	
+f28r_L12_s1.jpg	2	20	[C21]	circle with cross of two lines inside (spoked), new code distinct from C06/C19
+f28r_L12_s1.jpg	2	21	E	
+f28r_L12_s1.jpg	2	22	o	
+f28r_L12_s1.jpg	2	23	f	
+f28r_L12_s1.jpg	2	24	[C04]	
+f28r_L12_s1.jpg	2	25	?	small loop/hook mark, unresolved shape
+f28r_L12_s1.jpg	2	26	[C10]	
+f28r_L12_s1.jpg	2	27	I	
+f28r_L12_s1.jpg	2	28	[C01]	
+f28r_L12_s1.jpg	2	29	[C13]	
+f28r_L12_s1.jpg	2	30	[C06]	
+f28r_L12_s1.jpg	2	31	[C13]	
+f28r_L12_s1.jpg	2	32	z	
+f28r_L12_s1.jpg	2	33	v	
+f28r_L12_s1.jpg	2	34	[C06]	line cut at crop edge, continues s2
+f28r_L12_s2.jpg	1	1	[C11]	overlap-continuation, new tokens begin
+f28r_L12_s2.jpg	1	2	[C07]	
+f28r_L12_s2.jpg	1	3	o	
+f28r_L12_s2.jpg	1	4	I	
+f28r_L12_s2.jpg	1	5	[C09]	
+f28r_L12_s2.jpg	1	6	[C04]	
+f28r_L12_s2.jpg	1	7	[C13]	
+f28r_L12_s2.jpg	1	8	[C10]	
+f28r_L12_s2.jpg	1	9	[C01]	
+f28r_L12_s2.jpg	1	10	[C06]	
+f28r_L12_s2.jpg	1	11	[C10]	
+f28r_L12_s2.jpg	1	12	[C20]	
+f28r_L12_s2.jpg	1	13	[C20]	
+f28r_L12_s2.jpg	1	14	[C20]	
+f28r_L12_s2.jpg	1	15	7	
+f28r_L12_s2.jpg	1	16	[C04]	
+f28r_L12_s2.jpg	1	17	[C01]	
+f28r_L12_s2.jpg	1	18	[C13]	
+f28r_L12_s2.jpg	1	19	[C10]	
+f28r_L12_s2.jpg	1	20	[C11]	
+f28r_L12_s2.jpg	1	21	s	
+f28r_L12_s2.jpg	1	22	[C19]	
+f28r_L12_s2.jpg	1	23	[C01]	
+f28r_L12_s2.jpg	1	24	o	
+f28r_L12_s2.jpg	1	25	[C19]	
+f28r_L12_s2.jpg	1	26	[C01]	
+f28r_L12_s2.jpg	1	27	[C13]	
+f28r_L12_s2.jpg	1	28	R	
+f28r_L12_s2.jpg	1	29	z	
+f28r_L12_s2.jpg	1	30	v	
+f28r_L12_s2.jpg	1	31	[C01]	
+f28r_L12_s2.jpg	1	32	v	
+f28r_L12_s2.jpg	1	33	[C07]	
+f28r_L12_s2.jpg	1	34	o	
+f28r_L12_s2.jpg	1	35	I	
+f28r_L12_s2.jpg	1	36	[C01]	
+f28r_L12_s2.jpg	1	37	7	line ends near crop margin, faint comma-like mark follows (punctuation, not tokenised)
+f28r_L12_s2.jpg	2	1	o	overlap-continuation, new tokens begin
+f28r_L12_s2.jpg	2	2	f	
+f28r_L12_s2.jpg	2	3	[C04]	
+f28r_L12_s2.jpg	2	4	?	small hook/loop under baseline, unresolved
+f28r_L12_s2.jpg	2	5	[C10]	
+f28r_L12_s2.jpg	2	6	I	
+f28r_L12_s2.jpg	2	7	[C01]	
+f28r_L12_s2.jpg	2	8	[C13]	
+f28r_L12_s2.jpg	2	9	[C13]	
+f28r_L12_s2.jpg	2	10	z	
+f28r_L12_s2.jpg	2	11	v	
+f28r_L12_s2.jpg	2	12	[C13]	
+f28r_L12_s2.jpg	2	13	[C18]	
+f28r_L12_s2.jpg	2	14	T	
+f28r_L12_s2.jpg	2	15	v	
+f28r_L12_s2.jpg	2	16	[C01]	
+f28r_L12_s2.jpg	2	17	[C01]	
+f28r_L12_s2.jpg	2	18	[C04]	
+f28r_L12_s2.jpg	2	19	[C01]	
+f28r_L12_s2.jpg	2	20	[C11]	
+f28r_L12_s2.jpg	2	21	[C01]	
+f28r_L12_s2.jpg	2	22	[C13]	
+f28r_L12_s2.jpg	2	23	v	
+f28r_L12_s2.jpg	2	24	[C10]	
+f28r_L12_s2.jpg	2	25	[C09]	
+f28r_L12_s2.jpg	2	26	z	
+f28r_L12_s2.jpg	2	27	3	
+f28r_L12_s2.jpg	2	28	[C13]	
+f28r_L12_s2.jpg	2	29	[C01]	
+f28r_L12_s2.jpg	2	30	[C04]	
+f28r_L12_s2.jpg	2	31	R	
+f28r_L12_s2.jpg	2	32	z	line ends at crop right margin
+f28r_L13_s1.jpg	1	1	E	
+f28r_L13_s1.jpg	1	2	o	
+f28r_L13_s1.jpg	1	3	f	
+f28r_L13_s1.jpg	1	4	[C04]	
+f28r_L13_s1.jpg	1	5	[C01]	
+f28r_L13_s1.jpg	1	6	[C13]	
+f28r_L13_s1.jpg	1	7	[C10]	
+f28r_L13_s1.jpg	1	8	T	
+f28r_L13_s1.jpg	1	9	[C01]	
+f28r_L13_s1.jpg	1	10	o	
+f28r_L13_s1.jpg	1	11	[C04]	
+f28r_L13_s1.jpg	1	12	I	
+f28r_L13_s1.jpg	1	13	[C09]	
+f28r_L13_s1.jpg	1	14	n	
+f28r_L13_s1.jpg	1	15	v	
+f28r_L13_s1.jpg	1	16	[C11]	
+f28r_L13_s1.jpg	1	17	[C10]	
+f28r_L13_s1.jpg	1	18	o	
+f28r_L13_s1.jpg	1	19	6	numeral 6, new literal
+f28r_L13_s1.jpg	1	20	7	
+f28r_L13_s1.jpg	1	21	[C06]	
+f28r_L13_s1.jpg	1	22	[C13]	
+f28r_L13_s1.jpg	1	23	f	
+f28r_L13_s1.jpg	1	24	[C01]	
+f28r_L13_s1.jpg	1	25	z	
+f28r_L13_s1.jpg	1	26	f	
+f28r_L13_s1.jpg	1	27	[C11]	
+f28r_L13_s1.jpg	1	28	7	
+f28r_L13_s1.jpg	1	29	[C04]	
+f28r_L13_s1.jpg	1	30	[C11]	
+f28r_L13_s1.jpg	1	31	[C10]	
+f28r_L13_s1.jpg	1	32	[C04]	
+f28r_L13_s1.jpg	1	33	[C06]	
+f28r_L13_s1.jpg	1	34	[C13]	line cut at crop edge, continues s2
+f28r_L13_s1.jpg	2	1	l	
+f28r_L13_s1.jpg	2	2	z	
+f28r_L13_s1.jpg	2	3	v	
+f28r_L13_s1.jpg	2	4	[C01]	
+f28r_L13_s1.jpg	2	5	R	
+f28r_L13_s1.jpg	2	6	[C07]	
+f28r_L13_s1.jpg	2	7	o	
+f28r_L13_s1.jpg	2	8	I	
+f28r_L13_s1.jpg	2	9	[C06]	
+f28r_L13_s1.jpg	2	10	[C13]	
+f28r_L13_s1.jpg	2	11	v	
+f28r_L13_s1.jpg	2	12	[C19]	
+f28r_L13_s1.jpg	2	13	z	
+f28r_L13_s1.jpg	2	14	f	
+f28r_L13_s1.jpg	2	15	R	
+f28r_L13_s1.jpg	2	16	o	
+f28r_L13_s1.jpg	2	17	[C06]	
+f28r_L13_s1.jpg	2	18	[C01]	
+f28r_L13_s1.jpg	2	19	[C04]	
+f28r_L13_s1.jpg	2	20	7	
+f28r_L13_s1.jpg	2	21	[C04]	
+f28r_L13_s1.jpg	2	22	[C10]	
+f28r_L13_s1.jpg	2	23	[C13]	
+f28r_L13_s1.jpg	2	24	x	
+f28r_L13_s1.jpg	2	25	v	
+f28r_L13_s1.jpg	2	26	[C10]	
+f28r_L13_s1.jpg	2	27	[C04]	
+f28r_L13_s1.jpg	2	28	I	
+f28r_L13_s1.jpg	2	29	[C07]	
+f28r_L13_s1.jpg	2	30	T	
+f28r_L13_s1.jpg	2	31	[C06]	
+f28r_L13_s1.jpg	2	32	[C06]	
+f28r_L13_s1.jpg	2	33	x	line cut at crop edge, continues s2
+f28r_L13_s2.jpg	1	1	f	overlap-continuation, new tokens begin
+f28r_L13_s2.jpg	1	2	T	
+f28r_L13_s2.jpg	1	3	o	
+f28r_L13_s2.jpg	1	4	[C06]	
+f28r_L13_s2.jpg	1	5	[C04]	
+f28r_L13_s2.jpg	1	6	I	
+f28r_L13_s2.jpg	1	7	[C13]	
+f28r_L13_s2.jpg	1	8	[C01]	
+f28r_L13_s2.jpg	1	9	[C13]	
+f28r_L13_s2.jpg	1	10	[C10]	
+f28r_L13_s2.jpg	1	11	[C09]	
+f28r_L13_s2.jpg	1	12	a	Latin a, new literal
+f28r_L13_s2.jpg	1	13	3	
+f28r_L13_s2.jpg	1	14	[C06]	
+f28r_L13_s2.jpg	1	15	[C06]	
+f28r_L13_s2.jpg	1	16	[C04]	
+f28r_L13_s2.jpg	1	17	[C11]	
+f28r_L13_s2.jpg	1	18	[C10]	
+f28r_L13_s2.jpg	1	19	o	
+f28r_L13_s2.jpg	1	20	v	
+f28r_L13_s2.jpg	1	21	[C01]	line ends near crop right margin
+f28r_L13_s2.jpg	2	1	[C04]	overlap-continuation, new tokens begin
+f28r_L13_s2.jpg	2	2	[C18]	
+f28r_L13_s2.jpg	2	3	s	
+f28r_L13_s2.jpg	2	4	[C11]	
+f28r_L13_s2.jpg	2	5	[C18]	
+f28r_L13_s2.jpg	2	6	z	
+f28r_L13_s2.jpg	2	7	v	
+f28r_L13_s2.jpg	2	8	[C10]	
+f28r_L13_s2.jpg	2	9	[C14]	double-loop/omega shape, possibly variant of C14
+f28r_L13_s2.jpg	2	10	T	
+f28r_L13_s2.jpg	2	11	o	
+f28r_L13_s2.jpg	2	12	[C06]	
+f28r_L13_s2.jpg	2	13	h	
+f28r_L13_s2.jpg	2	14	z	
+f28r_L13_s2.jpg	2	15	[C10]	
+f28r_L13_s2.jpg	2	16	[C04]	
+f28r_L13_s2.jpg	2	17	[C06]	
+f28r_L13_s2.jpg	2	18	[C11]	
+f28r_L13_s2.jpg	2	19	[C11]	
+f28r_L13_s2.jpg	2	20	[C06]	
+f28r_L13_s2.jpg	2	21	[C01]	line ends at crop right margin
+f28r_L14_s1.jpg	1	1	f	
+f28r_L14_s1.jpg	1	2	[C04]	
+f28r_L14_s1.jpg	1	3	T	
+f28r_L14_s1.jpg	1	4	[C10]	
+f28r_L14_s1.jpg	1	5	v	
+f28r_L14_s1.jpg	1	6	[C06]	
+f28r_L14_s1.jpg	1	7	f	
+f28r_L14_s1.jpg	1	8	[C09]	
+f28r_L14_s1.jpg	1	9	7	
+f28r_L14_s1.jpg	1	10	[C10]	
+f28r_L14_s1.jpg	1	11	[C09]	
+f28r_L14_s1.jpg	1	12	o	
+f28r_L14_s1.jpg	1	13	v	
+f28r_L14_s1.jpg	1	14	[C10]	
+f28r_L14_s1.jpg	1	15	[C13]	
+f28r_L14_s1.jpg	1	16	[C14]	
+f28r_L14_s1.jpg	1	17	[C04]	
+f28r_L14_s1.jpg	1	18	[C10]	
+f28r_L14_s1.jpg	1	19	[C11]	
+f28r_L14_s1.jpg	1	20	[C10]	
+f28r_L14_s1.jpg	1	21	[C19]	
+f28r_L14_s1.jpg	1	22	I	
+f28r_L14_s1.jpg	1	23	[C13]	
+f28r_L14_s1.jpg	1	24	f	
+f28r_L14_s1.jpg	1	25	x	
+f28r_L14_s1.jpg	1	26	[C10]	
+f28r_L14_s1.jpg	1	27	I	
+f28r_L14_s1.jpg	1	28	[C01]	
+f28r_L14_s1.jpg	1	29	[C13]	
+f28r_L14_s1.jpg	1	30	[C10]	
+f28r_L14_s1.jpg	1	31	m	
+f28r_L14_s1.jpg	1	32	[C10]	
+f28r_L14_s1.jpg	1	33	[C11]	
+f28r_L14_s1.jpg	1	34	o	line cut at crop edge, continues s2
+f28r_L14_s1.jpg	2	1	K	
+f28r_L14_s1.jpg	2	2	[C14]	double-loop, possibly infinity-like variant
+f28r_L14_s1.jpg	2	3	[C10]	
+f28r_L14_s1.jpg	2	4	[C09]	
+f28r_L14_s1.jpg	2	5	[C13]	
+f28r_L14_s1.jpg	2	6	x	
+f28r_L14_s1.jpg	2	7	z	
+f28r_L14_s1.jpg	2	8	v	
+f28r_L14_s1.jpg	2	9	[C10]	
+f28r_L14_s1.jpg	2	10	[C01]	
+f28r_L14_s1.jpg	2	11	E	
+f28r_L14_s1.jpg	2	12	v	
+f28r_L14_s1.jpg	2	13	s	
+f28r_L14_s1.jpg	2	14	s	
+f28r_L14_s1.jpg	2	15	o	
+f28r_L14_s1.jpg	2	16	[C04]	
+f28r_L14_s1.jpg	2	17	x	
+f28r_L14_s1.jpg	2	18	f	
+f28r_L14_s1.jpg	2	19	7	
+f28r_L14_s1.jpg	2	20	.	visible punctuation dot in ms
+f28r_L14_s1.jpg	2	21	[C10]	
+f28r_L14_s1.jpg	2	22	[C04]	
+f28r_L14_s1.jpg	2	23	[C18]	
+f28r_L14_s1.jpg	2	24	f	
+f28r_L14_s1.jpg	2	25	[C04]	
+f28r_L14_s1.jpg	2	26	o	
+f28r_L14_s1.jpg	2	27	[C12]	
+f28r_L14_s1.jpg	2	28	[C13]	
+f28r_L14_s1.jpg	2	29	[C01]	
+f28r_L14_s1.jpg	2	30	[C13]	
+f28r_L14_s1.jpg	2	31	v	
+f28r_L14_s1.jpg	2	32	7	
+f28r_L14_s1.jpg	2	33	[C10]	
+f28r_L14_s1.jpg	2	34	y	Latin y, new literal
+f28r_L14_s1.jpg	2	35	m	
+f28r_L14_s1.jpg	2	36	[C10]	
+f28r_L14_s1.jpg	2	37	T	line cut at crop edge, continues s2
+f28r_L14_s2.jpg	1	1	I	overlap-continuation, new tokens begin
+f28r_L14_s2.jpg	1	2	[C06]	
+f28r_L14_s2.jpg	1	3	f	
+f28r_L14_s2.jpg	1	4	[C18]	
+f28r_L14_s2.jpg	1	5	[C10]	
+f28r_L14_s2.jpg	1	6	I	
+f28r_L14_s2.jpg	1	7	[C01]	
+f28r_L14_s2.jpg	1	8	[C13]	
+f28r_L14_s2.jpg	1	9	[C10]	
+f28r_L14_s2.jpg	1	10	m	
+f28r_L14_s2.jpg	1	11	[C10]	
+f28r_L14_s2.jpg	1	12	[C11]	
+f28r_L14_s2.jpg	1	13	o	
+f28r_L14_s2.jpg	1	14	[C11]	
+f28r_L14_s2.jpg	1	15	[C10]	
+f28r_L14_s2.jpg	1	16	(.	line1 ends; parenthesis+dot mark in ms, likely punctuation/paragraph mark, not tokenised as cipher sign
+f28r_L14_s2.jpg	2	1	[C04]	overlap-continuation, new tokens begin
+f28r_L14_s2.jpg	2	2	o	
+f28r_L14_s2.jpg	2	3	[C06]	circle with extra hook, kept as C06 variant
+f28r_L14_s2.jpg	2	4	[C06]	
+f28r_L14_s2.jpg	2	5	v	
+f28r_L14_s2.jpg	2	6	7	
+f28r_L14_s2.jpg	2	7	[C10]	
+f28r_L14_s2.jpg	2	8	y	
+f28r_L14_s2.jpg	2	9	m	
+f28r_L14_s2.jpg	2	10	[C10]	
+f28r_L14_s2.jpg	2	11	T	
+f28r_L14_s2.jpg	2	12	[C10]	
+f28r_L14_s2.jpg	2	13	v	
+f28r_L14_s2.jpg	2	14	[C10]	
+f28r_L14_s2.jpg	2	15	[C01]	
+f28r_L14_s2.jpg	2	16	E	
+f28r_L14_s2.jpg	2	17	f	
+f28r_L14_s2.jpg	2	18	x	
+f28r_L14_s2.jpg	2	19	o	
+f28r_L14_s2.jpg	2	20	I	
+f28r_L14_s2.jpg	2	21	[C10]	
+f28r_L14_s2.jpg	2	22	[C06]	
+f28r_L14_s2.jpg	2	23	[C01]	
+f28r_L14_s2.jpg	2	24	[C06]	
+f28r_L14_s2.jpg	2	25	s	
+f28r_L14_s2.jpg	2	26	[C11]	
+f28r_L14_s2.jpg	2	27	f	
+f28r_L14_s2.jpg	2	28	[C10]	
+f28r_L14_s2.jpg	2	29	[C13]	
+f28r_L14_s2.jpg	2	30	I	
+f28r_L14_s2.jpg	2	31	[C11]	
+f28r_L14_s2.jpg	2	32	f	
+f28r_L14_s2.jpg	2	33	[C13]	
+f28r_L14_s2.jpg	2	34	[C10]	line ends at crop right margin
+f28r_L15_s1.jpg	1	1	[C01]	
+f28r_L15_s1.jpg	1	2	[C13]	
+f28r_L15_s1.jpg	1	3	[C09]	
+f28r_L15_s1.jpg	1	4	E	
+f28r_L15_s1.jpg	1	5	o	
+f28r_L15_s1.jpg	1	6	f	
+f28r_L15_s1.jpg	1	7	[C09]	
+f28r_L15_s1.jpg	1	8	[C11]	
+f28r_L15_s1.jpg	1	9	I	
+f28r_L15_s1.jpg	1	10	[C13]	
+f28r_L15_s1.jpg	1	11	[C01]	
+f28r_L15_s1.jpg	1	12	z	
+f28r_L15_s1.jpg	1	13	v	
+f28r_L15_s1.jpg	1	14	[C09]	
+f28r_L15_s1.jpg	1	15	E	
+f28r_L15_s1.jpg	1	16	o	
+f28r_L15_s1.jpg	1	17	f	
+f28r_L15_s1.jpg	1	18	[C04]	
+f28r_L15_s1.jpg	1	19	[C10]	
+f28r_L15_s1.jpg	1	20	o	
+f28r_L15_s1.jpg	1	21	I	
+f28r_L15_s1.jpg	1	22	f	
+f28r_L15_s1.jpg	1	23	[C09]	
+f28r_L15_s1.jpg	1	24	[C04]	
+f28r_L15_s1.jpg	1	25	[C19]	
+f28r_L15_s1.jpg	1	26	[C13]	
+f28r_L15_s1.jpg	1	27	f	
+f28r_L15_s1.jpg	1	28	z	
+f28r_L15_s1.jpg	1	29	I	
+f28r_L15_s1.jpg	1	30	[C10]	
+f28r_L15_s1.jpg	1	31	[C04]	
+f28r_L15_s1.jpg	1	32	7	
+f28r_L15_s1.jpg	1	33	[C04]	
+f28r_L15_s1.jpg	1	34	[C11]	line cut at crop edge, continues s2
+f28r_L15_s1.jpg	2	1	T	
+f28r_L15_s1.jpg	2	2	R	
+f28r_L15_s1.jpg	2	3	[C14]	
+f28r_L15_s1.jpg	2	4	[C01]	
+f28r_L15_s1.jpg	2	5	[C13]	
+f28r_L15_s1.jpg	2	6	[C10]	
+f28r_L15_s1.jpg	2	7	s	
+f28r_L15_s1.jpg	2	8	o	
+f28r_L15_s1.jpg	2	9	[C04]	
+f28r_L15_s1.jpg	2	10	I	
+f28r_L15_s1.jpg	2	11	[C13]	
+f28r_L15_s1.jpg	2	12	[C06]	
+f28r_L15_s1.jpg	2	13	[C11]	
+f28r_L15_s1.jpg	2	14	[C10]	
+f28r_L15_s1.jpg	2	15	7	
+f28r_L15_s1.jpg	2	16	[C04]	
+f28r_L15_s1.jpg	2	17	T	
+f28r_L15_s1.jpg	2	18	[C06]	
+f28r_L15_s1.jpg	2	19	o	
+f28r_L15_s1.jpg	2	20	[C04]	
+f28r_L15_s1.jpg	2	21	I	
+f28r_L15_s1.jpg	2	22	[C09]	
+f28r_L15_s1.jpg	2	23	n	
+f28r_L15_s1.jpg	2	24	v	
+f28r_L15_s1.jpg	2	25	[C11]	
+f28r_L15_s1.jpg	2	26	n	
+f28r_L15_s1.jpg	2	27	v	
+f28r_L15_s1.jpg	2	28	x	
+f28r_L15_s1.jpg	2	29	[C11]	
+f28r_L15_s1.jpg	2	30	[C04]	
+f28r_L15_s1.jpg	2	31	[C06]	
+f28r_L15_s1.jpg	2	32	o	
+f28r_L15_s1.jpg	2	33	[C19]	line cut at crop edge, continues s2
+f28r_L15_s2.jpg	1	1	f	overlap-continuation, new tokens begin
+f28r_L15_s2.jpg	1	2	[C04]	
+f28r_L15_s2.jpg	1	3	[C13]	
+f28r_L15_s2.jpg	1	4	o	
+f28r_L15_s2.jpg	1	5	f	
+f28r_L15_s2.jpg	1	6	[C04]	
+f28r_L15_s2.jpg	1	7	[C10]	
+f28r_L15_s2.jpg	1	8	o	
+f28r_L15_s2.jpg	1	9	[C10]	
+f28r_L15_s2.jpg	1	10	[C06]	
+f28r_L15_s2.jpg	1	11	x	
+f28r_L15_s2.jpg	1	12	f	
+f28r_L15_s2.jpg	1	13	[C09]	
+f28r_L15_s2.jpg	1	14	[C04]	
+f28r_L15_s2.jpg	1	15	[C13]	
+f28r_L15_s2.jpg	1	16	[C04]	
+f28r_L15_s2.jpg	1	17	[C11]	
+f28r_L15_s2.jpg	1	18	7	
+f28r_L15_s2.jpg	1	19	f	
+f28r_L15_s2.jpg	1	20	T	
+f28r_L15_s2.jpg	1	21	[C06]	
+f28r_L15_s2.jpg	1	22	z	line ends at crop right margin
+f28r_L15_s2.jpg	2	1	[C09]	overlap-continuation, new tokens begin
+f28r_L15_s2.jpg	2	2	[C04]	
+f28r_L15_s2.jpg	2	3	[C13]	
+f28r_L15_s2.jpg	2	4	f	
+f28r_L15_s2.jpg	2	5	[C04]	
+f28r_L15_s2.jpg	2	6	[C01]	
+f28r_L15_s2.jpg	2	7	[C13]	
+f28r_L15_s2.jpg	2	8	[C10]	
+f28r_L15_s2.jpg	2	9	I	
+f28r_L15_s2.jpg	2	10	[C06]	
+f28r_L15_s2.jpg	2	11	o	
+f28r_L15_s2.jpg	2	12	f	
+f28r_L15_s2.jpg	2	13	[C04]	
+f28r_L15_s2.jpg	2	14	[C07]	
+f28r_L15_s2.jpg	2	15	z	
+f28r_L15_s2.jpg	2	16	[C06]	
+f28r_L15_s2.jpg	2	17	[C04]	
+f28r_L15_s2.jpg	2	18	[C06]	
+f28r_L15_s2.jpg	2	19	[C11]	
+f28r_L15_s2.jpg	2	20	[C10]	
+f28r_L15_s2.jpg	2	21	T	
+f28r_L15_s2.jpg	2	22	[C11]	line ends at crop right margin
+f28r_L16_s1.jpg	1	1	f	
+f28r_L16_s1.jpg	1	2	[C10]	
+f28r_L16_s1.jpg	1	3	[C13]	
+f28r_L16_s1.jpg	1	4	[C01]	
+f28r_L16_s1.jpg	1	5	[C13]	
+f28r_L16_s1.jpg	1	6	R	
+f28r_L16_s1.jpg	1	7	z	
+f28r_L16_s1.jpg	1	8	v	
+f28r_L16_s1.jpg	1	9	[C10]	
+f28r_L16_s1.jpg	1	10	[C10]	
+f28r_L16_s1.jpg	1	11	v	
+f28r_L16_s1.jpg	1	12	[C06]	
+f28r_L16_s1.jpg	1	13	[C01]	
+f28r_L16_s1.jpg	1	14	o	
+f28r_L16_s1.jpg	1	15	[C01]	
+f28r_L16_s1.jpg	1	16	I	
+f28r_L16_s1.jpg	1	17	[C09]	
+f28r_L16_s1.jpg	1	18	[C04]	
+f28r_L16_s1.jpg	1	19	[C11]	
+f28r_L16_s1.jpg	1	20	[C01]	
+f28r_L16_s1.jpg	1	21	[C13]	
+f28r_L16_s1.jpg	1	22	T	
+f28r_L16_s1.jpg	1	23	[C11]	
+f28r_L16_s1.jpg	1	24	[C10]	
+f28r_L16_s1.jpg	1	25	[C09]	
+f28r_L16_s1.jpg	1	26	E	
+f28r_L16_s1.jpg	1	27	[C13]	
+f28r_L16_s1.jpg	1	28	7	
+f28r_L16_s1.jpg	1	29	f	
+f28r_L16_s1.jpg	1	30	v	
+f28r_L16_s1.jpg	1	31	z	
+f28r_L16_s1.jpg	1	32	E	
+f28r_L16_s1.jpg	1	33	[C13]	
+f28r_L16_s1.jpg	1	34	[C11]	line cut at crop edge, continues s2
+f28r_L16_s1.jpg	2	1	[C01]	
+f28r_L16_s1.jpg	2	2	[C13]	
+f28r_L16_s1.jpg	2	3	[C10]	
+f28r_L16_s1.jpg	2	4	[C13]	
+f28r_L16_s1.jpg	2	5	[C10]	
+f28r_L16_s1.jpg	2	6	T	
+f28r_L16_s1.jpg	2	7	o	
+f28r_L16_s1.jpg	2	8	I	
+f28r_L16_s1.jpg	2	9	[C11]	
+f28r_L16_s1.jpg	2	10	f	
+f28r_L16_s1.jpg	2	11	z	
+f28r_L16_s1.jpg	2	12	[C01]	
+f28r_L16_s1.jpg	2	13	[C14]	
+f28r_L16_s1.jpg	2	14	o	
+f28r_L16_s1.jpg	2	15	v	
+f28r_L16_s1.jpg	2	16	z	
+f28r_L16_s1.jpg	2	17	E	
+f28r_L16_s1.jpg	2	18	[C13]	
+f28r_L16_s1.jpg	2	19	f	
+f28r_L16_s1.jpg	2	20	[C04]	
+f28r_L16_s1.jpg	2	21	[C01]	
+f28r_L16_s1.jpg	2	22	[C11]	
+f28r_L16_s1.jpg	2	23	s	
+f28r_L16_s1.jpg	2	24	o	
+f28r_L16_s1.jpg	2	25	f	
+f28r_L16_s1.jpg	2	26	[C13]	
+f28r_L16_s1.jpg	2	27	o	
+f28r_L16_s1.jpg	2	28	v	
+f28r_L16_s1.jpg	2	29	[C22]	plus-sign shape, new code
+f28r_L16_s1.jpg	2	30	[C10]	
+f28r_L16_s1.jpg	2	31	[C13]	
+f28r_L16_s1.jpg	2	32	[C10]	
+f28r_L16_s1.jpg	2	33	[C04]	line cut at crop edge, continues s2
+f28r_L16_s2.jpg	1	1	T	overlap-continuation, new tokens begin
+f28r_L16_s2.jpg	1	2	o	
+f28r_L16_s2.jpg	1	3	[C10]	
+f28r_L16_s2.jpg	1	4	R	
+f28r_L16_s2.jpg	1	5	[C13]	
+f28r_L16_s2.jpg	1	6	f	
+f28r_L16_s2.jpg	1	7	I	
+f28r_L16_s2.jpg	1	8	[C10]	
+f28r_L16_s2.jpg	1	9	[C13]	
+f28r_L16_s2.jpg	1	10	I	
+f28r_L16_s2.jpg	1	11	[C01]	
+f28r_L16_s2.jpg	1	12	s	
+f28r_L16_s2.jpg	1	13	o	
+f28r_L16_s2.jpg	1	14	[C01]	
+f28r_L16_s2.jpg	1	15	x	
+f28r_L16_s2.jpg	1	16	[C09]	
+f28r_L16_s2.jpg	1	17	n	
+f28r_L16_s2.jpg	1	18	v	
+f28r_L16_s2.jpg	1	19	[C13]	line ends at crop right margin
+f28r_L16_s2.jpg	2	1	[C10]	overlap-continuation, new tokens begin
+f28r_L16_s2.jpg	2	2	o	
+f28r_L16_s2.jpg	2	3	I	
+f28r_L16_s2.jpg	2	4	[C10]	
+f28r_L16_s2.jpg	2	5	E	
+f28r_L16_s2.jpg	2	6	[C14]	
+f28r_L16_s2.jpg	2	7	[C01]	
+f28r_L16_s2.jpg	2	8	[C13]	
+f28r_L16_s2.jpg	2	9	[C01]	
+f28r_L16_s2.jpg	2	10	o	
+f28r_L16_s2.jpg	2	11	R	
+f28r_L16_s2.jpg	2	12	I	
+f28r_L16_s2.jpg	2	13	6	
+f28r_L16_s2.jpg	2	14	[C13]	
+f28r_L16_s2.jpg	2	15	7	
+f28r_L16_s2.jpg	2	16	[C04]	
+f28r_L16_s2.jpg	2	17	[C09]	
+f28r_L16_s2.jpg	2	18	E	line ends at crop right margin
+f28r_L17_s1.jpg	1	1	[C06]	
+f28r_L17_s1.jpg	1	2	[C10]	
+f28r_L17_s1.jpg	1	3	[C04]	
+f28r_L17_s1.jpg	1	4	[C13]	
+f28r_L17_s1.jpg	1	5	o	
+f28r_L17_s1.jpg	1	6	v	
+f28r_L17_s1.jpg	1	7	[C01]	
+f28r_L17_s1.jpg	1	8	[C13]	
+f28r_L17_s1.jpg	1	9	[C09]	
+f28r_L17_s1.jpg	1	10	[C01]	
+f28r_L17_s1.jpg	1	11	[C11]	
+f28r_L17_s1.jpg	1	12	s	
+f28r_L17_s1.jpg	1	13	z	
+f28r_L17_s1.jpg	1	14	A	
+f28r_L17_s1.jpg	1	15	[C13]	
+f28r_L17_s1.jpg	1	16	T	
+f28r_L17_s1.jpg	1	17	z	
+f28r_L17_s1.jpg	1	18	v	
+f28r_L17_s1.jpg	1	19	[C01]	
+f28r_L17_s1.jpg	1	20	[C18]	tall S-loop shape, kept as C18 variant
+f28r_L17_s1.jpg	1	21	m	
+f28r_L17_s1.jpg	1	22	7	
+f28r_L17_s1.jpg	1	23	[C04]	
+f28r_L17_s1.jpg	1	24	n	
+f28r_L17_s1.jpg	1	25	v	
+f28r_L17_s1.jpg	1	26	[C11]	
+f28r_L17_s1.jpg	1	27	[C01]	
+f28r_L17_s1.jpg	1	28	[C13]	
+f28r_L17_s1.jpg	1	29	[C01]	
+f28r_L17_s1.jpg	1	30	I	
+f28r_L17_s1.jpg	1	31	[C09]	
+f28r_L17_s1.jpg	1	32	[C04]	line cut at crop edge, continues s2
+f28r_L17_s1.jpg	2	1	[C04]	
+f28r_L17_s1.jpg	2	2	o	
+f28r_L17_s1.jpg	2	3	[C01]	
+f28r_L17_s1.jpg	2	4	[C01]	
+f28r_L17_s1.jpg	2	5	R	
+f28r_L17_s1.jpg	2	6	I	
+f28r_L17_s1.jpg	2	7	[C19]	
+f28r_L17_s1.jpg	2	8	[C11]	
+f28r_L17_s1.jpg	2	9	7	
+f28r_L17_s1.jpg	2	10	[C04]	
+f28r_L17_s1.jpg	2	11	s	
+f28r_L17_s1.jpg	2	12	o	
+f28r_L17_s1.jpg	2	13	f	
+f28r_L17_s1.jpg	2	14	[C01]	
+f28r_L17_s1.jpg	2	15	[C13]	
+f28r_L17_s1.jpg	2	16	x	
+f28r_L17_s1.jpg	2	17	[C09]	
+f28r_L17_s1.jpg	2	18	[C13]	
+f28r_L17_s1.jpg	2	19	[C19]	
+f28r_L17_s1.jpg	2	20	[C11]	
+f28r_L17_s1.jpg	2	21	[C01]	
+f28r_L17_s1.jpg	2	22	[C13]	
+f28r_L17_s1.jpg	2	23	v	
+f28r_L17_s1.jpg	2	24	[C01]	
+f28r_L17_s1.jpg	2	25	[C13]	
+f28r_L17_s1.jpg	2	26	[C10]	
+f28r_L17_s1.jpg	2	27	[C04]	
+f28r_L17_s1.jpg	2	28	[C06]	
+f28r_L17_s1.jpg	2	29	[C11]	
+f28r_L17_s1.jpg	2	30	s	
+f28r_L17_s1.jpg	2	31	I	
+f28r_L17_s1.jpg	2	32	[C10]	
+f28r_L17_s1.jpg	2	33	[C13]	
+f28r_L17_s1.jpg	2	34	[C11]	line cut at crop edge, continues s2
+f28r_L17_s2.jpg	1	1	m	overlap-continuation, new tokens begin
+f28r_L17_s2.jpg	1	2	7	
+f28r_L17_s2.jpg	1	3	[C04]	
+f28r_L17_s2.jpg	1	4	n	
+f28r_L17_s2.jpg	1	5	v	
+f28r_L17_s2.jpg	1	6	[C11]	
+f28r_L17_s2.jpg	1	7	[C01]	
+f28r_L17_s2.jpg	1	8	[C13]	
+f28r_L17_s2.jpg	1	9	[C01]	
+f28r_L17_s2.jpg	1	10	I	
+f28r_L17_s2.jpg	1	11	[C09]	
+f28r_L17_s2.jpg	1	12	[C22]	plus-sign
+f28r_L17_s2.jpg	1	13	K	
+f28r_L17_s2.jpg	1	14	[C01]	
+f28r_L17_s2.jpg	1	15	[C13]	
+f28r_L17_s2.jpg	1	16	v	
+f28r_L17_s2.jpg	1	17	[C01]	
+f28r_L17_s2.jpg	1	18	o	
+f28r_L17_s2.jpg	1	19	R	
+f28r_L17_s2.jpg	1	20	a	
+f28r_L17_s2.jpg	1	21	I	
+f28r_L17_s2.jpg	1	22	[C04]	
+f28r_L17_s2.jpg	1	23	[C09]	
+f28r_L17_s2.jpg	1	24	[C09]	
+f28r_L17_s2.jpg	1	25	[C09]	triple-box group again
+f28r_L17_s2.jpg	1	26	z	
+f28r_L17_s2.jpg	1	27	[C01]	
+f28r_L17_s2.jpg	1	28	[C13]	
+f28r_L17_s2.jpg	1	29	n	
+f28r_L17_s2.jpg	1	30	v	
+f28r_L17_s2.jpg	1	31	[C06]	
+f28r_L17_s2.jpg	1	32	f	line ends at crop right margin
+f28r_L17_s2.jpg	2	1	x	overlap-continuation, new tokens begin
+f28r_L17_s2.jpg	2	2	[C09]	
+f28r_L17_s2.jpg	2	3	[C13]	
+f28r_L17_s2.jpg	2	4	[C19]	
+f28r_L17_s2.jpg	2	5	[C11]	
+f28r_L17_s2.jpg	2	6	s	
+f28r_L17_s2.jpg	2	7	I	
+f28r_L17_s2.jpg	2	8	[C10]	
+f28r_L17_s2.jpg	2	9	[C13]	
+f28r_L17_s2.jpg	2	10	[C11]	
+f28r_L17_s2.jpg	2	11	[C10]	
+f28r_L17_s2.jpg	2	12	s	
+f28r_L17_s2.jpg	2	13	o	
+f28r_L17_s2.jpg	2	14	I	
+f28r_L17_s2.jpg	2	15	f	
+f28r_L17_s2.jpg	2	16	[C10]	
+f28r_L17_s2.jpg	2	17	7	
+f28r_L17_s2.jpg	2	18	[C04]	
+f28r_L17_s2.jpg	2	19	n	
+f28r_L17_s2.jpg	2	20	v	
+f28r_L17_s2.jpg	2	21	x	
+f28r_L17_s2.jpg	2	22	[C14]	
+f28r_L17_s2.jpg	2	23	E	
+f28r_L17_s2.jpg	2	24	[C13]	
+f28r_L17_s2.jpg	2	25	f	
+f28r_L17_s2.jpg	2	26	v	
+f28r_L17_s2.jpg	2	27	z	
+f28r_L17_s2.jpg	2	28	E	
+f28r_L17_s2.jpg	2	29	a	
+f28r_L17_s2.jpg	2	30	[C13]	line ends at crop right margin
+f28r_L18_s1.jpg	1	1	f	
+f28r_L18_s1.jpg	1	2	[C04]	
+f28r_L18_s1.jpg	1	3	7	
+f28r_L18_s1.jpg	1	4	[C04]	
+f28r_L18_s1.jpg	1	5	n	
+f28r_L18_s1.jpg	1	6	v	
+f28r_L18_s1.jpg	1	7	[C11]	
+f28r_L18_s1.jpg	1	8	7	
+f28r_L18_s1.jpg	1	9	f	
+f28r_L18_s1.jpg	1	10	[C13]	
+f28r_L18_s1.jpg	1	11	x	
+f28r_L18_s1.jpg	1	12	[C11]	
+f28r_L18_s1.jpg	1	13	[C09]	
+f28r_L18_s1.jpg	1	14	[C04]	
+f28r_L18_s1.jpg	1	15	I	
+f28r_L18_s1.jpg	1	16	[C01]	
+f28r_L18_s1.jpg	1	17	[C07]	
+f28r_L18_s1.jpg	1	18	o	
+f28r_L18_s1.jpg	1	19	I	
+f28r_L18_s1.jpg	1	20	[C10]	
+f28r_L18_s1.jpg	1	21	z	
+f28r_L18_s1.jpg	1	22	I	
+f28r_L18_s1.jpg	1	23	[C04]	
+f28r_L18_s1.jpg	1	24	[C09]	
+f28r_L18_s1.jpg	1	25	z	
+f28r_L18_s1.jpg	1	26	s	
+f28r_L18_s1.jpg	1	27	T	
+f28r_L18_s1.jpg	1	28	[C04]	
+f28r_L18_s1.jpg	1	29	[C11]	
+f28r_L18_s1.jpg	1	30	n	
+f28r_L18_s1.jpg	1	31	v	
+f28r_L18_s1.jpg	1	32	[C13]	
+f28r_L18_s1.jpg	1	33	T	
+f28r_L18_s1.jpg	1	34	[C13]	line cut at crop edge, continues s2
+f28r_L18_s1.jpg	2	1	[C13]	
+f28r_L18_s1.jpg	2	2	o	
+f28r_L18_s1.jpg	2	3	I	
+f28r_L18_s1.jpg	2	4	f	
+f28r_L18_s1.jpg	2	5	[C10]	
+f28r_L18_s1.jpg	2	6	x	
+f28r_L18_s1.jpg	2	7	[C01]	
+f28r_L18_s1.jpg	2	8	[C13]	
+f28r_L18_s1.jpg	2	9	[C04]	
+f28r_L18_s1.jpg	2	10	z	
+f28r_L18_s1.jpg	2	11	v	
+f28r_L18_s1.jpg	2	12	[C04]	
+f28r_L18_s1.jpg	2	13	[C04]	
+f28r_L18_s1.jpg	2	14	z	
+f28r_L18_s1.jpg	2	15	v	
+f28r_L18_s1.jpg	2	16	[C04]	
+f28r_L18_s1.jpg	2	17	[C11]	
+f28r_L18_s1.jpg	2	18	[C10]	
+f28r_L18_s1.jpg	2	19	[C07]	
+f28r_L18_s1.jpg	2	20	z	
+f28r_L18_s1.jpg	2	21	E	
+f28r_L18_s1.jpg	2	22	[C10]	
+f28r_L18_s1.jpg	2	23	n	
+f28r_L18_s1.jpg	2	24	v	
+f28r_L18_s1.jpg	2	25	x	
+f28r_L18_s1.jpg	2	26	[C01]	
+f28r_L18_s1.jpg	2	27	o	
+f28r_L18_s1.jpg	2	28	v	
+f28r_L18_s1.jpg	2	29	z	
+f28r_L18_s1.jpg	2	30	I	
+f28r_L18_s1.jpg	2	31	[C04]	
+f28r_L18_s1.jpg	2	32	[C11]	
+f28r_L18_s1.jpg	2	33	f	line cut at crop edge, continues s2
+f28r_L18_s2.jpg	1	1	z	overlap-continuation, new tokens begin
+f28r_L18_s2.jpg	1	2	I	
+f28r_L18_s2.jpg	1	3	[C04]	
+f28r_L18_s2.jpg	1	4	[C09]	
+f28r_L18_s2.jpg	1	5	z	
+f28r_L18_s2.jpg	1	6	s	
+f28r_L18_s2.jpg	1	7	T	
+f28r_L18_s2.jpg	1	8	[C04]	
+f28r_L18_s2.jpg	1	9	[C11]	
+f28r_L18_s2.jpg	1	10	n	
+f28r_L18_s2.jpg	1	11	v	
+f28r_L18_s2.jpg	1	12	T	
+f28r_L18_s2.jpg	1	13	[C13]	
+f28r_L18_s2.jpg	1	14	v	
+f28r_L18_s2.jpg	1	15	o	
+f28r_L18_s2.jpg	1	16	T	
+f28r_L18_s2.jpg	1	17	[C11]	
+f28r_L18_s2.jpg	1	18	v	
+f28r_L18_s2.jpg	1	19	x	
+f28r_L18_s2.jpg	1	20	[C01]	
+f28r_L18_s2.jpg	1	21	[C14]	
+f28r_L18_s2.jpg	1	22	R	
+f28r_L18_s2.jpg	1	23	z	
+f28r_L18_s2.jpg	1	24	v	
+f28r_L18_s2.jpg	1	25	[C01]	
+f28r_L18_s2.jpg	1	26	[C01]	
+f28r_L18_s2.jpg	1	27	z	
+f28r_L18_s2.jpg	1	28	E	
+f28r_L18_s2.jpg	1	29	[C13]	
+f28r_L18_s2.jpg	1	30	f	
+f28r_L18_s2.jpg	1	31	[C04]	
+f28r_L18_s2.jpg	1	32	[C07]	
+f28r_L18_s2.jpg	1	33	o	
+f28r_L18_s2.jpg	1	34	I	line ends at crop right margin
+f28r_L18_s2.jpg	2	1	[C07]	overlap-continuation, new tokens begin
+f28r_L18_s2.jpg	2	2	z	
+f28r_L18_s2.jpg	2	3	E	
+f28r_L18_s2.jpg	2	4	[C10]	
+f28r_L18_s2.jpg	2	5	n	
+f28r_L18_s2.jpg	2	6	v	
+f28r_L18_s2.jpg	2	7	x	
+f28r_L18_s2.jpg	2	8	[C01]	
+f28r_L18_s2.jpg	2	9	o	
+f28r_L18_s2.jpg	2	10	v	
+f28r_L18_s2.jpg	2	11	z	
+f28r_L18_s2.jpg	2	12	I	
+f28r_L18_s2.jpg	2	13	[C04]	
+f28r_L18_s2.jpg	2	14	[C11]	
+f28r_L18_s2.jpg	2	15	f	
+f28r_L18_s2.jpg	2	16	v	
+f28r_L18_s2.jpg	2	17	z	
+f28r_L18_s2.jpg	2	18	E	
+f28r_L18_s2.jpg	2	19	[C13]	
+f28r_L18_s2.jpg	2	20	T	
+f28r_L18_s2.jpg	2	21	o	
+f28r_L18_s2.jpg	2	22	v	
+f28r_L18_s2.jpg	2	23	[C01]	
+f28r_L18_s2.jpg	2	24	[C13]	
+f28r_L18_s2.jpg	2	25	[C01]	
+f28r_L18_s2.jpg	2	26	[C13]	
+f28r_L18_s2.jpg	2	27	[C06]	
+f28r_L18_s2.jpg	2	28	[C01]	
+f28r_L18_s2.jpg	2	29	[C11]	
+f28r_L18_s2.jpg	2	30	[C04]	
+f28r_L18_s2.jpg	2	31	x	
+f28r_L18_s2.jpg	2	32	z	
+f28r_L18_s2.jpg	2	33	[C10]	
+f28r_L18_s2.jpg	2	34	a	
+f28r_L18_s2.jpg	2	35	f	
+f28r_L18_s2.jpg	2	36	T	line ends at crop right margin
+f28r_L19_s1.jpg	1	1	[C01]	
+f28r_L19_s1.jpg	1	2	[C11]	
+f28r_L19_s1.jpg	1	3	s	
+f28r_L19_s1.jpg	1	4	I	
+f28r_L19_s1.jpg	1	5	[C01]	
+f28r_L19_s1.jpg	1	6	[C09]	
+f28r_L19_s1.jpg	1	7	E	
+f28r_L19_s1.jpg	1	8	o	
+f28r_L19_s1.jpg	1	9	s	
+f28r_L19_s1.jpg	1	10	[C19]	
+f28r_L19_s1.jpg	1	11	[C01]	
+f28r_L19_s1.jpg	1	12	I	
+f28r_L19_s1.jpg	1	13	[C01]	
+f28r_L19_s1.jpg	1	14	o	
+f28r_L19_s1.jpg	1	15	[C04]	
+f28r_L19_s1.jpg	1	16	z	
+f28r_L19_s1.jpg	1	17	v	
+f28r_L19_s1.jpg	1	18	[C04]	
+f28r_L19_s1.jpg	1	19	[C11]	
+f28r_L19_s1.jpg	1	20	[C01]	
+f28r_L19_s1.jpg	1	21	I	
+f28r_L19_s1.jpg	1	22	[C19]	
+f28r_L19_s1.jpg	1	23	x	
+f28r_L19_s1.jpg	1	24	[C11]	
+f28r_L19_s1.jpg	1	25	[C13]	
+f28r_L19_s1.jpg	1	26	f	
+f28r_L19_s1.jpg	1	27	[C09]	
+f28r_L19_s1.jpg	1	28	[C13]	
+f28r_L19_s1.jpg	1	29	[C01]	
+f28r_L19_s1.jpg	1	30	[C13]	line cut at crop edge, continues s2
+f28r_L19_s1.jpg	2	1	A	
+f28r_L19_s1.jpg	2	2	[C13]	
+f28r_L19_s1.jpg	2	3	[C01]	
+f28r_L19_s1.jpg	2	4	[C09]	
+f28r_L19_s1.jpg	2	5	v	
+f28r_L19_s1.jpg	2	6	[C13]	
+f28r_L19_s1.jpg	2	7	R	
+f28r_L19_s1.jpg	2	8	[C01]	
+f28r_L19_s1.jpg	2	9	7	
+f28r_L19_s1.jpg	2	10	[C04]	
+f28r_L19_s1.jpg	2	11	[C01]	
+f28r_L19_s1.jpg	2	12	o	
+f28r_L19_s1.jpg	2	13	[C01]	
+f28r_L19_s1.jpg	2	14	v	
+f28r_L19_s1.jpg	2	15	x	
+f28r_L19_s1.jpg	2	16	[C10]	
+f28r_L19_s1.jpg	2	17	[C13]	
+f28r_L19_s1.jpg	2	18	[C01]	
+f28r_L19_s1.jpg	2	19	[C01]	
+f28r_L19_s1.jpg	2	20	[C13]	
+f28r_L19_s1.jpg	2	21	[C04]	
+f28r_L19_s1.jpg	2	22	[C11]	
+f28r_L19_s1.jpg	2	23	f	
+f28r_L19_s1.jpg	2	24	x	
+f28r_L19_s1.jpg	2	25	[C19]	
+f28r_L19_s1.jpg	2	26	o	
+f28r_L19_s1.jpg	2	27	z	
+f28r_L19_s1.jpg	2	28	f	
+f28r_L19_s1.jpg	2	29	7	
+f28r_L19_s1.jpg	2	30	[C04]	
+f28r_L19_s1.jpg	2	31	[C19]	
+f28r_L19_s1.jpg	2	32	I	
+f28r_L19_s1.jpg	2	33	[C13]	line cut at crop edge, continues s2
+f28r_L19_s2.jpg	1	1	v	overlap-continuation, new tokens begin
+f28r_L19_s2.jpg	1	2	[C11]	
+f28r_L19_s2.jpg	1	3	[C10]	
+f28r_L19_s2.jpg	1	4	[C01]	
+f28r_L19_s2.jpg	1	5	[C13]	
+f28r_L19_s2.jpg	1	6	[C01]	
+f28r_L19_s2.jpg	1	7	I	
+f28r_L19_s2.jpg	1	8	[C09]	
+f28r_L19_s2.jpg	1	9	[C04]	
+f28r_L19_s2.jpg	1	10	[C22]	
+f28r_L19_s2.jpg	1	11	[C10]	
+f28r_L19_s2.jpg	1	12	T	
+f28r_L19_s2.jpg	1	13	z	
+f28r_L19_s2.jpg	1	14	v	
+f28r_L19_s2.jpg	1	15	[C01]	
+f28r_L19_s2.jpg	1	16	[C01]	
+f28r_L19_s2.jpg	1	17	v	
+f28r_L19_s2.jpg	1	18	E	
+f28r_L19_s2.jpg	1	19	[C01]	
+f28r_L19_s2.jpg	1	20	[C10]	line ends at crop right margin
+f28r_L19_s2.jpg	2	1	[C13]	overlap-continuation, new tokens begin
+f28r_L19_s2.jpg	2	2	f	
+f28r_L19_s2.jpg	2	3	[C13]	
+f28r_L19_s2.jpg	2	4	f	
+f28r_L19_s2.jpg	2	5	[C04]	
+f28r_L19_s2.jpg	2	6	[C11]	
+f28r_L19_s2.jpg	2	7	f	
+f28r_L19_s2.jpg	2	8	[C01]	
+f28r_L19_s2.jpg	2	9	[C01]	
+f28r_L19_s2.jpg	2	10	[C13]	
+f28r_L19_s2.jpg	2	11	o	
+f28r_L19_s2.jpg	2	12	[C10]	
+f28r_L19_s2.jpg	2	13	[C13]	
+f28r_L19_s2.jpg	2	14	[C10]	
+f28r_L19_s2.jpg	2	15	x	
+f28r_L19_s2.jpg	2	16	o	
+f28r_L19_s2.jpg	2	17	I	
+f28r_L19_s2.jpg	2	18	[C01]	
+f28r_L19_s2.jpg	2	19	[C13]	
+f28r_L19_s2.jpg	2	20	[C10]	line ends at crop right margin
+f28r_L20_s1.jpg	1	1	[C01]	
+f28r_L20_s1.jpg	1	2	x	
+f28r_L20_s1.jpg	1	3	f	
+f28r_L20_s1.jpg	1	4	[C10]	
+f28r_L20_s1.jpg	1	5	I	
+f28r_L20_s1.jpg	1	6	n	
+f28r_L20_s1.jpg	1	7	v	
+f28r_L20_s1.jpg	1	8	[C11]	
+f28r_L20_s1.jpg	1	9	[C01]	
+f28r_L20_s1.jpg	1	10	v	
+f28r_L20_s1.jpg	1	11	E	
+f28r_L20_s1.jpg	1	12	o	
+f28r_L20_s1.jpg	1	13	[C10]	
+f28r_L20_s1.jpg	1	14	[C13]	
+f28r_L20_s1.jpg	1	15	s	
+f28r_L20_s1.jpg	1	16	[C19]	
+f28r_L20_s1.jpg	1	17	[C01]	
+f28r_L20_s1.jpg	1	18	[C13]	
+f28r_L20_s1.jpg	1	19	7	
+f28r_L20_s1.jpg	1	20	[C10]	
+f28r_L20_s1.jpg	1	21	[C04]	
+f28r_L20_s1.jpg	1	22	[C01]	
+f28r_L20_s1.jpg	1	23	[C11]	
+f28r_L20_s1.jpg	1	24	[C01]	
+f28r_L20_s1.jpg	1	25	[C13]	
+f28r_L20_s1.jpg	1	26	n	
+f28r_L20_s1.jpg	1	27	v	
+f28r_L20_s1.jpg	1	28	x	
+f28r_L20_s1.jpg	1	29	[C10]	
+f28r_L20_s1.jpg	1	30	7	
+f28r_L20_s1.jpg	1	31	[C04]	
+f28r_L20_s1.jpg	1	32	f	
+f28r_L20_s1.jpg	1	33	[C13]	
+f28r_L20_s1.jpg	1	34	[C09]	single line only in this band; rest of crop area blank margin; line cut at crop edge, continues s2
+f28r_L20_s2.jpg	1	1	[C01]	overlap-continuation, new tokens begin
+f28r_L20_s2.jpg	1	2	[C11]	
+f28r_L20_s2.jpg	1	3	H	Latin capital H, new literal
+f28r_L20_s2.jpg	1	4	o	
+f28r_L20_s2.jpg	1	5	I	
+f28r_L20_s2.jpg	1	6	[C01]	
+f28r_L20_s2.jpg	1	7	[C13]	
+f28r_L20_s2.jpg	1	8	[C10]	
+f28r_L20_s2.jpg	1	9	v	
+f28r_L20_s2.jpg	1	10	E	
+f28r_L20_s2.jpg	1	11	R	
+f28r_L20_s2.jpg	1	12	[C01]	
+f28r_L20_s2.jpg	1	13	f	
+f28r_L20_s2.jpg	1	14	[C04]	
+f28r_L20_s2.jpg	1	15	[C13]	
+f28r_L20_s2.jpg	1	16	f	
+f28r_L20_s2.jpg	1	17	[C09]	
+f28r_L20_s2.jpg	1	18	[C11]	
+f28r_L20_s2.jpg	1	19	[C01]	
+f28r_L20_s2.jpg	1	20	o	
+f28r_L20_s2.jpg	1	21	[C01]	
+f28r_L20_s2.jpg	1	22	[C18]	
+f28r_L20_s2.jpg	1	23	[C19]	
+f28r_L20_s2.jpg	1	24	[C10]	line ends; rest of page below is blank margin with an ink blot/smudge, no further text in this crop
+f28r_L21_s1.jpg	1	1	(blank)	bottom margin of recto, no ink text visible, page edge crease only
+f28r_L21_s2.jpg	1	1	(blank)	bottom margin of recto, no ink text visible, page edge/binding shadow only
+f28v_L01_s1.jpg	1	1	(blank)	top margin of verso, torn/creased corner, no text
+f28v_L01_s2.jpg	1	1	[PLAIN: "d."]	small isolated flourish with a dot, top margin, not body text; faint pencil marks below illegible
+f28v_L02_s1.jpg	1	1	[C01]	
+f28v_L02_s1.jpg	1	2	[C13]	
+f28v_L02_s1.jpg	1	3	[C10]	
+f28v_L02_s1.jpg	1	4	[C01]	
+f28v_L02_s1.jpg	1	5	x	
+f28v_L02_s1.jpg	1	6	[C09]	
+f28v_L02_s1.jpg	1	7	[C04]	
+f28v_L02_s1.jpg	1	8	[C14]	
+f28v_L02_s1.jpg	1	9	[C17]	heart-shaped mark
+f28v_L02_s1.jpg	1	10	[C13]	
+f28v_L02_s1.jpg	1	11	[C04]	
+f28v_L02_s1.jpg	1	12	[C10]	
+f28v_L02_s1.jpg	1	13	m	
+f28v_L02_s1.jpg	1	14	[C01]	line cut at crop edge, continues s2
+f28v_L02_s1.jpg	2	1	T	
+f28v_L02_s1.jpg	2	2	o	
+f28v_L02_s1.jpg	2	3	v	
+f28v_L02_s1.jpg	2	4	[C01]	
+f28v_L02_s1.jpg	2	5	[C13]	
+f28v_L02_s1.jpg	2	6	[C01]	
+f28v_L02_s1.jpg	2	7	[C13]	
+f28v_L02_s1.jpg	2	8	T	
+f28v_L02_s1.jpg	2	9	o	
+f28v_L02_s1.jpg	2	10	[C06]	
+f28v_L02_s1.jpg	2	11	[C13]	
+f28v_L02_s1.jpg	2	12	[C01]	
+f28v_L02_s1.jpg	2	13	o	
+f28v_L02_s1.jpg	2	14	v	line cut at crop edge, continues s2
+f28v_L02_s2.jpg	1	1	s	overlap-continuation, new tokens begin
+f28v_L02_s2.jpg	1	2	o	
+f28v_L02_s2.jpg	1	3	v	
+f28v_L02_s2.jpg	1	4	H	
+f28v_L02_s2.jpg	1	5	I	
+f28v_L02_s2.jpg	1	6	n	
+f28v_L02_s2.jpg	1	7	v	
+f28v_L02_s2.jpg	1	8	x	
+f28v_L02_s2.jpg	1	9	[C01]	
+f28v_L02_s2.jpg	1	10	o	
+f28v_L02_s2.jpg	1	11	R	
+f28v_L02_s2.jpg	1	12	a	
+f28v_L02_s2.jpg	1	13	I	
+f28v_L02_s2.jpg	1	14	[C04]	
+f28v_L02_s2.jpg	1	15	[C19]	
+f28v_L02_s2.jpg	1	16	I	
+f28v_L02_s2.jpg	1	17	[C13]	
+f28v_L02_s2.jpg	1	18	f	
+f28v_L02_s2.jpg	1	19	[C01]	
+f28v_L02_s2.jpg	1	20	z	
+f28v_L02_s2.jpg	1	21	A	
+f28v_L02_s2.jpg	1	22	[C13]	
+f28v_L02_s2.jpg	1	23	[C09]	
+f28v_L02_s2.jpg	1	24	E	
+f28v_L02_s2.jpg	1	25	o	
+f28v_L02_s2.jpg	1	26	[C01]	
+f28v_L02_s2.jpg	1	27	[C11]	
+f28v_L02_s2.jpg	1	28	o	
+f28v_L02_s2.jpg	1	29	v	
+f28v_L02_s2.jpg	1	30	[C01]	
+f28v_L02_s2.jpg	1	31	I	
+f28v_L02_s2.jpg	1	32	[C09]	
+f28v_L02_s2.jpg	1	33	[C04]	
+f28v_L02_s2.jpg	1	34	s	
+f28v_L02_s2.jpg	1	35	[C13]	
+f28v_L02_s2.jpg	1	36	H	line ends at crop right margin
+f28v_L02_s2.jpg	2	1	[C23]	overlap-continuation, new tokens begin; vertical stroke with small loop/circle at bottom, new code distinct from C11
+f28v_L02_s2.jpg	2	2	[C01]	
+f28v_L02_s2.jpg	2	3	v	
+f28v_L02_s2.jpg	2	4	E	
+f28v_L02_s2.jpg	2	5	[C07]	
+f28v_L02_s2.jpg	2	6	o	
+f28v_L02_s2.jpg	2	7	I	
+f28v_L02_s2.jpg	2	8	[C10]	
+f28v_L02_s2.jpg	2	9	[C01]	
+f28v_L02_s2.jpg	2	10	f	
+f28v_L02_s2.jpg	2	11	[C04]	
+f28v_L02_s2.jpg	2	12	[C13]	
+f28v_L02_s2.jpg	2	13	f	
+f28v_L02_s2.jpg	2	14	[C04]	
+f28v_L02_s2.jpg	2	15	[C11]	
+f28v_L02_s2.jpg	2	16	f	
+f28v_L02_s2.jpg	2	17	[C01]	
+f28v_L02_s2.jpg	2	18	[C06]	
+f28v_L02_s2.jpg	2	19	[C13]	
+f28v_L02_s2.jpg	2	20	f	
+f28v_L02_s2.jpg	2	21	o	
+f28v_L02_s2.jpg	2	22	v	
+f28v_L02_s2.jpg	2	23	z	
+f28v_L02_s2.jpg	2	24	I	
+f28v_L02_s2.jpg	2	25	[C01]	
+f28v_L02_s2.jpg	2	26	T	
+f28v_L02_s2.jpg	2	27	o	
+f28v_L02_s2.jpg	2	28	[C10]	
+f28v_L02_s2.jpg	2	29	T	
+f28v_L02_s2.jpg	2	30	[C01]	
+f28v_L02_s2.jpg	2	31	I	
+f28v_L02_s2.jpg	2	32	f	
+f28v_L02_s2.jpg	2	33	[C10]	
+f28v_L02_s2.jpg	2	34	[C01]	
+f28v_L02_s2.jpg	2	35	[C13]	
+f28v_L02_s2.jpg	2	36	v	
+f28v_L02_s2.jpg	2	37	[C01]	line ends at crop right margin
+f28v_L03_s1.jpg	0	1	(spillover)	faint tops of a few signs at very top edge of crop, likely bottom of previous band's line2 descenders bleeding across the fixed crop boundary; not retranscribed here to avoid duplicating f28v_L02 line2 content
+f28v_L03_s1.jpg	1	1	T	
+f28v_L03_s1.jpg	1	2	[C11]	
+f28v_L03_s1.jpg	1	3	[C09]	
+f28v_L03_s1.jpg	1	4	[C10]	
+f28v_L03_s1.jpg	1	5	f	
+f28v_L03_s1.jpg	1	6	n	
+f28v_L03_s1.jpg	1	7	v	
+f28v_L03_s1.jpg	1	8	x	
+f28v_L03_s1.jpg	1	9	[C01]	
+f28v_L03_s1.jpg	1	10	[C13]	
+f28v_L03_s1.jpg	1	11	v	
+f28v_L03_s1.jpg	1	12	[C10]	
+f28v_L03_s1.jpg	1	13	[C04]	
+f28v_L03_s1.jpg	1	14	T	
+f28v_L03_s1.jpg	1	15	[C11]	
+f28v_L03_s1.jpg	1	16	v	line cut at crop edge, continues s2
+f28v_L03_s2.jpg	0	1	(spillover)	continuation of the same top-edge fragment as in s1, not retranscribed
+f28v_L03_s2.jpg	1	1	[C13]	overlap-continuation, new tokens begin
+f28v_L03_s2.jpg	1	2	7	
+f28v_L03_s2.jpg	1	3	f	
+f28v_L03_s2.jpg	1	4	s	
+f28v_L03_s2.jpg	1	5	o	
+f28v_L03_s2.jpg	1	6	3	
+f28v_L03_s2.jpg	1	7	[C06]	
+f28v_L03_s2.jpg	1	8	x	
+f28v_L03_s2.jpg	1	9	[C10]	
+f28v_L03_s2.jpg	1	10	[C10]	
+f28v_L03_s2.jpg	1	11	[C13]	
+f28v_L03_s2.jpg	1	12	f	
+f28v_L03_s2.jpg	1	13	[C10]	
+f28v_L03_s2.jpg	1	14	7	
+f28v_L03_s2.jpg	1	15	[C04]	
+f28v_L03_s2.jpg	1	16	[C04]	
+f28v_L03_s2.jpg	1	17	z	
+f28v_L03_s2.jpg	1	18	v	
+f28v_L03_s2.jpg	1	19	[C04]	
+f28v_L03_s2.jpg	1	20	T	
+f28v_L03_s2.jpg	1	21	[C10]	
+f28v_L03_s2.jpg	1	22	v	
+f28v_L03_s2.jpg	1	23	[C07]	
+f28v_L03_s2.jpg	1	24	[C01]	
+f28v_L03_s2.jpg	1	25	[C13]	
+f28v_L03_s2.jpg	1	26	S	
+f28v_L03_s2.jpg	1	27	I	
+f28v_L03_s2.jpg	1	28	[C13]	
+f28v_L03_s2.jpg	1	29	v	
+f28v_L03_s2.jpg	1	30	[C14]	
+f28v_L03_s2.jpg	1	31	T	
+f28v_L03_s2.jpg	1	32	[C10]	
+f28v_L03_s2.jpg	1	33	v	
+f28v_L03_s2.jpg	1	34	[C07]	
+f28v_L03_s2.jpg	1	35	[C01]	
+f28v_L03_s2.jpg	1	36	v	
+f28v_L03_s2.jpg	1	37	7	
+f28v_L03_s2.jpg	1	38	[C01]	line ends near crop right margin
+f28v_L03_s2.jpg	2	1	v	overlap-continuation, new tokens begin
+f28v_L03_s2.jpg	2	2	[C10]	
+f28v_L03_s2.jpg	2	3	[C04]	
+f28v_L03_s2.jpg	2	4	T	
+f28v_L03_s2.jpg	2	5	[C11]	
+f28v_L03_s2.jpg	2	6	v	
+f28v_L03_s2.jpg	2	7	T	
+f28v_L03_s2.jpg	2	8	[C01]	
+f28v_L03_s2.jpg	2	9	[C13]	
+f28v_L03_s2.jpg	2	10	f	
+f28v_L03_s2.jpg	2	11	[C01]	
+f28v_L03_s2.jpg	2	12	[C01]	
+f28v_L03_s2.jpg	2	13	[C11]	
+f28v_L03_s2.jpg	2	14	[C06]	
+f28v_L03_s2.jpg	2	15	[C13]	
+f28v_L03_s2.jpg	2	16	[C09]	
+f28v_L03_s2.jpg	2	17	[C11]	
+f28v_L03_s2.jpg	2	18	n	
+f28v_L03_s2.jpg	2	19	v	
+f28v_L03_s2.jpg	2	20	7	
+f28v_L03_s2.jpg	2	21	[C10]	
+f28v_L03_s2.jpg	2	22	o	
+f28v_L03_s2.jpg	2	23	[C10]	
+f28v_L03_s2.jpg	2	24	[C06]	
+f28v_L03_s2.jpg	2	25	I	
+f28v_L03_s2.jpg	2	26	f	
+f28v_L03_s2.jpg	2	27	[C09]	
+f28v_L03_s2.jpg	2	28	[C04]	
+f28v_L03_s2.jpg	2	29	[C11]	
+f28v_L03_s2.jpg	2	30	[C13]	
+f28v_L03_s2.jpg	2	31	7	
+f28v_L03_s2.jpg	2	32	f	
+f28v_L03_s2.jpg	2	33	v	
+f28v_L03_s2.jpg	2	34	z	
+f28v_L03_s2.jpg	2	35	E	
+f28v_L03_s2.jpg	2	36	[C01]	
+f28v_L03_s2.jpg	2	37	I	
+f28v_L03_s2.jpg	2	38	[C04]	
+f28v_L03_s2.jpg	2	39	o	
+f28v_L03_s2.jpg	2	40	[C13]	
+f28v_L03_s2.jpg	2	41	v	
+f28v_L03_s2.jpg	2	42	[C11]	
+f28v_L03_s2.jpg	2	43	[C01]	line ends at crop right margin
+f28v_L04_s1.jpg	1	1	o	
+f28v_L04_s1.jpg	1	2	E	
+f28v_L04_s1.jpg	1	3	[C13]	
+f28v_L04_s1.jpg	1	4	f	
+f28v_L04_s1.jpg	1	5	[C04]	
+f28v_L04_s1.jpg	1	6	o	
+f28v_L04_s1.jpg	1	7	v	
+f28v_L04_s1.jpg	1	8	H	
+f28v_L04_s1.jpg	1	9	I	
+f28v_L04_s1.jpg	1	10	[C09]	
+f28v_L04_s1.jpg	1	11	[C19]	
+f28v_L04_s1.jpg	1	12	o	
+f28v_L04_s1.jpg	1	13	[C11]	line cut at crop edge, continues s2
+f28v_L04_s1.jpg	2	1	[C09]	
+f28v_L04_s1.jpg	2	2	[C04]	
+f28v_L04_s1.jpg	2	3	[C13]	
+f28v_L04_s1.jpg	2	4	[C04]	
+f28v_L04_s1.jpg	2	5	[C11]	
+f28v_L04_s1.jpg	2	6	f	
+f28v_L04_s1.jpg	2	7	[C13]	
+f28v_L04_s1.jpg	2	8	[C09]	
+f28v_L04_s1.jpg	2	9	[C01]	
+f28v_L04_s1.jpg	2	10	z	
+f28v_L04_s1.jpg	2	11	I	
+f28v_L04_s1.jpg	2	12	[C01]	
+f28v_L04_s1.jpg	2	13	[C11]	line cut at crop edge, continues s2
+f28v_L04_s2.jpg	1	1	E	overlap-continuation, new tokens begin
+f28v_L04_s2.jpg	1	2	o	
+f28v_L04_s2.jpg	1	3	[C01]	
+f28v_L04_s2.jpg	1	4	[C11]	
+f28v_L04_s2.jpg	1	5	[C13]	
+f28v_L04_s2.jpg	1	6	o	
+f28v_L04_s2.jpg	1	7	v	
+f28v_L04_s2.jpg	1	8	[C01]	
+f28v_L04_s2.jpg	1	9	I	
+f28v_L04_s2.jpg	1	10	[C09]	
+f28v_L04_s2.jpg	1	11	[C09]	
+f28v_L04_s2.jpg	1	12	E	
+f28v_L04_s2.jpg	1	13	o	
+f28v_L04_s2.jpg	1	14	s	
+f28v_L04_s2.jpg	1	15	[C19]	
+f28v_L04_s2.jpg	1	16	[C01]	
+f28v_L04_s2.jpg	1	17	I	
+f28v_L04_s2.jpg	1	18	[C13]	
+f28v_L04_s2.jpg	1	19	[C01]	
+f28v_L04_s2.jpg	1	20	[C08]	
+f28v_L04_s2.jpg	1	21	[C01]	
+f28v_L04_s2.jpg	1	22	[C11]	
+f28v_L04_s2.jpg	1	23	o	
+f28v_L04_s2.jpg	1	24	v	
+f28v_L04_s2.jpg	1	25	[C01]	
+f28v_L04_s2.jpg	1	26	I	
+f28v_L04_s2.jpg	1	27	[C09]	
+f28v_L04_s2.jpg	1	28	[C04]	
+f28v_L04_s2.jpg	1	29	[C10]	
+f28v_L04_s2.jpg	1	30	[C23]	
+f28v_L04_s2.jpg	1	31	[C10]	
+f28v_L04_s2.jpg	1	32	o	
+f28v_L04_s2.jpg	1	33	I	
+f28v_L04_s2.jpg	1	34	[C09]	
+f28v_L04_s2.jpg	1	35	[C04]	
+f28v_L04_s2.jpg	1	36	[C11]	line ends at crop right margin
+f28v_L04_s2.jpg	2	1	z	overlap-continuation, new tokens begin
+f28v_L04_s2.jpg	2	2	I	
+f28v_L04_s2.jpg	2	3	[C01]	
+f28v_L04_s2.jpg	2	4	[C11]	
+f28v_L04_s2.jpg	2	5	n	
+f28v_L04_s2.jpg	2	6	v	
+f28v_L04_s2.jpg	2	7	x	
+f28v_L04_s2.jpg	2	8	[C13]	
+f28v_L04_s2.jpg	2	9	v	
+f28v_L04_s2.jpg	2	10	[C10]	
+f28v_L04_s2.jpg	2	11	[C07]	
+f28v_L04_s2.jpg	2	12	o	
+f28v_L04_s2.jpg	2	13	I	
+f28v_L04_s2.jpg	2	14	[C09]	
+f28v_L04_s2.jpg	2	15	[C04]	
+f28v_L04_s2.jpg	2	16	[C11]	
+f28v_L04_s2.jpg	2	17	f	
+f28v_L04_s2.jpg	2	18	[C10]	
+f28v_L04_s2.jpg	2	19	[C11]	
+f28v_L04_s2.jpg	2	20	v	
+f28v_L04_s2.jpg	2	21	s	
+f28v_L04_s2.jpg	2	22	z	
+f28v_L04_s2.jpg	2	23	[C01]	
+f28v_L04_s2.jpg	2	24	z	
+f28v_L04_s2.jpg	2	25	f	
+f28v_L04_s2.jpg	2	26	[C10]	
+f28v_L04_s2.jpg	2	27	o	
+f28v_L04_s2.jpg	2	28	f	
+f28v_L04_s2.jpg	2	29	x	
+f28v_L04_s2.jpg	2	30	[C10]	line ends near crop right margin
+f28v_L05_s1.jpg	1	1	f	
+f28v_L05_s1.jpg	1	2	[C13]	
+f28v_L05_s1.jpg	1	3	v	
+f28v_L05_s1.jpg	1	4	[C13]	
+f28v_L05_s1.jpg	1	5	x	
+f28v_L05_s1.jpg	1	6	[C09]	
+f28v_L05_s1.jpg	1	7	[C04]	
+f28v_L05_s1.jpg	1	8	[C22]	
+f28v_L05_s1.jpg	1	9	o	
+f28v_L05_s1.jpg	1	10	f	
+f28v_L05_s1.jpg	1	11	o	
+f28v_L05_s1.jpg	1	12	7	
+f28v_L05_s1.jpg	1	13	[C04]	
+f28v_L05_s1.jpg	1	14	[C04]	
+f28v_L05_s1.jpg	1	15	z	line cut at crop edge, continues s2
+f28v_L05_s1.jpg	2	1	o	
+f28v_L05_s1.jpg	2	2	v	
+f28v_L05_s1.jpg	2	3	H	
+f28v_L05_s1.jpg	2	4	I	
+f28v_L05_s1.jpg	2	5	T	
+f28v_L05_s1.jpg	2	6	z	
+f28v_L05_s1.jpg	2	7	v	
+f28v_L05_s1.jpg	2	8	[C01]	
+f28v_L05_s1.jpg	2	9	s	
+f28v_L05_s1.jpg	2	10	[C13]	
+f28v_L05_s1.jpg	2	11	[C09]	
+f28v_L05_s1.jpg	2	12	[C04]	
+f28v_L05_s1.jpg	2	13	[C01]	
+f28v_L05_s1.jpg	2	14	[C13]	line cut at crop edge, continues s2
+f28v_L05_s2.jpg	1	1	7	overlap-continuation, new tokens begin
+f28v_L05_s2.jpg	1	2	[C04]	
+f28v_L05_s2.jpg	1	3	[C04]	
+f28v_L05_s2.jpg	1	4	z	
+f28v_L05_s2.jpg	1	5	v	
+f28v_L05_s2.jpg	1	6	T	
+f28v_L05_s2.jpg	1	7	[C01]	
+f28v_L05_s2.jpg	1	8	o	
+f28v_L05_s2.jpg	1	9	I	
+f28v_L05_s2.jpg	1	10	f	
+f28v_L05_s2.jpg	1	11	[C01]	
+f28v_L05_s2.jpg	1	12	o	
+f28v_L05_s2.jpg	1	13	v	
+f28v_L05_s2.jpg	1	14	[C04]	
+f28v_L05_s2.jpg	1	15	[C11]	
+f28v_L05_s2.jpg	1	16	[C10]	
+f28v_L05_s2.jpg	1	17	T	
+f28v_L05_s2.jpg	1	18	o	
+f28v_L05_s2.jpg	1	19	[C01]	
+f28v_L05_s2.jpg	1	20	z	
+f28v_L05_s2.jpg	1	21	[C19]	
+f28v_L05_s2.jpg	1	22	[C11]	
+f28v_L05_s2.jpg	1	23	o	
+f28v_L05_s2.jpg	1	24	v	
+f28v_L05_s2.jpg	1	25	6	
+f28v_L05_s2.jpg	1	26	[C07]	
+f28v_L05_s2.jpg	1	27	I	
+f28v_L05_s2.jpg	1	28	f	
+f28v_L05_s2.jpg	1	29	[C10]	
+f28v_L05_s2.jpg	1	30	n	
+f28v_L05_s2.jpg	1	31	v	
+f28v_L05_s2.jpg	1	32	[C11]	
+f28v_L05_s2.jpg	1	33	[C01]	
+f28v_L05_s2.jpg	1	34	[C13]	line ends near crop right margin
+f28v_L05_s2.jpg	2	1	[C10]	overlap-continuation, new tokens begin
+f28v_L05_s2.jpg	2	2	I	
+f28v_L05_s2.jpg	2	3	[C01]	
+f28v_L05_s2.jpg	2	4	[C07]	
+f28v_L05_s2.jpg	2	5	[C13]	
+f28v_L05_s2.jpg	2	6	v	
+f28v_L05_s2.jpg	2	7	[C10]	
+f28v_L05_s2.jpg	2	8	[C04]	
+f28v_L05_s2.jpg	2	9	T	
+f28v_L05_s2.jpg	2	10	z	
+f28v_L05_s2.jpg	2	11	H	
+f28v_L05_s2.jpg	2	12	I	
+f28v_L05_s2.jpg	2	13	[C19]	
+f28v_L05_s2.jpg	2	14	ρ	rho-like small mark distinct from full C01, kept as C01 variant
+f28v_L05_s2.jpg	2	15	[C13]	
+f28v_L05_s2.jpg	2	16	n	
+f28v_L05_s2.jpg	2	17	v	
+f28v_L05_s2.jpg	2	18	[C11]	
+f28v_L05_s2.jpg	2	19	[C01]	
+f28v_L05_s2.jpg	2	20	n	
+f28v_L05_s2.jpg	2	21	v	
+f28v_L05_s2.jpg	2	22	[C11]	
+f28v_L05_s2.jpg	2	23	[C04]	
+f28v_L05_s2.jpg	2	24	[C13]	
+f28v_L05_s2.jpg	2	25	s	
+f28v_L05_s2.jpg	2	26	T	
+f28v_L05_s2.jpg	2	27	[C10]	
+f28v_L05_s2.jpg	2	28	7	
+f28v_L05_s2.jpg	2	29	f	
+f28v_L05_s2.jpg	2	30	[C09]	
+f28v_L05_s2.jpg	2	31	[C13]	
+f28v_L05_s2.jpg	2	32	n	
+f28v_L05_s2.jpg	2	33	v	
+f28v_L05_s2.jpg	2	34	x	
+f28v_L05_s2.jpg	2	35	[C14]	
+f28v_L05_s2.jpg	2	36	T	
+f28v_L05_s2.jpg	2	37	[C10]	line ends at crop right margin
+f28v_L06_s1.jpg	1	1	[C01]	
+f28v_L06_s1.jpg	1	2	E	
+f28v_L06_s1.jpg	1	3	[C13]	
+f28v_L06_s1.jpg	1	4	f	
+f28v_L06_s1.jpg	1	5	[C04]	
+f28v_L06_s1.jpg	1	6	7	
+f28v_L06_s1.jpg	1	7	6	
+f28v_L06_s1.jpg	1	8	[C13]	
+f28v_L06_s1.jpg	1	9	[C09]	
+f28v_L06_s1.jpg	1	10	v	
+f28v_L06_s1.jpg	1	11	[C04]	
+f28v_L06_s1.jpg	1	12	[C11]	
+f28v_L06_s1.jpg	1	13	[C01]	
+f28v_L06_s1.jpg	1	14	o	
+f28v_L06_s1.jpg	1	15	v	line cut at crop edge, continues s2
+f28v_L06_s1.jpg	2	1	6	
+f28v_L06_s1.jpg	2	2	[C13]	
+f28v_L06_s1.jpg	2	3	[C14]	
+f28v_L06_s1.jpg	2	4	[C10]	
+f28v_L06_s1.jpg	2	5	x	
+f28v_L06_s1.jpg	2	6	[C13]	
+f28v_L06_s1.jpg	2	7	[C01]	
+f28v_L06_s1.jpg	2	8	v	
+f28v_L06_s1.jpg	2	9	E	
+f28v_L06_s1.jpg	2	10	o	
+f28v_L06_s1.jpg	2	11	E	
+f28v_L06_s1.jpg	2	12	[C01]	
+f28v_L06_s1.jpg	2	13	x	
+f28v_L06_s1.jpg	2	14	[C09]	line cut at crop edge, continues s2
+f28v_L06_s2.jpg	1	1	[C11]	overlap-continuation, new tokens begin
+f28v_L06_s2.jpg	1	2	[C01]	
+f28v_L06_s2.jpg	1	3	o	
+f28v_L06_s2.jpg	1	4	v	
+f28v_L06_s2.jpg	1	5	T	
+f28v_L06_s2.jpg	1	6	[C01]	
+f28v_L06_s2.jpg	1	7	[C13]	
+f28v_L06_s2.jpg	1	8	[C01]	
+f28v_L06_s2.jpg	1	9	[C11]	
+f28v_L06_s2.jpg	1	10	f	
+f28v_L06_s2.jpg	1	11	[C04]	
+f28v_L06_s2.jpg	1	12	o	
+f28v_L06_s2.jpg	1	13	[C09]	
+f28v_L06_s2.jpg	1	14	[C04]	
+f28v_L06_s2.jpg	1	15	[C13]	
+f28v_L06_s2.jpg	1	16	f	
+f28v_L06_s2.jpg	1	17	[C01]	
+f28v_L06_s2.jpg	1	18	o	
+f28v_L06_s2.jpg	1	19	f	
+f28v_L06_s2.jpg	1	20	[C04]	
+f28v_L06_s2.jpg	1	21	R	
+f28v_L06_s2.jpg	1	22	z	
+f28v_L06_s2.jpg	1	23	[C01]	
+f28v_L06_s2.jpg	1	24	[C04]	
+f28v_L06_s2.jpg	1	25	[C01]	
+f28v_L06_s2.jpg	1	26	[C11]	
+f28v_L06_s2.jpg	1	27	[C01]	
+f28v_L06_s2.jpg	1	28	I	
+f28v_L06_s2.jpg	1	29	[C09]	
+f28v_L06_s2.jpg	1	30	[C04]	
+f28v_L06_s2.jpg	1	31	[C13]	
+f28v_L06_s2.jpg	1	32	[C01]	
+f28v_L06_s2.jpg	1	33	[C11]	
+f28v_L06_s2.jpg	1	34	T	
+f28v_L06_s2.jpg	1	35	z	
+f28v_L06_s2.jpg	1	36	f	
+f28v_L06_s2.jpg	1	37	[C10]	
+f28v_L06_s2.jpg	1	38	[C09]	
+f28v_L06_s2.jpg	1	39	[C13]	
+f28v_L06_s2.jpg	1	40	ρ	small variant mark, kept close to C01
+f28v_L06_s2.jpg	1	41	o	
+f28v_L06_s2.jpg	1	42	n	line ends at crop right margin
+f28v_L06_s2.jpg	2	1	[C09]	overlap-continuation, new tokens begin
+f28v_L06_s2.jpg	2	2	[C04]	
+f28v_L06_s2.jpg	2	3	[C01]	
+f28v_L06_s2.jpg	2	4	x	
+f28v_L06_s2.jpg	2	5	[C09]	
+f28v_L06_s2.jpg	2	6	[C10]	
+f28v_L06_s2.jpg	2	7	[C01]	
+f28v_L06_s2.jpg	2	8	[C10]	
+f28v_L06_s2.jpg	2	9	I	
+f28v_L06_s2.jpg	2	10	[C01]	
+f28v_L06_s2.jpg	2	11	[C13]	
+f28v_L06_s2.jpg	2	12	[C13]	
+f28v_L06_s2.jpg	2	13	[C10]	
+f28v_L06_s2.jpg	2	14	[C11]	
+f28v_L06_s2.jpg	2	15	[C19]	
+f28v_L06_s2.jpg	2	16	I	
+f28v_L06_s2.jpg	2	17	[C13]	
+f28v_L06_s2.jpg	2	18	f	
+f28v_L06_s2.jpg	2	19	[C04]	
+f28v_L06_s2.jpg	2	20	z	
+f28v_L06_s2.jpg	2	21	[C10]	
+f28v_L06_s2.jpg	2	22	[C04]	
+f28v_L06_s2.jpg	2	23	I	
+f28v_L06_s2.jpg	2	24	[C09]	
+f28v_L06_s2.jpg	2	25	E	
+f28v_L06_s2.jpg	2	26	z	
+f28v_L06_s2.jpg	2	27	v	
+f28v_L06_s2.jpg	2	28	T	
+f28v_L06_s2.jpg	2	29	o	
+f28v_L06_s2.jpg	2	30	[C01]	
+f28v_L06_s2.jpg	2	31	[C09]	
+f28v_L06_s2.jpg	2	32	z	
+f28v_L06_s2.jpg	2	33	v	
+f28v_L06_s2.jpg	2	34	o	dash/hyphen-like connecting mark precedes, not tokenised separately
+f28v_L06_s2.jpg	2	35	x	
+f28v_L06_s2.jpg	2	36	[C13]	
+f28v_L06_s2.jpg	2	37	[C01]	line ends at crop right margin
+f28v_L07_s1.jpg	1	1	T	
+f28v_L07_s1.jpg	1	2	[C10]	
+f28v_L07_s1.jpg	1	3	[C13]	
+f28v_L07_s1.jpg	1	4	[C10]	
+f28v_L07_s1.jpg	1	5	z	
+f28v_L07_s1.jpg	1	6	v	
+f28v_L07_s1.jpg	1	7	n	
+f28v_L07_s1.jpg	1	8	v	
+f28v_L07_s1.jpg	1	9	[C11]	
+f28v_L07_s1.jpg	1	10	T	
+f28v_L07_s1.jpg	1	11	o	
+f28v_L07_s1.jpg	1	12	[C01]	
+f28v_L07_s1.jpg	1	13	[C13]	
+f28v_L07_s1.jpg	1	14	[C09]	line cut at crop edge, continues s2
+f28v_L07_s1.jpg	2	1	E	
+f28v_L07_s1.jpg	2	2	[C13]	
+f28v_L07_s1.jpg	2	3	[C01]	
+f28v_L07_s1.jpg	2	4	[C13]	
+f28v_L07_s1.jpg	2	5	R	
+f28v_L07_s1.jpg	2	6	z	
+f28v_L07_s1.jpg	2	7	v	
+f28v_L07_s1.jpg	2	8	[C10]	
+f28v_L07_s1.jpg	2	9	[C01]	
+f28v_L07_s1.jpg	2	10	[C13]	
+f28v_L07_s1.jpg	2	11	x	
+f28v_L07_s1.jpg	2	12	[C14]	
+f28v_L07_s1.jpg	2	13	I	line cut at crop edge, continues s2
+f28v_L07_s2.jpg	1	1	E	overlap-continuation, new tokens begin
+f28v_L07_s2.jpg	1	2	[C13]	
+f28v_L07_s2.jpg	1	3	v	
+f28v_L07_s2.jpg	1	4	o	
+f28v_L07_s2.jpg	1	5	[C01]	
+f28v_L07_s2.jpg	1	6	I	
+f28v_L07_s2.jpg	1	7	[C11]	
+f28v_L07_s2.jpg	1	8	[C10]	
+f28v_L07_s2.jpg	1	9	[C01]	
+f28v_L07_s2.jpg	1	10	[C13]	
+f28v_L07_s2.jpg	1	11	[C09]	
+f28v_L07_s2.jpg	1	12	[C10]	
+f28v_L07_s2.jpg	1	13	[C01]	
+f28v_L07_s2.jpg	1	14	n	
+f28v_L07_s2.jpg	1	15	v	
+f28v_L07_s2.jpg	1	16	I	
+f28v_L07_s2.jpg	1	17	[C13]	
+f28v_L07_s2.jpg	1	18	[C10]	
+f28v_L07_s2.jpg	1	19	z	
+f28v_L07_s2.jpg	1	20	I	
+f28v_L07_s2.jpg	1	21	[C04]	
+f28v_L07_s2.jpg	1	22	T	
+f28v_L07_s2.jpg	1	23	z	
+f28v_L07_s2.jpg	1	24	v	
+f28v_L07_s2.jpg	1	25	[C01]	
+f28v_L07_s2.jpg	1	26	[C13]	
+f28v_L07_s2.jpg	1	27	[C10]	
+f28v_L07_s2.jpg	1	28	[C04]	
+f28v_L07_s2.jpg	1	29	[C01]	
+f28v_L07_s2.jpg	1	30	[C11]	
+f28v_L07_s2.jpg	1	31	[C01]	
+f28v_L07_s2.jpg	1	32	[C13]	
+f28v_L07_s2.jpg	1	33	T	line ends at crop right margin
+f28v_L07_s2.jpg	2	1	[C13]	overlap-continuation, new tokens begin
+f28v_L07_s2.jpg	2	2	[C10]	
+f28v_L07_s2.jpg	2	3	s	
+f28v_L07_s2.jpg	2	4	[C11]	
+f28v_L07_s2.jpg	2	5	z	
+f28v_L07_s2.jpg	2	6	v	
+f28v_L07_s2.jpg	2	7	[C01]	
+f28v_L07_s2.jpg	2	8	x	
+f28v_L07_s2.jpg	2	9	6	
+f28v_L07_s2.jpg	2	10	[C10]	
+f28v_L07_s2.jpg	2	11	[C13]	
+f28v_L07_s2.jpg	2	12	T	
+f28v_L07_s2.jpg	2	13	[C04]	
+f28v_L07_s2.jpg	2	14	I	
+f28v_L07_s2.jpg	2	15	[C13]	
+f28v_L07_s2.jpg	2	16	[C10]	
+f28v_L07_s2.jpg	2	17	s	
+f28v_L07_s2.jpg	2	18	[C11]	
+f28v_L07_s2.jpg	2	19	o	
+f28v_L07_s2.jpg	2	20	x	
+f28v_L07_s2.jpg	2	21	f	
+f28v_L07_s2.jpg	2	22	[C10]	
+f28v_L07_s2.jpg	2	23	I	
+f28v_L07_s2.jpg	2	24	n	
+f28v_L07_s2.jpg	2	25	v	
+f28v_L07_s2.jpg	2	26	[C11]	
+f28v_L07_s2.jpg	2	27	[C21]	circle-with-internal-cross, kept as C21 variant
+f28v_L07_s2.jpg	2	28	o	
+f28v_L07_s2.jpg	2	29	v	
+f28v_L07_s2.jpg	2	30	z	
+f28v_L07_s2.jpg	2	31	E	
+f28v_L07_s2.jpg	2	32	[C13]	
+f28v_L07_s2.jpg	2	33	7	
+f28v_L07_s2.jpg	2	34	f	
+f28v_L07_s2.jpg	2	35	[C11]	line ends at crop right margin
+f28v_L08_s1.jpg	1	1	x	
+f28v_L08_s1.jpg	1	2	[C01]	
+f28v_L08_s1.jpg	1	3	[C13]	
+f28v_L08_s1.jpg	1	4	f	
+f28v_L08_s1.jpg	1	5	[C04]	
+f28v_L08_s1.jpg	1	6	[C11]	
+f28v_L08_s1.jpg	1	7	f	
+f28v_L08_s1.jpg	1	8	[C01]	
+f28v_L08_s1.jpg	1	9	[C01]	
+f28v_L08_s1.jpg	1	10	z	
+f28v_L08_s1.jpg	1	11	I	
+f28v_L08_s1.jpg	1	12	[C04]	
+f28v_L08_s1.jpg	1	13	R	
+f28v_L08_s1.jpg	1	14	f	line cut at crop edge, continues s2
+f28v_L08_s1.jpg	2	1	f	
+f28v_L08_s1.jpg	2	2	[C01]	
+f28v_L08_s1.jpg	2	3	o	
+f28v_L08_s1.jpg	2	4	f	
+f28v_L08_s1.jpg	2	5	[C04]	
+f28v_L08_s1.jpg	2	6	I	
+f28v_L08_s1.jpg	2	7	[C01]	
+f28v_L08_s1.jpg	2	8	[C13]	
+f28v_L08_s1.jpg	2	9	[C10]	
+f28v_L08_s1.jpg	2	10	[C04]	
+f28v_L08_s1.jpg	2	11	z	
+f28v_L08_s1.jpg	2	12	I	
+f28v_L08_s1.jpg	2	13	[C04]	
+f28v_L08_s1.jpg	2	14	[C04]	line cut at crop edge, continues s2
+f28v_L08_s2.jpg	1	1	[C01]	overlap-continuation, new tokens begin
+f28v_L08_s2.jpg	1	2	[C19]	
+f28v_L08_s2.jpg	1	3	z	
+f28v_L08_s2.jpg	1	4	A	
+f28v_L08_s2.jpg	1	5	[C13]	
+f28v_L08_s2.jpg	1	6	T	
+f28v_L08_s2.jpg	1	7	o	
+f28v_L08_s2.jpg	1	8	[C04]	
+f28v_L08_s2.jpg	1	9	I	
+f28v_L08_s2.jpg	1	10	[C13]	
+f28v_L08_s2.jpg	1	11	[C01]	
+f28v_L08_s2.jpg	1	12	[C13]	
+f28v_L08_s2.jpg	1	13	R	
+f28v_L08_s2.jpg	1	14	z	
+f28v_L08_s2.jpg	1	15	[C10]	
+f28v_L08_s2.jpg	1	16	[C04]	
+f28v_L08_s2.jpg	1	17	[C01]	
+f28v_L08_s2.jpg	1	18	[C13]	
+f28v_L08_s2.jpg	1	19	[C01]	
+f28v_L08_s2.jpg	1	20	[C11]	
+f28v_L08_s2.jpg	1	21	[C10]	
+f28v_L08_s2.jpg	1	22	z	
+f28v_L08_s2.jpg	1	23	[C01]	
+f28v_L08_s2.jpg	1	24	v	
+f28v_L08_s2.jpg	1	25	[C04]	
+f28v_L08_s2.jpg	1	26	I	
+f28v_L08_s2.jpg	1	27	z	
+f28v_L08_s2.jpg	1	28	f	
+f28v_L08_s2.jpg	1	29	s	
+f28v_L08_s2.jpg	1	30	o	
+f28v_L08_s2.jpg	1	31	I	
+f28v_L08_s2.jpg	1	32	[C10]	
+f28v_L08_s2.jpg	1	33	n	
+f28v_L08_s2.jpg	1	34	v	
+f28v_L08_s2.jpg	1	35	[C11]	
+f28v_L08_s2.jpg	1	36	[C09]	
+f28v_L08_s2.jpg	1	37	[C13]	line ends at crop right margin
+f28v_L08_s2.jpg	2	1	I	overlap-continuation, new tokens begin
+f28v_L08_s2.jpg	2	2	[C04]	
+f28v_L08_s2.jpg	2	3	[C04]	
+f28v_L08_s2.jpg	2	4	[C01]	
+f28v_L08_s2.jpg	2	5	[C11]	
+f28v_L08_s2.jpg	2	6	[C01]	
+f28v_L08_s2.jpg	2	7	[C11]	
+f28v_L08_s2.jpg	2	8	n	
+f28v_L08_s2.jpg	2	9	v	
+f28v_L08_s2.jpg	2	10	x	
+f28v_L08_s2.jpg	2	11	[C10]	
+f28v_L08_s2.jpg	2	12	n	
+f28v_L08_s2.jpg	2	13	v	
+f28v_L08_s2.jpg	2	14	[C11]	
+f28v_L08_s2.jpg	2	15	[C01]	
+f28v_L08_s2.jpg	2	16	[C13]	
+f28v_L08_s2.jpg	2	17	T	
+f28v_L08_s2.jpg	2	18	[C01]	
+f28v_L08_s2.jpg	2	19	o	
+f28v_L08_s2.jpg	2	20	x	
+f28v_L08_s2.jpg	2	21	I	
+f28v_L08_s2.jpg	2	22	[C01]	
+f28v_L08_s2.jpg	2	23	[C13]	
+f28v_L08_s2.jpg	2	24	[C01]	
+f28v_L08_s2.jpg	2	25	o	
+f28v_L08_s2.jpg	2	26	[C10]	
+f28v_L08_s2.jpg	2	27	[C04]	
+f28v_L08_s2.jpg	2	28	I	
+f28v_L08_s2.jpg	2	29	f	
+f28v_L08_s2.jpg	2	30	[C09]	
+f28v_L08_s2.jpg	2	31	[C01]	
+f28v_L08_s2.jpg	2	32	[C13]	
+f28v_L08_s2.jpg	2	33	[C11]	
+f28v_L08_s2.jpg	2	34	[C07]	
+f28v_L08_s2.jpg	2	35	[C13]	
+f28v_L08_s2.jpg	2	36	[C10]	
+f28v_L08_s2.jpg	2	37	[C04]	
+f28v_L08_s2.jpg	2	38	o	line ends at crop right margin
+f28v_L09_s1.jpg	1	1	[C13]	
+f28v_L09_s1.jpg	1	2	[C10]	
+f28v_L09_s1.jpg	1	3	[C19]	
+f28v_L09_s1.jpg	1	4	z	
+f28v_L09_s1.jpg	1	5	f	
+f28v_L09_s1.jpg	1	6	[C09]	
+f28v_L09_s1.jpg	1	7	v	
+f28v_L09_s1.jpg	1	8	[C13]	
+f28v_L09_s1.jpg	1	9	v	
+f28v_L09_s1.jpg	1	10	[C10]	
+f28v_L09_s1.jpg	1	11	[C13]	
+f28v_L09_s1.jpg	1	12	[C04]	
+f28v_L09_s1.jpg	1	13	[C04]	
+f28v_L09_s1.jpg	1	14	[C11]	
+f28v_L09_s1.jpg	1	15	f	line cut at crop edge, continues s2
+f28v_L09_s1.jpg	2	1	7	
+f28v_L09_s1.jpg	2	2	f	
+f28v_L09_s1.jpg	2	3	v	
+f28v_L09_s1.jpg	2	4	[C15]	
+f28v_L09_s1.jpg	2	5	E	
+f28v_L09_s1.jpg	2	6	[C13]	
+f28v_L09_s1.jpg	2	7	[C10]	
+f28v_L09_s1.jpg	2	8	[C10]	
+f28v_L09_s1.jpg	2	9	z	
+f28v_L09_s1.jpg	2	10	I	
+f28v_L09_s1.jpg	2	11	[C10]	
+f28v_L09_s1.jpg	2	12	[C01]	
+f28v_L09_s1.jpg	2	13	[C13]	
+f28v_L09_s1.jpg	2	14	R	
+f28v_L09_s1.jpg	2	15	[C13]	line cut at crop edge, continues s2
+f28v_L09_s2.jpg	1	1	I	overlap-continuation, new tokens begin
+f28v_L09_s2.jpg	1	2	[C10]	
+f28v_L09_s2.jpg	1	3	[C13]	
+f28v_L09_s2.jpg	1	4	f	
+f28v_L09_s2.jpg	1	5	T	
+f28v_L09_s2.jpg	1	6	x	
+f28v_L09_s2.jpg	1	7	[C13]	
+f28v_L09_s2.jpg	1	8	[C01]	
+f28v_L09_s2.jpg	1	9	3	
+f28v_L09_s2.jpg	1	10	m	
+f28v_L09_s2.jpg	1	11	7	
+f28v_L09_s2.jpg	1	12	[C04]	
+f28v_L09_s2.jpg	1	13	n	
+f28v_L09_s2.jpg	1	14	v	
+f28v_L09_s2.jpg	1	15	[C11]	
+f28v_L09_s2.jpg	1	16	[C01]	
+f28v_L09_s2.jpg	1	17	[C13]	
+f28v_L09_s2.jpg	1	18	[C01]	
+f28v_L09_s2.jpg	1	19	o	
+f28v_L09_s2.jpg	1	20	s	
+f28v_L09_s2.jpg	1	21	[C19]	
+f28v_L09_s2.jpg	1	22	[C01]	
+f28v_L09_s2.jpg	1	23	H	
+f28v_L09_s2.jpg	1	24	o	
+f28v_L09_s2.jpg	1	25	[C01]	
+f28v_L09_s2.jpg	1	26	[C13]	
+f28v_L09_s2.jpg	1	27	[C10]	
+f28v_L09_s2.jpg	1	28	n	
+f28v_L09_s2.jpg	1	29	v	
+f28v_L09_s2.jpg	1	30	x	
+f28v_L09_s2.jpg	1	31	[C13]	
+f28v_L09_s2.jpg	1	32	[C10]	
+f28v_L09_s2.jpg	1	33	[C04]	
+f28v_L09_s2.jpg	1	34	z	
+f28v_L09_s2.jpg	1	35	I	line ends at crop right margin
+f28v_L09_s2.jpg	2	1	[C01]	overlap-continuation, new tokens begin
+f28v_L09_s2.jpg	2	2	[C13]	
+f28v_L09_s2.jpg	2	3	R	
+f28v_L09_s2.jpg	2	4	[C13]	
+f28v_L09_s2.jpg	2	5	[C10]	
+f28v_L09_s2.jpg	2	6	[C18]	lightning/zig-zag mark
+f28v_L09_s2.jpg	2	7	[C10]	
+f28v_L09_s2.jpg	2	8	[C11]	
+f28v_L09_s2.jpg	2	9	[C01]	
+f28v_L09_s2.jpg	2	10	z	
+f28v_L09_s2.jpg	2	11	f	
+f28v_L09_s2.jpg	2	12	n	
+f28v_L09_s2.jpg	2	13	v	
+f28v_L09_s2.jpg	2	14	[C11]	
+f28v_L09_s2.jpg	2	15	[C01]	
+f28v_L09_s2.jpg	2	16	n	
+f28v_L09_s2.jpg	2	17	v	
+f28v_L09_s2.jpg	2	18	7	
+f28v_L09_s2.jpg	2	19	T	
+f28v_L09_s2.jpg	2	20	[C10]	
+f28v_L09_s2.jpg	2	21	z	
+f28v_L09_s2.jpg	2	22	T	
+f28v_L09_s2.jpg	2	23	[C10]	
+f28v_L09_s2.jpg	2	24	[C14]	
+f28v_L09_s2.jpg	2	25	n	
+f28v_L09_s2.jpg	2	26	v	
+f28v_L09_s2.jpg	2	27	x	
+f28v_L09_s2.jpg	2	28	[C13]	
+f28v_L09_s2.jpg	2	29	[C01]	
+f28v_L09_s2.jpg	2	30	v	
+f28v_L09_s2.jpg	2	31	E	
+f28v_L09_s2.jpg	2	32	[C18]	
+f28v_L09_s2.jpg	2	33	E	
+f28v_L09_s2.jpg	2	34	n	
+f28v_L09_s2.jpg	2	35	[C01]	
+f28v_L09_s2.jpg	2	36	[C13]	
+f28v_L09_s2.jpg	2	37	f	
+f28v_L09_s2.jpg	2	38	x	
+f28v_L09_s2.jpg	2	39	A	line ends at crop right margin
+f28v_L10_s1.jpg	1	1	[C10]	
+f28v_L10_s1.jpg	1	2	[C04]	
+f28v_L10_s1.jpg	1	3	[C01]	
+f28v_L10_s1.jpg	1	4	z	
+f28v_L10_s1.jpg	1	5	I	
+f28v_L10_s1.jpg	1	6	[C04]	
+f28v_L10_s1.jpg	1	7	o	
+f28v_L10_s1.jpg	1	8	v	
+f28v_L10_s1.jpg	1	9	[C10]	
+f28v_L10_s1.jpg	1	10	x	
+f28v_L10_s1.jpg	1	11	R	
+f28v_L10_s1.jpg	1	12	f	
+f28v_L10_s1.jpg	1	13	[C13]	
+f28v_L10_s1.jpg	1	14	[C04]	line cut at crop edge, continues s2
+f28v_L10_s1.jpg	2	1	[C01]	
+f28v_L10_s1.jpg	2	2	[C13]	
+f28v_L10_s1.jpg	2	3	[C01]	
+f28v_L10_s1.jpg	2	4	I	
+f28v_L10_s1.jpg	2	5	[C09]	
+f28v_L10_s1.jpg	2	6	[C04]	
+f28v_L10_s1.jpg	2	7	o	
+f28v_L10_s1.jpg	2	8	s	
+f28v_L10_s1.jpg	2	9	[C19]	
+f28v_L10_s1.jpg	2	10	[C01]	
+f28v_L10_s1.jpg	2	11	H	
+f28v_L10_s1.jpg	2	12	o	
+f28v_L10_s1.jpg	2	13	[C01]	
+f28v_L10_s1.jpg	2	14	[C13]	line cut at crop edge, continues s2
+f28v_L10_s2.jpg	1	1	R	overlap-continuation, new tokens begin
+f28v_L10_s2.jpg	1	2	f	
+f28v_L10_s2.jpg	1	3	[C13]	
+f28v_L10_s2.jpg	1	4	[C04]	
+f28v_L10_s2.jpg	1	5	[C01]	
+f28v_L10_s2.jpg	1	6	[C11]	
+f28v_L10_s2.jpg	1	7	[C10]	
+f28v_L10_s2.jpg	1	8	[C11]	
+f28v_L10_s2.jpg	1	9	A	
+f28v_L10_s2.jpg	1	10	z	
+f28v_L10_s2.jpg	1	11	H	
+f28v_L10_s2.jpg	1	12	[C11]	
+f28v_L10_s2.jpg	1	13	T	
+f28v_L10_s2.jpg	1	14	[C13]	
+f28v_L10_s2.jpg	1	15	v	
+f28v_L10_s2.jpg	1	16	[C01]	
+f28v_L10_s2.jpg	1	17	o	
+f28v_L10_s2.jpg	1	18	n	
+f28v_L10_s2.jpg	1	19	v	
+f28v_L10_s2.jpg	1	20	[C19]	
+f28v_L10_s2.jpg	1	21	[C10]	
+f28v_L10_s2.jpg	1	22	[C10]	
+f28v_L10_s2.jpg	1	23	[C09]	
+f28v_L10_s2.jpg	1	24	I	
+f28v_L10_s2.jpg	1	25	f	
+f28v_L10_s2.jpg	1	26	[C09]	
+f28v_L10_s2.jpg	1	27	[C11]	
+f28v_L10_s2.jpg	1	28	[C04]	
+f28v_L10_s2.jpg	1	29	[C13]	
+f28v_L10_s2.jpg	1	30	s	
+f28v_L10_s2.jpg	1	31	o	
+f28v_L10_s2.jpg	1	32	[C01]	
+f28v_L10_s2.jpg	1	33	[C11]	
+f28v_L10_s2.jpg	1	34	T	
+f28v_L10_s2.jpg	1	35	z	
+f28v_L10_s2.jpg	1	36	f	
+f28v_L10_s2.jpg	1	37	[C01]	line ends at crop right margin
+f28v_L10_s2.jpg	2	1	o	overlap-continuation, new tokens begin
+f28v_L10_s2.jpg	2	2	[C01]	
+f28v_L10_s2.jpg	2	3	[C13]	
+f28v_L10_s2.jpg	2	4	v	
+f28v_L10_s2.jpg	2	5	[C01]	
+f28v_L10_s2.jpg	2	6	7	
+f28v_L10_s2.jpg	2	7	[C04]	
+f28v_L10_s2.jpg	2	8	[C01]	
+f28v_L10_s2.jpg	2	9	[C13]	
+f28v_L10_s2.jpg	2	10	[C01]	
+f28v_L10_s2.jpg	2	11	[C13]	
+f28v_L10_s2.jpg	2	12	I	
+f28v_L10_s2.jpg	2	13	[C09]	
+f28v_L10_s2.jpg	2	14	[C04]	
+f28v_L10_s2.jpg	2	15	[C14]	
+f28v_L10_s2.jpg	2	16	3	
+f28v_L10_s2.jpg	2	17	s	
+f28v_L10_s2.jpg	2	18	z	
+f28v_L10_s2.jpg	2	19	f	
+f28v_L10_s2.jpg	2	20	[C10]	
+f28v_L10_s2.jpg	2	21	[C04]	
+f28v_L10_s2.jpg	2	22	[C01]	
+f28v_L10_s2.jpg	2	23	z	
+f28v_L10_s2.jpg	2	24	E	
+f28v_L10_s2.jpg	2	25	[C13]	
+f28v_L10_s2.jpg	2	26	[C04]	
+f28v_L10_s2.jpg	2	27	o	
+f28v_L10_s2.jpg	2	28	v	
+f28v_L10_s2.jpg	2	29	[C10]	
+f28v_L10_s2.jpg	2	30	I	
+f28v_L10_s2.jpg	2	31	[C01]	
+f28v_L10_s2.jpg	2	32	T	
+f28v_L10_s2.jpg	2	33	[C13]	
+f28v_L10_s2.jpg	2	34	v	
+f28v_L10_s2.jpg	2	35	[C11]	
+f28v_L10_s2.jpg	2	36	[C01]	
+f28v_L10_s2.jpg	2	37	z	
+f28v_L10_s2.jpg	2	38	H	
+f28v_L10_s2.jpg	2	39	[C11]	
+f28v_L10_s2.jpg	2	40	T	
+f28v_L10_s2.jpg	2	41	[C13]	
+f28v_L10_s2.jpg	2	42	v	line ends at crop right margin
+f28v_L11_s1.jpg	1	1	n	
+f28v_L11_s1.jpg	1	2	v	
+f28v_L11_s1.jpg	1	3	x	
+f28v_L11_s1.jpg	1	4	[C14]	
+f28v_L11_s1.jpg	1	5	f	
+f28v_L11_s1.jpg	1	6	o	
+f28v_L11_s1.jpg	1	7	v	
+f28v_L11_s1.jpg	1	8	[C15]	
+f28v_L11_s1.jpg	1	9	[C13]	
+f28v_L11_s1.jpg	1	10	f	
+f28v_L11_s1.jpg	1	11	[C04]	
+f28v_L11_s1.jpg	1	12	[C01]	
+f28v_L11_s1.jpg	1	13	[C13]	
+f28v_L11_s1.jpg	1	14	I	
+f28v_L11_s1.jpg	1	15	f	line cut at crop edge, continues s2
+f28v_L11_s1.jpg	2	1	(dash)	small dash/insertion mark before line2, not a cipher sign
+f28v_L11_s1.jpg	2	2	o	
+f28v_L11_s1.jpg	2	3	[C01]	
+f28v_L11_s1.jpg	2	4	[C13]	
+f28v_L11_s1.jpg	2	5	[C01]	
+f28v_L11_s1.jpg	2	6	[C11]	
+f28v_L11_s1.jpg	2	7	[C07]	
+f28v_L11_s1.jpg	2	8	o	
+f28v_L11_s1.jpg	2	9	I	
+f28v_L11_s1.jpg	2	10	[C01]	
+f28v_L11_s1.jpg	2	11	[C13]	
+f28v_L11_s1.jpg	2	12	f	
+f28v_L11_s1.jpg	2	13	[C13]	
+f28v_L11_s1.jpg	2	14	R	
+f28v_L11_s1.jpg	2	15	z	line cut at crop edge, continues s2
+f28v_L11_s2.jpg	1	1	[C13]	overlap-continuation, new tokens begin
+f28v_L11_s2.jpg	1	2	f	
+f28v_L11_s2.jpg	1	3	I	
+f28v_L11_s2.jpg	1	4	f	
+f28v_L11_s2.jpg	1	5	[C01]	
+f28v_L11_s2.jpg	1	6	[C13]	
+f28v_L11_s2.jpg	1	7	[C01]	
+f28v_L11_s2.jpg	1	8	[C11]	
+f28v_L11_s2.jpg	1	9	[C07]	
+f28v_L11_s2.jpg	1	10	o	
+f28v_L11_s2.jpg	1	11	I	
+f28v_L11_s2.jpg	1	12	[C01]	
+f28v_L11_s2.jpg	1	13	[C11]	
+f28v_L11_s2.jpg	1	14	[C13]	
+f28v_L11_s2.jpg	1	15	f	
+f28v_L11_s2.jpg	1	16	[C04]	
+f28v_L11_s2.jpg	1	17	[C01]	
+f28v_L11_s2.jpg	1	18	[C13]	
+f28v_L11_s2.jpg	1	19	7	
+f28v_L11_s2.jpg	1	20	f	
+f28v_L11_s2.jpg	1	21	n	
+f28v_L11_s2.jpg	1	22	v	
+f28v_L11_s2.jpg	1	23	[C11]	
+f28v_L11_s2.jpg	1	24	[C01]	
+f28v_L11_s2.jpg	1	25	n	
+f28v_L11_s2.jpg	1	26	v	
+f28v_L11_s2.jpg	1	27	7	
+f28v_L11_s2.jpg	1	28	[C19]	
+f28v_L11_s2.jpg	1	29	[C21]	
+f28v_L11_s2.jpg	1	30	[C09]	
+f28v_L11_s2.jpg	1	31	[C13]	
+f28v_L11_s2.jpg	1	32	n	
+f28v_L11_s2.jpg	1	33	v	
+f28v_L11_s2.jpg	1	34	x	
+f28v_L11_s2.jpg	1	35	o	
+f28v_L11_s2.jpg	1	36	f	
+f28v_L11_s2.jpg	1	37	o	
+f28v_L11_s2.jpg	1	38	R	
+f28v_L11_s2.jpg	1	39	a	
+f28v_L11_s2.jpg	1	40	I	line ends at crop right margin
+f28v_L11_s2.jpg	2	1	[C13]	overlap-continuation, new tokens begin
+f28v_L11_s2.jpg	2	2	f	
+f28v_L11_s2.jpg	2	3	[C13]	
+f28v_L11_s2.jpg	2	4	R	
+f28v_L11_s2.jpg	2	5	z	
+f28v_L11_s2.jpg	2	6	E	
+f28v_L11_s2.jpg	2	7	o	
+f28v_L11_s2.jpg	2	8	f	
+f28v_L11_s2.jpg	2	9	[C04]	
+f28v_L11_s2.jpg	2	10	[C01]	
+f28v_L11_s2.jpg	2	11	[C13]	
+f28v_L11_s2.jpg	2	12	R	
+f28v_L11_s2.jpg	2	13	z	
+f28v_L11_s2.jpg	2	14	v	
+f28v_L11_s2.jpg	2	15	[C10]	
+f28v_L11_s2.jpg	2	16	[C14]	
+f28v_L11_s2.jpg	2	17	[C10]	
+f28v_L11_s2.jpg	2	18	o	
+f28v_L11_s2.jpg	2	19	v	
+f28v_L11_s2.jpg	2	20	[C04]	
+f28v_L11_s2.jpg	2	21	[C13]	
+f28v_L11_s2.jpg	2	22	[C01]	
+f28v_L11_s2.jpg	2	23	[C11]	
+f28v_L11_s2.jpg	2	24	[C01]	
+f28v_L11_s2.jpg	2	25	I	
+f28v_L11_s2.jpg	2	26	[C19]	
+f28v_L11_s2.jpg	2	27	[C11]	
+f28v_L11_s2.jpg	2	28	[C10]	
+f28v_L11_s2.jpg	2	29	o	
+f28v_L11_s2.jpg	2	30	[C04]	
+f28v_L11_s2.jpg	2	31	x	
+f28v_L11_s2.jpg	2	32	z	
+f28v_L11_s2.jpg	2	33	f	
+f28v_L11_s2.jpg	2	34	7	
+f28v_L11_s2.jpg	2	35	[C04]	
+f28v_L11_s2.jpg	2	36	n	
+f28v_L11_s2.jpg	2	37	v	
+f28v_L11_s2.jpg	2	38	[C11]	
+f28v_L11_s2.jpg	2	39	f	
+f28v_L11_s2.jpg	2	40	[C13]	
+f28v_L11_s2.jpg	2	41	R	line ends at crop right margin
+f28v_L12_s1.jpg	1	1	x	
+f28v_L12_s1.jpg	1	2	H	
+f28v_L12_s1.jpg	1	3	I	
+f28v_L12_s1.jpg	1	4	[C13]	
+f28v_L12_s1.jpg	1	5	[C14]	
+f28v_L12_s1.jpg	1	6	o	
+f28v_L12_s1.jpg	1	7	[C07]	
+f28v_L12_s1.jpg	1	8	[C01]	
+f28v_L12_s1.jpg	1	9	I	
+f28v_L12_s1.jpg	1	10	[C01]	
+f28v_L12_s1.jpg	1	11	[C13]	
+f28v_L12_s1.jpg	1	12	T	
+f28v_L12_s1.jpg	1	13	o	
+f28v_L12_s1.jpg	1	14	[C13]	line cut at crop edge, continues s2
+f28v_L12_s1.jpg	2	1	T	
+f28v_L12_s1.jpg	2	2	[C04]	
+f28v_L12_s1.jpg	2	3	[C11]	
+f28v_L12_s1.jpg	2	4	[C04]	
+f28v_L12_s1.jpg	2	5	n	
+f28v_L12_s1.jpg	2	6	v	
+f28v_L12_s1.jpg	2	7	[C11]	
+f28v_L12_s1.jpg	2	8	o	
+f28v_L12_s1.jpg	2	9	v	
+f28v_L12_s1.jpg	2	10	[C01]	
+f28v_L12_s1.jpg	2	11	[C13]	
+f28v_L12_s1.jpg	2	12	[C11]	
+f28v_L12_s1.jpg	2	13	o	
+f28v_L12_s1.jpg	2	14	[C01]	line cut at crop edge, continues s2
+f28v_L12_s2.jpg	1	1	[C13]	overlap-continuation, new tokens begin
+f28v_L12_s2.jpg	1	2	T	
+f28v_L12_s2.jpg	1	3	o	
+f28v_L12_s2.jpg	1	4	[C13]	
+f28v_L12_s2.jpg	1	5	x	
+f28v_L12_s2.jpg	1	6	[C11]	
+f28v_L12_s2.jpg	1	7	[C09]	
+f28v_L12_s2.jpg	1	8	[C04]	
+f28v_L12_s2.jpg	1	9	[C09]	
+f28v_L12_s2.jpg	1	10	[C13]	
+f28v_L12_s2.jpg	1	11	n	
+f28v_L12_s2.jpg	1	12	v	
+f28v_L12_s2.jpg	1	13	[C11]	
+f28v_L12_s2.jpg	1	14	[C01]	
+f28v_L12_s2.jpg	1	15	[C13]	
+f28v_L12_s2.jpg	1	16	(dash)	insertion/correction dash, not a cipher sign
+f28v_L12_s2.jpg	1	17	[C11]	
+f28v_L12_s2.jpg	1	18	f	
+f28v_L12_s2.jpg	1	19	I	
+f28v_L12_s2.jpg	1	20	[C13]	
+f28v_L12_s2.jpg	1	21	[C01]	
+f28v_L12_s2.jpg	1	22	s	
+f28v_L12_s2.jpg	1	23	[C13]	
+f28v_L12_s2.jpg	1	24	[C04]	
+f28v_L12_s2.jpg	1	25	R	
+f28v_L12_s2.jpg	1	26	z	
+f28v_L12_s2.jpg	1	27	v	
+f28v_L12_s2.jpg	1	28	[C10]	
+f28v_L12_s2.jpg	1	29	o	
+f28v_L12_s2.jpg	1	30	[C13]	
+f28v_L12_s2.jpg	1	31	[C10]	
+f28v_L12_s2.jpg	1	32	[C11]	
+f28v_L12_s2.jpg	1	33	7	
+f28v_L12_s2.jpg	1	34	[C10]	
+f28v_L12_s2.jpg	1	35	[C09]	line ends at crop right margin
+f28v_L12_s2.jpg	2	1	[C11]	overlap-continuation, new tokens begin
+f28v_L12_s2.jpg	2	2	o	
+f28v_L12_s2.jpg	2	3	[C01]	
+f28v_L12_s2.jpg	2	4	[C13]	
+f28v_L12_s2.jpg	2	5	[C13]	
+f28v_L12_s2.jpg	2	6	v	
+f28v_L12_s2.jpg	2	7	E	
+f28v_L12_s2.jpg	2	8	x	
+f28v_L12_s2.jpg	2	9	[C09]	
+f28v_L12_s2.jpg	2	10	o	
+f28v_L12_s2.jpg	2	11	v	
+f28v_L12_s2.jpg	2	12	a	
+f28v_L12_s2.jpg	2	13	I	
+f28v_L12_s2.jpg	2	14	[C04]	
+f28v_L12_s2.jpg	2	15	[C01]	
+f28v_L12_s2.jpg	2	16	[C13]	
+f28v_L12_s2.jpg	2	17	[C01]	
+f28v_L12_s2.jpg	2	18	x	
+f28v_L12_s2.jpg	2	19	[C19]	
+f28v_L12_s2.jpg	2	20	[C13]	
+f28v_L12_s2.jpg	2	21	[C01]	
+f28v_L12_s2.jpg	2	22	s	
+f28v_L12_s2.jpg	2	23	o	
+f28v_L12_s2.jpg	2	24	f	
+f28v_L12_s2.jpg	2	25	[C01]	
+f28v_L12_s2.jpg	2	26	[C13]	
+f28v_L12_s2.jpg	2	27	[C01]	
+f28v_L12_s2.jpg	2	28	o	
+f28v_L12_s2.jpg	2	29	v	
+f28v_L12_s2.jpg	2	30	[C01]	
+f28v_L12_s2.jpg	2	31	[C11]	
+f28v_L12_s2.jpg	2	32	[C04]	
+f28v_L12_s2.jpg	2	33	T	
+f28v_L12_s2.jpg	2	34	[C10]	
+f28v_L12_s2.jpg	2	35	[C01]	line ends at crop right margin
+f28v_L13_s1.jpg	1	1	H	
+f28v_L13_s1.jpg	1	2	x	
+f28v_L13_s1.jpg	1	3	[C11]	
+f28v_L13_s1.jpg	1	4	o	
+f28v_L13_s1.jpg	1	5	I	
+f28v_L13_s1.jpg	1	6	[C11]	
+f28v_L13_s1.jpg	1	7	f	
+f28v_L13_s1.jpg	1	8	[C13]	
+f28v_L13_s1.jpg	1	9	n	
+f28v_L13_s1.jpg	1	10	v	
+f28v_L13_s1.jpg	1	11	[C11]	
+f28v_L13_s1.jpg	1	12	[C01]	
+f28v_L13_s1.jpg	1	13	n	
+f28v_L13_s1.jpg	1	14	v	line cut at crop edge, continues s2
+f28v_L13_s1.jpg	2	1	f	
+f28v_L13_s1.jpg	2	2	[C13]	
+f28v_L13_s1.jpg	2	3	f	
+f28v_L13_s1.jpg	2	4	[C04]	
+f28v_L13_s1.jpg	2	5	[C10]	
+f28v_L13_s1.jpg	2	6	o	
+f28v_L13_s1.jpg	2	7	[C10]	
+f28v_L13_s1.jpg	2	8	[C13]	
+f28v_L13_s1.jpg	2	9	x	
+f28v_L13_s1.jpg	2	10	f	
+f28v_L13_s1.jpg	2	11	[C09]	
+f28v_L13_s1.jpg	2	12	[C04]	
+f28v_L13_s1.jpg	2	13	[C11]	
+f28v_L13_s1.jpg	2	14	[C04]	
+f28v_L13_s1.jpg	2	15	[C13]	
+f28v_L13_s1.jpg	2	16	7	line cut at crop edge, continues s2
+f28v_L13_s2.jpg	1	1	[C13]	overlap-continuation, new tokens begin
+f28v_L13_s2.jpg	1	2	[C04]	
+f28v_L13_s2.jpg	1	3	[C13]	
+f28v_L13_s2.jpg	1	4	s	
+f28v_L13_s2.jpg	1	5	T	
+f28v_L13_s2.jpg	1	6	[C10]	
+f28v_L13_s2.jpg	1	7	[C07]	
+f28v_L13_s2.jpg	1	8	o	
+f28v_L13_s2.jpg	1	9	I	
+f28v_L13_s2.jpg	1	10	[C13]	
+f28v_L13_s2.jpg	1	11	[C11]	
+f28v_L13_s2.jpg	1	12	f	
+f28v_L13_s2.jpg	1	13	[C04]	
+f28v_L13_s2.jpg	1	14	7	
+f28v_L13_s2.jpg	1	15	f	
+f28v_L13_s2.jpg	1	16	[C01]	
+f28v_L13_s2.jpg	1	17	[C11]	
+f28v_L13_s2.jpg	1	18	o	
+f28v_L13_s2.jpg	1	19	[C24]	double-loop with dot/stem on top, new code
+f28v_L13_s2.jpg	1	20	o	
+f28v_L13_s2.jpg	1	21	[C11]	
+f28v_L13_s2.jpg	1	22	o	
+f28v_L13_s2.jpg	1	23	[C01]	
+f28v_L13_s2.jpg	1	24	[C13]	
+f28v_L13_s2.jpg	1	25	L	Latin capital L, new literal
+f28v_L13_s2.jpg	1	26	o	
+f28v_L13_s2.jpg	1	27	T	
+f28v_L13_s2.jpg	1	28	[C04]	
+f28v_L13_s2.jpg	1	29	[C10]	
+f28v_L13_s2.jpg	1	30	[C04]	
+f28v_L13_s2.jpg	1	31	[C07]	
+f28v_L13_s2.jpg	1	32	o	
+f28v_L13_s2.jpg	1	33	x	line ends at crop right margin
+f28v_L13_s2.jpg	2	1	[C10]	overlap-continuation, new tokens begin
+f28v_L13_s2.jpg	2	2	[C04]	
+f28v_L13_s2.jpg	2	3	ɟ	small tick mark, kept close to C11
+f28v_L13_s2.jpg	2	4	7	
+f28v_L13_s2.jpg	2	5	[C10]	
+f28v_L13_s2.jpg	2	6	[C11]	
+f28v_L13_s2.jpg	2	7	T	
+f28v_L13_s2.jpg	2	8	ρ	
+f28v_L13_s2.jpg	2	9	v	
+f28v_L13_s2.jpg	2	10	[C10]	
+f28v_L13_s2.jpg	2	11	[C01]	
+f28v_L13_s2.jpg	2	12	H	
+f28v_L13_s2.jpg	2	13	[C13]	
+f28v_L13_s2.jpg	2	14	v	
+f28v_L13_s2.jpg	2	15	[C10]	
+f28v_L13_s2.jpg	2	16	[C11]	
+f28v_L13_s2.jpg	2	17	[C13]	
+f28v_L13_s2.jpg	2	18	[C01]	
+f28v_L13_s2.jpg	2	19	[C13]	
+f28v_L13_s2.jpg	2	20	[C01]	
+f28v_L13_s2.jpg	2	21	v	
+f28v_L13_s2.jpg	2	22	E	
+f28v_L13_s2.jpg	2	23	n	
+f28v_L13_s2.jpg	2	24	v	
+f28v_L13_s2.jpg	2	25	[C11]	
+f28v_L13_s2.jpg	2	26	[C01]	
+f28v_L13_s2.jpg	2	27	[C13]	
+f28v_L13_s2.jpg	2	28	[C10]	
+f28v_L13_s2.jpg	2	29	o	
+f28v_L13_s2.jpg	2	30	v	
+f28v_L13_s2.jpg	2	31	[C04]	
+f28v_L13_s2.jpg	2	32	[C10]	
+f28v_L13_s2.jpg	2	33	7	
+f28v_L13_s2.jpg	2	34	[C10]	
+f28v_L13_s2.jpg	2	35	n	
+f28v_L13_s2.jpg	2	36	v	
+f28v_L13_s2.jpg	2	37	x	
+f28v_L13_s2.jpg	2	38	[C01]	
+f28v_L13_s2.jpg	2	39	[C01]	
+f28v_L13_s2.jpg	2	40	o	
+f28v_L13_s2.jpg	2	41	I	line ends at crop right margin
+f28v_L14_s1.jpg	1	1	7	
+f28v_L14_s1.jpg	1	2	[C10]	
+f28v_L14_s1.jpg	1	3	[C04]	
+f28v_L14_s1.jpg	1	4	I	
+f28v_L14_s1.jpg	1	5	H	
+f28v_L14_s1.jpg	1	6	z	
+f28v_L14_s1.jpg	1	7	I	
+f28v_L14_s1.jpg	1	8	[C04]	
+f28v_L14_s1.jpg	1	9	n	
+f28v_L14_s1.jpg	1	10	v	
+f28v_L14_s1.jpg	1	11	[C11]	
+f28v_L14_s1.jpg	1	12	[C01]	
+f28v_L14_s1.jpg	1	13	o	
+f28v_L14_s1.jpg	1	14	s	
+f28v_L14_s1.jpg	1	15	[C13]	
+f28v_L14_s1.jpg	1	16	f	line cut at crop edge, continues s2
+f28v_L14_s1.jpg	2	1	z	
+f28v_L14_s1.jpg	2	2	I	
+f28v_L14_s1.jpg	2	3	[C04]	
+f28v_L14_s1.jpg	2	4	T	
+f28v_L14_s1.jpg	2	5	o	
+f28v_L14_s1.jpg	2	6	[C10]	
+f28v_L14_s1.jpg	2	7	[C13]	
+f28v_L14_s1.jpg	2	8	T	
+f28v_L14_s1.jpg	2	9	[C10]	
+f28v_L14_s1.jpg	2	10	z	
+f28v_L14_s1.jpg	2	11	T	
+f28v_L14_s1.jpg	2	12	[C14]	
+f28v_L14_s1.jpg	2	13	T	
+f28v_L14_s1.jpg	2	14	[C10]	
+f28v_L14_s1.jpg	2	15	v	line cut at crop edge, continues s2
+f28v_L14_s2.jpg	1	1	o	overlap-continuation, new tokens begin
+f28v_L14_s2.jpg	1	2	s	
+f28v_L14_s2.jpg	1	3	[C13]	
+f28v_L14_s2.jpg	1	4	f	
+f28v_L14_s2.jpg	1	5	x	
+f28v_L14_s2.jpg	1	6	[C13]	
+f28v_L14_s2.jpg	1	7	[C10]	
+f28v_L14_s2.jpg	1	8	[C13]	
+f28v_L14_s2.jpg	1	9	n	
+f28v_L14_s2.jpg	1	10	v	
+f28v_L14_s2.jpg	1	11	[C11]	
+f28v_L14_s2.jpg	1	12	[C04]	
+f28v_L14_s2.jpg	1	13	[C13]	
+f28v_L14_s2.jpg	1	14	f	
+f28v_L14_s2.jpg	1	15	z	
+f28v_L14_s2.jpg	1	16	E	
+f28v_L14_s2.jpg	1	17	[C13]	
+f28v_L14_s2.jpg	1	18	f	
+f28v_L14_s2.jpg	1	19	[C04]	
+f28v_L14_s2.jpg	1	20	[C10]	
+f28v_L14_s2.jpg	1	21	[C11]	
+f28v_L14_s2.jpg	1	22	[C10]	
+f28v_L14_s2.jpg	1	23	[C11]	
+f28v_L14_s2.jpg	1	24	[C13]	
+f28v_L14_s2.jpg	1	25	f	
+f28v_L14_s2.jpg	1	26	[C10]	
+f28v_L14_s2.jpg	1	27	7	
+f28v_L14_s2.jpg	1	28	f	
+f28v_L14_s2.jpg	1	29	x	
+f28v_L14_s2.jpg	1	30	[C04]	
+f28v_L14_s2.jpg	1	31	o	
+f28v_L14_s2.jpg	1	32	[C09]	
+f28v_L14_s2.jpg	1	33	E	
+f28v_L14_s2.jpg	1	34	[C13]	
+f28v_L14_s2.jpg	1	35	f	
+f28v_L14_s2.jpg	1	36	[C11]	
+f28v_L14_s2.jpg	1	37	[C01]	
+f28v_L14_s2.jpg	1	38	v	
+f28v_L14_s2.jpg	1	39	E	
+f28v_L14_s2.jpg	1	40	[C10]	
+f28v_L14_s2.jpg	1	41	[C11]	
+f28v_L14_s2.jpg	1	42	s	
+f28v_L14_s2.jpg	1	43	E	line ends at crop right margin
+f28v_L14_s2.jpg	2	1	[C10]	overlap-continuation, new tokens begin
+f28v_L14_s2.jpg	2	2	o	
+f28v_L14_s2.jpg	2	3	s	
+f28v_L14_s2.jpg	2	4	[C01]	
+f28v_L14_s2.jpg	2	5	x	
+f28v_L14_s2.jpg	2	6	[C13]	
+f28v_L14_s2.jpg	2	7	[C10]	
+f28v_L14_s2.jpg	2	8	[C04]	
+f28v_L14_s2.jpg	2	9	[C11]	
+f28v_L14_s2.jpg	2	10	7	
+f28v_L14_s2.jpg	2	11	[C04]	
+f28v_L14_s2.jpg	2	12	n	
+f28v_L14_s2.jpg	2	13	v	
+f28v_L14_s2.jpg	2	14	[C11]	
+f28v_L14_s2.jpg	2	15	[C09]	
+f28v_L14_s2.jpg	2	16	E	
+f28v_L14_s2.jpg	2	17	o	
+f28v_L14_s2.jpg	2	18	[C09]	
+f28v_L14_s2.jpg	2	19	R	
+f28v_L14_s2.jpg	2	20	f	
+f28v_L14_s2.jpg	2	21	T	
+f28v_L14_s2.jpg	2	22	z	
+f28v_L14_s2.jpg	2	23	[C04]	
+f28v_L14_s2.jpg	2	24	[C13]	
+f28v_L14_s2.jpg	2	25	f	
+f28v_L14_s2.jpg	2	26	[C04]	
+f28v_L14_s2.jpg	2	27	o	
+f28v_L14_s2.jpg	2	28	[C04]	
+f28v_L14_s2.jpg	2	29	7	
+f28v_L14_s2.jpg	2	30	[C04]	
+f28v_L14_s2.jpg	2	31	o	
+f28v_L14_s2.jpg	2	32	v	
+f28v_L14_s2.jpg	2	33	[C04]	
+f28v_L14_s2.jpg	2	34	[C01]	
+f28v_L14_s2.jpg	2	35	[C11]	
+f28v_L14_s2.jpg	2	36	[C01]	
+f28v_L14_s2.jpg	2	37	I	
+f28v_L14_s2.jpg	2	38	[C04]	
+f28v_L14_s2.jpg	2	39	[C01]	line ends at crop right margin
+f28v_L15_s1.jpg	1	1	[C13]	
+f28v_L15_s1.jpg	1	2	[C08]	
+f28v_L15_s1.jpg	1	3	v	
+f28v_L15_s1.jpg	1	4	[C11]	
+f28v_L15_s1.jpg	1	5	[C13]	
+f28v_L15_s1.jpg	1	6	[C10]	
+f28v_L15_s1.jpg	1	7	z	
+f28v_L15_s1.jpg	1	8	E	
+f28v_L15_s1.jpg	1	9	[C13]	
+f28v_L15_s1.jpg	1	10	f	
+f28v_L15_s1.jpg	1	11	[C04]	
+f28v_L15_s1.jpg	1	12	T	
+f28v_L15_s1.jpg	1	13	o	
+f28v_L15_s1.jpg	1	14	[C10]	
+f28v_L15_s1.jpg	1	15	[C09]	line cut at crop edge, continues s2
+f28v_L15_s1.jpg	2	1	f	
+f28v_L15_s1.jpg	2	2	[C13]	
+f28v_L15_s1.jpg	2	3	[C10]	
+f28v_L15_s1.jpg	2	4	T	
+f28v_L15_s1.jpg	2	5	[C10]	
+f28v_L15_s1.jpg	2	6	E	
+f28v_L15_s1.jpg	2	7	[C13]	
+f28v_L15_s1.jpg	2	8	f	
+f28v_L15_s1.jpg	2	9	[C04]	
+f28v_L15_s1.jpg	2	10	T	
+f28v_L15_s1.jpg	2	11	H	
+f28v_L15_s1.jpg	2	12	[C10]	
+f28v_L15_s1.jpg	2	13	[C01]	line cut at crop edge, continues s2
+f28v_L15_s2.jpg	1	1	[C13]	overlap-continuation, new tokens begin
+f28v_L15_s2.jpg	1	2	n	
+f28v_L15_s2.jpg	1	3	v	
+f28v_L15_s2.jpg	1	4	x	
+f28v_L15_s2.jpg	1	5	[C01]	
+f28v_L15_s2.jpg	1	6	[C11]	
+f28v_L15_s2.jpg	1	7	R	
+f28v_L15_s2.jpg	1	8	z	
+f28v_L15_s2.jpg	1	9	v	
+f28v_L15_s2.jpg	1	10	G	Latin capital G, new literal (loop with hook)
+f28v_L15_s2.jpg	1	11	z	
+f28v_L15_s2.jpg	1	12	I	
+f28v_L15_s2.jpg	1	13	[C04]	
+f28v_L15_s2.jpg	1	14	7	
+f28v_L15_s2.jpg	1	15	f	
+f28v_L15_s2.jpg	1	16	[C10]	
+f28v_L15_s2.jpg	1	17	[C11]	
+f28v_L15_s2.jpg	1	18	x	
+f28v_L15_s2.jpg	1	19	[C11]	
+f28v_L15_s2.jpg	1	20	f	
+f28v_L15_s2.jpg	1	21	z	
+f28v_L15_s2.jpg	1	22	[C01]	
+f28v_L15_s2.jpg	1	23	I	
+f28v_L15_s2.jpg	1	24	[C01]	
+f28v_L15_s2.jpg	1	25	[C01]	
+f28v_L15_s2.jpg	1	26	I	
+f28v_L15_s2.jpg	1	27	[C09]	
+f28v_L15_s2.jpg	1	28	[C24]	
+f28v_L15_s2.jpg	1	29	[C11]	
+f28v_L15_s2.jpg	1	30	7	
+f28v_L15_s2.jpg	1	31	[C04]	
+f28v_L15_s2.jpg	1	32	n	
+f28v_L15_s2.jpg	1	33	v	
+f28v_L15_s2.jpg	1	34	x	line ends at crop right margin
+f28v_L15_s2.jpg	2	1	[C13]	overlap-continuation, new tokens begin
+f28v_L15_s2.jpg	2	2	v	
+f28v_L15_s2.jpg	2	3	[C01]	
+f28v_L15_s2.jpg	2	4	[C13]	
+f28v_L15_s2.jpg	2	5	f	
+f28v_L15_s2.jpg	2	6	[C01]	
+f28v_L15_s2.jpg	2	7	v	
+f28v_L15_s2.jpg	2	8	[C01]	
+f28v_L15_s2.jpg	2	9	[C11]	
+f28v_L15_s2.jpg	2	10	[C01]	
+f28v_L15_s2.jpg	2	11	7	
+f28v_L15_s2.jpg	2	12	[C04]	
+f28v_L15_s2.jpg	2	13	n	
+f28v_L15_s2.jpg	2	14	v	
+f28v_L15_s2.jpg	2	15	[C11]	
+f28v_L15_s2.jpg	2	16	n	
+f28v_L15_s2.jpg	2	17	v	
+f28v_L15_s2.jpg	2	18	[C01]	
+f28v_L15_s2.jpg	2	19	[C04]	
+f28v_L15_s2.jpg	2	20	[C19]	
+f28v_L15_s2.jpg	2	21	[C11]	
+f28v_L15_s2.jpg	2	22	f	
+f28v_L15_s2.jpg	2	23	x	
+f28v_L15_s2.jpg	2	24	[C10]	
+f28v_L15_s2.jpg	2	25	[C13]	
+f28v_L15_s2.jpg	2	26	f	
+f28v_L15_s2.jpg	2	27	[C07]	
+f28v_L15_s2.jpg	2	28	[C11]	
+f28v_L15_s2.jpg	2	29	[C01]	
+f28v_L15_s2.jpg	2	30	z	
+f28v_L15_s2.jpg	2	31	I	
+f28v_L15_s2.jpg	2	32	[C04]	
+f28v_L15_s2.jpg	2	33	[C10]	
+f28v_L15_s2.jpg	2	34	[C11]	
+f28v_L15_s2.jpg	2	35	x	
+f28v_L15_s2.jpg	2	36	[C11]	
+f28v_L15_s2.jpg	2	37	f	
+f28v_L15_s2.jpg	2	38	[C13]	
+f28v_L15_s2.jpg	2	39	v	
+f28v_L15_s2.jpg	2	40	[C01]	line ends at crop right margin
+f28v_L16_s1.jpg	1	1	(dash)	insertion/correction dash before line, not a cipher sign
+f28v_L16_s1.jpg	1	2	f	
+f28v_L16_s1.jpg	1	3	[C13]	
+f28v_L16_s1.jpg	1	4	[C01]	
+f28v_L16_s1.jpg	1	5	o	
+f28v_L16_s1.jpg	1	6	T	
+f28v_L16_s1.jpg	1	7	[C04]	
+f28v_L16_s1.jpg	1	8	v	
+f28v_L16_s1.jpg	1	9	o	dash/hyphen mark precedes, not tokenised
+f28v_L16_s1.jpg	1	10	z	
+f28v_L16_s1.jpg	1	11	I	
+f28v_L16_s1.jpg	1	12	[C04]	
+f28v_L16_s1.jpg	1	13	[C01]	
+f28v_L16_s1.jpg	1	14	z	
+f28v_L16_s1.jpg	1	15	f	
+f28v_L16_s1.jpg	1	16	[C11]	line cut at crop edge, continues s2
+f28v_L16_s1.jpg	2	1	z	
+f28v_L16_s1.jpg	2	2	I	
+f28v_L16_s1.jpg	2	3	[C04]	
+f28v_L16_s1.jpg	2	4	[C07]	
+f28v_L16_s1.jpg	2	5	[C22]	
+f28v_L16_s1.jpg	2	6	[C13]	
+f28v_L16_s1.jpg	2	7	[C09]	
+f28v_L16_s1.jpg	2	8	[C04]	
+f28v_L16_s1.jpg	2	9	[C11]	
+f28v_L16_s1.jpg	2	10	f	
+f28v_L16_s1.jpg	2	11	I	
+f28v_L16_s1.jpg	2	12	[C10]	
+f28v_L16_s1.jpg	2	13	[C04]	
+f28v_L16_s1.jpg	2	14	z	
+f28v_L16_s1.jpg	2	15	v	line cut at crop edge, continues s2
+f28v_L16_s2.jpg	1	1	v	overlap-continuation, new tokens begin
+f28v_L16_s2.jpg	1	2	[C11]	
+f28v_L16_s2.jpg	1	3	s	
+f28v_L16_s2.jpg	1	4	[C13]	
+f28v_L16_s2.jpg	1	5	f	
+f28v_L16_s2.jpg	1	6	[C04]	
+f28v_L16_s2.jpg	1	7	o	
+f28v_L16_s2.jpg	1	8	I	
+f28v_L16_s2.jpg	1	9	f	
+f28v_L16_s2.jpg	1	10	[C10]	
+f28v_L16_s2.jpg	1	11	I	
+f28v_L16_s2.jpg	1	12	s	
+f28v_L16_s2.jpg	1	13	[C01]	
+f28v_L16_s2.jpg	1	14	I	
+f28v_L16_s2.jpg	1	15	f	
+f28v_L16_s2.jpg	1	16	[C04]	
+f28v_L16_s2.jpg	1	17	[C11]	
+f28v_L16_s2.jpg	1	18	x	
+f28v_L16_s2.jpg	1	19	[C10]	
+f28v_L16_s2.jpg	1	20	f	
+f28v_L16_s2.jpg	1	21	[C13]	
+f28v_L16_s2.jpg	1	22	T	
+f28v_L16_s2.jpg	1	23	z	
+f28v_L16_s2.jpg	1	24	H	
+f28v_L16_s2.jpg	1	25	[C13]	
+f28v_L16_s2.jpg	1	26	[C01]	
+f28v_L16_s2.jpg	1	27	[C11]	
+f28v_L16_s2.jpg	1	28	[C01]	
+f28v_L16_s2.jpg	1	29	7	
+f28v_L16_s2.jpg	1	30	[C04]	
+f28v_L16_s2.jpg	1	31	n	
+f28v_L16_s2.jpg	1	32	v	
+f28v_L16_s2.jpg	1	33	x	
+f28v_L16_s2.jpg	1	34	[C10]	line ends at crop right margin
+f28v_L16_s2.jpg	2	1	I	overlap-continuation, new tokens begin
+f28v_L16_s2.jpg	2	2	[C01]	
+f28v_L16_s2.jpg	2	3	[C04]	
+f28v_L16_s2.jpg	2	4	z	
+f28v_L16_s2.jpg	2	5	v	
+f28v_L16_s2.jpg	2	6	[C10]	
+f28v_L16_s2.jpg	2	7	I	
+f28v_L16_s2.jpg	2	8	z	
+f28v_L16_s2.jpg	2	9	v	
+f28v_L16_s2.jpg	2	10	[C01]	
+f28v_L16_s2.jpg	2	11	[C10]	
+f28v_L16_s2.jpg	2	12	[C11]	
+f28v_L16_s2.jpg	2	13	[C01]	
+f28v_L16_s2.jpg	2	14	z	
+f28v_L16_s2.jpg	2	15	H	
+f28v_L16_s2.jpg	2	16	[C13]	
+f28v_L16_s2.jpg	2	17	o	
+f28v_L16_s2.jpg	2	18	[C01]	
+f28v_L16_s2.jpg	2	19	s	
+f28v_L16_s2.jpg	2	20	[C13]	
+f28v_L16_s2.jpg	2	21	7	
+f28v_L16_s2.jpg	2	22	o	
+f28v_L16_s2.jpg	2	23	v	
+f28v_L16_s2.jpg	2	24	[C01]	
+f28v_L16_s2.jpg	2	25	v	
+f28v_L16_s2.jpg	2	26	[C09]	
+f28v_L16_s2.jpg	2	27	E	
+f28v_L16_s2.jpg	2	28	[C13]	
+f28v_L16_s2.jpg	2	29	[C01]	
+f28v_L16_s2.jpg	2	30	[C11]	
+f28v_L16_s2.jpg	2	31	[C08]	hash-like double-cross mark, kept as C08 variant
+f28v_L16_s2.jpg	2	32	n	
+f28v_L16_s2.jpg	2	33	v	
+f28v_L16_s2.jpg	2	34	x	
+f28v_L16_s2.jpg	2	35	[C01]	
+f28v_L16_s2.jpg	2	36	v	
+f28v_L16_s2.jpg	2	37	E	
+f28v_L16_s2.jpg	2	38	[C10]	
+f28v_L16_s2.jpg	2	39	[C01]	
+f28v_L16_s2.jpg	2	40	z	line ends at crop right margin
+f28v_L17_s1.jpg	1	1	R	
+f28v_L17_s1.jpg	1	2	f	
+f28v_L17_s1.jpg	1	3	[C11]	
+f28v_L17_s1.jpg	1	4	[C01]	
+f28v_L17_s1.jpg	1	5	[C13]	
+f28v_L17_s1.jpg	1	6	[C10]	
+f28v_L17_s1.jpg	1	7	T	
+f28v_L17_s1.jpg	1	8	[C11]	
+f28v_L17_s1.jpg	1	9	f	
+f28v_L17_s1.jpg	1	10	[C09]	
+f28v_L17_s1.jpg	1	11	[C13]	
+f28v_L17_s1.jpg	1	12	[C11]	
+f28v_L17_s1.jpg	1	13	[C01]	
+f28v_L17_s1.jpg	1	14	o	
+f28v_L17_s1.jpg	1	15	f	line cut at crop edge, continues s2
+f28v_L17_s1.jpg	2	1	[C10]	
+f28v_L17_s1.jpg	2	2	[C04]	
+f28v_L17_s1.jpg	2	3	[C13]	
+f28v_L17_s1.jpg	2	4	[C10]	
+f28v_L17_s1.jpg	2	5	z	
+f28v_L17_s1.jpg	2	6	[C01]	
+f28v_L17_s1.jpg	2	7	[C04]	
+f28v_L17_s1.jpg	2	8	[C11]	
+f28v_L17_s1.jpg	2	9	n	
+f28v_L17_s1.jpg	2	10	v	
+f28v_L17_s1.jpg	2	11	[C11]	
+f28v_L17_s1.jpg	2	12	[C10]	
+f28v_L17_s1.jpg	2	13	[C25]	figure-9/hook loop, new code
+f28v_L17_s1.jpg	2	14	[C07]	
+f28v_L17_s1.jpg	2	15	o	
+f28v_L17_s1.jpg	2	16	I	
+f28v_L17_s1.jpg	2	17	[C10]	line cut at crop edge, continues s2
+f28v_L17_s2.jpg	1	1	[C01]	overlap-continuation, new tokens begin
+f28v_L17_s2.jpg	1	2	o	
+f28v_L17_s2.jpg	1	3	f	
+f28v_L17_s2.jpg	1	4	[C01]	
+f28v_L17_s2.jpg	1	5	[C13]	
+f28v_L17_s2.jpg	1	6	7	
+f28v_L17_s2.jpg	1	7	[C04]	
+f28v_L17_s2.jpg	1	8	x	
+f28v_L17_s2.jpg	1	9	f	
+f28v_L17_s2.jpg	1	10	[C10]	
+f28v_L17_s2.jpg	1	11	v	
+f28v_L17_s2.jpg	1	12	o	
+f28v_L17_s2.jpg	1	13	a	
+f28v_L17_s2.jpg	1	14	[C10]	
+f28v_L17_s2.jpg	1	15	[C04]	
+f28v_L17_s2.jpg	1	16	o	
+f28v_L17_s2.jpg	1	17	[C19]	
+f28v_L17_s2.jpg	1	18	[C01]	
+f28v_L17_s2.jpg	1	19	[C13]	
+f28v_L17_s2.jpg	1	20	7	
+f28v_L17_s2.jpg	1	21	[C04]	
+f28v_L17_s2.jpg	1	22	n	
+f28v_L17_s2.jpg	1	23	v	
+f28v_L17_s2.jpg	1	24	[C11]	
+f28v_L17_s2.jpg	1	25	[C10]	
+f28v_L17_s2.jpg	1	26	I	
+f28v_L17_s2.jpg	1	27	ρ	
+f28v_L17_s2.jpg	1	28	T	
+f28v_L17_s2.jpg	1	29	[C13]	
+f28v_L17_s2.jpg	1	30	[C10]	
+f28v_L17_s2.jpg	1	31	[C13]	
+f28v_L17_s2.jpg	1	32	v	
+f28v_L17_s2.jpg	1	33	[C11]	
+f28v_L17_s2.jpg	1	34	[C01]	
+f28v_L17_s2.jpg	1	35	z	
+f28v_L17_s2.jpg	1	36	I	
+f28v_L17_s2.jpg	1	37	[C04]	
+f28v_L17_s2.jpg	1	38	7	
+f28v_L17_s2.jpg	1	39	f	line ends at crop right margin
+f28v_L17_s2.jpg	2	1	z	overlap-continuation, new tokens begin
+f28v_L17_s2.jpg	2	2	E	
+f28v_L17_s2.jpg	2	3	[C13]	
+f28v_L17_s2.jpg	2	4	f	
+f28v_L17_s2.jpg	2	5	[C04]	
+f28v_L17_s2.jpg	2	6	[C19]	
+f28v_L17_s2.jpg	2	7	I	
+f28v_L17_s2.jpg	2	8	[C11]	
+f28v_L17_s2.jpg	2	9	f	
+f28v_L17_s2.jpg	2	10	[C09]	
+f28v_L17_s2.jpg	2	11	z	
+f28v_L17_s2.jpg	2	12	s	
+f28v_L17_s2.jpg	2	13	T	
+f28v_L17_s2.jpg	2	14	[C04]	
+f28v_L17_s2.jpg	2	15	[C11]	
+f28v_L17_s2.jpg	2	16	n	
+f28v_L17_s2.jpg	2	17	v	
+f28v_L17_s2.jpg	2	18	x	
+f28v_L17_s2.jpg	2	19	[C01]	
+f28v_L17_s2.jpg	2	20	[C01]	
+f28v_L17_s2.jpg	2	21	[C13]	
+f28v_L17_s2.jpg	2	22	[C10]	
+f28v_L17_s2.jpg	2	23	R	
+f28v_L17_s2.jpg	2	24	z	
+f28v_L17_s2.jpg	2	25	v	
+f28v_L17_s2.jpg	2	26	[C01]	
+f28v_L17_s2.jpg	2	27	[C13]	
+f28v_L17_s2.jpg	2	28	A	
+f28v_L17_s2.jpg	2	29	z	
+f28v_L17_s2.jpg	2	30	I	
+f28v_L17_s2.jpg	2	31	[C04]	
+f28v_L17_s2.jpg	2	32	[C01]	
+f28v_L17_s2.jpg	2	33	[C13]	
+f28v_L17_s2.jpg	2	34	x	
+f28v_L17_s2.jpg	2	35	[C01]	
+f28v_L17_s2.jpg	2	36	I	
+f28v_L17_s2.jpg	2	37	A	line ends at crop right margin
+f28v_L18_s1.jpg	1	1	[C10]	
+f28v_L18_s1.jpg	1	2	[C01]	
+f28v_L18_s1.jpg	1	3	[C01]	
+f28v_L18_s1.jpg	1	4	f	
+f28v_L18_s1.jpg	1	5	[C13]	
+f28v_L18_s1.jpg	1	6	[C01]	
+f28v_L18_s1.jpg	1	7	[C11]	
+f28v_L18_s1.jpg	1	8	[C13]	
+f28v_L18_s1.jpg	1	9	v	
+f28v_L18_s1.jpg	1	10	[C01]	
+f28v_L18_s1.jpg	1	11	[C13]	
+f28v_L18_s1.jpg	1	12	[C10]	
+f28v_L18_s1.jpg	1	13	[C04]	line cut at crop edge, continues s2
+f28v_L18_s1.jpg	2	1	R	
+f28v_L18_s1.jpg	2	2	[C13]	
+f28v_L18_s1.jpg	2	3	(dash)	
+f28v_L18_s1.jpg	2	4	o	
+f28v_L18_s1.jpg	2	5	a	
+f28v_L18_s1.jpg	2	6	E	
+f28v_L18_s1.jpg	2	7	[C13]	
+f28v_L18_s1.jpg	2	8	f	
+f28v_L18_s1.jpg	2	9	[C04]	
+f28v_L18_s1.jpg	2	10	[C09]	
+f28v_L18_s1.jpg	2	11	[C01]	
+f28v_L18_s1.jpg	2	12	[C13]	
+f28v_L18_s1.jpg	2	13	I	
+f28v_L18_s1.jpg	2	14	ρ	
+f28v_L18_s1.jpg	2	15	[C14]	
+f28v_L18_s1.jpg	2	16	[C10]	
+f28v_L18_s1.jpg	2	17	ρ	line cut at crop edge, continues s2
+f28v_L18_s2.jpg	1	1	o	overlap-continuation, new tokens begin
+f28v_L18_s2.jpg	1	2	n	
+f28v_L18_s2.jpg	1	3	v	
+f28v_L18_s2.jpg	1	4	z	
+f28v_L18_s2.jpg	1	5	E	
+f28v_L18_s2.jpg	1	6	x	
+f28v_L18_s2.jpg	1	7	[C10]	
+f28v_L18_s2.jpg	1	8	z	
+f28v_L18_s2.jpg	1	9	I	
+f28v_L18_s2.jpg	1	10	[C04]	
+f28v_L18_s2.jpg	1	11	ρ	
+f28v_L18_s2.jpg	1	12	[C13]	
+f28v_L18_s2.jpg	1	13	[C04]	
+f28v_L18_s2.jpg	1	14	[C11]	
+f28v_L18_s2.jpg	1	15	s	
+f28v_L18_s2.jpg	1	16	T	
+f28v_L18_s2.jpg	1	17	[C10]	
+f28v_L18_s2.jpg	1	18	ρ	
+f28v_L18_s2.jpg	1	19	[C13]	
+f28v_L18_s2.jpg	1	20	T	
+f28v_L18_s2.jpg	1	21	ρ	
+f28v_L18_s2.jpg	1	22	v	
+f28v_L18_s2.jpg	1	23	[C10]	
+f28v_L18_s2.jpg	1	24	ρ	
+f28v_L18_s2.jpg	1	25	R	
+f28v_L18_s2.jpg	1	26	f	
+f28v_L18_s2.jpg	1	27	o	
+f28v_L18_s2.jpg	1	28	f	
+f28v_L18_s2.jpg	1	29	7	
+f28v_L18_s2.jpg	1	30	[C04]	
+f28v_L18_s2.jpg	1	31	n	
+f28v_L18_s2.jpg	1	32	v	
+f28v_L18_s2.jpg	1	33	[C11]	
+f28v_L18_s2.jpg	1	34	n	
+f28v_L18_s2.jpg	1	35	v	
+f28v_L18_s2.jpg	1	36	ρ	
+f28v_L18_s2.jpg	1	37	f	
+f28v_L18_s2.jpg	1	38	[C04]	
+f28v_L18_s2.jpg	1	39	x	line ends at crop right margin
+f28v_L18_s2.jpg	2	1	I	overlap-continuation, new tokens begin
+f28v_L18_s2.jpg	2	2	ρ	
+f28v_L18_s2.jpg	2	3	[C14]	
+f28v_L18_s2.jpg	2	4	[C10]	
+f28v_L18_s2.jpg	2	5	[C11]	
+f28v_L18_s2.jpg	2	6	A	
+f28v_L18_s2.jpg	2	7	z	
+f28v_L18_s2.jpg	2	8	E	
+f28v_L18_s2.jpg	2	9	[C13]	
+f28v_L18_s2.jpg	2	10	f	
+f28v_L18_s2.jpg	2	11	[C04]	
+f28v_L18_s2.jpg	2	12	[C25]	
+f28v_L18_s2.jpg	2	13	[C04]	
+f28v_L18_s2.jpg	2	14	[C01]	
+f28v_L18_s2.jpg	2	15	o	
+f28v_L18_s2.jpg	2	16	I	
+f28v_L18_s2.jpg	2	17	f	
+f28v_L18_s2.jpg	2	18	[C09]	
+f28v_L18_s2.jpg	2	19	[C14]	
+f28v_L18_s2.jpg	2	20	ρ	
+f28v_L18_s2.jpg	2	21	[C13]	
+f28v_L18_s2.jpg	2	22	T	
+f28v_L18_s2.jpg	2	23	[C01]	
+f28v_L18_s2.jpg	2	24	[C11]	
+f28v_L18_s2.jpg	2	25	f	
+f28v_L18_s2.jpg	2	26	ρ	
+f28v_L18_s2.jpg	2	27	[C01]	
+f28v_L18_s2.jpg	2	28	[C13]	
+f28v_L18_s2.jpg	2	29	o	
+f28v_L18_s2.jpg	2	30	v	
+f28v_L18_s2.jpg	2	31	7	
+f28v_L18_s2.jpg	2	32	[C09]	
+f28v_L18_s2.jpg	2	33	ρ	
+f28v_L18_s2.jpg	2	34	[C13]	
+f28v_L18_s2.jpg	2	35	[C04]	
+f28v_L18_s2.jpg	2	36	v	
+f28v_L18_s2.jpg	2	37	[C01]	
+f28v_L18_s2.jpg	2	38	[C09]	
+f28v_L18_s2.jpg	2	39	ρ	
+f28v_L18_s2.jpg	2	40	[C13]	
+f28v_L18_s2.jpg	2	41	T	line ends at crop right margin
+f28v_L19_s1.jpg	1	1	x	
+f28v_L19_s1.jpg	1	2	E	
+f28v_L19_s1.jpg	1	3	n	
+f28v_L19_s1.jpg	1	4	v	
+f28v_L19_s1.jpg	1	5	x	
+f28v_L19_s1.jpg	1	6	[C14]	
+f28v_L19_s1.jpg	1	7	[C13]	
+f28v_L19_s1.jpg	1	8	x	
+f28v_L19_s1.jpg	1	9	v	
+f28v_L19_s1.jpg	1	10	[C11]	
+f28v_L19_s1.jpg	1	11	[C13]	
+f28v_L19_s1.jpg	1	12	f	line cut at crop edge, continues s2; most of crop area above is blank margin
+f28v_L19_s1.jpg	2	1	[C18]	
+f28v_L19_s1.jpg	2	2	z	
+f28v_L19_s1.jpg	2	3	v	
+f28v_L19_s1.jpg	2	4	G	
+f28v_L19_s1.jpg	2	5	x	
+f28v_L19_s1.jpg	2	6	x	
+f28v_L19_s1.jpg	2	7	[C04]	
+f28v_L19_s1.jpg	2	8	T	
+f28v_L19_s1.jpg	2	9	o	
+f28v_L19_s1.jpg	2	10	E	
+f28v_L19_s1.jpg	2	11	[C13]	
+f28v_L19_s1.jpg	2	12	[C01]	
+f28v_L19_s1.jpg	2	13	[C09]	
+f28v_L19_s1.jpg	2	14	s	
+f28v_L19_s1.jpg	2	15	T	line cut at crop edge, continues s2
+f28v_L19_s2.jpg	1	1	[C04]	overlap-continuation, new tokens begin
+f28v_L19_s2.jpg	1	2	ρ	
+f28v_L19_s2.jpg	1	3	o	
+f28v_L19_s2.jpg	1	4	f	
+f28v_L19_s2.jpg	1	5	T	
+f28v_L19_s2.jpg	1	6	o	
+f28v_L19_s2.jpg	1	7	H	
+f28v_L19_s2.jpg	1	8	[C13]	
+f28v_L19_s2.jpg	1	9	n	
+f28v_L19_s2.jpg	1	10	v	
+f28v_L19_s2.jpg	1	11	x	
+f28v_L19_s2.jpg	1	12	[C13]	
+f28v_L19_s2.jpg	1	13	[C10]	
+f28v_L19_s2.jpg	1	14	ρ	
+f28v_L19_s2.jpg	1	15	[C13]	
+f28v_L19_s2.jpg	1	16	[C09]	
+f28v_L19_s2.jpg	1	17	I	
+f28v_L19_s2.jpg	1	18	f	
+f28v_L19_s2.jpg	1	19	n	
+f28v_L19_s2.jpg	1	20	[C09]	
+f28v_L19_s2.jpg	1	21	[C13]	
+f28v_L19_s2.jpg	1	22	f	
+f28v_L19_s2.jpg	1	23	[C10]	
+f28v_L19_s2.jpg	1	24	S	
+f28v_L19_s2.jpg	1	25	I	
+f28v_L19_s2.jpg	1	26	ρ	
+f28v_L19_s2.jpg	1	27	ρ	
+f28v_L19_s2.jpg	1	28	v	
+f28v_L19_s2.jpg	1	29	[C09]	
+f28v_L19_s2.jpg	1	30	[C04]	
+f28v_L19_s2.jpg	1	31	[C14]	
+f28v_L19_s2.jpg	1	32	n	
+f28v_L19_s2.jpg	1	33	v	
+f28v_L19_s2.jpg	1	34	x	
+f28v_L19_s2.jpg	1	35	ρ	
+f28v_L19_s2.jpg	1	36	ρ	
+f28v_L19_s2.jpg	1	37	[C13]	line ends at crop right margin
+f28v_L19_s2.jpg	2	1	[C09]	overlap-continuation, new tokens begin
+f28v_L19_s2.jpg	2	2	s	
+f28v_L19_s2.jpg	2	3	T	
+f28v_L19_s2.jpg	2	4	[C04]	
+f28v_L19_s2.jpg	2	5	o	
+f28v_L19_s2.jpg	2	6	f	
+f28v_L19_s2.jpg	2	7	[C04]	
+f28v_L19_s2.jpg	2	8	ρ	
+f28v_L19_s2.jpg	2	9	v	
+f28v_L19_s2.jpg	2	10	E	
+f28v_L19_s2.jpg	2	11	ρ	
+f28v_L19_s2.jpg	2	12	o	
+f28v_L19_s2.jpg	2	13	I	
+f28v_L19_s2.jpg	2	14	H	
+f28v_L19_s2.jpg	2	15	ρ	
+f28v_L19_s2.jpg	2	16	f	
+f28v_L19_s2.jpg	2	17	[C04]	
+f28v_L19_s2.jpg	2	18	n	
+f28v_L19_s2.jpg	2	19	v	
+f28v_L19_s2.jpg	2	20	[C11]	
+f28v_L19_s2.jpg	2	21	ρ	
+f28v_L19_s2.jpg	2	22	n	
+f28v_L19_s2.jpg	2	23	v	
+f28v_L19_s2.jpg	2	24	7	
+f28v_L19_s2.jpg	2	25	[C04]	
+f28v_L19_s2.jpg	2	26	ψ	small mark similar to C13 trident, kept close
+f28v_L19_s2.jpg	2	27	(dash)	
+f28v_L19_s2.jpg	2	28	[C11]	
+f28v_L19_s2.jpg	2	29	7	
+f28v_L19_s2.jpg	2	30	f	
+f28v_L19_s2.jpg	2	31	[C10]	
+f28v_L19_s2.jpg	2	32	[C13]	
+f28v_L19_s2.jpg	2	33	[C10]	
+f28v_L19_s2.jpg	2	34	T	
+f28v_L19_s2.jpg	2	35	o	
+f28v_L19_s2.jpg	2	36	E	
+f28v_L19_s2.jpg	2	37	[C10]	
+f28v_L19_s2.jpg	2	38	n	
+f28v_L19_s2.jpg	2	39	R	
+f28v_L19_s2.jpg	2	40	x	
+f28v_L19_s2.jpg	2	41	[C13]	
+f28v_L19_s2.jpg	2	42	[C10]	
+f28v_L19_s2.jpg	2	43	ρ	line ends at crop right margin; this is the last text on f28v, remainder of the page below is blank margin
+f28v_L20_s1.jpg	1	1	(blank)	bottom margin of verso, faint ink-blot/smudge only near top of crop, no legible text
+f28v_L20_s2.jpg	1	1	(blank)	bottom margin of verso, no text, faint marks only
+f29r_L01_s1.jpg	1	1	(blank)	top margin of recto, no text, faint pencil marks only
+f29r_L01_s2.jpg	1	1	[PLAIN: "d."]	small isolated flourish with a dot, top margin, not body text
+f29r_L01_s2.jpg	1	2	29	foliation number written in margin (folio 29), not body text
+f29r_L02_s1.jpg	1	1	R	
+f29r_L02_s1.jpg	1	2	ρ	
+f29r_L02_s1.jpg	1	3	I	
+f29r_L02_s1.jpg	1	4	S	
+f29r_L02_s1.jpg	1	5	T	
+f29r_L02_s1.jpg	1	6	[C01]	
+f29r_L02_s1.jpg	1	7	[C04]	
+f29r_L02_s1.jpg	1	8	o	
+f29r_L02_s1.jpg	1	9	f	
+f29r_L02_s1.jpg	1	10	[C09]	
+f29r_L02_s1.jpg	1	11	[C13]	
+f29r_L02_s1.jpg	1	12	7	
+f29r_L02_s1.jpg	1	13	[C04]	
+f29r_L02_s1.jpg	1	14	o	
+f29r_L02_s1.jpg	1	15	v	
+f29r_L02_s1.jpg	1	16	[C10]	
+f29r_L02_s1.jpg	1	17	R	
+f29r_L02_s1.jpg	1	18	[C01]	
+f29r_L02_s1.jpg	1	19	T	
+f29r_L02_s1.jpg	1	20	ρ	
+f29r_L02_s1.jpg	1	21	v	
+f29r_L02_s1.jpg	1	22	[C10]	
+f29r_L02_s1.jpg	1	23	ρ	
+f29r_L02_s1.jpg	1	24	[C13]	
+f29r_L02_s1.jpg	1	25	v	
+f29r_L02_s1.jpg	1	26	[C01]	
+f29r_L02_s1.jpg	1	27	o	
+f29r_L02_s1.jpg	1	28	E	
+f29r_L02_s1.jpg	1	29	ρ	
+f29r_L02_s1.jpg	1	30	[C11]	
+f29r_L02_s1.jpg	1	31	[C01]	
+f29r_L02_s1.jpg	1	32	ρ	
+f29r_L02_s1.jpg	1	33	[C13]	
+f29r_L02_s1.jpg	1	34	[C09]	
+f29r_L02_s1.jpg	1	35	x	
+f29r_L02_s1.jpg	1	36	f	line cut at crop edge, continues s2
+f29r_L02_s1.jpg	2	1	o	
+f29r_L02_s1.jpg	2	2	[C01]	
+f29r_L02_s1.jpg	2	3	s	
+f29r_L02_s1.jpg	2	4	[C11]	
+f29r_L02_s1.jpg	2	5	[C13]	
+f29r_L02_s1.jpg	2	6	ρ	
+f29r_L02_s1.jpg	2	7	7	
+f29r_L02_s1.jpg	2	8	[C04]	
+f29r_L02_s1.jpg	2	9	[C01]	
+f29r_L02_s1.jpg	2	10	o	
+f29r_L02_s1.jpg	2	11	f	
+f29r_L02_s1.jpg	2	12	[C04]	
+f29r_L02_s1.jpg	2	13	[C13]	
+f29r_L02_s1.jpg	2	14	S	
+f29r_L02_s1.jpg	2	15	I	
+f29r_L02_s1.jpg	2	16	ρ	
+f29r_L02_s1.jpg	2	17	x	
+f29r_L02_s1.jpg	2	18	[C19]	
+f29r_L02_s1.jpg	2	19	o	
+f29r_L02_s1.jpg	2	20	[C04]	
+f29r_L02_s1.jpg	2	21	f	
+f29r_L02_s1.jpg	2	22	[C04]	
+f29r_L02_s1.jpg	2	23	[C14]	
+f29r_L02_s1.jpg	2	24	T	
+f29r_L02_s1.jpg	2	25	o	
+f29r_L02_s1.jpg	2	26	[C01]	
+f29r_L02_s1.jpg	2	27	[C04]	
+f29r_L02_s1.jpg	2	28	[C11]	
+f29r_L02_s1.jpg	2	29	(dash)	
+f29r_L02_s1.jpg	2	30	[C13]	
+f29r_L02_s1.jpg	2	31	ρ	
+f29r_L02_s1.jpg	2	32	7	line cut at crop edge, continues s2
+f29r_L02_s2.jpg	1	1	[C13]	overlap-continuation, new tokens begin
+f29r_L02_s2.jpg	1	2	v	
+f29r_L02_s2.jpg	1	3	[C01]	
+f29r_L02_s2.jpg	1	4	o	
+f29r_L02_s2.jpg	1	5	E	
+f29r_L02_s2.jpg	1	6	ρ	
+f29r_L02_s2.jpg	1	7	[C11]	
+f29r_L02_s2.jpg	1	8	[C01]	
+f29r_L02_s2.jpg	1	9	ρ	
+f29r_L02_s2.jpg	1	10	[C13]	
+f29r_L02_s2.jpg	1	11	[C09]	
+f29r_L02_s2.jpg	1	12	x	
+f29r_L02_s2.jpg	1	13	f	
+f29r_L02_s2.jpg	1	14	n	
+f29r_L02_s2.jpg	1	15	v	
+f29r_L02_s2.jpg	1	16	o	
+f29r_L02_s2.jpg	1	17	f	
+f29r_L02_s2.jpg	1	18	[C04]	
+f29r_L02_s2.jpg	1	19	[C11]	
+f29r_L02_s2.jpg	1	20	R	
+f29r_L02_s2.jpg	1	21	z	
+f29r_L02_s2.jpg	1	22	I	
+f29r_L02_s2.jpg	1	23	G	
+f29r_L02_s2.jpg	1	24	[C13]	
+f29r_L02_s2.jpg	1	25	[C10]	
+f29r_L02_s2.jpg	1	26	T	
+f29r_L02_s2.jpg	1	27	o	
+f29r_L02_s2.jpg	1	28	[C01]	
+f29r_L02_s2.jpg	1	29	s	
+f29r_L02_s2.jpg	1	30	[C11]	
+f29r_L02_s2.jpg	1	31	[C01]	
+f29r_L02_s2.jpg	1	32	7	
+f29r_L02_s2.jpg	1	33	[C04]	
+f29r_L02_s2.jpg	1	34	R	
+f29r_L02_s2.jpg	1	35	f	
+f29r_L02_s2.jpg	1	36	7	line ends at crop right margin
+f29r_L02_s2.jpg	2	1	[C14]	overlap-continuation, new tokens begin
+f29r_L02_s2.jpg	2	2	T	
+f29r_L02_s2.jpg	2	3	o	
+f29r_L02_s2.jpg	2	4	[C01]	
+f29r_L02_s2.jpg	2	5	[C04]	
+f29r_L02_s2.jpg	2	6	[C11]	
+f29r_L02_s2.jpg	2	7	(dash)	
+f29r_L02_s2.jpg	2	8	o	
+f29r_L02_s2.jpg	2	9	ψ	
+f29r_L02_s2.jpg	2	10	ρ	
+f29r_L02_s2.jpg	2	11	ɟ	
+f29r_L02_s2.jpg	2	12	z	
+f29r_L02_s2.jpg	2	13	v	
+f29r_L02_s2.jpg	2	14	x	
+f29r_L02_s2.jpg	2	15	ρ	
+f29r_L02_s2.jpg	2	16	ρ	
+f29r_L02_s2.jpg	2	17	[C13]	
+f29r_L02_s2.jpg	2	18	v	
+f29r_L02_s2.jpg	2	19	[C01]	
+f29r_L02_s2.jpg	2	20	T	
+f29r_L02_s2.jpg	2	21	ρ	
+f29r_L02_s2.jpg	2	22	o	
+f29r_L02_s2.jpg	2	23	I	
+f29r_L02_s2.jpg	2	24	[C01]	
+f29r_L02_s2.jpg	2	25	z	
+f29r_L02_s2.jpg	2	26	I	
+f29r_L02_s2.jpg	2	27	[C04]	
+f29r_L02_s2.jpg	2	28	7	
+f29r_L02_s2.jpg	2	29	[C04]	
+f29r_L02_s2.jpg	2	30	n	
+f29r_L02_s2.jpg	2	31	v	
+f29r_L02_s2.jpg	2	32	x	
+f29r_L02_s2.jpg	2	33	ρ	
+f29r_L02_s2.jpg	2	34	[C14]	line ends at crop right margin
+f29r_L03_s1.jpg	1	1	R	
+f29r_L03_s1.jpg	1	2	z	
+f29r_L03_s1.jpg	1	3	v	
+f29r_L03_s1.jpg	1	4	ρ	
+f29r_L03_s1.jpg	1	5	A	
+f29r_L03_s1.jpg	1	6	E	
+f29r_L03_s1.jpg	1	7	[C13]	
+f29r_L03_s1.jpg	1	8	f	
+f29r_L03_s1.jpg	1	9	[C04]	
+f29r_L03_s1.jpg	1	10	[C04]	
+f29r_L03_s1.jpg	1	11	A	
+f29r_L03_s1.jpg	1	12	T	
+f29r_L03_s1.jpg	1	13	S	
+f29r_L03_s1.jpg	1	14	I	
+f29r_L03_s1.jpg	1	15	[C13]	
+f29r_L03_s1.jpg	1	16	v	
+f29r_L03_s1.jpg	1	17	ρ	
+f29r_L03_s1.jpg	1	18	[C14]	
+f29r_L03_s1.jpg	1	19	7	
+f29r_L03_s1.jpg	1	20	[C10]	
+f29r_L03_s1.jpg	1	21	[C04]	
+f29r_L03_s1.jpg	1	22	A	
+f29r_L03_s1.jpg	1	23	[C11]	
+f29r_L03_s1.jpg	1	24	o	
+f29r_L03_s1.jpg	1	25	s	
+f29r_L03_s1.jpg	1	26	E	
+f29r_L03_s1.jpg	1	27	[C10]	
+f29r_L03_s1.jpg	1	28	ρ	
+f29r_L03_s1.jpg	1	29	v	
+f29r_L03_s1.jpg	1	30	[C04]	
+f29r_L03_s1.jpg	1	31	v	line cut at crop edge, continues s2
+f29r_L03_s1.jpg	2	1	S	
+f29r_L03_s1.jpg	2	2	T	
+f29r_L03_s1.jpg	2	3	x	
+f29r_L03_s1.jpg	2	4	A	
+f29r_L03_s1.jpg	2	5	[C11]	
+f29r_L03_s1.jpg	2	6	7	
+f29r_L03_s1.jpg	2	7	[C04]	
+f29r_L03_s1.jpg	2	8	n	
+f29r_L03_s1.jpg	2	9	v	
+f29r_L03_s1.jpg	2	10	[C11]	
+f29r_L03_s1.jpg	2	11	ρ	
+f29r_L03_s1.jpg	2	12	[C10]	
+f29r_L03_s1.jpg	2	13	o	
+f29r_L03_s1.jpg	2	14	[C10]	
+f29r_L03_s1.jpg	2	15	ρ	
+f29r_L03_s1.jpg	2	16	x	
+f29r_L03_s1.jpg	2	17	f	
+f29r_L03_s1.jpg	2	18	[C09]	
+f29r_L03_s1.jpg	2	19	[C04]	
+f29r_L03_s1.jpg	2	20	[C11]	
+f29r_L03_s1.jpg	2	21	[C04]	
+f29r_L03_s1.jpg	2	22	[C13]	
+f29r_L03_s1.jpg	2	23	[C10]	
+f29r_L03_s1.jpg	2	24	s	
+f29r_L03_s1.jpg	2	25	[C19]	
+f29r_L03_s1.jpg	2	26	ρ	
+f29r_L03_s1.jpg	2	27	z	
+f29r_L03_s1.jpg	2	28	I	
+f29r_L03_s1.jpg	2	29	[C04]	
+f29r_L03_s1.jpg	2	30	n	
+f29r_L03_s1.jpg	2	31	v	
+f29r_L03_s1.jpg	2	32	x	
+f29r_L03_s1.jpg	2	33	ρ	
+f29r_L03_s1.jpg	2	34	f	line cut at crop edge, continues s2
+f29r_L03_s2.jpg	1	1	n	overlap-continuation, new tokens begin
+f29r_L03_s2.jpg	1	2	v	
+f29r_L03_s2.jpg	1	3	[C11]	
+f29r_L03_s2.jpg	1	4	v	
+f29r_L03_s2.jpg	1	5	[C19]	
+f29r_L03_s2.jpg	1	6	[C11]	
+f29r_L03_s2.jpg	1	7	ψ	
+f29r_L03_s2.jpg	1	8	[C09]	
+f29r_L03_s2.jpg	1	9	[C04]	
+f29r_L03_s2.jpg	1	10	[C14]	
+f29r_L03_s2.jpg	1	11	ρ	
+f29r_L03_s2.jpg	1	12	ψ	
+f29r_L03_s2.jpg	1	13	ρ	
+f29r_L03_s2.jpg	1	14	v	
+f29r_L03_s2.jpg	1	15	E	
+f29r_L03_s2.jpg	1	16	7	
+f29r_L03_s2.jpg	1	17	[C04]	
+f29r_L03_s2.jpg	1	18	ρ	
+f29r_L03_s2.jpg	1	19	6	line ends at crop right margin
+f29r_L03_s2.jpg	2	1	ψ	overlap-continuation, new tokens begin
+f29r_L03_s2.jpg	2	2	s	
+f29r_L03_s2.jpg	2	3	[C19]	
+f29r_L03_s2.jpg	2	4	ρ	
+f29r_L03_s2.jpg	2	5	z	
+f29r_L03_s2.jpg	2	6	I	
+f29r_L03_s2.jpg	2	7	[C04]	
+f29r_L03_s2.jpg	2	8	n	
+f29r_L03_s2.jpg	2	9	v	
+f29r_L03_s2.jpg	2	10	x	
+f29r_L03_s2.jpg	2	11	ρ	
+f29r_L03_s2.jpg	2	12	f	
+f29r_L03_s2.jpg	2	13	ψ	
+f29r_L03_s2.jpg	2	14	[C10]	
+f29r_L03_s2.jpg	2	15	[C09]	
+f29r_L03_s2.jpg	2	16	o	
+f29r_L03_s2.jpg	2	17	v	
+f29r_L03_s2.jpg	2	18	A	
+f29r_L03_s2.jpg	2	19	z	
+f29r_L03_s2.jpg	2	20	I	
+f29r_L03_s2.jpg	2	21	[C04]	
+f29r_L03_s2.jpg	2	22	S	
+f29r_L03_s2.jpg	2	23	I	
+f29r_L03_s2.jpg	2	24	[C13]	
+f29r_L03_s2.jpg	2	25	v	
+f29r_L03_s2.jpg	2	26	ρ	
+f29r_L03_s2.jpg	2	27	6	
+f29r_L03_s2.jpg	2	28	[C07]	
+f29r_L03_s2.jpg	2	29	o	
+f29r_L03_s2.jpg	2	30	I	
+f29r_L03_s2.jpg	2	31	A	
+f29r_L03_s2.jpg	2	32	[C13]	
+f29r_L03_s2.jpg	2	33	T	line ends at crop right margin
+f29r_L04_s1.jpg	1	1	z	
+f29r_L04_s1.jpg	1	2	v	
+f29r_L04_s1.jpg	1	3	A	
+f29r_L04_s1.jpg	1	4	ρ	
+f29r_L04_s1.jpg	1	5	[C11]	
+f29r_L04_s1.jpg	1	6	s	
+f29r_L04_s1.jpg	1	7	z	
+f29r_L04_s1.jpg	1	8	v	
+f29r_L04_s1.jpg	1	9	A	
+f29r_L04_s1.jpg	1	10	ψ	
+f29r_L04_s1.jpg	1	11	A	
+f29r_L04_s1.jpg	1	12	7	
+f29r_L04_s1.jpg	1	13	f	
+f29r_L04_s1.jpg	1	14	[C19]	
+f29r_L04_s1.jpg	1	15	z	
+f29r_L04_s1.jpg	1	16	A	
+f29r_L04_s1.jpg	1	17	ψ	
+f29r_L04_s1.jpg	1	18	z	
+f29r_L04_s1.jpg	1	19	T	
+f29r_L04_s1.jpg	1	20	x	
+f29r_L04_s1.jpg	1	21	f	
+f29r_L04_s1.jpg	1	22	x	
+f29r_L04_s1.jpg	1	23	z	
+f29r_L04_s1.jpg	1	24	f	
+f29r_L04_s1.jpg	1	25	ρ	
+f29r_L04_s1.jpg	1	26	ψ	
+f29r_L04_s1.jpg	1	27	[C04]	
+f29r_L04_s1.jpg	1	28	z	
+f29r_L04_s1.jpg	1	29	v	
+f29r_L04_s1.jpg	1	30	[C04]	
+f29r_L04_s1.jpg	1	31	[C11]	
+f29r_L04_s1.jpg	1	32	ρ	line cut at crop edge, continues s2
+f29r_L04_s1.jpg	2	1	f	
+f29r_L04_s1.jpg	2	2	v	
+f29r_L04_s1.jpg	2	3	7	
+f29r_L04_s1.jpg	2	4	[C04]	
+f29r_L04_s1.jpg	2	5	o	
+f29r_L04_s1.jpg	2	6	E	
+f29r_L04_s1.jpg	2	7	ρ	
+f29r_L04_s1.jpg	2	8	ψ	
+f29r_L04_s1.jpg	2	9	7	
+f29r_L04_s1.jpg	2	10	f	
+f29r_L04_s1.jpg	2	11	[C09]	
+f29r_L04_s1.jpg	2	12	ψ	
+f29r_L04_s1.jpg	2	13	n	
+f29r_L04_s1.jpg	2	14	v	
+f29r_L04_s1.jpg	2	15	x	
+f29r_L04_s1.jpg	2	16	ρ	
+f29r_L04_s1.jpg	2	17	E	
+f29r_L04_s1.jpg	2	18	[C04]	
+f29r_L04_s1.jpg	2	19	[C19]	
+f29r_L04_s1.jpg	2	20	ψ	
+f29r_L04_s1.jpg	2	21	f	
+f29r_L04_s1.jpg	2	22	n	
+f29r_L04_s1.jpg	2	23	v	
+f29r_L04_s1.jpg	2	24	[C11]	
+f29r_L04_s1.jpg	2	25	ρ	
+f29r_L04_s1.jpg	2	26	ψ	
+f29r_L04_s1.jpg	2	27	ρ	
+f29r_L04_s1.jpg	2	28	o	
+f29r_L04_s1.jpg	2	29	I	
+f29r_L04_s1.jpg	2	30	H	
+f29r_L04_s1.jpg	2	31	[C11]	
+f29r_L04_s1.jpg	2	32	A	
+f29r_L04_s1.jpg	2	33	ρ	line cut at crop edge, continues s2
+f29r_L04_s2.jpg	1	1	f	overlap-continuation, new tokens begin
+f29r_L04_s2.jpg	1	2	x	
+f29r_L04_s2.jpg	1	3	z	
+f29r_L04_s2.jpg	1	4	f	
+f29r_L04_s2.jpg	1	5	ρ	
+f29r_L04_s2.jpg	1	6	ψ	
+f29r_L04_s2.jpg	1	7	[C04]	
+f29r_L04_s2.jpg	1	8	z	
+f29r_L04_s2.jpg	1	9	v	
+f29r_L04_s2.jpg	1	10	[C04]	
+f29r_L04_s2.jpg	1	11	ρ	
+f29r_L04_s2.jpg	1	12	I	
+f29r_L04_s2.jpg	1	13	[C04]	
+f29r_L04_s2.jpg	1	14	o	
+f29r_L04_s2.jpg	1	15	ρ	
+f29r_L04_s2.jpg	1	16	x	
+f29r_L04_s2.jpg	1	17	ψ	
+f29r_L04_s2.jpg	1	18	7	
+f29r_L04_s2.jpg	1	19	[C04]	
+f29r_L04_s2.jpg	1	20	E	
+f29r_L04_s2.jpg	1	21	ψ	
+f29r_L04_s2.jpg	1	22	[C04]	
+f29r_L04_s2.jpg	1	23	ρ	
+f29r_L04_s2.jpg	1	24	[C11]	
+f29r_L04_s2.jpg	1	25	s	
+f29r_L04_s2.jpg	1	26	o	
+f29r_L04_s2.jpg	1	27	I	
+f29r_L04_s2.jpg	1	28	f	
+f29r_L04_s2.jpg	1	29	[C04]	
+f29r_L04_s2.jpg	1	30	ψ	line ends at crop right margin
+f29r_L04_s2.jpg	2	1	n	overlap-continuation, new tokens begin
+f29r_L04_s2.jpg	2	2	v	
+f29r_L04_s2.jpg	2	3	[C11]	
+f29r_L04_s2.jpg	2	4	ρ	
+f29r_L04_s2.jpg	2	5	ψ	
+f29r_L04_s2.jpg	2	6	ρ	
+f29r_L04_s2.jpg	2	7	o	
+f29r_L04_s2.jpg	2	8	I	
+f29r_L04_s2.jpg	2	9	H	
+f29r_L04_s2.jpg	2	10	[C11]	
+f29r_L04_s2.jpg	2	11	A	
+f29r_L04_s2.jpg	2	12	ρ	
+f29r_L04_s2.jpg	2	13	ψ	
+f29r_L04_s2.jpg	2	14	ρ	
+f29r_L04_s2.jpg	2	15	x	
+f29r_L04_s2.jpg	2	16	[C09]	
+f29r_L04_s2.jpg	2	17	[C22]	
+f29r_L04_s2.jpg	2	18	ρ	
+f29r_L04_s2.jpg	2	19	[C08]	
+f29r_L04_s2.jpg	2	20	[C04]	
+f29r_L04_s2.jpg	2	21	[C07]	
+f29r_L04_s2.jpg	2	22	o	
+f29r_L04_s2.jpg	2	23	I	
+f29r_L04_s2.jpg	2	24	A	
+f29r_L04_s2.jpg	2	25	[C11]	
+f29r_L04_s2.jpg	2	26	n	
+f29r_L04_s2.jpg	2	27	v	
+f29r_L04_s2.jpg	2	28	ψ	
+f29r_L04_s2.jpg	2	29	ρ	
+f29r_L04_s2.jpg	2	30	[C11]	
+f29r_L04_s2.jpg	2	31	ρ	
+f29r_L04_s2.jpg	2	32	ɟ	
+f29r_L04_s2.jpg	2	33	f	line ends at crop right margin
+f29r_L05_s1.jpg	1	1	[C10]	
+f29r_L05_s1.jpg	1	2	ρ	
+f29r_L05_s1.jpg	1	3	ψ	
+f29r_L05_s1.jpg	1	4	[C10]	
+f29r_L05_s1.jpg	1	5	[C09]	
+f29r_L05_s1.jpg	1	6	E	
+f29r_L05_s1.jpg	1	7	o	
+f29r_L05_s1.jpg	1	8	[C10]	
+f29r_L05_s1.jpg	1	9	[C04]	
+f29r_L05_s1.jpg	1	10	ψ	
+f29r_L05_s1.jpg	1	11	o	
+f29r_L05_s1.jpg	1	12	v	
+f29r_L05_s1.jpg	1	13	ρ	
+f29r_L05_s1.jpg	1	14	6	
+f29r_L05_s1.jpg	1	15	ρ	
+f29r_L05_s1.jpg	1	16	ψ	
+f29r_L05_s1.jpg	1	17	[C08]	
+f29r_L05_s1.jpg	1	18	7	
+f29r_L05_s1.jpg	1	19	[C04]	
+f29r_L05_s1.jpg	1	20	[C09]	
+f29r_L05_s1.jpg	1	21	A	
+f29r_L05_s1.jpg	1	22	ψ	
+f29r_L05_s1.jpg	1	23	S	
+f29r_L05_s1.jpg	1	24	z	
+f29r_L05_s1.jpg	1	25	A	
+f29r_L05_s1.jpg	1	26	ψ	
+f29r_L05_s1.jpg	1	27	ρ	
+f29r_L05_s1.jpg	1	28	ψ	
+f29r_L05_s1.jpg	1	29	[C10]	
+f29r_L05_s1.jpg	1	30	[C09]	
+f29r_L05_s1.jpg	1	31	E	
+f29r_L05_s1.jpg	1	32	o	
+f29r_L05_s1.jpg	1	33	[C10]	
+f29r_L05_s1.jpg	1	34	[C04]	
+f29r_L05_s1.jpg	1	35	[C11]	line cut at crop edge, continues s2
+f29r_L05_s1.jpg	2	1	7	
+f29r_L05_s1.jpg	2	2	[C04]	
+f29r_L05_s1.jpg	2	3	n	
+f29r_L05_s1.jpg	2	4	v	
+f29r_L05_s1.jpg	2	5	x	
+f29r_L05_s1.jpg	2	6	[C07]	
+f29r_L05_s1.jpg	2	7	ψ	
+f29r_L05_s1.jpg	2	8	I	
+f29r_L05_s1.jpg	2	9	H	
+f29r_L05_s1.jpg	2	10	[C11]	
+f29r_L05_s1.jpg	2	11	f	
+f29r_L05_s1.jpg	2	12	[C04]	
+f29r_L05_s1.jpg	2	13	ρ	
+f29r_L05_s1.jpg	2	14	ψ	
+f29r_L05_s1.jpg	2	15	[C10]	
+f29r_L05_s1.jpg	2	16	[C11]	
+f29r_L05_s1.jpg	2	17	A	
+f29r_L05_s1.jpg	2	18	s	
+f29r_L05_s1.jpg	2	19	[C11]	
+f29r_L05_s1.jpg	2	20	f	
+f29r_L05_s1.jpg	2	21	[C04]	
+f29r_L05_s1.jpg	2	22	o	
+f29r_L05_s1.jpg	2	23	v	
+f29r_L05_s1.jpg	2	24	ρ	
+f29r_L05_s1.jpg	2	25	I	
+f29r_L05_s1.jpg	2	26	[C09]	
+f29r_L05_s1.jpg	2	27	[C22]	
+f29r_L05_s1.jpg	2	28	x	
+f29r_L05_s1.jpg	2	29	7	
+f29r_L05_s1.jpg	2	30	[C04]	
+f29r_L05_s1.jpg	2	31	o	
+f29r_L05_s1.jpg	2	32	v	
+f29r_L05_s1.jpg	2	33	ρ	line cut at crop edge, continues s2
+f29r_L05_s2.jpg	1	1	6	overlap-continuation, new tokens begin
+f29r_L05_s2.jpg	1	2	o	
+f29r_L05_s2.jpg	1	3	o	
+f29r_L05_s2.jpg	1	4	I	
+f29r_L05_s2.jpg	1	5	f	
+f29r_L05_s2.jpg	1	6	[C10]	
+f29r_L05_s2.jpg	1	7	[C07]	
+f29r_L05_s2.jpg	1	8	ψ	
+f29r_L05_s2.jpg	1	9	v	
+f29r_L05_s2.jpg	1	10	H	
+f29r_L05_s2.jpg	1	11	[C11]	
+f29r_L05_s2.jpg	1	12	f	
+f29r_L05_s2.jpg	1	13	[C04]	
+f29r_L05_s2.jpg	1	14	S	
+f29r_L05_s2.jpg	1	15	I	
+f29r_L05_s2.jpg	1	16	[C10]	
+f29r_L05_s2.jpg	1	17	[C07]	
+f29r_L05_s2.jpg	1	18	I	
+f29r_L05_s2.jpg	1	19	ρ	
+f29r_L05_s2.jpg	1	20	ψ	
+f29r_L05_s2.jpg	1	21	ρ	
+f29r_L05_s2.jpg	1	22	[C11]	line ends at crop right margin
+f29r_L05_s2.jpg	2	1	x	overlap-continuation, new tokens begin
+f29r_L05_s2.jpg	2	2	[C09]	
+f29r_L05_s2.jpg	2	3	[C04]	
+f29r_L05_s2.jpg	2	4	[C24]	
+f29r_L05_s2.jpg	2	5	m	
+f29r_L05_s2.jpg	2	6	o	
+f29r_L05_s2.jpg	2	7	v	
+f29r_L05_s2.jpg	2	8	H	
+f29r_L05_s2.jpg	2	9	x	
+f29r_L05_s2.jpg	2	10	ψ	
+f29r_L05_s2.jpg	2	11	f	
+f29r_L05_s2.jpg	2	12	[C09]	
+f29r_L05_s2.jpg	2	13	o	
+f29r_L05_s2.jpg	2	14	[C10]	
+f29r_L05_s2.jpg	2	15	n	
+f29r_L05_s2.jpg	2	16	v	
+f29r_L05_s2.jpg	2	17	[C11]	
+f29r_L05_s2.jpg	2	18	ρ	
+f29r_L05_s2.jpg	2	19	ψ	
+f29r_L05_s2.jpg	2	20	ρ	line ends at crop right margin
+f29r_L06_s1.jpg	1	1	x	
+f29r_L06_s1.jpg	1	2	[C09]	
+f29r_L06_s1.jpg	1	3	[C22]	
+f29r_L06_s1.jpg	1	4	o	
+f29r_L06_s1.jpg	1	5	[C11]	
+f29r_L06_s1.jpg	1	6	o	
+f29r_L06_s1.jpg	1	7	f	
+f29r_L06_s1.jpg	1	8	ψ	
+f29r_L06_s1.jpg	1	9	[C10]	
+f29r_L06_s1.jpg	1	10	[C11]	
+f29r_L06_s1.jpg	1	11	ρ	
+f29r_L06_s1.jpg	1	12	ψ	
+f29r_L06_s1.jpg	1	13	T	
+f29r_L06_s1.jpg	1	14	[C10]	
+f29r_L06_s1.jpg	1	15	A	
+f29r_L06_s1.jpg	1	16	[C04]	
+f29r_L06_s1.jpg	1	17	o	
+f29r_L06_s1.jpg	1	18	[C10]	
+f29r_L06_s1.jpg	1	19	[C04]	
+f29r_L06_s1.jpg	1	20	7	
+f29r_L06_s1.jpg	1	21	f	
+f29r_L06_s1.jpg	1	22	v	
+f29r_L06_s1.jpg	1	23	[C11]	
+f29r_L06_s1.jpg	1	24	A	
+f29r_L06_s1.jpg	1	25	[C10]	
+f29r_L06_s1.jpg	1	26	o	
+f29r_L06_s1.jpg	1	27	v	
+f29r_L06_s1.jpg	1	28	E	
+f29r_L06_s1.jpg	1	29	[C07]	
+f29r_L06_s1.jpg	1	30	I	
+f29r_L06_s1.jpg	1	31	ρ	
+f29r_L06_s1.jpg	1	32	ψ	line cut at crop edge, continues s2
+f29r_L06_s1.jpg	2	1	A	
+f29r_L06_s1.jpg	2	2	ρ	
+f29r_L06_s1.jpg	2	3	A	
+f29r_L06_s1.jpg	2	4	o	
+f29r_L06_s1.jpg	2	5	f	
+f29r_L06_s1.jpg	2	6	[C09]	
+f29r_L06_s1.jpg	2	7	ψ	
+f29r_L06_s1.jpg	2	8	n	
+f29r_L06_s1.jpg	2	9	v	
+f29r_L06_s1.jpg	2	10	[C11]	
+f29r_L06_s1.jpg	2	11	ρ	
+f29r_L06_s1.jpg	2	12	ψ	
+f29r_L06_s1.jpg	2	13	ρ	
+f29r_L06_s1.jpg	2	14	I	
+f29r_L06_s1.jpg	2	15	[C09]	
+f29r_L06_s1.jpg	2	16	[C22]	
+f29r_L06_s1.jpg	2	17	K	
+f29r_L06_s1.jpg	2	18	[C04]	
+f29r_L06_s1.jpg	2	19	I	
+f29r_L06_s1.jpg	2	20	ψ	
+f29r_L06_s1.jpg	2	21	f	
+f29r_L06_s1.jpg	2	22	ρ	
+f29r_L06_s1.jpg	2	23	A	
+f29r_L06_s1.jpg	2	24	z	
+f29r_L06_s1.jpg	2	25	I	
+f29r_L06_s1.jpg	2	26	[C04]	
+f29r_L06_s1.jpg	2	27	A	
+f29r_L06_s1.jpg	2	28	ψ	
+f29r_L06_s1.jpg	2	29	v	
+f29r_L06_s1.jpg	2	30	[C10]	line cut at crop edge, continues s2
+f29r_L06_s2.jpg	1	1	f	overlap-continuation, new tokens begin
+f29r_L06_s2.jpg	1	2	v	
+f29r_L06_s2.jpg	1	3	[C11]	
+f29r_L06_s2.jpg	1	4	A	
+f29r_L06_s2.jpg	1	5	[C10]	
+f29r_L06_s2.jpg	1	6	o	
+f29r_L06_s2.jpg	1	7	v	
+f29r_L06_s2.jpg	1	8	E	
+f29r_L06_s2.jpg	1	9	[C07]	
+f29r_L06_s2.jpg	1	10	I	
+f29r_L06_s2.jpg	1	11	ρ	
+f29r_L06_s2.jpg	1	12	ψ	
+f29r_L06_s2.jpg	1	13	ρ	
+f29r_L06_s2.jpg	1	14	[C11]	
+f29r_L06_s2.jpg	1	15	s	
+f29r_L06_s2.jpg	1	16	ψ	
+f29r_L06_s2.jpg	1	17	f	
+f29r_L06_s2.jpg	1	18	[C04]	
+f29r_L06_s2.jpg	1	19	7	
+f29r_L06_s2.jpg	1	20	[C04]	
+f29r_L06_s2.jpg	1	21	n	
+f29r_L06_s2.jpg	1	22	v	
+f29r_L06_s2.jpg	1	23	[C11]	
+f29r_L06_s2.jpg	1	24	ρ	
+f29r_L06_s2.jpg	1	25	ψ	
+f29r_L06_s2.jpg	1	26	[C10]	
+f29r_L06_s2.jpg	1	27	[C11]	
+f29r_L06_s2.jpg	1	28	ψ	
+f29r_L06_s2.jpg	1	29	f	
+f29r_L06_s2.jpg	1	30	x	
+f29r_L06_s2.jpg	1	31	ρ	line ends at crop right margin
+f29r_L06_s2.jpg	2	1	I	overlap-continuation, new tokens begin
+f29r_L06_s2.jpg	2	2	ψ	
+f29r_L06_s2.jpg	2	3	f	
+f29r_L06_s2.jpg	2	4	ρ	
+f29r_L06_s2.jpg	2	5	A	
+f29r_L06_s2.jpg	2	6	z	
+f29r_L06_s2.jpg	2	7	I	
+f29r_L06_s2.jpg	2	8	[C04]	
+f29r_L06_s2.jpg	2	9	A	
+f29r_L06_s2.jpg	2	10	ψ	
+f29r_L06_s2.jpg	2	11	v	
+f29r_L06_s2.jpg	2	12	[C10]	
+f29r_L06_s2.jpg	2	13	[C04]	
+f29r_L06_s2.jpg	2	14	[C07]	
+f29r_L06_s2.jpg	2	15	o	
+f29r_L06_s2.jpg	2	16	I	
+f29r_L06_s2.jpg	2	17	[C09]	
+f29r_L06_s2.jpg	2	18	R	
+f29r_L06_s2.jpg	2	19	f	
+f29r_L06_s2.jpg	2	20	[C11]	
+f29r_L06_s2.jpg	2	21	[C09]	
+f29r_L06_s2.jpg	2	22	E	
+f29r_L06_s2.jpg	2	23	ψ	
+f29r_L06_s2.jpg	2	24	[C07]	
+f29r_L06_s2.jpg	2	25	7	
+f29r_L06_s2.jpg	2	26	f	
+f29r_L06_s2.jpg	2	27	T	
+f29r_L06_s2.jpg	2	28	o	
+f29r_L06_s2.jpg	2	29	A	
+f29r_L06_s2.jpg	2	30	[C11]	
+f29r_L06_s2.jpg	2	31	x	line ends at crop right margin
+f29r_L07_s1.jpg	1	1	ρ	
+f29r_L07_s1.jpg	1	2	[C09]	
+f29r_L07_s1.jpg	1	3	[C10]	
+f29r_L07_s1.jpg	1	4	7	
+f29r_L07_s1.jpg	1	5	[C04]	
+f29r_L07_s1.jpg	1	6	ρ	
+f29r_L07_s1.jpg	1	7	o	
+f29r_L07_s1.jpg	1	8	z	
+f29r_L07_s1.jpg	1	9	v	
+f29r_L07_s1.jpg	1	10	ρ	
+f29r_L07_s1.jpg	1	11	ψ	
+f29r_L07_s1.jpg	1	12	ρ	
+f29r_L07_s1.jpg	1	13	I	
+f29r_L07_s1.jpg	1	14	[C09]	
+f29r_L07_s1.jpg	1	15	[C22]	
+f29r_L07_s1.jpg	1	16	K	
+f29r_L07_s1.jpg	1	17	f	
+f29r_L07_s1.jpg	1	18	ψ	
+f29r_L07_s1.jpg	1	19	[C10]	
+f29r_L07_s1.jpg	1	20	[C11]	
+f29r_L07_s1.jpg	1	21	A	
+f29r_L07_s1.jpg	1	22	z	
+f29r_L07_s1.jpg	1	23	I	
+f29r_L07_s1.jpg	1	24	[C04]	
+f29r_L07_s1.jpg	1	25	o	
+f29r_L07_s1.jpg	1	26	[C11]	
+f29r_L07_s1.jpg	1	27	A	
+f29r_L07_s1.jpg	1	28	ψ	
+f29r_L07_s1.jpg	1	29	ρ	line cut at crop edge, continues s2
+f29r_L07_s1.jpg	2	1	R	
+f29r_L07_s1.jpg	2	2	f	
+f29r_L07_s1.jpg	2	3	[C11]	
+f29r_L07_s1.jpg	2	4	o	
+f29r_L07_s1.jpg	2	5	v	
+f29r_L07_s1.jpg	2	6	[C04]	
+f29r_L07_s1.jpg	2	7	A	
+f29r_L07_s1.jpg	2	8	[C11]	
+f29r_L07_s1.jpg	2	9	T	
+f29r_L07_s1.jpg	2	10	[C10]	
+f29r_L07_s1.jpg	2	11	v	
+f29r_L07_s1.jpg	2	12	ρ	
+f29r_L07_s1.jpg	2	13	q	Latin q, new instance
+f29r_L07_s1.jpg	2	14	v	
+f29r_L07_s1.jpg	2	15	[C09]	
+f29r_L07_s1.jpg	2	16	n	
+f29r_L07_s1.jpg	2	17	v	
+f29r_L07_s1.jpg	2	18	x	
+f29r_L07_s1.jpg	2	19	[C07]	
+f29r_L07_s1.jpg	2	20	v	
+f29r_L07_s1.jpg	2	21	[C10]	
+f29r_L07_s1.jpg	2	22	[C04]	
+f29r_L07_s1.jpg	2	23	o	
+f29r_L07_s1.jpg	2	24	[C11]	
+f29r_L07_s1.jpg	2	25	A	
+f29r_L07_s1.jpg	2	26	[C11]	
+f29r_L07_s1.jpg	2	27	ρ	
+f29r_L07_s1.jpg	2	28	e	Latin e, new literal
+f29r_L07_s1.jpg	2	29	ρ	
+f29r_L07_s1.jpg	2	30	ψ	
+f29r_L07_s1.jpg	2	31	o	
+f29r_L07_s1.jpg	2	32	[C04]	
+f29r_L07_s1.jpg	2	33	z	line cut at crop edge, continues s2
+f29r_L07_s2.jpg	1	1	[C11]	overlap-continuation, new tokens begin
+f29r_L07_s2.jpg	1	2	A	
+f29r_L07_s2.jpg	1	3	z	
+f29r_L07_s2.jpg	1	4	I	
+f29r_L07_s2.jpg	1	5	[C04]	
+f29r_L07_s2.jpg	1	6	o	
+f29r_L07_s2.jpg	1	7	[C11]	
+f29r_L07_s2.jpg	1	8	A	
+f29r_L07_s2.jpg	1	9	ψ	
+f29r_L07_s2.jpg	1	10	ρ	
+f29r_L07_s2.jpg	1	11	[C19]	
+f29r_L07_s2.jpg	1	12	ψ	
+f29r_L07_s2.jpg	1	13	o	
+f29r_L07_s2.jpg	1	14	[C10]	
+f29r_L07_s2.jpg	1	15	ρ	
+f29r_L07_s2.jpg	1	16	S	
+f29r_L07_s2.jpg	1	17	o	
+f29r_L07_s2.jpg	1	18	I	
+f29r_L07_s2.jpg	1	19	ρ	
+f29r_L07_s2.jpg	1	20	[C10]	
+f29r_L07_s2.jpg	1	21	[C04]	
+f29r_L07_s2.jpg	1	22	ψ	
+f29r_L07_s2.jpg	1	23	n	
+f29r_L07_s2.jpg	1	24	v	
+f29r_L07_s2.jpg	1	25	x	
+f29r_L07_s2.jpg	1	26	ρ	
+f29r_L07_s2.jpg	1	27	E	
+f29r_L07_s2.jpg	1	28	S	
+f29r_L07_s2.jpg	1	29	I	
+f29r_L07_s2.jpg	1	30	[C10]	
+f29r_L07_s2.jpg	1	31	[C04]	line ends at crop right margin
+f29r_L07_s2.jpg	2	1	[C04]	overlap-continuation, new tokens begin
+f29r_L07_s2.jpg	2	2	o	
+f29r_L07_s2.jpg	2	3	[C11]	
+f29r_L07_s2.jpg	2	4	A	
+f29r_L07_s2.jpg	2	5	[C11]	
+f29r_L07_s2.jpg	2	6	ρ	
+f29r_L07_s2.jpg	2	7	[C19]	
+f29r_L07_s2.jpg	2	8	ψ	
+f29r_L07_s2.jpg	2	9	o	
+f29r_L07_s2.jpg	2	10	[C04]	
+f29r_L07_s2.jpg	2	11	z	
+f29r_L07_s2.jpg	2	12	v	
+f29r_L07_s2.jpg	2	13	[C04]	
+f29r_L07_s2.jpg	2	14	ψ	
+f29r_L07_s2.jpg	2	15	ρ	
+f29r_L07_s2.jpg	2	16	I	
+f29r_L07_s2.jpg	2	17	[C04]	
+f29r_L07_s2.jpg	2	18	o	
+f29r_L07_s2.jpg	2	19	ρ	
+f29r_L07_s2.jpg	2	20	x	
+f29r_L07_s2.jpg	2	21	ψ	
+f29r_L07_s2.jpg	2	22	7	
+f29r_L07_s2.jpg	2	23	[C04]	
+f29r_L07_s2.jpg	2	24	n	
+f29r_L07_s2.jpg	2	25	v	
+f29r_L07_s2.jpg	2	26	[C11]	
+f29r_L07_s2.jpg	2	27	[C09]	
+f29r_L07_s2.jpg	2	28	ψ	
+f29r_L07_s2.jpg	2	29	ρ	
+f29r_L07_s2.jpg	2	30	o	
+f29r_L07_s2.jpg	2	31	ρ	
+f29r_L07_s2.jpg	2	32	v	
+f29r_L07_s2.jpg	2	33	E	line ends at crop right margin
+f29r_L08_s1.jpg	1	1	[C10]	
+f29r_L08_s1.jpg	1	2	ψ	
+f29r_L08_s1.jpg	1	3	s	
+f29r_L08_s1.jpg	1	4	ρ	
+f29r_L08_s1.jpg	1	5	z	
+f29r_L08_s1.jpg	1	6	I	
+f29r_L08_s1.jpg	1	7	[C04]	
+f29r_L08_s1.jpg	1	8	ψ	
+f29r_L08_s1.jpg	1	9	[C10]	
+f29r_L08_s1.jpg	1	10	[C04]	
+f29r_L08_s1.jpg	1	11	A	
+f29r_L08_s1.jpg	1	12	[C11]	
+f29r_L08_s1.jpg	1	13	T	
+f29r_L08_s1.jpg	1	14	ρ	
+f29r_L08_s1.jpg	1	15	v	
+f29r_L08_s1.jpg	1	16	[C10]	
+f29r_L08_s1.jpg	1	17	o	
+f29r_L08_s1.jpg	1	18	[C10]	
+f29r_L08_s1.jpg	1	19	z	
+f29r_L08_s1.jpg	1	20	f	
+f29r_L08_s1.jpg	1	21	T	
+f29r_L08_s1.jpg	1	22	A	
+f29r_L08_s1.jpg	1	23	z	
+f29r_L08_s1.jpg	1	24	T	
+f29r_L08_s1.jpg	1	25	[C14]	
+f29r_L08_s1.jpg	1	26	n	
+f29r_L08_s1.jpg	1	27	v	
+f29r_L08_s1.jpg	1	28	[C11]	
+f29r_L08_s1.jpg	1	29	ρ	
+f29r_L08_s1.jpg	1	30	ψ	
+f29r_L08_s1.jpg	1	31	[C10]	line cut at crop edge, continues s2
+f29r_L08_s1.jpg	2	1	v	
+f29r_L08_s1.jpg	2	2	A	
+f29r_L08_s1.jpg	2	3	7	
+f29r_L08_s1.jpg	2	4	[C04]	
+f29r_L08_s1.jpg	2	5	[C11]	
+f29r_L08_s1.jpg	2	6	f	
+f29r_L08_s1.jpg	2	7	ψ	
+f29r_L08_s1.jpg	2	8	[C10]	
+f29r_L08_s1.jpg	2	9	[C04]	
+f29r_L08_s1.jpg	2	10	A	
+f29r_L08_s1.jpg	2	11	[C11]	
+f29r_L08_s1.jpg	2	12	[C04]	
+f29r_L08_s1.jpg	2	13	z	
+f29r_L08_s1.jpg	2	14	v	
+f29r_L08_s1.jpg	2	15	[C10]	
+f29r_L08_s1.jpg	2	16	I	
+f29r_L08_s1.jpg	2	17	z	
+f29r_L08_s1.jpg	2	18	v	
+f29r_L08_s1.jpg	2	19	A	
+f29r_L08_s1.jpg	2	20	[C10]	
+f29r_L08_s1.jpg	2	21	ψ	
+f29r_L08_s1.jpg	2	22	f	
+f29r_L08_s1.jpg	2	23	T	
+f29r_L08_s1.jpg	2	24	ψ	
+f29r_L08_s1.jpg	2	25	I	
+f29r_L08_s1.jpg	2	26	f	
+f29r_L08_s1.jpg	2	27	ψ	
+f29r_L08_s1.jpg	2	28	ρ	
+f29r_L08_s1.jpg	2	29	[C22]	
+f29r_L08_s1.jpg	2	30	v	
+f29r_L08_s1.jpg	2	31	E	
+f29r_L08_s1.jpg	2	32	[C04]	
+f29r_L08_s1.jpg	2	33	[C11]	line cut at crop edge, continues s2
+f29r_L08_s2.jpg	1	1	ψ	overlap-continuation, new tokens begin
+f29r_L08_s2.jpg	1	2	f	
+f29r_L08_s2.jpg	1	3	K	
+f29r_L08_s2.jpg	1	4	z	
+f29r_L08_s2.jpg	1	5	v	
+f29r_L08_s2.jpg	1	6	G	
+f29r_L08_s2.jpg	1	7	A	
+f29r_L08_s2.jpg	1	8	I	
+f29r_L08_s2.jpg	1	9	A	
+f29r_L08_s2.jpg	1	10	[C07]	
+f29r_L08_s2.jpg	1	11	o	
+f29r_L08_s2.jpg	1	12	I	
+f29r_L08_s2.jpg	1	13	A	
+f29r_L08_s2.jpg	1	14	ψ	
+f29r_L08_s2.jpg	1	15	[C10]	
+f29r_L08_s2.jpg	1	16	ψ	
+f29r_L08_s2.jpg	1	17	I	
+f29r_L08_s2.jpg	1	18	(dash)	
+f29r_L08_s2.jpg	1	19	7	line ends at crop right margin
+f29r_L08_s2.jpg	2	1	f	overlap-continuation, new tokens begin
+f29r_L08_s2.jpg	2	2	T	
+f29r_L08_s2.jpg	2	3	ψ	
+f29r_L08_s2.jpg	2	4	I	
+f29r_L08_s2.jpg	2	5	f	
+f29r_L08_s2.jpg	2	6	ψ	
+f29r_L08_s2.jpg	2	7	ρ	
+f29r_L08_s2.jpg	2	8	[C10]	
+f29r_L08_s2.jpg	2	9	v	
+f29r_L08_s2.jpg	2	10	E	
+f29r_L08_s2.jpg	2	11	[C04]	
+f29r_L08_s2.jpg	2	12	[C11]	
+f29r_L08_s2.jpg	2	13	ψ	
+f29r_L08_s2.jpg	2	14	[C04]	
+f29r_L08_s2.jpg	2	15	ρ	
+f29r_L08_s2.jpg	2	16	ψ	
+f29r_L08_s2.jpg	2	17	[C10]	
+f29r_L08_s2.jpg	2	18	T	
+f29r_L08_s2.jpg	2	19	[C11]	
+f29r_L08_s2.jpg	2	20	f	
+f29r_L08_s2.jpg	2	21	[C09]	
+f29r_L08_s2.jpg	2	22	ψ	
+f29r_L08_s2.jpg	2	23	T	
+f29r_L08_s2.jpg	2	24	[C10]	
+f29r_L08_s2.jpg	2	25	v	
+f29r_L08_s2.jpg	2	26	o	
+f29r_L08_s2.jpg	2	27	v	
+f29r_L08_s2.jpg	2	28	[C04]	
+f29r_L08_s2.jpg	2	29	ρ	
+f29r_L08_s2.jpg	2	30	f	
+f29r_L08_s2.jpg	2	31	[C04]	
+f29r_L08_s2.jpg	2	32	n	
+f29r_L08_s2.jpg	2	33	v	
+f29r_L08_s2.jpg	2	34	[C11]	line ends at crop right margin
+f29r_L09_s1.jpg	1	1	[C09]	
+f29r_L09_s1.jpg	1	2	E	
+f29r_L09_s1.jpg	1	3	[C09]	
+f29r_L09_s1.jpg	1	4	v	
+f29r_L09_s1.jpg	1	5	f	
+f29r_L09_s1.jpg	1	6	[C10]	
+f29r_L09_s1.jpg	1	7	ψ	
+f29r_L09_s1.jpg	1	8	[C04]	
+f29r_L09_s1.jpg	1	9	I	
+f29r_L09_s1.jpg	1	10	[C11]	
+f29r_L09_s1.jpg	1	11	f	
+f29r_L09_s1.jpg	1	12	ρ	
+f29r_L09_s1.jpg	1	13	A	
+f29r_L09_s1.jpg	1	14	z	
+f29r_L09_s1.jpg	1	15	I	
+f29r_L09_s1.jpg	1	16	[C04]	
+f29r_L09_s1.jpg	1	17	[C04]	
+f29r_L09_s1.jpg	1	18	z	
+f29r_L09_s1.jpg	1	19	v	
+f29r_L09_s1.jpg	1	20	[C10]	
+f29r_L09_s1.jpg	1	21	x	
+f29r_L09_s1.jpg	1	22	z	
+f29r_L09_s1.jpg	1	23	v	
+f29r_L09_s1.jpg	1	24	A	
+f29r_L09_s1.jpg	1	25	[C10]	
+f29r_L09_s1.jpg	1	26	o	
+f29r_L09_s1.jpg	1	27	A	
+f29r_L09_s1.jpg	1	28	s	
+f29r_L09_s1.jpg	1	29	[C11]	
+f29r_L09_s1.jpg	1	30	T	
+f29r_L09_s1.jpg	1	31	[C10]	
+f29r_L09_s1.jpg	1	32	v	
+f29r_L09_s1.jpg	1	33	A	line cut at crop edge, continues s2
+f29r_L09_s1.jpg	2	1	n	
+f29r_L09_s1.jpg	2	2	v	
+f29r_L09_s1.jpg	2	3	[C11]	
+f29r_L09_s1.jpg	2	4	o	
+f29r_L09_s1.jpg	2	5	v	
+f29r_L09_s1.jpg	2	6	ρ	
+f29r_L09_s1.jpg	2	7	I	
+f29r_L09_s1.jpg	2	8	[C09]	
+f29r_L09_s1.jpg	2	9	[C04]	
+f29r_L09_s1.jpg	2	10	[C09]	
+f29r_L09_s1.jpg	2	11	[C10]	
+f29r_L09_s1.jpg	2	12	ρ	
+f29r_L09_s1.jpg	2	13	z	
+f29r_L09_s1.jpg	2	14	f	
+f29r_L09_s1.jpg	2	15	f	
+f29r_L09_s1.jpg	2	16	ψ	
+f29r_L09_s1.jpg	2	17	[C07]	
+f29r_L09_s1.jpg	2	18	[C11]	
+f29r_L09_s1.jpg	2	19	A	
+f29r_L09_s1.jpg	2	20	z	
+f29r_L09_s1.jpg	2	21	I	
+f29r_L09_s1.jpg	2	22	[C04]	
+f29r_L09_s1.jpg	2	23	x	
+f29r_L09_s1.jpg	2	24	o	
+f29r_L09_s1.jpg	2	25	E	
+f29r_L09_s1.jpg	2	26	[C19]	
+f29r_L09_s1.jpg	2	27	I	
+f29r_L09_s1.jpg	2	28	[C11]	
+f29r_L09_s1.jpg	2	29	f	
+f29r_L09_s1.jpg	2	30	ρ	
+f29r_L09_s1.jpg	2	31	I	line cut at crop edge, continues s2
+f29r_L09_s2.jpg	1	1	A	overlap-continuation, new tokens begin
+f29r_L09_s2.jpg	1	2	s	
+f29r_L09_s2.jpg	1	3	[C11]	
+f29r_L09_s2.jpg	1	4	T	
+f29r_L09_s2.jpg	1	5	[C10]	
+f29r_L09_s2.jpg	1	6	v	
+f29r_L09_s2.jpg	1	7	A	
+f29r_L09_s2.jpg	1	8	ρ	
+f29r_L09_s2.jpg	1	9	o	
+f29r_L09_s2.jpg	1	10	ρ	
+f29r_L09_s2.jpg	1	11	z	
+f29r_L09_s2.jpg	1	12	v	
+f29r_L09_s2.jpg	1	13	[C04]	
+f29r_L09_s2.jpg	1	14	[C11]	
+f29r_L09_s2.jpg	1	15	n	
+f29r_L09_s2.jpg	1	16	v	
+f29r_L09_s2.jpg	1	17	[C11]	
+f29r_L09_s2.jpg	1	18	ρ	
+f29r_L09_s2.jpg	1	19	z	
+f29r_L09_s2.jpg	1	20	f	
+f29r_L09_s2.jpg	1	21	o	
+f29r_L09_s2.jpg	1	22	v	
+f29r_L09_s2.jpg	1	23	A	
+f29r_L09_s2.jpg	1	24	z	
+f29r_L09_s2.jpg	1	25	I	
+f29r_L09_s2.jpg	1	26	[C04]	
+f29r_L09_s2.jpg	1	27	[C09]	
+f29r_L09_s2.jpg	1	28	7	line ends at crop right margin
+f29r_L09_s2.jpg	2	1	z	overlap-continuation, new tokens begin
+f29r_L09_s2.jpg	2	2	I	
+f29r_L09_s2.jpg	2	3	[C04]	
+f29r_L09_s2.jpg	2	4	x	
+f29r_L09_s2.jpg	2	5	o	
+f29r_L09_s2.jpg	2	6	E	
+f29r_L09_s2.jpg	2	7	[C19]	
+f29r_L09_s2.jpg	2	8	I	
+f29r_L09_s2.jpg	2	9	[C11]	
+f29r_L09_s2.jpg	2	10	f	
+f29r_L09_s2.jpg	2	11	ρ	
+f29r_L09_s2.jpg	2	12	I	
+f29r_L09_s2.jpg	2	13	[C09]	
+f29r_L09_s2.jpg	2	14	[C04]	
+f29r_L09_s2.jpg	2	15	n	
+f29r_L09_s2.jpg	2	16	v	
+f29r_L09_s2.jpg	2	17	[C11]	
+f29r_L09_s2.jpg	2	18	o	
+f29r_L09_s2.jpg	2	19	n	
+f29r_L09_s2.jpg	2	20	K	
+f29r_L09_s2.jpg	2	21	ψ	
+f29r_L09_s2.jpg	2	22	[C09]	
+f29r_L09_s2.jpg	2	23	E	
+f29r_L09_s2.jpg	2	24	z	
+f29r_L09_s2.jpg	2	25	[C10]	
+f29r_L09_s2.jpg	2	26	[C11]	
+f29r_L09_s2.jpg	2	27	[C14]	
+f29r_L09_s2.jpg	2	28	[C10]	
+f29r_L09_s2.jpg	2	29	o	
+f29r_L09_s2.jpg	2	30	[C10]	
+f29r_L09_s2.jpg	2	31	ρ	
+f29r_L09_s2.jpg	2	32	[C10]	
+f29r_L09_s2.jpg	2	33	o	line ends at crop right margin
+f29r_L10_s1.jpg	1	1	x	
+f29r_L10_s1.jpg	1	2	f	
+f29r_L10_s1.jpg	1	3	[C09]	
+f29r_L10_s1.jpg	1	4	ψ	
+f29r_L10_s1.jpg	1	5	[C04]	
+f29r_L10_s1.jpg	1	6	[C11]	
+f29r_L10_s1.jpg	1	7	[C10]	
+f29r_L10_s1.jpg	1	8	v	
+f29r_L10_s1.jpg	1	9	A	
+f29r_L10_s1.jpg	1	10	[C09]	
+f29r_L10_s1.jpg	1	11	ψ	
+f29r_L10_s1.jpg	1	12	ρ	
+f29r_L10_s1.jpg	1	13	ρ	
+f29r_L10_s1.jpg	1	14	o	
+f29r_L10_s1.jpg	1	15	v	
+f29r_L10_s1.jpg	1	16	s	
+f29r_L10_s1.jpg	1	17	A	
+f29r_L10_s1.jpg	1	18	I	
+f29r_L10_s1.jpg	1	19	f	
+f29r_L10_s1.jpg	1	20	[C11]	
+f29r_L10_s1.jpg	1	21	[C10]	
+f29r_L10_s1.jpg	1	22	S	
+f29r_L10_s1.jpg	1	23	o	
+f29r_L10_s1.jpg	1	24	ρ	
+f29r_L10_s1.jpg	1	25	n	
+f29r_L10_s1.jpg	1	26	v	
+f29r_L10_s1.jpg	1	27	x	
+f29r_L10_s1.jpg	1	28	o	
+f29r_L10_s1.jpg	1	29	E	
+f29r_L10_s1.jpg	1	30	T	
+f29r_L10_s1.jpg	1	31	ψ	line cut at crop edge, continues s2
+f29r_L10_s1.jpg	2	1	ρ	
+f29r_L10_s1.jpg	2	2	[C07]	
+f29r_L10_s1.jpg	2	3	[C11]	
+f29r_L10_s1.jpg	2	4	A	
+f29r_L10_s1.jpg	2	5	z	
+f29r_L10_s1.jpg	2	6	I	
+f29r_L10_s1.jpg	2	7	[C04]	
+f29r_L10_s1.jpg	2	8	[C19]	
+f29r_L10_s1.jpg	2	9	I	
+f29r_L10_s1.jpg	2	10	[C11]	
+f29r_L10_s1.jpg	2	11	f	
+f29r_L10_s1.jpg	2	12	o	
+f29r_L10_s1.jpg	2	13	ρ	
+f29r_L10_s1.jpg	2	14	v	
+f29r_L10_s1.jpg	2	15	A	
+f29r_L10_s1.jpg	2	16	[C04]	
+f29r_L10_s1.jpg	2	17	x	
+f29r_L10_s1.jpg	2	18	A	
+f29r_L10_s1.jpg	2	19	L	
+f29r_L10_s1.jpg	2	20	o	
+f29r_L10_s1.jpg	2	21	[C11]	
+f29r_L10_s1.jpg	2	22	o	
+f29r_L10_s1.jpg	2	23	ρ	
+f29r_L10_s1.jpg	2	24	ψ	
+f29r_L10_s1.jpg	2	25	[C04]	
+f29r_L10_s1.jpg	2	26	z	
+f29r_L10_s1.jpg	2	27	v	
+f29r_L10_s1.jpg	2	28	[C04]	
+f29r_L10_s1.jpg	2	29	7	
+f29r_L10_s1.jpg	2	30	[C04]	
+f29r_L10_s1.jpg	2	31	ρ	
+f29r_L10_s1.jpg	2	32	I	line cut at crop edge, continues s2
+f29r_L10_s2.jpg	1	1	v	overlap-continuation, new tokens begin
+f29r_L10_s2.jpg	1	2	o	
+f29r_L10_s2.jpg	1	3	n	
+f29r_L10_s2.jpg	1	4	v	
+f29r_L10_s2.jpg	1	5	A	
+f29r_L10_s2.jpg	1	6	E	
+f29r_L10_s2.jpg	1	7	x	
+f29r_L10_s2.jpg	1	8	ρ	
+f29r_L10_s2.jpg	1	9	s	
+f29r_L10_s2.jpg	1	10	o	
+f29r_L10_s2.jpg	1	11	A	
+f29r_L10_s2.jpg	1	12	ψ	
+f29r_L10_s2.jpg	1	13	[C10]	
+f29r_L10_s2.jpg	1	14	T	
+f29r_L10_s2.jpg	1	15	z	
+f29r_L10_s2.jpg	1	16	f	
+f29r_L10_s2.jpg	1	17	q	
+f29r_L10_s2.jpg	1	18	v	
+f29r_L10_s2.jpg	1	19	n	
+f29r_L10_s2.jpg	1	20	v	
+f29r_L10_s2.jpg	1	21	x	line ends at crop right margin
+f29r_L10_s2.jpg	2	1	f	overlap-continuation, new tokens begin
+f29r_L10_s2.jpg	2	2	[C11]	
+f29r_L10_s2.jpg	2	3	[C04]	
+f29r_L10_s2.jpg	2	4	I	
+f29r_L10_s2.jpg	2	5	z	
+f29r_L10_s2.jpg	2	6	f	
+f29r_L10_s2.jpg	2	7	o	
+f29r_L10_s2.jpg	2	8	n	
+f29r_L10_s2.jpg	2	9	v	
+f29r_L10_s2.jpg	2	10	A	
+f29r_L10_s2.jpg	2	11	E	
+f29r_L10_s2.jpg	2	12	[C10]	
+f29r_L10_s2.jpg	2	13	ρ	
+f29r_L10_s2.jpg	2	14	[C10]	
+f29r_L10_s2.jpg	2	15	[C21]	
+f29r_L10_s2.jpg	2	16	I	
+f29r_L10_s2.jpg	2	17	f	
+f29r_L10_s2.jpg	2	18	[C09]	
+f29r_L10_s2.jpg	2	19	[C04]	
+f29r_L10_s2.jpg	2	20	[C11]	line ends at crop right margin
+f29r_L11_s1.jpg	1	1	[C04]	
+f29r_L11_s1.jpg	1	2	ψ	
+f29r_L11_s1.jpg	1	3	[C04]	
+f29r_L11_s1.jpg	1	4	ψ	
+f29r_L11_s1.jpg	1	5	f	
+f29r_L11_s1.jpg	1	6	ρ	
+f29r_L11_s1.jpg	1	7	z	
+f29r_L11_s1.jpg	1	8	I	
+f29r_L11_s1.jpg	1	9	[C04]	
+f29r_L11_s1.jpg	1	10	T	
+f29r_L11_s1.jpg	1	11	o	
+f29r_L11_s1.jpg	1	12	A	
+f29r_L11_s1.jpg	1	13	[C09]	
+f29r_L11_s1.jpg	1	14	ψ	
+f29r_L11_s1.jpg	1	15	ρ	
+f29r_L11_s1.jpg	1	16	n	
+f29r_L11_s1.jpg	1	17	v	
+f29r_L11_s1.jpg	1	18	[C11]	
+f29r_L11_s1.jpg	1	19	[C10]	
+f29r_L11_s1.jpg	1	20	ψ	
+f29r_L11_s1.jpg	1	21	ρ	
+f29r_L11_s1.jpg	1	22	z	
+f29r_L11_s1.jpg	1	23	f	
+f29r_L11_s1.jpg	1	24	[C10]	
+f29r_L11_s1.jpg	1	25	A	
+f29r_L11_s1.jpg	1	26	f	
+f29r_L11_s1.jpg	1	27	ρ	
+f29r_L11_s1.jpg	1	28	x	
+f29r_L11_s1.jpg	1	29	A	
+f29r_L11_s1.jpg	1	30	[C11]	
+f29r_L11_s1.jpg	1	31	f	line cut at crop edge, continues s2
+f29r_L11_s1.jpg	2	1	o	
+f29r_L11_s1.jpg	2	2	v	
+f29r_L11_s1.jpg	2	3	ψ	
+f29r_L11_s1.jpg	2	4	[C14]	
+f29r_L11_s1.jpg	2	5	[C04]	
+f29r_L11_s1.jpg	2	6	A	
+f29r_L11_s1.jpg	2	7	[C11]	
+f29r_L11_s1.jpg	2	8	[C10]	
+f29r_L11_s1.jpg	2	9	[C19]	
+f29r_L11_s1.jpg	2	10	I	
+f29r_L11_s1.jpg	2	11	[C11]	
+f29r_L11_s1.jpg	2	12	f	
+f29r_L11_s1.jpg	2	13	x	
+f29r_L11_s1.jpg	2	14	[C10]	
+f29r_L11_s1.jpg	2	15	I	
+f29r_L11_s1.jpg	2	16	ρ	
+f29r_L11_s1.jpg	2	17	ψ	
+f29r_L11_s1.jpg	2	18	A	
+f29r_L11_s1.jpg	2	19	[C11]	
+f29r_L11_s1.jpg	2	20	A	
+f29r_L11_s1.jpg	2	21	[C10]	
+f29r_L11_s1.jpg	2	22	v	
+f29r_L11_s1.jpg	2	23	A	
+f29r_L11_s1.jpg	2	24	[C09]	
+f29r_L11_s1.jpg	2	25	ψ	
+f29r_L11_s1.jpg	2	26	ρ	
+f29r_L11_s1.jpg	2	27	I	
+f29r_L11_s1.jpg	2	28	[C10]	
+f29r_L11_s1.jpg	2	29	[C09]	
+f29r_L11_s1.jpg	2	30	z	line cut at crop edge, continues s2
+f29r_L11_s2.jpg	1	1	ψ	overlap-continuation, new tokens begin
+f29r_L11_s2.jpg	1	2	[C10]	
+f29r_L11_s2.jpg	1	3	[C04]	
+f29r_L11_s2.jpg	1	4	n	
+f29r_L11_s2.jpg	1	5	v	
+f29r_L11_s2.jpg	1	6	7	
+f29r_L11_s2.jpg	1	7	[C19]	
+f29r_L11_s2.jpg	1	8	z	
+f29r_L11_s2.jpg	1	9	A	
+f29r_L11_s2.jpg	1	10	[C11]	
+f29r_L11_s2.jpg	1	11	s	
+f29r_L11_s2.jpg	1	12	o	
+f29r_L11_s2.jpg	1	13	I	
+f29r_L11_s2.jpg	1	14	[C10]	
+f29r_L11_s2.jpg	1	15	[C14]	
+f29r_L11_s2.jpg	1	16	R	
+f29r_L11_s2.jpg	1	17	z	
+f29r_L11_s2.jpg	1	18	v	
+f29r_L11_s2.jpg	1	19	[C10]	
+f29r_L11_s2.jpg	1	20	[C10]	
+f29r_L11_s2.jpg	1	21	[C09]	line ends at crop right margin
+f29r_L11_s2.jpg	2	1	ρ	overlap-continuation, new tokens begin
+f29r_L11_s2.jpg	2	2	[C10]	
+f29r_L11_s2.jpg	2	3	v	
+f29r_L11_s2.jpg	2	4	A	
+f29r_L11_s2.jpg	2	5	[C09]	
+f29r_L11_s2.jpg	2	6	ψ	
+f29r_L11_s2.jpg	2	7	ρ	
+f29r_L11_s2.jpg	2	8	I	
+f29r_L11_s2.jpg	2	9	[C10]	
+f29r_L11_s2.jpg	2	10	[C09]	
+f29r_L11_s2.jpg	2	11	z	
+f29r_L11_s2.jpg	2	12	v	
+f29r_L11_s2.jpg	2	13	A	
+f29r_L11_s2.jpg	2	14	[C10]	
+f29r_L11_s2.jpg	2	15	ρ	
+f29r_L11_s2.jpg	2	16	ψ	
+f29r_L11_s2.jpg	2	17	[C10]	
+f29r_L11_s2.jpg	2	18	T	
+f29r_L11_s2.jpg	2	19	o	
+f29r_L11_s2.jpg	2	20	ψ	
+f29r_L11_s2.jpg	2	21	[C04]	
+f29r_L11_s2.jpg	2	22	[C14]	
+f29r_L11_s2.jpg	2	23	ρ	
+f29r_L11_s2.jpg	2	24	I	
+f29r_L11_s2.jpg	2	25	[C09]	
+f29r_L11_s2.jpg	2	26	[C11]	
+f29r_L11_s2.jpg	2	27	[C14]	
+f29r_L11_s2.jpg	2	28	o	
+f29r_L11_s2.jpg	2	29	v	
+f29r_L11_s2.jpg	2	30	E	
+f29r_L11_s2.jpg	2	31	n	
+f29r_L11_s2.jpg	2	32	R	
+f29r_L11_s2.jpg	2	33	x	line ends at crop right margin
+f29r_L12_s1.jpg	1	1	T	
+f29r_L12_s1.jpg	1	2	[C11]	
+f29r_L12_s1.jpg	1	3	v	
+f29r_L12_s1.jpg	1	4	7	
+f29r_L12_s1.jpg	1	5	f	
+f29r_L12_s1.jpg	1	6	[C04]	
+f29r_L12_s1.jpg	1	7	[C11]	
+f29r_L12_s1.jpg	1	8	[C10]	
+f29r_L12_s1.jpg	1	9	[C04]	
+f29r_L12_s1.jpg	1	10	A	
+f29r_L12_s1.jpg	1	11	7	
+f29r_L12_s1.jpg	1	12	T	
+f29r_L12_s1.jpg	1	13	A	
+f29r_L12_s1.jpg	1	14	z	
+f29r_L12_s1.jpg	1	15	o	
+f29r_L12_s1.jpg	1	16	ψ	
+f29r_L12_s1.jpg	1	17	ρ	
+f29r_L12_s1.jpg	1	18	[C11]	
+f29r_L12_s1.jpg	1	19	[C14]	
+f29r_L12_s1.jpg	1	20	ρ	
+f29r_L12_s1.jpg	1	21	ψ	
+f29r_L12_s1.jpg	1	22	ρ	
+f29r_L12_s1.jpg	1	23	x	
+f29r_L12_s1.jpg	1	24	f	
+f29r_L12_s1.jpg	1	25	v	
+f29r_L12_s1.jpg	1	26	7	
+f29r_L12_s1.jpg	1	27	f	
+f29r_L12_s1.jpg	1	28	[C04]	
+f29r_L12_s1.jpg	1	29	I	
+f29r_L12_s1.jpg	1	30	z	
+f29r_L12_s1.jpg	1	31	f	
+f29r_L12_s1.jpg	1	32	ρ	line cut at crop edge, continues s2
+f29r_L12_s1.jpg	2	1	A	
+f29r_L12_s1.jpg	2	2	I	
+f29r_L12_s1.jpg	2	3	[C04]	
+f29r_L12_s1.jpg	2	4	ψ	
+f29r_L12_s1.jpg	2	5	f	
+f29r_L12_s1.jpg	2	6	[C11]	
+f29r_L12_s1.jpg	2	7	[C09]	
+f29r_L12_s1.jpg	2	8	E	
+f29r_L12_s1.jpg	2	9	ψ	
+f29r_L12_s1.jpg	2	10	A	
+f29r_L12_s1.jpg	2	11	[C09]	
+f29r_L12_s1.jpg	2	12	E	
+f29r_L12_s1.jpg	2	13	[C11]	
+f29r_L12_s1.jpg	2	14	n	
+f29r_L12_s1.jpg	2	15	v	
+f29r_L12_s1.jpg	2	16	[C11]	
+f29r_L12_s1.jpg	2	17	ρ	
+f29r_L12_s1.jpg	2	18	o	
+f29r_L12_s1.jpg	2	19	o	
+f29r_L12_s1.jpg	2	20	A	
+f29r_L12_s1.jpg	2	21	v	
+f29r_L12_s1.jpg	2	22	[C09]	
+f29r_L12_s1.jpg	2	23	f	
+f29r_L12_s1.jpg	2	24	[C11]	
+f29r_L12_s1.jpg	2	25	ρ	
+f29r_L12_s1.jpg	2	26	ψ	
+f29r_L12_s1.jpg	2	27	[C10]	
+f29r_L12_s1.jpg	2	28	z	
+f29r_L12_s1.jpg	2	29	f	
+f29r_L12_s1.jpg	2	30	S	
+f29r_L12_s1.jpg	2	31	o	
+f29r_L12_s1.jpg	2	32	I	
+f29r_L12_s1.jpg	2	33	[C10]	line cut at crop edge, continues s2
+f29r_L12_s2.jpg	1	1	ψ	overlap-continuation, new tokens begin
+f29r_L12_s2.jpg	1	2	ρ	
+f29r_L12_s2.jpg	1	3	x	
+f29r_L12_s2.jpg	1	4	f	
+f29r_L12_s2.jpg	1	5	v	
+f29r_L12_s2.jpg	1	6	7	
+f29r_L12_s2.jpg	1	7	f	
+f29r_L12_s2.jpg	1	8	[C04]	
+f29r_L12_s2.jpg	1	9	I	
+f29r_L12_s2.jpg	1	10	z	
+f29r_L12_s2.jpg	1	11	f	
+f29r_L12_s2.jpg	1	12	ρ	
+f29r_L12_s2.jpg	1	13	ψ	
+f29r_L12_s2.jpg	1	14	a	
+f29r_L12_s2.jpg	1	15	[C10]	
+f29r_L12_s2.jpg	1	16	n	
+f29r_L12_s2.jpg	1	17	v	
+f29r_L12_s2.jpg	1	18	x	
+f29r_L12_s2.jpg	1	19	[C10]	
+f29r_L12_s2.jpg	1	20	z	
+f29r_L12_s2.jpg	1	21	v	
+f29r_L12_s2.jpg	1	22	[C19]	
+f29r_L12_s2.jpg	1	23	[C14]	
+f29r_L12_s2.jpg	1	24	R	
+f29r_L12_s2.jpg	1	25	s	
+f29r_L12_s2.jpg	1	26	[C19]	
+f29r_L12_s2.jpg	1	27	A	
+f29r_L12_s2.jpg	1	28	[C11]	
+f29r_L12_s2.jpg	1	29	ρ	
+f29r_L12_s2.jpg	1	30	ψ	
+f29r_L12_s2.jpg	1	31	[C09]	
+f29r_L12_s2.jpg	1	32	[C26]	circle with a dot inside, distinct from C19/C21, new code
+f29r_L12_s2.jpg	1	33	o	line ends at crop right margin
+f29r_L12_s2.jpg	2	1	v	overlap-continuation, new tokens begin
+f29r_L12_s2.jpg	2	2	[C26]	
+f29r_L12_s2.jpg	2	3	f	
+f29r_L12_s2.jpg	2	4	[C11]	
+f29r_L12_s2.jpg	2	5	ρ	
+f29r_L12_s2.jpg	2	6	ψ	
+f29r_L12_s2.jpg	2	7	[C10]	
+f29r_L12_s2.jpg	2	8	z	
+f29r_L12_s2.jpg	2	9	f	
+f29r_L12_s2.jpg	2	10	S	
+f29r_L12_s2.jpg	2	11	o	
+f29r_L12_s2.jpg	2	12	I	
+f29r_L12_s2.jpg	2	13	[C10]	
+f29r_L12_s2.jpg	2	14	[C04]	
+f29r_L12_s2.jpg	2	15	A	
+f29r_L12_s2.jpg	2	16	[C11]	
+f29r_L12_s2.jpg	2	17	7	
+f29r_L12_s2.jpg	2	18	[C09]	
+f29r_L12_s2.jpg	2	19	ρ	
+f29r_L12_s2.jpg	2	20	ψ	
+f29r_L12_s2.jpg	2	21	[C04]	
+f29r_L12_s2.jpg	2	22	z	
+f29r_L12_s2.jpg	2	23	v	
+f29r_L12_s2.jpg	2	24	[C04]	
+f29r_L12_s2.jpg	2	25	ρ	
+f29r_L12_s2.jpg	2	26	ψ	
+f29r_L12_s2.jpg	2	27	s	
+f29r_L12_s2.jpg	2	28	z	
+f29r_L12_s2.jpg	2	29	f	
+f29r_L12_s2.jpg	2	30	ρ	
+f29r_L12_s2.jpg	2	31	[C11]	
+f29r_L12_s2.jpg	2	32	T	
+f29r_L12_s2.jpg	2	33	z	
+f29r_L12_s2.jpg	2	34	v	
+f29r_L12_s2.jpg	2	35	A	line ends at crop right margin
+f29r_L13_s1.jpg	1	1	[C07]	
+f29r_L13_s1.jpg	1	2	o	
+f29r_L13_s1.jpg	1	3	I	
+f29r_L13_s1.jpg	1	4	A	
+f29r_L13_s1.jpg	1	5	ψ	
+f29r_L13_s1.jpg	1	6	[C11]	
+f29r_L13_s1.jpg	1	7	A	
+f29r_L13_s1.jpg	1	8	o	
+f29r_L13_s1.jpg	1	9	f	
+f29r_L13_s1.jpg	1	10	[C04]	
+f29r_L13_s1.jpg	1	11	[C09]	
+f29r_L13_s1.jpg	1	12	ψ	
+f29r_L13_s1.jpg	1	13	[C10]	
+f29r_L13_s1.jpg	1	14	[C04]	
+f29r_L13_s1.jpg	1	15	o	
+f29r_L13_s1.jpg	1	16	[C11]	
+f29r_L13_s1.jpg	1	17	o	
+f29r_L13_s1.jpg	1	18	[C24]	
+f29r_L13_s1.jpg	1	19	n	
+f29r_L13_s1.jpg	1	20	v	
+f29r_L13_s1.jpg	1	21	x	
+f29r_L13_s1.jpg	1	22	ρ	
+f29r_L13_s1.jpg	1	23	ψ	
+f29r_L13_s1.jpg	1	24	[C10]	
+f29r_L13_s1.jpg	1	25	T	
+f29r_L13_s1.jpg	1	26	[C11]	
+f29r_L13_s1.jpg	1	27	A	
+f29r_L13_s1.jpg	1	28	ψ	
+f29r_L13_s1.jpg	1	29	[C10]	
+f29r_L13_s1.jpg	1	30	ψ	line cut at crop edge, continues s2
+f29r_L13_s1.jpg	2	1	ρ	
+f29r_L13_s1.jpg	2	2	ψ	
+f29r_L13_s1.jpg	2	3	[C18]	
+f29r_L13_s1.jpg	2	4	A	
+f29r_L13_s1.jpg	2	5	I	
+f29r_L13_s1.jpg	2	6	A	
+f29r_L13_s1.jpg	2	7	[C07]	
+f29r_L13_s1.jpg	2	8	o	
+f29r_L13_s1.jpg	2	9	I	
+f29r_L13_s1.jpg	2	10	A	
+f29r_L13_s1.jpg	2	11	ψ	
+f29r_L13_s1.jpg	2	12	T	
+f29r_L13_s1.jpg	2	13	O	
+f29r_L13_s1.jpg	2	14	T	
+f29r_L13_s1.jpg	2	15	[C11]	
+f29r_L13_s1.jpg	2	16	7	
+f29r_L13_s1.jpg	2	17	[C04]	
+f29r_L13_s1.jpg	2	18	ρ	
+f29r_L13_s1.jpg	2	19	ψ	
+f29r_L13_s1.jpg	2	20	T	
+f29r_L13_s1.jpg	2	21	z	
+f29r_L13_s1.jpg	2	22	[C10]	
+f29r_L13_s1.jpg	2	23	ψ	
+f29r_L13_s1.jpg	2	24	A	
+f29r_L13_s1.jpg	2	25	[C10]	
+f29r_L13_s1.jpg	2	26	[C04]	
+f29r_L13_s1.jpg	2	27	f	
+f29r_L13_s1.jpg	2	28	[C10]	
+f29r_L13_s1.jpg	2	29	s	
+f29r_L13_s1.jpg	2	30	O	line cut at crop edge, continues s2
+f29r_L13_s2.jpg	1	1	[C09]	overlap-continuation, new tokens begin
+f29r_L13_s2.jpg	1	2	v	
+f29r_L13_s2.jpg	1	3	x	
+f29r_L13_s2.jpg	1	4	ρ	
+f29r_L13_s2.jpg	1	5	ψ	
+f29r_L13_s2.jpg	1	6	[C10]	
+f29r_L13_s2.jpg	1	7	T	
+f29r_L13_s2.jpg	1	8	[C11]	
+f29r_L13_s2.jpg	1	9	A	
+f29r_L13_s2.jpg	1	10	ψ	
+f29r_L13_s2.jpg	1	11	[C10]	
+f29r_L13_s2.jpg	1	12	ψ	
+f29r_L13_s2.jpg	1	13	ρ	
+f29r_L13_s2.jpg	1	14	z	
+f29r_L13_s2.jpg	1	15	f	
+f29r_L13_s2.jpg	1	16	n	
+f29r_L13_s2.jpg	1	17	v	
+f29r_L13_s2.jpg	1	18	[C11]	
+f29r_L13_s2.jpg	1	19	[C04]	
+f29r_L13_s2.jpg	1	20	I	
+f29r_L13_s2.jpg	1	21	ψ	
+f29r_L13_s2.jpg	1	22	A	
+f29r_L13_s2.jpg	1	23	7	
+f29r_L13_s2.jpg	1	24	f	
+f29r_L13_s2.jpg	1	25	[C04]	
+f29r_L13_s2.jpg	1	26	o	
+f29r_L13_s2.jpg	1	27	v	
+f29r_L13_s2.jpg	1	28	[C09]	
+f29r_L13_s2.jpg	1	29	v	
+f29r_L13_s2.jpg	1	30	f	
+f29r_L13_s2.jpg	1	31	[C10]	
+f29r_L13_s2.jpg	1	32	ρ	
+f29r_L13_s2.jpg	1	33	7	line ends at crop right margin
+f29r_L13_s2.jpg	2	1	x	overlap-continuation, new tokens begin
+f29r_L13_s2.jpg	2	2	[C10]	
+f29r_L13_s2.jpg	2	3	K	
+f29r_L13_s2.jpg	2	4	[C04]	
+f29r_L13_s2.jpg	2	5	A	
+f29r_L13_s2.jpg	2	6	o	
+f29r_L13_s2.jpg	2	7	[C11]	
+f29r_L13_s2.jpg	2	8	[C06]	
+f29r_L13_s2.jpg	2	9	ψ	
+f29r_L13_s2.jpg	2	10	m	
+f29r_L13_s2.jpg	2	11	(.	line ends; punctuation/paragraph mark
+f29r_L14_s1.jpg	1	1	K	
+f29r_L14_s1.jpg	1	2	[C14]	
+f29r_L14_s1.jpg	1	3	[C10]	
+f29r_L14_s1.jpg	1	4	m	
+f29r_L14_s1.jpg	1	5	y	
+f29r_L14_s1.jpg	1	6	S	
+f29r_L14_s1.jpg	1	7	o	
+f29r_L14_s1.jpg	1	8	ψ	
+f29r_L14_s1.jpg	1	9	f	
+f29r_L14_s1.jpg	1	10	[C09]	
+f29r_L14_s1.jpg	1	11	z	
+f29r_L14_s1.jpg	1	12	A	
+f29r_L14_s1.jpg	1	13	[C11]	
+f29r_L14_s1.jpg	1	14	[C10]	
+f29r_L14_s1.jpg	1	15	ρ	
+f29r_L14_s1.jpg	1	16	x	
+f29r_L14_s1.jpg	1	17	[C09]	
+f29r_L14_s1.jpg	1	18	[C04]	
+f29r_L14_s1.jpg	1	19	n	
+f29r_L14_s1.jpg	1	20	v	
+f29r_L14_s1.jpg	1	21	[C11]	
+f29r_L14_s1.jpg	1	22	x	
+f29r_L14_s1.jpg	1	23	[C19]	
+f29r_L14_s1.jpg	1	24	I	
+f29r_L14_s1.jpg	1	25	ψ	
+f29r_L14_s1.jpg	1	26	f	
+f29r_L14_s1.jpg	1	27	n	
+f29r_L14_s1.jpg	1	28	v	
+f29r_L14_s1.jpg	1	29	I	
+f29r_L14_s1.jpg	1	30	ρ	
+f29r_L14_s1.jpg	1	31	[C04]	line cut at crop edge, continues s2
+f29r_L14_s1.jpg	2	1	[C09]	
+f29r_L14_s1.jpg	2	2	n	
+f29r_L14_s1.jpg	2	3	v	
+f29r_L14_s1.jpg	2	4	[C11]	
+f29r_L14_s1.jpg	2	5	ρ	
+f29r_L14_s1.jpg	2	6	ψ	
+f29r_L14_s1.jpg	2	7	ρ	
+f29r_L14_s1.jpg	2	8	[C11]	
+f29r_L14_s1.jpg	2	9	[C09]	
+f29r_L14_s1.jpg	2	10	o	
+f29r_L14_s1.jpg	2	11	ρ	
+f29r_L14_s1.jpg	2	12	q	
+f29r_L14_s1.jpg	2	13	T	
+f29r_L14_s1.jpg	2	14	ρ	
+f29r_L14_s1.jpg	2	15	v	
+f29r_L14_s1.jpg	2	16	[C10]	
+f29r_L14_s1.jpg	2	17	[C10]	
+f29r_L14_s1.jpg	2	18	[C09]	
+f29r_L14_s1.jpg	2	19	[C11]	
+f29r_L14_s1.jpg	2	20	v	
+f29r_L14_s1.jpg	2	21	A	
+f29r_L14_s1.jpg	2	22	ψ	
+f29r_L14_s1.jpg	2	23	7	
+f29r_L14_s1.jpg	2	24	[C04]	
+f29r_L14_s1.jpg	2	25	S	
+f29r_L14_s1.jpg	2	26	ψ	
+f29r_L14_s1.jpg	2	27	I	
+f29r_L14_s1.jpg	2	28	G	
+f29r_L14_s1.jpg	2	29	[C11]	
+f29r_L14_s1.jpg	2	30	v	
+f29r_L14_s1.jpg	2	31	A	
+f29r_L14_s1.jpg	2	32	[C09]	
+f29r_L14_s1.jpg	2	33	E	line cut at crop edge, continues s2
+f29r_L14_s2.jpg	1	1	[C11]	overlap-continuation, new tokens begin
+f29r_L14_s2.jpg	1	2	x	
+f29r_L14_s2.jpg	1	3	[C19]	
+f29r_L14_s2.jpg	1	4	I	
+f29r_L14_s2.jpg	1	5	ψ	
+f29r_L14_s2.jpg	1	6	f	
+f29r_L14_s2.jpg	1	7	n	
+f29r_L14_s2.jpg	1	8	v	
+f29r_L14_s2.jpg	1	9	I	
+f29r_L14_s2.jpg	1	10	ρ	
+f29r_L14_s2.jpg	1	11	[C04]	
+f29r_L14_s2.jpg	1	12	A	
+f29r_L14_s2.jpg	1	13	z	
+f29r_L14_s2.jpg	1	14	3	
+f29r_L14_s2.jpg	1	15	ψ	
+f29r_L14_s2.jpg	1	16	ρ	
+f29r_L14_s2.jpg	1	17	ψ	
+f29r_L14_s2.jpg	1	18	6	
+f29r_L14_s2.jpg	1	19	7	
+f29r_L14_s2.jpg	1	20	[C09]	
+f29r_L14_s2.jpg	1	21	v	
+f29r_L14_s2.jpg	1	22	[C04]	
+f29r_L14_s2.jpg	1	23	I	
+f29r_L14_s2.jpg	1	24	z	
+f29r_L14_s2.jpg	1	25	f	
+f29r_L14_s2.jpg	1	26	ρ	
+f29r_L14_s2.jpg	1	27	ψ	
+f29r_L14_s2.jpg	1	28	ρ	
+f29r_L14_s2.jpg	1	29	o	
+f29r_L14_s2.jpg	1	30	T	
+f29r_L14_s2.jpg	1	31	A	
+f29r_L14_s2.jpg	1	32	o	
+f29r_L14_s2.jpg	1	33	[C04]	
+f29r_L14_s2.jpg	1	34	I	line ends at crop right margin
+f29r_L14_s2.jpg	2	1	[C04]	overlap-continuation, new tokens begin
+f29r_L14_s2.jpg	2	2	7	
+f29r_L14_s2.jpg	2	3	S	
+f29r_L14_s2.jpg	2	4	ψ	
+f29r_L14_s2.jpg	2	5	I	
+f29r_L14_s2.jpg	2	6	G	
+f29r_L14_s2.jpg	2	7	[C11]	
+f29r_L14_s2.jpg	2	8	v	
+f29r_L14_s2.jpg	2	9	A	
+f29r_L14_s2.jpg	2	10	[C09]	
+f29r_L14_s2.jpg	2	11	E	
+f29r_L14_s2.jpg	2	12	z	
+f29r_L14_s2.jpg	2	13	[C10]	
+f29r_L14_s2.jpg	2	14	ψ	
+f29r_L14_s2.jpg	2	15	T	
+f29r_L14_s2.jpg	2	16	z	
+f29r_L14_s2.jpg	2	17	v	
+f29r_L14_s2.jpg	2	18	A	
+f29r_L14_s2.jpg	2	19	R	
+f29r_L14_s2.jpg	2	20	ψ	
+f29r_L14_s2.jpg	2	21	f	
+f29r_L14_s2.jpg	2	22	I	
+f29r_L14_s2.jpg	2	23	A	
+f29r_L14_s2.jpg	2	24	o	
+f29r_L14_s2.jpg	2	25	v	
+f29r_L14_s2.jpg	2	26	6	
+f29r_L14_s2.jpg	2	27	[C19]	
+f29r_L14_s2.jpg	2	28	z	
+f29r_L14_s2.jpg	2	29	A	
+f29r_L14_s2.jpg	2	30	ψ	
+f29r_L14_s2.jpg	2	31	[C07]	line ends at crop right margin
+f29r_L15_s1.jpg	1	1	I	
+f29r_L15_s1.jpg	1	2	f	
+f29r_L15_s1.jpg	1	3	[C10]	
+f29r_L15_s1.jpg	1	4	o	
+f29r_L15_s1.jpg	1	5	n	
+f29r_L15_s1.jpg	1	6	v	
+f29r_L15_s1.jpg	1	7	z	
+f29r_L15_s1.jpg	1	8	E	
+f29r_L15_s1.jpg	1	9	o	
+f29r_L15_s1.jpg	1	10	z	
+f29r_L15_s1.jpg	1	11	f	
+f29r_L15_s1.jpg	1	12	[C04]	
+f29r_L15_s1.jpg	1	13	ψ	
+f29r_L15_s1.jpg	1	14	f	
+f29r_L15_s1.jpg	1	15	ρ	
+f29r_L15_s1.jpg	1	16	7	
+f29r_L15_s1.jpg	1	17	f	
+f29r_L15_s1.jpg	1	18	[C09]	
+f29r_L15_s1.jpg	1	19	z	
+f29r_L15_s1.jpg	1	20	A	
+f29r_L15_s1.jpg	1	21	[C11]	
+f29r_L15_s1.jpg	1	22	[C10]	
+f29r_L15_s1.jpg	1	23	ρ	
+f29r_L15_s1.jpg	1	24	v	
+f29r_L15_s1.jpg	1	25	E	
+f29r_L15_s1.jpg	1	26	[C10]	
+f29r_L15_s1.jpg	1	27	ψ	
+f29r_L15_s1.jpg	1	28	s	
+f29r_L15_s1.jpg	1	29	[C19]	
+f29r_L15_s1.jpg	1	30	ρ	
+f29r_L15_s1.jpg	1	31	ψ	
+f29r_L15_s1.jpg	1	32	I	
+f29r_L15_s1.jpg	1	33	ρ	
+f29r_L15_s1.jpg	1	34	n	line cut at crop edge, continues s2
+f29r_L15_s1.jpg	2	1	[C04]	
+f29r_L15_s1.jpg	2	2	o	
+f29r_L15_s1.jpg	2	3	f	
+f29r_L15_s1.jpg	2	4	[C04]	
+f29r_L15_s1.jpg	2	5	[C27]	small hook mark, new code, distinct from others
+f29r_L15_s1.jpg	2	6	ψ	
+f29r_L15_s1.jpg	2	7	[C09]	
+f29r_L15_s1.jpg	2	8	[C11]	
+f29r_L15_s1.jpg	2	9	H	
+f29r_L15_s1.jpg	2	10	o	
+f29r_L15_s1.jpg	2	11	I	
+f29r_L15_s1.jpg	2	12	A	
+f29r_L15_s1.jpg	2	13	[C11]	
+f29r_L15_s1.jpg	2	14	n	
+f29r_L15_s1.jpg	2	15	v	
+f29r_L15_s1.jpg	2	16	x	
+f29r_L15_s1.jpg	2	17	ρ	
+f29r_L15_s1.jpg	2	18	f	
+f29r_L15_s1.jpg	2	19	ψ	
+f29r_L15_s1.jpg	2	20	[C10]	
+f29r_L15_s1.jpg	2	21	[C04]	
+f29r_L15_s1.jpg	2	22	T	
+f29r_L15_s1.jpg	2	23	A	
+f29r_L15_s1.jpg	2	24	H	
+f29r_L15_s1.jpg	2	25	I	
+f29r_L15_s1.jpg	2	26	[C19]	
+f29r_L15_s1.jpg	2	27	ρ	
+f29r_L15_s1.jpg	2	28	ψ	
+f29r_L15_s1.jpg	2	29	ρ	
+f29r_L15_s1.jpg	2	30	[C11]	
+f29r_L15_s1.jpg	2	31	T	
+f29r_L15_s1.jpg	2	32	ρ	line cut at crop edge, continues s2
+f29r_L15_s2.jpg	1	1	v	overlap-continuation, new tokens begin
+f29r_L15_s2.jpg	1	2	E	
+f29r_L15_s2.jpg	1	3	[C10]	
+f29r_L15_s2.jpg	1	4	ψ	
+f29r_L15_s2.jpg	1	5	s	
+f29r_L15_s2.jpg	1	6	[C19]	
+f29r_L15_s2.jpg	1	7	ρ	
+f29r_L15_s2.jpg	1	8	ψ	
+f29r_L15_s2.jpg	1	9	I	
+f29r_L15_s2.jpg	1	10	ρ	
+f29r_L15_s2.jpg	1	11	n	
+f29r_L15_s2.jpg	1	12	v	
+f29r_L15_s2.jpg	1	13	[C11]	
+f29r_L15_s2.jpg	1	14	ρ	
+f29r_L15_s2.jpg	1	15	o	
+f29r_L15_s2.jpg	1	16	ρ	
+f29r_L15_s2.jpg	1	17	ψ	
+f29r_L15_s2.jpg	1	18	ρ	
+f29r_L15_s2.jpg	1	19	x	
+f29r_L15_s2.jpg	1	20	R	
+f29r_L15_s2.jpg	1	21	A	
+f29r_L15_s2.jpg	1	22	o	
+f29r_L15_s2.jpg	1	23	f	
+f29r_L15_s2.jpg	1	24	[C09]	
+f29r_L15_s2.jpg	1	25	7	
+f29r_L15_s2.jpg	1	26	q	
+f29r_L15_s2.jpg	1	27	v	
+f29r_L15_s2.jpg	1	28	L	
+f29r_L15_s2.jpg	1	29	m	
+f29r_L15_s2.jpg	1	30	7	
+f29r_L15_s2.jpg	1	31	[C04]	line ends at crop right margin
+f29r_L15_s2.jpg	2	1	ρ	overlap-continuation, new tokens begin
+f29r_L15_s2.jpg	2	2	[C11]	
+f29r_L15_s2.jpg	2	3	T	
+f29r_L15_s2.jpg	2	4	z	
+f29r_L15_s2.jpg	2	5	H	
+f29r_L15_s2.jpg	2	6	I	
+f29r_L15_s2.jpg	2	7	[C19]	
+f29r_L15_s2.jpg	2	8	ρ	
+f29r_L15_s2.jpg	2	9	ψ	
+f29r_L15_s2.jpg	2	10	ρ	
+f29r_L15_s2.jpg	2	11	[C11]	
+f29r_L15_s2.jpg	2	12	T	
+f29r_L15_s2.jpg	2	13	ρ	
+f29r_L15_s2.jpg	2	14	v	
+f29r_L15_s2.jpg	2	15	[C10]	
+f29r_L15_s2.jpg	2	16	7	
+f29r_L15_s2.jpg	2	17	[C04]	
+f29r_L15_s2.jpg	2	18	n	
+f29r_L15_s2.jpg	2	19	v	
+f29r_L15_s2.jpg	2	20	[C11]	
+f29r_L15_s2.jpg	2	21	T	
+f29r_L15_s2.jpg	2	22	[C10]	
+f29r_L15_s2.jpg	2	23	v	
+f29r_L15_s2.jpg	2	24	A	
+f29r_L15_s2.jpg	2	25	E	
+f29r_L15_s2.jpg	2	26	T	
+f29r_L15_s2.jpg	2	27	o	
+f29r_L15_s2.jpg	2	28	A	
+f29r_L15_s2.jpg	2	29	v	
+f29r_L15_s2.jpg	2	30	ψ	
+f29r_L15_s2.jpg	2	31	f	
+f29r_L15_s2.jpg	2	32	x	
+f29r_L15_s2.jpg	2	33	A	
+f29r_L15_s2.jpg	2	34	x	
+f29r_L15_s2.jpg	2	35	ρ	line ends at crop right margin
+f29r_L16_s1.jpg	1	1	f	
+f29r_L16_s1.jpg	1	2	ψ	
+f29r_L16_s1.jpg	1	3	[C04]	
+f29r_L16_s1.jpg	1	4	A	
+f29r_L16_s1.jpg	1	5	z	
+f29r_L16_s1.jpg	1	6	3	
+f29r_L16_s1.jpg	1	7	[C11]	
+f29r_L16_s1.jpg	1	8	A	
+f29r_L16_s1.jpg	1	9	z	
+f29r_L16_s1.jpg	1	10	I	
+f29r_L16_s1.jpg	1	11	[C04]	
+f29r_L16_s1.jpg	1	12	T	
+f29r_L16_s1.jpg	1	13	[C10]	
+f29r_L16_s1.jpg	1	14	I	
+f29r_L16_s1.jpg	1	15	f	
+f29r_L16_s1.jpg	1	16	[C04]	
+f29r_L16_s1.jpg	1	17	s	
+f29r_L16_s1.jpg	1	18	o	
+f29r_L16_s1.jpg	1	19	z	
+f29r_L16_s1.jpg	1	20	ρ	
+f29r_L16_s1.jpg	1	21	x	
+f29r_L16_s1.jpg	1	22	[C10]	
+f29r_L16_s1.jpg	1	23	n	
+f29r_L16_s1.jpg	1	24	v	
+f29r_L16_s1.jpg	1	25	[C11]	
+f29r_L16_s1.jpg	1	26	ρ	
+f29r_L16_s1.jpg	1	27	ψ	
+f29r_L16_s1.jpg	1	28	ρ	
+f29r_L16_s1.jpg	1	29	I	
+f29r_L16_s1.jpg	1	30	[C09]	
+f29r_L16_s1.jpg	1	31	[C04]	
+f29r_L16_s1.jpg	1	32	[C10]	
+f29r_L16_s1.jpg	1	33	[C11]	
+f29r_L16_s1.jpg	1	34	I	line cut at crop edge, continues s2
+f29r_L16_s1.jpg	2	1	[C07]	
+f29r_L16_s1.jpg	2	2	ψ	
+f29r_L16_s1.jpg	2	3	v	
+f29r_L16_s1.jpg	2	4	[C10]	
+f29r_L16_s1.jpg	2	5	[C04]	
+f29r_L16_s1.jpg	2	6	[C11]	
+f29r_L16_s1.jpg	2	7	f	
+f29r_L16_s1.jpg	2	8	[C19]	
+f29r_L16_s1.jpg	2	9	o	
+f29r_L16_s1.jpg	2	10	I	
+f29r_L16_s1.jpg	2	11	G	
+f29r_L16_s1.jpg	2	12	ρ	
+f29r_L16_s1.jpg	2	13	f	
+f29r_L16_s1.jpg	2	14	[C04]	
+f29r_L16_s1.jpg	2	15	E	
+f29r_L16_s1.jpg	2	16	z	
+f29r_L16_s1.jpg	2	17	[C10]	
+f29r_L16_s1.jpg	2	18	[C04]	
+f29r_L16_s1.jpg	2	19	o	
+f29r_L16_s1.jpg	2	20	I	
+f29r_L16_s1.jpg	2	21	[C11]	
+f29r_L16_s1.jpg	2	22	[C11]	
+f29r_L16_s1.jpg	2	23	[C10]	
+f29r_L16_s1.jpg	2	24	z	
+f29r_L16_s1.jpg	2	25	v	
+f29r_L16_s1.jpg	2	26	o	
+f29r_L16_s1.jpg	2	27	v	
+f29r_L16_s1.jpg	2	28	[C04]	
+f29r_L16_s1.jpg	2	29	A	
+f29r_L16_s1.jpg	2	30	[C11]	
+f29r_L16_s1.jpg	2	31	s	
+f29r_L16_s1.jpg	2	32	ψ	
+f29r_L16_s1.jpg	2	33	f	line cut at crop edge, continues s2
+f29r_L16_s2.jpg	1	1	[C11]	overlap-continuation, new tokens begin
+f29r_L16_s2.jpg	1	2	f	
+f29r_L16_s2.jpg	1	3	ψ	
+f29r_L16_s2.jpg	1	4	v	
+f29r_L16_s2.jpg	1	5	A	
+f29r_L16_s2.jpg	1	6	ρ	
+f29r_L16_s2.jpg	1	7	[C09]	
+f29r_L16_s2.jpg	1	8	[C09]	
+f29r_L16_s2.jpg	1	9	z	
+f29r_L16_s2.jpg	1	10	A	
+f29r_L16_s2.jpg	1	11	ρ	
+f29r_L16_s2.jpg	1	12	o	
+f29r_L16_s2.jpg	1	13	[C10]	
+f29r_L16_s2.jpg	1	14	[C04]	
+f29r_L16_s2.jpg	1	15	o	
+f29r_L16_s2.jpg	1	16	v	
+f29r_L16_s2.jpg	1	17	7	
+f29r_L16_s2.jpg	1	18	[C09]	
+f29r_L16_s2.jpg	1	19	[C24]	
+f29r_L16_s2.jpg	1	20	m	line ends at crop right margin
+f29r_L16_s2.jpg	2	1	[C11]	overlap-continuation, new tokens begin
+f29r_L16_s2.jpg	2	2	[C10]	
+f29r_L16_s2.jpg	2	3	z	
+f29r_L16_s2.jpg	2	4	v	
+f29r_L16_s2.jpg	2	5	o	
+f29r_L16_s2.jpg	2	6	v	
+f29r_L16_s2.jpg	2	7	[C04]	
+f29r_L16_s2.jpg	2	8	A	
+f29r_L16_s2.jpg	2	9	[C11]	
+f29r_L16_s2.jpg	2	10	s	
+f29r_L16_s2.jpg	2	11	ψ	
+f29r_L16_s2.jpg	2	12	f	
+f29r_L16_s2.jpg	2	13	[C04]	
+f29r_L16_s2.jpg	2	14	f	
+f29r_L16_s2.jpg	2	15	ψ	
+f29r_L16_s2.jpg	2	16	[C10]	
+f29r_L16_s2.jpg	2	17	[C11]	
+f29r_L16_s2.jpg	2	18	ρ	
+f29r_L16_s2.jpg	2	19	ψ	
+f29r_L16_s2.jpg	2	20	[C10]	
+f29r_L16_s2.jpg	2	21	o	
+f29r_L16_s2.jpg	2	22	I	
+f29r_L16_s2.jpg	2	23	[C10]	
+f29r_L16_s2.jpg	2	24	x	
+f29r_L16_s2.jpg	2	25	H	
+f29r_L16_s2.jpg	2	26	o	
+f29r_L16_s2.jpg	2	27	f	
+f29r_L16_s2.jpg	2	28	[C04]	
+f29r_L16_s2.jpg	2	29	ρ	
+f29r_L16_s2.jpg	2	30	ψ	
+f29r_L16_s2.jpg	2	31	A	
+f29r_L16_s2.jpg	2	32	I	
+f29r_L16_s2.jpg	2	33	[C11]	
+f29r_L16_s2.jpg	2	34	f	line ends at crop right margin
+f29r_L17_s1.jpg	1	1	[C10]	
+f29r_L17_s1.jpg	1	2	z	
+f29r_L17_s1.jpg	1	3	v	
+f29r_L17_s1.jpg	1	4	n	
+f29r_L17_s1.jpg	1	5	v	
+f29r_L17_s1.jpg	1	6	[C11]	
+f29r_L17_s1.jpg	1	7	ρ	
+f29r_L17_s1.jpg	1	8	ψ	
+f29r_L17_s1.jpg	1	9	[C19]	
+f29r_L17_s1.jpg	1	10	I	
+f29r_L17_s1.jpg	1	11	[C11]	
+f29r_L17_s1.jpg	1	12	f	
+f29r_L17_s1.jpg	1	13	T	
+f29r_L17_s1.jpg	1	14	ψ	
+f29r_L17_s1.jpg	1	15	v	
+f29r_L17_s1.jpg	1	16	7	
+f29r_L17_s1.jpg	1	17	[C04]	
+f29r_L17_s1.jpg	1	18	n	
+f29r_L17_s1.jpg	1	19	v	
+f29r_L17_s1.jpg	1	20	7	
+f29r_L17_s1.jpg	1	21	ψ	
+f29r_L17_s1.jpg	1	22	f	
+f29r_L17_s1.jpg	1	23	[C09]	
+f29r_L17_s1.jpg	1	24	A	
+f29r_L17_s1.jpg	1	25	[C11]	
+f29r_L17_s1.jpg	1	26	[C10]	
+f29r_L17_s1.jpg	1	27	n	
+f29r_L17_s1.jpg	1	28	v	
+f29r_L17_s1.jpg	1	29	[C11]	
+f29r_L17_s1.jpg	1	30	L	
+f29r_L17_s1.jpg	1	31	[C10]	line cut at crop edge, continues s2
+f29r_L17_s1.jpg	2	1	A	
+f29r_L17_s1.jpg	2	2	v	
+f29r_L17_s1.jpg	2	3	o	
+f29r_L17_s1.jpg	2	4	[C04]	
+f29r_L17_s1.jpg	2	5	T	
+f29r_L17_s1.jpg	2	6	[C10]	
+f29r_L17_s1.jpg	2	7	v	
+f29r_L17_s1.jpg	2	8	A	
+f29r_L17_s1.jpg	2	9	n	
+f29r_L17_s1.jpg	2	10	v	
+f29r_L17_s1.jpg	2	11	[C11]	
+f29r_L17_s1.jpg	2	12	ρ	
+f29r_L17_s1.jpg	2	13	n	
+f29r_L17_s1.jpg	2	14	v	
+f29r_L17_s1.jpg	2	15	7	
+f29r_L17_s1.jpg	2	16	[C04]	
+f29r_L17_s1.jpg	2	17	[C11]	
+f29r_L17_s1.jpg	2	18	S	
+f29r_L17_s1.jpg	2	19	T	
+f29r_L17_s1.jpg	2	20	[C10]	
+f29r_L17_s1.jpg	2	21	[C09]	
+f29r_L17_s1.jpg	2	22	ψ	
+f29r_L17_s1.jpg	2	23	n	
+f29r_L17_s1.jpg	2	24	v	
+f29r_L17_s1.jpg	2	25	x	
+f29r_L17_s1.jpg	2	26	o	
+f29r_L17_s1.jpg	2	27	R	
+f29r_L17_s1.jpg	2	28	A	
+f29r_L17_s1.jpg	2	29	z	
+f29r_L17_s1.jpg	2	30	I	
+f29r_L17_s1.jpg	2	31	[C04]	
+f29r_L17_s1.jpg	2	32	[C11]	
+f29r_L17_s1.jpg	2	33	[C04]	line cut at crop edge, continues s2
+f29r_L17_s2.jpg	1	1	n	overlap-continuation, new tokens begin
+f29r_L17_s2.jpg	1	2	v	
+f29r_L17_s2.jpg	1	3	[C11]	
+f29r_L17_s2.jpg	1	4	L	
+f29r_L17_s2.jpg	1	5	[C10]	
+f29r_L17_s2.jpg	1	6	o	
+f29r_L17_s2.jpg	1	7	T	
+f29r_L17_s2.jpg	1	8	A	
+f29r_L17_s2.jpg	1	9	[C10]	
+f29r_L17_s2.jpg	1	10	[C10]	
+f29r_L17_s2.jpg	1	11	o	
+f29r_L17_s2.jpg	1	12	ρ	
+f29r_L17_s2.jpg	1	13	ψ	
+f29r_L17_s2.jpg	1	14	ρ	
+f29r_L17_s2.jpg	1	15	x	
+f29r_L17_s2.jpg	1	16	R	
+f29r_L17_s2.jpg	1	17	A	
+f29r_L17_s2.jpg	1	18	o	
+f29r_L17_s2.jpg	1	19	f	
+f29r_L17_s2.jpg	1	20	[C09]	
+f29r_L17_s2.jpg	1	21	[C26]	
+f29r_L17_s2.jpg	1	22	[C11]	
+f29r_L17_s2.jpg	1	23	ψ	line ends at crop right margin
+f29r_L17_s2.jpg	2	1	ψ	overlap-continuation, new tokens begin
+f29r_L17_s2.jpg	2	2	n	
+f29r_L17_s2.jpg	2	3	v	
+f29r_L17_s2.jpg	2	4	x	
+f29r_L17_s2.jpg	2	5	o	
+f29r_L17_s2.jpg	2	6	R	
+f29r_L17_s2.jpg	2	7	A	
+f29r_L17_s2.jpg	2	8	z	
+f29r_L17_s2.jpg	2	9	I	
+f29r_L17_s2.jpg	2	10	[C04]	
+f29r_L17_s2.jpg	2	11	[C11]	
+f29r_L17_s2.jpg	2	12	[C04]	
+f29r_L17_s2.jpg	2	13	ψ	
+f29r_L17_s2.jpg	2	14	x	
+f29r_L17_s2.jpg	2	15	v	
+f29r_L17_s2.jpg	2	16	[C11]	
+f29r_L17_s2.jpg	2	17	f	
+f29r_L17_s2.jpg	2	18	R	
+f29r_L17_s2.jpg	2	19	ψ	
+f29r_L17_s2.jpg	2	20	f	
+f29r_L17_s2.jpg	2	21	[C04]	
+f29r_L17_s2.jpg	2	22	A	
+f29r_L17_s2.jpg	2	23	[C11]	
+f29r_L17_s2.jpg	2	24	ψ	
+f29r_L17_s2.jpg	2	25	v	
+f29r_L17_s2.jpg	2	26	ρ	
+f29r_L17_s2.jpg	2	27	6	
+f29r_L17_s2.jpg	2	28	n	
+f29r_L17_s2.jpg	2	29	v	
+f29r_L17_s2.jpg	2	30	[C11]	
+f29r_L17_s2.jpg	2	31	ψ	
+f29r_L17_s2.jpg	2	32	[C04]	
+f29r_L17_s2.jpg	2	33	ρ	line ends at crop right margin
+f29r_L18_s1.jpg	1	1	f	
+f29r_L18_s1.jpg	1	2	[C04]	
+f29r_L18_s1.jpg	1	3	[C11]	
+f29r_L18_s1.jpg	1	4	f	
+f29r_L18_s1.jpg	1	5	[C10]	
+f29r_L18_s1.jpg	1	6	o	
+f29r_L18_s1.jpg	1	7	ρ	
+f29r_L18_s1.jpg	1	8	I	
+f29r_L18_s1.jpg	1	9	ψ	
+f29r_L18_s1.jpg	1	10	A	
+f29r_L18_s1.jpg	1	11	[C04]	
+f29r_L18_s1.jpg	1	12	[C11]	
+f29r_L18_s1.jpg	1	13	7	
+f29r_L18_s1.jpg	1	14	[C04]	
+f29r_L18_s1.jpg	1	15	o	
+f29r_L18_s1.jpg	1	16	v	
+f29r_L18_s1.jpg	1	17	z	
+f29r_L18_s1.jpg	1	18	I	
+f29r_L18_s1.jpg	1	19	A	
+f29r_L18_s1.jpg	1	20	[C04]	
+f29r_L18_s1.jpg	1	21	A	
+f29r_L18_s1.jpg	1	22	v	
+f29r_L18_s1.jpg	1	23	[C10]	
+f29r_L18_s1.jpg	1	24	I	
+f29r_L18_s1.jpg	1	25	z	
+f29r_L18_s1.jpg	1	26	v	
+f29r_L18_s1.jpg	1	27	A	
+f29r_L18_s1.jpg	1	28	[C10]	
+f29r_L18_s1.jpg	1	29	ρ	
+f29r_L18_s1.jpg	1	30	I	
+f29r_L18_s1.jpg	1	31	f	
+f29r_L18_s1.jpg	1	32	[C04]	
+f29r_L18_s1.jpg	1	33	[C11]	line cut at crop edge, continues s2
+f29r_L18_s1.jpg	2	1	x	
+f29r_L18_s1.jpg	2	2	[C09]	
+f29r_L18_s1.jpg	2	3	[C04]	
+f29r_L18_s1.jpg	2	4	[C10]	
+f29r_L18_s1.jpg	2	5	ρ	
+f29r_L18_s1.jpg	2	6	[C10]	
+f29r_L18_s1.jpg	2	7	o	
+f29r_L18_s1.jpg	2	8	I	
+f29r_L18_s1.jpg	2	9	f	
+f29r_L18_s1.jpg	2	10	o	
+f29r_L18_s1.jpg	2	11	[C04]	
+f29r_L18_s1.jpg	2	12	ψ	
+f29r_L18_s1.jpg	2	13	[C04]	
+f29r_L18_s1.jpg	2	14	[C11]	
+f29r_L18_s1.jpg	2	15	[C09]	
+f29r_L18_s1.jpg	2	16	A	
+f29r_L18_s1.jpg	2	17	z	
+f29r_L18_s1.jpg	2	18	I	
+f29r_L18_s1.jpg	2	19	A	
+f29r_L18_s1.jpg	2	20	[C11]	
+f29r_L18_s1.jpg	2	21	n	
+f29r_L18_s1.jpg	2	22	v	
+f29r_L18_s1.jpg	2	23	7	
+f29r_L18_s1.jpg	2	24	[C04]	
+f29r_L18_s1.jpg	2	25	z	
+f29r_L18_s1.jpg	2	26	v	
+f29r_L18_s1.jpg	2	27	[C10]	
+f29r_L18_s1.jpg	2	28	I	
+f29r_L18_s1.jpg	2	29	[C11]	
+f29r_L18_s1.jpg	2	30	v	
+f29r_L18_s1.jpg	2	31	A	
+f29r_L18_s1.jpg	2	32	I	
+f29r_L18_s1.jpg	2	33	ρ	line cut at crop edge, continues s2
+f29r_L18_s2.jpg	1	1	[C04]	overlap-continuation, new tokens begin
+f29r_L18_s2.jpg	1	2	x	
+f29r_L18_s2.jpg	1	3	z	
+f29r_L18_s2.jpg	1	4	f	
+f29r_L18_s2.jpg	1	5	[C19]	
+f29r_L18_s2.jpg	1	6	z	
+f29r_L18_s2.jpg	1	7	A	
+f29r_L18_s2.jpg	1	8	ψ	
+f29r_L18_s2.jpg	1	9	[C11]	
+f29r_L18_s2.jpg	1	10	[C04]	
+f29r_L18_s2.jpg	1	11	[C07]	
+f29r_L18_s2.jpg	1	12	ψ	
+f29r_L18_s2.jpg	1	13	A	
+f29r_L18_s2.jpg	1	14	S	
+f29r_L18_s2.jpg	1	15	[C11]	
+f29r_L18_s2.jpg	1	16	[C27]	
+f29r_L18_s2.jpg	1	17	S	
+f29r_L18_s2.jpg	1	18	[C11]	
+f29r_L18_s2.jpg	1	19	ρ	line ends at crop right margin
+f29r_L18_s2.jpg	2	1	v	overlap-continuation, new tokens begin
+f29r_L18_s2.jpg	2	2	7	
+f29r_L18_s2.jpg	2	3	[C04]	
+f29r_L18_s2.jpg	2	4	z	
+f29r_L18_s2.jpg	2	5	v	
+f29r_L18_s2.jpg	2	6	[C10]	
+f29r_L18_s2.jpg	2	7	I	
+f29r_L18_s2.jpg	2	8	[C11]	
+f29r_L18_s2.jpg	2	9	v	
+f29r_L18_s2.jpg	2	10	A	
+f29r_L18_s2.jpg	2	11	I	
+f29r_L18_s2.jpg	2	12	ρ	
+f29r_L18_s2.jpg	2	13	o	
+f29r_L18_s2.jpg	2	14	v	
+f29r_L18_s2.jpg	2	15	A	
+f29r_L18_s2.jpg	2	16	ρ	
+f29r_L18_s2.jpg	2	17	T	
+f29r_L18_s2.jpg	2	18	o	
+f29r_L18_s2.jpg	2	19	A	
+f29r_L18_s2.jpg	2	20	n	
+f29r_L18_s2.jpg	2	21	o	
+f29r_L18_s2.jpg	2	22	[C11]	
+f29r_L18_s2.jpg	2	23	A	
+f29r_L18_s2.jpg	2	24	ρ	
+f29r_L18_s2.jpg	2	25	f	
+f29r_L18_s2.jpg	2	26	[C04]	
+f29r_L18_s2.jpg	2	27	T	
+f29r_L18_s2.jpg	2	28	A	
+f29r_L18_s2.jpg	2	29	v	
+f29r_L18_s2.jpg	2	30	ρ	
+f29r_L18_s2.jpg	2	31	[C11]	
+f29r_L18_s2.jpg	2	32	f	
+f29r_L18_s2.jpg	2	33	[C09]	
+f29r_L18_s2.jpg	2	34	7	line ends at crop right margin
+f29r_L19_s1.jpg	1	1	7	
+f29r_L19_s1.jpg	1	2	[C04]	
+f29r_L19_s1.jpg	1	3	[C19]	
+f29r_L19_s1.jpg	1	4	z	
+f29r_L19_s1.jpg	1	5	f	
+f29r_L19_s1.jpg	1	6	ψ	
+f29r_L19_s1.jpg	1	7	f	
+f29r_L19_s1.jpg	1	8	[C04]	
+f29r_L19_s1.jpg	1	9	[C11]	
+f29r_L19_s1.jpg	1	10	f	
+f29r_L19_s1.jpg	1	11	ρ	
+f29r_L19_s1.jpg	1	12	ψ	
+f29r_L19_s1.jpg	1	13	s	
+f29r_L19_s1.jpg	1	14	[C11]	
+f29r_L19_s1.jpg	1	15	f	
+f29r_L19_s1.jpg	1	16	[C04]	
+f29r_L19_s1.jpg	1	17	ρ	
+f29r_L19_s1.jpg	1	18	ψ	
+f29r_L19_s1.jpg	1	19	[C10]	
+f29r_L19_s1.jpg	1	20	[C11]	
+f29r_L19_s1.jpg	1	21	[C19]	
+f29r_L19_s1.jpg	1	22	I	
+f29r_L19_s1.jpg	1	23	ψ	
+f29r_L19_s1.jpg	1	24	f	
+f29r_L19_s1.jpg	1	25	7	
+f29r_L19_s1.jpg	1	26	f	
+f29r_L19_s1.jpg	1	27	[C04]	
+f29r_L19_s1.jpg	1	28	ψ	
+f29r_L19_s1.jpg	1	29	f	
+f29r_L19_s1.jpg	1	30	ρ	
+f29r_L19_s1.jpg	1	31	A	
+f29r_L19_s1.jpg	1	32	[C11]	line cut at crop edge, continues s2
+f29r_L19_s1.jpg	2	1	[C04]	loop-ascender variant (figure-eight/looped mark)
+f29r_L19_s1.jpg	2	2	[C10]	
+f29r_L19_s1.jpg	2	3	m	
+f29r_L19_s1.jpg	2	4	ψ	
+f29r_L19_s1.jpg	2	5	[C04]	
+f29r_L19_s1.jpg	2	6	[C25]	
+f29r_L19_s1.jpg	2	7	n	
+f29r_L19_s1.jpg	2	8	v	
+f29r_L19_s1.jpg	2	9	[C11]	
+f29r_L19_s1.jpg	2	10	ψ	
+f29r_L19_s1.jpg	2	11	f	
+f29r_L19_s1.jpg	2	12	[C19]	
+f29r_L19_s1.jpg	2	13	A	
+f29r_L19_s1.jpg	2	14	I	
+f29r_L19_s1.jpg	2	15	ψ	
+f29r_L19_s1.jpg	2	16	[C07]	
+f29r_L19_s1.jpg	2	17	[C04]	
+f29r_L19_s1.jpg	2	18	ψ	
+f29r_L19_s1.jpg	2	19	s	
+f29r_L19_s1.jpg	2	20	T	
+f29r_L19_s1.jpg	2	21	[C10]	
+f29r_L19_s1.jpg	2	22	ρ	
+f29r_L19_s1.jpg	2	23	z	
+f29r_L19_s1.jpg	2	24	f	
+f29r_L19_s1.jpg	2	25	A	
+f29r_L19_s1.jpg	2	26	[C11]	
+f29r_L19_s1.jpg	2	27	f	
+f29r_L19_s1.jpg	2	28	ρ	
+f29r_L19_s1.jpg	2	29	ψ	
+f29r_L19_s1.jpg	2	30	A	
+f29r_L19_s1.jpg	2	31	[C11]	line cut at crop edge, continues s2
+f29r_L19_s2.jpg	1	1	I	overlap-continuation, new tokens begin
+f29r_L19_s2.jpg	1	2	ψ	
+f29r_L19_s2.jpg	1	3	f	
+f29r_L19_s2.jpg	1	4	7	
+f29r_L19_s2.jpg	1	5	f	
+f29r_L19_s2.jpg	1	6	ψ	
+f29r_L19_s2.jpg	1	7	f	
+f29r_L19_s2.jpg	1	8	ρ	
+f29r_L19_s2.jpg	1	9	A	
+f29r_L19_s2.jpg	1	10	[C11]	
+f29r_L19_s2.jpg	1	11	o	
+f29r_L19_s2.jpg	1	12	v	
+f29r_L19_s2.jpg	1	13	7	
+f29r_L19_s2.jpg	1	14	[C09]	
+f29r_L19_s2.jpg	1	15	x	
+f29r_L19_s2.jpg	1	16	[C09]	
+f29r_L19_s2.jpg	1	17	ψ	
+f29r_L19_s2.jpg	1	18	G	
+f29r_L19_s2.jpg	1	19	[C11]	
+f29r_L19_s2.jpg	1	20	[C10]	
+f29r_L19_s2.jpg	1	21	o	
+f29r_L19_s2.jpg	1	22	[C10]	
+f29r_L19_s2.jpg	1	23	[C19]	
+f29r_L19_s2.jpg	1	24	I	
+f29r_L19_s2.jpg	1	25	f	
+f29r_L19_s2.jpg	1	26	[C09]	
+f29r_L19_s2.jpg	1	27	x	
+f29r_L19_s2.jpg	1	28	A	
+f29r_L19_s2.jpg	1	29	x	
+f29r_L19_s2.jpg	1	30	A	line ends at crop right margin
+f29r_L19_s2.jpg	2	1	T	overlap-continuation, new tokens begin
+f29r_L19_s2.jpg	2	2	[C10]	
+f29r_L19_s2.jpg	2	3	ρ	
+f29r_L19_s2.jpg	2	4	z	
+f29r_L19_s2.jpg	2	5	f	
+f29r_L19_s2.jpg	2	6	A	
+f29r_L19_s2.jpg	2	7	[C11]	
+f29r_L19_s2.jpg	2	8	f	
+f29r_L19_s2.jpg	2	9	ρ	
+f29r_L19_s2.jpg	2	10	ψ	
+f29r_L19_s2.jpg	2	11	A	
+f29r_L19_s2.jpg	2	12	z	
+f29r_L19_s2.jpg	2	13	I	
+f29r_L19_s2.jpg	2	14	[C04]	
+f29r_L19_s2.jpg	2	15	o	
+f29r_L19_s2.jpg	2	16	[C11]	
+f29r_L19_s2.jpg	2	17	o	
+f29r_L19_s2.jpg	2	18	[C24]	
+f29r_L19_s2.jpg	2	19	[C10]	
+f29r_L19_s2.jpg	2	20	x	
+f29r_L19_s2.jpg	2	21	[C09]	
+f29r_L19_s2.jpg	2	22	A	
+f29r_L19_s2.jpg	2	23	ψ	
+f29r_L19_s2.jpg	2	24	[C10]	
+f29r_L19_s2.jpg	2	25	[C19]	
+f29r_L19_s2.jpg	2	26	[C21]	
+f29r_L19_s2.jpg	2	27	[C10]	
+f29r_L19_s2.jpg	2	28	ψ	
+f29r_L19_s2.jpg	2	29	[C04]	
+f29r_L19_s2.jpg	2	30	ρ	
+f29r_L19_s2.jpg	2	31	x	
+f29r_L19_s2.jpg	2	32	[C10]	
+f29r_L19_s2.jpg	2	33	[C10]	line ends; last text on f29r, remainder of page below is blank margin
+f29r_L20_s1.jpg	1	1	(blank)	bottom margin of recto, no text
+f29r_L20_s2.jpg	1	1	(blank)	bottom margin of recto, no text, torn/creased edge only
+f29v_L01_s1.jpg	1	1	(blank)	top margin of verso, torn/creased corner, no text
+f29v_L01_s2.jpg	1	1	[PLAIN: "d."]	small isolated flourish with a dot, top margin, not body text
+f29v_L02_s1.jpg	1	1	n	
+f29v_L02_s1.jpg	1	2	v	
+f29v_L02_s1.jpg	1	3	x	
+f29v_L02_s1.jpg	1	4	ρ	
+f29v_L02_s1.jpg	1	5	o	
+f29v_L02_s1.jpg	1	6	R	
+f29v_L02_s1.jpg	1	7	A	
+f29v_L02_s1.jpg	1	8	z	
+f29v_L02_s1.jpg	1	9	I	
+f29v_L02_s1.jpg	1	10	[C04]	
+f29v_L02_s1.jpg	1	11	ρ	
+f29v_L02_s1.jpg	1	12	ψ	
+f29v_L02_s1.jpg	1	13	[C11]	
+f29v_L02_s1.jpg	1	14	A	
+f29v_L02_s1.jpg	1	15	o	
+f29v_L02_s1.jpg	1	16	[C09]	
+f29v_L02_s1.jpg	1	17	ψ	
+f29v_L02_s1.jpg	1	18	ρ	line cut at crop edge, continues s2
+f29v_L02_s1.jpg	2	1	z	
+f29v_L02_s1.jpg	2	2	v	
+f29v_L02_s1.jpg	2	3	ρ	
+f29v_L02_s1.jpg	2	4	ρ	
+f29v_L02_s1.jpg	2	5	A	
+f29v_L02_s1.jpg	2	6	z	
+f29v_L02_s1.jpg	2	7	x	
+f29v_L02_s1.jpg	2	8	x	
+f29v_L02_s1.jpg	2	9	o	
+f29v_L02_s1.jpg	2	10	E	
+f29v_L02_s1.jpg	2	11	ρ	
+f29v_L02_s1.jpg	2	12	I	
+f29v_L02_s1.jpg	2	13	[C09]	
+f29v_L02_s1.jpg	2	14	[C04]	
+f29v_L02_s1.jpg	2	15	o	
+f29v_L02_s1.jpg	2	16	[C10]	
+f29v_L02_s1.jpg	2	17	ρ	
+f29v_L02_s1.jpg	2	18	[C10]	line cut at crop edge, continues s2
+f29v_L02_s2.jpg	1	1	[C11]	overlap-continuation, new tokens begin
+f29v_L02_s2.jpg	1	2	A	
+f29v_L02_s2.jpg	1	3	o	
+f29v_L02_s2.jpg	1	4	[C09]	
+f29v_L02_s2.jpg	1	5	ψ	
+f29v_L02_s2.jpg	1	6	ρ	
+f29v_L02_s2.jpg	1	7	R	
+f29v_L02_s2.jpg	1	8	ψ	
+f29v_L02_s2.jpg	1	9	f	
+f29v_L02_s2.jpg	1	10	x	
+f29v_L02_s2.jpg	1	11	A	
+f29v_L02_s2.jpg	1	12	7	
+f29v_L02_s2.jpg	1	13	[C04]	
+f29v_L02_s2.jpg	1	14	ρ	
+f29v_L02_s2.jpg	1	15	ψ	
+f29v_L02_s2.jpg	1	16	f	
+f29v_L02_s2.jpg	1	17	[C04]	
+f29v_L02_s2.jpg	1	18	[C11]	
+f29v_L02_s2.jpg	1	19	f	
+f29v_L02_s2.jpg	1	20	ρ	
+f29v_L02_s2.jpg	1	21	A	
+f29v_L02_s2.jpg	1	22	ψ	
+f29v_L02_s2.jpg	1	23	o	
+f29v_L02_s2.jpg	1	24	[C07]	
+f29v_L02_s2.jpg	1	25	ρ	
+f29v_L02_s2.jpg	1	26	I	
+f29v_L02_s2.jpg	1	27	A	
+f29v_L02_s2.jpg	1	28	ψ	
+f29v_L02_s2.jpg	1	29	[C04]	
+f29v_L02_s2.jpg	1	30	z	
+f29v_L02_s2.jpg	1	31	v	
+f29v_L02_s2.jpg	1	32	[C04]	
+f29v_L02_s2.jpg	1	33	[C09]	
+f29v_L02_s2.jpg	1	34	[C11]	
+f29v_L02_s2.jpg	1	35	n	
+f29v_L02_s2.jpg	1	36	v	
+f29v_L02_s2.jpg	1	37	ψ	
+f29v_L02_s2.jpg	1	38	ρ	
+f29v_L02_s2.jpg	1	39	z	line ends at crop right margin
+f29v_L02_s2.jpg	2	1	I	overlap-continuation, new tokens begin
+f29v_L02_s2.jpg	2	2	[C09]	
+f29v_L02_s2.jpg	2	3	[C04]	
+f29v_L02_s2.jpg	2	4	o	
+f29v_L02_s2.jpg	2	5	[C10]	
+f29v_L02_s2.jpg	2	6	ρ	
+f29v_L02_s2.jpg	2	7	[C10]	
+f29v_L02_s2.jpg	2	8	x	
+f29v_L02_s2.jpg	2	9	I	
+f29v_L02_s2.jpg	2	10	f	
+f29v_L02_s2.jpg	2	11	[C09]	
+f29v_L02_s2.jpg	2	12	[C04]	
+f29v_L02_s2.jpg	2	13	[C11]	
+f29v_L02_s2.jpg	2	14	[C04]	
+f29v_L02_s2.jpg	2	15	ψ	
+f29v_L02_s2.jpg	2	16	[C14]	
+f29v_L02_s2.jpg	2	17	[C10]	
+f29v_L02_s2.jpg	2	18	n	
+f29v_L02_s2.jpg	2	19	v	
+f29v_L02_s2.jpg	2	20	[C11]	
+f29v_L02_s2.jpg	2	21	x	
+f29v_L02_s2.jpg	2	22	ψ	
+f29v_L02_s2.jpg	2	23	ρ	
+f29v_L02_s2.jpg	2	24	ψ	
+f29v_L02_s2.jpg	2	25	R	
+f29v_L02_s2.jpg	2	26	z	
+f29v_L02_s2.jpg	2	27	v	
+f29v_L02_s2.jpg	2	28	[C10]	
+f29v_L02_s2.jpg	2	29	ψ	
+f29v_L02_s2.jpg	2	30	[C10]	
+f29v_L02_s2.jpg	2	31	[C09]	
+f29v_L02_s2.jpg	2	32	A	
+f29v_L02_s2.jpg	2	33	I	
+f29v_L02_s2.jpg	2	34	T	
+f29v_L02_s2.jpg	2	35	A	
+f29v_L02_s2.jpg	2	36	z	
+f29v_L02_s2.jpg	2	37	E	
+f29v_L02_s2.jpg	2	38	ψ	
+f29v_L02_s2.jpg	2	39	7	line ends at crop right margin
+f29v_L03_s1.jpg	1	1	K	
+f29v_L03_s1.jpg	1	2	ψ	
+f29v_L03_s1.jpg	1	3	[C10]	
+f29v_L03_s1.jpg	1	4	I	
+f29v_L03_s1.jpg	1	5	ρ	
+f29v_L03_s1.jpg	1	6	ρ	
+f29v_L03_s1.jpg	1	7	v	
+f29v_L03_s1.jpg	1	8	E	
+f29v_L03_s1.jpg	1	9	T	
+f29v_L03_s1.jpg	1	10	ρ	
+f29v_L03_s1.jpg	1	11	o	
+f29v_L03_s1.jpg	1	12	I	
+f29v_L03_s1.jpg	1	13	[C10]	
+f29v_L03_s1.jpg	1	14	ρ	
+f29v_L03_s1.jpg	1	15	I	
+f29v_L03_s1.jpg	1	16	[C04]	
+f29v_L03_s1.jpg	1	17	x	
+f29v_L03_s1.jpg	1	18	ψ	line cut at crop edge, continues s2
+f29v_L03_s1.jpg	2	1	z	
+f29v_L03_s1.jpg	2	2	f	
+f29v_L03_s1.jpg	2	3	[C25]	
+f29v_L03_s1.jpg	2	4	[C10]	
+f29v_L03_s1.jpg	2	5	o	
+f29v_L03_s1.jpg	2	6	ρ	
+f29v_L03_s1.jpg	2	7	[C09]	
+f29v_L03_s1.jpg	2	8	[C04]	
+f29v_L03_s1.jpg	2	9	[C11]	
+f29v_L03_s1.jpg	2	10	[C10]	
+f29v_L03_s1.jpg	2	11	o	
+f29v_L03_s1.jpg	2	12	I	
+f29v_L03_s1.jpg	2	13	f	
+f29v_L03_s1.jpg	2	14	[C09]	
+f29v_L03_s1.jpg	2	15	[C04]	
+f29v_L03_s1.jpg	2	16	ψ	
+f29v_L03_s1.jpg	2	17	[C04]	line cut at crop edge, continues s2
+f29v_L03_s2.jpg	1	1	ρ	overlap-continuation, new tokens begin
+f29v_L03_s2.jpg	1	2	7	
+f29v_L03_s2.jpg	1	3	[C11]	
+f29v_L03_s2.jpg	1	4	[C10]	
+f29v_L03_s2.jpg	1	5	[C09]	
+f29v_L03_s2.jpg	1	6	A	
+f29v_L03_s2.jpg	1	7	I	
+f29v_L03_s2.jpg	1	8	T	
+f29v_L03_s2.jpg	1	9	A	
+f29v_L03_s2.jpg	1	10	z	
+f29v_L03_s2.jpg	1	11	E	
+f29v_L03_s2.jpg	1	12	ψ	
+f29v_L03_s2.jpg	1	13	o	
+f29v_L03_s2.jpg	1	14	v	
+f29v_L03_s2.jpg	1	15	L	
+f29v_L03_s2.jpg	1	16	m	
+f29v_L03_s2.jpg	1	17	T	
+f29v_L03_s2.jpg	1	18	o	
+f29v_L03_s2.jpg	1	19	A	
+f29v_L03_s2.jpg	1	20	n	
+f29v_L03_s2.jpg	1	21	v	
+f29v_L03_s2.jpg	1	22	[C11]	
+f29v_L03_s2.jpg	1	23	ρ	
+f29v_L03_s2.jpg	1	24	n	
+f29v_L03_s2.jpg	1	25	v	
+f29v_L03_s2.jpg	1	26	7	
+f29v_L03_s2.jpg	1	27	[C19]	
+f29v_L03_s2.jpg	1	28	z	
+f29v_L03_s2.jpg	1	29	f	
+f29v_L03_s2.jpg	1	30	S	
+f29v_L03_s2.jpg	1	31	z	
+f29v_L03_s2.jpg	1	32	E	
+f29v_L03_s2.jpg	1	33	ψ	
+f29v_L03_s2.jpg	1	34	f	line ends at crop right margin
+f29v_L03_s2.jpg	2	1	[C10]	overlap-continuation, new tokens begin
+f29v_L03_s2.jpg	2	2	o	
+f29v_L03_s2.jpg	2	3	I	
+f29v_L03_s2.jpg	2	4	f	
+f29v_L03_s2.jpg	2	5	[C09]	
+f29v_L03_s2.jpg	2	6	[C04]	
+f29v_L03_s2.jpg	2	7	ψ	
+f29v_L03_s2.jpg	2	8	[C04]	
+f29v_L03_s2.jpg	2	9	o	
+f29v_L03_s2.jpg	2	10	s	
+f29v_L03_s2.jpg	2	11	ρ	
+f29v_L03_s2.jpg	2	12	A	
+f29v_L03_s2.jpg	2	13	[C11]	
+f29v_L03_s2.jpg	2	14	T	
+f29v_L03_s2.jpg	2	15	[C11]	
+f29v_L03_s2.jpg	2	16	f	
+f29v_L03_s2.jpg	2	17	q	
+f29v_L03_s2.jpg	2	18	v	
+f29v_L03_s2.jpg	2	19	n	
+f29v_L03_s2.jpg	2	20	v	
+f29v_L03_s2.jpg	2	21	[C11]	
+f29v_L03_s2.jpg	2	22	o	
+f29v_L03_s2.jpg	2	23	v	
+f29v_L03_s2.jpg	2	24	H	
+f29v_L03_s2.jpg	2	25	I	
+f29v_L03_s2.jpg	2	26	[C21]	
+f29v_L03_s2.jpg	2	27	ρ	
+f29v_L03_s2.jpg	2	28	ρ	
+f29v_L03_s2.jpg	2	29	ψ	
+f29v_L03_s2.jpg	2	30	[C07]	
+f29v_L03_s2.jpg	2	31	ψ	
+f29v_L03_s2.jpg	2	32	A	
+f29v_L03_s2.jpg	2	33	o	
+f29v_L03_s2.jpg	2	34	ψ	
+f29v_L03_s2.jpg	2	35	f	
+f29v_L03_s2.jpg	2	36	[C04]	
+f29v_L03_s2.jpg	2	37	[C11]	
+f29v_L03_s2.jpg	2	38	f	
+f29v_L03_s2.jpg	2	39	ρ	
+f29v_L03_s2.jpg	2	40	A	
+f29v_L03_s2.jpg	2	41	ψ	line ends at crop right margin
+f29v_L04_s1.jpg	1	1	I	
+f29v_L04_s1.jpg	1	2	[C09]	
+f29v_L04_s1.jpg	1	3	[C10]	
+f29v_L04_s1.jpg	1	4	ψ	
+f29v_L04_s1.jpg	1	5	I	
+f29v_L04_s1.jpg	1	6	[C11]	
+f29v_L04_s1.jpg	1	7	f	
+f29v_L04_s1.jpg	1	8	ψ	
+f29v_L04_s1.jpg	1	9	v	
+f29v_L04_s1.jpg	1	10	A	
+f29v_L04_s1.jpg	1	11	ψ	
+f29v_L04_s1.jpg	1	12	[C04]	
+f29v_L04_s1.jpg	1	13	[C04]	
+f29v_L04_s1.jpg	1	14	z	
+f29v_L04_s1.jpg	1	15	v	
+f29v_L04_s1.jpg	1	16	[C04]	line cut at crop edge, continues s2
+f29v_L04_s1.jpg	2	1	o	
+f29v_L04_s1.jpg	2	2	v	
+f29v_L04_s1.jpg	2	3	[C04]	
+f29v_L04_s1.jpg	2	4	A	
+f29v_L04_s1.jpg	2	5	[C11]	
+f29v_L04_s1.jpg	2	6	s	
+f29v_L04_s1.jpg	2	7	ψ	
+f29v_L04_s1.jpg	2	8	f	
+f29v_L04_s1.jpg	2	9	[C04]	
+f29v_L04_s1.jpg	2	10	[C09]	
+f29v_L04_s1.jpg	2	11	ψ	
+f29v_L04_s1.jpg	2	12	[C10]	
+f29v_L04_s1.jpg	2	13	[C04]	
+f29v_L04_s1.jpg	2	14	[C14]	
+f29v_L04_s1.jpg	2	15	[C10]	
+f29v_L04_s1.jpg	2	16	ρ	
+f29v_L04_s1.jpg	2	17	ψ	line cut at crop edge, continues s2
+f29v_L04_s2.jpg	1	1	[C11]	overlap-continuation, new tokens begin
+f29v_L04_s2.jpg	1	2	[C10]	
+f29v_L04_s2.jpg	1	3	[C09]	
+f29v_L04_s2.jpg	1	4	E	
+f29v_L04_s2.jpg	1	5	z	
+f29v_L04_s2.jpg	1	6	[C10]	
+f29v_L04_s2.jpg	1	7	[C11]	
+f29v_L04_s2.jpg	1	8	[C10]	
+f29v_L04_s2.jpg	1	9	[C19]	
+f29v_L04_s2.jpg	1	10	I	
+f29v_L04_s2.jpg	1	11	ψ	
+f29v_L04_s2.jpg	1	12	f	
+f29v_L04_s2.jpg	1	13	o	
+f29v_L04_s2.jpg	1	14	v	
+f29v_L04_s2.jpg	1	15	ρ	
+f29v_L04_s2.jpg	1	16	z	
+f29v_L04_s2.jpg	1	17	f	
+f29v_L04_s2.jpg	1	18	[C11]	
+f29v_L04_s2.jpg	1	19	T	
+f29v_L04_s2.jpg	1	20	o	
+f29v_L04_s2.jpg	1	21	A	
+f29v_L04_s2.jpg	1	22	ρ	
+f29v_L04_s2.jpg	1	23	ψ	
+f29v_L04_s2.jpg	1	24	ρ	
+f29v_L04_s2.jpg	1	25	I	
+f29v_L04_s2.jpg	1	26	[C09]	
+f29v_L04_s2.jpg	1	27	ρ	
+f29v_L04_s2.jpg	1	28	ψ	
+f29v_L04_s2.jpg	1	29	[C11]	
+f29v_L04_s2.jpg	1	30	o	
+f29v_L04_s2.jpg	1	31	[C04]	line ends at crop right margin
+f29v_L04_s2.jpg	2	1	[C10]	overlap-continuation, new tokens begin
+f29v_L04_s2.jpg	2	2	v	
+f29v_L04_s2.jpg	2	3	[C19]	
+f29v_L04_s2.jpg	2	4	[C10]	
+f29v_L04_s2.jpg	2	5	[C04]	
+f29v_L04_s2.jpg	2	6	[C25]	
+f29v_L04_s2.jpg	2	7	f	
+f29v_L04_s2.jpg	2	8	[C09]	
+f29v_L04_s2.jpg	2	9	ψ	
+f29v_L04_s2.jpg	2	10	ρ	
+f29v_L04_s2.jpg	2	11	ψ	
+f29v_L04_s2.jpg	2	12	[C04]	
+f29v_L04_s2.jpg	2	13	z	
+f29v_L04_s2.jpg	2	14	v	
+f29v_L04_s2.jpg	2	15	[C04]	
+f29v_L04_s2.jpg	2	16	ρ	
+f29v_L04_s2.jpg	2	17	ψ	
+f29v_L04_s2.jpg	2	18	T	
+f29v_L04_s2.jpg	2	19	A	
+f29v_L04_s2.jpg	2	20	T	
+f29v_L04_s2.jpg	2	21	[C10]	
+f29v_L04_s2.jpg	2	22	[C14]	
+f29v_L04_s2.jpg	2	23	n	
+f29v_L04_s2.jpg	2	24	v	
+f29v_L04_s2.jpg	2	25	x	
+f29v_L04_s2.jpg	2	26	ρ	
+f29v_L04_s2.jpg	2	27	o	
+f29v_L04_s2.jpg	2	28	T	
+f29v_L04_s2.jpg	2	29	ρ	
+f29v_L04_s2.jpg	2	30	[C11]	
+f29v_L04_s2.jpg	2	31	[C18]	
+f29v_L04_s2.jpg	2	32	o	
+f29v_L04_s2.jpg	2	33	[C10]	
+f29v_L04_s2.jpg	2	34	x	line ends at crop right margin
+f29v_L05_s1.jpg	1	1	o	
+f29v_L05_s1.jpg	1	2	x	
+f29v_L05_s1.jpg	1	3	f	
+f29v_L05_s1.jpg	1	4	[C09]	
+f29v_L05_s1.jpg	1	5	[C04]	
+f29v_L05_s1.jpg	1	6	ψ	
+f29v_L05_s1.jpg	1	7	[C04]	
+f29v_L05_s1.jpg	1	8	[C11]	
+f29v_L05_s1.jpg	1	9	s	
+f29v_L05_s1.jpg	1	10	ψ	
+f29v_L05_s1.jpg	1	11	[C04]	
+f29v_L05_s1.jpg	1	12	[C11]	
+f29v_L05_s1.jpg	1	13	f	
+f29v_L05_s1.jpg	1	14	I	
+f29v_L05_s1.jpg	1	15	A	
+f29v_L05_s1.jpg	1	16	[C04]	
+f29v_L05_s1.jpg	1	17	z	
+f29v_L05_s1.jpg	1	18	v	line cut at crop edge, continues s2; this is the tail of the ciphered passage
+f29v_L05_s1.jpg	2	1	[PLAIN: "Madame, mon [seigneur] pere ma aussi"]	plaintext resumes here after new paragraph mark; rough reading, secretary cursive; cipher passage ends in this band (s2 line1)
+f29v_L05_s2.jpg	1	1	[C04]	overlap-continuation of cipher tail, new tokens begin
+f29v_L05_s2.jpg	1	2	f	
+f29v_L05_s2.jpg	1	3	I	
+f29v_L05_s2.jpg	1	4	A	
+f29v_L05_s2.jpg	1	5	[C04]	
+f29v_L05_s2.jpg	1	6	z	
+f29v_L05_s2.jpg	1	7	v	
+f29v_L05_s2.jpg	1	8	[C09]	
+f29v_L05_s2.jpg	1	9	E	
+f29v_L05_s2.jpg	1	10	o	
+f29v_L05_s2.jpg	1	11	f	
+f29v_L05_s2.jpg	1	12	[C04]	
+f29v_L05_s2.jpg	1	13	ρ	
+f29v_L05_s2.jpg	1	14	ψ	
+f29v_L05_s2.jpg	1	15	[C10]	
+f29v_L05_s2.jpg	1	16	[C21]	
+f29v_L05_s2.jpg	1	17	x	
+f29v_L05_s2.jpg	1	18	o	
+f29v_L05_s2.jpg	1	19	I	
+f29v_L05_s2.jpg	1	20	A	
+f29v_L05_s2.jpg	1	21	[C10]	
+f29v_L05_s2.jpg	1	22	m	
+f29v_L05_s2.jpg	1	23	ψ	
+f29v_L05_s2.jpg	1	24	[C11]	
+f29v_L05_s2.jpg	1	25	o	
+f29v_L05_s2.jpg	1	26	[C10]	
+f29v_L05_s2.jpg	1	27	K	
+f29v_L05_s2.jpg	1	28	(.	END OF CIPHERED PASSAGE -- punctuation mark closing the cipher block; all text after this point in the letter (rest of f29v) is plaintext French
+f29v_L05_s2.jpg	2	1	[PLAIN: "pere ma aussi dict avoir eu de la royne d'Espagne. du cinquiesme... par le savoir"]	plaintext, rough reading, secretary cursive; abbreviations expanded tentatively
+f29v_L06_s1.jpg	1	1	[PLAIN: "L'on l'advertit que le Roy se p[ou]r"]	plaintext, rough reading, continues to s2
+f29v_L06_s1.jpg	2	1	[PLAIN: "singuliere plaisir. aussi luy es[t]"]	plaintext, rough reading, continues to s2
+f29v_L06_s2.jpg	1	1	[PLAIN: "le Roy se porton tresbien grans a Dieu, Dom [Fran]s[cisco?] monstre amour"]	plaintext, rough reading, continuation of s1 line1; proper name uncertain
+f29v_L06_s2.jpg	2	1	[PLAIN: "aussi luy escript le legat, madame la duchesse avoit visite la Royne"]	plaintext, rough reading, continuation of s1 line2
+f29v_L07_s1.jpg	1	1	[PLAIN: "de Portugal, et de la gross-"]	plaintext, rough reading, word cut, continues s2
+f29v_L07_s1.jpg	2	1	[PLAIN: "et la portoit cause qu'il qu'acc-"]	plaintext, rough reading, word cut, continues s2
+f29v_L07_s2.jpg	1	1	[PLAIN: "-e amytie d'entre elles, qui tenoit aucuns en oppinion que"]	plaintext continuation of s1 line1
+f29v_L07_s2.jpg	2	1	[PLAIN: "-ord, et mesmement que aucuns aussi tenoient trouve"]	plaintext continuation of s1 line2
+f29v_L08_s1.jpg	1	1	[PLAIN: "que l'empereur pretend po[ur] se dep-"]	plaintext, rough reading, continues s2
+f29v_L08_s1.jpg	2	1	[PLAIN: "duche de Bourgongne. Il y a aus-"]	plaintext, rough reading, continues s2
+f29v_L08_s2.jpg	1	1	[PLAIN: "-artir ou abaisser aucunement de son oppinion touchant le"]	plaintext continuation of s1 line1
+f29v_L08_s2.jpg	2	1	[PLAIN: "-si madame tres p[ro]chera. de grans p[ro]messes de l'a[u...]"]	plaintext continuation of s1 line2; word uncertain at right edge
+f29v_L09_s1.jpg	1	1	[PLAIN: "-uche. qui escripment que na pas b-"]	plaintext, rough reading, continues s2
+f29v_L09_s1.jpg	2	1	[PLAIN: "tous les grans seigneurs d'Espa-"]	plaintext, rough reading, continues s2
+f29v_L09_s2.jpg	1	1	[PLAIN: "-on que na pas b[ie]n croyable de l'amour et affection grande, que"]	plaintext continuation of s1 line1
+f29v_L09_s2.jpg	2	1	[PLAIN: "-gne. et austres monstrent et portent au Roy, et du"]	plaintext continuation of s1 line2
+f29v_L10_s1.jpg	1	1	[PLAIN: "grant homme. atant luy sont fai-"]	plaintext, rough reading, continues s2
+f29v_L10_s1.jpg	2	1	[PLAIN: "pour madame que vous estes"]	plaintext, rough reading, continues s2
+f29v_L10_s2.jpg	1	1	[PLAIN: "-tz faisant de luy une estime la plus grande du monde. Et"]	plaintext continuation of s1 line1
+f29v_L10_s2.jpg	2	1	[PLAIN: "vous estes de tout trop mieulx informe, et des grans demonstra-"]	plaintext continuation of s1 line2
+f29v_L11_s1.jpg	1	1	[PLAIN: "quilz ont fort[ifie?] durant la mal-"]	plaintext, rough reading, continues s2
+f29v_L11_s1.jpg	2	1	[PLAIN: "Madame, pour que dernierement"]	plaintext, rough reading, continues s2
+f29v_L11_s2.jpg	1	1	[PLAIN: "-adye du Roy monseigneur, je me deporteray vous en dire autre"]	plaintext continuation of s1 line1
+f29v_L11_s2.jpg	2	1	[PLAIN: "dernierement jay escript a monseigneur d'Alby touchant l'affaire de sa"]	plaintext continuation of s1 line2
+f29v_L12_s1.jpg	1	1	[PLAIN: "promotion a la dignite cardinalle-"]	plaintext, rough reading, continues s2
+f29v_L12_s1.jpg	2	1	[PLAIN: "mise besongne que se vous en f-"]	plaintext, rough reading, continues s2
+f29v_L12_s2.jpg	1	1	[PLAIN: "-e cardinalle, ce que je suis pres qu[e] vous avez fait entendre le for-"]	plaintext continuation of s1 line1
+f29v_L12_s2.jpg	2	1	[PLAIN: "-vous en fait. Reply que fera ay respondu envers plus a s[u]j[e]t-"]	plaintext continuation of s1 line2
+f29v_L13_s1.jpg	1	1	[PLAIN: "qui continue au mesme p[ro]poz"]	plaintext, rough reading, continues s2
+f29v_L13_s1.jpg	2	1	[PLAIN: "sam[e]dj passe a monseigneur l-"]	plaintext, rough reading, continues s2
+f29v_L13_s2.jpg	1	1	[PLAIN: "-osdit propoz et de bonne sorte, selon sa facon de p[ar]ler, se bailla c-"]	plaintext continuation of s1 line1
+f29v_L13_s2.jpg	2	1	[PLAIN: "-onseigneur le connestable les lettres que escripviez a sa s[ainte]t[e], a nostre fin, qu'il"]	plaintext continuation of s1 line2
+f29v_L14_s1.jpg	1	1	[PLAIN: "les luy pr[e]senta, si luy hisorda[?]"]	plaintext, rough reading, continues s2; verb uncertain
+f29v_L14_s1.jpg	2	1	[PLAIN: "Madame, je nay pas [en]core pu[?] m[oye]n."]	plaintext, rough reading, continues s2
+f29v_L14_s2.jpg	1	1	[PLAIN: "luy hisorderay vous en escripre par la premiere depesche(."]	plaintext continuation of s1 line1
+f29v_L14_s2.jpg	2	1	[PLAIN: "pu[?] moyen autre, sinon que je vous supplie treshumblement, quil"]	plaintext continuation of s1 line2
+f29v_L15_s1.jpg	1	1	[PLAIN: "vous plaise avoir souvenan-"]	plaintext, rough reading, continues s2
+f29v_L15_s1.jpg	2	1	[PLAIN: "compassion et regard, au te-"]	plaintext, rough reading, continues s2
+f29v_L15_s2.jpg	1	1	[PLAIN: "-ce souvenance de mon petit estat et affeq[ue], et sil vous plaist, dam-"]	plaintext continuation of s1 line1
+f29v_L15_s2.jpg	2	1	[PLAIN: "-egard, au temps de pres de quatre ans quil ya que aucune pension"]	plaintext continuation of s1 line2
+f29v_L16_s1.jpg	1	1	[PLAIN: "my a este mise m[on] Domme-, co-"]	plaintext, rough reading, continues s2
+f29v_L16_s1.jpg	2	1	[PLAIN: "comme vous madame savez, qua-"]	plaintext, rough reading, continues s2
+f29v_L16_s2.jpg	1	1	[PLAIN: "-Domme-, combien que ien aye este tres liespasse de Dieu, et prie-"]	plaintext continuation of s1 line1
+f29v_L16_s2.jpg	2	1	[PLAIN: "-tre ans, quasi tout seul et en ce temps passe Dieu voulant, quil"]	plaintext continuation of s1 line2
+f29v_L17_s1.jpg	1	1	[PLAIN: "na estre sans depens, dangier et t-"]	plaintext, rough reading, continues s2
+f29v_L17_s1.jpg	2	1	[PLAIN: "a moy grans et autres chos-"]	plaintext, rough reading, continues s2
+f29v_L17_s1.jpg	3	1	[PLAIN: "aussi qu'il m'aur[a]y fait tant que m-"]	plaintext, rough reading, continues s2; third line visible in this taller crop
+f29v_L17_s2.jpg	1	1	[PLAIN: "-ravail. Et neantmoins nay laisse de faire aux entretenemens"]	plaintext continuation of s1 line1
+f29v_L17_s2.jpg	2	1	[PLAIN: "-es. trop plus que ma debile et petite puissance portoit, ce"]	plaintext continuation of s1 line2
+f29v_L17_s2.jpg	3	1	[PLAIN: "-e sera au monde possible, et que le plaisir du Roy et"]	plaintext continuation of s1 line3
+f29v_L18_s1.jpg	1	1	[PLAIN: "bien sera que se le face. A t-"]	plaintext, rough reading, continues s2
+f29v_L18_s1.jpg	2	1	[PLAIN: "consideration, et fer[a] Donnec-"]	plaintext, rough reading, continues s2
+f29v_L18_s2.jpg	1	1	[PLAIN: "-outes lesquelles choses vous plaira madame avoir"]	plaintext continuation of s1 line1
+f29v_L18_s2.jpg	2	1	[PLAIN: "-iafout se moings, quelque puisson, aussi que bon"]	plaintext continuation of s1 line2; rough reading, several words uncertain
+f29v_L19_s1.jpg	1	1	[PLAIN: "plaisir sera pour b[ie]n gran-, et h-"]	plaintext, rough reading, last text line on the folio, continues s2; large blank margin below in this crop
+f29v_L19_s2.jpg	1	1	[PLAIN: "-onneur, et [re]solu[t?]udre, qui est tout ne en quoy (apres Dieu) [signature/closing: ..S. fay]"]	plaintext, rough reading; final visible line of the letter; trailing mark resembles a signature or closing flourish, not confidently resolved; large blank margin below, no further text in remaining crops of this folio
+#
+# Legend (glyph code -> description of shape)
+C01 descending bowl with long tail curling left below baseline (rho/p-like)
+C02 small open rounded cup, upsilon/u-like
+C03 small closed loop, theta-like (ambiguous, kept distinct from C19)
+C04 tall looping ascender / figure-eight (cursive-l-like)
+C06 circle bisected by a VERTICAL stroke (phi-like)
+C07 solid/outline triangle (delta-like)
+C08 bold multi-stroke X / asterisk, heavier than plain x
+C09 hollow square/box
+C10 inverted-V, no crossbar (lambda-like)
+C11 vertical stroke topped with small ball/cross (tau/dagger-like)
+C12 reversed-6 / script-b closed loop with tail
+C13 three-pronged fork / trident (psi-like)
+C14 wavy w / omega shape
+C15 open-C with horizontal bar, epsilon-like
+C16 unresolved small mark, house/roof-like (kept as ? in tokens, not a firm code)
+C17 heart-shaped mark
+C18 squiggle / reversed-S or Z-bar mark
+C19 circle bisected by a HORIZONTAL stroke (theta-like), distinct from C06
+C20 hollow box/square with a double internal vertical bar (distinct from plain C09 square), typically appears in a run of three in a row
+C21 circle with an internal cross of two lines (spoked), distinct from C06/C19
+C22 plus-sign shape
+C23 vertical stroke with a small loop/circle at the BOTTOM (distinct from C11's top-ball)
+C24 double-loop shape with a dot/short stem on top (looks like a small "U" with a tick, or a stacked figure-8 variant)
+C25 figure resembling a "9" or hooked loop, distinct from numeral 3 and from C04
+C26 circle with a single dot inside, distinct from C19 (bar) and C21 (cross)
+C27 small hook/tail mark, distinct from the other loop codes, low-confidence
+#
+# Latin letters and numerals used as cipher signs are written literally, as seen in the manuscript:
+#   capitals: A E G H I K L O R S T X ; lowercase: a e f h l m n o q s v x y z ; numerals: 3 6 7
+# ('28'/'29' in L01 crops are foliation numbers in the margin, not cipher signs; 'fo' is two adjacent Latin letters f,o kept as one token.)
+# '?' = mark seen but not resolved to a shape or letter.
+# '(dash)' = a short insertion/correction stroke in the manuscript, not treated as a cipher sign.
+# '(blank)' = crop contains no legible ink text (margin).
+# '(spillover)' = faint tops/tails of the neighbouring band's line bleeding across a fixed crop boundary; not re-transcribed to avoid duplicating an adjacent crop's tokens.
+# f28r/f28v/f29r/f29v L01 crops are the top margin of each leaf (foliation number and a small flourish), not body text.
+# The ciphered passage runs from f28r L07 s2 (after a virgule following 'escript') to f29v L05 s2 ('K (.'), i.e. through most of f28r, all of f28v, all of f29r, and the opening of f29v; from f29v L05 s2 line 2 onward is plaintext French to the end of the letter (f29v L19).
+# This is one independent transcription pass (Pass B); a second, independent Pass A was made blind in parallel for reconciliation. No decoding or novelty claim is made here.
+# tokens (rows): 6012
+# distinct glyph codes: 25
