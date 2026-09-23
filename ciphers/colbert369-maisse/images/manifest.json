@@ -1,0 +1,24 @@
+{
+  "shelfmark": "Bibliotheque nationale de France. Departement des Manuscrits. Cinq cents de Colbert 369",
+  "ark": "ark:/12148/btv1b100339414",
+  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b100339414",
+  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b100339414/manifest.json",
+  "bnf_notice": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc917396",
+  "leaves_total": 394,
+  "rights": "Bibliotheque nationale de France, public domain reproduction, Gallica, no login required",
+  "fetched": "23 September 2026",
+  "fetch_method": "curl, browser User-Agent, IIIF Image API /full/900,/0/native.jpg (reduced width)",
+  "images": [
+    {
+      "file": "btv1b100339414_f3_cipher_table.jpg",
+      "canvas": "f3 (IIIF canvas index 3, opening)",
+      "shows": "Right-hand page headed 'Chiffre du Roy, escript au Sr de Maisse': a=7 b=8 c=9 d=10 e=11 f=1 g=2 h=3 i=4 l=5 m=6 n=12 o=13 p=14 q=15 r=16 s=17 t=18 u=19 x=20 y=21 z=22, with a 'Doubles' (homophone) section ff/mm/nn/../ss/uu = 66-73(ish). Left-hand page headed 'Allarme d'Italie, au mois de Mars 1591', a nomenclator of place/office code numbers, plus a 'Nulles' line."
+    },
+    {
+      "file": "btv1b100339414_f6_title_leaf.jpg",
+      "canvas": "f6 (IIIF canvas index 6, opening)",
+      "shows": "Left page: illuminated title leaf, 'Registre des Instructions, Pouvoirs et Despesches Baillees a Monsieur de Maisse par le deffunt Roy Henry Troisiesme...', with a note that the register also contains all of Maisse's own letters to the late King and Henri IV and their responses. Right page: 'Instruction' text beginning the register proper, in plain French secretary hand."
+    }
+  ],
+  "note": "Front-matter leaves f3-f5 carry at least three/four distinct cipher key tables (headed 'Chiffre du Roy escript au Sr de Maisse', 'Chiffre envoye a Mons.r de Maisse', a third 'Chiffre du Roy avec Sr de...', and 'Brefves, a de Maisse') before the register text proper begins at f6v/f8r. Only f3 was saved here; f4-f5 were viewed but not saved (same character as f3, additional tables)."
+}

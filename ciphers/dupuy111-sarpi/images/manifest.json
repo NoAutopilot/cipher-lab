@@ -1,0 +1,23 @@
+{
+  "shelfmark": "Bibliotheque nationale de France. Departement des Manuscrits. Dupuy 111",
+  "ark": "ark:/12148/btv1b10034811v",
+  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b10034811v",
+  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10034811v/manifest.json",
+  "leaves_total": 105,
+  "rights": "Bibliotheque nationale de France, public domain reproduction, Gallica, no login required",
+  "fetched": "23 September 2026",
+  "fetch_method": "curl, browser User-Agent, IIIF Image API /full/900,/0/native.jpg (reduced width)",
+  "images": [
+    {
+      "file": "btv1b10034811v_f103canvas_folio101_cipher_table.jpg",
+      "canvas": "IIIF canvas index 103 (image corner marked folio 101)",
+      "shows": "Full-page nomenclator/Polybius-style cipher table in a later (post-Sarpi) hand: hundreds of code-word/number pairs organised alphabetically (city and office names visible: Bruxelles, Anversa, Milano, Roma, Firenze...), a 'nulle a.e.i.o.u.' null-letter line. The facing canvas (index 102, folio 100, not saved) carries only a French heading note: 'Chiffre escrit de la main du Pere Paul par lequel il se servoit avec ses amys auquel il a joint les lettres italiennes qu'on peut au reste de ce volume.'"
+    },
+    {
+      "file": "btv1b10034811v_f36canvas_folio34_ciphertext_letter.jpg",
+      "canvas": "IIIF canvas index 36 (approx. folio 34, matching Busnelli's citation 'Dupuy 111, f.34r-v' for the 16 Feb 1610 letter to Castrino)",
+      "shows": "An actual enciphered letter: continuous Italian prose with two- and three-digit numeral groups embedded inline in place of names/places (nomenclator over cleartext connective prose), addressed on the facing leaf 'Al molto Ill.re Sig.r ... il Signor [addressee name obscured]'. Confirms the volume DOES contain real ciphertext, not only the key."
+    }
+  ],
+  "note": "f100-101 (the key, per the BnF catalogue's 'f.100') sit near the END of Sarpi's autograph run (105 leaves total), not the head; the letters proper (dated Oct 1608-July 1617 to 'Castrino') run through earlier folios, at least one of which (~f.34) is genuinely enciphered."
+}
