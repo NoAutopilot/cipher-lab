@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 19:21 UTC",
+ "updated": "23 September 2026, 19:53 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -306,6 +306,21 @@
  ],
  "workers": [
   {
+   "title": "Check Solved: M1-M3 (Colbert 369, Clairambault 351, Dupuy 111)",
+   "job": "Editions first, leaves viewed on Gallica",
+   "state": "running"
+  },
+  {
+   "title": "Scout: digitised-manuscript catalogues",
+   "job": "11 BnF items with cipher content, images on Gallica, outside both solver projects. ~$4",
+   "state": "done, archived"
+  },
+  {
+   "title": "Scout: scoring pass N20-N40",
+   "job": "335 examined, 21 scored, none digitised. ~$3",
+   "state": "done, archived"
+  },
+  {
    "title": "Check Solved: N12-N15 + Thurloe",
    "job": "N12 found-solved; N13-N15 open at stage 2; SP 78 unprinted, REQUEST.md drafted. ~$3",
    "state": "done, archived"
@@ -323,21 +338,6 @@
   {
    "title": "Check Solved: N4-N7",
    "job": "N4, N5 found-solved; N6 SP 87 open, a 98-item campaign; N7 partial. ~$3",
-   "state": "done, archived"
-  },
-  {
-   "title": "Solver: Bowes 1583 fragments",
-   "job": "Partial: 93/101 tokens read at S with control; names in clear sentences, cribbed from the 1842 letter-book copies. ~$12",
-   "state": "done, archived"
-  },
-  {
-   "title": "Print Check: Mornington editions, Courten cross-ref",
-   "job": "Nine despatches unprinted; second Courten key found; two REQUEST.md drafted. ~$1.5",
-   "state": "done, archived"
-  },
-  {
-   "title": "Check Solved: N1-N3",
-   "job": "N2 found-solved; N1 partial (one despatch printed); N3 open at stage 2. ~$2.5",
    "state": "done, archived"
   }
  ],
@@ -400,6 +400,10 @@
   }
  ],
  "log": [
+  {
+   "when": "23 Sept, 19:53",
+   "what": "Owner away; four credential-free workers ran. Sforza volume not on Gallica (image via DECODE next session). Bowes stays N1, calendar page paywalled. TNA and BL hits: 21 more scored, none digitised. Digitised lane found: 11 BnF manuscripts with cipher on Gallica, top one a register with its cipher bound at the head (Cinq Cents de Colbert 369); check-solved running on the top three."
+  },
   {
    "when": "23 Sept, 19:21",
    "what": "Night closed. Non-DECODE lane: 15 rows swept, 7 verified unsolved at stage 2 (Mornington, Courten, SP 87 campaign, SP 78, SP 90/2, SP 87/13, SP 87/23), 8 dropped or partial. Six imaging or copy decisions on the owner's card (ASKS 12-16). Bowes 1583 verified N1. Nothing solved."

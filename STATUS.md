@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 23 September 2026, 19:21 UTC
+Last updated: 23 September 2026, 19:53 UTC
 
 > **the owner is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -53,6 +53,15 @@ France 1642-57, SP 90/2 1704, SP 87/13 1743, SP 87/23 1747), eight dropped or pa
 the catalogue scout are still unscored (ASSIGNMENTS row 13). The DECODE login test and the JSTOR pass wait for a
 session that sees the credentials. Nothing was solved; Bowes 1583 is N1. Session usage about 90 for the orchestrator
 and nineteen workers.
+
+**19:53 UTC, 23 Sept: the copy-free lane.** While the owner was away, a scout of digitised-manuscript catalogues found
+eleven BnF manuscripts with cipher content whose images are free on Gallica and which neither solver project names
+(QUEUE.md "Digitised candidates, no copy needed", M1-M11). M1 is a register of a French ambassador's ciphered
+correspondence of the 1580s-90s with the cipher bound at the head of the volume (Cinq Cents de Colbert 369). Check-solved
+is running on M1-M3, editions first. The TNA and BL lanes stay copy-order lanes: 21 more rows scored (N20-N40), none
+digitised. Sforza 1446's volume is not on Gallica; its DECODE images go on the next session's login list. Bowes stays
+N1. Seven catalogues (Beinecke, Folger, Bodleian, CUDL, TCD, Leiden, KB) answered curl with bot challenges and need
+the browser tool.
 
 **Next session on this account, first actions (written 18:02 UTC, 23 Sept 2026).** (1) Presence test of the seven
 variables with `test -n`, no values printed. (2) One DECODE login attempt via `tools/decode_fetch.sh 8725 ...`; on
