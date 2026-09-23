@@ -1,5 +1,5 @@
 {
- "updated": "24 September 2026, 00:40 UTC",
+ "updated": "24 September 2026, 01:30 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -182,17 +182,17 @@
    "year": "1912",
    "ref": "Bobbs-Merrill 1912; Wikisource Index:The Master of Mysteries (1912).djvu",
    "folder": "ciphers/burgess-mysteries-1912",
-   "stage": 2,
+   "stage": 8,
    "state": "queued",
    "holder": "Nobody",
-   "next": "Fetch the page-level text (Wikisource or the Cornell scan on Internet Archive, both egress-blocked from the ytbiz account); score the untested families Aymeloglu's own log names: paragraph-first-word acrostics and true printed-line units, with the two known messages as the control.",
-   "note": "Check-solved 23 Sept 2026: open on all six sources; Aymeloglu's burgess-1912/ is an active negative log with a quadgram scorer, not a solve.",
+   "next": "Untested: Baconian biliteral (needs page images), Donnelly-style word counts, in-story cipher rules applied to the frame narrative, word acrostics with a stronger scorer, Klinger's 2023 edition notes. Reruns with families.py.",
+   "note": "24 Sept 2026: closed-negative for eight families, control margins 0.395 and 0.156; word-level families recover a planted sentence only ~half the time, so a short word-level message is not excluded.",
    "kind": "cryptanalysis",
    "wait": {
-    "on": "Network access for the ytbiz environment (ASKS row 11), or any account that can reach Wikisource or archive.org",
-    "since": "23 Sept 2026",
-    "expected": "Minutes once the environment setting is changed",
-    "unblock": "Fetch the 552 page texts once to images/ or text/ with a manifest, then run the acrostic families with the two known messages as control"
+    "on": "Page images of the 1912 edition for the biliteral test, and a stronger word model",
+    "since": "24 Sept 2026",
+    "expected": "Whenever a session picks it up",
+    "unblock": "Fetch the IA page images once (JP2 zip) and score type-face variation; or run the word families with a sentence-level model"
    }
   },
   {
@@ -234,6 +234,11 @@
  ],
  "workers": [
   {
+   "title": "Solver: Burgess 1912 acrostic families",
+   "job": "Negative for 8 families with control; word families weak; untested list in NOTES. ~$15",
+   "state": "done, archived"
+  },
+  {
    "title": "Scout: catalogues not on DECODE",
    "job": "704 hits, 493 survivors, 19 scored; keys in the same file for the top rows. ~$4",
    "state": "done, archived"
@@ -261,11 +266,6 @@
   {
    "title": "Scout: DECODE neighbour-record sweep",
    "job": "202 pairs, 27 survivors, 7 clusters (D1-D7). ~$2.5",
-   "state": "done, archived"
-  },
-  {
-   "title": "Solver: Sforza-Maino 1446 joint key",
-   "job": "Closed-negative with matched control (controls 99%+, target at baseline). Tooling left in tools/. ~$12",
    "state": "done, archived"
   }
  ],
@@ -328,6 +328,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sept, 01:30",
+   "what": "Burgess 1912: no third message in eight families, with the two known messages as control. Remaining families need page images or a stronger word model. Check-solved N1-N3 and the Bowes solver still running."
+  },
   {
    "when": "24 Sept, 00:40",
    "what": "Non-DECODE scout: 493 catalogue items with cipher that neither solver project names, 19 scored (QUEUE.md N1-N19); the top three carry their key in the same file. Check-solved started on them. Policy: unread letters with a key beside them are kept as the cheapest solves, not dropped as editions."
