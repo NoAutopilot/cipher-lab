@@ -1,3 +1,5 @@
+partial
+
 # Ernest and Joachim of Anhalt-Zerbst to Francis I, Latin, "presque entierement en chiffres" -- BnF Dupuy 468
 
 partial
