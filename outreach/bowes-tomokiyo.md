@@ -1,4 +1,4 @@
-to: S. Tomokiyo, via the contact address on his Cryptiana site (cryptiana.web.fc2.com; the address is on his contact page, not reproduced here)
+to: S. Tomokiyo. His address is published only as an image at the foot of https://cryptiana.web.fc2.com/code/crypto.htm (Contact, "Send Comments to"), so it is kept out of this public file on purpose; the orchestrator gave it to the owner directly on 23 Sept 2026
 subject:Cotton Caligula C VII, Bowes to Walsingham 1583: sign table for the eleven cipher fragments
 checked: 23 Sept 2026, orchestrator. Class N1 (AUDIT.md), grade F2. States the 1842 print itself. Rule-10 wording. No personal data. Link public. Safe to send as is.
 status: ready
@@ -28,3 +28,17 @@ correction, especially on the three tokens where the key and the print disagree,
 manuscript image.
 
 With thanks for the transcription, which made this possible,
+
+## 日本語版（参考。Cryptiana は英語で書かれているので、送るのは上の英文で足ります）
+
+件名：Cotton Caligula C VII、Bowes から Walsingham への書簡（1583年）：暗号断片11箇所の記号表
+
+友清様
+
+貴サイトのエリザベス朝暗号のページで、Robert Bowes から Walsingham 宛の1583年4月7日および7月31日付書簡（大英図書館 Cotton Caligula C VII, ff. 196, 299）に含まれる短い暗号断片11箇所を、貴殿の翻刻とともに未解読として掲載されています。
+
+私たちは貴殿の翻刻を、同じ二通の書簡の Bowes 自身の書簡控え（Surtees Society 刊、1842年、第14巻、no. CLXXXVII および CCXL）、および1910年刊 Calendar of State Papers Scotland 第6巻 no. 389（4月7日付書簡を人名を平文のまま要約）と照合しました。断片は平文の文中に置かれた固有名詞（Cobham, Smallet, Glencairn, Maineville, Huntly, Mauvissière, Ruthven）で、a, e, g に第二の記号を持つ単純な換字式暗号です。一つの整合的な記号表で、貴殿の101トークン中93が読めます（82は印刷された人名で検証済み、8は不確実、3は鍵と印刷人名が一文字異なる箇所）。8トークンは未読です。平文は1842年以来印刷されているため、これは既知の平文の再解読であり、未知の本文の解読ではありません。それ以上の主張はしません。記号表、照合、検索記録は次の場所にあります：https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bowes-walsingham-1583（AUDIT.md に検索の記録）。
+
+貴ページに有用でしたら、適切と思われる形でご利用ください。特に鍵と印刷人名が一致しない3トークンについて、ご訂正をいただければ幸いです。私たちは写本の画像を見ていません。
+
+翻刻に感謝いたします。
