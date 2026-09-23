@@ -5,6 +5,7 @@ Usage: python3 tools/build_dashboard.py   (from the repo root)
 Then publish dashboard.html. The board and STATUS.md must say the same thing; status.json is the source.
 """
 import html
+import re
 import json
 import os
 
@@ -29,6 +30,29 @@ def load_asks():
     return rows
 
 asks = load_asks()
+
+def load_emails():
+    """Ready-to-send drafts in outreach/: slug, to, subject, checked, text."""
+    out = []
+    if not os.path.isdir("outreach"):
+        return out
+    for fn in sorted(os.listdir("outreach")):
+        if not fn.endswith(".md"):
+            continue
+        txt = open(os.path.join("outreach", fn), encoding="utf-8").read()
+        head = {}
+        for line in txt.split("\n")[:8]:
+            m = re.match(r"^(to|subject|checked|status):\s*(.*)$", line)
+            if m:
+                head[m.group(1)] = m.group(2).strip()
+        if head.get("status") != "ready":
+            continue
+        body = txt.split("## Text", 1)[1] if "## Text" in txt else ""
+        body = body.split("\n## ", 1)[0].strip()
+        out.append({"slug": fn[:-3], "to": head.get("to", ""), "subject": head.get("subject", ""), "checked": head.get("checked", ""), "text": body})
+    return out
+
+emails = load_emails()
 E = html.escape
 stages = d["stages"]
 N = len(stages)
@@ -81,8 +105,13 @@ n_you = sum(1 for t in d["targets"] if t["state"] == "you")
 n_solved = sum(1 for t in d["targets"] if t["state"] == "solved")
 
 card_items = "".join(
-    f'<li data-row="{a["row"]}" id="ask-{a["row"]}"><input type="checkbox" aria-labelledby="ask-what-{a["row"]}"><div><div class="ask-what" id="ask-what-{a["row"]}">{E(a["what"][:220])}</div><div class="ask-action">{E(a["action"][:400])}</div><div class="ask-meta">Row {a["row"]} · raised {E(a["raised"])} · {E(a["who"])} · {E(a["status"][:80])}</div></div></li>'
-    for a in asks
+    f'<li data-row="{E(m["slug"])}" id="ask-{E(m["slug"])}"><input type="checkbox" aria-labelledby="ask-what-{E(m["slug"])}"><div>'
+    f'<div class="ask-what" id="ask-what-{E(m["slug"])}">{E(m["subject"])}</div>'
+    f'<div class="ask-action"><b>To:</b> {E(m["to"])}</div>'
+    f'<div class="ask-meta"><span class="ok">&#10003; checked</span> {E(m["checked"])}</div>'
+    f'<details><summary>Text to send</summary><pre class="mail">{E(m["text"])}</pre><button type="button" class="copy" data-for="mail-{E(m["slug"])}">Copy text</button><textarea id="mail-{E(m["slug"])}" hidden>{E(m["text"])}</textarea></details>'
+    f'</div></li>'
+    for m in emails
 )
 workers = "".join(
     f'<li class="w-{w["state"]}"><span class="dot"></span><div><div class="w-title">{E(w["title"])}</div><div class="muted">{E(w["job"])}</div></div><span class="w-state">{E(w["state"])}</span></li>'
@@ -162,6 +191,8 @@ th, td {{ text-align:left; padding:7px 10px; border-bottom:1px solid var(--line)
 .card input[type=checkbox] {{ width:20px; height:20px; margin-top:2px; accent-color:var(--good); cursor:pointer; }}
 .ask-what {{ font-weight:600; }} .ask-action {{ font-size:0.92rem; margin-top:2px; }} .ask-meta {{ font-size:0.8rem; color:var(--muted); margin-top:4px; }}
 .card-note {{ font-size:0.85rem; color:var(--muted); margin:8px 0 0; }}
+.ok {{ color:var(--good); font-weight:600; }} .mail {{ white-space:pre-wrap; font-family:inherit; font-size:0.92rem; background:var(--ground); padding:10px 12px; border-radius:4px; margin:8px 0; }}
+details summary {{ cursor:pointer; color:var(--accent); font-size:0.92rem; margin-top:6px; }} .copy {{ font:inherit; font-size:0.85rem; padding:4px 10px; border:1px solid var(--line); border-radius:4px; background:var(--surface); color:var(--ink); cursor:pointer; }}
 @media (prefers-reduced-motion: no-preference) {{ .seg {{ transition:background .2s; }} }}
 </style>
 <div class="wrap">
@@ -178,9 +209,9 @@ th, td {{ text-align:left; padding:7px 10px; border-bottom:1px solid var(--line)
   </section>
 
   <section class="panel" id="your-card">
-    <h2>Your card</h2>
+    <h2>Emails to send</h2>
     <ul class="card">{card_items}</ul>
-    <p class="card-note">Tick a box when you have done it. Ticks are saved on this page; the orchestrator reads them and sets the row in ASKS.md to done with the date. <span id="card-status"></span></p>
+    <p class="card-note">Each one has been checked by the orchestrator against the gates (class assigned, rule-10 wording, no personal data, links public). Tick the box once sent; the tick is saved on this page and the orchestrator logs the date in CONTRIBUTIONS.md. <span id="card-status"></span></p>
   </section>
 
   <section>
@@ -234,14 +265,15 @@ th, td {{ text-align:left; padding:7px 10px; border-bottom:1px solid var(--line)
       var r = li.dataset.row; var done = ev.target.checked; var when = new Date().toISOString().slice(0, 10);
       var v = {{ row: Number(r), done: done, when: done ? when : '' }};
       paint(r, done, v.when); local(r, v);
-      if (db) db.doc('asks/row-' + r).set(v).catch(function () {{ if (status) status.textContent = 'Saved on this device only.'; }});
+      if (db) db.doc('emails/' + r).set(v).catch(function () {{ if (status) status.textContent = 'Saved on this device only.'; }});
     }});
   }});
+  Array.prototype.forEach.call(document.querySelectorAll('.copy'), function (b) {{ b.addEventListener('click', function () {{ var t = document.getElementById(b.dataset.for); if (t && navigator.clipboard) navigator.clipboard.writeText(t.value).then(function () {{ b.textContent = 'Copied'; }}); }}); }});
   if (!window.claude || !window.claude.use) {{ if (status) status.textContent = 'Saved on this device only.'; return; }}
   window.claude.use('db').then(function (ns) {{
     if (!ns) {{ if (status) status.textContent = 'Saved on this device only.'; return; }}
     db = ns;
-    db.collection('asks').onSnapshot(function (snap) {{
+    db.collection('emails').onSnapshot(function (snap) {{
       snap.docs.forEach(function (doc) {{ if (!doc.exists) return; var v = doc.data(); paint(v.row, v.done, v.when); local(v.row, v); }});
       if (status) status.textContent = 'Saved on this page.';
     }}, function () {{ if (status) status.textContent = 'Saved on this device only.'; }});
