@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 21:58 UTC",
+ "updated": "23 September 2026, 21:56 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -442,7 +442,7 @@
  ],
  "log": [
   {
-   "when": "23 Sept, 21:58",
+   "when": "23 Sept, 21:56",
    "what": "Credential session: all seven variables set on the ytbiz account. DECODE login rejected once (form asks for a user name; row 1 open). archive.org login and loan work; lending pages are reader-protected, tool stops on them (row 18). Google Books snippets reached CSP Scotland vi nos. 389 and 584 for the Bowes audit (AUDIT.md section 10). JSTOR challenge-blocked (row 17)."
   },
   {

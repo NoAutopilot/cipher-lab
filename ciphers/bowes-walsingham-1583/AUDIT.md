@@ -254,7 +254,7 @@ archive.british-history.ac.uk 2 (connection reset both times, not retried a thir
 1 (403, stopped, one request as instructed); WebSearch 4 queries. All requests sequential, at least 1.5 s apart
 per host, descriptive User-Agent, no logins or keys used.
 
-## 10. Calendar running text reached through Google Books snippets (23 September 2026, 21:58 UTC)
+## 10. Calendar running text reached through Google Books snippets (23 September 2026, 21:56 UTC)
 
 Credential session on the ytbiz account (not the verifier; this section is evidence for the verifier, and the
 class in section 1 is left as it stands). With `GOOGLE_BOOKS_KEY` the Books API lists six Google copies of
