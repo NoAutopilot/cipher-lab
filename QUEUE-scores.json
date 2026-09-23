@@ -4887,5 +4887,273 @@
    }
   ]
  },
- "unread_axis_note": "Re-scored 20 Sept 2026 with the unread axis (CLAUDE.md Usage worker brief), on top of the same-night search-print sweep (commits 16d270c, baeab70) which found three rows -- Moray regency, Throckmorton (BL Add MS 4136, 20 ciphertexts), Sadler 1543 -- already found-solved with printed contemporary decipherments; those three were moved from 'scored' into 'dropped' before the unread axis was applied, leaving 40 scored rows. The unscored_kept backlog (163 items) was reviewed for a heuristic unread/kind pass but the harvest evidence for most rows is a single-line snippet, often ambiguous between 'key found' and 'key tried and rejected' -- not enough to grade reliably without misclassifying per CLAUDE.md rule 4, so unread/kind were left unset there this sweep; score them properly if and when they are promoted into the scored 40."
+ "unread_axis_note": "Re-scored 20 Sept 2026 with the unread axis (CLAUDE.md Usage worker brief), on top of the same-night search-print sweep (commits 16d270c, baeab70) which found three rows -- Moray regency, Throckmorton (BL Add MS 4136, 20 ciphertexts), Sadler 1543 -- already found-solved with printed contemporary decipherments; those three were moved from 'scored' into 'dropped' before the unread axis was applied, leaving 40 scored rows. The unscored_kept backlog (163 items) was reviewed for a heuristic unread/kind pass but the harvest evidence for most rows is a single-line snippet, often ambiguous between 'key found' and 'key tried and rejected' -- not enough to grade reliably without misclassifying per CLAUDE.md rule 4, so unread/kind were left unset there this sweep; score them properly if and when they are promoted into the scored 40.",
+ "github_held": [
+  {
+   "id": "G1",
+   "name": "Forget/Mayenne/Matignon despatches, Ligue civil war, 1585-86 (BnF fr. 15572 + fr. 15571 f.177)",
+   "bourdeau_folder": "matignon1586",
+   "bourdeau_class": "read in part",
+   "fraction_read": 0.28,
+   "language_fit": 1,
+   "material": 3,
+   "key_lead": 3,
+   "size": 3,
+   "competition": 1,
+   "weight": 3,
+   "unread": 2,
+   "kind": "recovery",
+   "total": 35,
+   "year": "1585-1586",
+   "language": "fr",
+   "rationale": "12,994 profile tokens across 13 folios, the largest block in this sweep. Bourdeau's Mayenne-Forget Cipher-1 key is already recovered and verified against sibling leaves (ff.14/15, 18/19, 78-79, 91-92), beating scrambled-key controls by +2.07/figure on ff.123-124 (a matched-control number, not a bare claim). Most of the 'unread' total is leaves transcribed only in part or not re-checked against that verified key: a transcription backlog, not a cryptanalytic failure. Unused lead: a second cipher in the same volume (Cipher-3, fr.15572 f.276, fr.15571 f.179) has a contemporary interlinear decipherment already photographed in magenta ink (img/BnFfr15571f179.jpg) and never transcribed. Not in Aymeloglu's catalogues.",
+   "sources": [
+    "bourdeau"
+   ]
+  },
+  {
+   "id": "G2",
+   "name": "Lope Hurtado de Mendoza (Rome) to Charles V, nine ciphertexts, 1522 (RAH Salazar 9/26, DECODE R9634-R9656)",
+   "bourdeau_folder": "lopehurtado",
+   "bourdeau_class": "read in part",
+   "fraction_read": 0.45,
+   "language_fit": 1,
+   "material": 3,
+   "key_lead": 3,
+   "size": 3,
+   "competition": 1,
+   "weight": 2,
+   "unread": 2,
+   "kind": "recovery",
+   "total": 34,
+   "year": "1522",
+   "language": "es",
+   "rationale": "6,289 profile tokens across 9 records; a key distinct from the published Sanchez/Juan Manuel 1522 ciphers (Tomokiyo 2025). R9644 in the same box carries the clerk's own full contemporary clear version of itself, keyed to the cipher by marginal letters A/B/C, giving 49 confirmed code values by direct alignment (key_codes.tsv) -- the textbook 'sibling with a contemporary decipherment' move (LESSONS.md). The escalation log itself flags R9634, R9646, R9649 as 'not-attempted' against that recovered key. Aymeloglu's bne-ranked.md separately lists two further Lope Hurtado letters at the BNE (MSS/18697/29, MSS/20212/27) that neither project has checked -- an additional lead outside Bourdeau's own file.",
+   "sources": [
+    "bourdeau",
+    "aymeloglu"
+   ]
+  },
+  {
+   "id": "G3",
+   "name": "Principe di Castelcicala despatches to Naples, 1816-23 (ASNa Esteri 2337, DECODE R9553-R9589)",
+   "bourdeau_folder": "castelcicala1816",
+   "bourdeau_class": "read in part",
+   "fraction_read": 0.429,
+   "language_fit": 1,
+   "material": 3,
+   "key_lead": 2,
+   "size": 3,
+   "competition": 1,
+   "weight": 2,
+   "unread": 2,
+   "kind": "recovery",
+   "total": 31,
+   "year": "1816-1823",
+   "language": "it",
+   "rationale": "10,397 profile tokens; a two-part numeric code of about 2,450 groups, mostly unvalued (55% of target groups). Contemporary interlinear decipherments already used as cribs on four records (R9566, R9569, R9571, R9589) give 162 confirmed values. Unused lead: the escalation log's own retry step (hand-reading the un-glossed 1816 letters against the Decazes/Florida crib themes with those 162 values) is checked not-done, and R9586/R9588's pencil glosses are noted but not attacked. Full recovery still needs the physical codebook (needs-physical-access). Not in Aymeloglu's catalogues.",
+   "sources": [
+    "bourdeau"
+   ]
+  },
+  {
+   "id": "G4",
+   "name": "Riksarkivet Stockholm cipher group, four correspondences bundled under one catalogue row, 1628-1633 (DECODE R4282-R4341)",
+   "bourdeau_folder": "riksarkivet1628",
+   "bourdeau_class": "read in part",
+   "fraction_read": 0.3,
+   "language_fit": 1,
+   "material": 3,
+   "key_lead": 2,
+   "size": 3,
+   "competition": 1,
+   "weight": 2,
+   "unread": 2,
+   "kind": "recovery",
+   "total": 31,
+   "year": "1628-1633",
+   "language": "de/la",
+   "rationale": "2,622 profile tokens over 4 open documents; the Bremen 1631 pair in the same catalogue row is already fully read (its key rebuilt from its own interlinear glosses, a six-column alphabet grid). Blind homophonic/substitution annealing in 11 languages on the other three (R4282, R4284, R4306) found no language basin -- a real negative, but not against a matched control per rule 3. Unused lead: R4284 carries its own key-test leaf (four Latin phrases written over their cipher equivalents) never used as a crib for the letter cipher R4282 may share; only 2 of 70 fetched Chifferklaver key records were tried; R4338-R4341 (E 708, June 1633) carry interlinear decipherments of the time never transcribed. Aymeloglu's CATALOGUE.md flags a different record in the same archive (R4332, 1637) with both a decipherment and a key, not checked against these four.",
+   "sources": [
+    "bourdeau",
+    "aymeloglu"
+   ]
+  },
+  {
+   "id": "G5",
+   "name": "BL Add MS 32305 'Carre' code letters, 1742-45 (DECODE R2968, R2970, R2972)",
+   "bourdeau_folder": "bl32305",
+   "bourdeau_class": "not read",
+   "fraction_read": 0.09,
+   "language_fit": 1,
+   "material": 3,
+   "key_lead": 1,
+   "size": 3,
+   "competition": 1,
+   "weight": 2,
+   "unread": 3,
+   "kind": "cryptanalysis",
+   "total": 31,
+   "year": "1742-1745",
+   "language": "fr",
+   "rationale": "1,323 groups, 381 distinct, fully transcribed and merged into one working file; a two-part code of about 800 entries. Bourdeau's folder is explicitly marked 'attempted, closed': the decipherer of the time also stopped at these three letters, and a ciphertext-only break was judged infeasible at this size (no matched control run, so per rule 3 this is Bourdeau's judgement, not a closed negative for us). No unused lead is visible from the repository alone -- the neighbouring records in the same volume (R2963-R2981) were all checked and only these three are unglossed; the real next step (a key, a clear copy, or more Carre letters in BL/SP 107) is archival. Not in Aymeloglu's catalogues.",
+   "sources": [
+    "bourdeau"
+   ]
+  },
+  {
+   "id": "G6",
+   "name": "BnF Espagnol 318, Catholic Monarchs' correspondence, nos. 92-95, 1500-1504",
+   "bourdeau_folder": "esp318",
+   "bourdeau_class": "read in part",
+   "fraction_read": 0.4,
+   "language_fit": 1,
+   "material": 3,
+   "key_lead": 2,
+   "size": 2,
+   "competition": 1,
+   "weight": 3,
+   "unread": 2,
+   "kind": "recovery",
+   "total": 30,
+   "year": "1500-1504",
+   "language": "es/it",
+   "rationale": "1,979 profile tokens over 4 open folios. No.93 fails ciphertext-only (-3.5 vs -1.8 nats, a real if uncontrolled negative); no.95's transcription is disputed on a third of its glyphs across three independent passes. Unused lead: no.92 already uses Galende Diaz's 1994 printed key for three-quarters of its words but five groups contradict it in context and about ten stretches are unplaced; no.94 (four pages, drops repeatedly into Spanish clear) has never been transcribed at all, and Bergenroth's Gran-cifra list, already identified in the notes as the likely key, was never tested against it. Not in Aymeloglu's catalogues.",
+   "sources": [
+    "bourdeau"
+   ]
+  },
+  {
+   "id": "G7",
+   "name": "Sforza-side reply to Zorzo del Maino, 4 May 1446 (BnF italien 1583 f.68, DECODE R7898), with sibling f.70 (Amidani to Sforza)",
+   "bourdeau_folder": "it1583",
+   "bourdeau_class": "not read",
+   "fraction_read": 0,
+   "language_fit": 1,
+   "material": 3,
+   "key_lead": 1,
+   "size": 2,
+   "competition": 1,
+   "weight": 2,
+   "unread": 3,
+   "kind": "cryptanalysis",
+   "total": 29,
+   "year": "1446",
+   "language": "it",
+   "rationale": "About 800 signs across two hands (404 + 390 signs), both already transcribed. Homophonic and one-to-one annealing (the same solver design that solves synthetic 400-letter Italian controls in 1 of 3 restarts) collapsed to nonsense on f.68 alone; 208 Sforza-family key records were checked at thumbnail size with no match. Unused lead: f.70 (Amidani, same sign family per the notes, a different hand) was found and transcribed but only annealed on its own, also to nonsense -- the two ciphers were never annealed jointly as one shared key, the standard sibling move (LESSONS.md), and both transcriptions already exist in the folder so this needs no further fetch. Not in Aymeloglu's catalogues.",
+   "sources": [
+    "bourdeau"
+   ]
+  },
+  {
+   "id": "G8",
+   "name": "Giuliano Caprile and Alfonso Cistarelli to Ferrara, 1519-1521 (ASMo Ambasciatori Ungheria b.4, DECODE R1128-R1139)",
+   "bourdeau_folder": "caprile1519",
+   "bourdeau_class": "read in part",
+   "fraction_read": 0.3,
+   "language_fit": 1,
+   "material": 3,
+   "key_lead": 2,
+   "size": 2,
+   "competition": 1,
+   "weight": 2,
+   "unread": 2,
+   "kind": "recovery",
+   "total": 29,
+   "year": "1519-1521",
+   "language": "it",
+   "rationale": "2,284 profile tokens over 5 open records. An EM key rebuilt from Somogyi 2025's published cribs reproduces 89.6% of an aligned sibling (R1138, itself already read by Somogyi). Unused lead: the escalation log's own next step -- a second, careful transcription of R1133/R1131/R1132 against the 1882 Vestigia decipherments already on file, to complete the letter table before attempting R1128 -- is checked not-done; no key of the 1520-21 sign system or the Cistarelli numeric system was tried on R1137. This is transcription discipline more than a new idea. Not in Aymeloglu's catalogues.",
+   "sources": [
+    "bourdeau"
+   ]
+  },
+  {
+   "id": "G9",
+   "name": "Van Dedem (Constantinople) despatches to Van de Spiegel and Van der Goes, 1788-1799 (DECODE R2120, R2122, R2131, R1895)",
+   "bourdeau_folder": "dedem1788",
+   "bourdeau_class": "not read",
+   "fraction_read": 0,
+   "language_fit": 1,
+   "material": 3,
+   "key_lead": 2,
+   "size": 2,
+   "competition": 1,
+   "weight": 2,
+   "unread": 2,
+   "kind": "recovery",
+   "total": 29,
+   "year": "1788-1799",
+   "language": "nl",
+   "rationale": "987 profile tokens; 258 + 50 groups still open. Hard-EM and leave-one-out word aligners run against the deciphered siblings (R2121, R1947, R2053) converge to near-diagonal paths with no consistent group-to-word values; French and Dutch cribs share only 17% of groups. Unused lead: R2120's own contemporary clear decipherment survives as R2121 (both already transcribed in-folder), fixing the 1788-93 homophonic code's shape, but three further DECODE records with solutions in the same code family (R1948-R1952, R2134, R2141) were named in the notes as further cribs and never fetched or transcribed. Not in Aymeloglu's catalogues.",
+   "sources": [
+    "bourdeau"
+   ]
+  },
+  {
+   "id": "G10",
+   "name": "La Guiche (Rome 1551), Noailles (Venice 1558), Seure (Lisbon 1558): BnF fr. 3138 no.22, fr. 3151 nos. 33, 39-44",
+   "bourdeau_folder": "guiche1551",
+   "bourdeau_class": "read in part",
+   "fraction_read": 0.17,
+   "language_fit": 1,
+   "material": 3,
+   "key_lead": 1,
+   "size": 1,
+   "competition": 1,
+   "weight": 2,
+   "unread": 2,
+   "kind": "recovery",
+   "total": 24,
+   "year": "1551, 1558",
+   "language": "fr",
+   "rationale": "474 profile tokens for La Guiche and Noailles (Seure's roughly 2,000 signs untranscribed). La Guiche (a plain 22-sign substitution) is about 350 of 406 signs read; two struck-through opening lines and two rare signs remain. Unused lead: Noailles (fr. 3151 no. 33) carries a marginal gloss whose visible words could serve as cribs for its own roughly 150-sign cipher, but the escalation log marks the cipher itself 'not-attempted'. Seure's six letters (nos. 39-44, two duplicate pairs) were located but never transcribed -- a multi-session job in Bourdeau's own estimate. Not in Aymeloglu's catalogues.",
+   "sources": [
+    "bourdeau"
+   ]
+  },
+  {
+   "id": "G11",
+   "name": "Champagne news-letters to Nevers, 1590-91, and Lauriere to Nevers, 1593 (BnF fr. 3623, fr. 3625)",
+   "bourdeau_folder": "champagne1590",
+   "bourdeau_class": "read in part",
+   "fraction_read": 0.418,
+   "language_fit": 1,
+   "material": 3,
+   "key_lead": 1,
+   "size": 1,
+   "competition": 1,
+   "weight": 2,
+   "unread": 2,
+   "kind": "recovery",
+   "total": 24,
+   "year": "1590-1593",
+   "language": "fr",
+   "rationale": "196 profile tokens net unread across 4 folios. No.23 read in full from its own bound key slip; nos.24/25/60 about three-quarters read from interlinear glosses; no.55 only 19 of 86 groups glossed. Limited unused lead: no.55's remaining 67 groups are a syllabic nomenclator for which no second glossed Lauriere letter has been found despite a page-by-page search of the volume (a genuine dead end, not an oversight); nos.24/25/60's few open code numbers need a key that is not bound with these letters -- an archival lookup, not a repository one. Not in Aymeloglu's catalogues.",
+   "sources": [
+    "bourdeau"
+   ]
+  },
+  {
+   "id": "G12",
+   "name": "Benedetto Fantini ('Jantini'), Buda and Eger, to the Este court, 1517-1518 (ASMo Ambasciatori Ungheria b.4, DECODE R1126-R1127)",
+   "bourdeau_folder": "jantini1517",
+   "bourdeau_class": "not read",
+   "fraction_read": 0,
+   "language_fit": 1,
+   "material": 3,
+   "key_lead": 0,
+   "size": 1,
+   "competition": 1,
+   "weight": 1,
+   "unread": 3,
+   "kind": "cryptanalysis",
+   "total": 23,
+   "year": "1517-1518",
+   "language": "it",
+   "rationale": "581 profile tokens over 2 short records. Resembles Caprile 1519's two-tier sign system but with a different sign inventory; Caprile's recovered values were seeded into the annealer here and the score collapsed, and a control-validated ciphertext-only syllabary anneal fails where matched controls succeed (the one control-backed negative in this batch). Included as the negative case: no decipherment, clear copy or key survives anywhere in the file, and the one lead worth naming (borrowing Caprile's key) was already tried and explicitly rejected. Not in Aymeloglu's catalogues.",
+   "sources": [
+    "bourdeau"
+   ]
+  }
+ ]
 }
