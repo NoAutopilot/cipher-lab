@@ -1,0 +1,19 @@
+{
+  "shelfmark": "Bibliotheque nationale de France. Departement des Manuscrits. Clairambault 351",
+  "ark": "ark:/12148/btv1b9000680d",
+  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b9000680d",
+  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000680d/manifest.json",
+  "bnf_notice": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc13826w/cd0e9660",
+  "leaves_total": 327,
+  "rights": "Bibliotheque nationale de France, public domain reproduction, Gallica, no login required",
+  "fetched": "23 September 2026",
+  "fetch_method": "curl, browser User-Agent, IIIF Image API /full/900,/0/native.jpg (reduced width)",
+  "images": [
+    {
+      "file": "btv1b9000680d_f178canvas_folio173_cipher_table.jpg",
+      "canvas": "IIIF canvas index 178 (image corner marked folio 173)",
+      "shows": "Full-page Italian nomenclator/substitution cipher table: alphabet, 'Doppie Lettere' (double letters), 'Nulle per usar al Cifrare' (nulls), and an 'Accompiate' list of code numbers for Firenze, Venetia, Roma, Il Duca di M., etc. Dated internally 'fatto li 13 di luglio 1557'. This is the BnF catalogue's 'Chiffre du duc de Paliano', located via the archivesetmanuscrits.bnf.fr item list at 'Fol. 173 et 175'. A near-identical second copy was viewed at canvas 180 (folio 175, not saved) with a wax-seal outline and 'duca di Paliano' visible on the facing leaf."
+    }
+  ],
+  "note": "The item is a standalone key/nomenclator table copied twice (ff.173 and 175), not a letter. No cipher symbols were seen on any sampled correspondence leaf in this volume (f170, f175-verso letters read as plain Italian secretary hand)."
+}
