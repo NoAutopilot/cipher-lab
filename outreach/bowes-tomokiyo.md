@@ -1,9 +1,13 @@
+to: S. Tomokiyo, via the contact address on his Cryptiana site (cryptiana.web.fc2.com; the address is on his contact page, not reproduced here)
+subject:Cotton Caligula C VII, Bowes to Walsingham 1583: sign table for the eleven cipher fragments
+checked: 23 Sept 2026, orchestrator. Class N1 (AUDIT.md), grade F2. States the 1842 print itself. Rule-10 wording. No personal data. Link public. Safe to send as is.
+status: ready
+
 # Draft email: Bowes 1583 sign table, for S. Tomokiyo (Cryptiana)
 
-Not sent. The person sends it and records the date in CONTRIBUTIONS.md. No personal data in this file.
+Not sent. The owner sends it and records the date in CONTRIBUTIONS.md.
 
-Subject: Cotton Caligula C VII, Bowes to Walsingham 1583: sign table for the eleven cipher fragments
-
+## Text
 Dear Mr Tomokiyo,
 
 On your Elizabethan ciphers page you list the short cipher fragments in Robert Bowes's letters to Walsingham of

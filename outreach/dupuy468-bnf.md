@@ -1,12 +1,13 @@
-# Draft email: BnF, Département des Manuscrits, catalogue correction for Dupuy 468 f. 28
+to: BnF, Département des Manuscrits: the "signaler une erreur" link on the Dupuy 468 notice at archivesetmanuscrits.bnf.fr, or manuscrits@bnf.fr
+subject: Collection Dupuy 468, f. 28 : identification de l'original chiffré d'une lettre éditée, et correction de la notice
+checked: 23 Sept 2026, orchestrator. Class N1 (AUDIT.md, second audit), grade F1. Claims no priority; cites RTA JR II p.122. No personal data. Link public. Safe to send as is (French text; English below for reference).
+status: ready
 
-Not sent. The person sends it (the Archives et manuscrits notice has a "signaler une erreur" route, or the
-Département's enquiry address) and records the date in CONTRIBUTIONS.md. No personal data in this file.
+# Draft email: BnF catalogue correction for Dupuy 468 f. 28
 
-## Français
+Not sent. The owner sends it and records the date in CONTRIBUTIONS.md.
 
-Objet : Collection Dupuy 468, f. 28 : identification de l'original chiffré d'une lettre éditée, et correction de la notice
-
+## Text
 Madame, Monsieur,
 
 La notice de la Collection Dupuy 468 décrit le f. 28 comme « Lettre d'Ernest et Joachim d'Anhalt à François Ier,
@@ -30,10 +31,7 @@ entre les deux manuscrits.
 
 Avec nos remerciements pour la mise en ligne de ce fonds,
 
-## English
-
-Subject: Collection Dupuy 468, f. 28: identification of the cipher original of an edited letter, and a correction to the record
-
+## English version (reference)
 The record for Dupuy 468 describes f. 28 as a letter of Ernest and Joachim of Anhalt to François I, original, in
 Latin, almost entirely in cipher. Reading the leaf on Gallica (ark:/12148/btv1b10035959t, views 63-65), we found it
 carries an interlinear decipherment in a second, probably contemporary hand; we transcribed it, and the key it
