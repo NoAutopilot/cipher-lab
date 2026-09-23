@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 22:17 UTC",
+ "updated": "23 September 2026, 22:24 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -342,6 +342,11 @@
  ],
  "workers": [
   {
+   "title": "Transcription pass B: Dupuy 452 ff.28-29",
+   "job": "6,012 rows, 25 codes, blind. Reconciliation next. ~$8",
+   "state": "done, archived"
+  },
+  {
    "title": "Adversarial second audit: Dupuy 468",
    "job": "Found in print: RTA JR II p.122, 24 Jan 1520. N1, found-solved. ~$10",
    "state": "done, archived"
@@ -350,11 +355,6 @@
    "title": "Check Solved: P1 Orange 1572",
    "job": "Found-solved: partial decipherment printed 1842. ~$2.5",
    "state": "done, archived"
-  },
-  {
-   "title": "Transcription pass B: Dupuy 452 ff.28-29",
-   "job": "Blind reader, 158 lines",
-   "state": "running"
   },
   {
    "title": "Verifier: Dupuy 468",
@@ -436,6 +436,10 @@
   }
  ],
  "log": [
+  {
+   "when": "23 Sept, 22:24",
+   "what": "Wake closed at $218. Next wake's first job: reconcile the two blind passes on Raince's letter (Dupuy 452 ff.28-29) by glyph clustering from the images, then Raince's 1526 key and the nomenclator solver with a control. Credential session still running its own list."
+  },
   {
    "when": "23 Sept, 22:17",
    "what": "Dupuy 468 falls to N1: the adversarial second audit found the letter printed in full in Reichstagsakten JR II (1896), dated 24 Jan 1520. No unique solve tonight. The Orange 1572 detector candidate also fell, to an 1842 journal. Both caught inside the repo before any outreach."

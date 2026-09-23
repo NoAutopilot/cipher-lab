@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 23 September 2026, 22:17 UTC
+Last updated: 23 September 2026, 22:24 UTC
 
 > **Ryan is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -88,6 +88,28 @@ search that skipped that volume after its own re-dating. What remains is a contr
 identified, the catalogue's date and senders corrected. The "first verified N3" paragraph above is superseded. The
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
+
+## Handoff from the ytbiz orchestrator, 23 September 2026, 22:24 UTC
+
+Read this, then CLAUDE.md (the Outreach rule and the good-citizen rule are new today), the lane table above, ASKS.md
+and the last 40 lines of ROOM.md. The credential session started at 21:40 UTC may still be running its own list
+(presence test, DECODE login, Sforza images, catalogue pull, IA loan, Google Books page for Bowes, JSTOR pass,
+Ingram 1970 check); read its ROOM.md lines and ASKS.md rows before repeating anything.
+
+**First job (ASSIGNMENTS row 24):** reconcile the two blind transcription passes of Raince to Madame, 25 Oct 1525
+(ciphers/dupuy452-carpi-1520/passA.tsv, 4,797 tokens in 124 codes; passB.tsv, 6,012 rows in 25 codes) against the
+160 crops by image-based glyph clustering (segment signs, cluster by shape, label clusters, then map both passes onto
+the clusters), producing ciphertext.txt with a sign inventory. Then try Raince's 1526 key (Tomokiyo's francis.htm,
+BnF fr. 2984, Desenclos 2018) and run tools/nomenclator_anneal.py with a matched control. Best case N3 (class gate
+passed 23 Sept). Strongest model for the reconciliation, cap about $40; the solver only if the inventory is clean.
+
+**Then:** M8-M11 check-solved (digitised BnF lane, still open); the Bourdeau offline-only scout (row 21); the P2-P24
+Thurloe passages only after a leaf check against the tracked Thurloe pieces. No new keyword sweeps of copy-order
+lanes while ASKS rows 14-16 wait on the person. Run the retrospective after 12 ledger rows or $60.
+
+**Standing facts:** zero unique solves so far. Both readings of 23 Sept (Bowes, Dupuy 468) were in print; the gates
+caught them; they are logged as F2 and F1 contributions in CONTRIBUTIONS.md with drafts in outreach/. Two BL orders
+are out (Courten, Mornington). TNA page checks reopen in the UK morning. This orchestrator ran to $218; close at $60.
 
 **Next session on this account, first actions (written 18:02 UTC, 23 Sept 2026).** (1) Presence test of the seven
 variables with `test -n`, no values printed. (2) One DECODE login attempt via `tools/decode_fetch.sh 8725 ...`; on
