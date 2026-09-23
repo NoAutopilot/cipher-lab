@@ -38,3 +38,13 @@ exact pricing and turnaround were not looked up here (access playbook: no price 
 Waiting on the person to place this order (or approve an automated request if one is in place). No archive
 correspondence has been sent. Personal data (none needed for this order beyond an address/payment method the
 person supplies directly to TNA) stays out of this repo per rule 9.
+
+## Route and record ids (orchestrator, 23 September 2026)
+
+TNA record copying: open the Discovery record, "Request a copy", which starts a page check (9.92 GBP, non-refundable,
+one per request) that returns a costed quote; then pay for the images. Group by piece, two requests:
+- SP 78/111, folios 212 (SP 78/111/93, C7327886) and 300 (SP 78/111/135, C7327928).
+- SP 78/113, folios 106 (SP 78/113/57, C7328029) and 189 (SP 78/113/123, C7328095; catalogued "deciphered", ask for
+  any separate decipherment leaf filed with it, since it may give the key for the others).
+Record pages: https://discovery.nationalarchives.gov.uk/details/r/<id>. Colour digital copy, cipher legible, private
+research. Order SP 78/113 first if staging: its deciphered item is the key lead.
