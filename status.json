@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 19:20 UTC",
+ "updated": "23 September 2026, 20:20 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -218,25 +218,25 @@
    "year": "1446",
    "ref": "BnF italien 1583 ff.68, 70; DECODE R7898, R7899",
    "folder": "ciphers/sforza-maino-1446",
-   "stage": 3,
-   "state": "active",
-   "holder": "Worker",
-   "next": "Solver session: joint anneal of both letters as one shared key, matched synthetic control first (rule 3). Transcriptions are Bourdeau's drafts (CC BY 4.0), not checked against the image from this account.",
-   "note": "Check-solved 23 Sept 2026: open, conditional on blocked sources. Bourdeau closed it unread after annealing each letter alone; the joint anneal was never tried.",
+   "stage": 8,
+   "state": "blocked",
+   "holder": "Archive",
+   "next": "Closed-negative, conditional on Bourdeau's draft transcription. Reopens with a sign-exact transcription from the Gallica/DECODE image or a key (ASMi cart. 1597 full size, Cerioni 1970 vol. 2, Cremona material). run_target.sh reruns unchanged.",
+   "note": "Solver 23 Sept 2026: four matched controls read at 99%+, target cleared its shuffled baseline by 0.2-0.4 nats vs 1.8-2.0 for the controls; no token claimed (H0 C0 S0 M0 I0, 794 unread). Tooling in tools/nomenclator_anneal.py.",
    "kind": "cryptanalysis",
    "wait": {
-    "on": "The solver session",
-    "since": "23 Sept 2026, 18:40 UTC",
-    "expected": "Same day",
-    "unblock": "A reading that beats the scrambled-key baseline by the margin measured on the control, or a closed-negative with both numbers"
+    "on": "An image of ff.68 and 70 (Gallica or DECODE) or the key; both hosts blocked from the ytbiz account (ASKS row 11)",
+    "since": "23 Sept 2026, 20:20 UTC",
+    "expected": "Minutes after the network setting changes",
+    "unblock": "Re-transcribe sign-exact from the image, rerun run_target.sh"
    }
   }
  ],
  "workers": [
   {
    "title": "Solver: Sforza-Maino 1446 joint key",
-   "job": "Building the nomenclator annealer and the matched control, then the joint attack",
-   "state": "running"
+   "job": "Closed-negative with matched control (controls 99%+, target at baseline). Tooling left in tools/. ~$12",
+   "state": "done, archived"
   },
   {
    "title": "Check Solved: Sforza-Maino 1446 pair",
@@ -328,6 +328,10 @@
   }
  ],
  "log": [
+  {
+   "when": "23 Sept, 20:20",
+   "what": "Sforza-Maino 1446: joint-key attack with a matched control gives a clean negative, conditional on the draft transcription. Nothing solved today; the queue is honest again (five rows found solved elsewhere since our scout), and the campaign from this account is capped by the network policy until ASKS rows 10-11 are done."
+  },
   {
    "when": "23 Sept, 19:20",
    "what": "Sforza-Maino 1446 pair (from the GitHub harvest, QUEUE row G7) verified unsolved at stage 2 and put on the board as the cryptanalysis candidate; solver session running with a matched control."

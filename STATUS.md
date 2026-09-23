@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 23 September 2026, 19:20 UTC
+Last updated: 23 September 2026, 20:20 UTC
 
 > **Ryan is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -40,7 +40,11 @@ or quote request reaches the owner until a check-solved sweep has set that targe
 
 **19:20 UTC.** The harvest (QUEUE.md "Candidates held on GitHub", 12 rows) gave one genuine cryptanalysis candidate reachable from here: the Sforza-Maino 1446 pair, BnF italien 1583 ff.68 and 70, which Bourdeau closed unread after annealing each letter alone; the joint anneal as one shared key was never tried. Check-solved: open at stage 2, conditional on DECODE, Gallica and Cerioni being unreachable from this account. Lope Hurtado 1522 was left alone as Bourdeau's live target.
 
-**Running right now (19:20 UTC):** the solver session on the Sforza-Maino pair (tooling and matched control first, then the joint attack; cap $45). Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
+**20:20 UTC, end of this orchestrator's wake.** The Sforza-Maino solver finished: four matched synthetic pairs of the same design read at 99% or better, the real pair cleared its shuffled baseline by 0.2-0.4 nats against 1.8-2.0 for the controls, no token claimed. Closed-negative, conditional on Bourdeau's draft transcription, since no image is reachable from this account. Reusable tooling landed in tools/ (joint nomenclator annealer, 15th-century Italian model). Nothing was solved today.
+
+**What the owner's steer needs next.** One cipher solved that a verifier can class N3 or better is not reachable from this account as configured: every archive host is blocked (ASKS row 11) and no credentials are set (row 10). Once either is fixed, the order of attack is: (1) Burgess 1912, text on Wikisource, stage 2, untested acrostic families named in its NOTES; (2) Bowes 1583, search-print in CSP Scotland vi, then BL images; (3) the Sforza pair re-transcribed sign-exact from the Gallica image and rerun through run_target.sh; (4) the harvest rows G1 and G2 only if Bourdeau has stopped on them (re-run tools/solver_repo_diff.py first). Spink lot 1184's question lapsed with today's sale; the images were saved on 19 Sept.
+
+**Running right now (20:20 UTC):** nothing. Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
 
 **Waiting on the owner:** rotate the DECODE and archive.org passwords (both were printed into worker
 transcripts on 20 Sept) and set IA_USER to the account email; email Spink before the 23 Sept sale; the Kansas
