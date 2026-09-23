@@ -1,4 +1,6 @@
-open
+closed-negative
+
+(Conditional on Bourdeau's draft transcriptions: solver campaign of 23 Sept 2026, at the end of this file. The check-solved verdict of the same date, below, was open / Stage 2.)
 
 # Sforza reply to Zorzo (Giorgio) del Maino, 4 May 1446 (BnF italien 1583 f.68, DECODE R7898) and Vincenzo
 # Amidani to Francesco Sforza, Milan, 4 May 1446 (BnF italien 1583 f.70, imaged inside DECODE R7899)
@@ -15,7 +17,7 @@ Two items, same shelfmark, same date, same graphic-sign cipher family:
 
 Transcriptions, sign inventories, DECODE image identifiers and the Mazzatinti inventory pointer are all
 Bourdeau's work (`dbourdeau/cyphersolver`, folder `it1583/`, commit `2e9ec01`, checked 23 Sept 2026 in this
-sweep; code MIT, text CC BY 4.0, cite per CLAUDE.md rule 8). No transcription is copied into this folder; a
+sweep; code MIT, text CC BY 4.0, cite per CLAUDE.md rule 8). [Solver, 23 Sept 2026: both are now copied, with credit, as ciphertext.txt and ciphertext_f70.txt.] At the time of the sweep no transcription was copied into this folder; a
 solver session does that with attribution. Inventory identification of both items ("f. 68. Risposta a quanto
 ha riferito Zorzo Maino (4 maggio). In cifre." / "f. 70. Lettera di Vincenzo Amidani a Fr. Sforza (Milano 4
 maggio). In cifre.") is from Girolamo Mazzatinti's inventory of the BnF Sforza papers, *Archivio storico
@@ -115,3 +117,199 @@ only not found here.
 
 **Stage 2, verified unsolved (conditional: DECODE, Gallica and print sources unreachable from this
 environment; verdict rests on WebSearch, GitHub and the local Cryptiana snapshot)**
+
+---
+
+# Solver campaign, 23 September 2026 (joint nomenclator anneal, matched controls)
+
+**Result: closed-negative, conditional on the transcription.** The joint solver reads every matched
+control (4 control pairs, 99.2-99.9% of tokens, joint and each half alone) and reads nothing on the target:
+target best -3.82 nats/token (joint, map B) against -4.23 for the same search on shuffled target tokens, a
+margin of 0.25-0.42 nats/token; the solved controls score -1.95 to -2.49 and beat their own shuffled
+baselines by 1.8-2.0 nats/token. No run gives Italian a reader can follow, and the best keys disagree from
+run to run. No token is claimed (grades: H 0, C 0, S 0, M 0, I 0; all 794 cipher tokens unread).
+
+**Image not seen.** Every archive host (de-crypt.org, gallica, archive.org, hathitrust) is blocked from this
+environment, so the manuscript was not looked at. Everything here runs on D. Bourdeau's draft transcriptions
+(dbourdeau/cyphersolver `it1583/`, commit 2e9ec01; text CC BY 4.0), made from binarized DECODE images with
+diacritic variants merged. Per CLAUDE.md rule 2, the negative holds only for those transcriptions.
+
+## Method
+
+- **Files.** `ciphertext.txt` (f.68) and `ciphertext_f70.txt` (f.70): Bourdeau's `transcription.txt` and
+  `transcription_f70.txt` copied unchanged, with a credit header.
+- **Language model** (`tools/italian_ngram.py`). Corpus: paragraphs of period chancery Italian filtered by
+  archaic function words (et, ad, de, el, dela, havemo, nuy...), with modern, French, Spanish and Latin
+  paragraphs rejected, from Mazzatinti's *Archivio storico lombardo* X (1883) OCR (`cs-recheck/it1583/asl1883.txt`,
+  15th-c. Lombard documents quoted in it) and the 1491 Sforza-chancery letters edited in D. Labancz's thesis
+  (`cs-recheck/buda1489/labancz_1491.txt`, weight 2), 316,697 letters, the six control passages excluded.
+  Normalised to j->i, y->i, v->u, k->ch, no accents; 21 letters; words run together (the sign stream shows no
+  word division: Bourdeau's `.` separators fall 2-54 signs apart). Order-5 interpolated Witten-Bell model.
+  Rebuild: `python3 tools/italian_ngram.py corpus <cs>/it1583/asl1883.txt:1 <cs>/buda1489/labancz_1491.txt:2
+  --min-ratio 1.0 --exclude <control plain_*.txt concatenated> --out corpus.txt`, then `build corpus.txt
+  --order 5 --out it15_o5.npz` (model not committed: 15 MB, and the thesis text is not ours to redistribute).
+- **Solver** (`tools/nomenclator_anneal.py`, own code). A key maps every sign to a letter, a vowel+consonant
+  syllable (80 possible; `--syl both` adds consonant+vowel), a word (de che per quale con ma quello perche et
+  el la lo non) or null, one key shared by all files (joint). Score is generative: log P(reading) under the
+  5-gram model, plus log P(sign | value) with uniform choice among the signs sharing a value, plus a 3%
+  null-insertion prior. (The first version scored log-likelihood ratio and was degenerate: "quello" on every
+  sign beat the true control key, 2240 vs 752; fixed before any target run.) Caps: at most 6 syllable signs,
+  4 word signs, 2 nulls, 4 signs per letter. Simulated annealing, 300,000 moves per restart (T 3.0 -> 0.05),
+  16 restarts, greedy steepest-ascent finish. Every run, control and target, used exactly these settings.
+  Options used on the target only as extra variants: `--context clear` (clear phrases of f.68 as fixed
+  context scored across the boundaries), `--fix V=...`, `--unit` (a repeated group must decode to one or two
+  whole corpus words, 25 nats per violation), `--shuffle` (search baseline).
+- **Runner.** `campaign.py` runs one configuration and appends a row to `runs.tsv`; `run_controls.sh`,
+  `run_target.sh`, `run_target2.sh` are the exact batches; full results in `runs/*.json`.
+
+## Sign inventory
+
+Codes are Bourdeau's, per file (headers of the two transcriptions). **Identified across files:** every f.70
+code his f.70 header describes as "codes as f.68" (8 p c n r z > B H F + D S J g Q d V). **Kept separate:**
+f.70 `E`, which his f.70 header redefines as "b with double bar" (unified id `E70`), and the f.70-only codes
+W K Y O e P 3 4 6 s b X (X is not defined in either header; f.68's lowercase x is kept apart from it).
+Map A (`signs_mapA.tsv`) is this conservative identification, 39 unified signs. Map B (`signs_mapB.tsv`) adds
+one hypothesis: f.70 E = f.68 B (barred b vs b with double bar; each is its letter's top sign, 11.8% and
+11.9%). Full table in `signs.tsv`. Cross-letter evidence for shared labels is weak: 18 trigrams shared
+against 10.7 expected under shuffle (max 21 in 200 shuffles); bigram overlap equals the shuffle expectation.
+
+| unified | description (Bourdeau) | f.68 count | f.70 count | status |
+|---|---|---|---|---|
+| p | p as written | 48 (11.9%) | 31 (7.9%) | shared |
+| F | double-barred stroke | 30 (7.4%) | 27 (6.9%) | shared |
+| B | barred b | 48 (11.9%) | 7 (1.8%) | shared |
+| + | cross/stroke | 24 (5.9%) | 30 (7.7%) | shared |
+| E70 | f.70 E: b with double bar | 0 (0.0%) | 46 (11.8%) | f70 only |
+| 8 | 8 as written | 28 (6.9%) | 17 (4.4%) | shared |
+| Q | phi | 12 (3.0%) | 32 (8.2%) | shared |
+| J | barred yogh | 20 (5.0%) | 24 (6.2%) | shared |
+| c | c as written (dotted c merged) | 24 (5.9%) | 19 (4.9%) | shared |
+| S | long s | 17 (4.2%) | 23 (5.9%) | shared |
+| H | looped h | 14 (3.5%) | 21 (5.4%) | shared |
+| d | d with apostrophe | 23 (5.7%) | 10 (2.6%) | shared |
+| z | z as written | 8 (2.0%) | 20 (5.1%) | shared |
+| E | f.68: barred epsilon | 24 (5.9%) | 0 (0.0%) | f68 only |
+| > | > as written | 6 (1.5%) | 14 (3.6%) | shared |
+| r | r as written | 12 (3.0%) | 8 (2.1%) | shared |
+| Y | slashed v | 0 (0.0%) | 14 (3.6%) | f70 only |
+| V | cross-circle (venus) | 9 (2.2%) | 4 (1.0%) | shared |
+| g | barred g | 10 (2.5%) | 2 (0.5%) | shared |
+| D | divide sign | 10 (2.5%) | 1 (0.3%) | shared |
+| n | n as written | 5 (1.2%) | 4 (1.0%) | shared |
+| - | dash-hook | 9 (2.2%) | 0 (0.0%) | f68 only |
+| X | X (undefined in f.70 header) | 0 (0.0%) | 7 (1.8%) | f70 only |
+| W | ab-ligature | 0 (0.0%) | 6 (1.5%) | f70 only |
+| x | x as written | 6 (1.5%) | 0 (0.0%) | f68 only |
+| 7 | hooked 7 | 5 (1.2%) | 0 (0.0%) | f68 only |
+| k | k as written | 5 (1.2%) | 0 (0.0%) | f68 only |
+| 4 | 4 | 0 (0.0%) | 4 (1.0%) | f70 only |
+| M | m-like sign with bar | 4 (1.0%) | 0 (0.0%) | f68 only |
+| O | reversed c | 0 (0.0%) | 4 (1.0%) | f70 only |
+| 6 | 6 | 0 (0.0%) | 3 (0.8%) | f70 only |
+| e | plain epsilon | 0 (0.0%) | 3 (0.8%) | f70 only |
+| 3 | 3 | 0 (0.0%) | 3 (0.8%) | f70 only |
+| R | R (paragraph-initial; undefined in header) | 2 (0.5%) | 0 (0.0%) | f68 only |
+| b | plain b | 0 (0.0%) | 2 (0.5%) | f70 only |
+| K | hatched sign | 0 (0.0%) | 2 (0.5%) | f70 only |
+| P | barred p | 0 (0.0%) | 1 (0.3%) | f70 only |
+| f | f (undefined in header) | 1 (0.2%) | 0 (0.0%) | f68 only |
+| s | s | 0 (0.0%) | 1 (0.3%) | f70 only |
+
+Profile: f.68 404 tokens, 26 types, IC 0.061, doubled signs 0.8%; f.70 390 tokens, 31 types, IC 0.058,
+doubles 1.8%. Corpus letter frequencies: e 13.7, a 11.0, i 9.2, o 9.1, n 6.8, t 6.7, r 6.7, s 6.0.
+
+## Control (rule 3)
+
+Six held-out passages of 15th-c. Lombard chancery Italian from the asl1883 OCR (`control/plain_*.txt`,
+excluded from the model), enciphered with random keys of two designs, each pair sharing one key, each half
+copying the real letter's run structure (f.68: 404 cipher tokens in 9 runs with 285 letters of clear text
+between them; f.70: 390 tokens in 3 runs, 12 clear letters). `tools/nomenclator_anneal.py synth`.
+
+- `control/design_1447.json` (the 1447 family): e x3, a x2, o x2, i x2 homophones (skewed use), 3 VC syllable
+  signs, 3 word signs, 2 nulls at 3%, 34 signs; observed 29-32 types, IC 0.044-0.048 (flatter, so harder,
+  than the target). Controls C1-C3.
+- `control/design_profile.json` (matched to the target's profile): e, o, i x2, 2 syllables, 2 words, 1 null;
+  observed 26/27 types, IC 0.060/0.059. Control CP.
+
+| control | joint: tokens right / restarts at best | f.68 half alone | f.70 half alone | joint score/token | shuffled joint |
+|---|---|---|---|---|---|
+| C1 | 0.999 / 5 of 16 | 0.995 / 2 | 0.995 / 2 | -2.309 | -4.275, -4.229 |
+| C2 | 0.997 / 10 of 16 | 0.998 / 2 | 0.992 / 4 | -2.227 | -4.277 |
+| C3 | 0.995 / 1 of 16 | 0.995 / 2 | 0.995 / 5 | -2.362 | -4.314 |
+| CP | 0.997 / 6 of 16 | 0.998 / 2 | 0.997 / 1 | -2.053 | -4.145 |
+| C1, clear context | 0.997 / 4 of 16 | | | -2.487 | |
+
+Letter accuracy 0.978-1.000 throughout. Controls solved: 12 of 12 solver runs (plus the clear-context run),
+so the tooling is not the reason for the target result, at this length, sign count and design.
+
+## Runs (target)
+
+Same settings as the controls. Every run is a row in `runs.tsv` with its best reading.
+
+| run | score/token | shuffled baseline | margin | restarts at best | readable? |
+|---|---|---|---|---|---|
+| joint, map A | -4.000 | -4.250, -4.205 | 0.21-0.25 | 1 of 16 | no |
+| joint, map B | -3.816 | -4.233 | 0.42 | 1 of 16 | no |
+| f.68 alone | -3.530 | -3.855 | 0.33 | 1 of 16 | no |
+| f.70 alone | -3.542 | -3.772 | 0.23 | 1 of 16 | no |
+| joint A, clear context | -4.131 | -4.417 | 0.29 | 1 of 16 | no |
+| joint B, clear context | -4.063 | | | 1 of 16 | no |
+| joint A, V = de | -3.975 | | | 1 of 16 | no |
+| joint A, V = de, clear context | -4.184 | | | 1 of 16 | no |
+| joint A, V = che, clear context | -4.124 | | | 1 of 16 | no |
+| joint A, V = et, clear context | -4.150 | | | 1 of 16 | no |
+| joint A, repeats as word units | -4.038 | | | 1 of 16 | no |
+| joint A, units, V = de, clear ctx | -4.216 | | | 1 of 16 | no |
+| joint A, loose (VC+CV, 10 syl, 6 words, 4 nulls) | -3.864 | -4.177 | 0.31 | 1 of 16 | no |
+| joint A, letters only (+2 nulls) | -4.125 | -4.368 | 0.24 | 1 of 16 | no |
+
+Against the claim criteria of the brief: (a) margin over the scrambled baseline: target 0.21-0.42 nats/token,
+controls 1.8-2.0, so no target run reaches the control margin; (b) consistency between the letters: the best
+keys disagree between runs and between the letters (sign F is r, d or i; p is e or a), and only 1 of 16
+restarts reaches each best, where solved controls reached theirs in 1-10 of 16; (c) no reading contains
+Italian a reader can follow (sample, best run, f.68: "glamlaretatmafarctadedieetaalreferitatrtdel...").
+V (cross-circle) forced to "de", "che" or "et" does not help; the repeats forced to whole words do not help.
+
+## Negative
+
+Closed-negative conditional on the transcription (rule 3, both numbers): **target -3.82 nats/token (best of
+all runs, joint map B), 0.42 above its shuffled baseline; control -1.95 to -2.49 nats/token, 1.8-2.0 above
+theirs, 99.2-99.9% of tokens read.** It says: under Bourdeau's draft codes, f.68 and f.70 are not a letter
+cipher with 1447-style homophones, a few syllable and word signs and 1-2 nulls in 15th-c. chancery Italian,
+whether read jointly under one key (either identification map) or each alone. It does not rule out: (1)
+transcription error, especially the merged diacritic variants (a merged pair that stood for two letters makes
+the stream polyphonic, which this solver cannot read); (2) a key with many more syllable or word signs than
+the caps (the 1447 family has a sign for every vowel+consonant pair); (3) the two letters in different keys
+under similar shapes (the cross-letter trigram test is weak); (4) Latin, or long stretches of names and code
+words; (5) the doubled-sign rate on f.68 (0.8%, lower than every control, 0.8-2.6%) may mean doubled letters
+are written once or with a sign, which the model was not built for.
+
+## Grading
+
+No reading is claimed. H 0, C 0, S 0, M 0, I 0; 794 of 794 cipher tokens unread. `key.tsv` and
+`best_reading.txt` are the best-scoring key and its decode, kept only so the negative is reproducible;
+`check.py` regenerates `best_reading.txt` from the two transcriptions, `key.tsv` and `signs_mapB.tsv`, and
+exits 1 if it is stale.
+
+## Where it was not found
+
+- Bourdeau's checks (his NOTES and profile, 21 Sept 2026): 208 Sforza key records on DECODE (ASMi Carteggio
+  Sforzesco cart. 1591, 1597, 1598), none headed Maino or Amidani; 1597 no. 14 ("Angelus cum cifra
+  Vincentij") same design, different letter signs; Mazzatinti 1883 gives only "In cifre".
+- Check-solved sweep of 23 Sept 2026 (above, six sources): nothing.
+- This session's WebSearch, 23 Sept 2026: `cifra Amidani 1446 Francesco Sforza chiave cifrario "Amidani"`
+  (nothing on this pair; one lead: a Biblioteca di Cremona post on a "codice segreto degli Sforza" with
+  cipher material spanning 1444-1479, lanuovapadania.it, not followed up); `"italien 1583" Bibliothèque
+  nationale Sforza 1446 chiffre déchiffrement` (BnF archives-et-manuscrits catalogue records for italien
+  1583-1615, no decipherment mentioned). No phrase search was possible: nothing was decoded.
+
+## What a next solver needs
+
+1. A sign-exact transcription from a colour image of BnF italien 1583 ff.68 and 70 (Gallica or a BnF order),
+   with the diacritic variants (dotted c, d with apostrophe, barred g, the bars on b) kept apart and the two
+   hands compared sign by sign. Then rerun `run_target.sh` unchanged; the controls already stand.
+2. The key: ASMi Sforzesco cart. 1597 at full size, Cerioni, *La diplomazia sforzesca* (1970) vol. 2, and the
+   Cremona Sforza cipher material (1444-1479) named above.
+3. Mazzatinti lists six more Amidani letters "in cifre" in the same volumes (check-solved notes above) and
+   DECODE R7899-R7915 hold seventeen more 1446 cipher records from ital. 1583: more text in the same hand or
+   key would double the length and may be the practical route. (Suggestion only; not started here.)
