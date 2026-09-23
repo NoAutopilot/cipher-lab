@@ -15,6 +15,15 @@ cover (TNA Discovery, BL Archives and Manuscripts, Gallica inventories, NRS, cou
 Under this metric an unread letter whose key sits in the same file is not dropped as an "edition": it is the cheapest
 unique solve there is, provided the verifier finds no printed text (rule 10). The `unread` axis still records the fact.
 
+Found-solved is not garbage (owner, 23 September 2026). A check-solved or verifier verdict of found-solved records
+**who did not know**, in three grades, and the contribution it leaves: **F0** the specialist edition or database
+already links the item to its print or decipherment (no contribution; e.g. Orange 1572, cited in the Huygens
+database); **F1** the plaintext is in print but the specialist catalogue or edition does not link this manuscript
+to it, or gets its date or sender wrong (a contribution to the holding library and the edition; e.g. Dupuy 468,
+whose Latin cipher original nobody had linked to the 1896 print); **F2** the plaintext is in print but no key or
+mapping of this ciphertext was ever published (a contribution to the list keeper; e.g. Bowes 1583). F1 and F2 are
+counted beside unique solves in CONTRIBUTIONS.md.
+
 Three kinds, all wanted, always labelled as which they are (CLAUDE.md rule 10):
 
 1. **Recovery.** A key found in another box reads a text nobody has read. Hamilton 1650 and Stepney 1702 are
