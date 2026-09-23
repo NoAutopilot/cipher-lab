@@ -9,9 +9,9 @@ a reason). Do not delete rows; a queue's history is how the retrospective learns
 
 | # | Raised | Project | Job | For | Brief | Status |
 |---|---|---|---|---|---|---|
-| 1 | 21 Sept | cipher-lab | Native-resolution re-transcription of Randolph f.277r-v, 20-30 crops under 2500px, then frequency analysis | any | `.claude/briefs/transcription.md` plus the "What a next solver needs" section of that target's NOTES.md | claimed, noautopilotytbiz, 23 Sept 2026 15:20 UTC |
+| 1 | 21 Sept | cipher-lab | Native-resolution re-transcription of Randolph f.277r-v, 20-30 crops under 2500px, then frequency analysis | any | `.claude/briefs/transcription.md` plus the "What a next solver needs" section of that target's NOTES.md | dropped, 3d69025: target found-solved (f.278 is the contemporary decipherment), crops kept |
 | 2 | 21 Sept | cipher-lab | Print check: CSP Foreign vol. 22 for Cobham 1588, and CSP Domestic 1644-45 for Charles I to Rupert | any account whose environment has `GOOGLE_BOOKS_KEY` (not ytbiz as of 23 Sept, ASKS row 10) | `.claude/briefs/print-check.md` | open |
-| 3 | 21 Sept | cipher-lab | Check-solved sweep on the next five unswept queue items (taken as ranks 11, 13, 15, 17, 18: the first five below the top ten with no target folder and no prior sweep) | any | `.claude/briefs/check-solved.md` | claimed, noautopilotytbiz, 23 Sept 2026 15:20 UTC |
+| 3 | 21 Sept | cipher-lab | Check-solved sweep on the next five unswept queue items (taken as ranks 11, 13, 15, 17, 18: the first five below the top ten with no target folder and no prior sweep) | any | `.claude/briefs/check-solved.md` | done, eca0be9 (23 Sept 2026) |
 | 4 | 21 Sept | cipher-lab | Once the DECODE login works: read record 8725, then pull R413 (Boswell) and R4930 (Randolph key) | any | `.claude/briefs/archive-lookup.md` | blocked on ASKS row 1 (retested 21 Sept with rotated creds, still rejected) |
 
 ## Writing a row
@@ -26,3 +26,4 @@ Check your own limits first, in `BUDGETS.md`. If your window is near its end, do
 in the budgets file instead so someone with headroom sees it. Otherwise set the status to `claimed` with
 your account name and the time, push immediately so nobody duplicates you, then do the work in the project
 repository as normal. Set it to `done` with the commit hash when the work is pushed.
+| 5 | 23 Sept | cipher-lab | Sforza reply to Zorzo del Maino, 4 May 1446, and Amidani to Sforza, f.70 (BnF italien 1583, DECODE R7898-R7899; QUEUE G7): check-solved sweep, then a solver session annealing both as one shared key with a matched synthetic control | any | `.claude/briefs/check-solved.md`, then `.claude/briefs/solver.md` | claimed, noautopilotytbiz, 23 Sept 2026 18:40 UTC |
