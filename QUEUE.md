@@ -16,8 +16,10 @@ fourth row (the Eckert Papers) turned out to be an edition once `unread` was app
 leaving 39 tiered rows. The 163-item `unscored_kept` backlog was reviewed for the same axes but left unscored
 this sweep: see the note at the end of "Kept, not scored this sweep" below.
 
-Reader profile: English only, no institutional archive access, can send copy requests and pay small fees, works
-with AI agents for transcription and solving.
+Reader profile (revised 23 September 2026, owner's metric is the count of unique solves): any language the models read
+(English, French, Italian, Spanish, Latin, German, Dutch, Portuguese) scores language_fit 3; no institutional archive
+access; can send copy requests and pay small fees; works with AI agents for transcription and solving. Rows scored
+before 23 September used English-only language_fit and are under-scored for other languages until re-scored.
 
 ## Solver-repository diff, 23 September 2026
 

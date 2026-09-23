@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 20:20 UTC",
+ "updated": "23 September 2026, 21:30 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -234,6 +234,16 @@
  ],
  "workers": [
   {
+   "title": "Scout: DECODE neighbour-record sweep",
+   "job": "202 pairs, 27 survivors, 7 clusters (D1-D7). ~$2.5",
+   "state": "done, archived"
+  },
+  {
+   "title": "Check Solved: Pallotto cluster (D1)",
+   "job": "Editions first (Nuntiaturberichte), then the six sources",
+   "state": "running"
+  },
+  {
    "title": "Solver: Sforza-Maino 1446 joint key",
    "job": "Closed-negative with matched control (controls 99%+, target at baseline). Tooling left in tools/. ~$12",
    "state": "done, archived"
@@ -256,16 +266,6 @@
   {
    "title": "Check Solved: queue ranks 11, 13, 15, 17, 18",
    "job": "Rank 11 found-solved (Bourdeau, 21 Sept, Lasry's King-Queen key), 13 partial (Bourdeau), 18 partial, 15 and 17 open at stage 2. ~$2",
-   "state": "done, archived"
-  },
-  {
-   "title": "Archive Lookup: Randolph 1570 siblings and key",
-   "job": "f.278 is the contemporary decipherment (Bourdeau, 21 Sept). Every archive host egress-blocked from this account. ~$1.5",
-   "state": "done, archived"
-  },
-  {
-   "title": "Recovery: Erving to Madison 1807",
-   "job": "Rule 1 caught it: the despatch is printed in Founders Online (Madison Papers, Secretary of State series). Dropped as found-solved before any transcription. $2",
    "state": "done, archived"
   }
  ],
@@ -328,6 +328,10 @@
   }
  ],
  "log": [
+  {
+   "when": "23 Sept, 21:30",
+   "what": "Owner restated the goal: maximise unique solves. DECODE neighbour sweep found 27 recovery candidates in 7 clusters, none English; reader profile widened to all readable languages; check-solved started on the Pallotto cluster (D1) so it can be read the day DECODE opens."
+  },
   {
    "when": "23 Sept, 20:20",
    "what": "Sforza-Maino 1446: joint-key attack with a matched control gives a clean negative, conditional on the draft transcription. Nothing solved today; the queue is honest again (five rows found solved elsewhere since our scout), and the campaign from this account is capped by the network policy until ASKS rows 10-11 are done."
