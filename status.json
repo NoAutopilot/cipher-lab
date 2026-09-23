@@ -1,5 +1,5 @@
 {
-  "updated": "23 September 2026, 23:40 UTC",
+  "updated": "23 September 2026, 23:43 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -342,14 +342,24 @@
   ],
   "workers": [
     {
+      "title": "Tomokiyo bibliography + 'readable with key' list (row 26)",
+      "job": "PAPERS.tsv and READABLE.tsv from Cryptiana. Sonnet, cap $5",
+      "state": "running"
+    },
+    {
+      "title": "Print check (class gate): Gramont 1530, fr.2980 (M8)",
+      "job": "Is either 20 May 1530 letter printed (Le Grand 1688, L&P Henry VIII, Pocock...)? Sonnet, cap $5",
+      "state": "running"
+    },
+    {
       "title": "Dupuy 468 check.py exceptions (row 25)",
       "job": "Exception table for gloss readings (r04 dux). First worker stalled on a stale clone ($0.72), retried. Sonnet, cap $2.50",
       "state": "running"
     },
     {
       "title": "Check-solved: M8-M11 (BnF fr. 2980, 2996, 4137, 4102)",
-      "job": "Editions first, leaf viewed. Sonnet, cap $8",
-      "state": "running"
+      "job": "M8 Gramont 1530 open (Tomokiyo's published key reads it; print check next); M9 found-solved (Lasry 2023, corrected by orchestrator); M10, M11 no ciphertext survives. $6.58",
+      "state": "done, archived"
     },
     {
       "title": "Raince reconciliation: Dupuy 452 ff.28-29",
@@ -456,6 +466,10 @@
     }
   ],
   "log": [
+    {
+      "when": "23 Sept, 23:43",
+      "what": "M8-M11 swept: M10 and M11 survive only as plain copies (dropped); M9 Morvillier was read by Lasry in 2023 (found-solved; the worker's 'open' corrected from Tomokiyo's page); M8, two Gramont letters of 20 May 1530, open, and Tomokiyo's published key should read them. Print check before any transcription."
+    },
     {
       "when": "23 Sept, 23:40",
       "what": "Wake 2: Raince reconciliation, M8-M11 check-solved and the Dupuy 468 exception table running. Bourdeau offline-only scout done: 5 items new to our queue (B1-B5), none copy-free; all need an archive copy or login."

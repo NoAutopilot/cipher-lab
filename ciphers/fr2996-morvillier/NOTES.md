@@ -1,6 +1,14 @@
 # BnF Français 2996, f.53: ciphered despatch of Morvillier at Venice to the king
 
-open
+found-solved
+
+**Orchestrator correction, 23 Sept 2026 23:43 UTC.** The check-solved verdict below ("open") is withdrawn. Tomokiyo's
+Cryptiana page (`sources/cryptiana/web/francis.htm`, section "De Morvillier's Cipher (1546)", and `GL.htm`) says the
+cipher of this very letter, BnF fr.2996 f.52 no.25, Venice 24 January 1546, "was broken by George Lasry in 2023", and
+quotes the opening plaintext ("l'evesque de Capodhistria ... audict evesque"). So the letter is read and the key is
+Lasry's (credit: George Lasry, 2023; Satoshi Tomokiyo's write-up). Nothing here is ours to recover; F0 (the solvers
+knew). Dropped from the queue. The worker read the section as "key published, letter unread"; the page says the
+letter itself was broken.
 
 Check-solved sweep, 23 September 2026 (~23:41 UTC; `date -u` read before writing). QUEUE row M9. Worker:
 check-solved M8-M11 (Sonnet, cap $8 across all four targets).
