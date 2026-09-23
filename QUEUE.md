@@ -400,6 +400,84 @@ Leiden and the KB were not reached this sweep (bot-challenge empty responses, JS
 reCAPTCHA wall, or a transport failure on every attempt) -- a browser-tool pass (CLAUDE.md's Access playbook)
 is the next step for those six, not a fresh curl attempt.
 
+## Printed ciphertext (detector test of 23 September 2026)
+
+Detector-test worker (RETRO-2026-09-23.md proposal 5, hypothesis A): `tools/ia_numeral_runs.py` swept 300
+Internet Archive public-domain editions (`sources/ia-fulltext/editions.tsv`: 2 controls + curated named
+editions from the brief + 8 keyword samples) for OCR lines that are mostly 1-4 digit numerals beside otherwise
+clear prose, clustered lines fewer than 4 apart, and scored for repeat rate, distinct values and nearby prose.
+Kept clusters (repeat_rate >= 0.3, numerals >= 15, prose_words >= 5) were judged from their context line only
+(cipher-with-decipherment / cipher-without-decipherment / table / noise); adjacent kept clusters within 60
+lines of each other in the same identifier were merged into one candidate passage. This is a detector test, not
+a solver or verifier pass: nothing here is promoted, nothing is solved, and rule 10 applies (no reading is
+claimed and no wording of new/unpublished/first is used).
+
+**Controls** (must show their known printed cipher, per the brief): Thurloe vol. 1 (`collectionofstat01thur`)
+reproduces exactly the RETRO-2026-09-23.md probe (111 clusters; the known cipher at line 43962, "at present
+here 7. 7. 17. 24. 7. 6...", confirmed verbatim) — per that document this volume's own clusters are the
+positive control (Aymeloglu has already worked Vande Perre's letters in it), not new candidates, and are
+excluded from the table below. Rommel 1840 (`correspondancein00henr`) recovers cipher passages throughout (11
+merged passages, pp. 84-391 of the printed volume per cyphersolver's own page map) matching cyphersolver
+`hesse1603/NOTES.md`, which has already decoded every one of them with Rommel's 1846 key — both controls pass.
+Catinat 1819 (*Mémoires et correspondance du maréchal Catinat*) is **not on Internet Archive** under any title
+search tried (`catinat`, `memoires correspondance marechal catinat`, `memoires catinat`; Bourdeau's
+`catinat1691/` reads the same edition from Bayerische Staatsbibliothek MDZ scans, `bsb10720287`, not IA) — this
+is a gap in IA's holdings, not a tool failure, and is reported rather than silently skipped.
+
+**Survivors** (cipher-without-decipherment on the page, not part of a known control): 24 merged candidate
+passages, 23 of them further undeciphered numeral-figure passages in Thurloe State Papers vols. 2, 3, 5 and 7
+(the same edition as the control, but different volumes/pages from the ones RETRO already flagged as control),
+and one in a different edition entirely (BnF's sibling scan is not involved; this is a Leiden/Google-Books scan
+via Internet Archive). Line numbers are exact and reproducible from `sources/ia-fulltext/runs.tsv` and the
+cached `_djvu.txt` (gitignored, re-fetched by identifier on demand); they are OCR line numbers, not printed page
+numbers, which were not reverse-engineered from the running heads this sweep (flagged as a caveat, not resolved).
+
+| # | Edition | Identifier | OCR line(s) | Correspondents / date (from context) | Tokens | Decipherment on page | Prior work found where | Next step |
+|---|---|---|---|---|---|---|---|---|
+| P1 | Archives ou correspondance inédite de la maison d'Orange-Nassau, 1re série, t. IV (Groen van Prinsterer, Leiden 1836) | `archivesoucorre04housgoog` | 24100-24227 | **Lettre CCCLXXXV, "Le Prince d'Orange au Comte Jean de Nassau"** (William of Orange to his brother Jean/Jan VI of Nassau), dated Sept. 1572, printed pp. 501-506; letter discusses the St Bartholomew's Day Massacre victims (Coligny, Rochefoucauld, Téligny) and his Low Countries campaign (Tilmont, Diest, Louvain, Malines, Dendermonde) | 79 numerals over ~15 lines | No — and the 1836 editor's own footnote (p.502 n.1) states: "Il est à regretter qu'une comparaison attentive des passages [manqu]ants avec d'autres pièces dont nous possédons le déchiffrement, n'ait conduit à aucun résultat... il sera très difficile, si non décidément impossible, de retrouver le sens" (an explicit 19th-century statement of failed decipherment attempts against a comparison corpus) | Not found in `sources/cryptiana/` or in fresh shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers, grepped for "Orange-Nassau", "Groen van Prinsterer", "Jean de Nassau", "Comte Jean", "Prince d'Orange" + "1572", 23 Sept 2026 | check-solved: six-source sweep (this is one merged detector cluster, not a stage-2 verdict); locate the manuscript at the Koninklijke Verzamelingen/Nassau archive if extant; search for later Groen supplements or Kervyn de Lettenhove printing a decipherment |
+| P2 | Thurloe State Papers vol. 2 | `collectionofstat02thur` | 46987 | not shown in context | 31 | No | Thurloe's numeral-cipher passages are cryptiana's catalogued unsolved item #9 (`sources/cryptiana/web/unsolved.htm`, `web/thurloe.htm`) and cyphersolver's `thurloe/NOTES.md` (4 pieces at TSP i.435, v.78, v.267, v.337, verdict STUCK); this specific line was not individually checked against those four this sweep | check-solved: view IA leaf / British History Online page, confirm not one of the 4 catalogued pieces |
+| P3 | Thurloe State Papers vol. 2 | `collectionofstat02thur` | 48000 | not shown in context | 54 | No | as P2 | as P2 |
+| P4 | Thurloe State Papers vol. 3 | `collectionofstat03thur` | 15491-15531 | not shown in context | 153 | No | as P2 | as P2 |
+| P5 | Thurloe State Papers vol. 3 | `collectionofstat03thur` | 22892-22943 | not shown in context | 241 | No | as P2 | as P2 |
+| P6 | Thurloe State Papers vol. 3 | `collectionofstat03thur` | 23015-23029 | "A. D. 1654" in margin | 139 | No | as P2 | as P2 |
+| P7 | Thurloe State Papers vol. 3 | `collectionofstat03thur` | 23241-23340 | "A. D. 1654" in margin (adjacent passage); longest vol.3 candidate | 527 | No | as P2 | as P2 |
+| P8 | Thurloe State Papers vol. 3 | `collectionofstat03thur` | 45234-45272 | not shown in context | 444 | No | as P2 | as P2 |
+| P9 | Thurloe State Papers vol. 3 | `collectionofstat03thur` | 51605 | not shown in context | 25 | No | as P2 | as P2 |
+| P10 | Thurloe State Papers vol. 3 | `collectionofstat03thur` | 52310 | not shown in context | 45 | No | as P2 | as P2 |
+| P11 | Thurloe State Papers vol. 5 | `collectionofstat05thur` | 5730 | not shown in context | 161 | No | as P2 — **caution:** 3 of the 4 catalogued Thurloe items (TSP v.78, v.267, v.337) are in this same volume; page-level overlap with P11-P15 was not ruled out this sweep | check-solved: view leaf, compare page against TSP v.78/267/337 (cyphersolver `thurloe/a_*.txt` etc.) before treating as distinct |
+| P12 | Thurloe State Papers vol. 5 | `collectionofstat05thur` | 5874 | not shown in context | 100 | No | as P11 | as P11 |
+| P13 | Thurloe State Papers vol. 5 | `collectionofstat05thur` | 5962-5975 | not shown in context | 149 | No | as P11 | as P11 |
+| P14 | Thurloe State Papers vol. 5 | `collectionofstat05thur` | 8882 | not shown in context | 71 | No | as P11 | as P11 |
+| P15 | Thurloe State Papers vol. 5 | `collectionofstat05thur` | 35705 | not shown in context | 129 | No | as P11 | as P11 |
+| P16 | Thurloe State Papers vol. 7 | `collectionofstat07thur` | 7204 | not shown in context | 46 | No | as P2 | as P2 |
+| P17 | Thurloe State Papers vol. 7 | `collectionofstat07thur` | 32144-32349 | not shown in context; heavily garbled OCR (long-s/Gothic type) over ~200 lines, likely one long letter | 593 | No | as P2 | as P2; re-OCR or view leaf before any solving attempt, this passage's OCR quality is poor |
+| P18 | Thurloe State Papers vol. 7 | `collectionofstat07thur` | 34089-34105 | not shown in context | 91 | No | as P2 | as P2 |
+| P19 | Thurloe State Papers vol. 7 | `collectionofstat07thur` | 35664-35794 | not shown in context | 411 | No | as P2 | as P2 |
+| P20 | Thurloe State Papers vol. 7 | `collectionofstat07thur` | 39937 | not shown in context | 22 | No | as P2 | as P2 |
+| P21 | Thurloe State Papers vol. 7 | `collectionofstat07thur` | 41238-41348 | not shown in context | 170 | No | as P2 | as P2 |
+| P22 | Thurloe State Papers vol. 7 | `collectionofstat07thur` | 42248-42301 | not shown in context | 200 | No | as P2 | as P2 |
+| P23 | Thurloe State Papers vol. 7 | `collectionofstat07thur` | 49515-49602 | not shown in context | 208 | No | as P2 | as P2 |
+| P24 | Thurloe State Papers vol. 7 | `collectionofstat07thur` | 56527-56587 | not shown in context | 39 | No | as P2 | as P2 |
+
+**Judged table/noise, dropped** (10 of 136 kept-filter clusters, not in the table above): `calendarofclaren05bodl`
+(2 clusters — a name/subject index with volume.page citations, not cipher), `nuntiaturberich01romgoog`,
+`nuntiaturberich04romgoog`, `nuntiaturberich10romgoog` (4 clusters — German-index page-number lists under
+headwords), `bub_gb_RGMSAAAAIAAJ` and `correspondancem01goldgoog` (3 clusters — *Correspondance mathématique et
+physique*, a Quetelet-edited math journal; the numerals are number sequences and tables, one context line reads
+literally "cujus quilibet terminus indicat..."), `mobot31753002104062` (1 cluster — a Bulletin de l'Académie
+royale de Belgique data table). None of the other 274 fetched identifiers' clusters passed the filter.
+
+**Precision in the top 50 clusters by score** (score = numerals x repeat_rate): 50/50 (100%) judge as genuine
+cipher-in-plain-text (27 candidate, 23 control); every table/noise cluster scored below rank 50 of 136 kept.
+**Control recall:** 2 of 2 available controls recovered in full (Thurloe vol. 1's known cipher at line 43962;
+every Rommel 1840 passage cyphersolver has already decoded); Catinat 1819 unavailable on Internet Archive
+(reported above, not run). **Survivors:** 24 merged candidate passages (1 non-Thurloe, 23 Thurloe across 4
+volumes not previously flagged as control), none promoted, none solved, five of them (P11-P15, Thurloe vol. 5)
+flagged as needing a page check against the 4 already-catalogued/STUCK Thurloe items before being treated as
+distinct. **Cost:** see `sources/ia-fulltext/NOTES.md` for the full accounting; approximately 35 archive.org
+advancedsearch/metadata calls plus 274 cached `_djvu.txt` fetches (26 skipped on HTTP 401/404/500, no retries),
+well inside the ~$8 cap.
+
 ## Kept, not scored this sweep
 
 163 further kept candidates were left unscored by the 40-candidate cap (by plaintext language: fr 57, es 34, unknown 19, it 17, de 14, la 10). They are listed with the harvesters' evidence under `unscored_kept` in `QUEUE-scores.json`, in the filter's order, so the next run scores them first if the top forty move. Those with a working folder already, all closed-negative or blocked in LANDSCAPE.md: [Anonymous letters to Mr Tempest (Paris) and Dr Barret (Rheims), c. Dec 1585, endorsed by Phelippes (TNA SP 53/16 nos. 78-79)](ciphers/sp53-16-78/); ['Cifer with Spanish Spye', short ciphertext c.1586 (TNA SP 53/22 f.52, and the verso of f.40)](ciphers/sp53-22-f52/); [Lodovico Birago to the Duke of Nevers, Saluzzo, 13 Nov 1571, paragraph in numerical cipher (BnF fr. 3251 f.119)](ciphers/birago-nevers-1571/); [Admiral d'Estaing to Gerard, French minister in Philadelphia, 30 April 1779, intercepted (Clements Library, Clinton Papers 64:14)](ciphers/destaing-gerard-1779/); [Berthier to Napoleon, Koenigsberg, 22 Dec 1812 (AN AF/IV/1643) and the encoded letter to Marshal Marmont, 1807 (Vilcoq 1969)](ciphers/berthier-napoleon-1812/).

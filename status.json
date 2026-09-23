@@ -236,17 +236,17 @@
    "year": "1798-1800",
    "ref": "BL Mss Eur D623 (items 4-36; key D623/41)",
    "folder": "ciphers/mornington-1798",
-   "stage": 2,
-   "state": "you",
-   "holder": "You",
-   "next": "BL Imaging Services quote per REQUEST.md: D623/41 (key, both copies) and D623/4 first as a legibility test; eight more despatches follow if the key reads. ASKS row 12.",
+   "stage": 5,
+   "state": "waiting",
+   "holder": "Archive",
+   "next": "BL to photograph the key (both copies) and D623/4. Meanwhile the Ingram 1970 edition check runs in the credential session. If the key reads the despatch and Ingram does not print it, order the other eight.",
    "note": "23 Sept 2026: nine despatches not printed in Martin vols 1-5, the 1877 Selection or the 1914 Wellesley Papers; D623/23 is printed; D623/10-11 decoded by the cataloguer.",
    "kind": "recovery",
    "wait": {
-    "on": "You: the BL quote request (ASKS row 12)",
-    "since": "23 Sept 2026, 15:53 UTC",
-    "expected": "BL quotes take one to three weeks; imaging some weeks after payment",
-    "unblock": "Quote accepted, images arrive, key applied"
+    "on": "British Library Digitisation Services, order submitted 23 Sept 2026",
+    "since": "23 Sept 2026",
+    "expected": "Several weeks; preservation check likely",
+    "unblock": "Images arrive; key applied to D623/4"
    }
   },
   {
