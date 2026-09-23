@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 24 September 2026, 05:00 UTC
+Last updated: 24 September 2026, 05:40 UTC
 
 > **the owner is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -45,6 +45,14 @@ tokens (S 82, M 8, I 3) as the printed names. The verifier found the plaintext i
 calendared in CSP Scotland vi (1910) with every name in clear, so the class is N1, possibly N0 once one calendar page
 is read. Not a unique solve; a sign table to hand to Tomokiyo. Two lessons went into the templates: run the HTRC
 word-count test on a blocked calendar before setting stage 2, and view the leaf before scoring a catalogue hit.
+
+**05:40 UTC, 24 Sept: wake closed.** The non-DECODE lane delivered the night's stage-2 targets: of fifteen scored
+rows, seven are verified unsolved with a copy route (Mornington, Courten, the SP 87 Seven Years War campaign, SP 78
+France 1642-57, SP 90/2 1704, SP 87/13 1743, SP 87/23 1747), eight dropped or partial. Four requests are drafted
+(Mornington, Courten, SP 78; the SP 87 decision) and six rows sit on the owner's card (ASKS 12-16). 474 survivors of
+the catalogue scout are still unscored (ASSIGNMENTS row 13). The DECODE login test and the JSTOR pass wait for a
+session that sees the credentials. Nothing was solved; Bowes 1583 is N1. Session usage about 90 for the orchestrator
+and nineteen workers.
 
 **Next session on this account, first actions (written 23:30 UTC, 23 Sept 2026).** (1) Presence test of the seven
 variables with `test -n`, no values printed. (2) One DECODE login attempt via `tools/decode_fetch.sh 8725 ...`; on
