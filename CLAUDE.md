@@ -213,11 +213,14 @@ Getting the material is most of the work. Try routes in this order and record wh
    flow (xauthn login, loan/browse_book, BookReaderJSIA.php for page images, loan/return_loan) but its image
    step is unverified pending a corrected IA_USER.
    Retried 21 Sept 2026 after the person rotated IA_USER to an email-format value and the password: login
-   still fails, same `{"success": false, "values": {"reason": "account_not_found"}}` from the xauthn API
-   (HTTP 401), but now because archive.org has no account under that email at all, not a format problem.
-   Not retried further this session (lockout risk on repeated failed logins). Borrowing and the image step
-   remain untested; the person needs to confirm which archive.org account IA_USER/IA_PASS are meant to
-   reach before another attempt (flagged in ROOM.md/ASKS.md).
+   still failed, same `{"success": false, "values": {"reason": "account_not_found"}}` from the xauthn API
+   (HTTP 401), but now because archive.org had no account under that email at all, not a format problem.
+   **Resolved 23 Sept 2026**: the person registered the account, and `services/xauthn/?op=login` now returns
+   `{"success": true}` with session cookies for the address in IA_USER. Login is no longer a blocker. The
+   borrow and page-image steps of `tools/ia_borrow.py` are still unverified -- nothing has held a loan yet --
+   so the first worker to use it should expect to debug that path and should record what it finds here. The
+   response body carries live session cookies: write it to a file, read what you need, delete the file, and
+   never print it.
    Without login: `be-api.us.archive.org/fts/v1/search?q=<term>&identifier=<id>` full-text-searches even
    lending-only items and returns snippet highlights, but its `page_num` field is not a real page locator --
    it equals the item's total `imagecount` (confirmed on two different items) -- so this route can confirm a
