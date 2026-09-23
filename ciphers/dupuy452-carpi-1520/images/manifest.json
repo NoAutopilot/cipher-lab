@@ -69,5 +69,55 @@
     "crops/f24_folio21r_{top,bot}_{L,R}.jpg -- folio 21 recto, NOT transcribed, saved for follow-up",
     "crops/f34_folio28r_cipherstart_sample.jpg -- folio 28 recto cipher opening, sample only (alphabet-match confirmation), see ciphertext_f28.txt"
   ],
-  "note": "Canvas-to-folio offset in this volume grows through the early gathering (canvas16=folio16, offset0; canvas21=folio19, offset+2; canvas23=folio20, offset+3; f34=folio28, offset+6) and is NOT linear -- extra unfoliated address/wrapper leaves are inserted irregularly (confirmed: f25 is folio 21's own wrapper, a leaf with no foliation of its own). Do not extrapolate folio position from a fixed per-canvas offset; read the period ink foliation (small numeral, top right of most rectos) directly from a full-resolution fetch instead. Folio 28 (Raince to Madame, item 28) is now located and characterised (f34-f36, see above) -- the 20 Sept sweep's 'not located' note for it is superseded. The four 1535 'Dechiffrement' leaves (ff.56, 60, 72, 76) were NOT located in this pass: canvases sampled at reduced width without success were f58, f60, f62, f64, f66, f68, f70, f72, f74, f76, f78 (a period annotation resembling 'Segrement'/cipher-related marginalia was seen near f64 but not confirmed as one of the four items); a denser bracket or the reading-room folio-search box would be needed next."
+  "note": "Canvas-to-folio offset in this volume grows through the early gathering (canvas16=folio16, offset0; canvas21=folio19, offset+2; canvas23=folio20, offset+3; f34=folio28, offset+6) and is NOT linear -- extra unfoliated address/wrapper leaves are inserted irregularly (confirmed: f25 is folio 21's own wrapper, a leaf with no foliation of its own). Do not extrapolate folio position from a fixed per-canvas offset; read the period ink foliation (small numeral, top right of most rectos) directly from a full-resolution fetch instead. Folio 28 (Raince to Madame, item 28) is now located and characterised (f34-f36, see above) -- the 20 Sept sweep's 'not located' note for it is superseded. The four 1535 'Dechiffrement' leaves (ff.56, 60, 72, 76) were NOT located in this pass: canvases sampled at reduced width without success were f58, f60, f62, f64, f66, f68, f70, f72, f74, f76, f78 (a period annotation resembling 'Segrement'/cipher-related marginalia was seen near f64 but not confirmed as one of the four items); a denser bracket or the reading-room folio-search box would be needed next.",
+  "images_added_23_sept_2026_image_prep_pass": [
+    {
+      "file": "img/btv1b10036146c_f29_folio24r_1600w.jpg",
+      "iiif_image_id": "f29",
+      "full_res_fetched": "8299x6214, IIIF /full/full/0/native.jpg (fetched, cropped from, then reduced to 1600px wide for this reference copy -- see size note below; refetch the same URL for a fresh full-res working copy)",
+      "gallica_iiif_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10036146c/f29/full/full/0/native.jpg",
+      "shows": "Folio 24 recto: Nicolas Raince to Monseigneur [Florimond Robertet]. Docket 'Rom. 1526' top left, period foliation '24' visible top right (faint). ~7 plain lines ('Monseigneur, ce cesy que avez Receu ma lettre...'), then cipher, same glyph alphabet as items 20 and 28. This is check-solved's item 24 (no 'en chiffres' note in the finding aid -- a finding-aid omission, flagged twice already in NOTES.md)."
+    },
+    {
+      "file": "img/btv1b10036146c_f30_folio24v25r_1600w.jpg",
+      "iiif_image_id": "f30",
+      "full_res_fetched": "8315x6214, IIIF /full/full/0/native.jpg",
+      "gallica_iiif_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10036146c/f30/full/full/0/native.jpg",
+      "shows": "One opening: folio 24 VERSO (left page -- cipher continues for several lines, then plain closing paragraphs, dated 'ce xxiiij [24] doctobre l'an vc xxv' [24 Oct 1525], signed 'Nicolas Raince') + folio 25 RECTO (right page, blank). This is the letter's actual end; item 24 is only 2 page-sides (f29 + this page's left half), confirmed by eye."
+    },
+    {
+      "file": "img/btv1b10036146c_f31_folio25v_reduced.jpg",
+      "iiif_image_id": "f31",
+      "full_res_fetched": "8315x6214 fetched once to confirm the letter's extent, then NOT kept at full res -- this canvas is the blank address wrapper (folio 25 verso, with a wax-seal hole, mirror show-through and the address panel) facing another blank leaf; no letter text, no cipher. Kept only as a 900px-wide reference.",
+      "gallica_iiif_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10036146c/f31/full/full/0/native.jpg",
+      "shows": "Blank outer wrapper of the folio 24 letter (address panel, no running text). Confirms item 24 does not continue past folio 24 verso."
+    },
+    {
+      "file": "img/btv1b10036146c_f34_folio28r_1600w.jpg",
+      "iiif_image_id": "f34",
+      "full_res_fetched": "8299x6214, IIIF /full/full/0/native.jpg -- REPLACES the prior (23 Sept transcription-pass) 1600w placeholder of the same name with a fresh reduced copy cut from a full native-resolution fetch; the crops in crops/ (f28r_L01.._s1/s2 etc.) are cut from that full-resolution fetch, not from this reduced copy.",
+      "gallica_iiif_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10036146c/f34/full/full/0/native.jpg",
+      "shows": "Folio 28 recto, as described in the 23 Sept transcription-pass entry above; 28 lines detected and cropped (see crops/manifest.json), not just the ~15 estimated by eye that pass."
+    },
+    {
+      "file": "img/btv1b10036146c_f35_folio28v29r_1600w.jpg",
+      "iiif_image_id": "f35",
+      "full_res_fetched": "8315x6214, IIIF /full/full/0/native.jpg -- same replace-in-place as f34 above.",
+      "gallica_iiif_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10036146c/f35/full/full/0/native.jpg",
+      "shows": "Folio 28 verso (left column, 28 lines cropped) + folio 29 recto (right column, 27 lines cropped), both entirely cipher."
+    },
+    {
+      "file": "img/btv1b10036146c_f36_folio29v30r_1600w.jpg",
+      "iiif_image_id": "f36",
+      "full_res_fetched": "8315x6214, IIIF /full/full/0/native.jpg -- same replace-in-place as f34 above.",
+      "gallica_iiif_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10036146c/f36/full/full/0/native.jpg",
+      "shows": "Folio 29 verso (left column, 27 lines cropped -- the first ~6 are cipher, the rest the plain close/signature, all cropped uniformly per images/crop.py's brief of not judging plain vs cipher) + folio 30 recto (right column, plain only, not cropped)."
+    }
+  ],
+  "image_prep_pass_23_sept_2026": {
+    "brief": "fetch full-resolution IIIF images for every canvas carrying folio 28 (Raince to Madame: f34, f35, f36) and folio 24 (Raince to Robertet: f29, f30, f31), then cut line-level crops for transcription.",
+    "requests": "gallica.bnf.fr: 6 info.json + 6 successful full-resolution image fetches on the first pass, then 5 more full-resolution refetches (f29, f30, f34, f35, f36) after a line-detection parameter fix required re-cropping from source (f29's first refetch attempt hit 2 connection resets on the full-width request and was fetched once at reduced width [/full/6500,/] as a fallback, then the full-width fetch succeeded on a later retry and superseded it; every other fetch succeeded on its first attempt) = 17 image fetches total, all through the same good-citizen 1.5s-apart, descriptive-UA pattern as prior sweeps.",
+    "line_detection_method": "images/crop.py takes a row ink-density profile per page-column and finds line centres as local maxima (scipy find_peaks, distance=85px, prominence=40). An initial calibration at distance=110 (chosen to match an eyeballed ~22-line count for folio 24 recto from a 900px thumbnail) turned out to silently skip every other line in the tightly-spaced cipher blocks (true pitch there is ~95-105px, not the ~200px of the surrounding plain prose) -- caught by viewing a debug overlay of detected line-centres on the source image before finalising crops, not by eye alone. distance=85 was verified by the same method (overlay + zoom, both on a plain-prose region and a cipher region) to hit exactly one line per row of writing throughout, with no double-detection and no skipped lines. True per-page line counts are therefore roughly double the ~22/17/28/28/27/27 estimated in the 23 Sept transcription-pass NOTES.md paragraph: 42 (folio 24r), 27 (folio 24v), 41 (folio 28r), 39 (folio 28v), 39 (folio 29r), 38 (folio 29v) = 226 lines, cropped as 115 two-line bands x 2 horizontal segments (each page-column is 3200-3900px wide, over the 2400px cap) = 230 crop files in crops/, quality 60 (lowered from the planned 80/70 to keep the folder under 30MB -- see below). This does not change any of the earlier extent/token-count prose in NOTES.md or ciphertext_f28.txt, which described paragraph/line counts by eye, not a pitch-calibrated count; a future transcriber should use these corrected counts, not the earlier ones.",
+    "folder_size": "The full IIIF fetches (8299-8315 x 6214px, ~3.3-5.9MB each) are cropped from directly, then REPLACED in img/ with 1600px-wide, quality-80 reference copies (matching the convention already used for f25 and the prior f34/f35/f36 placeholders) -- keeping the full 8300px source in the repo made the target folder exceed 30MB even after dropping the prior placeholders, so the tradeoff taken is: crops keep full native-pixel detail (cut before any downsizing), img/ keeps only a orientation-scale reference, and this manifest records each canvas's IIIF URL and native dimensions so a full-resolution copy can be refetched on demand. Folder size after this pass: 29.2MB (checked by du -sb), under the 30MB cap."
+  }
 }

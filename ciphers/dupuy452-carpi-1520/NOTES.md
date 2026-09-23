@@ -377,3 +377,59 @@ not a novelty verdict, and none of the words "new", "unpublished", "first" or "n
 used above or should be used elsewhere in this file until a verifier session runs.
 
 **Gate: best case N3; transcription may proceed.**
+
+## Crops for f.28 and f.24 (23 September 2026)
+
+Worker: image-prep (Sonnet, cap ~$4, no subagents). Read `date -u` first (21:24 UTC). Job:
+full-resolution IIIF fetch of every canvas carrying folio 28 (Raince to Madame) and folio 24
+(Raince to Robertet), then line-level crops for a future transcription pass. No decoding done.
+
+**Canvases fetched at full IIIF resolution** (`/full/full/0/native.jpg`, 8299-8315 x 6214 px):
+f29 (folio 24 recto), f30 (folio 24 verso + folio 25 recto, one opening), f31 (folio 25 verso,
+the letter's blank address wrapper -- confirms item 24 ends on folio 24 verso, only 2 page-sides),
+f34 (folio 28 recto), f35 (folio 28 verso + folio 29 recto, one opening, both pages entirely
+cipher), f36 (folio 29 verso + folio 30 recto). All 6 fetches succeeded; f29 needed 2 refetches
+later in the session after a parameter fix required re-cropping from source (a transient proxy
+connection reset on the first of those refetches was worked around with one reduced-width
+fallback fetch, superseded once the full-width fetch then succeeded -- see images/manifest.json
+for the full request log). 17 gallica.bnf.fr image fetches total across the session, plus 6
+info.json calls, all 1.5s apart with a descriptive User-Agent.
+
+**Line detection, corrected mid-session.** `images/crop.py` finds line centres from a row
+ink-density profile (local maxima, scipy `find_peaks`). An initial calibration (distance=110px,
+matching an eyeballed ~22-line guess for folio 24 recto from a small thumbnail) turned out to
+silently skip every other line in the tightly-spaced cipher blocks, where true line pitch is only
+~95-105px (the surrounding plain prose runs ~200px) -- caught by rendering a debug overlay of the
+detected centres on the source image and zooming in, not by eye alone; distance=85 was then
+verified the same way (overlay + zoom on both a plain-prose region and a cipher region) to hit
+exactly one line per row throughout, no skips, no doubles. **Real per-page line counts are
+roughly double the ~22/17/28/28/27/27 estimated by eye in the 23 Sept transcription-pass section
+above**: 42 (folio 24r), 27 (folio 24v), 41 (folio 28r), 39 (folio 28v), 39 (folio 29r), 38
+(folio 29v) = 226 lines total. This does not change any extent/token-count claim already written
+above (those were paragraph/line counts by eye, not a pitch-calibrated count), but a future
+transcriber should use these corrected per-page counts, not the earlier ones, when estimating how
+much text remains.
+
+**Crops.** Every detected line was cropped (not only lines read as cipher -- this worker does not
+judge plain vs cipher, per its brief), grouped 2 lines per crop, each further split into 2
+overlapping horizontal segments since every page-column is 3200-3900px wide, over the 2400px cap:
+115 two-line bands x 2 segments = **230 crop files** in `images/crops/`, named `f24r_L01_s1.jpg`
+etc. in canvas order, quality 60, with `images/crops/manifest.json` giving each crop's source file
+and pixel box. Verified by viewing 4 random crops (not 3, since the first check informed the
+distance=85 fix and I re-checked after it) spanning 4 different pages: each shows exactly the
+lines its band was assigned, fully legible at native scale, no line cut in half.
+
+**Folder size.** The full 8300px-wide source fetches were cropped from directly, then replaced in
+`images/img/` with 1600px-wide, quality-80 reference copies (matching the convention already used
+for f25 and the prior placeholders for f34/f35/f36) -- keeping the full-resolution sources would
+have put the target folder over 30MB even after dropping the superseded placeholders. Crops keep
+full native-pixel detail (cut before any downsizing); `images/manifest.json` records each canvas's
+IIIF URL and native dimensions so a full-resolution copy can be refetched on demand. Folder size
+after this pass: 29.2MB (`du -sb`), under the 30MB cap.
+
+**What a transcriber needs next:** `images/crops/manifest.json` gives each crop's exact source
+and pixel box; `images/crop.py` regenerates everything from a fresh IIIF fetch and is the
+reproducible record of how the lines were found. The crop set does not distinguish plain from
+cipher text within folio 24r, 28r or 29v (all three mix both) -- a transcriber reads the plain
+lines for sentence context and the cipher lines for the actual unread text, as already described
+above for items 20/28.
