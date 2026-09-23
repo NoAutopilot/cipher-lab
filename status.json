@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 21:33 UTC",
+ "updated": "23 September 2026, 21:58 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -21,7 +21,7 @@
    "stage": 5,
    "state": "waiting",
    "holder": "Archive",
-   "next": "NRS to send a quote for images of the five key sheets. Then pay, then apply the key to the 102 groups.",
+   "next": "NRS to send a quote for images of the five key sheets. Then pay, then apply the key to the 102 groups. archive.org loan of the 1932 HMC report works but its pages are reader-protected: the person reads pp.70-74 and the 1650 entries in the reader (ASKS row 18).",
    "note": "If the NRS sheets do not cover the cipher, this becomes cryptanalysis. Copy request emailed 19 Sept 2026. Cipher is 102 groups across four letters; unreadable without the key, which the catalogue lists as open.",
    "wait": {
     "on": "A quote from National Records of Scotland for images of the five key sheets, GD406/1/2197",
@@ -203,7 +203,7 @@
    "stage": 9,
    "state": "queued",
    "holder": "Nobody",
-   "next": "Settle N0 vs N1 by reading CSP Scotland vi pp. 370-371 in running text (Google Books with the key, or a library copy); then offer the sign table to Tomokiyo as a contribution. No copy order: the plaintext is in print.",
+   "next": "Verifier to read AUDIT.md section 10 (running text of CSP Scotland vi nos. 389 and 584 via Google Books snippets: names in clear, codes quoted, fol. 299 confirmed with 'In cipher' footnotes) and confirm or revise N1; then offer the sign table to Tomokiyo as a contribution. No copy order: the plaintext is in print.",
    "note": "Novelty verified 23 Sept 2026, AUDIT.md: N1. Safe sentence: Tomokiyo's transcription of the eleven fragments was aligned with Bowes's letter-book copies printed in 1842, giving a sign table that reads 93 of 101 tokens (S 82, M 8, I 3) as the names printed there; an independent re-decipherment of plaintext in print, conditional on the transcription. Result so far: a sign table not located in any source searched; a contribution, not a unique solve.",
    "kind": "contribution",
    "wait": {
@@ -342,6 +342,11 @@
  ],
  "workers": [
   {
+   "title": "Credential session (ytbiz)",
+   "job": "Presence test, DECODE login (rejected), archive.org borrow (loan works, images protected), Google Books calendar read for Bowes, JSTOR (blocked). ~$12",
+   "state": "done"
+  },
+  {
    "title": "Transcription + key extension: Dupuy 468 Anhalt",
    "job": "Read in full, 687 tokens, H 630 S 33 M 18; recovery from the gloss. ~$30",
    "state": "done, archived"
@@ -436,6 +441,10 @@
   }
  ],
  "log": [
+  {
+   "when": "23 Sept, 21:58",
+   "what": "Credential session: all seven variables set on the ytbiz account. DECODE login rejected once (form asks for a user name; row 1 open). archive.org login and loan work; lending pages are reader-protected, tool stops on them (row 18). Google Books snippets reached CSP Scotland vi nos. 389 and 584 for the Bowes audit (AUDIT.md section 10). JSTOR challenge-blocked (row 17)."
+  },
   {
    "when": "23 Sept, 21:33",
    "what": "Dupuy 468 (Anhalt to François I, 1516) read in full from the Gallica image: the later hand's gloss covers almost the whole letter and the key reads the rest with a 99.8% control. Verifier started; the class turns on whether that decipherment is printed."

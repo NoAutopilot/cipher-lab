@@ -22,6 +22,22 @@ not retry this pair again without the person confirming which archive.org accoun
 reach -- xauthn rate-limits/locks out repeated failed logins. One attempt was made this session, per the
 no-repeat-retry rule in the Access playbook; flagged in ROOM.md and ASKS.md.
 
+UPDATE, 23 Sept 2026 (credential session, ytbiz account): login now succeeds (the person registered the
+account), and steps 2 and 4 work as written: `browse_book` returns {"success": true} and opens a one-hour
+SESSION_LOAN, `return_loan` returns it. Step 3 needed three changes, now in the code below: (a) the
+`loan-<identifier>` cookie, whose value comes from POST /services/loans/loan/ action=create_token (needs
+Origin and Referer headers, else HTTP 400); (b) the image host is the `server` field of /metadata/<id>
+(ia8xxxxx), not the host in the BookReaderJSIA `uri` (ia6xxxxx), which answered 404 "Image error: not
+found" for every leaf; (c) a Referer header on the image request. With those, BookReaderImages.php
+answers 200 image/jpeg. BUT for a lending item (`lendingInfo.shouldProtectImages` true) the body is not a
+JPEG: archive.org serves the leaf obfuscated for its own web reader (an `X-Obfuscate` header, no JPEG
+markers anywhere in the payload). Decoding that outside the reader is circumventing the lending protection
+and is not done here: this script now stops and reports when it sees a protected payload. So for
+controlled-digital-lending items the loan can be held from a script, but the pages must be read by the
+person in the archive.org reader (or through search-inside snippets, be-api, which need no login). Open
+items are served as ordinary JPEGs by the same endpoint and this script reads them, but those need no
+loan in the first place.
+
 There is no official Python client for the lending/BookReader system (the `internetarchive` PyPI
 package covers uploads/downloads/search of open items only), so this script speaks the same raw HTTP
 endpoints archive.org's own web reader uses:
@@ -39,6 +55,7 @@ UNVERIFIED -- confirm it against a real loan before trusting the image URLs it r
 """
 import argparse
 import os
+import re
 import sys
 import time
 
@@ -75,6 +92,21 @@ def return_loan(session, identifier):
                       headers={"Referer": f"https://archive.org/details/{identifier}"}, timeout=30)
     return r.status_code == 200
 
+def create_token(session, identifier):
+    """Loan token for the loan-<identifier> cookie the image server checks (renewed by the web reader
+    every couple of minutes; one token is enough for a short page check)."""
+    r = session.post("https://archive.org/services/loans/loan/",
+                      data={"action": "create_token", "identifier": identifier},
+                      headers={"Referer": f"https://archive.org/details/{identifier}",
+                               "Origin": "https://archive.org"}, timeout=30)
+    try:
+        j = r.json()
+    except ValueError:
+        die(f"create_token failed ({r.status_code})")
+    if not j.get("success") or not j.get("token"):
+        die(f"create_token failed ({r.status_code}): {j.get('error', '')}")
+    session.cookies.set(f"loan-{identifier}", j["token"], domain=".archive.org", path="/")
+
 def get_item_server_path(identifier):
     r = requests.get(f"https://archive.org/metadata/{identifier}", timeout=30)
     d = r.json()
@@ -109,7 +141,11 @@ def main():
         loaned = True
         print(f"borrowed: {args.identifier}")
 
+        time.sleep(1.5)
+        create_token(session, args.identifier)
+        time.sleep(1.5)
         server, path = get_item_server_path(args.identifier)
+        time.sleep(1.5)
         r = session.get(f"https://{server}/BookReader/BookReaderJSIA.php",
                          params={"id": args.identifier, "itemPath": path, "server": server,
                                   "format": "json", "requestUri": f"/details/{args.identifier}"},
@@ -124,8 +160,18 @@ def main():
                 print(f"warning: leaf {leaf_num} out of range ({len(flat)} leaves in manifest)",
                       file=sys.stderr)
                 continue
-            img_url = flat[leaf_num]["uri"]
-            img = session.get(img_url, timeout=60)
+            # Use the metadata server (ia8...) for the image host; the uri's own host (ia6...) 404s.
+            img_url = re.sub(r"^https?://[^/]+", f"https://{server}", flat[leaf_num]["uri"])
+            if "scale=" not in img_url:
+                img_url += "&scale=2&rotate=0"
+            time.sleep(1.5)
+            img = session.get(img_url, timeout=60,
+                              headers={"Referer": f"https://archive.org/details/{args.identifier}"})
+            if img.headers.get("X-Obfuscate") or not img.content.startswith(b"\xff\xd8"):
+                print(f"leaf {leaf_num}: served protected (obfuscated for the archive.org reader, "
+                      f"status {img.status_code}, {len(img.content)} bytes); not saved. Read this item in "
+                      f"the reader as the person, or use search-inside snippets.", file=sys.stderr)
+                break
             out_path = os.path.join(args.out, f"{args.identifier}_leaf{leaf_num:04d}.jpg")
             with open(out_path, "wb") as f:
                 f.write(img.content)
