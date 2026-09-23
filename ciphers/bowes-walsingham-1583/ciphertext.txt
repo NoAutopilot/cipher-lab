@@ -1,0 +1,31 @@
+# Robert Bowes to (?) Sir Francis Walsingham, BL Cotton MS Caligula C VII f.196 (Edinburgh, 7 April 1583) and
+# f.299 (Edinburgh/St Johnstons, 31 July 1583): the cipher fragments only.
+# Transcription by Satoshi Tomokiyo (Cryptiana), "CottonMSBowes.txt", linked from
+# http://cryptiana.web.fc2.com/code/elizabeth.htm ; mirrored in sources/cryptiana/web/CottonMSBowes.txt on
+# 23 September 2026. Copied here unchanged, 24 September 2026. Tomokiyo's note: "the lines below are separate
+# ciphertext fragments (not a contiguous ciphertext)". Symbols are his numbers 02-28 for drawn cipher signs;
+# the manuscript images are not online (BL: "digital images currently unavailable"), so every result from this
+# file is conditional on his transcription. His split between f.196 and f.299 is not marked in the file.
+# One fragment per line, tokens separated by ';'. Line F10 has three trailing empty fields in his file (kept).
+# F1
+07;16;06;17;10;11;11;16;18;20;21;17;19;12;
+# F2
+07;12;19;13;13;10;08;
+# F3
+23;18;13;10;11;18;19;06;11;10;
+# F4
+12;19;22;11;24;09;16;13;17;06;11;08;13;10;24;20;22;13;10;11;18;19;06;11;10;27;
+# F5
+28;
+# F6
+12;19;09;09;16;07;07;16;10;06;
+# F7
+07;12;19;13;13;14;08;
+# F8
+15;22;13;10;11;18;26;06;11;
+# F9
+17;16;07;06;09;08;17;10;11;
+# F10
+02;02;03;;;
+# F11
+03;25;17;16;12;

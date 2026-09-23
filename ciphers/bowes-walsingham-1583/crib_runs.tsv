@@ -1,0 +1,63 @@
+run	cipher	word_source	words	placements	covered_of_101	chosen
+T0	target	CLXXXVII+CCXXXIX+CCXL (the parallel Letter-Book copies)	68	2015	43	F1@8:cobham; F2@0:smallet; F4@16:glencarne; F7@0:smallet; F8@1:glen; F9@3:ruthen; F11@0:iohn
+T1	target	other letters CLXIX. — "  .. (+2 following)	61	1884	32	F1@3:den; F2@1:haller; F4@16:glencarne; F6@1:allen; F9@0:den; F9@6:den; F11@0:god
+T2	target	other letters LXX.-"  M.  .. (+2 following)	100	2421	27	F1@9:north; F3@3:fry; F4@1:threasorer; F4@18:fry; F8@3:fry; F11@0:sir
+T3	target	other letters CCII.— "  Th.. (+2 following)	67	1805	27	F2@0:the; F3@3:fife; F4@1:edinburgh; F4@18:fife; F7@0:the; F8@3:fife
+T4	target	other letters XCVII — «  T.. (+2 following)	58	1595	24	F1@8:kinges; F4@1:edenbrughe; F4@16:duke; F8@1:duke
+T5	target	other letters CCXVII.  —  .. (+2 following)	53	1749	28	F1@0:from; F2@1:marr; F4@4:sir; F4@8:montrosse; F7@1:marre; F8@6:lon
+T6	target	other letters CLXXXIX. — ".. (+2 following)	66	1920	32	F1@9:ill; F2@0:god; F3@3:and; F4@1:dunfcrmling; F4@18:and; F7@0:god; F8@3:and; F11@0:col
+T7	target	other letters CCXXX.  —  ".. (+2 following)	114	3012	34	F1@10:mane; F2@0:len; F2@4:mas; F3@4:len; F4@0:englishman; F4@19:len; F7@0:len; F8@3:aleyn
+T8	target	other letters CCLXIV. — "A.. (+2 following)	56	1371	24	F1@9:the; F3@4:col; F4@1:lochleuen; F4@19:col; F6@3:letter
+T9	target	other letters CLXXVI.— "Th.. (+2 following)	89	2406	28	F3@3:march; F4@2:walsingham; F4@18:march; F6@3:sir; F8@3:march
+T10	target	other letters CCLVI. — "  .. (+2 following)	52	1552	33	F1@8:his; F3@2:loch; F4@0:newcastle; F4@10:col; F4@17:loch; F4@23:col; F8@2:loch; F9@2:his
+T11	target	other letters CXLV. — "To .. (+2 following)	75	2089	32	F1@2:sir; F2@0:god; F4@1:decembris; F4@10:carre; F7@0:god; F8@0:ber; F8@5:his; F9@5:air
+T12	target	other letters IX. — Letter.. (+2 following)	102	2700	34	F1@2:nou; F3@4:edin; F4@0:bidefacion; F4@19:edin; F7@4:ian; F8@4:eden; F9@0:oct; F9@5:nou
+T13	target	other letters CCLX.— "To  .. (+2 following)	92	2507	29	F1@8:may; F4@0:fcrnihurst; F4@15:arren; F8@0:arren; F9@3:the; F11@0:his
+T14	target	other letters CXXVIII.— "T.. (+2 following)	54	1461	26	F3@5:god; F4@8:edinburgh; F4@20:god; F6@0:collesse; F8@5:god
+T15	target	other letters CCXII. — "To.. (+2 following)	68	2014	28	F2@1:let; F4@14:scotchmen; F6@0:lennox; F7@1:letter; F11@0:auho
+T16	target	other letters LXVIII.  —  .. (+2 following)	79	2067	28	F2@1:marre; F3@0:sir; F4@5:threasurer; F4@15:byres; F8@0:byres
+T17	target	other letters CCLVIII.— " .. (+2 following)	62	1797	26	F1@8:may; F4@0:fcrnihurst; F4@15:arren; F8@0:arren; F9@4:his
+T18	target	other letters XVII. — "  M.. (+2 following)	81	2107	28	F1@8:dun; F2@0:god; F3@3:and; F4@1:dunbritton; F4@18:and; F7@0:god; F8@3:and
+T19	target	other letters XLIV. — "The.. (+2 following)	54	1560	32	F4@15:ministers; F6@3:cotto; F7@1:lennox; F8@0:ministers; F11@0:aug
+T20	target	other letters XXXII. — Let.. (+2 following)	98	2509	27	F1@8:king; F2@1:wynne; F4@2:walsingham; F6@3:sir; F7@1:wynne
+T21	target	other letters CII.— "To  S.. (+2 following)	98	2499	30	F3@4:duke; F4@8:wednesdaye; F4@19:duke; F8@4:duke; F9@2:sep; F11@0:gowry
+T22	target	other letters CXXIX.— "To .. (+2 following)	39	1292	28	F1@10:col; F2@0:col; F3@0:sir; F4@8:otherwise; F7@0:col; F8@0:ber; F11@0:from
+T23	target	other letters CCXLIL— "Ano.. (+2 following)	90	2561	32	F1@9:col; F2@0:and; F3@3:and; F4@1:dunfermling; F4@18:and; F7@0:and; F8@3:and; F11@0:col
+T24	target	other letters CCLI. — "  A.. (+2 following)	25	862	24	F2@0:the; F3@3:sir; F4@1:edinburgh; F4@18:sir; F7@0:the; F8@3:sir
+T25	target	other letters CIV. — "To  .. (+2 following)	93	2595	29	F1@3:mon; F4@8:montrosse; F6@0:marre; F7@1:marrc; F9@6:mon; F11@0:hume
+T26	target	other letters CXLIX. — "  .. (+2 following)	53	1548	27	F2@0:from; F4@5:him; F4@8:decembris; F7@0:from; F8@4:case; F11@0:god
+T27	target	other letters XXX. — Lette.. (+2 following)	54	1552	32	F2@1:sir; F4@15:lordships; F6@0:sir; F7@1:sir; F8@0:lordships; F11@0:bowes
+T28	target	other letters CLVI. — "To .. (+2 following)	95	2780	30	F1@8:col; F2@0:iohn; F3@3:mac; F4@2:walsingham; F4@18:mac; F7@0:iohn; F8@3:mac
+T29	target	other letters CCXLIII. — ".. (+2 following)	69	1936	32	F1@9:col; F2@0:and; F3@3:and; F4@1:dunfermling; F4@18:and; F7@0:and; F8@3:and; F11@0:col
+T30	target	other letters IV. — "The  .. (+2 following)	100	2770	31	F1@8:ley; F3@6:aug; F4@1:angus; F4@7:loughleuen; F4@21:aug; F8@6:aug; F11@0:from
+T31	target	other letters CC. — "To   .. (+2 following)	72	2036	24	F1@8:god; F3@1:god; F4@0:abbercromye; F4@11:god; F7@2:book
+T32	target	other letters LX. — Letter.. (+2 following)	79	1992	30	F3@1:out; F3@4:robert; F4@2:treasurer; F4@11:out; F4@19:robert; F11@0:sir
+T33	target	other letters CXI. — "To  .. (+2 following)	82	2329	26	F4@1:iast; F4@15:maiesties; F8@0:maiesty; F9@0:ogleby
+T34	target	other letters LXXV1. — Let.. (+2 following)	103	2638	29	F1@8:kinge; F2@0:eden; F3@7:had; F4@2:walsyngham; F4@22:had; F7@0:eden
+T35	target	other letters LI. — Letter.. (+2 following)	63	1550	29	F2@0:god; F3@5:edin; F4@1:dunfermling; F4@20:edin; F7@0:god; F8@5:edin
+T36	target	other letters CCX.— "To  S.. (+2 following)	54	1746	25	F1@0:may; F1@9:god; F4@0:faulkland; F8@0:huntley; F11@0:god
+T37	target	other letters CVL— "  To  .. (+2 following)	73	2210	27	F1@3:mon; F4@8:montrosse; F6@0:gibbe; F8@6:mon; F9@6:mon; F11@0:hume
+T38	target	other letters CCXLVIIL— " .. (+2 following)	45	1609	31	F1@8:col; F2@0:col; F3@5:clerk; F4@2:treasurer; F4@20:clerk; F7@0:col; F11@0:sir
+T39	target	other letters CCIX.— "The .. (+2 following)	45	1504	26	F3@0:falkland; F4@14:faulkland; F9@0:gordon; F11@2:god
+T40	target	other letters CCXVIII. — ".. (+2 following)	56	1866	31	F2@0:win; F3@4:win; F4@1:newbottlc; F4@19:win; F7@0:win; F8@4:win; F9@3:col; F11@0:holt
+S1	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1826	27	F1@1:liuingstone; F4@3:marre; F4@12:marr; F6@6:book; F10@0:sir
+S2	shuffled	CLXXXVII+CCXXXIX+CCXL	68	2009	23	F4@2:king; F4@12:dunfermlinge; F8@4:sir; F11@0:from
+S3	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1471	27	F4@1:mauuisier; F6@0:argyll; F8@5:lis; F9@1:letter; F11@2:god
+S4	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1723	23	F1@4:god; F2@1:chris; F3@6:col; F4@13:manninguille
+S5	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1512	30	F1@7:sir; F3@0:sir; F4@5:col; F6@7:col; F7@0:george; F9@0:archibald; F11@1:col
+S6	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1622	28	F1@1:mauuisier; F2@0:guyse; F3@6:marr; F9@1:sir; F9@5:god; F11@0:glen
+S7	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1618	27	F1@5:archibald; F4@3:king; F4@14:cary; F6@1:fentrye; F7@1:god
+S8	shuffled	CLXXXVII+CCXXXIX+CCXL	68	2170	26	F1@8:sir; F4@0:liuingstone; F6@3:holt; F8@3:marre; F10@0:god
+S9	shuffled	CLXXXVII+CCXXXIX+CCXL	68	2160	27	F1@2:manninguile; F3@0:smallet; F6@3:cary; F9@2:guyse
+S10	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1627	28	F1@0:book; F1@8:chris; F4@2:glencarne; F7@1:col; F9@5:sir; F11@1:king
+S11	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1711	26	F2@4:god; F3@0:douglass; F6@2:col; F8@0:guyse; F9@2:maiesty
+S12	shuffled	CLXXXVII+CCXXXIX+CCXL	68	2040	31	F1@2:liuingstone; F2@3:from; F3@3:sir; F4@3:sir; F4@17:book; F6@6:god; F9@0:sir
+S13	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1501	28	F3@2:falkland; F4@20:sir; F6@7:col; F7@1:fentry; F8@1:glen; F9@2:mont
+S14	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1369	24	F1@0:yesterday; F3@3:marr; F4@13:sir; F8@1:iohn; F9@4:from
+S15	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1587	26	F1@8:glamys; F2@4:sir; F4@10:arren; F4@21:sir; F6@1:edinburgh
+S16	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1586	28	F1@0:mauuisier; F3@6:iuly; F4@0:sir; F4@8:iuly; F4@21:iames; F7@0:lis
+S17	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1432	31	F3@3:sir; F4@6:falkland; F4@16:marr; F4@21:god; F8@1:rogatus; F9@0:god; F9@5:lis
+S18	shuffled	CLXXXVII+CCXXXIX+CCXL	68	1258	30	F2@3:col; F4@3:mauuisier; F4@19:august; F7@3:glen; F8@0:march; F11@1:lis
+S19	shuffled	CLXXXVII+CCXXXIX+CCXL	68	2147	31	F1@3:cary; F3@6:col; F4@1:cary; F4@6:drumquhassell; F4@20:iuly; F6@4:lis
+S20	shuffled	CLXXXVII+CCXXXIX+CCXL	68	2006	19	F4@1:liuingstone; F6@5:lis; F8@3:guyse
+#summary	target with parallel-letter words: 43 tokens; other-letter word lists (40): mean 28.8 sd 2.9 max 34; shuffled target with parallel words (20): mean 27.0 sd 3.1 max 31
