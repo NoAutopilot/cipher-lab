@@ -10,18 +10,24 @@ key.tsv: 'token<TAB>value<TAB>source<TAB>note'. value is a letter or letter grou
 (a word sign, read as the whole word) or '' (a null or separator). source is 'gloss' (value read from the
 interlinear gloss, see key_from_gloss.tsv) or 'search' (value found by the n-gram search, runs.tsv).
 
+exceptions.tsv: 'line<TAB>pos<TAB>token<TAB>key_value<TAB>gloss_value<TAB>reason', one row per (line, pos)
+where the gloss word actually written over that token departs from key.tsv's dominant value for the
+symbol (a minority vote; NOTES.md "Self-consistency" and the ASSIGNMENTS row 25 brief of 23 Sept 2026).
+At these positions gloss_value overrides key.tsv's value for that one occurrence only, and the token is
+graded H (read from the gloss, a key source on the document, at that exact spot).
+
 Grades per token (rule 4): H = the token stands under a gloss word that aligns with it letter for letter
 (or, for a word sign, a gloss word over it) and the aligned gloss letter equals the key value (read from the
-gloss, a key source on the document; votes in key_from_gloss.tsv); S = not so glossed, read with a value
-established from the gloss elsewhere (the gloss-derived key applied, supported by the control in NOTES.md);
-M = a value from the search only, a key row marked 'uncertain', or a word sign whose own gloss disagrees;
-unread = no value in the key.
+gloss, a key source on the document; votes in key_from_gloss.tsv), or the position has an exceptions.tsv
+override; S = not so glossed, read with a value established from the gloss elsewhere (the gloss-derived key
+applied, supported by the control in NOTES.md); M = a value from the search only, a key row marked
+'uncertain', or a word sign whose own gloss disagrees; unread = no value in the key.
 
 Writes reading.txt (line by line: clear words lower case, deciphered words UPPER CASE, glosses in a
 parallel line) and reading_tokens.tsv (one row per cipher token with its value and grade).
   python3 check.py          regenerate both files
   python3 check.py --check  exit 1 if the committed files differ from a fresh regeneration
-Written 23 Sept 2026.
+Written 23 Sept 2026. exceptions.tsv added 23 Sept 2026 (ASSIGNMENTS row 25).
 """
 import os
 import sys
@@ -76,8 +82,18 @@ def load_votes():
     return v
 
 
+def load_exceptions():
+    ex = {}
+    for l in open(os.path.join(HERE, "exceptions.tsv"), encoding="utf-8"):
+        if l.startswith("#") or l.startswith("line\t") or not l.strip():
+            continue
+        p = l.rstrip("\n").split("\t")
+        ex[(p[0], int(p[1]))] = p[4]
+    return ex
+
+
 def render():
-    rows, key, votes = load_cipher(), load_key(), load_votes()
+    rows, key, votes, exceptions = load_cipher(), load_key(), load_votes(), load_exceptions()
     out, tok_rows, grades = [], ["line\tpos\ttoken\tvalue\tgrade\tgloss"], Counter()
     for ln, toks, gl, graw in rows:
         words, cur = [], []
@@ -87,6 +103,18 @@ def render():
                     words.append("".join(cur).upper())
                     cur = []
                 words.append(t[7:-1])
+                continue
+            if (ln, i) in exceptions:
+                val, g = exceptions[(ln, i)], "H"
+                grades[g] += 1
+                tok_rows.append(f"{ln}\t{i}\t{t}\t{val}\t{g}\t{gl.get(i, '')}")
+                if val.startswith("="):
+                    if cur:
+                        words.append("".join(cur).upper())
+                        cur = []
+                    words.append("<" + val[1:].upper() + ">")
+                else:
+                    cur.append(val)
                 continue
             v, src, note = key.get(t, (None, "", ""))
             if v is None or "?" in (v or ""):

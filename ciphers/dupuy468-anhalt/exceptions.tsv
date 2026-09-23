@@ -1,0 +1,26 @@
+# Per-position exceptions for BnF Dupuy 468 f.28r-v, 23 September 2026 (ASSIGNMENTS row 25).
+# line	pos	token	key_value	gloss_value	reason
+#
+# key.tsv gives one dominant value per cipher symbol, from the majority of the interlinear gloss's
+# aligned letters (key_from_gloss.py, votes in key_from_gloss.tsv). At the 10 positions below, the
+# gloss word actually written over that token disagrees with the symbol's dominant value -- a minority
+# vote (NOTES.md "Self-consistency": 9 single-letter-type minority votes, plus the r04 word-sign case
+# discussed separately in the Grading table). check.py applies this table as a per-position override so
+# reading.txt carries what the gloss itself says at these ten spots, not the mechanically-applied
+# majority key. Every row here is graded H (rule 4: read from a key source -- the gloss, on the document
+# itself, at that exact position), not S or M.
+#
+# The gloss_value column is what check.py substitutes for key.tsv's value at that (line, pos): a bare
+# letter merges into the surrounding cipher run as usual; '=word' renders as a bracketed word-sign
+# reading, <WORD>, in its place.
+line	pos	token	key_value	gloss_value	reason
+r04	25	PW	=Mekleburg	=dux	word-sign token glossed with an unrelated word ('dux') instead of Mekleburg at this one occurrence; key.tsv note, NOTES.md caveat of 23 Sept 2026
+r06	12	U	n	m	gloss writes m where the cipher spells n (conmissionem, medieval -cio-/-tio- and n/m spelling pattern; NOTES.md "Self-consistency")
+r06	17	D	m	i	single-token encipherer's slip: D stands where commissionem has i, not m (NOTES.md "Self-consistency")
+r14	21	Po	t	s	single-token slip: Po stands where articulus has s, not t (NOTES.md "Self-consistency")
+r14	23	U	n	m	gloss writes m where the cipher spells n (imponetur, -cio-/-tio- and n/m spelling pattern; NOTES.md "Self-consistency")
+r18	4	P	s	t	single-token slip: P stands where consentiente has t, not s (NOTES.md "Self-consistency")
+r23	17	L	c	t	gloss writes t where the cipher spells c (amicitiam, -cio-/-tio- spelling pattern; NOTES.md "Self-consistency")
+r29	1	L	c	r	glossator read 'rum' over L-cc-[blot] here; L stands for r in this occurrence, not c (NOTES.md "Self-consistency"; the blot itself, r29:3, stays unread -- no key entry to except)
+v02	18	L	c	t	gloss writes t where the cipher spells c (confederationem, -cio-/-tio- spelling pattern; NOTES.md "Self-consistency")
+v09	17	q	e	n	glossator wrote 'nos' over q-Y-P here (key reads 'eos'); he glossed the same group 'eos' at r12 (NOTES.md "Self-consistency")
