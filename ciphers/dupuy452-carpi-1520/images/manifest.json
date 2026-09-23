@@ -1,0 +1,29 @@
+{
+  "shelfmark": "Bibliotheque nationale de France. Departement des Manuscrits. Dupuy 452",
+  "ark": "ark:/12148/btv1b10036146c",
+  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b10036146c",
+  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10036146c/manifest.json",
+  "archivesetmanuscrits_notice": "http://archivesetmanuscrits.bnf.fr/ark:/12148/cc885911",
+  "leaves_total": 295,
+  "rights": "Bibliotheque nationale de France, public domain reproduction, Gallica, no login required",
+  "fetched": "23 September 2026",
+  "fetch_method": "curl, browser User-Agent, IIIF Image API /full/900,/0/native.jpg (reduced width)",
+  "images": [
+    {
+      "file": "btv1b10036146c_canvas16_folio16_carpi_plain.jpg",
+      "canvas": "IIIF canvas index 16 (annotated 'C. Carpi 1520' in a period hand)",
+      "shows": "Plain French/Italian secretary-hand letter, Alberto Pio de Carpi to the Cardinal de Sens (Antoine Duprat), Rome, 18 May 1520 -- matches the finding aid's folio 16 item exactly. No cipher of any kind on this leaf, confirming the finding aid's own wording (no 'en chiffres' note for this item)."
+    },
+    {
+      "file": "btv1b10036146c_canvas21_folio19_adrianvi_plain.jpg",
+      "canvas": "IIIF canvas index 21 (matches finding-aid folio 19, offset +2 from folio16/canvas16)",
+      "shows": "Plain Latin letter from Pope Adrian VI at his election ('ex Victoria, die ultima februarii' [1522]) to the Sacred College/Francis I -- matches finding aid folio 19. No cipher."
+    },
+    {
+      "file": "btv1b10036146c_canvas23_folio20_carpi_cipher.jpg",
+      "canvas": "IIIF canvas index 23, headed 'C. Carpi 1526' in the same period hand (offset +3 from folio16/canvas16)",
+      "shows": "THE genuine cipher letter: Alberto Pio de Carpi to Madame [Louise de Savoie], Rome, dated in the finding aid 22 Oct 1525 (the leaf's own docket reads '1526', an Old/New Style discrepancy common for Jan-Mar but here likely a later archival slip, not re-dated by this sweep). Roughly the first three-quarters of the letter (about 25 lines) is plain French secretary hand ('Madame, ...'); the final third (about 8-9 lines) switches to a dense run of arithmetic-numeral cipher groups with a few non-numeral symbols mixed in -- a genuine 'presque entierement en chiffres' passage, though only for the letter's last section, not its whole length. No interlinear or facing decipherment visible on this leaf; no key bound with it here."
+    }
+  ],
+  "note": "Canvas-to-folio offset in this volume grows through the early gathering (canvas16=folio16, offset0; canvas21=folio19, offset+2; canvas23=folio20, offset+3), consistent with an extra unfoliated address/wrapper leaf per item. Not fully re-derived past folio ~31 (Raince's letter, catalogued folio 28, 'presque entierement en chiffres') -- canvases 31-33 sampled around the extrapolated position show only plain French prose, so Raince's cipher passage (if any) was not located this sweep; flagged as unfinished pinning, not a negative on that letter."
+}

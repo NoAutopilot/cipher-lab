@@ -1,0 +1,24 @@
+{
+  "shelfmark": "Bibliotheque nationale de France. Departement des Manuscrits. Clairambault 361",
+  "ark": "ark:/12148/btv1b9001048f",
+  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b9001048f",
+  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001048f/manifest.json",
+  "archivesetmanuscrits_notice": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc13826w/cd0e15574",
+  "leaves_total": 535,
+  "rights": "Bibliotheque nationale de France, public domain reproduction, Gallica, no login required",
+  "fetched": "23 September 2026",
+  "fetch_method": "curl, browser User-Agent, IIIF Image API /full/900,/0/native.jpg (reduced width)",
+  "images": [
+    {
+      "file": "btv1b9001048f_canvas211_probe_not_folio211.jpg",
+      "canvas": "IIIF canvas index 211 (a naive guess equal to the finding-aid's cited 'Fol. 211')",
+      "shows": "NOT the Marini key. A plain 1609 'Extrait des registres du conseil d'Etat' (election dispute at Bordeaux), under its own period foliation stamps '131' and '295' visible in the corner -- proof this composite volume carries multiple overlapping historical foliation layers, so IIIF canvas index does not track the archivesetmanuscrits.bnf.fr 'Fol.' number 1:1 here (unlike Dupuy 452/468)."
+    },
+    {
+      "file": "btv1b9001048f_canvas237_probe_not_folio237.jpg",
+      "canvas": "IIIF canvas index 237 (naive guess equal to 'Fol. 237')",
+      "shows": "Also NOT the second cipher key. Plain administrative text (a dispute over baronies/jurisdiction), stamped '144/143' and '261' -- a different, inconsistent offset from canvas211's stamps, confirming the mismatch is not a simple constant shift."
+    }
+  ],
+  "note": "Neither key ('Double du chiffre de Claudio Marini', Fol. 211; 'Double d'un chiffre', Fol. 237, both per the archivesetmanuscrits.bnf.fr item-level finding aid) was located by image this sweep. Gallica's OAI-metadata Pagination service and ContentSearch full-text search were both tried and returned no folio numbers / no OCR text for this manuscript (unlike some printed items bound into other Clairambault volumes). The determination that this volume holds keys only, with no ciphertext letter named beside them, rests on the finding aid's own text (see NOTES.md), not on a confirmed leaf view of the keys themselves."
+}
