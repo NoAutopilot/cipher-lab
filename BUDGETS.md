@@ -13,7 +13,7 @@ the rate-limit window, which is the thing that actually stops work.
 | Person | Plan | Window | Resets | Status | Spend this window | Updated |
 |---|---|---|---|---|---|---|
 | the owner | Max | seven-day | see session | allowed_warning | orchestrator 2,042 since 17 Sept; workers about 330 | 21 Sept 2026 |
-| noautopilotytbiz (same person, second account) | Max | five-hour | rolling | allowed | 218 for the session 23 Sept 15:12-22:24 UTC (orchestrator plus about 35 workers; the long conversation was the largest single cost) | 23 Sept 2026 22:24 UTC |
+| noautopilotytbiz (same person, second account) | Max | five-hour | rolling | allowed | 235.5 for the session 23 Sept 15:12-23:16 UTC (orchestrator plus about 35 workers; the long conversation was the largest single cost); five-hour window allowed at close, no overage | 23 Sept 2026 23:16 UTC |
 | | | | | | | |
 | | | | | | | |
 

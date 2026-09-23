@@ -91,6 +91,8 @@ over-claims prevented by the gates before anything left the repository.
 
 ## Handoff from the ytbiz orchestrator, 23 September 2026, 22:24 UTC
 
+**23:16 UTC, 23 Sept: wake 2 started.** The three outreach emails were sent by the owner on 23 Sept (Tomokiyo, BnF, NLS; CONTRIBUTIONS.md). A fresh orchestrator session on this account (session_01SepNMpYrr6L2EwqL43aTnm, Opus, cap $60) now carries the list below, starting with the Raince reconciliation (ASSIGNMENTS row 24), then M8-M11 check-solved, then rows 21 and 25. This session closed at $235.5.
+
 Read this, then CLAUDE.md (the Outreach rule and the good-citizen rule are new today), the lane table above, ASKS.md
 and the last 40 lines of ROOM.md. The credential session started at 21:40 UTC may still be running its own list
 (presence test, DECODE login, Sforza images, catalogue pull, IA loan, Google Books page for Bowes, JSTOR pass,
