@@ -1,7 +1,10 @@
-open
+found-solved
 
 # Thomas Randolph (Edinburgh) to Thomas Radcliffe, 3rd Earl of Sussex, 9 July 1570
 
+- **Found-solved:** contemporary decipherment on f.278 (DECODE R4932), reported by Bourdeau 21 Sept 2026 and
+  read in his randolph1570/NOTES.md; Boyd 1903 no. 339 "partly in cipher, deciphered". Not verified against the
+  f.278 image from this account (bl.digirati.io is egress-blocked here).
 - **Source:** BL Cotton MS Caligula C II, f. 277r-v. 2pp, holograph, signed "Tho. Randolphe". DECODE R4931.
 - **Dating correction:** QUEUE.md and Bourdeau's catalogue (id 99) give the year as 1569. The manuscript
   itself is headed, top right of f.277r, "9° Julij / 1570" and the closing dateline on f.277v reads
@@ -149,3 +152,34 @@ crops for the whole passage, more than this worker's cap allowed for a full pass
 
 Not classifying novelty here (rule 10); that is the verifier's job from AUDIT.md once/if this target reaches
 that stage.
+
+## Native-resolution crops (23 September 2026)
+
+Transcription worker, ASSIGNMENTS row 1. **Stopped part way on 23 Sept 2026** when the orchestrator reported the
+f.278 decipherment above (Bourdeau, github.com/dbourdeau/cyphersolver, folder `randolph1570/`, commit 2e9ec01 of
+23 Sept 2026; Bourdeau's text is CC BY 4.0). No reconciliation, no rewrite of `ciphertext.txt` and no frequency
+analysis were done; `ciphertext.txt` is still the 21 Sept first pass. No reading of the cipher is claimed, so no
+H/C/S/M/I grades apply.
+
+What exists:
+- `images/crop.py` cuts 49 native-resolution segments (no rescaling; 1,405-1,605 px wide, 300 px tall, each band
+  centred on the writing of its own segment because the lines drift by up to 110 px) into
+  `images/crops/native/`, with `manifest.json` giving each crop's source image and pixel box. Greyscale with a
+  levels stretch (70-200) and JPEG quality 75 instead of the 85 asked for, to keep the folder under 30 MB (it is
+  about 28.6 MiB; the four 21 Sept wide crops in `images/crops/` were kept because deleting them was refused).
+- **The cipher on f.277r is larger than the 21 Sept transcription records.** The main block runs over eight
+  lines (L1-L8: cipher starts after "as this ." on L1 and ends at "cede ." on L8), not six; the old L1-L6 are
+  lines 1-6 of these, and lines L7 ("XUӾλX ...") and L8 ("…CεδQ .") were missing. Two further mixed
+  cipher/plaintext passages lie lower on the recto: B1-B3 (y ≈ 3900-4400, "...to be sorte wth yor L. [cipher]"
+  through "... woo is of that mynde") and C1-C2 (y ≈ 7300-7880, including struck-through cipher). The verso
+  cipher is on one line (f277v_L1, "OO UӾWg ≈ CλNθεΠ"). On L4 the plaintext inside the cipher reads, by eye at
+  native resolution, as "full sore agaynste their willes", not "fntt fpare agaynfte hym willed" (grade M, not
+  checked against the f.278 decipherment).
+- Two independent Sonnet passes (`claude-sonnet-5`, run headless from a scratch folder holding only the crops,
+  no transcription, legend or calendar text): `images/crops/native/passA.tsv` (138 group rows, cost $2.35) and
+  `passB.tsv` (129 group rows, cost $0.60). They are raw and unreconciled; their bracket codes differ and have
+  not been collapsed into one inventory.
+
+Suggested follow-up (not done): if anyone wants the ciphertext for checking the f.278 decipherment glyph by
+glyph, reconcile passA/passB against the crops and rewrite `ciphertext.txt` from them.
+

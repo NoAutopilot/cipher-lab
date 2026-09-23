@@ -30,22 +30,27 @@ GRAY = True  # brown ink on buff paper: greyscale keeps the strokes and halves t
 # so the folder stays under the 30 MB cap. The unmodified page images stay in img/.
 LEVELS = (70, 200)
 
-# id, source image, top, bottom, left, right, number of segments
+# id, source image, left, right, number of segments, body centre (y) of the writing in each segment.
+# The lines drift up or down by as much as 110 px across the page, so each segment gets its own band:
+# ABOVE px above the centre (room for ascenders and the marks written over some symbols) and BELOW px below.
+# Centres were measured on 23 Sept 2026 as the peak of the dark-pixel row profile within each segment and
+# checked by eye; f277v_L1 s1 was set by eye (the profile locked onto the line above).
+ABOVE, BELOW = 170, 130
 LINES = [
-    ("f277r_L1", "img/f277r_s1.jpg", 1050, 1330, 1250, 6450, 4),
-    ("f277r_L2", "img/f277r_s1.jpg", 1260, 1530, 1250, 6450, 4),
-    ("f277r_L3", "img/f277r_s1.jpg", 1470, 1740, 1250, 6450, 4),
-    ("f277r_L4", "img/f277r_s1.jpg", 1680, 1960, 1250, 6450, 4),
-    ("f277r_L5", "img/f277r_s1.jpg", 1880, 2190, 1250, 6450, 4),
-    ("f277r_L6", "img/f277r_s1.jpg", 2070, 2380, 1250, 6450, 4),
-    ("f277r_L7", "img/f277r_s1.jpg", 2370, 2660, 1250, 6450, 4),
-    ("f277r_L8", "img/f277r_s1.jpg", 2620, 2920, 1250, 6450, 4),
-    ("f277r_B1", "img/f277r_s1.jpg", 3780, 4060, 3650, 6600, 2),
-    ("f277r_B2", "img/f277r_s1.jpg", 4020, 4300, 1150, 6600, 4),
-    ("f277r_B3", "img/f277r_s1.jpg", 4270, 4550, 1150, 4200, 2),
-    ("f277r_C1", "img/f277r_s1.jpg", 7180, 7480, 1150, 4200, 2),
-    ("f277r_C2", "img/f277r_s1.jpg", 7660, 7940, 1150, 6600, 4),
-    ("f277v_L1", "img/f277v_s1.jpg", 4150, 4430, 1500, 5300, 3),
+    ("f277r_L1", "img/f277r_s1.jpg", 1250, 6450, 4, [1178, 1112, 1087, 1117]),
+    ("f277r_L2", "img/f277r_s1.jpg", 1250, 6450, 4, [1396, 1343, 1331, 1337]),
+    ("f277r_L3", "img/f277r_s1.jpg", 1250, 6450, 4, [1571, 1559, 1571, 1549]),
+    ("f277r_L4", "img/f277r_s1.jpg", 1250, 6450, 4, [1823, 1783, 1761, 1782]),
+    ("f277r_L5", "img/f277r_s1.jpg", 1250, 6450, 4, [2043, 2047, 2038, 2086]),
+    ("f277r_L6", "img/f277r_s1.jpg", 1250, 6450, 4, [2269, 2259, 2254, 2297]),
+    ("f277r_L7", "img/f277r_s1.jpg", 1250, 6450, 4, [2532, 2525, 2499, 2502]),
+    ("f277r_L8", "img/f277r_s1.jpg", 1250, 6450, 4, [2779, 2778, 2745, 2737]),
+    ("f277r_B1", "img/f277r_s1.jpg", 3650, 6600, 2, [3875, 3877]),
+    ("f277r_B2", "img/f277r_s1.jpg", 1150, 6600, 4, [4179, 4175, 4134, 4117]),
+    ("f277r_B3", "img/f277r_s1.jpg", 1150, 4200, 2, [4414, 4371]),
+    ("f277r_C1", "img/f277r_s1.jpg", 1150, 4200, 2, [7372, 7314]),
+    ("f277r_C2", "img/f277r_s1.jpg", 1150, 6600, 4, [7877, 7851, 7795, 7749]),
+    ("f277v_L1", "img/f277v_s1.jpg", 1500, 5300, 3, [4300, 4241, 4185]),
 ]
 
 
@@ -60,11 +65,12 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     cache, manifest = {}, {"written": "2026-09-23", "quality": QUALITY, "grayscale": GRAY,
                         "levels": LEVELS, "crops": []}
-    for lid, src, top, bottom, left, right, n in LINES:
+    for lid, src, left, right, n, centres in LINES:
         if src not in cache:
             cache[src] = Image.open(os.path.join(HERE, src))
         im = cache[src]
-        for k, (x0, x1) in enumerate(segments(left, right, n), 1):
+        for k, ((x0, x1), cy) in enumerate(zip(segments(left, right, n), centres), 1):
+            top, bottom = cy - ABOVE, cy + BELOW
             assert x1 - x0 <= MAX_W, (lid, k, x1 - x0)
             c = im.crop((x0, top, x1, bottom))
             if GRAY:
