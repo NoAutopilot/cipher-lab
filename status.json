@@ -1,5 +1,5 @@
 {
- "updated": "24 September 2026, 03:40 UTC",
+ "updated": "24 September 2026, 04:20 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -200,17 +200,17 @@
    "year": "1583",
    "ref": "BL Cotton Caligula C VII, B VIII",
    "folder": "ciphers/bowes-walsingham-1583",
-   "stage": 8,
-   "state": "active",
-   "holder": "Verifier",
-   "next": "Verifier assigns the N-class (rule 10): the names are printed in Bowes's letter-book copies (Surtees 1842), so the question is whether anyone mapped this ciphertext before. Then a BL copy order for C VII ff.196-197, 299, 303 to settle the eight unread and three inferred tokens.",
-   "note": "24 Sept 2026: 93 of 101 tokens read (S 82, M 8, I 3; crib control 43 tokens vs 28.8 +/- 2.9 on other letters' words); simple substitution for names inside clear sentences, second signs for a, e, g at grade M only. Conditional on the transcription; no image seen. Verifier 24 Sept (AUDIT.md): N1, independent re-decipherment of plaintext printed in 1842 and, for f.196, very probably in CSP Scotland vi (1910) pp.370-371.",
-   "kind": "recovery",
+   "stage": 9,
+   "state": "queued",
+   "holder": "Nobody",
+   "next": "Settle N0 vs N1 by reading CSP Scotland vi pp. 370-371 in running text (Google Books with the key, or a library copy); then offer the sign table to Tomokiyo as a contribution. No copy order: the plaintext is in print.",
+   "note": "Novelty verified 24 Sept 2026, AUDIT.md: N1. Safe sentence: Tomokiyo's transcription of the eleven fragments was aligned with Bowes's letter-book copies printed in 1842, giving a sign table that reads 93 of 101 tokens (S 82, M 8, I 3) as the names printed there; an independent re-decipherment of plaintext in print, conditional on the transcription. Result so far: a sign table not located in any source searched; a contribution, not a unique solve.",
+   "kind": "contribution",
    "wait": {
-    "on": "The verifier session",
-    "since": "24 Sept 2026, 03:00 UTC",
-    "expected": "Same day",
-    "unblock": "AUDIT.md with the class; then the BL order"
+    "on": "One calendar page in running text (CSP Scotland vi pp. 370-371) to settle N0 vs N1",
+    "since": "24 Sept 2026, 04:20 UTC",
+    "expected": "Minutes in a session with the Google Books key",
+    "unblock": "Read the page; then hand the sign table to Tomokiyo"
    }
   },
   {
@@ -288,6 +288,11 @@
  ],
  "workers": [
   {
+   "title": "Verifier: Bowes 1583",
+   "job": "N1: plaintext printed 1842, calendared 1910. Corrected the over-claim on grades. ~$15",
+   "state": "done, archived"
+  },
+  {
    "title": "Check Solved: N4-N7",
    "job": "N4, N5 found-solved; N6 SP 87 open, a 98-item campaign; N7 partial. ~$3",
    "state": "done, archived"
@@ -296,11 +301,6 @@
    "title": "Solver: Bowes 1583 fragments",
    "job": "Partial: 93/101 tokens read at S with control; names in clear sentences, cribbed from the 1842 letter-book copies. ~$12",
    "state": "done, archived"
-  },
-  {
-   "title": "Verifier: Bowes 1583",
-   "job": "N-class from a logged search; corrects any over-claim",
-   "state": "running"
   },
   {
    "title": "Print Check: Mornington editions, Courten cross-ref",
@@ -382,6 +382,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sept, 04:20",
+   "what": "Bowes 1583 verified N1: the names were printed in 1842 and the leaf is calendared in 1910. A sign table is the contribution; not a unique solve. Lesson to the check-solved template: word-count test on blocked calendars before stage 2."
+  },
   {
    "when": "24 Sept, 03:40",
    "what": "N4 and N5 dropped (Tomokiyo keys). SP 87 Seven Years War run verified unsolved: 98 cipher items, three beside contemporary decipherments; on the board as a campaign (ASKS row 14). PRO 30/55 partial. Verifier on Bowes still running."

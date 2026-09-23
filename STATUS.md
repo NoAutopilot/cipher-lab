@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 24 September 2026, 03:40 UTC
+Last updated: 24 September 2026, 04:20 UTC
 
 > **Ryan is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -38,6 +38,13 @@ copies of the key (BL Mss Eur D623), the 1722 intercepts with cipher-key pairs (
 Madden's key (BL Add MS 4956). Check-solved is running on those three; the edition risk is real (the Wellesley
 despatches were printed 1836-37). Policy under the unique-solves metric: such items are kept, not dropped as editions,
 and the verifier decides. Each will need an imaging order, so the person's card fills once they pass stage 2.
+
+**04:20 UTC, 24 Sept: Bowes 1583, the night's one reading, verified N1.** A solver aligned Tomokiyo's transcription of
+eleven cipher fragments with Bowes's letter-book copies printed in 1842 and recovered a sign table that reads 93 of 101
+tokens (S 82, M 8, I 3) as the printed names. The verifier found the plaintext in print since 1842 and the leaf itself
+calendared in CSP Scotland vi (1910) with every name in clear, so the class is N1, possibly N0 once one calendar page
+is read. Not a unique solve; a sign table to hand to Tomokiyo. Two lessons went into the templates: run the HTRC
+word-count test on a blocked calendar before setting stage 2, and view the leaf before scoring a catalogue hit.
 
 **Next session on this account, first actions (written 23:30 UTC, 23 Sept 2026).** (1) Presence test of the seven
 variables with `test -n`, no values printed. (2) One DECODE login attempt via `tools/decode_fetch.sh 8725 ...`; on
