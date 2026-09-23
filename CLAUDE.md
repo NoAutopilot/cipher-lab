@@ -273,6 +273,17 @@ Getting the material is most of the work. Try routes in this order and record wh
    target "waiting on you" in the report, and stop. Batch several asks into one REQUEST.md rather than
    stopping at the first.
 
+**Good-citizen rule (owner, 23 September 2026): never get flagged as a bot or spam.** Use each site's official
+API where one exists (TNA Discovery API, Gallica SRU, Internet Archive advancedsearch/metadata/download, IIIF
+manifests and image API, MediaWiki API with `maxlag=5`) rather than scraping HTML search pages. One request at a time
+per host, at least 1.5 seconds apart, never parallel workers against the same host; a few hundred requests per host
+per session at most. Fetch once and read from disk after (Usage item 4). On a 429, 403, or a Cloudflare or other
+challenge page, stop hitting that host, log it in NOTES.md and ROOM.md, and never retry in a loop; a single retry after
+a pause is the limit. Use the browser-style User-Agent only where this playbook says the site needs it; otherwise a
+descriptive one, `cipher-lab research script (contact via repository)`. Never automate a login beyond the single
+attempt rule above, never bypass a challenge, never use `ignoreHTTPSErrors`. Workers report their request count per
+host in the final paragraph.
+
 Test reachability before planning: `curl -sS -o /dev/null -w "%{http_code}" <url>`; `000` means the egress
 policy blocks it, in which case say so and stop, since no route above will help.
 
