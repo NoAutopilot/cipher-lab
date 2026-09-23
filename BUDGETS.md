@@ -13,7 +13,7 @@ the rate-limit window, which is the thing that actually stops work.
 | Person | Plan | Window | Resets | Status | Spend this window | Updated |
 |---|---|---|---|---|---|---|
 | Ryan (owner) | Max | seven-day | see session | allowed_warning | orchestrator 2,042 since 17 Sept; workers about 330 | 21 Sept 2026 |
-| | | | | | | |
+| noautopilotytbiz (same person, second account) | Max | five-hour | 23 Sept 2026 20:10 UTC | allowed | orchestrator about 1 at claim time; no workers yet | 23 Sept 2026 15:20 UTC |
 | | | | | | | |
 | | | | | | | |
 
