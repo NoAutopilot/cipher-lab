@@ -1,5 +1,5 @@
 {
- "updated": "24 September 2026, 02:30 UTC",
+ "updated": "24 September 2026, 03:00 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -200,17 +200,17 @@
    "year": "1583",
    "ref": "BL Cotton Caligula C VII, B VIII",
    "folder": "ciphers/bowes-walsingham-1583",
-   "stage": 3,
+   "stage": 8,
    "state": "active",
-   "holder": "Worker",
-   "next": "Solver on Tomokiyo's eleven fragments (about 110 symbols, 27-symbol alphabet, English) with a matched control at the same length; if the control itself fails, the target needs the BL imaging order for six leaves (C VII ff.196-197, 299-303; B VIII ff.251-252, 290-293, 306).",
-   "note": "23 Sept 2026: open on print (Surtees 1842 prints letter-book copies with unglossed numeric name-codes, not the cipher letters); both Cotton volumes undigitised, BL IIIF refuses them; transcription from Cryptiana mirrored to sources/.",
+   "holder": "Verifier",
+   "next": "Verifier assigns the N-class (rule 10): the names are printed in Bowes's letter-book copies (Surtees 1842), so the question is whether anyone mapped this ciphertext before. Then a BL copy order for C VII ff.196-197, 299, 303 to settle the eight unread and three inferred tokens.",
+   "note": "24 Sept 2026: 93/101 tokens read at grade S with a control (key covers 43 tokens vs 28.8 +/- 2.9 on other letters' words); simple substitution with second signs for a, e, g, used for names inside clear sentences. Conditional on the transcription; no image seen.",
    "kind": "recovery",
    "wait": {
-    "on": "The solver session",
-    "since": "24 Sept 2026, 00:10 UTC",
+    "on": "The verifier session",
+    "since": "24 Sept 2026, 03:00 UTC",
     "expected": "Same day",
-    "unblock": "A reading that beats the control margin, or a negative with both numbers and a BL order drafted"
+    "unblock": "AUDIT.md with the class; then the BL order"
    }
   },
   {
@@ -270,6 +270,16 @@
  ],
  "workers": [
   {
+   "title": "Solver: Bowes 1583 fragments",
+   "job": "Partial: 93/101 tokens read at S with control; names in clear sentences, cribbed from the 1842 letter-book copies. ~$12",
+   "state": "done, archived"
+  },
+  {
+   "title": "Verifier: Bowes 1583",
+   "job": "N-class from a logged search; corrects any over-claim",
+   "state": "running"
+  },
+  {
    "title": "Print Check: Mornington editions, Courten cross-ref",
    "job": "Nine despatches unprinted; second Courten key found; two REQUEST.md drafted. ~$1.5",
    "state": "done, archived"
@@ -292,16 +302,6 @@
   {
    "title": "Scout: catalogues not on DECODE",
    "job": "704 hits, 493 survivors, 19 scored; keys in the same file for the top rows. ~$4",
-   "state": "done, archived"
-  },
-  {
-   "title": "Check Solved: N1-N3 (Mornington, SP 35/36, Courten)",
-   "job": "Editions first, then six sources",
-   "state": "running"
-  },
-  {
-   "title": "Print Check + Access: Bowes 1583",
-   "job": "Open; volumes undigitised; fragments mirrored. ~$2",
    "state": "done, archived"
   }
  ],
@@ -364,6 +364,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sept, 03:00",
+   "what": "Bowes 1583: the eleven fragments read, 93 of 101 tokens at grade S with a control. The names match Bowes's printed letter-book copies, so the verifier decides the class; a BL order would settle the rest."
+  },
   {
    "when": "24 Sept, 02:30",
    "what": "Mornington and Courten both at stage 2 with imaging requests drafted (ASKS rows 12 and 13). Check-solved N4-N7 and the Bowes solver still running."
