@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 21:58 UTC",
+ "updated": "23 September 2026, 22:17 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -304,21 +304,21 @@
    }
   },
   {
-   "name": "Latin cipher letter to François I (catalogued Anhalt 1515/16; in fact Ernest of Brunswick-Lüneburg and Joachim von Moltzan, Zerbst, 24 Jan 1520)",
+   "name": "Latin cipher letter to François I from Ernst of Lüneburg and Joachim von Moltzan, Zerbst, 24 Jan 1520 (catalogued Anhalt 1515/16)",
    "year": "1520",
    "ref": "BnF Dupuy 468 f.28 (Gallica ark:/12148/btv1b10035959t, canvas 64)",
    "folder": "ciphers/dupuy468-anhalt",
    "stage": 9,
    "state": "blocked",
    "holder": "Nobody",
-   "next": "None for novelty: found-solved (N1). Optional contribution only: re-read r22 'palatinus' (probably 'paulatim') and the r03 unread sign (Mainz in the printed French), then a note to the BnF linking Dupuy 468 f.28 to fr. 3897 fol. 146 and RTA JR II p.122.",
-   "note": "Second, adversarial audit 23 Sept 2026 (AUDIT.md): FOUND IN PRINT, class N1, status found-solved. Deutsche Reichstagsakten, Jüngere Reihe II (ed. Wrede, 1896), Beilagen zur Einleitung IV no. 1, p.122, prints this letter in full in its contemporary French translation (BnF fr. 3897 fol.146, 'Translat des lettres du filz du duc de Lunembourg et Joachin au roy'), dated [1520] Jan. 24; every sentence of reading.txt matches, down to 'la veille de sainct Pol au matin a cinq heures'. Also listed in the Catalogue des manuscrits francais III (1881), fr. 3897 item 73. No printed link from the Dupuy 468 cipher leaf to it was found. Supersedes the first audit's N3 and its 1518/19 date. Safe sentence: AUDIT.md, second audit. Result is at most a contribution (Latin original identified, catalogue attribution/date corrected), not a solve.",
-   "kind": "recovery",
+   "next": "Contribution only: tell the BnF that Dupuy 468 f.28 is the Latin cipher original of the letter printed in French in RTA JR II p.122 from fr. 3897 f.146, with the corrected date and senders. Draft in outreach/ when the person wants it.",
+   "note": "Found-solved 23 Sept 2026 (AUDIT.md, second audit): printed in full in French translation, Deutsche Reichstagsakten JR II (1896) p.122, from BnF fr. 3897 f.146. Class N1. Our reading matches sentence by sentence.",
+   "kind": "contribution",
    "wait": {
-    "on": "Nothing: found-solved",
-    "since": "23 Sept 2026, 22:15 UTC",
-    "expected": "-",
-    "unblock": "-"
+    "on": "Nothing",
+    "since": "23 Sept 2026, 22:17 UTC",
+    "expected": "n/a",
+    "unblock": "n/a"
    }
   },
   {
@@ -342,6 +342,21 @@
  ],
  "workers": [
   {
+   "title": "Adversarial second audit: Dupuy 468",
+   "job": "Found in print: RTA JR II p.122, 24 Jan 1520. N1, found-solved. ~$10",
+   "state": "done, archived"
+  },
+  {
+   "title": "Check Solved: P1 Orange 1572",
+   "job": "Found-solved: partial decipherment printed 1842. ~$2.5",
+   "state": "done, archived"
+  },
+  {
+   "title": "Transcription pass B: Dupuy 452 ff.28-29",
+   "job": "Blind reader, 158 lines",
+   "state": "running"
+  },
+  {
    "title": "Verifier: Dupuy 468",
    "job": "N3; attribution corrected; gloss is a contemporary decipherment. ~$20",
    "state": "done, archived"
@@ -352,16 +367,6 @@
    "state": "done, archived"
   },
   {
-   "title": "Check Solved: P1 Orange to Nassau 1572",
-   "job": "Editions first (Groen, Huygens database, Japikse)",
-   "state": "running"
-  },
-  {
-   "title": "Transcription passes A and B: Dupuy 452 ff.28-29",
-   "job": "Two blind readers, 158 lines",
-   "state": "running"
-  },
-  {
    "title": "Credential session (ytbiz)",
    "job": "Presence test, DECODE login (rejected), archive.org borrow (loan works, images protected), Google Books calendar read for Bowes, JSTOR (blocked). ~$12",
    "state": "done"
@@ -369,11 +374,6 @@
   {
    "title": "Transcription + key extension: Dupuy 468 Anhalt",
    "job": "Read in full, 687 tokens, H 630 S 33 M 18; recovery from the gloss. ~$30",
-   "state": "done, archived"
-  },
-  {
-   "title": "Print Check, class gate: Dupuy 452",
-   "job": "Best case N3; unprinted; cipher unread anywhere searched. ~$1.5",
    "state": "done, archived"
   }
  ],
@@ -436,6 +436,10 @@
   }
  ],
  "log": [
+  {
+   "when": "23 Sept, 22:17",
+   "what": "Dupuy 468 falls to N1: the adversarial second audit found the letter printed in full in Reichstagsakten JR II (1896), dated 24 Jan 1520. No unique solve tonight. The Orange 1572 detector candidate also fell, to an 1842 journal. Both caught inside the repo before any outreach."
+  },
   {
    "when": "23 Sept, 21:58",
    "what": "Dupuy 468 verified N3 (AUDIT.md): the first unique solve by the repo's definition, a recovery from a contemporary decipherment on the leaf, with the catalogue attribution corrected. Detector test passed its controls and left 24 printed-cipher candidates; check-solved on the strongest (Orange to Nassau 1572). TNA page checks hit their daily cap; retry early UK morning."
