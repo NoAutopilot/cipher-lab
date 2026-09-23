@@ -145,7 +145,7 @@ transcripts on 20 Sept) and set IA_USER to the account email; email Spink before
 order for Stair; an NLS quote and five-leaf sample for MS 20769; a British Library quote for Monck.
 
 **Waiting on archives:** National Records of Scotland (Hamilton key sheets), The National Archives (Stepney
-page check, order 3660178), the Huntington (corpus enquiry sent 20 Sept).
+page check, order 3660178), the Huntington (corpus enquiry sent 19 Sept).
 
 **Standing routines:** weekly retrospective, Mondays 06:00 UTC, emails five proposed changes and a
 cost-per-result verdict. Breakthrough alert, fired on demand. Morning summary, as scheduled.
