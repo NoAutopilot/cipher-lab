@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 23 September 2026, 21:56 UTC
+Last updated: 23 September 2026, 21:58 UTC
 
 > **Ryan is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -71,8 +71,15 @@ the browser tool.
 | DECODE cached catalogue, neighbour-record pairs | 202 pairs | 193 named by Bourdeau by id or volume; D1 solved | 0 | D8 only | 0 | stopped: needs the full catalogue behind the login |
 | GitHub-held ciphertexts (Bourdeau not-read) | 12 | 0 | 0 | 0 | 1 attacked, clean negative | stopped: his tooling already failed there |
 | TNA Discovery, BL, Gallica keyword sweep (N rows) | 36 scored, 15 swept | 6 | 2 | 7 | 0 | stopped by rule: 13 stage-2 targets wait on the person |
-| Digitised BnF manuscripts (M rows) | 11 scored, 7 swept | 3 | 2 | 0 | 3 (M4 unpinned, M6, M7) | open: M6 (Dupuy 452) passed the class gate at N3, ~1,500 tokens; M7 in transcription; M8-M11 unswept |
-| Printed ciphertext detector (IA full text) | 1 volume, control only | n/a | n/a | n/a | n/a | test running (RETRO proposal 5) |
+| Digitised BnF manuscripts (M rows) | 11 scored, 7 swept | 3 | 2 | 0 | 3 (M4 unpinned, M6, M7) | open: M7 (Dupuy 468) read and verified N3; M6 (Dupuy 452) gated at N3, two passes running; M8-M11 unswept |
+| Printed ciphertext detector (IA full text) | 274 editions, 24 passages | 0 checked yet | n/a | 0 | 24 (text in hand) | open: controls 2/2, precision 50/50; check-solved on P1 running |
+
+**21:58 UTC, 23 Sept: first verified N3 of the session.** BnF Dupuy 468 f.28 is a Latin cipher letter to Francis I. The catalogue gives it to Ernest and Joachim of Anhalt, 1515/16; it is more probably from Ernest of Brunswick-Lüneburg and Joachim von Moltzan, 1518/19. It carries an interlinear decipherment in a second hand, probably contemporary. That decipherment was transcribed and the key it implies applied to the whole letter: 663 of 687 cipher tokens read (H 630 from the gloss, S 33 from the key, control 99.8%), 18 M, 6 unread. No printed text or printed decipherment of the letter was found in the editions listed in AUDIT.md (N3). Kind: recovery. AUDIT.md is the record; the
+class is N3, not N4, until the credential session runs the JSTOR, Google Books and HathiTrust queries it lists.
+The printed-ciphertext detector passed its controls (2 of 2, precision 50 of 50) and left 24 candidate passages
+with the text already in hand; the strongest, William of Orange to Jean de Nassau in September 1572, is in
+check-solved now. Two British Library orders went out tonight (Courten, Mornington); TNA's daily page-check cap
+blocked the SP 78 request until the UK morning.
 
 **Next session on this account, first actions (written 18:02 UTC, 23 Sept 2026).** (1) Presence test of the seven
 variables with `test -n`, no values printed. (2) One DECODE login attempt via `tools/decode_fetch.sh 8725 ...`; on
