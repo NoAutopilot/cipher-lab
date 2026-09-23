@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 24 September 2026, 00:10 UTC
+Last updated: 24 September 2026, 00:40 UTC
 
 > **the owner is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -30,6 +30,14 @@ classes N3 or better (rule 10). Consequences, applied the same evening:
 Pipeline per cluster: check-solved (editions first: Nuntiaturberichte, CODOIN, calendars) -> DECODE login, open
 letter and sibling -> two transcription passes -> key from the sibling, read -> verifier -> board. Blocked at the
 second step until ASKS rows 1, 10 and 11 are done.
+
+**00:40 UTC, 24 Sept: the lane that is ours.** The non-DECODE catalogue scout returned 493 items with cipher in TNA
+Discovery, BL Archives and Manuscripts and Gallica that neither solver project names (QUEUE.md "Candidates not on
+DECODE", N1-N19 scored). The top three carry their key in the same file: Mornington's 1798-1800 despatches with two
+copies of the key (BL Mss Eur D623), the 1722 intercepts with cipher-key pairs (TNA SP 35/36), and Courten's diary with
+Madden's key (BL Add MS 4956). Check-solved is running on those three; the edition risk is real (the Wellesley
+despatches were printed 1836-37). Policy under the unique-solves metric: such items are kept, not dropped as editions,
+and the verifier decides. Each will need an imaging order, so the person's card fills once they pass stage 2.
 
 **Next session on this account, first actions (written 23:30 UTC, 23 Sept 2026).** (1) Presence test of the seven
 variables with `test -n`, no values printed. (2) One DECODE login attempt via `tools/decode_fetch.sh 8725 ...`; on
