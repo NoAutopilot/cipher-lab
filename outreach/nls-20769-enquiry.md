@@ -1,7 +1,7 @@
 to: manuscripts@nls.uk (National Library of Scotland, Manuscripts), or the form at auth.nls.uk/copy-enquiry-form/
 subject: MS 20769: catalogue description and a copy quote
 checked: 23 Sept 2026, orchestrator. Target at stage 2 (check-solved 20 Sept 2026). A free enquiry, no order, no claim about the manuscript. No personal data. Safe to send as is.
-status: ready
+status: sent 23 Sept 2026
 
 # Draft email: NLS MS 20769, step 1 of ciphers/nls-20769/REQUEST.md
 
