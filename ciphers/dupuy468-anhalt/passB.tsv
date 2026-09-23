@@ -1,0 +1,798 @@
+line	pos	token	gloss	conf	note
+r02	1	[PLAIN:mif]	ature	m	long-s read as f throughout; possibly "mihi"
+r02	2	[PLAIN:nof]		m
+r02	3	[PLAIN:ambof]		m
+r02	4	[PLAIN:fatuof]		l	uncertain reading
+r02	5	[PLAIN:ar]		m
+r02	6	[PLAIN:fortunatof]		m
+r02	7	[PLAIN:veniffe]		h	"venisse"
+r02	8	V		h
+r02	9	?H	oppidum	l	two verticals + crossbar, not a clean legend match; closest candidates U or II
+r02	10	Y	oppidum	m
+r02	11	4	oppidum	m
+r02	12	V	oppidum	m
+r02	13	T	oppidum	l
+r02	14	[PLAIN:ar]		l	could instead be an unlisted cipher symbol
+r02	15	D		l	small loop shape, tentative
+r02	16	q		l	tentative, near right margin, hard to read
+r03	1	L	verbes	m	gloss word position approximate
+r03	2	q	verbes	m
+r03	3	4	verbes	m	revised after seeing same glyph repeat clearly at top of r04_s1
+r03	4	7		m
+r03	5	q	et	m
+r03	6	P	et	h
+r03	7	Po	et	m
+r03	8	q	ibi	m
+r03	9	Po	ibi	l
+r03	10	V	ibi	h
+r03	11	7	erant	m
+r03	12	V	erant	h
+r03	13	q	erant	m
+r03	14	4	erant	m
+r03	15	6	erant	m
+r03	16	U	simul	l	box-like shape, tentative
+r03	17	Po	simul	l
+r03	18	L	manib9	m	gloss reads "manib9" = manibus, abbreviation
+r03	19	V	manib9	h
+r03	20	4	manib9	m
+r03	21	cc	Saxo	m
+r03	22	q	Saxo	m
+r03	23	+	march	l
+r03	24	?	march	l	final hook/flourish shape at line end, unclear, not matched to legend
+r04	1	O	limeburg / meklebirgen	m	gloss "limeburg meklebirgen" = Lüneburg, Mecklenburg (place names)
+r04	2	[PLAIN:ambof]		l	plain word amid symbols, "ambo"?
+r04	3	II	et multi alij	l	box shape, tentative
+r04	4	q	et multi alij	m
+r04	5	Po	et multi alij	l
+r04	6	?	et multi alij	l	unclear glyph, possibly D
+r04	7	cc		m
+r04	8	q		m
+r04	9	Po		l
+r04	10	V		h
+r04	11	6		m
+r04	12	q		m
+r04	13	V		h
+r04	14	V		h
+r04	15	q	ego	l	small tilde/mark over symbol per gloss "ego" faint above
+r04	16	q		m
+r04	17	+		l
+r04	18	4	filius	m	gloss "filius" visible
+r04	19	3	filius	l	tentative, resembles legend 3
+r04	20	V		h
+r04	21	q	dux de Lune	m	gloss "dux de Lune[burg]" visible faint
+r04	22	V		h
+r04	23	cc	dux de Lune	m
+r04	24	P		m
+r04	25	O		m
+r05	1	[PLAIN:tractam]	propo?ni	l	continuous cursive, no cipher dots; very uncertain reading
+r05	2	[PLAIN:ce]		l
+r05	3	[PLAIN:pctu]		l
+r05	4	[PLAIN:neu]		l
+r05	5	[PLAIN:ad]		m
+r05	6	[PLAIN:pecte]	murchio	l
+r05	7	[PLAIN:atq;]	com?	l	abbreviation "atque"
+r05	8	q	ego	l
+r05	9	+	ego	l
+r05	10	Y		l
+r05	11	V	Joachim	m	gloss "Joachim" visible - Joachim of Brandenburg?
+r05	12	Y	Joachim	l
+r05	13	L		h
+r05	14	II		l
+r05	15	V		h
+r05	16	U	ut	l
+r05	17	cc	ut	m
+r05	18	Po		l
+r06	1	4		l	whole line very compressed/hard to read, sequence approximate
+r06	2	P		l
+r06	3	4		l
+r06	4	4		l
+r06	5	q	meklo/	l	gloss fragment "meklo[burg]" visible
+r06	6	P		l
+r06	7	cc		l
+r06	8	V		l
+r06	9	F		l
+r06	10	L		l
+r06	11	q		l
+r06	12	U		l
+r06	13	T	confessionem	l	gloss "confessionem" visible above
+r06	14	V		l
+r06	15	P		l
+r06	16	P		l
+r06	17	T	ontam / vt	l	faint gloss fragments visible, uncertain words
+r06	18	4		l
+r06	19	U		l
+r06	20	q		l
+r06	21	T		l
+r06	22	T		l
+r06	23	q		l
+r06	24	6		l
+r06	25	T		l
+r07	1	[PLAIN:feuria]	de luneburg	l
+r07	2	O		m	embedded symbol amid plain text
+r07	3	[PLAIN:vnif]	mekle/	l	uncertain reading
+r07	4	[PLAIN:de]		m
+r07	5	II		l	embedded symbol
+r07	6	[PLAIN:et]		m
+r07	7	[PLAIN:confortij]	marchion	l
+r07	8	[PLAIN:mei]		m
+r07	9	[PLAIN:gria]		l	"gratia"?
+r07	10	F		h	clearly dot-separated cipher symbol
+r07	11	[PLAIN:fur]		l
+r07	12	[PLAIN:pharmit]		l	very uncertain
+r08	1	[PLAIN:confoederatio]		l	very uncertain, may be "confortio"/other
+r08	2	[PLAIN:hec]		m
+r08	3	[PLAIN:est]		h
+r08	4	F	deluneborg	m
+r08	5	L		m
+r08	6	cc		m
+r08	7	D		l
+r08	8	6		m
+r08	9	cc		m
+r08	10	II		m
+r08	11	V		h
+r08	12	q		m
+r08	13	V		h
+r08	14	Y		l
+r08	15	O		m
+r08	16	K		l	dark blob, tentative match to legend K
+r08	17	Po		l
+r09	1	[PLAIN:faciunt]	fedes	m	"facient"?
+r09	2	[PLAIN:totif]		m	"totis"
+r09	3	[PLAIN:viribus]		l	written "vrizib9" with raised c, "viribus"
+r09	4	[PLAIN:vt]		m	"ut"
+r09	5	3	concludatur	l
+r09	6	q	concludatur	l
+r09	7	T		l
+r09	8	cc		l
+r09	9	II		l
+r09	10	D		l	figure-8-like shape, tentative
+r09	11	L		l
+r09	12	Y	pacfuti	l
+r09	13	U		l
+r09	14	L		l
+r09	15	q		l
+r09	16	P		l
+r09	17	T		l
+r09	18	6		l	seen more clearly as bleed at top of r10_s2
+r09	19	Po		l	seen more clearly as bleed at top of r10_s2
+r10	1	cc		l
+r10	2	T		l
+r10	3	O		l
+r10	4	g		l	small dumbbell shape
+r10	5	[PLAIN:omg]		l	very uncertain, "omnino"?
+r10	6	[PLAIN:tot]		m
+r10	7	[PLAIN:fint]		l	"fiunt"?
+r10	8	[PLAIN:pofitile]		m	"possibile"
+r10	9	[PLAIN:eft]		h	"est"
+r10	10	P		l
+r10	11	[PLAIN:mrif]		l	very uncertain
+r10	12	[PLAIN:omnibuf]		m	"omnibus"
+r11	1	[PLAIN:vtilionf]	chr[isti]ano	l	very uncertain
+r11	2	[PLAIN:pzo]		l	"pro"?
+r11	3	K		h	distinctive star+box shape, clear match to legend K
+r11	4	[PLAIN:videtur]	et	m
+r11	5	[PLAIN:vt]		m
+r11	6	[PLAIN:pzimo]	dni	l	"primo"?
+r11	7	[PLAIN:metiuf]		l	very uncertain
+r11	8	[PLAIN:et]		m
+r11	9	K		h	second K, same distinctive shape
+r11	10	[PLAIN:milla]		l	"nulla"?
+r11	11	[PLAIN:fiat]		m
+r12	1	[PLAIN:inter]	principes	m
+r12	2	q		m
+r12	3	4		l
+r12	4	II		m
+r12	5	q		m
+r12	6	P		m
+r12	7	?Z	attrahi	l	reversed-Z-like loop, no clean legend match; closest candidate 3
+r12	8	cc		m
+r12	9	V		h
+r12	10	V		h
+r12	11	U	germanie	l
+r12	12	Po	germanie	l
+r12	13	q		m
+r12	14	P		m
+r12	15	+		l
+r12	16	q		m
+r12	17	P		m
+r12	18	T		l
+r12	19	6		m
+r13	1	V	fedus	m
+r13	2	U		l
+r13	3	L		m
+r13	4	V		h
+r13	5	4		l
+r13	6	q		m
+r13	7	II		m
+r13	8	6		m
+r13	9	Po		l
+r13	10	Po	possunt	l
+r13	11	P		m
+r13	12	6		m
+r13	13	II		m
+r13	14	V		h
+r13	15	4	far	l
+r13	16	q		m
+r13	17	P		m
+r13	18	P		l
+r14	1	3		l
+r14	2	q		m
+r14	3	T		l
+r14	4	cc		m
+r14	5	II		m
+r14	6	K	vmch(?)	l	dark blob, tentative
+r14	7	q		m
+r14	8	Po		l
+r14	9	cc	arbitrio	m
+r14	10	U		l
+r14	11	II		m
+r14	12	6		m
+r14	13	Po		l
+r14	14	D	?aponer	l	small loop/dot shape at line end
+r15	1	Y		l
+r15	2	U		l
+r15	3	q	fedus	m
+r15	4	P		m
+r15	5	cc		m
+r15	6	P		m
+r15	7	cc	nullus(?)	l
+r15	8	Po		l
+r15	9	U		l
+r15	10	cc		m
+r15	11	q	arbitrio	m
+r15	12	q		l
+r15	13	cc		m
+r15	14	I	aliuis(?)	l
+r15	15	6		m
+r15	16	q	?aponeh	l
+r15	17	V		h
+r15	18	cc		m
+r15	19	P	pro isthoc(?)	l
+r16	1	Po		l
+r16	2	cc	fedus	m
+r16	3	T		l
+r16	4	3		l
+r16	5	q		m
+r16	6	T		l
+r16	7	cc		m
+r16	8	II		m
+r16	9	6		m
+r16	10	L	correpher(?)	l
+r16	11	q		m
+r16	12	4		l
+r16	13	V		h
+r16	14	cc	pro isthoc	m
+r16	15	II		m
+r16	16	V		h
+r16	17	U		l
+r16	18	V		h
+r16	19	P		m
+r17	1	T	maiore	l
+r17	2	6		m
+r17	3	V		h
+r17	4	Y	parte	l
+r17	5	P		m
+r17	6	q		m
+r17	7	4		l
+r17	8	6		m
+r17	9	P		m
+r17	10	Po	confederat[i]	l
+r17	11	q		m
+r17	12	L		m
+r17	13	Y		l
+r17	14	U	confensense(?)	l
+r17	15	3		l
+r17	16	P		m
+r17	17	q	confederatorum	m
+r17	18	P		m
+r17	19	cc		m
+r17	20	P		m
+r17	21	U	msi(?)	l
+r17	22	V		h
+r17	23	II		m
+r17	24	V		h
+r18	1	P	pars	m
+r18	2	q		m
+r18	3	U		l
+r18	4	P		m
+r18	5	V		h
+r18	6	q	ad mitteret	m
+r18	7	U		l
+r18	8	Po		l
+r18	9	q		m
+r18	10	q	quom	m
+r18	11	P		m
+r18	12	?Z		l	same unclear reversed-Z shape as r12
+r18	13	cc		m
+r18	14	q		m
+r18	15	D	maior	l
+r18	16	L		m
+r18	17	U		l
+r19	1	P		m
+r19	2	4		l
+r19	3	6		m
+r19	4	P		m
+r19	5	T		l
+r19	6	6		m
+r19	7	T		l
+r19	8	D	rungt(?)	l
+r19	9	V		h
+r19	10	P		m
+r19	11	P	maior	m
+r19	12	q		m
+r19	13	P		m
+r19	14	q	consentiret	m
+r19	15	D		l
+r19	16	L		m
+r19	17	q		m
+r19	18	V		h
+r19	19	Y		l
+r19	20	U		l
+r20	1	V	21	m
+r20	2	P	minor	m
+r20	3	q		m
+r20	4	P		m
+r20	5	P	consentiret	m
+r20	6	D		l
+r20	7	V		h
+r20	8	II	polr(?)	l
+r20	9	Y		l
+r20	10	P		m
+r20	11	4		l
+r20	12	6		m
+r20	13	q	pars	m
+r20	14	P		m
+r20	15	[PLAIN:aut]		m
+r20	16	[PLAIN:dns]	admittere	l	monogram-like abbreviation for "dominus"
+r20	17	P		m
+r20	18	L		m
+r20	19	Y		l
+r20	20	U		l
+r20	21	P		m
+r20	22	q		m
+r20	23	U		l
+r20	24	P		m
+r21	1	q	fenereh(?)	m
+r21	2	P		m
+r21	3	L		m
+r21	4	Y	tractari	l
+r21	5	U		l
+r21	6	P		m
+r21	7	q		m
+r21	8	U		l
+r21	9	P		m
+r21	10	V		h
+r21	11	P		m
+r21	12	q	tenerent[ur]	m
+r21	13	P		m
+r21	14	U		l
+r21	15	P		m
+r21	16	q		m
+r21	17	U		l
+r21	18	q		m
+r21	19	P		m
+r21	20	cc		m
+r21	21	P		m
+r22	1	[PLAIN:parlaring]		l	very uncertain reading
+r22	2	Po		l
+r22	3	P		m
+r22	4	6	fedus	m
+r22	5	L		m
+r22	6	Po		l
+r22	7	6		m
+r22	8	P		m
+r22	9	V		h
+r22	10	L		m
+r22	11	cc	qui	m
+r22	12	V		h
+r22	13	L		m
+r22	14	cc		m
+r22	15	D		l
+r22	16	P	non poterat	m
+r22	17	V		h
+r22	18	II		m
+r22	19	cc		m
+r22	20	V		h
+r22	21	U		l
+r22	22	Y		l
+r22	23	U		l
+r23	1	[PLAIN:habant]		m	"habeant"
+r23	2	[PLAIN:speciale]	fedus	m
+r23	3	3		l
+r23	4	q		m
+r23	5	T		l
+r23	6	cc		m
+r23	7	II	speciale	m
+r23	8	6		m
+r23	9	cc		m
+r23	10	Po		l
+r23	11	cc	diminutionem(?)	m
+r23	12	Po		l
+r23	13	[PLAIN:singulare]		m
+r23	14	6		m
+r23	15	T	fed.	l
+r23	16	V		h
+r23	17	L		m
+r23	18	V		h
+r23	19	L		m
+r23	20	V		h
+r23	21	6		m
+r23	22	T		l
+r24	1	D	fed[us]	l
+r24	2	K		m	star+box shape
+r24	3	cc		m
+r24	4	P		m
+r24	5	II		m
+r24	6	4		l
+r24	7	q	fiat	m
+r24	8	L		m
+r24	9	V		h
+r24	10	6		m
+r24	11	q		m
+r24	12	q		m
+r24	13	3		l
+r24	14	q		m
+r24	15	3		l
+r24	16	q		m
+r24	17	T		l
+r24	18	cc		m
+r24	19	II		m
+r24	20	3		l
+r24	21	V		h
+r24	22	6		m
+r24	23	P		m
+r25	1	[PLAIN:attandem]	pars	l	very uncertain, "at tandem"?
+r25	2	[PLAIN:vbi]		m
+r25	3	P	securam	m
+r25	4	q		m
+r25	5	L		m
+r25	6	cc		m
+r25	7	P		m
+r25	8	cc		m
+r25	9	D		l
+r25	10	P		m
+r25	11	V		h
+r25	12	P	longe	m
+r25	13	D		l
+r25	14	q		m
+r25	15	D		l
+r25	16	q	maior(?)	m
+r25	17	Y		l
+r25	18	U		l
+r25	19	4		l
+r26	1	P	hor[um]	m
+r26	2	4		l
+r26	3	6		m
+r26	4	P	fedus	m
+r26	5	P		m
+r26	6	[PLAIN:czit]		l	very uncertain
+r26	7	[PLAIN:et]		m
+r26	8	[PLAIN:confecit]	pro	l
+r26	9	4		l
+r26	10	P	petat(?)	m
+r26	11	Y		l
+r26	12	K		m	star+box shape
+r26	13	D		l
+r26	14	[PLAIN:tuunt]		l	very uncertain
+r26	15	[PLAIN:optimum]		l
+r27	1	K		m	star+box shape
+r27	2	P		m
+r27	3	Y		l
+r27	4	L	chr[isti]anos(?)	m
+r27	5	3		l
+r27	6	q		m
+r27	7	T		l
+r27	8	cc	velle	m
+r27	9	P		m
+r27	10	4		l
+r27	11	q	fore	m
+r27	12	P		m
+r27	13	6		m
+r27	14	P		m
+r27	15	6		m
+r27	16	P		m
+r27	17	q	esset ut	m
+r27	18	cc		m
+r27	19	q		m
+r27	20	q		m
+r27	21	q		m
+r27	22	V		h
+r27	23	U		l
+r27	24	V		h
+r27	25	P		m
+r27	26	O		m
+r28	1	[PLAIN:hoc]		m
+r28	2	[PLAIN:modo]		m
+r28	3	[PLAIN:criu]		l	very uncertain
+r28	4	[PLAIN:fi]		m	"si"
+r28	5	[PLAIN:aliqui]		m
+r28	6	[PLAIN:noluiffent]	esse	m	"noluissent"
+r28	7	q		m
+r28	8	P		m
+r28	9	P	federe	m
+r28	10	Po		l
+r28	11	P		m
+r28	12	cc		m
+r28	13	q		m
+r28	14	V		h
+r28	15	U		l
+r28	16	3		l
+r28	17	q		m
+r28	18	T		l
+r28	19	q		m
+r28	20	P		m
+r28	21	q		m
+r29	1	L	esse	m
+r29	2	cc		m
+r29	3	?	confederatores	l	ink blot, illegible
+r29	4	K		m	star+box shape
+r29	5	[PLAIN:hoc]		m
+r29	6	[PLAIN:modo]		m
+r29	7	6		m
+r29	8	P		m
+r29	9	Po	erunt(?)	l
+r29	10	P		m
+r29	11	V		h
+r29	12	P		m
+r29	13	P	federe	m
+r29	14	V		h
+r29	15	L		m
+r29	16	Po		l
+r29	17	V		h
+r29	18	q		m
+r29	19	P		m
+r29	20	cc		m
+r29	21	U		l
+r29	22	Po		l
+r29	23	q		m
+r29	24	L		m
+r29	25	P		m
+r30	1	q	rhy?mi	l
+r30	2	L		m
+r30	3	Y		l
+r30	4	U		l
+r30	5	3		l
+r30	6	q		m
+r30	7	T		l
+r30	8	q		m
+r30	9	P	erunt	m
+r30	10	6		m
+r30	11	P		m
+r30	12	Y		l
+r30	13	P		m
+r30	14	q		m
+r30	15	P		m
+r30	16	q		m
+r30	17	P		m
+r30	18	K		m	star+box shape
+r30	19	[PLAIN:vef]		l	very uncertain
+r30	20	[PLAIN:prudenti]		m
+r30	21	[PLAIN:pomra]		l	very uncertain
+v01	1	[PLAIN:nof]	ligam[us]	m	"nos"
+v01	2	[PLAIN:omnino]		m
+v01	3	[PLAIN:speramuf]	et	m
+v01	4	[PLAIN:q~]	confoederationem	m	"quod" abbreviated
+v01	5	[PLAIN:fizmit9]		l	very uncertain, possibly "firmiter"
+v01	6	[PLAIN:vt]	maiorem	m
+v01	7	[PLAIN:q~]		m	"quod"
+v01	8	[PLAIN:vt]		m
+v01	9	[PLAIN:cito]		m
+v01	10	[PLAIN:faciamuf]	infauorem(?)	m
+v01	11	D		l
+v01	12	6		m
+v01	13	V		h
+v01	14	Y		l
+v01	15	P		m
+v01	16	q		m
+v01	17	D		l
+v02	1	q	nobis(?)	m
+v02	2	V		h
+v02	3	+		l
+v02	4	6		m
+v02	5	D		l
+v02	6	g	tota	l
+v02	7	q		m
+v02	8	P		m
+v02	9	L		m
+v02	10	Y		l
+v02	11	U		l
+v02	12	3		l
+v02	13	q		m
+v02	14	T		l
+v02	15	q		m
+v02	16	P	germanie	m
+v02	17	P		m
+v02	18	6		m
+v02	19	L		m
+v02	20	V		h
+v02	21	Y		l
+v02	22	U		l
+v02	23	q		m
+v02	24	D		l
+v02	25	V		h
+v02	26	U		l
+v02	27	3		l
+v02	28	6		m
+v02	29	cc		m
+v02	30	Y		l
+v02	31	P		m
+v03	1	q		m
+v03	2	D		l
+v03	3	K	marchio luneburg	m	star+box shape
+v03	4	[PLAIN:quod]		m
+v03	5	[PLAIN:fit]		m
+v03	6	V		h
+v03	7	U		l
+v03	8	Po		l
+v03	9	Y		l
+v03	10	Po		l
+v03	11	6		m
+v03	12	+		l
+v03	13	q	germanie	m
+v03	14	P		m
+v03	15	D		l
+v03	16	6		m
+v03	17	U		l
+v03	18	V		h
+v03	19	6		m
+v03	20	g		l
+v03	21	O		m
+v03	22	[PLAIN:sed]	infauorem	m
+v03	23	[PLAIN:oportet]		m
+v04	1	[PLAIN:omnino]		m
+v04	2	[PLAIN:vt]		m
+v04	3	F		m
+v04	4	O		m
+v04	5	[PLAIN:omnino]		m
+v04	6	[PLAIN:confiliep]	pensionem	l	very uncertain
+v04	7	[PLAIN:vt]		m
+v04	8	[PLAIN:aliquof]		m
+v04	9	[PLAIN:criu]		l
+v04	10	[PLAIN:nobif]		m
+v04	11	[PLAIN:nereffe]		m	"necesse"
+v04	12	[PLAIN:et]		m
+v04	13	[PLAIN:confilio]		l	"consilio"
+v05	1	[PLAIN:bidet]		l	"videtur"?
+v05	2	[PLAIN:vt]		m
+v05	3	[PLAIN:hijf]		m	"hiis"
+v05	4	[PLAIN:qui]		m
+v05	5	[PLAIN:non]		m
+v05	6	[PLAIN:habent]	promittatur	m
+v05	7	6		m
+v05	8	K		m	star+box shape
+v05	9	4	ipsis	l
+v05	10	q		m
+v05	11	U		l
+v05	12	L		m
+v05	13	V		h
+v05	14	Y	marchioni	l
+v05	15	U		l
+v05	16	q		m
+v05	17	D		l
+v05	18	g		l
+v05	19	V		h
+v05	20	4		l
+v05	21	P		m
+v06	1	V		h
+v06	2	P		m
+v06	3	4		l
+v06	4	P		m
+v06	5	Y	gallum	l
+v06	6	D		l
+v06	7	V		h
+v06	8	P		m
+v06	9	P		m
+v06	10	cc	rhy?s	m
+v06	11	P		m
+v06	12	P		m
+v06	13	II		m
+v06	14	g		l
+v06	15	3		l
+v06	16	[PLAIN:et]		m
+v06	17	[PLAIN:videtur]		m
+v06	18	F		m
+v06	19	[PLAIN:confultum]		l	"consultum"
+v06	20	[PLAIN:vt]		m
+v07	1	[PLAIN:conforo]		l	very uncertain
+v07	2	[PLAIN:nobif]		m
+v07	3	+		l
+v07	4	6		m
+v07	5	g		l
+v07	6	g		l
+v07	7	cc		m
+v07	8	D	rhy?ng	l
+v07	9	3		l
+v07	10	K		m	star+box shape
+v07	11	[PLAIN:non]		m
+v07	12	[PLAIN:mittat]		m
+v07	13	[PLAIN:principe]		l
+v07	14	[PLAIN:pompofe]		l	very uncertain
+v07	15	[PLAIN:et]		l
+v07	16	[PLAIN:no]		l	cut off at crop edge
+v08	1	[PLAIN:hif]		m
+v08	2	[PLAIN:?]		l	struck; illegible struck-through word, principibus?
+v08	3	[PLAIN:nobif]	principibus	m
+v08	4	[PLAIN:auctoritate]		m
+v08	5	[PLAIN:det]		m
+v08	6	[PLAIN:privatif]	inter	l	very uncertain, "privatis"?
+v08	7	4	nos(?)	l
+v08	8	P		m
+v08	9	V		h
+v08	10	U		l
+v08	11	L		m
+v08	12	V		h
+v08	13	4	fedus	l
+v08	14	V		h
+v08	15	7		l
+v08	16	cc		m
+v09	1	P	fatton(?)	l
+v09	2	D		l
+v09	3	D		l
+v09	4	[PLAIN:pmittendi]		m
+v09	5	[PLAIN:donec]		m
+v09	6	[PLAIN:quod]	fit	m
+v09	7	3		l
+v09	8	q		m
+v09	9	T	inter	l
+v09	10	cc		m
+v09	11	P	pos	m
+v09	12	D		l
+v09	13	V		h
+v09	14	U		l
+v09	15	P	sfemus morekband(?)	m
+v09	16	q		m
+v09	17	P		m
+v09	18	q		m
+v09	19	P		m
+v10	1	3		l
+v10	2	D		l
+v10	3	L		m
+v10	4	P	chr?a	m
+v10	5	cc		m
+v10	6	D		l
+v10	7	P		m
+v10	8	V		h
+v10	9	P		m
+v10	10	[PLAIN:ar]	rhemus	m
+v10	11	[PLAIN:tempuf]	morechhandi(?)	m
+v10	12	[PLAIN:erit]		l	very uncertain
+v10	13	[PLAIN:vt]		m
+v10	14	K		m	star+box shape
+v10	15	V		h
+v10	16	U		l
+v10	17	+		l
+v10	18	P		m
+v10	19	q		m
+v10	20	T		l
+v10	21	V		h
+v10	22	6		m
+v11	1	P		m
+v11	2	cc		m
+v11	3	P		m
+v11	4	[PLAIN:deinde]		m
+v11	5	K		m	star+box shape
+v11	6	[PLAIN:poterit]		m
+v11	7	[PLAIN:mittere]		m
+v11	8	[PLAIN:ad]		m
+v11	9	[PLAIN:pluref]		l	very uncertain
+v11	10	[PLAIN:cum]		l
+v11	11	[PLAIN:nba]	na	l	very uncertain, gloss "na" repeats plain text
+v11	12	[PLAIN:fi]		m
+v11	13	[PLAIN:parf]		m
+v11	14	[PLAIN:aduerfa]		m
+#
+# Pass B transcription, dupuy468-anhalt, 23 September 2026 (Sonnet worker, independent pass B of two)
+# Counts: 782 data rows total; 642 cipher-symbol tokens (legend code or ?-prefixed); 140 [PLAIN:...] tokens; 163 rows carry a non-empty gloss field.
+# Confidence breakdown (rough, by eye over the token column): a large minority conf=h, roughly a third conf=m, remainder conf=l -- this letter is written in a small, rapid, heavily abbreviated hand and many symbol/plain-word calls are genuinely uncertain from a single pass; see per-row notes.
+# Legend additions (new codes used beyond the 19 in legend.jpg, all low confidence, all flagged in the note column):
+#   ?H  - r02 pos9: two vertical strokes joined by a crossbar, resembling a Latin "H"; no clean match in the legend; closest candidates are U (box) or II (twin-bar box) drawn compressed.
+#   ?Z  - r12 pos7, r18 pos12: a reversed-Z / open-loop stroke; closest legend candidate is 3, but the loop direction looks wrong for that.
+#   ?   - r03 pos24 (unmatched hook/flourish at line end), r04 pos6 (unclear glyph, possibly D), r29 pos3 (ink blot obscures the symbol entirely, illegible).
+# Recurring observation: legend codes P, q, V, cc, T, D, 6, II, L, U, Y, 4, O, F recur constantly through the cipher runs (this looks like a fairly small effective alphabet doing a lot of work, consistent with a simple substitution or nomenclator); the distinctive K (star+small-box) shape recurs at least 9 times across the leaf, always isolated by dots, and is one of the higher-confidence symbol calls in this pass because its shape is unlike anything else on the page.
+# Crops that were hard to read (whole line low-confidence, flagged individually in the note column but worth calling out together):
+#   r06 -- both crops very compressed/faint, the least confident recto line in this pass.
+#   r09-r10, r14-r15, r17-r19, r25-r26 -- dense, fast cursive-style cipher symbols packed tightly together with little pen lift between them; symbol boundaries and P/Po/T distinctions in particular are uncertain.
+#   r02, r04, r05, r07, r08, r10, r22, r26, r28 -- short plain-Latin runs embedded between cipher runs (names/places apparently left in clear, or short connective phrases) where the cursive abbreviations were guessed at conf=l; several of these ("ambof", "tractam", "criu", "vtilionf", "pharmit") are marked as very uncertain and should not be trusted without a second look.
+#   Faint gray interlinear gloss words were legible often enough to place per-line (oppidum, verbes/et/ibi/erant, limeburg/meklebirgen, Joachim, confederatorum/confederat[i]/confensense, fedus (recurring many times), speciale/singulare, securam/longe, optimum/fore/velle, marchio luneburg, germanie, principes, pensionem, gallum, principibus, marchioni) but exact left-right alignment to individual symbol tokens is approximate, not measured pixel-for-pixel; treat the gloss column as "this word was written above roughly this stretch of the line", not a precise per-symbol mapping.
+#   One struck-through word was seen at v08 pos2 (note "struck"); its content could not be read under the strikethrough.
+
