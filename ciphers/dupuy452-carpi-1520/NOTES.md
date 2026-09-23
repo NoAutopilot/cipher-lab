@@ -126,6 +126,115 @@ numeral tokens, figures-type cipher, no key or decipherment on the leaf). A seco
 exists; nothing here is claimed as new, unpublished or unread (rule 10) -- this is a search result, not a
 novelty verdict, and no verifier session has run.
 
+## Transcription (23 September 2026)
+
+Worker: transcription, no subagent tool available in this session's tool set (checked; the
+fallback of two independent readings by the same worker was used instead of two Sonnet
+subagents, and only partly executed -- see below). Cap ~$15, good-citizen rule followed
+(request counts at the end of this section).
+
+**Method.** Read `date -u` first (23 Sept 2026, 20:35 UTC at start). Full-resolution IIIF fetches
+of the canvases the 20 Sept check-solved sweep had only viewed as 900px thumbnails
+(`images/img/`), native-resolution line-block crops under 2400px wide (`images/crops/`), single
+careful reading (not two independent passes reconciled -- see below), written up in
+`ciphertext.txt` (item 20) and `ciphertext_f28.txt` (item 28).
+
+**Major correction to the 20 Sept check-solved characterisation of item 20 (f.20, Carpi to
+Madame).** That sweep, working from a 900x672 thumbnail, described "a dense run of
+arithmetic-numeral cipher groups" confined to "the final third" of one leaf, "roughly 70-90"
+tokens. Full-resolution imaging shows instead:
+- The cipher is an **invented symbol/glyph alphabet** (letter-like shapes, not arabic-numeral
+  groups), consistent with the 1520s French "chiffre a figures" family Tomokiyo documents for
+  this circle.
+- **The passage does not end on the recto.** It continues onto the leaf's own **verso** (per the
+  brief's "check the verso" instruction) for ~22 more lines, then onto the recto of the following
+  leaf -- foliated **"21"** in the manuscript's own period ink, confirmed by eye -- for ~13 more
+  lines, before the letter closes in plain French, dated "Rome ce xxvij [27] jour d'Octobre l'an
+  mil Vc xxv [1525]", signed "de Carpi". That closing date does not match the finding aid's "22
+  oct. 1525" for this item; since the letter reads as one continuous document (no fresh
+  salutation restarts on the verso or on folio 21), the likelier explanation is a roman-numeral
+  misreading (xxij/xxvij) in the finding aid rather than a second, uncatalogued letter -- flagged,
+  not resolved; this is not a claim of a new item (rule 10).
+- **Total extent is roughly 44 cipher lines across 3 page-sides** (folio 20 recto tail ~9,
+  verso ~22, folio 21 recto ~13), on the order of **500 tokens**, not "70-90" on "one leaf".
+
+Only the originally-scoped portion (folio 20 recto's own cipher tail, 9 lines, 86 tokens by this
+reading) is transcribed in `ciphertext.txt`, as a single pass, every token graded M. The zero
+repeated tokens across 86 is flagged in `reconciliation.md` as evidence this single pass has not
+yet converged on one consistent code per glyph -- a real second, independent pass (ideally with a
+glyph inventory fixed from clean exemplars first, per `reconciliation.md`) is needed before this
+text supports anything beyond "this letter uses a substitution alphabet of roughly this size and
+shape." The verso and folio 21 recto (~35 more lines, not transcribed) have native-resolution
+crops saved for that follow-up.
+
+**Job 2: folio 28 (Raince to Madame) -- located and characterised, same cipher, NOT transcribed.**
+Paged forward from folio 21 past folio 24 (Nicolas Raince to "Monseigneur" [Florimond Robertet],
+IIIF f29-f31 -- itself substantially enciphered in the same alphabet despite carrying no "en
+chiffres" note in the finding aid, a second finding-aid omission, flagged only) to folio 28 (IIIF
+f34, period foliation "28" confirmed), which matches the finding aid's item 28 exactly (opens
+"Madame, pour ce que par les depesches de monseigneur le conte...", closes on f36 "de Rome ce
+xxv[e] jour Doctobre l'an mil Vc xxv" [25 Oct 1525], signed "Nicolas Raince"). **Same cipher as
+item 20**, confirmed by eye: same glyph repertoire, and a specific rare mark (a distinctive "three
+small boxes in a row") recurs on both folio 20 recto and folio 28 recto -- real (if informal)
+evidence of one shared embassy cipher used by both Carpi and Raince in Rome, Oct 1525. Item 28 is
+markedly **larger than item 20**: folio 28 recto ~15 cipher lines, then folio 28 verso + folio 29
+recto (one opening) **entirely in cipher, both full pages**, ~30 lines each, then 6 more lines on
+folio 29 verso before the plain close -- roughly **80 cipher lines, ~900-1000 tokens**, about
+twice item 20's corrected size and 10-12x the original ~70-90-token estimate for the smaller item.
+Not transcribed token-by-token (out of proportion to this worker's cap given item 20 already
+exceeded it); a representative sample crop of the recto's cipher opening is saved
+(`ciphertext_f28.txt`, `images/crops/f34_folio28r_cipherstart_sample.jpg`) confirming the alphabet
+match, plus 1600px-wide reference images of all three canvases (`images/img/`) so a follow-up
+transcription worker does not need to re-locate this item.
+
+**Job 3: the four 1535 "Dechiffrement" leaves (ff.56, 60, 72, 76) -- NOT located this pass.**
+Gallica's `ContentSearch` (search-inside) service returns 0 results for this ark (manuscripts are
+not OCR'd on Gallica, only printed books), so there is no shortcut past canvas-by-canvas paging.
+The canvas-to-folio offset is confirmed non-linear (it grows irregularly as unfoliated
+address/wrapper leaves are inserted -- see `images/manifest.json`'s note), so extrapolating a
+fixed offset from folio 20/21/28's position (+3 to +6) does not reliably predict where folio 56
+falls. Canvases sampled at reduced width without a positive identification: f58, f60, f62, f64,
+f66, f68, f70, f72, f74, f76, f78 (a period marginal annotation resembling "Segrement..." was seen
+near f64 but not confirmed as one of the four "Dechiffrement" items, and not investigated
+further). None of the four leaves was viewed; whether they carry interlinear or parallel plaintext
+is therefore still unknown. Next worker should either page more densely in this range with full-
+resolution fetches (period foliation is only reliably visible at full IIIF resolution, not at the
+900px width used for this scan) or use the reading-room "aller a la page" folio box, which is not
+available to curl/browser_fetch.
+
+**Job 4: key-family leads (grep only, not applied).** `sources/cryptiana/web/francis.htm`
+(Tomokiyo) grepped for "carpi", "duprat", "louise": no exact-match key exists for this volume's
+correspondents (confirming the 20 Sept sweep's finding). The strongest candidate for a solver,
+unchanged in kind but strengthened by this sweep's direct glyph comparison, is **Raince's Cipher**
+(BnF fr.2984, 1526, reconstructed by Tomokiyo from Desenclos 2018; the same system recurs in fr.3040,
+1526, and fr.3091, 1529) -- it is by the SAME secretary who wrote Dupuy 452's item 28, one year
+later, and every 1520s-1530s French cipher this page describes (Raince's, Calvimont-Duprat's
+[BnF Clair.325 f.67, solved by Biermann 2021], Bayonne's [BnF Clair.328/329/330, solved by Lasry
+2022], Gramont's [BnF Clair.330 f.53, solved by Lasry 2022/2023]) is the SAME cipher type observed
+here: an invented monoalphabetic symbol substitution, never a numeral-group cipher (grepped
+"numeral"/"digit"/"figure" in francis.htm: no hits at all -- this whole family is symbol-based).
+No other page in `sources/cryptiana/web/` names Carpi, Duprat-as-recipient-of-Carpi, or Louise de
+Savoie as a cipher's addressee. A solver's first check should be Raince's own fr.2984 key against
+item 28 (same author, one year on) and then, if it fits, against item 20 (same embassy, same
+fortnight) -- not applied here, per the brief.
+
+**What a next solver needs:** (1) a genuine second, independent transcription pass reconciled
+against this session's single pass for folio 20 recto (`reconciliation.md` says how), (2) a first
+transcription pass for folio 20 verso + folio 21 recto (crops saved, ~35 lines) and for all of
+item 28 (crops/reference images saved, ~80 lines) with a glyph inventory fixed in advance from
+clean exemplars rather than assigned ad hoc while reading running text, (3) Raince's fr.2984 key
+tested against item 28 first, (4) the four 1535 leaves still need locating and viewing (job 3),
+(5) the finding aid's "22 oct." date for item 20 vs. this leaf's own "27 oct." dateline needs
+resolving (roman-numeral misreading vs. two letters), (6) item 24 (Raince to Robertet) is also
+substantially enciphered despite no "en chiffres" note in the finding aid -- a third finding-aid
+omission in this volume, worth a one-line check-solved note but not pursued further here.
+
+Requests this pass: gallica.bnf.fr approx. 55 (1 full IIIF manifest, 1 Pagination service call,
+~50 IIIF image fetches at reduced/1600px/full width incl. 3 connection resets each retried,
+1 ContentSearch call), archivesetmanuscrits.bnf.fr 3 (1 plain-curl 403 needing a UA/protocol
+retry, then 2 https fetches at HTTP 200). No WebSearch used. No subagents (none available; see
+reconciliation.md).
+
 ## Next
 
 1. **Pin folio 28 (Raince's cipher letter) precisely** -- canvases 30-35 were sampled without success;
