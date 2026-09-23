@@ -1,0 +1,23 @@
+{
+  "ark": "ark:/12148/btv1b9060087w",
+  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b9060087w",
+  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060087w/manifest.json",
+  "total_canvases": 117,
+  "canvas_convention": "single page per canvas (not a spread); canvas index runs at roughly 1.9-2x the volume's own pencil foliation",
+  "fetched_2026-09-23": [
+    {
+      "canvas": "f101",
+      "file": "f53_item25.jpg",
+      "width": 1400,
+      "folio_seen": "55 (pencil, top-left; BnF finding aid cites this item as Fol. 53 -- small offset between the finding aid's and the leaf's own foliation, not resolved this pass)",
+      "note": "item 25, 'Depeche en chiffre de De Morvillier au roy, De Venize, le XXIIIIe jour de janvier 1546'. Mostly plain French (Ottoman/Venetian naval news), closing signature 'De Morvillier' and the date match the finding aid exactly, then ~6 lines of dense mixed numeral/letter/symbol cipher near the foot of the page. A faint pencil marginal note sits beside the cipher lines -- see f53_margin_note_crop.jpg."
+    },
+    {
+      "canvas": "f101 (region crop)",
+      "file": "f53_margin_note_crop.jpg",
+      "note": "IIIF region crop (0,750,1100,750 of the f101 4327x5978 native image) of the pencil marginal note beside the cipher block. Reads approximately 'ce qu[i]... dechiffre' -- legible as far as 'dechiffre', the word(s) before it not confidently read at this resolution. Not interpreted (could be an archivist's flag that a decipherment exists elsewhere, or could read differently); left for the next worker with a higher-resolution crop."
+    }
+  ],
+  "fetch_method": "curl -A \"cipher-lab research script (contact via repository)\", 1.5s+ apart, IIIF Image API",
+  "requests_this_session": "gallica.bnf.fr: 1 manifest.json + 2 IIIF image fetches (f55, f53 -- both wrong-folio calibration probes, not kept) + 1 IIIF image fetch (f101, kept) + 1 region crop + 1 ContentSearch against a different ark (Charriere vol.1) = 6 total; archivesetmanuscrits.bnf.fr 1 finding-aid page"
+}

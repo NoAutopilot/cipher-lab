@@ -1,0 +1,30 @@
+{
+  "ark": "ark:/12148/btv1b9007662n",
+  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b9007662n",
+  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9007662n/manifest.json",
+  "total_canvases": 285,
+  "canvas_convention": "double-page spread per canvas, close to 1:1 with the volume's own pencil foliation (small offset, ~+11 to +13)",
+  "fetched_2026-09-23": [
+    {
+      "canvas": "f65",
+      "folio_seen": "51-52",
+      "note": "calibration probe only, not saved -- confirmed the spread convention and offset"
+    },
+    {
+      "canvas": "f76",
+      "file": "f63_item66_proces_bimart.jpg",
+      "width": 1400,
+      "folio_seen": "63",
+      "note": "Item 66, 'Proceiz fait a Bimart sur la depesche surprise du president du Faure, et sa confession'. Entirely plain French: explains that Ginaud, secretary to president Du Faure, was captured near Aigues-Mortes carrying a despatch of which part of the memoranda and instructions 'estoyent en chiffre'; through this the crown learned who around Montpellier/Beaucaire was intriguing against the Duke of Rohan's party. States the supporting documents are inserted immediately below."
+    },
+    {
+      "canvas": "f77",
+      "file": "f64_item68-69_plaintext.jpg",
+      "width": 1400,
+      "folio_seen": "64",
+      "note": "Items 68 and 69, headed 'Lettre en Chiffre du president du Faure a Galepin' and 'Memoire du president du Faure trouve a Girault'. Both headings are followed immediately by fully plain, fully readable French text -- no cipher symbols anywhere on the leaf."
+    }
+  ],
+  "fetch_method": "curl -A \"cipher-lab research script (contact via repository)\", 1.5s+ apart, IIIF Image API",
+  "requests_this_session": "gallica.bnf.fr: 1 manifest.json + 3 IIIF image fetches = 4 total; archivesetmanuscrits.bnf.fr 1 finding-aid page"
+}

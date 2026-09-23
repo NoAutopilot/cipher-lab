@@ -1,0 +1,35 @@
+{
+  "ark": "ark:/12148/btv1b9060192j",
+  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b9060192j",
+  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060192j/manifest.json",
+  "total_canvases": 186,
+  "canvas_convention": "double-page spread per canvas, close to 1:1 with the volume's own pencil foliation (small offset, ~+2 to +4)",
+  "fetched_2026-09-23": [
+    {
+      "canvas": "f130",
+      "folio_seen": "126",
+      "note": "calibration probe only, not saved to images/ -- confirmed the spread convention and offset"
+    },
+    {
+      "canvas": "f132",
+      "file": "f127-128_chavigny.jpg",
+      "width": 1400,
+      "folio_seen": "128",
+      "note": "Item 111 (finding aid: 'Fol. 126 et 127, a Mr de Chavigny, des 25 aout et 3 septembre'), the second half of the 3 September letter to Chavigny -- entirely plain French, no cipher."
+    },
+    {
+      "canvas": "f133",
+      "file": "f129_memoyre_plaintext.jpg",
+      "width": 1400,
+      "folio_seen": "129",
+      "note": "Item 112, the target item. Left page carries the heading 'Memoyre que M. de Sabran a envoye en chiffre a S.A. de Savoye, a M. de Bordeaux, et a M. d'Hemery, le 30 septembre 1637 et a La Tour' -- and the body text that follows, filling the rest of this page and the facing page, is entirely plain French. No cipher symbols anywhere on the leaf."
+    },
+    {
+      "canvas": "f134",
+      "folio_seen": "130",
+      "note": "calibration/confirmation probe only, not saved -- still plain French, item 113 (a further Chavigny letter)"
+    }
+  ],
+  "fetch_method": "curl -A \"cipher-lab research script (contact via repository)\", 1.5s+ apart, IIIF Image API",
+  "requests_this_session": "gallica.bnf.fr: 1 manifest.json + 5 IIIF image fetches (2 connection resets, each retried once after a pause) = 6 total; archivesetmanuscrits.bnf.fr 1 finding-aid page (shared fetch covering fr.4133-4138)"
+}
