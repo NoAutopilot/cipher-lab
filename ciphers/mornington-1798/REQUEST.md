@@ -41,3 +41,16 @@ of /4), D623/22 (11 May 1799), D623/24 (7 June 1799), D623/27 (5 March 1800), D6
   own order form requires directly with the requester; log only the date and archive here per rule 9.
 - Cite this repository's earlier print-check work (ciphers/mornington-1798/NOTES.md) if useful context for
   the order, but the request itself only needs shelfmarks and item numbers above.
+
+## Route confirmed 23 September 2026 (orchestrator)
+
+British Library online ordering (beta) is a Microsoft form linked from https://www.bl.uk/services/digitisation
+("Order now"): https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=t0ykIcP5AE-a-r0ejoi82a3WkC3PLq1No_6AEThlXfxUM0FGU0Q0WTQ1NzlXQlE2NUY0UkFIU1lDSy4u
+Page 1 is contact details; page 2 asks for shelfmark, title, page or folio numbers (recto/verso stated, pencil
+foliation), format, additional information, delivery. The old forms.bl.uk order form is gone.
+Price list (2025/26 rates, bl.uk/digitisation PDF): scans are only made from surrogates (microfilm), never from
+original manuscripts; originals are photographed: first image per item 27.70 GBP, each further image 7.25 GBP,
+electronic delivery. Rare items need curatorial permission and a preservation check, which adds time.
+
+**Sizing.** D623/41 (both copies of the key) and D623/4 in full: about 10 images, roughly 95-120 GBP depending on
+whether the studio charges the first-image rate per item. Do not pay until Ingram 1970 is checked (NOTES.md).
