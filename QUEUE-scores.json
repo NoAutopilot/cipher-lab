@@ -5392,5 +5392,400 @@
     ]
    }
   ]
+ },
+ "non_decode": {
+  "_about": "Scout sweep of 23 September 2026 (ASSIGNMENTS row 9): catalogue hits for cipher items NOT scraped by DECODE and not named in either solver project, from the TNA Discovery API, the BL Archives and Manuscripts Catalogue JSON search, and the Gallica SRU API. NRS blocked (egress policy), NLS Cloudflare-challenged, BL Explore/BnF Archives et manuscrits/Archives Portal Europe not reached (JS-rendered search or budget). Raw hits: sources/solver-diffs/2026-09-23-non-decode-hits.tsv (493 survive exclusion) and -excluded.tsv (211 rows). Never promoted, never solved; every row still needs check-solved before the board.",
+  "date": "23 September 2026",
+  "requests_per_host": {
+   "discovery.nationalarchives.gov.uk": 9,
+   "searcharchives.bl.uk": 6,
+   "gallica.bnf.fr": 8,
+   "catalogue.nrs.gov.uk": 2,
+   "manuscripts.nls.uk": 2,
+   "archivesetmanuscrits.bnf.fr": 1,
+   "search.bl.uk/catalogue.bl.uk": 2
+  },
+  "rows": [
+   {
+    "rank": "N1",
+    "target": "Mornington (Wellesley), Governor-General of Bengal, despatches to Henry Dundas, mostly in cipher",
+    "year": "1798-1800",
+    "lang": "en",
+    "kind": "recovery",
+    "reference": "BL Mss Eur D623/4,5,10,11,22,23,24,27,28,30,35,36 (+copies /29,/37)",
+    "holder": "British Library, Asian and African Studies",
+    "key_lead_note": "D623/41 catalogued as 'Two copies of key to Lord Mornington's cipher' in the same collection",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 3,
+     "size": 3,
+     "competition": 3,
+     "weight": 3,
+     "unread": 2
+    },
+    "total": 39
+   },
+   {
+    "rank": "N2",
+    "target": "Domestic intercepts, Jacobite-alias correspondents ('Mr Burton','Madame Lucy','Jery'), cipher+key pairs",
+    "year": "1722",
+    "lang": "en/fr",
+    "kind": "recovery",
+    "reference": "TNA SP 35/36/34-37 (former refs H34-H37)",
+    "holder": "The National Archives, Kew",
+    "key_lead_note": "catalogued 'cipher and cipher-key' / 'cipher-key' in the same pieces as the ciphertext",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 3,
+     "size": 2,
+     "competition": 3,
+     "weight": 3,
+     "unread": 2
+    },
+    "total": 37
+   },
+   {
+    "rank": "N3",
+    "target": "William Courten (Charleton) antiquarian diary partly in cipher, key appended by Sir Frederic Madden",
+    "year": "17th c. (Madden's key 19th c.)",
+    "lang": "en",
+    "kind": "recovery",
+    "reference": "BL Add MS 4956",
+    "holder": "British Library, Western Manuscripts",
+    "key_lead_note": "key bound into the same volume at f.66",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 3,
+     "size": 2,
+     "competition": 3,
+     "weight": 1,
+     "unread": 2
+    },
+    "total": 35
+   },
+   {
+    "rank": "N4",
+    "target": "Comte d'Avaux to Cardinal Antonio Barberini, partly in cipher, partial contemporary decipherment",
+    "year": "25 Nov 1633",
+    "lang": "fr",
+    "kind": "recovery/contribution",
+    "reference": "BnF Baluze 188 (Gallica ark:/12148/btv1b90014586)",
+    "holder": "Bibliothèque nationale de France, Département des Manuscrits",
+    "key_lead_note": "Gallica description: 'Lettre chiffrée avec déchiffrement partiel'",
+    "axes": {
+     "language_fit": 3,
+     "material": 3,
+     "key_lead": 2,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 1
+    },
+    "total": 34
+   },
+   {
+    "rank": "N5",
+    "target": "Henri IV correspondence collection, letter no.139 'chiffré'",
+    "year": "1596-1606 (vol.)",
+    "lang": "fr",
+    "kind": "cryptanalysis",
+    "reference": "BnF Dupuy 63 (Gallica ark:/12148/btv1b53069062j)",
+    "holder": "Bibliothèque nationale de France, Département des Manuscrits",
+    "key_lead_note": "no decipherment noted",
+    "axes": {
+     "language_fit": 3,
+     "material": 3,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 34
+   },
+   {
+    "rank": "N6",
+    "target": "Seven Years War: Bute, Holdernesse, Prince Ferdinand of Brunswick, Clavering, sustained cipher correspondence",
+    "year": "1759-1762",
+    "lang": "en",
+    "kind": "cryptanalysis",
+    "reference": "TNA SP 87/36,38,39,40,42,43,44 (~90 pieces)",
+    "holder": "The National Archives, Kew",
+    "key_lead_note": "no key located; standing nomenclator suspected",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 3,
+     "competition": 3,
+     "weight": 3,
+     "unread": 3
+    },
+    "total": 33
+   },
+   {
+    "rank": "N7",
+    "target": "Sir Henry Clinton, Cornwallis, Haldimand cipher correspondence, American War of Independence",
+    "year": "1779-1782",
+    "lang": "en",
+    "kind": "cryptanalysis",
+    "reference": "TNA PRO 30/55/19,24,32,33(x2),42,53",
+    "holder": "The National Archives, Kew",
+    "key_lead_note": "no key located this sweep; check Clements Library",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 3,
+     "competition": 3,
+     "weight": 3,
+     "unread": 3
+    },
+    "total": 33
+   },
+   {
+    "rank": "N8",
+    "target": "France despatches, sibling folio catalogued 'deciphered' in the same piece-run",
+    "year": "1580s",
+    "lang": "en/fr",
+    "kind": "recovery",
+    "reference": "TNA SP 78/111, SP 78/113 (SP 78/113/57 undeciphered; /123 'deciphered')",
+    "holder": "The National Archives, Kew",
+    "key_lead_note": "sibling in same file explicitly deciphered",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 2,
+     "size": 2,
+     "competition": 3,
+     "weight": 2,
+     "unread": 2
+    },
+    "total": 33
+   },
+   {
+    "rank": "N9",
+    "target": "Recueil of letters to the Dukes of Lorraine: M. de Bréval to Duke Henri II, in cipher",
+    "year": "1597-1623 (vol.)",
+    "lang": "fr",
+    "kind": "cryptanalysis",
+    "reference": "BnF Lorraine 377 (Gallica ark:/12148/btv1b90008143)",
+    "holder": "Bibliothèque nationale de France, Département des Manuscrits",
+    "key_lead_note": "no decipherment noted",
+    "axes": {
+     "language_fit": 3,
+     "material": 3,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 1,
+     "unread": 3
+    },
+    "total": 33
+   },
+   {
+    "rank": "N10",
+    "target": "Provence/Marseille memoranda: cipher letter to Ferdinand I of Tuscany via his ambassador in Spain",
+    "year": "10 May 1597",
+    "lang": "it",
+    "kind": "cryptanalysis",
+    "reference": "BnF Dupuy 155 (Gallica ark:/12148/btv1b10034035f)",
+    "holder": "Bibliothèque nationale de France, Département des Manuscrits",
+    "key_lead_note": "no decipherment noted",
+    "axes": {
+     "language_fit": 3,
+     "material": 3,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 1,
+     "unread": 3
+    },
+    "total": 33
+   },
+   {
+    "rank": "N11",
+    "target": "Chauran to Williamson, Restoration-era paid informant, letters transmitting ciphers",
+    "year": "1662",
+    "lang": "en",
+    "kind": "cryptanalysis",
+    "reference": "TNA SP 84/165/14,23,66,70,75,82,87,102,103,111",
+    "holder": "The National Archives, Kew",
+    "key_lead_note": "no key/decipherment noted",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 2,
+     "competition": 3,
+     "weight": 1,
+     "unread": 3
+    },
+    "total": 29
+   },
+   {
+    "rank": "N12",
+    "target": "Benjamin Ingham (1712-1772), Evangelist, diary kept partly in cipher",
+    "year": "1712-1772",
+    "lang": "en",
+    "kind": "cryptanalysis",
+    "reference": "Manchester University: Methodist Archives and Research Centre (no TNA/BL ref)",
+    "holder": "Manchester University: Methodist Archives and Research Centre",
+    "key_lead_note": "may be period shorthand rather than a true cipher, not established",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 2,
+     "competition": 3,
+     "weight": 1,
+     "unread": 3
+    },
+    "total": 29
+   },
+   {
+    "rank": "N13",
+    "target": "Raby to Hedges and Reichart to Berlepsch, War of the Spanish Succession diplomatic ciphers",
+    "year": "1704",
+    "lang": "en/de",
+    "kind": "cryptanalysis",
+    "reference": "TNA SP 90/2/335,337,348,409,409v",
+    "holder": "The National Archives, Kew",
+    "key_lead_note": "no decipherment noted",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 28
+   },
+   {
+    "rank": "N14",
+    "target": "Newcastle to Carteret, ciphers around the Dettingen campaign",
+    "year": "1743",
+    "lang": "en",
+    "kind": "cryptanalysis",
+    "reference": "TNA SP 87/13/18,76,85",
+    "holder": "The National Archives, Kew",
+    "key_lead_note": "no decipherment noted; earlier/smaller than N6",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 28
+   },
+   {
+    "rank": "N15",
+    "target": "Chesterfield and Cumberland, ciphers on the Anglo-Dutch/Orange succession question",
+    "year": "1747",
+    "lang": "en",
+    "kind": "cryptanalysis",
+    "reference": "TNA SP 87/23/41,51,70",
+    "holder": "The National Archives, Kew",
+    "key_lead_note": "no decipherment noted",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 28
+   },
+   {
+    "rank": "N16",
+    "target": "Louvois (French war minister) correspondence with Rosen and la Hoguette",
+    "year": "1689-1690",
+    "lang": "fr",
+    "kind": "cryptanalysis",
+    "reference": "BL Add MS 21375",
+    "holder": "British Library, Western Manuscripts",
+    "key_lead_note": "no decipherment noted; a separate Gallica Louvois cipher list is already Bourdeau's (excluded)",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 28
+   },
+   {
+    "rank": "N17",
+    "target": "Venetian ambassador's letter, partly in cipher, no name or address, dated Venice",
+    "year": "26 Aug 1634",
+    "lang": "it",
+    "kind": "cryptanalysis",
+    "reference": "TNA PRO 30/25/6",
+    "holder": "The National Archives, Kew",
+    "key_lead_note": "no decipherment noted",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 1,
+     "unread": 3
+    },
+    "total": 27
+   },
+   {
+    "rank": "N18",
+    "target": "Domestic intercept(s), correspondent unnamed, 'partly in [?cipher]'",
+    "year": "c.1714 (former ref series)",
+    "lang": "en",
+    "kind": "cryptanalysis",
+    "reference": "TNA SP 34/24/86,87",
+    "holder": "The National Archives, Kew",
+    "key_lead_note": "cataloguer's own uncertainty flagged; lowest-confidence row",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 1,
+     "unread": 3
+    },
+    "total": 27
+   },
+   {
+    "rank": "N19",
+    "target": "'For writing in cipher': printed cipher instruction sheet with manuscript annotations",
+    "year": "18th century",
+    "lang": "en",
+    "kind": "contribution",
+    "reference": "TNA SP 106/40",
+    "holder": "The National Archives, Kew",
+    "key_lead_note": "generic method sheet, not a matched key; SP 106/10 in the same class is already Bourdeau's",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 1,
+     "size": 0,
+     "competition": 3,
+     "weight": 1,
+     "unread": 1
+    },
+    "total": 22
+   }
+  ]
  }
 }
