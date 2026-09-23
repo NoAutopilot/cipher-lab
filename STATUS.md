@@ -19,8 +19,10 @@ archives. README "What counts as a result" defines the three kinds (recovery, cr
 and every board card carries one.
 
 **Where to look.** `STATUS.md` (this file) is the human board. `status.json` feeds `dashboard.html`, published
-at https://claude.ai/artifact/Mbveo2jWKwmA7RTqBuCkis; rebuild with `python3 tools/build_dashboard.py` and
-republish to that same URL after every worker result. `CLAUDE.md` holds the ten rules, the Pipeline, the Usage
+at https://claude.ai/artifact/Mbveo2jWKwmA7RTqBuCkis (owner's account) and, from the noautopilotytbiz account, at
+https://claude.ai/artifact/HzYszSGfSoWPsYXpxvM5zr (published 23 Sept 2026; each account can only republish its own);
+rebuild with `python3 tools/build_dashboard.py` and republish to your account's URL after every worker result.
+docs/index.html is the same page for GitHub Pages (ASKS row 8). `CLAUDE.md` holds the ten rules, the Pipeline, the Usage
 section (model tiering; Sonnet for search and transcription, the top model for reconciliation, verifier and
 orchestration), the Access playbook and the Improvement loop. `ROOM.md` is the workers' shared channel.
 `LEDGER.md` is one row per worker with cost and outcome. `QUEUE.md` is the ranked queue; `.claude/briefs/`
