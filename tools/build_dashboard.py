@@ -9,6 +9,26 @@ import json
 import os
 
 d = json.load(open("status.json", encoding="utf-8"))
+
+def load_asks():
+    """Open or waiting rows of ASKS.md: row, raised, what, action, who, status."""
+    rows = []
+    if not os.path.exists("ASKS.md"):
+        return rows
+    for line in open("ASKS.md", encoding="utf-8"):
+        if not line.startswith("| ") or line.startswith("| # ") or line.startswith("|---"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split(" | ")]
+        if len(cells) < 7 or not cells[0].isdigit():
+            continue
+        row, raised, _proj, what, action, who, status = cells[:7]
+        st = status.split(":")[0].split("(")[0].strip().lower()
+        if st in ("done", "dropped"):
+            continue
+        rows.append({"row": int(row), "raised": raised, "what": what, "action": action, "who": who, "status": status})
+    return rows
+
+asks = load_asks()
 E = html.escape
 stages = d["stages"]
 N = len(stages)
@@ -60,6 +80,10 @@ n_requests = sum(1 for t in d["targets"] if t["stage"] == 5)
 n_you = sum(1 for t in d["targets"] if t["state"] == "you")
 n_solved = sum(1 for t in d["targets"] if t["state"] == "solved")
 
+card_items = "".join(
+    f'<li data-row="{a["row"]}" id="ask-{a["row"]}"><input type="checkbox" aria-labelledby="ask-what-{a["row"]}"><div><div class="ask-what" id="ask-what-{a["row"]}">{E(a["what"][:220])}</div><div class="ask-action">{E(a["action"][:400])}</div><div class="ask-meta">Row {a["row"]} · raised {E(a["raised"])} · {E(a["who"])} · {E(a["status"][:80])}</div></div></li>'
+    for a in asks
+)
 workers = "".join(
     f'<li class="w-{w["state"]}"><span class="dot"></span><div><div class="w-title">{E(w["title"])}</div><div class="muted">{E(w["job"])}</div></div><span class="w-state">{E(w["state"])}</span></li>'
     for w in d["workers"]
@@ -132,6 +156,12 @@ th, td {{ text-align:left; padding:7px 10px; border-bottom:1px solid var(--line)
 .num {{ font-variant-numeric:tabular-nums; white-space:nowrap; }}
 .key {{ grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:6px 14px; font-size:0.9rem; }} .k-num {{ display:inline-block; width:1.6em; color:var(--muted); font-variant-numeric:tabular-nums; }}
 .how {{ font-size:0.95rem; }}
+.card {{ list-style:none; margin:0; padding:0; display:grid; gap:8px; }}
+.card li {{ display:grid; grid-template-columns:22px 1fr; gap:12px; align-items:start; padding:10px 12px; border:1px solid var(--line); border-radius:6px; background:var(--surface); }}
+.card li.done {{ opacity:0.55; }} .card li.done .ask-what {{ text-decoration:line-through; }}
+.card input[type=checkbox] {{ width:20px; height:20px; margin-top:2px; accent-color:var(--good); cursor:pointer; }}
+.ask-what {{ font-weight:600; }} .ask-action {{ font-size:0.92rem; margin-top:2px; }} .ask-meta {{ font-size:0.8rem; color:var(--muted); margin-top:4px; }}
+.card-note {{ font-size:0.85rem; color:var(--muted); margin:8px 0 0; }}
 @media (prefers-reduced-motion: no-preference) {{ .seg {{ transition:background .2s; }} }}
 </style>
 <div class="wrap">
@@ -145,6 +175,12 @@ th, td {{ text-align:left; padding:7px 10px; border-bottom:1px solid var(--line)
     <div class="tile"><div class="n">{n_requests}</div><div class="l">Archive requests out</div></div>
     <div class="tile"><div class="n">{n_you}</div><div class="l">Waiting on you</div></div>
     <div class="tile"><div class="n">{n_solved}</div><div class="l">Solved</div></div>
+  </section>
+
+  <section class="panel" id="your-card">
+    <h2>Your card</h2>
+    <ul class="card">{card_items}</ul>
+    <p class="card-note">Tick a box when you have done it. Ticks are saved on this page; the orchestrator reads them and sets the row in ASKS.md to done with the date. <span id="card-status"></span></p>
   </section>
 
   <section>
@@ -179,6 +215,39 @@ th, td {{ text-align:left; padding:7px 10px; border-bottom:1px solid var(--line)
     <p class="how muted">Score out of 39: language fit, material online, key lead, size, competition, historical weight. Full list with rationale in <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/QUEUE.md">QUEUE.md</a>.</p>
   </section>
 </div>
+<script>
+(function () {{
+  var list = document.querySelector('.card'); var status = document.getElementById('card-status');
+  if (!list) return;
+  var items = Array.prototype.slice.call(list.querySelectorAll('li'));
+  function paint(row, done, when) {{
+    var li = document.getElementById('ask-' + row); if (!li) return;
+    li.querySelector('input').checked = !!done; li.classList.toggle('done', !!done);
+    var meta = li.querySelector('.ask-meta');
+    if (done && when && meta && meta.textContent.indexOf('ticked') < 0) meta.textContent += ' · ticked ' + when;
+  }}
+  function local(row, v) {{ try {{ if (v === undefined) return JSON.parse(localStorage.getItem('ask-' + row) || 'null'); localStorage.setItem('ask-' + row, JSON.stringify(v)); }} catch (e) {{ return null; }} }}
+  items.forEach(function (li) {{ var r = li.dataset.row; var v = local(r); if (v) paint(r, v.done, v.when); }});
+  var db = null;
+  items.forEach(function (li) {{
+    li.querySelector('input').addEventListener('change', function (ev) {{
+      var r = li.dataset.row; var done = ev.target.checked; var when = new Date().toISOString().slice(0, 10);
+      var v = {{ row: Number(r), done: done, when: done ? when : '' }};
+      paint(r, done, v.when); local(r, v);
+      if (db) db.doc('asks/row-' + r).set(v).catch(function () {{ if (status) status.textContent = 'Saved on this device only.'; }});
+    }});
+  }});
+  if (!window.claude || !window.claude.use) {{ if (status) status.textContent = 'Saved on this device only.'; return; }}
+  window.claude.use('db').then(function (ns) {{
+    if (!ns) {{ if (status) status.textContent = 'Saved on this device only.'; return; }}
+    db = ns;
+    db.collection('asks').onSnapshot(function (snap) {{
+      snap.docs.forEach(function (doc) {{ if (!doc.exists) return; var v = doc.data(); paint(v.row, v.done, v.when); local(v.row, v); }});
+      if (status) status.textContent = 'Saved on this page.';
+    }}, function () {{ if (status) status.textContent = 'Saved on this device only.'; }});
+  }});
+}})();
+</script>
 '''
 open("dashboard.html", "w", encoding="utf-8").write(page)
 os.makedirs("docs", exist_ok=True)
