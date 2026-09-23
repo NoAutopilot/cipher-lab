@@ -56,7 +56,7 @@ r04	21	9	l	H	filius
 r04	22	V	i	H	filius
 r04	23	cc	u	H	filius
 r04	24	P	s	H	filius
-r04	25	PW	=Mekleburg	M	dux
+r04	25	PW	=dux	H	dux
 r04	26	O	=Luneburg	H	de_lune
 r05	8	q	e	H	ego
 r05	9	+	g	H	ego
@@ -80,12 +80,12 @@ r06	8	V	i	H	proposui
 r06	9	F	=marchio	H	marchio
 r06	10	L	c	H	commissionem
 r06	11	Y	o	H	commissionem
-r06	12	U	n	S	commissionem
+r06	12	U	m	H	commissionem
 r06	13	D	m	H	commissionem
 r06	14	V	i	H	commissionem
 r06	15	P	s	H	commissionem
 r06	16	P	s	H	commissionem
-r06	17	D	m	S	commissionem
+r06	17	D	i	H	commissionem
 r06	18	Y	o	H	commissionem
 r06	19	U	n	H	commissionem
 r06	20	q	e	H	commissionem
@@ -203,9 +203,9 @@ r14	17	L	c	H	articulus
 r14	18	cc	u	H	articulus
 r14	19	9	l	H	articulus
 r14	20	cc	u	H	articulus
-r14	21	Po	t	S	articulus
+r14	21	Po	s	H	articulus
 r14	22	V	i	H	imponetur
-r14	23	U	n	S	imponetur
+r14	23	U	m	H	imponetur
 r14	24	4	p	H	imponetur
 r15	1	Y	o	H	imponetur
 r15	2	U	n	H	imponetur
@@ -285,7 +285,7 @@ r17	28	U	n	H	consentiente
 r18	1	P	s	H	consentiente
 r18	2	q	e	H	consentiente
 r18	3	U	n	H	consentiente
-r18	4	P	s	S	consentiente
+r18	4	P	t	H	consentiente
 r18	5	V	i	H	consentiente
 r18	6	q	e	H	consentiente
 r18	7	U	n	H	consentiente
@@ -408,7 +408,7 @@ r23	13	D	m	H	amicitiam
 r23	14	V	i	H	amicitiam
 r23	15	L	c	H	amicitiam
 r23	16	V	i	H	amicitiam
-r23	17	L	c	S	amicitiam
+r23	17	L	t	H	amicitiam
 r23	18	V	i	H	amicitiam
 r23	19	6	a	H	amicitiam
 r23	20	D	m	H	amicitiam
@@ -501,7 +501,7 @@ r28	15	T	d	H	federe
 r28	16	q	e	H	federe
 r28	17	R	r	H	federe
 r28	18	q	e	H	federe
-r29	1	L	c	S	rum
+r29	1	L	r	H	rum
 r29	2	cc	u	H	rum
 r29	3	?BLOT	?	unread	rum
 r29	4	K	=christianissimus	H	chrmo
@@ -563,7 +563,7 @@ v02	14	T	d	H	confederationem
 v02	15	q	e	H	confederationem
 v02	16	R	r	H	confederationem
 v02	17	6	a	H	confederationem
-v02	18	L	c	S	confederationem
+v02	18	L	t	H	confederationem
 v02	19	V	i	H	confederationem
 v02	20	Y	o	H	confederationem
 v02	21	U	n	H	confederationem
@@ -661,7 +661,7 @@ v09	13	U	n	H	inter
 v09	14	Po	t	H	inter
 v09	15	q	e	H	inter
 v09	16	R	r	H	inter
-v09	17	q	e	S	nos
+v09	17	q	n	H	nos
 v09	18	Y	o	H	nos
 v09	19	P	s	H	nos
 v10	1	3	f	H	factum
