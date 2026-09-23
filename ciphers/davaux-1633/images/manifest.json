@@ -1,0 +1,21 @@
+{
+  "source": "Gallica (Bibliotheque nationale de France), IIIF Image API",
+  "ark": "ark:/12148/btv1b90014586",
+  "manifest_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90014586/manifest.json",
+  "fetched": "2026-09-24",
+  "rights": "Bibliotheque nationale de France, digitisation freely viewable on Gallica; image capture here for research verification only, not redistribution of a facsimile edition",
+  "images": [
+    {
+      "file": "btv1b90014586_p10_davaux.jpg",
+      "gallica_image": "f10",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90014586/f10/full/,700/0/native.jpg",
+      "note": "Opening of the letter, plain Italian prose, addressed to a cardinal ('Vra Eminenza'); no cipher symbols."
+    },
+    {
+      "file": "btv1b90014586_p11_davaux_signature.jpg",
+      "gallica_image": "f11",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90014586/f11/full/,700/0/native.jpg",
+      "note": "Closing and signature 'D'AVAUX', dateline 'di Parigi alli 25. Novembre 1633', address note 'al Sig.r Card.le Antonio' (Barberini). Entire two-page letter is plain Italian handwriting, no cipher."
+    }
+  ]
+}
