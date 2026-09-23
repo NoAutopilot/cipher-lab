@@ -1,5 +1,5 @@
 {
- "updated": "24 September 2026, 03:00 UTC",
+ "updated": "24 September 2026, 03:40 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -266,9 +266,32 @@
     "expected": "BL quotes take one to three weeks",
     "unblock": "Quote accepted, images arrive, keys applied"
    }
+  },
+  {
+   "name": "Seven Years War cipher correspondence: Holdernesse, Bute, Prince Ferdinand of Brunswick, Clavering",
+   "year": "1759-1762",
+   "ref": "TNA SP 87/36, 38, 39, 40, 42, 43, 44 (98 cipher-flagged items of 818)",
+   "folder": "ciphers/sp87-brunswick-1759",
+   "stage": 2,
+   "state": "you",
+   "holder": "You",
+   "next": "A campaign, not one target. First order: the three pairs that sit beside a contemporary decipherment in the same box (SP 87/36/9-10, 40/76-77, 40/121-124), which are transcription jobs once copies arrive; then the key they yield is tried on the other 95. Decide whether TNA page copies or a State Papers Online check comes first. ASKS row 14.",
+   "note": "24 Sept 2026: open at stage 2, conditional (Westphalen vols 2-6, Savory and State Papers Online coverage unchecked). English and French; neither solver project names the series.",
+   "kind": "recovery",
+   "wait": {
+    "on": "You: decision on the first TNA copy order (ASKS row 14)",
+    "since": "24 Sept 2026, 03:40 UTC",
+    "expected": "TNA digital copies take about two weeks",
+    "unblock": "Copies arrive; two transcription passes; key from the paired decipherment"
+   }
   }
  ],
  "workers": [
+  {
+   "title": "Check Solved: N4-N7",
+   "job": "N4, N5 found-solved; N6 SP 87 open, a 98-item campaign; N7 partial. ~$3",
+   "state": "done, archived"
+  },
   {
    "title": "Solver: Bowes 1583 fragments",
    "job": "Partial: 93/101 tokens read at S with control; names in clear sentences, cribbed from the 1842 letter-book copies. ~$12",
@@ -297,11 +320,6 @@
   {
    "title": "Solver: Burgess 1912 acrostic families",
    "job": "Negative for 8 families with control; word families weak; untested list in NOTES. ~$15",
-   "state": "done, archived"
-  },
-  {
-   "title": "Scout: catalogues not on DECODE",
-   "job": "704 hits, 493 survivors, 19 scored; keys in the same file for the top rows. ~$4",
    "state": "done, archived"
   }
  ],
@@ -364,6 +382,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sept, 03:40",
+   "what": "N4 and N5 dropped (Tomokiyo keys). SP 87 Seven Years War run verified unsolved: 98 cipher items, three beside contemporary decipherments; on the board as a campaign (ASKS row 14). PRO 30/55 partial. Verifier on Bowes still running."
+  },
   {
    "when": "24 Sept, 03:00",
    "what": "Bowes 1583: the eleven fragments read, 93 of 101 tokens at grade S with a control. The names match Bowes's printed letter-book copies, so the verifier decides the class; a BL order would settle the rest."
