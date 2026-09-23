@@ -1,0 +1,673 @@
+{
+ "files": [
+  "target_anneal.txt"
+ ],
+ "context": "none",
+ "scoring": "gen",
+ "p_null": 0.03,
+ "restarts": 16,
+ "iters": 300000,
+ "T0": 3.0,
+ "T1": 0.05,
+ "caps": {
+  "syl": 0,
+  "word": 0,
+  "null": 2,
+  "homo": 2
+ },
+ "fix": {},
+ "syl": "vc",
+ "shuffle": 1,
+ "ntokens": 653,
+ "nsigns": 23,
+ "scores": [
+  -2613.417998232581,
+  -2625.5419759931283,
+  -2641.1414130687913,
+  -2652.219055874849,
+  -2654.4183644999007,
+  -2658.2909952420887,
+  -2662.8607579317527,
+  -2670.119536007871,
+  -2670.9264409911693,
+  -2676.902570871329,
+  -2678.2463284286832,
+  -2685.618291622055,
+  -2730.0561458888196,
+  -2742.2910171341478,
+  -2762.75712430623,
+  -2772.8032426471354
+ ],
+ "best": {
+  "score": -2613.417998232581,
+  "lm": -2030.2055741397198,
+  "prior": -583.2124240928609,
+  "units": 0.0,
+  "key": {
+   "P": "",
+   "q": "u",
+   "U": "s",
+   "+": "o",
+   "R": "t",
+   "g": "a",
+   "V": "i",
+   "4": "e",
+   "Po": "i",
+   "cc": "i",
+   "L": "d",
+   "Y": "n",
+   "T": "e",
+   "6": "i",
+   "Π": "l",
+   "D": "s",
+   "3": "m",
+   "9": "c",
+   "Z": "p",
+   "R2": "x",
+   "II": "q",
+   "7": "r",
+   "o": "o"
+  },
+  "reading": [
+   [
+    "target_anneal.txt",
+    "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} usuotasiesiidinoeneiiiinuasue {AMBOS} duesiiiid uattuuitt {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} iisieiiliuisissit utiituiuutnusii {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} ndislenim in {FACIANT} {TOTIS} {UIRIBUS} {UT} ininiuiumiacneisi {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eitiuaiiisstitiuesisciuuidisdeuisiniusiniiipuuniues ituuixiiisissiiidiuiisiieuminuniiisutiudiiieiuquiuiietititntdrutddutiustisesiuiuidniuscassimicisiinmitauiiuiiiictsusisumtiuiundo {AUT} {QUONIAM} iiisetpiuiisuiiiismusieiiinusteduiiudiiiiumpsams {DEINDE} {POTEST} {PALATINUS} misedeostdiodioiii {DUM} {HABENT} {SPECIALE} iiiutip {SINGULARE} iiiiiinouu eiumacticcneustdn {AUT} {AMICITIA} {A} {TANDEM} {UBI} tpiosimisi {QUOD} ituriinttismi {ERIT} {ET} {CONFICIET} ci  {TUNC} {OPTIMUM} {ERIT} {UT} sciluinidemituititee {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} oxsiiiiusiiiii {HOC} {MODO} ouiadcsutnuiumissiietiditditiodi {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} uniiniiiisisssicidisssiniiisssleisti {QUOD} {SIT} sepdiuaiiscrssi {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} s iinicmiiuuesesitsiiinicineit {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} uiuiis {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} icusuesiiieu {PROMITTENDI} {DONEC} {QUANDO} tniididstudauiniaein {AC} {TEMPUS} {ERIT} {UT} ueiiciudneu {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+   ]
+  ]
+ },
+ "per_token": -4.0021715133730185,
+ "runs": [
+  {
+   "score": -2613.417998232581,
+   "lm": -2030.2055741397198,
+   "prior": -583.2124240928609,
+   "units": 0.0,
+   "key": {
+    "P": "",
+    "q": "u",
+    "U": "s",
+    "+": "o",
+    "R": "t",
+    "g": "a",
+    "V": "i",
+    "4": "e",
+    "Po": "i",
+    "cc": "i",
+    "L": "d",
+    "Y": "n",
+    "T": "e",
+    "6": "i",
+    "Π": "l",
+    "D": "s",
+    "3": "m",
+    "9": "c",
+    "Z": "p",
+    "R2": "x",
+    "II": "q",
+    "7": "r",
+    "o": "o"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} usuotasiesiidinoeneiiiinuasue {AMBOS} duesiiiid uattuuitt {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} iisieiiliuisissit utiituiuutnusii {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} ndislenim in {FACIANT} {TOTIS} {UIRIBUS} {UT} ininiuiumiacneisi {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eitiuaiiisstitiuesisciuuidisdeuisiniusiniiipuuniues ituuixiiisissiiidiuiisiieuminuniiisutiudiiieiuquiuiietititntdrutddutiustisesiuiuidniuscassimicisiinmitauiiuiiiictsusisumtiuiundo {AUT} {QUONIAM} iiisetpiuiisuiiiismusieiiinusteduiiudiiiiumpsams {DEINDE} {POTEST} {PALATINUS} misedeostdiodioiii {DUM} {HABENT} {SPECIALE} iiiutip {SINGULARE} iiiiiinouu eiumacticcneustdn {AUT} {AMICITIA} {A} {TANDEM} {UBI} tpiosimisi {QUOD} ituriinttismi {ERIT} {ET} {CONFICIET} ci  {TUNC} {OPTIMUM} {ERIT} {UT} sciluinidemituititee {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} oxsiiiiusiiiii {HOC} {MODO} ouiadcsutnuiumissiietiditditiodi {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} uniiniiiisisssicidisssiniiisssleisti {QUOD} {SIT} sepdiuaiiscrssi {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} s iinicmiiuuesesitsiiinicineit {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} uiuiis {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} icusuesiiieu {PROMITTENDI} {DONEC} {QUANDO} tniididstudauiniaein {AC} {TEMPUS} {ERIT} {UT} ueiiciudneu {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2625.5419759931283,
+   "lm": -2019.9481831197627,
+   "prior": -605.5937928733655,
+   "units": 0.0,
+   "key": {
+    "P": "",
+    "q": "a",
+    "U": "",
+    "+": "o",
+    "R": "n",
+    "g": "r",
+    "V": "i",
+    "4": "s",
+    "Po": "e",
+    "cc": "u",
+    "L": "t",
+    "Y": "s",
+    "T": "c",
+    "6": "t",
+    "Π": "p",
+    "D": "s",
+    "3": "m",
+    "9": "u",
+    "Z": "o",
+    "R2": "d",
+    "II": "d",
+    "7": "b",
+    "o": "h"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} aaonriseutesocscettesarac {AMBOS} tasiuiit arnnaaunn {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} eeicetptaustssun aneinataansasie {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} stispcsem is {FACIANT} {TOTIS} {UIRIBUS} {UT} tstsuaeamurussese {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} cinearutissnuneactutaaitutcausesuasesitioaasias inaaedieisusttutuaeeseisamisastutantatiieseadaeaeusnenunsntbanttanuasnessiaeautsiaurssemiuuuismunratiateieunaiamniatasto {AUT} {QUONIAM} uuicnoeatisauitematsiiisasnstaetatiiiiamorm {DEINDE} {POTEST} {PALATINUS} mestsontiotuoiue {DUM} {HABENT} {SPECIALE} itianuo {SINGULARE} ueiuuishaa siamruntuuscants {AUT} {AMICITIA} {A} {TANDEM} {UBI} nouosimust {QUOD} tnabiisnnusmu {ERIT} {ET} {CONFICIET} ue  {TUNC} {OPTIMUM} {ERIT} {UT} uepaisttcmtnainuncs {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} odsueueasiiiti {HOC} {MODO} haurtuansaiamuiisnetuntenehtt {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} asitseetiesstuetisusuiipsint {QUOD} {SIT} scottaretsubse {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT}  tusuumutaacscsentetsuuissen {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} auaue {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} tuasasseitca {PROMITTENDI} {DONEC} {QUANDO} nsittitnatraesursus {AC} {TEMPUS} {ERIT} {UT} acieueatssa {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2641.1414130687913,
+   "lm": -2030.4195607304573,
+   "prior": -610.721852338334,
+   "units": 0.0,
+   "key": {
+    "P": "",
+    "q": "i",
+    "U": "u",
+    "+": "c",
+    "R": "",
+    "g": "p",
+    "V": "i",
+    "4": "t",
+    "Po": "e",
+    "cc": "a",
+    "L": "s",
+    "Y": "s",
+    "T": "o",
+    "6": "t",
+    "Π": "l",
+    "D": "n",
+    "3": "m",
+    "9": "r",
+    "Z": "b",
+    "R2": "g",
+    "II": "d",
+    "7": "c",
+    "o": "x"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} iuicpuitueasescosoettesipuio {AMBOS} situiaiis ipiia {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} eeuioetltiantnna ieiitiisinie {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} ssinlosem is {FACIANT} {TOTIS} {UIRIBUS} {UT} tstsaieimaprstene {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} oieipatinnaeiouturtiiisausoianesainesitibiisiitu iiiegieinaunttasaieeneitimisistatuitisiieteidieieateasscissiaineutniieiassiiurpnnemirauaismapitiiteieruiuiuimiitissc {AUT} {QUONIAM} aaiuobeitiniaiteumiuttiiisintsietisiiiiimbupmu {DEINDE} {POTEST} {PALATINUS} meutstcusicsaciae {DUM} {HABENT} {SPECIALE} itiiab {SINGULARE} aeiaaisxii tiimprtrrsoiuss {AUT} {AMICITIA} {A} {TANDEM} {UBI} bacnimant {QUOD} ticiisanma {ERIT} {ET} {CONFICIET} re  {TUNC} {OPTIMUM} {ERIT} {UT} ureliistsomtiiaot {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} cgnaeaeiniiiti {HOC} {MODO} xiapsruisiiimauuiitesaseexst {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} isitseetiuenuntresinuuasaiiuuultiut {QUOD} {SIT} nobstipetnrcune {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} u tasarmatiiononeutetsariste {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} iaiaeu {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} trinitneitoi {PROMITTENDI} {DONEC} {QUANDO} sitsisuispiesaptas {AC} {TEMPUS} {ERIT} {UT} ioiereissti {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2652.219055874849,
+   "lm": -2079.0515047311783,
+   "prior": -573.1675511436704,
+   "units": 0.0,
+   "key": {
+    "P": "t",
+    "q": "",
+    "U": "u",
+    "+": "d",
+    "R": "u",
+    "g": "e",
+    "V": "i",
+    "4": "o",
+    "Po": "a",
+    "cc": "e",
+    "L": "s",
+    "Y": "n",
+    "T": "o",
+    "6": "i",
+    "Π": "l",
+    "D": "s",
+    "3": "r",
+    "9": "m",
+    "Z": "r",
+    "R2": "p",
+    "II": "x",
+    "7": "b",
+    "o": "c"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} tudueuiouaesandonotaiianeuo {AMBOS} stouiteiis euueuu {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} atautioailiesisseu utaiuiunsia {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} nsislontar in {FACIANT} {TOTIS} {UIRIBUS} {UT} intinteareemnoasa {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} oiuaeteiissueuaouiumiitseusoesanestaniiirniou iuapiaisetusiiesetaasaiorinnieiuuisiiaoaxaaeouaueunusbussuesuauosiaesniumessarimeuetinreueiiiaiamttuuuiuruiinsd {AUT} {QUONIAM} eetiuoturaitiseiiauruioiiinsuosaistiiiirrueru {DEINDE} {POTEST} {PALATINUS} rauosoduttusidsediea {DUM} {HABENT} {SPECIALE} iiiuter {SINGULARE} eaieteinct oiremuimmnouustnt {AUT} {AMICITIA} {A} {TANDEM} {UBI} uredsirtesi {QUOD} iubiinuuestre {ERIT} {ET} {CONFICIET} mta t {TUNC} {OPTIMUM} {ERIT} {UT} umalinisoriuttiuetuoo {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} dpseaeasiiiii {HOC} {MODO} cetesmuunireuuiiouaseusauacsi {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} niinaaiituasusimasistuuenetiiuuuloiuui {QUOD} {SIT} sorsieaitsmbusa {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} u ienemreiososauuiainemintoau {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} eteaut {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} imsosaiio {PROMITTENDI} {DONEC} {QUANDO} uniisisututsetaneeoen {AC} {TEMPUS} {ERIT} {UT} oiamasno {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2654.4183644999007,
+   "lm": -1995.5389333979692,
+   "prior": -658.8794311019315,
+   "units": 0.0,
+   "key": {
+    "P": "",
+    "q": "t",
+    "U": "u",
+    "+": "m",
+    "R": "",
+    "g": "e",
+    "V": "i",
+    "4": "u",
+    "Po": "i",
+    "cc": "a",
+    "L": "e",
+    "Y": "n",
+    "T": "o",
+    "6": "e",
+    "Π": "d",
+    "D": "s",
+    "3": "m",
+    "9": "r",
+    "Z": "l",
+    "R2": "b",
+    "II": "l",
+    "7": "p",
+    "o": "c"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} tutmeuiuuiaeinmonoieeinteuto {AMBOS} etuuiaiie tetta {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} iiuioiedetasessa tiitettntsii {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} neisdonim in {FACIANT} {TOTIS} {UIRIBUS} {UT} enenatitmaernuisi {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} oiiteaeissaitoueurettieaueotasinatsinieilttnituu ittibiiisauseeaeatiisiiutmintneaeuteteiiiuitltitiauianepteetatsiuusititaenituressimirauainmaeteiteiiirutuiutmitetnem {AUT} {QUONIAM} aaiuoliteistaieiumtueuiiintsuetieteiiiitmluemu {DEINDE} {POTEST} {PALATINUS} miuueumueimeamiai {DUM} {HABENT} {SPECIALE} ieital {SINGULARE} aiiaainctt uitmererrnotuen {AUT} {AMICITIA} {A} {TANDEM} {UBI} lamsimase {QUOD} etpiinasma {ERIT} {ET} {CONFICIET} ri  {TUNC} {OPTIMUM} {ERIT} {UT} uridtineeometiaou {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} mbsaiaitsiiiei {HOC} {MODO} ctaeerutntitmauuiiuieaeiicee {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} tnieniieiuisuserieisuuanaiiuuuduiue {QUOD} {SIT} soleeteiesrpusi {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} u eanarmaettososiueienarinui {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} tataiu {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} ertstusiieot {PROMITTENDI} {DONEC} {QUANDO} nieeieuteetinaeuan {AC} {TEMPUS} {ERIT} {UT} toiiritenut {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2658.2909952420887,
+   "lm": -2032.3613560795784,
+   "prior": -625.9296391625105,
+   "units": 0.0,
+   "key": {
+    "P": "u",
+    "q": "a",
+    "U": "",
+    "+": "n",
+    "R": "",
+    "g": "d",
+    "V": "i",
+    "4": "u",
+    "Po": "e",
+    "cc": "i",
+    "L": "s",
+    "Y": "r",
+    "T": "e",
+    "6": "t",
+    "Π": "c",
+    "D": "s",
+    "3": "m",
+    "9": "o",
+    "Z": "c",
+    "R2": "g",
+    "II": "b",
+    "7": "l",
+    "o": "x"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} uaandiueisernereuetteradae {AMBOS} suauiuiiis adaai {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} eueuieetctaistssi aueiataarasie {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} rsisceruem ir {FACIANT} {TOTIS} {UIRIBUS} {UT} trutruiaeamidoruese {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eieaduitissieaetotaaiusiseaiseriasueriticaariau iaaegieisiusttisiaueeseiuamirartitatasiieueabaeaeiueirslassaiaseusiaeaisriaodssemioiiuirmidatiateieouuaiamiatarsn {AUT} {QUONIAM} iiuieuceatuisaiitematuiiirasusaetasuiiiiamcdm {DEINDE} {POTEST} {PALATINUS} meusunuusinsiniie {DUM} {HABENT} {SPECIALE} itiauic {SINGULARE} ieiiuiirxaau uiamdotooreasuru {AUT} {AMICITIA} {A} {TANDEM} {UBI} cinsimuist {QUOD} taliirisumi {ERIT} {ET} {CONFICIET} oue u {TUNC} {OPTIMUM} {ERIT} {UT} oecairtsemtuuaiiueu {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} ngsieieasiiiti {HOC} {MODO} xaiudsoaraiamiiiuesiseexst {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} aritreetiuesstoesisuiriuiicuit {QUOD} {SIT} secstadetusolse {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT}  tiriomitaaesesetetrioiruue {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} aiauieu {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} toasauseitea {PROMITTENDI} {DONEC} {QUANDO} ritsisuausduaeriduir {AC} {TEMPUS} {ERIT} {UT} aeieoeasrua {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2662.8607579317527,
+   "lm": -1936.904486451298,
+   "prior": -725.9562714804547,
+   "units": 0.0,
+   "key": {
+    "P": "",
+    "q": "s",
+    "U": "e",
+    "+": "l",
+    "R": "",
+    "g": "a",
+    "V": "i",
+    "4": "a",
+    "Po": "e",
+    "cc": "u",
+    "L": "u",
+    "Y": "t",
+    "T": "a",
+    "6": "i",
+    "Π": "n",
+    "D": "t",
+    "3": "d",
+    "9": "r",
+    "Z": "m",
+    "R2": "x",
+    "II": "o",
+    "7": "n",
+    "o": "o"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} seslaeiaeeuuetlataeiietsaesa {AMBOS} usaeiuiiu sassu {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} eeeiaeinisutittu seisisststie {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} tuitnated it {FACIANT} {TOTIS} {UIRIBUS} {UT} ititusesduartaete {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} aiesauiittuesaeierissiuueuasutetustetiiimsstisae issexieituetiiuuuseeteiasditstiuiesisuiieaesoseseuaeutunsuususteeatisesuutiserattedirueuitduasiisieiereseiesdisistul {AUT} {QUONIAM} uuieamesiitsuiieedseiaiiitstauseisuiiiisdmeade {DEINDE} {POTEST} {PALATINUS} deeaualeuiluuliue {DUM} {HABENT} {SPECIALE} iiisum {SINGULARE} ueiuuitoss aisdarirrtaseut {AUT} {AMICITIA} {A} {TANDEM} {UBI} multiduti {QUOD} isniitutdu {ERIT} {ET} {CONFICIET} re  {TUNC} {OPTIMUM} {ERIT} {UT} erensitiuadisiuaa {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} lxtueuestiiiii {HOC} {MODO} osuaurestsisdueeiiaeuuueeoui {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} stiiteeiieetetireuiteeutuiieeenaiei {QUOD} {SIT} tamuisaeitrnete {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} e iuturduissatateeieituritae {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} susuee {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} irstsateiias {PROMITTENDI} {DONEC} {QUANDO} tiiuiuesuasetuaaut {AC} {TEMPUS} {ERIT} {UT} saieresutas {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2670.119536007871,
+   "lm": -2151.369799707085,
+   "prior": -518.749736300786,
+   "units": 0.0,
+   "key": {
+    "P": "",
+    "q": "i",
+    "U": "s",
+    "+": "c",
+    "R": "t",
+    "g": "n",
+    "V": "e",
+    "4": "n",
+    "Po": "u",
+    "cc": "u",
+    "L": "a",
+    "Y": "s",
+    "T": "m",
+    "6": "t",
+    "Π": "o",
+    "D": "a",
+    "3": "d",
+    "9": "i",
+    "Z": "r",
+    "R2": "r",
+    "II": "g",
+    "7": "p",
+    "o": "l"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} isictnsensuuauscmsmuttusinsim {AMBOS} ainseueea inttiiutt {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} uusemutotiuataaut ituetitiitsiaeu {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} saeaomsud es {FACIANT} {TOTIS} {UIRIBUS} {UT} tstsuiuidunisnuau {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} metuinuteaatutuimstsitiieausamiuausuiauseteriiseins etiiureueausattuauiuuauenidesistutsittiaeeunuigiuiuuntututstapitaaituiatusnaeiuiuaseisinaaudeiusuesdutniteitueuitsisesidteitisac {AUT} {QUONIAM} uuesmtruiteaiuetusdistneeesiatnaiutiaeeeeidrsnds {DEINDE} {POTEST} {PALATINUS} dusnancstaecauceuu {DUM} {HABENT} {SPECIALE} eteitur {SINGULARE} uueuueslii neidnittiismistas {AUT} {AMICITIA} {A} {TANDEM} {UBI} trucaeduat {QUOD} ttipeesttuadu {ERIT} {ET} {CONFICIET} iu  {TUNC} {OPTIMUM} {ERIT} {UT} siuoiestamdttietutmn {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} crauuuuiaeeete {HOC} {MODO} liunaisitsieidusseentuautautulat {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} isetsuutesuasatiuaeassusueesssonestt {QUOD} {SIT} amratinutaipsau {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} s tusuidutiimamautstutsuiesnut {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} iuiuus {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} tiiainauetmi {PROMITTENDI} {DONEC} {QUANDO} tsetaeastianiusunnus {AC} {TEMPUS} {ERIT} {UT} imeuiuiasni {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2670.9264409911693,
+   "lm": -2069.2830671966076,
+   "prior": -601.6433737945619,
+   "units": 0.0,
+   "key": {
+    "P": "",
+    "q": "a",
+    "U": "",
+    "+": "c",
+    "R": "i",
+    "g": "d",
+    "V": "t",
+    "4": "e",
+    "Po": "s",
+    "cc": "n",
+    "L": "u",
+    "Y": "u",
+    "T": "m",
+    "6": "i",
+    "Π": "r",
+    "D": "e",
+    "3": "e",
+    "9": "o",
+    "Z": "o",
+    "R2": "l",
+    "II": "p",
+    "7": "b",
+    "o": "r"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} aacidtesnusucmumsiisuadam {AMBOS} uaetnttu adiiaanii {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} sstmsirianeieeni aistiaiaaiuaets {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} uutermuse tu {FACIANT} {TOTIS} {UIRIBUS} {UT} iuiunasaendoueses {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} mtisadniteeinisamioiaatunumanesunaesutitoaautae tiaasltsteneiinunassesteaetuauiniaiiauttsesapasasneisiniuiubaiuuainaeiseetasanuutaodeesetonntuenidaitaistsoiataeitaiauuc {AUT} {QUONIAM} nntmiosaiteantiseaietttuaeieuasiauttttaeode {DEINDE} {POTEST} {PALATINUS} eseueciutcunctns {DUM} {HABENT} {SPECIALE} titaino {SINGULARE} nstnnturaa etaedoiiooumaiuu {AUT} {AMICITIA} {A} {TANDEM} {UBI} ioncetenei {QUOD} iiabttuiineen {ERIT} {ET} {CONFICIET} os  {TUNC} {OPTIMUM} {ERIT} {UT} osratuiumeiiatinime {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} clensnsaetttit {HOC} {MODO} randuoaiuataentteisuniusisrui {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} autiussitseeiosutenunttretii {QUOD} {SIT} emouiadsieobes {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT}  inunoeniaamemesiisiunotuesi {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} anans {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} ioaeaeestima {PROMITTENDI} {DONEC} {QUANDO} iutiutuiaudasundenu {AC} {TEMPUS} {ERIT} {UT} amtsosauuea {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2676.902570871329,
+   "lm": -2023.8987405188382,
+   "prior": -653.0038303524907,
+   "units": 0.0,
+   "key": {
+    "P": "",
+    "q": "i",
+    "U": "e",
+    "+": "m",
+    "R": "",
+    "g": "m",
+    "V": "i",
+    "4": "n",
+    "Po": "t",
+    "cc": "u",
+    "L": "o",
+    "Y": "u",
+    "T": "n",
+    "6": "s",
+    "Π": "c",
+    "D": "a",
+    "3": "r",
+    "9": "a",
+    "Z": "d",
+    "R2": "f",
+    "II": "g",
+    "7": "l",
+    "o": "l"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} ieimmeinetuotumnuntsstuimein {AMBOS} oineiuiio imiiu {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} tteintscsiuasaau itiisiiuiait {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} uoiacnutr iu {FACIANT} {TOTIS} {UIRIBUS} {UT} susuuitirumauntat {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} nitimusiaautineseasiiioueoniuatuuiatuisidiiuiine iiitfitiaueassuouittatiniriuiususeisioiitntigitituntuuoliooiuiatenaiitiuouiieamaatriaueuiurumisiistitaeieieiriisiuom {AUT} {QUONIAM} uuiendtisiaiuisteriesniiiuianoitsioiiiiirdemre {DEINDE} {POTEST} {PALATINUS} rtenonmeoimoumiut {DUM} {HABENT} {SPECIALE} isiiud {SINGULARE} utiuuiulii niirmasaaunieou {AUT} {AMICITIA} {A} {TANDEM} {UBI} dumairuas {QUOD} siliiuuaru {ERIT} {ET} {CONFICIET} at  {TUNC} {OPTIMUM} {ERIT} {UT} eatciiusonrsiiunn {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} mfaututiaiiisi {HOC} {MODO} liumoaeiuiiirueeiintouottlos {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} iuisuttsietaeasatoiaeeuuuiieeecnies {QUOD} {SIT} andosimtsaaleat {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} e suuuarusiinanatestsuuaiunt {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} iuiute {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} saiainatisni {PROMITTENDI} {DONEC} {QUANDO} uisoioeiomituumnuu {AC} {TEMPUS} {ERIT} {UT} initatiouni {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2678.2463284286832,
+   "lm": -2069.7282710764557,
+   "prior": -608.5180573522275,
+   "units": 0.0,
+   "key": {
+    "P": "t",
+    "q": "",
+    "U": "u",
+    "+": "d",
+    "R": "i",
+    "g": "m",
+    "V": "i",
+    "4": "t",
+    "Po": "e",
+    "cc": "u",
+    "L": "a",
+    "Y": "s",
+    "T": "o",
+    "6": "n",
+    "Π": "p",
+    "D": "s",
+    "3": "r",
+    "9": "e",
+    "Z": "l",
+    "R2": "o",
+    "II": "g",
+    "7": "c",
+    "o": "b"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} tudimuitueuaesdosotennesmuo {AMBOS} attuituiia miiuii {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} eteutioenpnusnssui iteiinissie {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} saisposter is {FACIANT} {TOTIS} {UIRIBUS} {UT} nstnstuerumestese {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} oiiemtunissiuieounuenitauuaousesustesinilsitu iieoieisutusnnuauteeseitrissnunuinaiietegeeutieiuisiaciaaiusieutsieuasiuemsserieuuutisruimnineieettiuuiuriinsad {AUT} {QUONIAM} uutiuotilentisuineuruntiiissitaenatiiiirlumru {DEINDE} {POTEST} {PALATINUS} reutatduttiaidaudiue {DUM} {HABENT} {SPECIALE} iniitul {SINGULARE} ueiutuisbt tirmeineesouiatst {AUT} {AMICITIA} {A} {TANDEM} {UBI} iludsirtusn {QUOD} niciisiiustru {ERIT} {ET} {CONFICIET} ete t {TUNC} {OPTIMUM} {ERIT} {UT} ueepisnaornittiiutiot {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} dosueuesiiini {HOC} {MODO} butmaeuisiruuuiitieauiaeieban {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} sinseenituesusneeaistuuusutiiuuuptiuin {QUOD} {SIT} solanmentsecuse {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} u nusuerunososeiunensueisttei {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} utueut {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} nestseino {PROMITTENDI} {DONEC} {QUANDO} isinaiautitamtesumtus {AC} {TEMPUS} {ERIT} {UT} oieeeast {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2685.618291622055,
+   "lm": -1907.599261879921,
+   "prior": -778.0190297421339,
+   "units": 0.0,
+   "key": {
+    "P": "",
+    "q": "i",
+    "U": "a",
+    "+": "l",
+    "R": "t",
+    "g": "d",
+    "V": "",
+    "4": "n",
+    "Po": "i",
+    "cc": "e",
+    "L": "o",
+    "Y": "u",
+    "T": "s",
+    "6": "t",
+    "Π": "m",
+    "D": "u",
+    "3": "s",
+    "9": "n",
+    "Z": "r",
+    "R2": "x",
+    "II": "x",
+    "7": "c",
+    "o": "d"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} iailtdanaieoiulsusittiuidais {AMBOS} oinaeo idttiiett {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} iiasitmtieutuuet itititiituiui {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} uoumsuis u {FACIANT} {TOTIS} {UIRIBUS} {UT} tutueiiisednuniui {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} stiidetuutetiisatantiioeaosieuiueiuiutriiuina tiiixiueautteoeiiiuinisuiutetaittioiniixiiiientitetutocitooiteiutianuiiieouianduuisneaeusetdititiintaiaaistitiuol {AUT} {QUONIAM} eeastriituietiasiatnuiutnoiitioisradsa {DEINDE} {POTEST} {PALATINUS} sianonlatoloelei {DUM} {HABENT} {SPECIALE} titer {SINGULARE} eieeudii nisdnttnnusiatou {AUT} {AMICITIA} {A} {TANDEM} {UBI} treluseut {QUOD} tticutteuse {ERIT} {ET} {CONFICIET} ni  {TUNC} {OPTIMUM} {ERIT} {UT} animiutossttitetsn {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} lxueieiiut {HOC} {MODO} diedonaituiiseaantioetoitidot {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} iutuiitaiuautniouaaeueaaamnatt {QUOD} {SIT} usrotidituncaui {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a teuensetiisusuitatituenunit {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} ieieia {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} tniuinuitsi {PROMITTENDI} {DONEC} {QUANDO} tutooatiodiiuedneu {AC} {TEMPUS} {ERIT} {UT} isiniiouni {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2730.0561458888196,
+   "lm": -2004.8302925266325,
+   "prior": -725.2258533621871,
+   "units": 0.0,
+   "key": {
+    "P": "",
+    "q": "i",
+    "U": "t",
+    "+": "o",
+    "R": "u",
+    "g": "d",
+    "V": "i",
+    "4": "s",
+    "Po": "",
+    "cc": "n",
+    "L": "e",
+    "Y": "m",
+    "T": "s",
+    "6": "u",
+    "Π": "r",
+    "D": "e",
+    "3": "a",
+    "9": "a",
+    "Z": "c",
+    "R2": "p",
+    "II": "b",
+    "7": "l",
+    "o": "b"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} itioudtistnemosmsuumidtis {AMBOS} eistiniie iduuiinuu {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} tisuruineueenu iuiuiuiiumiei {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} meiersma im {FACIANT} {TOTIS} {UIRIBUS} {UT} umumniiandamse {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} siuidnuieeunuistutauiiientesinemniemiuiciimiist iuiipiienteuunenieisiaimimunutiuuieiisibiinsuunumueliueeiunieutseiiinemiitadeeaiantnimanudiuiiuiautititiauiiuimeo {AUT} {QUONIAM} nnitsuciuieiniutaitusiiimieuseiuieiiiiiactdat {DEINDE} {POTEST} {PALATINUS} atsesotueioenoin {DUM} {HABENT} {SPECIALE} iuiiunc {SINGULARE} ninnimbii siiadauuaamsituem {AUT} {AMICITIA} {A} {TANDEM} {UBI} ucnoeianeu {QUOD} uuiliimuunean {ERIT} {ET} {CONFICIET} a  {TUNC} {OPTIMUM} {ERIT} {UT} tariimuesauuiiunuss {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} opennieiiiui {HOC} {MODO} bindeatiumiiianttiisuenueubeu {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} imiumuiteteuaeiettnmniitttrsituu {QUOD} {SIT} esceuiduealte {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} t unmnaanuiiseseutuumnaimsu {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} inint {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} uaieiseiusi {PROMITTENDI} {DONEC} {QUANDO} umiueietuiedimndsnm {AC} {TEMPUS} {ERIT} {UT} isiaiemsi {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2742.2910171341478,
+   "lm": -2251.091000676155,
+   "prior": -491.2000164579926,
+   "units": 0.0,
+   "key": {
+    "P": "",
+    "q": "e",
+    "U": "u",
+    "+": "l",
+    "R": "i",
+    "g": "m",
+    "V": "i",
+    "4": "t",
+    "Po": "a",
+    "cc": "u",
+    "L": "o",
+    "Y": "n",
+    "T": "",
+    "6": "s",
+    "Π": "p",
+    "D": "t",
+    "3": "r",
+    "9": "c",
+    "Z": "m",
+    "R2": "b",
+    "II": "d",
+    "7": "p",
+    "o": "d"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} euelimuituauoanlnassanemue {AMBOS} oetuiuiio emiieeuii {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} aauiaspseutsttui eiaiieseeinetia {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} noitpnar in {FACIANT} {TOTIS} {UIRIBUS} {UT} snsnueaerumcntata {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} iiaemusittiuiaeusucseeiouuoeutanuetanisimeenietu iieeabiaituutssuoueaataiterinensusueiseoiiataedeaeautiaiuiniopeiooeiuetiauttieaeuonieucmttaricuuuinruimesiesaiaciueuiueriiesenol {AUT} {QUONIAM} uuiuimaesiteuisaureustiiinetitoeaseoiiiiermumru {DEINDE} {POTEST} {PALATINUS} rautotluioilouliua {DUM} {HABENT} {SPECIALE} isieium {SINGULARE} uaiuuindee tiermcisccneuion {AUT} {AMICITIA} {A} {TANDEM} {UBI} imultiruts {QUOD} siepiiniiutru {ERIT} {ET} {CONFICIET} ca  {TUNC} {OPTIMUM} {ERIT} {UT} ucapeinsorsieiiuit {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} lbtuauaetiiisi {HOC} {MODO} deumocueineieruuuiitiaouioaiados {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} enisnaasiuatutscaoituuunuiiuuuptiuis {QUOD} {SIT} tmosemastcputa {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} u sunucruseettaiusasnucintai {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} eueuau {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} scetettaise {PROMITTENDI} {DONEC} {QUANDO} inisoiouieomeanumtun {AC} {TEMPUS} {ERIT} {UT} eiacaeonte {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2762.75712430623,
+   "lm": -2111.9570889398456,
+   "prior": -650.8000353663842,
+   "units": 0.0,
+   "key": {
+    "P": "u",
+    "q": "",
+    "U": "s",
+    "+": "o",
+    "R": "a",
+    "g": "n",
+    "V": "i",
+    "4": "u",
+    "Po": "s",
+    "cc": "e",
+    "L": "d",
+    "Y": "t",
+    "T": "e",
+    "6": "i",
+    "Π": "m",
+    "D": "t",
+    "3": "p",
+    "9": "a",
+    "Z": "r",
+    "R2": "c",
+    "II": "q",
+    "7": "m",
+    "o": "o"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} usoansiussedstoeteusiistnse {AMBOS} duusiueiid naaeaa {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} sussuiesimietittea ausiaiattis {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} tditmetusp it {FACIANT} {TOTIS} {UIRIBUS} {UT} ituituespenatusts {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eiasnueiittaeasesisaiiudesdeetstetustiiirtius iascisiteustiiedeusstsiupittieisaidiisusqsseuasaeatadmaddaetassutisedtisanttspiaeseuitpeaniiisisauuassispaiitdo {AUT} {QUONIAM} eeuiseuarsiuiteiisspsiuiiittaudsiduiiiiprsnps {DEINDE} {POTEST} {PALATINUS} pssuduosuuadiodeoies {DUM} {HABENT} {SPECIALE} iiiauer {SINGULARE} esieueitou uipnaaiaatesadutu {AUT} {AMICITIA} {A} {TANDEM} {UBI} areotipueti {QUOD} iamiitaaetupe {ERIT} {ET} {CONFICIET} aus u {TUNC} {OPTIMUM} {ERIT} {UT} sasmitidepiauuiaeuaeu {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} octesestiiiii {HOC} {MODO} oeundasatipessiiuasdeadsasodi {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} tiitssiiusststiasditusseteuiisssmuisai {QUOD} {SIT} terdinsiutamsts {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} s ieteapeietetsasisiteaituusa {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} euessu {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} iatutsiie {PROMITTENDI} {DONEC} {QUANDO} atiididsuaudnustenuet {AC} {TEMPUS} {ERIT} {UT} eisasdtu {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -2772.8032426471354,
+   "lm": -2222.168736040592,
+   "prior": -550.6345066065435,
+   "units": 0.0,
+   "key": {
+    "P": "",
+    "q": "i",
+    "U": "a",
+    "+": "s",
+    "R": "u",
+    "g": "a",
+    "V": "i",
+    "4": "s",
+    "Po": "t",
+    "cc": "t",
+    "L": "e",
+    "Y": "o",
+    "T": "d",
+    "6": "u",
+    "Π": "r",
+    "D": "e",
+    "3": "n",
+    "9": "l",
+    "Z": "n",
+    "R2": "c",
+    "II": "g",
+    "7": "r",
+    "o": "m"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} iaisuaaisattetosdodtuutoiaaid {AMBOS} eisaitiie iauuiituu {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} ttaidturuiteueetu iutiuiuiiuoieit {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} oeierdotn io {FACIANT} {TOTIS} {UIRIBUS} {UT} uouotitintalostet {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} diutiatuieeututidaualuiiietaeditetotietoiuiniioiisa iuiitcitietaeuutetittetisinioioutuaiuuieiitstigitittsututuoueriueeiutieutaseiititeoiialaeetniltationtuaiuiiutitluaiaiainuiiuioes {AUT} {QUONIAM} ttiaduntiuieitiutaniausiiioieuseituieiiiiinnaana {DEINDE} {POTEST} {PALATINUS} ntasessaueisetsitt {DUM} {HABENT} {SPECIALE} iuiiutn {SINGULARE} ttittiomii siinaluullodiaueo {AUT} {AMICITIA} {A} {TANDEM} {UBI} untseinteu {QUOD} uuiriiouutent {ERIT} {ET} {CONFICIET} lt  {TUNC} {OPTIMUM} {ERIT} {UT} altriiouednuuiiutuds {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} scettttieiiiui {HOC} {MODO} mitaelaiuoiiintaaiisutetuetutmeu {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} ioiuottuiateaeulteieaatotiiaaarsiauu {QUOD} {SIT} edneuiatuelraet {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a utotlntuiidedetuautuotliostu {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} ititta {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} ulieisetiudi {PROMITTENDI} {DONEC} {QUANDO} uoiueieauieaitotasto {AC} {TEMPUS} {ERIT} {UT} iditltieosi {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  }
+ ]
+}

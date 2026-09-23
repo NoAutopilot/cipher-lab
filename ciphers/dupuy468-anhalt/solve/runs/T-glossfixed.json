@@ -1,0 +1,695 @@
+{
+ "files": [
+  "target_anneal.txt"
+ ],
+ "context": "none",
+ "scoring": "gen",
+ "p_null": 0.03,
+ "restarts": 16,
+ "iters": 300000,
+ "T0": 3.0,
+ "T1": 0.05,
+ "caps": {
+  "syl": 0,
+  "word": 0,
+  "null": 2,
+  "homo": 2
+ },
+ "fix": {
+  "q": "e",
+  "V": "i",
+  "Po": "t",
+  "cc": "u",
+  "R": "r",
+  "R2": "r",
+  "P": "s",
+  "6": "a",
+  "U": "n",
+  "Y": "o",
+  "D": "m",
+  "L": "c",
+  "4": "p",
+  "9": "l",
+  "3": "f",
+  "T": "d",
+  "+": "g",
+  "7": "b",
+  "Z": "q",
+  "Π": "h",
+  "II": "x"
+ },
+ "syl": "vc",
+ "shuffle": null,
+ "ntokens": 653,
+ "nsigns": 23,
+ "scores": [
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521,
+  -1462.0683114962521
+ ],
+ "best": {
+  "score": -1462.0683114962521,
+  "lm": -1358.866071110082,
+  "prior": -103.20224038617025,
+  "units": 0.0,
+  "key": {
+   "V": "i",
+   "U": "n",
+   "Y": "o",
+   "4": "p",
+   "T": "d",
+   "cc": "u",
+   "D": "m",
+   "g": "",
+   "L": "c",
+   "q": "e",
+   "R": "r",
+   "7": "b",
+   "P": "s",
+   "Po": "t",
+   "6": "a",
+   "9": "l",
+   "+": "g",
+   "3": "f",
+   "Π": "h",
+   "R2": "r",
+   "II": "x",
+   "o": "h",
+   "Z": "q"
+  },
+  "reading": [
+   [
+    "target_anneal.txt",
+    "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+   ]
+  ]
+ },
+ "per_token": -2.239002008416925,
+ "runs": [
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  },
+  {
+   "score": -1462.0683114962521,
+   "lm": -1358.866071110082,
+   "prior": -103.20224038617025,
+   "units": 0.0,
+   "key": {
+    "V": "i",
+    "U": "n",
+    "Y": "o",
+    "4": "p",
+    "T": "d",
+    "cc": "u",
+    "D": "m",
+    "g": "",
+    "L": "c",
+    "q": "e",
+    "R": "r",
+    "7": "b",
+    "P": "s",
+    "Po": "t",
+    "6": "a",
+    "9": "l",
+    "+": "g",
+    "3": "f",
+    "Π": "h",
+    "R2": "r",
+    "II": "x",
+    "o": "h",
+    "Z": "q"
+   },
+   "reading": [
+    [
+     "target_anneal.txt",
+     "{AMICISSIME} {POTENTISSIME} {AC} {CHRISTIANISSIME} {REX} {AC} {DOMINE} {DOMINE} {OBSERUANDISSIME} {POST} {HUMILIMAM} {ATQUE} {HUMILIMAM} {COMMENDATIONEM} {MAIESTATEM} {UESTRAM} {CERTIOREM} {REDDI} {MUS} {NOS} {AMBOS} {SALUOS} {AC} {FORTUNATOS} {UENISSE} inopidumcerbessetibierantsimul {AMBOS} etmultialii egofilius {TRACTATUM} {CUM} {PATRE} {MEO} {AD} {PATREM} {ET} egoiochinutproposui conmissmonemmeam {IN} {PRESENTIA} {UNIUS} {DE} {ET} {CONSORTII} {MEI} {QUIA} {HIC} {PLACUIT} {CONCLUSUM} {HIC} {EST} cumauxilio et {FACIANT} {TOTIS} {UIRIBUS} {UT} fedusconcludaturh {CUM} {TOT} {SINT} {POSSIBILE} {EST} {PER} {IPSOS} {OMNIBUS} {MELIUS} {ET} {UTILITER} {PRO} {UIDETUR} {UT} {PRIMO} {DE} {NULLA} {FIAT} {MENCIO} {SED} {INTER} eosetquiintergermanieprincipesattrahipossuntfiatfedus etunusarticulutinponeturutnullusaliusinistudfedusacceptareturnisimaioreparteconfederatorumconsensienteetquemcumquemaiorparsadmitteret {AUT} {QUONIAM} consentiretutminorparsadmittereetconsentireteneretur {DEINDE} {POTEST} {PALATINUS} tractaricumhisquinon {DUM} {HABENT} {SPECIALE} fedusaut {SINGULARE} amiciciamcum utspecialefedusfiat {AUT} {AMICITIA} {A} {TANDEM} {UBI} securumsit {QUOD} longemaiorpars {ERIT} {ET} {CONFICIET} pro  {TUNC} {OPTIMUM} {ERIT} {UT} hocfeduspetatuelleinire {HOC} {MODO} {ETIAM} {SI} {ALIQUEM} {NOLUISSENT} esseinfederecu {HOC} {MODO} astrictieruntesseconfederatoreses {URI} {PRUDENTI} {PAUCA} {NOS} {OMNINO} {SPERAMUS} {QUOD} {FIRMITER} {UT} {CITO} {FACIEMUS} maioremligametconfederacioneminfauorem {QUOD} {SIT} intotagermaniah {SED} {OPORTET} {OMNINO} {UT} {OMNINO} {CONSULTUM} {UT} {ALIQUOS} {ETIAM} {NOBIS} {NECESSE} {ET} {CONSULTUM} {UIDETUR} {UT} {HUIUS} {QUI} {NON} {HABENT} a pensionemhipsispromittaturq {ET} {UIDETUR} {CONSULTUM} {UT} {CONSORTII} {NOBIS} gallumq {NON} {MITTAT} {PRINCIPALITER} {PRO} {POSSE} {SED} {NO} {BIS} {STRUCCH} {DUOBUS} {AUTORITATE} {DET} {PRIUATIS} principibus {PROMITTENDI} {DONEC} {QUANDO} fedusintereosfactumsit {AC} {TEMPUS} {ERIT} {UT} ingrediatur {DEINDE} {POTERIT} {MITTERE} {AD} {PLACITUM} {EIUS} {ITA} {SI} {PARS} {ADUERSA} {DE} {ISTA} {MATERIA} {INTELLIGERET} {ALIQUID} {IMPEDIRET} {TOTIS} {UIRIBUS} {NE} {PERFICERETUR} {NOS} {MINORE} {SUSPICIONE} {FACIEMUS} {ET} {CITIUS} {PERFICIEMUS} {QUOD} {DE} {QUIBUS} {NE} {LONGIS} {LITTERIS} {MAIESTATI} {UESTRE} {FASTIDIO} {SIMUS} {MAIESTAS} {UESTRA} {INTELLIGET} {CLARE} {EX} {LITTERIS} {QUAS} {EGO} {IOACHIMUS} {AD} {DOMINUM} {CANCELLARIUM} {ET} {DOMINUM} {ADMIRALDUM} {SCRIPSI} {QUI} {HAUD} {DUBIE} {MAIESTATI} {UESTRE} {OMNIA} {SIGNIFICABUNT} {RESTAT} {NOS} {MAIESTATI} {UESTRE} {QUAM} {HUMILIME} {ATQUE} {HUMILIME} {COMMENDEMUS} {QUAM} {OPTIMUS} {MAXIMUS} {FELICISSIME} {CUSTODIAT} {DATUM} {IN} {UIGILIA} {SANCTI} {PAULI} {IN} {MANE} {HORA} {QUINTA}"
+    ]
+   ]
+  }
+ ]
+}
