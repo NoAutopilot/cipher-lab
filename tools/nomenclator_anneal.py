@@ -20,6 +20,7 @@ Subcommands
   synth  PLAINTEXT --design design.json --out cipher.txt --truth truth.json [--pattern FILE] [--seed S]
          Encipher a normalised plaintext with a random key of the given design (see make_key()).
          --pattern FILE copies the run structure (cipher runs / clear runs) of a real transcription.
+         --unit 'F p B H c' --vocab corpus.txt: that group must decode to one or two corpus words.
   eval   result.json truth.json      token and letter accuracy of a solved key against the truth.
   decode FILE... --key key.tsv [--map signs.tsv]   print the reading (used by check.py scripts).
 
@@ -303,8 +304,26 @@ class Problem:
         lp += nn * math.log(self.p_null) + (self.ntok - nn) * math.log(1 - self.p_null)
         return lp
 
+    def set_units(self, units, vocab_path, penalty=25.0):
+        """units: list of label sequences (e.g. repeated groups) that must decode to one or two whole
+        words of the corpus vocabulary; each unit that does not costs `penalty` nats."""
+        words, pairs = set(), set()
+        for line in open(vocab_path):
+            w = [x for x in line.strip().split("#") if x]
+            words.update(w)
+            pairs.update(a + b for a, b in zip(w, w[1:]))
+        self.vocab = words | pairs
+        self.units = [[self.sidx[l] for l in u] for u in units if all(l in self.sidx for l in u)]
+        self.unit_pen = penalty
+
+    def unit_score(self, key):
+        if not getattr(self, "units", None):
+            return 0.0
+        bad = sum(1 for u in self.units if "".join(self.values[key[i]] for i in u) not in self.vocab)
+        return -self.unit_pen * bad
+
     def score(self, key):
-        return self.lm_score(key) + self.prior(key)
+        return self.lm_score(key) + self.prior(key) + self.unit_score(key)
 
     def lm_score(self, key):
         v = self.full_val(key)
@@ -443,6 +462,8 @@ def _worker(args):
     pb = Problem(texts, model, opts["context"], opts["syl"], opts.get("words"), scoring=opts["scoring"],
                  p_null=opts["p_null"])
     fixed = {pb.sidx[k]: pb.vid[v] for k, v in opts["fix"].items() if k in pb.sidx}
+    if opts.get("units"):
+        pb.set_units(opts["units"], opts["vocab"])
     rng = random.Random(seed)
     b, k = anneal(pb, rng, opts["iters"], opts["T0"], opts["T1"], opts["caps"], fixed)
     b, k = polish(pb, k, opts["caps"], fixed)
@@ -451,10 +472,11 @@ def _worker(args):
 
 def solve(files, model_path, mapfile=None, context="none", restarts=8, iters=100000, T0=3.0, T1=0.05,
           caps=None, fix=None, syl="vc", words=None, dots=False, shuffle=None, seed=0, procs=4,
-          scoring="gen", p_null=0.03):
+          scoring="gen", p_null=0.03, units=None, vocab=None):
     caps = caps or dict(syl=6, word=4, null=2, homo=4)
     opts = dict(context=context, iters=iters, T0=T0, T1=T1, caps=caps, fix=fix or {}, syl=syl, words=words,
-                dots=dots, shuffle=shuffle, scoring=scoring, p_null=p_null)
+                dots=dots, shuffle=shuffle, scoring=scoring, p_null=p_null,
+                units=units, vocab=vocab)
     jobs = [(files, mapfile, model_path, opts, seed * 1000 + r) for r in range(restarts)]
     if procs > 1:
         import multiprocessing as mp
@@ -467,9 +489,11 @@ def solve(files, model_path, mapfile=None, context="none", restarts=8, iters=100
     if shuffle is not None:
         texts = shuffle_texts(texts, shuffle)
     pb = Problem(texts, model, context, syl, words, scoring=scoring, p_null=p_null)
+    if units:
+        pb.set_units(units, vocab)
     runs = []
     for b, k in res:
-        runs.append(dict(score=b, lm=pb.lm_score(k), prior=pb.prior(k), key={pb.signs[s]: pb.values[k[s]] for s in range(pb.nsign)},
+        runs.append(dict(score=b, lm=pb.lm_score(k), prior=pb.prior(k), units=pb.unit_score(k), key={pb.signs[s]: pb.values[k[s]] for s in range(pb.nsign)},
                          reading=pb.reading(k)))
     runs.sort(key=lambda r: -r["score"])
     ntok = int(sum(pb.counts.values()))
@@ -643,6 +667,9 @@ def main():
     s.add_argument("--procs", type=int, default=4)
     s.add_argument("--scoring", default="gen", choices=["gen", "llr"])
     s.add_argument("--p-null", type=float, default=0.03)
+    s.add_argument("--unit", action="append", default=[],
+                   help="label sequence, e.g. 'F p B H c', that must decode to 1-2 corpus words")
+    s.add_argument("--vocab", help="corpus file with '#' word boundaries (for --unit)")
     s.add_argument("--out")
     y = sp.add_parser("synth")
     y.add_argument("plain")
@@ -668,7 +695,7 @@ def main():
                     homo=a.max_homo)
         r = solve(a.files, a.model, a.map, a.context, a.restarts, a.iters, a.T0, a.T1, caps, fix,
                   a.syl if a.syl != "none" else "vc", None, a.dots, a.shuffle, a.seed, a.procs,
-                  a.scoring, a.p_null)
+                  a.scoring, a.p_null, [u.split() for u in a.unit] or None, a.vocab)
         print(json.dumps(dict(scores=[round(x, 1) for x in r["scores"]], per_token=round(r["per_token"], 3),
                               ntokens=r["ntokens"], nsigns=r["nsigns"]), ensure_ascii=False))
         for name, txt in r["best"]["reading"]:

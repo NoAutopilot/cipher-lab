@@ -1,0 +1,912 @@
+{
+ "files": [
+  "ctl2_f68.txt",
+  "ctl2_f70.txt"
+ ],
+ "context": "none",
+ "scoring": "gen",
+ "p_null": 0.03,
+ "restarts": 16,
+ "iters": 300000,
+ "T0": 3.0,
+ "T1": 0.05,
+ "caps": {
+  "syl": 6,
+  "word": 4,
+  "null": 2,
+  "homo": 4
+ },
+ "fix": {},
+ "syl": "vc",
+ "shuffle": 1,
+ "ntokens": 794,
+ "nsigns": 33,
+ "scores": [
+  -3395.6210153264556,
+  -3396.3687369464933,
+  -3396.5634844679853,
+  -3399.988501673512,
+  -3403.2732425839067,
+  -3414.165996574571,
+  -3421.3624624281724,
+  -3421.6881536298843,
+  -3425.1520628044364,
+  -3443.818302687917,
+  -3460.375584636504,
+  -3461.036863080462,
+  -3469.143386814567,
+  -3497.79888925613,
+  -3510.600021510192,
+  -3554.621279458602
+ ],
+ "best": {
+  "score": -3395.6210153264556,
+  "lm": -2792.1719801367726,
+  "prior": -603.4490351896832,
+  "units": 0.0,
+  "key": {
+   "S27": "in",
+   "S0": "o",
+   "S23": "et",
+   "S25": "e",
+   "S7": "t",
+   "S24": "l",
+   "S4": "e",
+   "S30": "a",
+   "S6": "u",
+   "S29": "i",
+   "S21": "n",
+   "S3": "la",
+   "S32": "",
+   "S9": "c",
+   "S11": "r",
+   "S17": "n",
+   "S12": "i",
+   "S10": "s",
+   "S20": "l",
+   "S13": "il",
+   "S22": "a",
+   "S26": "m",
+   "S15": "d",
+   "S2": "t",
+   "S18": "f",
+   "S16": "t",
+   "S5": "de",
+   "S28": "a",
+   "S8": "u",
+   "S14": "che",
+   "S19": "it",
+   "S31": "quale",
+   "S33": "p"
+  },
+  "reading": [
+   [
+    "ctl2_f68.txt",
+    "inoetetleauinlauuuceareuniseallilatasoamaaudimnentodelfuoilstiaiusdecreroidaiisceouemsreneetrsotorantichemetdetalaiinesauinnsedooedeearririrmeaoatoadedersndetseoitcrmceetdeneite {ALOEXEQUIREQUANTODA} seadeuiienoa {CHEEQUESTOCHEUEDUTOLA} detutsiitded {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} muretidica {ADUILTAET} asutoinriisiaiincosesiecremiaoreiucendorutcameaasnuriisuetiaeiniennaamutddademlaqualeautree {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} ineinuoerinnaeetateoroeteuieedrrndetinaincoinetioiena {CHEMENAUACERTICAUALLIETTITOLIDENARI} sitsiicruarela {INCAMISIASATIATOSIPRIMADETENERLO} uiliorrsetderemosde {LIBERATOFARLONEADUEDUTO} anessietuseetiuoseieuuaett"
+   ],
+   [
+    "ctl2_f70.txt",
+    "uinsechemiduiredeeuaantaetraattsaifeteetstcitiasoofarotsctuasetonoimenretdaeeeennaet {ANCHEPO} tseedauiseieinsaoriruedesueusdcheddesanansmetsoumtcetrteiideetooaceesinituiiamuesetnriteliominettdaltifaciaareettiiniseiiileetderoroitetooumaettetsueoindooaiieuetfuedanudesimeteirdaducheuiarduiroala {PENSATO} uaededeaeioouiutamarcaaurtdoocheisitodedeiitonropoiluiiitedeuonsioeiitmdoeterritaetnonlarioitemiramitiinoiditaaeetide"
+   ]
+  ]
+ },
+ "per_token": -4.276600774970347,
+ "runs": [
+  {
+   "score": -3395.6210153264556,
+   "lm": -2792.1719801367726,
+   "prior": -603.4490351896832,
+   "units": 0.0,
+   "key": {
+    "S27": "in",
+    "S0": "o",
+    "S23": "et",
+    "S25": "e",
+    "S7": "t",
+    "S24": "l",
+    "S4": "e",
+    "S30": "a",
+    "S6": "u",
+    "S29": "i",
+    "S21": "n",
+    "S3": "la",
+    "S32": "",
+    "S9": "c",
+    "S11": "r",
+    "S17": "n",
+    "S12": "i",
+    "S10": "s",
+    "S20": "l",
+    "S13": "il",
+    "S22": "a",
+    "S26": "m",
+    "S15": "d",
+    "S2": "t",
+    "S18": "f",
+    "S16": "t",
+    "S5": "de",
+    "S28": "a",
+    "S8": "u",
+    "S14": "che",
+    "S19": "it",
+    "S31": "quale",
+    "S33": "p"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "inoetetleauinlauuuceareuniseallilatasoamaaudimnentodelfuoilstiaiusdecreroidaiisceouemsreneetrsotorantichemetdetalaiinesauinnsedooedeearririrmeaoatoadedersndetseoitcrmceetdeneite {ALOEXEQUIREQUANTODA} seadeuiienoa {CHEEQUESTOCHEUEDUTOLA} detutsiitded {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} muretidica {ADUILTAET} asutoinriisiaiincosesiecremiaoreiucendorutcameaasnuriisuetiaeiniennaamutddademlaqualeautree {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} ineinuoerinnaeetateoroeteuieedrrndetinaincoinetioiena {CHEMENAUACERTICAUALLIETTITOLIDENARI} sitsiicruarela {INCAMISIASATIATOSIPRIMADETENERLO} uiliorrsetderemosde {LIBERATOFARLONEADUEDUTO} anessietuseetiuoseieuuaett"
+    ],
+    [
+     "ctl2_f70.txt",
+     "uinsechemiduiredeeuaantaetraattsaifeteetstcitiasoofarotsctuasetonoimenretdaeeeennaet {ANCHEPO} tseedauiseieinsaoriruedesueusdcheddesanansmetsoumtcetrteiideetooaceesinituiiamuesetnriteliominettdaltifaciaareettiiniseiiileetderoroitetooumaettetsueoindooaiieuetfuedanudesimeteirdaducheuiarduiroala {PENSATO} uaededeaeioouiutamarcaaurtdoocheisitodedeiitonropoiluiiitedeuonsioeiitmdoeterritaetnonlarioitemiramitiinoiditaaeetide"
+    ]
+   ]
+  },
+  {
+   "score": -3396.3687369464933,
+   "lm": -2803.9678932158276,
+   "prior": -592.4008437306657,
+   "units": 0.0,
+   "key": {
+    "S27": "",
+    "S0": "d",
+    "S23": "r",
+    "S25": "t",
+    "S7": "et",
+    "S24": "s",
+    "S4": "a",
+    "S30": "l",
+    "S6": "",
+    "S29": "i",
+    "S21": "m",
+    "S3": "p",
+    "S32": "e",
+    "S9": "n",
+    "S11": "e",
+    "S17": "al",
+    "S12": "r",
+    "S10": "a",
+    "S20": "la",
+    "S13": "ol",
+    "S22": "i",
+    "S26": "o",
+    "S15": "i",
+    "S2": "m",
+    "S18": "es",
+    "S16": "in",
+    "S5": "o",
+    "S28": "u",
+    "S8": "c",
+    "S14": "m",
+    "S19": "s",
+    "S31": "er",
+    "S33": "h"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "drtetsalimpenaleaalreaallasolietiadiolliieoaletalemediasesdolaeineilraoneaedieiuiianadcteoaetmareadmdeualeetimorierlperiealtaucalatiddtiaaleeiereotidietdelietiteamiratdseneontainomtst {ALOEXEQUIREQUANTODA} aaioeiitmdl {CHEEQUESTOCHEUEDUTOLA} iretarietoi {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} oetiniiinl {ADUILTAET} laetderiailindataitnetoildetintmideetnuotiueaalerratetrltrmramaliuomiilooeperleemeaa {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} ialeteraledtealiarumetdedraitetieemeoetindriditali {CHEMENAUACERTICAUALLIETTITOLIDENARI} asaeiinecleetp {INCAMISIASATIATOSIPRIMADETENERLO} olrdeeariaetodao {LIBERATOFARLONEADUEDUTO} ialtaarrecaariedatitecclainm"
+    ],
+    [
+     "ctl2_f70.txt",
+     "caetmoricietotcueualinuaeteuuetetaleresamatinaetnsiiaddesledeetanetiaredaldrotalerilatatalalire {ANCHEPO} inattilcratitauderetoatecaimioeaimumaoradoinnreintiiordeduntaarincrruoaaraleietasrdoialtetetiusetieseinriiettmetrraarioltroededretreddouretreaceeeaedeimidedeliieteeereseeteilalitaroreaieiuiecemileiredlp {PENSATO} citoitlearddicetuouenuueceetidedmiasdiaoresdaledhdisciisetodalardaisoidreteeesuteetaldalperdstoreiosidiieesluterro"
+    ]
+   ]
+  },
+  {
+   "score": -3396.5634844679853,
+   "lm": -2701.9074976191623,
+   "prior": -694.6559868488227,
+   "units": 0.0,
+   "key": {
+    "S27": "p",
+    "S0": "a",
+    "S23": "l",
+    "S25": "a",
+    "S7": "o",
+    "S24": "ad",
+    "S4": "e",
+    "S30": "s",
+    "S6": "m",
+    "S29": "",
+    "S21": "d",
+    "S3": "es",
+    "S32": "i",
+    "S9": "c",
+    "S11": "t",
+    "S17": "r",
+    "S12": "",
+    "S10": "i",
+    "S20": "ar",
+    "S13": "in",
+    "S22": "et",
+    "S26": "e",
+    "S15": "u",
+    "S2": "per",
+    "S18": "che",
+    "S16": "de",
+    "S5": "l",
+    "S28": "u",
+    "S8": "s",
+    "S14": "g",
+    "S19": "n",
+    "S31": "non",
+    "S33": "it"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "palaoadesmdesimmmcestemriiesaradinetoetiaetessmuieriariperiaueadchemainiideismilctetaiuuiceasaieitadeltiaperaturiogeluilsesiiraiuspriauaaaueestttteaetaetoaisuiauatiduliaanictecaedeldana {ALOEXEQUIREQUANTODA} ieetlimadas {CHEEQUESTOCHEUEDUTOLA} ulmoiolu {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} emtadeucs {ADUILTAET} simoaptispcaiaiactaesatamcaduatmocueaetuiirmtimaosadedretuemperuusleiesnonsiimpertee {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} riairmiaatpreteluperiaatalemaiauttdilopetpcaplaaret {CHEMENAUACERTICAUALLIETTITOLIDENARI} iniictssitaes {INCAMISIASATIATOSIPRIMADETENERLO} minattiluetaeail {LIBERATOFARLONEADUEDUTO} etraiilisielimaiaaisssedeper"
+    ],
+    [
+     "ctl2_f70.txt",
+     "spiiageustalasuiurdeueotuuooisicheepereadeiocnetiaachestaioicometiliaraeartluseaearretli {ANCHEPO} deiaaussiaapiuattmalimaisiuguliietdudieliamedecltdeallaiaucaeipdesuemeilrtoeadaeraoouuadocheietcetettaaperopieinalltataoliaameuloliisiiieiaiduaiaisiamiiilchemiiaiusrmuaielietuuuisigmstumtases {PENSATO} setaluasieaamsoueutcuuistouaiaginauelinartaitaadsnialmariaeneualiatitnuaiorarestanaetetenpauiinsuaill"
+    ]
+   ]
+  },
+  {
+   "score": -3399.988501673512,
+   "lm": -2643.6672397188377,
+   "prior": -756.3212619546745,
+   "units": 0.0,
+   "key": {
+    "S27": "u",
+    "S0": "o",
+    "S23": "a",
+    "S25": "e",
+    "S7": "t",
+    "S24": "al",
+    "S4": "",
+    "S30": "i",
+    "S6": "e",
+    "S29": "a",
+    "S21": "c",
+    "S3": "es",
+    "S32": "s",
+    "S9": "l",
+    "S11": "",
+    "S17": "r",
+    "S12": "et",
+    "S10": "d",
+    "S20": "em",
+    "S13": "ed",
+    "S22": "i",
+    "S26": "n",
+    "S15": "t",
+    "S2": "de",
+    "S18": "che",
+    "S16": "u",
+    "S5": "i",
+    "S28": "e",
+    "S8": "i",
+    "S14": "per",
+    "S19": "u",
+    "S31": "at",
+    "S33": "ma"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "uoaetalieacesseeelieretsdiemaleditidoiniietasnrsersdesotalcheeoeddsusaietediloasteaadloiesndecadodeoerstapernatsaiessetasredeiurdetooetiaetneioitositsetedctadeouslnleuiceue {ALOEXEQUIREQUANTODA} diiseaaecoi {CHEEQUESTOCHEUEDUTOLA} taetdetatit {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} neeuatali {ADUILTAET} idetouetadaiaulodedaelenaioeaelectoetleneiesdreetetdeetetieetcetcrienedettiinsesatissede {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} arsesetresoeuriaedeseooaeaesetcsituiulouaaoaeri {CHEMENAUACERTICAUALLIETTITOLIDENARI} dudsaaliisees {INCAMISIASATIATOSIPRIMADETENERLO} eedetodatenodi {LIBERATOFARLONEADUEDUTO} ireddetasidaaseodeaesiiiude"
+    ],
+    [
+     "ctl2_f70.txt",
+     "iudsepernettiaeieieserueteettdisetchedeeudtluaidoocheiostdlteidasoroetneratieerrias {ANCHEPO} udeetiietdeaeudeoeteeideesidtpertisdicecdnadoenulaueaaiaosoeleduetuietetenedarataletonaretttealtachesiletiieedetetuetdetaedeaiooettasooeneatasdissssosactososiaaseesssacheessestiretedetnasatetsispereaiteetoies {PENSATO} iieiteisetooeaiteneleesittosoperaduotietsuoromaoaaliaauseieordetoauntoasesueestroresetouenetinuauoatssuieesaeti"
+    ]
+   ]
+  },
+  {
+   "score": -3403.2732425839067,
+   "lm": -2854.9398679938167,
+   "prior": -548.3333745900898,
+   "units": 0.0,
+   "key": {
+    "S27": "c",
+    "S0": "n",
+    "S23": "l",
+    "S25": "r",
+    "S7": "i",
+    "S24": "ma",
+    "S4": "a",
+    "S30": "",
+    "S6": "d",
+    "S29": "s",
+    "S21": "u",
+    "S3": "t",
+    "S32": "e",
+    "S9": "u",
+    "S11": "o",
+    "S17": "an",
+    "S12": "",
+    "S10": "a",
+    "S20": "non",
+    "S13": "es",
+    "S22": "t",
+    "S26": "i",
+    "S15": "i",
+    "S2": "el",
+    "S18": "t",
+    "S16": "che",
+    "S5": "et",
+    "S28": "m",
+    "S8": "u",
+    "S14": "t",
+    "S19": "in",
+    "S31": "per",
+    "S33": "ec"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "cnlrimaadsuteddduaoadaneaanonmaestitantidiseianeraneeleniamatdnesaecheesdaetuoaonseimssauanureiaorualoanelnomaneistilielteseanramucanarinnriaaoosooirtntineieriroauilarnineuoiuracheeturinr {ALOEXEQUIREQUANTODA} aatetedssrun {CHEEQUESTOCHEUEDUTOLA} ildiasieti {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} idorchesisu {ADUILTAET} adincosasscunarasruorisnorsduruinodiumirtmeaandoadriruauantmideliietietpereedeloaa {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} sanereandenrocantalmelernonladsreriooueetictcunclsnsrant {CHEMENAUACERTICAUALLIETTITOLIDENARI} ainaessuoueort {INCAMISIASATIATOSIPRIMADETENERLO} desnooaliaorinaet {LIBERATOFARLONEADUEDUTO} tanraaleuaalsednarsreuuacheel"
+    ],
+    [
+     "ctl2_f70.txt",
+     "ucaertiiusoretrumemanchemaiommiiaetaelarcheaiuinstanntoneiauidtalenanniranoliararanantle {ANCHEPO} chearriuarsrcamnoodretadreuaitieteatumuailandicheulocherssetlnenmuraaccheumidaalanosiamanisanriiimmaistetuttorrelicaasesrletononilenndimlileaueeeaenesuinenesserdeeeltdeereiandiraileasoimieuetdsoidont {PENSATO} utretireanndsuimimoummeuoiinentsainniaeteinnanonecnsmaussineretdnananasiniinleroeoinmreiannantoninriotiinscnsieeinmrelet"
+    ]
+   ]
+  },
+  {
+   "score": -3414.165996574571,
+   "lm": -2762.636512556812,
+   "prior": -651.5294840177594,
+   "units": 0.0,
+   "key": {
+    "S27": "ar",
+    "S0": "n",
+    "S23": "e",
+    "S25": "a",
+    "S7": "m",
+    "S24": "p",
+    "S4": "s",
+    "S30": "e",
+    "S6": "o",
+    "S29": "t",
+    "S21": "et",
+    "S3": "c",
+    "S32": "",
+    "S9": "in",
+    "S11": "u",
+    "S17": "t",
+    "S12": "i",
+    "S10": "i",
+    "S20": "non",
+    "S13": "at",
+    "S22": "e",
+    "S26": "n",
+    "S15": "r",
+    "S2": "o",
+    "S18": "er",
+    "S16": "per",
+    "S5": "d",
+    "S28": "i",
+    "S8": "l",
+    "S14": "an",
+    "S19": "o",
+    "S31": "h",
+    "S33": "q"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "arneampseotetcoooinseusotiisenonpatemeineneeortntatonrsperonatiperteioidinusuntrittiinsnlaniuaetseuinonuitmtannereecittaiilartiarnnarsseuutuiunaenemnerarauietreianoinuninasperdetaoa {ALOEXEQUIREQUANTODA} isedottaetne {CHEEQUESTOCHEUEDUTOLA} reomiitmdr {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} nouapertrtine {ADUILTAET} eiomnaruititetarinniaitainuantenuatoinaetrnuomininaeiitouiiioamieaietisetteinoorredncheoouss {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} ttaitonauarteseioanunesotaaruuetdmarearinnaretntate {CHEMENAUACERTICAUALLIETTITOLIDENARI} ioittinuleuac {INCAMISIASATIATOSIPRIMADETENERLO} oatinuuiersuannid {LIBERATOFARLONEADUEDUTO} etaiiielisetoniatallespero"
+    ],
+    [
+     "ctl2_f70.txt",
+     "lariaannirltuadaliitperismuiimmieiersosaperiminoteinnereunmiinmoeientninatueresasattee {ANCHEPO} periaareliiataariinuiuoadioaliranrdieetietineinonperineuperattdenniinasiariperliiinosietutmspinnttammripmtereinieeuaaomiariisitataedununimennoniemeilsntetrnnettaoeeroaretoraiinesturirlanoteuroiunec {PENSATO} leadraesinnotlminiuiniilumrnnantionrsdiontunqntplttoadontiinstonrneauuoiamtntcuinoaniuenotarntroeiaeid"
+    ]
+   ]
+  },
+  {
+   "score": -3421.3624624281724,
+   "lm": -2717.0393060484203,
+   "prior": -704.3231563797522,
+   "units": 0.0,
+   "key": {
+    "S27": "che",
+    "S0": "",
+    "S23": "s",
+    "S25": "e",
+    "S7": "s",
+    "S24": "el",
+    "S4": "i",
+    "S30": "n",
+    "S6": "",
+    "S29": "a",
+    "S21": "in",
+    "S3": "m",
+    "S32": "i",
+    "S9": "et",
+    "S11": "t",
+    "S17": "c",
+    "S12": "o",
+    "S10": "u",
+    "S20": "id",
+    "S13": "p",
+    "S22": "as",
+    "S26": "r",
+    "S15": "i",
+    "S2": "m",
+    "S18": "x",
+    "S16": "per",
+    "S5": "s",
+    "S28": "a",
+    "S8": "l",
+    "S14": "de",
+    "S19": "d",
+    "S31": "ag",
+    "S33": "con"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "cheseselinainmietinticoiuinidelpassasuasrnniairciecimiiielxpuiperianousettitaiiaaauetileiruteinistumtacisadersiisnmioaiceualchecueieiiinttatotreasassiniieietuinisuediettreteipersinede {ALOEXEQUIREQUANTODA} uiassiaaeinn {CHEEQUESTOCHEUEDUTOLA} issuoassi {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} rteperaiaetn {ADUILTAET} nuschetoauanacheetueuaeetteranteaeteinitsetareasaiuctoouesoneoinoiincasarmiinsrimagniimtii {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} acieiocietchecasisamietsiaeieittinisscheascheetchesaaecas {CHEMENAUACERTICAUALLIETTITOLIDENARI} uduiaaettlnitem {INCAMISIASATIATOSIPRIMADETENERLO} pottusiiterus {LIBERATOFARLONEADUEDUTO} asceuuosiluisaiueaeillniperm"
+    ],
+    [
+     "ctl2_f70.txt",
+     "lcheuiederoilateselaiacperaistaassunioximieperusetdaasuxntisuetsasusicorectsinieieccassi {ANCHEPO} perueeinloueaecheuatotesueiluideisiuasinainursurperetstpereaassiaeteiucheoperlooariusctasieloracessiaelsaxiasetoasasteemsocheouioapessttossirasssiuliiiiiiainiiinaaieiiisxiieiincieuorsiiatiaiilideantiotnm {PENSATO} lasesieniioalsaratetaailtsiideaudiisoidctconaellaadiescuoiadrisietitdaeisccmtoderotasrdacheaiiidnaeisos"
+    ]
+   ]
+  },
+  {
+   "score": -3421.6881536298843,
+   "lm": -2856.1257411018014,
+   "prior": -565.5624125280829,
+   "units": 0.0,
+   "key": {
+    "S27": "m",
+    "S0": "",
+    "S23": "s",
+    "S25": "r",
+    "S7": "u",
+    "S24": "in",
+    "S4": "a",
+    "S30": "m",
+    "S6": "t",
+    "S29": "o",
+    "S21": "d",
+    "S3": "am",
+    "S32": "i",
+    "S9": "u",
+    "S11": "e",
+    "S17": "e",
+    "S12": "n",
+    "S10": "o",
+    "S20": "b",
+    "S13": "ma",
+    "S22": "et",
+    "S26": "a",
+    "S15": "e",
+    "S2": "ed",
+    "S18": "con",
+    "S16": "l",
+    "S5": "ar",
+    "S28": "ad",
+    "S8": "d",
+    "S14": "c",
+    "S19": "t",
+    "S31": "de",
+    "S33": "non"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "msruinamtodamitttuameatenioambinmaetuetoetammteoiaeireiedieaincontmaoiliomntoarueaeoieadooouadriaoerdaseoedeadeiuocaseismaminoieroaddmeorereaameeoenearetetuimeirereodesortiueauralardrtr {ALOEXEQUIREQUANTODA} oaetaritoordm {CHEEQUESTOCHEUEDUTOLA} estuonouare {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} aterloeoum {ADUILTAET} motumenooomomuoroorueraomeroturdeetuuadaretadioetennotrunmrndnadeetadatedeemaraiamdemiitedeaa {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} oeirinetiremeetasadediresatorireeediarumetmumsooreet {CHEMENAUACERTICAUALLIETTITOLIDENARI} otoioouedmieram {INCAMISIASATIATOSIPRIMADETENERLO} tmaneeoseaeraoar {LIBERATOFARLONEADUEDUTO} eteroonsidoasoitororiddmaled"
+    ],
+    [
+     "ctl2_f70.txt",
+     "dmoircanedoerarrdadiadeladaueadaduuominconaedarlouutoetoconmeiuouutetosienareesemarareeetsi {ANCHEPO} lorremdnorormoadenetrarotridoecearioetdaddoasotaluselrooarsiaduraomnldnnadataoseeouainnaoeruueadinuoconietuneteterredunmnoanomarsareenusitaadsusiodiiiaiiodeiimooirtiiiscontiiriemeteronasiaoeeadeidictomeetnemam {PENSATO} detrarermiantoduadaadeuadadideueicooteaarniteenonoindootirarteonaotaesireietadriueeamentraneetatomoeiitmadrisnar"
+    ]
+   ]
+  },
+  {
+   "score": -3425.1520628044364,
+   "lm": -2644.73235573282,
+   "prior": -780.4197070716161,
+   "units": 0.0,
+   "key": {
+    "S27": "a",
+    "S0": "i",
+    "S23": "n",
+    "S25": "i",
+    "S7": "a",
+    "S24": "per",
+    "S4": "",
+    "S30": "o",
+    "S6": "n",
+    "S29": "et",
+    "S21": "in",
+    "S3": "od",
+    "S32": "i",
+    "S9": "t",
+    "S11": "i",
+    "S17": "c",
+    "S12": "r",
+    "S10": "u",
+    "S20": "lo",
+    "S13": "en",
+    "S22": "o",
+    "S26": "e",
+    "S15": "",
+    "S2": "d",
+    "S18": "la",
+    "S16": "ad",
+    "S5": "m",
+    "S28": "s",
+    "S8": "l",
+    "S14": "d",
+    "S19": "t",
+    "S31": "ap",
+    "S33": "p"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "ainiaperonetinodinnntoincriuoloperenoaouioeoonetieciicidiiperlanienuiadietornumtiiietisetetutiliieuiiinniuidiisciaetdeninoodireticiuslacuiiiioiietirieioioaiioiiiiuinnuiititietiadminiti {ALOEXEQUIREQUANTODA} uominetetiinio {CHEEQUESTOCHEUEDUTOLA} nnauretam {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} eniiadetetto {ADUILTAET} ounaiairetuetoetatiuiuetitiieetoiiietntiiniinatseiosiucnirruniaroirinrincosendomeiodapoiindi {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} etciiircniiiiaconsdiiiiinnetiiiiiinimaaoatianetietico {CHEMENAUACERTICAUALLIETTITOLIDENARI} utuietettiloiiiod {INCAMISIASATIATOSIPRIMADETENERLO} nenriiiuniieium {LIBERATOFARLONEADUEDUTO} ociuurnilunetiniuietiilloadd"
+    ],
+    [
+     "ctl2_f70.txt",
+     "lauiiderletiimilsiscadsaissaauoirladiaduattetouiilaoiiiautanouniicireicinoiicconi {ANCHEPO} aduiiolruietiausiirinimuniiludmiuoinsinuenuineadtniadietetmniiistiuaradlrrsenuncietaperrieetciaasperaetlaiotrooiiidararureteninmiiiiraniiinesnaniuliiiiiietiniiiioetetiiniiinlaniiiiocniurenietisilidnetoinriiood {PENSATO} loimioiriinetlasesitssiliaiiidetutimriticiipietperletettiimnicurietteiniiiiitsiiacicodiritierioetetaietiitosiinrm"
+    ]
+   ]
+  },
+  {
+   "score": -3443.818302687917,
+   "lm": -2762.36320063084,
+   "prior": -681.4551020570772,
+   "units": 0.0,
+   "key": {
+    "S27": "n",
+    "S0": "e",
+    "S23": "a",
+    "S25": "i",
+    "S7": "o",
+    "S24": "m",
+    "S4": "",
+    "S30": "a",
+    "S6": "i",
+    "S29": "l",
+    "S21": "che",
+    "S3": "la",
+    "S32": "u",
+    "S9": "er",
+    "S11": "",
+    "S17": "t",
+    "S12": "e",
+    "S10": "r",
+    "S20": "quale",
+    "S13": "at",
+    "S22": "t",
+    "S26": "d",
+    "S15": "s",
+    "S2": "b",
+    "S18": "al",
+    "S16": "in",
+    "S5": "an",
+    "S28": "a",
+    "S8": "m",
+    "S14": "de",
+    "S19": "a",
+    "S31": "ud",
+    "S33": "x"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "neaiomailchelauiiieraiteuraqualemattotretdaaisludtuitubuesmalieatruinulaeiranerelusallreremiudrichearebeatuoldedasuaalauelutiramntriseeisaleditetoeuasuisirchesarieauerderiinancheiai {ALOEXEQUIREQUANTODA} rtanuillicheea {CHEEQUESTOCHEUEDUTOLA} saioreloans {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} diiinlslera {ADUILTAET} arioenelrlalnererirlieridlaeiliericheseioeraditaurtieeriioeaiecheechettadibssaandulaudauuib {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} ltuiuetiueinttaabuieeailiuischeuanontnerenalelitt {CHEMENAUACERTICAUALLIETTITOLIDENARI} rarullermauila {INCAMISIASATIATOSIPRIMADETENERLO} iateerasideran {LIBERATOFARLONEADUEDUTO} ttirreaumraluieriliummainb"
+    ],
+    [
+     "ctl2_f70.txt",
+     "mnruidedesmlianimauatinaoaaoorauealbiinroeraltreealaeuoreroitraueteeditasaiitttau {ANCHEPO} inriisamerilinraeeiianriiumrsdesanurtcheacherdareidinerainillanaeueaerirneinmeeadiratlomeedltioosamolaluterettiiboenerelatiaaneeeoaueeidaaoaurmuuuueulcheseueualluiiuuuaaliuuiusatisiredaulsasumudeilasieeala {PENSATO} mtiansiaueeeilmoadaeraaumoseuedelraesaneuaetexelmmllauianietreeladseauiuaaiuotetlaeeaidetdalnelsuuaaaiuaean"
+    ]
+   ]
+  },
+  {
+   "score": -3460.375584636504,
+   "lm": -2766.4847924411297,
+   "prior": -693.8907921953742,
+   "units": 0.0,
+   "key": {
+    "S27": "",
+    "S0": "",
+    "S23": "m",
+    "S25": "u",
+    "S7": "l",
+    "S24": "e",
+    "S4": "s",
+    "S30": "e",
+    "S6": "i",
+    "S29": "t",
+    "S21": "n",
+    "S3": "r",
+    "S32": "a",
+    "S9": "et",
+    "S11": "i",
+    "S17": "d",
+    "S12": "e",
+    "S10": "o",
+    "S20": "non",
+    "S13": "c",
+    "S22": "es",
+    "S26": "n",
+    "S15": "i",
+    "S2": "er",
+    "S18": "r",
+    "S16": "s",
+    "S5": "al",
+    "S28": "i",
+    "S8": "n",
+    "S14": "ex",
+    "S19": "in",
+    "S31": "lo",
+    "S33": "con"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "muleseitnraiiietseisideaosenoneceslesoesneeiitandaudaeraisericoasateeioaletisitaiittoetsnuanoiunsmioeriidaltexnmiameraetaduoindouiuisseiitieinueseslaeiauiuionimouinaetinetussalnuinu {ALOEXEQUIREQUANTODA} osesalaittune {CHEEQUESTOCHEUEDUTOLA} imiloetlali {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} niiustitete {ADUILTAET} eoilietotetetouotuetiunteiutietuniiiletinuesiaodiieeoiuleeuenesndesinieriiealnarloeaaieriss {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} tdauaediauidessmierauimsituauiiinaallesetmttudes {CHEMENAUACERTICAUALLIETTITOLIDENARI} oinoattetineaiur {INCAMISIASATIATOSIPRIMADETENERLO} iceiiomisiunoal {LIBERATOFARLONEADUEDUTO} esduooemanosmtaioutuannesser"
+    ],
+    [
+     "ctl2_f70.txt",
+     "noauexneintiualuniaidsisliiilloeaersersusoletintesoreialoetliesomadenudimiesusuddesma {ANCHEPO} souuieneoutuoiieiiualoiuanoiexialaoesninonmoinsetmisuttalmaietusoesneeinisomditlseentdulliieltraeseteesesiuuerleeosetcumaliielmainimlmaonaaasaatniaaettauiaaamriaauaiediiuoenmastiiiianaexiteiiieier {PENSATO} nesualiueaseitnliniietiianiliaextoinisaleaindicontenttinaualidoestinnimauiaiiniualddrieinuneiesninttiaaineiuameal"
+    ]
+   ]
+  },
+  {
+   "score": -3461.036863080462,
+   "lm": -2913.578989572823,
+   "prior": -547.4578735076389,
+   "units": 0.0,
+   "key": {
+    "S27": "",
+    "S0": "r",
+    "S23": "t",
+    "S25": "n",
+    "S7": "s",
+    "S24": "ar",
+    "S4": "",
+    "S30": "et",
+    "S6": "u",
+    "S29": "i",
+    "S21": "m",
+    "S3": "el",
+    "S32": "e",
+    "S9": "la",
+    "S11": "i",
+    "S17": "t",
+    "S12": "a",
+    "S10": "i",
+    "S20": "f",
+    "S13": "ad",
+    "S22": "a",
+    "S26": "in",
+    "S15": "a",
+    "S2": "an",
+    "S18": "d",
+    "S16": "o",
+    "S5": "d",
+    "S28": "de",
+    "S8": "l",
+    "S14": "che",
+    "S19": "o",
+    "S31": "z",
+    "S33": "lo"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "rtnsaretuimeleuuulaetiutaeietfaradasairainetetuaieintenteaneraarduradieoeietauidlaiirieadeiiilarlneiniinmtiiranridetesicheintaeteteleaietnideltinarrnaetiiiiaiinnarasreetaenaniimatinroelaiinlanodmnon {ALOEXEQUIREQUANTODA} iadeuiinmret {CHEEQUESTOCHEUEDUTOLA} atusiaisda {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} inuinoiailaet {ADUILTAET} etiusriaiiietilariniinlaininietriniulanmariusladeinnadeeituiaaiunsaetnamamtadeinuanaaetdineelzeteeuani {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} iteneatuernitatdeanenrirtuinenaiimedsalartirinta {CHEMENAUACERTICAUALLIETTITOLIDENARI} ioieiilaileteinel {INCAMISIASATIATOSIPRIMADETENERLO} uadariiitaininrid {LIBERATOFARLONEADUEDUTO} atniiatelitieurininelletoan"
+    ],
+    [
+     "ctl2_f70.txt",
+     "liencheinaaliindnldeedetodesidedessieteadannoislaoiairrdetiresilasuaitertrainntitaetnnttate {ANCHEPO} oinnaetlaininideriaiundiuneliacheadeiamdemiintiruinolationiidtrerdelaniaolaadeinuittiisararinitnssadearsidealaaaainnansaaiaiadntdirirasterruindetsteileeeereimarereetiienueeetdueeneaettuaniainteiiadeaelecheuietiauairetel {PENSATO} landanetearruilsdeindeiladedeelisarercheiioradaeortirloriarliioendurtiarioinartenieiodenestrteliaroninaiainoiriaeeoetdenetad"
+    ]
+   ]
+  },
+  {
+   "score": -3469.143386814567,
+   "lm": -2786.126512914896,
+   "prior": -683.016873899671,
+   "units": 0.0,
+   "key": {
+    "S27": "ar",
+    "S0": "i",
+    "S23": "",
+    "S25": "t",
+    "S7": "n",
+    "S24": "e",
+    "S4": "r",
+    "S30": "l",
+    "S6": "e",
+    "S29": "",
+    "S21": "an",
+    "S3": "d",
+    "S32": "a",
+    "S9": "de",
+    "S11": "i",
+    "S17": "s",
+    "S12": "m",
+    "S10": "o",
+    "S20": "od",
+    "S13": "p",
+    "S22": "i",
+    "S26": "u",
+    "S15": "c",
+    "S2": "h",
+    "S18": "d",
+    "S16": "en",
+    "S5": "e",
+    "S28": "i",
+    "S8": "u",
+    "S14": "on",
+    "S19": "n",
+    "S31": "el",
+    "S33": "z"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "aritnerleandaeeederliresmaorlodepinioiiullecausatsahaicredeipoaenalmeoedeiriiacioderiutauoitanrioihiiisanonucaldamastoiuarsotciitcrrliiimiutiiinialcatctioancotinadeiudetreneantnt {ALOEXEQUIREQUANTODA} orieaetanil {CHEEQUESTOCHEUEDUTOLA} cenomnec {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} ueitencdel {ADUILTAET} loeniarimolardeiototdeituliitedetanciiendeiutiiaoseimmoetnmltmanmransiiuehccleuadellaaehirr {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} satamseaitiarsirihatiiiretatciianaenariardeiaritsi {CHEMENAUACERTICAUALLIETTITOLIDENARI} onoadeiulaitd {INCAMISIASATIATOSIPRIMADETENERLO} epmiiiocrituioe {LIBERATOFARLONEADUEDUTO} istoomauoraeiottauulrenh"
+    ],
+    [
+     "ctl2_f70.txt",
+     "uaroatonumcuitetuiaisenirniiinnolamdrhrtenondenioiidliianodeneioaisimutsiclrtrtssia {ANCHEPO} enottclumottaroiiimieteoetauoconceaoianianouoieuendeienteiaiidetroarmenummiuerosinremiustnnciendaidemiiitthnmarmormpteiiiimnaiieuinaouaaaraiaanciaialateaaadeaataclsectomuaricicauaonelicemiild {PENSATO} uitectlarmiieuniuiideiiauinciaiononicremanisiizieunateeisomirnuciatiainitansisdimintumiiunaricaanlitame"
+    ]
+   ]
+  },
+  {
+   "score": -3497.79888925613,
+   "lm": -2765.754025864415,
+   "prior": -732.0448633917154,
+   "units": 0.0,
+   "key": {
+    "S27": "d",
+    "S0": "i",
+    "S23": "",
+    "S25": "a",
+    "S7": "ad",
+    "S24": "in",
+    "S4": "e",
+    "S30": "r",
+    "S6": "l",
+    "S29": "e",
+    "S21": "r",
+    "S3": "et",
+    "S32": "i",
+    "S9": "o",
+    "S11": "",
+    "S17": "ar",
+    "S12": "al",
+    "S10": "u",
+    "S20": "ep",
+    "S13": "g",
+    "S22": "e",
+    "S26": "i",
+    "S15": "o",
+    "S2": "s",
+    "S18": "la",
+    "S16": "s",
+    "S5": "t",
+    "S28": "t",
+    "S8": "n",
+    "S14": "ma",
+    "S19": "m",
+    "S31": "c",
+    "S33": "per"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "diaadinerleretillloerelaraliuerepingeadeuieirrloeiiariaarisiioeinlaliguisierallutoeieioteeuoeinaiiuareuisitariademaioiretialeiarautndaruaoiiaoeerealiaeieadiiroiaoaurouaimioioaestrama {ALOEXEQUIREQUANTODA} ueetileearir {CHEEQUESTOCHEUEDUTOLA} oladualeadto {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} ilaseoeor {ADUILTAET} ruladidaleueredoiuaueaoaieriaeloaroiladotiaetiuarlalalulaadalraalraleraretilsoortiietcriilsee {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} eariaialarliiadareetsiaiieleaiaoritaddedoideieaare {CHEMENAUACERTICAUALLIETTITOLIDENARI} umuieeonriaet {INCAMISIASATIATOSIPRIMADETENERLO} lgaliuoeaiiut {LIBERATOFARLONEADUEDUTO} earauualinueeiliuaeainnress"
+    ],
+    [
+     "ctl2_f70.txt",
+     "nduiamaialoneatantitarsteadttadaduriallaeseasuadomeeuiilariiaduoadleuiiarialiaaroreaeaararei {ANCHEPO} suaaornaluaeadutiallatulainuomaotiuertruiuilisosaeetiiitoaeudalsnalaltileuareadeinaliiearaadadotinadelaieoaleeaasadaldaluealegatiialadiiilitadiuniiieiiieroiiiireeialiiilaliiaiorarloaualiieeotoinimalerolaliret {PENSATO} neatoariealiilenadtitottinadoiiimaeumioetalimiariperieinneemiatliarualieemioiiaimtaiadariaretalimaialeimedieoiimrtaialt"
+    ]
+   ]
+  },
+  {
+   "score": -3510.600021510192,
+   "lm": -2769.942039356567,
+   "prior": -740.6579821536252,
+   "units": 0.0,
+   "key": {
+    "S27": "c",
+    "S0": "",
+    "S23": "i",
+    "S25": "i",
+    "S7": "o",
+    "S24": "l",
+    "S4": "e",
+    "S30": "",
+    "S6": "d",
+    "S29": "i",
+    "S21": "et",
+    "S3": "s",
+    "S32": "u",
+    "S9": "m",
+    "S11": "r",
+    "S17": "a",
+    "S12": "a",
+    "S10": "t",
+    "S20": "de",
+    "S13": "es",
+    "S22": "n",
+    "S26": "t",
+    "S15": "ad",
+    "S2": "el",
+    "S18": "l",
+    "S16": "per",
+    "S5": "e",
+    "S28": "e",
+    "S8": "s",
+    "S14": "en",
+    "S19": "an",
+    "S31": "che",
+    "S33": "con"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "ciioledietsudddmeredaautedelesnontntdadiutauiaueluadelldestuperuiadtemreriuadeiitmesiuttrieteirtelreauoientiaduisuaiuaitescatiadiadeerrirartinnouaduiadirtetaditianumrtmiepereetiani {ALOEXEQUIREQUANTODA} teneudiiiet {CHEEQUESTOCHEUEDUTOLA} adidotaioead {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} tdriperiadim {ADUILTAET} tdocraitiicmtitiimritiriidmietadrdometineutadraatdioaiaetaeetanetdeladadetuscheuudelree {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} iauiuaaduircaneieeluiriediiuiadrretueocncmciiiian {CHEMENAUACERTICAUALLIETTITOLIDENARI} tantuiimrsuris {INCAMISIASATIATOSIPRIMADETENERLO} desarrtiaderitte {LIBERATOFARLONEADUEDUTO} naittaiusteiiudtiiiusseperel"
+    ],
+    [
+     "ctl2_f70.txt",
+     "sctuientaadsirieiseueapereeoreeootualeeleipertomanintlruotmodntiuaatiariadeieiaaniu {ANCHEPO} pertiiadsatiiicterardietdiustadenadeutneteetttitdtpermirperiiieiuemietcapersaaetdetiarioelatiaiooadeloilunmannriieloacateaiesiierraoiudteioiutsuuueuuietaduuiiuiduuuilduuiuadadaditatiueiradeadusuendiraddars {PENSATO} snieadiueadisoetermeeusroaduenitanadeeauanarconilsiianuiedataeiantadiuiruraneiuoaasraanitarntaniciaduuaneiuiae"
+    ]
+   ]
+  },
+  {
+   "score": -3554.621279458602,
+   "lm": -3010.626639559865,
+   "prior": -543.9946398987372,
+   "units": 0.0,
+   "key": {
+    "S27": "",
+    "S0": "i",
+    "S23": "",
+    "S25": "i",
+    "S7": "u",
+    "S24": "ar",
+    "S4": "l",
+    "S30": "i",
+    "S6": "t",
+    "S29": "t",
+    "S21": "g",
+    "S3": "in",
+    "S32": "a",
+    "S9": "ad",
+    "S11": "e",
+    "S17": "r",
+    "S12": "et",
+    "S10": "e",
+    "S20": "b",
+    "S13": "on",
+    "S22": "o",
+    "S26": "m",
+    "S15": "n",
+    "S2": "per",
+    "S18": "c",
+    "S16": "p",
+    "S5": "u",
+    "S28": "o",
+    "S8": "d",
+    "S14": "de",
+    "S19": "s",
+    "S31": "om",
+    "S33": "ma"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "iiuarlittginatttadlieltretaelibaronouoeiomiitntamrairaperainlarctioneapatietteuadeleitanotteadlidiameeigleeiperieorautdemnaiinaettarieodreiniiinllieeteetemioiouiainainieegneiisaademadilpugisi {ALOEXEQUIREQUANTODA} elouatttigii {CHEEQUESTOCHEUEDUTOLA} ntueettuun {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} mteiptntadi {ADUILTAET} ietuieettetitadieietiadeimtiieittadignietuadomiooaerteetetetiuetiietgetlgroomtpernniumainomiaatperell {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} traiaetrtaiieroloperaiieilttiaineegauuoadititiro {CHEMENAUACERTICAUALLIETTITOLIDENARI} eseattadediaeiin {INCAMISIASATIATOSIPRIMADETENERLO} tonetieeenleimieu {LIBERATOFARLONEADUEDUTO} orieeetadeltatieitiaddilpper"
+    ],
+    [
+     "ctl2_f70.txt",
+     "deaidemetndteiuidoaorpolueoouueiaetclperlipeuadstoeiicieiaueadutoeairietmirenililirroa {ANCHEPO} peiinideteitieoieetetiuetiadendenuaeogogemeitmpadepittuiaioadileetpdetetomtleretularetimtriuunoarutcaoadetooeiiperuetetelettoniueieietuaiitmouaedaaalaiatgniaiaittaitaaactaaianirtnieetmaltenonadadettienteteiiin {PENSATO} doiuniialetiittduomoeadooadeuniaidetesinluetasireimaitardttsaiutireetiltsmniaieaesoiauririneetisimeteomstitnaasioiaetu"
+    ]
+   ]
+  }
+ ]
+}

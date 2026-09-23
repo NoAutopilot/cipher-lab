@@ -12,3 +12,9 @@ for n in 1 2 3; do
 done
 python3 campaign.py C1-joint-shuffled2 --model $M -- control/ctl1_f68.txt control/ctl1_f70.txt $SET --shuffle 2
 python3 campaign.py C1-joint-clearctx --model $M --truth control/ctl1_f68.truth.json control/ctl1_f70.truth.json -- control/ctl1_f68.txt control/ctl1_f70.txt $SET --context clear
+# profile-matched design (IC 0.060, 26/27 types), added 23 Sept 2026
+TP68=control/ctlP_f68.truth.json; TP70=control/ctlP_f70.truth.json
+python3 campaign.py CP-joint --model $M --truth $TP68 $TP70 -- control/ctlP_f68.txt control/ctlP_f70.txt $SET
+python3 campaign.py CP-f68-alone --model $M --truth $TP68 -- control/ctlP_f68.txt $SET
+python3 campaign.py CP-f70-alone --model $M --truth $TP70 -- control/ctlP_f70.txt $SET
+python3 campaign.py CP-joint-shuffled1 --model $M -- control/ctlP_f68.txt control/ctlP_f70.txt $SET --shuffle 1

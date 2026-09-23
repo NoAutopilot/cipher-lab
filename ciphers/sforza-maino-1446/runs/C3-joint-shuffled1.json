@@ -1,0 +1,895 @@
+{
+ "files": [
+  "ctl3_f68.txt",
+  "ctl3_f70.txt"
+ ],
+ "context": "none",
+ "scoring": "gen",
+ "p_null": 0.03,
+ "restarts": 16,
+ "iters": 300000,
+ "T0": 3.0,
+ "T1": 0.05,
+ "caps": {
+  "syl": 6,
+  "word": 4,
+  "null": 2,
+  "homo": 4
+ },
+ "fix": {},
+ "syl": "vc",
+ "shuffle": 1,
+ "ntokens": 794,
+ "nsigns": 32,
+ "scores": [
+  -3424.930321737529,
+  -3434.77913045292,
+  -3451.872753558873,
+  -3474.6959613627955,
+  -3478.940471134978,
+  -3484.8519743263996,
+  -3484.925754661486,
+  -3487.722256922738,
+  -3516.679706172272,
+  -3523.981964675564,
+  -3529.537407557701,
+  -3529.8282733266433,
+  -3532.798690883533,
+  -3536.619088715923,
+  -3601.5834612626572,
+  -3639.7013515897665
+ ],
+ "best": {
+  "score": -3424.930321737529,
+  "lm": -2641.5204074159265,
+  "prior": -783.4099143216024,
+  "units": 0.0,
+  "key": {
+   "S12": "i",
+   "S18": "o",
+   "S32": "a",
+   "S31": "i",
+   "S6": "de",
+   "S3": "m",
+   "S5": "a",
+   "S1": "",
+   "S27": "l",
+   "S25": "u",
+   "S16": "e",
+   "S20": "n",
+   "S29": "ah",
+   "S28": "o",
+   "S26": "",
+   "S21": "i",
+   "S24": "t",
+   "S23": "d",
+   "S14": "i",
+   "S10": "s",
+   "S9": "ad",
+   "S33": "c",
+   "S11": "r",
+   "S19": "e",
+   "S4": "r",
+   "S2": "et",
+   "S22": "s",
+   "S7": "in",
+   "S0": "ma",
+   "S8": "ar",
+   "S13": "g",
+   "S15": "p"
+  },
+  "reading": [
+   [
+    "ctl3_f68.txt",
+    "ioaidemiaaalmoauammieunaiahioitiimnoodainaasaadncardauariuaiiamomertenualeetaideiaasuaerelimaaiuurietinnuiuesieeimaritanaatauineonuisarmistimuradictaleetaeadlettdeegaladodir {LIMEDESUMRESPETTI} auoaaiieau {CONLIHOMINIDELOMBARDORE} aaammmeet {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} irisgaiii {QUADRADELMURO} emntioniuuoleueiigideieuunaiuoiimaeeeiuuertmneiuriaiiiinoetmaeteusiliiiiadiuaoeo {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} eoilimoadiiliauutrentelinadnieguuiuiaeaiaade {EMOLTIALTRICHESENALUNGOSCRIUERE} iamagniieiuieti {QUESTILECHPOSSANOESSEREADQUALCHE} adarcusiiagiolu {ETETIAMQUANDOBENELOUESCOUO} sailaeetietuiretiluismausuoa"
+   ],
+   [
+    "ctl3_f70.txt",
+    "letueainruuuadadiinieuueneiiadisnaledianinadmiaioeaiareadmasdesdiidegliaitoettae {INBONA} dieeinisaromaarmtueseeiaariadinelmionriieusdeissimannuiurmaidemrelsetintecnuadaunetiitumaeetaiiianimearlgdnomeidildiateesiteaduluiiuaiaiioctneulsaadoreeaemaduiiinismanemauuiosrillmadiliniettereuiiiin {ETESSERE} mrmeeloinldeimpirmnaeanoiileaugonismmatliunetatieemaiemasicainimetuaoistteuiimadidinettadinisarietinuieetl"
+   ]
+  ]
+ },
+ "per_token": -4.3135142591152755,
+ "runs": [
+  {
+   "score": -3424.930321737529,
+   "lm": -2641.5204074159265,
+   "prior": -783.4099143216024,
+   "units": 0.0,
+   "key": {
+    "S12": "i",
+    "S18": "o",
+    "S32": "a",
+    "S31": "i",
+    "S6": "de",
+    "S3": "m",
+    "S5": "a",
+    "S1": "",
+    "S27": "l",
+    "S25": "u",
+    "S16": "e",
+    "S20": "n",
+    "S29": "ah",
+    "S28": "o",
+    "S26": "",
+    "S21": "i",
+    "S24": "t",
+    "S23": "d",
+    "S14": "i",
+    "S10": "s",
+    "S9": "ad",
+    "S33": "c",
+    "S11": "r",
+    "S19": "e",
+    "S4": "r",
+    "S2": "et",
+    "S22": "s",
+    "S7": "in",
+    "S0": "ma",
+    "S8": "ar",
+    "S13": "g",
+    "S15": "p"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "ioaidemiaaalmoauammieunaiahioitiimnoodainaasaadncardauariuaiiamomertenualeetaideiaasuaerelimaaiuurietinnuiuesieeimaritanaatauineonuisarmistimuradictaleetaeadlettdeegaladodir {LIMEDESUMRESPETTI} auoaaiieau {CONLIHOMINIDELOMBARDORE} aaammmeet {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} irisgaiii {QUADRADELMURO} emntioniuuoleueiigideieuunaiuoiimaeeeiuuertmneiuriaiiiinoetmaeteusiliiiiadiuaoeo {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} eoilimoadiiliauutrentelinadnieguuiuiaeaiaade {EMOLTIALTRICHESENALUNGOSCRIUERE} iamagniieiuieti {QUESTILECHPOSSANOESSEREADQUALCHE} adarcusiiagiolu {ETETIAMQUANDOBENELOUESCOUO} sailaeetietuiretiluismausuoa"
+    ],
+    [
+     "ctl3_f70.txt",
+     "letueainruuuadadiinieuueneiiadisnaledianinadmiaioeaiareadmasdesdiidegliaitoettae {INBONA} dieeinisaromaarmtueseeiaariadinelmionriieusdeissimannuiurmaidemrelsetintecnuadaunetiitumaeetaiiianimearlgdnomeidildiateesiteaduluiiuaiaiioctneulsaadoreeaemaduiiinismanemauuiosrillmadiliniettereuiiiin {ETESSERE} mrmeeloinldeimpirmnaeanoiileaugonismmatliunetatieemaiemasicainimetuaoistteuiimadidinettadinisarietinuieetl"
+    ]
+   ]
+  },
+  {
+   "score": -3434.77913045292,
+   "lm": -2743.973127004574,
+   "prior": -690.8060034483462,
+   "units": 0.0,
+   "key": {
+    "S12": "i",
+    "S18": "in",
+    "S32": "o",
+    "S31": "",
+    "S6": "che",
+    "S3": "n",
+    "S5": "i",
+    "S1": "t",
+    "S27": "a",
+    "S25": "a",
+    "S16": "l",
+    "S20": "",
+    "S29": "ma",
+    "S28": "u",
+    "S26": "r",
+    "S21": "e",
+    "S24": "e",
+    "S23": "c",
+    "S14": "i",
+    "S10": "m",
+    "S9": "g",
+    "S33": "ar",
+    "S11": "et",
+    "S19": "o",
+    "S4": "s",
+    "S2": "u",
+    "S22": "d",
+    "S7": "ad",
+    "S0": "per",
+    "S8": "an",
+    "S13": "s",
+    "S15": "on"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "iinochenioiotaninoaonnitlaiimatiureeinuucoiiimigarietctoarotetiaieeininnostelatoaluicoeitidailrretlaintoiiaaetuadaralmelopersieoioeoailruaemannedenaetgeareoaluolgautecolsiaicuciet {LIMEDESUMRESPETTI} oauoririoia {CONLIHOMINIDELOMBARDORE} oionnnooet {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} tisdsiee {QUADRADELMURO} onereintatainalalitesicheiotaaoiauirnioooreaalsenoiaettriiiinuperlreoramiaeiigiaiulin {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} outtiaenruiciiateoaaesorelaegelsataiaeoltirogot {EMOLTIALTRICHESENALUNGOSCRIUERE} ioperseroiaue {QUESTILECHPOSSANOESSEREADQUALCHE} gietaramiiostinaat {ETETIAMQUANDOBENELOUESCOUO} diiailueuaeetoeeattaimperamaini"
+    ],
+    [
+     "ctl3_f70.txt",
+     "aruaoiietaaaggiadrelaaoliiictidialciiadgniinloisognimcldrceticostrarteoieuureil {INBONA} ciloiemanuperannetaltmloiiitettrgadlaniinsrelamcommperateasperechenetladuadelaragiautieaperouiiiinlietascunlictiacioelltmtrelgaaariiaioiteinarelatadiginettrloolngaireiimnolperataiumetaaperciaiileeoetlaeead {ETESSERE} nretnloautadacheetnontietnolitinitaliasudnniteaatutieteotoperelpermaritenuaiinimeeoarietpercicradleeocaddosiuiaioua"
+    ]
+   ]
+  },
+  {
+   "score": -3451.872753558873,
+   "lm": -2673.3913174299523,
+   "prior": -778.4814361289204,
+   "units": 0.0,
+   "key": {
+    "S12": "",
+    "S18": "al",
+    "S32": "e",
+    "S31": "s",
+    "S6": "p",
+    "S3": "u",
+    "S5": "i",
+    "S1": "i",
+    "S27": "e",
+    "S25": "t",
+    "S16": "t",
+    "S20": "e",
+    "S29": "ac",
+    "S28": "a",
+    "S26": "",
+    "S21": "o",
+    "S24": "n",
+    "S23": "d",
+    "S14": "r",
+    "S10": "a",
+    "S9": "et",
+    "S33": "de",
+    "S11": "n",
+    "S19": "i",
+    "S4": "ma",
+    "S2": "per",
+    "S22": "m",
+    "S7": "a",
+    "S0": "in",
+    "S8": "l",
+    "S13": "an",
+    "S15": "is"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "alespueieieualeteuuitteiaciaonsueaadereiiaietedeindieteintiooiualuimaintetieetperisdioiiimtitnteruieittnsperaetsttaotisinmaneeienetetaetoaluomnsutnetodeneetpereteteperinditanieidadrn {LIMEDESUMRESPETTI} etaeisiit {CONLIHOMINIDELOMBARDORE} eieuuuiini {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} imasmanioos {QUADRADELMURO} iuenoalesititaletttrioanpriitteetasuiiiiotttmanueitnisissealperintnitaresoettiatal {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} iaiieouaidrreioettnmaienteoeeteotantittoetiiseetii {EMOLTIALTRICHESENALUNGOSCRIUERE} reinaneosirtspero {QUESTILECHPOSSANOESSEREADQUALCHE} etindetareanisaleti {ETETIAMQUANDOBENELOUESCOUO} mieitperopertoninoeiitaintatali"
+    ],
+    [
+     "ctl3_f70.txt",
+     "epertiientttetetraotttietridirmeietdieaetusisaltesimaietuiadtmdoidianieioenapernit {INBONA} dtieoalainlunittiatiriiinsietateualemasottadisaasineetiotmainopuntemperantdeetetiteperisrntiniperirsiesutineandeautrdiredenttiasintettetrrtiserioaldenettiemietalnitietuettroreaueetintitraanseeinderetnninttoosa {ETESSERE} unutieaiaepoiuisinueetieialsietitanaesmuuiinesteiperiinioiiiinotinasdeiioesupertialannitroiinddatnnedasmemarperetipere"
+    ]
+   ]
+  },
+  {
+   "score": -3474.6959613627955,
+   "lm": -2709.3328058496118,
+   "prior": -765.3631555131838,
+   "units": 0.0,
+   "key": {
+    "S12": "u",
+    "S18": "s",
+    "S32": "i",
+    "S31": "e",
+    "S6": "f",
+    "S3": "r",
+    "S5": "t",
+    "S1": "",
+    "S27": "e",
+    "S25": "i",
+    "S16": "",
+    "S20": "o",
+    "S29": "b",
+    "S28": "d",
+    "S26": "a",
+    "S21": "i",
+    "S24": "s",
+    "S23": "o",
+    "S14": "n",
+    "S10": "in",
+    "S9": "et",
+    "S33": "es",
+    "S11": "ar",
+    "S19": "m",
+    "S4": "a",
+    "S2": "p",
+    "S22": "che",
+    "S7": "er",
+    "S0": "l",
+    "S8": "la",
+    "S13": "an",
+    "S15": "ma"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "usiefruitiersiiirruiotubudaisueroddoinottintetoestaroiiaiaruitiitrsrmasoiiepteomittcheitaaarenrituiiareperoieaiinimelausiotisiiuoadoiiinlaricheseriaretiessiepietepsomantetodonar {LIMEDESUMRESPETTI} iidiataeumti {CONLIHOMINIDELOMBARDORE} itirrrmms {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} uaecheantiie {QUADRADELMURO} mrosaisoeiiseinianufnmiioiuidueartmmmaiiiasromuiareatuueeosplasmaiinneeiuuetuitds {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} mdueiradtonneiiiisamaoseioetoianiiuiiitaeietm {EMOLTIALTRICHESENALUNGOSCRIUERE} nilanoieamniepi {QUESTILECHPOSSANOESSEREADQUALCHE} ettaresiinnuianesei {ETETIAMQUANDOBENELOUESCOUO} chetuetpipiiarmsieiuinliinist"
+    ],
+    [
+     "ctl3_f70.txt",
+     "eapimtuoariiietetneraiiimonutoncheoteoutoeretretesietametrtinocheaoiuomanaeaiiusdpast {INBONA} oumuoiinladllarsiinmnttareaetererusoaeaiiinomeininelooiiialifrarechepersesoiettiopensilmptunetoertareanoodrnoneouisineasetieianniteinisessoiechetetsaramiretinainouinrioliindinareeelouenoussmariiieer {ETESSERE} raarrmederefirmauarroitosueetiandoecherrtseeioptsimmlilineestioerpitsuinssmianilouoaerssioerecheianpuoiumpe"
+    ]
+   ]
+  },
+  {
+   "score": -3478.940471134978,
+   "lm": -2875.8401985716773,
+   "prior": -603.1002725633009,
+   "units": 0.0,
+   "key": {
+    "S12": "i",
+    "S18": "m",
+    "S32": "d",
+    "S31": "n",
+    "S6": "c",
+    "S3": "u",
+    "S5": "i",
+    "S1": "i",
+    "S27": "",
+    "S25": "t",
+    "S16": "e",
+    "S20": "o",
+    "S29": "z",
+    "S28": "s",
+    "S26": "s",
+    "S21": "a",
+    "S24": "a",
+    "S23": "et",
+    "S14": "u",
+    "S10": "",
+    "S9": "il",
+    "S33": "che",
+    "S11": "o",
+    "S19": "r",
+    "S4": "in",
+    "S2": "l",
+    "S22": "al",
+    "S7": "er",
+    "S0": "a",
+    "S8": "la",
+    "S13": "per",
+    "S15": "ol"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "imdncuididiumdtduuiietoiiziissaainuossetduoiiiilocheioetidtsdioitiaaiumuriniaeotidelinetraiiialtiessoeuuidiittonlerotnsteaernainiadoidadtioessotalauaalanutoilacheadeldeilliaetreperiietsetuo {LIMEDESUMRESPETTI} dtsdsisnirit {CONLIHOMINIDELOMBARDORE} diduuurrai {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} iiinnalperiaan {QUADRADELMURO} ruoasamonititmeteuiapericurittoditsinsuirrrsatteinauoritoinsiiinnomlaesarstunaiiilitisem {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} rsiiiaussietuuiadttainrsoaeaoiloaepertititadeiisndilri {EMOLTIALTRICHESENALUNGOSCRIUERE} udaperoansrutnla {QUESTILECHPOSSANOESSEREADQUALCHE} iliochetuidperinmti {ETETIAMQUANDOBENELOUESCOUO} aliiielaltaoraaiitiattmi"
+    ],
+    [
+     "ctl3_f70.txt",
+     "sltriiootttililuersaettroeuiietiualoieetiioeriluninmedniinriluietealsetaiietrperissiadiaslsaie {INBONA} etierioalasalauaiteieruiiionisilereuimoinnsaetetrnnaootiatinaacuoealleraecheotilitolinuatarliiunionueioperetosueuetiuetidaeeinisaeilttsuutinduiamcheaoetialiilmoiserdeuiltusauoiudoeatitusonaetiuoieaaroetaaner {ETESSERE} usouersiercaiuoliiouodeioiminieitpersonaluuiiantoiliiaiariraaeancheiiaonultimiaartsuaiaetietsereaadeternaldinuliotirl"
+    ]
+   ]
+  },
+  {
+   "score": -3484.8519743263996,
+   "lm": -2877.264259316027,
+   "prior": -607.5877150103722,
+   "units": 0.0,
+   "key": {
+    "S12": "",
+    "S18": "ma",
+    "S32": "r",
+    "S31": "i",
+    "S6": "at",
+    "S3": "u",
+    "S5": "i",
+    "S1": "e",
+    "S27": "n",
+    "S25": "a",
+    "S16": "i",
+    "S20": "l",
+    "S29": "er",
+    "S28": "i",
+    "S26": "n",
+    "S21": "t",
+    "S24": "o",
+    "S23": "e",
+    "S14": "o",
+    "S10": "s",
+    "S9": "ar",
+    "S33": "in",
+    "S11": "m",
+    "S19": "t",
+    "S4": "an",
+    "S2": "et",
+    "S22": "de",
+    "S7": "c",
+    "S0": "s",
+    "S8": "p",
+    "S13": "d",
+    "S15": "g"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "mariaturirenumararuueialiereintoiuliieroliisiarlinimeeranremaittiumautaneoilaernietiiettieideaiinnminoueriaamietclainaistitisanorliroralinilatsputdeoiuamartinornietriarneteoetidinieieom {LIMEDESUMRESPETTI} rairninitia {CONLIHOMINIDELOMBARDORE} riruuuttoe {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} eanideditti {QUADRADELMURO} tulontmalieaeamaniaioetdatoteaalraiinuitttntaaianoultameiniiilmaetsinotnasonitaraiiima {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} tieentuniieoonetraaoantnlointlarltidaeaatrieinirarte {EMOLTIALTRICHESENALUNGOSCRIUERE} orsdltintoaiett {QUESTILECHPOSSANOESSEREADQUALCHE} ariminasordeimanae {ETETIAMQUANDOBENELOUESCOUO} deiniiettetatmtotneeassasamai"
+    ],
+    [
+     "ctl3_f70.txt",
+     "nnetatilmaaaararocntiaatlioieeodelinieilcaruiiimairiiantaruiseideneteetdennnetroietnoii {INBONA} eitltspispuoeaiesitoiiemienarcinumalanintiasetissisllaetaanstatumindeetcoiinlaarialeteiooastetioiiliuiimndeliuioeeoneroiiesienoiarananooaiiroetmainoliaendeiarmamenitriuaraontolsurlisaeaoisminnsenoliootmiattic {ETESSERE} unmuitniecnatteugemulriilemaieniiadilideuuieonialeeteioettetstissiinietliuetaimasootanoteseencioorecideranoetlatetn"
+    ]
+   ]
+  },
+  {
+   "score": -3484.925754661486,
+   "lm": -2779.945099613513,
+   "prior": -704.9806550479731,
+   "units": 0.0,
+   "key": {
+    "S12": "e",
+    "S18": "t",
+    "S32": "i",
+    "S31": "a",
+    "S6": "de",
+    "S3": "l",
+    "S5": "u",
+    "S1": "n",
+    "S27": "d",
+    "S25": "s",
+    "S16": "",
+    "S20": "i",
+    "S29": "che",
+    "S28": "et",
+    "S26": "i",
+    "S21": "e",
+    "S24": "",
+    "S23": "r",
+    "S14": "a",
+    "S10": "t",
+    "S9": "on",
+    "S33": "h",
+    "S11": "o",
+    "S19": "i",
+    "S4": "er",
+    "S2": "es",
+    "S22": "m",
+    "S7": "c",
+    "S0": "p",
+    "S8": "c",
+    "S13": "o",
+    "S15": "em"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "etiadeleiuindltisillensiuecheneetieealietetriaiuutuonihuornisiinoesueeultliernisnidesuarieunumsuiiodalniuessoaescisaisteiapereiiuiiseiietisetclemalsoonehidesiondesnriouduretrao {LIMEDESUMRESPETTI} isetiiuiaeius {CONLIHOMINIDELOMBARDORE} iuillliin {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} neeramoueea {QUADRADELMURO} iliietiansnstdsaneoedeainssiieseteailuiiiiesserliiesonaiueeaaitespiiistadaeeeonesuett {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} ietnnedelieturaadneisseriiideionieosnseseinuiaionin {EMOLTIALTRICHESENALUNGOSCRIUERE} aipoieaiiasaese {QUESTILECHPOSSANOESSEREADQUALCHE} onuohstaeionatdsn {ETETIAMQUANDOBENELOUESCOUO} muedueseesseoiednnsetpststu"
+    ],
+    [
+     "ctl3_f70.txt",
+     "diessiueiosssononaciessiiaeurnamiudreuiconlauatiauerionlutrmirenerionidineieetesiu {INBONA} reieietcetpclnsntiauunoanioncdletieraiestriattapiisneserpedelodmeschisonusiesnaaspiesueaauialuodorietlarnadreintanionsdsiaasuaianethisndmuontoniiilonsaieaietliipsnsaettoaddpredaieioseeac {ETESSERE} liolidetncddeenlemneoliiuinteandusoetiamllundasinesnuneinipeptahuneialessutetisiaenprericircamieraeseiseiesd"
+    ]
+   ]
+  },
+  {
+   "score": -3487.722256922738,
+   "lm": -2807.9954211989534,
+   "prior": -679.7268357237842,
+   "units": 0.0,
+   "key": {
+    "S12": "e",
+    "S18": "i",
+    "S32": "r",
+    "S31": "t",
+    "S6": "el",
+    "S3": "i",
+    "S5": "a",
+    "S1": "u",
+    "S27": "s",
+    "S25": "a",
+    "S16": "u",
+    "S20": "n",
+    "S29": "la",
+    "S28": "",
+    "S26": "t",
+    "S21": "e",
+    "S24": "o",
+    "S23": "d",
+    "S14": "i",
+    "S10": "l",
+    "S9": "r",
+    "S33": "er",
+    "S11": "de",
+    "S19": "",
+    "S4": "an",
+    "S2": "ad",
+    "S22": "m",
+    "S7": "o",
+    "S0": "i",
+    "S8": "em",
+    "S13": "et",
+    "S15": "che"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "eirtelierarusiirariieuuanaelaueteoetindrinaalarneradeduratrudeeaaeeaiiianuounaursuadatdeauamaauttdeusiiuraeaadetadonattauleutianeornaroraenutnaelemiemotiadereerorsuadrursaduoduetasaddide {LIMEDESUMRESPETTI} rartatteaa {CONLIHOMINIDELOMBARDORE} rariiiou {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} ueantmetaeet {QUADRADELMURO} inoteintuauaisuauiueeteeliuaanreaettiateaauanoineadeuttaeettniadiutotalisteeereaaui {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} uueseitadiisueraaoantnousenrneuetauaeaeruuattrru {EMOLTIALTRICHESENALUNGOSCRIUERE} irietnettiatade {QUESTILECHPOSSANOESSEREADQUALCHE} radeeralieretutisau {ETETIAMQUANDOBENELOUESCOUO} maesauadeadaedeoesuuaelialaia"
+    ],
+    [
+     "ctl3_f70.txt",
+     "stadaaendeaaarrioteuaanuieaduimnasudeanoritatiurtaanrialdumtdeuedetutstuereoadtoau {INBONA} deuenelemiemiouauuluiaaudetutrousieinantteualdtlltinnaueaanieelideusmadoouernaraanadutioaiadaeitantiuadesetdniuiduisderouuultutourasatiiaatriueieronuausmarideuturuiraiteinelirnuiauaildetssidesineuoodeuaeeto {ETESSERE} itdeiusuoseleuicheuedeinruanuietusuaaetntmiiauostanuaduaoueuieuilterauentiadaaielooatieuidedtouoordotmraniadenaeads"
+    ]
+   ]
+  },
+  {
+   "score": -3516.679706172272,
+   "lm": -2680.538792192936,
+   "prior": -836.1409139793361,
+   "units": 0.0,
+   "key": {
+    "S12": "",
+    "S18": "al",
+    "S32": "i",
+    "S31": "n",
+    "S6": "o",
+    "S3": "i",
+    "S5": "i",
+    "S1": "a",
+    "S27": "u",
+    "S25": "t",
+    "S16": "",
+    "S20": "a",
+    "S29": "im",
+    "S28": "in",
+    "S26": "s",
+    "S21": "u",
+    "S24": "d",
+    "S23": "m",
+    "S14": "e",
+    "S10": "o",
+    "S9": "c",
+    "S33": "or",
+    "S11": "et",
+    "S19": "i",
+    "S4": "on",
+    "S2": "l",
+    "S22": "o",
+    "S7": "o",
+    "S0": "e",
+    "S8": "r",
+    "S13": "r",
+    "S15": "f"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "alinoiiiiauialitiiiataiimainsudniaininmieaiioicaorietmaitsiaettiuuiialiionadataiulinmiuiaiotissetueiaiittetnloatnstouineondiaiiditasinatuoriuodnitetcuordiuliculadmiriuiminmeet {LIMEDESUMRESPETTI} itinisisniit {CONLIHOMINIDELOMBARDORE} iiiiiiiida {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} aonnoriuun {QUADRADELMURO} iiadsualanatataluteauroeiattaitinnsiiiiisuttondiaitetansinnaallesdistoeunuctiinal {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} iinaauuisinimeeuauittdonisaduuacaurtattuiaisnicia {EMOLTIALTRICHESENALUNGOSCRIUERE} eieraunsietnlu {QUESTILECHPOSSANOESSEREADQUALCHE} cietortoeiranaluta {ETETIAMQUANDOBENELOUESCOUO} oiuilultuetiduuaatoetotali"
+    ],
+    [
+     "ctl3_f70.txt",
+     "usltiiaettttcceosuttiaeimaeoaiumiaocininalinioniciiomosmuamirasusauidinlsdi {INBONA} miauorineridataoieiiaetnascouialaonnsutominooneaatautoneuoietuolodoratcitalanedteilienianiieturmainiemaeumidaonasdctutseetinieaualordatauoicaletasiiictesueaoiiaetateinoetnuuemueaddiettuuno {ETESSERE} isetiiuinaououaifaetiaiiaaalnauitrinanoiiiaduntaalaidauiaieueonoriauaniltialodditseuaemmsoddimonoionelatilu"
+    ]
+   ]
+  },
+  {
+   "score": -3523.981964675564,
+   "lm": -2972.5443697944283,
+   "prior": -551.437594881136,
+   "units": 0.0,
+   "key": {
+    "S12": "",
+    "S18": "ar",
+    "S32": "a",
+    "S31": "i",
+    "S6": "lo",
+    "S3": "et",
+    "S5": "s",
+    "S1": "e",
+    "S27": "d",
+    "S25": "t",
+    "S16": "e",
+    "S20": "i",
+    "S29": "ad",
+    "S28": "o",
+    "S26": "e",
+    "S21": "u",
+    "S24": "l",
+    "S23": "in",
+    "S14": "r",
+    "S10": "a",
+    "S9": "m",
+    "S33": "la",
+    "S11": "u",
+    "S19": "o",
+    "S4": "c",
+    "S2": "n",
+    "S22": "a",
+    "S7": "el",
+    "S0": "n",
+    "S8": "z",
+    "S13": "non",
+    "S15": "id"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "arailoetasaedetarataeteteetisadeoeulietiooinarissasmilasuineateaeutsuusetaretoceleiteadensiinousesatseeeuedreteasttuinelitieteaueoinclaisalatieeoituazetualiettumulaladenaemdnelinoenonsdsinoinru {LIMEDESUMRESPETTI} atoaeseiost {CONLIHOMINIDELOMBARDORE} asaetetetoole {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} ecianonsuui {QUADRADELMURO} oetileuariietetardetereunonloroettiatoieetsoooeuttecletiotueiesiiiarnneeloetardiumtsoear {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} ooeedueteosinrrdeuattlcoeileduimiuenontettuaeeseiamoe {EMOLTIALTRICHESENALUNGOSCRIUERE} rannoniuieortinu {QUESTILECHPOSSANOESSEREADQUALCHE} msulataranoneiardte {ETETIAMQUANDOBENELOUESCOUO} asdsenuntuuoludeetantatars"
+    ],
+    [
+     "ctl3_f70.txt",
+     "dentosiutttmmreleuettoiersineraisdeinsielmetisiareaiscometsaineaeinueinononeedeeualonelse {INBONA} ineoiuazonzetleteeaeorsseuieemeledetaricieuetainoiaainiiteutcnuloetuedanellelaitmstineirltnonsrisiietesudnoninioeterinerdinaleeeaieelemtdterrtsiareuarlalietedasmarueeeoaeetmtreuriaetaientetroauiddnindriellouetuuiel {ETESSERE} eteueteodoeeldloueetideuetiaesieariedestnonoiiaetetselditienesleuoeonuenailaseuiietntsaralloterueninineelellaineliaacrnitond"
+    ]
+   ]
+  },
+  {
+   "score": -3529.537407557701,
+   "lm": -2876.2238306477666,
+   "prior": -653.3135769099345,
+   "units": 0.0,
+   "key": {
+    "S12": "",
+    "S18": "p",
+    "S32": "",
+    "S31": "i",
+    "S6": "es",
+    "S3": "s",
+    "S5": "e",
+    "S1": "e",
+    "S27": "r",
+    "S25": "a",
+    "S16": "i",
+    "S20": "i",
+    "S29": "x",
+    "S28": "d",
+    "S26": "u",
+    "S21": "t",
+    "S24": "l",
+    "S23": "al",
+    "S14": "n",
+    "S10": "u",
+    "S9": "et",
+    "S33": "ar",
+    "S11": "m",
+    "S19": "o",
+    "S4": "c",
+    "S2": "n",
+    "S22": "de",
+    "S7": "on",
+    "S0": "in",
+    "S8": "la",
+    "S13": "d",
+    "S15": "f"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "piesseerspasseiaiexedutlisiddalnieeueetiaremaleauemaettespsoceliiaerineialoteeedeaeiuumirnseeaaminoniaiuaiutioiinclielaiiudiatulastdelisamettarlrinietrnelaloiderealdalnm {LIMEDESUMRESPETTI} adueuioea {CONLIHOMINIDELOMBARDORE} esssoole {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} ecidedetti {QUADRADELMURO} osilutpiieaeapriainetdesnoeaaiadiuseoooutaaiclsioameiueiiipniniulouaunritetaedip {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} odeertsudealnnretaalcouilirtietitidaeaatieeuietoe {EMOLTIALTRICHESENALUNGOSCRIUERE} ninditiuonaint {QUESTILECHPOSSANOESSEREADQUALCHE} etemaraundeiprae {ETETIAMQUANDOBENELOUESCOUO} deereintnatmoltreeauinauape"
+    ],
+    [
+     "ctl3_f70.txt",
+     "runaoeimaaaetetnonutiaaoiinealendeierialeionetsieipiiecoetseualideualtealodeuruetldnulei {INBONA} alioituladinlasleaieuioneeemieuetonirspiciutiaualoiuuiiniiaetacintessmirdenonliariaeteaineinlainonenieiisiemrdalidsinalenralliieuieulietaraunnaeinetparliiaerdeeetpmeuioisetanutniusiiinaeandumirrinalrniillomiattion {ETESSERE} sumsiordeonrestesfemsiieiepierieaddiidesseelriaieneeletoeointiinuiareetiisnaepulloaunteinalaluonillalonidecnniaonr"
+    ]
+   ]
+  },
+  {
+   "score": -3529.8282733266433,
+   "lm": -2901.162969432771,
+   "prior": -628.6653038938721,
+   "units": 0.0,
+   "key": {
+    "S12": "i",
+    "S18": "et",
+    "S32": "u",
+    "S31": "l",
+    "S6": "g",
+    "S3": "i",
+    "S5": "o",
+    "S1": "n",
+    "S27": "e",
+    "S25": "i",
+    "S16": "r",
+    "S20": "",
+    "S29": "ma",
+    "S28": "t",
+    "S26": "c",
+    "S21": "a",
+    "S24": "u",
+    "S23": "m",
+    "S14": "",
+    "S10": "a",
+    "S9": "d",
+    "S33": "at",
+    "S11": "de",
+    "S19": "e",
+    "S4": "s",
+    "S2": "t",
+    "S22": "in",
+    "S7": "er",
+    "S0": "ar",
+    "S8": "p",
+    "S13": "s",
+    "S15": "an"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "ietulgiiuouneietuiuiiinrioimanitcauilittmuooaodatodemnuicundeiioaaoietiesnurinuertolmeaonoiniorccdereinuoiiidelterilciraarelarsiuuouuuiirctiaapiainuliidedaatuuerturdetnumersoeomtmde {LIMEDESUMRESPETTI} uitucoclieoi {CONLIHOMINIDELOMBARDORE} uouiiieeun {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} nislinsoaal {QUADRADELMURO} eiucaetlninieterirnasigeniiuiitilcioeeecaiirsuieiidenlcoiillettarrcueciaelaiidiiotret {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} etnnieaictomenauiiusecureadarsiniiiaurnocluden {EMOLTIALTRICHESENALUNGOSCRIUERE} uarsalceilta {QUESTILECHPOSSANOESSEREADQUALCHE} dodeatiaiusnletein {ETETIAMQUANDOBENELOUESCOUO} inoieortatiadeeuaenniiaariaieto"
+    ],
+    [
+     "ctl3_f70.txt",
+     "ectieoideiiiddercariieriomninoermioerdiloletrulosedioamrincmanimesncecnauiuttcuor {INBONA} mireiaaptarpiunirnareoondelncderreiietslcariamelaalarinaisaragidereinteruratidoitnluiaretoilolirodeesmtirmnemiuurrnalncurdieiciolunaetaturineinodetdencreuridicaiaiurarinitadeleearmieiruuederiaaler {ETESSERE} icdeireetnereganiannideiuronetilneroistliniionuelintnounaenearararalatonalitioetiauueicanarmimcerruuumerlinustiiiete"
+    ]
+   ]
+  },
+  {
+   "score": -3532.798690883533,
+   "lm": -2803.5578845159616,
+   "prior": -729.2408063675712,
+   "units": 0.0,
+   "key": {
+    "S12": "",
+    "S18": "c",
+    "S32": "",
+    "S31": "o",
+    "S6": "de",
+    "S3": "r",
+    "S5": "i",
+    "S1": "u",
+    "S27": "t",
+    "S25": "i",
+    "S16": "a",
+    "S20": "e",
+    "S29": "x",
+    "S28": "et",
+    "S26": "a",
+    "S21": "n",
+    "S24": "t",
+    "S23": "d",
+    "S14": "i",
+    "S10": "m",
+    "S9": "l",
+    "S33": "de",
+    "S11": "s",
+    "S19": "i",
+    "S4": "al",
+    "S2": "s",
+    "S22": "per",
+    "S7": "es",
+    "S0": "in",
+    "S8": "en",
+    "S13": "ad",
+    "S15": "la"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "coderiutrcirruaieixuetantoreetetdieiimiledeisduiausiinnircrialutaeiutasiodiniuiperiiaaasatiruiiisoseseioaiamnaioinalteitieaaeteinmenrnpertorislndettasaltsutdiaaditidetdis {LIMEDESUMRESPETTI} ietaiaoiii {CONLIHOMINIDELOMBARDORE} irrriitu {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} ualoperadinno {QUADRADELMURO} iretanceouiuictaiaiunaddeiiuiieietoariiiianiiaaltreiisuoaiooecsinaatiaimitonliietac {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} ietuutnraetidiituniitaliaetatnelenaadiuiinauiaoliu {EMOLTIALTRICHESENALUNGOSCRIUERE} iinadenoaiiiosn {QUESTILECHPOSSANOESSEREADQUALCHE} lisdeimiaduoctiu {ETETIAMQUANDOBENELOUESCOUO} peritiasnsinsitntuuiminimici"
+    ],
+    [
+     "ctl3_f70.txt",
+     "tasiiiesiiilliesanaiiieaiiduipereitadieeslroiocaoialilrimdaperadnudiaduatauntetsatia {INBONA} daienmenetinenrtuiaumaiiiiusoualesatrcealoanaimdiommoineeiunialinndersatpersestadeeiliiesuoitiinisiioieoraistaddeetraiduitdtaaumouatalitiaiiiioiuncdeteaiutperilcsuaaiarliianiemreainiuiietmsottindtieattisainnoes {ETESSERE} rasraitetuestdenurlausreaieucoutaiiadeteoperrriuttoieusuituniuiinnainmodeiuneorsiicmttiiainuinddaesattdesoperaliseiist"
+    ]
+   ]
+  },
+  {
+   "score": -3536.619088715923,
+   "lm": -2816.9353696414037,
+   "prior": -719.6837190745194,
+   "units": 0.0,
+   "key": {
+    "S12": "",
+    "S18": "an",
+    "S32": "",
+    "S31": "n",
+    "S6": "al",
+    "S3": "i",
+    "S5": "t",
+    "S1": "i",
+    "S27": "d",
+    "S25": "r",
+    "S16": "e",
+    "S20": "o",
+    "S29": "or",
+    "S28": "e",
+    "S26": "a",
+    "S21": "u",
+    "S24": "l",
+    "S23": "m",
+    "S14": "a",
+    "S10": "a",
+    "S9": "e",
+    "S33": "on",
+    "S11": "n",
+    "S19": "o",
+    "S4": "et",
+    "S2": "che",
+    "S22": "e",
+    "S7": "per",
+    "S0": "de",
+    "S8": "f",
+    "S13": "s",
+    "S15": "im"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "annalitidianriiierotorieaulnioeemaottateoontnmirainrtuutianioetileoridechetnmoutiterteaanedaiitrrnncheperornareaueondeetlotlroeaeoruafiuelnirneuonldecheeedcheilmoestdtmeman {LIMEDESUMRESPETTI} reatanotr {CONLIHOMINIDELOMBARDORE} tiiiooli {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} ietnestuun {QUADRADELMURO} oiolauanonirirandereaiusalaoirrorenaitoooaurreetlioorninatnnoanchedeealoaraadnuerteean {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} oeiiduiaetmaadiurrletoaoleduoeouesrirrueitaneoi {EMOLTIALTRICHESENALUNGOSCRIUERE} adesounaoarncheu {QUESTILECHPOSSANOESSEREADQUALCHE} etnonraasinandri {ETETIAMQUANDOBENELOUESCOUO} etdtecheucherunoludiiraderarant"
+    ],
+    [
+     "ctl3_f70.txt",
+     "dacherotonrrreeaperauerrooeatmiaeotdemtopereintnanentetoeitameeamuimosiadaiulechealte {INBONA} meoouafedefilireiaeoattinniaeperedianoetnaueramonaandeooriuretdeualinedecheperleonoretrocheinalrdeochetantonietndsmoeieamiadmleeianialeerdraaartnaiuanonloerideteanniaeoeieraauaoaioederiraeanndddemdaoelloneruunper {ETESSERE} ianieodeiperdaluiiiminioetoiannidetrseoneiitildnroicheitliuoiodeuedeanontiuonichertanalloraauidemmaperellmperneetacheoroched"
+    ]
+   ]
+  },
+  {
+   "score": -3601.5834612626572,
+   "lm": -2825.1464698947966,
+   "prior": -776.4369913678607,
+   "units": 0.0,
+   "key": {
+    "S12": "",
+    "S18": "et",
+    "S32": "t",
+    "S31": "",
+    "S6": "er",
+    "S3": "i",
+    "S5": "e",
+    "S1": "a",
+    "S27": "u",
+    "S25": "d",
+    "S16": "e",
+    "S20": "o",
+    "S29": "un",
+    "S28": "u",
+    "S26": "o",
+    "S21": "n",
+    "S24": "s",
+    "S23": "n",
+    "S14": "i",
+    "S10": "in",
+    "S9": "i",
+    "S33": "per",
+    "S11": "r",
+    "S19": "t",
+    "S4": "r",
+    "S2": "l",
+    "S22": "ad",
+    "S7": "m",
+    "S0": "i",
+    "S8": "on",
+    "S13": "m",
+    "S15": "p"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "etteritetauiettdtiiaedoeunauonsiouuntioeeineioperernatdotardenneietitraseodatuelentneaeaddeeooreuiiateddrlmododeinnetirstoetstdoeouodninoninadsidrinperstuelteiulasntemeuenunir {LIMEDESUMRESPETTI} tdutoeoted {CONLIHOMINIDELOMBARDORE} tetiiittsa {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} aradmenn {QUADRADELMURO} tiosonetoadadetuedeianmeritaddotduoietttonddersiotdraoeoetlieostodiniunideueet {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} tuaaunioueniiuantddsrtooseunoionemdaddnteaeotita {EMOLTIALTRICHESENALUNGOSCRIUERE} itimonotidln {QUESTILECHPOSSANOESSEREADQUALCHE} ierperdinitmaetuda {ETETIAMQUANDOBENELOUESCOUO} adeueelnldnrtsnuaadinidindete"
+    ],
+    [
+     "ctl3_f70.txt",
+     "uoldteordddiiimoneddtoeienaiadoeueneomiieetetertiieinneadonnantmaouoantsulosee {INBONA} netoninonuionisadeainetieearaoimeuietoronedinntininioodandrinerireuadlmseperodiedolaisditleieoieerumnouieinaiuntseeainaoseidudoiidetianetpersoedauadeietraoetteiidionioinitoeidadiuinruuinuioesstrednnm {ETESSERE} iorietuuamuernaiparioteeoaetaueedmuoadiieasudoalaesantatineiinpereanoildeetinsstdoinainnomesstnmadtrilodtlu"
+    ]
+   ]
+  },
+  {
+   "score": -3639.7013515897665,
+   "lm": -2987.534598495811,
+   "prior": -652.1667530939552,
+   "units": 0.0,
+   "key": {
+    "S12": "e",
+    "S18": "",
+    "S32": "s",
+    "S31": "e",
+    "S6": "es",
+    "S3": "s",
+    "S5": "",
+    "S1": "i",
+    "S27": "u",
+    "S25": "i",
+    "S16": "a",
+    "S20": "o",
+    "S29": "p",
+    "S28": "m",
+    "S26": "u",
+    "S21": "t",
+    "S24": "et",
+    "S23": "al",
+    "S14": "t",
+    "S10": "c",
+    "S9": "l",
+    "S33": "ad",
+    "S11": "ar",
+    "S19": "a",
+    "S4": "de",
+    "S2": "an",
+    "S22": "r",
+    "S7": "n",
+    "S0": "n",
+    "S8": "lo",
+    "S13": "d",
+    "S15": "per"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "eseessessiussissseiaioepiemuteteesommalstocloadaralisiusiareittssadeietaoiisuaanealatiriauuarautsiseiiareannoieuiactaaendeeetsosetsieoaumoitclostretesiarltadetsuaansaluanietalaadualmaltar {LIMEDESUMRESPETTI} simsuueeai {CONLIHOMINIDELOMBARDORE} sssssaaeti {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} iedeerdtte {QUADRADELMURO} asoetutoeiiiiuaiatitdeestaiiioseimeeusaaautiiadeetsoaeiarieueeeeoannauetauictueteeleima {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} amiieutsumalttuitsiietdeauoetautolotadiiieitsaiueslai {EMOLTIALTRICHESENALUNGOSCRIUERE} tsndoteuatieant {QUESTILECHPOSSANOESSEREADQUALCHE} laradictesdieuii {ETETIAMQUANDOBENELOUESCOUO} reuaantanitaraettuiiiecnici"
+    ],
+    [
+     "ctl3_f70.txt",
+     "uuaniaeoariiilltnutaiiaoatealitrouaaleonlseeasedealscalarualtiealadiuuuitseetmanueta {INBONA} aleaaeotclomnlosetiiaicaatiareiulnauseodeeutaicalaeccenooiitidentessaraurannetaadoilioanietetinaaneteoesaarudalomsatalitualesetaaiceiuetaliuiuttiestitadetoaiiurlariuaasaslituttoecssoaniiitmcareuunaleutoeaetetaaraitten {ETESSERE} suarsaauminuestisperiearsosaoieeiuaidmoerssietueioianietitaiantanceaditoesaniecetetaiuttinalealunaetetsalnersdetaneoieaanu"
+    ]
+   ]
+  }
+ ]
+}
