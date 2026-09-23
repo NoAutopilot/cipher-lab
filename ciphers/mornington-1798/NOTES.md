@@ -169,3 +169,7 @@ material).
 REQUEST.md drafted this pass (BL Imaging Services quote): D623/41 (the key, both copies) plus the
 shortest unprinted despatch, D623/4 (3 Jul 1798), as the size/legibility test the original QUEUE row
 proposed, before committing to the full nine-item run. No email sent, no price guessed.
+
+## Edition risk not yet closed (23 September 2026, orchestrator)
+
+Edward Ingram, ed., *Two Views of British India: The Private Correspondence of Mr Dundas and Lord Wellesley, 1798-1801* (Bath, 1970) prints the private Dundas-Wellesley letters of exactly these years and is not on the Internet Archive. Despatches to Dundas "mostly in cipher" are likely to be that private correspondence. Before any imaging payment, check Ingram 1970 by date for D623/4, /5, /22, /24, /27, /28, /30, /35, /36: an IA loan if held, HathiTrust search-only, or a library copy. Until then the best case for this target is unknown, not N3.
