@@ -5,10 +5,46 @@
   "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035959t/manifest.json",
   "archivesetmanuscrits_notice": "http://archivesetmanuscrits.bnf.fr/ark:/12148/cc88606j",
   "leaves_total": 492,
-  "rights": "Bibliotheque nationale de France, public domain reproduction, Gallica, no login required",
+  "rights": "Bibliotheque nationale de France, Gallica; conditions: https://gallica.bnf.fr/html/und/conditions-dutilisation-des-contenus-de-gallica (non-commercial reuse of public-domain reproductions permitted with source credit 'Source gallica.bnf.fr / BnF')",
   "fetched": "23 September 2026",
   "fetch_method": "curl, browser User-Agent, IIIF Image API /full/900,/0/native.jpg and /full/1800,/0/native.jpg (reduced/higher width)",
   "images": [
+    {
+      "file": "img/c63_full.jpg",
+      "canvas": "IIIF canvas 63 = f.28r",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035959t/f63/full/full/0/native.jpg",
+      "size_px": [
+        4039,
+        5950
+      ],
+      "bytes": 1834074,
+      "fetched": "23 September 2026",
+      "shows": "RECTO, the start of the letter: address line 'Christianissime potentissime ac ... rex' and 30 lines, the body almost entirely in the symbol cipher with the interlinear gloss; this canvas was not seen by the check-solved sweep, which viewed only canvas 64."
+    },
+    {
+      "file": "img/c64_full.jpg",
+      "canvas": "IIIF canvas 64 = f.28v",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035959t/f64/full/full/0/native.jpg",
+      "size_px": [
+        4039,
+        5950
+      ],
+      "bytes": 1400367,
+      "fetched": "23 September 2026",
+      "shows": "VERSO, continuation: 11 lines mixing clear and cipher, then 6 plain lines, date 'in vigilia sancti Pauli in mane hora quinta'."
+    },
+    {
+      "file": "img/c65_w700.jpg",
+      "canvas": "IIIF canvas 65",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035959t/f65/full/700,/0/native.jpg",
+      "size_px": [
+        700,
+        1031
+      ],
+      "bytes": 46143,
+      "fetched": "23 September 2026",
+      "shows": "The subscription on the facing leaf: 'humillimi servitores / Ernestus dux etc. / Joachimus etc.' Reduced width only; no cipher."
+    },
     {
       "file": "btv1b10035959t_canvas64_folio28_anhalt_cipher_glossed.jpg",
       "canvas": "IIIF canvas index 64 (matches finding-aid folio 28 by content and by bracketing against canvas67=folio 30-31; pinned by trial after canvas45/55 located the preceding item, a long historical memoir, ending near archival folio ~19-20)",
@@ -20,5 +56,12 @@
       "shows": "Louis V, Count Palatine of the Rhine, to Francis I, Heidelberg, 'jour de la Fete-Dieu' 1516 -- headed 'Ch. Palatin 1516' in the same period annotation style as the Carpi letters in Dupuy 452. Plain Latin, no cipher. Confirms the canvas-to-folio offset (~+36-37) used to locate canvas 64."
     }
   ],
-  "note": "The long historical memoir occupying the finding aid's folio 11 ('Memoires sur l'usurpation du duche de Milan, de Sienne...') was traced across canvases 40, 45 and 55 (internal treatise page numbers ~14, 19, 24 visible) to establish the offset before bracketing folio 28 at canvas 64. Canvas 28 itself (tried first, naively) is still front-matter bleed-through, not folio 28 -- this volume has substantial unfoliated front matter before its numbered leaves begin."
+  "note": "The long historical memoir occupying the finding aid's folio 11 ('Memoires sur l'usurpation du duche de Milan, de Sienne...') was traced across canvases 40, 45 and 55 (internal treatise page numbers ~14, 19, 24 visible) to establish the offset before bracketing folio 28 at canvas 64. Canvas 28 itself (tried first, naively) is still front-matter bleed-through, not folio 28 -- this volume has substantial unfoliated front matter before its numbered leaves begin.",
+  "iiif_manifest_canvases": {
+    "63": "f.28r (letter begins)",
+    "64": "f.28v (continues)",
+    "65": "subscription"
+  },
+  "crops": "crops/ (84 line crops cut by crop.py, native resolution, greyscale levels-stretched; crops/manifest.json has each box) and crops/legend.jpg (legend.py)",
+  "fetch_log_23_sept_2026_transcription": "IIIF manifest 1 (+1 connection reset retried once), canvas 63 at 700px 1 (+1 reset retried once), canvas 65 at 700px 1, canvases 63 and 64 full/full 2; 1.5 s apart; descriptive User-Agent"
 }
