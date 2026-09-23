@@ -5155,5 +5155,242 @@
     "bourdeau"
    ]
   }
- ]
+ ],
+ "decode_neighbours": {
+  "date": "23 Sept 2026",
+  "method": "tools/decode_neighbours.py over ay/catalogue/decode-catalog.csv + decode-records.jsonl (aaymeloglu/unsolved-ciphers cache); raw sheets in sources/solver-diffs/2026-09-23-decode-neighbours.tsv (+ -excluded.tsv)",
+  "caveat": "catalogue metadata only, not images; shelfmark normalisation is a heuristic (see QUEUE.md caveats); every row needs the DECODE login (ASKS.md row 1) or library images to read past the catalogue entry",
+  "rows": [
+   {
+    "id": "D1",
+    "name": "Mgr Giovanni Battista Pallotto, nuncio extraordinary to Emperor Ferdinand II (Mantuan succession mission), to the “Nunzio all'Imperatore”",
+    "decode_ids": {
+     "letter": [
+      "R233",
+      "R239",
+      "R241",
+      "R242",
+      "R253"
+     ],
+     "neighbour": [
+      "R221"
+     ]
+    },
+    "why_matched": "same shelfmark (BAV Barb.lat 6956), same sender and recipient string, same catalogued date (1628) as the Partially decrypted R221",
+    "next_step": "Register on DECODE, read R221's existing partial decipherment/scheme, then R233/R239/R241/R242/R253; check Sacré's 2020 Cryptologia paper on papal ciphers (which the search names as covering Barb.lat 6956/6960, ~70 letters, one fixed-length homophonic scheme) for a published key before any fresh cryptanalysis",
+    "language_fit": 1,
+    "material": 1,
+    "key_lead": 2,
+    "size": 3,
+    "competition": 3,
+    "weight": 3,
+    "unread": 2,
+    "kind": "recovery",
+    "total": 32,
+    "year": "1628",
+    "language": "it",
+    "rationale": "5 Non-decrypted records in the same file as a Partially decrypted sibling with the same sender/recipient string and catalogued date; not independently verified against the BAV images or Sacré's paper this sweep.",
+    "sources": [
+     "decode-catalog-scan-2026-09-23"
+    ]
+   },
+   {
+    "id": "D2",
+    "name": "Rome embassy correspondence (Lope Hurtado de Mendoza's circle; several items signed “Luis Fernández”), RAH Signatura 9/31",
+    "decode_ids": {
+     "letter": [
+      "R9872",
+      "R9875",
+      "R9879",
+      "R9880",
+      "R9882",
+      "R9883",
+      "R9885",
+      "R9886",
+      "R9887",
+      "R9888",
+      "R9889",
+      "R9891",
+      "R9892",
+      "R9894"
+     ],
+     "neighbour": [
+      "R9872's own",
+      "R9881",
+      "R9884",
+      "R9890",
+      "R9893",
+      "R9895"
+     ]
+    },
+    "why_matched": "same shelfmark (BRAH Signatura 9/31); each Non-decrypted item is a folio or two from a Decrypted sibling (six sub-clusters); the correspondent name recurs across the legajo",
+    "next_step": "Same correspondent and RAH Signatura 9.x series as QUEUE row G2 (cs-recheck/lopehurtado/, Signatura 9/26) -- try G2's recovered 49-value key/alphabet against these before assuming a fresh key; if it does not fit, log in to DECODE and read the six Decrypted siblings first",
+    "language_fit": 1,
+    "material": 1,
+    "key_lead": 2,
+    "size": 3,
+    "competition": 3,
+    "weight": 3,
+    "unread": 2,
+    "kind": "recovery",
+    "total": 32,
+    "year": "1524 (most items undated in the catalogue)",
+    "language": "es",
+    "rationale": "Largest cluster found this sweep by page count (82 pages across 13 Non-decrypted records); same correspondent family as G2 but a different legajo (9/31, not 9/26) so not itself in G2's cited R9634-R9656 range.",
+    "sources": [
+     "decode-catalog-scan-2026-09-23"
+    ]
+   },
+   {
+    "id": "D3",
+    "name": "Same “Luis Fernández” Rome-embassy hand, RAH Signatura 9/34",
+    "decode_ids": {
+     "letter": [
+      "R9896",
+      "R9899",
+      "R9901"
+     ],
+     "neighbour": [
+      "R9898"
+     ]
+    },
+    "why_matched": "same shelfmark, same catalogued year (1525), one folio-adjacent Decrypted neighbour (R9898) for all three",
+    "next_step": "Same as D2: try G2's key first, then read R9898's decipherment as a crib",
+    "language_fit": 1,
+    "material": 1,
+    "key_lead": 2,
+    "size": 3,
+    "competition": 3,
+    "weight": 3,
+    "unread": 2,
+    "kind": "recovery",
+    "total": 32,
+    "year": "1525",
+    "language": "es",
+    "rationale": "Small, clean 3-into-1 cluster in the same correspondent family as D2/G2; a different legajo again.",
+    "sources": [
+     "decode-catalog-scan-2026-09-23"
+    ]
+   },
+   {
+    "id": "D4",
+    "name": "Bernardino Naro / the “Nuncio Damiata” at the Paris nunciature, to the Secretariat of State",
+    "decode_ids": {
+     "letter": [
+      "R59",
+      "R60",
+      "R61"
+     ],
+     "neighbour": [
+      "R71"
+     ]
+    },
+    "why_matched": "same fond (Vatican Secret Archive i.1025, Segretario di Stato, France), dossier numbers 3 apart (doss. 62 vs doss. 64), dates 6-7 weeks apart, same recipient (“the Secretariat”)",
+    "next_step": "Register on DECODE, read R71's partial decipherment, apply to R59-R61; check Bernardino Spada's and Naro's own printed correspondence for a contemporary abstract of the 1625 Paris nunciature first",
+    "language_fit": 1,
+    "material": 1,
+    "key_lead": 2,
+    "size": 3,
+    "competition": 3,
+    "weight": 3,
+    "unread": 2,
+    "kind": "recovery",
+    "total": 32,
+    "year": "1624-1625",
+    "language": "it",
+    "rationale": "Dossier-level match within one fond, not folio-level; weaker than D1 but still same-box with a plausible shared cipher scheme (papal nunciature ciphers of this period reused across a nunciature's term).",
+    "sources": [
+     "decode-catalog-scan-2026-09-23"
+    ]
+   },
+   {
+    "id": "D5",
+    "name": "Ferdinand (the future Ferdinand II of Aragon) to his father John II of Aragon",
+    "decode_ids": {
+     "letter": [
+      "R1172"
+     ],
+     "neighbour": [
+      "R1180"
+     ]
+    },
+    "why_matched": "same shelfmark (BNE MSS/20211), items 3 apart, both catalogued 1478",
+    "next_step": "Check print first: a paper titled “Spanish Ciphers before Accession of King Ferdinand: 1470-1479” (found via web search, not read this sweep) appears to already discuss and reconstruct Ferdinand's 1470s ciphers to John II from this manuscript family; read it before assuming this item is unworked, then read R1180 as a crib if it stops short of R1172",
+    "language_fit": 1,
+    "material": 1,
+    "key_lead": 2,
+    "size": 3,
+    "competition": 3,
+    "weight": 3,
+    "unread": 2,
+    "kind": "recovery",
+    "total": 32,
+    "year": "1478",
+    "language": "es",
+    "rationale": "Earliest item in the sweep; a specific print lead was found by title but not opened or checked against R1172 specifically -- this is the first thing a worker on this row should resolve, not a promise the item is unworked.",
+    "sources": [
+     "decode-catalog-scan-2026-09-23",
+     "web-search-2026-09-23-unverified"
+    ]
+   },
+   {
+    "id": "D6",
+    "name": "Extension of QUEUE row G2 (Lope Hurtado de Mendoza), one item beyond the R9634-R9656 range already flagged there",
+    "decode_ids": {
+     "letter": [
+      "R9659"
+     ],
+     "neighbour": [
+      "R9652"
+     ]
+    },
+    "why_matched": "same shelfmark (BRAH Signatura 9/26) as G2, adjacent folio to the Partially decrypted R9652",
+    "next_step": "Fold into G2's existing work rather than opening as a separate target -- cs-recheck/lopehurtado/ already has a partial key for this legajo",
+    "language_fit": 1,
+    "material": 1,
+    "key_lead": 2,
+    "size": 3,
+    "competition": 1,
+    "weight": 3,
+    "unread": 2,
+    "kind": "recovery",
+    "total": 28,
+    "year": "1522",
+    "language": "es",
+    "rationale": "competition scored 1 (open on a solver-repository tracker), not 3, because this is the same shelfmark G2 already covers in QUEUE.md and cs-recheck/lopehurtado/, just outside the specific range G2 cites.",
+    "sources": [
+     "decode-catalog-scan-2026-09-23"
+    ]
+   },
+   {
+    "id": "D7",
+    "name": "Jean de Langeac, bishop of Avranches, to Anne de Montmorency",
+    "decode_ids": {
+     "letter": [
+      "R3694"
+     ],
+     "neighbour": [
+      "R3695"
+     ]
+    },
+    "why_matched": "same shelfmark (BnF fr. 3083), catalogued within a 10-day-or-less window of the Decrypted R3695",
+    "next_step": "Register on DECODE, read R3695's decipherment for the cipher's scheme/key, apply to R3694; check BnF's own finding aid (archivesetmanuscrits.bnf.fr), which lists fr. 3083 among Montmorency's incoming diplomatic correspondence, for a contemporary calendar entry first",
+    "language_fit": 1,
+    "material": 1,
+    "key_lead": 2,
+    "size": 3,
+    "competition": 3,
+    "weight": 3,
+    "unread": 2,
+    "kind": "recovery",
+    "total": 32,
+    "year": "c. 1520-1540 (this item's own date not separately catalogued)",
+    "language": "fr",
+    "rationale": "Weakest single-item match in the sweep by page count (3 pages) but a clean sender/date match; only French survivor after exclusion.",
+    "sources": [
+     "decode-catalog-scan-2026-09-23"
+    ]
+   }
+  ]
+ }
 }
