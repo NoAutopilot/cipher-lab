@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 21 September 2026, 04:20 UTC
+Last updated: 23 September 2026, 15:20 UTC
 
 > **the owner is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -30,7 +30,9 @@ holds the role templates.
 unpublished; only a separate verifier, after a logged search, assigns an N-class. And no copy order, payment
 or quote request reaches the owner until a check-solved sweep has set that target to stage 2.
 
-**Running right now:** nothing. Both recovery workers finished at 03:13 UTC. Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
+**Orchestrator change, 23 September 2026, 15:20 UTC.** The previous orchestrator's account is logged out; a fresh orchestrator on the noautopilotytbiz account took over from this handoff, with nothing unpushed on the old account. That account's environment has no credentials set (ASKS.md row 10), so this orchestrator runs only credential-free jobs: Randolph 1570 native-resolution re-transcription (ASSIGNMENTS row 1) and a check-solved sweep on queue ranks 11, 13, 15, 17, 18 (row 3). The Google Books print checks (row 2) wait for an account with the key.
+
+**Running right now (23 Sept 15:20 UTC):** Randolph 1570 transcription worker and the check-solved sweep, both starting. Before that: nothing since both recovery workers finished at 03:13 UTC on 21 Sept. Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
 
 **Waiting on the owner:** rotate the DECODE and archive.org passwords (both were printed into worker
 transcripts on 20 Sept) and set IA_USER to the account email; email Spink before the 23 Sept sale; the Kansas
