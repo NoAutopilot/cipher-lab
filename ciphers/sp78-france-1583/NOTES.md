@@ -96,14 +96,37 @@ it is not digitised, so the decipherment's nature (interlinear on the same docum
 Dupuy 155, or a separate translation) cannot be confirmed without a page copy. Not "new"; not "unpublished" —
 this is a search result, not a discovery (rule 10).
 
+## Thurloe check (24 September 2026)
+
+Job: check Thurloe's *State Papers* vol. 6 (1657, covering Jan-June) for SP 78/113/57 (despatch "largely in
+cipher from [Wm. Swyfte]", 24 Feb 1657), and vols. 1-2 for the SP 78/111 items (1642-44) if their senders
+are named. Fetched item-details for /93 and /135 first (`discovery.nationalarchives.gov.uk` item-details
+endpoint, 2 requests, ids C7327886/C7327928, already cached from the earlier sweep): **neither carries a
+sender name** — /93 reads only "Folio 212: Letter entirely in cipher" and /135 only "Folio 300: Letter in
+cipher", no `note` field, no person named — so the vols. 1-2 check does not apply (job E's own condition).
+
+For SP 78/113/57: identified vol. 6 on archive.org (`collectionofstat06thur`, 1742 printing, not
+access-restricted; advancedsearch + metadata, 2 requests). A direct djvu-text download failed with a
+persistent HTTP 500 from the archive.org download endpoint on two attempts (not retried a third time, per
+the good-citizen stop-on-repeated-failure rule); used the no-login `be-api.us.archive.org/fts/v1/search`
+full-text index instead (4 requests), which is indexed for this item (a control query for "Cromwell" returns
+1 hit, confirming the index covers this volume). **"Swyfte" (the exact TNA spelling): 0 hits.** "Swift": 1
+hit, appearing twice in what looks like a single indexed page — "To mr. Martin Nodi, for so much paid w mr.
+Swift sent September 18..." and "...lordship of what I spoke concerning mr. Swift, in relation to some
+place about the other..." — both read as a financial/patronage reference to a "Mr. Swift," not as a
+despatch-from-France dateline, and neither snippet carries a February 1657 date or a French context.
+**Inconclusive but not a positive match**: this does not establish that Swyfte's despatch is printed in
+Thurloe vol. 6; treated as not found.
+
 ## Next
 
-Order TNA page copies for SP 78/111/93 and /135 (undigitised, no decipher sibling, no edition candidate —
-the cleanest two of the four) and SP 78/113/123 (to see what "deciphered" means on the page before deciding
-whether it is a target at all, the same check that resolved Lorraine 377 and Dupuy 155 this session). SP
-78/113/57 needs the Thurloe vol. 6 check first, since a cheap print check could close it before any copy
-order. All four items are catalogueLevel 7, digitised: false on Discovery — no image route exists without a
-copy order (REQUEST.md not drafted this session; batch these into one request alongside any other open TNA
-items when ready, per the access playbook's "batch several asks" instruction). Also unresolved: whether the
-Cobham/Bourbourg negotiations overlap flagged in the original QUEUE N8 row (BL Harley 287) is real — not
-reconciled this sweep either, since it depended on the same wrong 1580s date.
+**SP 78/113/57 stays unprinted** after the Thurloe vol. 6 check (no genuine match); status line unchanged.
+Order TNA page copies for all four items — SP 78/111/93 and /135 (undigitised, no decipher sibling, no
+edition candidate), SP 78/113/57 (undigitised, no sibling decipherment, Thurloe checked and negative) and
+SP 78/113/123 (to see what "deciphered" means on the page before deciding whether it is a target at all, the
+same check that resolved Lorraine 377 and Dupuy 155 this session). All four items are catalogueLevel 7,
+digitised: false on Discovery — no image route exists without a copy order. REQUEST.md drafted this session
+(see ciphers/sp78-france-1583/REQUEST.md) batching all four references; no order placed, no price guessed,
+no email sent. Also unresolved: whether the Cobham/Bourbourg negotiations overlap flagged in the original
+QUEUE N8 row (BL Harley 287) is real — not reconciled this sweep either, since it depended on the same
+wrong 1580s date.
