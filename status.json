@@ -1,5 +1,5 @@
 {
- "updated": "24 September 2026, 00:10 UTC",
+ "updated": "24 September 2026, 00:40 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -234,6 +234,16 @@
  ],
  "workers": [
   {
+   "title": "Scout: catalogues not on DECODE",
+   "job": "704 hits, 493 survivors, 19 scored; keys in the same file for the top rows. ~$4",
+   "state": "done, archived"
+  },
+  {
+   "title": "Check Solved: N1-N3 (Mornington, SP 35/36, Courten)",
+   "job": "Editions first, then six sources",
+   "state": "running"
+  },
+  {
    "title": "Print Check + Access: Bowes 1583",
    "job": "Open; volumes undigitised; fragments mirrored. ~$2",
    "state": "done, archived"
@@ -256,16 +266,6 @@
   {
    "title": "Solver: Sforza-Maino 1446 joint key",
    "job": "Closed-negative with matched control (controls 99%+, target at baseline). Tooling left in tools/. ~$12",
-   "state": "done, archived"
-  },
-  {
-   "title": "Check Solved: Sforza-Maino 1446 pair",
-   "job": "Open at stage 2, conditional on blocked sources. ~$1.5",
-   "state": "done, archived"
-  },
-  {
-   "title": "Check Solved: queue hygiene vs solver repositories",
-   "job": "Four rows dropped as found-solved, five annotated as partly read by Bourdeau. ~$2",
    "state": "done, archived"
   }
  ],
@@ -328,6 +328,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sept, 00:40",
+   "what": "Non-DECODE scout: 493 catalogue items with cipher that neither solver project names, 19 scored (QUEUE.md N1-N19); the top three carry their key in the same file. Check-solved started on them. Policy: unread letters with a key beside them are kept as the cheapest solves, not dropped as editions."
+  },
   {
    "when": "24 Sept, 00:10",
    "what": "Bowes 1583: print negative, volumes undigitised; Tomokiyo's eleven fragments in hand, solver started with a matched control. Non-DECODE scout and Burgess 1912 still running."

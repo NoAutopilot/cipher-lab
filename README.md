@@ -9,8 +9,11 @@ S. Tomokiyo's site Cryptiana.
 **The metric, restated by the owner on 23 September 2026: the number of unique solves.** A unique solve is a
 reading a separate verifier has classed N3 or better (CLAUDE.md rule 10). Nothing else is sacred: language, period,
 holder and historical weight only matter as far as they change how many such readings the project produces. In
-practice that makes recovery the lane that scales (the DECODE catalogue holds thousands of letters whose key or
-decipherment sits in a neighbouring record) and cryptanalysis the exception.
+practice that makes recovery the lane that scales and cryptanalysis the exception. Corrected the same night: the
+public DECODE catalogue is already worked daily by dbourdeau/cyphersolver, so the lane is the catalogues DECODE does not
+cover (TNA Discovery, BL Archives and Manuscripts, Gallica inventories, NRS, county offices: 493 items on 23 Sept 2026).
+Under this metric an unread letter whose key sits in the same file is not dropped as an "edition": it is the cheapest
+unique solve there is, provided the verifier finds no printed text (rule 10). The `unread` axis still records the fact.
 
 Three kinds, all wanted, always labelled as which they are (CLAUDE.md rule 10):
 
