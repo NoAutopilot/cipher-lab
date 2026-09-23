@@ -1,0 +1,912 @@
+{
+ "files": [
+  "ctl2_f68.txt",
+  "ctl2_f70.txt"
+ ],
+ "context": "none",
+ "scoring": "gen",
+ "p_null": 0.03,
+ "restarts": 16,
+ "iters": 300000,
+ "T0": 3.0,
+ "T1": 0.05,
+ "caps": {
+  "syl": 6,
+  "word": 4,
+  "null": 2,
+  "homo": 4
+ },
+ "fix": {},
+ "syl": "vc",
+ "shuffle": null,
+ "ntokens": 794,
+ "nsigns": 33,
+ "scores": [
+  -1767.8593063283124,
+  -1767.8593063283124,
+  -1767.8593063283124,
+  -1767.8593063283124,
+  -1767.8593063283124,
+  -1767.8593063283124,
+  -1767.8593063283124,
+  -1767.8593063283124,
+  -1767.8593063283124,
+  -1767.8593063283124,
+  -2962.4838298933273,
+  -3064.8780931516626,
+  -3071.9033736582296,
+  -3117.5646087719406,
+  -3131.3768706677197,
+  -3248.2945376034045
+ ],
+ "best": {
+  "score": -1767.8593063283124,
+  "lm": -1392.5537166391737,
+  "prior": -375.30558968913886,
+  "units": 0.0,
+  "key": {
+   "S27": "h",
+   "S25": "a",
+   "S12": "u",
+   "S28": "e",
+   "S26": "m",
+   "S8": "o",
+   "S32": "t",
+   "S30": "i",
+   "S17": "r",
+   "S11": "s",
+   "S22": "p",
+   "S0": "n",
+   "S21": "on",
+   "S4": "a",
+   "S10": "e",
+   "S9": "e",
+   "S29": "o",
+   "S7": "l",
+   "S19": "",
+   "S2": "f",
+   "S23": "c",
+   "S18": "al",
+   "S15": "d",
+   "S6": "i",
+   "S31": "am",
+   "S5": "er",
+   "S16": "",
+   "S3": "b",
+   "S24": "g",
+   "S13": "che",
+   "S14": "q",
+   "S20": "x",
+   "S33": "la"
+  },
+  "reading": [
+   [
+    "ctl2_f68.txt",
+    "hauemotirespostononhauereuolutonotificarelinealtroueladietaadunationedeamenteetandatadedonatoperfinchenonhabiapassatoconledietegentelasesiaperchepalesandolanonfossestatacasonemetteredis {ALOEXEQUIREQUANTODA} noihaincommi {CHEEQUESTOCHEUEDUTOLA} tolerantiae {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} attribuito {ADUILTAET} continuamentedeuentauapiuinsolenteuersodenoiatesochehafactodegrandissimidannianostrimerc {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} nostrisoldatichetornauanodaborgognaetcosianconostro {CHEMENAUACERTICAUALLIETTITOLIDENARI} etmandatoliuia {INCAMISIASATIATOSIPRIMADETENERLO} inprisonehauemode {LIBERATOFARLONEADUEDUTO} delierrorisuoietcosilimandi"
+   ],
+   [
+    "ctl2_f70.txt",
+    "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedientec {ANCHEPO} hauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantitaetqua {PENSATO} farecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalamenteet"
+   ]
+  ]
+ },
+ "per_token": -2.2265230558291087,
+ "runs": [
+  {
+   "score": -1767.8593063283124,
+   "lm": -1392.5537166391737,
+   "prior": -375.30558968913886,
+   "units": 0.0,
+   "key": {
+    "S27": "h",
+    "S25": "a",
+    "S12": "u",
+    "S28": "e",
+    "S26": "m",
+    "S8": "o",
+    "S32": "t",
+    "S30": "i",
+    "S17": "r",
+    "S11": "s",
+    "S22": "p",
+    "S0": "n",
+    "S21": "on",
+    "S4": "a",
+    "S10": "e",
+    "S9": "e",
+    "S29": "o",
+    "S7": "l",
+    "S19": "",
+    "S2": "f",
+    "S23": "c",
+    "S18": "al",
+    "S15": "d",
+    "S6": "i",
+    "S31": "am",
+    "S5": "er",
+    "S16": "",
+    "S3": "b",
+    "S24": "g",
+    "S13": "che",
+    "S14": "q",
+    "S20": "x",
+    "S33": "la"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "hauemotirespostononhauereuolutonotificarelinealtroueladietaadunationedeamenteetandatadedonatoperfinchenonhabiapassatoconledietegentelasesiaperchepalesandolanonfossestatacasonemetteredis {ALOEXEQUIREQUANTODA} noihaincommi {CHEEQUESTOCHEUEDUTOLA} tolerantiae {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} attribuito {ADUILTAET} continuamentedeuentauapiuinsolenteuersodenoiatesochehafactodegrandissimidannianostrimerc {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} nostrisoldatichetornauanodaborgognaetcosianconostro {CHEMENAUACERTICAUALLIETTITOLIDENARI} etmandatoliuia {INCAMISIASATIATOSIPRIMADETENERLO} inprisonehauemode {LIBERATOFARLONEADUEDUTO} delierrorisuoietcosilimandi"
+    ],
+    [
+     "ctl2_f70.txt",
+     "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedientec {ANCHEPO} hauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantitaetqua {PENSATO} farecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalamenteet"
+    ]
+   ]
+  },
+  {
+   "score": -1767.8593063283124,
+   "lm": -1392.5537166391737,
+   "prior": -375.30558968913886,
+   "units": 0.0,
+   "key": {
+    "S27": "h",
+    "S25": "a",
+    "S12": "u",
+    "S28": "e",
+    "S26": "m",
+    "S8": "o",
+    "S32": "t",
+    "S30": "i",
+    "S17": "r",
+    "S11": "s",
+    "S22": "p",
+    "S0": "n",
+    "S21": "on",
+    "S4": "a",
+    "S10": "e",
+    "S9": "e",
+    "S29": "o",
+    "S7": "l",
+    "S19": "",
+    "S2": "f",
+    "S23": "c",
+    "S18": "al",
+    "S15": "d",
+    "S6": "i",
+    "S31": "am",
+    "S5": "er",
+    "S16": "",
+    "S3": "b",
+    "S24": "g",
+    "S13": "che",
+    "S14": "q",
+    "S20": "x",
+    "S33": "la"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "hauemotirespostononhauereuolutonotificarelinealtroueladietaadunationedeamenteetandatadedonatoperfinchenonhabiapassatoconledietegentelasesiaperchepalesandolanonfossestatacasonemetteredis {ALOEXEQUIREQUANTODA} noihaincommi {CHEEQUESTOCHEUEDUTOLA} tolerantiae {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} attribuito {ADUILTAET} continuamentedeuentauapiuinsolenteuersodenoiatesochehafactodegrandissimidannianostrimerc {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} nostrisoldatichetornauanodaborgognaetcosianconostro {CHEMENAUACERTICAUALLIETTITOLIDENARI} etmandatoliuia {INCAMISIASATIATOSIPRIMADETENERLO} inprisonehauemode {LIBERATOFARLONEADUEDUTO} delierrorisuoietcosilimandi"
+    ],
+    [
+     "ctl2_f70.txt",
+     "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedientec {ANCHEPO} hauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantitaetqua {PENSATO} farecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalamenteet"
+    ]
+   ]
+  },
+  {
+   "score": -1767.8593063283124,
+   "lm": -1392.5537166391737,
+   "prior": -375.30558968913886,
+   "units": 0.0,
+   "key": {
+    "S27": "h",
+    "S25": "a",
+    "S12": "u",
+    "S28": "e",
+    "S26": "m",
+    "S8": "o",
+    "S32": "t",
+    "S30": "i",
+    "S17": "r",
+    "S11": "s",
+    "S22": "p",
+    "S0": "n",
+    "S21": "on",
+    "S4": "a",
+    "S10": "e",
+    "S9": "e",
+    "S29": "o",
+    "S7": "l",
+    "S19": "",
+    "S2": "f",
+    "S23": "c",
+    "S18": "al",
+    "S15": "d",
+    "S6": "i",
+    "S31": "am",
+    "S5": "er",
+    "S16": "",
+    "S3": "b",
+    "S24": "g",
+    "S13": "che",
+    "S14": "q",
+    "S20": "x",
+    "S33": "la"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "hauemotirespostononhauereuolutonotificarelinealtroueladietaadunationedeamenteetandatadedonatoperfinchenonhabiapassatoconledietegentelasesiaperchepalesandolanonfossestatacasonemetteredis {ALOEXEQUIREQUANTODA} noihaincommi {CHEEQUESTOCHEUEDUTOLA} tolerantiae {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} attribuito {ADUILTAET} continuamentedeuentauapiuinsolenteuersodenoiatesochehafactodegrandissimidannianostrimerc {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} nostrisoldatichetornauanodaborgognaetcosianconostro {CHEMENAUACERTICAUALLIETTITOLIDENARI} etmandatoliuia {INCAMISIASATIATOSIPRIMADETENERLO} inprisonehauemode {LIBERATOFARLONEADUEDUTO} delierrorisuoietcosilimandi"
+    ],
+    [
+     "ctl2_f70.txt",
+     "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedientec {ANCHEPO} hauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantitaetqua {PENSATO} farecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalamenteet"
+    ]
+   ]
+  },
+  {
+   "score": -1767.8593063283124,
+   "lm": -1392.5537166391737,
+   "prior": -375.30558968913886,
+   "units": 0.0,
+   "key": {
+    "S27": "h",
+    "S25": "a",
+    "S12": "u",
+    "S28": "e",
+    "S26": "m",
+    "S8": "o",
+    "S32": "t",
+    "S30": "i",
+    "S17": "r",
+    "S11": "s",
+    "S22": "p",
+    "S0": "n",
+    "S21": "on",
+    "S4": "a",
+    "S10": "e",
+    "S9": "e",
+    "S29": "o",
+    "S7": "l",
+    "S19": "",
+    "S2": "f",
+    "S23": "c",
+    "S18": "al",
+    "S15": "d",
+    "S6": "i",
+    "S31": "am",
+    "S5": "er",
+    "S16": "",
+    "S3": "b",
+    "S24": "g",
+    "S13": "che",
+    "S14": "q",
+    "S20": "x",
+    "S33": "la"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "hauemotirespostononhauereuolutonotificarelinealtroueladietaadunationedeamenteetandatadedonatoperfinchenonhabiapassatoconledietegentelasesiaperchepalesandolanonfossestatacasonemetteredis {ALOEXEQUIREQUANTODA} noihaincommi {CHEEQUESTOCHEUEDUTOLA} tolerantiae {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} attribuito {ADUILTAET} continuamentedeuentauapiuinsolenteuersodenoiatesochehafactodegrandissimidannianostrimerc {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} nostrisoldatichetornauanodaborgognaetcosianconostro {CHEMENAUACERTICAUALLIETTITOLIDENARI} etmandatoliuia {INCAMISIASATIATOSIPRIMADETENERLO} inprisonehauemode {LIBERATOFARLONEADUEDUTO} delierrorisuoietcosilimandi"
+    ],
+    [
+     "ctl2_f70.txt",
+     "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedientec {ANCHEPO} hauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantitaetqua {PENSATO} farecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalamenteet"
+    ]
+   ]
+  },
+  {
+   "score": -1767.8593063283124,
+   "lm": -1392.5537166391737,
+   "prior": -375.30558968913886,
+   "units": 0.0,
+   "key": {
+    "S27": "h",
+    "S25": "a",
+    "S12": "u",
+    "S28": "e",
+    "S26": "m",
+    "S8": "o",
+    "S32": "t",
+    "S30": "i",
+    "S17": "r",
+    "S11": "s",
+    "S22": "p",
+    "S0": "n",
+    "S21": "on",
+    "S4": "a",
+    "S10": "e",
+    "S9": "e",
+    "S29": "o",
+    "S7": "l",
+    "S19": "",
+    "S2": "f",
+    "S23": "c",
+    "S18": "al",
+    "S15": "d",
+    "S6": "i",
+    "S31": "am",
+    "S5": "er",
+    "S16": "",
+    "S3": "b",
+    "S24": "g",
+    "S13": "che",
+    "S14": "q",
+    "S20": "x",
+    "S33": "la"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "hauemotirespostononhauereuolutonotificarelinealtroueladietaadunationedeamenteetandatadedonatoperfinchenonhabiapassatoconledietegentelasesiaperchepalesandolanonfossestatacasonemetteredis {ALOEXEQUIREQUANTODA} noihaincommi {CHEEQUESTOCHEUEDUTOLA} tolerantiae {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} attribuito {ADUILTAET} continuamentedeuentauapiuinsolenteuersodenoiatesochehafactodegrandissimidannianostrimerc {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} nostrisoldatichetornauanodaborgognaetcosianconostro {CHEMENAUACERTICAUALLIETTITOLIDENARI} etmandatoliuia {INCAMISIASATIATOSIPRIMADETENERLO} inprisonehauemode {LIBERATOFARLONEADUEDUTO} delierrorisuoietcosilimandi"
+    ],
+    [
+     "ctl2_f70.txt",
+     "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedientec {ANCHEPO} hauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantitaetqua {PENSATO} farecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalamenteet"
+    ]
+   ]
+  },
+  {
+   "score": -1767.8593063283124,
+   "lm": -1392.5537166391737,
+   "prior": -375.30558968913886,
+   "units": 0.0,
+   "key": {
+    "S27": "h",
+    "S25": "a",
+    "S12": "u",
+    "S28": "e",
+    "S26": "m",
+    "S8": "o",
+    "S32": "t",
+    "S30": "i",
+    "S17": "r",
+    "S11": "s",
+    "S22": "p",
+    "S0": "n",
+    "S21": "on",
+    "S4": "a",
+    "S10": "e",
+    "S9": "e",
+    "S29": "o",
+    "S7": "l",
+    "S19": "",
+    "S2": "f",
+    "S23": "c",
+    "S18": "al",
+    "S15": "d",
+    "S6": "i",
+    "S31": "am",
+    "S5": "er",
+    "S16": "",
+    "S3": "b",
+    "S24": "g",
+    "S13": "che",
+    "S14": "q",
+    "S20": "x",
+    "S33": "la"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "hauemotirespostononhauereuolutonotificarelinealtroueladietaadunationedeamenteetandatadedonatoperfinchenonhabiapassatoconledietegentelasesiaperchepalesandolanonfossestatacasonemetteredis {ALOEXEQUIREQUANTODA} noihaincommi {CHEEQUESTOCHEUEDUTOLA} tolerantiae {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} attribuito {ADUILTAET} continuamentedeuentauapiuinsolenteuersodenoiatesochehafactodegrandissimidannianostrimerc {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} nostrisoldatichetornauanodaborgognaetcosianconostro {CHEMENAUACERTICAUALLIETTITOLIDENARI} etmandatoliuia {INCAMISIASATIATOSIPRIMADETENERLO} inprisonehauemode {LIBERATOFARLONEADUEDUTO} delierrorisuoietcosilimandi"
+    ],
+    [
+     "ctl2_f70.txt",
+     "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedientec {ANCHEPO} hauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantitaetqua {PENSATO} farecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalamenteet"
+    ]
+   ]
+  },
+  {
+   "score": -1767.8593063283124,
+   "lm": -1392.5537166391737,
+   "prior": -375.30558968913886,
+   "units": 0.0,
+   "key": {
+    "S27": "h",
+    "S25": "a",
+    "S12": "u",
+    "S28": "e",
+    "S26": "m",
+    "S8": "o",
+    "S32": "t",
+    "S30": "i",
+    "S17": "r",
+    "S11": "s",
+    "S22": "p",
+    "S0": "n",
+    "S21": "on",
+    "S4": "a",
+    "S10": "e",
+    "S9": "e",
+    "S29": "o",
+    "S7": "l",
+    "S19": "",
+    "S2": "f",
+    "S23": "c",
+    "S18": "al",
+    "S15": "d",
+    "S6": "i",
+    "S31": "am",
+    "S5": "er",
+    "S16": "",
+    "S3": "b",
+    "S24": "g",
+    "S13": "che",
+    "S14": "q",
+    "S20": "x",
+    "S33": "la"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "hauemotirespostononhauereuolutonotificarelinealtroueladietaadunationedeamenteetandatadedonatoperfinchenonhabiapassatoconledietegentelasesiaperchepalesandolanonfossestatacasonemetteredis {ALOEXEQUIREQUANTODA} noihaincommi {CHEEQUESTOCHEUEDUTOLA} tolerantiae {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} attribuito {ADUILTAET} continuamentedeuentauapiuinsolenteuersodenoiatesochehafactodegrandissimidannianostrimerc {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} nostrisoldatichetornauanodaborgognaetcosianconostro {CHEMENAUACERTICAUALLIETTITOLIDENARI} etmandatoliuia {INCAMISIASATIATOSIPRIMADETENERLO} inprisonehauemode {LIBERATOFARLONEADUEDUTO} delierrorisuoietcosilimandi"
+    ],
+    [
+     "ctl2_f70.txt",
+     "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedientec {ANCHEPO} hauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantitaetqua {PENSATO} farecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalamenteet"
+    ]
+   ]
+  },
+  {
+   "score": -1767.8593063283124,
+   "lm": -1392.5537166391737,
+   "prior": -375.30558968913886,
+   "units": 0.0,
+   "key": {
+    "S27": "h",
+    "S25": "a",
+    "S12": "u",
+    "S28": "e",
+    "S26": "m",
+    "S8": "o",
+    "S32": "t",
+    "S30": "i",
+    "S17": "r",
+    "S11": "s",
+    "S22": "p",
+    "S0": "n",
+    "S21": "on",
+    "S4": "a",
+    "S10": "e",
+    "S9": "e",
+    "S29": "o",
+    "S7": "l",
+    "S19": "",
+    "S2": "f",
+    "S23": "c",
+    "S18": "al",
+    "S15": "d",
+    "S6": "i",
+    "S31": "am",
+    "S5": "er",
+    "S16": "",
+    "S3": "b",
+    "S24": "g",
+    "S13": "che",
+    "S14": "q",
+    "S20": "x",
+    "S33": "la"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "hauemotirespostononhauereuolutonotificarelinealtroueladietaadunationedeamenteetandatadedonatoperfinchenonhabiapassatoconledietegentelasesiaperchepalesandolanonfossestatacasonemetteredis {ALOEXEQUIREQUANTODA} noihaincommi {CHEEQUESTOCHEUEDUTOLA} tolerantiae {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} attribuito {ADUILTAET} continuamentedeuentauapiuinsolenteuersodenoiatesochehafactodegrandissimidannianostrimerc {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} nostrisoldatichetornauanodaborgognaetcosianconostro {CHEMENAUACERTICAUALLIETTITOLIDENARI} etmandatoliuia {INCAMISIASATIATOSIPRIMADETENERLO} inprisonehauemode {LIBERATOFARLONEADUEDUTO} delierrorisuoietcosilimandi"
+    ],
+    [
+     "ctl2_f70.txt",
+     "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedientec {ANCHEPO} hauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantitaetqua {PENSATO} farecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalamenteet"
+    ]
+   ]
+  },
+  {
+   "score": -1767.8593063283124,
+   "lm": -1392.5537166391737,
+   "prior": -375.30558968913886,
+   "units": 0.0,
+   "key": {
+    "S27": "h",
+    "S25": "a",
+    "S12": "u",
+    "S28": "e",
+    "S26": "m",
+    "S8": "o",
+    "S32": "t",
+    "S30": "i",
+    "S17": "r",
+    "S11": "s",
+    "S22": "p",
+    "S0": "n",
+    "S21": "on",
+    "S4": "a",
+    "S10": "e",
+    "S9": "e",
+    "S29": "o",
+    "S7": "l",
+    "S19": "",
+    "S2": "f",
+    "S23": "c",
+    "S18": "al",
+    "S15": "d",
+    "S6": "i",
+    "S31": "am",
+    "S5": "er",
+    "S16": "",
+    "S3": "b",
+    "S24": "g",
+    "S13": "che",
+    "S14": "q",
+    "S20": "x",
+    "S33": "la"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "hauemotirespostononhauereuolutonotificarelinealtroueladietaadunationedeamenteetandatadedonatoperfinchenonhabiapassatoconledietegentelasesiaperchepalesandolanonfossestatacasonemetteredis {ALOEXEQUIREQUANTODA} noihaincommi {CHEEQUESTOCHEUEDUTOLA} tolerantiae {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} attribuito {ADUILTAET} continuamentedeuentauapiuinsolenteuersodenoiatesochehafactodegrandissimidannianostrimerc {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} nostrisoldatichetornauanodaborgognaetcosianconostro {CHEMENAUACERTICAUALLIETTITOLIDENARI} etmandatoliuia {INCAMISIASATIATOSIPRIMADETENERLO} inprisonehauemode {LIBERATOFARLONEADUEDUTO} delierrorisuoietcosilimandi"
+    ],
+    [
+     "ctl2_f70.txt",
+     "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedientec {ANCHEPO} hauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantitaetqua {PENSATO} farecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalamenteet"
+    ]
+   ]
+  },
+  {
+   "score": -1767.8593063283124,
+   "lm": -1392.5537166391737,
+   "prior": -375.30558968913886,
+   "units": 0.0,
+   "key": {
+    "S27": "h",
+    "S25": "a",
+    "S12": "u",
+    "S28": "e",
+    "S26": "m",
+    "S8": "o",
+    "S32": "t",
+    "S30": "i",
+    "S17": "r",
+    "S11": "s",
+    "S22": "p",
+    "S0": "n",
+    "S21": "on",
+    "S4": "a",
+    "S10": "e",
+    "S9": "e",
+    "S29": "o",
+    "S7": "l",
+    "S19": "",
+    "S2": "f",
+    "S23": "c",
+    "S18": "al",
+    "S15": "d",
+    "S6": "i",
+    "S31": "am",
+    "S5": "er",
+    "S16": "",
+    "S3": "b",
+    "S24": "g",
+    "S13": "che",
+    "S14": "q",
+    "S20": "x",
+    "S33": "la"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "hauemotirespostononhauereuolutonotificarelinealtroueladietaadunationedeamenteetandatadedonatoperfinchenonhabiapassatoconledietegentelasesiaperchepalesandolanonfossestatacasonemetteredis {ALOEXEQUIREQUANTODA} noihaincommi {CHEEQUESTOCHEUEDUTOLA} tolerantiae {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} attribuito {ADUILTAET} continuamentedeuentauapiuinsolenteuersodenoiatesochehafactodegrandissimidannianostrimerc {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} nostrisoldatichetornauanodaborgognaetcosianconostro {CHEMENAUACERTICAUALLIETTITOLIDENARI} etmandatoliuia {INCAMISIASATIATOSIPRIMADETENERLO} inprisonehauemode {LIBERATOFARLONEADUEDUTO} delierrorisuoietcosilimandi"
+    ],
+    [
+     "ctl2_f70.txt",
+     "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedientec {ANCHEPO} hauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantitaetqua {PENSATO} farecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalamenteet"
+    ]
+   ]
+  },
+  {
+   "score": -2962.4838298933273,
+   "lm": -2423.884093862377,
+   "prior": -538.5997360309503,
+   "units": 0.0,
+   "key": {
+    "S27": "ar",
+    "S25": "e",
+    "S12": "u",
+    "S28": "a",
+    "S26": "n",
+    "S8": "o",
+    "S32": "r",
+    "S30": "i",
+    "S17": "",
+    "S11": "t",
+    "S22": "d",
+    "S0": "t",
+    "S21": "al",
+    "S4": "a",
+    "S10": "a",
+    "S9": "i",
+    "S29": "o",
+    "S7": "m",
+    "S19": "",
+    "S2": "d",
+    "S23": "p",
+    "S18": "la",
+    "S15": "l",
+    "S6": "e",
+    "S31": "us",
+    "S5": "el",
+    "S16": "et",
+    "S3": "con",
+    "S24": "s",
+    "S13": "per",
+    "S14": "q",
+    "S20": "de",
+    "S33": "aq"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "areuanoriatdotrotalarauaiuomurotoridipaamitalarouamelearealuterialalausatraaratlarelalalarodelditparatalareteconeedetteropalmalearisitrametetateedelparadlaatetlomataldottatrerapetalanarrelalet {ALOEXEQUIREQUANTODA} toeareetponne {CHEEQUESTOCHEUEDUTOLA} romeletriaa {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} erriconuiro {ADUILTAET} potretetuenitralauitreuadiuettomatetraueltolatoieritoperaredeprolisatlettenelettietotrinelp {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} totretoetmlareperroteuetoleconosostaarpotiatpototro {CHEMENAUACERTICAUALLIETTITOLIDENARI} irnatlaromiuia {INCAMISIASATIATOSIPRIMADETENERLO} itditaliareuanola {LIBERATOFARLONEADUEDUTO} limieloetuoiarpotemenetli"
+    ],
+    [
+     "ctl2_f70.txt",
+     "miueittelaquametmapertaetreldotattadatoetanadeluieladeitreliardelosteemraueaadedaleatrip {ANCHEPO} areuaapondatotoetatriredelaqnetlattinoelleidellannolaconepolamatoetetrireardelmamerrelaareconanotpedraeuuelaquatrodapropertuetalteanouatureelquatropallaputanameodetialapotretoetmetenatraartedurelatoatatrerearque {PENSATO} deapotedutpronomatreelmoetinolatoeconaerirulitaetquatrotalmoareuatenodeprotalarosmeoappareedelparirupremenatrair"
+    ]
+   ]
+  },
+  {
+   "score": -3064.8780931516626,
+   "lm": -2524.6128492578864,
+   "prior": -540.2652438937762,
+   "units": 0.0,
+   "key": {
+    "S27": "in",
+    "S25": "a",
+    "S12": "t",
+    "S28": "i",
+    "S26": "m",
+    "S8": "o",
+    "S32": "i",
+    "S30": "u",
+    "S17": "r",
+    "S11": "s",
+    "S22": "n",
+    "S0": "l",
+    "S21": "ar",
+    "S4": "a",
+    "S10": "e",
+    "S9": "o",
+    "S29": "e",
+    "S7": "t",
+    "S19": "",
+    "S2": "et",
+    "S23": "d",
+    "S18": "am",
+    "S15": "d",
+    "S6": "e",
+    "S31": "b",
+    "S5": "o",
+    "S16": "",
+    "S3": "p",
+    "S24": "che",
+    "S13": "la",
+    "S14": "es",
+    "S20": "ma",
+    "S33": "el"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "inatimoiurisnosiolarinaterotettieloiuetudarituleamiretitadeiiaadtlaiuaredebeliieialdaiadedaraienoetuldinelarinapeanassaiedartedeiiocheolietasiseanodinenamesaldetalaretessesiaiadasarimeiioedes {ALOEXEQUIREQUANTODA} leeinaeldemme {CHEEQUESTOCHEUEDUTOLA} ietoaliuae {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} aiiruptuio {ADUILTAET} delieltamoliedetoliatanutelseteliitosedileuaioselainaetadiedocheraldessemedallualesirumod {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} losiresotdaielaierlataledapercheechelaiidesualdelesiro {CHEMENAUACERTICAUALLIETTITOLIDENARI} oimaldaiotutua {INCAMISIASATIATOSIPRIMADETENERLO} ulnrusaroinatemede {LIBERATOFARLONEADUEDUTO} dotuororesteueidesetemaldu"
+    ],
+    [
+     "ctl2_f70.txt",
+     "totaossoiestettalaseelionelesseetrasoamanotuadinaroliadueinoecheleatirateaimanideeliod {ANCHEPO} inateredemnresesoasaliuianoelmaldassomeadderonodemmeampredeamtasoasaliuiaeinotiteiioeinapamosdrenieattediestesieetadielaltelarseameteltieadestisiodaramdtlamataeneluaredelirotameliieisantiadeseasalieiaiiesta {PENSATO} etaridosantldiemetesiaadtealumedeseapiaiuitduleelestisielarteinatelamoetadielidaiecheteereddineanodinoitdiatamelieoi"
+    ]
+   ]
+  },
+  {
+   "score": -3071.9033736582296,
+   "lm": -2556.524467200041,
+   "prior": -515.3789064581886,
+   "units": 0.0,
+   "key": {
+    "S27": "con",
+    "S25": "t",
+    "S12": "u",
+    "S28": "m",
+    "S26": "e",
+    "S8": "l",
+    "S32": "i",
+    "S30": "n",
+    "S17": "o",
+    "S11": "e",
+    "S22": "a",
+    "S0": "i",
+    "S21": "de",
+    "S4": "d",
+    "S10": "r",
+    "S9": "s",
+    "S29": "n",
+    "S7": "a",
+    "S19": "ar",
+    "S2": "an",
+    "S23": "o",
+    "S18": "b",
+    "S15": "a",
+    "S6": "",
+    "S31": "non",
+    "S5": "l",
+    "S16": "l",
+    "S3": "is",
+    "S24": "c",
+    "S13": "el",
+    "S14": "es",
+    "S20": "ir",
+    "S33": "la"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "contumelinomealeilidecondurosunauiarnilinarannodomanirbionumatamitdauitinderarnonriimridiaditaradedinalannioconrideconlartistateetinodearamiscsiiraltemetaloconrabretianadideanneereitidotedemeriilrae {ALOEXEQUIREQUANTODA} incontionee {CHEEQUESTOCHEUEDUTOLA} inaltiindr {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} tiionisunil {ADUILTAET} oniiilutesiirarusiitudanuienarilimulenaminntisenelcontantoinascodariaeeeatiintineionelo {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} ileioellaadiarelinoitutinatisnocncidmionendionineiol {CHEMENAUACERTICAUALLIETTITOLIDENARI} siediadilanund {INCAMISIASATIATOSIPRIMADETENERLO} niaonedesconturenar {LIBERATOFARLONEADUEDUTO} asanloloeunnarrioneaetian"
+    ],
+    [
+     "ctl2_f70.txt",
+     "asutseelmesuraladeleriilanireeranodelldedaluntamatosiitanrialncitaiodudmiramariiso {ANCHEPO} conturoroneaoreneltediinitallaetiadeesentaaosalareenbisoonbadeltetiinitrialamaiilarrcontisdeleooairtuuamesurareinandoineliuideedenuriuitaesuarmeilodebouidedatnainderoniiolllalteriimrietauitarendediiitmiesut {PENSATO} antomoletauioinenareittaantinenarentismtiniuaniriesumeinideanconturitarelantoinimadincanoroocontaloconsiararuoitateriirsi"
+    ]
+   ]
+  },
+  {
+   "score": -3117.5646087719406,
+   "lm": -2467.378647607751,
+   "prior": -650.1859611641892,
+   "units": 0.0,
+   "key": {
+    "S27": "a",
+    "S25": "r",
+    "S12": "e",
+    "S28": "u",
+    "S26": "a",
+    "S8": "d",
+    "S32": "i",
+    "S30": "",
+    "S17": "e",
+    "S11": "a",
+    "S22": "e",
+    "S0": "o",
+    "S21": "de",
+    "S4": "t",
+    "S10": "l",
+    "S9": "m",
+    "S29": "n",
+    "S7": "",
+    "S19": "per",
+    "S2": "la",
+    "S23": "i",
+    "S18": "s",
+    "S15": "e",
+    "S6": "l",
+    "S31": "lo",
+    "S5": "s",
+    "S16": "et",
+    "S3": "is",
+    "S24": "c",
+    "S13": "od",
+    "S14": "ad",
+    "S20": "or",
+    "S33": "ol"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "areuadieuaedaidodeatelemeneipernodiperlaiteuolsieneureluirteeoridelelloloiulitoetireledetineslaoialodeaetperrislreraarinideleluimcmoiletraualresialeslaroentodelanaalairitiradeualiislela {ALOEXEQUIREQUANTODA} onlarloinaal {CHEEQUESTOCHEUEDUTOLA} insroitl {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} riieiseid {ADUILTAET} inoiloeteramoilelemoireteeloanloetiuesaneuonrimanodarlariinemcetperoelaalalerooronaieasi {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} odaieladetetilperodineoreronerisnecncotuiinatoinonaied {CHEMENAUACERTICAUALLIETTITOLIDENARI} miatoetidet {INCAMISIASATIATOSIPRIMADETENERLO} oeeademarelanel {LIBERATOFARLONEADUEDUTO} emsedelaenperliinallaroe"
+    ],
+    [
+     "ctl2_f70.txt",
+     "mermaasuadelettodalloisenolaallaetadettatesereueremoireliesncolrieteltuoreuelloimi {ANCHEPO} arelelinaeelanadratoiiresolaroetaamanreelemeselaansiselinstadraroiirliesuliisperlaristadaieleilreeleuadelperainlatiinodoelodealtaneloeilreadeperuaididesieotatrnelodelinoieetdetetraloiuliareeirelantatoiliruiader {PENSATO} lareuidareeoiinanlairrenroanelanrisuriieeolloadeuainodenarelorperadlariinouetinclneliialresiamiperpereiirraloilmi"
+    ]
+   ]
+  },
+  {
+   "score": -3131.3768706677197,
+   "lm": -2650.0558513561264,
+   "prior": -481.3210193115933,
+   "units": 0.0,
+   "key": {
+    "S27": "es",
+    "S25": "s",
+    "S12": "o",
+    "S28": "r",
+    "S26": "i",
+    "S8": "m",
+    "S32": "a",
+    "S30": "n",
+    "S17": "u",
+    "S11": "e",
+    "S22": "o",
+    "S0": "i",
+    "S21": "che",
+    "S4": "t",
+    "S10": "d",
+    "S9": "t",
+    "S29": "",
+    "S7": "e",
+    "S19": "el",
+    "S2": "ma",
+    "S23": "c",
+    "S18": "il",
+    "S15": "e",
+    "S6": "l",
+    "S31": "con",
+    "S5": "n",
+    "S16": "et",
+    "S3": "as",
+    "S24": "per",
+    "S13": "f",
+    "S14": "p",
+    "S20": "at",
+    "S33": "g"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "essorimanureomeamicheestodutoeoaelimanelmancturenidilauoreselrasteoisanchededcondiardatietasedechetaonmanicesdicheesetelsaslsoseesaccheedelratpertiadeetserelsoncesdoildesieetichemaeedeasatcsecheridaandele {ALOEXEQUIREQUANTODA} ilessliciil {CHEEQUESTOCHEUEDUTOLA} aensiantd {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} saaunasonam {ADUILTAET} cialietositiadedotiasotonolieedietaroneerinsatefessmascaetperutelieleelilesiinsieauninc {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} imeaulemeteetalelfauisosiesasuperperitracenticieaum {CHEMENAUACERTICAUALLIETTITOLIDENARI} taitietamenont {INCAMISIASATIATOSIPRIMADETENERLO} niounechetessodied {LIBERATOFARLONEADUEDUTO} etennumuleoneldacelelisien"
+    ],
+    [
+     "ctl2_f70.txt",
+     "etosteenrpodeetetfedlianoideedmautemettitononserosutiasendaonperilseautoltratoreldiatc {ANCHEPO} essodudcioudeemsetianasongisieteetiseelutonediiilasulciletemsesianasdaonerelaaneldessastimeculoadsoolerpodeleamatcafiolicheeltiodioalsepoelreamccheilcoititesolinchedciauetmeteetsidiardaesooasedetetialasrapos {PENSATO} masurcmesooicaiedeasseesiniedesasrsanaoenidliporeaicheeessodiselimmascairetapereludcceslsoncestaelelocasesidiadta"
+    ]
+   ]
+  },
+  {
+   "score": -3248.2945376034045,
+   "lm": -2665.8073185191024,
+   "prior": -582.487219084302,
+   "units": 0.0,
+   "key": {
+    "S27": "a",
+    "S25": "s",
+    "S12": "e",
+    "S28": "r",
+    "S26": "a",
+    "S8": "u",
+    "S32": "i",
+    "S30": "m",
+    "S17": "o",
+    "S11": "",
+    "S22": "o",
+    "S0": "e",
+    "S21": "per",
+    "S4": "t",
+    "S10": "l",
+    "S9": "d",
+    "S29": "n",
+    "S7": "a",
+    "S19": "ar",
+    "S2": "on",
+    "S23": "i",
+    "S18": "at",
+    "S15": "e",
+    "S6": "l",
+    "S31": "et",
+    "S5": "non",
+    "S16": "u",
+    "S3": "in",
+    "S24": "ad",
+    "S13": "c",
+    "S14": "g",
+    "S20": "h",
+    "S33": "che"
+   },
+   "reading": [
+    [
+     "ctl2_f68.txt",
+     "aserauimorouiueperatelodenaeiarneuimaronmitoramelationeraselristeeesimperleletleirliteetiselepertinonononmeialeperauarsinlsossiniperalelridaddeilausrlsononialoatlseenateperonnlisitisperraliinonlel {ALOEXEQUIREQUANTODA} enlasleinaal {CHEEQUESTOCHEUEDUTOLA} inanonseimtl {IMMANITAUSATAPERNOIALUESCOUODEZENEURAERADALUI} siiominemiu {ADUILTAET} ineileuesadeileledeisetomelenaleuirenonnerenmsidncasonsiinedadotareellaleseemseniomanoni {FACTOMENAZARETAMAZARENOSTRICAUALLARIASSASSINATIETRUBATICERTI} euioluuaetilarcinoesesenesinnoadnadetriinmteineniou {CHEMENAUACERTICAUALLIETTITOLIDENARI} diateetiuamemt {INCAMISIASATIATOSIPRIMADETENERLO} meoomperdaselanel {LIBERATOFARLONEADUEDUTO} edamnonouolenmarliinlalaseem"
+    ],
+    [
+     "ctl2_f70.txt",
+     "adesdnonrgelauatclleinononellonotuutatononemserosodeisemliononnadelsaioteltrhorelleidi {ANCHEPO} aselolinaoolnusteimisononcheaseetdanseelodononelaanatinolinatatusseimisliononaraliinonarlasintauioloilseelergelarinontiinceeleperltaneleeilsegearriuiperatieetatasnolemperlineiouuuausaleirlisoeiselntteilisriges {PENSATO} onsoriusoeeiinanalisseansemanelnsinrsimieemellegerineperanaselesarauonsiineretinadalnoliialsononiadiarareiisasaleildi"
+    ]
+   ]
+  }
+ ]
+}

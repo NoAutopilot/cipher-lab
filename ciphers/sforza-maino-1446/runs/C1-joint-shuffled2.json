@@ -1,0 +1,895 @@
+{
+ "files": [
+  "ctl1_f68.txt",
+  "ctl1_f70.txt"
+ ],
+ "context": "none",
+ "scoring": "gen",
+ "p_null": 0.03,
+ "restarts": 16,
+ "iters": 300000,
+ "T0": 3.0,
+ "T1": 0.05,
+ "caps": {
+  "syl": 6,
+  "word": 4,
+  "null": 2,
+  "homo": 4
+ },
+ "fix": {},
+ "syl": "vc",
+ "shuffle": 2,
+ "ntokens": 794,
+ "nsigns": 32,
+ "scores": [
+  -3358.1450158040525,
+  -3392.506619727129,
+  -3427.666790091197,
+  -3430.2735470418734,
+  -3430.9420598056977,
+  -3444.9550216876023,
+  -3449.4294095971427,
+  -3449.671884961009,
+  -3456.73474235689,
+  -3457.6750162502267,
+  -3458.6239113503516,
+  -3459.8572485646355,
+  -3467.9895180300364,
+  -3498.882190032622,
+  -3516.249595885359,
+  -3541.776633832088
+ ],
+ "best": {
+  "score": -3358.1450158040525,
+  "lm": -2620.5968060567975,
+  "prior": -737.548209747255,
+  "units": 0.0,
+  "key": {
+   "S23": "n",
+   "S22": "e",
+   "S9": "a",
+   "S4": "",
+   "S20": "t",
+   "S2": "o",
+   "S10": "u",
+   "S1": "i",
+   "S33": "d",
+   "S28": "i",
+   "S8": "i",
+   "S27": "e",
+   "S32": "t",
+   "S5": "i",
+   "S26": "c",
+   "S16": "s",
+   "S14": "",
+   "S30": "g",
+   "S29": "a",
+   "S17": "r",
+   "S25": "l",
+   "S18": "al",
+   "S15": "ar",
+   "S21": "m",
+   "S11": "on",
+   "S24": "et",
+   "S12": "la",
+   "S6": "ad",
+   "S31": "p",
+   "S0": "id",
+   "S7": "r",
+   "S13": "de"
+  },
+  "reading": [
+   [
+    "ctl1_f68.txt",
+    "neatouuueenoidiininidduieunnttictenetseeiieniiaueiieingaencrlincaudaledctosreogarneialtmetnoetetsneuisiemneieetaualeditedaronaleiinimaeseteduetieetlaueadineeilgamdetmadonntsamear {MAQUELLOHAUEMOFACTO} aueeuemetad {ESOLOPROCEDUTOPERCONSERUATIONE} ietseneede {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} deipoiuun {PERILUESCOUO} tnainietunidaalidiileintletiaintesttunteutdugnarieuoatienoalleueadoiadualereitiiue {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} dnidiiiutteuattiadisneetaltreiilrmaleuitemucaariealoisi {DELEUMAGNIFICENCIECHENONSOLOLI} itaatasinalaroa {UADENOADREHABITARELECASELOROET} uttuereomeeieii {CORNOPRIMAETATTENDEREOGNI} iunitaduiiisurildedeiitmue"
+   ],
+   [
+    "ctl1_f70.txt",
+    "dnontadonarnitigeimitsialaimaeaieltaiceinaliiattiieiiillanadauereauetteimiaagomeatea {COGNOSCIUTO} iiouateetniereaiealittantiottoiietgiusinimalaetmeminntaleuadieimmadgelalmietuiensalonmtaitienteaiduimsmasmamniuuiiiiietauilreiutnietettindniadettutttraditieoieitaldiasetduuonueaalaliiutatitnde {ETCOSI} mdiatiiietiedealmuamoieeilanateredeocittaricireldideitiiotdeiatetiaadisemioteiingidittonaliuinteittainsu"
+   ]
+  ]
+ },
+ "per_token": -4.229401783128529,
+ "runs": [
+  {
+   "score": -3358.1450158040525,
+   "lm": -2620.5968060567975,
+   "prior": -737.548209747255,
+   "units": 0.0,
+   "key": {
+    "S23": "n",
+    "S22": "e",
+    "S9": "a",
+    "S4": "",
+    "S20": "t",
+    "S2": "o",
+    "S10": "u",
+    "S1": "i",
+    "S33": "d",
+    "S28": "i",
+    "S8": "i",
+    "S27": "e",
+    "S32": "t",
+    "S5": "i",
+    "S26": "c",
+    "S16": "s",
+    "S14": "",
+    "S30": "g",
+    "S29": "a",
+    "S17": "r",
+    "S25": "l",
+    "S18": "al",
+    "S15": "ar",
+    "S21": "m",
+    "S11": "on",
+    "S24": "et",
+    "S12": "la",
+    "S6": "ad",
+    "S31": "p",
+    "S0": "id",
+    "S7": "r",
+    "S13": "de"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "neatouuueenoidiininidduieunnttictenetseeiieniiaueiieingaencrlincaudaledctosreogarneialtmetnoetetsneuisiemneieetaualeditedaronaleiinimaeseteduetieetlaueadineeilgamdetmadonntsamear {MAQUELLOHAUEMOFACTO} aueeuemetad {ESOLOPROCEDUTOPERCONSERUATIONE} ietseneede {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} deipoiuun {PERILUESCOUO} tnainietunidaalidiileintletiaintesttunteutdugnarieuoatienoalleueadoiadualereitiiue {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} dnidiiiutteuattiadisneetaltreiilrmaleuitemucaariealoisi {DELEUMAGNIFICENCIECHENONSOLOLI} itaatasinalaroa {UADENOADREHABITARELECASELOROET} uttuereomeeieii {CORNOPRIMAETATTENDEREOGNI} iunitaduiiisurildedeiitmue"
+    ],
+    [
+     "ctl1_f70.txt",
+     "dnontadonarnitigeimitsialaimaeaieltaiceinaliiattiieiiillanadauereauetteimiaagomeatea {COGNOSCIUTO} iiouateetniereaiealittantiottoiietgiusinimalaetmeminntaleuadieimmadgelalmietuiensalonmtaitienteaiduimsmasmamniuuiiiiietauilreiutnietettindniadettutttraditieoieitaldiasetduuonueaalaliiutatitnde {ETCOSI} mdiatiiietiedealmuamoieeilanateredeocittaricireldideitiiotdeiatetiaadisemioteiingidittonaliuinteittainsu"
+    ]
+   ]
+  },
+  {
+   "score": -3392.506619727129,
+   "lm": -2559.7633025972173,
+   "prior": -832.7433171299115,
+   "units": 0.0,
+   "key": {
+    "S23": "",
+    "S22": "i",
+    "S9": "t",
+    "S4": "r",
+    "S20": "a",
+    "S2": "l",
+    "S10": "",
+    "S1": "m",
+    "S33": "o",
+    "S28": "s",
+    "S8": "i",
+    "S27": "n",
+    "S32": "i",
+    "S5": "e",
+    "S26": "l",
+    "S16": "et",
+    "S14": "u",
+    "S30": "an",
+    "S29": "t",
+    "S17": "o",
+    "S25": "et",
+    "S18": "a",
+    "S15": "de",
+    "S21": "e",
+    "S11": "che",
+    "S24": "ad",
+    "S12": "in",
+    "S6": "per",
+    "S31": "ma",
+    "S0": "al",
+    "S7": "d",
+    "S13": "x"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "itraliilmosismoomniielaniietinmiimitniiuimantnuloetsltoaiolaletoilandeieaieiilianaetiietiieniiiitanoiinodechetetisusietnetadnoiirmuiadiniperiririueetranteoadetocheraettueide {MAQUELLOHAUEMOFACTO} tuiiieiito {ESOLOPROCEDUTOPERCONSERUATIONE} sadetiriioi {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} onimaler {PERILUESCOUO} iteinasottetaliuietnsuaetiietmanetiauraniouandersiltiinlaetintoletoanoisiieunuu {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} roralieeaiitaiiperietiadaadnseetdeaisineltdeeialeetmu {DELEUMAGNIFICENCIECHENONSOLOLI} sattatetmuadelt {UADENOADREHABITARELECASELOROET} aaundileinmiim {CORNOPRIMAETATTENDEREOGNI} ssipersiueetorietononmsiei"
+    ],
+    [
+     "ctl1_f70.txt",
+     "urocheaperchedesieaniieeietiatietitinetuartilniaistuiaieneemetinpertuioitadinsueettanlentait {COGNOSCIUTO} msltinadueioitinamiitierlaaliirnuianieteseatuadenesuiairperumnmeeperanietaresuiimietaleiteaumnuuintalereeteteteteimiiminitsetonmaiiiuuuadrasomperadiiiiopermaiuilinsiaoetetradorcheunutaauesatimiorn {ETCOSI} reuoituisiinieixaetelueinsintinonoillmuiideelioriuetoaluimaemliouisutaadstperueetneilaiemranriosiicheuameinsiirtset"
+    ]
+   ]
+  },
+  {
+   "score": -3427.666790091197,
+   "lm": -2602.533328704536,
+   "prior": -825.1334613866612,
+   "units": 0.0,
+   "key": {
+    "S23": "",
+    "S22": "o",
+    "S9": "e",
+    "S4": "i",
+    "S20": "n",
+    "S2": "r",
+    "S10": "i",
+    "S1": "m",
+    "S33": "u",
+    "S28": "i",
+    "S8": "i",
+    "S27": "a",
+    "S32": "l",
+    "S5": "et",
+    "S26": "u",
+    "S16": "t",
+    "S14": "",
+    "S30": "e",
+    "S29": "s",
+    "S17": "c",
+    "S25": "t",
+    "S18": "de",
+    "S15": "d",
+    "S21": "e",
+    "S11": "e",
+    "S24": "al",
+    "S12": "ad",
+    "S6": "ar",
+    "S31": "p",
+    "S0": "od",
+    "S7": "er",
+    "S13": "che"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "oeinriiioormuiiimuuimailletunaoltoamiomieiaiiomesauctiueiudeouunrtcoredoetdeleolronantoiitioeaiooleideauilaudestoiiiesatalauiolimoaladioariioioettieseualesueinteeod {MAQUELLOHAUEMOFACTO} eiooioeoleu {ESOLOPROCEDUTOPERCONSERUATIONE} ialtoioouo {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} uaipretiii {PERILUESCOUO} leetianiiuestodiitaintoletemnatlniinailuiediioireliardetoiasuretsuideacoilietia {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} iuiodietetinloisnliaritoaldeneraietteredeoiilaeiuedetoderettm {DELEUMAGNIFICENCIECHENONSOLOLI} insenetmdedrs {UADENOADREHABITARELECASELOROET} inniaeroreoamoim {CORNOPRIMAETATTENDEREOGNI} iiilariiietticiituauamileio"
+    ],
+    [
+     "ctl1_f70.txt",
+     "iuenaredileteoieetltidesiesosiatnieiuaideiislnietaetetmtadarsiocosiallaieetssereaenos {COGNOSCIUTO} mirislaaletocosiademlleletirnnriiialeiitetiedeealeaeildeoiiarmameeareotdeieiolimotderelsetnmalaeodietietesteeeiiimiimialeiitcaminiolaliniumarallilllcarmnioriaildeuetetialuiiieiaededeetiinelmluia {ETCOSI} ieuisliiialetochedeeiseretoaiadelacauorumlldetuiciotuodomnetmrluoisnaliearettaeirnoetmieiiuilledemietlaillisiti"
+    ]
+   ]
+  },
+  {
+   "score": -3430.2735470418734,
+   "lm": -2712.9883420085534,
+   "prior": -717.2852050333199,
+   "units": 0.0,
+   "key": {
+    "S23": "s",
+    "S22": "a",
+    "S9": "m",
+    "S4": "",
+    "S20": "i",
+    "S2": "l",
+    "S10": "",
+    "S1": "i",
+    "S33": "o",
+    "S28": "e",
+    "S8": "i",
+    "S27": "n",
+    "S32": "u",
+    "S5": "et",
+    "S26": "per",
+    "S16": "e",
+    "S14": "i",
+    "S30": "ar",
+    "S29": "d",
+    "S17": "t",
+    "S25": "an",
+    "S18": "in",
+    "S15": "o",
+    "S21": "e",
+    "S11": "r",
+    "S24": "c",
+    "S12": "ob",
+    "S6": "t",
+    "S31": "ma",
+    "S0": "od",
+    "S7": "che",
+    "S13": "g"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "samilaaslioeisesiooinssuuetperinsaueaniiasiimniiiaisardnsipertanespermoinaoperiletalarosaetinueauslainiesaieiaesniaauminnoiunoordanaeiesiednecnoauiiacobatisaaietanardeocedorsiemieao {MAQUELLOHAUEMOFACTO} miaaaeaumo {ESOLOPROCEDUTOPERCONSERUATIONE} eceasaaoa {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} onimalets {PERILUESCOUO} usmetsiniseomdanodiiianneisianauetmisineuisiinuoiarsoealmuinslinanandoletdoinntaeuietinii {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} osodietetiuadiuitiesacinicheneetancheeinaeunepermoetainleteii {DELEUMAGNIFICENCIECHENONSOLOLI} eidmimeisiinold {UADENOADREHABITARELECASELOROET} iiinchealeaniaii {CORNOPRIMAETATTENDEREOGNI} eseuteiietetianononieuea"
+    ],
+    [
+     "ctl1_f70.txt",
+     "iosritroseuetaraieetueiindiedadinaniimipernisiniediuiietnetetianobstdiatadcuneieetddarlenmiad {COGNOSCIUTO} ielduncisetatadininiuumsuetliiliiniuarieetseeinmiceneessiuinatiinieetaraanineeiauiaseinlseudetiiiniisunmodeteeedeemesiiiiiinumeantniisiauiiiciesositcuuuuttiiiialineuinoetmecorinimininieteimuiuson {ETCOSI} eioidiueiinuetaginedelietaneobsmuntnoalperiiuuoetperitaianoodiaiietiluoiaeidicemtieteneiliaetisarioeuuriinietsuneuudese"
+    ]
+   ]
+  },
+  {
+   "score": -3430.9420598056977,
+   "lm": -2787.661866614595,
+   "prior": -643.2801931911024,
+   "units": 0.0,
+   "key": {
+    "S23": "t",
+    "S22": "o",
+    "S9": "",
+    "S4": "et",
+    "S20": "r",
+    "S2": "e",
+    "S10": "",
+    "S1": "m",
+    "S33": "d",
+    "S28": "e",
+    "S8": "i",
+    "S27": "a",
+    "S32": "s",
+    "S5": "i",
+    "S26": "el",
+    "S16": "u",
+    "S14": "u",
+    "S30": "c",
+    "S29": "i",
+    "S17": "n",
+    "S25": "n",
+    "S18": "i",
+    "S15": "ar",
+    "S21": "l",
+    "S11": "er",
+    "S24": "de",
+    "S12": "p",
+    "S6": "in",
+    "S31": "per",
+    "S0": "al",
+    "S7": "c",
+    "S13": "f"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "toetreootemdeitetmddmattssielratosuoamiotmiaiiuomtciatuelnneteldiodelreunoecartoiislosteorarutoiuioltaioosiadisadarerinoeuetiliaudeadosetmuodepoinitetoetouinetcilddeliderettruuloar {MAQUELLOHAUEMOFACTO} uooolosd {ESOLOPROCEDUTOPERCONSERUATIONE} edeuoettoodo {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} daipereiett {PERILUESCOUO} stitiartedinaliuinaeutrnosimtrausrtuetrasductareteoesiateinoaideiidianoesiiuauu {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} etdettaliiirsoirsiiniutodeircaeinclioesalelarioieiumu {DELEUMAGNIFICENCIECHENONSOLOLI} erirumtuiarei {UADENOADREHABITARELECASELOROET} rruacoeloamoim {CORNOPRIMAETATTENDEREOGNI} etesineiuiunetindadameslo"
+    ],
+    [
+     "ctl1_f70.txt",
+     "uetdterrinerartesicoilisuiiiilioiianuretielaitiieiusriiaiimnptiniuonoidesaeuliiicelaroi {COGNOSCIUTO} meeisadeutionoiiaimsstsieterreiietausciuiteliudelalettusioetinumamllinconietleuosmotuietlsiirumauutsaalietluliulltimiimiasennamrtiosuuudeetretdtmindessssninmriuoeiaesidiuetdedeteruauiiuiersmstdeta {ETCOSI} etludiiuseiiasiofilileuioaeptsanadoeelmussarielinetoundaluomrimesduoeuirdeeinuiualieroimettcetidesseruimitsaessetietu"
+    ]
+   ]
+  },
+  {
+   "score": -3444.9550216876023,
+   "lm": -2607.0759785156697,
+   "prior": -837.8790431719328,
+   "units": 0.0,
+   "key": {
+    "S23": "i",
+    "S22": "i",
+    "S9": "t",
+    "S4": "e",
+    "S20": "r",
+    "S2": "o",
+    "S10": "a",
+    "S1": "a",
+    "S33": "l",
+    "S28": "s",
+    "S8": "u",
+    "S27": "e",
+    "S32": "",
+    "S5": "m",
+    "S26": "c",
+    "S16": "e",
+    "S14": "",
+    "S30": "t",
+    "S29": "p",
+    "S17": "d",
+    "S25": "o",
+    "S18": "n",
+    "S15": "ad",
+    "S21": "s",
+    "S11": "o",
+    "S24": "t",
+    "S12": "er",
+    "S6": "et",
+    "S31": "ic",
+    "S0": "es",
+    "S7": "h",
+    "S13": "la"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "iiteroaaaiiioalsuisiallaaeaiimcreiieieauiiautaeuuiaitpeicdosictalnilcroediotadiimnsiioirereiiaueuisieuiitanelueladopoissiuspeetelaieaiteraietuieieimoetpsltsploeiretsiad {MAQUELLOHAUEMOFACTO} taiiaisitl {ESOLOPROCEDUTOPERCONSERUATIONE} steieiiili {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} leuicomeaai {PERILUESCOUO} itmiueraisltpoesuuoesiroimtaireeraierealatiadesiaotueionoiaeplomplanedisumae {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} eleiesummariapruetueiitnrhesmohsniasesactadminomea {DELEUMAGNIFICENCIECHENONSOLOLI} srptrteainadop {UADENOADREHABITARELECASELOROET} arraehiosieaiua {CORNOPRIMAETATTENDEREOGNI} saisetasumeadeuoleleassai"
+    ],
+    [
+     "ctl1_f70.txt",
+     "elioretoadismtiusmeunpuspipueoretuceuinusprumemmaoerietpaidipatessmpptosetrip {COGNOSCIUTO} asoapetimidipuenatimeorrouueetuaemissnttsessiiniaeetaeassettionessiaaiienoispmraeietesamesespestsiuaaauuauetasodeaariuitersiliaettadetaruiouesnlmteetleaaoaetnnmsartailee {ETCOSI} eslupsuuemilansapsomieseritedeliocaadmcudeiolesiarmaolisprtstetmeesuorimaeiteulsonaamiesepsiea"
+    ]
+   ]
+  },
+  {
+   "score": -3449.4294095971427,
+   "lm": -2573.2321646071505,
+   "prior": -876.1972449899922,
+   "units": 0.0,
+   "key": {
+    "S23": "",
+    "S22": "",
+    "S9": "r",
+    "S4": "n",
+    "S20": "i",
+    "S2": "et",
+    "S10": "e",
+    "S1": "er",
+    "S33": "e",
+    "S28": "l",
+    "S8": "i",
+    "S27": "t",
+    "S32": "a",
+    "S5": "u",
+    "S26": "de",
+    "S16": "u",
+    "S14": "i",
+    "S30": "en",
+    "S29": "t",
+    "S17": "s",
+    "S25": "o",
+    "S18": "n",
+    "S15": "el",
+    "S21": "o",
+    "S11": "per",
+    "S24": "an",
+    "S12": "in",
+    "S6": "s",
+    "S31": "quello",
+    "S0": "d",
+    "S7": "c",
+    "S13": "g"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "rnieteeeeterelilereeeerteaaudeitauterieriretiiierenttidesoldereenedeietusetenelunaoaetitiueiuiotiarenteiateelpertoliliottuanteeanerianinesinniuonentoeanoteperniurioel {MAQUELLOHAUEMOFACTO} rieeoare {ESOLOPROCEDUTOPERCONSERUATIONE} lanune {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} etiquelloetunee {PERILUESCOUO} aruitielertodiiiotliioaurerituaieiniteaeeienelnleetraitetnoetteetuteentslaiuietii {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} nendiuueiaetiaisiuannictluoconelatoederelunetuueri {DELEUMAGNIFICENCIECHENONSOLOLI} litriruerinelett {UADENOADREHABITARELECASELOROET} eiiietcetoterier {CORNOPRIMAETATTENDEREOGNI} lelaseliiuuesnioeteterlaoe"
+    ],
+    [
+     "ctl1_f70.txt",
+     "ineperisperellaueniouauintiottitoiinridetiniltiaiiutuueroinstiesteanatliouttenetotrit {COGNOSCIUTO} erletetataniustitneraaraunetiietiintiaenieuulonrianotolianensierteroosenonnoliaeerunetoatuiiertiiatrdeunouotuoroieeeriieritarelostereiiaiiiannileersanaeaaasseriiietitlaneurunaneneepereitirnniuleiraeraent {ETCOSI} noieitialiitaugnoetoetiutlinratsteetdeeriaaeludeisnioedieriueretaeilitianlrsiuutoietiuernennielaaperinereuatlaantlue"
+    ]
+   ]
+  },
+  {
+   "score": -3449.671884961009,
+   "lm": -2535.4395337448223,
+   "prior": -914.2323512161865,
+   "units": 0.0,
+   "key": {
+    "S23": "",
+    "S22": "n",
+    "S9": "et",
+    "S4": "o",
+    "S20": "d",
+    "S2": "a",
+    "S10": "i",
+    "S1": "i",
+    "S33": "u",
+    "S28": "t",
+    "S8": "i",
+    "S27": "n",
+    "S32": "",
+    "S5": "u",
+    "S26": "m",
+    "S16": "a",
+    "S14": "e",
+    "S30": "s",
+    "S29": "e",
+    "S17": "o",
+    "S25": "l",
+    "S18": "a",
+    "S15": "c",
+    "S21": "r",
+    "S11": "an",
+    "S24": "t",
+    "S12": "em",
+    "S6": "es",
+    "S31": "de",
+    "S0": "id",
+    "S7": "og",
+    "S13": "g"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "netodaiiinnaiutitiuuiiniumdnnanniiniietiniienisenemoltmetiuanumdaaonascnuarnandndaniiainrninnetianuinucanelntetirenatnuinoienteminesiononeuloserutreuanodaeternc {MAQUELLOHAUEMOFACTO} eteinninrnetu {ESOLOPROCEDUTOPERCONSERUATIONE} ttanonnun {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} unideauoii {PERILUESCOUO} etuindituetelidieilntedlnuetidnadieodniuiescotniaetinaalnineuaueuianontiueinee {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} ouoidiuuidniediesiantadogntulogranitnrimetcunaauaie {DELEUMAGNIFICENCIECHENONSOLOLI} tdeetdetaieacae {UADENOADREHABITARELECASELOROET} iddeinognarnninii {CORNOPRIMAETATTENDEREOGNI} titesitieuaiooilununitrin"
+    ],
+    [
+     "ctl1_f70.txt",
+     "eouandesanctusniruaiaeireneinledoetimniaiteediunuuilemeseeinoneitnterueesarnetdne {COGNOSCIUTO} itaienteunoneinaietuoaddaiionesiiautraetetrnrteanioeseinirressnlaorteniinaaareudeineenetidiuorarearetriiiiiiiinetitloniidineeetodtuiestioesidienaintauuetaotuoiianieneetaaeutidetiuon {ETCOSI} oreuieetiinungarieraeunntemetnonunamiecumiooneluideniduiauenteedtteteseuanriadnuiosoiutaneaiiuntoetai"
+    ]
+   ]
+  },
+  {
+   "score": -3456.73474235689,
+   "lm": -2749.141724734567,
+   "prior": -707.5930176223227,
+   "units": 0.0,
+   "key": {
+    "S23": "i",
+    "S22": "r",
+    "S9": "",
+    "S4": "s",
+    "S20": "u",
+    "S2": "a",
+    "S10": "o",
+    "S1": "",
+    "S33": "u",
+    "S28": "d",
+    "S8": "e",
+    "S27": "t",
+    "S32": "i",
+    "S5": "n",
+    "S26": "p",
+    "S16": "n",
+    "S14": "i",
+    "S30": "per",
+    "S29": "a",
+    "S17": "a",
+    "S25": "e",
+    "S18": "et",
+    "S15": "l",
+    "S21": "i",
+    "S11": "il",
+    "S24": "on",
+    "S12": "ec",
+    "S6": "m",
+    "S31": "ma",
+    "S0": "c",
+    "S7": "ad",
+    "S13": "ot"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "irsuaooorriaudeidiuuotoiiiinputirinrterieoteeiriperatiipaedipouetrupuanaraperlirnetiiriiarutuniroeneriiterrioettueitulilaerdidieiatnontuorisironecormeisrsrinesperaiuoniauilsiuniirl {MAQUELLOHAUEMOFACTO} iorroririu {ESOLOPROCEDUTOPERCONSERUATIONE} donnrsirrur {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} utemaansooi {PERILUESCOUO} iinietuoiduaeceieetdiiueriniutniuoiisutoiuoiperilsdroaietiaeterotauanauoettardieniotii {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} susicennouiroauiemenironetuadtdneadietroditioplnretanni {DELEUMAGNIFICENCIECHENONSOLOLI} duauniietlaa {UADENOADREHABITARELECASELOROET} ouuiotadrairtre {CORNOPRIMAETATTENDEREOGNI} doidimodeinnoaseeututdiior"
+    ],
+    [
+     "ctl1_f70.txt",
+     "isuiilumillidinperreinineetaeiaraeteiusepteietedaiiuentnneecimaioraraoonitdiinaaperaitura {COGNOSCIUTO} daoaitoniinraraetetiiiinsauuaeestiipereonnidietionitidiiiietrosmitiimperreetsidiriorinetaiiianuitiiiitconsinianiiieooeeetiodeatouieriiiionsudiuimonioiiiamueiraetdietunnsonusooiloitietetindouiiiust {ETCOSI} siiueaiideetinrotetioaiainrtdeciitaturapiiilnpeasrieucirunaiuirdiauondminntieaurnsiperseudiiilietoniitdiisadino"
+    ]
+   ]
+  },
+  {
+   "score": -3457.6750162502267,
+   "lm": -2563.215102115646,
+   "prior": -894.4599141345807,
+   "units": 0.0,
+   "key": {
+    "S23": "u",
+    "S22": "",
+    "S9": "a",
+    "S4": "e",
+    "S20": "u",
+    "S2": "et",
+    "S10": "",
+    "S1": "a",
+    "S33": "r",
+    "S28": "e",
+    "S8": "i",
+    "S27": "e",
+    "S32": "t",
+    "S5": "i",
+    "S26": "in",
+    "S16": "n",
+    "S14": "s",
+    "S30": "er",
+    "S29": "a",
+    "S17": "d",
+    "S25": "l",
+    "S18": "ar",
+    "S15": "el",
+    "S21": "t",
+    "S11": "che",
+    "S24": "al",
+    "S12": "la",
+    "S6": "m",
+    "S31": "per",
+    "S0": "o",
+    "S7": "ma",
+    "S13": "c"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "uaeuetuetareiueuarraeuuttiinueutneaiuaiaeiisaueraeusindleuinararrinuetndetereluiartttuetueunuinitueitaareriterelchealeseuitaenalerteasallamiueesileeratraltarcheeuunastel {MAQUELLOHAUEMOFACTO} asttar {ESOLOPROCEDUTOPERCONSERUATIONE} ealneur {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} reiperetieu {PERILUESCOUO} tuaiuieuueraaloisileesuultiaauuentuuseuetrserueleeetatieuetarlearetiararedetiisess {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} ereuoiiiutautiminualarumaeeilmataretetinaeliaretinas {DELEUMAGNIFICENCIECHENONSOLOLI} euaauanausareleta {UADENOADREHABITARELECASELOROET} uusemaetteaia {CORNOPRIMAETATTENDEREOGNI} euetmeisindeilrereaett"
+    ],
+    [
+     "ctl1_f70.txt",
+     "serucheumcheeluetierititniaraitaaielsueaiineiuarieastuiieiiallaumasdaalteestiaaeretteaua {COGNOSCIUTO} aeetatealsuidaiearattautieetuuetiieesteriniuetarasalteteuustaremsaeattmerlaretestaunaretuttaiusaessuteaoietntantatuiaiiaietaeldeauuitsssaleueuruamalttttdmauisetieetarrianealrechesesaararsieuataturee {ETCOSI} etsriasteiieticartatetsieelauatederetinastteliinideslrosauiaettrsesaualeamsinetietuiaeuereirettchesaraiuteetteaeun"
+    ]
+   ]
+  },
+  {
+   "score": -3458.6239113503516,
+   "lm": -2669.317286818754,
+   "prior": -789.3066245315978,
+   "units": 0.0,
+   "key": {
+    "S23": "",
+    "S22": "r",
+    "S9": "u",
+    "S4": "i",
+    "S20": "i",
+    "S2": "in",
+    "S10": "i",
+    "S1": "e",
+    "S33": "d",
+    "S28": "a",
+    "S8": "t",
+    "S27": "e",
+    "S32": "n",
+    "S5": "o",
+    "S26": "al",
+    "S16": "s",
+    "S14": "",
+    "S30": "et",
+    "S29": "l",
+    "S17": "m",
+    "S25": "a",
+    "S18": "u",
+    "S15": "er",
+    "S21": "a",
+    "S11": "el",
+    "S24": "o",
+    "S12": "c",
+    "S6": "c",
+    "S31": "ur",
+    "S0": "ma",
+    "S7": "x",
+    "S13": "de"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "ruiiiniiirrinedataeddieeinnoaliernsreetretuiettreetlealmaaaluidurdaliinsmrineterrounarninrieisritstraetrrnuiuedtnederellaraatalesoedirnierocirctiriroaietladoaldeliisuarer {MAQUELLOHAUEMOFACTO} uirrirarnud {ESOLOPROCEDUTOPERCONSERUATIONE} aosrirrdr {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} deturinoiii {PERILUESCOUO} nuoteiiadulamattaeaiarnoueiesniiiieindieteriariinunteinuarieldinoldiuemrantoie {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} idimatooiinrilintctsrouixeaoaxaurianeaialueroruinose {DELEUMAGNIFICENCIECHENONSOLOLI} ailuiuseuerinl {UADENOADREHABITARELECASELOROET} iiiiexrinareerte {CORNOPRIMAETATTENDEREOGNI} aianciatosimitadedeeanair"
+    ],
+    [
+     "ctl1_f70.txt",
+     "ideliceleranoetrtaonstultalrlteaiiutaletutalnitoeooeacclirmrlioneaaolletinaeuirl {COGNOSCIUTO} eainilneoormrlteuennunoiiniiinttienettisoaauuoaeaanuriiceeeaacetrauiaarniersuinanloieeneumaioiasalsauatiiettetenuiaameeiitrnoiiadeconinnnmceitrinteanudousiodiiielieuuuoaiiunendie {ETCOSI} iadtlnattenordeuailainoreacunemedrinalenneroaltmiradmareioeinndralioaucoseatiniroeietitdannelueioneannilasi"
+    ]
+   ]
+  },
+  {
+   "score": -3459.8572485646355,
+   "lm": -2596.6110550342128,
+   "prior": -863.2461935304227,
+   "units": 0.0,
+   "key": {
+    "S23": "i",
+    "S22": "n",
+    "S9": "e",
+    "S4": "e",
+    "S20": "l",
+    "S2": "i",
+    "S10": "",
+    "S1": "i",
+    "S33": "s",
+    "S28": "i",
+    "S8": "a",
+    "S27": "u",
+    "S32": "t",
+    "S5": "a",
+    "S26": "per",
+    "S16": "c",
+    "S14": "",
+    "S30": "d",
+    "S29": "e",
+    "S17": "er",
+    "S25": "o",
+    "S18": "o",
+    "S15": "al",
+    "S21": "r",
+    "S11": "ad",
+    "S24": "e",
+    "S12": "x",
+    "S6": "m",
+    "S31": "et",
+    "S0": "m",
+    "S7": "la",
+    "S13": "en"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "ineelinniiisiaiiiissiuiittaperluintcnuianiiaeuaaniideuipereroiiperesonsperlicernidalinaotrntiinlulcinacanriuannteousatusaladeoniiiareuceusnteinexnmaienenaoederseresadeilcernal {MAQUELLOHAUEMOFACTO} ennnrntes {ESOLOPROCEDUTOPERCONSERUATIONE} iecneinnsn {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} suaetiaei {PERILUESCOUO} tieaiauliiseeomaaouiilontaeiiluctlielutsdialeinietauiioonuesiaesouernitaau {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} eseimaaaltneltamacineollauiaolaroniturperealanoiaci {DELEUMAGNIFICENCIECHENONSOLOLI} ileeleciioalie {UADENOADREHABITARELECASELOROET} llulanirnuinai {CORNOPRIMAETATTENDEREOGNI} iiitmiaacereaosusuiitrn"
+    ],
+    [
+     "ctl1_f70.txt",
+     "esiadlmadaliitadnaratcaoeareneauoleeaperuaioaietlaauaaioximenerneetuiraeediruelne {COGNOSCIUTO} iiietueianerneauoitteitaeilliaaeutdacaiiroeeruriiitonemiuirrmdnooerintinicoiirtealiuituemaercrecreriaiaaiauteioeruilianteeliisiimettttermilaniauitosaeceeseadueooailetitiseu {ETCOSI} ersaetiaautanenorerianuixietuerusniperittalaperaerenosmnilaiitsnieleiemacurailnaieideasittadoiaituitteeiic"
+    ]
+   ]
+  },
+  {
+   "score": -3467.9895180300364,
+   "lm": -2669.7437176667154,
+   "prior": -798.245800363321,
+   "units": 0.0,
+   "key": {
+    "S23": "",
+    "S22": "",
+    "S9": "u",
+    "S4": "et",
+    "S20": "s",
+    "S2": "e",
+    "S10": "m",
+    "S1": "n",
+    "S33": "r",
+    "S28": "e",
+    "S8": "t",
+    "S27": "a",
+    "S32": "i",
+    "S5": "o",
+    "S26": "in",
+    "S16": "e",
+    "S14": "i",
+    "S30": "de",
+    "S29": "a",
+    "S17": "c",
+    "S25": "r",
+    "S18": "e",
+    "S15": "od",
+    "S21": "l",
+    "S11": "es",
+    "S24": "d",
+    "S12": "el",
+    "S6": "en",
+    "S31": "h",
+    "S0": "la",
+    "S7": "per",
+    "S13": "non"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "uetsemmmenretenrrmnamiioinsaieantntumattindeaaiincreinumrerinseecedeodoeiliesasemtetlatiumeartiarodesareietlaaedarmietnidelmentetetioretdealrdlaresetseuilod {MAQUELLOHAUEMOFACTO} uimmliur {ESOLOPROCEDUTOPERCONSERUATIONE} edeetr {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} ratheoetmm {PERILUESCOUO} iuotasmeruarlatitraeisriounsaeismietsamirmideodetemeuitaeermaareoarmeaceitoimaii {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} etretlatoomsimasitentedesperaeorperlemeialminuodoeeoeni {DELEUMAGNIFICENCIECHENONSOLOLI} esausuenieodea {UADENOADREHABITARELECASELOROET} mssimaperelantn {CORNOPRIMAETATTENDEREOGNI} emeienmetioemcettrraraneilm"
+    ],
+    [
+     "ctl1_f70.txt",
+     "ietressenesodeiodetloieteatlaatarisetutinateteaiistoaoonrelenaimcamdiaeiloaadeelausa {COGNOSCIUTO} neemaiadiocataeniiuioetessettetaiidetmeoeleuidlaleiiemeteninanllendereetleiimneeeliaosinaiiiaulamoetlelaelultmmnttntaiumercanmstiiiidetsernendimiiicennstietaeieroueetdretmmesmiaiueeioemsuinireta {ETCOSI} etlirtaiiettaiononelmaleioaeeluiacareinniiiodointcetirrlainsoneirieiasdeuenioealtesonetdeettreiiesienmoiaeiietaeem"
+    ]
+   ]
+  },
+  {
+   "score": -3498.882190032622,
+   "lm": -2829.508444934152,
+   "prior": -669.3737450984697,
+   "units": 0.0,
+   "key": {
+    "S23": "",
+    "S22": "e",
+    "S9": "",
+    "S4": "i",
+    "S20": "m",
+    "S2": "in",
+    "S10": "a",
+    "S1": "u",
+    "S33": "s",
+    "S28": "r",
+    "S8": "n",
+    "S27": "e",
+    "S32": "i",
+    "S5": "t",
+    "S26": "o",
+    "S16": "ad",
+    "S14": "i",
+    "S30": "et",
+    "S29": "o",
+    "S17": "d",
+    "S25": "al",
+    "S18": "l",
+    "S15": "per",
+    "S21": "t",
+    "S11": "s",
+    "S24": "de",
+    "S12": "it",
+    "S6": "an",
+    "S31": "z",
+    "S0": "che",
+    "S7": "c",
+    "S13": "ma"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "eiminaaaeeinusrnrussaueaiitomeeiadeeuneunaennieuetoeiodalroaslesominaddeinetperetliteiinememadeanadneteneeialesniespersoalerirntoeaddeesaeiiuiedeitaeannieieitalietotsdetossimaditeper {MAQUELLOHAUEMOFACTO} iaeeaeteis {ESOLOPROCEDUTOPERCONSERUATIONE} rdeadeieese {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} senzintiaa {PERILUESCOUO} itnemarsoalcheninalerimaleitumeadimaiimeaisaietperireainineinlaleaeosintosalederintiaeii {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} isichenttamieaominannadedelmcertalctlearietaopertelintadui {DELEUMAGNIFICENCIECHENONSOLOLI} rmomaduilperino {UADENOADREHABITARELECASELOROET} ammiaeceinteeuenu {CORNOPRIMAETATTENDEREOGNI} rarianarnitadadinalseseuritae"
+    ],
+    [
+     "ctl1_f70.txt",
+     "iissmansperritetenttiadnlontoeonealiminoenlnroiimntettualitanoiaedeoadeierittooetintemeo {COGNOSCIUTO} urinaoiedeitedeoneluiiitiinmminnnieiietnaadtrtlidetetriileaianiueuttaneteallitrieiaueadlintiotmiueiiiecheatitadtoadttnaaunnuneiaraldeuamneiiiideimrsuandeiaiiidanumnieinnerilstadidesiaasaieillitramiuisie {ETCOSI} itisnoiirnneitemaltaotiniteeritiedeseinouiiipertondieialscheieumtuinisieriomderanitadetninmetuietinsriisiluatieriiiorada"
+    ]
+   ]
+  },
+  {
+   "score": -3516.249595885359,
+   "lm": -2804.492333034752,
+   "prior": -711.7572628506073,
+   "units": 0.0,
+   "key": {
+    "S23": "e",
+    "S22": "",
+    "S9": "",
+    "S4": "o",
+    "S20": "s",
+    "S2": "et",
+    "S10": "e",
+    "S1": "r",
+    "S33": "m",
+    "S28": "l",
+    "S8": "u",
+    "S27": "a",
+    "S32": "i",
+    "S5": "a",
+    "S26": "non",
+    "S16": "t",
+    "S14": "i",
+    "S30": "de",
+    "S29": "t",
+    "S17": "in",
+    "S25": "o",
+    "S18": "n",
+    "S15": "d",
+    "S21": "t",
+    "S11": "an",
+    "S24": "al",
+    "S12": "c",
+    "S6": "ar",
+    "S31": "er",
+    "S0": "per",
+    "S7": "p",
+    "S13": "ma"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "eoseteeeeetrmluelermmeraeeeiianonsaeitaruerueauuiredetaeinoninolenonemnmnonsettinetdedeanitieetsasteeututeauienamuiamdantolileuttatalameiorialcearueooiaoodettmalttmanoestitd {MAQUELLOHAUEMOFACTO} ieetim {ESOLOPROCEDUTOPERCONSERUATIONE} laltoem {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} maueretaoeee {PERILUESCOUO} ieaeuaseelmtoperuiuoaliesoiaresatiseeiosaeimeideedoleetiuaeetnoeatmetatmenainliuaieaii {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} omoeperuaaesietsiuarutealnspalaoptneliatenondanetatri {DELEUMAGNIFICENCIECHENONSOLOLI} lststreindett {UADENOADREHABITARELECASELOROET} essieapettarur {CORNOPRIMAETATTENDEREOGNI} leeliareluiateinouomamarlite"
+    ],
+    [
+     "ctl1_f70.txt",
+     "iomeansarandeliadeutaituntutttuaoisounonauenultiisuaaaaroceartieintealialitattdeettast {COGNOSCIUTO} rletetiaalieaintuanriieiaoetssetuuoaiideuetaeltnialtatleeiineoarirarttardeonotliieretnetetitasiraiieiapereaottttttteueeruuruaieloinareseuiiiialoslemeraralieiiiinarrsuietualinmatoalmoeeaneiainnialesiriemoa {ETCOSI} otimutiiluuaiamantettetiaalceiainametnonriiidanonuinoiomperirsaretimilitsallariatatuetsaroedeoumliianinreaeialiiotlete"
+    ]
+   ]
+  },
+  {
+   "score": -3541.776633832088,
+   "lm": -2655.469863206148,
+   "prior": -886.3067706259396,
+   "units": 0.0,
+   "key": {
+    "S23": "",
+    "S22": "",
+    "S9": "d",
+    "S4": "a",
+    "S20": "al",
+    "S2": "u",
+    "S10": "i",
+    "S1": "o",
+    "S33": "r",
+    "S28": "et",
+    "S8": "i",
+    "S27": "t",
+    "S32": "e",
+    "S5": "n",
+    "S26": "s",
+    "S16": "o",
+    "S14": "u",
+    "S30": "s",
+    "S29": "a",
+    "S17": "c",
+    "S25": "e",
+    "S18": "n",
+    "S15": "ar",
+    "S21": "i",
+    "S11": "in",
+    "S24": "l",
+    "S12": "m",
+    "S6": "l",
+    "S31": "con",
+    "S0": "at",
+    "S7": "is",
+    "S13": "g"
+   },
+   "reading": [
+    [
+     "ctl1_f68.txt",
+     "daaluiiiuoretietorriotieensalteotoioiditiiuosatusceetsdirnrsaluocusarnneieualtaloiioiitiedintrietrarinaeetuetiiatoltrieaoulmiliaauneasairliarinaaloduiar {MAQUELLOHAUEMOFACTO} duiiiedr {ESOLOPROCEDUTOPERCONSERUATIONE} etloar {ETANCHOPERLIINCONUENIENTIMODISERUATONEUERSODENOI} rticonunaii {PERILUESCOUO} ednitalietrdaeatiuietetualeendoaltoealiuaaltieriusaraetiudeituneitarunarintceteinuituu {CEADUEDUTOETRECOGNOSCERECHELNONHABIAFATTOBENEETCHELNONNESIA} araatinnialeiaaleiliolnalistetneisinietetiisdarnnunoou {DELEUMAGNIFICENCIECHENONSOLOLI} etaladaldoounarua {UADENOADREHABITARELECASELOROET} ialaluitisuitoio {CORNOPRIMAETATTENDEREOGNI} etietelietiunoicaiertrtoeteii"
+    ],
+    [
+     "ctl1_f70.txt",
+     "uarinallinaretensiineoinaiiaaiteualadistinietauealintnnoemlauicailetetuinaasuitdala {COGNOSCIUTO} oetuiaetluncaitnoeedenaualaluiiatuesiionetindulitietuenialuotoiilsenaietueioonuieanaluotuuetdatinaioiaoidiiiioiioitedietectoialieuuulaaletrolleieeecloaliuuitetenrndoalraiiiniutudnnunetialdeoerat {ETCOSI} aiuriaueetiitengniiaiuuntetmdetctrusoueearnsicaueratuoalnoueruetuaalletdlunotiiualnoasaireteeinunoineteteeaaetoi"
+    ]
+   ]
+  }
+ ]
+}

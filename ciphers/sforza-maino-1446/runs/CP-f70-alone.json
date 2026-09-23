@@ -1,0 +1,741 @@
+{
+ "files": [
+  "ctlP_f70.txt"
+ ],
+ "context": "none",
+ "scoring": "gen",
+ "p_null": 0.03,
+ "restarts": 16,
+ "iters": 300000,
+ "T0": 3.0,
+ "T1": 0.05,
+ "caps": {
+  "syl": 6,
+  "word": 4,
+  "null": 2,
+  "homo": 4
+ },
+ "fix": {},
+ "syl": "vc",
+ "shuffle": null,
+ "ntokens": 390,
+ "nsigns": 27,
+ "scores": [
+  -759.4870783368544,
+  -1329.1741828204292,
+  -1368.5351049262372,
+  -1410.2468185866542,
+  -1411.2808493412695,
+  -1416.5604899322727,
+  -1420.7221553193244,
+  -1425.7528064019039,
+  -1427.879667619694,
+  -1428.761787512804,
+  -1444.3112107639374,
+  -1449.6715683444477,
+  -1461.457141985223,
+  -1469.7578299553227,
+  -1482.742928495858,
+  -1510.8586333222452
+ ],
+ "best": {
+  "score": -759.4870783368544,
+  "lm": -643.553008037542,
+  "prior": -115.93407029931251,
+  "units": 0.0,
+  "key": {
+   "S8": "l",
+   "S4": "e",
+   "S28": "u",
+   "S7": "a",
+   "S3": "es",
+   "S6": "s",
+   "S21": "r",
+   "S27": "q",
+   "S25": "c",
+   "S12": "h",
+   "S10": "e",
+   "S0": "i",
+   "S24": "n",
+   "S16": "t",
+   "S13": "p",
+   "S20": "o",
+   "S1": "",
+   "S5": "f",
+   "S22": "o",
+   "S14": "m",
+   "S9": "d",
+   "S15": "g",
+   "S19": "i",
+   "S18": "x",
+   "S17": "an",
+   "S26": "la",
+   "S23": "b"
+  },
+  "reading": [
+   [
+    "ctlP_f70.txt",
+    "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedie {COSIANCHE} pohauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantit {HAUESSIMO} pensatofarecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalam"
+   ]
+  ]
+ },
+ "per_token": -1.9474027649662935,
+ "runs": [
+  {
+   "score": -759.4870783368544,
+   "lm": -643.553008037542,
+   "prior": -115.93407029931251,
+   "units": 0.0,
+   "key": {
+    "S8": "l",
+    "S4": "e",
+    "S28": "u",
+    "S7": "a",
+    "S3": "es",
+    "S6": "s",
+    "S21": "r",
+    "S27": "q",
+    "S25": "c",
+    "S12": "h",
+    "S10": "e",
+    "S0": "i",
+    "S24": "n",
+    "S16": "t",
+    "S13": "p",
+    "S20": "o",
+    "S1": "",
+    "S5": "f",
+    "S22": "o",
+    "S14": "m",
+    "S9": "d",
+    "S15": "g",
+    "S19": "i",
+    "S18": "x",
+    "S17": "an",
+    "S26": "la",
+    "S23": "b"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "leuaesserequellacheseinterponessefrasoamaperuiadeparentadietperognialtrauiaexpedie {COSIANCHE} pohauerecompresosoasantitaperlamandassemoaddireperdemmoalbricoallasoasantitaetperlelitterehabamoscripteauuidequestofactochenuinonsiamouenutiadquestoconalcunamalaopinionecontrolamenteetsaputadesoasantit {HAUESSIMO} pensatofarecosapunctomolestaadloanimodesoabeatitudineinquestononlohauenamofactonedatogliorecchiaperchetuctalam"
+    ]
+   ]
+  },
+  {
+   "score": -1329.1741828204292,
+   "lm": -1119.416536256671,
+   "prior": -209.75764656375827,
+   "units": 0.0,
+   "key": {
+    "S8": "s",
+    "S4": "e",
+    "S28": "u",
+    "S7": "e",
+    "S3": "ar",
+    "S6": "m",
+    "S21": "r",
+    "S27": "la",
+    "S25": "et",
+    "S12": "d",
+    "S10": "a",
+    "S0": "i",
+    "S24": "n",
+    "S16": "",
+    "S13": "t",
+    "S20": "a",
+    "S1": "in",
+    "S5": "f",
+    "S22": "o",
+    "S14": "l",
+    "S9": "d",
+    "S15": "che",
+    "S19": "es",
+    "S18": "x",
+    "S17": "or",
+    "S26": "non",
+    "S23": "c"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "seuearmerelauesseetdemainertanarmeinfremoeletaruiedeteinrenediaterochenesesreueseextedie {COSIANCHE} todeuareetaltraromoemorieternonlordinemmineinloeddiretardelloescrietoessemoemoreseetersesesaredecelometresteeuuidalauarofeetoetdanuinonmielouanuiedlauemoetonesetuneleseatinioneetonroseleneametuinedemoemori {HAUESSIMO} intanmeofereetometunetolasareedsaeneslodemoeceeinesudinainlauarononsodeuenelofeetonadeachesioreetetdieteretdeuetesel"
+    ]
+   ]
+  },
+  {
+   "score": -1368.5351049262372,
+   "lm": -1082.6141707971692,
+   "prior": -285.92093412906786,
+   "units": 0.0,
+   "key": {
+    "S8": "i",
+    "S4": "r",
+    "S28": "u",
+    "S7": "t",
+    "S3": "d",
+    "S6": "i",
+    "S21": "a",
+    "S27": "et",
+    "S25": "",
+    "S12": "e",
+    "S10": "d",
+    "S0": "n",
+    "S24": "e",
+    "S16": "a",
+    "S13": "e",
+    "S20": "n",
+    "S1": "",
+    "S5": "es",
+    "S22": "s",
+    "S14": "e",
+    "S9": "o",
+    "S15": "che",
+    "S19": "l",
+    "S18": "ap",
+    "S17": "m",
+    "S26": "om",
+    "S23": "in"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "irutdirareturiiteridnearaenediresatistetedauntoretareatondaerascheeltiaatultraperonr {COSIANCHE} esetudarneeadsistimanateraomemotiirestoonaredaoreestiinanstiitistimalatraerairilaadaretintesialeartuunodetudasestasedeuneseintesudeuantoeturiassetiuetetitnenenserseaasitereardaiteuatoristimana {HAUESSIMO} edeitasestarsiteueasenidattointelesoristinrtalauonedneetudaseseiseturetesestasedotancheinsarenteraerauatite"
+    ]
+   ]
+  },
+  {
+   "score": -1410.2468185866542,
+   "lm": -1179.798384476453,
+   "prior": -230.4484341102011,
+   "units": 0.0,
+   "key": {
+    "S8": "t",
+    "S4": "e",
+    "S28": "l",
+    "S7": "a",
+    "S3": "as",
+    "S6": "s",
+    "S21": "t",
+    "S27": "non",
+    "S25": "",
+    "S12": "m",
+    "S10": "e",
+    "S0": "i",
+    "S24": "r",
+    "S16": "u",
+    "S13": "s",
+    "S20": "",
+    "S1": "in",
+    "S5": "con",
+    "S22": "o",
+    "S14": "l",
+    "S9": "d",
+    "S15": "n",
+    "S19": "i",
+    "S18": "che",
+    "S17": "an",
+    "S26": "de",
+    "S23": "n"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "telaassetenonlettameseiruetsrasseincontasoalasetliadesainteruadieusetonriatutaliaechesedie {COSIANCHE} somaletelstasosoasanuiuasetdelandinassineinloadditesetdelloatntioattasoasanuiuaeusettetiuuetemanalostisueallidenonlasuoconauomerlirorsialolerluiadnonlesuooratlralatasirioreorutotalerueeusaslinuadesoasanuiu {HAUESSIMO} insersauoconateosaslruoltasuaadtarilodesoaneauiniuldireirnonlasuorortomaleraloconauoredauntiotemiasetmeuluatal"
+    ]
+   ]
+  },
+  {
+   "score": -1411.2808493412695,
+   "lm": -1247.2819693796337,
+   "prior": -163.9988799616359,
+   "units": 0.0,
+   "key": {
+    "S8": "l",
+    "S4": "e",
+    "S28": "u",
+    "S7": "a",
+    "S3": "er",
+    "S6": "r",
+    "S21": "et",
+    "S27": "o",
+    "S25": "m",
+    "S12": "ad",
+    "S10": "an",
+    "S0": "i",
+    "S24": "t",
+    "S16": "i",
+    "S13": "c",
+    "S20": "as",
+    "S1": "",
+    "S5": "n",
+    "S22": "a",
+    "S14": "s",
+    "S9": "d",
+    "S15": "p",
+    "S19": "i",
+    "S18": "x",
+    "S17": "o",
+    "S26": "per",
+    "S23": "lo"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "leuaerreeteouellamaderanitieetcasterrenetaraasacanetuiadecaetetiadianiceetaptialietauiaexcedie {COSIANCHE} caadauanetemassceteraraaroiiiaceetpersodarresaaddietecanetdessaalloetimaallaraaroiiiaeiceetleliiianeteadaloasarmeticieauuidanouerianamiamadantuitatriasauantuiiadoueriamatalmutasalaascitiatematietalasetieaniracuiaderaaroiii {HAUESSIMO} cantraianaetemaracutmiasasleriaadlasatisaderaaloeaiiiuditanitoueriatatlaadauetasanamiatandaiaspliaetemmadiaceetmadeiumialas"
+    ]
+   ]
+  },
+  {
+   "score": -1416.5604899322727,
+   "lm": -1202.0034250877798,
+   "prior": -214.557064844493,
+   "units": 0.0,
+   "key": {
+    "S8": "s",
+    "S4": "a",
+    "S28": "l",
+    "S7": "e",
+    "S3": "t",
+    "S6": "r",
+    "S21": "u",
+    "S27": "de",
+    "S25": "et",
+    "S12": "d",
+    "S10": "o",
+    "S0": "i",
+    "S24": "",
+    "S16": "r",
+    "S13": "t",
+    "S20": "in",
+    "S1": "at",
+    "S5": "m",
+    "S22": "i",
+    "S14": "n",
+    "S9": "t",
+    "S15": "an",
+    "S19": "o",
+    "S18": "c",
+    "S17": "ap",
+    "S26": "g",
+    "S23": "er"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "saletrauadelasseetdaroirautintraatmuerienetoulietateatuaretiortauianoesrueloeactatia {COSIANCHE} tidelouaetinntutirierapriretaugnaptaterrataatniettiuatoutannieseruietiesserieraproreartausasorrouadeereniretuotraellitodeltrimeetrietdoliirienilolrietdelarrietiesetleneseintiiiaetiruisenaraorretlatretarieraprir {HAUESSIMO} attorerimeuaetiretletrininstreetsineonitarieeraeratorltioideltriisidelaenimeetrioterinansiiuaetetdietauetdarletresen"
+    ]
+   ]
+  },
+  {
+   "score": -1420.7221553193244,
+   "lm": -1163.13735329693,
+   "prior": -257.58480202239446,
+   "units": 0.0,
+   "key": {
+    "S8": "n",
+    "S4": "a",
+    "S28": "i",
+    "S7": "o",
+    "S3": "in",
+    "S6": "m",
+    "S21": "i",
+    "S27": "al",
+    "S25": "n",
+    "S12": "t",
+    "S10": "i",
+    "S0": "i",
+    "S24": "per",
+    "S16": "",
+    "S13": "u",
+    "S20": "che",
+    "S1": "r",
+    "S5": "c",
+    "S22": "e",
+    "S14": "s",
+    "S9": "l",
+    "S15": "ma",
+    "S19": "s",
+    "S18": "q",
+    "S17": "is",
+    "S26": "con",
+    "S23": "d"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "naioinmaiaaliannontamiiperaiucheperinmarciomeosouiiiiolauoriaperoliiuaiemapersonioisoaqualia {COSIANCHE} uetoiiianchesuiinemeomisiouaiconsislrommrarseolliiauiilasseondiineonnomeomissoauainansiiatodosemnisuaoiiilialiineconentiperiiperepermioseiiperiiolaliameneperonniperosonocheuiperieperaneperienosaperaimouirolameomisi {HAUESSIMO} ruipermoecoianemouipernescheninoolncheopersselameodaorsiliperiiperaliineperepernetoiaperoseconeperilochemanieianntiouaintainonos"
+    ]
+   ]
+  },
+  {
+   "score": -1425.7528064019039,
+   "lm": -1197.2801859630272,
+   "prior": -228.47262043887676,
+   "units": 0.0,
+   "key": {
+    "S8": "et",
+    "S4": "n",
+    "S28": "u",
+    "S7": "i",
+    "S3": "r",
+    "S6": "e",
+    "S21": "o",
+    "S27": "c",
+    "S25": "e",
+    "S12": "t",
+    "S10": "t",
+    "S0": "r",
+    "S24": "o",
+    "S16": "",
+    "S13": "a",
+    "S20": "m",
+    "S1": "d",
+    "S5": "at",
+    "S22": "s",
+    "S14": "a",
+    "S9": "de",
+    "S15": "p",
+    "S19": "l",
+    "S18": "om",
+    "S17": "ma",
+    "S26": "f",
+    "S23": "per"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "etnuirenoncunetetietnetronoamorendatoiesiaiatouridenaidonoidertanospolietoiulinomandern {COSIANCHE} astiutonemaaorsesiemarianofamadedieedndasidederonatodenaasietperoresietetiesiemalinanoetnetltontiperiaseeolaniuurdetcursatiesettourosoeriasutouridecunesesoieteuoiaietimarorsonesoosetianonteiaudidenesiemar {HAUESSIMO} datoeisationeseiauoesametriideetmiolasdenesipernidluderotrocursosoetstiunoiasatiesotdeimpetrsoneetrianoetnueietia"
+    ]
+   ]
+  },
+  {
+   "score": -1427.879667619694,
+   "lm": -1125.2485735155642,
+   "prior": -302.6310941041298,
+   "units": 0.0,
+   "key": {
+    "S8": "e",
+    "S4": "n",
+    "S28": "a",
+    "S7": "t",
+    "S3": "r",
+    "S6": "a",
+    "S21": "o",
+    "S27": "m",
+    "S25": "s",
+    "S12": "i",
+    "S10": "l",
+    "S0": "n",
+    "S24": "o",
+    "S16": "i",
+    "S13": "e",
+    "S20": "et",
+    "S1": "d",
+    "S5": "an",
+    "S22": "",
+    "S14": "u",
+    "S9": "i",
+    "S15": "as",
+    "S19": "r",
+    "S18": "eb",
+    "S17": "ad",
+    "S26": "de",
+    "S23": "ic"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "enatranonmaneetsinalnoinoeetorandanotatuteloantinetdonoitinlienoasorteiotartnebeninn {COSIANCHE} eitalonsetueorataadinitenodeuadidtaadndutiinoneloinuuteiconsteetataadiritnienoeneriilonitictuasoreintaanilmariantsisiloanooantualoaintimanaisotesaotutetetenononsoioetunoinliateaditinataadini {HAUESSIMO} deloatiantonsateaosiueterittieettoruinaticntidriainolnomariooeitanotuantsiolitietasenonssintenosiniasitetu"
+    ]
+   ]
+  },
+  {
+   "score": -1428.761787512804,
+   "lm": -1146.2112360708416,
+   "prior": -282.55055144196245,
+   "units": 0.0,
+   "key": {
+    "S8": "",
+    "S4": "i",
+    "S28": "t",
+    "S7": "a",
+    "S3": "er",
+    "S6": "d",
+    "S21": "t",
+    "S27": "en",
+    "S25": "",
+    "S12": "l",
+    "S10": "i",
+    "S0": "o",
+    "S24": "n",
+    "S16": "u",
+    "S13": "d",
+    "S20": "et",
+    "S1": "al",
+    "S5": "r",
+    "S22": "e",
+    "S14": "m",
+    "S9": "t",
+    "S15": "in",
+    "S19": "o",
+    "S18": "s",
+    "S17": "es",
+    "S26": "non",
+    "S23": "c"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "itaerditientialidionuitdetnerdialrtadeamadittoatidaaltinuatoiuditeinnoautatoaisditoi {COSIANCHE} delatitietmdteredeadesuouaditnonmestaladdalialmeattotidittimmeactoeaadeadesuouaiuditiouuitilacamedtoduiattotienteruerauelintonendoametintuoatentidueenatnamaaetdonoenienuteaminuiiudadtaluatideadesuou {HAUESSIMO} aldindaueratiedadtnuemeteruaatetanometideaciaualouttonionenteruenenelatinamerauenitauetinoetiloaditliutuaam"
+    ]
+   ]
+  },
+  {
+   "score": -1444.3112107639374,
+   "lm": -1228.4499558066018,
+   "prior": -215.86125495733566,
+   "units": 0.0,
+   "key": {
+    "S8": "l",
+    "S4": "i",
+    "S28": "",
+    "S7": "a",
+    "S3": "et",
+    "S6": "per",
+    "S21": "a",
+    "S27": "u",
+    "S25": "n",
+    "S12": "at",
+    "S10": "t",
+    "S0": "r",
+    "S24": "o",
+    "S16": "e",
+    "S13": "s",
+    "S20": "u",
+    "S1": "t",
+    "S5": "m",
+    "S22": "i",
+    "S14": "d",
+    "S9": "de",
+    "S15": "es",
+    "S19": "r",
+    "S18": "con",
+    "S17": "h",
+    "S26": "ma",
+    "S23": "m"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "liaetperiaiuillanatipertroeiasuoetperitmaaperiadastaradeisataioeadertesiaiesoraleaaraiconsideri {COSIANCHE} siatatainudsaetiperiaperhereasiamadhdetaperpertitdiadederaistadeiddialmarniallaperiaperhereaiesialilreetaiatamadipernarseiardetueteimaneinattoroioperraditoeradeuipereinioalnoadalausrorioinioeailadioeiteperasteadeiperiaperhere {HAUESSIMO} tstoperaeimaainiperasoneiduleteaadeluaordideiperiamiaetrederotroueteioioliataioadimaneiotdeaeueslriainnatrasianatienealad"
+    ]
+   ]
+  },
+  {
+   "score": -1449.6715683444477,
+   "lm": -1195.8237470835447,
+   "prior": -253.84782126090283,
+   "units": 0.0,
+   "key": {
+    "S8": "i",
+    "S4": "i",
+    "S28": "o",
+    "S7": "n",
+    "S3": "t",
+    "S6": "a",
+    "S21": "",
+    "S27": "p",
+    "S25": "s",
+    "S12": "a",
+    "S10": "d",
+    "S0": "r",
+    "S24": "et",
+    "S16": "e",
+    "S13": "",
+    "S20": "c",
+    "S1": "m",
+    "S5": "a",
+    "S22": "u",
+    "S14": "on",
+    "S9": "o",
+    "S15": "ed",
+    "S19": "an",
+    "S18": "g",
+    "S17": "h",
+    "S26": "en",
+    "S23": "af"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "iiontaiipoiiinsaiadreteicettaimanaunonndornoinmietenordeiuedetannienoannigiori {COSIANCHE} uanodiscontuaunaherenienonhomnaamimonunooridoiononuniafrsuniinaunaheanenieiiiianeedianafnonuasaneinoorodpoteuanseusadetoretuetarnonuodetoernopoiaeusuetnisoetnonnincretruetisueteuinonieteideanomenoiaunahere {HAUESSIMO} mdetaneuanisuanoetseuoncitennoicnetanonuoiaunafinemaneooretdretpoteuetuetiuanoietnonuanseuetdonecediruissarnisaieoseninon"
+    ]
+   ]
+  },
+  {
+   "score": -1461.457141985223,
+   "lm": -1141.1661470141262,
+   "prior": -320.2909949710968,
+   "units": 0.0,
+   "key": {
+    "S8": "u",
+    "S4": "",
+    "S28": "t",
+    "S7": "e",
+    "S3": "r",
+    "S6": "a",
+    "S21": "e",
+    "S27": "al",
+    "S25": "de",
+    "S12": "d",
+    "S10": "r",
+    "S0": "o",
+    "S24": "a",
+    "S16": "i",
+    "S13": "t",
+    "S20": "s",
+    "S1": "n",
+    "S5": "es",
+    "S22": "l",
+    "S14": "a",
+    "S9": "t",
+    "S15": "er",
+    "S19": "d",
+    "S18": "la",
+    "S17": "c",
+    "S26": "f",
+    "S23": "el"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "uteraealtuuededaroaietsaraneseealeaetretoetteneaietoriteleradeuieetdelatto {COSIANCHE} tldetredesaterlaleacioietefactneaannalettoetretaaleueleodeleuuealeacidieiteuudiiredeelealadeedtiettotraltrilesedeildedratoalaaoealtratioetaltaildelaeudetaeaeuestoaoladelaielueaairiaettnietaleacioi {HAUESSIMO} ntraaeileseedelaettadeilasurieetuseadaltaleeleindittoaroaaltrilalauldetaealesedeilarteiseruoledededoetededitdeieuea"
+    ]
+   ]
+  },
+  {
+   "score": -1469.7578299553227,
+   "lm": -1175.6791618913412,
+   "prior": -294.07866806398147,
+   "units": 0.0,
+   "key": {
+    "S8": "e",
+    "S4": "n",
+    "S28": "a",
+    "S7": "t",
+    "S3": "r",
+    "S6": "o",
+    "S21": "e",
+    "S27": "s",
+    "S25": "",
+    "S12": "i",
+    "S10": "n",
+    "S0": "c",
+    "S24": "i",
+    "S16": "a",
+    "S13": "o",
+    "S20": "d",
+    "S1": "u",
+    "S5": "i",
+    "S22": "l",
+    "S14": "o",
+    "S9": "o",
+    "S15": "ed",
+    "S19": "an",
+    "S18": "oc",
+    "S17": "m",
+    "S26": "h",
+    "S23": "u"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "enatronensaneetinoncianeodironuietoltotoneactonotueniatocnaoneledianteaetaantnoconocn {COSIANCHE} olitanendooerloltomacatonehomoutoounuoltoocenoneonoolteueclteetoltomaanatnaoneeneanaanenitutoloeanoantaaconsaralitaliniacilioctolaniaactosanoalliteaitotetdociclinliaeletoniannaotoauatonoltomaca {HAUESSIMO} uoniotalitenlotoaialoderattoedtianolonoltuntauanaaocincisaralilielitanitolitalinotadedeclenictoneinaaateto"
+    ]
+   ]
+  },
+  {
+   "score": -1482.742928495858,
+   "lm": -1203.0690038623288,
+   "prior": -279.6739246335292,
+   "units": 0.0,
+   "key": {
+    "S8": "et",
+    "S4": "d",
+    "S28": "n",
+    "S7": "i",
+    "S3": "s",
+    "S6": "o",
+    "S21": "e",
+    "S27": "ma",
+    "S25": "",
+    "S12": "a",
+    "S10": "c",
+    "S0": "t",
+    "S24": "o",
+    "S16": "u",
+    "S13": "a",
+    "S20": "er",
+    "S1": "el",
+    "S5": "r",
+    "S22": "",
+    "S14": "an",
+    "S9": "a",
+    "S15": "m",
+    "S19": "l",
+    "S18": "at",
+    "S17": "f",
+    "S26": "m",
+    "S23": "per"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "etdnisodedmandetetiadoctoudeaerosodelreioianiacentiadaieledouiatcuademolietueinlidatadatd {COSIANCHE} aaincederanaesoiofutuiademanfaeliooeldelaniaatedaceadananietperetietetioiofuluiduadeetdetluucedaiperianoelaudinntacmansuriuacontoootiannconutiamandouoietnoianietieratotodoueetiandoudcuoianeluiadoiofutu {HAUESSIMO} elacooiuriedoianouaneretsuiiaeteriolanadoiperdiuellunatoctomansuooetaindoianriuocaiuermettedatiadeadunuietian"
+    ]
+   ]
+  },
+  {
+   "score": -1510.8586333222452,
+   "lm": -1286.043473511003,
+   "prior": -224.81515981124215,
+   "units": 0.0,
+   "key": {
+    "S8": "o",
+    "S4": "a",
+    "S28": "e",
+    "S7": "n",
+    "S3": "c",
+    "S6": "i",
+    "S21": "s",
+    "S27": "er",
+    "S25": "d",
+    "S12": "i",
+    "S10": "per",
+    "S0": "i",
+    "S24": "l",
+    "S16": "o",
+    "S13": "t",
+    "S20": "de",
+    "S1": "r",
+    "S5": "ma",
+    "S22": "",
+    "S14": "e",
+    "S9": "u",
+    "S15": "al",
+    "S19": "an",
+    "S18": "la",
+    "S17": "m",
+    "S26": "ol",
+    "S23": "b"
+   },
+   "reading": [
+    [
+     "ctlP_f70.txt",
+     "oaenciasaereaoondiaiperiloastdelciarmasninentperseinuatnrsalonuiperotasallannoosneannalatauia {COSIANCHE} tinepersaddeetscinimoiontasolemurniirarenuuisatpersuaeenobsidnooninimoanonaotasoaoanoopersainbneidsantoaneeiupererecomandodiperleilliineeperleoinuereaiodlnodelnenondetililadlosonealoaperointeronuainimoio {HAUESSIMO} rtperlinomansadinteldoedeoconnuodenlaneuainbanoranoeuilperilerecolloinealnemandolperunodealoisaddiintasdiaoedonone"
+    ]
+   ]
+  }
+ ]
+}

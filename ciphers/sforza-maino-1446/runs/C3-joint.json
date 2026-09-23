@@ -1,0 +1,895 @@
+{
+ "files": [
+  "ctl3_f68.txt",
+  "ctl3_f70.txt"
+ ],
+ "context": "none",
+ "scoring": "gen",
+ "p_null": 0.03,
+ "restarts": 16,
+ "iters": 300000,
+ "T0": 3.0,
+ "T1": 0.05,
+ "caps": {
+  "syl": 6,
+  "word": 4,
+  "null": 2,
+  "homo": 4
+ },
+ "fix": {},
+ "syl": "vc",
+ "shuffle": null,
+ "ntokens": 794,
+ "nsigns": 32,
+ "scores": [
+  -1875.1642409369117,
+  -2963.716452105705,
+  -3022.7091651582077,
+  -3042.6162208869864,
+  -3069.383534310228,
+  -3090.243077839642,
+  -3105.2992107164487,
+  -3105.422723860129,
+  -3125.9396818212363,
+  -3127.4625357007735,
+  -3127.53949484959,
+  -3139.471516183555,
+  -3187.759714497952,
+  -3190.2798206918546,
+  -3204.718643956405,
+  -3248.5280790511097
+ ],
+ "best": {
+  "score": -1875.1642409369117,
+  "lm": -1494.601155875745,
+  "prior": -380.56308506116665,
+  "units": 0.0,
+  "key": {
+   "S12": "s",
+   "S10": "i",
+   "S7": "an",
+   "S16": "o",
+   "S28": "p",
+   "S14": "a",
+   "S9": "g",
+   "S5": "a",
+   "S25": "t",
+   "S26": "d",
+   "S1": "i",
+   "S3": "c",
+   "S4": "",
+   "S22": "en",
+   "S20": "r",
+   "S23": "e",
+   "S21": "n",
+   "S19": "o",
+   "S32": "l",
+   "S27": "e",
+   "S18": "b",
+   "S13": "f",
+   "S11": "m",
+   "S6": "al",
+   "S31": "e",
+   "S2": "h",
+   "S0": "",
+   "S24": "u",
+   "S33": "q",
+   "S8": "che",
+   "S29": "x",
+   "S15": "it"
+  },
+  "reading": [
+   [
+    "ctl3_f68.txt",
+    "sianopagatidictidenarietiononglidebofaraltromaleethocdipromisecheselausigrestituiralaabbatiadesanctobenignoaluescouodegeneuracheqnestaterraseintendaintalerestitntionelosimileaccord {LIMEDESUMRESPETTI} erasonehofac {CONLIHOMINIDELOMBARDORE} qualisimilm {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} etspiananoun {QUADRADELMURO} delaterraetpaganofraseudicinquecentoducatiedanolihostagiifinchesianopagatichelealtrecondit {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} nonhabiaaltroamsodesuauoluntapertuttilipredictire {EMOLTIALTRICHESENALUNGOSCRIUERE} emaximechecolt {QUESTILECHPOSSANOESSEREADQUALCHE} uostrobonproposi {ETETIAMQUANDOBENELOUESCOUO} deiteneuraliuenesseadoccupare"
+   ],
+   [
+    "ctl3_f70.txt",
+    "efioloetsottobonaobedientiaetgouernodesuasignoriaetdemadamaetdalcantosuostagnanoet {INBONA} amicitiachenoietcheconsequentementeperquestonepossanoessereesianoobseruateleobbligationedelaleghahabiamocheloprefatoducaphilibertoetmadamalorononhannosenonadsperaredehauerdanoiamoreuolietcordiabilissi {ETESSERE} aiutatisecondoleobiigationidelapredictanostralegatchefinchecosistaraquellostatocomedictononchelouogliamooff"
+   ]
+  ]
+ },
+ "per_token": -2.361667809744221,
+ "runs": [
+  {
+   "score": -1875.1642409369117,
+   "lm": -1494.601155875745,
+   "prior": -380.56308506116665,
+   "units": 0.0,
+   "key": {
+    "S12": "s",
+    "S10": "i",
+    "S7": "an",
+    "S16": "o",
+    "S28": "p",
+    "S14": "a",
+    "S9": "g",
+    "S5": "a",
+    "S25": "t",
+    "S26": "d",
+    "S1": "i",
+    "S3": "c",
+    "S4": "",
+    "S22": "en",
+    "S20": "r",
+    "S23": "e",
+    "S21": "n",
+    "S19": "o",
+    "S32": "l",
+    "S27": "e",
+    "S18": "b",
+    "S13": "f",
+    "S11": "m",
+    "S6": "al",
+    "S31": "e",
+    "S2": "h",
+    "S0": "",
+    "S24": "u",
+    "S33": "q",
+    "S8": "che",
+    "S29": "x",
+    "S15": "it"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "sianopagatidictidenarietiononglidebofaraltromaleethocdipromisecheselausigrestituiralaabbatiadesanctobenignoaluescouodegeneuracheqnestaterraseintendaintalerestitntionelosimileaccord {LIMEDESUMRESPETTI} erasonehofac {CONLIHOMINIDELOMBARDORE} qualisimilm {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} etspiananoun {QUADRADELMURO} delaterraetpaganofraseudicinquecentoducatiedanolihostagiifinchesianopagatichelealtrecondit {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} nonhabiaaltroamsodesuauoluntapertuttilipredictire {EMOLTIALTRICHESENALUNGOSCRIUERE} emaximechecolt {QUESTILECHPOSSANOESSEREADQUALCHE} uostrobonproposi {ETETIAMQUANDOBENELOUESCOUO} deiteneuraliuenesseadoccupare"
+    ],
+    [
+     "ctl3_f70.txt",
+     "efioloetsottobonaobedientiaetgouernodesuasignoriaetdemadamaetdalcantosuostagnanoet {INBONA} amicitiachenoietcheconsequentementeperquestonepossanoessereesianoobseruateleobbligationedelaleghahabiamocheloprefatoducaphilibertoetmadamalorononhannosenonadsperaredehauerdanoiamoreuolietcordiabilissi {ETESSERE} aiutatisecondoleobiigationidelapredictanostralegatchefinchecosistaraquellostatocomedictononchelouogliamooff"
+    ]
+   ]
+  },
+  {
+   "score": -2963.716452105705,
+   "lm": -2391.4574478908908,
+   "prior": -572.2590042148142,
+   "units": 0.0,
+   "key": {
+    "S12": "t",
+    "S10": "i",
+    "S7": "et",
+    "S16": "a",
+    "S28": "p",
+    "S14": "a",
+    "S9": "u",
+    "S5": "o",
+    "S25": "",
+    "S26": "s",
+    "S1": "i",
+    "S3": "d",
+    "S4": "el",
+    "S22": "al",
+    "S20": "r",
+    "S23": "e",
+    "S21": "l",
+    "S19": "a",
+    "S32": "l",
+    "S27": "e",
+    "S18": "c",
+    "S13": "n",
+    "S11": "m",
+    "S6": "ad",
+    "S31": "e",
+    "S2": "er",
+    "S0": "con",
+    "S24": "in",
+    "S33": "f",
+    "S8": "che",
+    "S29": "de",
+    "S15": "g"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "tietapauoisidielsalarieialalulisecanarolramadeeeradsipraconmitedereteellointiuretiinirolooccoconiasetetdacaliulaadinetdainaseualeinroderefletoerroteilalsoiloleretiliaconlelatimileaddars {LIMEDESUMRESPETTI} erotaleeranod {CONLIHOMINIDELOMBARDORE} finaditimilm {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} etpietetainl {QUADRADELMURO} seloerroepouetanelroteinsicondilfinedalasindoiesolalieratouiinilderetietapauaicheelleadredalsi {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} conlaleracioalraomtasetinoinalinlaperinilipresidelire {EMOLTIALTRICHESENALUNGOSCRIUERE} emodeimederedal {QUESTILECHPOSSANOESSEREADQUALCHE} inatracalprapati {ETETIAMQUANDOBENELOUESCOUO} segaleinraliinaletteoconsaddinpore"
+    ],
+    [
+     "ctl3_f70.txt",
+     "enialaetaacaloacconesialiaeuainerlasetinatiularioesemasamaesoldalatinatouletaele {INBONA} amidiiochelaconiederedaltefinalemaleperfinetalepaconttalaettereetietaelacterinaeleaccliuoialesconeloleueroeraciomachelaprenoasindoperiliceraemasomalaralaleretlacontelalastperoreseeroinersoellaiomareinaliedarsiocilitti {ETESSERE} oiinoitecondalsaleaciiuaialiselapresidolatraleuoconderenilderedatitorofinellataadaelmesidalalderelainauliomaann"
+    ]
+   ]
+  },
+  {
+   "score": -3022.7091651582077,
+   "lm": -2475.525418743957,
+   "prior": -547.1837464142511,
+   "units": 0.0,
+   "key": {
+    "S12": "l",
+    "S10": "al",
+    "S7": "is",
+    "S16": "a",
+    "S28": "r",
+    "S14": "o",
+    "S9": "n",
+    "S5": "a",
+    "S25": "",
+    "S26": "u",
+    "S1": "i",
+    "S3": "per",
+    "S4": "con",
+    "S22": "er",
+    "S20": "t",
+    "S23": "e",
+    "S21": "d",
+    "S19": "e",
+    "S32": "t",
+    "S27": "o",
+    "S18": "r",
+    "S13": "c",
+    "S11": "m",
+    "S6": "et",
+    "S31": "e",
+    "S2": "el",
+    "S0": "che",
+    "S24": "s",
+    "S33": "es",
+    "S8": "n",
+    "S29": "x",
+    "S15": "p"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "lalisaronaaluipericonuerotalealadedntiuoracotattemetoeelaperuirtachemileperelelecontaslintolisitataarracheiouolisperarerindaetselperaseuenerestapereleesdelaettaloalderuaidatetelaldalachedetalimitooperperatu {LIMEDESUMRESPETTI} etaladeelacaper {CONLIHOMINIDELOMBARDORE} essetallimitm {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} elralisisesd {QUADRADELMURO} uotaettaeranisaccontalosualcheperaldessepererausperaieuadatielalaniicidpereleliisaronoinconteettoperadui {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} chededeloriaottaamleuolsasetsdoretsitalrtouiperconite {EMOLTIALTRICHESENALUNGOSCRIUERE} emaximepereleperat {QUESTILECHPOSSANOESSEREADQUALCHE} saltaredrtareli {ETETIAMQUANDOBENELOUESCOUO} ueperestotiserelloacheuaperpersrato"
+    ],
+    [
+     "ctl3_f70.txt",
+     "eciataelaeradaercheouierioenesetdeuelsolindatiaeuemouomoouatperodalselandisecono {INBONA} omiperalalandachealepereleperadloesseromererotessoladorachellodaolletoelaliseconerletsoetearrtinaiedoucheotatenelaeloriamentertecaeusperarelitirotaemouamotatededelisdachelededoulretateueelasetuacondeiametosetioperatuiaritilli {ETESSERE} aisailocheperaduatearalinoiadiuetorteuiperadeltotonacheperelecidpereloperelilataessettaloepereconmeualperedadpereletesentiamaacc"
+    ]
+   ]
+  },
+  {
+   "score": -3042.6162208869864,
+   "lm": -2631.6174446810037,
+   "prior": -410.99877620598267,
+   "units": 0.0,
+   "key": {
+    "S12": "r",
+    "S10": "al",
+    "S7": "ar",
+    "S16": "e",
+    "S28": "m",
+    "S14": "a",
+    "S9": "per",
+    "S5": "a",
+    "S25": "i",
+    "S26": "d",
+    "S1": "e",
+    "S3": "s",
+    "S4": "",
+    "S22": "or",
+    "S20": "n",
+    "S23": "o",
+    "S21": "t",
+    "S19": "e",
+    "S32": "l",
+    "S27": "o",
+    "S18": "c",
+    "S13": "de",
+    "S11": "l",
+    "S6": "an",
+    "S31": "a",
+    "S2": "p",
+    "S0": "et",
+    "S24": "u",
+    "S33": "la",
+    "S8": "con",
+    "S29": "f",
+    "S15": "b"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "ralaremaperaialdesiedoranaloialetetperledocedeanalinelanoaipesdemneetlerasporalaurepernorieiuenalaaccaieteadorarsiecoreperteanuarseuedaperoraunaspalatariaionnaroaltiordaetialonorialitialeettalereleloassend {LIMEDESUMRESPETTI} anaretapedeas {CONLIHOMINIDELOMBARDORE} lauanalrelell {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} airmalarareut {QUADRADELMURO} dolaiannaoimaperaredenaroudaletsaltlauasoriedusaieodateleperiapereedeetsporearemaperaieconloaninosetdei {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} ettetpaceaalinealredoruauelutiamaniuiielalmnodesiena {EMOLTIALTRICHESENALUNGOSCRIUERE} alafelaspaseli {QUESTILECHPOSSANOESSEREADQUALCHE} uerinecetmnemere {ETETIAMQUANDOBENELOUESCOUO} daborounaleuorarroaetdessumano"
+    ],
+    [
+     "ctl3_f70.txt",
+     "adeeeleaireiiecetaecetodeorieaaipereuantedaruareperteneaoidoladalaoidalsatierueriapertareoi {INBONA} alesalialaconteetaloisposetrolauorioloriamonlauorietomeetrrateorranoaralareecranuaioloeccleperaieetodetolalaperpapacealeconlemnodeaiedusampeleconieailadalalenetetparteetratetadrmananadapauondateealenoueleoisendeacelerre {ETESSERE} aeuiaieroetsetdeloecaleperaieetedalamnadesiaterinaloperaetispodeetsposererianalaualleriaieselodalsietetspaleueperlealeedede"
+    ]
+   ]
+  },
+  {
+   "score": -3069.383534310228,
+   "lm": -2413.715478621656,
+   "prior": -655.6680556885717,
+   "units": 0.0,
+   "key": {
+    "S12": "t",
+    "S10": "i",
+    "S7": "on",
+    "S16": "a",
+    "S28": "m",
+    "S14": "i",
+    "S9": "per",
+    "S5": "e",
+    "S25": "",
+    "S26": "d",
+    "S1": "o",
+    "S3": "l",
+    "S4": "ad",
+    "S22": "al",
+    "S20": "t",
+    "S23": "a",
+    "S21": "n",
+    "S19": "o",
+    "S32": "s",
+    "S27": "a",
+    "S18": "n",
+    "S13": "c",
+    "S11": "u",
+    "S6": "c",
+    "S31": "e",
+    "S2": "l",
+    "S0": "de",
+    "S24": "r",
+    "S33": "ma",
+    "S8": "in",
+    "S29": "un",
+    "S15": "it"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "tionamipereidoloaddalitiaianonpersodanacitestoucaelaldomtadeuotellateadsertopertatoroteseennedeoidatonlanalopernacretlarodeperalertellemaneteattetainaldeonesatatiniadenesatouosaillatd {LIMEDESUMRESPETTI} etetanelacel {CONLIHOMINIDELOMBARDORE} marcitouosu {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} etmiononorn {QUADRADELMURO} daseetteameperonacadtetardidelinmarelaladrleoadenasolateperooconllatoonamiperioinadsactalando {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} denonlinoeistaeutodatrerosrnimetrosimtadoladote {EMOLTIALTRICHESENALUNGOSCRIUERE} eueunouellelas {QUESTILECHPOSSANOESSEREADQUALCHE} rattanonmtamoto {ETETIAMQUANDOBENELOUESCOUO} deitalartisoralettaededallrmeta"
+    ],
+    [
+     "ctl3_f70.txt",
+     "ecoasaetaonaneondeadoaloieperoretnodetritopernatoeadauidiuiadeslinatrotepernonoada {INBONA} iuoliieinnadeiallalantamaralaualematmaratanamadettinaattetaetionoadontetriasaannsopereoonaddeaseseperlelinoeuoinsomtaceodrlemlosonataeuideuisatononlonnadetenonidtmetetedeleratdeadnooeuotarosoalatdoenosotto {ETESSERE} eoreotadelandasaanioperioanodesimtedolenottisaperedellaconllalototetemaressatioloaduadilonanllesoropersoeuaacc"
+    ]
+   ]
+  },
+  {
+   "score": -3090.243077839642,
+   "lm": -2339.669874943639,
+   "prior": -750.5732028960031,
+   "units": 0.0,
+   "key": {
+    "S12": "d",
+    "S10": "e",
+    "S7": "m",
+    "S16": "a",
+    "S28": "in",
+    "S14": "o",
+    "S9": "non",
+    "S5": "o",
+    "S25": "",
+    "S26": "r",
+    "S1": "i",
+    "S3": "n",
+    "S4": "per",
+    "S22": "er",
+    "S20": "n",
+    "S23": "i",
+    "S21": "t",
+    "S19": "e",
+    "S32": "s",
+    "S27": "e",
+    "S18": "l",
+    "S13": "c",
+    "S11": "l",
+    "S6": "quale",
+    "S31": "a",
+    "S2": "u",
+    "S0": "che",
+    "S24": "",
+    "S33": "al",
+    "S8": "et",
+    "S29": "am",
+    "S15": "ip"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "demainononoeriniperreroneieatetnonsirelaconosnelqualeeauanriinnachelidanuidapersodinonnediinosoollocheioredmnalerinontaqualeadnaeranoneranonuaaltadoinnodeeterroitosinideteachetasadiliseonnanr {LIMEDESUMRESPETTI} anodatauacon {CONLIHOMINIDELOMBARDORE} alqualeedilisl {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} adinemmet {QUADRADELMURO} resoannoiinononmacpernoderechenetalanerarnoiirotasiuadononiicitnuidimainononoietpersiqualenenatri {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} chetetuolioosnaolderedoestoinaniseinnerinperina {EMOLTIALTRICHESENALUNGOSCRIUERE} aloamilanuanas {QUESTILECHPOSSANOESSEREADQUALCHE} adnaletinnainedi {ETETIAMQUANDOBENELOUESCOUO} raiperinosieraddeocheranninone"
+    ],
+    [
+     "ctl3_f70.txt",
+     "aciasaadaelatoelcheerierioanoneanteradodinontanioiriloroloerosnotadedonontmepere {INBONA} olineeoettacheeinuinatdealerelerainenaledateinacheddotaeddaneademepereldanoisiallsinonoietercheesosanonuouolioleetseinnicoernoinuisilenaalorolosanetetumtachedatetordinanonarauoinroperteioleneesienanriolisiddi {ETESSERE} oioidechenatrasialeinonoiatirasoinnarinotednosenonochenuicitnuenedidonoalassadoeneperlirenetatnuaseenonsiolaacc"
+    ]
+   ]
+  },
+  {
+   "score": -3105.2992107164487,
+   "lm": -2472.6978368251584,
+   "prior": -632.6013738912902,
+   "units": 0.0,
+   "key": {
+    "S12": "a",
+    "S10": "c",
+    "S7": "che",
+    "S16": "l",
+    "S28": "o",
+    "S14": "d",
+    "S9": "o",
+    "S5": "n",
+    "S25": "",
+    "S26": "e",
+    "S1": "t",
+    "S3": "a",
+    "S4": "et",
+    "S22": "per",
+    "S20": "i",
+    "S23": "m",
+    "S21": "a",
+    "S19": "r",
+    "S32": "e",
+    "S27": "u",
+    "S18": "i",
+    "S13": "an",
+    "S11": "e",
+    "S6": "la",
+    "S31": "s",
+    "S2": "de",
+    "S0": "i",
+    "S24": "e",
+    "S33": "al",
+    "S8": "ed",
+    "S29": "os",
+    "S15": "on"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "acchelodoncetateteperdicmclaraoeteuilandineirelausdelaetoilietasademaseteneatoiuatetinenniinitdeuachealipertoallaesaaleresoperseinadesalasanmiinaucaperentanemimacacliaselateteudaalie {LIMEDESUMRESPETTI} sinalasdelanna {CONLIHOMINIDELOMBARDORE} alelacatetee {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} saocchecherea {QUADRADELMURO} euensiinmonochelanetinaueeciacaalesaperleeantmenaletdelanottantaadematchelododtedetemlaiualaet {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} iaradeditndeilneareuaenereeadosietecoiuetaettis {EMOLTIALTRICHESENALUNGOSCRIUERE} senostesadesale {QUESTILECHPOSSANOESSEREADQUALCHE} elailiraoilorat {ETETIAMQUANDOBENELOUESCOUO} esonpermeidetepersaaunielaaeoniu"
+    ],
+    [
+     "ctl3_f70.txt",
+     "santlelsalrilanriiuetpertdsoresiaresaedatoalitnmemedededueneadalaeranoacheretu {INBONA} detaccnedalicmademalaaualeperuepersouialeualauoliaadaluaasiusaccheretriasiedmemliietontraueiuenesodendeditnerederoimannreeanodetetiuilsedenedeliraradechealiasaradeaosinisesdenemienetartneriueretualietnitetaat {ETESSERE} ntentauialaelemlictodtlatesedoisetanaraideuoniademantaadeuarataninaleseeladraretemecaralaadesereroetnellanan"
+    ]
+   ]
+  },
+  {
+   "score": -3105.422723860129,
+   "lm": -2564.3132611610927,
+   "prior": -541.109462699036,
+   "units": 0.0,
+   "key": {
+    "S12": "l",
+    "S10": "e",
+    "S7": "or",
+    "S16": "e",
+    "S28": "et",
+    "S14": "e",
+    "S9": "n",
+    "S5": "o",
+    "S25": "l",
+    "S26": "d",
+    "S1": "i",
+    "S3": "che",
+    "S4": "de",
+    "S22": "",
+    "S20": "t",
+    "S23": "e",
+    "S21": "r",
+    "S19": "a",
+    "S32": "n",
+    "S27": "a",
+    "S18": "c",
+    "S13": "s",
+    "S11": "per",
+    "S6": "g",
+    "S31": "a",
+    "S2": "d",
+    "S0": "",
+    "S24": "u",
+    "S33": "f",
+    "S8": "la",
+    "S29": "m",
+    "S15": "x"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "leoreetenoledichelidedeteeleerarnnidacesetonltapergaaldechedietteperilachedeladenoulintalliluitonooccoliedalorchelecinregualcheeuadanautochedafrallolettolaerldoirlonetellelrleeraneliperinaechecheetd {LIMEDESUMRESPETTI} atoleradesoche {CONLIHOMINIDELOMBARDORE} fugeliperinper {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} alleteororaur {QUADRADELMURO} danolattoeletonoresdetolaudecheerfuacheleducheoliedorenidelloniisirchedelioreeteneliladenegltacheerdil {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} rardecioenlteoperladaluouanurleetatlullineettadicheldeita {EMOLTIALTRICHESENALUNGOSCRIUERE} aperomiperachedacheenl {QUESTILECHPOSSANOESSEREADQUALCHE} uelltecaretteetali {ETETIAMQUANDOBENELOUESCOUO} daxeuteniuallaodechecheuetota"
+    ],
+    [
+     "ctl3_f70.txt",
+     "asieneallellaceroacadiliealnauatradaluelinretioeldeperedeperealdoncheerleluallonroradeal {INBONA} epericheeleolareeelchedecheerlafulaperlaetatfualleraetellereallataaleoradeaclatueleneeccninoliaradanonandodecioperalanaettesoladucheoetdinicatlealperedoperenetarardorrelararedletatotadadouetdoderaioperatauanialcheetdiocinilli {ETESSERE} oiulolilacheerdeneeceinelieridaneettadicheloralltenanolchedesirchedachealillotofuannellelacheadeperedechelarerchedanauanniopereess"
+    ]
+   ]
+  },
+  {
+   "score": -3125.9396818212363,
+   "lm": -2475.932498480426,
+   "prior": -650.0071833408101,
+   "units": 0.0,
+   "key": {
+    "S12": "e",
+    "S10": "che",
+    "S7": "p",
+    "S16": "r",
+    "S28": "i",
+    "S14": "m",
+    "S9": "u",
+    "S5": "s",
+    "S25": "",
+    "S26": "e",
+    "S1": "t",
+    "S3": "e",
+    "S4": "et",
+    "S22": "de",
+    "S20": "o",
+    "S23": "n",
+    "S21": "a",
+    "S19": "r",
+    "S32": "i",
+    "S27": "l",
+    "S18": "a",
+    "S13": "es",
+    "S11": "e",
+    "S6": "lo",
+    "S31": "d",
+    "S2": "i",
+    "S0": "er",
+    "S24": "a",
+    "S33": "per",
+    "S8": "od",
+    "S29": "en",
+    "S15": "on"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "echeprimuscheetetetedemochencherarauitelaresmosioreloldireetioreretedeinedetisaetuoletatosissaasertmeleperadetuarloadeeraredudedaoseidperadesnooselcheadeestasinonecheachereradiretetilmeeroe {LIMEDESUMRESPETTI} doseradiresse {CONLIHOMINIDELOMBARDORE} peralocheetetie {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} deicheppraa {QUADRADELMURO} elisdoosnisupresetoselaecheerecheaperadedereaestnesaritiresuttestaeinetprimumtodetinlooleraet {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} eraraimatsmiorseereleasariaamidoaticheioleteettod {EMOLTIALTRICHESENALUNGOSCRIUERE} desentedeideri {QUESTILECHPOSSANOESSEREADQUALCHE} areoraraioriret {ETETIAMQUANDOBENELOUESCOUO} edondenaomitadedeelserereeaisol"
+    ],
+    [
+     "ctl3_f70.txt",
+     "destrirderrarasraerletdetmduradoaredeametuarotsnenemememlesiemarearesuapretl {INBONA} metechechesodarercheneineraelperadeledediloperaleralirereemarleedoldechepretraedoamninraaitustraleerlisiduisimatserodirionessreaesiititalordemesemiroraraipareredarameeidosodedisanoesetartserolaritleroetsatiteet {ETESSERE} stastelereraerinrachetumtratedimiodetesareomilusereinestaeileretesosperadiiremreretenecheeraraeidiraruitserreses"
+    ]
+   ]
+  },
+  {
+   "score": -3127.4625357007735,
+   "lm": -2451.592361936113,
+   "prior": -675.8701737646606,
+   "units": 0.0,
+   "key": {
+    "S12": "u",
+    "S10": "",
+    "S7": "er",
+    "S16": "a",
+    "S28": "s",
+    "S14": "e",
+    "S9": "per",
+    "S5": "a",
+    "S25": "n",
+    "S26": "d",
+    "S1": "e",
+    "S3": "",
+    "S4": "per",
+    "S22": "ar",
+    "S20": "t",
+    "S23": "e",
+    "S21": "n",
+    "S19": "o",
+    "S32": "m",
+    "S27": "o",
+    "S18": "r",
+    "S13": "s",
+    "S11": "l",
+    "S6": "is",
+    "S31": "i",
+    "S2": "t",
+    "S0": "et",
+    "S24": "i",
+    "S33": "r",
+    "S8": "de",
+    "S29": "f",
+    "S15": "c"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "ueraseperandeneperdaretenanonpermedorasetamntolisointadestaetleuiteuipermaiuepertounenietamaarraneteedouernararepernaisiiuaiodiperariitatirniunanettauonnardaennameteunnnnaetnimauelemoeatd {LIMEDESUMRESPETTI} itauanitasa {CONLIHOMINIDELOMBARDORE} riisueleml {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} inusereroin {QUADRADELMURO} domanittaensapereraspertauoidetnriiarnadianeedanametaunapereesenteueeraseperenedepermeisntoanden {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} etnontereaemntaaluodouiaiominnesitninnemstodenpereti {EMOLTIALTRICHESENALUNGOSCRIUERE} ilafelitiamn {QUESTILECHPOSSANOESSEREADQUALCHE} iauntaronstasoue {ETETIAMQUANDOBENELOUESCOUO} dicareitemeiariuuoaetdaisato"
+    ],
+    [
+     "ctl3_f70.txt",
+     "iseamainuannoranaoretodearneeinperoiitnodiuieuepernateaendeledeleondamennauiounaperneroperon {INBONA} elenadenaetenteanuoriarnolarnisotriounanosaetuuenaouuitoiueroperoruitienemearrmeperaneonodetomamipertaterealodemostesanodiastemerotnainledalematononternaetuinonedusitatiditaietdapernoealotoiomeonatdearemeuue {ETESSERE} aeinaneuoetandamearepereneanedimestidenanountemoperaetntesentooueunatariimmaunenooperlednonantimoiopermealaass"
+    ]
+   ]
+  },
+  {
+   "score": -3127.53949484959,
+   "lm": -2561.221266382374,
+   "prior": -566.3182284672162,
+   "units": 0.0,
+   "key": {
+    "S12": "s",
+    "S10": "u",
+    "S7": "er",
+    "S16": "e",
+    "S28": "n",
+    "S14": "a",
+    "S9": "et",
+    "S5": "a",
+    "S25": "i",
+    "S26": "r",
+    "S1": "",
+    "S3": "d",
+    "S4": "c",
+    "S22": "at",
+    "S20": "t",
+    "S23": "o",
+    "S21": "t",
+    "S19": "e",
+    "S32": "l",
+    "S27": "e",
+    "S18": "per",
+    "S13": "de",
+    "S11": "l",
+    "S6": "ad",
+    "S31": "a",
+    "S2": "el",
+    "S0": "che",
+    "S24": "in",
+    "S33": "m",
+    "S8": "con",
+    "S29": "p",
+    "S15": "f"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "suerenaetaiurdicratatuoiuetetetlreperedeataliteladeaieledrntechelsadelosaclainsettesiiintalaaperperaicheareserdieperatetteadinasdeineraetataintadelamtasiaiottaseutiatratialotosiuitiuechetaleslleaddetr {LIMEDESUMRESPETTI} atasetaeledead {CONLIHOMINIDELOMBARDORE} minaduslll {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} aisnuerereint {QUADRADELMURO} relaiattaoinaeteredectaseinruchedutminadatierindaioratelelesiaetdetdeloserenaetaiconcloaditedetri {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} chetetelaperaalitealseresinainelintianatiiniilunterdicta {EMOLTIALTRICHESENALUNGOSCRIUERE} alapladeladeli {QUESTILECHPOSSANOESSEREADQUALCHE} inesiteperetntenes {ETETIAMQUANDOBENELOUESCOUO} rafatointalinatasseachereddinnate"
+    ],
+    [
+     "ctl3_f70.txt",
+     "adeeleaiseiieperetaepercheeratiaaieteinatterasinasettetaoirolaralaeiraldatiesinesiaetterecei {INBONA} alduiuacontecheuoidelodetseminatielatianetminesietenechessateessateasuerecepersatinaioloeperperletaietercheelalaetelaelaperaleconlentodeaierindanellperetieailaralaletetetelertechesatetarsnatataraelainotractealeteineleidetraperlss {ETESSERE} ainiaisechedetreloeperuetaietralantardiatesitaleetacheidelodetdeledessiataminallesiaiedeclorudietetdelaleineetlaleedede"
+    ]
+   ]
+  },
+  {
+   "score": -3139.471516183555,
+   "lm": -2627.842455567792,
+   "prior": -511.6290606157633,
+   "units": 0.0,
+   "key": {
+    "S12": "",
+    "S10": "e",
+    "S7": "c",
+    "S16": "a",
+    "S28": "n",
+    "S14": "o",
+    "S9": "n",
+    "S5": "e",
+    "S25": "m",
+    "S26": "s",
+    "S1": "i",
+    "S3": "et",
+    "S4": "de",
+    "S22": "el",
+    "S20": "in",
+    "S23": "o",
+    "S21": "r",
+    "S19": "e",
+    "S32": "d",
+    "S27": "i",
+    "S18": "t",
+    "S13": "l",
+    "S11": "n",
+    "S6": "che",
+    "S31": "o",
+    "S2": "an",
+    "S0": "per",
+    "S24": "u",
+    "S33": "ad",
+    "S8": "che",
+    "S29": "h",
+    "S15": "g"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "ecanonemesietmideseloineomearerndisitaloinedminencheiomanaetsininapernioetanoodedeuininimimuiinedeettemperiosicetmatelinracheuoetauesonelouineetanoadromemoinineiermelseirmedoinomemrmeaperrodainidioetetains {LIMEDESUMRESPETTI} oinearoanaleet {CONLIHOMINIDELOMBARDORE} aducheeinidn {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} omnecceur {QUADRADELMURO} sidemoinineomnencaldeineiusepereteraduoetelmasuetemioseradianameniiliretanoicanonomichededocheminietarsim {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} perreranotieodminaenesiueuedurmonoinmummideninisietmdeiino {EMOLTIALTRICHESENALUNGOSCRIUERE} onehinoetanoetadm {QUESTILECHPOSSANOESSEREADQUALCHE} uaminaterninanei {ETETIAMQUANDOBENELOUESCOUO} sogelouinodiueloiepersaetetuneini"
+    ],
+    [
+     "ctl3_f70.txt",
+     "oliadaomammetareetperisielmioomneuoinresouoinrainieomsonosonoimsedetormauemenrcedeim {INBONA} onietemeecherapereometanoetariaduelminelmoniinaduimarinaperoraioinioecedeetoinuomodoattdinemierisperidedonaneanotienechedeninolemesuetenaniditiinmaomnosenodainererancraperorerosnoineinosoaneuoinsedereieneiniuediimetainsietidii {ETESSERE} eiumemiiperetarsadoateinomiarisodoninosietmereminodinepermetanoliretanieteimeineaduoddamomeetedenoseetmeraretanodeuendienaall"
+    ]
+   ]
+  },
+  {
+   "score": -3187.759714497952,
+   "lm": -2629.4979599099606,
+   "prior": -558.2617545879914,
+   "units": 0.0,
+   "key": {
+    "S12": "o",
+    "S10": "",
+    "S7": "",
+    "S16": "s",
+    "S28": "an",
+    "S14": "r",
+    "S9": "e",
+    "S5": "t",
+    "S25": "i",
+    "S26": "e",
+    "S1": "l",
+    "S3": "a",
+    "S4": "on",
+    "S22": "per",
+    "S20": "o",
+    "S23": "et",
+    "S21": "i",
+    "S19": "d",
+    "S32": "a",
+    "S27": "n",
+    "S18": "e",
+    "S13": "e",
+    "S11": "a",
+    "S6": "m",
+    "S31": "c",
+    "S2": "u",
+    "S0": "u",
+    "S24": "i",
+    "S33": "at",
+    "S8": "ec",
+    "S29": "ul",
+    "S15": "che"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "osanretielailoneperroetisidiealeneserotaiodamnciusaelanosualocauetoconatioleonoiliilotatteetiulrenoaiseperleismicoasideceperciotaucaticoitietootoniiperetliitaetoetoiiiisuicasolalanraasoe {LIMEDESUMRESPETTI} cotosicuseta {CONLIHOMINIDELOMBARDORE} atimolalaa {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} cioandii {QUADRADELMURO} enaticootetianteseonotonieuaiaticaperiseiatiletetisalusoitelleliauetolsanrerileconaetmionasieli {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} uidiureltraiostaodenoitidaiiirancoiiiilaanonelaionloc {EMOLTIALTRICHESENALUNGOSCRIUERE} catullacaucasai {QUESTILECHPOSSANOESSEREADQUALCHE} isoiosedianosandol {ETETIAMQUANDOBENELOUESCOUO} eccheperetioralipercoontuesaaianton"
+    ],
+    [
+     "ctl3_f70.txt",
+     "celsasciosiidesitdeunelperilrciedicoidecoiroleisoltetieetarerarnietaariisoidoiteidonni {INBONA} ralaitecisuetiauetasionatiperinapericannoatinoisinansuoorisnooconcodondeocoirietaetseealetildineunataceutureltadecadanoetetideiatanulalenoisciaretarasodidiuisuocidireoancotocecutietoetonidltadonidalniasoeltelalool {ETESSERE} tliitilonuasiesaetselerilsilecaranocelaitidoioranetuiaueteliaunadoloitotaticaasoiridadonaeteaidisiaucadidealtassee"
+    ]
+   ]
+  },
+  {
+   "score": -3190.2798206918546,
+   "lm": -2705.228697039187,
+   "prior": -485.05112365266785,
+   "units": 0.0,
+   "key": {
+    "S12": "l",
+    "S10": "o",
+    "S7": "ar",
+    "S16": "e",
+    "S28": "u",
+    "S14": "a",
+    "S9": "che",
+    "S5": "e",
+    "S25": "n",
+    "S26": "m",
+    "S1": "i",
+    "S3": "et",
+    "S4": "",
+    "S22": "or",
+    "S20": "s",
+    "S23": "i",
+    "S21": "r",
+    "S19": "e",
+    "S32": "d",
+    "S27": "i",
+    "S18": "t",
+    "S13": "c",
+    "S11": "t",
+    "S6": "p",
+    "S31": "a",
+    "S2": "am",
+    "S0": "",
+    "S24": "o",
+    "S33": "an",
+    "S8": "ma",
+    "S29": "ur",
+    "S15": "z"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "loareuacheenomietnimorasoinoererchedimitecasednsetpianameetmiusetilaetamiladeolichesilninoisedeetteniamilaretnetoricherepoaleteoemacheoraoseetamaanralnenisseliornormeirnedisilnonrnoeradelitidiaetetesm {LIMEDESUMRESPETTI} aseleraameceet {CONLIHOMINIDELOMBARDORE} anopolitidt {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} anluoarareor {QUADRADELMURO} midenasseinuechearecseliomoetoranoaetornemoeteniimerediamelnecheiiciretamiliareuacheanimadipnsietermin {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} reramatieadnseetlemiloeoedornauasnonnidousimietnisa {EMOLTIALTRICHESENALUNGOSCRIUERE} ateuritaetamaetedn {QUESTILECHPOSSANOESSEREADQUALCHE} oelnseteruseueli {ETETIAMQUANDOBENELOUESCOUO} mazoriosadiooralliemeetetouesi"
+    ],
+    [
+     "ctl3_f70.txt",
+     "aciedeanlennetereetimiorniaancheeoasremaloalicheresieinmitamatainmedetarneloelnecherarein {INBONA} atietonoemareoinetamieterlianoornitornauisanoilneriuellareillasialoareetlasoanidiettdicheenierimidedacheameamatietemadeusicenemoeteuamiditisneantametadesereramarrelareramluasesamaameoismereietesioediinetesmietidilli {ETESSERE} eionenilietermedietoicheanierimadausamietnerelnsadicheenetamiciretamietelilneseanoaddelnaneetetimoetnereretamadeoechedieteecc"
+    ]
+   ]
+  },
+  {
+   "score": -3204.718643956405,
+   "lm": -2627.0321371828904,
+   "prior": -577.6865067735141,
+   "units": 0.0,
+   "key": {
+    "S12": "",
+    "S10": "et",
+    "S7": "per",
+    "S16": "t",
+    "S28": "an",
+    "S14": "m",
+    "S9": "i",
+    "S5": "r",
+    "S25": "e",
+    "S26": "e",
+    "S1": "t",
+    "S3": "a",
+    "S4": "ar",
+    "S22": "et",
+    "S20": "o",
+    "S23": "in",
+    "S21": "a",
+    "S19": "s",
+    "S32": "e",
+    "S27": "n",
+    "S18": "en",
+    "S13": "i",
+    "S11": "a",
+    "S6": "che",
+    "S31": "d",
+    "S2": "la",
+    "S0": "i",
+    "S24": "u",
+    "S33": "i",
+    "S8": "p",
+    "S29": "ma",
+    "S15": "l"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "etpertanmireetetaetareetmoetineettasaietenentimoreeosachendelataetanotiatdalaindarerutioneteutorerrenenreitmenperaetenettiatcheudatusedietduoraladiadereinoornetaeetertaereinoineeteaeettiadettatenmaatoe {LIMEDESUMRESPETTI} dortadlatira {CONLIHOMINIDELOMBARDORE} iucheettatea {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} deanetperpersua {QUADRADELMURO} eneredoorineanripertiarornueetiaetaiudaeteteuaretineratetlaterittitaalaintpertanmimetpareincheeonataete {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} iasalamentrmeeotrasenuruseuaemandoeueeteetanonetaeartod {EMOLTIALTRICHESENALUNGOSCRIUERE} darmatadaladatee {QUESTILECHPOSSANOESSEREADQUALCHE} uteotensaanotanst {ETETIAMQUANDOBENELOUESCOUO} edletinuometuetdnrietaauanron"
+    ],
+    [
+     "ctl3_f70.txt",
+     "dittetdeteesentarseninetetetmdeisudoasedumtiatotrineeinamemamneereamaetuseriapersarne {INBONA} mataeteetrpatietinealainataniuetenaetedannoiunetanantimatndondetpersarsendoumeineintenenetiretsaneineredilarlamentraspesanoinireseuaranlatetennoetdeamerametosasalaperatidasameandorodedlaruinoerarastrasonusetneatoetrentett {ETESSERE} rtueretniataeteintenettimettatedemanodetaeraseomeniriealainitaalanasteroriudeetemesasaraineetaesataaladesusietrattii"
+    ]
+   ]
+  },
+  {
+   "score": -3248.5280790511097,
+   "lm": -2630.9733635839075,
+   "prior": -617.554715467202,
+   "units": 0.0,
+   "key": {
+    "S12": "",
+    "S10": "in",
+    "S7": "et",
+    "S16": "u",
+    "S28": "ar",
+    "S14": "t",
+    "S9": "a",
+    "S5": "r",
+    "S25": "e",
+    "S26": "e",
+    "S1": "t",
+    "S3": "al",
+    "S4": "on",
+    "S22": "m",
+    "S20": "i",
+    "S23": "l",
+    "S21": "o",
+    "S19": "n",
+    "S32": "a",
+    "S27": "s",
+    "S18": "i",
+    "S13": "en",
+    "S11": "i",
+    "S6": "la",
+    "S31": "d",
+    "S2": "a",
+    "S0": "",
+    "S24": "e",
+    "S33": "c",
+    "S8": "per",
+    "S29": "ma",
+    "S15": "de"
+   },
+   "reading": [
+    [
+     "ctl3_f68.txt",
+     "inetuartareinetaletonemtiinleinuonoaatesiuentiraeinilasdeaualetariuitdalaldonaretaiseteetirarriirettesetaleuimtaoulaedaluenedamdeiraladcodereliirsinoemertoeralileineoeinuodautitastalaluie {LIMEDESUMRESPETTI} diruodauenral {CONLIHOMINIDELOMBARDORE} celaintitai {DOMATTINAMECONSIGNANOLATERRAECERTAROCHETTACHEHANO} dearinetetneo {QUADRADELMURO} esarediirlearraetuenonirseeinalinocedalmeueealretlerouatauerattentoalaltetuartatetperonallaeisaluoete {PREDICTEPIUOLTRAPERADESSONONMEEPARSOPROCEDEREFINCHEDAUEX} onoatitrtaeiurineserenaeoetardieeeetainarisetaleontid {EMOLTIALTRICHESENALUNGOSCRIUERE} dirmatidaladaluae {QUESTILECHPOSSANOESSEREADQUALCHE} eueiuinoariuarnt {ETETIAMQUANDOBENELOUESCOUO} eddemleitatemdsreualalearris"
+    ],
+    [
+     "ctl3_f70.txt",
+     "dentuaudeueeniuornisetmettdeanedionedettaouitrleelitetitseeraaltoeueneraoetnonse {INBONA} titalineinrperouinlealalaluoscemesimedarsiceseuosarutousdisdinetnonnidietelaluiiataretnosesaradaaratitrinperanarilenreneealraratatisieudeiteritauinonoaetoudonoteardiridedarelieronontrinisenatsealuietritatt {ETESSERE} rteeretsaluoeualuiintatetuotedataridetaleroneitasarealalentoalasalnterircedaauetenalnonileinalenouoaladanenaatriuuenen"
+    ]
+   ]
+  }
+ ]
+}
