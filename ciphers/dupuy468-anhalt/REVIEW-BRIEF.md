@@ -1,3 +1,5 @@
+**Superseded 23 September 2026:** the letter is printed in full in Deutsche Reichstagsakten JR II (1896) p. 122 (see AUDIT.md, second audit). This brief is kept as a record of what was believed before that was found; do not circulate it.
+
 # Review brief: BnF Dupuy 468 f.28, a Latin cipher letter to François I
 
 Written 23 September 2026 for an independent reviewer (a person or another model). Everything here is in the

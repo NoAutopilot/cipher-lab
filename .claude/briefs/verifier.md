@@ -7,3 +7,6 @@ project's pages, Google Books, HathiTrust, Internet Archive, GitHub cipher proje
 family searched and every one unreachable. Write AUDIT.md: verdict table with N-class per item, per-item
 sections, evidence table, "did we first-decipher?", confidence, postmortem, and correct every over-claiming
 sentence in the folder. + common tail.
+If you re-date or re-attribute the item from the plaintext, the edition search widens to every volume of the series
+within two years of every plausible date and under every candidate sender; it never narrows. Read the volume's
+Regesten by date and source note, not by phrase. Lesson of Dupuy 468, 23 Sept 2026.
