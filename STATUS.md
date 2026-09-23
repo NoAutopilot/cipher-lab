@@ -3,10 +3,33 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 23 September 2026, 20:20 UTC
+Last updated: 23 September 2026, 21:30 UTC
 
 > **Ryan is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
+
+## Goal, restated by the owner on 23 September 2026, 21:00 UTC
+
+**Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
+classes N3 or better (rule 10). Consequences, applied the same evening:
+
+1. **Recovery is the lane that scales.** The cached DECODE catalogue shows 202 Non-decrypted letters with a Decrypted
+   or Partially decrypted sibling in the same shelfmark; 27 survive exclusion against both solver repositories and
+   our own queue, in seven clusters (QUEUE.md "Neighbour-record recovery candidates", `tools/decode_neighbours.py`).
+   Each is read by opening both records, transcribing, applying the sibling's decipherment as the key. Same-day
+   turnaround matters because Bourdeau's project works the same catalogue.
+2. **All readable languages count.** The English-only reader profile was discarding most candidates (none of the 27
+   survivors is English). QUEUE.md's profile, scout.js and the scout brief now score any language the models read
+   at language_fit 3. Existing rows are under-scored for other languages until ASSIGNMENTS row 8 re-scores them.
+3. **Cryptanalysis only with a control and a route nobody tried.** Ciphertext-only work on material the two
+   solver projects already annealed is the lowest-yield lane (Sforza 1446 today: clean negative).
+4. **The archive-order lane stays** (Hamilton, Stair, NLS 20769, Monck) because nobody else pays for copies, but it
+   is one solve a month at best; it should never block the pipeline above.
+5. **Rules 1, 3, 4 and 10 are unchanged.** "Unique" is the verifier's word, so the pipeline ends in AUDIT.md every time.
+
+Pipeline per cluster: check-solved (editions first: Nuntiaturberichte, CODOIN, calendars) -> DECODE login, open
+letter and sibling -> two transcription passes -> key from the sibling, read -> verifier -> board. Blocked at the
+second step until ASKS rows 1, 10 and 11 are done.
 
 ## Handoff to the next orchestrator (21 September 2026, 03:00 UTC)
 

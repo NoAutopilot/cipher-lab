@@ -1,7 +1,7 @@
 export const meta = {
   name: 'scout',
   description: 'Harvest candidate unsolved ciphers from every source, drop what is already solved, score the rest for this project, and file them in QUEUE.md',
-  whenToUse: 'Weekly, or whenever the solver repositories or Cryptiana change. args: { date: "19 Sept 2026", languages: ["en"], max: 40 }',
+  whenToUse: 'Weekly, or whenever the solver repositories or Cryptiana change. args: { date: "23 Sept 2026", languages: ["en","fr","it","es","la","de","nl","pt"], max: 60 }',
   phases: [
     { title: 'Harvest', detail: 'five blind harvesters, one per source family' },
     { title: 'Filter', detail: 'dedupe and remove anything already solved or read' },
@@ -11,7 +11,7 @@ export const meta = {
 }
 
 const date = (args && args.date) || 'date unknown'
-const langs = (args && args.languages) || ['en']
+const langs = (args && args.languages) || ['en', 'fr', 'it', 'es', 'la', 'de', 'nl', 'pt']
 const MAX = (args && args.max) || 40
 
 const CANDIDATES = {
@@ -99,7 +99,7 @@ const SCORE = {
 const scored = await pipeline(
   toScore,
   c => agent(
-    `Date: ${date}. Score this candidate for a single researcher who reads ${langs.join(' and ')} only, has no institutional archive access but can send copy requests and pay small fees, and works with AI agents that can transcribe and run solvers. Candidate (JSON):\n${JSON.stringify(c, null, 1)}\n\nUse the evidence given and, if needed, the two solver repositories under /tmp. Apply CLAUDE.md rule 1: if the material is a transcription only, say so in the rationale. Score every axis with the schema's definitions, set unread and kind per README "What counts as a result" (an item readable today with a key in the same collection is an edition and scores unread 0), and name the single next step.`,
+    `Date: ${date}. Score this candidate for a single researcher whose metric is the number of unique solves, who reads (with AI help) ${langs.join(', ')}, has no institutional archive access but can send copy requests and pay small fees, and works with AI agents that can transcribe and run solvers. Candidate (JSON):\n${JSON.stringify(c, null, 1)}\n\nUse the evidence given and, if needed, the two solver repositories under /tmp. Apply CLAUDE.md rule 1: if the material is a transcription only, say so in the rationale. Score every axis with the schema's definitions, set unread and kind per README "What counts as a result" (an item readable today with a key in the same collection is an edition and scores unread 0), and name the single next step.`,
     { label: `score:${c.name.slice(0, 40)}`, phase: 'Score', schema: SCORE, effort: 'low' },
   ),
 )

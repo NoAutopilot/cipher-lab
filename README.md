@@ -6,6 +6,12 @@ S. Tomokiyo's site Cryptiana.
 
 ## What counts as a result
 
+**The metric, restated by the owner on 23 September 2026: the number of unique solves.** A unique solve is a
+reading a separate verifier has classed N3 or better (CLAUDE.md rule 10). Nothing else is sacred: language, period,
+holder and historical weight only matter as far as they change how many such readings the project produces. In
+practice that makes recovery the lane that scales (the DECODE catalogue holds thousands of letters whose key or
+decipherment sits in a neighbouring record) and cryptanalysis the exception.
+
 Three kinds, all wanted, always labelled as which they are (CLAUDE.md rule 10):
 
 1. **Recovery.** A key found in another box reads a text nobody has read. Hamilton 1650 and Stepney 1702 are
