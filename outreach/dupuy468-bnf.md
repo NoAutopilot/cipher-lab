@@ -16,7 +16,7 @@ Le texte ainsi lu correspond phrase par phrase à la traduction française conte
 
 Il s'ensuit que le f. 28 de Dupuy 468 est l'original latin chiffré de cette lettre, que ses auteurs sont Ernest de Brunswick-Lunebourg et Joachim von Moltzan (Maltzan), et que sa date est le 24 janvier 1520 (« in vigilia sancti Pauli »), non 1515/16. La souscription « Ernestus dux ... Joachimus » et le texte (« ego filius ... Luneburg », « ego Joachimus ad dominum Cancellarium et dominum admiraldum scripsi ») l'indiquent aussi.
 
-Nous vous signalons ces éléments pour la notice. Notre transcription, la clé, la lecture et le journal de recherche sont consultables ici : https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy468-anhalt (AUDIT.md). Nous ne revendiquons aucune priorité : la lettre est éditée depuis 1896 ; ce qui manquait est le lien entre les deux manuscrits.
+Nous vous signalons ces éléments pour la notice. Liens : le feuillet sur Gallica, https://gallica.bnf.fr/ark:/12148/btv1b10035959t/f63 ; l'édition, Deutsche Reichstagsakten, Jüngere Reihe, t. II, p. 122, numérisée sur https://archive.org/details/bub_gb_yAQQAAAAYAAJ (et https://archive.org/details/deutschereichst07kommgoog). Notre transcription, la clé, la lecture et le journal de recherche sont consultables ici : https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy468-anhalt (AUDIT.md). Nous ne revendiquons aucune priorité : la lettre est éditée depuis 1896 ; ce qui manquait est le lien entre les deux manuscrits.
 
 Avec nos remerciements pour la mise en ligne de ce fonds,
 
@@ -27,4 +27,4 @@ The text so read matches, sentence by sentence, the contemporary French translat
 
 So Dupuy 468 f. 28 is the Latin cipher original of that letter; its authors are Ernst of Brunswick-Lüneburg and Joachim von Moltzan (Maltzan); its date is 24 January 1520, not 1515/16. The subscription "Ernestus dux ... Joachimus" and the text itself ("ego filius ... Luneburg"; "ego Joachimus ad dominum Cancellarium et dominum admiraldum scripsi") say the same.
 
-We offer this for the record. Our transcription, key, reading and search log are at https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy468-anhalt (AUDIT.md). We claim no priority: the letter has been in print since 1896; what was missing was the link between the two manuscripts.
+We offer this for the record. Links: the leaf on Gallica, https://gallica.bnf.fr/ark:/12148/btv1b10035959t/f63 ; the edition, Deutsche Reichstagsakten, Jüngere Reihe, vol. II, p. 122, scanned at https://archive.org/details/bub_gb_yAQQAAAAYAAJ (and https://archive.org/details/deutschereichst07kommgoog). Our transcription, key, reading and search log are at https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy468-anhalt (AUDIT.md). We claim no priority: the letter has been in print since 1896; what was missing was the link between the two manuscripts.
