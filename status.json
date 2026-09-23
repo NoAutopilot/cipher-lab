@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 16:30 UTC",
+ "updated": "23 September 2026, 18:10 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -216,6 +216,16 @@
  ],
  "workers": [
   {
+   "title": "Check Solved: queue hygiene vs solver repositories",
+   "job": "Four rows dropped as found-solved, five annotated as partly read by Bourdeau. ~$2",
+   "state": "done, archived"
+  },
+  {
+   "title": "Transcription: Randolph 1570 native crops",
+   "job": "Stopped when f.278 turned out to be the decipherment; 49 crops and two raw passes committed. ~$3",
+   "state": "done, archived"
+  },
+  {
    "title": "Check Solved: queue ranks 11, 13, 15, 17, 18",
    "job": "Rank 11 found-solved (Bourdeau, 21 Sept, Lasry's King-Queen key), 13 partial (Bourdeau), 18 partial, 15 and 17 open at stage 2. ~$2",
    "state": "done, archived"
@@ -224,11 +234,6 @@
    "title": "Archive Lookup: Randolph 1570 siblings and key",
    "job": "f.278 is the contemporary decipherment (Bourdeau, 21 Sept). Every archive host egress-blocked from this account. ~$1.5",
    "state": "done, archived"
-  },
-  {
-   "title": "Transcription: Randolph 1570 native crops",
-   "job": "Stopped by the orchestrator when the f.278 decipherment was reported; crops committed for the record",
-   "state": "stopping"
   },
   {
    "title": "Recovery: Erving to Madison 1807",
@@ -243,11 +248,6 @@
   {
    "title": "Print Check: Burnet 1677 and CSP Foreign 22 with the Google Books key",
    "job": "Google Books key works (needs &country=US). Burnet 1677 not digitised anywhere found; 1852 reprint and HMC 11 add nothing; Cobham vol. 22 not on Google Books. $3",
-   "state": "done, archived"
-  },
-  {
-   "title": "Access Test + Print Check: Internet Archive lending",
-   "job": "Login failed: IA_USER must be the account email. Flow scripted (tools/ia_borrow.py) but unverified. Saberton not on IA. $3",
    "state": "done, archived"
   }
  ],
@@ -281,13 +281,6 @@
    "next": "Contribution. One clause of f.108; TNA order decision"
   },
   {
-   "rank": 5,
-   "name": "Charles I to William Boswell (SP 106/5, DECODE R413)",
-   "year": "1628",
-   "total": 36,
-   "next": "Recovery. DECODE login: download the record and its key, apply to ten lines"
-  },
-  {
    "rank": 6,
    "name": "Cornwallis Papers (PRO 30/11)",
    "year": "1780-81",
@@ -314,16 +307,13 @@
    "year": "1807",
    "total": 35,
    "next": "Recovery. Transcribe from the NARA images, apply the Pinckney pairs"
-  },
-  {
-   "rank": 10,
-   "name": "Randolph to Sussex (Cotton Caligula C II f.277)",
-   "year": "1569",
-   "total": 35,
-   "next": "Recovery. BL IIIF tiles are online; transcribe and match against CSP Scotland"
   }
  ],
  "log": [
+  {
+   "when": "23 Sept, 18:10",
+   "what": "Queue diffed against fresh clones of both solver repositories (tools/solver_repo_diff.py). Four more rows found-solved years ago and dropped: Boswell 1628 (rank 5, solved 2021), Goring 1645 (rank 22, solved 2020), Sadler 1559 (rank 23, printed 1809), Anne 1711 (rank 24, printed). Five rows partly read by Bourdeau (7, 8, 19, 20, 35). DECODE record R413 no longer needed."
+  },
   {
    "when": "23 Sept, 16:30",
    "what": "Randolph 1570 dropped as found-solved: f.278 is a contemporary decipherment, read by Bourdeau on 21 Sept. Charles I to Rupert 1645 also read by Bourdeau on 21 Sept. Burgess 1912 and Bowes 1583 verified unsolved and added at stage 2. The ytbiz account's environment has no credentials and blocks every archive host (ASKS rows 10 and 11)."
