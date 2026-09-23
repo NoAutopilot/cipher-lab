@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the Bowes 1583 reading from ciphertext.txt + key.tsv (rule 7), 24 Sept 2026.
+"""Regenerate the Bowes 1583 reading from ciphertext.txt + key.tsv (rule 7), 23 Sept 2026.
 
   python3 check.py           compare with the committed reading.tsv; exit 1 if stale or missing
   python3 check.py --write   rewrite reading.tsv

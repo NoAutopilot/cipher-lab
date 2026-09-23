@@ -1,12 +1,12 @@
 # Archive request — BL Add MS 4956 (Courten diary) + Sloane MS 4019 f.79 (second key)
 
-Drafted 24 September 2026 by a print-check worker. Not sent. No email sent, no price requested or
+Drafted 23 September 2026 by a print-check worker. Not sent. No email sent, no price requested or
 guessed — this is the request text for the person to submit, or for a follow-up worker to send once a
 price is wanted.
 
 ## Status this request is based on
 
-Stage 2, verified unsolved (conditional — see NOTES.md "Print check, part 2", 24 September 2026). No
+Stage 2, verified unsolved (conditional — see NOTES.md "Print check, part 2", 23 September 2026). No
 decipherment, transcript or scholarly discussion of the Add MS 4956 diary's cipher passages was found in
 web search (eight queries across two passes), print, the Cryptiana snapshot, DECODE, or the
 Bourdeau/Aymeloglu catalogues. The remaining conditional is a JSTOR pass (queries logged in NOTES.md,

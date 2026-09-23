@@ -25,7 +25,7 @@ whose identity the cataloguer could not establish — it does not mean a deciphe
 text is missing or present; it is a separate fact from the "in cipher"/"partially in cipher" note on the
 covering letters themselves.
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **TNA Discovery, full-piece sweep for a sibling decipherment.** `tools/discovery_items.py` against
    series "SP 87" piece "SP 87/13" with terms cipher/decipher/undeciphered/duplicate (4 requests) returned

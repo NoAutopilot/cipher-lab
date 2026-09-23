@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Ciphertext-only simulated-annealing solver for short fragmentary English substitution ciphers
 (many-to-one, at most --max-homo symbols per letter (default 2), so homophones are allowed), scored by an
-interpolated letter 4-gram model. Written 24 Sept 2026 for ciphers/bowes-walsingham-1583; own code, nothing
+interpolated letter 4-gram model. Written 23 Sept 2026 for ciphers/bowes-walsingham-1583; own code, nothing
 copied from either solver repository (design is the usual hill-climb/anneal described in LESSONS.md).
 
 Alphabet: 24 letters, 16th-century style (i=j, u=v): abcdefghiklmnopqrstuwxyz.

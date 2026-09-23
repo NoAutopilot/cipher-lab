@@ -8,6 +8,8 @@ Run this on each wake. Fifteen to sixty minutes apart is a sensible interval.
 
 ## 1. Refresh
 
+Run `date -u` first and use that clock for every timestamp you write or put in a brief (rule 6).
+
 Pull the hub and every project repository listed in `PROJECTS.md` that this account works on.
 
 ## 2. Write your own budget row

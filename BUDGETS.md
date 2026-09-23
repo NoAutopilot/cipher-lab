@@ -13,7 +13,7 @@ the rate-limit window, which is the thing that actually stops work.
 | Person | Plan | Window | Resets | Status | Spend this window | Updated |
 |---|---|---|---|---|---|---|
 | the owner (owner) | Max | seven-day | see session | allowed_warning | orchestrator 2,042 since 17 Sept; workers about 330 | 21 Sept 2026 |
-| noautopilotytbiz (same person, second account) | Max | five-hour | rolling | allowed | 81 for the session 23-24 Sept (orchestrator plus 14 workers; solvers 12-15 each, sweeps 1.5-4 each) | 24 Sept 2026 03:45 UTC |
+| noautopilotytbiz (same person, second account) | Max | five-hour | rolling | allowed | 81 for the session 23 Sept (orchestrator plus 14 workers; solvers 12-15 each, sweeps 1.5-4 each) | 23 Sept 2026 18:50 UTC |
 | | | | | | | |
 | | | | | | | |
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Crib (name-list) placement search with its own shuffled-ciphertext control, 24 Sept 2026.
+"""Crib (name-list) placement search with its own shuffled-ciphertext control, 23 Sept 2026.
 
 Question: can one substitution key (each sign one letter; at most 2 signs per letter) make many of Tomokiyo's
 fragment tokens spell names/words that Bowes actually uses? Word list = every capitalised word of 3+ letters

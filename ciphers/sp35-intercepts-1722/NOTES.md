@@ -29,7 +29,7 @@ Each record's `"context"` field (same API response) reads: **"Secretaries of Sta
 George I. Papers relating to the Atterbury Plot (SP 35/35-39 and SP 35/71-72)."** — TNA's own catalogue
 places this exact cluster inside the Atterbury Plot papers, confirming the QUEUE row's inference.
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **Web search.** "Atterbury Plot Mr Burton Madame Lucy Jery cipher key 1722" and "Cipherbrain Atterbury
    Plot SP 35/36 1722" (WebSearch): no dedicated blog post found, but one result (a WebSearch synthesis of

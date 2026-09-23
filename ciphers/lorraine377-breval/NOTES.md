@@ -8,14 +8,14 @@ QUEUE row: N9 (sources/solver-diffs/2026-09-23-non-decode-hits.tsv, "Candidates 
 
 BnF, Département des Manuscrits, **Lorraine 377** ("Recueil de lettres originales adressées par diverses
 personnes aux ducs Charles III, Henri II [1597-1623] et Léopold [1698]..."), Gallica
-`ark:/12148/btv1b90008143`. Gallica OAI/Dublin Core record (`dc:description`, fetched 24 September 2026, 1
+`ark:/12148/btv1b90008143`. Gallica OAI/Dublin Core record (`dc:description`, fetched 23 September 2026, 1
 request):
 
 > "Contient : **Lettre chiffrée de M. de Bréval au duc Henri II**"
 
 678 feuillets, 735 Gallica canvases, all IIIF-labelled "NP" (no folio numbers in the manifest metadata).
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **Image (decisive).** Fetched the Gallica IIIF manifest once (`images/manifest.json`, 1 request; 735
    canvases) and the pagination service once (`services/Pagination`, confirms no foliation is exposed by
@@ -37,7 +37,7 @@ request):
    would be for confirming a printed plaintext, not for establishing cryptanalytic status, and is out of
    scope for a target that already has a published key.
 3. **Community lists (decisive).** Satoshi Tomokiyo's site, `cryptiana.web.fc2.com/code/lorraine.htm`
-   ("Variable-Length Figure Cipher of Duke of Lorraine (ca.1620?)", fetched 24 September 2026 via HTTPS with
+   ("Variable-Length Figure Cipher of Duke of Lorraine (ca.1620?)", fetched 23 September 2026 via HTTPS with
    a browser User-Agent after a plain `curl` with no UA returned HTTP 403 — 1 request each, 2 total), reads
    in full:
    > "A cipher used in a letter to the Duke of Lorraine turned out to employ variable-length symbols. The

@@ -3,12 +3,12 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 24 September 2026, 05:40 UTC
+Last updated: 23 September 2026, 19:21 UTC
 
 > **the owner is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
 
-## Goal, restated by the owner on 23 September 2026, 21:00 UTC
+## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
 classes N3 or better (rule 10). Consequences, applied the same evening:
@@ -31,7 +31,7 @@ Pipeline per cluster: check-solved (editions first: Nuntiaturberichte, CODOIN, c
 letter and sibling -> two transcription passes -> key from the sibling, read -> verifier -> board. Blocked at the
 second step until ASKS rows 1, 10 and 11 are done.
 
-**00:40 UTC, 24 Sept: the lane that is ours.** The non-DECODE catalogue scout returned 493 items with cipher in TNA
+**18:15 UTC, 23 Sept: the lane that is ours.** The non-DECODE catalogue scout returned 493 items with cipher in TNA
 Discovery, BL Archives and Manuscripts and Gallica that neither solver project names (QUEUE.md "Candidates not on
 DECODE", N1-N19 scored). The top three carry their key in the same file: Mornington's 1798-1800 despatches with two
 copies of the key (BL Mss Eur D623), the 1722 intercepts with cipher-key pairs (TNA SP 35/36), and Courten's diary with
@@ -39,14 +39,14 @@ Madden's key (BL Add MS 4956). Check-solved is running on those three; the editi
 despatches were printed 1836-37). Policy under the unique-solves metric: such items are kept, not dropped as editions,
 and the verifier decides. Each will need an imaging order, so the person's card fills once they pass stage 2.
 
-**04:20 UTC, 24 Sept: Bowes 1583, the night's one reading, verified N1.** A solver aligned Tomokiyo's transcription of
+**19:00 UTC, 23 Sept: Bowes 1583, the night's one reading, verified N1.** A solver aligned Tomokiyo's transcription of
 eleven cipher fragments with Bowes's letter-book copies printed in 1842 and recovered a sign table that reads 93 of 101
 tokens (S 82, M 8, I 3) as the printed names. The verifier found the plaintext in print since 1842 and the leaf itself
 calendared in CSP Scotland vi (1910) with every name in clear, so the class is N1, possibly N0 once one calendar page
 is read. Not a unique solve; a sign table to hand to Tomokiyo. Two lessons went into the templates: run the HTRC
 word-count test on a blocked calendar before setting stage 2, and view the leaf before scoring a catalogue hit.
 
-**05:40 UTC, 24 Sept: wake closed.** The non-DECODE lane delivered the night's stage-2 targets: of fifteen scored
+**19:21 UTC, 23 Sept: wake closed.** The non-DECODE lane delivered the night's stage-2 targets: of fifteen scored
 rows, seven are verified unsolved with a copy route (Mornington, Courten, the SP 87 Seven Years War campaign, SP 78
 France 1642-57, SP 90/2 1704, SP 87/13 1743, SP 87/23 1747), eight dropped or partial. Four requests are drafted
 (Mornington, Courten, SP 78; the SP 87 decision) and six rows sit on the owner's card (ASKS 12-16). 474 survivors of
@@ -54,7 +54,7 @@ the catalogue scout are still unscored (ASSIGNMENTS row 13). The DECODE login te
 session that sees the credentials. Nothing was solved; Bowes 1583 is N1. Session usage about 90 for the orchestrator
 and nineteen workers.
 
-**Next session on this account, first actions (written 23:30 UTC, 23 Sept 2026).** (1) Presence test of the seven
+**Next session on this account, first actions (written 18:02 UTC, 23 Sept 2026).** (1) Presence test of the seven
 variables with `test -n`, no values printed. (2) One DECODE login attempt via `tools/decode_fetch.sh 8725 ...`; on
 success, ASKS row 1 to done and ASSIGNMENTS row 7 starts (record 8725, then a polite full catalogue pull to
 `sources/decode/`, then the neighbour tool on the whole catalogue). (3) One archive.org login attempt via
@@ -62,7 +62,7 @@ success, ASKS row 1 to done and ASSIGNMENTS row 7 starts (record 8725, then a po
 scout, Burgess 1912, Bowes 1583) in ROOM.md and the target NOTES, and pick from the new QUEUE sections. The
 good-citizen rule in the Access playbook applies to every request.
 
-**Correction, 22:30 UTC.** Re-running the exclusion by volume as well as by id shows Bourdeau's repository already
+**Correction, 17:29 UTC.** Re-running the exclusion by volume as well as by id shows Bourdeau's repository already
 names 193 of the 202 neighbour pairs in the cached catalogue, and D1 (Pallotto) is found-solved (key broken 2018,
 printed edition). Five pairs survive (D8, RAH 9/29), in a volume between two he is reading. So the cached-catalogue
 neighbour lane is not ours. What is: (a) the full DECODE catalogue behind the login, which the scrape does not cover;
@@ -101,15 +101,15 @@ or quote request reaches the owner until a check-solved sweep has set that targe
 
 **Blocked on the owner, new:** this account's environment has no credentials (ASKS row 10) and its network policy denies every archive host: archive.org, bl.digirati.io, hathitrust.org, wikisource.org, gutenberg.org, de-crypt.org, scienceblogs.de (ASKS row 11). From this account only github.com, pypi.org and googleapis.com are reachable, so no access, print-check or image work can run here until the environment's Network access setting is changed. The owner's steer for the week is one cipher solved that a verifier can class N3 or better; with the archive lane closed from this account, the only candidate with material obtainable is Burgess 1912, and its text is on Wikisource and Internet Archive, both blocked.
 
-**18:10 UTC.** The queue was diffed against fresh clones of both solver repositories with the new `tools/solver_repo_diff.py`: four more rows had been solved years ago and are dropped (Boswell 1628 solved 2021, Goring 1645 solved 2020, Sadler 1559 printed 1809, Anne 1711 printed), five are partly read by Bourdeau (ranks 7, 8, 19, 20, 35). The Randolph worker stopped and committed 49 native crops. DECODE record R413 is no longer needed (ASKS row 1 updated).
+**15:49 UTC.** The queue was diffed against fresh clones of both solver repositories with the new `tools/solver_repo_diff.py`: four more rows had been solved years ago and are dropped (Boswell 1628 solved 2021, Goring 1645 solved 2020, Sadler 1559 printed 1809, Anne 1711 printed), five are partly read by Bourdeau (ranks 7, 8, 19, 20, 35). The Randolph worker stopped and committed 49 native crops. DECODE record R413 is no longer needed (ASKS row 1 updated).
 
-**19:20 UTC.** The harvest (QUEUE.md "Candidates held on GitHub", 12 rows) gave one genuine cryptanalysis candidate reachable from here: the Sforza-Maino 1446 pair, BnF italien 1583 ff.68 and 70, which Bourdeau closed unread after annealing each letter alone; the joint anneal as one shared key was never tried. Check-solved: open at stage 2, conditional on DECODE, Gallica and Cerioni being unreachable from this account. Lope Hurtado 1522 was left alone as Bourdeau's live target.
+**15:59 UTC.** The harvest (QUEUE.md "Candidates held on GitHub", 12 rows) gave one genuine cryptanalysis candidate reachable from here: the Sforza-Maino 1446 pair, BnF italien 1583 ff.68 and 70, which Bourdeau closed unread after annealing each letter alone; the joint anneal as one shared key was never tried. Check-solved: open at stage 2, conditional on DECODE, Gallica and Cerioni being unreachable from this account. Lope Hurtado 1522 was left alone as Bourdeau's live target.
 
-**20:20 UTC, end of this orchestrator's wake.** The Sforza-Maino solver finished: four matched synthetic pairs of the same design read at 99% or better, the real pair cleared its shuffled baseline by 0.2-0.4 nats against 1.8-2.0 for the controls, no token claimed. Closed-negative, conditional on Bourdeau's draft transcription, since no image is reachable from this account. Reusable tooling landed in tools/ (joint nomenclator annealer, 15th-century Italian model). Nothing was solved today.
+**16:46 UTC, end of this orchestrator's wake.** The Sforza-Maino solver finished: four matched synthetic pairs of the same design read at 99% or better, the real pair cleared its shuffled baseline by 0.2-0.4 nats against 1.8-2.0 for the controls, no token claimed. Closed-negative, conditional on Bourdeau's draft transcription, since no image is reachable from this account. Reusable tooling landed in tools/ (joint nomenclator annealer, 15th-century Italian model). Nothing was solved today.
 
 **What the owner's steer needs next.** One cipher solved that a verifier can class N3 or better is not reachable from this account as configured: every archive host is blocked (ASKS row 11) and no credentials are set (row 10). Once either is fixed, the order of attack is: (1) Burgess 1912, text on Wikisource, stage 2, untested acrostic families named in its NOTES; (2) Bowes 1583, search-print in CSP Scotland vi, then BL images; (3) the Sforza pair re-transcribed sign-exact from the Gallica image and rerun through run_target.sh; (4) the harvest rows G1 and G2 only if Bourdeau has stopped on them (re-run tools/solver_repo_diff.py first). Spink lot 1184's question lapsed with today's sale; the images were saved on 19 Sept.
 
-**Running right now (20:20 UTC):** nothing. Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
+**Running right now (16:46 UTC):** nothing. Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
 
 **Waiting on the owner:** rotate the DECODE and archive.org passwords (both were printed into worker
 transcripts on 20 Sept) and set IA_USER to the account email; email Spink before the 23 Sept sale; the Kansas
@@ -175,7 +175,7 @@ targets are filed with requests drafted; the browser fix works in every new cont
 **Waiting on archives:** NRS (Hamilton key sheets), TNA (Stepney page check, order 3660178), the Huntington
 (corpus enquiry).
 
-**Stops and costs.** All sessions were stopped by the five-hour usage limit from 00:03 to 03:00 UTC. Worker
+**Stops and costs.** All sessions were stopped by the five-hour usage limit from 00:03 to 18:43 UTC. Worker
 usage tonight, in dollars of plan usage (not billed): Eckert 1864 reading 189 (over-ran its brief), verifier
 28, key test 26, HathiTrust 11, check-solved sweep 18, scout 6, print check 2, access tests 1, plus the free
 work in progress. Orchestrator session 2,042 since 17 Sept. **Nothing here is billed:** this runs on a Max subscription, and these figures are the API-equivalent value of the tokens consumed, which is how the session record reports them. What they measure is how fast a session eats the plan's rate-limit window. The orchestrator is one long session with 3.6 billion cached tokens read, so it consumes more of the window than every worker combined, which is what caused the 00:03 to 03:00 UTC lockout on 20 September. See LEDGER.md.

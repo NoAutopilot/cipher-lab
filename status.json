@@ -1,5 +1,5 @@
 {
- "updated": "24 September 2026, 05:40 UTC",
+ "updated": "23 September 2026, 19:21 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -186,11 +186,11 @@
    "state": "queued",
    "holder": "Nobody",
    "next": "Untested: Baconian biliteral (needs page images), Donnelly-style word counts, in-story cipher rules applied to the frame narrative, word acrostics with a stronger scorer, Klinger's 2023 edition notes. Reruns with families.py.",
-   "note": "24 Sept 2026: closed-negative for eight families, control margins 0.395 and 0.156; word-level families recover a planted sentence only ~half the time, so a short word-level message is not excluded.",
+   "note": "23 Sept 2026: closed-negative for eight families, control margins 0.395 and 0.156; word-level families recover a planted sentence only ~half the time, so a short word-level message is not excluded.",
    "kind": "cryptanalysis",
    "wait": {
     "on": "Page images of the 1912 edition for the biliteral test, and a stronger word model",
-    "since": "24 Sept 2026",
+    "since": "23 Sept 2026",
     "expected": "Whenever a session picks it up",
     "unblock": "Fetch the IA page images once (JP2 zip) and score type-face variation; or run the word families with a sentence-level model"
    }
@@ -204,11 +204,11 @@
    "state": "queued",
    "holder": "Nobody",
    "next": "Settle N0 vs N1 by reading CSP Scotland vi pp. 370-371 in running text (Google Books with the key, or a library copy); then offer the sign table to Tomokiyo as a contribution. No copy order: the plaintext is in print.",
-   "note": "Novelty verified 24 Sept 2026, AUDIT.md: N1. Safe sentence: Tomokiyo's transcription of the eleven fragments was aligned with Bowes's letter-book copies printed in 1842, giving a sign table that reads 93 of 101 tokens (S 82, M 8, I 3) as the names printed there; an independent re-decipherment of plaintext in print, conditional on the transcription. Result so far: a sign table not located in any source searched; a contribution, not a unique solve.",
+   "note": "Novelty verified 23 Sept 2026, AUDIT.md: N1. Safe sentence: Tomokiyo's transcription of the eleven fragments was aligned with Bowes's letter-book copies printed in 1842, giving a sign table that reads 93 of 101 tokens (S 82, M 8, I 3) as the names printed there; an independent re-decipherment of plaintext in print, conditional on the transcription. Result so far: a sign table not located in any source searched; a contribution, not a unique solve.",
    "kind": "contribution",
    "wait": {
     "on": "One calendar page in running text (CSP Scotland vi pp. 370-371) to settle N0 vs N1",
-    "since": "24 Sept 2026, 04:20 UTC",
+    "since": "23 Sept 2026, 19:00 UTC",
     "expected": "Minutes in a session with the Google Books key",
     "unblock": "Read the page; then hand the sign table to Tomokiyo"
    }
@@ -226,7 +226,7 @@
    "kind": "cryptanalysis",
    "wait": {
     "on": "An image of ff.68 and 70 (Gallica or DECODE) or the key; both hosts blocked from the ytbiz account (ASKS row 11)",
-    "since": "23 Sept 2026, 20:20 UTC",
+    "since": "23 Sept 2026, 16:46 UTC",
     "expected": "Minutes after the network setting changes",
     "unblock": "Re-transcribe sign-exact from the image, rerun run_target.sh"
    }
@@ -240,11 +240,11 @@
    "state": "you",
    "holder": "You",
    "next": "BL Imaging Services quote per REQUEST.md: D623/41 (key, both copies) and D623/4 first as a legibility test; eight more despatches follow if the key reads. ASKS row 12.",
-   "note": "24 Sept 2026: nine despatches not printed in Martin vols 1-5, the 1877 Selection or the 1914 Wellesley Papers; D623/23 is printed; D623/10-11 decoded by the cataloguer.",
+   "note": "23 Sept 2026: nine despatches not printed in Martin vols 1-5, the 1877 Selection or the 1914 Wellesley Papers; D623/23 is printed; D623/10-11 decoded by the cataloguer.",
    "kind": "recovery",
    "wait": {
     "on": "You: the BL quote request (ASKS row 12)",
-    "since": "24 Sept 2026, 02:30 UTC",
+    "since": "23 Sept 2026, 15:53 UTC",
     "expected": "BL quotes take one to three weeks; imaging some weeks after payment",
     "unblock": "Quote accepted, images arrive, key applied"
    }
@@ -258,11 +258,11 @@
    "state": "you",
    "holder": "You",
    "next": "JSTOR pass (queries in NOTES.md) in the next session with credentials, then the BL Imaging Services quote per REQUEST.md: Add MS 4956 in full plus Sloane MS 4019 f.79. ASKS row 13.",
-   "note": "24 Sept 2026: two keys catalogued (Madden's at f.66, an 18th-century one at Sloane 4019 f.79), no published reading; the herbarium-label cipher is a different, partly decoded code.",
+   "note": "23 Sept 2026: two keys catalogued (Madden's at f.66, an 18th-century one at Sloane 4019 f.79), no published reading; the herbarium-label cipher is a different, partly decoded code.",
    "kind": "recovery",
    "wait": {
     "on": "You: the BL quote request (ASKS row 13), after a JSTOR pass",
-    "since": "24 Sept 2026, 02:30 UTC",
+    "since": "23 Sept 2026, 15:53 UTC",
     "expected": "BL quotes take one to three weeks",
     "unblock": "Quote accepted, images arrive, keys applied"
    }
@@ -276,11 +276,11 @@
    "state": "you",
    "holder": "You",
    "next": "A campaign, not one target. First order: the three pairs that sit beside a contemporary decipherment in the same box (SP 87/36/9-10, 40/76-77, 40/121-124), which are transcription jobs once copies arrive; then the key they yield is tried on the other 95. Decide whether TNA page copies or a State Papers Online check comes first. ASKS row 14.",
-   "note": "24 Sept 2026: open at stage 2, conditional (Westphalen vols 2-6, Savory and State Papers Online coverage unchecked). English and French; neither solver project names the series.",
+   "note": "23 Sept 2026: open at stage 2, conditional (Westphalen vols 2-6, Savory and State Papers Online coverage unchecked). English and French; neither solver project names the series.",
    "kind": "recovery",
    "wait": {
     "on": "You: decision on the first TNA copy order (ASKS row 14)",
-    "since": "24 Sept 2026, 03:40 UTC",
+    "since": "23 Sept 2026, 18:50 UTC",
     "expected": "TNA digital copies take about two weeks",
     "unblock": "Copies arrive; two transcription passes; key from the paired decipherment"
    }
@@ -294,11 +294,11 @@
    "state": "you",
    "holder": "You",
    "next": "TNA digital copy order per REQUEST.md, four items (ASKS row 15). Unprinted in Thurloe vi.",
-   "note": "24 Sept 2026: open at stage 2, conditional on the Thurloe check. No sibling decipherment in the pieces. The queue's '1580s' date was a catalogue-parsing error; the folder name keeps the old label.",
+   "note": "23 Sept 2026: open at stage 2, conditional on the Thurloe check. No sibling decipherment in the pieces. The queue's '1580s' date was a catalogue-parsing error; the folder name keeps the old label.",
    "kind": "cryptanalysis",
    "wait": {
     "on": "You: the TNA copy order (ASKS row 15)",
-    "since": "24 Sept 2026, 05:40 UTC",
+    "since": "23 Sept 2026, 19:21 UTC",
     "expected": "About two weeks after ordering",
     "unblock": "Copies arrive; two transcription passes; cryptanalysis with a control"
    }
@@ -401,67 +401,67 @@
  ],
  "log": [
   {
-   "when": "24 Sept, 05:40",
+   "when": "23 Sept, 19:21",
    "what": "Night closed. Non-DECODE lane: 15 rows swept, 7 verified unsolved at stage 2 (Mornington, Courten, SP 87 campaign, SP 78, SP 90/2, SP 87/13, SP 87/23), 8 dropped or partial. Six imaging or copy decisions on the owner's card (ASKS 12-16). Bowes 1583 verified N1. Nothing solved."
   },
   {
-   "when": "24 Sept, 05:00",
+   "when": "23 Sept, 19:05",
    "what": "N8 (SP 78 France, 1642-57) open at stage 2; N9-N11 dropped. Last sweep batch of the night started (N12-N15) with the Thurloe check for N8."
   },
   {
-   "when": "24 Sept, 04:20",
+   "when": "23 Sept, 19:00",
    "what": "Bowes 1583 verified N1: the names were printed in 1842 and the leaf is calendared in 1910. A sign table is the contribution; not a unique solve. Lesson to the check-solved template: word-count test on blocked calendars before stage 2."
   },
   {
-   "when": "24 Sept, 03:40",
+   "when": "23 Sept, 18:50",
    "what": "N4 and N5 dropped (Tomokiyo keys). SP 87 Seven Years War run verified unsolved: 98 cipher items, three beside contemporary decipherments; on the board as a campaign (ASKS row 14). PRO 30/55 partial. Verifier on Bowes still running."
   },
   {
-   "when": "24 Sept, 03:00",
+   "when": "23 Sept, 18:43",
    "what": "Bowes 1583: the eleven fragments read, 93 of 101 tokens (S 82, M 8, I 3) with a control. The names match Bowes's printed letter-book copies, so the verifier decides the class; a BL order would settle the rest."
   },
   {
-   "when": "24 Sept, 02:30",
+   "when": "23 Sept, 18:40",
    "what": "Mornington and Courten both at stage 2 with imaging requests drafted (ASKS rows 12 and 13). Check-solved N4-N7 and the Bowes solver still running."
   },
   {
-   "when": "24 Sept, 01:50",
+   "when": "23 Sept, 18:32",
    "what": "N2 (1722 intercepts) found-solved and dropped; Mornington partial, one despatch already printed; Courten open at stage 2. Next batch: finish the Mornington print check, Courten cross-reference, check-solved N4-N7."
   },
   {
-   "when": "24 Sept, 01:30",
+   "when": "23 Sept, 18:31",
    "what": "Burgess 1912: no third message in eight families, with the two known messages as control. Remaining families need page images or a stronger word model. Check-solved N1-N3 and the Bowes solver still running."
   },
   {
-   "when": "24 Sept, 00:40",
+   "when": "23 Sept, 18:15",
    "what": "Non-DECODE scout: 493 catalogue items with cipher that neither solver project names, 19 scored (QUEUE.md N1-N19); the top three carry their key in the same file. Check-solved started on them. Policy: unread letters with a key beside them are kept as the cheapest solves, not dropped as editions."
   },
   {
-   "when": "24 Sept, 00:10",
+   "when": "23 Sept, 18:11",
    "what": "Bowes 1583: print negative, volumes undigitised; Tomokiyo's eleven fragments in hand, solver started with a matched control. Non-DECODE scout and Burgess 1912 still running."
   },
   {
-   "when": "23 Sept, 22:30",
+   "when": "23 Sept, 17:29",
    "what": "Pallotto D1 found-solved. Volume-aware exclusion shows Bourdeau already names 193 of the 202 cached neighbour pairs; the lane needs the full DECODE catalogue or archives not on DECODE. Next scout targets non-DECODE catalogues once the network opens."
   },
   {
-   "when": "23 Sept, 21:30",
+   "when": "23 Sept, 17:20",
    "what": "Owner restated the goal: maximise unique solves. DECODE neighbour sweep found 27 recovery candidates in 7 clusters, none English; reader profile widened to all readable languages; check-solved started on the Pallotto cluster (D1) so it can be read the day DECODE opens."
   },
   {
-   "when": "23 Sept, 20:20",
+   "when": "23 Sept, 16:46",
    "what": "Sforza-Maino 1446: joint-key attack with a matched control gives a clean negative, conditional on the draft transcription. Nothing solved today; the queue is honest again (five rows found solved elsewhere since our scout), and the campaign from this account is capped by the network policy until ASKS rows 10-11 are done."
   },
   {
-   "when": "23 Sept, 19:20",
+   "when": "23 Sept, 15:59",
    "what": "Sforza-Maino 1446 pair (from the GitHub harvest, QUEUE row G7) verified unsolved at stage 2 and put on the board as the cryptanalysis candidate; solver session running with a matched control."
   },
   {
-   "when": "23 Sept, 18:10",
+   "when": "23 Sept, 15:49",
    "what": "Queue diffed against fresh clones of both solver repositories (tools/solver_repo_diff.py). Four more rows found-solved years ago and dropped: Boswell 1628 (rank 5, solved 2021), Goring 1645 (rank 22, solved 2020), Sadler 1559 (rank 23, printed 1809), Anne 1711 (rank 24, printed). Five rows partly read by Bourdeau (7, 8, 19, 20, 35). DECODE record R413 no longer needed."
   },
   {
-   "when": "23 Sept, 16:30",
+   "when": "23 Sept, 15:35",
    "what": "Randolph 1570 dropped as found-solved: f.278 is a contemporary decipherment, read by Bourdeau on 21 Sept. Charles I to Rupert 1645 also read by Bourdeau on 21 Sept. Burgess 1912 and Bowes 1583 verified unsolved and added at stage 2. The ytbiz account's environment has no credentials and blocks every archive host (ASKS rows 10 and 11)."
   },
   {

@@ -8,7 +8,7 @@ QUEUE row: N5 (sources/solver-diffs/2026-09-23-non-decode-hits.tsv, "Candidates 
 
 BnF, Departement des Manuscrits, **Dupuy 63** ("Lettres de plusieurs grands et autres emploiez dans les
 affaires d'Estat, escrites au Roi [Henri IV], es annees 1596... 1606 — Vol. III"), Gallica
-`ark:/12148/btv1b53069062j`. Gallica OAI/Dublin Core record (`dc:description`, fetched 24 September 2026,
+`ark:/12148/btv1b53069062j`. Gallica OAI/Dublin Core record (`dc:description`, fetched 23 September 2026,
 1 request) lists every bound piece by number, sender, place and date. The entry the QUEUE row names, quoted
 verbatim with its immediate context:
 
@@ -21,7 +21,7 @@ January 1601, "chiffre" (in cipher). The same description also separately lists 
 pieces in this volume (items 48, 133, 143, 144), confirming the volume is a genuine mixed recueil of
 ciphered diplomatic correspondence, not just this one piece.
 
-## Check-solved sweep (24 September 2026)
+## Check-solved sweep (23 September 2026)
 
 1. **Community lists / scholarship (decisive).** Satoshi Tomokiyo's site (mirrored locally in
    `cs-recheck/breves1603/src/tomokiyo_henryiv.htm`) has a dedicated section, "Antoine Seguier, sieur de

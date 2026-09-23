@@ -1,7 +1,7 @@
 # AUDIT: the Bowes 1583 fragment reading (novelty class)
 
-Verifier session, 24 September 2026 (Opus, no subagents). Audits the solver section of NOTES.md ("Solver session
-(24 September 2026)"), reading.tsv and key.tsv as of commit 072e824, and the sentences about them in status.json,
+Verifier session, 23 September 2026 (Opus, no subagents). Audits the solver section of NOTES.md ("Solver session
+(23 September 2026)"), reading.tsv and key.tsv as of commit 072e824, and the sentences about them in status.json,
 LEDGER.md and ROOM.md. This session did not take part in the solving, did no decoding, and does not protect the
 solver's conclusions. Classes are those of CLAUDE.md rule 10.
 
@@ -43,7 +43,7 @@ sign-level key was found in the sources listed in AUDIT.md."
 | check-solved (23 Sept 2026) | web search; print (CSP vi unreachable: not on archive.org, BHO premium, HathiTrust Cloudflare); Cryptiana "not deciphered"; DECODE n/a; Bourdeau and Aymeloglu greps. Verdict open, stage 2 | same |
 | print check (23 Sept 2026) | CSP vi still absent from archive.org; Surtees vol. 14 found, read as "a related but textually distinct source ... not an edition of the target letters"; BL catalogue confirms the folios; both volumes undigitised (IIIF 403) | same |
 
-## 3. Search log (this session, 24 September 2026)
+## 3. Search log (this session, 23 September 2026)
 
 | family | what was searched | result |
 |---|---|---|
@@ -56,7 +56,7 @@ sign-level key was found in the sources listed in AUDIT.md."
 | (d) BL catalogue | `searcharchives.bl.uk/catalog/040-001102384?format=json`, grepped for decipher and for the folios | ff.196 and 299 have no decipher note. The same volume has 17th-century "deciphered" copies of *other* Bowes letters (ff.69v-70r, 17 Oct 1582; ff.201r-203r, 12 Apr 1583; ff.269v-270r, 10 Jul 1583). f.297 is a 17th-century copy of the 31 July public letter, not of f.299 |
 | (e) Google Books | WebSearch only (no key in this container): quoted Smallet/Maineville/Glencairn with Bowes and Walsingham; CSP Scotland vi on Google Books | no snippet. Series record `AFoMAQAAMAAJ` noted. **Full text unreachable** |
 | (e) Internet Archive | advancedsearch for CSP Scotland volumes (no vi), Border Papers, Read | as above |
-| (f) Solver repositories | fresh shallow clones, 24 Sept 2026: Bourdeau `763a3b9`, Aymeloglu `9260394`; grep `caligula c vii`, `calig. c. vii`, smallet, glencarne, robert bowes, bowes 1583, CottonMSBowes | Bourdeau: only `TARGETS.md:105` ("Bowes 1583 is 101 groups of name") and mirrored copies of Tomokiyo's "undeciphered ciphertext ... from Robert Bowes (1583)". Aymeloglu: nothing |
+| (f) Solver repositories | fresh shallow clones, 23 Sept 2026: Bourdeau `763a3b9`, Aymeloglu `9260394`; grep `caligula c vii`, `calig. c. vii`, smallet, glencarne, robert bowes, bowes 1583, CottonMSBowes | Bourdeau: only `TARGETS.md:105` ("Bowes 1583 is 101 groups of name") and mirrored copies of Tomokiyo's "undeciphered ciphertext ... from Robert Bowes (1583)". Aymeloglu: nothing |
 | (f) Cryptiana | `sources/cryptiana/web/elizabeth.htm` lines 425-428 | "not deciphered" for both. It also says the Surtees volume "does not include these letters"; section 4 contradicts that for f.196. Tomokiyo's `CottonMSBowes.png` could not be fetched: cryptiana.web.fc2.com is not on this container's egress allowlist (1 request) |
 | (f) Cipherbrain, Cipher Mysteries | WebSearch `ciphermysteries OR scienceblogs klausis-krypto-kolumne "Bowes" Walsingham cipher` | nothing on Bowes |
 | (g) Scholarship | WebSearch: Tomokiyo + Bowes + Walsingham 1583 + Caligula; "Robert Bowes" cipher Maineville Smallet decipher | only Lasry-Biermann-Tomokiyo 2023 (Mary Stuart to Castelnau), which does not touch Bowes's own letters |
@@ -141,7 +141,7 @@ grade S" (status.json note and log, ROOM.md 03:00 note). The true count is 93 to
 **Sentences corrected in this commit:**
 - status.json, target note: "93/101 tokens read at grade S with a control ... simple substitution with second
   signs for a, e, g" is replaced by the grades and the class.
-- status.json, log of 24 Sept 03:00: "93 of 101 tokens at grade S with a control" becomes "93 of 101 tokens read
+- status.json, log of 23 Sept 03:00: "93 of 101 tokens at grade S with a control" becomes "93 of 101 tokens read
   (S 82, M 8, I 3)".
 - NOTES.md, print-check verdict: "a related but textually distinct source ... not an edition of the target
   letters" is annotated. The calendar's vocabulary shows CLXXXVII is the same letter as fol.196.
@@ -149,7 +149,7 @@ grade S" (status.json note and log, ROOM.md 03:00 note). The true count is 93 to
   e and g)" gains the qualifier that the second signs are single tokens at M.
 - NOTES.md, solver "Where it was not found": the CSP Scotland vi line is annotated with this audit's finding.
 - ROOM.md: a correction line for the 03:00 "93/101 tokens, S" note (the log is append-only).
-- LEDGER.md row of 24 Sept ("93 of 101 tokens, S 82 M 8 I 3") is accurate and was left alone. STATUS.md has no
+- LEDGER.md row of 23 Sept ("93 of 101 tokens, S 82 M 8 I 3") is accurate and was left alone. STATUS.md has no
   sentence about this reading and was left alone.
 
 **Lesson (for the check-solved brief, one line):** when a calendar is Cloudflare-blocked, run the HTRC EF token

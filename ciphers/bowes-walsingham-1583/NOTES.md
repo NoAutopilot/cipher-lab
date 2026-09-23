@@ -103,7 +103,7 @@ sentences) is in `print-check.tsv`. Three entries are directly relevant:
   what had passed betwixt 32 and him for the delivery of 0100 to 32." Tomokiyo's page separately notes "223" on
   Surtees p.530 as an unidentified code.
 
-**Verdict on print: not found-solved, not an edition of the target letters.** [Verifier, 24 Sept 2026,
+**Verdict on print: not found-solved, not an edition of the target letters.** [Verifier, 23 Sept 2026,
 AUDIT.md section 4: superseded. CSP Scotland vi pp.370-371 (no. 389, fol.196) shares the vocabulary of CLXXXVII
 and prints every cipher name in clear, so CLXXXVII is the same letter and its plaintext is in print.] The
 Letter-Book entries are a related but textually distinct source (Bowes's own register, not the delivered/filed original), printed in a
@@ -159,9 +159,9 @@ route that does not depend on new images, per his own note that the cipher "seem
 reading the surrounding cleartext (which does exist, via the BL catalogue folio numbers above, on a future
 image-capture pass) "may be" enough to solve it.
 
-## Solver session (24 September 2026)
+## Solver session (23 September 2026)
 
-> Verifier, 24 September 2026 (AUDIT.md): **N1**. The plaintext is in print since 1842 (letter-book), and
+> Verifier, 23 September 2026 (AUDIT.md): **N1**. The plaintext is in print since 1842 (letter-book), and
 > for f.196 very probably in the 1910 calendar of the folio itself. Describe this as an independent
 > re-decipherment giving a sign table for Tomokiyo's numbering, never as a first or new decipherment.
 
@@ -269,7 +269,7 @@ fragment to its line in the original, so no token is graded C.
 
 ### Where it was not found
 
-Searched 24 September 2026, a search result only, not a novelty verdict:
+Searched 23 September 2026, a search result only, not a novelty verdict:
 - **Bourdeau** (github.com/dbourdeau/cyphersolver, shallow clone at 2e9ec01, 23 Sept 2026). grep
   `bowes|smallet|glencarne|mauvissier|magnyvil|caligula c vii` finds only `TARGETS.md` line 105 ("Bowes 1583
   is 101 groups of name") and unrelated Mauvissière hits in French targets (sp53, gallica_sweep, matignon1586).
@@ -283,7 +283,7 @@ Searched 24 September 2026, a search result only, not a novelty verdict:
   fragments.
 - **Surtees vol.14** prints the Letter-Book plaintext of the words (the parallel text above), not the
   ciphertext or a key. Whether an edition places the cipher signs next to the plaintext was not checked:
-  CSP Scotland vi (Boyd 1910) is still unreachable (see 23 September 2026). [Verifier, 24 Sept 2026: its HTRC
+  CSP Scotland vi (Boyd 1910) is still unreachable (see 23 September 2026). [Verifier, 23 Sept 2026: its HTRC
   Extracted Features token counts show the fol.196 entry (no. 389, pp.370-371) with Cobham, Smallet,
   Glencairn, Maineville, Huntly, Montrose and Mauvissière in clear. The class is N1, independent
   re-decipherment; see AUDIT.md.]

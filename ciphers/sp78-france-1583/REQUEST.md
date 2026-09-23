@@ -1,6 +1,6 @@
 # TNA copy order — SP 78/111 and SP 78/113 (France, Civil War/Interregnum ciphers)
 
-Drafted 24 September 2026 by a check-solved worker, per ciphers/sp78-france-1583/NOTES.md. **Not ordered,
+Drafted 23 September 2026 by a check-solved worker, per ciphers/sp78-france-1583/NOTES.md. **Not ordered,
 no price quoted, no email sent** — the access playbook requires the person for any payment or copy order.
 
 ## What to order
@@ -13,7 +13,7 @@ online:
 2. **SP 78/111/135** — Folio 300, "Letter in cipher." Covering date 1644. Discovery id C7327928.
 3. **SP 78/113/57** — Folio 106, "Despatch largely in cipher from [Wm. Swyfte]." Covering date 1657 Feb 24.
    Discovery id C7328029. Checked against Thurloe's *State Papers* vol. 6 (1657, archive.org
-   `collectionofstat06thur`) on 24 September 2026 — not found in print there (see NOTES.md "Thurloe check").
+   `collectionofstat06thur`) on 23 September 2026 — not found in print there (see NOTES.md "Thurloe check").
 4. **SP 78/113/123** — Folio 189, "Letter mostly in cipher — deciphered." Covering date 1657 May 18/28.
    Discovery id (see NOTES.md/sp78_113_123_detail.json). This item's own catalogue text says it already
    carries a decipherment, but since it is not digitised, whether that decipherment is interlinear on the

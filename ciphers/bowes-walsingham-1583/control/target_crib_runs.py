@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Target runs T2-T3 for runs.tsv (24 Sept 2026): model score of the crib key, and a crib-seeded anneal
+"""Target runs T2-T3 for runs.tsv (23 Sept 2026): model score of the crib key, and a crib-seeded anneal
 (S-grade signs of key.tsv fixed, all other signs free) with the control settings."""
 import json, os, sys
 import control as c

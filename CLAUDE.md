@@ -28,7 +28,9 @@ session and every subagent, cloud or local.
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
 5. **Status vocabulary** in the first lines of every NOTES.md: `open`, `partial`, `solved`, `closed-negative`,
    `found-solved`, `blocked`, `offline-only`. Nothing else.
-6. **Absolute dates.** "19 Sept 2026", never "recently" or "yesterday".
+6. **Absolute dates.** "19 Sept 2026", never "recently" or "yesterday". Read the clock (`date -u`) before writing
+   any date or time; never estimate it, and never tell a worker the date without checking. Lesson of 23 Sept 2026:
+   an orchestrator wrote times that ran eight hours ahead of the clock and dated a whole evening's files 23 Sept.
 7. **Reproducible readings.** Any claimed reading has a script that regenerates it from the transcription and
    the key, and exits non-zero if the committed reading is stale.
 8. **Credit.** Name who solved what and when. Cite the solver repositories and Tomokiyo. Aymeloglu's repository

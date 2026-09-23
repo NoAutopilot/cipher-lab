@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Matched controls (rule 3) and ciphertext-only target runs for bowes-walsingham-1583, 24 Sept 2026.
+"""Matched controls (rule 3) and ciphertext-only target runs for bowes-walsingham-1583, 23 Sept 2026.
 
 Shape: the target's eleven fragment lengths [14,7,10,26,1,10,7,9,9,3,5] (101 tokens). Controls:
  a  one-to-one substitution, running English cut from Surtees vol.14 (letters before CLXXXVII) at word bounds
