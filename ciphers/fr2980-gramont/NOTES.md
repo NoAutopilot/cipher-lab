@@ -98,3 +98,114 @@ manuscript not OCR'd), ~9 IIIF image fetches at 900px/1400px width for canvas-to
 item leaves (2 connection resets, each retried once after a pause, per the good-citizen single-retry rule).
 archivesetmanuscrits.bnf.fr: 1 finding-aid page fetch (1 connection reset, retried once). github.com: 2 shallow
 clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers). No logins, no credentials used.
+
+## Print check, class gate — 23 September 2026 (started ~23:44 UTC, this section written ~23:58 UTC; `date -u`
+read before writing). QUEUE row M8. Worker: print-check M8 (Sonnet, cap $5).
+
+Question: is the plaintext of either fr.2980 f.29 (no.21, Gramont to Villandry, Rome, 20 May 1530, partly in
+cipher) or f.30 (no.22, entirely in cipher, same date) already in print or online, from any source. No
+decoding, transcription or key-fetch attempted this pass; this is a class gate only.
+
+**Verdict for both letters: not found in print or online after the searches below. Best-case class N3** (no
+prior plaintext or decipherment located after the logged search below) for each. Status stays `open` (not
+`found-solved`) — rule 5 vocabulary. This is a search result, not a claim of absence (rule 10); "unread" or
+"new" wording is not used here or anywhere else until a verifier session runs the full rule-10 sweep.
+
+### What was searched, and what it turned up
+
+- **LP Henry VIII vol. 4 pt. 3, the exact 1530 calendar** (Gairdner; IA `11332111bsb`, Bavarian State Library
+  scan of vol. "4,3", not access-restricted, full djvu.txt downloaded and grepped directly rather than via the
+  fts-api snippet-only route, so this is a complete check of that volume's OCR, not a sample). Searched by
+  date ("20 May 1530", "20May" item headers around item numbers 6390-6441, which bracket 8 June 1530), by
+  recipient ("Villandry"), and by sender ("Gramont", "Tarpe"/"Tarbe", OCR renders "Tarbes" both ways).
+  - No item dated Rome, 20 May 1530 from Gramont/Tarbe to Villandry or anyone else. The May 1530 Rome-dated
+    items found (26 May, 29 May) are Miçer Mai-to-Charles-V and Salviati-to-Casale despatches, not Gramont's.
+  - LP *does* calendar two other Gramont-Villandry-circle cipher letters from the same embassy, dated a few
+    months earlier: **item 6244**, "G. de Gramont, Bishop of Tarbe, to Brion", Bologna, 25 Feb. [1530],
+    sourced in the margin as **"Le Grand, ii. 386"** and noted "the original is endorsed 'Copie de la lettre
+    escripte par Monsieur de Tarbe en chiffre a Monsieur l'Admiral'" — i.e. Le Grand's 1688 edition prints this
+    Gramont cipher letter deciphered, at vol. 2 (ii), p. 386. And **item 6245**, "Bishop of Tarbe to Mons. de
+    Villandry", Bologna, 27 Feb., "French. The original was in cipher.", with no Le Grand citation (a
+    manuscript-only source, likely the same BM Additional MS. 28,581 series cited elsewhere in this volume for
+    Gramont/Tarbes items). Neither is our target (wrong date, wrong place — Bologna not Rome), but both show
+    (a) Le Grand's edition does print some of Gramont's deciphered ciphers from this exact embassy and period,
+    and (b) LP separately calendars Gramont-Villandry cipher correspondence from manuscript when it exists —
+    strengthening rather than weakening the negative result for our two items specifically, since the editors
+    plainly had material to calendar from this correspondent/recipient pair and did not include our two.
+- **Le Grand, *Histoire du divorce de Henry VIII*, 1688** (the volume LP cites above for a neighbouring
+  letter). Two full-view scans located on Google Books (`t2dUAAAAcAAJ`, `rclrXxrYEwcC`); the "Preuves" volume
+  specifically may be a separate bibliographic record (`TgPrvgEACAAJ`, no preview). Google Books API full-text
+  queries combining `intitle:"histoire du divorce"` with "Villandry", "Tarbe" and "Villandri" each returned
+  zero hits, but this method is unreliable (title-metadata filter, not a true within-book search). Direct
+  inside-book search (`books.google.com/books?id=...&q=Villandry`) was attempted by curl and once more via
+  `tools/browser_fetch.js` (the real-Chromium route) — both were redirected to Google's `/sorry/` bot-challenge
+  page. One retry each, per the good-citizen rule; stopped, not retried further. **Gap**: Le Grand's actual
+  page content for May 1530 (as opposed to the Feb. 1530 letter LP already locates there) was not directly
+  verified; a future pass should try a library proxy, a different Google Books mirror, or read the physical
+  volume via HathiTrust/IA if a copy surfaces.
+- **English 1690 translation** of Le Grand (IA `bim_early-english-books-1641-1700_...le-grand-joachim_1690`)
+  located but not searched this pass (English translations of this work are known to abridge the "Preuves"
+  documents; lower priority than the French original, not reached under the cap).
+- **Decrue (de Stoutz), *Anne de Montmorency, grand maître et connétable de France*** (1885/1889 scholarly
+  biography, editions on IA as `annedemontmoren00decr`, `annedemontmoren00stougoog`, `anneducdemontmor00decruoft`,
+  `annedemontmoren00decr`) — a strong candidate since it cites BnF fr.2980 directly and repeatedly by item
+  number for *other* letters in the same recueil (items 7, 25, 26, 27, 57, 80, all Montmorency/royal
+  correspondence, none in the 20-22 range). Searched by exact phrase `"2980, 21"` / `"2980, 22"` and by
+  folio form `"2980, f. 29"` / `"2980, f. 30"` in all three IA copies: **zero hits**. Decrue plainly worked
+  through this volume item-by-item and did not cite ours — consistent with (not proof of) them being unread
+  ciphertext in his day too.
+- **PUR OpenEdition**, Thierry Rentet's chapter on Jean Breton (Villandry) in *Conseils et conseillers sous
+  François Ier* (`books.openedition.org/pur/120024`, fetched directly, full chapter read) — biographical detail
+  on Breton/Villandry's 1530 role as Montmorency's relay at court (citing Rentet's own 2008 conference paper on
+  Montmorency's 1530 correspondence, a different, Montmorency-addressed corpus at Chantilly) but **no mention
+  of fr.2980, of Gramont's 20 May letters, or of their content** — this is the source Tomokiyo cites only for
+  identifying who Villandry was, not for the letters themselves.
+- **Bourrilly & Vindry, *Ambassades en Angleterre de Jean Du Bellay*** — only "La Première Ambassade"
+  (Sept. 1527-Feb. 1529) found on IA (`ambassadesenang00bourgoog`); out of date range for a 20 May 1530 letter,
+  not applicable, not searched further.
+- **Internet Archive full-text search** (`be-api.us.archive.org/fts/v1/search`, no login) for `"Gramont"
+  "Villandry"` together (2,479 raw hits, all titles inspected in the top page): the only period-relevant hits
+  are the Decrue volumes above (already covered) and the Montmorency biography under its alternate title/
+  scan (`annedemontmoren00decr` again); nothing else surfaces this specific letter pair.
+- **Pocock, *Records of the Reformation* (1870); State Papers Henry VIII vol. 7; Camusat/Ribier, *Lettres et
+  mémoires d'estat*; Molini, *Documenti di storia italiana*** — not reached this pass (budget cap); flagged
+  below for a future pass or the verifier if the gate needs tightening beyond N3.
+- **Tomokiyo/Lasry own pages** (`sources/cryptiana/web/francis.htm`, `GL.htm`, both cached, greped directly):
+  confirms francis.htm's own wording — "These undeciphered letters can be read with Gramont's cipher (1530)
+  below" — with no plaintext or transcription given for either item; GL.htm documents the same key's
+  provenance (BnF fr.3019, cross-validated on fr.3071 and fr.3040) with no mention of fr.2980 anywhere.
+  cryptiana.web.fc2.com not re-fetched (mirror of francis.htm, another worker using it per ROOM.md; the local
+  cache is current as of the same-day check-solved pass).
+- **Lasry's Cryptologia/other publications**: one WebSearch pass (`Lasry Tomokiyo Gramont cipher 1530
+  Cryptologia fr.2980`) surfaced his Mary-Stuart-cipher work and the general Gramont-cipher-key background
+  already known from GL.htm, nothing naming fr.2980.
+- **General WebSearch** for the letter itself (`Gramont "Villandry" Rome 1530 lettre chiffre fr.2980`;
+  `"Gabriel de Gramont" cardinal Rome mai 1530 lettre chiffrée Villandry`) returned only the BnF finding aid
+  itself, Wikipedia biographical pages, and a cardinals-of-the-Church consistory list (confirms Gramont was
+  created cardinal 9 March 1530, promoted 8 June 1530 — so as of 20 May 1530 he already held the cardinal's
+  hat, though the manuscript signs him "E. de Tarbe"); no independent hit on the letters' content.
+- **Solver repositories**: not re-cloned this pass (the check-solved M8-M11 worker cloned both fresh the same
+  day, 23 Sept 2026, and grepped for "2980"/"gramont" with no hits in either — reused rather than repeated per
+  the usage rule against duplicate fetches; see that worker's ROOM.md/NOTES.md entry above).
+- **DECODE cache** (`sources/decode/`): directory does not exist in this checkout, nothing to grep.
+
+### Best-case class and status
+
+| Item | Printed deciphered | Printed as cipher | Calendared | Best-case class |
+|---|---|---|---|---|
+| f.29 no.21 (Gramont to Villandry, partly cipher) | not found | not found | not found (LP vol.4 pt.3 checked directly, absent) | **N3** |
+| f.30 no.22 (entirely cipher) | not found | not found | not found | **N3** |
+
+Status: **open** (unchanged from the check-solved verdict). Gate passed for a solver to proceed to
+transcription/key application — no print or online decipherment stands in the way — but the gaps above
+(Le Grand's own page content unverified due to a bot-block; Pocock/SP7/Ribier-Camusat/Molini unreached) mean a
+verifier must close them before any N-class above N3 or any "unread"/"first" wording is used, per rule 10 and
+the Eckert 1864 lesson (absence from the calendar series is not absence from the sender-specific editions).
+
+### Requests this pass
+
+books.openedition.org: 1 page fetch. archive.org/be-api: ~10 (1 djvu.txt full download of `11332111bsb`,
+~9 be-api fts-api queries). googleapis.com (Google Books, `&key=$GOOGLE_BOOKS_KEY&country=US`): 4 queries, key
+never printed. books.google.com: 1 curl + 1 browser_fetch.js attempt, both bot-blocked, one retry each, then
+stopped (good-citizen rule). gallica.bnf.fr: 1 SRU query (irrelevant results, not pursued further). WebSearch:
+4 queries. No logins, no credentials, no subagents, no images fetched, no decoding or transcription attempted.
