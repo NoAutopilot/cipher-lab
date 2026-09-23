@@ -154,6 +154,45 @@ G11's missing siblings) — real work, but not a different route from what alrea
 between: the next step it names (a second transcription pass against decipherments already on file) is
 achievable from the repository, but it is transcription discipline, not a new idea.
 
+## Neighbour-record recovery candidates (DECODE catalogue scan of 23 September 2026)
+
+Scan of the cached DECODE catalogue (`ay/catalogue/decode-catalog.csv` + `decode-records.jsonl`, both aaymeloglu/
+unsolved-ciphers) for the Randolph f.277/f.278 pattern (LESSONS.md, 23 September 2026): a shelfmark that carries
+both a Non-decrypted record and a Decrypted or Partially decrypted one, matched by a normalised shelfmark plus
+adjacent folio/item number, a close date, or a shared sender and recipient. Method, code and both raw sheets:
+`tools/decode_neighbours.py`, `sources/solver-diffs/2026-09-23-decode-neighbours.tsv` (202 catalogue-level
+pairs before exclusion) and `-excluded.tsv` (175 removed as already on our QUEUE, in Bourdeau's catalogue.json/
+`cs-recheck/*/profile.json`, or in Aymeloglu's TARGETS.md/SHORTLIST.md — ranges such as "R8429-R8454" were
+expanded to every id they cover, not just the two endpoints, which is what removed the whole BL Cotton MS
+Vespasian C III/C IV "Edward Lee" cluster and the Prince Rupert Add MS 18982 pair found on the first pass: both
+turned out to be already read, `cs-recheck/lee1526/` at fraction 1.0 and rank 21's Maurice-Rupert row). 27
+records survived exclusion, all Italian, Spanish or French; no English survivor was left once the ranges were
+expanded correctly. They group into 7 distinct shelfmark clusters, all shown below (fewer than fifteen).
+Ranked by: English first (none survived), then match strength (same sender-and-recipient plus adjacent folio
+strongest), then size (pages). Score = language_fit x3 + material x2 + key_lead x3 + size x2 + competition x2 +
+weight + unread x3, with material fixed at 1 (DECODE needs a login) and key_lead at 2 for every row (each
+neighbour is a sibling letter in the same box/legajo/fond, not a contemporary decipherment of this exact letter
+the way Randolph's f.278 is of f.277 — no self-decipherment pair of that kind turned up this sweep).
+
+| # | Target | Year | Lang | Kind | DECODE ids (letter / neighbour) | Why matched | What a worker would do | Score |
+|---|---|---|---|---|---|---|---|---|
+| D1 | Mgr Giovanni Battista Pallotto, nuncio extraordinary to Emperor Ferdinand II (Mantuan succession mission), to the "Nunzio all'Imperatore" — 5 further dispatches in the same file as one already-glossed one | 1628 | it | recovery | R233, R239, R241, R242, R253 / R221 | Same shelfmark (BAV Barb.lat 6956), same sender and recipient string, catalogue date identical (1628, likely a placeholder day) to the Partially decrypted neighbour R221 | Register on DECODE, open R221 to read its existing partial decipherment/scheme, then R233/R239/R241/R242/R253; Sacré's 2020 paper on papal ciphers (Barb.lat 6956/6960, "Cryptologia") already describes this file as ~70 letters in a fixed-length homophonic cipher shared across the correspondence — check it for a published key or scheme before any fresh cryptanalysis | 32 |
+| D2 | Rome embassy correspondence (Lope Hurtado de Mendoza's circle; several letters signed "Luis Fernández") to Charles V/court, RAH Signatura 9/31 | 1524 (13 of the shelfmark's items undated in the catalogue) | es | recovery | R9872, R9875, R9879, R9880, R9882, R9883, R9885-R9889, R9891, R9892, R9894 / R9872's, R9881's, R9884's, R9890's, R9893's and R9895's own Decrypted status (6 different neighbours, one per sub-cluster) | Same shelfmark (BRAH Signatura 9/31), each Non-decrypted item a folio away from a Decrypted sibling; same correspondent name recurs across the legajo | Same correspondent and RAH Signatura 9.x series as QUEUE row G2 (`ciphers` none yet, `cs-recheck/lopehurtado/`, Signatura 9/26) — check whether G2's recovered `key_codes.tsv` alphabet (49 confirmed values) reads any of these before assuming a new key; if not, log in to DECODE and read the six Decrypted siblings first | 32 |
+| D3 | Same "Luis Fernández" Rome-embassy hand, RAH Signatura 9/34 | 1525 | es | recovery | R9896, R9899, R9901 / R9898 | Same shelfmark, same year, one folio-adjacent Decrypted neighbour (R9898) for all three | Same as D2: try G2's key first, then read R9898's decipherment as a crib | 32 |
+| D4 | Bernardino Naro / the "Nuncio Damiata" at the Paris nunciature, to the Secretariat of State, doss. 62, next to a Partially decrypted item in doss. 64 of the same fond | 1624-1625 | it | recovery | R59, R60, R61 / R71 | Same fond (Vatican Secret Archive i.1025, Segretario di Stato, France), dossier numbers 3 apart, dates 6-7 weeks apart, same recipient ("the Secretariat") | Register on DECODE, read R71's partial decipherment, apply to R59-R61; check Bernardino Spada's and Naro's own printed correspondence (Bibl. Vat. and Treccani entry cite a documented 1625 Paris nunciature) for a contemporary abstract first | 32 |
+| D5 | Ferdinand (the future Ferdinand II of Aragon) to his father John II of Aragon | 1478 | es | recovery | R1172 / R1180 | Same shelfmark (BNE MSS/20211), items 3 apart, both catalogued 1478 | **Check print first**: a paper titled "Spanish Ciphers before Accession of King Ferdinand: 1470-1479" (found via web search, not yet read) appears to already discuss and reconstruct Ferdinand's 1470s/1476-79 ciphers to John II from this same manuscript family — read it before assuming this is unworked; if it stops short of R1172 specifically, log in to DECODE and read R1180 as the crib | 32 |
+| D6 | Extension of QUEUE row G2 (Lope Hurtado de Mendoza), one more item just past the R9634-R9656 range already flagged there | 1522 | es | recovery | R9659 / R9652 | Same shelfmark (BRAH Signatura 9/26) as G2, adjacent folio to the Partially decrypted R9652 | Fold into G2's existing work rather than opening separately — `cs-recheck/lopehurtado/` already has a partial key for this legajo | 28 |
+| D7 | Jean de Langeac, bishop of Avranches (French ambassador to Venice from 1528, envoy earlier too), to Anne de Montmorency | c. 1520-1540, this item's own date not separately catalogued | fr | recovery | R3694 / R3695 | Same shelfmark (BnF fr. 3083), same 10-day-or-less date window as the Decrypted R3695, both catalogued to the Montmorency correspondence | Register on DECODE, read R3695's decipherment for the cipher's scheme/key, apply to R3694; BnF's own finding aid (archivesetmanuscrits.bnf.fr) lists fr. 3083 among Montmorency's incoming diplomatic correspondence, worth checking for a contemporary calendar entry first | 32 |
+
+Caveats: this scan is catalogue metadata only (DECODE's holder string, date fields and Sender/Receiver, cached
+19-23 September 2026 by aaymeloglu/unsolved-ciphers), not the page images — a "same shelfmark, adjacent item"
+match can still be two unrelated documents bound together, and the shelfmark-normalisation itself is a heuristic
+(one bug already caught and fixed this sweep: BAV Barb.lat 6956 and Barb.lat 6960 were first merged as "the same
+shelfmark" because both codes end in a single trailing number, corrected by requiring the volume number to
+recur across sibling records before treating it as one file). Every row needs the DECODE login (ASKS.md row 1)
+or the images from the holding library (BAV, RAH, BNE, BnF, ASV) to read past the catalogue entry — nothing here
+has been opened, read or scored against a control.
+
 ## Kept, not scored this sweep
 
 163 further kept candidates were left unscored by the 40-candidate cap (by plaintext language: fr 57, es 34, unknown 19, it 17, de 14, la 10). They are listed with the harvesters' evidence under `unscored_kept` in `QUEUE-scores.json`, in the filter's order, so the next run scores them first if the top forty move. Those with a working folder already, all closed-negative or blocked in LANDSCAPE.md: [Anonymous letters to Mr Tempest (Paris) and Dr Barret (Rheims), c. Dec 1585, endorsed by Phelippes (TNA SP 53/16 nos. 78-79)](ciphers/sp53-16-78/); ['Cifer with Spanish Spye', short ciphertext c.1586 (TNA SP 53/22 f.52, and the verso of f.40)](ciphers/sp53-22-f52/); [Lodovico Birago to the Duke of Nevers, Saluzzo, 13 Nov 1571, paragraph in numerical cipher (BnF fr. 3251 f.119)](ciphers/birago-nevers-1571/); [Admiral d'Estaing to Gerard, French minister in Philadelphia, 30 April 1779, intercepted (Clements Library, Clinton Papers 64:14)](ciphers/destaing-gerard-1779/); [Berthier to Napoleon, Koenigsberg, 22 Dec 1812 (AN AF/IV/1643) and the encoded letter to Marshal Marmont, 1807 (Vilcoq 1969)](ciphers/berthier-napoleon-1812/).
