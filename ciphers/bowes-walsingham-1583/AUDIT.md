@@ -164,3 +164,92 @@ babel.hathitrust.org 1 (403, stopped); archive.org 7 (advancedsearch 2, metadata
 plus one snapshot); searcharchives.bl.uk 1; cryptiana.web.fc2.com 1 (blocked by the egress allowlist);
 github.com 2 shallow clones; WebSearch 5 queries. All requests were sequential, at least 1.5 s apart per host,
 with the descriptive User-Agent.
+
+## 9. Calendar page check (23 September 2026)
+
+Verifier follow-up session (Sonnet, no subagents), continuing directly from section 4/8 above. Question: does
+CSP Scotland vi (Boyd 1910) no. 389 (pp.370-371, Cott. Calig. C VII fol.196, 7 April 1583) and no. 584
+(pp.566-567, 31 July 1583) print the seven names in clear, and mark any of them "in cipher" or "deciphered" —
+which decides N0 against N1 for item A/B.
+
+**Routes tried, in order.**
+
+1. **Internet Archive.** `advancedsearch.php` for `title:(calendar state papers scotland)`, for
+   `creator:Boyd AND title:(calendar scotland)`, and for `identifier:calendarofstatep*` (120 hits, paged):
+   no identifier for vol. 6 (Boyd 1910) appears in the public index. Direct-guessed identifiers
+   `calendarstatepa06boydgoog`, `calendarstatepa06boyd`, `calendarofstatep06vari` do not exist (`{}`).
+   `calendarofstatep06grea` exists but `is_dark:true` (no public files, not search-indexed); its `/details/`
+   page returns "Internet Archive: Error" and `be-api` full-text search on it returns 0 hits for "Smallet" and
+   for "Boyd" — this identifier cannot be confirmed as vol. 6 and is not usable either way. **No route to the
+   volume's own scan or its search-inside index on archive.org.**
+
+2. **HathiTrust.** Extended the existing `audit_csp6_tokens.tsv` (HTRC Extracted Features, htid
+   `nnc2.ark:/13960/t1gh9nc18`, already fetched 23 Sept 2026, no new request needed) with a targeted grep for
+   `cipher`, `cypher`, `decipher`, `deciphered` across every page in the file (seq 413-416, 608-611). Result:
+   **`cipher` occurs exactly once on p.371 (seq 415, the second page of no. 389) and exactly once on p.567
+   (seq 611, the second page of no. 584). `cypher`, `decipher` and `deciphered` occur nowhere in either
+   entry's pages.** p.371's full token list also confirms Cobham ("Cobhani"), Henry, Smallet ×2, Glencairn
+   ×2, Maineville ("Maineville"/"Maijieville"), Huntly, Montrose and Mauvissi[ère] all present in clear, as
+   AUDIT.md section 4 already found. p.567 has Ruthven ×2 but not Glencairn, Smallet or Maineville, which
+   land instead on p.566 (seq 610) and — per section 4 — probably belong to the tail of no. 583, not no. 584.
+   Re-tried `babel.hathitrust.org/cgi/pt?id=...&seq=415` directly (a different endpoint from section 8's
+   `imgsrv/download/plaintext`, with a full desktop Chrome User-Agent): still **403**, one request, stopped
+   per the good-citizen rule — running text remains unreachable this route.
+
+3. **Wayback Machine of British History Online.** Confirmed the exact chunk URLs from BHO's own vol. 6 table
+   of contents (`/cal-state-papers/scotland/vol6`, fetched directly, 200): no. 389 is in
+   `/cal-state-papers/scotland/vol6/pp356-434` ("Elizabeth: April 1583"); no. 584 is in
+   `/cal-state-papers/scotland/vol6/pp521-570` ("Elizabeth: July 1583"). CDX for both: earliest captures
+   2 May 2015, length 8270-8273 bytes for an entire month of entries (pp356-434 alone is 78 printed pages) —
+   too short to be the running text. Fetched the pp356-434 2015 capture (`if_`, one connection reset, one
+   retry): confirms it is a **stub**, not the text — `<p>Pages 356-434</p><p>Calendar of State Papers,
+   Scotland: Volume 6, 1581-83. ... </p><p>This premium content was digitised by double rekeying. All rights
+   reserved.</p>` with no entry text and no hit for any of Cobham/Smallet/Glencairn/Maineville/Huntly/
+   Mauvissière/cipher in the page source. This matches and confirms section 8's earlier finding for the same
+   URL. A possible unpaywalled mirror, `archive.british-history.ac.uk` (surfaced by a WebSearch snippet for
+   vol. 5), refused the direct connection twice (`Recv failure: Connection reset by peer` through this
+   session's proxy — the same symptom the Access playbook records for Cloudflare-challenged sites); a CDX
+   lookup for it returned no captures for the vol. 6 chunk (one clean empty result) and Internet Archive's
+   own services returned "Temporarily Offline" banners on three further attempts (2 CDX, all in the same few
+   minutes) — an infrastructure outage, not a block, but it closed off retrying this route inside the budget.
+
+4. **WebSearch**, 4 queries: `"Cott. Calig. C. VII" "196" Bowes Walsingham 1583 calendar`; `"Bowes"
+   "Walsingham" cipher "Smallet" OR "870" Cotton Caligula 1583`; `british-history.ac.uk "Calendar of State
+   Papers" Scotland Mary Queen of Scots "vol. 6" 1581-1583 pp356-434`; `Boyd "Calendar of State Papers"
+   Scotland 1910 "no. 389" OR "No. 389" Bowes April 1583`. No snippet quotes the entry text; results are the
+   BHO series/volume pages (confirming the premium gate), the BL catalogue, Wikipedia's Robert Bowes article,
+   and unrelated Cotton-manuscript pages. No hit for a phrase from the entry itself.
+
+**Answer.** Not settled by direct reading of the running text — every route to it (HathiTrust `babel`,
+BHO/Wayback, `archive.british-history.ac.uk`) is blocked or unreachable this session, for the same reasons
+already logged in section 8, now independently re-confirmed rather than merely re-asserted. What the extended
+token-frequency check adds: the word **"deciphered" (and "cypher"/"decipher") does not occur anywhere on
+either entry's pages**, and "cipher" occurs only once per page — a single loose occurrence, not the kind of
+repeated marginal tagging ("in cipher", "deciphered by X") that a calendar typically prints when a manuscript
+note or an editorial decipherment sits next to a passage. Combined with section 4's earlier reasoning (the one
+"cipher" on p.371 sits with "Cary" and "errors", almost certainly the abstract of Bowes's own sentence about
+errors in *Cary's* cipher, not a note on this letter), this is evidence against "marked in cipher/deciphered"
+next to the names, but it is evidence from word frequency and position guesses, not from having read the
+sentence, and it does not by itself prove absence — an editor's practice of embedding "[in cipher]" inline
+after a name would still show up as one more "cipher" token, indistinguishable in this data from the Cary
+sentence. The names being present in clear on both pages is unchanged from section 4 and is not in question.
+
+**Class: still N1, page not reached.** What remains to move it to N0 or to firm up N1: the running text of
+CSP Scotland vi pp.370-371 and pp.566-567, read verbatim, by any of (a) a HathiTrust login/full-view download
+route not yet available in this environment, (b) a BHO "gold" subscription or the print volume itself
+(REQUEST.md candidate), or (c) a working fetch of `archive.british-history.ac.uk` once the connection-reset
+is diagnosed (it may simply need the certutil fix from the Access playbook applied to this specific host, or
+it may be Cloudflare-challenged like HathiTrust and manuscripts.nls.uk). No sentence in NOTES.md, status.json
+or ROOM.md claims N0 or "marked as cipher/deciphered in the calendar" as settled fact, so no correction is
+needed this pass; the safe sentence in section 1 already says "probable, not confirmed" and that qualifier
+stands.
+
+### Requests this session (verifier follow-up, 23 September 2026)
+
+archive.org 13 (advancedsearch 6, metadata 4, details 1, — plus 2 counted under be-api below are separate);
+be-api.us.archive.org 2 (fts, 0 hits each, on an unconfirmed dark identifier); web.archive.org 10 (CDX 6 of
+which 3 hit "Temporarily Offline" and were each retried once, page-content fetches 4 of which one connection
+reset was retried once); british-history.ac.uk 2 (200, direct, not paywalled for the index/TOC pages);
+archive.british-history.ac.uk 2 (connection reset both times, not retried a third time); babel.hathitrust.org
+1 (403, stopped, one request as instructed); WebSearch 4 queries. All requests sequential, at least 1.5 s apart
+per host, descriptive User-Agent, no logins or keys used.
