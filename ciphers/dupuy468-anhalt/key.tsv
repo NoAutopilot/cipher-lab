@@ -1,0 +1,33 @@
+# Key for BnF Dupuy 468 f.28r-v, 23 September 2026. token<TAB>value<TAB>source<TAB>note
+# source 'gloss': value read from the later hand's interlinear gloss (key_from_gloss.py, votes in key_from_gloss.tsv).
+# source 'search': value from the n-gram search only (runs.tsv). value '=word' is a word sign; '' a null.
+# The gloss hand is not identified (see NOTES.md); nothing here asserts who wrote it.
+token	value	source	note
+q	e	gloss	78 votes; 1 minority (v09 gloss 'nos' over q Y P, cipher reads eos as in r12 where the same group is glossed eos)
+V	i	gloss	67 votes
+Po	t	gloss	58 votes; r14 token 21 stands where articulus has s
+cc	u	gloss	49 votes (u and v)
+R	r	gloss	46 votes
+R2	r	gloss	2 votes (proposui r06, principibus v08); curled variant of R
+P	s	gloss	44 votes; r18 token 4 stands where consentiente has t
+6	a	gloss	44 votes
+U	n	gloss	40 votes; the gloss writes m in commissionem (r06) and imponetur (r14) where the cipher spells n
+Y	o	gloss	34 votes
+D	m	gloss	31 votes; r06 token 17 stands where commissionem has i (encipherer's slip)
+L	c	gloss	25 votes; the gloss writes t in confederationem (v02) and amicitiam (r23) where the cipher spells c (-cio-)
+4	p	gloss	19 votes
+9	l	gloss	17 votes
+3	f	gloss	16 votes
+T	d	gloss	16 votes
++	g	gloss	8 votes
+7	b	gloss	3 votes
+Z	q	gloss	3 votes (qui, qui, quemcumque); two further Z after g in v06, v07 are unglossed
+Π	h	gloss	3 votes (attrahi, his, hoc)
+II	x	gloss	1 vote (auxilio)
+K	=christianissimus	gloss	12 votes, gloss abbreviated chrmus/chrmo/chrmi (case follows the gloss)
+F	=marchio	gloss	6 votes (marchio, marchion, marchioni)
+O	=Luneburg	gloss	5 votes (luneburg, de luneburg); theta
+PW	=Mekleburg	gloss	3 votes (mekleburg, mekle); P-shape standing alone; r04 token 25 is glossed 'dux' instead (M there)
+SX	=Saxonie	gloss	1 vote, gloss 'saxo'; value expanded from the gloss abbreviation, uncertain
+g		search	null (dumbbell sign, 13 tokens, at word or clause ends, e.g. 'ligam . et', 'possunt fiat .'); no gloss; the search sets it to null in T-blind and T-glossfixed (runs.tsv)
+o		search	null (small circle, 3 tokens, always next to g); no gloss; null in T-blind, 'h' in T-glossfixed: unstable, uncertain

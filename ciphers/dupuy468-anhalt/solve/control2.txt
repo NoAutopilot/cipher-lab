@@ -1,0 +1,273 @@
+# synthetic control, design design.json, seed 2
+{cum non rediret}
+{uno atque altero}
+{die}
+{chirurgus rogo}
+{theodoricum}
+{quid}
+{sit in}
+{causa}
+{excusat ille nescio}
+{quid}
+{at ego rem}
+{suspicans}
+{quid inquam}
+{num iudicat esse}
+{pestem hoc}
+{ipsum inquit}
+{constanter}
+{affirmat}
+{tres}
+{esse}
+{carbunculos}
+{risi satis}
+{nec}
+{ullam pestis}
+{imaginationem}
+S12 S14 S13 S17 S9 S9 S21 S17 S16 S15 S16 S17 S13 S5 S13 S10 S21 S8 S9 S12 S17 S14 S8 S15 S20 S17 S18 S5 S21 S1 S9
+{chirurgi}
+S10 S15 S9 S14 S23 S17 S16 S8 S10 S17 S0
+S17 S12 S14 S13 S17 S5 S12 S17 S0
+{et in os}
+{asseuerat}
+{germanam}
+{esse}
+{pestem}
+{nec sic}
+{quidem}
+S13 S17 S19 S17 S10 S14 S23 S8 S5 S15 S12 S14 S23 S17 S10 S21 S9 S5 S17
+S15 S0 S0 S14 S23 S8 S21 S0 S20 S15 S13 S15 S20 S9 S14 S23
+{chirurgum}
+{magni nominis}
+{inspicit}
+{is}
+{uero}
+{ut erat homo}
+{rusticior}
+{non}
+{uererer}
+{inquit}
+{tecum cubare}
+{idem}
+{sentiebat}
+S19 S14 S7 S23 S15 S14 S5 S8 S15 S0
+S13 S14
+{quendam}
+{cui plurimum}
+{tribuunt}
+{louanii}
+S16 S15 S13 S19 S17 S0 S7 S21 S16 S21 S8 S14 S8 S8 S14 S13 S14 S12 S17
+{admodum}
+{est}
+{rarum}
+{rogo numquid}
+{mali}
+{portenderet}
+{corpus}
+{negat narro}
+{de ulceribus}
+{addens}
+{argumenta}
+{quibus}
+{colligerem}
+{non}
+{esse}
+{pestem}
+{ulcera}
+{non}
+{erant}
+{noua}
+{neque}
+S8 S10 S21 S16 S9 S14 S16 S15 S9 S15 S16 S5 S20 S20 S15 S3 S14 S7 S23 S17 S8 S16 S5 S20 S20 S5 S8 S17 S16 S8 S17 S4 S16 S17 S8 S0 S15 S10 S17 S9 S17 S8 S12 S21 S20 S21 S23 S16 S1 S17 S8 S17 S21 S7
+S16 S5 S1 S20 S20 S15 S8 S21 S13 S16 S21 S20 S14 S16 S9 S17 S15 S10 S15 S20 S15 S9 S5 S13 S10 S14 S23 S10 S14 S9 S5 S21 S8 S15 S16 S17 S8 S8 S17 S13 S5 S13 S0 S14 S9 S14 S23 S15 S8 S15 S9 S3 S21 S23 S9 S17 S9 S14 S23 S15 S5 S12 S17 S14 S23 S15 S9 S15 S9 S8 S17 S13 S5 S20 S15 S9 S2 S18 S5 S14 S5 S20 S0 S14 S23 S5 S13 S13 S14 S16 S9 S17 S21 S3 S15 S0 S9 S15 S14 S1 S8 S9 S8 S14 S16 S8 S17 S19 S21 S13 S17 S16 S14 S13 S10 S14 S23 S9 S17 S13 S14 S8 S0 S14 S23 S14 S12 S21 S13 S14 S12 S17 S0
+{aureum}
+{pollicitus}
+S14 S8 S9 S8 S14 S10 S21 S8 S9 S10 S23 S15 S16 S12 S1 S17 S5 S13 S15 S12 S13 S14 S23 S14 S12 S17 S9 S5 S23 S5 S13 S17 S8 S9 S14 S23 S23 S17 S9 S5 S8 S14 S11 S21 S23 S15 S9 S17 S21 S16 S14 S13
+{ministrum}
+{reicio}
+{et iratus}
+S13 S14 S12 S17 S0 S17 S8 S0 S19 S23 S17 S8 S9 S21 S13 S14 S12 S17 S0 S21
+{me}
+{commendo}
+{stomachus}
+S17 S16 S9 S23 S15 S9 S23 S17
+{restitutus}
+S14 S8 S9 S19 S15 S5 S8 S9 S21 S10 S5 S20
+S4 S15 S20 S20 S17 S16 S15 S0 S14 S21 S0 S21 S16 S9 S5 S8 S21 S14 S9
+{ciatho}
+{uini belnensis}
+{hic}
+{protinus}
+{ad}
+S8 S9 S5 S12 S17 S17 S18 S5 S21 S18 S5
+{laborem}
+S23 S14 S5 S14 S23 S8 S5 S8 S15 S7 S8 S21 S20 S5
+{quod}
+{deerat}
+{in nouo testamento}
+S15 S10 S5
+S9
+{curatus}
+{fere quatuor}
+{hebdomadis}
+{in}
+S0 S5 S7 S2 S17 S0 S5 S20 S5 S13 S13 S14 S5 S13 S23 S14 S13 S17 S4 S23 S15 S5 S17
+{duntaxat}
+{ad proximum}
+{templum}
+{exii}
+{sacri gratia}
+{nondum sat}
+S3 S17 S23 S13 S17 S8 S5 S17 S23 S17 S7 S5 S8 S8
+{pestis}
+{fuit}
+S10 S14 S8 S9 S14 S13 S14 S15 S13 S20 S15 S7 S21 S23 S14 S14 S9 S17 S16 S0 S21 S13 S13 S21 S12 S17 S9 S15 S9 S1 S14 S15 S16
+{robore}
+{depuli quando}
+{saepenumero}
+{magna}
+{morbi}
+{pars est}
+{morbi}
+{imaginatio}
+{ab}
+{aduentu}
+{protinus}
+S14 S12 S17 S11 S14 S23 S15 S13 S16 S14 S18 S5 S17 S8 S13 S14 S15 S12 S17 S23 S1 S14 S9 S16 S17 S8 S17 S16 S21 S13 S17 S16 S15 S9 S17 S13 S15 S0 S0
+{ne uel}
+{ego}
+S0 S5 S17 S18 S5 S15 S13 S14 S8 S8 S14 S13 S9 S14 S23 S23
+{uel}
+{mihi quisquam}
+{officio}
+{suo}
+{molestus}
+{tamen irrupit}
+{dorpius}
+{omnium}
+{primus}
+{mox atensis}
+{marcus}
+{laurinus}
+{et paschasius}
+{berselius}
+{qui}
+{cotidie}
+{aderant}
+{mihi}
+{bonam}
+S13
+S10 S15 S23 S9 S14 S13 S1 S15 S12 S14 S13 S14 S23 S5 S16 S9 S13 S14 S20 S20 S17 S9 S17 S8 S8 S17 S13 S15 S0
+{sua}
+{mi beate}
+{quis crederet}
+{hoc}
+{corpusculum}
+{exile}
+S12 S14 S20 S17 S0 S15 S9 S5
+{atque}
+{etiam}
+{aetate iam imbecillius}
+{post}
+{tot itinerum}
+{labores}
+{post}
+{tot}
+{studiorum}
+{sudores}
+{tot etiam}
+{morbis}
+{suffecturum}
+S8 S0 S17 S8 S14 S16 S17 S13 S18 S5 S15 S13
+{grauiter paulo}
+{ante}
+{laborarim}
+S7 S15 S8 S17 S20 S14 S15 S2 S14 S17 S12 S18 S5 S14 S16 S21 S16 S8 S14 S13 S14 S20 S16
+{suspicio}
+{tangebat}
+{animum}
+{meum}
+S14 S5 S13 S15 S16 S16 S5 S13 S13 S17 S19
+{fore fatalem}
+{adeo malo}
+{malum succedebat}
+{semperque}
+{grauius}
+{ego}
+{uero}
+{tum}
+{etiam}
+{cum maxime}
+{morbus}
+{urgebat}
+{sic eram}
+{affectus ut}
+{nec uitae}
+{desiderio}
+{cruciarer}
+{nec mortis}
+{metu}
+{trepidarem in}
+{uno}
+{christo}
+{tota spes}
+{erat a quo}
+{nihil}
+{aliud}
+{precabar nisi}
+{ut daret}
+{quod}
+{mihi saluberrimum}
+{esse}
+{iudicaret}
+{iuuenis}
+{olim ut memini}
+{ad nomen}
+{etiam mortis}
+{solebam}
+{inhorrescere}
+{hoc certe}
+{profeci accessione}
+{aetatis}
+{mortem}
+{leuiter}
+{metuo}
+{neque}
+{metior hominis}
+{felicitatem}
+{longaeuitate}
+{annum excessi}
+{quinquagesimum}
+{ad quem}
+{cum ex tam}
+{multis}
+{tam}
+{pauci}
+{perueniant}
+{iure queri}
+{non possum}
+{me parum}
+{diu uixisse deinde}
+{si quid}
+{hoc}
+{ad rem pertinet}
+{iam nunc}
+{paratum}
+{est monimentum}
+{quo posteris}
+{tester me}
+{uixisse et}
+{fortassis}
+{a rogo}
+{quemadmodum}
+{poetae loquuntur}
+{ut consilescet}
+{liuor}
+{ita}
+{magis elucescet}
+{gloria}
+{quanquam}
+{non}
+{conuenit}
+{ut christianum}
+{pectus}
