@@ -1,0 +1,839 @@
+line	pos	token	gloss	conf	note
+r02	1	[PLAIN:mis]		l	long-s read as s; hand hard to read
+r02	2	[PLAIN:nos]		m	
+r02	3	[PLAIN:ambos]		l	
+r02	4	[PLAIN:fidos]		l	
+r02	5	[PLAIN:ac]		m	
+r02	6	[PLAIN:fortunatos]		l	
+r02	7	[PLAIN:?ntos]		l	word crosses s1/s2 overlap seam, first letters uncertain
+r02	8	[PLAIN:venisse]		m	
+r02	9	V	in	m	gloss position approximate
+r02	10	U		m	
+r02	11	Y	oppidum	l	could be 4; gloss position approximate
+r02	12	Y	oppidum	l	could be 4
+r02	13	V		m	
+r02	14	T		m	
+r02	15	[PLAIN:act]		l	uncertain reading, 3 letters only
+r02	16	g		m	
+r02	17	q		m	
+r03	1	L	cerbes	m	
+r03	2	q	cerbes	m
+r03	3	R		l	ambiguous with 4, forked/crossed stem shape
+r03	4	7		m
+r03	5	q		m
+r03	6	P		m
+r03	7	Po		l	tick vs P unclear
+r03	8	q	et	l	gloss position approximate
+r03	9	Po		l
+r03	10	V	ibi	l	gloss position approximate
+r03	11	7		m
+r03	12	V		m
+r03	13	q		m
+r03	14	R	erant	l	ambiguous with 4; gloss position approximate
+r03	15	6	erant	l
+r03	16	U		l	s1/s2 overlap seam
+r03	17	Po		l	
+r03	18	P		l	uncertain, could be L
+r03	19	V		m	
+r03	20	R		l	ambiguous with 4
+r03	21	cc		l	revised from earlier read of g; oe-ligature shape
+r03	22	q		m	
+r03	23	K		l	compound star+box shape, read as ++ then X on first pass, now taken as one K
+r03	24	F		l	final token on line, long top-bar shape
+r04	1	O	limeburg	m	circle-with-bar theta shape
+r04	2	[PLAIN:ambos]	limeburg	l	uncertain, could be cipher not plain
+r04	3	II	mekleburgen	m	box two verticals
+r04	4	q		m	
+r04	5	Po		l	
+r04	6	T		l	ambiguous with D (loop+stem+tick)
+r04	7	cc	et	m	
+r04	8	q	multi	m	
+r04	9	Po	alii	l	
+r04	10	V		m	
+r04	11	6		m	
+r04	12	q		m	
+r04	13	V		m	
+r04	14	V		m	
+r04	15	q		l	faint mark above, possibly abbreviation not gloss
+r04	16	+		m	
+r04	17	3		l	drawn like Greek xi, tentative match to legend 3
+r04	18	V		m	
+r04	19	q		m	
+r04	20	V		m	
+r04	21	cc		m	
+r04	22	P		m	
+r04	23	O		l	at crop right edge; possible faint marginal foliation number bleeding through, not certain this is a text token
+r05	1	[PLAIN:tractam]		l	superscript marks above (correction?), not treated as gloss
+r05	2	[PLAIN:p??]		l	illegible middle letters
+r05	3	[PLAIN:neu]		m	
+r05	4	[PLAIN:ad]		h	
+r05	5	[PLAIN:pactu]		l	could read pecte; semantic guess
+r05	6	[PLAIN:et]		m	
+r05	7	q	ego	l	gloss position approximate
+r05	8	+	ego	l	
+r05	9	R	Joachim	l	ambiguous with 4/Y; gloss position approximate
+r05	10	V	Joachim	l	
+r05	11	cc	Joachim	m	
+r05	12	L	Joachim	m	
+r05	13	II	Joachim	l	
+r05	14	V		m	
+r05	15	U		m	
+r05	16	cc		m	
+r05	17	Po		l	
+r06	1	4	propos?ni	l	gloss reads like "proposui/proponit", approximate
+r06	2	U	propos?ni	l	
+r06	3	4		l	could be Y
+r06	4	4	murchio	l	gloss ~ "marchio(nem)"; position approximate
+r06	5	q	murchio	l	
+r06	6	P		m	
+r06	7	cc	com?missionem	l	gloss position approximate
+r06	8	V	com?missionem	m	
+r06	9	F		l	
+r06	10	L		m	
+r06	11	q		m	
+r06	12	U		l	s1/s2 overlap seam
+r06	13	T		l	s1/s2 overlap seam
+r06	14	V		m	
+r06	15	P	vt	l	gloss "vt"=ut, position approximate
+r06	16	P		m	
+r06	17	T		m	
+r06	18	Y		l	ambiguous with 4
+r06	19	U		m	
+r06	20	q		m	
+r06	21	T		m	
+r06	22	T		m	
+r06	23	q		m	
+r06	24	6		m	
+r06	25	T		m	
+r07	1	[PLAIN:?sceuria]		l	illegible leading mark before word
+r07	2	O	de luneburg	l	gloss position approximate
+r07	3	[PLAIN:venit]		l	
+r07	4	[PLAIN:de]		m	
+r07	5	II	mekleburg	l	gloss position approximate; gloss word cut off at crop edge, "mekle[burg]"
+r07	6	[PLAIN:et]		m	
+r07	7	[PLAIN:consortii]		l	word straddles s1/s2 seam (confe.../consortij)
+r07	8	[PLAIN:mei]		m	
+r07	9	[PLAIN:gratia]		l	
+r07	10	F		m	
+r07	11	[PLAIN:?pro]		l	highly uncertain cursive
+r07	12	[PLAIN:?plurimis]		l	highly uncertain cursive
+r08	1	[PLAIN:?confitfo]	marchion	l	very uncertain cursive reading; gloss "marchion(em)" position approximate
+r08	2	[PLAIN:her]	cum	m	="haec"; gloss position approximate
+r08	3	[PLAIN:est]		m	
+r08	4	F	et auxilio	m	gloss partly cut at crop edge
+r08	5	L		m	
+r08	6	[PLAIN:?ccc]		l	could be Roman numeral or repeated cc-symbol; genuinely ambiguous
+r08	7	D		l	small loop+cross, could also be II variant
+r08	8	6		m	
+r08	9	cc		l	s1/s2 overlap seam
+r08	10	II		l	s1/s2 overlap seam
+r08	11	V		m	
+r08	12	q		m	
+r08	13	V		m	
+r08	14	Y		l	ambiguous with 4
+r08	15	O		m	
+r08	16	?BLOT		l	ink blot/smudge obscures this symbol entirely; new placeholder code, not a legend shape
+r08	17	q		m	
+r08	18	Po		l	
+r09	1	II		m	
+r09	2	[PLAIN:faciet]		m	
+r09	3	[PLAIN:totis]		l	
+r09	4	[PLAIN:viribus]		l	small superscript insertion mark above word, not treated as gloss
+r09	5	[PLAIN:et]		m	
+r09	6	3	mekleburg	l	gloss "mekleburg" here or belongs to r07's partial "mekle["; attribution uncertain, see file footer
+r09	7	q	fedus	l	gloss ~ "foedus"; position approximate
+r09	8	T	fedus	l	s1/s2 overlap seam
+r09	9	cc		l	s1/s2 overlap seam
+r09	10	II		l	
+r09	11	L		m	
+r09	12	Y		l	ambiguous with 4
+r09	13	U		m	
+r09	14	L		m	
+r09	15	q		m	
+r09	16	P		m	
+r09	17	T		l	
+r10	1	cc	concludatur	l	gloss position approximate
+r10	2	T	concludatur	l	
+r10	3	O		m	
+r10	4	g	concludatur	l	compact figure-8-like rendering of g
+r10	5	[PLAIN:quam]		m	
+r10	6	[PLAIN:tot]		m	
+r10	7	[PLAIN:fieri]		l	
+r10	8	[PLAIN:possibile]		m	
+r10	9	[PLAIN:est]		m	
+r10	10	P		m	
+r10	11	[PLAIN:?vestris]		l	very uncertain
+r10	12	[PLAIN:omnibus]		m	
+r10	13	[PLAIN:metuens]		l	seen only in next crop's bleed row; line likely extends past r10_s2's right edge
+r10	14	[PLAIN:et]		l	
+r11	1	[PLAIN:?trilios]		l	very uncertain, first word of line
+r11	2	[PLAIN:p2o]		l	abbreviation, uncertain expansion
+r11	3	K		m	star/asterisk joined by long stroke to small box, matches legend K clearly
+r11	4	[PLAIN:videt]		m	
+r11	5	[PLAIN:et]		m	
+r11	6	[PLAIN:primo]		m	
+r11	7	[PLAIN:vt]		l	
+r11	8	K		m	second K on this line, drawn as sun/star + small square
+r11	9	D		l	
+r11	10	[PLAIN:nulla]		m	
+r11	11	[PLAIN:fiat]		m	
+r12	1	[PLAIN:inter]	inter	l	plain word coincides with faint gloss word of same text above r11's tail; likely coincidence not decipherment gloss
+r12	2	q		m	
+r12	3	Y		l	ambiguous with 4
+r12	4	P	qui	l	gloss position approximate
+r12	5	q		m	
+r12	6	Po		l	
+r12	7	3		m	
+r12	8	cc		m	
+r12	9	V		m	
+r12	10	V		m	
+r12	11	II		l	s1/s2 overlap seam
+r12	12	Po		l	s1/s2 overlap seam
+r12	13	q	germanie	l	gloss position approximate
+r12	14	T		l	ambiguous glyph, could be D or Y
+r12	15	+		m	
+r12	16	q		m	
+r12	17	T		l	same ambiguous glyph as pos14
+r12	18	T		m	
+r12	19	6		m	
+r12	20	U		m	
+r12	21	V		m	
+r12	22	Y		l	ambiguous with 4
+r12	23	7		l	
+r13	1	V	principes	l	gloss position approximate
+r13	2	U	principes	l	
+r13	3	L		m	
+r13	4	V		m	
+r13	5	R	attrahi	l	ambiguous with 4; gloss position approximate
+r13	6	q	attrahi	l	
+r13	7	P		m	
+r13	8	6		m	
+r13	9	Po		l	
+r13	10	Po		l	
+r13	11	Y		l	ambiguous with U
+r13	12	6		m	
+r13	13	P		m	
+r13	14	T		l	
+r13	15	6		l	s1/s2 overlap seam
+r13	16	II		l	s1/s2 overlap seam
+r13	17	V		l	s1/s2 overlap seam
+r13	18	Y		l	ambiguous with 4
+r13	19	q		m	
+r13	20	P	possunt	l	gloss position approximate
+r13	21	P	possunt	l	
+r13	22	q	far	l	gloss position approximate; gloss reading uncertain
+r13	23	Y		l	ambiguous with 4
+r14	1	3	fedus	l	gloss position approximate; ʒ-shape
+r14	2	q		m	
+r14	3	T		l	could be Po
+r14	4	cc		m	
+r14	5	II		m	
+r14	6	?BLOT		l	ink blot obscures symbol
+r14	7	q		m	
+r14	8	Po		l	
+r14	9	cc		m	
+r14	10	U		l	
+r14	11	cc		m	
+r14	12	P		l	
+r14	13	6		m	
+r14	14	P		l	s1/s2 seam region, approximate
+r14	15	6		l	
+r14	16	U		l	
+r14	17	Po		l	
+r14	18	V		m	
+r14	19	L		m	
+r14	20	P	arhontis	l	gloss reads like a Greek-derived word (archontibus?); position approximate
+r14	21	Po		l	
+r14	22	3		m	
+r14	23	V		m	
+r14	24	6		m	
+r14	25	Po		l	
+r14	26	g		l	final symbol on line, uncertain
+r15	1	Y	vt	l	ambiguous with 4; gloss position approximate
+r15	2	U		m	
+r15	3	q		m	
+r15	4	Po		l	
+r15	5	cc		m	
+r15	6	T	nullus	l	ambiguous with D/Po; gloss position approximate
+r15	7	cc		m	
+r15	8	Po		l	
+r15	9	U		m	
+r15	10	cc		m	
+r15	11	q		m	
+r15	12	q		m	
+r15	13	cc		m	
+r15	14	T		l	
+r15	15	6		m	
+r15	16	q		m	
+r15	17	V		m	
+r15	18	cc		m	
+r15	19	P		l	
+r15	20	Po	proufud?	l	gloss very uncertain reading; position approximate
+r15	21	V		m	
+r15	22	U		m	
+r15	23	Y		l	ambiguous with 4
+r16	1	Po	fedus	l	gloss position approximate
+r16	2	cc		m	
+r16	3	T		l	
+r16	4	3		m	
+r16	5	q		m	
+r16	6	T		l	
+r16	7	cc		m	
+r16	8	II		m	
+r16	9	6		m	
+r16	10	L	correpharens?	l	gloss reading very uncertain
+r16	11	q		m	
+r16	12	Y		l	ambiguous with 4
+r16	13	q	calui?t	l	gloss reading uncertain
+r16	14	cc		m	
+r16	15	P		m	
+r16	16	6		m	
+r16	17	q		m	
+r16	18	V		m	
+r16	19	cc		m	
+r16	20	P		m	
+r16	21	V		m	
+r16	22	U		m	
+r16	23	V		m	
+r16	24	P		m	
+r17	1	T	maiore	l	gloss position approximate
+r17	2	6		m	
+r17	3	V	parte	l	gloss position approximate
+r17	4	Y		l	ambiguous with 4
+r17	5	P		l	
+r17	6	q		m	
+r17	7	Y		l	
+r17	8	6		m	
+r17	9	Y		l	dense unclear cluster, low confidence
+r17	10	Po		l	
+r17	11	q	confederationem	l	gloss position approximate, matches manifest-noted word
+r17	12	L		m	
+r17	13	Y		l	
+r17	14	U		l	
+r17	15	3		m	
+r17	16	U	confederatorum	l	gloss position approximate, s1/s2 overlap region
+r17	17	3		l	
+r17	18	q		m	
+r17	19	P		m	
+r17	20	V		l	
+r18	1	P	consentiente	l	gloss position approximate
+r18	2	q		m	
+r18	3	U		m	
+r18	4	P	pars	l	gloss position approximate
+r18	5	V		m	
+r18	6	q		m	
+r18	7	U		m	
+r18	8	Po	admittere	l	gloss position approximate
+r18	9	q		m	
+r18	10	q		m	
+r18	11	Po		l	
+r18	12	3		m	
+r18	13	cc		m	
+r18	14	q	maior	l	gloss position approximate
+r18	15	3		l	s1/s2 overlap seam
+r18	16	cc		l	
+r18	17	q		m	
+r18	18	6		m	
+r18	19	L		m	
+r18	20	cc		m	
+r18	21	U		m	
+r19	1	U		l	dense unclear cluster starts here
+r19	2	Y		l	
+r19	3	6		m	
+r19	4	Y		l	
+r19	5	P		l	
+r19	6	6		m	
+r19	7	T		l	
+r19	8	T		l	
+r19	9	V		m	
+r19	10	P		l	
+r19	11	Po	maior	l	gloss position approximate, repeats r18's "maior"; may be duplicate bleed
+r19	12	q		m	
+r19	13	Y		l	
+r19	14	q		m	
+r19	15	P	consentiret	l	gloss position approximate
+r19	16	U		m	
+r19	17	q		m	
+r19	18	Po		l	
+r20	1	V	vt	l	gloss position approximate
+r20	2	Y		l	
+r20	3	q		m	
+r20	4	P		l	drawn larger/bolder than usual P; possibly emphasis, not a different symbol
+r20	5	Po	minor	l	gloss position approximate
+r20	6	T		l	
+r20	7	V		m	
+r20	8	U		m	
+r20	9	Y		l	
+r20	10	Y		l	
+r20	11	6		m	
+r20	12	P		m	
+r20	13	q		m	
+r20	14	Po		l	s1/s2 overlap seam
+r20	15	[PLAIN:aut]		m	
+r20	16	[PLAIN:?dominum]	consentiret	l	very uncertain reading; gloss position approximate, "consentiret" repeats
+r20	17	D	admittere	l	ambiguous shape, tentative; gloss repeats
+r20	18	L		m	
+r20	19	3		m	
+r20	20	U		m	
+r20	21	P		m	
+r20	22	q		m	
+r20	23	U		m	
+r20	24	Po		l	
+r21	1	q	tenerent	l	gloss position approximate
+r21	2	P		m	
+r21	3	L		m	
+r21	4	Y		l	
+r21	5	U		m	
+r21	6	P	tractari	l	gloss position approximate
+r21	7	q		m	
+r21	8	U		m	
+r21	9	Po		l	
+r21	10	V		m	
+r21	11	Y		l	
+r21	12	q		m	
+r21	13	Po		l	s1/s2 overlap seam
+r21	14	q		l	
+r21	15	U		l	
+r21	16	Po		l	
+r21	17	q		m	
+r21	18	U		m	
+r21	19	q		m	
+r21	20	Y		l	
+r21	21	q		m	
+r21	22	Po		l	
+r21	23	cc		m	
+r21	24	Y		l	
+r22	1	[PLAIN:?parlabimus]		l	very uncertain plain word
+r22	2	Po		l	
+r22	3	Y	fedus	l	gloss position approximate
+r22	4	6		m	
+r22	5	L		m	
+r22	6	P		m	
+r22	7	6		m	
+r22	8	Y		l	
+r22	9	V		m	
+r22	10	L		m	
+r22	11	cc		l	s1/s2 overlap seam
+r22	12	Po		l	
+r22	13	q		m	
+r22	14	U		m	
+r22	15	q	quinons?	l	gloss reading very uncertain
+r22	16	Y		l	
+r22	17	q		m	
+r22	18	Po		l	
+r22	19	cc		m	
+r22	20	Y	non potest	l	gloss position approximate
+r22	21	V		m	
+r22	22	L		m	
+r22	23	cc		m	
+r22	24	T		l	
+r22	25	P		m	
+r22	26	V		m	
+r22	27	P		m	
+r22	28	3		m	
+r22	29	cc		m	
+r22	30	V		m	
+r22	31	U		m	
+r22	32	Y		l	
+r22	33	U		l	
+r23	1	[PLAIN:habeant]		m	
+r23	2	[PLAIN:speciale]	fedus	l	gloss "fedus" position approximate
+r23	3	3		m	
+r23	4	q	vt	l	gloss position approximate
+r23	5	T		l	
+r23	6	cc		m	
+r23	7	P		m	
+r23	8	6		m	
+r23	9	cc	speciale	l	gloss repeats plain word above it, likely coincidence
+r23	10	Po		l	s1/s2 overlap seam
+r23	11	[PLAIN:?singulare]		l	very uncertain
+r23	12	6		m	
+r23	13	T		l	
+r23	14	V		m	
+r23	15	L		m	
+r23	16	V		m	
+r23	17	L		m	
+r23	18	V		m	
+r23	19	6		m	
+r23	20	T		l	
+r24	1	D		l	could be 6
+r24	2	K	chirmo?	l	star+box shape, gloss reading very uncertain
+r24	3	cc		m	
+r24	4	Po		l	
+r24	5	P		m	
+r24	6	Y		l	
+r24	7	q		m	
+r24	8	L		m	
+r24	9	V		m	
+r24	10	6		m	
+r24	11	q	fedus	l	gloss "fedus" position approximate
+r24	12	q		m	
+r24	13	3		l	s1/s2 overlap seam
+r24	14	q		l	
+r24	15	T	fiat	l	gloss position approximate
+r24	16	cc		m	
+r24	17	P		m	
+r24	18	3		m	
+r24	19	V		m	
+r24	20	6		m	
+r24	21	P		m	
+r25	1	[PLAIN:?tandem]		l	very uncertain first word
+r25	2	[PLAIN:ubi]	securam	l	gloss position approximate
+r25	3	P		m	
+r25	4	q		m	
+r25	5	L	pars	l	gloss position approximate
+r25	6	cc		m	
+r25	7	Y		l	
+r25	8	cc		m	
+r25	9	T		l	s1/s2 overlap seam
+r25	10	P		l	
+r25	11	V		m	
+r25	12	P	longe	l	gloss position approximate
+r25	13	Po		l	
+r25	14	g		l	uncertain
+r25	15	q		m	
+r25	16	q		m	
+r25	17	Y	maior?	l	gloss reading uncertain
+r25	18	U		m	
+r25	19	+		m	
+r25	20	[PLAIN:?]		l	illegible, faint gloss "an minia" nearby possibly relevant
+r26	1	Y		l	
+r26	2	Y		l	
+r26	3	6		m	
+r26	4	Y	fedus	l	gloss position approximate
+r26	5	P		m	
+r26	6	[PLAIN:?exit]	pro	l	uncertain reading; gloss position approximate
+r26	7	[PLAIN:et]		m	
+r26	8	[PLAIN:?consuescit]		l	very uncertain
+r26	9	Y		l	s1/s2 overlap seam
+r26	10	Y		l	
+r26	11	q		m	
+r26	12	K	optimum?	l	star+box shape; gloss reading uncertain
+r26	13	g		l	
+r27	1	K	pro	l	star+box; gloss position approximate
+r27	2	P		m	
+r27	3	Y		l	
+r27	4	L		m	
+r27	5	3		m	
+r27	6	q		m	
+r27	7	T		l	
+r27	8	cc		m	
+r27	9	P		m	
+r27	10	Y		l	
+r27	11	q		m	
+r27	12	Po		l	s1/s2 overlap seam
+r27	13	6		l	
+r27	14	Po		l	
+r27	15	6		m	
+r27	16	Po		l	
+r27	17	[PLAIN:velle]		l	
+r27	18	g		l	
+r27	19	[PLAIN:optimum]		m	
+r27	20	[PLAIN:esse]		m	
+r27	21	[PLAIN:ut]		m	
+r27	22	V		m	
+r27	23	U		m	
+r27	24	V		m	
+r27	25	Y		l	
+r27	26	O		l	
+r28	1	[PLAIN:hoc]		m	
+r28	2	[PLAIN:modo]		m	
+r28	3	[PLAIN:credo?]	optimum	l	uncertain reading; gloss position approximate
+r28	4	[PLAIN:si]	fore	l	
+r28	5	[PLAIN:aliqui]		m	
+r28	6	[PLAIN:noluissent]	esse	l	gloss position approximate
+r28	7	P	ut	l	s1/s2 overlap seam
+r28	8	6		l	
+r28	9	q		m	
+r28	10	q		m	
+r28	11	q		m	
+r28	12	q		m	
+r28	13	V		m	
+r28	14	U	federe	l	gloss ~ "foedere"; position approximate
+r28	15	q		m	
+r28	16	P		m	
+r28	17	T		l	
+r28	18	q		m	
+r28	19	Y		l	
+r28	20	q		m	
+r29	1	L		m	
+r29	2	cc		m	
+r29	3	?BLOT		l	large ink blot obscures symbol
+r29	4	K		m	star+box shape
+r29	5	P		m	
+r29	6	[PLAIN:hoc]		m	
+r29	7	[PLAIN:modo]	confederatores	l	gloss position approximate
+r29	8	6		m	
+r29	9	P		m	
+r29	10	Po		l	
+r29	11	Y		l	
+r29	12	V		m	
+r29	13	P		l	s1/s2 overlap seam
+r29	14	Y		l	
+r29	15	V		m	
+r29	16	L		m	
+r29	17	Po	erunt	l	gloss position approximate
+r29	18	V		m	
+r29	19	q		m	
+r29	20	Y		l	
+r29	21	cc		m	
+r29	22	U		m	
+r29	23	Po		l	
+r29	24	q		m	
+r29	25	L		m	
+r29	26	P		m	
+r30	1	q		m	
+r30	2	L		m	
+r30	3	Y		l	
+r30	4	U		m	
+r30	5	3		m	
+r30	6	q		m	
+r30	7	T		l	
+r30	8	q		m	
+r30	9	Y		l	
+r30	10	6		m	
+r30	11	P		m	
+r30	12	Y		l	
+r30	13	Y		l	s1/s2 overlap seam
+r30	14	q		l	
+r30	15	P		l	
+r30	16	q		m	
+r30	17	P		m	
+r30	18	K		m	star+box shape
+r30	19	[PLAIN:vt?]		l	uncertain
+r30	20	[PLAIN:prudenti]		m	
+r30	21	[PLAIN:pauca]		m	
+v01	1	[PLAIN:nos]	ligamus	l	first line of verso, no bleed line above in crop; gloss position approximate
+v01	2	[PLAIN:omnino]		m	
+v01	3	[PLAIN:?spectam9]	et	l	uncertain abbreviation reading
+v01	4	q	confoederationem	l	gloss position approximate, matches manifest-noted word
+v01	5	[PLAIN:?fizmit9]		l	very uncertain abbreviation
+v01	6	[PLAIN:vt]		m	
+v01	7	q	maiorem	l	s1/s2 overlap seam; gloss position approximate
+v01	8	[PLAIN:vt]		l	
+v01	9	[PLAIN:cito]		m	
+v01	10	[PLAIN:?faciamus]	infauorem?	l	uncertain reading; gloss reading uncertain
+v01	11	T		l	
+v01	12	6		m	
+v01	13	V		m	
+v01	14	Y		l	
+v01	15	U		m	
+v01	16	q		m	
+v01	17	T		l	
+v02	1	q		m	
+v02	2	V		m	
+v02	3	+		m	
+v02	4	6		m	
+v02	5	D	m tota?	l	gloss reading uncertain
+v02	6	g		l	
+v02	7	q		m	
+v02	8	P		m	
+v02	9	L		m	
+v02	10	Y		l	
+v02	11	U		m	
+v02	12	3		m	
+v02	13	q		m	
+v02	14	T		l	s1/s2 overlap seam
+v02	15	q		l	
+v02	16	Y	infauorem?	l	s1/s2 overlap seam; gloss reading uncertain
+v02	17	6		m	
+v02	18	L		m	
+v02	19	V		m	
+v02	20	Y		l	
+v02	21	U		m	
+v02	22	q	germanie	l	gloss position approximate
+v02	23	D		l	
+v02	24	V		m	
+v02	25	U		m	
+v02	26	3		m	
+v02	27	6		m	
+v02	28	cc		m	
+v02	29	Y		l	
+v02	30	Y		l	
+v03	1	q		l	s1/s2 overlap seam
+v03	2	D		l	
+v03	3	K	marchio luneburg	l	star+box; gloss position approximate, matches manifest place names
+v03	4	[PLAIN:quod]		l	
+v03	5	[PLAIN:fit]		m	
+v03	6	V		m	
+v03	7	U		m	
+v03	8	Po		l	
+v03	9	Y		l	
+v03	10	Po		l	
+v03	11	6		m	
+v03	12	+		m	
+v03	13	q		l	s1/s2 overlap seam
+v03	14	Y		l	
+v03	15	D		l	
+v03	16	6		m	
+v03	17	U		m	
+v03	18	V		m	
+v03	19	6		m	
+v03	20	g		l	
+v03	21	O		l	
+v03	22	[PLAIN:sed]		m	
+v03	23	[PLAIN:oportet]		m	matches manifest's cited plain phrase "oportet omnino"
+v04	1	[PLAIN:omnino]		m	
+v04	2	[PLAIN:vt]		m	
+v04	3	F		m	
+v04	4	O		m	
+v04	5	[PLAIN:omnino]		m	
+v04	6	[PLAIN:consulat]		l	
+v04	7	[PLAIN:vt]		l	s1/s2 overlap seam
+v04	8	[PLAIN:aliquis]		l	
+v04	9	[PLAIN:credat]		m	
+v04	10	[PLAIN:nobis]	pensionem	l	gloss position approximate
+v04	11	[PLAIN:necesse]		m	
+v04	12	[PLAIN:et]		m	
+v04	13	[PLAIN:consulat]		l	
+v05	1	[PLAIN:videt]		m	
+v05	2	[PLAIN:vt]		m	
+v05	3	[PLAIN:hijs]		m	
+v05	4	[PLAIN:qui]		m	
+v05	5	[PLAIN:non]		m	
+v05	6	[PLAIN:habent]		m	
+v05	7	6		m	
+v05	8	K		l	s1/s2 overlap seam; star+box
+v05	9	Y		l	
+v05	10	q		m	
+v05	11	U		m	
+v05	12	P		m	
+v05	13	V		m	
+v05	14	Y	marchionis	l	gloss position approximate
+v05	15	U		m	
+v05	16	q		m	
+v05	17	D		l	
+v05	18	g		l	
+v05	19	V		m	
+v05	20	Y		l	
+v06	1	V	promittatur	l	gloss position approximate
+v06	2	P		m	
+v06	3	Y		l	
+v06	4	U		m	
+v06	5	3		m	
+v06	6	D		l	
+v06	7	V		m	
+v06	8	Po	gallum	l	gloss position approximate
+v06	9	Po		l	
+v06	10	6		m	
+v06	11	Po		l	s1/s2 overlap seam
+v06	12	cc		l	
+v06	13	Y		l	
+v06	14	U		m	
+v06	15	g		l	
+v06	16	3	marchioni?	l	gloss position approximate
+v06	17	[PLAIN:et]		m	
+v06	18	[PLAIN:videt]		m	
+v06	19	F		m	
+v06	20	[PLAIN:consuluit]		l	
+v06	21	[PLAIN:vt]		m	
+v07	1	[PLAIN:?comitem]		l	very uncertain
+v07	2	[PLAIN:?nobis]		l	uncertain
+v07	3	6		m	
+v07	4	+		m	
+v07	5	6		m	
+v07	6	q		m	
+v07	7	q		m	
+v07	8	cc		m	
+v07	9	D	marchioni	l	gloss position approximate
+v07	10	3		m	
+v07	11	K		l	s1/s2 overlap seam; star+box
+v07	12	[PLAIN:non]		m	
+v07	13	[PLAIN:mittat]		m	
+v07	14	[PLAIN:?proprie]		l	uncertain
+v07	15	[PLAIN:?postpositis]		l	very uncertain
+v07	16	6		l	
+v07	17	7		l	
+v07	18	[PLAIN:no]		l	word likely continues past crop edge
+v08	1	[PLAIN:?hijs]		l	uncertain
+v08	2	[PLAIN:?struck]		l	struck-through word, illegible
+v08	3	[PLAIN:nobis]		m	
+v08	4	[PLAIN:auctoritate]		m	
+v08	5	[PLAIN:det]	principibus	l	gloss position approximate, matches manifest-noted word
+v08	6	[PLAIN:priuatis]		l	s1/s2 overlap seam, uncertain reading
+v08	7	Y		l	
+v08	8	Y	inter	l	gloss position approximate
+v08	9	V		m	
+v08	10	U		m	
+v08	11	L	eos	l	gloss position approximate
+v08	12	V		m	
+v08	13	Y		l	
+v08	14	V		m	
+v08	15	7		l	
+v09	1	P		m	
+v09	2	g	facturam?	l	gloss reading very uncertain
+v09	3	D		l	
+v09	4	[PLAIN:?promittendi]		l	uncertain
+v09	5	[PLAIN:?donec]	fies?	l	uncertain reading; gloss reading uncertain
+v09	6	[PLAIN:quod]		l	
+v09	7	3		l	s1/s2 overlap seam
+v09	8	q		l	
+v09	9	T		l	
+v09	10	cc		m	
+v09	11	P		m	
+v09	12	g		l	
+v09	13	V	eremus?	l	gloss reading very uncertain
+v09	14	U		m	
+v09	15	Po		l	
+v09	16	q	marchionis	l	gloss position approximate
+v09	17	Y		l	
+v09	18	q		m	
+v09	19	Y		l	
+v09	20	P		m	
+v10	1	3		l	s1/s2 overlap seam
+v10	2	6		l	
+v10	3	L		m	
+v10	4	P		m	
+v10	5	cc		m	
+v10	6	D		l	
+v10	7	P		m	
+v10	8	V		m	
+v10	9	Po		l	
+v10	10	[PLAIN:?ad]		l	very uncertain
+v10	11	[PLAIN:?tempus]	rhemus?	l	uncertain reading; gloss reading uncertain
+v10	12	P	marchionis	l	gloss position approximate; s1/s2 overlap seam
+v10	13	g		l	
+v10	14	V		m	
+v10	15	U		m	
+v10	16	+		m	
+v10	17	Y		l	
+v10	18	q		m	
+v10	19	T		l	
+v10	20	V		m	
+v10	21	6		m	
+v11	1	P		l	s1/s2 overlap seam
+v11	2	cc		l	
+v11	3	Y		l	
+v11	4	[PLAIN:deinde]		m	
+v11	5	K		m	star+box shape
+v11	6	[PLAIN:poterit]		m	
+v11	7	[PLAIN:mittere]		l	s1/s2 overlap seam
+v11	8	[PLAIN:ad]		m	
+v11	9	[PLAIN:?placitum]		l	uncertain
+v11	10	[PLAIN:?eius]		l	uncertain
+v11	11	[PLAIN:si]		m	
+v11	12	[PLAIN:pars]		m	
+v11	13	[PLAIN:?aduersa]		l	uncertain, word cut at crop right edge
+# Pass A summary (Sonnet, 23 September 2026)
+# rows: 815 (lines r02-r30, v01-v11); cipher-symbol tokens: 677; [PLAIN:...] tokens: 138; rows with a non-empty gloss: 122
+# Legend additions (new codes not in legend.jpg):
+#   ?BLOT - ink blot/smudge fully obscures the symbol (used r08, r14, r29); not a real code, just "illegible here"
+# No other new symbol shapes were seen beyond the legend; all cipher tokens were mapped to one of L q R 7 P Po V 6 U Y 4 T cc D g + K 3 O F II.
+# Known systematic ambiguities recorded throughout (conf=l, noted per row rather than repeated here in full):
+#   - 4 vs Y (both a stem/hook numeral-4-like shape) are frequently confused; many rows default to Y with a "could be 4" note or vice versa.
+#   - P vs Po (plain pi vs pi-with-tick) are hard to tell apart at this resolution; many Po readings are low-confidence P/Po calls.
+#   - T vs D vs Po (small stem+loop+tick shapes) are mutually confusable; picked one code per occurrence, flagged low confidence.
+#   - K (star/asterisk joined by long stroke to small box) is distinctive and was read with medium/high confidence wherever it appears (r03, r11 x2, r24, r26, r27, r29, r30, v05, v07, v11).
+# Gloss-to-line attribution: the crops show generous vertical overlap, so the same faint interlinear gloss word sometimes
+# appears near the bottom of one crop and again near the top of the next crop down. Per the brief's rule (gloss sits
+# between the line above and the line being transcribed; ignore faint writing below the line), gloss words were assigned
+# to the line whose own crop places them in the correct band -- but attribution between two adjacent lines is not always
+# certain, and a few glosses that recur verbatim across consecutive lines (e.g. "mekleburg" near r07/r09, "marchion(is/e)"
+# repeatedly near r06-r10 and v05-v10, "fedus"/"foedus" repeatedly, "germanie"/"germani" near r12/v02) may belong to the
+# other of the two lines rather than the one recorded; conf is marked l wherever this applies. All gloss-to-token
+# horizontal alignment within a line is approximate (based on visual proximity along the line, not pixel measurement).
+# Hard-to-read crops (dense, low legibility, or ink damage): r13 (very dense symbol run, s1/s2), r17 (dense, several ambiguous
+# shapes), r19 (dense unclear cluster), r22 (dense, long run of P/Po/Y), r25 (faded ink toward crop edge), r08/r14/r29
+# (ink blots obscuring one symbol each), r07/r20/r22/r25/r26/r28/v07/v09/v10/v11 (plain-Latin cursive words genuinely
+# hard to read, several tagged [PLAIN:?word] with low confidence). r00/r01 (address line) and v12+ (closing plain lines
+# and the date) were out of scope for this brief and not transcribed.
