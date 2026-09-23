@@ -27,6 +27,10 @@ ABOVE, BELOW = 175, 85
 LO, HI, GAMMA = 90, 240, 1.4
 SEGS = {"r": [(380, 2250), (1950, 3850)], "v": [(300, 2250), (1950, 3950)]}
 SRC = {"r": "img/c63_full.jpg", "v": "img/c64_full.jpg"}
+# Right-half centres (segment 2), measured 23 Sept 2026 after the first cut: the lines slope down to the
+# right by up to 90 px, and the first cut (one centre per line, used by passes A and B; git f1fe9b1) clipped
+# the right half of several recto lines. None = same as the left centre.
+RIGHT = {'r': [None, None, 1258, 1471, 1597, 1737, 1863, 2033, 2158, 2307, 2448, 2587, 2720, 2868, 2998, 3147, 3312, 3459, 3588, 3724, 3845, 3940, 4054, 4181, 4315, 4452, 4587, 4695, 4790, 4905, 5035], 'v': [None, 779, 914, 1031, 1158, 1262, 1381, 1480, 1602, 1715, 1856, 1997]}
 CENTRES = {
     "r": [840, 1105, 1252, 1425, 1560, 1700, 1830, 1996, 2120, 2250, 2378, 2515, 2650, 2767, 2918, 3050,
           3175, 3330, 3486, 3612, 3755, 3900, 4030, 4140, 4258, 4387, 4535, 4644, 4767, 4893, 5005],
@@ -52,7 +56,8 @@ def main():
             if y is None:
                 continue
             for k, (x0, x1) in enumerate(SEGS[page], 1):
-                box = (x0, max(0, y - ABOVE), x1, min(im.height, y + BELOW))
+                yc = RIGHT[page][n] if k == 2 and RIGHT[page][n] else y
+                box = (x0, max(0, yc - ABOVE), x1, min(im.height, yc + BELOW))
                 name = f"{page}{n:02d}_s{k}.jpg"
                 im.crop(box).save(os.path.join(OUT, name), quality=QUALITY)
                 man.append({"crop": name, "source": SRC[page], "box": box})

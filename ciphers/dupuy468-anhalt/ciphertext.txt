@@ -1,0 +1,57 @@
+# BnF Dupuy 468 f.28r-v (Gallica btv1b10035959t canvases 63-64), Ernest and Joachim of Anhalt to Francis I.
+# Reconciled transcription, 23 September 2026 (see reconciliation.md). One manuscript line per row:
+#   line <TAB> tokens <TAB> glosses <TAB> note
+# tokens: symbol codes (legend: images/crops/legend.jpg and reconciliation.md) or [PLAIN:word] for a word written
+# in clear by the main hand. glosses: word@i-j = the later hand's interlinear word written over tokens i..j of this
+# line (1-based, counting [PLAIN] tokens); alignment is by eye and approximate at the edges of a word.
+# The cipher dots between symbols are not tokens; the scribe's slashes (r06) are not tokens.
+# Canvas 65 (subscription 'humillimi servitores / Ernestus dux etc. / Joachimus etc.') is not transcribed here.
+r00	[PLAIN:Amicissime] [PLAIN:potentissime] [PLAIN:ac] [PLAIN:christianissime] [PLAIN:rex] [PLAIN:ac] [PLAIN:domine] [PLAIN:domine] [PLAIN:obseruandissime]		address line, plain; transcribed by the reconciler from the crop
+r01	[PLAIN:Post] [PLAIN:humilimam] [PLAIN:atque] [PLAIN:humilimam] [PLAIN:commendationem] [PLAIN:maiestatem] [PLAIN:vestram] [PLAIN:certiorem] [PLAIN:reddi-]		plain; abbreviations expanded (Mtem vram) by the reconciler
+r02	[PLAIN:mus] [PLAIN:nos] [PLAIN:ambos] [PLAIN:saluos] [PLAIN:ac] [PLAIN:fortunatos] [PLAIN:venisse] V U Y 4 V T cc D g	in@8-9 oppidum@10-15
+r03	L q R 7 q P P q Po V 7 V q R 6 U Po P V D cc 9 HHH SX F	cerbes@1-6 et@8-9 ibi@10-12 erant@13-17 simul@18-22 ma?ch??@23 saxo@24 march@25	P at 7 has a ';' after it; HHH = bar with three verticals (new); SX = looped sign like 'd'+'p' ligature (new)
+r04	O [PLAIN:ambos] PW q Po D cc 9 Po V 6 9 V V Y~ q + Y 3 V 9 V cc P PW O	luneburg@1 mekleburgen@3 et@4-5 multi@6-10 alij@11-14 t@15 ego@16-18 filius@19-24 dux@25 de_lune@26	Y~ = Y with a tilde over it; token 25 is a bar-pi standing alone
+r05	[PLAIN:tractatum] [PLAIN:cum] [PLAIN:patre] [PLAIN:meo] [PLAIN:ad] [PLAIN:patrem] [PLAIN:et] q + Y V Y L Π V U cc Po	ego@8-10 joachim@11-16 ut@17-18	token 12 Y has a curled tail; Π = pi without foot or tick (h)
+r06	4 R2 Y 4 Y P cc V F L Y U D V P P D Y U q D D q 6 D	proposui@1-8 marchio@9 commissionem@10-21 meam@22-25	slashes before and after F; U at 12 has a tail
+r07	[PLAIN:In] [PLAIN:presentia] O [PLAIN:vnius] [PLAIN:de] PW [PLAIN:et] [PLAIN:consortij] [PLAIN:mei] [PLAIN:quia] F [PLAIN:hic] [PLAIN:placuit]	de_luneburg@3 mekle@6 marchion@11
+r08	[PLAIN:conclusum] [PLAIN:hic] [PLAIN:est] F L cc D 6 cc II V 9 V Y O ?BLOT q Po	marchio@4 cum@5-7 auxilio@8-14 de_luneborg@15 et@17-18
+r09	PW [PLAIN:faciant] [PLAIN:totis] [PLAIN:viribus] [PLAIN:ut] 3 q T cc P g L Y U L 9 cc T 6 Po	mekleburg@1 fedus@6-10 concludatur@12-20
+r10	cc R o g [PLAIN:cum] [PLAIN:tot] [PLAIN:sint] [PLAIN:possibile] [PLAIN:est] [PLAIN:per] [PLAIN:ipsos] [PLAIN:omnibus] [PLAIN:melius] [PLAIN:et]	concludatur@1-2
+r11	[PLAIN:utiliter] [PLAIN:pro] K [PLAIN:videtur] [PLAIN:ut] [PLAIN:primo] [PLAIN:de] K [PLAIN:nulla] [PLAIN:fiat] [PLAIN:mencio] [PLAIN:sed]	chrmo@3 chro@8
+r12	[PLAIN:inter] q Y P q Po Z cc V V U Po q R + q R D 6 U V q 4 R	eos@2-4 et@5-6 qui@7-9 inter@10-14 germanie@15-22 principes@23-24
+r13	V U L V 4 q P 6 Po Po R 6 Π V 4 Y P P cc U Po 3 V 6 Po g	principes@1-7 attrahi@8-14 possunt@15-21 fiat@22-25	token 16 corrected q->Y on the zoom (reconciliation)
+r14	3 q T cc P ?BLOT q Po cc U cc P 6 R Po V L cc 9 cc Po V U 4	fedus@1-5 et@7-8 unus@9-12 articulus@13-21 imponetur@22-24	token 21 read Po (tick), articulus wants s
+r15	Y U q Po cc R cc Po U cc 9 9 cc P 6 9 V cc P V U V P	imponetur@1-6 ut@7-8 nullus@9-14 alius@15-19 in_istud@20-23
+r16	Po cc T 3 q T cc P 6 L L q 4 Po 6 R q Po cc R U V P V	in_istud@1-3 fedus@4-8 acceptaretur@9-20 nisi@21-24
+r17	D 6 V Y R q 4 6 R Po q L Y U 3 q T q R 6 Po Y R cc D L Y U	maiore@1-6 parte@7-11 confederatorum@12-25 consentiente@26-28
+r18	P q U P V q U Po q q Po Z cc q D L cc D Z cc q D 6 V Y	consentiente@1-9 et@10-11 quem@12-15 nunq@16-18 maior@22-25	token 4 is the P-shape where t is expected; tokens 12-25 read quemcumque maior (gloss quem / nunq? / maior)
+r19	R 4 6 R P 6 T D V Po Po q R q Po [PLAIN:aut] [PLAIN:quoniam] ß L Y U P q U Po	maior@1 pars@2-5 admitteret@6-15 consentiret@19-25	ß = B-shaped mark as in r10-r11 'ß ppß' (plain abbreviation?), coded as a token
+r20	V R q Po cc Po D V U Y R 4 6 R P 6 T D V Po Po q R q	consentiret@1-4 ut@5-6 minor@7-11 pars@12-15 admittere@16-24	token 4 Po heavily inked
+r21	q Po L Y U P q U Po V R q Po q U q R q Po cc R [PLAIN:Deinde] [PLAIN:potest]	et@1-2 consentire@3-12 teneretur@13-21
+r22	[PLAIN:palatinus] Po R 6 L Po 6 R V L cc D Π V P Z cc V U Y U [PLAIN:dum]	tractari@2-9 cum@10-12 his@13-15 qui@16-18 non@19-21
+r23	[PLAIN:habent] [PLAIN:speciale] 3 q T cc P 6 cc Po [PLAIN:singulare] 6 D V L V L V 6 D L cc	fedus@3-7 aut@8-10 amicitiam@12-20 cum@21-22
+r24	D K cc Po P 4 q L V 6 9 q 3 q T cc P 3 V 6 Po [PLAIN:aut] [PLAIN:amicitia]	cum@1 chrmo@2 ut@3-4 speciale@5-12 fedus@13-17 fiat@18-21
+r25	[PLAIN:a] [PLAIN:tandem] [PLAIN:ubi] P q L cc R cc D P V Po g [PLAIN:quod] 9 Y U + q D 6 V Y	securum@4-10 sit@11-13 longe@16-20 maior@21-24
+r26	R 4 6 R P [PLAIN:erit] [PLAIN:et] [PLAIN:conficiet] 4 R Y K g [PLAIN:tunc] [PLAIN:optimum] [PLAIN:erit] [PLAIN:ut]	maior@1 pars@2-5 pro@9-11 chrmo@12
+r27	K Π Y L 3 q T cc P 4 q Po 6 Po cc q 9 9 q V U V R q	chrmus@1 hoc@2-4 fedus@5-9 petat@10-14 velle@15-19 inire@20-24
+r28	[PLAIN:hoc] [PLAIN:modo] [PLAIN:etiam] [PLAIN:si] [PLAIN:aliquem] [PLAIN:noluissent] q P P q V U 3 q T q R q	esse@7-10 in@11-12 federe@13-18
+r29	L cc ?BLOT K [PLAIN:hoc] [PLAIN:modo] 6 P Po R V L Po V q R cc U Po q P P	rum@1-3 chrmo@4 astricti@7-14 erunt@15-19 esse@20-22
+r30	q L Y U 3 q T q R 6 Po Y R q P q P K [PLAIN:vri] [PLAIN:prudenti] [PLAIN:pauca]	esse@1 confederatores@2-15 chrmi@18	token 17 bar-pi P where 'et' (Po) is expected
+v01	[PLAIN:Nos] [PLAIN:omnino] [PLAIN:speramus] [PLAIN:quod] [PLAIN:firmiter] [PLAIN:ut] [PLAIN:cito] [PLAIN:faciemus] D 6 V Y R q D	maiorem@9-15
+v02	9 V + 6 D g q Po L Y U 3 q T q R 6 L V Y U q D V U 3 6 cc Y R	ligam@1-5 et@7-8 confederationem@9-23 infauorem@24-30
+v03	q D K [PLAIN:quod] [PLAIN:sit] V U Po Y Po 6 + q R D 6 U V 6 g o [PLAIN:sed] [PLAIN:oportet]	infauorem@1-2 chrmi@3 in@6-7 tota@8-11 germania@12-19	o = small plain circle (not theta)
+v04	[PLAIN:omnino] [PLAIN:ut] F O [PLAIN:omnino] [PLAIN:consultum] [PLAIN:ut] [PLAIN:aliquos] [PLAIN:etiam] [PLAIN:nobis] [PLAIN:necesse] [PLAIN:et] [PLAIN:consultum]	marchio@3 luneburg@4
+v05	[PLAIN:videtur] [PLAIN:ut] [PLAIN:huius] [PLAIN:qui] [PLAIN:non] [PLAIN:habent] 6 K 4 q U P V Y U q D o g V 4 P	chr@8 pensionem@9-17 ipsis@20-22
+v06	V P 4 R Y D V Po Po 6 Po cc R g Z [PLAIN:et] [PLAIN:videtur] F [PLAIN:consultum] [PLAIN:ut]	ipsis@1-2 promittatur@3-13 marchioni@18	Z small, after g
+v07	[PLAIN:consortii] [PLAIN:nobis] + 6 9 9 cc D g Z K [PLAIN:non] [PLAIN:mittat] [PLAIN:principaliter] [PLAIN:pro] [PLAIN:posse] [PLAIN:sed] [PLAIN:no-]	gallum@3-8 chrus@11
+v08	[PLAIN:bis] [PLAIN:struck] [PLAIN:duobus] [PLAIN:autoritate] [PLAIN:det] [PLAIN:privatis] 4 R2 V U L V 4 V 7 cc	principibus@7-16	R2 = curled r-sign (also r06 token 2)
+v09	P g [PLAIN:promittendi] [PLAIN:donec] [PLAIN:quando] 3 q T cc P g V U Po q R q Y P	principibus@1 fedus@6-10 inter@12-16 nos@17-19	gloss 'nos' over q Y P (cipher reads eos)
+v10	3 6 L Po cc D P V Po [PLAIN:ac] [PLAIN:tempus] [PLAIN:erit] [PLAIN:ut] K V U + R q T V 6	factum@1-6 sit@7-9 chrmus@14 ingrediatur@15-22
+v11	Po cc R [PLAIN:deinde] K [PLAIN:poterit] [PLAIN:mittere] [PLAIN:ad] [PLAIN:placitum] [PLAIN:eius] [PLAIN:ita] [PLAIN:si] [PLAIN:pars] [PLAIN:adversa]	ingrediatur@1-3 chrmus@5
+v12	[PLAIN:de] [PLAIN:ista] [PLAIN:materia] [PLAIN:intelligeret] [PLAIN:aliquid] [PLAIN:impediret] [PLAIN:totis] [PLAIN:viribus] [PLAIN:ne] [PLAIN:perficeretur]		plain; reconciler reading from the 1800 px view and the full image, abbreviations expanded
+v13	[PLAIN:Nos] [PLAIN:minore] [PLAIN:suspicione] [PLAIN:faciemus] [PLAIN:et] [PLAIN:citius] [PLAIN:perficiemus] [PLAIN:quod] [PLAIN:de] [PLAIN:quibus] [PLAIN:ne] [PLAIN:longis]		plain; reconciler reading from the 1800 px view and the full image, abbreviations expanded
+v14	[PLAIN:litteris] [PLAIN:maiestati] [PLAIN:vestre] [PLAIN:fastidio] [PLAIN:simus] [PLAIN:maiestas] [PLAIN:vestra] [PLAIN:intelliget] [PLAIN:clare] [PLAIN:ex] [PLAIN:litteris]		plain; reconciler reading from the 1800 px view and the full image, abbreviations expanded
+v15	[PLAIN:quas] [PLAIN:ego] [PLAIN:Joachimus] [PLAIN:ad] [PLAIN:dominum] [PLAIN:Cancellarium] [PLAIN:et] [PLAIN:dominum] [PLAIN:admiraldum] [PLAIN:scripsi] [PLAIN:qui] [PLAIN:haud]		plain; reconciler reading from the 1800 px view and the full image, abbreviations expanded
+v16	[PLAIN:dubie] [PLAIN:maiestati] [PLAIN:vestre] [PLAIN:omnia] [PLAIN:significabunt] [PLAIN:restat] [PLAIN:nos] [PLAIN:maiestati] [PLAIN:vestre] [PLAIN:quam] [PLAIN:humilime] [PLAIN:atque]		plain; reconciler reading from the 1800 px view and the full image, abbreviations expanded
+v17	[PLAIN:humilime] [PLAIN:commendemus] [PLAIN:quam] [PLAIN:optimus] [PLAIN:maximus] [PLAIN:felicissime] [PLAIN:custodiat]		plain; reconciler reading from the 1800 px view and the full image, abbreviations expanded
+v18	[PLAIN:Datum] [PLAIN:in] [PLAIN:vigilia] [PLAIN:sancti] [PLAIN:Pauli] [PLAIN:in] [PLAIN:mane] [PLAIN:hora] [PLAIN:quinta]		plain; reconciler reading from the 1800 px view and the full image, abbreviations expanded
