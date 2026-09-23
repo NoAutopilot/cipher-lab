@@ -254,17 +254,17 @@
    "year": "17th c.",
    "ref": "BL Add MS 4956 (66 ff.); cross-ref Sloane MS 4019 f.79",
    "folder": "ciphers/courten-diary",
-   "stage": 2,
-   "state": "you",
-   "holder": "You",
-   "next": "JSTOR pass (queries in NOTES.md) in the next session with credentials, then the BL Imaging Services quote per REQUEST.md: Add MS 4956 in full plus Sloane MS 4019 f.79. ASKS row 13.",
+   "stage": 5,
+   "state": "waiting",
+   "holder": "Archive",
+   "next": "BL to confirm and photograph the test batch (f.66 key, ff.1-3, Sloane 4019 f.79). Then apply the keys to the sample; order the rest if it reads.",
    "note": "23 Sept 2026: two keys catalogued (Madden's at f.66, an 18th-century one at Sloane 4019 f.79), no published reading; the herbarium-label cipher is a different, partly decoded code.",
    "kind": "recovery",
    "wait": {
-    "on": "You: the BL quote request (ASKS row 13), after a JSTOR pass",
-    "since": "23 Sept 2026, 15:53 UTC",
-    "expected": "BL quotes take one to three weeks",
-    "unblock": "Quote accepted, images arrive, keys applied"
+    "on": "British Library Digitisation Services, order submitted 23 Sept 2026",
+    "since": "23 Sept 2026",
+    "expected": "Manuscripts need a preservation check; allow several weeks",
+    "unblock": "Images arrive by digital transfer; two transcription passes; key applied"
    }
   },
   {
