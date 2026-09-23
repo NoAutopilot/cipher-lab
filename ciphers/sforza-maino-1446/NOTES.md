@@ -1,6 +1,7 @@
 closed-negative
 
 (Conditional on Bourdeau's draft transcriptions: solver campaign of 23 Sept 2026, at the end of this file. The check-solved verdict of the same date, below, was open / Stage 2.)
+(Image gate of 23 Sept 2026, end of this file: BnF italien 1583 is not on Gallica, so the condition stands.)
 
 # Sforza reply to Zorzo (Giorgio) del Maino, 4 May 1446 (BnF italien 1583 f.68, DECODE R7898) and Vincenzo
 # Amidani to Francesco Sforza, Milan, 4 May 1446 (BnF italien 1583 f.70, imaged inside DECODE R7899)
@@ -305,7 +306,7 @@ exits 1 if it is stale.
 
 ## What a next solver needs
 
-1. A sign-exact transcription from a colour image of BnF italien 1583 ff.68 and 70 (Gallica or a BnF order),
+1. [23 Sept 2026: not on Gallica, see "Image gate" below; a BnF order is the only route.] A sign-exact transcription from a colour image of BnF italien 1583 ff.68 and 70 (Gallica or a BnF order),
    with the diacritic variants (dotted c, d with apostrophe, barred g, the bars on b) kept apart and the two
    hands compared sign by sign. Then rerun `run_target.sh` unchanged; the controls already stand.
 2. The key: ASMi Sforzesco cart. 1597 at full size, Cerioni, *La diplomazia sforzesca* (1970) vol. 2, and the
@@ -313,3 +314,34 @@ exits 1 if it is stale.
 3. Mazzatinti lists six more Amidani letters "in cifre" in the same volumes (check-solved notes above) and
    DECODE R7899-R7915 hold seventeen more 1446 cipher records from ital. 1583: more text in the same hand or
    key would double the length and may be the practical route. (Suggestion only; not started here.)
+
+## Image gate (23 September 2026)
+
+**Result: BnF italien 1583 is not digitised on Gallica.** Nothing was fetched and nothing was transcribed or rerun. The target
+stays **closed-negative, conditional on Bourdeau's draft transcriptions** (rule 2).
+
+Queries, all on 23 Sept 2026, 19:32-19:35 UTC, descriptive User-Agent, one request at a time:
+
+1. Gallica SRU `dc.title all "italien 1583"`: 68 records, all coins (Desana 1583) and unrelated printed books.
+2. Gallica SRU `gallica all "Italien 1583"`: 19,065 records. The top hits include the "Archivio Sforzesco" series titles
+   (whose shared title quotes "Codd. 1583-1593") but none has source italien 1583.
+3. Gallica SRU `dc.title all "Archivio Sforzesco Documenti originali"`: 35 records, the whole series on Gallica:
+   **italien 1584 through 1615, every volume, and no italien 1583.** For example, italien 1584 is
+   ark:/12148/btv1b100373864, digitised from the microfilm ("document de substitution"), and 1585 from the original.
+4. Gallica SRU `dc.source all "italien 1583"`: 0 records.
+5. Gallica SRU `dc.title all "Sforzesco" and dc.type all "manuscrit"`: the same 35, no 1583.
+6. Gallica SRU `gallica all "italien 1583" and dc.type all "manuscrit"`: 64 records, none italien 1583.
+7. BnF Archives et manuscrits, record for italien 1583 (`archivesetmanuscrits.bnf.fr/ark:/12148/cc10584q/cd0e61`):
+   the record has no Gallica link. The only surrogate listed is a black-and-white microfilm: reading-room shelfmark
+   **MF 16151**, and **R 151450** as the matrix to cite when ordering a reproduction. The detailed description is
+   Mazzatinti, *Manoscritti italiani delle biblioteche di Francia* t. II, pp. 285-291. The record for italien 1584
+   (`.../cd0e76`), fetched as a comparison, does link its Gallica ark. So the missing link on the 1583 record means
+   the volume is not digitised; it is not a quirk of the page.
+
+DECODE (R7898 and R7899 hold Bourdeau's images) requires a login, and this brief allowed no credentials. It was not
+tried. Requests: gallica.bnf.fr 6 (SRU only; no IIIF manifest or image, since there is no ark), archivesetmanuscrits.bnf.fr 2.
+
+Suggestion only, not started: a reproduction of ff.68 and 70 ordered from the BnF under matrix R 151450 (or Gallica's
+digitisation-on-demand for italien 1583) is the one route to the image. It would go into REQUEST.md and ASKS.md if the
+orchestrator promotes it. Mazzatinti t. II pp. 285-291 has not been checked against the 1883 ASL inventory already cited.
+
