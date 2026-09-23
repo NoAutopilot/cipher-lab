@@ -308,3 +308,21 @@ be-api.us.archive.org 3 (fts), WebSearch 2. One host at a time, at least 1.6 s a
 **Postmortem (one line).** The first audit searched the right edition series but stopped one volume short, because its
 date inference (1518/19) ruled out JR II. The catalogue had already listed the translation, under its date formula,
 in 1881.
+
+## Independent outside review (23 September 2026, another model, working from REVIEW-BRIEF.md before the second audit)
+
+Corroboration of the reattribution from sources this repository had not used: NDB on Ernst the Confessor (born 1497,
+son of Henry the Middle, at Francis I's court 1518-21 in connection with the imperial election); the Codex
+diplomaticus Brandenburgensis on Joachim Maltzan (Hutten to Maltzan 13 Aug 1518; Francis to Maltzan 1 Apr 1519;
+the Brandenburg marriage project, Apr 1519; the Mecklenburg alliance, 14 May 1519); Potter's edition of Francis I's
+instructions to "Joachim de Moltzan", 23 Oct 1518, as a nobleman of the household sent with credence to German
+princes; Mignet on Moltzan's letters of 28 Feb and 12 Mar 1519 and on a Dupuy 263 item with the decipherment
+written over the cipher. The reviewer also noted that Ernst of Anhalt's son Joachim was born in 1509, which makes
+the catalogue's attribution untenable, and that "in vigilia sancti Pauli" alone does not fix the day.
+
+What the second audit settles against that review: the letter is printed in RTA JR II (1896) p.122 under the RTA
+editors' own heading naming Ernst of Lüneburg and Joachim von Moltzan, dated [1520] January 24. So the
+reattribution was made in print in 1896 and is not this project's; the date is 24 January 1520; the class is N1.
+The reviewer's two cautions stand: the gloss hand is "probably contemporary chancery", not established, until a hand
+comparison; and the regenerated line r04 applies the Mecklenburg word-sign where the gloss reads "dux", so that line
+must never be quoted without the exception (see NOTES.md and ASSIGNMENTS row 25).
