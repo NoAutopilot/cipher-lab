@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 21:16 UTC",
+ "updated": "23 September 2026, 21:23 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -329,27 +329,32 @@
    "stage": 3,
    "state": "active",
    "holder": "Worker",
-   "next": "Class gate: print check of Champollion-Figeac 1847 and Desenclos 2018 for these three letters; if unprinted, two independent transcription passes of f.28 and ff.20-21, then Raince's 1526 key tried first.",
+   "next": "Gate passed (best case N3). Crops of f.28 and f.24 being cut; then two independent transcription passes, a reconciler, and Raince's 1526 key (fr. 2984, Desenclos 2018) tried first, with a control.",
    "note": "Corrected 23 Sept 2026: invented-symbol alphabet, ~1,500 tokens across three letters in one cipher; f.20 recto tail transcribed once (86 tokens, grade M). Images free on Gallica.",
    "kind": "recovery",
    "wait": {
-    "on": "The print check",
-    "since": "23 Sept 2026, 21:16 UTC",
-    "expected": "Within the hour",
-    "unblock": "Unprinted: transcription passes start; printed: found-solved"
+    "on": "Image prep, then two transcription passes",
+    "since": "23 Sept 2026, 21:23 UTC",
+    "expected": "Tonight for the crops; passes next",
+    "unblock": "Reconciled ciphertext of ~1,500 tokens; key fit"
    }
   }
  ],
  "workers": [
   {
-   "title": "Transcription: Dupuy 452 Carpi f.20",
-   "job": "Single pass, 86 tokens; extent corrected to ~1,500 tokens in one cipher across three letters. ~$4",
+   "title": "Print Check, class gate: Dupuy 452",
+   "job": "Best case N3; unprinted; cipher unread anywhere searched. ~$1.5",
    "state": "done, archived"
   },
   {
-   "title": "Print Check: Dupuy 452 letters of Oct 1525",
-   "job": "Champollion-Figeac 1847, Desenclos 2018, Tomokiyo fr. 2984 page",
+   "title": "Image prep: Dupuy 452 f.28 and f.24 crops",
+   "job": "Full-resolution canvases once, line crops for two readers",
    "state": "running"
+  },
+  {
+   "title": "Transcription: Dupuy 452 Carpi f.20",
+   "job": "Single pass, 86 tokens; extent corrected to ~1,500 tokens in one cipher across three letters. ~$4",
+   "state": "done, archived"
   },
   {
    "title": "Transcription + key extension: Dupuy 468 Anhalt",
@@ -369,11 +374,6 @@
   {
    "title": "Scout: digitised-manuscript catalogues",
    "job": "11 BnF items with cipher content, images on Gallica, outside both solver projects. ~$4",
-   "state": "done, archived"
-  },
-  {
-   "title": "Scout: scoring pass N20-N40",
-   "job": "335 examined, 21 scored, none digitised. ~$3",
    "state": "done, archived"
   }
  ],
@@ -436,6 +436,10 @@
   }
  ],
  "log": [
+  {
+   "when": "23 Sept, 21:23",
+   "what": "Dupuy 452 passes the class gate at best case N3: three unprinted letters of Oct 1525 in one embassy cipher, images free on Gallica, Raince's 1526 key as the lead. Crops being cut for two independent transcription passes."
+  },
   {
    "when": "23 Sept, 21:16",
    "what": "Dupuy 452 turns out to be one embassy cipher across three letters of Oct 1525, about 1,500 tokens, images free; Raince's 1526 key is the lead. Print check first (class gate), then transcription."

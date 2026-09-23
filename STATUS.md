@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 23 September 2026, 21:16 UTC
+Last updated: 23 September 2026, 21:23 UTC
 
 > **Ryan is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -71,7 +71,7 @@ the browser tool.
 | DECODE cached catalogue, neighbour-record pairs | 202 pairs | 193 named by Bourdeau by id or volume; D1 solved | 0 | D8 only | 0 | stopped: needs the full catalogue behind the login |
 | GitHub-held ciphertexts (Bourdeau not-read) | 12 | 0 | 0 | 0 | 1 attacked, clean negative | stopped: his tooling already failed there |
 | TNA Discovery, BL, Gallica keyword sweep (N rows) | 36 scored, 15 swept | 6 | 2 | 7 | 0 | stopped by rule: 13 stage-2 targets wait on the person |
-| Digitised BnF manuscripts (M rows) | 11 scored, 7 swept | 3 | 2 | 0 | 3 (M4 unpinned, M6, M7) | open: M8-M11 unswept; two transcriptions running |
+| Digitised BnF manuscripts (M rows) | 11 scored, 7 swept | 3 | 2 | 0 | 3 (M4 unpinned, M6, M7) | open: M6 (Dupuy 452) passed the class gate at N3, ~1,500 tokens; M7 in transcription; M8-M11 unswept |
 | Printed ciphertext detector (IA full text) | 1 volume, control only | n/a | n/a | n/a | n/a | test running (RETRO proposal 5) |
 
 **Next session on this account, first actions (written 18:02 UTC, 23 Sept 2026).** (1) Presence test of the seven
