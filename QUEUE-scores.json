@@ -219,29 +219,6 @@
    "kind": "recovery"
   },
   {
-   "name": "Charles I (Oxford) to Prince Rupert, 29 April 1645 (BL Add MS 18983 f.14, DECODE R4921)",
-   "language_fit": 3,
-   "material": 1,
-   "key_lead": 3,
-   "size": 2,
-   "competition": 1,
-   "weight": 2,
-   "next_step": "cryptanalysis",
-   "next_step_detail": "Check Warburton, Memoirs of Prince Rupert vol. 3 (1849) and CSP Domestic 1644-45 for a deciphered print of the 29 April 1645 letter before requesting DECODE R4921 and its attached key. Search-print checked 20 Sept 2026: NOT FOUND. Full text of Warburton, Memoirs of Prince Rupert vol. 3 (IA memoirsofprincer03warbuoft) grepped for late-April 1645: the run around this date is Digby-to-Rupert (~25 Apr), Digby-to-Rupert (27 Apr), Nicholas-to-Rupert (30 Apr, with the King's own postscript \"C.R.\"), Digby-to-Rupert (30 Apr, again with a King's postscript) \u2014 no letter dated 28 or 29 April, and no letter under the King's own signature, appears in that stretch. CSP Domestic 1644-45 (IA sim_great-britain-public-record...1644-1645) grepped for \"Rupert\"/\"cipher\"/late-April headers: has committee/administrative entries but no King-to-Rupert letter (it calendars TNA SP, not the BL Add MS 18983 Rupert transcripts this item is from). Both named checks exhausted with no print located; next step is DECODE R4921 and its attached key, as originally planned.",
-   "rationale": "DECODE R4921 has a key document attached and the record page is public, but the images and key are behind the DECODE login and BL Add MS 18983 is not digitised; no transcription exists anywhere, so material is login-only. The BL note says 'largely in (undeciphered) cipher', one page in the King's hand six weeks before Naseby, so a single leaf is marginal in size unless the attached key fits. Neither solver repository has opened it (Bourdeau catalogue 'counted (open target)' 17 Sept 2026, Aymeloglu decode-ranked score 6) and nobody has checked Warburton, which prints much of Rupert's 1645 correspondence with deciphers. The Folger X.c.125 Digby letter of 27 April 1645 with identified numbers (241 = the King, 354 = Rupert) is a second key lead from the same court. Re-scored 20 Sept 2026: DECODE R4921 has a key document attached (fit unconfirmed) plus a second key lead from the Folger Digby letter of the same court; recovery, not edition, since nobody has applied either. unread=2. A 20 Sept 2026 search-print check for a printed decipher (Warburton vol.3, CSP Domestic 1644-45) found nothing; the DECODE-key route stands.",
-   "total": 34,
-   "year": "1645; 1648",
-   "language": "en",
-   "sources": [
-    "archives",
-    "aymeloglu",
-    "bourdeau"
-   ],
-   "folder": "",
-   "unread": 2,
-   "kind": "recovery"
-  },
-  {
    "name": "Letter partly in cipher relating to Gen. Monck and his movements, 1659-1660 (BL Add MS 32093 f.423, Malet collection)",
    "language_fit": 3,
    "material": 1,
@@ -273,7 +250,7 @@
    "competition": 1,
    "weight": 2,
    "next_step": "search-print",
-   "next_step_detail": "Check CSP Foreign 1588 (vols 21.4 and 22) for Cobham's Bourbourg despatches of the DECODE dates, then fetch DECODE key R8497 and R8477-R8496 images. Search-print checked 20 Sept 2026: NOT FOUND, partial (vol. 22 not yet checked). CSP Foreign Elizabeth vol.21 pt.4 (Jan-June 1588, BHO) index: \"Bourbourg\" p.567 (~30 letters), \"Cobham\" p.568 (~40 \"letters from\" entries plus \"sends cipher to Walsingham, 455, 462\"), \"Needham\" p.650 (only one entry, a paper he delivered, no letters of his own indexed). Text checked at pp.442-460: the 3 June Cobham entry gives only \"Sent the cipher by Spritwold\" \u2014 a postscript note, not a decrypted passage; the calendar gives English abstracts throughout, never reproduces ciphertext or a \"deciphered\" block, and whether the abstracts capture the 14 DECODE items' specific passages was not checked line-by-line (~40 entries, over this sweep's budget). Vol. 22 (July-Dec 1588), which likely holds the bulk of the Bourbourg talks, was not reached this sweep. Vol. 22 follow-up, 20 Sept 2026 (Google Books + HathiTrust APIs): not on Google Books (NO_PAGES); found on HathiTrust (msu.31293027027295, record 100823430, 'Full view', 596 scans) but babel.hathitrust.org still serves a Cloudflare interstitial to curl and to tools/browser_fetch.js, and no Wayback capture exists, so no page text was read. HTRC Extracted Features API (tools/htrc_ef_headwords.py) token positions: 'cobham' at 23 scans, 'bourbourg' at 8 (5 front-matter/index, 3 body), 'cipher' at 13, 'decipher' (its own token) at 5, 'needham'/'nedham' at 0 scans. Scan 62 (cipher+decipher, adjacent to Cobham's scan 61) is the strongest candidate page in the volume but is unread \u2014 a lead for a worker with HathiTrust access, not a found decipherment. NOT FOUND stands.",
+   "next_step_detail": "Check-solved 23 Sept 2026 (ciphers/harley-287-1587/NOTES.md): verdict partial, not open. Bourdeau's project already read most of this range 21-22 Sept 2026 (needham1587/R8479 97.8%; harley287/R8477+R8482-R8487 read in sense with named gaps; cobham1588/R8490+R8492+R8495+R8496 about a third read); no print source found by them or by us. Next step is finishing/verifying their existing partial key, not a fresh attempt. || Prior next_step_detail: Check CSP Foreign 1588 (vols 21.4 and 22) for Cobham's Bourbourg despatches of the DECODE dates, then fetch DECODE key R8497 and R8477-R8496 images. Search-print checked 20 Sept 2026: NOT FOUND, partial (vol. 22 not yet checked). CSP Foreign Elizabeth vol.21 pt.4 (Jan-June 1588, BHO) index: \"Bourbourg\" p.567 (~30 letters), \"Cobham\" p.568 (~40 \"letters from\" entries plus \"sends cipher to Walsingham, 455, 462\"), \"Needham\" p.650 (only one entry, a paper he delivered, no letters of his own indexed). Text checked at pp.442-460: the 3 June Cobham entry gives only \"Sent the cipher by Spritwold\" \u2014 a postscript note, not a decrypted passage; the calendar gives English abstracts throughout, never reproduces ciphertext or a \"deciphered\" block, and whether the abstracts capture the 14 DECODE items' specific passages was not checked line-by-line (~40 entries, over this sweep's budget). Vol. 22 (July-Dec 1588), which likely holds the bulk of the Bourbourg talks, was not reached this sweep. Vol. 22 follow-up, 20 Sept 2026 (Google Books + HathiTrust APIs): not on Google Books (NO_PAGES); found on HathiTrust (msu.31293027027295, record 100823430, 'Full view', 596 scans) but babel.hathitrust.org still serves a Cloudflare interstitial to curl and to tools/browser_fetch.js, and no Wayback capture exists, so no page text was read. HTRC Extracted Features API (tools/htrc_ef_headwords.py) token positions: 'cobham' at 23 scans, 'bourbourg' at 8 (5 front-matter/index, 3 body), 'cipher' at 13, 'decipher' (its own token) at 5, 'needham'/'nedham' at 0 scans. Scan 62 (cipher+decipher, adjacent to Cobham's scan 61) is the strongest candidate page in the volume but is unread \u2014 a lead for a worker with HathiTrust access, not a found decipherment. NOT FOUND stands.",
    "rationale": "Fourteen ciphertexts on 17 pages in Harley MS 287 (DECODE R8477-R8496), English, Armada-year letters of Cobham (a peace commissioner in Flanders) and Needham to Walsingham; DECODE images need a login and nothing was viewed here. Bourdeau's catalogue id 131 is class A because a key record R8497 (1590) sits in the same volume, but it is dated two years later and its fit is untested, so this is a sibling-key lead rather than a located key. The commissioners' letters of 1588 are calendared with decipherments from SP 77, so a printed reading may already exist. Enough text for a checkable reading if the key fits. Re-scored 20 Sept 2026: a key record (R8497) sits in the same volume, two years later, fit untested -- a sibling-key lead. unread=2. A 20 Sept 2026 search-print check (CSP Foreign vol.21 pt.4) found abstracts only, no ciphertext or deciphered block, and did not reach vol.22; inconclusive, does not change the key lead. Vol.22 follow-up, 20 Sept 2026: HathiTrust holds a full-view copy but is Cloudflare-blocked to every available fetch route; the HTRC EF API places a candidate cipher/decipher page next to a Cobham mention but the text is unread. Still inconclusive; does not change the key lead.",
    "total": 33,
    "year": "1588",
@@ -281,9 +258,10 @@
    "sources": [
     "bourdeau"
    ],
-   "folder": "",
+   "folder": "harley-287-1587",
    "unread": 2,
-   "kind": "recovery"
+   "kind": "recovery",
+   "status_summary": " | Check-solved 23 Sept 2026 (ciphers/harley-287-1587/NOTES.md): verdict partial, not open. Bourdeau's project already read most of this range 21-22 Sept 2026 (needham1587/R8479 97.8%; harley287/R8477+R8482-R8487 read in sense with named gaps; cobham1588/R8490+R8492+R8495+R8496 about a third read); no print source found by them or by us. Next step is finishing/verifying their existing partial key, not a fresh attempt."
   },
   {
    "name": "George Stepney to the Earl of Manchester, Vienna, 23 March 1702 (short ciphertext)",
@@ -316,7 +294,7 @@
    "competition": 0,
    "weight": 0,
    "next_step": "cryptanalysis",
-   "next_step_detail": "Score paragraph-first-word acrostics and printed-line units from the Cornell scan (archive.org cu31924022342871), the families Aymeloglu's README lists as untested.",
+   "next_step_detail": "Check-solved 23 Sept 2026 (ciphers/burgess-mysteries-1912/NOTES.md): verdict open, Stage 2 verified unsolved. Web/print/Cryptiana/Cipherbrain/Bourdeau/Aymeloglu all confirm no third message found; Aymeloglu's own negative log confirms this item's target families (paragraph-first-word acrostics, printed-line units) remain untested by them. || Prior next_step_detail: Score paragraph-first-word acrostics and printed-line units from the Cornell scan (archive.org cu31924022342871), the families Aymeloglu's README lists as untested.",
    "rationale": "Full text is free on Internet Archive and Wikisource, and the two known messages (chapter-initial and chapter-final letters) give the design family and a validated scorer. Aymeloglu's burgess-1912/README.md shows exhaustive negatives on acrostic, diagonal, every-nth and contents-page families, with the scorer rebuilt on 18 Sept 2026, so this is active work by another project (SHORTLIST Tier 1 #1). The Introduction only says 'possibly' a third message exists, and a literary puzzle has no historical weight. Re-scored 20 Sept 2026: no key or nomenclator is involved; this is a hidden-message pattern search against a validated scorer, i.e. cryptanalysis, currently being worked by a competitor (Aymeloglu). unread=3.",
    "total": 33,
    "year": "1912",
@@ -324,9 +302,10 @@
    "sources": [
     "aymeloglu"
    ],
-   "folder": "",
+   "folder": "burgess-mysteries-1912",
    "unread": 3,
-   "kind": "cryptanalysis"
+   "kind": "cryptanalysis",
+   "status_summary": " | Check-solved 23 Sept 2026 (ciphers/burgess-mysteries-1912/NOTES.md): verdict open, Stage 2 verified unsolved. Web/print/Cryptiana/Cipherbrain/Bourdeau/Aymeloglu all confirm no third message found; Aymeloglu's own negative log confirms this item's target families (paragraph-first-word acrostics, printed-line units) remain untested by them."
   },
   {
    "name": "Regent Moray to John Wood, Edinburgh, 13 July 1568 (cipher postscript, BL Add MS 32091 f.213)",
@@ -360,7 +339,7 @@
    "competition": 1,
    "weight": 1,
    "next_step": "search-print",
-   "next_step_detail": "Check CSP Scotland vol. 6 (Boyd 1910, 1581-83) on archive.org for Bowes's letters of 7 April and 31 July 1583 and whether the cipher words are printed deciphered. Search-print checked 20 Sept 2026: UNREACHABLE, not settled \u2014 vol. 6 is not on archive.org as such (advancedsearch.php found only vols 1, 2, 4, 8, 9, 13); BHO's vol.6 pages are premium content (confirmed for pp.356-434, pp.521-570) and its site search returned 403; HathiTrust's bibliographic API confirms a public-domain full-view copy exists (htid nnc2.ark:/13960/t1gh9nc18, Columbia copy) but babel.hathitrust.org is Cloudflare-blocked to curl (the known documented issue). Next step: fetch that HathiTrust htid with the browser tool per CLAUDE.md's certutil fix, rather than curl.",
+   "next_step_detail": "Check-solved 23 Sept 2026 (ciphers/bowes-walsingham-1583/NOTES.md): verdict open, Stage 2 verified unsolved. Tomokiyo's Cryptiana page states both letters explicitly 'not deciphered'; no source reports a reading; HathiTrust route to CSP Scotland vol.6 remains the only unblocked lead. || Prior next_step_detail: Check CSP Scotland vol. 6 (Boyd 1910, 1581-83) on archive.org for Bowes's letters of 7 April and 31 July 1583 and whether the cipher words are printed deciphered. Search-print checked 20 Sept 2026: UNREACHABLE, not settled \u2014 vol. 6 is not on archive.org as such (advancedsearch.php found only vols 1, 2, 4, 8, 9, 13); BHO's vol.6 pages are premium content (confirmed for pp.356-434, pp.521-570) and its site search returned 403; HathiTrust's bibliographic API confirms a public-domain full-view copy exists (htid nnc2.ark:/13960/t1gh9nc18, Columbia copy) but babel.hathitrust.org is Cloudflare-blocked to curl (the known documented issue). Next step: fetch that HathiTrust htid with the browser tool per CLAUDE.md's certutil fix, rather than curl.",
    "rationale": "Transcription only: CottonMSBowes.txt (fetched live 19 Sept 2026, HTTP 200) is Tomokiyo's numeric symbol list keyed to CottonMSBowes.png, about 101 symbols in a dozen fragments with repeated runs, and the BL Cotton images are not online since the 2023 outage; the Caligula B VIII pieces have only catalogue descriptions. The key lead is that elizabeth.htm reconstructs Bowes's own 1580 cipher from Caligula B VIII ff.290-293 (interlinear decipherment) and that Davison 1584 in the same series turned out to be printed deciphered in CSP Scotland VII (Aymeloglu, 16 Sept 2026), so the 1583 letters may likewise be in Boyd's vol. 6. Bourdeau's TARGETS.md lists it as '101 groups of name' and ranked it low; nobody has attempted it. Content is a few names in otherwise readable Scottish reports. Re-scored 20 Sept 2026: elizabeth.htm reconstructs Bowes's own 1580 cipher (Caligula B VIII, interlinear decipherment), a sibling key for the 1583 letters. unread=2. A 20 Sept 2026 search-print check for CSP Scotland vol.6 was inconclusive (not on Internet Archive, BHO paywalled, HathiTrust Cloudflare-blocked); does not change the key lead.",
    "total": 32,
    "year": "1583",
@@ -369,9 +348,10 @@
     "bourdeau",
     "tomokiyo"
    ],
-   "folder": "",
+   "folder": "bowes-walsingham-1583",
    "unread": 2,
-   "kind": "recovery"
+   "kind": "recovery",
+   "status_summary": " | Check-solved 23 Sept 2026 (ciphers/bowes-walsingham-1583/NOTES.md): verdict open, Stage 2 verified unsolved. Tomokiyo's Cryptiana page states both letters explicitly 'not deciphered'; no source reports a reading; HathiTrust route to CSP Scotland vol.6 remains the only unblocked lead."
   },
   {
    "name": "Catokwacopa advertisements, Evening Standard, 8 and 20 May 1875",
@@ -382,7 +362,7 @@
    "competition": 0,
    "weight": 1,
    "next_step": "cryptanalysis",
-   "next_step_detail": "Run a phrase-level language-model search on line 23 (48 letters) with Bourdeau's positional prior, using cyphersolver/catokwacopa/search.py (MIT).",
+   "next_step_detail": "Check-solved 23 Sept 2026 (ciphers/catokwacopa-1875/NOTES.md): verdict partial, not open. Mechanism agreed, substantial partial readings published since 2018 (Bosbach, Estes, Ernst, Krajcovic); Schmeh/Cipherbrain and Aymeloglu (SHORTLIST.md 'effectively cracked, remove') hold no unique plaintext is recoverable; no matched-control negative test run, so not closed-negative. || Prior next_step_detail: Run a phrase-level language-model search on line 23 (48 letters) with Bourdeau's positional prior, using cyphersolver/catokwacopa/search.py (MIT).",
    "rationale": "Images of both advertisements are in Schmeh's 14 Aug 2026 post and Ernst's BNA-verified transcription is in Bourdeau's ads.py. The mechanism is agreed (line i of each ad are order-preserving halves of one phrase with letters dropped), so the design counts as known, but Bourdeau's audit (15 Sept 2026) shows the omission rule lets three to twelve free letters per line make almost anything fit, and only a handful of lines are forced; Schmeh says the unique plaintext cannot be reconstructed and Aymeloglu says remove. Ernst, Krajcovic and Bourdeau were all active in Aug-Sept 2026, and the content is a private Oxford quarrel. Re-scored 20 Sept 2026: the omission mechanism is agreed but no key exists to apply; this is a plaintext-reconstruction/scoring problem, cryptanalysis. unread=3.",
    "total": 32,
    "year": "1875",
@@ -391,9 +371,10 @@
     "bourdeau",
     "web"
    ],
-   "folder": "",
+   "folder": "catokwacopa-1875",
    "unread": 3,
-   "kind": "cryptanalysis"
+   "kind": "cryptanalysis",
+   "status_summary": " | Check-solved 23 Sept 2026 (ciphers/catokwacopa-1875/NOTES.md): verdict partial, not open. Mechanism agreed, substantial partial readings published since 2018 (Bosbach, Estes, Ernst, Krajcovic); Schmeh/Cipherbrain and Aymeloglu (SHORTLIST.md 'effectively cracked, remove') hold no unique plaintext is recoverable; no matched-control negative test run, so not closed-negative."
   },
   {
    "name": "BL Harley MS 1582 cipher letters: Sir Edward Stafford 1586, N. Wotton? 1554, and unsigned (DECODE R8499-R8505)",
@@ -4348,6 +4329,10 @@
   {
    "name": "George W. Erving to Madison, Madrid, 10 Aug 1807 (Pinckney legation code, no decode on the NARA copy)",
    "reason": "found-solved: search-print check 21 Sept 2026 (ciphers/erving-1807/NOTES.md) -- Founders Online's Early Access text of The Papers of James Madison, Secretary of State Series (founders.archives.gov/documents/Madison/99-01-02-1993) prints the despatch, docketed 'In the Cypher of the Legation. No. 24 Duplicate', in full continuous plain English. QUEUE's 'no decode on the NARA copy' was true of the M31 reel 12 microfilm frames but not of the printed edition. Bourdeau's cyphersolver/erving1807/NOTES.md (18 Sept 2026) had flagged this exact check ('whether Founders prints a decode') as its own next step and had not yet run it."
+  },
+  {
+   "name": "Charles I (Oxford) to Prince Rupert, 29 April 1645 (BL Add MS 18983 f.14, DECODE R4921)",
+   "reason": "found-solved: check-solved sweep 23 Sept 2026 (ciphers/charles-rupert-1645/NOTES.md) -- Bourdeau's cyphersolver/rupert1645/ (catalogue item 71) read 305 cipher groups (fraction_read 0.95) on 21 Sept 2026 by applying George Lasry's previously reconstructed King-Queen cipher key (DECODE R929, TNA SP106-5) unchanged, after ruling out two other sibling keys; write-up https://dbourdeau.github.io/cyphersolver/rupert1645.html (MIT code, CC BY 4.0 text). No print source found by them or by us; this is a key-recovery reading, not a rediscovered print source. Novelty not assessed here (rule 10)."
   }
  ],
  "harvest": [
