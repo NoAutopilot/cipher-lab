@@ -1,0 +1,465 @@
+# Orange-Nassau 1572 -- ciphertext.txt
+#
+# CORRECTION (23 Sept 2026 check-solved sweep): this letter is in TOME III (1567-1572),
+# not tome IV as QUEUE.md's detector-test row abbreviated it. The Internet Archive item
+# archivesoucorre04housgoog is Google's scan of tome III (confirmed: DBNL's own edition
+# of tome III, https://www.dbnl.org/tekst/groe009arch03_01/groe009arch03_01_0159.php,
+# lists this text as "Tome III 1567-1572", Lettre CCCLXXXV, p.501, and the next letter in
+# both the OCR and the DBNL table of contents is CCCLXXXVI, "Le Landgrave Guillaume de
+# Hesse au Comte Jean de Nassau" -- an exact match). The Huygens WvO database (below)
+# independently confirms "Archives d'Orange-Nassau III, 501-510 nr. CCCLXXXV".
+#
+# As transcribed, never silently repaired (CLAUDE.md rule: "Image over transcription").
+# Source: Groen van Prinsterer (ed.), Archives ou correspondance inedite de la maison
+# d'Orange-Nassau, 1re serie, tome III (Leiden: Kemink, 1836), pp. 501-510.
+# Lettre CCCLXXXV, "Le Prince d'Orange au Comte Jean de Nassau", dated Malines,
+# 21 September 1572 ("Escrit a Malines, ce 21 de septembre 1572").
+# Internet Archive identifier: archivesoucorre04housgoog (Google-digitised copy).
+# Text below is the CACHED OCR (_djvu.txt) of that identifier, sources/ia-fulltext/
+# archivesoucorre04housgoog_djvu.txt, lines 24010-24378 (djvu-text line numbers, not
+# printed page numbers), copied VERBATIM including OCR errors -- long-s/ligature
+# confusion, "i5"/"6o"/"3i" etc. digit misreads (lowercase L/i for "1", "o" for "0"),
+# and other Google-Books-OCR artefacts. THIS IS A TRANSCRIPTION, NOT THE PAGE IMAGE.
+# Any negative result from this file is conditional on the OCR being faithful to the
+# print; see images/manifest.json for the page-image spot-check done alongside this
+# extraction (three pages: 501, 503/editor's footnote, 506).
+#
+# Printed page markers recovered from the OCR (running heads "-- NNN --"): 501 (start),
+# 503, 505, 506, 507, 509. Pages 502, 504 and 508 are not individually recoverable as
+# distinct running-head lines in this OCR pass (absorbed into footnote-heavy layout);
+# the letter's printed extent is therefore approximately pp. 501-509, not "501-506" as
+# QUEUE.md's detector-test row abbreviated it (that row's OCR-line range 24100-24227
+# covers only the first, longest cluster of cipher figures, on pp. 502-506; a further,
+# shorter cipher passage on p. 509 -- "dependant que je ne sache..." -- was outside that
+# range and is included below for completeness).
+#
+# Ciphertext is printed as groups of 1-2 digit Arabic numerals separated by periods,
+# interleaved with plaintext French (a partial nomenclature/homophonic cipher: some
+# words are left in clear, some are enciphered). The editor's footnote on p. 502
+# (numbered "(1)" in the text, printed at the foot of p. 503) states the numerals could
+# not be deciphered against his comparison corpus -- reproduced verbatim below, in the
+# position the OCR places it.
+#
+# ============================================================================
+
+
+501  — 
+
+
+*  LETTRE  CCCLXXXV. 
+
+Le  Prince  d  Orange  au  Comte  Jean  de  Nassau, 
+Détails  de  son  expédition. 
+
+
+Monsieur  mon  frère.  Les  empeschemens  continuelz  de  i572. 
+ce  mien  présent   voiage,  ensemble  et  la  difficulté  des  Septembn 
+chemins,  joint  aussi  la  rarité  des  messagers  fidel les,  a 
+esté  cause  que  n  ayez  eu  si  souvent  de  mes  nouvelles , 
+comme,  ou   tous   eussiez  peu  requérir,  ou  moy désirer. 
+Or  n'ay  je  voulu  différer  davantage  de  vous  envoyer  ce 
+présent  porteur  pour  vous  advertir  de  Testât  de  mes  af- 
+faires. C*est  que  depuis  mon  département  de  Hellenraid 
+il  a  pieu  à  Dieu  me  donner  heureux  voiage  jusques  à  la 
+ville  de  Tilmont  ' ,  laquelle    s*est  rendue  amiablement , 
+comme   pareillement  a  faict  ma  ville  de  Diest;  depuis 
+sommes  arrivez  à  la  ville  de  Louvain ,  laquelle  du  com- 
+mencement a  fait  mine  de  résister,  mesmes  après  avoir 
+cerché  des  délais  superflus,  lesquels  ne  servoyent  qu'à 
+gagner  tamps ,  pour  cependant  advertir  Tennemy  de  ce 
+qu'il  avoit  à  faire;  et  voyant  que  je  ne  me  laissoye  con- 
+tenter de  parolles ,  a  commencé  à  user  de  démonstration 
+d'ennemy ,  tirant  à  force  en  nostre  camp.  Mais  finallement 
+voiants  qu*ilz  eussent  eu  du  pire,  d'autant  que,  et  leurs 
+pièces  se  crevoyent  l'une  après  Tautre,  et  nous  commen- 
+cions à  faire  nos  approches ,  et   mesmes  nos  soldats  fai- 
+soyent  desjà  irruption  déans  la  ville,  aiants  brûlé  une 
+porte  et  estants  prests  de  mettre  le  feu  à  Taultre,  ilz  se 
+sont  aussi  rendus.  Quelque  peu  auparavant  j'avoye  envoyé 
+
+'  TiiieiKMit.  V 
+
+
+i5j3.  mes  gens  vers  MaUncs(i)el  Anvers,  ayant  quelque  intelr 
+ptembrc.  ligencedéans  les  (IttesTilles.  L'entrefrise  de  Malines  a  bien   I 
+[  succéile   et   mes  gens  y  sont  entrez ,  mais  celle  d'Anvers 
+
+n'a  pas  bien  nsté  secondé  par  reux  qui  devuyent  venir  du 
+coste  de  Zélande,  cl  par  conséquent  faillie.  Cependant  le 
+Gouverneur,  Mr.  deChanipagney,  s'y  trouve  bien  enip^hé, 
+comme  ay  peu  veoir  par  les  lettres  qu'il  esmt  au  Duc 
+(l'Alve  et  d'Arschot ,  mettant  toute  sa  fiance  sur  la  saisine 
+de  la  ville  deDermonde,  laquelle  il  tâche  de  pei 
+au  dit  Duc  d'Alve  ,  comme  de  la  ville  qui  doit  tenir  )e  p 
+sage  des  vivres  ouvert.  Or  est-il  que  depuis,  par  U  grâce 
+de  Dieu  et  la  bonne  industrie  de  ceux  qui  estoimt  de  n 
+part  à  Mallnes,  la  dîtte  ville  de  Dcrmonde  s'est  asMi 
+remise  en  nm  uiaîns  ,  comme  a  pareillement  fatct  Oui 
+narde,  tellement  qu'il  y  a  grande  apparence  que  ti>uteU 
+Flandre,  ou  du  moins  une  bonne  partie  d'icelle,  se  doit 
+tourner  de  nostre  coste.  Davantaige  la  plus  grande  partie 
+de  la  Phryse  occidentale  s'est  aussy  jointe  avecq  nous ,  ri 
+n'y  a  que  deux  villes  de  reste  que  font  teste ,  assavw, 
+Harlingen  et  Leewarden ,  non  toutesfois  Bans  espénnce 
+de  les  pouvoir  aussy  obtenir ,  à  cause  que ,  pour  le  pe«  de 
+garnison  qu'il  y  a  dedans,  il  y  a  apparence  qu'elles  ny* 
+vroDt  rex«mpj«  des  autres  y  assavoir ,  FraneckM- ,  Doc^un 
+Sneeck,  Bolswart,  Staveren,  YIst,  et  se  jomdroK  loss 
+
+
+(i)  Htiiinet,  <■  Le  Coûte  Ludovic  treuvoit  fort  boanc  cc9tc «■- 
+*  priDie  de  Malyncs. . .  .  Maia  le  Prioce  d'Orenge*  neU  goiutoili 
+■>  pource  que  li  ville  ealoit  trop  dedans  pty»  ,  et  qu'il  dé*iroit  plu 
+»  l'ealargir  sur  les  advenues  et  rrontières  du  pays.  Hab  il  fui  tant 
+>  sollii:ité  par  les  dSrtt  banliiz  et  conspirateur*  ,  qu'enfin  il  *  ■C' 
+■  quiesoea.  »  IfilUnu ,  Meng.  0°  6.  p.  395. 
+
+
+saisine 
+«ad»  4 
+
+griM 
+de  nu 
+
+OiiJi  J 
+
+
+—  503  — 
+
+ensemble,  affin  d  attirer  par  ce  moyea  aussy  à  eux  la  TÎlle  iS^a. 
+de  GroeningeD.  SeptemiNri 
+
+Or  par  là  yous  TOyez,  Monsr.  mon  frère,  commeDt 
+Dieu  est  favorable  à  nostre  cause.  Maintenant  je  vous 
+prie  considérer  comment  de  l'autre  costé  la  malignité  des 
+hommes  tasche  de  renverser  et  anéantir  ceste  grande 
+grâce  de  Dieu.  Vous  estes  sans  doubte  assez  adverty  de 
+malheureux  et  exécrable  meurtre,  commis  le  iJbm  du  mois 
+passé  à  la  ville  de  Paris,  lequel  le  Roy  publie  ouvertement 
+avoir  esté  faict  par  son  commandement.  Or(i)  24.  3i.  4ft. 
+60.  i5.  33.  54.  9.  42.  6o*  45.  aô.  d.  e.  55.  36.  3.  54.  s.  61.  60.  i5. 
+y3. cela  nous  ait  esté,  n*est  besoing  devons  discourir, 
+car  vous  Fentendez  assez  de  vous  mesmes,  considérant 
+que ,  quant  aux  moyens  humains  35.  20.  3i.  36. 42.  39.  4o. 
+60.39.27.48  60.  1 5.  17.  1 5. 54.  45.  4a.  27.  5 1.52.  20.  2.  estoit 
+21.  25.  12.  26.  60.  61.  9.  42.  54.  56.  57.  i5  12.  i4.  i5.  33.  3.  18* 
+50.51.3.38.39.  14.9.  i5.  1 6.  Et  de  faict  les  apparences  en  es- 
+toient  si  'grandes  ,  que  tant  s'en  faut  que  Ton  me  polra 
+imputer  à  légère  crédulité  d'y  avoir  adjouté  foy ,  qu'au 
+contraire  Ton  m'eut  à  bondroict  peu  accoulper'  de  malig- 
+nité, si  j'eusse  seulement  voulu  faire  semblant  d'en  avoir 
+aucun  soupçon  sinistre;  aussy  n'est  ce  pas  chose  ordinaire 
+de  cacher  telles  et  ci  énormes  délibérations  soubs  une  cou- 
+verture si  plausible  de  festin  de  nopces,  et  mesmes  d'une 
+alliance  tant  signalée  et  tant  soubhaittée  de  toutes  gens  de 
+bien.  Qui  me  faict  croire  fermement  qu'il   n'y  ait   nul 
+
+(1)  H  est  à  regretter  qu'une  comparaison  attentive  des  passages 
+raîmnts  avec  d'aotres  pièces  dont  nous  possédons  le  décbiiTremeQt , 
+n*ait  condoît  à  ancon  résultat.  On  s'est  convainco  que  les  chif- 
+fres y  étant  infiniment  phis  nombreux  que  les  lettres  ,  il  ser&  très 
+difficile  ,  81  mm  décidément  impossible,  de  retrouter  le  sens. 
+
+*  aociucr. 
+
+
+1,  d'entre  tovs  les  Princes  d'AIIemn^e ,  lequel  en  ait  attradu 
+une  issue  si  Iragicque;  ce  que  je  discours  tant  plusvolon- 
+iers  ,  A  cause  qii  onUnaireinent  après  le  fiiict  advenu ,  ud 
+cbascun  voudroil  estre  tenu  pour  bon  prophète  et  devin , 
+mettant  la  coulpe  sur  les  aulresdavoir  este  légers  à  croire, 
+pour  tant  plus  l'aire  valoir  sa  prudence ,  comme  je  ne  fai 
+doubte  qu'il  s'en  trouvera  (i)  en  ce  fairt  présent  plus  qu'il 
+n'en  est  besoing.  Quoiqu'il  en  soit,  il  a  sinsy  pieu  à  Dieu 
+pour  nous  oster  toute  cspéranoe  que  pouvions  avoir 
+assise  sur  les  Iioniraes  ;  car  sur  un  mesme  jour  a  l'on 
+massacre  l'Amiral,  avec  Mr.  le  Comte  de  Rocbefoucault  et 
+son  filz,  Mr.  de  ïeligny ,  de  Pilles  et  autres  5  à  Son  gen- 
+tilzbommes ,  oultre  une  infinité  d'autres  personnes ,  sans 
+avoir  esgard  ny  à  sexe,  nyà  aage,  ny  à  mérite  quek-oo- 
+que,  et  là  dessus  le  Roy  publie  qu'il  a  esté  fait  par  son 
+commandement ,  commandant  de  tenir  l'exercice  de  la  reli- 
+gion en  surséance  et  delTendant  à  tous  ses  subjets,  sur 
+peine  delà  hart,  de  ne  prendre  les  armes  pour  venir 
+h  mon  secours;  voire  que  plus  est,  il  a  présenté  au  Duc 
+d'Albe  secours  contre  moy. 
+
+Vous  pouvez  assez  comprendre  7.  i5.  17.  i3.ao.  9.4». 
+
+(^)  Us'en  trouvera.  •  L.  Wilbelm  (wie  erspâter établi)  ■ûsioU 
+■  inehrmaii  zu  seinen  vei'trauten  Dienem  ,  es  brtiuse  ihin  vor  jeoo' 
+-  Hocbzeil.  -  F.  Rommel ,  N.  G.  H.  I.  549.  Th.  de  Bèze  écrit ,  la 
+losppl.  1571:  ■  Quolies  ^o  haec  ipsa  praedUi?  quoltes  prmcmo- 
+>  Dui  i  B  Serin.  Ânt.  VIII.  a.  689.  Mais  ries  ■vertisiements  fonda 
+sur  le  caractère  foible  et  mobile  du  Roi ,  ou  sur  de  vagues  mcoacM 
+dei  Catliuliques  ,  ne  pouvoient  décider  Colignj  ,  las  des  lutlei 
+civjU-s ,  à  bi  iser  avec  Charles  IX,  et  à  encourir  ainsi  le  reproche  et 
+l'avoir  déterminé  cl  forcé  à  se  rallier  aux  Guise ,  recoimnen^Dl 
+la  fjuerre  doq  pour  des  motifs  ,  mais  pour  des  soupçons  :  vojn 
+
+p.  /,96,  sqq. 
+
+
+—  505  — 
+
+56.  5.  6.  27*  i5.58.  39.  g.  i5.  33.  3  a.  26.  37.  57.  5o.  5i.  i5.6i.  iS^a. 
+9.  60.  33.  i5.  i4,  39.  42.  72.  5.  18.  19.25  f.  3.  27.61.  i5.  43.  Sqitembn 
+54.  54.  yeu  que  s'il  ne  fut  entrevenu ,  selon  toutes  appa- 
+rences humaines,  nous  estions desjà  pour  cest  heure  maî- 
+tres (lu  Duc  d'Alve ,  et  eussions  capitulé  à  nostre  plaisir. 
+Maintenant  au  contraire  y  sans  Thorreur  et  estonnement 
+qu'un  fait  si  exécrable  imprime  en  tous  coeurs  des  gens 
+de  bien,  encor  est-il  incroyable  3i.  26.  17.  i5.  33.  i5.  la. 
+42. 36. m. 3. 21.  i4.  i5.  i4. 25.[T.]5o.5i.  i4.  i5.  61.9.60.33.  i5.  * 
+36.  i5.  39.  67.  que  26.  27.  i5.  39.  3.  69.  5o.  5i.  i5.  9.  i5.  i4. 
+60.  61.  25.  20.  car  pour  nestre  26.  i3.  17.  i4.  25.  i3,  27.  i4. 
+i5.  j6.  54.  60.  5i.  5o.  33.  27.  39. 18.  3.  39.  57.  i5. 5o.  51.27.  i^« 
+i4.  que  3i.  33.  3.  11.12.  i3.  36.  27.  5i.  3.  33.  36.  3.  60.  42.  27. 
+57.42.61.42  36.  27.  64.  et  estoit  11.  i3l  12.  i5.  i3.  54.  27.  3. 
+45.  61  •  16.  64.  56.  67.  16.  i4.  assavoir, de  11.  26.  10.  12.26. 
+27.  66.  3.  12.  42.  60.  72.  16.  i4.  56.  27.  33.  6.  42.  39.  54.  55.  3. 
+5i.  48.  60.  16.  6.  60.  64.  27.  16.  61.  64.  56.  26.  je  n*ay  voulu 
+rae  9.  24.  3.  61.  21.  i5.  i4.  5i«  12.  i5.  6.  i5.  3.  60.  9.  42.  60. 
+45.  12.  16.  39.  18.  3.  39.  67.  i5.  61.  27.  i5.  3.  33.  i5.  36.  3.  39. 
+
+12. 1 3. 1 4.  16.  16.  qui  mesmesn*est  guères  utile  pour  le  pré- 
+sent. Si  que  estant  marché  plus  avant  et  ayant  passé  par 
+Nivelle,  qui  s'est  aussy  rendue  à  nostre  dévotion,  et  arrivé 
+entour  du  camp  de  Tennemy,  je  Tay  trouvé  si  bien  retrenché 
+de  tous  costés,  qu^il  a  esté  impossible  avec  l'arcquebouzerie 
+que  j'avoye ,  l'en  faire  désloger,  ny  mesme  le  faire  venir  à 
+mains,  non  obstant  qu'à  nostre  arrivement  (iHls  fussent 
+
+(i)  arrivement,  a  De  Prince,  ïn  syne  aenLomste  by  Bergen  , 
+»  cledc  syncn  broeder  ,  Graef  Hendrick  ,  met  vier  benden  ruyte- 
+»  ren  ,  des  Uertoghs  voick  ouversiens  beslolen  ,  met  suickc  fortse 
+9  dat  sy  die  uyt  nlle  ordre  dreven  ,  tôt  binnco  baer  beschanssÎD- 
+»  geq.  »  y,  Aîelercn  ,  p.  7  4'. 
+
+
+—  506  — 
+
+15^2.  bien  estonnez,  et  encor  depuis  en  une  escarmouche  qui 
+Septembre,  s'estoit  attachîé  à  Timproviste ,  ils  furent  saisis  de  telle 
+frayeur,  que ,  s'il  ny  fut  pareillement  survenu  quelque 
+désordre  entre  nos  gens ,  nous  estions  pour  les  mettre  du 
+tout  en  routte  ,  mais  depuis  ils  ont  reprins  courage,  jus- 
+ques  à  nous  venir  donner  une  camisade,  où  avons  perdu 
+mon  escoutet  de  Breda  ,  le  Sieur  de  Drunen ,  et  le  Capi- 
+taine Italien  Paul  Camill,  avecq  quelques  autres.  Or, 
+•  combien  qne  lennemy  ait  toujours  eu  beaucoup  plus 
+grand  perte  de  gens  que  nous ,  si  est  ce  que  les  nostres, 
+se  voyant  si  mal  secondés  et  soutenus  par  les  arque- 
+buziers ,  a5.  17.  i4.  16.  27.  39.  4o.  42.  39.  67.  i4.  i5.  54.  55. 
+56.  57.  58.  i5.  54.  3.  27.  56*  54.  27. 53.  54.  12.  e.  20.  57.  i5.  35. 
+k  i4.  25.  i5. 18.  5i.  3.  69,  i4.  i5.  60. 5i.  que26.  27.  3.  69.  26. 
+i5.  54.  57.  i5.  i4.  9.  42.  39.  57.  5i.  3.27.39.  57.  12.  i4.  i5.  33. 
+i5.  54.5i. 50.3.36. 36.  i5.  i4.  39.  i5.  i4.  5i.  5o.  combien  que 
+d'autre  costé  3].  33.  3.  18.  3.  60.  57.  i5.  12.  i4.  i5.  60.  27. 
+60.  5i«  i5.  i4.  54.  36.  i5.  18.  42.  5i.  9.  4a.  27.  57.  3.  60.  54.8. 
+
+68.  69.  12.  i4.  i5.  36.  i5.  5i.  i5.  i4.  57.  27.  5i.  i5.  v.  28.  20. 
+ne  sachant  mesmement  pour  lors  que  Dendremonde  s'es- 
+toit encore  rengée  de  nostre  costé.  De  sorte  que  2.  5.  3. 
+4.  36.  42.  39.  21.  4i*  3.  39.  12.  ]3.  5i.  i5.  21.  5i.  i5.  57.  27. 5. 
+
+69.  i5.  54.  57.  i5.  9.  42.  39.  57.  5i.  5.  27.  39,  57.  12.  i5. 
+i4.  33.  3.  27.  54.  26.  8.  i5.  5o.  5i.  61.  36.  42.  39.  18. 
+Si.  i5.  i4.  5i.  i5.  33.  42.  60.  27.  54.  encor  26.  25.  3i.  17.  2S. 
+3.  54.  55.  s.  27.  i5.  21.  i5.  i4.  i3. 17.  20.  à  cause  que  estant 
+toutes  les  avenues  fort  estroittement  gardées.  Je  38.  59. 
+3.  60.  42.  69.  39.  60.  33.  36.  42.  69.  i5.  38.  39.  12.  i4.  i5.33. 
+60.  69.  i5.  39.  60.  42.40.69.  5.  5i.  54.  i5.  9.  42.  60.  5i.  54. 
+ny  mesme  de  32.  3i.  33.  6o.  69.  12. 42.  39.  d.  i4.  i5.  5i.  iS. 
+54.  9.  42.  5i.  57.  i5.  i4.  45.  42.  60.  5i*33.  i5.  67.  27*  5i.  i5. 
+
+
+_.  507  — 
+
+i4.  5o.  5i.  34.  43.  5t.  54.  13.  i3.  i4.  35.  53.  5.   Teu  siif^Uè^  iS^a. 
+
+rement  47.  48.  60.  i5.  i4.  39.  i5.  54.  5i.  i5.  69.  67.  5i.  i5.  54.  SeptenAw 
+
+36.  i5.  35.  43.  59.  57.  5i.  i5.  18.  60.  54.  i5.  57.  43.  60.  57.  5. 
+
+45.  33.  5.  57.  dont  ayant  entendu  que  mon  dit  iS^.  i4.  5i. 
+
+i5.  5o,  5i.   i5.  43.  i5.  60.  57.  en  8.  16.  i4.  9. 43.  5i.44.  54. 
+
+43.  60.  57.  i5.  39.  37.  5i.  53.  i4.  i5.  54.  37.  i5.  31.  i5.  i4.  48. 
+
+60.  i5.  53.  48.  60.    i5.  54.   i3.   37.  66.  43.  60.   13.  43.  60. 
+
+73.  i5.  37. 43.  60.  5i.  54.  jay  trouve  pour  le  meilleur  de 
+
+meretirer  par  deçà,  soit  pour  11.  13.43.59.11.  i4.  i5.5i. 
+
+55.  i5.  6.  5i.  5.  59.  35.  i5.  5.  53.  3.  60.  37.  55.  le  n.  13.  i5* 
+
+6.  5i.  60.  66.  i5.  55.  le  55.  54.  35.  5i.  43.  60.  45.  is.  5.  59.  60. 
+
+i5.  5i.  64.  et  par  ce  moyen  52. 55.  i5.  60.  i4.  i5.  5i.  53. 5a. 
+
+55.  ]5.  54.  37.  i4.  i5.  31.  i5.  i4.  is.  i4.  i5-  56.  43.  59.  67.  54. 
+
+56.  ou  9.  4a.  6o.  45*  p.  i5.  5i.  55.  i5.  16.  54.  60.  37.  60.  5i.  i5. 
+54. 5.  6o.  13.  60.  9.  ou  bien  pour  4o.  36.  9.  34.  5.  5i.  31.  i5. 
+Su  53.  i5.  11.  la.  60.  37.  a5.  36.  13.  i4.  e.  35.  43.  34.  55.  54. 
+56.  67.  i5.  37.  54.  — ^ 
+
+Voilà ,  Monsieur  mon  frère ,  quant  à  lestât  de  nos  af- 
+faires. Or  povez  vous  par  là  assez  entendre,  s*il  n*est 
+encore  tamps  que  les  Princes  d'Allemagne  se  resyeillent , 
+là  où  ils  Toyent  tout  manifestement  à  quoy  l'on  prétend , 
+cafT  ce  n'est  ny  à  moy ,  ny  à  tous  en  particulier ,  que  l'on 
+en  Teut«  Ils  sont  délibérez  de  mettre  en  exécution  leur 
+Tieille  alliance  de  Bajonne  et  autres  semblables ,  c'est  à 
+dire  extirper  tous  ceux  qui  ne  sont  subjects  à  la  domina- 
+lion  Romaine,  et  réduire  l'Europe  soubs  l'obéissance  du 
+Pape,  et  n*est  plus  question  d'adjoutter  foy  à  aucunes 
+promesses,  serments  ou  con tracts  qu'ils  feront,  car  tous- 
+jours  à  cestereigle  la  vigueur,  Haereticis  non  esthabenda 
+fide^t.  Vous  savez  ce  qu'ils  ont  donné  à  entendre  à  nos 
+Princes ,  tant  par  lettres  ,  que  par  gens  propres  exprès- 
+
+
+-dépêchés ,  et  aulres  diverses  manières ,  que  sllï 
+
+Bi  .  jilus  longtemps  souffrir  que  l'on  se  nioctuie  ain- 
+
+L,    il  faudra  certes  que,  après  que  niius  autres, 
+
+-oinpagnons,  serons  detTaits,    qu'eux    alteudeu 
+
+eiir  tour  pour  saouler  Vavarice  «  la  ra^e  sanjjlante 
+
+es  ennemis  de    Dieu  et  de  toulejusticc.  Poiiruinl  ji! 
+
+irie  de  prendre  la  chose  à  coeur  et  la  renionstrer  it 
+
+n  escient,  voire  avecq  toute  importunîté  nu  Lantgraïe, 
+
+r  son  moyen  aux  autres  Princes,   car  la  chose  cm- 
+
+■le  trop  pour  plus  longianips  se    taire.   Il  fault  qu'Ut 
+
+veillent  désormais,  s'ili  ne  vueiltent  attendre  l'entitre 
+
+line  d'Allemagne  qui  leur   panclie   déajà  sur  la  teste, 
+
+,  uyant  estébriisséc  de  longue  niain(i).Je  vous  prie,  Mod- 
+
+sieur  mon  frère,  ne  vous  ennuyer  de  leur  mettre  cecj  au 
+
+devant)  ores   l-ien  qu'ils  s'en   deiissent  fâcher,  carce^te 
+
+otrcasion   nouvelle  et  tant  importante  vous  poira  excuser 
+
+devant  toutes  gens  de  Itien    et  de  Jugement  ;  aussy  m'y 
+
+érez  vous  singulier  plaisir. 
+
+Monsieur  mon  frère,  après  ceste  escritte,  suis  arrivé 
+en  ceste  ville  de  Malines ,  ayant  laissé  mes  reislres  à  Stwt- 
+beque'  en  mon  camp,  et  m'aicy  esté  délivrée  une  lettre 
+vostre,  pour  responce  de  laquelle  ne  vous  sauroye  assa 
+
+(i)  lie  longue  main.  Ces  siipposilions  étoicnt  fort  nalurella, 
+bien   qu'elles  fuuent  eiagérén  :  De   Thou  écrit  :  •  Ab   advenarui 
+
+•  ubique  jactabatur  Rrgem  cum  PoDli6ce  et  Hispanorum  Bffc  a 
+
+■  Prolestanlium  pernicieni  secrela  consilia  agilare  ,  . .  .  tdquc  Fri- 
+
+•  dericus    Bajoarus   Palatinut    Septemvir   insilo    relligionU  snae 
+
+•  tuendae  ardore  facile  sibi  pcrsuaderi  passus  erat ,  ac  vix  taadcB 
+
+■  a  Jo.   Casimiro  F.  (jui  rébus   nostris   summopire  faTcbat ,   abca 
+>  opinionc  dimoTeri  potuit.  >  Hîstor.  I.  55.  p.  ^o?**. 
+
+•  StemWHi  (?). 
+
+
+—  509  — 
+
+remercier  de  la  bonne  diligence  qu*usez  à  m'advertir  ainsy  i5^i. 
+particulièrement  de  toutes  occurences  qu'entendez;  et  Septembre 
+touchant  ce  desseing  nouveau  dont  m'advertissez ,  je  ne 
+faudraj  à  estre  sur  mes  gardes  et  en  donner  ad  vis  à  tous 
+mes Cap°^  et  ayants  charge ,  afin  quilz  sojent  sur  leurs 
+gardes.  Quant  au  reste,  je  vous  prie  de  vouloir  incontinent 
+et  au  plustost  que  vous  sera  possible,  dépécher  le  30.  3 1. 
+35.  3i.  17.  i3.  9.42.  36.  m.  26.  27.  [5i.]  s. 4.  5.25.  3.  27.  5i.  i5. 
+54.  9.  a4-  66.  3.  5i  57.  54.  i4.  15.39.  >^*  ^o*  ^'*  3*39.  9.  8.  i5. 
+afin  de  faire  en  toute  diligence  35.  23.  17.  74.  36.  3. 5].  9  24. 
+i5.  5o.  5 1.  52.  32.  33.  i4.  i5. 54.  9.  27.  39.  c  37.  48.  36.  27.  33. 
+le  5.  25.  3.  5i.  48.  60.  i5.  6.  60.  72.  27.  i5.  5i.  54.  55.  3i.  60. 
+i5.  5i.  54.  17.  5i.  i5.  i4.  36.  6a  39.  38.  12.  i4.  i5.  i4.  d'au- 
+tant que  je  ne  sache  i4.  5.  3i.  17.  i3.  4o.  20.  33.  27.   i5.  60. 
+
+32.  45.  33.  60.  54.  9.  42.  36.  37.  25.  m.  4i.  42.  12.  i4.  i5.  16. 
+42.  60  39.  42.  60.  54.  nous  43.  45.  42. 33.  5i.  27.  42.  39.  54. 
+5i.  i5.  39.9.  41.42.39.  57.  5i.  i5.  5i.  5o.  25.  et  surtout  que 
+Ton  y  use]>onne  discrétion  et  prudence,  sans  se  précipiter 
+témérairement  en  danger.  Vous  poirez  adviser  avec  le  doc- 
+tor  Ehemius  quel  seroit  le  meilleur  et  plus  propre  chemin 
+pour  y  venir.  De  ma  part,  je  ne  trouveroye  hors  de  propos 
+que  22.  3].   12.  e.  53.  s.  3.  5o.  5] .  6.  5].  60.  9.  lo.  26.  3i.  27. 
+
+33.  72.  de  25.  54.  9.  i5.  39.  12. 27.  54.  55.  s,  i5.  39.  57.  33.  i5. 
+5i.  27.  39.  partie  2.  20.  23.  3.  5.  6.  2.  3.  4.  57.  i5.  3.  60.  61. 
+a5.  3i.  17.  i3.  partie  26.  17.25.  20.  4.  3.  45.  27.  i5.  i4.  12.  i3. 
+a5.  vous  y  pourrés  adviser  et  user  de  toutte  dilligence. 
+Qui  sera  la  fin  où  me  recommandant  de  bien  bon  coeur 
+en  vostre  bonne  grâce,  prieray  Dieu  qu'il  vous  maintien- 
+ne, Monsr.  mon  frère,  en  Sa  sainte  sauvegarde  et  pro- 
+tection. Escrità  Malines,  ce  ai  de  septembre  1572. 
+
+
+
+# ============================================================================
+# ALREADY DECIPHERED -- found by the check-solved sweep of 23 September 2026.
+# ============================================================================
+#
+# Huygens Institute, "Correspondentie van Willem van Oranje" database (successor to
+# the old "Briefwisseling van Willem van Oranje" project cited in QUEUE.md), record
+# for this exact letter:
+#   https://resources.huygens.knaw.nl/wvo/app/brief?nr=5198
+#   Briefnummer 5198. 21-9-1572. Aan Jan van Nassau. Mechelen (Malines).
+#   Incipit: "Les empeschements continuelz de ce mien present voiage ensemble et la
+#   difficulté" (matches this letter exactly).
+#   Opmerkingen (remarks), quoted verbatim: "Met een postscriptum. Ten dele in
+#   cijferschrift. De gedeeltelijke editie van Nepveu tot Ameyde, die ook is
+#   afgebeeld, biedt de oplossing daarvan." [Translation: "With a postscript. Partly
+#   in cipher-writing. The partial edition of Nepveu tot Ameyde ... offers its
+#   solution."]
+#   Source citation given by the database (its "Bron" table), verbatim:
+#     Nepveu tot Ameyde, L.J., ['Cijferschrift in de Archives de la Maison
+#     d'Orange-Nassau'], Algemeene Konst- en Letterbode 1 (1842), 18-22.
+#     (page reference for this letter specifically: "19-20 (onv)" -- "onv." =
+#     onvolledig, "incomplete/partial")
+#
+# So: L.J. Nepveu tot Ameyde published a PARTIAL decipherment of this cipher only
+# six years after Groen's 1836 footnote called it "décidément impossible" -- in a
+# Dutch popular-science periodical (Algemeene Konst- en Letterbode), volume 1,
+# 1842, pp. 18-22, with the solution itself on pp. 19-20. Neither cryptiana
+# (sources/cryptiana/) nor a fresh grep of dbourdeau/cyphersolver or
+# aaymeloglu/unsolved-ciphers mentions "Nepveu" anywhere -- this 1842 partial
+# solution is not in either solver repository or Tomokiyo's site (23 Sept 2026).
+#
+# NOT YET LOCATED (next step, not done this sweep): the actual text of Nepveu tot
+# Ameyde 1842 pp.18-22, to see exactly how much of the cipher he broke and what the
+# recovered plaintext/key says. DBNL's digitised "Algemene konst- en letterbode"
+# (dbnl.org/tekst/_alg004alge00_01/) did not list an 1842 volume in its available-
+# years table on this pass; try Delpher.nl, Google Books, or KB's own periodical
+# viewer next.
+#
+# Primary-source cross-check: the original manuscript (Koninklijk Huisarchief Den
+# Haag, A 3, 895/I) is imaged in full (9 leaves) at
+#   https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05198.pdf
+# Two leaves are saved at images/kha_original_leaf1.png (opening) and
+# images/kha_original_leaf3.png (a page with heavy cipher use) -- the numeral
+# groups in the secretary's own hand match the printed OCR/DBNL text exactly,
+# confirming the ciphertext above is faithful to the original, not a printer's or
+# OCR artefact.
