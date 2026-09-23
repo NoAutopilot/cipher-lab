@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 21:56 UTC",
+ "updated": "23 September 2026, 21:58 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -304,21 +304,21 @@
    }
   },
   {
-   "name": "Ernest and Joachim of Anhalt to François I, Latin, mostly in cipher, with a later interlinear gloss",
-   "year": "1515-16",
+   "name": "Latin cipher letter to François I (catalogued Anhalt 1515/16; more probably Brunswick-Lüneburg and Moltzan, 1518/19)",
+   "year": "1518/19",
    "ref": "BnF Dupuy 468 f.28 (Gallica ark:/12148/btv1b10035959t, canvas 64)",
    "folder": "ciphers/dupuy468-anhalt",
-   "stage": 8,
-   "state": "active",
-   "holder": "Verifier",
-   "next": "Verifier assigns the class: the later hand's gloss covers nearly the whole letter, so the question is whether that decipherment, or the letter, is printed (Anhalt editions, François I's German negotiations of 1515-16, Godefroy's papers). Then the result label.",
-   "note": "23 Sept 2026: read in full, 687 tokens (H 630, S 33, M 18, 6 unread), control 99.8%. Content: the princes at Zerbst propose a league of German princes for François I. Conditional on the image transcription (passes disagreed; the worker re-read every line). Verifier 23 Sept 2026 (AUDIT.md): N3, no printed text or decipherment found; prior decipherment yes, the interlinear gloss on the leaf, probably the French chancery's on receipt, so not 'unread' or 'first'. Attribution 'Anhalt, 1515-16' probably wrong: most probably Ernest of Brunswick-Lüneburg and Joachim von Moltzan, 1518/19 (grade I).",
+   "stage": 10,
+   "state": "solved",
+   "holder": "Nobody",
+   "next": "Toward N4: the queries in AUDIT.md section 4 for JSTOR, Google Books and HathiTrust full text (credential session), and Reichstagsakten JR II. Then a historian's check of the attribution and a contribution note to the BnF.",
+   "note": "Novelty verified 23 Sept 2026, AUDIT.md: N3. Result: BnF Dupuy 468 f.28 is a Latin cipher letter to Francis I. The catalogue gives it to Ernest and Joachim of Anhalt, 1515/16; it is more probably from Ernest of Brunswick-Lüneburg and Joachim von Moltzan, 1518/19. It carries an interlinear decipherment in a second hand, probably contemporary. That decipherment was transcribed and the key it implies applied to the whole letter: 663 of 687 cipher tokens read (H 630 from the gloss, S 33 from the key, control 99.8%), 18 M, 6 unread. No printed text or printed decipherment of the letter was found in the editions listed in AUDIT.md (N3).",
    "kind": "recovery",
    "wait": {
-    "on": "The verifier session",
-    "since": "23 Sept 2026, 21:33 UTC",
-    "expected": "Within the hour",
-    "unblock": "AUDIT.md with the class"
+    "on": "Nothing for the reading; N4 needs the credential session's searches",
+    "since": "23 Sept 2026, 21:58 UTC",
+    "expected": "Next session",
+    "unblock": "AUDIT.md updated toward N4 or corrected"
    }
   },
   {
@@ -342,6 +342,26 @@
  ],
  "workers": [
   {
+   "title": "Verifier: Dupuy 468",
+   "job": "N3; attribution corrected; gloss is a contemporary decipherment. ~$20",
+   "state": "done, archived"
+  },
+  {
+   "title": "Detector test: printed ciphertext",
+   "job": "Controls 2/2, precision 50/50, 24 survivors; P1 Orange 1572. ~$6",
+   "state": "done, archived"
+  },
+  {
+   "title": "Check Solved: P1 Orange to Nassau 1572",
+   "job": "Editions first (Groen, Huygens database, Japikse)",
+   "state": "running"
+  },
+  {
+   "title": "Transcription passes A and B: Dupuy 452 ff.28-29",
+   "job": "Two blind readers, 158 lines",
+   "state": "running"
+  },
+  {
    "title": "Credential session (ytbiz)",
    "job": "Presence test, DECODE login (rejected), archive.org borrow (loan works, images protected), Google Books calendar read for Bowes, JSTOR (blocked). ~$12",
    "state": "done"
@@ -352,33 +372,8 @@
    "state": "done, archived"
   },
   {
-   "title": "Verifier: Dupuy 468 Anhalt",
-   "job": "Class from a logged search; editions first",
-   "state": "running"
-  },
-  {
    "title": "Print Check, class gate: Dupuy 452",
    "job": "Best case N3; unprinted; cipher unread anywhere searched. ~$1.5",
-   "state": "done, archived"
-  },
-  {
-   "title": "Image prep: Dupuy 452 f.28 and f.24 crops",
-   "job": "Full-resolution canvases once, line crops for two readers",
-   "state": "running"
-  },
-  {
-   "title": "Transcription: Dupuy 452 Carpi f.20",
-   "job": "Single pass, 86 tokens; extent corrected to ~1,500 tokens in one cipher across three letters. ~$4",
-   "state": "done, archived"
-  },
-  {
-   "title": "Check Solved: M4-M7",
-   "job": "M6, M4 open; M7 partial with gloss; M5 key-only. ~$3.5",
-   "state": "done, archived"
-  },
-  {
-   "title": "Check Solved: M1-M3",
-   "job": "All three already solved or key-only. ~$3",
    "state": "done, archived"
   }
  ],
@@ -441,6 +436,10 @@
   }
  ],
  "log": [
+  {
+   "when": "23 Sept, 21:58",
+   "what": "Dupuy 468 verified N3 (AUDIT.md): the first unique solve by the repo's definition, a recovery from a contemporary decipherment on the leaf, with the catalogue attribution corrected. Detector test passed its controls and left 24 printed-cipher candidates; check-solved on the strongest (Orange to Nassau 1572). TNA page checks hit their daily cap; retry early UK morning."
+  },
   {
    "when": "23 Sept, 21:56",
    "what": "Credential session: all seven variables set on the ytbiz account. DECODE login rejected once (form asks for a user name; row 1 open). archive.org login and loan work; lending pages are reader-protected, tool stops on them (row 18). Google Books snippets reached CSP Scotland vi nos. 389 and 584 for the Bowes audit (AUDIT.md section 10). JSTOR challenge-blocked (row 17)."
