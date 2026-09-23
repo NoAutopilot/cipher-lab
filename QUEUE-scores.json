@@ -143,7 +143,7 @@
    "competition": 2,
    "weight": 2,
    "next_step": "archive-request",
-   "next_step_detail": "Check Saberton, The Cornwallis Papers (2010) for the six items Discovery marks undeciphered (PRO 30/11/6/23-26, 3/207-209, 69/18-24, 68/32-35) against his printed Common, Balfour and Ninety Six cipher keys. Search-print checked 20 Sept 2026: NOT FOUND \u2014 Saberton's 2010 edition has no Internet Archive copy (advancedsearch.php, two queries, 0 hits), so its index could not be checked against the six PRO refs; not attempted via Google Books/WorldCat this sweep. But Saberton's allthingsliberty.com article (6 June 2019, read in full) already prints the mechanism and worked examples of all five ciphers (Common, Ferguson's, Balfour's, Ninety Six, Balfour's dictionary) in the clear, so the six items are a straight key-application job once TNA copies of the ciphertext itself are in hand \u2014 next step is an archive-request for the six PRO 30/11 items, not a further print check.",
+   "next_step_detail": "Check Saberton, The Cornwallis Papers (2010) for the six items Discovery marks undeciphered (PRO 30/11/6/23-26, 3/207-209, 69/18-24, 68/32-35) against his printed Common, Balfour and Ninety Six cipher keys. Search-print checked 20 Sept 2026: NOT FOUND — Saberton's 2010 edition has no Internet Archive copy (advancedsearch.php, two queries, 0 hits), so its index could not be checked against the six PRO refs; not attempted via Google Books/WorldCat this sweep. But Saberton's allthingsliberty.com article (6 June 2019, read in full) already prints the mechanism and worked examples of all five ciphers (Common, Ferguson's, Balfour's, Ninety Six, Balfour's dictionary) in the clear, so the six items are a straight key-application job once TNA copies of the ciphertext itself are in hand — next step is an archive-request for the six PRO 30/11 items, not a further print check.",
    "rationale": "No images or transcriptions online; Discovery gives item-level descriptions only, and the ciphertext needs a copy order from Kew or the UNB Loyalist Collection microfilm. The key lead is strong: Ian Saberton, editor of the six-volume Cornwallis Papers (2010), printed complete tables for the Common cipher, Ferguson's, Balfour's, the Ninety Six cipher and Balfour's dictionary cipher in the Journal of the American Revolution (allthingsliberty.com, 6 June 2019), and the series itself holds known-plaintext pairs (6/54-55, 3/277 vs 3/326) and an enclosed cipher (66/40-41). The Discovery 'undeciphered' notes probably predate Saberton's edition, so these items may already be read in print; on no solver tracker, and no one reports current work. English number ciphers of the 1780-81 Southern campaign, adding to a well-documented episode. Re-scored 20 Sept 2026: Saberton's 2010 edition prints complete tables for the Common, Balfour and Ninety Six ciphers (confirmed directly via his allthingsliberty.com article, 20 Sept 2026 search-print check); a published key exists and needs applying to the six unread PRO 30/11 items once the ciphertext is obtained. unread=2.",
    "total": 36,
    "year": "1780-1781",
@@ -198,27 +198,6 @@
    "kind": "recovery"
   },
   {
-   "name": "Thomas Randolph (Edinburgh) to the Earl of Sussex, 9 July 1570 [catalogued 1569; manuscript dated 1570, corrected 21 Sept 2026] (BL Cotton Caligula C II f.277, DECODE R4931)",
-   "language_fit": 3,
-   "material": 3,
-   "key_lead": 2,
-   "size": 2,
-   "competition": 1,
-   "weight": 2,
-   "next_step": "transcription",
-   "next_step_detail": "Fetch f. 277r-v tiles from https://bl.digirati.io/iiif/ark:/81055/vdc_100162985756.0x000001 (as in cyphersolver/norfolk1570/fetch.py), transcribe, and match against CSP Scotland II-III.",
-   "rationale": "Page images are public: the BL IIIF manifest for Cotton MS Caligula C II answered 200 on 19 Sept 2026 with canvases labelled f. 277r and f. 277v (1194 canvases; the image service caps tiles near 1024 px, which Bourdeau's norfolk1570 scripts already handle). DECODE lists one key record from the same volume and year (R4930) but it is not established that it fits this letter, and Tomokiyo's Randolph-Sadler-Croft key of 1559 is a different cipher, so the lead is a sibling key, not a verified one. Two pages with inline cleartext is marginal for a ciphertext-only attack but ample once a key or the calendared text in CSP Scotland lines up. Only Bourdeau's catalogue (id 99, open 17 Sept 2026) lists it. Re-scored 20 Sept 2026: DECODE lists a sibling key record (R4930) from the same volume and year, fit unverified; recovery rather than cryptanalysis. unread=2.",
-   "total": 35,
-   "year": "1569",
-   "language": "en",
-   "sources": [
-    "bourdeau"
-   ],
-   "folder": "",
-   "unread": 2,
-   "kind": "recovery"
-  },
-  {
    "name": "Letter partly in cipher relating to Gen. Monck and his movements, 1659-1660 (BL Add MS 32093 f.423, Malet collection)",
    "language_fit": 3,
    "material": 1,
@@ -250,7 +229,7 @@
    "competition": 1,
    "weight": 2,
    "next_step": "search-print",
-   "next_step_detail": "Check-solved 23 Sept 2026 (ciphers/harley-287-1587/NOTES.md): verdict partial, not open. Bourdeau's project already read most of this range 21-22 Sept 2026 (needham1587/R8479 97.8%; harley287/R8477+R8482-R8487 read in sense with named gaps; cobham1588/R8490+R8492+R8495+R8496 about a third read); no print source found by them or by us. Next step is finishing/verifying their existing partial key, not a fresh attempt. || Prior next_step_detail: Check CSP Foreign 1588 (vols 21.4 and 22) for Cobham's Bourbourg despatches of the DECODE dates, then fetch DECODE key R8497 and R8477-R8496 images. Search-print checked 20 Sept 2026: NOT FOUND, partial (vol. 22 not yet checked). CSP Foreign Elizabeth vol.21 pt.4 (Jan-June 1588, BHO) index: \"Bourbourg\" p.567 (~30 letters), \"Cobham\" p.568 (~40 \"letters from\" entries plus \"sends cipher to Walsingham, 455, 462\"), \"Needham\" p.650 (only one entry, a paper he delivered, no letters of his own indexed). Text checked at pp.442-460: the 3 June Cobham entry gives only \"Sent the cipher by Spritwold\" \u2014 a postscript note, not a decrypted passage; the calendar gives English abstracts throughout, never reproduces ciphertext or a \"deciphered\" block, and whether the abstracts capture the 14 DECODE items' specific passages was not checked line-by-line (~40 entries, over this sweep's budget). Vol. 22 (July-Dec 1588), which likely holds the bulk of the Bourbourg talks, was not reached this sweep. Vol. 22 follow-up, 20 Sept 2026 (Google Books + HathiTrust APIs): not on Google Books (NO_PAGES); found on HathiTrust (msu.31293027027295, record 100823430, 'Full view', 596 scans) but babel.hathitrust.org still serves a Cloudflare interstitial to curl and to tools/browser_fetch.js, and no Wayback capture exists, so no page text was read. HTRC Extracted Features API (tools/htrc_ef_headwords.py) token positions: 'cobham' at 23 scans, 'bourbourg' at 8 (5 front-matter/index, 3 body), 'cipher' at 13, 'decipher' (its own token) at 5, 'needham'/'nedham' at 0 scans. Scan 62 (cipher+decipher, adjacent to Cobham's scan 61) is the strongest candidate page in the volume but is unread \u2014 a lead for a worker with HathiTrust access, not a found decipherment. NOT FOUND stands.",
+   "next_step_detail": "Check-solved 23 Sept 2026 (ciphers/harley-287-1587/NOTES.md): verdict partial, not open. Bourdeau's project already read most of this range 21-22 Sept 2026 (needham1587/R8479 97.8%; harley287/R8477+R8482-R8487 read in sense with named gaps; cobham1588/R8490+R8492+R8495+R8496 about a third read); no print source found by them or by us. Next step is finishing/verifying their existing partial key, not a fresh attempt. || Prior next_step_detail: Check CSP Foreign 1588 (vols 21.4 and 22) for Cobham's Bourbourg despatches of the DECODE dates, then fetch DECODE key R8497 and R8477-R8496 images. Search-print checked 20 Sept 2026: NOT FOUND, partial (vol. 22 not yet checked). CSP Foreign Elizabeth vol.21 pt.4 (Jan-June 1588, BHO) index: \"Bourbourg\" p.567 (~30 letters), \"Cobham\" p.568 (~40 \"letters from\" entries plus \"sends cipher to Walsingham, 455, 462\"), \"Needham\" p.650 (only one entry, a paper he delivered, no letters of his own indexed). Text checked at pp.442-460: the 3 June Cobham entry gives only \"Sent the cipher by Spritwold\" — a postscript note, not a decrypted passage; the calendar gives English abstracts throughout, never reproduces ciphertext or a \"deciphered\" block, and whether the abstracts capture the 14 DECODE items' specific passages was not checked line-by-line (~40 entries, over this sweep's budget). Vol. 22 (July-Dec 1588), which likely holds the bulk of the Bourbourg talks, was not reached this sweep. Vol. 22 follow-up, 20 Sept 2026 (Google Books + HathiTrust APIs): not on Google Books (NO_PAGES); found on HathiTrust (msu.31293027027295, record 100823430, 'Full view', 596 scans) but babel.hathitrust.org still serves a Cloudflare interstitial to curl and to tools/browser_fetch.js, and no Wayback capture exists, so no page text was read. HTRC Extracted Features API (tools/htrc_ef_headwords.py) token positions: 'cobham' at 23 scans, 'bourbourg' at 8 (5 front-matter/index, 3 body), 'cipher' at 13, 'decipher' (its own token) at 5, 'needham'/'nedham' at 0 scans. Scan 62 (cipher+decipher, adjacent to Cobham's scan 61) is the strongest candidate page in the volume but is unread — a lead for a worker with HathiTrust access, not a found decipherment. NOT FOUND stands.",
    "rationale": "Fourteen ciphertexts on 17 pages in Harley MS 287 (DECODE R8477-R8496), English, Armada-year letters of Cobham (a peace commissioner in Flanders) and Needham to Walsingham; DECODE images need a login and nothing was viewed here. Bourdeau's catalogue id 131 is class A because a key record R8497 (1590) sits in the same volume, but it is dated two years later and its fit is untested, so this is a sibling-key lead rather than a located key. The commissioners' letters of 1588 are calendared with decipherments from SP 77, so a printed reading may already exist. Enough text for a checkable reading if the key fits. Re-scored 20 Sept 2026: a key record (R8497) sits in the same volume, two years later, fit untested -- a sibling-key lead. unread=2. A 20 Sept 2026 search-print check (CSP Foreign vol.21 pt.4) found abstracts only, no ciphertext or deciphered block, and did not reach vol.22; inconclusive, does not change the key lead. Vol.22 follow-up, 20 Sept 2026: HathiTrust holds a full-view copy but is Cloudflare-blocked to every available fetch route; the HTRC EF API places a candidate cipher/decipher page next to a Cobham mention but the text is unread. Still inconclusive; does not change the key lead.",
    "total": 33,
    "year": "1588",
@@ -339,7 +318,7 @@
    "competition": 1,
    "weight": 1,
    "next_step": "search-print",
-   "next_step_detail": "Check-solved 23 Sept 2026 (ciphers/bowes-walsingham-1583/NOTES.md): verdict open, Stage 2 verified unsolved. Tomokiyo's Cryptiana page states both letters explicitly 'not deciphered'; no source reports a reading; HathiTrust route to CSP Scotland vol.6 remains the only unblocked lead. || Prior next_step_detail: Check CSP Scotland vol. 6 (Boyd 1910, 1581-83) on archive.org for Bowes's letters of 7 April and 31 July 1583 and whether the cipher words are printed deciphered. Search-print checked 20 Sept 2026: UNREACHABLE, not settled \u2014 vol. 6 is not on archive.org as such (advancedsearch.php found only vols 1, 2, 4, 8, 9, 13); BHO's vol.6 pages are premium content (confirmed for pp.356-434, pp.521-570) and its site search returned 403; HathiTrust's bibliographic API confirms a public-domain full-view copy exists (htid nnc2.ark:/13960/t1gh9nc18, Columbia copy) but babel.hathitrust.org is Cloudflare-blocked to curl (the known documented issue). Next step: fetch that HathiTrust htid with the browser tool per CLAUDE.md's certutil fix, rather than curl.",
+   "next_step_detail": "Check-solved 23 Sept 2026 (ciphers/bowes-walsingham-1583/NOTES.md): verdict open, Stage 2 verified unsolved. Tomokiyo's Cryptiana page states both letters explicitly 'not deciphered'; no source reports a reading; HathiTrust route to CSP Scotland vol.6 remains the only unblocked lead. || Prior next_step_detail: Check CSP Scotland vol. 6 (Boyd 1910, 1581-83) on archive.org for Bowes's letters of 7 April and 31 July 1583 and whether the cipher words are printed deciphered. Search-print checked 20 Sept 2026: UNREACHABLE, not settled — vol. 6 is not on archive.org as such (advancedsearch.php found only vols 1, 2, 4, 8, 9, 13); BHO's vol.6 pages are premium content (confirmed for pp.356-434, pp.521-570) and its site search returned 403; HathiTrust's bibliographic API confirms a public-domain full-view copy exists (htid nnc2.ark:/13960/t1gh9nc18, Columbia copy) but babel.hathitrust.org is Cloudflare-blocked to curl (the known documented issue). Next step: fetch that HathiTrust htid with the browser tool per CLAUDE.md's certutil fix, rather than curl.",
    "rationale": "Transcription only: CottonMSBowes.txt (fetched live 19 Sept 2026, HTTP 200) is Tomokiyo's numeric symbol list keyed to CottonMSBowes.png, about 101 symbols in a dozen fragments with repeated runs, and the BL Cotton images are not online since the 2023 outage; the Caligula B VIII pieces have only catalogue descriptions. The key lead is that elizabeth.htm reconstructs Bowes's own 1580 cipher from Caligula B VIII ff.290-293 (interlinear decipherment) and that Davison 1584 in the same series turned out to be printed deciphered in CSP Scotland VII (Aymeloglu, 16 Sept 2026), so the 1583 letters may likewise be in Boyd's vol. 6. Bourdeau's TARGETS.md lists it as '101 groups of name' and ranked it low; nobody has attempted it. Content is a few names in otherwise readable Scottish reports. Re-scored 20 Sept 2026: elizabeth.htm reconstructs Bowes's own 1580 cipher (Caligula B VIII, interlinear decipherment), a sibling key for the 1583 letters. unread=2. A 20 Sept 2026 search-print check for CSP Scotland vol.6 was inconclusive (not on Internet Archive, BHO paywalled, HathiTrust Cloudflare-blocked); does not change the key lead.",
    "total": 32,
    "year": "1583",
@@ -818,7 +797,7 @@
    "weight": 1,
    "next_step": "archive-request",
    "next_step_detail": "Two-step order in REQUEST.md: first get NLS (or a person who can load manuscripts.nls.uk) to confirm the true leaf count and whether their own cataloguer calls this a cipher or a shorthand/notation; only then request scans (roughly GBP 100-200+ unconfirmed for a full 57-leaf order).",
-   "rationale": "Proposed candidate. manuscripts.nls.uk is unreachable from this environment (HTTP 403 to curl, certificate error to the headless-browser tool, confirmed not an org egress block via /__agentproxy/status) so the catalogue description is reconstructed from five independently-phrased web searches returning identical text, not a first-hand read: 'The cipher alphabet included Roman and Greek letters, astrological symbols, and other apparently invented symbols...divided into sections by horizontal lines...name Baptiste Romin or Romain added in pencil on folios 27 and 28...loosely enclosed fragment of a copy by Robert Mylne of Urquhart's Pantochronachanon (1652)...bifolium paginated 33-36.' High confidence the record is real; the proposer's '57 leaves' figure and the plaintext language are both unverified. No hit anywhere (web, Cipherbrain/Cipher Mysteries, Cryptiana snapshot, DECODE, both solver repos). Scored conservatively pending verification: language_fit 0 (unknown plaintext language \u2014 a real strike for an English-only reader), size 2 rather than 3 (leaf count unconfirmed; per CLAUDE.md rule 2, image/record over transcription/snippet), weight 1 (unclear subject matter, and the cataloguer's own detail \u2014 mixed Roman/Greek/astrological/invented symbols, divided by horizontal lines, alongside an occult-adjacent Urquhart fragment \u2014 reads as plausibly a private/occult notation or commonplace book rather than a systematic substitution cipher, which LESSONS.md's own record suggests is a bad sign for tractability even before considering length). This is the one candidate of the four where the underlying premise (that it is a cipher at all) is not yet established. Re-scored 20 Sept 2026: known case. No key or sibling decipherment is named; the record is reconstructed from search snippets pending NLS confirmation of leaf count and cipher-vs-notation status. unread=3, pending the sample NLS is asked for.",
+   "rationale": "Proposed candidate. manuscripts.nls.uk is unreachable from this environment (HTTP 403 to curl, certificate error to the headless-browser tool, confirmed not an org egress block via /__agentproxy/status) so the catalogue description is reconstructed from five independently-phrased web searches returning identical text, not a first-hand read: 'The cipher alphabet included Roman and Greek letters, astrological symbols, and other apparently invented symbols...divided into sections by horizontal lines...name Baptiste Romin or Romain added in pencil on folios 27 and 28...loosely enclosed fragment of a copy by Robert Mylne of Urquhart's Pantochronachanon (1652)...bifolium paginated 33-36.' High confidence the record is real; the proposer's '57 leaves' figure and the plaintext language are both unverified. No hit anywhere (web, Cipherbrain/Cipher Mysteries, Cryptiana snapshot, DECODE, both solver repos). Scored conservatively pending verification: language_fit 0 (unknown plaintext language — a real strike for an English-only reader), size 2 rather than 3 (leaf count unconfirmed; per CLAUDE.md rule 2, image/record over transcription/snippet), weight 1 (unclear subject matter, and the cataloguer's own detail — mixed Roman/Greek/astrological/invented symbols, divided by horizontal lines, alongside an occult-adjacent Urquhart fragment — reads as plausibly a private/occult notation or commonplace book rather than a systematic substitution cipher, which LESSONS.md's own record suggests is a bad sign for tractability even before considering length). This is the one candidate of the four where the underlying premise (that it is a cipher at all) is not yet established. Re-scored 20 Sept 2026: known case. No key or sibling decipherment is named; the record is reconstructed from search snippets pending NLS confirmation of leaf count and cipher-vs-notation status. unread=3, pending the sample NLS is asked for.",
    "total": 22,
    "year": "18th century",
    "language": "unknown",
@@ -913,7 +892,7 @@
    "year": "1585",
    "language": "fr",
    "material": "Tomokiyo transcription only (glyph labels); images not fetched (State Papers Online) | Tomokiyo's transcription SP53_16_78.txt in the snapshot (from image sp53-16-f78a.jpg); page images paywalled (State Papers Online). | Tomokiyo's transcription SP53_16_79.txt in the snapshot (from image sp53-16-no79b.jpg); page images paywalled.",
-   "key_lead": "Why it stops: Symbol ciphers of the Paris-Rheims exile network in Tomokiyo's glyph-label transcription, 507 and 644 groups. Second session: the two letters share one key (10 of the 20 commonest symbols in common, 2.9 expected), so they pool to 1151 tokens; third session: a numba pipeline now reads clean 507- and 1151-token controls (and a 507-token control with word-signs), yet no. 78 shows no language basin in English, French, Latin, Italian or Spanish, no. 79 sits at random level, and pooling scores worse than either letter, so the same-key claim is withdrawn; a nulls-plus-nomenclator control is not read at this length, so that design stays open. f. 52 (84 tokens) is below unicity. Needs the images and \u2026 | SP53/22 collection of Mary-related keys; sibling no.79 in the same hand; other SP53 pieces had plaintexts in the same volume. | Sibling no.78; SP53/22 keys.",
+   "key_lead": "Why it stops: Symbol ciphers of the Paris-Rheims exile network in Tomokiyo's glyph-label transcription, 507 and 644 groups. Second session: the two letters share one key (10 of the 20 commonest symbols in common, 2.9 expected), so they pool to 1151 tokens; third session: a numba pipeline now reads clean 507- and 1151-token controls (and a 507-token control with word-signs), yet no. 78 shows no language basin in English, French, Latin, Italian or Spanish, no. 79 sits at random level, and pooling scores worse than either letter, so the same-key claim is withdrawn; a nulls-plus-nomenclator control is not read at this length, so that design stays open. f. 52 (84 tokens) is below unicity. Needs the images and … | SP53/22 collection of Mary-related keys; sibling no.79 in the same hand; other SP53 pieces had plaintexts in the same volume. | Sibling no.78; SP53/22 keys.",
    "size": "507 + 644 + 84 tokens | about 507 tokens",
    "sources": [
     "bourdeau",
@@ -948,7 +927,7 @@
   },
   {
    "name": "Georg Adam Starhemberg, Paris, to Vienna, 23 May 1758 (variable-length figure code, Cryptiana transcription)",
-   "shelfmark": "Cryptiana transcription (credited to Pillon); original image not found, source suggests \u00d6StA Frankreich Varia 28-14; key DECODE R1695/R1698 ; private image (Alexandre Pillon)",
+   "shelfmark": "Cryptiana transcription (credited to Pillon); original image not found, source suggests ÖStA Frankreich Varia 28-14; key DECODE R1695/R1698 ; private image (Alexandre Pillon)",
    "year": "1758",
    "language": "de",
    "material": "Transcription only (Cryptiana); no page image located | Tomokiyo's transcription (his own grouping) in variable2.htm from an image supplied privately by Alexandre Pillon; image not in the snapshot.",
@@ -968,7 +947,7 @@
   },
   {
    "name": "Third variable-length figure code from the Austrian archives, DECODE R2179 (1627/1644, Italian cleartext)",
-   "shelfmark": "DECODE R2179 ; \u00d6StA HHStA (DECODE R2179); Starhemberg 1758 (cryptiana variable2.htm)",
+   "shelfmark": "DECODE R2179 ; ÖStA HHStA (DECODE R2179); Starhemberg 1758 (cryptiana variable2.htm)",
    "year": "1627/1644",
    "language": "it",
    "material": "Tomokiyo's transcription of R2179 in variable2.htm; DECODE images behind login. | cryptiana transcription (variable2.htm)",
@@ -988,11 +967,11 @@
   },
   {
    "name": "Ferdinand Sigmund Kurz von Senftenau (Hamburg/Glueckstadt) to Trauttmansdorff, Ferdinand III and Schwarzenberg, nine letters Jan-Apr 1639 (SOA Plzen, RA Trauttmansdorff, DECODE R3811-R4736)",
-   "shelfmark": "St\u00e1tn\u00ed oblastn\u00ed archiv v Plzni, pracovi\u0161t\u011b Kl\u00e1\u0161ter u Nepomuka, Rodinn\u00fd archiv (DECODE R3811-R3815, R4625, R4645, R4734, R4736; R5019-R5024, R5029) ; Statni oblastni archiv v Plzni, Rodinny archiv Trauttmansdorffu, inv. 200, kt. 9; DECODE R3811-R3815, R4625, R4645, R4734, R4736 ; SOA Plze\u0148, RA Trauttmansdorff inv. 200 kart. 9 (DECODE R3811-R3815, R4625, R4645, R4734, R4736)",
+   "shelfmark": "Státní oblastní archiv v Plzni, pracoviště Klášter u Nepomuka, Rodinný archiv (DECODE R3811-R3815, R4625, R4645, R4734, R4736; R5019-R5024, R5029) ; Statni oblastni archiv v Plzni, Rodinny archiv Trauttmansdorffu, inv. 200, kt. 9; DECODE R3811-R3815, R4625, R4645, R4734, R4736 ; SOA Plzeň, RA Trauttmansdorff inv. 200 kart. 9 (DECODE R3811-R3815, R4625, R4645, R4734, R4736)",
    "year": "1638-1639; 1720-1722",
    "language": "de",
    "material": "DECODE images public; key attached to R3811-R3815, R4625, R4645, R4734, R4736 and R5029; inline cleartext; 3-38 pp. per record. Highest-ranked entries in the secondary DECODE ranking. | DECODE images public; key attached to every record; inline cleartext | DECODE images (public), 73 images transcribed here",
-   "key_lead": "Keys attached on DECODE; 2 keys from the same collection within 20 years for the Windischgr\u00e4tz group. | Key attached to every record; two other Kurtz letters of 1639 in the same fonds (R4685, R4761) marked decrypted; Mirka, Zapadoceske archivy 2012 pp. 44-72 (survey only). Source's first pick: R4736 (3 pp). | Key rebuilt; all nine read in part. The interlinear glosses on R3811 p.1 give a regular table: 41\u2013100 are consonant+vowel signs, two consonants per ten in reverse alphabetical order (41 r, 46 p, 51 n \u2026 91 b), units o i e a, plus a separate -u series in the fifth places (45 pu \u2026 100 ru); 1\u201340 and ~20 letter/graphic signs are letter homophones (a few for pairs: 9 te, 6 se). 73 images transcribed (22,913 signs, 98% keyed); structured annealer + German LM. Content: Ban\u00e9r in Lower Saxony, Arnim's pardon, the Danish mediation and its expiry, \"ein teufflisch inventum\" of universal treaties",
+   "key_lead": "Keys attached on DECODE; 2 keys from the same collection within 20 years for the Windischgrätz group. | Key attached to every record; two other Kurtz letters of 1639 in the same fonds (R4685, R4761) marked decrypted; Mirka, Zapadoceske archivy 2012 pp. 44-72 (survey only). Source's first pick: R4736 (3 pp). | Key rebuilt; all nine read in part. The interlinear glosses on R3811 p.1 give a regular table: 41–100 are consonant+vowel signs, two consonants per ten in reverse alphabetical order (41 r, 46 p, 51 n … 91 b), units o i e a, plus a separate -u series in the fifth places (45 pu … 100 ru); 1–40 and ~20 letter/graphic signs are letter homophones (a few for pairs: 9 te, 6 se). 73 images transcribed (22,913 signs, 98% keyed); structured annealer + German LM. Content: Banér in Lower Saxony, Arnim's pardon, the Danish mediation and its expiry, \"ein teufflisch inventum\" of universal treaties",
    "size": "about 16 records, roughly 120 pp. | 9 letters, 3-38 pp each (R4736 3, R4645 4, R3815 5, R4734 5, R3814 8, R3811 9, R4625 9, R3812 25, R3813 38) | nine letters, 22,913 signs",
    "sources": [
     "archives",
@@ -1010,11 +989,11 @@
   },
   {
    "name": "Leopold Viktorin von Windischgraetz to Ernst Friedrich von Windischgraetz, 18 Nov 1721 (SOA Plzen, RA Windischgraetz, DECODE R5029)",
-   "shelfmark": "Statni oblastni archiv v Plzni, Rodinny archiv Windischgraetzu, inv. 1433; DECODE R5019-R5024, R5029 ; SOA Plze\u0148, pracovi\u0161t\u011b Kl\u00e1\u0161ter u Nepomuka, Rodinn\u00fd archiv Windischgr\u00e4tz\u016f, inv. nr. 1433, karton nr. 202",
+   "shelfmark": "Statni oblastni archiv v Plzni, Rodinny archiv Windischgraetzu, inv. 1433; DECODE R5019-R5024, R5029 ; SOA Plzeň, pracoviště Klášter u Nepomuka, Rodinný archiv Windischgrätzů, inv. nr. 1433, karton nr. 202",
    "year": "1720-1722",
    "language": "de",
    "material": "DECODE images public; inline cleartext; key attached to R5029 only | DECODE images (public); not viewed here; type: homophonic, nomenclator; numerical",
-   "key_lead": "Key attached to R5029 (score 9, top of the DECODE ranking); four Ernst Friedrich von Windischgraetz letters of 1721 (R5025-R5028) marked decrypted | class A (siblings with decipherment in the same volume); 2 key record(s) from the same series on DECODE, nearest R5018 (1720); DECODE note: For more information about the sender and receiver see e. g.: Windischgr\u00e4tz, Ernst Friedrich von Windischgr\u00e4tz, Leopold Viktorin von Related paper: M\u00cdRKA, Jakub. Ran\u011b novov\u011bk\u00e1 \u0161ifrovan\u00e1 korespondence ve fondech \u2026; verify: Fetch the images and the key record(s); test the key on the first lines.",
+   "key_lead": "Key attached to R5029 (score 9, top of the DECODE ranking); four Ernst Friedrich von Windischgraetz letters of 1721 (R5025-R5028) marked decrypted | class A (siblings with decipherment in the same volume); 2 key record(s) from the same series on DECODE, nearest R5018 (1720); DECODE note: For more information about the sender and receiver see e. g.: Windischgrätz, Ernst Friedrich von Windischgrätz, Leopold Viktorin von Related paper: MÍRKA, Jakub. Raně novověká šifrovaná korespondence ve fondech …; verify: Fetch the images and the key record(s); test the key on the first lines.",
    "size": "7 letters, 3-8 pp (R5029 8 pp) | 8 pp.",
    "sources": [
     "aymeloglu",
@@ -1030,7 +1009,7 @@
   },
   {
    "name": "Brulart de Sillery (chancellor) to Brulart de Leon, 15 Sept 1615 and 25 July 1617 (BnF fr. 18043 ff.83-84, 18044 ff.109-110; DECODE R2785-R2786)",
-   "shelfmark": "BnF Fran\u00e7ais 18043 ff. 83-84 (DECODE R2785); Fran\u00e7ais 18044 ff. 109-110 (DECODE R2786) ; BnF Francais 18043 ff.83-84 and 18044 ff.109-110; DECODE R2785, R2786",
+   "shelfmark": "BnF Français 18043 ff. 83-84 (DECODE R2785); Français 18044 ff. 109-110 (DECODE R2786) ; BnF Francais 18043 ff.83-84 and 18044 ff.109-110; DECODE R2785, R2786",
    "year": "1615-1617",
    "language": "fr",
    "material": "DECODE images public; key attached to both records; inline cleartext; 3 pp. each. Ranked 8/9 in unsolved-ciphers decode-ranked.md. | Gallica images public; key attached; inline plaintext and cleartext",
@@ -1128,7 +1107,7 @@
   },
   {
    "name": "Louis XIV to the duc de Chaulnes, Rome, 10 July 1690 (300-group one-part code; Traces Ecrites images)",
-   "shelfmark": "AE Rome Corr. 331-332 (minute); page images via Traces \u00c9crites / Cipherbrain 31 Jan 2019 ; traces-ecrites.com exhibition 'L'affaire de la regale'",
+   "shelfmark": "AE Rome Corr. 331-332 (minute); page images via Traces Écrites / Cipherbrain 31 Jan 2019 ; traces-ecrites.com exhibition 'L'affaire de la regale'",
    "year": "1690",
    "language": "fr",
    "material": "page images, transcription verified | Images on traces-ecrites.com (linked from louisxiv.htm); Bourdeau's verified transcription in cyphersolver/chaulnes.",
@@ -1152,7 +1131,7 @@
    "year": "1567",
    "language": "fr",
    "material": "DECODE images public; inline cleartext | printed facsimile plate on Gallica; transcription here (ducroc/ct.txt) | Printed facsimile and text in Destray (1924) p.53 and plate (Gallica). No transcription in the snapshot. | DECODE images (public); not viewed here; type: type not given; graphic signs",
-   "key_lead": "Why it stops: Transcribed from the Gallica plate; a symbol cipher too short for an unconstrained solve unless the ticks turn out to be separators | Charles IX to du Croc (same book) solved by Lasry 2022; La Forest-du Croc cipher 1567 reproduced in Destray. | class C (no key, no sibling); DECODE note: Printed in Paul Destray (1924), Un diplomate fran\u00e7ais du XVIe si\u00e8cle: Philibert du Croc (Gallica) (p.80 and the next leaf). See S. Tomokiyo, \"French ciphers during the Reigns of Charles IX and Henry III\" \u2026; verify: Read the cited publication first: it may already give the reading.",
+   "key_lead": "Why it stops: Transcribed from the Gallica plate; a symbol cipher too short for an unconstrained solve unless the ticks turn out to be separators | Charles IX to du Croc (same book) solved by Lasry 2022; La Forest-du Croc cipher 1567 reproduced in Destray. | class C (no key, no sibling); DECODE note: Printed in Paul Destray (1924), Un diplomate français du XVIe siècle: Philibert du Croc (Gallica) (p.80 and the next leaf). See S. Tomokiyo, \"French ciphers during the Reigns of Charles IX and Henry III\" …; verify: Read the cited publication first: it may already give the reading.",
    "size": "1 p | c. 147 symbols, 40 distinct | 2 pp.",
    "sources": [
     "aymeloglu",
@@ -1175,7 +1154,7 @@
    "year": "1563",
    "language": "fr",
    "material": "Gallica images fetched | not viewed here",
-   "key_lead": "Why it stops: Images fetched and Tomokiyo's 1561\u201364 key calibrated on the deciphered siblings; no continuous reading of the four target letters yet | class B (partial key in print or known family); verify: Test Tomokiyo's Rennes keys on f. 55 first.; Reconstructed sibling keys exist; probably a variant or a key change. Content is Court instructions to an ambassador.",
+   "key_lead": "Why it stops: Images fetched and Tomokiyo's 1561–64 key calibrated on the deciphered siblings; no continuous reading of the four target letters yet | class B (partial key in print or known family); verify: Test Tomokiyo's Rennes keys on f. 55 first.; Reconstructed sibling keys exist; probably a variant or a key change. Content is Court instructions to an ambassador.",
    "size": "four letters; Bourdin c. 30 lines all cipher",
    "sources": [
     "bourdeau"
@@ -1191,10 +1170,10 @@
   {
    "name": "Mondoucet to Charles IX, Brussels, 13 July 1572, and the c. 20-letter cipher corpus of BnF fr. 16127",
    "shelfmark": "BnF fr. 16127 ff. 60-61 (13 July 1572) and c. 20 sibling letters",
-   "year": "1571\u201374",
+   "year": "1571–74",
    "language": "fr",
    "material": "Gallica images; hand and glyph-cluster transcriptions",
-   "key_lead": "Why it stops: The volume swept entire: Mondoucet's despatches from the Low Countries arrive in one cipher (letter-forms in variants, figures, ~20 signs) and carry the Court's decipherments, except 13 July 1572. Two verbatim pairs (29 Aug 1572 with f. 9; 16 July 1572 with f. 64, glossed word by word on the leaf) transcribed by hand and by glyph clustering; four aligners, each validated on synthetic controls, sit at the shuffled baseline; 1.3\u20131.4 glyphs per letter even on the glossed pair, and the 1573 marginal readings are abridged. Key open; route is hand-anchoring from the f. 62r glosses",
+   "key_lead": "Why it stops: The volume swept entire: Mondoucet's despatches from the Low Countries arrive in one cipher (letter-forms in variants, figures, ~20 signs) and carry the Court's decipherments, except 13 July 1572. Two verbatim pairs (29 Aug 1572 with f. 9; 16 July 1572 with f. 64, glossed word by word on the leaf) transcribed by hand and by glyph clustering; four aligners, each validated on synthetic controls, sit at the shuffled baseline; 1.3–1.4 glyphs per letter even on the glossed pair, and the 1573 marginal readings are abridged. Key open; route is hand-anchoring from the f. 62r glosses",
    "size": "c. 20 letters; 13 July 1572 two folios",
    "sources": [
     "bourdeau"
@@ -1228,11 +1207,11 @@
   },
   {
    "name": "Colbert correspondence passages: Charost 1675, Gravel to Maulevrier 1674, Ratisbon 1665 (BnF Melanges de Colbert 127, 168bis, 172)",
-   "shelfmark": "BnF M\u00e9langes Colbert 127 f. 349, 168bis, 172 (DECODE R2734) ; BnF Melanges de Colbert 172 f.23 ; BnF Melanges de Colbert 168bis f.553 ; BnF Melanges de Colbert 127 f.349",
-   "year": "1665\u201375",
+   "shelfmark": "BnF Mélanges Colbert 127 f. 349, 168bis, 172 (DECODE R2734) ; BnF Melanges de Colbert 172 f.23 ; BnF Melanges de Colbert 168bis f.553 ; BnF Melanges de Colbert 127 f.349",
+   "year": "1665–75",
    "language": "fr",
    "material": "Gallica images, transcription here | Images on Gallica (Melanges de Colbert 172 f.23). No transcription in the snapshot. | Images on Gallica (Melanges de Colbert 168bis f.553); one passage quoted in louisxiv0.htm. No full transcription in the snapshot. | Images on Gallica (Melanges de Colbert 127 f.349). No transcription in the snapshot.",
-   "key_lead": "Why it stops: Read from the Gallica images: the Charost letter (Calais, 3 July 1675, not 1673) and the Gravel\u2013Maulevrier copy (Mainz, 1674) are one key, Maulevrier's, 106 plain figures 52\u2013489 between them. The printed catalogue located all 22 other Charost letters online and both Maulevrier letters: every one in clear. A monotone annealer reads matched controls of both strict alphabetical designs this office used and fails the target under each; looser designs fail their own controls. Probably a word nomenclator; needs the key or a clear copy of the news | Same key as Gravel-Maulevrier 1674 (Bourdeau); Colbert-Gravel 1672 and Colbert-Conde 1673 keys in louisxiv0.htm. | Same key as Charost (Bourdeau cyphersolver/colbert). | Colbert-Millet Cipher (1665) in the same volume said to differ.",
+   "key_lead": "Why it stops: Read from the Gallica images: the Charost letter (Calais, 3 July 1675, not 1673) and the Gravel–Maulevrier copy (Mainz, 1674) are one key, Maulevrier's, 106 plain figures 52–489 between them. The printed catalogue located all 22 other Charost letters online and both Maulevrier letters: every one in clear. A monotone annealer reads matched controls of both strict alphabetical designs this office used and fails the target under each; looser designs fail their own controls. Probably a word nomenclator; needs the key or a clear copy of the news | Same key as Gravel-Maulevrier 1674 (Bourdeau); Colbert-Gravel 1672 and Colbert-Conde 1673 keys in louisxiv0.htm. | Same key as Charost (Bourdeau cyphersolver/colbert). | Colbert-Millet Cipher (1665) in the same volume said to differ.",
    "size": "55 + 51 groups (Charost, Gravel-Maulevrier); item a 3 names | short paragraph; numbers up to 489 | short passages; numbers up to 474 | a few words",
    "sources": [
     "bourdeau",
@@ -1251,7 +1230,7 @@
   {
    "name": "Henry of Navarre to Segur, f.143 (1583), in a cipher different from ff.233/239/288v (BnF 500 Colbert 401)",
    "shelfmark": "BnF 500 Colbert 401 f. 143 (ff. 233, 239, 288v solved) ; BnF 500 de Colbert 401 f.143",
-   "year": "1583\u201386",
+   "year": "1583–86",
    "language": "fr",
    "material": "Gallica IIIF images | Images on Gallica (BnF 500 de Colbert 401). No transcription in the snapshot.",
    "key_lead": "Why it stops: Blocked on Gallica access; the sibling cipher's design is known | Bourdeau's cyphersolver/segur keys for ff.233, 239, 288v; henryiii.htm reads the start of a f.143 in a Mayenne-Villeroi cipher (different volume).",
@@ -1274,7 +1253,7 @@
    "year": "1526",
    "language": "fr",
    "material": "Gallica microfilm images; Tomokiyo 1526 key",
-   "key_lead": "86 of about 106 lines read (17 Sept 2026). Not a cryptanalytic problem: Tomokiyo published the 1526 key in 2020 with no plaintext, but reading which glyph sits under which letter in his table *image* by eye slips a column \u2014 the first pass here had l, m and n each one place wrong and H under r, which corrupted every reading built on it. Re-measured off the image (header letters located, ink blobs assigned to the nearest column, every one within 15 px of a centre), the table resolves a control line glyph for glyph with nothing left over: *s [null] qui estoit en la court de Savoye [null] est party pour venir icy*. 86 of the 106 lines then read by hand off the microfilm against numbered-token \u2026",
+   "key_lead": "86 of about 106 lines read (17 Sept 2026). Not a cryptanalytic problem: Tomokiyo published the 1526 key in 2020 with no plaintext, but reading which glyph sits under which letter in his table *image* by eye slips a column — the first pass here had l, m and n each one place wrong and H under r, which corrupted every reading built on it. Re-measured off the image (header letters located, ink blobs assigned to the nearest column, every one within 15 px of a centre), the table resolves a control line glyph for glyph with nothing left over: *s [null] qui estoit en la court de Savoye [null] est party pour venir icy*. 86 of the 106 lines then read by hand off the microfilm against numbered-token …",
    "size": "106 lines, 20 unread",
    "sources": [
     "bourdeau"
@@ -1292,7 +1271,7 @@
    "year": "1601",
    "language": "fr",
    "material": "Gallica images; minute of 10 Nov in clear (f. 36)",
-   "key_lead": "10 Nov read, key largely recovered (17 Sept 2026): the notice's \"copie du n\u00b0 pr\u00e9c\u00e9dent\" (f. 36) is the minute of the 10 Nov letter in clear; EM alignment of cipher and minute, with the marginal decipherments of 8 Nov and 10 Dec, gives a Villeroy-office key of the design Bazeries printed for B\u00e9thune's brother in 1599 (letters with homophones, dotted/comma letters for words, two-digit figures for names: 48 Cardinal, 17 Aldobrandin, 7 le Roy d'Espagne). Ten thousand \u00e9cus to Cardinal Aldobrandini for the Peace of Lyon and ten thousand more promised, \"sans avoir esgard \u00e0 l'arrest obtenu par lad. duchesse de Nemours\". The 9 Nov letter (one page in cipher) reads about six words in ten after a 4\u00d7 \u2026",
+   "key_lead": "10 Nov read, key largely recovered (17 Sept 2026): the notice's \"copie du n° précédent\" (f. 36) is the minute of the 10 Nov letter in clear; EM alignment of cipher and minute, with the marginal decipherments of 8 Nov and 10 Dec, gives a Villeroy-office key of the design Bazeries printed for Béthune's brother in 1599 (letters with homophones, dotted/comma letters for words, two-digit figures for names: 48 Cardinal, 17 Aldobrandin, 7 le Roy d'Espagne). Ten thousand écus to Cardinal Aldobrandini for the Peace of Lyon and ten thousand more promised, \"sans avoir esgard à l'arrest obtenu par lad. duchesse de Nemours\". The 9 Nov letter (one page in cipher) reads about six words in ten after a 4× …",
    "size": "22 Nov letter ff. 46r-47v",
    "sources": [
     "bourdeau"
@@ -1310,7 +1289,7 @@
    "year": "1593",
    "language": "fr",
    "material": "Gallica images",
-   "key_lead": "Two of seven read (17 Sept 2026). Tomokiyo's Nevers cipher no. 46 (fr. 3995 f. 87, read from the full-resolution Gallica image; two-digit alphabet with homophones, barred/plain/dotted word lists, 1 as an intercalated null, checked against the office's decipherment of a Gondi letter in the same key) resolves every figure of both Pisany letters: 8 Sept reads whole (\"l'on dissuadoit [le Roy] de rechercher [que le Pape] luy donnast l'absolution \u2026 qu'il n'estoyt besoin qu'il allast sans cela, parce qu'il ne feroit rien \u2026 l'on n'a volont\u00e9 de contanter le Pape, que l'on n'y aille poynt\"), 14 Oct in long stretches. The five letters to Revol are in the Court's symbol cipher no. 60, not no. 46: the \u2026",
+   "key_lead": "Two of seven read (17 Sept 2026). Tomokiyo's Nevers cipher no. 46 (fr. 3995 f. 87, read from the full-resolution Gallica image; two-digit alphabet with homophones, barred/plain/dotted word lists, 1 as an intercalated null, checked against the office's decipherment of a Gondi letter in the same key) resolves every figure of both Pisany letters: 8 Sept reads whole (\"l'on dissuadoit [le Roy] de rechercher [que le Pape] luy donnast l'absolution … qu'il n'estoyt besoin qu'il allast sans cela, parce qu'il ne feroit rien … l'on n'a volonté de contanter le Pape, que l'on n'y aille poynt\"), 14 Oct in long stretches. The five letters to Revol are in the Court's symbol cipher no. 60, not no. 46: the …",
    "size": "9 Oct copy c. 90 symbols; five Revol letters",
    "sources": [
     "bourdeau"
@@ -1347,7 +1326,7 @@
    "year": "1589",
    "language": "fr",
    "material": "Gallica images",
-   "key_lead": "Read in part; the bound keys do not fit (18 Sept 2026). The catalogue hoped one of the three keys bound in the volume (nos. 53, 61, 69) would read it. None does: no. 53 is numerical and the letter has no figures, no. 61 is an Italian key with other signs, and in no. 69 the square is e where the letter needs n. The letter is almost all in clear, with the news of Henri III's murder reaching Rome and \"l'on a proclam\u00e9 Roy a Paris Mons. le Cardinal de Bourbon\". Its ~90 cipher signs are in Tomokiyo's Nevers\u2013Piles alphabet (his source, fr. 3612, is not digitised), filled out from BnF fr. 4715 f. 2, a 1586 letter in the same cipher with its decipherment written above the lines (3 = d, 4 = h, \u2207 = m, \u2026",
+   "key_lead": "Read in part; the bound keys do not fit (18 Sept 2026). The catalogue hoped one of the three keys bound in the volume (nos. 53, 61, 69) would read it. None does: no. 53 is numerical and the letter has no figures, no. 61 is an Italian key with other signs, and in no. 69 the square is e where the letter needs n. The letter is almost all in clear, with the news of Henri III's murder reaching Rome and \"l'on a proclamé Roy a Paris Mons. le Cardinal de Bourbon\". Its ~90 cipher signs are in Tomokiyo's Nevers–Piles alphabet (his source, fr. 3612, is not digitised), filled out from BnF fr. 4715 f. 2, a 1586 letter in the same cipher with its decipherment written above the lines (3 = d, 4 = h, ∇ = m, …",
    "size": "c. 90 cipher signs, c. 30 open",
    "sources": [
     "bourdeau"
@@ -1361,11 +1340,11 @@
   },
   {
    "name": "Charles III of Lorraine to the comte de Vaudemont, Nancy, 18 June 1592, and Dinteville to Nevers, 3 July 1592 (BnF fr. 3621 nos. 97, 116; DECODE R9449, R9451)",
-   "shelfmark": "BnF fr. 3621 no. 97 (DECODE R9449 Non-decrypted) ; BnF, Fran\u00e7ais 3621, no. 116, f. 130",
+   "shelfmark": "BnF fr. 3621 no. 97 (DECODE R9449 Non-decrypted) ; BnF, Français 3621, no. 116, f. 130",
    "year": "1592",
    "language": "fr",
    "material": "Gallica images; glyph transcription here | DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical",
-   "key_lead": "Solved, read in part (18 Sept 2026). The piece is catalogued as unsolved \u2014 DECODE record 9449 is this exact letter and gives its status `Non-decrypted` \u2014 and no key for it has ever been published. Verify step answered negatively first: no. 22 is a plaintext decipherment with no cipher on the sheet (DECODE marks it `Decrypted`), so the hoped-for crib does not exist in the volume. Four 1592 key sheets in the Nevers key book fr. 3995 whose DECODE profile matched were fetched and all four eliminated on their own evidence: fol. 32 a jargon dictionary, fol. 83\u201384 an all-digit cipher that merely lists 'Duc de Lorraine' as entry 46, fol. 98 endorsed \"Chifre d'entre le Duc de Parme et le Roy \u2026 | class A (siblings with decipherment in the same volume); DECODE note: Letter, with cipher and decryption, from Joachim de Jaucourt Baron de Dinteville to the Duke of Nivernois. From Langres, July 3rd 1592",
+   "key_lead": "Solved, read in part (18 Sept 2026). The piece is catalogued as unsolved — DECODE record 9449 is this exact letter and gives its status `Non-decrypted` — and no key for it has ever been published. Verify step answered negatively first: no. 22 is a plaintext decipherment with no cipher on the sheet (DECODE marks it `Decrypted`), so the hoped-for crib does not exist in the volume. Four 1592 key sheets in the Nevers key book fr. 3995 whose DECODE profile matched were fetched and all four eliminated on their own evidence: fol. 32 a jargon dictionary, fol. 83–84 an all-digit cipher that merely lists 'Duc de Lorraine' as entry 46, fol. 98 endorsed \"Chifre d'entre le Duc de Parme et le Roy … | class A (siblings with decipherment in the same volume); DECODE note: Letter, with cipher and decryption, from Joachim de Jaucourt Baron de Dinteville to the Duke of Nivernois. From Langres, July 3rd 1592",
    "size": "1,071 letter symbols, 44 forms, 38 nomenclator figures | 1 pp.",
    "sources": [
     "bourdeau"
@@ -1384,7 +1363,7 @@
    "year": "1586",
    "language": "fr",
    "material": "Gallica images",
-   "key_lead": "f. 143 about half read (17 Sept 2026): 21 lines transcribed; the reading agrees with Tomokiyo's partial table and runs on past it (*il se vouloit d\u00e9partir du roi de Navarre*). The other nine leaves are transcription work.",
+   "key_lead": "f. 143 about half read (17 Sept 2026): 21 lines transcribed; the reading agrees with Tomokiyo's partial table and runs on past it (*il se vouloit départir du roi de Navarre*). The other nine leaves are transcription work.",
    "size": "ten leaves; f. 143 half read",
    "sources": [
     "bourdeau"
@@ -1399,10 +1378,10 @@
   {
    "name": "BnF Espagnol 318: Catholic Monarchs' ciphered letters 1497-1504 (nos. 5, 92, 93, 94, 95; Viceroy of Sicily 1503, Lorenzo Suarez 1504)",
    "shelfmark": "BnF Espagnol 318 nos. 93, 94 (ark btv1b52503046q); key BNE MSS 20.211/52 ; BnF Espagnol 318 ff.120-121, no.94 ; BnF Espagnol 318 f.118, no.93 ; BnF Espagnol 318 f.122, no.95",
-   "year": "1497\u20131504",
+   "year": "1497–1504",
    "language": "es",
    "material": "Gallica images | Images on Gallica (BnF Espagnol 318). No transcription in the snapshot. | Images on Gallica (p.448 of pdf). No transcription in the snapshot. | Images on Gallica; Lasry's approximate reading printed in GL.htm.",
-   "key_lead": "Two keys found, one letter part read, one found already in print (17 Sept 2026). The volume holds five ciphered letters, not the four the catalogue listed. No. 5 (Federico III of Naples, 11 Jan 1497) was never open: Ivan Parisi printed the whole text in *Studi di storia medioevale e di diplomatica* n.s. IV (2020) 157\u2013177, having shown that the king of Naples had it enciphered in the Spanish ambassador Joan Ram Escriv\u00e0's own cipher, by the ambassador's hand (a Spanish speaker's failure to use the double-*s* sign gives him away). No. 92 (the Great Captain \u2192 Lorenzo Su\u00e1rez, 17 Aug 1500, unread) is in the *Cifra general de los Reyes Cat\u00f3licos* printed by Galende D\u00edaz in 1994 \u2014 Tomokiyo proposed \u2026 | Known ciphers read ff.5-6 and f.116 of the same volume; Lasry's approximate 1497 solution (no.95) in GL.htm. | Great Captain's cipher letter to Lorenzo Suarez of 17 August 1500 (f.116) uses a know",
+   "key_lead": "Two keys found, one letter part read, one found already in print (17 Sept 2026). The volume holds five ciphered letters, not the four the catalogue listed. No. 5 (Federico III of Naples, 11 Jan 1497) was never open: Ivan Parisi printed the whole text in *Studi di storia medioevale e di diplomatica* n.s. IV (2020) 157–177, having shown that the king of Naples had it enciphered in the Spanish ambassador Joan Ram Escrivà's own cipher, by the ambassador's hand (a Spanish speaker's failure to use the double-*s* sign gives him away). No. 92 (the Great Captain → Lorenzo Suárez, 17 Aug 1500, unread) is in the *Cifra general de los Reyes Católicos* printed by Galende Díaz in 1994 — Tomokiyo proposed … | Known ciphers read ff.5-6 and f.116 of the same volume; Lasry's approximate 1497 solution (no.95) in GL.htm. | Great Captain's cipher letter to Lorenzo Suarez of 17 August 1500 (f.116) uses a know",
    "size": "no. 93/94: f. 118r 1,016 signs",
    "sources": [
     "bourdeau",
@@ -1420,11 +1399,11 @@
   },
   {
    "name": "Marquis del Vasto to Charles V and the letter to 'Garbino', 1527-28 (BnF fr. 3022 nos. 6, 10, 20; Ranzo siblings fr. 2988, Clair. 327)",
-   "shelfmark": "BnF fr. 3022 no. 20 (ff. 44r-46v); Ranzo letters fr. 2988 ; BnF fr. 3022 no. 20 (ff. 44r\u201346v; addition sheet and jargon ff. 48\u201350v) ; BnF Clair. 327 ff.279-280; BnF fr.2988 f.2, f.9; BnF fr.3019 f.73; BnF fr.3022 f.44 ; BnF fr.3022 f.16 (no.6) and ff.40-43 (no.19)",
-   "year": "1527\u201328",
+   "shelfmark": "BnF fr. 3022 no. 20 (ff. 44r-46v); Ranzo letters fr. 2988 ; BnF fr. 3022 no. 20 (ff. 44r–46v; addition sheet and jargon ff. 48–50v) ; BnF Clair. 327 ff.279-280; BnF fr.2988 f.2, f.9; BnF fr.3019 f.73; BnF fr.3022 f.44 ; BnF fr.3022 f.16 (no.6) and ff.40-43 (no.19)",
+   "year": "1527–28",
    "language": "it",
    "material": "Gallica images; all groups transcribed | Gallica ark btv1b90601558; leaf viewed on the image | Images on Gallica (BnF Clair.327; fr.2988, fr.3019, fr.3022 f.44). No transcription in the snapshot; venetian.htm gives only a description. | Images on Gallica; Lasry's preliminary syllabic-solver reading printed in GL.htm SEC3.",
-   "key_lead": "Two of three read (18 Sept 2026). No. 10 (Ischia, 27 Sept 1527) was already solved by George Lasry (2023), and Tomokiyo edited the text (2026). No. 6, catalogued as an anonymous report, is del Vasto's own letter of early December 1527. Lasry's letter-level decryption checks against the ciphertext, and about forty of its b-/c-/d- code groups are identified here from context (doz = Lautreque, deh = la Marca, dnb = dinero \u2026). It reads as his plan to secure Siena and take Perugia and Urbino; about fifteen groups remain open. No. 20 (Madrid, 11 Apr 1528, to \"Garbino\") is in Hieronimo Ranzo's initial-letter code. The numbering was tested and is not alphabetical. All 1,315 groups were transcribed, \u2026 | class C (no key, no sibling); verify: Look for Ranzo's key or a deciphered Ranzo letter (Simancas, Vienna HHStA) before any statistical attack.; Large one-part-looking code, one letter, no key; se",
+   "key_lead": "Two of three read (18 Sept 2026). No. 10 (Ischia, 27 Sept 1527) was already solved by George Lasry (2023), and Tomokiyo edited the text (2026). No. 6, catalogued as an anonymous report, is del Vasto's own letter of early December 1527. Lasry's letter-level decryption checks against the ciphertext, and about forty of its b-/c-/d- code groups are identified here from context (doz = Lautreque, deh = la Marca, dnb = dinero …). It reads as his plan to secure Siena and take Perugia and Urbino; about fifteen groups remain open. No. 20 (Madrid, 11 Apr 1528, to \"Garbino\") is in Hieronimo Ranzo's initial-letter code. The numbering was tested and is not alphabetical. All 1,315 groups were transcribed, … | class C (no key, no sibling); verify: Look for Ranzo's key or a deciphered Ranzo letter (Simancas, Vienna HHStA) before any statistical attack.; Large one-part-looking code, one letter, no key; se",
    "size": "1,315 groups (+2,600 Ranzo)",
    "sources": [
     "bourdeau",
@@ -1567,7 +1546,7 @@
    "year": "1610",
    "language": "fr",
    "material": "no transcription | Images on Gallica (BnF fr.3789 f.17, f.19). No transcription in the snapshot. | Gallica ark btv1b9059628m; not viewed here",
-   "key_lead": "none named | 'A similar-looking cipher' in Henry IV's letter of 5 January 1610 (partly solved by Lasry; key said to be in BnF). | class C (no key, no sibling); verify: Try Tomokiyo's Br\u00e8ves keys; check Br\u00e8ves' Rome despatches for a reply quoting it.; Single letter, no sibling; Br\u00e8ves' other ciphers (1593\u201396, 1602\u201303) are known and worth testing.",
+   "key_lead": "none named | 'A similar-looking cipher' in Henry IV's letter of 5 January 1610 (partly solved by Lasry; key said to be in BnF). | class C (no key, no sibling); verify: Try Tomokiyo's Brèves keys; check Brèves' Rome despatches for a reply quoting it.; Single letter, no sibling; Brèves' other ciphers (1593–96, 1602–03) are known and worth testing.",
    "size": "short passages",
    "sources": [
     "bourdeau",
@@ -1584,11 +1563,11 @@
   },
   {
    "name": "Letters to the duc de Mercoeur, 1586-87, incl. the short f.151 in a different key (BnF fr. 15564; DECODE R4155-R4167)",
-   "shelfmark": "BnF fr. 15564 f. 151 (Gallica) ; BnF fr.15564 f.151 ; BnF, Fran\u00e7ais 15564 (3 items) ; BnF, Fran\u00e7ais 15564 (2 items) ; BnF, Fran\u00e7ais 15564 fol. 30",
+   "shelfmark": "BnF fr. 15564 f. 151 (Gallica) ; BnF fr.15564 f.151 ; BnF, Français 15564 (3 items) ; BnF, Français 15564 (2 items) ; BnF, Français 15564 fol. 30",
    "year": "1586",
    "language": "fr",
    "material": "not viewed here | Images on Gallica; no transcription in the snapshot. | DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical",
-   "key_lead": "class C (no key, no sibling); verify: Test Lasry's fr. 15564 keys; read the endorsement.; One letter, unknown sender; Lasry's keys for the volume are the first thing to try. | The other fr.15564 letters (ff.27, 78, 119, 142) solved by Lasry 2022; henryiii.htm lists f.151 among ff.111, 112, 132, 134, 272 in one cipher group. | class B (partial key in print or known family); DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive. Images are available at https://archivesetmanuscrits.bnf.fr/. Same volume as catalogue no. 13 (Anonymous to \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class B (partial key in print or known family); DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive",
+   "key_lead": "class C (no key, no sibling); verify: Test Lasry's fr. 15564 keys; read the endorsement.; One letter, unknown sender; Lasry's keys for the volume are the first thing to try. | The other fr.15564 letters (ff.27, 78, 119, 142) solved by Lasry 2022; henryiii.htm lists f.151 among ff.111, 112, 132, 134, 272 in one cipher group. | class B (partial key in print or known family); DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive. Images are available at https://archivesetmanuscrits.bnf.fr/. Same volume as catalogue no. 13 (Anonymous to …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class B (partial key in print or known family); DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive",
    "size": "short | 3 ciphertexts, 3 pp. | 2 ciphertexts, 2 pp. | 9 pp.",
    "sources": [
     "bourdeau",
@@ -1611,7 +1590,7 @@
    "year": "1592",
    "language": "fr",
    "material": "not viewed here",
-   "key_lead": "class B (partial key in print or known family); verify: Savasse 1997; Tomokiyo's Maisse keys as a first test.; Maisse's other ciphers of 1593\u201394 are reconstructed; these four use a different key with no sibling found yet.",
+   "key_lead": "class B (partial key in print or known family); verify: Savasse 1997; Tomokiyo's Maisse keys as a first test.; Maisse's other ciphers of 1593–94 are reconstructed; these four use a different key with no sibling found yet.",
    "size": "",
    "sources": [
     "bourdeau"
@@ -1647,7 +1626,7 @@
    "year": "1593",
    "language": "es",
    "material": "Gallica ark btv1b9059406b; not viewed here",
-   "key_lead": "class B (partial key in print or known family); verify: Tomokiyo's Spanish keys of 1589\u201393; DECODE for Sessa.; Spanish 1590s ciphers are large homophonic systems; partial keys in print help, and no. 47 has a begun decipherment.",
+   "key_lead": "class B (partial key in print or known family); verify: Tomokiyo's Spanish keys of 1589–93; DECODE for Sessa.; Spanish 1590s ciphers are large homophonic systems; partial keys in print help, and no. 47 has a begun decipherment.",
    "size": "",
    "sources": [
     "bourdeau"
@@ -1679,11 +1658,11 @@
   },
   {
    "name": "Champagne news-letters and Lauriere to the duc de Nevers, 1590-93 (BnF fr. 3623 nos. 23-25, 60, 78; fr. 3625 no. 55)",
-   "shelfmark": "BnF fr. 3623 nos. 23, 24, 25, 60, 78; fr. 3625 no. 55 (Lauri\u00e8re's 13 Jul 1593 letter (no. 10) is deciphered)",
+   "shelfmark": "BnF fr. 3623 nos. 23, 24, 25, 60, 78; fr. 3625 no. 55 (Laurière's 13 Jul 1593 letter (no. 10) is deciphered)",
    "year": "1590",
    "language": "fr",
    "material": "Gallica ark btv1b525245007; not viewed here",
-   "key_lead": "class A (siblings with decipherment in the same volume); verify: Tomokiyo's Nevers keys nos. 1\u201370 against no. 23.; Lauri\u00e8re is a direct alignment; the news-letters may share Nevers-office keys already reconstructed by Tomokiyo.",
+   "key_lead": "class A (siblings with decipherment in the same volume); verify: Tomokiyo's Nevers keys nos. 1–70 against no. 23.; Laurière is a direct alignment; the news-letters may share Nevers-office keys already reconstructed by Tomokiyo.",
    "size": "",
    "sources": [
     "bourdeau"
@@ -1697,7 +1676,7 @@
   },
   {
    "name": "Letters to and from Louis Gonzaga, duc de Nevers, 1587-90 (BnF fr. 3975 ff.101, 3976 ff.62, 133; 3979 f.92; DECODE R3705-R4289)",
-   "shelfmark": "BnF, Fran\u00e7ais 3975 fol. 101 ; BnF, Fran\u00e7ais 3975 (2 items) ; BnF, Fran\u00e7ais 3976 fol. 133-134 ; BnF, Fran\u00e7ais 3976 fol. 62 ; BnF, Fran\u00e7ais 3979 fol. 92",
+   "shelfmark": "BnF, Français 3975 fol. 101 ; BnF, Français 3975 (2 items) ; BnF, Français 3976 fol. 133-134 ; BnF, Français 3976 fol. 62 ; BnF, Français 3979 fol. 92",
    "year": "1587",
    "language": "fr",
    "material": "DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical | DECODE images (login required); not viewed here; type: unknown; numerical | DECODE images (login required); not viewed here; type: unknown; graphic signs | DECODE images (login required); not viewed here; type: unknown; graphic signs, numerical",
@@ -1759,7 +1738,7 @@
    "year": "1526",
    "language": "fr",
    "material": "DECODE images (login required); not viewed here; type: unknown; graphic signs | Images on Gallica (BnF Clair.325, Clair.331). No transcription in the snapshot.",
-   "key_lead": "class C (no key, no sibling); DECODE note: The ciphertext is short. The marginal note \"jay respondu que je navoye veu icy nul homme de par vous\"[?] seems irrelevant to the cipher. For contemporary ciphers, see S.Tomokiyo, \"French Ciphers during the Reign of \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | Calvimont-Duprat (Biermann 2021), Gramont 1529, Bayonne-Montmorency 1528-29 and Galeaz Vesconte 1528-29 (Lasry) solved from the same group; Clair.330 cipher said to match Rangone's.",
+   "key_lead": "class C (no key, no sibling); DECODE note: The ciphertext is short. The marginal note \"jay respondu que je navoye veu icy nul homme de par vous\"[?] seems irrelevant to the cipher. For contemporary ciphers, see S.Tomokiyo, \"French Ciphers during the Reign of …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | Calvimont-Duprat (Biermann 2021), Gramont 1529, Bayonne-Montmorency 1528-29 and Galeaz Vesconte 1528-29 (Lasry) solved from the same group; Clair.330 cipher said to match Rangone's.",
    "size": "1 pp.",
    "sources": [
     "bourdeau",
@@ -1775,7 +1754,7 @@
   },
   {
    "name": "Unknown correspondents to Francis I and others, 11 Jan 1530, 21 ciphertexts (BnF fr. 3029; DECODE R3666-R3687)",
-   "shelfmark": "BnF, Fran\u00e7ais 3029 (20 items) ; BnF, Fran\u00e7ais 3029 fol. 134-135",
+   "shelfmark": "BnF, Français 3029 (20 items) ; BnF, Français 3029 fol. 134-135",
    "year": "1530",
    "language": "fr",
    "material": "DECODE images (login required); not viewed here; type: unknown; graphic signs",
@@ -1794,7 +1773,7 @@
   },
   {
    "name": "Bizozola to Maximiliano Sforza, 1520, and a letter from the camp at Landriano to Montmorency, 30 Aug 1528 (BnF fr. 3034 ff.154, 156)",
-   "shelfmark": "BnF, Fran\u00e7ais 3034 fol. 156 ; BnF, Fran\u00e7ais 3034 fol. 154",
+   "shelfmark": "BnF, Français 3034 fol. 156 ; BnF, Français 3034 fol. 154",
    "year": "1520",
    "language": "it",
    "material": "DECODE images (login required); not viewed here; type: polyphonic, unknown; alphabet, graphic signs, numerical | DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical",
@@ -1813,11 +1792,11 @@
   },
   {
    "name": "Georges de Selve to Francis I, 1535-36, and Galeazzo Visconti to Bolano and Francis I, 1528-29 (BnF fr. 3045; DECODE R3697-R4256)",
-   "shelfmark": "BnF, Fran\u00e7ais 3045 (2 items)",
+   "shelfmark": "BnF, Français 3045 (2 items)",
    "year": "1535",
    "language": "fr",
    "material": "DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical",
-   "key_lead": "class C (no key, no sibling); DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive. Images are available at https://archivesetmanuscrits.bnf.fr/. Partly encrypted. Same volume (fr. 3091) as letters \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive. Images are available at https://archivesetmanuscrits.bnf.fr/. Same volume as the Sormano\u2013de Vaulx letters read \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
+   "key_lead": "class C (no key, no sibling); DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive. Images are available at https://archivesetmanuscrits.bnf.fr/. Partly encrypted. Same volume (fr. 3091) as letters …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive. Images are available at https://archivesetmanuscrits.bnf.fr/. Same volume as the Sormano–de Vaulx letters read …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
    "size": "2 ciphertexts, 16 pp. | 2 ciphertexts, 2 pp.",
    "sources": [
     "bourdeau"
@@ -1832,11 +1811,11 @@
   },
   {
    "name": "Unknown (Rome) to Anne de Montmorency, 1536-37, eight ciphertexts (BnF fr. 3053; DECODE R4233-R4248)",
-   "shelfmark": "BnF, Fran\u00e7ais 3053 (8 items)",
+   "shelfmark": "BnF, Français 3053 (8 items)",
    "year": "1536",
    "language": "fr",
    "material": "DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical",
-   "key_lead": "class A (siblings with decipherment in the same volume); DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive. Images are available at https://archivesetmanuscrits.bnf.fr/. Partly encrypted. Related repo work: \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.; Reviewed by hand 19 Sept 2026 from DECODE's metadata and the literature; leaf not viewed.",
+   "key_lead": "class A (siblings with decipherment in the same volume); DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive. Images are available at https://archivesetmanuscrits.bnf.fr/. Partly encrypted. Related repo work: …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.; Reviewed by hand 19 Sept 2026 from DECODE's metadata and the literature; leaf not viewed.",
    "size": "8 ciphertexts, 37 pp.",
    "sources": [
     "bourdeau"
@@ -1850,7 +1829,7 @@
   },
   {
    "name": "Guido Rangone (Venice) to Montmorency, 10 Jan 1530 (BnF fr. 3070 f.81, DECODE R4249)",
-   "shelfmark": "BnF, Fran\u00e7ais 3070 fol. 81",
+   "shelfmark": "BnF, Français 3070 fol. 81",
    "year": "1530",
    "language": "it",
    "material": "DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical",
@@ -1868,7 +1847,7 @@
   },
   {
    "name": "Three ciphertexts of 1520 (BnF fr. 3092; DECODE R3699-R3701)",
-   "shelfmark": "BnF, Fran\u00e7ais 3092 (3 items)",
+   "shelfmark": "BnF, Français 3092 (3 items)",
    "year": "1520",
    "language": "fr",
    "material": "DECODE images (login required); not viewed here; type: unknown; graphic signs",
@@ -1886,11 +1865,11 @@
   },
   {
    "name": "French marshals to the king, 1520 (BnF fr. 3081 ff.41-42, DECODE R2322)",
-   "shelfmark": "BnF, Fran\u00e7ais 3081, f.41-42",
+   "shelfmark": "BnF, Français 3081, f.41-42",
    "year": "1520",
    "language": "fr",
    "material": "DECODE images (login required); not viewed here; type: type not given; graphic signs",
-   "key_lead": "class C (no key, no sibling); DECODE note: Endorsed \"Dupplicata des articles envoyez par messrs les marechaulx fran\u00e7oys au roy\". For contemporary French ciphers, see S.Tomokiyo, \"French Ciphers during the Reign of Francis I\" at \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
+   "key_lead": "class C (no key, no sibling); DECODE note: Endorsed \"Dupplicata des articles envoyez par messrs les marechaulx françoys au roy\". For contemporary French ciphers, see S.Tomokiyo, \"French Ciphers during the Reign of Francis I\" at …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
    "size": "2 pp.",
    "sources": [
     "bourdeau"
@@ -1904,7 +1883,7 @@
   },
   {
    "name": "Unknown to the duc de Guise?, 1556 (BnF fr. 20974 pp.1-3, DECODE R2276)",
-   "shelfmark": "BnF, Fran\u00e7ais 20974, p.1-3",
+   "shelfmark": "BnF, Français 20974, p.1-3",
    "year": "1556",
    "language": "fr",
    "material": "DECODE images (login required); not viewed here; type: unknown; graphic signs",
@@ -1940,11 +1919,11 @@
   },
   {
    "name": "Hieronimo Ranzo's cipher letters, 1520-26, in Montmorency's recueil BnF fr. 2988 (with Raince, Rome 1526) and fr. 20506 f.136 (DECODE R1894, R4450)",
-   "shelfmark": "BnF Fran\u00e7ais 2988 (Regius 8513), items 1-3, 7, 9, 11-12, 14, 16, 18, 20, 22, 24, 27, 29, 31, 33, 35, 37-38, 40-41, 44, 46, 48, 50, 52-53, 55 (ff. 4-132) ; Bibliotheque National Ancien Fonds inv.nr. 2988 ; BnF, Fran\u00e7ais 20506, f.136",
+   "shelfmark": "BnF Français 2988 (Regius 8513), items 1-3, 7, 9, 11-12, 14, 16, 18, 20, 22, 24, 27, 29, 31, 33, 35, 37-38, 40-41, 44, 46, 48, 50, 52-53, 55 (ff. 4-132) ; Bibliotheque National Ancien Fonds inv.nr. 2988 ; BnF, Français 20506, f.136",
    "year": "1526-1546",
    "language": "it",
    "material": "Fully digitised on Gallica (ark:/12148/btv1b9059908w and btv1b525240150, from microfilm); catalogue entry public. The Mary Stuart letters in the same volume (ff. 133 ff., 1578-84) were read by Lasry, Biermann and Tomokiyo (Cryptologia 47/2, 2023) and are not part of this candidate. | DECODE images (login required); not viewed here; type: nomenclator; alphabet | DECODE images (login required); not viewed here; type: type not given; symbols not given",
-   "key_lead": "BnF NAF 4206 'Cl\u00e9 de chiffres employ\u00e9s pour diff\u00e9rentes correspondances politiques du XVIe si\u00e8cle' (Friedmann collection), digitised on Gallica ark:/12148/btv1b52524713r; BnF Fran\u00e7ais 3049-3050 and Clairambault keys of Fran\u00e7ois I's reign; Tomokiyo, 'French ciphers during the reign of Francis I'. | class C (no key, no sibling); DECODE note: Hieronimo Ranzo who served as secretary to Mertcurino Arborio di Gattinara, chancellor of Emperor Charels V. The use of letters with ondexnumbers seems to indicate that we are dealing with a nomenclator from Venice. The \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); DECODE note: A copy of BnF fr.2988, f.9 For similar ciphers (with roman letters with superscript digits), see S. Tomokiyo, \"Venetian Ciphers with Superscripts\" at http://crypti",
+   "key_lead": "BnF NAF 4206 'Clé de chiffres employés pour différentes correspondances politiques du XVIe siècle' (Friedmann collection), digitised on Gallica ark:/12148/btv1b52524713r; BnF Français 3049-3050 and Clairambault keys of François I's reign; Tomokiyo, 'French ciphers during the reign of Francis I'. | class C (no key, no sibling); DECODE note: Hieronimo Ranzo who served as secretary to Mertcurino Arborio di Gattinara, chancellor of Emperor Charels V. The use of letters with ondexnumbers seems to indicate that we are dealing with a nomenclator from Venice. The …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); DECODE note: A copy of BnF fr.2988, f.9 For similar ciphers (with roman letters with superscript digits), see S. Tomokiyo, \"Venetian Ciphers with Superscripts\" at http://crypti",
    "size": "about 32 items on ff. 4-132 | 4 pp. | 5 pp.",
    "sources": [
     "archives",
@@ -1964,8 +1943,8 @@
    "shelfmark": "BnF Lorraine 954 (vol. II, 1682-1685, 482 ff., Gallica btv1b9000818r); companion volumes Gallica btv1b90008195 (1680s, Manderscheid affair) and btv1b54100464h (to 1705)",
    "year": "1680-1705",
    "language": "fr",
-   "material": "Three volumes digitised on Gallica (vol. II from microfilm, vol. III from the original); no gate; no d\u00e9chiffrement mentioned in the notices.",
-   "key_lead": "BnF 'Recueil de chiffres diplomatiques (1688-1713)' on Gallica ark:/12148/btv1b525094217 (Louvois, d'Avaux, Tirconel keys of the same decade); Vaud\u00e9mont papers in the Lorraine collection.",
+   "material": "Three volumes digitised on Gallica (vol. II from microfilm, vol. III from the original); no gate; no déchiffrement mentioned in the notices.",
+   "key_lead": "BnF 'Recueil de chiffres diplomatiques (1688-1713)' on Gallica ark:/12148/btv1b525094217 (Louvois, d'Avaux, Tirconel keys of the same decade); Vaudémont papers in the Lorraine collection.",
    "size": "3 volumes, vol. II 482 ff.",
    "sources": [
     "archives"
@@ -1982,8 +1961,8 @@
    "shelfmark": "BnF Clairambault 460 (Gallica ark:/12148/btv1b90007103), 472 pp.",
    "year": "1650-1653",
    "language": "fr",
-   "material": "Digitised on Gallica from microfilm; no gate. Correspondents listed by page (La Roque, Mazerolles, Sillery, Baas, Luis M\u00e9ndez de Haro, Vateville, Bouillon, Mme de Longueville, Cond\u00e9, Lenet and others). Bourdeau's cyphersolver PR #5 reports 'Bordeaux 1653' read (possibly from this volume); check before any campaign.",
-   "key_lead": "Lenet papers (BnF Fran\u00e7ais 6701-6720) with Cond\u00e9's ciphers; Bourdeau, cyphersolver PR #5 'Conti 1649 read; Bordeaux 1653 ...'.",
+   "material": "Digitised on Gallica from microfilm; no gate. Correspondents listed by page (La Roque, Mazerolles, Sillery, Baas, Luis Méndez de Haro, Vateville, Bouillon, Mme de Longueville, Condé, Lenet and others). Bourdeau's cyphersolver PR #5 reports 'Bordeaux 1653' read (possibly from this volume); check before any campaign.",
+   "key_lead": "Lenet papers (BnF Français 6701-6720) with Condé's ciphers; Bourdeau, cyphersolver PR #5 'Conti 1649 read; Bordeaux 1653 ...'.",
    "size": "472 pages",
    "sources": [
     "archives"
@@ -1997,11 +1976,11 @@
   },
   {
    "name": "Cardinal Mazarin to the abbe Fouquet, 'originaux chiffres', 1651-60, with a copy of the cipher at ff.1-2 (BnF fr. 23202)",
-   "shelfmark": "BnF Fran\u00e7ais 23202 (Gallica ark:/12148/btv1b9063488m), 389 ff.",
+   "shelfmark": "BnF Français 23202 (Gallica ark:/12148/btv1b9063488m), 389 ff.",
    "year": "1651-1660",
    "language": "fr",
    "material": "Digitised on Gallica from microfilm; no gate; whether interlinear decipherments exist is not stated.",
-   "key_lead": "The cipher key copied at ff. 1-2 of the same volume; Ch\u00e9ruel (ed.), Lettres du cardinal Mazarin, vols 4-9 (1887-1906) print Mazarin-Fouquet letters.",
+   "key_lead": "The cipher key copied at ff. 1-2 of the same volume; Chéruel (ed.), Lettres du cardinal Mazarin, vols 4-9 (1887-1906) print Mazarin-Fouquet letters.",
    "size": "389 folios",
    "sources": [
     "archives"
@@ -2109,7 +2088,7 @@
   },
   {
    "name": "Felipe IV to the II marques de Santa Cruz, ciphered letters marked '[Sin descifrar]', 1632-35 (AHNOB SANTA CRUZ C.51 D.61-84, D.107 etc.)",
-   "shelfmark": "Archivo Hist\u00f3rico de la Nobleza, SANTA CRUZ, C.51, D.61 (24 June 1632); C.51, D.107 (20 Aug 1634); C.51, D.156-157 (11 July 1635); within units C.51,D.61-84 (PARES id 12877458), D.106-116 (12877594), D.155-175 (12878189) ; AHNOB SANTA CRUZ, C.51, D.61-84 (PARES 12877458); C.51, D.106-116 (PARES 12877594); C.51, D.155-175 (PARES 12878189)",
+   "shelfmark": "Archivo Histórico de la Nobleza, SANTA CRUZ, C.51, D.61 (24 June 1632); C.51, D.107 (20 Aug 1634); C.51, D.156-157 (11 July 1635); within units C.51,D.61-84 (PARES id 12877458), D.106-116 (12877594), D.155-175 (12878189) ; AHNOB SANTA CRUZ, C.51, D.61-84 (PARES 12877458); C.51, D.106-116 (PARES 12877594); C.51, D.155-175 (PARES 12878189)",
    "year": "1632-1635",
    "language": "es",
    "material": "PARES viewer reports images for these units (secondary: pares-pages.jsonl / pares-images.jsonl, e.g. unit 12878263 has 67 page images); free viewer but needs a browser; PARES was unreachable from this session, so the descriptions are quoted from the unsolved-ciphers cache. 30 Santa Cruz units 1618-1635 mention cipher. | PARES page images (58, ?, 74 images per unit); results list says not 'Digitalizado Completamente'",
@@ -2241,11 +2220,11 @@
   },
   {
    "name": "Queen Maria of Castile to Alfonso V of Aragon, Valencia, 5 Aug 1435 (ACA Cancilleria reg. 3225 f.59r, DECODE R10171)",
-   "shelfmark": "Archivo de la Corona de Aragon, Cancilleria reg. 3225 f.59r; DECODE R10171 ; ACA Canciller\u00eda reg. 3225 f. 59r (DECODE R10171, public)",
+   "shelfmark": "Archivo de la Corona de Aragon, Cancilleria reg. 3225 f.59r; DECODE R10171 ; ACA Cancillería reg. 3225 f. 59r (DECODE R10171, public)",
    "year": "1435",
    "language": "ca",
    "material": "DECODE images public; inline cleartext | DECODE image (public); PARES registers swept",
-   "key_lead": "DECODE holds ACA Cancilleria keys of 1437 (R10183) and 1413 (R10182) | Why it stops: Not read. 42 signs in three runs inside clear Catalan; the clear context points to the truce of Majano (\"es continuada daci a tots sants\"). The 1437 Montcada\u2013Amat key (DECODE R10183) is a different alphabet; the 1429 Castile-war key (Cort\u00e8s & Pons, *Saitabi* 36, 1986) does not fit as an alphabet, but its nomenclator seems to match the dotted word signs (regne d'Arag\u00f3, Catalunya, rei de Castella, Navarra): a hypothesis, not a reading. Regs 3226, 3224, 3113 and the king's 2693 swept in full on PARES (1,414 images): no cipher anywhere; the king's register shows his letter to the queen of 27 July 1435 sent \"in ciffra\". Crib-anchored annealing with a Catalan model gives nothing. Needs reg. \u2026",
+   "key_lead": "DECODE holds ACA Cancilleria keys of 1437 (R10183) and 1413 (R10182) | Why it stops: Not read. 42 signs in three runs inside clear Catalan; the clear context points to the truce of Majano (\"es continuada daci a tots sants\"). The 1437 Montcada–Amat key (DECODE R10183) is a different alphabet; the 1429 Castile-war key (Cortès & Pons, *Saitabi* 36, 1986) does not fit as an alphabet, but its nomenclator seems to match the dotted word signs (regne d'Aragó, Catalunya, rei de Castella, Navarra): a hypothesis, not a reading. Regs 3226, 3224, 3113 and the king's 2693 swept in full on PARES (1,414 images): no cipher anywhere; the king's register shows his letter to the queen of 27 July 1435 sent \"in ciffra\". Crib-anchored annealing with a Catalan model gives nothing. Needs reg. …",
    "size": "1 p | 42 signs in three runs",
    "sources": [
     "aymeloglu",
@@ -2283,7 +2262,7 @@
    "year": "1600-1646",
    "language": "de",
    "material": "DECODE images public | DECODE images (public); not viewed here; type: unknown; alphabet, graphic signs, numerical | DECODE images (public); not viewed here; type: homophonic; numerical | DECODE images (public); not viewed here; type: type not given; numerical",
-   "key_lead": "R4332 (1637, to Oxenstierna) carries both a deciphered text and a key, 'so one key of the Oxenstierna circle is at hand for the rest' | class A (siblings with decipherment in the same volume); 148 key record(s) from the same series on DECODE, nearest R4329 (1600); DECODE note: DECODE's date 1600/1699 is the span of the volume. Part of a collection of keys used in correspondence between: Axel Oxenstierna and the administration (1635,1636) Axel Oxenstierna and Lars Nilsson Tungel (1633) Axel \u2026; verify: Fetch the images and the key record(s); test the key on the first lines. | class A (siblings with decipherment in the same volume); 148 key record(s) from the same series on DECODE, nearest R4329 (1600); DECODE note: Letter from Heusner von Wandersleben, Sigismund, Svensk generalkommissarie to Oxenstierna af S\u00f6derm\u00f6re, Axel, Greve, rikskansler. Letter from March 1637, enciphered letter, part",
+   "key_lead": "R4332 (1637, to Oxenstierna) carries both a deciphered text and a key, 'so one key of the Oxenstierna circle is at hand for the rest' | class A (siblings with decipherment in the same volume); 148 key record(s) from the same series on DECODE, nearest R4329 (1600); DECODE note: DECODE's date 1600/1699 is the span of the volume. Part of a collection of keys used in correspondence between: Axel Oxenstierna and the administration (1635,1636) Axel Oxenstierna and Lars Nilsson Tungel (1633) Axel …; verify: Fetch the images and the key record(s); test the key on the first lines. | class A (siblings with decipherment in the same volume); 148 key record(s) from the same series on DECODE, nearest R4329 (1600); DECODE note: Letter from Heusner von Wandersleben, Sigismund, Svensk generalkommissarie to Oxenstierna af Södermöre, Axel, Greve, rikskansler. Letter from March 1637, enciphered letter, part",
    "size": "16 records, 2-5 pp | 14 ciphertexts, 43 pp. | 5 pp. | 3 pp.",
    "sources": [
     "aymeloglu",
@@ -2473,7 +2452,7 @@
    "year": "1942",
    "language": "de",
    "material": "Weierud 2020 transcriptions (Cipherbrain 30 Aug 2020)",
-   "key_lead": "Why it stops: Double Playfair, each pair enciphered twice through the same two boxes. The discriminators show that the seven parts of 27 February (970 letters) are one daily key. Single encipherment is excluded; for the double pass, annealing, tempering, staged scoring, Sinkhorn relaxation and EM all fail on a synthetic 970-letter control with a known key (true-key basin 8-10 swaps; fails even with the cell permutation given). A known-plaintext solver recovers the boxes from ~80 pairs, but Bletchley's decrypt of the 16 June message (Borki) does not align with its ciphertext under any spelling, layout or length tried. Needs the February decrypts (TNA HW 16/17) or the exact enciphered wording of the June \u2026",
+   "key_lead": "Why it stops: Double Playfair, each pair enciphered twice through the same two boxes. The discriminators show that the seven parts of 27 February (970 letters) are one daily key. Single encipherment is excluded; for the double pass, annealing, tempering, staged scoring, Sinkhorn relaxation and EM all fail on a synthetic 970-letter control with a known key (true-key basin 8-10 swaps; fails even with the cell permutation given). A known-plaintext solver recovers the boxes from ~80 pairs, but Bletchley's decrypt of the 16 June message (Borki) does not align with its ciphertext under any spelling, layout or length tried. Needs the February decrypts (TNA HW 16/17) or the exact enciphered wording of the June …",
    "size": "27 Feb: seven parts, 970 letters; 16 June one message",
    "sources": [
     "bourdeau"
@@ -2666,7 +2645,7 @@
    "year": "17th century (items dated 1558-1646)",
    "language": "unknown",
    "material": "Discovery piece description; DECODE has per-item images (login required, free account) and paper transcriptions for R660, R931; unsolved-ciphers decode-ranked.md lists 30 records from the box. | DECODE images behind login; transcription attached to each | DECODE images (login required); not viewed here; type: homophonic, nomenclator, unknown; graphic signs, numerical | DECODE images (login required); not viewed here; type: homophonic, nomenclator, unknown; numerical | DECODE images (login required); not viewed here; type: homophonic, nomenclator, unknown; alphabet, numerical | DECODE images (login required); not viewed here; type: nomenclator; numerical | DECODE images (login required); not viewed here; type: unknown; numerical",
-   "key_lead": "DECODE counts 30-50 keys from SP 106 within 20 years of each item (e.g. R725, R1999, R2000); YHL/PO/JO/10/1/183 (Naseby letters) hold the deciphered Henrietta Maria-Charles I correspondence of 1645 in Jermyn's hand; R928 note: 'Possibly related to TNA_SP106/10_(0207-210) and consecutive items'. | 30-50 SP 106 keys of the period in DECODE | class B (partial key in print or known family); 2 key record(s) from the same series on DECODE, nearest R725 (None); DECODE note: DECODE's date 1558/1625 is the span of the volume. This is clearly the worksheet of a codebreaker. This can be derived, not only from the fact that the lines of code are only partly decrypted, but also from the various \u2026; verify: Search the same volume and the Calendars for the contemporary decipherment first. Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcrib",
+   "key_lead": "DECODE counts 30-50 keys from SP 106 within 20 years of each item (e.g. R725, R1999, R2000); YHL/PO/JO/10/1/183 (Naseby letters) hold the deciphered Henrietta Maria-Charles I correspondence of 1645 in Jermyn's hand; R928 note: 'Possibly related to TNA_SP106/10_(0207-210) and consecutive items'. | 30-50 SP 106 keys of the period in DECODE | class B (partial key in print or known family); 2 key record(s) from the same series on DECODE, nearest R725 (None); DECODE note: DECODE's date 1558/1625 is the span of the volume. This is clearly the worksheet of a codebreaker. This can be derived, not only from the fact that the lines of code are only partly decrypted, but also from the various …; verify: Search the same volume and the Calendars for the contemporary decipherment first. Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcrib",
    "size": "about 30 DECODE records, 1-9 pp. each | 2 pp; 1 p; 1 p | 7 ciphertexts, 22 pp. | 4 ciphertexts, 6 pp. | 7 ciphertexts, 15 pp. | 2 pp.",
    "sources": [
     "archives",
@@ -2728,7 +2707,7 @@
    "year": "1710",
    "language": "fr",
    "material": "DECODE images (login required); not viewed here",
-   "key_lead": "class B (partial key in print or known family); DECODE note: A long, secret, partially encrypted letter in which the Controller General of Finances, in close collaboration with the Minister of War, relays the King's instructions for negotiations during the Spanish War. The image \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
+   "key_lead": "class B (partial key in print or known family); DECODE note: A long, secret, partially encrypted letter in which the Controller General of Finances, in close collaboration with the Minister of War, relays the King's instructions for negotiations during the Spanish War. The image …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
    "size": "? pp.",
    "sources": [
     "bourdeau"
@@ -2760,7 +2739,7 @@
   },
   {
    "name": "Emperor Ferdinand III to the Cardinal-Infante Ferdinand, Stuttgart, 28 Oct 1634 (DECODE R1887; ARA Brussels SEG allemande inv. 540)",
-   "shelfmark": "DECODE R1887 ; Archives in Brussels; DECODE R1887 ; ARA Brussels, Secr\u00e9tairerie d'\u00c9tat allemande inv. 540; DECODE R1887, R1889, R1890",
+   "shelfmark": "DECODE R1887 ; Archives in Brussels; DECODE R1887 ; ARA Brussels, Secrétairerie d'État allemande inv. 540; DECODE R1887, R1889, R1890",
    "year": "1634",
    "language": "la",
    "material": "Four DECODE images (login), already downloaded by the source; clear Latin islands around cipher | DECODE R1887 images (four, behind login); Aymeloglu's 1634-ASSESSMENT.md. No transcription in the snapshot. | DECODE-only, authentication required; skipped 15 Sept 2026 (ferdinand3/)",
@@ -2826,7 +2805,7 @@
    "year": "1482",
    "language": "it",
    "material": "DECODE and Vestigia images",
-   "key_lead": "Read in part; two of four found read at the time. Never printed (MDE skipped Sadoleto). The sign cipher (monoalphabetic, homophones for vowels, n, r; word divisions kept; *quid* = perch\u00e8) rebuilt by aligning R1101 with its clear copy 7a (Vestigia 1283) and R1104 with 13a (Vestigia 1295). R1101 and R1106 have contemporary clears (7a; 26a/26b, Vestigia 1319/4004). R1102 (16 Jul 1482), seven lines with no clear copy, read in gist: *essendo in Buda per partire per venire a Posonia, sapi per gran secreto \u2026 como [X] haveva scripto ad Francesco Quirino \u2026 voleva havere seco bona a[micit]ia, et voleva dargli Vegla, et voleva lo figlio (e bastardo) per loco capitaneo de la [arma]ta per mare, et gli \u2026",
+   "key_lead": "Read in part; two of four found read at the time. Never printed (MDE skipped Sadoleto). The sign cipher (monoalphabetic, homophones for vowels, n, r; word divisions kept; *quid* = perchè) rebuilt by aligning R1101 with its clear copy 7a (Vestigia 1283) and R1104 with 13a (Vestigia 1295). R1101 and R1106 have contemporary clears (7a; 26a/26b, Vestigia 1319/4004). R1102 (16 Jul 1482), seven lines with no clear copy, read in gist: *essendo in Buda per partire per venire a Posonia, sapi per gran secreto … como [X] haveva scripto ad Francesco Quirino … voleva havere seco bona a[micit]ia, et voleva dargli Vegla, et voleva lo figlio (e bastardo) per loco capitaneo de la [arma]ta per mare, et gli …",
    "size": "R1102 seven lines; R1103 four-line block",
    "sources": [
     "bourdeau"
@@ -2844,7 +2823,7 @@
    "year": "1523",
    "language": "es",
    "material": "DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical | DECODE images",
-   "key_lead": "class B (partial key in print or known family); verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | Misdated in DECODE by a century, and read in part. The volume is Bergenroth's Salazar A. 31 (CSP Spain vol. 2); the letter is dated on f. 128v and Bergenroth skipped it. Eight sibling despatches in the same cipher carry the court's decipherment (1523\u201325); about 110 code groups and the letter alphabet were rebuilt from them by token tiling and template matching (`rad` *dicha*, `lif` *mostrar*, `z y` *-on*, `hud` *pl\u00e1tica*). The nine cipher lines read at the word level: *las dichas [\u2026]s no le las mostraron, que le ponen sospecha que desea aver algo \u2026 habl\u00e9 en la ora a Su Santidad a pedirle que haya provisi\u00f3n \u2026 para los casos de suy\u00e7os \u2026 pues tiene color para ello, aviendo comen\u00e7ado la pl\u00e1tica \u2026",
+   "key_lead": "class B (partial key in print or known family); verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | Misdated in DECODE by a century, and read in part. The volume is Bergenroth's Salazar A. 31 (CSP Spain vol. 2); the letter is dated on f. 128v and Bergenroth skipped it. Eight sibling despatches in the same cipher carry the court's decipherment (1523–25); about 110 code groups and the letter alphabet were rebuilt from them by token tiling and template matching (`rad` *dicha*, `lif` *mostrar*, `z y` *-on*, `hud` *plática*). The nine cipher lines read at the word level: *las dichas […]s no le las mostraron, que le ponen sospecha que desea aver algo … hablé en la ora a Su Santidad a pedirle que haya provisión … para los casos de suyços … pues tiene color para ello, aviendo començado la plática …",
    "size": "7 ciphertexts, 110 pp. | nine cipher lines",
    "sources": [
     "bourdeau"
@@ -2859,11 +2838,11 @@
   },
   {
    "name": "Lope de Soria to Charles V and Gattinara, Genoa 1523 (RAH Salazar A-28, DECODE R9488-R9498) and Mirandola 13 Dec 1517 (RAH 9/17 ff.31-33, R9487)",
-   "shelfmark": "RAH, Signatura 9/17, f. 31\u201333 ; RAH Salazar A-28 (9/28) ff. 248-584 (DECODE R9488-R9498)",
+   "shelfmark": "RAH, Signatura 9/17, f. 31–33 ; RAH Salazar A-28 (9/28) ff. 248-584 (DECODE R9488-R9498)",
    "year": "1517",
    "language": "es",
    "material": "DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical | DECODE images",
-   "key_lead": "class C (no key, no sibling); DECODE note: Letter from Lope de Soria to Carlos V, dated in Mirandola on December 13, 1517, transmitting news about the situation in different Italian localities.; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | Two ciphers, both broken; every letter reads, the June and July letters nearly throughout. Key B (from late July) was rebuilt by aligning Soria's letter of 30 Dec 1523 (DECODE R9844) with the court's decipherment; key A (June\u2013July) had no key or crib and was broken ciphertext-only by a simulated-annealing substitution solver on a 4-gram model of Danvila's Castilian papers of 1520\u201321, then confirmed on the three copies of the June letter. Content: the Venetian league bought with Milanese money, Caracciolo to Venice, the French descent expected, a proposal to open war on ",
+   "key_lead": "class C (no key, no sibling); DECODE note: Letter from Lope de Soria to Carlos V, dated in Mirandola on December 13, 1517, transmitting news about the situation in different Italian localities.; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | Two ciphers, both broken; every letter reads, the June and July letters nearly throughout. Key B (from late July) was rebuilt by aligning Soria's letter of 30 Dec 1523 (DECODE R9844) with the court's decipherment; key A (June–July) had no key or crib and was broken ciphertext-only by a simulated-annealing substitution solver on a 4-gram model of Danvila's Castilian papers of 1520–21, then confirmed on the three copies of the June letter. Content: the Venetian league bought with Milanese money, Caracciolo to Venice, the French descent expected, a proposal to open war on ",
    "size": "4 pp. | five despatches with duplicates",
    "sources": [
     "bourdeau"
@@ -2882,7 +2861,7 @@
    "year": "17th c.",
    "language": "fr",
    "material": "DECODE images (login); last page transcribed here",
-   "key_lead": "Broken; read in part. The pencil pigpen key on the flap (akt\u00b7blu\u00b7cmw/\u2026) reads nothing in any orientation. The cipher is a homophonic pigpen (cell shape + 1\u20133 dots, inner-stroke variants; several signs for e, i, s, t, r). Hand transcription of the last page (450 signs) \u2192 quadgram solver finds French \u2192 key completed from words. Last page reads nearly throughout: *je ne pouvois recevoir d'un ennuy plus sensible, ayant appris que du mariage de ce gentilhomme \u2026 l'entiere affection que j'ay vou\u00e9e a vostre service \u2026 et vous supplie tres humblement, monsieur, me continuer l'honneur de vostre bienveuillance et croire que je vous honnore*. Open: first page (fragments only), two special signs and \u2026",
+   "key_lead": "Broken; read in part. The pencil pigpen key on the flap (akt·blu·cmw/…) reads nothing in any orientation. The cipher is a homophonic pigpen (cell shape + 1–3 dots, inner-stroke variants; several signs for e, i, s, t, r). Hand transcription of the last page (450 signs) → quadgram solver finds French → key completed from words. Last page reads nearly throughout: *je ne pouvois recevoir d'un ennuy plus sensible, ayant appris que du mariage de ce gentilhomme … l'entiere affection que j'ay vouée a vostre service … et vous supplie tres humblement, monsieur, me continuer l'honneur de vostre bienveuillance et croire que je vous honnore*. Open: first page (fragments only), two special signs and …",
    "size": "c. 800 signs, 3 pages",
    "sources": [
     "bourdeau"
@@ -2977,7 +2956,7 @@
    "year": "1615",
    "language": "fr",
    "material": "DECODE images (login required); not viewed here; type: homophonic, nomenclator, unknown; alphabet, graphic signs, numerical | DECODE images (login required); not viewed here; type: unknown; graphic signs | Images on Gallica (BnF Baluze 156 f.157). No transcription in the snapshot.",
-   "key_lead": "class A (siblings with decipherment in the same volume); DECODE note: For an overview of contemporary ciphers, see S. Tomokiyo, \"French Ciphers during the Reign of Louis XIII\" (http://cryptiana.web.fc2.com/code/louisxiii.htm).; verify: Fetch the images and the key record(s); test the key on the first lines. | class C (no key, no sibling); DECODE note: The sheet including the ciphertext (f.40) is assumed to belong to the letter of f.39. For an overview of contemporary ciphers, see S. Tomokiyo, \"French Ciphers during the Reign of Louis XIII\" \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | Servien-Sabran 1632, Louis XIII-Sabran 1631 and Farnese-Sabran 1637 ciphers all solved (servien.htm, GL.htm) and excluded.",
+   "key_lead": "class A (siblings with decipherment in the same volume); DECODE note: For an overview of contemporary ciphers, see S. Tomokiyo, \"French Ciphers during the Reign of Louis XIII\" (http://cryptiana.web.fc2.com/code/louisxiii.htm).; verify: Fetch the images and the key record(s); test the key on the first lines. | class C (no key, no sibling); DECODE note: The sheet including the ciphertext (f.40) is assumed to belong to the letter of f.39. For an overview of contemporary ciphers, see S. Tomokiyo, \"French Ciphers during the Reign of Louis XIII\" …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | Servien-Sabran 1632, Louis XIII-Sabran 1631 and Farnese-Sabran 1637 ciphers all solved (servien.htm, GL.htm) and excluded.",
    "size": "3 ciphertexts, 7 pp. | 1 pp. | short passages",
    "sources": [
     "bourdeau",
@@ -3095,7 +3074,7 @@
    "year": "1757",
    "language": "fr",
    "material": "DECODE images (login required); not viewed here; type: unknown; numerical",
-   "key_lead": "class C (no key, no sibling); DECODE note: Letter in French with unsolved lines in code. Freiherr van Swieten was an Austrian diplomat of Dutch descent reporting about French troop movements in Germany to Count Cobenzl, his former superior and Austrian Viceroy \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
+   "key_lead": "class C (no key, no sibling); DECODE note: Letter in French with unsolved lines in code. Freiherr van Swieten was an Austrian diplomat of Dutch descent reporting about French troop movements in Germany to Count Cobenzl, his former superior and Austrian Viceroy …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
    "size": "3 ciphertexts, 8 pp.",
    "sources": [
     "bourdeau"
@@ -3113,7 +3092,7 @@
    "year": "1751-1804",
    "language": "fr",
    "material": "DECODE; transcriptions attached to 23 | DECODE images (login required); not viewed here; type: simple substitution; numerical | DECODE images (login required); not viewed here; type: nomenclator; numerical | DECODE images (login required); not viewed here; type: type not given; numerical | DECODE images (login required); not viewed here; type: unknown; graphic signs, numerical | DECODE images (login required); not viewed here; type: homophonic; alphabet | DECODE images (login required); not viewed here; type: homophonic; numerical",
-   "key_lead": "Keys of the Stadholder's secretariat may survive at the KHA | class C (no key, no sibling); DECODE note: The letter is not signed, but the first lines seem to indicate that we are dealing with a letter by Prince Frederik to his older brother. The encrypted part of this letter seems to written by somebody else, originating \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); DECODE note: Intercepted letter, unsolved.; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class B (partial key in print or known family); DECODE note: The code used in this letter is the \"Grand Chiffre\" of {rince William V, indicating that the information it contained was too sensitive to be dealt with by the cipher secretary of ",
+   "key_lead": "Keys of the Stadholder's secretariat may survive at the KHA | class C (no key, no sibling); DECODE note: The letter is not signed, but the first lines seem to indicate that we are dealing with a letter by Prince Frederik to his older brother. The encrypted part of this letter seems to written by somebody else, originating …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); DECODE note: Intercepted letter, unsolved.; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class B (partial key in print or known family); DECODE note: The code used in this letter is the \"Grand Chiffre\" of {rince William V, indicating that the information it contained was too sensitive to be dealt with by the cipher secretary of ",
    "size": "38-40 records, 1-4 pp | 4 pp. | 7 ciphertexts, 16 pp. | 1 pp. | 2 ciphertexts, 7 pp. | 2 pp. | 3 pp.",
    "sources": [
     "aymeloglu",
@@ -3208,7 +3187,7 @@
   },
   {
    "name": "OeStA HHStA Staatskanzlei Interiora, Chiffren: item of 1600 (R1325) and letter to Paulo Borne?, 1540 (R1212)",
-   "shelfmark": "OeStA HHStA Staatskanzlei Interiora, Chiffren; DECODE R1325, R1212 ; \u00d6StA, Haus-, Hof- und Staatsarchiv, Staatskanzlei Interiora, Chiffrenschl\u00fcssel, Kt. 13. Fasc. 20. f 38-39",
+   "shelfmark": "OeStA HHStA Staatskanzlei Interiora, Chiffren; DECODE R1325, R1212 ; ÖStA, Haus-, Hof- und Staatsarchiv, Staatskanzlei Interiora, Chiffrenschlüssel, Kt. 13. Fasc. 20. f 38-39",
    "year": "1600; 1540",
    "language": "la",
    "material": "DECODE images behind login; transcription attached (R1325); inline cleartext | DECODE images (login required); not viewed here; type: homophonic, nomenclator; alphabet, graphic signs, numerical",
@@ -3250,7 +3229,7 @@
    "year": "1616",
    "language": "de",
    "material": "DECODE images (public); not viewed here; type: unknown; alphabet, graphic signs",
-   "key_lead": "class C (no key, no sibling); DECODE note: This rosicrucianism book in German has four pages with ciphertext. As far as is known, this has never been deciphered. The complete book can be found at the Embassy of the Free Mind / Ritman Library: \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
+   "key_lead": "class C (no key, no sibling); DECODE note: This rosicrucianism book in German has four pages with ciphertext. As far as is known, this has never been deciphered. The complete book can be found at the Embassy of the Free Mind / Ritman Library: …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
    "size": "4 pp.",
    "sources": [
     "bourdeau"
@@ -3304,7 +3283,7 @@
    "year": "1798",
    "language": "la",
    "material": "DECODE images (login required); not viewed here; type: unknown; graphic signs",
-   "key_lead": "class C (no key, no sibling); DECODE note: Also available at https://collections.library.yale.edu/catalog Only short parts are encrypted. Das zweyte Silentium Dei in K\u00f6nigs Salomonis des Weisen paradiessischen Lustgarten; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); DECODE note: Also available at https://collections.library.yale.edu/catalog Manuscript on paper of Elias Cortonensis O.F.M., Lumen luminum, said according to this copy to have been composed in 1315, an erroneous date, and drawn from \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
+   "key_lead": "class C (no key, no sibling); DECODE note: Also available at https://collections.library.yale.edu/catalog Only short parts are encrypted. Das zweyte Silentium Dei in Königs Salomonis des Weisen paradiessischen Lustgarten; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); DECODE note: Also available at https://collections.library.yale.edu/catalog Manuscript on paper of Elias Cortonensis O.F.M., Lumen luminum, said according to this copy to have been composed in 1315, an erroneous date, and drawn from …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
    "size": "129 pp. | 68 pp.",
    "sources": [
     "bourdeau"
@@ -3361,7 +3340,7 @@
    "year": "c.1938",
    "language": "zh",
    "material": "nothing (no corpus online) | Nothing online located; one opening ('7115 6752 7022 0735 1378', He Mi code) quoted in chinesecrypto_e.htm.",
-   "key_lead": "Why it stops: No corpus exists online; the premise of the list entry was wrong | Standard Chinese telegraph code reads the address and time groups; 'He Mi' (\u548c\u5bc6) code unknown.",
+   "key_lead": "Why it stops: No corpus exists online; the premise of the list entry was wrong | Standard Chinese telegraph code reads the address and time groups; 'He Mi' (和密) code unknown.",
    "size": "539 telegrams",
    "sources": [
     "bourdeau",
@@ -3399,9 +3378,9 @@
   {
    "name": "Berthier to Napoleon, Koenigsberg, 22 Dec 1812 (AN AF/IV/1643) and the encoded letter to Marshal Marmont, 1807 (Vilcoq 1969)",
    "shelfmark": "AN AF/IV/1643 plaquette 1/VI (Berthier); SHD (Marmont) ; AN AF/IV/1643 (per LANDSCAPE); Vilcoq (1969) ; Vilcoq (1969)",
-   "year": "1807\u201312",
+   "year": "1807–12",
    "language": "fr",
-   "material": "ciphertext only in Vilcoq, Revue Historique de l'Arm\u00e9e no. 4 (1969), not digitised; cryptiana prints one line | Beginning of the ciphertext transcribed in unsolved.htm and napoleon2.htm (they differ in one group); full text only in Vilcoq 1969. | Reproduced only in J. Vilcoq, 'Le Chiffre sous le Premier Empire', Revue Historique de l'Armee no.4 (1969); not online; no transcription in the snapshot.",
+   "material": "ciphertext only in Vilcoq, Revue Historique de l'Armée no. 4 (1969), not digitised; cryptiana prints one line | Beginning of the ciphertext transcribed in unsolved.htm and napoleon2.htm (they differ in one group); full text only in Vilcoq 1969. | Reproduced only in J. Vilcoq, 'Le Chiffre sous le Premier Empire', Revue Historique de l'Armee no.4 (1969); not online; no transcription in the snapshot.",
    "key_lead": "Why it stops: Neither attackable from the single printed source (Vilcoq 1969) | 'La Primata a ete dechiffree' (contemporary decipherment); Chuquet 1912 clear letters of 22 Dec 1812 from AF/IV/1643. | Marmont's 1811 code of 150 entries (napoleon2.htm) and the PARES key of 6 March 1812.",
    "size": "Berthier c. 1,200 entries; Marmont none online | about 1200-entry code; opening of c.300 groups printed",
    "sources": [
@@ -3645,7 +3624,7 @@
   },
   {
    "name": "Real Academia de la Historia, Salazar 9/23-9/34: 178 Spanish cipher letters 1424-1525 (Catholic Monarchs and Charles V diplomacy; incl. Adorno n.d. 9/26)",
-   "shelfmark": "RAH 9/23-9/34; DECODE e.g. R9902-R9905 (9/34) ; RAH, Signatura 9/26, f. 371\u2013376",
+   "shelfmark": "RAH 9/23-9/34; DECODE e.g. R9902-R9905 (9/34) ; RAH, Signatura 9/26, f. 371–376",
    "year": "1424-1525",
    "language": "es",
    "material": "DECODE images behind login | DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical",
@@ -3703,7 +3682,7 @@
   },
   {
    "name": "RAH 9/7 and 9/8 ciphered letters 1460-78: Juan II to Bartolome de Reus, Pedro Ferriz, Luis Despuig, the Archbishop (Galende Diaz 1994)",
-   "shelfmark": "RAH 9/7 ff. 5, 173, 236; 9/8 f. 114 (Galende D\u00edaz 1994 pp. 160-61)",
+   "shelfmark": "RAH 9/7 ff. 5, 173, 236; 9/8 f. 114 (Galende Díaz 1994 pp. 160-61)",
    "year": "1460-78",
    "language": "es",
    "material": "RAH digital library bot-blocked; DECODE may hold some",
@@ -3721,7 +3700,7 @@
   },
   {
    "name": "AGS Estado single cipher letters listed in DECODE, 1516-54: Caracciolo 1537, Vargas 1552, del Burgo 1527, Charles V and Isabella 1531-43, Lopez de Ayala 1516, Renard 1554, Muxetula and Cifuentes 1531-34 (legajos 496, 808, 853, 862, 1184, 1320, 1563; DECODE R9952-R9970)",
-   "shelfmark": "AGS, sec. Estado, leg. 1184, fol. 110 ; AGS, sec. Estado, leg. 1320, fol. 35\u201338 ; AGS, sec. Estado, leg. 1563, fol. 572 ; AGS, sec. Estado, leg. 496 (2 items) ; AGS, sec. Estado, leg. 496, fol. 22 ; AGS, sec. Estado, leg. 808, fol. 184 ; AGS, sec. Estado, leg. 853, fol. 91 ; AGS, sec. Estado, leg. 853, fol. 85 ; AGS, sec. Estado, leg. 862, fol. 53\u201354",
+   "shelfmark": "AGS, sec. Estado, leg. 1184, fol. 110 ; AGS, sec. Estado, leg. 1320, fol. 35–38 ; AGS, sec. Estado, leg. 1563, fol. 572 ; AGS, sec. Estado, leg. 496 (2 items) ; AGS, sec. Estado, leg. 496, fol. 22 ; AGS, sec. Estado, leg. 808, fol. 184 ; AGS, sec. Estado, leg. 853, fol. 91 ; AGS, sec. Estado, leg. 853, fol. 85 ; AGS, sec. Estado, leg. 862, fol. 53–54",
    "year": "1537",
    "language": "es",
    "material": "DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical | DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs",
@@ -3813,7 +3792,7 @@
    "year": "1576",
    "language": "it",
    "material": "DECODE images (login required); not viewed here; type: type not given; numerical | DECODE images (login required); not viewed here; type: homophonic; numerical | DECODE images (login required); not viewed here; type: homophonic, nomenclator; numerical | DECODE images (login required); not viewed here; type: nomenclator, simple substitution; numerical | DECODE images (login required); not viewed here; type: nomenclator, polyphonic; numerical | DECODE images (login required); not viewed here; type: nomenclator, polyalphabetic; numerical",
-   "key_lead": "class A (siblings with decipherment in the same volume); DECODE note: Ciphers within cleartext. Comment from archive: Copia del Memorial. Dado por parte del obispo de Pamplona. Spagna. Mons Ormanetto, nno 1576-1577. Indice ff 1-3. Lett. Orig. e cifre del nunzio alla Segreteria, 9/1 \u2026; verify: Look for the decifrati in the same busta and in the printed Nunziature volumes, then view the images. Open the images and check how much of the cipher the contemporary decipherment covers. | class B (partial key in print or known family); DECODE note: Comment from archive: Monsignori vescovi di Rimini e di Bergamo. Lett. Orig. e cifre del nunz. Alla Segreteria, dall' II gennaio 1583 al 19 marzo 1585. ff.6-682; verify: Look for the decifrati in the same busta and in the printed Nunziature volumes, then view the images. Search the printed correspondence and Tomokiyo for a decipherment; then view the i",
+   "key_lead": "class A (siblings with decipherment in the same volume); DECODE note: Ciphers within cleartext. Comment from archive: Copia del Memorial. Dado por parte del obispo de Pamplona. Spagna. Mons Ormanetto, nno 1576-1577. Indice ff 1-3. Lett. Orig. e cifre del nunzio alla Segreteria, 9/1 …; verify: Look for the decifrati in the same busta and in the printed Nunziature volumes, then view the images. Open the images and check how much of the cipher the contemporary decipherment covers. | class B (partial key in print or known family); DECODE note: Comment from archive: Monsignori vescovi di Rimini e di Bergamo. Lett. Orig. e cifre del nunz. Alla Segreteria, dall' II gennaio 1583 al 19 marzo 1585. ff.6-682; verify: Look for the decifrati in the same busta and in the printed Nunziature volumes, then view the images. Search the printed correspondence and Tomokiyo for a decipherment; then view the i",
    "size": "2 ciphertexts, 3 pp. | 2 ciphertexts, 8 pp. | 3 ciphertexts, 9 pp. | 2 ciphertexts, 4 pp. | 5 ciphertexts, 7 pp. | 4 pp. | 5 ciphertexts, 9 pp. | 21 ciphertexts, 82 pp. | 5 pp. | 10 ciphertexts, 21 pp. | 10 ciphertexts, 15 pp. | 1 pp. | 2 ciphertexts, 6 pp. | 10 ciphertexts, 81 pp. | 2 pp. | 5 ciphertexts, 22 pp. | 6 ciphertexts, 10 pp.",
    "sources": [
     "bourdeau"
@@ -3887,7 +3866,7 @@
   },
   {
    "name": "BayHStA Kurbayern Aeusseres Archiv 4591: 21 cipher items incl. Sperantio, Augurellio and a 1619 letter (DECODE R9291-R9427)",
-   "shelfmark": "BayHStA, Kurbayern \u00c4u\u00dferes Archiv 4591 (14 items) ; BayHStA, Kurbayern \u00c4u\u00dferes Archiv 4591 (3 items) ; BayHStA, Kurbayern \u00c4u\u00dferes Archiv 4591 (2 items) ; BayHStA, Kurbayern \u00c4u\u00dferes Archiv 4591 f 232-235 ; BayHStA, Kurbayern \u00c4u\u00dferes Archiv 4591 f 281",
+   "shelfmark": "BayHStA, Kurbayern Äußeres Archiv 4591 (14 items) ; BayHStA, Kurbayern Äußeres Archiv 4591 (3 items) ; BayHStA, Kurbayern Äußeres Archiv 4591 (2 items) ; BayHStA, Kurbayern Äußeres Archiv 4591 f 232-235 ; BayHStA, Kurbayern Äußeres Archiv 4591 f 281",
    "year": "1619",
    "language": "unknown",
    "material": "DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical | DECODE images (login required); not viewed here; type: unknown; numerical",
@@ -3913,7 +3892,7 @@
    "year": "1782",
    "language": "nl",
    "material": "DECODE images (login required); not viewed here; type: nomenclator; numerical | DECODE images (login required); not viewed here; type: nomenclator, simple substitution; graphic signs, numerical",
-   "key_lead": "class C (no key, no sibling); DECODE note: Until now the codebook used by De Swart for this large encrypted letter could not be identified.; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); DECODE note: The 3-digit codegroups, marked with crosses, dashes and dots clearly point to a nomenclature manudactured bu S.E. Croiset who wante to hide the size and the alpjabetical structure in this way. This letter, marked number \u2026; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class B (partial key in print or known family); DECODE note: The letter itself is onsolved, only a small anne, dated 15 January of the same year is. With 4 d9g9t numbers, the nomenclator seems a little unfaailiar, not tyically a nomenc",
+   "key_lead": "class C (no key, no sibling); DECODE note: Until now the codebook used by De Swart for this large encrypted letter could not be identified.; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); DECODE note: The 3-digit codegroups, marked with crosses, dashes and dots clearly point to a nomenclature manudactured bu S.E. Croiset who wante to hide the size and the alpjabetical structure in this way. This letter, marked number …; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class B (partial key in print or known family); DECODE note: The letter itself is onsolved, only a small anne, dated 15 January of the same year is. With 4 d9g9t numbers, the nomenclator seems a little unfaailiar, not tyically a nomenc",
    "size": "2 ciphertexts, 32 pp. | 4 ciphertexts, 13 pp. | 4 pp. | 2 pp. | 2 ciphertexts, 7 pp. | 1 pp. | 3 ciphertexts, 7 pp. | 5 pp. | 2 ciphertexts, 13 pp.",
    "sources": [
     "bourdeau"
@@ -3936,7 +3915,7 @@
   },
   {
    "name": "Rakoczi War of Independence and Wesselenyi ciphers 1664-1711 (MNL OL G15, E199; Raday Archives; DECODE R473-R922)",
-   "shelfmark": "MNL OL (4 items) ; MNL OL, E199 8. pallium 1. 01 ; MNL OL, G15 Caps. C. Fasc. 33. 140-143 (7 items) ; MNL OL, G15 Caps. C. Fasc. 36. 18-21 (2 items) ; MNL OL, G15 Caps. C. Fasc. 39. 277-279 ; MNL OL, G15 Caps. D. Fasc. 80. fol. 38 ; MNL OL, G15 Caps. D. Fasc. 80. 110-111 ; MNL OL, G15 Caps. D. Fasc. 81. 5 ; R\u00e1day Archives, C64-4d2-10. 92-95",
+   "shelfmark": "MNL OL (4 items) ; MNL OL, E199 8. pallium 1. 01 ; MNL OL, G15 Caps. C. Fasc. 33. 140-143 (7 items) ; MNL OL, G15 Caps. C. Fasc. 36. 18-21 (2 items) ; MNL OL, G15 Caps. C. Fasc. 39. 277-279 ; MNL OL, G15 Caps. D. Fasc. 80. fol. 38 ; MNL OL, G15 Caps. D. Fasc. 80. 110-111 ; MNL OL, G15 Caps. D. Fasc. 81. 5 ; Ráday Archives, C64-4d2-10. 92-95",
    "year": "1704",
    "language": "hu",
    "material": "DECODE images (login required); not viewed here; type: homophonic, nomenclator; numerical | DECODE images (login required); not viewed here; type: simple substitution; numerical | DECODE images (login required); not viewed here; type: homophonic, nomenclator, simple substitution; graphic signs, numerical | DECODE images (login required); not viewed here; type: nomenclator, simple substitution; alphabet, graphic signs, numerical | DECODE images (login required); not viewed here; type: homophonic; numerical",
@@ -3962,7 +3941,7 @@
   },
   {
    "name": "OeStA HHStA other DECODE items: Chodkiewicz to Maximilian II 1575, Ungarische Akten 1664, Loeschner 1816 (DECODE R1473, R688, R2227)",
-   "shelfmark": "\u00d6StA, Haus-, Hof- und Staatsarchiv, Staatskanzlei Interiora, Chiffrenschl\u00fcssel, Kt. 14. Fasc. 20. f 210-212 ; \u00d6StA, Haus-, Hof- und Staatsarchiv, Staatskanzlei Interiora, Chiffrenschl\u00fcssel, Kt. 20. alt. Fasc. ad. 27. f := 30-40 ; \u00d6StA, Haus-, Hof- und Staatsarchiv, Ung. Akt. Spec. Verschw\u00f6rerakten VII. Varia, Fasc. 327. Konv. D. Chiffres 1664-1668. fol. 30-31",
+   "shelfmark": "ÖStA, Haus-, Hof- und Staatsarchiv, Staatskanzlei Interiora, Chiffrenschlüssel, Kt. 14. Fasc. 20. f 210-212 ; ÖStA, Haus-, Hof- und Staatsarchiv, Staatskanzlei Interiora, Chiffrenschlüssel, Kt. 20. alt. Fasc. ad. 27. f := 30-40 ; ÖStA, Haus-, Hof- und Staatsarchiv, Ung. Akt. Spec. Verschwörerakten VII. Varia, Fasc. 327. Konv. D. Chiffres 1664-1668. fol. 30-31",
    "year": "1575",
    "language": "de",
    "material": "DECODE images (login required); not viewed here; type: homophonic, simple substitution; graphic signs | DECODE images (login required); not viewed here; type: unknown; numerical | DECODE images (login required); not viewed here; type: simple substitution; graphic signs",
@@ -3982,11 +3961,11 @@
   },
   {
    "name": "Swedish library and archive minor items: Murberg and Goertz 1717 (National Library), Vaesterbotten and Straengnaes undated (DECODE R4350, R1818, R4349)",
-   "shelfmark": "National Library of Sweden ; Folkr\u00f6relsearkivet i V\u00e4sterbotten ; Carolina Rediviva",
+   "shelfmark": "National Library of Sweden ; Folkrörelsearkivet i Västerbotten ; Carolina Rediviva",
    "year": "1717",
    "language": "unknown",
    "material": "DECODE images (login required); not viewed here; type: type not given; numerical | DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical | DECODE images (public); not viewed here; type: type not given; graphic signs",
-   "key_lead": "class C (no key, no sibling); DECODE note: Letters from Baron von G\u00f6rtz 1717-1721, collected by af Johan Murberg : I.g. 18 in the year of 1785 A few letters contain ciphertexts; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); DECODE note: A short ciphertext of six symbols out in a note. urn:nbn:se:alvin:portal:record-193385 alvin-record:193385 (alvin) http://urn.kb.se/resolve?urn=urn:nbn:se:alvin:portal:record-193385; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
+   "key_lead": "class C (no key, no sibling); DECODE note: Letters from Baron von Görtz 1717-1721, collected by af Johan Murberg : I.g. 18 in the year of 1785 A few letters contain ciphertexts; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe. | class C (no key, no sibling); DECODE note: A short ciphertext of six symbols out in a note. urn:nbn:se:alvin:portal:record-193385 alvin-record:193385 (alvin) http://urn.kb.se/resolve?urn=urn:nbn:se:alvin:portal:record-193385; verify: Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
    "size": "4 pp. | 2 pp. | 1 pp.",
    "sources": [
     "bourdeau"
@@ -4002,7 +3981,7 @@
   },
   {
    "name": "DECODE single items with no context: Mantova (R1854), Marburg 1635 (R4500), Zuerich SCH R 201 1618 (R4817)",
-   "shelfmark": "Mantova State Archive ; Hessisches Staatsarchiv Marburg ; Zentralbibliothek Z\u00fcrich, SCH R 201",
+   "shelfmark": "Mantova State Archive ; Hessisches Staatsarchiv Marburg ; Zentralbibliothek Zürich, SCH R 201",
    "year": "1635",
    "language": "unknown",
    "material": "DECODE images (login required); not viewed here; type: unknown; graphic signs | DECODE images (login required); not viewed here; type: unknown; alphabet, graphic signs, numerical | DECODE images (public); not viewed here; type: unknown; graphic signs",
@@ -4052,7 +4031,7 @@
    "ids": [
     "c020"
    ],
-   "reason": "plaintext known: Du Bellay 1528-29 found already solved (Le Grand 1688, Bourrilly 1905, Lasry 2022) per cyphersolver SOLVED_CATALOGUE \u00a74; Scheurer 1969 prints the 1529 letters from deciphered copies"
+   "reason": "plaintext known: Du Bellay 1528-29 found already solved (Le Grand 1688, Bourrilly 1905, Lasry 2022) per cyphersolver SOLVED_CATALOGUE §4; Scheurer 1969 prints the 1529 letters from deciphered copies"
   },
   {
    "name": "Roosevelt cryptogram, April 1935",
@@ -4080,7 +4059,7 @@
    "ids": [
     "c096"
    ],
-   "reason": "famous/excluded list (Aymeloglu SHORTLIST \u00a76: hoax risk); modern"
+   "reason": "famous/excluded list (Aymeloglu SHORTLIST §6: hoax risk); modern"
   },
   {
    "name": "Le Tellier to Castelnau, 12 May 1657",
@@ -4316,15 +4295,15 @@
   },
   {
    "name": "Scottish state letters of the Moray regency, Jan 1568 and 26 July 1569 to the 'Lorde Regent' (BL Add MS 33531 ff.73-74, 79-80; DECODE R8347-R8348)",
-   "reason": "found-solved: search-print sweep 20 Sept 2026 \u2014 CSP Scotland ii (Bain) no. 966 p.604 prints 'Decipher of same' for Mary to Abp Hamilton (Add MS 33531 f.73, 18 Jan 1568/69) in full; no. 1103 p.661-662 prints Throckmorton to Moray (f.79, 20 July 1569) 'In cipher deciphered'. Both already-printed contemporary decipherments; no DECODE work needed."
+   "reason": "found-solved: search-print sweep 20 Sept 2026 — CSP Scotland ii (Bain) no. 966 p.604 prints 'Decipher of same' for Mary to Abp Hamilton (Add MS 33531 f.73, 18 Jan 1568/69) in full; no. 1103 p.661-662 prints Throckmorton to Moray (f.79, 20 July 1569) 'In cipher deciphered'. Both already-printed contemporary decipherments; no DECODE work needed."
   },
   {
    "name": "Sir Nicholas Throckmorton (Paris, Edinburgh) to Cecil, the Queen and the Council, 1559-63, 20 ciphertexts (BL Add MS 4136, DECODE R9220-R9255, R3026)",
-   "reason": "found-solved: search-print sweep 20 Sept 2026 \u2014 Forbes, A Full View of the Public Transactions... (1740-41), prints Throckmorton's 1559-62/63 despatches in full from deciphered MSS per his own stated editorial method (explicitly contrasted with Camden's undeciphered extracts); CSP Foreign vol.1 is abstract-only and twice notes it cannot render ciphered passages, confirming Forbes as the print source. Per-item match of all 20 DECODE dates to Forbes page numbers is a follow-up, not a fresh cryptanalysis."
+   "reason": "found-solved: search-print sweep 20 Sept 2026 — Forbes, A Full View of the Public Transactions... (1740-41), prints Throckmorton's 1559-62/63 despatches in full from deciphered MSS per his own stated editorial method (explicitly contrasted with Camden's undeciphered extracts); CSP Foreign vol.1 is abstract-only and twice notes it cannot render ciphered passages, confirming Forbes as the print source. Per-item match of all 20 DECODE dates to Forbes page numbers is a follow-up, not a fresh cryptanalysis."
   },
   {
    "name": "Sir Ralph Sadler (Edinburgh) to Henry VIII, 22 April 1543 (BL Add MS 32650 ff.214-216, DECODE R4924)",
-   "reason": "found-solved: search-print sweep 20 Sept 2026 \u2014 Clifford, Sadler State Papers I (1809) p.158 gives the 22 April 1543 letter in full continuous plain English (no cipher markup); L&P Henry VIII vol.18 pt.1 no.448 confirms the BL MS itself already holds a contemporary Tudor decipher ('A decipher of the preceding'), citing Sadler I.158. Not a key-recovery candidate."
+   "reason": "found-solved: search-print sweep 20 Sept 2026 — Clifford, Sadler State Papers I (1809) p.158 gives the 22 April 1543 letter in full continuous plain English (no cipher markup); L&P Henry VIII vol.18 pt.1 no.448 confirms the BL MS itself already holds a contemporary Tudor decipher ('A decipher of the preceding'), citing Sadler I.158. Not a key-recovery candidate."
   },
   {
    "name": "George W. Erving to Madison, Madrid, 10 Aug 1807 (Pinckney legation code, no decode on the NARA copy)",
@@ -4333,6 +4312,38 @@
   {
    "name": "Charles I (Oxford) to Prince Rupert, 29 April 1645 (BL Add MS 18983 f.14, DECODE R4921)",
    "reason": "found-solved: check-solved sweep 23 Sept 2026 (ciphers/charles-rupert-1645/NOTES.md) -- Bourdeau's cyphersolver/rupert1645/ (catalogue item 71) read 305 cipher groups (fraction_read 0.95) on 21 Sept 2026 by applying George Lasry's previously reconstructed King-Queen cipher key (DECODE R929, TNA SP106-5) unchanged, after ruling out two other sibling keys; write-up https://dbourdeau.github.io/cyphersolver/rupert1645.html (MIT code, CC BY 4.0 text). No print source found by them or by us; this is a key-recovery reading, not a rediscovered print source. Novelty not assessed here (rule 10)."
+  },
+  {
+   "reason": "found-solved 23 Sept 2026: contemporary decipherment on f.278 (DECODE R4932), read by dbourdeau/cyphersolver randolph1570/ 21 Sept 2026; Boyd 1903 no. 339 'partly in cipher, deciphered'",
+   "date": "23 Sept 2026",
+   "name": "Thomas Randolph to the Earl of Sussex, July 1570 (Caligula C II f.277, DECODE R4931), was rank 10"
+  },
+  {
+   "name": "Thomas Randolph (Edinburgh) to the Earl of Sussex, 9 July 1570 [catalogued 1569; manuscript dated 1570, corrected 21 Sept 2026] (BL Cotton Caligula C II f.277, DECODE R4931)",
+   "reason": "found-solved 23 Sept 2026: contemporary decipherment on f.278 (DECODE R4932) read by dbourdeau/cyphersolver randolph1570/ on 21 Sept 2026; Boyd CSP Scotland iii no. 339 \"partly in cipher, deciphered\". Moved to Dropped.",
+   "scored_row": {
+    "name": "Thomas Randolph (Edinburgh) to the Earl of Sussex, 9 July 1570 [catalogued 1569; manuscript dated 1570, corrected 21 Sept 2026] (BL Cotton Caligula C II f.277, DECODE R4931)",
+    "language_fit": 3,
+    "material": 3,
+    "key_lead": 2,
+    "size": 2,
+    "competition": 1,
+    "weight": 2,
+    "next_step": "transcription",
+    "next_step_detail": "Fetch f. 277r-v tiles from https://bl.digirati.io/iiif/ark:/81055/vdc_100162985756.0x000001 (as in cyphersolver/norfolk1570/fetch.py), transcribe, and match against CSP Scotland II-III.",
+    "rationale": "Page images are public: the BL IIIF manifest for Cotton MS Caligula C II answered 200 on 19 Sept 2026 with canvases labelled f. 277r and f. 277v (1194 canvases; the image service caps tiles near 1024 px, which Bourdeau's norfolk1570 scripts already handle). DECODE lists one key record from the same volume and year (R4930) but it is not established that it fits this letter, and Tomokiyo's Randolph-Sadler-Croft key of 1559 is a different cipher, so the lead is a sibling key, not a verified one. Two pages with inline cleartext is marginal for a ciphertext-only attack but ample once a key or the calendared text in CSP Scotland lines up. Only Bourdeau's catalogue (id 99, open 17 Sept 2026) lists it. Re-scored 20 Sept 2026: DECODE lists a sibling key record (R4930) from the same volume and year, fit unverified; recovery rather than cryptanalysis. unread=2.",
+    "total": 35,
+    "year": "1569",
+    "language": "en",
+    "sources": [
+     "bourdeau"
+    ],
+    "folder": "",
+    "unread": 2,
+    "kind": "recovery",
+    "status_summary": "found-solved 23 Sept 2026: contemporary decipherment on f.278 (DECODE R4932) read by dbourdeau/cyphersolver randolph1570/ on 21 Sept 2026; Boyd CSP Scotland iii no. 339 \"partly in cipher, deciphered\". Moved to Dropped.",
+    "dropped": "23 Sept 2026"
+   }
   }
  ],
  "harvest": [
@@ -4397,7 +4408,7 @@
     "WebSearch: discovery.nationalarchives.gov.uk \"undeciphered\" cipher letter SP",
     "WebSearch: de-crypt.org DECODE database record \"not decrypted\" key cipher",
     "WebSearch: pares.mcu.es \"sin descifrar\" carta cifrada Simancas Estado",
-    "WebSearch: archivesetmanuscrits.bnf.fr \"lettres chiffr\u00e9es\" \"non d\u00e9chiffr\u00e9\"",
+    "WebSearch: archivesetmanuscrits.bnf.fr \"lettres chiffrées\" \"non déchiffré\"",
     "WebSearch: Civil War cipher telegrams undeciphered archive collection finding aid",
     "WebSearch: Folger Shakespeare Library manuscript \"in cipher\" undeciphered letter catalog",
     "WebSearch: British Library manuscripts \"in cipher\" \"undeciphered\" Add MS letters catalogue",
@@ -4405,7 +4416,7 @@
     "WebSearch: Huntington Eckert telegrams Decoding the Civil War status",
     "WebSearch: searcharchives.bl.uk \"cipher\" \"undeciphered\" letter Add MS",
     "WebSearch: Confederate cipher messages undecoded National Archives RG 109",
-    "WebSearch: Gallica manuscrit \"lettres chiffr\u00e9es\" \"sans d\u00e9chiffrement\" ambassadeur XVIIe",
+    "WebSearch: Gallica manuscrit \"lettres chiffrées\" \"sans déchiffrement\" ambassadeur XVIIe",
     "WebSearch: Discovery \"in cipher\" \"not deciphered\" SP 78 SP 84 SP 94 SP 105",
     "WebSearch: \"PRO 30/11\" Cornwallis papers \"in cipher\" undeciphered Rawdon 1781",
     "WebSearch: Clements Library Clinton papers \"in cipher\" undeciphered finding aid",
@@ -4429,7 +4440,7 @@
     "/tmp/unsolved-ciphers/catalogue/pares-images.jsonl",
     "/tmp/unsolved-ciphers/catalogue/bne-ranked.md",
     "/tmp/cyphersolver/catalogue_harvest/decode/AGENT_BRIEF.md",
-    "/tmp/cyphersolver/catalogue_harvest/decode/out_1.jsonl \u2026 out_8.jsonl",
+    "/tmp/cyphersolver/catalogue_harvest/decode/out_1.jsonl … out_8.jsonl",
     "/tmp/cyphersolver/catalogue_harvest/decode/overrides.json",
     "/tmp/cyphersolver/catalogue_harvest/decode/known_ids.json"
    ]
@@ -4621,14 +4632,14 @@
     "WebSearch: HistoCrypt 2026 proceedings unsolved cipher",
     "WebSearch: reddit r/codes archive cipher letter 2026 \"can anyone\" historical",
     "WebSearch: \"cipher\" letter \"cannot be read\" OR \"not yet deciphered\" library manuscript 2026",
-    "WebSearch: scienceblogs.de klausis-krypto-kolumne ungel\u00f6st 2026",
+    "WebSearch: scienceblogs.de klausis-krypto-kolumne ungelöst 2026",
     "WebSearch: \"encrypted\" OR \"in cipher\" manuscript library blog 2026 \"unsolved\" OR \"undeciphered\" OR \"not been decoded\"",
-    "WebSearch: cipherbrain.de 2026 verschl\u00fcsselt Brief ungel\u00f6st Archiv",
+    "WebSearch: cipherbrain.de 2026 verschlüsselt Brief ungelöst Archiv",
     "WebSearch: \"encrypted\" postcard OR letter OR diary archive \"2026\" \"no one has\" OR \"nobody has\" deciphered blog",
     "WebSearch: Turbolo Chapel Santa Maria La Nova encrypted inscription HistoCrypt 2026",
     "WebSearch: archives blog 2026 \"cipher\" \"help us\" decode letter collection",
-    "WebSearch: \"chiffrierter Brief\" OR \"verschl\u00fcsselter Brief\" Archiv 2026 ungel\u00f6st",
-    "WebSearch: \"lettre chiffr\u00e9e\" archives 2026 \"non d\u00e9chiffr\u00e9e\" OR \"jamais d\u00e9chiffr\u00e9e\"",
+    "WebSearch: \"chiffrierter Brief\" OR \"verschlüsselter Brief\" Archiv 2026 ungelöst",
+    "WebSearch: \"lettre chiffrée\" archives 2026 \"non déchiffrée\" OR \"jamais déchiffrée\"",
     "WebSearch: \"Klaus Schmeh\" 2026 unsolved cryptogram blog post",
     "WebSearch: nationalarchives.gov.uk blog 2026 cipher letter undeciphered",
     "WebSearch: \"lettera cifrata\" archivio 2026 \"non decifrata\" OR \"mai decifrata\" OR \"ancora da decifrare\"",
@@ -4643,9 +4654,9 @@
     "WebSearch: de-crypt.org news 2026 new encrypted manuscript discovered archive undeciphered",
     "WebSearch: reddit.com/r/codes historical letter cipher 2026 archive \"unsolved\"",
     "WebSearch: library special collections blog 2026 \"cipher\" manuscript \"we cannot read\" OR \"unable to decipher\" OR \"can you decipher\"",
-    "WebSearch: Gallica OR BnF blog 2026 \"lettre chiffr\u00e9e\" OR \"chiffre\" \"non d\u00e9chiffr\u00e9\" manuscrit",
+    "WebSearch: Gallica OR BnF blog 2026 \"lettre chiffrée\" OR \"chiffre\" \"non déchiffré\" manuscrit",
     "WebSearch: \"cryptogram\" OR \"cipher\" gravestone OR tombstone OR inscription 2026 \"unsolved\" OR \"undeciphered\" news",
-    "WebSearch: Riksarkivet OR Bundesarchiv OR Staatsarchiv 2026 Blog chiffriert \"ungel\u00f6st\" OR \"nicht entschl\u00fcsselt\" Brief",
+    "WebSearch: Riksarkivet OR Bundesarchiv OR Staatsarchiv 2026 Blog chiffriert \"ungelöst\" OR \"nicht entschlüsselt\" Brief",
     "WebSearch: \"encrypted\" letter auction 2026 \"cipher\" \"never been decoded\" OR \"remains undeciphered\" lot",
     "WebSearch: Cylob cryptogram booklets London bookshop symbols 1995 unsolved",
     "WebSearch: DECODE database challenge \"zero solves\" OR \"challenge\" de-crypt.org 2026 ciphertext record",
@@ -4653,7 +4664,7 @@
     "WebSearch: \"Catokwacopa\" cryptograms",
     "WebSearch: ciphermysteries.com/2026/06 OR /07 OR /08 OR /09 cipher",
     "WebSearch: \"Edmond Kern\" collection encrypted postcards HistoCrypt 2026 unsolved",
-    "WebSearch: \"Claren\u00e7on\" encrypted document HistoCrypt 2026 exhibited radio",
+    "WebSearch: \"Clarençon\" encrypted document HistoCrypt 2026 exhibited radio",
     "WebSearch: Lasry Biermann Tomokiyo 2026 new undeciphered letters found archive announcement",
     "WebSearch: \"British Library\" OR \"Bodleian\" OR \"Folger\" blog 2026 cipher \"undeciphered\" OR \"unsolved\" OR \"in code\" letter manuscript",
     "WebSearch: \"r/codes\" 2026 \"historic\" OR \"antique\" OR \"old\" cipher postcard OR letter OR diary \"any ideas\" OR \"help\" transcription",
@@ -4664,10 +4675,10 @@
     "WebSearch: vals.ai blog cipher 2026 unsolved next target OR \"Top 50\" attempt Fable",
     "WebSearch: \"Agony Column Codes\" Gaffney 2026 unsolved advertisements cipher blog",
     "WebSearch: \"Archivio di Stato\" OR \"archivio\" 2026 \"cifrario\" OR \"cifrata\" \"non ancora decifrat\" OR \"ancora indecifrat\" lettera blog",
-    "WebSearch: \"\u0161ifrovan\u00fd dopis\" OR \"\u0161ifrovan\u00fd text\" archiv 2026 \"nerozlu\u0161t\u011bn\" OR \"dosud nerozlu\u0161t\u011bn\u00fd\"",
+    "WebSearch: \"šifrovaný dopis\" OR \"šifrovaný text\" archiv 2026 \"nerozluštěn\" OR \"dosud nerozluštěný\"",
     "WebSearch: Nationaal Archief OR \"Regionaal Archief\" blog 2026 \"geheimschrift\" OR \"gecodeerd\" brief \"nog niet ontcijferd\" OR \"wie kan\"",
-    "WebSearch: Landesarchiv OR Stadtarchiv OR Universit\u00e4tsbibliothek Blog 2026 \"Geheimschrift\" OR \"chiffriert\" \"bisher nicht entschl\u00fcsselt\" OR \"wer kann\"",
-    "WebSearch: \"Simancas\" OR \"Archivo Hist\u00f3rico Nacional\" 2026 \"cifrado\" OR \"cifrada\" carta \"no se ha podido descifrar\" OR \"sin descifrar\" blog",
+    "WebSearch: Landesarchiv OR Stadtarchiv OR Universitätsbibliothek Blog 2026 \"Geheimschrift\" OR \"chiffriert\" \"bisher nicht entschlüsselt\" OR \"wer kann\"",
+    "WebSearch: \"Simancas\" OR \"Archivo Histórico Nacional\" 2026 \"cifrado\" OR \"cifrada\" carta \"no se ha podido descifrar\" OR \"sin descifrar\" blog",
     "WebSearch: \"encrypted\" OR \"cipher\" notebook OR diary OR letter \"Antiques Roadshow\" OR auction OR \"estate sale\" 2026 \"unsolved\" OR \"undeciphered\" news",
     "WebSearch: Schneier September 2026 \"Claude Fable solves a historical cipher\" comments other unsolved ciphers Urquhart",
     "WebSearch: \"cipherbrain.de/2026\" OR \"cipherbrain.de/2025\" unsolved encrypted",
@@ -4680,8 +4691,8 @@
     "WebSearch: archivist posted image encrypted letter 2026 \"can anyone\" OR \"help\" decipher X OR Bluesky OR Twitter special collections cipher",
     "WebSearch: \"Blitz ciphers\" OR \"Chinese gold bars\" OR \"Rohonc\" OR \"Ricky McCormick\" 2026 update new analysis unsolved",
     "WebSearch: kopaldev.de 1637 Heusner von Wandersleben Oxenstierna Riksarkivet encrypted letter nomenclature undeciphered",
-    "WebSearch: \"verschl\u00fcsselte Postkarte\" OR \"verschl\u00fcsselter Brief\" 2026 ungel\u00f6st \"wer kann\" OR \"wer l\u00f6st\"",
-    "WebSearch: mus\u00e9e OR archives 2026 \"lettre cod\u00e9e\" OR \"message chiffr\u00e9\" OR \"carnet chiffr\u00e9\" \"jamais \u00e9t\u00e9 d\u00e9chiffr\u00e9\" OR \"reste ind\u00e9chiffr\u00e9\" OR \"personne n'a r\u00e9ussi\"",
+    "WebSearch: \"verschlüsselte Postkarte\" OR \"verschlüsselter Brief\" 2026 ungelöst \"wer kann\" OR \"wer löst\"",
+    "WebSearch: musée OR archives 2026 \"lettre codée\" OR \"message chiffré\" OR \"carnet chiffré\" \"jamais été déchiffré\" OR \"reste indéchiffré\" OR \"personne n'a réussi\"",
     "WebSearch: 2026 \"prisoner of war\" OR \"POW\" OR \"soldier\" coded OR encrypted letter museum \"unsolved\" OR \"never been decoded\" OR \"cannot decode\"",
     "WebSearch: 2026 \"love letter\" OR \"love letters\" cipher OR \"secret code\" archive \"undeciphered\" OR \"unsolved\" OR \"no one has cracked\"",
     "WebSearch: 2026 \"pigpen\" OR \"masonic cipher\" OR \"freemason\" letter OR ledger OR journal found \"unsolved\" OR \"undeciphered\" news archive",

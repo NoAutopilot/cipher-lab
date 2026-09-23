@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 23 September 2026, 15:20 UTC
+Last updated: 23 September 2026, 16:40 UTC
 
 > **Ryan is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -32,7 +32,11 @@ or quote request reaches the owner until a check-solved sweep has set that targe
 
 **Orchestrator change, 23 September 2026, 15:20 UTC.** The previous orchestrator's account is logged out; a fresh orchestrator on the noautopilotytbiz account took over from this handoff, with nothing unpushed on the old account. That account's environment has no credentials set (ASKS.md row 10), so this orchestrator runs only credential-free jobs: Randolph 1570 native-resolution re-transcription (ASSIGNMENTS row 1) and a check-solved sweep on queue ranks 11, 13, 15, 17, 18 (row 3). The Google Books print checks (row 2) wait for an account with the key.
 
-**Running right now (23 Sept 15:20 UTC):** Randolph 1570 transcription worker and the check-solved sweep, both starting. Before that: nothing since both recovery workers finished at 03:13 UTC on 21 Sept. Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
+**23 September 2026, 16:40 UTC, what happened next.** Two workers reported. (1) Check-solved on queue ranks 11, 13, 15, 17, 18: Charles I to Rupert 1645 was read by Bourdeau on 21 Sept with Lasry's King-Queen key (dropped, found-solved); Harley 287 is mostly read by Bourdeau since 21-22 Sept (partial); Catokwacopa 1875 partial with no unique plaintext recoverable; Burgess 1912 and Bowes 1583 open at stage 2. (2) A sibling sweep for Randolph 1570 found that the next leaf, f.278 (DECODE R4932), is a clerk's contemporary decipherment, read by Bourdeau on 21 Sept, and that Boyd's 1903 calendar already says "partly in cipher, deciphered". Randolph is dropped as found-solved; the transcription worker was stopped and its crops are kept for the record. Lesson written to LESSONS.md: open every neighbouring DECODE record with the same shelfmark, and re-clone the solver repositories before every campaign, because Bourdeau's project read three of our queue items in two days.
+
+**Blocked on the owner, new:** this account's environment has no credentials (ASKS row 10) and its network policy denies every archive host: archive.org, bl.digirati.io, hathitrust.org, wikisource.org, gutenberg.org, de-crypt.org, scienceblogs.de (ASKS row 11). From this account only github.com, pypi.org and googleapis.com are reachable, so no access, print-check or image work can run here until the environment's Network access setting is changed. The owner's steer for the week is one cipher solved that a verifier can class N3 or better; with the archive lane closed from this account, the only candidate with material obtainable is Burgess 1912, and its text is on Wikisource and Internet Archive, both blocked.
+
+**Running right now (16:40 UTC):** the Randolph transcription worker, wrapping up on the orchestrator's stop message. Erving 1807 was found already printed and dropped; Randolph 1570 has images and a first-pass transcription but no key, and is queued behind the owner's credential fix.
 
 **Waiting on the owner:** rotate the DECODE and archive.org passwords (both were printed into worker
 transcripts on 20 Sept) and set IA_USER to the account email; email Spink before the 23 Sept sale; the Kansas
