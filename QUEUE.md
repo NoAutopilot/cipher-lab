@@ -158,6 +158,20 @@ achievable from the repository, but it is transcription discipline, not a new id
 
 ## Neighbour-record recovery candidates (DECODE catalogue scan of 23 September 2026)
 
+**Re-run with volume-aware exclusion, 23 September 2026, 22:30 UTC (`tools/decode_neighbours_exclude.py`,
+`sources/solver-diffs/2026-09-23-decode-neighbours-annotated.tsv`).** The first exclusion matched Bourdeau's
+profiles by DECODE id only and let the Pallotto cluster (D1) through although his `pallotto1629/` folder works
+the sibling volume with a key broken in 2018. Matching by volume as well: of the 202 pairs, 156 share an id with a
+Bourdeau folder, 37 share a volume, 4 are on this queue, and **5 survive**, all Luis Fernández letters of 1523 at
+RAH Signatura 9/29 (R9838-R9843 beside Decrypted R9841 and R9834), a volume that lies between 9/28 and 9/30, both
+of which Bourdeau's `lopehurtado1523/` already reads. So D1 is found-solved (ciphers/pallotto-1628/NOTES.md),
+D2, D3, D4, D5, D6 and D7 are in volumes or on ids Bourdeau's repository already names, and the cached catalogue's
+neighbour lane is, for practical purposes, his. What remains of this lane needs the full DECODE catalogue (login,
+ASKS row 1) rather than Aymeloglu's cached scrape, and volumes that are not on DECODE at all.
+
+| D8 | Luis Fernández (Rome) letters, 1523, RAH Signatura 9/29 | 1523 | es | recovery | R9838, R9839, R9840, R9842, R9843 / R9841, R9834 (Decrypted) | Only survivors of the volume-aware exclusion; same hand as Bourdeau's 9/28 and 9/30 targets, so expect him to reach 9/29 | Read only if DECODE opens before he gets there; otherwise a duplicate | 30 |
+
+
 Scan of the cached DECODE catalogue (`ay/catalogue/decode-catalog.csv` + `decode-records.jsonl`, both aaymeloglu/
 unsolved-ciphers) for the Randolph f.277/f.278 pattern (LESSONS.md, 23 September 2026): a shelfmark that carries
 both a Non-decrypted record and a Decrypted or Partially decrypted one, matched by a normalised shelfmark plus

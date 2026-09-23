@@ -3,7 +3,7 @@
 One page, always current. The orchestrator session updates it after every worker reports. If you have lost
 track, read this first, then QUEUE.md for what comes next.
 
-Last updated: 23 September 2026, 21:30 UTC
+Last updated: 23 September 2026, 22:30 UTC
 
 > **the owner is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
@@ -30,6 +30,15 @@ classes N3 or better (rule 10). Consequences, applied the same evening:
 Pipeline per cluster: check-solved (editions first: Nuntiaturberichte, CODOIN, calendars) -> DECODE login, open
 letter and sibling -> two transcription passes -> key from the sibling, read -> verifier -> board. Blocked at the
 second step until ASKS rows 1, 10 and 11 are done.
+
+**Correction, 22:30 UTC.** Re-running the exclusion by volume as well as by id shows Bourdeau's repository already
+names 193 of the 202 neighbour pairs in the cached catalogue, and D1 (Pallotto) is found-solved (key broken 2018,
+printed edition). Five pairs survive (D8, RAH 9/29), in a volume between two he is reading. So the cached-catalogue
+neighbour lane is not ours. What is: (a) the full DECODE catalogue behind the login, which the scrape does not cover;
+(b) archives not on DECODE at all, where the two projects do not look (Gallica beyond his BnF picks, BL and TNA
+series, NRS, county record offices, dealers), reached by the access playbook and copy orders; (c) the four archive
+requests already drafted. The count-maximising plan is therefore a scout on non-DECODE catalogues (TNA Discovery
+"cipher" hits, NRS, BL Explore, Gallica full-text for "chiffre" with no DECODE record), which needs the network fix.
 
 ## Handoff to the next orchestrator (21 September 2026, 03:00 UTC)
 

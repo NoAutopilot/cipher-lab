@@ -1,5 +1,5 @@
 {
- "updated": "23 September 2026, 21:30 UTC",
+ "updated": "23 September 2026, 22:30 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -234,14 +234,14 @@
  ],
  "workers": [
   {
-   "title": "Scout: DECODE neighbour-record sweep",
-   "job": "202 pairs, 27 survivors, 7 clusters (D1-D7). ~$2.5",
+   "title": "Check Solved: Pallotto cluster (D1)",
+   "job": "Found-solved: key broken 2018 (Biermann/Bosbach), applied by Bourdeau; Kiewning 1895 edition. ~$1.5",
    "state": "done, archived"
   },
   {
-   "title": "Check Solved: Pallotto cluster (D1)",
-   "job": "Editions first (Nuntiaturberichte), then the six sources",
-   "state": "running"
+   "title": "Scout: DECODE neighbour-record sweep",
+   "job": "202 pairs, 27 survivors, 7 clusters (D1-D7). ~$2.5",
+   "state": "done, archived"
   },
   {
    "title": "Solver: Sforza-Maino 1446 joint key",
@@ -328,6 +328,10 @@
   }
  ],
  "log": [
+  {
+   "when": "23 Sept, 22:30",
+   "what": "Pallotto D1 found-solved. Volume-aware exclusion shows Bourdeau already names 193 of the 202 cached neighbour pairs; the lane needs the full DECODE catalogue or archives not on DECODE. Next scout targets non-DECODE catalogues once the network opens."
+  },
   {
    "when": "23 Sept, 21:30",
    "what": "Owner restated the goal: maximise unique solves. DECODE neighbour sweep found 27 recovery candidates in 7 clusters, none English; reader profile widened to all readable languages; check-solved started on the Pallotto cluster (D1) so it can be read the day DECODE opens."
