@@ -1,20 +1,32 @@
-partial
+found-solved
 
 # Ernest and Joachim of Anhalt-Zerbst to Francis I, Latin, "presque entierement en chiffres" -- BnF Dupuy 468
 
-(Title as catalogued. The verifier, 23 Sept 2026, finds the attribution probably wrong: most probably Ernest of
-Brunswick-Lüneburg and Joachim von Moltzan, 1518/19. See AUDIT.md section 3.)
+(Title as catalogued, and wrong. The letter is from Ernest of Brunswick-Lüneburg and Joachim von Moltzan, Zerbst,
+[24 January 1520]. Its French translation is printed in Deutsche Reichstagsakten, Jüngere Reihe II (1896), p. 122. See
+AUDIT.md, "Second, adversarial audit".)
 
-partial
+**Second verifier (23 September 2026, AUDIT.md "Second, adversarial audit"): found-solved, class N1.** The plaintext
+of this letter has been in print since 1896. RTA JR II (ed. A. Wrede), Beilagen zur Einleitung IV no. 1, p. 122,
+"Ernst v. Lüneburg und Joachim v. Moltzan an Franz I. ... [1520] Januar 24", prints the contemporary French
+translation (BnF fr. 3897 fol. 146, "Translat des lettres du filz du duc de Lunembourg et Joachin au roy") in full.
+Every sentence of reading.txt has its counterpart there, down to "la veille de sainct Pol au matin à cinq heures".
+The 1881 *Catalogue des manuscrits français* III already lists it (fr. 3897 item 73). No printed link between the
+Dupuy 468 cipher leaf and that text was found. The first verifier's N3 and the date 1518/19 below are superseded:
+the date is 24 January 1520. r22 "palatinus" is very probably *paulatim* ("peu à peu"), so there is no Count
+Palatine in the letter. What this folder adds is a contribution, not a solve: it identifies the Latin cipher original,
+corrects the catalogue, and checks the reading against the printed translation.
 
-**Status: partial** (23 September 2026). The letter spans f.28r-v (canvases 63-64; the check-solved sweep saw only
+found-solved
+
+**Status: found-solved** (23 September 2026, second verifier; was partial). The letter spans f.28r-v (canvases 63-64; the check-solved sweep saw only
 canvas 64). All 687 cipher tokens were transcribed. The later hand's interlinear gloss gives a self-consistent
 simple-substitution key (21 letter signs, 5 word signs). With it, 663 of the 687 tokens read as continuous Latin:
 630 at grade H, 33 at grade S. 18 are M and 6 are unread. Novelty is not classified here (rule 10; a verifier
 session has not run). The status stays partial, not solved, until then and until the six unread tokens and the
 gloss hand are settled.
 
-**Verifier (23 September 2026, AUDIT.md): class N3.** No printed text or printed decipherment of this letter was
+**Verifier (23 September 2026, AUDIT.md): class N3** [superseded by the second verifier's N1, above]. No printed text or printed decipherment of this letter was
 found in the editions listed in AUDIT.md section 4. The letter has a prior decipherment, though: the interlinear
 gloss on the leaf. It is most probably the French chancery's decipherment made on receipt in 1518/19, not a
 later antiquarian's (AUDIT.md section 5). The H 630 tokens are therefore a transcription of that decipherment,
@@ -240,7 +252,7 @@ et dominum admiraldum scripsi ... Datum in vigilia sancti Pauli in mane hora qui
 where Saxony, the margrave and Lüneburg and Mecklenburg met with them. They propose that the margrave, Lüneburg and
 Mecklenburg conclude a league with the German princes who can be drawn in, at first without naming the Most
 Christian King. One article would admit no new member without the consent of the majority of the confederates.
-The Count Palatine could be approached. Once the majority is secure, the King himself would ask to join. The King
+The Count Palatine could be approached [wrong: r22 "palatinus" is very probably *paulatim*, "peu à peu" in the printed French; second verifier, 23 Sept 2026]. Once the majority is secure, the King himself would ask to join. The King
 should promise pensions to princes who have none. He should not send a Frenchman openly; instead he should give
 the two writers authority to make promises privately until the league is made. The clear parts name letters that
 Joachim wrote to the Chancellor and the Admiral.

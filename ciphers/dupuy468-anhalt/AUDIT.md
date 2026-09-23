@@ -5,6 +5,10 @@ key.tsv, key_from_gloss.tsv, runs.tsv and check.py as of commit 1820fe5, and the
 status.json, LEDGER.md and ROOM.md. This session did not take part in the transcription or the solving. It did no
 decoding and does not protect the solver's conclusions. Classes are those of CLAUDE.md rule 10.
 
+> **Superseded, 23 September 2026:** the second, adversarial audit at the end of this file found the letter printed
+> (French translation) in Deutsche Reichstagsakten, Jüngere Reihe II (1896), p. 122, dated [1520] Jan. 24. The class is
+> **N1**. Sections 1-9 are kept as the first audit's record. Their N3, their safe sentence and their 1518/19 date no longer hold.
+
 ## 1. Verdict
 
 | item | prior plaintext | prior decipherment of this item | class |
@@ -190,3 +194,117 @@ gallica.bnf.fr 14 (10 SRU, one connection reset retried once; 4 texteBrut/HEAD, 
 stopped), web.archive.org 6 (1 CDX, 3 PDFs, 2 SSL failures), cour-de-france.fr 1 (403 Cloudflare, stopped),
 archivesetmanuscrits.bnf.fr 1, github.com 2 clones, WebSearch 8. All 1.5 s or more apart, one host at a time,
 with a descriptive User-Agent.
+
+## Second, adversarial audit (23 September 2026)
+
+Second verifier session, 23 September 2026, 22:08-22:16 UTC (Opus, no subagents). This session did not take part in
+the transcription, the solving or the first audit. Its mandate was to assume that the letter is already in print and
+to find it. **It found it.**
+
+### Verdict: N1. The plaintext has been in print since 1896.
+
+**The finding.** *Deutsche Reichstagsakten, Jüngere Reihe*, **Band II** (ed. Adolf Wrede, Gotha: F. A. Perthes, 1896),
+*Beilagen zur Einleitung* IV, no. 1, **p. 122**. The heading reads: "IV. Verhandlungen von Ernst v. Lüneburg und Joachim v. Moltzan
+in Zerbst. 1. Ernst v. Lüneburg und Joachim v. Moltzan an Franz I. über Verhandlungen mit Brandenburg, Lüneburg und
+Mecklenburg in Zerbst. — [1520] Januar 24." Source note: "Aus Paris Bibl. nat. f. fr. 3897 fol. 146. Franz.
+Übersetzung. Dazu fol. 149b die Indorsalnotiz: Translat des lettres du filz du duc de Lunembourg et Joachin au roy."
+The whole letter is printed there in this contemporary French translation, from "Sire, apres tres-humbles
+recommandations" to "Dat. (s. l.) la veille de sainct Pol au matin à cinq heures". The Einleitung summarises it at
+pp. 28-29 ("Vgl. Beil. nr. IV"). No. 4 of the same Beilage (pp. 125-126) is Ernest's covering letter to Chancellor
+Duprat, "A Celles, le 28e de janvier" [1520]. It is also from fr. 3897 (fol. 147f.) and refers to "le Brief Joachims von
+Moltzan". Read in two independent scans: IA `bub_gb_yAQQAAAAYAAJ` (lines 8011-8060 of the djvu text) and IA
+`deutschereichst07kommgoog` (lines 8226-8275). The two scans agree word for word apart from OCR noise.
+
+**Earlier still: a catalogue entry since 1881.** *Catalogue des manuscrits français*, t. III, *Ancien fonds* (Paris:
+Firmin-Didot, 1881), fr. 3897, item 73: "Lettre d'«Ernest, duc de Lunembourg» et «Joachin» de Brandebourg à
+François Ier. «Escript la veille de Sainct Pol, au matin à cinq heures». Copie. (Fol. 146.)". Item 74 is the Celle letter
+of 28 January (IA `p1cataloguegnr03bibluoft`, lines 19016-19022).
+
+**It is this letter.** Every sentence of reading.txt has its counterpart in the printed French, in the same order:
+
+| reading.txt | RTA JR II p.122 (French translation, 1520) |
+|---|---|
+| r01-r03 Post humilimam atque humilimam commendationem ... nos ambos saluos ... venisse in opidum Cerbes | apres tres-humbles recommandations ... mon compaignon et moy sommes arrivés en la ville de **Cerbes** |
+| r03-r04 et ibi erant simul **?** Saxonie, Marchio, Luneburg, ambos Mekleburg, et multi alii | et là estoient ensemble **l'arcevesque de Magance**, le duc de Saxe, le marquis de Brandebourg, le duc de Lunembourg, les deux ducz de Meklembourg et plusieurs autres princes |
+| r04-r05 ego filius [ducis] Luneburg tractatum cum patre meo | Et moy, filz du duc de Lunembourg, tirey mon père à part pour parler de notre affaire |
+| r05-r07 ego Iochin ut proposui Marchio[ni] commissionem meam in presentia Luneburg vnius de Mekleburg | et moy, Joachin, en communiquey audit marquis en luy monstrant en la présence du duc de Lunembourg et l'ung des Meklembourg ma commission |
+| r08-r10 conclusum ... Marchio cum auxilio Luneburg et Mekleburg faciant totis viribus ut fedus concludatur | La conclusion fut que ledit marquis avec la bonne aide de Lunembourg et Meklembourg mectra peine de traicter icelle alliance |
+| r11 ut primo de christianissimo nulla fiat mencio | que de vous au commancement ne soit faicte aucune mencion |
+| r12-r14 inter eos et qui inter Germanie principes attrahi possunt fiat fedus | que entre eulx et le plus de princes de la Germanie, qu'ilz y pourront actrayre, se face icelle alliance |
+| r14-r21 articulus ... nullus alius in istud fedus acceptaretur nisi maiore parte confederatorum consentiente ... minor pars ... consentire teneretur | articles exprès que nul ne puisse entrer en icelle sinon du consentement de la plus grant part des alliés et confedérés ... la meindre partie sera tenue le ratiffier |
+| r22-r24 Deinde potest **palatinus** tractari cum his qui non dum habent speciale fedus aut singulare amiciciam cum christianissimo | Puys l'on pourra **peu à peu** traicter avec ceulx qui n'ont encores specialle alliance ou singulière amytie avecques vous |
+| r25-r27 ubi securum sit quod longe maior pars erit pro christianissimo, tunc optimum erit ut christianissimus hoc fedus petat velle inire | quant l'on sera asseuré que la plus grant partye sera pour vous, lors sera bon que requeriez entrer en icelle ligue |
+| r28-r30 etiam si aliquem noluissent esse in federe cum christianissimo ... astricti erunt esse confederatores | si aucuns d'iceulx princes ne voulloient avoir alliance avecques vous, seront toutesfois contraintz estre voz alliez |
+| v01-v03 maiorem ligam et confederacionem in fauorem christianissimi quod sit in tota Germania | la plus grant ligue et confedération en votre faveur, qui soit en toute la Germanye |
+| v04-v06 Marchio, Luneburg ... qui non habent a christianissimo pensionem ipsis promittatur | comme le marquis et le duc de Lunembourg conseillent, promectre pensions à ceulx, qui de vous n'en ont aucune |
+| v06-v07 videtur Marchioni consultum ut consortii nobis Gallum christianissimus non mittat principaliter | si est d'avis ledit marquis que ne debvez envoyer par-deçà ung Françoys pour notre compaignon, ou au moins qui ne tienne grant estat |
+| v07-v10 sed nobis duobus autoritate det ... promittendi donec ... fedus inter eos factum sit ac tempus erit ut christianissimus ingrediatur | mais debvez donner à nous deux puissance de povoir promectre icelles pensions jusques à ce que ladite ligue sera conclute ... et que sera temps que entriez en icelle |
+| v11-v12 si pars adversa de ista materia intelligeret aliquid impediret totis viribus | si partie adverse povoit entendre quelque chose de cest affère, elle mectroit peine de le rompre |
+| v13 Nos minore suspicione faciemus et citius perficiemus | Nous conduyrons ledit affaire en moindre danger et suspeçons et plustost l'acheverons |
+| v13-v15 ne longis litteris maiestati vestre fastidio simus ... quas ego Joachimus ad dominum Cancellarium et dominum admiraldum scripsi | La reste pour crainte de vous ennuyer moy, Joachin, l'escrips à mess. voz chancellier et admiral |
+| v18 Datum in vigilia sancti Pauli in mane hora quinta | Dat. (s. l.) la veille de sainct Pol au matin à cinq heures |
+
+**Classification (rule 10).**
+- Prior plaintext: **yes.** The full text is printed in the contemporary French translation, RTA JR II p.122 (1896).
+  The letter is also listed in the 1881 BnF catalogue.
+- Prior decipherment: the letter was deciphered on receipt in 1520. The French "translat" was made from the
+  deciphered Latin, and the interlinear gloss on f.28 is most probably that decipherment. The first audit's
+  section 5 inference is now strongly supported: the printed text is the output of the chancery's decipherment.
+- Prior mapping in print of *this ciphertext* (Dupuy 468 f.28) to that text: **not found.** RTA JR II cites only the
+  translation in fr. 3897. It does not mention the Latin cipher original in Dupuy 468. Dorez (1899) and the BnF
+  notice give the Dupuy leaf to "Anhalt, 1515 ou 1516" and do not link it to fr. 3897.
+- The Latin wording itself: not found in print. What is printed is a translation.
+- **Class N1.** Our reading is an independent re-reading of a letter whose plaintext has been published since
+  1896. N0 could be argued in substance, because the printed text comes from the 1520 decipherment of this very item. It is
+  not assigned only because no print links the Dupuy 468 cipher leaf to it. N2 does not apply, because the text
+  is published and not merely known elsewhere.
+- Evidence quality: direct. The printed page was read in two scans and compared sentence by sentence. Confidence:
+  very high.
+
+**Safe sentence.** "BnF Dupuy 468 f.28 is the Latin cipher original of the letter of Ernest of Brunswick-Lüneburg
+and Joachim von Moltzan to Francis I, Zerbst, [24 January 1520]. Its French translation (BnF fr. 3897 fol. 146) was
+printed in Deutsche Reichstagsakten, Jüngere Reihe II (1896), p. 122 (N1). The leaf carries a contemporary interlinear
+decipherment. Transcribing it gives the Latin that the printed translation renders. The catalogue's 'Anhalt, 1515
+ou 1516' is wrong, and no printed link between the Dupuy leaf and the RTA text was found."
+
+**Unsafe sentences.** Anything that calls the letter unread, unknown, newly recovered, first deciphered or unpublished;
+"new evidence for German politics in 1518/19"; "the princes proposed approaching the Count Palatine"; "N3"/"N4";
+"solved" as a result of this project. At most it is a contribution: the Latin original identified, the catalogue's
+attribution and date corrected, and the reading checked against the printed translation.
+
+### Corrections this finding forces
+
+1. **Date.** The date is **24 January 1520**, the vigil of the Conversion of St Paul. The catalogue's 1515/16 is wrong,
+   and so is the first audit's 1518/19. Wrede dates it by the Zerbst Tag, the Zerbster Vertrag of "Dinstag nach
+   Vincentii" (24 Jan.) 1520, and by Ernest's letter from Celle of 28 January. The first audit's senders were right.
+2. **"palatinus" (r22) is very probably a misreading of *paulatim*.** The French has "peu à peu" in that place,
+   and there is no Count Palatine in the printed text. It is a clear word, so it is ungraded, and it was misread in
+   transcription. NOTES.md's paraphrase "The Count Palatine could be approached" is therefore wrong. The line should be
+   re-read on the image (canvas 63, r22). This session does not edit reading.txt or ciphertext.txt (no decoding).
+3. **The unread token in r03** stands where the French names "l'arcevesque de Magance". It is probably a word sign
+   for Mainz. This is left to the solver: a hint, not a reading.
+4. **The first audit's N3 was a search-coverage failure, not a reading error.** It read RTA JR I and listed JR II as "not searched ...
+   relevant only if the letter is of 1520-21". That was the volume. The Eckert lesson again: the edition that
+   prints the sender's own negotiations was one volume further on. Its N3 and its safe sentence are superseded by this
+   section.
+
+### Search log, this session (read pages, not only hit counts)
+
+| family | read | hits | judgement |
+|---|---|---|---|
+| 1. RTA JR I (Kluckhohn 1893), IA `bub_gb_0gFoAAAAMAAJ` (copies `bub_gb_6gcQAAAAYAAJ`, `deutschereichst08kommgoog`, `deutschereichst10kommgoog` identified) | Einleitung pp. 52-57 (Moltzan's 1518 alliance plan, Ernst's journey), pp. 131-139 (Moltzan's instruction of 23 Oct 1518: "capitula et articuli federis fiant"), p. 146-147 n. (Moltzan in Berlin end 1518), the chronological register (1519) for Moltzan/Lüneburg/Franz, the index entries Lüneburg ("Sohn Ernst"), Moltzan; grep of all Paris source notes (Dupuy only 263, via Le Glay), Chiffr-, Zerbst variants ("Zerbst 262" only) | Moltzan to Francis I, 12 Mar 1519, nos. 416-419 (= Le Glay II 329, Dupuy 264), not this letter | not in JR I. JR I points forward: Ernst was still in France in Nov 1518 |
+| 1. RTA JR II (Wrede 1896), IA `bub_gb_yAQQAAAAYAAJ`, `deutschereichst07kommgoog` | Einleitung pp. 28-30 (Zerbst Tag, Jan 1520, notes); Beilagen zur Einleitung IV nos. 1-4, pp. 122-126 | **IV no. 1, p. 122: this letter, in full, French translation; no. 4 pp. 125-126: Ernest to Duprat, Celle, 28 Jan [1520]** | **found** |
+| 1. RTA Nachträge | not needed after the finding | | |
+| 2. Lisch, Maltzan Urkunden I-IV, Jahrbücher; Havemann; ADB/NDB | not read. Could only add a second printing | | not needed for the class |
+| 3. Mignet II, Champollion-Figeac, Potter 1515/1517, Ulmann, Bauer, Weiss, CAF index | not read (same reason) | | not needed for the class |
+| 4. BnF catalogue history | *Catalogue des manuscrits français* III (1881), fr. 3897 items 73-74, IA `p1cataloguegnr03bibluoft` | the translation catalogued, with the date formula | the letter's existence and date formula in print since 1881. Dorez's Dupuy 468 entry was read by the first audit (no link) |
+| 5. Full text | IA fts `"ville de Cerbes"` (2 hits: the two RTA II scans); `"duc de Lunembourg et Joachin"` (2: RTA II, the 1881 catalogue); `"Moltzan" "Cerbes"` (8: RTA II ×2, the rest unrelated). HTRC not used: the page was read in two IA scans | as listed | no printing of the Latin, and no link of Dupuy 468 to the text found |
+| 5. WebSearch (Google Books/JSTOR snippets) | `"Dupuy 468" Zerbst OR Cerbes OR Lunebourg OR Moltzan 1520`; `"Moltzan" "Zerbst" 1520 Franz I. Ernst Lüneburg Bündnis Brief chiffriert` | nothing on the letter | for a credential session (only to test for N0, a printed link of the Dupuy leaf): Google Books `"Dupuy 468" 1520 Lunebourg`, `"fr. 3897" Moltzan`, `"Cerbes" Moltzan`; JSTOR `"Ernst von Lüneburg" Zerbst 1520 Moltzan` |
+| 6. Cryptologic literature, DECODE cache | not re-run (first audit: negative). A cryptologic study would matter only for N0 | | |
+
+**Requests this session:** archive.org 9 (2 advancedsearch, 6 RTA djvu texts, 1 catalogue djvu text),
+be-api.us.archive.org 3 (fts), WebSearch 2. One host at a time, at least 1.6 s apart, descriptive User-Agent. No credentials used.
+
+**Postmortem (one line).** The first audit searched the right edition series but stopped one volume short, because its
+date inference (1518/19) ruled out JR II. The catalogue had already listed the translation, under its date formula,
+in 1881.
