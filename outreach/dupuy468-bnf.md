@@ -1,4 +1,4 @@
-to: BnF, Département des Manuscrits: the "signaler une erreur" link on the Dupuy 468 notice at archivesetmanuscrits.bnf.fr, or manuscrits@bnf.fr
+to: manuscrits@bnf.fr (BnF, Département des Manuscrits; address confirmed 23 Sept 2026 on https://www.bnf.fr/fr/departement-des-manuscrits). Alternatives: the SINDBAD question form https://www.bnf.fr/fr/une-question-pensez-sindbad or the contact form https://www.bnf.fr/fr/contacter-la-bnf. The notice at archivesetmanuscrits.bnf.fr has no error-report link (checked 23 Sept 2026).
 subject: Collection Dupuy 468, f. 28 : identification de l'original chiffré d'une lettre éditée, et correction de la notice
 checked: 23 Sept 2026, orchestrator. Class N1 (AUDIT.md, second audit), grade F1. Claims no priority; cites RTA JR II p.122. No personal data. Link public. Safe to send as is (French text; English below for reference).
 status: ready
