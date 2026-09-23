@@ -31,6 +31,14 @@ Pipeline per cluster: check-solved (editions first: Nuntiaturberichte, CODOIN, c
 letter and sibling -> two transcription passes -> key from the sibling, read -> verifier -> board. Blocked at the
 second step until ASKS rows 1, 10 and 11 are done.
 
+**Next session on this account, first actions (written 23:30 UTC, 23 Sept 2026).** (1) Presence test of the seven
+variables with `test -n`, no values printed. (2) One DECODE login attempt via `tools/decode_fetch.sh 8725 ...`; on
+success, ASKS row 1 to done and ASSIGNMENTS row 7 starts (record 8725, then a polite full catalogue pull to
+`sources/decode/`, then the neighbour tool on the whole catalogue). (3) One archive.org login attempt via
+`tools/ia_borrow.py` on a named page check (ASKS row 2). (4) Read the three worker reports of the night (non-DECODE
+scout, Burgess 1912, Bowes 1583) in ROOM.md and the target NOTES, and pick from the new QUEUE sections. The
+good-citizen rule in the Access playbook applies to every request.
+
 **Correction, 22:30 UTC.** Re-running the exclusion by volume as well as by id shows Bourdeau's repository already
 names 193 of the 202 neighbour pairs in the cached catalogue, and D1 (Pallotto) is found-solved (key broken 2018,
 printed edition). Five pairs survive (D8, RAH 9/29), in a volume between two he is reading. So the cached-catalogue
