@@ -1,0 +1,19 @@
+{
+  "shelfmark": "Bibliotheque nationale de France. Departement des Manuscrits. Clairambault 1225",
+  "ark": "ark:/12148/btv1b9001034d",
+  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b9001034d",
+  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001034d/manifest.json",
+  "archivesetmanuscrits_notice": "http://archivesetmanuscrits.bnf.fr/ark:/12148/cc137837/cd0e29423",
+  "leaves_total": 268,
+  "rights": "Bibliotheque nationale de France, public domain reproduction, Gallica, no login required",
+  "fetched": "23 September 2026",
+  "fetch_method": "curl, browser User-Agent, IIIF Image API /full/900,/0/native.jpg (reduced width)",
+  "images": [
+    {
+      "file": "btv1b9001034d_canvas48_probe_not_folio48.jpg",
+      "canvas": "IIIF canvas index 48 (naive guess equal to the finding-aid's cited 'Fol. 48')",
+      "shows": "NOT the Paget item. An unrelated 18th-century French religious-community letter (Jansenist-adjacent: 'Soeur Anne...', 'M. le Cardinal de Noailles'), stamped '209' and '42' in the corner. A second probe at canvas 54 (also not kept as an image) showed a mounted 17th-century engraved portrait ('D. Francisco Villani a Gandavo, Episcopo Tornacensi'), confirming this 268-leaf 'Melanges' volume bundles wildly heterogeneous, non-chronological material (portraits, printed factums, testaments, genealogies, autograph letters) with no simple canvas-to-folio correspondence."
+    }
+  ],
+  "note": "The Paget item ('Fol. 48 -- Rosset de Fleury (testament du cardinal ; lettres autogr. de Paget, avec chiffre, 1714)', per archivesetmanuscrits.bnf.fr's item-level index) was not located by image this sweep. Gallica's Pagination service returned zero folio numbers for this ark; ContentSearch returned zero OCR hits for 'Paget'. This is a genuinely disordered miscellany, unlike Dupuy 452/468's roughly sequential letter-collections."
+}

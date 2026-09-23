@@ -1,0 +1,24 @@
+{
+  "shelfmark": "Bibliotheque nationale de France. Departement des Manuscrits. Dupuy 468",
+  "ark": "ark:/12148/btv1b10035959t",
+  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b10035959t",
+  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035959t/manifest.json",
+  "archivesetmanuscrits_notice": "http://archivesetmanuscrits.bnf.fr/ark:/12148/cc88606j",
+  "leaves_total": 492,
+  "rights": "Bibliotheque nationale de France, public domain reproduction, Gallica, no login required",
+  "fetched": "23 September 2026",
+  "fetch_method": "curl, browser User-Agent, IIIF Image API /full/900,/0/native.jpg and /full/1800,/0/native.jpg (reduced/higher width)",
+  "images": [
+    {
+      "file": "btv1b10035959t_canvas64_folio28_anhalt_cipher_glossed.jpg",
+      "canvas": "IIIF canvas index 64 (matches finding-aid folio 28 by content and by bracketing against canvas67=folio 30-31; pinned by trial after canvas45/55 located the preceding item, a long historical memoir, ending near archival folio ~19-20)",
+      "shows": "THE Anhalt/Joachim letter to Francis I, Latin, dated internally 'in vigilia sancti Pauli, hora quinta' (finding aid: 1515 or 1516). A genuine 'presque entierement en chiffres' letter: plain Latin grammatical words (ut, et, quod, sed, oportet omnino...) alternate word-by-word with cipher tokens -- numerals (4,6,7,8,9), Greek-letter-like signs and a few pi/tau/asterisk marks -- roughly 15 lines, on the order of 100-130 total tokens, of which more than half are cipher groups. CRITICAL FINDING: a LATER, LIGHTER hand has added interlinear gloss-words in small script ABOVE roughly 15-20 of the cipher tokens (readable examples: 'maiorem', 'quam', 'et', 'confoederationem', 'infamorum', 'principibus', 'foedus'/'foederis', 'marchonem', 'inter', 'nos', and others too faint to read at this resolution) -- i.e. a PARTIAL interlinear decipherment already sits on the leaf itself, not a blind ciphertext. Not established this sweep whether this gloss hand is contemporary (a period codebreaker's crib) or later (e.g. Theodore Godefroy, the 17th-century antiquarian whose notes appear elsewhere in this same volume, ff.8-9) -- flagged for the next pass, not resolved here."
+    },
+    {
+      "file": "btv1b10035959t_canvas67_folio30-31_palatine_plain.jpg",
+      "canvas": "IIIF canvas index 67 (matches finding-aid folio 30-31 by content)",
+      "shows": "Louis V, Count Palatine of the Rhine, to Francis I, Heidelberg, 'jour de la Fete-Dieu' 1516 -- headed 'Ch. Palatin 1516' in the same period annotation style as the Carpi letters in Dupuy 452. Plain Latin, no cipher. Confirms the canvas-to-folio offset (~+36-37) used to locate canvas 64."
+    }
+  ],
+  "note": "The long historical memoir occupying the finding aid's folio 11 ('Memoires sur l'usurpation du duche de Milan, de Sienne...') was traced across canvases 40, 45 and 55 (internal treatise page numbers ~14, 19, 24 visible) to establish the offset before bracketing folio 28 at canvas 64. Canvas 28 itself (tried first, naively) is still front-matter bleed-through, not folio 28 -- this volume has substantial unfoliated front matter before its numbered leaves begin."
+}
