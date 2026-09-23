@@ -2,6 +2,9 @@ partial
 
 # Ernest and Joachim of Anhalt-Zerbst to Francis I, Latin, "presque entierement en chiffres" -- BnF Dupuy 468
 
+(Title as catalogued. The verifier, 23 Sept 2026, finds the attribution probably wrong: most probably Ernest of
+Brunswick-Lüneburg and Joachim von Moltzan, 1518/19. See AUDIT.md section 3.)
+
 partial
 
 **Status: partial** (23 September 2026). The letter spans f.28r-v (canvases 63-64; the check-solved sweep saw only
@@ -10,6 +13,16 @@ simple-substitution key (21 letter signs, 5 word signs). With it, 663 of the 687
 630 at grade H, 33 at grade S. 18 are M and 6 are unread. Novelty is not classified here (rule 10; a verifier
 session has not run). The status stays partial, not solved, until then and until the six unread tokens and the
 gloss hand are settled.
+
+**Verifier (23 September 2026, AUDIT.md): class N3.** No printed text or printed decipherment of this letter was
+found in the editions listed in AUDIT.md section 4. The letter has a prior decipherment, though: the interlinear
+gloss on the leaf. It is most probably the French chancery's decipherment made on receipt in 1518/19, not a
+later antiquarian's (AUDIT.md section 5). The H 630 tokens are therefore a transcription of that decipherment,
+and only the S 33 are the solver's own reading. The letter must not be called unread, newly deciphered or first
+deciphered. The catalogue's "Anhalt, 1515 ou 1516" is probably wrong (AUDIT.md section 3): the subscription "Ernestus dux", "ego filius
+... Luneburg" and "ego Joachimus ... ad dominum Cancellarium et dominum admiraldum" point to Ernest of
+Brunswick-Lüneburg and Joachim von Moltzan (verifier's inference, grade I). Where this file says "the princes of
+Anhalt" or "1515/16", read "the senders as catalogued". Safe sentence: AUDIT.md section 1.
 
 
 QUEUE row: M7 (sources/solver-diffs/2026-09-23-digitised-hits.tsv, "Digitised candidates, no copy needed").
