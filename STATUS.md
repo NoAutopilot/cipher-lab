@@ -70,6 +70,7 @@ the browser tool.
 | Cryptiana list via the solver repositories (our original queue) | 40 rows | 9 (5 of them years ago) | 0 | most; 4 with requests drafted | 0 | stopped: worked daily by both projects |
 | DECODE cached catalogue, neighbour-record pairs | 202 pairs | 193 named by Bourdeau by id or volume; D1 solved | 0 | D8 only | 0 | stopped: needs the full catalogue behind the login |
 | GitHub-held ciphertexts (Bourdeau not-read) | 12 | 0 | 0 | 0 | 1 attacked, clean negative | stopped: his tooling already failed there |
+| Bourdeau offline-only / stuck items (B rows) | 12 | 7 already ours | 0 | 5 | 0 | new 23 Sept 23:27 UTC; all copy-order, held behind ASKS rows 14-16 |
 | TNA Discovery, BL, Gallica keyword sweep (N rows) | 36 scored, 15 swept | 6 | 2 | 7 | 0 | stopped by rule: 13 stage-2 targets wait on the person |
 | Digitised BnF manuscripts (M rows) | 11 scored, 7 swept | 3 | 2 | 0 | 3 (M4 unpinned, M6, M7) | open: M7 (Dupuy 468) read, then found printed (RTA JR II 1896), N1; M6 (Dupuy 452) gated at N3, passes running; M8-M11 unswept |
 | Printed ciphertext detector (IA full text) | 274 editions, 24 passages; 1 swept | 1 (P1 Orange 1572: partial decipherment printed 1842) | n/a | 0 | 23 unswept, mostly Thurloe passages overlapping a catalogued item | open, low expectation: the strongest candidate fell to an 1842 journal; the rest need a leaf check against the Thurloe pieces already tracked |
@@ -90,6 +91,8 @@ Orange 1572 detector candidate also fell (partial decipherment printed 1842). Ze
 over-claims prevented by the gates before anything left the repository.
 
 ## Handoff from the ytbiz orchestrator, 23 September 2026, 22:24 UTC
+
+**23:40 UTC, 23 Sept: wake 2, first reports.** Bourdeau offline-only scout (row 21) done: of 12 items his repository marks offline-only or stuck, 7 were already ours and 5 are added as QUEUE B1-B5 (WW2 censorship manual, 1520s superscript ciphers, Ungnad 1576, Florence 1414, Toulon 1803); none is copy-free, so none is promoted while the copy-order asks wait. The first row 25 worker stalled on a stale clone and was replaced. The Raince reconciliation (Opus) and M8-M11 check-solved (Sonnet) are running. The previous orchestrator session prepared a history purge on `purged-main`; swapping it in is the owner's step (ROOM.md, 23:39).
 
 **23:16 UTC, 23 Sept: wake 2 started.** The three outreach emails were sent by the owner on 23 Sept (Tomokiyo, BnF, NLS; CONTRIBUTIONS.md). A fresh orchestrator session on this account (session_01SepNMpYrr6L2EwqL43aTnm, Opus, cap $60) now carries the list below, starting with the Raince reconciliation (ASSIGNMENTS row 24), then M8-M11 check-solved, then rows 21 and 25. This session closed at $235.5.
 

@@ -1,688 +1,712 @@
 {
- "updated": "23 September 2026, 22:24 UTC",
- "stages": [
-  "Identified",
-  "Verified unsolved",
-  "Ciphertext in hand",
-  "Key source located",
-  "Request sent",
-  "Copies received",
-  "Transcribed",
-  "Reading attempted",
-  "Novelty verified",
-  "Solved"
- ],
- "targets": [
-  {
-   "name": "Charles II to the Duke of Hamilton",
-   "year": "1650",
-   "ref": "NRS GD406/1/2197",
-   "folder": "ciphers/hamilton-1650",
-   "stage": 5,
-   "state": "waiting",
-   "holder": "Archive",
-   "next": "NRS to send a quote for images of the five key sheets. Then pay, then apply the key to the 102 groups. archive.org loan of the 1932 HMC report works but its pages are reader-protected: the person reads pp.70-74 and the 1650 entries in the reader (ASKS row 18).",
-   "note": "If the NRS sheets do not cover the cipher, this becomes cryptanalysis. Copy request emailed 19 Sept 2026. Cipher is 102 groups across four letters; unreadable without the key, which the catalogue lists as open.",
-   "wait": {
-    "on": "A quote from National Records of Scotland for images of the five key sheets, GD406/1/2197",
-    "since": "19 Sept 2026",
-    "expected": "1 to 3 weeks for a quote; images some weeks after payment",
-    "unblock": "NRS replies. If they need depositor consent, that is a second wait. Fallback: John Wallis's papers at the Bodleian."
-   },
-   "kind": "recovery"
-  },
-  {
-   "name": "George Stepney to the Earl of Manchester",
-   "year": "1702",
-   "ref": "TNA SP 105/65",
-   "folder": "ciphers/stepney-manchester-1702",
-   "stage": 5,
-   "state": "waiting",
-   "holder": "Archive",
-   "next": "TNA staff page check (order 3660178, paid). They will quote for the copy of the letter-book entry, which should carry the 24 groups in clear.",
-   "note": "Volume identified 19 Sept 2026 by a worker. If the entry is not in the letter-book, fall back to SP 80/18 or the Stepney Papers at the BL. Blind six-source sweep 20 Sept 2026: offline-only confirmed, no solution anywhere.",
-   "wait": {
-    "on": "TNA staff page check of SP 105/65 (order 3660178), then their quote for the copy",
-    "since": "19 Sept 2026",
-    "expected": "Page check on a weekday, usually within 2 weeks; copy 2 to 4 weeks after payment",
-    "unblock": "TNA finds the 23 March 1702 entry. If they report no such entry, switch to SP 80/18 or the Stepney Papers at the BL."
-   },
-   "kind": "recovery"
-  },
-  {
-   "name": "Wellington to General Maitland",
-   "year": "1812",
-   "ref": "Spink lot 1184, sale 23 Sept 2026",
-   "folder": "ciphers/wellington-maitland-1812",
-   "stage": 7,
-   "state": "you",
-   "holder": "You",
-   "next": "HathiTrust closed 03:37 UTC: 19 more editions tested through the Bibliographic and Extracted Features APIs, none matches (76 editions in all); Scott, Jones 1800, London Perry, Walker 1810 and Dublin Entick are not in HathiTrust at all. For you before 23 Sept: ask Spink whether lot 1184 includes a pocket dictionary. Remaining leads need a library: Urban pp. 232-233, the Bentinck papers (Nottingham Pw Jd), WO 37.",
-   "note": "The key is a printed dictionary; finding the edition is recovery, not a crack. Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick's 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item. Blind sweep 20 Sept 2026: status set to partial, since Hayes, Lasry and Tomokiyo's published work is a partial solution of the code system; the dictionary edition and the strip-cipher rule remain open.",
-   "wait": {
-    "on": "You: one email to Spink before the 23 Sept sale",
-    "since": "20 Sept 2026, 03:37 UTC",
-    "expected": "Before 23 Sept 2026",
-    "unblock": "Spink confirms or denies a dictionary in the lot; or a library check of Urban and the Bentinck papers."
-   },
-   "kind": "recovery"
-  },
-  {
-   "name": "Charles Whitworth to Robert Harley",
-   "year": "1707-08",
-   "ref": "TNA SP 91/5/108 (+ ff. 106, 121 for the key)",
-   "folder": "ciphers/whitworth-1707",
-   "stage": 4,
-   "state": "you",
-   "holder": "You",
-   "next": "Decide whether one unread clause is worth about 10 images (roughly £30). If yes, order SP 91/5/108, 106 and 121 on Discovery using the message in ciphers/whitworth-1707/REQUEST.md.",
-   "note": "Worker result 19 Sept 2026: four of the five 'undeciphered' items are already in print (Sbornik vols 39 and 50) or deciphered in the same volume. Only one clause of f. 108 is unread, about the French mediation of 1707. The neighbours ff. 106 and 121 were deciphered in London, so their pages give the key. Low historical weight; cheap; certain to work. Blind sweep 20 Sept 2026: no prior attempt found; open, narrowed to one clause of f.108.",
-   "wait": {
-    "on": "Your decision and your click on the TNA order",
-    "since": "19 Sept 2026",
-    "expected": "Whenever you choose; TNA then takes 2 to 4 weeks",
-    "unblock": "Order placed. If you decide it is not worth it, mark it parked and it drops down the queue."
-   },
-   "kind": "recovery",
-   "result": "Four of five \"undeciphered\" items were already in print; the finding corrects the catalogue."
-  },
-  {
-   "name": "Eckert Papers, US Military Telegraph",
-   "year": "1862-67",
-   "ref": "Huntington mssEC 15 (1862); mssEC 19 ledger with cipher book mssEC 41 (1864)",
-   "folder": "ciphers/eckert-1862",
-   "stage": 9,
-   "state": "waiting",
-   "holder": "Archive",
-   "next": "Parked for cryptanalysis (every cipher in the ledger reads from a surviving book). An enquiry went to the Huntington curator on 20 Sept 2026 asking whether a corpus-level decoding dataset exists and whether one would be useful; their reply decides whether the mechanical corpus pass is run as an edition project.",
-   "note": "Twenty 1864 entries read at grade H from cipher book mssEC 41; seventeen agree word for word with the Official Records, one with the printed Lincoln works, two (E4, E5) not found in the sources listed in AUDIT.md. Corpus question (AUDIT.md section 12): no one has mapped the ledger entries to cipher, key, plaintext and print; the project's decoding phase was never launched (paused Jan 2018, ended July 2019). A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve.",
-   "wait": {
-    "on": "The Huntington (curator reply to the 20 Sept enquiry)",
-    "since": "20 Sept 2026",
-    "expected": "One to three weeks",
-    "unblock": "A reply saying no such dataset exists and it would be useful; then a capped corpus pass over the volunteer transcriptions with decode.py and decode_no2.py."
-   },
-   "kind": "recovery",
-   "result": "Machine-readable Cipher No. 1 and No. 2 keys, 23 readings checked against print, an audit with N-classes, and a corpus-status finding, offered to the Huntington on 20 Sept 2026."
-  },
-  {
-   "name": "Intercepted royalist letters",
-   "year": "1646",
-   "ref": "BL Add MS 72438 ff. 9-10",
-   "folder": "ciphers/intercepted-royalist-1646",
-   "stage": 4,
-   "state": "blocked",
-   "holder": "Archive",
-   "next": "British Library viewer offline since 2023. When it returns, order f. 11 and check Bodleian Tanner 59-60 for the contemporary decipher.",
-   "note": "Aymeloglu identified the cipher as Digby's captured key no. 129 and fixed about 45 values. Scout 20 Sept: the volume is Weckherlin's cipher-keys and intercepted royalist correspondence; f.104 (\"almost wholly in undecoded cipher\") has DECODE record 8725 marked Decrypted, which needs the DECODE login to read before f.104 goes on any order. Blind sweep 20 Sept 2026: still open; no decipherment of f.9 or f.10 located anywhere.",
-   "wait": {
-    "on": "The British Library's manuscript viewer, offline since the October 2023 cyber attack",
-    "since": "2023",
-    "expected": "Unknown. BL has restored services piecemeal",
-    "unblock": "BL copying resumes for Add MS 72438; a DECODE login the server accepts, to read record 8725 for f.104 (the first attempt was rejected as wrong credentials)."
-   },
-   "kind": "recovery"
-  },
-  {
-   "name": "Earl of Stair to Viscount Townshend",
-   "year": "1710",
-   "ref": "Univ. of Kansas, Spencer Research Library, MS P556 (page 3 largely in code, undeciphered)",
-   "folder": "ciphers/stair-townshend-1710",
-   "stage": 2,
-   "state": "you",
-   "holder": "You",
-   "next": "Blind six-source sweep done 14:50 UTC: open, nobody has read or mentioned it beyond the Kansas catalogue. Print checks negative. The order is back on your card: four TIFF scans from Kansas, about $20, three business days (REQUEST.md).",
-   "note": "Recovery if another Stair letter carries the key; cryptanalysis only if enough cipher turns up. Two clear pages give cribs; one page of cipher is small, so the route is the same cipher in other Stair letters of 1710 (TNA SP 84, SP 87) with a contemporary decipher.",
-   "wait": {
-    "on": "You: the Kansas order (about $20)",
-    "since": "20 Sept 2026, 14:50 UTC",
-    "expected": "Three business days after ordering",
-    "unblock": "The four images arrive; a worker transcribes page 3 and hunts the key in SP 84 and SP 87."
-   },
-   "kind": "undecided"
-  },
-  {
-   "name": "Letter relating to Gen. Monck",
-   "year": "1659-60",
-   "ref": "BL Add MS 32093 f.423 (Malet collection), \"partly in cipher, undeciphered. Imperfect.\"",
-   "folder": "ciphers/monck-1660",
-   "stage": 2,
-   "state": "you",
-   "holder": "You",
-   "next": "Blind six-source sweep done 15:05 UTC: open, no decipherment or prior attempt anywhere reachable. The order is back on your card: ask BL Imaging Services for a quote for Add MS 32093 f.423 (REQUEST.md); ask whether they quote without a Reader Pass.",
-   "note": "Key leads: Monck's correspondence with Clarges and Hyde in the Clarendon State Papers and Thurloe. HMC 5th and 7th Reports describe the collection and can be checked in print first.",
-   "wait": {
-    "on": "You: one email to BL Imaging Services for a quote",
-    "since": "20 Sept 2026, 15:05 UTC",
-    "expected": "BL quotes are slow since 2023",
-    "unblock": "A quote and a scan of f.423."
-   },
-   "kind": "undecided"
-  },
-  {
-   "name": "Unidentified 18th-century cipher manuscript",
-   "year": "18th c.",
-   "ref": "National Library of Scotland MS.20769: \"Unidentified text, apparently 18th century, written in cipher\"; 57 leaves, oblong quarto and octavo; genre \"Ciphers. Codes.\"",
-   "folder": "ciphers/nls-20769",
-   "stage": 2,
-   "state": "you",
-   "holder": "You",
-   "next": "Blind six-source sweep done 15:12 UTC: open, no discussion, attempt or DECODE record found anywhere (the printed 1949-50 Antiquaries Proceedings and DECODE's logged-in content remain unchecked). The order is back on your card: ask NLS for a quote and a five-leaf sample of MS 20769 (REQUEST.md).",
-   "note": "Size is the point: 57 leaves of a genuine cipher is far above unicity for a homophonic system. Risk, still open: the cataloguer's genre tag is not proof it is a cipher rather than a private notation. A sample of five leaves would settle that before the full order.",
-   "wait": {
-    "on": "You: ask NLS for a quote and a five-leaf sample (REQUEST.md)",
-    "since": "20 Sept 2026, 15:12 UTC",
-    "expected": "NLS reprographics answer in one to two weeks",
-    "unblock": "Sample images; a worker classifies the symbol system and decides whether to order the rest."
-   },
-   "kind": "cryptanalysis"
-  },
-  {
-   "name": "Gelett Burgess, The Master of Mysteries (1912), third hidden message",
-   "year": "1912",
-   "ref": "Bobbs-Merrill 1912; Wikisource Index:The Master of Mysteries (1912).djvu",
-   "folder": "ciphers/burgess-mysteries-1912",
-   "stage": 8,
-   "state": "queued",
-   "holder": "Nobody",
-   "next": "Untested: Baconian biliteral (needs page images), Donnelly-style word counts, in-story cipher rules applied to the frame narrative, word acrostics with a stronger scorer, Klinger's 2023 edition notes. Reruns with families.py.",
-   "note": "23 Sept 2026: closed-negative for eight families, control margins 0.395 and 0.156; word-level families recover a planted sentence only ~half the time, so a short word-level message is not excluded.",
-   "kind": "cryptanalysis",
-   "wait": {
-    "on": "Page images of the 1912 edition for the biliteral test, and a stronger word model",
-    "since": "23 Sept 2026",
-    "expected": "Whenever a session picks it up",
-    "unblock": "Fetch the IA page images once (JP2 zip) and score type-face variation; or run the word families with a sentence-level model"
-   }
-  },
-  {
-   "name": "Robert Bowes to Walsingham, 1583, and short Caligula B VIII ciphertexts 1580-83",
-   "year": "1583",
-   "ref": "BL Cotton Caligula C VII, B VIII",
-   "folder": "ciphers/bowes-walsingham-1583",
-   "stage": 9,
-   "state": "queued",
-   "holder": "Nobody",
-   "next": "Verifier to read AUDIT.md section 10 (running text of CSP Scotland vi nos. 389 and 584 via Google Books snippets: names in clear, codes quoted, fol. 299 confirmed with 'In cipher' footnotes) and confirm or revise N1; then offer the sign table to Tomokiyo as a contribution. No copy order: the plaintext is in print.",
-   "note": "Novelty verified 23 Sept 2026, AUDIT.md: N1. Safe sentence: Tomokiyo's transcription of the eleven fragments was aligned with Bowes's letter-book copies printed in 1842, giving a sign table that reads 93 of 101 tokens (S 82, M 8, I 3) as the names printed there; an independent re-decipherment of plaintext in print, conditional on the transcription. Result so far: a sign table not located in any source searched; a contribution, not a unique solve.",
-   "kind": "recovery",
-   "wait": {
-    "on": "One calendar page in running text (CSP Scotland vi pp. 370-371) to settle N0 vs N1",
-    "since": "23 Sept 2026, 19:00 UTC",
-    "expected": "Minutes in a session with the Google Books key",
-    "unblock": "Read the page; then hand the sign table to Tomokiyo"
-   }
-  },
-  {
-   "name": "Sforza reply to Zorzo del Maino, and Amidani to Sforza, 4 May 1446",
-   "year": "1446",
-   "ref": "BnF italien 1583 ff.68, 70; DECODE R7898, R7899",
-   "folder": "ciphers/sforza-maino-1446",
-   "stage": 8,
-   "state": "blocked",
-   "holder": "Archive",
-   "next": "Closed-negative, conditional on Bourdeau's draft transcription. Reopens with a sign-exact transcription from the Gallica/DECODE image or a key (ASMi cart. 1597 full size, Cerioni 1970 vol. 2, Cremona material). run_target.sh reruns unchanged.",
-   "note": "Solver 23 Sept 2026: four matched controls read at 99%+, target cleared its shuffled baseline by 0.2-0.4 nats vs 1.8-2.0 for the controls; no token claimed (H0 C0 S0 M0 I0, 794 unread). Tooling in tools/nomenclator_anneal.py.",
-   "kind": "cryptanalysis",
-   "wait": {
-    "on": "An image of ff.68 and 70 (Gallica or DECODE) or the key; both hosts blocked from the ytbiz account (ASKS row 11)",
-    "since": "23 Sept 2026, 16:46 UTC",
-    "expected": "Minutes after the network setting changes",
-    "unblock": "Re-transcribe sign-exact from the image, rerun run_target.sh"
-   }
-  },
-  {
-   "name": "Mornington (Wellesley) despatches to Dundas, mostly in cipher, with the key in the same file",
-   "year": "1798-1800",
-   "ref": "BL Mss Eur D623 (items 4-36; key D623/41)",
-   "folder": "ciphers/mornington-1798",
-   "stage": 5,
-   "state": "waiting",
-   "holder": "Archive",
-   "next": "BL to photograph the key (both copies) and D623/4. Meanwhile the Ingram 1970 edition check runs in the credential session. If the key reads the despatch and Ingram does not print it, order the other eight.",
-   "note": "23 Sept 2026: nine despatches not printed in Martin vols 1-5, the 1877 Selection or the 1914 Wellesley Papers; D623/23 is printed; D623/10-11 decoded by the cataloguer.",
-   "kind": "recovery",
-   "wait": {
-    "on": "British Library Digitisation Services, order submitted 23 Sept 2026",
-    "since": "23 Sept 2026",
-    "expected": "Several weeks; preservation check likely",
-    "unblock": "Images arrive; key applied to D623/4"
-   }
-  },
-  {
-   "name": "William Courten's diary, partly in cipher, with Madden's key appended",
-   "year": "17th c.",
-   "ref": "BL Add MS 4956 (66 ff.); cross-ref Sloane MS 4019 f.79",
-   "folder": "ciphers/courten-diary",
-   "stage": 5,
-   "state": "waiting",
-   "holder": "Archive",
-   "next": "BL to confirm and photograph the test batch (f.66 key, ff.1-3, Sloane 4019 f.79). Then apply the keys to the sample; order the rest if it reads.",
-   "note": "23 Sept 2026: two keys catalogued (Madden's at f.66, an 18th-century one at Sloane 4019 f.79), no published reading; the herbarium-label cipher is a different, partly decoded code.",
-   "kind": "recovery",
-   "wait": {
-    "on": "British Library Digitisation Services, order submitted 23 Sept 2026",
-    "since": "23 Sept 2026",
-    "expected": "Manuscripts need a preservation check; allow several weeks",
-    "unblock": "Images arrive by digital transfer; two transcription passes; key applied"
-   }
-  },
-  {
-   "name": "Seven Years War cipher correspondence: Holdernesse, Bute, Prince Ferdinand of Brunswick, Clavering",
-   "year": "1759-1762",
-   "ref": "TNA SP 87/36, 38, 39, 40, 42, 43, 44 (98 cipher-flagged items of 818)",
-   "folder": "ciphers/sp87-brunswick-1759",
-   "stage": 2,
-   "state": "you",
-   "holder": "You",
-   "next": "A campaign, not one target. First order: the three pairs that sit beside a contemporary decipherment in the same box (SP 87/36/9-10, 40/76-77, 40/121-124), which are transcription jobs once copies arrive; then the key they yield is tried on the other 95. Decide whether TNA page copies or a State Papers Online check comes first. ASKS row 14.",
-   "note": "23 Sept 2026: open at stage 2, conditional (Westphalen vols 2-6, Savory and State Papers Online coverage unchecked). English and French; neither solver project names the series.",
-   "kind": "recovery",
-   "wait": {
-    "on": "You: decision on the first TNA copy order (ASKS row 14)",
-    "since": "23 Sept 2026, 18:50 UTC",
-    "expected": "TNA digital copies take about two weeks",
-    "unblock": "Copies arrive; two transcription passes; key from the paired decipherment"
-   }
-  },
-  {
-   "name": "France despatches in cipher, Civil War and Interregnum",
-   "year": "1642-1657",
-   "ref": "TNA SP 78/111/93, /135; SP 78/113/57 and one more (not digitised)",
-   "folder": "ciphers/sp78-france-1583",
-   "stage": 2,
-   "state": "you",
-   "holder": "You",
-   "next": "TNA digital copy order per REQUEST.md, four items (ASKS row 15). Unprinted in Thurloe vi.",
-   "note": "23 Sept 2026: open at stage 2, conditional on the Thurloe check. No sibling decipherment in the pieces. The queue's '1580s' date was a catalogue-parsing error; the folder name keeps the old label.",
-   "kind": "cryptanalysis",
-   "wait": {
-    "on": "You: the TNA copy order (ASKS row 15)",
-    "since": "23 Sept 2026, 19:21 UTC",
-    "expected": "About two weeks after ordering",
-    "unblock": "Copies arrive; two transcription passes; cryptanalysis with a control"
-   }
-  },
-  {
-   "name": "Latin cipher letter to François I from Ernst of Lüneburg and Joachim von Moltzan, Zerbst, 24 Jan 1520 (catalogued Anhalt 1515/16)",
-   "year": "1520",
-   "ref": "BnF Dupuy 468 f.28 (Gallica ark:/12148/btv1b10035959t, canvas 64)",
-   "folder": "ciphers/dupuy468-anhalt",
-   "stage": 9,
-   "state": "blocked",
-   "holder": "Nobody",
-   "next": "Contribution only: tell the BnF that Dupuy 468 f.28 is the Latin cipher original of the letter printed in French in RTA JR II p.122 from fr. 3897 f.146, with the corrected date and senders. Draft in outreach/ when the person wants it.",
-   "note": "Found-solved 23 Sept 2026 (AUDIT.md, second audit): printed in full in French translation, Deutsche Reichstagsakten JR II (1896) p.122, from BnF fr. 3897 f.146. Class N1. Our reading matches sentence by sentence.",
-   "kind": "contribution",
-   "wait": {
-    "on": "Nothing",
-    "since": "23 Sept 2026, 22:17 UTC",
-    "expected": "n/a",
-    "unblock": "n/a"
-   }
-  },
-  {
-   "name": "Rome embassy cipher of October 1525: Carpi to Louise de Savoie, Raince to Madame, Raince to Robertet",
-   "year": "1525",
-   "ref": "BnF Dupuy 452 ff.20-21, 24, 28 (Gallica ark:/12148/btv1b10036146c)",
-   "folder": "ciphers/dupuy452-carpi-1520",
-   "stage": 3,
-   "state": "active",
-   "holder": "Worker",
-   "next": "Gate passed (best case N3). Crops of f.28 and f.24 being cut; then two independent transcription passes, a reconciler, and Raince's 1526 key (fr. 2984, Desenclos 2018) tried first, with a control.",
-   "note": "Corrected 23 Sept 2026: invented-symbol alphabet, ~1,500 tokens across three letters in one cipher; f.20 recto tail transcribed once (86 tokens, grade M). Images free on Gallica.",
-   "kind": "recovery",
-   "wait": {
-    "on": "Image prep, then two transcription passes",
-    "since": "23 Sept 2026, 21:23 UTC",
-    "expected": "Tonight for the crops; passes next",
-    "unblock": "Reconciled ciphertext of ~1,500 tokens; key fit"
-   }
-  }
- ],
- "workers": [
-  {
-   "title": "Transcription pass B: Dupuy 452 ff.28-29",
-   "job": "6,012 rows, 25 codes, blind. Reconciliation next. ~$8",
-   "state": "done, archived"
-  },
-  {
-   "title": "Adversarial second audit: Dupuy 468",
-   "job": "Found in print: RTA JR II p.122, 24 Jan 1520. N1, found-solved. ~$10",
-   "state": "done, archived"
-  },
-  {
-   "title": "Check Solved: P1 Orange 1572",
-   "job": "Found-solved: partial decipherment printed 1842. ~$2.5",
-   "state": "done, archived"
-  },
-  {
-   "title": "Verifier: Dupuy 468",
-   "job": "N3; attribution corrected; gloss is a contemporary decipherment. ~$20",
-   "state": "done, archived"
-  },
-  {
-   "title": "Detector test: printed ciphertext",
-   "job": "Controls 2/2, precision 50/50, 24 survivors; P1 Orange 1572. ~$6",
-   "state": "done, archived"
-  },
-  {
-   "title": "Credential session (ytbiz)",
-   "job": "Presence test, DECODE login (rejected), archive.org borrow (loan works, images protected), Google Books calendar read for Bowes, JSTOR (blocked). ~$12",
-   "state": "done"
-  },
-  {
-   "title": "Transcription + key extension: Dupuy 468 Anhalt",
-   "job": "Read in full, 687 tokens, H 630 S 33 M 18; recovery from the gloss. ~$30",
-   "state": "done, archived"
-  }
- ],
- "queue": [
-  {
-   "rank": 1,
-   "name": "Intercepted royalist letters 1646 (BL Add MS 72438 ff.9-10)",
-   "year": "1646",
-   "total": 40,
-   "next": "Recovery. BL copies of f.11 and the volume's keys; DECODE login for f.104"
-  },
-  {
-   "rank": 2,
-   "name": "Wellington to Maitland (dictionary code)",
-   "year": "1812",
-   "total": 40,
-   "next": "Recovery, partial. Spink question; library check of Urban and the Bentinck papers"
-  },
-  {
-   "rank": 3,
-   "name": "Charles II to Hamilton",
-   "year": "1650",
-   "total": 39,
-   "next": "Recovery. Wait for the NRS key sheets"
-  },
-  {
-   "rank": 4,
-   "name": "Whitworth to Harley (SP 91/5)",
-   "year": "1707-08",
-   "total": 37,
-   "next": "Contribution. One clause of f.108; TNA order decision"
-  },
-  {
-   "rank": 6,
-   "name": "Cornwallis Papers (PRO 30/11)",
-   "year": "1780-81",
-   "total": 36,
-   "next": "Recovery. Saberton 2010 not online; library check or Kew order"
-  },
-  {
-   "rank": 7,
-   "name": "Add MS 4136 correspondents to Cecil (DECODE R9235-R9256)",
-   "year": "1559-67",
-   "total": 36,
-   "next": "Recovery. DECODE login: keys R9260-62, apply Tomokiyo's Throckmorton keys"
-  },
-  {
-   "rank": 8,
-   "name": "Walsingham and Wotton (BL Add MS 32657)",
-   "year": "1585",
-   "total": 36,
-   "next": "Recovery. CSP Scotland VIII is paywalled on BHO; DECODE images and Tomokiyo's key"
-  },
-  {
-   "rank": 9,
-   "name": "Erving to Madison (NARA M31)",
-   "year": "1807",
-   "total": 35,
-   "next": "Recovery. Transcribe from the NARA images, apply the Pinckney pairs"
-  }
- ],
- "log": [
-  {
-   "when": "23 Sept, 22:24",
-   "what": "Wake closed at $218. Next wake's first job: reconcile the two blind passes on Raince's letter (Dupuy 452 ff.28-29) by glyph clustering from the images, then Raince's 1526 key and the nomenclator solver with a control. Credential session still running its own list."
-  },
-  {
-   "when": "23 Sept, 22:17",
-   "what": "Dupuy 468 falls to N1: the adversarial second audit found the letter printed in full in Reichstagsakten JR II (1896), dated 24 Jan 1520. No unique solve tonight. The Orange 1572 detector candidate also fell, to an 1842 journal. Both caught inside the repo before any outreach."
-  },
-  {
-   "when": "23 Sept, 21:58",
-   "what": "Dupuy 468 verified N3 (AUDIT.md): the first unique solve by the repo's definition, a recovery from a contemporary decipherment on the leaf, with the catalogue attribution corrected. Detector test passed its controls and left 24 printed-cipher candidates; check-solved on the strongest (Orange to Nassau 1572). TNA page checks hit their daily cap; retry early UK morning."
-  },
-  {
-   "when": "23 Sept, 21:56",
-   "what": "Credential session: all seven variables set on the ytbiz account. DECODE login rejected once (form asks for a user name; row 1 open). archive.org login and loan work; lending pages are reader-protected, tool stops on them (row 18). Google Books snippets reached CSP Scotland vi nos. 389 and 584 for the Bowes audit (AUDIT.md section 10). JSTOR challenge-blocked (row 17)."
-  },
-  {
-   "when": "23 Sept, 21:33",
-   "what": "Dupuy 468 (Anhalt to François I, 1516) read in full from the Gallica image: the later hand's gloss covers almost the whole letter and the key reads the rest with a 99.8% control. Verifier started; the class turns on whether that decipherment is printed."
-  },
-  {
-   "when": "23 Sept, 21:23",
-   "what": "Dupuy 452 passes the class gate at best case N3: three unprinted letters of Oct 1525 in one embassy cipher, images free on Gallica, Raince's 1526 key as the lead. Crops being cut for two independent transcription passes."
-  },
-  {
-   "when": "23 Sept, 21:16",
-   "what": "Dupuy 452 turns out to be one embassy cipher across three letters of Oct 1525, about 1,500 tokens, images free; Raince's 1526 key is the lead. Print check first (class gate), then transcription."
-  },
-  {
-   "when": "23 Sept, 20:34",
-   "what": "Digitised lane: M1-M3 already solved or key-only; M6 (Carpi 1520s) open and M7 (Anhalt to François I) partial with a glossed key on the leaf. Both on the board; transcription from Gallica started for both, no copy needed."
-  },
-  {
-   "when": "23 Sept, 19:53",
-   "what": "Owner away; four credential-free workers ran. Sforza volume not on Gallica (image via DECODE next session). Bowes stays N1, calendar page paywalled. TNA and BL hits: 21 more scored, none digitised. Digitised lane found: 11 BnF manuscripts with cipher on Gallica, top one a register with its cipher bound at the head (Cinq Cents de Colbert 369); check-solved running on the top three."
-  },
-  {
-   "when": "23 Sept, 19:21",
-   "what": "Night closed. Non-DECODE lane: 15 rows swept, 7 verified unsolved at stage 2 (Mornington, Courten, SP 87 campaign, SP 78, SP 90/2, SP 87/13, SP 87/23), 8 dropped or partial. Six imaging or copy decisions on the owner's card (ASKS 12-16). Bowes 1583 verified N1. Nothing solved."
-  },
-  {
-   "when": "23 Sept, 19:05",
-   "what": "N8 (SP 78 France, 1642-57) open at stage 2; N9-N11 dropped. Last sweep batch of the night started (N12-N15) with the Thurloe check for N8."
-  },
-  {
-   "when": "23 Sept, 19:00",
-   "what": "Bowes 1583 verified N1: the names were printed in 1842 and the leaf is calendared in 1910. A sign table is the contribution; not a unique solve. Lesson to the check-solved template: word-count test on blocked calendars before stage 2."
-  },
-  {
-   "when": "23 Sept, 18:50",
-   "what": "N4 and N5 dropped (Tomokiyo keys). SP 87 Seven Years War run verified unsolved: 98 cipher items, three beside contemporary decipherments; on the board as a campaign (ASKS row 14). PRO 30/55 partial. Verifier on Bowes still running."
-  },
-  {
-   "when": "23 Sept, 18:43",
-   "what": "Bowes 1583: the eleven fragments read, 93 of 101 tokens (S 82, M 8, I 3) with a control. The names match Bowes's printed letter-book copies, so the verifier decides the class; a BL order would settle the rest."
-  },
-  {
-   "when": "23 Sept, 18:40",
-   "what": "Mornington and Courten both at stage 2 with imaging requests drafted (ASKS rows 12 and 13). Check-solved N4-N7 and the Bowes solver still running."
-  },
-  {
-   "when": "23 Sept, 18:32",
-   "what": "N2 (1722 intercepts) found-solved and dropped; Mornington partial, one despatch already printed; Courten open at stage 2. Next batch: finish the Mornington print check, Courten cross-reference, check-solved N4-N7."
-  },
-  {
-   "when": "23 Sept, 18:31",
-   "what": "Burgess 1912: no third message in eight families, with the two known messages as control. Remaining families need page images or a stronger word model. Check-solved N1-N3 and the Bowes solver still running."
-  },
-  {
-   "when": "23 Sept, 18:15",
-   "what": "Non-DECODE scout: 493 catalogue items with cipher that neither solver project names, 19 scored (QUEUE.md N1-N19); the top three carry their key in the same file. Check-solved started on them. Policy: unread letters with a key beside them are kept as the cheapest solves, not dropped as editions."
-  },
-  {
-   "when": "23 Sept, 18:11",
-   "what": "Bowes 1583: print negative, volumes undigitised; Tomokiyo's eleven fragments in hand, solver started with a matched control. Non-DECODE scout and Burgess 1912 still running."
-  },
-  {
-   "when": "23 Sept, 17:29",
-   "what": "Pallotto D1 found-solved. Volume-aware exclusion shows Bourdeau already names 193 of the 202 cached neighbour pairs; the lane needs the full DECODE catalogue or archives not on DECODE. Next scout targets non-DECODE catalogues once the network opens."
-  },
-  {
-   "when": "23 Sept, 17:20",
-   "what": "Owner restated the goal: maximise unique solves. DECODE neighbour sweep found 27 recovery candidates in 7 clusters, none English; reader profile widened to all readable languages; check-solved started on the Pallotto cluster (D1) so it can be read the day DECODE opens."
-  },
-  {
-   "when": "23 Sept, 16:46",
-   "what": "Sforza-Maino 1446: joint-key attack with a matched control gives a clean negative, conditional on the draft transcription. Nothing solved today; the queue is honest again (five rows found solved elsewhere since our scout), and the campaign from this account is capped by the network policy until ASKS rows 10-11 are done."
-  },
-  {
-   "when": "23 Sept, 15:59",
-   "what": "Sforza-Maino 1446 pair (from the GitHub harvest, QUEUE row G7) verified unsolved at stage 2 and put on the board as the cryptanalysis candidate; solver session running with a matched control."
-  },
-  {
-   "when": "23 Sept, 15:49",
-   "what": "Queue diffed against fresh clones of both solver repositories (tools/solver_repo_diff.py). Four more rows found-solved years ago and dropped: Boswell 1628 (rank 5, solved 2021), Goring 1645 (rank 22, solved 2020), Sadler 1559 (rank 23, printed 1809), Anne 1711 (rank 24, printed). Five rows partly read by Bourdeau (7, 8, 19, 20, 35). DECODE record R413 no longer needed."
-  },
-  {
-   "when": "23 Sept, 15:35",
-   "what": "Randolph 1570 dropped as found-solved: f.278 is a contemporary decipherment, read by Bourdeau on 21 Sept. Charles I to Rupert 1645 also read by Bourdeau on 21 Sept. Burgess 1912 and Bowes 1583 verified unsolved and added at stage 2. The ytbiz account's environment has no credentials and blocks every archive host (ASKS rows 10 and 11)."
-  },
-  {
-   "when": "23 Sept, 15:20",
-   "what": "New orchestrator on the noautopilotytbiz account took over from the 21 Sept handoff."
-  },
-  {
-   "when": "21 Sept, 03:45",
-   "what": "Erving 1807 dropped as found-solved: Founders Online prints the despatch, caught by the rule 1 check before any transcription. Randolph 1569 is really 1570; images and a first-pass transcription are in, no key located."
-  },
-  {
-   "when": "21 Sept, 03:00",
-   "what": "Two recovery workers started on targets that need nothing from the owner (Erving 1807, Randolph 1569). Handoff note written at the top of this file for the next orchestrator session."
-  },
-  {
-   "when": "20 Sept, 15:13",
-   "what": "Sweep done: Stair, Monck and NLS 20769 all open; all three at stage 2; the Kansas, BL and NLS orders are cleared and back on the owner's card."
-  },
-  {
-   "when": "20 Sept, 15:00",
-   "what": "Credentials: DECODE login rejected (wrong credentials as set); Internet Archive login rejected (IA_USER must be the email). Both passwords appeared in worker transcripts and should be rotated. Google Books key works. Stair 1710 sweep: open; order back on the card."
-  },
-  {
-   "when": "20 Sept, 14:45",
-   "what": "Rule tightened: no order goes on the owner's card until the blind sweep sets stage 2. Stair, Monck and NLS 20769 moved back to stage 1 while their sweep runs. Four workers running on the new credentials (DECODE, Google Books, Internet Archive)."
-  },
-  {
-   "when": "20 Sept, 06:12",
-   "what": "Free work done: no printed key for Hamilton, 1646 or Monck; three queue items shown already in print and dropped; queue re-ranked with kinds (top: 1646 intercepts, Wellington, Hamilton). All workers archived."
-  },
-  {
-   "when": "20 Sept, 05:15",
-   "what": "Overnight summary written to STATUS.md. Three free-work Sonnet workers running (print checks, search-print sweep, queue re-score). Improvement loop added: ledger, brief templates, weekly retrospective."
-  },
-  {
-   "when": "20 Sept, 04:46",
-   "what": "All workers finished. Blind sweep: nothing on the board is already solved; Wellington set to partial. NLS MS 20769 record confirmed: 57 leaves, catalogued as cipher; scan decision is on you. Setup-script fix confirmed working."
-  },
-  {
-   "when": "20 Sept, 04:12",
-   "what": "Stair 1710: not in print; Kansas order is on you. Sweep: Stepney and Whitworth confirmed, no solution anywhere."
-  },
-  {
-   "when": "20 Sept, 04:20",
-   "what": "Board: every target now carries a kind label (recovery, cryptanalysis, contribution) and finished work shows a \"Result so far\" line."
-  },
-  {
-   "when": "20 Sept, 04:05",
-   "what": "Eckert: enquiry sent to the Huntington curator about a corpus-level decoding dataset; the reply decides the corpus pass."
-  },
-  {
-   "when": "20 Sept, 03:44",
-   "what": "Hamilton: blind six-source sweep found no solution or key anywhere; offline-only confirmed."
-  },
-  {
-   "when": "20 Sept, 03:41",
-   "what": "Eckert: key test outcome A. The headquarters entries are Cipher No. 2 and the Huntington's copy reads them at grade H. No genuine target left in the ledger."
-  },
-  {
-   "when": "20 Sept, 03:58",
-   "what": "Three targets added from the scout: Stair 1710 (Kansas), Monck 1660 (BL), NLS MS 20769. Eckert parked: every cipher in the 1864 ledger reads from a surviving book."
-  },
-  {
-   "when": "20 Sept, 03:37",
-   "what": "Wellington: HathiTrust half of the dictionary hunt closed negative (19 editions via APIs). The browser tool cannot run in cloud containers until the proxy CA is trusted; APIs documented in the Access playbook."
-  },
-  {
-   "when": "20 Sept, 03:38",
-   "what": "Eckert 1864 audit: two of the four \"not printed\" telegrams were in print (one in the Official Records the solver had searched); the other two have no located prior print. Board stage set to Novelty verified; no first-decipherment claim survives."
-  },
-  {
-   "when": "20 Sept, 03:15",
-   "what": "Restarted after the usage limit: HathiTrust dictionary search (Wellington) and a new Cipher No. 2 key test (Eckert). The 1864 reading worker was archived; it had begun a duplicate audit of its own."
-  },
-  {
-   "when": "20 Sept, 03:20",
-   "what": "Process: CLAUDE.md rule 10 (novelty is a verifier's verdict, N0-N5), solver/verifier split in the Workers section, new board stage \"Novelty verified\" before \"Solved\"."
-  },
-  {
-   "when": "20 Sept, 00:03-03:00",
-   "what": "All workers stopped by the five-hour usage limit; HathiTrust worker never ran."
-  },
-  {
-   "when": "20 Sept, 03:07",
-   "what": "Eckert 1864: novelty claim for four telegrams sent to a verifier session for adversarial audit. \"Not in the Official Records\" had been read as \"new\"; that was an over-claim."
-  },
-  {
-   "when": "20 Sept, 00:00",
-   "what": "Eckert 1864: twenty ledger entries read at grade H from cipher book mssEC 41; four were not matched to the Official Records by the sweep (claim audited 20 Sept 2026: two are in print, two are N3; see ciphers/eckert-1864/AUDIT.md)."
-  },
-  {
-   "when": "20 Sept, 00:02",
-   "what": "Wellington: HathiTrust worker started; first live test of the browser fetch tool."
-  },
-  {
-   "when": "19 Sept, 23:58",
-   "what": "Wellington: dictionary search closed negative after 57 editions. Two asks for you before the 23 Sept sale: email Spink about a dictionary in the lot; HathiTrust search from a browser."
-  },
-  {
-   "when": "19 Sept, 23:26",
-   "what": "Wellington transcription worker finished (pass A log pushed) and archived. Dictionary search continues."
-  },
-  {
-   "when": "19 Sept, 23:30",
-   "what": "Eckert: first pilot done. Zooniverse never decoded the ledgers; ten 1862 telegrams read against the Official Records. Second pilot started on an 1864 ledger with the surviving cipher book."
-  },
-  {
-   "when": "19 Sept, 23:00",
-   "what": "Wellington: transcription pushed (73 groups, all with known plaintext). Dictionary research worker started."
-  },
-  {
-   "when": "19 Sept, 22:50",
-   "what": "Whitworth: worker pushed. Only one clause of SP 91/5/108 is actually unread; copy request drafted for ff. 108, 106, 121. Needs your decision."
-  },
-  {
-   "when": "19 Sept, 22:35",
-   "what": "Wellington: 17 auction images captured at full served size; transcription passes running."
-  },
-  {
-   "when": "19 Sept, 22:40",
-   "what": "Eckert Papers worker started (queue rank 1). Whitworth worker woken to push its drafted files."
-  },
-  {
-   "when": "19 Sept, 22:30",
-   "what": "Stepney: TNA page check ordered and paid, order 3660178."
-  },
-  {
-   "when": "19 Sept, 22:15",
-   "what": "Scout stopped after finishing the queue; it had begun attempting ciphers beyond its brief."
-  },
-  {
-   "when": "19 Sept, 22:13",
-   "what": "Two workers started: Wellington 1812 image capture, Whitworth 1707 lookup."
-  },
-  {
-   "when": "19 Sept, 22:05",
-   "what": "First scout run filed QUEUE.md: 40 scored, 163 kept unscored, 40 dropped."
-  },
-  {
-   "when": "19 Sept, 21:14",
-   "what": "Stepney: volume identified as SP 105/65 after the environment got network access."
-  },
-  {
-   "when": "19 Sept, 20:15",
-   "what": "Hamilton: copy request emailed to NRS for GD406/1/2197."
-  },
-  {
-   "when": "19 Sept",
-   "what": "Repo set up: catalogue, landscape, lessons, conventions, two workflows."
-  }
- ]
+  "updated": "23 September 2026, 23:40 UTC",
+  "stages": [
+    "Identified",
+    "Verified unsolved",
+    "Ciphertext in hand",
+    "Key source located",
+    "Request sent",
+    "Copies received",
+    "Transcribed",
+    "Reading attempted",
+    "Novelty verified",
+    "Solved"
+  ],
+  "targets": [
+    {
+      "name": "Charles II to the Duke of Hamilton",
+      "year": "1650",
+      "ref": "NRS GD406/1/2197",
+      "folder": "ciphers/hamilton-1650",
+      "stage": 5,
+      "state": "waiting",
+      "holder": "Archive",
+      "next": "NRS to send a quote for images of the five key sheets. Then pay, then apply the key to the 102 groups. archive.org loan of the 1932 HMC report works but its pages are reader-protected: the person reads pp.70-74 and the 1650 entries in the reader (ASKS row 18).",
+      "note": "If the NRS sheets do not cover the cipher, this becomes cryptanalysis. Copy request emailed 19 Sept 2026. Cipher is 102 groups across four letters; unreadable without the key, which the catalogue lists as open.",
+      "wait": {
+        "on": "A quote from National Records of Scotland for images of the five key sheets, GD406/1/2197",
+        "since": "19 Sept 2026",
+        "expected": "1 to 3 weeks for a quote; images some weeks after payment",
+        "unblock": "NRS replies. If they need depositor consent, that is a second wait. Fallback: John Wallis's papers at the Bodleian."
+      },
+      "kind": "recovery"
+    },
+    {
+      "name": "George Stepney to the Earl of Manchester",
+      "year": "1702",
+      "ref": "TNA SP 105/65",
+      "folder": "ciphers/stepney-manchester-1702",
+      "stage": 5,
+      "state": "waiting",
+      "holder": "Archive",
+      "next": "TNA staff page check (order 3660178, paid). They will quote for the copy of the letter-book entry, which should carry the 24 groups in clear.",
+      "note": "Volume identified 19 Sept 2026 by a worker. If the entry is not in the letter-book, fall back to SP 80/18 or the Stepney Papers at the BL. Blind six-source sweep 20 Sept 2026: offline-only confirmed, no solution anywhere.",
+      "wait": {
+        "on": "TNA staff page check of SP 105/65 (order 3660178), then their quote for the copy",
+        "since": "19 Sept 2026",
+        "expected": "Page check on a weekday, usually within 2 weeks; copy 2 to 4 weeks after payment",
+        "unblock": "TNA finds the 23 March 1702 entry. If they report no such entry, switch to SP 80/18 or the Stepney Papers at the BL."
+      },
+      "kind": "recovery"
+    },
+    {
+      "name": "Wellington to General Maitland",
+      "year": "1812",
+      "ref": "Spink lot 1184, sale 23 Sept 2026",
+      "folder": "ciphers/wellington-maitland-1812",
+      "stage": 7,
+      "state": "you",
+      "holder": "You",
+      "next": "HathiTrust closed 03:37 UTC: 19 more editions tested through the Bibliographic and Extracted Features APIs, none matches (76 editions in all); Scott, Jones 1800, London Perry, Walker 1810 and Dublin Entick are not in HathiTrust at all. For you before 23 Sept: ask Spink whether lot 1184 includes a pocket dictionary. Remaining leads need a library: Urban pp. 232-233, the Bentinck papers (Nottingham Pw Jd), WO 37.",
+      "note": "The key is a printed dictionary; finding the edition is recovery, not a crack. Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick's 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item. Blind sweep 20 Sept 2026: status set to partial, since Hayes, Lasry and Tomokiyo's published work is a partial solution of the code system; the dictionary edition and the strip-cipher rule remain open.",
+      "wait": {
+        "on": "You: one email to Spink before the 23 Sept sale",
+        "since": "20 Sept 2026, 03:37 UTC",
+        "expected": "Before 23 Sept 2026",
+        "unblock": "Spink confirms or denies a dictionary in the lot; or a library check of Urban and the Bentinck papers."
+      },
+      "kind": "recovery"
+    },
+    {
+      "name": "Charles Whitworth to Robert Harley",
+      "year": "1707-08",
+      "ref": "TNA SP 91/5/108 (+ ff. 106, 121 for the key)",
+      "folder": "ciphers/whitworth-1707",
+      "stage": 4,
+      "state": "you",
+      "holder": "You",
+      "next": "Decide whether one unread clause is worth about 10 images (roughly £30). If yes, order SP 91/5/108, 106 and 121 on Discovery using the message in ciphers/whitworth-1707/REQUEST.md.",
+      "note": "Worker result 19 Sept 2026: four of the five 'undeciphered' items are already in print (Sbornik vols 39 and 50) or deciphered in the same volume. Only one clause of f. 108 is unread, about the French mediation of 1707. The neighbours ff. 106 and 121 were deciphered in London, so their pages give the key. Low historical weight; cheap; certain to work. Blind sweep 20 Sept 2026: no prior attempt found; open, narrowed to one clause of f.108.",
+      "wait": {
+        "on": "Your decision and your click on the TNA order",
+        "since": "19 Sept 2026",
+        "expected": "Whenever you choose; TNA then takes 2 to 4 weeks",
+        "unblock": "Order placed. If you decide it is not worth it, mark it parked and it drops down the queue."
+      },
+      "kind": "recovery",
+      "result": "Four of five \"undeciphered\" items were already in print; the finding corrects the catalogue."
+    },
+    {
+      "name": "Eckert Papers, US Military Telegraph",
+      "year": "1862-67",
+      "ref": "Huntington mssEC 15 (1862); mssEC 19 ledger with cipher book mssEC 41 (1864)",
+      "folder": "ciphers/eckert-1862",
+      "stage": 9,
+      "state": "waiting",
+      "holder": "Archive",
+      "next": "Parked for cryptanalysis (every cipher in the ledger reads from a surviving book). An enquiry went to the Huntington curator on 20 Sept 2026 asking whether a corpus-level decoding dataset exists and whether one would be useful; their reply decides whether the mechanical corpus pass is run as an edition project.",
+      "note": "Twenty 1864 entries read at grade H from cipher book mssEC 41; seventeen agree word for word with the Official Records, one with the printed Lincoln works, two (E4, E5) not found in the sources listed in AUDIT.md. Corpus question (AUDIT.md section 12): no one has mapped the ledger entries to cipher, key, plaintext and print; the project's decoding phase was never launched (paused Jan 2018, ended July 2019). A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve.",
+      "wait": {
+        "on": "The Huntington (curator reply to the 20 Sept enquiry)",
+        "since": "20 Sept 2026",
+        "expected": "One to three weeks",
+        "unblock": "A reply saying no such dataset exists and it would be useful; then a capped corpus pass over the volunteer transcriptions with decode.py and decode_no2.py."
+      },
+      "kind": "recovery",
+      "result": "Machine-readable Cipher No. 1 and No. 2 keys, 23 readings checked against print, an audit with N-classes, and a corpus-status finding, offered to the Huntington on 20 Sept 2026."
+    },
+    {
+      "name": "Intercepted royalist letters",
+      "year": "1646",
+      "ref": "BL Add MS 72438 ff. 9-10",
+      "folder": "ciphers/intercepted-royalist-1646",
+      "stage": 4,
+      "state": "blocked",
+      "holder": "Archive",
+      "next": "British Library viewer offline since 2023. When it returns, order f. 11 and check Bodleian Tanner 59-60 for the contemporary decipher.",
+      "note": "Aymeloglu identified the cipher as Digby's captured key no. 129 and fixed about 45 values. Scout 20 Sept: the volume is Weckherlin's cipher-keys and intercepted royalist correspondence; f.104 (\"almost wholly in undecoded cipher\") has DECODE record 8725 marked Decrypted, which needs the DECODE login to read before f.104 goes on any order. Blind sweep 20 Sept 2026: still open; no decipherment of f.9 or f.10 located anywhere.",
+      "wait": {
+        "on": "The British Library's manuscript viewer, offline since the October 2023 cyber attack",
+        "since": "2023",
+        "expected": "Unknown. BL has restored services piecemeal",
+        "unblock": "BL copying resumes for Add MS 72438; a DECODE login the server accepts, to read record 8725 for f.104 (the first attempt was rejected as wrong credentials)."
+      },
+      "kind": "recovery"
+    },
+    {
+      "name": "Earl of Stair to Viscount Townshend",
+      "year": "1710",
+      "ref": "Univ. of Kansas, Spencer Research Library, MS P556 (page 3 largely in code, undeciphered)",
+      "folder": "ciphers/stair-townshend-1710",
+      "stage": 2,
+      "state": "you",
+      "holder": "You",
+      "next": "Blind six-source sweep done 14:50 UTC: open, nobody has read or mentioned it beyond the Kansas catalogue. Print checks negative. The order is back on your card: four TIFF scans from Kansas, about $20, three business days (REQUEST.md).",
+      "note": "Recovery if another Stair letter carries the key; cryptanalysis only if enough cipher turns up. Two clear pages give cribs; one page of cipher is small, so the route is the same cipher in other Stair letters of 1710 (TNA SP 84, SP 87) with a contemporary decipher.",
+      "wait": {
+        "on": "You: the Kansas order (about $20)",
+        "since": "20 Sept 2026, 14:50 UTC",
+        "expected": "Three business days after ordering",
+        "unblock": "The four images arrive; a worker transcribes page 3 and hunts the key in SP 84 and SP 87."
+      },
+      "kind": "undecided"
+    },
+    {
+      "name": "Letter relating to Gen. Monck",
+      "year": "1659-60",
+      "ref": "BL Add MS 32093 f.423 (Malet collection), \"partly in cipher, undeciphered. Imperfect.\"",
+      "folder": "ciphers/monck-1660",
+      "stage": 2,
+      "state": "you",
+      "holder": "You",
+      "next": "Blind six-source sweep done 15:05 UTC: open, no decipherment or prior attempt anywhere reachable. The order is back on your card: ask BL Imaging Services for a quote for Add MS 32093 f.423 (REQUEST.md); ask whether they quote without a Reader Pass.",
+      "note": "Key leads: Monck's correspondence with Clarges and Hyde in the Clarendon State Papers and Thurloe. HMC 5th and 7th Reports describe the collection and can be checked in print first.",
+      "wait": {
+        "on": "You: one email to BL Imaging Services for a quote",
+        "since": "20 Sept 2026, 15:05 UTC",
+        "expected": "BL quotes are slow since 2023",
+        "unblock": "A quote and a scan of f.423."
+      },
+      "kind": "undecided"
+    },
+    {
+      "name": "Unidentified 18th-century cipher manuscript",
+      "year": "18th c.",
+      "ref": "National Library of Scotland MS.20769: \"Unidentified text, apparently 18th century, written in cipher\"; 57 leaves, oblong quarto and octavo; genre \"Ciphers. Codes.\"",
+      "folder": "ciphers/nls-20769",
+      "stage": 2,
+      "state": "you",
+      "holder": "You",
+      "next": "Blind six-source sweep done 15:12 UTC: open, no discussion, attempt or DECODE record found anywhere (the printed 1949-50 Antiquaries Proceedings and DECODE's logged-in content remain unchecked). The order is back on your card: ask NLS for a quote and a five-leaf sample of MS 20769 (REQUEST.md).",
+      "note": "Size is the point: 57 leaves of a genuine cipher is far above unicity for a homophonic system. Risk, still open: the cataloguer's genre tag is not proof it is a cipher rather than a private notation. A sample of five leaves would settle that before the full order.",
+      "wait": {
+        "on": "You: ask NLS for a quote and a five-leaf sample (REQUEST.md)",
+        "since": "20 Sept 2026, 15:12 UTC",
+        "expected": "NLS reprographics answer in one to two weeks",
+        "unblock": "Sample images; a worker classifies the symbol system and decides whether to order the rest."
+      },
+      "kind": "cryptanalysis"
+    },
+    {
+      "name": "Gelett Burgess, The Master of Mysteries (1912), third hidden message",
+      "year": "1912",
+      "ref": "Bobbs-Merrill 1912; Wikisource Index:The Master of Mysteries (1912).djvu",
+      "folder": "ciphers/burgess-mysteries-1912",
+      "stage": 8,
+      "state": "queued",
+      "holder": "Nobody",
+      "next": "Untested: Baconian biliteral (needs page images), Donnelly-style word counts, in-story cipher rules applied to the frame narrative, word acrostics with a stronger scorer, Klinger's 2023 edition notes. Reruns with families.py.",
+      "note": "23 Sept 2026: closed-negative for eight families, control margins 0.395 and 0.156; word-level families recover a planted sentence only ~half the time, so a short word-level message is not excluded.",
+      "kind": "cryptanalysis",
+      "wait": {
+        "on": "Page images of the 1912 edition for the biliteral test, and a stronger word model",
+        "since": "23 Sept 2026",
+        "expected": "Whenever a session picks it up",
+        "unblock": "Fetch the IA page images once (JP2 zip) and score type-face variation; or run the word families with a sentence-level model"
+      }
+    },
+    {
+      "name": "Robert Bowes to Walsingham, 1583, and short Caligula B VIII ciphertexts 1580-83",
+      "year": "1583",
+      "ref": "BL Cotton Caligula C VII, B VIII",
+      "folder": "ciphers/bowes-walsingham-1583",
+      "stage": 9,
+      "state": "queued",
+      "holder": "Nobody",
+      "next": "Verifier to read AUDIT.md section 10 (running text of CSP Scotland vi nos. 389 and 584 via Google Books snippets: names in clear, codes quoted, fol. 299 confirmed with 'In cipher' footnotes) and confirm or revise N1; then offer the sign table to Tomokiyo as a contribution. No copy order: the plaintext is in print.",
+      "note": "Novelty verified 23 Sept 2026, AUDIT.md: N1. Safe sentence: Tomokiyo's transcription of the eleven fragments was aligned with Bowes's letter-book copies printed in 1842, giving a sign table that reads 93 of 101 tokens (S 82, M 8, I 3) as the names printed there; an independent re-decipherment of plaintext in print, conditional on the transcription. Result so far: a sign table not located in any source searched; a contribution, not a unique solve.",
+      "kind": "recovery",
+      "wait": {
+        "on": "One calendar page in running text (CSP Scotland vi pp. 370-371) to settle N0 vs N1",
+        "since": "23 Sept 2026, 19:00 UTC",
+        "expected": "Minutes in a session with the Google Books key",
+        "unblock": "Read the page; then hand the sign table to Tomokiyo"
+      }
+    },
+    {
+      "name": "Sforza reply to Zorzo del Maino, and Amidani to Sforza, 4 May 1446",
+      "year": "1446",
+      "ref": "BnF italien 1583 ff.68, 70; DECODE R7898, R7899",
+      "folder": "ciphers/sforza-maino-1446",
+      "stage": 8,
+      "state": "blocked",
+      "holder": "Archive",
+      "next": "Closed-negative, conditional on Bourdeau's draft transcription. Reopens with a sign-exact transcription from the Gallica/DECODE image or a key (ASMi cart. 1597 full size, Cerioni 1970 vol. 2, Cremona material). run_target.sh reruns unchanged.",
+      "note": "Solver 23 Sept 2026: four matched controls read at 99%+, target cleared its shuffled baseline by 0.2-0.4 nats vs 1.8-2.0 for the controls; no token claimed (H0 C0 S0 M0 I0, 794 unread). Tooling in tools/nomenclator_anneal.py.",
+      "kind": "cryptanalysis",
+      "wait": {
+        "on": "An image of ff.68 and 70 (Gallica or DECODE) or the key; both hosts blocked from the ytbiz account (ASKS row 11)",
+        "since": "23 Sept 2026, 16:46 UTC",
+        "expected": "Minutes after the network setting changes",
+        "unblock": "Re-transcribe sign-exact from the image, rerun run_target.sh"
+      }
+    },
+    {
+      "name": "Mornington (Wellesley) despatches to Dundas, mostly in cipher, with the key in the same file",
+      "year": "1798-1800",
+      "ref": "BL Mss Eur D623 (items 4-36; key D623/41)",
+      "folder": "ciphers/mornington-1798",
+      "stage": 5,
+      "state": "waiting",
+      "holder": "Archive",
+      "next": "BL to photograph the key (both copies) and D623/4. Meanwhile the Ingram 1970 edition check runs in the credential session. If the key reads the despatch and Ingram does not print it, order the other eight.",
+      "note": "23 Sept 2026: nine despatches not printed in Martin vols 1-5, the 1877 Selection or the 1914 Wellesley Papers; D623/23 is printed; D623/10-11 decoded by the cataloguer.",
+      "kind": "recovery",
+      "wait": {
+        "on": "British Library Digitisation Services, order submitted 23 Sept 2026",
+        "since": "23 Sept 2026",
+        "expected": "Several weeks; preservation check likely",
+        "unblock": "Images arrive; key applied to D623/4"
+      }
+    },
+    {
+      "name": "William Courten's diary, partly in cipher, with Madden's key appended",
+      "year": "17th c.",
+      "ref": "BL Add MS 4956 (66 ff.); cross-ref Sloane MS 4019 f.79",
+      "folder": "ciphers/courten-diary",
+      "stage": 5,
+      "state": "waiting",
+      "holder": "Archive",
+      "next": "BL to confirm and photograph the test batch (f.66 key, ff.1-3, Sloane 4019 f.79). Then apply the keys to the sample; order the rest if it reads.",
+      "note": "23 Sept 2026: two keys catalogued (Madden's at f.66, an 18th-century one at Sloane 4019 f.79), no published reading; the herbarium-label cipher is a different, partly decoded code.",
+      "kind": "recovery",
+      "wait": {
+        "on": "British Library Digitisation Services, order submitted 23 Sept 2026",
+        "since": "23 Sept 2026",
+        "expected": "Manuscripts need a preservation check; allow several weeks",
+        "unblock": "Images arrive by digital transfer; two transcription passes; key applied"
+      }
+    },
+    {
+      "name": "Seven Years War cipher correspondence: Holdernesse, Bute, Prince Ferdinand of Brunswick, Clavering",
+      "year": "1759-1762",
+      "ref": "TNA SP 87/36, 38, 39, 40, 42, 43, 44 (98 cipher-flagged items of 818)",
+      "folder": "ciphers/sp87-brunswick-1759",
+      "stage": 2,
+      "state": "you",
+      "holder": "You",
+      "next": "A campaign, not one target. First order: the three pairs that sit beside a contemporary decipherment in the same box (SP 87/36/9-10, 40/76-77, 40/121-124), which are transcription jobs once copies arrive; then the key they yield is tried on the other 95. Decide whether TNA page copies or a State Papers Online check comes first. ASKS row 14.",
+      "note": "23 Sept 2026: open at stage 2, conditional (Westphalen vols 2-6, Savory and State Papers Online coverage unchecked). English and French; neither solver project names the series.",
+      "kind": "recovery",
+      "wait": {
+        "on": "You: decision on the first TNA copy order (ASKS row 14)",
+        "since": "23 Sept 2026, 18:50 UTC",
+        "expected": "TNA digital copies take about two weeks",
+        "unblock": "Copies arrive; two transcription passes; key from the paired decipherment"
+      }
+    },
+    {
+      "name": "France despatches in cipher, Civil War and Interregnum",
+      "year": "1642-1657",
+      "ref": "TNA SP 78/111/93, /135; SP 78/113/57 and one more (not digitised)",
+      "folder": "ciphers/sp78-france-1583",
+      "stage": 2,
+      "state": "you",
+      "holder": "You",
+      "next": "TNA digital copy order per REQUEST.md, four items (ASKS row 15). Unprinted in Thurloe vi.",
+      "note": "23 Sept 2026: open at stage 2, conditional on the Thurloe check. No sibling decipherment in the pieces. The queue's '1580s' date was a catalogue-parsing error; the folder name keeps the old label.",
+      "kind": "cryptanalysis",
+      "wait": {
+        "on": "You: the TNA copy order (ASKS row 15)",
+        "since": "23 Sept 2026, 19:21 UTC",
+        "expected": "About two weeks after ordering",
+        "unblock": "Copies arrive; two transcription passes; cryptanalysis with a control"
+      }
+    },
+    {
+      "name": "Latin cipher letter to François I from Ernst of Lüneburg and Joachim von Moltzan, Zerbst, 24 Jan 1520 (catalogued Anhalt 1515/16)",
+      "year": "1520",
+      "ref": "BnF Dupuy 468 f.28 (Gallica ark:/12148/btv1b10035959t, canvas 64)",
+      "folder": "ciphers/dupuy468-anhalt",
+      "stage": 9,
+      "state": "blocked",
+      "holder": "Nobody",
+      "next": "Contribution only: tell the BnF that Dupuy 468 f.28 is the Latin cipher original of the letter printed in French in RTA JR II p.122 from fr. 3897 f.146, with the corrected date and senders. Draft in outreach/ when the person wants it.",
+      "note": "Found-solved 23 Sept 2026 (AUDIT.md, second audit): printed in full in French translation, Deutsche Reichstagsakten JR II (1896) p.122, from BnF fr. 3897 f.146. Class N1. Our reading matches sentence by sentence.",
+      "kind": "contribution",
+      "wait": {
+        "on": "Nothing",
+        "since": "23 Sept 2026, 22:17 UTC",
+        "expected": "n/a",
+        "unblock": "n/a"
+      }
+    },
+    {
+      "name": "Rome embassy cipher of October 1525: Carpi to Louise de Savoie, Raince to Madame, Raince to Robertet",
+      "year": "1525",
+      "ref": "BnF Dupuy 452 ff.20-21, 24, 28 (Gallica ark:/12148/btv1b10036146c)",
+      "folder": "ciphers/dupuy452-carpi-1520",
+      "stage": 3,
+      "state": "active",
+      "holder": "Worker",
+      "next": "Gate passed (best case N3). Crops of f.28 and f.24 being cut; then two independent transcription passes, a reconciler, and Raince's 1526 key (fr. 2984, Desenclos 2018) tried first, with a control.",
+      "note": "Corrected 23 Sept 2026: invented-symbol alphabet, ~1,500 tokens across three letters in one cipher; f.20 recto tail transcribed once (86 tokens, grade M). Images free on Gallica.",
+      "kind": "recovery",
+      "wait": {
+        "on": "Image prep, then two transcription passes",
+        "since": "23 Sept 2026, 21:23 UTC",
+        "expected": "Tonight for the crops; passes next",
+        "unblock": "Reconciled ciphertext of ~1,500 tokens; key fit"
+      }
+    }
+  ],
+  "workers": [
+    {
+      "title": "Dupuy 468 check.py exceptions (row 25)",
+      "job": "Exception table for gloss readings (r04 dux). First worker stalled on a stale clone ($0.72), retried. Sonnet, cap $2.50",
+      "state": "running"
+    },
+    {
+      "title": "Check-solved: M8-M11 (BnF fr. 2980, 2996, 4137, 4102)",
+      "job": "Editions first, leaf viewed. Sonnet, cap $8",
+      "state": "running"
+    },
+    {
+      "title": "Raince reconciliation: Dupuy 452 ff.28-29",
+      "job": "Glyph segmentation and clustering of 160 crops; maps passes A and B onto the clusters. Opus, cap $40",
+      "state": "running"
+    },
+    {
+      "title": "Scout: Bourdeau offline-only items (row 21)",
+      "job": "12 raw offline-only/stuck items in Bourdeau's repo, 7 already ours, 5 survivors (QUEUE B1-B5), 0 copy-free. $3.59",
+      "state": "done, archived"
+    },
+    {
+      "title": "Transcription pass B: Dupuy 452 ff.28-29",
+      "job": "6,012 rows, 25 codes, blind. Reconciliation next. ~$8",
+      "state": "done, archived"
+    },
+    {
+      "title": "Adversarial second audit: Dupuy 468",
+      "job": "Found in print: RTA JR II p.122, 24 Jan 1520. N1, found-solved. ~$10",
+      "state": "done, archived"
+    },
+    {
+      "title": "Check Solved: P1 Orange 1572",
+      "job": "Found-solved: partial decipherment printed 1842. ~$2.5",
+      "state": "done, archived"
+    },
+    {
+      "title": "Verifier: Dupuy 468",
+      "job": "N3; attribution corrected; gloss is a contemporary decipherment. ~$20",
+      "state": "done, archived"
+    },
+    {
+      "title": "Detector test: printed ciphertext",
+      "job": "Controls 2/2, precision 50/50, 24 survivors; P1 Orange 1572. ~$6",
+      "state": "done, archived"
+    },
+    {
+      "title": "Credential session (ytbiz)",
+      "job": "Presence test, DECODE login (rejected), archive.org borrow (loan works, images protected), Google Books calendar read for Bowes, JSTOR (blocked). ~$12",
+      "state": "done"
+    },
+    {
+      "title": "Transcription + key extension: Dupuy 468 Anhalt",
+      "job": "Read in full, 687 tokens, H 630 S 33 M 18; recovery from the gloss. ~$30",
+      "state": "done, archived"
+    }
+  ],
+  "queue": [
+    {
+      "rank": 1,
+      "name": "Intercepted royalist letters 1646 (BL Add MS 72438 ff.9-10)",
+      "year": "1646",
+      "total": 40,
+      "next": "Recovery. BL copies of f.11 and the volume's keys; DECODE login for f.104"
+    },
+    {
+      "rank": 2,
+      "name": "Wellington to Maitland (dictionary code)",
+      "year": "1812",
+      "total": 40,
+      "next": "Recovery, partial. Spink question; library check of Urban and the Bentinck papers"
+    },
+    {
+      "rank": 3,
+      "name": "Charles II to Hamilton",
+      "year": "1650",
+      "total": 39,
+      "next": "Recovery. Wait for the NRS key sheets"
+    },
+    {
+      "rank": 4,
+      "name": "Whitworth to Harley (SP 91/5)",
+      "year": "1707-08",
+      "total": 37,
+      "next": "Contribution. One clause of f.108; TNA order decision"
+    },
+    {
+      "rank": 6,
+      "name": "Cornwallis Papers (PRO 30/11)",
+      "year": "1780-81",
+      "total": 36,
+      "next": "Recovery. Saberton 2010 not online; library check or Kew order"
+    },
+    {
+      "rank": 7,
+      "name": "Add MS 4136 correspondents to Cecil (DECODE R9235-R9256)",
+      "year": "1559-67",
+      "total": 36,
+      "next": "Recovery. DECODE login: keys R9260-62, apply Tomokiyo's Throckmorton keys"
+    },
+    {
+      "rank": 8,
+      "name": "Walsingham and Wotton (BL Add MS 32657)",
+      "year": "1585",
+      "total": 36,
+      "next": "Recovery. CSP Scotland VIII is paywalled on BHO; DECODE images and Tomokiyo's key"
+    },
+    {
+      "rank": 9,
+      "name": "Erving to Madison (NARA M31)",
+      "year": "1807",
+      "total": 35,
+      "next": "Recovery. Transcribe from the NARA images, apply the Pinckney pairs"
+    }
+  ],
+  "log": [
+    {
+      "when": "23 Sept, 23:40",
+      "what": "Wake 2: Raince reconciliation, M8-M11 check-solved and the Dupuy 468 exception table running. Bourdeau offline-only scout done: 5 items new to our queue (B1-B5), none copy-free; all need an archive copy or login."
+    },
+    {
+      "when": "23 Sept, 22:24",
+      "what": "Wake closed at $218. Next wake's first job: reconcile the two blind passes on Raince's letter (Dupuy 452 ff.28-29) by glyph clustering from the images, then Raince's 1526 key and the nomenclator solver with a control. Credential session still running its own list."
+    },
+    {
+      "when": "23 Sept, 22:17",
+      "what": "Dupuy 468 falls to N1: the adversarial second audit found the letter printed in full in Reichstagsakten JR II (1896), dated 24 Jan 1520. No unique solve tonight. The Orange 1572 detector candidate also fell, to an 1842 journal. Both caught inside the repo before any outreach."
+    },
+    {
+      "when": "23 Sept, 21:58",
+      "what": "Dupuy 468 verified N3 (AUDIT.md): the first unique solve by the repo's definition, a recovery from a contemporary decipherment on the leaf, with the catalogue attribution corrected. Detector test passed its controls and left 24 printed-cipher candidates; check-solved on the strongest (Orange to Nassau 1572). TNA page checks hit their daily cap; retry early UK morning."
+    },
+    {
+      "when": "23 Sept, 21:56",
+      "what": "Credential session: all seven variables set on the ytbiz account. DECODE login rejected once (form asks for a user name; row 1 open). archive.org login and loan work; lending pages are reader-protected, tool stops on them (row 18). Google Books snippets reached CSP Scotland vi nos. 389 and 584 for the Bowes audit (AUDIT.md section 10). JSTOR challenge-blocked (row 17)."
+    },
+    {
+      "when": "23 Sept, 21:33",
+      "what": "Dupuy 468 (Anhalt to François I, 1516) read in full from the Gallica image: the later hand's gloss covers almost the whole letter and the key reads the rest with a 99.8% control. Verifier started; the class turns on whether that decipherment is printed."
+    },
+    {
+      "when": "23 Sept, 21:23",
+      "what": "Dupuy 452 passes the class gate at best case N3: three unprinted letters of Oct 1525 in one embassy cipher, images free on Gallica, Raince's 1526 key as the lead. Crops being cut for two independent transcription passes."
+    },
+    {
+      "when": "23 Sept, 21:16",
+      "what": "Dupuy 452 turns out to be one embassy cipher across three letters of Oct 1525, about 1,500 tokens, images free; Raince's 1526 key is the lead. Print check first (class gate), then transcription."
+    },
+    {
+      "when": "23 Sept, 20:34",
+      "what": "Digitised lane: M1-M3 already solved or key-only; M6 (Carpi 1520s) open and M7 (Anhalt to François I) partial with a glossed key on the leaf. Both on the board; transcription from Gallica started for both, no copy needed."
+    },
+    {
+      "when": "23 Sept, 19:53",
+      "what": "Owner away; four credential-free workers ran. Sforza volume not on Gallica (image via DECODE next session). Bowes stays N1, calendar page paywalled. TNA and BL hits: 21 more scored, none digitised. Digitised lane found: 11 BnF manuscripts with cipher on Gallica, top one a register with its cipher bound at the head (Cinq Cents de Colbert 369); check-solved running on the top three."
+    },
+    {
+      "when": "23 Sept, 19:21",
+      "what": "Night closed. Non-DECODE lane: 15 rows swept, 7 verified unsolved at stage 2 (Mornington, Courten, SP 87 campaign, SP 78, SP 90/2, SP 87/13, SP 87/23), 8 dropped or partial. Six imaging or copy decisions on the owner's card (ASKS 12-16). Bowes 1583 verified N1. Nothing solved."
+    },
+    {
+      "when": "23 Sept, 19:05",
+      "what": "N8 (SP 78 France, 1642-57) open at stage 2; N9-N11 dropped. Last sweep batch of the night started (N12-N15) with the Thurloe check for N8."
+    },
+    {
+      "when": "23 Sept, 19:00",
+      "what": "Bowes 1583 verified N1: the names were printed in 1842 and the leaf is calendared in 1910. A sign table is the contribution; not a unique solve. Lesson to the check-solved template: word-count test on blocked calendars before stage 2."
+    },
+    {
+      "when": "23 Sept, 18:50",
+      "what": "N4 and N5 dropped (Tomokiyo keys). SP 87 Seven Years War run verified unsolved: 98 cipher items, three beside contemporary decipherments; on the board as a campaign (ASKS row 14). PRO 30/55 partial. Verifier on Bowes still running."
+    },
+    {
+      "when": "23 Sept, 18:43",
+      "what": "Bowes 1583: the eleven fragments read, 93 of 101 tokens (S 82, M 8, I 3) with a control. The names match Bowes's printed letter-book copies, so the verifier decides the class; a BL order would settle the rest."
+    },
+    {
+      "when": "23 Sept, 18:40",
+      "what": "Mornington and Courten both at stage 2 with imaging requests drafted (ASKS rows 12 and 13). Check-solved N4-N7 and the Bowes solver still running."
+    },
+    {
+      "when": "23 Sept, 18:32",
+      "what": "N2 (1722 intercepts) found-solved and dropped; Mornington partial, one despatch already printed; Courten open at stage 2. Next batch: finish the Mornington print check, Courten cross-reference, check-solved N4-N7."
+    },
+    {
+      "when": "23 Sept, 18:31",
+      "what": "Burgess 1912: no third message in eight families, with the two known messages as control. Remaining families need page images or a stronger word model. Check-solved N1-N3 and the Bowes solver still running."
+    },
+    {
+      "when": "23 Sept, 18:15",
+      "what": "Non-DECODE scout: 493 catalogue items with cipher that neither solver project names, 19 scored (QUEUE.md N1-N19); the top three carry their key in the same file. Check-solved started on them. Policy: unread letters with a key beside them are kept as the cheapest solves, not dropped as editions."
+    },
+    {
+      "when": "23 Sept, 18:11",
+      "what": "Bowes 1583: print negative, volumes undigitised; Tomokiyo's eleven fragments in hand, solver started with a matched control. Non-DECODE scout and Burgess 1912 still running."
+    },
+    {
+      "when": "23 Sept, 17:29",
+      "what": "Pallotto D1 found-solved. Volume-aware exclusion shows Bourdeau already names 193 of the 202 cached neighbour pairs; the lane needs the full DECODE catalogue or archives not on DECODE. Next scout targets non-DECODE catalogues once the network opens."
+    },
+    {
+      "when": "23 Sept, 17:20",
+      "what": "Owner restated the goal: maximise unique solves. DECODE neighbour sweep found 27 recovery candidates in 7 clusters, none English; reader profile widened to all readable languages; check-solved started on the Pallotto cluster (D1) so it can be read the day DECODE opens."
+    },
+    {
+      "when": "23 Sept, 16:46",
+      "what": "Sforza-Maino 1446: joint-key attack with a matched control gives a clean negative, conditional on the draft transcription. Nothing solved today; the queue is honest again (five rows found solved elsewhere since our scout), and the campaign from this account is capped by the network policy until ASKS rows 10-11 are done."
+    },
+    {
+      "when": "23 Sept, 15:59",
+      "what": "Sforza-Maino 1446 pair (from the GitHub harvest, QUEUE row G7) verified unsolved at stage 2 and put on the board as the cryptanalysis candidate; solver session running with a matched control."
+    },
+    {
+      "when": "23 Sept, 15:49",
+      "what": "Queue diffed against fresh clones of both solver repositories (tools/solver_repo_diff.py). Four more rows found-solved years ago and dropped: Boswell 1628 (rank 5, solved 2021), Goring 1645 (rank 22, solved 2020), Sadler 1559 (rank 23, printed 1809), Anne 1711 (rank 24, printed). Five rows partly read by Bourdeau (7, 8, 19, 20, 35). DECODE record R413 no longer needed."
+    },
+    {
+      "when": "23 Sept, 15:35",
+      "what": "Randolph 1570 dropped as found-solved: f.278 is a contemporary decipherment, read by Bourdeau on 21 Sept. Charles I to Rupert 1645 also read by Bourdeau on 21 Sept. Burgess 1912 and Bowes 1583 verified unsolved and added at stage 2. The ytbiz account's environment has no credentials and blocks every archive host (ASKS rows 10 and 11)."
+    },
+    {
+      "when": "23 Sept, 15:20",
+      "what": "New orchestrator on the noautopilotytbiz account took over from the 21 Sept handoff."
+    },
+    {
+      "when": "21 Sept, 03:45",
+      "what": "Erving 1807 dropped as found-solved: Founders Online prints the despatch, caught by the rule 1 check before any transcription. Randolph 1569 is really 1570; images and a first-pass transcription are in, no key located."
+    },
+    {
+      "when": "21 Sept, 03:00",
+      "what": "Two recovery workers started on targets that need nothing from the owner (Erving 1807, Randolph 1569). Handoff note written at the top of this file for the next orchestrator session."
+    },
+    {
+      "when": "20 Sept, 15:13",
+      "what": "Sweep done: Stair, Monck and NLS 20769 all open; all three at stage 2; the Kansas, BL and NLS orders are cleared and back on the owner's card."
+    },
+    {
+      "when": "20 Sept, 15:00",
+      "what": "Credentials: DECODE login rejected (wrong credentials as set); Internet Archive login rejected (IA_USER must be the email). Both passwords appeared in worker transcripts and should be rotated. Google Books key works. Stair 1710 sweep: open; order back on the card."
+    },
+    {
+      "when": "20 Sept, 14:45",
+      "what": "Rule tightened: no order goes on the owner's card until the blind sweep sets stage 2. Stair, Monck and NLS 20769 moved back to stage 1 while their sweep runs. Four workers running on the new credentials (DECODE, Google Books, Internet Archive)."
+    },
+    {
+      "when": "20 Sept, 06:12",
+      "what": "Free work done: no printed key for Hamilton, 1646 or Monck; three queue items shown already in print and dropped; queue re-ranked with kinds (top: 1646 intercepts, Wellington, Hamilton). All workers archived."
+    },
+    {
+      "when": "20 Sept, 05:15",
+      "what": "Overnight summary written to STATUS.md. Three free-work Sonnet workers running (print checks, search-print sweep, queue re-score). Improvement loop added: ledger, brief templates, weekly retrospective."
+    },
+    {
+      "when": "20 Sept, 04:46",
+      "what": "All workers finished. Blind sweep: nothing on the board is already solved; Wellington set to partial. NLS MS 20769 record confirmed: 57 leaves, catalogued as cipher; scan decision is on you. Setup-script fix confirmed working."
+    },
+    {
+      "when": "20 Sept, 04:12",
+      "what": "Stair 1710: not in print; Kansas order is on you. Sweep: Stepney and Whitworth confirmed, no solution anywhere."
+    },
+    {
+      "when": "20 Sept, 04:20",
+      "what": "Board: every target now carries a kind label (recovery, cryptanalysis, contribution) and finished work shows a \"Result so far\" line."
+    },
+    {
+      "when": "20 Sept, 04:05",
+      "what": "Eckert: enquiry sent to the Huntington curator about a corpus-level decoding dataset; the reply decides the corpus pass."
+    },
+    {
+      "when": "20 Sept, 03:44",
+      "what": "Hamilton: blind six-source sweep found no solution or key anywhere; offline-only confirmed."
+    },
+    {
+      "when": "20 Sept, 03:41",
+      "what": "Eckert: key test outcome A. The headquarters entries are Cipher No. 2 and the Huntington's copy reads them at grade H. No genuine target left in the ledger."
+    },
+    {
+      "when": "20 Sept, 03:58",
+      "what": "Three targets added from the scout: Stair 1710 (Kansas), Monck 1660 (BL), NLS MS 20769. Eckert parked: every cipher in the 1864 ledger reads from a surviving book."
+    },
+    {
+      "when": "20 Sept, 03:37",
+      "what": "Wellington: HathiTrust half of the dictionary hunt closed negative (19 editions via APIs). The browser tool cannot run in cloud containers until the proxy CA is trusted; APIs documented in the Access playbook."
+    },
+    {
+      "when": "20 Sept, 03:38",
+      "what": "Eckert 1864 audit: two of the four \"not printed\" telegrams were in print (one in the Official Records the solver had searched); the other two have no located prior print. Board stage set to Novelty verified; no first-decipherment claim survives."
+    },
+    {
+      "when": "20 Sept, 03:15",
+      "what": "Restarted after the usage limit: HathiTrust dictionary search (Wellington) and a new Cipher No. 2 key test (Eckert). The 1864 reading worker was archived; it had begun a duplicate audit of its own."
+    },
+    {
+      "when": "20 Sept, 03:20",
+      "what": "Process: CLAUDE.md rule 10 (novelty is a verifier's verdict, N0-N5), solver/verifier split in the Workers section, new board stage \"Novelty verified\" before \"Solved\"."
+    },
+    {
+      "when": "20 Sept, 00:03-03:00",
+      "what": "All workers stopped by the five-hour usage limit; HathiTrust worker never ran."
+    },
+    {
+      "when": "20 Sept, 03:07",
+      "what": "Eckert 1864: novelty claim for four telegrams sent to a verifier session for adversarial audit. \"Not in the Official Records\" had been read as \"new\"; that was an over-claim."
+    },
+    {
+      "when": "20 Sept, 00:00",
+      "what": "Eckert 1864: twenty ledger entries read at grade H from cipher book mssEC 41; four were not matched to the Official Records by the sweep (claim audited 20 Sept 2026: two are in print, two are N3; see ciphers/eckert-1864/AUDIT.md)."
+    },
+    {
+      "when": "20 Sept, 00:02",
+      "what": "Wellington: HathiTrust worker started; first live test of the browser fetch tool."
+    },
+    {
+      "when": "19 Sept, 23:58",
+      "what": "Wellington: dictionary search closed negative after 57 editions. Two asks for you before the 23 Sept sale: email Spink about a dictionary in the lot; HathiTrust search from a browser."
+    },
+    {
+      "when": "19 Sept, 23:26",
+      "what": "Wellington transcription worker finished (pass A log pushed) and archived. Dictionary search continues."
+    },
+    {
+      "when": "19 Sept, 23:30",
+      "what": "Eckert: first pilot done. Zooniverse never decoded the ledgers; ten 1862 telegrams read against the Official Records. Second pilot started on an 1864 ledger with the surviving cipher book."
+    },
+    {
+      "when": "19 Sept, 23:00",
+      "what": "Wellington: transcription pushed (73 groups, all with known plaintext). Dictionary research worker started."
+    },
+    {
+      "when": "19 Sept, 22:50",
+      "what": "Whitworth: worker pushed. Only one clause of SP 91/5/108 is actually unread; copy request drafted for ff. 108, 106, 121. Needs your decision."
+    },
+    {
+      "when": "19 Sept, 22:35",
+      "what": "Wellington: 17 auction images captured at full served size; transcription passes running."
+    },
+    {
+      "when": "19 Sept, 22:40",
+      "what": "Eckert Papers worker started (queue rank 1). Whitworth worker woken to push its drafted files."
+    },
+    {
+      "when": "19 Sept, 22:30",
+      "what": "Stepney: TNA page check ordered and paid, order 3660178."
+    },
+    {
+      "when": "19 Sept, 22:15",
+      "what": "Scout stopped after finishing the queue; it had begun attempting ciphers beyond its brief."
+    },
+    {
+      "when": "19 Sept, 22:13",
+      "what": "Two workers started: Wellington 1812 image capture, Whitworth 1707 lookup."
+    },
+    {
+      "when": "19 Sept, 22:05",
+      "what": "First scout run filed QUEUE.md: 40 scored, 163 kept unscored, 40 dropped."
+    },
+    {
+      "when": "19 Sept, 21:14",
+      "what": "Stepney: volume identified as SP 105/65 after the environment got network access."
+    },
+    {
+      "when": "19 Sept, 20:15",
+      "what": "Hamilton: copy request emailed to NRS for GD406/1/2197."
+    },
+    {
+      "when": "19 Sept",
+      "what": "Repo set up: catalogue, landscape, lessons, conventions, two workflows."
+    }
+  ]
 }
