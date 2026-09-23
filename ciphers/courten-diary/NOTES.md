@@ -94,11 +94,64 @@ run yet against JSTOR/dissertation literature on Courten specifically (this swee
 which is not equivalent to a JSTOR full-text search — no JSTOR credentials were used this sweep, out of
 scope for check-solved per the brief).
 
+## Print check, part 2 (24 September 2026)
+
+**Sloane MS 4019, f.79 — resolved.** The BL Archives and Manuscripts record for Sloane MS 4019 truncates
+its `scope_and_content` field to ~250-300 characters in the search-results JSON, but the *individual*
+catalogue record (`searcharchives.bl.uk/catalog/040-002116413.json`, 1 request) carries the field
+untruncated (7033 characters), as an itemised folio list. The f.79 entry reads, verbatim:
+
+> "f. 79 William Courten, alias Charleton; of the Middle Temple: **Key to his cipher**: 18th cent."
+
+This is **a second, separate copy of the key**, catalogued as 18th-century (i.e. contemporary with
+Courten's own lifetime, or shortly after — not a 19th-century Madden addition like the f.66 key bound
+into Add MS 4956 itself). It is not annotated as a decipherment, a transcript, or a note that the cipher
+has already been read; it is a key only, the same status as the two D623/41 copies in the Mornington
+target. This resolves the cross-reference the BL catalogue itself makes (Add MS 4956's note "cf. Sloane
+MS. 4019, f. 79") without changing the open verdict, and adds a second key source worth imaging alongside
+the diary.
+
+**Scholarship search, four further WebSearch queries this pass** (in addition to the four run at
+check-solved): `William Courten "Sloane MS 4019" cipher key Middle Temple`; `Sloane Lab project William
+Courten diary cipher Add MS 4956`; `"William Courten" "Add MS 4956" OR "Additional MS 4956" diary`;
+`Frederic Madden Courten cipher key almanack 1698 British Library blog`. No hit on a published transcript,
+decipherment, or discussion of the Add MS 4956 diary's cipher passages, from the Sloane Lab
+(sloanelab.org), the British Museum's Sloane Lab project page, Reconstructing Sloane, the Digital Ark
+(Courten's own project page at USask), or the British Library blog. One dead-end checked and closed: a
+search summary asserted a "Key to Charleton's cipher" in **Add MS 5156**; checked directly against BL's
+own catalogue (`searcharchives.bl.uk`, 1 query) — Add MS 5156 is in fact Courten's **will** (attested
+office copy, dated 10 March 1701, with three codicils), not a cipher key. This looks like a
+search-summary misattribution, not a real lead, and is recorded here so nobody re-chases it.
+
+**JSTOR queries for the next session with credentials** (not run — JSTOR_USER/JSTOR_PASS are set in this
+environment but out of scope for a print-check worker per the brief; log the article and date in
+ciphers/courten-diary/AUDIT.md when run):
+- `"William Courten"` AND `diary` AND `cipher`
+- `Courten` AND `Sloane` AND `cipher` AND `Charleton`
+- `"William Charleton"` Middle Temple naturalist collection 17th century
+- `Frederic Madden` AND `manuscript` AND `key` AND `cipher` AND `cataloguing` (in case Madden's own working
+  papers or a 19th-century Museum report describe why he added the f.66 key, which could itself say
+  whether he — or anyone since — read the diary)
+
+Requests this pass: `searcharchives.bl.uk` 4 (Sloane MS 4019 search-results, Sloane MS 4019 individual
+record, "Key to Charleton's cipher" phrase search, Add MS 5156 search); 4 WebSearch queries.
+
+## Verdict (updated 24 September 2026)
+
+**Open, unchanged.** Still no decipherment, transcript, key discussion beyond the catalogue's own key
+notices, or scholarly treatment of this specific manuscript's cipher passages found in web search (eight
+queries total across both passes), print (none checked — no known edition title to search against), the
+Cryptiana snapshot, DECODE's cached catalogue, or the Bourdeau/Aymeloglu catalogues. The Sloane MS 4019
+f.79 cross-reference is now resolved: it is a second key, not a decipherment or a closing note. Not found
+in \<source\> per rule 10; this is a search result, not a claim of discovery. JSTOR remains unchecked
+(queries logged above for the next session with credentials) — the stage 2 conditional narrows to that one
+open item plus HathiTrust/Google Books full-text (not attempted this pass; no known print edition title to
+search for, so a phrase search rather than a title lookup would be needed there, out of scope for this
+worker's cap).
+
 ## Next
 
-Small, single-volume item (66 folios total, key included in the same volume) — the cheapest access route
-of the three N-targets this sweep covered. BL Imaging Services quote for Add MS 4956 in full (diary leaves
-+ f. 66 key) is the natural next step; a REQUEST.md can be drafted for this once someone reads Sloane MS
-4019 f. 79 first (a single-folio check, likely far cheaper than a full Add MS 4956 reproduction, and might
-close the question on its own). Also worth a JSTOR search on "Courten" + "diary"/"cipher" before ordering,
-per rule 10's demand for a documentary-edition and scholarship check beyond WebSearch.
+REQUEST.md drafted this pass: BL Imaging Services quote for Add MS 4956 in full (66 ff., diary + f.66
+key) plus Sloane MS 4019 f.79 (the second key). No email sent, no price guessed. A JSTOR pass on the four
+queries above, run by a session with credentials, should happen before the order is placed, per rule 10's
+scholarship-coverage requirement — it is cheap and could change the picture at zero further imaging cost.

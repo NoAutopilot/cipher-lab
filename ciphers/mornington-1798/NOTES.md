@@ -104,11 +104,68 @@ on Montgomery Martin Vols 3-5 (1836-37) and the 1877 *Selection from the Despatc
 Papers* not being checked yet for the 1800 items, and on HathiTrust (Cloudflare-gated here) not being
 searched by the Bibliographic/HTRC route for any further Wellesley editions.
 
+## Print check, part 2 (24 September 2026)
+
+Finished the conditional left open above: Montgomery Martin Vols 3-5 (1836-37), the 1877 *Selection*
+(Owen), and (per the brief) the *Wellesley Papers* (1914, ed. Martin/Pearce family correspondence — 2
+vols) — all six sources now checked for D623/22 and the six 1800 despatches (D623/27, /28+copy /29, /30,
+/35, /36+copy /37).
+
+**archive.org identifiers used** (advancedsearch by title, 1 query each for the Martin set and the 1914
+set; `_djvu.txt` fetched once per volume to
+`/tmp/.../scratchpad/mornington/<identifier>.txt`, not committed):
+- Vol. 3 (1836): `india.history.resource.111968`
+- Vol. 4 (1837): `india.history.resource.111967`
+- Vol. 5 (1837): `india.history.resource.35037`
+- 1877 *Selection from the Despatches, Treaties and other Papers of the Marquess Wellesley* (Owen):
+  `india.history.resource.117686`
+- *The Wellesley Papers* (1914), Vol. I: `india.history.resource.87788`; Vol. II:
+  `india.history.resource.87766`
+
+**Method.** `grep_martin.py` (scratchpad) normalises OCR whitespace and hyphenated line-breaks, then
+searches each volume for (a) the catalogue's distinctive phrase per despatch, from the fonds's full-text
+`scope_and_content` fetched fresh for each item this pass (`searcharchives.bl.uk`, one query per item:
+D623/4, /5, /22, /24, /27, /28, /29, /30, /35, /36, /37, /41), and (b) every plausible spelling of the
+despatch date ("5th March, 1800" / "5th of March 1800" / etc., case-insensitive, comma optional).
+
+**Result: no genuine hit for any of the seven items in any of the six volumes.** Two phrase matches
+surfaced and were checked in full context, both false positives:
+- "found in the palace at Seringapatam" (1877 *Selection*, near "Fort William, March 9th, 1800") is from
+  a *different*, broader Mornington-to-Dundas letter of **9 March 1800** (Mahratta empire, Zemaun Shah,
+  the Poonah subsidiary force, Scindia) that mentions the Seringapatam papers in passing — not D623/28's
+  narrow Edmonstone despatch (6 Mar 1800) on Tippoo's captured government records specifically. Confirms
+  the general topic reached print nearby in date but not this cipher item.
+- "treaty of Hyderabad" (D623/27 search term) and "Admiral R[ainier]" (D623/36 search term) each recur
+  many times across all volumes in unrelated sentences — generic phrases, not despatch-specific.
+- Date-only matches ("26th of March, 1800" swallowing a loose "6th... March, 1800" regex; the 5 Mar 1800
+  stock-price table already flagged in the first pass) are the same false positives as before, re-confirmed.
+
+No letter with a dateline of 11 May 1799, 5, 6, 25 March/April 1800, 21 June 1800 or 9 July 1800
+matching any of these seven despatches appears as its own printed item in Vols 3-5, the 1877 *Selection*,
+or the 1914 *Wellesley Papers* (both volumes, which are mostly personal/political correspondence, not
+despatch texts, and cover this period only thinly).
+
+**D623/41 (the key) catalogue text, re-checked** (`searcharchives.bl.uk`, record `040-002273097` for the
+duplicate lookup this pass): "Two copies of key to Lord Mornington's cipher" — no decode/decipher note,
+same as the first pass.
+
+Requests this pass: `searcharchives.bl.uk` 12 (one per item, D623/4,5,22,24,27,28,29,30,35,36,37,41),
+`archive.org` 15 (3 advancedsearch + 6 metadata + 6 `_djvu.txt` downloads).
+
+## Verdict (updated 24 September 2026)
+
+**Partial**, unchanged in kind but the conditional is now cleared for this batch of six editions.
+D623/23 stays found-solved (Montgomery Martin Vol. 1, first pass); D623/10 and /11 stay already
+known-decoded to the cataloguer. **D623/4, /5, /22, /24, /27, /28 (+copy /29), /30, /35, /36 (+copy
+/37) are now stage 2, verified unsolved**, not found in web search, the Cryptiana snapshot, DECODE's
+cached catalogue, Bourdeau's or Aymeloglu's catalogues (first pass), or in six print editions spanning
+Vols 1-5 of Montgomery Martin (1836-37), the 1877 *Selection* (Owen), and the 1914 *Wellesley Papers*
+(both passes) — a search result, not a claim that no other edition exists (rule 10; e.g. HathiTrust
+remains Cloudflare-gated here and was not searched by the Bibliographic/HTRC route for further Wellesley
+material).
+
 ## Next
 
-Before ordering anything: (a) finish the Montgomery Martin Vols 3-5 / 1877 *Selection* phrase search for
-the six remaining 1800 despatches (cheap, same archive.org route used here, no imaging needed); (b) drop
-D623/10, /11 and /23 from any order. If the remaining items still test unread after (a), BL Imaging
-Services quote for D623/41 (the key) plus one short remaining item (e.g. D623/4, the shortest) as the
-size/legibility test the original QUEUE row proposed, before ordering the whole run. No REQUEST.md drafted
-yet — waiting on the Vols 3-5 check first, since that may drop more items at zero cost.
+REQUEST.md drafted this pass (BL Imaging Services quote): D623/41 (the key, both copies) plus the
+shortest unprinted despatch, D623/4 (3 Jul 1798), as the size/legibility test the original QUEUE row
+proposed, before committing to the full nine-item run. No email sent, no price guessed.
