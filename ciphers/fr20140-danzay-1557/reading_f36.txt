@@ -1,0 +1,3 @@
+# Mechanical reading of ciphertext_f36.tsv with key.tsv (decode.py). Nulls dropped; [code] = unkeyed sign;
+# CAPS = clear-hand words in the letter; T and hk (keyed twice by Tomokiyo) shown as a and u; <w> = his word signs.
+36R1	a u e c [I] u e s <le> [x8] p e u d e p e r t e p o u r

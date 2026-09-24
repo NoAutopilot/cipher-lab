@@ -313,7 +313,9 @@ image for each (`native_f71.jpg` 4800×7062, `native_f72.jpg` 4791×7091, same d
 **f.36 recto carries only one line of cipher.** The top line is cipher; clear French resumes immediately on
 line 2 ("Iy m'a...") and continues without interruption to the signature "Dantzay" at the foot of the page —
 the letter's cipher does not run for multiple lines on this leaf, it is one more line and then the despatch
-finishes in the clear. **f.36 verso carries no cipher at all**: it is the address/docket panel of the folded
+finishes in the clear.
+[Correction, reconciler, 24 Sept 2026: lines 2-4 of f.36r also carry cipher signs, mixed with clear words;
+clear-only text starts on line 5. See "f.36 reading (24 Sept 2026)".] **f.36 verso carries no cipher at all**: it is the address/docket panel of the folded
 sheet (bleed-through of the recto text read in mirror, an address line, a wax seal), consistent with how such
 letters were folded and addressed on the outside — not a continuation leaf. No crop was cut from it.
 
@@ -354,3 +356,61 @@ legend.
   ambiguous ink fleck.
 
 No reconciliation, key application, decode, or novelty wording, per brief.
+
+## f.36 reading (24 Sept 2026)
+
+Reconciler (Opus), working from disk only (`images/native_f71.jpg`, `images/f71_cipher.jpg`, `images/f69_cipher.jpg`
+for glyph comparison); no network. Files: `ciphertext_f36.tsv` (25 signs, per-sign confidence, both passes' labels
+at each aligned position, a note per sign), `reading_f36.txt`, `reading_tokens_f36.tsv`. `decode.py` now runs over
+both leaves (list `LEAVES`); f.35's `reading.txt` and `reading_tokens.tsv` come out byte-identical (md5 checked
+before and after), and `--check` exits 1 if any of the four output files is stale (tested by corrupting
+`reading_f36.txt`).
+
+**Correction to the section above.** f.36r has cipher on more than one line. Line 1 is all cipher. Lines 2-4
+mix cipher signs with clear words: line 2 "[cipher] fust et en telle sorte vous serez", line 3 "asseuré de faire
+[cipher] quand [cipher] de [cipher]", line 4 "[cipher] fust [cipher]". Clear-only text starts on line 5 ("toutes
+les foys qu'il vous plairoyt, ou je feray tout le debvoyr et diligence qui sera possible..."). Seen at page
+scale and at native resolution. Only line 1 was briefed and transcribed. Lines 2-4 need two passes and a
+reconciliation (about 35 more signs by eye).
+
+**Reconciliation.** I reread line 1 sign by sign at native resolution and coded each glyph with the f.35 codes.
+Where a glyph was not a direct match to the legend, I compared it with the same glyph on f.35r. f.35r R2 "d ϖ ч
+ℓ" = "fort" fixes ч as `eps` and ℓ as `pd`; R2's barred 8 is `x8`; R8 fixes the 6-shape as `b6` = p.
+- Both passes have 25 signs. Pass A's extra sign (its 13, `unk4`, L) is a small ink dot between signs 12 and 13,
+  not a sign.
+- Where each pass matches the reconciled key value: pass A 9 of 25, pass B 13 of 25. Pass A read every plain `x`
+  as u, which is systematic. Neither pass saw that signs 3 and 12 are the same slanted lozenge.
+- **"dict" twice is not upheld.** Both passes took the two 6-shapes (11, 22) for Tomokiyo's word sign "dict".
+  The glyph is the one f.35 codes `b6` = p, and context gives p both times ("peu", "pour"). Both are graded M,
+  because Tomokiyo draws a similar 6 for "dict". That the two passes agreed on the label is evidence that the
+  glyph looks like the legend's "dict", not that it means "dict".
+
+**Reading** (keyed values, nulls dropped, `[code]` unkeyed):
+`a u e c [I] u e s <le> [x8] p e u d e p e r t e p o u r`
+→ with the two unkeyed signs taken as f.35's suggestions 4 and 5 (I = q, x8 = null): **"avecques le peu de perte
+pour"** ("with the little loss for ..."). Those two values are grade I suggestions and are not applied in
+key.tsv or the reading.
+
+**Grades (25 cipher tokens):** H 15 (one null, `xinf`), C 0, S 0, M 8, I 0 applied (2 suggestions noted above),
+U 2.
+- M: sign 1 `T` and sign 6 `hk`, which Tomokiyo keys twice (the context value is the first one, a and u). Signs
+  3 and 12 `dia`, a glyph-identity doubt. Sign 9 `le`, where the z-shape is only a near match to his yogh. Signs
+  11 and 22 `b6`, the "dict" look-alike. Sign 20 `pd`, identified only through f.35r.
+- U: sign 5 `I` and sign 10 `x8`.
+No H or C reading comes from a contemporary decipherment, so this is a reading from Tomokiyo's published key,
+with no control run.
+
+**Join with f.35v.** f.35v line 29 ends "... e r p a r h e c a r DU [xk]" (as keyed: "...[recouvr]er par ... car
+du [xk]"). f.36r line 1 begins "avecques le peu de perte pour". Leaf order, hand, cipher and the 27 Jan 1557
+dateline show that this is the same despatch, so the physical join is H. The sense across the join is **not
+read**: "car du [xk] | avecques le peu de perte pour" makes no phrase while `xk` (unkeyed, 4 uses) is open. Grade
+the textual join M, and do not repair it. Line 1 then runs into line 2's cipher, not into clear French. The first
+clear words after it are "fust et en telle sorte vous serez asseuré de faire ...", so "pour [line-2 cipher]
+fust ..." is also unread.
+
+**Not read here:** the cipher signs of lines 2-4, the value of `xk` and the f.35v/f.36r bridge. There was no
+print or phrase search for "avecques le peu de perte", because that is the verifier's work.
+
+Follow-up (not done): two blind passes over f.36r lines 2-4 (crop native_f71 at y ≈ 1950-2450), then a
+reconciliation into ciphertext_f36.tsv as lines 36R2-36R4.
+

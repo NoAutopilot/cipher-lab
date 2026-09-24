@@ -1,0 +1,32 @@
+# f.36r cipher line 1 (canvas f71, images/native_f71.jpg box 1300,1770-4700,1980), reconciled 24 Sept 2026 by an Opus
+# reconciler from passA_f36.tsv / passB_f36.tsv against the native image. Codes are this repo's f.35 codes
+# (key.tsv, inventory.tsv); glyph identity for eps, pd, x8, b6 checked against the same glyphs on f.35r (f69_cipher.jpg,
+# R2 "fort", R8 "pour"). conf: H clear and code certain; M code or glyph identity doubtful. passA/passB: that pass's
+# label at the aligned position ("-" none). Not a sign: a small ink dot between positions 12 and 13 (pass A's unk4, L).
+# Lines 2-4 of f.36r also carry cipher signs mixed with clear words; they are NOT transcribed here (see NOTES.md).
+line	position	sign	confidence	passA	passB	note
+36R1	1	T	H	a	a	T-shape; key a|luy
+36R1	2	mu	H	u	u	u with right-leg descender
+36R1	3	dia	M	e	b	slanted lozenge with two inner strokes; same glyph as pos 12
+36R1	4	al	H	c	c	alpha
+36R1	5	I	H	unk1	unk1	capital I with serifs; unkeyed (f.35 suggestion: q)
+36R1	6	hk	M	unk2	f	large hook opening left with small v at foot; read as check-mark hook
+36R1	7	x	H	u	e	plain x, no bar
+36R1	8	H	H	s	s	H
+36R1	9	le	M	word:le	word:le	z/3-shape with flat foot; matched to yogh 'le'
+36R1	10	x8	M	g	g	figure-8 with short bar at left waist, as f.35r R2 x8
+36R1	11	b6	M	word:dict	word:dict	6-shape identical to pos 22; Tomokiyo draws a similar 6 for 'dict'; f.35 codes this glyph p
+36R1	12	dia	M	unk3	null	same glyph as pos 3
+36R1	13	xb	H	word:son	x	x with bar
+36R1	14	xinf	H	p	n	crossed double loop (null)
+36R1	15	fd	H	t	i	long f / dagger with descender
+36R1	16	x	H	u	e	
+36R1	17	B	H	unk5	p	sharp-s / B-shape
+36R1	18	x	H	u	e	
+36R1	19	eps	H	r	y	open-4 / y-like shape with long tail; same glyph f.35r R2 codes eps ("fort")
+36R1	20	pd	M	h	b	looped l without crossbar; f.35r R2 codes this glyph pd ("fort")
+36R1	21	x	H	u	e	
+36R1	22	b6	M	word:dict	word:dict	6-shape; context "pour"
+36R1	23	pib	H	a	n	pi with bar
+36R1	24	xb	H	l	e	x with bar underneath
+36R1	25	r2	H	r	r	large script 2
