@@ -1,0 +1,12 @@
+{
+  "ark": "btv1b104629623",
+  "manifest_cache": "sources/gallica-manifests/btv1b104629623.json",
+  "fetched": "2026-09-24",
+  "note": "Whole-item overview only; no cipher symbols found anywhere in the pinned item (see NOTES.md), so no crops or transcription were made.",
+  "overview": {
+    "description": "1000px-wide views of every canvas of the pinned item (finding-aid item 3a, F.129-141, 'Carta n°.1 que foi por cifra...'), fetched to survey the whole item for cipher content.",
+    "url_pattern": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b104629623/f{canvas}/full/1000,/0/native.jpg",
+    "canvases": "f263-f288 (folio 129r-141v)",
+    "dir": "overview/"
+  }
+}
