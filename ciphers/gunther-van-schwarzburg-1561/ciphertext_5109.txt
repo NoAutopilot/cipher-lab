@@ -1,0 +1,23 @@
+# 5109 cipher, G1 transcription 24 Sept 2026 (one careful reading, Opus, from 05109_p4.jpg lines 18-25 and 05109_p5.jpg lines 1-10).
+# Codes: letters/digits as written; X_ = x underlined; Xb = overbar (e.g. aab = overlined aa, xb = overlined x, ob = overlined o/2, Ib = barred I);
+# 8+ = 8 with cross above; x+ = x crossed; xm = x followed by three minims; th = circle/theta struck by bar (drawn like a crossed o); th+ = same with large cross below;
+# ] = bracket sign; ne = not-equal sign; sq = small square; tau = tau/looped c; dot7 = dot then 7; /88 = struck-through 88 (cancelled by writer, not a unit);
+# 'CLEAR ...' = clear-text interruption; '?' suffix = doubtful reading.
+A1	d6 f 88 34 vt ss + rf o cc 7 aab x 6 tn
+A2	hs xr xb o r p /88 ii + zz vt vi | CLEAR Euer liebe
+A3	44 Ib cc aaa th r 62 f 8 oo 01
+A4	a x_ gn g z 101 88 ob oo + 85 or 77
+A5	fb g aab f ps 34 f /88 xm r cc th rp
+A6	f p ss? 44 60 ] z r ott? g 8+ aaa vt cc
+A7	tau f 3 4000 60 o ox xm r oo g 33 x+ 8
+A8	xr dd 77 48 p 88 r rp xb f or 34 ps
+P1	d6 rf hs lx 87 86 88 ii cc + r 63 ss ob rr
+P2	6 f 8 44 48 vt m th r rf of 60 dot7
+P3	53 f tn xn 34 8+ oo ss 88 f rp ps sq /88
+P4	hs ss x+x ] a 101 8 r rp q f cc th+ r aaa hs
+P5	oo x_ x ne z 33 rp 8 60 34 or xn f
+P6	48 60 ] 6 | CLEAR das ich E.L. wol haben wissen
+P7	CLEAR lassen wollen | 34 p xm x aaa | CLEAR Eur liebe | 77
+P8	60 L r aab ss ps tau 01 aaa oo hs xr xb dot7
+P9	63 + g rr f or 34 44 rp d r 88 tau r c 4000
+P10	r ss xb 01 oo tau f gn zz 60 48 r 88 xnr
