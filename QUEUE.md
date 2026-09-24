@@ -1790,6 +1790,38 @@ total, well within the ~400 cap, one at a time, >=1.5s apart, no other host touc
 two solver-repo shallow clones made available for grep but not needed (no survivor passage required it) and not
 committed.
 
+## Willem van Oranje correspondence: unsolved cipher letters (LANE N harvest of 24 September 2026)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n-hvWVO.md`. Enumerated every WVO (`resources.huygens.knaw.nl/wvo`)
+record matching cijfer, cijferschrift, chiffre, gecijferd, onopgelost, oplossing or ontcijfering (92 genuine
+hits after 4 dagcijfer/Arabische-cijfers false positives; method, coverage proof and counts in
+`sources/wvo/NOTES.md`; full table `sources/wvo/cipher-letters-2026-09-24.tsv`). 19 of the 92 are already
+covered — NB1 lodewijk-van-nassau-1573-74 (4610/4611/4612/4613/4615/4616), NB2 august-van-saksen-1561-64
+(53/57/74/98/126/153/175), NB3 willem-van-hessen-1567 (1127), NB4 la-garde-1577 (6179/6467/5564), and the
+NB5/NB6 rows above (1109, 5551) — excluded here. The remaining 73 group into correspondence circles (the named
+party opposite Willem van Oranje); four circles carry at least one letter with no solution stated in WVO's own
+remarks and not yet claimed by a folder, and all four also carry a solved sibling in the same run (recovery).
+None of the candidate circles came up cryptanalysis-only: the one apparent case (letter 424, Willem to
+Philippe de Croij) turned out on refetching its truncated remarks field to already have a contemporary Spanish
+decipherment at Simancas, so it drops out (see NOTES.md "truncated remarks" item). "Not stated" is a report of
+what this WVO record's own remarks say, not a check-solved verdict (none run, per brief) — rule 10 applies:
+report what was found and where it was not, do not call any of these new/unpublished/unread. Never
+check-solved, never promoted.
+
+| Rank | Circle (correspondence with Willem van Oranje) | New candidate briefnrs | Years | Lang | Kind | Archive (WVO bronnen code) | Solved sibling already in the circle | Image route | Ciphertext weight |
+|---|---|---|---|---|---|---|---|---|---|
+| WV1 | Jan van Nassau (Willem's brother) | 5200, 5207, 5213, 5218, 5221, 5222, 5549 (7 letters, mostly "grotendeels"/"hoofdzakelijk" or "gedeeltelijk in cijferschrift", no oplossing/opgelost/ontcijferd word in any of the seven) | 1572-1575 | nl | recovery | KHAG (Koninklijk Huisarchief Den Haag); GPA/GPAS (Groen van Prinsterer edition, print not checked letter-by-letter) | Yes — 5198, 5199 both "solved on leaf" (afgebeeld); 5033 solved via Groen van Prinsterer; plus already-queued siblings 5551 (NB6, two lines) and 5564 (NB4's fetched candidate, "opgelost cijferschrift") in the same circle | Yes (PDF), pattern `resources.huygens.knaw.nl/media/wvo/images/05000-05999/0520{0,7}.pdf` etc. (not fetched this pass) | 17 |
+| WV2 | Lodewijk van Nassau (Willem's brother) | 4503, 5194, 5797, 5799, 5810, 5811 (6 letters; "grotendeels"/"gedeeltelijk in cijferschrift", no solution word) | 1572-1574 | fr | recovery | KHAG; GPA (Groen van Prinsterer, print not checked letter-by-letter) | Yes — same circle as NB1 (4613/4615 imaged contemporary decipherments) plus 7205/7206/7208 (solved on leaf, held ARAB) and 8+ more "solved elsewhere" letters 1573-1574 | Yes (PDF), pattern `resources.huygens.knaw.nl/media/wvo/images/05000-05999/*.pdf`, `04000-04999/04503.pdf` (not fetched this pass) | 14 |
+| WV3 | Günther van Schwarzburg | 8246 ("Grotendeels in cijfer", date supplied by the editor from Japikse's edition, no solution word) | 1561 | nl | recovery | JC ; SAR (WVO bronnen codes, not resolved to full archive names this pass) | Yes — 5109 (same circle, 24 Mar 1561) "solved elsewhere", the printed edition itself carrying the solution per WVO's opmerkingen | Yes (PDF), `resources.huygens.knaw.nl/media/wvo/images/08000-08999/08246.pdf` (not fetched this pass) | 3 |
+| WV4 | Filips van Marnix van St. Aldegonde | 10260 ("De brief is vercijferd geweest", i.e. was in cipher; no solution word; the Groen van Prinsterer print of this letter is itself flagged "(onv)" = incomplete, the same omit-the-cipher-passage pattern as NB4/la-garde-1577 and the already-known orange-nassau-1572 letter) | 1580 | fr | recovery | Nationaal Archief Den Haag (Staten-Generaal 1576-1796, 11099, f.108r-109v) holds the contemporary copy with a free 18.97 MB PDF scan at `resources.huygens.knaw.nl/media/wvo/images/10000-10999/10260.pdf`; Stadsarchief Gent holds a second contemporary copy (postscript only) | Yes — 6467 (Marnix to Willem, 2 Nov 1577), same circle, already imaged this session under `ciphers/la-garde-1577/images/06467_*.png` ("solution in the margin" per WVO) — a solver on WV4 can reuse that captured key material directly, no refetch needed | Yes (PDF), confirmed above | 1 |
+
+Ranked by ciphertext weight (mainly/whole > partly > lines, summed across each circle's new candidate
+letters), recovery clusters first (all four are recovery this pass). Not promoted; the orchestrator picks
+among these plus other live LANE N sections per its usual "at most a handful, mixing kinds" rule. Follow-up
+before a capture worker starts on any of WV1-WV4: one detail-page fetch per new briefnr
+(`wvo/app/brief?nr=<n>`) for the exact shelfmark (only archive codes are recorded here, not full call numbers,
+except WV4's 10260 which was fetched in full this pass) — the same step NB1-NB6 already had done for them.
+
 ## Spanish archives beyond the queue, PARES and BDH (LANE N scout of 24 September 2026)
 
 Brief: PARES (pares.mcu.es / pares.cultura.gob.es) beyond Simancas/AHN/AGI rows already on the board, and the
