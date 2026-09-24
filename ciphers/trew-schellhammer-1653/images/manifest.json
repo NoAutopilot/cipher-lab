@@ -1,0 +1,40 @@
+{
+  "source": "Universitaetsbibliothek Erlangen-Nuernberg, Briefsammlung des Christoph Jacob Trew (Trew Briefsammlung), via bavarikon / api.digitale-sammlungen.de IIIF image API v2",
+  "licence": "CC0/PDM (per bavarikon object record)",
+  "fetched": "2026-09-24",
+  "fetched_by": "LANE N3 csTR (session_017WAe73tDu7XTh9HXBXzHW6)",
+  "items": [
+    {
+      "letter": "1653-12-10",
+      "sender": "Sigismund Schellhammer",
+      "recipient": "Johann Georg Volckamer I",
+      "shelfmark": "H62/TREWBR SCHELHAMMER_SIEGMUND[23",
+      "bavarikon_id": "bav:UBE-TRE-00000BAV80017900",
+      "pages": [
+        {
+          "file": "p1.jpg",
+          "iiif_id": "bav80017900_00001",
+          "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80017900_00001/full/2000,/0/default.jpg",
+          "native_size": "2892x3869",
+          "fetched_size": "2000x2675",
+          "note": "recto: ordinary Latin letter (dateline 'Hamburgi', addressed 'Amplissime Vir Dominorum', signed 'Hamburgi... A.o.R. A ne.im. A.d.n.Rbb'). No cipher content visible at native resolution."
+        },
+        {
+          "file": "p2.jpg",
+          "iiif_id": "bav80017900_00002",
+          "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80017900_00002/full/2000,/0/default.jpg",
+          "native_size": "2892x3885",
+          "fetched_size": "2000x2686",
+          "note": "verso/address side: address block ('Volckamero, Fuernehmen Practico und Medicinae Doctorn zu Nuernberg'), wax seal, and, top left rotated 90 degrees, three separate key blocks (plain alphabet / substitute-letter tables, no drawn glyphs, no running ciphertext)."
+        },
+        {
+          "file": "p2_key_crop_rot.jpg",
+          "iiif_id": "bav80017900_00002",
+          "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80017900_00002/0,0,1450,2200/full/270/default.jpg",
+          "native_region": "0,0,1450,2200 (native pixels, top-left quadrant), rotated 270 degrees for upright reading",
+          "note": "the three key blocks at readable resolution: (1) a 5x5-ish grid 'Kaqnl/lbrnu/mcson' over 'oeqqp/pfxrh'; (2) the 24-letter Latin alphabet (no j/v) 'abcdefghiklm/nopqrstuwxyz' over two rows of substitute letters 'qgeob'/'ptagbez'; (3) a small grid 'agntom/b.onpn/ci.pwqo'. All three are systematic alphabet-to-symbol tables, not an enciphered message -- no clear-text crib, no word-length running block anywhere on either page."
+        }
+      ]
+    }
+  ]
+}

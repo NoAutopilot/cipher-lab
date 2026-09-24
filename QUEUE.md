@@ -4473,7 +4473,21 @@ narrowed hits across all terms after dedup (2 already-known BV1 + 3 notae + 3 ge
 plus the 4 zero-hit-term reruns under wildcards), 1 new row kept (TR-1), 1 copy-free (100% of kept). **Total: 1
 row kept (TR-1), 1 copy-free.**
 
-No check-solved run on TR-1 (scout brief only); not promoted, not decoded, no novelty claim (rule 10).
+**Check-solved 24 Sept 2026 (LANE N3 csTR, session_017WAe73tDu7XTh9HXBXzHW6;
+`ciphers/trew-schellhammer-1653/NOTES.md`): TR-1 closed-negative as a cryptanalysis target.** Both pages viewed
+at full native IIIF resolution (`images/manifest.json`, 2 page images + 1 rotated native-resolution key crop).
+Recto: ordinary Latin letter, no cipher content anywhere. Address side: three key blocks (plaintext-letter
+grids/alphabet-to-substitute-letter tables, no drawn glyphs), confirming the scout's read, but no enciphered
+running text, no clear-text crib, alongside any of them — a key-only leaf, same shape as trew-posthius-1614-18's
+1618 leaf. Six-source protocol not run (brief's conditional: skipped for a keys-only verdict). Catalogue swept
+for other Schellhammer/Volckamer I letters that might carry the matching ciphertext: 37 Sigismund
+Schellhammer->Volckamer I letters (`SCHELHAMMER_SIEGMUND[1`-`[37`, 1647-1656) and 30 letters from two other
+Schelhammer correspondents to the same Volckamer circle, titles reviewed — only this item's title claims
+keys/Geheimschrift; one other 1653 letter from the same sender ([21], 06.08.1653) carries a political report
+enclosure but no cipher claim. The prior scTREW wildcard sweep already covered the whole ~19,563-record Trew
+facet for cipher-term hits (only BV1 and TR-1). Kept as a possible key source for the Nuremberg physicians'
+circle (Volckamer I), not as a target. Not decoded, no novelty claim (rule 10). Requests:
+`api.digitale-sammlungen.de` 6, `www.bavarikon.de` 2 (both well under cap).
 
 ## cyphersolver site re-diff (LANE N3 scout of 24 September 2026)
 
