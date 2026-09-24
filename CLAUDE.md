@@ -222,6 +222,19 @@ Getting the material is most of the work. Try routes in this order and record wh
    Paging past the default 20 rows needs one POST setting the page-size dropdown (`ctl00$main$TopPager$ctl15`)
    to `0` ("All"), with `__VIEWSTATE`/`__EVENTVALIDATION` copied from that same results page. CalmView's text
    search tokenises "cipher" and "cypher" as distinct terms -- query both spellings.
+   **bibliotecadigital.rah.es (Real Academia de la Historia), confirmed 24 Sept 2026:** every plain path
+   (`registro.do`, `catalogo_imagenes/grupo.do`, `resultados_busqueda.do`, and the image endpoint
+   `imagen_id.do` itself) sits behind the site's Anubis JS proof-of-work bot-challenge -- curl always gets a
+   307 to `/.within.website/`, never solves it. The site's own OAI-PMH endpoint (`/oai/oai.do`) is not behind
+   Anubis and answers plain curl. `verb=GetRecord&metadataPrefix=didl` (not the default `oai_dc`, which only
+   gives the `grupo.do` group-viewer link) returns a `didl:Resource` per page image, each `ref` a direct
+   `.../i18n/catalogo_imagenes/imagen_id.do?idImagen=NNNNNNNN` URL -- but that URL is still behind Anubis for
+   curl. A real headless Chromium (`tools/browser_fetch.js`) clears the challenge, but only intermittently
+   (of ~8 attempts one pass, most returned Anubis's own unsolved challenge page, "Anubis could not load its
+   JavaScript. The server may be overloaded."); `tools/browser_fetch.js --binary` (added 24 Sept 2026) retries
+   the navigation, default 3x, until the response's content-type isn't `text/html`, which made five image
+   fetches reliable: `node tools/browser_fetch.js "<imagen_id.do URL>" OUT.jpg --profile DIR --binary`. See
+   `ciphers/rah-canada-1869/NOTES.md` for the worked example.
 2. **A real browser.** Sites that answer curl with 403, 202, a JavaScript challenge or a Cloudflare page
    (HathiTrust, PARES, Spink, TNA Discovery record pages, Yale) usually serve headless Chromium. Use
    `NODE_PATH=$(npm root -g) node tools/browser_fetch.js URL out.html --shot out.png`, which drives the
