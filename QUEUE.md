@@ -4641,3 +4641,76 @@ Full search log per row in the target's own NOTES.md.
 Nomination line posted to ROOM.md for CS2-26 (the one stage-2 `open` verdict); none for CS2-06/-16/-28
 (`blocked`, edition not read this pass) or CS2-17 (`copy-order`, poor scan), per LANE N2 addition (e) and this
 lane's R8/LANE-N3-addition rules.
+
+## Bavarikon round 2 (LANE N3 scout of 24 September 2026)
+
+LANE N3 brief scBAV2 (`.claude/briefs/runs/2026-09-24-lane-n3-scBAV2.md`), following the LANE N2 Bavarikon sweep
+above (BV1) and the LANE N3 Trew sweep (TR-1). Brief: resolve the institution/object-category facet the way BV1's
+sweep left open -- `object_category=Handschrift` plus every archival category the facet list offers, and
+`holding_institution` narrowed to BayHStA, the Staatsarchive, BSB manuscripts, Stadtarchive -- against the same
+13-term list (wildcards this time, per the Trew sweep's tokenisation lesson) plus four terms not run before
+(`occult*`, `"notis arcanis"`, `Geheimalphabet`, `Schlüssel*` "combined with" `Geheim*`).
+
+**Category vocabulary, resolved.** Bavarikon's `object_category` facet has no `Akte` or `Amtsbuch` value. Read off
+a high-volume unfiltered dump (`terms=Urkunde`, 31,461 raw, 21 distinct category values returned), the two
+archival categories are `Urkunde` (charters/deeds) and `Archivgut` (general archival records -- files, register
+books, and Akte-type items alike, confirmed against one example below). Every narrowed query this round used
+`object_category=Handschrift&object_category=Briefe&object_category=Urkunde&object_category=Archivgut` together.
+
+**Institution vocabulary, resolved but not productive.** The same unfiltered dump's `holding_institution` facet
+lists Bayerisches Hauptstaatsarchiv (BayHStA), Staatsarchiv Amberg/Augsburg/Bamberg/Coburg/Nürnberg/Würzburg, and
+eleven Stadtarchive/Stadt- und Stiftsarchive as real facet values on this host. Across all 13 terms run this
+round (wildcarded per the Trew lesson: `chiffr*`, `Chiffre*`, `Geheimschrift*`, `dechiffr*`, `Ziffer*`,
+`Zifferschrift`, `cifr*` [covers `cifra`], `"en chiffre"`, `occult*`, `"notis arcanis"`, `Geheimalphabet`,
+`Schlüssel*`+`Geheim*`) not one of them produced an archive hit that survived opening: the single `Urkunde`-tagged
+result under `Ziffer*` (Stadtarchiv Wasserburg am Inn, `bav:AWA-AKT-00000BAV80058922`, a guarantee-bond deed) is a
+seal description reading "Zifferblatt" (a sundial's dial-face), not cipher; two further single-count archive hits
+(Staatsarchiv Augsburg, Stadtarchiv München) fell outside the Handschrift/Briefe/Urkunde/Archivgut narrow entirely
+(a map and a print) and were confirmed off-category before being dropped unopened. This extends round 1's own
+caveat from a hunch to a tested negative: this host's aggregated full-text OCR does not carry Bavarian
+state/city-archive finding-aid text for any term in this cipher vocabulary, not just "Chiffre"/"Geheimschrift".
+
+**Everything else opened was noise or already known.** `Chiffre*` and `cifra` are strict subsets of `chiffr*` and
+`cifr*` respectively (case/stem variants, same institution set, not re-narrowed). `Zifferschrift`, `"en chiffre"`,
+`"notis arcanis"` and `Geheimalphabet` returned 100% `Buch` (BSB book OCR), zero Handschrift/Briefe/Urkunde/
+Archivgut hits, matching or reproducing round 1's own findings for the terms round 1 already ran. `Ziffer*` and
+`occult*` are both bare dictionary words (German "digit/numeral", Latin "occultus/occulte") and correspondingly
+noisy (20,751 and 6,104 raw); every Briefe-category hit under each was opened and was either a printed edition
+of published correspondence (a 1774 mineralogical-travels volume, a 17th c. theological "Send-Schreiben"
+pamphlet, the printed "Commercium Epistolicum Norimbergense") or a seal/dial-face false positive, not a
+manuscript. `chiffr*`'s and `Geheimschrift*`'s narrowed Handschrift/Briefe hits (12 and 6 respectively) were each
+opened or matched to a round-1 item by shelfmark: four more volumes of the Prey genealogy collection (BSB Cgm
+2290, heraldic "Chiffre" noise, round 1), the Codex Iustiniani ownership-mark item (BSB Clm 28178, round 1), the
+Amalarius "bfk-Geheimschrift" scribal-convention manuscript (Bamberg Msc.Lit.131, round 1), the Stadtfraubas
+periodical, the Reventlow essay manuscript, the E.T.A. Hoffmann/Soden letter (round 1, all three), a music
+manuscript with no locatable cipher content (round 1), four unrelated medieval canon-law/medical/theological
+Latin manuscripts (Clm 2934, 13017, 13033, 13111, Cgm 10 -- the same "cifra"/numeral-in-running-text noise class
+round 1 named), and a 20th c. literary memoir out of period. `Schlüssel*` combined with `Geheim*` (the site ORs a
+multi-word `terms=` value rather than ANDing it -- confirmed by the result count being dominated by `Schlüssel*`
+alone, the ordinary German word for a door/lock key) surfaced only the three already-nominated UBE Erlangen
+items (BV1 x2, TR-1) plus two more printed-book hits, nothing new.
+
+**One genuine curiosity, dropped as already-described.** `dechiffr*` narrowed to one Handschrift hit: Boethius,
+*De institutione arithmetica* (and other texts), Staatsbibliothek Bamberg Msc.Class.6, end 10th/early 11th c.
+(`bav:SBB-KHB-00000SBB00000081`). The catalogue's own content list names two of the codex's contents a "Brief
+über das griechische Zahlenalphabet (sog. 'Bamberger Kryptogramm')" (a letter on the Greek numeral alphabet,
+the so-called "Bamberg Cryptogram") and, separately, a "Dechiffrierung eines Schriftstückes in einem Brief an
+einen schottischen Gelehrten namens Colgu" (a decipherment of a document, in a letter to a Scottish scholar
+named Colgu). This is a named, already-described medieval philological item -- the catalogue text itself uses
+"Dechiffrierung" for the codex's own content, which is the brief's explicit drop criterion ("drop anything
+described as deciphered"). Not correspondence, not pursued further; not check-solved (scout brief).
+
+**Per-host report:** `www.bavarikon.de`: 45 requests (>=3.2 s apart, descriptive User-Agent, no
+challenge/403/429 seen on any of them, consistent with round 1's "curl alone works now" finding).
+`api.digitale-sammlungen.de`: 0 (no copy-free candidate found this round, nothing to verify an image for).
+`github.com`: 0 (no new nomination to exclude-check; everything found either matched a round-1 dropped item by
+shelfmark or was a printed edition, so the existing round-1/round-2-TR exclusion checks already cover it).
+WebSearch: 0.
+
+**Raw/kept/copy-free:** 13 terms run (11 as bare/wildcarded queries, `Chiffre*` and `cifra` folded into
+`chiffr*`/`cifr*`'s superset), 42,748 raw hits summed across terms (dominated by `Ziffer*` 20,751 and `occult*`
+6,104), roughly 60 distinct objects opened or matched to a known shelfmark this round, 0 new rows kept, 0
+copy-free. **Total: 0 new rows (BV1 and TR-1 from the prior two sweeps remain the only Bavarikon-sourced
+nominations).** Full per-term breakdown, facet counts and drop reasons:
+`sources/solver-diffs/2026-09-24-lane-n3-bav2.tsv`. No rows added to `QUEUE-scores.json` this round (nothing to
+score).
