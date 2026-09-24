@@ -1042,3 +1042,115 @@ target to N4 using the sentence already drafted in that section.
 Requests this session: cryptiana.blogspot.com 5 (Blogger JSON feed x2 -- `q=Danzay`, `q=20140` -- the post page,
 the comments feed, and the archive page, all >=1.5 s apart), WebSearch 1. No other host, no login, no decoding,
 no subagents.
+
+## N4 decision (Cryptiana closed), 24 Sept 2026
+
+LANE V N4-decision verifier (Opus), 07:50-07:55 UTC, for the LANE V orchestrator. This session did none of the solving,
+auditing, gap, DECODE or forum work above and did no decoding. Question: now that the Cryptiana forum thread has been
+read ("Toward N4: Cryptiana forum thread"), does the f.35r-36r letter (Danzay to the Cardinal of Lorraine, Copenhagen,
+27 Jan 1557) reach N4?
+
+**Answer: yes. N4 (no prior decipherment located).**
+
+### 1. Was the Cryptiana search sound? Yes.
+
+Checked offline against the files the gap worker saved (`sources/cryptiana/blog/2026_02_reconstruction-of-cipher-used-by.html`
+and `.comments.json`), not re-fetched:
+- **Feed query.** Blogger's `feeds/posts/default?q=` is the blog's own full-text post search. `q=Danzay` gave 1 post and
+  `q=20140` gave 0. WebSearch `site:` found the same single post. The extra `2025/09/` archive hit was opened and grepped:
+  0 `danz`. Any later post on the 1557 letter would contain "Danzay", so the feed query covers it. It would not catch a
+  post that spells the name only "Dançay" or "Dantzay". The prior for that is negligible, because Tomokiyo spells it
+  "Danzay" throughout his page and post.
+- **Post read in full.** The saved page's `post-body entry-content` text matches the quotation in that section word for
+  word. The saved page has no `20140`, `Lorraine`, `Copenh` or `janvier`. Its two `1557` hits are both in the quoted
+  body ("I found one from 1557"; "Danzay's ciphers from 1574-1578 and 1557").
+- **Comments, two ways.** The rendered page shows the literal `No comments:` and has no `comment-thread` or
+  `comment-block` element. The comment feed JSON has `openSearch$totalResults` = "0" and no `entry` key. Both agree.
+
+The section's one interpretive claim also holds: the post announces the key page already covered, which still says
+f.35 is "not deciphered".
+
+### 2. Final-families table re-read adversarially, from convention 1's six sources in order
+
+| convention 1 source | state |
+|---|---|
+| 1. name in a search engine | covered (WebSearch in every audit; 3 more queries this session, Russian) |
+| 2. sender's printed Lettres/Correspondance on IA | covered (Handlingar XI *Correspondance de Charles Dantzai*; Bricka 1901) |
+| 3. calendars and state-paper series | covered (CSP Foreign Mary, CSP Scotland I, Ribier, Danish regesta, Kancelliets Brevbøger 1551-60, Handlingar). CSP Venetian was not searched; it is not principal, as logged |
+| 4. list-post comment threads (Cryptiana, Cipherbrain) | covered, negative (the Cryptiana section above; Cipherbrain has no Danzay post) |
+| 5. DECODE | covered, negative ("DECODE search"; method re-checked in "final families" section 2) |
+| 6. solver repositories | covered, including PR heads |
+| + recipient's edition (Cuisiat 1998) | covered; it prints outgoing letters only |
+| + Danzay specialists (Richard, Rørdam, Delavaud, Daussy 2001/2004/2015, Ryabov) | covered; Ryabov topped up this session (below) |
+| + open indexes, Google Books, phrase search | covered; OpenAlex unreachable today (logged); JSTOR queued |
+
+**The one principal family the table under-covered: Ryabov's newest work.** He is the one active specialist on Danzay's
+ciphers. Semantic Scholar was last asked at 04:45, and nobody checked for anything newer or for his dissertation. This
+session ran one logged pass:
+- **CrossRef, 5 queries** (author Ryabov with Danzay; "Данзе"; "Danzay cipher 1557"; author Ryabov from 2025-06; author
+  Ryabov with France/Denmark/Valois/cipher/Lorraine from 2025). The Danzay or Valois items it found were: Ryabov 2025
+  *Quaestio Rossica* (the 1574/1578 cipher, already logged), Ryabov 2025 *VID* (a letter to Henry III, already logged),
+  Ryabov 2020 (the 1568 *Discours*, already logged), and one item not in this file, **Ryabov 2026** (20 Aug 2026),
+  "The Image of the Valois Monarchy in Protestant Writings during the First Interregnum in the Polish-Lithuanian
+  Commonwealth", doi 10.15826/b978-5-7996-4204-4.17. That paper is about 1573-74, so its date rules it out. Every other
+  Ryabov hit is a different person (mathematics, medicine, forestry).
+- **WebSearch, 3 queries** (Russian). They found the UrFU and press reports of his 2025 decipherment, which name only
+  the letters of 14 Oct 1574 and 28 Feb 1577 to Henry III. They also found **his dissertation** at the UrFU
+  dissertation council (`dissovet2.urfu.ru`, "Рябов_Диссертация.pdf") and the related monograph proposal
+  (naukapublishers.ru 2025, "Russian-French contacts of the second half of the 16th century"). Two independent search
+  summaries give its declared scope as **Russian-French contacts in northern Europe, 1558-1581**, meaning diplomatic,
+  dynastic and economic contacts.
+- **Ruling:** the dissertation is excluded by scope and date, like Daussy 2001 above. A January 1557 Franco-Danish
+  despatch to the Cardinal falls outside 1558-1581 and outside Russian affairs. Independently, the enciphered text of
+  f.35 has no contemporary decipherment. No 1557 key was published before Tomokiyo's of 22 Feb 2026, and Ryabov's own
+  reconstruction is the 1574/1578 cipher. So nobody could have printed a reading of the cipher runs before February
+  2026, except by re-solving the cipher, which none of his work reports. **Limitation:** the PDF itself was not opened,
+  because its host is not on this session's list. The scope comes from search summaries and is graded I, not read.
+  Suggestion, not a gate: before any outreach, the drafting worker fetches the PDF once and greps for `20140`, `1557`,
+  `Лотаринг`, `Lorraine`. A hit reopens the class.
+
+Nothing found lowers the class.
+
+### 3. Decision: N4
+
+Every source in convention 1 and every principal edition, calendar, catalogue, specialist study and project page is
+covered and negative. Rule 10's N4 is met: N3, with the principal editions, catalogues and project pages covered.
+Internal or unpublished work is not excluded. Unread items that remain: Ryabov's dissertation PDF (excluded by scope,
+see above), OpenAlex (unreachable) and the 8 JSTOR rows (queued). None of them blocks N4 under the verifier template.
+
+**Safe sentence (N4):**
+
+> "No prior decipherment located of Charles de Danzay's letter to the Cardinal of Lorraine, Copenhagen, 27 Jan 1557
+> (BnF fr.20140 f.35-36), which carries no contemporary decipherment. It was read here by applying the key
+> S. Tomokiyo reconstructed and published in 2026 (Cryptiana, "Danzay's Ciphers") from the sibling decipherments of
+> f.16, f.24 and f.30, so the result is a key application (a recovery), credited to his reconstruction: on f.35, 509
+> of 638 cipher tokens are at grade H, and on f.36r, 37 of 67. The reading is partial. Search log in AUDIT.md."
+
+**Unsafe sentence:** "We have produced the first decipherment of a previously unread Danzay letter." It uses
+"first" and "previously unread" without the qualifier. It credits the result to us, not to Tomokiyo's key. It hides
+that the reading is partial: about 14 f.35 lines are not continuous French, 70 signs are unkeyed, and the f.35v/f.36r
+join is unread. It also implies a check of unpublished work that N4 does not include.
+
+### 4. Outreach gates (CLAUDE.md Outreach 1-6), as of 07:55 UTC
+
+| gate | state |
+|---|---|
+| 1. verifier class in AUDIT.md | **met** (N4) |
+| 2. second adversarial audit; open-index pass; Google Books; JSTOR rows answered or waived | second audit **met**; open-index pass **met** except OpenAlex (unreachable, logged); Google Books **met**; JSTOR **not met**: **8** Danzay rows open (JSTOR-QUEUE.tsv lines 16-19, 23-26, all `queued`) |
+| 3. safe sentence, prior print stated (Tomokiyo's danzay.htm), AUDIT.md linked | not met: no draft yet (drafting step, outside this brief) |
+| 4. rule 10 wording | **met**: the N4 sentence above, with the qualifier |
+| 5. logged in CONTRIBUTIONS.md before sending | not met: drafting step |
+| 6. verifiable links (repo folder; Gallica `btv1b52521512h` canvases f69-f72; Tomokiyo's danzay.htm) | links exist; not met until a draft carries them |
+
+Gates 3, 5 and 6 are met when the note is drafted, as they were for Gramont. The only gate that is not a drafting step
+is gate 2's JSTOR rows, so ASKS row 33 goes to the owner in the same shape as row 32.
+
+**Postmortem.** No over-claim was found. status.json's grade now reads "N4 (no prior decipherment located)". Its
+"line" field already uses only search-result wording. The final-families section was right to add convention 1's list
+to the table, but it still skipped a check that every specialist named in the table has no newer work. Ryabov publishes
+on Danzay every year, and he had a 2026 item and a dissertation that no section logged. Neither mattered this time,
+but a verifier should re-query each named specialist's newest output (CrossRef by author, from the year of the last
+check) before assigning N4.
+
+Requests this session: api.crossref.org 6 (≥1.5 s apart), WebSearch 3. No other host: no Gallica, no de-crypt.org, no
+cryptiana (its files were read from disk), no logins, no decoding, no subagents.
