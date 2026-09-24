@@ -231,11 +231,17 @@ def md_light(text):
     return "<p>" + t.replace("\n", "<br>") + "</p>"
 
 
-def copy_block(uid, subject, text):
-    full = f"Subject: {subject}\n\n{text}"
-    return (f'<details class="txt"><summary>Text to send</summary><pre class="mail">{E(full)}</pre>'
-            f'<button type="button" class="copy" data-for="{uid}">Copy subject and text</button>'
-            f'<textarea id="{uid}" hidden>{E(full)}</textarea></details>')
+def copy_field(uid, label, value, pre=False):
+    """One labelled value with its own copy button (address, subject or body)."""
+    shown = f'<pre class="mail">{E(value)}</pre>' if pre else f'<code class="val">{E(value)}</code>'
+    return (f'<div class="cf"><div class="cf-head"><span class="cf-label">{E(label)}</span>'
+            f'<button type="button" class="copy" data-for="{uid}">Copy</button></div>{shown}<textarea id="{uid}" hidden>{E(value)}</textarea></div>')
+
+
+def copy_block(uid, to, subject, text):
+    """Three copy boxes: address, subject, body. `to` may be a non-address instruction; it is still copyable."""
+    return ('<div class="cfs">' + copy_field(uid + "-to", "To", to) + copy_field(uid + "-subj", "Subject", subject)
+            + copy_field(uid + "-body", "Body", text, pre=True) + '</div>')
 
 # ---------------------------------------------------------------- readings
 
@@ -278,8 +284,8 @@ def reading_row(r, idx):
     for x in dr[:2]:
         sent_box = (f'<label class="sentbox" data-row="{E(x["slug"])}"><input type="checkbox"> Mark as sent</label>' if x["kind"] == "ready" else "")
         parts.append(f'<div class="dz"><h4>Who to tell</h4><p><b>{E(x["to"])}</b> <span class="chip out-{x["kind"]}">{"ready to send" if x["kind"] == "ready" else "drafted"}</span></p>'
-                     f'<p class="muted small">{E(x["status"])}</p><p><b>Subject.</b> {E(x["subject"])}</p>'
-                     + copy_block(f"cp-{rid}-{slug(x['slug'])}", x["subject"], x["text"]) + sent_box + '</div>')
+                     f'<p class="muted small">{E(x["status"])}</p>'
+                     + copy_block(f"cp-{rid}-{slug(x['slug'])}", x["to"], x["subject"], x["text"]) + sent_box + '</div>')
     links = {"folder": r["link"], "audit": r["link"].rstrip("/") + "/AUDIT.md"}
     if m:
         links.update({k: v for k, v in m[0]["links"].items() if v and not v.lower().startswith("none")})
@@ -313,7 +319,7 @@ def desk_item(x):
             f'<input type="checkbox" id="tick-{E(x["slug"])}" aria-label="done"{" disabled" if waiting else ""}>'
             f'<div><div class="tsubj">{E(x["subject"])}</div><div class="tto">To: {E(x["to"])}</div>'
             + (f'<div class="tmeta warn">{E(x["status"])}</div>' if waiting else (f'<div class="tmeta ask-meta">{E(x["status"])}</div>'))
-            + copy_block(uid, x["subject"], x["text"]) + '</div></li>')
+            + copy_block(uid, x["to"], x["subject"], x["text"]) + '</div></li>')
 
 
 desk_ready = "".join(desk_item(x) for x in ready) or '<li class="muted">nothing waiting on you right now</li>'
@@ -385,9 +391,14 @@ section[hidden]{display:none}
 .dz p{max-width:70ch} .memo p{max-width:70ch} .rating{font-weight:600} .rating.r-sub{color:var(--good)} .rating.r-conf{color:var(--accent)} .rating.r-form{color:var(--muted)}
 .links a{margin-right:12px}
 .sentbox{display:inline-flex;gap:8px;align-items:center;margin-top:10px;font-weight:600;cursor:pointer} .sentbox input{width:18px;height:18px;accent-color:var(--good)} .sentbox.done{color:var(--good)}
-details.txt{margin-top:6px} details.txt summary{cursor:pointer;color:var(--accent);font-weight:600}
+.cfs{display:grid;gap:10px;margin-top:8px}
+.cf{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 10px}
+.cf-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:4px}
+.cf-label{font-size:0.74rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted)}
+.val{font-family:inherit;font-size:0.95rem;overflow-wrap:anywhere;user-select:all}
+.cf .mail{margin:0;border:0;padding:6px 0 0;background:transparent}
 .mail{white-space:pre-wrap;overflow-wrap:anywhere;font-family:inherit;font-size:0.9rem;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:12px 14px;margin:8px 0;max-height:420px;overflow:auto}
-.copy{appearance:none;font:inherit;font-size:0.85rem;font-weight:600;background:var(--accent);color:#fff;border:0;border-radius:4px;padding:7px 12px;cursor:pointer}
+.copy{appearance:none;font:inherit;font-size:0.8rem;font-weight:600;background:var(--accent);color:#fff;border:0;border-radius:4px;padding:5px 10px;cursor:pointer;flex:none}
 .others{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:0.92rem}
 .tasks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .task{display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
