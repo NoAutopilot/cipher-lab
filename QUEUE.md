@@ -3507,3 +3507,127 @@ citing it extensively was read in full and contains zero mentions of cijfer/gehe
 pass (budget spent on the four required targets). Firm nominations this hour: HU4, HU5, HU6, HU8 (4 open; 2
 copy-free/likely-copy-free [HU4, HU5], 1 copy-order [HU6], 1 unresolved [HU8]). Full search logs, verbatim
 edition quotes and images in each target's own NOTES.md/images/.
+
+## Florence, Dieci di Balìa Responsive (LANE N2 probe of 24 September 2026)
+
+Brief: `.claude/briefs/runs/2026-09-24-lane-n2-flFI.md`. Access-and-literature probe, not check-solved: no
+verdicts, no nomination lines. 32 DECODE records, ids 3758-3789, `sources/decode/records-non-decrypted-2026-09-24-diff.tsv`
+rows with `holder_raw` starting "Florence", `held_by` none: filza 7 (6 records, ids 3758-3763), filza 8 (7
+records, ids 3764-3770, in range but outside this brief's three named filze), filza 9 (17 records, ids
+3771-3787), filza 22 (2 records, ids 3788-3789). All "Non-decrypted", Latin, DECODE gives thumbnails only. The
+row-id prefix **FL** stays reserved for this fondo; no rows scored or promoted this pass (probe brief, not
+scout/check-solved).
+
+**(1) No full-size image of any of the three filze on a public server found or online now.**
+- **ASFi `archividigitali` (PAD, the only ASFi image viewer), reached, checked against its own fondi list.**
+  Fetched `archividigitali/fondi/` fresh (`archiviodistatofirenze.cultura.gov.it`, 2 requests, >=2s apart,
+  descriptive UA, HTTP 200 both). Its 33 digitised complessi are listed by name; **Dieci di Balìa is not among
+  them.** The closest fondo is **Signori, Legazioni e commissarie (1393-1530)**, the outgoing instruction
+  registers to ambassadors -- a different fondo (letters Florence *sent*, not the Responsive letters it
+  *received*) confirmed already digitised by `florence1414/NOTES.md` in the Bourdeau clone below, which fetched
+  Legazioni e commissarie registers 5-6 page by page and found them all in clear, no cipher. Matches and extends
+  the prior LANE N scout finding at QUEUE.md "Italian state archives, Florence and Milan" (`archividigitali`'s
+  free-text search control-failed against "Giovio"): here the *fondo list itself*, not just the search box,
+  confirms Dieci di Balìa is out of scope for this project.
+- **SIAS (`sias-archivi.cultura.gov.it`), unreachable this session.** Root and the specific Dieci di Balìa
+  record URL surfaced by WebSearch both failed -- `SSL_ERROR_SYSCALL` on the first attempt, connection timeout
+  on the one permitted retry -- despite the same host being reported reachable and productive (18 requests, HTTP
+  200) by the LANE N scout earlier the same day (QUEUE.md "Italian state archives, Florence and Milan"). Logged
+  as a transient/session-specific block, not a site-side change; the next worker on this host should retry once
+  more before assuming it is down.
+- **Internet Culturale, reached, blocked by a challenge.** `www.internetculturale.it` answers 200 at the root,
+  but both attempts to run its search (`/it/16/search?instance=magindice&q=...`) returned a math-equation CAPTCHA
+  page, not results. Per the good-citizen rule, stood down after the one retry; not swept further. Internet
+  Culturale in any case aggregates library manuscript/printed catalogues (Manus, Edit16, OPAC SBN), not state
+  administrative archives, so it is an unlikely home for Dieci di Balìa material even if reachable.
+- **MIA (medici.org, ex-BIA), blocked by a login wall,** confirming the prior LANE N scout finding the same
+  day (`mia.medici.org` -> `/Mia/user/LoginUser.do`); MAP/MIA is not in CLAUDE.md's credentialed-hosts list, so
+  out of scope without a person-supplied account.
+- **A university project does hold something, but not the letters: Yale Dataverse, Ilardi microfilm, reel 58
+  only has Gabbrielli's *key* volume, not the ciphertext filze.** (Found via `dbourdeau/cyphersolver`'s
+  `florence1414/NOTES.md`, which already checked this route on 23 Sept 2026: "Only three Ilardi reels are
+  digitised: 58 (Gabbrielli vol. I, Dieci 1424-1530), 207 (Carte Strozziane III 249), 1503 (Siena lettere
+  cifrate). Vol. II and the Signori letters are not filmed online.") Confirmed live: reel 58 is
+  `doi:10.60600/YU/XKVOWE` on `dataverse.yale.edu`, CC0, openly downloadable (54 single-page PDFs, ~40 MB zip),
+  described in its own metadata as "about 150 ciphers; I scanned the first 45, they are arranged in
+  chronological order" -- this is the *key* volume ("Chiavi delle cifre delle lettere ai Dieci di Balìa dal 1424
+  al 1530, volume 1," compiled by abbé Pietro Domenico Gabbrielli, 1863-64), not the letters themselves. No
+  Yale/Ilardi reel holds page images of the Responsive letters.
+- **Conclusion for (1): none of filza 7, 9 or 22 has a public full-size image online from any host tried.**
+  Both check-solved-grade prior findings (LANE N scIT1's ASFi/MIA/SIUSA sweep) and this pass's fondi-list and
+  Dataverse checks agree. A copy of any of these three filze needs a request to ASFi itself (`REQUEST.md`
+  route), not a digitisation route.
+
+**(2) Who put these on DECODE, and why -- no HistoCrypt paper found; the active project is Bourdeau's, using
+19th/20th-century keys, not a DECODE-affiliated study.** WebSearch for "Dieci di Balìa" cifra, "Dieci di Balia"
+cipher, "Florentine diplomatic cipher" 1400s, and the named HistoCrypt authors (Lasry, Megyesi, Kopal, Láng,
+Héder) combined with Florence/Dieci di Balìa returned nothing specific to this fondo -- no HistoCrypt paper, no
+named DECODE project page, for Dieci di Balìa Responsive. What *is* active: `dbourdeau/cyphersolver` (grepped,
+not cloned beyond the shallow depth already on disk from the earlier LANE N2 pass) carries two live targets in
+this exact fondo, both from the *same* 1424 correspondence:
+- `florence1429/` (DECODE R3754, `Dieci_di_Balia_Responsive_2_171`, filza 2 -- outside this brief's three filze
+  but the working example): Galeotto Fibindacci da Ricasoli to the Signoria, Urbino, early 1425 (catalogued
+  1424 Florentine style). Read in part this session (18 Sept 2026) using Gabbrielli's own 1863 interlinear
+  glosses as seeds; status "Solved" on the project's own index, "never printed" per the project (rule-10 wording
+  not adopted here, per this fondo's own rule 10).
+- `florence1414/` (23 Sept 2026, status "in progress, blocked"): the *next* target up, letters catalogued
+  "Cifra Decemviri di Balìa 1414" in Meister 1902 -- traced by that worker to shelfmarks *before* the current
+  Dieci di Balìa Responsive series starts (which the note fixes as beginning only in January 1424), so the 1414
+  letters are not on DECODE at all; blocked on ASF photographs.
+
+Neither Bourdeau target names filza 7, 9 or 22 specifically (grepped for "filza 9", "filza 22", "Responsive 9",
+"Responsive 22", "Responsive_9", "Responsive_22": zero hits in the clone). `aaymeloglu/unsolved-ciphers` has no
+Florence target at all (only catalogue-level DECODE-sweep mentions). So the 30 records in filze 7, 9, 22 (minus
+filza 8, out of this brief's scope) are, as the brief states, held by no solver repo -- consistent with, not
+contradicted by, the adjacent-filza work above.
+
+**(3) The Dieci's cipher keys for the period are extant, in part published and in part digitised, and filza 7
+specifically is named in the published/digitised key -- filze 9 and 22 are not confirmed either way.**
+Gabbrielli's 1863-64 manuscript key volume ("Alfabeti che servono a spiegare le lettere in cifra del carteggio
+dei Dieci di Balìa") is the primary key source for this fondo: printed in part by Aloys Meister, *Die Anfänge
+der modernen diplomatischen Geheimschrift* (Paderborn, Schöningh, 1902), analysed again by a modern scholar
+named only as "Somogyi 2016" in the Bourdeau notes (not independently verified this pass -- no full citation
+found), and **filmed complete for volume 1 on the open Yale Dataverse** (above, reel 58). Per
+`florence1429/NOTES.md` (which read the actual PDF, `keys/58-3.pdf`), **page 1 of that volume is explicitly
+headed "Cifra di Galeotto Fibindacci da Ricasoli, carteggio dei X di Balìa, filze 1, 2, 3, 7, an. 1424"**, citing
+specific letters used from filze 1, 2 and [3] in the margin (filza 7 is named as part of the same
+correspondence/cipher but no specific filza-7 letter numbers are given in what that worker transcribed); **pages
+3-4 of the same volume are two further, separate ciphers ("Johannes" and "Zaninus et Conradinus," Latin
+syllabic, 1424) also attributed to filza 7.** None of this has yet been checked against this brief's actual
+filza-7 DECODE records (ids 3758-3763, old numbers 059/061/066/070/071/102) to see whether any of those specific
+items are letters these three keys apply to -- that cross-check (reading `keys/58-3.pdf` and Gabbrielli's margin
+notes against the six filza-7 item numbers) is the concrete next step for whoever picks up filza 7. Gabbrielli's
+own volume II (letter-by-letter sender index, per Meister p. 45, per `florence1414/NOTES.md`) is not online
+anywhere found. Filze 9 and 22 postdate 1424 (DECODE's own "1401-1500" date field is not informative enough to
+place them); Gabbrielli's key volume covers the fondo chronologically out to 1530 across "about 150 ciphers," of
+which only "the first 45" are in the reel-58 PDF set (pages 5-54 not read this pass) -- so a key for filza 9
+and/or 22 is plausible but **not confirmed either way**; the pages that would settle it were not opened this
+session (out of this probe's budget).
+
+**Per-host counts.** archiviodistatofirenze.cultura.gov.it: 2 (fondi list, >=2s apart, both 200; separately, 3
+more from the earlier `dieci-di-balia` inventory-page and `archivi-digitalizzati` nav-page checks in this same
+pass, all 200). sias-archivi.cultura.gov.it: 2 (both failed: SSL error, then timeout). www.internetculturale.it:
+2 (200 root; 1 search attempt, CAPTCHA). mia.medici.org: 1 (login wall, matches prior finding, not re-swept).
+dataverse.yale.edu / doi.org: 2 (WebFetch, citation + dataset metadata page; not a curl host, not counted against
+the good-citizen cap). WebSearch: 8 queries. WebFetch: 5 (2 ASFi pages already counted above were curl not
+WebFetch; the internetculturale.it CAPTCHA fetch was curl; the two MAP/dataverse fetches, plus one PDF text
+extraction of a NAM journal article already on disk from WebFetch, plus one dbourdeau GitHub Pages index fetch).
+github.com: 2 shallow clones (`dbourdeau/cyphersolver`, `aaymeloglu/unsolved-ciphers`), grepped only, not
+committed.
+
+**Secondary literature, general context only.** Marco Vito, "La crittografia diplomatica e militare nell'Italia
+del Quattrocento," *Nuova Rivista Interdisciplinare della Società Italiana di Storia Militare* (NAM), Anno 6
+(2025), Fascicolo N. 21 "Storia Militare Medievale" (Marzo), pp. 265-267: "La maggior parte delle fonti trattano
+di dispacci ai Dieci di Balia, molte responsive anche risalenti al secondo quarto del XV secolo, risultano
+spesso in cifra" -- a general survey statement (monoalphabetic ciphers with homophones, nulls, bigram signs,
+nomenclators used in direct correspondence with Lorenzo de' Medici) with archival sources cited as ASFi *MAP*
+(Mediceo Avanti il Principato) filze, not Dieci di Balìa Responsive specifically, and no filza numbers or
+decipherment for this fondo. No decipherment or key claim to correct; recorded as a lead for period-cipher-design
+context only, not a source for filza 7/9/22 themselves.
+
+Caveats: (1) this is a probe, not a check-solved sweep or a solver pass -- nothing here is a stage-2 verdict or
+a novelty class, and rule 10 wording does not apply because nothing was read. (2) The cross-check of filza 7's
+six DECODE item numbers against Gabbrielli's margin notes in `keys/58-3.pdf`, and reading Gabbrielli reel-58
+pages 5-54 for filza 9/22 keys, are both unstarted and are the concrete next steps, not done here (budget). (3)
+Filza 8 (7 records, same id range) was left untouched -- named "and others" in the brief but not one of the
+three filze the questions ask about.
