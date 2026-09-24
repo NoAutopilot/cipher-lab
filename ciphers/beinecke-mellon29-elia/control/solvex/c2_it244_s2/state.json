@@ -1,0 +1,62 @@
+{
+ "control": "ciphers/beinecke-mellon29-elia/control/solvex/plain_vanz_260000.txt",
+ "corpus": [
+  "tools/data/it16/alcuneletteredip00ferr.txt",
+  "tools/data/it16/delleletterefam02seghgoog.txt",
+  "tools/data/it16/lettereinedited00tassgoog.txt",
+  "tools/data/it16/lettereinedited01cibrgoog.txt",
+  "tools/data/it16/lettereineditedi01carouoft.txt"
+ ],
+ "N": 244,
+ "K": 31,
+ "seed": 2,
+ "restarts": 8,
+ "iters": 40000,
+ "order": 3,
+ "uni_weight": 1.0,
+ "rounds": {
+  "0": {
+   "cribs": {}
+  },
+  "1": {
+   "cribs": {
+    "s20": "c",
+    "s4": "o",
+    "s14": "n",
+    "s18": "t",
+    "s1": "i",
+    "s13": "n",
+    "s23": "u",
+    "s2": "i",
+    "s6": "a",
+    "s17": "t"
+   }
+  },
+  "2": {
+   "cribs": {
+    "s20": "c",
+    "s4": "o",
+    "s14": "n",
+    "s18": "t",
+    "s1": "i",
+    "s13": "n",
+    "s23": "u",
+    "s2": "i",
+    "s6": "a",
+    "s17": "t",
+    "s29": "h",
+    "s8": "a",
+    "s3": "o",
+    "s12": "r",
+    "s0": "i",
+    "s15": "s",
+    "s9": "e",
+    "s7": "a",
+    "s10": "e",
+    "s16": "s",
+    "s24": "d",
+    "s11": "r"
+   }
+  }
+ }
+}

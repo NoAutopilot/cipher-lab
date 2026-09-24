@@ -1,0 +1,6 @@
+# round 1 (solvEX reader): from "ui mando" (14-15), "e uirtu uostre" (90-97), "seruitore" (222-230), "debile" (38-43),
+# "bocca" (122), "abenche" (103), "ui bascio" (151), "seruitio" (5), "che con", "quelle", "mando/mani/maggio"
+s11=u s0=i s23=b s26=t
+s22=c s27=h s29=q s24=m s21=d
+# round 2: "ariuare/alli/signoria/suiscerata" (s5), "sonetto/tante/uostra" (s20), "uostro/uirtu/seruitore" (s19)
+s5=a s20=t s19=t

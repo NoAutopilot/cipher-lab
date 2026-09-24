@@ -1,0 +1,18 @@
+{
+ "control": "ciphers/jan-van-nassau-1572-75/j7/control_plain.txt",
+ "corpus": [
+  "ciphers/jan-van-nassau-1572-75/j7/corpus_T.txt"
+ ],
+ "N": 540,
+ "K": 82,
+ "seed": 1,
+ "restarts": 8,
+ "iters": 40000,
+ "order": 3,
+ "uni_weight": 1.0,
+ "rounds": {
+  "0": {
+   "cribs": {}
+  }
+ }
+}

@@ -241,3 +241,9 @@ Several ff.1v-2r words end alike (`leor`, `hyor`, `olor`), consistent with a nom
 Suggestions (one line each, not done): a real Latin corpus (Latin Library or an alchemical Latin text from
 archive.org) to control the Latin homophonic design; test the twelve f.2v words as a codeword list keyed to their
 zodiac labels (known plaintext per line) under a progressive/Alberti design with the f.2v labels as cribs.
+
+**Model-in-the-loop crib rounds (solvEX, 24 Sept 2026, controls only; table in ciphers/fr2933-salviati-1525/NOTES.md
+"Model-in-the-loop crib rounds (solvEX)").** Italian homophonic controls at this item's N=244, K=31: the loop adds 15
+points (83.6 -> 98.4, own plain_it.txt, seed 1) and 13.5 points (65.6 -> 79.1, Vanzolini chars 260,000 on, seed 2).
+24-restart blind runs of the same instances stay at 83.6 and 65.6. A 33% decode gave the reader nothing to crib. Files
+`control/solvex/`. The target was not run (not in the brief); status stays closed-negative.

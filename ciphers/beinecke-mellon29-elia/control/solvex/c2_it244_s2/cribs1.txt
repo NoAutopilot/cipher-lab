@@ -1,0 +1,3 @@
+# round 1 (solvEX reader): the one stretch read with confidence, "continuo inuitato" (positions 148-163);
+# every sign in it fixed at its letter there
+s20=c s4=o s14=n s18=t s1=i s13=n s23=u s2=i s6=a s17=t

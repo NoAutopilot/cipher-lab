@@ -1,0 +1,46 @@
+# round 0: N=244 K=31 cribs=0 best score -526.6 (-2.158/symbol); restarts [-526.6, -526.6, -526.6, -527.5, -562.5, -608.1, -615.3, -618.0]
+# stream (letters, confidence digit below, * = crib):
+seruiziouostrouimandounsonettocheconledetilescalemisonporzatodeariuareallitalcon
+45554344544454554444444444444444544455444444444454444454535444555554554545444444
+
+idalletanteuirtuuostreatercheindarnoeconlatoccadellasuiscerataseruituuitascioque
+44544545445445454444545454444544554444445544445455544544455444455444454444444555
+
+llediuinemanidipossamtrorealliuilidimaggiomdxldiuostrasignoriaseruitoretattolami
+44444444544444454444445445554554444445555444344444445544544545455444455454444444
+
+oegr
+4454
+
+# signs by frequency: sign count letter conf  (positions of first 3 occurrences)
+ s4   17 e 5   [1, 32, 37]
+ s8   13 o 4   [13, 24, 29]
+s13   13 n 4   [18, 22, 25]
+ s6   13 a 5   [58, 63, 82]
+ s1   12 i 4   [4, 6, 150]
+ s5   12 a 4   [17, 46, 67]
+s10   12 l 4   [42, 47, 72]
+ s7   11 o 4   [7, 9, 20]
+s21   11 d 4   [19, 38, 61]
+s22   10 c 4   [30, 33, 45]
+ s0   10 i 4   [41, 50, 80]
+s18   10 r 5   [56, 64, 93]
+s12    9 u 5   [3, 8, 14]
+s19    9 t 4   [28, 59, 86]
+s15    9 s 4   [44, 98, 135]
+s11    8 u 4   [21, 91, 96]
+ s3    8 e 4   [26, 39, 43]
+s23    8 t 4   [40, 74, 103]
+s24    7 m 4   [16, 49, 169]
+s16    6 s 4   [0, 10, 23]
+ s2    6 i 5   [15, 65, 73]
+ s9    6 l 5   [36, 71, 120]
+s17    5 r 5   [2, 12, 68]
+s20    4 t 4   [11, 27, 89]
+s25    4 g 5   [198, 199, 216]
+s14    3 r 4   [105, 184, 243]
+s26    2 z 3   [5, 57]
+s27    2 h 4   [31, 107]
+s28    2 p 5   [54, 175]
+s29    1 q 5   [157]
+s30    1 x 3   [204]

@@ -1,0 +1,5 @@
+# round 1 (solvEX reader): the one stretch read with confidence, "continuo inuitato" (positions 148-163);
+# every sign in it fixed at its letter there
+s20=c s4=o s14=n s18=t s1=i s13=n s23=u s2=i s6=a s17=t
+# round 2: "(e li) hanno" 143-147 (s29 s8 s3); "intrinseca e stretta sua" 179-199 (s12 s0 s15 s9 s7 s10 s16 s8); "grande" 221-226 (s11 s24)
+s29=h s8=a s3=o s12=r s0=i s15=s s9=e s7=a s10=e s16=s s24=d s11=r

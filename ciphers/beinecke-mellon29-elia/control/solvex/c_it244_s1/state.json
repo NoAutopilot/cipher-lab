@@ -1,0 +1,51 @@
+{
+ "control": "ciphers/beinecke-mellon29-elia/control/plain_it.txt",
+ "corpus": [
+  "tools/data/it16/alcuneletteredip00ferr.txt",
+  "tools/data/it16/delleletterefam02seghgoog.txt",
+  "tools/data/it16/lettereinedited00tassgoog.txt",
+  "tools/data/it16/lettereinedited01cibrgoog.txt",
+  "tools/data/it16/lettereineditedi01carouoft.txt"
+ ],
+ "N": 244,
+ "K": 31,
+ "seed": 1,
+ "restarts": 8,
+ "iters": 40000,
+ "order": 3,
+ "uni_weight": 1.0,
+ "rounds": {
+  "0": {
+   "cribs": {}
+  },
+  "1": {
+   "cribs": {
+    "s11": "u",
+    "s0": "i",
+    "s23": "b",
+    "s26": "t",
+    "s22": "c",
+    "s27": "h",
+    "s29": "q",
+    "s24": "m",
+    "s21": "d"
+   }
+  },
+  "2": {
+   "cribs": {
+    "s11": "u",
+    "s0": "i",
+    "s23": "b",
+    "s26": "t",
+    "s22": "c",
+    "s27": "h",
+    "s29": "q",
+    "s24": "m",
+    "s21": "d",
+    "s5": "a",
+    "s20": "t",
+    "s19": "t"
+   }
+  }
+ }
+}

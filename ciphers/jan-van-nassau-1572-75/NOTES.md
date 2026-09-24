@@ -760,3 +760,8 @@ No key_body.tsv and no body decode job were written, because no value reaches S 
   printed Nassau or Hessian correspondence of the 1570s on IA) would strengthen the model. It would not change the
   control's verdict at this length without more ciphertext in the same key.
 - Requests: none. No network used, no subagents.
+
+**Model-in-the-loop crib rounds (solvEX, 24 Sept 2026; table in ciphers/fr2933-salviati-1525/NOTES.md).** J7's held-out
+plaintext and corpus_T, but a simple homophonic design (N=540, K=82), not J7's nomenclator design (not rerun: 16 x
+400k iterations of nomenclator_anneal.py). Blind 94.4/88.3/90.7%. The loop on seed 2 went 88.3 -> 95.9 -> 97.0, and
+24 blind restarts reach 95.9: **no gain beyond compute** at this N and K. Nothing here bears on the 5549 body.

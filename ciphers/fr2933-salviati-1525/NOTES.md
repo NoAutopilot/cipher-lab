@@ -485,3 +485,55 @@ A key search (LANE R5 B, section above) found no Salviati 1525-26 key in eight s
 Suggestion (not spawned): a cheaper route to 2,800 tokens is one script-plus-one-pass transcription (classifier call confirmed by a
 single reader, no blind second pass) for f.55v-f.57v, used only to test cm at N; a hit there would then justify second passes. Or a
 key: the Sessa/Clement VII 1525 treaty cipher B noted (Kolosova Ko.1, `sources/cryptiana/web/spanish2C.htm`) is a design to compare.
+
+## Model-in-the-loop crib rounds (solvEX)
+
+Worker solvEX (Opus, cap $15, session_01XXo5gDVwAEHgVUbkSW74Dr), 24 Sept 2026 19:47-19:58 UTC. Brief
+`.claude/briefs/runs/2026-09-24-solvex-model-in-the-loop.md`. Disk only, no hosts, no subagents. **Controls only; the
+target was not touched** (the brief's gate for the target step is a gain of 15 points or more on control (a), and (a) is
+at its ceiling). No reading of fr.2933; grades stay H0 C0 S0 M0 I0.
+
+**Question.** Does a model reading the partial decode and proposing sign=letter cribs, re-annealed with them fixed, beat
+`tools/homophonic_anneal.py` run blind on a matched control? **Method.** New `tools/crib_rounds.py` (test
+`tools/tests/test_crib_rounds.py`) makes the control, keeps plaintext and key in `hidden.json`, which the reader never
+opened, shows the decode (`--view R`: letters above sign ids), re-anneals with the cumulative crib file fixed, and
+`--score` prints numbers only. Settings as in the earlier controls: order 3, 8 restarts x 40,000 iterations. At most 12 cribs a
+round, taken only from words the reader was sure of (e.g. "ui mando", "e uirtu uostre", "debile", "ui bascio",
+"gnedigen herren", "uerstanden", "unachtsamkeit", "continuo inuitato"), each crib file giving its reason. The rounds
+use the lowest-scoring or mid-range seed, named in the table, because a 99% seed leaves nothing to gain.
+**Compute check:** the same instance, blind, with 24 restarts (the three rounds' total restarts).
+
+| control | N | K | blind, seeds 1/2/3 | instance | round 0 -> 1 -> 2 (letter %) | cribs right/wrong per round | blind, 24 restarts |
+|---|---|---|---|---|---|---|---|
+| (a) Italian, Vanzolini chars 200,050 on (plain_vanz_200000.txt), 5 it16 corpora | 720 | 36 | 99.7 / 99.7 / 99.7 | none | ceiling: 0.3 points available, no round run | - | - |
+| (b) German, J7's held-out Groen IV CDXLIV (`j7/control_plain.txt`), corpus `j7/corpus_T.txt`, simple homophonic (not J7's nomenclator design) | 540 | 82 | 94.4 / 88.3 / 90.7 | s2 | 88.3 -> 95.9 -> 97.0 | 5/0, 2/0 | **95.9** |
+| (c) Italian, Mellon's plain_it.txt | 244 | 31 | 83.6 / 88.5 / 94.7 | s1 | 83.6 -> 98.4 -> 98.4 | 8/1, 3/0 | **83.6** |
+| (c2) Italian, Vanzolini chars 260,000 on (fresh; the (c) plaintext had been read), same corpora | 244 | 31 | 33.2 / 65.6 / 90.2 | s2 | 65.6 -> 79.1 -> 79.1 | 10/0, 12/0 | **65.6** |
+| (c2) same | 244 | 31 | | s1 | 33.2, reader found no word it was sure of, 0 cribs | 0/0 | - |
+
+(Other seeds of (c) and (c2) were not looped. Once the reader has read a plaintext through one seed's decode, a second
+seed of the same plaintext is no longer blind.)
+
+**Verdict (controls only).**
+- **Italian, N=244, K=31: the loop adds 15 points (c) and 13.5 points (c2) on a matched control.** In both it gives
+  what 3x blind compute does not (83.6 and 65.6 stay put at 24 restarts). More search converges on the same wrong key (the
+  top restarts agree), and a reader who spots two or three words moves it off that key. 29 of 30 new
+  cribs were right in those rounds; the one wrong crib (round 1 of (c)) cost nothing visible.
+- **German, N=540, K=82: no gain beyond compute.** Round 1's +7.6 equals what 24 blind restarts reach (95.9); round
+  2 added 1.1 more.
+- **Italian, N=720, K=36: no room** (99.7% blind). The design Salviati f.54r would have if it were plain homophonic
+  is read without help, so the loop cannot change the negative on record for that model.
+- **Where the loop does nothing:** at 33% (c2 s1) the decode has no word the reader can be sure of, so no cribs
+  and no gain. When round-2 cribs were right but only confirmed signs the decode already had right ((c2) round 2, 12/12), the
+  gain was 0. The gain comes from the first few corrections of wrong signs, and it needs a decode already at about 65% or more.
+- One run each, one reader. This is a small sample, not a measured curve.
+
+**Target step: not run** (gate: (a) gain >= 15 points; (a) has 0.3 points of headroom). Since cm and vi (worker P) are
+the untested and tested-negative Salviati models, a loop experiment that could matter for this target needs a
+control of the **cm** design at N=720 (worker P: 22-67% blind), where decodes sit in the band the loop helped. That
+needs `crib_rounds.py` extended to the interleaved row pattern of `control/codemark_curve.py`. Suggestion, not done.
+
+Files: `control/solvex/{a_it720,b_de540}_s{1,2,3}/` (cipher.tsv, hidden.json, state.json, round*.json/txt,
+cribs*.txt, scores.tsv, blind_24restarts.json), Mellon's in `ciphers/beinecke-mellon29-elia/control/solvex/`. Regenerate
+any round with `python3 tools/crib_rounds.py --dir DIR --round R --cribs DIR/cribsR.txt` (deterministic by seed) and
+`--score`. Requests: none.

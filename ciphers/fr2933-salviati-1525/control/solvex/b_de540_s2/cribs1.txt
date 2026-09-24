@@ -1,0 +1,3 @@
+# round 1 (solvEX reader): "herren/haben/sachen/seither/uerhoffen" (s56), "schaffen/uerhoffen/manchfaltiger" (s73),
+# "schreiben/und ich/manchfaltiger" (s63), "uerstanden/dem almechtigen" (s39), "zustandt/dancken/so langsam/unachtsamkeit" (s48)
+s56=h s73=f s63=c s39=d s48=a

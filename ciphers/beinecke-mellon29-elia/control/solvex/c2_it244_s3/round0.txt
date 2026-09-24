@@ -1,0 +1,46 @@
+# round 0: N=244 K=31 cribs=0 best score -573.9 (-2.352/symbol); restarts [-573.9, -588.0, -588.4, -591.0, -596.6, -597.8, -606.1, -612.2]
+# stream (letters, confidence digit below, * = crib):
+diusgiocrisostomepanchesecendochhaimellomagnidicoedamesissimoilsignordietroareti
+12111421123132234223114141451211134342213313222114223432332312212131114222221424
+
+nodagmaguidicesigdordietrelagrandamadeleimmertalerareuirtusuemihannocontinuoinui
+31121321142214321121124224221233223312242334123221222142211143212532123223112512
+
+tateacolligarmiinlaintrinsecaestrettasuaamicipiaelendelloauergrandeolligoamaestr
+22243112221223445224322253413212242221123341222323251433121211135122324113324122
+
+ocon
+2123
+
+# signs by frequency: sign count letter conf  (positions of first 3 occurrences)
+s19   13 m 3   [15, 35, 40]
+ s0   12 i 2   [9, 46, 55]
+ s1   11 i 4   [5, 34, 70]
+s20   11 c 1   [7, 20, 25]
+ s7   11 a 3   [33, 41, 110]
+s21   10 g 1   [4, 42, 65]
+ s5   10 o 2   [6, 14, 29]
+ s3   10 o 1   [11, 39, 48]
+s13   10 n 3   [19, 43, 66]
+ s9   10 e 4   [24, 49, 77]
+s22   10 l 2   [37, 38, 62]
+s23    9 u 1   [2, 88, 133]
+ s4    9 e 4   [16, 22, 26]
+ s8    9 a 2   [18, 83, 86]
+s10    9 e 2   [71, 117, 128]
+s11    9 r 2   [73, 104, 109]
+ s2    8 i 2   [1, 44, 61]
+s12    8 r 1   [8, 68, 76]
+s15    7 s 1   [3, 23, 63]
+s16    7 s 3   [10, 12, 54]
+s18    7 t 2   [13, 72, 103]
+s14    7 n 5   [27, 145, 157]
+ s6    7 a 2   [51, 75, 107]
+s17    7 t 2   [78, 125, 160]
+s24    6 d 1   [0, 28, 97]
+s25    4 d 2   [45, 50, 90]
+s26    4 l 3   [209, 214, 215]
+s27    3 d 1   [69, 82, 100]
+s28    2 p 2   [17, 205]
+s29    2 h 1   [21, 143]
+s30    2 h 1   [31, 32]

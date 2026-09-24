@@ -1,0 +1,22 @@
+{
+ "control": "ciphers/fr2933-salviati-1525/control/plain_vanz_200000.txt",
+ "corpus": [
+  "tools/data/it16/alcuneletteredip00ferr.txt",
+  "tools/data/it16/delleletterefam02seghgoog.txt",
+  "tools/data/it16/lettereinedited00tassgoog.txt",
+  "tools/data/it16/lettereinedited01cibrgoog.txt",
+  "tools/data/it16/lettereineditedi01carouoft.txt"
+ ],
+ "N": 720,
+ "K": 36,
+ "seed": 1,
+ "restarts": 8,
+ "iters": 40000,
+ "order": 3,
+ "uni_weight": 1.0,
+ "rounds": {
+  "0": {
+   "cribs": {}
+  }
+ }
+}

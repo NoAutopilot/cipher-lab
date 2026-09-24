@@ -1,0 +1,66 @@
+# round 0: N=720 K=36 cribs=0 best score -1578.7 (-2.193/symbol); restarts [-1578.7, -1578.7, -1578.7, -1578.7, -1578.7, -1652.3, -1652.3, -1652.3]
+# stream (letters, confidence digit below, * = crib):
+ttanonpatissicheinueroellapatisceassaipersuanegligenziapoicheuescouoamonitoaspra
+99999999999995599999999999999995999999999999999999999999995599995999999999999999
+
+mentedalducaintesecheilsuonipoteelettoaueuacommissionediandareasupplireidifettis
+99999999995999999955999999999999999999999995999999999999999999999999999999599999
+
+uoisubitosiacoesenelfuroredeuiraepriuoiduecheieranolamentatiemiopadrechemaineaue
+99999999999959999999599999999999999999999955999999999999999999999999955999999999
+
+uaparlatooralibeoquestoeilcnsoequineunprimaloonorecheimportopiuchognialtracosapo
+99999999999999999999999999599999999999999999999999559999999999955999999999599999
+
+irutileioumilmentemiraccomandoauostrasifnoriapregandolacontuttoilcorochesidegnis
+99999999999999999999995599999999999999959999999999999995999999999599955999999999
+
+ouuenirmiinquestanecessitaetioriporroquestobenefiziodouesonoripostiglialtricheel
+99999999999999999995999999999999999999999999999599999999999999999999999999955999
+
+lamihafattoetaluogoetempodimostreroconfattiehiononsoingratodiromaaliuidinouembre
+99995959999999999999999999999999999599599999599999999999999999999999999999999999
+
+mdllidiusumileefidelseruoifronimoborrolcuallounicosigmormioilsignorpietroaretino
+99599999999999959999999999599999999999559999999959999999999999999999999999999999
+
+pagunicosignormiononemarauigliaseiochemeritamenteadorononsochediimmortalechesisc
+99999959999999999999999999999999999559999999999999999999999559999999999995599995
+
+# signs by frequency: sign count letter conf  (positions of first 3 occurrences)
+ s4   35 o 9   [21, 70, 74]
+ s7   31 e 9   [15, 45, 50]
+ s5   30 o 9   [4, 65, 67]
+s25   30 m 9   [69, 80, 125]
+s26   29 c 5   [13, 31, 58]
+s16   28 r 9   [20, 78, 140]
+s18   27 t 9   [0, 28, 73]
+s14   26 n 9   [5, 44, 71]
+ s8   26 e 9   [19, 32, 100]
+ s9   26 e 9   [22, 39, 81]
+ s2   25 i 9   [101, 107, 198]
+s12   24 a 9   [7, 25, 33]
+s19   24 s 9   [10, 11, 30]
+ s1   23 i 9   [12, 16, 53]
+ s0   22 i 9   [29, 57, 72]
+ s6   22 o 9   [56, 105, 249]
+s13   21 n 9   [3, 17, 51]
+s27   21 p 9   [6, 26, 38]
+s21   21 u 9   [42, 61, 89]
+s10   20 a 9   [2, 27, 36]
+ s3   20 i 9   [9, 37, 48]
+s28   20 d 9   [85, 88, 134]
+s22   19 u 9   [18, 66, 119]
+s15   19 r 9   [40, 149, 184]
+s17   17 t 9   [1, 8, 94]
+s20   17 s 9   [35, 103, 128]
+s11   17 a 9   [79, 136, 191]
+s24   16 l 9   [23, 24, 87]
+s23   16 l 9   [47, 113, 147]
+s29   14 h 5   [14, 59, 99]
+s30   13 g 9   [46, 49, 306]
+s31    8 f 5   [154, 180, 359]
+s32    5 b 9   [165, 254, 443]
+s33    4 q 9   [257, 271, 411]
+s34    2 z 9   [52, 449]
+s35    2 l 5   [562, 598]

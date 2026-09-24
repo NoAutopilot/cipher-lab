@@ -1,0 +1,38 @@
+{
+ "control": "ciphers/jan-van-nassau-1572-75/j7/control_plain.txt",
+ "corpus": [
+  "ciphers/jan-van-nassau-1572-75/j7/corpus_T.txt"
+ ],
+ "N": 540,
+ "K": 82,
+ "seed": 2,
+ "restarts": 8,
+ "iters": 40000,
+ "order": 3,
+ "uni_weight": 1.0,
+ "rounds": {
+  "0": {
+   "cribs": {}
+  },
+  "1": {
+   "cribs": {
+    "s56": "h",
+    "s73": "f",
+    "s63": "c",
+    "s39": "d",
+    "s48": "a"
+   }
+  },
+  "2": {
+   "cribs": {
+    "s56": "h",
+    "s73": "f",
+    "s63": "c",
+    "s39": "d",
+    "s48": "a",
+    "s70": "m",
+    "s79": "w"
+   }
+  }
+ }
+}
