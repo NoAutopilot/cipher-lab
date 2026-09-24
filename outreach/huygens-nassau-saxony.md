@@ -7,7 +7,7 @@ drafted: 24 Sept 2026, verifier V5 (LANE V4). Nothing sent. The person sends it 
 
 ---
 
-Dear ______,
+Dear editors of the Correspondence of William of Orange,
 
 I run a small project that reads cipher passages in published letter images, with each reading checked by a separate
 search for any prior decipherment. Six letters in your William of Orange database carry cipher that the database records
@@ -37,4 +37,5 @@ If useful, we can hand over a table of the 73 WVO letters we found with cipher p
 in clear and which stand unread, and the keys as machine-readable tables, in whatever format suits the database. And if
 there are unread passages you would most like read, name them and we will try those first.
 
-______
+cipher-lab
+https://github.com/NoAutopilot/cipher-lab

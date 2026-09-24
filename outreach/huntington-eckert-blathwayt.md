@@ -7,7 +7,7 @@ drafted: 24 Sept 2026, verifier V5 (LANE V4). Nothing sent. The person sends it 
 
 ---
 
-Dear ______,
+Dear Reference Services,
 
 I run a small project that reads cipher passages in digitised letters, with each reading checked by a separate search
 for any prior decipherment. Two groups of items in your collections are involved, and I would like to hand you the
@@ -34,4 +34,5 @@ If it would help, we can supply the mssEC 41 key, the ledger readings and the Bl
 catalogue or the Decoding the Civil War project takes, and try any cipher books, telegrams or letters in your
 collections you would like read the same way.
 
-______
+cipher-lab
+https://github.com/NoAutopilot/cipher-lab

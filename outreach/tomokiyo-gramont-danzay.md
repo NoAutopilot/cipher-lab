@@ -34,4 +34,5 @@ read, and can run them against Gallica volumes not yet checked. If there are ite
 like attempted, we would be glad to take those first.
 
 With thanks,
-______
+cipher-lab
+https://github.com/NoAutopilot/cipher-lab
