@@ -1,0 +1,817 @@
+line	position	sign	confidence	alt	why
+5200p1L06	1	s:flourish	M		agree-flagged
+5200p1L06	2	25	H		agree
+5200p1L06	3	31	H		agree
+5200p1L06	4	74	H		agree
+5200p1L06	5	17	H		agree
+5200p1L06	6	20	H		agree
+5200p1L06	7	25	H		agree
+5200p1L06	8	40	H		agree
+5200p1L06	9	51	H		agree
+5200p1L06	10	15	H		agree
+5200p1L06	11	s:n	M		agree-flagged
+5200p1L06	12	11	H		agree
+5200p1L06	13	12	H		agree
+5200p1L06	14	28	H		agree
+5200p1L06	15	27	H		agree
+5200p1L06	16	57	H		agree
+5200p1L06	17	s:i	M		agree-flagged
+5200p1L06	18	40	H		agree
+5200p1L06	19	s:q	M	B:9	differ
+5200p1L06	20	39	H		agree
+5200p1L07	1	25	H		agree
+5200p1L07	2	31	H		agree
+5200p1L07	3	12	H		agree
+5200p1L07	4	13	H		agree
+5200p1L07	5	14	H		agree
+5200p1L07	6	15	H		agree
+5200p1L07	7	16	H		agree
+5200p1L07	8	35	H		agree
+5200p1L07	9	36	H		agree
+5200p1L07	10	42	H		agree
+5200p1L07	11	39	H		agree
+5200p1L07	12	57	H		agree
+5200p1L07	13	54	H		agree
+5200p1L07	14	53	H		agree
+5200p1L07	15	25	H		agree
+5200p1L07	16	17	H		agree
+5200p1L07	17	20	H		agree
+5200p1L07	18	25	H		agree
+5200p1L07	19	40	H		agree
+5200p1L07	20	17	M		agree-flagged
+5200p1L07	21	19	M	A:-	gap
+5200p1L08	1	9	M		agree-flagged
+5200p1L08	2	3	H		agree
+5200p1L08	3	54	H		agree
+5200p1L08	4	53	H		agree
+5200p1L08	5	40	H		agree
+5200p1L08	6	50	H		agree
+5200p1L08	7	s:f	M		agree-flagged
+5200p1L08	8	3	H		agree
+5200p1L08	9	57	H		agree
+5200p1L08	10	27	H		agree
+5200p1L08	11	42	H		agree
+5200p1L08	12	39	H		agree
+5200p1L08	13	25	H		agree
+5200p1L08	14	12	H		agree
+5200p1L08	15	14	H		agree
+5200p1L08	16	15	H		agree
+5200p1L08	17	17	H		agree
+5200p1L08	18	25	H		agree
+5200p1L08	19	36	H		agree
+5200p1L08	20	15	H		agree
+5200p1L08	21	54	H		agree
+5200p1L08	22	51	H		agree
+5200p1L08	23	15	H		agree
+5200p1L08	24	27	H		agree
+5200p1L09	1	57	H		agree
+5200p1L09	2	51	H		agree
+5200p1L09	3	50	H		agree
+5200p1L09	4	15	H		agree
+5200p1L09	5	54	H		agree
+5200p1L09	6	17	H		agree
+5200p1L09	7	20	H		agree
+5200p1L09	8	40	H		agree
+5200p1L09	9	s:a	M		agree-flagged
+5200p1L09	10	55	H		agree
+5200p1L09	11	57	H		agree
+5200p1L09	12	15	H		agree
+5200p1L09	13	33	H		agree
+5200p1L09	14	34	H		agree
+5200p1L09	15	s:e	M	B:s:b	differ
+5200p1L09	16	15	H		agree
+5200p1L09	17	36	H		agree
+5200p1L09	18	15	H		agree
+5200p1L09	19	39	H		agree
+5200p1L09	20	57	H		agree
+5200p1L09	21	14	H		agree
+5200p1L09	22	15	H		agree
+5200p1L09	23	25	M		agree-flagged
+5200p1L09	24	51	M	B:31	differ
+5200p1L09	25	42	M		agree-flagged
+5200p1L09	26	39	M	A:-	gap
+5200p1L10	1	25	H		agree
+5200p1L10	2	52	M	B:32	differ
+5200p1L10	3	75	H		agree
+5200p1L10	4	82	H		agree
+5200p1L10	5	39	H		agree
+5200p1L10	6	s:e	M	B:s:c	differ
+5200p1L10	7	32	H		agree
+5200p1L10	8	33	H		agree
+5200p1L10	9	15	H		agree
+5200p1L10	10	54	H		agree
+5200p1L10	11	60	H		agree
+5200p1L10	12	26	H		agree
+5200p1L10	13	27	H		agree
+5200p1L10	14	33	H		agree
+5200p1L10	15	34	H		agree
+5200p1L10	16	17	H		agree
+5200p1L10	17	56	H		agree
+5200p1L10	18	54	H		agree
+5200p1L10	19	55	H		agree
+5200p1L10	20	17	H		agree
+5200p1L10	21	31	M		agree-flagged
+5200p1L11	1	53	H		agree
+5200p1L11	2	57	H		agree
+5200p1L11	3	42	H		agree
+5200p1L11	4	60	H		agree
+5200p1L11	5	50	H		agree
+5200p1L11	6	54	H		agree
+5200p1L11	7	9	H		agree
+5200p1L11	8	42	H		agree
+5200p1L11	9	s:mars	M		agree-flagged
+5200p1L11	10	54	H		agree
+5200p1L11	11	s:venus	M	B:s:jupiter	differ
+5200p1L11	12	55	H		agree
+5200p1L11	13	57	H		agree
+5200p1L11	14	15	H		agree
+5200p1L11	15	72	H		agree
+5200p1L11	16	s:jupiter	M		agree-flagged
+5200p1L11	17	20	H		agree
+5200p1L11	18	21	H		agree
+5200p1L11	19	22	H		agree
+5200p1L12	1	51	H		agree
+5200p1L12	2	3	H		agree
+5200p1L12	3	39	H		agree
+5200p1L12	4	12	H		agree
+5200p1L12	5	11	H		agree
+5200p1L12	6	s:sol	M	B:s:saturn	differ
+5200p1L12	7	s:venus	M		agree-flagged
+5200p1L12	8	9	H		agree
+5200p1L12	9	29	M	B:24	differ
+5200p1L12	10	25	H		agree
+5200p1L12	11	3	H		agree
+5200p1L12	12	39	H		agree
+5200p1L12	13	21	H		agree
+5200p1L12	14	15	H		agree
+5200p1L12	15	s:mars	M		agree-flagged
+5200p1L12	16	36	H		agree
+5200p1L12	17	15	H		agree
+5200p1L12	18	39	H		agree
+5200p1L12	19	57	H		agree
+5200p1L12	20	s:jupiter	M		agree-flagged
+5200p1L12	21	8	H		agree
+5200p1L12	22	9	H		agree
+5200p1L12	23	42	M	B:s:mars	differ
+5200p1L12	24	60	H		agree
+5200p1L13	1	50	H		agree
+5200p1L13	2	51	H		agree
+5200p1L13	3	3	H		agree
+5200p1L13	4	21	H		agree
+5200p1L13	5	14	H		agree
+5200p1L13	6	15	H		agree
+5200p1L13	7	54	H		agree
+5200p1L13	8	57	H		agree
+5200p1L13	9	15	H		agree
+5200p1L13	10	33	H		agree
+5200p1L13	11	s:mars	M		agree-flagged
+5200p1L13	12	s:saturn	M		agree-flagged
+5200p1L13	13	35	H		agree
+5200p1L13	14	36	H		agree
+5200p1L13	15	15	H		agree
+5200p1L13	16	39	H		agree
+5200p1L13	17	57	H		agree
+5200p1L14	1	53	M	B:32	differ
+5200p1L14	2	31	H		agree
+5200p1L14	3	33	H		agree
+5200p1L14	4	15	H		agree
+5200p1L14	5	54	H		agree
+5200p1L14	6	36	H		agree
+5200p1L14	7	27	H		agree
+5200p1L14	8	14	H		agree
+5200p1L14	9	15	H		agree
+5200p1L14	10	60	H		agree
+5200p1L14	11	69	M	B:68	differ
+5200p1L14	12	66	H		agree
+5200p1L14	13	3	H		agree
+5200p1L14	14	18	H		agree
+5200p1L14	15	17	H		agree
+5200p1L14	16	s:f	M		agree-flagged
+5200p1L14	17	15	H		agree
+5200p1L14	18	9	H		agree
+5200p1L14	19	57	H		agree
+5200p1L14	20	27	H		agree
+5200p1L14	21	42	H		agree
+5200p1L14	22	39	H		agree
+5200p1L15	1	70	H		agree
+5200p1L15	2	72	H		agree
+5200p1L15	3	50	M	B:s:f	differ
+5200p1L15	4	56	H		agree
+5200p1L15	5	57	H		agree
+5200p1L15	6	s:saturn	M		agree-flagged
+5200p1L15	7	51	H		agree
+5200p1L15	8	42	H		agree
+5200p1L15	9	60	H		agree
+5200p1L15	10	61	H		agree
+5200p1L15	11	39	H		agree
+5200p1L15	12	57	H		agree
+5200p1L15	13	s:mars	M		agree-flagged
+5200p1L15	14	18	H		agree
+5200p1L15	15	17	H		agree
+5200p1L15	16	42	H		agree
+5200p1L15	17	50	H		agree
+5200p1L15	18	51	H		agree
+5200p1L15	19	57	H		agree
+5200p1L15	20	15	M		agree-flagged
+5200p1L15	21	1	M	B:-	gap
+5200p1L16	1	6	H		agree
+5200p1L16	2	5	H		agree
+5200p1L16	3	51	H		agree
+5200p1L16	4	3	H		agree
+5200p1L16	5	s:saturn	M		agree-flagged
+5200p1L16	6	39	H		agree
+5200p1L16	7	34	H		agree
+5200p1L16	8	33	H		agree
+5200p1L16	9	15	H		agree
+5200p1L16	10	72	H		agree
+5200p1L16	11	74	M	B:79	differ
+5200p1L16	12	81	H		agree
+5200p1L16	13	s:mars	M		agree-flagged
+5200p1L16	14	s:sol	M	B:s:sun	differ
+5200p1L17	1	25	H		agree
+5200p1L17	2	20	H		agree
+5200p1L17	3	40	H		agree
+5200p1L17	4	s:jupiter	M		agree-flagged
+5200p1L17	5	s:sol	M	B:s:sun	differ
+5200p1L17	6	s:venus	M		agree-flagged
+5200p1L17	7	54	H		agree
+5200p1L17	8	3	H		agree
+5200p1L17	9	27	H		agree
+5200p1L17	10	s:f	M		agree-flagged
+5200p1L17	11	29	M		agree-flagged
+5200p1L18	1	12	H		agree
+5200p1L18	2	11	H		agree
+5200p1L18	3	60	H		agree
+5200p1L18	4	39	H		agree
+5200p1L18	5	15	H		agree
+5200p1L18	6	18	H		agree
+5200p1L18	7	s:jupiter	M		agree-flagged
+5200p1L18	8	51	H		agree
+5200p1L18	9	3	H		agree
+5200p1L18	10	69	H		agree
+5200p1L18	11	15	H		agree
+5200p1L18	12	60	H		agree
+5200p1L18	13	51	H		agree
+5200p1L18	14	2	M	A:-	gap
+5200p1L18	15	20	H		agree
+5200p1L18	16	40	H		agree
+5200p1L18	17	40	H		agree
+5200p1L19	1	3	H		agree
+5200p1L19	2	32	H		agree
+5200p1L19	3	33	H		agree
+5200p1L19	4	3	M	B:s:f	differ
+5200p1L19	5	18	H		agree
+5200p1L19	6	27	H		agree
+5200p1L19	7	39	H		agree
+5200p1L19	8	27	H		agree
+5200p1L19	9	15	H		agree
+5200p1L19	10	35	H		agree
+5200p1L19	11	36	H		agree
+5200p1L19	12	15	H		agree
+5200p1L19	13	s:sol	M	B:-	gap
+5200p1L19	14	s:mmm	M	B:s:sun	differ
+5200p1L19	15	57	H		agree
+5200p1L19	16	51	H		agree
+5200p1L19	17	42	H		agree
+5200p1L19	18	60	H		agree
+5200p1L19	19	s:mars	M		agree-flagged
+5200p1L19	20	11	H		agree
+5200p1L19	21	14	M	B:19	differ
+5200p1L19	22	15	H		agree
+5200p1L19	23	16	H		agree
+5200p1L19	24	51	H		agree
+5200p1L19	25	3	H		agree
+5200p1L19	26	69	M		agree-flagged
+5200p1L20	1	54	H		agree
+5200p1L20	2	15	H		agree
+5200p1L20	3	60	H		agree
+5200p1L20	4	32	H		agree
+5200p1L20	5	33	H		agree
+5200p1L20	6	3	H		agree
+5200p1L20	7	4	H		agree
+5200p1L20	8	5	H		agree
+5200p1L20	9	6	H		agree
+5200p1L20	10	7	H		agree
+5200p1L20	11	8	H		agree
+5200p1L20	12	s:D	M	B:s:sun	differ
+5200p1L20	13	s:saturn	M	B:s:venus	differ
+5200p1L20	14	s:venus	M		agree-flagged
+5200p1L20	15	3	H		agree
+5200p1L20	16	2	H		agree
+5200p1L20	17	1	H		agree
+5200p1L20	18	39	H		agree
+5200p1L20	19	12	H		agree
+5200p1L20	20	42	H		agree
+5200p1L20	21	39	H		agree
+5200p1L20	22	11	H		agree
+5200p1L20	23	10	H		agree
+5200p1L20	24	25	H		agree
+5200p1L20	25	40	H		agree
+5200p1L21	1	12	H		agree
+5200p1L21	2	17	H		agree
+5200p1L21	3	14	H		agree
+5200p1L21	4	15	H		agree
+5200p1L21	5	16	H		agree
+5200p1L21	6	57	H		agree
+5200p1L21	7	42	H		agree
+5200p1L21	8	40	H		agree
+5200p1L21	9	60	H		agree
+5200p1L21	10	54	H		agree
+5200p1L21	11	9	H		agree
+5200p1L21	12	42	H		agree
+5200p1L21	13	59	H		agree
+5200p1L21	14	55	H		agree
+5200p1L21	15	56	H		agree
+5200p1L21	16	57	H		agree
+5200p1L21	17	58	H		agree
+5200p1L21	18	59	H		agree
+5200p1L21	19	15	H		agree
+5200p1L21	20	70	H		agree
+5200p1L21	21	72	H		agree
+5200p1L21	22	s:f	M		agree-flagged
+5200p1L22	1	31	H		agree
+5200p1L22	2	36	H		agree
+5200p1L22	3	27	H		agree
+5200p1L22	4	s:venus	M		agree-flagged
+5200p1L22	5	51	H		agree
+5200p1L22	6	3	H		agree
+5200p1L22	7	s:jupiter	M		agree-flagged
+5200p1L22	8	9	H		agree
+5200p1L22	9	60	H		agree
+5200p1L22	10	s:saturn	M		agree-flagged
+5200p1L22	11	33	M		agree-flagged
+5200p1L22	12	15	H		agree
+5200p1L22	13	60	H		agree
+5200p1L22	14	s:f	M		agree-flagged
+5200p1L22	15	14	H		agree
+5200p1L22	16	15	H		agree
+5200p1L22	17	36	H		agree
+5200p1L22	18	15	H		agree
+5200p1L22	19	39	H		agree
+5200p1L22	20	57	H		agree
+5200p1L22	21	s:n	M	B:-	gap
+5200p1L22	22	25	H		agree
+5200p1L22	23	69	H		agree
+5200p1L22	24	45	H		agree
+5200p1L22	25	42	H		agree
+5200p1L22	26	60	M		agree-flagged
+5200p1L23	1	s:jupiter	M		agree-flagged
+5200p1L23	2	60	H		agree
+5200p1L23	3	42	H		agree
+5200p1L23	4	26	H		agree
+5200p1L23	5	27	H		agree
+5200p1L23	6	57	H		agree
+5200p1L23	7	17	H		agree
+5200p1L23	8	20	H		agree
+5200p1L23	9	40	H		agree
+5200p1L23	10	41	H		agree
+5200p1L23	11	25	H		agree
+5200p1L23	12	36	H		agree
+5200p1L23	13	3	H		agree
+5200p1L23	14	33	H		agree
+5200p1L23	15	27	H		agree
+5200p1L23	16	s:jupiter	M		agree-flagged
+5200p1L23	17	39	H		agree
+5200p1L23	18	15	M		agree-flagged
+5200p1L24	1	s:a	M		agree-flagged
+5200p1L24	2	14	H		agree
+5200p1L24	3	15	H		agree
+5200p1L24	4	54	H		agree
+5200p1L24	5	55	H		agree
+5200p1L24	6	57	H		agree
+5200p1L24	7	15	H		agree
+5200p1L24	8	14	H		agree
+5200p1L24	9	50	H		agree
+5200p1L24	10	51	H		agree
+5200p1L24	11	15	H		agree
+5200p1L24	12	36	H		agree
+5200p1L24	13	27	H		agree
+5200p1L24	14	54	H		agree
+5200p1L24	15	14	H		agree
+5200p1L24	16	15	H		agree
+5200p1L24	17	56	H		agree
+5200p1L24	18	57	H		agree
+5200p1L24	19	51	H		agree
+5200p1L24	20	50	H		agree
+5200p1L24	21	15	H		agree
+5200p1L24	22	s:venus	M		agree-flagged
+5200p1L24	23	33	H		agree
+5200p1L24	24	15	H		agree
+5200p1L24	25	54	H		agree
+5200p1L24	26	s:mars	M		agree-flagged
+5200p1L25	1	25	H		agree
+5200p1L25	2	20	H		agree
+5200p1L25	3	s:mars	M		agree-flagged
+5200p1L25	4	s:jupiter	M		agree-flagged
+5200p1L25	5	54	H		agree
+5200p1L25	6	3	H		agree
+5200p1L25	7	5	M		agree-flagged
+5200p1L25	8	25	H		agree
+5200p1L25	9	20	H		agree
+5200p1L25	10	8	H		agree
+5200p1L25	11	9	H		agree
+5200p1L25	12	3	H		agree
+5200p1L25	13	50	H		agree
+5200p1L25	14	21	H		agree
+5200p1L25	15	15	H		agree
+5200p1L25	16	14	H		agree
+5200p1L25	17	15	H		agree
+5200p1L25	18	s:mars	M		agree-flagged
+5200p1L25	19	33	H		agree
+5200p1L25	20	3	H		agree
+5200p1L25	21	4	H		agree
+5200p1L25	22	s:jupiter	M		agree-flagged
+5200p1L26	1	60	H		agree
+5200p1L26	2	27	H		agree
+5200p1L26	3	26	H		agree
+5200p1L26	4	33	H		agree
+5200p1L26	5	s:venus	M		agree-flagged
+5200p1L26	6	s:e	M	B:-	gap
+5200p1L26	7	14	H		agree
+5200p1L26	8	25	H		agree
+5200p1L26	9	15	H		agree
+5200p1L26	10	54	H		agree
+5200p1L26	11	55	H		agree
+5200p1L26	12	45	H		agree
+5200p1L26	13	3	H		agree
+5200p1L26	14	9	H		agree
+5200p1L26	15	14	H		agree
+5200p1L26	16	15	H		agree
+5200p1L26	17	12	H		agree
+5200p1L26	18	14	H		agree
+5200p1L26	19	15	H		agree
+5200p1L26	20	s:mars	M	B:-	gap
+5200p1L26	21	42	H		agree
+5200p1L26	22	61	H		agree
+5200p1L26	23	60	H		agree
+5200p1L27	1	25	H		agree
+5200p1L27	2	31	H		agree
+5200p1L27	3	37	H		agree
+5200p1L27	4	3	H		agree
+5200p1L27	5	57	H		agree
+5200p1L27	6	51	H		agree
+5200p1L27	7	15	H		agree
+5200p1L27	8	27	H		agree
+5200p1L27	9	42	H		agree
+5200p1L27	10	60	H		agree
+5200p1L27	11	51	H		agree
+5200p1L27	12	61	H		agree
+5200p1L27	13	54	H		agree
+5200p1L27	14	s:mars	M		agree-flagged
+5200p1L27	15	s:jupiter	M		agree-flagged
+5200p1L27	16	59	H		agree
+5200p1L27	17	53	H		agree
+5200p1L27	18	54	H		agree
+5200p1L27	19	s:venus	M		agree-flagged
+5200p1L27	20	21	H		agree
+5200p1L27	21	3	M		agree-flagged
+5200p1L27	22	5	M	A:-	gap
+5200p1L28	1	39	H		agree
+5200p1L28	2	27	H		agree
+5200p1L28	3	54	H		agree
+5200p1L28	4	42	H		agree
+5200p1L28	5	39	H		agree
+5200p1L28	6	54	H		agree
+5200p1L28	7	25	H		agree
+5200p1L28	8	61	H		agree
+5200p1L28	9	31	H		agree
+5200p1L28	10	3	H		agree
+5200p1L28	11	60	H		agree
+5200p1L28	12	57	H		agree
+5200p1L28	13	51	H		agree
+5200p1L28	14	15	H		agree
+5200p1L28	15	54	H		agree
+5200p1L28	16	s:mars	M		agree-flagged
+5200p1L28	17	60	H		agree
+5200p1L28	18	27	H		agree
+5200p1L28	19	32	H		agree
+5200p1L28	20	33	H		agree
+5200p1L29	1	15	H		agree
+5200p1L29	2	54	H		agree
+5200p1L29	3	55	H		agree
+5200p1L29	4	57	H		agree
+5200p1L29	5	15	H		agree
+5200p1L29	6	25	H		agree
+5200p1L29	7	20	H		agree
+5200p1L29	8	33	H		agree
+5200p1L29	9	14	H		agree
+5200p1L29	10	15	H		agree
+5200p1L29	11	36	H		agree
+5200p1L29	12	15	H		agree
+5200p1L29	13	39	H		agree
+5200p1L29	14	57	H		agree
+5200p1L29	15	15	H		agree
+5200p1L29	16	18	H		agree
+5200p1L29	17	19	M		agree-flagged
+5200p1L29	18	f	M	B:s:f	differ
+5200p1L29	19	9	M	B:31	differ
+5200p1L30	1	15	H		agree
+5200p1L30	2	14	H		agree
+5200p1L30	3	15	H		agree
+5200p1L30	4	16	H		agree
+5200p1L30	5	17	H		agree
+5200p1L30	6	54	H		agree
+5200p1L30	7	25	H		agree
+5200p1L30	8	20	H		agree
+5200p1L30	9	42	H		agree
+5200p1L30	10	39	H		agree
+5200p1L30	11	57	H		agree
+5200p1L30	12	s:venus	M		agree-flagged
+5200p1L31	1	70	H		agree
+5200p1L31	2	57	H		agree
+5200p1L31	3	58	H		agree
+5200p1L31	4	50	H		agree
+5200p1L31	5	s:f	M		agree-flagged
+5200p1L31	6	14	H		agree
+5200p1L31	7	15	H		agree
+5200p1L31	8	53	H		agree
+5200p1L31	9	54	H		agree
+5200p1L31	10	50	H		agree
+5200p1L31	11	45	H		agree
+5200p1L31	12	35	H		agree
+5200p1L31	13	3	H		agree
+5200p1L31	14	9	H		agree
+5200p1L31	15	15	H		agree
+5200p1L31	16	59	H		agree
+5200p1L31	17	2	M	A:-	gap
+5200p1L31	18	25	M	B:20	differ
+5200p1L32	1	3	H		agree
+5200p1L32	2	60	H		agree
+5200p1L32	3	25	H		agree
+5200p1L32	4	42	H		agree
+5200p1L32	5	69	H		agree
+5200p1L32	6	15	H		agree
+5200p1L32	7	14	H		agree
+5200p1L32	8	39	H		agree
+5200p1L32	9	57	H		agree
+5200p1L32	10	14	H		agree
+5200p1L32	11	15	H		agree
+5200p1L32	12	54	H		agree
+5200p1L32	13	15	M	B:55	differ
+5200p1L32	14	56	H		agree
+5200p1L32	15	57	H		agree
+5200p1L32	16	15	H		agree
+5200p1L32	17	14	H		agree
+5200p1L32	18	9	H		agree
+5200p1L32	19	42	H		agree
+5200p1L32	20	36	H		agree
+5200p1L32	21	s:jupiter	M		agree-flagged
+5200p1L32	22	s:venus	M	B:s:f	differ
+5200p1L33	1	27	H		agree
+5200p1L33	2	54	H		agree
+5200p1L33	3	14	H		agree
+5200p1L33	4	15	H		agree
+5200p1L33	5	53	H		agree
+5200p1L33	6	59	M	B:54	differ
+5200p1L33	7	55	H		agree
+5200p1L33	8	s:jupiter	M		agree-flagged
+5200p1L33	9	74	H		agree
+5200p1L33	10	81	H		agree
+5200p1L34	1	25	H		agree
+5200p1L34	2	31	H		agree
+5200p1L34	3	40	H		agree
+5200p1L34	4	20	H		agree
+5200p1L34	5	s:jupiter	M		agree-flagged
+5200p1L34	6	s:mars	M		agree-flagged
+5200p1L34	7	51	H		agree
+5200p1L34	8	60	H		agree
+5200p1L34	9	51	H		agree
+5200p1L34	10	15	H		agree
+5200p1L34	11	86	M		agree-flagged
+5200p1L34	12	42	H		agree
+5200p1L34	13	39	H		agree
+5200p1L34	14	12	H		agree
+5200p1L34	15	15	H		agree
+5200p1L34	16	14	H		agree
+5200p1L34	17	s:venus	M		agree-flagged
+5200p1L34	18	s:sol	M	B:s:sun	differ
+5200p1L34	19	33	H		agree
+5200p1L34	20	15	H		agree
+5200p1L34	21	54	H		agree
+5200p1L34	22	5	M	A:-	gap
+5200p1L35	1	s:f	M		agree-flagged
+5200p1L35	2	40	H		agree
+5200p1L35	3	41	H		agree
+5200p1L35	4	42	H		agree
+5200p1L35	5	82	M	B:32	differ
+5200p1L35	6	33	H		agree
+5200p1L35	7	12	H		agree
+5200p1L35	8	1	H		agree
+5200p1L35	9	2	H		agree
+5200p1L35	10	3	H		agree
+5200p1L35	11	57	H		agree
+5200p1L35	12	54	H		agree
+5200p1L35	13	55	H		agree
+5200p1L35	14	32	H		agree
+5200p1L35	15	33	H		agree
+5200p1L35	16	42	H		agree
+5200p1L35	17	39	H		agree
+5200p1L35	18	57	H		agree
+5200p1L35	19	3	H		agree
+5200p1L35	20	4	H		agree
+5200p1L35	21	5	H		agree
+5200p1L35	22	6	H		agree
+5200p1L35	23	8	M	A:-	gap
+5200p1L36	1	38	M		agree-flagged
+5200p1L36	2	39	M		agree-flagged
+5200p1L36	3	s:blot	M	B:s:inkblot	differ
+5200p1L36	4	42	H		agree
+5200p1L36	5	s:n	M	B:-	gap
+5200p1L36	6	25	H		agree
+5200p1L36	7	20	H		agree
+5200p1L36	8	40	H		agree
+5200p1L36	9	39	H		agree
+5200p1L36	10	15	H		agree
+5200p1L36	11	14	H		agree
+5200p1L36	12	17	H		agree
+5200p1L36	13	s:e	M	B:-	gap
+5200p1L36	14	32	H		agree
+5200p1L36	15	s:jupiter	M	B:s:venus	differ
+5200p1L36	16	s:mars	M		agree-flagged
+5200p1L36	17	s:jupiter	M	A:-	gap
+5200p1L36	18	33	H		agree
+5200p1L36	19	15	H		agree
+5200p1L36	20	56	H		agree
+5200p1L36	21	15	M	B:1	differ
+5200p1L37	1	45	H		agree
+5200p1L37	2	33	H		agree
+5200p1L37	3	15	H		agree
+5200p1L37	4	17	M	B:34	differ
+5200p1L37	5	48	H		agree
+5200p1L37	6	49	H		agree
+5200p1L37	7	60	H		agree
+5200p1L37	8	15	H		agree
+5200p1L37	9	33	H		agree
+5200p1L37	10	72	H		agree
+5200p1L37	11	25	H		agree
+5200p1L37	12	31	H		agree
+5200p1L37	13	s:venus	M		agree-flagged
+5200p1L37	14	15	H		agree
+5200p1L37	15	30	H		agree
+5200p1L38	1	s:jupiter	M		agree-flagged
+5200p1L38	2	60	H		agree
+5200p1L38	3	69	H		agree
+5200p1L38	4	12	H		agree
+5200p1L38	5	14	H		agree
+5200p1L38	6	15	H		agree
+5200p1L38	7	9	H		agree
+5200p1L38	8	15	H		agree
+5200p1L38	9	60	H		agree
+5200p1L38	10	61	H		agree
+5200p1L38	11	66	H		agree
+5200p1L38	12	62	M	B:63	differ
+5200p1L38	13	3	H		agree
+5200p1L38	14	9	H		agree
+5200p1L38	15	24	H		agree
+5200p1L38	16	57	H		agree
+5200p1L38	17	15	H		agree
+5200p1L38	18	39	H		agree
+5200p1L38	19	s:jupiter	M		agree-flagged
+5200p1L38	20	12	H		agree
+5200p1L38	21	42	H		agree
+5200p1L39	1	s:sol	M	B:s:sun	differ
+5200p1L39	2	s:jupiter	M		agree-flagged
+5200p1L39	3	31	H		agree
+5200p1L39	4	40	H		agree
+5200p1L39	5	25	H		agree
+5200p1L39	6	s:jupiter	M		agree-flagged
+5200p1L39	7	36	H		agree
+5200p1L39	8	3	H		agree
+5200p1L39	9	60	H		agree
+5200p1L39	10	42	H		agree
+5200p1L39	11	69	H		agree
+5200p1L39	12	15	H		agree
+5200p1L39	13	39	H		agree
+5200p1L39	14	57	M	A:-	gap
+5200p1L40	1	60	H		agree
+5200p1L40	2	42	H		agree
+5200p1L40	3	60	H		agree
+5200p1L40	4	32	H		agree
+5200p1L40	5	33	H		agree
+5200p1L40	6	61	H		agree
+5200p1L40	7	s:n	M	B:-	gap
+5200p1L40	8	50	H		agree
+5200p1L40	9	51	H		agree
+5200p1L40	10	15	H		agree
+5200p1L40	11	9	H		agree
+5200p1L40	12	14	H		agree
+5200p1L40	13	15	H		agree
+5200p1L40	14	60	H		agree
+5200p1L40	15	42	H		agree
+5200p1L40	16	27	H		agree
+5200p1L40	17	51	H		agree
+5200p1L40	18	60	H		agree
+5200p1L40	19	11	H		agree
+5200p1L40	20	12	H		agree
+5200p1L40	21	3	H		agree
+5200p1L40	22	39	H		agree
+5200p1L40	23	24	M	A:-	gap
+5200p1L41	1	32	H		agree
+5200p1L41	2	33	H		agree
+5200p1L41	3	3	H		agree
+5200p1L41	4	60	H		agree
+5200p1L41	5	26	H		agree
+5200p1L41	6	27	H		agree
+5200p1L41	7	32	H		agree
+5200p1L41	8	33	H		agree
+5200p1L41	9	14	H		agree
+5200p1L41	10	15	H		agree
+5200p1L41	11	s:venus	M	B:s:jupiter	differ
+5200p1L41	12	s:mars	M		agree-flagged
+5200p1L41	13	53	H		agree
+5200p1L41	14	54	H		agree
+5200p1L41	15	61	M		agree-flagged
+5200p1L42	1	15	H		agree
+5200p1L42	2	34	H		agree
+5200p1L42	3	s:f	M	B:45	differ
+5200p1L42	4	57	H		agree
+5200p1L42	5	42	H		agree
+5200p1L42	6	60	H		agree
+5200p1L42	7	61	H		agree
+5200p1L42	8	23	H		agree
+5200p1L42	9	24	H		agree
+5200p1L42	10	60	H		agree
+5200p1L42	11	27	H		agree
+5200p1L42	12	s:f	M	B:s:venus	differ
+5200p1L42	13	57	H		agree
+5200p1L42	14	56	H		agree
+5200p1L42	15	23	H		agree
+5200p1L42	16	24	M	B:29	differ
+5200p1L42	17	15	H		agree
+5200p1L42	18	14	H		agree
+5200p1L42	19	60	H		agree
+5200p1L42	20	s:f	M	A:-	gap
+5200p1L43	1	s:n	M	B:-	gap
+5200p1L43	2	32	H		agree
+5200p1L43	3	37	M	B:33	differ
+5200p1L43	4	30	H		agree
+5200p1L43	5	66	H		agree
+5200p1L43	6	30	H		agree
+5200p1L43	7	39	H		agree
+5200p1L43	8	15	M	B:19	differ
+5200p1L43	9	s:jupiter	M		agree-flagged
+5200p1L43	10	86	M	B:36	differ
+5200p1L43	11	15	H		agree
+5200p1L43	12	14	H		agree
+5200p1L43	13	s:mars	M		agree-flagged
+5200p1L43	14	50	H		agree
+5200p1L43	15	42	H		agree
+5200p1L43	16	60	M		agree-flagged
+5200p1L44	1	33	H		agree
+5200p1L44	2	61	H		agree
+5200p1L44	3	60	H		agree
+5200p1L44	4	50	H		agree
+5200p1L44	5	51	H		agree
+5200p1L44	6	s:e	M	B:-	gap
+5200p1L44	7	38	H		agree
+5200p1L44	8	39	H		agree
+5200p1L44	9	57	H		agree
+5200p1L44	10	26	H		agree
+5200p1L44	11	27	H		agree
+5200p1L44	12	s:f	M		agree-flagged
+5200p1L44	13	53	H		agree
+5200p1L44	14	54	H		agree
+5200p1L44	15	14	M	B:-	gap
+5200p1L44	16	s:e	M	B:19	differ
+5200p1L44	17	50	H		agree
+5200p1L44	18	5	H		agree
+5200p1L44	19	45	H		agree
+5200p1L44	20	3	H		agree
+5200p1L44	21	11	M	B:21	differ
+5200p1L44	22	s:venus	M		agree-flagged
+5200p1L45	1	57	H		agree
+5200p1L45	2	27	H		agree
+5200p1L45	3	56	H		agree
+5200p1L45	4	51	H		agree
+5200p1L45	5	45	H		agree
+5200p1L45	6	3	H		agree
+5200p1L45	7	69	H		agree
+5200p1L45	8	15	H		agree
+5200p1L45	9	72	H		agree
+5200p1L45	10	s:jupiter	M	B:-	gap
+5200p1L45	11	s:mars	M	B:s:venus	differ
+5200p1L45	12	54	H		agree
+5200p1L45	13	27	H		agree
+5200p1L45	14	39	H		agree
+5200p1L45	15	42	M		agree-flagged
+5200p1L45	16	39	M	B:-	gap
+5200p1L24a	1	35	M	A:-	gap
+5200p1L24a	2	36	M	A:-	gap
+5200p1L24a	3	3	M	A:-	gap
+5200p1L24a	4	27	M	A:-	gap
+5200p1L24a	5	39	M	A:-	gap
+5200p1L24a	6	54	M	A:-	gap
+5200p1L24a	7	54	M	A:-	gap
+5200p1L24a	8	s:mars	M	A:-	gap
+5200p1L24a	9	s:sun	M	A:-	gap
+5200p1L24a	10	s:moon	M	A:-	gap
+5200p1L24a	11	15	M	A:-	gap
+5200p1L24a	12	54	M	A:-	gap
+5200p1L24a	13	45	M	A:-	gap
+5200p1L24a	14	3	M	A:-	gap
+5200p1L24a	15	20	M	A:-	gap
+5200p1L24a	16	21	M	A:-	gap
+5200p1L24a	17	39	M	A:-	gap
+5200p1L24a	18	42	M	A:-	gap
+5200p1L24a	19	33	M	A:-	gap
+5200p1L24a	20	72	M	A:-	gap

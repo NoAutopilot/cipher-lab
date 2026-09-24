@@ -1,0 +1,48 @@
+# Mechanical reading of jan-van-nassau-1572-75 5200 p1 with key_1572.tsv (decode_key.py).
+# Nulls dropped; [code] = unkeyed sign or illegible mark; CAPS not used, w: clear-hand words kept as read.
+5200p1L01	MONSIEUR MON FRERE, J'AY HIER RECEU VOSTRE LETTRE DATTEE DU 5 DU PRESENT MOYS, PAR
+5200p1L02	LAQUELLE AY PEU AVOIR ENTENDRE LE BON DEVOIR QUE FAICTES A ZOLLINGEN AVECQ
+5200p1L03	QUE FAICTEZ, A QUOY JE VOUS PRIE DE VOULOIR CONTINUER, ET POUR CEST EFFECT, N'AY
+5200p1L04	VOULU OBMETTRE DE VOUS MANDER PAR LA PRESENTE PLUS PARTICULIEREMENT L'ESTAT DES
+5200p1L05	AFFAIRES SURVENUES DEPUIS LE PARTEMENT DU DUC CHRISTOFLE ET DE MON FRERE
+5200p1L06	[s:flourish] SÇAVOIR QUE ON PARTIT LA r e [s:n] d i t [s:i] [s:q] n
+5200p1L07	d e m o n t s EN PARTIE LA
+5200p1L08	c a s [s:f] a t i o n d e m e s r e i
+5200p1L09	t r e s [s:a] t e l [s:e] e m e n t e o
+5200p1L10	[75] n [s:e] l e s u i l LE s
+5200p1L11	DE t o u s c o [s:mars] s [s:venus] t e z [s:jupiter] QUE JE VOY g
+5200p1L12	r a n d [s:sol] [s:venus] c a n g e [s:mars] m e n t [s:jupiter] DE LA c o u
+5200p1L13	r a g e s PAR TOUT, t e l [s:mars] [s:saturn] LE m e n t QUOY
+5200p1L14	l e s m i e u y x a f [s:f] e c t i o n
+5200p1L15	NE z t [s:saturn] r o u NE n t [s:mars] f o r t e [1?]
+5200p1L16	b r a [s:saturn] n l e z [81] [s:mars] [s:sol] NON PAS TANT POUR ESTRE D'AUTRE
+5200p1L17	AFFECTION QUE DU PASSÉ, COMME POUR ESTRE [s:jupiter] [s:sol] [s:venus] s a i [s:f]
+5200p1L18	d u n e f [s:jupiter] r a y e u r CELA QUE JE CRAIND QUE
+5200p1L19	a l a f i n i e m e [s:sol] [s:mmm] t r o u [s:mars] e r a y
+5200p1L20	s e u l ET a b [s:D] [s:saturn] [s:venus] a n d o n NE
+5200p1L21	d e t o u s c o t e z [s:f] DIEU
+5200p1L22	m i [s:venus] r a [s:jupiter] c u [s:saturn] l e u [s:f] e m e n t [s:n] y p o u
+5200p1L23	[s:jupiter] u o i t CAR DEPUIS QUE m a l i [s:jupiter] n e
+5200p1L24	[s:a] e s t e r e m i s e EN t r e [s:venus] l e s [s:mars]
+5200p1L24a	m a i n s DE s [s:mars] [s:sun] [s:moon] e s p a g n o l z QUI ONT
+5200p1L25	[s:mars] [s:jupiter] s a c a g e TOUT, e [s:mars] l a [s:jupiter]
+5200p1L26	u i l [s:venus] LES [s:e] e s p a c e d e TRES [s:mars] o u
+5200p1L27	QU a t r e i o u r s [s:mars] [s:jupiter] LE s [s:venus] g a
+5200p1L28	n i s o n s DOIT a u t r e s [s:mars] u i L l
+5200p1L29	e s ONT Y t e L l e m e n t e f [s:illegible] [s:illegible]
+5200p1L30	e e s QUE ELLE AVOIT APRES (OU) (AUTRES) o n t [s:venus]
+5200p1L31	QUI t [s:f] e LE s p a c e QUI LOUR
+5200p1L32	a u o y e n t e s t e c o m [s:jupiter] [s:f]
+5200p1L33	i s e s [s:jupiter] [81] CAR MAINTENANT QUE AFFAIRES FAIT DE
+5200p1L34	[s:jupiter] [s:mars] r u r e o n d e [s:venus] [s:sol] l e s
+5200p1L35	[s:f] o l d a t s l o n t a b
+5200p1L36	n [s:blot] o [s:n] n e [s:e] [s:jupiter] [s:mars] l e e
+5200p1L37	p l e DOIT q u e l z A SE TOST QUE [s:venus] e k
+5200p1L38	[s:jupiter] u y d e c e u x DE a c h t e n [s:jupiter] d o
+5200p1L39	[s:sol] [s:jupiter] LESQUELZ DU COMMENCEMENT ME [s:jupiter] m a u o y e n
+5200p1L40	u o u l [s:n] r e c e u o i r u DE d a n
+5200p1L41	l a u i L l e [s:venus] [s:mars] SINON AUSSI QUELQUES s
+5200p1L42	e p t o u h u i [s:venus] t G e u [s:f]
+5200p1L43	[s:n] [s:n] l k x ET PUIS APRES k n [s:jupiter] m e [s:mars] o u
+5200p1L44	l u r [s:e] n t LA i [s:f] s [s:e] p a g [s:venus]
+5200p1L45	t i r SANS PEUR p a y e z [s:jupiter] [s:mars] s i n o n

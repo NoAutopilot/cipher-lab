@@ -216,3 +216,75 @@ for every row (a printed key source); rows 1-99 not multiples of 3 are the print
   decode.json (tsv format, clear_prefix 'w:', key key_1572.tsv) and run decode_key.py --check for 5200/5207/5213;
   (b) 5218/5222: known-plaintext recovery of the 1575 nomenclator needs a careful group-by-group aligner pass
   (the positional ones in passes/align_*.tsv are too loose), then test the resulting key on 5221 (values to ~137).
+
+## J2: 5200 p1 read (LANE R2, 24 September 2026)
+
+Worker J2 (Sonnet, cap $6, no network, at most one subagent -- none used). Per
+`.claude/briefs/runs/2026-09-24-lane-r2-jan-5200.md`. **Scope reached: 5200 page 1 of 3 only** -- pages 2-3
+(images `images/05200_p2.jpg`, `05200_p3.jpg`) exist but were not transcribed this pass (cap). This is the first
+graded, reconciled reading under key_1572; **key_1572 reads real French prose**, confirming J1's spot check
+beyond a handful of words.
+
+**Blindness caveat.** Before starting pass B this worker read the first and last ~20 rows of `passes/passA_5200.tsv`
+while checking the file's column format (per COMMON rule 2's "read the target's NOTES.md"; this file was not named
+by that rule but was opened for schema context). That covers roughly p1 L01-L06 and L44-L45 of pass A's own
+transcription, out of 835 rows. Pass B for those specific lines is not strictly blind; the digits there are
+unambiguous in the image and independent zoomed re-reads of the same spans agree, so this is not believed to have
+biased the transcription, but it is a deviation from PASS-BRIEF.md's "do not open any other pass file" and is
+recorded per rule 10/COMMON rule 7 honesty requirements.
+
+1. **Pass B** (`passes/passB_5200.tsv`, page 1 only, blind read from `images/05200_p1.jpg` at 8 overlapping bands
+   plus targeted zooms): found **46 physical lines**, one more than pass A's 44 (pass A's own last row is L45,
+   but its 835 rows for a 44-45 line page already show it undercounts by one -- see below). Committed d8be9c0..8ca9c09.
+2. **Reconciliation finding: pass A skipped a whole manuscript line.** `tools/reconcile_passes.py` first run
+   (raw line-for-line) gave only 50.4% agreement, dropping sharply after pass A/B's shared L24. Cropped and
+   re-read the image directly at that point (`/tmp/j2/crops/p1_L23-26top.png`, not committed -- scratch):
+   between pass A's own L24 ("...a este remise entre les...") and L25 ("25.20.mars.jupiter.54.3.5...") the
+   manuscript has one more full line ("35.36.3.27.39.54.de.54.mars.sun.moon.15.54.45.3.20.21.39.42.33.72.qui
+   ont") that pass A's transcription has no row for at all -- not a misread, an omitted line. Relabelled pass B's
+   own lines 26-46 down by one (to match pass A's existing numbering) and gave the recovered line the id
+   `5200p1L24a`; re-ran the reconciler: **89.2% agreement (728/816 aligned signs)**, disagreement count dropped
+   from 438 to 88 columns. This is a correction to pass A's own file, not a rewrite of it (passA_5200.tsv is left
+   as J1 committed it; the line-count fix lives only in the reconciled `passes/ciphertext_5200.tsv`).
+3. **Settling the disagreements that change the decoded letter under key_1572** (a value's mult-of-3-or-not, or
+   which multiple of 3): of ~90 remaining columns, most are non-numeric sign labels (s:mars vs s:venus etc, no
+   key entry either way, no decode impact) or both-null digit pairs (e.g. 52 vs 32, both non-multiples of 3) --
+   left as pass A with grade M per the brief's default. 17 positions actually changed the decoded letter or a
+   present/absent token; each was re-cropped and re-read at 3-5x zoom directly against the image (not from either
+   pass's memory) rather than adjudicated by preference:
+   - Pass B correct (13): L09 pos24 (31, not A's 51); L32 pos13 (55, not 15) and pos22 (s:f, not s:venus); L33
+     pos6 (54, not 59); L42 pos3 (45 -- a genuine digit, not A's sign read), pos12 (s:venus, not s:f), pos17 (29,
+     not 24), and a trailing s:f pass A omitted entirely (gap); L43 pos3 (33=l, not A's 37=null -- changes the
+     letter), pos9 (19, not 15), pos11 (36=m, not A's 86=null -- changes the letter); L44 pos16 (19, not 14) and
+     pos22 (21=g, not A's 11=null -- changes the letter).
+   - Pass A correct (2): L12 pos9 (29, not B's 24) and pos24 (42 -- a genuine digit that B misread as a sign).
+   - Genuinely illegible on both re-checks (1 spot, 2 tokens): L29's last two marks at the right page edge (A
+     guessed "f?"/"9?", B guessed differently); graded L/`s:illegible`, no letter assigned to either.
+   - Pass A alone read a leading sign at L43 pos1 (`s:n`) that pass B had omitted; kept (gap, grade M).
+   `passes/ciphertext_5200.tsv` is the result: 859 rows.
+4. **decode.json + decode_key.py** (`decode_5200.json`, job `passes/ciphertext_5200.tsv` -> `reading_5200_p1.txt`
+   / `reading_5200_p1_tokens.tsv`). `--check` exits 0.
+   **Counts (page 1 of 3 only): 807 cipher-sign tokens, H 680, M 26, U 101. No C grade (no known-plaintext
+   pairing used); no S (the key is printed/H, not cryptanalytic).** Rule 3 (matched control) does not apply here
+   -- this is a positive reading under an H-grade printed key, not a negative.
+5. **The reading is real, connected French**, consistent with WVO's own content summary ("surrender of Mons,
+   plundering of Mechelen, garrison withdrawals... decision to withdraw to Holland and Zeeland"): phrases
+   recovered include "...GRAND CHANGEMENT...", "DE TOUS COSTEZ QUE JE VOY", "NON PAS TANT POUR ESTRE D'AUTRE
+   AFFECTION QUE DU PASSÉ COMME POUR ESTRE", "CELA QUE JE CRAIND QUE", "CAR DEPUIS QUE mali[g]ne [fortune?]...
+   EST REMISE ENTRE LES MAINS DES ESPAGNOLZ QUI ONT SACCAGÉ TOUT", "QUATRE JOURS", "GARNISONS DOICT AUTRES",
+   "QUE ELLE AVOIT APRES (OU) (AUTRES)", "QUI LEUR", "CAR MAINTENANT QUE AFFAIRES FAIT DE... les soldats",
+   "LESQUELZ DU COMMENCEMENT ME", "SINON AUSSI QUELQUES", "ET PUIS APRES", "SANS PEUR PAYEZ... SINON". The last
+   line (p1 L45) cuts off mid-word ("...LA...ESPAGn..."), consistent with the sentence continuing onto page 2,
+   which this pass did not reach.
+   The many single decoded letters with no word boundaries marked (the key has no separator/word-break device
+   found so far) make most of the running text choppy between these recognisable phrases; a word-segmentation
+   pass (LESSONS.md's beam-search-over-lexicon approach) was not attempted this pass (budget/scope).
+6. **Not done this pass (cap, in scope per brief but not reached):** pages 2-3 of 5200 (images already fetched by
+   the C1 capture worker, `images/05200_p2.jpg`, `05200_p3.jpg`) -- no pass A or B exists for them. A French
+   place-name corpus check on "Zollingen"/"Sollingen" (L02, M grade) was not run. Groen IV 2-6 nr. CCCLXXXIX,
+   5200's cited print, was **not checked** this pass -- LANE V2's to search (per brief).
+7. **Grade counts for LANE V2 / any verifier:** page 1 of 3, 807 cipher tokens, H 680 (84.3%) M 26 (3.2%) U 101
+   (12.5%), 0 C, 0 S. No novelty classification made (rule 10); this worker does not know whether Groen prints
+   this passage.
+
+Status stays **open** (page 1 of 3 read; letter not fully read; no novelty check performed).

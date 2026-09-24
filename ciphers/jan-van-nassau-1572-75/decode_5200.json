@@ -1,0 +1,11 @@
+{"target": "ciphers/jan-van-nassau-1572-75",
+ "note": "5200 p1 (18 Oct 1572), reconciled from passA_5200.tsv + passB_5200.tsv (J1/J2), key_1572.tsv.",
+ "jobs": [
+  {"ciphertext": "passes/ciphertext_5200.tsv", "reading": "reading_5200_p1.txt", "tokens": "reading_5200_p1_tokens.tsv"}
+ ],
+ "defaults": {"format": "tsv", "style": "spaced", "key": "key_1572.tsv", "uncertain_conf": ["M", "L", "U"],
+   "unkeyed_grade": "U", "word_values": [],
+   "header": ["# Mechanical reading of jan-van-nassau-1572-75 5200 p1 with key_1572.tsv (decode_key.py).",
+              "# Nulls dropped; [code] = unkeyed sign or illegible mark; CAPS not used, w: clear-hand words kept as read."],
+   "token_columns": [["line","line"],["pos","pos"],["sign","raw"],["value","value"],["grade","grade"]]}
+}

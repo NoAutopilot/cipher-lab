@@ -1,0 +1,89 @@
+line	col	A	B	flagged	crop
+5200p1L06	19	s:q	9	AB	
+5200p1L07	21	-	19	B	
+5200p1L09	15	s:e	s:b	B	
+5200p1L09	24	51	31	A	
+5200p1L09	26	-	39		
+5200p1L10	2	52	32		
+5200p1L10	6	s:e	s:c	B	
+5200p1L11	11	s:venus	s:jupiter	B	
+5200p1L12	6	s:sol	s:saturn	AB	
+5200p1L12	9	29	24		
+5200p1L12	23	42	s:mars	B	
+5200p1L14	1	53	32		
+5200p1L14	11	69	68	B	
+5200p1L15	3	50	s:f	AB	
+5200p1L15	21	1	-	A	
+5200p1L16	11	74	79	B	
+5200p1L16	14	s:sol	s:sun	B	
+5200p1L17	5	s:sol	s:sun	B	
+5200p1L18	14	-	2		
+5200p1L19	4	3	s:f	B	
+5200p1L19	13	s:sol	-	A	
+5200p1L19	14	s:mmm	s:sun	AB	
+5200p1L19	21	14	19	B	
+5200p1L20	12	s:D	s:sun	AB	
+5200p1L20	13	s:saturn	s:venus	AB	
+5200p1L22	21	s:n	-	A	
+5200p1L26	6	s:e	-	A	
+5200p1L26	20	s:mars	-		
+5200p1L27	22	-	5	B	
+5200p1L29	18	f	s:f	AB	
+5200p1L29	19	9	31	AB	
+5200p1L31	17	-	2		
+5200p1L31	18	25	20	B	
+5200p1L32	13	15	55		
+5200p1L32	22	s:venus	s:f	AB	
+5200p1L33	6	59	54		
+5200p1L34	18	s:sol	s:sun	B	
+5200p1L34	22	-	5	B	
+5200p1L35	5	82	32		
+5200p1L35	23	-	8	B	
+5200p1L36	3	s:blot	s:inkblot	AB	
+5200p1L36	5	s:n	-	A	
+5200p1L36	13	s:e	-	A	
+5200p1L36	15	s:jupiter	s:venus	B	
+5200p1L36	17	-	s:jupiter	B	
+5200p1L36	21	15	1	B	
+5200p1L37	4	17	34	B	
+5200p1L38	12	62	63	B	
+5200p1L39	1	s:sol	s:sun	AB	
+5200p1L39	14	-	57		
+5200p1L40	7	s:n	-	A	
+5200p1L40	23	-	24	B	
+5200p1L41	11	s:venus	s:jupiter	B	
+5200p1L42	3	s:f	45	A	
+5200p1L42	12	s:f	s:venus	AB	
+5200p1L42	16	24	29		
+5200p1L42	20	-	s:f	B	
+5200p1L43	1	s:n	-	A	
+5200p1L43	3	37	33		
+5200p1L43	8	15	19		
+5200p1L43	10	86	36	A	
+5200p1L44	6	s:e	-	A	
+5200p1L44	15	14	-		
+5200p1L44	16	s:e	19	A	
+5200p1L44	21	11	21		
+5200p1L45	10	s:jupiter	-		
+5200p1L45	11	s:mars	s:venus	B	
+5200p1L45	16	39	-		
+5200p1L24a	1	-	35		
+5200p1L24a	2	-	36		
+5200p1L24a	3	-	3		
+5200p1L24a	4	-	27		
+5200p1L24a	5	-	39		
+5200p1L24a	6	-	54		
+5200p1L24a	7	-	54		
+5200p1L24a	8	-	s:mars	B	
+5200p1L24a	9	-	s:sun	B	
+5200p1L24a	10	-	s:moon	B	
+5200p1L24a	11	-	15		
+5200p1L24a	12	-	54		
+5200p1L24a	13	-	45		
+5200p1L24a	14	-	3		
+5200p1L24a	15	-	20		
+5200p1L24a	16	-	21		
+5200p1L24a	17	-	39		
+5200p1L24a	18	-	42		
+5200p1L24a	19	-	33		
+5200p1L24a	20	-	72		
