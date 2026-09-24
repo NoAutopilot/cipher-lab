@@ -3718,6 +3718,72 @@ check.py batch across 9 invnrs plus HU8's collection/research-guide pages), `git
 (grepped, not committed), `emlo-portal.bodleian.ox.ac.uk`/`emlo.bodleian.ox.ac.uk` 1 curl (503, unreachable,
 not retried) + 2 browser_fetch (worked), WebSearch 8. No subagents. Well under the brief's $6 cap.
 
+### LANE N2 SCOUT round 2, 24 September 2026 (scHU2, brief `.claude/briefs/runs/2026-09-24-lane-n2-scHU2.md`)
+
+Reran the same five retroboeken search accessors (Heinsius, De Witt, Oldenbarnevelt, Willem III/Bentinck,
+Staten-Generaal) with wider terms than round 1 (`cijferschrift`, `onopgelost`, `gecijferd`): `in cijfer`,
+`cijfers`, `ontcijferd`, `ontcijfering`, `dechiffré`, `déchiffré`, `chiffre`, `en chiffres`, `sleutel`, `niet
+ontcijferd`, `niet kunnen ontcijferen`, `onleesbaar cijfer`, `cipher`, `cypher`, `notis` -- 75 term-edition
+queries (one page/20 hits each, budget guard against `sleutel`/`in cijfer`'s much larger hit counts), 277 raw
+hits, triaged by keyword against an index/register noise filter (`verwijzen naar`, `ALGEMENE INDEX`,
+`CORRESPONDENTEN` etc., the same false-positive shape round 1 found for bare `cijfer`). 9 hits looked genuinely
+promising after triage; the actual printed page was opened for all 9. **3 kept, 6 rejected on the page** (found
+already-solved, lost/not-extant, or not actually about a cipher at all -- see `sources/huygens/
+cipher-letters-round2-2026-09-24.tsv` for all 9 with the full page text checked). Full method, every term's
+hit/truncation count, and the two follow-up jobs below are in `sources/huygens/NOTES.md`'s round-2 addendum.
+
+**Raw 277, triaged-promising 9, kept 3, printed-ciphertext-on-the-page 2 (HU9, HU10).**
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Leaf viewed | Image route |
+|---|---|---|---|---|---|---|---|---|
+| HU9 | Heinsius correspondence: Van Haersolte (writing from Warsaw) to Heinsius, letter no. 341, a numeric name-code (178, 198) in running French text | 30 Mar 1703 | fr | cryptanalysis | Nationaal Archief 3.01.19, inv.nr. 841 (H.A. 841) | "Niet aangetroffen; de sleutel tot het gebruikte geheimschrift is niet bekend" (original not found; the key to the cipher used is not known) -- same numeric-name-code shape as HU1, different sender/H.A. | No (printed-edition page image read, not the manuscript) | Not copy-free by pattern (NA 3.01.19; invnr 841 itself not individually checked against the archive's per-item JSON this pass) |
+| HU10 | Heinsius correspondence: Sauniere de l'Hermitage (London) to Heinsius, letter no. 1231, a numeric code (14, 33, more) in running French text | 4 Dec 1705 | fr | recovery (same correspondent as HU2's candidate-key lead, different instance) | Nationaal Archief 3.01.19, inv.nr. 1034 (H.A. 1034) | "De code is onbekend, een sleutel is niet aanwezig. Voor 14 zou Tories gelezen kunnen worden, de lezing van de andere cijfers blijft een gissing." (the code is unknown, no key is present; 14 might tentatively read 'Tories', the rest is a guess) -- same sender as HU2 (H.A. 946, Feb-May 1704) but 19 months later and a different H.A. number, so probably the same broader numeric-code system extended across archival years | No | Not copy-free by pattern (NA 3.01.19; invnr 1034 not individually checked) |
+| HU11 | Staten-Generaal resolutions: an unnamed magistrate of Breda to the States-General, resolution no. 573 sub-note "d" | 18 Sept [1624 or 1625 -- the day itself is enciphered, per the editor] | nl | cryptanalysis | S.G. 4945 I, orig. (Nationaal Archief 1.01.02, a *different* NA series from Heinsius's 3.01.19) | "De brief is vrijwel geheel in cijferschrift, inclusief de dag in de datum, hetgeen de identificatie onzeker maakt" (the letter is almost entirely in cipher, including the day in the date, which makes identification uncertain) -- resolves round 1's flagged-but-unresolved "Deel 7 p.100" item to source_id `7` (NR = nieuwe reeks, juli 1624-1625, GS223), not `7OR` | No -- and the resolution register does not reproduce ciphertext at all (it summarizes incoming letters), so this edition's own page carries no ciphertext to check | Copy status not checked this pass (different series/inventory than the na_scan_check.py sweep covered) |
+
+**Rejected after opening the page (6 of 9), not carried to rows:** heinsius/`in 't cijfer` (Deel 10 p.213) describes
+a *third party's* intercepted cipher letters (from Commachio, reported via one Venzati) that were themselves
+already unreadable to the people who had them at the time -- interesting content, no archival item of ours to
+target. heinsius/sleutel (Deel 10 p.476) is an intercepted Maréchal de Villars letter to the abbé de Polignac
+that Heinsius's own correspondent could not read for lack of the key -- but the editor's footnote states neither
+that covering letter nor the enclosed Villars letter survive in the archive ("Niet aangetroffen"), so there is no
+extant ciphertext to work from. oldenbarnevelt/preface (Deel 2 p.XIII) is the *editor's own* general remark about
+the difficulty of palaeographic transcription ("ontcijfering" = reading hard handwriting, not code-breaking) --
+a false positive from the ambiguous search term. oldenbarnevelt/sleutel (Deel 1 p.269-270, "No. 128", 1594) is a
+nomenclator dispatch **already solved**: the editor's own bracketed glosses decode every code-name in the text
+and a footnote points to an established key ("Voor de oplossing zie hiervóór p.269 n.1"). willemiii/cijfers
+(KS24 p.456-457, letter no. 456) is explicitly marked already solved by the editor via a key described earlier
+in the same volume ("De hier onopgeloste cijfers zijn opgelost met behulp van het hiervóór, blz. 447, genoemde
+'chyfre'"). willemiii/niet ontcijferd (KS23 p.262, letter no. 216) is the editor stating outright that **no**
+ciphered document survives in this correspondence for the passage in question ("Een gecijferd stuk heb ik niet
+aangetroffen in deze correspondentie").
+
+**Job 2: resolved the Willem III-Bentinck Vaudemont index (KS 24 p.812) into letter numbers, and found the
+asterisk does NOT reliably mean cipher.** The book's separate "Chron. lijst brieven" accessor (`toc1`, distinct
+from the plain "Zoek" search used above) takes a `correspondent` field and returned all 172 Vaudemont-related
+letters across the whole edition with real letter numbers; 28 of them are in the "Eerste gedeelte" (KS23/KS24,
+the volumes the p.812 index itself belongs to; the other 144 are "Tweede gedeelte" outgoing-register copies from
+a different span and are not part of this index at all). The 28 map date-for-date onto the p.812 alphabetical
+index: **24 of the 28 carry an asterisk** (letters 182, 184-185, 189-194, 209-212, 214-223 -- full table in the
+TSV), including letter 220 (25 Mar 1699, already HU6). Round 1's harvest inferred "the index marks cipher letters
+with an asterisk" from that single entry alone. **This pass opened three more asterisked letters (192, 214, 215)
+and all three are ordinary plain-French correspondence with no cipher, no "sleutel"/"cijfer" language in their
+footnotes at all** (a papal-envoy recommendation, a courtesy note about a coach's upholstery, a letter to Willem
+III about weather delaying a departure). 3 opened, 1 confirmed cipher (220/HU6), 2 confirmed not. **Correction:**
+the asterisk is not a cipher marker on this evidence; what it does mark is unresolved (candidate: "has an
+editorial identification footnote" -- untested). The remaining ~20 asterisked letters (full list with letter
+numbers, dates, and printed pages in the TSV) are an unswept lead only in the weak sense that they are now
+locatable by letter number; they should not be treated as cipher candidates without individually opening the
+page, the same one-data-point trap this correction fixes.
+
+Requests: `resources.huygens.knaw.nl` ~128 (75 term-edition search queries + pagination; 17 page-content
+verification fetches with their pages.json lookups; 4 requests to resolve the Staten-Generaal Deel 7 item; 6
+requests for the Willem III chronological-letter-list accessor and its two result batches; the rest initial
+accessor/form/navigation discovery), all >=2.1s apart, descriptive User-Agent, no logins, no images downloaded,
+under the brief's 150-request cap. `github.com` 2 shallow clones (`dbourdeau/cyphersolver`,
+`aaymeloglu/unsolved-ciphers`), grepped for Haersolte/Sauniere/Hermitage/Breda/Vaudemont (no matches; not
+committed). No other hosts, no subagents. No check-solved run on HU9-HU11 (scout brief; next worker runs
+check-solved before any nomination). No novelty wording.
+
 ## Florence, Dieci di Balìa Responsive (LANE N2 probe of 24 September 2026)
 
 Brief: `.claude/briefs/runs/2026-09-24-lane-n2-flFI.md`. Access-and-literature probe, not check-solved: no

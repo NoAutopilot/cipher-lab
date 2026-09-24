@@ -209,3 +209,114 @@ recording here for the next worker on this series:
   `ciphers/vanbeuningen-dewitt-1657/NOTES.md`. The specific inv.nr for the 19/29 Sept 1657 letter (and its
   separately-surviving cipher copy) remains unresolved; EMLO's advanced search is a React app that needs
   interactive form-filling, not URL query guessing.
+
+## Round 2, 24 September 2026 (LANE N2 scout scHU2, brief `.claude/briefs/runs/2026-09-24-lane-n2-scHU2.md`)
+
+Job: rerun the same five books' search accessors with wider terms than round 1's `cijferschrift`/`onopgelost`/
+`gecijferd`, and resolve two specific open items from round 1 (the Staten-Generaal Deel 7 p.100 "7 vs 7OR/7NR"
+ambiguity, and the Willem III/Bentinck Vaudemont index's asterisked entries at KS 24 p.812 into letter numbers).
+Full result rows are `sources/huygens/cipher-letters-round2-2026-09-24.tsv`; QUEUE.md carries the HU9-HU11 rows
+and the same summary as here.
+
+### Method, term sweep
+
+Confirmed the search accessor mechanics round 1 only partly reverse-engineered: each book's "Zoek" tab is a
+lazily-loaded Zope pane at `retroboeken/<book>/<accessor_id>/index_html`, `accessor_id` = `search_in_text`
+(heinsius, dewitt) or `searchText` (oldenbarnevelt, willemiii, statengeneraal) as round 1 found; GET params are
+`search_term:ustring:utf-8=<term>` and `source_id=` (blank = search the whole multi-volume edition in one call)
+and, for a second page, `batch_start=20,40,...`. Each hit is a `<div class="item">` with `page=`/`source=`
+(feeds `retroboeken/<book>/pages.json?source=<M>`, fetched once per volume needed, which maps `page_index` to
+the real OCR `html_url`) and a printed page number in the link text.
+
+Ran 15 terms (`in cijfer`, `cijfers`, `ontcijferd`, `ontcijfering`, `dechiffré`, `déchiffré`, `chiffre`,
+`en chiffres`, `sleutel`, `niet ontcijferd`, `niet kunnen ontcijferen`, `onleesbaar cijfer`, `cipher`, `cypher`,
+`notis`) across the 5 books = 75 queries, single page (<=20 hits) each as a budget guard against `sleutel`/
+`in cijfer`'s much larger counts (heinsius `in cijfer` alone: 143 hits, almost entirely index/table-of-contents
+noise on inspection of the first 20 -- not paginated further). `dechiffré`/`déchiffré`/`ontcijfering`/`cipher`/
+`onleesbaar cijfer`/`niet ontcijferd`/`niet kunnen ontcijferen` mostly returned 0-2 hits across all five books:
+these OCR'd 17th-19th-century Dutch/French editions essentially never use the accented French spelling or the
+bare English word, and "niet ontcijferd" as an exact phrase is rarer than the editors' actual usual wording
+("onopgelost", already covered by round 1). 277 raw hits fetched; triaged against a noise-word filter
+(`verwijzen naar`, `ALGEMENE INDEX`, `CORRESPONDENTEN`, `REGISTER`, `bladzijden`, `briefnummers` -- the same
+index/table-of-contents false-positive shape round 1 hit on bare `cijfer`) crossed with a positive-indicator
+filter (`onopgelost`, `niet gevonden`, `sleutel ... niet/kwijt/zoek/verloren`, `weggelaten`, `onleesbaar`, etc).
+9 hits passed both filters; the actual printed OCR page (not just the search snippet) was opened for every one
+of the 9, per the check-solved lesson (a snippet can quote a sentence out of context). **3 kept as new
+candidates (HU9, HU10, HU11); 6 rejected on reading the full page**, for three distinct reasons worth keeping
+as a pattern for future sweeps on this same accessor:
+- **Reporting a cipher that isn't the archive's own** (heinsius Deel 10 p.213, `sleutel`): a Heinsius
+  correspondent *describes* someone else's intercepted cipher letters (from Commachio) that were themselves
+  unreadable to the people who had them at the time. No item of ours to target -- the cipher discussed is not
+  something that survives in this archive.
+- **The editor states the ciphertext itself does not survive** (heinsius Deel 10 p.476, `sleutel`; willemiii
+  KS23 p.262, `niet ontcijferd`): "Niet aangetroffen" (original not found/located) or "Een gecijferd stuk heb ik
+  niet aangetroffen in deze correspondentie" (I have not found a ciphered piece in this correspondence). These
+  read exactly like round 1's Oldenbarnevelt no. 221 exclusion -- worth excluding the same way, not nominating.
+- **Already solved by the editor, missed because the search only surfaces the word, not the solved/unsolved
+  status** (oldenbarnevelt Deel 1 p.269-270 "No. 128" 1594, a nomenclator dispatch the editor decodes inline
+  with bracketed glosses and a working key cross-referenced by page/note number; willemiii KS24 p.456-457 letter
+  456, explicitly "De hier onopgeloste cijfers zijn opgelost met behulp van het hiervóór, blz. 447, genoemde
+  'chyfre'" -- solved via a key described two pages earlier in the same volume). This is the Thurloe/Montagu
+  lesson's shape again: the same edition can hold both the cipher and its own solution, and a keyword hit alone
+  cannot tell which.
+- **False positive from an ambiguous Dutch word** (oldenbarnevelt Deel 2 p.XIII, `ontcijferd`/`ontcijfering`):
+  the editor's own preface uses "ontcijfering" for the ordinary difficulty of reading old handwriting
+  (palaeography), not code-breaking.
+
+### Method, Staten-Generaal Deel 7 p.100
+
+Round 1 flagged this item but could not resolve source `7` vs `7OR`/`7NR`. `retroboeken/statengeneraal/
+page_view_navigation` gives the book's own `<select>` of source ids directly: the old series runs `1OR`-`14OR`
+(1576-1609), the new series runs plain `1`-`7` (1610-1625). "Deel 7 (Jul 1624-Jul 1625, GS223)" is unambiguously
+`source=7` new series (not `7OR`, which is 1590-1592). `pages.json?source=7`, printed page 100 = `page_index=
+176`. The item is resolution no. 573 sub-note "d" -- see HU11 in QUEUE.md.
+
+### Method, Willem III-Bentinck Vaudemont index resolution
+
+The book has a *third* accessor beyond "Zoek" (full-text search) and "Inhoud" (chapter TOC): `toc1`,
+labelled "Chron. lijst brieven" in the tab bar, at `retroboeken/willemiii/toc1/index_html`. Its own form takes
+`correspondent:ustring:utf-8` (a remote ComboBox, but a plain GET with the name works directly), `van_aan`
+(van/aan/blank) and a date range, and returns a chronological list of every letter matching, each with its real
+`n. <letter number>` and printed page -- a proper per-letter index, unlike the KS24 p.812 page which only gives
+dates. Query `correspondent=Vaudemont` (no other filters) returned 172 letters total (two batches of 100 + 72,
+`batch_start=100` for the second); 28 of them are in "Eerste gedeelte" (source `1`/`2`, KS23/KS24 -- the volumes
+p.812's index itself belongs to), numbered n.182-223; the other 144 are "Tweede gedeelte" (source `5`, KS28)
+outgoing-letter-register copies from a mostly-overlapping date range but a different editorial series, not
+covered by the p.812 index at all and not examined this pass.
+
+The 28 "Eerste gedeelte" letters match the p.812 index's dated entries one-for-one (full mapping, with each
+letter's asterisk status, in the TSV). **24 of the 28 carry an asterisk in the index; only n.183, and the three
+letters n.186-188 (6/9/11 June 1697, absent from the index altogether, not merely unstarred) do not.** Round 1's
+own inference -- "the index marks cipher letters with an asterisk throughout the Vaudemont run" -- rested on a
+single data point, n.220 (25 Mar 1699 = HU6, whose entry is the only one with explanatory text attached:
+"grootendeels in onopgelost cijferschrift; ook een ontcijferde brief is aanwezig"). This pass opened three more
+asterisked letters at random spacing through the run -- n.192 (14 Aug 1697), n.214 (15 Dec 1697), n.215 (24 Feb
+1698) -- by fetching `pages.json?source=2` once and then each letter's `html_url`. **All three are ordinary,
+un-enciphered French correspondence**: n.192 is a recommendation for a papal envoy to England; n.214 is a
+courtesy note about a letter for the Maréchal de Villeroy; n.215 is Vaudemont writing directly to Willem III
+about weather delaying his departure from Paris. None of their footnotes mention "sleutel", "cijfer", or
+"onopgelost" at all -- they are ordinary identificatory notes about the people named in the text.
+
+**Correction, not a new candidate list:** with 3 opened and only 1 of 4 total data points (counting HU6) actually
+cipher, the asterisk in this index cannot be read as "cipher letter" without opening the page. What it does
+denote is untested (a guess: "carries an editorial identification footnote", since all four opened letters had
+one) and out of scope for this pass. The remaining ~20 asterisked-but-unopened letters (full letter numbers,
+dates and printed pages in the TSV) are a real lead only in the narrow sense that they are now locatable by
+letter number for whoever opens them individually -- they should not be scored, queued, or reported as cipher
+candidates on the asterisk alone. This correction should also flow to `ciphers/vaudemont-willemiii-1699/NOTES.md`
+(HU6's own folder), which inherited round 1's "the index marks... with an asterisk" claim about its own broader
+context.
+
+### Requests
+
+`resources.huygens.knaw.nl`: ~128 this pass (75 term-edition search queries; ~17 page-content verification
+fetches with their `pages.json` lookups for the 9 triaged-promising hits; 4 to resolve the Staten-Generaal
+Deel 7 item, ~1 `page_view_navigation` + 2 `pages.json`/`html_url`; ~10 for the Willem III chronological-list
+accessor's discovery, form, and two result batches, plus 2 more `pages.json`/`html_url` fetches for the
+n.192/214-215 spot-checks; the rest initial accessor/form/navigation discovery for the five books, done once).
+All >=2.1s apart, descriptive User-Agent (`cipher-lab research script (contact via repository)`), no logins, no
+images downloaded, under the brief's 150-request cap. `github.com`: 2 shallow clones (`dbourdeau/cyphersolver`,
+`aaymeloglu/unsolved-ciphers`), grepped for Haersolte/Sauniere/Hermitage/Breda/Vaudemont -- no relevant matches
+(Vaudemont appears only as an incidental word in unrelated corpus/frequency files for other targets), not
+committed. No other hosts. No subagents (brief did not name any). No check-solved run on HU9-HU11; no novelty
+wording; nothing promoted.
