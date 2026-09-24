@@ -1,7 +1,9 @@
 # Thurloe printed cipher letters (23 items, Birch 1742, vols 2/3/5/7)
 
-**Status: partial** for the 5 letters with a Tomokiyo-reconstructed cipher system (7 rows:
-P9, P11, P12, P13, P14, P15, P17); **found-solved** for P19, P21, P22, P23 (24 Sept 2026: four
+**Status: partial** for P9, P14, P15, P17 (Tomokiyo-reconstructed cipher systems);
+**found-solved** for P11, P12, P13 (verifier, 24 Sept 2026, AUDIT.md: class N0 -- Birch 1742,
+vol. 5 pp. 67-69, prints this letter's cipher groups with the contemporary decipherment set
+above each line, and British History Online reproduces that text); **found-solved** for P19, P21, P22, P23 (24 Sept 2026: four
 letters of Lord Fauconberg to Henry Cromwell, 1658, which the print gives with an interlinear
 decipherment and whose cipher Tomokiyo has reconstructed -- see "Monck pool solver" below);
 **open** for the other 12 rows (11 distinct letters, since P5/P6 are two cipher clusters of one
@@ -52,7 +54,10 @@ OCR noise.
 
 ## 2. Check-solved for the 5 keyed letters
 
-None of the 5 is `found-solved`: Tomokiyo's page reconstructs each correspondent's cipher
+(Corrected by the verifier, 24 Sept 2026: P11-13 *is* found-solved -- the decipherment of this
+letter is printed by Birch himself, interlined above the cipher; see section 9 and AUDIT.md. The
+sentence below held only for Tomokiyo's page, not for the print.) None of the 5 is `found-solved`
+on Tomokiyo's evidence alone: Tomokiyo's page reconstructs each correspondent's cipher
 *from other letters* (mostly BL Add MS manuscript items, DECODE records, or a crib phrase from
 a different Thurloe-vol.3 letter), and does not print a decipherment of any of P9, P11-15 or
 P17 specifically.
@@ -170,7 +175,7 @@ length/symbol-count/design before a negative result means anything -- not attemp
 | Row(s) | Status | Next step |
 |---|---|---|
 | P9 | partial | resolve the 14 June/4 July date question against the BHO page image before treating this as distinct from Tomokiyo's named 4 July letter |
-| P11-13 | partial | image check of BL Add MS 4166 (Montagu's original) would let a real key be built; not attempted here |
+| P11-13 | found-solved | verifier 24 Sept 2026 (AUDIT.md, N0): decipherment printed interlinearly by Birch 1742, v.67-69, and online at BHO; `reading_P11-13.txt` is an alignment of that printed decipherment. Not a cryptanalysis target. (The earlier "BL Add MS 4166" pointer was wrong for this letter: Tomokiyo's Montagu manuscript is BL Add MS 4200 f.76, 19 May 1656, DECODE 8387.) |
 | P14 | partial | as P11-13; also check BL Add MS 4166 f.90-91 (DECODE R4885) Tomokiyo cites for this exact letter |
 | P15 | partial | as P11-13 |
 | P17 | partial | BL Add MS 4166 f.115-116 (DECODE R4896) is Downing's original key manuscript per Tomokiyo -- reading it would turn most of this letter's 892 U-tokens into H |
@@ -259,6 +264,9 @@ other host, no subagents, no logins.
 
 ## 9. P11-13 solver (24 Sept 2026)
 
+(Verifier, 24 Sept 2026: class N0, see AUDIT.md. The plaintext below is Birch's printed
+decipherment of 1742, re-aligned to the groups; it is not an independent reading.)
+
 **What was found.** The 1742 print (IA `collectionofstat05thur`, pp. 67-69, djvu lines 5700-6075)
 sets a decipherment above every cipher line of this letter, letter by letter and word by word;
 the `[PLAIN:...]` lines in `P11-13/ciphertext.txt` are that decipherment, not surrounding clear
@@ -333,3 +341,7 @@ and made no novelty judgement.
 rows show the same interlinear layout and can go through `tools/interlinear_align.py` unchanged;
 (b) a blind run of `tools/nomenclator_anneal.py` on this letter, scored against the printed
 decipherment, would be a real-data benchmark for the solver.
+(c) Verifier suggestion, 24 Sept 2026 (AUDIT.md): grade the five `°`-repaired groups (`4°4?`,
+`5°?` x2, `9°?`, `4°°?`) I rather than C in `decode.py`, giving P11-13 H 36 / C 223 / I 7 / M 32 /
+U 11; (d) BL Add MS 4200 f.76 (Montagu, 19 May 1656, DECODE 8387, per Tomokiyo) may be a manuscript
+of part of this journal-letter -- worth a comparison if the image is ever fetched.
