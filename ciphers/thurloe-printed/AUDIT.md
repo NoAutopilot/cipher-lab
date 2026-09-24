@@ -104,3 +104,141 @@ section 5 pointer to "BL Add MS 4166" was wrong for this letter and has been rep
 4200 f.76. The lesson carries over from the Fauconberg pool (section 8): for any Birch letter,
 check the lines next to the cipher for an interlined decipherment before calling it keyed,
 unkeyed or open.
+
+## P2, P3, P5+P6, P7, P8, P16-P24 -- letters whose decipherment Birch printed in 1742
+
+Verifier: LANE T verifier V1, 24 Sept 2026 (clock read 03:33-03:50 UTC). This session is separate from
+the solver and consolidation workers (A, C, D, E) whose sections are audited here. No decoding done here.
+
+**Claim under audit** (NOTES.md sections 10, 12, 13, 14; index.tsv status column
+`printed-decipherment`): each of these letters has a contemporary decipherment that Birch
+printed in 1742, beside or after the cipher.
+
+**Test.** Same test as P11-13 above: does the 1742 print carry a decipherment of this very letter,
+and does it cover the cipher? This was read directly in the djvu text (`sources/ia-fulltext/thurloe-gz/`,
+restored with zcat, no refetch). Line numbers are djvu lines. Page numbers are Birch's printed pages,
+read from the running heads ("NNN STATE PAPERS OF" / "JOHN THURLOE ESQ. &c. NNN"). They are not
+the "Vol. xxiv p.NNN" marginal notes, which give the manuscript volume's own pagination. For the
+Fauconberg letters, `cov.py` (in this session's scratchpad; its logic is described here) counted
+every line in the letter whose tokens are at least 70% numeral groups, and checked whether a letter
+line of decipherment is set directly above it.
+
+### Verdict
+
+| Item | Class | Printed decipherment (Birch 1742) | Covers the cipher? | Later print or citation found | Confidence |
+|---|---|---|---|---|---|
+| P2 Stouppe to the prince of Tarente, London 25 Aug 1654 | **N0** (English translation part) | vol. 2 p.566, "Deciphered thus:" (djvu 47028-47059), after the French text with numerals at pp.565-566 (djvu 46965-47024) | Yes, as a translation. The English paragraph renders the whole French passage that carries the numerals, from "Some do believe..." (= "Quelques uns croyent...") to the close. The French words behind the groups are not printed. | Gardiner, *History of the Commonwealth and Protectorate* (1897; 1903; 1965 reprint), "Stouppe's mission"; Abbott, *Writings and Speeches of Oliver Cromwell* (1988 reprint), cites "Stouppe to Tarente, Aug ... 1654" | high |
+| P3 "A letter of intelligence", signed John Butler (Birch: vol. 2, among Sept 1654 papers) | **N0** (body only) | vol. 2 pp.575-576: an interlinear decipherment above each cipher line of the body (djvu 47929-47997), e.g. "wind contrary", "arrived Rotterdam", "eighteenth September" | Body: yes, word by word above the groups. **Postscript** (djvu 47999-48004, three numeral lines after the signature): **no printed decipherment**, so it is not classed here and stays open. | Tomokiyo, thurloe.htm `#Butler`, links a BHO "deciphered text" and "ciphertext (Page 575)" for this letter | high (body) |
+| P5+P6 W. Stamford, Calais, 30 March [1654 N.S.] | **N0** | vol. 3 pp.275-276, "The same letter decypherd." (djvu 23065-23144), after the cipher at pp.274-275 (djvu 22887-23063) | Yes, the whole letter, the postscript included ("Charles Stew. is still at Middleburgh private...") | not found in Google Books or IA outside the Thurloe volumes (Underdown, *Royalist Conspiracy* 1960: "Stamford" hits are the Earl of Stamford only) | high |
+| P7 "S." (Stamford), [20 March 1654] | **N0** | vol. 3 pp.279-280, "The same letter decypher'd." (djvu 23349-23422), after the cipher at pp.277-279 (djvu 23230-23346) | Yes, the whole letter. The ciphered postscript (djvu 23337-23346) is deciphered at djvu 23418-23421 ("If there be any in the army, that have had correspondence with Overton ... Hull ... Yorkshire"). | IA full text: only the Thurloe volumes | high |
+| P8 General Blake to the Protector, George, 12 June 1655 | **N0** | vol. 3 p.541: an interlinear decipherment above every cipher line (djvu 45229-45309) | Yes, the whole letter | Carlyle, *Oliver Cromwell's Letters and Speeches* (editions of 1884-1900 seen in Google Books; 21 IA full-text hits), quotes the deciphered text ("four Galleons designed for the Mediterranean, and six for New Spain..."); Powell, *Letters of Robert Blake* (NRS 76, 1937), prints Blake's 1655 letters and marks cipher passages; Tomokiyo cites p.541 | high |
+| P16 Fauconberg to H. Cromwell, Whitehall 20 Apr [1658] | **N0** | vol. 7 p.84 (djvu 7179-7251), interlinear | 7 of 7 cipher lines have a decipherment line above | an edition of Carlyle's *Letters and Speeches* (IA `lettersspeecheso0003thom`) cites "Thurloe, vii. 84" (April 1658) | high |
+| P17 same, A.D. 1658 (Davies: 30 Aug 1658) | **N0** | vol. 7 pp.365-366 (djvu 32122-32356), interlinear | 49/49 | G. Davies, *The Restoration of Charles II* (1955): "Fauconberg to Henry Cromwell, Aug. 30, Thurloe, VII, 365. Original in cipher"; McMahon, *The Death of Oliver Cromwell*, notes that Fauconberg "wrote Henry in cipher" | high |
+| P18 same, Whitehall 14 Sept [1658] | **N0** | vol. 7 p.386 (djvu 34074-34114), interlinear | 5/5 | Huntington Library Quarterly (Apr 1935) quotes it ("But certainly somwhat is brewing..."); *Richard Cromwell* (IA `richardcromwellp0000henr`): "Fauconberg to Henry Cromwell, 14 Sept. 1658. Ibid., 386" | high |
+| P19 same, Sept 21 [1658] | **N0** | vol. 7 pp.406-407 (djvu 35655-35800), interlinear | 36/36 | -- | high |
+| P20 same, 12 Oct [1658] | **N0** | vol. 7 pp.437-438 (djvu 39860-39962), interlinear | 15/16 by the script. The 16th line (djvu 39912) is followed by an OCR-damaged decipherment line and is not missing in the print | -- | high |
+| P21 same, Oct [1658] | **N0** | vol. 7 pp.450-451 (djvu 41199-41367), interlinear | 37/37 | -- | high |
+| P22 same, 26 Oct [1658] | **N0** | vol. 7 pp.462-463 (djvu 42243-42324), interlinear | 17/17 | -- | high |
+| P23 same, c.23 Nov 1658 | **N0** | vol. 7 pp.528-529 (djvu 49474-49660), interlinear | 30/30 | -- | high |
+| P24 same, 25 Feb 1658/9 | **N0** | vol. 7 pp.612-613 (djvu 56496-56615), interlinear | 23/23 | -- | high |
+
+N0 = plaintext and decipherment of this very item already known. In every case the decipherment
+is Birch's print of what stands in the Thurloe manuscripts: the office's decipherment, interlined
+or copied after the cipher. The project's work on these letters (pairs files, `key_steele.tsv`,
+`key_fauconberg.tsv`, `pool_1654/decipherment_*.txt`, the `reading_*.txt` files) is an alignment
+of printed plaintext to cipher groups. It is useful as keys and as benchmark data. It is not a
+reading. The later-print column matters only for how widely each plaintext has circulated since.
+It does not change any class.
+
+**Safe sentence (all rows).** "Birch printed these letters in 1742 (Thurloe State Papers vols 2, 3
+and 7) with their contemporary decipherment, interlined or following the cipher. We aligned that
+printed decipherment to the cipher groups, which gives group-level keys for the Blake,
+Stamford and Fauconberg ciphers and real-data benchmarks. P3's three-line postscript is the one
+passage here with no printed decipherment."
+Row-specific additions: P2, "Birch prints an English translation of the deciphered French, not the
+French plaintext"; P8, "the deciphered text is also printed in Carlyle's *Letters and Speeches*".
+
+**Unsafe sentence.** "We read, decoded or deciphered" any of these letters. So is "a reading of
+Stamford's/Blake's/Fauconberg's cipher letters", "446 of 513 groups now read", or anything that
+implies the plaintext was recovered by us or was not already in print. For P3, "the Butler
+letter is deciphered in print" is unsafe without "except its postscript".
+
+### Corrections found while checking (factual, not novelty)
+
+1. **P7's postscript is deciphered in print.** NOTES s.12.2 said it was "a still-ciphered
+   postscript, L23337-46, not covered by the decipherment". Birch's decipherment ends with it
+   (djvu 23418-23421). Corrected in NOTES.
+2. **Stamford dates are 1655 (N.S.), not 1654.** Birch writes "[1654. N.S.]", which is the
+   Old Style year with a New Style day. Vol. 3's title page reads "Papers from December MDCLIV to
+   September MDCLV". P7 refers to Overton as already a prisoner (arrested Jan 1655), and all
+   three letters refer to the "general rising" (Penruddock, March 1655). Tomokiyo also gives
+   "spring of 1655". So P4 is 13 March 1655, P5+P6 30 March 1655 and P7 [20 March 1655], all N.S.
+   (the index and brief say 1654). Correction added in NOTES s.12.
+3. **P3's year is unresolved.** Birch prints the letter in vol. 2 under the running head A.D. 1654
+   (p.576), among September 1654 papers. The internal dates are 18 and 21 September. The 1656
+   date in the repo comes from Tomokiyo's heading "John Butler (1656)". The 1656 "Mr. John Butler"
+   in vol. 5 (djvu 48192, 53079, 54700, Flushing and Bruges, all clear text) is a different
+   informant, and nothing links him to this letter. Record the year as "Sept [1654] (Birch's
+   placement; Tomokiyo 1656)". This is not resolved here. P3's decipherment is confirmed
+   interlinear for the body. NOTES s.13 said "very likely yes" and called the letter
+   "the highest-value follow-up", but the print already gives its plaintext.
+4. **Printed pages.** These differ from index.tsv (running heads read directly): P2 565-566, P3 575-576,
+   P5+P6 274-276, P7 277-280, P8 541, P16 84, P17 365-366, P18 386 (index says ~585), P19 406-407,
+   P20 437-438, P21 450-451, P22 462-463, P23 528-529, P24 612-613.
+5. **P8 grading.** 176 H tokens come from Tomokiyo's `key_blake.tsv`, which is a modern
+   reconstruction, not a contemporary key. Say so wherever H is quoted, as for P11-13. "Now read"
+   (NOTES s.13) should read "aligned". Corrected.
+6. NOTES s.10's index proposal names Tomokiyo's section "Henry Cromwell (1658-1859)". His heading
+   is "(1658-1659)". Corrected.
+
+Proposed index.tsv corrections (LANE T applies; only the columns this audit checked):
+
+```tsv
+row	printed_page	date	status
+P2	565-566	London, 25 Aug 1654	printed-decipherment (AUDIT N0, English translation)
+P3	575-576	c.21-22 Sept [1654] (Birch vol. 2 placement; Tomokiyo gives 1656)	printed-decipherment body (AUDIT N0); postscript djvu 47999-48004 open
+P5	274-276	Calais, 30 March 1655 N.S. (Birch "[1654. N.S.]")	printed-decipherment (AUDIT N0)
+P6	274-276	as P5	printed-decipherment (AUDIT N0)
+P7	277-280	[20 March 1655] (Birch "[March 20, 1654.]")	printed-decipherment incl. postscript (AUDIT N0)
+P8	541	George, 12 June 1655	printed-decipherment (AUDIT N0)
+P16	84	Whitehall, 20 April [1658]	printed-decipherment (AUDIT N0)
+P17	365-366	A.D. 1658 (30 Aug per G. Davies 1955)	printed-decipherment (AUDIT N0)
+P18	386	Whitehall, 14 Sept [1658]	printed-decipherment (AUDIT N0)
+P19	406-407	Sept 21 [1658]	printed-decipherment (AUDIT N0)
+P20	437-438	12 Oct [1658]	printed-decipherment (AUDIT N0)
+P21	450-451	Oct [1658]	printed-decipherment (AUDIT N0)
+P22	462-463	26 Oct [1658]	printed-decipherment (AUDIT N0)
+P23	528-529	c.23 Nov 1658	printed-decipherment (AUDIT N0)
+P24	612-613	25 Feb 1658/9	printed-decipherment (AUDIT N0)
+```
+
+### Search log
+
+| Family | Status | What |
+|---|---|---|
+| (a) Canonical series | searched | Birch vols 2, 3, 7 djvu text, every letter's full extent read or scripted as above; vol. 5 grepped for Butler (the three 1656 hits are a different, clear-text informant) |
+| (b) Sender/recipient correspondence | partly | Powell, *Letters of Robert Blake* (NRS 1937): Google Books snippet only, which shows the edition marks number-cipher passages; the 12 June letter's page not reached. Gaunt, *Correspondence of Henry Cromwell 1655-1659* (Camden 5th ser. 31, 2007): covers the Lansdowne MSS 821-823, whose Fauconberg letters are nos 494 and after. The Thurloe-printed nine were not shown to be in it (snippet only). Abbott, *Writings and Speeches*: cites the Stouppe letter |
+| (c) Documentary editions / narrative histories | searched | Carlyle, *Letters and Speeches* (P8 text; P16 cited); Gardiner (P2); G. Davies 1955 (P17); HLQ 1935 and *Richard Cromwell* 1935 (P18); McMahon (Fauconberg's cipher letters mentioned) |
+| (d) Holding archive (Bodleian Rawlinson A) | not searched | not needed for N0 |
+| (e) Google Books | searched | 13 API queries, with the key, country=US, 2 s apart: exact phrases from each decipherment ("jealous of Stouppe", "make myself the lord protector's prisoner", "correspondence with Overton", "secretarie Massenett", "four galleons designed for the Mediterranean"), plus sender/recipient keyword queries |
+| (e) Internet Archive full text (be-api fts) | searched | 11 queries: the same phrases, plus in-item searches of Underdown (*Royalist Conspiracy*) for "Stamford" and McMahon for "Stouppe Tarente" (0) |
+| (e) HathiTrust, BHO | not searched directly | BHO is not on this worker's host list. Tomokiyo's page links BHO pages for P3 (compid 55340/55550) and P8 (compid 55389), and BHO transcribes the whole Thurloe series, so the plaintext of every row is also online there. This is inferred from the links, not fetched |
+| (f) Solver repos, cipher blogs | taken from NOTES s.14 | Worker E grepped both repositories on 24 Sept 2026: neither catalogues P2, P3 or P8. Tomokiyo's mirror was re-read here for Butler, Stamford, Blake and Henry Cromwell |
+| (g) Scholarship, JSTOR | not searched | not needed for N0. No JSTOR row queued: an N0 from the print cannot be raised |
+
+Requests: www.googleapis.com 13, be-api.us.archive.org 11 (one of them saved its body to a stray
+`/fts.json` outside the repo because of a script bug; the file is harmless and was left in
+place), at least 2 s apart, with a descriptive User-Agent. No other host, no archive.org
+downloads, no logins, no credentials printed.
+
+### Postmortem
+
+Failure: under-reporting, not over-claiming. NOTES s.5 still lists P2, P3, P5+P6, P7, P8, P16,
+P18, P20 and P24 as "open, no lead found", and the header counts them among the "open" rows.
+Workers C, D and E found the printed decipherments but correctly left the status to a verifier.
+Sections 12 and 13 carried three factual slips: P7's postscript "not covered", the Old Style year
+read as 1654, and P3's decipherment "very likely" and "highest-value follow-up". Section 13 also
+said "now read" for an alignment. All of these are corrected in NOTES. The header and s.5 now mark
+these rows found-solved (N0), with P3's postscript kept open. The lesson is the P11-13 lesson
+again: page numbers come from the running head, and year dates from the volume's range, never
+from a bracketed Birch year taken at face value.

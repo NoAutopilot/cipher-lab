@@ -1,13 +1,16 @@
 # Thurloe printed cipher letters (23 items, Birch 1742, vols 2/3/5/7)
 
-**Status: partial** for P9, P14, P15, P17 (Tomokiyo-reconstructed cipher systems);
+**Status: partial** for P9, P14, P15 (Tomokiyo-reconstructed cipher systems; P17, formerly listed here, is Fauconberg, see below);
 **found-solved** for P11, P12, P13 (verifier, 24 Sept 2026, AUDIT.md: class N0 -- Birch 1742,
 vol. 5 pp. 67-69, prints this letter's cipher groups with the contemporary decipherment set
 above each line, and British History Online reproduces that text); **found-solved** for P19, P21, P22, P23 (24 Sept 2026: four
 letters of Lord Fauconberg to Henry Cromwell, 1658, which the print gives with an interlinear
 decipherment and whose cipher Tomokiyo has reconstructed -- see "Monck pool solver" below);
-**open** for the other 12 rows (11 distinct letters, since P5/P6 are two cipher clusters of one
-letter). No item here is `solved`;
+**found-solved** for P2, P3 (body only), P5+P6, P7, P8, P16-P24 (verifier LANE T V1, 24 Sept 2026,
+AUDIT.md: class N0 -- Birch 1742 prints each letter's contemporary decipherment, interlined or
+following the cipher; P2's is an English translation of the deciphered French; P3's three-line
+postscript, djvu vol.2 47999-48004, has no printed decipherment and stays **open**);
+**open** for the remaining rows not named above (P4, P10, and P3's postscript). No item here is `solved`;
 rule 10 applies throughout -- nothing below is described as new, unpublished, unread, first
 or never printed, and no N-class is assigned (that is a verifier's job).
 
@@ -178,9 +181,10 @@ length/symbol-count/design before a negative result means anything -- not attemp
 | P11-13 | found-solved | verifier 24 Sept 2026 (AUDIT.md, N0): decipherment printed interlinearly by Birch 1742, v.67-69, and online at BHO; `reading_P11-13.txt` is an alignment of that printed decipherment. Not a cryptanalysis target. (The earlier "BL Add MS 4166" pointer was wrong for this letter: Tomokiyo's Montagu manuscript is BL Add MS 4200 f.76, 19 May 1656, DECODE 8387.) |
 | P14 | partial | as P11-13; also check BL Add MS 4166 f.90-91 (DECODE R4885) Tomokiyo cites for this exact letter |
 | P15 | partial | as P11-13 |
-| P17 | partial | BL Add MS 4166 f.115-116 (DECODE R4896) is Downing's original key manuscript per Tomokiyo -- reading it would turn most of this letter's 892 U-tokens into H |
+| P17 | found-solved (superseded row below kept for the record: P17 is Fauconberg to H. Cromwell, AUDIT.md N0, not Downing) -- was: partial | BL Add MS 4166 f.115-116 (DECODE R4896) is Downing's original key manuscript per Tomokiyo -- reading it would turn most of this letter's 892 U-tokens into H |
 | P19, P21, P22, P23 | found-solved | Fauconberg to H. Cromwell, 1658: decipherment printed interlinearly by Birch, key reconstructed by Tomokiyo (section 8). Not a cryptanalysis target |
-| P2, P3, P4, P5+P6, P7, P8, P10, P16, P18, P20, P24 | open | no lead found this pass; each is a short, isolated numeral cipher with no reconstructed key and no obvious shared system |
+| P2, P3 (body), P5+P6, P7, P8, P16-P24 | found-solved | verifier 24 Sept 2026 (AUDIT.md, N0): Birch 1742 prints the contemporary decipherment of each (P2 as an English translation). The keys and readings in this folder are alignments of that print. Not cryptanalysis targets. (Superseded row, kept for the record: "P2, P3, P4, P5+P6, P7, P8, P10, P16, P18, P20, P24 -- open, no lead found this pass".) |
+| P3 postscript (djvu vol.2 47999-48004), P4, P10 | open | P3's postscript has no printed decipherment (AUDIT.md); P4 and P10 are not audited here |
 
 ## 6. Files
 
@@ -469,15 +473,15 @@ M/U tokens are exactly the extent to which Birch's own decipherment does not set
 
 ```
 row	sender	recipient	date	cipher_system	keyed
-P16	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	20 April [1658]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
-P17	Lord Fauconberg	Henry Cromwell, lord deputy of Ireland	A.D.1658 (no closer date printed; content places it near the Protector's death, 3 Sept 1658)	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
-P18	Lord Fauconberg	Henry Cromwell, lord deputy of Ireland	Whitehall, 14 Sept [1658]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
-P19	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	Sept. 21. [1658] (trailing "28" in the OCR dateline unexplained)	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
-P20	Lord Fauconberg	Henry Cromwell, lord deputy of Ireland	October the 12. [1658.]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
-P21	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	October [1658] (day not found in this window)	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
-P22	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	26 Oct. [1658.]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
-P23	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	c. 23 Nov [1658]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
-P24	Lord Fauconberg	Henry Cromwell, lord LIEUTENANT of Ireland	Feb. 25. 1658 O.S. (= 1659 N.S.; OCR misprints "75")	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P16	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	20 April [1658]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1659)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P17	Lord Fauconberg	Henry Cromwell, lord deputy of Ireland	A.D.1658 (no closer date printed; content places it near the Protector's death, 3 Sept 1658)	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1659)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P18	Lord Fauconberg	Henry Cromwell, lord deputy of Ireland	Whitehall, 14 Sept [1658]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1659)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P19	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	Sept. 21. [1658] (trailing "28" in the OCR dateline unexplained)	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1659)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P20	Lord Fauconberg	Henry Cromwell, lord deputy of Ireland	October the 12. [1658.]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1659)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P21	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	October [1658] (day not found in this window)	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1659)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P22	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	26 Oct. [1658.]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1659)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P23	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	c. 23 Nov [1658]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1659)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P24	Lord Fauconberg	Henry Cromwell, lord LIEUTENANT of Ireland	Feb. 25. 1658 O.S. (= 1659 N.S.; OCR misprints "75")	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1659)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
 ```
 
 **6. Status.** Not a cryptanalytic result -- no S grades, no control, no anneal (per brief; LANE T
@@ -680,6 +684,12 @@ engage to reward him) namely in discovering of the plott, &c." So "secretary Thu
 `index.tsv` already has for recipient) is a reasonable inference, not itself verified from the
 letter's own salutation.
 
+*Verifier note, 24 Sept 2026 (AUDIT.md):* Birch's "[1654. N.S.]" is the Old Style year with a New Style
+day. Vol. 3 covers December 1654 to September 1655. P7 speaks of Overton as a prisoner (arrested Jan 1655),
+and all three letters speak of the "general rising" (Penruddock, March 1655). So the dates are
+P4 13 March 1655, P5+P6 30 March 1655, P7 [20 March 1655], all N.S. Birch's printed pages are P4 188,
+P5+P6 274-276, P7 277-280; the 319/324/340 figures above are the manuscript volume's (Vol. xxiv).
+
 ### 12.2 Full cipher extent (heading to signature/postscript, hand-verified)
 
 The old windows were padded slices of the reported `ocr_lines`, not the whole letter, and cut two
@@ -689,7 +699,7 @@ of the three items well short of their actual cipher content:
 |---|---|---|---|---|
 | P4 | 15485-15537 (53 lines) | 15467-15648 (182 lines) | ~15485-15600 | none |
 | P5+P6 | 22886-22949 + 23009-23035 (128 lines total, with a gap) | 22884-23063 (180 lines, continuous) | 22887-23059 (includes a ciphered postscript the old windows missed entirely) | 23065-23144 |
-| P7 | 23235-23346 (112 lines) | 23230-23422 (193 lines) | 23235-23348 (incl. a still-ciphered postscript, L23337-46, not covered by the decipherment) | 23350-23422 |
+| P7 | 23235-23346 (112 lines) | 23230-23422 (193 lines) | 23235-23348 (incl. a ciphered postscript, L23337-46; *verifier 24 Sept 2026: the postscript IS deciphered in print, L23418-23421, "If there be any in the army, that have had correspondence with Overton..." -- the earlier "not covered" was wrong*) | 23350-23422 |
 
 ### 12.3 tokens.tsv and cribs.tsv
 
@@ -881,7 +891,7 @@ the extracted text: "62" and "156" appear together exactly where the clear text 
 Ch. St." (djvu 47970, "are ufed by 62 542 and 156, to..." -- 62=Spain, 156=Charles [Stuart]); the
 two proposed nulls (913, 350) both appear in the passage (djvu 47931, 47978/47986).
 
-**Decipherment: very likely yes, interlinear, for the main body (djvu 47929-47992).** Each
+**Decipherment: yes, interlinear, for the main body (djvu 47929-47997)** -- *confirmed by the verifier on 24 Sept 2026 (AUDIT.md, N0 for the body); the postscript 47999-48004 has none. Year: Birch prints this letter in vol. 2 under A.D. 1654 (p.576), among September 1654 papers; the 1656 in this section is Tomokiyo's heading and is unresolved.* Each
 cipher-bearing line there is immediately preceded by a short line of otherwise-unexplained clear
 English words. Letter-count vs group-count (`check_interlinear.py`'s own method, applied by hand
 since no committed `ciphertext.txt` window covers this range): "arrived Rotterdam" (16 letters)
@@ -899,7 +909,7 @@ No formal dateline for the letter was found in the clear text extracted this pas
 September ... old ftyle" and "the twentyeth-one of the month" (djvu 47936-47946), consistent with
 Tomokiyo's "22 September 1656".
 
-**Verdict: the highest-value follow-up of these three rows.** Tomokiyo already names E and two
+**Verdict (superseded by AUDIT.md: the body's plaintext is already in print, N0; only the three-line postscript is open):** Tomokiyo already names E and two
 code values for this exact letter (not a cross-letter reconstruction), and the letter's own body
 looks interlinear by letter-count. A dedicated worker building `key_butler.tsv` from Tomokiyo's
 stated values and running `tools/interlinear_align.py` on djvu 47926-48004 (the method this pass
@@ -934,7 +944,7 @@ cipher group (a clear word printed inline, e.g. "The", "A.  D.").
 |---|---|---|---|---|---|---|---|
 | 176 | 270 | 10 | 25 | 32 | 26 | 539 | 513 |
 
-446 of 513 cipher groups (87%) now read at H or C. Every one of Tomokiyo's worked-example letters
+446 of 513 cipher groups (87%) aligned at H or C (H here = Tomokiyo's modern reconstruction, not a contemporary key; the plaintext itself is Birch's print, AUDIT.md N0, and is also printed in Carlyle's *Letters and Speeches*). Every one of Tomokiyo's worked-example letters
 for this system (26=g, 33=o, 39=u, 36=r, 31=m, 32=n, 38=t, from "26 33 39 24 36 31 24 32 38" =
 "gouerment") agrees with the print's own independent alignment here -- a strong cross-check in
 both directions, not just an application of the key. No matched control (rule 3 is for
