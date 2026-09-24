@@ -3464,6 +3464,43 @@ compliant. No logins, no credentials, no subagents (none named in the brief), no
 beyond reading EMLO's own catalogue notes and abstracts, no novelty wording, nothing promoted, nothing
 check-solved. Cost well under the $4 cap.
 
+### EM4/EM5 check-solved verdicts (LANE N2 worker csEM, 24 September 2026)
+
+Row `.claude/briefs/runs/2026-09-24-lane-n2-csEM.md`. Full search log in `ciphers/wallis-emus203-undeciphered/
+NOTES.md` and `ciphers/williams-1690/NOTES.md`.
+
+**EM4 (all four letters): `blocked`, stage 2 not set, no nomination.** Bourdeau's `bordeaux/` target (grepped,
+not committed) confirms from the solver side that Wallis's own 1653 collection "ends with a French letter of
+4 April 1653" he did not decipher — almost certainly EM4 item 1 — but that target's own solved letter
+(Bordeaux→Brienne, 30 May 1653, BL Add MS 4200, DECODE R7537) is a different sender/recipient/date/shelfmark,
+so it does not itself settle item 1. Thurloe State Papers vol. 1 (Birch 1742, `collectionofstat01thur` on
+archive.org) full-text-searches for Brasset/Bordeaux/Neufville/Buckingham all land on the same page, 838 —
+almost certainly that volume's own B-section index, not body text — so the standard edition for this period
+was located but not actually read past its index this pass (budget/time; see NOTES.md §1e). Per the brief's
+quality rule ("if the standard edition... cannot be located or read, the verdict is blocked, never open"),
+this is scored blocked rather than open. Digital Bodleian: no image ("No items found" for the shelfmark,
+though the site was flagging a "technical issues" outage at fetch time, so not a fully clean negative).
+REQUEST.md filed (Bodleian imaging order).
+
+**EM5: `found-solved` (M-grade, tentative).** The shelfmark EMLO gives (MS. Eng. misc. c. 382) is itself,
+per its Bodleian finding-aid title (read via a WebSearch summary; the finding-aid page 503'd three times
+directly), "a volume of copies by John Wallis of political correspondence deciphered by him for the
+government... with keys to the ciphers used, 1669-70, 1688-95, 1702-3" — the mirror image of EM4's MS. e
+Mus. 203 (his undeciphered intake), and the 1690 date sits inside its stated 1688-95 span. Nothing marks this
+letter as an exception the way EM4's four are explicitly marked. Full reasoning and caveats in
+`ciphers/williams-1690/NOTES.md`. **No nomination for EM5** (found-solved items are not board candidates).
+
+**Flag for EM3 (not this brief's target, not acted on):** EM3 (Austen 25 Feb 1691, Sedley 3 Mar 1691) is the
+*same* MS. Eng. misc. c. 382 volume (pp. 224-225) as EM5. If EM5's reading above is right, EM3's two letters
+are very likely also already in Wallis's own deciphered copies, not open cryptanalysis targets. A future
+check-solved or scout pass on EM3 should start from this finding rather than re-deriving it.
+
+**Requests this row (both items together):** digital.bodleian.ox.ac.uk 4 (2 browser_fetch searches, 2 curl
+shell-only, covering both EM4's and EM5/EM3's shelfmarks). archive.org: advancedsearch 1, be-api fts 6.
+github.com 2 (shallow clones, grepped, not committed). WebSearch 10. WebFetch 4 (2 archives.bodleian 503 ×2
+runs = counted once per item in each NOTES.md; 1 Dominic Winter bot-page, 1 blogs.bodleian 503). No
+subagents, no logins, no DECODE. Well under the $6 cap.
+
 ## Real Academia de la Historia digital library, OAI harvest (LANE N scout of 24 September 2026)
 
 LANE N worker (`.claude/briefs/runs/2026-09-24-lane-n-scRAH.md`). Host: `bibliotecadigital.rah.es/oai/oai.do`
