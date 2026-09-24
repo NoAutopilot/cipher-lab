@@ -392,3 +392,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T21:33Z	session_01AoHBau4eRJRtWzKvx3ZwCs	LANE R5 H3 (Sonnet, cap 16)	fr2933-salviati-1525 f.56r	brief 2026-09-24-lane-r5-h-salviati-leaf.md
 2026-09-24T21:33Z	session_01QhRqqfe3iErdK1TZR51ygR	LANE R5 H4 (Sonnet, cap 16)	fr2933-salviati-1525 f.56v	brief 2026-09-24-lane-r5-h-salviati-leaf.md
 2026-09-24T21:33Z	session_01ETeZfwyk93CjzP7ygFWdF7	LANE R5 G2 (Opus, cap 8)	fr3985 f.176 key60 atlas re-run + judge	brief 2026-09-24-lane-r5-g2-key60-rerun.md
+2026-09-24T21:44Z	session_01YE11botJahNxonn9Q4knFu	LANE N4 csPP03 (Sonnet, cap $5)	check-solved ANTT CLNH/0086/11 Linhares 'Chave' key + ciphertext	brief lane-n4-csPP03
+2026-09-24T21:44Z	session_011Vfg8E4bfijwM885eKmFqF	LANE N4 csBONG (Sonnet, cap $4)	Tomokiyo's Bongars cipher paper for KT-01	brief lane-n4-csBONG
