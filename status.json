@@ -925,10 +925,10 @@
    "date": "24 Sept 2026",
    "kind": "solve",
    "title": "Gramont to Villandry, Rome, 20 May 1530 (BnF fr. 2980 f.29r)",
-   "grade": "N3, two audits; N4 pending",
+   "grade": "N4 (no prior decipherment located)",
    "line": "A 569-sign cipher passage read with the published Gramont 1530 key: 533 signs valued after a blind second reader's corrections, several lines continuous French. No printed plaintext or decipherment located after two logged searches. The second leaf (f.30, 1,973 signs) now reads with the same key on 22 of 55 lines and is with the verifier.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont",
-   "gap": "Camusat 1619 (image-only scans, behind Gallica's challenge), HathiTrust full text (Cloudflare), the JSTOR rows in the queue; then a fresh verifier sets N4",
+   "gap": "Outreach gate 2: the 11 Gramont JSTOR-QUEUE.tsv rows answered or waived by the owner; then a draft (gates 3, 5, 6). N4 decision (final families), AUDIT.md, 24 Sept 2026",
    "phrases": [
     "il y baille a ce porteur",
     "article que j'ay mis a part",
@@ -1160,8 +1160,8 @@
    "date": "24 Sept 2026",
    "kind": "solve",
    "title": "Gramont 1530, fr.2980 f.30r-v: published key applied, 11 more signs at grade S with a matched control",
-   "grade": "N3, two audits (second audit 24 Sept 2026 04:44 UTC); N4 pending",
-   "line": "Continuous French on 32 of 55 lines; N3 after two audits; below N4 while Camusat is not read.",
+   "grade": "N4 (no prior decipherment located)",
+   "line": "Continuous French on 32 of 55 lines; N4 (no prior decipherment located) after two audits and the final-families decision of 24 Sept 2026; outreach waits on the Gramont JSTOR rows.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont"
   },
   {

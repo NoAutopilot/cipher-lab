@@ -1529,3 +1529,106 @@ separately closed negative by LANE G at 05:37 UTC (see "Camusat tract, folios 91
 families the 05:08 N4 decision named are now closed; a fresh N4-decision verifier can act on this without
 further search, per that section's own words ("If both come back negative, the next verifier can assign N4 to
 both items without repeating anything else"). This worker does not assign N4 (not its brief).
+
+## N4 decision (final families), 24 Sept 2026
+
+LANE V N4-decision verifier (Opus, session_01FwWKsqwM57oancfisEiVEE, orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ),
+06:54-07:10 UTC (`date -u` read). This session took no part in any solving, auditing, transcription or gap work above.
+It did not decode. It re-checked the 05:08 table against the whole file, looked for principal families that table
+missed, and closed the small reachable ones in one logged pass.
+
+**Answer: no.21 (f.29r) N4; no.22 (f.30r-v) N4.** Both classes carry the rule-10 qualifier "no prior decipherment
+located". Internal or unpublished work is not excluded.
+
+### 1. The 05:08 table re-checked
+
+- **Camusat ff.91-217: accepted as covered.** LANE G read 124 rectos plus 13 versos, and the verso dossier f.171v-178r
+  in full ("Camusat tract, folios 91-217"). The tract's letters run from 16 May 1531 to 1534, with no 1530 date,
+  no Tarbes and no letter to Villandry after f.180 (4 Dec 1531). The Gramont dossier is 1532-34, addressed to the
+  Pope, the Legate and the grand maître. What is left is the unread versos. Letters in this edition open on a recto,
+  and the chronology held across the whole tract, so this is a residual risk, not an open family.
+- **Camusat, 1619 against 1644 (new check).** Every page read was in the 1644 Gallica copy (bpt6k5039434). Google
+  Books lists two 1619 issues (`MKpSAAAAcAAJ`, 778 pp.; `1d19ZkCU0v8C`, 844 pp. with the *formulaire*). I searched both
+  through the keyed API for two markers found in the 1644 copy. "A Monsieur de Villandre" returns `1d19ZkCU0v8C`
+  with "du 4. Decembre 1531", the same letter as 1644 f.180. "Cardinal de Gramont" plus "affaire du Roy d'Angleterre"
+  returns both 1619 issues with "du 7 Feburier ... à nostre S. Pere", the late dossier of 1644 f.171v-178r. The 1644
+  copy's filler genealogies also stop at 1619 (LANE G). So the 1644 is treated as a reissue of the 1619 sheets and
+  the family counts as covered. That the two editions are identical was not proven folio by folio.
+- **DECODE: accepted as covered.** I checked the method as briefed. The worker's first script treated DECODE's
+  empty-state text ("No records found", which appears on every page) as a zero and under-reported hits. The fix
+  counts `RecordsView/<id>` links instead. The table in "DECODE search" was produced by the corrected method: its
+  non-zero rows (sender Gramont 4, additional_information Gramont 1 and 2980 2, Rome 1528-32 5) name ids, grid
+  columns and statuses, and the old method would have shown zero for all of them. The section does not say that
+  each zero row was re-run after the fix, so I tested that independently from the repo's own login-free census,
+  `sources/decode/records-non-decrypted-2026-09-24.tsv` (1,186 Non-decrypted and Partially decrypted Cipher records,
+  collected by another route). It has ids 3698, 4226 and 4227 (Gramont, fr.3040/3091), as the live search found,
+  and no row with 2980, Villandr, Gramont outside those, or Tarbe. A *Decrypted* fr.2980 record would be missed by the
+  census. It would still have come up under sender = Gramont/Tarbes, a post-fix query whose four hits include the
+  Decrypted id 4225, because DECODE files this BnF series under "Gabriel de Gramont, bishop of Tarbes". It would also
+  have come up under Rome 1528-1532 (post-fix, 5 hits). **Residual, non-blocking:** sender "Grammont" (double m) was
+  not queried, and neither the zero for c_holder "2980" nor the zero for receiver "Villandry" was shown to be a
+  post-fix run. One re-run of those three queries would remove the residual (LANE N, suggestion only).
+
+### 2. Principal families the 05:08 table missed, and this session's pass
+
+| family | why it could print either letter | result |
+|---|---|---|
+| **Lanz, *Correspondenz des Kaisers Karl V.* I (1844)** (1513-1532) | Imperial correspondence; could print or summarise intercepted French despatches of 1530 | IA `bub_gb_RnURAAAAYAAJ` and `bub_gb_ns4FAAAAQAAJ` (both vol. I, full djvu): "Tarb" 3/2 hits, all OCR noise ("tarbatkias"); Gram(m)ont 0; Villandr 0. Vol. II (`bub_gb_UmwRAAAAYAAJ`) was fetched but not needed. **Covered, no hit** |
+| **Heine, *Briefe an Kaiser Karl V. ... von seinem Beichtvater* (Loaysa, Rome 1530-32; 1848)** | Loaysa wrote from Rome in 1530 about Tarbes and about letters intercepted at Asti | IA `briefeankaiserk00loaygoog`, full djvu: "Tarba" about 19 times (the Spanish originals: Loaysa's reports of "Tarba"'s audiences, 1530-31), Agramont 2, Villandr 0. Letter IV, "Rom den 21. Juni" [1530], describes "gewisse Briefe, die in Asti aufgefangen und von Florenz gekommen sind" (Spanish: "letras interceptas en Haste"). It characterises them (French and English envy, no ducats sent to Florence) and **prints no text**. This matches the Asti row of the f.30 second audit. **Covered, no print** |
+| **Weiss, *Papiers d'état du cardinal de Granvelle* I (1841)** | Imperial chancery papers of the period | IA `papiersdtatducar00gran` (tome I, full djvu): Tarb 0, Villandr 0, "1530" 0; Grammont 4 (the cardinal's return to Rome, 1530s retrospective). **Covered, no hit** |
+| CSP Spanish IV **part 1** (1529-30) specifically | Mai's reports from Rome and intercepts | Metadata confirms that `calendarofletter0004pasc` (1879) is Part I and `_f5h4` (1882) is Part II. Both were searched in full text in section 4(a). **Covered** (a confirmation, no new search) |
+| ***Revue des Hautes-Pyrénées* (1907)**, named as "not read" in the f.30 audit (g)/(h) and left out of the 05:08 table | Regional journal of Gramont's see. It was the only Google Books hit for "évêque de Tarbes" "mai 1530" Florence apart from the Dupuy catalogue | The IA item `revuedeshautesp00unkngoog` is sourced from Google Books `TOQVAAAAYAAJ`, **the same volume that hit** (Google: NO_PAGES). djvu and abbyy returned 500, and fts was run inside the item. The hit is an inventory of Dupuy manuscripts touching the Hautes-Pyrénées: "Tome 452. — Lettres originales de Gabriel de Gramont, évêque de Tarbes: au cardinal de Sens, chancelier de France; Rome, 15 mai [1530] (fol. 48); — au roi François Ier; Florence, 23 août 1529 (fol. 49)". Both are Dupuy pieces already in the table's Dupuy row, and neither is fr.2980. fts "2980" 0, "Villandry" 0, "chiffre" 0. **Covered, no hit** (a shelf-list, not a print) |
+| Tomokiyo, Lasry, Bourdeau | brief item | Already covered in the 05:08 table rows (francis.htm "can be read", no reading; GL.htm's Lasry list has no fr.2980; Bourdeau CATALOGUE.md:76 "key held", no file at main or PR heads). Not re-fetched |
+| IA full-text sweep with the double-m and Grandmont spellings | Earlier phrase sweeps used "Gramont" | be-api fts over all items: "Grammont" "Villandry" and "Grandmont" "Villandry" give only Loire guidebooks, parish registers and Touraine inventories; "Tarbes" "Villandry" 1530 gives Decrue and Scheurer I (both covered). **No hit** |
+
+Nothing found lowers either class.
+
+### 3. Decision
+
+Every principal family is now covered: the canonical calendars, the documentary editions (French, Italian,
+imperial), the sender's and recipient's studies, the holding archive's catalogue, both Camusat issues, the
+transcription and cipher project pages (Tomokiyo, Lasry through GL.htm, Bourdeau, Aymeloglu, DECODE), and the phrase
+search on the decoded text. Nothing turned up a prior plaintext or decipherment of either letter. **No.21: N4. No.22:
+N4.** Logged and not blocking: OpenAlex and Semantic Scholar unreachable (429); HathiTrust full text unreachable
+(Cloudflare); Michon, *La Crosse et le Sceptre* (2008), no pages; 11 JSTOR rows queued; archival intercepts (Simancas,
+Vienna); DECODE's three unconfirmed zero rows (§1).
+
+**Safe sentence, no.21 (N4):** "No prior decipherment located of Gabriel de Gramont's cipher letter to Jean Breton de
+Villandry, Rome, 20 May 1530 (BnF fr.2980 f.29r, no.21). Tomokiyo identified it as readable, and Bourdeau catalogued it
+(no.328). We read its 568-sign cipher passage in part with the Gramont 1530 key published by Tomokiyo and Lasry (2023):
+533 signs at grade H, 30 uncertain, 5 unkeyed. The search log is in AUDIT.md."
+
+**Safe sentence, no.22 (N4):** "No prior decipherment located of Gabriel de Gramont's all-cipher letter to Francis I,
+Rome, 20 May 1530 (BnF fr.2980 f.30r-v, no.22). Tomokiyo identified it as readable, and Bourdeau catalogued it (no.328).
+We read it in part with the Gramont 1530 key published by Tomokiyo and Lasry (2023): of 1,973 signs, 1,500 are at grade
+H and 158 at grade S with a matched control. Its closest print is the sibling letter of April 1530 (*Archivio storico
+italiano*, Appendice I, pp.473-481), which is a different letter. The search log is in AUDIT.md."
+
+**Unsafe sentences:** "first decipherment", "previously unread", "never printed" or "unpublished" without the qualifier
+"no prior decipherment located"; "N5" or "confirmed new" (no archive or specialist has been asked); "we broke Gramont's
+cipher" (the key is Tomokiyo's and Lasry's); "read in full" (both readings are partial and rest on one reconciled
+transcription); "Cardinal Gramont" on 20 May 1530 (created 8 June); "Gramont to Villandry" for f.30.
+
+### 4. Outreach gates (CLAUDE.md Outreach 1-6), both items
+
+| gate | state |
+|---|---|
+| 1. verifier class in AUDIT.md | **met** (N4, both) |
+| 2. above N1: second adversarial audit; open-index pass; Google Books queries; JSTOR rows answered or waived | second audit **met** (both). Open-index pass **met** (CrossRef, HAL, Persée, Google Scholar; OpenAlex and Semantic Scholar unreachable and logged). Google Books **met**. JSTOR **not met**: 11 Gramont rows in JSTOR-QUEUE.tsv (rows 2-7, 27-29, 33-34) are all `queued`. None is answered and none is waived by the owner. **Gate 2 is not met until the owner answers or waives them** |
+| 3. the message is the safe sentence, states the prior print it rests on (Tomokiyo francis.htm; Lasry 2023 through GL.htm; Bourdeau 328), links AUDIT.md | **not met**: no draft exists (drafting is not this brief) |
+| 4. rule 10 wording | the N4 sentences above are allowed, with the qualifier |
+| 5. logged in CONTRIBUTIONS.md before sending | **not met** |
+| 6. links a recipient can verify (repo folder; Gallica ark btv1b9059991d at f.29r and f.30r-v; Tomokiyo francis.htm; for f.30, ASI App. I pp.473-481 on IA `archiviostoricoi01fireuoft`) | available; **not met** until a draft carries them |
+
+**Postmortem.** The 05:08 decision's table was right about the two families it named, but it left out one
+family that an earlier audit had flagged as "not read": *Revue des Hautes-Pyrénées* 1907. That family was closed
+here, negative. The f.30 audit also misjudged that item as "not known to be the 1907 volume". The IA item's `source`
+metadata field names the Google Books id that hit, so a single metadata call settles it. Lesson for the verifier
+template: before logging an IA volume as unidentified or unreadable, read its `source` field and run be-api fts
+inside it (fts works when djvu returns 500). The DECODE section's own bug note was honest, but it did not say that
+the zero rows were re-run after the fix. A search section that reports a mid-run fix should state which rows were
+re-run.
+
+Requests this session: archive.org 20 (6 advancedsearch, 1 metadata, 13 downloads including 5 byte-range probes; 3
+returned 500, not retried beyond one abbyy attempt); be-api.us.archive.org 11; www.googleapis.com 8 (keyed,
+country=US). No Gallica, no de-crypt.org, no logins, no decoding, no subagents.
