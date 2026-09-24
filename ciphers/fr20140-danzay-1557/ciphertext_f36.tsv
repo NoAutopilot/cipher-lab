@@ -15,7 +15,7 @@ line	position	sign	confidence	passA	passB	note
 36R1	6	hk	M	unk2	f	large hook opening left with small v at foot; read as check-mark hook
 36R1	7	x	H	u	e	plain x, no bar
 36R1	8	H	H	s	s	H
-36R1	9	le	M	word:le	word:le	z/3-shape with flat foot; matched to yogh 'le'
+36R1	9	r2	M	word:le	word:le	plain small 2, flat foot, no descender; same glyph as 36R3 pos 6 and 36R4 pos 20, not the yogh of 36R2 pos 1 (was le; pass C r2, adjudicated 24 Sept 2026)
 36R1	10	x8	M	g	g	figure-8 with short bar at left waist, as f.35r R2 x8
 36R1	11	b6	M	word:dict	word:dict	6-shape identical to pos 22; Tomokiyo draws a similar 6 for 'dict'; f.35 codes this glyph p
 36R1	12	dia	M	unk3	null	same glyph as pos 3
@@ -71,7 +71,7 @@ line	position	sign	confidence	passA	passB	note
 36R4	5	pp	H	m	unk8+unk8	two uprights each crossed by a bar (Tomokiyo m row 2)
 36R4	6	dia	H	i	e	slanted lozenge with inner stroke
 36R4	7	ae	H	b+n	unk2	ae ligature; pass A split it
-36R4	8	LRD	M	l	word:leRoyDeDannemarch	script L with top hook and foot; Tomokiyo's 'le Roy de Dannemarch' drawing; his circled t row 2 (long s/f with foot) is the nearest alternative, which would give '...ment par deça'
+36R4	8	pd	M	l	word:leRoyDeDannemarch	stem with top hook, small tick at mid-stem left, flat foot: the f.35r R2 pd glyph ('fort'), not f.35's large Q-shaped LRD (was LRD; adjudicated 24 Sept 2026)
 36R4	9	xA	H	u	unk7	A with crossbar through
 36R4	10	b6	H	p	word:dict	6-shape with large loop top; same as 36R1 pos 11/22 (p); context 'par'
 36R4	11	T	H	a	word:luy	T-shape

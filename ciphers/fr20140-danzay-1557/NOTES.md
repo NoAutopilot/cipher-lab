@@ -675,3 +675,21 @@ If that tick is a crossbar stub, pos 8 is nearer `pd` than pos 20 is. The image 
     but two signs are not excluded.
 
   None of these five is illegible. The open questions are key membership (pos 2, pos 3), not reading.
+
+### Adjudicated and applied, 24 Sept 2026
+
+LANE V adjudicator (Opus), working from `images/native_f71.jpg` and `images/f69_cipher.jpg` on disk only (crops at 2x
+and 3x in scratch, not committed; no network). Both calls were settled by comparing the glyphs with other
+instances on f.35-36. Applied to `ciphertext_f36.tsv`; `reading_f36.txt` and `reading_tokens_f36.tsv` regenerated
+with `decode.py`; `decode.py --check` exits 0; f.35 `reading.txt` and `reading_tokens.tsv` byte-identical.
+
+| row | change | decision | image evidence | reading without -> with |
+|---|---|---|---|---|
+| 36R1 pos 9 | le -> r2 (conf stays M) | accept | Plain small 2 with a flat foot and no descender. It is the same form as 36R4 pos 20 (r2) at the same scale. The yogh at 36R2 pos 1 is a 3 with a long tail curling down and back left, which this sign lacks | "a u e c [I] u e s **le** [x8] peu de perte pour" -> "... u e s **r** [x8] peu de perte pour". Worse under the committed key: "avecques le peu de perte" becomes "avecques r [x8] peu de perte". If the plain 2 is the null that Tomokiyo also draws (the open plain-2 question above), the run reads "avecques [x8] peu de perte". That is a suggestion only; no key value changed |
+| 36R4 pos 8 | LRD -> pd (conf stays M) | accept | A stem with a hook at the top curling right, a small tick at mid-stem on the left, and a flat foot. This is the form of f.35r R2 pos 11 and 22 (pd, "fort"). The f.35 LRD is a different sign: the large Q/Z-shape with a long tail to the right (f.35r R2 pos 4, and every LRD on f.35v). 36R1 pos 20 (pd) has the same tick and foot, with a more closed top loop. Pass C's "detached tick" is the mid-stem stub that every pd shows | "q [ww] y m e n **\<le Roy de Dannemarch\>** par deça" -> "q [ww] y m e n **t** par deça", i.e. "...ment par deça". Better: it removes the break in the run that the lines 2-4 reading noted |
+| 36R1 pos 20 | pd kept | reject change (none proposed) | Looped l with mid-stem tick and foot, as the f.35r R2 pd | "perte" unchanged |
+
+Grade counts on f.36r are unchanged: both rows were M before and are M now, and neither is a null. All of f.36r
+remains H 37 (10 nulls) / M 26 / U 4 (line 1 H 15 M 8 U 2; lines 2-4 H 22 M 18 U 2), so the figures in this file,
+AUDIT.md and status.json stand. The earlier suggestion "test LRD against t row 2 in ...ment par deça" is settled
+by the sign identity, without using Tomokiyo's t row 2 cell. `<le>` now occurs on f.36r only at 36R2 pos 1.

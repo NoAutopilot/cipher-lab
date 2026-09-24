@@ -7,7 +7,7 @@ line	pos	sign	value	grade
 36R1	6	hk	u|a	M
 36R1	7	x	e	H
 36R1	8	H	s	H
-36R1	9	le	le	M
+36R1	9	r2	r	M
 36R1	10	x8		U
 36R1	11	b6	p	M
 36R1	12	dia	e	M
@@ -63,7 +63,7 @@ line	pos	sign	value	grade
 36R4	5	pp	m	H
 36R4	6	dia	e	H
 36R4	7	ae	n	H
-36R4	8	LRD	le Roy de Dannemarch	M
+36R4	8	pd	t	M
 36R4	9	xA	null	H
 36R4	10	b6	p	H
 36R4	11	T	a|luy	M

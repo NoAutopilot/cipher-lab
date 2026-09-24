@@ -1,6 +1,6 @@
 # Mechanical reading of ciphertext_f36.tsv with key.tsv (decode.py). Nulls dropped; [code] = unkeyed sign;
 # CAPS = clear-hand words in the letter; T and hk (keyed twice by Tomokiyo) shown as a and u; <w> = his word signs.
-36R1	a u e c [I] u e s <le> [x8] p e u d e p e r t e p o u r
+36R1	a u e c [I] u e s r [x8] p e u d e p e r t e p o u r
 36R2	<le> c h a n g e FUST ET EN TELLE SORTE VOUS SEREZ
 36R3	ASSEURÉ DE FAIRE e u r n g QUAND a m e a r DE
-36R4	q [ww] y m e n <le Roy de Dannemarch> p a r d e c a FUST r [ringT]
+36R4	q [ww] y m e n t p a r d e c a FUST r [ringT]
