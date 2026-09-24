@@ -345,3 +345,210 @@ line	pos	code	marks	action	conf	note
 12	33	_		confirm	H	plain
 12	34	_		confirm	H	plain
 12	35	bh		confirm	H	matches bh
+13	1	_		correct	M	recrop reads as plain 'o' letter with connecting stroke, no e-bowl/# visible; share 0.58
+13	2	_		correct	M	recrop shows a single stroke with curved tail, not eps's two stacked bowls; share 0.61
+13	3	lam		confirm	H	matches lam
+13	4	w		confirm	H	matches w
+13	5	eps	5	confirm	H	matches eps
+13	6	H		confirm	H	matches H
+13	7	eps		confirm	H	matches eps
+13	8	w		confirm	H	matches w
+13	9	lam		confirm	H	matches lam
+13	10	L	7	confirm	H	matches L
+13	11	eps	5	confirm	H	matches eps
+13	12	S		correct	M	recrop shows a clear S/ʃ curve, not tee's vertical+bar; share 0.60
+13	13	g		confirm	H	recrop confirms clean 9/g loop despite share 0.40
+13	14	H	1|o	confirm	H	matches H
+13	15	tee		confirm	H	matches tee
+13	16	bh		confirm	H	matches bh
+13	17	K		confirm	H	matches K
+13	18	v	#|1	confirm	H	matches v
+13	19	m	1	confirm	H	matches m
+13	20	w		confirm	H	matches w
+13	21	]	o	confirm	H	matches ]
+13	22	Z		confirm	H	matches Z
+13	23	m	~	confirm	H	matches m
+13	24	_		confirm	H	plain
+13	25	g		confirm	H	matches g
+13	26	o.		confirm	H	matches o.
+13	27	S7		confirm	H	matches S7
+13	28	y		confirm	H	matches y
+13	29	tee		confirm	H	matches tee
+13	30	f		confirm	H	matches f
+13	31	g		confirm	M	recrop shows loop+tail, matches g; share 0.61
+13	32	S		confirm	H	matches S
+13	33	m		correct	M	recrop shows a clear three-hump m with a numeral mark, not y's loop tail; share 0.59
+14	1	nt		confirm	H	matches nt
+14	2	H	1|o	confirm	H	matches H
+14	3	o.		confirm	H	matches o.
+14	4	S7		confirm	H	matches S7
+14	5	sq		correct	M	recrop shows a closed box shape, not U's open-top cup; share 0.62
+14	6	psi		confirm	H	matches psi
+14	7	lam		confirm	H	matches lam
+14	8	S4	5	confirm	H	matches S4
+14	9	phi		confirm	H	matches phi
+14	10	S4		confirm	H	matches S4
+14	11	S		confirm	H	matches S
+14	12	_		confirm	H	plain
+14	13	_		correct	M	recrop shows plain cursive text, no y-loop; share 0.36
+14	14	N		confirm	H	matches N
+14	15	_		confirm	H	plain
+14	16	_		confirm	H	plain
+14	17	_		confirm	H	plain
+14	18	_		confirm	H	plain
+14	19	_		confirm	H	plain
+14	20	N		confirm	H	matches N
+14	21	w		confirm	H	matches w
+14	22	nt		confirm	H	matches nt
+14	23	rz		confirm	H	matches rz
+14	24	g	~	confirm	H	matches g
+14	25	nt		confirm	H	matches nt
+14	26	S7		confirm	H	matches S7
+14	27	#		confirm	H	matches #
+14	28	lam	dot	confirm	H	matches lam
+14	29	S		confirm	H	matches S
+14	30	_		confirm	H	plain
+14	31	S7		confirm	H	matches S7
+15	1	_		confirm	H	plain
+15	2	_		confirm	H	plain
+15	3	_		confirm	H	plain
+15	4	a		confirm	H	matches a
+15	5	_		confirm	H	plain
+15	6	_		confirm	H	plain
+15	7	p		correct	M	recrop shows a loop-top with crossed stem, matches p; share 0.59
+15	8	S7		confirm	H	matches S7
+15	9	_		correct	M	recrop reads as plain cursive text, not Lx; share 0.40
+15	10	_		confirm	H	plain
+15	11	_		confirm	H	plain
+15	12	a	5	confirm	H	matches a
+15	13	tee		confirm	H	matches tee
+15	14	lam		confirm	H	matches lam
+15	15	m	5|~	confirm	H	matches m
+15	16	g	7	confirm	H	matches g
+15	17	eps	5	confirm	H	matches eps
+15	18	]		confirm	H	matches ]
+15	19	g	ot	confirm	H	matches g
+15	20	phi		confirm	H	matches phi
+15	21	S4		confirm	H	matches S4
+15	22	dl		confirm	H	matches dl
+15	23	_		confirm	H	plain
+15	24	_		confirm	H	plain
+15	25	_		confirm	H	plain
+15	26	_		correct	M	recrop reads as plain cursive letter start, no clear crossed stem visible; share 0.58
+15	27	_		confirm	H	plain
+15	28	_		confirm	H	plain
+15	29	_		confirm	H	plain
+16	1	S7		confirm	H	matches S7
+16	2	_		confirm	H	plain
+16	3	_		correct	M	recrop reads as plain cursive letters, no bold a shape; share 0.60
+16	4	_	dot	confirm	H	plain
+16	5	_		confirm	H	plain
+16	6	S4		confirm	H	matches S4
+16	7	Lx		confirm	H	matches Lx
+16	8	sq	ot	confirm	H	matches sq
+16	9	y		confirm	H	matches y
+16	10	lam		confirm	H	matches lam
+16	11	g		confirm	H	matches g
+16	12	]	o	confirm	H	matches ]
+16	13	g		confirm	H	matches g
+16	14	eps	5	confirm	H	matches eps
+16	15	S7		confirm	H	matches S7
+16	16	_	#	confirm	H	plain
+16	17	a		confirm	H	matches a
+16	18	_	~	confirm	H	plain
+16	19	rz		confirm	H	matches rz
+16	20	S4		confirm	H	matches S4
+16	21	Lx		confirm	H	matches Lx
+16	22	_		confirm	H	recrop clearly reads plain word 'fac...'
+16	23	_		confirm	H	plain
+16	24	_		confirm	H	plain
+16	25	_	dot	confirm	H	plain
+16	26	eps		confirm	H	matches eps
+16	27	+		correct	M	recrop shows a clear + cross shape; share 0.60
+16	28	_		confirm	H	plain
+16	29	_		confirm	H	plain
+16	30	_		correct	L	recrop reads as plain/ambiguous letters, no numeral-7 shape visible; share 0.61
+16	31	_		confirm	H	plain
+17	1	a		confirm	H	matches a
+17	2	_		confirm	H	plain
+17	3	_		confirm	H	plain
+17	4	p		confirm	H	matches p
+17	5	_		confirm	H	plain
+17	6	_		confirm	H	plain
+17	7	_	dot	confirm	H	plain
+17	8	_		confirm	H	plain
+17	9	_		confirm	H	plain
+17	10	S4		confirm	H	matches S4
+17	11	dl		confirm	H	matches dl
+17	12	+		confirm	H	matches +
+17	13	v	1|#	confirm	H	matches v
+17	14	sq		correct	M	recrop shows a clean square box with a cross mark above, not g's loop; share 0.60
+17	15	lam		confirm	H	matches lam
+17	16	K		confirm	H	matches K
+17	17	rz	#	confirm	H	matches rz
+17	18	nt		confirm	H	matches nt
+17	19	g		confirm	H	matches g
+17	20	S7		confirm	H	matches S7
+17	21	lam		confirm	H	matches lam
+17	22	phi	5	confirm	H	matches phi
+17	23	S4		confirm	H	matches S4
+17	24	dl		confirm	H	matches dl
+17	25	_	dot	confirm	H	plain
+17	26	_	dot	confirm	H	plain
+18	1	_		confirm	H	plain
+18	2	N		confirm	H	matches N
+18	3	_		confirm	H	plain
+18	4	_		confirm	M	recrop shows plain cursive text; share 0.41
+18	5	N		confirm	H	matches N
+18	6	_		correct	M	recrop reads as plain cursive, part of a word; share 0.59
+18	7	_		confirm	H	recrop clearly reads plain 'opra'; share 0.38
+18	8	N		confirm	H	matches N
+18	9	_		confirm	H	plain
+18	10	_		confirm	H	plain
+18	11	a		confirm	H	matches a
+18	12	_		confirm	H	plain
+18	13	_		confirm	H	plain
+18	14	_		confirm	H	plain
+18	15	_		confirm	H	plain
+18	16	_		confirm	H	plain
+18	17	_		confirm	H	plain
+18	18	_		confirm	H	plain
+18	19	_		confirm	H	plain
+18	20	_		confirm	H	plain
+18	21	_	1	confirm	H	plain
+18	22	_		confirm	H	plain
+18	23	_		confirm	H	recrop confirms plain cursive
+18	24	_		correct	M	recrop shows a small curved hook, no numeral-7 top bar; share 0.41
+18	25	_		confirm	H	plain
+18	26	_		confirm	H	plain
+18	27	S4	dot	confirm	H	recrop confirms clear slash-crossing-⊥ despite share 0.61
+18	28	dl		confirm	H	matches dl
+18	29	+		confirm	H	recrop confirms clean + cross despite share 0.62
+18	30	Lx		confirm	H	matches Lx
+19	1	bh	dot	confirm	H	matches bh
+19	2	g		confirm	H	matches g
+19	3	w		confirm	H	matches w
+19	4	Z	ot	confirm	H	matches Z
+19	5	g	~	confirm	H	matches g
+19	6	]	o	confirm	H	matches ]
+19	7	L		confirm	H	recrop confirms angular bracket with numeral inside despite share 0.80
+19	8	e		confirm	H	matches e
+19	9	e		confirm	H	matches e
+19	10	g		correct	M	recrop shows a numeral mark over a 9/g loop, not bh's stem+hook; share 0.70
+19	11	e	#	confirm	H	matches e
+19	12	g	1	confirm	H	matches g
+19	13	a	5	confirm	H	matches a
+19	14	tee		confirm	H	matches tee
+19	15	_	5	confirm	H	recrop confirms a tall mostly-blank marginal box; share 0.86
+19	16	Z	ot	confirm	H	matches Z
+19	17	S7	#	confirm	H	recrop confirms clean numeral-7 despite share 0.61
+19	18	g	dot	confirm	H	matches g
+19	19	_		confirm	L	recrop shows a small ambiguous squiggle between neighboring g-loops; share 0.60
+19	20	psi		confirm	H	matches psi
+19	21	eps	5	confirm	H	matches eps
+19	22	g	5	confirm	H	matches g
+19	23	Z		confirm	H	matches Z
+19	24	w		confirm	H	matches w
+19	25	g		confirm	H	matches g
+19	26	a	1	confirm	H	matches a
+19	27	_	1	confirm	H	plain
