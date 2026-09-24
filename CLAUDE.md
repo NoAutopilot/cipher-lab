@@ -412,6 +412,11 @@ brief, over-claims caught before the person sees them, and whether the top of th
 
 Commit directly to `main`. No pull requests unless asked. Stage by explicit path when several sessions share
 the repo. Never rewrite history.
+A long-lived orchestrator's GitHub MCP token can go stale mid-session without an error the orchestrator notices
+(confirmed 24 Sept 2026: closing eight second-opinion pull requests failed silently against the parent's token
+after several hours; a fresh $0.24 Sonnet worker closed them on the first try). Route any GitHub pull-request or
+issue write through a short-lived worker rather than a parent that has been running for hours, whether the write
+is a second-opinion PR close or an outreach issue post.
 One sanctioned exception, decided by the owner on 23 Sept 2026 after the repository went public: a single rewrite
 that removes addresses, the owner's first name, the credential-length line and the restricted images from every past
 commit (`tools/purge_history.sh`, which pushes the rewritten history to `purged-main`; the owner swaps it in for
