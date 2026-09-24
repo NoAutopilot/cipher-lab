@@ -13,6 +13,14 @@
    "content": "Left page (247v): cipher letter, numeral-group nomenclator, mixed with clear French connective words in the same hand/line -- NOT a separate interlinear gloss (see NOTES.md gloss verdict). Right page (248r): closing only, 'Monseigneur' / 'Vostre tres humble et tres obeissant serviteur' / signed 'Vergier'."
   },
   {
+   "file": "NOT COMMITTED -- scratchpad only, see below",
+   "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90009665/f251/full/full/0/native.jpg",
+   "manuscript_folio": "247v/248r (canvas 251, one opening; left page 247v is the cipher letter)",
+   "fetched": "native, LANE G2 fetcher L, 24 Sept 2026, 5128800 bytes, 7453x5700px, 1 request",
+   "content": "Full-resolution replacement for probe_f251.jpg (a low-res thumbnail crop). Not yet inspected at native resolution by this worker (out of budget); a future pass should re-fetch and use it for line crops of the 247v cipher text instead of the thumbnail.",
+   "not_committed_reason": "images/ folder is already 29 MB (limit 30 MB/folder) and this file alone is 5.1 MB; kept in scratchpad only per brief lane-g2-l instruction ('native ... if it fits under 30 MB, else scratchpad + manifest'). Re-fetch with: curl -A \"cipher-lab research script (contact via repository)\" \"https://gallica.bnf.fr/iiif/ark:/12148/btv1b90009665/f251/full/full/0/native.jpg\" -o folio247v_canvas251_native.jpg"
+  },
+  {
    "file": "folio249_canvas252.jpg",
    "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90009665/f252/full/full/0/native.jpg",
    "manuscript_folio": "249r (stamped '249'); left page is 248v, blank/docket only",
