@@ -990,3 +990,98 @@ different key).
 ### Requests this pass
 
 None (disk only). pip installed Pillow and numpy into the container for the strips. Cost: about $3 of the $8 cap.
+
+## 1653 band: natives and folio 9 passes (24 Sept 2026)
+
+Sonnet transcription worker, LANE G, cap $6. Picked up from the prior "LANE G access+transcription worker"
+pass (manifest.json entry, canvases 11/12/24/25/30/31/32/33), whose per-canvas NOTES.md sections
+("canvas 11/12 (folio 1-2 letter, continued)" and "canvas 30-33 (folios 19-20, Mantoue/Montferrat letter)")
+were referenced by that manifest entry but never written before the 05:39 rate-limit stop. This section
+supplies them, plus a blind pass B on the folio 9 letter.
+
+### (1) Native fetches
+
+None of canvas 11, 12, 24, 25, 30, 31, 32, 33 had a native image on disk at the start of this pass (the prior
+pass's disposition note says all 8 were deleted after use to stay under the 30 MB folder cap; the folder was
+still at 30 MB/30 MB when this pass started, so all 8 were fetched to the session scratchpad, read directly,
+and **not** committed — same pattern as the prior pass). All 8 fetched successfully; canvas 33 needed one retry
+after a connection reset (recovered on the retry, per the good-citizen single-retry rule). Requests:
+gallica.bnf.fr 9 (8 canvases + 1 retry), one at a time, ~1.8s apart, UA `cipher-lab research script (contact
+via repository)`, `--max-time 30`. Re-fetch with
+`https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f{N}/full/full/0/native.jpg` if needed again.
+
+### (2) Per-canvas table, read directly from the native images (this worker, no subagent, no network beyond the fetch)
+
+Grade M throughout (model-read from full-page images, no transcription committed for 11/12/30-33, no key
+applied). Corrects and extends the stride-4 census (thumbnail resolution) at "Dense band walk" above.
+
+| canvas | folio (page no.) | date line | extent of cipher | decipherment beside it |
+|---|---|---|---|---|
+| 11 | - (no number visible) | none on this leaf | ~11 lines clear prose (Rethel/Château-Porcien/army news, "la mort de M. de la Vieuville rend les affaires plus difficiles"), **then a second, previously unnoted cipher block starts at the bottom of the page** (~4-5 lines) and continues onto canvas 12 | no |
+| 12 | 3 | **"Paris le x janvier 1653"** (10 January 1653), signed "Brienne" | cipher block continues from canvas 11 for ~5-6 more lines at the top, then clear prose to the close/dateline/signature | no |
+| 24 | 9 | none on this leaf | clear 2-line opening ("Monsieur, Je croy que vous vous souuiendrez bien de ce d'avoir ordonné que vous avez receu bo[n]...") then continuous dense cipher to the foot of the page (~13 lines) | no |
+| 25 | - (facing leaf, no number) | none on this leaf | continuous dense cipher for ~13 lines, ends "...en sorte que vos paroles" (matches passA_f9.tsv's last line) with the rest of the leaf blank | no |
+| 30 | - (page no. too faint to read) | none on this leaf | dense cipher for ~9-10 lines, but **not pure cipher**: at least two short clear-French phrases sit inside the block ("et soubliant de leurs interests et de ceux des autres princes italiens"; "le soubcon que"), missed by the thumbnail-resolution census's "no plaintext" call | no |
+| 31 | 19 | none on this leaf | cipher opens the page (~5 lines), breaks into ~4 lines of clear prose ("Et Sa Ma[jes]té auoit peine de prendre une resolution esloignée de celle en laquelle elle est entrée, a[u]moins que le duc de Mantoue ne l'y contraignist par son mauvais procede"), then cipher resumes to the foot of the page, continuing onto canvas 32 | no |
+| 32 | - (facing leaf) | none on this leaf | cipher continues from 31; **two more clear-French insertions** inside the block ("sans se souvenir des obligations desquelles on estoit redevable à sa Couronne"; "il ne fault point que se supreme, si nous ne nous y porterons pas") — again missed by the census's "no plaintext" call for this canvas; final line breaks into clear "...le Comte Philippes que le" running onto canvas 33 | no |
+| 33 | 20 | none on this leaf | opens in clear prose continuing from 32 (~6 lines: duc de Savoye's dispatch to the Emperor, dissatisfaction over the Montferrat award "confirmée par trois traittez solemnels"), then cipher resumes for the rest of the page (~9-10 lines) | no |
+
+**Flag — canvas 11-12 is the tail of the already-reconciled folio 1-2 letter, not a separate item, and it is
+dated.** The "Folio 1-2 letter reconciled" section above (canvas 8-10, `ciphertext_f1.tsv`, 528 tokens) noted
+the cipher "ends... where the cipher ends and the letter goes on in clear on the next leaf" without naming
+that next leaf. It is canvas 11. Canvas 11's clear opening (army/Rethel news) and canvas 12's clear close read
+as one continuous letter with canvas 8-10, and canvas 12 carries a dateline and signature: **"Paris le x
+janvier 1653"** (10 January 1653), signed "Brienne" — the first firm date recovered for that letter, and by
+inference for its clear-and-cipher content. **A second cipher block, not present in `ciphertext_f1.tsv`,
+sits at the very end of the letter** (canvas 11 bottom through canvas 12 top, roughly 5+6 = ~11 lines,
+comparable in length to the folio 1-2 dense-band table's per-canvas estimates of ~35-40 tokens) and has not
+been transcribed by either pass. This is new ciphertext belonging to a letter that already has 528 reconciled
+tokens and is a candidate for key recovery — worth a same-office key trial extension or a third crop/pass once
+picked up again. Not transcribed this pass (out of scope: the brief asked for a date/extent/decipherment
+report, not a new transcription pass).
+
+No interlinear or marginal decipherment sits beside any cipher on any of the 8 canvases (consistent with the
+dense-band census for the rest of both bands). No novelty wording (rule 10) — this is a transcription/extent
+report, nothing decoded.
+
+### (3) Folio 9 letter (canvas 24/25): blind pass B
+
+Existing crops (`images/f9r_L01_s1.jpg`..`f9r_L15_s2.jpg`, `images/f9v_L01.jpg`..`f9v_L12.jpg`, 42 files, cut
+by the prior pass) were reused, no re-fetch needed. A single Sonnet subagent, blind to `passA_f9.tsv` and to
+any other file in the target (not given that path, instructed not to open it), transcribed all 27 manuscript
+lines (15 recto + 12 verso) into `passB_f9.tsv` (231 tokens; same `line`/`position`/`group`/`confidence`
+columns as `passA_f9.tsv`, overline as leading `_`). The subagent flagged its own weak spots: f9r_L01's
+"Monsieur" read only from bleed-through off the next line; a compound cross/cancel mark over "121" at f9r_L09
+and f9r_L13 it could not decompose (recorded `#121`, low confidence); a cut-off double-dot at f9r_L14; an
+unidentified slashed-circle sign at f9v_L06; and the recurring two-minim-vs-"n" ambiguity already known from
+the folio 1-2 letter's passes.
+
+**Agreement** (`agreement_f9.py`, same method as `agreement.py`): of 27 lines, 23 have matching cipher-group
+counts between the two passes (4 do not: f9r_L13, f9v_L05, f9v_L06, f9v_L10). **Token-level agreement on the
+23 count-matched lines: 143/184 = 77.7%** — between the folio 1-2 letter's own first-pass figure (65.8%) and
+the folio 86 numeral-only letter's (91.5%), consistent with this being a symbol+numeral hybrid like folio 1-2
+rather than the plainer numeral-only folio 86-88 hand. The 7 clear-French line pairs read closely but not
+identically (1/7 verbatim-identical; the rest differ by a word choice or a cut-off, e.g. A "en sorte que vos
+paroles" vs B "ensorte toutes parolles" at f9v_L12, the letter's last legible clear phrase) — both readable as
+the same underlying sentence, not a contradiction. No reconciliation run this pass (out of scope per brief) —
+left for whoever next picks up this target, alongside the folio 1-2 letter's own unresolved f9-line-count
+divergence precedent (a different f9, canvas 9, not to be confused with this folio 9, canvas 24-25).
+
+### (4) Status and next step
+
+**Status stays `open`.** This pass: (a) established that all 8 named band-1 canvases lack committed natives
+(all fetched, read, and released, per the folder's 30 MB cap); (b) produced the date/extent/decipherment table
+above; (c) found that the folio 1-2 letter (canvas 8-12) is dated 10 January 1653 and signed Brienne, and
+carries an untranscribed second cipher block on canvas 11-12; (d) ran a second blind pass on the folio 9
+letter. No decipherment recovered, no novelty wording, no reconciliation.
+
+**Cheapest next step:** reconcile `passA_f9.tsv`/`passB_f9.tsv` the same way `reconcile_f1.py` did for the
+folio 1-2 letter (disk-only, no network), then either try the two published same-office Brienne keys against
+it or wait for a same-office key recovered elsewhere in this dossier. Separately, transcribe canvas 11-12's
+second cipher block and append it to `ciphertext_f1.tsv` so the whole dated 10 Jan 1653 letter is one unit.
+
+### Requests this pass
+
+gallica.bnf.fr: 9 (8 native fetches + 1 retry on canvas 33, one at a time, ~1.8s apart, UA per playbook, none
+committed). No other host. One Sonnet subagent (folio 9 pass B, image-only, no network). Folder size
+unchanged (natives not committed). Cost: about $3 of the $6 cap so far.

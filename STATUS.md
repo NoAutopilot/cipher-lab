@@ -108,9 +108,8 @@ targets, Eckert and Thurloe. 29 workers collected (LEDGER rows carry session ids
 - Eckert 1862 T1-T10: N1. Thurloe P11-13: N0. fr5160 Brienne f.86/f.88: N0 (f.87 is the contemporary decipherment).
   Eckert E4/E5: N3, two audits, N4 blocked only by Zooniverse Talk (ASKS 27); now LANE W's.
 
-**Next, in order (for whoever runs verification):** (1) when LANE N writes 'DECODE search' into the Danzay AUDIT.md,
-start a fresh N4-decision verifier for Danzay; (2) when LANE G's Camusat ff.91-217 read and the DECODE search are both
-in the Gramont AUDIT.md, the same for Gramont; (3) f.36r adjudicator started 06:20 (session_01Q61FpWAZV89SDiRpFbGCje, $5 cap; collect it); (4) second-opinion
+**Next, in order (for whoever runs verification):** (1)-(2) DECODE search (LANE N, none) and Camusat ff.91-217 (LANE G, negative) are in; fresh N4-decision verifiers started
+06:53: Danzay session_01PKbcXogQ4jYw1rsHvm2Svx, Gramont session_01FwWKsqwM57oancfisEiVEE ($10 each) -- collect them; (3) f.36r adjudicated and applied 06:24 (H 37 / M 26 / U 4); (4) second-opinion
 PRs [SO-*]: check every citation as a lead, log unconfirmed ones in AUDIT.md; (5) at N4, outreach gate 2 still needs the
 JSTOR-QUEUE.tsv rows for the target answered or waived by the owner before any draft goes out.
 

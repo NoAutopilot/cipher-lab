@@ -1437,3 +1437,95 @@ gallica.bnf.fr: 141 (see Method above for the breakdown), all ≥1.5-1.8 s apart
 `cipher-lab research script (contact via repository)`, shared with the other LANE G Gallica fetcher per the
 two-fetcher courtesy cap — no other host. No logins, no credentials, no decoding, no subagents, no edits to
 reading.txt/key.tsv/ciphertext.txt/reading_f30*.txt.
+
+## DECODE search, 24 Sept 2026
+
+LANE N DECODE worker B (Sonnet), 06:51-07:20 UTC (`date -u` read). Closes the "DECODE" row of the N4 decision
+table above (05:08 UTC). This session did no decoding, no class change, no promotion.
+
+### Method
+
+The RecordsSearch advanced-search form POSTs to `RecordsSearch`, but every field it submits (not only
+`x_status`/`x_record_type`, the two `tools/decode_list.py` already used) redirects to a plain, repeatable GET
+on `RecordsList` — confirmed by submitting the live form once in a headless browser
+(`x_c_holder=Gramont` → `RecordsList?x_c_holder=Gramont&z_c_holder=LIKE&cmd=search`) and then reproducing the
+same URL with plain `curl`, no cookies, no login. One correction to `tools/decode_list.py`'s own discovery note:
+the static HTML the server returns for a `RecordsList` GET **does** include the full result grid server-side
+(no client-side AJAX render needed) — a `curl` fetch of `RecordsList?...&cmd=search` and a real-browser fetch of
+the same URL contain the same `<table id="tbl_recordslist">` rows, confirmed byte-for-byte on the same query. An
+earlier version of this session's own search script wrongly treated the fixed boilerplate string "No records
+found" (present in the page's empty-state markup on every response, hit or no hit) as a negative signal and
+under-reported every real hit as zero; the fix was to count `RecordsView/<id>` links in the response instead.
+Recorded here so the next DECODE search does not repeat it.
+
+Fields searched (from `RecordsSearch`'s own form, no login needed): `x_sender`, `x_receiver`, `x_c_holder`
+(location + shelfmark), `x_additional_information` (catalogue notes), `x_origin_city`, plus `x_start_year`/
+`y_start_year` (BETWEEN) for a date-range check. All are `LIKE` (substring) searches, so "2980" alone covers
+"fr. 2980" and "Français 2980" as substrings; a separate query for each spelling was not needed. Not restricted
+to any record type or status (all four statuses, all three record types are the GET default with no
+`x_status`/`x_record_type` param set) — checked against a plain `origin_city=Rome` query returning `Cipher`,
+`Key` and mixed-status rows together, confirming no implicit filter.
+
+### Queries and results
+
+| field | term | url | hits (ids) |
+|---|---|---|---|
+| sender | Gramont | `RecordsList?z_sender=LIKE&x_sender=Gramont&cmd=search` | 4: 3698, 4225, 4226, 4227 |
+| sender | Tarbes | `RecordsList?z_sender=LIKE&x_sender=Tarbes&cmd=search` | same 4 (Tarbes is part of the sender string "Gabriel de Gramont, bishop of Tarbes") |
+| receiver | Gramont | `RecordsList?z_receiver=LIKE&x_receiver=Gramont&cmd=search` | 0 |
+| receiver | Tarbes | `RecordsList?z_receiver=LIKE&x_receiver=Tarbes&cmd=search` | 0 |
+| c_holder | Gramont | `RecordsList?z_c_holder=LIKE&x_c_holder=Gramont&cmd=search` | 0 |
+| c_holder | Tarbes | `RecordsList?z_c_holder=LIKE&x_c_holder=Tarbes&cmd=search` | 0 |
+| c_holder | 2980 | `RecordsList?z_c_holder=LIKE&x_c_holder=2980&cmd=search` | 0 |
+| c_holder | Villandry | `RecordsList?z_c_holder=LIKE&x_c_holder=Villandry&cmd=search` | 0 |
+| sender | Villandry | `RecordsList?z_sender=LIKE&x_sender=Villandry&cmd=search` | 0 |
+| receiver | Villandry | `RecordsList?z_receiver=LIKE&x_receiver=Villandry&cmd=search` | 0 |
+| additional_information | Villandry | `RecordsList?z_additional_information=LIKE&x_additional_information=Villandry&cmd=search` | 0 |
+| additional_information | Gramont | `RecordsList?z_additional_information=LIKE&x_additional_information=Gramont&cmd=search` | 1: 9473 |
+| additional_information | Tarbes | `RecordsList?z_additional_information=LIKE&x_additional_information=Tarbes&cmd=search` | 0 |
+| additional_information | 2980 | `RecordsList?z_additional_information=LIKE&x_additional_information=2980&cmd=search` | 2: 4736, 4761 |
+| sender | 2980 | `RecordsList?z_sender=LIKE&x_sender=2980&cmd=search` | 0 |
+| receiver | 2980 | `RecordsList?z_receiver=LIKE&x_receiver=2980&cmd=search` | 0 |
+| origin_city | Rome | `RecordsList?z_origin_city=LIKE&x_origin_city=Rome&cmd=search` | 20 (page 1 only; not paged further — see below) |
+| origin_city=Rome AND start_year 1528-1532 | — | `RecordsList?z_origin_city=LIKE&x_origin_city=Rome&z_start_year=BETWEEN&x_start_year=1528&y_start_year=1532&cmd=search` | 5: 9960, 9961, 9962 (Simancas, Spanish, Muxetula), 4226, 3696 (both BnF Gramont-series, below) |
+
+### What the hits are
+
+- **id 9473** ("additional_information" contains "Gramont"): "Cardinal de Gramont" appears in the notes of a Key
+  record, Paris BnF NAF 4206 no.11 — a different manuscript series (Nouvelles acquisitions françaises, not
+  Français), no date shown, `RecordsView` needs login to read further. Not fr.2980.
+- **ids 3698, 4225, 4226, 4227** (sender = "Gabriel de Gramont, bishop of Tarbes"): all BnF Français 3040 and
+  3091, addressed to Anne de Montmorency — the same Gramont-to-Grand-Master series Tomokiyo's francis.htm and
+  Bourdeau's `gramont1529` already cover (Lasry's "Gramont's cipher (1530)" and "(1529)" keys). Grid columns:
+  id 4227 Français 3040 f.18 (Boulogne, 1520-1539, Non-decrypted); id 4226 Français 3040 f.16 (Rome, 1529-,
+  Non-decrypted); id 4225 Français 3040 f.12 (Rome, 1520-1539, **Decrypted**); id 3698 Français 3091 f.45-47
+  (Rome, 1520-1540, Non-decrypted). None is Français 2980, none is dated 20 May 1530, and id 4225's Decrypted
+  status matches what Bourdeau's `gramont1529/NOTES.md` already reports for that leaf (part of "Gramont's cipher
+  (1529)"/"(1530)" group, not this target).
+- **ids 4736, 4761** ("2980" in additional_information): both Klášter u Nepomuka (Czech regional archive),
+  Kurtz von Senftenau to Trauttmansdorff, 1639, German/Latin — "2980" is an unrelated inventory or page number in
+  the notes field. Not fr.2980, wrong century, wrong archive.
+- **origin_city=Rome, 1528-1532**: id 4226 (above, Français 3040) and id 3696 (Français 3091 f.19, Rome, 1529-,
+  Decrypted) are the same Gramont-to-Montmorency series; ids 9960-9962 are Simancas (Spanish), Antonio Muxetula's
+  1531 cipher correspondence — a different ambassador, different archive, unrelated to fr.2980.
+
+**No record for BnF Français 2980, no.21 or no.22, and no record naming Villandry, in any field searched.**
+This matches the repo's own read of Bourdeau's CATALOGUE.md line 76 ("Gramont to Villandry, Rome (BnF fr. 2980
+nos. 21-22, ff. 29-30; catalogue 328): Gramont 1530 key held") and Aymeloglu's cached DECODE dump (grepped
+earlier this session, no fr.2980 rows): DECODE's own catalogue simply does not carry this shelfmark. The
+Gramont-to-Montmorency letters DECODE does carry (fr.3040, fr.3091) are a different, already-published series
+(Tomokiyo/Lasry keys, Bourdeau's `gramont1529` reading) and are not evidence for or against nos.21-22.
+
+### Requests this session (de-crypt.org)
+
+1 RecordsSearch page fetch, 1 headless-browser form submission (confirming the GET redirect pattern), ~24
+`RecordsList` GET queries for this target (table above), all ≥1.6 s apart, one request at a time, UA
+`cipher-lab research script (contact via repository)`. No login, no credentials touched, no images or documents
+fetched. (The Danzay search below shares this session and its own request count is logged there; combined
+this session's de-crypt.org total is under the brief's 150-request cap — see the final report.)
+
+**DECODE family in the N4 table above: now covered, no hit.** The other open family (Camusat ff.91-217) was
+separately closed negative by LANE G at 05:37 UTC (see "Camusat tract, folios 91-217" above). Both principal
+families the 05:08 N4 decision named are now closed; a fresh N4-decision verifier can act on this without
+further search, per that section's own words ("If both come back negative, the next verifier can assign N4 to
+both items without repeating anything else"). This worker does not assign N4 (not its brief).

@@ -809,3 +809,26 @@ principal gap left by 'N4 decision' (Zooniverse Talk subject comments) through t
 **Result: gap not closed. E4 and E5 stay N3.** ASKS row 27 remains the route; it now carries the three direct
 subject links. Requests: www.zooniverse.org 11; web.archive.org 8 (6 reset); talk.zooniverse.io 1 (refused);
 WebSearch 2.
+
+## Gap search, LANE W worker D, 24 Sept 2026
+
+LANE W worker D (Sonnet, session_01F234Ho27aPryLTBhTerxbK), parent LANE W orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq.
+Rerun of OpenAlex and Semantic Scholar, per brief, alongside the same recheck for thurloe-printed P4 (see that
+target's AUDIT.md "Gap search" section for the full method). No decoding, no reclassification. Clock read
+06:43-06:50 UTC.
+
+- **OpenAlex**: `Decoding the Civil War Huntington telegram` -- 429, "Insufficient budget... shared by everyone
+  on your network's IP address... resets at midnight UTC" (whole-day, whole-IP exhaustion, same message as the
+  "Open-index scholarship pass" section above). `Eckert cipher book Union telegraph 1864` -- 429, same message.
+  Not retried per-query beyond the one retry already spent on the parallel P4 query (see thurloe-printed
+  AUDIT.md); the message itself states the exhaustion is IP-wide and day-wide, so a second retry on each Eckert
+  query would be the same known result, not new information.
+- **Semantic Scholar**: `Decoding the Civil War Huntington telegram` -- 429 "Too Many Requests". `Eckert cipher
+  book Union telegraph 1864` -- 429, same message.
+
+**Result: both APIs still unreachable, confirming the "Open-index scholarship pass" and "N4 decision" findings
+above rather than closing them.** No titles or DOIs to report. This does not change any class in this file.
+
+Requests this session (shared with the thurloe-printed pass): api.openalex.org 2 for these two queries (429,
+no retry, per the IP-wide exhaustion message already confirmed once this session); api.semanticscholar.org 2
+for these two queries (429). One at a time, >=2s apart, no logins.

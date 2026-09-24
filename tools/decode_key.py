@@ -45,6 +45,8 @@ decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   null_values ["NULL", "null"]; empty_is_null (false: '' is unknown); unknown_values ["", "?"];
   unknown_if_q  (a value containing '?' is unknown); unkeyed_value ('?'); unkeyed_grade ('U'); default_grade ('H')
   uncertain_conf (["M","m","L","l","low","?"]); word_values (list: values shown <w> in the spaced style)
+  nonsign       list of tsv signs that are not cipher tokens (punctuation, a word-break marker): kept in the index,
+                not graded; with it, concat prints them and prints word_sep (e.g. '/') as a space
   defaults (object merged under every job), m_sources, m_words, votes {file, value_column, word_prefix, strip_prefixes}, unvoted_grade, word_glossed_grade
 
 Test: python3 tools/tests/test_decode_key.py (reproduces fr2980-gramont, fr20140-danzay-1557 and dupuy468-anhalt
@@ -104,7 +106,7 @@ def detect_format(path):
         if '|' in l.split('\t')[0] and re.match(r'^\S+( \S+)? \|', l):
             return 'pipe'
         h = l.rstrip('\n').split('\t')
-        if h[0] == 'line' and len(h) >= 3 and h[1] in ('pos', 'position', 'index'):
+        if h[0] == 'line' and len(h) >= 3 and h[1] in ('pos', 'position', 'index', 'idx'):
             return 'tsv'
         return 'rows'
     return 'tsv'
@@ -130,7 +132,7 @@ def load_pipe(path, job):
 
 def load_tsv(path, job):
     header, rows = with_header(path, ('line',))
-    ci = col(header, 'line'); pi = col(header, 'pos', 'position', 'index')
+    ci = col(header, 'line'); pi = col(header, 'pos', 'position', 'index', 'idx')
     si = col(header, 'sign', 'token', 'group', 'code'); ki = col(header, 'conf', 'confidence')
     split = job.get('split_line')
     recs, seen = [], set()
@@ -142,7 +144,8 @@ def load_tsv(path, job):
             seen.add(ln); recs.append(dict(folio=fo, line=l2, label=label, pos=None, kind='line'))
         t = r[si]; conf = r[ki] if ki is not None and ki < len(r) else ''
         recs.append(dict(folio=fo, line=l2, label=label, pos=int(r[pi]), raw=t, sign=t, conf=conf, gloss='',
-                         kind='dot' if t == '.' else 'clear' if clear_word(t) is not None else 'sign'))
+                         kind='dot' if t == '.' or t in job.get('nonsign', []) else
+                         'clear' if clear_word(t) is not None else 'sign'))
     return recs
 
 
@@ -284,6 +287,8 @@ def render_concat(recs, job):
                 s += '' if r['null'] else '·' if v == uv else f'[{v}]' if len(v) > 1 else v
             elif r['kind'] == 'clear':
                 s += f"{{{r['value']}}}"
+            elif r['kind'] == 'dot' and 'nonsign' in job:
+                s += ' ' if r['sign'] == job.get('word_sep') else r['sign']
         res.append(f"{L['label']} | {s}")
     return res
 

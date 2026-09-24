@@ -1,4 +1,4 @@
-open
+solved
 
 # "Nota cifrada del Conde de la Cañada" — RAH Sig. 9/6958 (1869)
 
@@ -164,3 +164,70 @@ challenge page or a transient "upstream request failed"; 7 `--binary` image fetc
 2 needing a retry). All >=1.5 s apart, single fetcher, descriptive UA except where the site's own challenge
 needed a browser UA per the playbook. No login, no other host touched this pass. 2 Sonnet subagents (the two
 blind transcription passes), within the $8 cap.
+
+## Reading from the interlinear plaintext (24 September 2026, LANE R worker R8, aligner)
+
+**Result: every cipher line of 117/2-3 read, 667 cipher signs: H 665, M 2 (C 0, S 0, I 0, U 0).** The status is
+`solved` because the note carries its own plaintext. H here means read from the document's own interlinear
+plaintext; the R4 section above called that grade C. This is a recovery from the document, not a cryptanalytic result.
+Novelty is not classified here (rule 10; LANE V verifier).
+
+**Method.** The aligner transcribed the Spanish lines and the cipher lines by eye from `images/10137302.jpg` and
+`10137303.jpg`, zooming on every doubtful sign. The images on disk were used and no host was contacted. The unit is
+the letter: each cipher word has exactly one sign per letter of the Spanish word. The cipher keeps word division
+and copies some punctuation. It does not break where the clear lines break: it runs on continuously, about half a
+line behind, so page 2's first cipher line ends page 1's text ("su vida por llevarla a feliz termino").
+`build_align.py` holds the reading (a one-character private code mapped to atlas codes) and the paired plaintext,
+and writes `ciphertext.tsv`, `plaintext.tsv`, `plain_votes.tsv` (the letter each sign is aligned to) and `key.tsv`.
+`python3 ../../tools/decode_key.py . --check` (decode.json) regenerates `reading.txt`/`reading_tokens.tsv`
+and exits 0; `build_align.py --check` exits 0. The shared tool gained `nonsign`/`word_sep` and an `idx`
+column alias (test config `tools/tests/decode_configs/rah-canada-1869.json`; all decode_key tests pass).
+
+**The system.** A simple monoalphabetic substitution of the Spanish letters: Arabic digits stand for m j n ñ v t i o
+(0 2 3 4 5 6 7 9), and pen marks for the rest (atlas addendum in `glyphs/atlas.md`). There are 28 keyed signs for
+26 values. There are no nulls, no word or syllable signs and no nomenclator. The cipher spells out every
+abbreviation in the clear text: Sr. D. = señor don; S. M. = su magestad; V. M. = vuestra magestad; A. L. R. P. de
+VV. MM. = a los reales pies de vuestras magestades. The spelling is "magestad" with g. The day number 15 is
+enciphered with two signs ([g10] [g11]) of its own, not with the letter signs. There are two possible homophones,
+each seen only a few times. `[g08]` (∠) is s once, in "señalado", where `[g01]` is s fifty times; it may be a slip
+toward the ñ that follows. `[g09]` is e twice ("se estampa", "que gana"), where `[plus]` is e 99 times. `[g09]` is
+a shape call against `[cross]` (u); if it is `[cross]`, those two tokens are encoder slips. Security is minimal:
+word division, doubled letters (ll, rr) and repeated words are all visible.
+
+**Signs the plaintext does not explain (M, 2):** p302_c03 idx 7, `[g06]` (b) where the clear text has the v of
+"Bravo": the cipher spells "Brabo". p303_c24 idx 10, a second `[plus]` in "reales" (cipher r e a l e e s).
+**Plaintext without cipher:** "Va-" at the head of 117/3, a turn-over mark; and the "=" before "El Conde".
+**Plaintext the cipher had to settle:** the clear word the aligner first took for "guia" is
+"gana" ("que gana por momentos la idea de la justisima restauracion"). The cipher `[g02][loopn]3[loopn]` confirms it.
+Accents are not transcribed in `plaintext.tsv`.
+
+**Content (from the plaintext; the cipher agrees):** dated "Hoy 15 Noviembre" [1869]. The Conde de la Cañada asks
+Luis González Bravo to have the enclosed note reach the Queen. In it he congratulates her on her saint's day
+(Santa Isabel, 19 November). He hopes to do so again with her seated "en el trono de San Fernando". He says the idea
+of "la justisima restauracion" is gaining ground by the moment, and that no one outdoes him in wanting to be among
+the first to stake their lives on bringing it about.
+
+**Against the blind passes** (`compare_passes.py` -> `diff_vs_passes.tsv`; per page, since the passes split lines
+differently). The passes wrote + . - = literally, so those were read as [plus] [dot] [dash] [equals]:
+- p302: aligner 550 signs; pass A agrees on 382 and pass B on 363.
+- p303: aligner 117 signs; pass A agrees on 83 and pass B on 80.
+- 173 aligner signs match neither pass (`diff_vs_passes.tsv`), almost all systematic. `[circledot]` (l) was read 0
+  by both passes (19). `[g01]` (s) was read `[cross]`/`[dash]`/`[hook]` (about 40). `[bigloop]` (d) was read
+  `[loopn]`/`1` (about 24). `[g05]` (p) was read 9/1. 3 was read 2. `[g04]` (h) was read 1, and `[g03]` (q) was
+  read `[circledot]`.
+- Caveat: the aligner read the signs with the plaintext beside them, so a reading biased toward the expected letter
+  cannot be excluded for single signs. The two M tokens are the places where the aligner read against the plaintext.
+
+**Other items (suggestion only, nothing fetched):** the key would read any other item enciphered by the Conde de la
+Cañada (or his circle) in this system, since it is a fixed simple substitution with no apparent period or key
+change. A future worker could look through RAH Leg. XIX nº 117 and the other González Bravo / Isabel II exile items
+at bibliotecadigital.rah.es for cipher lines using the same digits and ⊣ ‡ ⊙ marks.
+
+**Search log for a prior transcription:** the six-source check-solved sweep and the editions-first check above
+(24 Sept 2026: WebSearch x2, sources/cryptiana, the Aymeloglu DECODE/BNE/PARES catalogues, both solver repositories,
+Google Books x3 by LANE S). None identifies, quotes or transcribes this note. Not checked: the RAE "Copias de
+cartas de Isabel II 1869-1871" page (403), the two Historia Contemporánea articles, DECODE itself (login lane N),
+and any printed edition or biography of González Bravo read cover to cover. This worker ran no new searches (brief:
+images on disk, no host).
+
+Requests this pass: none (no network host contacted). No subagents.

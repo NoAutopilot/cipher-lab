@@ -44,8 +44,15 @@ def start():
     return 0
 
 def keep_both(path):
+    """Resolve a real git conflict block by keeping both sides.
+
+    Markers must be anchored to the start of a line (Lesson of 24 Sept 2026: an
+    unanchored match also fires on ROOM.md prose that merely quotes marker text,
+    e.g. a flag line describing "an unclosed <<<<<<< HEAD", splicing unrelated
+    lines together and losing content between them).
+    """
     t = open(path, encoding="utf-8").read()
-    t2 = re.sub(r"<<<<<<< [^\n]*\n(.*?)=======\n(.*?)>>>>>>> [^\n]*\n", lambda m: m.group(1) + m.group(2), t, flags=re.S)
+    t2 = re.sub(r"^<<<<<<< [^\n]*\n(.*?)^=======\n(.*?)^>>>>>>> [^\n]*\n", lambda m: m.group(1) + m.group(2), t, flags=re.S | re.M)
     open(path, "w", encoding="utf-8").write(t2)
 
 def room_ok():

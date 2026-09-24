@@ -1943,6 +1943,71 @@ org` 3, `www.vahistorical.org` 1 (blocked), `digitalcollections.hsp.org` 1 (bloc
 blocked). WebSearch used as the practical substitute for founders.archives.gov's own search UI, per COMMON
 RULES. No Google Books, no Gallica, no DECODE, no subagents, no logins, no credentials.
 
+## Library of Congress digitised manuscripts (LANE N scout of 24 September 2026)
+
+Brief: `.claude/briefs/runs/2026-09-24-lane-n-scLOC.md`, copy-free only. Hosts named: `www.loc.gov` JSON search
+and item API, `tile.loc.gov` (page images), `crowd.loc.gov` (By the People transcriptions) if reachable.
+Target: digitised LoC manuscript items 1600-1900 (Presidential papers, Continental Congress, Revolutionary War,
+diplomatic papers of early envoys, Civil War telegram collections other than Stanton/Eckert, Confederate
+papers) with ciphertext and no decipherment, excluding Founders Online, the "Papers of ..." editorial projects,
+Tomokiyo and the solver repos, and excluding `ciphers/eckert-1864` and its family per the brief.
+
+**Egress test.** `www.loc.gov/search/?fo=json` 200; `www.loc.gov/item/.../?fo=json` 200; `tile.loc.gov` (IIIF
+image service) 200/301 (reachable); `crowd.loc.gov` **403 to curl with both a descriptive and a browser
+User-Agent** (one retry per the good-citizen rule, both blocked) -- logged as blocked, not queried further; no
+By the People transcription text was read this pass.
+
+**CONTROL (required by the brief before trusting the query).** `q=cipher+jefferson` on the loc.gov JSON search
+API surfaces, among its first page of results, `mcc.036` "Letter, James Madison to Thomas Jefferson, partially
+written in cipher **with translation by Jefferson**, 23 May 1789" -- a known, genuine LoC cipher manuscript
+(the contemporary translation is already on the document, so it scores unread=0 and is not a target, but its
+presence in the results confirms the search surfaces real manuscript ciphertext, not just noise). Control
+passed.
+
+**Result: 0 candidates kept of roughly 40 items examined across five targeted queries** (`cipher confederate`,
+`cipher continental congress`, `cipher minister`, `cipher telegram`, `in cipher not deciphered`, plus
+`cipher carmichael`/`cipher deane spain`/`cipher morris finance`/`cipher governor colonial` as follow-ups).
+Full log: `sources/solver-diffs/2026-09-24-lane-n-loc.tsv`. Three shapes accounted for every lead followed past
+the title stage:
+
+1. **Found-solved, checked against a named source before scoring (Thurloe/Raince/M9 lesson).** "Letter
+   Written in Cipher on Mourning Paper by Rose Greenhow" (`2021667572`, WDL/NARA via loc.gov), 1861 -- a genuine
+   symbol-substitution cipher confirmed from the page image (Thomas Jordan's cipher, given to Greenhow April
+   1861). Tomokiyo has a dedicated page for exactly this letter, `cryptiana.web.fc2.com/code/civilwar7.htm`
+   ("Rose Greenhow's Cipher Letter Written after the First Battle of Bull Run (1861)"), quoted verbatim: "the
+   present author deciphered it, only to find it had been done by others before (as expected)" -- citing
+   Fishel (2014), who "prints plaintext of Greenhow's nine letters in Appendix 4", and a prior deciphered
+   version on "The Rosenblog". Not scored, not nominated.
+2. **Editorial-project coverage, the same pattern the prior US-archives scout found for Founders Online.**
+   Every Madison, Jefferson, Short and Carmichael cipher item found (`mjm012235` and the rest of the 1782
+   Madison-Randolph exchange under Lovell's cipher keyed "Cuffee"; `mtjbib005656` and the rest of Jefferson's
+   cipher correspondence with Short, Carmichael, Pinckney, Monroe and Lewis, 1791-1803) falls inside the
+   date range and correspondent set covered by the Papers of James Madison / Papers of Thomas Jefferson
+   editorial editions (Founders Online), which the earlier US scout (this file, above) already established
+   decipher this material even when the era's recipient did not. Not individually re-verified item by item
+   this pass (budget); flagged as a gap for a future pass with time to check each letter against its edition
+   volume directly rather than relying on the pattern.
+3. **Structurally not a cryptanalysis/recovery target.** George Brinton McClellan Papers, "Telegrams sent/received
+   in cipher, 1862" (`mss318980174`, `mss318980175`), two ~104-page digitised telegram letterbooks. An interior
+   page (frame 0541: Banks/Franklin telegrams, 3-6 Apr 1862) was viewed at `tile.loc.gov` and shows a
+   **route-transposition cipher**: individual words are already legible plain English, arranged in a scrambled
+   grid reading order, not a substitution or code cipher. McClellan's Army of the Potomac telegraph traffic for
+   this period is comprehensively printed in Official Records ser. I and in Sears's edited "The Civil War
+   Papers of George B. McClellan" (1989); this pass did not check either edition page-by-page against the
+   letterbook (budget), so this is flagged `blocked` rather than scored `open`, per the lesson that a verdict of
+   open needs the standard edition checked first.
+
+Caveats: (1) this sweep did not reach NARA (`catalog.archives.gov`, not named in this brief) or the American
+Fur Company/Hudson's Bay Company fur-trade angle named in the brief -- no query built, a genuine gap; (2) the
+"colonial governors" and "diplomatic papers of early envoys" arms of the brief returned nothing distinct from
+the Jefferson/Madison/Carmichael/Short cluster above, i.e. still inside Founders Online's coverage, in the
+searches run; (3) `crowd.loc.gov` (By the People transcription text, named in the brief as a possible signal
+via `[cipher]`/`[in cipher]`/`[code]` marks) was never reached, so that signal is untested this pass, not
+negative. Requests: `www.loc.gov` 24 (JSON search + item API), `tile.loc.gov` 4 (page images), `crowd.loc.gov`
+2 (both 403, blocked), WebSearch 6, github.com 0 (no clone needed; checked existing `sources/cryptiana/` and
+grep of the digest already on disk). No NARA, no founders.archives.gov, no Google Books, no Gallica, no DECODE,
+no subagents, no logins, no credentials.
+
 ## Italian state archives, Florence and Milan (LANE N scout of 24 September 2026)
 
 Brief: `.claude/briefs/runs/2026-09-24-lane-n-scIT1.md`. Hosts named: Archivio di Stato di Firenze, the Medici

@@ -7408,7 +7408,6 @@
   "bl_add_ms_digitised_since": [],
   "rows": []
  },
-<<<<<<< Updated upstream
  "lane_n_us-b": {
   "_about": "LANE N scout of 24 September 2026 (worker for session_01W4z8JhXJYHRjorPC1Qkpiy, .claude/briefs/runs/2026-09-24-lane-n-scUS2.md): William L. Clements Library, American Philosophical Society, NYPL Digital Collections, New-York Historical Society, Harvard Houghton/CURIOSity, Princeton special collections (dpul.princeton.edu). Six of seven brief-named hosts blocked before any query form loaded (403: quod.lib.umich.edu, clements.umich.edu, search.amphilsoc.org, digitalcollections.nyhistory.org; Cloudflare Turnstile redirect: diglib.amphilsoc.org; token-gated: api.repo.nypl.org; Incapsula challenge: digitalcollections.nypl.org; 429 never resolving: curiosity.lib.harvard.edu, hollisarchives.lib.harvard.edu) -- all logged 'query form unverified', not 'no candidates'. dpul.princeton.edu answered and its control passed (found a genuine cipher item, Arthur Lee to the Continental Congress Committee of Correspondence, 31 Aug 1778, ark:/88435/dcr781wv919), but that item is already deciphered in-place (interlinear, contemporary) so it scores unread=0 and is not nominated; remaining 34+115+15+5 hits across four queries are printed books/pamphlets using 'cipher'/'cypher' in ordinary prose, no manuscript ciphertext found. findingaids.princeton.edu (not brief-named, tried only as the source catalogue for the one genuine hit) is Cloudflare Turnstile-blocked. Zero rows filed (UB1 unused). Full log: sources/solver-diffs/2026-09-24-lane-n-us-b.tsv.",
   "date": "24 September 2026",
@@ -7466,34 +7465,10 @@
    "agatha.arch.be": 4,
    "opac.kbr.be": 1,
    "www.kbr.be": 1,
-=======
- "lane_n_ireland": {
-  "date": "24 September 2026",
-  "_about": "LANE N scout of 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-n-scIE.md): National Library of Ireland (sources.nli.ie union index + www.nli.ie PDF collection-list finding aids), PRONI eCatalogue, Trinity College Dublin Digital Collections, Royal Irish Academy archives portal. No cipher item at any of the four hosts was already known to this project, so the brief's 'known item' control could not be run as specified; sources.nli.ie's search-result quality (correct subject tagging, no foliation/noise hits) was logged as the substitute check. catalogue.nli.ie and digital.nli.ie Cloudflare/proxy-blocked; PRONI eCatalogue's GET times out to a session page and its POST replay of the ASP.NET VIEWSTATE triple is WAF-rejected; TCD Digital Collections serves a Cloudflare/hCaptcha challenge (matches CLAUDE.md's existing note); RIA's archives.ria.ie is proxy-blocked (502, egress policy). Four rows kept (IE1-IE4), all catalogue-snippet or PDF-finding-aid leads with no image reached; three dropped (an Orrery cipher key with no paired letter, a literary glossarial cipher, and a printer's-monogram false positive).",
-  "kept": 4,
-  "dropped": 3,
-  "digitised_copy_free": 0,
-  "raw_hits_sources_nli_unfiltered": 51,
-  "raw_hits_sources_nli_dublin_only": 6,
-  "requests_per_host": {
-   "sources.nli.ie": 7,
-   "www.nli.ie": 4,
-   "catalogue.nli.ie": 3,
-   "digital.nli.ie": 1,
-   "apps.proni.gov.uk": 3,
-   "www.proni.gov.uk": 1,
-   "www.nidirect.gov.uk": 1,
-   "discovery.proni.gov.uk": 1,
-   "digitalcollections.tcd.ie": 2,
-   "ria.ie_www.ria.ie": 2,
-   "archives.ria.ie": 1,
-   "WebSearch": 7,
->>>>>>> Stashed changes
    "github.com": 2
   },
   "rows": [
    {
-<<<<<<< Updated upstream
     "rank": "NB1",
     "target": "Lodewijk van Nassau to Willem van Oranje, four cipher letters (4610, 4611, 4612, 4616) with two sibling letters (4613, 4615) carrying a contemporary decipherment imaged in the same shelfmark",
     "year": "1573-1574",
@@ -7606,7 +7581,34 @@
      "unread": 3
     },
     "total": 32
-=======
+   }
+  ]
+ },
+ "lane_n_ireland": {
+  "date": "24 September 2026",
+  "_about": "LANE N scout of 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-n-scIE.md): National Library of Ireland (sources.nli.ie union index + www.nli.ie PDF collection-list finding aids), PRONI eCatalogue, Trinity College Dublin Digital Collections, Royal Irish Academy archives portal. No cipher item at any of the four hosts was already known to this project, so the brief's 'known item' control could not be run as specified; sources.nli.ie's search-result quality (correct subject tagging, no foliation/noise hits) was logged as the substitute check. catalogue.nli.ie and digital.nli.ie Cloudflare/proxy-blocked; PRONI eCatalogue's GET times out to a session page and its POST replay of the ASP.NET VIEWSTATE triple is WAF-rejected; TCD Digital Collections serves a Cloudflare/hCaptcha challenge (matches CLAUDE.md's existing note); RIA's archives.ria.ie is proxy-blocked (502, egress policy). Four rows kept (IE1-IE4), all catalogue-snippet or PDF-finding-aid leads with no image reached; three dropped (an Orrery cipher key with no paired letter, a literary glossarial cipher, and a printer's-monogram false positive).",
+  "kept": 4,
+  "dropped": 3,
+  "digitised_copy_free": 0,
+  "raw_hits_sources_nli_unfiltered": 51,
+  "raw_hits_sources_nli_dublin_only": 6,
+  "requests_per_host": {
+   "sources.nli.ie": 7,
+   "www.nli.ie": 4,
+   "catalogue.nli.ie": 3,
+   "digital.nli.ie": 1,
+   "apps.proni.gov.uk": 3,
+   "www.proni.gov.uk": 1,
+   "www.nidirect.gov.uk": 1,
+   "discovery.proni.gov.uk": 1,
+   "digitalcollections.tcd.ie": 2,
+   "ria.ie_www.ria.ie": 2,
+   "archives.ria.ie": 1,
+   "WebSearch": 7,
+   "github.com": 2
+  },
+  "rows": [
+   {
     "row": "IE1",
     "name": "Correspondence in cipher by statesmen and others, re. negotiations from Belgium on the restoration prospects of Charles II",
     "year": "[c.1656-60, undated in snippet]",
@@ -7657,8 +7659,42 @@
     "kind": "contribution (tentative)",
     "where": "sources.nli.ie/Record/MS_UR_066509 (Cloudflare-blocked; snippet only)",
     "total": 18
->>>>>>> Stashed changes
    }
   ]
+ },
+ "lane_n_loc": {
+  "_about": "LANE N scout of 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-n-scLOC.md, worker for session_01W4z8JhXJYHRjorPC1Qkpiy): Library of Congress digitised manuscripts, copy-free only (www.loc.gov JSON search/item API, tile.loc.gov IIIF images, crowd.loc.gov By the People). Control passed (q=cipher+jefferson surfaces mcc.036, a known genuine LoC cipher item). Zero candidates kept of roughly 40 items examined: Rose Greenhow's cipher letter (2021667572) is found-solved (Tomokiyo civilwar7.htm quotes his own decipherment matching Fishel 2014 Appendix 4); the Madison-Randolph/Jefferson-Short-Carmichael cipher correspondence found is inside Founders Online/Papers-of- editorial coverage, same pattern as the prior LANE N US scout; the McClellan Papers cipher telegram letterbooks (mss318980174/175) are route-transposition with plaintext words already legible on the page, flagged blocked (not checked against OR/Sears) rather than scored open. crowd.loc.gov 403 to curl both UAs, one retry, blocked. Full log: sources/solver-diffs/2026-09-24-lane-n-loc.tsv; narrative: QUEUE.md 'Library of Congress digitised manuscripts (LANE N scout of 24 September 2026)'.",
+  "date": "24 September 2026",
+  "control": {
+   "host": "www.loc.gov",
+   "result": "passed",
+   "evidence": "q=cipher+jefferson surfaces mcc.036, 'Letter, James Madison to Thomas Jefferson, partially written in cipher with translation by Jefferson, 23 May 1789' -- a known genuine LoC cipher item (unread=0, edition, translation already on the document); confirms the search API returns real manuscript cipher hits"
+  },
+  "raw": 40,
+  "kept": 0,
+  "dropped": [
+   {
+    "name": "Letter Written in Cipher on Mourning Paper by Rose Greenhow (2021667572)",
+    "reason": "found-solved -- Tomokiyo civilwar7.htm: deciphered by the author, already done before by Fishel 2014 (plaintext printed, Appendix 4) and 'The Rosenblog'"
+   },
+   {
+    "name": "James Madison to Edmund Randolph 1782 series (mjm012235 etc.), Jefferson-Short-Carmichael-Monroe-Lewis cipher correspondence 1791-1803 (mtjbib005656 etc.)",
+    "reason": "editorial-project coverage -- Papers of James Madison / Papers of Thomas Jefferson (Founders Online) territory, same pattern as the prior LANE N US scout"
+   },
+   {
+    "name": "George Brinton McClellan Papers, cipher telegram letterbooks (mss318980174, mss318980175)",
+    "reason": "blocked, not dropped as solved -- route-transposition cipher with plaintext words already legible on the page (frame 0541 viewed); not checked against OR/Sears McClellan Papers edition this pass, so not scored open"
+   }
+  ],
+  "hosts_blocked": [
+   "crowd.loc.gov (403 to curl, descriptive UA and browser UA, one retry each; By the People transcription text unread this pass)"
+  ],
+  "requests_per_host": {
+   "www.loc.gov": 24,
+   "tile.loc.gov": 4,
+   "crowd.loc.gov": 2,
+   "WebSearch": 6
+  },
+  "rows": []
  }
 }

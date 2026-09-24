@@ -1,0 +1,176 @@
+# p302: aligner 550 signs; passA 553 signs, 382 agree; passB 571 signs, 363 agree
+# p303: aligner 117 signs; passA 124 signs, 83 agree; passB 128 signs, 80 agree
+line	idx	aligner	passA	passB
+p302_c01	0	[g04]	1	1
+p302_c01	2	[g07]	[plus]	[cross]
+p302_c01	4	[g10]	1	1
+p302_c01	5	[g11]	[hook]	[loopn]
+p302_c01	13	[g06]	7	9
+p302_c02	3	[g02]		[bigloop]
+p302_c02	7	[circledot]	0	[circle]
+p302_c02	10	[g01]	[dot]	[dot]
+p302_c02	16	[bigloop]	[loopn]	1
+p302_c02	23	[g01]		[hook]
+p302_c02	25	[g02]		[loopn]
+p302_c03	4	[g06]	7	7
+p302_c03	7	[g06]	3	7
+p302_c03	11	[g04]	1	[dot]
+p302_c03	13	[g02]		[bigloop]
+p302_c03	17	[circledot]	0	0
+p302_c03	19	[g02]	[loopn]	[bigloop]
+p302_c03	29	[g01]	[cross]	[hook]
+p302_c03	34	[g01]	[cross]	[hook]
+p302_c04	0	[g02]	[loopn]	
+p302_c04	2	[g01]	[cross]	
+p302_c04	26	[g03]	[circledot]	[circledot]
+p302_c05	4	[bigloop]	[loopn]	1
+p302_c05	13	[g01]	[dot]	[dot]
+p302_c05	14	[g09]		[hook]
+p302_c05	17	[g01]	[plus]	[plus]
+p302_c05	21	[g05]	9	
+p302_c06	9	[circledot]	9	0
+p302_c06	13	[g01]		[hook]
+p302_c06	14	[g05]		1
+p302_c06	17	[g01]	[cross]	[hook]
+p302_c06	22	[cross]	[plus]	[plus]
+p302_c06	25	[g08]	4	4
+p302_c06	29	[circledot]	0	0
+p302_c07	1	[g06]	7	7
+p302_c07	2	[g01]	[cross]	[hook]
+p302_c07	4	[g03]	[plus]	0
+p302_c07	11	[g01]		[hook]
+p302_c07	14	[g05]	[plus]	9
+p302_c07	21	[circledot]	0	0
+p302_c07	25	[g07]	[plus]	[hook]
+p302_c07	27	[g06]	[plus]	1
+p302_c07	35	[g02]	2	1
+p302_c08	6	[bigloop]	[loopn]	[loopn]
+p302_c08	9	[bigloop]	[loopn]	1
+p302_c08	12	[circledot]	0	0
+p302_c08	19	[bigloop]		
+p302_c09	0	[g01]	[cross]	[hook]
+p302_c10	3	[g02]	3	1
+p302_c10	7	[circledot]	0	
+p302_c10	11	[g01]	[cross]	[hook]
+p302_c10	14	[circledot]	0	0
+p302_c10	18	[g04]	1	1
+p302_c10	29	[circledot]	0	0
+p302_c11	0	0	[circledot]	[circledot]
+p302_c11	2	[g07]	[plus]	
+p302_c11	7	[bigloop]	[loopn]	1
+p302_c11	10	[circledot]	0	0
+p302_c11	19	5	[loopn]	
+p302_c11	22	[g01]	[plus]	[plus]
+p302_c11	29	[g02]	[loopn]	[circle]
+p302_c11	31	[g01]	1	1
+p302_c11	34	[bigloop]	[loopn]	[loopn]
+p302_c12	6	[bigloop]	[loopn]	1
+p302_c12	10	[bigloop]	[loopn]	1
+p302_c12	13	[g01]		[dash]
+p302_c12	17	[g01]	1	[dash]
+p302_c12	32	[bigloop]	[loopn]	[loopn]
+p302_c12	35	[g03]	[circledot]	[circledot]
+p302_c13	3	[g03]	[circledot]	
+p302_c13	4	[cross]		
+p302_c13	7	[g05]		
+p302_c13	8	[cross]		
+p302_c13	10	[bigloop]	9	
+p302_c13	13	[g04]	1	1
+p302_c13	18	[circledot]	0	0
+p302_c13	25	[g01]	[cross]	[dash]
+p302_c13	29	[g05]	9	1
+p302_c13	32	[g01]	[cross]	[dash]
+p302_c13	34	[g07]	[cross]	[loopn]
+p302_c13	36	[g01]		1
+p302_c14	2	[bigloop]		
+p302_c14	5	5	[loopn]	[loopn]
+p302_c14	8	[g01]	[plus]	[plus]
+p302_c14	15	[g02]		[loopn]
+p302_c14	17	[g01]	1	1
+p302_c14	20	[bigloop]	[loopn]	[loopn]
+p302_c14	26	[circledot]	0	0
+p302_c14	31	3	2	2
+p302_c14	34	[bigloop]	[loopn]	[loopn]
+p302_c15	0	[g01]	[cross]	[dash]
+p302_c15	10	[bigloop]		[loopn]
+p302_c15	13	[g01]	[cross]	[dash]
+p302_c15	19	[circledot]	0	0
+p302_c15	23	[g01]	[cross]	[dash]
+p302_c15	27	[circledot]	0	0
+p302_c15	31	[bigloop]	[loopn]	[loopn]
+p302_c17	0	0	[loopn]	
+p302_c17	3	[g05]	9	9
+p302_c17	13	[bigloop]	[loopn]	[loopn]
+p302_c17	19	[dot]	0	
+p302_c17	21	[g01]	1	[hook]
+p302_c17	22	[g05]	9	1
+p302_c17	27	[g01]	[cross]	[dash]
+p302_c18	0	5	[equals]	
+p302_c18	3	[g01]	[plus]	[plus]
+p302_c18	10	[g02]		[circle]
+p302_c18	12	[g01]	1	1
+p302_c18	15	[bigloop]		
+p302_c18	17	[g03]		
+p302_c18	18	[cross]		
+p302_c18	19	[g09]		
+p302_c18	21	[g02]		
+p302_c18	23	3	[circledot]	[circledot]
+p302_c18	26	[g05]	9	[dash]
+p302_c18	37	[g01]	[cross]	[dash]
+p302_c19	0	[circledot]	0	1
+p302_c19	4	[bigloop]	[loopn]	[loopn]
+p302_c19	8	[bigloop]		1
+p302_c19	11	[circledot]	0	0
+p302_c19	16	[g01]	[cross]	[dash]
+p302_c19	19	[g01]	6	6
+p302_c19	26	[g01]	1	[dash]
+p302_c20	0	[g07]	[plus]	1
+p302_c20	2	[g03]	[circledot]	[circledot]
+p302_c20	6	3	9	9
+p302_c20	8	[bigloop]	[loopn]	[loopn]
+p302_c20	27	[bigloop]	[loopn]	[loopn]
+p302_c20	29	[g01]	[cross]	[dash]
+p302_c20	32	[g01]		[dash]
+p302_c20	34	[bigloop]		1
+p302_c21	0	[g01]		[dash]
+p302_c21	4	[cross]	[plus]	[plus]
+p302_c21	8	[bigloop]	[loopn]	[loopn]
+p302_c21	11	[circledot]	0	0
+p302_c21	13	[g01]	[cross]	[dash]
+p302_c21	15	[g05]	9	1
+p302_c21	22	[g01]	[cross]	[dash]
+p302_c21	24	[g03]	[circledot]	1
+p302_c21	28	[g01]	[cross]	[plus]
+p302_c21	34	[g02]	3	[loopn]
+p303_c22	0	[g01]	[cross]	[hook]
+p303_c22	5	[bigloop]		
+p303_c22	8	[g05]	[loopn]	[loopn]
+p303_c22	13	[circledot]	0	0
+p303_c22	15	5	[loopn]	
+p303_c22	18	[circledot]	0	0
+p303_c22	25	[circledot]	0	0
+p303_c22	34	3	2	2
+p303_c23	0	[g01]	[cross]	[hook]
+p303_c24	1	[circledot]	0	0
+p303_c24	3	[g01]	[cross]	[dash]
+p303_c24	8	[circledot]	0	0
+p303_c24	11	[g01]	[cross]	[dash]
+p303_c24	13	[g05]	9	1
+p303_c24	16	[g01]	[cross]	[dash]
+p303_c24	18	[bigloop]	[loopn]	1
+p303_c24	24	[g01]	[cross]	[dash]
+p303_c24	28	[g01]	[cross]	[dash]
+p303_c25	2	[g02]	[loopn]	1
+p303_c25	4	[g01]	[plus]	[dash]
+p303_c25	7	[bigloop]	[loopn]	1
+p303_c25	9	[g01]	[cross]	[dash]
+p303_c25	11	[g07]	1	1
+p303_c25	22	[circledot]	0	0
+p303_c26	2	[g01]	[cross]	[dash]
+p303_c26	4	[g05]	9	1
+p303_c26	9	3	2	2
+p303_c26	10	[bigloop]	[loopn]	[loopn]
+p303_c26	15	[g01]	[cross]	[dash]
+p303_c26	16	[g05]	1	1
+p303_c26	21	[g07]	[dot]	[dot]
+p303_c26	25	3	2	2
