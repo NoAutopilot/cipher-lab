@@ -924,6 +924,22 @@
   {
    "date": "24 Sept 2026",
    "kind": "reading",
+   "title": "Danzay to the Cardinal of Lorraine, dated 27 Jan 1557 (BnF fr. 20140 f.35)",
+   "grade": "N3, single audit; second audit pending",
+   "line": "Read with the key Tomokiyo published: 508 of 638 cipher tokens at grade H, about 23 of 37 lines continuous French, 69 signs unkeyed; no contemporary decipherment. No prior decipherment or printed plaintext located in the Danzay editions, the Scottish and English state-paper series or the Danish regesta (AUDIT.md). Partial; the letter continues on f.36.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr20140-danzay-1557"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Montagu to Thurloe, 20 Apr-29 May 1656 (Thurloe State Papers v.67-69): printed decipherment aligned to the cipher groups",
+   "grade": "N0",
+   "line": "Birch printed this letter in 1742 with a decipherment above the cipher. Aligning it to the numeral groups yields 248 group values of Montagu's cipher, consistent with Tomokiyo's reconstruction. A key and a solver benchmark, not a reading.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/thurloe-printed"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "reading",
    "title": "Raince to Madame, Rome, 25 Oct 1525 (BnF Dupuy 452 ff.28-29)",
    "grade": "N0, F0",
    "line": "5,281 of 5,725 signs read with Tomokiyo's 1526 key from a two-pass transcription rebuilt by glyph clustering; Jacqueton printed it in 1892 from the decipherment at f.31. The reading stands as an independent check of the edition.",
@@ -973,7 +989,7 @@
    "date": "20 Sept 2026",
    "kind": "contribution",
    "title": "Eckert keys, 23 checked readings and the corpus-status finding offered to the Huntington Library",
-   "grade": "offered, reply pending",
+   "grade": "offered, reply pending; 1862 readings N1 (audit 24 Sept)",
    "line": "The Zooniverse project never launched its decoding phase; the mechanical corpus pass is possible and was offered as an edition, not a solve. The 1862 folder linked here had no AUDIT.md when this was offered (outreach gate 1 unmet); its audit of 24 Sept 2026 puts all ten 1862 readings at N1, and no CONTRIBUTIONS.md row records the offer.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1862"
   },
