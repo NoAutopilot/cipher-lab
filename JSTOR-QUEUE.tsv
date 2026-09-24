@@ -27,3 +27,6 @@ ciphers/fr20140-danzay-1557	"Danzay" AND ("marchands de Lyon" OR Augsbourg) AND 
 ciphers/fr2980-gramont	"Gramont" AND Florence AND 1530 AND (liberté OR liberty)	2026-09-24	queued	
 ciphers/fr2980-gramont	"évêque de Tarbes" AND Florence AND 1530	2026-09-24	queued	
 ciphers/fr2980-gramont	"Gabriel de Gramont" AND "Clement VII" AND Florence	2026-09-24	queued	
+ciphers/fr5160-letellier-1653	"Servien" AND (Turin OR Savoie) AND 1659	2026-09-24	queued	
+ciphers/fr5160-letellier-1653	"Justine de Bressac" OR "président Servien" ambassade	2026-09-24	queued	
+ciphers/fr5160-letellier-1653	Brienne AND Servien AND (chiffre OR déchiffrement) AND Parme	2026-09-24	queued	

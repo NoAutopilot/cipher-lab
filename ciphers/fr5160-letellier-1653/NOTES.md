@@ -2,6 +2,13 @@
 
 Status: open
 
+> **Verifier correction, 24 Sept 2026 (AUDIT.md):** f.86 and f.88 are N0 (their contemporary decipherment is f.87).
+> The recipient of the 1659 letters cannot be **Abel** Servien, who died on 17 Feb 1659. It is almost certainly his brother
+> **Ennemond Servien**, ambassador at Turin 1648-1676 (grade I, verifier's inference; AUDIT.md section 3). The catalogue's
+> "Abel" is kept below only where it is quoted.
+
+Suggestion (verifier): read Conti 2024, *Histoire, économie et société* 2024/4 p.51 (Servien embassy, Turin), for any citation of fr.5160.
+
 Check-solved pass, 24 September 2026 (Sonnet, orchestrator brief for M13-M16). Editions-first + one-leaf pass;
 a formal six-source check-solved run is still owed before board promotion.
 

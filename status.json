@@ -1196,8 +1196,8 @@
    "date": "24 Sept 2026",
    "kind": "recovery",
    "title": "Brienne to Servien, 21 Nov 1659 (fr.5160 ff.86-88): key recovered from the contemporary decipherment on f.87",
-   "grade": "key 65 groups C; f.88 C 67 / M 78 / U 8 of 153",
-   "line": "f.87 deciphers both ciphered passages; the key reads f.88 at 114/145 against a control of 28-35. A recovery of an existing decipherment; verifier (LANE V) next.",
+   "grade": "N0 (contemporary decipherment on f.87); key 74 groups C; f.86 C 72 / M 196, f.88 C 65 / M 88",
+   "line": "f.87 deciphers both ciphered passages; the key reads f.88 at 114/143 against a control of 28-35. A key recovered from an existing decipherment, not a first reading. Verifier: N0, see AUDIT.md.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653"
   },
   {

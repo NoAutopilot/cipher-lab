@@ -1,0 +1,6 @@
+host	requests	status
+api.crossref.org	3	ok
+api.openalex.org	1	blocked: HTTP 429 on https://api.openalex.org/works?per-page=5&search=%22pour%20le%20ruiner%20dans%20l%27esprit%20de%20monsieur%20son%20fils%22
+archive.org	6	ok
+be-api.us.archive.org	12	ok
+www.googleapis.com	12	ok
