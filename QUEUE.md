@@ -5035,15 +5035,27 @@ Follow-up to the 24 Sept scCS2 scout row above ("CS2-03, -14, -15, -27 are marke
   IIIF). No standard edition covering a June 1586 letter to Mercœur or from Guise located (Carné's Mercœur
   edition runs 1589-1598 only). Verdict `blocked` (edition not located, not `open`, per the LANE N3 addition).
   No nomination.
-- **CS2-15** (`ciphers/fr2988-ranzo-1520s/`): **blocked, held** (LANE N3 orchestrator 17:40: no edition read, DECODE docs and Aymeloglu unchecked; csED3). image confirmed copy-free, folios pinned exactly (Gallica ark
-  `btv1b525240150`, ff.9r-11v = canvases f25-f30). Same cipher system as CS2-01 per Bourdeau's own catalogue
-  note (not necessarily same correspondence: CS2-01 addressed to "Garbino," this item's recipient unnamed in
-  the BnF catalogue). Tomokiyo/Cryptiana's published partial Ranzo key is about CS2-01 specifically, not this
-  item. Verdict `open`. **Nominated.**
-- **CS2-14** (`ciphers/beinecke-mellon29-elia/`): **blocked, held** (LANE N3 orchestrator 17:40: Witten Mellon catalogue, DECODE docs and Aymeloglu unchecked; csED3). image confirmed copy-free (Yale IIIF, catalog `17388793`, 74
-  images, full resolution). Beinecke's own catalogue note that f.2v carries a self-keyed zodiac-sign legend does
-  not cover the actual ~234-letter cipher (ff.1v-2r, alchemical operations); no literature found transcribing or
-  solving it. Verdict `open`. **Nominated.**
+- **CS2-15** (`ciphers/fr2988-ranzo-1520s/`): **edition check done, csED3, 24 Sept 2026** (hold lifted). CSP
+  Venice vols III (1520-1526) and IV (1527-1533) and Sanudo *I Diarii* vol. XLIII (Oct 1526-Jan 1527, bracketing
+  the one hard date in the folder) read in full text, archive.org: no hit. DECODE R1894's hard filter (an
+  attached "Transcription" document, found via Aymeloglu's public RecordsView scrape) checked and cleared -- it
+  is Bourdeau's own transcription, not a decipherment. Aymeloglu's repository grepped, no hit. **More
+  importantly: Bourdeau's own working folder (`vasto1527/`) already transcribed this exact letter (~2,600
+  groups, `n20/ranzo_c0*.txt`) and pooled it into his no.20/Garbino corpus (~3,900 groups combined) -- this is
+  not a separate target from CS2-01, it is unread material already folded into `ciphers/fr3022-garbino-1528`'s
+  corpus.** Verdict `open`, **same key/corpus as CS2-01 -- recommend no separate board slot; fold into or
+  cross-link with fr3022-garbino-1528 instead of nominating independently.** Ark discrepancy flagged, not
+  resolved: Bourdeau's confirmed ark `btv1b9059908w` vs. csCS2c's inferred-only ark `btv1b525240150` for the
+  same shelfmark -- a recovery worker must confirm which is right before capturing images.
+- **CS2-14** (`ciphers/beinecke-mellon29-elia/`): **edition check done, csED3, 24 Sept 2026** (hold lifted). The
+  primary standard catalogue (Witten & Pachella, *Alchemy and the Occult*, Yale 1977, manuscripts vols 3-4) is
+  not digitised anywhere found (HathiTrust holds only the unrelated 1968 printed-books vols 1-2); Beinecke's own
+  manuscript-catalogue page stands in, already read. One genuine scholarly source on this manuscript's encoded
+  content found and read (Agnieszka Rec, Societas Magica Newsletter 31, Fall 2014): confirms a *codeword* list
+  (zodiac signs, f.1r) exists and is technically distinct from a letter-level *cipher*, declines to discuss it
+  further, makes no claim about the actual target (ff.1v-2r alchemical-operations cipher). DECODE R2877 carries
+  no attached document of any kind (clean, no hard filter). Aymeloglu's repository grepped, no hit. Verdict
+  `open` (standalone item, not a same-corpus situation like CS2-15). **Nominated.**
 - **CS2-27** (`ciphers/sanguszkow-mniszech-dunin-1714/`): the exact correspondent-pair/year item located in
   szukajwarchiwach.gov.pl's own catalogue (ref. 29/637/0/1.3/9908/9) states "No scans / photos" on its own
   record; the item detail page itself returned a persistent site-side "portlet unavailable" error, unrelated to
@@ -5097,3 +5109,11 @@ Brief `.claude/briefs/runs/2026-09-24-lane-n3-csGOM.md`. Full search log in each
 
 No nomination lines posted (both rows stay `blocked` per the lane rule). Requests: gallica.bnf.fr ~14
 (ContentSearch, SRU, IIIF), WebSearch 3, github.com 1 shallow clone (grep only, dbourdeau/cyphersolver).
+
+**csED3 addendum, 24 Sept 2026:** the LANE N3 orchestrator (17:40) held both CS2-14 and CS2-15's nominations above
+for an inadequate edition/catalogue check. Edition check run (csED3, brief `.claude/briefs/runs/2026-09-24-lane-
+n3-csED3.md`); full search log and verdicts now in each target's own NOTES.md and the two CS2 rows above (edited
+in place, this addendum records only what changed). Both verdicts stand at `open`, hold lifted for both, but
+**CS2-15 is not an independent target** -- Bourdeau's own repository already transcribed and pooled it into
+CS2-01/`fr3022-garbino-1528`'s corpus; recommend against a separate board slot. CS2-14 remains a standalone
+nomination. **Total this pass: 0 new nominations (2 verdicts confirmed/corrected on existing nominations).**

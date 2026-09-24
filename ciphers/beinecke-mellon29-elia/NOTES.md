@@ -1,6 +1,13 @@
-blocked
+open
 
-**Held by the LANE N3 orchestrator, 24 Sept 2026 17:40 UTC:** status `blocked`, not `open`: the check-solved pass did not read an edition or catalogue for the item (section 2) and did not check the DECODE record documents or the Aymeloglu repository (LANE N3 edition rule; COMMON addition (c)). The nomination line of 17:28 is held. Edition check: brief `.claude/briefs/runs/2026-09-24-lane-n3-csED3.md`.
+**Edition check (LANE N3 csED3, 24 Sept 2026 18:xx UTC):** hold lifted -- verdict `open`. The standard printed
+catalogue (Witten & Pachella, *Alchemy and the Occult*, Yale 1977, vols 3-4) is not reachable in full (HathiTrust
+holds only vols 1-2, the 1968 printed-books catalogue; the manuscripts volumes are not digitised anywhere found);
+Beinecke's own manuscript-catalogue page (already read by csCS2c, section 2 below) is this item's closest available
+standard description and was re-confirmed. One directly relevant piece of scholarship on this manuscript's cipher
+content was found and read (Agnieszka Rec, Societas Magica Newsletter 31, Fall 2014) -- it does not solve or read
+this folder's target cipher. DECODE record documents and Aymeloglu's repository checked (below), both clean.
+Section 2 below. Brief `.claude/briefs/runs/2026-09-24-lane-n3-csED3.md`.
 
 # Pseudo-Elian alchemical cipher, "Lumen luminum" — Beinecke Rare Book & MS Library, Mellon MS 29
 
@@ -44,29 +51,93 @@ capture; out of scope for check-solved to chase further) — flagged for a recov
    of the encrypted material. Citations given in the catalogue entry (TK 1237, TK 336-337 — Thorndike-Kibre
    incipit numbers; De Ricci-Bond 7(26) — the standard Yale pre-1600 MS census) are incipit/census matches, not
    claims of decipherment.
-2. **DECODE R2877.** No local `sources/decode/` file for this record; not checked (DECODE login is the DECODE
-   worker's alone per COMMON rules).
-3. **Literature on the Mellon pseudo-Elian manuscripts.** alchemywebsite.com's Mellon Collection database entry
+2. **DECODE R2877 documents (edition check, LANE N3 csED3, 24 Sept 2026).** `sources/decode/records-non-decrypted-
+   2026-09-24.tsv` (on disk) confirms status "Non-decrypted" for id 2877, no document-attachment column.
+   Cross-checked against a fresh shallow clone of aaymeloglu/unsolved-ciphers's `catalogue/decode-records.jsonl`
+   (a public, no-login RecordsView field scrape, dated 23 Sept 2026): id **2877** carries `"Available Documents":
+   ""` -- **empty, no document of any kind attached** (contrast a genuine hard-filter case in the same dataset,
+   id 2988/BL Add MS 4136, "Partially decrypted" with a "Key" document attached). Clean: no hard filter, nothing
+   to check further. `"Inline Cleartext": "Yes"` in the same record matches the Beinecke description below (the
+   manuscript is mostly clear Latin, only ff.1v-2r are "partly in cipher").
+3. **Standard printed catalogue.** Witten, Pachella et al., *Alchemy and the Occult: A Catalogue of Books and
+   Manuscripts from the Collection of Paul and Mary Mellon* (Yale University Library, 4 vols, 1968/1977) is the
+   standard reference the brief names. HathiTrust Bibliographic API (`catalog.hathitrust.org/api/volumes/brief/
+   recordnumber/000162183.json`, OCLC 6485401, found by WebSearch): holds only **vol. 1** (`inu.30000006085066`)
+   and **vol. 2** (`inu.30000006085074`), both "Limited (search-only)" and both the **1968 printed-books**
+   volumes (1472-1790) -- the **manuscripts volumes (3-4, 1977, which would carry the actual Mellon MS 29 entry)
+   are not on HathiTrust**, and a WebSearch/archive.org advancedsearch found no digitisation of any volume
+   anywhere else (limited edition of 500 sets; archive.org query for `title:(alchemy occult mellon witten)`
+   returns 0 results). Route exhausted for the primary catalogue itself. Beinecke's own manuscript-catalogue page
+   (`pre1600ms.beinecke.library.yale.edu/docs/pre1600.mell029.htm`, already quoted by csCS2c, re-confirmed this
+   pass) is drawn from the same De Ricci-Bond/Thorndike-Kibre census tradition and is this item's best available
+   standard description in practice.
+4. **Literature on the Mellon pseudo-Elian manuscripts.** alchemywebsite.com's Mellon Collection database entry
    for MS 29 (WebFetch) gives only physical description (33 folios, paper, 190×132mm, "Elias Cortonensis, O.F.M.
    Lumen luminum") with "no mention of ciphers, transcriptions, editions, or scholarly discussions." A WebSearch
    for the manuscript together with "cipher"/"zodiac"/"alchemical" returned only the same Beinecke catalogue
-   entry, the alchemywebsite listing, and unrelated Mellon manuscripts (MS 2, 24, 33). No published transcription,
-   edition or decipherment of this item's cipher passages was located. A second WebSearch on cryptiana.web.fc2.com
-   + "Mellon"/"Elia"/"Cortona" returned no relevant hit (Tomokiyo's site does not appear to cover this item).
+   entry, the alchemywebsite listing, and unrelated Mellon manuscripts (MS 2, 24, 33). A second WebSearch on
+   cryptiana.web.fc2.com + "Mellon"/"Elia"/"Cortona" returned no relevant hit (Tomokiyo's site does not appear to
+   cover this item). **One genuine, directly relevant scholarly source found and read this pass** (WebSearch +
+   WebFetch/Read of the PDF): Agnieszka Rec (Yale), "Ciphers and Secrecy Among the Alchemists: A Preliminary
+   Report," *Societas Magica Newsletter* 31 (Fall 2014), societasmagica.org. Its footnote 8, quoted verbatim (per
+   the M9 lesson):
+
+   > "Another manuscript, Mellon MS 29, includes a code that was used with the same intent to conceal as the
+   > ciphers discussed below. Written around 1525, Mellon MS 29 is a Latin and Italian copy of the Lumen luminum
+   > ascribed to the Franciscan Elias of Cortona. Since it does not use a cipher, the manuscript will not be
+   > discussed further in the present study. However it is worth emphasizing the technical distinction between a
+   > 'cipher' and a 'code'... In a code, the unit of encryption is a word. So, for example, the list of codewords
+   > on f.1r of Mellon MS 29 maps 'Scorpio' to 'prk∫yq∫7gp' and 'Cancer' to 'irgp∫hk∫cel.'"
+
+   Rec's own main text (section 1) independently corroborates the Beinecke catalogue's zodiac note: "Of the thirty
+   alchemical manuscripts in that collection written before 1600, only one -- Mellon MS 27 -- includes ciphers,
+   while Decknamen, allegories, and figurative language appear in all thirty" -- i.e. by Rec's own technical
+   distinction (letter-level cipher vs. word-level code), **Mellon MS 29's f.1r zodiac list is a *code*, not the
+   *cipher* this folder's DECODE record and Bourdeau's "~234 letters" figure target**; her article explicitly
+   declines to discuss it further and makes no claim about the separate ff.1v-2r "alchemical operations" cipher
+   passage. This is consistent with, not a solution of, this folder's target, and is the field's only located
+   scholarly acknowledgement that Mellon MS 29 carries encoded content at all -- also confirming the field
+   assessment that "alchemical ciphers have yet to receive systematic treatment... a comprehensive list of
+   manuscript witnesses" does not yet exist. api.openalex.org: rate-limited this pass ("Insufficient budget...
+   $0 remaining; resets at midnight UTC" -- the shared daily IP budget, already exhausted earlier today by
+   another lane's open-index run per ROOM.md 17:22); not retried (one-retry-after-pause limit already spent by
+   that earlier run on this IP).
+
+5. **Solver repositories (edition check, LANE N3 csED3, 24 Sept 2026).** Fresh shallow clones of both. dbourdeau/
+   cyphersolver: no target folder or note for "mellon", "elia", "cortona" or "lumen luminum" anywhere beyond the
+   catalogue-list references already known (`unsolved.htm`, `CATALOGUE.md`) -- his own repository has not
+   attempted this item beyond the catalogue-status line already quoted ("attempted, open... simple/homophonic/
+   progressive/Vigenere/Alberti all fail"). aaymeloglu/unsolved-ciphers: grepped by "mellon"/"elia"/"lumen
+   luminum"/"cortona" -- hits are only the catalogue-harvest files (`decode-records.jsonl`, `decode-catalog.csv`,
+   `pares-pages.jsonl`, `fetch_pares_images.py`) plus incidental string matches in unrelated targets
+   (`starhemberg-1758`, `royalist-1646`, `forster-1644` -- "mellon" substrings in unrelated words/names, checked
+   and dismissed) and the repo's own `CATALOGUE.md`/`AGENTS.md` boilerplate; no target folder for this item.
 
 ## Verdict: `open`
 
-Image confirmed online (full resolution). No source read this pass shows the ff.1v-2r alchemical-operations
-cipher (the actual target, distinct from f.2v's self-keyed zodiac-sign legend) has been transcribed, edited or
-solved anywhere. Bourdeau's own catalogue status ("attempted, open," several classical cipher families
-excluded by his own solver) stands unchallenged.
+Image confirmed online (full resolution). No source read this pass, including the one genuine piece of scholarship
+located on this manuscript's encoded content (Rec 2014) and both solver repositories, shows the ff.1v-2r
+alchemical-operations cipher (the actual target, distinct from f.1r/f.2v's self-keyed zodiac-sign codeword list --
+itself a *code* by Rec's own technical distinction, not this target's letter-level *cipher*) has been transcribed,
+edited or solved anywhere. DECODE's own hard filter (an attached document) does not apply here: none is attached.
+The primary standard catalogue (Witten & Pachella's manuscripts volumes) could not be reached at all (not
+digitised, per HathiTrust's holdings above) -- Beinecke's own catalogue page stands in for it, already read.
+Bourdeau's own catalogue status ("attempted, open," several classical cipher families excluded by his own solver)
+stands unchallenged, and is not a same-corpus situation like the fr2988-ranzo-1520s folder (this is a standalone
+alchemical codex, no sibling letter, no known key-in-archive route found this pass).
 
 **Nomination:** posted to ROOM.md (stage-2, copy-free, cryptanalysis kind — not a letter, no key-in-archive
 route apparent from what was checked this pass).
 
 Rule 10: no novelty claim made. Not decoded, not transcribed (out of scope for check-solved).
 
-Requests this pass: collections.library.yale.edu — 1 browser_fetch (search page, cleared the 202 challenge), 1
-browser_fetch (item page), 1 plain curl (IIIF info.json, no challenge). WebSearch 3, WebFetch 2
-(pre1600ms.beinecke.library.yale.edu, alchemywebsite.com — neither is a host this brief names explicitly, both
+Requests this pass (csCS2c, 24 Sept, earlier): collections.library.yale.edu — 1 browser_fetch (search page,
+cleared the 202 challenge), 1 browser_fetch (item page), 1 plain curl (IIIF info.json, no challenge). WebSearch 3,
+WebFetch 2 (pre1600ms.beinecke.library.yale.edu, alchemywebsite.com — neither is a host this brief names
+explicitly, both
 reached via WebFetch/WebSearch per the brief's general grant of those tools). No DECODE, no solver-repo clone.
+
+This pass (csED3): catalog.hathitrust.org 2 (brief request), api.openalex.org 1 (429/rate-limited, not retried).
+WebSearch 2, WebFetch 1 (societasmagica.org PDF, read via the Read tool once fetched). github.com 2 shallow clones
+(dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers, grep only — shared with the fr2988-ranzo-1520s folder's
+checks, not two separate clones). No archive.org needed for this folder (the Witten catalogue is not on it).
