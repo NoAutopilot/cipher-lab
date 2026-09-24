@@ -1085,3 +1085,91 @@ second cipher block and append it to `ciphertext_f1.tsv` so the whole dated 10 J
 gallica.bnf.fr: 9 (8 native fetches + 1 retry on canvas 33, one at a time, ~1.8s apart, UA per playbook, none
 committed). No other host. One Sonnet subagent (folio 9 pass B, image-only, no network). Folder size
 unchanged (natives not committed). Cost: about $3 of the $6 cap so far.
+
+## 1653 band: folio 9 reconciled and key trial (24 Sept 2026)
+
+LANE G2 worker A (Opus, cap $10), disk only, no network, no subagent.
+
+### (1) Folio 9 letter reconciled
+
+`reconcile_f9.py` (with `--check`, rule 7) writes `ciphertext_f9.tsv`, `inventory_f9.tsv` and `agreement_f9.tsv`. The
+reading sits in the script, one line per manuscript line. It was settled from the committed crops. The `_s1`/`_s2`
+recto crops are two overlapping cuts of the same line, not halves (`_s1` is cut short at the right edge), so `_s2` and
+the verso crops were read. Sign spellings are those of reconcile_f1.py. The script docstring maps the pass spellings:
+A `H` and B `ff` are the raised trailer `db`, not `tt`; A `o` and B `d` are the looped `d`; `m=` and A's `m tt` are
+`m‡`; `T` is `_1`.
+
+- 27 lines (15 recto, 12 verso), **226 sign tokens: 202 H, 24 M**, plus 7 clear phrases. There are 73 distinct tokens
+  and 66 base signs. Pass A matches 190 of the 226 (84.1%) and pass B 212 (93.8%).
+- New on this leaf: the scribe writes **commas after signs** (21 of them; kept in the note column, not as tokens). They
+  may be word divisions, but that is untested. `121` appears twice (r L9, r L13) **struck through** with hatching; it is
+  spelled `~121` and left out of trials. There is one `z` (a looped d barred through the bowl, v L5).
+- The same small-sign cluster as f1 f8_L10 recurs: `¨1 ¨2 £ X ¨4` (r L13) against f1's `£ ¨1 ¨2 [clear] £ ¨4`.
+- Clear text as read: "Monsieur / Je croy que vous vous souuiendrez bien de ce / diverses ordres que vous avez receu",
+  "Sy contre lattente", "des gens de bien", "et de mesnage", "en sorte toutes parolles" (the last is M).
+
+### (2) Key trial with matched controls
+
+`trial_1653.py` (with `--check`, seed 1653, 200 derangements) writes `trial_1653.tsv`, `trial_1653_overlap.tsv`,
+`trial_1653_stretches.tsv` and `trial_1653_1659codes.tsv`. It tried four keys: key_1646 (clair1067), Tomokiyo 1647,
+Tomokiyo 1651, and this volume's key_1659 (f.86-88). The measure is mean log2 p per character under
+tools/french16_ngram.py, taken over runs of keyed signs. The script docstring gives the sign mapping between spellings;
+it is grade I, because shape identity across transcribers is assumed. Control (a) permutes the key's values over its
+codes. Control (b) enciphers period French with the true key at the letter's length and blanks the letter's own unkeyed
+positions, so coverage and run lengths match exactly.
+
+| key | letter | keyed/signs | real | shuffled mean (max) | derangements >= real | z | synthetic true (shuffled max) |
+|---|---|---|---|---|---|---|---|
+| 1646 | f1 | 186/528 | -4.77 | -3.89 (-3.29) | 200/200 | -3.45 | -3.17 (-3.55) |
+| 1646 | f9 | 85/226 | -4.65 | -3.89 (-3.10) | 199/200 | -2.39 | -3.29 (-3.37) |
+| 1647 | f1 | 135/528 | -3.76 | -4.38 (-3.17) | 14/200 | 1.44 | -3.66 (-3.96) |
+| 1647 | f9 | 58/226 | -3.36 | -4.34 (-3.35) | 1/200 | 2.48 | -3.34 (-3.83) |
+| 1651 | f1 | 278/528 | -5.13 | -4.80 (-3.89) | 172/200 | -1.09 | -3.26 (-4.34) |
+| 1651 | f9 | 121/226 | -4.93 | -4.84 (-3.85) | 127/200 | -0.30 | -3.15 (-4.22) |
+| 1659 | f1 | 260/528 | **-3.72** | -4.49 (-3.85) | **0/200** | **3.38** | -3.86 (-4.08) |
+| 1659 | f9 | 106/226 | **-3.41** | -4.39 (-3.75) | **0/200** | **3.71** | -3.53 (-3.73) |
+
+The synthetic control separates for every key: 0 of 200 derangements reach the true key on synthetic text. So at this
+coverage the test can see a true key.
+
+- **key_1646 and Tomokiyo 1651 read these letters worse than or no better than their shuffled keys. That is a clean
+  negative with a matched control.** Tomokiyo 1647 does not beat its control either. On f9 one derangement reaches it
+  (z 2.48, on 58 keyed signs); on f1, 14 do. After 8 tests, this is chance level.
+- **key_1659 beats its character-level control on both letters.** No derangement reaches it (z 3.4 and 3.7), and the
+  real scores are about as good as the true key's on synthetic French. **But it does not read words.** A second measure
+  counts runs of 3 or more signs that split wholly into frequent period words (`trial_1653_stretches.tsv`). On the real
+  letters it finds 2 on f1 and 4 on f9. Under derangements the mean is 5.2 and 1.9. The true key on synthetic finds 12
+  and 7. So the word test has power, and the real letters fall below or inside the shuffled range.
+- The six stretches it finds are: f8_L9 `m _26 4` "a ve c"; f10_L2 `_11 m 62` "re a i"; f9r_L04 `_21 _6 _28`
+  "te ques v"; f9r_L11 `_23 _12 _21` "o i te"; f9r_L12 `_23 _12 _21 m 60` "o i te a la"; f9v_L07 `m 60 _26` "a la ve".
+  `m _26 4` "avec" also occurs at f1 f9_L10, and `_23 _12 _21` occurs three times. **Grades: S 0, M 20 tokens.** They
+  cannot be graded S because their own control fails. They are listed, not read.
+- The most likely interpretation (an inference, not a test): the 1653 table shares some values with the 1659 table, at
+  least in the syllabic numerals, but it is a different table. `trial_1653_1659codes.tsv` shows which codes carry the
+  character-level signal. Leaving out `36`=de (30 uses), `_6`=ques (11), `61`=le (16) or `_16`=se (12) makes the joint
+  score worse, so these codes may share their values with the 1659 table. Leaving out `23`=pr (+0.17 bpc), `_7`=q,
+  `62`=i, `_1`=pe, `m`=a, `17`=m, `65`=ar or `4`=c makes it better, so on these codes the 1653 table probably differs.
+
+**Where the 1653 table must differ (overlap counts, f1 + f9 together: 754 tokens, 113 distinct).** key_1659 can write
+51 of the 113 distinct tokens and 366 of the 754 tokens. key_1651 covers 61/399, key_1646 37/271 and key_1647 30/193.
+No key has the commonest letter-like signs: `db` 61, `tt` 46, `11` 37, `mm` 36, `d` 26, `X` 25 and `I` 23. The only
+exceptions are key_1647/1651 `tt` and `d` and key_1646 `X` and `d`, which fail their controls. So about 40% of the text
+is written in signs that no available table covers. The dotted figures (`¨1`, `¨2`, `¨4`, `¨15`, `¨34`) and the values
+above 96 (100-190) are also absent from every key except as bare numerals.
+
+### (3) Status and next step
+
+**Status stays `open`.** Folio 9 is reconciled. None of the four keys reads either 1653 letter. key_1659 carries a
+significant character-level signal but no word-level reading. **Next step** (the numbers justify it; not attempted
+here): a constrained cryptanalytic solve of f1 and f9 together, 754 tokens. It would start from key_1659's values on the
+four supporting codes, free the rest, add the letter-like signs as unknowns and use the clear phrases as context. Use
+tools/nomenclator_anneal.py or subst_hillclimb.py, and run a synthetic control of the same size first. Separately,
+transcribing canvas 11-12's second cipher block would add about 80 tokens to f1.
+
+What was found, and where it was not: no reading of either 1653 letter was found with any of the four keys (tables
+listed above, all on disk). No print or phrase search was run, because nothing was read. No novelty class is
+assigned.
+
+### Requests this pass
+
+None (disk only). Pillow was installed with pip for the strips.

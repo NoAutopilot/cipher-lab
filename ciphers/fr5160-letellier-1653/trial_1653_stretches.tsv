@@ -1,0 +1,9 @@
+letter	line	tokens	values	reading	n_signs
+f1	f8_L9	m _26 4	a ve c	avec	3
+f1	f10_L2	_11 m 62	re a i	reai	3
+f9	f9r_L04	_21 _6 _28	te qves v	teqvesv	3
+f9	f9r_L11	_23 _12 _21	o i te	oite	3
+f9	f9r_L12	_23 _12 _21 m 60	o i te a la	oiteala	5
+f9	f9v_L07	m 60 _26	a la ve	alave	3
+#control	f1	segmentable runs >= 3 signs: real 2	derangements mean 5.22, max 14 (n=200)	synthetic: true key 12, derangements mean 5.25	
+#control	f9	segmentable runs >= 3 signs: real 4	derangements mean 1.92, max 6 (n=200)	synthetic: true key 7, derangements mean 2.08	
