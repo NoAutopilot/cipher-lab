@@ -2306,3 +2306,68 @@ brief's copy-free gate. (3) Egerton MS 1696's inserted cipher keys (Tuscan Secre
 worth a look for any future Italian-diplomatic-cipher lane even though the volume itself is not a letter.
 (4) The Willes Papers (Add MS 45518-45523) are a key-lead resource across many other targets' correspondents,
 not themselves a single unread letter -- worth opening before scoring as its own target.
+
+## US research libraries B (LANE N scout of 24 September 2026)
+
+LANE N brief (US research libraries B, worker for session_01W4z8JhXJYHRjorPC1Qkpiy): the William L. Clements
+Library (quod.lib.umich.edu, clements.umich.edu), the American Philosophical Society (search.amphilsoc.org,
+diglib.amphilsoc.org), NYPL Digital Collections (api.repo.nypl.org, digitalcollections.nypl.org), the New-York
+Historical Society (digitalcollections.nyhistory.org), Harvard Houghton/CURIOSity (curiosity.lib.harvard.edu,
+hollisarchives.lib.harvard.edu), and Princeton special collections (dpul.princeton.edu). Excludes loc.gov,
+NARA, founders.archives.gov and the state historical societies (held by the sibling "LANE N scout US"
+worker, ROOM.md 05:10 UTC claim). Reachability tested first per the good-citizen rule (`curl -sS -o /dev/null
+-w "%{http_code}"`, descriptive User-Agent, one retry with a browser User-Agent after a pause on any
+403/429/challenge, never a retry loop).
+
+**Six of the seven named hosts were blocked before any query form loaded**, each confirmed by two independent
+attempts (not a transient egress "000"): `quod.lib.umich.edu` and `clements.umich.edu` both 403 on the bare
+root and a collections path, matching this repository's own 19 Sept 2026 note for `clements.umich.edu`;
+`search.amphilsoc.org` 403; `diglib.amphilsoc.org` redirects (302) straight to a Cloudflare Turnstile challenge
+page; `digitalcollections.nyhistory.org` 403; `curiosity.lib.harvard.edu` and `hollisarchives.lib.harvard.edu`
+both 429 on three attempts each spaced by a pause (3s, then 8s), never resolving this session. NYPL's two
+routes are blocked for different reasons: `api.repo.nypl.org/api/v2/items/search` answers 200 with the literal
+body `HTTP Token: Access denied.` (needs an OAuth token not held in this environment), and
+`digitalcollections.nypl.org/search/index` answers 200 but the body is an Incapsula bot-detection iframe
+(959 bytes, no search results). All seven of these are logged **"query form unverified"**, not "no
+candidates," per the brief's control rule. Full per-host detail in
+`sources/solver-diffs/2026-09-24-lane-n-us-b.tsv`.
+
+**dpul.princeton.edu is the one host that answered.** Its `catalog.json?q=` JSON endpoint is a real, working
+search (34 hits for "cipher", 115 for "cypher", verified against a plain HTML fetch of the same query showing
+identical hit text). **Control passed**: the query surfaces a genuine cipher item, `ark:/88435/dcr781wv919`
+(Arthur Lee to the Continental Congress's Committee of Correspondence, 31 Aug 1778, box 20 folder 3 of
+Princeton MS collection C0063) -- Princeton's own curator's note says Lee "encoded his letter using a
+sophisticated cipher [keyed to] Entick's Dictionary, which this letter's recipient subsequently interlined."
+That "subsequently interlined" is a contemporary decipherment written directly on the same document, so by
+README "What counts as a result" this scores `unread=0` (an edition: readable today with the key/plaintext in
+the same file) and is **not nominated** -- logged here only as the control evidence that the search itself
+works. The remaining 33 "cipher" hits and all 115 "cypher" hits, sampled across pages plus two phrase searches
+("in cypher", "in cipher": 15 and 5 hits), are printed 18th/19th-century books and pamphlets where the word
+appears in ordinary prose (arithmetic and "ready reckoner" texts using "cypher" for digits, a manuscript
+catalogue's watermark description "cipher/monogram", war-narrative memoirs by Cornwallis/Tarleton/Burgoyne/
+Monroe using "in cypher" rhetorically) -- none is a manuscript ciphertext. A `f[format][]=Manuscript` facet
+attempt did not cleanly isolate manuscripts (still returned Book-format rows), so this is a text-search noise
+problem, not a format-filter fix found this pass. `findingaids.princeton.edu`, the companion finding-aid
+catalogue for the same C0063 collection (not a brief-named host, tried only because it is the direct source
+for the one genuine hit above), returned a Cloudflare Turnstile "Verifying connection" page for every query
+tried and was not retried.
+
+**No rows filed this sweep (UB1 unused).** Checked the one genuine candidate and all sampled printed-book hits
+against QUEUE.md, CATALOG.md, LANDSCAPE.md, `ciphers/`, and fresh shallow clones of `dbourdeau/cyphersolver`
+and `aaymeloglu/unsolved-ciphers` (grepped for "Princeton", "Arthur Lee", "dpul"): no match in either solver
+repository or this project's own files.
+
+Caveats: (1) this is a small, noisy slice of Princeton's holdings under one free-text query; a collection-
+scoped search (e.g. within "Princeton and the Revolution" or other Revolutionary-War-era manuscript
+collections specifically, once `findingaids.princeton.edu`'s Turnstile clears) could still surface an unread
+cipher letter that the whole-catalogue "cipher"/"cypher" query missed under a different cataloguing word
+("ciphered", "in figures", a French/Spanish equivalent). (2) Six of seven brief-named hosts never got past
+reachability, so this sweep should not be read as "the Clements/APS/NYPL/NYHS/Harvard collections have no
+open candidates" -- it establishes only that this session's tools could not reach their query forms today.
+(3) No leaf image was opened (the one genuine hit was excluded on its own catalogue-note text, per rule 2's
+"never transcribe" and the M9/Thurloe lesson to check the note before assuming). Requests: quod.lib.umich.edu
+2, clements.umich.edu 2, search.amphilsoc.org 2, diglib.amphilsoc.org 1, api.repo.nypl.org 1,
+digitalcollections.nypl.org 1, digitalcollections.nyhistory.org 2, curiosity.lib.harvard.edu 3,
+hollisarchives.lib.harvard.edu 2, dpul.princeton.edu 8 (1 reset, retried once), findingaids.princeton.edu 2,
+github.com 2 shallow clones (grepped only, deleted after). No Google Books, no TNA, no DECODE, no Gallica, no
+subagents, no novelty wording, no promotion, no solving.
