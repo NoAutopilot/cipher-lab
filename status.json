@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026, 02:05 UTC",
+ "updated": "24 Sep 2026, 02:27 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -357,6 +357,96 @@
     "unblock": "N4 recommendation in AUDIT.md; reading confirmed by a second transcription"
    },
    "result": "A partial key-based reading of an unread cipher letter, class N3 after two audits; not yet a checked text, not yet N4."
+  },
+  {
+   "name": "Marguerite Paleologue, duchess of Mantua, to her son the Duke of Nevers, three ciphered letters",
+   "year": "1580s",
+   "ref": "BnF Français 4687 ff.5-10 (Gallica ark:/12148/btv1b90075058)",
+   "folder": "ciphers/fr4687-paleologue-nevers",
+   "stage": 3,
+   "state": "active",
+   "holder": "Worker",
+   "kind": "cryptanalysis",
+   "next": "Opus reconciler settling the segmentation of the two-digit cipher from the image; then a solver with an Italian model and a matched control. Class gate at best case N3 (no print located; Ferrari 1999 unread).",
+   "note": "Confirmed 24 Sept 2026: dense two-digit numeral cipher on three passages, Italian, no key in the volume, in no solver's list; the two blind passes agree on digits but not on group boundaries.",
+   "wait": {
+    "on": "Reconciliation from the image",
+    "since": "24 Sep 2026, 02:27 UTC",
+    "expected": "Within the hour",
+    "unblock": "A ciphertext with settled boundaries; then the solver run"
+   }
+  },
+  {
+   "name": "Brienne père et fils to Abel Servien, letters partly in cipher",
+   "year": "1653-1661",
+   "ref": "BnF Français 5160, item 1, fol. 1-110 (Gallica ark:/12148/btv1b9060495t)",
+   "folder": "ciphers/fr5160-letellier-1653",
+   "stage": 3,
+   "state": "active",
+   "holder": "Worker",
+   "kind": "recovery",
+   "next": "Dense sampling of the two cipher bands (fol. 1-12 and 86-88), crops of the two fullest letters, two blind passes, and a mechanical trial of Tomokiyo's Brienne ciphers of 1647 and 1651 from the same office.",
+   "note": "Census of 24 Sept 2026: cipher on 6 of 54 sampled leaves, no decipherment seen yet although the catalogue says one often accompanies the letters; print check negative. The catalogue's 'Le Tellier' attribution was wrong; Gallica's own description names Brienne to Servien.",
+   "wait": {
+    "on": "Band sampling and the key trial",
+    "since": "24 Sep 2026, 02:27 UTC",
+    "expected": "Within the hour",
+    "unblock": "A letter transcribed; a key that reads it, or a census that shows where the decipherments are"
+   }
+  },
+  {
+   "name": "Charles de Danzay to the Cardinal of Lorraine, 27 Jan 1557, the one Danzay letter without a decipherment",
+   "year": "1557",
+   "ref": "BnF Français 20140 f.35 (Gallica canvases 69-70)",
+   "folder": "ciphers/fr20140-danzay-1557",
+   "stage": 7,
+   "state": "active",
+   "holder": "Worker",
+   "kind": "recovery",
+   "next": "Opus reconciles the two blind passes against the crops and applies Tomokiyo's published Danzay key through decode.py; then a verifier.",
+   "note": "Tomokiyo reconstructed this key from the three other Danzay letters in the volume, which carry contemporary decipherments; f.35 does not. Check-solved 24 Sept 2026: open, conditional (Fryxell vol. IX unreached, not cleared).",
+   "wait": {
+    "on": "Reconciliation and key application",
+    "since": "24 Sep 2026, 02:27 UTC",
+    "expected": "Within the hour",
+    "unblock": "A reading; the verifier then decides the class"
+   }
+  },
+  {
+   "name": "Thurloe State Papers: 23 letters printed with their cipher groups unread by the 1742 editor",
+   "year": "1653-1660",
+   "ref": "Birch, A Collection of the State Papers of John Thurloe, vols 2, 3, 5, 7 (Internet Archive full text)",
+   "folder": "ciphers/thurloe-printed",
+   "stage": 3,
+   "state": "active",
+   "holder": "Worker",
+   "kind": "recovery",
+   "next": "Extract the 23 ciphertexts from the OCR; check the five with Tomokiyo-reconstructed systems against his page; apply his keys where the letter is unread; group the 18 unkeyed by correspondent and system.",
+   "note": "Detector lane result of 23-24 Sept 2026: none of the 23 is one of the four catalogued unsolved Thurloe pieces. Printed ciphertext costs no transcription. Nothing is called read until a key produces English and a verifier has checked the calendars.",
+   "wait": {
+    "on": "Extraction and key trial",
+    "since": "24 Sep 2026, 02:27 UTC",
+    "expected": "Within the hour",
+    "unblock": "Readings for the keyed letters; a system census for the rest"
+   }
+  },
+  {
+   "name": "The Court to André Hurault de Maisse at Venice, despatches with the cipher key bound in",
+   "year": "1582-1583",
+   "ref": "BnF Français 16092 (Gallica ark:/12148/btv1b90612993, 932 canvases; key at canvas 12)",
+   "folder": "ciphers/fr16092-maisse-1582",
+   "stage": 2,
+   "state": "blocked",
+   "holder": "Nobody",
+   "kind": "recovery",
+   "next": "Held: no ciphered leaf found in 25 sampled canvases and the BnF notice flags none; Boucher's Lettres de Henri III V-VI unreachable online. Lead: fr. 17834, Maisse's own outgoing register.",
+   "note": "Tomokiyo reconstructed the key from this volume and wrote that he had not seen it used. Until a ciphered leaf is seen this is a key, not a target.",
+   "wait": {
+    "on": "A ciphered leaf, in this volume or fr. 17834",
+    "since": "24 Sep 2026, 02:27 UTC",
+    "expected": "Unknown",
+    "unblock": "A ciphered leaf located; then the Boucher check"
+   }
   }
  ],
  "workers": [
@@ -525,6 +615,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 02:27",
+   "what": "Second batch reported: Thurloe's 23 printed-cipher letters are all distinct from the catalogued pieces and five use keys Tomokiyo reconstructed (printed ciphertext, no transcription cost); Paleologue and Brienne-Servien confirmed as cipher on the leaf and in no solver's list; Danzay f.35 imaged and passed; Maisse held as key-only. Gramont f.29r: a blind second reader agreed on 92 percent of signs and its 14 image-supported corrections are being applied; the toward-N4 checks narrowed but did not close the four gaps, so N3 stays. Third batch running."
+  },
   {
    "when": "24 Sep, 02:05",
    "what": "Gramont to Villandry, 20 May 1530 (fr. 2980 f.29r): the adversarial second audit read Le Grand's Preuves page by page and confirmed N3. The reading is partial and rests on one transcription, so a second independent reader and the toward-N4 print checks are running before anything leaves the repo. Second batch started: Maisse 1582, Paleologue to Nevers, Brienne to Servien, Danzay f.35, Thurloe survivors."
