@@ -142,9 +142,52 @@ beyond canvas 15, which is as far as this pass's brief went.
 
 Two blind Sonnet subagents transcribed the three cipher crops (`images/f8_crop.jpg`, `images/f9_crop.jpg`,
 `images/f10_crop.jpg`) independently, neither shown the other's file: `passA.tsv`, `passB.tsv` (line, position,
-group, confidence; clear Italian runs as `[PLAIN:"..."]` rows). No reconciliation attempted, no decoding, no
-novelty wording. See the "Pass agreement" table below for the count comparison; the two files themselves are
-the primary record.
+group, confidence; clear Italian runs as `[PLAIN:"..."]` rows, flagged illegible spots as `[flagged: ...]`
+rows). No reconciliation attempted, no decoding, no novelty wording. The two files are the primary record;
+this is a description of them, not a merged reading.
+
+Totals: pass A read 240 cipher-group rows + 25 PLAIN/flagged rows across 11+8+9=28 manuscript lines; pass B
+read 171 cipher-group rows + 31 PLAIN/flagged rows across the same 28 line ids. Both passes independently
+arrived at the same line count and the same high-level structure (one dense cipher block on f8, one cipher
+line embedded in plain text on f9, one dense six-line cipher postscript on f10) without having seen each
+other's file.
+
+Per-line agreement, restricted to cipher-group rows and comparing by (line, position) where both passes
+assigned some group to that exact slot (a coarse measure — it penalizes any upstream difference in how a
+dense run was segmented into groups, not just misread digits):
+
+| line | A groups | B groups | exact match at common positions |
+|---|---|---|---|
+| f8_L2 | 8 | 8 | 7/8 (88%) |
+| f8_L3 | 20 | 17 | 3/17 (18%) |
+| f8_L4 | 16 | 12 | 0/11 (0%) |
+| f8_L5 | 13 | 8 | 0/8 (0%) |
+| f8_L7 | 20 | 9 | 1/9 (11%) |
+| f8_L8 | 17 | 12 | 2/12 (17%) |
+| f8_L9 | 19 | 12 | 0/12 (0%) |
+| f8_L10 | 21 | 11 | 0/11 (0%) |
+| f8_L11 | 0 (flagged illegible/cropped) | 10 | n/a — passes disagree on whether this line is even legible |
+| f9_L6 | 13 | 11 | 2/11 (18%) |
+| f10_L2 | 13 | 11 | 0/11 (0%) |
+| f10_L3 | 17 | 10 | 1/10 (10%) |
+| f10_L4 | 18 | 10 | 0/10 (0%) |
+| f10_L5 | 16 | 10 | 0/10 (0%) |
+| f10_L6 | 15 | 11 | 0/11 (0%) |
+| f10_L7 | 14 | 9 | 0/9 (0%) |
+
+Overall: 16/160 (10%) position-exact agreement across the 16 cipher-bearing lines. f8_L2 (the shortest,
+least-dense cipher line, 8 groups) is the one clear exception at 88%; every longer, denser line falls to
+single digits of percent agreement, driven mostly by the two passes segmenting the same unbroken digit
+string into a different number of groups (A consistently more groups than B on every dense line) rather than
+by disagreement over individual digit shapes — both subagents independently flagged this same difficulty
+(ambiguous group boundaries in a continuous cursive numeral hand) in their own reports. f8_L11 is a clean
+disagreement about legibility itself, not just segmentation: pass A treated it as illegible/cropped (0 rows),
+pass B read 10 groups from it.
+
+Reading: at this crop resolution, the two passes agree closely on where cipher is present and on the overall
+letter structure, but not, group-for-group, on where one cipher group ends and the next begins in the denser
+lines — a transcription-quality finding, not a reconciled reading. No group boundary was adjudicated and no
+group was decoded.
 
 ## Sources
 

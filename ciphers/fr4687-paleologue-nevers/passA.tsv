@@ -1,0 +1,266 @@
+line	position	group	confidence
+f8_L1	1	[PLAIN:"...forma di [seruir?] ...(cropped heading in different/fainter ink, top edge cut by crop)"]	L
+f8_L2	1	[PLAIN:"quesciauia / Helo qui (margin gloss)"]	M
+f8_L2	2	[PLAIN:"quanto a quello che q"]	M
+f8_L2	3	[flagged: one word struck through/cancelled after "q", illegible under cancellation]	L
+f8_L2	4	22	H
+f8_L2	5	20	H
+f8_L2	6	51~	M
+f8_L2	7	65	M
+f8_L2	8	18	H
+f8_L2	9	19	M
+f8_L2	10	19	M
+f8_L2	11	216	M
+f8_L3	1	14	H
+f8_L3	2	17	M
+f8_L3	3	96	M
+f8_L3	4	10	M
+f8_L3	5	204	M
+f8_L3	6	11~	L
+f8_L3	7	318	M
+f8_L3	8	6	L
+f8_L3	9	176	M
+f8_L3	10	72	M
+f8_L3	11	19	M
+f8_L3	12	29	M
+f8_L3	13	9	L
+f8_L3	14	189	M
+f8_L3	15	72	M
+f8_L3	16	04	M
+f8_L3	17	9	L
+f8_L3	18	52	M
+f8_L3	19	2	L
+f8_L3	20	19	M
+f8_L4	1	[PLAIN:"24 (isolated margin numeral, not part of cipher stream)"]	H
+f8_L4	2	[flagged: word/numeral crossed out at line start, under a library stamp overlapping the text — illegible]	L
+f8_L4	3	9	M
+f8_L4	4	8	M
+f8_L4	5	19	M
+f8_L4	6	109	M
+f8_L4	7	201	M
+f8_L4	8	322	M
+f8_L4	9	126	M
+f8_L4	10	518	M
+f8_L4	11	17	M
+f8_L4	12	18	M
+f8_L4	13	126	M
+f8_L4	14	201	M
+f8_L4	15	75	M
+f8_L4	16	171	M
+f8_L4	17	6	L
+f8_L4	18	286	M
+f8_L5	1	11~	L
+f8_L5	2	22	H
+f8_L5	3	02	M
+f8_L5	4	11~	L
+f8_L5	5	132	M
+f8_L5	6	219	M
+f8_L5	7	2018	L
+f8_L5	8	6	L
+f8_L5	9	11~	L
+f8_L5	10	19	M
+f8_L5	11	205	M
+f8_L5	12	9	L
+f8_L5	13	7322	L
+f8_L5	14	[PLAIN:"no me...(cursive tail, best guess only, badly formed)"]	L
+f8_L6	1	[PLAIN:"sira qua / et vera (margin gloss)"]	M
+f8_L6	2	[PLAIN:"parole mia si vi vennero di fare avere"]	M
+f8_L7	1	[PLAIN:"vi sera che / sequira p (margin gloss)"]	M
+f8_L7	2	[PLAIN:"di cete"]	M
+f8_L7	3	9	M
+f8_L7	4	22	M
+f8_L7	5	9	L
+f8_L7	6	17	M
+f8_L7	7	9	L
+f8_L7	8	85	M
+f8_L7	9	9	L
+f8_L7	10	223	M
+f8_L7	11	518	M
+f8_L7	12	14	M
+f8_L7	13	3	L
+f8_L7	14	17	M
+f8_L7	15	9	L
+f8_L7	16	208	M
+f8_L7	17	51	M
+f8_L7	18	7	L
+f8_L7	19	9	L
+f8_L7	20	9	L
+f8_L7	21	18	M
+f8_L7	22	19	M
+f8_L8	1	[PLAIN:"lu mi eco / sa di frecia (margin gloss)"]	M
+f8_L8	2	84	H
+f8_L8	3	15	M
+f8_L8	4	189	M
+f8_L8	5	2	L
+f8_L8	6	63	L
+f8_L8	7	11~	L
+f8_L8	8	851	M
+f8_L8	9	73	M
+f8_L8	10	14	M
+f8_L8	11	1899	H
+f8_L8	12	11~20 (superscript insertion above line, near "1899")	M
+f8_L8	13	24	M
+f8_L8	14	102	M
+f8_L8	15	04	M
+f8_L8	16	17	M
+f8_L8	17	317	M
+f8_L8	18	226	M
+f8_L9	1	[PLAIN:"che lo peusu / far conviene (margin gloss, uncertain reading)"]	L
+f8_L9	2	57	M
+f8_L9	3	19	M
+f8_L9	4	20	M
+f8_L9	5	14	M
+f8_L9	6	185	M
+f8_L9	7	4	L
+f8_L9	8	03	M
+f8_L9	9	94	M
+f8_L9	10	85	M
+f8_L9	11	11~	L
+f8_L9	12	629	M
+f8_L9	13	3	L
+f8_L9	14	01	M
+f8_L9	15	7	L
+f8_L9	16	67	M
+f8_L9	17	54	M
+f8_L9	18	29	M
+f8_L9	19	851	M
+f8_L9	20	899	M
+f8_L10	1	[PLAIN:"ono dice arma / con nel gio / grima corve (margin gloss, uncertain)"]	L
+f8_L10	2	9	L
+f8_L10	3	32	M
+f8_L10	4	054	M
+f8_L10	5	84	M
+f8_L10	6	11~	L
+f8_L10	7	9	L
+f8_L10	8	618	M
+f8_L10	9	62	M
+f8_L10	10	11~	L
+f8_L10	11	5	L
+f8_L10	12	204	M
+f8_L10	13	22	M
+f8_L10	14	94	M
+f8_L10	15	11~	L
+f8_L10	16	2	L
+f8_L10	17	022	M
+f8_L10	18	32	M
+f8_L10	19	11~	L
+f8_L10	20	6	L
+f8_L10	21	15	M
+f8_L10	22	184	M
+f8_L11	1	[flagged: bottom line of crop, partially cut off by image edge, only upper halves of numerals visible — cannot transcribe reliably]	L
+f9_L1	1	[PLAIN:"favore... sera seguito silentio... voi che anemcuan (line start possibly cropped at top edge)"]	M
+f9_L2	1	[PLAIN:"brano il nome nostro fratello auria campare... nuovi"]	M
+f9_L3	1	[PLAIN:"a noi per lo me ne dara aviso et rispetto... facea"]	M
+f9_L4	1	[PLAIN:"fare mi mandando di dirme che me state proposso"]	M
+f9_L5	1	[PLAIN:"Donna virginia per noi per ho le nostri di qua nostr"]	M
+f9_L6	1	95	M
+f9_L6	2	154	M
+f9_L6	3	273	M
+f9_L6	4	201	M
+f9_L6	5	54	M
+f9_L6	6	29	M
+f9_L6	7	189	M
+f9_L6	8	1~	L
+f9_L6	9	73	L
+f9_L6	10	273	M
+f9_L6	11	183	M
+f9_L6	12	154	M
+f9_L6	13	75	M
+f9_L7	1	[PLAIN:"per ho chi ve la dico esimo me cambiano il"]	M
+f9_L8	1	[PLAIN:"quale non m'ha nova quello che li avete scritto le"]	M
+f10_L1	1	[PLAIN:"lase le mie le posete brusare"]	M
+f10_L2	1	179	M
+f10_L2	2	415	M
+f10_L2	3	8	L
+f10_L2	4	32	M
+f10_L2	5	19	M
+f10_L2	6	96	M
+f10_L2	7	11~	L
+f10_L2	8	62	M
+f10_L2	9	06	L
+f10_L2	10	189	M
+f10_L2	11	17	M
+f10_L2	12	209	M
+f10_L2	13	1803	L
+f10_L3	1	204	M
+f10_L3	2	25	M
+f10_L3	3	1585	L
+f10_L3	4	17	M
+f10_L3	5	32	M
+f10_L3	6	9	L
+f10_L3	7	1853	L
+f10_L3	8	209	M
+f10_L3	9	85	M
+f10_L3	10	62	M
+f10_L3	11	9	L
+f10_L3	12	30	M
+f10_L3	13	71~	L
+f10_L3	14	3	L
+f10_L3	15	03	L
+f10_L3	16	99	M
+f10_L3	17	1418	L
+f10_L4	1	416	M
+f10_L4	2	203	M
+f10_L4	3	018	M
+f10_L4	4	34~	L
+f10_L4	5	11~	L
+f10_L4	6	05~	L
+f10_L4	7	226	M
+f10_L4	8	12~	L
+f10_L4	9	49	M
+f10_L4	10	15~	L
+f10_L4	11	19	M
+f10_L4	12	24~	L
+f10_L4	13	17~	L
+f10_L4	14	27~	L
+f10_L4	15	301~	L
+f10_L4	16	56~	L
+f10_L4	17	89~	L
+f10_L4	18	4~	L
+f10_L5	1	224~	L
+f10_L5	2	017~	L
+f10_L5	3	49~	L
+f10_L5	4	19~	L
+f10_L5	5	183	M
+f10_L5	6	24	M
+f10_L5	7	189	M
+f10_L5	8	6~	L
+f10_L5	9	251~	L
+f10_L5	10	169~	L
+f10_L5	11	251~	L
+f10_L5	12	619~	L
+f10_L5	13	3~	L
+f10_L5	14	17~	L
+f10_L5	15	4~	L
+f10_L5	16	019~	L
+f10_L6	1	24~	L
+f10_L6	2	262~	L
+f10_L6	3	9618~	L
+f10_L6	4	84~	L
+f10_L6	5	11~	L
+f10_L6	6	022~	L
+f10_L6	7	9~	L
+f10_L6	8	8194~	L
+f10_L6	9	8181~	L
+f10_L6	10	017~	L
+f10_L6	11	73~	L
+f10_L6	12	11~	L
+f10_L6	13	14~	L
+f10_L6	14	6125~	L
+f10_L6	15	620~	L
+f10_L7	1	175~	L
+f10_L7	2	161~	L
+f10_L7	3	17~	L
+f10_L7	4	9~	L
+f10_L7	5	209~	L
+f10_L7	6	750~	L
+f10_L7	7	17~	L
+f10_L7	8	4014~	L
+f10_L7	9	39~	L
+f10_L7	10	11~	L
+f10_L7	11	85~	L
+f10_L7	12	704	M
+f10_L7	13	3~ (small superscript numeral above this group, possibly "2" or "3")	L
+f10_L7	14	2816	M
+f10_L8	1	[PLAIN:"sera dove la cause mie che vi vere che sapia p thuon"]	L
+f10_L9	1	[PLAIN:"vieria u modia (bottom line, cut by crop edge)"]	L
