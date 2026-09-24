@@ -2,8 +2,9 @@
 
 Status: found-solved (3 of 4 items); open (1 of 4, f.35)
 
-Check-solved pass, 24 September 2026 (Sonnet, orchestrator brief for M13-M16). Editions-first + one-leaf pass;
-a formal six-source check-solved run is still owed for the f.35 remainder before it goes on the board.
+Check-solved pass, 24 September 2026 (Sonnet, orchestrator brief for M13-M16). Editions-first + one-leaf pass.
+The formal six-source check-solved run for the f.35 remainder is done (below, same day); verdict unchanged:
+open.
 
 ## Check-solved (24 Sept 2026, formal pass for f.35)
 
@@ -97,8 +98,43 @@ Two independent Sonnet subagents (`passA.tsv`, `passB.tsv`), neither shown the o
 other found, transcribed the cipher signs on the three crops line by line (R1... for the recto, V1... for the
 verso) against Tomokiyo's sign legend (`danzay_1557.png`: a–z minus j/k/v/w, a nulls column, and word-signs for
 "dict/et/le/luy/quel?/son?" and "Dannemarch"/"le Roy de Dannemarch"), naming each sign by its legend letter,
-"null", a "word:" gloss, or an "unkN" label for shapes matching nothing in the legend. Format: `line  position
-sign  confidence` (H/M/L). No reconciliation, no key application, no decoding attempted — that is explicitly
+"null", a "word:" gloss, or a per-pass "unkN"/"unk-shape" label for shapes matching nothing in the legend.
+Format: `line position sign confidence` (H/M/L). No reconciliation, no key application, no decoding attempted —
+that is explicitly out of scope for this pass. Both subagents independently reported the same limitation
+unprompted: neither could confidently map individual small cursive cipher glyphs to a specific a-z legend
+letter at the image resolution available to them, and both chose to invent per-pass placeholder labels for
+those signs rather than force a guess into a wrong legend bucket (as their brief required). This means the
+two passes' "unk" labels are **not comparable to each other** — they are two independently-invented, arbitrary
+naming schemes, not two readings of the same sign inventory — so a sign-for-sign match rate between them would
+be meaningless and is not reported.
+
+What *is* comparable, and reported here:
+
+- **Line coverage.** Pass A produced 37 lines (R1-R8, V1-V29, 796 sign tokens); pass B produced 24 lines (R1-R8,
+  V1-V16, 307 sign tokens) and stopped there — it never reached the equivalent of pass A's V17-V29 (roughly the
+  last third of the verso). This is a coverage gap in pass B, not a disagreement: that stretch has only one
+  reading (pass A's), not two, and should not be treated as agreed.
+- **Segmentation density on the cipher lines disagrees by roughly 2x.** On every recto/verso line that is still
+  cipher (R1-R12, V1-V12), pass A consistently records far more tokens per line than pass B for the *same*
+  manuscript line (e.g. R3: 29 vs 15 tokens; R6: 23 vs 14; V3: 28 vs 12; V12: 28 vs 10) — pass A is splitting
+  individual strokes/letters more atomistically, pass B is grouping more marks into single signs. Both are
+  plausible readings of dense diacritic cursive; neither should be preferred without a third pass or a
+  higher-zoom re-read.
+- **Clear-French runs agree well.** From V13 to the end of pass B's coverage (V16), both passes converge almost
+  exactly in token count per line (12/12, 11/11, 12/11, 13/13) and in the actual words identified, once ordinary
+  handwriting-to-OCR spelling variance is allowed for — e.g. pass A's V13 "le pflus comodement quil ne soea
+  possible et soay buy quil y" vs pass B's V13 "le plus commodement quil me sera possible et say bien quil y":
+  same 12-word sentence, recognisable as the same underlying French ("le plus commodément qu'il me sera
+  possible, et sçay bien qu'il y..."), spelled differently by each pass's reading of the same secretary hand.
+  Earlier partial-clear lines (R3, V7-V12) show the same pattern at lower density. This corroborates, independently
+  of Tomokiyo, that plaintext French words really are interspersed as camouflage in this letter exactly as his
+  page describes for the sibling ciphers, and that both passes are looking at the same underlying text.
+- Both passes separately flagged a recurring symbol they associate with "Dannemarch"/"le Roy de Dannemarch"
+  (pass A: 21 occurrences across the two folios; pass B did not use this label at all in its shorter coverage) —
+  plausible given the letter's subject, but M-confidence in both cases, not corroborated between them the way
+  the clear-French runs are, and not confirmed against the legend image at high enough zoom to be sure.
+
+No reconciled reading, sign inventory, or decode attempt follows from this — per the brief, that is explicitly
 out of scope for this pass.
 
 ## What the target is
