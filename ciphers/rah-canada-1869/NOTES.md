@@ -118,6 +118,28 @@ the per-page breakdown. Not yet an established codebook (no key or table found o
 González Bravo's letter gives no indication one exists elsewhere in this small file) -- the interlinear
 plaintext supplies the reading without one.
 
+## Transcription passes (24 September 2026, LANE R worker R4)
+
+Two blind Sonnet subagent passes from `images/10137302.jpg` and `10137303.jpg`, each given only the shared
+symbol legend (`glyphs/atlas.md`) and not shown the other's output or this worker's own reading:
+`passA.tsv` (26 cipher lines: p302_c1-c21, p303_c1-c5; 115 tokens) and `passB.tsv` (25 cipher lines:
+p302_c1-c20, p303_c1-c5; 113 tokens) -- the one-line difference on page 1 is a boundary call both passes
+flagged independently (whether a short cipher fragment that shares a row with the next sentence's opening is
+its own line or the tail of the previous one). `tools/reconcile_passes.py passA.tsv passB.tsv --crops images`
+(Needleman-Wunsch, default settings): **10/131 aligned columns agree (7.6%)**, well below every other target's
+first-pass agreement in this repo (Gramont f.30: 59.5%) -- `disagreements.tsv` (121 rows), `ciphertext_draft.tsv`
+and `agreement.tsv` written, not settled (out of this brief's scope; a reconciler pass belongs to whoever picks
+this target up next). Distinct atomic symbol codes seen across both passes: 24 (digits 0-7 and 9 -- no pass
+transcribed an 8 anywhere on these two pages; literal `.` `,` `+` `-` `=` where a pass read a mark as ordinary
+punctuation; and ten `glyphs/atlas.md` bracket labels: `[bigloop] [circle] [circledot] [cross] [dash] [dot]
+[equals] [hook] [loopm] [loopn]`). Both passes independently named the same handful of look-alike pairs as
+their main source of disagreement before any reconciliation was run: a hooked/flag-shaped stroke read as
+digit 1 by one pass and flagged as "could be 7" by the other; a curling mark read as digit 9 by both but
+flagged uncertain by one; and the general `[circle]`-vs-digit-`0` distinction the atlas itself warned about.
+Neither pass needed a new `[gNN]` label. **No key or additional decipherment table found anywhere in these
+five pages** beyond the interlinear plaintext itself (see Access notes above) -- the covering letter gives no
+indication a separate key exists in this small file.
+
 ## Copy status
 
 Copy-free (per the 23-24 Sept scout): `bibliotecadigital.rah.es`, public domain / CC PDM, no login. Record
@@ -132,3 +154,13 @@ reachability only; shared with rah-morillo-1817's budget in this batch — 4 of 
 both RAH targets this session). github.com: shared clone with the rest of this batch. No TNA Discovery calls
 (n/a). www.googleapis.com/books: 3 (24 Sept 2026, LANE S worker H, key+country=US, never printed; see Google
 Books sweep above).
+
+**24 Sept 2026, LANE R worker R4 (access + transcription pass):** bibliotecadigital.rah.es: curl ~9 (4 OAI-PMH
+calls -- Identify, ListMetadataFormats, GetRecord oai_dc, GetRecord didl, all 200 with no challenge; 5 direct
+path attempts -- registro.do, catalogo_imagenes/grupo.do, resultados_busqueda.do -- all 307 to the Anubis
+challenge, confirming the playbook note, none retried beyond the one-retry limit); `tools/browser_fetch.js`
+(headless Chromium) ~14 (7 HTML/page navigations while diagnosing the Anubis flakiness, most either the
+challenge page or a transient "upstream request failed"; 7 `--binary` image fetches for the 5 target images,
+2 needing a retry). All >=1.5 s apart, single fetcher, descriptive UA except where the site's own challenge
+needed a browser UA per the playbook. No login, no other host touched this pass. 2 Sonnet subagents (the two
+blind transcription passes), within the $8 cap.
