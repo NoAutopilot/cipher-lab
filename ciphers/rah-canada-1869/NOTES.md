@@ -46,8 +46,13 @@ mentioning cipher or Cañada).
 6. **Aymeloglu's repository.** Fresh shallow clone, 24 Sept 2026 (shared). No target folder, no README/
    TARGETS/SHORTLIST/CATALOGUE mention, no PARES/BNE/DECODE scrape row.
 
-**GB queries pending** (no Google Books slot this batch): `"Conde de la Cañada" Isabel II cifrada`; `Isabel
-II González Bravo 1869 nota cifrada clave`; `"9/6958" RAH Isabel II`.
+**Google Books sweep (24 September 2026, LANE S worker H, holding the Google Books slot — key+country=US,
+filter=full):** 3 queries run, >=2s apart. `Isabel II González Bravo 1869 nota cifrada clave` and `"9/6958"
+RAH Isabel II` returned zero results. `"Conde de la Cañada" Isabel II cifrada` returned 2 hits, both
+*Diario de las sesiones de Cortes* (Spain, Congreso de los Diputados, 1860) — parliamentary session records
+that separately mention "Isabel II" and a different "conde de la Cañada" (a deputy's title, in an 1860
+procedural context) with no connection to a ciphered note or to 1869; a coincidental co-occurrence of both
+search terms, not a hit on this item.
 
 ## Verdict
 
@@ -71,4 +76,5 @@ needed.
 WebSearch: 2. archivo.rae.es: 1 (WebFetch, HTTP 403, not retried). bibliotecadigital.rah.es: 1 (record-page
 reachability only; shared with rah-morillo-1817's budget in this batch — 4 of the 20-request cap used across
 both RAH targets this session). github.com: shared clone with the rest of this batch. No TNA Discovery calls
-(n/a). No Google Books calls (queries logged above as pending).
+(n/a). www.googleapis.com/books: 3 (24 Sept 2026, LANE S worker H, key+country=US, never printed; see Google
+Books sweep above).

@@ -106,10 +106,17 @@ edition, community list, DECODE record, or solver-repository entry was found for
 correspondents. The 1712 Namur item sits in a documented, successful interception milieu (Jaupain/d'Alonne/
 Blencowe) but was not itself named in any source checked.
 
-**GB queries pending:** `intitle:"Cumberland" intitle:"correspondence" 1745`; `"Harrington to Cumberland" 1745
-cipher`; `"Fawkener" "Ligonier" 1745 Flanders letters`; `"Duke of Cumberland" despatches 1745 1746 Newcastle
-papers calendar`; `"Namur" "intercepted" 1712 cipher plenipotentiaries`; `intitle:correspondence Utrecht 1712
-Namur intercepted`; `"French plenipotentiaries" Namur 1712`.
+**Google Books sweep (24 September 2026, LANE S worker H, holding the Google Books slot — key+country=US, filter=full):**
+7 queries run, >=2s apart. Six returned zero results: `intitle:"Cumberland" intitle:"correspondence" 1745`;
+`"Harrington to Cumberland" 1745 cipher`; `"Fawkener" "Ligonier" 1745 Flanders letters`; `"Duke of Cumberland"
+despatches 1745 1746 Newcastle papers calendar`; `"Namur" "intercepted" 1712 cipher plenipotentiaries`;
+`intitle:correspondence Utrecht 1712 Namur intercepted`. One had a hit: `"French plenipotentiaries" Namur
+1712` returned 1 volume, *The History of the Treaty of Utrecht ... The Second Edition, with Additions*
+(England, 1713), snippet "...1712. and of our Reign the Eleventh... Thơ' the French Plenipotentiaries...
+Namur. Charleroy and Newport, was produc'd by the Ministers of Great Britain..." — this is period diplomatic
+history discussing the Namur/Charleroy/Newport towns handed over under the 1712 Utrecht armistice terms, not
+a citation of SP 87/4/234 or its intercepted-letters content; no cipher/decipherment language in the snippet.
+Not a hit on this item.
 
 **Remaining gaps before a stage-2 verdict:** the Google Books queries above; a full TNA Discovery
 sibling-decipherment and digitised-flag sweep (not run this pass); archive.org full-text checks for

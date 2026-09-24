@@ -89,8 +89,12 @@ questions.
 show digitisation status, was not queried under this run's host rules). Likely needs a **TNA page-copy
 order** for f.147 — see REQUEST.md.
 
-**GB queries pending:** `site:books.google.com "Cesy" "1628"`; `intitle:"Lettres, instructions" Richelieu
-Avenel Cesy 1628`; `"Cesy" "31 août 1628" OR "10 septembre 1628"`; `"monsieur de Cesy" "1628" chiffre`.
+**Google Books sweep (24 September 2026, LANE S worker H, holding the Google Books slot — key+country=US,
+filter=full):** 4 queries run, >=2s apart, all zero results (`site:books.google.com` is a web-search operator,
+not valid Books-API syntax, so that query was run instead as `"Cesy" "1628" chiffre lettre`): `"Cesy" "1628"
+chiffre lettre`; `intitle:"Lettres, instructions" Richelieu Avenel Cesy 1628`; `"Cesy" "31 août 1628" OR "10
+septembre 1628"`; `"monsieur de Cesy" "1628" chiffre`. No hit on Avenel's Richelieu edition or any other
+printed source for this item via Google Books' full-view index.
 
 **Recommended next step:** confirm digitisation status via TNA Discovery (not run this pass); if undigitised,
 order a page copy of f.147 (REQUEST.md); separately, check whether the Halphen 1904 edition's introduction

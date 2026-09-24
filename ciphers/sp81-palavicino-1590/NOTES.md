@@ -86,9 +86,12 @@ ciphertext or decipherment was located.
    README.md/TARGETS.md/SHORTLIST.md/CATALOGUE.md or the `catalogue/` PARES/BNE/DECODE scrapes (checked
    above under DECODE).
 
-**GB queries pending** (this worker does not hold the Google Books slot this batch): `"S.P. Germany, States"
-"f. 125" Palavicino`; `Palavicino cipher Burghley 1590 "103"`; `Stone "Elizabethan" Palavicino cipher
-Germany`; `"SP 81/6" Palavicino Burghley` restricted to `filter=full`.
+**Google Books sweep (24 September 2026, LANE S worker H, holding the Google Books slot — key+country=US,
+filter=full):** 4 queries run, >=2s apart, all zero results: `"S.P. Germany, States" "f. 125" Palavicino`;
+`Palavicino cipher Burghley 1590 "103"`; `Stone "Elizabethan" Palavicino cipher Germany`; `"SP 81/6"
+Palavicino Burghley`. No corroboration or contradiction of the Stone 1956 finding from this route; Google
+Books' full-view index does not surface Stone's monograph (likely not itself digitised in full view, or its
+relevant page falls outside the snippet-indexed portion) for any phrasing tried.
 
 ## Verdict
 

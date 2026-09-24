@@ -71,6 +71,42 @@ Discovery calls (BL material, not TNA), no DECODE login.
 archive.org's be-api full-text search looked unreliable/under-indexed on the one L&P volume tested (0 hits
 even for "Henry") and was not pursued further after the sanity check.
 
+## Follow-up sweep of the 9 unchecked volumes (24 September 2026, LANE S worker H)
+
+Per this run's brief: checked each of the 9 previously-unchecked volumes against its expected calendar
+series by fetching the calendar's full OCR text from archive.org (djvu.txt) and grepping it directly
+offline for the volume's shelfmark form (`Vitell`, `Galba`, `Vesp`) co-occurring with `cipher`/`cypher`
+within a few hundred characters — the same method the original Vespasian C I / Caligula B VII / Caligula C
+VI hits in the table above used, chosen because british-history.ac.uk's search is Cloudflare-gated and
+archive.org's be-api full-text search index is confirmed (again, this pass) unreliable on these older Google
+Books-sourced OCR scans (`q=Vitellius&identifier=letterspapersfor01greauoft` returned 0 hits despite the
+word occurring 83 times in the plain-text file itself — do not rely on be-api fts for this OCR generation;
+fetch and grep the djvu.txt).
+
+| Shelfmark | Volume checked | Result |
+|---|---|---|
+| **Galba B IV** | *L&P Henry VIII* vol. 2 pt. 1 (`Vol2Pt1LettersAndPapersForeignAndDomestic`, Brewer, full text fetched and grepped) | **found-solved.** At least 6 distinct cipher items with contemporary decipherments already printed in this 1864 edition, all Sir Richard Spinelly's or Cuthbert Tunstal's 1516 despatches to Wolsey from Brussels: no. 2244 (Galba, B. iv. 130, 4 Aug. 1516, endorsed with a Latin decipher "by Ammonius"); no. 2358 (Galba, B. iv. 164, 13 Sept. 1516); no. 2373 (Galba, B. iv. 175, 20 Sept. 1516, "Hol., cipher, deciphered by Tuke"); no. 2663 (Galba, B. iv. 250, 12 Dec. 1516); no. 2673 (Galba, B. iv. 246, 14 Dec. 1516, "one passage in cipher, undeciphered" — the one exception, still unread even in print); no. 2703 (Galba, B. iv. 261, 26 Dec. 1516). Brian Tuke, Wolsey's own cipher clerk, is named as decipherer on several. This drops Galba B IV from any future cryptanalysis campaign as already-read in a public-domain 1864 edition. |
+| **Vitellius B XIII** | *L&P Henry VIII* vol. 5 (`letterspapersfor0005jame`, James Gairdner, full text fetched and grepped) | **strong candidate, not certain — status left open.** No. 891-892 ([Casale and Benet] to Henry VIII, Rome, 23 March 1531/32, "23 HENRY VIII"), on the King's divorce case, is cited "Vit. B. x11. 178" with "Cipher deciphered" and a cross-reference "Burnet, iv. 176" (i.e. also printed in Gilbert Burnet's *History of the Reformation*). The digit rendering is OCR-ambiguous between "xii" (Vitellius B XII, a different volume) and "xiii" (our target): a frequency check of every "Vit. B. [numeral]" citation in this same file shows clean, unambiguous renderings of both "XII." (once) and "XIII." (once) elsewhere, with the garbled form "x11"/"xm"/"xiu"/"x111" appearing 9 times total — a distribution consistent with "x11" etc. being OCR's usual mangling of "xiii" (dropping one stroke of a triple-i) rather than of the already-cleanly-rendered "xii". Not conclusive enough to change the status word without opening the image or the physical L&P volume; flagged as the cheapest next step for this row (check whether Vit. B. xiii f.178 vs Vit. B. xii f.178 in the Cotton catalogue, or open Burnet vol. 4 p.176 to confirm the letter is Casale/Benet from Rome, 23 March 1532). |
+| **Vespasian F VI** | *CSP Foreign, Elizabeth, 1572-74* (`calendarofstatep0000vari_o6f2`, full text fetched and grepped) | **Checked, not found — a real (if narrow) negative for this specific edition.** The whole volume cites "Cotton" only as the surname of a person (Mr. Thomas Cotton, an agent in the Low Countries, unrelated) and "Vesp" only once, in "Sicilian vespers" (unrelated). This calendar draws almost entirely on State Paper Office material with only occasional cross-references to BM manuscripts, and none reaches Vespasian F VI in the volume checked — narrows, does not close, the QUEUE row's edition risk for this item (a companion CSP Foreign volume or a different year within Vespasian F VI's 1572 span was not checked). |
+| **Vitellius B II** | *L&P Henry VIII* vol. 1 (`letterspapersfor01greauoft`, full text fetched and grepped) | **Checked, not found.** 83 occurrences of "cipher" in the whole volume; none within 400 characters of any "Vit"/"Vitell" shelfmark citation. Consistent with (not proof beyond) the original pass's "no hit found." |
+| Vitellius B VII | *L&P Henry VIII* vol. 4 | **Not resolved — wrong sub-volume fetched.** The archive.org identifier picked this pass (`letterspaperspt204greauoft`) turned out to be **Vol. IV, Part II** (content from 1526 onward, confirmed by its own title page and by 200 "1526" hits vs 16 "1525" hits), not the Part I our 1525 target needs. No exact "Vit. B. vii" citation found in the wrong part fetched. The correct Part I identifier was not pinned down this pass (archive.org's metadata does not distinguish part 1/2/3 in the `volume` field for the other `lettersandpaper*offigoog` candidates found); flagged as the cheapest next step. |
+| Galba D III | *CSP Foreign, Elizabeth, 1588-89* | **Not resolved.** archive.org search did not turn up an identifier clearly matching the specific 1588-89 volume of this series this pass (the series runs ~23 volumes and only a handful of identifiers surfaced by title search); not fetched. |
+| Vespasian C VII | *L&P Henry VIII* (pre-1547) + *CSP Spain* vols 1-4 + *CSP Spanish, Elizabeth* | **Not attempted.** Its 1471-1588 span crosses at least three separate calendar series (confirmed multi-series in the table above); out of proportion to check exhaustively for a single generic volume-level "cipher" mention within this pass's budget. |
+| Vespasian C VIII | *CSP Spanish, Elizabeth* (Hume, 4 vols, 1892-99) | **Not resolved — identifiers found, not fetched.** archive.org holds this edition (`cu31924032735098`, `cu31924032735106`, `cu31924032735114`, `cu31924032735122`, plus a Google-scan copy `calendarletters00offigoog` and three Michigan copies `adw2692.000[2-4].001.umich.edu`) but which of the four volumes covers 1587-1603 specifically was not determined this pass (no per-volume date range surfaced in the search metadata; would need one more archive.org metadata call per candidate). |
+| Caligula D I | *CSP Scotland* vol. 9-10 (Thorpe/Bain) | **Not resolved — identifier ambiguity.** Candidates found (`calendarofstatep08grea` labelled "vol.9" but titled for the 1547-1605 Mary/Scotland run generally; `calendarstatepa00thorgoog`; `cu31924091754360`) were not disambiguated to the specific 1587-89 volume this pass. |
+
+**Host requests this pass (LANE S worker H, 24 Sept 2026):** archive.org-family (advancedsearch, metadata,
+djvu.txt downloads) 20, all one at a time, >=3s apart (well under the shared 60-request session cap; none of
+this session's other three targets touched archive.org). be-api.us.archive.org fts: 1 (sanity-check
+reconfirming the earlier "unreliable on this OCR generation" finding, not pursued further). No
+british-history.ac.uk, no TNA Discovery, no Gallica/archivesetmanuscrits, no Google Books calls for this
+target (its Google Books queries remain pending, not this worker's slot task).
+
+Not "new"; not "unpublished" (rule 10) — Galba B IV joins the already-established pattern that this whole
+Tudor-diplomatic-cipher run was worked and printed by Brewer/Gairdner/Gardiner between 1862 and 1920; the
+"strong candidate" line for Vitellius B XIII is explicitly not a claim, only a lead for whoever resolves the
+OCR ambiguity next.
+
 ## Verdict
 
 **Status: found-solved**, for the material actually checked — consistent with this row's own flag ("caution
@@ -82,15 +118,22 @@ be dropped from any future campaign as already-solved. The one exception found i
 few words in cipher, not deciphered" per Tomokiyo's own page — too small a fragment to be a live cryptanalytic
 lead on its own, but technically still open.
 
-**The other 9 volumes (Vitellius B II/VII/XIII, Galba B IV/D III, Vespasian C VII/C VIII/F VI, Caligula D I)
-were not confirmed either way this pass** — a tooling/budget gap (BHO search Cloudflare-gated, archive.org
-full-text search unreliable on the one volume tested), not a negative search result. They remain
-unclassified. Given the pattern across the 5 checked volumes and the adjacent-volume corroboration from both
-solver repositories (an entire neighbouring Vespasian C III/C IV run already found-solved), the working prior
-for anyone picking this up next is that most or all of the remaining 9 will resolve the same way once a
-proper BHO browser-based search (`tools/browser_fetch.js`) or a direct download-and-grep of the relevant L&P/
-CSP volume OCR text is run, rather than generic web search — but this is a prior, not a finding, and rule 10
+**Follow-up (24 Sept 2026, LANE S worker H): of the 9 previously-unchecked volumes, 5 are now checked.**
+**Galba B IV joins the found-solved group** — at least 6 cipher items already printed with contemporary
+1516 decipherments in Brewer's 1864 L&P edition (see table above; item 2673 stays unread even there, "one
+passage in cipher, undeciphered"). **Vitellius B II and Vespasian F VI were checked and not found** in
+their expected calendar volume (real, if narrow, negatives — not the earlier pass's tooling gap). **Vitellius
+B XIII** has a strong but OCR-ambiguous candidate (no. 891-892, Casale/Benet to Henry VIII, 23 March 1532,
+"Cipher deciphered", also cross-cited to Burnet's *History of the Reformation* iv.176) not confirmed enough
+to change its status word. **Vitellius B VII, Galba D III, Vespasian C VII, Vespasian C VIII and Caligula D
+I remain unconfirmed** — the BHO Cloudflare gate is now resolved for future workers by the download-and-grep
+route this pass used successfully instead (no browser_fetch.js needed), but this pass ran out of budget
+identifying the exact archive.org volume for these five before fetching them. Given the pattern across all 6
+checked-and-found volumes (Vespasian C I, Galba B VII, Caligula B VII, Caligula C IV, Caligula C VI, Galba B
+IV) and the adjacent-volume corroboration from both solver repositories (an entire neighbouring Vespasian C
+III/C IV run already found-solved), the working prior for the remaining 5 is that most will resolve the same
+way once the correct volume identifier is pinned down — but this is a prior, not a finding, and rule 10
 forbids treating it as one.
 
 Not "new"; not "unpublished" — several items here are demonstrably already read (Tomokiyo's own keys, one
-printed in 1759); the rest is a search result, not a discovery.
+printed in 1759, six more in Brewer's 1864 L&P edition); the rest is a search result, not a discovery.

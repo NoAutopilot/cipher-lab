@@ -74,9 +74,15 @@ likely still in copyright and not on IA). Not checked further this pass.
    2026; shared clone). No target folder or catalogue row for Wroth or SP 81 in
    README.md/TARGETS.md/SHORTLIST.md/CATALOGUE.md or the `catalogue/` PARES/BNE/DECODE scrapes.
 
-**GB queries pending** (this worker does not hold the Google Books slot this batch): `"Jn. Wrothe" Cecil
-cipher Germany 1596`; `"John Wroth" Landgrave Palatine Cecil embassy 1596-1597`; `Wroth Wotton Germany
-princes 1596 cipher key SP 81` restricted to `filter=full`; `Wernham "List and Analysis" 1596 Wroth`.
+**Google Books sweep (24 September 2026, LANE S worker H, holding the Google Books slot — key+country=US,
+filter=full):** 4 queries run, >=2s apart. `"Jn. Wrothe" Cecil cipher Germany 1596` and `"John Wroth"
+Landgrave Palatine Cecil embassy 1596-1597` and `Wroth Wotton Germany princes 1596 cipher key SP 81` all
+returned zero results. `Wernham "List and Analysis" 1596 Wroth` returned 1 hit: *List and Analysis of State
+Papers, Foreign Series: January to December 1595* (Wernham/Brodie/Gairdner, PRO, 1964) — but the matched
+snippet is generic ("...1596 papers; see also, ibid., ccliv, no. 7 and cclv, no. 51...") and this specific
+volume covers 1595, not 1596; it does not name Wroth, SP 81/7/239, or a cipher in the visible snippet. This
+confirms the *List and Analysis* series (Wernham's own continuation into 1596 is a separate, later volume)
+exists on Google Books, but is not itself a hit on this item.
 
 ## Verdict
 

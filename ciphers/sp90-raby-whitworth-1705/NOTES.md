@@ -87,6 +87,36 @@ Requests: archive.org 2 (Wentworth Papers djvu, already-cached from the sibling 
 re-fetched this sweep), github.com (shared clone, see sp35-townshend-key-1719/NOTES.md). 2 WebSearch queries
 this target.
 
+## BL Add MS 37373-37389 check (24 September 2026, LANE S worker H)
+
+`searcharchives.bl.uk`'s JSON catalogue (`https://searcharchives.bl.uk/?q=Bothmer+Whitworth&search_field=all_fields&format=json&per_page=100`)
+returns all 17 volumes of Add MS 37373-37389 in one query (the fonds-level record, Add MS 37373-37389,
+confirms the range's own title: "Frederick William I of Prussia: Correspondence and papers of C. Whitworth as
+Envoy at Berlin: 1716, 1719-1722"). Each volume is a detailed, itemized folio-by-correspondent list (checked
+in full for the earliest, Add MS 37373, 4560 characters, 30 correspondent entries) — **no "cipher",
+"cypher", "decipher" or "key" term appears anywhere in any of the 17 volumes' catalogue descriptions**, unlike
+comparable BL fonds (a control search, `Whitworth cipher`, correctly surfaced Add MS 38238's "Cyphers:
+Various British and foreign diplomatists: 1800-1804" and Add MS 61591's "Partly Fr. and cipher" elsewhere in
+the same catalogue, confirming the search and field would show a cipher marker if the cataloguer had recorded
+one). This is a negative result for a *catalogued* decipher in this specific range, not proof none exists —
+the fonds is catalogued by correspondent and folio range, not by content type, so an enciphered passage
+within an otherwise-plaintext letter would not necessarily be flagged. **Also: the individual volumes in this
+range run 14 Apr. 1719 (Add MS 37373) to 8 Oct. 1722 (Add MS 37389) — none covers 1716-17, so SP 90/7/149,212
+(dated 1716-17 in the QUEUE row) falls entirely outside this range regardless of content.** The correct BL
+range for that correspondence period is Add MS 37363-37372 (same fonds, "WHITWORTH PAPERS," 1716-1719,
+identifiers 040-002053692 through 040-002053703, read from the same query's results) — not checked this pass
+(out of the assigned Add MS 37373-37389 scope), flagged as the cheaper next step for SP 90/7 specifically.
+SP 90/8/84 (1719) does fall inside the checked range (candidate volumes Add MS 37373-37378, spanning Apr-Dec
+1719), but its exact date within 1719 is not given in the QUEUE row, so no single volume could be matched to
+f.80/f.84 specifically.
+
+Requests: `searcharchives.bl.uk` 5 (>=2s apart, well under the 15-call cap): phrase search for "Add MS 37373"
+(1), control search "Whitworth cipher" (1, incidentally surfaced "Plantamour, agent in Berlin: Letters to
+Duke of Marlborough: 1702, 1703" in Add MS 61142 — the same name flagged as an unverified lead in
+`ciphers/sp105-paget-1693/NOTES.md`; a different target, noted there rather than chased further here), direct
+fetch of Add MS 37374's full record (1), "Bothmer Whitworth" search returning all 17 target volumes plus
+neighbours in one page (1), full catalogue record for Add MS 37373 (1).
+
 ## Next
 
 1. Get the exact date of SP 90/3/358 (TNA item-details, out of scope for this LANE S batch's no-Discovery

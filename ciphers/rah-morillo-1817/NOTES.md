@@ -100,8 +100,30 @@ different repository from PARES's Consejo de Guerra/Estado holdings named in thi
 check already answers the novelty question for item 1 without it). Left for a follow-up worker if
 Consejo de Guerra/Estado companion papers are wanted.
 
-**GB queries pending** (no Google Books slot this batch): `"clave" Morillo Enrile 1817 cifra Rodríguez
-Villa`; `Rodríguez Villa Morillo tomo IV 1820 documentos`; `"Romerito" Bolívar Morillo 1820 Herrera`.
+**Google Books sweep (24 September 2026, LANE S worker H, holding the Google Books slot — key+country=US,
+filter=full):** 3 queries run, >=2s apart. `"clave" Morillo Enrile 1817 cifra Rodríguez Villa` returned zero
+results. Two returned real hits:
+- `Rodríguez Villa Morillo tomo IV 1820 documentos` (4 results) confirms t.4 of Rodríguez Villa's edition
+  exists in print (cited by other authors — e.g. Lecuna, *Crónica razonada de las guerras de Bolívar*, 1950,
+  "Morillo al Ministro de la Guerra. Valencia, 28 de agosto de 1820. Rodríguez Villa, IV, 223") but none of
+  the 4 hits is itself a full-view scan of t.4 that could be fetched and grepped — they are other books
+  *citing* t.4's pagination, which corroborates that t.4 covers 1820 (as the Editions-first check inferred)
+  but does not supply its text. t.4 remains not located in full view on Internet Archive or Google Books.
+- `"Romerito" Bolívar Morillo 1820 Herrera` (2 results) — the more significant hit. Remedios Contreras
+  (Real Academia de la Historia), *Catálogo de la Colección Pablo Morillo, conde de Cartagena* (Madrid,
+  1988), a specialist archival catalogue of this exact RAH collection, prints consecutive entries: "4.528 ...
+  Bolívar para Romerito. Guanare, 6 de noviembre de 1820. Manuscrito, firma autógrafa, 1 f. Sig. 9/7666, leg.
+  23, f) f.419." and "4.529. Herrera a Morillo en carta cifrada dándole noticias de Romerito, que iba en
+  busca de Bolívar" — matching item 3 (RAH Sig. 9/7666, leg. 23, ff. 420-420v, "Herrera a Morillo en carta
+  cifrada dándole noticias de Romerito, que iba en busca de Bolívar," 7 Nov 1820) almost word for word, with
+  the catalogue's f.419 sitting immediately before item 3's own f.420-420v. This is a professional archival
+  catalogue's *description* confirming the item's existence, date and content — not a decipherment or
+  plaintext transcription (the snippet gives no ciphertext or reading), so it does not move item 3 to
+  found-solved. It does mean item 3's record is independently documented in a 1988 published catalogue, not
+  only in the RAH's own online database — useful for a verifier's print-search log, and confirms this
+  catalogue (Contreras 1988) as a source worth checking directly (not yet fetched in full) for items 1 and 2
+  in this cluster too, and for any neighbouring ciphered items in the same legajo 23 the online catalogue may
+  not have surfaced.
 
 ## Verdict
 
@@ -130,5 +152,5 @@ eltenientegenera01rodruoft 0.8 MB, eltenientegenera02rodruoft 0.7 MB). archive.o
 search, identifier-prefix search). archive.org be-api fts: 1 (global "Romerito" sanity check, ruled out as
 too generic). bibliotecadigital.rah.es: 3 (record-page reachability only, >=2 s apart, shared with the
 rah-canada-1869 budget in this batch — 3 of the 20-request cap used here). github.com: shared clone with
-the rest of this batch. No TNA Discovery calls (n/a to this target). No Google Books calls (queries logged
-above as pending).
+the rest of this batch. No TNA Discovery calls (n/a to this target). www.googleapis.com/books: 3 (24 Sept
+2026, LANE S worker H, key+country=US, never printed; see Google Books sweep above).

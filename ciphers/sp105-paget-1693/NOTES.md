@@ -47,7 +47,14 @@ next step — that step is gated on another worker (session_01JE9661cSHNoQDHEvtc
    - "Plantamour": the one full-text hit in CSPD vol.4 ("Anne Plantamour and John Ugasse, her son") is an
      unrelated denization-list entry. A web-search snippet (TNA authority record, not fetched) names
      "Plantamour, Philip, (fl 1693-1704), Diplomat" — dates match the target exactly and this is probably the
-     clerk named in the SP 105/60 catalogue note, but this is unverified beyond the snippet.
+     clerk named in the SP 105/60 catalogue note, but this is unverified beyond the snippet. Cross-target
+     lead (24 Sept 2026, LANE S worker H, from the sp90-raby-whitworth-1705 BL sweep run this same pass): BL's
+     `searcharchives.bl.uk` catalogue (Add MS 61142, "Vol. XLII... ff. 1-31b Philip Plantamour, agent in
+     Berlin: Letters to Duke of Marlborough: 1702, 1703") independently confirms a "Philip Plantamour" active
+     as a diplomatic agent/clerk in this same milieu (Berlin, correspondence with Marlborough) just a few
+     years after our 1693-94 Dresden items — same given+surnames, plausibly the same person or a close
+     relative, not yet checked against SP 105/60's own "hand of Plantamour" note; not fetched in full this
+     pass (out of this target's assigned scope).
    - Google Books queries pending (this worker does not hold the slot): `"William Paget" Constantinople
      ambassador letters 1693`; `"George Stepney" Dresden Paget cipher 1694`; `"Lord Paget" "Grand Signor"
      correspondence Stepney`; `Lexington Papers Paget Constantinople 1694`; `"SP 105" Stepney letter-book
@@ -90,11 +97,43 @@ correspondence. `dbourdeau/cyphersolver`'s unrelated 1702 Stepney→Manchester i
 "Stepney's own cipher" existed and that SP 106 is the expected class for this office's cipher templates —
 consistent with, but not resolving, the cataloguer's own note that the key is untraced there.
 
-**GB queries pending:** listed under Editions above (not run).
+**Google Books sweep (24 September 2026, LANE S worker H, holding the Google Books slot — key+country=US,
+filter=full):** 5 queries run, >=2s apart. Two returned zero results: `"William Paget" Constantinople
+ambassador letters 1693`; `"George Stepney" Dresden Paget cipher 1694`; `"SP 105" Stepney letter-book Dresden
+Saxony`. Two returned real hits, both from **H. Manners Sutton (ed.), *The Lexington Papers: Or, Some Account
+of the Courts of London and Vienna at the Conclusion of the Seventeenth Century*** (1851, several
+archive.org/Google scans of the same edition): the table of contents lists "Lord Paget to Lord Lexington.
+Death of the Grand Signor" and the body prints, verbatim, "Paget to Lord Lexington. Constantinople, Nov. 5,
+1694. I cannot send such a relation as I would of the negotiation agitated here, but I am agoing to
+Adrianople shortly..." — **this is a different correspondence channel from our target**: SP 105/60/121 and
+/135 are letters *to* Paget (in Stepney's Dresden/Vienna letter-book, per the Editions section above), while
+these Lexington Papers letters are *from* Paget, addressed to Robert Sutton, Lord Lexington (British envoy at
+Vienna), not to Stepney. Same person (Paget), same exact months (Nov 1693-1695), wrong direction and wrong
+addressee — not a match for either targeted item, but it establishes that a specialist printed edition of
+Paget's Constantinople correspondence from this exact period exists and is on Internet Archive/Google Books
+in full view, which the earlier general "no printed edition of Paget's outgoing correspondence" search did
+not find. Worth a look for a future worker: the same volume's table of contents (page numbers only in this
+snippet view) may also print letters *to* Paget from other correspondents in the same 1693-95 window,
+including possibly Stepney — not checked this pass (out of scope: running the queries, not chasing every
+lead to ground).
 
-**Recommended next step (not run this pass):** a TNA Discovery API sweep of SP 106 by date and correspondent
-for a Paget/Dresden key, as the row's own note flags. Gated on session_01JE9661cSHNoQDHEvtc2qQb (row-13
-scoring) posting `done` in ROOM.md; check ROOM.md before running it, at most 25 calls, >=3s apart.
+**TNA Discovery API sweep of SP 106 (24 September 2026, LANE S worker H).** Ran per this run's brief (the
+row-13 scoring gate from the earlier pass is treated as cleared by the LANE S orchestrator's direct
+assignment of this step). `tools/discovery_items.py "SP 106" "SP 106" <term>` for `Paget`, `Dresden`,
+`cipher`, `key` — 4 calls, 3s apart, well under the 40-call cap. `Paget`, `Dresden` and `key` returned zero
+records anywhere in SP 106. `cipher` returned all 67 items of the class (the term matches the series'
+own boilerplate description, not this item specifically) — read in full: SP 106 is a chronological run of
+named cipher/decipher tables by reign: Elizabeth I (106/1-3), James I (106/4), Charles I (106/5), **Charles II
+(106/6, 1660 May 29-1685 Feb 6)**, then a gap, then **Anne to George II (106/7-9, 1702 Mar 8 onward)**. **No
+item in the class covers 1685-1702** — the whole reign of James II and William & Mary, which includes our
+1693-94 Paget/Dresden period, falls in a structural gap in SP 106's own coverage. This is a direct,
+positive confirmation (not just an absence-of-search-term result) of the TNA cataloguer's own note on SP
+105/60/121 that the key is "untraced in SP 106": there is no William & Mary-era cipher/decipher table in the
+class at all, so no further term search within SP 106 can find one. Status unchanged (open) — this closes
+the SP 106 branch of the search, it does not find the key elsewhere.
 
 **Copy status:** no image of ff.121/135 seen this pass (catalogue text only) — remains a **TNA copy-order**
 case; see REQUEST.md.
+
+**Host requests this pass (LANE S worker H, 24 Sept 2026):** discovery.nationalarchives.gov.uk 4 (>=3s
+apart); www.googleapis.com/books 5 (>=2s apart, key+country=US, never printed).
