@@ -4148,3 +4148,149 @@ six DECODE item numbers against Gabbrielli's margin notes in `keys/58-3.pdf`, an
 pages 5-54 for filza 9/22 keys, are both unstarted and are the concrete next steps, not done here (budget). (3)
 Filza 8 (7 records, same id range) was left untouched -- named "and others" in the brief but not one of the
 three filze the questions ask about.
+
+## German state archives, online finding aids (LANE N2 scout of 24 September 2026)
+
+LANE N2 brief scDEA: German state archives' own online finding-aid systems, distinct from the digitised
+*libraries* the "German digitised manuscript libraries" section above already swept and from Kalliope
+(the "German and Austrian catalogue candidates" section). Reachability tested first
+(`curl -sS -o /dev/null -w "%{http_code}"`, none blocked at `000`): `www2.landesarchiv-bw.de` (302, follows to
+`/ofs21/home.php`), `www.arcinsys.hessen.de` (403, plain curl and browser UA alike -- see below),
+`www.arcinsys.niedersachsen.de` (301, follows to `/arcinsys/start.action`), `archiv.sachsen.de` (301, follows to
+`www.archiv.sachsen.de`), `www.bavarikon.de` (200, but the root path serves an Anubis PoW challenge to curl --
+see below). Deutsche Digitale Bibliothek's archive portal was skipped per the brief (LANE S already found it
+403-without-a-key).
+
+**Landesarchiv Baden-Württemberg (LABW), OFS21.** The finding-aid search (`ofs21/suche/ergebnis1.php`, POST
+`suche=TERM` plus the hidden fields `sortierung`, `trefferausgabe=30`, `sucheAusgangspunkt=../index`,
+`suchMaschine=lucene`, `logik=und`; paging via `ofs21/suche/ergebnis1a.php` POST with the same hidden block plus
+`trefferseite=N` (0-indexed page after the first)) is a plain form POST, no key, no session needed, and answers
+a descriptive User-Agent. Terms run: `Geheimschrift` (87), `chiffriert` (42), `chiffre` (218, sampled page 1
+only -- see caveats), `Dechiffrierung` (13), `dechiffriert` (4), `Chiffernschlüssel`/`Zifferbrief`/`"in
+Ziffern"`/`"mit Chiffren"`/`cifra` (0 each), `Ziffernschrift` (0). Every hit read for date, holder and the
+finding-aid's own note text; period noise (19th-20th c. administrative/criminal/military records where
+"Chiffre"/"Geheimschrift" means a classified-ad code, a telegraph cipher or a WWI signals matter) excluded by
+date. This host alone surfaced a real, apparently unmined cluster: the Generallandesarchiv (GLA) Karlsruhe's own
+Bestand 48 is a dedicated "Chiffren" rubric (cipher keys for the Baden-Baden and Baden-Durlach margraves'
+17th-18th c. diplomatic correspondence, largely unpaired with their ciphertext in this sweep), Bestand 81's
+Ensisheim Kriegssachen carries two enciphered letters of Erzherzogin Claudia de Medici (regent of Tyrol) to
+Markgraf Wilhelm von Baden-Baden from the same month of the Thirty Years' War, and Hohenlohe-Zentralarchiv
+Neuenstein's Ni 10 fonds is a nine-volume run of imperial command letters to Generalfeldmarschall Melchior von
+Hatzfeldt, 1634-1657, "z.T. in Geheimschrift" throughout. Digitisation checked per hit by the presence/absence
+of a `bild_zoom/thumbnails.php?...` "Digitalisate einsehen" link in the raw result HTML (LABW shows this link
+inline in the hit list, no per-record fetch needed) -- present for a handful of unrelated 18th-19th c. Stuttgart
+Bü and one 1534 Habsburg-administration item (which already carries its own period "Transkription" per the
+finding aid, so not a fresh target -- see caveats), absent for every DA row below.
+
+**Arcinsys Hessen -- blocked.** `www.arcinsys.hessen.de` returns a plain HTTP 403 to curl with both a
+descriptive and a full browser User-Agent, and the same 403 (not a JS challenge page) to a real headless
+Chromium via `tools/browser_fetch.js` -- this is a WAF/IP block, not a Cloudflare or Anubis interstitial a
+browser can clear. One attempt each via curl and browser, per the good-citizen rule; stood down. HSAM
+(Marburg, Landgrave Wilhelm's correspondence) is therefore unreached this sweep.
+
+**Arcinsys Niedersachsen and Bremen.** Same Arcinsys platform as Hessen but not blocked. The simple-search form
+POSTs `filter.searchTerm=TERM` (plus `filter.selectedSearchArea=ALL_ARCHIVES`) to `/arcinsys/simpleSearch_search.action`,
+which redirects to a `search_showSearchResult.action?executionId=ID` page whose results table is filled by a
+same-session AJAX call to `ajax_search_showSearchResultList.action?executionId=ID` -- this call needs the
+session cookie set during the search POST, and repeated `curl -c/-b` cookie-jar attempts against it hit
+connection resets (logged, not retried past the one-retry limit); `tools/browser_fetch.js` with
+`--type "#inputSearchTerm=TERM"` and `--selector "#searchResultList tbody tr"` reliably renders it in one call
+and is the working recipe for this host. Two terms run: `Chiffre` (89 hits, archives: Hannover 60, Stade 9,
+Oldenburg 7, Wolfenbüttel 5, Bückeburg 3, Aurich 2, Hannover/Osnabrück/Delmenhorst city archives 1 each; page 1
+of 9 read in full, remainder not paged this budget) and `Geheimschrift` (36 hits, page 1 of 4 read in full). No
+`Preview`/digitised-image indicator was set on any hit read (the results table's `Preview` column was empty
+throughout; `Action` offered only "Show details page", never a viewer link). Real finds: NLA Aurich's Rep. 241
+E 16/E 17 (East Frisian princely house cipher, with a surviving physical cipher table), NLA Bückeburg's L 1
+Nr. 548/562 (two single ciphered letters of Duke Heinrich the Younger of Brunswick-Lüneburg, 1519 and 1522),
+and Staatsarchiv Bremen's `2-Dd, 8.` series ("Geheimschrift des Senats; Chiffren der Korrespondenz", three
+volumes spanning 1560-1890, the first covering 1560-1750).
+
+**Sächsisches Staatsarchiv.** The portal's own header search box only covers `sachsen.de` web pages and says so
+outright ("Diese Suche umfasst nur Websites..."), with a link to the real finding-aid search at
+`www.archiv.sachsen.de/cps/suche.html`, field id `search-input`, param `q`, e.g.
+`cps/suche.html?q=Chiffre` -- another JS-rendered results panel, same `tools/browser_fetch.js --type
+"#search-input=TERM"` recipe. One term run: `Chiffre` (56 hits, page 1 of 6 read). This is exactly the
+Geheimes Kabinett / Geheimer Rat / Loc. series and the Saxon legations (Bayern, Österreich, Russland) the brief
+named, confirmed by the results page's own facet list. Two hits carried a `#digitalisat` anchor (Loc. 00694/10
+and Loc. 00704/02); the image itself is behind a JS viewer widget (`digitalisat-viewer` div, no plain
+`<img>`/IIIF URL in the rendered DOM after a 4 s wait) -- not resolved to a testable full-size image URL this
+budget, so **not** counted as copy-free below despite the indicator. Real find: HStA Dresden 10026 Geheimes
+Kabinett, Loc. 00694/10 is an 1893 cipher-solution apparatus (by archivist Dr. Krauske) for Manteuffel's 1712-13
+reports to Feldmarschall Flemming, which are themselves catalogued separately as Loc. 00694/08 and 00694/09 --
+an in-archive decipherment of an unread letter pair, the strongest single "key beside the letter" lead this
+sweep found, but with an open question (not resolved this budget) of whether Krauske ever published it.
+
+**Bavarikon.** The root path serves an Anubis proof-of-work challenge to curl (`Making sure you're not a
+bot!`); one attempt with `tools/browser_fetch.js` cleared it (a real Chromium render, no retries needed) and
+found the working search (`/search?terms=TERM`, GET). But Bavarikon aggregates full-text OCR across the BSB's
+entire digitised book collection alongside archival finding aids, and `Chiffre` (6,300 hits) and `Geheimschrift`
+(518 hits) are both dominated by the same "Chiffre/Ziffer = digit" noise LESSONS.md already names for Gallica
+and GDZ Göttingen -- an institution/object-category facet exists on the results page (`Bestandshaltende
+Institution`, `Objektkategorie`) that could narrow this to the Bayerisches Hauptstaatsarchiv specifically, but
+the facet's URL parameters were not resolved this budget. **Zero rows kept from Bavarikon this sweep** --
+logged as reachable and productive in principle, not swept to a result.
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note (verbatim) | Image URL (tested) | Copy-free y/n | Total |
+|---|---|---|---|---|---|---|---|---|---|
+| DA1 | Cipher key(s) to the secret correspondence of the East Frisian princely house, incl. an original ivory cipher table, and a cipher sent by Geheimer Rat Freiherr von Gersdorff (envoy in Vienna) with his 399th dispatch | 1727-1744 (E16); 1737 (E17) | de | recovery | Niedersächsisches Landesarchiv, Abt. Aurich, Rep. 241, E 16 and E 17 | E16: "Chiffre-Schlüssel zur geheimen Korrespondenz des ostfriesischen Fürstenhauses[.] Enthält: u.a. Original-Chiffre-Tabelle in Elfenbein, Schreiben von..." (title truncated by the result snippet, not opened further). E17: "Die vom Geheimen Rat Freiherrn von Gersdorff (fürstlicher Gesandter in Wien) mit seiner 399. Relation 1737 eingesandte Chiffre." | none tested (no Preview/viewer link on either hit) | n | 37 |
+| DA2 | Cipher-key rubric for the Baden-Baden and Baden-Durlach margraves' diplomatic correspondence (named envoys: Artopoeus, Boch, Elster, von Gemmingen, Harder, Heilbronner, Duke Christian Albrecht of Holstein-Gottorp, von Kronegh, Mentzingen, Persius, Romanini, von Rottberg, Seubert, Graf Starhemberg, Weininger, 1676-1705; Wilhelm von Edelsheim, 1760-61; Markgraf Hermann von Baden-Baden, 17th c.), plus the paired correspondence of Markgraf Friedrich Magnus with Hofrat J. R. Fesch (which itself names "Chiffre für Fesch") and Palatinate envoy ciphers from 1746 | 1676-1761 (keys); 1701-1707 (Fesch); from 1746 (Palatinate) | de | recovery | Generallandesarchiv Karlsruhe 48 Nr. 65, 67, 72 (key rubric); 46 Nr. 5970 (Fesch correspondence); 77 Nr. 1131 (Palatinate envoy ciphers) | 48 Nr.65: "Chiffren für die Korrespondenz mit Hofrat Artopoeus, Markgraf von Bayreuth, Boch, Elsener (Wien)... / 1676, 1678, 1705". 48 Nr.67: "Chiffre für die Korrespondenz des Markgrafen Karl Friedrich mit Wilhelm von Edelsheim. / 1760-1761". 46 Nr.5970: "...ung von Friedlingen etc., Chiffre für Fesch; 1703 Neufchate..." (snippet, Correspondenz des Markgrafen Friedrich Magnus mit Hofrat J. R. Fesch über Kriegs- und politische Angelegenheiten / 1701-1707). 77 Nr.1131: "Verschiedene Chiffres zu den Korrespondenzen mit den Gesandten. / Ab 1746." | none tested (no digitisation link on any of the four) | n | 36 |
+| DA3 | Cipher key "to read a cipher" (Löwenstein-Wertheim-Rochefort family correspondence) and a separate numeric cipher key in the Kabinett of Graf Ludwig Moritz | 1681-1682, 1692 (R-NL 2/71); c.1699-1740, undated (F-Rep. 90N/106) | de | recovery | Staatsarchiv Wertheim R-NL 2 Nr. 71 (Nachlass Fürst Maximilian Karl) and F-Rep. 90N Nr. 106 (Kabinett des Grafen Ludwig Moritz) | R-NL 2/71 snippet: "...Schlüssel zum Lesen einer Geheimschrift..." (title: "Schreiben des Philipp Eberhard von Löwenstein-Wertheim-Rochefort an seinen Bruder Fürst Maximilian Carl"). F-Rep. 90N/106: "Zahlenschlüssel zu einer Geheimschrift / o.D." | none tested (no digitisation link) | n | 35 |
+| DA4 | Cipher solutions to Manteuffel's 1712-13 reports to Feldmarschall Graf von Flemming, made by archivist Dr. Krauske in 1893; the underlying reports are catalogued separately and were not opened this budget | 1712-1713 (letters); 1893 (decipherment) | de | recovery/contribution (ambiguous -- see caveats) | Sächsisches Hauptstaatsarchiv Dresden, 10026 Geheimes Kabinett, Loc. 00694/10 (decipherment); Loc. 00694/08 and Loc. 00694/09 (the letters, not opened) | "Chiffren in Schreiben Manteuffels an Flemming (angefertigt von Dr. Krauske,1893)[.] Enthält u. a.: Einige Chiffre-Auflösungen zu den Berichten Manteuffels an Flemming 1712 und 1713, (Loc. 694/08 und Loc. 694/09)." | `#digitalisat` anchor present on Loc.694/10's result row; the JS viewer widget behind it did not resolve to a plain image URL in a 4 s render (see host note above) -- not tested to a working URL | n (indicator seen, not confirmed) | 34 |
+| DA5 | Imperial command letters (Kaiser Ferdinand III and Erzherzog Leopold Wilhelm) to Generalfeldmarschall Graf Melchior von Hatzfeldt, with the Count's own reports, partly in cipher throughout a nine-volume run | 1634-1657 (Bd 240-249, several volumes) | de | cryptanalysis | Hohenlohe-Zentralarchiv Neuenstein, Ni 10 Bd 240, 241, 242, 243, 244, 245, 246, 247, 248, 249 | Bd 240: "Befehlsschreiben des Königs Ferdinand III. an Graf Melchior von Hatzfeldt (z.T. in Geheimschrift). / 1634-1637". Bd 246: "Befehlsschreiben des Erzherzogs Leopold Wilhelm an Graf Melchior von Hatzfeldt mit Berichten des Grafen (z.T. in Geheimschrift). / 1636-1640" (the same phrase, with running dates, on Bd 241/1640, 247/1641, 248/1642-43, 249/1644-57, 245/1645-57). | none tested (no digitisation link) | n | 33 |
+| DA6 | "Geheimschrift des Senats; Chiffren der Korrespondenz" -- the Bremen Senate's own cipher and correspondence series | 1560-1750 (Bd.1 of 3; the full series in this catalogue entry runs 1560-1890) | de | recovery | Staatsarchiv Bremen (StAB), 2-Dd, 8. Bd.1 (series-level record: StAB 2-Dd, 8.) | "Geheimschrift des Senats; Chiffren der Korrespo...: Geheimschrift des Senats; Chiffren der Korrespo..." (title truncated identically twice by the result snippet; series-level record reads "Geheimschrift des Senats; Chiffren der Korrespondenz / 1560-1890") | none tested (no digitisation link) | n | 32 |
+| DA7 | Two single ciphered letters of Duke Heinrich the Younger of Brunswick-Lüneburg | 1519 (Nr.548, military matters); 1522 (Nr.562, political intentions) | de | cryptanalysis | Niedersächsisches Landesarchiv, Abt. Bückeburg, L 1 Nr. 548 and Nr. 562 | Nr.548: "Schreiben des Herzogs Heinrich von Braunschweig-Lüneburg betr. Militärisches (Geheimschrift)". Nr.562: "Politische Absichten des Herzogs Heinrich d. M. von Braunschweig-Lüneburg (Geheimschrift)". | none tested (no digitisation link) | n | 30 |
+| DA8 | Two enciphered letters of Erzherzogin Claudia de Medici (regent of Tyrol) to Markgraf Wilhelm von Baden-Baden on the Thirty Years' War capture of Neuenburg, the same month | 24 Jan 1633 (GLA 81 Nr.442, also catalogued as 46 Nr.2916); 23 März 1633 (GLA 81 Nr.813) | de | cryptanalysis | Generallandesarchiv Karlsruhe 81 Nr. 442 (= 46 Nr. 2916, cross-reference) and 81 Nr. 813 | 442: "Chiffriertes Schreiben der Erzherzogin Claudia de Medici an Markgraf Wilhelm von Baden-Baden über die Eroberung der Stadt Neuenburg und die Entsendung des Obersts Hans Werner Escher von Binningen an den Grafen Johann von Aldringen." (1 Stück; permalink `www.landesarchiv-bw.de/plink/?f=4-5062086`). 813: "Schreiben der Erzherzogin Claudia de Medici an Markgraf Wilhelm von Baden-Baden mit Übersendung von 15.000 Gulden zur Bezahlung der Truppen und Fortführung der Festungsarbeiten zu Breisach (zum Teil in Geheimschrift)." | none tested (no digitisation link on either) | n | 29 |
+| DA9 | Correspondence of Truchsessin Maria Walburga Eusebia von Waldburg, Pröpstin zu Essen, to her brother Truchseß Christoph Karl(?), partly in cipher | 1653-1654 | de | cryptanalysis | Staatsarchiv Sigmaringen, Dep. 30/1 T 3 Nr. 702 | "Korrespondenz der Truchsessin Maria Walburga Eusebia von Waldburg, Pröpstin zu Essen, an ihren Bruder Truchseß Christoph Karl (?) z.T. in Geheimschrift" | none tested (no digitisation link) | n | 29 |
+| DA10 | Reports of Lic. Melchior (from Vienna, Prague and Strasbourg) and of the household servants Kanzleirat J. C. Pape and Kammersekretär G. L. Köhler (from Vienna), both partly enciphered, to Graf Wolfgang Julius von Hohenlohe-Neuenstein-Weikersheim | 1679-1680 (Bü 161); 1689 (Bü 165) | de | cryptanalysis | Hohenlohe-Zentralarchiv Neuenstein, Sf 35 Bü 161 and Bü 165 (Wilhermsdorf I) | Bü161: "Berichte (teilweise chiffriert) des Lic. Melchior an Graf Wolfgang Julius aus Wien, Prag und Straßburg." Bü165: "Berichte (teilweise chiffriert) der in Hausangelegenheiten nach Wien entsandten Diener Kanzleirat Johann Christoph Pape und Kammersekretär Georg Ludwig Köhler." | none tested (no digitisation link) | n | 29 |
+| DA11 | Diary of Lukas Osiander (1571-1638), "Diarium Rerum Wirtenbergicarum et Variarum", partly in a symbol-based cipher | 1627-1630 (diary entries; one dated entry, 17 May 162[?], read in the snippet) | de | cryptanalysis | Hauptstaatsarchiv Stuttgart, J 7 Bü 66 (Sammlung Pregizer) | Snippet: "...auf Symbolen beruhenden Geheimschrift abgefasst: -- 17. Mai 162..." (title: "Lukas Osiander (1571-1638): 'Diarium Rerum Wirtenbergicarum et Variarum 1627-1630'") | none tested (no digitisation link) | n | 28 |
+
+**Found, read, not nominated (editions or ambiguous -- logged per rule 10, not scored):**
+- Generallandesarchiv Karlsruhe 111 Nr. 304 (Reichshofratsgutachten im Prozess Baden gegen von der Leyen, 1779):
+  "Enthält u.a.: Chiffriertes Schreiben mit Dechiffrierung" -- the decipherment is already in the same file
+  (`kind` edition, dropped per QUEUE.md's own convention).
+- Hauptstaatsarchiv Stuttgart A 2 Bü 9, 10, 11 (Regierungsakten der habsburgischen Verwaltung, Jan-Apr 1534,
+  digitised -- `bild_zoom` link present on all three): four snippets each read "...(in/z.T. in Geheimschrift,
+  mit Transkription)..." -- a period transcription is already noted in the finding aid alongside the cipher
+  passages (Habsburg administration correspondence during Duke Ulrich of Württemberg's 1534 restoration war,
+  same episode as K3/K4 in the "German and Austrian catalogue candidates" section above). Not opened further;
+  flagged for whoever tracks editions, not a fresh target.
+- Generallandesarchiv Karlsruhe 96 Nr. 1179 (Die Reichenauer Mönchsunruhen, 1654): "Briefe an Pater Eusebius
+  Mantz in der Reichenau (z.T. chiffriert) mit Entzifferungsversuchen" -- *attempts* at decipherment (plural),
+  not a stated success; ambiguous, not scored either way this sweep.
+
+**Caveats.** (1) None of DA1-DA11 has been check-solved; every row is a catalogue-metadata match (title plus the
+finding aid's own note field), not a verified reading, per this brief's "no check-solved" instruction. (2) All
+eleven are copy-order targets -- no image URL on this sweep resolved to a working full-size view for any of
+them, including the two Saxon hits carrying a `#digitalisat` indicator (DA4); the lane's "at least half
+copy-free" goal is not met by this section alone. (3) `chiffre` at LABW (218 raw) and both Bavarikon terms
+(6,300 and 518 raw) were sampled at page 1 only or not scored -- budget, not exhaustion; a future pass with more
+budget should finish LABW's `chiffre` pages 2-8 and resolve Bavarikon's institution/object-category facet
+before writing those two off. (4) DA1's E16 title was truncated by the result snippet ("Original-Chiffre-Tabelle
+in Elfenbein, Schreiben von...") -- the detail page was not opened this budget; the names it cuts off could
+matter for a copy request. (5) DA4's Krauske 1893 decipherment raises a real question this sweep did not
+answer: if Krauske published it (he was a working historian/archivist), the Manteuffel-Flemming reports could
+already be `found-solved` or at best a low-novelty `contribution` -- flagged explicitly, not resolved, so a
+future check-solved or verifier session does not have to rediscover the question. (6) Exclusion checked against
+`ciphers/`, QUEUE.md, CATALOG.md, LANDSCAPE.md, `sources/cryptiana/`, and fresh shallow clones of both solver
+repositories (grep by sender/recipient/place name and by shelfmark) -- zero matches for any DA row; the one
+near-hit (`unsolved-ciphers/ferdinand-1635-1640/SOURCES.md` discussing a *different* DECODE item, R1890, whose
+deciphered plaintext names "Hatzfeldius"/"Hazfeld" as a third party) is a different collection and direction of
+correspondence from DA5, not the same item.
+
+**Per-host report:** `www2.landesarchiv-bw.de`: 19 requests (>=1.6s apart; 1 reachability, 1 home page, 6 first-page
+term searches, 2 further-page POSTs, 2 detail-page fetches, 5 zero-hit phrase/short-term checks, 2 samples of
+the noisy `chiffre` term). `www.arcinsys.hessen.de`: 3 requests (2 curl, 1 browser render), blocked 403
+throughout, stood down. `www.arcinsys.niedersachsen.de`: ~15 requests (curl reachability and cookie-jar
+attempts, `tools/browser_fetch.js` renders for the two productive terms). `archiv.sachsen.de` /
+`www.archiv.sachsen.de`: 9 requests (curl reachability/portal pages, `tools/browser_fetch.js` for the real
+finding-aid search and one detail page). `www.bavarikon.de`: 5 requests (1 curl blocked by Anubis,
+`tools/browser_fetch.js` for the home page and two search terms). WebSearch: 0. `github.com`: 2 shallow clones
+(dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers), grepped by name/date/shelfmark, deleted after. No
+credentials used, no subagents, never check-solved, never promoted, never solved.
+
+**Raw/kept/copy-free per host:** LABW: ~450 raw hits across 12 query terms (mostly noise, see host note above),
+8 kept (DA2, DA3, DA5, DA8, DA9, DA10, DA11, plus the three found-not-nominated items above), 0 copy-free.
+Arcinsys Niedersachsen: 125 raw hits across 2 terms (page 1 only), 3 kept (DA1, DA6, DA7), 0 copy-free. Sächsisches
+Staatsarchiv: 56 raw hits (page 1 only), 1 kept (DA4), 0 copy-free (digitisation indicator seen, not resolved to
+a working image). Bavarikon: 6,818 raw hits across 2 terms, 0 kept, 0 copy-free. **Total: 11 rows kept (DA1-DA11),
+0 copy-free.**

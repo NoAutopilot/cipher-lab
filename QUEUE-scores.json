@@ -8765,5 +8765,129 @@
         "total": 46
       }
     ]
+  },
+  "lane_n2_de_archives": {
+    "_about": "LANE N2 scout of 24 September 2026 (German state archives' online finding aids; .claude/briefs/runs/2026-09-24-lane-n2-scDEA.md): LABW OFS21 (www2.landesarchiv-bw.de), Arcinsys Niedersachsen (Arcinsys Hessen blocked 403), Saechsisches Staatsarchiv (archiv.sachsen.de/cps/suche.html), and Bavarikon (Anubis-cleared by browser but too noisy to sample this budget, zero rows). 11 rows kept (DA1-DA11), all copy-order (no working image URL resolved for any row). Full raw notes, per-hit catalogue text and dropped/ambiguous items: sources/solver-diffs/2026-09-24-lane-n2-dea.tsv and the QUEUE.md section itself.",
+    "date": "24 September 2026",
+    "requests_per_host": {
+      "www2.landesarchiv-bw.de": 19,
+      "www.arcinsys.hessen.de": 3,
+      "www.arcinsys.niedersachsen.de": 15,
+      "archiv.sachsen.de / www.archiv.sachsen.de": 9,
+      "www.bavarikon.de": 5,
+      "github.com (shallow clones, grep only)": 2
+    },
+    "rows": [
+      {
+        "row_id": "DA1",
+        "target": "East Frisian princely house cipher key + ivory cipher table + Gersdorff Vienna dispatch cipher",
+        "year": "1727-1744",
+        "kind": "recovery",
+        "holder": "Niedersaechsisches Landesarchiv Abt. Aurich",
+        "shelfmark": "Rep. 241, E 16 / E 17",
+        "total": 37,
+        "rationale": "language_fit3 material0 key_lead3(key+physical cipher table located) size2 competition3 weight3(princely house diplomatic secrecy) unread2(recovery, need to pair with letters)"
+      },
+      {
+        "row_id": "DA2",
+        "target": "Baden-Baden/Baden-Durlach diplomatic cipher-key rubric + Fesch correspondence + Palatinate envoy ciphers",
+        "year": "1676-1761",
+        "kind": "recovery",
+        "holder": "Generallandesarchiv Karlsruhe",
+        "shelfmark": "48 Nr.65,67,72; 46 Nr.5970; 77 Nr.1131",
+        "total": 36,
+        "rationale": "language_fit3 material0 key_lead3(key rubric located) size2 competition3 weight2 unread2(recovery)"
+      },
+      {
+        "row_id": "DA3",
+        "target": "Loewenstein-Wertheim-Rochefort cipher key + Ludwig Moritz numeric cipher key",
+        "year": "1681-1740",
+        "kind": "recovery",
+        "holder": "Staatsarchiv Wertheim",
+        "shelfmark": "R-NL 2 Nr.71; F-Rep. 90N Nr.106",
+        "total": 35,
+        "rationale": "language_fit3 material0 key_lead3(keys located, unpaired letters) size2 competition3 weight1 unread2(recovery)"
+      },
+      {
+        "row_id": "DA4",
+        "target": "Krauske 1893 decipherment of Manteuffel to Flemming cipher reports",
+        "year": "1712-1713 (decipherment 1893)",
+        "kind": "recovery/contribution",
+        "holder": "Saechsisches Hauptstaatsarchiv Dresden",
+        "shelfmark": "10026 Geheimes Kabinett Loc.00694/10 (letters at 08/09, not opened)",
+        "total": 34,
+        "rationale": "language_fit3 material0 key_lead3(decipherment exists) size2 competition3 weight3(Saxon-Polish court, Flemming) unread1(a decipherment already made -- ambiguous kind, may be closer to contribution or even found-solved pending whether Krauske published it)"
+      },
+      {
+        "row_id": "DA5",
+        "target": "Imperial command letters Ferdinand III / Leopold Wilhelm to Melchior von Hatzfeldt, partly ciphered, 9 volumes",
+        "year": "1634-1657",
+        "kind": "cryptanalysis",
+        "holder": "Hohenlohe-Zentralarchiv Neuenstein",
+        "shelfmark": "Ni 10 Bd 240-249",
+        "total": 33,
+        "rationale": "language_fit3 material0 key_lead0 size3(multi-volume, large run) competition3 weight3(Emperor + famous imperial general) unread3(cryptanalysis)"
+      },
+      {
+        "row_id": "DA6",
+        "target": "Geheimschrift des Senats; Chiffren der Korrespondenz (Bremen Senate cipher/correspondence series)",
+        "year": "1560-1750 (series to 1890)",
+        "kind": "recovery",
+        "holder": "Staatsarchiv Bremen",
+        "shelfmark": "2-Dd, 8. Bd.1 (series 2-Dd 8.)",
+        "total": 32,
+        "rationale": "language_fit3 material0 key_lead1(design/system likely known, keys probably bundled in series) size3(multi-volume series) competition3 weight2(city-state Senate diplomatic secrecy) unread2(recovery)"
+      },
+      {
+        "row_id": "DA7",
+        "target": "Two single ciphered letters of Duke Heinrich the Younger of Brunswick-Lueneburg",
+        "year": "1519, 1522",
+        "kind": "cryptanalysis",
+        "holder": "Niedersaechsisches Landesarchiv Abt. Bueckeburg",
+        "shelfmark": "L 1 Nr.548, Nr.562",
+        "total": 30,
+        "rationale": "language_fit3 material0 key_lead0 size2 competition3 weight2(named duke, Reformation era) unread3(cryptanalysis)"
+      },
+      {
+        "row_id": "DA8",
+        "target": "Claudia de Medici to Markgraf Wilhelm von Baden-Baden, two ciphered letters, Thirty Years War (Neuenburg)",
+        "year": "1633-01-24, 1633-03-23",
+        "kind": "cryptanalysis",
+        "holder": "Generallandesarchiv Karlsruhe",
+        "shelfmark": "81 Nr.442 (=46 Nr.2916); 81 Nr.813",
+        "total": 29,
+        "rationale": "language_fit3 material0 key_lead0 size1(two short single letters) competition3 weight3(regent of Tyrol, war correspondence) unread3(cryptanalysis)"
+      },
+      {
+        "row_id": "DA9",
+        "target": "Maria Walburga Eusebia von Waldburg to her brother Christoph Karl, partly ciphered",
+        "year": "1653-1654",
+        "kind": "cryptanalysis",
+        "holder": "Staatsarchiv Sigmaringen",
+        "shelfmark": "Dep. 30/1 T 3 Nr.702",
+        "total": 29,
+        "rationale": "language_fit3 material0 key_lead0 size2 competition3 weight1 unread3(cryptanalysis)"
+      },
+      {
+        "row_id": "DA10",
+        "target": "Reports of Lic. Melchior and of Pape/Koehler to Graf Wolfgang Julius von Hohenlohe, partly ciphered",
+        "year": "1679-1680, 1689",
+        "kind": "cryptanalysis",
+        "holder": "Hohenlohe-Zentralarchiv Neuenstein",
+        "shelfmark": "Sf 35 Bue 161, Bue 165",
+        "total": 29,
+        "rationale": "language_fit3 material0 key_lead0 size2 competition3 weight1 unread3(cryptanalysis)"
+      },
+      {
+        "row_id": "DA11",
+        "target": "Lukas Osiander diary, partly in symbol-based cipher",
+        "year": "1627-1630",
+        "kind": "cryptanalysis",
+        "holder": "Hauptstaatsarchiv Stuttgart",
+        "shelfmark": "J 7 Bue 66 (Sammlung Pregizer)",
+        "total": 28,
+        "rationale": "language_fit3 material0 key_lead0 size1(partial cipher within a diary, extent unconfirmed) competition3 weight2(named chronicler) unread3(cryptanalysis)"
+      }
+    ]
   }
 }
