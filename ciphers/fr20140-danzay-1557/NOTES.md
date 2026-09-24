@@ -1,6 +1,7 @@
 # BnF fr.20140 — Charles de Danzay to Henri II / Cardinal of Lorraine, January 1557
 
 Status: found-solved (3 of 4 items); partial (1 of 4, f.35: Tomokiyo's key read, 24 Sept 2026)
+Novelty (f.35): N3 per AUDIT.md (verifier, 24 Sept 2026); use only the safe sentence there.
 
 Check-solved pass, 24 September 2026 (Sonnet, orchestrator brief for M13-M16). Editions-first + one-leaf pass.
 The formal six-source check-solved run for the f.35 remainder is done (below, same day); verdict unchanged:
@@ -42,6 +43,9 @@ checked 24 Sept 2026.
    both queries, `&country=US&key=$GOOGLE_BOOKS_KEY`, key never printed). **Not located; genuinely unreached,
    not searched-and-cleared** — this is the one source in this pass that stays an open gap, not a checked
    negative.
+   *Verifier correction, 24 Sept 2026 (AUDIT.md):* the 1824 edition is Handlingar vol. **XI**, not IX (the
+   series' own register: "Dantzai ... brefvexling, 11: 1-345"). It is IA `handlingarrrand02scangoog`, and its
+   full text has no 1557 letter (years 1562-1579). Now reached; the letter is not in it. The gap is closed.
 4. **Calendar of State Papers Foreign, Mary 1553–1558** (Turnbull, 1861) — a WebSearch hit surfaced a "Danzay,
    —, letter from, 290" index entry, but tracing it (British History Online, `cal-state-papers/foreign/vol16`)
    showed it belongs to volume 16 of the CSP Foreign series (context: "States' army", "Leicester's footman" —

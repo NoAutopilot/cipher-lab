@@ -404,7 +404,7 @@
    "holder": "Worker",
    "kind": "recovery",
    "next": "Verifier (template) on the f.35 reading; f.36 continuation imaged and passed; second reader after that.",
-   "note": "Read 24 Sept 2026 with Tomokiyo's published Danzay key: 638 cipher tokens, H 508 (61 null), M 61, U 69, continuous French on 23 of 37 lines (chancelier, Danoys, marchans de Lion, Augsbourg). No class yet; nothing is called new before AUDIT.md.",
+   "note": "Verifier 24 Sept 2026: N3 (AUDIT.md; not N4 until Delavaud 1911, Cuisiat 1998 and JSTOR are read); the 1824 Correspondance is Handlingar XI, reached, and does not contain the letter. Read 24 Sept 2026 with Tomokiyo's published Danzay key: 638 cipher tokens, H 508 (61 null), M 61, U 69, continuous French on 23 of 37 lines (chancelier, Danoys, marchans de Lion, Augsbourg). No class yet; nothing is called new before AUDIT.md.",
    "wait": {
     "on": "Verifier",
     "since": "24 Sep 2026, 02:57 UTC",
