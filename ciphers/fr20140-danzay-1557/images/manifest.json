@@ -54,5 +54,44 @@
     "content": "S. Tomokiyo's reconstructed sign table for Danzay's 1557 cipher: a-z (minus j,k,v,w), nulls, word-signs for 'dict/et/le/luy/quel?/son?' and 'Dannemarch'/'le Roy de Dannemarch'",
     "fetched_this_pass": true,
     "not_previously_mirrored": "only danzay.htm was mirrored before this pass; the page's images (danzay.png, danzay_1574.png, danzay_1557.png) were not"
+  },
+  "f36_pass_24_sept_2026": {
+    "note": "f.35v (solver, same day) stops at 'du [xk]' at the foot of the page and states the letter continues on f.36, not then on disk. This pass fetches f.36 to check. Canvas indices read straight from the primary ark's own manifest labels (recto canvas index = 2*folio - 1, already established above): folio 36 recto = canvas index 71 (label '36r'), verso = canvas index 72 (label '36v') -- confirmed by eye, no probing needed.",
+    "target_folio": "f.36, continuation of the 27 Jan 1557 letter, Danzay to Cardinal of Lorraine",
+    "fetches": [
+      {
+        "file": "preview_f71.jpg",
+        "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52521512h/f71/full/1200,/0/native.jpg",
+        "purpose": "low-res check of folio number/date before native fetch",
+        "confirmed": "leaf headed '36' top right, marginal date '...vingt sept jour de Janvier 1557' (27 Jan 1557) -- continuation of the same despatch; signed 'Dantzay' at foot"
+      },
+      {
+        "file": "preview_f72.jpg",
+        "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52521512h/f72/full/1200,/0/native.jpg",
+        "purpose": "low-res check of verso",
+        "confirmed": "address/docket panel (bleed-through of recto text, an address line, a wax seal) -- this is the outside of the folded sheet, not a continuation leaf; no cipher visible"
+      },
+      {
+        "file": "native_f71.jpg",
+        "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52521512h/f71/full/full/0/native.jpg",
+        "native_size": "4800x7062"
+      },
+      {
+        "file": "native_f72.jpg",
+        "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52521512h/f72/full/full/0/native.jpg",
+        "native_size": "4791x7091"
+      }
+    ],
+    "fetch_count_this_leg": 4,
+    "crops": [
+      {
+        "file": "f71_cipher.jpg",
+        "source": "native_f71.jpg",
+        "native_box_xyxy": [1300, 1770, 4700, 1980],
+        "resized_to": "2400 wide",
+        "content": "folio 36 recto, the single cipher line at the top of the page (first line only); clear French resumes immediately on line 2 ('Iy m'a...') and continues to the signature 'Dantzay' at the foot -- the cipher on f.36 is one line, not a further multi-line block"
+      }
+    ],
+    "verso_not_cropped": "f.36v (native_f72.jpg) carries no cipher -- it is the address/docket panel of the folded sheet (bleed-through text, an address line, a wax seal); no crop cut from it"
   }
 }
