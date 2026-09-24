@@ -110,7 +110,7 @@ several hundred to ~600 elements each, so U dominates by design, not by failure)
 | P15 (Mountagu) | 15 | 8 | 61 | 84 | 10 e, 3 and, 2 the |
 | P17 (Downing) | 99 | 73 | 892 | 1064 | 99 e (no other key value recurs in this window) |
 
-**None of the five outputs is continuous English, or close to it** -- H-graded tokens are
+(P11-13 superseded 24 Sept 2026 by section 9 below: the print carries a decipherment above the cipher, now aligned.) **None of the five outputs is continuous English, or close to it** -- H-graded tokens are
 letter-frequency crumbs (mostly "e", the commonest English letter, which is exactly what a
 sparse homophone-only key should surface first) plus a few correctly-recurring function words
 ("the", "and") that corroborate the crib alignment already logged in thurloe-check.tsv, not a
@@ -256,3 +256,79 @@ request) if anyone wants the key as a TSV.
 
 Requests this pass: archive.org 1 (the `collectionofstat07thur_djvu.txt` refetch; gitignored). No
 other host, no subagents, no logins.
+## 9. P11-13 solver (24 Sept 2026)
+
+**What was found.** The 1742 print (IA `collectionofstat05thur`, pp. 67-69, djvu lines 5700-6075)
+sets a decipherment above every cipher line of this letter, letter by letter and word by word;
+the `[PLAIN:...]` lines in `P11-13/ciphertext.txt` are that decipherment, not surrounding clear
+text. The letter is a journal-letter: first entry "Aprill 20th" (the date in `index.tsv`), later
+entries 8, 13-17, 20 and 22 May, endorsed by Thurloe "General Montagu, of the 29th of May 1656",
+"Received by captain Lloyd, who arrived here 11th July 1656". It has 89 cipher lines (1,835 OCR
+tokens); P11, P12 and P13 are 15 of them (319 tokens). A cipher line at L5958 (13 tokens, "May
+20th." entry) was classed as plain by `thurloe_extract.py` and is not in the 319; it is in the
+pairs file.
+
+**Method.** `tools/interlinear_align.py` (new, reusable for any Birch interlinear) extracts all
+89 plain/cipher pairs verbatim into `montagu_1656-05-29_pairs.tsv` and aligns each group to a
+chunk of the printed decipherment by dynamic programming, iterating so each group agrees with its
+own reading elsewhere in the letter (long-s f = s and u = v folded). `decode.py` runs it in memory
+and writes `key_montagu_extended.tsv` (248 values: 8 H, 137 C, 103 M), `align_montagu.tsv` and
+`reading_P11-13.txt`; `python3 decode.py --check` exits non-zero if any is stale (rule 7).
+No cryptanalysis was needed or run: every meaning comes from the printed decipherment or from
+Tomokiyo, so there are no S grades, and the brief's anneal over unknown groups was not run.
+
+**Matched control (rule 3).** `control_interlinear.py`: synthetic nomenclator with the letter's
+own structure (1-99 letters, e 8 homophones, t/o/r/u/s 5, ... ; 169 alphabetical word codes on
+100-622; codes about 39% of groups), enciphering clear 1656 prose from the same volume
+(`control_clear_vol5.txt`, Hague letters, djvu 6076-6400), 89 lines, 1,641 tokens, printed with
+the OCR faults of the real pairs (long s as f, l as 1, letters and words run together, 4% mangled
+groups, merges, nulls). Result (`control_result.tsv`, `--check` supported):
+
+| | control | target (whole letter) | target P11-13 |
+|---|---|---|---|
+| tokens | 1,641 | 1,835 | 319 (309 cipher groups) |
+| agrees (graded C) | 1,461, 100.0% correct | 1,438 | 228 C + 36 H |
+| single occurrence, both OCR boundaries (M) | 50, 80.0% correct | 89 | inside M |
+| conflict with same group elsewhere (M) | 55, 7.3% correct | 93 | inside M |
+| doubtful repaired (I) | 44, 100.0% correct | 15 | 2 |
+| key values right | 182/198, 91.9% | 248 values | |
+
+**Grades, P11-13 (319 tokens):** H 36 (Tomokiyo: e 18/42/56/93, the 407, and 105), C 228, I 2
+(`s5`->55 a, `4-35`->435 us), M 32, U 11; 10 tokens are not cipher groups (parenthesised
+numerals printed in clear, e.g. "(16)" sail, "(27)" sail, and a stray "(227"). Before: H 36 /
+M 27 / U 256.
+
+**Plain sense (as printed, spelling kept).**
+1. 20 April, before Cadiz: the Spanish ships in the Carraca are about [28] sail, no topmast up nor
+   rigged, ships in the harbour mouth ready to sink, new platforms, guns and chains, as if to oppose
+   an attempt; the merchants examined say the passage into the Carraca is a winding channel.
+2. Letter from Thurloe's agent at Lisbon: the King of Portugal has signed the treaty, varied in
+   the matter of religion; the money is in the agent's possession but not to be remitted until the
+   Protector's acceptance is obtained; he has given his word to write to the Protector for consent
+   to letters giving assurance not to oppose any of the king's fleets.
+3. 20 May: under sail for Lisbon with the better ships, the rear-admiral left with [16] sail of
+   frigates before Cadiz; the Phenix sent ahead to bring the agent aboard "to consult how to manage
+   our business"; about [27] sail with fire ships and victuallers; hoping to meet Thurloe's
+   commands on the way.
+
+**Distinctive phrases for the verifier:** "the passage into the Carracaes is a winding channell";
+"until the protector's acceptance was obteyned"; "to obteyne letters for us to give assurance not
+to oppose any of his fleets"; "the Phenix before to Lisbon to get the agent on board us"; "God
+guide us for the best"; "fire ships and victuallers included". Identifiers: Birch, Thurloe State
+Papers vol. 5 (1742) pp. 67-69, MS vol. xxxviii.
+
+**Where it was not found / not read.** Groups still unread or unconfirmed in P11-13 (M/U, see
+`reading_P11-13.txt`): L5730 `^9?`, `193*11?` (examined), `3°6?` (march, printed "march ants" =
+merchants); L5733 437 456 439 244 442, where the print's "make the work very hard and besides"
+does not align one-to-one; L5736 `7218`, `*8.5?`; L5870 437 (until/make), `358,39.?`; L5874 239,
+375 (fixt/past), 415; L5877 358; L5880 402; L5962 `234,253?`, 14, 610, `211,25?`; L5965 `6407`, 13;
+L5967 156 308 129 228 (one occurrence each); L5971 62, 210; L5975 317; L5978 `136407?`,
+`24458?`, `404431?` (merged groups), 25; L5981 54, 59. The printed decipherment is the
+contemporary one as Birch printed it; where it and the key disagree (e.g. 437) this pass records
+the disagreement and does not choose. This pass did not search any other edition or catalogue
+and made no novelty judgement.
+
+**Suggestions (not done):** (a) the other keyed letters (P9, P14, P15, P17) and several unkeyed
+rows show the same interlinear layout and can go through `tools/interlinear_align.py` unchanged;
+(b) a blind run of `tools/nomenclator_anneal.py` on this letter, scored against the printed
+decipherment, would be a real-data benchmark for the solver.

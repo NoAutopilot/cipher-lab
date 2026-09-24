@@ -1,0 +1,1836 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+5707	0	APRI	clear				clear
+5707	1	L	num	1		w	conflict:p
+5707	2	L	num	1		e	conflict:p
+5707	3	20th,	doubtful			anchor	doubtful
+5707	4	452	num	452		e	conflict:wee
+5707	5	115	num	115		d	single-segment
+5707	6	iS	clear				clear
+5707	7	ir	clear				clear
+5707	8	133	num	133		before	agrees
+5707	9	501	num	501		cadiz	agrees
+5707	10	105	num	105		and	agrees
+5707	11	44.6	doubtful			review	doubtful
+5707	12	42	num	42		e	agrees
+5707	13	39	num	39		d	agrees
+5707	14	407	num	407		the	agrees
+5707	15	i	num	1		p	agrees
+5707	16	19	num	19		o	agrees
+5707	17	23	num	23		l	conflict:f
+5707	18	6	num	6		t	agrees
+5707	19	26	num	26		u	agrees
+5707	20	12	num	12		r	agrees
+5707	21	42	num	42		e	agrees
+5707	22	p.	clear				clear
+5707	23	-eg.	clear				clear
+5710	0	34.3	doubtful		343	of	repaired
+5710	1	411	num	411		their	agrees
+5710	2	494-	doubtful			hips	doubtful
+5710	3	458	num	458		which	agrees
+5710	4	114	num	114		are	agrees
+5710	5	7	num	7		a	agrees
+5710	6	4	num	4		b	agrees
+5710	7	19	num	19		o	agrees
+5710	8	45	num	45		u	agrees
+5710	9	5°	num	50		t	agrees
+5710	10	(28)	clear				clear
+5710	11	400	num	400		faile	agrees
+5710	12	410	num	410		they	agrees
+5710	13	28i	num	281		y	conflict:ly
+5710	14	251	num	251		in	agrees
+5710	15	407	num	407		the	agrees
+5710	16	9	num	9		c	agrees
+5710	17	31	num	31		a	agrees
+5710	18	12	num	12		r	agrees
+5710	19	54	num	54		r	agrees
+5710	20	55	num	55		a	agrees
+5714	0	28	num	28		c	agrees
+5714	1	65	num	65		c	conflict:m
+5714	2	31	num	31		a	agrees
+5714	3	18	num	18		e	agrees
+5714	4	S9	doubtful		59	s	repaired
+5714	5	3Z3	doubtful		323	noe	repaired
+5714	6	5°	num	50		t	agrees
+5714	7	3°	num	30		o	agrees
+5714	8	i	num	1		p	agrees
+5714	9	3*5	doubtful			mail	doubtful
+5714	10	26	num	26		u	agrees
+5714	11	47	num	47		p	agrees
+5714	12	335	num	335		nor	agrees
+5714	13	54	num	54		r	agrees
+5714	14	49	num	49		i	agrees
+5714	15	2°	num	20		g	agrees
+5714	16	4^	doubtful			g	doubtful
+5714	17	42	num	42		e	agrees
+5714	18	39	num	39		d	agrees
+5714	19	4*3	doubtful		413	there	repaired
+5714	20	281	num	281		ly	agrees
+5714	21	l8	num	18		e	agrees
+5714	22	5°	num	50		t	agrees
+5714	23	2	num	2		h	agrees
+5714	24	(3)	clear				clear
+5718	0	494	num	494		fhips	agrees
+5718	1	251	num	251		in	agrees
+5718	2	407	num	407		the	agrees
+5718	3	16	num	16		m	agrees
+5718	4	19	num	19		o	agrees
+5718	5	45	num	45		u	agrees
+5718	6	6	num	6		t	agrees
+5718	7	2	num	2		h	agrees
+5718	8	343	num	343		of	agrees
+5718	9	407	num	407		the	agrees
+5718	10	247	num	247		harbor	single-segment
+5718	11	196	num	196		for	agrees
+5718	12	404	num	404		to	agrees
+5718	13	25	num	25		f	agrees
+5718	14	49	num	49		i	agrees
+5718	15	27	num	27		n	agrees
+5718	16	25	num	25		k	conflict:f
+5718	17	105	num	105		and	agrees
+5718	18	350	num	350		other	agrees
+5718	19	222	num	222		great	agrees
+5718	20	I	num	1		p	agrees
+5718	21	54	num	54		r	agrees
+5718	22	$6	doubtful		56	e	repaired
+5722	0	47	num	47		p	agrees
+5722	1	31	num	31		a	agrees
+5722	2	103	num	103		r	agrees
+5722	3	7	num	7		a	agrees
+5722	4	6	num	6		t	agrees
+5722	5	8	num	8		i	agrees
+5722	6	30	num	30		o	agrees
+5722	7	27	num	27		n	agrees
+5722	8	25	num	25		s	agrees
+5722	9	343	num	343		of	agrees
+5722	10	216	num	216		guns	single-segment
+5722	11	105	num	105		and	agrees
+5722	12	9	num	9		c	agrees
+5722	13	2	num	2		h	agrees
+5722	14	7	num	7		a	agrees
+5722	15	8	num	8		i	agrees
+5722	16	27	num	27		n	agrees
+5722	17	90	num	90		s	agrees
+5722	18	105	num	105		and	agrees
+5722	19	328	num	328		ne	single
+5722	20	47	num	47		p	agrees
+5722	21	5	num	5		l	agrees
+5722	22	31	num	31		a	agrees
+5722	23	50	num	50			null-or-unaligned
+5722	24	29	num	29		t	single-segment
+5722	25	19	num	19		o	agrees
+5722	26	54	num	54		r	agrees
+5726	0	48	num	48		m	agrees
+5726	1	23	num	23		s	agrees
+5726	2	31	num	31		a	agrees
+5726	3	59	num	59		f	agrees
+5726	4	37	num	37		h	agrees
+5726	5	l9	num	19		o	agrees
+5726	6	55	num	55		a	agrees
+5726	7	I03	num	103		r	agrees
+5726	8	42	num	42		e	agrees
+5726	9	4°4	num	404		to	agrees
+5726	10	363	num	363		oppofe	agrees
+5726	11	3l	num	31		a	agrees
+5726	12	27	num	27		n	agrees
+5726	13	55	num	55		a	agrees
+5726	14	6	num	6		t	agrees
+5726	15	5°	num	50		t	agrees
+5726	16	42	num	42		e	agrees
+5726	17	16	num	16		m	agrees
+5726	18	1	num	1		p	agrees
+5726	19	6.	num	6		t	agrees
+5730	0	452	num	452		wee	agrees
+5730	1	234	num	234		have	agrees
+5730	2	31	num	31		a	agrees
+5730	3	33	num	33		l	agrees
+5730	4	^9	doubtful			f	doubtful
+5730	5	30	num	30		o	agrees
+5730	6	56	num	56		e	agrees
+5730	7	I93*11	doubtful			examined	doubtful
+5730	8	407	num	407		the	agrees
+5730	9	3°6	num	306		march	single-segment
+5730	10	3l	num	31		a	agrees
+5730	11	27	num	27		n	agrees
+5730	12	6	num	6		t	agrees
+5730	13	9°	num	90		s	agrees
+5730	14	105	num	105		and	agrees
+5730	15	350	num	350		other	agrees
+5730	16	23	num	23		s	agrees
+5730	17	105	num	105		and	agrees
+5730	18	410	num	410		they	agrees
+5730	19	7	num	7		a	agrees
+5730	20	5	num	5		l	agrees
+5730	21	33	num	33		l	agrees
+5733	0	3GO	clear				clear
+5733	1	437	num	437		make	single-segment
+5733	2	456	num	456		the	single-segment
+5733	3	439	num	439		work	conflict:very
+5733	4	244	num	244		very	conflict:hard
+5733	5	105	num	105		hard	conflict:and
+5733	6	442	num	442		andbe	single-segment
+5733	7	25	num	25		f	agrees
+5733	8	49	num	49		i	agrees
+5733	9	p	clear				clear
+5733	10	56	num	56		e	agrees
+5733	11	90	num	90		s	agrees
+5733	12	412	num	412		this	agrees
+5733	13	407	num	407		the	agrees
+5733	14	368	num	368		paff	agrees
+5733	15	7	num	7		a	agrees
+5733	16	20	num	20		g	agrees
+5733	17	18	num	18		e	agrees
+5733	18	251	num	251		in	agrees
+5733	19	404	num	404		to	agrees
+5733	20	407	num	407		the	agrees
+5733	21	9	num	9		c	agrees
+5736	0	7	num	7		a	agrees
+5736	1	12	num	12		r	agrees
+5736	2	54	num	54		r	agrees
+5736	3	31	num	31		a	agrees
+5736	4	28	num	28		c	agrees
+5736	5	66	num	66		c	agrees
+5736	6	83	num	83		a	agrees
+5736	7	93	num	93		e	agrees
+5736	8	90	num	90		s	agrees
+5736	9	259	num	259		is	agrees
+5736	10	7218	doubtful			awi	doubtful
+5736	11	27	num	27		n	agrees
+5736	12	80	num	80		d	agrees
+5736	13	49	num	49		i	agrees
+5736	14	52	num	52		n	agrees
+5736	15	75	num	75		g	agrees
+5736	16	28	num	28		c	agrees
+5736	17	2	num	2		h	agrees
+5736	18	s5	doubtful		55	a	repaired
+5736	19	76	num	76		n	agrees
+5736	20	95	num	95		n	agrees
+5736	21	*8.5	doubtful			el	doubtful
+5736	22	33	num	33		l	agrees
+5736	23	439	num	439		very	agrees
+5739	0	310	num	310		much	agrees
+5739	1	105	num	105		and	agrees
+5739	2	452	num	452		wee	agrees
+5739	3	234	num	234		have	agrees
+5739	4	32O	num	320		not	agrees
+5739	5	346	num	346		one	agrees
+5739	6	16	num	16		m	agrees
+5739	7	7	num	7		a	agrees
+5739	8	27	num	27		n	agrees
+5739	9	406	num	406		that	agrees
+5739	10	151	num	151		can	agrees
+5739	11	40O	num	400		faile	agrees
+5739	12	45	num	45		u	agrees
+5739	13	47	num	47		p	agrees
+5739	14	407	num	407		the	agrees
+5739	15	494	num	494		fhips	agrees
+5739	16	254	num	254		if	single-segment
+5739	17	326	num	326		none	single-segment
+5739	18	165	num	165		did	agrees
+5739	19	362.	num	362		oppofe	single-segment
+5742	0	452	num	452		wee	agrees
+5742	1	165	num	165		did	agrees
+5742	2	28.2	doubtful			long	doubtful
+5742	3	446	num	446		view	single-segment
+5742	4	407	num	407		the	agrees
+5742	5	374	num	374		place	agrees
+5742	6	105	num	105		and	agrees
+5742	7	494	num	494		ihips	conflict:fhips
+5742	8	404	num	404		to	agrees
+5742	9	208	num	208		find	single
+5742	10	7	num	7		a	agrees
+5742	11	y6	doubtful		76	n	repaired
+5742	12	30	num	30		o	agrees
+5742	13	47	num	47		p	agrees
+5742	14	78	num	78		p	single
+5742	15	88	num	88		o	single
+5742	16	54	num	54		r	agrees
+5742	17	50	num	50		t	agrees
+5742	18	26	num	26		u	agrees
+5742	19	52	num	52		n	agrees
+5742	20	49	num	49		i	agrees
+5742	21	6	num	6		t	agrees
+5742	22	8	num	8		i	agrees
+5745	0	18	num	18		e	agrees
+5745	1	196	num	196		for	agrees
+5745	2	23	num	23		f	agrees
+5745	3	56	num	56		e	agrees
+5745	4	12	num	12		r	agrees
+5745	5	45	num	45		v	agrees
+5745	6	77	num	77		i	agrees
+5745	7	28	num	28		c	agrees
+5745	8	42	num	42		e	agrees
+5745	9	133	num	133		before	agrees
+5745	10	452	num	452		wee	agrees
+5745	11	453	num	453		would	agrees
+5745	12	9	num	9		c	agrees
+5745	13	19	num	19		o	agrees
+5745	14	16	num	16		m	agrees
+5745	15	18	num	18		e	agrees
+5745	16	404	num	404		to	agrees
+5745	17	105	num	105		a	conflict:and
+5745	18	384	num	384		queilion	single-segment
+5745	19	105	num	105		and	agrees
+5745	20	107	num	107		at	agrees
+5745	21	5	num	5		l	agrees
+5745	22	18	num	18		e	agrees
+5748	0	27	num	27		n	agrees
+5748	1	20	num	20		g	agrees
+5748	2	50	num	50		t	agrees
+5748	3	37	num	37		h	agrees
+5748	4	107	num	107		c	conflict:at
+5748	5	7	num	7		a	agrees
+5748	6	152	num	152		councel	single-segment
+5748	7	343	num	343		of	agrees
+5748	8	449	num	449		warre	single-segment
+5748	9	258	num	258		it	agrees
+5748	10	457	num	457		was	agrees
+5748	11	26	num	26		v	agrees
+5748	12	30	num	30		o	agrees
+5748	13	50	num	50		t	agrees
+5748	14	1811	doubtful			ed	doubtful
+5748	15	107	num	107		at	agrees
+5748	16	412	num	412		this	agrees
+5748	17	408	num	408		tyme	agrees
+5748	18	320	num	320		not	agrees
+5748	19	404	num	404		to	agrees
+5751	0	4	num	4		b	agrees
+5751	1	42	num	42		e	agrees
+5751	2	56	num	56		e	agrees
+5751	3	31	num	31		a	agrees
+5751	4	6	num	6		t	agrees
+5751	5	so	clear				clear
+5751	6	9Z	doubtful			t	doubtful
+5751	7	92	num	92		e	single
+5751	8	9J	doubtful			mt	doubtful
+5751	9	56	num	56		e	agrees
+5751	10	80	num	80		d	agrees
+5751	11	452	num	452		wee	agrees
+5751	12	240	num	240		had	agrees
+5751	13	414	num	414		then	agrees
+5751	14	401	num	401		fome	agrees
+5751	15	166	num	166		debate	agrees
+5751	16	343	num	343		of	agrees
+5751	17	522	num	522		gibraker	single-segment
+5751	18	105	num	105		and	agrees
+5751	19	413	num	413		there	single-segment
+5751	20	31	num	31		a	agrees
+5751	21	I	num	1		p	agrees
+5751	22	47	num	47		p	agrees
+5755	0	42	num	42		e	agrees
+5755	1	7	num	7		a	agrees
+5755	2	I2	num	12		r	agrees
+5755	3	93	num	93		e	agrees
+5755	4	JI	clear				clear
+5755	5	3Z3	doubtful			dno	doubtful
+5755	6	222	num	222		great	agrees
+5755	7	48	num	48		m	agrees
+5755	8	8	num	8		i	agrees
+5755	9	27	num	27		n	agrees
+5755	10	11	num	11		d	agrees
+5755	11	404	num	404		to	agrees
+5755	12	258	num	258		it	agrees
+5755	13	251	num	251		in	agrees
+5755	14	54	num	54		r	agrees
+5755	15	93	num	93		e	agrees
+5755	16	20	num	20		g	agrees
+5755	17	7	num	7		a	agrees
+5755	18	12	num	12		r	agrees
+5755	19	39	num	39		d	agrees
+5755	20	343	num	343		of	agrees
+5755	21	244	num	244		hard	single-segment
+5755	22	340	num	340		ne	agrees
+5755	23	23	num	23		s	agrees
+5755	24	25	num	25		a	conflict:f
+5759	0	106	num	106		as	agrees
+5759	1	7	num	7		a	agrees
+5759	2	5	num	5		l	agrees
+5759	3	59	num	59		i	conflict:f
+5759	4	74	num	74		o	agrees
+5759	5	18	num	18		e	agrees
+5759	6	451	num	451		want	agrees
+5759	7	343	num	343		of	agrees
+5759	8	279	num	279		land	single-segment
+5759	9	299	num	299		men	agrees
+5759	10	J4	doubtful		14	f	repaired
+5759	11	19	num	19		o	agrees
+5759	12	I2	num	12		r	agrees
+5759	13	16	num	16		m	agrees
+5759	14	18	num	18		e	agrees
+5759	15	11	num	11		d	agrees
+5759	16	105	num	105		and	agrees
+5759	17	349	num	349		officer	agrees
+5759	18	90	num	90		s	agrees
+5759	19	105	num	105		and	agrees
+5759	20	52/45	doubtful			nu	doubtful
+5759	21	48	num	48		m	agrees
+5759	22	36	num	36		b	agrees
+5763	0	93	num	93		e	agrees
+5763	1	12	num	12		r	agrees
+5763	2	23	num	23		s	agrees
+5763	3	343	num	343		of	agrees
+5763	4	299	num	299		men	agrees
+5763	5	404	num	404		to	agrees
+5763	6	7	num	7		a	agrees
+5763	7	5	num	5		l	agrees
+5763	8	33	num	33		l	agrees
+5763	9	458	num	458		which	agrees
+5763	10	114	num	114		are	agrees
+5763	11	12	num	12		r	agrees
+5763	12	18	num	18		e	agrees
+5763	13	7	num	7		a	agrees
+5763	14	69	num	69		l	agrees
+5763	15	81	num	81		l	single-segment
+5763	16	357	num	357		obftacle	single-segment
+5763	17	90	num	90		s	agrees
+5763	18	7	num	7		a	agrees
+5763	19	23	num	23		s	agrees
+5763	20	478	num	478		you	agrees
+5763	21	309	num	309		may	agrees
+5763	22	260	num	260		judge	agrees
+5763	23	'26	num	26		u	agrees
+5763	24	1	num	1		p	agrees
+5767	0	47	num	47		p	agrees
+5767	1	19	num	19		o	agrees
+5767	2	27	num	27		n	agrees
+5767	3	407	num	407		the	agrees
+5767	4	11	num	11		d	agrees
+5767	5	42	num	42		e	agrees
+5767	6	23	num	23		f	agrees
+5767	7	28	num	28		c	agrees
+5767	8	12	num	12		r	agrees
+5767	9	8	num	8		i	agrees
+5767	10	1	num	1		p	agrees
+5767	11	6	num	6		t	agrees
+5767	12	7	num	7		i	conflict:a
+5767	13	30	num	30		o	agrees
+5767	14	27	num	27		n	agrees
+5767	15	343	num	343		of	agrees
+5767	16	407	num	407		the	agrees
+5767	17	374	num	374		place	agrees
+5767	18	407	num	407		the	agrees
+5767	19	52	num	52		n	agrees
+5767	20	45	num	45		u	agrees
+5767	21	48	num	48		m	agrees
+5767	22	36	num	36		b	agrees
+5767	23	42	num	42		e	agrees
+5767	24	12	num	12		r	agrees
+5771	0	105	num	105		and	agrees
+5771	1	389	num	389		quality	single-segment
+5771	2	343	num	343		of	agrees
+5771	3	i9	num	19		o	agrees
+5771	4	45	num	45		u	agrees
+5771	5	54	num	54		r	agrees
+5771	6	299.	num	299		men	agrees
+5775	0	105	num	105		and	agrees
+5775	1	404	num	404		to	agrees
+5775	2	90	num	90		f	agrees
+5775	3	7	num	7		a	agrees
+5775	4	24	num	24		y	agrees
+5775	5	407	num	407		the	agrees
+5775	6	50	num	50		t	agrees
+5775	7	73	num	73		r	agrees
+5775	8	53	num	53		u	agrees
+5775	9	68	num	68		t	agrees
+5775	10	37	num	37		h	agrees
+5775	11	407	num	407		the	agrees
+5775	12	23	num	23		f	agrees
+5775	13	18	num	18		e	agrees
+5775	14	7	num	7		a	agrees
+5775	15	299	num	299		men	agrees
+5775	16	114	num	114		are	agrees
+5775	17	320	num	320		not	agrees
+5775	18	196	num	196		for	agrees
+5775	19	279	num	279		landf	conflict:land
+5775	20	§Q	clear				clear
+5775	21	42	num	42		e	agrees
+5775	22	12	num	12		r	agrees
+5779	0	16	num	16		v	conflict:m
+5779	1	8	num	8		i	agrees
+5779	2	28	num	28		e	conflict:c
+5779	3	56441	doubtful			eun	doubtful
+5779	4	5	num	5		l	agrees
+5779	5	93	num	93		e	agrees
+5779	6	S9	doubtful		59	f	repaired
+5779	7	9°	num	90		s	agrees
+5779	8	258	num	258		it	agrees
+5779	9	36	num	36		b	agrees
+5779	10	5693	doubtful			ee	doubtful
+5779	11	7	num	7		a	agrees
+5779	12	23	num	23		f	agrees
+5779	13	45	num	45		u	agrees
+5779	14	39	num	39		d	agrees
+5779	15	7l	num	71		d	agrees
+5779	16	93	num	93		e	agrees
+5779	17	27	num	27		n	agrees
+5779	18	47	num	47		p	agrees
+5779	19	33	num	33		l	agrees
+5779	20	26	num	26		u	agrees
+5779	21	52	num	52		n	agrees
+5779	22	n	clear				clear
+5779	23	19	num	19		e	conflict:o
+5779	24	13	num	13		r	single
+5783	0	410	num	410		they	agrees
+5783	1	114	num	114		are	agrees
+5783	2	414	num	414		then	agrees
+5783	3	440	num	440		valyant	single-segment
+5783	4	310	num	310		much	agrees
+5783	5	4	num	4		b	agrees
+5783	6	94	num	94		u	agrees
+5783	7	gy	clear				clear
+5783	8	323	num	323		tnot	conflict:noe
+5783	9	404	num	404		to	agrees
+5783	10	62	num	62		b	agrees
+5783	11	56	num	56		e	agrees
+5783	12	93	num	93		e	agrees
+5783	13	54	num	54		r	agrees
+5783	14	26	num	26		u	agrees
+5783	15	33	num	33		l	agrees
+5783	16	18	num	18		e	agrees
+5783	17	11	num	11		d	agrees
+5783	18	105	num	105		and	agrees
+5783	19	265	num	265		kep	single-segment
+5783	20	6	num	6		t	agrees
+5783	21	251	num	251		in	agrees
+5783	22	7	num	7		a	agrees
+5783	23	27	num	27		n	agrees
+5786	0	34	num	34		y	single-segment
+5786	1	221	num	221		government	single-segment
+5786	2	345	num	345		on	agrees
+5786	3	25	num	25		f	agrees
+5786	4	37	num	37		h	agrees
+5786	5	30	num	30		o	agrees
+5786	6	31	num	31		a	agrees
+5786	7	5493.	doubtful			re	doubtful
+5790	0	335	num	335		nor	agrees
+5790	1	234	num	234		have	agrees
+5790	2	480	num	480		your	agrees
+5790	3	23	num	23		f	agrees
+5790	4	93	num	93		e	agrees
+5790	5	31	num	31		a	agrees
+5790	6	349	num	349		officer	agrees
+5790	7	90	num	90		s	agrees
+5790	8	310	num	310		much	agrees
+5790	9	90	num	90		f	agrees
+5790	10	6	num	6		t	agrees
+5790	11	19	num	19		o	agrees
+5790	12	7	num	7		a	agrees
+5790	13	9	num	9		r	conflict:c
+5790	14	25	num	25		s	agrees
+5790	15	404	num	404		to	agrees
+5790	16	200	num	200		fight	single-segment
+5790	17	345	num	345		on	agrees
+5790	18	S9	doubtful		59	f	repaired
+5790	19	2	num	2		h	agrees
+5790	20	19	num	19		o	agrees
+5790	21	55	num	55		a	agrees
+5790	22	73	num	73		r	agrees
+5790	23	5s-	doubtful			e	doubtful
+5793	0	479	num	479		yet	single-segment
+5793	1	412	num	412		this	agrees
+5793	2	456	num	456		work	conflict:the
+5793	3	259	num	259		is	agrees
+5793	4	320	num	320		not	agrees
+5793	5	433	num	433		through	single-segment
+5793	6	27	num	27		n	agrees
+5793	7	7	num	7		a	agrees
+5793	8	25	num	25		f	agrees
+5793	9	49	num	49		i	agrees
+5793	10	39	num	39		d	agrees
+5793	11	345	num	345		on	agrees
+5793	12	166.	num	166		debate	agrees
+5807	0	an	clear				clear
+5807	1	anchor,	clear				clear
+5807	2	atTanger	clear				clear
+5807	3	8th	clear				clear
+5807	4	May)	clear				clear
+5807	5	May	clear				clear
+5807	6	13th	doubtful			adl	doubtful
+5807	7	8	num	8		i	agrees
+5807	8	165	num	165		did	agrees
+5807	9	405	num	405		take	agrees
+5807	10	(2)	clear				clear
+5807	11	211	num	211		frigot	agrees
+5807	12	23	num	23		s	agrees
+5807	13	105	num	105		and	agrees
+5807	14	466	num	466		view	single-segment
+5807	15	n	clear				clear
+5807	16	524	num	524		gibral	agrees
+5807	17	410	num	410		they	agrees
+5807	18	165	num	165		did	agrees
+5811	0	367	num	367		p	single
+5811	1	4-35	doubtful			ermitus	doubtful
+5811	2	404	num	404		to	agrees
+5811	3	400	num	400		faile	agrees
+5811	4	95199°	doubtful			clof	doubtful
+5811	5	93	num	93		e	agrees
+5811	6	36	num	36		b	agrees
+5811	7	24	num	24		y	agrees
+5811	8	4°7	num	407		the	agrees
+5811	9	374	num	374		place	agrees
+5811	10	44	num	44		u	conflict:k
+5811	11	1	num	1		n	conflict:p
+5811	12	4i6	num	416		tell	agrees
+5811	13	452	num	452		wee	agrees
+5811	14	25	num	25		f	agrees
+5811	15	68	num	68		t	agrees
+5811	16	19	num	19		o	agrees
+5811	17	3°	num	30		o	agrees
+5811	18	J	clear				clear
+5811	19	1	num	1		d	conflict:p
+5811	20	343	num	343		of	agrees
+5811	21	7	num	7		a	agrees
+5811	22	20	num	20		g	agrees
+5815	0	31	num	31		a	agrees
+5815	1	49	num	49		i	agrees
+5815	2	52	num	52		n	agrees
+5815	3	40423	doubtful			tof	doubtful
+5815	4	18	num	18		e	agrees
+5815	5	55	num	55		a	agrees
+5815	6	105	num	105		and	agrees
+5815	7	414	num	414		thenthe	conflict:then
+5815	8	41	num	41		i	single
+5815	9	1	num	1		r	conflict:p
+5815	10	7	num	7		a	agrees
+5815	11	52	num	52		n	agrees
+5815	12	20	num	20		g	agrees
+5815	13	42	num	42		e	agrees
+5815	14	12	num	12		r	agrees
+5815	15	457	num	457		was	agrees
+5815	16	404	num	404		to	agrees
+5815	17	23	num	23		f	agrees
+5815	18	167	num	167		ma	single
+5815	19	33	num	33		l	agrees
+5815	20	69	num	69		l	agrees
+5815	21	I	num	1		p	agrees
+5815	22	26	num	26		u	agrees
+5815	23	54	num	54		r	agrees
+5819	0	i	num	1		p	agrees
+5819	1	19	num	19		o	agrees
+5819	2	25.	num	25		s	agrees
+5819	3	May	clear				clear
+5819	4	14th	doubtful			i	doubtful
+5819	5	42	num	42			null-or-unaligned
+5819	6	457	num	457		was	agrees
+5819	7	107	num	107		at	agrees
+5819	8	407	num	407		the	agrees
+5819	9	495	num	495		fleete	conflict:fleet
+5819	10	again	clear				clear
+5819	11	in	clear				clear
+5819	12	Tanger	clear				clear
+5819	13	Bay	clear				clear
+5819	14	452	num	452		wee	agrees
+5819	15	23	num	23		f	agrees
+5819	16	18	num	18		e	agrees
+5819	17	27	num	27		n	agrees
+5819	18	50	num	50		t	agrees
+5819	19	407	num	407		the	agrees
+5823	0	54	num	54		r	agrees
+5823	1	45	num	45		u	agrees
+5823	2	36	num	36		b	agrees
+5823	3	43	num	43		y	agrees
+5823	4	105	num	105		and	agrees
+5823	5	407	num	407		the	agrees
+5823	6	52	num	52		n	agrees
+5823	7	7	num	7		a	agrees
+5823	8	76	num	76		n	agrees
+5823	9	6	num	6		t	agrees
+5823	10	21	num	21		w	agrees
+5823	11	49	num	49		i	agrees
+5823	12	50	num	50		t	agrees
+5823	13	28	num	28		c	agrees
+5823	14	2	num	2		h	agrees
+5823	15	404	num	404		to	agrees
+5823	16	31	num	31		a	agrees
+5823	17	12	num	12		r	agrees
+5823	18	46	num	46		g	agrees
+5823	19	93	num	93		e	agrees
+5823	20	8	num	8		i	agrees
+5823	21	12	num	12		r	agrees
+5823	22	42	num	42		e	agrees
+5823	23	25	num	25		s	agrees
+5823	24	with	clear				clear
+5823	25	Mr.	clear				clear
+5827	0	Browne	clear				clear
+5827	1	105	num	105		and	agrees
+5827	2	404	num	404		to	agrees
+5827	3	396	num	396		range	single-segment
+5827	4	407	num	407		the	agrees
+5827	5	(500	clear				clear
+5827	6	259	num	259		spayne	conflict:is
+5827	7	2)	clear				clear
+5827	8	148	num	148		i	single-segment
+5827	9	196	num	196		scoaftfor	conflict:for
+5827	10	1	num	1		p	agrees
+5827	11	8	num	8		i	agrees
+5827	12	12	num	12		r	agrees
+5827	13	7	num	7		a	agrees
+5827	14	6	num	6		t	agrees
+5827	15	25	num	25		s	agrees
+5827	16	106	num	106		as	agrees
+5827	17	410	num	410		they	agrees
+5827	18	returne.	clear				clear
+5842	0	ture	clear				clear
+5842	1	then	clear				clear
+5842	2	wee	clear				clear
+5842	3	left	clear				clear
+5842	4	him	clear				clear
+5842	5	;	clear				clear
+5842	6	only	clear				clear
+5842	7	410	num	410		they	agrees
+5842	8	12	num	12		r	agrees
+5842	9	93	num	93		e	agrees
+5842	10	1	num	1		p	agrees
+5842	11	19	num	19		o	agrees
+5842	12	54	num	54		r	agrees
+5842	13	50	num	50		t	agrees
+5842	14	406	num	406		that	agrees
+5842	15	239	num	239		he	agrees
+5842	16	284	num	284		looke	single-segment
+5842	17	25	num	25		s	agrees
+5842	18	196	num	196		for	agrees
+5842	19	(16)	clear				clear
+5842	20	400	num	400		faile	agrees
+5842	21	343	num	343		of	agrees
+5845	0	75	num	75		g	agrees
+5845	1	31	num	31		a	agrees
+5845	2	5	num	5		l	agrees
+5845	3	33	num	33		l	agrees
+5845	4	49	num	49		i	agrees
+5845	5	l8	num	18		e	agrees
+5845	6	23.404	doubtful			sto	doubtful
+5845	7	9	num	9		c	agrees
+5845	8	l9	num	19		o	agrees
+5845	9	l6	num	16		m	agrees
+5845	10	5$	doubtful			e	doubtful
+5845	11	404	num	404		to	agrees
+5845	12	501	num	501		cadiz	agrees
+5845	13	197	num	197		from	agrees
+5845	14	407	num	407		the	agrees
+5845	15	5°4-	doubtful			ftreitsmouth	doubtful
+5856	0	83	num	83		a	agrees
+5856	1	286	num	286		lett	agrees
+5856	2	183	num	183		er	agrees
+5856	3	197	num	197		from	agrees
+5856	4	480	num	480		your	agrees
+5856	5	31	num	31		a	agrees
+5856	6	20.	num	20		g	agrees
+5856	7	42	num	42		e	agrees
+5856	8	j6	doubtful			n	doubtful
+5856	9	50	num	50		t	agrees
+5856	10	407	num	407		the	agrees
+5856	11	401	num	401		fome	agrees
+5856	12	343	num	343		of	agrees
+5856	13	258	num	258		it	agrees
+5856	14	457	num	457		was	agrees
+5856	15	406	num	406		that	agrees
+5856	16	407	num	407		the	agrees
+5856	17	270	num	270		kinge	single-segment
+5856	18	343	num	343		of	agrees
+5856	19	509	num	509		portug	single-segment
+5856	20	240.	num	240		had	agrees
+5860	0	$9	doubtful		59	f	repaired
+5860	1	49	num	49		i	agrees
+5860	2	46	num	46		g	agrees
+5860	3	76	num	76		n	agrees
+5860	4	18	num	18		e	agrees
+5860	5	11	num	11		d	agrees
+5860	6	407	num	407		the	agrees
+5860	7	424	num	424		treaty	single-segment
+5860	8	24458	doubtful			which	doubtful
+5860	9	165	num	165		did	agrees
+5860	10	26	num	26		v	agrees
+5860	11	7	num	7		a	agrees
+5860	12	12	num	12		r	agrees
+5860	13	43	num	43		y	agrees
+5860	14	197	num	197		from	agrees
+5860	15	407	num	407		the	agrees
+5860	16	198	num	198		firlt	single-segment
+5860	17	251	num	251		in	agrees
+5860	18	407	num	407		the	agrees
+5860	19	312	num	312		matter	agrees
+5860	20	343	num	343		of	agrees
+5863	0	54	num	54		r	agrees
+5863	1	18	num	18		e	agrees
+5863	2	5	num	5		l	agrees
+5863	3	49	num	49		i	agrees
+5863	4	20	num	20		g	agrees
+5863	5	8	num	8		i	agrees
+5863	6	19	num	19		o	agrees
+5863	7	27	num	27		n	agrees
+5863	8	105	num	105		and	agrees
+5863	9	165	num	165		did	agrees
+5863	10	416	num	416		tell	agrees
+5863	11	435	num	435		us	agrees
+5863	12	2i	num	21		w	agrees
+5863	13	2	num	2		h	agrees
+5863	14	18	num	18		e	agrees
+5863	15	12	num	12		r	agrees
+5863	16	42	num	42		e	agrees
+5863	17	77	num	77		i	agrees
+5863	18	95.	num	95		n	agrees
+5866	0	406	num	406		that	agrees
+5866	1	407	num	407		the	agrees
+5866	2	301	num	301		money	agrees
+5866	3	457	num	457		was	agrees
+5866	4	251	num	251		in	agrees
+5866	5	231	num	231		his	agrees
+5866	6	1	num	1		p	agrees
+5866	7	19	num	19		o	agrees
+5866	8	25	num	25		f	agrees
+5866	9	18	num	18		e	agrees
+5866	10	23	num	23		f	agrees
+5866	11	90	num	90		f	agrees
+5866	12	8	num	8		i	agrees
+5866	13	30	num	30		o	agrees
+5866	14	2	num	2		n	conflict:h
+5866	15	427	num	427		though	single-segment
+5866	16	239	num	239		he	agrees
+5866	17	457	num	457		was	agrees
+5866	18	320	num	320		not	agrees
+5866	19	404	num	404		to	agrees
+5866	20	103	num	103		r	agrees
+5866	21	93	num	93		e	agrees
+5866	22	16	num	16		m	agrees
+5870	0	77	num	77		i	agrees
+5870	1	6	num	6		t	agrees
+5870	2	50	num	50		t	agrees
+5870	3	49	num	49		i	agrees
+5870	4	97	num	97		t	conflict:e
+5870	5	437	num	437		until	conflict:make
+5870	6	407	num	407		the	agrees
+5870	7	600	num	600		protector	agrees
+5870	8	59	num	59		s	agrees
+5870	9	7	num	7		a	agrees
+5870	10	9	num	9		c	agrees
+5870	11	28	num	28		c	agrees
+5870	12	18	num	18		e	agrees
+5870	13	47	num	47		p	agrees
+5870	14	50	num	50		t	agrees
+5870	15	31	num	31		a	agrees
+5870	16	27	num	27		n	agrees
+5870	17	28	num	28		c	agrees
+5870	18	93	num	93		e	agrees
+5870	19	457	num	457		was	agrees
+5870	20	358,39.	doubtful			obteyned	doubtful
+5874	0	406	num	406		that	agrees
+5874	1	239	num	239		hee	conflict:he
+5874	2	240	num	240		had	agrees
+5874	3	375	num	375		fixt	conflict:paft
+5874	4	231	num	231		his	agrees
+5874	5	21	num	21		w	agrees
+5874	6	19	num	19		o	agrees
+5874	7	12	num	12		r	agrees
+5874	8	II	num	11		d	agrees
+5874	9	196	num	196		for	agrees
+5874	10	(2)	clear				clear
+5874	11	415	num	415		thinge	single-segment
+5874	12	90.	num	90		s	agrees
+5874	13	(I.)	clear				clear
+5874	14	404	num	404		to	agrees
+5874	15	21	num	21		w	agrees
+5874	16	73	num	73		r	agrees
+5874	17	49	num	49		i	agrees
+5874	18	50	num	50		t	agrees
+5874	19	18	num	18		e	agrees
+5874	20	404	num	404		to	agrees
+5877	0	407	num	407		the	agrees
+5877	1	600	num	600		protector	agrees
+5877	2	196	num	196		for	agrees
+5877	3	231	num	231		his	agrees
+5877	4	28	num	28		c	agrees
+5877	5	19	num	19		o	agrees
+5877	6	27	num	27		r	conflict:n
+5877	7	90	num	90		f	agrees
+5877	8	18	num	18		e	agrees
+5877	9	52	num	52		n	agrees
+5877	10	6.	num	6		t	agrees
+5877	11	(II.)	clear				clear
+5877	12	404	num	404		to	agrees
+5877	13	358	num	358		obteyne	single-segment
+5877	14	286	num	286		lett	agrees
+5877	15	183	num	183		er	agrees
+5877	16	90	num	90		s	agrees
+5877	17	19	num	19		o	agrees
+5877	18	435	num	435		us	agrees
+5877	19	404	num	404		to	agrees
+5877	20	219	num	219		give	agrees
+5877	21	7	num	7		a	agrees
+5880	0	23	num	23		f	agrees
+5880	1	25	num	25		f	agrees
+5880	2	26	num	26		u	agrees
+5880	3	12	num	12		r	agrees
+5880	4	31	num	31		a	agrees
+5880	5	52	num	52		n	agrees
+5880	6	28	num	28		c	agrees
+5880	7	18	num	18		e	agrees
+5880	8	320	num	320		not	agrees
+5880	9	404	num	404		to	agrees
+5880	10	363	num	363		oppofe	agrees
+5880	11	55	num	55		a	agrees
+5880	12	37	num	37		n	conflict:h
+5880	13	58	num	58		y	agrees
+5880	14	343	num	343		of	agrees
+5880	15	231	num	231		his	agrees
+5880	16	495	num	495		fleet	agrees
+5880	17	90	num	90		s	agrees
+5880	18	105	num	105		and	agrees
+5880	19	406	num	406		that	agrees
+5880	20	452	num	452		wee	agrees
+5880	21	402	num	402		fhall	single-segment
+5880	22	59	num	59		f	agrees
+5883	0	18	num	18		e	agrees
+5883	1	27	num	27		n	agrees
+5883	2	II	num	11		d	agrees
+5883	3	407	num	407		the	agrees
+5883	4	600	num	600		proteftor	conflict:protector
+5883	5	23	num	23		s	agrees
+5883	6	286	num	286		lett	agrees
+5883	7	183	num	183		er	agrees
+5883	8	343	num	343		of	agrees
+5883	9	269	num	269		kindnefs	single-segment
+5883	10	458	num	458		which	agrees
+5883	11	239	num	239		he	agrees
+5883	12	165	num	165		did	agrees
+5883	13	264	num	264		know	agrees
+5883	14	452	num	452		wee	agrees
+5883	15	4	num	4		b	agrees
+5883	16	12	num	12		r	agrees
+5883	17	19	num	19		o	agrees
+5883	18	4546	doubtful			ugh	doubtful
+5883	19	26	num	26		t	conflict:u
+5883	20	197	num	197		from	agrees
+5886	0	529	num	529		england	agrees
+5886	1	21862	doubtful			with	doubtful
+5886	2	435	num	435		us	agrees
+5886	3	321	num	321		now	single-segment
+5886	4	407	num	407		the	agrees
+5886	5	50	num	50		t	agrees
+5886	6	54	num	54		r	agrees
+5886	7	yg	clear				clear
+5886	8	68	num	68		t	agrees
+5886	9	2	num	2		h	agrees
+5886	10	259	num	259		is	agrees
+5886	11	452	num	452		we	conflict:wee
+5886	12	165	num	165		did	agrees
+5886	13	90	num	90		f	agrees
+5886	14	18	num	18		e	agrees
+5886	15	27	num	27		n	agrees
+5886	16	n	clear				clear
+5886	17	19	num	19		o	agrees
+5886	18	yg	clear				clear
+5886	19	73	num	73		r	agrees
+5886	20	286	num	286		lett	agrees
+5886	21	183	num	183		er	agrees
+5890	0	343	num	343		of	agrees
+5890	1	9	num	9		c	agrees
+5890	2	12	num	12		r	agrees
+5890	3	18	num	18		e	agrees
+5890	4	11	num	11		d	agrees
+5890	5	93	num	93		e	agrees
+5890	6	27	num	27		n	agrees
+5890	7	66	num	66		c	agrees
+5890	8	§6	doubtful			e	doubtful
+5890	9	404	num	404		to	agrees
+5890	10	230	num	230		him	single-segment
+5890	11	106	num	106		as	agrees
+5890	12	452	num	452		wee	agrees
+5890	13	368	num	368		paff	agrees
+5890	14	11	num	11		d	agrees
+5890	15	198	num	198		firft	conflict:firlt
+5890	16	136	num	136		by	agrees
+5890	17	508	num	508		liibon	agrees
+5890	18	105	num	105		and	agrees
+5890	19	239	num	239		he	agrees
+5890	20	165	num	165		did	agrees
+5890	21	32Q	doubtful		320	not	repaired
+5893	0	414	num	414		then	agrees
+5893	1	172	num	172		deliver	single-segment
+5893	2	258406258402	doubtful			itthatitfhoul	doubtful
+5893	3	II	num	11		d	agrees
+5893	4	320	num	320		not	agrees
+5893	5	357	num	357		obftruft	conflict:obftacle
+5893	6	407424	doubtful			thetreate	doubtful
+5893	7	24.	num	24		y	agrees
+5897	0	19	num	19		o	agrees
+5897	1	26	num	26		u	agrees
+5897	2	12	num	12		r	agrees
+5897	3	149	num	149		carriage	single-segment
+5897	4	251	num	251		in	agrees
+5897	5	412	num	412		this	agrees
+5897	6	312	num	312		matter	agrees
+5897	7	259	num	259		is	agrees
+5897	8	439	num	439		very	agrees
+5897	9	difficult	clear				clear
+5897	10	404	num	404		to	agrees
+5897	11	219	num	219		give	agrees
+5897	12	407	num	407		the	agrees
+5897	13	7	num	7		a	agrees
+5897	14	23	num	23		f	agrees
+5897	15	25	num	25		f	agrees
+5897	16	26	num	26		u	agrees
+5897	17	54	num	54		r	agrees
+5897	18	31	num	31		a	agrees
+5897	19	27	num	27		n	agrees
+5899	0	28	num	28		c	agrees
+5899	1	18	num	18		e	agrees
+5899	2	I	num	1		p	agrees
+5899	3	90	num	90		f	agrees
+5899	4	25	num	25		f	agrees
+5899	5	93	num	93		e	agrees
+5899	6	II	num	11		d	agrees
+5899	7	452	num	452		wee	agrees
+5899	8	234	num	234		have	agrees
+5899	9	323	num	323		noe	agrees
+5899	10	370	num	370		power	single-segment
+5899	11	335	num	335		nor	agrees
+5899	12	114	num	114		are	agrees
+5899	13	452	num	452		wee	agrees
+5899	14	189	num	189		entife	single-segment
+5899	15	II	num	11		d	agrees
+5899	16	404	num	404		to	agrees
+5899	17	215	num	215		go	single-segment
+5899	18	36	num	36		b	agrees
+5899	19	18	num	18		e	agrees
+5899	20	24	num	24		y	agrees
+5899	21	19	num	19		o	agrees
+5899	22	27	num	27		n	agrees
+5902	0	11	num	11		d	agrees
+5902	1	30	num	30		o	agrees
+5902	2	yg	clear				clear
+5902	3	54	num	54		r	agrees
+5902	4	370413	doubtful			powerthere	doubtful
+5902	5	251	num	251		in	agrees
+5902	6	136	num	136		by	agrees
+5902	7	157	num	157		confider	single
+5902	8	262	num	262		inge	agrees
+5902	9	4049	doubtful			t	doubtful
+5902	10	3052	doubtful			ocon	doubtful
+5902	11	23	num	23		f	agrees
+5902	12	18	num	18		e	agrees
+5902	13	17	num	17		q	agrees
+5902	14	2642	doubtful			ue	doubtful
+5902	15	95	num	95		n	agrees
+5902	16	28	num	28		c	agrees
+5902	17	18	num	18		e	agrees
+5902	18	25	num	25		s	agrees
+5902	19	458	num	458		which	agrees
+5906	0	259	num	259		is	agrees
+5906	1	287	num	287		like	agrees
+5906	2	28l	num	281		ly	agrees
+5906	3	404	num	404		to	agrees
+5906	4	4	num	4		b	agrees
+5906	5	93	num	93		e	agrees
+5906	6	18	num	18		e	agrees
+5906	7	136	num	136		by	agrees
+5906	8	159	num	159		delay	single-segment
+5906	9	404	num	404		to	agrees
+5906	10	212	num	212		gett	conflict:get
+5906	11	2	num	2		h	agrees
+5906	12	19	num	19		o	agrees
+5906	13	48	num	48		m	agrees
+5906	14	18	num	18		e	agrees
+5906	15	411	num	411		their	agrees
+5906	16	495	num	495		fleet	agrees
+5906	17	90	num	90		s	agrees
+5906	18	105	num	105		and	agrees
+5906	19	414	num	414		then	agrees
+5906	20	404.	num	404		to	agrees
+5906	21	9	num	9		c	agrees
+5906	22	2	num	2		h	agrees
+5910	0	18	num	18		e	agrees
+5910	1	7	num	7		a	agrees
+5910	2	68	num	68		t	agrees
+5910	3	478	num	478		you	agrees
+5910	4	343	num	343		of	agrees
+5910	5	407	num	407		the	agrees
+5910	6	301	num	301		money	agrees
+5910	7	105	num	105		and	agrees
+5910	8	perhaps	clear				clear
+5910	9	343	num	343		of	agrees
+5910	10	411	num	411		their	agrees
+5910	11	31	num	31		a	agrees
+5910	12	48	num	48		m	agrees
+5910	13	49	num	49		i	agrees
+5910	14	50	num	50		t	agrees
+5910	15	8	num	8		i	agrees
+5910	16	93	num	93		e	agrees
+5910	17	50	num	50		t	agrees
+5910	18	30	num	30		o	agrees
+5910	19	19	num	19		o	agrees
+5910	20	4	num	4		b	agrees
+5910	21	45	num	45		u	agrees
+5910	22	50	num	50		t	agrees
+5914	0	9	num	9		c	agrees
+5914	1	345	num	345		on	agrees
+5914	2	6	num	6		t	agrees
+5914	3	12	num	12		r	agrees
+5914	4	7	num	7		a	agrees
+5914	5	54	num	54		r	agrees
+5914	6	8	num	8		i	agrees
+5914	7	281	num	281		ly	agrees
+5914	8	452	num	452		wee	agrees
+5914	9	264	num	264		know	agrees
+5914	10	262	num	262		inge	agrees
+5914	11	412	num	412		this	agrees
+5914	12	23	num	23		f	agrees
+5914	13	50	num	50		t	agrees
+5914	14	31	num	31		a	agrees
+5914	15	6	num	6		t	agrees
+5914	16	97,	num	97		e	single
+5914	17	343	num	343		of	agrees
+5914	18	404424	doubtful			thetreatet	doubtful
+5914	19	24	num	24		y	agrees
+5914	20	105	num	105		and	agrees
+5914	21	406	num	406		that	agrees
+5914	22	251	num	251		in	agrees
+5918	0	412	num	412		this	agrees
+5918	1	27	num	27		n	agrees
+5918	2	8	num	8		i	agrees
+5918	3	28	num	28		c	agrees
+5918	4	25	num	25		k	conflict:f
+5918	5	93	num	93		e	agrees
+5918	6	343	num	343		of	agrees
+5918	7	408	num	408		tyme	agrees
+5918	8	41b	doubtful			they	doubtful
+5918	9	5	num	5		l	agrees
+5918	10	19	num	19		o	agrees
+5918	11	30	num	30		o	agrees
+5918	12	44	num	44		k	agrees
+5918	13	56	num	56		e	agrees
+5918	14	196	num	196		for	agrees
+5918	15	411	num	411		their	agrees
+5918	16	622	num	622		brazil	single-segment
+5918	17	495	num	495		filver	conflict:fleet
+5918	18	133	num	133		before	agrees
+5918	19	410	num	410		they	agrees
+5918	20	344	num	344		or	agrees
+5918	21	452	num	452		we	conflict:wee
+5922	0	151	num	151		can	agrees
+5922	1	236	num	236		here	single-segment
+5922	2	197	num	197		from	agrees
+5922	3	478	num	478		you	agrees
+5922	4	105	num	105		and	agrees
+5922	5	452	num	452		wee	agrees
+5922	6	4	num	4		b	agrees
+5922	7	42	num	42		e	agrees
+5922	8	8	num	8		i	agrees
+5922	9	27	num	27		n	agrees
+5922	10	20	num	20		g	agrees
+5922	11	107	num	107		at	agrees
+5922	12	5	num	5		l	agrees
+5922	13	93	num	93		e	agrees
+5922	14	7	num	7		a	agrees
+5922	15	23	num	23		f	agrees
+5922	16	26	num	26		u	agrees
+5922	17	12	num	12		r	agrees
+5922	18	21	num	21		w	agrees
+5922	19	49	num	49		i	agrees
+5922	20	50	num	50		t	agrees
+5922	21	2	num	2		h	agrees
+5922	22	407	num	407		the	agrees
+5922	23	495	num	495		fleet	agrees
+5922	24	452	num	452		wee	agrees
+5926	0	428	num	428		thought	agrees
+5926	1	452	num	452		wee	agrees
+5926	2	240	num	240		had	agrees
+5926	3	127	num	127		deliver	conflict:better
+5926	4	215	num	215		goe	conflict:go
+5926	5	133	num	133		before	agrees
+5926	6	508	num	508		liibon	agrees
+5926	7	105	num	105		and	agrees
+5926	8	(as	clear				clear
+5926	9	wee	clear				clear
+5926	10	think	clear				clear
+5926	11	at	clear				clear
+5926	12	prefent)	clear				clear
+5926	13	3942	doubtful			de	doubtful
+5926	14	48	num	48		m	agrees
+5926	15	7	num	7		a	agrees
+5926	16	52	num	52		n	agrees
+5926	17	ri	clear				clear
+5926	18	407	num	407		the	agrees
+5930	0	301	num	301		money	agrees
+5930	1	404	num	404		to	agrees
+5930	2	4	num	4		b	agrees
+5930	3	18	num	18		e	agrees
+5930	4	93	num	93		e	agrees
+5930	5	366	num	366		put	single-segment
+5930	6	345	num	345		on	agrees
+5930	7	36	num	36		b	agrees
+5930	8	19	num	19		o	agrees
+5930	9	i2	num	12		r	agrees
+5930	10	u	clear				clear
+5930	11	407	num	407		the	agrees
+5930	12	495	num	495		fleet	agrees
+5930	13	105	num	105		and	agrees
+5930	14	414	num	414		then	agrees
+5930	15	219409	doubtful				doubtful
+5930	16	398	num	398		givethemfafet	single
+5930	17	(though	clear				clear
+5930	18	I	num	1		y	conflict:p
+5930	19	con-	clear				clear
+5938	0	fefs	clear				clear
+5938	1	inmy	clear				clear
+5938	2	private	clear				clear
+5938	3	thoughts)	clear				clear
+5938	4	8	num	8		i	agrees
+5938	5	384	num	384		queftion	conflict:queilion
+5938	6	462	num	462		whether	single-segment
+5938	7	258	num	258		it	agrees
+5938	8	450	num	450		were	single-segment
+5938	9	320	num	320		not	agrees
+5938	10	127	num	127		better	single-segment
+5938	11	404	num	404		to	agrees
+5938	12	23	num	23		f	agrees
+5938	13	6	num	6		t	agrees
+5938	14	19	num	19		o	agrees
+5938	15	1	num	1			null-or-unaligned
+5938	16	47	num	47		p	agrees
+5938	17	411	num	411		to	conflict:their
+5938	18	622	num	622		theirbrafiladl	conflict:brazil
+5942	0	495	num	495		fleet	agrees
+5942	1	437	num	437		untill	conflict:make
+5942	2	452	num	452		we	conflict:wee
+5942	3	234	num	234		have	agrees
+5942	4	28	num	28		c	agrees
+5942	5	19	num	19		o	agrees
+5942	6	65	num	65		m	agrees
+5942	7	92	num	92		m	conflict:e
+5942	8	3127	doubtful			an	doubtful
+5942	9	11	num	11		d	agrees
+5942	10	25	num	25		s	agrees
+5942	11	197	num	197		from	agrees
+5942	12	529	num	529		england	agrees
+5942	13	(254	clear				clear
+5942	14	452	num	452		ifweemeetth	conflict:wee
+5942	15	3	num	3		e	agrees
+5942	16	17	num	17		m	conflict:q
+5942	17	409)	clear				clear
+5942	18	452	num	452		wee	agrees
+5942	19	234	num	234		have	agrees
+5942	20	407	num	407		the	agrees
+5946	0	37	num	37		h	agrees
+5946	1	30	num	30		o	agrees
+5946	2	52	num	52		n	agrees
+5946	3	19	num	19		o	agrees
+5946	4	12	num	12		r	agrees
+5946	5	343	num	343		of	agrees
+5946	6	529	num	529		england	agrees
+5946	7	251	num	251		in	agrees
+5946	8	19	num	19		o	agrees
+5946	9	26	num	26		u	agrees
+5946	10	12	num	12		r	agrees
+5946	11	186	num	186		eye	single-segment
+5946	12	6	num	6		t	agrees
+5946	13	19	num	19		o	agrees
+5946	14	30	num	30		o	agrees
+5946	15	458	num	458		which	agrees
+5946	16	452	num	452		wee	agrees
+5946	17	260	num	260		judge	agrees
+5946	18	54	num	54		r	agrees
+5946	19	^	clear				clear
+5946	20	17	num	17		q	agrees
+5946	21	26	num	26		u	agrees
+5946	22	8	num	8		i	agrees
+5946	23	12	num	12		r	agrees
+5950	0	18	num	18		e	agrees
+5950	1	25	num	25		s	agrees
+5950	2	74	num	74		o	agrees
+5950	3	79	num	79		u	agrees
+5950	4	85	num	85		r	single
+5950	5	7	num	7		a	agrees
+5950	6	i	num	1		p	agrees
+5950	7	47	num	47		p	agrees
+5950	8	56	num	56		e	agrees
+5950	9	31	num	31		a	agrees
+5950	10	y3	doubtful			ri	doubtful
+5950	11	yy	clear				clear
+5950	12	52	num	52		n	agrees
+5950	13	46	num	46		g	agrees
+5950	14	108	num	108		after	single-segment
+5950	15	399	num	399		foe	agrees
+5950	16	62	num	62		b	agrees
+5950	17	83	num	83		a	agrees
+5950	18	90	num	90		f	agrees
+5950	19	18	num	18		e	agrees
+5950	20	55	num	55		a	agrees
+5950	21	%y	clear				clear
+5950	22	83	num	83		a	agrees
+5950	23	68	num	68		t	agrees
+5950	24	gy	clear				clear
+5950	25	18	num	18		e	agrees
+5954	0	48	num	48		m	agrees
+5954	1	1	num	1		p	agrees
+5954	2	6	num	6		t	agrees
+5954	3	404	num	404		to	agrees
+5954	4	48	num	48		m	agrees
+5954	5	45	num	45		u	agrees
+5954	6	12	num	12		r	agrees
+5954	7	11	num	11		d	agrees
+5954	8	18	num	18		e	agrees
+5954	9	54	num	54		r	agrees
+5954	10	407	num	407		the	agrees
+5954	11	55	num	55		a	agrees
+5954	12	ys	clear				clear
+5954	13	42	num	42		e	agrees
+5954	14	52	num	52		n	agrees
+5954	15	sy.	clear				clear
+5958	0	May	clear				clear
+5958	1	20th.	doubtful			on	doubtful
+5958	2	345	num	345		thofe	conflict:on
+5958	3	420	num	420		thoughts	conflict:thefe
+5958	4	428,23	doubtful			wee	doubtful
+5958	5	452	num	452		are	conflict:wee
+5958	6	114	num	114		under	conflict:are
+5958	7	438	num	438		faile	single-segment
+5958	8	400	num	400		witha	conflict:faile
+5958	9	21862313369192612	doubtful			l	doubtful
+5958	10	127	num	127		l	conflict:better
+5958	11	494	num	494		ourbettermips	conflict:fhips
+5958	12	196	num	196		for	agrees
+5962	0	508	num	508		lifbon	conflict:liibon
+5962	1	234,253	doubtful			haveinge	doubtful
+5962	2	33	num	33		l	agrees
+5962	3	18	num	18		e	agrees
+5962	4	14	num	14		f	single
+5962	5	50	num	50		t	agrees
+5962	6	407	num	407		the	agrees
+5962	7	610	num	610		rearad	single-segment
+5962	8	21	num	21		w	agrees
+5962	9	8	num	8		i	agrees
+5962	10	6	num	6		t	agrees
+5962	11	37	num	37		h	agrees
+5962	12	(16)	clear				clear
+5962	13	400	num	400		faile	agrees
+5962	14	343	num	343		of	agrees
+5962	15	211,25	doubtful			frigots	doubtful
+5962	16	133	num	133		before	agrees
+5962	17	501	num	501		cadiz	agrees
+5962	18	105	num	105		and	agrees
+5962	19	234	num	234		have	agrees
+5965	0	59	num	59		f	agrees
+5965	1	18	num	18		e	agrees
+5965	2	27	num	27		n	agrees
+5965	3	6407	doubtful			tthe	doubtful
+5965	4	I	num	1		p	agrees
+5965	5	2	num	2		h	agrees
+5965	6	18	num	18		e	agrees
+5965	7	52	num	52		n	agrees
+5965	8	8	num	8		i	agrees
+5965	9	13	num	13		x	conflict:r
+5965	10	133	num	133		before	agrees
+5965	11	404	num	404		to	agrees
+5965	12	508	num	508		lifbon	conflict:liibon
+5965	13	404	num	404		to	agrees
+5965	14	212	num	212		get	agrees
+5965	15	407	num	407		the	agrees
+5965	16	31	num	31		a	agrees
+5965	17	20	num	20		g	agrees
+5965	18	93	num	93		e	agrees
+5965	19	52	num	52		n	agrees
+5965	20	50	num	50		t	agrees
+5965	21	345	num	345		on	agrees
+5965	22	36	num	36		b	agrees
+5965	23	19	num	19		o	agrees
+5967	0	7	num	7		a	agrees
+5967	1	12	num	12		r	agrees
+5967	2	II	num	11		d	agrees
+5967	3	4-35	doubtful		435	us	repaired
+5967	4	404	num	404		to	agrees
+5967	5	156	num	156		confult	single-segment
+5967	6	37	num	37		h	agrees
+5967	7	19	num	19		o	agrees
+5967	8	21	num	21		w	agrees
+5967	9	404	num	404		to	agrees
+5967	10	308	num	308		manage	single-segment
+5967	11	30	num	30		o	agrees
+5967	12	45	num	45		u	agrees
+5967	13	12	num	12		r	agrees
+5967	14	129	num	129		bufineffe	single-segment
+5967	15	(227	clear				clear
+5967	16	228	num	228		god	single-segment
+5967	17	435	num	435		guideus	conflict:us
+5967	18	196	num	196		for	agrees
+5967	19	407	num	407		the	agrees
+5967	20	36	num	36		b	agrees
+5967	21	18	num	18		e	agrees
+5971	0	25	num	25		f	agrees
+5971	1	5°)	clear				clear
+5971	2	452	num	452		wee	agrees
+5971	3	234	num	234		have	agrees
+5971	4	55	num	55		a	agrees
+5971	5	36	num	36		b	agrees
+5971	6	l9	num	19		o	agrees
+5971	7	45	num	45		u	agrees
+5971	8	5°	num	50		t	agrees
+5971	9	(27)	clear				clear
+5971	10	4°°	num	400		faile	agrees
+5971	11	343	num	343		of	agrees
+5971	12	494	num	494		fhips	agrees
+5971	13	21	num	21		w	agrees
+5971	14	8	num	8		i	agrees
+5971	15	62	num	62		h	conflict:b
+5971	16	435	num	435		us	agrees
+5971	17	210	num	210		fire	single-segment
+5971	18	494	num	494		fhips	agrees
+5971	19	105	num	105		and	agrees
+5971	20	26	num	26		v	agrees
+5971	21	8	num	8		i	agrees
+5971	22	9	num	9		c	agrees
+5971	23	6	num	6		t	agrees
+5975	0	26	num	26		u	agrees
+5975	1	7	num	7		a	agrees
+5975	2	5	num	5		l	agrees
+5975	3	33	num	33		l	agrees
+5975	4	18	num	18		e	agrees
+5975	5	12	num	12		r	agrees
+5975	6	23	num	23		s	agrees
+5975	7	49	num	49		i	agrees
+5975	8	27	num	27		n	agrees
+5975	9	28	num	28		c	agrees
+5975	10	33	num	33		l	agrees
+5975	11	79	num	79		u	agrees
+5975	12	39	num	39		d	agrees
+5975	13	93	num	93		e	agrees
+5975	14	11	num	11		d	agrees
+5975	15	452	num	452		wee	agrees
+5975	16	2	num	2		h	agrees
+5975	17	19	num	19		o	agrees
+5975	18	1	num	1		p	agrees
+5975	19	93	num	93		e	agrees
+5975	20	404	num	404		tomeet	conflict:to
+5975	21	317	num	317		your	single-segment
+5975	22	4So	clear				clear
+5975	23	9	num	9		c	agrees
+5975	24	30	num	30		o	agrees
+5975	25	48	num	48		m	agrees
+5975	26	65	num	65		m	agrees
+5978	0	7	num	7		a	agrees
+5978	1	27	num	27		n	agrees
+5978	2	II	num	11		d	agrees
+5978	3	25	num	25		s	agrees
+5978	4	I36407	doubtful			bythe	doubtful
+5978	5	21	num	21		w	agrees
+5978	6	55	num	55		a	agrees
+5978	7	24458	doubtful			ywhich	doubtful
+5978	8	453	num	453		would	agrees
+5978	9	36	num	36		b	agrees
+5978	10	42	num	42		e	agrees
+5978	11	93	num	93		e	agrees
+5978	12	459	num	459		well	agrees
+5978	13	9	num	9		c	agrees
+5978	14	19	num	19		o	agrees
+5978	15	16	num	16		m	agrees
+5978	16	l8	num	18		e	agrees
+5978	17	4O443I	doubtful			tous	doubtful
+5978	18	251	num	251		in	agrees
+5978	19	412	num	412		this	agrees
+5978	20	25	num	25		i	conflict:f
+5981	0	54	num	54		l	conflict:r
+5981	1	59	num	59		e	conflict:f
+5981	2	77	num	77		i	agrees
+5981	3	46	num	46		g	agrees
+5981	4	2	num	2		h	agrees
+5981	5	6.	num	6		t	agrees
+5984	0	37	num	37		h	agrees
+5984	1	19	num	19		o	agrees
+5984	2	21	num	21		w	agrees
+5984	3	185	num	185		ever	single-segment
+5984	4	452	num	452		wee	agrees
+5984	5	6l	num	61		h	conflict:e
+5984	6	30	num	30		o	agrees
+5984	7	47	num	47		p	agrees
+5984	8	18	num	18		e	agrees
+5984	9	196	num	196		for	agrees
+5984	10	I	num	1		p	agrees
+5984	11	7	num	7		a	agrees
+5984	12	12	num	12		r	agrees
+5984	13	II	num	11		d	agrees
+5984	14	19	num	19		o	agrees
+5984	15	27-251	doubtful			n	doubtful
+5984	16	161,252	doubtful			indoeinge	doubtful
+5984	17	30	num	30		o	agrees
+5984	18	79	num	79		u	agrees
+5984	19	73	num	73		r	agrees
+5984	20	36	num	36		b	agrees
+5984	21	93	num	93		e	agrees
+5987	0	25	num	25			null-or-unaligned
+5987	1	50	num	50		t	agrees
+5987	2	196	num	196		for	agrees
+5987	3	407	num	407		the	agrees
+5987	4	59	num	59		f	agrees
+5987	5	56	num	56		a	conflict:e
+5987	6	12	num	12		r	agrees
+5987	7	26	num	26		v	agrees
+5987	8	8	num	8		i	agrees
+5987	9	9	num	9		c	agrees
+5987	10	93	num	93		e	agrees
+5987	11	343	num	343		of	agrees
+5987	12	407	num	407		the	agrees
+5987	13	600	num	600		protector	agrees
+5987	14	105	num	105		and	agrees
+5987	15	74	num	74		o	agrees
+5987	16	94	num	94		u	agrees
+5987	17	12	num	12		r	agrees
+5987	18	66	num	66		c	agrees
+5987	19	19	num	19		o	agrees
+5987	20	79	num	79		u	agrees
+5987	21	27	num	27		n	agrees
+5987	22	50	num	50		t	agrees
+5987	23	12	num	12		r	agrees
+5991	0	May	clear				clear
+5991	1	22d.	doubtful				doubtful
+5991	2	1656.	doubtful				doubtful
+6001	0	49	num	49		i	agrees
+6001	1	379	num	379		perceivemuch	single-segment
+6001	2	3IQ	clear				clear
+6001	3	39	num	39		d	agrees
+6001	4	93	num	93		e	agrees
+6001	5	23	num	23		f	agrees
+6001	6	8	num	8		i	agrees
+6001	7	I2	num	12		r	agrees
+6001	8	42	num	42		e	agrees
+6001	9	4°^	doubtful			that	doubtful
+6001	10	524	num	524		gibral	agrees
+6001	11	4°2	num	402		fhouldb	conflict:fhall
+6001	12	*	clear				clear
+6001	13	J	clear				clear
+6001	14	4	num	4		e	conflict:b
+6001	15	l8	num	18		e	agrees
+6001	16	4°5	num	405		take	agrees
+6001	17	27	num	27		n	agrees
+6001	18	296	num	296		my	agrees
+6001	19	428	num	428		thought	agrees
+6001	20	59	num	59		s	agrees
+6001	21	106	num	106		as	agrees
+6001	22	404	num	404		to	agrees
+6004	0	406	num	406		that	agrees
+6004	1	114	num	114		are	agrees
+6004	2	251	num	251		in	agrees
+6004	3	90	num	90		f	agrees
+6004	4	2	num	2		h	agrees
+6004	5	30	num	30		o	agrees
+6004	6	54	num	54		r	agrees
+6004	7	50	num	50		t	agrees
+6004	8	420	num	420		thefe	single-segment
+6004	9	406	num	406		that	agrees
+6004	10	407	num	407		the	agrees
+6004	11	287	num	287		like	agrees
+6004	12	281	num	281		ly	agrees
+6004	13	42	num	42		e	agrees
+6004	14	90	num	90		f	agrees
+6004	15	68	num	68		t	agrees
+6004	16	53	num	53		v	agrees
+6004	17	31	num	31		a	agrees
+6004	18	24	num	24		y	agrees
+6004	19	404	num	404		to	agrees
+6004	20	212	num	212		get	agrees
+6004	21	258	num	258		it	agrees
+6007	0	259	num	259		is	agrees
+6007	1	136	num	136		by	agrees
+6007	2	280	num	280		landing	single-segment
+6007	3	345	num	345		on	agrees
+6007	4	407	num	407		the	agrees
+6007	5	23	num	23		f	agrees
+6007	6	7	num	7		a	agrees
+6007	7	27	num	27		n	agrees
+6007	8	1	num	1		d	conflict:p
+6007	9	1	num	1		a	conflict:p
+6007	10	105	num	105		ndquickl	conflict:and
+6007	11	39	num	39		y	conflict:d
+6007	12	c	clear				clear
+6007	13	28	num	28		c	agrees
+6007	14	79	num	79		u	agrees
+6007	15	6	num	6		t	agrees
+6007	16	50	num	50		t	agrees
+6007	17	8	num	8		i	agrees
+6007	18	52	num	52		n	agrees
+6007	19	20	num	20		g	agrees
+6007	20	258	num	258		it	agrees
+6007	21	343	num	343		of	agrees
+6007	22	4	num	4		b	agrees
+6007	23	56	num	56		e	agrees
+6007	24	68	num	68		t	agrees
+6007	25	2	num	2			null-or-unaligned
+6007	26	1	num	1		w	conflict:p
+6007	27	93	num	93		e	agrees
+6011	0	56	num	56		e	agrees
+6011	1	27	num	27		n	agrees
+6011	2	23	num	23		f	agrees
+6011	3	42	num	42		e	agrees
+6011	4	7	num	7		a	agrees
+6011	5	I05	num	105		and	agrees
+6011	6	59	num	59		f	agrees
+6011	7	93	num	93			null-or-unaligned
+6011	8	3	num	3		e	agrees
+6011	9	l	num	1		a	conflict:p
+6011	10	344	num	344		or	agrees
+6011	11	399	num	399		foe	agrees
+6011	12	4°4	num	404		to	agrees
+6011	13	59	num	59		f	agrees
+6011	14	l8	num	18		e	agrees
+6011	15	28	num	28		c	agrees
+6011	16	45	num	45		u	agrees
+6011	17	*2	doubtful		12	r	repaired
+6011	18	93	num	93		e	agrees
+6011	19	3°	num	30		o	agrees
+6011	20	79	num	79		u	agrees
+6011	21	54	num	54		r	agrees
+6011	22	299	num	299		men	agrees
+6011	23	4*3	doubtful		413	there	repaired
+6011	24	io6	num	106		as	agrees
+6015	0	406	num	406		that	agrees
+6015	1	410	num	410		they	agrees
+6015	2	309	num	309		may	agrees
+6015	3	37	num	37		h	agrees
+6015	4	yy	clear				clear
+6015	5	52	num	52		n	agrees
+6015	6	11	num	11		d	agrees
+6015	7	18	num	18		e	agrees
+6015	8	12	num	12		r	agrees
+6015	9	407	num	407		the	agrees
+6015	10	190	num	190		enter	single-segment
+6015	11	66	num	66		c	agrees
+6015	12	30	num	30		o	agrees
+6015	13	26	num	26		u	agrees
+6015	14	54	num	54		r	agrees
+6015	15	23	num	23		f	agrees
+6015	16	343	num	343		of	agrees
+6015	17	407	num	407		the	agrees
+6015	18	50	num	50		t	agrees
+6015	19	19	num	19		o	agrees
+6015	20	21	num	21		w	agrees
+6015	21	27	num	27		n	agrees
+6015	22	S3	doubtful			vvi	doubtful
+6015	23	8.2	doubtful			th	doubtful
+6019	0	407	num	407		the	agrees
+6019	1	16	num	16		m	agrees
+6019	2	c,5	clear				clear
+6019	3	49	num	49		i	agrees
+6019	4	52	num	52		n	agrees
+6019	5	21	num	21		f	conflict:w
+6019	6	1,25	doubtful			rigotts	doubtful
+6019	7	281	num	281		ly	agrees
+6019	8	262	num	262		inge	agrees
+6019	9	329	num	329		neare	single-segment
+6019	10	6	num	6		t	agrees
+6019	11	19	num	19		o	agrees
+6019	12	30404	doubtful			oto	doubtful
+6019	13	106	num	106		af	agrees
+6019	14	23	num	23		f	agrees
+6019	15	yy	clear				clear
+6019	16	25	num	25		f	agrees
+6019	17	6	num	6		t	agrees
+6019	18	409	num	409		them	single-segment
+6019	19	105	num	105		and	agrees
+6019	20	258	num	258		it	agrees
+6019	21	259	num	259		is	agrees
+6023	0	459	num	459		well	agrees
+6023	1	264	num	264		known	conflict:know
+6023	2	27	num	27		n	agrees
+6023	3	406	num	406		that	agrees
+6023	4	500	num	500		spayne	single-segment
+6023	5	322	num	322		never	single-segment
+6023	6	45	num	45		v	agrees
+6023	7	8	num	8		i	agrees
+6023	8	9	num	9		c	agrees
+6023	9	6	num	6		t	agrees
+6023	10	26	num	26		u	agrees
+6023	11	7	num	7		a	agrees
+6023	12	5	num	5		l	agrees
+6023	13	33	num	33		l	agrees
+6023	14	42	num	42		e	agrees
+6023	15	50	num	50		t	agrees
+6023	16	2	num	2		h	agrees
+6023	17	31	num	31		a	agrees
+6023	18	52	num	52		n	agrees
+6023	19	58	num	58		y	agrees
+6023	20	374	num	374		place	agrees
+6023	21	196	num	196		for	agrees
+6023	22	346	num	346		one	agrees
+6023	23	48	num	48		m	agrees
+6023	24	yi	clear				clear
+6026	0	76	num	76		n	agrees
+6026	1	50	num	50		t	agrees
+6026	2	37.	num	37		h	agrees
+6030	0	,	clear				clear
+6030	1	412	num	412		this	agrees
+6030	2	460	num	460		will	single-segment
+6030	3	451	num	451		want	agrees
+6030	4	(4)	clear				clear
+6030	5	344	num	344		or	agrees
+6030	6	(5000)	clear				clear
+6030	7	299	num	299		men	agrees
+6030	8	459	num	459		well	agrees
+6030	9	196,42,11	doubtful			formed	doubtful
+6030	10	105	num	105		and	agrees
+6030	11	349>39-	doubtful			officered	doubtful
+6034	0	412	num	412		this	agrees
+6034	1	259	num	259		is	agrees
+6034	2	296	num	296		my	agrees
+6034	3	352	num	352		owne	single-segment
+6034	4	347	num	347		onely	single-segment
+6034	5	428	num	428		thoughtwhich	conflict:thought
+6034	6	(458	clear				clear
+6034	7	49	num	49		i	agrees
+6034	8	23	num	23		f	agrees
+6034	9	26	num	26		u	agrees
+6034	10	36	num	36		b	agrees
+6034	11	48	num	48		m	agrees
+6034	12	8	num	8		i	agrees
+6034	13	6)	clear				clear
+6034	14	107	num	107		at	agrees
+6034	15	1	num	1		p	agrees
+6034	16	12	num	12		r	agrees
+6034	17	18	num	18		e	agrees
+6034	18	25	num	25		f	agrees
+6034	19	42	num	42		e	agrees
+6034	20	27	num	27		n	agrees
+6034	21	go.	clear				clear
+6038	0	407	num	407		the	agrees
+6038	1	9	num	9		c	agrees
+6038	2	45	num	45		u	agrees
+6038	3	5	num	5		l	agrees
+6038	4	33	num	33		l	agrees
+6038	5	93	num	93		e	agrees
+6038	6	52	num	52		n	agrees
+6038	7	211	num	211		frigot	agrees
+6038	8	259	num	259		is	agrees
+6038	9	405	num	405		take	agrees
+6038	10	52	num	52		n	agrees
+6038	11	36	num	36		b	agrees
+6038	12	43	num	43		y	agrees
+6038	13	31	num	31		a	agrees
+6038	14	616	num	616		iflanders	single-segment
+6038	15	211	num	211		frigot	agrees
+6038	16	407	num	407		the	agrees
+6038	17	463	num	463		water	single-segment
+6038	18	105	num	105		and	agrees
+6038	19	28	num	28		c	agrees
+6038	20	55	num	55		a	agrees
+6038	21	25	num	25		f	agrees
+6042	0	44	num	44		k	agrees
+6042	1	&C.	clear				clear
+6042	2	114	num	114		are	agrees
+6042	3	S3	doubtful			a	doubtful
+6042	4	222	num	222		great	agrees
+6042	5	5	num	5		l	agrees
+6042	6	19	num	19		o	agrees
+6042	7	23	num	23		f	agrees
+6042	8	25	num	25		s	agrees
+6042	9	404	num	404		to	agrees
+6042	10	435	num	435		us	agrees
+6042	11	IO7	num	107		at	agrees
+6042	12	412	num	412		this	agrees
+6042	13	408.	num	408		tyme	agrees
+6050	0	tuan,	clear				clear
+6050	1	whereby	clear				clear
+6050	2	we	clear				clear
+6050	3	underftand	clear				clear
+6050	4	197	num	197		from	agrees
+6050	5	Sir	clear				clear
+6050	6	16	num	16		m	agrees
+6050	7	42	num	42		e	agrees
+6050	8	11	num	11		d	agrees
+6050	9	39	num	39		d	agrees
+6050	10	30	num	30			null-or-unaligned
+6050	11	21	num	21			null-or-unaligned
+6050	12	25	num	25			null-or-unaligned
+6050	13	10	num	10		o	single-segment
+6050	14	32	num	32		w	single-segment
+6050	15	61	num	61		e	single-segment
+6050	16	99	num	99		t	single
+6050	17	406	num	406		hat	conflict:that
+6050	18	407,5	doubtful			the	doubtful
+6050	19	71	num	71		d	agrees
+6054	0	31	num	31		a	agrees
+6054	1	43	num	43		y	agrees
+6054	2	42	num	42		e	agrees
+6054	3	59	num	59		s	agrees
+6054	4	"4	num	4		e	conflict:b
+6054	5	375	num	375		paft	single-segment
+6054	6	105	num	105		and	agrees
+6054	7	323	num	323		noe	agrees
+6054	8	372	num	372		peace	single-segment
+6054	9	48	num	48		m	agrees
+6054	10	7	num	7		a	agrees
+6054	11	11	num	11		d	agrees
+6054	12	93.	num	93		e	agrees
+6058	0	452	num	452		wee	agrees
+6058	1	234	num	234		have	agrees
+6058	2	36	num	36		b	agrees
+6058	3	26	num	26		u	agrees
+6058	4	50	num	50		t	agrees
+6058	5	(6)	clear				clear
+6058	6	452	num	452		wee	agrees
+6058	7	44	num	44		k	agrees
+6058	8	56	num	56		e	agrees
+6058	9	59	num	59		s	agrees
+6058	10	71	num	71		d	agrees
+6058	11	54	num	54		r	agrees
+6058	12	49	num	49		i	agrees
+6058	13	27	num	27		n	agrees
+6058	14	25	num	25		k	conflict:f
+6058	15	93	num	93		e	agrees
+6058	16	251	num	251		in	agrees
+6058	17	407	num	407		the	agrees
+6058	18	495	num	495		fleet	agrees
+6058	19	133	num	133		before	agrees
+6058	20	458	num	458		which	agrees
+6058	21	408	num	408		tyme	agrees
+6058	22	16	num	16		b	conflict:m
+6062	0	42	num	42		e	agrees
+6062	1	79	num	79		v	agrees
+6062	2	19	num	19		o	agrees
+6062	3	12	num	12		r	agrees
+6062	4	8	num	8		i	agrees
+6062	5	11	num	11		d	agrees
+6062	6	20	num	20		g	agrees
+6062	7	93	num	93		e	agrees
+6062	8	48	num	48		m	agrees
+6062	9	45	num	45		u	agrees
+6062	10	90	num	90		f	agrees
+6062	11	6	num	6		t	agrees
+6062	12	%6	doubtful			b	doubtful
+6062	13	93	num	93		e	agrees
+6062	14	^6	doubtful			e	doubtful
+6062	15	240	num	240		had	agrees
+6062	16	1	num	1		i	conflict:p
+6062	17	yy	clear				clear
+6062	18	260	num	260		judge	agrees
+6062	19	258	num	258		it	agrees
+6062	20	309	num	309		may	agrees
+6062	21	298	num	298		more	single-segment
+6062	22	391	num	391		quickly	single-segment
+6062	23	9	num	9		c	agrees
+6062	24	30	num	30		o	agrees
+6062	25	48	num	48		m	agrees
+6065	0	56	num	56		e	agrees
+6065	1	197	num	197		from	agrees
+6065	2	529	num	529		england	agrees
+6065	3	414	num	414		then	agrees
+6065	4	197	num	197		from	agrees
+6065	5	31	num	31		a	agrees
+6065	6	27	num	27		n	agrees
+6065	7	24	num	24		y	agrees
+6065	8	350	num	350		other	agrees
+6065	9	374.	num	374		place	agrees
+6073	0	The	clear				clear
+6073	1	captain	clear				clear
+6073	2	will	clear				clear
+6073	3	fhew	clear				clear
+6073	4	you	clear				clear
+6073	5	why:	clear				clear
+6073	6	105	num	105		and	agrees
+6073	7	478	num	478		you	agrees
+6073	8	59	num	59		f	agrees
+6073	9	90	num	90		e	conflict:s
+6073	10	18	num	18		e	agrees
+6073	11	412	num	412		this	agrees
+6073	12	340	num	340		ne	agrees
+6073	13	42	num	42		e	agrees
+6073	14	11	num	11		d	agrees
+6073	15	90	num	90		s	agrees
+6073	16	232	num	232		haft	single-segment
+6073	17	105	num	105		and	agrees
+6073	18	147	num	147		care	single-segment

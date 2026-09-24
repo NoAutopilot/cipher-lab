@@ -1,0 +1,12 @@
+status	tokens	correct	pct
+agrees	1461	1461	100.0
+clear	3	0	0.0
+conflict	55	4	7.3
+doubtful	16	10	62.5
+null-or-unaligned	4	3	75.0
+repaired	44	44	100.0
+single	8	2	25.0
+single-segment	50	40	80.0
+C-graded(agrees+single-segment)	1511	1501	99.3
+key values recovered	198	182	91.9
+total tokens	1641		

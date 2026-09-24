@@ -1,0 +1,249 @@
+value	meaning	grade	n_in_letter	n_agree	other_alignments	source
+1	p	C	30	19	a:2,d:2,w:2,e:1,i:1,n:1,r:1,y:1	printed interlinear, 19 agreeing places
+2	h	C	17	16	n:1	printed interlinear, 16 agreeing places
+3	e	C	2	2		printed interlinear, 2 agreeing places
+4	b	C	11	9	e:2	printed interlinear, 9 agreeing places
+5	l	C	14	14		printed interlinear, 14 agreeing places
+6	t	C	28	28		printed interlinear, 28 agreeing places
+7	a	C	43	42	i:1	printed interlinear, 42 agreeing places
+8	i	C	27	27		printed interlinear, 27 agreeing places
+9	c	C	17	16	r:1	printed interlinear, 16 agreeing places
+10	o	M	1	1		printed interlinear, one place
+11	d	C	24	24		printed interlinear, 24 agreeing places
+12	r	C	42	42		printed interlinear, 42 agreeing places
+13	r	M	2	1	x:1	printed interlinear, one place
+14	f	M	1	1		printed interlinear, one place
+16	m	C	12	10	b:1,v:1	printed interlinear, 10 agreeing places
+17	q	C	3	2	m:1	printed interlinear, 2 agreeing places
+18	e	H	49	49		Tomokiyo thurloe.htm; print agrees
+19	o	C	46	45	e:1	printed interlinear, 45 agreeing places
+20	g	C	12	12		printed interlinear, 12 agreeing places
+21	w	C	12	11	f:1	printed interlinear, 11 agreeing places
+23	f	C	30	29	l:1	printed interlinear, 29 agreeing places
+24	y	C	7	7		printed interlinear, 7 agreeing places
+25	f	C	29	24	k:3,a:1,i:1	printed interlinear, 24 agreeing places
+26	u	C	23	22	t:1	printed interlinear, 22 agreeing places
+27	n	C	37	36	r:1	printed interlinear, 36 agreeing places
+28	c	C	19	18	e:1	printed interlinear, 18 agreeing places
+29	t	M	1	1		printed interlinear, one place
+30	o	C	22	22		printed interlinear, 22 agreeing places
+31	a	C	29	29		printed interlinear, 29 agreeing places
+32	w	M	1	1		printed interlinear, one place
+33	l	C	13	13		printed interlinear, 13 agreeing places
+34	y	M	1	1		printed interlinear, one place
+36	b	C	15	15		printed interlinear, 15 agreeing places
+37	h	C	11	10	n:1	printed interlinear, 10 agreeing places
+39	d	C	9	8	y:1	printed interlinear, 8 agreeing places
+41	i	M	1	1		printed interlinear, one place
+42	e	H	27	27		Tomokiyo thurloe.htm; print agrees
+43	y	C	4	4		printed interlinear, 4 agreeing places
+44	k	C	4	3	u:1	printed interlinear, 3 agreeing places
+45	u	C	16	16		printed interlinear, 16 agreeing places
+46	g	C	4	4		printed interlinear, 4 agreeing places
+47	p	C	12	12		printed interlinear, 12 agreeing places
+48	m	C	15	15		printed interlinear, 15 agreeing places
+49	i	C	20	20		printed interlinear, 20 agreeing places
+50	t	C	32	32		printed interlinear, 32 agreeing places
+52	n	C	21	21		printed interlinear, 21 agreeing places
+53	u	C	2	2		printed interlinear, 2 agreeing places
+54	r	C	24	23	l:1	printed interlinear, 23 agreeing places
+55	a	C	11	11		printed interlinear, 11 agreeing places
+56	e	H	13	12	a:1	Tomokiyo thurloe.htm; print agrees
+58	y	C	2	2		printed interlinear, 2 agreeing places
+59	f	C	13	11	e:1,i:1	printed interlinear, 11 agreeing places
+61	e	M	2	1	h:1	printed interlinear, one place
+62	b	C	3	2	h:1	printed interlinear, 2 agreeing places
+65	m	C	3	2	c:1	printed interlinear, 2 agreeing places
+66	c	C	4	4		printed interlinear, 4 agreeing places
+68	t	C	7	7		printed interlinear, 7 agreeing places
+69	l	C	2	2		printed interlinear, 2 agreeing places
+71	d	C	3	3		printed interlinear, 3 agreeing places
+73	r	C	5	5		printed interlinear, 5 agreeing places
+74	o	C	3	3		printed interlinear, 3 agreeing places
+75	g	C	2	2		printed interlinear, 2 agreeing places
+76	n	C	4	4		printed interlinear, 4 agreeing places
+77	i	C	4	4		printed interlinear, 4 agreeing places
+78	p	M	1	1		printed interlinear, one place
+79	u	C	7	7		printed interlinear, 7 agreeing places
+80	d	C	2	2		printed interlinear, 2 agreeing places
+81	l	M	1	1		printed interlinear, one place
+83	a	C	4	4		printed interlinear, 4 agreeing places
+85	r	M	1	1		printed interlinear, one place
+88	o	M	1	1		printed interlinear, one place
+90	s	C	24	23	e:1	printed interlinear, 23 agreeing places
+92	e	M	2	1	m:1	printed interlinear, one place
+93	e	H	34	34		Tomokiyo thurloe.htm; print agrees
+94	u	C	2	2		printed interlinear, 2 agreeing places
+95	n	C	3	3		printed interlinear, 3 agreeing places
+97	e	M	2	1	t:1	printed interlinear, one place
+99	t	M	1	1		printed interlinear, one place
+103	r	C	3	3		printed interlinear, 3 agreeing places
+105	and	H	41	38	a:1,hard:1,ndquickl:1	Tomokiyo thurloe.htm; print agrees
+106	as	C	6	6		printed interlinear, 6 agreeing places
+107	at	C	7	6	c:1	printed interlinear, 6 agreeing places
+108	after	M	1	1		printed interlinear, one place
+114	are	C	8	7	under:1	printed interlinear, 7 agreeing places
+115	d	M	1	1		printed interlinear, one place
+127	better	M	3	1	deliver:1,l:1	printed interlinear, one place
+129	bufineffe	M	1	1		printed interlinear, one place
+133	before	C	7	7		printed interlinear, 7 agreeing places
+136	by	C	4	4		printed interlinear, 4 agreeing places
+147	care	M	1	1		printed interlinear, one place
+148	i	M	1	1		printed interlinear, one place
+149	carriage	M	1	1		printed interlinear, one place
+151	can	C	2	2		printed interlinear, 2 agreeing places
+152	councel	M	1	1		printed interlinear, one place
+156	confult	M	1	1		printed interlinear, one place
+157	confider	M	1	1		printed interlinear, one place
+159	delay	M	1	1		printed interlinear, one place
+165	did	C	9	9		printed interlinear, 9 agreeing places
+166	debate	C	2	2		printed interlinear, 2 agreeing places
+167	ma	M	1	1		printed interlinear, one place
+172	deliver	M	1	1		printed interlinear, one place
+183	er	C	4	4		printed interlinear, 4 agreeing places
+185	ever	M	1	1		printed interlinear, one place
+186	eye	M	1	1		printed interlinear, one place
+189	entife	M	1	1		printed interlinear, one place
+190	enter	M	1	1		printed interlinear, one place
+196	for	C	13	12	scoaftfor:1	printed interlinear, 12 agreeing places
+197	from	C	9	9		printed interlinear, 9 agreeing places
+198	firlt	M	2	1	firft:1	printed interlinear, one place
+200	fight	M	1	1		printed interlinear, one place
+208	find	M	1	1		printed interlinear, one place
+210	fire	M	1	1		printed interlinear, one place
+211	frigot	C	3	3		printed interlinear, 3 agreeing places
+212	get	C	3	2	gett:1	printed interlinear, 2 agreeing places
+215	go	M	2	1	goe:1	printed interlinear, one place
+216	guns	M	1	1		printed interlinear, one place
+219	give	C	2	2		printed interlinear, 2 agreeing places
+221	government	M	1	1		printed interlinear, one place
+222	great	C	3	3		printed interlinear, 3 agreeing places
+228	god	M	1	1		printed interlinear, one place
+230	him	M	1	1		printed interlinear, one place
+231	his	C	4	4		printed interlinear, 4 agreeing places
+232	haft	M	1	1		printed interlinear, one place
+234	have	C	9	9		printed interlinear, 9 agreeing places
+236	here	M	1	1		printed interlinear, one place
+239	he	C	5	4	hee:1	printed interlinear, 4 agreeing places
+240	had	C	5	5		printed interlinear, 5 agreeing places
+244	hard	M	2	1	very:1	printed interlinear, one place
+247	harbor	M	1	1		printed interlinear, one place
+251	in	C	14	14		printed interlinear, 14 agreeing places
+254	if	M	1	1		printed interlinear, one place
+258	it	C	9	9		printed interlinear, 9 agreeing places
+259	is	C	10	9	spayne:1	printed interlinear, 9 agreeing places
+260	judge	C	3	3		printed interlinear, 3 agreeing places
+262	inge	C	3	3		printed interlinear, 3 agreeing places
+264	know	C	3	2	known:1	printed interlinear, 2 agreeing places
+265	kep	M	1	1		printed interlinear, one place
+269	kindnefs	M	1	1		printed interlinear, one place
+270	kinge	M	1	1		printed interlinear, one place
+279	land	M	2	1	landf:1	printed interlinear, one place
+280	landing	M	1	1		printed interlinear, one place
+281	ly	C	6	5	y:1	printed interlinear, 5 agreeing places
+284	looke	M	1	1		printed interlinear, one place
+286	lett	C	4	4		printed interlinear, 4 agreeing places
+287	like	C	2	2		printed interlinear, 2 agreeing places
+296	my	C	2	2		printed interlinear, 2 agreeing places
+298	more	M	1	1		printed interlinear, one place
+299	men	C	6	6		printed interlinear, 6 agreeing places
+301	money	C	3	3		printed interlinear, 3 agreeing places
+306	march	M	1	1		printed interlinear, one place
+308	manage	M	1	1		printed interlinear, one place
+309	may	C	3	3		printed interlinear, 3 agreeing places
+310	much	C	3	3		printed interlinear, 3 agreeing places
+312	matter	C	2	2		printed interlinear, 2 agreeing places
+317	your	M	1	1		printed interlinear, one place
+320	not	C	8	8		printed interlinear, 8 agreeing places
+321	now	M	1	1		printed interlinear, one place
+322	never	M	1	1		printed interlinear, one place
+323	noe	C	3	2	tnot:1	printed interlinear, 2 agreeing places
+326	none	M	1	1		printed interlinear, one place
+328	ne	M	1	1		printed interlinear, one place
+329	neare	M	1	1		printed interlinear, one place
+335	nor	C	3	3		printed interlinear, 3 agreeing places
+340	ne	C	2	2		printed interlinear, 2 agreeing places
+343	of	C	27	27		printed interlinear, 27 agreeing places
+344	or	C	3	3		printed interlinear, 3 agreeing places
+345	on	C	8	7	thofe:1	printed interlinear, 7 agreeing places
+346	one	C	2	2		printed interlinear, 2 agreeing places
+347	onely	M	1	1		printed interlinear, one place
+349	officer	C	2	2		printed interlinear, 2 agreeing places
+350	other	C	3	3		printed interlinear, 3 agreeing places
+352	owne	M	1	1		printed interlinear, one place
+357	obftacle	M	2	1	obftruft:1	printed interlinear, one place
+358	obteyne	M	1	1		printed interlinear, one place
+362	oppofe	M	1	1		printed interlinear, one place
+363	oppofe	C	2	2		printed interlinear, 2 agreeing places
+366	put	M	1	1		printed interlinear, one place
+367	p	M	1	1		printed interlinear, one place
+368	paff	C	2	2		printed interlinear, 2 agreeing places
+370	power	M	1	1		printed interlinear, one place
+372	peace	M	1	1		printed interlinear, one place
+374	place	C	5	5		printed interlinear, 5 agreeing places
+375	paft	M	2	1	fixt:1	printed interlinear, one place
+379	perceivemuch	M	1	1		printed interlinear, one place
+384	queilion	M	2	1	queftion:1	printed interlinear, one place
+389	quality	M	1	1		printed interlinear, one place
+391	quickly	M	1	1		printed interlinear, one place
+396	range	M	1	1		printed interlinear, one place
+398	givethemfafet	M	1	1		printed interlinear, one place
+399	foe	C	2	2		printed interlinear, 2 agreeing places
+400	faile	C	7	6	witha:1	printed interlinear, 6 agreeing places
+401	fome	C	2	2		printed interlinear, 2 agreeing places
+402	fhall	M	2	1	fhouldb:1	printed interlinear, one place
+404	to	C	40	39	tomeet:1	printed interlinear, 39 agreeing places
+405	take	C	3	3		printed interlinear, 3 agreeing places
+406	that	C	12	11	hat:1	printed interlinear, 11 agreeing places
+407	the	H	50	50		Tomokiyo thurloe.htm; print agrees
+408	tyme	C	4	4		printed interlinear, 4 agreeing places
+409	them	M	1	1		printed interlinear, one place
+410	they	C	8	8		printed interlinear, 8 agreeing places
+411	their	C	5	4	to:1	printed interlinear, 4 agreeing places
+412	this	C	11	11		printed interlinear, 11 agreeing places
+413	there	M	1	1		printed interlinear, one place
+414	then	C	7	6	thenthe:1	printed interlinear, 6 agreeing places
+415	thinge	M	1	1		printed interlinear, one place
+416	tell	C	2	2		printed interlinear, 2 agreeing places
+420	thefe	M	2	1	thoughts:1	printed interlinear, one place
+424	treaty	M	1	1		printed interlinear, one place
+427	though	M	1	1		printed interlinear, one place
+428	thought	C	3	2	thoughtwhich:1	printed interlinear, 2 agreeing places
+433	through	M	1	1		printed interlinear, one place
+435	us	C	6	5	guideus:1	printed interlinear, 5 agreeing places
+437	make	M	3	1	until:1,untill:1	printed interlinear, one place
+438	faile	M	1	1		printed interlinear, one place
+439	very	C	3	2	work:1	printed interlinear, 2 agreeing places
+440	valyant	M	1	1		printed interlinear, one place
+442	andbe	M	1	1		printed interlinear, one place
+446	view	M	1	1		printed interlinear, one place
+449	warre	M	1	1		printed interlinear, one place
+450	were	M	1	1		printed interlinear, one place
+451	want	C	2	2		printed interlinear, 2 agreeing places
+452	wee	C	29	23	we:3,are:1,e:1,ifweemeetth:1	printed interlinear, 23 agreeing places
+453	would	C	2	2		printed interlinear, 2 agreeing places
+456	the	M	2	1	work:1	printed interlinear, one place
+457	was	C	7	7		printed interlinear, 7 agreeing places
+458	which	C	6	6		printed interlinear, 6 agreeing places
+459	well	C	3	3		printed interlinear, 3 agreeing places
+460	will	M	1	1		printed interlinear, one place
+462	whether	M	1	1		printed interlinear, one place
+463	water	M	1	1		printed interlinear, one place
+466	view	M	1	1		printed interlinear, one place
+478	you	C	4	4		printed interlinear, 4 agreeing places
+479	yet	M	1	1		printed interlinear, one place
+480	your	C	2	2		printed interlinear, 2 agreeing places
+482	year	H	0	0		Tomokiyo thurloe.htm; not in this letter
+494	fhips	C	6	4	ihips:1,ourbettermips:1	printed interlinear, 4 agreeing places
+495	fleet	C	8	6	filver:1,fleete:1	printed interlinear, 6 agreeing places
+500	spayne	M	1	1		printed interlinear, one place
+501	cadiz	C	3	3		printed interlinear, 3 agreeing places
+508	liibon	C	4	2	lifbon:2	printed interlinear, 2 agreeing places
+509	portug	M	1	1		printed interlinear, one place
+522	gibraker	M	1	1		printed interlinear, one place
+524	gibral	C	2	2		printed interlinear, 2 agreeing places
+529	england	C	4	4		printed interlinear, 4 agreeing places
+600	protector	C	4	3	proteftor:1	printed interlinear, 3 agreeing places
+610	rearad	M	1	1		printed interlinear, one place
+616	iflanders	M	1	1		printed interlinear, one place
+622	Brazil	H	2	1	theirbrafiladl:1	Tomokiyo thurloe.htm; print agrees
