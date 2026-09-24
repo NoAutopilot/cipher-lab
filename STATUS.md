@@ -133,6 +133,43 @@ decipherment in the same volume is N0 without print; an N4 decision needs a prin
 own gap lists; value-changing second-reader proposals go to an Opus adjudicator, not a Sonnet applier.
 Not kept: ASSIGNMENTS rows (ASSIGNMENTS.md lives in the hub repository, which this session did not have).
 
+## LANE R2 handoff (session_0169D5ZhVf9y378dTq1bHp41), 24 September 2026, 11:25 UTC
+
+Lane: recovery and cryptanalysis on copy-free targets, 08:47-11:25 UTC, successor to LANE R. 19 workers (inherited R19 plus
+C1 L1 S1 G1 L2 D1 J1 W1 F1 L3 J2 W2 H1 J3 L4 D2 and the two over-cap stops), about $115 of worker usage, orchestrator about $22.
+All ledgered (LEDGER.md, session ids), results rows in status.json, briefs `.claude/briefs/runs/2026-09-24-lane-r2-*.md`.
+ASSIGNMENTS rows not kept (hub repository not reachable from this session). No live workers at handoff.
+
+**Results (all `decode_key.py --check` 0; novelty from the verifiers, not this lane):**
+| Target | Result | Class |
+|---|---|---|
+| huntington-luzerne-destouches-1781 | R19: 108(B) is a duplicate (96.0%); key agrees 92.8-94.2% with Destouches' glosses; 108(A) C 410 M 163 U 146 of 719. Closed here. | N0 |
+| august-van-saksen-1561-64 | 57 = System A (C 247 M 53 of 300); 53 = third key, broken by tools/homophonic_anneal.py (control 99.3%), S 238 M 126 of 364 incl. f.266v | N4 (53, 57) |
+| gunther-van-schwarzburg-1561 | key 79 signs aligned from 5109 vs Japikse no.236; 8246 C 817 M 53 U 83 of 953 | N0 (Japikse spaced type) |
+| lodewijk-van-nassau-1573-74 WV2 | 5811 C 616 of 1542; 4503 built (237, M); 5810 one pass; 5799 fails the table (control 81.5%) | 5811, 4503 N0 (Groen IV) |
+| jan-van-nassau-1572-75 | printed 1572 key (5198 reprint) reads 5200 p1 H 680 of 807, p2 left H 325 of 399; 5218/5222 printed in Groen | 5200 N1; 5218/5222 retracted |
+| la-garde-1577 | negative on a 3-witness reconciled transcription: homophonic control 73.5%, periodic 100%, target none | -- |
+| rumpf-vandebie-heinsius-1716-19 | letter 142 negative: 208 tokens, 64 signs, control 28.8-70.7%; now copy-order (LANE N2) | -- |
+| decode-4450-bnf-fr20506-1525 | dataset: 749 tokens, 320 codes, 94.1% agreement with Bourdeau's fr.2988 f.9 witness | -- |
+
+**Open items:**
+1. WVO GPA letters (Jan 5207 5213 5221 5549; Lodewijk 5194 5797 5799 5810): LANE V2's G3 runs the Groen-by-page check. Only
+   letters whose cipher Groen omits are worth a reader; the tools and passes are in place (key_1572, R18 table, wv2/build.py).
+2. decode-1162-modena-ambung-1492 (DC4): blocked on 200 px DECODE thumbnails. LANE N2's dcB tests the logged-in ImagesList route
+   (Bourdeau got full-size scans that way); if it lands images, one Sonnet transcription pass, then assess.
+3. decode-4450 Ranzo: two witnesses on disk; a solver needs a clear copy or crib (Bourdeau's annealer got function words only).
+4. La Garde: a code/nomenclator in number form is the untested hypothesis; Groen VI 249-251 context (DBNL, LANE V2's host) is the
+   crib source.
+5. DC2 decode-1411 and DC5 decode-9970 stay HELD by LANE N's 08:37 line.
+
+**Lessons:**
+- WVO's Bron code GPA means the letter is printed in Groen van Prinsterer; two workers ($17) read letters already in print.
+  Check the print by date, and open every page of the WVO PDF (C1 found Groen and Japikse pages bundled inside), before briefing.
+- Image-reading workers overrun: J1 42%, W1 89%, L3 175%, R19 70% over. About $3 a dense page for Sonnet at several zooms;
+  scope by pages (three at most) and give Opus the TSVs only.
+- Aligner and finisher jobs with a key in hand stay cheap (G1 $3.48, F1 $2.20, D2 $2.52 by reusing Bourdeau's witness).
+- create_session needs source_url (LANE N2 lost 23 minutes without it).
+
 ## LANE R handoff (session_01SEnQgi5wPVmMADaVHnWkNN), 24 September 2026, 08:44 UTC
 
 Lane: recovery and cryptanalysis on copy-free stage-2 targets, 05:05-08:44 UTC. 21 workers (R1-R21), $188 of worker usage,
