@@ -1361,3 +1361,69 @@ letter as a cryptanalytic target with a matched control (rule 3), not as this br
 `ciphertext.txt`, `AUDIT.md` and every other row untouched. Requests: archive.org 0 (djvu text
 restored from the committed `sources/ia-fulltext/thurloe-gz/` cache); no other host; no subagents;
 no logins.
+
+## 19. Print check P4 and P14 (LANE T worker J, 24 Sept 2026)
+
+Brief: search by date, sender and recipient, and phrase-search the clear words/distinctive phrases
+around each cipher passage, for P14 (the Protector to Blake and Mountagu, 9 June 1656) and P4
+(Stamford, 13 March 1655) -- Cromwell editions (Carlyle, Abbott, the new Oxford edition, Gardiner,
+Clarke Papers, Navy Records Society, CSPD 1656) for P14; Underdown's *Royalist Conspiracy*,
+Penruddock-rising literature and CSPD 1655 for P4. Network worker for be-api.us.archive.org and the
+Google Books API only (`printcheck_P4_P14.tsv` has every query, host, date and result). No decoding,
+no novelty class, per rule 10.
+
+**P4: no deciphered text located** in any family searched this pass. CSPD 1655 (be-api, identifier
+found this pass, `sim_great-britain-public-record-papers-domestic-commonwealth_1655`) has one
+"Stamford" hit, the place name (Stamford fair, Lincolnshire), not the correspondent. Underdown's
+*Royalist Conspiracy* is catalogued in Google Books but not full-text searchable there (NO_PAGES on
+every edition found); this pass cross-references, without independently re-running, AUDIT.md's
+existing record that a prior be-api search of the same book found only the Earl of Stamford. All
+seven distinctive/mechanical-reading phrases from NOTES.md s.16 (including modernised-spelling
+variants) return zero genuine hits on Google Books -- one coincidental match on an unrelated
+19th-century phrase, not this letter. No monograph specific to the Penruddock rising was identified
+to query beyond Underdown. This confirms, independently, section 14's and section 16's existing
+finding that P4 has no decipherment in print anywhere searched.
+
+**P14: no deciphered text located** in any family searched this pass either, with one genuine
+negative result worth recording precisely: Carlyle's *Letters and Speeches of Oliver Cromwell* (all
+editions checked, 1857 through the 1904 Lomas edition) runs "To Blake and Montague, Whitehall, 28
+April 1656" then "Letter CCX, to the same, Whitehall, 6 May 1656" then jumps to an unrelated 9 May
+1656 letter to the Gresham Committee, with the next Blake/Montague letter dated 28 Aug 1656 --
+**Carlyle's own table of contents has no letter to Blake and Montague dated 9 June 1656 between
+these**, in any edition found. The letter appears to be simply absent from Carlyle's selection, not
+merely un-deciphered within it. Dixon's *Robert Blake, Admiral and General at Sea* (1852/1856)
+quotes two long passages matching this letter's content verbatim ("attempt the burning of the
+Spanish fleet in Cadiz...", "...give immediate notice unto us of their arrival") but both fall
+entirely within stretches NOTES.md s.11 already establishes as printed in clear by Birch himself
+(Cadiz, Dunkirk, Ostend and their surrounding sentences are not enciphered in the original); Dixon's
+footnote for the immediately preceding paragraph cites Carlyle's letter CCX (6 May), not this one,
+and Dixon's own text does not go beyond Birch's clear wording anywhere checked -- no reading of any
+of this letter's actual cipher tokens. Abbott's *Writings and Speeches* (vol. 4) is catalogued in
+Google Books under several printings but every one is NO_PAGES; not checked by this route, not
+located any other way this pass. The new Oxford edition (Morrill et al.) is not indexed in Google
+Books under any title tried. Gardiner and the Clarke Papers return zero hits combining author/title
+with this letter's date or content (a Gardiner hit already on record in AUDIT.md is for the
+neighbouring P11-13 letter, not P14, and is not reused here). Powell's *Letters of Robert Blake*
+(NRS 1937) and his 1972 *Robert Blake, General-at-Sea* are both located and discuss the same Cadiz/
+Dunkirk/Ostend operational context, quoting a separate Montagu-to-Thurloe letter "of the 30th" (not
+9 June); no decipherment of P14 itself found in the snippets returned. CSPD Domestic, Commonwealth
+1656-1657 (be-api, identifier found this pass, `sim_great-britain-public-record-papers-domestic-commonwealth_1656-1657`,
+distinct from the `_1654` identifier earlier workers used) has "Cadiz" hits only from later-dated
+entries (late June/July), no calendar abstract found for the 9 June letter itself, and "Montague"'s
+one hit is an unrelated name-index listing. Tomokiyo's page (local mirror, no fetch) is confirmed to
+cite exactly BL Add MS 4166 f.90-91 / DECODE R4885 for this letter, naming only the manuscript
+locator and the shared Montagu cipher system, no quoted plaintext -- matching what NOTES.md s.11/16
+already record; DECODE was not logged into, per the brief.
+
+**Files:** `printcheck_P4_P14.tsv` (every query, host, date, result). No `index.tsv`, `ciphertext.txt`
+or `AUDIT.md` change.
+
+**Requests this pass:** be-api.us.archive.org 10 (1 reachability probe; P4: 1 CSPD-1655 query; P14:
+1 failed 502 + 1 retry on a wrong CSPD-1656 identifier guess, then the correct `_1656-1657`
+identifier found and queried 4 times [Cadiz/Mountagu/Montagu/Montague]; all >=1.5s apart, one retry
+after the 502 per the single-retry rule, descriptive User-Agent). www.googleapis.com/books 50 (1
+reachability probe, 1 volume-metadata lookup, 48 search queries across both letters; `&country=US`
+and `&key=$GOOGLE_BOOKS_KEY` on every call, key never printed). No archive.org downloads (worker I's
+host, per the brief), no other host, no logins, no credentials, no subagents, no decoding. Per rule
+10: nothing above is described as new, unpublished, unread, first or never printed; no N-class is
+given (a verifier's job).
