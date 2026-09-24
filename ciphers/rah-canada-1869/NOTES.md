@@ -235,3 +235,5 @@ and any printed edition or biography of González Bravo read cover to cover. Thi
 images on disk, no host).
 
 Requests this pass: none (no network host contacted). No subagents.
+
+**Regrade, 24 Sept 2026 07:23 UTC (LANE R orchestrator, per LANE W's AUDIT.md):** the interlinear clear text is known plaintext on the leaf, so every aligned sign is grade C, not H. build_align.py and decode.json changed; `tools/decode_key.py ciphers/rah-canada-1869 --check` exits 0: **667 signs, C 665, M 2.**

@@ -1280,7 +1280,7 @@
    "date": "24 Sept 2026",
    "kind": "recovery",
    "title": "Conde de la Cañada's ciphered note in González Bravo's letter to Isabel II, Biarritz 18 Nov 1869 (RAH 9/6958, Leg. XIX nº 117/2-3): key and reading",
-   "grade": "H 665, M 2 of 667 signs; novelty not yet audited",
+   "grade": "N0 (clear Spanish on the leaf above every cipher line; AUDIT.md); C 665, M 2 of 667 signs",
    "line": "The note writes each Spanish sentence with its encipherment below it; aligning the two gives the key (simple letter substitution, digits and pen marks, no nulls) and a reading that decode_key.py regenerates. A recovery from the document itself, not cryptanalysis.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/rah-canada-1869"
   }
