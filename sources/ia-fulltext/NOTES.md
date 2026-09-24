@@ -124,3 +124,34 @@ Orange-Nassau letter (the strongest single lead: a distinct edition, a named sen
 1836 editor's own statement that a decipherment attempt failed) and, for the Thurloe vol. 5 rows, a page check
 against the 3 already-catalogued items before anything else. Never solve from this worker's output directly —
 stage 2 (Verified unsolved) has not been set for any of these 24.
+
+## 8. Round 2, continental editions (24 September 2026)
+
+Second detector-test worker, same method (§1), over 276 further Internet Archive identifiers across 18 named
+continental documentary-correspondence series (Lettres de Catherine de Médicis, Négociations diplomatiques
+France-Toscane, Granvelle's Papiers d'État and Correspondance, Kervyn de Lettenhove's Relations politiques,
+Archives Orange-Nassau, CODOIN, Nuntiaturberichte, Deutsche Reichstagsakten, Calendar of State Papers
+Spanish/Venetian, Lettres missives de Henri IV, Michaud-Poujoulat, Correspondance de Marguerite d'Autriche,
+Brandenburg Urkunden, Lisch's Maltzan, Archivio storico italiano) — `sources/ia-fulltext/editions2.tsv`, harvested
+from `archive.org/advancedsearch.php`, deduped against round 1's `editions.tsv`. Full write-up, tables and the
+methodological caveat are in QUEUE.md's "Printed ciphertext, round 2 (24 September 2026)" section; summary here:
+
+- **Controls:** 3 of 3 recovered (Thurloe vol. 1 and Rommel 1840 exactly as round 1; a third, continental
+  control — Groen's Archives Orange-Nassau tome III, the same Orange-Nassau letter round 1 found-solved —
+  recovers its known cipher clusters at OCR lines 24181-24229 and 24362-24373, inside the letter's printed range).
+- **Survivors: 0** cipher-without-decipherment passages among the 276 continental identifiers (255 fetched, 24
+  skipped on 404/500, no retries). 270 of 17,783 raw clusters passed the same filter as round 1, merging into 180
+  non-control candidate passages across 30 identifiers — every one judged table/noise from its context line: a
+  back-of-volume name/subject index or chronological register (dominated by Deutsche Reichstagsakten, 24
+  identifier-copies, 173 passages), not a letter.
+- **Methodological finding for later rounds:** round 1's near-zero false-positive rate on English/Latin editions
+  does not carry over to German *Akten*/*Urkunden* series, whose back-matter indices ("Person, dates: vol,page.
+  vol,page.") structurally match the detector's numeral-run-plus-nearby-prose signature. A future sweep of this
+  kind of edition should pre-filter index/register volumes by title, or tighten the cluster shape test, rather
+  than rely on per-cluster judgement at this volume (270 kept clusters this round vs. 136 in round 1's 274
+  identifiers).
+- **Requests:** archive.org only, 313 total (34 advancedsearch + 279 djvu fetches), no other host, no
+  subagents, no logins.
+
+`runs2.tsv` committed (raw clusters, reproducible per the command in QUEUE.md); `_djvu.txt` caches gitignored as
+in round 1.

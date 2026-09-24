@@ -982,3 +982,94 @@ deleted after). No logins, no credentials, no subagents. Never promoted, never s
 | Queen Anne to Charles Mordaunt, Earl of Peterborough, 22 Feb 1711 (BL Add MS 4107 f.184, DECODE R4878), was rank 24 | found-solved: queue-hygiene sweep 23 Sept 2026 vs fresh clone — `anne1711/`, fraction_read 1.0, every code run matched to a printed clear-text source; two runs (91, 261) have no printed word but do not block the reading. Source of plaintext: printed edition (the code table itself is not rebuilt). |
 
 Sources unreachable: archives: PARES (pares.mcu.es and pares.cultura.gob.es) was unreachable from this environment on 19 Sept 2026: curl got 'Connection reset by peer' and a TLS 'unable to get local issuer certificate' through the agent proxy, WebFetch got 503; PARES candidates therefore rest on search-engine snippets and on the unsolved-ciphers repository's PARES cache (/tmp/unsolved-ciphers/catalogue/pares-*.jsonl, harvested by aaymeloglu), cited as such. TNA Discovery's JSON API answered one query then returned 403 'Restricted' for every further query; the beta catalogue search (beta.nationalarchives.gov.uk) worked and was used instead. archivesetmanuscrits.bnf.fr and gallica.bnf.fr return 403 to WebFetch but 200 to curl with a browser user agent; two Gallica OAI calls were reset once and succeeded on retry. searcharchives.bl.uk returns its landing page for search URLs (single record pages load). folgerpedia.folger.edu gave 503 and catalog.folger.edu 403/202, so Folger call numbers come from search snippets. huntington.org gave 429; the OAC finding aid loaded. DECODE record pages and the record list load without login, but every DECODE image at TNA/BL is 'Authentication required' (free DECODE account).; tomokiyo: Nothing unreachable. Cryptiana web and blog were live on 19 Sept 2026 (HTTP 200). Tomokiyo's two 1710 transcription links (blencowe_geertruidenberg.txt, blencowe_polignac.txt) redirect (HTTP 302) and are dead, as LANDSCAPE.md says; maitland.htm and mirabeau.htm are not in the snapshot and were fetched live.; web: cipherbrain.de (Klaus Schmeh's 2023-mid-2026 blog) returned HTTP 503 on every path tried, and web.archive.org and reddit.com are not fetchable by the tool, so Cipherbrain posts from Jan 2023 to Jul 2026 and r/codes threads could only be seen through search snippets. boingboing.net (403), clements.umich.edu (403) and historum.com (paywalled 402) were unreadable; worked from snippets. The HistoCrypt 2026 Vichy-telegrams PDF downloaded but its text could not be extracted (no pdftotext, pypdf's crypto backend broken), so only its abstract is used; the Jacobite paper PDF link was 404. ciphermysteries.com monthly archive URLs for May-Sept 2026 are 404; the homepage shows no cipher-document posts after 5 Apr 2026.
+
+## Printed ciphertext, round 2 (24 September 2026)
+
+Detector-test worker, round 2 over continental editions (orchestrator brief, RETRO-2026-09-23.md proposal 5 /
+hypothesis A continued): same method as the 23 Sept round (`tools/ia_numeral_runs.py`, `sources/ia-fulltext/NOTES.md`
+§1), applied to `sources/ia-fulltext/editions2.tsv` — 276 further Internet Archive identifiers across 18 named
+continental documentary-correspondence series (Lettres de Catherine de Médicis, Négociations diplomatiques
+France-Toscane, Papiers d'État / Correspondance du cardinal de Granvelle, Relations politiques des Pays-Bas et de
+l'Angleterre [Kervyn de Lettenhove], Archives ou correspondance inédite de la maison d'Orange-Nassau, CODOIN,
+Nuntiaturberichte aus Deutschland, Deutsche Reichstagsakten, Calendar of State Papers Spanish/Venetian, Lettres
+missives de Henri IV, Mémoires et documents / Nouvelle collection [Michaud-Poujoulat], Correspondance de
+Marguerite d'Autriche, Urkunden und Actenstücke [Brandenburg], Lisch's Maltzan, Archivio storico italiano),
+harvested via `archive.org/advancedsearch.php` (one request at a time, 1.5s apart, descriptive User-Agent,
+deduped against round 1's `editions.tsv`). This is a detector test, not a solver or verifier pass: rule 10
+applies, nothing here is promoted or solved, and no wording of new/unpublished/first is used.
+
+**Controls** (3, per the brief: the 2 round-1 controls plus one continental control): Thurloe vol. 1
+(`collectionofstat01thur`) and Rommel 1840 (`correspondancein00henr`) both reproduce their round-1 clusters
+exactly (the known Thurloe cipher at OCR line 43962 recovered verbatim again). The continental control, Groen's
+Archives Orange-Nassau tome III (`archivesoucorre04housgoog`, the Comte Jean de Nassau letter CCCLXXXV that round
+1 found-solved via Nepveu tot Ameyde's 1842 key — see `ciphers/orange-nassau-1572/`), also recovers: 2 merged
+cipher clusters at OCR lines 24181-24229 and 24362-24373, both inside the letter's known printed-cipher range
+(pp. 501-510, corrected 23 Sept 2026). **3 of 3 controls recovered.**
+
+**Fetch:** 279 identifiers processed (276 continental + 3 controls), 255 fetched (no items pre-cached — fresh
+container, no cache carried over from round 1), 24 skipped on HTTP 404 (16) or 500 (8) with **no retries**
+(good-citizen rule) — mostly dead/renamed `dli.ministry.*`, `bub_gb_*` and one guessed Henri IV identifier from
+the keyword harvest. 17,783 raw cluster rows in `runs2.tsv`.
+
+**Filter and judgement:** 270 of 17,783 raw clusters pass the same thresholds as round 1
+(`repeat_rate>=0.3 & numerals>=15 & prose_words>=5`), across 33 of the 255 fetched identifiers. Merging adjacent
+kept clusters (<=60 OCR lines apart, same identifier) gives 201 candidate passages: 21 are the 3 controls (8
+Thurloe, 11 Rommel, 2 Orange-Nassau), leaving **180 non-control passages across 30 identifiers**, all judged from
+their context line as **table/noise**, none as cipher-with-decipherment or cipher-without-decipherment:
+
+| Type | Passages | Identifiers | What it is |
+|---|---|---|---|
+| Back-of-volume name/subject index, "Person, dates: vol,page. vol,page." citation format | 173 | 24 (Deutsche Reichstagsakten — several digitized copies/scans of the same run of Ältere/Jüngere Reihe volumes, `deutschereichst*`, `bub_gb_*`, `DeutscheReichstagsaktenJuengereReihe4`) | register/index apparatus, not a letter |
+| Same, chronological "Regesten" register of report dates by month/day | 4 | 3 (`nuntiaturberich11romgoog`, `nuntiaturberich00kommgoog`, `bub_gb_VtBdAAAAIAAJ`, all Nuntiaturberichte) | a calendar of document dates, not a cipher letter |
+| Same, name/subject index with volume,page citations | 2 | 3 (`urkundenundacten19berluoft`, `urkundenundacte15kommgoog`, `urkundenundacten2302berluoft` — Brandenburg Urkunden) | index |
+| Same, name index | 1 | 1 (`correspondancedu00gran`, Correspondance du cardinal de Granvelle) | index |
+
+(Row counts sum to 180 passages / 30 identifiers using each passage's dominant type; a handful of identifiers
+carry more than one type.) Spot-checked from context lines across the full highest-to-lowest score range and
+every distinct identifier group (not just the top 50) — every one reads as a citation list (a proper name or
+subject heading followed by a run of "volume, page." references, or a list of report dates by month), the same
+false-positive shape round 1 flagged for Clarendon's index volume and Nuntiaturberichte's page-list appendices,
+but here the dominant source of the corpus's numeral-heavy prose-adjacent lines rather than a minor tail. None of
+Lettres de Catherine de Médicis, Négociations diplomatiques France-Toscane, CODOIN, Calendar of State Papers
+Venetian/Spanish, Lettres missives de Henri IV, Mémoires et documents/Nouvelle collection, Correspondance de
+Marguerite d'Autriche, Lisch's Maltzan or Archivio storico italiano produced any cluster passing the filter at
+all — these editions either print cipher passages as decoded plaintext with editorial brackets (the more common
+continental convention per LESSONS.md) or simply have no register/index apparatus in this numeral-dense OCR
+shape.
+
+**Survivors: 0.** No cipher-without-decipherment passage was found among the 276 continental identifiers this
+round (versus round 1's 24, all English-language Thurloe/Orange-Nassau). This is a negative result with matched
+controls per rule 3: the detector demonstrably still works on this corpus (all 3 controls recovered, including
+one continental-edition control), so the absence of survivors reflects the corpus, not a broken detector — but
+see the caveat below on genre bias. No survivor rows to check against `sources/cryptiana/`, the DECODE cache or
+either solver repository this round (nothing passed the filter to check); no blind check performed.
+
+**Top five scoring passages** (all judged table/noise, listed for transparency, not as candidates): (1)
+`deutschereichst00weizgoog` OCR line 102848, 1402 numerals, repeat rate 0.55 — a name-index run under a
+biographical headword; (2) `deutschereichst02unkngoog` line 52048, 891 numerals, rate 0.68 — same; (3)
+`DeutscheReichstagsaktenJuengereReihe4` line 51459, 1022 numerals, rate 0.40 — a bare page-number list under a
+subject heading; (4) `deutschereichst05unkngoog` line 41130, 726 numerals, rate 0.51 — name-index run for a
+margrave/elector entry; (5) `deutschereichst04unkngoog` line 62294, 620 numerals, rate 0.55 — name-index run for
+a city entry.
+
+**Caveat (methodological, for the next round):** round 1's near-zero false-positive rate does not generalise to
+this corpus. Continental critical editions — especially the German *Akten*/*Urkunden* series — carry extensive
+back-of-volume name/subject indices in a "headword, then a run of volume,page citations" format that structurally
+matches the detector's numeral-run + nearby-prose signature (a German personal name or place name reads as the
+"prose_words" the score requires). A future round over this kind of edition should either exclude index/register
+volumes by title pattern before fetching, or add a cheap pre-filter (e.g., citations of the form `\d+,\s*\d+\.`
+repeated many times per line, versus the looser groups-separated-by-periods-or-spaces shape of an actual cipher
+passage) rather than relying on per-cluster human judgement at this volume.
+
+**Requests, archive.org only** (no other host touched, no credentials used): 34 `advancedsearch.php` calls
+(1 reachability test + 18 initial series queries + 6 ad-hoc debug queries fixing the Calendar of State Papers
+Spanish/Venetian title-phrase queries, which needed "Venice"+"archives" rather than "Venetian" and returned 0
+under the brief's first phrasing + 2 corrected re-runs + 7 page-2 boost queries on the largest series) plus 279
+`_djvu.txt` fetches (1.5s apart, no retries on the 24 that came back 404/500) — 313 total, within the good-citizen
+budget. No subagents, no logins, no credentials, no github.com requests this round (no survivors to check against
+the solver repositories).
+
+**Files:** `sources/ia-fulltext/editions2.tsv` (276 identifiers: identifier, title, year, why); `runs2.tsv` (all
+raw clusters from the 255 fetched identifiers plus the 3 controls, reproducible by re-running
+`python3 tools/ia_numeral_runs.py $(tail -n +2 sources/ia-fulltext/editions2.tsv | cut -f1) collectionofstat01thur correspondancein00henr archivesoucorre04housgoog --cache sources/ia-fulltext --tsv sources/ia-fulltext/runs2.tsv`
+against freshly-fetched `_djvu.txt` files, gitignored, not committed).
