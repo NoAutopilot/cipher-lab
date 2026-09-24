@@ -1,0 +1,6 @@
+ROLE: GLYPH ATLAS + TRANSCRIPTION, Orange-Saxony symbol ciphers 1561-66 (LANE R worker R14). Model Sonnet, cap $7. At most 3 Sonnet subagents.
+Target: ciphers/august-van-saksen-1561-64. Read NOTES.md and images/inventory.tsv. Images on disk; no host requests.
+Cipher pages: targets 53 p1 (postscript), 57 p3 (August's), 126 p4 (Willem 1564); siblings with contemporary decipherments 74 p3-p4 (decipherment p5-p6) and 98 p2 (probable decipherment p4-p5), all Willem to August; 175 inline runs with glosses; 153 p6 is a numeral design (different; skip its passes, note it).
+1. One shared glyph atlas first (glyphs/atlas.md + crops per sign; follow .claude/briefs/transcription.md 'Symbol alphabets' and ciphers/dupuy452-carpi-1520/glyphs/), built from 74, 98 and 126 together; say whether 53/57 use the same repertoire.
+2. Two blind passes with the atlas codes of 126 p4, 74 p3-p4, 98 p2, 53 p1 postscript, 57 p3 block (passA.tsv, passB.tsv: briefnr, page, line, idx, sign). tools/reconcile_passes.py -> recon/. Commit after each.
+3. One transcription each of the decipherment pages 74 p5-p6 and 98 p4-p5 (plaintext_74.txt, plaintext_98.txt; German as written). Do not align or decode. NOTES.md section "R14: atlas and passes" (sign count, agreement %, repertoire per letter); ROOM done line. Stop.

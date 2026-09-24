@@ -1,0 +1,8 @@
+ROLE: PAIRS + KEY + DECODE (mechanical finisher), La Luzerne U1 (LANE R worker R10). Model Sonnet, cap $6. No subagents.
+Target: ciphers/huntington-luzerne-destouches-1781. Read NOTES.md section "R6 progress" first: it lists exactly what is done and left. Images are on disk; open an image crop ONLY to check a line whose unit count does not match.
+1. Apply R6's listed settlements to recon_decipher/ -> ciphertext_decipher.tsv (item, page, line, idx, group); commit.
+2. Convert interlinear_readings_draft.txt -> interlinear_readings.tsv (item, page, line, hand ink|pencil, units in group order); where a line's unit count differs from its group count, check that line's crop and fix, logging each fix. Commit.
+3. Run build_pairs.py (fix it if it fails; keep --check): pairs_contemporary.tsv, key.tsv, key_conflicts.tsv, key_yale_crosscheck.tsv. Grades per LANE W's ruling of 24 Sept 2026 07:18: a value read from a contemporary decipherment of a sibling letter is C (known plaintext), pencil-only values M; do NOT merge Tomokiyo/Yale values (R6: different code).
+4. mssDE 68: write reading_68.txt from its own ink decipherment (a transcription; say so in NOTES).
+5. mssDE 108(A): decode.json + tools/decode_key.py -> reading and per-token grades; --check exits 0. No S grades (no context fitting here). Report counts C/M/U.
+6. NOTES.md section "R10: key and reading, <date -u>": counts, conflicts, what is left (unkeyed groups for an Opus context pass with a control). Search log line: what was searched for the 16 Jan 1781 letter's plaintext (from check-solved), where not found. ROOM `for LANE W: ciphers/huntington-luzerne-destouches-1781 reading ready (C x / M y / U z)`. Stop.
