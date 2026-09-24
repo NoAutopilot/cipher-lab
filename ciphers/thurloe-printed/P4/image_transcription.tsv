@@ -1,0 +1,21 @@
+printed_page	image_line	kind	text	doubt
+# P4 (William Stamford, Calais, 13 March 1655), vol.3 collectionofstat03thur, leaf 198 = printed p.188.
+# Scope: brief lane-T-I, "block A" only (djvu OCR lines 15529-15551). Numbered image_line = printed
+# text line on p.188 counting the first body line under the running head as 1. Transcribed from
+# ciphers/thurloe-printed/images/collectionofstat03thur_leaf0198_p188.jpg (IIIF native 2365x4074 and a
+# native-resolution crop of lines ~44-61), two passes (transcribe, then re-read against the image and
+# against the djvu OCR). "Block B" (djvu 15563-15600) is NOT transcribed here: see NOTES.md s.18 -- it
+# is not separate page content, it is an OCR duplicate re-read of block A's own line-wrap tails, verified
+# by matching each block-B fragment against the corresponding block-A line (both from the same djvu file).
+188	50	cipher	more 130 troope, and in which more 39. 25. 40. 39. 3. 12. 19. 37. 25. 12. 41. 10.
+188	51	cipher	30. 22. 12. 29. 35. 7. 12. 41. 28. 41. 19. 41. 6. 40. 41. 12. 40. 11. the 26. 40. 37.
+188	52	cipher	43. 12. 37. 40. 41. 25. 36. 33. 7. 30. 35. 36. 40. 12. 34. 35. 37. army. 35. 23. 19.
+188	53	cipher	by 35. 7. 12. it 25. 6. 36. in 17. 30. it 36. 12. 19. 35. and at the 25. 17. 40. the
+188	54	cipher	36. 6. 16. 12. 37. 19. 18. 3. 25. 28. the 67. 81. 35. 7. 12. am 85. 41. 40. 35. 3.
+188	55	cipher	19. am. 16. 12. 158. 35. 40. 36. 34. 37. 39. it. 6. in. 12. that by 7. 25. am. 23.
+188	56	cipher	19. 34. 25. 10. 6. 34. 12. 41. 1. 19. 3. 29. 36. by 40. 26. 11. and 37. 35. am.	1 [could be I; printed as arabic 1 in a numeral run]
+188	57	cipher	thoufand armes 81. 3. am 37. 12. 19. 29. 6. 35. 40. 18. 25. 12. 2. 19. 17. 25. 34.
+188	58	cipher	36. 12. and 11. 33. 7. 25. 41. 35. 23. 12. 6. 37. 25. 18. 34. 36. 28. 41. 12. 36. in
+188	59	cipher	12. 36. 7. 19. 3. 18. 12. 37. 6. 39. 25. 11. 40. 37. 6. 35, and which makes mee
+188	60	cipher	beleeve the time appointed for it is not farre off, I have been affured this day, that 40. 37.
+188	61	cipher	43. and 41. 29. is in 67. 7. am. 16. 12. 23. 19. 36. 23. 30. 36. at 37. 6. 35. 6. 41. 35. 40. 70.

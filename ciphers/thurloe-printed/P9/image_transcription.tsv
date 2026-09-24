@@ -1,0 +1,28 @@
+printed_page	image_line	kind	text	doubt
+# P9 (General Blake to the Protector, 4 July 1655), vol.3 collectionofstat03thur, leaf 625 = printed
+# p.611, leaf 626 = printed p.612. image_line counts printed body-text lines on that page, first line
+# under the running head/dateline = 1 (same convention as P4). Transcribed from
+# ciphers/thurloe-printed/images/collectionofstat03thur_leaf0625_p611.jpg and _leaf0626_p612.jpg
+# (IIIF native 2365x4074), two passes. Real cipher extent per NOTES.md s.11 (djvu L51507-51608) spans
+# this page break; the letter itself is "General Blake to the protector", July 4 1655 (heading at p.611
+# line 42-44), NOT the undated "General Blake to fecretary Thurloe" letter directly above it on the same
+# page (that one has no cipher at all -- confirms the P9 index.tsv correction in NOTES s.11).
+# MAJOR FINDING (see NOTES.md s.18): this is a complete, clean, letter-by-letter interlinear
+# decipherment printed directly above/below its cipher line -- NOT the meaningless single-letter
+# mini-line fragments the djvu OCR gave. P9_pairs.tsv's one existing pair (djvu 51508/51509, "plate
+# fleet expect edf rom") matches this transcription's p.611 line 49/50 exactly, confirming the OCR was
+# not wrong about the digit values it did capture, only badly fragmented for everything else.
+611	45	plain	THE pacquet fent by lief. Major, mafter of the fmack, with the inftructions of the
+611	46	plain	13 and 14 June, and alfo another for fending fome part of the fleete, I received
+611	47	interlinear	f e c r e t inftructions          t h e
+611	48	cipher	monday laft about midnight.   The  37. 24. 22. 36. 14. 96.   142.   concerning  38. 27. 24.
+611	49	interlinear	p l a t e      fleet      e x p e c t e d f r o m
+611	50	cipher	34. 30. 20. 96. 54.   128.   24. 41. 34. 24. 22. 96. 54. 23. 25. 66. 33. 61.   as alfo
+611	catchword	plain	63.	(catchword previewing p.612's first cipher token, not new content)
+612	1	interlinear	o t h e r   fhips   b o u n d   t o   America   f h a l l   b e
+612	2	cipher	63. 68. 57. 54. 94.   121.   21. 33. 39. 32. 23.   38. 63.   113.   37. 27. 50. 30. 60. 21. 24.
+612	3	interlinear	c a r e f u l l y   o b f e r v e d   a s   G o d
+612	4	cipher	22. 20. 36. 24. 25. 39. 60. 60. 42.   91. 79. 37. 54. 36. 39. 24. 23.   20. 37.   26. 33. 23.
+612	5	interlinear	g i v e s   o p p o r t u n i t y
+612	6	cipher	26. 28. 39. 24. 67.   33. 34. 64. 63. 36. 38. 39. 32. 28. 38. 42.
+612	7	plain	The twelfth of the laft month I fent your highnes an account of our affaires by capt. Peck in the Amity, as alfo	(clear-prose resumption; matches ciphertext.txt L51609, the extent's own stated end)

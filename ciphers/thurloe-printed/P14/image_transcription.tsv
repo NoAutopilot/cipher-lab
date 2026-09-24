@@ -1,0 +1,68 @@
+printed_page	image_line	kind	text	doubt
+# P14 (The Protector to Blake and Mountagu, generals at fea, Whitehall 9 June 1656), vol.5
+# collectionofstat05thur, leaf 109 = printed p.101, leaf 110 = printed p.102. image_line counts printed
+# body-text lines on that page, first line under the running head = 1. Transcribed from
+# ciphers/thurloe-printed/images/collectionofstat05thur_leaf0109_p101.jpg and _leaf0110_p102.jpg (IIIF
+# native 2374x4047 and native-resolution crops), two passes.
+# MAJOR CORRECTION to NOTES.md s.11 item 3 (see NOTES.md s.18 for the full note): that entry, working
+# from the djvu OCR alone, concluded P14 has "no separate decipherment line or gloss ... printed" and is
+# "mechanical-key-only". The page image shows the opposite: Birch prints a complete word-level
+# interlinear decipherment, italicised plaintext phrase directly above (or, on p.101, the cipher-number
+# line directly below) its own numeral group, in exactly the same convention as Montagu's other letters
+# (P11-13/P15/P17 etc.) -- the OCR simply could not keep the two interleaved type sizes in reading
+# order and dropped the small-type cipher-number lines into unreadable fragments. This letter has a real
+# decipherment of its own; it is not a mechanical-key application from P11-13/P15.
+# Real extent confirmed exactly as NOTES.md s.11 already inferred from context: starts at the heading on
+# p.101 (this transcription begins at "GENTLEMEN," for scope) and ends at "in your eye or defigne to be
+# done there by the fleet." on p.102 (image_line 22), immediately before the council-attendance
+# signature block ("His highnefs prefent, ..."), which carries no cipher.
+# Not transcribed (out of this brief's scope, flagged in NOTES.md s.18 and ROOM.md for LANE T): the
+# Lockhart letter immediately above this one on p.101 (heading "Chauni, June 19th 1656 [N.S.] ... Will.
+# Lockhart") also carries extensive nomenclature-coded numerals (230, 88, 231, 233, 430, 433, 447, 480,
+# 351, 100, etc.) with short interlinear glosses of its own ("if my lord protector", "France", "Sweden",
+# "Cardinall", ...) -- a possible uncatalogued cipher target, not checked against index.tsv by this
+# worker.
+101	44	plain	GENTLEMEN,
+101	45	plain	WEE have feene a letter written by you to the commiffioners of the admiralty, dated
+101	46	plain	the 9th of May from Tanger, which arrived here yefterday morneinge, whereby wee
+101	47	interlinear	373 26 12 18 343 407 42 27 18 16 24
+101	48	plain	underftand the pofture of the enemy, and that for the feverall reafons expreffed by you in that	(italics in print: "the pofture of the enemy")
+101	49	interlinear	404 478 320 54 31 6 8 19 52 7 33 404 55 6 50 42 48 101 68 407 36 45 54 76 49 52 20 18 343 407 495 343
+101	50	plain	fayd letter, it feemes to you not rationalle, to attempt the burneinge of the Spanifh fleet in	(italics: "to you not rationalle, to attempt the burneinge of the Spanifh fleet in")
+101	51	interlinear	500 251 501                    401 343 480 494 309 36 18 23 25 7 12 93 11 251 404 407 28 2 31 27 42 33
+101	52	plain	Cadiz; and thereupon apprehending, that fome of your fhips may be fpared into the chanel for	(italics: "Cadiz"; "fome of your fhips may be fpared into the chanel")
+101	53	interlinear	343 50 54 31 11 42 105 407 87 33 19 91 25 8 27 20 18 16 47 343 170 45 27 25 96 54 25 18 105 30
+101	54	plain	the better fecureinge of trade, and the blockeinge up of Dunkirk and Oftend, where the	(italics: "trade, and the blockeinge up of Dunkirk and Oftend, where the")
+101	55	interlinear	23 50 180 53 37 42 103 18 the 47 24 54 5 6 18 23 and 494 343 449 20 12 19 21 90 30 42 27 26 16 18 54 30 26	"the" and "and" are printed as plain words inline in this cipher line, not numerals
+101	56	plain	pirates and fhips of warre grow fo numerous, that lately eighteen or nineteen of them in	(italics: whole line, "pirates ... in")
+101	57	interlinear	59 406 279 6 42 281 110 or 19 343 409 251 a 495	"or" and "a" printed as plain words inline
+101	58	plain	a body tooke twenty of our merchant fhips in two fleets, being under a convoy of a Dutch	(italics: "a body")
+101	59	interlinear	413 196 18 452 234 394 11 404 9 7 5 33 251 404 420 23 18 7 25 47 31 54 50 343 407 495
+101	60	plain	fhip of thirty-fix guns; therefore we have refolved to call into thefe feas part of the fleet	(italics: "therefore we have refolved to call into thefe feas part of the fleet")
+101	61	interlinear	27 19 53 21 8 6 37 478                    102 404 219 344 39 183 23 404 97 56 76 494	two separate groups, wide gap between them in print
+101	62	plain	now with you; and to that end wee defire you upon the receipt hereof, to give orders to ten	(italics: "now with you"; "to give orders to ten")
+101	63	interlinear	438 7 220 349 404 400 21 49 50 37 407 198 19 1 47 88 12 50 26 52 86 24 74 14 53 43 52 71 105 465 251 404
+101	64	plain	fhipps under a good officer to faile with the firft opportunity of wynd and weather into	(italics: whole line)
+101	65	plain	the	catchword at foot of p.101, continues as p.102 line 2's first word
+102	1	interlinear	407 39 30 21 52 18 90          409 404 219          76 74 50 77 91 93 436 437 343 411 31 54 73 8 26 55 69
+102	2	plain	the Downs, requireing them to give ymediate notice unto us of their arrivall. We leave	(italics: "them to give", "notice unto us of their arrivall")
+102	3	interlinear	72 458 343 407 494 478 460 59 18 27 71                                        131 142 112	two groups, wide gap
+102	4	plain	it wholly unto you, which of the fhipps you will fend, conceiveinge you to be beft able to	(italics: "which of the fhipps you will fend", "beft able to")
+102	5	interlinear	404 260 458 343 409 460 36 18 205 18 25 6 196 412                    4 18 142 25 78 7 18 11 136 478	two groups
+102	6	plain	judge, which of them will be fitteft for this fervice, and may be beft fpared by you. Some	(italics: "which of them will be fitteft for this", "be beft fpared by you")
+102	7	interlinear	82 33 18 23 25 42 103 90 30 54 50 343 494          211 23 169 46 142	two groups
+102	8	plain	thoughts we have had, that the leffer fort of fhips, and efpetially frigotts, will beft anfwer	(italics: "the leffer fort of fhips", "frigotts", "will beft")
+102	9	interlinear	236 51 99                    394 39 10 320 264 253               343 480	three groups
+102	10	plain	the aforefaid ends here. This wee have refolved, not knowing any thing of your pofture	(italics: "here", "refolved, not knowing", "of your")
+102	11	interlinear	298 414 104 480              268 61 8 54                36 45 50 32 251 28 31 90 18 478      114	four groups
+102	12	plain	or counfells more then your aforefayd letter reprefents. But in cafe you are upon any de-	(italics: "more then your", "letter reprefents", "But in cafe you are")
+102	13	interlinear	164 344 254                233 42 16 93 73 20 42 11 74 45 73 278 50 18 54 105 251 59 50 12 269 50 96 345 23	two groups
+102	14	plain	figne, or if ought elfe hath emerged either upon our letter and inftruction fent by cap-	(italics: "hath emerged", "our letter and inftruction")
+102	15	interlinear	136 66 31 47 50 55 8 52 18 69 69 30 58 11                    458 420 344 80 93 103 90 460 320 459	two groups
+102	16	plain	taine Lloyd, or from your own thoughts, with which thefe orders will not well con-	(italics: "Lloyd", "which thefe orders will not well")
+102	17	interlinear	452 33 18 31 94 18 96 50 404 478                    452 234 356 251 86 73 49 50   462   478 460	three groups
+102	18	plain	fift, wee leave it to you, notwithftanding what wee have herein writt, wheither you will	(italics: "wee leave it to you", "wee have herein writt, wheither you will")
+102	19	interlinear	90 56 27 39 420 494 344 320                99 320 72       11 8 23 7 1 47 19 8 27 6      415 458 309	four groups
+102	20	plain	fend thefe fhips or not; our intentions not being to difappoint any things, which may be	(italics: "not", "difappoint", "which may")
+102	21	interlinear	251 480 186 344 164 404 4 93 168 413 135 407 495 102 82 104
+102	22	plain	in your eye or defigne to be done there by the fleet.	(italics: "in your eye"; extent ends here, per NOTES.md s.11)

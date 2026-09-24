@@ -1362,6 +1362,132 @@ letter as a cryptanalytic target with a matched control (rule 3), not as this br
 restored from the committed `sources/ia-fulltext/thurloe-gz/` cache); no other host; no subagents;
 no logins.
 
+## 18. Page-image transcription (LANE T worker I, 24 Sept 2026)
+
+Brief: fetch page images for P4 (blocks A/B), P9, P10, P14 and transcribe their cipher passages
+line by line from the image, since the djvu OCR fragments all four. archive.org network worker for
+this brief only (IIIF/BookReader metadata and images).
+
+**Leaf index method.** `archive.org/metadata/<identifier>` gives `server`/`dir` (no
+`access-restricted-item` flag on either volume -- both are open items, no login needed) and a
+`files` list including `<identifier>_page_numbers.json`; that file is `{"pages": [{"leafNum",
+"pageNumber", ...}, ...]}`, one row per leaf, giving the exact leaf<->printed-page map directly
+from archive-hocr-tools' own page-number detection -- far more reliable than the running-head
+guess `thurloe-check.tsv` used. Vol.3 (`collectionofstat03thur`): p.188=leaf198, p.189=leaf199,
+p.611=leaf625, p.612=leaf626, p.620=leaf634, p.621=leaf635. Vol.5 (`collectionofstat05thur`):
+p.100=leaf108, p.101=leaf109, p.102=leaf110, p.103=leaf111. Page images: archive.org's IIIF
+endpoint `iiif.archive.org/iiif/<identifier>$<leaf>/<region>/<size>/0/default.jpg` (302-redirects
+to the real jp2-backed image host; `curl -L` follows it). `info.json` on that same path gives
+native pixel size and `maxArea` (here ~9.6 megapixels, exactly the full page at native res, so a
+full-page fetch needs `size=full` or `full,`, not an arbitrary width -- an oversized custom width
+like 2800 for a 2365-wide native page 403s, since level-2 IIIF here does not support upscaling).
+`regionByPx` (`x,y,w,h` before the size segment) crops to native resolution for a specific line
+band without hitting the area cap, and was used to confirm every ambiguous digit reported below.
+Manifest: `images/manifest.json` (url, leaf, printed page, native size, bytes, region for crops,
+what each image shows). Folder size 6.0 MB, well under the 30 MB cap. Requests: archive.org
+metadata 2, page_numbers.json 2, leaf images/info.json/region crops 19 (13 for vol.3, 6 for
+vol.5), all >=1.5s apart, one at a time, descriptive User-Agent -- no 429/403 on any of them
+(the one 403 was this worker's own oversized-width mistake on leaf198, not a rate limit).
+
+**P4 (Stamford), block A -- read in full, no disorder in the print.** `image_transcription.tsv`
+printed lines 50-61 of p.188 (`images/collectionofstat03thur_leaf0198_p188.jpg`, confirmed against
+a native-resolution crop of the same lines). The passage the djvu OCR presented as garbled
+("block A", 15529-15551) is, in the actual print, a single continuous justified paragraph mixing
+clear words and cipher numerals exactly like the rest of Stamford's letter -- there is no column
+layout on the page at all. Every digit in this worker's transcription matches worker G's own
+`reading_P4.txt` wherever that reading already had a value, and fills in the rest cleanly; no
+digit is now in doubt. One numeral (line 56, "1") is flagged only because Birch's font renders a
+plain arabic "1" here rather than "I.", which the eye could mistake for the pronoun -- checked at
+native resolution, it is the digit, part of the "40. 26. 11. and 37. 35. am." run.
+
+**P4, "block B" (djvu 15563-15600) is not separate content.** It does not exist as a distinct
+location on the page: comparing it token-for-token against block A (both from the same committed
+djvu file) shows it is the OCR's own *displaced left-hand half* of block A's own printed lines
+51-59, sliced out of the justified line, dumped after the page's `4 / I have` catchword, and
+printed out of the normal reading order, while the *right-hand half* of those same nine lines
+stayed inline in the block-A OCR stream under their own steam. Concatenating a block-B fragment
+with its matching block-A continuation reproduces this worker's image transcription exactly, e.g.
+block B `30. 22. 12. 29. 35. 7. 12. 41. 28.` + `41` (its very next fragment) + block-A-stream
+`. 19. 41. 6, 40. 41. 12. 40. II. the 26. 40. 37,` = line 51 in full. Every other OCR/image
+disagreement in this passage is an ordinary glyph misread (`3y.`->`37.`, `6y.`->`67.`, `3g.`->`39.`,
+`II`->`11`, `SO-`->`30.`, `tiy`->`by`) or stray punctuation (commas/apostrophes/hyphens for
+periods, a split token `3` + `9.` for `39.`) -- **no cipher digit value differs between the
+reassembled OCR and the image**; the image's contribution is the correct line order and the
+missing spacing/segmentation, not a digit correction. Net effect for the solver: all 46 tokens
+worker G graded U in blocks A/B (`reading_P4.txt` s.16 item 4) are readable numerals once
+correctly ordered; this worker does not re-grade them (brief: no decoding).
+
+**P9 (Blake to the protector, 4 July 1655) -- a real interlinear decipherment, not fragments.**
+`image_transcription.tsv` covers p.611 lines 45-50 (`images/collectionofstat03thur_leaf0625_p611.jpg`)
+and p.612 lines 1-7 (`..._leaf0626_p612.jpg`; this is the page the djvu OCR broke into dozens of
+single-letter/single-number mini-lines, e.g. "o" / "63-" / "c" / "22." on their own OCR lines,
+NOTES s.11). The print is letter-by-letter for spelled words (`f e c r e t`, long-s for "secret"),
+whole-word for common terms (`inftructions`), spelled again for short closers (`t h e`), directly
+above or below the matching cipher-number line, exactly the P11-13/P15 Montagu convention, not the
+"individual letters scattered across dozens of mini-lines" NOTES s.11 item 3 inferred from the
+OCR alone. The one pair worker B's `P9_pairs.tsv` did recover from the OCR (djvu 51508/51509,
+"plate fleet expect edf rom" / the numerals) matches this transcription's p.611 lines 49-50
+exactly -- confirms the OCR's digit values were right where it did produce a coherent line, it
+just could not do this for the great majority of the passage. This worker does not build
+`P9_pairs.tsv` rows or touch the key (brief: transcription only); the next worker can run
+`tools/interlinear_align.py pairs` directly on these lines instead of trying to recover pairs from
+the OCR.
+
+**P10 (Blake to the protector, 6 July 1655) -- same finding, whole passage on one page.**
+`image_transcription.tsv` covers p.620 lines 4-15 (`images/collectionofstat03thur_leaf0634_p620.jpg`).
+Complete letter-by-letter interlinear decipherment, same convention as P9. One genuine gap in
+Birch's own typesetting, not a transcription gap: line 9's gloss ("e t u r e t h e", 8 letters) is
+short against line 10's 22 cipher tokens -- checked at native resolution
+(`images/collectionofstat03thur_leaf0634_p620_crop_L7-12.jpg`), the print itself gives no gloss for
+14 of that line's tokens. One digit corrected against a first low-resolution read: line 10's
+17th token is "96", not "o6" -- confirmed by a native-resolution crop, the "9" is a serif shape
+that reads as "o" at 1600px width.
+
+**P14 (the Protector to Blake and Mountagu, 9 June 1656) -- corrects NOTES s.11 item 3.** That
+entry, from the OCR alone, said P14 has "no separate decipherment line or gloss ... printed" and
+left it a mechanical-key-only reading from the Montagu key (`reading_P14.txt`, H66/M8/U13 of 87 in
+the old narrow window). **This is wrong**, and the whole real extent (djvu-equivalent L8871-8935,
+already correctly identified by that same NOTES entry as the extent, just not read) does have its
+own interlinear decipherment: an italicised English phrase printed directly above (p.101) or with
+its cipher-number line directly below (p.102) its own numeral group, word for word, the same
+convention as Montagu's other letters. `image_transcription.tsv` covers p.101 lines 44-65
+(`images/collectionofstat05thur_leaf0109_p101.jpg`) and p.102 lines 1-22
+(`..._leaf0110_p102.jpg`), ending exactly where NOTES s.11 already said the extent ends ("in your
+eye or defigne to be done there by the fleet.", p.102 line 22), immediately before the
+council-attendance signature block. Several cipher lines carry a small number of plain words
+inline ("the", "and", "or", "a" -- p.102 lines 55 and 57), matching the style NOTES s.11 described
+for the *old, narrower* window; the newly transcribed lines show this letter in fact has a full
+decipherment, not the "ordinary words left plain, only specific terms coded" nomenclature guess
+that entry made without seeing most of the passage. This worker does not rebuild the Montagu key
+or re-grade `reading_P14.txt` from it (brief: transcription only) -- the next worker should treat
+P14 as a letter with its own printed decipherment (like P9/P10/P11-13/P15), not a mechanical
+application of the pooled key, and can run `tools/interlinear_align.py pairs` on these lines.
+
+**Not transcribed, flagged for LANE T (out of this brief's scope).** The Lockhart letter
+immediately above P14 on p.101 (image_transcription.tsv's own p.101 lines 1-42 are not written;
+listed here only from the read, not committed as a transcription) is headed "Chauni, June 19th
+1656 [N.S.] ... Will. Lockhart" and carries substantial nomenclature-coded numerals of its own
+(230, 88, 231, 233, 430, 433, 447, 480, 351/100, 56/141/87/72/332/108, 215/250/181/364/448,
+119/430, 26/92/435/261, 10/277/281, 68/547, 359/13/124/403, 317/10/179, 435, 315/174/10/60/403/548,
+1600, 374/339, 413/212/91, 87/288/302, 16/280 (twice)) with short interlinear glosses of its own
+("if my lord protector", "France", "Sweden" x2, "Cardinall" / "me n", "they were l e vi ed / ch ar
+ge of France", "by France He thinks the prot. will / a great part / that army", "pl a ce", "the
+protector make re a dy the fleet / a yeare's / it may", "put to fea", "l end ing mo ny", "mo
+nies"). Not checked against `index.tsv` or the solver repositories by this worker -- possibly an
+uncatalogued cipher target on the same leaf as P14; a scout or check-solved pass should look at it
+before anyone else transcribes it (image already on disk,
+`images/collectionofstat05thur_leaf0109_p101.jpg`, no further fetch needed).
+
+**Per rule 10:** this is a transcription pass, not a reading or a novelty classification. No new
+search for prior print or decipherment of P4/P9/P10/P14 was done this pass (NOTES s.14/s.11 stand
+for what was already checked); nothing here is claimed as new, unpublished, unread, or first.
+
+**Files this pass:** `images/manifest.json` and 8 jpg files (6.0 MB total), `P4/image_transcription.tsv`,
+`P9/image_transcription.tsv`, `P10/image_transcription.tsv`, `P14/image_transcription.tsv`, this
+section. No edits to `index.tsv`, `ciphertext.txt`, any `key_*.tsv`, `decode*.py`, or any
+`reading_*.txt`. Requests: archive.org/iiif.archive.org 23 total (see leaf-index method above), no
+other host, no logins, no subagents. Well under the $8 cap.
+
 ## 19. Print check P4 and P14 (LANE T worker J, 24 Sept 2026)
 
 Brief: search by date, sender and recipient, and phrase-search the clear words/distinctive phrases

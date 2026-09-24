@@ -1,0 +1,27 @@
+printed_page	image_line	kind	text	doubt
+# P10 (General Blake to the Protector, Lagos Bay, 6 July 1655), vol.3 collectionofstat03thur, leaf 634 =
+# printed p.620. Whole passage is on one page. image_line counts printed body-text lines on p.620, first
+# line under the heading = 1. Transcribed from
+# ciphers/thurloe-printed/images/collectionofstat03thur_leaf0634_p620.jpg (IIIF native 2365x4074 and
+# native-resolution crops of the cipher block), two passes.
+# MAJOR FINDING (see NOTES.md s.18): same as P9 -- a complete letter-by-letter interlinear
+# decipherment, not meaningless OCR fragments. line 9's gloss "e t u r e t h e" is short (8 letters)
+# against line 10's 22 cipher tokens; the print gives no gloss for the other 14 tokens on that line --
+# this is a genuine partial/incomplete decipherment in Birch's own typesetting, not a transcription gap
+# on this worker's part (checked against the image at native resolution, crop
+# ciphers/thurloe-printed/images/collectionofstat03thur_leaf0634_p620_crop_L7-12.jpg retained for the
+# next worker to re-check). Exact vertical alignment of which gloss letter sits above which cipher
+# number is NOT attempted here (this worker was told to transcribe lines, not align tokens); that is
+# tools/interlinear_align.py's job once these lines are in the repo.
+620	4	plain	SINCE my laft of the 4th inftant by the Smack, a duplicate whereof comes here-
+620	5	interlinear	I  h  a  v  e information  o  f  g  r  e  a  t  p  r  e  p  a
+620	6	cipher	with, 23. 27. 20. 39. 24.    27.    33. 25. 26. 36. 54. 50. 38. 64. 66. 24. 34. 20.
+620	7	interlinear	r  a  t  i  o  n  s  i  n  C  a  d  e  z  t  o  f  e  t  f  o  r
+620	8	cipher	36. 50. 22. 58. 33. 32. 37. 28. 62. 52. 20. 23. 28. 43. 38. 33. 37. 24. 38. 25. 33. 66.
+620	9	interlinear	                                          e t u r e t h e	right-aligned gloss, only 8 letters for line 10's 22 numbers -- see note above
+620	10	cipher	68 57. 78. 55. 63. 36. 22. 24. 33. 83. 121. 68. 67. 95. 24. 22. 39. 96. 54. 38. 27. 24.	first token "68" has no trailing period in the print (checked at native res)
+620	11	interlinear	p  l  a  t  e   fleet and t o t h a t e n d d i v e r s
+620	12	cipher	34. 30. 20. 96. 54.   28.   10. 38. 33. 68. 27. 20. 38. 24. 32. 23. 23. 28. 39. 24. 36. 37.
+620	13	interlinear	H  o  l  l  a  n  d and F  r  e  n  c  h fhips t  a  k  e  n  u  p
+620	14	cipher	27. 63. 30. 30. 20. 62. 81. 10. 25. 36. 54. 32. 22. 27. 121. 38. 50. 29. 82. 90. 39. 34.
+620	15	plain	In purfuance of your highnes order, I have at prefent fent home the Pearle and	(clear-prose resumption)

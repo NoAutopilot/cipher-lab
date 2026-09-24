@@ -1,0 +1,88 @@
+{
+  "fetched": "24 September 2026",
+  "fetch_method": "curl, browser User-Agent, archive.org IIIF Image API (info.json for native size, then /full/1600,/0/default.jpg for reading pages and regionByPx crops at native resolution for close digit checks); leaf index found from each item's own page_numbers.json (archive.org/metadata/<id> -> files/<id>_page_numbers.json, {leafNum, pageNumber} pairs), not the OCR running-head estimate thurloe-check.tsv used",
+  "requests": "collectionofstat03thur: metadata 1, page_numbers.json 1, leaf images/info.json/crops 13; collectionofstat05thur: metadata 1, page_numbers.json 1, leaf images/info.json/crops 6; all archive.org/iiif.archive.org, >=1.5s apart, one at a time",
+  "rights": "public domain (1742 printed edition; Internet Archive scan), no restriction",
+  "images": [
+    {
+      "file": "collectionofstat03thur_leaf0198_p188.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 198,
+      "printed_page": "188",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$198/full/1600,/0/default.jpg",
+      "native_size_px": [2365, 4074],
+      "bytes": 1060163,
+      "shows": "P4 (Stamford): body of the letter including 'block A' (djvu OCR 15529-15551), the OCR-column-disordered numeral passage. Full page at 1600px width."
+    },
+    {
+      "file": "collectionofstat03thur_leaf0198_p188_crop_blockA.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 198,
+      "printed_page": "188",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$198/0,2500,2365,900/full/0/default.jpg",
+      "region_px": [0, 2500, 2365, 900],
+      "bytes": 461226,
+      "shows": "Native-resolution crop of P4 block A (printed lines 44-61), used to confirm every digit; see NOTES.md s.18."
+    },
+    {
+      "file": "collectionofstat03thur_leaf0625_p611.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 625,
+      "printed_page": "611",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$625/full/1600,/0/default.jpg",
+      "native_size_px": [2365, 4074],
+      "bytes": 830178,
+      "shows": "P9 (Blake to the protector, 4 July 1655): letter opens at bottom of this page, interlinear cipher begins (image_line 45-50)."
+    },
+    {
+      "file": "collectionofstat03thur_leaf0626_p612.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 626,
+      "printed_page": "612",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$626/full/1600,/0/default.jpg",
+      "native_size_px": [2365, 4074],
+      "bytes": 881199,
+      "shows": "P9 continued: the rest of the interlinear cipher (image_line 1-6) and the clear-prose resumption (image_line 7). This is the page the djvu OCR fragmented into single-letter mini-lines."
+    },
+    {
+      "file": "collectionofstat03thur_leaf0634_p620.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 634,
+      "printed_page": "620",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$634/full/1600,/0/default.jpg",
+      "native_size_px": [2365, 4074],
+      "bytes": 964539,
+      "shows": "P10 (Blake to the protector, 6 July 1655), whole letter and its interlinear cipher (image_line 4-15) on one page."
+    },
+    {
+      "file": "collectionofstat03thur_leaf0634_p620_crop_L7-12.jpg",
+      "identifier": "collectionofstat03thur",
+      "leaf": 634,
+      "printed_page": "620",
+      "url": "https://iiif.archive.org/iiif/collectionofstat03thur$634/0,850,2365,350/full/0/default.jpg",
+      "region_px": [0, 850, 2365, 350],
+      "bytes": 147793,
+      "shows": "Native-resolution crop of P10 image_line 7-12, used to confirm the ambiguous '96' token (misread as 'o6' at 1600px) and the short 'e t u r e t h e' gloss."
+    },
+    {
+      "file": "collectionofstat05thur_leaf0109_p101.jpg",
+      "identifier": "collectionofstat05thur",
+      "leaf": 109,
+      "printed_page": "101",
+      "url": "https://iiif.archive.org/iiif/collectionofstat05thur$109/full/1600,/0/default.jpg",
+      "native_size_px": [2374, 4047],
+      "bytes": 903474,
+      "shows": "P14 (Protector to Blake and Mountagu, 9 June 1656): the Lockhart letter (not transcribed, out of scope, flagged in NOTES.md s.18) and the start of the Blake/Mountagu letter with its interlinear cipher (image_line 44-65)."
+    },
+    {
+      "file": "collectionofstat05thur_leaf0110_p102.jpg",
+      "identifier": "collectionofstat05thur",
+      "leaf": 110,
+      "printed_page": "102",
+      "url": "https://iiif.archive.org/iiif/collectionofstat05thur$110/full/1600,/0/default.jpg",
+      "native_size_px": [2374, 4047],
+      "bytes": 983155,
+      "shows": "P14 continued: the rest of the interlinear cipher (image_line 1-21), its end at image_line 22, and the council-attendance signature block (no cipher)."
+    }
+  ]
+}
