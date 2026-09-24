@@ -5505,3 +5505,40 @@ performed (tool + fixtures + offline test + 84-image labelled control set + one 
 one feature-change round) is the basis for the report. No network requests made this
 session (gallica.bnf.fr: 0 of the planned 300-thumbnail + 2-manifest allowance -- the
 sweep step never ran because the gate failed).
+
+## CS2-18/-21/-22 check-solved (LANE N4 csNA, 24 September 2026)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n4-csNA.md`. Six-source check-solved on the three copy-free rows
+LANE N4 scARCH pinned to their exact Nationaal Archief viewers (ROOM.md 19:00 UTC). Full logs in each target's
+NOTES.md; state changes below.
+
+- **CS2-18** (Hellen to Frederick II, 1752-1763) -> **verified unsolved, stage 2, `open`.** New folder
+  `ciphers/hellen-frederick-1752/`. Politische Correspondenz Friedrichs des Großen vols. 9-10 (archive.org
+  `politischecorres09fred`/`politischecorres10fred`) full-text searched for "Hellen": only Frederick's own
+  outgoing replies to Hellen printed, not a decipherment of the target ciphertexts. NA Fagel inv. 5206 opened
+  (185 scans, image-confirmed clear-French decipherment series) but its own date range (1752-1753) covers at
+  most the earliest target (R1953, 4 Jan 1752), not the 1756/1763 letters -- a recovery lead for one ciphertext,
+  not a solve. nomination: hellen-frederick-1752 | copy-free | kind recovery | NA 1.10.29 invnr 5206 (target
+  archive; the 8 ciphertexts themselves are at KHA Prins Willem V inv.196, not yet re-checked for a separate
+  viewer).
+- **CS2-21** (Van Spaen to Van der Goes, 14-15 Jan 1808) -> **verified unsolved, stage 2, `open`.** New folder
+  `ciphers/vanspaen-vandergoes-1808/`. DECODE's "Partially decrypted" status resolved: it covers only the 15 Jan
+  annex (per Bourdeau's direct inspection of the record, quoted in NOTES.md), not the 14 Jan letter this row
+  targets. Colenbrander's Gedenkstukken vol. V (1806-1810) checked by Bourdeau, "does not print the letters";
+  this worker could not independently re-read the volume (no full-text search reachable at huygens.knaw.nl's
+  Dojo viewer or delpher.nl within this brief's host grant -- flagged, not closed as a gap). nomination:
+  vanspaen-vandergoes-1808 | copy-free | kind cryptanalysis | NA 2.01.08 invnr 281.
+- **CS2-22** (Röell (attrib.) to Van Dedem, 9 Feb 1809) -> **verified unsolved, stage 2, `open`.** New folder
+  `ciphers/roell-vandedem-1809/`. Same Gedenkstukken vol. V check by Bourdeau, "gave nothing by web search";
+  same independent-re-read gap as CS2-21. No key, decipherment or clear copy found in six sources. nomination:
+  roell-vandedem-1809 | copy-free | kind cryptanalysis | NA 1.02.20 invnr 804 (DECODE's cached toegang 1.02.04 is
+  wrong; scARCH's viewer test confirms 1.02.20).
+
+**Gap flagged for a future worker, not closed here:** the Colenbrander Gedenkstukken vol. V full-text check for
+CS2-21/-22 rests on Bourdeau's own search, not an independent re-read -- resources.huygens.knaw.nl's retroboeken
+viewer is a Dojo page-image browser with no OCR search reachable by plain HTTP, and delpher.nl (out of this
+brief's host grant beyond one WebFetch) needs a JS-rendered session. A worker with a browser-tool slot on
+delpher.nl or huygens.knaw.nl could close this properly.
+
+Per-host report: `nationaalarchief.nl` 1, `service.archief.nl` 1, `resources.huygens.knaw.nl` 2, `archive.org`/
+`be-api.us.archive.org` 5, `github.com` 2 shallow clones (grep only), WebSearch 5, WebFetch 2. No DECODE login.
