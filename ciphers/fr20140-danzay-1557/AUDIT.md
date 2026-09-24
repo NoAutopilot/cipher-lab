@@ -1229,7 +1229,7 @@ page at qr.urfu.ru/ojs/index.php/qr/article/view/qr.1034 and the PDF galley (22 
 not to the repository. The text was extracted and grepped for 20140, 1557, Lorraine, cardinal, Tomokiyo and every "BnF",
 "fol." and 155x/156x date, and the body (pp. 1487-1496), the table (Appendix 1, pp. 1496-1498) and the headers of Appendices
 2-3 were read. The article is in English, not Russian as the brief expected; only the reference list is transliterated.
-Host: qr.urfu.ru, 4 requests (doi.org 1 redirect). elar.urfu.ru was not needed.
+Host: qr.urfu.ru, 3 requests (article page, galley, PDF; doi.org 1 redirect). elar.urfu.ru was not needed.
 
 | Question | Answer (page) |
 |---|---|
