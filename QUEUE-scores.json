@@ -8338,5 +8338,276 @@
       ]
     },
     "rows": []
+  },
+  "lane_g2_gallica4": {
+    "_about": "Fourth pass, 24 September 2026, LANE G2 worker F: archivesetmanuscrits.bnf.fr item-level sweep (source 1 of the brief; source 2, Arsenal/Mazarine/Institut via Gallica SRU, only partly reached -- Gallica unreachable this session, five Arsenal rows found as a side effect of source 1 instead). Control: TEXTE_LIBRE_INPUT='lettre avec chiffres' finds Clairambault 1067 (M18) among 976 raw hits. Method and exclusions in QUEUE.md 'Fourth pass, 24 September 2026 (M22-M34)'. Never promoted, never solved; every row still needs check-solved.",
+    "date": "24 September 2026",
+    "requests_per_host": {
+      "archivesetmanuscrits.bnf.fr": 95,
+      "gallica.bnf.fr": 3,
+      "github.com": 2
+    },
+    "rows": [
+      {
+        "rank": "M22",
+        "target": "Single \"Lettre chiffrée, non déchiffrée\"",
+        "year": "1708",
+        "lang": "fr",
+        "kind": "cryptanalysis",
+        "reference": "Bibliothèque de l'Arsenal, Ms-6829 (196ter. H.F, \"Recueil de pièces\")",
+        "holder": "Bibliothèque de l'Arsenal",
+        "ark": "ark:/12148/cc87337r",
+        "axes": {
+          "language_fit": 3,
+          "material": 2,
+          "key_lead": 0,
+          "size": 1,
+          "competition": 3,
+          "weight": 1,
+          "unread": 3
+        },
+        "total": 30
+      },
+      {
+        "rank": "M23",
+        "target": "\"Coppie (chiffrée et déchiffrée) de l'instruction donnée au sieur comte Jacob de Hanau\"",
+        "year": "1635",
+        "lang": "fr",
+        "kind": "recovery",
+        "reference": "Bibliothèque de l'Arsenal, Ms-6314 (184quater. H.F, \"Recueil de pièces\")",
+        "holder": "Bibliothèque de l'Arsenal",
+        "ark": "ark:/12148/cc86280s",
+        "axes": {
+          "language_fit": 3,
+          "material": 2,
+          "key_lead": 2,
+          "size": 1,
+          "competition": 3,
+          "weight": 1,
+          "unread": 3
+        },
+        "total": 33
+      },
+      {
+        "rank": "M24",
+        "target": "Three \"Lettre chiffrée\" items (1650, 1659, undated Livourne)",
+        "year": "1650-1659",
+        "lang": "fr",
+        "kind": "cryptanalysis",
+        "reference": "Bibliothèque de l'Arsenal, Ms-6334 (191quinquiès. H.F, \"Archives des ducs de Longueville\")",
+        "holder": "Bibliothèque de l'Arsenal",
+        "ark": "ark:/12148/cc86298x",
+        "axes": {
+          "language_fit": 3,
+          "material": 2,
+          "key_lead": 0,
+          "size": 2,
+          "competition": 3,
+          "weight": 1,
+          "unread": 3
+        },
+        "total": 32
+      },
+      {
+        "rank": "M25",
+        "target": "D'Allion-Lanmary Franco-Swedish correspondence, \"en grande partie chiffrée\"",
+        "year": "1744-1746",
+        "lang": "fr",
+        "kind": "cryptanalysis",
+        "reference": "Bibliothèque de l'Arsenal Ms-4764 (\"relations de la France avec la Suède\") + Ms-11409-12471 Archives de la Bastille (Ms-11639)",
+        "holder": "Bibliothèque de l'Arsenal",
+        "ark": "ark:/12148/cc85044f + ark:/12148/cc12947k",
+        "axes": {
+          "language_fit": 3,
+          "material": 2,
+          "key_lead": 0,
+          "size": 2,
+          "competition": 3,
+          "weight": 2,
+          "unread": 3
+        },
+        "total": 33
+      },
+      {
+        "rank": "M26",
+        "target": "\"Lettre en partie chiffrée de Paget\" (sibling lead to M4)",
+        "year": "1713",
+        "lang": "en/fr",
+        "kind": "cryptanalysis",
+        "reference": "Clairambault 296-299 (\"Pièces historiques diverses...correspondance diplomatique de Pontchartrain\")",
+        "holder": "BnF Département des Manuscrits",
+        "ark": "ark:/12148/cc138146",
+        "axes": {
+          "language_fit": 3,
+          "material": 2,
+          "key_lead": 0,
+          "size": 1,
+          "competition": 3,
+          "weight": 1,
+          "unread": 3
+        },
+        "total": 30
+      },
+      {
+        "rank": "M27",
+        "target": "\"Lettre chiffrée\" to a plenipotentiary at the Peace of Münster negotiations",
+        "year": "1645",
+        "lang": "fr",
+        "kind": "cryptanalysis",
+        "reference": "Clairambault 571-582 (\"missions diplomatiques et militaires de Godefroy, comte, puis maréchal d'Estrades\")",
+        "holder": "BnF Département des Manuscrits",
+        "ark": "ark:/12148/cc13896b",
+        "axes": {
+          "language_fit": 3,
+          "material": 2,
+          "key_lead": 0,
+          "size": 1,
+          "competition": 3,
+          "weight": 2,
+          "unread": 3
+        },
+        "total": 31
+      },
+      {
+        "rank": "M28",
+        "target": "Ciphered letter, affaire du cardinal de Bouillon and English/Netherlands/Spanish affairs",
+        "year": "1713",
+        "lang": "fr",
+        "kind": "cryptanalysis",
+        "reference": "Clairambault 528 (\"Pièces diverses...XVIIe et XVIIIe siècles\")",
+        "holder": "BnF Département des Manuscrits",
+        "ark": "ark:/12148/cc13874f",
+        "axes": {
+          "language_fit": 3,
+          "material": 1,
+          "key_lead": 0,
+          "size": 1,
+          "competition": 3,
+          "weight": 1,
+          "unread": 3
+        },
+        "total": 27
+      },
+      {
+        "rank": "M29",
+        "target": "\"Carta que foi por çifra\", vice-roi de l'Inde to king Alphonse VI",
+        "year": "1667",
+        "lang": "pt",
+        "kind": "cryptanalysis",
+        "reference": "Portugais 33 (Suppl. français n. 4022)",
+        "holder": "BnF Département des Manuscrits",
+        "ark": "ark:/12148/cc35168g",
+        "axes": {
+          "language_fit": 3,
+          "material": 1,
+          "key_lead": 0,
+          "size": 1,
+          "competition": 3,
+          "weight": 1,
+          "unread": 3
+        },
+        "total": 29
+      },
+      {
+        "rank": "M30",
+        "target": "Chancelier Antoine Duprat decipherment cluster (despatches to François Ier)",
+        "year": "1515-1535",
+        "lang": "fr",
+        "kind": "recovery",
+        "reference": "Français 2967 (\"Recueil de lettres et de pièces originales\")",
+        "holder": "BnF Département des Manuscrits",
+        "ark": "ark:/12148/cc494214",
+        "axes": {
+          "language_fit": 3,
+          "material": 3,
+          "key_lead": 2,
+          "size": 2,
+          "competition": 3,
+          "weight": 1,
+          "unread": 3
+        },
+        "total": 34
+      },
+      {
+        "rank": "M31",
+        "target": "Letter from Danzay to the king, with cipher and decipherment",
+        "year": "1578",
+        "lang": "fr",
+        "kind": "recovery",
+        "reference": "Français 2812 (\"Recueil de lettres et de pièces originales\")",
+        "holder": "BnF Département des Manuscrits",
+        "ark": "ark:/12148/cc49264b",
+        "axes": {
+          "language_fit": 3,
+          "material": 2,
+          "key_lead": 1,
+          "size": 1,
+          "competition": 3,
+          "weight": 1,
+          "unread": 3
+        },
+        "total": 31
+      },
+      {
+        "rank": "M32",
+        "target": "Sieur de Diou to duc de Maienne, \"escripte en chiffre\", with decipherment",
+        "year": "League era (1589-96)",
+        "lang": "fr",
+        "kind": "recovery",
+        "reference": "Français 2751 (\"Recueil de pièces du XVIe siècle, 1549 à 1599\")",
+        "holder": "BnF Département des Manuscrits",
+        "ark": "ark:/12148/cc49202m",
+        "axes": {
+          "language_fit": 3,
+          "material": 2,
+          "key_lead": 1,
+          "size": 1,
+          "competition": 3,
+          "weight": 1,
+          "unread": 3
+        },
+        "total": 29
+      },
+      {
+        "rank": "M33",
+        "target": "Decipherment of a letter of the duc d'Albany",
+        "year": "1530",
+        "lang": "fr",
+        "kind": "recovery",
+        "reference": "Français 2932 (\"Recueil de lettres originales\")",
+        "holder": "BnF Département des Manuscrits",
+        "ark": "ark:/12148/cc49384x",
+        "axes": {
+          "language_fit": 3,
+          "material": 1,
+          "key_lead": 1,
+          "size": 1,
+          "competition": 3,
+          "weight": 1,
+          "unread": 3
+        },
+        "total": 26
+      },
+      {
+        "rank": "M34",
+        "target": "\"Autre instruction chiffrée pour l'abbé de Mercy\"",
+        "year": "1648",
+        "lang": "fr",
+        "kind": "cryptanalysis",
+        "reference": "Espagnol 142-144 (Supplément français 1257A-C)",
+        "holder": "BnF Département des Manuscrits",
+        "ark": "ark:/12148/cc347546",
+        "axes": {
+          "language_fit": 3,
+          "material": 1,
+          "key_lead": 0,
+          "size": 1,
+          "competition": 3,
+          "weight": 1,
+          "unread": 3
+        },
+        "total": 27
+      }
+    ]
   }
 }

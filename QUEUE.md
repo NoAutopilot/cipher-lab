@@ -609,6 +609,106 @@ dc.source strings for NAF and Moreau), archivesetmanuscrits.bnf.fr 1 (reachabili
 clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers, grepped by shelfmark, deleted after). No logins,
 no credentials, no subagents.
 
+**Fourth pass, 24 September 2026 (M22-M34, LANE G2 worker F).** Brief: sweep archivesetmanuscrits.bnf.fr
+item-level descriptions directly, since the first three passes only reached Gallica's own SRU summary-level
+index; and the Bibliothèque de l'Arsenal (incl. Archives de la Bastille), Mazarine and Institut (Godefroy)
+partner collections.
+
+**Method, source 1 (archivesetmanuscrits.bnf.fr).** The site's own free-text search is not a JS-only dead end
+after all: `archivesetmanuscrits.bnf.fr/js/rechercheSimple.js` shows the search box is a plain HTML form
+(`POST resultatRechercheSimple.html`, field `TEXTE_LIBRE_INPUT`), no CSRF token, reusable with a cookie jar
+and paginated with `?nbResultParPage=50&pageEnCours=N` (the page footer's own real pagination link, capped by
+the site itself at a handful of navigable pages regardless of the reported total — `déchiffrement` reports
+1291 "résultats" but the UI never offers more than 4 pages of 50, so **exhaustiveness is not claimed for
+`déchiffrement`, `chiffre`, `en chiffre`/`en chiffres`, `avec chiffres` or plain `chiffre`** (all four/five
+figures, 2600-9800 "résultats" each): only what the capped pagination actually serves is captured, this pass's
+own gap for a future worker with the browser tool or a `pageEnCours` value beyond the UI cap. Multi-word
+queries AND (`avec chiffres` 2083 < `chiffres` alone 2978), so **control**: `TEXTE_LIBRE_INPUT=lettre avec
+chiffres` returns Clairambault 1067 (M18's Brienne-to-the-Queen-of-Poland item, exact catalogue text) among 976
+raw hits — the control the brief named, confirmed before scoring anything. Seven terms actually swept, chosen
+for being small enough that the pagination cap does not truncate them (or, for `déchiffrement`, accepting the
+cap): `chiffrée` (180 reported, fully paginable), `déchiffrement` (1291 reported, capped at ~200 served),
+`contre-chiffre` (317 reported, capped), `cifra`/`cifre`/`cifrato`/`zifra` (1-9 each, fully served); `cifrada`,
+`Ziffer`, `Geheimschrift` came back zero. 894 raw item hits (deduplicated by ark) after the results actually
+served; the per-item `pictoGallica` badge in each result block (`class="pictoGallica"`, tooltip "Consultable
+sur Gallica") was captured and used as the digitised filter, since this lane's whole point is copy-free
+targets. Noise/context filters as the second and third passes (foliation/pagination/numeral-table regex,
+then a correspondence-context word required) left 189 Gallica-flagged, non-noise hits. A cluster of ~50 of
+these turned out to be individual items inside the **same** BnF **Français ~2900-3990 "Recueil de lettres et
+de pièces originales"** run (identified by fetching a sample of item pages directly, which — unlike the search
+results list — do carry the parent volume's shelfmark in their own breadcrumb, e.g. `ark:/12148/cc494971` =
+Français 3038): this is exactly the fonds the second pass already excluded wholesale as "the whole fr.3xxx
+Ligue/Nevers run" covered by Tomokiyo's own Charles-IX/Henri-III and Mémoires-de-la-Ligue catalogue articles
+and Bourdeau's matching `bourdeau-named:fr.3xxx` convention (Français 3005-3993) — confirmed again this pass
+by direct fetch for 8 sample items, all landing between Français 3012 and Français 3675, all dropped. A
+smaller number of items landed **below** Français 3005 (2751, 2812, 2932, 2967, 2975), outside that
+convention's stated range, and are kept below. Requests this pass: archivesetmanuscrits.bnf.fr ~95 (search
+POSTs, pagination GETs, ~60 individual item-page fetches to resolve parent volumes and rule the Français
+3xxx cluster in or out; several `ws_closed_mid_exchange`/502 tunnel resets, all proxy-side per
+`/__agentproxy/status` not a site block, each retried once per the one-retry rule and all but a few recovered).
+
+**Method, source 2 (Arsenal/Mazarine/Institut via Gallica SRU).** Not reached this pass: `gallica.bnf.fr`
+(both `/SRU` and a plain `/services/Pagination` probe) answered `curl: (52) Empty reply from server` on
+three separate attempts after the archivesetmanuscrits sweep, and the `/__agentproxy/status` endpoint showed
+no matching `gallica.bnf.fr` entries in `recentRelayFailures` (only `archivesetmanuscrits.bnf.fr` tunnel
+resets are logged there), so this looks like a genuine transient Gallica-side or wider-network condition, not
+a proxy policy denial or a Gallica challenge page — logged per the good-citizen one-retry rule and not
+retried further this session. **Source 2 is therefore only partly covered**: five Arsenal manuscripts (four
+of them Gallica-digitised per their own `pictoGallica` badge) were found as a side effect of source 1's sweep
+(archivesetmanuscrits' own department filter includes "Bibliothèque de l'Arsenal", id 140, with an "Archives
+de la Bastille" sub-collection, id 588) and are scored below; Mazarine (its own catalogue entry exists in the
+site's partner-collection filter, id 1646, not queried this pass) and Institut/Godefroy (no matching entry
+found anywhere in the site's nine-block collection-filter tree — it may not be indexed here at all) are
+**not swept**, flagged as the concrete next step for whoever returns to source 2 with Gallica reachable again.
+
+**Exclusion.** Fresh shallow clones of both solver repositories (grepped by shelfmark and by ark, not name
+only, per the Pallotto lesson) and Aymeloglu's cached `decode-catalog.csv` removed two more candidates that
+looked promising on first read, the same duplicate-work check the second and third passes logged:
+- **Baluze 188** f.22-23, "Lettre chiffrée avec déchiffrement partiel" (18 May 1632, Verona/Italy) is DECODE
+  record 2768, status **Decrypted** — dropped.
+- **Espagnol 336**, four "en partie chiffrée" Pimentel/Ibarra/Feria-Fuentes/Idiaquez/Philippe II items
+  (1593-95) share the shelfmark with Bourdeau's own **solved** `segura1596/` target (no. 99, catalogue 321,
+  SOLVED_CATALOGUE.md row 121) and his `lebel1593/` working folder (nos. 79-81) — whole-volume exclusion, same
+  convention as Espagnol 318/132 in the third pass — dropped without opening the image.
+- **Portugais 33** appears in Bourdeau's raw unfiltered SRU scrape (`gallica_sweep/sru_chiffre_desc.json`) but
+  **not** in his own curated candidate list (`gallica_sweep/bnf_candidates.txt`, 0 hits) — kept, per the
+  established convention that only the curated list counts as "already on his radar".
+
+Thirteen candidates survived, none check-solved, none opened at full resolution, no image viewed — same
+caveat as M12-M21 before their check-solved passes; the Gallica ark for each item was not resolved this pass
+(the site's `pictoGallica` badge confirms digitisation but the link itself is JS-triggered, not a static
+href — a browser-tool or IIIF-search follow-up is the next step, not a further curl attempt):
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Total |
+|---|---|---|---|---|---|---|---|
+| M22 | Single "Lettre chiffrée, non déchiffrée" | 5 Jan 1708 | fr | cryptanalysis | Bibliothèque de l'Arsenal, Ms-6829 (196ter. H.F, "Recueil de pièces"), archivesetmanuscrits ark cc87337r | One named ciphered letter, explicitly **not yet deciphered** per the cataloguer, inside a miscellany; no key or sibling decipherment named. Not in either solver repo or DECODE by this shelfmark. | 30 |
+| M23 | "Coppie (chiffrée et déchiffrée) de l'instruction donnée au sieur comte Jacob de Hanau" | 28 Oct 1635 | fr | recovery | Bibliothèque de l'Arsenal, Ms-6314 (184quater. H.F, "Recueil de pièces"), ark cc86280s | Cipher and its own contemporary decipherment both named in the same item — the M1/M15/M21 cheap-transcription pattern. Not in either solver repo or DECODE by this shelfmark. | 33 |
+| M24 | Three "Lettre chiffrée" items (7 Jan 1650; 3 Nov 1659, to the duc de Longueville; undated, Livourne) | 1650-1659 | fr | cryptanalysis | Bibliothèque de l'Arsenal, Ms-6334 (191quinquiès. H.F, "Archives des ducs de Longueville, et autres papiers"), ark cc86298x | Three separately catalogued ciphered letters in one Longueville-family recueil; no key or decipherment named for any of the three. Not in either solver repo or DECODE by this shelfmark. | 32 |
+| M25 | D'Allion (French chargé d'affaires/minister in Russia and Sweden) - Lanmary (ambassador in Sweden) correspondence, "en grande partie chiffrée" | 1744-1746 | fr | cryptanalysis | Bibliothèque de l'Arsenal, Ms-4764 (635 H.F, "Recueil concernant les relations de la France avec la Suède", ark cc85044f) and Ms-11409-12471 "Archives de la Bastille" (Ms-11639, "Papiers divers", ark cc12947k) | Two Arsenal witnesses of the same diplomatic circle: Ms-4764 names one specific dated item ("Dépêche chiffrée, signée Lanmary, adressée à d'Alion, Stockholm 9/20 aout 1745"), the Bastille volume describes the whole 1744-46 run as "en grande partie chiffrée" between the two men, alongside plain letters of credence and treaty copies. Not in either solver repo or DECODE by these shelfmarks; not previously named in QUEUE.md. | 33 |
+| M26 | "Lettre en partie chiffrée de Paget" | 14 Jan 1713 | en/fr | cryptanalysis | Clairambault 296-299 ("Pièces historiques diverses...et correspondance diplomatique de Pontchartrain"), ark cc138146 | A second, distinct Paget cipher letter from M4 (Clairambault 1225, "lettres autogr. de Paget, avec chiffre, 1714", check-solved 23 Sept, open/unlocated) — different volume, one day short of a year earlier; a plausible sibling lead for M4's solver, not a duplicate (different shelfmark, no key stated in either). Not in either solver repo or DECODE by this shelfmark. | 30 |
+| M27 | "Lettre chiffrée adressée à l'un des plénipotentiaires" at the negotiation of the Peace of Münster | Jul-Dec 1645 | fr | cryptanalysis | Clairambault 571-582 ("Lettres et pièces originales relatives aux missions diplomatiques et militaires de Godefroy, comte, puis maréchal d'Estrades, 1637-1685"), ark cc13896b | One ciphered letter named within maréchal d'Estrades's own large diplomatic-mission archive, at the Westphalia peace negotiations; no key or decipherment named. Not in either solver repo or DECODE by this shelfmark. | 31 |
+| M28 | Ciphered letter concerning the affaire du cardinal de Bouillon, and English/Netherlands/Spanish affairs | early 18th c. (item dated 1713 in a volume of "pièces diverses...XVIIe et XVIIIe s.") | fr | cryptanalysis | Clairambault 528 ("Pièces diverses, dont plusieurs imprimées, des XVIIe et XVIIIe siècles"), ark cc13874f | Single ciphered letter inside a mixed-printed-and-manuscript miscellany; lower confidence than M26/M27 since the volume's own scope is broad and the item is not otherwise distinguished. Not in either solver repo or DECODE by this shelfmark. | 27 |
+| M29 | "Carta que foi por çifra" (letter sent in cipher), vice-roi de l'Inde (comte de Saõ Vicente) to king Alphonse VI | 1667 | pt | cryptanalysis | Portugais 33 (Suppl. français n. 4022), ark cc35168g | One item ("no. 1") in a short series of three letters from the Portuguese viceroy of India to the crown, 1667-68; the cipher item is explicitly named apart from its two plain siblings. Not in either solver repo by this shelfmark (present only in Bourdeau's raw unfiltered SRU scrape, not his curated candidate list — see Exclusion) or DECODE. First Portuguese-language candidate this lane has scored. | 29 |
+| M30 | Cluster of chancelier Antoine Duprat decipherments (despatches to François Ier) | undated (Duprat chancellor 1515-1535) | fr | recovery | Français 2967 ("Recueil de lettres et de pièces originales"), ark cc494214 | At least four/five items catalogued "Autre Dechiffrement de despesche envoyée au roy François premier par le chancelier DUPRAT" plus a fifth "Dechiffrement de lettre envoyée par le chancelier DUPRAT au roy" — a small cluster of already-deciphered items in one volume, the M1/M15/M21 transcription pattern, below the Français 3005-3993 exclusion line so not covered by the second pass's fr.3xxx drop. Not in either solver repo or DECODE by this shelfmark. | 34 |
+| M31 | Letter from "DANZAY" to the king, with cipher and decipherment both present | last day of Feb. 1578 | fr | recovery | Français 2812 ("Recueil de lettres et de pièces originales"), ark cc49264b | A different Danzay item from M15's fr.20140 cluster (1557, three of four letters already found-solved via Tomokiyo's reconstruction) — same ambassador, a later date, a different volume, and (unlike M15's f.35) this one already carries its own decipherment in the item description. Worth checking against Tomokiyo's Danzay key before treating as new. Not in either solver repo or DECODE by this shelfmark. | 31 |
+| M32 | "Lettre du sieur DE DIOU à monsieur le duc de Maienne...escripte en chiffre", with its own decipherment | League era (Maienne = Charles de Lorraine, duc de Mayenne, League leader 1589-96) | fr | recovery | Français 2751 ("Recueil de pièces du XVIe siècle, 1549 à 1599"), ark cc49202m | Cipher and decipherment both named in the same item. Not in either solver repo (a "Français 2751" substring match in an initial pass proved spurious on closer regex checking) or DECODE by this shelfmark. | 29 |
+| M33 | "Dechiffrement de la lettre" of the duc d'Albany | 18 Dec 1530 | fr | recovery | Français 2932 ("Recueil de lettres originales"), ark cc49384x | Single already-deciphered item, low remaining information value (only the decipherment survives, no ciphertext confirmed in the description) but flagged for completeness. Not in either solver repo or DECODE by this shelfmark. | 26 |
+| M34 | "Autre instruction chiffrée pour l'abbé de Mercy" | 6 Jun 1648 | fr | cryptanalysis | Espagnol 142-144 (Supplément français 1257A-C), ark cc347546 | Single named ciphered instruction in a multi-tome Spanish-affairs volume; no key stated. Not in either solver repo or DECODE by this shelfmark. | 27 |
+
+Caveats: (1) as with every prior pass, no row here has been check-solved, image-viewed, or scored against a
+control — catalogue hits only, rule 10 wording not used anywhere in this section. (2) The archivesetmanuscrits
+pagination cap (see Method) means the four broad terms (`chiffre`, `en chiffre(s)`, `avec chiffres`) were not
+swept at all this pass, only the five/six narrower terms that the UI actually serves in full or near-full —
+a genuine gap, not a zero result, for whoever returns with the browser tool (which can drive the "page
+actuelle" box past the UI's soft cap, or the site's advanced-search `INTITULE_INPUT1` field, which ANDs a
+title/cote term against `TEXTE_LIBRE_INPUT` and could scope a `chiffre`-family term to one fonds at a time
+without hitting the pagination cap — tested working for `INTITULE_INPUT1=Dupuy` this pass but not pursued
+further for lack of budget). (3) Mazarine and Institut/Godefroy (source 2's other two named collections)
+were not reached at all this pass — Gallica SRU was unreachable throughout (see Method); a future worker
+should retry source 2 fresh rather than resume mid-sweep. (4) M25's two Arsenal witnesses (Ms-4764, the
+Bastille volume) may turn out to be the same underlying correspondence read from two different registers
+(sender's letter-book vs. recipient's file) rather than two independent sources — not resolved this pass.
+
 ## Digitised candidates outside the BnF (scout of 24 September 2026)
 
 Row 14 continuation: a browser-tool pass (CLAUDE.md Access playbook route 2) on the six hosts the 23 Sept
