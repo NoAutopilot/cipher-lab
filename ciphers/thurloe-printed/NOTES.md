@@ -490,6 +490,182 @@ class of result as P11-13 and P19/P21-23: a printed 1742 decipherment, aligned, 
 **Requests this pass:** none -- the vol. 7 djvu text was already committed gzipped at
 `sources/ia-fulltext/thurloe-gz/` and restored locally with `zcat`; no archive.org, no other host,
 no logins, no subagents.
+
+## 12. 1654 inline pool (LANE T worker C, 24 Sept 2026)
+
+Brief: consolidate P4/P5/P6/P7 (the four 1654 letters that print small numerals inline in clear
+English, no decipherment beside them) -- confirm attribution and full cipher extent, extract
+tokens/cribs, test one-system, look for a larger pool, estimate alphabet size. No cryptanalysis
+attempted, per brief and rule 10.
+
+**Headline result: two of the four are already found-solved by the print itself.** `index.tsv`'s
+own premise ("no decipherment beside them") held for P4 but not for P5/P6 or P7 -- both have a
+full plaintext paragraph headed "The fame letter decypherd" printed immediately after the cipher
+paragraph, in the same style Birch used for P11-13 and the Fauconberg-to-H.-Cromwell group
+(sections 8-9 above). Nothing here was decoded (out of this brief's scope), but the letters
+should move to `found-solved` and drop out of any cryptanalysis queue; only P4 is a genuine open
+target. **Recommendation for LANE T: hand P5+P6 and P7 to a solver for the same kind of
+known-plaintext alignment `tools/interlinear_align.py` did for P11-13** -- and given the
+one-system evidence below, that alignment would very likely also open P4, at essentially no
+extra cryptanalysis cost.
+
+### 12.1 Attribution corrections (all three checked rows were wrong in `index.tsv`)
+
+Checked by reading the heading immediately above each cipher paragraph in the cached djvu text
+(`sources/ia-fulltext/collectionofstat03thur_djvu.txt`, restored from `thurloe-gz/`), not the
+signature of the preceding letter -- the same mistake flagged for the Fauconberg rows (section 8,
+LANE T orchestrator note, ROOM.md 03:08). All three corrected rows are anonymous royalist
+informant letters from Calais, same correspondent throughout (signs "W.S." / "W. Stamford." /
+"S."), same code language ("your friend" = the Protector, via an intermediary the letters call
+"Sir"), same courier ("mr. Thomas Whit at Dover"), same subject (offering intelligence on a
+royalist rising in exchange for the Protector's reward/protection, an alias "Nevell" used at
+Dover) -- not Thurloe's usual correspondents Prideaux, Creed or Bradshaw at all:
+
+| Row | `index.tsv` said | Actually (djvu evidence) |
+|---|---|---|
+| P4 | sender "Mr. W. Prideaux", p.56, date not read | Heading L15467 "A letter of W. S. from Calais.", signed "W.S." L15648, dated "Callais, March 13, [1654. N.S.]" L15646-48, printed p.76 (Vol. xxiv, marginal L15470-71). The real Prideaux letter (heading L15424, signed "Will. Prideaux." L15464, dated "Mosco, this 3 of March", p.56) is short, plain, and ends before the W.S. letter begins -- it has no cipher at all. |
+| P5+P6 | sender "Major Creed", p.273/~275, date not read | Heading L22884 "A letter of intelligence.", signed "W. Stamford." L23054/L23138, dated "Callais, March 30, [1654. N.S.]", cipher para. marginal p.319 (L22887-88), decipherment marginal p.324 (L23068-69). "Major Creed to fecretary Thurloe" (heading L22631) is the *previous* letter and is not cited by this row's window at all. |
+| P7 | sender "Mr. Bradshaw, resident at Hamburgh (2nd letter)", p.277, date "A.D. 1654 (margin)" | Heading L23230 "A letter of intelligence, [March 20, 1654.]", signed "S." L23335/L23417, cipher para. marginal p.340 (L23236), decipherment marginal p.337 (L23353). The real second Bradshaw letter (heading L23175, signed "Rich. Bradshaw," L23222, dated "March 20, 1654") ends at L23227 with no cipher; this is a separate, later letter on the same page. |
+
+P5+P6 is still correctly one letter split into two extraction clusters (as `index.tsv` already
+had it), just under the wrong sender. Recipient for all three: not stated by name in the letter
+body (addressed "Sir"); Birch groups them among Thurloe's papers and the endorsement on the P4
+letter (L15667-71) explicitly names Thurloe's department: "W. S. Calais... His desire of a
+correspondence, and promise of performing some eminent service (in case my lord protector will
+engage to reward him) namely in discovering of the plott, &c." So "secretary Thurloe" (as
+`index.tsv` already has for recipient) is a reasonable inference, not itself verified from the
+letter's own salutation.
+
+### 12.2 Full cipher extent (heading to signature/postscript, hand-verified)
+
+The old windows were padded slices of the reported `ocr_lines`, not the whole letter, and cut two
+of the three items well short of their actual cipher content:
+
+| Row | Old window (`index.tsv`) | Full letter (this pass) | Cipher paragraph | Decipherment paragraph |
+|---|---|---|---|---|
+| P4 | 15485-15537 (53 lines) | 15467-15648 (182 lines) | ~15485-15600 | none |
+| P5+P6 | 22886-22949 + 23009-23035 (128 lines total, with a gap) | 22884-23063 (180 lines, continuous) | 22887-23059 (includes a ciphered postscript the old windows missed entirely) | 23065-23144 |
+| P7 | 23235-23346 (112 lines) | 23230-23422 (193 lines) | 23235-23348 (incl. a still-ciphered postscript, L23337-46, not covered by the decipherment) | 23350-23422 |
+
+### 12.3 tokens.tsv and cribs.tsv
+
+`pool_1654/extract_pool.py` (reproducible: `python3 extract_pool.py` from this folder against the
+restored djvu text; `--check` regenerates into a temp dir and diffs, rule 7) walks each letter's
+full verified span and emits `tokens.tsv` (one row per numeral token: letter, djvu line, raw OCR,
+cleaned value via the existing l/i->1, o->0 convention, doubtful flag, preceding/following clear
+word, and whether its line was cipher- or plain-classified) and `cribs.tsv` (numeral tokens merged
+into runs when within 3 lines of each other, with 2 lines of plain context each side).
+
+Per the brief's point 1, inline numerals inside otherwise-PLAIN lines are included -- but a first
+pass over ALL letter/digit-confusable single characters produced heavy false-positive noise: the
+word "I" (150 hits) and "O" (8 hits) read as cipher digit "1"/"0" on ordinary English lines, plus
+running-head marginalia ("A.D. 1654.", "Vol. xxiv. p. 76.", page-number/"STATE PAPERS OF" footers)
+landing inline with body text through OCR. Fixed by only applying the letter-digit substitution
+within lines the existing >=70%-numeral-token test already classifies as cipher, and by dropping
+plain-line tokens that are a bare 16xx year or sit next to a volume/page/running-head marker word
+(`is_marginal_noise` in `extract_pool.py`). Two known residual artifacts were left in rather than
+over-fit the filter: `P5_P6` L23015 has a genuine cipher run in a cipher-classified line that ends
+with the marginal note "A. D. 1654;" glued on (one stray 4-digit token), and L23013 has a lone
+page number "275" next to "&c," (not caught since "&c" wasn't in the marker list). Both are
+visible in `tokens.tsv` and excluded from the counts and the one-system test below.
+
+Token totals (cipher-classified lines + qualifying plain-line numerals, after the fix): P4 387,
+P5+P6 694, P7 814 -- 1,895 total, well above the old raw-token counts in `index.tsv` (184+337+
+167+574=1,262) because the windows now cover the whole letter instead of a padded slice.
+
+For P4 (no printed decipherment), `cribs.tsv`'s `expected_content` is this pass's own reading of
+the surrounding plain text, graded **CANDIDATE only**, per the brief. For P5+P6 and P7,
+`expected_content` points to `decipherment_P5_P6.txt` / `decipherment_P7.txt` -- the full text of
+Birch's own "The fame letter decypherd" paragraph, saved verbatim (OCR, not repaired). That is
+**FOUND** (Birch's print), not a candidate guess, and is not a per-run alignment: Birch's
+decipherment is one continuous paragraph per letter, not interlined group-by-group the way P11-13
+and the Fauconberg group are, so lining up individual cipher groups to individual plaintext words
+would need the same kind of DP alignment `tools/interlinear_align.py` used for P11-13 -- not run
+here (out of this brief's "no cryptanalysis" scope; it is known-plaintext alignment, not
+cryptanalysis, so it belongs with a solver, not this consolidation pass).
+
+### 12.4 One-system test (`pool_1654/analyze.py`, cipher-classified-line tokens only)
+
+| | P4 | P5+P6 | P7 | combined |
+|---|---|---|---|---|
+| n (clean tokens) | 233 | 437 | 482 | 1,152 |
+| distinct values | 33 | 41 | 48 | 55 |
+| range | 1-158 | 1-158 | 0-171 | 0-171 |
+| index of coincidence | 0.0503 | 0.0420 | 0.0410 | 0.0434 |
+| 3-digit groups | 2 (0.9%) | 3 (0.7%) | 7 (1.5%) | 12 (1.0%) |
+| top-5 values | 12,35,40,25,41 | 12,25,40,35,36 | 40,12,25,36,41 | 12,40,25,35,36 |
+
+(P5+P6's one stray "1654" marginal-note token, section 12.3, is excluded from range/n above.)
+Reference: uniform-55-symbol IC = 1/55 = 0.0182; English running-text letter IC ~ 0.0667.
+0.041-0.050 per letter sits about 35-45% of the way from uniform to English, consistent with a
+homophonic substitution over roughly 50 symbols for a 26-letter alphabet (a handful of homophones
+per common letter, not one-per-letter-frequency the way Montagu's E=18/42/56/93 needed).
+
+**Same system, strong evidence:** the top-5 most frequent values are the *same five numbers*
+(12, 25, 35, 36, 40, 41 -- six numbers across three top-5 lists of five) in all three texts, just
+reordered, and 30 of the 55-56 distinct values recur in all three texts (list in `analyze.py`
+output). For three cipher paragraphs by the same signed correspondent, written 13/20/30 March
+1654 seventeen days apart, this is exactly what one personal cipher used consistently across a
+run of letters looks like -- not proof (no control was run; this is a description of the raw
+statistics, not a cryptanalytic claim), but strong grounds for the recommendation in the headline
+above: build the P5+P6/P7 key from the print, then try it on P4 before spending anneal budget on
+P4 as an unkeyed target.
+
+### 12.5 Alphabet size / homophone structure estimate
+
+55 distinct clean values (excluding the one marginal-date artifact): 47 in the 1-43-ish range
+(homophones for the 26-letter alphabet, ~1.8 values/letter on average if spread evenly, though
+real cipher homophone counts are never even -- E-type letters get more), 8 distinct 3-digit values
+(127, 130, 136, 143, 153, 158, 159, 171 -- code words/names, the brief's own examples 130/143/81
+confirmed present, 81 is 2-digit here not 3). This is smaller than Montagu's (>600 elements per
+Tomokiyo) or Downing's (~600) systems -- consistent with "one small homophonic alphabet plus code
+words" for a single informant's personal correspondence, not a departmental cipher shared across
+many letters. **Total token pool available to a solver: 1,152 clean cipher-line tokens across three texts
+believed to share one system**, of which 437 (P5+P6) + 482 (P7) = 919 (80%) come from the two
+letters whose plaintext is already known from the print, leaving 233 (P4, 20%) as the only part
+still requiring a blind check against the resulting key -- meaning a solver does not need to
+attack this pool blind at all; it needs an alignment pass on the two found-solved letters, then a
+check of the resulting key against P4.
+
+### 12.6 Wider scan for other inline-numeral letters, vols 2-3 (`pool_1654/scan_headings.py`)
+
+Read-only scan (same >=70%-numeral-token line test, clustered) across the full text of both
+cached volumes, merging cipher-line clusters within 30 lines and reporting the nearest preceding
+correspondent heading. Confirms no other letter in vol. 2 or vol. 3 matches this pool's own style
+(small values 1-43 plus rare 3-digit) outside the rows already in `index.tsv` -- but surfaces a
+**different, larger-alphabet style** (interlinear syllable-per-number, values into the low
+thousands, e.g. "1016.", "2372.") already printed with its own interlinear decipherment, at three
+headings not in `index.tsv` at all: **Mr. James Nutley to secretary Thurloe** (vol. 3, heading
+djvu 31934, cipher+decipherment cluster ~32078-32098), **Attorney general Prideaux to secretary
+Thurloe** (vol. 3, heading djvu 34006, cluster ~34180-34210), and **Sir Benjamin Wright to
+secretary Thurloe** (vol. 2, heading djvu 55802, French-language cipher, cluster ~60096-60110,
+different symbol format again -- numerals plus odd single characters, not spot-read closely).
+These are a distinct system from this pool and out of this brief's scope (no cipher content read
+beyond the spot-checks quoted above) -- **flagged for LANE T as three more found-solved-by-print
+leads**, same shape as section 12.1's discovery, not folded into `index.tsv` or claimed as part of
+"the 1654 inline pool". One more found-solved item, also out of scope (different cipher type --
+letter substitution, not numeral): vol. 2 djvu L12398, "The fame decyphered by fecretary Thurloe",
+under a heading this pass did not identify (context at L12380-12400 mentions "8 Mar. 1653").
+
+### 12.7 Proposed `index.tsv` correction block (not applied -- LANE T's to apply)
+
+```tsv
+row	identifier	window_lines	printed_page	sender	recipient	date	cipher_system	n_cipher_lines	n_numeral_tokens_raw	keyed
+P4	collectionofstat03thur	15467-15648	76 (Vol. xxiv)	"A letter of W. S. from Calais" (unnamed informant, signs W.S.)	secretary Thurloe (inferred, not named)	Callais, March 13, [1654. N.S.]	Stamford/W.S. pool (open)	~50 (full letter; old count was window-limited)	387 (this pass, full letter)	no
+P5	collectionofstat03thur	22884-22949	319 (Vol. xxiv), cipher para	"A letter of intelligence" (W. Stamford, Calais)	secretary Thurloe (inferred)	Callais, March 30, [1654. N.S.]	Stamford/W.S. pool -- FOUND-SOLVED, decipherment printed L23065-23144	part of 694 (P5+P6 combined, full letter)	part of 694	no -> found-solved
+P6	collectionofstat03thur	22950-23063	319/324 (Vol. xxiv)	as P5 (same letter, second cluster + ciphered postscript L23057-63 the old window missed)	as P5	as P5	as P5	part of 694	part of 694	no -> found-solved
+P7	collectionofstat03thur	23230-23348	340 (Vol. xxiv), cipher para	"A letter of intelligence" (signed "S.", same hand as P4/P5/P6)	secretary Thurloe (inferred)	[March 20, 1654.]	Stamford/W.S. pool -- FOUND-SOLVED, decipherment printed L23350-23422	part of 814	814	no -> found-solved
+```
+
+### 12.8 Requests
+
+None. All four djvu volumes were already cached gzipped at `sources/ia-fulltext/thurloe-gz/`
+(fetched by an earlier LANE T worker, ROOM.md); this pass restored `collectionofstat02thur` and
+`collectionofstat03thur` with `zcat` and read nothing else. No subagents, no logins, no
+credentials. Per rule 10: nothing above is described as new, unpublished, unread, first or never
+printed -- P5+P6 and P7 are found-solved *by Birch's own 1742 print*, which is the opposite of a
+novelty claim, and no N-class is assigned here (a verifier's job, not this worker's).
+
 ## 13. P2, P3, P8 (LANE T worker D, 24 Sept 2026)
 
 Brief: confirm heading/signature/page/extent for P2, P3, P8; say whether the print carries a
