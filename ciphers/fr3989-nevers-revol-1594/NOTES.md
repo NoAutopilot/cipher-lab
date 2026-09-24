@@ -65,3 +65,13 @@ Leaf viewer: `https://gallica.bnf.fr/ark:/12148/btv1b9060514q/f340.item`.
 QUEUE.md KS-06 as scKEYS first wrote it gave sender "the Court (unnamed correspondent per henryiv2.htm)", date
 "c.1593-94", and canvas "~338, unconfirmed". All corrected here from Tomokiyo's page and the leaf itself: sender
 the Duke of Nevers, addressee Revol, date 12 March 1594, canvas 340. `kind` stays `recovery`.
+
+## Key no.60 applied (24 Sept 2026, LANE R5 F3)
+
+**Capped before pass A.** Only the blind pass B (Sonnet) is on disk: `passB.tsv`, 114 rows over the cipher stretches of lines L01, L02, L04, L06, L07, L08, L12 and L13, 46 of them flagged L. There is no reconciliation and no reading. Status stays `open`.
+
+- **Leaf.** Canvas 340 was eye-checked: "12 de Mars 1594", and there is **no interlinear decipherment**. The cipher consists of short stretches of signs, figures and roman-numeral groups (e.g. "xxxj", "xxij") inside clear French. Images are in `images/`: the native region 550,2250,3950,1650, 13 line bands, and `images/manifest.json`.
+- **Why it was stopped.** On the sister letter fr.3990 f.27, the same key did not read and the two passes agreed on only 54.8% of columns (see that NOTES). The same sign-identification blocker would apply to these fragments, and the cap does not cover pass A plus a settlement pass. The shared key, atom vocabulary and segmenter are ready: `tools/keys/key60.tsv`, `key60_atoms.md`, `key60_segment.py`.
+- **Suggestion (one line).** After a hand atlas exists, redo this leaf. It is a cheap one: about 110 atoms, and Tomokiyo's partial "de la diuision", "discours susdit" can serve as a crib.
+
+Requests: gallica.bnf.fr 2 for this leaf (thumbnail, native region).

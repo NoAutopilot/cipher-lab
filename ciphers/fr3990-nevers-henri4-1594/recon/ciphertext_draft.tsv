@@ -1,0 +1,558 @@
+line	position	sign	confidence	alt	why
+f27_L02	1	=Ma	M		agree-flagged
+f27_L02	2	=^te	M		agree-flagged
+f27_L02	3	λ	M		agree-flagged
+f27_L02	4	p	M	B:ꝑ	differ
+f27_L02	5	i	M		agree-flagged
+f27_L02	6	g	M		agree-flagged
+f27_L02	7	t	M		agree-flagged
+f27_L02	8	t	M	B:+	differ
+f27_L02	9	o	M		agree-flagged
+f27_L02	10	j	M		agree-flagged
+f27_L02	11	b	M	B:ß	differ
+f27_L02	12	v	M		agree-flagged
+f27_L02	13	z	M	A:-	gap
+f27_L02	14	4	M	B:+	differ
+f27_L02	15	g	M		agree-flagged
+f27_L02	16	t	M		agree-flagged
+f27_L02	17	c	M		agree-flagged
+f27_L02	18	f	M		agree-flagged
+f27_L02	19	8	M	B:ſ	differ
+f27_L02	20	///	M		agree-flagged
+f27_L02	21	f	M		agree-flagged
+f27_L02	22	y	M		agree-flagged
+f27_L02	23	p	M	B:ꝑ	differ
+f27_L02	24	v	M		agree-flagged
+f27_L02	25	ſ	M		agree-flagged
+f27_L02	26	o	M	A:-	gap
+f27_L02	27	∞	M	B:o	differ
+f27_L02	28	t	M	B:+	differ
+f27_L02	29	o	M		agree-flagged
+f27_L02	30	g	M	B:¢	differ
+f27_L02	31	g	M		agree-flagged
+f27_L02	32	t	M		agree-flagged
+f27_L02	33	h	M	B:ɔ	differ
+f27_L02	34	v	M		agree-flagged
+f27_L02	35	c	M		agree-flagged
+f27_L02	36	m	M	A:-	gap
+f27_L02	37	///	M	B:f	differ
+f27_L02	38	ſ	M		agree-flagged
+f27_L02	39	∂	M	B:-	gap
+f27_L02	40	o	M		agree-flagged
+f27_L02	41	20	M	B:2	differ
+f27_L02	42	o	M	B:0	differ
+f27_L02	43	o	M	B:0	differ
+f27_L02	44	ß	M		agree-flagged
+f27_L02	45	i	M	B:ι	differ
+f27_L02	46	∂	M	B:ϑ	differ
+f27_L02	47	v	M		agree-flagged
+f27_L02	48	∂	M	B:-	gap
+f27_L02	49	3	M	B:⌐	differ
+f27_L02	50	8	M		agree-flagged
+f27_L02	51	⊡	M	B:∞	differ
+f27_L02	52	t	M		agree-flagged
+f27_L02	53	o	M		agree-flagged
+f27_L02	54	c	M		agree-flagged
+f27_L02	55	m	M		agree-flagged
+f27_L02	56	E	M	B:e	differ
+f27_L02	57	y	M		agree-flagged
+f27_L03	1	8	M	B:x	differ
+f27_L03	2	+	M		agree-flagged
+f27_L03	3	i	M		agree-flagged
+f27_L03	4	g	M		agree-flagged
+f27_L03	5	t	M		agree-flagged
+f27_L03	6	4	M	B:+	differ
+f27_L03	7	f	M		agree-flagged
+f27_L03	8	p	M	B:f	differ
+f27_L03	9	^	M	B:ꝑ	differ
+f27_L03	10	j	M		agree-flagged
+f27_L03	11	g	M		agree-flagged
+f27_L03	12	i	M		agree-flagged
+f27_L03	13	v	M	A:-	gap
+f27_L03	14	∂	M	B:ſ	differ
+f27_L03	15	∞	M	B:a	differ
+f27_L03	16	b	M	B:ß	differ
+f27_L03	17	g	M		agree-flagged
+f27_L03	18	π	M	A:-	gap
+f27_L03	19	c	M	B:i	differ
+f27_L03	20	r	M	B:z	differ
+f27_L03	21	4	M	B:+	differ
+f27_L03	22	u	M	B:m	differ
+f27_L03	23	c	M		agree-flagged
+f27_L03	24	b	M	B:ß	differ
+f27_L03	25	p	M	B:ꝑ	differ
+f27_L03	26	i	M		agree-flagged
+f27_L03	27	//	M	B:///	differ
+f27_L03	28	∂	M	B:λ	differ
+f27_L03	29	f	M		agree-flagged
+f27_L03	30	#	M		agree-flagged
+f27_L03	31	g	M	B:q	differ
+f27_L03	32	E	M		agree-flagged
+f27_L03	33	8	M		agree-flagged
+f27_L03	34	u	M	B:v	differ
+f27_L03	35	∂	M	B:ꝑ	differ
+f27_L03	36	+	M		agree-flagged
+f27_L03	37	p	M	B:-	gap
+f27_L03	38	∂	M	B:ꝑ	differ
+f27_L03	39	3	M	B:r	differ
+f27_L03	40	ſ	M	B:i	differ
+f27_L03	41	^	M	B:2	differ
+f27_L03	42	⊡	M	B:π	differ
+f27_L03	43	π	M		agree-flagged
+f27_L03	44	∞	M		agree-flagged
+f27_L03	45	∂	M	B:ꝑ	differ
+f27_L03	46	f	M		agree-flagged
+f27_L03	47	4	M		agree-flagged
+f27_L03	48	b	M	B:ß	differ
+f27_L03	49	y	M		agree-flagged
+f27_L03	50	o	M		agree-flagged
+f27_L03	51	t	M	A:-	gap
+f27_L03	52	T	M	B:i	differ
+f27_L03	53	i	M		agree-flagged
+f27_L03	54	∂	M		agree-flagged
+f27_L03	55	‡	M	B:f	differ
+f27_L03	56	//	M	B:///	differ
+f27_L03	57	v	M	B:r	differ
+f27_L03	58	o	M		agree-flagged
+f27_L03	59	c	M		agree-flagged
+f27_L03	60	#	M		agree-flagged
+f27_L03	61	ß	M		agree-flagged
+f27_L03	62	f	M		agree-flagged
+f27_L04	1	∂	M	B:g	differ
+f27_L04	2	c	M	B:w	differ
+f27_L04	3	m	M	B:n	differ
+f27_L04	4	b	M		agree-flagged
+f27_L04	5	u	M		agree-flagged
+f27_L04	6	v	M	B:+	differ
+f27_L04	7	g	M		agree-flagged
+f27_L04	8	t	M		agree-flagged
+f27_L04	9	o	M		agree-flagged
+f27_L04	10	g	M		agree-flagged
+f27_L04	11	z	M	A:-	gap
+f27_L04	12	4	M	B:+	differ
+f27_L04	13	g	M		agree-flagged
+f27_L04	14	o	M		agree-flagged
+f27_L04	15	8	M	B:-	gap
+f27_L04	16	f	M	B:-	gap
+f27_L04	17	p	M	B:t	differ
+f27_L04	18	i	M	B:ꝑ	differ
+f27_L04	19	j	M		agree-flagged
+f27_L04	20	h	M		agree-flagged
+f27_L04	21	9	M	B:g	differ
+f27_L04	22	6	M	B:f	differ
+f27_L04	23	#	M	B:⊥	differ
+f27_L04	24	∂	M	B:ꝑ	differ
+f27_L04	25	g	M		agree-flagged
+f27_L04	26	λ	M		agree-flagged
+f27_L04	27	f	M		agree-flagged
+f27_L04	28	√	M	B:ſ	differ
+f27_L04	29	o	M		agree-flagged
+f27_L04	30	=	M		agree-flagged
+f27_L04	31	u	M	B:m	differ
+f27_L04	32	x	M		agree-flagged
+f27_L04	33	⊥	M		agree-flagged
+f27_L04	34	//	M	B:///	differ
+f27_L04	35	f	M		agree-flagged
+f27_L04	36	r	M	B:z	differ
+f27_L04	37	g	M		agree-flagged
+f27_L04	38	i	M		agree-flagged
+f27_L04	39	∂	M	B:w	differ
+f27_L04	40	∞	M	B:a	differ
+f27_L04	41	b	M	B:ß	differ
+f27_L04	42	g	M		agree-flagged
+f27_L04	43	t	M	A:-	gap
+f27_L04	44	c	M		agree-flagged
+f27_L04	45	c	M		agree-flagged
+f27_L04	46	m	M	A:-	gap
+f27_L04	47	u	M	B:f	differ
+f27_L04	48	‡	M	B:x	differ
+f27_L04	49	X	M	B:x	differ
+f27_L04	50	j	M		agree-flagged
+f27_L04	51	s	M	B:ſ	differ
+f27_L04	52	^	M		agree-flagged
+f27_L04	53	λ	M		agree-flagged
+f27_L04	54	g	M		agree-flagged
+f27_L04	55	z	M	A:-	gap
+f27_L04	56	3	M	B:m	differ
+f27_L04	57	u	M	B:^	differ
+f27_L05	1	c	M		agree-flagged
+f27_L05	2	b	M	B:ß	differ
+f27_L05	3	y	M		agree-flagged
+f27_L05	4	o	M		agree-flagged
+f27_L05	5	T	M	B:t	differ
+f27_L05	6	i	M		agree-flagged
+f27_L05	7	∂	M	B:v	differ
+f27_L05	8	=	M		agree-flagged
+f27_L05	9	v	M		agree-flagged
+f27_L05	10	∂	M	B:-	gap
+f27_L05	11	ſ	M		agree-flagged
+f27_L05	12	8	M		agree-flagged
+f27_L05	13	f	M		agree-flagged
+f27_L05	14	//	M	B:///	differ
+f27_L05	15	3	M	B:y	differ
+f27_L05	16	o	M		agree-flagged
+f27_L05	17	v	M		agree-flagged
+f27_L05	18	t	M		agree-flagged
+f27_L05	19	o	M		agree-flagged
+f27_L05	20	b	M	B:ß	differ
+f27_L05	21	g	M		agree-flagged
+f27_L05	22	∂	M	B:-	gap
+f27_L05	23	λ	M		agree-flagged
+f27_L05	24	//	M		agree-flagged
+f27_L05	25	π	M		agree-flagged
+f27_L05	26	ſ	M		agree-flagged
+f27_L05	27	o	M	B:-	gap
+f27_L05	28	o	M		agree-flagged
+f27_L05	29	8	M		agree-flagged
+f27_L05	30	///	M		agree-flagged
+f27_L05	31	f	M		agree-flagged
+f27_L05	32	X	M	B:x	differ
+f27_L05	33	h	M		agree-flagged
+f27_L05	34	ß	M		agree-flagged
+f27_L05	35	f	M		agree-flagged
+f27_L05	36	λ	M		agree-flagged
+f27_L05	37	u	M	B:⊥	differ
+f27_L05	38	///	M		agree-flagged
+f27_L05	39	f	M		agree-flagged
+f27_L05	40	F	M	B:⊥	differ
+f27_L05	41	∂	M		agree-flagged
+f27_L05	42	#	M		agree-flagged
+f27_L05	43	//	M	B:///	differ
+f27_L05	44	f	M		agree-flagged
+f27_L05	45	o	M		agree-flagged
+f27_L05	46	1	M	A:-	gap
+f27_L05	47	14	M	B:4	differ
+f27_L05	48	t	M		agree-flagged
+f27_L05	49	o	M		agree-flagged
+f27_L05	50	r	M		agree-flagged
+f27_L05	51	t	M		agree-flagged
+f27_L05	52	o	M		agree-flagged
+f27_L05	53	p	M	B:-	gap
+f27_L05	54	∂	M	B:ꝑ	differ
+f27_L05	55	b	M		agree-flagged
+f27_L05	56	s	M	B:ſ	differ
+f27_L05	57	^	M		agree-flagged
+f27_L06	1	g	M		agree-flagged
+f27_L06	2	//	M		agree-flagged
+f27_L06	3	∂	M	B:r	differ
+f27_L06	4	f	M		agree-flagged
+f27_L06	5	#	M	B:-	gap
+f27_L06	6	s	M	B:x	differ
+f27_L06	7	^	M		agree-flagged
+f27_L06	8	λ	M		agree-flagged
+f27_L06	9	p	M	B:-	gap
+f27_L06	10	i	M	B:ꝑ	differ
+f27_L06	11	t	M		agree-flagged
+f27_L06	12	o	M		agree-flagged
+f27_L06	13	h	M		agree-flagged
+f27_L06	14	#	M	B:x	differ
+f27_L06	15	i	M		agree-flagged
+f27_L06	16	b	M		agree-flagged
+f27_L06	17	E	M		agree-flagged
+f27_L06	18	∂	M	B:g	differ
+f27_L06	19	//	M		agree-flagged
+f27_L06	20	π	M		agree-flagged
+f27_L06	21	v	M		agree-flagged
+f27_L06	22	t	M		agree-flagged
+f27_L06	23	o	M		agree-flagged
+f27_L06	24	///	M	B:m	differ
+f27_L06	25	g	M		agree-flagged
+f27_L06	26	b	M		agree-flagged
+f27_L06	27	∞	M		agree-flagged
+f27_L06	28	t	M		agree-flagged
+f27_L06	29	o	M		agree-flagged
+f27_L06	30	=	M		agree-flagged
+f27_L06	31	∂	M	B:g	differ
+f27_L06	32	n	M		agree-flagged
+f27_L06	33	g	M		agree-flagged
+f27_L06	34	ß	M	A:-	gap
+f27_L06	35	b	M	B:2	differ
+f27_L06	36	20	M	B:0	differ
+f27_L06	37	c	M		agree-flagged
+f27_L06	38	T	M	B:t	differ
+f27_L06	39	b	M	B:ß	differ
+f27_L06	40	g	M		agree-flagged
+f27_L06	41	ſ	M		agree-flagged
+f27_L06	42	x	M	A:-	gap
+f27_L06	43	x	M	A:-	gap
+f27_L06	44	u	M	A:-	gap
+f27_L06	45	xxuj	M	B:j	differ
+f27_L06	46	∂	M	B:‡	differ
+f27_L06	47	f	M		agree-flagged
+f27_L06	48	#	M	B:x	differ
+f27_L06	49	∂	M	B:g	differ
+f27_L06	50	8	M		agree-flagged
+f27_L06	51	4	M		agree-flagged
+f27_L06	52	3	M		agree-flagged
+f27_L06	53	m	M		agree-flagged
+f27_L06	54	ß	M		agree-flagged
+f27_L06	55	8	M	B:y	differ
+f27_L07	1	⊡	M	B:⊥	differ
+f27_L07	2	m	M	B:∞	differ
+f27_L07	3	3	M		agree-flagged
+f27_L07	4	9	M	A:-	gap
+f27_L07	5	4	M		agree-flagged
+f27_L07	6	+	M	B:-	gap
+f27_L07	7	p	M	B:ꝑ	differ
+f27_L07	8	∂	M	B:a	differ
+f27_L07	9	b	M	B:ß	differ
+f27_L07	10	n	M		agree-flagged
+f27_L07	11	h	M		agree-flagged
+f27_L07	12	b	M	B:ß	differ
+f27_L07	13	u	M	B:⊥	differ
+f27_L07	14	1	M		agree-flagged
+f27_L07	15	o	M	B:0	differ
+f27_L07	16	g	M		agree-flagged
+f27_L07	17	t	M		agree-flagged
+f27_L07	18	#	M	B:2	differ
+f27_L07	19	f	M		agree-flagged
+f27_L07	20	8	M	B:ſ	differ
+f27_L07	21	///	M		agree-flagged
+f27_L07	22	f	M		agree-flagged
+f27_L07	23	b	M	B:-	gap
+f27_L07	24	^	M	B:ß	differ
+f27_L07	25	3	M	B:y	differ
+f27_L07	26	v	M		agree-flagged
+f27_L07	27	ſ	M		agree-flagged
+f27_L07	28	o	M		agree-flagged
+f27_L07	29	t	M		agree-flagged
+f27_L07	30	o	M		agree-flagged
+f27_L07	31	g	M	B:¢	differ
+f27_L07	32	X	M	B:x	differ
+f27_L07	33	h	M		agree-flagged
+f27_L07	34	∂	M		agree-flagged
+f27_L07	35	^	M	B:-	gap
+f27_L07	36	o	M		agree-flagged
+f27_L07	37	r	M	B:z	differ
+f27_L07	38	x	M		agree-flagged
+f27_L07	39	x	M		agree-flagged
+f27_L07	40	p	M	B:ꝑ	differ
+f27_L07	41	///	M		agree-flagged
+f27_L07	42	4	M	B:z	differ
+f27_L07	43	π	M		agree-flagged
+f27_L07	44	c	M		agree-flagged
+f27_L07	45	T	M	B:t	differ
+f27_L07	46	8	M		agree-flagged
+f27_L07	47	g	M		agree-flagged
+f27_L07	48	4	M	B:z	differ
+f27_L07	49	8	M	B:ß	differ
+f27_L07	50	8	M		agree-flagged
+f27_L07	51	f	M		agree-flagged
+f27_L07	52	v	M		agree-flagged
+f27_L07	53	π	M		agree-flagged
+f27_L08	1	ſ	M		agree-flagged
+f27_L08	2	+	M	B:⊥	differ
+f27_L08	3	///	M		agree-flagged
+f27_L08	4	u	M	B:v	differ
+f27_L08	5	r	M		agree-flagged
+f27_L08	6	∂	M	B:ꝑ	differ
+f27_L08	7	g	M	B:q	differ
+f27_L08	8	t	M		agree-flagged
+f27_L08	9	x	M		agree-flagged
+f27_L08	10	r	M	B:-	gap
+f27_L08	11	+	M	B:⊥	differ
+f27_L08	12	m	M		agree-flagged
+f27_L08	13	+	M	B:-	gap
+f27_L08	14	+	M	B:⊥	differ
+f27_L08	15	b	M	B:ß	differ
+f27_L08	16	⊡	M	B:⊥	differ
+f27_L08	17	b	M	B:g	differ
+f27_L08	18	f	M		agree-flagged
+f27_L08	19	8	M	B:ß	differ
+f27_L08	20	g	M		agree-flagged
+f27_L08	21	r	M		agree-flagged
+f27_L08	22	i	M	B:1	differ
+f27_L08	23	∂	M	B:o	differ
+f27_L08	24	p	M	B:ꝑ	differ
+f27_L08	25	i	M		agree-flagged
+f27_L08	26	h	M		agree-flagged
+f27_L08	27	o	M		agree-flagged
+f27_L08	28	v	M		agree-flagged
+f27_L08	29	E	M	B:z	differ
+f27_L08	30	∂	M	B:q	differ
+f27_L08	31	s	M	B:ſ	differ
+f27_L08	32	^	M		agree-flagged
+f27_L08	33	⊡	M	B:∞	differ
+f27_L08	34	m	M	B:∞	differ
+f27_L08	35	∂	M	B:¢	differ
+f27_L08	36	g	M		agree-flagged
+f27_L08	37	l	M	B:-	gap
+f27_L08	38	l	M	B://	differ
+f27_L08	39	b	M	B:ß	differ
+f27_L08	40	X	M	B:x	differ
+f27_L08	41	v	M	B:z	differ
+f27_L08	42	20	M	B:o	differ
+f27_L08	43	c	M		agree-flagged
+f27_L08	44	g	M	B:q	differ
+f27_L08	45	v	M		agree-flagged
+f27_L08	46	///	M		agree-flagged
+f27_L08	47	b	M	B:ß	differ
+f27_L08	48	p	M	B:ꝑ	differ
+f27_L08	49	i	M		agree-flagged
+f27_L08	50	∂	M	B:-	gap
+f27_L08	51	h	M		agree-flagged
+f27_L08	52	y	M	A:-	gap
+f27_L08	53	X	M	B:x	differ
+f27_L08	54	4	M	B:f	differ
+f27_L08	55	v	M	B:q	differ
+f27_L08	56	m	M	B:ꝑ	differ
+f27_L09	1	∂	M		agree-flagged
+f27_L09	2	///	M		agree-flagged
+f27_L09	3	g	M		agree-flagged
+f27_L09	4	v	M		agree-flagged
+f27_L09	5	x	M		agree-flagged
+f27_L09	6	x	M		agree-flagged
+f27_L09	7	2	M	A:-	gap
+f27_L09	8	20	M	B:0	differ
+f27_L09	9	//	M		agree-flagged
+f27_L09	10	u	M	B:-	gap
+f27_L09	11	X	M	B:m	differ
+f27_L09	12	∂	M	B:x	differ
+f27_L09	13	G	M	B:ß	differ
+f27_L09	14	l	M	B:c	differ
+f27_L09	15	l	M	B:#	differ
+f27_L09	16	h	M		agree-flagged
+f27_L09	17	ſ	M	B:-	gap
+f27_L09	18	+	M	B:⊥	differ
+f27_L09	19	o	M		agree-flagged
+f27_L09	20	x	M	A:-	gap
+f27_L09	21	X	M	B:2	differ
+f27_L09	22	4	M		agree-flagged
+f27_L09	23	#	M	B:z	differ
+f27_L09	24	x	M		agree-flagged
+f27_L09	25	ß	M		agree-flagged
+f27_L09	26	∂	M	B:r	differ
+f27_L09	27	b	M	B:^	differ
+f27_L09	28	8	M	B:ß	differ
+f27_L09	29	X	M	B:y	differ
+f27_L09	30	c	M	B:x	differ
+f27_L09	31	m	M	B:u	differ
+f27_L09	32	m	M		agree-flagged
+f27_L09	33	f	M		agree-flagged
+f27_L09	34	#	M		agree-flagged
+f27_L09	35	g	M		agree-flagged
+f27_L09	36	v	M		agree-flagged
+f27_L09	37	8	M		agree-flagged
+f27_L09	38	7	M		agree-flagged
+f27_L09	39	o	M	B:0	differ
+f27_L09	40	c	M		agree-flagged
+f27_L09	41	8	M		agree-flagged
+f27_L09	42	x	M		agree-flagged
+f27_L09	43	u	M		agree-flagged
+f27_L09	44	g	M		agree-flagged
+f27_L09	45	π	M		agree-flagged
+f27_L09	46	///	M		agree-flagged
+f27_L09	47	8	M		agree-flagged
+f27_L09	48	g	M		agree-flagged
+f27_L09	49	#	M		agree-flagged
+f27_L09	50	π	M		agree-flagged
+f27_L09	51	v	M		agree-flagged
+f27_L09	52	y	M	A:-	gap
+f27_L09	53	v	M		agree-flagged
+f27_L09	54	:	M	B:-	gap
+f27_L09	55	ſ	M	B:-	gap
+f27_L09	56	#	M		agree-flagged
+f27_L10	1	r	M		agree-flagged
+f27_L10	2	c	M		agree-flagged
+f27_L10	3	^	M	B:-	gap
+f27_L10	4	g	M		agree-flagged
+f27_L10	5	t	M		agree-flagged
+f27_L10	6	π	M		agree-flagged
+f27_L10	7	ß	M		agree-flagged
+f27_L10	8	E	M		agree-flagged
+f27_L10	9	X	M	B:x	differ
+f27_L10	10	///	M		agree-flagged
+f27_L10	11	y	M		agree-flagged
+f27_L10	12	j	M		agree-flagged
+f27_L10	13	o	M		agree-flagged
+f27_L10	14	⊡	M	B:T	differ
+f27_L10	15	∞	M		agree-flagged
+f27_L10	16	+	M	B:t	differ
+f27_L10	17	o	M		agree-flagged
+f27_L10	18	f	M		agree-flagged
+f27_L10	19	^	M	B:ſ	differ
+f27_L10	20	g	M		agree-flagged
+f27_L10	21	4	M		agree-flagged
+f27_L10	22	∂	M	B:y	differ
+f27_L10	23	//	M		agree-flagged
+f27_L10	24	π	M		agree-flagged
+f27_L10	25	u	M		agree-flagged
+f27_L10	26	i	M	A:-	gap
+f27_L10	27	10	M	B:o	differ
+f27_L10	28	g	M		agree-flagged
+f27_L10	29	ſ	M		agree-flagged
+f27_L10	30	o	M		agree-flagged
+f27_L10	31	4	M	B:+	differ
+f27_L10	32	b	M	B:ß	differ
+f27_L10	33	8	M		agree-flagged
+f27_L10	34	v	M		agree-flagged
+f27_L10	35	f	M		agree-flagged
+f27_L10	36	n	M		agree-flagged
+f27_L10	37	X	M	B:x	differ
+f27_L10	38	11	M	B://	differ
+f27_L10	39	t	M		agree-flagged
+f27_L10	40	o	M		agree-flagged
+f27_L10	41	g	M	B:¢	differ
+f27_L10	42	v	M		agree-flagged
+f27_L10	43	8	M		agree-flagged
+f27_L10	44	E	M	B:3	differ
+f27_L10	45	8	M		agree-flagged
+f27_L10	46	4	M	B:+	differ
+f27_L10	47	f	M		agree-flagged
+f27_L10	48	8	M	B:ß	differ
+f27_L10	49	=	M		agree-flagged
+f27_L10	50	///	M		agree-flagged
+f27_L10	51	o	M		agree-flagged
+f27_L10	52	g	M		agree-flagged
+f27_L11	1	x	M	A:-	gap
+f27_L11	2	x	M	A:-	gap
+f27_L11	3	x	M	A:-	gap
+f27_L11	4	xxxi	M	B:i	differ
+f27_L11	5	g	M		agree-flagged
+f27_L11	6	f	M	B:-	gap
+f27_L11	7	^	M	B:ſ	differ
+f27_L11	8	t	M		agree-flagged
+f27_L11	9	o	M		agree-flagged
+f27_L11	10	w	M		agree-flagged
+f27_L11	11	v	M		agree-flagged
+f27_L11	12	π	M		agree-flagged
+f27_L11	13	#	M	B:⊥	differ
+f27_L11	14	v	M		agree-flagged
+f27_L11	15	f	M		agree-flagged
+f27_L11	16	b	M	B:-	gap
+f27_L11	17	f	M	B:ß	differ
+f27_L11	18	#	M		agree-flagged
+f27_L11	19	∂	M	B:y	differ
+f27_L11	20	4	M		agree-flagged
+f27_L11	21	v	M		agree-flagged
+f27_L11	22	f	M		agree-flagged
+f27_L11	23	g	M		agree-flagged
+f27_L11	24	T	M	B:t	differ
+f27_L11	25	g	M		agree-flagged
+f27_L11	26	8	M	B:ſ	differ
+f27_L11	27	T	M	B:t	differ
+f27_L11	28	g	M		agree-flagged
+f27_L11	29	f	M	B:ſ	differ
+f27_L11	30	^	M	B:v	differ
+f27_L11	31	n	M		agree-flagged
+f27_L11	32	g	M		agree-flagged
+f27_L11	33	f	M		agree-flagged
+f27_L11	34	///	M		agree-flagged
+f27_L11	35	o	M		agree-flagged
+f27_L11	36	X	M	B:x	differ
+f27_L11	37	⊡	M	B:T	differ
+f27_L11	38	∞	M		agree-flagged
+f27_L11	39	+	M		agree-flagged
+f27_L11	40	f	M	B:x	differ
+f27_L11	41	θ	M	B:¢	differ
+f27_L11	42	o	M		agree-flagged
+f27_L11	43	=	M		agree-flagged
+f27_L11	44	¢	M		agree-flagged
+f27_L11	45	8	M	B:ſ	differ
+f27_L11	46	1	M	B:i	differ
+f27_L11	47	∂	M		agree-flagged
+f27_L11	48	///	M	B:m	differ
+f27_L11	49	b	M	B:ß	differ
+f27_L11	50	π	M		agree-flagged
+f27_L11	51	T	M	B:t	differ
+f27_L11	52	m	M	B:∞	differ
