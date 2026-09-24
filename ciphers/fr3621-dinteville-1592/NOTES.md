@@ -1,5 +1,9 @@
 blocked
 
+**Edition check (LANE N3 csED2, 24 Sept 2026 16:17 UTC):** hold not lifted -- Gomberville not reached (same
+result as CS2-06). Substitute sources read; one flags a probable catalogue misidentification of the
+correspondent (see section 2 below). Brief `.claude/briefs/runs/2026-09-24-lane-n3-csED2.md`.
+
 # Dinteville (Langres) to the Duke of Nevers, 3 July 1592 — BnF Français 3621 no. 116 (f. 130), DECODE R9451
 
 QUEUE row: CS2-16 (`sources/solver-diffs/2026-09-24-cyphersolver-site.tsv`, LANE N3 scout scCS2, 24 September
@@ -74,3 +78,41 @@ Credit: D. Bourdeau, cyphersolver, https://dbourdeau.github.io/cyphersolver/ (ca
 
 Not decoded, not transcribed here (out of scope for check-solved). Rule 10: no novelty claim made; this is a
 search result, not a verifier's classification.
+
+## Edition check, LANE N3 csED2, 24 September 2026 (IA + Gallica SRU slots)
+
+**Gomberville, *Mémoires du duc de Nevers* (1665) -- not reached.** Same result as the sibling row CS2-06
+(fr3625-lauriere-1593): located on Gallica (`bpt6k6435941k`, `bpt6k8717151d`) via SRU, absent from archive.org
+under Gomberville's creator field or a Nevers-title 1600-1700 date search, Google-Books-only otherwise
+(out of route), and Gallica SRU cannot search full OCR text. **Row stays `blocked` on this alone.**
+
+**Substitute 1: Berger de Xivrey, *Recueil des lettres missives de Henri IV*, tome 3 (1589-1593), archive.org,
+read in full.** `grep -i Dinteville`: 16 hits, all Henri IV's own outgoing letters *to* "Mons. de Dinteville" as a
+royal military lieutenant (e.g. pp. cited in the OCR near "A MONS. DE DINTEVILLE... Jay destiné deux cens
+chevaux à Langres"), plus an editorial footnote identifying him: "Joachim, baron de Dinteville et de ...,
+fils de Jean de Dinteville et de Gabrielle ..., mourut à Dinteville le 1er octobre 1607." No cipher content, no
+decipherment, and this is Henri IV's side of the correspondence, not Dinteville's letters to Nevers -- but it
+independently establishes the correspondent's identity and dates.
+
+**Substitute 2: *Les luttes religieuses en Champagne au XVIe siècle: la Ligue* (Pérot, 1911), archive.org,
+read in full.** Extensive coverage of "M. de Dinteville, lieutenant général" at Troyes and Langres through the
+1580s-90s, sourced throughout from "Correspondance inédite de M. de Dinteville" (cited as unpublished, apud
+*Revue de Champagne et de Brie*) -- i.e. a manuscript source this historian read and quoted from, not this
+edition's own text, and no passage matches the 3 July 1592 letter to Nevers or names a decipherment. No hit for
+"évêque"/"bishop" near "Langres" or "Dinteville" anywhere in the volume.
+
+**Flag for whoever next touches this target: the correspondent may be misidentified in this target's own
+NOTES.md.** Line 3 of this file (above) calls the signer "Dinteville (Bishop of Langres -- see catalogue and BnF
+record)". Both sources read this pass, plus a WebSearch check (`en.wikipedia.org/wiki/Joachim_de_Dinteville`,
+found 24 Sept 2026), identify the "M. de Dinteville" active at Langres in exactly this period as **Joachim,
+baron de Dinteville**, the king's lieutenant-général holding Langres and Troyes for Henri IV -- a layman and
+soldier, not a bishop. Langres was a duchy-peerage held by its bishop ("duc et évêque de Langres"), a distinct
+office and (so far as found this pass) a different person. No source read this pass supports "Bishop of Langres"
+for this letter's signer; whoever set that in the catalogue check should re-verify it against the BnF record
+before it is repeated. Also worth a look, not pursued further this pass (out of scope, a lead not a finding):
+WebSearch surfaced BnF fr. 3623 as holding letters from "J., baron de Dinteville" to Nevers dated Langres,
+5 July and 13 July 1592 -- a sibling correspondence in the same month, days after this letter, in a different
+volume from fr.3621. Worth checking for a decipherment or a key before this row's next escalation.
+
+Credit: unchanged from the check-solved pass (D. Bourdeau, cyphersolver, `dinteville1592/`). Rule 10: no novelty
+claim made.

@@ -1,4 +1,10 @@
-blocked
+partial
+
+**Edition check (LANE N3 csED2, 24 Sept 2026 16:17 UTC):** fr.3985 no. 7 (Mauclerc to Creil) has a strong print
+match -- see section below, "possible found-solved: fr.3985 no. 7." The four fr.3984 items (Baudouin-Desportes)
+stay `blocked`: the named edition (Acta Nuntiaturae Gallicae, Sega legation) is a modern critical series not
+digitised on archive.org (0 hits for "acta nuntiaturae gallicae" in title, checked 24 Sept 2026) or found on
+HathiTrust. Brief `.claude/briefs/runs/2026-09-24-lane-n3-csED2.md`.
 
 # Papal-side letters of the week of Henri IV's abjuration, 14 May - 4 Aug 1593 — BnF fr. 3984 nos. 6, 8, 88, 90; fr. 3985 no. 7
 
@@ -87,5 +93,58 @@ Rome), the Filippo Sega legation volume for 1592-94 (Sega was legate 15 Apr 1592
 "Filippo Sega") -- but a WebSearch for it on archive.org or HathiTrust (24 Sept 2026) returned no direct link to
 that specific volume; it is a modern critical edition, likely print-only or paywalled. Reaching it (interlibrary
 loan or a library copy) is the next step before this row can be promoted past `blocked`.
+
+## Edition check, LANE N3 csED2, 24 September 2026 (IA + Gallica SRU slots)
+
+Brief: locate and read the edition(s) for the date and decide whether the cipher passages are printed. Route
+used: archive.org advancedsearch + direct `_djvu.txt` downloads (IA slot), Gallica SRU (text-only metadata
+search, Gallica slot), WebSearch, a fresh shallow clone of dbourdeau/cyphersolver (grep only). No Google Books
+(excluded by this brief).
+
+**Acta Nuntiaturae Gallicae (Sega's French legation, 1592-94), the volume this row's own brief names.**
+`archive.org/advancedsearch.php?q=title:(acta nuntiaturae gallicae)` returns 0 results (checked 24 Sept 2026);
+no HathiTrust record found by WebSearch either. The series is a 20th-century critical edition (École Française
+de Rome / Université Pontificale Grégorienne), still being published as late as 2003 for other legations in the
+same house style -- consistent with being under copyright and not digitised on an open archive. **Still
+unreachable; still the gate for the four fr.3984 items.**
+
+**Substitute route named in this brief: *Mémoires de la Ligue* (Goujet, 1758), vol. 5-6.** Both located on
+archive.org and read as full djvu text: `memoiresdelaligu05goul` (1758) and `memoiresdelaligu06goul` (1758).
+Grepped for "Baudouin", "Desportes", "Aldobrandini", "Frachetta", "Creil", "Mauclerc", "Sega": no hit for
+Baudouin-Desportes, Aldobrandini or Frachetta in either volume (the "Baudouin" hits in vol. 5 are all a
+different man, the Duc de Mayenne's own chancery secretary Baudouin, e.g. p.412 "Par Monsieur, Baudouin" --
+unrelated). Philippe Sega himself is mentioned several times in vol. 5 (as the League's papal legate, e.g.
+"Philippe Sega, Cardinal de Plaisance", pp. ~9270/10058/14452/15386/16773/22340/26547/31149) but only as an actor
+in the narrative, never as the source of a printed cipher or a decipherment of his own correspondence.
+
+**Possible found-solved: fr.3985 no. 7 (Mauclerc to Creil).** `memoiresdelaligu05goul`, pp. 411-414 (table of
+contents entry: "Copie des Lettres du Docteur Mauclerc, envoyées de Paris au Docteur de Creil à Rome. 411"),
+prints one letter in full under that exact heading: sender "Mauclerc" (a Sorbonne doctor), addressee "Docteur de
+Creil à Rome", **dated "A Paris, le quatre d'Août 1593"** -- 4 August 1593, the last day of this row's own
+14 May-4 Aug 1593 window, and a correspondent pair (a doctor named Mauclerc writing to a doctor named Creil in
+Rome) that is otherwise unattested anywhere else searched. dbourdeau/cyphersolver's `sega1593/NOTES.md` (fresh
+shallow clone, 24 Sept 2026) independently confirms fr.3985 no. 7 is catalogued as "Mauclerc -> Creil" and states
+explicitly it "was fetched by the previous session but not examined" -- so no one has checked this letter's
+content against a print before now. The letter's subject matter (League secrets: Mayenne's stalling over the
+Guise-Infanta marriage project, the Estates, Spanish demands, a Sorbonne informant reporting to a companion at
+Rome) is exactly the kind of material that would travel enciphered from Paris to a papal-circle recipient in
+1593, and the printer's own frame calls it "ce qu'écrivit un Sorboniste à certain sien compagnon à Rome" (secret
+correspondence revealing League plans), consistent with an intercepted/deciphered dispatch rather than an open
+letter.
+
+**Not independently confirmed and flagged for whoever picks this up:** (1) this pass did not fetch the fr.3985
+Gallica leaf itself (canvas range c.6-13, `btv1b90606498`) to check the date and hand against the print --
+gallica.bnf.fr IIIF/image fetch is outside this brief's granted hosts (SRU only); the prior check-solved pass's
+own leaf fetch (canvas f8, "3 di agosto 1593" visible) may not even be no. 7's actual folio, since that pass
+itself says "fr.3985's cipher passages are not necessarily on this exact folio." (2) No sentence in the print,
+in Bourdeau's notes, or found by WebSearch explicitly says this printed letter *is* the deciphered form of the
+BnF fr.3985 manuscript -- the match rests on correspondent-pair + date coincidence, which is strong (a two-name
+match plus a same-day date is not the kind of thing that happens by chance) but not a citation naming the
+manuscript. A worker with the image (or a verifier) should compare the print's text against the clear-French
+portions visible on the leaf before this is called solved outright.
+
+Credit for this find: none claimed -- the letter was already in print (Goujet 1758); this pass only located and
+read the volume. Rule 10: no novelty claim made; this is a search result (a print located), not a verifier's
+classification, and not a claim that fr.3985 no. 7 is "unpublished" (the opposite is being reported).
 
 Not decoded, not transcribed here (out of scope for check-solved). Rule 10: no novelty claim made.

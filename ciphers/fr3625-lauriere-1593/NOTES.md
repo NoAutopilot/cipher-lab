@@ -1,5 +1,10 @@
 blocked
 
+**Edition check (LANE N3 csED2, 24 Sept 2026 16:17 UTC):** hold not lifted -- the named edition (Gomberville's
+*Mémoires du duc de Nevers*, 1665) could not be reached via this pass's granted hosts (archive.org, Gallica SRU).
+Two substitute sources read in full, both negative for "Laurière" -- see section 2 below. Brief
+`.claude/briefs/runs/2026-09-24-lane-n3-csED2.md`.
+
 # Laurière to Nevers, Châlons, 9 July 1593 — BnF fr. 3625 no. 55 (f. 66r)
 
 QUEUE row: CS2-06 (`sources/solver-diffs/2026-09-24-cyphersolver-site.tsv`, LANE N3 scout scCS2, 24 September
@@ -66,3 +71,35 @@ solution). S. Tomokiyo, "Undeciphered Historical Ciphers" and Nevers cipher-key 
 
 Not decoded, not transcribed here (out of scope for check-solved). Rule 10: no novelty claim made; this is a
 search result, not a verifier's classification.
+
+## Edition check, LANE N3 csED2, 24 September 2026 (IA + Gallica SRU slots)
+
+**Gomberville, *Mémoires du duc de Nevers* (Paris, 1665, 2 vols; the edition this row's own brief names) --
+still not reached.** Located on Gallica as `bpt6k6435941k` (Premiere partie) and `bpt6k8717151d` (seconde partie)
+via Gallica SRU (`dc.title all "memoires duc nevers"`, 24 Sept 2026), matching the two arks Bourdeau's own working
+folder cites. Not on archive.org: `advancedsearch.php?q=creator:Gomberville` (17 hits, none this title) and
+`q=title:(nevers) AND date:[1600 TO 1700]` (12 hits, none this title) both checked, 24 Sept 2026. WebSearch finds
+only Google Books scans of it (`id=ztkvMWA_yO0C`, `id=H2eV4wAmIr0C`) -- checked both against archive.org's
+`bub_gb_<id>` mirror convention (the pattern that worked for Ribier in the Seure edition check): both
+`archive.org/metadata/bub_gb_ztkvMWA_yO0C` and `.../bub_gb_H2eV4wAmIr0C` return empty (`{}`), i.e. not mirrored
+on IA. Google Books itself is out of this brief's route. Gallica SRU indexes catalogue metadata, not full OCR
+text at passage level (a test query "Lauriere Chalons Nevers 1593" surfaced the manuscript's own Gallica image
+and BnF catalogue record, not either Gomberville tome -- so SRU cannot confirm presence or absence inside the
+volume); IIIF/`.texteBrut` access to actually read the tomes is outside this brief's grant (SRU only). **The
+primary named edition remains unread; this alone keeps the row `blocked` per the lane rule.**
+
+**Substitute sources, both read in full, both negative for "Laurière":**
+- Berger de Xivrey (ed.), *Recueil des lettres missives de Henri IV*, tome 3, 1589-1593 (archive.org
+  `recueil-des-lettres-missives-de-...-henri-iv-tome-3-1589-1593`, djvu text). This is Henri IV's own outgoing
+  letters, not third-party correspondence to Nevers, so it was never likely to carry this letter -- read anyway
+  since it is the edition this row's brief names for Dinteville/Champagne. `grep -i "Lauri"`: **0 hits.** (It does
+  carry several of Henri IV's own letters "A Mons. de Dinteville", relevant to the sibling row CS2-16, not this one.)
+- *Les luttes religieuses en Champagne au XVIe siècle: la Ligue* (E. Pérot, 1911, archive.org `lesluttesreligie00pr`,
+  djvu text), the Champagne-Ligue regional history named in this row's brief. `grep -i "Lauri"`: **0 hits.**
+
+Neither substitute names Laurière or prints anything from this letter. This does not lift the block (the primary
+edition is still unread), but it removes two of the alternate routes the brief named without needing to promote
+the row.
+
+Credit: unchanged from the check-solved pass (D. Bourdeau, cyphersolver, `champagne1590/`; S. Tomokiyo). Rule 10:
+no novelty claim made.

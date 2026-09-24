@@ -1,5 +1,10 @@
 blocked
 
+**Edition check (LANE N3 csED2, 24 Sept 2026 16:17 UTC):** hold not lifted -- the named series (Nuntiaturberichte
+aus Deutschland III. Abteilung; Acta Nuntiaturae Gallicae) is identified down to the specific volume but is a
+modern critical edition, not digitised on this pass's granted hosts. Brief
+`.claude/briefs/runs/2026-09-24-lane-n3-csED2.md`.
+
 # Desiderio l'Abbé to Nevers, Prague and Breslau, 2 March & 2 May 1577 — BnF fr. 3198 nos. 30, 37
 
 QUEUE row: CS2-28 (`sources/solver-diffs/2026-09-24-cyphersolver-site.tsv`, LANE N3 scout scCS2, 24 September
@@ -73,3 +78,28 @@ research, cipher not read (not a solution).
 
 Not decoded, not transcribed here (out of scope for check-solved). Rule 10: no novelty claim made; this is a
 search result, not a verifier's classification.
+
+## Edition check, LANE N3 csED2, 24 September 2026 (IA + Gallica SRU slots)
+
+**Nuntiaturberichte aus Deutschland, III. Abteilung (1572-85) -- the specific volume identified, and it is not
+reachable.** WebSearch (24 Sept 2026) finds the Delfino/Portia nunciature at Rudolf II's Prague court
+(1577-1578) is III. Abteilung **Band IX**, edited by Alexander Koller, published Tübingen, 2003 -- a 21st-century
+critical edition. Not on archive.org: `advancedsearch.php?q=title:(acta nuntiaturae gallicae)` returns 0 hits
+(the Gallicae series is the parallel French one, checked for the sibling row CS2-04 and equally absent); the
+archive.org Nuntiaturberichte holdings found by WebSearch (`bub_gb_JjaxAAAAIAAJ`, `nuntiaturberich11romgoog`,
+`bub_gb_IjWxAAAAIAAJ`, `bub_gb_5zKxAAAAIAAJ`, `bub_gb_yCqxAAAAIAAJ`) are all I. and II. Abteilung (1533-1572)
+Google-Books-era scans, all predating this volume and out of date range; none is Band IX. No HathiTrust record
+found by WebSearch either. **Not reached this pass; still the gate for this row.**
+
+**Venetian dispatches from the Imperial court, 1577** (the softer lead this row's brief also names): not pursued
+this pass beyond the WebSearch above -- a Calendar of State Papers Venice volume covering 1577 would report a
+Venetian ambassador's own business, not print L'Abbé's (a French agent's) cipher passages even if it mentioned
+him, so it could not itself answer "are the cipher passages printed" the way the primary series could. Flagged
+as a lead only, not chased further (in-budget triage, not a search failure).
+
+No change to the underlying verdict: Bourdeau's own two-session attempt (`labbe1582/`, `REASSESSMENT.md`) remains
+the deepest source, and this row's own fr. 4695 no. 51 lead (a possibly-surviving earlier cipher enclosure) is
+still unlocated.
+
+Credit: unchanged from the check-solved pass (D. Bourdeau, cyphersolver, `labbe1582/`). Rule 10: no novelty claim
+made.
