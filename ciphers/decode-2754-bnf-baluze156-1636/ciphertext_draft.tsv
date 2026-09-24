@@ -1,0 +1,138 @@
+line	position	sign	confidence	alt	why
+L12	1	✳	M	B:[blob]	differ
+L12	2	x	H		agree
+L12	3	12	H		agree
+L12	4	p	M		agree-flagged
+L12	5	f	H		agree
+L12	6	b	M		agree-flagged
+L12	7	t	H		agree
+L12	8	r	H		agree
+L12	9	tt	M		agree-flagged
+L12	10	u	M		agree-flagged
+L12	11	o	H		agree
+L12	12	7	M		agree-flagged
+L12	13	4	H		agree
+L12	14	10	H		agree
+L12	15	g	H		agree
+L12	16	e	H		agree
+L23	1	n	M		agree-flagged
+L23	2	Z	H		agree
+L23	3	y	H		agree
+L23	4	10	H		agree
+L23	5	p	M		agree-flagged
+L23	6	ll	H		agree
+L23	7	g	H		agree
+L23	8	7	M		agree-flagged
+L23	9	4	H		agree
+L23	10	t	H		agree
+L23	11	o	H		agree
+L23	12	e	H		agree
+L24	1	n	M		agree-flagged
+L24	2	f	M		agree-flagged
+L24	3	6	H		agree
+L24	4	h	M		agree-flagged
+L24	5	Φ	M	B:Ø	differ
+L24	6	4	H		agree
+L24	7	p	M		agree-flagged
+L24	8	g	M	B:9	differ
+L24	9	y	M		agree-flagged
+L24	10	u	H		agree
+L24	11	nn	H		agree
+L24	12	E	H		agree
+L24	13	tt	H		agree
+L24	14	ll	H		agree
+L25	1	d	M	A:-	gap
+L25	2	do	M	B:o	differ
+L25	3	4	H		agree
+L25	4	n	M		agree-flagged
+L25	5	9	M		agree-flagged
+L25	6	ff	H		agree
+L25	7	4	H		agree
+L25	8	E	M		agree-flagged
+L25	9	p	M	B:y	differ
+L25	10	C	M	B:c	differ
+L25	11	9	M		agree-flagged
+L25	12	9	M		agree-flagged
+L25	13	u	H		agree
+L25	14	ff	H		agree
+L25	15	ll	H		agree
+L25	16	r	M		agree-flagged
+L25	17	m	H		agree
+L25	18	c	M	B:-	gap
+L25	19	o	M	B:c̃o	differ
+L25	20	h	H		agree
+L25	21	Z	H		agree
+L25	22	p	H		agree
+L25	23	a	H		agree
+L25	24	g	M		agree-flagged
+L26	1	94	H		agree
+L27	1	n	M		agree-flagged
+L27	2	tt	H		agree
+L27	3	8	M		agree-flagged
+L27	4	4	H		agree
+L27	5	Z	H		agree
+L27	6	p	M		agree-flagged
+L28	1	u	H		agree
+L28	2	nn	H		agree
+L28	3	ll	H		agree
+L28	4	ff	H		agree
+L28	5	9	M		agree-flagged
+L28	6	94	H		agree
+L28	7	9	M		agree-flagged
+L28	8	b	M		agree-flagged
+L28	9	nn	H		agree
+L28	10	4	H		agree
+L28	11	u	H		agree
+L28	12	Sr	M	B:[mark]	differ
+L28	13	p	M		agree-flagged
+L28	14	9	M		agree-flagged
+L28	15	f	H		agree
+L28	16	c	M		agree-flagged
+L28	17	c̃	M	A:-	gap
+L32	1	9	H		agree
+L32	2	7	H		agree
+L32	3	4	H		agree
+L32	4	t	H		agree
+L32	5	o	H		agree
+L32	6	p	H		agree
+L33	1	g	H		agree
+L33	2	n	H		agree
+L33	3	36	M	B:26	differ
+L34	1	6	H		agree
+L34	2	9	H		agree
+L34	3	tt	H		agree
+L34	4	g	M		agree-flagged
+L34	5	n	H		agree
+L34	6	ttu	M	B:bu	differ
+L35	1	x	H		agree
+L35	2	9	H		agree
+L35	3	p	M		agree-flagged
+L35	4	u	H		agree
+L35	5	4	H		agree
+L35	6	m	H		agree
+L36	1	n	H		agree
+L36	2	Z	H		agree
+L36	3	p	M		agree-flagged
+L36	4	E	H		agree
+L36	5	p	M		agree-flagged
+L36	6	ll	H		agree
+L36	7	g	H		agree
+L36	8	h	M		agree-flagged
+L36	9	o	H		agree
+L36	10	q	H		agree
+L36	11	t	H		agree
+L36	12	p	M		agree-flagged
+L36	13	c	M	B:c̃	differ
+L36	14	y	M		agree-flagged
+L36	15	E	H		agree
+L36	16	12	H		agree
+L36	17	m	H		agree
+L41	1	g	H		agree
+L41	2	n	H		agree
+L41	3	ll	H		agree
+L41	4	Z	H		agree
+L41	5	g	M		agree-flagged
+L41	6	c	M	B:c̆	differ
+L41	7	g	M		agree-flagged
+L41	8	c	M	B:c̆	differ
+L01	1	+	M	A:-	gap

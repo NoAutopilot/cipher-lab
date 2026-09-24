@@ -1,0 +1,187 @@
+line	position	group	confidence	note
+L01	1	[PLAIN:"Copie du 9e febvrier 1636"]	M	heading, top left
+L01	2	+	H	small cross mark to the right of the heading, likely a reference/paragraph mark
+L02	1	[PLAIN:"Monseigneur"]	H
+L03	1	[PLAIN:"Il y a douze jours que Monsieur D'Isabran est party de Turin par la voye de Casal et Vosé"]	M	place-names uncertain
+L04	1	[PLAIN:"pour se rendre auprès de la Cour suivant la permission du Roy qu'il luy en apporta"]	M
+L05	1	[PLAIN:"de vre part, Il m'a laissé icy pour avoir soing des affaires de Sa Majesté aux occasions"]	M
+L06	1	[PLAIN:"qui se pourront offrir pendant et particulierement pour vous rendre compte de tout ce qui"]	L	first clause uncertain
+L07	1	[PLAIN:"se passera pardela en son absence."]	M
+L08	1	[PLAIN:"Depuis son despart j'ay heu advis que le duc Doria qui est aux Isles de Marguerite"]	M
+L09	1	[PLAIN:"soubz pretexte de la crainte qu'il a de l'armee navalle qui se prepare en Provence"]	M
+L10	1	[PLAIN:"appelle a soy touts les autres galleres et vaisseaux d'Espagne Naples et Sicile et va"]	M
+L11	1	[PLAIN:"pour executer a la fin de ce moyen intelligence qu'il a sur Marseille que j'ay apprins"]	M
+L12	1	[PLAIN:"d'ung françois de Bassane en Gascogne nommé les"]	L	surname and abbreviation uncertain
+L12	2	[blob]	L	solid black ink blot with two small curling strokes, sits above the word "les"; looks like a drawn mark rather than a digit or letter
+L12	3	x	H
+L12	4	12	H
+L12	5	p	M	upright isolated letter in the cipher hand; could be read as a numeral shape too
+L12	6	f	H
+L12	7	b	M
+L12	8	t	H
+L12	9	r	H
+L12	10	tt	H	written as two adjoining t's
+L12	11	u	M	could be n
+L12	12	o	H
+L12	13	7	H	cursive numeral 7 (flat top, down-stroke), matches shape used elsewhere on the page
+L12	14	4	H
+L12	15	10	H
+L12	16	g	H
+L12	17	e	H
+L13	1	[PLAIN:"que sur l'espagnol y a 27 ans, auroit este fait a Morgues entre ledit Duc et"]	M
+L14	1	[PLAIN:"quelcun de Condrieu de Marseille dont je ne scay le nom, et se debvoit executer en"]	L	place-name uncertain
+L15	1	[PLAIN:"cette manoeuvre. Ceulx de la faction qui sont au nombre de 4 ou 5 mettront la nuict le"]	M
+L16	1	[PLAIN:"feu en plusieurs endroits de la ville et pendant que les autres habitans seront"]	M
+L17	1	[PLAIN:"occuppez a l'estaindre ceulx qui les ont armé a la main se rendront Maistre du port"]	L	several words uncertain
+L18	1	[PLAIN:"et donneront passage aux Espagnols et leurs vaisseaux et galleres,"]	M
+L19	1	[PLAIN:"Ung gentilhomme de sa amye espagnol nommé Don Giacomo de Rocca berthi a leur"]	L	name uncertain
+L20	1	[PLAIN:"nom pour estre des principaux acteurs du jour et de la façon qu'ils sont se doibt"]	L
+L21	1	[PLAIN:"executer. Ils en voulurent donner advis a Monsieur le Maréschal de Vitry par ung nommé"]	M
+L22	1	[PLAIN:"banny de Nice nommé Levanto qui porta sa lettre au Andoria qui la fait"]	L	"Andoria" uncertain
+L23	1	[PLAIN:"mettre prisonnier a Morguen. J'ay envoyé"]	M
+L23	2	n	H
+L23	3	Z	H
+L23	4	y	H
+L23	5	10	H
+L23	6	p	H
+L23	7	ll	H	double l
+L23	8	g	H
+L23	9	7	H
+L23	10	4	H
+L23	11	t	H
+L23	12	o	H
+L23	13	e	H
+L23	14	[PLAIN:"amy"]	L	plain cursive word with a small superscript flourish right after the cipher run; abbreviation unclear
+L24	1	[PLAIN:"le Marschal a fin qu'il"]	M
+L24	2	n	H
+L24	3	f	H
+L24	4	6	H
+L24	5	h	H
+L24	6	Ø	M	filled circle with a vertical stroke through it, distinct from the plain digits around it (looks like a zero-with-slash or bullet-and-stem mark)
+L24	7	4	H
+L24	8	p	H
+L24	9	9	H
+L24	10	[PLAIN:"amplement"]	L	uncertain word between the two cipher runs on this line
+L24	11	y	H
+L24	12	u	H
+L24	13	nn	H	double n
+L24	14	E	H
+L24	15	tt	H	double t
+L24	16	ll	H	double l
+L24	17	[PLAIN:"J'ay pen de responce"]	L	word "pen" uncertain, maybe abbreviation for "peu" or "point"
+L25	1	[PLAIN:"sur"]	H
+L25	2	d	M
+L25	3	o	M	could be letter o or digit 0
+L25	4	4	H
+L25	5	n	H
+L25	6	9	H
+L25	7	ff	H	double f
+L25	8	[PLAIN:"audit"]	H
+L25	9	4	H
+L25	10	E	H
+L25	11	y	H
+L25	12	c	H
+L25	13	9	M
+L25	14	9	L	second loop glyph right after the first 9; could be another 9 or the letter q
+L25	15	u	H
+L25	16	ff	H	double f
+L25	17	ll	H	double l
+L25	18	r	H
+L25	19	m	H
+L25	20	[PLAIN:"par"]	H
+L25	21	c̃o	M	small glyph resembling c or i with a curl/tilde above it, followed by o; hard to tell if one symbol or two
+L25	22	h	H
+L25	23	Z	H
+L25	24	p	H
+L25	25	a	H
+L25	26	g	H
+L25	27	[PLAIN:"quj se"]	L	possibly plain "qui se", written upright; boundary with the cipher run above is uncertain
+L26	1	[PLAIN:"fait"]	H
+L26	2	94	H	followed by a period/colon-like punctuation mark
+L26	3	[PLAIN:"mesme et d'apprendre les noms de qu'estoit des chefz. Il m'a dit"]	L
+L27	1	[PLAIN:"qu'il se cognerud Monsieur le Mal et qui est le mesme que auroit dossamg de"]	L	several words uncertain, esp. "cognerud" and "dossamg"
+L27	2	n	H
+L27	3	tt	H	double t
+L27	4	8	M	elaborate looped form, could be numeral 8 or a ligature/special mark
+L27	5	4	H
+L27	6	Z	H
+L27	7	p	H
+L28	1	u	H
+L28	2	nn	H	double n
+L28	3	ll	H	double l
+L28	4	ff	H	double f
+L28	5	9	H
+L28	6	94	H	set off by dots/periods before and after, likely group separators
+L28	7	9	M
+L28	8	b	M	open loop with ascender, read as letter b
+L28	9	nn	H	double n
+L28	10	4	H
+L28	11	u	H
+L28	12	[mark]	L	small ascender flourish between u and p, unclear whether a diacritic or partial letter
+L28	13	p	H
+L28	14	9	H
+L28	15	f	H
+L28	16	c	H
+L28	17	c̃	M	second c with a small curved mark above it
+L28	18	[PLAIN:"ce qu'il auroit executé soit fautilm[ent]"]	L	tail of sentence uncertain
+L29	1	[PLAIN:"s'il n'est esté arresté, je luy garde jusque sept jours avec luy autres françois"]	L
+L30	1	[PLAIN:"a cause du mauvais temps, et important de l'affaire ma obligé de despecher"]	L
+L31	1	[PLAIN:"un homme expres a Augusta et a Monsieur L'Evesque de Nancy pour leur"]	M
+L32	1	[PLAIN:"reiterer les instances advis que je leur ay envoyé par ledit"]	M
+L32	2	9	H
+L32	3	7	H
+L32	4	4	H
+L32	5	t	H
+L32	6	o	H
+L32	7	p	H
+L33	1	[PLAIN:"Il m'a asseuré que Nice et Villefranche fourniroient estoient Munichoua"]	L	"Munichoua" uncertain
+L33	2	g	H
+L33	3	n	H
+L33	4	26	L	leading stroke is a plain curved hook read here as "2"; unusual form, could be a different mark
+L34	1	6	H
+L34	2	9	H
+L34	3	tt	H	double t
+L34	4	g	H
+L34	5	n	H
+L34	6	bu	L	ligature-like glyph, could also read as "ou"
+L34	7	[PLAIN:"et qu'ils estoyent peu asseurez au service de Fedric"]	L	name at end uncertain
+L35	1	[PLAIN:"Dont j'ay donné advis a Monsieur"]	M
+L35	2	x	H
+L35	3	9	H
+L35	4	p	H
+L35	5	u	H
+L35	6	4	H
+L35	7	m	H
+L35	8	[PLAIN:"et de grandes sollicitations"]	M
+L36	1	[PLAIN:"et a Monsieur"]	M
+L36	2	n	H
+L36	3	Z	H
+L36	4	p	H
+L36	5	E	H
+L36	6	p	H
+L36	7	ll	H	double l
+L36	8	g	H
+L36	9	h	H
+L36	10	o	H
+L36	11	q	H
+L36	12	t	H
+L36	13	p	H
+L36	14	c̃	M	c with a small curl/circumflex above
+L36	15	y	H
+L36	16	E	H
+L36	17	12	H
+L36	18	m	H
+L36	19	[PLAIN:"avant son despart"]	M
+L37	1	[PLAIN:"qui faisoyent les Espagnols vers les ducs de Florence et Modene pour obtenir"]	L
+L38	1	[PLAIN:"des secours de leurs Altesses que Don Francesco de Melon debvoit porter"]	L
+L39	1	[PLAIN:"a cet effet pour Florence au premier jour a quel s'on a craindre"]	L
+L40	1	[PLAIN:"que ces princes ne se laissassent porter a leur volonte Espagnole"]	L
+L41	1	[PLAIN:"A quoy je mediviuvtir par quelque office contraire de leur"]	L	verb "mediviuvtir" very uncertain
+L41	2	g	H
+L41	3	n	H
+L41	4	ll	H	double l
+L41	5	Z	H
+L41	6	g	M	has an extra diagonal cross/strike stroke through or below it, unlike the other g's on the page
+L41	7	c̆	M	c with a small curved breve-like mark above
+L41	8	g	H
+L41	9	c̆	M	c with a small curved breve-like mark above

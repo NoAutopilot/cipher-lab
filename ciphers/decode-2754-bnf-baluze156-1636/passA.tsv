@@ -1,0 +1,184 @@
+line	position	group	confidence	note
+LH1	1	[PLAIN:"Coppie du 9e febvr 1636"]	M	dateline/heading at top of page; "9e" and month abbreviation cursive, "+" cross mark follows to the right (not transcribed as a word)
+LH2	1	[PLAIN:"Monseigneur"]	H	salutation, large decorative capital M
+L01	1	[PLAIN:"Il y a douze jours que Monsieur D'Isabran est party de Turin par la voye de Casal et Yvree"]	M	proper names (Isabran, Casal, Yvree) uncertain in secretary hand
+L02	1	[PLAIN:"pour se rendre au plustost a la Cour suivant la permission du Roy qu'il luy en a apportee"]	M
+L03	1	[PLAIN:"de vre part. Il m'a laisse icy pour avoir soing de vos aff[air]es de Sa Mate aux occasions,"]	M	"aff.res" and "Mate" are period abbreviations with superscript letters
+L04	1	[PLAIN:"et en la main a ses correspondances et particulierem[en]t pour vous rendre compte de tout ce qui"]	M
+L05	1	[PLAIN:"se passera par deca en son absence."]	M
+L06	1	[PLAIN:"Depuis son despart j'ay heu advis que le Duc de Savoie qui est aux Isles de Marguerite"]	M
+L07	1	[PLAIN:"soubz pretexte de la crainte qu'il a de l'armee navalle qui compose en Prouence"]	M
+L08	1	[PLAIN:"appelle a soy touts les autres galleres et vaisseaux d'Espagne, Naples, Sicile et Vay..."]	L	last word before line end unclear, possibly cut off/abbreviated
+L09	1	[PLAIN:"pour executer a la fin ce moyen. J'ay intelligence qu'il a sur Marseille que j'ay apprins"]	M
+L10	1	[PLAIN:"d'ung fiancois de Bossine en Gascogne nomme le S[superscript r]"]	M	"Sr" = Sieur, written with superscript r; place-name "Bossine" uncertain
+L10	2	✳	L	solid black filled blot/mark directly after the abbreviation "Sr", could be ink blot or an intentional cipher diacritic mark
+L10	3	x	H
+L10	4	12	H
+L10	5	p	H
+L10	6	f	H
+L10	7	b	H
+L10	8	t	H
+L10	9	r	H
+L10	10	tt	M	looks like a doubled-t ligature (crossbar over two vertical strokes)
+L10	11	u	M	small mark above may be bleed-through from ascender/descender of the line above, not a diacritic on this token
+L10	12	o	H
+L10	13	7	M	numeral has the period's usual crossbar; small mark above likely bleed-through from line above, not attached
+L10	14	4	H
+L10	15	10	H
+L10	16	g	H
+L10	17	e	H
+L11	1	[PLAIN:"que sur le paiement luy a 27 ans, auoit este faict a Morguer entre ledit Duc et"]	L	"27 ans" read as an ordinary number in running prose (age/years), not part of a cipher run; wording of this line very uncertain
+L12	1	[PLAIN:"quelcun de Condren de Marseille dont je ne scay le nom et se debuoit executer en"]	L	"Condren" proper name uncertain
+L13	1	[PLAIN:"ceste manoeuvre, Ceulx de la facon qui sont au nombre de 4 ou 5 mettront la nuict le"]	M	"4 ou 5" is ordinary prose ("4 or 5"), not cipher
+L14	1	[PLAIN:"feu en plusieurs endroicts de la ville et pendant que les autres habitans seront"]	M
+L15	1	[PLAIN:"occuppez a l'esteindre. Ceulx qui les arment a la main se rendront M[onsieu]r du Pont"]	L
+L16	1	[PLAIN:"et dix hommes par ou ilz introduiront les Espagnols et leurs vaisseaux et galleres,"]	M
+L17	1	[PLAIN:"Ung gentilhomme de sa amye espagnol nomme D. Giacomo di Rocca Berthj, a leur"]	M	Italian proper name
+L18	1	[PLAIN:"nom pas encor descouvert les principaux autheurs du jour et de la facon qu'il l'ont sceu"]	L
+L19	1	[PLAIN:"executer. Je n'ay voulu donner advis a Monsieur le Mal de Vitry par ung No[ble]"]	M	"le Mal" = le Marechal (abbreviated with superscript)
+L20	1	[PLAIN:"banny de Nice nomme Levanto qui porta sa lettre au Guedoua qui la faict"]	M
+L21	1	[PLAIN:"mettre prisonnier a Morgues. J'ay envoye"]	M
+L21	2	n	M
+L21	3	Z	H
+L21	4	y	H
+L21	5	10	H
+L21	6	p	M
+L21	7	ll	H
+L21	8	g	H
+L21	9	7	M	crossed numeral, same style as other 7s on the page
+L21	10	4	H
+L21	11	t	H
+L21	12	o	H
+L21	13	e	H
+L21	14	[PLAIN:"amb[superscript r]"]	M	abbreviation for "ambassadeur"
+L22	1	[PLAIN:"le Marreschal a este qu'il"]	M
+L22	2	n	M
+L22	3	f	M
+L22	4	6	H
+L22	5	h	M
+L22	6	Φ	L	circle with a horizontal bar through it, like a Greek phi or a barred zero; not a normal digit shape
+L22	7	4	H
+L22	8	p	M
+L22	9	g	M
+L22	10	[PLAIN:"accomplim[en]t"]	L	abbreviation, hard to read fully
+L22	11	y	M
+L22	12	u	H
+L22	13	nn	H
+L22	14	E	H	capital E
+L22	15	tt	H
+L22	16	ll	H
+L22	17	[PLAIN:", J'ay respondu de pouuoir"]	L	wording uncertain
+L23	1	[PLAIN:"sceu"]	L	first word of line uncertain, could be "sceu" (learned/heard); large ornamental initial
+L23	2	do	L	written as one connected glyph "d"+"o" with no visible gap; could be one token or two separate letter-tokens
+L23	3	4	H
+L23	4	n	M
+L23	5	9	L	loop-with-tail shape, ambiguous between digit 9 and letter g
+L23	6	ff	H	crossed double-f ligature
+L23	7	[PLAIN:"audit"]	M
+L23	8	4	H
+L23	9	E	M	capital, similar shape to E in L22
+L23	10	p	L	small loop, could be p or y
+L23	11	C	L	small loop/circle, could be c, e, or C
+L23	12	9	L	loop-with-tail, ambiguous with g
+L23	13	9	L	loop-with-tail, ambiguous with g
+L23	14	u	H
+L23	15	ff	H	crossed ligature
+L23	16	ll	H
+L23	17	r	M
+L23	18	m	H
+L23	19	[PLAIN:"par"]	H
+L23	20	c	M	small tilde/breve-like mark above the c
+L23	21	o	H
+L23	22	h	H
+L23	23	Z	H
+L23	24	p	H
+L23	25	a	H
+L23	26	g	M	could be 9
+L23	27	[PLAIN:"que"]	M	last word of line, may connect to "94" starting next line
+L24	1	94	H
+L24	2	[PLAIN:"mesme et d'apprendre les noms de quelcun des chefz. Il m'a dict"]	M
+L25	1	[PLAIN:"qu'il ne cognoist M. le Mal et qui estoit le mesme que auoit dessamy de"]	L	line hard to read, especially "dessamy"
+L25	2	n	M
+L25	3	tt	H
+L25	4	8	L	distinctive glyph, loop with a diagonal stroke crossing it, unlike ordinary 8 or letters elsewhere on page; possibly a special cipher mark
+L25	5	4	H
+L25	6	Z	H
+L25	7	p	M	could be y
+L26	1	u	H
+L26	2	nn	H
+L26	3	ll	H
+L26	4	ff	H
+L26	5	9	M	could be g
+L26	6	94	H
+L26	7	9	M	could be g
+L26	8	b	H
+L26	9	nn	H
+L26	10	4	H
+L26	11	u	H
+L26	12	Sr	L	short unclear mark after "u", tentatively read as abbreviation "Sr" (sieur); could instead be part of the cipher run
+L26	13	p	M
+L26	14	9	M	could be g
+L26	15	f	H
+L26	16	c	M
+L26	17	[PLAIN:"ce qu'il auroit executé sur sadillm..."]	L	final word/name at line end very uncertain
+L27	1	[PLAIN:"s'il n'eust este arreste. Je l'ay garde jusque sept jours auecq luy autre francois"]	M
+L28	1	[PLAIN:"a cause du mauvais temps, et [im]portance de l'aff[air]e m'a oblige de despescher"]	L
+L29	1	[PLAIN:"luy homme expres a Auguste et a M. l'Evesque de Nancy pour leur"]	M	"Auguste" likely stands for Augsbourg; small interlinear insertion above "homme" not separately transcribed
+L30	1	[PLAIN:"reiterer les mesmes advis que je luy ay envoye par ledit"]	M
+L30	2	9	H
+L30	3	7	H
+L30	4	4	H
+L30	5	t	H
+L30	6	o	H
+L30	7	p	H
+L31	1	[PLAIN:"Il m'a asseure que Mons. le Villefranche fournissant estoit"]	L	proper name/word before the cipher very uncertain (reads like "Munickioma" or similar)
+L31	2	g	H
+L31	3	n	H
+L31	4	36	H
+L32	1	6	H
+L32	2	9	H
+L32	3	tt	H
+L32	4	g	M	could be 8
+L32	5	n	H
+L32	6	ttu	M	"tt" ligature followed by u with a bar/macron over it, resembling the standard scribal abbreviation mark for a following nasal
+L32	7	[PLAIN:"et qu'il n'y estoit peu asseure au seruice de Federic"]	M
+L33	1	[PLAIN:"Dou j'ay donne aduis a Monsieur"]	M
+L33	2	x	H
+L33	3	9	H
+L33	4	p	M
+L33	5	u	H
+L33	6	4	H
+L33	7	m	H
+L33	8	[PLAIN:"et de grande sollicitation"]	M
+L34	1	[PLAIN:"de a M."]	M
+L34	2	n	H
+L34	3	Z	H
+L34	4	p	M
+L34	5	E	H
+L34	6	p	M
+L34	7	ll	H
+L34	8	g	H
+L34	9	h	M
+L34	10	o	H
+L34	11	q	H
+L34	12	t	H
+L34	13	p	M
+L34	14	c	M
+L34	15	y	M
+L34	16	E	H
+L34	17	12	H
+L34	18	m	H
+L34	19	[PLAIN:"auant son despart"]	M
+L35	1	[PLAIN:"qui faisoyent les Espagnols vers l'induire de Florence et Modene pour obtenir"]	M
+L36	1	[PLAIN:"des secours de leurs Altesses que D. Feria et Melon debuoint gaster"]	L	proper names uncertain
+L37	1	[PLAIN:"au eu effect pour Florence au premier jour opquil s'en a craindre"]	L	line hard to read
+L38	1	[PLAIN:"que ces princes ne se laisseront porter alors volonte a leurs"]	L
+L39	1	[PLAIN:"Aroye ny diuerti par quelque office contraire a leurs"]	L	first words of line very uncertain
+L39	2	g	H
+L39	3	n	H
+L39	4	ll	H
+L39	5	Z	H
+L39	6	g	M	could be 9
+L39	7	c	M	small breve/caron mark above
+L39	8	g	M	could be 9
+L39	9	c	M	small breve/caron mark above, then a squiggle line-end flourish (not transcribed as a token)

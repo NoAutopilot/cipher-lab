@@ -27,7 +27,8 @@ random.seed(24092026)  # reproducible shuffle, dated per rule 6 convention
 def load_key_numbers():
     nums = []
     with open(KEY, encoding="utf-8") as f:
-        for row in csv.DictReader(f, delimiter="\t"):
+        lines = [l for l in f if not l.startswith("#")]
+        for row in csv.DictReader(lines, delimiter="\t"):
             if row.get("kind") == "nomenclator":
                 code = row["code_or_sign"].strip()
                 if code.isdigit():

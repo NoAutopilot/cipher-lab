@@ -1,0 +1,18 @@
+line	col	A	B	flagged	crop
+L12	1	✳	[blob]	AB	
+L24	5	Φ	Ø	AB	
+L24	8	g	9	A	
+L25	1	-	d	B	
+L25	2	do	o	AB	
+L25	9	p	y	A	
+L25	10	C	c	A	
+L25	18	c	-	A	
+L25	19	o	c̃o	B	
+L28	12	Sr	[mark]	AB	
+L28	17	-	c̃	B	
+L33	3	36	26	B	
+L34	6	ttu	bu	AB	
+L36	13	c	c̃	AB	
+L41	6	c	c̆	AB	
+L41	8	c	c̆	AB	
+L01	1	-	+		
