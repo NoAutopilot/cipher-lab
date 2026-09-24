@@ -37,6 +37,12 @@ session and every subagent, cloud or local.
    has no licence: cite it, do not copy code from it. Bourdeau's code is MIT, text CC BY 4.0.
 9. **Personal data stays out of the repo.** It is public. Log archive requests by date and archive, never with
    the sender's name, address or payment details.
+9a. **A brief that says material stays out of this repository must name the destination, and the worker must not
+   push here at all** -- not even as a placeholder "to be removed later." If the named destination (a private
+   repository, an artifact) does not exist yet, the worker stops and says so; it does not commit the material to
+   this repository in the meantime. Lesson of 24 Sept 2026: two workers (grants scout, grants applications),
+   briefed only that the material "stays out of this repository," both pushed it here anyway; both fixes now sit
+   in this repository's history pending the owner's purge (`tools/purge_history.sh`).
 
 10. **Novelty is a verifier's verdict, not a solver's.** A solver session may say "read at grade H" and "not
    found in <named source>, searched by <method> on <date>". It may not say new, unpublished, unread, first or
