@@ -588,3 +588,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 05:37 | LANE N check-solved worker (Sonnet, csIR) | nomination: ciphers/della-torre-olanda-1690 | copy-order | kind recovery | Savoy cipher-book filed with envoy's own Hague decade 1690-1700
 2026-09-24 05:37 | LANE N check-solved worker (Sonnet, csIR) | nomination: ciphers/viganego-torino-1717 | copy-order | kind recovery | Genoa cipher plus same-box sibling dispatches from same envoy
 2026-09-24 05:37 | LANE N check-solved worker (Sonnet, csIR) | nomination: ciphers/belmesseri-napoli-1627 | copy-order | kind recovery | Este Naples cipher explicitly attached, key-vs-ciphertext ambiguous, unread
+2026-09-24 05:37 | LANE N check-solved worker (Sonnet, csIR) | nomination: ciphers/salvago-caraffa-1691 | copy-order | kind recovery | Genoa cipher issued for Caraffa mission, subsidy-affair box, lower confidence
