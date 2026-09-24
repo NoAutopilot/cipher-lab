@@ -1015,6 +1015,24 @@ Digitale Bibliothek: 1 request (403, needs an API key). Archivportal-D: 1 reques
 attempt, stood down). github.com: 2 shallow clones (both solver repositories, grepped by shelfmark/holder,
 deleted after). No logins, no credentials, no subagents. Never promoted, never solved.
 
+**check-solved 24 Sept 2026 (LANE S batch F):**
+- K1 (`ciphers/zbz-busbecq-1587/`): open, stage 2 verified unsolved (conditional — no image seen). Print check
+  (Forster & Daniell 1881 vol. 2) inconclusive, no June 1587 letter located there; DECODE/Bourdeau/Aymeloglu
+  confirm the cached R1220/R1221 Busbecq key records are a different 1559 item, as this row already noted.
+- K2 (`ciphers/konstanz-talleyrand-sieyes-1798/`): open, stage 2 verified unsolved (conditional — no image
+  seen). Bailleu 1881-87 vol. 1 print check inconclusive (same milieu, no exact date match); Pallain and Guyot
+  not checked this pass.
+- K3 (`ciphers/zbz-ulrich-zwingli-1531/`): **found-solved.** Printed in Huldreich Zwinglis sämtliche Werke
+  (Corpus Reformatorum ed.), vol. 11 (1935), letter no. 1193, "Herzog Ulrich von Württemberg an Zwingli,
+  (Cassel), 11. April 1531", source "Zürich, Zentralbibliothek: F 46, p. 473" — matches this row's shelfmark,
+  sender, recipient and date exactly. Its coded names are already resolved via the edition's own printed
+  cipher table, itself a reprint of an earlier decipherment (Schuler & Schulthess vol. VIII, p. 594, pre-1861).
+  See NOTES.md for the full sweep and citation chain.
+- K4: open, not located as a separately dated letter in the same edition (only two direct Ulrich-to-Zwingli
+  letters are printed there, both fully dated: no. 1176, 3 March 1531 — a third F 46 item not previously a
+  queue row, see NOTES.md — and no. 1193 above). Vol. 10 and the Schuler & Schulthess original not checked
+  this pass.
+
 ## Kept, not scored this sweep
 
 163 further kept candidates were left unscored by the 40-candidate cap (by plaintext language: fr 57, es 34, unknown 19, it 17, de 14, la 10). They are listed with the harvesters' evidence under `unscored_kept` in `QUEUE-scores.json`, in the filter's order, so the next run scores them first if the top forty move. Those with a working folder already, all closed-negative or blocked in LANDSCAPE.md: [Anonymous letters to Mr Tempest (Paris) and Dr Barret (Rheims), c. Dec 1585, endorsed by Phelippes (TNA SP 53/16 nos. 78-79)](ciphers/sp53-16-78/); ['Cifer with Spanish Spye', short ciphertext c.1586 (TNA SP 53/22 f.52, and the verso of f.40)](ciphers/sp53-22-f52/); [Lodovico Birago to the Duke of Nevers, Saluzzo, 13 Nov 1571, paragraph in numerical cipher (BnF fr. 3251 f.119)](ciphers/birago-nevers-1571/); [Admiral d'Estaing to Gerard, French minister in Philadelphia, 30 April 1779, intercepted (Clements Library, Clinton Papers 64:14)](ciphers/destaing-gerard-1779/); [Berthier to Napoleon, Koenigsberg, 22 Dec 1812 (AN AF/IV/1643) and the encoded letter to Marshal Marmont, 1807 (Vilcoq 1969)](ciphers/berthier-napoleon-1812/).
