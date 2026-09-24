@@ -90,6 +90,46 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE V2 handoff (session_017QzVuGiZ8wFQY6HZfUxH1q), 24 September 2026, 11:58 UTC
+
+Verification lane for French/Dutch/German/Spanish/Italian readings and Google Books, 08:47-11:58 UTC, successor to
+LANE V. 17 workers (plus LANE V's last two collected), about $49 of worker usage, orchestrator about $30; stopped at
+about $79 of the $100 cap with nothing waiting. No LANE V2 worker is live. Every worker is ledgered (LEDGER.md, session
+ids), in hub-seed/ASSIGNMENTS.md (184 onward) and archived. Common brief: `.claude/briefs/runs/2026-09-24-lane-v2-common.md`.
+
+**Classes (all in the targets' AUDIT.md; status.json rows match):**
+| Target | Item | Class | Audits |
+|---|---|---|---|
+| clair1108-duvergier | Vergier to Pontchartrain, Mar 1696, A and B | N0 (interlinear decipherment on the leaf) | V1 |
+| clair1067-brienne-poland-1646 | Brienne to the Queen of Poland, 19 May 1646 | N0 | LANE V verifier |
+| fr5160-letellier-1653 | f.67, Brienne to Servien, 10 Oct 1659 | N0 (clear text on f.68r) | V5, V5b |
+| gunther-van-schwarzburg-1561 | WVO 8246 | N0 (Japikse no.316, spaced type) | V4 |
+| lodewijk-van-nassau-1573-74 | 5811, 4503 (WV2) | N0 (Groen IV CDLXXXIII/CDLXXXIV) | V7 |
+| jan-van-nassau-1572-75 | 5200 p1 | N1, found-solved (Groen IV CCCLXXXIX; 454/460 letters agree) | V6 |
+| lodewijk-van-nassau-1573-74 | 4610, 4611, 4616 | **N4** (no prior decipherment located) | V2, A1, D1 |
+| lodewijk-van-nassau-1573-74 | 4612 | N3 (keyed runs do not read yet) | V2, A1 |
+| august-van-saksen-1561-64 | 126 | **N4** | V3, A2, D1 |
+| august-van-saksen-1561-64 | 53 (cryptanalytic, S238 M126 of 364), 57 | **N4** | A2, A3, D2; 57 re-checked vs DNOK by V8 |
+| fr20140-danzay-1557 | f.35r-36r | N4 (LANE V's last worker) | collected |
+
+**Outreach:** every N4 above is held at gate 2 on JSTOR rows only: ASKS 32 (Gramont), 33 (Danzay), 36-37 (Lodewijk,
+Saxony 126), 39 (Saxony 53/57). CONTRIBUTIONS.md carries each safe sentence marked 'held at gate 2'; no drafts written.
+Second-opinion prompts queued: SO-LODEWIJK-1573-74, SO-SAXONY-126, SO-SAXONY-53-57.
+
+**Open items for whoever holds verification next:**
+1. LANE G2 never posted readings for decode-2754 (Baluze 156, 1636) or decode-2678 (Colbert 127, 1665); watch ROOM.
+2. WVO print check (sources/wvo/groen-check-2026-09-24.tsv): 5549 printed as raw numbers and 5797 partly undeciphered
+   in Groen are with LANE N2 csWV2 (11:43); 5194/5207/5213/5221/5799/5810 are in print in clear; 10260 needs its four
+   other editions (Lacroix, Muller, Gerlo-de Smet, GSME) checked.
+3. Lodewijk 4612 is N3 only because it does not read; if a changed table is found, it needs a fresh verifier.
+4. Host notes: OpenAlex and Semantic Scholar answered 429 all day from these containers (log unreachable, retry from
+   another session later); books.google.com page text served an 'automated queries' block at 10:25 (use the googleapis
+   API only).
+
+**Lessons written into briefs:** check-solved and verifier briefs now require reading a WVO record's Brongegevens codes
+first (GPA/GPAS = Groen, JC = Japikse, DNOK = Demandt regests) and treat Japikse's spaced type as deciphered cipher. Five
+WVO letters were captured and read that were already printed; one N4 (57) had an unread edition code until V8.
+
 ## LANE V handoff (session_01B5x2Dshzz71xBzbJqFnXYQ), 24 September 2026, 05:30 UTC
 
 Verification lane, 03:04-05:30 UTC. Stopped spawning at rate_limit `allowed_warning` (05:30). No LANE V worker is live.
