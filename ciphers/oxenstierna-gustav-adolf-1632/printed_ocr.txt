@@ -1,0 +1,72 @@
+# Printed OCR excerpt, sources/ia-fulltext/rikskanslerenax00styfgoog_djvu.txt, lines 39871-39947
+# (letter body only; footnote and page-break lines shown separately below)
+
+# [FOOTNOTE, L39890-L39893]: *)  Nyckeln  till  ofvanstående  chifferbref  har  af  ntgifraren  icke  i  riksarki- vet kunnat  återfinnas,  men  då  intet  tvifyel  är  om,  att  det  är  ett  Konnngens bref  till  Rikskansleren,  hvartill  möjligen  en  lösning  sedermera  kan  finnas,  har det  bår  blifvit  meddeladt.
+
+L39871	[HEADING: "602*).  Nürnberg  den  23  JuU  1682."]
+L39873	RAW: Gustaf  Adolph  etc.  Vår  synnerlige  etc.  Effter  dett,  her
+L39874	RAW: Cantzler,  oss  ligger  macht  opå,  dett  vij  mage  icke  mindre  71  72
+L39875	RAW: 73  44  24  23  81  26  31  65  17  16  i  ett  75  65  47  81  54  65  17  51
+L39876	RAW: 82  26  62  32  än  här  oppe.  Så  är  fördenskuld  vår  nådigeste  vilie,
+L39877	RAW: dett  I  correspondere  medh  her  17  81  26.24  8  96  99  205  70  51
+L39878	RAW: 26  27  44  26  dett  han  medh  all  macht  drifver  opå,  dett  3782
+L39879	RAW: Bom  han  hafver  utdelt,  mage  komma  61  54  55  20  26  47  81  66
+L39880	RAW: 26  82  72  27  47  31  26  23  65"  32  17  82  25.  Såsom  ock,  att
+L39881	RAW: 1838  hafve  68  57  72  32  47  26  32  72  26  81  2923  complett.  I
+L39882	RAW: vele  och  desslikest  72  80  66  65  27  29  72  68  63  64  17  753
+L39883	RAW: 65  20  27  65"  54  55  28  72  81  13  W  W.  3594  2929.  Och
+L39884	RAW: der  I  kunde  20  51  17  82  73  71  65  26  81  51  62  20  eller
+L39885	RAW: någen  72  80  80  26  78  75  65  47  65  22  23  51  48  26  32  25  31  24
+L39886	RAW: 17  65  20  47  31  65  75  26  47  5152  81  78  24  47  26  31  sage  vij
+L39887	RAW: dett  ganska  gema,  hvilken  kunde  der  sammestädes  drifva  opå
+L39888	RAW: 3782  och  Sambia  78  64  75  32  24  3412  både  tül  att  23  65"  27
+L39890	[FOOTNOTE-TEXT: "*)  Nyckeln  till  ofvanstående  chifferbref  har  af  ntgifraren  icke  i  riksarki-"]
+L39891	[FOOTNOTE-TEXT: "vet kunnat  återfinnas,  men  då  intet  tvifyel  är  om,  att  det  är  ett  Konnngens"]
+L39892	[FOOTNOTE-TEXT: "bref  till  Rikskansleren,  hvartill  möjligen  en  lösning  sedermera  kan  finnas,  har"]
+L39893	[FOOTNOTE-TEXT: "det  bår  blifvit  meddeladt."]
+L39896	[PAGE-BREAK: "822"]
+L39898	RAW: 51  73  1814  54  72*  23  65  81  26,  80  så  vel  8om  tUl  att  32  26  17
+L39899	RAW: 51  16  82  24  31  73,  hvadh  som  uhr  3105  54  72°  44  65  20  19
+L39900	RAW: 73  44  72  80  der  om  I  flijt  göra  vele.  Elliest  begäre  Tij  ock
+L39901	RAW: nådigest,  att  emedan  vij  förmode  26  47  24  31  80  62  20  26
+L39902	RAW: 32  73  1753  198  3412  81  51  27  17  72  20  73  78  och  att  mm.
+L39903	RAW: 26  80  307  göra  skole,  som,  medh  Gudz  hielp,  skall  kunna  pas-
+L39904	RAW: sera, dett  I  57  26  27  24  72  58  73  80  48  26  32  73  99  100  47
+L39905	RAW: 26  81  80  26  32  20  24  17  81  24  r  44  62  80  78  24  rr  1538  1328
+L39906	RAW: nn  när  O  57  51  52  44  62  80  78  26  H  1103  47  72  75  66  3942.
+L39907	RAW: Doch  begäre  vij  nådigest,  att  r  W.  W.  72  28  27  81  51  80  75
+L39908	RAW: 1538  27  65  80  75  17  72  20  54  81  rr  3186  och  bruka  dett  20
+L39909	RAW: 26  47  26  28  17  65  20  57  51  52  giorde  57  51  47  20  51  81  65
+L39910	RAW: 57  Ncmbligen,  att  r  ee  1538  62  66  32  47  26  81  26  80  72  32
+L39911	RAW: 26  81  31  73  80  48  66  26  32  24  47  25  2162  för  än  r  57  26  82
+L39912	RAW: 72  66  57  73  32  r  44  62  80  80  26  72  80  81  32  26  23  22  73  26
+L39913	RAW: 78  65  32  83  der  r  72°  81  26  32  t  26  80  66  72  17  82  när  r  47
+L39914	RAW: 26  32  72  80  27  26  80  47  26  26  47  26  32  31  24  81  32  73  80
+L39916	RAW: 50  66  26  31  73  44  62  80  78  25  helst  medan  den  landzorten  n
+L39917	RAW: r  gg  11  72  28  27  26  17  18  26  47  26  17  är  medh  66  33  75  28
+L39918	RAW: 72  31  71  26  57  62  38  26  80  så  att  r  ee  behöfve  till  att  32  26
+L39919	RAW: 18  31  72  80  49  66  26  32  72  26  4  25  32  allestädes  32  62  80  47
+L39920	RAW: 18  65  20  44  32  51  80  75  uthan  bruka  17  72  20  19  73  66  35
+L39921	RAW: 75  28  73  31  26  47  26  31  81  51  28  27  22  65  32  47  26  24  28  rr
+L39922	RAW: 32  81  32  72  80  50  66  24  19  25  78  83.  Corresponderer  65  50
+L39923	RAW: 66  23  28  51  81  52  75  83  20  26  47  66  26  32  53  72  68  73  78
+L39924	RAW: 70  72  78  26  32  och  befliter  eder  till  att  44  62  80  47  75  65  32
+L39925	RAW: 72  65  17  16  hvadh  26  47  26  32  28  51  47  25  32  72  82  81  57
+L39927	RAW: 51  57  kunne  995  17  72  44  26  31  80  78  24  47  26  32  26  22  81
+L39928	RAW: 24  31.  Vij  late  eder  ock  nådigest  förnimma,  dett  17  54  72  32
+L39929	RAW: 30  u  gg  17  81  65"  81  82  d  9  1328  aa  3965  3328  3927  rr  1103
+L39930	RAW: rr  1041  863  29  93.  Men  så  är  dett  altt  mast  sådant  3673  nn
+L39931	RAW: 66  65"  32  26  81  51  28  47  26  2929  nn  11  47  26  32  81  51  28  22
+L39932	RAW: 65"  32  80  26.  Undantagandes  81  51  32  17  44  73  17  hvilken  ock
+L39933	RAW: hafver  72  28  27  26  80  25  17  82  1102  J  786  d  9  3165  17  18  72
+L39934	RAW: 32  44  och  doch  17  28  26  81  82  26  71  62  17  16  72  32.  Ty  vij
+L39935	RAW: hafve  tillförne  icke  rettere  vist,  än  72  81  82  47  26  2923  nn  47
+L39936	RAW: 26  32  57  65  32  26  81  51  28  22  65"  32  26  skulle  72  28  27  72
+L39937	RAW: 57  72  32  73  48  64  20  54  28  26  81  82  24.  Men  nu  fömimme
+L39938	RAW: vij,  att  47  26  17  16  26  66  65  32  26  26  80  47  26  25  28  under
+L39939	RAW: 68  65  28  44  26  80  47  26  25  28  62  18  47  24  31  72  78  47  32  74
+L39940	RAW: 2929.     I  hafve  fördenskuU  för  46  26  32  26  17  72  80  44  65  20
+L39943	RAW: 54  17  18  icke  till  att  71  26  22  32  62  26  28  27  33  17  81  62  82
+L39944	RAW: 14  73  26  47  25  32  20  73  32  48  66  25  rr  72  57  73  80  81  74  76
+L39946	RAW: 24.     Vij    befale    eder  här  medh  i  Gudz  nådige  beskerm  nädeli-
+L39947	RAW: gen.     Aff  lägret  vidh  Niirenberg  den  23  Julij,  Åhr  1632.
