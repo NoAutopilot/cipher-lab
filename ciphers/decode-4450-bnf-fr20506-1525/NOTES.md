@@ -74,3 +74,31 @@ URL, bytes, sha1, date). Note: the record page's own "Pages: 5" field undercount
 are linked from the page, all 8 fetched. Confirmed again (per this folder's existing LANE N audit) that
 `DocumentsList?showmaster=records&fk_id=4450` has no attached document. No transcription, no decoding.
 Folder now 120 KB, well under the 30 MB cap.
+
+## D1: transcription, 24 September 2026
+
+**Blocked on image resolution, no blind passes run.** All 8 files are `TH_IMG_*` ("thumbnail image")
+thumbnails, 200px wide (200x293/254/290/253/293/285/279/241, confirmed with `file`). Same test as run for
+decode-1162 (this worker's other target, same session): 6-10x Lanczos upscales of line- and word-sized crops
+of pages 2/4/6/7/8 (the four/five full-text pages) leave individual letterforms as an unresolvable blur --
+the Ranzo system's diagnostic feature per Tomokiyo (superscript figures over an initial-letter code, see
+`sources/cryptiana/web/venetian.htm`) would need to be visibly a *superscript*, which is not recoverable at
+this resolution even in principle. Bourdeau's own CATALOGUE.md entry 1.6 (cited in this folder's check-solved
+section) confirms he worked from BnF's own images for the related fr.2988/fr.3022 Ranzo letters, not a 200px
+thumbnail -- this record's own attachment set is comparatively degraded.
+
+Per CLAUDE.md rule 2 (image over transcription) and rule 7 (reproducible from the image), a blind pass at
+this resolution would not be a real transcription. No `ciphertext.tsv`, no comparison against Bourdeau's
+fr.2988 f.9 transcription (that step needs an actual token sequence to compare, which this pass could not
+produce). Wrote `inventory.tsv` instead, page level only: pages 1/3/5 are mostly blank docket/address leaves
+with small illegible marks; pages 2/4/6/7/8 are full pages of continuous handwriting (roughly 15-21 lines
+each) that cannot be classified cipher-vs-clear or counted into tokens from what's on disk. Page 8 carries a
+probable subscription line and a wax-seal-or-ink mark bottom-left.
+
+**Follow-up (one-line suggestion, not run here):** same as decode-1162 -- a networked worker should check
+whether DECODE's viewer for record 4450 offers anything larger than these `TH_IMG_*` thumbnails before this
+target is written off as needing a fresh BnF Gallica capture of fr.20506 f.136 instead (LANE G2 already has
+live Gallica fetchers this session and may be a faster route to a real image than re-querying DECODE).
+
+Grades: none (no tokens read). No fr.2988 f.9 comparison possible (needs a real transcription first).
+Requests this pass: 0 (no network, per brief).

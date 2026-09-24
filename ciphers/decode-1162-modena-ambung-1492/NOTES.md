@@ -110,3 +110,34 @@ Two logins used this pass (brief asked for one; the first's auto-discovery order
 before reaching the doc link -- see manifest for detail); no further DECODE login should be needed to
 re-attempt this specific document, since the forbidden-placeholder result appears independent of login.
 Folder now 220 KB, well under the 30 MB cap.
+
+## D1: transcription, 24 September 2026
+
+**Blocked on image resolution, no blind passes run.** Both files fetched via `filesrv` are named `TH_IMG_*`
+("thumbnail image") and are in fact thumbnails: 200x300px for the full page (confirmed with `file`). Tried
+6x and 10x Lanczos upscales of several regions (whole-line crops and single-word crops) in the scratchpad;
+individual letterforms remain an unresolvable blur of ink specks at every zoom tested -- there is not enough
+source information to recover, not just a display-scale problem. This is the same finding an earlier worker
+logged for `ciphers/intercepted-royalist-1646/` on an identically-named/sized DECODE thumbnail ("too small to
+transcribe" at 200x268/200x267), so it looks like a standing limitation of what `RecordsView`'s auto-discovered
+`filesrv` links serve for this record, not a one-off.
+
+Per CLAUDE.md rule 2 (image over transcription) and rule 7 (a reading must be reproducible from the image), a
+blind line/token pass against an image this small would not be a real transcription -- it would be invented
+detail dressed as a reading. No `ciphertext.tsv` was written; wrote `inventory.tsv` instead, at page level only
+(recto/verso, rough line count, layout, seal/docket features), each row marked "class undetermined" for
+cipher-vs-clear because that distinction needs legible letterforms this image does not provide.
+
+**What is established:** 2 pages, recto (~15-16 lines, torn top-left corner) and verso (~6-8 lines of the main
+hand, a small ruled address/docket panel, a probable wax-seal remnant, otherwise blank) -- consistent with a
+single folded letter. Symbol inventory, token counts, and any cipher-vs-clear classification are not possible
+from what's on disk.
+
+**Follow-up (one-line suggestion, not run here):** a networked worker should check whether DECODE's own page
+viewer (not just the `filesrv` links `decode_browser_login.js` auto-discovers) offers a larger image for
+record 1162 -- e.g. a lightbox/zoom control on `RecordsView/1162` -- before writing this off; if the platform
+genuinely serves nothing larger than 200px for this record, the attached transcription document (id 3593,
+still unreachable, see above) is the only route left for this target's ciphertext.
+
+Grades: none (no tokens read). Requests this pass: 0 (no network, per brief). Cost: transcription-pass work
+only, well under the $6 cap shared with decode-4450 (see that folder's NOTES.md for the combined total).
