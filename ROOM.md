@@ -1029,3 +1029,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 11:29 | LANE N2 check-solved csN2 | nomination: ciphers/sp36-stquentin-pretender-1743 | copy-order | kind cryptanalysis | intercepted Jacobite letter to the Pretender, 1743
 2026-09-24 11:29 | LANE N2 check-solved csN2 | nomination: ciphers/pro3053-horesse-1717 | copy-order | kind cryptanalysis | two 1717 Herbert-papers letters, correspondents unidentified, no edition reaches them
 2026-09-24 11:29 | LANE N2 check-solved csN2 | nomination: ciphers/sp81-roe-1638 | copy-order | kind recovery | Roe cipher postscript, candidate decipher sibling f.88 same piece
+2026-09-24 11:29 | LANE N2 check-solved csN2 | flag: correction to my last nomination -- sp81-roe-1638 kind should read cryptanalysis, not recovery; the f.88 decipher sibling is unread/unconfirmed as the key for f.225, not yet an applied key
