@@ -105,9 +105,9 @@ other cipher (section 2).
 
 Result: all twenty read cleanly from the book; the seventeen OR-printed ones (the sixteen of the sweep and E6) agree with the OR word for word apart
 from clerical slips and the times (the OR rounds or omits them; the ledger gives the half hour). Code-word
-tokens over the twenty entries: H 296, C 8, M 1, I 0 (`python3 decode.py` prints the count; the C and M tokens are the rows
+tokens over the twenty entries: H 298, C 8, M 0, I 0 (`python3 decode.py` prints the count; the C tokens are the rows
 of key.md section 7 that appear in the entries (the addressee words Prss, Praise, Submit, Mackerel, Mutton; Hedge,
-Nansy, mangled; Brenton M). `python3 decode.py --check` regenerates the readings from ciphertext.txt and key.md
+Nansy, mangled). `python3 decode.py --check` regenerates the readings from ciphertext.txt and key.md
 and exits 1 if reading.md is stale. Per CLAUDE.md rule 4 this is an H reading: the meanings come from the key
 source, and the OR is only the check.
 
@@ -258,6 +258,18 @@ Known cases from the brief: Brenton[?]/Buxton -> Buxton (proposed); Knox/Knots -
 Spartans (proposed); waxy/Navy -> Waxy (proposed). Also proposed: queenly without the doubt mark. **Four proposed
 changes**, none applied here; a Sonnet worker applies the accepted ones to ciphertext.txt and reading.md and reruns
 `decode.py --check`. Grade effect if accepted: E4 M 1 -> 0 (Buxton H), "Navy" moves from plain to a code word (H).
+
+**Applied, 24 Sept 2026** (Sonnet apply worker): all four proposed rows applied to ciphertext.txt; `decode.py --write`
+regenerated reading.md; `decode.py --check` exits 0. Old and new plaintext:
+- E4 tail: `Asst Brenton[?] Fox` -> `Asst Buxton Fox`; reading `[(Assistant) Secretary of the Navy, the tail "Asst
+  Brenton Fox" = Asst. Sec. G. V. Fox][?]` (M) -> `[Secretary of Navy]` (H).
+- E4 body: `Navy` -> `Waxy`; reading `Navy` (plain, ungraded -- the key's Navy row is a blind word, skipped inside
+  an untransposed entry) -> `[South]` (H).
+- E5 body: `Spartan` -> `Spartans`; reading `[Horse]` -> `[Horse]'s` (same H row, meaning unchanged, ending now read).
+- E5 body: `queenly[?]` -> `queenly`; reading `[Depot][?]` -> `[Depot]` (same H row, doubt mark dropped).
+
+Grade counts, updated: E4 H 9, M 1 -> H 11, M 0. E5 unchanged (H 20; the Spartans/queenly changes do not move a
+grade). Whole-file totals (decode.py): H 296, C 8, M 1, I 0 -> H 298, C 8, M 0, I 0.
 
 Observation, no change proposed: E5's ledger header reads "10.45 am" (both copies, and the volunteers "1045 AM"),
 while the time word Elizabeth reads 10.30 AM; the reading's {time: 10.30 AM} is the key's value, not the header's.

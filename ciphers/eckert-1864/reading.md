@@ -132,13 +132,13 @@ Code-word tokens: H 12.
 
 **E4 | Page 49 | 8941 | 21 Apr 1864 9.30 PM, to Butler, Fort Monroe (operator Geo. D. Sheldon)**
 
-{time: 9.30 PM} For, [Maj Gen B. F. Butler] [.] If, you, can, Block the Channel [Roanoke] [Inland [sic: Island]] so she can not get in to Pamlico Sound we will have some Camels made in a few days to lighten the Tecumseh Iron Clad so she can Cross the Bar at Hatteras [8] feet and Protect all Navy of [Roanoke] [Inland [sic: Island]]  {tail: [signed] Asst [(Assistant) Secretary of the Navy, the tail "Asst Brenton Fox" = Asst. Sec. G. V. Fox][?] Fox How are you brave youths}
+{time: 9.30 PM} For, [Maj Gen B. F. Butler] [.] If, you, can, Block the Channel [Roanoke] [Inland [sic: Island]] so she can not get in to Pamlico Sound we will have some Camels made in a few days to lighten the Tecumseh Iron Clad so she can Cross the Bar at Hatteras [8] feet and Protect all [South] of [Roanoke] [Inland [sic: Island]]  {tail: [signed] Asst [Secretary of Navy] Fox How are you brave youths}
 
-Code-word tokens: H 9, M 1.
+Code-word tokens: H 11.
 
 **E5 | Page 49 | 8941 | 22 Apr 1864 10.45 AM, to Butler, Fort Monroe (Sheldon)**
 
-{time: 10.30 AM} [22] For, [Maj Gen B. F. Butler] [.] Dispatch, of, last, night received I learn that there are [4000] [Men] here for [Monroe] instead of [3] [Regiment]'s You have all the [Transportation] and should send it up for them [.] Send also for a [1000] [Cavalry] [Horse] now at the [Cavalry] [Depot][?] here & ready to go to you  {tail: [signed] [Qr Master Genl U.S.]}
+{time: 10.30 AM} [22] For, [Maj Gen B. F. Butler] [.] Dispatch, of, last, night received I learn that there are [4000] [Men] here for [Monroe] instead of [3] [Regiment]'s You have all the [Transportation] and should send it up for them [.] Send also for a [1000] [Cavalry] [Horse]'s now at the [Cavalry] [Depot] here & ready to go to you  {tail: [signed] [Qr Master Genl U.S.]}
 
 Code-word tokens: H 20.
 
@@ -232,5 +232,5 @@ Code-word tokens: H 28.
 
 Code-word tokens: H 9.
 
-Totals over the 20 entries: H 296, C 8, I 0, M 1.
+Totals over the 20 entries: H 298, C 8, I 0, M 0.
 <!-- decode.py: derived block ends -->

@@ -95,7 +95,7 @@ decoded from the ledger; E12 hits are the printed Lincoln works and LoC).
 - Plaintext as read (reading.md): "For Maj Gen B. F. Butler. If you can block the channel Roanoke Island so she
   can not get into Pamlico Sound we will have some camels made in a few days to lighten the Tecumseh iron clad
   so she can cross the bar at Hatteras 8 feet and protect all navy of Roanoke Island. [signed] Asst [Secretary
-  of the Navy] Fox". Code tokens H 9, M 1 ("Brenton"); 10 of about 63 words.
+  of the Navy] Fox". Code tokens H 11, M 0; 10 of about 63 words.
 - Prior plaintext of this telegram: **not located** in OR I/33 (pp.278-279, 938-942), ORN I/9 (pp.647-690),
   Butler Corr. IV (pp.112-120), Fox Confidential Correspondence, Butler's Book, IA full-text search on
   "lighten the Tecumseh", "camels made", "cross the bar at Hatteras", "get into Pamlico Sound", "block the
@@ -392,8 +392,10 @@ applied to Dupuy 468 and Gramont f.29r. Not lowered either: nothing in print car
    (mssEC 18 p.50, pointer 9716, printed ORN I/9 p.667), and Butler's midnight reply as received (mssEC 10
    p.118, pointer 10260; mssEC 25 p.79 top, printed OR I/33 p.279).
    *Residual for the solver, not for this audit:* mssEC 25 is a second witness for the transcription. It reads
-   "Buxton" where ciphertext.txt has "Brenton[?]", the one M token in E4. It also reads "Knots" for "Knox" and
-   "Spartans" for "Spartan". The volunteers read "waxy" where the ledger has "Navy", on both pages.
+   "Buxton" where ciphertext.txt has "Brenton[?]", the one M token in E4 (applied 24 Sept 2026: ciphertext.txt now
+   reads Buxton, grade H, E4's M count now 0 -- see NOTES.md "Second reader E4/E5, Applied, 24 Sept 2026"). It also
+   reads "Knots" for "Knox" and "Spartans" for "Spartan" (Spartans applied). The volunteers read "waxy" where the
+   ledger has "Navy" (applied), on both pages.
 2. **OR I/33 prints the reply but not the telegram.** Read in context at p.279 (IA warofrebellion33unit):
    Butler to Fox, 21 Apr 12 p.m., ends "Will send your telegram to Graham". No Fox-to-Butler telegram of 21 Apr
    is printed on that page or anywhere else in the volume. The Google Books full-text copies of vol. 33
