@@ -1,0 +1,16 @@
+seed 0: signs=588 units=360 types=29 exc=0 acc=1.000
+  truth ostrietnostrihabianoadbenuicinaresenzaaltratumultuationeetlitteetquandodalcantonostroresta
+  read  ostrietnostrihabianoadbenuicinaresenzaaltratumultuationeetlitteetquandodalcantonostroresta
+seed 1: signs=606 units=360 types=29 exc=0 acc=1.000
+  truth rmeforadeldominioconunanostraoltralapresentedirettaaquellaillustrissimasignoriaperilcheper
+  read  rmeforadeldominioconunanostraoltralapresentedirettaaquellaillustrissimasignoriaperilcheper
+seed 2: signs=636 units=360 types=29 exc=0 acc=1.000
+  truth onelemanidelordinarioquestaprocuranonfuspeditaatempochelapotessimandareconlaletteramascris
+  read  onelemanidelordinarioquestaprocuranonfuspeditaatempochelapotessimandareconlaletteramascris
+seed 3: signs=586 units=360 types=29 exc=0 acc=1.000
+  truth lteminacciatoetminaccianotuttauiapurlaueritastacheessogiuglianouerailqualegiuglianoconques
+  read  lteminacciatoetminaccianotuttauiapurlaueritastacheessogiuglianouerailqualegiuglianoconques
+seed 4: signs=646 units=360 types=29 exc=0 acc=1.000
+  truth nconsensodituttiisuoiedipiulereplicoquelcheperaltrailhodettochenondeuemancaredimostraredit
+  read  nconsensodituttiisuoiedipiulereplicoquelcheperaltrailhodettochenondeuemancaredimostraredit
+CONTROL design=12:letter solved_as=12:letter noise=0.0 units=360: mean acc 1.000, per seed 1.00 1.00 1.00 1.00 1.00

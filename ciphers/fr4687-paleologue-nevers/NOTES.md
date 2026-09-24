@@ -288,3 +288,93 @@ confusions in particular; and scoring by the same model (`tools/italian_ngram.py
 Lombard chancery Italian, so a 1560s Mantuan corpus would be the better fit).
 
 Requests this pass: gallica.bnf.fr 3 (IIIF regions, 2 s apart, all 200). No other host, no subagents, no logins.
+
+## Joint-segmentation solver (24 Sept 2026)
+
+Solver session (Opus, LANE G brief). Input: the reconciled 588 signs of `ciphertext.txt` only (first reading per
+sign, `solver/signs.txt`). The ~290 signs of the extra regions were not included: `passA_extra`/`passB_extra`
+had not been pushed when this ran. **Result: a clean negative with matched controls. No reading is claimed.
+Grade counts: H 0, C 0, S 0, M 0, I 0 (no token read).**
+
+**Model.** 16th-c. Italian letter model, built from six Internet Archive full texts: Ferrato's Gonzaga
+princesses' letters (Mantua 1879), Caro, B. Tasso, letters to Aretino, Cibrario's *Lettere inedite di ...
+principi* (manifest `tools/data/it16/manifest.json`). `tools/italian16_corpus.py` keeps paragraphs where
+period letter markers outnumber editorial ones, giving 417 paragraphs and 282,755 letters. It feeds
+`tools/italian_ngram.py build`, which fits an order-5 model. Every 10th paragraph is held out
+(`solver/control_heldout.txt`) as control plaintext, and the control-solving model never saw it.
+
+**Structure tests** (`solver/structure.py`, 20,000 shuffles of the real signs over the real line lengths):
+
+| statistic | observed | shuffle mean | p |
+|---|---|---|---|
+| `1` at line end or before `y` | 0 | 7.4 | 0.00015 |
+| `2` at line end or before `y` | 3 | 6.8 | 0.068 |
+| `0` not preceded by `2` | 8 | 32.1 | <0.00005 |
+| `7` not preceded by `1` | 15 | 37.5 | <0.00005 |
+| `8` not preceded by `1` | 15 | 34.2 | <0.00005 |
+
+`1` behaves as a prefix sign. It occurs 100 times and never ends a line or stands before `y`. `0` is almost
+always the second half of `20`. The design most consistent with this is prefix-free: 1x and 2x are two-digit
+units, and 0, 3-9 and `y` are single units. It parses the stream into 423 units of 30 types, with 3 exceptions
+(a `2` before `y`). A single/double split does not mark vowels against consonants: adjacent single/double
+alternation is 0.49, while Italian vowel/consonant alternation is 0.73. `y` is too rare for a word divider
+(one per 15 units). This design is a hypothesis the statistics favour. It is not established.
+
+**Solver** (`tools/seg_homophonic.py`, new). It takes a design (prefix set, with `y` as a letter or a null),
+segments the stream, and anneals a homophonic key (any number of units per letter) against the model, with
+restarts and a steepest-ascent finish. A unigram-divergence guard (weight 3) stops the collapse to an all-`i`
+key that the first two runs fell into on both the target and the noisy controls. The design is chosen by
+running each candidate and comparing it with nulls. Sign-shuffle nulls re-segment the shuffled signs; unit-shuffle
+nulls keep the units and destroy their order.
+
+**Matched controls (rule 3).** Held-out Italian of 360 letters under a random homophonic key over the same
+29-unit inventory (1x/2x plus 0, 3-9 and `y`). It is cut into lines of the target's lengths at unit boundaries,
+giving 584-646 signs against the target's 588. Sign noise is added (drops, insertions, 4/9 swaps), and the
+text is solved blind with the same settings. Per-token letter accuracy, 5 seeds each (`solver/runs/control_*`):
+
+| control | mean accuracy | per seed |
+|---|---|---|
+| 1x/2x, y letter, 0 % noise | 1.000 | 1.00 1.00 1.00 1.00 1.00 |
+| 1x/2x, y letter, 5 % noise | 0.917 | 0.91 0.88 0.94 0.95 0.91 |
+| 1x/2x, y letter, 10 % noise | 0.754 | 0.79 0.86 0.80 0.53 0.79 |
+| 1x/2x, y letter, 15 % noise | 0.244 | 0.20 0.29 0.14 0.39 0.20 |
+| 1x/2x, y null (6.6 %), 5 % noise | 0.781 | 0.21 0.90 0.92 0.95 0.93 |
+
+**Target** (`solver/runs/target*`). Model score per unit, including the guard, against nulls:
+
+| design | units | types | score/unit | null (kind) | z | output |
+|---|---|---|---|---|---|---|
+| 1x/2x, y letter | 423 | 30 | -3.489 | -3.802 ± 0.008 (signs) | 40.9 | not Italian |
+| 1x/2x, y letter | 423 | 30 | -3.489 | -3.865 ± 0.044 (units) | 8.5 | not Italian |
+| 1x/2x, y null | 395 | 29 | -3.538 | -3.789 ± 0.061 (signs) | 4.1 | not Italian |
+| 1x only, y letter | 489 | 20 | -3.908 | -4.159 ± 0.045 (signs) | 5.6 | not Italian |
+| 2x only, y letter | 515 | 21 | -3.866 | -4.147 ± 0.039 (signs) | 7.2 | not Italian |
+| 1x/2x, y letter, 40 single-reader signs dropped | 390 | 30 | -3.458 | -3.822 ± 0.034 (units) | 10.7 | not Italian |
+| 1x/2x, y null, same variant | 368 | 29 | -3.545 | -3.834 ± 0.083 (units) | 3.5 | not Italian |
+
+The best output (1x/2x, y letter) begins `hcioteonaaleosiebratenesedrauinidratocalamabiracheonsihersosuleet
+cittacarneet...`. It contains isolated short Italian strings (`che`, `et`, `citta`) but no run of words.
+
+**Calibration.** On a 10 % noise control of the same size (`solver/runs/ctl_unitnull_n0.1.txt`), the solver
+scored -3.392 per unit against a unit-shuffle null of -3.734 ± 0.043, z = 7.9. The target's -3.489 and
+z = 8.5 are indistinguishable from it. True-key scores of controls are about -1.5 per unit at 0 % noise, -2.2
+to -2.5 at 5 %, -2.9 to -3.1 at 10 % and -3.5 to -4.5 at 18 %. So the target's order carries some structure,
+but its score sits where a noisy (roughly 10 %+) Italian control would sit, or where a non-Italian or
+nomenclator design would. The solver cannot tell these apart at this length.
+
+**What the negative means.** The solver reads a matched 1x/2x homophonic control at 100 % (clean) and 92 %
+(5 % sign noise), and the target does not read under that design or any of the four others tried. The
+negative holds only (a) for a pure letter-substitution design (no code words, no syllables), (b) for the
+588 signs as reconciled (18 % of them M, and 40 seen by only one of the three readings), and (c) in 16th-c.
+literary/chancery Italian. Margherita Paleologa's clear lines ("lase le mie le posete brusare") are strongly
+Mantuan and phonetic, which the model does not cover. Above about 10 % transcription noise the control itself
+fails (24 % at 15 %), so a negative on this transcription is weak evidence.
+
+Next moves, most promising first. None of these was done here.
+1. Add the ~290 extra signs once reconciled; at about 880 signs the 10-15 % noise band should be readable.
+2. A second native-resolution reading of the M signs, especially 4/9 and the `A:-,B:-` signs.
+3. A Mantuan dialect corpus (e.g. the Gonzaga women's letters in Ferrato 1879, weighted up).
+4. A design with syllable or word codes among the 1x/2x units.
+
+Requests this session: archive.org 13 (1 advancedsearch, 6 metadata, 6 `_djvu.txt` downloads), all 1.5 s
+apart, descriptive User-Agent. No other hosts, no logins, no subagents.

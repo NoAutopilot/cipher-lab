@@ -1,0 +1,16 @@
+seed 0: signs=590 units=337 types=28 exc=0 acc=0.206
+  truth tnostrihabianoadbenuicinaresenzaaltratumultuationeetlitteetquandodalcantonostrorestassequa
+  read  opoprilacitasoattesuasasiderestianiiaiumunouaianeoinannoeeoiuintotinsinionorololeriarreiui
+seed 1: signs=576 units=329 types=29 exc=1 acc=0.897
+  truth raoltralapresentedirettaaquellaillustrissimasignoriaperilcheperlaloropocacapacitalapreghia
+  read  raoltrarlapresentedirettaaquellaemdlustrissimasignoriaperilcheperlalorunpocaapacitadapregh
+seed 2: signs=599 units=338 types=28 exc=0 acc=0.921
+  truth rioquestaprocuranonfuspeditaatempochelapotessimandareconlaletteramascrissituttoamgiulioeta
+  read  rionuestaprocurannoneuspeditaatempocobelapocguimandareconlaletteramascrissituttoamgiulcaeo
+seed 3: signs=576 units=332 types=28 exc=0 acc=0.952
+  truth iatoetminaccianotuttauiapurlaueritastacheessogiuglianouerailqualegiuglianoconquestiassassi
+  read  iatoetminaccianotuteauiapurlaueritastacheessogdglianouerailqualegiuglianoconquestiassassin
+seed 4: signs=626 units=334 types=29 exc=1 acc=0.927
+  truth dipiulereplicoquelcheperaltrailhodettochenondeuemancaredimostrareditenercontodericordidiss
+  read  dipiulerepliieauelcheperaltreqilhodettochenondeuemancaredimostraredirsenercontodericordidi
+CONTROL design=12:null solved_as=12:null noise=0.05 units=330: mean acc 0.781, per seed 0.21 0.90 0.92 0.95 0.93

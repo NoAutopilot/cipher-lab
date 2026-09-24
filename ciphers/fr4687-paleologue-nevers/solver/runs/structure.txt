@@ -1,0 +1,5 @@
+1_final_or_before_y	observed 0	shuffle mean 7.4	p(<=obs) 0.00015
+2_final_or_before_y	observed 3	shuffle mean 6.8	p(<=obs) 0.06800
+0_not_after_2	observed 8	shuffle mean 32.1	p(<=obs) 0.00000
+7_not_after_1	observed 15	shuffle mean 37.5	p(<=obs) 0.00000
+8_not_after_1	observed 15	shuffle mean 34.2	p(<=obs) 0.00000

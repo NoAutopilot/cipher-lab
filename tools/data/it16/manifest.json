@@ -1,0 +1,50 @@
+[
+ {
+  "file": "alcuneletteredip00ferr.txt",
+  "source": "https://archive.org/download/alcuneletteredip00ferr/alcuneletteredip00ferr_djvu.txt",
+  "title": "Ferrato (ed.), Alcune lettere di principesse di casa Gonzaga, Mantova 1879",
+  "bytes": 63538,
+  "sha1": "2d7e35753763e422871ee5174ad47f332f2b30d3",
+  "fetched": "2026-09-24"
+ },
+ {
+  "file": "lettereineditedi01carouoft.txt",
+  "source": "https://archive.org/download/lettereineditedi01carouoft/lettereineditedi01carouoft_djvu.txt",
+  "title": "Annibal Caro, Lettere inedite, ed. Mazzucchelli, vol.1, Milano 1827",
+  "bytes": 553032,
+  "sha1": "00f0d2dee28f55597d5ab130f7780656556b7efc",
+  "fetched": "2026-09-24"
+ },
+ {
+  "file": "delleletterefam02seghgoog.txt",
+  "source": "https://archive.org/download/delleletterefam02seghgoog/delleletterefam02seghgoog_djvu.txt",
+  "title": "Annibal Caro, Delle lettere familiari, 1820 (0 paragraphs pass the filter)",
+  "bytes": 327511,
+  "sha1": "e999881f7298a5b7a9b8b8ab393bccf3ebbebd3b",
+  "fetched": "2026-09-24"
+ },
+ {
+  "file": "lettereinedited00tassgoog.txt",
+  "source": "https://archive.org/download/lettereinedited00tassgoog/lettereinedited00tassgoog_djvu.txt",
+  "title": "Bernardo Tasso, Lettere inedite, 1869",
+  "bytes": 207524,
+  "sha1": "929534358b7317ca94eb5bd9fe93a933b673cdb2",
+  "fetched": "2026-09-24"
+ },
+ {
+  "file": "letterescrittea01vanzgoog.txt",
+  "source": "https://archive.org/download/letterescrittea01vanzgoog/letterescrittea01vanzgoog_djvu.txt",
+  "title": "Lettere scritte a Pietro Aretino, 1874",
+  "bytes": 380284,
+  "sha1": "d2791126e1a3689404c03aecd32411f62b653e43",
+  "fetched": "2026-09-24"
+ },
+ {
+  "file": "lettereinedited01cibrgoog.txt",
+  "source": "https://archive.org/download/lettereinedited01cibrgoog/lettereinedited01cibrgoog_djvu.txt",
+  "title": "Cibrario (ed.), Lettere inedite di santi, papi, principi..., 1861",
+  "bytes": 820284,
+  "sha1": "8019fa7b89fd9628ce4c5671b7d367a3cc496771",
+  "fetched": "2026-09-24"
+ }
+]

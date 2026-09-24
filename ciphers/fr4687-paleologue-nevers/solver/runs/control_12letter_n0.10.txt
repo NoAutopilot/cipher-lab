@@ -1,0 +1,16 @@
+seed 0: signs=594 units=375 types=30 exc=1 acc=0.794
+  truth ostrietnostrihabianoadbenuicinaresenzaaltratumultuationeetlitteetquandodalcantonostroresta
+  read  ostuietnostrilabirinoadbengoiinaresenzaialtragtralaationeetlrotteetcgindodgiliantonostuose
+seed 1: signs=605 units=372 types=30 exc=1 acc=0.861
+  truth rmeforadeldominioconunanostraoltralapresentedirettaaquellaillustrissimasignoriaperilcheper
+  read  rmetoradeldolminanoeonianotraslatralaapresentidiettamquellaialustrissdimasignoriaperiacher
+seed 2: signs=638 units=378 types=31 exc=2 acc=0.797
+  truth onelemanidelordinarioquestaprocuranonfuspeditaatempochelapotessimandareconlaletteramascris
+  read  oneliianiedieieordinaisiosueataprocuranoneuspedataatempochelepotesaemandareconlaleiteramap
+seed 3: signs=587 units=367 types=29 exc=0 acc=0.528
+  truth lteminacciatoetminaccianotuttauiapurlaueritastacheessogiuglianouerailqualegiuglianoconques
+  read  ntesluaddiateetsimaccorretuttauiapurenauernilastadieecesogougnoaleurainueuanegiugnoalocome
+seed 4: signs=645 units=372 types=30 exc=1 acc=0.789
+  truth nconsensodituttiisuoiedipiulereplicoquelcheperaltrailhodettochenondeuemancaredimostraredit
+  read  nconsensolituttiisuoiadipiulereplicohuelcheerolthgailhodettadrqenonnauerancarelisostraradi
+CONTROL design=12:letter solved_as=12:letter noise=0.1 units=360: mean acc 0.754, per seed 0.79 0.86 0.80 0.53 0.79
