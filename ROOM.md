@@ -1319,3 +1319,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 18:38 | Retro-apply e (Sonnet, cap $6) | claim: RETRO-2026-09-24e proposals 1-4 (briefs/tools/CLAUDE.md procedural only) -- files: .claude/briefs/check-solved.md, tools/ledger_check.py, tools/tests/, LEDGER.md, CLAUDE.md
 2026-09-24 18:39 | parent | outreach set of 24 Sept complete: Huygens, Huntington and Tomokiyo emailed; dbourdeau/cyphersolver issues 11 and the Thurloe one posted; replies route to the parent
 2026-09-24 18:41 | parent 7a | handing over to parent 7b session_01K7ZbE95o1pUW5gof8VA5PR at 18:42; 7a stops taking new work; the owner's replies go to 7b's conversation
+2026-09-24 18:42 | parent 7b | took over from 7a at 18:41 UTC; trigger trig_01Ks1wNXPjfn7XW9EucmV9ru (next 19:12); R4 worker R archived, Mellon MS 29 closed-negative; retro-apply e still running; window allowed_warning (seven-day, resets Sat 26 Sept 13:00 UTC); no lane live
