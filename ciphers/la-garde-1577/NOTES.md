@@ -207,3 +207,53 @@ Not done (cost): step 1 of the brief, settling L1's M rows (25 rows in 6179, 1 i
 Suggestions (one line each): (1) a Sonnet transcription pass recording every overline and loop mark on 6179 pp.2-3 and 6467 p2, then rerun `solve_l2.py` with overlined numerals as distinct signs; (2) obtain Groen VI 249-251 clear text for crib context around each gap (LANE V2); (3) check the 1577 Orange-circle cipher literature (Marnix's own systems, 6467's printed editions GSME/LMSAC per R9) for a numeral table of this design.
 
 Search log (print): Groen VI 249-251 (Lettre DCCLXXXIX) is recorded above by the check-solved sweep as omitting the cipher passages ("Les lacunes sont occasionnées par des passages chiffrés"); not re-read by L2 (no network). Novelty not classified.
+
+## L3: second transcription, progress only (24 September 2026, LANE R2 worker L3, Sonnet, $5 cap, stopped over cap at $13.2 by the orchestrator before reconciling)
+
+Brief: two blind Sonnet passes of 6179 pp.2-3 and 6467 p2 recording every numeral group's digits, overline,
+dot/loop mark, and clear-text neighbours (L1 under-recorded these marks); reconcile with `tools/reconcile_passes.py`
+(L1 as a third witness); rerun `solve_l2.py` with overlined numbers as distinct signs; report both control and
+target numbers.
+
+**Landed, pushed:**
+- `ciphertext_6179_passA.tsv`, `ciphertext_6467_passA.tsv`: pass A complete. Counts (pass A's own report): 6179 p2
+  113 groups (lines 22,24-28), p3 80 groups (lines 6-9); 6467 p2 46 groups (lines 6-8,10-11). Marks: `^` 29 (6179)
+  + 10 (6467); `~`/free-standing `[mark]` 11 (6179) + 4 (6467); conf=M 18 (6179) + 4 (6467). Pass A worked from
+  10x local crops (own PIL script, offline), distinguished the loop-crossbar flourish from ordinary cursive
+  descenders on 6/9, and flagged several boundary-straddling marks as free-standing `[mark]` rows rather than
+  guessing a neighbour. Did not open L1's files (confirmed blind).
+- `ciphertext_6179_passB.tsv`: pass B's 6179 (p2+p3) landed. **`ciphertext_6467_passB.tsv` did not land** — pass B
+  was still working on 6467 p2 when the cap notice arrived; its output is not on disk and was not captured (the
+  subagent could not be stopped via TaskStop, task id not found -- it may still complete and hand back after this
+  worker has stopped; if so, a later worker should look for it before relaunching).
+- `solve_l2.py`: given `--ciphertext-6179`/`--ciphertext-6467` (default unchanged) and `--mark-signs` (test A/C
+  treat a marked numeral as a sign distinct from its plain form; test B stays numeric-only, unaffected by design).
+  Verified the default invocation still reproduces L2's exact reported numbers (A control clean 73.5%, 8% noise
+  38.9%, B control 100%, both cribs no consistent map) before any of this section's edits, so the L2 result stands
+  unchanged pending a v2 rerun.
+- `reindex_l1.py`, `ciphertext_6179_L1.tsv`, `ciphertext_6467_L1.tsv`: reformats L1's two files to the `line`-first
+  long format `tools/reconcile_passes.py` needs (line id `p{page}L{line}`, e.g. `p2L22`), so L1 can be fed in as
+  the third witness when reconciliation runs.
+
+**Not done (stopped over cap, per the orchestrator's instruction not to reconcile or run the solver this pass):**
+pass B's 6467 p2 file; the `tools/reconcile_passes.py` run over the three (pass A, pass B, L1-reindexed) witnesses
+for 6179, and two (pass A, L1-reindexed; pass B's 6467 missing) for 6467; settling any disagreements.tsv rows on
+the image; `ciphertext_6179_v2.tsv`/`ciphertext_6467_v2.tsv`; the `solve_l2.py --mark-signs` rerun on the v2 files
+and its reported control/target numbers; this section's own "L3: second transcription" summary with final counts
+(this is progress-only, not that summary).
+
+**Left for whoever picks this up:** check first whether pass B's `ciphertext_6467_passB.tsv` has since appeared
+(the subagent may complete after this worker stops); if not, either wait for it or relaunch a single blind pass B
+on `images/06467_p2.png` alone (06179 pp.2-3 don't need rerunning, pass B's file for those already landed). Then:
+`python3 tools/reconcile_passes.py ciphertext_6179_passA.tsv ciphertext_6179_passB.tsv ciphertext_6179_L1.tsv
+--line-sub '^' ''` (check the id scheme lines up -- all three now use `p2L22`-style ids) `--out-dir .`, settle
+disagreements.tsv on the image, write `ciphertext_6179_v2.tsv`/`ciphertext_6467_v2.tsv`, then
+`python3 solve_l2.py --corpus <fr16 both vols, gunzipped> --control-plain <Marguerite de Valois lines 1006-1030>
+--ciphertext-6179 ciphertext_6179_v2.tsv --ciphertext-6467 ciphertext_6467_v2.tsv --mark-signs` and report the
+printed numbers here as the actual "L3: second transcription" result section, replacing/extending this one. Cost
+note for the retrospective: two Sonnet subagents each reading three full manuscript pages (with additional
+own-script 10x crops) ran well past a $5 cap on their own before this worker's own token use is even counted --
+this is the same lesson R15 already logged (crop-first workflow needed) recurring at higher cost; a target-specific
+`iiif_lines.py`-style local crop cutter (offline, no IIIF fetch needed since the pages are already on disk) run
+once by the orchestrating worker before dispatching passes, handing each subagent only the relevant line-crops
+instead of full pages, is the fix to actually adopt next time, not just note again.
