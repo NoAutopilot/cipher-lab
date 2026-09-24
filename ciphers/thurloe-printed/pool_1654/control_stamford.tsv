@@ -1,0 +1,3 @@
+direction	letter_tokens	right	wrong	value_not_in_key	share_right_of_all	share_right_of_keyed	unkeyed_values
+key from P5_P6 -> P7	832	768	60	4	0.923	0.928	4:1 9:1 20:1 24:1
+key from P7 -> P5_P6	662	620	40	2	0.937	0.939	1:1 47:1
