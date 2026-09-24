@@ -1,0 +1,117 @@
+page	line	idx	group	gloss	note
+p1	L01	1	835	cher	uncertain, prefixed with an unclear mark (possibly '2e'/paragraph mark); matches key.tsv 835=chez|cher
+p1	L01	2	436	nous	key.tsv has 436=vous (ink x1, sibling); 108(B) reads clearly 'nous' -- disagreement
+p1	L01	3	895	_	struck through ('Troupes'), no clean final gloss; unkeyed in key.tsv
+p1	L01	4	880	pres	agrees with key.tsv
+p1	L01	5	86	non	agrees with key.tsv
+p1	L01	6	1188	prets	key.tsv has 1188=mr (ink x2, sibling); 108(B) reads 'non prets' -- disagreement, flagged
+p1	L01	7	6	que	agrees with key.tsv
+p1	L01	8	947	les	agrees with key.tsv
+p1	L01	9	443	anglais	agrees with key.tsv; interlinear correction above rewrites tail of line as 'les anglois ont fait'
+p1	L01	10	961	ont	agrees with key.tsv
+p1	L01	11	744	fait	agrees with key.tsv (faites|fait)
+p1	L02	1	878	une	agrees with key.tsv (unkeyed previously? check)
+p1	L02	2	428	des	new reading, not in key.tsv
+p1	L02	3	72	cent	new reading, not in key.tsv (also appears p1_L03/1 as 'ent')
+p1	L02	4	444	te	agrees with key.tsv
+p1	L02	5	1022	en	new reading, not in key.tsv
+p1	L02	6	677	virginie	agrees with key.tsv; pencil gloss below spells out 'Virginie' in full
+p1	L02	7	266	ou	new reading, not in key.tsv
+p1	L02	8	1068	ils	agrees with key.tsv
+p1	L02	9	765	exe?	unclear, unkeyed in key.tsv; low confidence
+p1	L02	10	931	y	new reading, not in key.tsv
+p1	L03	1	72	ent	cf. L02/3 'cent' -- same figure, partial-word homophone (cent/ent)
+p1	L03	2	932	tout	new reading, not in key.tsv
+p1	L03	3	617	fort	new reading, not in key.tsv
+p1	L03	4	1151	de	new reading, not in key.tsv
+p1	L03	5	355	ras	agrees with key.tsv (355=ras, ink x1)
+p1	L03	6	64	va	new reading, not in key.tsv
+p1	L03	7	915	ge	new reading, not in key.tsv
+p1	L03	8	940	.	agrees with key.tsv (punctuation mark)
+p1	L03	9	655	suivant	key.tsv/fills.tsv had 655 filled 'selon' by R16 (grade M, context); 108(B) reads 'suivant' clearly -- confirms AUDIT.md's finding, R16 fill wrong
+p1	L03	10	947	les	agrees with key.tsv
+p1	L03	11	166	dernieres	R16 considered and dropped 166='dernieres' as a weak single fit (fills.tsv note); 108(B) confirms it directly
+p1	L04	1	217	nouvelles	agrees with key.tsv (nouvelle)
+p1	L04	2	456	ils	agrees with key.tsv
+p1	L04	3	961	ont	agrees with key.tsv
+p1	L04	4	555	re	agrees with key.tsv
+p1	L04	5	789	mon	agrees with key.tsv
+p1	L04	6	444	te	agrees with key.tsv
+p1	L04	7	890	la	agrees with key.tsv
+p1	L04	8	480	vi	agrees with key.tsv (vi|ri)
+p1	L04	9	832	vi	agrees with key.tsv
+p1	L04	10	991	ere	agrees with key.tsv (er|ere); line reads 'nouvelles ils ont remonte la riviere'
+p1	L05	1	80	e	agrees with key.tsv
+p1	L05	2	10	de	agrees with key.tsv
+p1	L05	3	1157	ja?	struck word replaced; unclear, unkeyed in key.tsv; low confidence
+p1	L05	4	387	volt?	unclear, unkeyed in key.tsv; low confidence
+p1	L05	5	96	et	agrees with key.tsv
+p1	L05	6	10	de	agrees with key.tsv
+p1	L05	7	165	ba	agrees with key.tsv (M, pencil x1)
+p1	L05	8	626	r	agrees with key.tsv
+p1	L05	9	884	que	agrees with key.tsv
+p1	L05	10	125	a	agrees with key.tsv
+p1	L05	11	66	cinq	new reading, not in key.tsv; clear
+p1	L06	1	366	?	illegible/uncertain, preceded by a fully struck-through false start ('information'-like); unkeyed in key.tsv
+p1	L06	2	111	onze?	uncertain digit count on the image (108(A)'s own transcription has 1111 here, graded M 'agree-flagged'); gloss resembles key.tsv's pencil M value 'onze' for 1111
+p1	L06	3	1145	lieues	new reading, not in key.tsv; fits context 'onze lieues au-dessous de Richmond'
+p1	L06	4	301	au	agrees with key.tsv (M weak 'au')
+p1	L06	5	10	de	agrees with key.tsv
+p1	L06	6	521	sous	new reading, not in key.tsv; with idx4-5 forms 'au-dessous'
+p1	L06	7	1086	de	agrees with key.tsv
+p1	L06	8	480	ri	agrees with key.tsv (vi|ri); line reads 'au-dessous de Richmond'
+p1	L06	9	656	ch	agrees with key.tsv
+p1	L06	10	789	mont	agrees with key.tsv (mon, spelled out fuller here)
+p1	L07	1	976	.	agrees with key.tsv (punctuation)
+p1	L07	2	1032	cette	agrees with key.tsv/fills.tsv (R16 fill 'cette', confirmed)
+p1	L07	3	1195	ville	new reading, not in key.tsv
+p1	L07	4	527	ainsi	new reading, not in key.tsv
+p1	L07	5	997	que	agrees with key.tsv
+p1	L07	6	4	wilm	agrees with key.tsv (M weak)
+p1	L07	7	4	wilm	agrees with key.tsv (M weak); repeated figure, repeated gloss
+p1	L07	8	1068	ils	agrees with key.tsv
+p1	L07	9	587	li	agrees with key.tsv
+p1	L07	10	175	ce	agrees with key.tsv/fills.tsv (R16 fill, confirmed)
+p1	L07	11	808	s	agrees with key.tsv
+p1	L08	1	101	?	illegible, unkeyed in key.tsv
+p1	L08	2	818	qui	agrees with key.tsv (M, pencil)
+p1	L08	3	961	ont	agrees with key.tsv
+p1	L08	4	579	etc	agrees with key.tsv (struck, M weak)
+p1	L08	5	110	?	illegible, unkeyed in key.tsv
+p1	L08	6	1125	si	agrees with key.tsv
+p1	L08	7	446	ve	agrees with key.tsv
+p1	L08	8	620	ment	agrees with key.tsv
+p1	L08	9	381	le	agrees with key.tsv
+p1	L08	10	321	?	illegible, unkeyed in key.tsv
+p1	L08	11	109	du	agrees with key.tsv
+p1	L09	1	124	gouvernement	new reading, not in key.tsv; clear
+p1	L09	2	10	de	agrees with key.tsv
+p1	L09	3	677	virginie	agrees with key.tsv
+p1	L09	4	628	sont	new reading, not in key.tsv (key_conflicts.tsv lists 628 sont|d -- 108(B) supports 'sont')
+p1	L09	5	52	enti	agrees with key.tsv (M weak 'ent')
+p1	L09	6	1167	ere	agrees with key.tsv/fills.tsv (R16 fill 'iere', confirmed)
+p1	L09	7	620	ment	agrees with key.tsv; line reads 'entierement'
+p1	L09	8	1123	hors	new reading, not in key.tsv; clear, fits 'entierement hors de defense'
+p1	L09	9	1151	de	new reading, not in key.tsv
+p1	L09	10	1158	deffense	new reading, not in key.tsv; clear, confirms reading_108A's gappy rendering
+p1	L10	1	363	et?	fills.tsv has R16 fill 363='hommes' (M, 4 contexts); 108(B) reading here is uncertain but does not look like 'hommes' -- flagged for review, low confidence
+p1	L10	2	947	les	agrees with key.tsv
+p1	L10	3	838	?	illegible, unkeyed in key.tsv
+p1	L10	4	462	?	illegible, unkeyed in key.tsv
+p1	L10	5	802	?	illegible, unkeyed in key.tsv
+p1	L10	6	909	?	illegible, unkeyed in key.tsv
+p1	L10	7	410	?	illegible, unkeyed in key.tsv
+p1	L10	8	402	avec	agrees with key.tsv (M, pencil)
+p1	L10	9	880	pres	agrees with key.tsv (re-used figure)
+p1	L10	10	1025	ci	agrees with key.tsv/fills.tsv (R16 fill 'ci', confirmed); pencil alt below reads similarly
+p1	L10	11	519	pi	agrees with key.tsv/fills.tsv (R16 fill 'pi', confirmed)
+p1	L11	1	1129	ta	agrees with key.tsv/fills.tsv (R16 fill 'ta', confirmed)
+p1	L11	2	868	tion	agrees with key.tsv
+p1	L11	3	599	sur	agrees with key.tsv
+p1	L11	4	947	les	agrees with key.tsv
+p1	L11	5	375	der?	unclear, unkeyed in key.tsv; low confidence
+p1	L11	6	480	ri	agrees with key.tsv (vi|ri)
+p1	L11	7	991	ere	agrees with key.tsv (er|ere); line reads 'precipitation sur les [dernieres?] rivieres'
+p1	L11	8	460	es	agrees with key.tsv
+p1	L11	9	940	.	agrees with key.tsv
+p1	L11	10	1185	nul	new reading, not in key.tsv; a null marker, cf. mssDE68's own null marks (394,848,1187)
