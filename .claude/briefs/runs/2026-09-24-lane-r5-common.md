@@ -20,3 +20,11 @@ COMMON RULES (LANE R5 worker; parent LANE R5 orchestrator session_01LcgYWtnKYzBk
   native region crops rather than whole pages where the leaf is known.
 - (LANE R5, 24 Sept 2026) Price at the first page: report cost per leaf/line and agreement in your ROOM done line, so the orchestrator
   can decide whether to buy the rest. Readings go "for LANE V5"; do not verify. Your final paragraph must include your session id.
+- (RETRO-2026-09-24f) Cost checks are a stop rule, not a log entry. After each named step, compare get_session's cost to the cap: if
+  what remains of the cap is less than your best estimate for the *next* named step (use the nearest comparable leaf's per-step cost
+  if one is on file, e.g. LANE R4 J's f.54v; never assume the next step is cheaper than the last one), stop there, commit and push
+  what is on disk, and report the partial result with "capped before <step>" rather than starting it. RETRO-2026-09-24f: LANE R5 A
+  read its own cost after each step (as briefed) but had no rule for what to do with the number, ran into pass B at $8-and-rising,
+  and was interrupted by the orchestrator at $9.37 with pass B unfinished -- the same image-heavy pipeline cost $6.50 on the
+  reference leaf (J, f.54v), so an $8 cap with no per-step checkpoint had about one leaf's worth of margin for a job already showing
+  ~44% variance leaf to leaf.
