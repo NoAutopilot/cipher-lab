@@ -1218,3 +1218,127 @@ fetcher (M18). No other host. No logins, no credentials, no decoding, no subagen
 10-image representative sample (title page + every Gramont-mention page + the two section-boundary pages) kept on
 disk; the other 80 thumbnails were fetched, read from disk this session, and then deleted (not committed) to stay
 under the 30 MB/folder cap — re-fetch any of them from the manifest's per-folio url, one request, in seconds.
+
+## N4 decision, 24 Sept 2026
+
+LANE V verifier, 05:08-05:15 UTC (`date -u` read), orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ. This session did
+none of the solving, auditing or gap work above and did no decoding. Question: does the logged coverage of no.21
+(f.29r, Gramont to Villandry) and no.22 (f.30r-v, Gramont to Francis I), both Rome, 20 May 1530, each N3 after two
+audits, now meet rule 10's N4?
+
+**Answer: no, for both items. Each stays N3** (status.json unchanged). Two principal families are still uncovered, and
+they are the same for both letters. (1) Camusat's *Meslanges historiques*: the tract "Lettres du Roy François premier
+et instructions a ses ambassadeurs ... ensemble les memoires & lettres desdicts Ambassadeurs" has been read for folios
+1-90 recto only. Folios 91-217 are unread, and the tract holds a letter to Villandry at f.180. (2) DECODE: nothing has
+been written under "DECODE search" in this file yet. LANE N was asked at 05:07 UTC.
+
+### 1. Principal families: covered or not
+
+| family | no.21 f.29r | no.22 f.30 | where logged |
+|---|---|---|---|
+| Le Grand, *Histoire du divorce* III (*Preuves*), I, II | covered. The MDZ OCR was read page by page for pp.394-542, with a dateline sequence and a phrase search. v.1-2 and pp.1-393 were checked by EF tokens | covered, same pages. f.30's phrases were run through print_check | second audit, "Gap (1) closed"; f.30 second audit (e) |
+| **Camusat, *Meslanges historiques*** (1619; the 1644 ed. on Gallica, bpt6k5039434) | **not covered.** Folios 1-90 recto of the Francis I tract were read with no hit. Folios 91-217 are unread (9 were sampled earlier, among them f.180, "A Monsieur de Villandre du 4 Decembre 1531"), and so are the versos of 1-90. The tract prints letters to Villandry and ambassadors' letters on the divorce affair, so it is the one French edition that could print either letter | **not covered**, same tract. It prints ambassadors' letters to the king | "Print check through Gallica page images"; "Camusat tract, dense read" |
+| Champollion-Figeac, *Captivité* (1847) | covered: the volume's own table limits it to Oct 1524-Apr 1526 | covered, same | "Print check through Gallica page images" |
+| Pocock, *Records of the Reformation* I-II | covered, full text | covered (4(c), shared) | section 4(c) |
+| Ehses, *Römische Dokumente* | covered, full text | covered (shared) | section 4(c) |
+| *L&P Henry VIII* iv.3; *State Papers* VII | covered, full text; no Gramont item of 20 May | covered, re-grepped for Florence/Avignon | section 4(a); f.30 (a) |
+| L&P *Addenda* I (1929) | unreached (not on IA). **Not principal for this item**: the Addenda calendar English-held papers, and this letter is a BnF original with no English copy | same | section 4(a) |
+| CSP Spanish IV, CSP Venetian IV | covered, full text | covered, re-grepped, including the Asti interceptions (p.603) | section 4(a); f.30 (a); f.30 second audit (a) |
+| CSP Milan | unreached. **Not principal** (Milanese-held papers) | same | section 4(a) |
+| Desjardins/Canestrini, *Négociations ... Toscane* II | covered through the shared embassy search | covered, full text | f.30 (b); f.30 second audit (b) |
+| *Archivio storico italiano*, Appendice I-IX and the general index | covered (general index: one Tarbes item, the April letter) | covered; App. I doc. XXXVIII is the sibling April letter and was tested as a different letter | f.30 (b); f.30 second audit 1 |
+| Sanuto, *Diarii* 52-54 | covered (index columns read in context) | covered | f.30 second audit 2 |
+| Molini, *Documenti di storia italiana* | covered: 8505 prints only item 23 | covered | section 4(c); f.30 second audit (b) |
+| Ribier, *Lettres et mémoires d'estat* | covered, full text, three scans | covered, re-grepped | section 4(b); f.30 second audit (b) |
+| *Catalogue des actes de François Ier* I, VI, VII, IX | covered: IX [411] gives existence and date only | covered | section 4(c); f.30 second audit (b) |
+| BnF catalogue of fr.2980 (cc494342) and the BnF finding aids | covered: no bibliography, and no decipherment in the volume (Raince test). fr.3038 no.19 is the Bologna decipherment | covered: no recipient given for no.22 | second audit, Raince test; f.30 (c) |
+| *Catalogue de la collection Dupuy* | covered (15 May letter to Du Prat, Dupuy 452) | covered | f.30 (b) |
+| Sender and recipient studies: Rentet (Villandry, PUR), Michon (Gramont, PUR 2011), Decrue, Scheurer I, Bourrilly | covered | covered | sections 4(b), second audit (c) |
+| Michon, *La Crosse et le Sceptre* (2008) | unreachable (Google Books NO_PAGES). **Not principal for a print of the letter**: his PUR chapter on Gramont (2011) was read in full and cites no fr.2980 and no cipher. Noted as the residual specialist gap | same | "Toward N4"; section 4(b) |
+| Tomokiyo, francis.htm and GL.htm | covered, live twice. "These undeciphered letters can be read with Gramont's cipher (1530)": no reading. GL.htm (cached 23 Sept 2026, re-grepped this session) has no mention of fr.2980 or Villandry: Lasry's Gramont list is fr.3040, fr.3091, fr.3071 and Clair.330 | covered, same | section 4(f); f.30 second audit (f); this section, 2 |
+| Lasry's publications | covered: CrossRef and Google Scholar list no Gramont article. His 2023 Gramont work is known only through Tomokiyo's GL.htm, which does not claim nos.21-22 | covered | open-index pass row 7; this section, 2 |
+| Bourdeau, dbourdeau/cyphersolver (main and all ten PR heads) | covered: CATALOGUE.md:76 (328, "key held"); no file or reading for fr.2980 at main ce81527 (24 Sept 2026 00:11 -05:00) or at PR heads 1-10, including arya1515's PRs 7-10 | covered, same | this section, 2; earlier heads in the audits |
+| Aymeloglu, aaymeloglu/unsolved-ciphers | covered: head 2495c45. Its DECODE dump has three Gramont records (fr.3040 f.16 and f.18, fr.3091 f.45-47), none of them fr.2980 | covered | this section, 2; f.30 (e) |
+| **DECODE (de-crypt.org)** | **not covered.** No "DECODE search" section exists here, and live search is LANE N's. Aymeloglu's dump of the catalogue (see above) is indirect evidence only, because it is a third-party snapshot, not a search | **not covered** | ROOM.md 05:07 UTC request |
+| Phrase search on the decoded text (IA, Google Books, print_check) | covered, two audits | covered, two audits | section 4(e); second audit (e); f.30 (d); f.30 second audit (e) |
+| Open indexes | CrossRef, HAL, Persée, Google Scholar: covered, several passes. OpenAlex and Semantic Scholar: 429 at every attempt today, this session's included. Unreachable and logged. They do not block N4 on their own (Danzay precedent) | same | open-index pass; f.30 (f); this section, 2 |
+| JSTOR | 11 rows queued (2-7, 27-29, 33-34). Under the verifier template a queued row does not block N4 | same | JSTOR-QUEUE.tsv |
+| HathiTrust full text | unreachable (Cloudflare). It is a search route, not an edition: the editions it would reach are covered above by IA, MDZ or HTRC EF | same | "Toward N4" |
+| Simancas and Vienna intercepts | archival. N4 does not require internal or unpublished work to be excluded | archival, same | f.30 second audit 3 |
+
+### 2. What this session searched (one pass)
+
+- **OpenAlex**: 3 queries (Gramont Tarbes 1530; Gramont cipher Francis; Gabriel de Gramont), all 429 ("$0 remaining;
+  resets at midnight UTC"). Stopped.
+- **Semantic Scholar**: 1 query, 429; 1 retry after 45 s, 429. Stopped.
+- **CrossRef**, 4 queries (Lasry Gramont cipher; Tomokiyo Francis cipher; Gramont Tarbes Rome 1530 ambassade;
+  chiffre diplomatique François Ier 1530). Lasry's hits are the 2016 and 2022 *Cryptologia* papers and the HistoCrypt
+  papers of 2022 (papal 1721) and 2023 (Armand de Bourbon 1649). None is on Gramont. Everything else is noise.
+- **WebSearch**, 4 queries (fr.2980 Gramont deciphered Villandry; Lasry Gramont 1530 2023; arya1515 cyphersolver
+  Gramont 2980; ciphermuseum Lasry Gramont). They surfaced Bourdeau's site and forks of his repository
+  (arya1515/cyphersolver, aryasn2026/cyphersolver), whose work reaches Bourdeau as PRs 7-10. They also surfaced a
+  Cipher Museum page on Lasry, whose search summary names no Rome 1530 letter (the page was not fetched: host not
+  on this session's list). The Gramont letters read in the Bourdeau line are 11 Oct 1529 and 21 July 1530, not
+  nos.21-22.
+- **dbourdeau/cyphersolver**: shallow clone of main (ce81527) plus every `refs/pull/*/head`, grepped for 2980,
+  btv1b9059991d, Villandr and 8505. The only hits are CATALOGUE.md:76 and the gallica_sweep candidate line; the rest
+  are numeric collisions. Deleted after.
+- **aaymeloglu/unsolved-ciphers**: shallow clone at 2495c45 (unchanged). Grepped, then deleted.
+- **Tomokiyo GL.htm** (cached copy, 23 Sept 2026): no fr.2980 and no Villandry. francis.htm §"BnF fr.2980 (1530)":
+  "These undeciphered letters can be read with Gramont's cipher (1530) below", and nothing more.
+  Neither page says either letter has been deciphered.
+
+### 3. Decision
+
+**no.21 (f.29r): N3 stays. no.22 (f.30r-v): N3 stays.** Every calendar, documentary edition, catalogue and project
+page in the table is covered, except for two principal families:
+1. **Camusat, folios 91-217 of the Francis I tract**, and the versos of 1-90 near the Gramont mentions (f.2v-3v, f.34v,
+   f.64v, f.82v-84v). This is the one French printed collection of royal and ambassadorial letters of 1531-33 on the
+   divorce affair, and it prints a letter to Villandry. Folios 1-90 hold no 1530 date. That is a good sign but does
+   not settle the question, because the tract says itself that it is out of date order (f.57r). About 127 recto pages
+   remain, one LANE G session with the same calibration (canvas = 155 + 2×(folio−1)). **Asked of LANE G in ROOM.md.**
+2. **DECODE.** One catalogue search for Gramont / Tarbes / "fr. 2980" / "Français 2980" / 1530 closes it (LANE N,
+   requested at 05:07 UTC).
+
+If both come back negative, the next verifier can assign N4 to both items without repeating anything else. Nothing
+found here lowers either class.
+
+**Safe sentences (N3, current):** those of the second audit (f.29r, "Second audit (adversarial)", Verdict, with the
+second-reader counts 568 / H 533 / M 30 / U 5) and of the f.30 second audit ("Safe sentence"). Both credit Tomokiyo's
+identification, the published key (Tomokiyo; Lasry 2023) and Bourdeau's catalogue 328, and neither may be shortened.
+
+**Sentences for N4 only, not to be used until the two gaps close:**
+- no.21: "No prior decipherment located of Gabriel de Gramont's cipher letter to Jean Breton de Villandry, Rome, 20 May
+  1530 (BnF fr.2980 f.29r, no.21). It was identified as readable by Tomokiyo and catalogued by Bourdeau (328), and we
+  read it here in part with the Gramont 1530 key published by Tomokiyo and Lasry (2023). Search log in AUDIT.md."
+- no.22: "No prior decipherment located of Gabriel de Gramont's all-cipher letter to Francis I, Rome, 20 May 1530 (BnF
+  fr.2980 f.30r-v, no.22). It was identified as readable by Tomokiyo and catalogued by Bourdeau (328), and we read it
+  here in part with the Gramont 1530 key published by Tomokiyo and Lasry (2023), plus 158 signs at grade S. Search log
+  in AUDIT.md."
+
+**Unsafe sentences:** "N4" or "no prior decipherment located" today (Camusat and DECODE are open); "first decipherment",
+"previously unread", "newly recovered", "unpublished" (not allowed at N3); "we broke Gramont's cipher" (the key is
+Tomokiyo's and Lasry's); "read in full" or "1500 of 1973 signs read" (the reading is partial, on one reconciled
+transcription); "Cardinal Gramont" on 20 May 1530; "Gramont to Villandry" for f.30.
+
+### 4. Outreach gates (CLAUDE.md Outreach 1-6), both items
+
+| gate | state |
+|---|---|
+| 1. verifier class in AUDIT.md | **met** (N3, both) |
+| 2. above N1: second adversarial audit, open-index pass, Google Books queries, JSTOR rows answered or waived | second audit **met** (both). Open-index pass **met** except for OpenAlex and Semantic Scholar, which are unreachable and logged. Google Books **met**. JSTOR rows 2-7, 27-29 and 33-34 **not met**: they are queued, neither answered nor waived |
+| 3. message is the safe sentence, states the prior print it rests on (Tomokiyo's francis.htm key; Lasry via GL.htm; Bourdeau 328), links AUDIT.md | **not met**: no draft exists |
+| 4. rule 10 wording | only the N3 safe sentences may be used |
+| 5. logged in CONTRIBUTIONS.md before sending | **not met** |
+| 6. verifiable links: repository folder; Gallica ark btv1b9059991d at the leaf (f.29r, f.30r-v); Tomokiyo's francis.htm; for f.30, ASI App. I pp.473-481 (IA `archiviostoricoi01fireuoft`) as the closest print | links available; **not met** until a draft carries them |
+
+**Postmortem.** No over-claim was found (grep of the folder's .md files and the status.json rows for new/first/unread/
+unpublished/never printed: the only hits are rule-10 reminders and unsafe-sentence lists). The error to avoid is
+the one the Danzay decision recorded: an audit that narrows a gap ("Camusat ff.1-90: no hit") must not be summarised
+upward as "Camusat closed". The f.30 second audit's "Not raised to N4 because Camusat ... is sampled, not read" still
+holds for ff.91-217. A lesson for the verifier template: grep a solver repository's `refs/pull/*/head` as well as
+main. Bourdeau's forks (arya1515) reach it only as PRs, and none of the earlier audits here fetched them.
+
+Requests this session: api.openalex.org 3 (429), api.semanticscholar.org 2 (429), api.crossref.org 4, github.com 2
+shallow clones plus 1 PR-ref fetch (deleted after), WebSearch 4. No Gallica, no de-crypt.org, no Google Books, no
+archive.org, no logins, no decoding, no subagents.
