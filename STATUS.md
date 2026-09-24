@@ -218,6 +218,39 @@ decipherment in the same volume is N0 without print; an N4 decision needs a prin
 own gap lists; value-changing second-reader proposals go to an Opus adjudicator, not a Sonnet applier.
 Not kept: ASSIGNMENTS rows (ASSIGNMENTS.md lives in the hub repository, which this session did not have).
 
+## LANE R3 handoff (session_01GPDjihFcZasP5KTSYRS5uN), 24 September 2026, 13:52 UTC
+
+Lane: recovery on copy-free nominations, 12:03-13:52 UTC, successor to LANE R2. Four workers (J5I J5S J6 J7), $41.15 of worker
+usage, orchestrator about $14. All ledgered (LEDGER.md with session ids), in hub-seed/ASSIGNMENTS.md, archived. Briefs
+`.claude/briefs/runs/2026-09-24-lane-r3-*.md`. Stopped because no copy-free nomination remains (the last, 5549, arrived 11:51)
+and because **this session read `allowed_warning` on the seven-day window at 13:50 UTC (resets Sat 26 Sept 13:00 UTC)**, posted
+in ROOM and BUDGETS.md. No live workers.
+
+**Results (novelty from the verifiers, not this lane):**
+| Target | Result | Class |
+|---|---|---|
+| jan-van-nassau-1572-75 5549 closing stretch | leaf pp.4-5, 226 tokens, read under Lodewijk's 1574 five-per-letter table: C 163 I 13 M 6 U 44; `decode_5549.json --check` 0; agrees with Groen Suppl. no.45 pp.146*-148* | N1 (V3 V1) |
+| jan-van-nassau-1572-75 5549 body | runs 1-61, 539 numerals, image-checked (590/593 agree with Groen); key not on file. Negative with matched German control: control 10.9% tokens / 14.4% letters, true key scores below found key, so beyond the anneal at this length (J7) | -- |
+| sibling keys | 5550, 5552, 5557, 5204 are in Lodewijk's 1574 table (5550/5552/5557 glossed on the leaf); 5207/5208/5213 are a separate <100 system that Groen V prints in clear (known-plaintext pairs, untouched) | -- |
+
+**Open items:**
+1. 5549 body needs a key source, not more cryptanalysis: untested 5205 and 5209 (one-page fit with j6/fit.py, $2); letters to or
+   from Jan Nov 1573-Mar 1574 in other archives. Crib context is in groen/groen_5549.tsv.
+2. The <100 system of 5207/5208/5213 (Willem to Jan, 1574): three known-plaintext pairs with Groen V in clear; an aligner job
+   would give its key (N1 at best, since Groen prints the text) -- a dataset, low priority.
+3. Ranzo f.136 (decode-4450): not spawned; 320 codes in 749 tokens with no crib cannot be read by an anneal (a control would
+   fail as J7's did); needs a clear copy. DECODE 1162 Modena stays blocked on ASKS 42.
+4. csWV3's key sources (sources/wvo/print-status-2026-09-24.tsv: 5801/11250 decipherment for Lodewijk NB1 gaps; 58, 1069;
+   7630) are leads for the next recovery lane, none started.
+
+**Lessons:**
+- The pre-capture look paid: Groen printed 5549's numbers, so J5I became a one-pass image check against print, and the leaf
+  showed a cipher stretch Groen had silently printed in clear.
+- Look at neighbouring briefnrs on the WVO leaf before cryptanalysis: J5S found glossed siblings in five minutes.
+- Image-reading workers still overran (J5I 47%, J5S 72%); the two TSV-first workers (J6, J7) finished at 75% and 28% of cap.
+- Run the matched control first: J7 settled "beyond the method" in 20 minutes for $4.
+
+
 ## LANE R2 handoff (session_0169D5ZhVf9y378dTq1bHp41), 24 September 2026, 11:25 UTC
 
 Lane: recovery and cryptanalysis on copy-free targets, 08:47-11:25 UTC, successor to LANE R. 19 workers (inherited R19 plus
@@ -444,6 +477,7 @@ cap of $80 (raised to $120 and 16 workers at 05:12 UTC 24 Sept 2026 when the own
 | V3, verification FR/NL/DE/ES/IT (successor to V2, 12:02 UTC) | session_01VmWU2CzMFSQKBCWe8XqfTi | readings 'for LANE V3', second-opinion prompts for the Saxony and Lodewijk N4 items, outreach drafts once JSTOR rows are waived | Google Books, HTRC, IA full text by claim, DBNL, Huygens, WVO |
 | R3, recovery on copy-free nominations (successor to R2, 12:02 UTC) | session_01GPDjihFcZasP5KTSYRS5uN | Jan van Nassau 5549, Ranzo f.136 solver with control, new copy-free nominations; pre-capture check first | Huntington, RAH, Riksarkivet IIIF, Nationaal Archief and Huygens images, NARA, loc.gov |
 | N2, nominations (successor to N, 09:52 UTC) | session_01DfQyAaXAgcoFZMAbBTGj4f | copy-free first: DECODE census beyond DC20, Nassau circle and Huygens editions, RAH OAI, Vatican, Simancas, Florence; four firm nominations an hour | IA advancedsearch, TNA Discovery API, BL, Wellcome, loc.gov, PARES, Italian and Vatican sites, Huntington CONTENTdm catalogue, Lambeth CalmView, Riksarkivet, HTRC, de-crypt.org (one worker at a time), Huygens and WVO |
+| R3, recovery on copy-free nominations (12:03-13:52 UTC, closed on handoff at seven-day allowed_warning) | session_01GPDjihFcZasP5KTSYRS5uN | Jan van Nassau 5549 (closing stretch C 163, N1; body negative with control) | resources.huygens.knaw.nl |
 | R2, recovery on copy-free targets (08:47-11:25 UTC, closed on handoff; succeeded by R3) | session_0169D5ZhVf9y378dTq1bHp41 | Jan van Nassau 1572-75, Günther of Schwarzburg 1561, the four DECODE records with images, Lodewijk additions, La Luzerne 108(B) key | hdl.huntington.org, RAH, Riksarkivet IIIF, Nationaal Archief and Huygens images, NARA, loc.gov |
 | N, nominations (successor to S, 05:04 UTC; asked to hand off 09:53 at $128) | session_01W4z8JhXJYHRjorPC1Qkpiy | check-solved N48-N66 and R rows, new catalogue families (Italian and Vatican archives, PARES, LoC, NARA, Dutch), HTRC detector, the DECODE Non-decrypted census; target four stage-2 nominations an hour, posted as ROOM `nomination:` lines | IA advancedsearch, TNA Discovery API, BL, Wellcome, loc.gov, NARA, PARES, Italian and Vatican sites, Huntington CONTENTdm, Lambeth CalmView, Riksarkivet, HTRC, de-crypt.org (one worker at a time) |
 | R, recovery and cryptanalysis on copy-free targets (05:04-08:44 UTC, closed on handoff; succeeded by R2) | session_01SEnQgi5wPVmMADaVHnWkNN | U2 Blathwayt alignment, U1 Luzerne, W1 Oxenstierna solver with control, rah-canada-1869, then LANE N's copy-free nominations; readings to LANE V | hdl.huntington.org, RAH, Riksarkivet IIIF, NARA and loc.gov images, US library image servers |

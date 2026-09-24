@@ -1469,6 +1469,14 @@
    "grade": "closing stretch (leaf pp.4-5, 226 tokens): C 163, I 13, M 6, U 44; agrees with Groen pp.146*-148*; novelty N1 (AUDIT.md V1). Body runs 1-61: other key, unread, printed by Groen as raw numbers",
    "line": "WVO 5549: the enciphered closing stretch reads under Lodewijk's 1574 five-per-letter table and agrees with Groen's clear print, Suppl. no. 45, pp.146*-148* (N1). This is an independent re-decipherment. The body, runs 1-61, is in another key and is unread.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "cryptanalysis",
+   "title": "Jan van Nassau to William of Orange, Dillenburg, 21 Nov 1573 (WVO 5549): body in the 'verendertte Ciffer' (61 runs, 539 numerals), negative with a matched control",
+   "grade": "no reading: H0 C0 S0 M0 I0. Matched German control (same 61-run pattern, 82 homophones + 20 syllables + 32 code words) recovers 10.9% of tokens, 14.4% of letters; the true key scores below the found one; so the design is beyond this method at this length, not evidence about the key",
+   "line": "WVO 5549's body is in a key no other letter on file shares: not the 1572 table, not Lodewijk's 1574 table (which reads the letter's closing stretch), not the <100 system of 5207/5208/5213 and unlike the 1575 nomenclator. A crib-constrained anneal failed on the target and on a matched German control alike (10.9% of control tokens), so the letter needs a key source, not more cryptanalysis. Dataset: image-checked ciphertext_5549.tsv (590/593 agree with Groen Suppl. no.45).",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75"
   }
  ],
  "lanes": [

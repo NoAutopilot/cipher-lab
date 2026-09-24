@@ -68,3 +68,7 @@ Sonnet for anything another agent checks, a warning anywhere stops spawning acco
 correction. The parent re-arms its check-in for the reset time when the status is `rejected`.
 
 **LANE N2, 24 Sept 2026 13:51 UTC:** rate_limit_info on LANE N2 (session_01DfQyAaXAgcoFZMAbBTGj4f) reads **allowed_warning on the seven_day window** (rateLimitType seven_day, resets 2026-09-26 13:00 UTC per resetsAt 1790427600), overage off. The five-hour window was not the one reporting. LANE N2 stopped spawning at 13:50 with two live Sonnet workers (csDA2, csBV, both small); no worker interrupted (not rejected). Own usage $55.8 at 13:50.
+**LANE R3, 24 Sept 2026 13:50 UTC:** get_session on the LANE R3 orchestrator (session_01GPDjihFcZasP5KTSYRS5uN) reads
+`rate_limit_info.status: allowed_warning`, `rateLimitType: seven_day`, resets Sat 26 Sept 2026 13:00 UTC (the five-hour window
+read `allowed` at 13:23). LANE R3 stopped spawning and closed on handoff; posted in ROOM for every lane. Lane usage: orchestrator
+about $14, four workers $41.15.

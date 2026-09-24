@@ -309,3 +309,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T12:58Z	session_01Fnp4P2gcmqXbFRfkeUcyQm	LANE R3 J6 (Opus, cap $10)	5549 new-key fit on Willem 1574 letters	done 0eee2b7, $7.47, no fit
 2026-09-24T13:36Z	session_019HSXApEw1FQvwqDTcnuSUN	Grants scout (Sonnet, cap $10)	grants/GRANTS.tsv	funding and credits for an independent researcher
 2026-09-24T13:36Z	session_014o1Q2GRr539B86vvKbgrnP	Grants applications (Opus, cap $12)	grants/applications/, outreach/grant-*.md	drafts and fill-in checklists, card items
+2026-09-24T13:23Z	session_012QC4L49VqeaQqqrs21uD9w	LANE R3 J7 (Opus, cap $15)	5549 body crib cryptanalysis + control	done, $4.16, negative with control (10.9%)
