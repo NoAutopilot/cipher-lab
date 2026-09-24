@@ -242,3 +242,51 @@ said "now read" for an alignment. All of these are corrected in NOTES. The heade
 these rows found-solved (N0), with P3's postscript kept open. The lesson is the P11-13 lesson
 again: page numbers come from the running head, and year dates from the volume's range, never
 from a bracketed Birch year taken at face value.
+
+## P9, P10, P14, P15 -- printed decipherment check (LANE T verifier V2, 24 Sept 2026)
+
+Verifier: LANE T verifier V2 (parent LANE T session_01EwdS3bprjRaK49MrSERfA2), 24 Sept 2026, clock read 04:56-05:25 UTC.
+It is separate from the transcription and alignment workers (B, I, K) whose sections it audits. No decoding done here.
+**Claim under audit** (NOTES s.11, s.18, s.20; index.tsv): Birch prints each of these letters with an interlinear
+decipherment. **Test:** the same as the sections above. Does the 1742 print carry a decipherment of this very letter,
+and does it cover the cipher? P9, P10 and P14 were checked on the committed page images, looked at directly here, not
+taken from the transcriptions. P15 was checked in the djvu text of vol. 5 (restored from `sources/ia-fulltext/thurloe-gz/`).
+
+| Item | Class | Printed decipherment (Birch 1742) | Covers the cipher? | Confidence |
+|---|---|---|---|---|
+| P9 General Blake to the Protector, [Lagos Bay], 4 July 1655 | **N0** | vol. 3 pp.611-612. The plaintext is spelled letter by letter above each numeral line, e.g. p.612 top: "other ships bound to America shall be carefully observed as God gives opportunity" over "63. 68. 57. ... 38. 42." (image `collectionofstat03thur_leaf0626_p612.jpg`, checked here) | Yes. Every cipher line on p.611 L45-50 and p.612 L1-6 has a gloss line | high |
+| P10 General Blake to the Protector, aboard the George, bay of Lagos, 6 July 1655 | **N0** | vol. 3 p.620, letter-by-letter interlinear (crop `..._leaf0634_p620_crop_L7-12.jpg`, checked here: "...rations in Cadez to set for[th] ... plate fleet and to that end divers...") | Yes, with one gap in the print itself: on p.620 L10 only the last 8 of 22 groups carry a gloss ("e t u r e t h e"), so 14 groups there have no printed decipherment. Those 14 groups are an unglossed remnant, not a separate item | high (letter); the 14 groups are open |
+| P14 the Protector [and Council] to Blake and Mountagu, Whitehall, 9 June 1656 | **N0** | vol. 5 pp.101-102. The deciphered text is printed as the letter's own running text, in italics, with its numeral groups set in small type above it (p.102 image, checked here: "*the Downs, requireing them to give* ymediate *notice unto us of their arrivall*" etc., to "*in your eye* or designe to be done there by the fleet") | Yes, the whole extent (p.101 L44 to p.102 L22). NOTES s.11 said no decipherment was printed; s.18 corrected it from the image, and that correction is confirmed here | high |
+| P15 General Mountagu to secretary Thurloe, aboard the Naseby, bay of Wyers (Lisbon river), 16 Sept 1656 | **N0** | vol. 5 **p.421** (djvu 35683-35754), interlinear word and syllable glosses above each numeral line ("The question before us was, whither wee shall send home the great ships. Wee have resolved it in the negative ..."). The clear close and signature are on p.422 | Yes, every numeral line in the djvu has a gloss line above it | high |
+
+N0 means the plaintext and decipherment of this very item are already known. As with P2-P24 above, the decipherment is
+Birch's print of what stands in the Thurloe manuscripts. `P9/P10/P14/P15_pairs.tsv`, `key_blake_extended.tsv`,
+`key_montagu_extended.tsv` and the `reading_P9/P10/P14/P15.txt` files are alignments of that printed plaintext to the
+groups. They are keys and benchmark data. They are not readings. The later-print question (Powell, *Letters of Robert
+Blake*, NRS 1937, for P9/P10; Carlyle has no 9 June 1656 letter, NOTES s.19) does not change an N0 and was not pursued.
+
+**Safe sentence.** "Birch printed these four letters in 1742 (Thurloe State Papers vol. 3 pp.611-612 and 620, vol. 5
+pp.101-102 and 421) with their contemporary decipherment set above or beside the cipher. We aligned that printed
+decipherment to the groups; 14 groups in one line of the 6 July 1655 letter carry no gloss in the print."
+**Unsafe sentence.** "We read, decoded or deciphered" any of them. So is "P14 has no printed decipherment" or "446
+groups of P14 now read".
+
+**Corrections (factual, not novelty).**
+1. **P15's page is 421, not ~411.** The "411 STATE PAPERS OF" running head at djvu 35758 is an OCR misreading of 422:
+   the heads run 420 (djvu 35573), 421 (35650), "411" (35758), 423 (35843). The cipher, djvu 35683-35754, lies
+   between the 421 and 422 heads. NOTES s.11 moved the page from ~420-421 to ~411 on the strength of that misread
+   head. Corrected in NOTES s.11 below.
+2. NOTES header and s.5 still listed P9, P14 and P15 as `partial` and P10 as `open`. They are **found-solved** (N0),
+   and the header and s.5 are corrected here. The P9 row's "14 June/4 July date question" was settled in s.11 (4 July 1655).
+3. The H grades for P9/P10 (Tomokiyo's Blake values) and P14/P15 (his Montagu values) come from modern reconstructions,
+   not contemporary keys. That is the same caveat as for P8 and P11-13.
+
+Proposed index.tsv corrections (LANE T applies):
+
+```tsv
+row	printed_page	status
+P9	611-612	printed-decipherment, interlinear (AUDIT N0, V2)
+P10	620	printed-decipherment, interlinear (AUDIT N0, V2); 14 groups of p.620 L10 unglossed in the print
+P14	101-102	printed-decipherment, italic running text with groups above (AUDIT N0, V2)
+P15	421 (clear close p.422)	printed-decipherment, interlinear (AUDIT N0, V2)
+```

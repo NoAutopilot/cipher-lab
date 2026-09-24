@@ -32,3 +32,6 @@ ciphers/fr5160-letellier-1653	"Justine de Bressac" OR "président Servien" ambas
 ciphers/fr5160-letellier-1653	Brienne AND Servien AND (chiffre OR déchiffrement) AND Parme	2026-09-24	queued	
 ciphers/fr2980-gramont	"Gramont" AND ("Asti" OR "Scalenga") AND 1530 AND (intercepted OR intercettate OR interceptées)	2026-09-24	queued	
 ciphers/fr2980-gramont	"Berthault" AND "Gramont" AND (secrétaire OR chiffre)	2026-09-24	queued	
+ciphers/thurloe-printed	"Stamford" AND Thurloe AND (Calais OR cipher OR cypher) AND 1655	2026-09-24	queued	
+ciphers/thurloe-printed	"Penruddock" AND (Calais OR Stamford OR "W. S.") AND (intelligence OR spy OR informer)	2026-09-24	queued	
+ciphers/thurloe-printed	"Rawlinson" AND "A. 24" AND (Stamford OR Kelsey)	2026-09-24	queued	

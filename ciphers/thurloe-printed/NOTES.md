@@ -1,6 +1,8 @@
 # Thurloe printed cipher letters (23 items, Birch 1742, vols 2/3/5/7)
 
-**Status: partial** for P9, P14, P15 (Tomokiyo-reconstructed cipher systems; P17, formerly listed here, is Fauconberg, see below);
+**found-solved** for P9, P10, P14, P15 (verifier LANE T V2, 24 Sept 2026, AUDIT.md: class N0 -- Birch 1742 prints each
+with its decipherment above or beside the cipher, vol. 3 pp.611-612 and 620, vol. 5 pp.101-102 and 421; 14 groups of
+P10's p.620 line 10 carry no gloss in the print; formerly `partial`/`open` here; P17, formerly listed here, is Fauconberg, see below);
 **found-solved** for P11, P12, P13 (verifier, 24 Sept 2026, AUDIT.md: class N0 -- Birch 1742,
 vol. 5 pp. 67-69, prints this letter's cipher groups with the contemporary decipherment set
 above each line, and British History Online reproduces that text); **found-solved** for P19, P21, P22, P23 (24 Sept 2026: four
@@ -10,7 +12,7 @@ decipherment and whose cipher Tomokiyo has reconstructed -- see "Monck pool solv
 AUDIT.md: class N0 -- Birch 1742 prints each letter's contemporary decipherment, interlined or
 following the cipher; P2's is an English translation of the deciphered French; P3's three-line
 postscript, djvu vol.2 47999-48004, has no printed decipherment and stays **open**);
-**open** for the remaining rows not named above (P4, P10, and P3's postscript). No item here is `solved`;
+**open** for the remaining rows not named above (P4, P3's postscript, and P10's 14 unglossed groups on p.620 L10). No item here is `solved`;
 rule 10 applies throughout -- nothing below is described as new, unpublished, unread, first
 or never printed, and no N-class is assigned (that is a verifier's job).
 
@@ -177,14 +179,14 @@ length/symbol-count/design before a negative result means anything -- not attemp
 
 | Row(s) | Status | Next step |
 |---|---|---|
-| P9 | partial | resolve the 14 June/4 July date question against the BHO page image before treating this as distinct from Tomokiyo's named 4 July letter |
+| P9 | found-solved | verifier V2 24 Sept 2026 (AUDIT.md, N0): interlinear decipherment printed, vol. 3 pp.611-612, seen on the page image. (Superseded: "partial -- resolve the 14 June/4 July date question"; s.11 settled it as 4 July 1655.) |
 | P11-13 | found-solved | verifier 24 Sept 2026 (AUDIT.md, N0): decipherment printed interlinearly by Birch 1742, v.67-69, and online at BHO; `reading_P11-13.txt` is an alignment of that printed decipherment. Not a cryptanalysis target. (The earlier "BL Add MS 4166" pointer was wrong for this letter: Tomokiyo's Montagu manuscript is BL Add MS 4200 f.76, 19 May 1656, DECODE 8387.) |
-| P14 | partial | as P11-13; also check BL Add MS 4166 f.90-91 (DECODE R4885) Tomokiyo cites for this exact letter |
-| P15 | partial | as P11-13 |
+| P14 | found-solved | verifier V2 24 Sept 2026 (AUDIT.md, N0): decipherment printed as italic running text with the groups above, vol. 5 pp.101-102. BL Add MS 4166 f.90-91 (DECODE R4885) is another copy Tomokiyo cites. (Superseded: partial.) |
+| P15 | found-solved | verifier V2 24 Sept 2026 (AUDIT.md, N0): interlinear decipherment printed, vol. 5 p.421 (not ~411: that running head is an OCR misreading of 422). (Superseded: partial.) |
 | P17 | found-solved (superseded row below kept for the record: P17 is Fauconberg to H. Cromwell, AUDIT.md N0, not Downing) -- was: partial | BL Add MS 4166 f.115-116 (DECODE R4896) is Downing's original key manuscript per Tomokiyo -- reading it would turn most of this letter's 892 U-tokens into H |
 | P19, P21, P22, P23 | found-solved | Fauconberg to H. Cromwell, 1658: decipherment printed interlinearly by Birch, key reconstructed by Tomokiyo (section 8). Not a cryptanalysis target |
 | P2, P3 (body), P5+P6, P7, P8, P16-P24 | found-solved | verifier 24 Sept 2026 (AUDIT.md, N0): Birch 1742 prints the contemporary decipherment of each (P2 as an English translation). The keys and readings in this folder are alignments of that print. Not cryptanalysis targets. (Superseded row, kept for the record: "P2, P3, P4, P5+P6, P7, P8, P10, P16, P18, P20, P24 -- open, no lead found this pass".) |
-| P3 postscript (djvu vol.2 47999-48004), P4, P10 | open | P3's postscript has no printed decipherment (AUDIT.md); P4 and P10 are not audited here |
+| P3 postscript (djvu vol.2 47999-48004), P4, P10 p.620 L10 (14 groups) | open | P3's postscript and those 14 P10 groups have no printed decipherment (AUDIT.md); P4: see AUDIT.md, V2 section |
 
 ## 6. Files
 
@@ -508,7 +510,7 @@ running-head estimate `thurloe-check.tsv` used).**
 | P9 | Gen. Blake to Thurloe, "14 June [1655]", p.~611 | **Gen. Blake to the Protector, "July 4. 1655"**, printed p.611 (heading "General Blake to the protestor." at djvu L51497, dateline "July 4. 1655." at L51498; "14 June" was the date of instructions the letter *acknowledges receiving*, not the letter's own date) | djvu 51480-51615 |
 | P10 | Dr. Ralph Cudworth to Thurloe, not dated, p.~615 | **Gen. Blake to the Protector, "July 6. 1655"**, printed p.620 (heading "General Blake to the proteBor." L52292; dateline "Abord the George, of the Bay of Lagos, July 6, 1655." L52293; running head "620 STATE PAPERS OF" at L52290, not ~615 -- "Cudworth" was the *next* letter's signature, misattributed to this window; not the same letter as P9, a distinct letter three days later, same addressee and topic) | djvu 52280-52320 |
 | P14 | The Protector to Blake and Mountagu, 9 June 1656, p.101 | **Confirmed as index.tsv already had it**, *not* the Lockhart letter that precedes it. Heading "The proteSior to Blake and Mountagu, generals at fea." at djvu L8864 (Lockhart's own letter, heading L8756/text ending L8861, is a separate, earlier item). Dated in the body: "Whitehall, 9 June, 1656" (L8931, council attendance list following); the letter opens referring to a Blake/Montagu letter "dated the 9th of May from Tanger". Printed page 101 (running head "101" appears mid-Lockhart just above; "102 STATE PAPERS OF" at L8900) | djvu 8740-8990 |
-| P15 | Gen. Mountagu to Thurloe, 16 Sept 1656, aboard the Naseby, p.~420-421 | Sender/recipient/date **confirmed** (signed "Sept. 16, 1656. Aboard the Nafebye, ... in the river of Lifbone. ... MOUNTAGU" at djvu L35775-L35779); **page corrected to ~411**, not ~420-421 (running head "411 STATE PAPERS OF" at L35858, inside this letter); MS volume note corrected to "Vol. xlvi" (OCR "xltf."), not "xli" | djvu 35660-35900 |
+| P15 | Gen. Mountagu to Thurloe, 16 Sept 1656, aboard the Naseby, p.~420-421 | Sender/recipient/date **confirmed** (signed "Sept. 16, 1656. Aboard the Nafebye, ... in the river of Lifbone. ... MOUNTAGU" at djvu L35775-L35779); ~~page corrected to ~411~~ **[verifier V2, 24 Sept 2026: wrong -- the cipher is on p.421; the "411" head at djvu L35758 is an OCR misreading of 422 (heads run 420, 421, "411", 423). AUDIT.md V2 section]** (running head "411 STATE PAPERS OF" at L35858, inside this letter); MS volume note corrected to "Vol. xlvi" (OCR "xltf."), not "xli" | djvu 35660-35900 |
 
 **(2) Full cipher extent -- all four windows were narrower than the letter's actual
 enciphered content** (the extraction pass windowed on `thurloe-check.tsv`'s own leaf-check
@@ -622,7 +624,7 @@ P10	date	not read (opening excerpt only)	6 July 1655
 P10	printed_page	~615	620
 P10	cipher_system	unidentified	Blake's cipher (numerals ~1-120, same system as P9)
 P10	keyed	no	yes (interlinear, fragmented; see NOTES section 11)
-P15	printed_page	~420-421	~411
+P15	printed_page	~420-421	~411 [superseded by AUDIT.md V2: 421]
 ```
 
 **Files:** `P9_pairs.tsv`, `P10_pairs.tsv`, `P15_pairs.tsv` (djvu-verbatim plain/cipher
