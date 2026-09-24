@@ -1,0 +1,16 @@
+seed 0: signs=884 units=559 types=30 exc=5 acc=0.813
+  truth tramaleinforfnataadciocheepsisubditiuostrietnostrihabianoadbenuicinaresenzaaltratumultuati
+  read  teamalebnntrineaodadcioeheepiiiusedioiiostinetnoantriehaueianoadieenuicinarsieghaaalstratu
+seed 1: signs=891 units=562 types=31 exc=6 acc=0.422
+  truth ziacontinuodiinonstrataalinostriparticolaripresupponendocheellanonsiamenoamoreuoledelpubli
+  read  laercintenuolrenonistiaptnaroiossianritocaaiodiesuddoneilicheerraionsoamanooieuorelerdutra
+seed 2: signs=944 units=574 types=31 exc=4 acc=0.752
+  truth itrocederoiluostrobeneficioetaquestoeffettohofattoprocurasecondocheuoiditeinpersonadimgiul
+  read  iatosocederiluotetrosenemecioetaquestoemmettnnmatttiiroecuraeecondocheunodetaaihpersonadii
+seed 3: signs=862 units=551 types=30 exc=4 acc=0.752
+  truth dicachequestogiuglianouifosseetperquestolhannomolteuolteminacciatoetminaccianotuttauiapurl
+  read  diraseeguestooriiaurglianlouifosseetcgergurstoliannmoltesuolteminasciatoetminaccitioitotte
+seed 4: signs=951 units=562 types=31 exc=2 acc=0.763
+  truth ndoquidouefraifauorichelasslefarebbeelapresenziasuasitorrebbeardireetoccasioneadognunodima
+  read  nmoauimouegraigauoticheliasspegareaaraeedapresentiasreauaitorreaadaieiieetfccasioneamornun
+CONTROL design=12:letter solved_as=12:letter noise=0.15 units=540: mean acc 0.700, per seed 0.81 0.42 0.75 0.75 0.76
