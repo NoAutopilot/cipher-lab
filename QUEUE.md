@@ -5700,3 +5700,64 @@ brief sets a stricter `>=3s` floor for this host than the common tail's `1.5s`; 
 no further digitarq requests made after noticing it. `github.com` 2 shallow clones (grep only, `dbourdeau/
 cyphersolver`, `aaymeloglu/unsolved-ciphers`). No WebSearch used (browser_fetch and curl covered reachability;
 the JSON API covered search). No DECODE login, no Gallica, no Google Books.
+
+## CS2 copy-order rows: item-level viewer checks (LANE N4 scARCH2, 24 September 2026 20:17 UTC)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n4-scARCH2.md`. Item-level lookups for the three CS2 copy-order
+families LANE N4 scARCH left at "viewer exists, item not pinned down this pass": Dresden (CS2-09, R5005-R5008),
+BayHStA Kurbayern Äußeres Archiv 4591 (CS2-13, R9319/R9424), and the four KHA Prins Willem V rows (CS2-08,
+CS2-19, CS2-20, CS2-32). Bestand/Signatur pulled from `sources/decode/records-non-decrypted-2026-09-24.tsv`
+on disk (no DECODE login). All four families now resolved to the exact holding unit; **all four remain not
+digitised** -- copy-order stands for every row, with the exact unit now on record instead of "item not pinned".
+
+**Dresden (CS2-09, R5005-R5008, HStAD 10731 Sächsische Gesandtschaft für Russland, St. Petersburg, Nr. 12) --
+resolved, not digitised.** DECODE's on-disk metadata gives all four letters (18.01.1841, 06.04.1842, 26.10.1843,
+13.06.1846, all De Zeschau to De Seebach) as "HStAD, 10731 Sächsische Gesandtschaft in Russland, Nr. 12".
+archiv.sachsen.de's Stichwortsuche restricted to Hauptfundstelle "10731 Sächsische Gesandtschaft für Russland,
+St. Petersburg" (facet `bestand2`), paginated through all 68 hits (`q=Petersburg`, offsets 0-60), to the exact
+Signatur match: `archiv.sachsen.de/archiv/bestand.jsp?guid=fb8ee3d8-3829-4665-8b8f-45c2574196d7`, Archivaliensignatur
+12, Datierung 1841-1849 ("Ministerialdepeschen" -- ministerial dispatches, a mixed file, not letter-specific),
+which carries `digitalisatExists: false` in its own embedded script. **Not digitised. State unchanged, copy-order.**
+
+**Bavaria (CS2-13, R9319/R9424, BayHStA Kurbayern Äußeres Archiv 4591) -- resolved, not digitised.** gda.bayern.de's
+dedicated search page (`/gvl/search.xhtml`, one browser session, free-text "Kurbayern Äußeres Archiv 4591" in the
+main search field) returned the exact hit directly: "4591 - Chiffrier- und Dechiffriertabellen, Korrespondenzschreiben
+in verschlüsselter Schrift" (cipher and decipher tables, correspondence in encrypted script -- matches DECODE's
+f.96-114/f.274 description exactly), Bestellsignatur BayHStA Kurbayern Äußeres Archiv 4591, Ende 15.-Anfang 17.
+Jh., 288 fol. **Medium: A = Analoges Archivale.** The item page's only access route is "Digitale Bestellung" --
+an on-demand scan order ("Möchten Sie die Archivalieneinheit digital bestellen?... unter 'Meine Bestellungen'"),
+i.e. an account-gated copy order, not a public pre-existing viewer. **Not digitised. State unchanged, copy-order.**
+
+**KHA Prins Willem V (A31), all four rows -- resolved to their A31- Bestanddeel, none digitised.** The site's
+legacy "inv.NNN" numbering does *not* match its current A31-NNN numbering (a direct guess of `A31-198` for CS2-08's
+"inv.198" landed on an unrelated Schiedam birth-annuity charter) -- resolved instead by content search
+(`zoekterm=`, via the "Zoek in archieven" box, `archief?archiefvormers=willem-v-prins-van-oranje-1748-1806`
+already scoped to this archiefvormer). koninklijkeverzamelingen.nl's rendered inventory tree shows a scan count
+("N scans", with a "Bekijk scans" link) under every digitised node and nothing under an undigitised one --
+confirmed against sibling nodes in the same tree pull that do carry counts (e.g. A31-454 "96 scans", A31-444
+"896 scans", A31-B-II-1-3D "54 scans"). None of the four target nodes carries one:
+  - **CS2-08** (inv.198, R1955, Michell1751 sibling) -> `zoekterm=Michell` finds `A31-1181` ("1751-1753", the
+    first of four pakken within `A31-1181-1184` "Briefwisseling, ten dele in cijfer, van de secretaris van de
+    Pruisische ambassade in Londen Michell, 1751-1757 en 1763-1764"). No scan count on A31-1181 through -1184.
+    **Not digitised. State unchanged, copy-order.**
+  - **CS2-19** (target KHA A31-902 per LANE N4 scARCH's own note, Fagel to William V 1804) -> `A31-902` fetched
+    directly: "Stukken betreffende de aan het hof gebruikte geheimschriften, z.d. [eind 18de en begin 19de eeuw]"
+    (documents on the ciphers used at court). No scan count. **Not digitised. State unchanged, copy-order.**
+  - **CS2-20** (inv.337, R2236, "hereditary prince to Prince William V" undated 1795-1799) -> `zoekterm=erfprins`
+    finds `A31-445-453` "Brieven van erfprins Willem Frederik aan zijn vader, 1780-1806" (letters from the
+    hereditary prince Willem Frederik *to his father*, the correct direction); its date-matching sub-parcels are
+    `A31-449` (1795 sep-dec.1796), `A31-450` (1797), `A31-451` (1798-1800) -- none carries a scan count. (A31-444,
+    "Brieven van Wilhelmina van Pruisen aan haar echtgenoot... 1795-1799", the *wife's* letters to him for the
+    same years, is a false-positive date match with 896 scans -- wrong correspondent/direction, not this record.)
+    **Not digitised. State unchanged, copy-order.**
+  - **CS2-32** (inv.192, R1052-R1076/R2067, Affry) -> `zoekterm=Affry` finds `A31-1100-1123` "Briefwisseling van
+    de Franse ambassadeur graaf d'Affry, 1755-1763. **Afschriften in cijfer en ontcijferd**, ten dele in tweevoud"
+    (copies in cipher *and* deciphered) -- its own catalogue description confirms some of this run already
+    carries a contemporary decipherment, consistent with the scCS2 scout's earlier note that Bourdeau already
+    reads 86% of this cipher with a named key (worth a check-solved/key-list-style leaf check before any solver
+    time here, per the csKSa lesson on key-list rows). The date-matching sub-parcels are `A31-1102-1105` (1757)
+    and `A31-1106-1108` (1758) -- no scan count on either. **Not digitised. State unchanged, copy-order.**
+
+Requests: archiv.sachsen.de ~12 (curl, browser UA, >=2s apart), gda.bayern.de ~4 (browser_fetch.js, one session,
+no login), koninklijkeverzamelingen.nl ~10 (1 curl + 9 browser_fetch.js navigations, >=2s apart), WebSearch 0.
+No DECODE login (grepped `sources/decode/` on disk only, per brief).
