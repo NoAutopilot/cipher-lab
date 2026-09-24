@@ -1,0 +1,55 @@
+seed=1  message lengths (pooled 924, per-message coset test, key/shift restart at each message): [237, 178, 140, 140, 229]
+(msg3: Kahn header 137, letters as printed 140 -- 140 used, per koehler_ic.py's parse)
+control (a) periodic key: period P=6, key length 6
+
+label	best_period_IC_avg	top5_periods(IC)	kasiski_top5(count)
+target	0.0468 (P=17)	P=17:0.0468, P=30:0.0438, P=23:0.0438, P=18:0.0429, P=28:0.0427	(2 repeat-3gram distance pairs) P=2:1, P=3:1, P=4:1, P=6:1, P=7:1
+control_a_periodic(P=6)	0.0650 (P=6)	P=6:0.0650, P=12:0.0640, P=24:0.0629, P=30:0.0614, P=18:0.0614	(27 repeat-3gram distance pairs) P=2:26, P=3:26, P=6:25, P=4:19, P=12:19
+control_b_onetime	0.0472 (P=28)	P=28:0.0472, P=25:0.0439, P=20:0.0430, P=19:0.0422, P=16:0.0420	(5 repeat-3gram distance pairs) P=2:3, P=4:1, P=19:1, P=5:1, P=10:1
+
+cross-check: target's IC at control (a)'s own period P=6 vs control (a)'s own best period
+  target IC at P=6: 0.0405   control_a IC at its own best period P=6: 0.0650
+
+reference: German plain unigram IC ~0.076 (koehler_ic.out), uniform/random ~0.0385, target pooled flat IC (cheap test 1) 0.0399
+
+seed=2  message lengths (pooled 924, per-message coset test, key/shift restart at each message): [237, 178, 140, 140, 229]
+(msg3: Kahn header 137, letters as printed 140 -- 140 used, per koehler_ic.py's parse)
+control (a) periodic key: period P=29, key length 29
+
+label	best_period_IC_avg	top5_periods(IC)	kasiski_top5(count)
+target	0.0468 (P=17)	P=17:0.0468, P=30:0.0438, P=23:0.0438, P=18:0.0429, P=28:0.0427	(2 repeat-3gram distance pairs) P=2:1, P=3:1, P=4:1, P=6:1, P=7:1
+control_a_periodic(P=29)	0.0805 (P=29)	P=29:0.0805, P=20:0.0479, P=27:0.0442, P=10:0.0434, P=23:0.0431	(12 repeat-3gram distance pairs) P=29:9, P=2:8, P=7:2, P=4:2, P=23:1
+control_b_onetime	0.0450 (P=29)	P=29:0.0450, P=17:0.0407, P=30:0.0388, P=27:0.0385, P=7:0.0384	(0 repeat-3gram distance pairs) 
+
+cross-check: target's IC at control (a)'s own period P=29 vs control (a)'s own best period
+  target IC at P=29: 0.0406   control_a IC at its own best period P=29: 0.0805
+
+reference: German plain unigram IC ~0.076 (koehler_ic.out), uniform/random ~0.0385, target pooled flat IC (cheap test 1) 0.0399
+
+seed=3  message lengths (pooled 924, per-message coset test, key/shift restart at each message): [237, 178, 140, 140, 229]
+(msg3: Kahn header 137, letters as printed 140 -- 140 used, per koehler_ic.py's parse)
+control (a) periodic key: period P=9, key length 9
+
+label	best_period_IC_avg	top5_periods(IC)	kasiski_top5(count)
+target	0.0468 (P=17)	P=17:0.0468, P=30:0.0438, P=23:0.0438, P=18:0.0429, P=28:0.0427	(2 repeat-3gram distance pairs) P=2:1, P=3:1, P=4:1, P=6:1, P=7:1
+control_a_periodic(P=9)	0.0752 (P=9)	P=9:0.0752, P=27:0.0722, P=18:0.0704, P=15:0.0542, P=30:0.0527	(37 repeat-3gram distance pairs) P=3:31, P=9:28, P=2:11, P=27:11, P=6:9
+control_b_onetime	0.0443 (P=9)	P=9:0.0443, P=13:0.0410, P=27:0.0406, P=7:0.0405, P=30:0.0405	(6 repeat-3gram distance pairs) P=3:3, P=2:2, P=6:2, P=9:2, P=5:2
+
+cross-check: target's IC at control (a)'s own period P=9 vs control (a)'s own best period
+  target IC at P=9: 0.0414   control_a IC at its own best period P=9: 0.0752
+
+reference: German plain unigram IC ~0.076 (koehler_ic.out), uniform/random ~0.0385, target pooled flat IC (cheap test 1) 0.0399
+
+VERDICT (LANE B breadth worker bKOE, 24 Sept 2026): target best periodic-IC (P=17, 0.0468) and Kasiski
+repeat-trigram count (2 pairs total across all 5 messages, no period concentration) both sit at the flat/uniform
+level, matched against the same method run on the same-length, same-alphabet German plaintext under a matched
+Vigenere control (control_a, true period known: coset IC 0.065-0.081 at the true period, Kasiski distance pairs
+12-37 concentrated on the true period and its divisors, seeds 1-3, periods 6/29/9) and under a matched one-time-key
+control (control_b: coset IC 0.044-0.047, no period concentration, matching the target and uniform ~0.0385).
+Read: this method would recover a real period-2-30 Vigenere-family key on ciphertext this short and this design
+(five messages, 924 letters pooled, restart-per-message coset test); it finds none in the target. Combined with
+the flat pooled IC (cheap test 1, koehler_ic.out, 0.0399 vs German ~0.076 / English ~0.066 / uniform 0.0385), the
+target is not a fixed short-period Vigenere/Beaufort cipher over these five messages; consistent with a one-time
+key, a code/book system, or a period outside 2-30. This rules out cheap_tests_in_order item 4 (Vigenere hill-climb)
+as the next step; items 2/3 (archive lookup) or 5 (book cipher) remain live per the spec.
+
