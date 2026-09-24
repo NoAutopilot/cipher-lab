@@ -108,3 +108,53 @@ this session, 3 pages.json, 4 html_url OCR fetches [p.95, p.302, p.303, p.337], 
 descriptive User-Agent, no login). `www.nationaalarchief.nl` 3 (invnr 1975/2030/2044, shared with HU5's 1836 in
 one batch, ≥2s apart). `github.com` 2 shallow clones (grepped, not committed, kept in `/tmp/csHU`). WebSearch 2,
 WebFetch 1 (d'Alonne Wikipedia). No subagents.
+
+## H1: cryptanalysis (LANE R2 worker H1, Opus, 24 Sept 2026 10:07-10:18 UTC)
+
+Status unchanged: **open** (cryptanalytic negative at this length, with a matched control; not closed).
+
+**Material.** Letter 142 only. Transcribed from `images/heinsius_18_GS244_095.jpg` (printed edition, not the
+NA manuscript: rule 2, any negative is conditional on the editor's print) and cross-checked against the Huygens
+OCR html for p.95 (identical sequence): `ciphertext_142.tsv`, 6 segments, **208 tokens**, 64 distinct values
+in 1-77 (absent: 7 10 12 14 21 24 30 40 41 50 56 62 71). The superscript on the first 70 ("70³") is the
+editor's footnote-3 marker ("Het cijferschrift is door d'Alonne niet opgelost"), not a cipher mark. The cipher
+starts on p.95 (the footnote marker sits on its first number). Letter 309 (p.555, fetched as OCR) is a regest
+only ("Aan A.T. d'Alonne in onopgelost cijfer"): no ciphertext printed; 446/455 omit theirs ("weggelaten").
+
+**Design.** Numbers interleaved with clear French words ("de", "come l'on a fait", "de toutes les", "J'avois",
+"d'où il semble que"), so the cipher replaces running French text, not whole sentences. IoC 0.0186 (flat
+over 64 = 0.0156; French letters about 0.078); most frequent 74 (12), 44 (9), 49 and 28 (7); no doubled
+adjacent value in 208 tokens; repeated bigrams 44 37 and 47 53 (4 each), trigram 76 47 53 (2). Consistent with
+a homophonic letter cipher of about 64-77 signs (possibly with a few syllable signs; not distinguishable at this
+length). Clear context predicts segment 1 begins "que" ("ce qui nous fait croire ...").
+
+**Matched control (rule 3).** Plaintext: the clear French of this same letter (p.95 paragraphs 2-4,
+`control/clear142_p95.txt`), first 208 letters, enciphered with random homophonic keys of 62-63 signs allotted
+by frequency (`tools/homophonic_anneal.py --control`). LM: `tools/data/fr16` (Marguerite de Valois, Catherine de
+Médicis t.1-2; 16th-century French, the nearest French corpus on disk; no 1716 corpus was built). Order 3,
+8 restarts x 400,000 iterations: **control read 61.5 / 28.8 / 70.7 % (seeds 1-3)**; order 4 47.6 %, order 5
+26.0 %. With a 3-letter crib fixed (new `--fix-first`), 67.8 / 14.9 / 63.9 %. Diagnostic: on the control the
+solver's best key scores above the true key (-406.0 vs -428.4), i.e. at N=208 and K=64 the language model does
+not single out the true key; a control read is partial and seed-dependent.
+
+**Target.** Same settings, seeds 1-3: best scores -408.0 / -407.5 / -409.4 (the control's range), three
+different decodings, keys agreeing on only 10-28 of 64 signs between seeds; no connected French. With the crib
+70=q 33=u 67=e (inferred, grade I, from "croire que"; new `--fix`): best -415.4 / -419.9 / -414.5, keys agreeing
+24-28/64, still no connected French (seed 3 begins "quespresecateleuoitrauauenel..."). **No reading; no key.tsv
+or decode.json written.** Runs: `control/runs.tsv`.
+
+**Reading of the negative.** Control 29-71 % (mean about 54 %) vs target 0 % recognisable: the negative is weak,
+because the control itself is only partly read at this length and the target may also differ from the
+control's design (syllable or word signs, nulls, 1716 spelling vs a 16th-century LM). It does not show the
+cipher is not a homophonic letter substitution.
+
+Tool change (rule 8): `tools/homophonic_anneal.py` gains `--fix sign=letter,...` (target crib) and
+`--fix-first N` (the matched control's crib); offline test still passes (0.993).
+
+Search log (rule 10): no new search this pass beyond the check-solved sweep above; not classified for novelty.
+Requests: resources.huygens.knaw.nl 2 (p.95 and p.555 OCR html, 2 s apart). No subagents.
+
+Follow-up suggestions (one line each): (1) the NA originals of letters 309 (H.A. 2030, a whole letter in this
+cipher) and 446/455 (H.A. 2044) would multiply the ciphertext several times and are the route to a reading;
+(2) a 1700-1720 French letter corpus as LM; (3) a key or cipher table of Rumpf's in the Fagel papers
+(NA 1.10.29 inv. 5345, "cipher van Rumpf 1743", DECODE 2818) is worth one look for a family resemblance.

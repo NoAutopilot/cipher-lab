@@ -2,7 +2,7 @@
 """Pure-Python simulated annealing for a homophonic simple substitution (no numpy needed).
 
   python3 tools/homophonic_anneal.py CIPHER.tsv --corpus A.txt [--corpus B.txt ...] [--order 3]
-          [--restarts 8] [--iters 40000] [--skip DOT,COL] [--seed 1] [--out result.json]
+          [--restarts 8] [--iters 40000] [--skip DOT,COL] [--seed 1] [--out result.json] [--fix 70=q,33=u]
   python3 tools/homophonic_anneal.py --control PLAIN.txt --signs K --length N --corpus ... (matched control)
 
 CIPHER.tsv: long format, header with a `sign` column (and optional `line`); rows whose sign is in --skip are
@@ -67,7 +67,7 @@ def score(model, plain, uni_w):
     return s + uni_w * u
 
 
-def anneal(seq, model, iters, rng, uni_w, t0=4.0):
+def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None):
     """Incremental annealing: a move re-scores only the n-grams touching the changed sign's positions."""
     o = model.order
     signs = sorted(set(seq))
@@ -77,7 +77,9 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0):
     pos = {s: [i for i, x in enumerate(seq) if x == s] for s in signs}
     n = len(seq)
     starts = {s: sorted({j for i in pos[s] for j in range(max(0, i - o + 1), min(i, n - o) + 1)}) for s in signs}
-    key = {s: rng.choices(letters, weights)[0] for s in signs}
+    fixed = fixed or {}
+    key = {s: fixed.get(s) or rng.choices(letters, weights)[0] for s in signs}
+    signs = [s for s in signs if s not in fixed]  # crib-fixed signs never move
     pl = [key[x] for x in seq]
     lp = model.logp
 
@@ -115,11 +117,11 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0):
     return score(model, "".join(bestkey[x] for x in seq), uni_w), bestkey
 
 
-def solve(seq, model, restarts, iters, seed, uni_w):
+def solve(seq, model, restarts, iters, seed, uni_w, fixed=None):
     rng = random.Random(seed)
     results = []
     for r in range(restarts):
-        results.append(anneal(seq, model, iters, rng, uni_w))
+        results.append(anneal(seq, model, iters, rng, uni_w, fixed=fixed))
     results.sort(key=lambda x: -x[0])
     return results
 
@@ -160,13 +162,18 @@ def main():
     ap.add_argument("--control")
     ap.add_argument("--signs", type=int)
     ap.add_argument("--length", type=int)
+    ap.add_argument("--fix", help="crib: sign=letter pairs held fixed, e.g. 70=q,33=u,67=e (target mode)")
+    ap.add_argument("--fix-first", type=int, default=0,
+                    help="control mode: hold the signs of the first N positions at their true letters (the matched "
+                         "control for a target crib of N letters)")
     a = ap.parse_args()
     global W_AS_UU
     W_AS_UU = a.w_as_uu
     model = Model([open(f, encoding="utf-8").read() for f in a.corpus], a.order)
     if a.control:
         seq, p, truth = make_control(open(a.control, encoding="utf-8").read(), a.signs, a.length, model, a.seed)
-        res = solve(seq, model, a.restarts, a.iters, a.seed, a.uni_weight)
+        fixed = {seq[i]: truth[seq[i]] for i in range(a.fix_first)}
+        res = solve(seq, model, a.restarts, a.iters, a.seed, a.uni_weight, fixed)
         sc, key = res[0]
         dec = "".join(key[x] for x in seq)
         ok = sum(1 for x, y in zip(dec, p) if x == y)
@@ -181,7 +188,8 @@ def main():
         si = h.index("sign")
         skip = set(a.skip.split(","))
         seq = [r[si].rstrip("?") for r in rows[1:] if r[si].rstrip("?") not in skip]
-        res = solve(seq, model, a.restarts, a.iters, a.seed, a.uni_weight)
+        fixed = dict(kv.split("=") for kv in a.fix.split(",")) if a.fix else {}
+        res = solve(seq, model, a.restarts, a.iters, a.seed, a.uni_weight, fixed)
         sc, key = res[0]
         dec = "".join(key[x] for x in seq)
         out = {"mode": "target", "N": len(seq), "K": len(set(seq)), "score": sc, "key": key, "decoded": dec,

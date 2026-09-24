@@ -1,0 +1,19 @@
+run	mode	N	K	order	restarts	iters	seed	crib	result
+c1	control	208	62	3	8	400000	1	-	61.5% letters read
+c2	control	208	63	3	8	400000	2	-	28.8%
+c3	control	208	63	3	8	400000	3	-	70.7%
+c4	control	208	62	4	8	400000	1	-	47.6%
+c5	control	208	62	5	8	400000	1	-	26.0%
+c6	control	208	62	3	4	100000	1	-	13.9% (order 4)
+d1	control	208	62	3	4	400000	1	-	true-key score -428.4; solver best -406.0 (spurious key outscores truth); 128/208
+d2	control	208	63	3	4	400000	2	-	true -428.4; best -418.2; 60/208
+d3	control	208	63	3	4	400000	3	-	true -428.4; best -413.9; 115/208
+f1	control	208	62	3	8	400000	1	first 3 letters fixed	67.8%
+f2	control	208	63	3	8	400000	2	first 3 letters fixed	14.9%
+f3	control	208	63	3	8	400000	3	first 3 letters fixed	63.9%
+t1	target	208	64	3	8	400000	1	-	best -408.0; no French; seed keys agree 10-28/64
+t2	target	208	64	3	8	400000	2	-	best -407.5
+t3	target	208	64	3	8	400000	3	-	best -409.4
+q1	target	208	64	3	8	400000	1	70=q,33=u,67=e	best -415.4; no connected French
+q2	target	208	64	3	8	400000	2	70=q,33=u,67=e	best -419.9
+q3	target	208	64	3	8	400000	3	70=q,33=u,67=e	best -414.5; seed keys agree 24-28/64
