@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 15:22 UTC",
+ "updated": "24 Sep 2026 15:55 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -616,6 +616,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 15:52",
+   "what": "Posthius to Eysenmenger 1614 and 1618 (Erlangen) read with the reciprocal tables on the leaves, 96 of 109 tokens at grade H: short German asides ('I did not know you would become my neighbour ...'). Verifier started. Salviati 1525 f.54r transcription passed its gate. Four Gallica letters from the cyphersolver re-diff reached stage 2."
+  },
   {
    "when": "24 Sep, 15:20",
    "what": "First half hour of R4/N3: 5549's two candidate key sources ruled out; cyphersolver site re-diff gives 10 copy-free rows and an 81-key index; Trew collection has no second cipher letter with text. No reading yet."
@@ -1514,18 +1518,18 @@
  "lanes": [
   {
    "name": "Lane R4, recovery",
-   "live": 1,
-   "focus": "Posthius 1614/18 read with the leaf keys (H 96 M 13; for V4); Bowes codes collated (C 1, M 9); 5549 sources 5205/5209 negative; 1519 key transcription stopped at 1.7x cap; Salviati pass B finishing against the 80% gate"
+   "live": 2,
+   "focus": "Posthius 1614/18 read from the tables on the leaf (109 tokens, H 96 M 13), sent to verification; Salviati f.54r transcribed and gated (83.5%), key trial next; 1519 election key stopped at cap; Bowes codes tabled (1 C, 9 M, 2 unread)"
   },
   {
    "name": "Lane N3, copy-free nominations",
-   "live": 1,
-   "focus": "cyphersolver re-diff done: 32 rows (10 copy-free, 22 copy-order) and 81 published keys tabled; Trew sweep gave one row, closed-negative (key tables only, no ciphertext); check-solved on the copy-free rows running"
+   "live": 3,
+   "focus": "from the cyphersolver re-diff: fr.3022 Garbino 1528, fr.3151 Seure 1558 (cryptanalysis) and fr.3789 Marie de Medicis 1610 (recovery, key in fr.3642) open at stage 2 after edition checks; fr.3993 Villeroy 1595 open; Bavarikon round 2 empty"
   },
   {
    "name": "Lane V4, verification",
-   "live": 0,
-   "focus": "not started; the parent spawns a verifier per reading R4 reports"
+   "live": 1,
+   "focus": "verifier on Posthius 1614/18 (interlinear marks on the 1614 leaf to be judged; Trew catalogue, Posthius literature, full-text families)"
   }
  ],
  "headline": "Afternoon of 24 Sept: fifteen readings at N4, one cryptanalytic. Cryptiana accepted the Bowes 1583 sign table and linked the folder. The seven-day usage window is at its warning; on your decision two focused lanes run (recovery on Posthius 1614/18, Salviati 1525, the 1519 election key, 5549; copy-free nominations) and everything stops only if the window rejects. Ready for you: six grant drafts in two private artifacts, the JSTOR waiver, the private repository, mail access, the history swap."
