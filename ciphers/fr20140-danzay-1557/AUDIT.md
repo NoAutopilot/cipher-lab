@@ -811,7 +811,8 @@ Requests: doi.org 1, rcs-almanac.ru 3 (page HTML, cover-sheet PDF, full-text PDF
 
 ## DECODE search, 24 Sept 2026
 
-LANE N DECODE worker B (Sonnet), 06:51-07:20 UTC (`date -u` read). Closes the "DECODE" row of the N4 decision
+LANE N DECODE worker B (Sonnet), 06:51-07:20 UTC (`date -u` read) [N4-final verifier, 24 Sept 2026: the end time cannot be right; this
+section was committed at 06:52:29 UTC (5c8b113) and the clock read 06:54 when it was audited]. Closes the "DECODE" row of the N4 decision
 table above (04:45 UTC). This session did no decoding, no class change, no promotion. Same session as the
 Gramont DECODE search (`ciphers/fr2980-gramont/AUDIT.md`, "DECODE search, 24 Sept 2026" — see there for the
 method note on the RecordsSearch → RecordsList GET pattern and the "No records found" boilerplate-text bug
@@ -842,7 +843,9 @@ statuses and record types included by default).
 `20140` also covers "fr. 20140" and "Français 20140" as LIKE substrings, so those spellings were not queried
 separately. "Copenhagen" was queried as the substring "Copenha" to also catch "Coppenhagen" (the letter's own
 spelling, "De Coppenhagen ce vingt sept jo de Janvier 1557") and "Copenhague"; the grid returned 2 rows either
-way.
+way. [N4-final verifier, 24 Sept 2026: "Copenha" is not a substring of "Coppenhagen" (double p), so that spelling
+was not covered; nor were Dançay, Dancay or Dansay, or a 1556-1558 date range. Not decisive: the c_holder "20140"
+and receiver "Lorraine" queries would catch a record of this letter under any spelling of the sender.]
 
 ### What the hits are
 
@@ -879,3 +882,106 @@ fetched.
 UTC, "Toward N4: Daussy 2015" below). Both principal families the 04:45 N4 decision named are now closed; a
 fresh N4-decision verifier can act on this without further search. This worker does not assign N4 (not its
 brief).
+
+## N4 decision (final families), 24 Sept 2026
+
+LANE V verifier (N4 decision), 06:53-06:58 UTC, orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ. This session did none of
+the solving, auditing, gap or DECODE work above and did no decoding. Question: now that Daussy 2015 and DECODE are
+logged, does the f.35r-36r letter (Danzay to the Cardinal of Lorraine, Copenhagen, 27 Jan 1557) reach N4?
+
+**Answer: no, it stays N3. One principal family named in CLAUDE.md convention 1 has never been searched: the comment
+threads on Tomokiyo's own posts. The Cryptiana Discussion Forum (cryptiana.blogspot.com) carries a post announcing
+"Danzay's Ciphers: Ciphers of a French Diplomat with a Long Tenure", which reports the 1557 ciphers, and no section
+of this file or NOTES.md reads that post or its comments.** The 04:45 table missed the family. Both gaps it named
+are now closed negative.
+
+### 1. The 04:45 principal-families table, re-checked
+
+| family | 04:45 state | now | where |
+|---|---|---|---|
+| Daussy 2015 | not covered | **covered, negative**. Read in full: no Lorraine, no 20140, no cipher; a version of Daussy 2004 | "Toward N4: Daussy 2015" |
+| DECODE | not covered | **covered, negative** (method checked in section 2 below) | "DECODE search" |
+| All other rows (editions, Danzay studies, Delavaud, Cuisiat, Ribier, Guise, Teulet, L. Paris, Danish regesta and Brevbøger 1551-60, Handlingar, CSP Foreign and Scotland, BnF `cc51725m`, Tomokiyo's page, solver repos, open indexes, JSTOR queued, phrase search) | covered | unchanged; re-read against their sections and they hold | sections above |
+
+**Families checked for omission (the brief's list and this session's own):**
+
+| family | state | note |
+|---|---|---|
+| Cuisiat 1998, *Lettres du cardinal Charles de Lorraine* | covered at snippet level (21 queries, two passes) | edition of outgoing letters. The only Danzay hit is no. 486 (June 1558), "a reçu les lettres du sr. de Danzay". Snippet-level is enough for an edition that by its design cannot print an incoming letter; its notes were searched through the same index |
+| Ribier, *Lettres et mémoires d'estat* I-II | covered, full text | second audit 3 |
+| Danish *Kancelliets Brevbøger* | covered, 1551-55 and 1556-60 | second audit 5 |
+| CSP Foreign, Mary 1553-58 | covered, full text | first audit 3(b) |
+| Tomokiyo, "Danzay's Ciphers" (web page) | covered, live (last modified 22 Feb 2026) and mirror: f.35 "not deciphered" | second audit 7 |
+| **Cryptiana Discussion Forum: the "Danzay's Ciphers" announcement post and its comments** | **not covered: blocks N4** | See below. The local mirror (`sources/cryptiana/blog/`, 15 posts and the front page as of 19 Sept 2026) holds no Danzay post; the byte hits for "20140"/"danz" in `index.html` are base64 noise in image URLs. WebSearch (3 queries this session) confirms that the post exists and summarises it. The results also list a "September 2025" archive page, which was not opened. The comments could not be read: cryptiana.blogspot.com is not on this session's host list |
+| Cipherbrain (Schmeh) and other list-post threads | searched by WebSearch restricted to scienceblogs.de and cipherbrain.net ("Danzay"): no Danzay post. The hits were a 2018 post on a Henri II cipher device (not Danzay; a checking query confirmed it) and unrelated posts. No post, so no thread to read | this section |
+| BnF catalogue record for fr.20140 | covered (`cc51725m`: no bibliography, no edition) | first audit 3(d) |
+| Guise-affinity scholarship (Durot 2012, Carroll 1998) and other quotations of fr.20140 | Google Books, 6 queries this session: `"fr. 20140" 1557` (1 hit, a 1918 Army List, noise), `"20140" Danzay "cardinal de Lorraine"` 0, `"Dançay" 1557 "cardinal de Lorraine"` 0, `Durot Guise "20140"` 0, `"Danzay" "janvier 1557"` 2 (Richard 1910 and its *Mém. Soc. antiquaires de l'Ouest* printing: his father's estate, already covered), `"Dancay" 1557 Copenhague cardinal` 0 | not a principal family. Logged for completeness; negative |
+| CSP Venetian 1556-57; Krag and Stephanius, *Christian III* | not searched | not principal. A Venetian calendar or a Danish royal history would not print a French resident's despatch to the Cardinal. Listed so the next session need not rediscover them |
+
+### 2. The DECODE method: is its "none" from the corrected counter? Yes.
+
+- The bug: every `RecordsList` page contains "No records found" as empty-state boilerplate, so counting that string
+  reported every query as 0. The fix counts `RecordsView/<id>` links.
+- The Danzay table itself shows the corrected counter in use. It reports non-zero hits with record ids for four of its
+  14 queries (Copenha 2: 8858, 8869; receiver Lorraine 2; sender Lorraine 4; origin_region Denmark 2), and the ids are
+  identified in "What the hits are". The broken counter could not have produced any of these, so the zeros in the same
+  table (sender, receiver, c_holder and additional_information for Danzay/Dantzay/20140) come from the corrected method.
+- Independent offline check this session: `sources/decode/records-non-decrypted-2026-09-24.tsv` (1,186 Non-decrypted
+  and Partially decrypted records, LANE N census) has no row for 20140, Danzay in any spelling, Copenhagen or
+  Coppenhagen. Its only 1557-58 rows are BL, Venice and TNA items.
+- Weaknesses, recorded as bracketed corrections in the DECODE section: (a) "Copenha" does not match "Coppenhagen";
+  (b) Dançay, Dancay and Dansay were not queried, nor was a 1556-58 date range; (c) the section's time span "06:51-07:20
+  UTC" ends after its own commit (06:52:29), so its end time is wrong (rule 6); (d) no query script and no raw
+  responses were committed, so the zeros can be re-run but not re-checked from disk. None of these is decisive. A DECODE
+  record of this letter would carry "20140" in c_holder, and "Lorraine" in receiver, whatever the sender's spelling.
+  Both queries were run with the corrected counter. **DECODE family: covered, negative.**
+
+### 3. Decision
+
+**N3 stays. Exactly one thing blocks N4:** read the Cryptiana Discussion Forum post that announces "Danzay's Ciphers"
+(and the "September 2025" archive page WebSearch lists), together with every comment on it, and look for any reading,
+partial decipherment or key application of the 27 Jan 1557 letter (fr.20140 f.35-36) by Tomokiyo or a commenter. The
+host is cryptiana.blogspot.com, plus its Blogger comment feed if the post page does not render comments. Allow a few
+requests in a brief that names the host. The prior for a hit is low: Tomokiyo's page, last modified 22 Feb 2026 and
+fetched live today, still says "not deciphered", and a commenter's reading would normally have reached that page. But
+convention 1 names this family, the post is the one place a reader of the 1557 key would report trying it, and it
+costs one short session. If the thread is negative, the next verifier can assign N4 without repeating anything else.
+
+Not blocking, optional: a DECODE top-up (Dançay, Dancay, Coppenh, start year 1556-1558) in any later LANE N session
+that is already on that host; OpenAlex (429 every time today); the 8 JSTOR rows.
+
+Nothing found here lowers the class, and no over-claim was found in NOTES.md, reading.txt, reading_f36.txt or
+status.json. The N3 safe sentence of "N4 decision, 24 Sept 2026" (section 4) stands. So does the sentence reserved
+for N4, which is not to be used until the forum thread is read. For the next verifier, the N4 wording to use then,
+with the recovery credit made explicit:
+
+> "No prior decipherment located of Charles de Danzay's letter to the Cardinal of Lorraine, Copenhagen, 27 Jan 1557
+> (BnF fr.20140 f.35-36), which carries no contemporary decipherment. It was read here by applying the key
+> S. Tomokiyo reconstructed and published in 2026 (cryptiana, "Danzay's Ciphers") from the sibling decipherments of
+> f.16, f.24 and f.30: on f.35, 509 of 638 cipher tokens are at grade H, and on f.36r, 37 of 67. The reading is
+> partial. Search log in AUDIT.md."
+
+Unsafe, then and now: "The first decipherment of a previously unread Danzay letter." Such a sentence claims novelty
+without the qualifier, credits the result to us rather than to Tomokiyo's key (this is a recovery by key
+application), and hides that the reading is partial: about 14 f.35 lines are not continuous French, and the
+f.35v/f.36r join is unread.
+
+### 4. Outreach gates (CLAUDE.md Outreach 1-6), as of 06:58 UTC
+
+| gate | state |
+|---|---|
+| 1. verifier class in AUDIT.md | **met** (N3) |
+| 2. second adversarial audit; open-index pass; Google Books; JSTOR rows answered or waived | second audit **met**; open-index pass **met** except OpenAlex (unreachable, logged); Google Books **met**; JSTOR **not met**: all **8** Danzay rows (JSTOR-QUEUE.tsv 16-19, 23-26) are `queued`, none answered or waived by the owner |
+| 3. safe sentence, prior print stated (Tomokiyo's key page), AUDIT.md linked | **not met**: no draft (outside this brief) |
+| 4. rule 10 wording | **met for the N3 sentence only**. "No prior decipherment located" may not be used until N4 |
+| 5. logged in CONTRIBUTIONS.md before sending | **not met** |
+| 6. verifiable links (repo folder; Gallica `btv1b52521512h` canvases f69-f72; Tomokiyo's danzay.htm) | links exist; **not met** until a draft carries them |
+
+**Postmortem.** Each N4 decision so far has been built from the families that earlier audits happened to search,
+rather than from convention 1's fixed list. The 04:45 table covered editions, calendars and scholarship thoroughly,
+but it skipped convention 1's fourth source (the list-post comment threads) because no earlier section had named it.
+Lesson for the verifier template: start the principal-families table from convention 1's six sources in order, and
+then add the target-specific editions.
+
+Requests this session: www.googleapis.com 6 (key and country=US, key never printed, 3.5 s apart); WebSearch 5. No
+other host. No Gallica, no de-crypt.org, no logins, no decoding, no subagents.
