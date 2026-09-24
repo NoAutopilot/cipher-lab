@@ -1,4 +1,6 @@
-open
+blocked
+
+**Held by the LANE N4 orchestrator, 24 Sept 2026 20:05 UTC:** status `blocked`, not `open`. The verdict rests on Bourdeau's sentence that Colenbrander's Gedenkstukken V (1806-1810) "gave nothing by web search"; nobody has read the volume's pages for this date. check-solved.md: a verdict without the edition read defaults to `blocked`. Needs an edition-check worker to read Gedenkstukken V (resources.huygens.knaw.nl retroboeken PDF or archive.org text) for Jan 1808 / Feb 1809.
 
 # Röell (attributed) to Van Dedem tot de Gelder, 9 February 1809
 
