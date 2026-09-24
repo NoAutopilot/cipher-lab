@@ -1,0 +1,11 @@
+{
+  "record": "DECODE R1162, State Archives of Modena, Amb. Ung. b.2/20 no.6, Ferrara, 1492",
+  "fetched": "24 September 2026",
+  "fetch_method": "tools/decode_browser_login.js (one login), --fetch-page RecordsView/1162 with auto-discovered /decrypt-custom/filesrv attachment links",
+  "images": [
+    { "file": "TH_IMG_R1162_I5837_P1.png", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R1162_I5837_P1.png", "bytes": 106437, "sha1": "5ca8a9c4d5b577af42e4ff4367448932ace9e3d0", "date": "24 September 2026" },
+    { "file": "TH_IMG_R1162_I5838_P2.png", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R1162_I5838_P2.png", "bytes": 96669, "sha1": "3535d289d7fc738afac2fd9f19becc002aee78bd", "date": "24 September 2026" }
+  ],
+  "documents": [],
+  "documents_note": "The record's one attached document (id 3593, title SAMo_Amb_Ung_b_2_20_6, category Transcription) could NOT be fetched: /decrypt-custom/filesrv/?file=DOC_R1162_D3593_3593.txt returns HTTP 200 with Content-Disposition: inline; filename=\"forbidden.png\" -- a fixed 986x568 PNG placeholder (sha1 035489a0605851154ab88372216354b63596ca22), byte-identical whether requested with or without an authenticated session (tested inside the logged-in Playwright browser context via ctx.request.get, and again with plain curl plus a Referer/Accept header). This account cannot retrieve this document via filesrv; see NOTES.md."
+}

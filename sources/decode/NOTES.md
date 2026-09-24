@@ -105,3 +105,21 @@ for DocumentsList/ImagesList/gallery pages) -- caught after the fact by grepping
 `TH_IMG_*`/`DOC_*` files (image thumbnails and three genuine document files, all under 130KB) deleted
 unread beyond their filenames/DECODE-assigned tags, none committed. If a future pass wants pages only with no
 attachment fetching at all, pass `--max-files 0`, which this session did not test.
+
+## `.txt` document attachments blocked by filesrv, 24 September 2026
+
+LANE N DECODE FETCH worker (for LANE R2, `.claude/briefs/runs/2026-09-24-lane-n-fetchDC.md`). Attempting to
+fetch DECODE R1162's attached transcription document (id 3593, `DOC_R1162_D3593_3593.txt`) via
+`/decrypt-custom/filesrv/?file=...` returned HTTP 200 with `Content-Type: image/png` and
+`Content-Disposition: inline; filename="forbidden.png"` -- a fixed 986x568 PNG placeholder (sha1
+`035489a0605851154ab88372216354b63596ca22`). Byte-identical whether requested inside a logged-in Playwright
+browser context (`ctx.request.get`, session cookies attached) or with a bare, unauthenticated curl -- so this
+is not a session/cookie bug, it is the server refusing the file regardless of login. **This already produced
+one bad commit**: `ciphers/intercepted-royalist-1646/decode/DOC_8725_2024-Oct-12-01-36-20_15694.txt`
+(committed by an earlier worker as record 8725's real document text) is the same placeholder byte-for-byte,
+mislabeled `.txt`. Any DECODE document fetch should check `file <name>` and/or the response's
+`Content-Disposition` header before trusting a `.txt`/document download -- a `filename="forbidden.png"` or
+an actual PNG signature means the fetch silently failed. Image attachments (`TH_IMG_*`) were unaffected in
+this pass (fetched fine, correct distinct content). Not yet known whether this is specific to record
+1162/document 3593, to the Transcription category, or to all non-image documents on this account -- next
+worker hitting a document attachment should check the response header the same way before committing.

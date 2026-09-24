@@ -64,3 +64,13 @@ verdict above: still **open**, still the weaker "copy of a stalled Ranzo attempt
 `tools/decode_neighbours_exclude.py`); R4450's `held_by` is now `ours:decode-4450-bnf-fr20506-1525` (was
 `none`, because this folder did not exist when the stale diff was generated) — an artifact of the pipeline
 having since caught up to this record, not a new finding about the Ranzo system.
+
+## DECODE fetch, 24 Sept 2026
+
+For LANE R2 (ROOM 08:50 flag). One login (`tools/decode_browser_login.js`), `--fetch-page RecordsView/4450`
+plus auto-discovery of its `/decrypt-custom/filesrv` links, `--delay 1600`. 8 images fetched into `images/`
+(`TH_IMG_R4450_I26869_P1`-`P8`, .jpg/.jpeg, 6-17 KB each), manifest at `images/manifest.json` (file, source
+URL, bytes, sha1, date). Note: the record page's own "Pages: 5" field undercounts — 8 distinct image files
+are linked from the page, all 8 fetched. Confirmed again (per this folder's existing LANE N audit) that
+`DocumentsList?showmaster=records&fk_id=4450` has no attached document. No transcription, no decoding.
+Folder now 120 KB, well under the 30 MB cap.
