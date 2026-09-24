@@ -911,3 +911,82 @@ volume opened flat or a better image; the four-letter cap and the f.87 differenc
 not settled. No novelty wording, no class.
 
 Requests: none (no network). No subagents.
+
+## Folio 1-2 letter reconciled (24 Sept 2026)
+
+Opus reconciler, disk only, no network. Inputs: `passA.tsv`, `passB.tsv` (the two blind Sonnet passes of the
+dense band walk, part 3) and the native leaves `images/native/f8.jpg`, `f9.jpg`, `f10.jpg`. Output:
+`ciphertext_f1.tsv` (line, pos, token, conf, alt, note), `inventory_f1.tsv`, `agreement_f1.tsv`, all written by
+`reconcile_f1.py`, whose `--check` exits 1 when any of the three is stale (rule 7). The reading lives in the
+script as one text line per manuscript line, so a later correction is a one-line edit.
+
+**Method.** Every line was read from native-resolution strips cut from the leaves (not committed; the folder is
+at 28 MB, the cap is 30 MB). Regions, reproducible with PIL from the committed natives: f8 x 950-3050,
+y 2080-4250; f9 x 1380-3330, y 1000-4500; f10 x 1100-3100, y 950-4400, each cut in 700-800 px bands.
+`tools/iiif_lines.py --image` found 12 of the 14 f8 lines (its bands drift on this hand), so bands were cut by
+hand. Each pass disagreement was settled from the strip.
+
+**The f9 line-boundary divergence is settled.** f9 has **18 lines**; pass B's count is right. Pass A skipped
+physical lines 13 (`37 _11 _7 65 I _6 _6 73 11 tt 60 23`) and 14 (`_11 51 db 37 q‡ db tt d mm 36 _42 d m‡`),
+so its f9_L13-L16 are lines 15-18. That shift is where the 0% agreement at A's f9_L13/L14 came from.
+`agreement_f1.tsv` maps A's lines back.
+
+**Totals.** 49 lines (f8 13 from "receuoir", f9 18, f10 18). **528 sign tokens: 508 H, 20 M**, plus 14 clear
+phrases. After mapping each pass's spellings onto the sign classes below, pass A matches 448/528 of the
+reconciled tokens (84.8%) and pass B 494/528 (93.6%). Unmatched by either pass: 14 tokens. Six carry dots or
+underlines that neither pass recorded, and the rest are flagged M with the passes' reading as `alt`. 97 distinct
+tokens (overline and dots counted), 81 distinct base signs.
+
+**Sign spelling** (the script's docstring is the reference). A leading `_` is an overline and a leading `¨` is
+two dots over the first figure. `11` is every two-minim sign: the passes wrote 11, u or n, and at this
+resolution joined and unjoined minims cannot be told apart consistently, so a later solver may want to split
+it. `m` is three minims. `mm` is the long minim sign with a descender. `m‡` is m with a double underline and
+a cross (pass A wrote m + #). `tt` is a crossed double stroke. `db` is tt joined to a looped d (pass B wrote 8).
+`d` is a looped d and `đ` a d with a barred ascender. `X` is a long cross, `Z` a Z, `I` a barred I and `£` a
+crossed looped L (the passes wrote #, ≠, L). `q`, `q'` (looped head) and `q‡` (crossed descender) are three
+shapes, kept apart. `θ` is an o with a stroke through it and `_o` an o with a bar above.
+
+### Structure, for a later solver (description only, no decoding)
+
+- **Two classes, one stream.** 310 numeral tokens (39 one-figure, 262 two-figure, 9 three-figure: 100, 115 x2,
+  118 x2, 123, 144 x2, 154) and 218 letter-like signs. The numerals run 1-78 densely, then 94, 95, 96 and the
+  three-figure values. The most frequent tokens are db 46, tt 37, then 11, m and mm at 22 each, _11 21,
+  36 19, I 18 and d 15. Letter-like signs make up 41% of the tokens. That is the symbol+numeral hybrid named
+  in the census.
+- **Overlines.** 131 tokens are overlined. Some figures occur only overlined (_21 x13, _16 x9, _6 x7, _10,
+  _22, _12, _7, _50, _18, _20, _28, _42, _27, _78). Others occur both ways (11 22 bare vs 21 overlined; 23 9
+  vs 3; 17 3 vs 4; 3 5 vs 1). So the overline is probably part of the code value, not decoration, but that is
+  an inference, not a test.
+- **Dotted figures.** `¨4` x6, `¨1`, `¨2`, `¨15`, `¨34`; also one-dot `14` (f9_L3) and `15` (f10_L13), in notes.
+  `¨4` stands next to `£` four times (`£ ¨4` f8_L10, f9_L7, f10_L13; `¨4 £` f10_L3; `£ ¨4` f10_L4), and three
+  of these sit directly against a clear phrase.
+- **`db` is a trailer.** 46 times, most often after 33, q‡, d, 40, X, 11 and 62, and often written raised
+  against the sign before it (`40ᵈᵇ`, `Xᵈᵇ`, `q‡ᵈᵇ`). A solver should test it both as its own token and as a
+  modifier of the one before; the passes and this file keep it separate.
+- **Repeats** (exact runs in the reconciled stream): `36 62 db 40 db _21` at f9_L5/4 and f10_L17/1 (the
+  second directly before the clear "selon touttes sortes"). `db 40 db _21` also at f9_L2/3, so three times.
+  `4 _23 _12 _21 d` at f8_L6/2 (running over the line break into f8_L7) and f10_L15/2. `33 db _16 I _26` at
+  f9_L15/3 and f10_L5/7. In total: one repeat of 6, four of 5, seven of 4, 26 of 3.
+- **Clear French phrases and where they sit** (14; `inventory_f1.tsv` section `clear`). The letter opens in
+  clear on f8 ("Monsieur", then nine lines of clear prose from "Depuis que Heron est party": Verue, the Rome
+  ordinary; not in either pass and not transcribed here). The cipher enters mid-sentence at "quel peut
+  estre" (f8_L2). After that the clear pieces sit at line starts or ends, mostly as sentence frames:
+  "Cest estre persuade que bon" (f8_L6 start), "Et peut estre le" (f8_L7 mid), "lesquels noublieront"
+  (f8_L10 mid), "yl le peut estre dans le doubte de cogn" (f9_L7, breaks off at the margin, the next line is
+  cipher), "nayant pas en sorte" (f9_L18 start), "quils ne prennent" (f10_L1 end), "aisement" (f10_L2 start),
+  "Et ce nest pas chose aisee de" (f10_L3 mid), "et de" / "nestre point surpris" (f10_L11 end / L12 start),
+  "selon touttes sortes" / "dapparences nous aurons dans ce jour de ce" (f10_L17-18, where the cipher ends
+  and the letter goes on in clear on the next leaf). The clear words are plausibly the real text around
+  enciphered words rather than decoys, but that is an inference, not a test.
+- **Transcription limits.** The 20 M tokens are listed with alternatives. The two classes most likely to hold
+  errors are the two-minim `11` family (see above) and short overlines, which sometimes run on from a
+  neighbouring stroke (f8_L3 `tt _16`, f9_L1 `θ θ _11`, f9_L2 `tt _17`).
+
+**Status stays `open`.** No decoding and no key trial this pass. **Next step:** the same-office key trial of
+part 4 was run on pass A. It can now be rerun on `ciphertext_f1.tsv`, with the spelling map above.
+Otherwise wait for the f.86-88 joint key to be tested against this letter (a different date, so probably a
+different key).
+
+### Requests this pass
+
+None (disk only). pip installed Pillow and numpy into the container for the strips. Cost: about $3 of the $8 cap.

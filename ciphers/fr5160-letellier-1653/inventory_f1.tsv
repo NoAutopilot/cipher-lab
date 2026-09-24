@@ -1,0 +1,146 @@
+section	item	class	count	detail
+total	sign tokens		528	H 508, M 20
+total	distinct tokens (with overline/dots)		97	
+total	distinct base signs (overline/dots stripped)		81	
+total	clear phrases		14	
+class	numeral	numeral	310	overlined 118, dotted 10, bare 182
+class	letter-like sign	letter-like sign	218	overlined 6, dotted 0, bare 212
+token	db	letter-like sign	46	
+token	tt	letter-like sign	37	
+token	11	numeral	22	
+token	m	letter-like sign	22	
+token	mm	letter-like sign	22	
+token	_11	numeral	21	
+token	36	numeral	19	
+token	I	letter-like sign	18	
+token	d	letter-like sign	15	
+token	61	numeral	13	
+token	X	letter-like sign	13	
+token	_21	numeral	13	
+token	4	numeral	11	
+token	£	letter-like sign	10	
+token	23	numeral	9	
+token	_16	numeral	9	
+token	33	numeral	8	
+token	62	numeral	8	
+token	71	numeral	8	
+token	_6	numeral	7	
+token	m‡	letter-like sign	7	
+token	q'	letter-like sign	7	
+token	31	numeral	6	
+token	60	numeral	6	
+token	_10	numeral	6	
+token	_13	numeral	6	
+token	_26	numeral	6	
+token	_o	letter-like sign	6	
+token	¨4	numeral	6	
+token	3	numeral	5	
+token	_22	numeral	5	
+token	q‡	letter-like sign	5	
+token	37	numeral	4	
+token	39	numeral	4	
+token	40	numeral	4	
+token	_12	numeral	4	
+token	_17	numeral	4	
+token	_19	numeral	4	
+token	_7	numeral	4	
+token	θ	letter-like sign	4	
+token	17	numeral	3	
+token	64	numeral	3	
+token	65	numeral	3	
+token	66	numeral	3	
+token	72	numeral	3	
+token	_15	numeral	3	
+token	_18	numeral	3	
+token	_23	numeral	3	
+token	_43	numeral	3	
+token	_50	numeral	3	
+token	đ	letter-like sign	3	
+token	115	numeral	2	
+token	118	numeral	2	
+token	144	numeral	2	
+token	19	numeral	2	
+token	38	numeral	2	
+token	41	numeral	2	
+token	43	numeral	2	
+token	51	numeral	2	
+token	68	numeral	2	
+token	95	numeral	2	
+token	Z	letter-like sign	2	
+token	_1	numeral	2	
+token	_20	numeral	2	
+token	_28	numeral	2	
+token	_42	numeral	2	
+token	100	numeral	1	
+token	123	numeral	1	
+token	13	numeral	1	
+token	14	numeral	1	
+token	15	numeral	1	
+token	154	numeral	1	
+token	26	numeral	1	
+token	30	numeral	1	
+token	34	numeral	1	
+token	46	numeral	1	
+token	53	numeral	1	
+token	56	numeral	1	
+token	63	numeral	1	
+token	69	numeral	1	
+token	70	numeral	1	
+token	73	numeral	1	
+token	74	numeral	1	
+token	9	numeral	1	
+token	94	numeral	1	
+token	96	numeral	1	
+token	_27	numeral	1	
+token	_3	numeral	1	
+token	_38	numeral	1	
+token	_46	numeral	1	
+token	_51	numeral	1	
+token	_78	numeral	1	
+token	q	letter-like sign	1	
+token	¨1	numeral	1	
+token	¨15	numeral	1	
+token	¨2	numeral	1	
+token	¨34	numeral	1	
+overlined	_11	numeral	21	same figure without overline: 22
+overlined	_21	numeral	13	same figure without overline: 0
+overlined	_16	numeral	9	same figure without overline: 0
+overlined	_6	numeral	7	same figure without overline: 0
+overlined	_10	numeral	6	same figure without overline: 0
+overlined	_13	numeral	6	same figure without overline: 1
+overlined	_26	numeral	6	same figure without overline: 1
+overlined	_o	letter-like sign	6	same figure without overline: 0
+overlined	_22	numeral	5	same figure without overline: 0
+overlined	_12	numeral	4	same figure without overline: 0
+overlined	_17	numeral	4	same figure without overline: 3
+overlined	_19	numeral	4	same figure without overline: 2
+overlined	_7	numeral	4	same figure without overline: 0
+overlined	_15	numeral	3	same figure without overline: 1
+overlined	_18	numeral	3	same figure without overline: 0
+overlined	_23	numeral	3	same figure without overline: 9
+overlined	_43	numeral	3	same figure without overline: 2
+overlined	_50	numeral	3	same figure without overline: 0
+overlined	_1	numeral	2	same figure without overline: 0
+overlined	_20	numeral	2	same figure without overline: 0
+overlined	_28	numeral	2	same figure without overline: 0
+overlined	_42	numeral	2	same figure without overline: 0
+overlined	_27	numeral	1	same figure without overline: 0
+overlined	_3	numeral	1	same figure without overline: 5
+overlined	_38	numeral	1	same figure without overline: 2
+overlined	_46	numeral	1	same figure without overline: 1
+overlined	_51	numeral	1	same figure without overline: 2
+overlined	_78	numeral	1	same figure without overline: 0
+clear	receuoir deux interpretations, et il sera bon de	clear French	8	f8_L1 pos 1 (line start)
+clear	Vous esclaircir quel peut estre	clear French	5	f8_L2 pos 1 (line start)
+clear	Cest estre persuade que bon	clear French	5	f8_L6 pos 1 (line start)
+clear	Et peut estre le	clear French	4	f8_L7 pos 8 (mid-line)
+clear	lesquels noublieront	clear French	2	f8_L10 pos 7 (mid-line)
+clear	yl le peut estre dans le doubte de cogn	clear French	9	f9_L7 pos 3 (line end)
+clear	nayant pas en sorte	clear French	4	f9_L18 pos 1 (line start)
+clear	quils ne prennent	clear French	3	f10_L1 pos 12 (line end)
+clear	aisement	clear French	1	f10_L2 pos 1 (line start)
+clear	Et ce nest pas chose aisee de	clear French	7	f10_L3 pos 5 (mid-line)
+clear	et de	clear French	2	f10_L11 pos 12 (line end)
+clear	nestre point surpris	clear French	3	f10_L12 pos 1 (line start)
+clear	selon touttes sortes	clear French	3	f10_L17 pos 7 (line end)
+clear	dapparences nous aurons dans ce jour de ce	clear French	8	f10_L18 pos 1 (line start)
