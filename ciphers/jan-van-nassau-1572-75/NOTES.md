@@ -203,3 +203,16 @@ for every row (a printed key source); rows 1-99 not multiples of 3 are the print
   occurrences mapping >=75% to one letter: the single positional alignment is too loose (nulls and word codes shift
   every span) to build a key from. Recovering the 1575 key from these two printed pairs is a known-plaintext job for
   a later brief (suggestion below), not done here.
+
+### 3. Progress at the cap (24 Sep 2026 09:44 UTC; stopped by the lane orchestrator at $12.6 on a $9 cap)
+
+- key_1572.tsv (H, printed table) committed; spot check on 5200 p1 by eye reads under it: "36.15.39.57" = MENT,
+  "3.57.27.42.39" = ATION, "51.3.39.12" = RAND, "57.15.33" = TEL, with non-multiples of 3 as nulls. Not yet a graded
+  reading: no reconciled ciphertext, no decode.json, decode_key.py not run. No H/C counts to report.
+- Blind passes on disk at stop (rows): passA_5200.tsv 835;. Committed as they stood; passes were still running, so
+  the last letter of each may be partial. Not reconciled.
+- Not started: 5221, 5549 passes; reconciliation; decode.json; readings.
+- Next (suggestions): (a) finish passes B, run tools/reconcile_passes.py per letter, settle disagreements.tsv, add
+  decode.json (tsv format, clear_prefix 'w:', key key_1572.tsv) and run decode_key.py --check for 5200/5207/5213;
+  (b) 5218/5222: known-plaintext recovery of the 1575 nomenclator needs a careful group-by-group aligner pass
+  (the positional ones in passes/align_*.tsv are too loose), then test the resulting key on 5221 (values to ~137).
