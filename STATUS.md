@@ -92,7 +92,7 @@ over-claims prevented by the gates before anything left the repository.
 
 ## Parent handoff (session cipher-lab-7a, session_01EFmUvFAifLKGdBSsW9mjEG), kept current from 12:05 UTC 24 Sept 2026
 
-The parent orchestrator runs the hourly check-in (trigger trig_01MCWsbZbnB4YUTyuRK8kEAm (30-minute cadence while lanes run), self-bound, re-armed by send_later at every firing; its prompt is the
+The parent orchestrator runs the hourly check-in (trigger trig_01J9tJgr6B8vSo6LgSAXHB6E (30-minute cadence while lanes run), self-bound, re-armed by send_later at every firing; its prompt is the
 full duty list: rate limit, swap, JSTOR gate, second-opinion PRs, lanes, parent workers, board, results audit, owner
 report), publishes the board (https://claude.ai/artifact/HzYszSGfSoWPsYXpxvM5zr, built by `python3 tools/build_dashboard.py`
 from status.json; docs/index.html is the Pages copy), keeps ASKS.md and the owner's card (outreach/*.md with `status: ready`),
@@ -115,7 +115,11 @@ Salviati passes), N3 (copy-free scouts only). N3's first brief: scCS2, a re-diff
 2026 against the 99 folders diffed on 23 Sept; the 38 'not solved' and the '· partial' write-ups as recovery candidates where
 an archive route exists, catalogue.html 'attempted, open' rows against QUEUE.md, and keys.html, the key web, as an index of
 published keys to try on unread Gallica siblings). Checked 24 Sept 14:45 UTC by grep of writeups/catalogue/keys: none of
-the fifteen N4 items appears there; Thurloe P4 is on his 'not solved' list (a contribution once the JSTOR gate passes). If this parent stops, a successor parent reads this section, the lane table,
+the fifteen N4 items appears there; Thurloe P4 is on his 'not solved' list (a contribution once the JSTOR gate passes). Evening state, 24 Sept 18:06 UTC: the board was rebuilt from the ground up at 17:55 (three views: Readings with in-row dossiers fed by
+N4-READINGS.md and the outreach drafts' targets:/links: headers, Your desk, The machine); the OpenAlex key (OPENALEX_KEY, api_key
+parameter) runs the open-index pass from the cloud; every outreach gate for the seven N4 targets is met and four notes are ready on the
+owner's desk; LANE N3 closed 18:06 (four copy-free nominations for R4); R4 runs at cap $80; retrospective e running. If this parent
+stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
 ## LANE R4 handoff (session_01LrTggxL1PyxmJd6eygqaGY), 24 September 2026, 16:30 UTC
