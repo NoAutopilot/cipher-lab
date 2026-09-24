@@ -1,0 +1,58 @@
+{
+  "note": "Folio offset calibrated 24 Sept 2026 from the primary ark's own IIIF manifest labels (../manifest.json), which give true manuscript foliation per canvas (e.g. canvas id 'f69' label '35r'), not just IIIF sequence position. Pattern for single-folio canvases (index 17 = '9r' onward): recto canvas index = 2*folio - 1. Folio 35 recto = canvas index 69 (label '35r'); folio 35 verso = canvas index 70 (label '35v'). Checked against three known points: folio 16r = canvas 31 (label '16r'), folio 24r = canvas 47 (label '24r'), folio 30r = canvas 59 (label '30r') -- all match Tomokiyo's cited folios exactly.",
+  "ark": "btv1b52521512h (primary)",
+  "target_folio": "f.35, 27 Jan 1557, Danzay to Cardinal of Lorraine (Tomokiyo, not deciphered)",
+  "fetches": [
+    {
+      "file": "preview_f69.jpg",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52521512h/f69/full/1200,/0/native.jpg",
+      "purpose": "low-res check of folio number/date in margin before native fetch",
+      "confirmed": "leaf headed '35' top right, marginal date '27 Jan. 1557' -- matches Tomokiyo's f.35 exactly"
+    },
+    {
+      "file": "preview_f70.jpg",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52521512h/f70/full/1200,/0/native.jpg",
+      "purpose": "low-res check of verso"
+    },
+    {
+      "file": "native_f69.jpg",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52521512h/f69/full/full/0/native.jpg",
+      "native_size": "4800x7062"
+    },
+    {
+      "file": "native_f70.jpg",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52521512h/f70/full/full/0/native.jpg",
+      "native_size": "4791x7091"
+    }
+  ],
+  "crops": [
+    {
+      "file": "f69_cipher.jpg",
+      "source": "native_f69.jpg",
+      "native_box_xyxy": [1400, 3560, 4800, 4920],
+      "resized_to": "2400 wide",
+      "content": "folio 35 recto, ~7 lines of cipher at foot of page (starts mid-line after clear French 'Monseigneur je vous puis asseurer que')"
+    },
+    {
+      "file": "f70_cipher_top.jpg",
+      "source": "native_f70.jpg",
+      "native_box_xyxy": [599, 399, 4392, 2794],
+      "resized_to": "2400 wide",
+      "content": "folio 35 verso, upper half of the cipher block (whole page is cipher, no contemporary decipherment visible)"
+    },
+    {
+      "file": "f70_cipher_bot.jpg",
+      "source": "native_f70.jpg",
+      "native_box_xyxy": [599, 2394, 4392, 4790],
+      "resized_to": "2400 wide",
+      "content": "folio 35 verso, lower half of the cipher block; overlaps top crop by ~4-5 lines (400px pad each side of the native midpoint) so no line is split across crops without duplication"
+    }
+  ],
+  "legend": {
+    "file": "sources/cryptiana/web/danzay_1557.png",
+    "source_url": "https://cryptiana.web.fc2.com/code/danzay_1557.png",
+    "content": "S. Tomokiyo's reconstructed sign table for Danzay's 1557 cipher: a-z (minus j,k,v,w), nulls, word-signs for 'dict/et/le/luy/quel?/son?' and 'Dannemarch'/'le Roy de Dannemarch'",
+    "fetched_this_pass": true,
+    "not_previously_mirrored": "only danzay.htm was mirrored before this pass; the page's images (danzay.png, danzay_1574.png, danzay_1557.png) were not"
+  }
+}
