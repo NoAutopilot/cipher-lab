@@ -1,18 +1,80 @@
 {
-  "record": "DECODE R4450, BnF Francais 20506 f.136",
-  "fetched": "24 September 2026",
-  "fetch_method": "tools/decode_browser_login.js (one login), --fetch-page RecordsView/4450 with auto-discovered /decrypt-custom/filesrv attachment links",
-  "note": "record page states 'Pages: 5' but 8 distinct TH_IMG_R4450_I26869_P1-P8 files are linked from the page; all 8 fetched",
-  "images": [
-    { "file": "TH_IMG_R4450_I26869_P1.jpeg", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P1.jpeg", "bytes": 6237, "sha1": "25ff3d5ee60cc7d2b629c06963944321306a345e", "date": "24 September 2026" },
-    { "file": "TH_IMG_R4450_I26869_P2.jpg", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P2.jpg", "bytes": 14505, "sha1": "762e4c4e680ae30301906b865ea5854b4057dae9", "date": "24 September 2026" },
-    { "file": "TH_IMG_R4450_I26869_P3.jpeg", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P3.jpeg", "bytes": 5785, "sha1": "e4dc6a2c380e89e83144368769fea770b6b97209", "date": "24 September 2026" },
-    { "file": "TH_IMG_R4450_I26869_P4.jpg", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P4.jpg", "bytes": 12875, "sha1": "9aae2b8755cd5c5b7b2e23afa3a5d6690805fe91", "date": "24 September 2026" },
-    { "file": "TH_IMG_R4450_I26869_P5.jpeg", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P5.jpeg", "bytes": 6251, "sha1": "7efb64a79de796ffe27e0f2aa08a4936f668bde7", "date": "24 September 2026" },
-    { "file": "TH_IMG_R4450_I26869_P6.jpg", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P6.jpg", "bytes": 17305, "sha1": "38220cbc583136dd8dd97d9896e88cf82a1e4505", "date": "24 September 2026" },
-    { "file": "TH_IMG_R4450_I26869_P7.jpg", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P7.jpg", "bytes": 16033, "sha1": "ae07e2bfa1103b2a3bc78b955df363dbb47abf7b", "date": "24 September 2026" },
-    { "file": "TH_IMG_R4450_I26869_P8.jpg", "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P8.jpg", "bytes": 10111, "sha1": "9d871cc75b14fc462f03d208cc5a56c89e3abe05", "date": "24 September 2026" }
-  ],
-  "documents": [],
-  "documents_note": "DocumentsList?showmaster=records&fk_id=4450 confirmed empty (no attached document), consistent with the prior LANE N audit in this folder's NOTES.md"
+ "record": "DECODE R4450, BnF Francais 20506 f.136",
+ "fetched": "24 September 2026",
+ "fetch_method": "tools/decode_browser_login.js (one login), --fetch-page RecordsView/4450 with auto-discovered /decrypt-custom/filesrv attachment links",
+ "note": "record page states 'Pages: 5' but 8 distinct TH_IMG_R4450_I26869_P1-P8 files are linked from the page; all 8 fetched",
+ "images": [
+  {
+   "file": "TH_IMG_R4450_I26869_P1.jpeg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P1.jpeg",
+   "bytes": 6237,
+   "sha1": "25ff3d5ee60cc7d2b629c06963944321306a345e",
+   "date": "24 September 2026"
+  },
+  {
+   "file": "TH_IMG_R4450_I26869_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P2.jpg",
+   "bytes": 14505,
+   "sha1": "762e4c4e680ae30301906b865ea5854b4057dae9",
+   "date": "24 September 2026"
+  },
+  {
+   "file": "TH_IMG_R4450_I26869_P3.jpeg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P3.jpeg",
+   "bytes": 5785,
+   "sha1": "e4dc6a2c380e89e83144368769fea770b6b97209",
+   "date": "24 September 2026"
+  },
+  {
+   "file": "TH_IMG_R4450_I26869_P4.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P4.jpg",
+   "bytes": 12875,
+   "sha1": "9aae2b8755cd5c5b7b2e23afa3a5d6690805fe91",
+   "date": "24 September 2026"
+  },
+  {
+   "file": "TH_IMG_R4450_I26869_P5.jpeg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P5.jpeg",
+   "bytes": 6251,
+   "sha1": "7efb64a79de796ffe27e0f2aa08a4936f668bde7",
+   "date": "24 September 2026"
+  },
+  {
+   "file": "TH_IMG_R4450_I26869_P6.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P6.jpg",
+   "bytes": 17305,
+   "sha1": "38220cbc583136dd8dd97d9896e88cf82a1e4505",
+   "date": "24 September 2026"
+  },
+  {
+   "file": "TH_IMG_R4450_I26869_P7.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P7.jpg",
+   "bytes": 16033,
+   "sha1": "ae07e2bfa1103b2a3bc78b955df363dbb47abf7b",
+   "date": "24 September 2026"
+  },
+  {
+   "file": "TH_IMG_R4450_I26869_P8.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4450_I26869_P8.jpg",
+   "bytes": 10111,
+   "sha1": "9d871cc75b14fc462f03d208cc5a56c89e3abe05",
+   "date": "24 September 2026"
+  }
+ ],
+ "documents": [],
+ "documents_note": "DocumentsList?showmaster=records&fk_id=4450 confirmed empty (no attached document), consistent with the prior LANE N audit in this folder's NOTES.md",
+ "gallica_natives": [
+  {
+   "fetched": "2026-09-24 10:50 UTC",
+   "by": "LANE G2 orchestrator session_015NqJ9uu5Ef3Bo6QaRiGcGp",
+   "size": "2000px wide (IIIF default.jpg)",
+   "files": {
+    "fr20506_f136r.jpg": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525047581/f275/full/2000,/0/default.jpg",
+    "fr20506_f136v.jpg": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525047581/f276/full/2000,/0/default.jpg",
+    "fr2988_f9r.jpg": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525240150/f25/full/2000,/0/default.jpg",
+    "fr2988_f9v.jpg": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525240150/f26/full/2000,/0/default.jpg"
+   },
+   "check": "f136r eye-checked: folio stamp 136, pencil docket 'Lettre en chiffre de Hierosme ...', letter+superscript-numeral cipher, 26 lines; fr2988 canvases per worker L's pin (offset k=8 below f31v), not eye-checked"
+  }
+ ]
 }
