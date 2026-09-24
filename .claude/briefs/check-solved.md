@@ -27,6 +27,11 @@ Torpadie printed the solution in Historisk tidskrift 8 (1888), the year the edit
 solver both ran, and a key hunt and an original-letter hunt also took the footnote at face value, before a
 verifier found it on the fourth phrase-search query, an hour after a fresh reading had already been posted
 (LEDGER row "Verifier: Gustav II Adolf"; AUDIT.md, "Postmortem").
+Before scoring an archive item open, search the holding collection as a whole (not just the item's record) for a
+duplicate, triplicate, draft or copy of the same letter: senders sent ciphered dispatches in duplicate, and the
+recipient often deciphered only one. Lesson of 24 Sept 2026 (Huntington mssDE 108(A), La Luzerne to Destouches,
+16 Jan 1781): its 'Duplicata' mssDE 108(B), deciphered by Destouches, sat in the same collection; two solver sessions
+rebuilt a partial key before a verifier's collection-wide CONTENTdm query found it (LEDGER row "Verifier: Luzerne").
 When Tomokiyo's page, a solver repository's README, or any other named source in the search log identifies
 the specific letter under review (by date, sender, recipient or shelfmark, not just the cipher family),
 quote its sentence about that letter verbatim in the verdict before writing "open". Lesson of 24 Sept 2026
