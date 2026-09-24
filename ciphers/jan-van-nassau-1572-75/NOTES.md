@@ -753,7 +753,7 @@ No key_body.tsv and no body decode job were written, because no value reaches S 
   text ("ogen 19 Es", "en 14 19 desgleichen", "ey 9 schon"), so they may be nulls or word-end signs. 14 opens the pairs
   14-9, 14-19 and 14-24. Values 100-146 are dense and 157-345 sparse, which suggests a code-word or name block above 146.
 - **Where it was not found** (key search, added to J5S and J6): no sibling in the "verendertte" key among 5550, 5552,
-  5557, 5575, 5797, 5204, 5207, 5208 and 5213 (J5S, J6). 5205 and 5209 have not been tested.
+  5557, 5575, 5797, 5204, 5207, 5208 and 5213 (J5S, J6). 5205 and 5209 were fitted by LANE R4 C on 24 Sept 2026: negative (see "5205 and 5209 fitted" above).
 - **Suggestions** (one line each, not started): (1) find a letter in the same key that has a contemporary decipherment,
   or with Groen's clear text: Jan's own letters of Nov 1573 - Mar 1574 and letters to Jan from other senders, plus the
   5205/5209 fit. Only a key source or known plaintext will open this body. (2) A larger ENHG corpus (for example

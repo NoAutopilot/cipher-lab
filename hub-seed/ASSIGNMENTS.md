@@ -314,4 +314,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T14:46Z	session_01QimvzgvoH4ALachGScXUC9	LANE N3 orchestrator (Opus, cap $35)	copy-free nominations successor	from the N2 14:16 handoff; scCS2 first
 2026-09-24T14:48Z	session_01Q6YWoBLE8pbptEpkmhPpGr	LANE R4 A (Sonnet, cap $4)	Posthius 1614/1618 capture, two passes	live
 2026-09-24T14:48Z	session_01EXdQ9RrhhFBqgnb8DhByzv	LANE R4 B (Opus lead, cap $6)	Salviati f.54r atlas revision + script-assisted passes	live
-2026-09-24T14:48Z	session_017fUceqo34ts5wphGfeKG4G	LANE R4 C (Sonnet, cap $3)	5549 key source: fit 5205/5209	live
+2026-09-24T14:48Z	session_017fUceqo34ts5wphGfeKG4G	LANE R4 C (Sonnet, cap $3)	5549 key source: fit 5205/5209	done, $2.18, negative (5205 cos 0.33, 5209 cos 0.39)
+2026-09-24T15:13Z	session_01KvtMK21Ab1rzhyobtgTdv7	LANE R4 D (Sonnet, cap $5)	M36 fr5761 key atlas + f.104 passes	live
