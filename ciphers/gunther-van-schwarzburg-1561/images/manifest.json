@@ -1,0 +1,19 @@
+{
+  "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo",
+  "note": "One page rendered this pass to confirm ciphertext presence (brief item 3). Full PDF is 3 pages; not all rendered.",
+  "files": [
+    {
+      "briefnr": 8246,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=8246",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/08000-08999/08246.pdf",
+      "date": "2 May 1561 (\"Datum door bewerker bepaald\", editorially assigned from Japikse's edition; letter itself undated)",
+      "correspondent": "to Günther van Schwarzburg, from Brussel (Bruxelles)",
+      "shelfmark": "Staatsarchiv Rudolstadt, Kanzlei Sondershausen 693 o.s. (na f. 26), per the image's own archive stamp",
+      "archive_bronnen_codes": "JC ; SAR (not resolved to full names by the harvest worker; SAR plausibly Staatsarchiv Rudolstadt per this page's own caption)",
+      "printed_edition": "Japikse, N., ed. Correspondentie van Willem den Eerste, prins van Oranje. Eerste deel (1551-1561) ('s-Gravenhage 1934), letter no. 316, pp.343-344 -- read directly this pass (images/japikse_p343.png, japikse_p344.png); prints only the clear opening and stops before the ciphered majority of the letter, see NOTES.md",
+      "pages_in_pdf": 3,
+      "status": "target, 'Grotendeels in cijfer' per WVO Opmerkingen, no solution word; confirmed by eye this pass -- p.1 opens in clear German prose then switches to a German nomenclator: doubled/tripled letters (aa, cc, dd, hs, xr) mixed with 2-digit numbers, a different and more complex system than the pure-numeral French Nassau-Oranje ciphers",
+      "images": ["08246_p1.png", "japikse_p343.png", "japikse_p344.png"]
+    }
+  ]
+}

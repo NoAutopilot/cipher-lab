@@ -1,0 +1,29 @@
+{
+  "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo",
+  "note": "Found-solved target -- see NOTES.md. Only the Utrecht contemporary-copy PDF's first page is kept here as evidence that the surviving digitised manuscript is itself a contemporary decipherment, not the original cipher. The two edition PDFs (Muller 1888, Gerlo & De Smet 1990-96) were read in /tmp this pass and not committed; re-fetch from the URLs below if needed.",
+  "files": [
+    {
+      "briefnr": 10260,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=10260",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/10000-10999/10260.pdf",
+      "date": "17 December 1580",
+      "correspondent": "from Filips van Marnix van St. Aldegonde, Courtras (Coutras)",
+      "shelfmark": "Het Utrechts Archief, Staten van Utrecht 704-1, p.343-350 (contemporary copy/decipherment)",
+      "pages_in_pdf": 8,
+      "status": "found-solved (F0) -- this PDF is a contemporary DECIPHERED extract (heading dated 15 Jan 1581, 'de overgesette brieven... Continuerende het geheel werck de cijffers'), not the original numeral cipher; plaintext printed in full by Muller 1888 (Bijdragen en Mededeelingen van het Historisch Genootschap 11, 509-520) and Gerlo & De Smet, Marnixi Epistulae (1990-96) no.181",
+      "images": ["10260_p1.png"]
+    },
+    {
+      "edition": "Muller, P.L. 1888",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/edities/MBWI/10260_ed.pdf",
+      "not_committed": true,
+      "note": "12pp, 910KB; prints the letter in full as no. DLXVI with footnote 'Dépêche chiffrée. Voyez la lettre précédente.'"
+    },
+    {
+      "edition": "Gerlo & De Smet, Marnixi Epistulae, 1990-96",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/edities/GSME/10260_ed.pdf",
+      "not_committed": true,
+      "note": "9pp, 621KB; critical edition no. 181 ('80 12 17 O1'), full apparatus with 3 manuscript witnesses, none of which is the original cipher"
+    }
+  ]
+}

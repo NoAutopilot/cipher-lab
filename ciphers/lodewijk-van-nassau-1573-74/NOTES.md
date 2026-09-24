@@ -116,6 +116,59 @@ recovery from 4613/4615, applied to 4610/4611/4612/4616 -- not cryptanalysis fro
 figure-to-letter/word mapping from 4613 and 4615's ciphertext-plaintext pairs, then test it against the four
 open letters.
 
+## WV2: six further letters in the same circle, 24 September 2026 (LANE N check-solved worker WV)
+
+QUEUE row WV2 (`QUEUE.md`, "Willem van Oranje correspondence: unsolved cipher letters", LANE N harvest of 24
+Sept 2026) named six more Lodewijk van Nassau letters and asked first whether they belong in this existing
+folder rather than a new one. **They do** -- same correspondents (Willem van Oranje and his brother Lodewijk),
+overlapping date range (1572-1574), same archive trail (KHAG + GPA), no separate identity from the four letters
+already here. Added as a section rather than a new folder, per brief.
+
+| briefnr | date | direction | place | cipher extent |
+|---|---|---|---|---|
+| 4503 | 15 Apr 1574 | to Lodewijk | Gorinchem | partly |
+| 5194 | 24 Jun 1572 | to Lodewijk | Frankfurt am Main | partly |
+| 5797 | 22 Oct 1573 | from Lodewijk | Dillenburg | partly |
+| 5799 | 3 Apr 1573 | to Lodewijk | Delft | mainly |
+| 5810 | 6 Jan 1574 | to Lodewijk | Vlissingen | partly |
+| 5811 | 13 Apr 1574 | to Lodewijk | Dordrecht | mainly |
+
+None carries a solution word in WVO's Opmerkingen (per `sources/wvo/cipher-letters-2026-09-24.tsv`, itself
+built from each letter's full remarks text). **5194's WVO record was fetched and read directly this pass**
+(https://resources.huygens.knaw.nl/wvo/app/brief?nr=5194) and reveals a distinct cover scheme within this same
+circle: "De brief is in cijferschrift, gericht aan Lambert Certain, de schuilnaam voor Lodewijk van Nassau,
+ondertekend door George Certain, de schuilnaam van de prins en in de vorm van een koopmansbrief geschreven. Het
+adres luidt: 'Soit donné a mon frere Lambert Certain a Londres'. Zie voor het antwoord nr. 11096." (The letter
+is in cipher, addressed to Lambert Certain, the pseudonym for Lodewijk van Nassau, signed by George Certain, the
+prince's pseudonym, and written in the form of a merchant's letter. The address reads: 'To be given to my
+brother Lambert Certain in London'. See for the answer no. 11096.) Bron: Groen van Prinsterer, GPA III, 448-449,
+no. CCCLXIX. **Caution, WebSearch hallucination caught this pass:** a WebSearch AI summary for this exact
+briefnr claimed 5194 was an unrelated 1572 merchant letter between "George Certain" and "Hugues de Haynault" --
+false; the direct WVO record fetch above shows George/Lambert Certain are pseudonyms for Willem and Lodewijk
+themselves, part of this same cipher correspondence. Do not trust an AI search summary's specifics for a named
+manuscript without confirming against the primary record.
+
+The reply, briefnr **11096** (Lodewijk to Willem, "Antwoord op nr. 5194", correspondents given as "Lambert
+Certain"/"Gorge Sertein"), was checked and carries no Brongegevens/image entry at all -- apparently not
+digitised or located, not a usable crib source this pass.
+
+**Sweep** (shared with WV1/WV3/WV4, see their NOTES.md for the full method): fresh solver-repo clones grepped
+for nassau/oranje/orange/schwarzburg/marnix -- no hits for any of these six letters or the "Certain" cover
+names. `sources/decode/records-non-decrypted-2026-09-24.tsv` grepped for nassau/oranje/certain: zero hits.
+`sources/cryptiana/web/dutch.htm`: no mention. WebSearch for the circle and these briefnrs returned only
+general Lodewijk van Nassau biography (see caution above on trusting specifics).
+
+**Ciphertext by eye not re-confirmed for these six specific letters this pass** -- the circle's cipher design
+(dense French numeral nomenclator) was already confirmed by eye on 4610/4613 above, and per brief item 3
+("confirm ciphertext by eye on one page of one letter per circle") that satisfies this batch too; a future
+capture worker fetching these six PDFs (`pdf_url` pattern: `resources.huygens.knaw.nl/media/wvo/images/05000-
+05999/*.pdf` for 5194/5797/5799/5810/5811, `04000-04999/04503.pdf`) should still view each once before solving,
+since 5194 in particular uses a merchant-letter cover format that may format its cipher differently.
+
+**Verdict: open** (all six), copy-free, **kind: recovery** (same circle as NB1's siblings 4613/4615 with imaged
+contemporary decipherments, plus 7205/7206/7208 solved on leaf and 8+ more "solved elsewhere" letters
+1573-1574 per the QUEUE.md WV2 row -- an alignment problem, not cryptanalysis from scratch).
+
 ## Image capture, 24 September 2026 (LANE R worker R9)
 
 All six letters (4610, 4611, 4612, 4616 targets; 4613, 4615 siblings) now fetched in full and rendered to PNG

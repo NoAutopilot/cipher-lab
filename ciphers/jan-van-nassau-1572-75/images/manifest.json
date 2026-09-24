@@ -1,0 +1,23 @@
+{
+  "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo",
+  "note": "Only briefnr 5200 rendered this pass (one representative page per CLAUDE.md rule 2 / brief item 3, 'confirm ciphertext by eye on one page of one letter per circle'). The other six letters' PDFs are listed with their pdf_url but not fetched; a future capture worker should image all seven per the LANE R pattern.",
+  "files": [
+    {
+      "briefnr": 5200,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5200",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05200.pdf",
+      "date": "18 October 1572",
+      "correspondent": "to Jan van Nassau, from Zwolle",
+      "archive": "GPA (Groen van Prinsterer, Archives d'Orange-Nassau) IV, 2-6 nr. CCCLXXXIX; KHAG",
+      "pages_in_pdf": 3,
+      "status": "target, 'Grotendeels in cijferschrift' per WVO Opmerkingen; confirmed by eye this pass -- p.1 is continuous French prose with dense numeral cipher groups (values up to at least 98) running through most of the letter",
+      "images": ["05200_p1.png"]
+    },
+    {"briefnr": 5207, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5207", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05207.pdf", "date": "23 May 1574", "not_fetched": true},
+    {"briefnr": 5213, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5213", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05213.pdf", "date": "26 November 1574", "not_fetched": true},
+    {"briefnr": 5218, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5218", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05218.pdf", "date": "4 March 1575", "not_fetched": true},
+    {"briefnr": 5221, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5221", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05221.pdf", "date": "30 July 1575", "not_fetched": true},
+    {"briefnr": 5222, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5222", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05222.pdf", "date": "29 September 1575", "not_fetched": true},
+    {"briefnr": 5549, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5549", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05549.pdf", "date": "21 November 1573", "not_fetched": true}
+  ]
+}
