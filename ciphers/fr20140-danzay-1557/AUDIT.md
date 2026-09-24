@@ -616,3 +616,131 @@ printed), api.crossref.org 2, api.openalex.org 1 (429, stopped), api.archives-ou
 api.semanticscholar.org 1 (429, stopped), WebSearch 2, github.com 4 anonymous shallow clones (2 repositories,
 cloned twice because the first grep was too broad). All archive.org and googleapis calls were at least 3 s apart.
 No Gallica, no logins, no subagents.
+
+## N4 decision, 24 Sept 2026
+
+LANE V verifier, 04:45-04:56 UTC, orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ. This session did none of the
+solving, auditing or gap work above and did no decoding. Question: does the logged coverage of the f.35r-36r letter
+(Danzay to the Cardinal of Lorraine, Copenhagen, 27 Jan 1557) now meet rule 10's N4?
+
+**Answer: no. The class stays N3.** Two principal families are still uncovered: Daussy 2015, a specialist study of
+Danzay that no earlier section logs, and DECODE. Each takes one short session. Daussy 2001 (ASKS row 26) does
+**not** block N4. It is a chapter on Duplessis-Mornay's correspondence, not on Danzay's.
+
+### 1. Principal families: covered or not
+
+| family | covered? | where logged |
+|---|---|---|
+| Danzay's printed dispatches: *Correspondance de Charles Dantzai* (Handlingar XI, 1824); Bricka 1901 | covered | first audit 3(a) |
+| Danzay studies: Richard 1910; Rørdam 1897/98 and *Hist. Saml.* II | covered | first audit 3(c) |
+| Delavaud 1911 | covered, from page images. His p. 74 n. 3 calls fr.20140 fos 16-56 "dépêches inédites", p. 78 declines to narrate the negotiations, and he quotes no 1557 letter | "Print check through Gallica page images" |
+| Daussy 2004 (PUR) | covered, full text | first audit 3(g) |
+| Daussy 2001 (*L'épistolaire au XVIe siècle*, pp. 211-226) | ruled out by its subject (this section, 3). Not a principal source for this letter | this section; "Toward N4: Daussy 2001" |
+| **Daussy 2015**, "Un diplomate huguenot au service de la couronne de France: Charles de Danzay, ambassadeur au Danemark (1548-1589)", *Religiya. Tserkov'. Obshchestvo* 4 (St Petersburg), pp. 264-281, doi 10.24411/2308-0698-2015-00013, in French, open access (CC BY 4.0) | **not covered**. Only the abstract was read, from the Wayback capture of the article page (20250316). The PDF's Wayback lookup returned 504 and connection resets, so that host was stopped. rcs-almanac.ru is not on this session's host list | this section, 2 |
+| Ryabov 2020 (the 1568 *Discours*), 2024 (Frederick II to Charles IX), 2025 *QR* (the 1574/1578 cipher), 2025 *VID* (a letter to Henry III) | covered at abstract level, and ruled out by date: none can concern January 1557. Frederick II reigned from 1559 and Henry III from 1574 | this section, 2; first audit 3(d) |
+| Cardinal of Lorraine's letters, Cuisiat 1998 | covered at snippet level, 10 + 11 queries. The only Danzay hit is the summary of no. 486 (received 25 June 1558), "a reçu les lettres du sr. de Danzay". The edition calendars outgoing letters only | second audit 2; this section, 2 |
+| Ribier II (1547-1559), I | covered, full text | second audit 3 |
+| Guise *Mémoires-journaux*; L. Paris 1841; Teulet 1851/1862 | covered | second audit 4; first audit 3(c) |
+| Danish regesta and state papers: *Regesta diplomatica* 2nd ser.; *Kancelliets Brevbøger* 1551-60; Danske Magazin; Aarsberetninger | covered | first audit 3(c); second audit 5 |
+| Swedish series: Handlingar (all 16 IA vols) | covered. Svenska riksregistraturet and Gustav I's registratur were not searched. An outgoing French despatch to Paris reaches Swedish print only through the Drottningholm copy-book, and that copy-book is Handlingar XI | first audit 3(a) |
+| CSP Foreign, Mary 1553-58 | covered, full text | first audit 3(b) |
+| CSP Scotland vol. 1 (Bain 1898, 1547-63) | **covered in this section**: IA `calendarstatepa00baingoog`, full djvu text, 50 lines with 1557, 0 hits for Danzay/Dansay/Dançay/Dantz* (the only "Dantz" hits are "Dantzic" ships) | this section, 2 |
+| BnF catalogue of fr.20140 (`cc51725m`) | covered: no bibliography, no edition | first audit 3(d) |
+| Tomokiyo, "Danzay's Ciphers" | covered, live and mirror. f.35 is "not deciphered", and no reading is printed | first audit 3(d); second audit 7 |
+| Solver repositories, incl. PR heads | covered | second audit 8; f.36r section |
+| **DECODE (de-crypt.org)** | **not covered**. It was unreachable in both audits (login blocked). The login has worked since 04:40 UTC today, but de-crypt.org is not on this session's host list | first audit 3(f) |
+| Open indexes | covered: CrossRef and HAL (several passes), Persée (29 hits, 10 read), Semantic Scholar (answered once this session, 9 hits, all listed in 2), Google Scholar via WebSearch. OpenAlex has been 429 at every attempt today, this session's included | open-index pass; second audit 9; this section |
+| JSTOR | 8 rows queued (16-19, 23-26). Under the verifier template, a queued row does not block N4 on its own | JSTOR-QUEUE.tsv |
+| Phrase search on decoded and clear-hand French (f.35 and f.36r) | covered: IA, Google Books, print_check | second audit 10; f.36r section |
+
+### 2. What this session searched (one pass)
+
+- **Semantic Scholar** answered one query ("Danzay"): 9 papers. They are Ryabov 2025 *QR* (the cipher of 1574/1578),
+  Ryabov 2025 *Vspomogatel'nye ist. distsipliny* (a letter to Henry III, so 1574 or later), Ryabov 2020 (the 1568
+  *Discours*), **Daussy 2015** (above), Daussy 2004, Daussy 2003 (*Siècles*, Duplessis-Mornay, Languet and Danzay
+  against the theologians, 1570s-80s), Ryabov 2024 ×2 (the Franco-Swedish alliance 1572-75, and Frederick II's
+  letters to Charles IX), and Ryabov 2022 (Sigismund II Augustus to Charles IX). Two follow-up calls for abstracts
+  got 429, one of them after a 40 s pause, so the host was stopped. CrossRef then gave the abstracts of Ryabov 2020,
+  2024 and 2025 *QR*. All are dated by their subject to 1559 or later.
+- **Daussy 2015.** The article page (via the Wayback Machine) gives the abstract. The article is based on "la
+  correspondance de Danzay conservée dans les archives danoises" and covers his Huguenot turn, negotiations with
+  Protestant princes, Henry of Navarre, Duplessis-Mornay, a French protectorate in Livonia, and trade with Moscow.
+  Nothing in the abstract points to the BnF volume or to 1557. Its title, subject and length (18 pp.) mirror
+  Daussy 2004 (18 pp.). Daussy 2004 was read in full and mentions 1557 only in the Laetus dedication. That the 2015
+  article is a version of the 2004 chapter is an inference (grade I), not a finding. Because the article is the
+  newest specialist study and is open access, it should be read before N4.
+- **Cuisiat 1998**, Google Books API, 11 queries. Six were volume-restricted (`intitle:`, for Dansay, Danzay, Dantzay,
+  Danemark 1557, Dannemarc and Copenhague) and all returned 0 matches. Five were free queries: only "Danzay
+  Sturmius cardinal" hit the volume (`o3lbuj7PnuoC`), again no. 486, "Reçue le 25 juin", n. 2 "Charles Quissarme,
+  sr. de Danzay". The other hits were *Lettres de Henri III* (Danzay at Cracow, 1574), Eneroth 1924 and Richard
+  1910, none of them the letter. **Nothing new. Cuisiat prints no Danzay letter.**
+- **Daussy 2001**, IA be-api fts on `lpistolaireauxvi0000unse`, 10 more terms: Coppenhagen 0, Copenhague 0,
+  Dannemarch 0, **Danemark 0**, Quissarme 0, 20140 0. "Christian" gave only humanist grammarians (Hegendorff,
+  Vladeracken). "Lorraine" gave the index and bibliographic mentions of Cuisiat's edition. "chiffre" gave
+  Duplessis-Mornay's cipher and a Maledent letter. "deux lettres" gave Maledent's two partly enciphered Latin letters
+  (another chapter). Google Books gives the chapter's title: **"La correspondance de Philippe Duplessis-Mornay:
+  inventaire et typologie"** (cited so in *Montaigne Studies* 2006 and *Servir Dieu, le Roi et l'État* 2006).
+- **CSP Scotland vol. 1**: see the table.
+- WebSearch, 2 queries: they located Daussy 2015 and found nothing else.
+
+### 3. Does Daussy 2001 block N4? No.
+
+The chapter is an inventory of **Duplessis-Mornay's** correspondence. Danzay appears in it on two pages (index
+"Danzay (Charles de) 217, 220") and in a list of correspondents, "Charles de Danzay (deux lettres)". These are
+letters exchanged with Duplessis-Mornay, who was born in 1549, and they belong to the 1570s-80s, like Daussy 2003. A
+chapter on Duplessis-Mornay cannot print or quote a 1557 despatch to the Cardinal of Lorraine. Full-text search of
+the book finds no "Danemark", "Dannemarch", "Copenhague" or "Coppenhagen" anywhere in it. **It is not a principal
+source for this letter.** Recommendation for ASKS row 26: close it as not needed for N4, with no ILL request. The
+owner decides.
+
+### 4. Decision
+
+**N3 stays.** For N4, rule 10 requires the principal editions, catalogues and project pages to be covered. Every
+edition, calendar, catalogue and regesta series in the table is covered. Two families are not:
+1. **Daussy 2015** (open access). It is the most recent specialist study of Danzay, based on his correspondence, and
+   has not been read. One fetch of the PDF (`rcs-almanac.ru/wp-content/uploads/2017/09/2015_досси.pdf`), then a grep
+   for 1557/1558, Lorraine, 20140, "Bibliothèque nationale" and the clear-hand phrases, closes it. rcs-almanac.ru is
+   not on this session's host list, so the orchestrator should assign it to a worker whose brief names that host.
+2. **DECODE**. It is a named status source (CLAUDE.md convention 1) and was never reached. The login works as of
+   04:40 UTC today. One search of DECODE for Danzay / fr.20140 / BnF français 20140 closes it.
+
+If both come back negative, the next verifier can assign N4 without repeating anything else. OpenAlex (never
+reached today) and the 8 JSTOR rows should be logged as unreachable or queued; neither blocks N4 on its own. Nothing
+found here lowers the class.
+
+**Safe sentence (N3, current):** "BnF fr.20140 f.35r-36r (Charles de Danzay to the Cardinal of Lorraine, Copenhagen,
+27 Jan 1557) carries no contemporary decipherment. Read with the key Tomokiyo reconstructed and published in 2026,
+509 of 638 cipher tokens on f.35 and 37 of 67 on f.36r are at grade H, and the reading is partial. Three audits found
+no prior decipherment or printed plaintext in the Danzay editions and studies, the Cardinal's edited letters,
+Ribier, the French, Scottish, English, Danish and Swedish documentary series, Tomokiyo's pages or the solver
+repositories (search log in AUDIT.md)."
+
+**Sentence for N4 only, not to be used until the two gaps close:** "No prior decipherment located of Danzay's
+letter to the Cardinal of Lorraine of 27 Jan 1557 (BnF fr.20140 f.35-36), read here with Tomokiyo's published key;
+the reading is partial."
+
+**Unsafe sentence:** "The first decipherment of a previously unread Danzay letter." The class is N3. The key is
+Tomokiyo's, so this is a key application of his reconstruction. The reading is partial: about 14 f.35 lines are not
+continuous French, and the f.35v/f.36r join is unread.
+
+### 5. Outreach gates (CLAUDE.md Outreach 1-6)
+
+| gate | state |
+|---|---|
+| 1. verifier class in AUDIT.md | **met** (N3) |
+| 2. above N1: second adversarial audit, open-index pass, Google Books, JSTOR rows answered or waived by the owner | second audit **met**; open-index pass **met** apart from OpenAlex (unreachable, logged); Google Books **met**; JSTOR rows 16-19 and 23-26 **not met** (queued, neither answered nor waived) |
+| 3. message is the safe sentence, states its prior print (Tomokiyo's key page), links AUDIT.md | **not met**: no draft exists |
+| 4. rule 10 wording | only the N3 safe sentence above may be used; no "first", no "no prior decipherment located" |
+| 5. logged in CONTRIBUTIONS.md before sending | **not met** |
+| 6. verifiable links (repo folder; Gallica `btv1b52521512h` canvases f69-f72; Tomokiyo's key page, the only print the reading rests on) | links available; **not met** until a draft carries them |
+
+**Postmortem.** No over-claim was found. The one error in the chain was a mislabel: every earlier section and ASKS
+row 26 called Daussy 2001 "a study of Danzay's letter-writing". Its title shows it is Duplessis-Mornay's
+correspondence. That cost a borrow attempt and an owner ask. Before an unread item gets an ASKS row, look up the
+chapter's own title. The real specialist gap, Daussy 2015, was missed because OpenAlex and Semantic Scholar were 429
+in every earlier pass, and CrossRef does not index that journal under the query used.
+
+Requests: be-api.us.archive.org 10, archive.org 2 (advancedsearch 1, djvu 1), web.archive.org 6 (CDX 1 reset + 1 ok;
+page 1 TLS failure + 1 ok; PDF CDX 1 reset + 1 504, then stopped), www.googleapis.com 17 (key and country=US, never
+printed, ≥3.3 s apart), api.openalex.org 1 (429), api.semanticscholar.org 3 (1 ok, 2× 429, stopped),
+api.crossref.org 5, WebSearch 2. No Gallica, no logins, no decoding, no subagents.
