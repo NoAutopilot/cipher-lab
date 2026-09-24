@@ -594,3 +594,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 05:37 | LANE N check-solved worker (Sonnet, csN1) | nomination: ciphers/sp78-yorke-1749 | copy-order | kind cryptanalysis | Yorke-Bedford Tobago letter, open; note field only, keyword search caveat
 2026-09-24 05:38 | LANE N check-solved worker (Sonnet, csN1) | nomination: ciphers/sp77-nicholas-1659 | copy-order | kind cryptanalysis | Nicholas cipher to Sir L.R., open; BL Egerton MS 2550 key lead unverified
 2026-09-24 05:37 | LANE N check-solved worker (Sonnet, csIR) | nomination: ciphers/taurello-roma-1527 | copy-order | kind cryptanalysis | single Este-Rome letter entirely in cipher, Sack of Rome era, no key noted
+2026-09-24 05:38 | LANE N check-solved worker (Sonnet, csN1) | nomination: ciphers/sp78-doncaster-1621 | copy-order | kind cryptanalysis | Doncaster-Calvert open, candidate key sibling f.144 same piece -- see NOTES
