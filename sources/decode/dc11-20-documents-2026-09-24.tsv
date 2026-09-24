@@ -1,0 +1,11 @@
+dc_row	decode_id	status	pages	n_documents	document_tags	uploader_comments	bibliography	holder	verdict
+DC11	1167	Partially decrypted	7	0	none found	none found	none per-record (site-wide DECRYPT project citations only)	State Archives of Modena, Amb. Ung. b. 2/20, 44, Envoy reports, Ferrara	not a candidate (Partially decrypted, hard filter)
+DC12	1166	Partially decrypted	4	0	none found	none found	none per-record	State Archives of Modena, Amb. Ung. b. 2/20, 16, Envoy reports, Ferrara	not a candidate (Partially decrypted, hard filter)
+DC13	1165	Partially decrypted	5	0	none found	none found	none per-record	State Archives of Modena, Amb. Ung. b. 2/20, 12, Envoy reports, Ferrara	not a candidate (Partially decrypted, hard filter)
+DC14	1164	Partially decrypted	4	0	none found	none found	none per-record	State Archives of Modena, Amb. Ung. b. 2/20, 7, Envoy reports, Ferrara	not a candidate (Partially decrypted, hard filter)
+DC15	1163	Partially decrypted	4	0	none found	none found	none per-record	State Archives of Modena, Amb. Ung. b. 2/20, 7, Envoy reports, Ferrara	not a candidate (Partially decrypted, hard filter)
+DC16	1152	Partially decrypted	3	0	none found	none found	none per-record	State Archives of Milano, Sf. Ung. b. 645/2, 4, Milan correspondence	not a candidate (Partially decrypted, hard filter)
+DC17	1148	Partially decrypted	1	0	none found	none found	none per-record	State Archives of Milano, Sf. Ung. b. 645/1, 1, 7, Milan correspondence	not a candidate (Partially decrypted, hard filter)
+DC18	1146	Partially decrypted	4	0	none found	none found	none per-record	State Archives of Milano, Sf. Ung. b. 645/1, 1, 6, Milan correspondence	not a candidate (Partially decrypted, hard filter)
+DC19	1121	Partially decrypted	1	0	none found	none found	none per-record	State Archives of Modena, Ambasciatori b. 1/13, 22, Envoy reports, Ferrara	not a candidate (Partially decrypted, hard filter)
+DC20	2788	Non-decrypted	1	0	none found	none found	none per-record	private collection (Origin field blank on RecordsView)	not a candidate (0 images, no documents; already flagged blocked in QUEUE.md)
