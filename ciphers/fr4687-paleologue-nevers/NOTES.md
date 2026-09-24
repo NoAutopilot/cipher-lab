@@ -378,3 +378,20 @@ Next moves, most promising first. None of these was done here.
 
 Requests this session: archive.org 13 (1 advancedsearch, 6 metadata, 6 `_djvu.txt` downloads), all 1.5 s
 apart, descriptive User-Agent. No other hosts, no logins, no subagents.
+
+## Extra regions, pass A (replacement)
+
+Blind sign-by-sign transcription of the 8 extra-region line crops (`f8_left_L1-L4`, `f8_right_L12`, `f9_top_L1-L3`)
+into `passA_extra.tsv`, replacing a run that was interrupted over budget before it pushed a pass A. Read only the
+"Segmentation" section's sign set (0-9 plus `y`, no group boundaries) and the manifest's crop descriptions first;
+did not read `passB_extra.tsv` content, `ciphertext.txt`, `passA.tsv`, `passB.tsv` or `passC_native.tsv` -- this
+pass is blind by construction, not reconciled against anything. Sign counts per line: f8_left_L1 60, f8_left_L2 21
+(+ clear Italian tail, not transcribed), f8_left_L3 41 (positions 1-6 flagged low-confidence, letter-like cursive
+shapes), f8_left_L4 48, f8_right_L12 42 (39 inline + 3 for a "184" written below the line, flagged as possibly a
+scribal carry rather than ciphertext), f9_top_L1 31 (7 signs, clear "et mi", then 24 more signs), f9_top_L2 43,
+f9_top_L3 26 (+ clear Italian tail "mi suo ... Dio facia", not transcribed). Total 312 signs, close to the
+manifest's ~280-300 estimate. Confidence marked `low` throughout except a handful of bolder, unambiguous shapes
+marked `med` (8's, `y`'s, a couple of clear 0/2 digits); the whole set should be read as rough given the density
+and the known 4/9 and 1/7 confusability noted in Segmentation. No reconciliation against pass B, no decoding, no
+novelty wording. One Sonnet subagent was available per brief but not used -- the crop set was small enough for one
+session to read directly.
