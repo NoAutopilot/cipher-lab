@@ -128,3 +128,58 @@ the retrospective: reading three full manuscript-page images at native resolutio
 and once implicitly through two subagent dispatches with embedded task context) is expensive on Sonnet; a
 narrower crop-first workflow (tools/iiif_lines.py-style line crops passed to the subagents instead of full pages)
 would likely have kept this under cap.
+
+## L1: transcription (24 September 2026)
+
+Single-worker blind transcription (no subagents, no network, offline from the images already on disk), direct
+reading only (not a two-pass reconcile — the brief for this worker was a solo pass, not a matched pair). Installed
+Pillow locally (`pip install pillow`, PyPI, not a research host) since neither Pillow nor ImageMagick was present
+in the container and the full-page PNGs are too dense to read cipher digits from at native display size; used it
+only to crop/upscale regions of the images already on disk into `/tmp` scratch files for reading, nothing written
+to the repo. `ciphertext_6179.tsv` (pp.2-3, 194 rows) and `ciphertext_6467.tsv` (p2's two marginal-note passages,
+46 rows) written and pushed page-by-page as instructed. `freq.py` (20-line offline script, reads both TSVs) computes
+the counts below; rerun it after any correction.
+
+**Notation used in the `group` column** (documented here since it isn't in the brief): digits and the `.`/`/`
+separator are transcribed literally; a trailing `^` marks a numeral written with a horizontal overline (seen
+throughout both letters, e.g. `16^`); a trailing `~` marks a small loop-with-crossbar flourish that recurs above
+some digits in a form distinct from the plain overline (first noticed on 6179 p2-p3, also present on 6467 p2 run1
+as `07`/`4~`/etc.; one instance on 6467 p2 run2, `07~~`, has what looks like an extra stroke on the same mark); a
+row with `group` = `[mark]` (optionally suffixed with an adjoining digit, e.g. `[mark]15`) is a case where this
+flourish appears to stand free between two numerals rather than clearly sitting atop one, so it is given its own
+row rather than silently attached to a neighbour (rule 2). **This flourish's identity is not established** — it
+could be a diacritic on the tens digit, a word- or clause-boundary marker, or a null; a future worker with the key
+should check whether `[mark]`/`~` tokens correlate with word starts once anything decodes. `doubt`=`M` marks a
+specific digit-identity or mark-placement call this worker was not confident in (mostly a recurring 4-vs-9 and
+8/18-vs-10 shape confusion in this hand, and the one interlinear "16 stacked over 12" insertion on 6179 p2 line 27,
+which could equally be a correction replacing one number with the other rather than two consecutive groups) — these
+are exactly the rows a second pass or the image should re-check before this is treated as final, per rule 7's
+"reproducible" standard (this transcription is a first read, not yet a settled one).
+
+**Counts** (`python3 ciphers/la-garde-1577/freq.py`): 238 total token rows across both files (183 in 6179, 45 in
+6467); 10 of those are free-standing `[mark]` tokens with no attached digit. Of the 228 numeral tokens, 25 distinct
+base-digit values appear, ranging 1-24, with no value above 24 anywhere in either letter. 16 tokens carry the plain
+overline, 2 the loop-cross flourish attached to a digit (plus the 10 free-standing ones above). Most frequent
+values: 10 (22x), 8 (16x), 9 (13x), 16/3/2 (12x each), 1/14/11 (11x each), 12/7 (10x each) — a fairly flat
+distribution over a small alphabet, not the long tail of hapax-heavy values a word-nomenclator would show over
+~230 tokens.
+
+**What the design looks like**: a value range capped at 24 with heavy reuse (10 appears once per ~10 tokens) is
+far more consistent with a **numbers-for-letters** cipher — one code number per letter of a ~20-25-letter French
+alphabet (u/v and i/j often unified in this period, which would land near 22-24 distinct letters) — than a
+numbers-for-words nomenclator, which would need hundreds of distinct values and show most values as hapax or
+near-hapax over this many tokens (compare LESSONS.md's Chaulnes 1690: 300 groups but 116 distinct, i.e. more than
+a third unique; here only 25 distinct over 228, about an eighth). This reading is offered as a transcriber's
+observation only, not a decode — the next worker (Opus, with a matched control per rule 3) should test it: build a
+frequency-rank map against period French letter frequencies and see whether the plain-substitution controls in
+tools/ read a synthetic French text of the same length before trying the target, exactly as LESSONS.md's "controls,
+always" section describes. The `^`/`~` marks are the obvious first thing to test as conditioning on that map (e.g.
+"marked forms are the same letter doubled/repeated" or "marked forms are the following-letter's diacritic in this
+period's orthography") rather than as separate cipher values, given how few of them there are relative to the
+run lengths.
+
+Not done, per brief: no decoding, no fetch of Groen/DBNL (dbnl.org is LANE V2's host). Left for the next worker:
+re-verify the `doubt=M` rows against the images directly (this worker's crops are not saved to the repo, only to
+this container's /tmp scratch, so a fresh set of crops is needed); resolve whether the 6467 margin note reads
+"N.c.f." or "N.d.f." (both letters are visually possible at this resolution); confirm whether 6179 p2's "16 over 12"
+stack (line 27) is two groups or a correction.
