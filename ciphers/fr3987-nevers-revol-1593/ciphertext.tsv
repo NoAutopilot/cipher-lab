@@ -1,0 +1,309 @@
+line	position	sign	confidence	alt	why
+f66_L07	1	8+	H		agree
+f66_L07	2	L	H		agree
+f66_L07	3	I	H		agree
+f66_L07	4	ls	M	B:-	gap
+f66_L07	5	x	M		agree-flagged
+f66_L07	6	g	H		agree
+f66_L07	7	pi	H		agree
+f66_L07	8	7	H		agree
+f66_L07	9	dbl	H		agree
+f66_L07	10	inT	H		agree
+f66_L07	11	2	H		agree
+f66_L07	12	4	H		agree
+f66_L07	13	A	M	A:-	gap
+f66_L07	14	T	H		agree
+f66_L07	15	pl	M	B:p	differ
+f66_L07	16	1	H		agree
+f66_L07	17	o	H		agree
+f66_L07	18	dbl	H		agree
+f66_L07	19	u	M	B:dbl	differ
+f66_L07	20	9	M	B:q	differ
+f66_L07	21	2	M	B:z	differ
+f66_L07	22	4	H		agree
+f66_L07	23	v+	M	B:-	gap
+f66_L07	24	e	M		agree-flagged
+f66_L07	25	4+	M	B:A	differ
+f66_L07	26	g	H		agree
+f66_L07	27	lam	H		agree
+f66_L07	28	alpha	M	B:	differ
+f66_L07	29	inT	H		agree
+f66_L07	30	x	M	B:r	differ
+f66_L07	31	pl	M	B:phi	differ
+f66_L07	32	x	H		agree
+f66_L07	33	o	H		agree
+f66_L07	34	4+	M	B:u	differ
+f66_L07	35	X	M	B:x	differ
+f66_L07	36	T	H		agree
+f66_L07	37	n	H		agree
+f66_L07	38	pl	M	B:-	gap
+f66_L07	39	h	M	B:phi	differ
+f66_L07	40	6	H		agree
+f66_L07	41	E	M	B:3	differ
+f66_L07	42	20	H		agree
+f66_L08	1	v	M	B:-	gap
+f66_L08	2	n	M	B:-	gap
+f66_L08	3	4	M	B:-	gap
+f66_L08	4	dbl	H		agree
+f66_L08	5	j	M		agree-flagged
+f66_L08	6	7	H		agree
+f66_L08	7	h	H		agree
+f66_L08	8	++	M	B:dbl	differ
+f66_L08	9	y	H		agree
+f66_L08	10	5'	M	B:s	differ
+f66_L08	11	I	M	B:2	differ
+f66_L08	12	j	M		agree-flagged
+f66_L08	13	X	M	B:-	gap
+f66_L08	14	r	M	B:-	gap
+f66_L08	15	d	M	B:x	differ
+f66_L08	16	4+	M	B:x	differ
+f66_L08	17	b	M	B:o	differ
+f66_L08	18	2	M	B:r	differ
+f66_L08	19	dbl	M	B:?+	differ
+f66_L09	1	+	M	B:-	gap
+f66_L09	2	o	M	B:-	gap
+f66_L09	3	6	H		agree
+f66_L09	4	x	H		agree
+f66_L09	5	X	M	B:x	differ
+f66_L09	6	g	H		agree
+f66_L09	7	E	H		agree
+f66_L09	8	r	H		agree
+f66_L09	9	o	H		agree
+f66_L09	10	T	M	B:z	differ
+f66_L09	11	///	M	B:111	differ
+f66_L09	12	q	H		agree
+f66_L09	13	y	H		agree
+f66_L09	14	pl	M	B:p	differ
+f66_L09	15	dbl	H		agree
+f66_L09	16	4	H		agree
+f66_L09	17	alpha	M	B:-	gap
+f66_L09	18	r	M	B:e	differ
+f66_L09	19	X	M	B:v	differ
+f66_L09	20	T	H		agree
+f66_L09	21	8	M	B:g	differ
+f66_L09	22	lam	M	B:x	differ
+f66_L09	23	r	H		agree
+f66_L09	24	o	H		agree
+f66_L09	25	dbl	H		agree
+f66_L09	26	s	M	A:-	gap
+f66_L09	27	5'	M	B:	differ
+f66_L09	28	c	M	B:l	differ
+f66_L09	29	del	H		agree
+f66_L09	30	v	H		agree
+f66_L09	31	n	H		agree
+f66_L09	32	dbl	H		agree
+f66_L09	33	y	H		agree
+f66_L09	34	q	H		agree
+f66_L09	35	pl	M	B:p	differ
+f66_L09	36	v	M		agree-flagged
+f66_L09	37	u	M	B:-	gap
+f66_L09	38	r	M	B:-	gap
+f66_L09	39	s	M	B:ur	differ
+f66_L09	40	o	M	B:so	differ
+f66_L09	41	d	M		agree-flagged
+f66_L09	42	pl	M		agree-flagged
+f66_L09	43	X	M	B:x	differ
+f66_L10	1	alpha	M	B:inT	differ
+f66_L10	2	o	H		agree
+f66_L10	3	n	H		agree
+f66_L10	4	6	M	B:b	differ
+f66_L10	5	q	H		agree
+f66_L10	6	g	H		agree
+f66_L10	7	c	H		agree
+f66_L10	8	9	M	B:q	differ
+f66_L10	9	7	H		agree
+f66_L10	10	f	M	B:p	differ
+f66_L10	11	d	M	B:del	differ
+f66_L10	12	o	H		agree
+f66_L10	13	pl	H		agree
+f66_L10	14	n	H		agree
+f66_L10	15	9	M	B:q	differ
+f66_L10	16	6	M	B:b	differ
+f66_L10	17	j	H		agree
+f66_L10	18	g	M	B:q	differ
+f66_L10	19	b	M	B:t	differ
+f66_L10	20	q	H		agree
+f66_L10	21	1	H		agree
+f66_L10	22	l	H		agree
+f66_L10	23	x	H		agree
+f66_L10	24	E	H		agree
+f66_L10	25	X	M	B:x	differ
+f66_L10	26	X	M	B:x	differ
+f66_L10	27	q	H		agree
+f66_L10	28	1	H		agree
+f66_L10	29	pl	M	A:-	gap
+f66_L10	30	q	M	B:m	differ
+f66_L10	31	m+	M	B:t	differ
+f66_L10	32	9	M	B:q	differ
+f66_L10	33	g	H		agree
+f66_L10	34	g	M	B:q	differ
+f66_L10	35	+	M	B:t	differ
+f66_L10	36	o	H		agree
+f66_L10	37	r	M		agree-flagged
+f66_L10	38	V	H		agree
+f66_L10	39	T	H		agree
+f66_L10	40	V+	M	B:inT+	differ
+f66_L11	1	dbl	H		agree
+f66_L11	2	v	H		agree
+f66_L11	3	c	M	B:r	differ
+f66_L11	4	o	H		agree
+f66_L11	5	r	M	B:k	differ
+f66_L11	6	j	M		agree-flagged
+f66_L11	7	5'	H		agree
+f66_L11	8	n	H		agree
+f66_L11	9	2+	M	B:-	gap
+f66_L11	10	d	M	B:-	gap
+f66_L11	11	2+	H		agree
+f66_L11	12	del	H		agree
+f66_L11	13	2	M	A:-	gap
+f66_L11	14	inT	M	B:+	differ
+f66_L11	15	l	H		agree
+f66_L11	16	x	H		agree
+f66_L11	17	oo+	M	B:oo	differ
+f66_L11	18	d	M		agree-flagged
+f66_L13	1	g	M	B:-	gap
+f66_L13	2	u	M	B:-	gap
+f66_L13	3	j	M	B:-	gap
+f66_L13	4	5'	M	B:-	gap
+f66_L13	5	42	H		agree
+f66_L13	6	//	M	B:-	gap
+f66_L13	7	v	H		agree
+f66_L13	8	e	H		agree
+f66_L13	9	E	H		agree
+f66_L13	10	theta+	M	B:+	differ
+f66_L13	11	pl	H		agree
+f66_L13	12	1	M	B:-	gap
+f66_L13	13	4	H		agree
+f66_L13	14	X	M	B:x	differ
+f66_L13	15	T	H		agree
+f66_L13	16	pl	M	B:x	differ
+f66_L13	17	r	H		agree
+f66_L13	18	o	H		agree
+f66_L13	19	q	H		agree
+f66_L13	20	L	M	B:-	gap
+f66_L13	21	5'	M	B:s'	differ
+f66_L13	22	tri+	M	B:o+	differ
+f66_L13	23	dbl	H		agree
+f66_L13	24	9	M	B:q	differ
+f66_L13	25	E	H		agree
+f66_L13	26	a	H		agree
+f66_L13	27	r	M	B:k	differ
+f66_L13	28	g	H		agree
+f66_L13	29	y	H		agree
+f66_L14	1	n	M	B:inT	differ
+f66_L14	2	c	M	B:o	differ
+f66_L14	3	9	M	B:q	differ
+f66_L14	4	6	M	B:b	differ
+f66_L14	5	j	M		agree-flagged
+f66_L14	6	5'	H		agree
+f66_L14	7	9	M	B:g	differ
+f66_L14	8	dbl	H		agree
+f66_L14	9	7	H		agree
+f66_L14	10	9	M	B:-	gap
+f66_L14	11	L	M	B:q	differ
+f66_L15	1	y	H		agree
+f66_L15	2	g	H		agree
+f66_L15	3	n	M	B:m	differ
+f66_L15	4	T	H		agree
+f66_L15	5	1	H		agree
+f66_L15	6	o	H		agree
+f66_L15	7	v	H		agree
+f66_L15	8	y	H		agree
+f66_L15	9	4+	M	B:A+	differ
+f66_L15	10	g	H		agree
+f66_L15	11	I	M	B:-	gap
+f66_L15	12	inT	H		agree
+f66_L15	13	1	M	A:-	gap
+f66_L15	14	12	H		agree
+f66_L15	15	oto	M	B:-	gap
+f66_L15	16	E	M	B:o+	differ
+f66_L15	17	+o	M	B:E+	differ
+f66_L15	18	y	H		agree
+f66_L15	19	9	H		agree
+f66_L15	20	6	H		agree
+f66_L15	21	9	M	A:-	gap
+f66_L15	22	9+	M	B:4+	differ
+f66_L15	23	l	H		agree
+f66_L15	24	x	H		agree
+f66_L15	25	x	H		agree
+f66_L15	26	e	H		agree
+f66_L15	27	m+	M	B:m	differ
+f66_L15	28	f	M	B:pl	differ
+f66_L15	29	T	H		agree
+f66_L15	30	8	H		agree
+f66_L15	31	z	M	A:-	gap
+f66_L16	1	del	M	B:-	gap
+f66_L16	2	e	M	B:-	gap
+f66_L16	3	r	M	B:E	differ
+f66_L16	4	M	H		agree
+f66_L16	5	=	M	B:o	differ
+f66_L16	6	1	M	B:10	differ
+f66_L16	7	d+	M	B:+	differ
+f66_L16	8	1	M	B:i	differ
+f66_L16	9	V	H		agree
+f66_L16	10	inT	M		agree-flagged
+f66_L17	1	10	M	B:-	gap
+f66_L17	2	o	M	B:oo	differ
+f66_L17	3	pl	H		agree
+f66_L17	4	5	H		agree
+f66_L17	5	x	H		agree
+f66_L17	6	X	M	B:-	gap
+f66_L17	7	9	M	B:-	gap
+f66_L17	8	4+	M	B:-	gap
+f66_L17	9	alpha	M	B:-	gap
+f66_L17	10	r	M	B:-	gap
+f66_L17	11	s	M	B:-	gap
+f66_L17	12	o	M	B:-	gap
+f66_L17	13	pl	M	B:-	gap
+f66_L17	14	c	M	B:x	differ
+f66_L17	15	I	M	B:g	differ
+f66_L17	16	4	H		agree
+f66_L17	17	inT	M	A:-	gap
+f66_L17	18	1	H		agree
+f66_L17	19	l	M	A:-	gap
+f66_L17	20	4	M	B:14	differ
+f66_L17	21	n	M	B:7	differ
+f66_L17	22	50	H		agree
+f66_L17	23	g	H		agree
+f66_L18	1	10	M	B:oo	differ
+f66_L18	2	x	H		agree
+f66_L18	3	x	H		agree
+f66_L18	4	n	M	B:q	differ
+f66_L18	5	g	H		agree
+f66_L18	6	y	H		agree
+f66_L18	7	V	H		agree
+f66_L18	8	del+	H		agree
+f66_L18	9	X	M	B:x	differ
+f66_L20	1	y	M	B:z	differ
+f66_L20	2	3	H		agree
+f66_L20	3	L	M	B:l	differ
+f66_L20	4	o	H		agree
+f66_L20	5	e	M	B:inT	differ
+f66_L20	6	X	M	B:x	differ
+f66_L20	7	y	H		agree
+f66_L20	8	9	M	B:g	differ
+f66_L20	9	7	M	B:5	differ
+f66_L20	10	q	H		agree
+f66_L20	11	r	M	B:x	differ
+f66_L20	12	alpha	M	B:inT	differ
+f66_L20	13	T	M	B:+	differ
+f66_L20	14	tt	M	B:dbl	differ
+f66_L20	15	X	M	B:x	differ
+f66_L20	16	v	H		agree
+f66_L20	17	w	M	B:w+	differ
+f66_L20	18	4+	M	B:pl	differ
+f66_L20	19	f'	M	B:5'	differ
+f66_L20	20	x	H		agree
+f66_L20	21	g	H		agree
+f66_L20	22	del	M	B:-	gap
+f66_L20	23	inT	M	B:o#	differ
+f66_L20	24	j	M		agree-flagged
+f66_L20	25	T	H		agree
+f66_L21	1	X	M		agree-flagged
+f66_L21	2	9	M		agree-flagged
+f66_L21	3	E	M	B:-	gap
+f66_L21	4	I	M	B:L	differ
+f66_L21	5	T	H		agree
+f66_L21	6	L	H		agree
+f66_L21	7	E	H		agree
+f66_L21	8	X	H		agree

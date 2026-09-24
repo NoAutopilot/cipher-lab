@@ -1,0 +1,152 @@
+line	col	A	B	flagged	crop
+f66_L07	4	ls	-		images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	13	-	A		images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	15	pl	p		images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	19	u	dbl		images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	20	9	q		images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	21	2	z		images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	23	v+	-		images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	25	4+	A		images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	28	alpha		B	images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	30	x	r	B	images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	31	pl	phi		images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	34	4+	u	B	images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	35	X	x		images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	38	pl	-		images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	39	h	phi	AB	images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L07	41	E	3		images/f66_L07_s1.jpg,images/f66_L07_s2.jpg
+f66_L08	1	v	-		images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L08	2	n	-		images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L08	3	4	-	A	images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L08	8	++	dbl		images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L08	10	5'	s		images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L08	11	I	2	B	images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L08	13	X	-		images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L08	14	r	-		images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L08	15	d	x	A	images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L08	16	4+	x		images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L08	17	b	o	B	images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L08	18	2	r	B	images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L08	19	dbl	?+		images/f66_L08_s1.jpg,images/f66_L08_s2.jpg
+f66_L09	1	+	-		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	2	o	-		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	5	X	x		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	10	T	z		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	11	///	111		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	14	pl	p		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	17	alpha	-		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	18	r	e		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	19	X	v	B	images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	21	8	g		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	22	lam	x	B	images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	26	-	s	B	images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	27	5'		B	images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	28	c	l	B	images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	35	pl	p		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	37	u	-		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	38	r	-		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	39	s	ur	B	images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	40	o	so		images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L09	43	X	x	B	images/f66_L09_s1.jpg,images/f66_L09_s2.jpg
+f66_L10	1	alpha	inT		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	4	6	b		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	8	9	q		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	10	f	p		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	11	d	del		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	15	9	q		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	16	6	b		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	18	g	q		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	19	b	t		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	25	X	x		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	26	X	x		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	29	-	pl		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	30	q	m		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	31	m+	t	B	images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	32	9	q		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	34	g	q		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	35	+	t		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L10	40	V+	inT+		images/f66_L10_s1.jpg,images/f66_L10_s2.jpg
+f66_L11	3	c	r		images/f66_L11_s1.jpg,images/f66_L11_s2.jpg
+f66_L11	5	r	k		images/f66_L11_s1.jpg,images/f66_L11_s2.jpg
+f66_L11	9	2+	-		images/f66_L11_s1.jpg,images/f66_L11_s2.jpg
+f66_L11	10	d	-		images/f66_L11_s1.jpg,images/f66_L11_s2.jpg
+f66_L11	13	-	2		images/f66_L11_s1.jpg,images/f66_L11_s2.jpg
+f66_L11	14	inT	+		images/f66_L11_s1.jpg,images/f66_L11_s2.jpg
+f66_L11	17	oo+	oo	B	images/f66_L11_s1.jpg,images/f66_L11_s2.jpg
+f66_L13	1	g	-	A	images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	2	u	-	A	images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	3	j	-		images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	4	5'	-		images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	6	//	-		images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	10	theta+	+	B	images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	12	1	-		images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	14	X	x		images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	16	pl	x		images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	20	L	-		images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	21	5'	s'		images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	22	tri+	o+		images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	24	9	q		images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L13	27	r	k		images/f66_L13_s1.jpg,images/f66_L13_s2.jpg
+f66_L14	1	n	inT	B	images/f66_L14_s1.jpg,images/f66_L14_s2.jpg
+f66_L14	2	c	o		images/f66_L14_s1.jpg,images/f66_L14_s2.jpg
+f66_L14	3	9	q		images/f66_L14_s1.jpg,images/f66_L14_s2.jpg
+f66_L14	4	6	b		images/f66_L14_s1.jpg,images/f66_L14_s2.jpg
+f66_L14	7	9	g		images/f66_L14_s1.jpg,images/f66_L14_s2.jpg
+f66_L14	10	9	-		images/f66_L14_s1.jpg,images/f66_L14_s2.jpg
+f66_L14	11	L	q		images/f66_L14_s1.jpg,images/f66_L14_s2.jpg
+f66_L15	3	n	m		images/f66_L15_s1.jpg,images/f66_L15_s2.jpg
+f66_L15	9	4+	A+		images/f66_L15_s1.jpg,images/f66_L15_s2.jpg
+f66_L15	11	I	-		images/f66_L15_s1.jpg,images/f66_L15_s2.jpg
+f66_L15	13	-	1		images/f66_L15_s1.jpg,images/f66_L15_s2.jpg
+f66_L15	15	oto	-		images/f66_L15_s1.jpg,images/f66_L15_s2.jpg
+f66_L15	16	E	o+		images/f66_L15_s1.jpg,images/f66_L15_s2.jpg
+f66_L15	17	+o	E+		images/f66_L15_s1.jpg,images/f66_L15_s2.jpg
+f66_L15	21	-	9		images/f66_L15_s1.jpg,images/f66_L15_s2.jpg
+f66_L15	22	9+	4+		images/f66_L15_s1.jpg,images/f66_L15_s2.jpg
+f66_L15	27	m+	m		images/f66_L15_s1.jpg,images/f66_L15_s2.jpg
+f66_L15	28	f	pl		images/f66_L15_s1.jpg,images/f66_L15_s2.jpg
+f66_L15	31	-	z	B	images/f66_L15_s1.jpg,images/f66_L15_s2.jpg
+f66_L16	1	del	-		images/f66_L16_s1.jpg,images/f66_L16_s2.jpg
+f66_L16	2	e	-		images/f66_L16_s1.jpg,images/f66_L16_s2.jpg
+f66_L16	3	r	E		images/f66_L16_s1.jpg,images/f66_L16_s2.jpg
+f66_L16	5	=	o		images/f66_L16_s1.jpg,images/f66_L16_s2.jpg
+f66_L16	6	1	10		images/f66_L16_s1.jpg,images/f66_L16_s2.jpg
+f66_L16	7	d+	+	B	images/f66_L16_s1.jpg,images/f66_L16_s2.jpg
+f66_L16	8	1	i		images/f66_L16_s1.jpg,images/f66_L16_s2.jpg
+f66_L17	1	10	-		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	2	o	oo	B	images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	6	X	-		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	7	9	-		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	8	4+	-		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	9	alpha	-		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	10	r	-		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	11	s	-		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	12	o	-		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	13	pl	-		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	14	c	x		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	15	I	g		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	17	-	inT	B	images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	19	-	l		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	20	4	14		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L17	21	n	7		images/f66_L17_s1.jpg,images/f66_L17_s2.jpg
+f66_L18	1	10	oo	B	images/f66_L18_s1.jpg,images/f66_L18_s2.jpg
+f66_L18	4	n	q		images/f66_L18_s1.jpg,images/f66_L18_s2.jpg
+f66_L18	9	X	x		images/f66_L18_s1.jpg,images/f66_L18_s2.jpg
+f66_L20	1	y	z		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	3	L	l		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	5	e	inT	B	images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	6	X	x		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	8	9	g		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	9	7	5	B	images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	11	r	x		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	12	alpha	inT		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	13	T	+		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	14	tt	dbl		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	15	X	x		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	17	w	w+		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	18	4+	pl		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	19	f'	5'		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	22	del	-		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L20	23	inT	o#		images/f66_L20_s1.jpg,images/f66_L20_s2.jpg
+f66_L21	3	E	-		images/f66_L21_s1.jpg,images/f66_L21_s2.jpg
+f66_L21	4	I	L		images/f66_L21_s1.jpg,images/f66_L21_s2.jpg

@@ -13,7 +13,7 @@ do not write the overlap twice). Tokens:
 - Cipher signs, one token each, left to right, using these tags:
   - figures: write the number as written; digits written close together as one group are ONE token (`10`, `42`,
     `20`); a lone digit is its own token (`4`, `7`, `9`, `3`, `2`, `1`, `6`, `8`).
-  - crosses: `+` single cross; `++` one upright with two crossbars; `#` two uprights with two crossbars;
+  - crosses: `+` single cross; `++` one upright with two crossbars; `#` two uprights with two crossbars (renamed `dbl` at reconciliation, since a leading '#' reads as a comment in key.tsv);
     a letter or digit carrying a cross joined to it: base then `+`, e.g. `2+ 4+ 8+ a+ g+ d+ u+ q+`.
   - Latin letter shapes as seen: `a b c d e f g h i l m n o p q r s t u v x y z` and capitals
     `A B C E F G H I L M N O P Q R S T V X Z`.

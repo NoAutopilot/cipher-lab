@@ -1,0 +1,82 @@
+# key.tsv -- cipher no.60 (Satoshi Tomokiyo's reconstruction and numbering, BnF fr.3995 ff.109-111,
+# cryptiana.web.fc2.com henryiv2.htm), from Daniel Bourdeau's transcription nevers1593/key60.txt
+# (github.com/dbourdeau/cyphersolver @a0d5a07, text CC BY 4.0), mapped to this target's ASCII sign tags
+# (sign_guide.md) by LANE R5 F2, 24 Sept 2026. Grade H = one table value; M = two table entries or a crib/atlas value.
+sign	value	grade	source
+dbl	n|m	M	key60 f.111 col2 '# ß'; ß = n (f.111 col1) or m (f.109 sheet)
++	nostre	H	f.111 col2 '+ nre'
+++	u	H	f.111 col1 '++ u'
+2+	p|i	M	f.111 '2+ p'; crib f.151 also i
+4+	bien	H	f.111 col1 '4+ bien'
+8+	tous	H	f.111 col1 '8+ tous'
+d+	i	H	f.111 col1
+u+	aussi	H	f.111 col1
+g+	gu	H	f.111 col1
+a+	g|J	M	f.109 sheet g; f.111 'a+ J'
+v+	p	H	f.109 sheet
+q+	village	H	f.111 col4
+9+	q	H	f.109 sheet
+V+	g	H	f.111 col1
+X+	se	H	f.111 col2
+oo+	le Roy	H	f.111 col1
+tri+	Mr de Fresne	H	f.111 col3
+1	n	M	crib f.151 '1 n(?)'
+2	sa	H	f.110v col3 '2 -> sa'
+3	ri|z	M	f.111 col3 '3 ri'; f.110v '3 -> z'
+4	x|i	M	f.110v '4 x'; atlas 4 = i
+5	comme	H	f.110v '5 comme'
+6	di|s	M	f.110v '6 di'; crib 6 = s
+7	p|s	M	f.110v '7 p'; f.111 col3 '7 s'
+8	t	H	f.110v '8 t'
+9	e|do	M	f.109 sheet e; f.110v '9 do'
+10	p	H	f.110v '10 p'
+12	du	H	f.110v '12 du'
+20	u	H	f.110v '20 u'
+42	pe	H	f.110v '42 pe'
+50	ni	H	f.110v '50 ni'
+b	s	H	f.110v col3 'b c r y -> s'
+c	s|a	M	f.110v col3 both 's' and 'c -> a'
+d	be|a	M	f.110v col4 'd be'; col3 'd~ -> a'
+e	e|to	M	f.110v col3 'e -> e'; col4 'e to'
+f	e	M	f.110v col3 'f and e -> e'; col4 'f Strasbourg'
+g	de|f	M	f.110v col4 'g de'; col3 'g -> f'
+l	cu	H	f.110v col4
+m	m|de	M	f.110v col3 'm -> m'; col4 'm de'
+n	et	M	f.110v col4 'n et'; col3 'n~ -> a'
+o	a	H	f.110v col3 'o, x, n~ -> a'
+p	da	H	f.110v col4
+q	te	H	f.110v col4
+r	s	H	f.110v col3
+s	n	H	f.110v col4 's n'
+t	ru	H	f.111 col1
+u	u	H	f.111 col3 'u u'
+v	li|lo	M	f.111 col4 'v li'
+w	fu|j'ay	M	f.111 col3 'w fu'; col4 'w j'ay'
+x	a	H	f.110v col3; f.109 sheet a
+y	s	H	f.110v col3; f.109 sheet s
+E	re	H	f.111 col3
+L	f	H	f.110v col3
+M	prelatz	H	f.111 col3
+R	Duc de Mantoue	H	f.111 col3
+T	n	M	atlas/crib T = n; f.110v 'T T(?)'
+V	lo	H	f.110v col3
+X	o	M	f.111 col2 'X o'; f.110v 'X Prince de Conty'
+pi	o	H	f.111 col3
+lam	la	H	f.111 col4
+del	a	H	f.110v col3 'd~ (∂) -> a'
+alpha	co	M	f.111 col3 alpha'' co, alpha Champagne; crib ∝ = co
+inT	n	H	f.109 sheet n; crib
+pl	so	M	crib/atlas ꝑ = so; f.110v 'p~ -> l'
+ls	m	H	f.110v col3 'ſ -> m'
+oo	b	H	f.109 sheet b
+tri	o	H	f.111 col3 'Δ o'
+phi	Duc de Ferrare|ca	M	f.111 col2 phi; col4 φ ca
+theta	des	H	f.111 col1
+//	c	H	f.111 col2
+///	r	H	f.111 col2
+=	d	H	f.111 col2
++o	le	H	f.111 col2
+oto	y	H	f.111 col2
+o-	tu	H	f.111 col3
+tt	po	H	f.110v col3
+ff	g|paris	M	f.110v col3 'ff -> g', 'ff' -> paris'

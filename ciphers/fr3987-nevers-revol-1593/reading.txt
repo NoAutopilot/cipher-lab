@@ -1,0 +1,15 @@
+# Mechanical reading of ciphertext.tsv with key.tsv (key no.60). One value per sign; a|b = two table entries;
+# [sign] = sign not in the key. Grades per token in reading_tokens.tsv (H key, M uncertain sign or value, U unkeyed).
+f66_L07	tous f [I] m a de o p n n sa x [A] n so n a n u e sa x p e bien de la co n a so a a bien o n et so [h] di re u
+f66_L08	li et x n [j] p [h] u s [5'] [I] [j] o s be bien s sa n
+f66_L09	nostre a di a o de re s a n r te s so n x co s o n t la s a n n [5'] s a li et n s te so li u s n a be so o
+f66_L10	co a et di te de s e p e be a so et e di [j] de s te n cu a re o o te n so te [m+] e de de nostre a s lo n g
+f66_L11	n li s a s [j] [5'] et p be p a sa n cu a le Roy be
+f66_L13	de u [j] [5'] pe c li e re [theta+] so n x o n so s a te f [5'] Mr de Fresne n e re [a] s de s
+f66_L14	et s e di [j] [5'] e n p e f
+f66_L15	s de et n n a li s bien de [I] n n du y re le s e di e q cu a a e [m+] e n t [z]
+f66_L16	a e s prelatz d n i n lo n
+f66_L17	p a so comme a o e bien co s n a so s [I] x n n cu x et ni de
+f66_L18	p a a et de s lo [del+] o
+f66_L20	s ri f a e o s e p te s co n po o li fu bien [f'] a de a n [j] n
+f66_L21	o e re [I] n f re o
