@@ -414,3 +414,41 @@ print or phrase search for "avecques le peu de perte", because that is the verif
 Follow-up (not done): two blind passes over f.36r lines 2-4 (crop native_f71 at y ≈ 1950-2450), then a
 reconciliation into ciphertext_f36.tsv as lines 36R2-36R4.
 
+
+## Second reader f.35, 24 Sept 2026
+
+Blind pass C (LANE V, second reader). The reader re-read f.35r-v sign by sign from `passC_crops/` (made by
+`crop_passC.py` from native_f69/native_f70 on disk; the crops are not committed, so rerun the script to get
+them). Only key.tsv's sign inventory and Tomokiyo's key drawing (for shapes) were consulted. ciphertext.txt,
+the passes, reconciliation.md and the reading files were opened only after `passC_f35.tsv` was committed
+(7f41afc). Pass C holds 642 cipher signs (509 H, 79 M, 54 L) and 150 clear-hand words in 37 lines plus the
+V18 interlinear gloss.
+
+**Agreement.** A per-line sequence alignment over cipher signs only, with a naming crosswalk (listed below),
+matches 558 of 643, or **86.8%**. Before the crosswalk, 82.0%. Disagreement is concentrated in R2, R4, R6,
+V1, V28 and V29 (each ≤ 0.80 line agreement). The other lines score ≥ 0.82, and most are ≥ 0.88.
+The crosswalk renames labels only; both readings already separate these shapes. It covers: pass C plain small
+2 = committed `r2`; pass C Q-shaped script 2 = committed `LRD`; the &-shape with a bar = `x8`; the crossed Z/R
+with a small o = `xk`; the D-bowl sign = `Pbar`; T or 7 with a ring above = `ringT`/`ring7`.
+
+**Proposed changes: 12** (`passC_proposed_changes_f35.tsv`; not applied):
+- R4 pos 4: `al` → `LRD`. The image shows the large Q-shaped sign, identical to every sign committed as
+  `LRD` on f.35v. This change is well supported.
+- 7 × `eps` → `s9` (V4 pos 6 and 10, V6 pos 6, V23 pos 23, V28 pos 11, V29 pos 3 and 22). Zoomed to 2x,
+  these are a single round bowl on a straight descender (a q-shape). They differ from the two-lobed epsilon
+  with stem on the same lines. The committed text reads both shapes as `eps`. The change moves the value
+  from r to s at those places, so the reconciler should test it against the reading.
+- R4 pos 21: `B` → `S`. R6 pos 19: `pd` → `fd`. R6 pos 22: `xinf` → `x88`. V26 pos 18: `xinf` → `O`.
+  All four are rated M.
+
+Where pass C was wrong: at 2x, pass C's readings at R4 pos 19, V9 pos 3-6, V12 pos 22 and V2 pos 18 were
+misreadings, and the committed signs stand there.
+
+Open questions (no change proposed):
+- Is the plain small "2" the r cell, as committed? Tomokiyo's drawing shows a plain 2 among the nulls and a
+  Q-shaped sign in the r column. This is a key question, not a transcription one.
+- The same tall long-s stroke is read `ls` in some places and `loop` (null) in others (5 rows).
+- An arc drawn over the next sign is read as one `circ` or as two signs, loop + sign (R7, V1, V3).
+- The clear word read "bien" (4×) looks like "huy" in the image.
+
+Suggestion (not done): a Sonnet worker applies the accepted rows and reruns `decode.py --check`.

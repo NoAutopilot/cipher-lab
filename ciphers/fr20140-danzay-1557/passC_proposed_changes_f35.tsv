@@ -1,0 +1,108 @@
+# Pass C (blind second reader) vs ciphertext.txt, f.35r-v, 24 Sept 2026. Only rows where the two differ after a naming crosswalk (see NOTES.md "Second reader f.35"). yours = pass C sign mapped to the committed code names. NOT applied.
+line	index	committed	yours	image_evidence	proposed_change
+R1	-	(none)	w:que	clear-hand word; spelling/reading difference only, not a cipher sign	no
+R1	3	st	xst	not re-examined at 2x; pass C confidence M; barred asterisk/yen shape	no
+R2	7	ringT	T	not re-examined at 2x; pass C confidence M; small o written above	no
+R2	12	fd	q4	not re-examined at 2x; pass C confidence L; 4-shape crossed like f; could be fd	no
+R2	13	ven	Y	not re-examined at 2x; pass C confidence L; Y with looped foot; could be ven	no
+R2	15	hk	bd	not re-examined at 2x; pass C confidence M; lozenge with tall ascender	no
+R2	16	dia	(none)	sign present in one reading only; not re-examined (pass C -)	no (recheck)
+R2	25	hk	del	not re-examined at 2x; pass C confidence L; round d; could be bd	no
+R3	13	w:paour	w:pour	clear-hand word; spelling/reading difference only, not a cipher sign	no
+R3	16	eps	s9	pass C L: c-bowl/curl form, not clearly the q-shape; left as committed	no
+R4	4	al	LRD	Q-shaped sign (large loop, tail to right), identical to the sign committed as LRD in V05, V11, V12, V26, V28, V29; not the alpha	yes (H)
+R4	19	x	ae	zoom: committed x is right (pass C misread as ae)	no
+R4	21	B	S	dark rounded S with two bars, as the committed S in V03/V08; no ß ascender loop	yes (M)
+R4	24	dia	bd	not re-examined at 2x; pass C confidence L; lozenge with stem; bd or dia	no
+R5	9	ls	loop	same tall long-s stroke; the difference is which key cell (long s vs null loop), not the glyph	no (key question)
+R5	12	phi	Pbar	not re-examined at 2x; pass C confidence L; vertical with cross and D-shaped bowl; not matched in key	no
+R5	14	eps	s9	pass C L: c-bowl/curl form, not clearly the q-shape; left as committed	no
+R5	18	w:y	w:en	clear-hand word; spelling/reading difference only, not a cipher sign	no
+R6	3	ls	loop	same tall long-s stroke; the difference is which key cell (long s vs null loop), not the glyph	no (key question)
+R6	10	llt	pd~	not re-examined at 2x; pass C confidence L; pound-t with tilde BELOW	no
+R6	14	dia	bd	not re-examined at 2x; pass C confidence L; lozenge with ascender	no
+R6	19	pd	fd	f-shape with long descender after lambda (fd), not the l-with-bar t (pd)	yes (M)
+R6	22	xinf	x88	double loop with two vertical strokes rising above and a horizontal bar: the x88 shape as in R03, V25; no infinity form	yes (M)
+R7	10	circ	loop	arc drawn over the next sign: committed reads one sign (circ), pass C two (loop + sign); tokenisation, not settled by the image	no (flag)
+R7	-	(none)	al	sign present in one reading only; not re-examined (pass C H)	no (recheck)
+R7	19	mu	mc	not re-examined at 2x; pass C confidence L; inverted-v with lead-in stroke, m-like	no
+R8	9	x	(none)	sign present in one reading only; not re-examined (pass C -)	no (recheck)
+V1	6	tss	pd~	not re-examined at 2x; pass C confidence L; pound-t with tilde below	no
+V1	-	(none)	loop	sign present in one reading only; not re-examined (pass C L)	no (recheck)
+V1	16	x	xb	not re-examined at 2x; pass C confidence H	no
+V1	18	circ	al	arc drawn over the next sign: committed reads one sign (circ), pass C two (loop + sign); tokenisation, not settled by the image	no (flag)
+V1	24	ls	loop	same tall long-s stroke; the difference is which key cell (long s vs null loop), not the glyph	no (key question)
+V2	18	hk	loop	zoom: hook with hairline loop; committed hk plausible	no
+V3	8	circ	loop	arc drawn over the next sign: committed reads one sign (circ), pass C two (loop + sign); tokenisation, not settled by the image	no (flag)
+V3	-	(none)	q4	sign present in one reading only; not re-examined (pass C L)	no (recheck)
+V3	16	pd	lsx	not re-examined at 2x; pass C confidence M; 1-shape with crossbar (long s)	no
+V3	18	w:bien	w:huy	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V3	25	hp	h9	not re-examined at 2x; pass C confidence M; g/9-shape, Tomokiyo h col row 1, not in key.tsv	no
+V4	2	w:toujours	w:tousiours	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V4	6	eps	s9	zoom of passC_crops V04/V06/V29 at 2x: single round bowl on a straight descender (q-shape), distinct from the two-lobed epsilon-with-stem beside it on V06	yes (H)
+V4	10	eps	s9	zoom of passC_crops V04/V06/V29 at 2x: single round bowl on a straight descender (q-shape), distinct from the two-lobed epsilon-with-stem beside it on V06	yes (H)
+V4	13	llt	pd	not re-examined at 2x; pass C confidence L; pound-t with looped tail below	no
+V5	4	Zl	LRD	not re-examined at 2x; pass C confidence L; small script L with crossbar	no
+V5	-	(none)	loop	sign present in one reading only; not re-examined (pass C L)	no (recheck)
+V5	18	loop	x8	not re-examined at 2x; pass C confidence L; &-shape	no
+V5	19	shat	sha	not re-examined at 2x; pass C confidence H	no
+V6	6	eps	s9	zoom of passC_crops V04/V06/V29 at 2x: single round bowl on a straight descender (q-shape), distinct from the two-lobed epsilon-with-stem beside it on V06	yes (H)
+V6	16	pdx	ls	not re-examined at 2x; pass C confidence H	no
+V6	20	w:volonture	w:volontiers	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V7	11	xN	xA	not re-examined at 2x; pass C confidence H	no
+V7	14	w:requis	w:receue	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V8	17	xM	xA	not re-examined at 2x; pass C confidence H	no
+V9	-	(none)	H	sign present in one reading only; not re-examined (pass C M)	no (recheck)
+V9	-	(none)	mu	sign present in one reading only; not re-examined (pass C H)	no (recheck)
+V9	-	(none)	xA	sign present in one reading only; not re-examined (pass C H)	no (recheck)
+V9	4	mu	(none)	zoom: committed pd x ae mu xN xst is right; pass C misaligned/misread	no
+V9	5	xN	(none)	as V09 pos 4	no
+V9	6	xst	(none)	as V09 pos 4	no
+V9	11	xM	xA	not re-examined at 2x; pass C confidence L; large looped M without clear crossbar	no
+V10	1	bl	b6	not re-examined at 2x; pass C confidence H	no
+V10	13	Zl	xk	not re-examined at 2x; pass C confidence M; Z/R with bar and small o	no
+V11	10	w:bien	w:huy	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V12	22	mu	iii	zoom: one u-shape with lead stroke (mu); pass C read iii wrongly	no
+V12	27	loop	s9	pass C L: c-bowl/curl form, not clearly the q-shape; left as committed	no
+V13	10	w:bien	w:huy	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V14	1	w:fera	w:sera	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V14	5	w:Cependant	w:dependant	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V14	7	w:bien	w:huy	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V15	4	w:peussiez	w:puissiez	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V16	12	w:Roy	w:loy	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V17	1	w:moy	w:mey	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V17	20	fdx	pdx	not re-examined at 2x; pass C confidence M; with stroke through descender	no
+V18	7	rx	eps	not re-examined at 2x; pass C confidence L; small epsilon, stem unclear	no
+V18	-	(none)	del	sign present in one reading only; not re-examined (pass C L)	no (recheck)
+V18	16	loop	hk	not re-examined at 2x; pass C confidence L; J-shape with dot either side	no
+V18g	2	O	del	not re-examined at 2x; pass C confidence H	no
+V19	2	pd	(none)	sign present in one reading only; not re-examined (pass C -)	no (recheck)
+V20	2	fdl	fd	not re-examined at 2x; pass C confidence L; heavy f with tick/tilde below; could be pd with tilde	no
+V20	10	bbar	bd	not re-examined at 2x; pass C confidence M; lozenge with tall double stem	no
+V20	18	w:tels	w:par	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V21	4	w:tenyr	w:temps	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V23	4	loop	s9	pass C L: c-bowl/curl form, not clearly the q-shape; left as committed	no
+V23	20	dt	et	not re-examined at 2x; pass C confidence H	no
+V23	23	eps	s9	bowl-left on straight descender (pass C M)	yes (M)
+V24	11	ls	loop	same tall long-s stroke; the difference is which key cell (long s vs null loop), not the glyph	no (key question)
+V24	13	xN	xA	not re-examined at 2x; pass C confidence H	no
+V26	3	fdl	lsx	not re-examined at 2x; pass C confidence M; tall long s crossed at foot	no
+V26	18	xinf	O	heavy closed oval with an inner stroke, as the committed O in R05; not a crossed double loop	yes (M)
+V26	22	g8	x8	not re-examined at 2x; pass C confidence H	no
+V26	28	g7	ring7	not re-examined at 2x; pass C confidence L; no o above	no
+V27	5	w:de	(none)	clear-hand word; spelling/reading difference only, not a cipher sign	no
+V27	10	loop	s9	pass C L: c-bowl/curl form, not clearly the q-shape; left as committed	no
+V27	20	fdx	fd	not re-examined at 2x; pass C confidence H	no
+V27	23	llam	lam	not re-examined at 2x; pass C confidence H	no
+V28	10	q4	g7	not re-examined at 2x; pass C confidence L; small 7	no
+V28	11	eps	s9	q-shape: one bowl on straight descender (pass C H), same form as V04/V06	yes (M)
+V28	12	bl	b6	not re-examined at 2x; pass C confidence H	no
+V28	16	g8	x8	not re-examined at 2x; pass C confidence H	no
+V28	25	rt	llt	not re-examined at 2x; pass C confidence M; pound-t with tilde above	no
+V28	27	loop	s9	pass C L: c-bowl/curl form, not clearly the q-shape; left as committed	no
+V29	3	eps	s9	zoom of passC_crops V04/V06/V29 at 2x: single round bowl on a straight descender (q-shape), distinct from the two-lobed epsilon-with-stem beside it on V06	yes (H)
+V29	4	ep	rt	not re-examined at 2x; pass C confidence L; small r/c-hook with tilde above	no
+V29	7	ae	xst	not re-examined at 2x; pass C confidence L; dark x with cross; could be ae	no
+V29	8	a1	pi	not re-examined at 2x; pass C confidence L; omega-like with curl beneath	no
+V29	22	eps	s9	q-shape: one bowl on straight descender (pass C H), same form as V29 pos 3	yes (M)
+V29	29	xk	LRD	not re-examined at 2x; pass C confidence L; large L/Z with e; le sign or LRD	no
