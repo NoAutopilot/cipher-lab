@@ -1,69 +1,365 @@
 {
-  "ark": "btv1b52510561g",
-  "item": "key leaves folio 50v-53v (canvases f104-f110)",
-  "images": [
-    {
-      "file": "canvas104_folio50v.jpg",
-      "canvas": "104",
-      "folio": "50v",
-      "ark": "btv1b52510561g",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f104/full/1500,/0/default.jpg",
-      "bytes": 330489,
-      "fetched": "2026-09-24"
-    },
-    {
-      "file": "canvas105_folio51r.jpg",
-      "canvas": "105",
-      "folio": "51r",
-      "ark": "btv1b52510561g",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f105/full/1500,/0/default.jpg",
-      "bytes": 366205,
-      "fetched": "2026-09-24"
-    },
-    {
-      "file": "canvas106_folio51v.jpg",
-      "canvas": "106",
-      "folio": "51v",
-      "ark": "btv1b52510561g",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f106/full/1500,/0/default.jpg",
-      "bytes": 292748,
-      "fetched": "2026-09-24"
-    },
-    {
-      "file": "canvas107_folio52r.jpg",
-      "canvas": "107",
-      "folio": "52r",
-      "ark": "btv1b52510561g",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f107/full/1500,/0/default.jpg",
-      "bytes": 338942,
-      "fetched": "2026-09-24"
-    },
-    {
-      "file": "canvas108_folio52v.jpg",
-      "canvas": "108",
-      "folio": "52v",
-      "ark": "btv1b52510561g",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f108/full/1500,/0/default.jpg",
-      "bytes": 305156,
-      "fetched": "2026-09-24"
-    },
-    {
-      "file": "canvas109_folio53r.jpg",
-      "canvas": "109",
-      "folio": "53r",
-      "ark": "btv1b52510561g",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f109/full/1500,/0/default.jpg",
-      "bytes": 319272,
-      "fetched": "2026-09-24"
-    },
-    {
-      "file": "canvas110_folio53v.jpg",
-      "canvas": "110",
-      "folio": "53v",
-      "ark": "btv1b52510561g",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f110/full/1500,/0/default.jpg",
-      "bytes": 304745,
-      "fetched": "2026-09-24"
-    }
-  ]
+ "ark": "btv1b52510561g",
+ "item": "key leaves folio 50v-53v (canvases f104-f110)",
+ "images": [
+  {
+   "file": "canvas104_folio50v.jpg",
+   "canvas": "104",
+   "folio": "50v",
+   "ark": "btv1b52510561g",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f104/full/1500,/0/default.jpg",
+   "bytes": 330489,
+   "fetched": "2026-09-24"
+  },
+  {
+   "file": "canvas105_folio51r.jpg",
+   "canvas": "105",
+   "folio": "51r",
+   "ark": "btv1b52510561g",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f105/full/1500,/0/default.jpg",
+   "bytes": 366205,
+   "fetched": "2026-09-24"
+  },
+  {
+   "file": "canvas106_folio51v.jpg",
+   "canvas": "106",
+   "folio": "51v",
+   "ark": "btv1b52510561g",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f106/full/1500,/0/default.jpg",
+   "bytes": 292748,
+   "fetched": "2026-09-24"
+  },
+  {
+   "file": "canvas107_folio52r.jpg",
+   "canvas": "107",
+   "folio": "52r",
+   "ark": "btv1b52510561g",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f107/full/1500,/0/default.jpg",
+   "bytes": 338942,
+   "fetched": "2026-09-24"
+  },
+  {
+   "file": "canvas108_folio52v.jpg",
+   "canvas": "108",
+   "folio": "52v",
+   "ark": "btv1b52510561g",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f108/full/1500,/0/default.jpg",
+   "bytes": 305156,
+   "fetched": "2026-09-24"
+  },
+  {
+   "file": "canvas109_folio53r.jpg",
+   "canvas": "109",
+   "folio": "53r",
+   "ark": "btv1b52510561g",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f109/full/1500,/0/default.jpg",
+   "bytes": 319272,
+   "fetched": "2026-09-24"
+  },
+  {
+   "file": "canvas110_folio53v.jpg",
+   "canvas": "110",
+   "folio": "53v",
+   "ark": "btv1b52510561g",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52510561g/f110/full/1500,/0/default.jpg",
+   "bytes": 304745,
+   "fetched": "2026-09-24"
+  }
+ ],
+ "iiif_lines": [
+  {
+   "crop": "f104_L01.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    775,
+    1480,
+    860
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L02.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    860,
+    1480,
+    959
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L03.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    959,
+    1480,
+    1052
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L04.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    1052,
+    1480,
+    1134
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L05.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    1134,
+    1480,
+    1238
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L06.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    1238,
+    1480,
+    1339
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L07.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    1339,
+    1480,
+    1423
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L08.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    1423,
+    1480,
+    1502
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L09.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    1502,
+    1480,
+    1586
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L10.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    1586,
+    1480,
+    1668
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L11.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    1668,
+    1480,
+    1752
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L12.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    1752,
+    1480,
+    1843
+   ],
+   "lines_in_crop": 1,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L13.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    1843,
+    1480,
+    2024
+   ],
+   "lines_in_crop": 1,
+   "band": 13,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f104_L14.jpg",
+   "source_url": "",
+   "source_file": "canvas104_folio50v.jpg",
+   "box": [
+    20,
+    2024,
+    1480,
+    2200
+   ],
+   "lines_in_crop": 1,
+   "band": 14,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 84,
+    "distance": 58,
+    "prominence": 80.4
+   },
+   "date": "24 Sep 2026"
+  }
+ ]
 }
