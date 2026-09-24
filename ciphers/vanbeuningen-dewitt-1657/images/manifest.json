@@ -1,0 +1,15 @@
+{
+  "source": "printed edition page image (Brieven aan Johan de Witt, Japikse ed., retroboeken viewer), not the Nationaal Archief manuscript",
+  "host": "resources.huygens.knaw.nl",
+  "fetched": "2026-09-24",
+  "images": [
+    {
+      "file": "dewitt_01_405.jpg",
+      "edition": "Brieven aan Johan de Witt, Japikse ed., Deel 1",
+      "printed_page": 405,
+      "content": "Van Beuningen circle letter, 19/29 Sep 1657 (a copy not in Van Beuningen's own hand); footnote states the same letter also survives as a separate unsolved cipher copy, in another hand",
+      "url": "https://resources.huygens.knaw.nl/retroapp/service_dewitt/aandewitt_01/images/AAN_DEWITT_01_405.jpg"
+    }
+  ],
+  "note": "The printed edition text on this page is the plain copy; the cipher copy 'van een andere hand' is not printed and not imaged this pass -- its archive location (NA 3.01.17, De Witt's own archive, or elsewhere) was not resolved this pass."
+}

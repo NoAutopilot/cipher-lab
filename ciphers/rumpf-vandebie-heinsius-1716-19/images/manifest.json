@@ -1,0 +1,16 @@
+{
+  "source": "printed edition page image (Veenendaal, Briefwisseling van Anthonie Heinsius, retroboeken viewer), not the Nationaal Archief manuscript",
+  "host": "resources.huygens.knaw.nl",
+  "fetched": "2026-09-24",
+  "images": [
+    {
+      "file": "heinsius_18_GS244_095.jpg",
+      "edition": "Briefwisseling van Anthonie Heinsius, Deel 18, GS244",
+      "printed_page": 95,
+      "letter_no": 142,
+      "content": "H.W. Rumpf to Heinsius, 17 Nov 1716 -- printed numeral ciphertext embedded in French prose, with footnote 3: 'Het cijferschrift is door d'Alonne niet opgelost.'",
+      "url": "https://resources.huygens.knaw.nl/retroapp/service_heinsius/18_244/images/heinsius_18_GS244_095.jpg"
+    }
+  ],
+  "note": "One representative page fetched and confirmed by eye per check-solved brief; letters 309 (p.555), 446 (pp.302-303) and 455 (p.337) were read as OCR text (html_url) only, not imaged, this pass -- their ciphertext is stated by the editor to be omitted from the print entirely ('weggelaten'), so no printed-edition image of them would show cipher anyway; only the Nationaal Archief originals (H.A. 2030/2044 and the unresolved H.A. for 455) would carry that ciphertext."
+}

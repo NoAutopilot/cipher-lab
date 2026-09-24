@@ -3481,3 +3481,29 @@ apart, descriptive User-Agent, no logins, no images downloaded. `www.nationaalar
 re-reachability check, the 3.01.19 collection page, one inventory-item page). `github.com` 2 shallow clones
 (grepped, not committed). No other hosts, no subagents, no novelty wording, nothing promoted, no
 check-solved run.
+
+**Check-solved outcome, 24 September 2026** (LANE N check-solved worker csHU, brief
+`.claude/briefs/runs/2026-09-24-lane-n-csHU.md`): HU4, HU5, HU6, HU8 promoted to new folders, each with the
+primary edition's footnote re-fetched and read directly (not just trusted from the harvest paraphrase) and one
+page image confirmed by eye. **HU4** -> `ciphers/rumpf-vandebie-heinsius-1716-19/` -- open, cryptanalysis;
+letter 142's printed ciphertext confirmed in the page image, footnote "Het cijferschrift is door d'Alonne niet
+opgelost" verbatim; letter 455 (Deel 19 p.337) resolved from the harvest's provisional "~455" to a confirmed
+number; copy status likely copy-free but NOT confirmed per item (the "Scan"/"Viewer" text on
+nationaalarchief.nl's invnr pages is identical boilerplate across every invnr tested, including 756, so the
+harvest's "confirmed" claim on 756 is corrected here to unconfirmed). **HU5** -> `ciphers/borssele-heinsius-1714/`
+-- open, recovery (ambiguous); Veenendaal's own footnote for letter 959, read directly, uses "mogelijk dezelfde"
+(possibly the same) for the nearby "oplossing" -- not found-solved, editor himself stops short of confirming;
+the leaf (H.A. 1836) must be viewed before this can be resolved either way. **HU6** ->
+`ciphers/vaudemont-willemiii-1699/` -- open, recovery; the *25 Mar 1699 entry confirmed verbatim from the
+edition's own index (KS 24 p.812), still "onopgelost" for that letter itself; copy-order (Portland Papers,
+Nottingham, per CLAUDE.md's Access playbook), `REQUEST.md` written; at least 20 further asterisked Vaudemont
+cipher entries in the same index (1695-1701) are an unswept lead for whoever identifies the stated solved
+sibling. **HU8** -> `ciphers/vanbeuningen-dewitt-1657/` -- open, recovery; Japikse's footnote for the 19/29 Sep
+1657 letter confirmed verbatim: "Dezelfde brief ook in onopgelost cijfer, van een andere hand" -- a genuine
+known-plaintext pairing (plain copy in print, cipher copy separately surviving); archive location (likely NA
+3.01.17) not resolved this pass, no REQUEST.md yet. Postma's *Johan de Witt en Coenraad van Beuningen* thesis
+(the standard modern study of this exact circle) could not be fetched (Academia.edu 403'd); a related paper
+citing it extensively was read in full and contains zero mentions of cijfer/geheimschrift. HU2 not reached this
+pass (budget spent on the four required targets). Firm nominations this hour: HU4, HU5, HU6, HU8 (4 open; 2
+copy-free/likely-copy-free [HU4, HU5], 1 copy-order [HU6], 1 unresolved [HU8]). Full search logs, verbatim
+edition quotes and images in each target's own NOTES.md/images/.

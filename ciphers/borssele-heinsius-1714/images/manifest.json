@@ -1,0 +1,16 @@
+{
+  "source": "printed edition page image (Veenendaal, Briefwisseling van Anthonie Heinsius, retroboeken viewer), not the Nationaal Archief manuscript",
+  "host": "resources.huygens.knaw.nl",
+  "fetched": "2026-09-24",
+  "images": [
+    {
+      "file": "heinsius_15_GS227_531.jpg",
+      "edition": "Briefwisseling van Anthonie Heinsius, Deel 15, GS227",
+      "printed_page": 531,
+      "letter_no": 959,
+      "content": "Ph.J. van Borssele van der Hooghe (London) to Heinsius, 3 Apr 1714 -- clear Dutch text; editorial footnote states a cipher letter is added on the same leaf, plus a separate decipherment ('oplossing') possibly of the same item",
+      "url": "https://resources.huygens.knaw.nl/retroapp/service_heinsius/15_227/images/heinsius_15_GS227_531.jpg"
+    }
+  ],
+  "note": "The printed edition text of letter 959 itself is in clear Dutch; the cipher and the possible decipherment it refers to are on the manuscript leaf only (H.A. 1836), not printed here or imaged this pass."
+}

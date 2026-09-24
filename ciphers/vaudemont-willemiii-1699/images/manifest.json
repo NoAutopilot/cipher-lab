@@ -1,0 +1,15 @@
+{
+  "source": "printed edition page image (Correspondentie van Willem III en van Hans Willem Bentinck, eerste gedeelte, deel 2, KS 24, retroboeken viewer), not the archive original",
+  "host": "resources.huygens.knaw.nl",
+  "fetched": "2026-09-24",
+  "images": [
+    {
+      "file": "willemiii_ks24_0812.jpg",
+      "edition": "Correspondentie van Willem III en van Hans Willem Bentinck, eerste gedeelte, deel 2, KS 24",
+      "printed_page": 812,
+      "content": "Alphabetische lijst van brieven -- the Vaudemont correspondent index, listing every letter by date with an asterisk marking cipher letters; the 25 March 1699 entry carries the note 'grootendeels in onopgelost cijferschrift; ook een ontcijferde brief is aanwezig'",
+      "url": "https://resources.huygens.knaw.nl/retroapp/service_willemiii/willemiii_1_2/images/willemIII_deel1_2egedeelte_ks24_0812.jpg"
+    }
+  ],
+  "note": "This is the edition's own index page, not a letter text and not the manuscript. No archive shelfmark or inventory number is given on this page for the 25 March 1699 letter; the originals of this correspondence are in the Portland Papers, University of Nottingham (not Nationaal Archief 3.01.19), which CLAUDE.md's Access playbook already notes are NOT copy-free."
+}
