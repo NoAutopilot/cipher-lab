@@ -1,0 +1,20 @@
+{
+  "source": "reddit r/ciphers thread mwhtp0, gallery images via oauth.reddit.com API + preview.redd.it",
+  "fetched_utc": "2026-09-24T20:52Z",
+  "images": [
+    {
+      "file": "page1.jpg",
+      "reddit_media_id": "597m066i7tu61",
+      "source_url": "https://preview.redd.it/597m066i7tu61.jpg?width=1512&format=pjpg&auto=webp&s=bd0a3ac3ad9c6bff6277553cd688f63f3dbe1394",
+      "size_bytes": 234629,
+      "gallery_order": 1
+    },
+    {
+      "file": "page2.jpg",
+      "reddit_media_id": "8hvad56i7tu61",
+      "source_url": "https://preview.redd.it/8hvad56i7tu61.jpg?width=1512&format=pjpg&auto=webp&s=04a149f333bf31db3ca6a5a8479564b9609e8363",
+      "size_bytes": 220306,
+      "gallery_order": 2
+    }
+  ]
+}
