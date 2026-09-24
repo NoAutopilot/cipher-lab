@@ -376,3 +376,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T20:38Z	session_01HSqJsqbR6Dtu5u1NJHUXg5	LANE N4 scTOMO (Sonnet, cap $6)	Tomokiyo key lists vs unread siblings (beyond Nevers)	brief lane-n4-scTOMO
 2026-09-24T20:38Z	session_017trM1LkowyQ4Ku8hR9wipa	LANE N4 scDIGI (Sonnet, cap $6)	DigitArq ANTT cipher leaves PP-01/02 and beyond	brief lane-n4-scDIGI
 2026-09-24T20:43Z	session_013GkMQP9y84gHGG4pSSwaQj	Survey of the public unsolved list with an approach and spec per item; process memo from the AI-mathematics results (Fable, cap 0)	UNSOLVED-SURVEY.md, specs/, tools/judge_plaintext.py, PROCESS-2026-09-24.md	owner's request 20:40; brief 2026-09-24-survey-top-unsolved.md
+2026-09-24T20:53Z	session_pending_rfetch_b	rfetch (second run) reddit thread mwhtp0 via REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET (Sonnet, cap )	ciphers/reddit-runaway-2021/	owner set the pair 24 Sept 20:5x; brief 2026-09-24-reddit-fetch-runaway.md
