@@ -1,4 +1,6 @@
-partial
+found-solved
+
+Status set by LANE G2, 24 Sept 2026 10:28 UTC: ff.116-119 hold only the contemporary decipherment (f.116r is its heading and opening, not ciphertext; worker P 10:14); no ciphertext survives in the item, so there is nothing to decipher. The two published Mayenne tables stay here for any sibling letter.
 
 # Sieur de Diou to duc de Mayenne, League era -- BnF Français 2751
 
