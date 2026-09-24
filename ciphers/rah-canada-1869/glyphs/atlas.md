@@ -39,3 +39,34 @@ reconciler needs to settle from the image.
 This legend is a starting point from one read at working resolution, not a verified ground truth: expect the
 two blind passes to disagree on some of these labels (especially `[circle]` vs the digit `0`, and `[cross]`
 vs `[plus]`), which is what `tools/reconcile_passes.py` is for.
+
+## Addendum, 24 Sept 2026 (LANE R R8 aligner): labels used in ciphertext.tsv
+
+Read against the note's own interlinear plaintext, the atlas labels resolve to one letter each, and eleven shapes the
+passes had folded into other labels get their own codes. Values are from key.tsv (grade H).
+
+| Code | Shape | Value | Passes mostly wrote |
+|---|---|---|---|
+| `[plus]` | plain `+` | e | `+` |
+| `[loopn]` | small one-hump loop | a | `[loopn]` |
+| `[dot]` | heavy dot on the line | r | `.` (as punctuation) |
+| `[cross]` | vertical with two short crossbars (‡) | u | `+` (A), `[cross]` (B) |
+| `[circledot]` | circle with one dot (once a short bar) inside | l | `0` / `[circledot]` |
+| `[bigloop]` | tall curling loop with ascender (like N) | d | `[loopn]`, `1` |
+| `[dash]` | plain horizontal stroke | c | `-` / `[dash]` |
+| `[equals]` | two stacked strokes | f | `=` |
+| `[loopm]` | bar with two legs (π-like) | z | `[loopm]` |
+| digits | `0 2 3 4 5 6 7 9` | m j n ñ v t i o | as written; `3` often read `2` |
+| `[g01]` | horizontal stroke ending in a short upright at its right end (⊣) | s | `[cross]`, `[dash]`, `[hook]` |
+| `[g02]` | long S-shaped stroke with a comma-like foot ($) | g | `,` + `[loopn]`, `[hook]` |
+| `[g03]` | circle with two dots inside | q | `[circledot]` |
+| `[g04]` | capital I / T-bar | h | `1` |
+| `[g05]` | 9-shape whose stem ends in a foot hook (ꝑ) | p | `9`, `1` |
+| `[g06]` | 7 with a crossbar (ヲ) | b | `7` |
+| `[g07]` | horizontal stroke crossed by two uprights or a slash and an upright | y | `[cross]`, `+` |
+| `[g08]` | open angle, a 4 without its upright (∠); once, in "señalado" | s | `4` |
+| `[g09]` | plus whose upper arm is doubled and hooked (ƒ-like); twice | e | `[cross]` |
+| `[g10]` | slanted stroke with a dot above (!); the day number | 1 | `1` |
+| `[g11]` | v-shaped stroke; the day number | 5 | `[loopn]` |
+
+`[circle]`, `[hook]`, `[tick]` and the digits `1` and `8` do not occur in the aligner's reading.
