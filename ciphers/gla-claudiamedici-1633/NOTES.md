@@ -72,3 +72,32 @@ is in hand: GLA's own Bestand 81/48 series may hold a contemporary key for this 
 check before any solving; (2) open *Briefe und Akten zur Geschichte des Dreißigjährigen Krieges* volumes
 covering spring 1633 Upper Rhine theatre if reachable; (3) once a copy is ordered, check GLA Bestand 48 (Baden
 diplomatic cipher-key rubric, DA2) for a period-matching key.
+
+## csDA2: edition lead (24 September 2026, close-out pass)
+
+Closing the *Briefe und Akten zur Geschichte des Dreißigjährigen Krieges* (BAGK) lead flagged above, per the
+LANE N2 COMMON rule "edition not read = blocked, never open".
+
+The spring-1633 volume for this correspondence is BAGK Neue Folge, Teil 2, Band 8 (ed. Kathrin Bierther, Munich:
+Oldenbourg, 1982), covering January 1633 - May 1634 (WebSearch, 24 Sept 2026) — a modern scholarly edition
+published (and still sold) by the Historische Kommission bei der Bayerischen Akademie der Wissenschaften /
+De Gruyter (degruyterbrill.com/serial/bagk%2030-b), reviewed as recently as 2022 (SEHEPUNKTE) for a different
+volume in the same series. Tried to read it:
+
+- **archive.org**: `advancedsearch.php` for the series title, both with ASCII "ss" and the literal "ß"/umlaut
+  encoding, and for "Briefe Akten dreissigjahrigen Krieges Wittelsbacher": 0 hits each. Not digitised there.
+- **HathiTrust**: found a catalog record (catalog.hathitrust.org/Record/100423030, via WebSearch) but both
+  `catalog.hathitrust.org/Record/100423030` and a `babel.hathitrust.org` full-text-search URL returned
+  HTTP 403 to WebFetch (Cloudflare — the known block recorded in CLAUDE.md's access playbook; not a route this
+  brief's tools can pass, no browser-tool host authorised for this pass).
+- No open-access mirror found by WebSearch.
+
+**Verdict: blocked.** The BAGK Jan/Mar 1633 volume cannot be read through this pass's authorised routes
+(archive.org, HathiTrust via WebFetch, WebSearch). This is a De Gruyter-sold modern edition, not a 19th-century
+public-domain scan — unlikely to surface on archive.org or open HathiTrust in a later pass either, short of a
+library proxy or ILL. The nomination stays HELD, not firm, until this is read (by the person, or a worker with
+library/ILL access) or is dropped as out of reach and the nomination is re-scored without it.
+
+Host requests this pass (shared across all five csDA2 targets, see individual NOTES.md sections for per-target
+detail): archive.org 6 (>=3s apart, IA slot), WebFetch 3 (2x HathiTrust, 1x this target's related landesarchiv
+page — logged under nla-heinrich/hza-hohenlohe below), WebSearch ~10.

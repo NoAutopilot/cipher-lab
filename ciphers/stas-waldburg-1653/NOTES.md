@@ -54,3 +54,29 @@ search" / verify-against-the-world pattern).
 or Zeitschrift für Hohenzollerische Geschichte covering 1653-54; (2) resolve the catalogue's "(?)" on
 Christoph Karl's identity against Waldburg genealogies before any solving; (3) re-test LABW's viewer for
 Dep. 30/1 T 3 Nr. 702 directly.
+
+## csDA2: edition lead (24 September 2026, close-out pass)
+
+Closing the Waldburg family edition lead flagged above (brief named it as "Vochezer, Geschichte des
+fürstlichen Hauses Waldburg"). Vochezer's 3-volume *Geschichte des fürstlichen Hauses Waldburg in Schwaben*
+(Kempten, 1888-1907) is on archive.org; volume 3 (identifier `GeschichteDesFuerstlichenHausesWaldburgInSchwaben3`,
+Vochezer_Waldburg_3_djvu.txt, 67,235 lines) is the one that reaches the 17th century — confirmed by nine "1653"
+hits in the narrative (e.g. line 54725 "erftatteten am 23. Januar 1653", line 58984 "23. September 1653"), and
+one hit for "Trauchburg" (line 20214, "Christoph, Erbtruchsess, Freiherr zu Waldburg... zu Trauchburg" — a
+different Christoph, not Christoph Karl).
+
+Fetched the full djvu.txt and grepped for the correspondents and the cipher terms (with loose substrings
+"iffr"/"eheim" against the same Fraktur-OCR noise seen in the Havemann volume): no occurrence of "Chiffre",
+"Geheimschrift" (only "Geheimer/Geheimen Rat", the privy-council sense, appears — 15 hits total for "eheim"),
+"Christoph Karl", "Walburga" (the two "Walburgen" hits at lines 16078-16582 are the saint, S. Walburga, not the
+person), or "Essen"/"Pröpstin". The correspondence (StA Sigmaringen Dep. 30/1 T 3 Nr. 702) is not named.
+
+**Verdict: open, edition lead closed.** Vochezer's volume covers the right decade and the Trauchburg line of
+the family but never names either correspondent, the letters, or a cipher. The genuine caveat: 19th-century
+Fraktur OCR on this scan is noisy (many common words misrecognised, e.g. "Sriefe" for "Briefe"), so a rare
+proper name could in principle be missed; the negative is on the same footing as the Havemann one, not
+stronger. Posting `confirm` to ROOM.
+
+Host requests this section: archive.org 3 (advancedsearch + metadata + djvu.txt fetch for
+`GeschichteDesFuerstlichenHausesWaldburgInSchwaben3`, >=3s apart, IA slot); WebSearch 1 (to confirm which
+archive.org identifier is volume 3 and its year range).

@@ -54,3 +54,27 @@ copied) come first, per LESSONS.md's "structure before search."
 Landesgeschichte's own index for "Osiander" + "Diarium"/"Tagebuch"; (2) re-test LABW's viewer for J 7 Bü 66
 directly; (3) once a copy is in hand, count distinct symbols and check against the diary's other known code
 uses (the Hebrew-letter entries) for a shared design.
+
+## csDA2: edition lead (24 September 2026, close-out pass)
+
+Closing the *Württembergische Vierteljahrshefte für Landesgeschichte* lead flagged above. The run is long —
+archive.org's `advancedsearch` for the journal title returns 121 items (Neue Folge issues from `whv11p`/1902
+through `whv3940c`/1933-34, plus scattered Google Books scans of the 1870s-90s Alte Folge) — and archive.org's
+metadata `text:` search field is not a full-OCR index (confirmed by a control query for "Pregizer", the diary's
+own archival collection name: it returned zero relevant hits, only unrelated items whose *titles* happen to
+contain the string). Reading all 121 volumes' `_djvu.txt` individually is outside this target's share of the
+$5 pass cap and the lane's fan-out limits. WebSearch for the diary's own terms ("Pregizer" "Osiander" "Diarium"
+"site:archive.org"; "Württembergische Vierteljahrshefte" + "Osiander" + "Pregizer" + "Geheimschrift") surfaced
+only the DDB catalogue description already in this file and the LABW J 7 Sammlung Pregizer finding-aid preface
+(fetched via WebFetch: no mention of the diary J 7 Bü 66, a printed edition, or its cipher) — no hit naming a
+WVH volume, article, or Gesamtregister/index that covers this diary.
+
+**Verdict: blocked.** The named lead could not be searched exhaustively through this pass's authorised routes
+within budget — not because any one volume refused to load, but because the run is too large for a keyword
+search without a full-text index this pass could reach. The nomination stays HELD. A worker with a specific
+volume/year to check (e.g. from a citation elsewhere, or willing to spend a larger budget working through the
+run), or access to the WVH's own website search (not attempted this pass — out of the named lead's route),
+would close this properly.
+
+Host requests this section: archive.org 1 (advancedsearch, 121 hits, no further fetches), WebFetch 1 (LABW
+Pregizer Vorwort), WebSearch 3.

@@ -73,3 +73,31 @@ und Lüneburg*, 1839, MDZ bsb11684619 or the IA copies) for 1519/1522 and phrase
 "Chiffre" / either letter's content; (2) ask why L 1 (Bückeburg) holds these two Heinrich der Jüngere items — a
 family/provenance note might also surface a sibling letter or a key; (3) re-test the Arcinsys Niedersachsen
 viewer directly for these two signatures before copy-ordering.
+
+## csDA2: edition lead (24 September 2026, close-out pass)
+
+Closing the Havemann lead flagged above. Havemann's *Geschichte der Lande Braunschweig und Lüneburg* (3 vols.,
+1837-57) is on archive.org — identified the volume covering this exact conflict, identifier `10019400bsb`
+(1837-38, title page confirms "München, Bayerische Staatsbibliothek — Germ.sp. 200 ec"; distinct from
+`11094270bsb`, a different, abridged "für Schule und Haus" printing also checked). Fetched
+`10019400bsb_djvu.txt` (2.47 MB, 49,939 lines) and confirmed it is the right volume: it has a section heading
+"Beendigung der hildesheimischen Stiftsfehde. 1409 — 1523." (line 911) and its narrative names both dated
+events directly — "(29. Junius 1519). Erich und Wilhelm gefangen" (line 1064), "mit Heinrich dem Mittleren
+(1522)" (line 1071), and extended narrative around 14. Februar 1519 / 20. Julius 1522 (lines 16458-17213) —
+this is Heinrich der Jüngere/der Mittlere's own feud, the same one the two NLA items belong to.
+
+Grepped the full OCR text (accounting for German long-s/Fraktur OCR noise by also checking loose substrings
+"iffr" and "eheim"): **no occurrence of "Chiffre" anywhere in the volume, and no occurrence of "Geheimschrift"**
+— "eheim" (75 hits) is all "Geheimer Rath"/"Geheimniß"/"geheimes Gespräch" (privy council, secrecy), never the
+cipher-specific compound. Neither NLA shelfmark (L 1 Nr. 548, Nr. 562) nor either letter's content is named.
+
+**Verdict: open, edition lead closed.** Havemann's standard narrative history covers this exact feud and this
+duke in detail across 1519-1523 and never once uses cipher vocabulary or cites either item — a real, readable
+negative, not an absence of coverage. The provenance question (why these two items sit at Bückeburg, not
+Wolfenbüttel) and the Koldewey biography (still unopened) remain open threads for whoever next works this
+target, but they do not block the check-solved verdict per rule 9 (Havemann is not itself a correspondence
+edition). Posting `confirm` to ROOM.
+
+Host requests this section: archive.org 4 (advancedsearch + 2x metadata + 1x djvu.txt fetch for `10019400bsb`;
+plus 1 earlier metadata/djvu.txt pair for `11094270bsb` before finding the right volume — 6 total, >=3s apart,
+IA slot).

@@ -59,3 +59,24 @@ Julius article for any mention of these reports, "Chiffre", Melchior, Pape or K�
 Neuenstein's finding aids resolve to a LABW plink at all (private-archive digitisation status untested); (3) two
 separate correspondents/decades (Melchior 1679-80 from Vienna/Prague/Strasbourg; Pape+Köhler 1689 from Vienna) —
 treat as two sub-targets once copies exist, since they are unlikely to share one key.
+
+## csDA2: edition lead (24 September 2026, close-out pass)
+
+Closing the *Archiv für hohenlohische Geschichte* lead flagged above. Identified the specific article by
+WebSearch: K. Ruland, "Graf Wolfgang Julius von Hohenlohe-Neuenstein. Geb. den 3. Aug. 1622. † 26. Dec. 1698.
+Ein biographischer Versuch", *Archiv für hohenlohische Geschichte* 2 (1870), pp. 271-290, hosted at
+`journals.wlb-stuttgart.de/index.php/afhg/article/view/4600`.
+
+Tried to read it: `WebFetch` on the article page returned an Anubis bot-challenge interstitial ("Access Denied:
+error code 9e4edb5b6b850c41", not the article) — the same JS proof-of-work gate CLAUDE.md's access playbook
+records for bibliotecadigital.rah.es; this pass has no browser-tool host authorisation for wlb-stuttgart.de to
+try the intermittent-clear workaround. Not on archive.org (`advancedsearch` for the journal title: 0 hits — it
+is a regional-society journal, unlikely to have a Google Books/IA scan). WebSearch (including a
+`site:journals.wlb-stuttgart.de` query naming "Melchior") surfaced only the article's title, author, date and
+page range — no snippet of its text, and nothing naming Lic. Melchior, Pape, Köhler, or a cipher.
+
+**Verdict: blocked.** The one named edition lead for this target cannot be read through this pass's authorised
+routes. The nomination stays HELD until either the Anubis gate is cleared (a browser-tool pass with this host
+in scope) or the article is read by another route (ILL, a library proxy, or a direct request to the journal).
+
+Host requests this section: WebFetch 1 (Anubis-blocked), WebSearch 2, archive.org 1 (advancedsearch, 0 hits).
