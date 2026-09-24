@@ -90,7 +90,7 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
-## Parent handoff (session cipher-lab-7a, session_01EFmUvFAifLKGdBSsW9mjEG), kept current from 12:05 UTC 24 Sept 2026
+## Parent handoff (cipher-lab-7b, session_01K7ZbE95o1pUW5gof8VA5PR, from 18:45 UTC 24 Sept 2026; 7a was session_01EFmUvFAifLKGdBSsW9mjEG, 23 Sept 15:12 to 24 Sept 18:45), kept current
 
 The parent orchestrator runs the hourly check-in (trigger trig_01J9tJgr6B8vSo6LgSAXHB6E (30-minute cadence while lanes run), self-bound, re-armed by send_later at every firing; its prompt is the
 full duty list: rate limit, swap, JSTOR gate, second-opinion PRs, lanes, parent workers, board, results audit, owner
