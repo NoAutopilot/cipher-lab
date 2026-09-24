@@ -1678,5 +1678,151 @@
    "focus": "hall of fame view live from CITATIONS.md: one public citation (Cryptiana, 24 Sept 2026) and the pending replies list"
   }
  ],
- "headline": "Evening of 24 Sept: fifteen readings at N4; the outreach set is sent and replies come to the parent. The owner chose momentum at 18:48: R5 and N4 restarted, and the parent's own picks ran their controls (image detector: gate failed; crib loop: helps at short lengths only; Z13 forum mechanism: fails its control). Six Nevers letters sit under Tomokiyo's key no.60, blocked on the scribe's hand, with the calibration leaf identified. A Fable survey is ranking the public unsolved lists with an approach per item. Successor prompt: hub-seed/SUCCESSOR-PROMPT.md."
+ "headline": "Evening of 24 Sept: fifteen readings at N4; the outreach set is sent and replies come to the parent. The owner chose momentum at 18:48: R5 and N4 restarted, and the parent's own picks ran their controls (image detector: gate failed; crib loop: helps at short lengths only; Z13 forum mechanism: fails its control). Six Nevers letters sit under Tomokiyo's key no.60, blocked on the scribe's hand, with the calibration leaf identified. A Fable survey is ranking the public unsolved lists with an approach per item. Successor prompt: hub-seed/SUCCESSOR-PROMPT.md.",
+ "sidequests": [
+  {
+   "title": "Grants applications",
+   "asked": "24 Sept 2026 13:36 UTC",
+   "state": "waiting on you",
+   "result": "Six grant applications drafted in the private repository. OpenAI Researcher Access submitted by the owner 24 Sept 2026. Anthropic AI for Science (up to $20,000 credits) and Anthropic External Researcher Access ($1,000 credits) are both drafted, review 5 Oct 2026.",
+   "next": "Owner submits NCIS membership first (this week, gives an affiliation and letters of introduction), then fills the personal fields on the two Anthropic forms before the 5 Oct review; submission is on the owner's own machine, never from a cloud session.",
+   "link": "outreach/grants-applications.md",
+   "session": ""
+  },
+  {
+   "title": "Momentum restart: LANE R5 and LANE N4",
+   "asked": "24 Sept 2026 18:48 UTC",
+   "state": "running",
+   "result": "R5 (recovery): key no.60 applied mechanically to five Nevers letters, no reading (37-55% pass agreement), blocked on sign identification, not the key. N4 (nominations): 11 firm copy-free nominations; scTOMO done (2 new copy-free rows), scDIGI done (DigitArq API reverse-engineered; both Torre do Tombo codex sweeps came back false positives).",
+   "next": "R5: worker G's key no.60 sign atlas from interlined leaves, then an 80% pass-agreement re-run; Salviati leaves f.55v-f.57v being bought two at a time. N4: keeps nominating copy-free targets for check-solved.",
+   "link": "STATUS.md",
+   "session": "R5 session_01LcgYWtnKYzBkdEwVU1ae1t; N4 session_01Nrrp9gDcF8aHUgcMSXxU7q"
+  },
+  {
+   "title": "Salviati purchase f.55v-f.57v",
+   "asked": "24 Sept 2026 20:16 UTC",
+   "state": "running",
+   "result": "Owner authorized buying the remaining Salviati leaves two at a time (Sonnet $12/leaf, box-keyed method, 80% gate). H1 (f.55r pass B) and H2 (f.55v) started 20:51-20:52; f.55r pass A and boxes already committed by worker A.",
+   "next": "H1/H2 finish their passes and report a reading or a blocker; H3-H6 (f.56r, f.56v, f.57r, f.57v) follow, then the pooled code+mark run once all leaves are captured.",
+   "link": "ciphers/fr2933-salviati-1525/",
+   "session": "H1 session_01DjYdTGsK72PjN4TpqA35fE; H2 session_01QKxu7fUbqYfthJc5gXcZ5m"
+  },
+  {
+   "title": "Nevers key no.60 application, six letters",
+   "asked": "24 Sept 2026 19:46 UTC",
+   "state": "running",
+   "result": "Key no.60 applied mechanically to five Nevers letters (fr.3985 f.88+f.176, fr.3986 f.198, fr.3987 f.66, fr.3989 f.169, fr.3990 f.27): no reading on any, pass agreement 37-55%. Blocked on sign identification (this hand vs Bourdeau's tags), not the key.",
+   "next": "Worker G is building a key no.60 sign atlas from the copyist's own interlined leaves (fr.3985 c.264-268, fr.3986 f.151/152) and will re-run F1's leaves against an 80% pass-agreement gate before any more leaves are bought.",
+   "link": "ciphers/fr3985-nevers-revol-1593/",
+   "session": "session_01Jr8vChfUMF2NEofCVZWVSs"
+  },
+  {
+   "title": "Gold-target survey on Fable",
+   "asked": "24 Sept 2026 20:43 UTC",
+   "state": "running",
+   "result": "Ranking the owner's gold-target lists (Schmeh Top 50, Dunin, codebreaking-guide) as one list with a genuine approach and machine-readable spec per item, a mechanical plaintext judge, and a process memo from the 2025-26 AI-mathematics results; no attack campaign.",
+   "next": "Reports UNSOLVED-SURVEY.md, specs/, tools/judge_plaintext.py and PROCESS-2026-09-24.md when done.",
+   "link": "UNSOLVED-SURVEY.md",
+   "session": "session_013GkMQP9y84gHGG4pSSwaQj"
+  },
+  {
+   "title": "Reddit thread, 1600s book",
+   "asked": "24 Sept 2026 20:38 UTC",
+   "state": "queued",
+   "result": "Queued behind the runaway-note fetch, which is now done.",
+   "next": "Parent spawns rfetch2 (brief 2026-09-24-reddit-fetch-oldbook.md) to fetch thread 18lz1b5 via the same Reddit API credential.",
+   "link": "ciphers/reddit-oldbook-1600s/",
+   "session": ""
+  },
+  {
+   "title": "Hall of fame view",
+   "asked": "24 Sept 2026 18:48 UTC",
+   "state": "done",
+   "result": "Board's fourth view added: CITATIONS.md cards, one public citation on file (Cryptiana's unsolved.htm now credits the repository, 24 Sept 2026).",
+   "next": "New citations get appended to CITATIONS.md as they come in; nothing else pending.",
+   "link": "CITATIONS.md",
+   "session": ""
+  },
+  {
+   "title": "Image cipher-page detector",
+   "asked": "24 Sept 2026 19:28 UTC",
+   "state": "done",
+   "result": "Layout-only detector (no character shapes) on 84 real images from 10 hands: holdout recall 0.69, false-positive rate 0.21; gate (recall>=0.85, fpr<=0.15) not met, no sweep run.",
+   "next": "A future detector needs shape features or a vision model reading the thumbnail; the labelled set (sources/detector-img/labels.tsv) is kept as its fixture.",
+   "link": "tools/cipher_page_detector.py",
+   "session": ""
+  },
+  {
+   "title": "Pooling letters by key",
+   "asked": "24 Sept 2026 19:27 UTC",
+   "state": "done",
+   "result": "POOLS.tsv built offline (603 groups); no group meets the R5 bar (multi-letter, over 2,500 real signs, all copy-free) -- an honest zero, not a page-based guess.",
+   "next": "Largest lead is Biblioteca RAH Signatura 9/23-25 (171 Spanish letters, 1521-25, about 1027 pages); needs a sampling pass for a real signs-per-page figure before it can be scored.",
+   "link": "POOLS.tsv",
+   "session": ""
+  },
+  {
+   "title": "Iberian archives scout",
+   "asked": "24 Sept 2026 19:27 UTC",
+   "state": "done",
+   "result": "PARES (pares.mcu.es) confirmed dead (server-side TLS chain fault). DigitArq alive: reverse-engineered its anonymous full-resolution image API; two Torre do Tombo composite-codex leads (PT/TT/LMP/0001, /0002, both catalogued as containing cartas cifradas). scDIGI's leaf-isolation sweep (50/592 and 48/864 thumbnails) found only false positives.",
+   "next": "No cipher leaf isolated yet in either codex (542+816 images unseen); needs a further sweep or a different capture before either can be nominated.",
+   "link": "tools/digitarq_fetch.py",
+   "session": ""
+  },
+  {
+   "title": "Solver experiment, crib loop",
+   "asked": "24 Sept 2026 19:47 UTC",
+   "state": "done",
+   "result": "Model-in-the-loop crib rounds add 13.5 to 15 points on Italian controls at N=244 (no gain where blind restarts already match, or where blind is at ceiling); add 4.9 points on the code+mark design at N=720 (46.9->50.7, 65.3->76.1); gate not met either time, no target run.",
+   "next": "Needs a decode above about 45% to find cribs; on the code+mark design at this length the path is more Salviati ciphertext (the remaining leaves), not a better reader.",
+   "link": "tools/crib_rounds.py",
+   "session": ""
+  },
+  {
+   "title": "Z13 ARTHUR LA stress test",
+   "asked": "24 Sept 2026 20:27 UTC",
+   "state": "done",
+   "result": "Mechanism closed-negative with a matched control: the poster's own rule family gives a 7-letter name on 968/1000 random strings of Z13's shape (a given name of 6+ letters on 299/1000), against 0/1000 under the poster's exact fixed rules. Z13 producing ARTHUR LA is inside that range, not above it.",
+   "next": "Closed. A paste-ready reply paragraph for the forum poster is in the NOTES.md 'Where exactly the mechanism fails' section.",
+   "link": "ciphers/zodiac-z13-stress/NOTES.md",
+   "session": ""
+  },
+  {
+   "title": "Reddit thread, runaway note 2021",
+   "asked": "24 Sept 2026 20:36 UTC",
+   "state": "done",
+   "result": "Fetched on the second attempt using REDDIT_CLIENT_ID/REDDIT_CLIENT_SECRET (the first attempt's single 'Reddit' variable got HTTP 401). Thread and both gallery images saved with every username and place name redacted; two comments flagged as claiming a reading.",
+   "next": "A cipher worker picks up ciphers/reddit-runaway-2021/ now that the note is on disk (not yet spawned).",
+   "link": "ciphers/reddit-runaway-2021/",
+   "session": ""
+  },
+  {
+   "title": "Urquhart host-text lesson ingest",
+   "asked": "24 Sept 2026 20:38 UTC",
+   "state": "done",
+   "result": "LESSONS.md gained a dated section (three rules, citing Geby Jaff/Vals AI, 31 Aug 2026); check-solved.md gained a web-search source line (model-solve announcements as an 'already solved' source family); detector-test.md gained a host-text-as-key pass line.",
+   "next": "None; ciphers/urquhart/ does not exist yet in this repository, so there was nothing to cross-reference against it.",
+   "link": "LESSONS.md",
+   "session": ""
+  },
+  {
+   "title": "Retrospective f and retro-apply f",
+   "asked": "24 Sept 2026 20:11 UTC",
+   "state": "done",
+   "result": "Retrospective f: 15 ledger rows / $53.28 reviewed, five proposals. Retro-apply f applied proposals 1, 2, 3 and 5 (R5 cost-stop rule, check-solved edition-citation rule reworded, CLAUDE.md rule 3 extended to gain gates, CLAUDE.md rule 6 clock-skew guidance); proposal 4 (STATUS.md wording) left for the parent.",
+   "next": "None; both archived. Proposal 4 is the parent's own to take.",
+   "link": "RETRO-2026-09-24f.md",
+   "session": ""
+  },
+  {
+   "title": "Successor prompt",
+   "asked": "24 Sept 2026 20:54 UTC",
+   "state": "done",
+   "result": "hub-seed/SUCCESSOR-PROMPT.md written: a pasteable handoff block naming the successor session, restart order and standing duties, for if this parent session stops or the seven-day window is rejected.",
+   "next": "None; update the session ids in the file whenever the parent hands over.",
+   "link": "hub-seed/SUCCESSOR-PROMPT.md",
+   "session": ""
+  }
+ ]
 }

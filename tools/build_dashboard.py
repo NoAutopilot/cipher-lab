@@ -448,6 +448,32 @@ def citation_card(c):
 fame_cards = "".join(citation_card(c) for c in citations) or '<li class="muted">nothing public yet</li>'
 pending_rows = "".join(f'<li><span class="mono muted">{E(p["sent"])}</span> <b>{E(p["recipient"])}</b> &mdash; {E(short(p["what"], 100))}</li>' for p in contrib_pending)
 
+# ---------------------------------------------------------------- side quests
+
+sidequests = d.get("sidequests", [])
+SQ_ORDER = {"waiting on you": 0, "running": 1, "blocked": 2, "queued": 3, "done": 4}
+sidequests_sorted = sorted(sidequests, key=lambda s: (SQ_ORDER.get(s.get("state", ""), 5), s.get("title", "")))
+sq_counts = Counter(s.get("state", "") for s in sidequests)
+sq_count_line = f"{len(sidequests)} items: " + ", ".join(
+    f"{sq_counts[st]} {st}" for st in ("waiting on you", "running", "blocked", "queued", "done") if sq_counts.get(st))
+
+
+def sq_card(s):
+    st = s.get("state", "")
+    chip = f'<span class="chip sq-{slug(st)}">{E(st)}</span>'
+    sess = f' <span class="mono muted small">{E(s["session"])}</span>' if s.get("session") else ""
+    link = s.get("link", "")
+    link_html = f' <a href="{E(REPO + link if not link.startswith("http") else link)}">{E(link)}</a>' if link else ""
+    return (f'<li class="sqcard"><div class="sqhead">{chip}<span class="sqtitle">{E(s.get("title", ""))}</span>'
+            f'<span class="muted small">asked {E(s.get("asked", ""))}</span>{sess}</div>'
+            f'<p>{E(s.get("result", ""))}</p><p class="muted"><b>Next:</b> {E(s.get("next", ""))}</p>'
+            f'<p class="links">{link_html}</p></li>')
+
+
+sq_cards = "".join(sq_card(s) for s in sidequests_sorted) or '<li class="muted">nothing this pass</li>'
+sq_waiting = [s for s in sidequests if s.get("state") == "waiting on you"]
+desk_sq_waiting = "".join(f'<li>{E(s.get("title", ""))} <span class="muted small">&mdash; {E(short(s.get("next", ""), 100))}</span></li>' for s in sq_waiting)
+
 # ---------------------------------------------------------------- page
 
 CSS = """
@@ -535,6 +561,14 @@ th,td{text-align:left;vertical-align:top;padding:8px 8px;border-bottom:1px solid
 .fwhere{margin-top:4px}
 .fquote{margin:8px 0;padding-left:10px;border-left:3px solid var(--accent);font-style:italic;max-width:70ch}
 .pending{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:4px;font-size:0.88rem}
+.sqcards{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:10px}
+.sqcard{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.sqhead{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+.sqtitle{font-weight:600}
+.chip.sq-running{background:var(--accent-soft);color:var(--accent)} .chip.sq-done{background:var(--good-soft);color:var(--good)}
+.chip.sq-waiting-on-you{background:var(--warn-soft);color:var(--warn)} .chip.sq-blocked{background:var(--warn-soft);color:var(--warn)}
+.chip.sq-queued{background:transparent;border:1px dashed var(--line);color:var(--muted)}
+.sqdesk{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:4px;font-size:0.9rem}
 @media (prefers-reduced-motion:no-preference){.ffill{transition:width .3s}}
 """
 
@@ -623,6 +657,7 @@ page = f'''<title>Cipher Lab Board</title>
   <button type="button" data-view="desk" aria-selected="false">Your desk</button>
   <button type="button" data-view="machine" aria-selected="false">The machine</button>
   <button type="button" data-view="fame" aria-selected="false">Hall of fame</button>
+  <button type="button" data-view="sidequests" aria-selected="false">Side quests</button>
 </nav>
 
 <section class="view" id="readings">
@@ -642,6 +677,7 @@ page = f'''<title>Cipher Lab Board</title>
   {('<h3>Waiting on one more step</h3><ul class="tasks">' + desk_waiting + '</ul>') if desk_waiting else ''}
   {('<h3>Sent, awaiting reply</h3><ul class="tasks">' + desk_sent + '</ul>') if desk_sent else ''}
   {('<details><summary><b>' + str(len(you_targets)) + ' copy orders parked until funding</b> <span class="muted small">(each a decision and a payment; open to see them)</span></summary><ul class="tasks" style="margin-top:10px">' + desk_targets + '</ul></details>') if desk_targets else ''}
+  {('<h3>Side quests waiting on you</h3><ul class="sqdesk">' + desk_sq_waiting + '</ul>') if desk_sq_waiting else ''}
   <p class="note" id="tick-status"></p>
   <p class="note"><b>{jq}</b> JSTOR rows queued for the runner on your machine{(", " + str(jdone) + " answered") if jdone else ""} (<a href="{REPO}tools/jstor_runner_brief.md">runner brief</a>).</p>
   {('<details><summary>Other open asks, no rush (' + str(len(asks)) + ')</summary><ul class="asks">' + asks_rows + '</ul></details>') if asks else ''}
@@ -667,6 +703,13 @@ page = f'''<title>Cipher Lab Board</title>
   <p class="strip"><b>{len(citations)}</b> public citations since 23 Sept 2026</p>
   <ul class="fcards">{fame_cards}</ul>
   {('<h3>Pending</h3><p class="muted small">Sent, awaiting a reply that has not gone public.</p><ul class="pending">' + pending_rows + '</ul>') if pending_rows else ''}
+</section>
+
+<section class="view" id="sidequests" hidden>
+  <h2>Side quests</h2>
+  <p class="muted small" style="max-width:70ch">Owner-added items from tonight's run that don't fit the readings, desk or machine views: one card each, ordered waiting on you first, then running, blocked, queued, done.</p>
+  <p class="strip"><b>{sq_count_line}</b></p>
+  <ul class="sqcards">{sq_cards}</ul>
 </section>
 </div>
 <script>{JS}</script>
