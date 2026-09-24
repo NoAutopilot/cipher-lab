@@ -10,10 +10,18 @@ REC = os.path.join(T, '..', '..', 'tools', 'reconcile_passes.py')
 DATES = {'04503': '15 Apr 1574', '05194': '24 June 1572', '05797': '22 Oct 1573', '05799': '3 Apr 1573',
          '05810': '6 Jan 1574', '05811': '13 Apr 1574'}
 def build(nr):
-    pages = sorted(os.path.basename(p) for p in glob.glob(f'{H}/passA/{nr}_p*.tsv') if os.path.exists(p.replace('passA', 'passB')))
-    if not pages: return False
+    allp = sorted({os.path.basename(p) for p in glob.glob(f'{H}/pass[AB]/{nr}_p*.tsv')})
+    if not allp: return False
     rows = []
-    for pg in pages:
+    for pg in allp:
+        if not (os.path.exists(f'{H}/passA/{pg}') and os.path.exists(f'{H}/passB/{pg}')):
+            # one pass only (pass A stopped at its cap): every sign M, why 'single pass'
+            src = f'{H}/passA/{pg}' if os.path.exists(f'{H}/passA/{pg}') else f'{H}/passB/{pg}'
+            for r in csv.DictReader(open(src), delimiter='\t'):
+                s = r['sign']; q = s.endswith('?')
+                rows.append({'line': r['line'], 'position': r['pos'], 'sign': s.rstrip('?') if q and s != '?' else s,
+                             'confidence': 'M', 'alt': '', 'why': 'single pass ' + src.split('/')[-2]})
+            continue
         out = f'{H}/recon/{nr}/{pg[:-4]}'; os.makedirs(out, exist_ok=True)
         pa, pb = f'{H}/passA/{pg}', f'{H}/passB/{pg}'
         lm = {}
@@ -54,7 +62,7 @@ def job(nr):
             "token_columns": [["line", "line"], ["idx", "pos"], ["sign", "raw"], ["value", "value"], ["grade", "grade"]]}
 # letters whose numeral runs read as French under key.tsv (wv2/table_test.py, k=0 near the siblings' 3.1 b/c);
 # only these get a graded reading; the others keep ciphertext_<nr>.tsv only.
-KEYED = {'05811'}
+KEYED = {'05811', '05810'}
 if __name__ == '__main__':
     nrs = sys.argv[1:] or sorted(DATES)
     done = [nr for nr in nrs if build(nr)]
