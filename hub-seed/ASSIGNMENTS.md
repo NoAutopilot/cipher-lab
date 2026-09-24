@@ -381,3 +381,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T20:51Z	session_01DjYdTGsK72PjN4TpqA35fE	LANE R5 H1 (Sonnet, cap 12)	fr2933-salviati-1525 f.55r pass B	brief 2026-09-24-lane-r5-h-salviati-leaf.md
 2026-09-24T20:51Z	session_01QKxu7fUbqYfthJc5gXcZ5m	LANE R5 H2 (Sonnet, cap 12)	fr2933-salviati-1525 f.55v	brief 2026-09-24-lane-r5-h-salviati-leaf.md
 2026-09-24T20:57Z	session_01WHLPKyh7phKA9Hi9dkQ6n9	Board: side quests view (Sonnet, cap )	status.json sidequests + fifth board view	owner's ask 20:57; brief 2026-09-24-board-side-quests.md
+2026-09-24T21:12Z	session_01Rx8VTW3cbeqhRX2CFhzPSM	LANE N4 csKT (Sonnet, cap $5)	check-solved KT-01 (fr.7129 Villeroy-Bongars 1604), KT-02 (Baluze 103 Le Tellier-Marca 1644)	brief lane-n4-csKT
+2026-09-24T21:12Z	session_01SoTQrFgD5SkNYPQ4rUJF1z	LANE N4 scDIGI2 (Sonnet, cap $5)	DigitArq cipher letters by unit description	brief lane-n4-scDIGI2
