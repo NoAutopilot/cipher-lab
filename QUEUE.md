@@ -3418,3 +3418,66 @@ high-precision / noise / Morillo-cluster-lead) are in
 250 cap (see the technical finding above for why the effective per-page cost was higher than 248 requests would
 suggest); `tools/browser_fetch.js` against the same host 5 of the 10-image allowance (id 4537 pages 1-3, id
 4332 pages 1 and 6; all `imagen_id.do` binary JPEG fetches, no transcription). No other host touched.
+
+## Huygens and Nationaal Archief correspondence editions: letters noted in cipher (LANE N harvest of 24 September 2026)
+
+Row of the lane brief (`.claude/briefs/runs/2026-09-24-lane-n-hvHUY.md`). The "Dutch and Belgian archives"
+section above found the productive route for Willem van Oranje (WVO, a curated record database with an
+`opmerkingen` field) but explicitly flagged that the Heinsius, De Witt, Oldenbarnevelt and Willem III/Bentinck
+editions were only page-image "retroboeken" viewers with no full-text search found that pass. This harvest
+found each viewer's own lazily-loaded "Zoek" search accessor (a plain HTML form once fetched directly, giving
+the exact field name and per-book accessor path) and ran it with narrow cipher-related terms
+(`cijferschrift`, `onopgelost`, `gecijferd`) across all volumes of each edition at once. Full method, every
+term tried, every page fetched, and the caveats below are in `sources/huygens/NOTES.md`; the complete per-hit
+table (including excluded/solved and unresolved items) is `sources/huygens/cipher-letters-2026-09-24.tsv`.
+Excluded against `ciphers/`, CATALOG.md, LANDSCAPE.md, `sources/cryptiana/`, `sources/wvo/`, the rest of this
+QUEUE.md (only the Grotius-ePistolarium lead in "Digital correspondence editions with cipher notes" above
+overlaps by edition, not by letter -- not re-fetched here, see caveat 3 in NOTES.md), and fresh shallow clones
+of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` (grepped for Heinsius/Grotius/de Witt/Bentinck/
+Portland/Oldenbarnevelt -- one incidental near-miss noted below, not excluded outright since unconfirmed).
+
+**Not check-solved. Not promoted.** Every row rests on a 19th/20th-century editor's own footnote in the
+printed edition (Veenendaal for Heinsius, Japikse for De Witt), read from that edition's own OCR'd page scan,
+not from the archive's manuscript image (rule 2 still applies once any of these is picked up). Per the
+check-solved lesson of 24 Sept 2026 (Thurloe/Montagu, Birch's interlinear decipherments), any of these
+editions could itself print a facing or interlinear decipherment for one of these very letters that this pass
+did not see, because the search only surfaces the editor's footnote *about* non-decipherment, not a
+positive check of the surrounding pages.
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Leaf viewed | Image route |
+|---|---|---|---|---|---|---|---|---|
+| HU1 | Heinsius correspondence: van Dopff to Heinsius, letter no. 357, one letter with a numeric name-code (110, 103, 121, 105, 111, 174, 37...) | 18 May 1702 | fr | cryptanalysis | Nationaal Archief 3.01.19, inv.nr. 756 (cited in the edition as "H.A. 756") | Veenendaal's own footnote: "De sleutel van dit cijferschrift is niet gevonden" (the key to this cipher was never found) -- a genuine editorial non-solve, not merely "not stated". Single instance found this pass; below-unicity risk without a sibling. | No (printed-edition OCR page read, not the manuscript image) | NA 3.01.19 invnr/756 confirmed to carry a scan viewer (`nationaalarchief.nl/onderzoeken/archief/3.01.19/invnr/756`, HTTP 200) |
+| HU2 | Heinsius correspondence: Sauniere de l'Hermitage (London) to Heinsius, three letters in the same H.A. 946 dossier, "gedeeltelijk in onopgelost cijferschrift" each time, cross-referenced to each other by the editor | 26 Feb, 29 Feb, 30 May 1704 (nos. 166, 177, 477) | fr | cryptanalysis | Nationaal Archief 3.01.19, inv.nr. 946 | Same unsolved system recurring three times in one correspondent's three-month run -- no solved sibling found, but three ciphertext instances materially improve on a single-letter unicity problem. | No | H.A.=NA 3.01.19 invnr pattern confirmed on a different item (756); not individually re-checked for 946 |
+| HU3 | Heinsius correspondence: Schonenberg (Lisbon envoy) to Heinsius, letter no. 185, one unsolved word/phrase in the body | 24 Jul 1709 | nl | cryptanalysis | Nationaal Archief 3.01.19, inv.nr. 1445 | "Het cijferschrift is niet opgelost" -- low extent alone, listed for the correspondent circle's completeness | No | Pattern, not individually re-checked |
+| HU4 | Heinsius correspondence: H.W. Rumpf (Rotterdam, then Stockholm) and van de Bie (Stockholm), a cipher never broken by Heinsius's own professional decipherer d'Alonne across three archival years | 17 Nov 1716 (no. 142, H.A. not directly given, neighbour cites 1975); 23 Mar 1718 (no. 309, H.A. 2030, addressed directly "Aan A.T. d'Alonne in onopgelost cijfer"); 15 Aug 1719 (no. 446, H.A. 2044, two full cipher-line runs omitted from the print entirely, "weggelaten"); one further unresolved instance in the same volume span (approx. printed p.337) | nl | cryptanalysis | Nationaal Archief 3.01.19, inv.nrs. 1975 / 2030 / 2044 | The most interesting circle found this pass: a contemporary failure (d'Alonne, not just a later editor, could not read it), recurring across at least three years and archival numbers without ever being broken. No. 446's cipher lines are not even in the printed edition -- only the NA original would carry the actual ciphertext. | No | Pattern (2030) confirmed-shape; 446/1975/one instance not individually checked -- and no. 446's own ciphertext is absent from this source, so material for it is archive-only |
+| HU5 | Heinsius correspondence: Ph.J. van Borssele van der Hooghe (London) to Heinsius, letter no. 959, an unsolved cipher letter on the same leaf, with the editor noting a *separate* decipherment (about the queen's health) is "mogelijk dezelfde" (possibly the same) | 3 Apr 1714 | fr | recovery (ambiguous -- possible solved sibling in the same dossier, unconfirmed whether it is this exact letter) | Nationaal Archief 3.01.19, inv.nr. 1836 | Exactly WVO's NB1 "sibling with a decipherment" pattern if the noted solution is for a *different* letter; found-solved if it is this one. Neither checked against the leaf this pass. | No | Pattern, not individually re-checked |
+| HU6 | Correspondentie Willem III en Bentinck (eerste gedeelte): Vaudemont correspondence, one letter marked in the edition's own alphabetical letter-index as "grootendeels in onopgelost cijferschrift; ook een ontcijferde brief is aanwezig" (a deciphered letter is also present in the same run) | *25 Mar 1699 | fr | recovery | Not given in the index itself; needs the volume's own letter list for a full reference | The index page (KS 24 p.812) marks many more cipher letters with an asterisk across the whole 1692-1699+ Vaudemont run, only this one entry read in full -- a lead for a much larger future sweep of the same index, not a closed search. A DECODE catalogue row (aaymeloglu snapshot, id 2827, NA 1.10.29 Familie Fagel inv.nr. 5345, "cipher_Bentinck_1748") names Bentinck but is a different NA collection and a later date than this edition's own span (ends ~1702) -- unlikely to be the same item, not confirmed either way. | No | Not confirmed this pass |
+| HU7 | Brieven aan Johan de Witt (Japikse ed.), Van Beuningen circle: four numeric groups (154, 250, 254, 264) the editor tried against a *named, otherwise-working* key ("het cyfer van de heer Nieupoort", the London resident's own cipher) and still could not resolve | 15 Mar 1656 | nl/la | recovery (a known key exists; this instance fails against it -- possible transcription or table-version mismatch, not fresh cryptanalysis) | Not resolved this pass (this edition does not use "H.A." numbering; letter heading sits on an earlier printed page than the footnote fetched) | "Deze cijfers zijn onopgelost gelaten... heb ook tevergeefs getracht ze met behulp van Nieuwpoort's cijfer... op te lossen" | No | Not resolved this pass |
+| HU8 | Brieven aan Johan de Witt (Japikse ed.), Van Beuningen circle: the editor states the identical letter survives BOTH as a copy not in Van Beuningen's own hand AND separately as an unsolved cipher copy "van een andere hand" | 19/29 Sep 1657 | nl/fr | recovery (known-plaintext pairing if both copies genuinely survive -- the strongest lead class in LESSONS.md's own ranking, stronger than a mere sibling) | Not resolved this pass | "Dezelfde brief ook in onopgelost cijfer, van een andere hand" | No | Not resolved this pass |
+
+**Excluded this pass (F-type / not carried forward, with reasons in the TSV):** Van Oldenbarnevelt letter
+no. 221 (29 May 1598) -- the edition's own footnote says the copy already has the cipher deciphered and the
+key survives in the same dossier (Legatie-Archief 611, IV); a low-extent De Witt item (3 numeric groups the
+editor calls omittable from the sentence, below unicity alone, kept in the TSV per rule 10 only).
+
+**Not resolved this pass, flagged for a five-minute follow-up, not carried to a row above:** a Staten-Generaal
+item (Deel 7, Jul 1624-Jul 1625, GS223, p.100, "vrijwel geheel in cijferschrift", no solution stated) whose
+sender/date/archive reference sit behind a source-id naming ambiguity ("7" vs "7OR"/"7NR" for the old/new
+series) not disambiguated within budget.
+
+Caveats: (1) None of HU1-HU8 has been check-solved (see the box above) or verified against the archive's own
+manuscript image -- "leaf viewed" above means the printed edition's OCR'd page was read, never the original.
+(2) HU5 and HU6 are explicitly ambiguous between found-solved and a real recovery lead; the next worker on
+either must read the actual leaf/index before nominating further. (3) Grotius was not searched here --
+`resources.huygens.knaw.nl/briefwisselinggrotius` links to a separate app (`grotius.huygens.knaw.nl/years`),
+not a retroboeken viewer, and the "Digital correspondence editions with cipher notes" section above already
+found and partly read the Grotius-Reigersberch cijfer hits via the Huygens ePistolarium (17 hits, 2 read, 15
+unread, flagged there as "a lead, not a candidate") -- re-running it here would have duplicated that lane's
+work. (4) HU7/HU8's exact letter numbers and archive references were not resolved within this pass's budget
+(one more page fetch each, same pattern as the rest of this section, would close the gap). Requests:
+`resources.huygens.knaw.nl` ~95 (2 reachability, 5 landing pages, 5 book-root probes, 5 `book_data.js`, ~14
+search-form/result fetches across the term sweep, 13 `pages.json` fetches, ~24 OCR-page fetches), all ≥2s
+apart, descriptive User-Agent, no logins, no images downloaded. `www.nationaalarchief.nl` 3 (root
+re-reachability check, the 3.01.19 collection page, one inventory-item page). `github.com` 2 shallow clones
+(grepped, not committed). No other hosts, no subagents, no novelty wording, nothing promoted, no
+check-solved run.
