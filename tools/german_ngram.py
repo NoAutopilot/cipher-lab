@@ -157,6 +157,8 @@ class Model:
         self.llr = z["llr"]
         self.order = int(z["order"])
         self.p1 = z["p1"]
+        # full conditional log-probabilities log P(c | previous), same indexing as llr (nomenclator_anneal 'gen')
+        self.logp = (self.llr.reshape(-1, K) + np.log(self.p1).reshape(1, K)).reshape(-1).astype(np.float32)
 
     def score(self, x, w=None):
         o = self.order
