@@ -682,6 +682,28 @@ cap, row counts below), compared with the 5549 body (runs 1-61) by `python3 j6/f
   (3) otherwise crib cryptanalysis of runs 1-61 under a separate brief with a matched control.
 - Requests: resources.huygens.knaw.nl 4 (PDFs 5204, 5205, 5208, 5209, 2 s apart; kept in scratch, re-fetchable from WVO).
 
+**5205 and 5209 fitted 24 Sept 2026: negative.** LANE R4 worker C (brief `.claude/briefs/runs/2026-09-24-lane-r4-c-5549-fit.md`).
+Densest cipher page transcribed for each (`j6/fit_5205.tsv` = 5205 p1, 443 numerals; `j6/fit_5209.tsv` = 5209 p2, 539
+numerals), compared with the 5549 body by `python3 j6/fit.py` -> `j6/fit.tsv`:
+
+| cand | page | groups | max | share >99 | top-10 shared with 5549 body | cosine |
+|---|---|---|---|---|---|---|
+| 5205 (28 Apr 1574) | p1 (complete) | 443 | 191 | 0.17 | 0 | 0.33 |
+| 5209 (24 Jun 1574) | p2 (complete) | 539 | 79 | 0.00 | 1 | 0.39 |
+
+Positive threshold (this brief): >=6 of top-10 shared, similar share>99, cosine >=0.7. Neither candidate is close on any
+measure. **5205's top-10 (81,2,84,38,27,37,82,31,85,104) matches 5204's top-10 (81,82,22,21,31,27,38,83,2,25), confirming
+J6's guess: 5205 is Lodewijk's 1574 five-per-letter table**, not the body's key, despite having values above 99 (17%
+share, from a wider range 100-191 than 5204's page). **5209's top-10 (9,10,35,25,39,37,27,21,1,17) matches 5207/5208's
+<100 system, confirming J6's other guess.** Neither closes the "verendertte" key family found so far (5550, 5552, 5557,
+5575, 5797, 5204, 5205, 5207, 5208, 5209, 5213 all now accounted for; none is the body's key). No H/C/S token; this is a
+fit test, not cryptanalysis, so no matched-control negative is claimed for the body itself (see J7 for that).
+Images: `images/05205_p1-5.jpg`, `images/05209_p1-6.jpg` (150 dpi, manifest.json updated); PDFs not committed (10 MB
+combined, re-fetchable from the WVO URLs in manifest.json). Note: 5205's PDF pages 4-5 bundle an unrelated document in a
+different hand and a symbol (not numeral) cipher headed "Graf Otto von Hollandsmigh" -- not transcribed, not part of
+this letter or this fit test, flagged for whoever next opens that PDF.
+Requests: resources.huygens.knaw.nl 2 (5205, 5209 PDFs, 2 s apart).
+
 ## J7 crib cryptanalysis (24 Sept 2026)
 
 LANE R3 worker J7 (brief `.claude/briefs/runs/2026-09-24-lane-r3-jan5549-crib.md`). Working files in `j7/`, all
