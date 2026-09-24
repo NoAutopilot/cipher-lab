@@ -157,14 +157,14 @@ Orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq, cap $80. Spawning paused at rate_
 ## Lane structure, 24 Sep 2026, 03:05 UTC (owner: scale to about fifty live sessions)
 
 The parent orchestrator (session_01EFmUvFAifLKGdBSsW9mjEG, "cipher-lab-7a") runs four lane orchestrators, each Opus with a
-cap of $80 (raised to $120 and 16 workers at 05:12 UTC 24 Sept 2026, when the owner authorised doubling the effort within the rate limit) and up to about ten workers, each owning its hosts so no two lanes hit the same host in parallel:
+cap of $80 (raised to $120 and 16 workers at 05:12 UTC 24 Sept 2026 when the owner authorised doubling the effort; back to 10 workers at 06:34 after the window was exhausted in forty minutes, see BUDGETS.md) and up to about ten workers, each owning its hosts so no two lanes hit the same host in parallel:
 
 | Lane | Session | Owns | Hosts |
 |---|---|---|---|
-| T, Thurloe printed cipher | session_01EwdS3bprjRaK49MrSERfA2 | ciphers/thurloe-printed, solvers with controls, print checks | archive.org text only |
+| T, Thurloe printed cipher (closed 05:19 UTC, scope exhausted; P4 audit with LANE W) | session_01EwdS3bprjRaK49MrSERfA2 | ciphers/thurloe-printed, solvers with controls, print checks | archive.org text only |
 | G, Gallica digitised manuscripts | session_014zWyan51u9qMn9gnHpm1Aq | every M row, crops, passes, reconcilers, same-office key trials | the only lane on gallica.bnf.fr and archivesetmanuscrits (at most two fetchers at a time) |
 | V, verification | session_01B5x2Dshzz71xBzbJqFnXYQ | verifiers, adversarial second audits, blind second readers, toward-N4, the results-list audit, outreach drafts at N4 | Google Books, HTRC, IA full text, loc.gov, Delpher, DBNL |
-| S, scouts and detectors | session_01PE7TAF6Hsp3MHtFEkDPP4a | check-solved on N20+ and Q rows, extraction of printed cipher, further detector rounds, non-Gallica catalogues | IA advancedsearch, TNA Discovery API, BL, NRS, Wellcome, LOC, BSB, Europeana |
+| S, scouts and detectors (closed 04:58 UTC, succeeded by LANE N) | session_01PE7TAF6Hsp3MHtFEkDPP4a | check-solved on N20+ and Q rows, extraction of printed cipher, further detector rounds, non-Gallica catalogues | IA advancedsearch, TNA Discovery API, BL, NRS, Wellcome, LOC, BSB, Europeana |
 | N, nominations (successor to S, 05:04 UTC) | session_01W4z8JhXJYHRjorPC1Qkpiy | check-solved N48-N66 and R rows, new catalogue families (Italian and Vatican archives, PARES, LoC, NARA, Dutch), HTRC detector, the DECODE Non-decrypted census; target four stage-2 nominations an hour, posted as ROOM `nomination:` lines | IA advancedsearch, TNA Discovery API, BL, Wellcome, loc.gov, NARA, PARES, Italian and Vatican sites, Huntington CONTENTdm, Lambeth CalmView, Riksarkivet, HTRC, de-crypt.org (one worker at a time) |
 | R, recovery and cryptanalysis on copy-free targets (05:04 UTC) | session_01SEnQgi5wPVmMADaVHnWkNN | U2 Blathwayt alignment, U1 Luzerne, W1 Oxenstierna solver with control, rah-canada-1869, then LANE N's copy-free nominations; readings to LANE V | hdl.huntington.org, RAH, Riksarkivet IIIF, NARA and loc.gov images, US library image servers |
 | W, verification of English-language readings (05:06 UTC) | session_011UFnhZnyCntZ8Bn9FpKyTq | Eckert E4/E5 toward N4 (Zooniverse Talk gap), Thurloe P4 audit, every reading from LANE T and LANE R, English results-list audit; LANE V keeps the French BnF targets and Google Books | HathiTrust APIs, HTRC, loc.gov, Founders Online, NARA, Wayback, Huntington catalogue, Riksarkivet and Scandinavian editions, BHO |
