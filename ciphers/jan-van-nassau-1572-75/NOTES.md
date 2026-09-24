@@ -625,7 +625,7 @@ Jan and Lodewijk, Sept 1573 - July 1574). PDFs fetched from resources.huygens.kn
   pp.3-8; the likeliest old-key sibling. Groen IV Lettre CDXLIV prints it in clear; that text is not on disk (dbnl.org is
   LANE V3's host; requested in ROOM 24 Sept 2026). Sonnet pass on its numerals running (`j5s/ciphertext_5797.tsv`).
 
-### J5S result (24 Sept 2026, ~12:50 UTC) -- corrects the old/new assignment above
+### J5S result (24 Sept 2026, 12:41 UTC) -- corrects the old/new assignment above
 
 - **The postscript stretch (J5I's PS1-PS26, 226 tokens, pp.4-5) is in Lodewijk's 1574 five-per-letter table**, the
   same table Jan uses in 5550 (25 Dec 1573, glossed on the leaf) and 5557 (31 May 1574; partial glossed pass
