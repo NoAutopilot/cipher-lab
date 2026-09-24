@@ -65,7 +65,7 @@ BLA191	p1	clear English cover letter to Duke of Newcastle, "Cesnok 8 Aug 1729", 
 BLA191	p2	blank (mirror bleed-through of p1)	none	0	
 BLA191	p3	clear French, dated "Port de Ste Marie ce 21e Juillet 1729" -- enclosure (b)	none	0	one bracketed phrase near the end but no accompanying cipher sheet found for it
 BLA191	p4	clear French (continued) -- enclosure (b)	none	0	
-BLA191	p5	pure numeric cipher, NO decipherment at all, 12 underlined lines	numeric groups, period-separated	~130	enclosure (a), catalogued "undated, in cipher"; genuinely undeciphered in the archive
+BLA191	p5	pure numeric cipher, NO decipherment at all, 12 underlined lines	numeric groups, period-separated	~130	enclosure (a), catalogued "undated, in cipher"; no decipherment in the Huntington collection; copy sent to Newcastle 8 Aug 1729 not traced (AUDIT.md 24 Sept 2026)
 BLA191	p6	blank (mirror bleed-through of p5)	none	0	
 BLA194	cover	clear (blank)	none	0	
 BLA194	p1	cipher + interlinear French decipherment (full page)	numeric groups, period-separated	~75	matches catalogue "In cipher, deciphered in French" for the whole item

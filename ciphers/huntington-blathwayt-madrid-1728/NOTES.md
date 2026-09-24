@@ -2,6 +2,8 @@
 
 Status: open
 
+Novelty (AUDIT.md, verifier, 24 Sept 2026): BLA 186 N3, BLA 191(a) N3, BLA 184 N3; readings partial.
+
 ## Description
 
 Huntington Library, William Blathwayt papers addenda (mssBLA 1-195; OAC finding aid
@@ -137,7 +139,7 @@ detail in `images/inventory.tsv`):
 | BLA 188 | p2(partial)-p5(top), the largest cipher table in the run | **Yes, partial** (same dash-gap style as 187) | ~400 |
 | BLA 189 | p3, the enclosed cipher sheet | **Yes — and it is the letter's OWN plaintext**: p1-p2's clear French marks the same passages off in [square brackets], and p3 gives each bracketed cipher group followed by that exact bracketed clear phrase. This is a genuine known-plaintext/ciphertext pair, not merely a decipherer's rendering. | ~85 |
 | BLA 190 | p5-p6 (2 pages), same bracket/known-plaintext pattern as 189; PLUS a third, separate cipher+decipherment passage on p7 (see anomaly below) | **Yes** (p5-p6, known-plaintext); p7 also carries its own interlinear decipherment | ~180 (p5-p6) + ~110 (p7) |
-| BLA 191 | p5, enclosure (a), 12 lines | **No** — pure numeric cipher, no decipherment anywhere on the leaf. This is the one item in the run confirmed genuinely undeciphered in the archive. | ~130 |
+| BLA 191 | p5, enclosure (a), 12 lines | **No** — pure numeric cipher, no decipherment anywhere on the leaf. No decipherment on the leaf or elsewhere in the Huntington collection (dmQuery, 24 Sept 2026); the copy forwarded to Newcastle on 8 Aug 1729 was not traced (verifier correction, AUDIT.md). | ~130 |
 | BLA 194 | p1-p2, the whole item | **Yes**, interlinear, same pages | ~93 |
 
 Total: ~1046 cipher tokens across the run, of which only BLA 184 (7 tokens, a handful of code-words) and BLA 191
@@ -285,3 +287,14 @@ vols 1-3; Coxe, Horatio Walpole 1802; Coxe, Kings of Spain vols 2-3; HMC Townshe
 HTTP 429 on the first call and was not retried (8 rows 'not searched'). CrossRef keyword searches returned only
 unrelated records. Not searched: Google Books (LANE V's host), HathiTrust, TNA SP 94 calendars, the BL Newcastle papers.
 Requests: archive.org 8, be-api.us.archive.org 7, api.openalex.org 1 (429), api.crossref.org 2. No novelty classified.
+
+## Verifier audit, 24 Sept 2026 08:55 UTC (LANE W worker H)
+
+AUDIT.md: BLA 186 N3, BLA 191 enclosure (a) N3, BLA 184 N3 (3 of 7 groups read); all readings partial. No duplicate,
+draft or decipherment of the three items anywhere in the Huntington collection (CONTENTdm full-collection queries).
+Correction to the R1 section above: BLA 191(a) was called "confirmed genuinely undeciphered in the archive"; only the
+Huntington leaves were checked, and BLA 191's own cover letter shows a copy went to Newcastle on 8 Aug 1729, so a
+contemporary decipherment in SP 94 or the Newcastle papers is not excluded. The French rendering in the R17 section is
+a paraphrase joining M tokens into words ("milord", "serai"); `reading_tokens.tsv` is the graded reading. Leads for a
+later worker: HMC *Polwarth* IV-V (Marchmont papers; BLA 191 was sent from Cessnock, the Hume-Campbell seat), Storrs,
+*The Spanish Resurgence* (2016) (Storrs handled BLA 186 in 2006, slip in the folder), TNA SP 94/100.
