@@ -1,5 +1,5 @@
 {
-  "updated": "24 September 2026, 00:51 UTC",
+  "updated": "24 September 2026, 01:19 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -329,7 +329,7 @@
       "stage": 3,
       "state": "active",
       "holder": "Worker",
-      "next": "Solver running on the 5,725-sign, 50-type text: Raince's 1526 key first, then the annealer with a matched control (ASKS 22, option a).",
+      "next": "Read with Raince's 1526 key (H 5,281 of 5,725), but the letter is printed in Jacqueton 1892 from the decipherment at f.31 of the same volume; a verifier is confirming the class (expected N0/N1). A contribution, not a unique solve.",
       "note": "Corrected 23 Sept 2026: invented-symbol alphabet, ~1,500 tokens across three letters in one cipher; f.20 recto tail transcribed once (86 tokens, grade M). Images free on Gallica.",
       "kind": "recovery",
       "wait": {
@@ -342,19 +342,29 @@
   ],
   "workers": [
     {
-      "title": "VERIFIER: Gramont f.29r",
-      "job": "Novelty audit of the f.29r reading per the CLAUDE.md template. Opus, cap $15",
+      "title": "Verifier (phrase check): Raince vs Jacqueton 1892",
+      "job": "Confirms the print and assigns the class. Sonnet, cap $4",
       "state": "running"
+    },
+    {
+      "title": "Adversarial second audit: Gramont f.29r",
+      "job": "Tries to find the letter in print (same-volume decipherment, Le Grand page by page, Camusat, Jacqueton...). Opus, cap $12",
+      "state": "running"
+    },
+    {
+      "title": "VERIFIER: Gramont f.29r",
+      "job": "N3 for f.29r (no printed plaintext located; Le Grand read by word counts, Camusat by snippets, JSTOR and HathiTrust unreachable). Reading is partial and single-reader. $5.79",
+      "state": "done, archived"
     },
     {
       "title": "Gramont f.30r-v transcription + key",
-      "job": "Item 22, shared atlas from f.29r, two passes, key applied. Opus, cap $15",
-      "state": "running"
+      "job": "Shared atlas from f.29r committed; stopped at its $15 cap ($15.30) with the two f.30 passes unreconciled",
+      "state": "stopped at cap, archived"
     },
     {
       "title": "SOLVER: Raince to Madame 1525",
-      "job": "1526 key first (Tomokiyo, Bourdeau), then annealer with a matched 50-sign control. Opus, cap $30",
-      "state": "running"
+      "job": "Read with Tomokiyo's 1526 key: H 5,281, C 77, M 355, U 12 of 5,725. Plaintext already printed (Jacqueton 1892, P.J. XXXIII, from the decipherment at f.31); 87% letter agreement. $3.05",
+      "state": "done, archived"
     },
     {
       "title": "Raince third pass (pass C)",
@@ -496,6 +506,10 @@
     }
   ],
   "log": [
+    {
+      "when": "24 Sept, 01:19",
+      "what": "Gramont to Villandry, 20 May 1530 (fr. 2980 f.29r): verifier class N3, no printed plaintext located; the reading is partial and rests on one transcription. An adversarial second audit is now trying to find it in print; nothing goes outside the repo before it reports. Raince to Madame 1525: read with the 1526 key, but printed in Jacqueton 1892 from a decipherment in the same volume, so a contribution, not a unique solve."
+    },
     {
       "when": "24 Sept, 00:51",
       "what": "Gramont to Villandry, Rome, 20 May 1530 (fr. 2980 f.29r): the cipher passage reads with Tomokiyo and Lasry's published Gramont key, 569 signs, 538 at grade H. A verifier is now searching for it in print; nothing is called new before AUDIT.md. Raince solver started on the 50-type text (ASKS 22 decided under the owner's standing instruction)."
