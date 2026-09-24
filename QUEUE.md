@@ -5025,3 +5025,52 @@ correspondence" and "tested image"). Requests: kalliope-verbund.info ~36 (>=2s a
 2 (connection reset both times, one retry, then stopped per the good-citizen rule), github.com 2 (shallow
 clones of both solver repositories, grep only), WebSearch 5, WebFetch 2. No logins, no subagents, no images
 fetched besides the one failed han.stadtarchiv.ch test.
+
+## CS2-03/-14/-15/-27 image checks + fr.3985 no.7 leaf check (LANE N3 csCS2c, 24 September 2026 17:26 UTC)
+
+Follow-up to the 24 Sept scCS2 scout row above ("CS2-03, -14, -15, -27 are marked 'unconfirmed'"). Brief
+`.claude/briefs/runs/2026-09-24-lane-n3-csCS2c.md`. Per-row image checks and check-solved verdicts:
+
+- **CS2-03** (`ciphers/fr15564-mercoeur-1586/`): image confirmed copy-free (Gallica ark `btv1b9064027v`, full
+  IIIF). No standard edition covering a June 1586 letter to Mercœur or from Guise located (Carné's Mercœur
+  edition runs 1589-1598 only). Verdict `blocked` (edition not located, not `open`, per the LANE N3 addition).
+  No nomination.
+- **CS2-15** (`ciphers/fr2988-ranzo-1520s/`): image confirmed copy-free, folios pinned exactly (Gallica ark
+  `btv1b525240150`, ff.9r-11v = canvases f25-f30). Same cipher system as CS2-01 per Bourdeau's own catalogue
+  note (not necessarily same correspondence: CS2-01 addressed to "Garbino," this item's recipient unnamed in
+  the BnF catalogue). Tomokiyo/Cryptiana's published partial Ranzo key is about CS2-01 specifically, not this
+  item. Verdict `open`. **Nominated.**
+- **CS2-14** (`ciphers/beinecke-mellon29-elia/`): image confirmed copy-free (Yale IIIF, catalog `17388793`, 74
+  images, full resolution). Beinecke's own catalogue note that f.2v carries a self-keyed zodiac-sign legend does
+  not cover the actual ~234-letter cipher (ff.1v-2r, alchemical operations); no literature found transcribing or
+  solving it. Verdict `open`. **Nominated.**
+- **CS2-27** (`ciphers/sanguszkow-mniszech-dunin-1714/`): the exact correspondent-pair/year item located in
+  szukajwarchiwach.gov.pl's own catalogue (ref. 29/637/0/1.3/9908/9) states "No scans / photos" on its own
+  record; the item detail page itself returned a persistent site-side "portlet unavailable" error, unrelated to
+  a bot block. No image found. Row stays `copy-order`, unconfirmed becomes confirmed-negative. No nomination.
+
+**Part B, fr.3984-sega-1593 leaf check.** Fetched the fr.3985 Gallica leaf (ark `btv1b90606498`, canvases f6-f16)
+and read canvas f15 by eye: item numbered "7," dated "3 [or 4] d'aoust 1593," signed "Mauclerc," written
+**entirely in clear French with no cipher anywhere on the leaf**. Matches Goujet 1758 vol.5 pp.411-414's printed
+"Copie des Lettres du Docteur Mauclerc, envoyées de Paris au Docteur de Creil à Rome" on sender, date and
+subject (League politics: Mayenne's stalling, an oath before the papal legate, Spanish demands). Split off in
+`ciphers/fr3984-sega-1593/NOTES.md` as `found-solved`, grade F2 (plaintext already in print; no catalogue/
+solver-repo entry linked this manuscript folio to it — Bourdeau's own catalogue instead bundles it, unread, into
+CS2-04's cipher-glyph count). The four fr.3984 items (genuinely enciphered, Baudouin-Desportes) are untouched
+and stay `blocked`. ROOM posted as a retract-style note (this row's nomination-worthiness for CS2-04 as a whole
+cipher target is unaffected; no cipher-family nomination was ever posted for fr.3985 no.7 specifically).
+
+**Per-host report:** `gallica.bnf.fr` (SRU+IIIF, Gallica slot held): SRU 3, manifest 4 (2 needed one retry each
+after `ws_closed_mid_exchange` proxy resets), info.json 3, image fetches 13 (canvases f6-f16 for fr.3985, several
+needed one retry each) = ~26 total across the whole brief (CS2-03 4, CS2-15 3-4, fr.3984-sega leaf check ~18-19;
+the Part B leaf check alone was near this brief's <=25 Gallica cap, so no further Gallica calls were made after
+the two high-resolution date-crop attempts on f15). `collections.library.yale.edu`: 3 (2 browser_fetch, 1 plain
+curl to the IIIF API), well under <=15. `szukajwarchiwach.gov.pl`: 9 browser_fetch (2 URL-shape misses, 1
+homepage, 3 search submissions, 3 item-detail attempts), under <=15. `archive.org`: 0 (IA slot held but not
+needed this pass — Goujet's djvu text was already read by csED2/the orchestrator in the prior pass and quoted
+in `fr3984-sega-1593/NOTES.md`, not re-fetched). `cryptiana.web.fc2.com`: 0 (reached only via WebSearch, not
+fetched live). WebSearch: 9. `github.com`: 0.
+
+**Raw/kept/copy-free:** 4 CS2 rows checked, 2 confirmed copy-free and open (CS2-14, CS2-15, both nominated), 1
+copy-free but blocked on the edition (CS2-03), 1 stays copy-order (CS2-27, image search negative). 1 found-solved
+split off fr.3984-sega-1593 (fr.3985 no.7). **Total: 2 nominations, 2 copy-free.**

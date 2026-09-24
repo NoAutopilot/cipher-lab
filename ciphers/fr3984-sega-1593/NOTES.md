@@ -1,4 +1,8 @@
-blocked
+blocked (fr.3984 nos.6, 8, 88, 90); found-solved (fr.3985 no.7)
+
+**LANE N3 csCS2c, 24 Sept 2026 (session_0113dPptSGXZiBF5uwvtKmtc):** fr.3985 no.7 confirmed against the Gallica
+leaf and split off below ("Leaf check confirms found-solved: fr.3985 no.7"). The four fr.3984 items are
+unaffected and stay `blocked`.
 
 **LANE N3 orchestrator, 24 Sept 2026 16:34 UTC:** status corrected from `partial` (csED2) to `blocked`: `partial` in this repo means a partial reading, and nothing here is read. The four fr.3984 items stay blocked on Acta Nuntiaturae Gallicae (Sega legation, not reachable). fr.3985 no.7 is a probable `found-solved`: Mémoires de la Ligue (Goujet 1758) vol.5 pp.411-414 prints a Mauclerc-to-Creil letter of 4 Aug 1593 matching its correspondents and date; confirm against the Gallica leaf (a verifier or image check, not a solver) before splitting it off.
 
@@ -150,3 +154,48 @@ read the volume. Rule 10: no novelty claim made; this is a search result (a prin
 classification, and not a claim that fr.3985 no. 7 is "unpublished" (the opposite is being reported).
 
 Not decoded, not transcribed here (out of scope for check-solved). Rule 10: no novelty claim made.
+
+## Leaf check confirms found-solved: fr.3985 no.7 (LANE N3 csCS2c, 24 Sept 2026)
+
+Fetched the fr.3985 Gallica IIIF manifest (ark `btv1b90606498`, 485 canvases, all labelled "NP" -- no folio
+labels, so canvases were paged and read by eye) and read canvases f6 through f16 at reduced/native resolution
+(image URLs `https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f{6..16}/full/1000,/0/native.jpg`) to walk
+forward from the bundle's start and identify item "no.7" by its own marginal numbering. The bundle's items run
+roughly two canvases (address leaf + letter) apiece: item "3" (Italian, ff.7-8, dated "8 d'aoust 1593" [sic],
+signed "Giovan Piemarino," addressed "Carissimo Miser Giagino/Giacino" -- unrelated, not enciphered), item "4"
+(address leaf f10, "Abiagino... notario in Tortona"), item "5" (French, ff.11-12, dated "3 aoust 1593," signed
+illegibly, addressed to a "Monseigneur," re: a captain at Montsaugeon and a King's declaration -- unrelated), a
+blank docket leaf numbered "6" (f13) and an address leaf to "Monseigneur le Duc de Nevers... Lieutenant Général
+... en son pays de Champaigne & Brye" (f14, presumably item 6's own wrapper), then **canvas f15**: full page in a
+clear, fluent secretary-hand French, numbered "7" at the top right margin, dated at the head "3 [or possibly 4,
+period numeral shapes for 3/4 are easily confused at this resolution] d'aoust 1593," running through League
+politics -- the Duc de Mayenne's stalling, the Duc de Guise, an oath ("Iurez... Iuratem... quod... Iuraverunt")
+sworn before a papal legate not to reveal the Estates' secret articles, Spanish demands, the Cardinal-Legate,
+"Roy de Navarre" -- and **signed "Mauclerc"** at the foot (confirmed again as a vertical docket label "Mauclerc"
+on canvas f16, the leaf's verso/address side).
+
+**Finding: canvas f15 (BnF fr.3985 no.7) carries no cipher at all -- it is written in ordinary legible French
+secretary hand from the first line to the signature, with no digit groups, symbol substitutions or any other
+enciphered passage visible anywhere on the leaf.** This matches Goujet 1758 vol.5 pp.411-414's printed heading
+("Copie des Lettres du Docteur Mauclerc, envoyées de Paris au Docteur de Creil à Rome") on sender (Mauclerc),
+date (3 or 4 August 1593, within one day either by an editorial normalisation or a misreading of the manuscript's
+numeral, not independently resolved this pass) and subject matter (League secrets: Mayenne's stalling, the
+oath before the legate, Spanish demands) -- the same match csED2 already established from the print side, now
+confirmed from the image side as csED2's own flag asked for.
+
+**Verdict: found-solved, grade F2** (README's F0/F1/F2: the plaintext is already in print, Goujet 1758, but no
+catalogue, database or solver-repo entry links this specific BnF fr.3985 no.7 manuscript folio to that print --
+Bourdeau's own catalogue instead bundles it, unread, into CS2-04's "attempted, open... ~5,000 polyphonic
+glyphs" total alongside the four genuinely enciphered fr.3984 items). More precisely this item was never a
+cipher to begin with: it is a **clear-text copy** ("Copie des Lettres...", per Goujet's own heading) that
+happens to sit in a bundle of otherwise-enciphered League correspondence, so "found-solved" here means "not
+enciphered, already in print," not "a decipherment recovered." No decoding, transcription or novelty
+classification performed (rule 10; out of scope for check-solved). The four fr.3984 items (genuinely enciphered,
+Baudouin-Desportes) are untouched by this finding and stay `blocked`.
+
+Credit: none claimed for this pass beyond confirming csED2's print match against the image; the print itself
+(Goujet 1758) and its location (csED2, 24 Sept 2026) are the finds. Requests this section: gallica.bnf.fr IIIF
+manifest x1 (`btv1b90606498`), image fetches f6-f16 inclusive (11 canvases, several needed one retry after a
+`ws_closed_mid_exchange` proxy reset, logged per the good-citizen rule) plus 2 high-resolution region crops on
+f15 to try to resolve the "3" vs "4" date reading (inconclusive, not pursued further -- Gallica request budget
+for this brief, <=25, was reached here and no further Gallica calls were made this session).
