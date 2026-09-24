@@ -1,0 +1,66 @@
+code	value	grade	evidence	occurrences	other_values	note
+_0	pa	C	4	5	ei:1	minor conflict
+1	f	C	1	2	ff:1	conflict
+_1	pe	C	1	1		single attestation
+2	e	C	5	6	li:1	minor conflict
+_3	p	C	3	3		
+4	c	C	4	4		
+_4	pu	C	1	1		single attestation
+5	b	C	3	4	ua:1	minor conflict
+6	qu	C	4	4		
+7	ou	C	8	14	u:5,eu:1	conflict
+_7	q	C	3	3		
+8	x	C	2	2		
+9	y	C	2	9	bl:2,d:1,yp:1,n:1,la:1,yn:1	conflict
+10	je	C	1	2	st:1	conflict
+_11	re	C	5	7	ec:1,e:1	conflict
+_12	i	C	1	1		single attestation
+_13	r	C	4	5	er:1	minor conflict
+_14	ru	C	2	3	r:1	conflict
+15	oi	C	11	15	i:2,in:1,ir:1	conflict
+_15	sa	C	1	1		single attestation
+16	el	C	2	4	ls:1,l:1	conflict
+_16	se	C	2	3	es:1	conflict
+17	m	C	2	4	u:1,mb:1	conflict
+_17	si	C	3	3		
+18	on	C	7	14	n:5,en:1,nq:1	conflict
+_18	s	C	3	3		
+19	t	C	13	13		
+20	s	C	18	18		
+_20	ta	C	1	1		single attestation
+21	r	C	15	17	te:1,ez:1	minor conflict
+_21	te	C	2	3	ten:1	conflict
+_22	t	C	1	2	ti:1	conflict
+23	pr	C	1	1		single attestation
+_23	o	C	1	1		single attestation
+24	ui	C	2	6	i:1,t:1,us:1,0:1	conflict
+_26	ve	C	2	2		
+_28	v	C	3	4	au:1	minor conflict
+30	ca	C	4	4		
+_30	si	C	1	1		single attestation
+31	ce	C	4	4		
+33	c	C	2	2		
+_34	r	C	1	1		single attestation
+35	da	C	3	3		
+36	de	C	6	6		
+37	di	C	2	3	i:1	conflict
+_37	n	C	1	1		single attestation
+39	du	C	1	1		single attestation
+40	fa	C	2	2		
+41	e	C	1	1		single attestation
+42	fi	C	2	2		
+46	ge	C	1	1		single attestation
+50	ha	C	1	1		single attestation
+55	ja	C	1	1		single attestation
+56	n	C	1	1		single attestation
+59	ju	C	1	2	saju:1	conflict
+60	la	C	2	4	l:1,nt:1	conflict
+61	le	C	9	9		
+62	i	C	2	3	ne:1	conflict
+64	lu	C	1	1		single attestation
+66	me	C	1	1		single attestation
+71	e	C	4	7	et:1,ne:1,dan:1	conflict
+73	n	C	1	1		single attestation
+78	d	C	1	1		single attestation
+115	M.	C	2	2		
+m	a	C	11	11		

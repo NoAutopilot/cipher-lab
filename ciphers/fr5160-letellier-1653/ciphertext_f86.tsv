@@ -1,0 +1,281 @@
+line	pos	group	conf	note
+L01	1	_18	H	
+L01	2	15	H	
+L01	3	19	H	
+L01	4	_3	M	curly 3-shaped glyph, passes read _7
+L01	5	7	M	by eye single 7 (passes 9/4)
+L01	6	21	H	
+L01	7	61	H	
+L01	8	64	H	
+L01	9	9	H	
+L01	10	m	H	
+L01	11	_28	H	
+L01	12	15	H	
+L01	13	21	H	
+L01	14	2	H	
+L01	15	20	H	
+L01	16	_21	H	
+L01	17	m	H	
+L01	18	15	H	
+L02	1	18	H	
+L02	2	_30	H	curly 3/7 glyph read as 3
+L02	3	9	H	
+L02	4	37	M	curly 3/7 glyph read as 3
+L02	5	19	M	by eye 19 (passes 29)
+L02	6	_0	H	
+L02	7	_34	H	
+L02	8	M.	H	
+L02	9	35	H	
+L02	10	17	H	
+L02	11	5	H	
+L02	12	_14	H	
+L02	13	17	H	
+L02	14	_37	M	passes _37/_97; curly 3/7 glyph read as 3
+L02	15	7	H	
+L02	16	_3	M	curly 3-shaped glyph, passes read _7
+L02	17	7	H	
+L02	18	21	H	
+L03	1	60	H	
+L03	2	_28	H	
+L03	3	15	H	
+L03	4	21	H	
+L03	5	33	M	by eye 33 (A 37); curly 3/7 glyph read as 3
+L03	6	18	H	
+L03	7	19	H	
+L03	8	_13	H	
+L03	9	7	H	
+L03	10	_26	H	
+L03	11	_3	M	curly 3-shaped glyph, passes read _7
+L03	12	7	H	
+L03	13	21	H	
+L03	14	61	H	
+L03	15	_14	H	
+L03	16	15	H	
+L03	17	71	H	
+L03	18	21	H	
+L04	1	35	H	
+L04	2	18	H	
+L04	3	20	H	
+L04	4	61	H	
+L04	5	20	H	
+L04	6	23	H	
+L04	7	_12	H	
+L04	8	19	H	
+L04	9	36	H	curly 3/7 glyph read as 3
+L04	10	M.	H	
+L04	11	_18	H	
+L04	12	18	H	
+L04	13	42	H	
+L04	14	16	H	
+L04	15	10	H	
+L04	16	56	M	by eye 56 (passes 86/96); a ; stands before it
+L05	1	71	H	
+L05	2	20	H	
+L05	3	30	M	curly 3/7 glyph read as 3
+L05	4	7	H	
+L05	5	_13	H	
+L05	6	15	H	
+L05	7	20	H	
+L05	8	40	H	
+L05	9	15	H	
+L05	10	_11	H	
+L05	11	71	H	
+L05	12	_23	H	
+L05	13	21	H	
+L05	14	19	H	
+L05	15	m	H	
+L05	16	115	H	
+L05	17	36	M	curly 3/7 glyph read as 3
+L05	18	60	H	
+L05	19	4	H	
+L05	20	_13	H	
+L06	1	15	H	
+L06	2	_11	H	
+L06	3	30	M	curly 3/7 glyph read as 3
+L06	4	_0	H	
+L06	5	5	H	
+L06	6	61	H	
+L06	7	39	H	
+L06	8	71	H	
+L06	9	m	H	
+L06	10	4	H	
+L06	11	_22	H	
+L06	12	24	H	
+L06	13	18	H	
+L06	14	_17	H	
+L06	15	73	H	
+L06	16	15	H	
+L06	17	_11	H	
+L07	1	6	H	
+L07	2	_16	H	
+L07	3	_13	H	
+L07	4	15	H	
+L07	5	19	H	
+L07	6	31	H	
+L07	7	16	H	
+L07	8	61	H	
+L07	9	60	H	
+L07	10	[mais]	H	clear French
+L07	11	[aussy]	H	clear French
+L07	12	55	H	
+L07	13	9	H	
+L07	14	_0	H	
+L07	15	9	H	
+L07	16	71	H	
+L07	17	36	M	curly 3/7 glyph read as 3
+L08	1	4	H	
+L08	2	_13	H	
+L08	3	15	H	
+L08	4	_11	H	
+L08	5	6	H	
+L08	6	M.	H	
+L08	7	35	H	
+L08	8	17	H	
+L08	9	5	H	
+L08	10	_14	H	
+L08	11	18	H	
+L08	12	_16	H	
+L08	13	_18	H	
+L08	14	15	H	
+L08	15	19	H	
+L08	16	_20	M	
+L08	17	18	H	
+L09	1	24	M	
+L09	2	7	M	
+L09	3	9	M	
+L09	4	62	M	clear-word spacing only
+L09	5	2	M	
+L09	6	[et]	H	clear French
+L09	7	[c'est]	H	clear French
+L09	8	[ce]	H	clear French
+L09	9	[qui]	H	clear French
+L09	10	[donne]	H	clear French
+L09	11	[lieu]	H	clear French
+L09	12	[de]	H	clear French
+L09	13	36	M	curly 3/7 glyph read as 3
+L09	14	_17	M	
+L09	15	_11	M	
+L09	16	21	M	at gutter, a further group may be hidden
+L10	1	20	M	
+L10	2	30	M	curly 3/7 glyph read as 3
+L10	3	_28	M	
+L10	4	15	M	
+L10	5	21	M	
+L10	6	18	M	
+L10	7	6	M	
+L10	8	16	M	
+L10	9	10	M	
+L10	10	_11	M	
+L10	11	21	M	
+L10	12	66	M	
+L10	13	20	M	
+L10	14	115	M	
+L10	15	_1	M	gutter crop shows overlined 1 then a space then 7; passes read _17 (A) / _7 (B)
+L10	16	7	M	see pos 15
+L10	17	19	M	at gutter, a further group may be hidden
+L11	1	m	H	
+L11	2	_28	H	
+L11	3	15	H	
+L11	4	21	H	
+L11	5	_0	H	
+L11	6	21	H	
+L11	7	61	H	
+L11	8	m	H	
+L11	9	31	H	
+L11	10	7	H	
+L11	11	8	H	
+L11	12	_7	H	
+L11	13	24	H	
+L11	14	18	H	
+L11	15	19	H	
+L11	16	_0	H	
+L11	17	21	M	
+L11	18	19	H	
+L11	19	71	M	at gutter, a further group may be hidden
+L12	1	20	M	
+L12	2	61	M	
+L12	3	20	M	
+L12	4	m	M	
+L12	5	1	M	
+L12	6	40	M	
+L12	7	15	M	
+L12	8	_11	M	
+L12	9	20	M	
+L12	10	m	M	
+L12	11	42	M	
+L12	12	18	M	
+L12	13	5	M	
+L12	14	20	M	
+L12	15	_16	M	
+L12	16	17	M	
+L12	17	9	M	
+L12	18	60	M	at gutter, a further group may be hidden
+L13	1	61	M	recropped, read by eye
+L13	2	20	M	recropped, read by eye
+L13	3	37	M	recropped, read by eye; curly 3/7 glyph read as 3
+L13	4	_26	M	recropped, read by eye
+L13	5	21	M	recropped, read by eye
+L13	6	20	M	recropped, read by eye
+L13	7	37	M	recropped, read by eye; curly 3/7 glyph read as 3
+L13	8	20	M	recropped, read by eye
+L13	9	33	M	recropped, read by eye; curly 3/7 glyph read as 3
+L13	10	7	M	recropped, read by eye
+L13	11	21	M	recropped, read by eye
+L13	12	20	M	recropped, read by eye
+L13	13	6	M	recropped, read by eye
+L13	14	16	M	recropped, read by eye
+L13	15	61	M	recropped, read by eye
+L13	16	m	M	recropped, read by eye
+L13	17	_21	M	recropped, read by eye; at gutter, a further group may be hidden
+L14	1	24	M	recropped, read by eye
+L14	2	18	M	recropped, read by eye
+L14	3	59	M	recropped, read by eye
+L14	4	46	M	recropped, read by eye
+L14	5	_17	M	recropped, read by eye
+L14	6	30	M	recropped, read by eye; curly 3/7 glyph read as 3
+L14	7	2	M	recropped, read by eye
+L14	8	20	M	recropped, read by eye
+L14	9	_21	M	recropped, read by eye
+L14	10	7	M	recropped, read by eye
+L14	11	18	M	recropped, read by eye
+L14	12	2	M	2 1 spaced; could be one group 21
+L14	13	1	M	recropped, read by eye
+L14	14	41	M	recropped, read by eye
+L14	15	4	M	recropped, read by eye
+L14	16	19	M	recropped, read by eye
+L14	17	36	M	recropped, read by eye; curly 3/7 glyph read as 3; at gutter, a further group may be hidden
+L15	1	59	M	recropped, read by eye
+L15	2	20	M	recropped, read by eye
+L15	3	_22	M	recropped, read by eye
+L15	4	31	M	recropped, read by eye
+L15	5	24	M	recropped, read by eye
+L15	6	7	M	recropped, read by eye
+L15	7	36	M	recropped, read by eye; curly 3/7 glyph read as 3
+L15	8	_15	M	recropped, read by eye
+L15	9	50	M	recropped, read by eye
+L15	10	9	M	recropped, read by eye
+L15	11	71	M	recropped, read by eye
+L15	12	_7	M	recropped, read by eye
+L15	13	m	M	recropped, read by eye
+L15	14	9	M	recropped, read by eye
+L15	15	19	M	recropped, read by eye
+L15	16	78	M	recropped, read by eye
+L15	17	18	M	recropped, read by eye; at gutter, a further group may be hidden
+L16	1	62	M	recropped, read by eye
+L16	2	2	M	recropped, read by eye
+L16	3	7	M	recropped, read by eye
+L16	4	m	M	recropped, read by eye
+L16	5	31	M	recropped, read by eye
+L16	6	7	M	recropped, read by eye
+L16	7	8	M	recropped, read by eye
+L16	8	_7	M	recropped, read by eye
+L16	9	24	M	recropped, read by eye
+L16	10	18	M	recropped, read by eye
+L16	11	19	M	recropped, read by eye
+L16	12	2	M	recropped, read by eye
+L16	13	20	M	recropped, read by eye
+L16	14	21	M	recropped, read by eye
+L16	15	_4	M	recropped, read by eye
+L16	16	9	M	recropped, read by eye
+L16	17	62	M	recropped, read by eye
+L16	18	21	M	recropped, read by eye; at gutter, a further group may be hidden

@@ -618,3 +618,88 @@ No fetches (all six source images already on disk from the prior pass; this sess
 held by another worker). Four Sonnet subagents (two blind passes of the folio 86 cipher, two blind passes of
 the folio 87 decipherment leaf, image-only, no network). Folder size unchanged from the prior pass's ~21MB
 plus ~2.8MB of new line-crop JPEGs, still well under the 30MB cap.
+
+## Folio 86-88: key from the f.87 decipherment (24 Sept 2026)
+
+Opus reconciler+solver, LANE G. Files: `reconcile_f86.py` -> `ciphertext_f86.tsv`; `dechiffre_f87.txt`;
+`align_f86.py` -> `align_f86.tsv`, `key_1659.tsv`; `pair_control.py`; `ciphertext_f88.tsv`; `holdout_f88.py` ->
+`holdout_f88.tsv`; `decode_1659.py` -> `reading_f86.{txt,tsv}`, `reading_f88.{txt,tsv}` (`--check` exits 1 if stale).
+
+### (1) Reconciliation
+
+**f.86 cipher** (`ciphertext_f86.tsv`, 268 groups + 12 clear tokens (9 words, 3 "M.r"); conf H 139, M 129). L13-L16 recropped from
+`images/native/f169.jpg` (the old bands sat one line low and cut the right end) and read by eye:
+`crops/f86_cipher_L13-L16_recrop.jpg`. Both passes' L13-L16 were misaligned (pass A's L15/L16 were fragments, pass
+B's L15/L16 were the true L15/L16 with its L13/L14 shifted). Other settlements by eye: L01 pos 5 is a single `7`
+(passes 9/4); L02 pos 5 `19` (29); L04 pos 16 `56` (86/96); L03 pos 5 `33`. The hand has a curly, 3-shaped
+digit distinct from its straight `7`; it is read as 3 throughout (`_3` in "pour" = `_3 7 21`, where both passes
+read `_7`; `30` where passes read `70`; `36` for their `76`). This changes only group names, not which groups are
+the same. L10 pos 15: the gutter crop shows overlined 1, a space, then 7 (`_1 7`, "pe u" in "peut"); passes read
+`_17`/`_7`. Every line from L09 on runs into the gutter; a further group may be hidden at each line end (M).
+
+**f.87 decipherment** (`dechiffre_f87.txt`, pass A's diplomatic spelling, no inserted apostrophes). Line 7 is
+**M.r** (the superscript matches "termes M.r" on line 9, and f.86 L08 has a clear "M.r" before the name). Line
+26 reads **"quoy y pense"** diplomatically: the fourth letter has a y-descender like the following "y" (sense
+would want "qu'on"; the scribe's form is kept). Pass B's unflagged "bon", "essayassions", "quavoir" adopted.
+
+### (2) Pairing: yes
+
+- The clear words in the cipher sit where f.87 has them, in the same order: "M.r" before the name (twice),
+  "M.r son fils", "mais aussy" (f.87 "mais aussi"), "et c'est ce qui donne lieu de" (f.87 "et cest ce qui donne
+  à lieu de"). f.86's prose ends "...a Monsieur son filz" and f.87 begins "Soit pour le luy avoir esté ainsi dit".
+- Repeats line up: `_3 7 21` three times where "pour" is three times; `m 31 7 8 _7 24 18 19` twice (L11, L16)
+  where "à ceux qui ont" is twice.
+- Length: 268 groups (between the clear words) for 412 letters of f.87 paragraph 1 (1.5 letters per group; the table has letters,
+  digraphs and syllables).
+- Matched control (`pair_control.py`): key consistency (share of group occurrences taking their group's modal
+  value) after unseeded hard-EM: real 0.321, letter-shuffled plaintext 0.265-0.287 (5 seeds), f.87 paragraph 2
+  cut to the same lengths 0.276. With seeds: real 0.795, shuffled 0.362, paragraph 2 0.388 (the seeds come from
+  the real pairing, so this favours it and is only supporting).
+
+**f.87 paragraph 2 deciphers f.88, not f.86.** f.88's cipher follows the clear "peut estre que M.r" and reads
+"de Savoye allant accompagner M.e sa soeur jusques à Parme ...", which is f.87 paragraph 2. f.88's cipher
+stops at "celle la"; the rest of paragraph 2 ("et il seroit bon ... qu'on/quoy y pense") presumably continues on
+canvas 173 (not fetched, below). So f.87 covers two ciphered passages, f.86 and f.88. Whether f.86-88 is one
+letter of 21 Nov 1659 (with f.87 inserted) or f.88 is a separate letter was not settled: the census read canvas
+173's date as "27 [mois] 1659", unconfirmed without the image.
+
+### (3) Key
+
+`key_1659.tsv`: **65 groups**, every value grade C (known plaintext from the f.87 decipherment), with evidence =
+occurrences aligned to the value / total occurrences, other values seen, and a `conflict` flag where the modal
+value holds under 75% of occurrences (19 groups) or `minor conflict` (6). 20 values are single attestations.
+Seeds for the EM were read by hand from the repeats above and are listed in `align_f86.py`; every value is
+re-estimated. Examples: `m`=a (11/11), `20`=s (18/18), `19`=t (13/13), `21`=r (15/17), `15`=oi (11/15),
+`61`=le (9/9), `36`=de, `35`=da, `_0`=pa, `115`=M.e/M.r, `_3`=p, `7`=ou/u. It is a mixed table: single letters,
+many digraphs/syllables (pa, da, de, le, si, ca, fi, ju, ...), overlined figures as a separate series, the
+lowercase `m` as "a". Known conflicts: `7` ou 8 / u 5; `18` on 7 / n 5; `9` y 2 of 9 (spread); `24` ui 2 of 6;
+`71` e 4 of 7.
+
+Held-out checks: (a) segment hold-outs within f.86 (`align_f86.py --holdout S2|S5|S4|S1`): 22/37, 8/16, 7/11,
+16/25 groups take the same value as in the full alignment; misses are mostly homophone-level (u/ou, m/mb).
+(b) **f.88 against f.87 paragraph 2, key from f.86 only** (`holdout_f88.py`): 153 groups, 145 keyed; the f.86
+key value equals the aligned plaintext for **114/145**; control (paragraph 2 letters shuffled, 5 seeds):
+28-35/145. Misses are again mostly sub-part mismatches (on vs n, el vs l, re vs e).
+
+### (4) Readings and grades
+
+`decode_1659.py` writes per-token readings. Grade C where the key value is attested and the group was read at
+conf H, M where the group's reading is M or its key row is `conflict`, U unkeyed, P clear in the manuscript.
+
+- **f.86**: C 81, M 187, U 0, P 12. It is the key's own training text, and its plaintext is the f.87
+  decipherment itself (paragraph 1); the reading is a regeneration check, not new text.
+- **f.88** (single reader, this worker, by eye from the native crop; 153 groups, 8 lines): C 67, M 78, U 8
+  (`13`=gn, `3`, `65`=mar, `26`=be, `27`=bi, `_19`=su, `70`=na, `_10`, from the alignment only, not in the key),
+  P 5. The reading runs "de sa v y e a el la on t a c c m pa ? e r M. / sa s e ou r ju s qu a pa r me p ou r r oi t
+  pr ...", i.e. f.87 paragraph 2 from "de Savoye" to "celle la". This is the f.87 text read back through the
+  key, not a new text.
+
+Not found / not done: canvas 173 (rest of the f.88 cipher and its date) was not fetched; f.88's own alignment
+could add the 8 unkeyed groups and more evidence to the key (suggestion: extend the key from f.88 + f.87 para 2
+with f.86 held out, the reverse of check (b)). The folio 1-3 (1653) letters use a different, symbol+numeral
+system and are untouched by this key. No novelty wording, no novelty class; that is for a verifier.
+
+### Requests this pass
+
+gallica.bnf.fr: 4 (canvas 172 native: 1 reset, 1 success on retry; canvas 173 native: 2 resets, stopped at the
+one-retry limit and logged). No other host. No subagents.
