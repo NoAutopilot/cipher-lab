@@ -154,6 +154,18 @@ Do not settle disagreements.tsv from this brief; do not decode; do not classify 
 | 4610 | p1-p3 | 109 | 1934 | 1899 | 1558/1981 = 78.6% |
 | 4611 | p1-p3 | 94 | 1692 | 1626 | 1201/1755 = 68.4% |
 | 4612 | p1-p2 | 59 | 1097 | 1108 | 559/1170 = 47.8% |
+| 4616 | p1 | 24 | 326 | 321 | 274/327 = 83.8% |
+
+Totals across the four target letters: 286 crop lines, passA 5049 tokens / passB 4954 tokens (excluding header),
+combined agreement 3592/5233 aligned columns = 68.6%. Agreement is noticeably lower on the two letters whose
+subagents flagged the densest closing-prose/signature passages (4611, 4612: dense 16th-century secretary-hand
+cursive at crop resolution) than on 4610 and 4616, whose body is mostly numeral groups (higher-confidence
+material for a blind pass). `recon/<briefnr>/disagreements.tsv` lists every column the two passes disagree on,
+for whoever reconciles next; this brief did not settle any of them, decode anything, or classify novelty. Not
+this brief's scope, but worth recording for the next worker: with R12's sibling passes (`passA_sib.tsv`/
+`passB_sib.tsv`, `recon_sib/`) also on disk, the alignment-recovery step named in this file's "Next step" section
+above (figure-to-letter mapping from 4613/4615's imaged decipherments, tested against 4610/4611/4612/4616) is
+now unblocked on the transcription side for the first time.
 
 ## R12: sibling passes, 24 September 2026 (LANE R worker R12)
 

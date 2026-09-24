@@ -1,0 +1,54 @@
+line	col	A	B	flagged	crop
+p1_L04	1	=Monsr	-	A	
+p1_L04	2	=frere	=Monsigneur	A	
+p1_L04	5	=este	=ceste	AB	
+p1_L04	6	=fort	=heure	B	
+p1_L04	7	=iii	iii	AB	
+p1_L04	8	=avons	=anitte	AB	
+p1_L04	11	=Goch	=goese	AB	
+p1_L05	17	1	-		
+p1_L05	22	81	91		
+p1_L05	23	23	21		
+p1_L06	16	9	4		
+p1_L06	18	40	90		
+p1_L07	4	72/16	32/16		
+p1_L07	14	82	89		
+p1_L07	20	3	31		
+p1_L09	3	735/71	335/71		
+p1_L09	14	25/81	25/51		
+p1_L10	13	=iii	iii	B	
+p1_L11	20	1	-	A	
+p1_L12	5	118	115		
+p1_L12	7	123	120		
+p1_L12	20	13	132	A	
+p1_L13	20	34	3	A	
+p1_L14	1	75	78		
+p1_L14	17	5	6		
+p1_L15	11	9	4	AB	
+p1_L15	20	8	81		
+p1_L16	8	=Verrons	=Verons		
+p1_L16	11	118	116		
+p1_L16	15	111	144		
+p1_L16	18	81	89		
+p1_L16	19	114	144		
+p1_L17	1	25	-	A	
+p1_L17	3	21	31		
+p1_L17	11	102	101		
+p1_L17	15	121	124		
+p1_L18	1	=attendant	=faict	AB	
+p1_L18	2	=de	=Je		
+p1_L18	4	=souhaicte	=supplie	AB	
+p1_L19	1	=coppendant	-	A	
+p1_L19	3	=que	=qui	AB	
+p1_L19	8	=feray	=ferons		
+p1_L19	14	=vous	=Vous		
+p1_L20	1	=Vostre	-	A	
+p1_L20	2	=bon	=La	B	
+p1_L20	3	=frere	=Saincte		
+p1_L20	5	=serviteur	=heureuse	B	
+p1_L20	7	-	=Longue		
+p1_L20	8	=Loyaulx	=vie		
+p1_L20	9	=en	=et	A	
+p1_L20	10	=fait	=faict	A	
+p1_L20	14	=Weess	=Wees	AB	
+p1_L21	4	=lan	=l'an	B	
