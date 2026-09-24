@@ -620,7 +620,52 @@ code for 451/495, 359 cipher codes (script_code != `_`), 19 line strips written
 (`strips/f55v_L01..L19.jpg`). `f55v_boxlist_for_passes.tsv` built from `f55v_boxes.tsv` (line, pos,
 script_code, script_marks, share), same column set as `f54v_boxlist_for_passes.tsv`.
 
-Progress continues below as pass A / pass B / reconciliation land.
+**Pass A.** This worker read all 19 line strips (`strips/f55v_L01..L19.jpg`), zoomed in (fresh 5-6x crops from
+`glyphs/crops/f55v.png`, a small scratch script, not committed) on every low-share (<0.85) box and any
+high-share box whose strip appearance looked visually odd, and cross-checked shapes against
+`glyphs/atlas_part1.png`/`atlas_part2.png`. Unlike J's f.54v pass A (0 corrections out of 502), this pass
+diverged from the classifier's boxlist proposal on **36 of 495 boxes** (`passA_f55v.tsv`: 459 confirm/plain,
+36 correct, 0 split/delete). Most corrections cluster in one recurring pattern, distinct from J's confusable
+code-pairs: **this leaf's classifier frequently mis-tags plain Italian cursive letters inside legible running
+words as one of the letter-shaped sign codes** -- S, N, H, L, w, m, nt, f, Lx, S7, phi all had at least one
+box corrected back to plain within an otherwise-legible word (examples: "ancora" mid-word at line1 pos3;
+"Bisogna" at line4 pos24-27, four consecutive corrections; "Sanza...questo" at line12 pos1/4/11; "penso" at
+line12 pos23; ".S." -- the "V.S." Vostra Signoria abbreviation -- corrected three separate times at line14
+pos20, line17 pos1, line18 pos6; "intenderà" at line14 pos18-19 and line17 pos18-21; "La" at line18 pos8-9).
+The reverse (classifier plain at share 1.00 that is actually a sign) also occurred twice (line1 pos8, an
+o.+g merge; line4 pos19, a clear eps). One merge candidate flagged but not split (line1 pos8, box rh~2.18):
+pass A kept it as a single corrected code (`o.`) with a note for pass B/settling to re-examine, rather than
+inventing a pos+0.5 row itself (J's split convention was pass-B-only on f.54v).
+
+**Pass B (blind Sonnet subagent, one spawn).** Briefed with the boxlist, the strips, the atlas plates, and
+J's confusable-code pairs (eps/e, h/bh, tee/S4, psi/y, w/e, o./dl/h/tee/S7/#/+, Z/L); never opened
+`passA_f55v.tsv`, confirmed in its own report. It independently found the same sign/plain-letter confusion
+pattern this worker had (e.g. its line2 "a S.M.ta", line3 "Cosi volsi mr si contento restassino", line8
+"Assaj Cose", line9 "mi ha ... un" -- all previously multi-coded at share up to 1.00, corrected to plain) and
+the reverse case (classifier-plain boxes that are real signs, e.g. line2 pos18 `o.`, line6 pos16 `S7`, line9
+pos11 `+`, pos14 `S`). **Stopped at cost cap after line 11 of 19** (`passB_f55v.tsv`, 296 rows: lines 1-11's
+293 boxlist positions + 2 split rows -- 235 confirm, 54 correct, 4 delete [3 stray ink, 1 paper-fold/damage
+artifact at line10 pos5, dist=11.57, far outside the normal 2-6 range], 2 split [line1, line11, each one box
+holding two merged signs]); lines 12-19 (about 202 boxlist positions) **not attempted**. Committed and pushed
+in two checkpoints (lines 1-6, lines 7-11).
+
+**Stopped here: no gate, no reconciliation, no reading.** `get_session` on this worker's own session id,
+checked immediately after the pass-B subagent's hand-back, reported **cost_usd $12.59 against the $12 cap**
+(the subagent's own self-check mid-run had already read $12.47) -- the first time in this job that
+`get_session` returned a cost figure at all (every check before and during pass A returned none, the
+"rate-limit-plan session" pattern other LANE R5 workers hit; it populated only once the pass-B subagent's
+usage was folded in). Per the common brief's cost-stop rule and RETRO-2026-09-24f (worker A's f.55r
+interruption at $9.37 with no per-step checkpoint), stopping now rather than spending further on a second
+pass-B continuation, `recon_box.py`, or settling: **pass A is complete (495/495) and committed; pass B is
+partial (296/~497 rows, lines 1-11 of 19) and committed; no base-code agreement figure exists yet because
+pass B does not yet cover the whole leaf.** This job ran markedly more expensively than H1's concurrent
+f.55r pass B (which finished all 553 boxes, gated at 84.8%, and settled 61 disagreements for about $7 total
+by resuming one subagent across five `SendMessage` turns rather than doing an unusually thorough from-scratch
+pass A first) -- worth noting for whichever worker picks up f.55v's remaining lines 12-19: resume pass B the
+same way (append to `passB_f55v.tsv`, do not overwrite lines 1-11), rather than re-running pass A, which is
+already done and cost most of this job's budget.
+
+Requests: none (disk only). Subagents: 1 (Sonnet, pass B, blind to pass A, stopped partway through at cap).
 
 ## Leaf f.55r (24 Sept 2026, LANE R5 H1)
 
