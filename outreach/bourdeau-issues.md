@@ -1,6 +1,6 @@
-status: ready (issues 1 and 2: gate 2 met 24 Sept 2026 for Gramont and Thurloe P4; you post them at github.com/dbourdeau/cyphersolver/issues/new from your own account, since a cloud session cannot write to another account's repository)
+status: ready 24 Sept 2026 (two issues, post from your account)
 subject: see each issue title below
-to: github.com/dbourdeau/cyphersolver/issues/new (you, from your GitHub account; an issue, never a pull request)
+to: github.com/dbourdeau/cyphersolver/issues/new
 targets: ciphers/thurloe-printed, ciphers/fr2980-gramont
 links: gramont-folder=https://github.com/noautopilot/cipher-lab/tree/main/ciphers/fr2980-gramont; gramont-audit=https://github.com/noautopilot/cipher-lab/blob/main/ciphers/fr2980-gramont/AUDIT.md; gramont-f29r-reading=https://github.com/noautopilot/cipher-lab/blob/main/ciphers/fr2980-gramont/reading.txt; gramont-f30-reading=https://github.com/noautopilot/cipher-lab/blob/main/ciphers/fr2980-gramont/reading_f30.txt; gramont-f29r-image=https://gallica.bnf.fr/ark:/12148/btv1b9059991d/f31.item; gramont-f30r-image=https://gallica.bnf.fr/ark:/12148/btv1b9059991d/f32.item; gramont-print=https://archive.org/details/collectiondesord09acad/page/61; thurloe-folder=https://github.com/noautopilot/cipher-lab/tree/main/ciphers/thurloe-printed; thurloe-audit=https://github.com/noautopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md; P4-reading=https://github.com/noautopilot/cipher-lab/blob/main/ciphers/thurloe-printed/pool_1654/reading_P4.txt; P4-image-and-print=https://archive.org/details/collectionofstat03thur/page/187; P4-key-print=https://archive.org/details/collectionofstat03thur/page/274
 drafted: 24 Sept 2026, verifier V5 (LANE V4). Nothing posted.
