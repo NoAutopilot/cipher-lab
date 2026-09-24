@@ -147,3 +147,12 @@ continuously. Worker: LANE R5 F1 (Opus, session_019BqK12YeUXwrP5nNtCMiLi).
 ## Status blocked (24 Sept 2026, 20:52 UTC, LANE R5 orchestrator)
 
 Key no.60 applied mechanically by LANE R5 F1-F3 does not read: blind pass agreement 37-55%, blocked on identifying this copyist's sign forms, not on the key. Next: LANE R5 G builds a no.60 sign atlas from the interlined leaves of the same copyist (fr.3985 f.126-130, fr.3986 f.151/152) and re-runs F1's leaves; if that passes 80%, this letter follows.
+
+## Calibrated re-run (24 Sept 2026, LANE R5 G)
+
+Atlas built (`tools/keys/key60_atlas/`, 80 instances, 42 tags, 67 of 80 agree with key60.tsv; the ten form/value
+conflicts are tabled in `tools/keys/key60_atoms.md`, section "Atlas from interlined leaves"). The re-run of pass A and a
+blind pass B on this target's two leaves was **not started: capped before the re-run** (F1's comparable cost was about
+$3.5 a leaf for pass A+B; what was left of G's $8 cap after the atlas was less than one leaf). Status unchanged
+(blocked). Suggestion: a Sonnet pass B given only `contact_sheet.png` and the conflict table, then an Opus pass A, one
+leaf (f.176, 12 short runs) first, gate 80%.

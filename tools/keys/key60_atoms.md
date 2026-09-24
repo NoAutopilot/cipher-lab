@@ -32,3 +32,33 @@ joins atoms into key signs afterwards, so passes never have to decide segmentati
 
 Doubtful sign: append `?` to the tag (`ß?`). Unreadable: `??`. Clear French words inside a cipher line: one
 row with the sign column `=word` (e.g. `=de`). A superscript letter written above (e.g. `te` over Ma): `=^te`.
+
+## Atlas from interlined leaves (LANE R5 G, 24 Sept 2026)
+
+`tools/keys/key60_atlas/`: `atlas.tsv` (80 sign instances, 42 distinct tags, each with the contemporary interlined value
+it sits under), `contact_sheet.png` (one crop per row, the box marks the approximate centre -- centres were placed from
+reduced views and can be off by one sign; read the row's `context` column to pick the right glyph), `src/` (the two native
+regions and three 1000 px overviews, `src/manifest.json` with URL and sha1). Sources: fr.3985 canvas 264 (Instruction of
+31 Aug 1593, gloss written ABOVE each cipher line on this page, not below as Bourdeau's atlas60.md says for part of it --
+the "de la couronne" run proves the direction: `g λ < X ++ ꝺo v T` sits under the gloss "de la couronne") and fr.3986
+canvas 298 (f.152, Henri IV to Nevers, Oct 1593, gloss above). c.298 is a neater office hand than c.264 and than the
+Revol copies; c.264 is the one to calibrate against. The values are the model's alignment of sign to gloss (grade S, not H).
+
+Agreement with key60.tsv: 67 yes, 7 form (value agrees, this hand writes the sign so it reads as another tag), 2 partial,
+4 no. The places where this hand and the key tags part company, which is what the F1-F3 passes tripped on:
+
+| this hand writes | read as tag | gloss value | key60 says | consequence for a pass |
+|---|---|---|---|---|
+| `+o` | `to` | le | to = i, +o = le | the two are one shape here; decide by context (le vs i) |
+| `20` | `ro` | u | 20 = u, ro = me | "ro" in a pass is probably 20 = u |
+| `++` | `ll` / `11` with a bar | u | ++ = u | transcribe `ll`/`11` as `++` |
+| `φ` | `f` with a loop | ca | f = e, φ = ca | a looped f is ca, a plain f is e |
+| `X+` and `X++` | the same barred x | se / si | X+ = se, X++ = si | the hand does not separate them; value from context |
+| `L40` | `Lo` (no 4) | qui | L40 = qui, Lo = fi | Lo before a vowel-less run is qui |
+| `ꝑ` | p with stroke | e | ꝑ = so (M) | conflicts with the key; one instance only |
+| `v` | open v | u (twice), o (once) | v = li, v' = u | v is not li in this hand |
+| `σ` | o with tail | li | none | not in the key |
+| `ll4` | ll with small 4 | p | none (10 = p, v+ = p) | not in the key; possibly v+ |
+
+Not done (cap): the rest of c.264, c.266, c.268 and the other lines of c.298, which would add the rarer syllable and word
+signs; f.151 (c.297 overview fetched, not cut). Suggestion: extend from c.264's lower half first (same hand as the copies).

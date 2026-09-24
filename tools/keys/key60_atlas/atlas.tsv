@@ -1,0 +1,84 @@
+# key no.60 sign atlas from interlined leaves (LANE R5 G, 24 Sept 2026). leaf 264 = fr.3985 canvas 264 (Instruction 31 Aug 1593,
+# region pct:27,18,65,66 native); 298 = fr.3986 canvas 298 (f.152, Henri IV to Nevers, Oct 1593, region pct:13,9,73,22 native).
+# x,y = centre in that region image (approximate, from reduced views). value = the contemporary interlined gloss, aligned by the model (grade S).
+sign_id	leaf	x	y	tag	form	interlined_value	key60	agreement	context
+A01	264	138	1542	λ	lambda, long left leg	la	λ=la	yes	La [seconde]
+A02	264	220	1542	X+	x-cross with extra bars	se	X+=se	yes	[se]conde
+A03	264	293	1542	∝	alpha / fish loop	co	∝=co	yes	se[co]nde
+A04	264	359	1542	T	T	n	T=n	yes	seco[n]de
+A05	264	408	1542	g	g	de	g=de	yes	secon[de]
+A06	264	522	1542	X++	same barred x as X+	si	X++=si	yes	si; same form as X+ in this hand
+A07	264	603	1542	v	v, open	u	v'=u (v=li)	partial	v[n]; tick of v' not seen
+A08	264	652	1542	ß	beta	n	ß=n	yes	v[n]
+A09	264	758	1542	ll4	ll with small 4	p	-	no	[p]rince; no key sign; maybe cursive v+ or 10
+A10	264	897	1542	3	3	ri	3=ri	yes	p[ri]nce
+A11	264	938	1542	⊥	inverted T	n	⊥=n	yes	pri[n]ce
+A12	264	987	1542	18	18	ce	18=ce	yes	prin[ce]
+A13	264	1060	1542	φ	f-like with loop (reads as f)	ca	φ=ca (f=e)	form	[ca]tholique; this hand's φ looks like f
+A14	264	1117	1542	e	e	to	e=to	yes	ca[to]lique
+A15	264	1207	1542	σ	sigma / o with tail	li	-	no	cato[li]que; no key sign
+A16	264	1272	1542	pi	pi with i	que	pi=que	yes	catoli[que]
+A17	264	1338	1542	E	epsilon	re	E=re	yes	[re]connu
+A18	264	1387	1542	∝	alpha	co	∝=co	yes	re[co]nnu
+A19	264	1582	1543	⊥	inverted T	n	⊥=n	yes	reco[n]nu
+A20	264	1722	1543	T	T	n	T=n	yes	recon[n]u
+A21	264	1764	1543	v	v	u	v'=u (v=li)	partial	reconn[u]
+A22	264	269	1676	f	f	e	f=e	yes	[e]rreur
+A23	264	383	1676	ꝺo	cursive d + o	r	ꝺo=r	yes	e[r]reur
+A24	264	440	1676	E	epsilon	re	E=re	yes	er[re]ur
+A25	264	497	1676	++	written as ll with a bar (Bourdeau's ⱶⱶ)	u	++=u	form	erre[u]r
+A26	264	775	1676	8o	8 joined to o (∞-like)	raison	8o=raison	yes	raison
+A27	264	856	1676	12	12	du	12=du	yes	[du]quel
+A28	264	905	1676	pi	pi with i	que	pi=que	yes	du[que]l
+A29	264	979	1676	cH	c with vertical stroke (¢)	l	cH=l	yes	duque[l]
+A30	264	150	1774	10	10	p	10=p	yes	[p]ere
+A31	264	191	1774	ꝑ	p with stroke through descender	e	ꝑ=so (M)	no	p[e]re
+A32	264	244	1774	E	epsilon	re	E=re	yes	pe[re]
+A33	264	285	1774	n	n / r-shaped	et	n=et	yes	et
+A34	264	342	1774	+o	written like 'to'	le	+o=le (to=i)	form	le; this hand's +o reads as to
+A35	264	424	1774	y	y	s	y=s|ve	yes	[s]aint
+A36	264	473	1774	x	x	a	x=a|d	yes	s[a]int
+A37	264	571	1774	T	T	n	T=n	yes	sai[n]t
+A38	264	758	1901	g	g	de	g=de	yes	[de] la couronne
+A39	264	824	1901	λ	lambda	la	λ=la	yes	de [la]
+A40	264	889	1901	∠	< angle	c	∠=c	yes	[c]ouronne
+A41	264	946	1901	X	x-cross	o	X=o	yes	c[o]uronne
+A42	264	1011	1901	++	ll with bar	u	++=u	form	co[u]ronne
+A43	264	1085	1901	ꝺo	d + o	r	ꝺo=r	yes	cou[r]onne
+A44	264	1158	1901	v	v	o	-	no	cour[o]nne; v as o, not in key
+A45	264	1232	1901	T	T	n	T=n	yes	couro[n]ne
+A46	264	2283	1771	g	g	de	g=de	yes	[de]clare
+A47	264	2349	1771	∠	< angle	c	∠=c	yes	de[c]lare
+A48	264	2399	1771	λ	lambda	la	λ=la	yes	dec[la]re
+A49	264	2448	1771	E	epsilon	re	E=re	yes	decla[re]
+A50	264	2803	1771	g3	g+3 (gz)	p	g3=p	yes	[p]rive
+A51	264	2861	1771	ꝺo	d + o	r	ꝺo=r	yes	p[r]ive
+A52	264	2919	1771	to	t + o	i	to=i	yes	pr[i]ve
+A53	298	351	342	L40	L + o (4 not written)	qui	L40=qui (Lo=fi)	form	[qui] retardast
+A54	298	456	342	E	epsilon	re	E=re	yes	[re]tardast
+A55	298	494	342	8	8	t	8=t	yes	re[t]ardast
+A56	298	541	342	c	c	a	c=s|a|y	yes	ret[a]rdast
+A57	298	589	342	ꝺo	d + o	r	ꝺo=r	yes	reta[r]dast
+A58	298	655	342	=	two bars	d	==d	yes	retar[d]ast
+A59	298	703	342	c	c	a	c=s|a|y	yes	retard[a]st
+A60	298	750	342	r	r	s	r=s	yes	retarda[s]t
+A61	298	798	342	8	8	t	8=t	yes	retardas[t]
+A62	298	337	446	8	8	t	8=t	yes	[t]outes
+A63	298	380	446	π	pi	o	π=o	yes	t[o]utes
+A64	298	427	446	20	written like 'ro'	u	20=u (ro=me)	form	to[u]tes; this hand's 20 reads as ro
+A65	298	1520	446	L40	L + o	qui	L40=qui	form	[qui] doibt
+A66	298	1605	446	=	two bars	d	==d	yes	[d]oibt
+A67	298	1653	446	π	pi	o	π=o	yes	d[o]ibt
+A68	298	1710	446	to	t + o	i	to=i	yes	do[i]bt
+A69	298	332	551	n	n	et	n=et	yes	et
+A70	298	446	551	E	epsilon	re	E=re	yes	[re]spect
+A71	298	484	551	r	r	s	r=s	yes	re[s]pect
+A72	298	589	551	ue	u + e	e	ue=e	yes	resp[e]ct
+A73	298	646	551	//	two slants	c	//=c	yes	respe[c]t
+A74	298	684	551	8	8	t	8=t	yes	respec[t]
+A75	298	1121	551	=	two bars	d	==d	yes	en[d]roict
+A76	298	1168	551	ꝺo	d + o	r	ꝺo=r	yes	end[r]oict
+A77	298	1235	551	π	pi	o	π=o	yes	endr[o]ict
+A78	298	1292	551	to	t + o	i	to=i	yes	endro[i]ct
+A79	298	1349	551	//	two slants	c	//=c	yes	endroi[c]t
+A80	298	1406	551	8	8	t	8=t	yes	endroic[t]

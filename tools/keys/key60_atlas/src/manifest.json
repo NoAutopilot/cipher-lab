@@ -1,0 +1,37 @@
+[
+ {
+  "file": "c264_region.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f264/pct:27,18,65,66/full/0/native.jpg",
+  "bytes": 2277570,
+  "sha1": "1e99dfd7405670027638379e126d04bc1742a816",
+  "fetched": "2026-09-24"
+ },
+ {
+  "file": "f3986_c298_region.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f298/pct:13,9,73,22/full/0/native.jpg",
+  "bytes": 955393,
+  "sha1": "d6f29a01054060c688829889999535f51f02d543",
+  "fetched": "2026-09-24"
+ },
+ {
+  "file": "c264_1000.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f264/full/,1000/0/native.jpg",
+  "bytes": 137319,
+  "sha1": "fa560128d7b8649bb5fc445b590cdd90f3c9f88a",
+  "fetched": "2026-09-24"
+ },
+ {
+  "file": "f3986_c297_1000.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f297/full/,1000/0/native.jpg",
+  "bytes": 171348,
+  "sha1": "1e4b1a9578c1e8de6816bcd6e5d8543d12d43f0d",
+  "fetched": "2026-09-24"
+ },
+ {
+  "file": "f3986_c298_1000.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f298/full/,1000/0/native.jpg",
+  "bytes": 165440,
+  "sha1": "7edd9fada45db65325e6c9668764d9864c65fe81",
+  "fetched": "2026-09-24"
+ }
+]

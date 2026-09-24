@@ -1,0 +1,81 @@
+# leaf	view	x0	y0	scale	vy	vx	tag	form	value	key60	agree	note
+264	L1	0	1420	0.816	150	170	λ	lambda, long left leg	la	λ=la	yes	La [seconde]
+264	L1	0	1420	0.816	150	270	X+	x-cross with extra bars	se	X+=se	yes	[se]conde
+264	L1	0	1420	0.816	150	360	∝	alpha / fish loop	co	∝=co	yes	se[co]nde
+264	L1	0	1420	0.816	150	440	T	T	n	T=n	yes	seco[n]de
+264	L1	0	1420	0.816	150	500	g	g	de	g=de	yes	secon[de]
+264	L1	0	1420	0.816	150	640	X++	same barred x as X+	si	X++=si	yes	si; same form as X+ in this hand
+264	L1	0	1420	0.816	150	740	v	v, open	u	v'=u (v=li)	partial	v[n]; tick of v' not seen
+264	L1	0	1420	0.816	150	800	ß	beta	n	ß=n	yes	v[n]
+264	L1	0	1420	0.816	150	930	ll4	ll with small 4	p	-	no	[p]rince; no key sign; maybe cursive v+ or 10
+264	L1	0	1420	0.816	150	1100	3	3	ri	3=ri	yes	p[ri]nce
+264	L1	0	1420	0.816	150	1150	⊥	inverted T	n	⊥=n	yes	pri[n]ce
+264	L1	0	1420	0.816	150	1210	18	18	ce	18=ce	yes	prin[ce]
+264	L1	0	1420	0.816	150	1300	φ	f-like with loop (reads as f)	ca	φ=ca (f=e)	form	[ca]tholique; this hand's φ looks like f
+264	L1	0	1420	0.816	150	1370	e	e	to	e=to	yes	ca[to]lique
+264	L1	0	1420	0.816	150	1480	σ	sigma / o with tail	li	-	no	cato[li]que; no key sign
+264	L1	0	1420	0.816	150	1560	pi	pi with i	que	pi=que	yes	catoli[que]
+264	L1	0	1420	0.816	150	1640	E	epsilon	re	E=re	yes	[re]connu
+264	L1	0	1420	0.816	150	1700	∝	alpha	co	∝=co	yes	re[co]nnu
+264	L1b	1500	1420	0.825	150	100	⊥	inverted T	n	⊥=n	yes	reco[n]nu
+264	L1b	1500	1420	0.825	150	270	T	T	n	T=n	yes	recon[n]u
+264	L1b	1500	1420	0.825	150	320	v	v	u	v'=u (v=li)	partial	reconn[u]
+264	L2	0	1570	0.816	130	330	f	f	e	f=e	yes	[e]rreur
+264	L2	0	1570	0.816	130	470	ꝺo	cursive d + o	r	ꝺo=r	yes	e[r]reur
+264	L2	0	1570	0.816	130	540	E	epsilon	re	E=re	yes	er[re]ur
+264	L2	0	1570	0.816	130	610	++	written as ll with a bar (Bourdeau's ⱶⱶ)	u	++=u	form	erre[u]r
+264	L2	0	1570	0.816	130	950	8o	8 joined to o (∞-like)	raison	8o=raison	yes	raison
+264	L2	0	1570	0.816	130	1050	12	12	du	12=du	yes	[du]quel
+264	L2	0	1570	0.816	130	1110	pi	pi with i	que	pi=que	yes	du[que]l
+264	L2	0	1570	0.816	130	1200	cH	c with vertical stroke (¢)	l	cH=l	yes	duque[l]
+264	L3	0	1730	0.816	55	185	10	10	p	10=p	yes	[p]ere
+264	L3	0	1730	0.816	55	235	ꝑ	p with stroke through descender	e	ꝑ=so (M)	no	p[e]re
+264	L3	0	1730	0.816	55	300	E	epsilon	re	E=re	yes	pe[re]
+264	L3	0	1730	0.816	55	350	n	n / r-shaped	et	n=et	yes	et
+264	L3	0	1730	0.816	55	420	+o	written like 'to'	le	+o=le (to=i)	form	le; this hand's +o reads as to
+264	L3	0	1730	0.816	55	520	y	y	s	y=s|ve	yes	[s]aint
+264	L3	0	1730	0.816	55	580	x	x	a	x=a|d	yes	s[a]int
+264	L3	0	1730	0.816	55	700	T	T	n	T=n	yes	sai[n]t
+264	L3c	0	1730	0.816	210	930	g	g	de	g=de	yes	[de] la couronne
+264	L3c	0	1730	0.816	210	1010	λ	lambda	la	λ=la	yes	de [la]
+264	L3c	0	1730	0.816	210	1090	∠	< angle	c	∠=c	yes	[c]ouronne
+264	L3c	0	1730	0.816	210	1160	X	x-cross	o	X=o	yes	c[o]uronne
+264	L3c	0	1730	0.816	210	1240	++	ll with bar	u	++=u	form	co[u]ronne
+264	L3c	0	1730	0.816	210	1330	ꝺo	d + o	r	ꝺo=r	yes	cou[r]onne
+264	L3c	0	1730	0.816	210	1420	v	v	o	-	no	cour[o]nne; v as o, not in key
+264	L3c	0	1730	0.816	210	1510	T	T	n	T=n	yes	couro[n]ne
+264	L3b	1500	1730	0.825	50	950	g	g	de	g=de	yes	[de]clare
+264	L3b	1500	1730	0.825	50	1030	∠	< angle	c	∠=c	yes	de[c]lare
+264	L3b	1500	1730	0.825	50	1090	λ	lambda	la	λ=la	yes	dec[la]re
+264	L3b	1500	1730	0.825	50	1150	E	epsilon	re	E=re	yes	decla[re]
+264	L3b	1500	1730	0.825	50	1580	g3	g+3 (gz)	p	g3=p	yes	[p]rive
+264	L3b	1500	1730	0.825	50	1650	ꝺo	d + o	r	ꝺo=r	yes	p[r]ive
+264	L3b	1500	1730	0.825	50	1720	to	t + o	i	to=i	yes	pr[i]ve
+298	K1	0	0	0.95	360	370	L40	L + o (4 not written)	qui	L40=qui (Lo=fi)	form	[qui] retardast
+298	K1	0	0	0.95	360	480	E	epsilon	re	E=re	yes	[re]tardast
+298	K1	0	0	0.95	360	520	8	8	t	8=t	yes	re[t]ardast
+298	K1	0	0	0.95	360	570	c	c	a	c=s|a|y	yes	ret[a]rdast
+298	K1	0	0	0.95	360	620	ꝺo	d + o	r	ꝺo=r	yes	reta[r]dast
+298	K1	0	0	0.95	360	690	=	two bars	d	==d	yes	retar[d]ast
+298	K1	0	0	0.95	360	740	c	c	a	c=s|a|y	yes	retard[a]st
+298	K1	0	0	0.95	360	790	r	r	s	r=s	yes	retarda[s]t
+298	K1	0	0	0.95	360	840	8	8	t	8=t	yes	retardas[t]
+298	K2	0	0	0.95	470	355	8	8	t	8=t	yes	[t]outes
+298	K2	0	0	0.95	470	400	π	pi	o	π=o	yes	t[o]utes
+298	K2	0	0	0.95	470	450	20	written like 'ro'	u	20=u (ro=me)	form	to[u]tes; this hand's 20 reads as ro
+298	K2	0	0	0.95	470	1600	L40	L + o	qui	L40=qui	form	[qui] doibt
+298	K2	0	0	0.95	470	1690	=	two bars	d	==d	yes	[d]oibt
+298	K2	0	0	0.95	470	1740	π	pi	o	π=o	yes	d[o]ibt
+298	K2	0	0	0.95	470	1800	to	t + o	i	to=i	yes	do[i]bt
+298	K3	0	0	0.95	580	350	n	n	et	n=et	yes	et
+298	K3	0	0	0.95	580	470	E	epsilon	re	E=re	yes	[re]spect
+298	K3	0	0	0.95	580	510	r	r	s	r=s	yes	re[s]pect
+298	K3	0	0	0.95	580	620	ue	u + e	e	ue=e	yes	resp[e]ct
+298	K3	0	0	0.95	580	680	//	two slants	c	//=c	yes	respe[c]t
+298	K3	0	0	0.95	580	720	8	8	t	8=t	yes	respec[t]
+298	K3	0	0	0.95	580	1180	=	two bars	d	==d	yes	en[d]roict
+298	K3	0	0	0.95	580	1230	ꝺo	d + o	r	ꝺo=r	yes	end[r]oict
+298	K3	0	0	0.95	580	1300	π	pi	o	π=o	yes	endr[o]ict
+298	K3	0	0	0.95	580	1360	to	t + o	i	to=i	yes	endro[i]ct
+298	K3	0	0	0.95	580	1420	//	two slants	c	//=c	yes	endroi[c]t
+298	K3	0	0	0.95	580	1480	8	8	t	8=t	yes	endroic[t]
