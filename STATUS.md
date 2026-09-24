@@ -122,9 +122,9 @@ owner's desk; LANE N3 closed 18:06 (four copy-free nominations for R4); R4 runs 
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
-## LANE R4 handoff (session_01LrTggxL1PyxmJd6eygqaGY), 24 September 2026, 18:25 UTC
+## LANE R4 handoff (session_01LrTggxL1PyxmJd6eygqaGY), 24 September 2026, 18:22 UTC
 
-Lane: recovery, two phases: 14:46-16:30 UTC (brief lane-r4-orchestrator, workers A-I) and 16:58-18:25 UTC after the owner's 16:53
+Lane: recovery, two phases: 14:46-16:30 UTC (brief lane-r4-orchestrator, workers A-I) and 16:58-18:22 UTC after the owner's 16:53
 decision relayed by the parent (cap $80, 8 workers; workers J-R). Run under the seven-day `allowed_warning` throughout, never `rejected`.
 Seventeen workers closed, $81.16 of worker usage; orchestrator about $66. All closed workers ledgered (LEDGER.md with session ids), in
 hub-seed/ASSIGNMENTS.md, archived. **One worker live at close: R, the Mellon MS 29 solver (Opus, $4, session_01Avww7WjGT5QhGoQ7JhrKj9,
