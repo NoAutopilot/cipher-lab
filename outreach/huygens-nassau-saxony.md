@@ -1,4 +1,4 @@
-status: ready 24 Sept 2026
+status: sent 24 Sept 2026 (by the person; reply pending)
 subject: Cipher passages in six WVO letters (4610, 4611, 4616; 53, 57, 126) read with contemporary keys
 to: resources@huygens.knaw.nl, cc info@huygens.knaw.nl
 targets: ciphers/lodewijk-van-nassau-1573-74, ciphers/august-van-saksen-1561-64

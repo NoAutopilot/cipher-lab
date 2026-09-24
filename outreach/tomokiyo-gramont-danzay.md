@@ -1,4 +1,4 @@
-status: ready 24 Sept 2026
+status: sent 24 Sept 2026 (by the person; reply pending)
 subject: Gramont 1530 (fr.2980 ff.29-30) and Danzay 1557 (fr.20140 ff.35-36) read with your keys
 to: reply in your Bowes thread with S. Tomokiyo
 targets: ciphers/fr2980-gramont, ciphers/fr20140-danzay-1557, ciphers/dupuy452-carpi-1520

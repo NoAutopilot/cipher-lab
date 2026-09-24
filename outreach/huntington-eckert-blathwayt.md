@@ -1,4 +1,4 @@
-status: ready 24 Sept 2026
+status: sent 24 Sept 2026 (by the person; reply pending)
 subject: Two Civil War telegrams in mssEC 19 and two Blathwayt cipher passages (mssBLA 186, 191) read from your collections
 to: reference@huntington.org
 targets: ciphers/eckert-1864, ciphers/huntington-blathwayt-madrid-1728
