@@ -734,6 +734,21 @@ intelligence archive (MS 647-662, Bacon's network for the Earl of Essex):
 | U3 | Letters in cypher to Anthony Bacon, Secretary to the Earl of Essex | n/a (Bacon Papers, 1579-1598 span) | en/fr(?) | cryptanalysis | Lambeth Palace Library, MS 649, ff. 490-495 / Bacon Manuscripts | Title reads plainly "Letters in cypher to BACON (Anthony), Secretary to the Earl of Essex" -- plural letters, 6 folios, no FindingAids/printed-edition field (unlike every Carew hit checked). Bacon ran Essex's continental intelligence network; this class of archive (secret correspondence with named and coded agents) is exactly where a real nomenclator shows up. | Not confirmed online; LPL's own "Image database" link not checked this pass -- likely a copy order or on-site visit | 36 |
 | U5 | Casenowe (A. Dufauk de) to Henri IV, King of France/Navarre | [1586] | fr | cryptanalysis | Lambeth Palace Library, MS 647, f. 218 / Bacon Manuscripts | Catalogue's own Language field: "French and cipher". Single letter, no FindingAids/printed-edition field. Possibly part of the same network/key as U3 (same MS 647-662 fonds), not established this pass. | Not confirmed online | 30 |
 
+check-solved 24 Sept 2026 (U3, `ciphers/lambeth-bacon-649/`): **open**. Birch 1754 (full-text search, "cypher"
+spelling) discusses cipher letters to Bacon in the same general period (pp.508, 562 of the two-volume
+archive.org copy) but cites no shelfmark matching ff.490-495 -- a lead, not a match. Tosh's 2014 QMUL PhD
+thesis on the Bacon letters is a named, unchecked lead. No hit in Cryptiana, DECODE cache, or either solver
+repo. No free image found; REQUEST.md drafted (microfilm MS Film 793 / BL Microform Research Collections /
+Adam Matthew Digital). Full search log in NOTES.md.
+
+check-solved 24 Sept 2026 (U5, `ciphers/lambeth-casenowe-1586/`): **open**. Birch 1754 does not name Casenowe
+or a 1586 Henri IV letter. *Recueil des lettres missives de Henri IV* (Guadet/Berger de Xivrey ed.) searched by
+name and three spelling variants -- 0 hits. A live-web Cryptiana blog lead ("Henry IV's Cipher from 1590") was
+followed up and ruled out: it covers a different correspondent (Hurlaut de Maisse, ambassador to Venice,
+1590-92 letters) already worked in Bourdeau's repo (PR #7, f.370) -- not this item, not to be confused with it.
+No hit in DECODE cache or either solver repo. No free image found; REQUEST.md drafted. Full search log in
+NOTES.md.
+
 **Huntington Library CONTENTdm API, a working query found after a false start.** The naive
 `dmQuery/ALIAS/TERM/fields/...` form silently ignores the search term and returns a fixed title-sorted listing
 (diagnosed on the Stowe Papers collection: "cipher", `"in cipher"` and no term at all all returned the identical
@@ -749,6 +764,23 @@ login wall hit (200, no auth):
 |---|---|---|---|---|---|---|---|---|
 | U1 | La Luzerne to Destouches (French naval commander, Chesapeake campaign), two undeciphered letters, with two sibling letters in the same small collection already deciphered | 16 & 31 Jan 1781 | fr | recovery | Huntington Library, mssDE 68 (4pp, 16 Jan) and mssDE 108(A) (8pp, 31 Jan) / Papers of Charles-René-Dominique Sochet Destouches | Per-page item records: mssDE 68 has 5+9+4 lines of "numerical cipher" across pp.1-3 (p.4 not checked) with no decode/translation noted; mssDE 108(A) has 11+ lines on p.1 of 8. Two other letters in the SAME small collection -- mssDE 37 (26 Feb, "decoded by Destouches") and mssDE 55 (3 Mar, "translated in another hand") -- are explicitly already deciphered, giving a plausible in-collection key (LESSONS.md's "the key was in the archive beside the letter" pattern). Destouches commanded the French fleet that fought the First Battle of the Chesapeake weeks later; La Luzerne was France's minister to the United States. | Digitised, viewer page loads without login (rights-reserved for reproduction per Huntington's standard notice, not access-gated) | 44 |
 | U2 | Blathwayt Papers (Addenda), Spain/Madrid diplomatic-intelligence run, one confirmed cipher fragment plus an in-collection key and several unopened siblings | 1725-1729 | fr | recovery (tentative) | Huntington Library, mssBLA 186 (Madrid, 13 Sept 1728) + mssBLA 188 (July 1729, key source) + 8 further unopened items (mssBLA, "To [-----]"/named, same phycola) / William Blathwayt papers (Addenda) | mssBLA 186: "In French, with two lines in cipher" -- a small, likely below-unicity fragment on its own. mssBLA 188: an enclosure "in cipher [from Port Ste. Marie] ... deciphered in French" already in the same collection, i.e. a key for this correspondence network exists somewhere in mssBLA. Eight further 1725-29 items from the same "phycola" were returned by the search but not opened to item-info level this pass (pointers in the TSV). | Digitised, viewer page loads without login | 37 |
+
+check-solved 24 Sept 2026 (U1, `ciphers/huntington-luzerne-destouches-1781/`): **open**. Doniol vol.5 (phrase
+search, both dates) and Founders Online: no match on mssDE 68/108(A). Directly relevant lead, not a match on
+this shelfmark: Cryptiana's blog (local snapshot) prints Tomokiyo's own decoding of a *different*, 8 Jan 1781
+La Luzerne letter (Beinecke/Yale, not Huntington) in the same ~1200-element code, key/figure-assignment not
+identified by him -- independently corroborated by Bourdeau's own notes ("The Luzerne 1781 code on cryptiana's
+blog runs to 1199"). Strengthens the in-collection-key recovery case (mssDE 37/55 already deciphered) but is
+not itself a reading of mssDE 68/108(A). No hit in DECODE cache or either solver repo (only false positives).
+Copy-free, no REQUEST.md needed. Full search log in NOTES.md.
+
+check-solved 24 Sept 2026 (U2, `ciphers/huntington-blathwayt-madrid-1728/`): **open**, but the "recovery"
+framing is now much less tentative. The full OAC finding aid (item-level, not read by the scout) shows **six**
+of the ten cipher-bearing items in this run (BLA 179, 185, 188, 189, 190, 194 -- not just BLA 188) are already
+"deciphered in French" by the contemporary clerk, right beside the ciphertext in the archive; only BLA 186 (the
+row's headline "two lines in cipher"), 184, 187 and 191(a) lack that note. No solution/key/attempt found in
+editions, community lists, DECODE cache or either solver repo. Copy-free, no REQUEST.md needed. Full
+item-by-item table and search log in NOTES.md.
 
 **Georgian Papers Programme / Royal Archives (`gpp.rct.uk`), reached, low yield.** Runs the same CalmView
 software as Lambeth (confirmed by identical CSS paths and the same `Overview.aspx?r=` query pattern) once the
