@@ -27,8 +27,10 @@ it. If it is idle with uncommitted work, poke it. If it has run past its cap, in
 say so in the project's `ROOM.md`.
 
 Then count the LEDGER.md rows dated after the newest `RETRO-*.md`. At 12 rows, or $60 of worker usage, whichever
-comes first, start a retrospective (`.claude/briefs/retrospective.md`, Sonnet, cap $10) before taking any further
-scout or check-solved row, and take its lane table as the input to step 4.
+comes first, start a retrospective (`.claude/briefs/retrospective.md`, Sonnet, cap $10) before starting any
+further worker of any role, and take its lane table as the input to step 4. Check this after archiving every
+worker, not only before scout or check-solved rows (RETRO-2026-09-24 proposal 1: the window ran to 15 rows and
+$97 because the rows in between were verifier, transcription and follow-up rows the old wording did not gate).
 
 ## 4. Take work
 
