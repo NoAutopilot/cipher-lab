@@ -1,0 +1,21 @@
+# Proposed by the second reader (pass C, 24 Sept 2026); NOT applied to ciphertext.txt (see NOTES.md). index_nodot counts signs, dots excluded.
+folio	line	index_nodot	first_reader	pass_C_proposal	value_before	value_after	basis
+f29r	L01	2	L2	ss2 lam	L	NULLA	image: two tall long-s strokes then a separate plain lambda (sheet01 row L01a); gives IAY for ILY
+f29r	L01	17	g	9	V	E	image: straight long descender (9), unlike the closed hooked bowl of the next sign (g); gives PORTEVR
+f29r	L01	24	sl	rs	E	R	image: one sign, slash + barred t (rs), no separate long s or tall j; gives VNG ARTICLE for VNGAERTICLE
+f29r	L01	25	r3	(delete)	R	(none)	merged into rs above
+f29r	L02	5	4t	4t z	ET	ETA	image: a distinct z-shape between 4t and zu (sheet01 row L02a); gives ET AI FAICT
+f29r	L02	34	g	9	V	E	image: straight descender 9 after xr (zoom L02b); gives BIEN
+f29r	L03	30	L2	lam	L	A	image: plain lambda; the hook above-left is a descender from L02
+f29r	L03	34	eh	eh?	D	D (uncertain)	image: c-like sign with a bar; neither eh (D) nor c (L) gives the T that DAVENTVRE needs
+f29r	L03	40	g	9	V	E	image: short straight descender 9, not the hooked g that follows lt
+f29r	L04	0	sl	sl?	E	E (uncertain)	image: a square-bracket shape, not a clear long s; BAILLER wants B
+f29r	L04	3	2	(delete)	S	(none)	image: the 2 is the head of the ll sign (atlas ll exemplar is 2+ff); double count; gives AILLER
+f29r	L04	21	yt	(delete)	T	(none)	image: no sign between h and zu; gives LE LVY DEMANDER
+f29r	L05	5	Tb	p	P	M	image: plain p with crossed stem, no top bar (atlas p, not Tb); gives FONDEMENT
+f29r	L05	7	yt	nr	T	N	image: small r with a dot (key nr = N); gives FONDEMENT
+f29r	L06	6	fh	fh?	D	D (uncertain)	image: looks like A-with-f (Af, M) rather than fh (D); neither makes clear French, left as fh but uncertain
+f29r	L06	28	g2	g	G	V	image: hooked-bowl g, not g2; gives DV SCRI...
+f29r	L08	0	Rt	L2?	O	L (uncertain)	image: heavy lambda with thick left stroke (L2 = L), not R-with-stroke; gives LVI SATISFAIRE-like LVISATASFAIRE
+f29r	L09	0	r3	r3?	R	R (uncertain)	image: E-like sign with ruled underline at line start; r3 (R) vs E (B) unresolved
+f29r	L09	30	z	2	A	S	image: a clear 2 (S), not z; gives ORS DE SVSPECON

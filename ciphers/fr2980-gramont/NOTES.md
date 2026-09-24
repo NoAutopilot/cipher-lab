@@ -299,3 +299,67 @@ identified the letter as readable with the key, and Bourdeau catalogued it (cata
 The reading is partial and rests on one reader. Item 22 has no class until it is read. The safe sentence and
 the gaps (Le Grand pages seen only as token counts, Camusat as snippets, JSTOR, HathiTrust full text) are in
 AUDIT.md. Suggestion: a second adversarial audit (outreach gate 2) before any message to Tomokiyo or Bourdeau.
+
+## Second reader (24 Sept 2026)
+
+Worker: second reader (Opus), 02:04-02:25 UTC by `date -u`. Brief: blind transcription of the f.29r cipher passage,
+then reconciliation with the first reader. No images fetched: the work used the pass sheets on disk
+(`sheets/sheet01-05.jpg`, native-resolution line crops cut from the full-resolution IIIF region), enlarged 1.5x and 2x.
+
+**Blind pass C.** `passC_f29.tsv`: 567 signs, 31 marked uncertain, 9 shapes given new codes (N1-N9, defined in
+the file footer). It was made from the crops and `atlas/atlas_f29.png` before any of the first reader's files
+were opened. Caveat: the atlas exemplars were cut by aligning the first reader's codes (`atlas/dp.py`). Pass C is
+blind to the first reader's transcription but uses the same sign inventory, and it was made by the same model
+family. It is a second reading, not an independent sign census. `key.tsv` applied to pass C through a scratch
+copy of decode.py gives `reading_passC.txt`: H 509, M 44, U 14. Blind, it already read as continuous French in
+L01, L02, L04, L08-L12 and most of L03, L05 and L13.
+
+**Agreement with the first reader** (LCS alignment of sign codes, dots excluded): 523 of 569 = **91.9%**. Counting
+same-shape pairs that carry different names (N5 = Hb twice, N4 = E twice) and T/Th (both SS) as agreement, it is
+529 of 569 = **93.0%**. By line (raw): L01 90, L02 85, L03 93, L04 93, L05 90, L06 87, L07 82, L08 98, L09 93,
+L10 92, L11 98, L12 92, L13 95, L14 94. Compare the two Sonnet passes on the redrawn legend: 29% (reconciliation.md).
+
+**The one systematic confusion is 9 (E) against g (V).** Pass C and the first reader split on it 10 times. On a
+2x zoom the shapes do separate. 9 has a long descender that swings down-left or out to the right under the next
+sign. g has a closed bowl with a tail that hooks back to the left. Where the image is clear, context agrees with
+it: PORTEVR and BIEN take 9, SEIGNEVR takes g. Pass C was wrong on 7 of the 10 (L02 idx18, L06 idx5, L07 idx30
+and 33 in VINGTIESME, L09 idx32, L12 idx31, L13 idx17) and the first reader on 3 (L01 idx17, L02 idx34, L03
+idx40).
+
+**Changes: proposed, not applied.** `passC_proposed_changes.tsv` has 19 rows. 14 are sign changes where the image
+supports pass C (15 rows, because one change merges two signs): L01 x3, L02 x2, L03 x2, L04 x2 deletions, L05 x2,
+L06 x1, L08 x1 (also marked uncertain), L09 x1. The other 4 mark a first-reader sign uncertain without changing it
+(L03 idx34, L04 idx0, L06 idx6, L09 idx0). Each row gives the image basis. The worker's attempt to write them into `ciphertext.txt` was refused by
+the session's permission policy (a shared transcription file). The committed ciphertext, reading.txt and
+reading_tokens.tsv are therefore **unchanged**, and `decode.py --check` passes on them. If the orchestrator or
+the owner accepts the table, applying it to ciphertext.txt and running `python3 decode.py` gives the preview
+below (made in a scratch copy).
+
+| | tokens | H | M | U |
+|---|---|---|---|---|
+| committed (first reader) | 569 | 538 | 26 | 5 |
+| after the proposed changes (preview) | 568 | 533 | 30 | 5 |
+| pass C alone, blind | 567 | 509 | 44 | 14 |
+
+H falls by 5 because five signs become uncertain (M), not because any reading gets worse. The proposed changes
+repair these words in the preview: IAY (was ILY), PORTEVR (was PORTVVR), VNG ARTICLE (was VNGAERTICLE), ET AI
+FAICT (was ET I FAICT), BIEN (was BIVN), AVENDVRE (was LVENDVRE), BAILLER less its first sign (EAILLER, was
+EAISLLER), LE LVY DEMANDER (was LVTIDEMANDER), FONDEMENT less its first sign (TONDEMENT, was TONDEPETT), DV
+SCRI.. (was DG), LVI (was OVI), ORS DE SVSPECON (was ORADE). None of the first reader's readings in L07, L10, L12
+or L13 is changed. There, pass C's alternatives read worse; the key example is L10's final APART, where pass C's
+null_o is wrong and the sign is q9 (P).
+
+**Preview, lines as they read after the proposed changes** (grade H except where marked; word division by eye):
+L01 continuous (IAY [B]AILLE A CE PORTEVR VNG ARTICLE QVE IAY MIS). L02 continuous except QVV for QVE. L03 mostly
+continuous, one wrong sign in D'AVENTVRE. L04 continuous except the first sign (E for B). L05 continuous except
+the first sign (T for F). L08 continuous (SATASFAIRE for satisfaire). L09 continuous. L10 continuous except N
+for Q. L11 continuous. L14 largely continuous (BAVORISER for favoriser; EXSECRETEM·NT).
+
+**Lines that still do not read as French:** L06 (CTPEREDAFAICT·RAB...), L07 (AVLEGRANDESCEPVS), L12
+(ADVERTISSEMEIETN), and L13 in part (LACPOVSVENCAS..., LERPIVOVLSIST). Their disputed signs (L07 idx7-8, 16,
+18-19; L12 idx13, 17; L06 idx5-6) are the ones to look at next, on the full-resolution region rather than the
+sheets. Suggestion, not done: a third look at those six spots at full resolution would settle whether they are
+sign misreadings or encipherer's errors.
+
+Requests: none to any host (no fetch). Files: passC_f29.tsv, reading_passC.txt, passC_proposed_changes.tsv, this
+section. AUDIT.md, ciphertext.txt, reading.txt, reading_tokens.tsv and f.30 files are not touched.
