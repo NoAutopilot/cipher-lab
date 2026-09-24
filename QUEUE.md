@@ -4752,3 +4752,60 @@ copy-free. **Total: 0 new rows (BV1 and TR-1 from the prior two sweeps remain th
 nominations).** Full per-term breakdown, facet counts and drop reasons:
 `sources/solver-diffs/2026-09-24-lane-n3-bav2.tsv`. No rows added to `QUEUE-scores.json` this round (nothing to
 score).
+
+## Swiss digitised manuscripts (LANE N3 scout of 24 September 2026)
+
+LANE N3 brief scCH (`.claude/briefs/runs/2026-09-24-lane-n3-scCH.md`). Prior coverage (QUEUE.md ~935-945,
+~1096-1100): e-codices full-text search for "cipher" 0 hits, "chiffre"/"Geheimschrift" noisy medieval hits, no
+keep; e-manuscripta answered Cloudflare to curl and was stood down without a second route tried. This pass
+tried the two routes the prior worker had not: e-manuscripta's documented non-HTML API (OAI-PMH), and
+e-codices' document-type/description-field angle.
+
+**e-manuscripta.ch: OAI-PMH reached, but structurally unusable for a term search within this brief's request
+budget.** `https://www.e-manuscripta.ch/oai?verb=Identify` answers plain curl 200 (it is not behind the
+Cloudflare check that blocks the HTML search) -- Visual Library Server, oai_dc/mets/arcmets/mods/epicur
+formats. `ListSets` returns only 10 sets, one per holding library, not a finer "letters"/"Nachlass" facet:
+Universitätsbibliothek Basel 45,839 records, ETH HSA (Hochschularchiv) 82,182, Schweizerische
+Nationalbibliothek 12,486, Zentralbibliothek Zürich 23,689, Zentralbibliothek Solothurn 1,016, Stadtbibliothek
+Zofingen 383, Stadtbibliothek Schaffhausen 213, Zentral- & Hochschulbibliothek Luzern 22, ETH-Bibliothek and
+ETH TMA 0 records returned via this verb. OAI-PMH has no full-text/keyword query verb at all -- it can only
+harvest a whole set (or a date range within one) and be searched offline after -- and a `ListIdentifiers`
+probe of all 10 sets found the server's page size is a fixed 10 records per response (resumptionToken
+`batch_size=11`/cursor step 10). Harvesting even the four smallest sets in full (1,634 records) would take
+about 166 requests; the four large, correspondence-likely sets (Basel, ETH HSA, Nationalbibliothek, Zürich;
+~164,000 records) would take about 16,400 -- both far past this brief's 60-request cap on
+`www.e-manuscripta.ch`, so no metadata harvest was attempted. The HTML search (`/search?query=...`) was
+retried once by plain curl and once through `tools/browser_fetch.js` (one attempt, per brief): both still
+return the site's own "Verifying your browser" Cloudflare challenge page, not results -- the browser tool does
+not clear this host's check. Route exhausted: this host has no way to run a keyword search reachable from
+this environment at any request budget scout briefs carry. Requests: 15 (3 OAI discovery calls + 10
+ListIdentifiers probes + 1 curl search + 1 browser_fetch search).
+
+**e-codices.unifr.ch: the document-type and description-field angle adds nothing beyond the prior pass's
+negative.** The advanced-search form and a results-page facet panel were read directly: the `doc_type_facet`
+has exactly one value on this host, "Manuscript" -- there is no "Archival documents/letters" document type to
+filter by, so that half of the brief's angle does not exist as a filter here. The closest thing to a
+"description" field is `sSearchField=basic_metadata` (the form's actual field list is fullText,
+basic_metadata, collection_shelfmark, person_names, title, origPlace, incipit, explicit, decoNote -- no field
+literally named "description"). Searched `Chiffre`, `chiffr`, `Geheimschrift` against `basic_metadata`:
+`Chiffre`/`chiffr` return 11 hits, every one "chiffre(s)" used as the ordinary French word for a numeral/figure
+in a manuscript description (folio numbering, canon-table numerals, obituary date numerals) -- the same
+foliation-noise pattern the prior pass documented for Gallica-style "chiffre" hits. `Geheimschrift` returns the
+same 5 hits as the prior pass's full-text search, all early-medieval monastic scribal conventions out of the
+project's 1450-1850 correspondence scope (9th-10th c. St Gallen/Einsiedeln: the monk Rihpertus's own
+"Geheimschrift" signature, two bfk-Geheimschrift Old High German glossing systems, an Otto von Passau ownership
+note, Old High German glosses on a Gregory the Great letter collection). The genre facet on that result set is
+dominated by liturgical genres (e.g. Antiphonary); no Letter/Correspondence/Archival-document genre value is
+present. Stopped after 6 requests (brief: stop at 10 if nothing archival) -- nothing archival at any point.
+Requests: 6 (1 advanced-search form + 1 fullText Geheimschrift + 3 basic_metadata terms + facet reads on saved
+pages, no extra fetches).
+
+**Result: both routes tested, both exhausted, no keepable rows.** No `CH-` prefixed nominations this pass --
+e-manuscripta's holdings (confirmed large and correspondence-likely by set size) are real but reachable only
+through a full OAI harvest an order of magnitude past any scout brief's host budget, and e-codices' holdings
+are confirmed (again) to be predominantly medieval codicological material with no archival/letters facet and
+no cipher-vocabulary hits in the 1450-1850 correspondence sense. Recommend dropping e-codices from future
+sweeps (now checked by full text and by metadata field, twice); e-manuscripta is worth a dedicated harvest
+brief only if a future worker's budget can absorb the ~16,400-request OAI harvest of its four large sets, or if
+the Cloudflare block on its HTML search is somehow cleared by a different route. No new rows in
+`QUEUE-scores.json` (nothing scored). Full detail: `sources/solver-diffs/2026-09-24-lane-n3-ch.tsv`.
