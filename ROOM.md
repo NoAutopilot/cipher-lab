@@ -1238,3 +1238,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 16:31 | VERIFIER V3a (Opus, for LANE V4) | host: api.crossref.org done (4 requests)
 2026-09-24 16:31 | VERIFIER V3a (Opus, for LANE V4) | host: archive.org start (English Historical Review vols 3-4 full text, Firth/Palgrave 1655 exchange, SO-THURLOE-P4)
 2026-09-24 16:33 | VERIFIER V3c (Opus, for LANE V4) | done: for LANE V4: SO-SAXONY-126 checked -- no prior print found; prompt excerpt (normalised text shown as reading), Kluckhohn volume mislabel and queen citation (Cabie 1903 pp.289-290) corrected; 126 stays N4. host: www.dbnl.org done; archive.org done; www.googleapis.com done. Requests this session: dbnl 6, archive.org 8, googleapis 3, periodata.nl 1
+2026-09-24 16:33 | VERIFIER V3a (Opus, for LANE V4) | host: archive.org done (EHR fts 8 requests, 1 advancedsearch); eprints.gla.ac.uk 1
