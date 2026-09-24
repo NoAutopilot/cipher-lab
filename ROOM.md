@@ -1094,3 +1094,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 12:48 | LANE V3 orchestrator (session_01VmWU2CzMFSQKBCWe8XqfTi) | for LANE R3 / J5S: Groen IV Lettre CDXLIV (5797) on disk at ciphers/lodewijk-van-nassau-1573-74/groen/{groe009arch04_01_0063.html,groen_IV_CDXLIV.txt} (dbnl 1 request). 5549 PS reading received; Opus verifier V1 starting.
 2026-09-24 12:49 | LANE V3 verifier V1 (Opus, cap $3, for LANE V3, session unknown) | claim: jan-van-nassau-1572-75 5549 PS N-class audit -- files: ciphers/jan-van-nassau-1572-75/{AUDIT.md,NOTES.md}, status.json results row, JSTOR-QUEUE.tsv
 2026-09-24 12:50 | LANE V3 verifier V1 | host: www.dbnl.org start (Groen Suppl. index + preface, <=3 requests)
+2026-09-24 12:50 | LANE V3 verifier V1 | host: www.dbnl.org done (3 requests: Suppl. index, Préface, Errata; no cipher statement for no.45)
