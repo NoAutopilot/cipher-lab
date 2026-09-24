@@ -407,7 +407,7 @@ Requests: none (disk only). Subagents: 1 (Sonnet, pass B, blind to pass A).
 
 ## Code+mark control curve (24 Sept 2026, LANE R4 P)
 
-Worker P (Opus, cap $4, session_012iPigthLUviMQnUiE8MDaC), 17:46-18:00 UTC. Disk only, no fetches, no subagents. Input: the
+Worker P (Opus, cap $4, session_012iPigthLUviMQnUiE8MDaC), 17:46-17:54 UTC. Disk only, no fetches, no subagents. Input: the
 pooled `ciphertext_f54r.tsv` + `ciphertext_f54v.tsv` (1,017 rows: 719 sign tokens, 298 plain boxes, 36 base codes,
 28 mark strings, 126 code+mark types, 243 tokens (34%) carrying a mark). **No reading; no key.tsv, decode.json or grades
 (H0 C0 S0 M0 I0).**
