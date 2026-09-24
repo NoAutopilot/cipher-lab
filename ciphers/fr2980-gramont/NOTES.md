@@ -452,3 +452,83 @@ once). Cost well under the $10 cap.
 used for f.29r), giving weight to the higher-confidence pass on rows where one used far fewer `?` than the
 other; re-crop or re-fetch the f30r_L02/L07-L09/L23/L25 blot region at higher zoom if the reconciler still can't
 resolve it; only then map codes to key.tsv values and decode.
+
+## f.30 reading (24 Sept 2026)
+
+Worker: reconciler + key application (Opus, cap $15), 02:55-03:20 UTC by `date -u`, orchestrator session
+session_01EFmUvFAifLKGdBSsW9mjEG. Work from the crops on disk; no image fetched and no host contacted.
+
+**Files.** `passR_f30.tsv` is the reconciler's sign-by-sign reading of the 110 crops. `build_ciphertext_f30.py`
+(with `--check`) turns it into `ciphertext_f30.tsv` (line, position, sign, confidence h/m/l),
+`reconciliation_f30_lines.tsv` and `reconciliation_f30_signs.tsv`. `reconciliation_f30.md` has the method,
+agreement per line and how the disagreements were settled. `decode.py` now also writes `reading_f30.txt` and
+`reading_f30_tokens.tsv` from `ciphertext_f30.tsv` and the unchanged `key.tsv`. `--check` covers both leaves,
+and the f.29r outputs are byte-identical. `contexts_f30.py` writes `unkeyed_f30.tsv`.
+
+**Transcription.** 1973 signs on 55 lines (f.30r 35, f.30v 20). Confidence: h 1333, m 474, l 166. The
+reconciled signs agree with blind pass A on 63.5% and with pass B on 55.3%, and the passes agree with each
+other on 60.8%. As on f.29r, the transcription rests mainly on one reader.
+
+**Grades (per token, from decode.py):** 1973 tokens: **H 1502, C 0, S 0, M 239, I 0, U 232.** H means "value
+taken from the Lasry/Tomokiyo table" (key.tsv). It does not grade the identification of the sign, which rests
+on the reconciler. M means a sign read with doubt. U means a sign key.tsv does not cover. No value was added to
+key.tsv and no cryptanalytic extension was made, so this is a key-based reading with unread signs, not a
+cryptanalytic result, and no control was needed.
+
+**Lines that read as continuous French** (word division possible by eye with at most one or two unread signs,
+22 of 55): f.30r L13, L14, L19, L20, L21, L26, L27, L31, L32, L33; f.30v L02, L03, L04, L07, L08, L09, L10,
+L12, L13, L15, L17, L18.
+**French with gaps** (words readable, runs broken by unkeyed or doubtful signs, 25): f.30r L05, L06, L09,
+L10, L15, L16, L17, L18, L22, L23, L24, L25, L28, L29, L30, L34, L35; f.30v L01, L05, L06, L11, L14, L16,
+L19, L20.
+**Not French, still unread** (8): f.30r L01, L02, L03, L04, L07, L08, L11, L12. This is the top of f.30r,
+dense with the unkeyed arch/FL/box/III/HASH signs. Either the signs there are misidentified, or the passage
+uses nomenclator signs outside both tables. It needs a second reader on the crops before anything else.
+
+**Plain sense, provisional** (from the decoded runs only; unread signs shown as `·`; modern sense mine, grade I):
+1. The cipher speaks of a "declaration" of "la liberte de Florence" (f.30v L02-L03, L10: DECLARADION DE LA
+   LIBERTE DE FLORENCE; LA DECLARATION DE LA ·IBERTE).
+2. Someone "a s'estre ja declare" and "qu'il ve·lt aller en Avi·non" (f.30r L32). There is talk "pour
+   recouvrer" something (f.30r L33) and of someone who "·yont perdu" (f.30r L34).
+3. Formulas addressed to "Sire" occur (f.30v L05-L06 "TRES ·VMBL / ·ENTSIRE"), with
+   "vostre commandement" (f.30v L17). So the cipher is addressed at least in part to the king. The addressee
+   of item 22 is not established here.
+4. The letter names "l'ambassadeur ... et aultres ses ·ini·res" (f.30v L12), "il est impossible" (f.30r L31),
+   "il est rayson" (f.30r L14), "a craindre" (f.30v L15), "neantmoins qu'il ait maulvayse fan·asie" (f.30v L18).
+5. Closing matter on f.30v L19-L20 (DE·ESPPIR, ...), before the clear-text date and signature.
+
+**Distinctive decoded phrases for the verifier** (as decode.py prints them; `·` = unread): DECLARADIONDELA /
+LIBERTEDEFLORENCE (f.30v L02-03); ASE·TREIADECLAREQ·ILVE·LTA[LL]E·ENAVI·NON (f.30r L32); PPVRRECOVVRER
+(f.30r L33); QVIL E·T IMPO[SS]IBLE (f.30r L31); ILESTRAYSON (f.30r L14); AVCVNEMENT (f.30r L19);
+ENTIEREMENT (f.30r L20); SELON ... MAINTENIR (f.30r L21); PEVVENTFAIRE (f.30r L22); DESIBONPIED (f.30r L30);
+MONADVIS (f.30v L07); POVR[COM]MANDER (f.30v L08); LAVI[LL]E ... LAFORC· ENTRE VO· MAINS (f.30v L09);
+LAMEA[SS]ADEVR (key q=E, read B, f.30v L12); [ET]QVENEANTMOINSQ·ILAIT·AVLVAYSEFAN (f.30v L18);
+CRAINDRE (f.30v L15); VOVSTRE[COM]MANDE (f.30v L17).
+
+**Unkeyed signs that recur** (listed with their decoded contexts in `unkeyed_f30.tsv`; no values proposed):
+FL 35, BOX 27, n 26, ST 18, A2 17, HASH 13, III 13, B8 13, Mx 11, v 11, QQ 8, re 7, Sx 7, CROSS 4, lz 4,
+[?] 4, INF 3, TRI 2, ev 2, Hb 2, Zs 2; single occurrences nn, ff, tb. Sample contexts:
+- `n` after nq, before I/E: SIREQ{n}ILVOVS, VSQ{n}ES, APVSEQ{n}IL (f.30r L17, L24, L12).
+- `re` after Q or in a word: DECLAREQ{re}ILVE·LT, AVC{re}NE (f.30r L32, f.30v L01).
+- `Sx` before V: DSVRAY{Sx}EV, SELON·E{Sx}VVIL, CEN·ST{Sx}VE (f.30r L06, L21, f.30v L02).
+- `BOX`: ICEN{BOX}ST, IL D{BOX}SIRE, S{BOX}RVICE (f.30v L02, f.30r L21, L23).
+- `FL`: IL E{FL}T IMPO[SS]IBLE, VOVS {FL}AVRIE (f.30r L31, f.30v L08).
+- `ST`: DELA{ST}IBERTE, Q·E{ST}EMIEVL (f.30v L10, L07).
+- `A2`: LAFORC{A2}ENTRE, [COM]MANDE{v}{A2}NT (f.30v L09, L17).
+- `v`: ·VMBL{v}ENT SIRE, PARLE{v}OIEN (f.30v L05-06, L14).
+- `lz`: TRES{lz}VMBL (f.30v L05).
+**Key-valued signs whose contexts deserve a second look** (graded H because the table gives the value; the
+contexts are listed, not corrected): `Tb` (table P) in P{Tb}VR RECOVVRER, COGN{Tb}ISSE, DESESP{Tb}IR;
+`eh` (table D) in DECLARA{eh}ION, REPVTA{eh}ION; `H` (table I; Tomokiyo also links it to z) in
+SAVRIE{H}, BRA{H}; `q` (table E; key note: reads B on f.29r) in LAM{q}ASSADEVR, OV {q}IEN.
+
+**Still unread:** f.30r L01-L04, L07, L08, L11, L12 in full; the gaps in the 25 partial lines; every U sign above.
+
+**Where the reading was not searched:** no print or phrase search was run in this pass (brief: reconcile and
+decode only). Novelty is not classified here (rule 10); the verifier follows.
+
+**Suggestions (not done):** a second blind reader on the f.30r L01-L12 crops; a 2x-zoom check of the 166 `l`
+signs; a key-table check of the recurring unkeyed shapes (FL, BOX, n, Sx, re, v, A2, ST) against the Lasry
+and Tomokiyo images, which is a key-identification job, not a guess from context.
+
+Requests this pass: none to any host. Subagents: none.
