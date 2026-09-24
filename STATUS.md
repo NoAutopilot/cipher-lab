@@ -376,6 +376,7 @@ Three workers, about $4.5 together, all ledgered and archived; none live.
 - **Owner cards (status: ready):** outreach/gramont-jstor-waive.md (JSTOR rows for all N4 items incl. Blathwayt, Eckert),
   outreach/openalex-s2-owner-queries.md (six open-index queries; OpenAlex/S2 still 429 from cloud at 11:01),
   outreach/bodleian-rawl-a24-p4.md (ASKS 30). No outreach drafts until gate 2 is answered or waived.
+- **Closed 12:20 UTC 24 Sep 2026** (about $5 of $100): nothing new in scope since 11:47; ASKS 34/40/41 still open; no live worker.
 - **Next LANE W:** once ASKS 34/40/41 are answered or waived, draft outreach for P4, Blathwayt and Eckert (gate 6 links).
   Blathwayt lead from B1: DECODE BL Add MS 32270/32305 and SP 106 box 7 key collections may hold the Pareti code.
 
