@@ -63,7 +63,7 @@ dbourdeau/cyphersolver or aaymeloglu/unsolved-ciphers) and to DECODE once its lo
 every gate below is met. Emails to researchers, archives and dealers stay the person's: the orchestrator drafts
 them in `outreach/` and the person sends them and records the date. Gates for any post: (1) the target's
 AUDIT.md carries a verifier's class; (2) for anything above N1, a second adversarial audit by a separate session
-has tried to find it in print and failed, and the credential session's JSTOR and Google Books queries are done;
+has tried to find it in print and failed, the open-index scholarship pass (OpenAlex, Semantic Scholar, Persée, HAL, CrossRef) and the Google Books queries are done, and the target's rows in `JSTOR-QUEUE.tsv` are answered or waived by the owner;
 (3) the message is the audit's safe sentence, states any prior print it rests on, and links AUDIT.md so the
 recipient can check the search log; (4) rule 10 wording only; (5) the post is logged in `CONTRIBUTIONS.md` with
 date, recipient, class and link, before it is sent; (6) every outward note carries the links a recipient can verify
@@ -146,7 +146,10 @@ VERIFIER: <target folder>. Claim under audit: <the sentence as the repo states i
    (a) the canonical series, its index and its supplements; (b) the sender's and the recipient's printed
    correspondence; (c) the documentary editions for the period; (d) the holding archive's catalogue,
    blog and project pages; (e) full-text search on Internet Archive, HathiTrust and Google Books;
-   (f) the solver repositories and cipher blogs; (g) JSTOR / Scholar / dissertations. Log each family
+   (f) the solver repositories and cipher blogs; (g) scholarship through the open indexes (OpenAlex API, Semantic
+   Scholar API, Persée, HAL, CrossRef, Google Scholar when reachable) and, for JSTOR, a row per query appended to
+   `JSTOR-QUEUE.tsv` for the owner's local runner; a queued JSTOR row never blocks N3 or N4 on its own (24 Sept 2026,
+   the owner is not the bottleneck at fifty sessions). Log each family
    as searched or unreachable, with what was searched.
 3. Classify each item N0-N5 (rule 10) with: prior plaintext (yes/no, where, earliest citation), prior
    decipherment (yes/no), evidence quality, confidence, one safe sentence, one unsafe sentence.

@@ -1,0 +1,22 @@
+target	query	requested	status	hits
+ciphers/fr2980-gramont	"Gramont" AND "Villandry"	2026-09-24	queued	
+ciphers/fr2980-gramont	"évêque de Tarbes" AND 1530 AND chiffre	2026-09-24	queued	
+ciphers/fr2980-gramont	"fr. 2980"	2026-09-24	queued	
+ciphers/fr2980-gramont	"Gabriel de Gramont" AND (Rome OR Clement) AND 1530	2026-09-24	queued	
+ciphers/fr2980-gramont	"Gramont's cipher"	2026-09-24	queued	
+ciphers/fr2980-gramont	Lasry AND (Gramont OR "Francis I") in Cryptologia 2022-2026	2026-09-24	queued	
+ciphers/bowes-walsingham-1583	"Bowes" AND "Walsingham" AND 1583 AND (cipher OR cypher)	2026-09-24	queued	
+ciphers/bowes-walsingham-1583	"Smallet" AND ("Maineville" OR "Mainville")	2026-09-24	queued	
+ciphers/bowes-walsingham-1583	"Caligula C. VII" AND (cipher OR decipher*)	2026-09-24	queued	
+ciphers/bowes-walsingham-1583	Tomokiyo AND Bowes	2026-09-24	queued	
+ciphers/courten-diary	"William Courten" AND diary AND cipher	2026-09-24	queued	
+ciphers/courten-diary	Courten AND Sloane AND cipher AND Charleton	2026-09-24	queued	
+ciphers/courten-diary	"William Charleton" Middle Temple naturalist collection 17th century	2026-09-24	queued	
+ciphers/courten-diary	"Frederic Madden" AND manuscript AND key AND cipher AND cataloguing	2026-09-24	queued	
+ciphers/fr20140-danzay-1557	"Danzay" AND 1557 AND (chiffre OR cipher)	2026-09-24	queued	
+ciphers/fr20140-danzay-1557	"Dançay" AND "cardinal de Lorraine"	2026-09-24	queued	
+ciphers/fr20140-danzay-1557	Delavaud AND Danzay AND 1911	2026-09-24	queued	
+ciphers/fr20140-danzay-1557	"Charles de Danzay" AND Danemark AND 1557	2026-09-24	queued	
+ciphers/eckert-1864	"Fox to Butler" AND 1864 AND cipher	2026-09-24	queued	
+ciphers/eckert-1864	"Meigs" AND "Butler" AND "April 22, 1864"	2026-09-24	queued	
+ciphers/eckert-1864	"Eckert" AND "cipher" AND "Military Telegraph" AND 1864	2026-09-24	queued	

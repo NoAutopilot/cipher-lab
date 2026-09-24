@@ -3,7 +3,9 @@ Read CLAUDE.md (rule 10, Workers). Target: <folder>; claim under audit: <sentenc
 to disprove novelty. Extract exact date, parties, plaintext, ciphertext, identifiers. Search by metadata and
 by quoted plaintext phrases across: canonical editions (all series and indexes), sender- and
 recipient-specific correspondence editions, the holding archive's catalogue and blog, the transcription
-project's pages, Google Books, HathiTrust, Internet Archive, GitHub cipher projects, scholarship. Log every
+project's pages, Google Books, HathiTrust, Internet Archive, GitHub cipher projects, scholarship through the open
+indexes (OpenAlex, Semantic Scholar, Persée, HAL, CrossRef); JSTOR queries go as rows into JSTOR-QUEUE.tsv and never
+block a class on their own. Log every
 family searched and every one unreachable. Write AUDIT.md: verdict table with N-class per item, per-item
 sections, evidence table, "did we first-decipher?", confidence, postmortem, and correct every over-claiming
 sentence in the folder. + common tail.
