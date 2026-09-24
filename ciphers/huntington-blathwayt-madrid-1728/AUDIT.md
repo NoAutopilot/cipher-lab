@@ -424,3 +424,112 @@ novelty verdict -- the N4 sentences in section 4 stand as written. No N-class in
 subsection (append-only per LANE N2 brief).
 
 Requests this subsection: de-crypt.org 28 (decode_list.py, no login). Cost: well under $5 cap for this step.
+
+## N4 set (LANE W2 worker B1, 24 Sept 2026)
+
+A verifier session, LANE W2 worker B1 (Opus; orchestrator session_01CLm9uFwyau9hRmDcm2vALE), 11:00-11:04 UTC. It
+did no solving (R17) and none of the three audits (H, I, K) or the DECODE search (dcA). It did not decode.
+Question: is K's condition ("if LANE N's search finds no DECODE record for these items, all three go to N4") met,
+and is any principal family left open that K's table did not name?
+
+**Answer: met. BLA 186 (cipher lines), BLA 191(a) and BLA 184 are N4, "no prior decipherment located".** The
+letter BLA 186 itself stays N1 for its clear text (Rose 1831 ii 414-15).
+
+### 1. dcA's DECODE Decrypted search, re-checked from its own file
+
+`sources/decode/records-decrypted-2026-09-24.tsv`: 1,361 lines = header + 1,360 rows, 1,360 distinct record ids,
+matching dcA's count. The file has holder, city, shelfmark and date columns only (no title, sender or recipient),
+so a name can match only through the holder or shelfmark. Case-insensitive grep, whole file:
+
+| Query | Hits |
+|---|---|
+| Huntington, San Marino, Blathwayt, Marchmont, Polwarth, Ripperd, Keene, Pati (Patiño/Patino), Pareti | 0 each |
+| Stanhope, Townshend, Newcastle, Hardwicke, Waldegrave, Walpole | 0 each |
+| Sevill, Seville, "Santa Mar", "SP 94"/"SP94" | 0 each |
+| 1727, 1728, 1729, 1730, 1731, 1732 (anywhere in a row) | 0 each |
+| Madrid | 59 rows; none has a date range reaching 1725-32 |
+
+Date columns: every row whose date range overlaps 1725-1732 was listed (a range test, not a string match). Besides
+BL Add MS 20563 (53 rows, 1706-25, Italian), they are BL Add MS 32264 f.47 (1653-1850), 18982 f.195 (1649-1950),
+32270 ff.19-40 (1719-1839), 32287 f.48 (1716-1836), 32305 ff.2-3 (1726), ff.4 and 8-9 (1700-99); Beinecke Osborn fc37
+box 6 folder 35 (1697-1737, English); HHStA Vienna Chiffrenschlüssel Kt.13-14, 20 (keys, 1540-1877); TNA State
+Papers inv.nr. 106 box 7 (1702-1837, French). None is held by the Huntington, and none is a Blathwayt, Marchmont or
+Pareti item. The BL Add MS 32264-32305 run and SP 106 are cipher-key collections. Whether one of them holds this
+key is a lead for a solver (below). It is not a prior decipherment of these three leaves. **dcA's result holds.**
+
+### 2. Any principal family left open?
+
+K's table (s.1) lists every family in the verifier template, rule 10's N4 wording and the second audit's toward-N4
+list. Checked each against the logs:
+
+- Canonical and recipient prints (Rose 1831; HMC *Polwarth* I-V; Warrender; HMC Townshend, Portland, Carlisle,
+  Egmont; Coxe; Armstrong; Ripperda narratives): covered (first and second audit; K s.2).
+- Holding archive (CONTENTdm, OAC finding aid): covered. ArchivesSpace item pages: covered through OAC (K).
+- TNA Discovery catalogue: covered. SP leaves, BL Newcastle papers, Cholmondeley (Houghton): archival and
+  unpublished. Rule 10's N4 leaves "internal or unpublished work not excluded" (Eckert precedent), so they do not
+  block N4. BLA 191(a)'s safe sentence names them.
+- Google Books (8 queries, 0), IA full text (global and in-item): covered.
+- Solver repositories and Cryptiana: covered (first audit f). DECODE Decrypted: covered (dcA; s.1 above).
+- **Cipherbrain (Schmeh) was not logged by any audit.** The Danzay and Eckert N4 decisions covered it. Closed now:
+  one WebSearch restricted to scienceblogs.de, cipherbrain.net and scienceblogs.com for Blathwayt, Marchmont,
+  Pareti or Ripperda with cipher, 1728 and Huntington (the tool ran three variants). No post on these items or this
+  correspondence. Hits were the Top-50 list, Thirty Years' War cryptograms, Henry II's device and other unrelated
+  posts.
+- Scholarship (Storrs 2016, Lodge 1933, the open indexes, JSTOR): not a principal edition or catalogue, so it does
+  not block N4 (K s.1; CLAUDE.md: a queued JSTOR row never blocks N4 on its own). It is outreach gate 2 (s.5).
+- HathiTrust whole-library full text: unreachable (Cloudflare). The one HathiTrust volume that matters,
+  *Polwarth* V, is covered at token level (K s.2).
+
+Nothing principal is open.
+
+### 3. Verdict
+
+| Item | Prior print | Prior decipherment | Class | Confidence |
+|---|---|---|---|---|
+| mssBLA 186, two cipher lines (p1, p3); Abbé Pareti to Marchmont, Madrid, 13 Sept 1728 | the clear part is printed in English extract: Rose, *Marchmont Papers* (1831) ii 414-15, dated there 3 Sept, cipher shown only as "(Cypher.)". p3 is outside the extract | none located | **N4** for the cipher lines; **N1** for the letter's clear text | medium |
+| mssBLA 191, enclosure (a), p5; Port Ste Marie, undated, forwarded 8 Aug 1729 | none located | none located. The copy sent to Newcastle and any State Papers or Newcastle-papers decipherment of it were not seen | **N4** | medium-low (the sent copy's fate is open) |
+| mssBLA 184 p1, seven code groups; statement re Rottembourg, [1727-28] | none located | none located | **N4** (3 syllable groups read, name codes unread) | medium |
+
+The readings are partial: C 129, M 22, U 21 of 172 tokens, no H. They are grade C from contemporary
+decipherments of sister items, not cryptanalysis.
+
+### 4. Safe and unsafe sentences (supersede K s.4's conditional wording; its sentences are adopted unchanged)
+
+- **BLA 186.** Safe: "The Abbé Pareti's letter of 13 Sept 1728 to the Earl of Marchmont (Huntington mssBLA 186),
+  on Ripperda's escape, was printed in English extract by Rose in 1831 (*Marchmont Papers* ii, 414-15, dated
+  there 3 Sept), with its cipher line omitted. Its two cipher lines read in part (20 of 24 groups; 4 unkeyed)
+  with a key set out from contemporary decipherments of other letters in the same collection. No prior
+  decipherment of those lines located (search log in AUDIT.md)." Unsafe: "an unpublished letter", "first
+  decipherment of the Pareti letter", or any sentence that omits Rose 1831.
+- **BLA 191(a).** Safe: "The undated cipher enclosure (a) of Huntington mssBLA 191 (Port Ste Marie, forwarded 8 Aug
+  1729) reads in part (106 of 141 groups at grade C; 19 uncertain, 16 unkeyed) with the same key. No prior
+  decipherment located in print, in the Huntington's catalogue or in the cipher community's catalogues. The copy
+  sent to Newcastle, and any decipherment made of it in the State Papers or the Newcastle papers, was not
+  checked." Unsafe: "never deciphered", "read for the first time", or a full reading.
+- **BLA 184.** Safe: "Three of the seven code groups in mssBLA 184 read as syllables. The name codes are unread.
+  No prior decipherment located." Unsafe: any sentence that names the persons coded. Not worth an outward note.
+
+### 5. Outreach gate 2 (for the orchestrator; no draft written)
+
+- JSTOR-QUEUE.tsv rows for this target, all `queued`, none answered or waived: file lines 45, 46, 47, 57, 58, 59
+  (Port St Mary/Keene/Marchmont; Ripperda Segovia 1728; Blathwayt Huntington Spain; Pareti Marchmont 1728/29;
+  Polwarth V review; Storrs Spanish Resurgence). ASKS row 40 asks the owner to run or waive them.
+- Open-index pass: CrossRef (first audit 6 queries, second 7), HAL (2), Persée (1) done. **OpenAlex 429 in both
+  audits; Semantic Scholar 200 with 0 results in the first audit, 429 in the second.** OpenAlex is not done. Either
+  one retry from a session whose OpenAlex quota is fresh, or the owner runs it or waives it (ASKS row 40).
+- Google Books queries done (LANE V2, 8 queries, 0 hits).
+- Any outreach note on BLA 186 must state the Rose 1831 print (gate 3) and link the Huntington item image, Rose
+  vol. 2 at pp.414-15 on archive.org (`selectionfrompap02roseiala`), and this AUDIT.md (gate 6).
+
+### 6. Postmortem
+
+No over-claim found in the repo's files. Two gaps corrected: (1) no audit had logged Cipherbrain; closed above.
+(2) status.json's grade line said "N4 waits only on a DECODE Decrypted search"; updated to N4. Lead for a solver,
+not done here (Usage rule 7): DECODE's BL Add MS 32270 ff.19-40 and 32305 ff.2-9 (1719-1839, 1726) and TNA SP 106
+box 7 are 18th-century British key collections; one may hold the Pareti code and settle BLA 191(a)'s 16 unkeyed
+groups.
+
+### 7. Requests (this session)
+
+WebSearch 1 (Cipherbrain, three variants inside the tool). No other network requests: de-crypt.org 0,
+www.huntington.org 0, Google Books 0.

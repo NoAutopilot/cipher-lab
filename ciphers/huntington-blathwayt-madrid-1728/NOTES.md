@@ -1,11 +1,15 @@
 # Blathwayt Papers Addenda — Madrid/Port Ste Marie diplomatic-intelligence run, 1725-1729 — Huntington mssBLA 176-195
 
-Status: open
+Status: partial
 
 Novelty (AUDIT.md, verifier, 24 Sept 2026): BLA 186 N3, BLA 191(a) N3, BLA 184 N3; readings partial.
 Second audit (AUDIT.md, 24 Sept 2026, worker I): classes confirmed, but BLA 186's clear text is PRINTED (Rose, *Marchmont
 Papers* 1831, ii 414-15, English extract dated there 3 Sept 1728, writer the Abbé Paretti, cipher line omitted as
-"(Cypher.)"); N3 covers only its two cipher lines.
+"(Cypher.)"); the class covers only its two cipher lines.
+N4 set (AUDIT.md 'N4 set (LANE W2 worker B1, 24 Sept 2026)'): BLA 186 cipher lines N4, BLA 191(a) N4, BLA 184 N4, "no
+prior decipherment located", readings partial (C 129, M 22, U 21 of 172). DECODE Decrypted (1360 records) and
+Cipherbrain negative. Any outward sentence on BLA 186 cites Rose 1831 ii 414-15. Outreach gate 2 open: 6 JSTOR rows
+queued and OpenAlex not run (ASKS row 40).
 
 ## Description
 

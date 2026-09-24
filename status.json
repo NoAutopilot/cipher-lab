@@ -1320,7 +1320,7 @@
    "date": "24 Sept 2026",
    "kind": "solve",
    "title": "Blathwayt papers addenda, Madrid and Port Ste Marie intelligence 1727-1729 (Huntington mssBLA 184, 186, 191(a)): reading with a key rebuilt from seven deciphered items of the same run",
-   "grade": "N3 each, two audits (cipher passages only; partial); N4 waits only on a DECODE Decrypted search (LANE N)",
+   "grade": "N4 each (no prior decipherment located; cipher passages only; partial; AUDIT.md 'N4 set', 24 Sept 2026); BLA 186's clear text printed in Rose 1831 ii 414-15",
    "line": "Key of 395 groups (grade C) from the contemporary decipherments of BLA 179, 185, 187, 188, 189, 190 and 194; one code for 1725-29 by leave-one-item-out (0.68-0.91). Partial readings: BLA 186 (Abbé Pareti to Marchmont, Madrid, 13 Sept 1728, Ripperda's escape: 20 of 24 cipher groups; the clear part of this letter was printed in English by Rose, Marchmont Papers 1831 ii 414-15, with the cipher shown only as '(Cypher.)'), BLA 191 enclosure (a) (106 of 141) and 3 of 7 code words in BLA 184. No prior decipherment located in the Huntington collection, HMC and Marchmont prints on IA, TNA Discovery descriptions or Google Books (24 Sept 2026). C 129, M 22, U 21 of 172.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-blathwayt-madrid-1728"
   },
