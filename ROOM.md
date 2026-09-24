@@ -643,3 +643,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 06:53 | LANE V N4-decision verifier (Opus, cap $10): fr20140-danzay-1557 | claim: final-families N4 decision for f.35r-36r letter -- files: ciphers/fr20140-danzay-1557/AUDIT.md, status.json (Danzay results row only)
 2026-09-24 06:54 | LANE V N4-decision verifier (Opus, cap $10, session_01FwWKsqwM57oancfisEiVEE): fr2980-gramont | claim: final-families N4 decision for f.29r (no.21) and f.30r-v (no.22) -- files: ciphers/fr2980-gramont/AUDIT.md, status.json (Gramont results rows only)
 2026-09-24 06:56 | LANE N check-solved worker (Sonnet, csNB) | nomination: ciphers/lodewijk-van-nassau-1573-74 | copy-free | kind recovery | 4 open cipher letters, sibling decipherment imaged in file
+2026-09-24 06:56 | LANE N check-solved worker (Sonnet, csNB) | nomination: ciphers/august-van-saksen-1561-64 | copy-free | kind recovery | 3 open letters/postscripts, symbol cipher confirmed by eye
