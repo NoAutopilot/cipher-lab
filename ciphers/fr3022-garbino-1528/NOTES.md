@@ -91,3 +91,24 @@ working folder), CC BY 4.0 -- prior attempt (not a solution). S. Tomokiyo, "Read
 Not decoded, not transcribed here (out of scope for check-solved; Bourdeau's `vasto1527/n20/` already has a full
 transcription if a solver picks this up). Rule 10: no novelty claim made; this is a search result, not a
 verifier's classification.
+
+## Control-first cryptanalysis (24 Sept 2026, LANE R4 N)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-r4-n-villeroy-garbino.md` (Opus, cap $7, session_018cVYFykz1TpBPHHHgWqHuN).
+Transcription: D. Bourdeau's `vasto1527/n20/f44r.txt`-`f46v.txt`, copied unchanged with attribution to `bourdeau/`
+(MIT / CC BY 4.0); not re-checked on the image (rule 2). Ranzo's fr. 2988 transcriptions stay in his repository.
+
+**Decision from his notes: no model has a working control at this length.** The code is ~546 group types (base
+letter = initial of the word, number not alphabetical within the letter: z = -0.5 vs +6.5 for an alphabetical
+control). Bourdeau's best attack, a word-substitution annealer with initial-letter constraint and a Kneser-Ney
+word-bigram model, reads a matched held-out Castiglione control of **~3,900 words at ~46% token / ~9% type
+accuracy** -- and that is with no. 20 pooled with ~2,600 groups of Ranzo's signed letters. No. 20 alone is 1,315
+groups, a third of that length, so any control at the target's own length will read less, and a 9% type rate
+already means content words are not recovered. A code of this size without a crib has no controllable design; per
+the brief the target was not run and no new control was built (the control number to cite is Bourdeau's 46% / 9%
+at 3,900 words).
+
+Grade counts: H 0, C 0, S 0, M 0, I 0. Status stays `open`. What would move it (unchanged): Ranzo's base table,
+Garbino's side of the correspondence, or a contemporary decipherment of any Ranzo letter (cribs). Suggestion (not
+done): transcribe Ranzo's fr. 3019 no. 27 (Bourdeau: views 114-116 of btv1b9059994n, not transcribed) to extend the
+pooled text; this raises the length but not above the 3,900-group control that already fails for content words.

@@ -71,3 +71,43 @@ Bourdeau; not independently re-verified from the local snapshot this pass).
 Not decoded, not transcribed here (out of scope for check-solved; Bourdeau's `nevers1595/` already has a full
 transcription and solver ladder if a solver picks this up). Rule 10: no novelty claim made; this is a search
 result, not a verifier's classification.
+
+## Control-first cryptanalysis (24 Sept 2026, LANE R4 N)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-r4-n-villeroy-garbino.md` (Opus, cap $7, session_018cVYFykz1TpBPHHHgWqHuN).
+Transcription: D. Bourdeau's first pass (`bourdeau/`, copied unchanged with attribution, MIT / CC BY 4.0); not
+re-checked on the image, so everything here is conditional on it (rule 2).
+
+**What Bourdeau had not tested.** His ladder assigns one letter (or one CV syllable) per unit. The design not yet
+tried is a mixed nomenclator: letters with homophones, plus syllable signs, plus word codes, plus nulls, solved
+jointly. Segmented 1x/2x as in his `seg.py` (`solver/target_pairs.txt`), the runs give **607 units, 69 types**.
+
+**Matched control first (rule 3).** `solver/design_nomen69.json`: 45 letter signs (e 5, a/i/s/u 3, ...), 12
+syllables, 8 French word codes (from de que le la les et pour roi nous vous qui est ennemi dessein), 4 nulls at 5%,
+syllables used 80% of the time; enciphered on held-out French 16th-c. letter prose (every 10th paragraph of
+`tools/data/fr16`, Catherine de Médicis t.1-2 and Marguerite de Valois, never seen by the model) in the target's own
+17-run pattern: 607 tokens, 61-62 types. Solved blind with `tools/nomenclator_anneal.py solve` (French order-5
+model built by `solver/fr_corpus.py` + `tools/italian_ngram.py build`; `--syl both --max-syl 12 --max-word 8
+--max-null 4`, 12 restarts x 1.5 M iterations). Reproduce: `solver/run_controls.sh`.
+
+| control | token accuracy | letter accuracy | sign accuracy | reading |
+|---|---|---|---|---|
+| nomenclator, seed 1 | **2.0%** | 21.5% | 1.6% | gibberish |
+| nomenclator, seed 2 | **5.9%** | 12.5% | 4.9% | gibberish |
+| sanity: pure homophonic, 45 signs + 3 nulls, same length and pattern | 61.1% | 56.2% | 53.3% | partly readable ("medicis elle ua de...") |
+
+**Target: not run.** The brief says run the target only if the control reads; it does not, so a target run could
+say nothing either way. Result: **the mixed-nomenclator design has no working control at 607 units with this
+solver** (2.0% / 5.9%, against 61% for a homophonic control of the same size through the same solver; Bourdeau's
+`hsolve.py` reads the homophonic control fully). With Bourdeau's six negatives this closes ciphertext-only attack on
+the transcription as it stands: every design that could be controlled has been, and the remaining one cannot be.
+
+**Keys on file.** No key in `ciphers/*/key.tsv` dates from 1593-96 or belongs to Nevers's circle (the 14 keys on
+file are 1446-1869, none French 1590s), so none was applied. Bourdeau's Court cipher of 1593 (fr. 3995 no. 60)
+and nos. 65, 66, 68-76 are already ruled out above.
+
+Grade counts: H 0, C 0, S 0, M 0, I 0 (nothing read). Status stays `open`.
+
+Suggestions (not done, outside this brief): read the fr. 3995 keys other than nos. 60/65/66/68-76 on the image for
+the sign family `λ π θ Δ ϖ ∞` with 1x/2x figures (no. 76 is the nearest family); look for the as-sent letter in
+Villeroy's papers (fr. 15xxx / Cinq Cents de Colbert). No request was made to any host in this step.
