@@ -53,6 +53,12 @@ session and every subagent, cloud or local.
    flagged here, not fixed; the retrospective ran out of budget to design the fix.
 7. **Reproducible readings.** Any claimed reading has a script that regenerates it from the transcription and
    the key, and exits non-zero if the committed reading is stale.
+   A reading on a target that has a spec is reported only with the output of `tools/judge_plaintext.py <spec>
+   --file <reading>` pasted into NOTES.md (a FAIL may still be reported, as a FAIL). Before the orchestrator moves
+   the target to stage 9, a fresh session that has seen only the spec and the key re-derives the reading with the
+   target's decode script and `--check`; a re-derivation that differs by more than the M-graded tokens sends the
+   reading back. The judge and the re-derivation are the Lean of this repository: they say "worth a verifier",
+   never "right" (rule 10).
 8. **Credit.** Name who solved what and when. Cite the solver repositories and Tomokiyo. Aymeloglu's repository
    has no licence: cite it, do not copy code from it. Bourdeau's code is MIT, text CC BY 4.0.
 9. **Personal data stays out of the repo.** It is public. Log archive requests by date and archive, never with
