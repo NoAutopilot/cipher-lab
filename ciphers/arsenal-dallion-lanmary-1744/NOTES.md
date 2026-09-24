@@ -1,4 +1,4 @@
-open
+blocked
 
 # D'Allion - Lanmary correspondence, "en grande partie chiffrée" -- Bibliothèque de l'Arsenal Ms-4764 and Ms-11639
 
@@ -54,3 +54,25 @@ the Ms-11639 Bastille volume may describe the same underlying correspondence rea
 
 Requests: WebSearch 2 queries. github.com 0 new (reused the M22 clones). No gallica.bnf.fr, no
 archivesetmanuscrits.bnf.fr fetch. No subagents.
+
+## Digitisation check (24 Sept 2026, LANE G2 worker O)
+
+**Digitised: no**, both witnesses.
+
+- **Ms-4764** (`ark:/12148/cc85044f`): finding aid's `avecDaoGal` marker applied to no element, no
+  `gallica.bnf.fr` href on the page. SRU `gallica all "Arsenal Ms-4764"` (0 of 1179 hits' `dc:source` name
+  Ms-4764) confirms it. Reservation link `Cote=Ms-4764&typecote=orig` only, no microfilm substitute.
+- **Ms-11639** (`ark:/12148/cc12947k` -- this ark resolves to the whole "C. Dossiers des prisonniers, Ms-11409
+  à 12471" finding aid, not a page scoped to Ms-11639 alone; Ms-11639 "Papiers divers" is one sub-item in it,
+  containing our target's "correspondance...entre d'Allion et Lanmary" alongside an unrelated "Papiers
+  particuliers du comte de Sade"). No `avecDaoGal` use and no `gallica.bnf.fr` href anywhere on the whole
+  297 KB page (i.e. across the entire Ms-11409-12471 run, not just this sub-item). SRU `gallica all "Arsenal
+  Ms-11639"` (0 of 293 hits' `dc:source` name Ms-11639) confirms it. No reservation section was present on
+  this page at all (the ark serves a series-level description, not an individually reservable item page) --
+  a future worker would need the item-level page (unresolved this pass) or a direct enquiry to establish the
+  original's own reservation cote.
+
+Wrote `REQUEST.md`. Status set to blocked.
+
+Requests this section: archivesetmanuscrits.bnf.fr 2 (cc85044f, cc12947k), gallica.bnf.fr 2 SRU queries (both
+200 first try).

@@ -1,4 +1,4 @@
-open
+blocked
 
 # Single "Lettre chiffrée, non déchiffrée" -- Bibliothèque de l'Arsenal, Ms-6829
 
@@ -49,3 +49,18 @@ itself, not the leaf, is all that has been read this pass.
 Requests: WebSearch 2 queries. github.com 2 shallow clones (grepped locally, no further requests). No
 gallica.bnf.fr, no archivesetmanuscrits.bnf.fr fetch (per brief, LANE G2 owns that host this pass). No
 subagents.
+
+## Digitisation check (24 Sept 2026, LANE G2 worker O)
+
+**Digitised: no** (finding aid without DAO; SRU `gallica all "Arsenal Ms-6829"` 571 records, none a
+`dc:source` match; 24 Sept 2026). Fetched the archivesetmanuscrits finding aid
+(`https://archivesetmanuscrits.bnf.fr/ark:/12148/cc87337r`) in full: the site's own digitised-item marker
+(`avecDaoGal`/"Consultable sur gallica") is defined in the page's stylesheet but applied to no element on this
+record, and the page carries no `gallica.bnf.fr` href anywhere. Confirmed independently with the Gallica SRU
+query above (arsenal6314-hanau-1635 precedent method): none of the 571 hits' `dc:source` values name Ms-6829.
+The finding aid's only reservation link is `reservationrao.bnf.fr/submitCote?...Cote=Ms-6829&typecote=orig` --
+original only, no `typecote=sub` (microfilm) offered, unlike M23/Ms-6314's MICROFILM ARS R-242218. Wrote
+`REQUEST.md`. Status set to blocked.
+
+Requests this section: archivesetmanuscrits.bnf.fr 1, gallica.bnf.fr 3 (the SRU query above needed 2
+tunnel-reset retries, `ws_closed_mid_exchange`, before the 200 that returned the 571 hits checked).

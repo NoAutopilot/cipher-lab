@@ -55,3 +55,23 @@ or full-text searched this pass -- flagged for a future worker, and worth checki
 
 Requests: WebSearch 2 queries (this row) + 1 shared with M22. github.com 0 new (reused clones). No
 gallica.bnf.fr, no archivesetmanuscrits.bnf.fr fetch. No subagents.
+
+## Digitisation check (24 Sept 2026, LANE G2 worker O)
+
+**Digitised: yes**, ark `btv1b9000759b`, item at canvas not yet pinned (label checked: none -- see below).
+The archivesetmanuscrits finding aid (`https://archivesetmanuscrits.bnf.fr/ark:/12148/cc138146`) marks its
+"Clairambault 296 (cote) • I Années 1572-1713" sub-unit `avecDaoGal` ("Consultable sur gallica"); the other
+three sub-units (297, 298, 299) are not marked. Our item, "Lettre en partie chiffrée de Paget," is at **p. 249**
+of the finding aid's own item list, inside the 1572-1713 span, so it is in the digitised volume (297-299 are
+not). The `avecDaoGal` link itself is loaded by an AJAX click (`refreshCompInfo`), not a static href on the
+page, so the ark was found instead via Gallica SRU (`gallica all "Clairambault 296"`, 1697 total hits, one
+with `dc:source` exactly "Bibliothèque nationale de France. Département des Manuscrits. Clairambault 296"),
+whose
+`dc:relation` cites `archivesetmanuscrits.bnf.fr/ark:/12148/cc138146/cd0e505` -- the exact same finding-aid
+component id as the marked sub-unit, confirming the match. `tools/gallica_folio.py btv1b9000759b --folio 249`
+found 316 canvases but 0 carry any folio/page label at all (this recueil's leaves are unlabelled, like fr.16092
+per CLAUDE.md) -- canvas for p.249 cannot be pinned without an eye-checked `--anchor` pair, out of this brief's
+scope ("no crops, no passes"). Status stays open (a capture worker can now proceed; not blocked).
+
+Requests this section: gallica.bnf.fr 2 (1 SRU query "gallica all Clairambault 296", 1
+`gallica_folio.py` manifest fetch).

@@ -1,4 +1,4 @@
-open
+blocked
 
 # Ciphered letter concerning the affaire du cardinal de Bouillon, and English/Netherlands/Spanish affairs -- BnF Clairambault 528
 
@@ -51,3 +51,14 @@ scholarship search for the 1710s exile affair were not run this pass.
 
 Requests: WebSearch 2 queries. github.com 0 new (reused clones). No gallica.bnf.fr, no
 archivesetmanuscrits.bnf.fr fetch. No subagents.
+
+## Digitisation check (24 Sept 2026, LANE G2 worker O)
+
+**Digitised: no** (finding aid without DAO; SRU `gallica all "Clairambault 528"` 1118 records, none a
+`dc:source` match -- the same query did surface Clairambault 1108, an unrelated volume, confirming the query
+works but 528 itself is absent; 24 Sept 2026). Fetched the archivesetmanuscrits finding aid
+(`https://archivesetmanuscrits.bnf.fr/ark:/12148/cc13874f`) in full: `avecDaoGal` applied to no element, no
+`gallica.bnf.fr` href on the page. Reservation link `Cote=Clairambault 528&typecote=orig` only, no microfilm
+substitute. Wrote `REQUEST.md`. Status set to blocked.
+
+Requests this section: archivesetmanuscrits.bnf.fr 1, gallica.bnf.fr 1 SRU query (200 first try).

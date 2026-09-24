@@ -1,4 +1,4 @@
-open
+blocked
 
 # Three "Lettre chiffrée" items, 1650-1659 -- Bibliothèque de l'Arsenal, Ms-6334
 
@@ -51,3 +51,17 @@ previously-untracked 22 Aug 1642 de Noyers-to-Longueville item as a fourth candi
 `python3 tools/room.py ... "nomination: ciphers/arsenal6334-longueville-1650-59 | copy-free | cryptanalysis |
 volume also holds a Feb 1650 cipher refresh/key and an untracked Aug 1642 Noyers-to-Longueville cipher letter
 -- check the volume's own key before fresh cryptanalysis"`
+
+## Digitisation check (24 Sept 2026, LANE G2 worker O)
+
+**Digitised: no** (finding aid without DAO; SRU `gallica all "Arsenal Ms-6334"` 607 records, none a
+`dc:source` match; 24 Sept 2026). Fetched the archivesetmanuscrits finding aid
+(`https://archivesetmanuscrits.bnf.fr/ark:/12148/cc86298x`) in full: `avecDaoGal` is defined in the
+stylesheet but applied to no element on this record, and the page carries no `gallica.bnf.fr` href. The SRU
+query needed two tunnel-reset retries before a clean response (`ws_closed_mid_exchange`, consistent with the
+lane's earlier note that Gallica services endpoints were resetting today); the third attempt returned HTTP 200
+and confirmed 0 of 607 hits name Ms-6334. Reservation link is `Cote=Ms-6334&typecote=orig` only, no microfilm
+substitute offered. Wrote `REQUEST.md`. Status set to blocked.
+
+Requests this section: archivesetmanuscrits.bnf.fr 1, gallica.bnf.fr 3 (1 SRU success + 2 tunnel resets, one
+retry each per the good-citizen rule).

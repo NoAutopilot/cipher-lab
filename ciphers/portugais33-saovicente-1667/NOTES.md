@@ -55,3 +55,17 @@ continuation) reaches Afonso VI's reign before treating this as clear of print.
 
 Requests: WebSearch 2 queries. github.com 0 new (reused clones). No gallica.bnf.fr, no
 archivesetmanuscrits.bnf.fr fetch. No subagents.
+
+## Digitisation check (24 Sept 2026, LANE G2 worker O)
+
+**Digitised: yes, ark `btv1b104629623`, item at canvas f263 (label "129r" checked).** The archivesetmanuscrits
+finding aid (`https://archivesetmanuscrits.bnf.fr/ark:/12148/cc35168g`) links the digitised copy directly (a
+static href, "Consultable sur gallica" / "Voir le document numérisé"), stated as "Numérisation effectuée à
+partir d'un document original : Portugais 33" -- the whole volume, matching our target's shelfmark exactly.
+The finding aid's own item list places "Carta n° 1 que foi por çifra por via de Olanda e Inglaterra..." at
+**F. 129-141** (item "a" under item 3, "Série de lettres...1667 et...1668"). `tools/gallica_folio.py
+btv1b104629623 --folio 129` found a single constant offset (k=6) across all 520 labelled canvases and returned
+canvas **f263**, labelled "129r" (3476x5051), confirming folio 129 recto. Status stays open (a capture worker
+can now proceed; not blocked).
+
+Requests this section: gallica.bnf.fr 1 (`gallica_folio.py` manifest fetch).

@@ -59,3 +59,22 @@ volume out of 8-9, a real gap not a negative. Not scored found-solved or closed-
 `python3 tools/room.py ... "nomination: ciphers/fr2967-duprat | copy-free | recovery | Duprat/Selve/Gedoyn
 Calais embassy decipherments; Catalogue des actes de François Ier (8-9 vols, IA) not fully swept, only 1
 query/1 vol tried"`
+
+## Digitisation check (24 Sept 2026, LANE G2 worker O)
+
+**Digitised: yes, ark `btv1b9059840r`, canvas not yet pinned (no folio labels on the manifest).** The
+archivesetmanuscrits finding aid (`https://archivesetmanuscrits.bnf.fr/ark:/12148/cc494214`) links the
+digitised copy directly (static href, "Consultable sur gallica"), stated as "Numérisation effectuée à partir
+d'un document de substitution" (a microfilm/reproduction, not the original leaf). The finding aid's item list
+gives five distinct "Dechiffrement" items, all attributed to chancelier Duprat: **Fol. 76** (item 30, "d'une
+depesche envoyée de Calais"), **Fol. 82** (item 31, "Autre..."), **Fol. 89** (item 33, "Autre..."), **Fol. 91**
+(item 34, "Autre... envoyé"), **Fol. 118** (item 41, "de lettre envoyée...au roy François premier"). Items 30
+and 41 name only the chancellor; 31, 33, 34 read "Autre Dechiffrement" (i.e. of an adjoining plain dépêche --
+several of the 24-32 item run are dated Calais dépêches from Duprat/Selve/Gedoyn, matching the QUEUE row's
+sender detail). `tools/gallica_folio.py btv1b9059840r --folio 76` found 131 canvases, **0 with any folio
+label** -- this manuscript's leaves are unlabelled like fr.16092 per CLAUDE.md's access-playbook note; none
+of the five folios' canvases can be pinned without an eye-checked `--anchor` pair, out of this brief's scope
+("no crops, no passes"). Status stays open (a capture worker can now proceed, but needs an eye-check pass to
+anchor folio-to-canvas before cutting crops; not blocked).
+
+Requests this section: gallica.bnf.fr 1 (`gallica_folio.py` manifest fetch).

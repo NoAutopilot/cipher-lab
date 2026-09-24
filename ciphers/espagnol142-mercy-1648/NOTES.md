@@ -50,3 +50,27 @@ further.
 
 Requests: WebSearch 2 queries. github.com 0 new (reused clones). No gallica.bnf.fr, no
 archivesetmanuscrits.bnf.fr fetch. No subagents.
+
+## Digitisation check (24 Sept 2026, LANE G2 worker O)
+
+**Digitised: yes, ark `btv1b10035717h`, canvas not yet pinned (no folio labels on the manifest) -- but flag:
+the item is in Espagnol 144 (TOME III), not Espagnol 142.** (`gallica all "Espagnol 144"` needed two
+tunnel-reset retries, `ws_closed_mid_exchange`, before a clean response -- the same lane-wide flakiness noted
+for M24; a third attempt returned HTTP 200 but 97210 records, all irrelevant.) The archivesetmanuscrits finding aid
+(`https://archivesetmanuscrits.bnf.fr/ark:/12148/cc347546`) lists three sub-units, "Espagnol 142 (cote) • TOME
+I," "Espagnol 143 (cote) • TOME II," "Espagnol 144 (cote) • TOME III"; `avecDaoGal` ("Consultable sur gallica")
+is applied to 143 and 144 but **not** to 142. The finding aid's item list places "Autre instruction chiffrée
+pour l'abbé de Mercy. Barneton, 6 juin 1648" at **F. 22-22 v° (item 11)**, whose foliation restarts at F.1
+after the TOME III/"Espagnol 144" heading (checked by document-position order: the item's HTML anchor
+`d0e2774` falls after the Espagnol 144 heading's `d0e2602`, itself after 143's `d0e597` and 142's `d0e82`) --
+so the item is in the digitised TOME III, not the undigitised TOME I this target's folder name names. Ark
+found via Gallica SRU field query `dc.source all "Espagnol 144"` (needed after `gallica all "Espagnol 144"`
+returned 97210 hits, "144" being too common a substring for the non-field-scoped operator); the single
+`dc.source`-scoped hit's `dc:relation` cites `archivesetmanuscrits.bnf.fr/ark:/12148/cc347546/cd0e2602` --
+the exact Espagnol 144 component id. `tools/gallica_folio.py btv1b10035717h --folio 22` found 605 canvases,
+0 with any folio label -- cannot pin the canvas without an eye-checked `--anchor` pair, out of this brief's
+scope. Flag for whoever captures this: retitle/relocate this folder to reflect Espagnol 144, or at minimum
+correct the shelfmark in any future capture/read files, before crops are cut. Status stays open (not blocked).
+
+Requests this section: gallica.bnf.fr 3 (1 `gallica all` SRU query, 1 `dc.source all` SRU query, 1
+`gallica_folio.py` manifest fetch).
