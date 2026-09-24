@@ -271,3 +271,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 222 | 24 Sep | cipher-lab | Scout scHU2: Huygens retroboeken printed ciphertext, round 2 | LANE N2 (session_01DfQyAaXAgcoFZMAbBTGj4f) | scout, Sonnet cap $5, lane-n2-scHU2.md | running, session_01CQmfFDo8hfpgZ1fVFaCooF |
 | 223 | 24 Sep | cipher-lab | fr5160 canvas walk 160-367 for 1659-61 cipher letters and clear copies | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | transcription, Sonnet cap $6, lane-g2-v | running, session_01V1G5qPQuNVm2zUfz564vw8 |
 | 224 | 24 Sep | cipher-lab | BnF sibling volumes of the Servien Turin embassy / Brienne 1659-61 with ciphers | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | scout, Sonnet cap $3, lane-g2-w | running, session_012HWWoTf65i7fmL6oHUYWk1 |
+2026-09-24T10:58Z	session_01CLm9uFwyau9hRmDcm2vALE	LANE W2 orchestrator (Opus, cap $100)	English verification successor	from the LANE W 10:09 handoff
+2026-09-24T10:58Z	session_01VVFjiBDerTNygcAyKZ1Gzc	Retro-apply d (Sonnet, cap $5)	RETRO-2026-09-24d briefs/tools proposals	transcription.md, caps, room.py --digest
