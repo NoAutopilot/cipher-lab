@@ -1684,3 +1684,65 @@ misalignments at spelling differences (e.g. 16 "el" in quelles, 61 "af").
 **Report.** f.67 read against its own clear text at C 435 / M 111 of 546; 16 codes added; key_1659 contradicted at 6 and 65.
 Not searched for print (not this brief's job); novelty stays AUDIT.md's (V5b). Requests: gallica.bnf.fr 3 (2 failed at the
 proxy, 1 x 200). One Sonnet subagent (pass B).
+
+## Sibling volumes (24 Sept 2026)
+
+LANE G2 worker W, brief: find other digitised BnF volumes holding letters in key_1659_ext's period and
+correspondence (Servien papers, Brienne's outgoing registers 1658-1661, Turin/Savoy embassy volumes) via
+archivesetmanuscrits.bnf.fr's plain POST search and Gallica SRU with `dc.source` scoping. Full table:
+`sources/solver-diffs/2026-09-24-lane-g2-servien.tsv` (17 rows).
+
+**Method and control.** `archivesetmanuscrits.bnf.fr` POST `resultatRechercheSimple.html` (cookie jar, field
+`TEXTE_LIBRE_INPUT`), per the Fourth-pass method logged in QUEUE.md; a plain `Servien` query (322 results, fully
+paginated over 4 pages) surfaces Français 5160 itself in the results' own left-hand facet sidebar
+(`recalculFacets.html?...&filtre=Dao`, confirming the ark `btv1b9060495t`) — control passed. Six further queries
+narrowed the term (`Servien Turin`, `Servient Turin`, `Ennemond Servient`, `chiffre de Servien`, `Brienne
+Turin`, `Brienne chiffre Servien`, `Loménie Brienne Savoie`). Gallica SRU (`gallica.bnf.fr/SRU`, GET not POST —
+a POST 405s) scoped with `dc.source all "Manuscrits"`/`"Mélanges de Colbert"`/`"Baluze"`/`"Clairambault"`/`"NAF"`
+combined with `dc.description all "Servien"`/`"Turin"`/`"chiffre"`, three queries. Both hosts gave one
+`ws_closed_mid_exchange` proxy-side reset apiece (confirmed via `/__agentproxy/status`, not a site block),
+each recovered on a single retry per the good-citizen rule.
+
+**No volume in fr.5160's own 1653-1661 window was found carrying an explicit cipher note.** The closest leads:
+
+- **Mélanges de Colbert 26** (ark `cc955062`, digitised): part III is Henri-Louis de Loménie de Brienne's own
+  outgoing despatches as secrétaire d'État aux Affaires Étrangères, **juillet-décembre 1661** — the tail end of
+  fr.5160's date range, same office. No "chiffre"/"déchiffrement" in the item-page catalogue text (checked
+  directly); not opened as an image this pass.
+- **Français 20657-20674**, item **Français 20660**: "Lettres originales adressées en général au comte de
+  Brienne...1652-1659" — exact correspondent, exact years, but general incoming correspondence (Provence,
+  galères, marine), no cipher note, **not digitised** (no `pictoGallica` badge).
+- **Français 20500-20576**, item **Français 20563**: "Papiers du comte de Brienne. Tome III (1630-1660)" —
+  not digitised, item-level cipher status unread.
+- **Français 23203-23204** "Papiers et lettres d'Henri-Auguste de Loménie, comte de Brienne": matched only at
+  the volume-header level in this pass's queries, no item rows returned, not resolved.
+- **NAF 6972-7328** "Collection de Brienne": a very large Brienne-family collection; the Savoie-related items
+  this pass's queries actually surfaced are all 1521-1629, decades too early — later volumes, if any, not
+  located.
+
+Everything else found under "Servien"/"Servient" + "Turin" is off-period: **Mélanges de Colbert 113,
+120-120bis, 121-121bis, 123-123bis, 124, 127-127bis, 130-130bis** (all digitised) are Ennemond Servien's own
+Colbert correspondence as ambassadeur à Turin/en Savoie, but dated **1662-1665**, after fr.5160 ends;
+**Mélanges de Colbert 131-131bis** is the Savoy ambassador Giron de Ville's reciprocal correspondence, also
+1665. **Baluze 155-156** (31 letters of Abel Servien to Sabran) and **Baluze 163** (Claude de Mesmes d'Avaux at
+Venice, one letter "en partie chiffrée" signed "Chrysogono") are both **1629-1637**, Abel Servien's earlier
+Italian mission, not Ennemond's 1659 Turin embassy, and Baluze 163's cipher is a different, unrelated code
+name. **Français 3822, 3944** and **Dupuy 869** (all digitised, all found via the Gallica SRU control query)
+are 1615-1648 miscellanies with incidental Savoy/Turin items, no cipher note.
+
+**Negative.** Gallica SRU, `dc.source` scoped to Mélanges de Colbert + Baluze + Clairambault + NAF combined,
+`dc.description all "Turin"` and `dc.description all "chiffre"` together: **0 records** — no volume in these
+four fonds carries both words in its catalogue description. Not exhaustive (archivesetmanuscrits' own
+pagination cap, and the "chiffré alone is foliation noise" lesson both apply; a cataloguer's dc.description
+for an item-level cipher note does not always propagate to the parent record SRU indexes).
+
+**No image beyond one Gallica ark check** (this brief's limit); nothing here has been check-solved, and no
+novelty claim is made. Next step for whoever returns to this: open Mélanges de Colbert 26 part III (Brienne's
+Jul-Dec 1661 despatches, closest in time to this volume) and Français 20660/20563/23203-23204 (Brienne's own
+papers, if any turn out to be digitised after all) at the image, since none of the leads above were checked
+past the catalogue-text level.
+
+Requests: archivesetmanuscrits.bnf.fr ~12 (POST searches + 1 item-page GET, ≥1.5s apart, one
+`ws_closed_mid_exchange` reset recovered on retry), gallica.bnf.fr (SRU) ~5 (2 `ws_closed_mid_exchange` resets
+before the host recovered, then 3 clean queries). No logins, no subagents, no images fetched beyond the ark
+confirmations already in the sources TSV. Well under $3 cap.
