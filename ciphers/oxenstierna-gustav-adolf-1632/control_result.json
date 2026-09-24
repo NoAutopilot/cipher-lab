@@ -1,19 +1,19 @@
 {
  "control_letter_tokens": 694,
  "control_values": 61,
- "accuracy": 0.7522,
- "solver_score": -1.7542,
+ "accuracy": 0.9798,
+ "solver_score": -1.7296,
  "true_key_score": -1.741,
- "shuffled_null": -1.8774,
+ "shuffled_null": -1.8777,
  "restart_scores": [
-  -1.8577,
-  -1.7542,
-  -1.7552,
-  -1.7774,
-  -1.7691,
-  -1.7554,
-  -1.7546,
-  -1.7637
+  -1.7589,
+  -1.7589,
+  -1.7589,
+  -1.7318,
+  -1.7296,
+  -1.7296,
+  -1.8633,
+  -1.7296
  ],
- "reading": "Min guuBtige helsan, och hvad mera nåde jagh förmå altid tilförrende. Hvad I om Borgmester Uldericks verf ßchrifva, haf- UERIAGHFERTT holler thet FORENSYNNERL Guds försyn til at frelsa vårt fedemeslandh ifrå sina starcka ovenner. Gud gifve at DITTANT [code] ETHUEG osäckerhet tillåta ville ther öfver at correspondera, aå [code] thenne casus väl til at apttera INTENTILIUTIAGHHOUERF at man bör [code] alt, HUADREGARE [code] ther thet hafver then effect, TORTRATITTE [code] TATHERNEIT [code] [code] [code] [code] ville vallor, hvilcket icke ANNARTHANANL vår stat TILTATHERIETTAHUADITARATETR [code] ETTTHE conditionaliter, och kan sådan con- dition af promittenten svårligen upfyllas, och [code] federnealan- det FOGAT [code] är väl vert, THERE [code] THERUTA at spendera, och om alt ANNATATFA til thea man [code] HUADENDATA tager. Jagh vil förthenskuldh, at I ther uppå af tullarne i Prysen order Stella, at HENSATRATU [code] [code] [code] RITHSDAN bekomma må. [code] RE [code] kunne icke med thetta bud sendas för osäckerhet skuld; älliest är got, ATULRICHUOREMEDILEGARIENE [code] THALS [code] [code] [code] [code] Gud [code] THEHERRA [code] [code] SEND [code] interim corresponderar I med Bielcken [code] [code] [code] INTHETR [code] IFERSURRA [code] [code] i Stettin är ENDATTUTTLE i DIELTHEN frånvaro. Jagh [code] [code] [code] HERNTHENHUNDEFERETTATI [code] han kommer [code] RATHAUER [code] ENGEDOFUERSTEISTRA som [code] FERT [code] HANAGE väl [code] REGIERUEREITKEEDESUERTILSTRALT at förordna. I"
+ "reading": "Min guuBtige helsan, och hvad mera nåde jagh förmå altid tilförrende. Hvad I om Borgmester Uldericks verf ßchrifva, haf- UERIAGHFORST holler thet FORENSYNNERL Guds försyn til at frelsa vårt fedemeslandh ifrå sina starcka ovenner. Gud gifve at DISTANT [code] OCHUEG osäckerhet tillåta ville ther öfver at correspondera, aå [code] thenne casus väl til at apttera INCONCILIUMIAGHHOUERF at man bör [code] alt, HUADBEGARE [code] ther thet hafver then effect, SOMPRAMITTE [code] SACKERNEIT [code] [code] [code] [code] ville vallor, hvilcket icke ANNARSKANANL vår stat TILSACKERHETTAHUADISAMATOPR [code] OSSSKE conditionaliter, och kan sådan con- dition af promittenten svårligen upfyllas, och [code] federnealan- det FOGAP [code] är väl vert, THEBE [code] THERUPA at spendera, och om alt ANNATATFA til thea man [code] HUADENDASA tager. Jagh vil förthenskuldh, at I ther uppå af tullarne i Prysen order Stella, at HENSAMMASU [code] [code] [code] RICKSDAR bekomma må. [code] BE [code] kunne icke med thetta bud sendas för osäckerhet skuld; älliest är got, ATULRICHUOREMEDILEGATIONE [code] SKALS [code] [code] [code] [code] Gud [code] THEKOMMA [code] [code] SEND [code] interim corresponderar I med Bielcken [code] [code] [code] INTHETM [code] IFORSUMMA [code] [code] i Stettin är ONDATSUPPLE i BIELCKEN frånvaro. Jagh [code] [code] [code] HORNTHENKUNDEFORESTATI [code] han kommer [code] BACKAUOR [code] ENGODOFUERSTENSTRA som [code] FORS [code] KANAGE väl [code] MOIIERUOREICKEOBEQUEMTILSTRALS at förordna. I"
 }
