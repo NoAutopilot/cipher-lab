@@ -384,8 +384,8 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T21:12Z	session_01Rx8VTW3cbeqhRX2CFhzPSM	LANE N4 csKT (Sonnet, cap $5)	check-solved KT-01 (fr.7129 Villeroy-Bongars 1604), KT-02 (Baluze 103 Le Tellier-Marca 1644)	brief lane-n4-csKT	done 21:22, $2.31, X, KT-01 held 21:27, KT-02 blocked; archived by N4 21:44
 2026-09-24T21:12Z	session_01SoTQrFgD5SkNYPQ4rUJF1z	LANE N4 scDIGI2 (Sonnet, cap $5)	DigitArq cipher letters by unit description	brief lane-n4-scDIGI2	done 21:26, $3.39, D, PP-03/PP-04; archived by N4 21:44
 2026-09-24T21:19Z	session_01GX1rck53whwtCB2EsGtkfR	LANE B orchestrator, breadth (Opus, cap 0)	first cheap test per spec at $3	PROCESS memo proposals 1 and 5; brief 2026-09-24-lane-b-breadth.md
-2026-09-24T21:19Z	session_01KEy8o8dAFWTqhW3g7Z3P9C	rfetch2: r/codes 1600s book + r/puzzles confirmation (Sonnet, cap )	ciphers/reddit-oldbook-1600s/, reddit-runaway-2021/NOTES.md	brief 2026-09-24-reddit-fetch-oldbook.md
-2026-09-24T21:19Z	session_019sZuSFzkGvLsN5xH3G1zvk	Retro-apply p: PROCESS-2026-09-24 proposals 1-4 (Sonnet, cap )	CLAUDE.md pipeline, breadth.md, solver/common/transcription/scout briefs	brief 2026-09-24-retro-apply-process.md
+2026-09-24T21:19Z	session_01KEy8o8dAFWTqhW3g7Z3P9C	rfetch2: r/codes 1600s book + r/puzzles confirmation (Sonnet, cap )	ciphers/reddit-oldbook-1600s/, reddit-runaway-2021/NOTES.md	done 21:27, $1.54, D, book = Magna Charta shorthand; runaway found-solved; archived 21:52
+2026-09-24T21:19Z	session_019sZuSFzkGvLsN5xH3G1zvk	Retro-apply p: PROCESS-2026-09-24 proposals 1-4 (Sonnet, cap )	CLAUDE.md pipeline, breadth.md, solver/common/transcription/scout briefs	done 21:24, $1.52, D, six commits; archived 21:52
 2026-09-24T21:21Z	session_0125YSNMcCskE21MtmQTNAFN	LANE B bKOE: koehler-1944 periodic IC (Sonnet, cap $3)	specs/koehler-1944.json	brief 2026-09-24-lane-b-koehler-1944.md
 2026-09-24T21:21Z	session_01GKDm1YQYWkciRfv4iSAiQz	LANE B bCIG: cigaret-case-1909 German MASC (Sonnet, cap $3)	specs/cigaret-case-1909.json	brief 2026-09-24-lane-b-cigaret-case-1909.md
 2026-09-24T21:33Z	session_01PUEBwxdjmxZ5MNas5Dt39z	LANE R5 H2b (Sonnet, cap 8)	fr2933-salviati-1525 f.55v pass B 12-19 + gate	brief 2026-09-24-lane-r5-h-salviati-leaf.md
@@ -398,3 +398,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T21:48Z	session_01HAb2wwJ9oYC1rsZGCe3D7T	LANE B bLIM: lima-1916 commercial-code grep (Sonnet, cap $3)	specs/lima-1916.json	brief 2026-09-24-lane-b-lima-1916.md
 2026-09-24T21:50Z	session_0125YSNMcCskE21MtmQTNAFN	bKOE done $1.13 N, archived	specs/koehler-1944.json	
 2026-09-24T21:50Z	session_01GKDm1YQYWkciRfv4iSAiQz	bCIG done $1.44 D, archived	specs/cigaret-case-1909.json	
+2026-09-24T21:53Z	session_pending_retrog	Retrospective g (Sonnet, cap 0)	RETRO-2026-09-24g.md	22 rows, $88 since retro f
+2026-09-24T21:53Z	session_pending_decode	DECODE look at R2742 and R2077 (Sonnet, cap )	baluze103 and fr3789 NOTES; sources/decode/records/	N4 flag 21:44; brief 2026-09-24-decode-r2742-r2077.md

@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 21:19 UTC",
+ "updated": "24 Sep 2026 21:53 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1657,28 +1657,68 @@
    "grade": "9 of the 50 already solved or explained (Ferdinand III, Thouless B, Rilke, LCS35, the silk dress, Urquhart, Roosevelt, ADFGVX) and one April Fools post; three first tests run with controls: Koehler 1944 not a transposition (IC 0.040 against 0.072 German), Somerton host-text initials 0 of 1,000 on the control, Lima 1916 anneal reads salad against controls at 61 to 75 percent",
    "line": "Rank one is the Koehler 1944 Abwehr cryptograms (924 letters, transcription on disk), next test periodic IC then the TNA KV 2 route. The process memo proposes a breadth lane: first cheap test per spec at $3 before any campaign, which the mathematics results of 2025-26 justify (9 of 353 problems fell to trying everything cheaply).",
    "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/UNSOLVED-SURVEY.md"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "catch",
+   "title": "Reddit r/codes, 'possible cypher in a 1600s book': the book is a Magna Charta edition and the marks are 17th-century English shorthand, not a cipher",
+   "grade": "thread consensus, book identified by its poster; no reading claimed by anyone; images and the redacted thread on disk",
+   "line": "Closed as not a cipher. If anyone wants it read, it is a shorthand-system identification job (Shelton or Willis era), not cryptanalysis.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/reddit-oldbook-1600s"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "catch",
+   "title": "Reddit r/ciphers, 'coded message left by teen runaway' (2021): found-solved in r/puzzles in May 2021, per the poster, who passed the findings to the police",
+   "grade": "confirmed from the r/puzzles thread; the decoded text is deliberately not reproduced in this repository",
+   "line": "Nothing for a solver to do, and nothing that should be public here: a minor and a police case are involved (rule 9).",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/reddit-runaway-2021"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "negative",
+   "title": "Koehler 1944 Abwehr cryptograms (rank one of the public list): not a short-period Vigenere or Beaufort; behaves like a one-time key",
+   "grade": "first cheap test with matched controls: target best coset IC 0.047 and no Kasiski concentration, matching the one-time-key control (0.044 to 0.047) and not the periodic control (0.065 to 0.081 at its true period)",
+   "line": "The cheap cryptanalytic route is closed with a control; the item's next step is the archive route (TNA KV 2 and HW 19) for the key or a decrypt. $3.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/specs/koehler-1944.json"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Cigarette-case cryptogram 1909: the first cheap test is uninformative at 45 symbols, and the control proves it",
+   "grade": "German substitution anneal fails the judge, but the matched control recovers only 4 to 22 percent blind at this size, so the failure says nothing about the target",
+   "line": "Recorded as a low-power method at this length rather than a negative; the next tests in the spec are crib-based.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/specs/cigaret-case-1909.json"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "negative",
+   "title": "Nevers-circle letters under Tomokiyo's key no.60 (fr.3985, 3986, 3987, 3989, 3990): blocked on the scribe's hand after a calibrated atlas",
+   "grade": "key applied mechanically before and after calibrating the signs on the leaf with a contemporary decipherment: pass agreement 37.5 then 39.8 percent on f.176, judge FAIL against its own shuffled null; the control shows the judge cannot pass such fragments even at zero noise",
+   "line": "The key is right and the hand is not readable by this method at this image quality. Status blocked; the route forward is a better capture or a different reader, not another pass.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr3985-nevers-revol-1593"
   }
  ],
  "lanes": [
   {
    "name": "Lane R5, recovery",
    "live": 1,
-   "focus": "key no.60 applied mechanically to fr.3985 f.88 and f.176 and fr.3990 f.27: no reading (73 keyed tokens against 162 uncertain; pass agreement 37 to 55 percent). The blocker is sign identification in this hand, not the key. Next: calibrate the key's signs on fr.3983 f.169, the Nevers leaf that carries a contemporary decipherment, then re-run; Salviati f.55v to f.57v to be bought (owner 20:16)"
+   "focus": "Salviati f.55r passed its gate (370 signs, pool about 1,090); f.55v half read, pass B resumes at line 12; the five Nevers letters are blocked on the hand after the calibrated re-run (39.8 percent), no more spend there"
   },
   {
    "name": "Lane N4, nominations",
    "live": 1,
-   "focus": "eleven firm copy-free nominations; scTOMO done (Tomokiyo's other key tables swept: two new copy-free rows, the rest already worked by Bourdeau or us); scDIGI on the Torre do Tombo codices running"
+   "focus": "18 workers, $58; two Torre do Tombo finds under check-solved (Linhares key plus ciphertext 1780-1827; Costa Cabral 1865 interlined); Villeroy-Bongars 1604 held until Tomokiyo's Bongars paper is read; Le Tellier-Marca 1644 waits on a DECODE login look"
   },
   {
    "name": "Lane B, breadth",
    "live": 1,
-   "focus": "first cheap test per spec at $3 with a matched control, two Sonnet workers at a time, from the survey's ten specs; nothing promoted to a campaign without a first test"
+   "focus": "two first tests done at $2.57: Koehler 1944 not periodic (one-time-key shape, archive route next); cigarette case 1909 uninformative at 45 symbols; two more running"
   },
   {
    "name": "Parent workers",
    "live": 1,
-   "focus": "survey done ($14: the ranked list, specs, judge, process memo); LANE B breadth lane starting on the specs; retro-apply p applying the memo's rules; rfetch2 on the r/codes 1600s book plus the r/puzzles confirmation"
+   "focus": "retrospective g running (22 rows, $88 since f); a DECODE-login worker checks record R2742 (Le Tellier-Marca 1644, 'Decrypted') and R2077 (the Marie de Medicis key); rfetch2 and retro-apply p closed"
   },
   {
    "name": "Lane V4, verification",
@@ -1741,9 +1781,9 @@
   {
    "title": "Reddit thread, 1600s book",
    "asked": "24 Sept 2026 20:38 UTC",
-   "state": "running",
-   "result": "Queued behind the runaway-note fetch, which is now done.",
-   "next": "Fetch running (same worker as the confirmation), then check-solved if the book is identified.",
+   "state": "done",
+   "result": "Book identified (a Magna Charta edition); the marks are 17th-century English shorthand, not a cipher.",
+   "next": "Nothing, unless you want a shorthand-system identification.",
    "link": "ciphers/reddit-oldbook-1600s/",
    "session": ""
   },
@@ -1805,8 +1845,8 @@
    "title": "Reddit thread, runaway note 2021",
    "asked": "24 Sept 2026 20:36 UTC",
    "state": "done",
-   "result": "Thread and images fetched through your Reddit app and saved with every identifier redacted; the poster reported in May 2021 that r/puzzles solved it and the police were given the findings.",
-   "next": "A Sonnet worker confirms the r/puzzles solve and marks the folder found-solved; no reading is reproduced here (a minor and a police case).",
+   "result": "Found-solved: r/puzzles read it in May 2021 and the poster passed it to the police; the text is deliberately not in the repo.",
+   "next": "Closed.",
    "link": "ciphers/reddit-runaway-2021/",
    "session": ""
   },
