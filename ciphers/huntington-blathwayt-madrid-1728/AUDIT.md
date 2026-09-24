@@ -263,3 +263,133 @@ archive.org 15 (advancedsearch 9, metadata 3, `_djvu.txt` download 3); be-api.us
 this may have caused 10 x 502, and the 6 failed queries were retried once); discovery.nationalarchives.gov.uk 31;
 api.crossref.org 7 (one 429); api.openalex.org 1 (429); api.semanticscholar.org 1 (429); openlibrary.org 1;
 www.huntington.org 1 (429, stopped); WebSearch 6.
+
+## N4 decision, 24 Sept 2026
+
+A fresh verifier session, LANE W worker K (Opus; orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq), 09:48-10:00 UTC.
+It did none of the solving (R17), the first audit (H) or the second audit (I), and it did not decode. Question:
+does the logged coverage meet rule 10's N4 ("N3 with the principal editions, catalogues and project pages covered,
+internal or unpublished work not excluded") for BLA 186, BLA 191(a) and BLA 184?
+
+**Answer: not yet. All three stay N3.** Every principal printed edition is now covered. HMC *Polwarth* vol. V, the
+one printed gap, was closed this session at token level through HathiTrust's HTRC Extracted Features (s.2). The
+holding archive's catalogue is covered. One principal project family is still open: **DECODE's "Decrypted"
+records.** The only DECODE check so far is a grep of two cached lists that hold the Non-decrypted and Partially
+decrypted records (and a grep of Aymeloglu's cached catalogue for "Blathwayt" only). A Huntington, Blathwayt or
+Marchmont record marked Decrypted would not appear in either list. This has been posted for LANE N. If LANE N's
+search finds no DECODE record for these items, all three go to N4 with no further work, using the sentences in s.4.
+
+### 1. Principal families and coverage
+
+| family | principal? | covered | where AUDIT.md shows it |
+|---|---|---|---|
+| Rose, *Marchmont Papers* (1831) vols 1-3 (the recipient's printed papers) | yes | yes: in-item fts plus local grep of all three `_djvu.txt`; **vol 2 pp.414-15 = BLA 186 p1 in English, cipher omitted** | second audit, Rose rows |
+| HMC *Polwarth* vols I-III and two unnumbered IA scans | yes (the Marchmont calendar) | yes, in-item fts | first audit (a); second audit (a) |
+| HMC *Polwarth* vol. IV | yes (scope check) | **yes, this session**: HTRC EF `mdp.39015031910725`. The tokens 1728 and 1729 occur on no page, so the volume ends before these items. Ripperda occurs there only in the Cambrai/Vienna years | s.2 |
+| HMC *Polwarth* vol. V (1961; 1725-80) | yes: the one printed calendar of the Marchmont papers for these years | **yes, this session, at token level** (HTRC EF, two copies: `msu.31293105166841` and `mdp.39015031910733`). The volume does not print BLA 186, 191(a) or 184 (s.2) | s.2 |
+| Warrender, *Marchmont and the Humes of Polwarth* (1894) | yes (family) | yes | second audit (a) |
+| HMC Townshend, Portland V-VIII, Carlisle, Egmont; Coxe *Walpole*, *Horatio Walpole*, *Kings of Spain*; Armstrong 1892 | yes (period editions of the ministers the letters reached) | yes | first audit (a); second audit (a); print-check.tsv |
+| British Diplomatic Instructions (Camden) | would be principal | no Spain volume exists for these years (first audit: IA advancedsearch 0; the series has Sweden, France and Denmark volumes for 1689-1789) | first audit (a) |
+| Ripperda narratives (Campbell 1740, Moore 1806/1814, Syveton 1896, Villars/Petitot) | yes for the event | yes | first audit (a); second audit (d) |
+| Huntington catalogue: CONTENTdm item records, compound objects, whole-collection full text | yes (holding archive) | yes | first audit (d) |
+| Huntington finding aid (OAC export of the ArchivesSpace catalogue) | yes | yes, entire text | first audit (d) |
+| Huntington ArchivesSpace item pages (www.huntington.org/collections/lib-mssbla-aspace-*) | same catalogue as OAC | covered through OAC. This session's WebSearch shows the per-item Pareti and Du Bourgay records with the finding-aid wording (1720-34 agents, "Giovanni Battista Paretti"). No extra field has been seen. www.huntington.org gave a 429 to worker I, so no request was made this session | this section |
+| TNA Discovery catalogue | yes (catalogue) | yes, 45 queries; SP 94 is described at piece level only | first audit (b); second audit (b) |
+| TNA SP 36/13, SP 36/14, SP 54/19, SP 94/99-100 leaves; SP 89 | **no for N4**: archival, unpublished leaves. Rule 10 N4 leaves "internal or unpublished work not excluded" (Eckert precedent: NARA RG 107, Meigs letterbook) | pointer only | second audit, toward-N4 2 |
+| BL Newcastle papers (Add MSS 32,686 ff.) | **no for N4**: archival | not searched | second audit, toward-N4 3 |
+| Cambridge UL Cholmondeley (Houghton) correspondence | **no for N4**: archival | not searched | second audit, toward-N4 4 |
+| Storrs, *The Spanish Resurgence* (2016); JSTOR; OpenAlex, Semantic Scholar, CrossRef, HAL, Persée | **no for N4**: scholarship, not an edition or catalogue. It is outreach gate 2 (CLAUDE.md, 24 Sept 2026: a queued JSTOR row never blocks N4 on its own) | CrossRef, HAL, Persée yes; OpenAlex and S2 429; JSTOR 6 rows queued | first and second audit (g)/(c) |
+| Google Books phrase search | yes (template family e) | yes: LANE V2, 8 queries, all totalItems 0, API confirmed live | google-books-2026-09-24b.tsv |
+| IA full text (global and in-item) | yes (template family e) | yes | first audit (e); second audit |
+| HathiTrust whole-library full text | no for N4 (a search engine, not an edition). The HathiTrust volume that matters, *Polwarth* V, is covered by HTRC EF | EF yes; site search unreachable (Cloudflare) | s.2 |
+| Solver repositories (Bourdeau, Aymeloglu), Cryptiana | yes (cipher community) | yes | first audit (f) |
+| **DECODE (de-crypt.org), Decrypted records** | **yes (cipher community; the catalogue where a prior decipherment of a manuscript cipher would be listed with its holder)** | **no**: `sources/decode/records-non-decrypted-2026-09-24.tsv` (1,186 Non-decrypted and Partially decrypted rows) has no Huntington holder and no 1728-29 item except BL Add MS 32270 ff.41-42 (1727, a different holder). The Decrypted status (x_status=1) has not been listed. Aymeloglu's cached catalogue was grepped for "Blathwayt" only | this section; NOTES "DECODE" |
+
+### 2. HMC *Polwarth* IV and V through HTRC Extracted Features (this session)
+
+Route: the HathiTrust Bibliographic API (`catalog.hathitrust.org/api/volumes/brief/recordnumber/000233444.json` and
+`100220849.json`, full Chrome User-Agent) lists these copies: v.4 `msu.31293027029150` and `mdp.39015031910725`
+(full view); v.5 `msu.31293105166841` (full view, pdus), `mdp.39015031910733` (search-only) and
+`osu.32435022299184` (search-only). Record numbers came from a WebSearch restricted to catalog.hathitrust.org.
+Per-page token counts came from `data.htrc.illinois.edu/ef-api/volumes/HTID/pages?pos=false`, fetched once per
+volume through `tools/htrc_ef_headwords.py`'s cached fetcher (cache in the scratchpad, not committed). They were
+grepped by regex for Pareti/Paretti, Ripperda/Riperda, cypher/cipher, decypher, Port, Mary, Marie, Keene, Patiño,
+Segovia, 1728, 1729, Cessnock, Madrid, Rottembourg, Seville, Abbé.
+
+Vol. V (`msu.31293105166841`, 474 pages, 280,094 tokens; `mdp` copy consistent at an offset of -4):
+
+- The 1725-30 section is seq 47-72. It calendars the 2nd Earl's letters to and from Townshend, Rondeau, Newcastle,
+  Stair, Eglinton, Haddington and others, and the Scottish civil list (seq 53-56). The 1729 pages (seq 66-68) are
+  about Gibraltar, Don Carlos, Parma and the Seville treaty, as news in Marchmont's own correspondence.
+- **Pareti** is on seq 48 (Townshend to Marchmont, Sept 1725, "Abbe Pareti"), seq 50 (a letter headed ABBE
+  PARETI, Oct/Nov 1726, Genoa/Madrid/Cambray, personal: health, "overturnd" chariot, "unknight/knighting"), seq 62
+  (Townshend to Marchmont, Sept 1728, about the Abbé Pareti as a correspondent: "intelligences", "secret",
+  "channel", "canal", "marks", "papers", "money", "office"), and seq 452 (index: "Pareti, Paretti ... letter(s),
+  pension, Genoa, Madrid").
+- **Ripperda** occurs once, seq 15 (the introduction). **Segovia 0, Patiño 0, Rottembourg 0.** No page carries
+  Pareti with Ripperda, Segovia or any 1728 escape vocabulary.
+- **decypher** occurs once, seq 60. The page also has Rondeau, Moscow, Petersburg, Czarish, Keene and Townshend in
+  July-Sept 1728, and no Pareti, Madrid or Spain token. It is Russian-court correspondence, not these items.
+  cypher/cipher: seq 226-414 only, the 1740s-60s.
+- **Port St Mary** is not printed. "Port" is on seq 54 (civil-list page), 171, 349 and 436-462 (late matter and
+  index). None of those pages has Mary/Marie with Port. Cessnock is on seq 447 and 462, index only.
+
+Reading: vol. V prints no text of BLA 186, 191(a) or 184 and no decipherment of them. The nearest item is
+Townshend's Sept 1728 letter about Pareti's intelligence channel (seq 62). It shows that Townshend's office got
+Pareti's reports. It does not print them. **Limits:** this is a token-level reading of OCR, with no word order and
+no sight of the page. A decipherment printed without any of the searched names is not excluded. The regexes found
+the expected tokens (Pareti in the index, Townshend's letters), so the method works on this OCR.
+
+Vol. IV (`mdp.39015031910725`, 436 pages): Pareti on 8 pages and Ripperda on 10. The tokens 1728 and 1729 occur on
+no page, so the volume ends before these items. It is out of range.
+
+### 3. Decision per item
+
+**BLA 186 (Pareti to Marchmont, Madrid, 13 Sept 1728), two cipher lines: N3, not raised.** The letter's clear part
+is printed (Rose 1831 ii 414-15, English extract, misdated 3 Sept, cipher shown only as "(Cypher.)"). No printed
+edition, catalogue or holding-archive record gives the cipher lines or a decipherment. That includes *Polwarth* V,
+covered this session. The one open principal family is DECODE Decrypted records.
+
+**BLA 191(a) (Port Ste Marie, undated, forwarded from Cessnock 8 Aug 1729): N3, not raised.** Same position.
+The copy sent to Newcastle, and any decipherment made of it in SP 36/54/94 or the Newcastle papers, is
+archival and unpublished. It does not block N4 (Eckert precedent), but the safe sentence must name it.
+
+**BLA 184 (statement re Rottembourg, [1727-28]), seven code groups: N3, not raised.** *Polwarth* IV has many
+Rottembourg pages and ends before 1728. Vol. V has no Rottembourg token. Same open family as the other two.
+
+**Blocking family, all three items: DECODE Decrypted records.** Smallest job: one LANE N search on de-crypt.org
+(the no-login `RecordsList` form with x_status=1, or a holder/keyword search) for Huntington, Blathwayt, Marchmont
+and Ripperda, plus Madrid, Seville or Port Ste Marie for 1728-29. Posted in ROOM.md. It needs no person. **If
+the search is negative, all three go to N4 with the sentences below, and no other family is left to cover.**
+
+### 4. Sentences for use once DECODE is negative (not before)
+
+- **BLA 186 (N4, conditional):** "The Abbé Pareti's letter of 13 Sept 1728 to the Earl of Marchmont (Huntington
+  mssBLA 186), on Ripperda's escape, was printed in English extract by Rose in 1831 (*Marchmont Papers* ii,
+  414-15, dated there 3 Sept), with its cipher line omitted. Its two cipher lines read in part (20 of 24 groups;
+  4 unkeyed) with a key set out from contemporary decipherments of other letters in the same collection. No
+  prior decipherment of those lines located (search log in AUDIT.md)."
+- **BLA 191(a) (N4, conditional):** "The undated cipher enclosure (a) of Huntington mssBLA 191 (Port Ste Marie,
+  forwarded 8 Aug 1729) reads in part (106 of 141 groups at grade C; 19 uncertain, 16 unkeyed) with the same key.
+  No prior decipherment located in print, in the Huntington's catalogue or in the cipher community's catalogues.
+  The copy sent to Newcastle, and any decipherment made of it in the State Papers or the Newcastle papers, was
+  not checked."
+- **BLA 184 (N4, conditional):** "Three of the seven code groups in mssBLA 184 read as syllables. The name codes
+  are unread. No prior decipherment located." Since almost nothing is read, this is not worth an outward note.
+- Until then, the second audit's N3 sentences stand. Every sentence says "partial" or "in part". None says "first",
+  "unpublished", "new" or "unread", and every BLA 186 sentence cites Rose 1831.
+
+### 5. Postmortem
+
+No over-claim found in this pass. One correction: the second audit's toward-N4 item 1 ("HMC *Polwarth* vol. V
+... would list Pareti's 1728-29 letters and any decipherments") is now answered. Vol. V does not print them. It
+mentions Pareti only in Townshend's letters and the index. Items 2-4 and 6-7 on that list are archival or
+holding-archive details and do not block N4. Item 5 (Storrs) is outreach gate 2. The gap nobody logged is
+DECODE's Decrypted status. The earlier audits recorded DECODE as covered from lists that cannot contain a
+Decrypted record. Lesson for the verifier brief (suggestion, not applied): "a DECODE cache check names which
+statuses the cache holds; a Non-decrypted list cannot show a prior decipherment."
+
+### 6. Requests (this session)
+
+catalog.hathitrust.org 2 (Bibliographic API); data.htrc.illinois.edu 6 (3 metadata, 3 page files, 2 s apart,
+sequential); WebSearch 2; www.huntington.org 0; de-crypt.org 0; Google Books 0; gallica 0.
