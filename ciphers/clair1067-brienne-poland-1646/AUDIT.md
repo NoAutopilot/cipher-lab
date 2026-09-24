@@ -1,6 +1,6 @@
 # AUDIT: Loménie de Brienne to the Queen of Poland, 19 May 1646 (BnF Clairambault 1067, fol.226r-227r)
 
-Verifier session_01Udgi32LVQHdPhEgPKEf6fe (Opus, for LANE V / cipher-lab-7a), 24 Sept 2026, 07:50-08:20 UTC by `date -u`.
+Verifier session_01Udgi32LVQHdPhEgPKEf6fe (Opus, for LANE V / cipher-lab-7a), 24 Sept 2026, 07:50-08:02 UTC by `date -u`.
 Adversarial audit under CLAUDE.md rule 10. No decoding done; no reading, key or ciphertext changed.
 
 Claim under audit (ROOM.md, LANE G2, 24 Sept 2026 07:44): "Brienne to the Queen of Poland, 19 May 1646, Clairambault
