@@ -346,7 +346,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T18:37Z	session_0119AEp7E59uvwSMs2Eboq9F	Retro-apply e (Sonnet, cap $6)	RETRO-2026-09-24e.md proposals	done 18:45, $2.16, D, 4 of 5 applied (5 had no diff); archived 18:50
 2026-09-24T18:48Z	session_01LcgYWtnKYzBkdEwVU1ae1t	LANE R5 orchestrator (Opus, cap 0)	recovery successor to R4	owner 18:48: keep chasing momentum; brief 2026-09-24-lane-r5-orchestrator.md
 2026-09-24T18:48Z	session_01Nrrp9gDcF8aHUgcMSXxU7q	LANE N4 orchestrator (Opus, cap 0)	copy-free nominations successor to N3	brief 2026-09-24-lane-n4-orchestrator.md
-2026-09-24T18:48Z	session_01RjbAN7B7GsuXHwuPr1Ak5X	Board: hall of fame (Sonnet, cap )	CITATIONS.md + fourth board view	owner's ask 18:48; brief 2026-09-24-board-hall-of-fame.md
+2026-09-24T18:48Z	session_01RjbAN7B7GsuXHwuPr1Ak5X	Board: hall of fame (Sonnet, cap )	CITATIONS.md + fourth board view	done 18:55, $2.41, D, commit 8193cea; archived 19:13
 2026-09-24T18:51Z	session_01JEcbKeWp3vZgCeaStuC3o2	LANE N4 scGOM2 (Sonnet, cap $6)	Gomberville 1665 seconde partie: fr3993/fr3625/fr3621 edition verdicts	brief lane-n4-scGOM2
 2026-09-24T18:51Z	session_019VcvxUM9ZXoESqDqQo7JfL	LANE N4 scKEYS (Sonnet, cap $6)	81 published keys vs unread sibling letters (recovery rows)	brief lane-n4-scKEYS
 2026-09-24T18:51Z	session_01GnE6trLdjyguTWCXBxE5j9	LANE N4 scARCH (Sonnet, cap $5)	holding-archive viewers for the 22 CS2 copy-order rows	brief lane-n4-scARCH
