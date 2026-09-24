@@ -3,7 +3,7 @@
 Verifier session, 24 Sept 2026 (03:00-03:15 UTC), orchestrator session_01EFmUvFAifLKGdBSsW9mjEG. This session
 did not take part in the check-solved, transcription or solver sessions and did no decoding. Levels N0-N5 are
 those of CLAUDE.md rule 10. Claim under audit: NOTES.md "Reading with Tomokiyo's key" says f.35 reads with
-Tomokiyo's published 1557 Danzay key: 638 cipher tokens, H 508 (61 nulls) / M 61 / U 69, continuous French on
+Tomokiyo's published 1557 Danzay key: 638 cipher tokens, H 508 (61 nulls) / M 61 / U 69 [H 509 / M 59 / U 70 after the second-reader adjudication of 24 Sept 2026, NOTES.md], continuous French on
 about 23 of 37 lines; the letter continues on f.36, which has not been transcribed. The repo makes no novelty
 claim. This audit tests whether the plaintext or a decipherment of f.35 is already in print.
 
@@ -20,7 +20,7 @@ was not searched. Until those three gaps are closed, the class stays N3.
 
 **Safe sentence:** "BnF fr.20140 f.35 (Danzay to the Cardinal of Lorraine, dated 27 Jan 1557) has no
 contemporary decipherment. Read with the key Tomokiyo published in 2026, about 23 of its 37 lines give
-continuous French (508 of 638 cipher tokens at grade H, 69 signs unkeyed). No prior decipherment or printed
+continuous French (509 of 638 cipher tokens at grade H, 70 signs unkeyed). No prior decipherment or printed
 plaintext was located in the Danzay editions, the Scottish and English state-paper series, or the Danish
 regesta (search log in AUDIT.md). The letter continues on f.36, which has not been read."
 
@@ -247,7 +247,7 @@ plaintext or a decipherment of it in print, and so prove N3 wrong. The audit cov
 
 **Safe sentence** (unchanged in substance from the first audit): "BnF fr.20140 f.35 (Danzay to the Cardinal of
 Lorraine, dated 27 Jan 1557) has no contemporary decipherment. Read with the key Tomokiyo published in 2026, about 23 of
-its 37 lines give continuous French (508 of 638 cipher tokens at grade H). Two independent audits found no prior
+its 37 lines give continuous French (509 of 638 cipher tokens at grade H). Two independent audits found no prior
 decipherment or printed plaintext in the Danzay editions and studies, the French, Scottish, English, Danish and Swedish
 documentary series, Ribier's *Lettres et mémoires d'estat*, the Cardinal's edited letters, or the solver repositories
 (search log in AUDIT.md). The reading is partial, and the letter continues on f.36."

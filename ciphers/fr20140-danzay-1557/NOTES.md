@@ -228,9 +228,10 @@ on f.35v: V29 stops at "... du [xk]" at the foot of the page, and the text goes 
 
 **Token grades (decode.py, cipher tokens only):** 638 cipher tokens, plus 152 clear-hand words and the 7-sign
 gloss above V18.
-- H 508: the sign was read clearly and Tomokiyo keys it to one value. 61 of these are his nulls.
-- M 61: 21 keyed signs that are doubtful in the image, plus the 40 glyphs he keys twice (T = a/luy, hook = u/a). A 22nd doubtful sign, `D`, is unkeyed and counted under U.
-- U 69: signs in none of his cells.
+- H 509: the sign was read clearly and Tomokiyo keys it to one value. 61 of these are his nulls.
+- M 59: 19 keyed signs that are doubtful in the image, plus the 40 glyphs he keys twice (T = a/luy, hook = u/a). Two more doubtful signs, `D` and `S` (R4 pos 21), are unkeyed and counted under U.
+- U 70: signs in none of his cells.
+- (Counts after the second-reader adjudication of 24 Sept 2026; before it: H 508 / M 61 / U 69.)
 
 No token is C, because there is no contemporary decipherment of f.35. Everything above is a reading
 from his published key, which he built from the sibling decipherments on f.16, f.24 and f.30.
@@ -451,7 +452,46 @@ Open questions (no change proposed):
 - An arc drawn over the next sign is read as one `circ` or as two signs, loop + sign (R7, V1, V3).
 - The clear word read "bien" (4×) looks like "huy" in the image.
 
-Suggestion (not done): a Sonnet worker applies the accepted rows and reruns `decode.py --check`.
+### Adjudicated and applied, 24 Sept 2026
+
+LANE V adjudicator (04:01 UTC). Each row was checked on the pass C crops regenerated from native_f69/f70 on disk
+(`crop_passC.py`, 2-3x zooms), against other instances of both labels on the same leaf. 11 accepted, 1 rejected.
+Applied to ciphertext.txt (sign and conf columns); `decode.py` regenerated reading.txt and reading_tokens.tsv;
+`decode.py --check` exits 0. f.35 grades: H 508 / M 61 / U 69 -> **H 509 / M 59 / U 70** (638 cipher tokens, 61 nulls).
+
+| row | change | decision | image evidence | effect on reading |
+|---|---|---|---|---|
+| R4 pos 4 | al -> LRD (conf H) | accept | Large Q-shape with tail to right, the same form as LRD at V26 pos 9, V28 pos 15 and V29 pos 15; the alpha at R4 pos 17 is quite different | Worse under the committed key: "la c o[ring7]ne" becomes "la <le Roy de Dannemarch> o[ring7]ne". See the key note below |
+| V4 pos 6 | eps -> s9 (H) | accept | Single round bowl on a straight descender (q-shape). The two-lobed epsilon-with-stem at V4 pos 17 is distinct | "tour" -> "tous" |
+| V4 pos 10 | eps -> s9 (H) | accept | Same q-shape as pos 6 | "le ra..." -> "les a..."; better or the same |
+| V6 pos 6 | eps -> s9 (H) | accept | q-shape; the epsilon-with-stem at V6 pos 14 is distinct | "quil renploy[ring7]ero[pdx]t" -> "quil s enploy..." (qu'il s'employeroit); better |
+| V23 pos 23 | eps -> s9 (H) | accept | q-shape; the epsilon at V23 pos 10 ("leur") is two-lobed | "en ruis" -> "en suis"; better |
+| V28 pos 11 | eps -> s9 (H) | accept | q-shape; the epsilon at V28 pos 4 ("car") is two-lobed | "a u q r b o u" -> "a u q s b o u", in the Augsbourg spelling at V26's end; better |
+| V29 pos 3 | eps -> s9 (H) | accept | q-shape after T and = | "a i r" -> "a i s" after "pourra" (V28): "pourra ais..." fits; better |
+| V29 pos 22 | eps -> s9 (H) | accept | q-shape; the epsilon at V29 pos 17 is two-lobed | "p a r h e" -> "p a s h e"; same (neither is clear) |
+| R4 pos 21 | B -> S (M) | accept | A heavy, rounded S with a closed lower bowl, matching the committed S at V8 pos 18; no ascender loop, unlike B at V6 pos 9 and V8 pos 11 | "c h e p" -> "c h e [S]"; S is unkeyed (U); the same, since neither reads |
+| R6 pos 19 | pd -> fd (H) | accept | An f with a heavy crossbar and a descender well below the line, as fd at V23 pos 5 and V28 pos 5; not the pound-t sitting on the line | "faultra" -> "fauldra" (a period spelling of faudra); better |
+| V26 pos 18 | xinf -> O (H) | accept | A heavy closed oval with an inner stroke, the same as O at R5 | None (both are nulls) |
+| R6 pos 22 | xinf -> x88 | **reject** | Two open loops crossed by one horizontal bar, identical to xinf at V29 pos 18. It lacks the tall vertical stems of x88 at R3 pos 1 | None (both are nulls) |
+
+**The eps -> s9 group.** s9 is already in key.tsv as s ("reversed-9 with long tail", Tomokiyo s column,
+row 2), and ciphertext.txt already used it at R7 pos 9 and R8 pos 6/10. At R8 pos 10 the same q-shape falls in
+"present", so the s value there is set by the text. The value comes from key.tsv, and none was invented.
+Six of the seven changes read better or the same, and none reads worse. The 37 remaining `eps` rows were not
+re-examined one by one here.
+
+**Open questions.** None of these is settled by the image. The key questions stay open.
+- Plain 2 vs Q-shaped sign: this is still a key question. There is new evidence, but no decision has been
+  made. With the q-shape now s at V28 pos 11, V28 reads "T mu q4 s9 bl pib xb [Q] g8" = "a u ? s b o u ? g",
+  which is the spelling of "Augsbourg" at the end of V26 if the Q-shape is r and q4 is g. The same assumption
+  gives "la ro[ring7]ne" at R4. This favours Tomokiyo's r-column Q-shape, as pass C noted. key.tsv is untouched.
+- ls vs loop, and circ as one sign or two: the same stroke carries both labels, so the image cannot decide.
+  These stay open.
+- "bien" vs "huy": a clear-hand word, not a cipher sign. The committed reading is unchanged.
+- Suggestion (not done): V28 pos 10 (committed q4?, pass C g7) looks like a 7 in the crop. Re-examine it
+  together with the Q-shape key question.
+
+Suggestion (not done): a Sonnet worker applies the accepted rows and reruns `decode.py --check`. (done: see "Adjudicated and applied" above)
 - Suggestion (second audit, 24 Sept 2026): for N4 on f.35, read Delavaud 1911 (Bull. Soc. normande de géogr. XXXIII, Gallica cb328704148, pp. 49-55) and Daussy 2001 (L'épistolaire au XVIe siècle, pp. 211-226).
 
 ## f.36r lines 2-4, passes (24 Sept 2026)

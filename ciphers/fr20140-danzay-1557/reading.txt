@@ -3,17 +3,17 @@
 R1	i l e r
 R2	[xk] GRAND <le Roy de Dannemarch> [x8] [D] [ringT] f o r t d y r u e i l e <et> a t e n u e
 R3	GRAND OU r RY DONT JE SUYS EN PEYNE DE PAOUR QUE [xk] r
-R4	PAR l a c o [ring7] n e [ringT] n e m p e s DU c h e p [x8] n e
+R4	PAR l a <le Roy de Dannemarch> o [ring7] n e [ringT] n e m p e s DU c h e [S] [x8] n e
 R5	p r e s t e FUST s a u f r [ringT] n S'IL Y AVOYT
-R6	AFFAIRE s OU l a q u e ll e x n e f a u l t r a [xk]
+R6	AFFAIRE s OU l a q u e ll e x n e f a u l d r a [xk]
 R7	a [x8] s e s a i s [circ] r QUAND d e c e [I] u i r [Pbar]
 R8	r e r a s p r e s e n t FUST p o u r [x8] <son?> DE RY
 V1	[x8] p r o r [tss] c t p a r t i c e l [circ] e r <le> [x8] s
 V2	c h a n c e [llam] i <son?> r PAR d a n o [ring7] s u q u e l [I] u e
 V3	p a r t i a l [circ] t e GRAND [S] [ring7] a t e BIEN d e p e s c h e
-V4	DE TOUJOURS t o u r QUAND l e r a ll a i RY r e s [Hh] r
+V4	DE TOUJOURS t o u s QUAND l e s a ll a i RY r e s [Hh] r
 V5	d e [Zl] c e OU <le Roy de Dannemarch> o [ring7] a u m e PAR [Pbar] [shat] a p r o m i s
-V6	q u i l r e n p l o [ring7] e r o [pdx] t VOLONTURE r [x8]
+V6	q u i l s e n p l o [ring7] e r o [pdx] t VOLONTURE r [x8]
 V7	e n c e d o n t [Pbar] JE L'AY REQUIS COMME VOUS VERREZ PAR
 V8	LES LETTRES DU ROY <et> [x8] l e s u p r o p o s [S] RY m a
 V9	t e n u DAULTRE PART l e c h a n c e l i e r
@@ -31,10 +31,10 @@ V19	<et> t d e s [I] u e l s [ringT] l a r e s o l u t i o n d e s
 V20	a [fdl] r a i r e s [bbar] <son?> p e n d TELS MOYENS QUE J'AY
 V21	SUIVY ET VEULX TENYR ATTENDANT PLUS CERTAIN ET EXPRES COMMANDEMENT
 V22	DE CE QUE JE DOY ENTREPRENDRE ET PARCE QUE JE NE VOUS PUYS ENCORES
-V23	ASSEURER [ringT] d e l e u r u o l o n t e DU [dt] e n r u i s
+V23	ASSEURER [ringT] d e l e u r u o l o n t e DU [dt] e n s u i s
 V24	e n GRAND d o u b t e s IL ME SEMBLE QU'IL SEROYT BON
 V25	DE REGARDER r a u m o [ring7] e n OU [x8] [ringT] d e f a i r e
 V26	a [x8] [fdl] r e u r e <le Roy de Dannemarch> q u e l [I] u e [ringT] a u g s b o u r g
 V27	p a r DE n l e s m a r c h a n s [fdx] e [llam] i o n
-V28	[x8] c a r d e r a u q r b o u <le Roy de Dannemarch> g [x8] o n <le> p o u rr a
-V29	a i r [ep] [ringT] m n a t r e c o [mut] <le Roy de Dannemarch> e r p a r h e c a r DU [xk]
+V28	[x8] c a r d e r a u q s b o u <le Roy de Dannemarch> g [x8] o n <le> p o u rr a
+V29	a i s [ep] [ringT] m n a t r e c o [mut] <le Roy de Dannemarch> e r p a s h e c a r DU [xk]

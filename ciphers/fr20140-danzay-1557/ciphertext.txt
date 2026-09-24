@@ -56,7 +56,7 @@ R3	16	eps	M
 R4	1	w:Par	H
 R4	2	lam	H
 R4	3	T	H
-R4	4	al	M
+R4	4	LRD	H
 R4	5	pib	H
 R4	6	ring7	H
 R4	7	ae	H
@@ -73,7 +73,7 @@ R4	17	al	H
 R4	18	hp	H
 R4	19	x	H
 R4	20	iii	H
-R4	21	B	M
+R4	21	S	M
 R4	22	x8	H
 R4	23	ae	H
 R4	24	dia	H
@@ -114,7 +114,7 @@ R6	15	del	H
 R6	16	T	H
 R6	17	xb	H
 R6	18	lam	H
-R6	19	pd	H
+R6	19	fd	H
 R6	20	eps	H
 R6	21	T	H
 R6	22	xinf	H
@@ -244,11 +244,11 @@ V4	2	w:toujours	H
 V4	3	pd	H
 V4	4	Om	H
 V4	5	mu	H
-V4	6	eps	H
+V4	6	s9	H
 V4	7	w:quand	H
 V4	8	lam	H
 V4	9	x	H
-V4	10	eps	H
+V4	10	s9	H
 V4	11	iii	H
 V4	12	a1	H
 V4	13	llt	H
@@ -291,7 +291,7 @@ V6	2	mu	H
 V6	3	eq	H
 V6	4	lam	H
 V6	5	iii	H
-V6	6	eps	H
+V6	6	s9	H
 V6	7	dia	H
 V6	8	ae	H
 V6	9	B	H
@@ -640,7 +640,7 @@ V23	19	w:du	H
 V23	20	dt	H
 V23	21	x	H
 V23	22	ae	H
-V23	23	eps	H
+V23	23	s9	H
 V23	24	mu	H
 V23	25	eq	H
 V23	26	H	H
@@ -702,7 +702,7 @@ V26	14	I	H
 V26	15	xb	H
 V26	16	xst	H
 V26	17	x	H
-V26	18	xinf	H
+V26	18	O	H
 V26	19	ringT	H
 V26	20	T	H
 V26	21	hk	H
@@ -749,7 +749,7 @@ V28	7	r2	H
 V28	8	T	H
 V28	9	mu	H
 V28	10	q4	M
-V28	11	eps	H
+V28	11	s9	H
 V28	12	bl	H
 V28	13	pib	H
 V28	14	xb	H
@@ -768,7 +768,7 @@ V28	26	T	H
 V28	27	loop	H
 V29	1	T	H
 V29	2	eq	H
-V29	3	eps	H
+V29	3	s9	H
 V29	4	ep	H
 V29	5	ringT	H
 V29	6	sha	H
@@ -787,7 +787,7 @@ V29	18	xinf	H
 V29	19	b6	H
 V29	20	a1	H
 V29	21	xN	H
-V29	22	eps	H
+V29	22	s9	H
 V29	23	hp	H
 V29	24	x	H
 V29	25	al	H

@@ -50,7 +50,7 @@ R3	16	eps	r	M
 R4	1	w:Par	Par	clear
 R4	2	lam	l	H
 R4	3	T	a|luy	M
-R4	4	al	c	M
+R4	4	LRD	le Roy de Dannemarch	H
 R4	5	pib	o	H
 R4	6	ring7		U
 R4	7	ae	n	H
@@ -67,7 +67,7 @@ R4	17	al	c	H
 R4	18	hp	h	H
 R4	19	x	e	H
 R4	20	iii	null	H
-R4	21	B	p	M
+R4	21	S		U
 R4	22	x8		U
 R4	23	ae	n	H
 R4	24	dia	e	H
@@ -108,7 +108,7 @@ R6	15	del	f	H
 R6	16	T	a|luy	M
 R6	17	xb	u	H
 R6	18	lam	l	H
-R6	19	pd	t	H
+R6	19	fd	d	H
 R6	20	eps	r	H
 R6	21	T	a|luy	M
 R6	22	xinf	null	H
@@ -238,11 +238,11 @@ V4	2	w:toujours	toujours	clear
 V4	3	pd	t	H
 V4	4	Om	o	H
 V4	5	mu	u	H
-V4	6	eps	r	H
+V4	6	s9	s	H
 V4	7	w:quand	quand	clear
 V4	8	lam	l	H
 V4	9	x	e	H
-V4	10	eps	r	H
+V4	10	s9	s	H
 V4	11	iii	null	H
 V4	12	a1	a	H
 V4	13	llt	ll	H
@@ -285,7 +285,7 @@ V6	2	mu	u	H
 V6	3	eq	i	H
 V6	4	lam	l	H
 V6	5	iii	null	H
-V6	6	eps	r	H
+V6	6	s9	s	H
 V6	7	dia	e	H
 V6	8	ae	n	H
 V6	9	B	p	H
@@ -634,7 +634,7 @@ V23	19	w:du	du	clear
 V23	20	dt		U
 V23	21	x	e	H
 V23	22	ae	n	H
-V23	23	eps	r	H
+V23	23	s9	s	H
 V23	24	mu	u	H
 V23	25	eq	i	H
 V23	26	H	s	H
@@ -696,7 +696,7 @@ V26	14	I		U
 V26	15	xb	u	H
 V26	16	xst	null	H
 V26	17	x	e	H
-V26	18	xinf	null	H
+V26	18	O	null	H
 V26	19	ringT		U
 V26	20	T	a|luy	M
 V26	21	hk	u|a	M
@@ -743,7 +743,7 @@ V28	7	r2	r	H
 V28	8	T	a|luy	M
 V28	9	mu	u	H
 V28	10	q4	q	M
-V28	11	eps	r	H
+V28	11	s9	s	H
 V28	12	bl	b	H
 V28	13	pib	o	H
 V28	14	xb	u	H
@@ -762,7 +762,7 @@ V28	26	T	a|luy	M
 V28	27	loop	null	H
 V29	1	T	a|luy	M
 V29	2	eq	i	H
-V29	3	eps	r	H
+V29	3	s9	s	H
 V29	4	ep		U
 V29	5	ringT		U
 V29	6	sha	m	H
@@ -781,7 +781,7 @@ V29	18	xinf	null	H
 V29	19	b6	p	H
 V29	20	a1	a	H
 V29	21	xN	null	H
-V29	22	eps	r	H
+V29	22	s9	s	H
 V29	23	hp	h	H
 V29	24	x	e	H
 V29	25	al	c	H
