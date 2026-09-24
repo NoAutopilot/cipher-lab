@@ -191,3 +191,88 @@ ciphertext (detector round 3, LANE S, 24 September 2026)" section. Summary here:
   two solver-repo shallow clones (grepped, not committed).
 
 `editions3.tsv`, `runs3.tsv`, `editions3_passages.tsv` and `editions3_dropped_examples.tsv` committed.
+
+## 10. Round 4, Nordic / Thirty Years' War / Scottish-Stuart series (24 September 2026)
+
+Fourth detector-test worker (`.claude/briefs/runs/2026-09-24-lane-s-det4.md`), same method (§1) plus round 3's
+two additions (pre-filter, interlinear test), over the Nordic (Oxenstierna, Gustaf II Adolf, Skandinaviens
+historia, Sverges traktater, Christian IV, Danske Kancelliregistranter/Magazin), Thirty Years' War (Irmer,
+Hallwich, Förster, Wallenstein *Briefe*, *Briefe und Akten zur Geschichte des Dreissigjährigen Krieges*,
+Documenta Bohemica) and Scottish/Stuart-exile (Hamilton Papers, Lauderdale Papers, Carte's *Original Letters*,
+Nairne/Macpherson, Henrietta Maria) series named in the round-4 brief. Full write-up in QUEUE.md's "Printed
+ciphertext (detector round 4, LANE S, 24 September 2026)" section; summary here.
+
+- **Edition list:** `editions4.tsv`, 152 identifiers from 53 `archive.org/advancedsearch.php` queries (31
+  precise phrase queries + 22 loosened follow-ups for titles that returned nothing on the first pass), deduped
+  against `editions.tsv`/`editions2.tsv`/`editions3.tsv`. Several loosened queries (title-word matches without
+  phrase quoting, e.g. `title:(Nairne) OR (creator:(Macpherson) AND title:(Papers))`, `title:(Dreissigjährigen)
+  AND title:(Krieges)`) returned mostly off-target hits (Baroness Nairne's songs, an 18th-c. telescope maker
+  named Nairne, dozens of secondary Wallenstein/Thirty-Years'-War narrative histories); these were filtered by
+  a documentary-title keyword test (Urkunden/Akten/Briefe/Correspond/Papers/Verhandlung/Documenta/Regesten/
+  "Original Papers"/"Secret History") before fetching, dropping 211 of 364 harvested identifiers as off-series
+  noise — short of the brief's 250-350 target, the same "loosened query surfaces a lot of noise" pattern round
+  3 hit for English calendars, reported rather than fetching the noise to pad the count. **Not found on Internet
+  Archive under any title tried:** Sverges/Sveriges traktater med främmande magter, Documenta Bohemica Bellum
+  Tricennale — a gap in IA's holdings, reported rather than substituted.
+- **A tooling bug this round, disclosed:** a mid-fetch `git commit`+`git rebase --autostash` against
+  `sources/ia-fulltext/runs4_new.tsv` while the background fetch process still held that file open for writing
+  caused git's checkout to orphan the process's file handle — its writes for ~130 of 137 fetched identifiers
+  were silently lost (the file on disk reverted to the partial snapshot committed mid-fetch). Caught by
+  cross-checking the fetch log's identifier list against `runs4.tsv`'s identifiers before writing up results.
+  Fixed by re-running `tools/ia_numeral_runs.py` over the same identifier list with no new network calls needed
+  for the 137 already-cached `_djvu.txt` files (only the 15 identifiers that had errored, with nothing cached,
+  made new requests on the rerun, reproducing the same 401/404/500s). **Lesson for future rounds: never run git
+  operations that touch the working tree (commit is safe; rebase/checkout is not) against a file a background
+  fetch process still has open — let the fetch finish first, or write to a path outside any commit until it
+  has.** `runs4.tsv` as committed is the corrected, complete file; the analysis pipeline itself (which re-parses
+  the cached `_djvu.txt` files directly rather than reading through `runs4.tsv`) was never affected by the bug.
+- **Controls:** 2 of 2 recovered, exact match to rounds 1-3 (Thurloe vol. 1: 111 clusters; Rommel 1840: 50 raw
+  clusters).
+- **Fetch:** 152 identifiers, 138 fetched (137 on the first pass, plus `danskemagazin02unkngoog`, which 500'd on
+  the first pass and succeeded on the one bug-recovery rerun below — its 69 raw clusters produced no candidate
+  passage), 14 skipped (7×404, 4×401, 3×500), no retries beyond that single bug-recovery rerun of the
+  still-uncached identifiers (not a good-citizen-rule retry loop — each was re-requested exactly once).
+- **Pre-filter and judgement:** of the edition-4 raw clusters, 30 pass the standing thresholds
+  (`repeat_rate>=0.3, numerals>=15, prose_words>=5`) across 6 identifiers; 6 dropped by the pre-filter (3
+  last-8%-of-volume, 3 mostly-ascending-numerals), leaving 24 kept clusters merging into **18 candidate
+  passages**. Spot-checked 10 dropped clusters by hand (the 6 pre-filter drops + the 4 highest-scoring
+  threshold drops among the round's own identifiers, excluding the controls' already-known cipher clusters):
+  all 10 are genuine back-of-volume name/subject indexes with "name/place, vol:page, vol:page" citation
+  format — the pre-filter did not hide a real cipher passage.
+- **Interlinear test:** run on all 18 passages; all score low (0.00-0.50, well below round 3's "yes" flags),
+  correctly indicating none carries a plain-text line printed directly above or below its cipher line.
+- **A second, new same-volume check this round:** the interlinear test alone was not enough. Six of the 18
+  passages (`kongchristianden03chriuoft`, *Kong Christian den Fjerdes egenhaendige Breve* vol. 3, ed. Bricka &
+  Fridericia 1878) looked like genuine cipher-without-decipherment on first read — numeral groups embedded word
+  by word in continuous German prose letters from Christian IV to his secretary Frederik Günther, dated 20 Aug
+  1632 and Sept 1633 and four more from 1635, with no interlinear or bracketed gloss nearby. Grepping the whole
+  cached volume text (not just the ±10-line window) for decipherment-indicator terms (`dechifr`, `nøgle`) found
+  a "Dechifrerede Breve" (Deciphered Letters) appendix starting near the end of the same volume: the editors
+  state they later found Christian IV's own 1632 cipher key in the Geheimearkiv (Danske Samlinger Nr. 64,
+  endorsed by the King "Zifferen So Friderich guntheren zugesteldt ... den 15 Maij Anno 1632") and used it to
+  decipher the letters printed earlier as cipher, numbered Nrr. 34, 35, 43 (1632), 191 (1633) and 474, 480, 482,
+  504 (1635) — matching all six passages found here by date and opening words (passage 1's "Weiil icli mich
+  cless alten Spriichess Errinnere, 64." is word-for-word the cipher opening of the appendix's "Nr. 35",
+  resolved there to "Weiil icb micli cless alten Spruchess Errinnere, quod in turbbid quod optim..."). **Lesson
+  for future rounds, alongside round 3's interlinear check: before calling any passage undeciphered, also grep
+  the whole cached volume (not only the passage's own context window) for a decipherment-indicator term
+  (dechiffr/dechifr/entziffert/nøgle/gelöst/chiffernøgle/résolu/solved/deciphered) — an edition can print cipher
+  in the body and its decipherment in a separate back-of-volume section with no interlinear or bracketed layout
+  at all.**
+- **Judgement, all 18 passages:**
+
+  | Category | Passages | Identifiers | What it is |
+  |---|---|---|---|
+  | cipher-with-decipherment (same-volume appendix, not interlinear) | 6 | `kongchristianden03chriuoft` | see above |
+  | table/noise | 1 | `handlingarrrand03scangoog` (title: *Kronologiskt register* — literally a chronological index volume) | place/regiment-name index, "name, vol:page" citations |
+  | table/noise | 2 | `danskemagazin03histgoog` | back-of-volume personal-name index |
+  | table/noise | 2 | `wallensteineind02schigoog` (an English edition of Schiller's *Wallenstein* play, not archival correspondence) | "List of Persons" citing scene/line numbers, not cipher figures |
+  | table/noise | 4 + 3 | `dieverhandlunge02irmegoog`, `dieverhandlunge00irmegoog` (Irmer's own named edition, two Google-scanned volumes) | Personen-/Sachregister citing "Nr. XXX S. YYY", not cipher |
+- **Survivors: 0.**
+- **Requests, archive.org only:** 53 `advancedsearch.php` (31 + 22 loosened) + 152 djvu fetches (137 fetched +
+  15 errors, first pass) + 2 controls + 15 bug-recovery reruns of the previously-errored identifiers (disclosed
+  above; 1 succeeded, 14 reproduced the same error) = 222 total, well within the ~400 cap, one at a time,
+  >=1.5s apart, no other host touched. No subagents, no logins, two solver-repo shallow clones made available
+  for grep (not needed — no survivor passage required it — and not committed).
+
+`editions4.tsv`, `runs4.tsv`, `editions4_passages.tsv` and `editions4_dropped_examples.tsv` committed.
