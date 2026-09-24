@@ -1,0 +1,64 @@
+# briefnr 98, contemporary decipherment leaf, ff. 68-69 (images/00098_p4.png, 00098_p5.png)
+# Transcribed 24 September 2026 (LANE R worker R14), by eye from the image only. German as written
+# (secretary hand), no modernisation, no alignment to the cipher block on f.66 (p2), no decoding.
+# Best-effort palaeography pass at 100dpi, not a proofread edition: [?] marks a word or short phrase
+# this worker is not confident of. Paragraph marks (pilcrow-like flourishes at the left margin in the
+# manuscript) rendered here as blank lines between paragraphs. Line breaks otherwise follow the image.
+#
+# Content check (not a novelty claim, just an internal sanity check on the reading): the event
+# described in the first paragraph -- a commander shot while riding out near the siege lines, dying a
+# few days later on "24. Februarii" -- matches the assassination of Francois, Duke of Guise, shot by
+# Poltrot de Mere on 18 February 1563 at the siege of Orleans and dying 24 February 1563; this letter
+# (98) is dated 13 March 1563, consistent with fresh news of that event. This is this worker's own
+# background knowledge used only to sanity-check the transcription's legibility, not a print-search
+# result and not a novelty classification (rule 10 -- that is the verifier's task).
+
+## f. 68 (00098_p4.png)
+
+Zeittunge auß Franckreich, vom [sibenden?]
+Martii [-]
+
+Als der Hertzog zu Guise mit der Konigin Mutter
+einen Jm leger passiren geritten, Und alle gelegen-
+heiten besichtigen wollen, So ist er von einem frantzösi-
+schen Soldaten durchschossen worden, das jm die Kugel
+neben den Rippen an der lincken seiten eingangen,
+Und am volgenden 24. Februarii verschieden ist,
+Der ist auch darnach stadt von Paris geführt worden,
+Und hat daselbst bis auff den fünfften Martii unbe-
+graben gelegen, das jhn jedermann hat sehen mögen,
+
+Der frantzösische Soldat leigt zu Paris gefangen, und
+soll am fünfften Martii mit vier pferden zerrissen
+werden,
+
+Der Admirall und der Condische Kriegsvölcker haben
+jn Normandien ein starcke bevestigte Schloss und Stadt,
+Cam[?] genant, belegert, erobert, und den Marquis
+des [Duc?] [des?] Hertzogen von Guisen bruder, so darjn
+gewesen gefangen hinweg bracht, So leigt auch des
+Hertzogen von Guisen ander bruder der Grandt prior
+an der [Wassersucht?] zu Todt Kranck, und ist seiner ge-
+sundtheit geringe hoffnung,
+
+Die Engelländer, so jn Normandien seint, ligen zu
+[Havre?] La grosse[?] und Dieppe, seint fast an
+9000 zu Fuß, [manchen?] starck, und sterben sich noch für
+und für, -- Der Königraf[?] leigt zu Rouen mit
+seinem hauffen, sollt den Engelländern bösen dienst
+warten, hat aber bishero nichts außgericht,
+
+## f. 69 (00098_p5.png)
+
+Jn Engellandt hat es noch jn alten wesen, wie
+sie jn parlament beschlossen haben,
+
+Die burgunsischen[?] haben sich jetzo nach der von Guisen
+abgeorden, mit den Condischen einen Anstandt mit
+[von?] Orleans vorglichen, worden daselbst und einen
+frieden [samlen?], Da nun daselbst die geistliche ver-
+sammlung [?] und kein friede getroffen worden, so
+verzweiflig jn [teutschlandt?] kaum beider seiten wegen
+hülff und beystandt gesucht worden, e[s ist?] fordrlich[?]
+[auff?] der Condischen seiten, sonderlich an gollt mit [versuchen?]
+worden.
