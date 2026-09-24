@@ -205,7 +205,10 @@ Orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq, cap $80. Spawning paused at rate_
 - Eckert E4/E5: Talk gap not closable from this environment (no Wayback captures of talk.zooniverse.io; live host
   egress-blocked). Stay N3; ASKS 27 now carries the three direct subject links (AUDIT.md 'Talk gap, second attempt').
 - Results rows, English targets: 16 checked, 7 corrected (hub-seed/results-audit-W-2026-09-24.tsv).
-- Thurloe P4 (Stamford, 13 Mar 1655): N3, two audits (06:29). Toward N4 in AUDIT.md; Bodleian image is ASKS 30.
+- Thurloe P4 (Stamford, 13 Mar 1655): **N4 (no prior decipherment located)**, 09:04, after two audits, an N4-decision verifier and
+  LANE N's DECODE negative. Outreach gate 2 open on JSTOR rows and OpenAlex/S2 (ASKS 34); Bodleian image ASKS 30.
+- Luzerne 1781 mssDE 108(A) and 68: N0, found-solved (deciphered duplicate 108(B) in the same collection).
+- rah-canada-1869 (Cañada note): N0 (clear text on the item). Blathwayt BLA 184/186/191(a): N3 single audit, second audit running.
 - Gustav II Adolf to Oxenstierna 1632 (W1): N0, found-solved (Torpadie, Historisk tidskrift 8, 1888). Lesson added to
   .claude/briefs/check-solved.md.
 

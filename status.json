@@ -421,7 +421,7 @@
    "state": "active",
    "holder": "Worker",
    "kind": "contribution",
-   "next": "P4 N3 after two audits (24 Sept 2026). Toward N4 (AUDIT.md 'Second audit (adversarial), P4'): LANE V Google Books results, Marshall 2020/2023, OpenAlex/S2 rerun, Clarendon SP 1786 vol 3, DECODE search; and an image of Bodleian MS Rawl. A. 24 at Stamford's letter (ASKS row 30).",
+   "next": "P4 N4 (no prior decipherment located), 24 Sept 2026. Outreach gate 2 still open: 5 JSTOR rows and the OpenAlex/S2 pass (ASKS 34); Bodleian MS Rawl. A. 24 image is ASKS 30.",
    "note": "AUDIT.md, 24 Sept 2026: 21 of the 22 letters are N0 (Birch printed their decipherment; aligned into keys for the Montagu, Blake, Stamford, Butler and Fauconberg ciphers). Stamford's letter of 13 March 1655 (P4) has no decipherment in print: keyed reading H 64 C 338 M 16 U 6 of 424, class N3 after one audit. Nothing here is called new.",
    "wait": {
     "on": "LANE W",
@@ -1272,8 +1272,8 @@
    "date": "24 Sept 2026",
    "kind": "solve",
    "title": "William Stamford to Thurloe's office, Calais, 13 March 1655 (Birch 1742 vol. 3 pp.188-189): keyed reading of a letter printed without its decipherment",
-   "grade": "N3, two audits; N4 pending",
-   "line": "Birch prints the cipher but no decipherment; read with the key given by Birch's printed decipherments of Stamford's letters of 20 and 30 March 1655 (control 92-94%), a key Tomokiyo has also reconstructed and published; his table agrees on every value in this letter. H 64 C 338 M 16 U 6 of 424. No prior print of this letter's cipher plaintext located in Birch, BHO, CSPD 1655, Clarendon and Nicholas calendars, Underdown, Abbott, IA full text or the open indexes; the Bodleian catalogue has no item record for MS Rawl. A. 24 ff.73-76.",
+   "grade": "N4 (no prior decipherment located); two audits",
+   "line": "Birch prints the cipher and no decipherment. Read with the key given by Birch's printed decipherments of Stamford's letters of 20 and 30 March 1655; Thurloe's office deciphered this system in 1655 and Tomokiyo has reconstructed and published it, and our table agrees with his on every value in this letter. H 64, C 338, M 16, U 6 of 424; eleven lines of p.188 still partly incoherent. No prior decipherment of this letter located in Birch, BHO, CSPD 1655, the Clarendon calendar, Nicholas Papers, Abbott, Clarke Papers, Gardiner, Underdown, the Bodleian catalogues, Tomokiyo's pages, the solver repositories, DECODE, Google Books or IA full text (24 Sept 2026). The original leaf, Bodleian MS Rawl. A. 24, has not been seen.",
    "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md"
   },
   {
