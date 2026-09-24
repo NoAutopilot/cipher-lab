@@ -672,3 +672,117 @@ Requests: api.openalex.org 8 (all 429, shared budget). api.semanticscholar.org 6
 scheduled (1 succeeded 200; 2 failed with connection reset, each retried once per the single-retry rule, both
 retries also reset). WebSearch 3 queries. No logins, no credentials, no decoding, no subagents, no changes to
 ciphertext.txt/reading.md/key material.
+
+## N4 decision, 24 Sept 2026
+
+A fresh verifier session (LANE V, orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ), 04:45-04:55 UTC. It did none
+of the solving, auditing or gap work and did not decode. Question: does the logged coverage now meet rule 10's
+N4 ("N3 with the principal editions, catalogues and project pages covered, internal or unpublished work not
+excluded") for E4 (Fox to Butler, 21 Apr 1864 9.30 PM) and E5 (Meigs to Butler, 22 Apr 1864 10.45 AM)?
+
+**Answer: no, not yet. E4 and E5 stay N3.** All principal printed editions and the holding archive's catalogue
+are now covered. One principal project family is not: the Decoding the Civil War Zooniverse Talk subject
+comments. This is the one public place where a volunteer's reading of these ledger entries could have been
+posted, and this environment cannot reach it. Closing it takes a person with a browser and three searches (ASKS
+row 27). If that search is negative, both telegrams go to N4 with no further work.
+
+### 1. Principal families and coverage
+
+| family | principal? | covered | where AUDIT.md shows it |
+|---|---|---|---|
+| OR ser. I (army), vols 33, 36 pts 1-3, 51 pt 1 | yes | yes, full text, p.279 read in context | s.4 row 1; second audit (a) rows |
+| OR ser. III vol 4 (and ser. II) | yes (III); II marginal (prisoners) | III yes; II not located, not principal for a QMG/Navy telegram | s.4 row 1; second audit (a) |
+| OR General Index | no, redundant: the volumes it indexes were full-text searched | not searched | s.4 row 1 |
+| OR Supplement (Broadfoot) pt I vols 1-10 | yes | yes, at token level (HTRC EF): "camels" on no page; no Meigs+Butler+April+1864 page | second audit (a) Supplement row |
+| ORN ser. I vols 9-10 | yes (E4 is Navy Dept traffic) | yes, full text, pp.647-690 read | s.4 row 2; second audit (a) ORN row |
+| Butler, *Private and Official Correspondence* vols 3-4 | yes (recipient) | yes, vol 4 pp.111-120 read in context | s.4 row 3; second audit (b) |
+| *Butler's Book* (1892) | yes (recipient) | yes | s.4 row 3 |
+| Fox, *Confidential Correspondence* vols 1-2 | yes (sender E4) | yes | s.4 row 3; second audit (c) |
+| Meigs, printed papers | sender E5 | none exists in print; archival only | s.6; second audit (c); Toward N4 s.2 |
+| Lincoln Papers (LoC) and Basler, *Collected Works* | yes (period edition) | yes: LoC by date 21-22 Apr 1864 and keyword; Basler/Nicolay-Hay by phrase | s.4 row 4; second audit (d) |
+| *Papers of Ulysses S. Grant* vol 10 (Jan-May 1864) | yes: the documentary edition whose annotations print RG 107 telegram copies around Butler, April 1864 (pp.338-345 on Plymouth) | **yes, this session** (Google Books search-within, 7DAAxfRuXKoC): "camels" 0, "Hatteras" 0, "lighten" 1 (p.253, Sherman, unrelated), "dispatch of last night" 7 (none Meigs/Butler), "cavalry horses" 9 (none E5), "4000 men" 3 (none E5); index: Tecumseh 372n, Pamlico 338n, Fox 166-7n, 224n, 345n, Meigs entries; no hit is E4 or E5 | this section, s.2 |
+| Huntington catalogue: item records pointers 8941, 5621, 5623; object 9302 | yes (holding archive) | yes, every field | s.4 row 7; second audit (e) |
+| Huntington collection full text (CONTENTdm, p16003coll11) | yes | yes, found the mssEC 25 duplicates; nothing decoded | second audit (e) |
+| Huntington Verso / huntington.org project pages | yes | partly: huntington.org answered 429 on 20 Sept; read through search snippets; the same statements are in the NHPRC proposal and the blog, which were read | s.12 |
+| Decoding the Civil War blog (WordPress) | yes (project) | yes: 140 posts read on 20 Sept; **this session** WordPress REST search of posts and comments (96 comments on the site) for camels, Tecumseh, Pamlico, Meigs, cavalry depot, Fox, Butler, Roanoke, Albemarle, Hatteras, mssEC 19, mssEC 25; hits read: "What Lies Beneath" (15 Oct 1864 Halleck telegram), "Those Must Have Been Some Terrible Horses" (Meigs, June 1863), other Butler/Tecumseh hits other dates; comment search 0 for every term | s.4 row 7; this section, s.2 |
+| Zooniverse project records, workflows, Talk boards | yes (project) | yes, workflows and boards | s.4 row 7; s.12 |
+| **Zooniverse Talk subject comments (about 6,000)** | **yes (project; the one public place a volunteer's reading of p.49 or mssEC 25 pp.77/79 could sit)** | **no**: not keyword-searchable through the API on 20 Sept; this session `talk.zooniverse.io` is refused by the egress proxy (CONNECT 502, organization policy), one retry after a pause, same result; WebSearch for the subject file names (mssEC_19_049, mssEC_25_077, mssEC_25_079) and for Talk + camels/Tecumseh/Pamlico/Meigs found no relevant page | this section, s.2 |
+| Meigs Papers, LoC (1864 Apr letterbook, mss325400076) | no for N4: archival, unpublished, image-only | pointer only | Toward N4 s.2 |
+| NARA RG 107 M504 rolls 237-238, 281 | no for N4: archival microfilm, not a publication; rule 10 N4 expressly leaves "internal or unpublished work not excluded" | pointer only | Toward N4 s.2 |
+| HathiTrust whole-library full text | no for N4: a search engine, not an edition or catalogue. Every volume in which an editor would print these telegrams is covered above by IA full text, Google Books or HTRC token counts; the engine's remaining value is breadth over minor books, where Google Books phrase search (0 hits for every distinctive phrase) and IA full text stand in | unreachable (Cloudflare challenge host refused by proxy) | Toward N4 s.1 |
+| JSTOR | no for N4: scholarship, not an edition or catalogue; per CLAUDE.md (24 Sept 2026) a queued JSTOR row never blocks N3 or N4 on its own. It is outreach gate 2 | unreachable; rows 20-22 queued | Toward N4 s.4; JSTOR-QUEUE.tsv rows 20-22 |
+| Open indexes (OpenAlex, Semantic Scholar, CrossRef, Persée, HAL, Scholar) | no for N4 (scholarship); yes for outreach gate 2 | CrossRef, HAL, Scholar yes; Persée 1 of 3; **OpenAlex and Semantic Scholar still 429 this session** (3 queries each, one pass) | Open-index section; OPEN-INDEX-RESULTS.tsv |
+| Solver repositories, Cryptiana | yes (cipher community) | yes | second audit (h) |
+| Google Books phrase search, IA full text | yes (template family e) | yes | s.4 row 9; second audit (f) |
+
+### 2. This session's search log
+
+- Papers of U. S. Grant vol 10 (Google Books 7DAAxfRuXKoC, search-within endpoint on books.google.com, browser
+  User-Agent): camels, Tecumseh, Pamlico, cavalry depot, three regiments, Fox, "Meigs, Montgomery", lighten,
+  Hatteras, cavalry horses, 4000 men, "transportation and should", "dispatch of last night", "Roanoke Island".
+  Snippets read; none is E4 or E5. The volume prints Grant to Butler 22 Apr noon (p.340) and Fox's ironclad
+  news (p.345); it does not print Fox to Butler or Meigs to Butler.
+- Decoding the Civil War blog: public-api.wordpress.com wp/v2 posts and comments search, 12 terms, plus one
+  sanity query (comments "cipher" returned 4, so comment search works). No post or comment on these telegrams.
+- Zooniverse: panoptes API reachable (project 2125, state finished; subject 2323456 = mssEC_15_151, a WebSearch
+  hit, unrelated). talk.zooniverse.io refused by the egress proxy twice (04:46 and 04:49 UTC). Two WebSearch
+  queries, nothing relevant.
+- OpenAlex (3 queries): 429 "Rate limit exceeded". Semantic Scholar (3 queries): 429. Not retried in a loop.
+
+Requests per host: api.openalex.org 3; api.semanticscholar.org 3; www.zooniverse.org 2; talk.zooniverse.io 2
+(both refused at the proxy); public-api.wordpress.com 31; books.google.com 14; www.googleapis.com 1 (key check,
+key not printed); WebSearch 4.
+
+### 3. Decision per telegram
+
+**E4, Fox to Butler, 21 Apr 1864 9.30 PM: N3 (not raised).** All principal editions are negative:
+OR army/navy/supplement, Butler, Fox, Lincoln and Grant. The holding archive's catalogue and full text show the
+entry twice, still in cipher. Of the project pages, the blog and the boards are negative. The Talk subject
+comments are unsearched. The Talk is the family most likely to hold a prior decipherment, as opposed to a
+print, because the volunteers had the cipher-book images and the blog shows staff decoding single entries with
+Cipher No. 1 ("Now, Jesse", 26 June 2017). So it cannot be waived as non-principal.
+
+**E5, Meigs to Butler, 22 Apr 1864 10.45 AM: N3 (not raised).** Same reasons. There is no printed Meigs
+edition, so the sender side is archival only and does not count against N4.
+
+Condition for N4, both telegrams: a keyword search of the Decoding the Civil War Talk
+(zooniverse.org/projects/zooniverse/decoding-the-civil-war/talk, search box) for "camels", "Tecumseh" and
+"Pamlico" (E4) and "cavalry depot" and "Elizabeth harsh" (E5), plus the Talk pages of the subjects for mssEC 19
+p.49 and mssEC 25 pp.77 and 79, all negative. A person in a browser can do this (ASKS row 27), or any session
+whose egress reaches talk.zooniverse.io. The verifier who logs that result may then set N4 without re-auditing
+anything else.
+
+Safe sentences, for use once N4 is set (not before):
+- E4: "Fox's 9.30 p.m. telegram to Butler of 21 April 1864 (Huntington mssEC 19 p.49 and mssEC 25 p.77) was
+  read from the surviving cipher book at grade H; no prior decipherment located, and no printed text of it
+  located in the Official Records (army, navy, supplement), the Butler, Fox, Lincoln or Grant editions, the
+  Huntington catalogue or the Decoding the Civil War project pages (search log in AUDIT.md). Its substance is
+  known from Butler's reply (OR I/33 p.279) and Fox's parallel telegram to Ericsson (ORN I/9 p.667), and most
+  of its words have been public in clear in the Huntington transcriptions since 2018. Unpublished archival
+  copies (NARA M504, Meigs Papers) were not searched."
+- E5: the same form, with "Meigs's telegram to Butler of 22 April 1864 (mssEC 19 p.49, mssEC 25 p.79)" and
+  "Butler's printed correspondence prints the telegram it answers (vol. 4 p.112)".
+- Unsafe, both: "A lost telegram, deciphered for the first time and never before published", or "first
+  decipherment" without the qualifier "no prior decipherment located".
+
+The safe sentences until then are the N3 ones in the second audit's Classification section.
+
+### 4. Outreach gates (CLAUDE.md Outreach 1-6), for E4 and E5
+
+| gate | met? | why |
+|---|---|---|
+| 1 verifier's class in AUDIT.md | yes | N3, three audits |
+| 2 second adversarial audit; open-index pass; Google Books; JSTOR rows answered or waived | **no** | adversarial audit yes (second audit); Google Books yes; open-index pass only partly (OpenAlex and Semantic Scholar unreachable twice); JSTOR-QUEUE rows 20-22 `queued`, neither answered nor waived by the owner |
+| 3 message is the audit's safe sentence, states prior print, links AUDIT.md | not yet drafted; satisfiable (the safe sentences name the prior print: OR I/33 p.279, ORN I/9 p.667, Butler Corr. IV p.112) | |
+| 4 rule 10 wording | satisfiable with the N3 sentences; the N4 wording only after row 27 | |
+| 5 logged in CONTRIBUTIONS.md before sending | no (nothing posted) | |
+| 6 verifiable links (folder, primary image, printed edition at page) | satisfiable, not assembled: repo folder; Huntington CONTENTdm pointers 8941, 5621, 5623; IA warofrebellion33unit p.279, officialrecordso0009unse p.667, privateofficialc04butl p.112 | |
+
+No post may go out on E4 or E5 until gate 2 is met.
+
+### 5. Postmortem
+
+Nothing over-claims. status.json and the board say "N3 ... N4 pending JSTOR and HathiTrust full text". That
+names the wrong blockers for N4: JSTOR and HathiTrust are outreach and breadth items, not N4 blockers. The real
+N4 blocker is the Talk subject comments. The orchestrator should correct that phrase when it next writes the
+eckert-1864 row. This session did not edit status.json, because the class did not change.
