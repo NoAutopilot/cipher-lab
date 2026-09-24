@@ -106,7 +106,7 @@ clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers). No logins, no cred
 ## Print check, class gate — 23 September 2026 (started ~23:44 UTC, this section written ~23:58 UTC; `date -u`
 read before writing). QUEUE row M8. Worker: print-check M8 (Sonnet, cap $5).
 
-Question: is the plaintext of either fr.2980 f.29 (no.21, Gramont to Villandry, Rome, 20 May 1530, partly in
+Question: is the plaintext of either fr.2980 f.29 (no.21, Gramont to Villandry, Rome, 20 May [1530], partly in
 cipher) or f.30 (no.22, entirely in cipher, same date) already in print or online, from any source. No
 decoding, transcription or key-fetch attempted this pass; this is a class gate only.
 
@@ -159,8 +159,9 @@ prior plaintext or decipherment located after the logged search below) for each.
   folio form `"2980, f. 29"` / `"2980, f. 30"` in all three IA copies: **zero hits**. Decrue plainly worked
   through this volume item-by-item and did not cite ours — consistent with (not proof of) his not having
   read them. *[Wording corrected by the verifier, 24 Sept 2026, rule 10.]*
-- **PUR OpenEdition**, Thierry Rentet's chapter on Jean Breton (Villandry) in *Conseils et conseillers sous
-  François Ier* (`books.openedition.org/pur/120024`, fetched directly, full chapter read) — biographical detail
+- **PUR OpenEdition**, Philippe Hamon, "Jean Breton (v. 1490-1542)", in Cédric Michon (ed.), *Les conseillers de
+  François Ier* (PUR 2011), pp.335-342 [author and title corrected by verifier V2, 24 Sept 2026: not Thierry Rentet,
+  whom the chapter thanks and cites (n.22)] (`books.openedition.org/pur/120024`, fetched directly, full chapter read) — biographical detail
   on Breton/Villandry's 1530 role as Montmorency's relay at court (citing Rentet's own 2008 conference paper on
   Montmorency's 1530 correspondence, a different, Montmorency-addressed corpus at Chantilly) but **no mention
   of fr.2980, of Gramont's 20 May letters, or of their content** — this is the source Tomokiyo cites only for
@@ -229,13 +230,13 @@ Tomokiyo identified these two fr.2980 letters as readable with it. Bourdeau (dbo
 `gramont1529/fr3071_no7_gramont.md`, MIT/CC BY 4.0) read fr.3071 no.7 with it; his notes on g serving V/E/B and
 on the ss-on-a-stem null were used. Nothing is copied from aaymeloglu/unsolved-ciphers.
 
-**Files.** `ciphertext.txt` (f.29r, 14 lines, 569 signs, descriptive codes), `key.tsv` (code, value, grade, which
+**Files.** `ciphertext.txt` (f.29r, 14 lines, 568 signs after the second reader, 569 before; descriptive codes), `key.tsv` (code, value, grade, which
 table), `decode.py` (writes `reading.txt` and `reading_tokens.tsv`; `--check` exits 1 when stale, verified both
 ways), `reconciliation.md`, `legend.py`/`legend.tsv`/`legend_sheet.png`, `tomokiyo_columns.py`/`.tsv`,
 `crop.py`, `sheets.py`, `sheets/`, `passA.tsv`, `passB.tsv`, `PASS-BRIEF.md`, `key_draft.tsv` (legend codes to
 table values, used only to test the passes).
 
-**Grades (per token, f.29r, from decode.py):** 569 tokens: H 538, C 0, S 0, M 26, I 0, U 5. The H count means
+**Grades (per token, f.29r, from decode.py):** 569 tokens: H 538, C 0, S 0, M 26, I 0, U 5 (first reader; current, after the second reader: 568 tokens, H 533, M 30, U 5 -- see "Second reader: changes applied"; verifier V2, 24 Sept 2026). The H count means
 "value taken from the Lasry or Tomokiyo table"; it does not grade my identification of each sign on the leaf,
 which rests on one reader (the blind passes failed, reconciliation.md) and on the French coming out. No
 cryptanalytic extension of the key was made, so no matched control was needed or run. This is a key-based
@@ -814,3 +815,9 @@ convention); split eh into its two shapes on the crops; re-check L07 q against q
 
 **Where not searched:** no phrase or print search on the new text. Novelty is not classified (rule 10).
 Requests this pass: none to any host.
+
+**Suggestion (verifier V2, 24 Sept 2026, not done; for a solver):** the L01 word division "il y baille" does not fit
+the letters, which read I A Y [q] A I LL E; with q as B (key.tsv's own note) the opening is "j'ay baille(e) a ce
+porteur". Re-divide L01 in the gloss; reading.txt itself is unaffected. Also noted by the ChatGPT second opinion
+(second-opinions/chatgpt-2026-09-24.md, section 3), with its unverified conjectures on L04-L05 "tondement"/"fondement",
+L10 "cavsenve" and L11 "do[nn]er".

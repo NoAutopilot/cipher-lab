@@ -7,16 +7,17 @@ our reading. Be adversarial: we would rather learn now that it is in print than 
 THE ITEM
 - Sender: Gabriel de Gramont, bishop of Tarbes (made cardinal in June 1530), French ambassador at Rome.
 - Recipient: Jean Breton, seigneur de Villandry, secretary of Francis I.
-- Place and date: Rome, 20 May 1530.
+- Place and date: Rome, 20 May [1530] (the leaf's date line gives day and month only; the year is from the
+  companion letter f.30 and the Catalogue des actes de François Ier IX, p.61, entry [412]).
 - Manuscript: Bibliothèque nationale de France, ms. français 2980, folio 29r (item 21 in the volume).
   Volume on Gallica: https://gallica.bnf.fr/ark:/12148/btv1b9059991d (find f.29 in the viewer).
 - Cipher: a nomenclator; read with the Gramont 1530 key published by Satoshi Tomokiyo and George Lasry.
-  569 cipher signs, of which we read 533 from the key, 30 uncertain, 5 unread.
+  568 cipher signs, of which we read 533 from the key, 30 uncertain, 5 unread.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/fr2980-gramont/reading.txt, transcription
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/fr2980-gramont/ciphertext.txt, key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/fr2980-gramont/key.tsv, notes
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/fr2980-gramont/NOTES.md, our own search log https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/fr2980-gramont/AUDIT.md.
 - Distinctive phrases of the deciphered French, useful for full-text search (old spelling, try variants):
-  "il y baille a ce porteur"; "article que j'ay mis a part"; "l'adresse de dessus a vous combien que ce
+  "j'ay baille a ce porteur" (the letters read IAY?AILLE; also try "baille a ce porteur" alone); "article que j'ay mis a part"; "l'adresse de dessus a vous combien que ce
   soit au roy"; "vous prie le luy demander car c'est le total"; "qui est cause que j'ay faict ledit article
   a part"; "pour vous donner cognoissance de tout".
 

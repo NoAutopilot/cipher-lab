@@ -7,13 +7,14 @@ decode and does not protect the solver's conclusions. Classes are those of CLAUD
 
 Claim under audit: "BnF fr.2980 f.29r (item 21), Cardinal Gabriel de Gramont, bishop of Tarbes, to Jean Breton
 de Villandry, Rome, 20 May 1530: the cipher passage reads with Tomokiyo/Lasry's Gramont 1530 key, 569 signs,
-H 538 / M 26 / U 5 (reading.txt, decode.py --check)."
+H 538 / M 26 / U 5 (reading.txt, decode.py --check)." [Verifier V2, 24 Sept 2026: claim quoted as it stood; the leaf's
+date line carries no year, so '20 May [1530]'; the current counts are 568, H 533 / M 30 / U 5.]
 
 ## 1. Verdict
 
 | item | prior plaintext | prior decipherment of this item | class |
 |---|---|---|---|
-| BnF fr.2980 f.29r, no.21 (old shelfmark Anc. 8505), Gramont to Villandry, Rome, 20 May [1530], cipher passage of 569 signs | **not located.** No printed text, extract, calendar entry or summary of the letter's content was found in the editions of section 4. The letter's *existence and date* are in print: the BnF *Catalogue des manuscrits français* (1868) describes it, and *Catalogue des actes de François Ier* IX (entry [411], list of ambassadors) cites "Écrit de Rome … 20 mai, ibid., 2980, fol. 29 et suiv." to date Gramont's stay in Rome. Neither gives any content. | **not located.** No decipherment was found on the leaf (NOTES.md, check-solved), in print or online. **But it has been identified as readable before us:** Tomokiyo (cryptiana, francis.htm, "BnF fr.2980 (1530)", live page re-read 24 Sept 2026) says "These undeciphered letters can be read with Gramont's cipher (1530)", and Bourdeau lists both items as catalogue 328, "Gramont 1530 key held" (dbourdeau/cyphersolver CATALOGUE.md line 76, sweep of 22 Sept 2026). Neither gives a reading. | **N3** |
+| BnF fr.2980 f.29r, no.21 (old shelfmark Anc. 8505), Gramont to Villandry, Rome, 20 May [1530], cipher passage of 568 signs (569 before the second reader) | **not located.** No printed text, extract, calendar entry or summary of the letter's content was found in the editions of section 4. The letter's *existence and date* are in print: the BnF *Catalogue des manuscrits français* (1868) describes it, and *Catalogue des actes de François Ier* IX (entry [411], list of ambassadors) cites "Écrit de Rome … 20 mai, ibid., 2980, fol. 29 et suiv." to date Gramont's stay in Rome. Neither gives any content. | **not located.** No decipherment was found on the leaf (NOTES.md, check-solved), in print or online. **But it has been identified as readable before us:** Tomokiyo (cryptiana, francis.htm, "BnF fr.2980 (1530)", live page re-read 24 Sept 2026) says "These undeciphered letters can be read with Gramont's cipher (1530)", and Bourdeau lists both items as catalogue 328, "Gramont 1530 key held" (dbourdeau/cyphersolver CATALOGUE.md line 76, sweep of 22 Sept 2026). Neither gives a reading. | **N3** |
 | f.30r-v, no.22 (same date, entirely cipher) | not yet read by the solver | none located | **none assigned**: no reading exists to audit. The searches below cover it as well, so its prior-print status is the same as no.21's, but a class needs a reading. |
 
 **Why N3 and not N4.** The principal editions for this embassy were covered (section 4), most of them by full
@@ -39,14 +40,14 @@ Molini, Ribier, Scheurer's du Bellay or Decrue. Medium-high for Le Grand, whose 
 Medium for Camusat.
 
 **Safe sentence.** "BnF fr.2980 f.29r (no.21) is a letter of Gabriel de Gramont, bishop of Tarbes, to Jean Breton
-de Villandry, Rome, 20 May [1530], with a 569-sign cipher passage. Tomokiyo had identified it as readable with
+de Villandry, Rome, 20 May [1530], with a 568-sign cipher passage (569 before the second reader). Tomokiyo had identified it as readable with
 the published Gramont 1530 key (Tomokiyo; Lasry 2023). We transcribed the passage from the Gallica image (one
 reader) and applied that key: the table gives values for 538 signs (H), 26 are uncertain and 5 unkeyed, and
 several lines read as continuous French. No prior printed plaintext or decipherment of the letter was located in
 the editions listed in AUDIT.md (N3)."
 
 **Unsafe sentences.** "First decipherment of Cardinal Gramont's letter"; "a previously unread letter"; "newly
-recovered"; "538 of 569 signs read" or "read in full" (the reading is partial and single-reader); "Cardinal
+recovered"; "538 of 569 signs read", "533 of 568 signs read" or "read in full" (the reading is partial and single-reader); "Cardinal
 Gramont" as of 20 May 1530 (he was created cardinal on 8 June 1530); "we found that the key applies" (Tomokiyo
 said so first, and Bourdeau catalogued it).
 
@@ -63,7 +64,7 @@ Use those in any safe sentence.]*
 | date, place | "A Rome, le XXme jour de may", no year on no.21; no.22 "M.D.XXX" | BnF notice |
 | cipher, key | Gramont's Cipher (1530): Tomokiyo from fr.3019 f.20; Lasry 04/11/2023 from fr.3071 f.17 | key.tsv, NOTES.md |
 | reading | reading.txt, 14 lines; distinctive decoded phrases: "il y baille a ce porteur ... article que j'ay mis a part"; "l'adresse de dessus a vous combien que ce soit au roy"; "vous prie le luy demander car c'est le total"; "du vingtiesme"; "pour le contenter et oster ... de suspecon"; "qui est cause que j'ay faict ledit article a part"; "pour vous donner cognoissance de tout"; clear text: "pensant que ce courrier pourra estre plustost a vous que le pacquet", "ung double des lettres que j'escriptz lundi", "satisfaction de nostre Sainct Pere" | reading.txt, NOTES.md |
-| grades | 569 tokens: H 538, C 0, S 0, M 26, I 0, U 5 | reading.txt header |
+| grades | 569 tokens: H 538, C 0, S 0, M 26, I 0, U 5 (first reader); now 568: H 533, M 30, U 5 (second reader, verifier V2 24 Sept 2026) | reading.txt header |
 | solver's search | IA fts two phrases; Google Books API three queries; print-check pass (LP iv.3 direct, Decrue, PUR/Rentet, Tomokiyo, Bourrilly-Vindry vol.1, Google Books Le Grand bot-blocked) | NOTES.md |
 
 ## 3. The attribution tested against the plaintext
@@ -71,7 +72,7 @@ Use those in any safe sentence.]*
 - **Recipient Villandry fits.** The cipher says the writer put an article apart and "faict l'adresse de dessus a
   vous, combien que ce soit au roy": he addressed it to the secretary although it is meant for the king. That is
   how one writes to the king's secretary of commands, Breton de Villandry, whose office was to carry such pieces
-  to the king (Rentet, PUR chapter). The clear text's "le pacquet que j'ay envoye au Roy" fits the same relay.
+  to the king (Hamon, "Jean Breton", PUR chapter; author corrected by verifier V2, 24 Sept 2026). The clear text's "le pacquet que j'ay envoye au Roy" fits the same relay.
 - **Rome fits.** The clear text mentions "la satisfaction de nostre Sainct Pere" and "les affaires du Roy par
   deca". The *Catalogue des actes* IX places Gramont in Rome from April to June 1530 (letters of 2 May, fr.3053
   f.11, and 20 May, this item). Spanish Calendar IV.1 p.560 cites him on 26 May, and LP iv.3 nos. 6441 and 6443
@@ -128,7 +129,7 @@ API snippets were checked.
   - **Result: not in Le Grand's *Preuves*** (token-count evidence, medium-high).
 - **Decrue, *Anne de Montmorency*** (1885/1889): the print-check pass searched it and found no citation of items
   21-22. This session's IA fts for "Gramont" "Villandry" "1530" returned only the same volumes. Not re-searched.
-- **Rentet**, PUR chapter on Breton de Villandry (pur/120024): read by the print-check pass. This session read the
+- **Hamon** (not Rentet; corrected by verifier V2, 24 Sept 2026), "Jean Breton (v. 1490-1542)", in Michon (ed.), *Les conseillers de François Ier* (PUR 2011), pp.335-342 (pur/120024): read by the print-check pass. This session read the
   **PUR chapter on Gabriel de Gramont** (books.openedition.org/pur/120012, full text): the 1530 Rome mission is
   cited only to the Ferrarese ambassador (ASModena busta 9) and CAF; no fr.2980, no cipher. Searched.
 - **du Bellay correspondence**: Bourrilly & Vindry vol. 1 (1527-29) is out of range (print-check). Scheurer,
@@ -157,7 +158,7 @@ API snippets were checked.
   in other volumes (27 Aug; 11 Oct). **Not items 21-22.** Searched.
 - **Nuntiaturberichte**: the German series begins in 1533, and no French nunciature edition covers 1530.
   **Not applicable**, not searched.
-- ***Catalogue des actes de François Ier* IX** (IA `collectiondesord09acad`, full text): entry [411] cites the
+- ***Catalogue des actes de François Ier* IX** (IA `collectiondesord09acad`, full text): entry [412] [verifier V2, 24 Sept 2026: [412], not [411]; [411] is Villebon's 1528 mission; Catalogue IX p.61] cites the
   letter by date, as in section 1. **Existence and date only.**
 - **Tournon correspondence** (M. François, 1946, Google Books snippets): cites fr.2980 fol.33 (no.24, Lyon), not
   fol.29-30.
@@ -1064,7 +1065,7 @@ nothing for 20 May. The Asti passage is above. LP, CSP Venetian: as in the first
 1540s (the Alger expedition, "l'Evesque de Tarbe Ambassadeur du Roy vers l'Empereur"), none of 1530. Molini, *Documenti*,
 four IA scans: 8505 appears only in the register of Béthune volumes, and the Gramont hits are other letters (Casale to
 Gramont, etc.). Desjardins II (`gri_33125010469852`): 11 Tarbes hits, none of May 1530, and no phrase hits. *Catalogue des
-actes* I, VI, VII, IX (full text): "2980" in IX only at [411] (existence and date, as known); the other hits are act
+actes* I, VI, VII, IX (full text): "2980" in IX only at [412] (existence and date, as known) [verifier V2, 24 Sept 2026: [412], not [411]; [411] is Villebon's 1528 mission; Catalogue IX p.61]; the other hits are act
 numbers. **Searched.**
 (c) **Documentary editions and journals.** *ASI* App. II, IV-IX (full djvu text) and III (index + be-api fts); the general
 index (above). Tarbes hits: App. II p.153 (a review quoting Charles V, 1531, on the cardinal's return), App. VIII p.535 (a
@@ -1223,7 +1224,7 @@ under the 30 MB/folder cap — re-fetch any of them from the manifest's per-foli
 
 LANE V verifier, 05:08-05:15 UTC (`date -u` read), orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ. This session did
 none of the solving, auditing or gap work above and did no decoding. Question: does the logged coverage of no.21
-(f.29r, Gramont to Villandry) and no.22 (f.30r-v, Gramont to Francis I), both Rome, 20 May 1530, each N3 after two
+(f.29r, Gramont to Villandry) and no.22 (f.30r-v, Gramont to Francis I), both Rome, 20 May [1530] (f.30 dated 1530), each N3 after two
 audits, now meet rule 10's N4?
 
 **Answer: no, for both items. Each stays N3** (status.json unchanged). Two principal families are still uncovered, and
@@ -1250,10 +1251,10 @@ been written under "DECODE search" in this file yet. LANE N was asked at 05:07 U
 | Sanuto, *Diarii* 52-54 | covered (index columns read in context) | covered | f.30 second audit 2 |
 | Molini, *Documenti di storia italiana* | covered: 8505 prints only item 23 | covered | section 4(c); f.30 second audit (b) |
 | Ribier, *Lettres et mémoires d'estat* | covered, full text, three scans | covered, re-grepped | section 4(b); f.30 second audit (b) |
-| *Catalogue des actes de François Ier* I, VI, VII, IX | covered: IX [411] gives existence and date only | covered | section 4(c); f.30 second audit (b) |
+| *Catalogue des actes de François Ier* I, VI, VII, IX | covered: IX [412] (p.61; not [411], corrected by verifier V2) gives existence and date only | covered | section 4(c); f.30 second audit (b) |
 | BnF catalogue of fr.2980 (cc494342) and the BnF finding aids | covered: no bibliography, and no decipherment in the volume (Raince test). fr.3038 no.19 is the Bologna decipherment | covered: no recipient given for no.22 | second audit, Raince test; f.30 (c) |
 | *Catalogue de la collection Dupuy* | covered (15 May letter to Du Prat, Dupuy 452) | covered | f.30 (b) |
-| Sender and recipient studies: Rentet (Villandry, PUR), Michon (Gramont, PUR 2011), Decrue, Scheurer I, Bourrilly | covered | covered | sections 4(b), second audit (c) |
+| Sender and recipient studies: Hamon (Breton de Villandry, PUR 2011; not Rentet, corrected by verifier V2), Michon (Gramont, PUR 2011), Decrue, Scheurer I, Bourrilly | covered | covered | sections 4(b), second audit (c) |
 | Michon, *La Crosse et le Sceptre* (2008) | unreachable (Google Books NO_PAGES). **Not principal for a print of the letter**: his PUR chapter on Gramont (2011) was read in full and cites no fr.2980 and no cipher. Noted as the residual specialist gap | same | "Toward N4"; section 4(b) |
 | Tomokiyo, francis.htm and GL.htm | covered, live twice. "These undeciphered letters can be read with Gramont's cipher (1530)": no reading. GL.htm (cached 23 Sept 2026, re-grepped this session) has no mention of fr.2980 or Villandry: Lasry's Gramont list is fr.3040, fr.3091, fr.3071 and Clair.330 | covered, same | section 4(f); f.30 second audit (f); this section, 2 |
 | Lasry's publications | covered: CrossRef and Google Scholar list no Gramont article. His 2023 Gramont work is known only through Tomokiyo's GL.htm, which does not claim nos.21-22 | covered | open-index pass row 7; this section, 2 |
@@ -1594,7 +1595,7 @@ N4.** Logged and not blocking: OpenAlex and Semantic Scholar unreachable (429); 
 Vienna); DECODE's three unconfirmed zero rows (§1).
 
 **Safe sentence, no.21 (N4):** "No prior decipherment located of Gabriel de Gramont's cipher letter to Jean Breton de
-Villandry, Rome, 20 May 1530 (BnF fr.2980 f.29r, no.21). Tomokiyo identified it as readable, and Bourdeau catalogued it
+Villandry, Rome, 20 May [1530] (BnF fr.2980 f.29r, no.21). Tomokiyo identified it as readable, and Bourdeau catalogued it
 (no.328). We read its 568-sign cipher passage in part with the Gramont 1530 key published by Tomokiyo and Lasry (2023):
 533 signs at grade H, 30 uncertain, 5 unkeyed. The search log is in AUDIT.md."
 
@@ -1632,3 +1633,45 @@ re-run.
 Requests this session: archive.org 20 (6 advancedsearch, 1 metadata, 13 downloads including 5 byte-range probes; 3
 returned 500, not retried beyond one abbyy attempt); be-api.us.archive.org 11; www.googleapis.com 8 (keyed,
 country=US). No Gallica, no de-crypt.org, no logins, no decoding, no subagents.
+
+## Second opinion SO-GRAMONT-F29R (ChatGPT, pull request 1), checked 24 Sept 2026, 16:06 UTC
+
+Verifier V2 (Opus, for LANE V4, session_0178qzehvSNvWsP6vDrZRu7g). Input: `second-opinions/chatgpt-2026-09-24.md`
+(GPT-6, copied from branch `second-opinion/SO-GRAMONT-F29R`, PR 1, unmerged). It reports no prior print or decipherment
+of f.29r, one confirmed printed *reference* to the manuscript, and six corrections. Each checkable claim was checked
+against the source below. No decoding.
+
+| # | claim | source checked | verdict | correction made |
+|---|---|---|---|---|
+| 1 | *Catalogue des actes de François Ier* IX cites f.29 at entry [412], p.61; [411] is Villebon's 1528 mission; the volume is dated 1907 | IA `collectiondesord09acad` djvu text (fetched once): "Octobre-novembre 1528. — M. de Villebon ... [411]"; then "Juin 1529-novembre 1530. — Gabriel de Gramont ... 20 mai, ibid., 2980, fol. 29 et suiv. ... [412]", on the page headed "— 61 —" (entries [409]-[413]); title page "TOME NEUVIÈME ... DÉCEMBRE 1907"; IA metadata `date` says 1887 (wrong for this volume) | **right** | AUDIT.md's three "[411]" (section 4(c), f.30 second audit source log, N4 decision table) now read [412] with a note. The entry is a reference (existence and date), not a print of the letter: no class effect |
+| 2 | sign count is 568 (H 533, M 30, U 5), not 569 | `reading.txt` header and `decode.py --check` (exit 0, "reading up to date": 568: H 533, C 0, S 0, M 30, I 0, U 5) | **right** | 569 kept only where it is a quotation of the first reader's counts, each now marked as such (AUDIT.md claim line, verdict table, section 1, grades row; NOTES.md Files and Grades); PROMPT-chatgpt.md now says 568. The safe sentences already said 568 |
+| 3 | books.openedition.org/pur/120024 is by Philippe Hamon, "Jean Breton (v. 1490-1542)", in Michon (ed.), *Les conseillers de François Ier* (PUR 2011), pp.335-342, not by Thierry Rentet | the page's `citation_author` meta (Philippe Hamon), `citation_inbook_title`, "p. 335-342", its suggested citation; n.1 thanks Rentet, n.22 cites Rentet's 2008 paper | **right** | NOTES.md (author and book title, which was also wrong: "Conseils et conseillers") and AUDIT.md (three places) corrected |
+| 4 | the prompt's phrase "il y baille a ce porteur" does not match the reading's letters "IAYEAI[LL]E" | `reading_tokens.tsv` L01: xr I, lam A, aq Y, q E (M), x A, z3 I, ll LL, sl E; key.tsv q: "read as 9 (reads B in L01 'baille')". There is no L before Y, so "il y" is not in the letters; "j'ay baille" is | **right** | PROMPT-chatgpt.md phrase list now "j'ay baille a ce porteur" plus "baille a ce porteur" alone. The earlier phrase sweeps ran "baille a ce porteur" without the pronoun (section 4(e)), so they are unaffected. reading.txt unchanged; the L01 gloss is logged as a solver suggestion in NOTES.md |
+| 5 | the year should stay bracketed for f.29r | NOTES.md: BnF finding aid "A Rome, le XXme jour de may" (no year) and the clear-text draft "A Rome le xxme de may"; f.30 alone carries "M.D.XXX" | **right** | "20 May [1530]" for f.29r in the AUDIT.md claim note, the no.21 safe sentence, the N4 question line, NOTES.md's print-check question and the prompt. Dates that belong to f.30, and general date reasoning, are unchanged |
+| 6 | E/B at L01 q and L04 sl?; T/F at L05 "tondement"; N/Q at L10 "cavsenve"; L11 Mx unkeyed | reading tokens and key.tsv (not re-read against the image) | **not a verifier matter**: conjectures on the reading, marked unverified by the second opinion itself | logged as a solver suggestion in NOTES.md; no reading changed |
+| 7 | Camusat 1619 vs the 1644 Gallica copy: equivalence unverified | AUDIT.md "N4 decision (final families)", section 1 | **fair, already stated** | none. What AUDIT.md established: the 1644 Gallica copy was read, and two markers from it (the 4 Dec 1531 letter to Villandry, and the 1532-34 Gramont dossier) were found in the 1619 Google Books issues through the keyed API, so the 1644 is treated as a reissue of the 1619 sheets, explicitly "not proven folio by folio" |
+| 8 | "no prior plaintext or decipherment" in the sources it reached (Tomokiyo francis.htm, Bourdeau CATALOGUE and gramont1529 notes, Hamon chapter, Catalogue IX, web phrase searches) | the same families are logged in the N4 decision table (Tomokiyo, Bourdeau, Hamon, *Catalogue des actes*, phrase search) | **agrees** | none |
+
+**Its leads, one line each.**
+1. Camusat edition comparison: already covered (N4 decision (final families), section 1); folio-by-folio identity of 1619 and 1644 remains a stated residual, not actionable without the 1619 page images.
+2. Catalogue IX [412] and its neighbouring records: the catalogue is covered (section 4(c), now [412]); the sibling dispatches it lists (fr.3053 f.11, 2 May; fr.3019 f.20, 31 Aug; fr.3040 f.16; fr.3071; fr.3091 f.15) are manuscripts, not prints, and already appear in Tomokiyo's and Bourdeau's pages; not actionable for novelty.
+3. Breton's network (Hamon chapter): covered (section 4(b), print-check pass). Its n.22 names Thierry Rentet, "Le pouvoir des lettres: l'année 1530 et la libération des fils de France à travers la correspondance d'Anne de Montmorency", in Claerr and Poncet (eds), *La Prise de décision en France (1525-1559)* (2008). No audit here has searched it by name: **new, low priority.** It works on the Montmorency correspondence at Chantilly (NOTES.md), not fr.2980. Not searched this session because the Google Books host was held by a sibling verifier.
+4. Tomokiyo and Lasry's working material: covered as public pages (N4 decision table, Tomokiyo and Lasry rows); private notes are internal work, which N4 does not exclude; contacting them is the person's outreach, not actionable here.
+5. Bourdeau's same-key letter fr.3071 no.7: a solver resource (NOTES.md already cites it for the g/9/q shapes), not a novelty family.
+6. DECODE and Aymeloglu beyond the inspected files: covered (DECODE search section, and the N4 decision table's Aymeloglu row); the "Grammont" sender query is the residual already logged in N4 decision (final families) section 1; the old shelfmark "8505" was not queried in DECODE: **new, non-blocking**, one query for LANE N.
+7. Uncompleted edition and scholarship families: Scheurer, Decrue and the scholarship indexes are covered (N4 decision table; open-index pass); Le Glay's *Négociations ... l'Autriche* was logged off-target (section 4(g)). **Marguerite d'Angoulême's letters (Génin, 1841 and 1842), named in our own prompt, had no logged search; closed this session:** IA `lettresdemarguer00marguoft` and `nouvelleslettres00marguoft`, full djvu text: Gramont/Grammont and Tarbes hits are Marguerite's 1525 Spanish voyage, the English marriage mission, a recommendation of "M. de Tarbes" and index lines; one letter from Marguerite to Villandry. **No Gramont letter of 1530 and nothing from fr.2980. Covered, no hit.**
+
+**Class.** No check found a prior print or decipherment. **No.21 (f.29r) stays N4**, with the qualifier "no prior
+decipherment located". No.22 is untouched. The no.21 safe sentence of "N4 decision (final families)" now carries
+"20 May [1530]" and otherwise stands.
+
+**Postmortem.** Four of the second opinion's corrections were right and were ours to catch: an entry number read one
+line early in a catalogue whose numbers close each entry, a chapter author taken from a footnote instead of the byline,
+a count updated in the reading but not in the prompt and the first audit sections, and a search phrase that divided
+the letters into words they do not contain. None changes the class. Lesson for the verifier template: cite a catalogue
+entry from its closing number and a chapter from its `citation_author`, and regenerate the prompt's counts and phrases
+from `reading.txt` rather than from an earlier section.
+
+Requests this session: archive.org 6 (1 djvu download and 1 metadata for Catalogue IX, 2 advancedsearch, 2 djvu
+downloads for Génin 1841 and 1842); books.openedition.org 1. No Google Books, no Gallica, no
+de-crypt.org, no logins, no subagents.
