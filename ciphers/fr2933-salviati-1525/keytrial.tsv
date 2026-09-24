@@ -1,0 +1,6 @@
+key	signs_matched_by_shape_of_36	matched	partial_decode_f54r_lines2-4 (. = unmatched sign, | = plain box)	verdict
+raince1526 (dupuy452-carpi-1520/key.tsv)	9	psi,S7,lam,H,S,w,K,+,#	...z|...ese......|.e.es.........es....||...||||||||||||||....s|...e[Millan]...z.....e.z.s..z	no fit: generic-shape matches only; 100/370 tokens covered, no Italian across runs
+gramont1530 (fr2980-gramont/key.tsv)	8	lam,H,S,m,g,p,sq,dl	.ut.|.u..a..u...x.|....a...........a....||u..||||||||||||||....a|.u.............t.ta...	no fit: generic-shape matches only; 98/370 tokens covered, no Italian across runs
+fr20506-1525 Ranzo (decode-4450-bnf-fr20506-1525)	0			no fit: letter+number code, no invented signs
+florence 58-5/58-6 (sources/florence/keys, 1424)	0			not a candidate: 1424 keys; 58-index* are indexes, no sign table
+Montmorency/papal/Florentine 1524-27 key on file	-			none on file (grep ciphers/*/key.tsv, NOTES.md; cryptiana vatican.htm is 1625-28)

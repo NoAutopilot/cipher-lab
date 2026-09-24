@@ -297,3 +297,45 @@ the session scratchpad into `tools/` (it is generic to any target using the conf
 from `tools/reconcile_passes.py`'s line-crop alignment); a solver session could now test the 36-type code book and the
 superscript-numeral-on-sign pattern (flagged in the capture section above) against nomenclator conventions, now that a full
 settled transcription of f.54r exists.
+
+## Solver (24 Sept 2026, LANE R4 I)
+
+Worker I (Opus, cap $8, session_01GN6EQNWzVSwj6k7CvC9urZ), 16:05-16:30 UTC. Disk only, no fetches, no subagents. Input
+`ciphertext_f54r.tsv` (370 sign tokens, 36 base types, 139 plain boxes). **No reading; no key.tsv, decode.json or grades.**
+
+**Layout seen on the line images (L04, L05).** f.54r mixes plain Italian ("tutto quello ch[e] V. S. desidera", line 3) with
+runs of invented signs written one sign per letter-sized box; several superscript figures (1, 2, 3, 7, and "tw") and marks
+(#, +, o, dot) sit over signs. The cipher runs look like letter-level substitution with the marks as an open question.
+
+**1. Key trial by shape (`keytrial.tsv`).** Raince 1526 key as used for Dupuy 452 (ciphers/dupuy452-carpi-1520): contact
+sheet compared with `glyphs/atlas_part1.png`; 9/36 Salviati signs have a generic counterpart (psi, 7, lam, H, S, w, K, +, #),
+all primitive shapes any 1520s key uses, and the Salviati repertoire of letter-like cursive forms (a, e, g, y, m, w, wd, nt,
+bh, ch) has no counterpart there. Under those values lines 2-4 give no Italian (w as z at 17 tokens alone rules it out).
+Gramont 1530 (ciphers/fr2980-gramont/key.tsv, by shape description): 8/36 generic matches, same result (g as V at 28
+tokens, the commonest sign). fr.20506 f.136 (Ranzo) is a letter+number code, 0 matches. `sources/florence/keys` holds 1424
+keys and index pages only. No Montmorency, papal, Florentine or Salviati key for 1524-1527 is on file; cryptiana
+vatican.htm is 1625-28. No Tomokiyo or Lasry 1525-26 table other than Raince's is on disk. **No key on file fits.**
+
+**2. Matched control first (rule 3), then target (`control/`, `control/results.tsv`).** Tool: `tools/homophonic_anneal.py`
+(order 3, 6-8 restarts x 40000 iterations), corpus the five it16 letter collections other than Vanzolini, control plaintext
+Vanzolini's letters (`tools/data/it16/letterescrittea01vanzgoog.txt`, chars 200050-204000, held out of the corpus).
+- Contiguous control, N=370, K=36: 94.1%, 99.2%, 95.7% (seeds 1-3).
+- Interleaved control on the target's own row pattern (`control/make_interleaved.py`: each sign row one letter, each of
+  the 139 plain boxes withholds 2 letters from the stream): **92.4%, 78.6%, 75.4%**, best scores -892 to -894.
+- **Target, base codes, marks ignored: no Italian in any of 3 seeds**, best scores -967.0 to -976.7 (70-80 below the
+  control's true-plaintext scores at the same N), and the three decodes disagree with each other.
+- Code+mark as distinct signs (94 types): the control itself fails (11.1%, 15.7%), so the target was not run under that
+  model; that model is untested, not negative.
+
+**Conclusion, conditional on the transcription (83.5% pass agreement) and on f.54r alone:** f.54r is not a simple
+homophonic substitution of Italian letters over these 36 base codes with the marks ignored; the same solver reads a
+synthetic of that design at 75-99%. Models not excluded: marks change the value (vowel or syllable indicators, as the
+superscript-figure Italian systems in cryptiana venetian.htm), signs standing for syllables or words (nomenclator), nulls,
+or transcription error concentrated in frequent signs.
+
+Where not found: no key in ciphers/*/key.tsv, sources/florence, sources/cryptiana (francis.htm, venetian.htm, vatican.htm).
+
+Suggestions (not done): transcribe f.54v-f.57v with the same box-keyed passes, to reach ~2000 tokens, where the code+mark
+model has a working control; test the marks as vowel indicators (sign = consonant, mark = following vowel) with a control
+of that design; look for a Salviati nunciature key in ASV Segreteria di Stato or the Strozziane Salviati cipher folios
+(check-solved item 1) as a key source.

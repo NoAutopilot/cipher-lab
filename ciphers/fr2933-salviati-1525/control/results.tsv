@@ -1,0 +1,12 @@
+run	model	N	K	seed	letters_correct	share	best_score
+control_contig	homophonic, contiguous	370	36	1	348	94.1%	-
+control_contig	homophonic, contiguous	370	36	2	367	99.2%	-
+control_contig	homophonic, contiguous	370	36	3	354	95.7%	-
+control_interleaved	homophonic, target row pattern, 139 plain boxes x 2 letters withheld	370	36	1	342	92.4%	-894.3
+control_interleaved	same	370	36	2	291	78.6%	-893.2
+control_interleaved	same	370	36	3	279	75.4%	-892.5
+target_base	base codes, marks ignored	370	36	1	-	no Italian	-976.7
+target_base	base codes, marks ignored	370	36	2	-	no Italian	-967.8
+target_base	base codes, marks ignored	370	36	3	-	no Italian	-967.0
+control_contig_K94	code+mark as distinct signs	370	93	1	41	11.1%	-
+control_contig_K94	code+mark as distinct signs	370	93	2	58	15.7%	-
