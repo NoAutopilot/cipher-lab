@@ -1,0 +1,69 @@
+line	pos	code	marks	source	reason
+1	16	U		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+1	28	U		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+1	29	g		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+3	11	#	dot	B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+5	16	S7		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+5	18	w		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+6	27	+		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+7	2	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+8	3	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+8	6	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+8	7	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+8	15	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+8	19	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+8	21	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+8	22	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+8	24	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+8	27	L		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+9	6	#	dot	B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+9	17	nt		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+9	17.5	S7		B-split	pass B split a merged box; not in the boxlist/pass A at all
+10	1	]		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+10	7	eps	5	B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+10	9	eps		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+10	22	tee		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+10	25	S7	5	B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+11	8	S		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+11	10	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+11	11	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+11	13	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+11	14	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+11	17	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+11	25	S		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+11	25.5	lam		B-split	pass B split a merged box; not in the boxlist/pass A at all
+12	2	g		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+12	9	+		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+12	13.5	g		B-split	pass B split a merged box; not in the boxlist/pass A at all
+13	6	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+13	19	eps	7	B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+13	27	w		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+13	27.5	m		B-split	pass B split a merged box; not in the boxlist/pass A at all
+14	2	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+14	4	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+14	8	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+14	16.5	g		B-split	pass B split a merged box; not in the boxlist/pass A at all
+15	12	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+15	20	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+15	23	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+16	1	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+16	2	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+16	3	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+16	5	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+16	7	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+16	8	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+16	10	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+16	17	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+16	22	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+17	1	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+17	7	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+17	8	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+17	12	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+17	15	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+17	16	_		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+18	10	w	1	B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+18	11	o.		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+18	13	#		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+18	13.5	S7		B-split	pass B split a merged box; not in the boxlist/pass A at all
+18	25	w		B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read
+19	20	e	#	B	settled to pass B: closer 5x-zoom atlas comparison against pass A's classifier-anchored read

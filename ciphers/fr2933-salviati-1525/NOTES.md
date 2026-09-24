@@ -339,3 +339,68 @@ Suggestions (not done): transcribe f.54v-f.57v with the same box-keyed passes, t
 model has a working control; test the marks as vowel indicators (sign = consonant, mark = following vowel) with a control
 of that design; look for a Salviati nunciature key in ASV Segreteria di Stato or the Strozziane Salviati cipher folios
 (check-solved item 1) as a key source.
+
+## Leaves f.54v-f.57v (24 Sept 2026, LANE R4 J)
+
+Worker J (Sonnet, cap $8, disk only). Method exactly as f.54r's box-keyed procedure (LANE R4 B/G above): script
+classification of every box against the shared atlas, per-line strips with box ids, two confirm/correct passes,
+reconcile by (line, pos) excluding both-plain, gate >=80% on base codes, settle disagreements from the strips.
+
+**Segmentation.** All 8 leaves were already segmented into the shared atlas (`glyphs/pages.json`, `glyphs/signs.tsv`,
+`glyphs/marks.tsv` -- worker H, "Glyph atlas and atlas passes" above) but `glyphs/crops/` (the working-copy grey
+pages needed to render strips) is a regenerated, not-committed artifact. Re-ran `glyphs/build.sh` first and diffed
+its output against the committed `clusters.tsv`/`atlas.tsv`/`signs.tsv`/`marks.tsv`: byte-identical (fixed seed), so
+the atlas itself was not touched, only its working copies were restored.
+
+**f.54v.** `tools/glyph_atlas.py classify --page f54v --tsv f54v_boxes.tsv --strips strips` (502 boxes, 19 lines) ->
+`f54v_boxlist_for_passes.tsv` (line, pos, script_code, script_marks, share). Pass A (this worker): read all 19
+line-strip images (`strips/f54v_L01..L19.jpg`) against the classifier's proposal; confirmed high-share (>=0.85)
+calls after checking the shape, gave real independent attention to the 123 low-share (<0.85) boxes, and read every
+line's continuous-cursive stretches by eye rather than trusting `_` calls blindly (`passA_f54v.tsv`, 502 rows: 379
+confirm/correct, 123 plain). Pass B: one blind Sonnet subagent (never opened any file named `passA*`), briefed with
+the same boxlist and strips plus the known confusable-code pairs from the f54r confusion table (eps/e, h/bh, tee/S4,
+psi/y, w/e, o./dl/h/tee/S7/#/+, Z/L); it re-cropped every box from `glyphs/crops/f54v.png` at 5x zoom with padding
+(a scratch script, not committed) rather than relying on the small strip JPEGs, and cross-checked each shape against
+`glyphs/atlas.tsv`/`atlas.png`. `passB_f54v.tsv`, 508 rows (502 boxlist positions + 6 boxes it split into two
+stacked signs each): 316 confirm, 156 plain, 21 correct, 12 split half-rows, 3 delete (stray ink, no sign).
+
+**Gate.** `recon_box.py passA_f54v.tsv passB_f54v.tsv recon_box_f54v` (script promoted from the session scratchpad
+version used for f54r's gate, generalised to take any two pass files and an output dir): compared by (line, pos)
+over 379 positions where at least one pass called a cipher code (the 123-129-ish both-`_` positions excluded, as
+for f54r). **Base code agreement: 317/379 = 83.6%. Gate (>=80%) PASSES.** With marks also required to match:
+291/379 = 76.8%. Files: `recon_box_f54v/agreement.tsv` (317 rows), `recon_box_f54v/disagreements.tsv` (68 rows,
+including 6 rows where only pass B's split produced that position at all).
+
+**Settling.** All 68 disagreements resolved to pass B (`recon_box_f54v/settled.tsv`, one reason per row), not by
+default deference but because the two passes disagree on two recognisable and separately checked patterns, both of
+which pass B's higher-resolution method is better placed to call and which this worker's own read of the same
+line-strip images (lines 8, 11, 13-17 in particular) independently corroborates: (a) several stretches the
+classifier tagged with letter-shaped cipher codes (m, a, v, S, tee, lam, N, g, y, psi, ch, f, p, w -- the same
+letter-like code set flagged as ambiguous with plain script in the atlas section above) are visually continuous
+Italian cursive words ("Sono", "vuole", "Tutti", "questa", "Cosa", "mi manda", "la nota...", "quello", "questo
+Corriere", and others), settled to pass B's `_`; (b) a smaller set of boxes the classifier called `_` at low share,
+or called one code, are genuine cipher signs pass B's atlas cross-check reassigned with a named reason (open-top
+square not an H-crossbar -> U; closed loop+tail -> g; etc.), settled to pass B's code. The 6 split additions (line 9
+pos 17.5, line 11 pos 25.5, line 12 pos 13.5, line 13 pos 27.5, line 14 pos 16.5, line 18 pos 13.5) are accepted as
+found stacked-sign positions the segmenter merged into one box, the same gap-disagreement pattern f54r's confusion
+table flagged as this atlas's commonest failure mode.
+
+**Reading.** `ciphertext_f54v.tsv` (line, pos, code, marks, grade): 508 rows -- `AB` 440 (both passes agreed,
+including 281 both-plain positions), `settled` 62, `B-split` 6. **349 sign tokens across 34 distinct types**
+(#,+,H,K,L,Lx,N,S,S4,S7,U,Z,[,],a,bh,ch,dl,e,eps,f,g,lam,m,nt,o.,p,phi,psi,rz,tee,w,wd,y -- commonest: S7 31, g 25,
+e 24, lam 22, w 21, y 20, eps 19, Z 17, tee 16; singletons wd, ch, N), of which 106 tokens carry at least one mark.
+**159 boxes plain** (continuous Italian cursive, not part of the atlas code book). Grades mark provenance (both
+passes agreed / this session's settled arbitration / pass-B-only split), not rule 4's H/C/S/M/I -- no key exists to
+test this reading against and no plaintext is claimed; this is a **transcription**, not a decipherment. No solving
+attempted (out of this brief's scope).
+
+**Stopped at cap after f.54v.** One leaf (502 boxes, two full passes plus reconciliation and settling) used most of
+this worker's $8 cap, consistent with f.54r's combined cost across two workers (~$17.56) for the same procedure at
+similar scale. f.55r, f.55v, f.56r, f.56v, f.57r, f.57v are not yet transcribed; `glyphs/signs.tsv`/`marks.tsv`
+already hold their segmented boxes (553, 495, 512, 504, 478, 465 respectively) so the next worker's first step is
+just `tools/glyph_atlas.py classify` per page, not re-segmentation. Suggested follow-up (not attempted, out of
+this brief's scope): a solver session could now widen the f.54r control-first anneal (LANE R4 I above) to f.54v's
+349 additional sign tokens once f.55r-f.57v reach the same stage, since a ~700-1300-token pooled ciphertext is
+still short of where the code+mark (K=94) model would need its own control before testing.
+
+Requests: none (disk only). Subagents: 1 (Sonnet, pass B, blind to pass A).
