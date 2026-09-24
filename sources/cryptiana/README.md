@@ -50,3 +50,13 @@ found not to mention Danzay at all -- a search-snippet false positive, not a sec
 
 `2025/09/` (the monthly archive page WebSearch also listed) was fetched and grepped for `danz` (case-insensitive):
 no hits. Not saved, since it is a generic archive index with no Danzay content -- not part of this family.
+
+## Added 24 September 2026 (CITATIONS.md, board hall-of-fame worker)
+
+The committed `web/unsolved.htm` (fetched 19 Sept 2026) predates Tomokiyo's 24 Sept credit for the Bowes 1583
+sign table (CONTRIBUTIONS.md row of 23 Sept; ciphers/bowes-walsingham-1583/NOTES.md "Specialist reply"). One
+request, browser UA, HTTP 200: `web/unsolved-2026-09-24.htm` is the page as of that fetch and carries the credit
+in the "Ciphers related to Sir Francis Walsingham" section -- it names "Ryan Turner" (not the owner's own name,
+consistent with rule 9) and links `https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bowes-walsingham-1583`.
+The undated `web/unsolved.htm` is left as is (a distinct earlier snapshot); CITATIONS.md cites the dated file as
+evidence.

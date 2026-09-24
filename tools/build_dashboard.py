@@ -141,11 +141,60 @@ def load_memo():
     return out
 
 
+def md_linkify(s):
+    """Turn every '[text](url)' in s into an anchor; escape the rest."""
+    out, last = [], 0
+    for m in re.finditer(r"\[([^\]]+)\]\(([^)]+)\)", s):
+        out.append(E(s[last:m.start()]))
+        out.append(f'<a href="{E(m.group(2))}">{E(m.group(1))}</a>')
+        last = m.end()
+    out.append(E(s[last:]))
+    return "".join(out)
+
+
+def load_table(path, min_cells):
+    """Pipe-table rows as lists of cell strings, skipping the header and separator lines."""
+    if not os.path.exists(path):
+        return []
+    out = []
+    for line in open(path, encoding="utf-8"):
+        if not line.startswith("| ") or line.startswith("|---"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split(" | ")]
+        if len(cells) < min_cells or cells[0] in ("Date", "#"):
+            continue
+        out.append(cells)
+    return out
+
+
+def load_citations():
+    out = []
+    for cells in load_table("CITATIONS.md", 7):
+        date, who, where, what, how, quote, evidence = cells[:7]
+        out.append({"date": date, "who": who, "where": where, "what": what, "how": how, "quote": quote, "evidence": evidence})
+    return out
+
+
+def load_contrib_pending():
+    """CONTRIBUTIONS.md rows sent and still awaiting a public reply."""
+    out = []
+    for cells in load_table("CONTRIBUTIONS.md", 8):
+        date, item, cls, grade, recipient, channel, what, status = cells[:8]
+        st = status.lower()
+        if "sent" not in st or "reply pending" not in st:
+            continue
+        m = re.search(r"\b\d{1,2}\s+Sep\w*\s+\d{4}\b", status)
+        out.append({"recipient": recipient, "sent": m.group(0) if m else date, "what": what})
+    return out
+
+
 asks = load_asks()
 drafts = load_drafts()
 jq, jdone = load_jstor()
 second_opinions = load_second_opinions()
 memo = load_memo()
+citations = load_citations()
+contrib_pending = load_contrib_pending()
 
 # ---------------------------------------------------------------- helpers
 
@@ -385,6 +434,20 @@ target_rows = "".join(f'<tr><td><a href="{E(REPO + t["folder"])}">{E(t["name"])}
 worker_rows = "".join(f'<li><span class="dot {"on" if w["state"] == "running" else "off"}"></span><span>{E(w["title"])}</span><span class="muted small">{E(w["state"])}</span></li>' for w in workers_all if w["state"] == "running") or '<li class="muted">no parent workers running</li>'
 log_rows = "".join(f'<li><span class="when mono muted">{E(x["when"])}</span><span>{E(x["what"])}</span></li>' for x in d.get("log", [])[:12])
 
+# ---------------------------------------------------------------- hall of fame
+
+
+def citation_card(c):
+    return (f'<li class="fcard"><div class="fmeta"><span class="fdate mono muted">{E(c["date"])}</span>'
+            f'<span class="fwho">{E(c["who"])}</span></div>'
+            f'<p class="fwhere">{md_linkify(c["where"])} &rarr; {md_linkify(c["what"])}</p>'
+            f'<blockquote class="fquote">{E(c["quote"])}</blockquote>'
+            f'<p class="fhow muted small">{E(c["how"])}</p></li>')
+
+
+fame_cards = "".join(citation_card(c) for c in citations) or '<li class="muted">nothing public yet</li>'
+pending_rows = "".join(f'<li><span class="mono muted">{E(p["sent"])}</span> <b>{E(p["recipient"])}</b> &mdash; {E(short(p["what"], 100))}</li>' for p in contrib_pending)
+
 # ---------------------------------------------------------------- page
 
 CSS = """
@@ -465,6 +528,13 @@ th,td{text-align:left;vertical-align:top;padding:8px 8px;border-bottom:1px solid
 .dot{width:8px;height:8px;border-radius:50%;display:inline-block} .dot.on{background:var(--good)} .dot.off{background:var(--line)}
 .log li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px} .when{white-space:nowrap}
 .note{font-size:0.85rem;color:var(--muted);margin-top:10px}
+.fcards{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:10px}
+.fcard{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.fmeta{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+.fwho{font-weight:600}
+.fwhere{margin-top:4px}
+.fquote{margin:8px 0;padding-left:10px;border-left:3px solid var(--accent);font-style:italic;max-width:70ch}
+.pending{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:4px;font-size:0.88rem}
 @media (prefers-reduced-motion:no-preference){.ffill{transition:width .3s}}
 """
 
@@ -552,6 +622,7 @@ page = f'''<title>Cipher Lab Board</title>
   <button type="button" data-view="readings" aria-selected="true">Readings</button>
   <button type="button" data-view="desk" aria-selected="false">Your desk</button>
   <button type="button" data-view="machine" aria-selected="false">The machine</button>
+  <button type="button" data-view="fame" aria-selected="false">Hall of fame</button>
 </nav>
 
 <section class="view" id="readings">
@@ -588,6 +659,14 @@ page = f'''<title>Cipher Lab Board</title>
   <ul class="workers">{worker_rows}</ul>
   <h3>Log</h3>
   <ul class="log">{log_rows}</ul>
+</section>
+
+<section class="view" id="fame" hidden>
+  <h2>Hall of fame</h2>
+  <p class="muted small" style="max-width:70ch">Public citations of this project's work by someone outside the repository: a credit, a link, a correction adopted, co-authorship or a reply that became public. CITATIONS.md is the record; the owner is never named (rule 9), the repository is.</p>
+  <p class="strip"><b>{len(citations)}</b> public citations since 23 Sept 2026</p>
+  <ul class="fcards">{fame_cards}</ul>
+  {('<h3>Pending</h3><p class="muted small">Sent, awaiting a reply that has not gone public.</p><ul class="pending">' + pending_rows + '</ul>') if pending_rows else ''}
 </section>
 </div>
 <script>{JS}</script>
