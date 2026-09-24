@@ -155,3 +155,39 @@ methodological caveat are in QUEUE.md's "Printed ciphertext, round 2 (24 Septemb
 
 `runs2.tsv` committed (raw clusters, reproducible per the command in QUEUE.md); `_djvu.txt` caches gitignored as
 in round 1.
+
+## 9. Round 3, English calendars + continental series not in round 2 (24 September 2026)
+
+Third detector-test worker (`.claude/briefs/runs/2026-09-24-lane-s-det3.md`), same method (§1) plus two
+additions from a lesson logged in ROOM.md 24 Sept 03:00-03:05 UTC (several apparent Thurloe "unkeyed" passages
+turned out to carry a printed interlinear decipherment): a pre-filter for back-of-volume indexes before
+judgement, and an interlinear test (does a numeral line's neighbour carry about as many words as the line has
+groups?) run on every cipher-without-decipherment survivor before it is reported as such. Full write-up, the
+edition list gaps, the pre-filter spot-check and the single survivor's row are in QUEUE.md's "Printed
+ciphertext (detector round 3, LANE S, 24 September 2026)" section. Summary here:
+
+- **Edition list:** 212 identifiers (`editions3.tsv`), short of the brief's ~250-300 target — several named
+  English series (Hardwicke, Clarendon 1767-86, Nicholas Papers, HMC Stuart/Portland, CSP Scotland) needed 2-3
+  rounds of query loosening to surface even a handful of IA volumes, and three titles (Carte's Ormonde, Birch's
+  Memoirs of Queen Elizabeth, Hailes's Annals of Scotland) were not found on IA under any phrasing tried.
+- **Controls:** 2 of 2 recovered (Thurloe vol. 1 after one retry on an initial 500, per the good-citizen rule's
+  single-retry allowance; Rommel 1840 clean).
+- **Pre-filter:** of 20,160 parsed raw clusters (from a nominal 21,342 — some rows lost to OCR-text quote
+  characters confusing TSV parsing, a tools/ia_numeral_runs.py limitation flagged but not fixed this round),
+  20,099 fail the standing thresholds; of the 61 that pass, 6 are dropped by the two new pre-filter rules
+  (4 last-8%-of-volume, 2 mostly-ascending numerals). All 10 spot-checked drops (6 pre-filter + 4 highest-scoring
+  threshold drops) confirmed as genuine index/table/regesten apparatus by hand — the pre-filter did not hide a
+  real cipher passage this round.
+- **Survivors: 1** of 27 merged candidate passages across 8 identifiers, after the interlinear test cleared 4
+  false-positive "interlinear" flags (a CSPD shipping-log table whose remarks column coincidentally word-counts
+  near its row's numeral count). The other 26 passages are cipher-**with**-decipherment: 8 in the Calendar of
+  the Stuart Papers / Stuart Papers at Windsor (bracketed inline gloss convention), 14 in Rikskansleren Axel
+  Oxenstiernas skrifter och brefvexling (asterisk-word-plus-footnote convention, several explicitly solved by
+  the editor from a Riksarkivet key). The one survivor (row W1) is letter no. 602 in the same Oxenstierna
+  edition, Gustav II Adolf to Oxenstierna, Nürnberg 23 July 1632 (printed pp. 821-822), where the editor states
+  outright the key could not be found and the letter is printed unsolved — a different, explicitly-flagged case
+  within the same series that otherwise prints solved cipher throughout.
+- **Requests:** archive.org only, 290 total (75 advancedsearch + 215 djvu fetches), no other host, no logins,
+  two solver-repo shallow clones (grepped, not committed).
+
+`editions3.tsv`, `runs3.tsv`, `editions3_passages.tsv` and `editions3_dropped_examples.tsv` committed.

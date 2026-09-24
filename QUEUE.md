@@ -1399,3 +1399,89 @@ check-solved 24 Sept 2026 (LANE S batch G): E1 (`ciphers/rah-xiquena-1868/`) ope
 1008499, are outstanding). No edition of Isabel II's 1868 correspondence with the Conde de Xiquena found; the
 item's own catalogue record still carries no "Publicado por..." note. Not on DECODE (cached), not in Bourdeau's
 or Aymeloglu's repositories, no Cryptiana mention.
+## Printed ciphertext (detector round 3, LANE S, 24 September 2026)
+
+Detector-test worker, round 3 (`.claude/briefs/runs/2026-09-24-lane-s-det3.md`): same method as rounds 1-2
+(`tools/ia_numeral_runs.py`, `sources/ia-fulltext/NOTES.md` §1) over English state-paper/calendar editions and
+continental series not covered by round 2, plus two new steps: a pre-filter for back-of-volume indexes before
+judgement, and an interlinear test on every cipher-without-decipherment survivor (per the Thurloe interlinear
+lesson of 24 Sept 03:00-03:05 UTC — several apparent Thurloe "unkeyed" passages turned out to carry a printed
+decipherment set as a second line above each cipher line). This is a detector test, not a solver or verifier
+pass: rule 10 applies, nothing here is promoted or solved, no wording of new/unpublished/first is used.
+
+**Edition list:** `sources/ia-fulltext/editions3.tsv`, 212 identifiers from 75 `archive.org/advancedsearch.php`
+title queries (English: Haynes/Murdin Burghley, Hardwicke, Clarendon State Papers 1767-86, Nicholas Papers,
+Carte's Ormonde, Winwood, Sadler, Hamilton Papers, Forbes, Birch, Digges, Cabala, CSP Scotland/Border Papers,
+HMC Salisbury/Stuart/Portland/Bath/Buccleuch, Macpherson, Hailes, Miscellanea Aulica, Letters and Papers Henry
+VIII, State Papers Henry VIII; continental: Corpo diplomatico portuguez, Oxenstiernas skrifter och brefvexling,
+Hurmuzaki, Monumenta Hungariae Historica, Acta Tomiciana, Briefe/Akten Dreissigjährigen Krieges, Druffel, Politische
+Correspondenz Friedrichs des Grossen, Gachard, Werken van het Historisch Genootschap, Lettres et négociations de
+Jean de Witt, Archivio veneto/lombardo/napoletane, Miscellanea/Documenti di storia italiana, Recueil des
+instructions), deduped against `editions.tsv`/`editions2.tsv`. **Not found on Internet Archive under any title
+tried** despite three rounds of loosened phrasing: Carte's Ormonde letters, Birch's *Memoirs of the Reign of
+Queen Elizabeth*, and Dalrymple/Lord Hailes's *Annals of Scotland* — a gap in IA's holdings or metadata, not a
+tool failure, reported rather than silently substituted (same pattern as round 1's Hardwicke/Sidney Papers,
+which this round *did* find under a looser query). The 212-identifier total falls short of the brief's
+"about 250-300" — several named series (Hardwicke, Clarendon, Nicholas Papers, HMC Stuart/Portland, CSP
+Scotland) needed 2-3 rounds of query loosening to surface even a handful of volumes, reflecting genuinely
+sparse or inconsistent IA metadata for these titles rather than an unexplored source.
+
+**Controls, both recovered, one retry needed (good-citizen rule, single retry after a pause):** Thurloe vol. 1
+(`collectionofstat01thur`) 500'd once, then on retry reproduced its round-1/round-2 cluster count exactly (111
+clusters; known cipher at line 43962 confirmed verbatim). Rommel 1840 (`correspondancein00henr`) fetched clean,
+50 raw clusters (consistent with rounds 1-2's 11 merged passages, all already in cyphersolver `hesse1603/`).
+
+**Fetch:** 212 identifiers, 182 fetched, 30 skipped on HTTP 404 (16)/500 (10)/401 (1)/503 (1) with no retries —
+mostly dead Polish JBC (`jbc.bj.uj.edu.pl.*`) and `ArchivioVeneto*`/`bub_gb_*` ids from the keyword harvest.
+20,160 raw cluster rows parsed into `runs3.tsv` from a nominal 21,342 (some rows lost to stray quote characters
+in the OCR context field confusing the TSV's csv-quoting; a known limitation of storing raw OCR text in a TSV
+context column, not attempted to fix this round — flagged for a tools/ia_numeral_runs.py fix, not this worker's
+brief).
+
+**Pre-filter** (before judgement, per the brief's lesson from round 2's 173-of-180 index/register false
+positives): of the 20,160 raw clusters, 20,099 fail the standing thresholds (repeat_rate>=0.3, numerals>=15,
+prose_words>=5); of the 61 that pass, 4 are dropped as being in the last 8% of their volume's lines and 2 as
+mostly-ascending numeral sequences (a page-reference run), leaving 55 kept clusters merging into **27 candidate
+passages** across 8 identifiers. Spot-checked 10 dropped clusters by hand (the 6 pre-filter drops plus the 4
+highest-scoring threshold drops): all 10 are genuine back-of-volume apparatus — 2 place/subject indexes
+(`statepaperspubli11grea`/Letters and Papers Henry VIII, `sim_great-britain-public-record-1625-1649-domestic-
+series_1639-1640`/CSPD index), 2 commodity-price or coin-value tables (`rikskanslerenax00styfgoog` foodstuffs
+prices, `rikskanslerenax03akadgoog` "plåtkoppar" copper-plate currency), 1 military-movement page-reference
+run (`politischecorres22freduoft`), 1 regesten-style citation list (`briefeundactenz00altmgoog`), and 4 more
+`rikskanslerenax00*` footnote blocks that are the edition's own already-solved cipher apparatus (see below) with
+too little surrounding prose to clear the threshold — none is a hidden undeciphered passage.
+
+**Judgement (all 27 candidate passages read from +-10 lines of djvu context, not the one stored context
+line):**
+
+| Category | Passages | What it is |
+|---|---|---|
+| cipher-with-decipherment | 8 | `calendarofstuart01grea`/`01greauoft` (2 copies of the same volume), `calendarofstuart02grea`, `stuartpaperswind56greauoft` — Calendar of the Stuart Papers / Stuart Papers at Windsor print every cipher figure with its plaintext gloss in brackets immediately alongside it ("43. 96. 28. 29. 55. 11. 69. Agincourt {the money)", "22, 10, 23, 25, 20 (b,r,e,a,d)"), a 20th-century calendaring convention, not an unread passage |
+| cipher-with-decipherment | 14 | `rikskanslerenax00akadgoog`/`00palagoog`/`02akadgoog` (Rikskansleren Axel Oxenstiernas skrifter och brefvexling, several volumes) — this edition's standard apparatus: ciphered words are printed in clear inside asterisks in the letter body, with a footnote giving "Siffrorna äro: ..." (the figures are: ...), the original cipher numerals, for every asterisked word; several footnotes state explicitly the editor solved the cipher using a key found in the Riksarkivet (e.g. "genom fynd af den i Riksarkivet befintliga klaven har det varit möjligt att lösa chiffern") |
+| table/noise | 4 | `sim_great-britain-public-record-papers-domestic-charles-ii_1673-1675_index` and `..._october-1672-february-1673` (x2 passages) — CSPD Charles II's own shipping-log appendix table (Date / King's ships outward / inward / Wind / Remarks columns); flagged "interlinear=yes" by the automated test purely because remarks-column prose happens to word-count near the row's numeral count — a demonstrated false positive, judged table by content |
+| **cipher-without-decipherment (survivor)** | **1** | see row W1 below |
+
+**Interlinear test** (required before calling any passage undeciphered, per the Thurloe lesson): run against
+all 27 passages' +-10-line windows (numeral-line word-count vs. neighbouring clear-line word-count, tolerance
++-2 or 25%). 4 flagged "yes"/"maybe" — all 4 checked by hand and are false positives (the CSPD shipping table's
+remarks column, and one Rikskansleren asterisk-footnote block where an unrelated nearby prose line happened to
+match): none is a real plain-line-above-cipher-line layout. The one true survivor (W1) scores "no" (4 of 14
+neighbour lines within tolerance, below the 0.3 threshold) and was independently confirmed by eye to be
+continuous prose with inline cipher numerals, not a two-line interlinear format.
+
+| # | Edition | Identifier | OCR line(s) / printed page | Correspondents / date | Tokens | Decipherment on page | Prior work found where | Next step |
+|---|---|---|---|---|---|---|---|---|
+| W1 | Rikskansleren Axel Oxenstiernas skrifter och brefvexling (Styffe ed.) | `rikskanslerenax00styfgoog` | OCR lines 39880-39942, printed pp. 821-822 (letter no. 602) | Gustav II Adolf (Gustavus Adolphus) to Axel Oxenstierna ("Rikskansleren"), dated "Nürnberg den 23 Julij" — printed "Anno 1682" is an OCR digit slip for 1632 (Gustavus Adolphus died Nov. 1632; the letter discusses the Nürnberg campaign and Banér) | approx. 150 cipher numerals (2-4 digit groups, values seen up to 3965) over ~40 lines of continuous German/Swedish prose, cipher words interspersed with clear text word by word | **No** — editor's own footnote states: "Nyckeln till ofvanstående chifferbref har af utgifvaren icke i riksarkivet kunnat återfinnas, men då intet tvifvel är om, att det är ett Konungens bref till Rikskansleren, hvartill möjligen en lösning sedermera kan finnas, har det här blifvit meddeladt" (the key to the above cipher letter could not be found by the editor in the Riksarkivet, but as there is no doubt it is a letter from the King to the Chancellor, to which a solution may possibly be found later, it is included here [unsolved]) | Not found under "Oxenstierna"/"Gustav(us) Adolph(us)" in `sources/cryptiana/`; fresh shallow clones of both solver repos show adjacent-but-distinct Riksarkivet/Oxenstierna-circle items already worked or surveyed by Bourdeau — `riksarkivet1628/` (DECODE Chifferklaver catalogue #207: R4282/R4284/R4306 open, R4330-31 read [1631 Bremen-Salvius], R4333-37 [Rusdorff to Oxenstierna, 1628, open], R4338-41 [June 1633, read in part]) and `baner1640/` (Banér to Stålhandske, Dec. 1640, read in part) — none dated 23 July 1632 or matching this letter's incipit; QUEUE.md rows R3/R10 (24 Sept scout) already flag the Oxenstierna-project's own Riksarkivet holdings as adjacent territory. Not found in QUEUE.md or `ciphers/` under any of these terms. The editor's footnote also notes two further cipher letters of the same day to Gustaf Horn ("duplett"/"triplett", same format) not located in this sweep — a next worker should check whether they are printed elsewhere in this volume. | Not promoted, not solved. Next: check-solved sweep (six sources) before any board promotion; locate the "duplett"/"triplett" Horn letters in the same volume; the numeral range (up to ~3965) implies a large nomenclator rather than a simple cipher — a period Riksarkivet Chifferklaver key search (as `riksarkivet1628/` and `baner1640/` already do for adjacent material) is the likely route in, not ciphertext-only cryptanalysis |
+
+**Requests, archive.org only:** 75 `advancedsearch.php` calls (44 initial + 20 loosened re-queries for 0-hit
+titles + 11 third-round loosened queries) + 215 `_djvu.txt` fetches (212 new identifiers, one retried once on
+500, plus the Rommel control refetch — the Thurloe vol.1 control's 500-then-retry counted in the 212) = 290
+total, well within the ~400 cap, one at a time, >=1.5s apart, no other host touched. No subagents, no logins,
+no github.com requests beyond the two shallow clones (grepped for W1, not committed).
+
+**Files:** `sources/ia-fulltext/editions3.tsv` (212 identifiers), `runs3.tsv` (all raw clusters: the two
+controls plus the 212 new identifiers, reproducible by re-running
+`python3 tools/ia_numeral_runs.py collectionofstat01thur correspondancein00henr $(tail -n +2 sources/ia-fulltext/editions3.tsv | cut -f1) --cache sources/ia-fulltext --tsv sources/ia-fulltext/runs3.tsv`
+against freshly-fetched `_djvu.txt` files, gitignored), `editions3_passages.tsv` (the 27 merged candidate
+passages with interlinear-test scores) and `editions3_dropped_examples.tsv` (the 6 pre-filter drops used in the
+spot-check), both committed for reproducibility.
