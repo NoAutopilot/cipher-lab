@@ -4,7 +4,7 @@ CrossRef, from one phrases file and one sources list, with a log of what could n
 
   python3 tools/print_check.py ciphers/<target> [--phrases phrases.txt] [--sources sources.tsv] [--source KIND:VALUE]
                                [--only ia,ia-global,htrc,gbooks,openalex,crossref] [--offline] [--cache DIR]
-                               [--no-early-modern] [--max-requests 200]
+                               [--no-early-modern] [--max-requests 200] [--delay 1.5]
 
   phrases.txt  one distinctive decoded phrase per line ('#' comments). Four to eight words that a printed edition would
                carry verbatim work best; spelling as decoded (u/v, i/j and long s are folded, accents ignored).
@@ -63,8 +63,8 @@ def dehyphen(text):
 class Net:
     """One request at a time, >= 1.5 s apart per host, blocked hosts skipped, counts kept."""
 
-    def __init__(self, offline, max_requests):
-        self.offline, self.max = offline, max_requests
+    def __init__(self, offline, max_requests, delay=1.5):
+        self.offline, self.max, self.delay = offline, max_requests, delay
         self.last, self.count, self.status = {}, collections.Counter(), {}
 
     def get(self, url, ua=UA, raw=False, shown=None):
@@ -75,7 +75,7 @@ class Net:
             return None, self.status[host]
         if sum(self.count.values()) >= self.max:
             return None, 'max-requests reached'
-        wait = self.last.get(host, 0) + 1.5 - time.time()
+        wait = self.last.get(host, 0) + self.delay - time.time()
         if wait > 0:
             time.sleep(wait)
         self.count[host] += 1
@@ -291,6 +291,7 @@ def main(argv=None):
     ap.add_argument('--cache', default=os.path.join(ROOT, 'sources', 'ia-fulltext', 'print-check'))
     ap.add_argument('--no-early-modern', action='store_true', help='do not fold u/v and i/j')
     ap.add_argument('--max-requests', type=int, default=200)
+    ap.add_argument('--delay', type=float, default=1.5, help='seconds between requests to one host (min 1.5)')
     ap.add_argument('--out', help='output TSV (default TARGET/print-check.tsv)')
     a = ap.parse_args(argv)
     early = not a.no_early_modern
@@ -305,7 +306,7 @@ def main(argv=None):
         ap.error('no phrases (TARGET/phrases.txt or --phrases)')
     only = set(a.only.split(',')) if a.only else None
     run = lambda k: only is None or k in only
-    net, rows = Net(a.offline, a.max_requests), []
+    net, rows = Net(a.offline, a.max_requests, max(1.5, a.delay)), []
     for kind, val in srcs:
         if kind == 'ia' and run('ia'):
             check_ia(val, phrases, net, a.cache, early, rows)

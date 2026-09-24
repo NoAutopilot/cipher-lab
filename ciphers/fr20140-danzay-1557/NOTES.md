@@ -2,6 +2,7 @@
 
 Status: found-solved (3 of 4 items); partial (1 of 4, f.35: Tomokiyo's key read, 24 Sept 2026)
 Novelty (f.35): N3 per AUDIT.md (verifier, 24 Sept 2026); use only the safe sentence there.
+Novelty (f.36r): same letter as f.35, N3 per AUDIT.md "f.36r, 24 Sept 2026" (one audit of f.36r; safe sentence there).
 
 Check-solved pass, 24 September 2026 (Sonnet, orchestrator brief for M13-M16). Editions-first + one-leaf pass.
 The formal six-source check-solved run for the f.35 remainder is done (below, same day); verdict unchanged:
@@ -308,7 +309,7 @@ same calibration already established for f.35 (recto canvas index = 2×folio−1
 (label "36r"), verso = canvas `f72` (label "36v") — confirmed by eye, no probing needed. Fetched
 (gallica.bnf.fr, descriptive User-Agent, 1.5 s apart, 4 requests: 2 previews + 2 native): a 1200px preview of
 each canvas first (confirmed by eye: leaf headed "36" top right, marginal date reading "...vingt sept jour de
-Janvier 1557" — the same 27 Jan 1557 despatch — signed "Dantzay" at the foot), then the native-resolution
+Janvier 1557" [correction, verifier, 24 Sept 2026: this is the letter's own body dateline, not a marginal note. It reads "De Coppenhagen ce vingt sept jo[ur] de Janvier 155[7]", and f.36v carries the address to the Cardinal of Lorraine and the docket "[M]r de Danzay du xxvij de Janvier 1557"] — the same 27 Jan 1557 despatch — signed "Dantzay" at the foot), then the native-resolution
 image for each (`native_f71.jpg` 4800×7062, `native_f72.jpg` 4791×7091, same dimensions class as `f69`/`f70`).
 
 **f.36 recto carries only one line of cipher.** The top line is cipher; clear French resumes immediately on
@@ -590,6 +591,8 @@ unkeyed.
 
 **Grades, lines 2-4 (42 cipher tokens; 13 clear words not graded):** H 22 (9 of them nulls), C 0, S 0, M 18,
 I 0 applied, U 2 (`ww`, `ringT`). All of f.36 (lines 1-4, 67 cipher tokens): H 37 (10 nulls), M 26, U 4.
+[Correction, verifier, 24 Sept 2026 (AUDIT.md "f.36r"): lines 2-4 have 9 nulls, 5 of them at H and 4 at M, so H 22
+(5 nulls). All of f.36: H 37 (6 nulls), M 26 (4 nulls), U 4.]
 Every H or M value comes from Tomokiyo's published key. No contemporary decipherment of this leaf is known, and
 no control was run. This is a reading from his key, not a cryptanalytic result of ours.
 
@@ -620,9 +623,11 @@ perte pour le change fust. Et en telle sorte vous serez asseuré de faire [e u r
 diligence qui sera possible ...". The joins read as grammar where the key gives words: "pour le change" across
 lines 1-2, and "par deça fust ... toutes les foys qu'il vous plairoyt" across lines 4-5. The sense fits the
 f.35v run about sending by way of the Augsburg and Lyon merchants: "with as little loss as possible on the
-exchange". That is an inference (grade I), not a reading. Three stretches (R3 twice, R4 opening) and the f.35v
+exchange". That is an inference (grade I), not a reading. [Verifier, 24 Sept 2026: Tomokiyo's table also lists candidate null words ("bien du est il? ou / par quand?"), so the clear "quand", "de" and "fust" among cipher runs may be nulls, not text.] Three stretches (R3 twice, R4 opening) and the f.35v
 `xk` bridge stay unread, and they are not repaired. No phrase or print search was run (verifier's work), and
 no novelty is claimed.
 
 Suggestions (not done): check key.tsv cell by cell against Tomokiyo's image (see above). Test `LRD` against t
 row 2 in "...ment par deça". Put the two plain-2 rows here into the f.35 plain-2 question.
+
+- Suggestion (verifier, 24 Sept 2026): test Tomokiyo's null-word list ("bien du est il? ou / par quand?") against the clear words set inside cipher runs on f.35 and f.36r.

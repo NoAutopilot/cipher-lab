@@ -505,3 +505,114 @@ under `images/print_check/` (3.0 MB, well under the 30 MB cap).
 
 **Recommendation (not a class change — this worker does not move the class).** Item 1 of "Still open for N4"
 can be marked done. N3 should stay N3; items 2-4 remain for a future worker.
+
+## f.36r, 24 Sept 2026
+
+LANE V verifier, 04:21-04:35 UTC, orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ. This session took no part in the
+image, pass, reconciler or solver sessions for f.35 or f.36 and did no decoding. It reuses the two f.35 audits'
+source-family logs above and does not repeat them. It searched only what f.36r adds. Claim under audit (NOTES.md "f.36
+reading" and "f.36r lines 2-4 reading"): f.36r lines 1-4 read with Tomokiyo's key: 67 cipher tokens, H 37 / M 26 /
+U 4. Line 1 reads "avecques le peu de perte pour", line 2 "le change", line 4 "par deça". f.36r is the continuation
+of the f.35 letter.
+
+### 1. Same letter or separate item? Same letter (evidence below, read by this session from native_f71/f72 and preview_f69)
+
+| test | f.35 | f.36 | supports |
+|---|---|---|---|
+| leaf order | f.35r-v | f.36r-v, next leaf in the volume (canvases f69-f72) | one despatch |
+| opening / closing | f.35r opens "Monseigneur, le Roy de Dannemarch continue..." with no closing; f.35v is cipher to the last line and has no closing | f.36r has no opening or salutation; it starts in cipher and ends with the closing formula "Monseigneur je me recommande treshumblement a vostre bonne grace...", the dateline and the signature | one letter over two leaves |
+| dateline | margin of f.35r, a later docket hand: "27. Jan. 1557" | body of f.36r, the letter's own dateline: "De Coppenhagen ce vingt sept jo[ur] de Janvier 155[7]" (the last digit is a looped form; not checked against other digits in the hand) | same date |
+| address and docket | none | f.36v: "Monseigneur / Monseigneur le Cardinal de Lorraine", with a wax seal; docket "[M]r de Danzay du xxvij de Janvier 1557" | f.36v is the outer panel of the folded despatch; addressee agrees with f.35 |
+| signature | none | "Dantzay", with "Vostre treshumble et tresobeissant serviteur" | sender agrees |
+| hand and cipher | secretary hand; the cipher of Tomokiyo's 1557 table | the same hand, and the same signs (x, T, dia, al, eps, pd, b6, xb, xinf, LRD, iii, xA, x88). The f.35 codes fit every f.36 glyph but `I`, `x8`, `ww`, `ringT`, and `I`, `x8`, `ringT` are f.35 codes too | same cipher |
+| content bridge | V29 ends "... car du [xk]" | 36R1 begins "avecques le peu de perte pour le change" | **not read**: `xk` is unkeyed, so the textual join stays M, as the reconciler graded it |
+
+The physical, diplomatic and cipher evidence is H. Only the sense across the f.35v/f.36r join is unread. That the
+"change" run continues f.35v's passage on the Augsburg and Lyon merchants is an inference (grade I). It does not
+bear on whether this is one letter. **f.36r is classified as part of the f.35 letter, not as a separate item.**
+
+Correction this adds to section 2 above: the place is not "not stated": the letter is dated at Copenhagen
+("Coppenhagen") in its own hand on f.36r. The dateline is in the body, not only in a margin.
+
+### 2. What f.36r adds, and the search of it
+
+New to this audit: one place name (Coppenhagen). No new person: "le Roy de Dannemarch" was already searched. No sum.
+Cipher-derived phrases: "avecques le peu de perte pour le change" and "par deça". Clear-hand phrases this session read
+from the image (lines 2-15): "en telle sorte vous serez asseuré de faire", "toutes les foys qu'il vous plairoyt, ou
+je feray tout le debvoyr et diligence qui sera possible, et seray tres marry si je ne puys satisfaire au commandement
+qui me sera faict", "Je vous supplye tres humblement Monseigneur qu'il vous plaise de vostre grace m'excuser si j'ay
+faict ou obmis chose en cest endroyt qui vous desplaise, car jusques a present je n'ay eu le moyen ne pouvoir de
+mieulx faire", "vous me trouverez tousjours tresfidelle et tresobeissant serviteur", and the closing and dateline.
+These are courtesy formulas. The substantive new content is the exchange-loss clause, and it is partly unread.
+
+| family | searched | result |
+|---|---|---|
+| Danzay editions and studies, French series, Scottish series, Danish/Swedish/Finnish regesta (the IA copies the f.35 audits used: Richard `undiplomatepoite00richuoft`, `ngociationslet00pari`, Michaud-Poujoulat `nouvellecollecti06michuoft`, Teulet `relationspoliti06/07teulgoog`, `frankreichseinfl01suge`, Forsten `aktyipismakisto00forsgoog`, `kancellietsbrevb02denm`, `danskemagazin02unkngoog`, `regestadiplomat04copegoog`, `manuscritsetdocu00meco`) | the 11 phrases in `phrases_f36.txt`, exact and proximity match on the djvu text (tools/print_check.py) | no hits |
+| IA full text, all items (be-api) | same 11 phrases | no hits |
+| Google Books (key, country=US) | same 11 phrases | no hits, except the stock formula "tresfidelle et tresobeissant serviteur" (Marlborough dispatches, La Bruyère, Notes and Queries), which is irrelevant |
+| CrossRef | "Danzay Danemark 1557"; "Danzay Copenhague cardinal de Lorraine" | Daussy 2004 (already read by the first audit); Cardinal of Lorraine reference entries; nothing on this letter |
+| HAL | "Danzay" | 2 hits, both Daussy 2004, already logged in the second audit |
+| OpenAlex | the phrases | **unreachable**: HTTP 429 on the first call; host stopped, not retried |
+| Semantic Scholar | "Danzay Denmark ambassador" | **unreachable**: HTTP 429; not retried |
+| Web search | Danzay "Coppenhagen" 1557 cardinal de Lorraine; "Danzay" "27 janvier 1557" / "vingt sept jour de janvier 1557" | nothing on this letter (Cuisiat reviews and general pages only) |
+| Solver repositories (shallow clones, grep for danzay, dantzay, copenhag, coppenhag, fr. 20140; deleted after) | cyphersolver, unsolved-ciphers | only Tomokiyo's other Danzay letter (fr.4736 f.87, Copenhagen 14 Oct 1574, marked solved), a different item. Nothing for 1557 |
+| Ribier, Guise/Lorraine papers (Cuisiat), CSP Foreign and Scotland 1557 | no new searchable name; the f.35 audits' negatives cover the letter as a whole; the new phrases went through the IA/Google Books full text above | not repeated |
+| JSTOR | no row added: the f.35 rows (JSTOR-QUEUE.tsv) already query the letter by sender, recipient and date, which covers f.36r | queued, not blocking |
+
+Files: `phrases_f36.txt`, `sources_f36.tsv`, `print-check-f36.tsv`, `print-check-f36-hosts.tsv`. For this run,
+tools/print_check.py gained a `--delay` option (default 1.5 s) so that the brief's 3 s spacing could be kept; its
+offline test passes.
+
+### 3. Grade check (rule 4)
+
+- Every H and M token on f.36r is keyed through a key.tsv row that cites a cell of Tomokiyo's 1557 table
+  (`sources/cryptiana/web/danzay_1557.png`). Four U tokens: `I`, `x8`, `ww`, `ringT`. No C, no S. No reading comes
+  from a contemporary decipherment, and there is no control. Per rule 4 the f.36r reading is a key application of
+  Tomokiyo's reconstruction, not a cryptanalytic result of ours.
+- **`h9` checked against his drawing.** In column h, row 1, the image has a 9/g-shape with a tail that curls back
+  to the left. The key.tsv entry describes it correctly and cites the cell. The f.36r glyph (36R2 pos 4, checked by
+  this session at 3x) is a 9-shape whose stem flicks left at the foot. It is nearer to h row 1 than to d row 1 (a 9
+  with a straight stem). The context "c[h]ange" fits. Grade M is right.
+- `decode.py --check` exits 0 (run this session).
+- **Count corrected.** Lines 2-4 are H 22 / M 18 / U 2, and 9 of the 40 H+M tokens are nulls: 5 at H (iii x2, xA
+  x2, x88) and 4 at M (loop x2, xN, xA at R4 pos 14). The reconciler's "H 22 (9 null)" and "H 37 (10 nulls)" put
+  the M nulls under H. Correct: all of f.36r H 37 (6 nulls) / M 26 (4 nulls) / U 4. Fixed in NOTES.md.
+- **Caveat on the clear words, not an error.** Tomokiyo's table lists candidate null *words* ("bien du est il? ou
+  / par quand?"), and his page says plaintext words can serve as nulls in these letters. So "quand" (36R3), "de" and
+  the two "fust" set among cipher runs may be nulls. The reconciler's joined sentence ("... pour le change fust. Et
+  en telle sorte ...") treats them as text. That sentence is already marked as inference, and it stays that way.
+
+### 4. Classification
+
+| item | prior plaintext | prior decipherment | level |
+|---|---|---|---|
+| fr.20140 f.36r, lines 1-4 (cipher) and the clear close, as the end of the f.35 letter (Danzay to the Cardinal of Lorraine, Copenhagen, 27 Jan 1557) | not located | none: the leaf carries none, and Tomokiyo lists f.35 as "not deciphered" | **N3**, one audit of f.36r, resting on the two f.35 audits for the letter as a whole |
+
+Not N4, for the gaps still open on f.35: Daussy 2001, JSTOR, and OpenAlex and Semantic Scholar, which rate-limited
+again today. Delavaud 1911 is now read on Gallica page images and gives a clean negative (the section "Print check
+through Gallica page images" above). His note cites fr.20140 fos 16-56, which covers f.36, as "dépêches inédites", and
+he quotes no 1557 letter. Evidence quality: good for IA and Google Books phrase search, weak for
+scholarship indexes. Confidence that no printed decipherment of f.36r exists: high, because none exists for f.35 and
+the cipher on f.36r is the same letter's.
+
+**Safe sentence:** "The letter continues on f.36r (dated Copenhagen, 27 Jan 1557, signed Dantzay, addressed on f.36v
+to the Cardinal of Lorraine). Its four cipher lines, read with Tomokiyo's key, give 37 of 67 tokens at grade H (6 of
+them nulls). 'avecques le peu de perte pour le change' and 'par deça' are readable, and three stretches and the
+join with f.35v are not. No printed decipherment or plaintext of the leaf was located (search log in AUDIT.md)."
+
+**Unsafe sentence:** "f.36 completes the decipherment of the letter." Three stretches of f.36r and the f.35v/f.36r
+bridge (`xk`) are unread, and about 14 f.35 lines are not continuous French. "First" or "previously unread"
+wording is still barred (N3).
+
+### 5. Postmortem
+
+No novelty over-claim found in NOTES.md, reading_f36.txt, ciphertext_f36.tsv or status.json. Three factual slips
+were corrected in NOTES.md. (a) The "f.36 images" section called the date "marginal". It is the body dateline, and
+it names Copenhagen. (b) The null counts put 4 M nulls under H. (c) A clear-word null caveat was added to the
+joined sentence. status.json's Danzay results row now names f.36 at the same class.
+
+Requests: archive.org 11 (djvu), be-api.us.archive.org 11, www.googleapis.com 11 (key and country=US, key never
+printed), api.crossref.org 2, api.openalex.org 1 (429, stopped), api.archives-ouvertes.fr 1,
+api.semanticscholar.org 1 (429, stopped), WebSearch 2, github.com 4 anonymous shallow clones (2 repositories,
+cloned twice because the first grep was too broad). All archive.org and googleapis calls were at least 3 s apart.
+No Gallica, no logins, no subagents.

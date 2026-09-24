@@ -943,9 +943,9 @@
   {
    "date": "24 Sept 2026",
    "kind": "solve",
-   "title": "Danzay to the Cardinal of Lorraine, dated 27 Jan 1557 (BnF fr. 20140 f.35)",
+   "title": "Danzay to the Cardinal of Lorraine, dated 27 Jan 1557 (BnF fr. 20140 f.35-36)",
    "grade": "N3, two audits; N4 pending",
-   "line": "Read with the key Tomokiyo published: 509 of 638 cipher tokens at grade H, about 23 of 37 lines continuous French, 70 signs unkeyed; no contemporary decipherment. No prior decipherment or printed plaintext located in the Danzay editions, the Scottish and English state-paper series or the Danish regesta (AUDIT.md, two audits, 24 Sept 2026). Partial; the letter continues on f.36. A blind second reader agreed on 86.8 percent of signs; 11 of its 12 proposed changes were accepted on the image and applied.",
+   "line": "Read with the key Tomokiyo published: 509 of 638 cipher tokens at grade H, about 23 of 37 lines continuous French, 70 signs unkeyed; no contemporary decipherment. No prior decipherment or printed plaintext located in the Danzay editions, the Scottish and English state-paper series or the Danish regesta (AUDIT.md, two audits, 24 Sept 2026). Partial. The letter ends on f.36r (Copenhagen, signed Dantzay), same class N3 (AUDIT.md 'f.36r'): 37 of 67 cipher tokens at grade H, 'avecques le peu de perte pour le change' and 'par deça' read; three stretches and the f.35v/f.36r join unread. A blind second reader agreed on 86.8 percent of signs; 11 of its 12 proposed changes were accepted on the image and applied.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr20140-danzay-1557"
   },
   {

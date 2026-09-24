@@ -1,0 +1,6 @@
+host	requests	status
+api.crossref.org	2	ok
+api.openalex.org	1	blocked: HTTP 429 on https://api.openalex.org/works?per-page=5&search=%22avecques%20le%20peu%20de%20perte%20pour%20le%20change%22
+archive.org	11	ok
+be-api.us.archive.org	11	ok
+www.googleapis.com	11	ok
