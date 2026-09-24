@@ -823,6 +823,109 @@ Files this pass: `P2/tokens.tsv`, `P3/tokens.tsv`, `P8/tokens.tsv`, `P8_pairs.ts
 other row untouched. Requests: archive.org 0 (djvu text restored from the committed
 `sources/ia-fulltext/thurloe-gz/` cache, per this brief); no other host; no subagents; no logins.
 
+## 14. Print check, undeciphered rows (LANE T worker E, 24 Sept 2026)
+
+Brief: for P2, P3, P4, P5+P6, P7, P8, run the class gate's print check (CSPD Interregnum, Clarke
+Papers/Firth, writer-specific printed correspondence, Tomokiyo's local mirror, both solver
+repositories, an archive.org phrase search) and say whether a decipherment or plaintext of the
+numeral passages is already in print. Full per-row queries, hosts and results in
+`printcheck.tsv`. No decoding, no novelty class -- rule 10 applies throughout. This pass worked
+independently and in parallel with LANE T workers C (P4/P5/P6/P7 attribution) and D (P2/P3/P8,
+section 13 above, pushed first); where section 13 already covers a row in more depth than a print
+check needs, this section cross-references it rather than re-deriving it.
+
+**P2, P3, P8: see section 13.** Independently confirmed by this pass's own read of the djvu text
+before section 13 was seen: P2 is Stouppe-to-the-prince-of-Tarante with an inline "Deciphered
+thus:" translation; P3's committed window is the tail postscript of the John Butler letter, with
+no adjacent decipherment (matching section 13's finding that the postscript "has no obvious
+adjacent decipherment line", distinct from the main body); P8 is General Blake to the Protector
+with the decipherment interlined throughout, page 541. **Beyond section 13**, this pass's own
+host list (archive.org/be-api, both solver repositories) adds: CSPD Domestic, Commonwealth 1654
+(archive.org `sim_great-britain-public-record-papers-domestic-commonwealth_1654`, be-api
+full-text) has one "Stamford" hit (no usable page locator) and zero "Stouppe" hits -- a calendar's
+abstracts would not carry a decipherment even if the entry were pinned down, so not pursued
+further; freshly shallow-cloned and grepped (deleted after), neither dbourdeau/cyphersolver nor
+aaymeloglu/unsolved-ciphers catalogues P2, P3 or P8 -- Bourdeau's own `thurloe/` folder is four
+unrelated Thurloe items (vol. 1 and vol. 5), and Aymeloglu's is `vande-perre-1653` (also vol. 1,
+unrelated).
+
+**P4, P5+P6, P7: one correspondent, William Stamford, misattributed in `index.tsv` to Prideaux,
+Creed and a second Bradshaw letter.** All three windows in fact belong to a short run of
+anonymous "letter of intelligence" pieces in vol. 3, MS Vol. xxiv pp.76/319/324/340 (ten to
+sixty-four pages apart in the same manuscript volume, printed pp.188 and 273-279), each opening
+"Sir," to an unnamed "your friend" and closing with a demand for protection/payment in exchange
+for intelligence or for surrendering as the Protector's prisoner:
+
+- **P4** (`index.tsv` said Mr. W. Prideaux): the real Prideaux letter (djvu 15424-15464, entirely
+  clear text, "Will. Prideaux.") ends before P4's window starts. The cipher instead belongs to
+  **"A letter of W.S. from Calais,"** MS Vol. xxiv p.76, printed p.188 (running head "i88 STATE
+  PAPERS OF" at djvu 15476, OCR i/1). Tomokiyo's page (`sources/cryptiana/web/thurloe.htm`,
+  anchor `#Stamford`, "William Stamford (1655)") quotes this window verbatim: "if this
+  correfpondence continue betweene us, I fhould defire you to fende me another cipher, this which
+  you have fent mee already being very imperfect" (djvu 15513-15516) -- confirming the sender is
+  **William Stamford**, in Calais, offering in spring 1655 (i.e. March 1654/5 Old Style, the
+  legal year beginning 25 March) to expose a royalist plot; his cipher (E=12/25, key image
+  `stamford.jpg`) is reconstructed by Tomokiyo from his letters generally. **No "Decyphered thus"
+  or "The fame letter decypherd" heading found in this window** (djvu 15420-15580, checked by
+  reading and by a whole-volume grep for "decypher" against `collectionofstat03thur_djvu.txt" --
+  see P5-7 below for where those headings do occur in this same run of letters). No decipherment
+  located in the primary print for P4's own tokens.
+- **P5+P6** (`index.tsv` said Major Creed, one letter): the cipher is an anonymous "A letter of
+  intelligence" (opens "THIS is the 5th letter I have written to you..."), MS Vol. xxiv pp.319/324,
+  printed pp.273-276 (running heads "274" djvu 22870, "275" djvu 23013, "27[6]" djvu 23096-23099).
+  **Signed "W. Stamford," Calais, "March 30, [1654. N.S.]"** (djvu 23051-23054) -- the full name,
+  resolving P4's initials. Immediately after the cipher and a short postscript, Birch heads a
+  paragraph **"The fame letter decypherd."** (djvu 23065) and gives the complete English plaintext:
+  an offer to come and surrender himself as the Lord Protector's prisoner in exchange for being
+  trusted as an intelligence source, since he can no longer serve usefully at a distance.
+  **Decipherment is printed, in the primary source itself, and covers both P5's and P6's windows.**
+- **P7** (`index.tsv` said Mr. Bradshaw, resident at Hamburgh, "2nd letter"): the real second
+  Bradshaw letter (djvu 23181-23223, entirely clear text, "Rich. Bradshaw," 20 March 1654) has no
+  cipher at all. The cipher instead belongs to a separate anonymous "A letter of intelligence,"
+  MS Vol. xxiv p.340, printed pp.277-279 (running heads "8 STATE PAPERS OF" [278] djvu 23249,
+  "JOHN THURLOE ESQ. &c. 279" djvu 23326), dated by Birch's placement "[March 20, 1654]", about
+  hiring troops and raising money, mentioning "cardinal Mazarin" and using the code letter "O" for
+  the same contact P4 also references. Signed **"S."** (djvu 23335) -- ten days before, and 21-64
+  manuscript pages away from, P5+P6's full "W. Stamford" signature, with the identical closing
+  device ("Pray sir be pleafed to decypher this letter yourfelfe," djvu 23347, followed by the
+  heading **"The fame letter decypher'd."**, djvu 23349). This pass did not re-transcribe the
+  plaintext that follows or independently verify the "S." expands to Stamford (no full signature
+  visible in this window), but the matching code-letter, closing formula, heading wording, and
+  adjacent manuscript pagination make a single correspondent very likely. **Decipherment is
+  printed, in the primary source itself.**
+
+Tomokiyo's page does not connect Stamford to P7's or P5+P6's specific letters (his `#Stamford`
+section cites the spring-1655 royalist-plot offer generally, matching the "plott" language in P4
+and P7, without page citations); the connection made here (P4=P5+P6=P7=one correspondent) rests
+on this pass's own reading of the djvu text, not on a source that has already stated it, and is
+reported as an observation, not a claim of external corroboration.
+
+**Verdict for section 4/5's status table (not edited here, per this brief's scope):** P5, P6, P7
+have the same basis for moving toward "found-solved" as P2, P8, P11-13 and P19/21-23 above (a
+contemporary decipherment printed by Birch himself) -- pending a verifier's N-class per rule 10
+and AUDIT.md, which this brief does not authorise. P4 stays "partial": no plaintext located in
+the primary print for this window, but Tomokiyo's reconstructed Stamford key exists and a sibling
+letter's cipher is now known to be fully deciphered in print, so a solver applying
+`key` values by crib from P5+P6/P7's printed plaintext (not attempted here) is a live option
+named as a suggestion, not a result.
+
+**Proposed `index.tsv` corrections for P4/P5/P6/P7 (LANE T applies; not edited here -- worker C's
+own attribution pass on these same four rows may supersede or refine this):**
+
+```tsv
+row	sender	recipient	date	printed_page	cipher_system	keyed	note
+P4	William Stamford	unnamed ("your friend"/Thurloe)	not dated in this window (sibling letters: March 1654/5 O.S.)	188	Stamford nomenclator, Tomokiyo E=12/25, key image stamford.jpg	partial	MS Vol. xxiv p.76; no decipherment in the primary print for this window
+P5	William Stamford	unnamed ("Sir")	30 March [1654 N.S.]	273-276	none -- print gives "The fame letter decypherd." plaintext directly	found-solved (N0-candidate, verifier's call)	MS Vol. xxiv pp.319/324; same letter as P6
+P6	William Stamford	unnamed ("Sir")	30 March [1654 N.S.]	273-276	none -- print gives "The fame letter decypherd." plaintext directly	found-solved (N0-candidate, verifier's call)	MS Vol. xxiv pp.319/324; same letter as P5
+P7	"S." (probably William Stamford)	unnamed ("your friend"/Thurloe)	[March 20, 1654] (Birch's placement)	277-279	none -- print gives "The fame letter decypher'd." plaintext directly	found-solved (N0-candidate, verifier's call)	MS Vol. xxiv p.340
+```
+
+**Requests this pass:** archive.org 2 (advancedsearch.php metadata query for CSPD volumes; one
+be-api fts reachability probe before use), be-api.us.archive.org 2 (fts queries "Stamford" and
+"Stouppe" against `sim_great-britain-public-record-papers-domestic-commonwealth_1654`), all
+>=1.5s apart, descriptive User-Agent. github.com 2 (one shallow `--depth 1` clone each of
+dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers, grepped for these rows' names, deleted
+after, not committed). No other host, no logins, no credentials, no subagents, no cryptanalysis.
 ## 15. Solver benchmark on Fauconberg (LANE T worker F, 24 Sept 2026)
 
 **Answer.** On the real Fauconberg groups, both solvers read at least 80 percent of tokens on all three
