@@ -1,0 +1,4 @@
+n	target(occ,types)	shuffle mean occ (20)	control n0 mean occ (10)	control n0.10 mean occ (10)
+3	165,72	77.0 (sd 10.2)	103.9 (min 70)	69.9 (min 49)
+4	39,19	6.7 (sd 3.4)	26.9 (min 12)	12.9 (min 4)
+5	16,8	0.5 (sd 0.9)	8.7 (min 0)	2.6 (min 0)
