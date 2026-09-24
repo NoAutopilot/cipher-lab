@@ -1,4 +1,4 @@
-status: ready
+status: done 24 Sept 2026 (cipher-lab-private created and attached; grants/ and mail/ pushed at 16:07 UTC)
 subject: Create one private repository for grants and correspondence (one click), then tell me
 to: github.com/new (your account; no email)
 
