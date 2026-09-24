@@ -1,0 +1,189 @@
+leaf	line	pos	token	conf	note
+f253L	L02	1	Milord	H	clear, caption above row
+f253L	L02	2	Myddleton	H	clear, caption above row
+f253L	L02	3	et	H	clear, caption above row
+f253L	L02	4	Jay	H	clear, caption above row
+f253L	L02	5	eu	H	clear, caption above row
+f253L	L02	6	vne	H	clear, caption above row
+f253L	L02	7	j'ay	M	clear, main row, first letter ambiguous J/L
+f253L	L02	8	ueu	M	clear, main row, spelling of "veu/vu"
+f253L	L02	9	ce	H	clear
+f253L	L02	10	matin	H	clear
+f253L	L02	11	722	H	cipher
+f253L	L02	12	148	M	cipher, digit ambiguous 143/148
+f253L	L02	13	185	H	cipher
+f253L	L02	14	38	H	cipher
+f253L	L02	15	151	H	cipher
+f253L	L02	16	34	H	cipher
+f253L	L02	17	224	H	cipher
+f253L	L02	18	longue	H	clear, caption above row
+f253L	L02	19	conference	H	clear, caption above row
+f253L	L02	20	avec	H	clear, caption above row
+f253L	L02	21	luy	H	clear, caption above row
+f253L	L02	22	198	H	cipher
+f253L	L02	23	17	H	cipher
+f253L	L02	24	168	H	cipher
+f253L	L02	25	18	H	cipher
+f253L	L02	26	119	H	cipher
+f253L	L02	27	50	H	cipher
+f253L	L02	28	301	H	cipher
+f253L	L02	29	28	H	cipher
+f253L	L02	30	277	H	cipher
+f253L	L02	31	290	H	cipher
+f253L	L02	32	238	H	cipher
+f253L	L02	33	10	H	cipher
+f253L	L02	34	301	H	cipher
+f253L	L02	35	14	H	cipher
+f253L	L02	36	200	H	cipher
+f253L	L03	1	plus	H	clear, caption above row
+f253L	L03	2	empressé	M	clear, caption, letters uncertain
+f253L	L03	3	que	H	clear, caption
+f253L	L03	4	de	H	clear, caption
+f253L	L03	5	coutume	M	clear, caption, ambiguous ligature reads couphume/coutume
+f253L	L03	6	il	H	clear, main row
+f253L	L03	7	m'a	H	clear, main row
+f253L	L03	8	paru	H	clear, main row
+f253L	L03	9	beaucoup	H	clear, main row
+f253L	L03	10	249	H	cipher
+f253L	L03	11	18	H	cipher
+f253L	L03	12	15	M	cipher, ambiguous digit
+f253L	L03	13	24	H	cipher
+f253L	L03	14	267	H	cipher
+f253L	L03	15	30	H	cipher
+f253L	L03	16	278	H	cipher
+f253L	L03	17	259	H	cipher
+f253L	L03	18	pour	H	clear, caption below main row
+f253L	L03	19	l'entreprise	H	clear, caption
+f253L	L03	20	133	H	cipher
+f253L	L03	21	119	H	cipher
+f253L	L03	22	36	M	cipher, ambiguous 36/39
+f253L	L03	23	292	H	cipher
+f253L	L03	24	206	H	cipher
+f253L	L03	25	261	H	cipher
+f253L	L03	26	13	H	cipher
+f253L	L03	27	146	H	cipher
+f253L	L03	28	26	H	cipher
+f253L	L03	29	268	H	cipher
+f253L	L03	30	278	H	cipher
+f253L	L03	31	il	H	clear, start of next clause at bottom edge of crop
+f253L	L04	1	dit	H	clear
+f253L	L04	2	seulement	H	clear
+f253L	L04	3	qu'il	H	clear
+f253L	L04	4	croyoit	H	clear
+f253L	L04	5	et	H	clear
+f253L	L04	6	ie	H	clear, old spelling of "je"
+f253L	L04	7	trouve	H	clear
+f253L	L04	8	que	H	clear
+f253L	L04	9	c'est	H	clear
+f253L	L04	10	avec	H	clear
+f253L	L04	11	L'affaire	M	clear, smaller script below main row
+f253L	L04	12	est	M	clear, smaller script
+f253L	L04	13	a	M	clear, smaller script
+f253L	L04	14	present	M	clear, smaller script, underlined
+f253L	L05	1	affel	M	clear, reading uncertain
+f253L	L05	2	de	H	clear
+f253L	L05	3	raison	H	clear
+f253L	L05	4	que	H	clear
+f253L	L05	5	195	H	cipher
+f253L	L05	6	20	H	cipher
+f253L	L05	7	161	H	cipher
+f253L	L05	8	142	H	cipher
+f253L	L05	9	10	H	cipher
+f253L	L05	10	24	H	cipher
+f253L	L05	11	267	H	cipher
+f253L	L05	12	277	M	cipher, digit partly cut at crop edge in s1, confirmed in s2
+f253L	L05	13	presque	H	clear, caption above row
+f253L	L05	14	impraticable	H	clear, caption
+f253L	L05	15	sur	H	clear, caption
+f253L	L05	16	la	H	clear, caption
+f253L	L05	17	Coste	H	clear, caption, proper name
+f253L	L05	18	de	H	clear, caption
+f253L	L05	19	Kent	H	clear, caption, proper name
+f253L	L05	20	50	H	cipher
+f253L	L05	21	32	H	cipher
+f253L	L05	22	25	H	cipher
+f253L	L05	23	267	H	cipher
+f253L	L05	24	30	H	cipher
+f253L	L05	25	259	H	cipher
+f253L	L05	26	11	H	cipher
+f253L	L05	27	48	H	cipher
+f253L	L05	28	24	H	cipher
+f253L	L05	29	266	H	cipher
+f253L	L05	30	290	H	cipher
+f253L	L05	31	116	H	cipher
+f253L	L05	32	12	H	cipher
+f253L	L05	33	196	H	cipher
+f253L	L05	34	281	M	cipher, at bottom edge, partly cut
+f253L	L05	35	29	M	cipher, at bottom edge, partly cut
+f253L	L06	1	forces	H	clear, caption above row
+f253L	L06	2	qu'elle	H	clear, caption above row
+f253L	L06	3	195	H	cipher
+f253L	L06	4	119	H	cipher
+f253L	L06	5	30	H	cipher
+f253L	L06	6	289	H	cipher
+f253L	L06	7	133	H	cipher
+f253L	L06	8	42	H	cipher
+f253L	L06	9	18	H	cipher
+f253L	L06	10	50	H	cipher
+f253L	L06	11	32	H	cipher
+f253L	L06	12	a	H	clear
+f253L	L06	13	cause	H	clear
+f253L	L06	14	des	H	clear
+f253L	L06	15	155	H	cipher
+f253L	L06	16	29	H	cipher
+f253L	L06	17	117	H	cipher
+f253L	L06	18	30	H	cipher
+f253L	L06	19	Prince	H	clear, caption below row, proper name
+f253L	L06	20	d'Orange	H	clear, caption, proper name
+f253L	L06	21	269	M	cipher, bottom edge, low confidence
+f253L	L06	22	726	M	cipher, bottom edge, low confidence
+f253L	L06	23	a	M	clear, bottom edge
+f253L	L06	24	mises	L	clear, bottom edge, uncertain
+f253L	L06	25	de	M	clear, bottom edge
+f253L	L06	26	ce	M	clear, bottom edge
+f253L	L06	27	coste	M	clear, bottom edge
+f253L	L06	28	la	M	clear, bottom edge
+f253L	L06	29	et	M	clear, bottom edge
+f253L	L06	30	qu'il	M	clear, bottom edge
+f253L	L06	31	seroit	L	clear, bottom edge, uncertain
+f253L	L06	32	à	L	clear, bottom edge, uncertain
+f253L	L07	1	sentoit	L	clear, caption above row, uncertain reading of first word
+f253L	L07	2	le	H	clear, caption
+f253L	L07	3	desbarquement	H	clear, caption
+f253L	L07	4	dans	H	clear, caption
+f253L	L07	5	les	H	clear, caption
+f253L	L07	6	present	H	clear, main row
+f253L	L07	7	necessaire	H	clear, main row
+f253L	L07	8	de	H	clear, main row
+f253L	L07	9	289	H	cipher
+f253L	L07	10	17	H	cipher
+f253L	L07	11	289	H	cipher
+f253L	L07	12	28	H	cipher
+f253L	L07	13	196	H	cipher
+f253L	L07	14	133	H	cipher
+f253L	L07	15	107	H	cipher
+f253L	L07	16	28	H	cipher
+f253L	L07	17	259	H	cipher
+f253L	L08	1	nouvelles	L	clear, caption above row, uncertain reading
+f253L	L08	2	d'York	M	clear, caption, proper name
+f253L	L08	3	s'entend	L	clear, caption, uncertain reading
+f253L	L08	4	puisque	L	clear, caption, uncertain reading
+f253L	L08	5	tous	M	clear, caption
+f253L	L08	6	211	H	cipher
+f253L	L08	7	137	H	cipher
+f253L	L08	8	195	H	cipher
+f253L	L08	9	25	H	cipher
+f253L	L08	10	269	H	cipher
+f253L	L08	11	302	H	cipher
+f253L	L08	12	17	H	cipher
+f253L	L08	13	117	H	cipher
+f253L	L08	14	16	H	cipher
+f253L	L08	15	38	H	cipher
+f253L	L08	16	52	H	cipher
+f253L	L08	17	29	H	cipher
+f253L	L08	18	42	H	cipher
+f253L	L08	19	237	H	cipher
+f253L	L08	20	282	H	cipher
+f253L	L08	21	les	H	clear, caption below row
+f253L	L08	22	haras	H	clear, caption
+f253L	L08	23	d'Angleterre	H	clear, caption
