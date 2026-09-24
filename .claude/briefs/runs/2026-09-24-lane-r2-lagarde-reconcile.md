@@ -1,0 +1,5 @@
+ROLE: RECONCILER + SOLVER RERUN, La Garde 1577 (LANE R2 worker L4). Model Sonnet, cap $4. No subagents. No network.
+Target: ciphers/la-garde-1577. Read NOTES 'L1', 'L2', 'L3 progress'. On disk: ciphertext_6179_passA.tsv, ciphertext_6467_passA.tsv (L3 pass A, with overline/loop marks), ciphertext_6179_passB.tsv (6179 only), L1's files reformatted (ciphertext_6179_L1.tsv, ciphertext_6467_L1.tsv).
+1. tools/reconcile_passes.py over the three witnesses for 6179 (passA, passB, L1) and two for 6467 (passA, L1); majority where two of three agree; settle on the image (PIL crop) ONLY rows where no two agree, at most 40 rows. ciphertext_6179_v2.tsv, ciphertext_6467_v2.tsv; commit+push.
+2. Rerun solve_l2.py unchanged on v2 in two modes: overlined numbers as the same sign, and as distinct signs; rerun its controls. Report target and control numbers for each mode (rule 3).
+3. NOTES 'L4: reconciled transcription and rerun'. ROOM done line with the numbers (and `for LANE V2: reading ready` only if the target reads). Stop at the cap. Do not classify novelty.
