@@ -98,3 +98,70 @@ located — no CSP series covers 1720s Anglo-Spanish intelligence traffic at thi
 of this Blathwayt-addenda run was found); community list comment threads (Cryptiana local + live search);
 DECODE (cache only, login broken); both solver repositories (shallow clone, grep, both by collection name and
 by the correspondent names read from the finding aid).
+
+## Image capture and inventory, 24 September 2026 (LANE R worker R1)
+
+**Access route.** Huntington CONTENTdm dmwebservices API, confirmed working parameter order (the earlier
+"CISOSEARCHALL^TERM^all^and, suppressfulltextsearch=1" note in CLAUDE.md's Access playbook undercounts the path
+segments): `dmQuery/ALIAS/SEARCHSTRING/FIELDS/SORT/MAXRECS/START/0/0/0/json` — i.e. the three positions before
+`json` are `0/0/0` (suppress/docptr/suppressfields), not `.../1/0/json`. With that, `CISOSEARCHALL^cipher^all^and`
+on `p15150coll7` reproduces the scout's 31 hits exactly. Exact item lookup: field `callid` (Call Number, dc
+`identi`) holds the shelfmark verbatim as catalogued, e.g. `callid^mssBLA 186^all^and` — the `mss` prefix and the
+exact spacing/parenthesis matter (`callid^BLA 186^all^and` with no prefix returns 0; `callid^BLA^begins^and`
+silently reproduces the "naive form" bug, a fixed alphabetical listing regardless of term — confirms that
+diagnosed bug is in the search *type* "begins", not fixed by the `0/0/0` correction). `dmGetItemInfo/ALIAS/POINTER/json`
+on each item's own compound-object (`cpd`) pointer gives the full catalogue `notes` field verbatim, richer than
+the OAC finding aid snippet already in this file (box numbers, `placre`, full endorsement text) — all ten BLA
+records confirm the finding aid table above verbatim, no discrepancies. Page images: IIIF
+`https://hdl.huntington.org/iiif/2/p15150coll7:POINTER/full/1200,/0/default.jpg` (native res up to 8708x11608
+available at `full/max/...`; 1200px width used to stay under the 30 MB folder cap — ~200 KB/page, 74 pages,
+~15 MB total). No login wall, confirmed on every page fetched.
+
+**Fetched:** all pages of BLA 179, 184, 185, 186, 187, 188, 189, 190, 191, 194 (74 images total, including
+cover/note/blank pages) to `images/`, with `images/manifest.json` (item, page, pointer, url, file, bytes, sha1,
+date, catalogue_note verbatim) and `images/inventory.tsv` (item, page, content description, cipher type, approx
+token count, notes) built from direct examination of every page.
+
+**Major finding: this run is far more "recovery" than the scout's or the check-solved sweep's rows say, and the
+key is not merely "somewhere in the collection" — it is written on the same page as most of the cipher, or on
+a directly adjoining enclosure sheet, in most of these ten items.** Per-item, from direct examination (full
+detail in `images/inventory.tsv`):
+
+| Item | Cipher location | Decipherment on the page? | Approx. tokens |
+|---|---|---|---|
+| BLA 179 | p6, 4 lines inline in an otherwise clear letter | **Yes**, interlinear, same page | ~32 |
+| BLA 184 | p1, 7 numeric code-words embedded in clear prose (a small nomenclator, not a running cipher) | No | 7 |
+| BLA 185 | p5, a separate cipher sheet, ~11 lines | **Yes**, interlinear, same sheet | ~90 |
+| BLA 186 | p1 (1 line) + p3 (1 line), inline in an otherwise clear letter | No | 24 |
+| BLA 187 | p3, the enclosed cipher sheet | **Yes, but with visible gaps** (a genuine partial contemporary decipherment, some letters left as dashes) | ~85 |
+| BLA 188 | p2(partial)-p5(top), the largest cipher table in the run | **Yes, partial** (same dash-gap style as 187) | ~400 |
+| BLA 189 | p3, the enclosed cipher sheet | **Yes — and it is the letter's OWN plaintext**: p1-p2's clear French marks the same passages off in [square brackets], and p3 gives each bracketed cipher group followed by that exact bracketed clear phrase. This is a genuine known-plaintext/ciphertext pair, not merely a decipherer's rendering. | ~85 |
+| BLA 190 | p5-p6 (2 pages), same bracket/known-plaintext pattern as 189; PLUS a third, separate cipher+decipherment passage on p7 (see anomaly below) | **Yes** (p5-p6, known-plaintext); p7 also carries its own interlinear decipherment | ~180 (p5-p6) + ~110 (p7) |
+| BLA 191 | p5, enclosure (a), 12 lines | **No** — pure numeric cipher, no decipherment anywhere on the leaf. This is the one item in the run confirmed genuinely undeciphered in the archive. | ~130 |
+| BLA 194 | p1-p2, the whole item | **Yes**, interlinear, same pages | ~93 |
+
+Total: ~1046 cipher tokens across the run, of which only BLA 184 (7 tokens, a handful of code-words) and BLA 191
+(~130 tokens) lack any decipherment on the page. Six of the ten items carry not just "a key exists in this
+collection" (the finding-aid-level claim already in this file) but the actual reading, in the same hand, on the
+same leaf or its immediate enclosure. BLA 189 and BLA 190 (p5-p6) go a step further: the "decipherment" is
+demonstrably the letter's own drafted plaintext (bracketed in the clear copy), not a third party's rendering —
+about as close to grade C (known plaintext) as this kind of material gets without an independent source.
+
+**Anomaly, not yet resolved:** BLA 190 p7 is a fourth cipher+decipherment page in that item's image set, textually
+self-contained (its own opening and a closing "Fait ... Mille sept cent vingt neuf" reading as "3 November 1729"),
+which is *later* than the item's own catalogued date (4 Aug 1729) and not part of the catalogue's stated "2 pages
+in cipher" (that is p5-p6). It may be a misfiled leaf from a different, later letter in the same mssBLA run bound
+into this compound object by the library, or a draft/copy kept with this letter. Flagged for the next worker
+before treating its decipherment as this item's own.
+
+**Passes.** Per brief, two blind Sonnet subagents were set to transcribe every cipher passage in U2 (numeric
+tokens only, from the 17 cipher-bearing page images, ignoring any interlinear French) to `passA.tsv`/`passB.tsv`,
+plus a third single (non-blind) pass to transcribe the contemporary French decipherment itself into
+`decipherment_<item>.txt` files, one line per cipher line, as written (gaps kept as the clerk left them). Run
+`tools/reconcile_passes.py passA.tsv passB.tsv` (wide format) to get `disagreements.tsv` before any reading is
+attempted — disagreements are for a reconciler to settle from the image, not settled here. No decoding, no key,
+no novelty wording in this pass.
+
+**Not done this pass:** mssBLA 184's 7 code-numbers and 186's 2 inline lines were not attacked (no decipherment
+sibling on the page for either); BLA 191's ~130-token undeciphered enclosure likewise untouched cryptanalytically
+— all left for a solver session with a matched control (rule 3), after the passes above land.

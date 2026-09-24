@@ -14,6 +14,16 @@ Two siblings in the same small collection are catalogued as already deciphered i
 (26 Feb 1781, "decoded by Destouches") and mssDE 55 (3 Mar 1781, "translated in another hand") — a possible
 in-collection key (LESSONS.md's "the key was in the archive beside the letter" pattern), not confirmed this pass.
 
+**Date correction, 24 Sept 2026 (LANE R worker R1, from `dmGetItemInfo` on both items' own compound-object
+pointers, not the search-endpoint snippet the scout read):** the two dates above are swapped. mssDE 68 (4pp) is
+dated "1781 January 31" ("A Philadelphie, le 16 Janvier 1781" is mssDE 108(A)'s own dateline, not 68's — see
+below); mssDE 108(A) (8pp) is dated "1781 January 16". Page counts (68=4pp, 108(A)=8pp) match the scout's row;
+only the two dates were transposed. Also, and more consequentially: mssDE 68 is **not** an undeciphered item —
+its own catalogue note (full text below) says the numerical code is "translated into French in another hand",
+and direct examination confirms an interlinear contemporary French decipherment runs beside the cipher on all
+three of its written pages (p1-p3). Of the two "undeciphered" items in this row, only mssDE 108(A) (Jan 16, 8pp,
+entirely in code except three lines of French conclusion on p6) in fact lacks any decipherment in the archive.
+
 ## Check-solved sweep, 24 September 2026
 
 **Editions first.**
@@ -153,3 +163,56 @@ apart, descriptive UA; github.com 1 shallow clone (Bourdeau). No Huntington, Gal
 
 Suggestion (not done): a second, independent alignment pass over the 106 M rows by a separate session, working from
 images/yale/c6-c9 only, to promote or correct them before the key is applied to mssDE 68/108(A).
+## Image capture and inventory, 24 September 2026 (LANE R worker R1)
+
+Same CONTENTdm access route as `ciphers/huntington-blathwayt-madrid-1728/NOTES.md` (see that file for the exact
+working `dmQuery`/`dmGetItemInfo`/IIIF parameter forms). Fetched all pages of mssDE 68 (4pp), mssDE 108(A) (8pp),
+mssDE 37 (2pp) and mssDE 55 (2pp) — 16 images total, ~2.6 MB — to `images/`, with `images/manifest.json` (item,
+page, pointer, url, file, bytes, sha1, date, catalogue_note verbatim) and `images/inventory.tsv`. `dmGetItemInfo`
+on each item's own `cpd` pointer gave the full catalogue `notes` field verbatim (quoted in full below); the date
+correction above comes from this field, not from re-reading the page images (the images were then checked against
+it and agree).
+
+**Full catalogue notes (verbatim, `dmGetItemInfo`, 24 Sept 2026):**
+- mssDE 68 (dateh "January 31, 1781", box "mssDE Box 1"): "Autograph letter, signed, describing French naval
+  operations. Approximately half of the letter is written in numerical code, paragraphs of which are interspersed
+  between lines of manuscript text. In the opening paragraph La Luzerne mentions Benedict Arnold's activities in
+  the Chesapeake Bay. The letter is dated at the head of the first page, and is signed by La Luzerne at the bottom
+  of the third page. The numberical [sic] code has been translated into French in another hand. The fourth page
+  is blank. Title supplied by cataloger."
+- mssDE 108(A) (dateh "January 16, 1781", box "mssDE Box 1"): "Autograph letter, signed, describing French naval
+  operations and activities of British forces. The letter is written in numerical code. Three lines of conclusion,
+  in French, and La Luzerne's signature, are on the sixth page. The seventh and eighth pages are blank. The letter
+  is dated 'A Philadelphie, le 16 Janvier 1781' at the top of the first page, and is addressed to Destouches on
+  the bottom of the first page. Title supplied by cataloger."
+- mssDE 37 (dateh "February 26, 1781", box "mssDE Box 1"): "Autograph letter, signed, describing French and
+  British naval operations. Fourteen lines of the letter are written in a numerical cipher, and have been decoded
+  by Destouches. A portion of the cipher discusses British activities in the war. The letter is dated Philadelphia,
+  26 February, 1781 at the top of the first page, and is signed by La Luzerne at the end of the second page. Title
+  supplied by cataloger."
+- mssDE 55 (dateh "March 3, 1781", box "mssDE Box 2"): "Autograph letter, signed, describing French naval
+  operations. La Luzerne begins the letter with congratulating Destouches on his capture of the British ship HMS
+  Romulus in the Chesapeake Bay. Much of the letter is written in a numerical cipher, and is translated in another
+  hand, in French. Title supplied by cataloger."
+
+**Direct examination confirms all four notes.** mssDE 68: cipher on p1-p3 interspersed with clear French, each
+cipher line followed immediately by its own interlinear French decipherment on the same page (a different hand
+from mssDE 55's decipherment); p4 blank. mssDE 108(A): pure numeric cipher on p1-p6 (p3-p5 not individually
+re-opened this pass, inferred from the uniform pattern on p1/p2/p6 and the catalogue note — flagged so the next
+worker treats this as inferred, not directly checked, per rule 4/grade I), three lines of French conclusion plus
+signature at the top of p6, p7-p8 blank; genuinely undeciphered in the archive. mssDE 37: cipher on p1-p2 with
+interlinear decipherment in an amber/orange ink, closing signed "Le Ch[evalie]r de la Luzerne". mssDE 55: cipher
+on p1-p2 with interlinear decipherment in pencil (visibly a different decipherer's hand from mssDE 37's), same
+closing signature. Approximate token counts and per-page detail in `images/inventory.tsv`.
+
+**Net effect on this item's status:** three of the four Huntington items in this small correspondence (mssDE 68,
+37, 55) already carry a contemporary French decipherment on the page; only mssDE 108(A) (8pp, ~570 numeric tokens
+by rough count) is undeciphered in the archive itself. Combined with the Tomokiyo/Cryptiana lead already in this
+file (a sibling ~1200-element code at Yale, same window, key not identified there either), mssDE 108(A) is now a
+much better-defined key-recovery target: three in-collection decipherments (68, 37, 55) from the same clerk's
+network, all close in date (Jan-Mar 1781), are strong candidates for reconstructing the figure table that
+mssDE 108(A) itself needs. Not attempted this pass (out of this worker's brief; handed to LANE R worker R2, key
+recovery, per ROOM.md).
+
+Requests this pass: hdl.huntington.org — see the combined count in this worker's ROOM.md `done` line (shared
+budget with the Blathwayt target above; both fetched in one session, well under the 250-request cap).

@@ -1,0 +1,74 @@
+item	page	content	cipher_type	approx_tokens	notes
+BLA179	cover	clear (blank cover sheet)	none	0	
+BLA179	p1	clear French	none	0	dateline "a Paris le 7e juin 1725"
+BLA179	p2	clear French	none	0	
+BLA179	p3	clear French	none	0	
+BLA179	p4	clear French	none	0	
+BLA179	p5	clear French	none	0	
+BLA179	p6	cipher + interlinear French decipherment (contemporary hand, same page)	numeric groups, period-separated	32	4 lines; matches catalogue "3 lines in cipher, deciphered" closely (4th line may be the cataloguer's undercount or a continuation)
+BLA179	p7	clear French (signature "R. Pareti")	none	0	
+BLA179	p8	clear French (docket/endorsement)	none	0	matches catalogue endorsement text verbatim
+BLA184	cover	clear (blank)	none	0	
+BLA184	note_recto	modern archivist reference card (Rottembourg biographical note)	none	0	not part of the original letter
+BLA184	note_verso	blank	none	0	
+BLA184	p1	clear French with ~7 numeric CODE WORDS embedded inline (a nomenclator, not a running cipher)	numeric code words inline in plaintext	7	no decipherment given; matches catalogue "partly in cipher", no "deciphered" note
+BLA184	p2	blank (mirror show-through of p1 only)	none	0	
+BLA184	p3	blank	none	0	
+BLA184	p4	blank	none	0	
+BLA185	cover	clear (blank)	none	0	
+BLA185	p1	clear French, dated 1728, fragile/torn edges	none	0	main letter body; note "This and what is in the next column dashed out by my Ld Town[shen]d's order" matches catalogue
+BLA185	p2	clear French (continued)	none	0	
+BLA185	p3	clear French (continued)	none	0	
+BLA185	p4	clear French, short separate note "Je vous prie de faire mes compliments a monsieur le Comte de Rothembourg..."	none	0	appears to be a second, shorter attached letter
+BLA185	p5	cipher + interlinear French decipherment (contemporary hand, same page)	numeric groups, period-separated	~90	the "separate sheet in cipher, deciphered in French" named in the catalogue note; largest single deciphered cipher passage found in this item
+BLA185	p6	blank (mirror show-through of p5)	none	0	
+BLA186	cover	clear (blank)	none	0	
+BLA186	note_recto	modern archivist correction card (date corrected 13 Sept 1708 -> 1728; notes item describes Ripperda's escape from confinement at Segovia, signed Christopher Storrs 26 Apr 2006)	none	0	not part of the original letter; useful external corroboration (Ripperda escape, Sept 1728)
+BLA186	note_verso	blank	none	0	
+BLA186	p1	clear French with 1 line of numeric cipher inline, NO decipherment	numeric groups, period-separated, inline in plaintext	11	dateline "ce 13e Septembre 1728"; text plainly describes Ripperda's escape from the Segovia chateau
+BLA186	p2	clear French	none	0	
+BLA186	p3	clear French with 1 line of numeric cipher inline, NO decipherment	numeric groups, period-separated, inline in plaintext	13	together with p1 = catalogue's "two lines in cipher"
+BLA186	p4	clear French (closing, signed "N")	none	0	
+BLA187	cover	clear (blank)	none	0	
+BLA187	p1	clear French, dated "Port de Ste M[ari]e ce 23e juin 1729"	none	0	covering letter; no cipher on this page
+BLA187	p2	clear French (continued, closing, dated "sent 19 July 1729")	none	0	
+BLA187	p3	cipher + PARTIAL interlinear French decipherment (many words resolved, some letters left as dashes)	numeric groups, period-separated	~85	the enclosed "cipher, in French, endorsed 'in the letter of 23 Juin 1729'"; dated "19 July 1729" at foot; genuine contemporary decipherment with visible gaps
+BLA188	cover	clear (blank)	none	0	
+BLA188	p1	clear English (cover letter to Duke of Newcastle, dated Cesnok 29 June 1729)	none	0	
+BLA188	p2	LEFT: clear English (2nd cover letter to Ld Vt Townshend); RIGHT: start of long cipher table + partial interlinear French decipherment	numeric groups, period-separated (right column only)	~60	cipher table continues onto p3-p5
+BLA188	p3	cipher + partial interlinear French decipherment (full page)	numeric groups, period-separated	~160	continuation of the p2 cipher table
+BLA188	p4	cipher + partial interlinear French decipherment (full page)	numeric groups, period-separated	~160	continuation
+BLA188	p5	cipher (top ~3 lines) + partial interlinear French decipherment, ends "Fait 29 June 1729"; rest of page is faint mirror bleed-through	numeric groups, period-separated	~24	end of the cipher table; this is the "unsigned, undated intelligence report in cipher [from Port Ste. Marie], deciphered in French" named in the catalogue -- largest cipher passage found in the whole run, ~400 tokens across p2-p5
+BLA188	p6	top-left: end of cipher (few tokens) + "Fait 29 June 1729"; rest blank/mirror bleed-through	numeric groups	~8	
+BLA188	p7	clear English (3rd cover letter to Duke of Newcastle, dated 19 July 1729)	none	0	
+BLA188	p8	blank (mirror bleed-through of p7)	none	0	
+BLA189	cover	clear (blank)	none	0	
+BLA189	p1	clear French, dated "Port de Sainte Marie ce 14e Juillet 1729"; several passages marked off in [square brackets]	none	0	covering letter; bracketed passages are the ones enciphered on p3 (known-plaintext pairing)
+BLA189	p2	clear French (continued), more bracketed passages	none	0	
+BLA189	p3	cipher enclosure: each bracketed cipher group is followed by its EXACT matching clear-French bracketed phrase from p1-p2 (i.e. this is the letter's own plaintext, not just a clerk's decipherment)	numeric groups, period-separated, each group followed by its own bracketed plaintext	~85	genuine known-plaintext/ciphertext pair (grade C candidate); endorsed "in the letter of 14 July. Sent to D[uke] of N[ewcastle]. English[?]"
+BLA189	p4	blank (mirror bleed-through of p3)	none	0	
+BLA189	p5	blank	none	0	
+BLA189	p6	blank	none	0	
+BLA190	cover	clear (blank)	none	0	
+BLA190	p1	clear French, dated "Ce 4e Aoust 1729"; several passages marked off in [square brackets]	none	0	covering letter; same bracket/cipher-enclosure pattern as BLA189
+BLA190	p2	clear French (continued), more bracketed passages; right margin carries the English endorsement "Not sent because not material and containing a complaint agst Mr Keene" (bleeding through from p3)	none	0	
+BLA190	p3	English endorsement note (matches catalogue verbatim: "Not sent becaus not material and containing a complaint agst Mr. Keene")	none	0	
+BLA190	p4	blank (mirror bleed-through of p3)	none	0	
+BLA190	p5	cipher enclosure, each bracketed group followed by its matching clear-French plaintext (same known-plaintext pattern as BLA189)	numeric groups, period-separated	~90	1st of the catalogued "2 pages in cipher"
+BLA190	p6	cipher enclosure (continued)	numeric groups, period-separated	~90	2nd of the catalogued "2 pages in cipher"; together with p5 ~180 tokens, known-plaintext pair
+BLA190	p7	SEPARATE cipher + interlinear French decipherment, dated within the text "3 November 1729" and ending "Mille sept cent vingt neuf"; NOT part of the catalogue's "2 pages" and does not match the item's own 4 Aug 1729 date	numeric groups, period-separated	~110	anomaly -- flagged for the next worker; may be a misfiled leaf from a different, later letter in the same run/collection
+BLA190	p8	blank (mirror bleed-through of p7)	none	0	
+BLA190	p9	blank	none	0	
+BLA190	p10	blank	none	0	
+BLA191	cover	clear (blank)	none	0	
+BLA191	p1	clear English cover letter to Duke of Newcastle, "Cesnok 8 Aug 1729", transmitting "two letters from Port Ste Maries"	none	0	
+BLA191	p2	blank (mirror bleed-through of p1)	none	0	
+BLA191	p3	clear French, dated "Port de Ste Marie ce 21e Juillet 1729" -- enclosure (b)	none	0	one bracketed phrase near the end but no accompanying cipher sheet found for it
+BLA191	p4	clear French (continued) -- enclosure (b)	none	0	
+BLA191	p5	pure numeric cipher, NO decipherment at all, 12 underlined lines	numeric groups, period-separated	~130	enclosure (a), catalogued "undated, in cipher"; genuinely undeciphered in the archive
+BLA191	p6	blank (mirror bleed-through of p5)	none	0	
+BLA194	cover	clear (blank)	none	0	
+BLA194	p1	cipher + interlinear French decipherment (full page)	numeric groups, period-separated	~75	matches catalogue "In cipher, deciphered in French" for the whole item
+BLA194	p2	cipher + interlinear French decipherment (top ~3 lines), rest blank	numeric groups, period-separated	~18	
+BLA194	p3	blank	none	0	
+BLA194	p4	blank	none	0	

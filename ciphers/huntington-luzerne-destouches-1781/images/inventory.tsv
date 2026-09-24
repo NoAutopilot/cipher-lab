@@ -1,0 +1,17 @@
+item	page	content	cipher_type	approx_tokens	notes
+mssDE68	p1	clear French dateline+opening + cipher interspersed between clear lines, WITH interlinear French decipherment (contemporary hand, same page)	numeric groups, period-separated	~55	dated "Philadelphie le 31 Janvier 1781" -- CATALOGUE DATE CORRECTION: item-info gives Jan 31, not Jan 16 as NOTES.md previously stated (mssDE 108(A) has Jan 16); catalogue note: "half the letter... in numerical code... translated into French in another hand"
+mssDE68	p2	clear French + cipher interspersed, WITH interlinear French decipherment	numeric groups, period-separated	~80	
+mssDE68	p3	clear French + cipher interspersed, WITH interlinear French decipherment; closing signed "Le Ch[evalie]r de la Luzerne"	numeric groups, period-separated	~36	
+mssDE68	p4	blank	none	0	matches catalogue "fourth page is blank"
+mssDE108A	p1	pure numeric cipher, NO decipherment, dated "Philadelphie le 16 Janvier 1781", signed at foot "N. Destouches" [sic, docket]	numeric groups, period-separated	~95	CATALOGUE DATE CORRECTION: this item is dated Jan 16, not Jan 31 as NOTES.md previously stated
+mssDE108A	p2	pure numeric cipher, NO decipherment	numeric groups, period-separated	~95	
+mssDE108A	p3	pure numeric cipher, NO decipherment (not individually re-opened this pass, inferred from p1/p2/p6 pattern and catalogue note)	numeric groups, period-separated	~95	catalogue: entire letter in numerical code except closing
+mssDE108A	p4	pure numeric cipher, NO decipherment (not individually re-opened this pass)	numeric groups, period-separated	~95	
+mssDE108A	p5	pure numeric cipher, NO decipherment (not individually re-opened this pass)	numeric groups, period-separated	~95	
+mssDE108A	p6	pure numeric cipher (top ~8 lines), then clear French closing ("J'ai l'honneur d'etre avec le plus sincere attachement... Le Ch[evalie]r de la Luzerne")	numeric groups, period-separated	~72	catalogue: "three lines of conclusion, in French, and La Luzerne's signature, are on the sixth page"
+mssDE108A	p7	blank	none	0	matches catalogue "seventh and eighth pages are blank"
+mssDE108A	p8	blank	none	0	
+mssDE37	p1	clear French opening, dated "Philadelphie le 26 Fevrier 1781" + cipher (5 lines) WITH interlinear decipherment in a different (amber/orange) ink	numeric groups, period-separated	~44	catalogue: "Fourteen lines of the letter... decoded by Destouches" (contemporary decipherment, not a third party's)
+mssDE37	p2	cipher (7 lines) WITH interlinear decipherment (same amber ink) + clear French closing, signed "Le Ch[evalie]r de la Luzerne"	numeric groups, period-separated	~63	together with p1 approximates the catalogued "fourteen lines" (here counted as ~12; some lines may combine two catalogued lines)
+mssDE55	p1	clear French opening, dated "Philadelphie le 3 Mars 1781" ("congratulating Destouches on his capture of the British ship HMS Romulus") + cipher (11 lines) WITH interlinear decipherment in pencil	numeric groups, period-separated	~99	catalogue: "translated in another hand, in French" (a different decipherer's hand from mssDE37's)
+mssDE55	p2	cipher (7 lines) WITH interlinear pencil decipherment + clear French closing, signed "Le Ch[evalie]r de la Luzerne"	numeric groups, period-separated	~63	
