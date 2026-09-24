@@ -373,3 +373,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T20:36Z	session_01DayNPYcrVxbaiXwNBcjRgN	rfetch reddit thread mwhtp0 via API (Sonnet, cap )	ciphers/reddit-runaway-2021/ redacted save	owner added a Reddit credential 24 Sept; brief 2026-09-24-reddit-fetch-runaway.md
 2026-09-24T20:38Z	session_01UohbhkMcYaK5vzr6mBwqcT	Lessons ingest: Urquhart host-text-as-key (Sonnet, cap )	LESSONS.md, check-solved.md, sources/vals-ai/	owner's pointer to the Vals AI post; brief 2026-09-24-lessons-urquhart-hosttext.md
 2026-09-24T20:38Z	queued	rfetch2 reddit thread 18lz1b5, r/codes 1600s book (Sonnet, cap )	ciphers/reddit-oldbook-1600s/	after rfetch reports; brief 2026-09-24-reddit-fetch-oldbook.md
+2026-09-24T20:38Z	session_01HSqJsqbR6Dtu5u1NJHUXg5	LANE N4 scTOMO (Sonnet, cap $6)	Tomokiyo key lists vs unread siblings (beyond Nevers)	brief lane-n4-scTOMO
+2026-09-24T20:38Z	session_017trM1LkowyQ4Ku8hR9wipa	LANE N4 scDIGI (Sonnet, cap $6)	DigitArq ANTT cipher leaves PP-01/02 and beyond	brief lane-n4-scDIGI
