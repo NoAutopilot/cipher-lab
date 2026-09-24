@@ -201,3 +201,82 @@ script (contact via repository)`, >=1.5s apart, no 403/429/challenge seen, only 
 No other hosts. Subagents: 1 (Sonnet, blind pass B on line 9 only). Folder size 16 MB (images/ + glyphs/,
 after removing glyphs/crops/f75L.png, a reproducible grey-normalised full-page intermediate not needed by any
 committed file).
+
+## Re-segmentation and passes f75L (24 Sept 2026, LANE R4 O)
+
+Worker O (Sonnet, cap $8), brief `.claude/briefs/runs/2026-09-24-lane-r4-o-seure-segment.md`, following worker
+K's gate failure above (51.7% on line 9, root-caused to gutter/bleed-through noise and under-merged boxes). No
+solving, no fetches (disk-first; the native source `images/src_ark_12148_btv1b9059865k_f75_100_100_3800_5450.jpg`
+K already captured was reused, 0 new gallica.bnf.fr requests).
+
+**Segmenter fix (`tools/glyph_atlas.py`, offline test `tools/tests/test_glyph_atlas.py` extended, both commits
+before this one).** Two changes, both exposed as options rather than hardcoded, per rule 8:
+1. `--min-area` (was a hardcoded `0.12 x median height`, now a CLI float) so a noisy page can raise its minimum
+   component size.
+2. `--merge-vgap` (new, default 0.6x median height): the same-line merge step only checked x-overlap, never a
+   vertical gap, and could chain a whole column of unrelated dust specks (a line's "nearest peak" assignment
+   has no distance cap) into one giant box. On this page it produced two boxes 993px and 1084px tall (23-25x
+   the median sign height) in the blank margin below the cipher block, both empty paper with a scan-edge line
+   at the bottom, not signs. Root cause and fix confirmed by cropping both boxes from the source image (blank).
+   The new test constructs exactly this case (one real sign sets the median height, two dust specks with the
+   same x-range but 500px apart vertically, same "line") and asserts they no longer merge into one box.
+
+**Re-segmentation.** Cropped the gutter and top bleed-through by cropping the existing native source in place
+(`--page f75L=<source>@420,350,3800,5450`, no new fetch: the region syntax already supported in the tool covers
+this, so no new crop option was needed) -- column-mean intensity confirmed the gutter shadow spans x=50-375 of
+the original capture (mean 86-136 vs ~200 background) and row-mean confirmed the bleed-through band is y=0-70
+(mean 112-165 vs ~200); 420/350 gives margin on both. Result: 1033 signs + 177 marks (was 1178 signs + 1144
+marks). Noise, measured the way K's gate quoted it (unlabelled `_` share of signs.tsv only, marks excluded):
+**94/1033 = 9.1%**, against the brief's <20% target and K's 662/1177 = 56.2% baseline -- both the crop and the
+merge-vgap fix contributed (the crop alone, tested first, gave 1014 signs but still had the two giant boxes;
+the vgap fix removed those and re-normalised the count to 1033).
+
+**Atlas.** `cluster --k 50 --k-marks 10` then hand-labelled from the contact sheets (`glyphs/sheet_signs_00/01/02.png`,
+`glyphs/sheet_marks.png`): 27 sign codes (all 21 of K's codes reused by shape where a cluster matched, plus
+`hash2`, `num1`, `signR`, `signA`, `signN`, `hookJ`, `wedge`, and **`W`** -- the double-loop shape K flagged from
+line 9 position 27 as an unmatched 22nd sign candidate, confirmed here as its own cluster (9 boxes) rather than
+scattered noise. `z3` and `apos` from K's atlas found no matching cluster this pass and are dropped (their few
+exemplars now fall inside `hookL`/`chook`). All 10 mark clusters stayed noise (`_`), same finding as K's: no
+clean recurring diacritic shape on this page. `classify`: 1033 boxes, kNN vote matched the box's own cluster
+label for 816/1033 (79.0%, comparable to K's 997/1177 = 84.7%); strips written to `images/strips/` (42 lines,
+83 strip images, replacing K's 108 line-9-only strips).
+
+**Gate test, three lines (9, 5, 15; 63 boxes).** Pass A (worker O, `passA.tsv`): read every box against
+`glyphs/atlas.tsv`, noting agreement or a correction with a `?` where the classifier's call looked wrong on the
+image. Pass B: one blind Sonnet subagent (images and atlas only, explicitly told not to open passA), writing
+`passB.tsv` line by line. `tools/reconcile_passes.py passA.tsv passB.tsv --rows`: **25/65 aligned columns =
+38.5% overall** (line 9: 7/21 = 33.3%; line 5: 9/22 = 40.9%; line 15: 9/22 = 40.9%) -- `disagreements.tsv`,
+`ciphertext_draft.tsv`, `agreement.tsv`. **Gate (>=80%) failed, worse than K's single-line 51.7%.**
+
+**Why the gate failed despite the segmentation fix, and what that separates out:** the two problems are
+different. Segmentation (does a box correctly bound one sign) is now good -- 9.1% noise, clean boxes on
+inspection. Sign *identification* (which of the atlas's codes a box is) is not: even the clearest single case,
+line 9 position 14 (the new `W` double-loop, called `W` at H confidence by pass A specifically because it
+looked unambiguous), was read `loopMN` by pass B -- both are plausible readings of a faint looping shape, and
+this atlas has several codes for looping/hooking shapes (`loopMN`, `W`, `hookL`, `hookS`, `hookJ`, `hook`,
+`hook2`, `hook7`, `chook`) that a k=50 over-split clustering does not obviously separate on a low-contrast
+image. Pass B's own tally (7 H / 56 M of 63) says the same thing independently: most positions on this page
+are not confidently classifiable into one atlas code from the image alone, whoever is reading. Per the
+fr2933-salviati-1525 and K-line-9 precedent when a gate fails: stopped here, no hand-settling from the image,
+no `ciphertext_f75L.tsv`. `disagreements.tsv`/`ciphertext_draft.tsv`/`agreement.tsv` are diagnostic only.
+
+**Types, grades (3 lines, 63 positions, from `agreement.tsv`/`disagreements.tsv`):** 0 H-from-key (no key
+exists), 0 C, 25 S (both passes independently agreed, most at M confidence on at least one side), 38 M
+(disagreement, unsettled). No I. No decoding attempted.
+
+**What would move this, for a future pass:** not more segmentation work (already under the noise target) --
+either (a) a smaller, coarser atlas (merge the hook/loop family down from 9 codes to 2-3 broad shape buckets a
+reader can actually tell apart on this image, accepting less precision per sign, and re-run the gate), or (b) a
+better image (the Gallica capture is native-resolution but still low-contrast for pencil-thin ink; a different
+light/exposure capture of the same leaf, if the holding library offers one, would help more than any further
+software tuning). Recommending (a) first since it costs no new fetch.
+
+**Scope not attempted (gate failed, stopped per brief step 2):** lines 1-4, 6-8, 10-14, 16-44 of f75L (already
+segmented, classified and stripped, ready for a future pass); the 43/44 pair (still 500px survey only, no
+native capture); no ciphertext file for any line.
+
+**Requests this session:** no fetches (disk-first; native source already on disk from worker K). Subagents: 1
+(Sonnet, blind pass B on 3 lines, 63 boxes). Folder size 17 MB (images/ + glyphs/, after removing
+`glyphs/crops/f75L.png`, the same reproducible full-page intermediate K's note flags; superseded the whole of
+K's `glyphs/` and `images/strips/` with this pass's re-segmentation rather than keeping both, to stay under the
+30 MB/folder budget -- K's per-line-9 box IDs and codes are preserved above in this file's own text, not lost).

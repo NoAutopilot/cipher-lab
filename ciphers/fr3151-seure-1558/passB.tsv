@@ -1,29 +1,64 @@
 line	pos	sign	conf	note
-9	1	_	H	thin vertical dark line at page edge, matches gutter shadow band, no ink shape visible
-9	2	_	H	small box within same gutter shadow band as pos1, no distinct ink
-9	3	_	M	overlaps gutter shadow region, no clear ink shape resolved; possible false positive from shadow texture
-9	4	_	M	overlaps box 3's region within the shadow band, same as pos3, no distinct shape resolved
-9	5	_	M	small faint mark just past the shadow band, could be ink speck or shadow bleed, too faint to call a sign
-9	6	bar?	M	short thin vertical stroke, isolated on page; could be a genuine bar-type sign or a paper crease, not a confident match
-9	7	blob?	M	small rounded mark isolated on the page, faint; tentative match to blob but low confidence at this size
-9	8	_	H	extremely small speck below/right of box 7, looks like noise not a sign
-9	9	bar?	M	thin vertical stroke at left edge of strip, near gutter-adjacent zone; uncertain if sign or artifact
-9	10	_	H	very small speck, noise
-9	11	hook7?	M	rounded loop shape(s) with a small tail/descender; doesn't cleanly match any single atlas row
-9	12	plus	H	clear four-armed cross shape, good match to atlas "plus"
-9	13	tcross	H	horizontal top stroke with vertical/diagonal descender, matches atlas "tcross" (T/7-like) well
-9	14	_	M	very small mark between boxes 13 and 15, likely noise but low confidence
-9	15	hook7?	M	round loop with small tail, cursive "e"/"8"-like; closest to hook7/circ but not a clean match
-9	16	b8?	M	two small adjoining round shapes side by side; tentatively like atlas "b8" doubled but uncertain
-9	17	_	M	very small mark, possibly noise or a fragment of a sign, not confidently a full sign
-9	18	hash	H	clear set of crossing/parallel diagonal strokes, good match to atlas "hash"
-9	19	_	M	small mark at left edge of strip, unclear whether ink or gutter/shadow artifact
-9	20	_	M	small faint mark, insufficient resolution to identify as a sign
-9	21	bar?	M	tall thin vertical stroke; could be a genuine sign or a crease/shadow line
-9	22	_	M	tiny box nested near top of box 21's region, looks like a speck or shadow fragment, not a distinct sign
-9	23	ctlig?	M	complex looped cursive shape, ligature-like; no clean single-glyph atlas match
-9	24	ctlig?	M	box overlaps box 23's region with a similar complex looped shape; possibly duplicate segmentation of the same mark
-9	25	_	M	small mark to the left of box 26, possibly noise or a fragment of the sign in box 26
-9	26	hook2?	M	elongated squiggling cursive stroke; tentative match to atlas "hook2" but not confident
-9	27	loopMN?	M	double-hump loop shape resembling a cursive "W"/"M"; tentative match to atlas "loopMN"
-9	28	_	M	box sits at the far right edge of the strip image, view incomplete/cut off, cannot confidently identify a shape
+9	1	bar	M	tall box, two close parallel vertical strokes, ambiguous single vs double stroke
+9	2	_	H	tiny box, no discernible ink
+9	3	bar	M	narrow single vertical stroke
+9	4	hook2	M	loop/hook shape, P-like, faint
+9	5	arrow	M	crossing diagonal strokes, triangle/arrow-like
+9	6	_	M	very thin sliver, minimal ink, could be stray mark
+9	7	hook2	M	P-like hook shape again, similar to pos4
+9	8	_	M	tiny box, faint mark only
+9	9	_	M	tiny box, faint mark only
+9	10	hash2	M	dense multi-bar crosshatch
+9	11	hook	M	curved comma/V-like shape
+9	12	bar	M	thin vertical sliver, weak ink
+9	13	loopMN	M	horizontal wavy squiggle, compressed
+9	14	loopMN	H	clear repeating wave/zigzag pattern
+9	15	star	H	clear asterisk burst
+9	16	inf	M	three loop shapes like ooo, infinity-like
+9	17	bar	M	thin narrow mark, minimal ink
+9	18	hash	H	clear # crosshatch
+9	19	tcross	M	vertical stroke with horizontal cross near top
+9	20	_	M	thin vertical sliver, weak ink
+9	21	loopMN	M	wide horizontal squiggle/wave pattern
+5	1	hash2	H	clear dense multi-bar crosshatch, wide box
+5	2	signA	M	cursive double-loop shape, A-like
+5	3	bar	M	thin narrow vertical stroke
+5	4	hash	M	horizontal row of parallel marks, faint
+5	5	hookL	M	complex shape, cross-top plus hook/stem below
+5	6	b8	M	small loop fragment, ambiguous
+5	7	_	M	tiny box, minimal ink
+5	8	hash	M	small faint crosshatch mark
+5	9	hash	M	crosshatch pattern, medium box
+5	10	_	M	thin vertical sliver, weak ink
+5	11	circ	M	small round/loop mark
+5	12	_	M	tiny box, minimal ink
+5	13	hash2	M	double-bar crosshatch pattern
+5	14	bar	M	thin vertical stroke, tall narrow box
+5	15	inf	M	ooo loop pattern, infinity-like
+5	16	hookJ	M	large cursive hook/loop shape, tall box
+5	17	star	M	crossing asterisk-like pattern
+5	18	b8	M	small loop shape, ambiguous
+5	19	_	M	very small overlapping box, minimal ink
+5	20	bar	M	small adjacent mark, weak ink
+5	21	inf	M	ooo loop pattern again, wide box
+15	1	bar	M	thin tall vertical stroke, isolated at line start
+15	2	bar	M	small vertical mark, faint
+15	3	_	M	tiny box, minimal ink
+15	4	bar	M	tall narrow vertical stroke
+15	5	_	M	small box, minimal ink, close to pos4
+15	6	loopMN	M	horizontal wavy/squiggle pattern, wide box
+15	7	hash	M	crosshatch mark
+15	8	bar	M	small mark, weak ink
+15	9	signN	H	clear N-shaped cursive sign
+15	10	hook2	M	small hook/loop, ambiguous
+15	11	plus	H	clear cross/plus shape
+15	12	flag	M	hook with flag-like top
+15	13	hash	M	small # mark
+15	14	hash2	M	double-bar crosshatch, weaker
+15	15	_	M	tiny box, minimal ink
+15	16	tcross	M	large hook/cross shape, curved base
+15	17	_	M	tiny box, minimal ink
+15	18	flag	M	hook with flag top
+15	19	bar	M	tall narrow vertical stroke
+15	20	plus	M	small cross shape, weak
+15	21	_	M	box at strip edge, cut off/ambiguous shape

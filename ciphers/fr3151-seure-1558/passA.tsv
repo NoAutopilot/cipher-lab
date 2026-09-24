@@ -1,29 +1,64 @@
 line	pos	sign	conf	note
-9	1	_	H	binding-gutter margin noise
-9	2	_	H	binding-gutter margin noise
-9	3	_	H	binding-gutter margin noise
-9	4	_	H	binding-gutter margin noise
-9	5	_	H	tiny ink speck
-9	6	_	H	tiny ink speck
-9	7	flag	M	faint, low confidence
-9	8	_	H	tiny ink speck
-9	9	circ	H	round loop, clear
-9	10	_	H	tiny dot
-9	11	inf	H	large rounded loop
-9	12	plus	H	clear + cross
-9	13	tcross	H	T-topped cross shape
-9	14	_	H	tiny dot
-9	15	circ	H	round loop
-9	16	inf	M	corrected from classifier's hash: horizontal figure-8/loop shape, not a cross-hatch
-9	17	_	H	tiny dot
-9	18	hash	H	clear double cross-hatch
-9	19	bar?	M	narrow vertical stroke, ambiguous vs noise
-9	20	bar?	M	narrow vertical stroke, ambiguous vs noise
-9	21	bar?	M	tall vertical stroke, ambiguous
-9	22	_	H	tiny dot
-9	23	bar	H	vertical stroke
-9	24	hash	M	double cross-bar shape
-9	25	hook2	M	small blob, weak match
-9	26	star	M	complex multi-point shape, weak match
-9	27	W?	M	distinct double-loop 'W' shape, not matched by any atlas code -- possible new sign
-9	28	bar	H	thin vertical stroke before plain-script word boundary
+9	1	hash?	M	ladder/multi-bar shape, disagree with classifier's weak star (share 0.64)
+9	2	flag?	M	tiny mark, low information
+9	3	bar?	M	simple vertical stroke, disagree with classifier's flag
+9	4	hook2?	M	rounded loop with descender, p-like; classifier hook2 plausible
+9	5	arrow?	M	angular hook/arrow shape, classifier's plus had share 0.21 (weak), correcting
+9	6	num1?	M	tiny mark
+9	7	loopP?	M	loop with tail, closest atlas match unclear (flag/b8/hookS all plausible)
+9	8	bar	H	small but clear vertical stroke
+9	9	hash?	M	small grid pattern, disagree with classifier's hook
+9	10	hash2	H	clear double cross-hatch grid
+9	11	tcross?	M	small v/hook shape, ambiguous vs tcross
+9	12	_?	M	tiny ambiguous mark, classifier's own cluster says noise
+9	13	wedge	H	clear wavy multi-stroke shape
+9	14	W	H	double-loop W shape, matches new atlas code well
+9	15	star	H	clear star burst
+9	16	inf	H	rounded triple/double loop, closest to inf
+9	17	loopMN?	M	tiny mark
+9	18	hash	H	clear hash grid
+9	19	arrow	H	clear arrow/triangle with flourish
+9	20	star?	M	tiny mark
+9	21	wedge	H	wide wavy multi-stroke shape
+5	1	hash	H	clear multi-bar hash pattern
+5	2	signA?	M	triangular peaked shape, legs meeting at top; disagree with classifier's hookS
+5	3	num1	H	simple vertical stroke
+5	4	wedge	H	horizontal row of short strokes
+5	5	flag?	M	vertical stroke with flag/cross top, disagree with classifier's num1
+5	6	b8?	M	small loop, low information
+5	7	num1?	M	minuscule speck
+5	8	flag?	M	tiny ambiguous mark
+5	9	plus?	M	tiny square/cross mark
+5	10	_	H	no ink, agrees with classifier's noise call
+5	11	_	H	no ink, agrees with classifier's noise call
+5	12	b8	H	clear loop with descender
+5	13	hash2	H	clear double cross-hatch
+5	14	bar?	M	unusually tall for a bar, could be hookL/signN
+5	15	inf	H	clear figure-8/loop
+5	16	hookL	H	clear large hook with long curved tail
+5	17	star?	M	zigzag/star-like shape, disagree with classifier's hash
+5	18	loopMN?	M	loopy shape with tail, weak class
+5	19	blob	H	small dense ink mark
+5	20	hook	H	clear small hook
+5	21	inf	H	clear double loop
+15	1	bar	H	clear thin vertical stroke
+15	2	_?	M	faint speck, hard to resolve a shape
+15	3	bar?	M	tiny vertical fragment
+15	4	hash	H	small hash/grid pattern
+15	5	ctlig?	M	tiny fragment
+15	6	wedge	H	row of short diagonal strokes
+15	7	star?	M	overlapping hash/cross shape, ambiguous vs hash
+15	8	hook?	M	tiny faint loop
+15	9	signN	H	clear capital N-like sign
+15	10	hookJ	H	clear J/3-shaped hook
+15	11	star?	M	crossed flourish, could be plus
+15	12	_?	M	small loop with tail, partly obscured; classifier's own cluster says noise
+15	13	hash?	M	small hash/cross, disagree with classifier's star
+15	14	hash2	H	clear double cross-hatch
+15	15	_?	M	tiny faint mark
+15	16	hookL	H	large L-shaped hook with long tail
+15	17	blob?	M	tiny speck
+15	18	flag?	M	loop with descender, some ambiguity vs b8/circ
+15	19	num1	H	clear vertical numeral stroke
+15	20	plus	H	clear + cross
+15	21	bar	H	clear thin vertical stroke

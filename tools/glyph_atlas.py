@@ -93,7 +93,7 @@ def segment_page(name, path, box, a):
     areas = st[1:, 4]
     big = st[1:][areas >= np.percentile(areas, 60)]
     mh = float(np.median(big[:, 3])) if len(big) else 20.0
-    keep = [i for i in range(1, n) if st[i, 4] >= max(4, (0.12 * mh) ** 2)
+    keep = [i for i in range(1, n) if st[i, 4] >= max(4, (a.min_area * mh) ** 2)
             and st[i, 3] <= 3.5 * mh and st[i, 2] <= 5 * mh]
     kept = np.zeros_like(ink)
     for i in keep:
@@ -118,7 +118,8 @@ def segment_page(name, path, box, a):
             if merged:
                 p = merged[-1]
                 ov = min(p['x'] + p['w'], c['x'] + c['w']) - max(p['x'], c['x'])
-                if ov > 0.5 * min(p['w'], c['w']):
+                vgap = max(0, c['y'] - (p['y'] + p['h']), p['y'] - (c['y'] + c['h']))
+                if ov > 0.5 * min(p['w'], c['w']) and vgap <= a.merge_vgap * mh:
                     x0_, y0_ = min(p['x'], c['x']), min(p['y'], c['y'])
                     p.update(x=x0_, y=y0_, w=max(p['x'] + p['w'], c['x'] + c['w']) - x0_,
                              h=max(p['y'] + p['h'], c['y'] + c['h']) - y0_, ids=p['ids'] + c['ids'])
@@ -399,6 +400,8 @@ def main(argv=None):
     s.add_argument('--rel', type=float, default=0.78, help='ink if pixel < rel x local background (0.78)')
     s.add_argument('--mark-h', type=float, default=0.55, help='mark if height < this x median height (0.55)')
     s.add_argument('--mark-above', type=float, default=0.3, help='mark bottom must sit this x median height above the line centre (0.3)')
+    s.add_argument('--min-area', type=float, default=0.12, help='drop a component whose side is under this x median height (0.12); raise on a noisy page')
+    s.add_argument('--merge-vgap', type=float, default=0.6, help='merge same-line, x-overlapping components only if the vertical gap between them is under this x median height (0.6); stops distant dust specks chaining into one giant box')
     s.add_argument('--debug', action='store_true')
     c = sp.add_parser('cluster')
     c.add_argument('--out', required=True)

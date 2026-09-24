@@ -54,6 +54,19 @@ def main():
     assert len(B) == 36 and all(r['code'] == ('X' if r['box'] in marked else 'B') for r in B), B
     assert all(r['marks'] == ('o' if r['box'] in marked else '') for r in B)
     assert len(os.listdir(os.path.join(d, 'strips'))) == 6   # 3 lines x 2 parts
+
+    # merge-vgap: two dust specks far apart vertically, same x-range, no other line nearby --
+    # must NOT be chained into one giant box (the fr3151-seure-1558 f75L bug, 24 Sept 2026).
+    d2 = tempfile.mkdtemp()
+    img2 = np.full((900, 400), 235, np.uint8)
+    cv2.rectangle(img2, (100, 90), (150, 150), 20, 5)   # one real sign, sets mh
+    cv2.rectangle(img2, (100, 200), (110, 210), 20, 3)  # dust speck A, same x range
+    cv2.rectangle(img2, (100, 700), (110, 710), 20, 3)  # dust speck B, far below, same x range
+    p2 = os.path.join(d2, 'page.png')
+    cv2.imwrite(p2, img2)
+    run('segment', '--page', f'p2={p2}', '--out', d2, '--min-area', '0.05')
+    S2 = list(csv.DictReader(open(os.path.join(d2, 'signs.tsv')), delimiter='\t'))
+    assert max(int(s['h']) for s in S2) < 400, [(s['sid'], s['h']) for s in S2]
     print('ok')
 
 

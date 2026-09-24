@@ -1,15 +1,41 @@
 line	col	A	B	flagged	crop
-9	6	_	bar	B	
-9	7	flag	blob	AB	
-9	9	circ	bar	B	
-9	11	inf	hook7	B	
-9	15	circ	hook7	B	
-9	16	inf	b8	AB	
-9	19	bar	_	AB	
-9	20	bar	_	AB	
-9	23	-	ctlig	B	
-9	24	bar	ctlig	B	
-9	25	hash	_	AB	
-9	27	star	-	A	
-9	28	W	loopMN	AB	
-9	29	bar	_	B	
+9	1	hash	bar	AB	
+9	2	flag	_	A	
+9	6	num1	_	AB	
+9	7	loopP	hook2	AB	
+9	8	bar	_	B	
+9	9	hash	_	AB	
+9	11	tcross	hook	AB	
+9	12	_	bar	AB	
+9	13	wedge	loopMN	B	
+9	14	W	loopMN		
+9	17	loopMN	bar	AB	
+9	19	arrow	tcross	B	
+9	20	star	_	AB	
+9	21	wedge	loopMN	B	
+5	1	hash	hash2		
+5	3	num1	bar	B	
+5	4	wedge	hash	B	
+5	5	flag	hookL	AB	
+5	7	num1	_	AB	
+5	8	flag	hash	AB	
+5	9	plus	hash	AB	
+5	11	-	circ	B	
+5	13	b8	-		
+5	17	hookL	hookJ	B	
+5	19	loopMN	b8	AB	
+5	20	blob	_	B	
+5	21	hook	bar	B	
+15	1	-	bar	B	
+15	5	hash	-		
+15	6	ctlig	_	AB	
+15	7	wedge	loopMN	B	
+15	8	star	hash	AB	
+15	9	hook	bar	AB	
+15	11	hookJ	hook2	B	
+15	12	star	plus	A	
+15	13	_	flag	AB	
+15	17	hookL	tcross	B	
+15	18	blob	_	AB	
+15	20	num1	bar	B	
+15	22	bar	_	B	
