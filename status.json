@@ -1146,6 +1146,30 @@
    "grade": "negative with controls",
    "line": "Control 100/92/75% at 0/5/10% noise; the 588-sign target does not read; tools/seg_homophonic.py and an it16 corpus for the next Italian target.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr4687-paleologue-nevers"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "catch",
+   "title": "Palavicino to Burghley 1590 with key (TNA SP 81/6/125): described in Stone 1956",
+   "grade": "found-solved",
+   "line": "Queue row N21 retired before a copy order.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sp81-palavicino-1590"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "catch",
+   "title": "Duke Ulrich to Zwingli, 11 Apr 1531 (ZB Zürich Ms F 46.186): printed with the cipher resolved, Zwingli Sämtliche Werke 11 no. 1193",
+   "grade": "found-solved",
+   "line": "Queue row K3 retired; K4 still open.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/zbz-ulrich-zwingli-1531"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Check-solved on 14 non-Gallica rows: 10 open at stage 2 (RAH Cañada 1869 and Huntington U1/U2 with images online)",
+   "grade": "check-solved",
+   "line": "U2 Blathwayt has French decipherments beside six sibling cipher items: a recovery by alignment.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/QUEUE.md"
   }
  ],
  "lanes": [
