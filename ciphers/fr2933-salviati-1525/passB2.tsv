@@ -299,3 +299,58 @@ line	pos	code	marks	action	conf	note
 11	26	]	ot	confirm	M	small rectangle bracket, ot mark
 11	27	#	~	confirm	M	cross/hash shape, tilde mark
 11	28	S7	#	confirm	M	numeral-7 shape, # mark
+12	1	_	~	confirm	L	sliver at edge of BnF ownership stamp, share was already low (0.60)
+12	2	_	1|1|?|dot|o|?|dot	confirm	L	large BnF ownership stamp overlapping text, marks unreliable (share 0.61)
+12	3	_	~	confirm	L	stamp bleed-through area, ambiguous (share 0.61)
+12	4	Z	dot	confirm	M	small hook shape with dot mark
+12	5	nt		confirm	M	crossed n shape, part of visually merged pair with pos6
+12	6	g	1	confirm	M	loop-tail g, share was 0.60
+12	7	a	~	confirm	H	small a with tilde
+12	8	S7		confirm	M	thin numeral-7 shape
+12	9	lam		confirm	H	clean A-shape
+12	10	e	#	confirm	M	double-bar crossed shape ("tt") with # mark above
+12	11	wd		confirm	M	wide w-shape with loop
+12	12	bh		confirm	M	thin vertical hook shape
+12	13	K		confirm	H	K-shape, edge of crop
+12	14	_	#	confirm	M	two-tier loop+cross shape but classifier confident (1.00) plain with # mark
+12	15	tee		confirm	M	small F/t shape, share was 0.62
+12	16	v	1	confirm	M	curl/hook shape, numeral 1 mark
+12	17	y	5	confirm	M	y hook with 5-like tail mark
+12	18	]	o	confirm	H	bracket shape with circle mark
+12	19	rz		confirm	M	hook shape
+12	20	S7	+	confirm	M	small numeral-ish shape with + mark
+12	21	g	~	confirm	M	loop shape with tilde mark
+12	22	lam		confirm	H	clean small A-shape
+12	23	nt	~	confirm	M	crossed n shape overlaid with an X-like mark, tilde
+12	24	y		confirm	M	y hook, overlaps pos23
+12	25	e		confirm	M	crossed f/loop combined shape
+12	26	_	dot	confirm	M	tiny dot-only mark, share was 0.62
+12	27	m	~	confirm	M	m hump shape, tilde mark above
+12	28	g	7	confirm	M	g loop, numeral 7 mark above
+12	29	bh		confirm	M	tall hook shape, edge of crop
+13	1	rz	?|?|1	confirm	M	hook shape, marks already flagged uncertain by script
+13	2	_		plain	M	thin stroke, part of neighbour's stem
+13	3	g	dot	confirm	M	tall loop shape with dot mark
+13	4	w		confirm	M	w loop merged with pos3's tail
+13	5	S7		confirm	H	clean numeral-7 shape
+13	6	o.		confirm	H	circle-with-line shape, clean match
+13	7	rz		confirm	M	small hook, overlaps pos8
+13	8	g	1	confirm	M	loop shape with numeral 1 mark
+13	9	_		plain	M	tall f-like shape, letter unclear
+13	10	w		confirm	M	w shape adjoining pos9
+13	11	bh		confirm	M	tall hook shape, marks visible below not in script's list
+13	12	Z	?	confirm	M	Z-shape, mark already flagged uncertain
+13	13	g	~	confirm	M	loop shape with tilde mark
+13	14	sq	~	confirm	M	clear square shape, tilde mark; share was low (0.63) but visual match good
+13	15	tee		confirm	H	thin vertical+bar shape
+13	16	H	1|o	confirm	H	clean H-shape with numeral marks above, matches atlas well
+13	17	a	5	confirm	M	small a-shape, numeral 5 mark
+13	18	e	dot|+	confirm	M	loop shape with dot and cross marks
+13	19	S4		confirm	H	tall stroke with crossbar
+13	20	dl		confirm	M	small hook/circle shape
+13	21	p		confirm	M	loop/flourish shape, resembles start of word "Pur"
+13	22	_		plain	M	continues word-like shape from pos21
+13	23	_		plain	M	small tail shape below line
+13	24	_		plain	H	legible word-like fragment "amt"
+13	25	p		confirm	M	loop shape, resembles start of word "par"
+13	26	_		plain	H	legible word-like fragment "ars"
