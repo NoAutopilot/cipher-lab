@@ -365,10 +365,12 @@ Grade M throughout (model-read from images, not a transcription; content-type/de
 
 **Flag — a decipherment DOES exist in this dossier, on a separate leaf, not interlined:** canvas 170 (folio 87)
 is headed, in clear French in a contemporary hand, "Dechiffre de la lettre de M.r le Comte de Brienne du 21
-9.bre [septembre] 1659" (Deciphered from the letter of the Comte de Brienne of 21 September 1659) and carries a
+9.bre [novembre — correction, 24 Sept 2026: "9.bre" is the standard period abbreviation for novembre (7bre =
+septembre, 8bre = octobre, 9bre = novembre, Xbre = décembre); the prior pass's gloss "septembre" was wrong] 1659"
+(Deciphered from the letter of the Comte de Brienne of 21 November 1659) and carries a
 full plaintext transcript — but as a standalone leaf, not written over or beside the cipher. The adjacent
 ciphered letter (folio 86, canvas 168-169) opens "Monsieur, La lettre qu'il vous a pleu de m'escrire du 8e ce
-mois..." and is dated by its neighbours to the same autumn 1659 run; the date match (21 September) between the
+mois..." and is dated by its neighbours to the same autumn 1659 run; the date match (21 November) between the
 decipherment's heading and the letter's likely date is suggestive but **not confirmed** this pass — the two
 were not cross-read token by token, and folio 86's own leaf carries no explicit date in the portion read. This
 is exactly the Dupuy-468-style pattern the catalogue's "souvent accompagnee du dechiffrement" describes, just
