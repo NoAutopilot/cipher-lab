@@ -180,6 +180,24 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    the two disagree on more than a tenth of the rows.
 7. **Stop when the brief is met.** A worker does not continue into follow-ups (a sweep of sister copies, an
    audit of its own) that its brief did not name; it writes the follow-up as a one-line suggestion in NOTES.md.
+8. **Shared scripts before new ones (24 Sept 2026).** Each has `--help` and an offline test in `tools/tests/`; a
+   target that needs something they lack gets an option added to the tool, not a private copy.
+   `tools/gallica_folio.py ARK --folio 35` reads the manifest's canvas labels once, gives the canvas and native image
+   URL, and reports every offset change and duplicate label (fr.20140 changes offset at f.50v; fr.16092 is all 'NP',
+   so give it eye-checked `--anchor canvas=folio` pairs and it tests them for one offset).
+   `tools/iiif_lines.py --ark ARK --canvas N --region x,y,w,h --out ciphers/<t>/images --debug` fetches the region
+   once at native resolution, finds lines by row ink profile (`--distance`, `--prominence`), cuts crops under
+   2500 px wide, writes images/manifest.json entries, and keeps the folder under 30 MB by shrinking only its own
+   reference copies. Check the debug overlay before handing crops to a pass.
+   `tools/reconcile_passes.py passA.tsv passB.tsv [passC.tsv] --crops images/crops` aligns the passes per line and
+   writes disagreements.tsv (only what the reconciler must settle from the image), ciphertext_draft.tsv and
+   agreement.tsv; `--halves` joins a/b half-line crops, `--split-chars` splits unsegmented digit groups.
+   `tools/decode_key.py ciphers/<t> [--check]` applies key.tsv (and exceptions.tsv) to the ciphertext, grades every
+   token and fails when the committed reading is stale (rule 7); a target describes its layout in decode.json
+   instead of writing a decode.py (examples: tools/tests/decode_configs/, which reproduce Gramont, Danzay and Anhalt).
+   `tools/print_check.py ciphers/<t>` runs phrases.txt against sources.tsv and, unasked, against the whole of IA
+   full text, Google Books and OpenAlex; writes print-check.tsv and print-check-hosts.tsv. Its 'no hits' is a
+   search result for the log, never a novelty verdict (rule 10).
 
 ## Access playbook
 

@@ -119,3 +119,27 @@ What we should adopt in cipher-lab now:
 - Dupuy 468: the catalogue's bracketed attribution (Anhalt, 1515/16) was wrong, and the solver's edition search followed it. The verifier caught it from the decoded text ("ego filius ... Luneburg", "ego Joachimus"). Test the attribution against the plaintext before the edition search, and treat a catalogue's square brackets as a hypothesis.
 - A decipherment on the leaf makes the reading a recovery and rules out "first" wording even at N3; the honest product is a transcription of the old decipherment plus what its key reads beyond it.
 - Same night, Dupuy 468: verified N3, then found in print two hours later by an adversarial second audit, in the Reichstagsakten volume the first verifier had excluded after re-dating the letter to 1518/19 (it is 24 Jan 1520, and the senders it inferred were right). Two rules follow. A verifier's own re-dating or re-attribution widens the edition search to every volume within two years of every plausible date; it never narrows it. And nothing above N1 is called a result until a second, adversarial session has tried to find it in print, which is now gate 2 in CLAUDE.md's Outreach rule. Cost of the whole Dupuy 468 chain: about $65 for a contribution (the Latin cipher original identified for a printed letter, the catalogue's date and senders corrected).
+
+## 24 September 2026: the five shared scripts, and why they exist
+
+By 24 Sept the ledger showed the same four jobs rebuilt in every target folder: cutting line crops from a Gallica
+leaf (three crop.py copies, and the Opus f.30 Gramont worker spent its whole cap cutting crops by hand), aligning two
+blind passes (the Raince, Gramont and Paleologue reconcilers each spent their first dollars on it), applying a key with
+grades and a --check (six decode.py copies), and searching decoded phrases in print (every verifier and check-solved
+worker wrote its own; the Jacqueton and RTA prior prints were missed because nobody listed those sources). Four
+workers also flagged inconsistent canvas-to-folio offsets, and one probed 25 canvases to find a single leaf.
+
+What now does each job, in tools/, each with --help and an offline test in tools/tests/:
+- `gallica_folio.py`: the manifest already labels most canvases ('35r', '1-2r', 'NP'). Read the label, not a
+  formula. fr.20140 has a duplicate '50v' and the offset changes there; fr.16092 and fr.5160 label every canvas 'NP',
+  and two eye-checked anchors on fr.16092 (canvas 30 = f.14, canvas 70 = f.21) do not fit one offset at all.
+- `iiif_lines.py`: the dupuy452 ink-profile method with its parameters exposed and a debug overlay. Look at the
+  overlay before a pass starts; a missed or split line costs a whole pass.
+- `reconcile_passes.py`: the reconciler's work is the disagreement table, not the alignment. On Gramont f.30 the
+  two blind passes agree on 1195 of 2010 signs (59.5%, the figure reconcile_f30.py gave), so about 800 positions need
+  the image; the other 1200 need nothing.
+- `decode_key.py`: the three existing decoders differ only in file layout and print style. With a decode.json each,
+  it reproduces the Gramont (f.29r, f.30), Danzay (f.35, f.36r) and Anhalt readings byte for byte, grades included.
+- `print_check.py`: always searches beyond the listed sources (IA full text across all items, Google Books,
+  OpenAlex), because the listed sources are what the last worker already thought of. A 429 stops that host for the
+  run (OpenAlex answered 429 on the first live call on 24 Sept, with the open-index worker running).

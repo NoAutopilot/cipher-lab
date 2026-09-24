@@ -7,3 +7,8 @@ Read CLAUDE.md (rules 3, 4, 7, 10). Target: <folder>. Input: ciphertext.txt and 
 plaintext named here. Produce readings with per-token grades and a script (decode.py --check) that
 regenerates them. Report what was read and what was not found, with the search log of any print check you
 ran. Do not classify novelty; do not continue into sweeps or audits the brief did not name. + common tail.
+Scripts (24 Sept 2026; CLAUDE.md Usage 8): regenerate readings with `tools/decode_key.py <folder> [--check]` and a
+decode.json in the folder (examples in tools/tests/decode_configs/) rather than a new decode.py; when you run a print
+check, put the distinctive decoded phrases in phrases.txt and the editions in sources.tsv and run
+`tools/print_check.py <folder>`; cite print-check.tsv and print-check-hosts.tsv in the search log. Its results are
+search results only; novelty stays the verifier's.
