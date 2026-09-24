@@ -472,3 +472,16 @@ above -- "No key on file fits").
 **Conclusion:** no key of Salviati's 1525-26 Spanish legation, and no Secretariat-of-State-for-Spain key of this date under Clement VII/Giberti, found in any of the eight sources searched. LANE R4 I's "no key on file fits" (above) stands; this pass adds two Salviati-linked keys from a later decade (Meister 1906, neither a design match) and confirms the legation's dates independently (Pieper 1894) without adding a testable key. Not scored closed-negative (this is a location search, rule 3's matched-control requirement does not apply to a key search).
 
 Requests: WebSearch 6 queries. archive.org 3 full-text fetches (Meister 1906, Carte Strozziane vol.1, Pieper 1894), each a single request, no repeats. be-api.us.archive.org 2 fts queries, >=1.5s apart. api.openalex.org 3 queries (keyed, `Authorization: Bearer`), >=1.5s apart. api.semanticscholar.org 1 query (keyed, `x-api-key`). No Gallica, no de-crypt.org, no credentials printed.
+
+## Leaf f.55r priced, rest not bought (24 Sept 2026, 19:35 UTC, LANE R5 orchestrator)
+
+LANE R5 worker A (Sonnet, cap $8, session_01AM1QY9fyfJjhREPeKiD3Yq) ran J's box-keyed procedure on f.55r: boxes, strips and pass A
+(`passA_f55r.tsv`, 553 boxes, all 19 lines) are committed; it passed its cap at $9.37 with the blind pass B still running and was
+interrupted, so there is no pass B and no gate figure for f.55r. Price: more than $9.4 a leaf against the $6.5 J measured on f.54v.
+The five leaves still needed (f.55v-f.57v) would cost about $50-60 in transcription alone before the cm control can be run, so the
+lane did not buy them. The code+mark homophonic model (cm) stays **untested, not negative** (P's curve: it needs about 2,800 sign
+tokens and the transcribed text holds 719, plus 553 boxes of pass A on f.55r).
+A key search (LANE R5 B, section above) found no Salviati 1525-26 key in eight sources.
+Suggestion (not spawned): a cheaper route to 2,800 tokens is one script-plus-one-pass transcription (classifier call confirmed by a
+single reader, no blind second pass) for f.55v-f.57v, used only to test cm at N; a hit there would then justify second passes. Or a
+key: the Sessa/Clement VII 1525 treaty cipher B noted (Kolosova Ko.1, `sources/cryptiana/web/spanish2C.htm`) is a design to compare.

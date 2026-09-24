@@ -1,4 +1,4 @@
-open
+blocked
 
 
 **Edition check (LANE N3 csED, 24 Sept 2026 15:45 UTC):** hold lifted -- verdict `open`. Ribier's *Lettres et
@@ -337,3 +337,9 @@ the calculus); no ciphertext file for any line.
 **Requests this session:** no fetches (disk-first; native source and page region already on disk from workers
 K/O). Subagents: 1 (Sonnet, blind pass B on the same 3 lines, 63 boxes, general-purpose agent, model override
 sonnet). Folder size unchanged from worker O's pass (no new images).
+
+## Status set to blocked (24 Sept 2026, 19:35 UTC, LANE R5 orchestrator)
+
+After LANE R5 C's coarse-bucket gate (42.9%, lines 9/5/15 at 38.1/52.4/38.1%, nine loop/hook codes merged to three), f75L is not
+box-keyable at this image quality. Status `blocked`: it needs a different capture (a higher-contrast or multispectral image from
+BnF) or a key of Seure's 1558 embassy. No reconciler was spawned, per the lane brief.
