@@ -709,6 +709,88 @@ should retry source 2 fresh rather than resume mid-sweep. (4) M25's two Arsenal 
 Bastille volume) may turn out to be the same underlying correspondence read from two different registers
 (sender's letter-book vs. recipient's file) rather than two independent sources — not resolved this pass.
 
+**Fifth pass, 24 September 2026 (LANE G2 worker X).** Brief: sweep the three broad archivesetmanuscrits.bnf.fr
+terms the Fourth pass could not page past its pagination cap (`chiffre`, `en chiffre`/`en chiffres`, `avec
+chiffres`), bucketed to stay under that cap. Zero new candidates survived; a full negative writeup, since the
+method took most of the pass to establish and is worth recording for the next worker.
+
+**Control.** `TEXTE_LIBRE_INPUT=lettre avec chiffres` (no bucketing, `resultatRechercheSimple.html`) reproduces
+the Fourth pass's control: 976 raw hits, Clairambault 1067 (M18) directly visible. The bucketed method adopted
+below (date range + `TEXTE_LIBRE_INPUT=avec chiffres`, `DATE_DEBUT_INPUT=1600&DATE_FIN_INPUT=1699`,
+`DOC_NUMERISE_INPUT_RADIO=docs_numerises`) also surfaces Clairambault 1067 directly in its first page of
+results (213 total for that bucket) — **control passed** for the bucketing method actually used.
+
+**Bucketing method tried and abandoned: per-fonds via `INTITULE_INPUT1` or the department-checkbox filter.**
+The Fourth pass's caveat (2) flagged `INTITULE_INPUT1` as "tested working for `INTITULE_INPUT1=Dupuy`" — true
+as a filter (it does change the result count), but it fails the control: `INTITULE_INPUT1=Clairambault` +
+`TEXTE_LIBRE_INPUT=chiffre` returns only 1 result (a Noailles item, itself M4's duplicate), and misses M18, M17,
+M19, M2 — all real, digitised, already-catalogued Clairambault cipher items — because `INTITULE_INPUT1` matches
+literal text in the **item's own** title field, not the inherited fonds/volume breadcrumb; most item-level
+Clairambault records never repeat the word "Clairambault" in their own catalogued title (only their ancestor
+record does). Confirmed at scale: `INTITULE_INPUT1=Clairambault` alone (no term) returns 201 records, so the
+fonds does have ~200 records with the literal word in-title, but the actual cipher items are not among them.
+`INTITULE_INPUT1=Français` fares better (219 for `chiffre`+digitised, plausible since Français items are
+routinely catalogued "Français NNNN . <title>") but is not a safe general method. The department-checkbox
+mechanism (`NUMERO_DEPARTEMENT_INPUT`, populated client-side by `js/common.js`'s `construireDepartementListe()`
+as `id<N>;` from the collection tree fetched via `popoverFiltreCollections.html?bloc=1&paramBox=1`, which does
+give real fonds-level IDs, e.g. `id379`=Clairambault, `id1293`=Français 762-1070, full list in this pass's
+scratch) **could not be reproduced by direct POST**: every value format tried (`id379;`, `379;`, with and
+without the parent `id85;` prepended) returned the exact unfiltered baseline count (5579 for `chiffre`+
+digitised), meaning the field is silently ignored outside the real browser session. Not pursued further
+(browser-tool reproduction would cost this pass's whole budget); flagged for whoever returns with the browser
+tool. The `recalculFacets.html?val=...&filtre=LibelleDepartement` facet-narrowing link (department-level only,
+too coarse for fonds anyway) also failed to narrow when fetched directly by GET on the same session — same
+likely cause.
+
+**Bucketing method used: date range.** `DATE_DEBUT_INPUT`/`DATE_FIN_INPUT` (`DATE_CATEGORIE=DATE_DE`) does
+genuinely filter and passes the control (above). It is coarser than hoped: century-wide buckets for these three
+terms still return 125-1471 results each (these "Recueil" volumes are catalogued with wide date spans, so a
+date filter narrows less than it looks like it should), and this pass's second finding is that **pagination
+past page 1 does not work through this session at all** — every `?pageEnCours=2` (or higher) follow-up, on
+either `pageResultatRechercheAvancee.html` or `resultatRechercheSimple.html`, GET or POST, with or without a
+matching `Referer` header, fresh cookie jar or not, returns "ERREUR RESULTATS" / "Aucun résultat" instead of the
+next 50 rows — reproduced on six different queries including a legitimate 5579-result set. This is a genuine
+regression or session limitation from what the Fourth pass reported ("capped by the site itself at a handful of
+navigable pages", implying pages 2-4 did work then); not resolved this pass, flagged as the concrete blocker for
+whoever returns to this host. **Net effect: only each bucket's first ~50 results (default page size) were
+seen**, so this pass's sweep is a sample of page 1 per bucket, not exhaustive, for every bucket over 50 —
+which is all nine buckets run. `archivesetmanuscrits.bnf.fr` also gave seven `ws_closed_mid_exchange` proxy-side
+resets this pass (confirmed via `/__agentproxy/status`, not a site block), each retried once per the
+good-citizen rule, all recovered.
+
+**Nine buckets run**, `avec chiffres` / `en chiffre` / `en chiffres` × centuries 1500-1599 / 1600-1699 /
+1700-1799, digitised only. Raw page-1 rows: 525 (354 unique arks after dedup). Noise/context filter (Fourth
+pass's own regex: drop foliation/pagination/numérotation/cotation/microfilm noise, then require a
+correspondence-context word — lettre, dépêche, ambassade, secret, correspond-, roi/duc/cardinal/reine,
+instructions, négociat-, envoyé, ministre, cour): 25 kept. Full table with each row's resolution:
+`sources/solver-diffs/2026-09-24-lane-g2-gallica5.tsv`.
+
+**All 25 resolved, zero new.** Twelve are already-known duplicates under a different search path: Clairambault
+328 (already in the Fourth pass's own Exclusion list, DECODE record, dropped), 348 (same 296-582 cluster as
+M17), 349 = M17, 351 = M2, 1067 = M18 (the control item), 1108 = M19, 1225 = M4's Paget item, Dupuy 452 =
+M4-M7's Carpi batch, and one item inside BnF Français 6204 = M12 (a "Chiffre avec M. d'Usson, 14 sept. 1701" key
+register entry — M12's own QUEUE.md text names this exact clause verbatim). Five fall inside the Fourth pass's
+own wholesale exclusion of Français 3005-3993 (the Ligue/Nevers "Recueil de lettres et pièces originales" run,
+covered by Tomokiyo's catalogue articles and Bourdeau's `bourdeau-named:fr.3xxx` convention): Français 3462 and
+3944 themselves, plus three items inside them (a Cesare Ceppo cipher-and-decipherment and a Marguerite
+Paléologue-to-duc-de-Nevers cipher letter among them — not individually re-verified against the exclusion this
+pass, flagged in case a future worker narrows that wholesale exclusion and wants to check these two by name).
+Eight are false positives from the context-word filter matching an unrelated clause on the same catalogue page
+(a Desportes poetry recueil, a psalter, an Arabic ghubar-numeral treatise, a Clairambault payroll list, four NAF
+administrative-accounts volumes) — genuinely not cipher items, not duplicates.
+
+**Report:** raw 525, unique arks 354, kept (noise+context filtered) 25, digitised 25/25 (digitised filter was
+applied at query time), ciphertext-confirmed 0 (nothing survived dedup to reach the image-check step; no image
+was opened this pass). Requests: archivesetmanuscrits.bnf.fr ~55 (search POSTs, popover/collection-tree fetches,
+pagination-mechanism probes, all ≥1.5s apart; 7 proxy-side resets each retried once). No subagents, no logins,
+no images. Under the $6 cap.
+
+**Next step, concrete.** The pagination failure is this pass's real finding, not the zero result: a worker with
+the browser tool should (a) reproduce `pageEnCours=2` in an actual browser session to see whether it still
+"ERREUR RESULTATS"s or whether this curl session specifically lacks some header/state a browser sends, and (b)
+if browser pagination works, resume these same nine buckets past page 1 rather than re-running them, since the
+control and the bucketing method are already validated here.
+
 ## Digitised candidates outside the BnF (scout of 24 September 2026)
 
 Row 14 continuation: a browser-tool pass (CLAUDE.md Access playbook route 2) on the six hosts the 23 Sept
