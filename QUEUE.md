@@ -5157,3 +5157,115 @@ www.googleapis.com 2 (volume metadata), books.google.com ~26 (`jscmd=SearchWithi
 apart, browser-descriptive User-Agent), well under the 40-request cap for the combined host pair. No HathiTrust,
 BSB, ONB or archive.org calls needed -- Google Books gave readable, searchable text at the first step of the
 brief's routing order, so the chain stopped there.
+
+## CS2 copy-order rows: holding-archive viewers (LANE N4 scARCH, 24 September 2026 18:59 UTC)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n4-scARCH.md`. For each of the 22 copy-order CS2 rows (`sources/
+solver-diffs/2026-09-24-cyphersolver-site.tsv`), tested whether the holding archive's *own* digital viewer serves
+the leaf at readable size now (DECODE's 200-px thumbnails don't count, per LANE N2 addition (d)). No DECODE
+login used. gallica.bnf.fr not used (reserved to the Gallica-slot scout; three of these rows are BnF items and
+are noted as out of this brief's host scope, not re-checked).
+
+**Three rows flip to copy-free**, all at the Nationaal Archief's own viewer (nationaalarchief.nl), which serves
+full-resolution JPEG scans (2-4 MB each) plus a IIIF endpoint (`service.archief.nl/api/file/v1/...` and an
+`info.json`) directly from the item's own metadata (`"availability":"DIGITALIZED"`), no login needed:
+
+- **CS2-18** -> `KHA Prins Willem V inv.196, target Fagel inv.5206` **-- state changes to copy-free.** The
+  strongest lead Bourdeau names ("Fagel inv. 5206, digitised decipherments of 1752-53 Hellen letters, scans not
+  retrieved") is **not** at KHA -- it is the Fagel family archive at the **Nationaal Archief, toegang 1.10.29**
+  (Inventaris van het archief van de familie Fagel, 1513-1927), invnr 5206, unittitle "Van Von Hellen ('Sieur
+  H'), Pruisisch zaakgelastigde bij de Republiek, 1752-1753" -- an exact correspondent/date match for the CS2-18
+  Hellen-to-Frederick-II letters. Tested: `https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/
+  5206` returns item metadata with 3+ full-page scans (2,745,968 / 4,037,271 / 4,120,822 bytes), `availability:
+  DIGITALIZED`. The other 8 ciphertexts (KHA Prins Willem V inv.196 itself, R1045-R1049/R1060/R1061/R1953/R1046)
+  were not re-checked this pass; only the named target inv.5206 was in scope. **Recovery lane: this is a
+  ready-to-fetch key/decipherment source, not yet fetched.**
+- **CS2-21** -> `NA The Hague 02.01.08 inv.281` (row's own shelfmark had a stray leading zero) **-- confirmed
+  copy-free, state unchanged (already correctly read as needing NA, this pins the exact viewer).** Correct
+  toegang is **2.01.08** (Ministerie van Buitenlandse Zaken, 1796-1810). `https://www.nationaalarchief.nl/
+  onderzoeken/archief/2.01.08/invnr/281` -- unittitle names Van Spaen and Van Riemsdijk, the commissioners named
+  in the CS2-21 summary; `availability: DIGITALIZED`, scan `NL-HaNA_2.01.08_281_0001.jpg`, IIIF `info.json`
+  present.
+- **CS2-22** -> `NA The Hague legatie Turkije inv.804` **-- confirmed copy-free, state unchanged (pins the exact
+  viewer).** Toegang **1.02.20** (Inventaris van het archief van de Legatie in Turkije, 1668-1810). `https://
+  www.nationaalarchief.nl/onderzoeken/archief/1.02.20/invnr/804` -- unittitle "Uitgaande brieven aan de
+  Staten-Generaal. Afschriften.", `availability: DIGITALIZED`, full JPEG 2,126,703 bytes
+  (`NL-HaNA_1.02.20_804_0001.jpg`) plus IIIF.
+
+**KHA-proper rows (Prins Willem V personal archive, accession A31 at koninklijkeverzamelingen.nl, *not* the
+Nationaal Archief) -- viewer exists, item not pinned down this pass.** `koninklijkeverzamelingen.nl/archief/a/
+a31` confirms A31 itself carries thousands of scans across its sub-fondsen (A31-A: 152 scans, A31-B: 1094 scans,
+etc.), so the archive is substantially digitized and does have its own viewer, but its URLs are a nested
+breadcrumb-slug tree (`.../a31/a31-a/a31-a-vi/...`), not a flat `inv.NNN` path -- a guess at `/archief/a/a31/
+a31-192` 404s, and the CMS search API (`cms.koninklijkeverzamelingen.nl/api/archive/search`) needs a browser
+session (redirects on a plain GET). Given the CS2-18/Fagel result above, the other "KHA Prins Willem V" items
+may also actually sit at the Nationaal Archief under an adjacent Fagel-family or Stadhouderlijke Secretarie
+toegang rather than at KHA itself -- worth checking there first, not KHA's own nested browser:
+  - **CS2-08** (KHA Prins Willem V inv.198, DECODE R1955, Michell1751 sibling) -- state unchanged, copy-order.
+  - **CS2-19** (KHA Prins Willem V inv.337, target KHA A31-902) -- state unchanged, copy-order. A31-902 not
+    resolved this pass.
+  - **CS2-20** (KHA Prins Willem V inv.337, DECODE R2236) -- state unchanged, copy-order.
+  - **CS2-32** (KHA Prins Willem V inv.192, DECODE R1052-R1076/R2067, Affry) -- state unchanged, copy-order;
+    low priority per the scCS2 scout note (already 86% read by Bourdeau with the key already named).
+
+**Dresden (CS2-09, Saxon Main State Archive Dresden, DECODE R5005-R5008) -- viewer exists, item not pinned down
+this pass.** `archiv.sachsen.de` is reachable (200) and its own search (`archiv.sachsen.de/cps/suche.html?q=...`)
+is live and does flag digitized items inline in results per the site's own help text ("If a digitalized version
+exists, you will find it with the respective archival item"). A single-surname query ("Zeschau") returns 291
+results, too broad to hand-narrow within this brief's cap; a multi-word query ("Zeschau Seebach Chiffre")
+returns 0 (the search is not free-text-friendly). Our cached shelfmark for R5005-R5008 is only "Saxon Main State
+Archive Dresden" -- no Bestand/Signatur -- so a specific-item test needs the DECODE record's own metadata first
+(out of scope: no DECODE login for this worker). State unchanged, copy-order.
+
+**Bavaria (CS2-13, BayHStA Kurbayern Aeusseres Archiv 4591 f.96-114, 274-277, DECODE R9319/R9424) -- viewer
+exists, item not pinned down this pass.** `gda.bayern.de` redirects (301) to its finding-aids database at
+`gda.bayern.de/gvl/archive.xhtml`, a Jakarta Faces (PrimeFaces/"ActaProWeb") app: the search itself is a
+stateful postback (ViewState-based, same shape as the Lambeth/GPP CalmView case in the access playbook) and
+needs a browser session to drive, not a plain GET/POST. Not tested to item level this pass given the brief's
+per-host budget; a worker with the gda.bayern.de viewer slot and `tools/browser_fetch.js` should try the finding
+aids search for "Kurbayern Äußeres Archiv 4591" directly. State unchanged, copy-order.
+
+**Mantova (CS2-12, Archivio di Stato di Mantova, Archivio Gonzaga, DECODE R1854, 1428 letter) -- no public
+viewer found for this item.** The Archivio Gonzaga's own digital project, "Banche Dati Gonzaga"
+(banchedatigonzaga.centropalazzote.it), is a curated subset (necrological registers 1496-1694 and similar named
+series), not a general document viewer, and does not appear to cover 1428 diplomatic correspondence; SIAS
+(sias-archivi.cultura.gov.it) is a finding-aid/inventory system, not an image server. State unchanged,
+copy-order.
+
+**Vatican (CS2-23, CS2-24, CS2-25, CS2-29 -- ASV/AAV Segretario di Stato doss.7/doss.10, Spagna 1A, Francia
+104) -- no copy-free public viewer.** The Archivio Apostolico Vaticano's own "Consultazione" page states
+digitization enables remote consultation for *qualified scholars* (a Master's degree or equivalent, an
+application, consultation currently open only through the pontificate of Pius XII/Oct 1958) -- this is
+credentialed scholar access, not a public copy-free viewer, and is a separate institution from the Vatican
+Library's DigiVatLib (already closed as a tested negative per this brief). All four rows: state unchanged,
+copy-order.
+
+**British Library (CS2-10, CS2-11 -- BL Add MS 32280, BL Add MS 32287) -- not retested.** LESSONS.md already
+records the BL viewer as offline since the 2023 cyber attack; both rows' own TSV notes say the same. State
+unchanged, copy-order, no host request spent confirming a known negative.
+
+**Not addressed this pass (out of host scope or already handled elsewhere):**
+- **CS2-03** (BnF fr.15564, ark unconfirmed) and **CS2-15** (BnF fr.2988, Gallica likely) -- BnF/Gallica items;
+  gallica.bnf.fr is reserved to the Gallica-slot scout this session, not this brief's host list.
+- **CS2-30** (BnF fr.5190/fr.3758) -- already checked by the scCS2 scout itself (fr.3758 copy-free but the
+  cipher folios are in fr.5190, not digitized past manuscript p.80); nothing new to add without Gallica.
+- **CS2-14** (Beinecke Mellon MS 29) -- already confirmed copy-free and captured by LANE R4 (Beinecke IIIF,
+  session_01C3rmpqmk4CZ2gUbGy3AjfV), not retested.
+- **CS2-27** (Archiwum Sanguszkow, Krakow) -- already checked by csCS2c (szukajwarchiwach.gov.pl's own record:
+  "No scans / photos"), confirmed-negative already logged; not retested.
+- **CS2-07** (Nicolas Desmarets/Marly, DECODE R10198) -- our cached data names no holding archive or shelfmark
+  at all beyond "Marly", so no archive viewer could be identified or tested this pass; needs the DECODE record
+  itself first (out of scope, no login).
+
+**State-word changes in this file:** CS2-18 copy-order -> **copy-free** (see above; the other 21 rows keep their
+existing state word). No ciphers/ folders created, no nomination lines (scouts never post them, per LANE N2
+addition (e)); the three copy-free rows (CS2-18, CS2-21, CS2-22) are for the next check-solved batch.
+
+**Per-host report:** `nationaalarchief.nl` 6 requests (2 wrong-format toegang guesses, 4 successful), all
+>=1.5 s apart, descriptive User-Agent, no challenge/403/429. `archiv.sachsen.de` 3 requests. `gda.bayern.de` 2
+requests. `koninklijkeverzamelingen.nl` + `cms.koninklijkeverzamelingen.nl` 6 requests combined. All well under
+the <=25-per-host cap; a 429/403/challenge was not seen on any host. WebSearch: 13.
+
+Citations: D. Bourdeau, cyphersolver, https://dbourdeau.github.io/cyphersolver/, CC BY 4.0 (for the CS2 rows'
+own identifiers); Nationaal Archief (nationaalarchief.nl), item metadata read via its own public site, no login;
+Koninklijke Verzamelingen / Koninklijk Huisarchief (koninklijkeverzamelingen.nl), public site, no login.
