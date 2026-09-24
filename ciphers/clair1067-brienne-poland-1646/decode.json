@@ -1,0 +1,10 @@
+{"jobs": [{
+  "ciphertext": "ciphertext.txt", "format": "tsv", "key": "key_1646.tsv",
+  "reading": "reading_1646.txt", "tokens": "reading_tokens_1646.tsv", "style": "concat",
+  "votes": {"file": "align_1646.tsv", "value_column": "plain"},
+  "voted_grade": "C", "unvoted_grade": "M", "null_values": ["0"],
+  "header": ["Brienne to the Queen of Poland, 19 May 1646, BnF Clairambault 1067 fol.226r-227r: cipher passages under key_1646.tsv",
+             "Key recovered from the interlinear decipherment (dechiffre.tsv) by align_1646.py. Grades (rule 4): {grades_sorted}; {total} tokens.",
+             "C = key value equals the aligned decipherment at this position; M = it does not, or the sign is uncertain.",
+             "Regenerate: python3 tools/decode_key.py ciphers/clair1067-brienne-poland-1646 [--check]", ""]
+}]}

@@ -282,3 +282,76 @@ and this letter uses values above 94 (99-103) and signs (`oo`, `2#`, `9+`, `>`) 
 Files: `relabel_passes.py`, `passA_lines.tsv`, `passB_lines.tsv`, `recon/` (tool output), `build_ciphertext.py`,
 `ciphertext.txt`, `inventory.tsv`. Next step (suggestion only): an alignment worker pairs the interlinear words with
 the group runs line by line; this is a recovery target.
+
+## Interlinear decipherment and key (24 Sept 2026)
+
+Opus reconciler+solver, LANE G. No network: the three 1600 px reference leaves and the native line crops already on disk
+were enough, so none of the four allowed Gallica requests was used.
+
+**Decipherment: yes.** Every one of the 30 cipher lines (f226r_C1-C2, f226v_C01-C14, f227r_C01-C14) has short French
+words written over it in a second, heavier upright hand. The words stand over runs of groups, never over the letter's
+own clear text, and they complete the clear sentences (e.g. clear *Son sens, qui pouvoit estre* + over the cipher *que
+ie communicasse sa despesche a la Reyne*; clear *et que ce seroit* + *assez tost respondre aux Ministres de Mr de
+Mantoue quand ilz renouuelleroient leurs instances*). This is a contemporary interlinear decipherment, not a caption.
+The glosses run across cipher-line ends inside a run of cipher lines (*renouue-* stands over the end of f226v_C05,
+*-lleroient* over C06).
+
+**Transcription.** `dechiffre.tsv` (line, words, conf, note): mine, from the images. `dechiffre_passS.tsv`: one blind
+Sonnet pass (not shown my reading, no key). Normalised line by line, 16/30 identical; most differences are s/f or u/v
+letterforms (*affez/assez*, *feroit/seroit*, *fifte/fisse*). Two of S's readings were adopted after checking the image:
+*despesche* (f226r_C2) and *pour se le conseruer* (f227r_C09, the *se* is on the image). Kept against S: *de Mr de*
+(S *de ceux de*), *de le vandre* (S *de la vendre*), *autre fois pourueu* with one or two struck letters before *autre*
+(S *[del:autre] fais poursuen*). Unresolved: f227r_C11 *le Roy y a[blot]yant* (conf M), f226v_C05 *Mantoue* (M).
+
+**Alignment** (`align_1646.py`, pattern of fr5160's align_f86.py). Each group takes 0-7 letters (0 = null). The
+glosses are joined within each run of cipher lines that has no clear text between (7 runs, `BLOCKS`). An annealed stochastic
+hard EM (6 restarts x 150 sampled sweeps, T 3 -> 1, fixed seed 1646), then hard EM to convergence; no seeds. Output
+`align_1646.tsv` (line, pos, group, plain). Deterministic; about 4.5 min.
+
+**Control (rule 3), run first** (`python3 align_1646.py --control 5`, `control_1646.txt`, line-by-line pairing, same EM).
+Measure: share of the occurrences of repeated groups that carry their group's modal value.
+
+| pairing | consistency | log-lik |
+|---|---|---|
+| true (line by line) | **0.863** | -662 |
+| 5 shuffled line pairings (derangements) | 0.402-0.448, mean 0.419 | -1069 to -1121 |
+| true, runs of lines (final) | **0.922** | |
+
+**Key** (`key_1646.tsv`: code, value, grade C, evidence, occurrences, other values, note). 84 codes: a syllabic
+nomenclator with single letters, syllables and a few words. The commonest: `Z`=s (22/23), `y_`=n (22/22), `~`=i
+(17/17), `v`=t (15/16), `9_`=e (14/14), `_88`=de (12/12), `60`=re (11/11), `24`=le, `65`=se, `75`=ue, `X`=r, `rr`=u
+(10 each), `62`=ro (8/8). Words: `55` que, `18` ie, `28` luy, `52` pour, `36` Mr, `_27` (la) Reyne, `5` fait, `_92`
+des. Nulls: `102`, `103` (line-final). The bar under `9` and `y` is significant (`9_`=e, plain `9`=z; `y_`=n, plain
+`y`=b); overlined and plain `71`, `81`, `82` differ (`_71` au / `71` ti; `_82` ce / `82` o). 32 codes are single
+attestations, 12 carry a real conflict and 8 a minor one (column other_values).
+
+**Reading** (`decode.json` -> `tools/decode_key.py`, rule 7: `python3 tools/decode_key.py
+ciphers/clair1067-brienne-poland-1646 --check` exits 1 when `reading_1646.txt` or `reading_tokens_1646.tsv` is stale).
+Strict C rule, through the tool's `votes` option (the new `voted_grade` option was added for this): a token is C only
+where its key value equals the aligned decipherment at that position; otherwise, and wherever the sign itself is M in
+ciphertext.txt, it is M. **338 tokens: C 307, M 31, H 0, S 0, I 0.** No H: no key sheet was found. C here means
+"agrees with the contemporary decipherer's gloss", so the C values rest on the gloss and on the alignment together.
+The shuffled control is the independent test of the pairing. A leave-one-run-out check has not been run (suggestion
+below). The M tokens are where the EM settled in a local optimum (f227r_C10 *qui fait pour* aligned as u/ifait/po/ur,
+f227r_C07 *vostre Mate*), where the gloss omits a group (`_94` et before *ainsy* on f227r_C05), and the 7 uncertain signs.
+
+Plaintext of the cipher passages, as the gloss gives it (clear words of the letter in brackets): [Son sens, qui pouvoit
+estre] que ie communicasse sa despesche a la Reyne / et en suitte que ie luy fisse sauoir ses Intentions / [et que ce
+seroit] assez tost respondre aux Ministres de Mr de Mantoue quand ilz renouuelleroient leurs instances [et peut estre
+qu'ayants ...] / [pourront] s'oublier de celle la et ainsy le titre du gouuernement de Niuernois le trouuera fortifié
+d'une possession maintenue depuis son absence du Royaume / quant au droict [de Vre Mate ... estably] en faueur des Ducs
+de Niuernois qu'il seroit impossible de le mettre en doubte, ainsy en la pensee de le vandre vostre Mate trouueroit de
+la difficulte, mais pour se le conseruer il y a un exemple qui fait pour elle, en ce que le Roy y ayant autre fois
+pourueu [l'on se contenta ...] au Duc de Neuers de luy promettre le regres.
+
+**Comparison with the other Brienne tables** (`compare_keys_1646.py` -> `compare_keys_1646.tsv`). Of the 84 codes, Tomokiyo
+1647 (DE=46) has 24 of the signs, all with a different value. Tomokiyo 1651 (DE=47) has 30, one with the same value (`y_`
+n; 1651 lists `y` as n), 29 different. fr5160's recovered key_1659 has 31, all different. 28 of the 84 signs occur in the
+fr5160 fol.1 (1653) inventory, which has no values to compare. Verdict: **same design family** (letter-shaped symbols, a
+two-figure syllabic numeral range, a marked numeral series, doubled-letter signs), **a different table**. No shared value
+set, and the one agreement is at chance level.
+
+What was not done: no search for this reading in print (no print check, no novelty classification: that is a
+verifier's job). No leave-one-run-out holdout. No third transcription pass of the glosses. Suggestions: (1) a
+holdout of each of the 7 runs, like fr5160's holdout_f86; (2) a verifier (rule 10); (3) the key tells us which
+signs are nulls and homophones, which may help read other Brienne-to-Warsaw letters of 1646 if any are found.

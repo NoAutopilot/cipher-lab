@@ -1,0 +1,85 @@
+code	value_1646	evidence	occurrences	tomokiyo_1647	tomokiyo_1651	fr5160_key_1659	fr5160_f1_1653_tokens
+5	ifait	1	1	diff n		diff b	0
+9	z	2	4	diff n		diff y	1
+9_	e	14	14	diff n	diff ju	diff y	0
+13	he	1	1	diff ro	diff m	diff gn	1
+18	ie	2	3	diff so	diff r	diff n	0
+22	il	2	2	diff ti	diff x		0
+23	la	3	3	diff to	diff y	diff pr	9
+24	le	10	10	diff tu	diff z	diff i	0
+25	li	1	1	diff va			0
+26	ero	1	1	diff ve	diff no	diff be	1
+_27	areyne	1	1	diff vi	diff ba	diff b	1
+28	luy	2	2	diff vo		diff b	0
+29	leur	1	1	diff vu			0
+31	ma	3	4			diff ce	6
+32	me	3	3				0
+33	mi	1	1			diff c	8
+35	u	1	1			diff da	0
+36	Mr	1	1			diff de	19
+39	ne	3	3			diff du	4
+40	ni	4	4		diff ca	diff fa	4
+41	no	3	3		diff ce	diff e	2
+42	nu	1	1		diff ci	diff fi	0
+48	pe	2	2		diff di		0
+50	po	3	3		diff du	diff ha	0
+51	pu	1	1		diff et		2
+52	pour	2	3		diff est		0
+54	qua	2	3				0
+55	que	3	3		diff fa	diff ja	0
+56	qui	1	2		diff fe	diff n	1
+59	ra	1	1		diff fu	diff ju	0
+60	re	11	11		diff ga	diff la	6
+62	ro	8	8		diff gi	diff i	8
+64	sa	1	1		diff gu	diff lu	3
+65	se	10	11			diff ar	3
+66	sy	2	4			diff me	3
+67	so	1	1				0
+68	su	1	1				2
+69	ta	1	2				1
+70	te	5	6			diff a	1
+71	ti	1	2			diff ne	8
+_71	au	5	5			diff ne	0
+72	to	2	2				3
+75	ue	10	11				0
+77	o	1	1				0
+80	uo	1	1				0
+81	nt	1	1				0
+_81	au	1	1				0
+82	o	1	1				0
+_82	ce	4	4				0
+_84	com	1	1				0
+85	cu	1	1				0
+_86	con	1	1				0
+_88	de	12	12				0
+89	di	1	1				0
+_90	do	1	1	diff qua			0
+_91	du	5	6	diff que			0
+_92	des	1	1	diff qui			0
+_94	et	2	3	diff quu			0
+_99	fi	3	3				0
+_100	fo	2	2				0
+102	0	2	2				0
+103	0	2	3				0
+2#	s	2	2				0
+9+	x	1	1				0
+>	m	2	2				0
+L	d	4	4				0
+X	r	10	10				13
+Z	s	22	23	diff i	diff d		2
+d	c	4	4	diff s	diff b		15
+ff	l	5	5				0
+h_	y	4	4				0
+m	i	1	1	diff o		diff a	22
+m+	x	1	1		diff l		0
+o	a	1	1				0
+oo	p	2	3				0
+p	nt	1	1	diff a			0
+q	o	1	1		diff e		1
+rr	u	10	10				0
+v	t	15	16				0
+w	a	6	8	diff t	diff o		0
+x	t	2	2		diff p		0
+y	b	4	6	diff d	diff n		0
+y_	n	22	22	diff d	SAME n		0
+~	i	17	17		diff s		0

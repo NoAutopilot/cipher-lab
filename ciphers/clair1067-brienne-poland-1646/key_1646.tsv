@@ -1,0 +1,85 @@
+code	value	grade	evidence	occurrences	other_values	note
+5	ifait	C	1	1		single attestation
+9	z	C	2	4	go:1,s:1	conflict
+9_	e	C	14	14		
+13	he	C	1	1		single attestation
+18	ie	C	2	3	t:1	conflict
+22	il	C	2	2		
+23	la	C	3	3		
+24	le	C	10	10		
+25	li	C	1	1		single attestation
+26	ero	C	1	1		single attestation
+_27	areyne	C	1	1		single attestation
+28	luy	C	2	2		
+29	leur	C	1	1		single attestation
+31	ma	C	3	4	s:1	minor conflict
+32	me	C	3	3		
+33	mi	C	1	1		single attestation
+35	u	C	1	1		single attestation
+36	Mr	C	1	1		single attestation
+39	ne	C	3	3		
+40	ni	C	4	4		
+41	no	C	3	3		
+42	nu	C	1	1		single attestation
+48	pe	C	2	2		
+50	po	C	3	3		
+51	pu	C	1	1		single attestation
+52	pour	C	2	3	po:1	conflict
+54	qua	C	2	3	ca:1	conflict
+55	que	C	3	3		
+56	qui	C	1	2	u:1	conflict
+59	ra	C	1	1		single attestation
+60	re	C	11	11		
+62	ro	C	8	8		
+64	sa	C	1	1		single attestation
+65	se	C	10	11	le:1	minor conflict
+66	sy	C	2	4	si:2	conflict
+67	so	C	1	1		single attestation
+68	su	C	1	1		single attestation
+69	ta	C	1	2	so:1	conflict
+70	te	C	5	6	&:1	minor conflict
+71	ti	C	1	2	t:1	conflict
+_71	au	C	5	5		
+72	to	C	2	2		
+75	ue	C	10	11	ua:1	minor conflict
+77	o	C	1	1		single attestation
+80	uo	C	1	1		single attestation
+81	nt	C	1	1		single attestation
+_81	au	C	1	1		single attestation
+82	o	C	1	1		single attestation
+_82	ce	C	4	4		
+_84	com	C	1	1		single attestation
+85	cu	C	1	1		single attestation
+_86	con	C	1	1		single attestation
+_88	de	C	12	12		
+89	di	C	1	1		single attestation
+_90	do	C	1	1		single attestation
+_91	du	C	5	6	fa:1	minor conflict
+_92	des	C	1	1		single attestation
+_94	et	C	2	3	0:1	conflict
+_99	fi	C	3	3		
+_100	fo	C	2	2		
+102	0	C	2	2		
+103	0	C	2	3	ur:1	conflict
+2#	s	C	2	2		
+9+	x	C	1	1		single attestation
+>	m	C	2	2		
+L	d	C	4	4		
+X	r	C	10	10		
+Z	s	C	22	23	re:1	minor conflict
+d	c	C	4	4		
+ff	l	C	5	5		
+h_	y	C	4	4		
+m	i	C	1	1		single attestation
+m+	x	C	1	1		single attestation
+o	a	C	1	1		single attestation
+oo	p	C	2	3	g:1	conflict
+p	nt	C	1	1		single attestation
+q	o	C	1	1		single attestation
+rr	u	C	10	10		
+v	t	C	15	16	0:1	minor conflict
+w	a	C	6	8	al:1,f:1	minor conflict
+x	t	C	2	2		
+y	b	C	4	6	n:1,m:1	conflict
+y_	n	C	22	22		
+~	i	C	17	17		

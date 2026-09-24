@@ -1,0 +1,35 @@
+Brienne to the Queen of Poland, 19 May 1646, BnF Clairambault 1067 fol.226r-227r: cipher passages under key_1646.tsv
+Key recovered from the interlinear decipherment (dechiffre.tsv) by align_1646.py. Grades (rule 4): C 307, M 31; 338 tokens.
+C = key value equals the aligned decipherment at this position; M = it does not, or the sign is uncertain.
+Regenerate: python3 tools/decode_key.py ciphers/clair1067-brienne-poland-1646 [--check]
+
+f226r_C1 | [que][ie][com]mu
+f226r_C2 | [ni][qua]s[se][sa][de][pe]sc[he]a[areyne]
+f226v_C01 | [et]en[su]it[te][que][ie][luy][fi]s[se]
+f226v_C02 | s[au]oitr[se]sin[te][nt]os
+f226v_C03 | as[se]z[to]st[re]s[po]b
+f226v_C04 | d[re][au]x[mi][ni]st[re]s[de][Mr][de]
+f226v_C05 | [ma]n[to]ue[qua]nd[il]z[re][no]u[ue]
+f226v_C06 | l[le][ro]ient[leur]sins
+f226v_C07 | [ta]n[ce]s
+f226v_C08 | [ta]ub[li]er[de][ce]l[le]
+f226v_C09 | [la][et]ain[sy][le][ti]t[re]
+f226v_C10 | [du]zu[ue]r[ne][nt][de][ni][ue]r[no]
+f226v_C11 | is[se]t[ro]u[ue][ra][fo]r[ti]i
+f226v_C12 | [fi]e[du][ne][po]s[se]s[sy]on
+f226v_C13 | [ma]in[te][nu]e[de][pu]is
+f226v_C14 | [so]nab[se]n[ce][du][ro]y[au][me]
+f227r_C01 | [qua]nt[au]d[ro]ict
+f227r_C02 | en[du][ue]ur[des][du]cz[de]
+f227r_C03 | [ni][ue]r[no]is[qui]l[se][ro]it
+f227r_C04 | ib[po]s[sy]b[le][de][le][me]tt[re]
+f227r_C05 | en[do]ub[te][et]ain[sy]en
+f227r_C06 | [la][pe]n[se]e[de][le][ue]nd[re]
+f227r_C07 | [uo][ma][ie]s[te]t[ro]u[ue][ro]it
+f227r_C08 | [de][la][di]a[fi][cu]l[te][ma]is
+f227r_C09 | [pour][se][le][con][se]r[ue]r[il]ya
+f227r_C10 | unexemp[le][qui][ifait][pour]
+f227r_C11 | el[le]en[ce][que][ero]yaya
+f227r_C12 | nt[au]t[re][fo]is[pour][ue]u
+f227r_C13 | [au][du]c[de][ne][ue]rs
+f227r_C14 | [de][luy]p[ro][me]tt[re][le][re]p[re]s

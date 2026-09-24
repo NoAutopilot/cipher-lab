@@ -31,7 +31,7 @@ Inputs (formats found in the repo, detected per file):
 Grades (rule 4): the key row's grade, or H; M when the sign's confidence is in uncertain_conf (or it carries '?'),
 when the value is ambiguous ('a|b'), or when the key row's source is in m_sources or its note contains an m_words
 entry; U (or unkeyed_grade) when the sign is not keyed. Optional 'votes' (per-position plaintext evidence such as an
-interlinear gloss): H where the vote matches the key value, unvoted_grade (S) elsewhere, word_glossed_grade (M) for a
+interlinear gloss): voted_grade (H) where the vote matches the key value, unvoted_grade (S) elsewhere, word_glossed_grade (M) for a
 word sign whose own gloss disagrees.
 
 decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
@@ -47,7 +47,7 @@ decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   uncertain_conf (["M","m","L","l","low","?"]); word_values (list: values shown <w> in the spaced style)
   nonsign       list of tsv signs that are not cipher tokens (punctuation, a word-break marker): kept in the index,
                 not graded; with it, concat prints them and prints word_sep (e.g. '/') as a space
-  defaults (object merged under every job), m_sources, m_words, votes {file, value_column, word_prefix, strip_prefixes}, unvoted_grade, word_glossed_grade
+  defaults (object merged under every job), m_sources, m_words, votes {file, value_column, word_prefix, strip_prefixes}, voted_grade, unvoted_grade, word_glossed_grade
 
 Test: python3 tools/tests/test_decode_key.py (reproduces fr2980-gramont, fr20140-danzay-1557 and dupuy468-anhalt
 readings from tools/tests/decode_configs/*.json, byte for byte, without writing).
@@ -250,7 +250,7 @@ def grade_tokens(recs, key, exc, votes, job):
             vote = votes.get((r['line'], r['pos']))
             if vote is not None and (vote == v or (v.startswith('=') and vote.startswith('=')
                                                    and same_word(vote, v, job))):
-                g = 'H'
+                g = job.get('voted_grade', 'H')
             elif v.startswith('=') and r['gloss']:
                 g = job.get('word_glossed_grade', 'M')
             else:
