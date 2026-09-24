@@ -1,35 +1,64 @@
-# Mechanical reading of Thurloe letter P9 against Tomokiyo's partial key
-# (thurloe.htm), applied unchanged. Regenerate: python3 decode.py
-# Grades: H=13 M=4 U=12 (of 29 cipher tokens total)
+# Reading of Thurloe letter P9 (Gen. Blake to the Protector) from the decipherment printed above the cipher
+# in the 1742 edition (IA collectionofstat03thur pp.611-613 (4 July 1655), djvu 51500-51610),
+# aligned by tools/interlinear_align.py; Tomokiyo's key values kept at H. Regenerate:
+# python3 decode.py
+# Grades over the 55 cipher tokens: 4 not cipher groups (-); of 51 cipher groups
+# H=21 C=14 I=0 M=10 U=6
 #
-# Columns: djvu-line-tag  CLEANED-token  grade  decoded-value-or-token
+# Columns: djvu-line-tag  raw-token  grade  reading  alignment-status
 #==========================================================================
-L51605	20	U	20
-L51605	3&.?	M	3&
-L51605	24.	H	e
-L51605	25.	U	25
-L51605	39.	H	u
-L51605	D0.?	M	D0
-L51605	00.	U	0
-L51605	42.	U	42
-L51605	91.	U	91
-L51605	79.	U	79
-L51605	37.	U	37
-L51605	54.	H	e
-L51605	36.	H	r
-L51605	39	H	u
-L51608	28.	U	28
-L51608	39.	H	u
-L51608	24.	H	e
-L51608	6-/.?	M	6-/
-L51608	33.	H	o
-L51608	34.	U	34
-L51608	64.	U	64
-L51608	6^.?	M	6^
-L51608	36.	H	r
-L51608	38.	H	t
-L51608	39.	H	u
-L51608	32.	H	n
-L51608	28.	U	28
-L51608	38.	H	t
-L51608	42.	U	42
+51509	34.	C	p	agrees
+51509	30.	C	l	agrees
+51509	20.	C	a	agrees
+51509	96.	C	t	agrees
+51509	54.	H	e	agrees
+51509	128.	M	fleet	single-segment
+51509	24.	H	e	agrees
+51509	41.	M	x	single
+51509	34.	C	p	agrees
+51509	24.	H	e	agrees
+51509	22.	M	c	single
+51509	96.	C	t	agrees
+51509	54.	H	e	agrees
+51509	23.	C	d	agrees
+51509	25.	C	f	agrees
+51509	66.	C	r	agrees
+51509	33.	H	o	agrees
+51509	61.	M	m	single
+51509	as	-		clear
+51509	alfo	-		clear
+51538	68.	C	t	agrees
+51538	57.	M	h	single
+51538	54.	H	e	agrees
+51546	24.	H	e	null-or-unaligned
+51546	25.	C	f	agrees
+51546	39.	H	u	agrees
+51605	20	U		null-or-unaligned
+51605	3&.	U		doubtful
+51605	24.	H	e	null-or-unaligned
+51605	25.	U		null-or-unaligned
+51605	39.	H	u	null-or-unaligned
+51605	DO.	-		clear
+51605	00.	U		null-or-unaligned
+51605	42.	U		null-or-unaligned
+51605	91.	M	o	single
+51605	79.	M	b	single
+51605	37.	M	i	conflict:s
+51605	54.	H	e	agrees
+51605	36.	H	r	agrees
+51605	39	H	u	agrees
+51608	28.	C	i	agrees
+51608	39.	H	u	agrees
+51608	24.	H	e	agrees
+51608	6-/.	-		clear
+51608	33.	H	o	agrees
+51608	34.	C	p	agrees
+51608	64.	M	p	single
+51608	6^.	U	o	doubtful
+51608	36.	H	r	agrees
+51608	38.	H	t	agrees
+51608	39.	H	u	agrees
+51608	32.	H	n	agrees
+51608	28.	C	i	agrees
+51608	38.	H	t	agrees
+51608	42.	M	y	single

@@ -1,0 +1,165 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+51509	0	34.	num	34		p	agrees
+51509	1	30.	num	30		l	agrees
+51509	2	20.	num	20		a	agrees
+51509	3	96.	num	96		t	agrees
+51509	4	54.	num	54		e	agrees
+51509	5	128.	num	128		fleet	single-segment
+51509	6	24.	num	24		e	agrees
+51509	7	41.	num	41		x	single
+51509	8	34.	num	34		p	agrees
+51509	9	24.	num	24		e	agrees
+51509	10	22.	num	22		c	single
+51509	11	96.	num	96		t	agrees
+51509	12	54.	num	54		e	agrees
+51509	13	23.	num	23		d	agrees
+51509	14	25.	num	25		f	agrees
+51509	15	66.	num	66		r	agrees
+51509	16	33.	num	33		o	agrees
+51509	17	61.	num	61		m	single
+51509	18	as	clear				clear
+51509	19	alfo	clear				clear
+51538	0	68.	num	68		t	agrees
+51538	1	57.	num	57		h	single
+51538	2	54.	num	54		e	agrees
+51546	0	24.	num	24			null-or-unaligned
+51546	1	25.	num	25		f	agrees
+51546	2	39.	num	39		u	agrees
+51605	0	20	num	20			null-or-unaligned
+51605	1	3&.	doubtful				doubtful
+51605	2	24.	num	24			null-or-unaligned
+51605	3	25.	num	25			null-or-unaligned
+51605	4	39.	num	39			null-or-unaligned
+51605	5	DO.	clear				clear
+51605	6	00.	num	0			null-or-unaligned
+51605	7	42.	num	42			null-or-unaligned
+51605	8	91.	num	91		o	single
+51605	9	79.	num	79		b	single
+51605	10	37.	num	37		i	conflict:s
+51605	11	54.	num	54		e	agrees
+51605	12	36.	num	36		r	agrees
+51605	13	39	num	39		v	agrees
+51608	0	28.	num	28		i	agrees
+51608	1	39.	num	39		v	agrees
+51608	2	24.	num	24		e	agrees
+51608	3	6-/.	clear				clear
+51608	4	33.	num	33		o	agrees
+51608	5	34.	num	34		p	agrees
+51608	6	64.	num	64		p	single
+51608	7	6^.	doubtful			o	doubtful
+51608	8	36.	num	36		r	agrees
+51608	9	38.	num	38		t	agrees
+51608	10	39.	num	39		u	agrees
+51608	11	32.	num	32		n	agrees
+51608	12	28.	num	28		i	agrees
+51608	13	38.	num	38		t	agrees
+51608	14	42.	num	42		y	single
+52301	0	Vol.xxvm.	clear				clear
+52301	1	^jj{^^	clear				clear
+52301	2	23,	num	23		o	conflict:d
+52301	3	27.	num	27		h	agrees
+52301	4	20.	num	20		a	agrees
+52301	5	39.	num	39		v	agrees
+52301	6	24.	num	24		e	agrees
+52301	7	_	clear				clear
+52301	8	27.	num	27		i	conflict:h
+52301	9	33.	num	33			null-or-unaligned
+52301	10	25.	num	25		n	conflict:f
+52301	11	26.	num	26		f	conflict:r
+52301	12	36.	num	36		o	conflict:r
+52301	13	54.	num	54		r	conflict:e
+52301	14	50.	num	50		m	conflict:a
+52301	15	38.	num	38		a	conflict:t
+52301	16	64.	num	64		t	conflict:p
+52301	17	66.	num	66		i	conflict:r
+52301	18	24.	num	24		o	conflict:e
+52301	19	34.	num	34		n	conflict:p
+52301	20	20-	doubtful			ofgreatprepa	doubtful
+52305	0	36.	num	36		j	conflict:r
+52305	1	50.	num	50		a	agrees
+52305	2	22.	num	22		t	conflict:c
+52305	3	58.	num	58		i	single-segment
+52305	4	33.	num	33		o	agrees
+52305	5	32.	num	32		n	agrees
+52305	6	37.	num	37		s	agrees
+52305	7	28.	num	28		i	agrees
+52305	8	62.	num	62		n	agrees
+52305	9	52.	num	52		c	single
+52305	10	20.	num	20		a	agrees
+52305	11	23.	num	23		d	agrees
+52305	12	28.	num	28		e	conflict:i
+52305	13	43.	num	43		z	single
+52305	14	38.	num	38		t	agrees
+52305	15	33.	num	33		o	agrees
+52305	16	37.	num	37		f	agrees
+52305	17	24.	num	24		e	agrees
+52305	18	38.	num	38		t	agrees
+52305	19	25.	num	25		f	agrees
+52305	20	33.	num	33		o	agrees
+52305	21	66,	num	66		r	agrees
+52308	0	68	num	68			null-or-unaligned
+52308	1	S7'	doubtful				doubtful
+52308	2	78-	doubtful				doubtful
+52308	3	55'	num	55			null-or-unaligned
+52308	4	63-	doubtful				doubtful
+52308	5	36-	doubtful				doubtful
+52308	6	22,	num	22			null-or-unaligned
+52308	7	24.	num	24		e	agrees
+52308	8	33.	num	33			null-or-unaligned
+52308	9	83.	num	83			null-or-unaligned
+52308	10	121.	num	121			null-or-unaligned
+52308	11	68.	num	68		t	agrees
+52308	12	6^.	doubtful				doubtful
+52308	13	^5.	doubtful				doubtful
+52308	14	24.	num	24			null-or-unaligned
+52308	15	22.	num	22			null-or-unaligned
+52308	16	39.	num	39		u	agrees
+52308	17	06.	num	6		r	single
+52308	18	54.	num	54		e	agrees
+52308	19	38,	num	38		t	agrees
+52308	20	27.	num	27		h	agrees
+52308	21	24.	num	24		e	agrees
+52310	0	34.	num	34		p	agrees
+52310	1	30.	num	30		i	conflict:l
+52310	2	20.	num	20		a	agrees
+52310	3	^6.	doubtful			tefleet	doubtful
+52310	4	54.	num	54		a	conflict:e
+52310	5	28.	num	28		n	conflict:i
+52310	6	10.	num	10		d	conflict:a
+52310	7	38.	num	38		t	agrees
+52310	8	33.	num	33		o	agrees
+52310	9	68.	num	68		t	agrees
+52310	10	27.	num	27		h	agrees
+52310	11	20.	num	20		a	agrees
+52310	12	38.	num	38		t	agrees
+52310	13	24.	num	24		e	agrees
+52310	14	32.	num	32		n	agrees
+52310	15	23.	num	23		d	agrees
+52310	16	23.	num	23		d	agrees
+52310	17	28.	num	28		i	agrees
+52310	18	39.	num	39		v	agrees
+52310	19	24.	num	24		e	agrees
+52310	20	26.	num	26		r	single
+52310	21	37.	num	37		s	agrees
+52312	0	27.	num	27		h	agrees
+52312	1	63.	num	63		o	single
+52312	2	30,	num	30		l	agrees
+52312	3	30.	num	30		l	agrees
+52312	4	20.	num	20		a	agrees
+52312	5	62.	num	62		n	agrees
+52312	6	81.	num	81		d	single-segment
+52312	7	10.	num	10		a	single
+52312	8	25.	num	25		n	conflict:f
+52312	9	36.	num	36		d	conflict:r
+52312	10	54.	num	54		f	conflict:e
+52312	11	32.	num	32		r	conflict:n
+52312	12	22.	num	22		e	conflict:c
+52312	13	27.	num	27		n	conflict:h
+52312	14	121.	num	121		chfhips	single
+52312	15	38.	num	38		t	agrees
+52312	16	50.	num	50		a	agrees
+52312	17	29.	num	29		k	single-segment
+52312	18	82.	num	82		e	single-segment
+52312	19	90.	num	90		n	single-segment
+52312	20	39.	num	39		u	agrees
+52312	21	34.	num	34		p	agrees

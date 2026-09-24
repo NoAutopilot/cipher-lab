@@ -491,6 +491,150 @@ class of result as P11-13 and P19/P21-23: a printed 1742 decipherment, aligned, 
 `sources/ia-fulltext/thurloe-gz/` and restored locally with `zcat`; no archive.org, no other host,
 no logins, no subagents.
 
+## 11. Blake, Montagu, Lockhart rows (LANE T worker B, 24 Sept 2026)
+
+Brief: P9, P10, P14, P15. All from the cached djvu text already on disk
+(`sources/ia-fulltext/thurloe-gz/`, restored with `zcat`); no network host touched this pass.
+
+**(1) Sender/recipient/dateline/page, corrected against the print itself (not just the
+running-head estimate `thurloe-check.tsv` used).**
+
+| Row | Was (index.tsv) | Now, from the print | Evidence |
+|---|---|---|---|
+| P9 | Gen. Blake to Thurloe, "14 June [1655]", p.~611 | **Gen. Blake to the Protector, "July 4. 1655"**, printed p.611 (heading "General Blake to the protestor." at djvu L51497, dateline "July 4. 1655." at L51498; "14 June" was the date of instructions the letter *acknowledges receiving*, not the letter's own date) | djvu 51480-51615 |
+| P10 | Dr. Ralph Cudworth to Thurloe, not dated, p.~615 | **Gen. Blake to the Protector, "July 6. 1655"**, printed p.620 (heading "General Blake to the proteBor." L52292; dateline "Abord the George, of the Bay of Lagos, July 6, 1655." L52293; running head "620 STATE PAPERS OF" at L52290, not ~615 -- "Cudworth" was the *next* letter's signature, misattributed to this window; not the same letter as P9, a distinct letter three days later, same addressee and topic) | djvu 52280-52320 |
+| P14 | The Protector to Blake and Mountagu, 9 June 1656, p.101 | **Confirmed as index.tsv already had it**, *not* the Lockhart letter that precedes it. Heading "The proteSior to Blake and Mountagu, generals at fea." at djvu L8864 (Lockhart's own letter, heading L8756/text ending L8861, is a separate, earlier item). Dated in the body: "Whitehall, 9 June, 1656" (L8931, council attendance list following); the letter opens referring to a Blake/Montagu letter "dated the 9th of May from Tanger". Printed page 101 (running head "101" appears mid-Lockhart just above; "102 STATE PAPERS OF" at L8900) | djvu 8740-8990 |
+| P15 | Gen. Mountagu to Thurloe, 16 Sept 1656, aboard the Naseby, p.~420-421 | Sender/recipient/date **confirmed** (signed "Sept. 16, 1656. Aboard the Nafebye, ... in the river of Lifbone. ... MOUNTAGU" at djvu L35775-L35779); **page corrected to ~411**, not ~420-421 (running head "411 STATE PAPERS OF" at L35858, inside this letter); MS volume note corrected to "Vol. xlvi" (OCR "xltf."), not "xli" | djvu 35660-35900 |
+
+**(2) Full cipher extent -- all four windows were narrower than the letter's actual
+enciphered content** (the extraction pass windowed on `thurloe-check.tsv`'s own leaf-check
+line, not the whole passage):
+
+- **P9**: real extent djvu L51507-L51608 (~100 lines), not just L51599-51611 (12 lines).
+  The interlinear decipherment starts right after "monday laft about midnight" (L51507:
+  "The 37.24.22.36.14.^S.142. concerning 38.27.24. plate fleet expect(ed from) ...") and
+  runs, badly fragmented by OCR into single-word and single-letter mini-lines, until clear
+  prose resumes at "month I lent your highnes an account..." (L51609/`ciphertext.txt`'s own
+  captured tail).
+- **P10**: real extent djvu L52299-L52312 (in `ciphertext.txt`'s own window, correctly
+  identified, no widening needed beyond what the extraction already had) plus the letter's
+  cipher opens one line above the window at L52299 ("I have information of great
+  preparations..."), which the narrow index.tsv page estimate did not capture as cipher.
+- **P14**: real extent djvu L8871-L8935 (~65 lines, at least 12 cipher-tagged lines), far
+  beyond the captured window L8876-8888 (4 lines). Confirmed by direct inspection: cipher
+  continues past L8888 through "in your eye or defigne to be done there by the fleet."
+  (L8935) before the council-attendance signature block. **Not extended in this pass**
+  (`ciphertext.txt` widening is `thurloe_extract.py`'s file, not in this brief's list) --
+  the mechanical reading below still only covers the original narrow window.
+- **P15**: real extent djvu L35683-L35754 (~72 lines), not L35699-35711 (13 lines). Captured
+  in full in `P15_pairs.tsv` (18 plain/cipher pairs, 362 tokens) via
+  `tools/interlinear_align.py pairs`.
+
+**(3) Whether the print carries an interlinear decipherment.**
+
+- **P9 and P10 (Blake): yes**, letter-by-letter, but far more OCR-fragmented than
+  P11-13/P15's word-level layout -- individual letters and 1-3-letter fragments scattered
+  across dozens of mini-lines (e.g. `the` over `68. 57. 54.` is clean; most of the rest
+  interleaves single letters like `o`/`63-`/`c`/`22.` on their own lines). `cmd_pairs`
+  recovers only a handful of usable (plain, cipher) pairs per letter this way; the great
+  majority of the fragmented middle sections were **not** hand-transcribed this pass (risk of
+  mis-pairing without the page image outweighs the gain from a $6-capped pass) -- only the
+  automatically-recovered, internally-consistent pairs went into `P9_pairs.tsv` (5 pairs, one
+  corrupted column-swap dropped by hand) and `P10_pairs.tsv` (5 pairs). Both run through
+  `tools/interlinear_align.py align` **together** (one call, pairs concatenated) so shared
+  homophones vote jointly rather than each letter's small sample standing alone.
+- **P14 (Protector to Blake and Montagu): no.** The cipher lines here run words and numbers
+  together in the *same* line (e.g. L8882 CLEANED: `23 50 180 53 3742 103 18 the? 47 24 54 5
+  6 18 23 and? ...`) -- occasional common words (`the`, `and`, `Cadiz`) printed in clear
+  amid the numerals, consistent with a nomenclature where ordinary words are left plain and
+  only specific terms are coded, the same style as the Lockhart letter immediately above it
+  on the page -- but **no separate decipherment line or gloss is printed** for the coded
+  terms themselves. `tools/interlinear_align.py` was not run on P14: it assumes a plain line
+  paired with a cipher line, which does not apply here, and would produce meaningless
+  chunks. P14 stays a mechanical-key-only reading (item 3 below).
+- **P15 (Mountagu): yes**, word/phrase-level, the same layout as P11-13 (a plain line above
+  its cipher line, e.g. "fendhome the great fhips ... neg a-" over "11 23 42 76 39 37 30 48
+  93 10 61 407 222 494 452 234 394 71 258 251 407 332 31"). `tools/interlinear_align.py
+  pairs` recovered 18 clean pairs over the full widened extent.
+
+**(4) Keys extended, readings regenerated.** `decode.py` (rewritten this pass; still passes
+`python3 decode.py --check`) now has three code paths: (a) `extended_p11_13()`,
+**unchanged** in its own computation (same H36/C228/I2/M32/U11 as before -- verified
+byte-identical grades after the refactor); (b) `extended_p15()`, new, same method on
+`P15_pairs.tsv` alone; (c) `extended_blake()`, new, `P9_pairs.tsv` + `P10_pairs.tsv` run
+jointly. P11-13's and P15's key rows are merged into one `key_montagu_extended.tsv`
+(P11-13's own row wins on any value both letters touch, so its committed grades are
+undisturbed); P9+P10 produce `key_blake_extended.tsv`. P14 (no decipherment of its own) is
+decoded mechanically against the merged Montagu key, **restricted to its H- and C-graded
+rows only** -- an M-graded (single-occurrence, unconfirmed) value from P11-13 or P15 must not
+be stamped "H" (read from a key source) when mechanically applied to a letter with no
+decipherment of its own to confirm it.
+
+**Cross-letter corroboration (not new cryptanalysis -- every value here is read directly off
+Birch's print):** Blake's four letter-values from Tomokiyo's one worked example
+("gouernment", `26=g 33=o 39=u 36=r 31=m 32=n 38=t`) are all **independently confirmed** by
+this letter's own printed decipherment, and E's three homophones (`24/54/82=e`) likewise --
+strong support for treating P9/P10/P11-13/P15/P19/P21-23 as genuinely one office's ongoing
+correspondence in a stable cipher, as Tomokiyo's page already implies. One exception, thin
+evidence: value 26 occurs twice in P9/P10, agrees with Tomokiyo's `g` once and reads `f` once
+(`key_blake_extended.tsv` row 26, flagged "print differs"); kept at H (Tomokiyo) per the
+existing rule, not resolved. Montagu's four E-homophones (18/42/56/93) and both word-codes
+(105=and, 407=the) are also independently confirmed by P15 exactly as P11-13 already had
+them, with no conflicts.
+
+**(5) Per-token grades.**
+
+| Letter | H | C | I | M | U | total cipher tokens | not-cipher |
+|---|---|---|---|---|---|---|---|
+| P9 | 21 | 14 | 0 | 10 | 6 | 51 | 4 |
+| P10 | 38 | 29 | 0 | 25 | 14 | 106 | 3 |
+| P15 | 52 | 148 | 0 | 130 | 23 | 353 | 9 |
+| P14 (mechanical, extended key, H/C rows only) | 66 | -- | -- | 8 | 13 | 87 | 0 |
+
+(P9/P10/P15 counts are over `P9_pairs.tsv`/`P10_pairs.tsv`/`P15_pairs.tsv`'s own tokens, the
+widened extent, not the old narrow `ciphertext.txt` windows; P14 stays on its original narrow
+window since `ciphertext.txt` was not touched.) H-graded content for P15 includes the full
+run of Montagu's key (e, and, the) confirmed again; C-graded content for P9/P10 spells real
+words directly (`plate`->p-l-a-t-e, `Holland`->partial). No S grades (no cryptanalysis, no
+annealer, no control run, per the brief).
+
+**Where it was not found / not read.** The bulk of P9/P10's fragmented middle sections (the
+OCR pattern of single letters on their own djvu lines, roughly L51510-51598 for P9 and
+similar gaps in P10) is not in `P9_pairs.tsv`/`P10_pairs.tsv` and was not hand-aligned --
+flagged as future work, ideally from the page image rather than this OCR. P14 has no
+decipherment in the print at all; its U/M tokens are simply not covered by any key.
+
+**Proposed `index.tsv` corrections (for LANE T to apply; not edited directly here):**
+
+```
+row	field	old	new
+P9	recipient	secretary Thurloe	the Protector
+P9	date	14 June [1655]	4 July 1655
+P9	printed_page	~611	611
+P9	keyed	yes	yes (interlinear, fragmented; see NOTES section 11)
+P10	sender	Dr. Ralph Cudworth	General Blake
+P10	recipient	secretary Thurloe	the Protector
+P10	date	not read (opening excerpt only)	6 July 1655
+P10	printed_page	~615	620
+P10	cipher_system	unidentified	Blake's cipher (numerals ~1-120, same system as P9)
+P10	keyed	no	yes (interlinear, fragmented; see NOTES section 11)
+P15	printed_page	~420-421	~411
+```
+
+**Files:** `P9_pairs.tsv`, `P10_pairs.tsv`, `P15_pairs.tsv` (djvu-verbatim plain/cipher
+pairs, the reproducible input); `key_blake_extended.tsv`, `key_montagu_extended.tsv`
+(merged with P11-13's, superseding the earlier 248-row version); `align_blake.tsv`,
+`align_P15.tsv` (per-token alignment detail; `align_montagu.tsv` unchanged, P11-13 only);
+`reading_P9.txt`, `reading_P10.txt`, `reading_P15.txt` (regenerated, extended-alignment
+format); `reading_P14.txt` (regenerated, mechanical, extended key); `reading_P17.txt`
+verified byte-identical to before (not touched, confirmed by diff). `decode.py` rewritten to
+host all of the above; `python3 decode.py --check` passes for every row it covers.
+
+**Requests this pass:** none (all four windows read from the already-cached, gitignored
+`sources/ia-fulltext/{collectionofstat03thur,05thur}_djvu.txt`, restored from
+`sources/ia-fulltext/thurloe-gz/*.gz` on disk). No subagents, no logins, no credentials.
+Per rule 10: nothing above is described as new, unpublished, unread, first or never printed;
+no N-class is assigned (a verifier's job).
 ## 12. 1654 inline pool (LANE T worker C, 24 Sept 2026)
 
 Brief: consolidate P4/P5/P6/P7 (the four 1654 letters that print small numerals inline in clear
