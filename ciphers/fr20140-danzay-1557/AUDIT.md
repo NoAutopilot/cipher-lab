@@ -385,3 +385,60 @@ the card's `next` line is updated to match.
 3. The JSTOR rows.
 4. OpenAlex, Semantic Scholar and CrossRef re-queried on another day.
 5. Optionally, ask Daussy (the route to N5).
+
+## Toward N4: Daussy 2001, 24 Sept 2026
+
+LANE V worker, 03:58-04:03 UTC, orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ. Brief: close gap 2 above (Daussy,
+*L'épistolaire au XVIe siècle*, Cahiers V.-L. Saulnier 18, 2001, pp. 211-226) via IA full-text search, then a
+borrow if a term is present or the chapter can't be excluded. No decoding; this section does not assign a class.
+
+**1. Identifier confirmed.** `lpistolaireauxvi0000unse` (`archive.org/metadata/...`): title "L'épistolaire au XVIe
+siècle", 262 leaves, `access-restricted-item: true`. An `advancedsearch` query for the title turned up no other IA
+copy, so this is the only one.
+
+**2. be-api full-text search (no login), whole item** (chapter-level page boundaries aren't exposed by this
+endpoint, so hits below can fall on any of the book's chapters, not just Daussy's pp. 211-226):
+- "Danzay": 1 hit, two snippets, both from what reads as the book's index/name list, not a chapter body: "Charles
+  de Danzay (deux lettres), ambassadeur de France au Dane[mark]" and "Danzay (Charles de) 217, 220" — the same
+  page numbers the first audit's Google Books pass already found (§9). A third snippet, "À un degré moindre, La
+  Fontaine, Charles de Danzay et Arnaud du Ferrier, par qui il a été protégé", is a one-clause aside about literary
+  patronage, with no date and no addressee named.
+- "chancelier": 1 hit, all snippets naming chancelier Guillaume de Rochefort (Louis XI's chancellor, 15th century)
+  or chancelier de Cheverny — different people, wrong century, unrelated to this letter's "DAULTRE PART le
+  chancelier".
+- "cardinal de Lorraine": 1 hit, snippets about Cuisiat's and Dufour's *editions* of the Cardinal's correspondence
+  (bibliographic citations), not a quotation of a letter to him.
+- "1557": 1 hit, snippets are all publication/composition dates of unrelated works and letters (Budé's *Opera
+  omnia* Basel 1557, a Cicero lexicon, a Limoges letter of 5 or 15 Jan./Feb. 1557) — none involves Danzay,
+  Denmark or a cardinal.
+- "Danois", "Augsbourg", "marchans de Lion": 0 hits each.
+- None of the five present-term snippets sits in a context of Denmark, the Cardinal of Lorraine, or a 1557/58
+  despatch together; each is independently explainable by a different chapter or the index. This does not by
+  itself exclude the Daussy chapter (be-api indexes the whole book, and a short quotation could still fall
+  outside these exact strings), but it gives no positive signal either.
+
+**3. Borrow step: found closed before the loan step, not merely obfuscated at the image step.** The no-login
+availability check (`archive.org/services/loans/loan/?action=availability&identifier=...`) returns
+`is_lendable: false`, `is_printdisabled: true`, `max_borrowable_copies: 0`, `max_browsable_copies: 0`,
+`available_to_borrow: false`, `available_to_waitlist: false`. This item is in Internet Archive's print-disabled-only
+access tier, not the ordinary controlled-digital-lending tier that `tools/ia_borrow.py` was built and verified
+against on 23 Sept 2026 (ASKS.md row 18: a normal loan can be held and returned, but the page images come back
+obfuscated for archive.org's own reader and the script correctly refuses to decode them). For this item,
+`browse_book` would not even open a loan — the account IA_USER/IA_PASS reaches is not registered as print-disabled,
+so this is a harder stop than the obfuscation wall, reached without needing to spend a login or hold a loan. No
+change was needed in `tools/ia_borrow.py`: it does not claim to handle the print-disabled tier, and nothing here
+shows it should.
+
+**4. HathiTrust and other copies.** A WebSearch restricted to `catalog.hathitrust.org` for the title and series
+found no record. `archive.org/advancedsearch` for the title found no second IA copy. No further electronic route
+to pp. 211-226 was found this pass.
+
+**Conclusion: gap 2 stays open, and is now stated more precisely.** The chapter is not excluded, and its five
+present search terms are all explained by other parts of the book, none in a Denmark/1557/Cardinal-of-Lorraine
+context. The only copy on Internet Archive cannot be borrowed by an ordinary account (print-disabled tier only),
+so this gap cannot be closed by any of this repository's automated or credentialed routes; it needs a physical or
+institutionally-mediated copy (library ILL, or the person's own print-disability access if applicable) — a
+REQUEST.md/ASKS.md matter for the person, not a further worker pass with these tools. **N3 unchanged.**
+
+Requests: archive.org 9 (1 metadata, 6 be-api fts, 1 availability, 1 advancedsearch), all ≥2 s apart. WebSearch 1.
+No logins attempted (the availability check made login unnecessary), no credentials touched, no loan opened.

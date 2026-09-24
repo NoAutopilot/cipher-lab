@@ -493,7 +493,6 @@ re-examined one by one here.
 
 Suggestion (not done): a Sonnet worker applies the accepted rows and reruns `decode.py --check`. (done: see "Adjudicated and applied" above)
 - Suggestion (second audit, 24 Sept 2026): for N4 on f.35, read Delavaud 1911 (Bull. Soc. normande de géogr. XXXIII, Gallica cb328704148, pp. 49-55) and Daussy 2001 (L'épistolaire au XVIe siècle, pp. 211-226).
-
 ## f.36r lines 2-4, passes (24 Sept 2026)
 
 Follow-up named at the end of "f.36 reading" above: lines 2-4 of f.36r (labels R2, R3, R4) mix cipher signs with
@@ -549,3 +548,5 @@ B reads more shapes as unmatched (`unkN`, see below) or as low-confidence plaint
 
 No reconciliation, sign inventory, key application, or decode attempt follows from this, and no novelty wording
 applies. Cost note: two Sonnet subagents, well under the $5 cap for this worker.
+
+- Toward-N4 gap worker, 24 Sept 2026: the Daussy 2001 chapter gap (above) is closed as far as this repository's tools can take it, not closed positively or negatively. The only IA copy, `lpistolaireauxvi0000unse`, is in Internet Archive's print-disabled-only access tier (`is_lendable: false`, `max_borrowable_copies: 0` on the no-login availability check) — a harder wall than the obfuscated-image limit `tools/ia_borrow.py` already documents for ordinary lending items, since `browse_book` cannot even open a loan on this account. be-api full-text search found all five of the reading's distinctive terms present somewhere in the 262-leaf book (Danzay, chancelier, cardinal de Lorraine, 1557) except Danois/Augsbourg/marchans de Lion (0 hits), but every present-term snippet reads as unrelated to this letter (a different chancellor, bibliographic citations of editions, unrelated 1557 dates, an index/name-list entry with no date). Full log and reasoning in AUDIT.md "Toward N4: Daussy 2001, 24 Sept 2026". This needs a library copy or ILL, not another automated pass; a REQUEST.md/ASKS.md row for the person is the next step, not a further worker.
