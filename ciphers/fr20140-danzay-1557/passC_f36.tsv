@@ -1,0 +1,82 @@
+# Pass C (blind second reader), f.36r cipher lines 36R1-36R4, 24 Sept 2026. Read from images/native_f71.jpg at native and 2x (scratch crops, not committed) before opening ciphertext_f36.tsv or any pass/reading file. Sign codes from key.tsv (shapes only); own codes as pass C f.35: z2, I, Om, ry, plus ?loop. {word} = clear text. Confidence H/M/L.
+line	index	sign	confidence	note
+36R1	1	T	H	
+36R1	2	mu	M	u/reversed-N shape, no descender visible
+36R1	3	bd	M	lozenge with inner vertical stroke and small tick above
+36R1	4	al	M	angular a / alpha with foot
+36R1	5	I	H	capital I (own code, as pass C f.35)
+36R1	6	del	M	round d: v-body with arc rising to the right
+36R1	7	x	H	
+36R1	8	H	H	
+36R1	9	z2	M	plain small horizontal 2 / z (own code z2, as pass C f.35)
+36R1	10	g8	H	
+36R1	11	b6	H	6 with open loop at top
+36R1	12	bd	M	same lozenge as index 3; dot to its right
+36R1	13	xb	M	v/x with bar at base
+36R1	14	xinf	M	double loop (w) with horizontal strike; could be xM
+36R1	15	fd	H	f with long descender
+36R1	16	x	H	
+36R1	17	B	H	sharp-s / B with tail
+36R1	18	x	H	
+36R1	19	eps	M	epsilon on long descender (y-like)
+36R1	20	bl	M	script l with loop and foot
+36R1	21	x	H	
+36R1	22	b6	H	
+36R1	23	pi	M	omega-pi with bar above; pi vs pib not settled
+36R1	24	xb	M	same as index 13
+36R1	25	r2	H	large script 2 with top loop, line end
+36R2	1	le	H	3-shape / yogh
+36R2	2	q4	M	4 with looped head and crossing descender
+36R2	3	mc	H	small script m
+36R2	4	h9	M	9/g with tail curving back left
+36R2	5	T	H	
+36R2	6	ae	H	ae ligature
+36R2	7	g8	H	dot before it
+36R2	8	x	H	
+36R2	9	{fust}	H	clear
+36R2	10	{Et}	H	clear
+36R2	11	{cy}	H	clear
+36R2	12	{telle}	H	clear
+36R2	13	{sorte}	H	clear
+36R2	14	{vous}	H	clear
+36R2	15	{seruy}	M	clear; end of line
+36R3	1	{asseure}	H	clear
+36R3	2	{de}	H	clear
+36R3	3	{faire}	H	clear
+36R3	4	bd	M	lozenge with inner stroke, ascender tick
+36R3	5	mu	M	same u/reversed-N as 36R1 index 2
+36R3	6	z2	M	same as 36R1 index 9
+36R3	7	ae	H	
+36R3	8	g8	H	
+36R3	9	xN	L	script N with hook at left; no cross stroke visible; not in key as drawn
+36R3	10	{quand}	H	clear
+36R3	11	T	H	
+36R3	12	sha	M	three uprights on a baseline bar (underlined m / sha)
+36R3	13	bd	M	same lozenge
+36R3	14	T	H	
+36R3	15	eps	M	epsilon on long descender
+36R3	16	{de}	M	looped d + e, same hand as clear de earlier in the line; read as clear, could be del + unlisted e
+36R3	17	ry	L	r with rising stroke into a descending yogh-like loop ending in a dot; one sign or two (rx + le); ink continuous so one glyph by the image
+36R4	1	q4	M	open 4 / zigzag, first sign of line
+36R4	2	Om	M	lying wave / double arch (own code Om as pass C f.35)
+36R4	3	?loop	L	small loop with stem descending to lower left; no key shape matches clearly (nearest h9 or del)
+36R4	4	iii	M	three separate strokes leaning left, thick
+36R4	5	pp	L	two short crosses (reversed-t then plus) close together; may be two signs
+36R4	6	bd	M	same lozenge
+36R4	7	ae	H	
+36R4	8	bl	M	script l with foot, as 36R1 index 20
+36R4	9	xA	M	A with crossing flourish
+36R4	10	b6	H	
+36R4	11	T	H	
+36R4	12	eps	M	
+36R4	13	fd	H	f with descender and loop at head
+36R4	14	xA	M	same as index 9
+36R4	15	x	H	
+36R4	16	al	M	angular a, as 36R1 index 4
+36R4	17	T	H	
+36R4	18	xM	L	two As (m) with a long horizontal strike
+36R4	19	{fust}	H	clear
+36R4	20	z2	M	plain small 2
+36R4	21	x88	H	double loop with two vertical bars
+36R4	22	ven	M	small circle above a cross (venus)
+36R4	23	iii	M	three thin strokes leaning right, line end
