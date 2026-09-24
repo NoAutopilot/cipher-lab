@@ -60,6 +60,58 @@ pensioner names in the region may be feasible.
 Six-source status: 6/6 checked; 0/6 found a decipherment of this exact record; 1/6 (Bourdeau) holds a verbatim
 transcription and context but explicitly did not attack it.
 
+## Capture and passes (24 Sept 2026)
+
+LANE G2 worker K, brief `.claude/briefs/runs/2026-09-24-lane-g2-k-dc8-dc9-capture.md`, cap $7 shared with DC8.
+
+**Ark and folio.** Found via archivesetmanuscrits.bnf.fr's free-text search (plain `POST resultatRechercheSimple.html`
+with a JSESSIONID cookie from a prior GET, per LANE G2 worker F's method, QUEUE.md "Fourth pass"): query "Melanges
+Colbert 127" surfaces the notice `ark:/12148/cc954302` ("Mélanges de Colbert 127-127bis. Correspondance de Colbert"),
+whose pre-expanded sommaire tree names the sub-unit "Mélanges de Colbert 127 • Correspondance de Colbert de janvier
+et février 1665" (585 feuillets) and, nested under it, "Fol. 349 • l'abbé « de Gravel »" — an exact match for this
+record. `ajaxGetCompDisplay.html?eadCompId=FRBNFEAD000095430_d0e56` gives the digitised-document link:
+**gallica.bnf.fr/ark:/12148/btv1b10035540v**.
+
+**Manifest fetch failed; canvases found by content match instead.** `gallica.bnf.fr/iiif/.../manifest.json` and
+`/services/Pagination` both answered `curl: (35) Recv failure: Connection reset by peer` every time this session
+(logged in `/__agentproxy/status` as `ws_closed_mid_exchange` against `gallica.bnf.fr:443` — proxy-side, not a
+Gallica denial: the plain host, `.thumbnail`, and the direct `/iiif/.../fN/.../native.jpg` image endpoint all
+answered 200 throughout, just not reliably on the first try for larger payloads). `tools/gallica_folio.py` could
+not run without the manifest. Folio-to-canvas mapping was done by eye instead: candidate canvases were fetched
+directly by their Gallica image index and checked against Bourdeau's own quoted ciphertext (`colbert/NOTES.md`
+item a, github.com/dbourdeau/cyphersolver, shallow-cloned to scratch and grepped, MIT code/CC BY 4.0 text —
+credited here, not copied) rather than trusted from a folio-number stamp alone, after an inconsistency: canvas f356
+(where the letter's own numeral stamp reads "349") carries Gravel's exact four cipher groups
+(`29`; `80 62 41 73 3̄2̄ 51`; "Mr Frichmann" in clear; `48 93 71 37 60 92 580`), an unambiguous content match; an
+earlier candidate canvas (f354) also appeared to read "349" on a first pass but carries unrelated content (a
+"Sieur du Fresnoy" letter) — most likely a misread of "347" (7/9 are easily confused in this secretary hand), not
+re-verified this pass. **Images kept: `images/dc9_letter.jpg`** (the cipher-bearing recto, canvas f356 right half)
+and `images/dc9_address_panel.jpg` (the outer address fold, same canvas, left third — reads "Monseigneur Colbert"
+in the addressee's own hand, confirming the recipient; a docket note in a filing hand nearby was read once, in
+passing, as "M. Guibert" — inconsistent with "Gravel" and not resolved this pass, flagged in `images/manifest.json`
+for a future worker rather than guessed at). `images/manifest.json` records both fetch URLs, the identification
+reasoning, and the flagged f354 confusion.
+
+**Transcription pass and agreement with Bourdeau.** One pass of this worker's own (`passA.tsv`), read directly
+from `images/dc9_letter.jpg` without consulting Bourdeau's transcription first, then compared line-by-line where
+the two overlap (`agreement.tsv`): all four cipher groups Bourdeau's NOTES.md quotes are confirmed digit-for-digit
+in the same order with the same final values; the only difference is how the longest run (12 digits) is broken
+into groups (this pass reads three blocks, Bourdeau's excerpt shows seven pairs) — a spacing/grouping question,
+not a digit disagreement, and flagged rather than silently resolved. This pass did not extend the transcription
+beyond what Bourdeau's excerpt already covers (item a is a single short page, and his NOTES.md itself says the
+item is "not attacked" — meaning no cryptanalysis was attempted on it, not that his own quoted groups are
+unreliable; they check out against the image).
+
+**No decoding attempted.** Per the brief, this pass was capture + a transcription/agreement check only; item a's
+cipher (three or four names/code-numbers behind two-digit groups with overlines) is still **not attacked** by
+anyone as far as this pass found. Status word unchanged: **open**.
+
+Requests this pass (shared host budget with DC8, one fetcher): gallica.bnf.fr ~15 (several connection resets on
+full-page/large-crop fetches, one retry per URL per the good-citizen rule, routed around with smaller sizes or
+narrower crops thereafter); archivesetmanuscrits.bnf.fr ~6 (shared search session with DC8, ≥1.5s apart, UA
+`cipher-lab research script (contact via repository)`); github.com 1 shallow clone of dbourdeau/cyphersolver
+(grepped for the colbert/ folder only, not read in full).
+
 ## Correction to QUEUE.md
 
 DC9's `held_by` should be `bourdeau:colbert`, not `none` — flagged in ROOM.md, 24 Sept 2026, for the LANE N

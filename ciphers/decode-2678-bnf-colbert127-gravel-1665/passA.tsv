@@ -1,0 +1,33 @@
+# passA.tsv -- DC9, BnF Melanges de Colbert 127, f.349r (abbe de Gravel to Colbert, Ratisbon, 29 Jan 1665)
+# Own transcription pass, 24 Sept 2026, from images/dc9_letter.jpg (Gallica ark btv1b10035540v, canvas f356).
+# Read independently of Bourdeau's colbert/NOTES.md excerpt (consulted only afterward, for the agreement check below).
+# line = manuscript line (L01 = first line of body text, after 'Monseigneur'); position = token order in that line.
+# group: [PLAIN:"..."] for plain-French runs; a cipher token exactly as drawn, with an overline noted as ^(...).
+line	position	group	confidence
+L01	1	[PLAIN:"J'ay receu la lettre que vous m'avez fait"]	H
+L02	1	[PLAIN:"l'honneur de m'escrire le 16 du courant avec la"]	H
+L03	1	[PLAIN:"lettre de change de dixsept mille cent Reichsdaller"]	H
+L04	1	[PLAIN:"que vous a plu y joindre, comme il n'y a pas d'etat"]	H
+L05	1	[PLAIN:"de la distribution que j'en dois, et que vous m'ordonnez"]	H
+L06	1	[PLAIN:"seulement de les employer aux affaires qui concernent"]	H
+L07	1	[PLAIN:"le service du Roy en Allemagne, ainsy que je le scay."]	H
+L08	1	[PLAIN:"J'ay jugé que ce fonds là ne pourroit estre destiné"]	H
+L09	1	[PLAIN:"que pour"]	H
+L09	2	29	H
+L09	3	[PLAIN:"auquel on doit donner 15000 Reichdalles"]	H
+L10	1	[PLAIN:"Pour"]	H
+L10	2	80	H
+L10	3	62	H
+L10	4	41	H
+L10	5	73	H
+L10	6	3^(2)	M	overline mark above the 2, matches Bourdeau's 3̄2̄
+L10	7	51	H
+L10	8	[PLAIN:"qui en doit avoir 500. Pour M"]	H
+L11	1	[PLAIN:"Frichmann auquel il en est deub 600, et pour"]	M	"600" read where the digit is faint/abbreviated; could be "60."
+L11	2	4^(8)93	M	overline over the 8 of "48", matches Bourdeau's 4̄8̄93 shape
+L12	1	7137	H
+L12	2	6^(0)92^(0)	M	two overline marks (over the 0 of 60 and the 0 of 92 -- close to Bourdeau's 6̄0̄92̄, third overline not clearly resolved)
+L12	3	580	H
+L12	4	[PLAIN:"qui doivent aussy recevoir 1000 Reichdalles"]	H
+L13	1	[PLAIN:"pour la demye année de leur pension. Si ce calcul est"]	H
+L14	1	[PLAIN:"selon vostre intention l'on n'aura pas besoin d'y employer aux approvisionnem[ens]"]	M	line cut at right margin, last word cropped
