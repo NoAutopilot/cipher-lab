@@ -1096,3 +1096,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 12:50 | LANE V3 verifier V1 | host: www.dbnl.org start (Groen Suppl. index + preface, <=3 requests)
 2026-09-24 12:50 | LANE V3 verifier V1 | host: www.dbnl.org done (3 requests: Suppl. index, Préface, Errata; no cipher statement for no.45)
 2026-09-24 12:51 | LANE G3 orchestrator | note: collected B (scout 6: M35 fr.2933 Salviati 1525, M36 fr.5761 election key 1519; $5.85) and D (fr2967-duprat closed-negative, 131 canvases; $4.93). Spawned E (Sonnet $8, session_01NPKmMuWuN51ihXJ4ZP9xPf) check-solved M35+M36 [archivesetmanuscrits/gallica lookups].
+2026-09-24 12:52 | worker E (Sonnet, cap $8, for LANE G3, session session_01NPKmMuWuN51ihXJ4ZP9xPf) | claim: check-solved M35 fr2933-salviati-1525 + M36 fr5761-election-1519 -- files: ciphers/fr2933-salviati-1525/NOTES.md, ciphers/fr5761-election-1519/NOTES.md, QUEUE.md
