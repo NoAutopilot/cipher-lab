@@ -65,3 +65,6 @@ ciphers/august-van-saksen-1561-64	"Maximilian" AND "römischen König" AND 1561 
 ciphers/jan-van-nassau-1572-75	("Johann" OR "Jan") AND "Nassau" AND 1573 AND (Chiffre OR Ziffer OR cijferschrift) AND (Groen OR Dillenburg) AND (entziffert OR ontcijferd OR "deciphered")	2026-09-24	queued	
 ciphers/trew-posthius-1614-18	"Posthius" AND ("Eisenmenger" OR "Eysenmenger")	2026-09-24	queued	
 ciphers/trew-posthius-1614-18	"Trew" AND "Geheimschrift" AND (Posthius OR Heidelberg) AND 1614	2026-09-24	queued	
+ciphers/fr2980-gramont	READ: https://www.jstor.org/stable/44728935 (Mignet, Rivalité de Charles-Quint et de François Ier, RDM 1867; search Gramont, Tarbes, Villandry, 20 mai 1530)	2026-09-24	queued	
+ciphers/fr20140-danzay-1557	READ: https://www.jstor.org/stable/40944190 (Hauser, Histoire de France bulletin, Revue Historique 1923; search Danzay, 1557, chiffre, Lorraine)	2026-09-24	queued	
+ciphers/august-van-saksen-1561-64	READ: https://www.jstor.org/stable/40941620 (Philippson, Allemagne bulletin, Revue Historique 1908; search Oranien, Anna, August, Briefwechsel, Chiffre; note any edition of the Orange-Saxony letters it reviews)	2026-09-24	queued	

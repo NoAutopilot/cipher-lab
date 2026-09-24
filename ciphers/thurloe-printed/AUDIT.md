@@ -727,3 +727,15 @@ mechanical form with the restoration beside it.
 
 Requests: api.crossref.org 4, archive.org 1 (advancedsearch), be-api.us.archive.org 8 (EHR full-text API, 1 control
 pair included), eprints.gla.ac.uk 1. No Google Books, no Gallica, no logins, no subagents.
+
+## Outreach gate 2: JSTOR family and open indexes (verifier V5, 24 Sept 2026)
+
+Verifier V5 (Opus, for LANE V4, session_01UBQ2tN51FBuKTx41RqnGAK), 24 Sept 2026 17:24 UTC. Triage of the JSTOR runner's first-page hits (JSTOR-QUEUE.tsv) by title, snippet and what the runner read; no decoding, no class change unless stated.
+
+5 rows (file lines 35-37, 39, 40). The runner wrote no section for this target; triage here. Every first page is back matter, trade directories, almanacs and indexes (Penruddock, Stamford and Kelsey as place- or surnames; 'A. 24' tokenised loosely). Context only: Carlyle's *Cromwell's Letters and Speeches* (community collection, vols I, II, IV), Nichols's *Leicester*, Kelliher 1978 (Marvell), Cook 1977 (Congregational Independents). Peacock 2020 (*The Seventeenth Century*) is a Taylor & Francis title not hosted on JSTOR (runner's note; row 40 ran under the earlier Marshall wording, which does not change the result, since the article is not on JSTOR at all). No candidate.
+
+JSTOR family: searched on the owner's machine 24 Sept 2026, 5 rows, 0 candidates read (none found), result clean. **Gate 2's JSTOR condition is met for P4.** Peacock 2020 remains unread (paywalled, not on JSTOR).
+
+Open indexes: the owner ran this target's two queries on OpenAlex (API) and Semantic Scholar (site search) from their own machine on 24 Sept 2026 (ASKS row 34, `outreach/openalex-s2-owner-queries.md`): no relevant hit. V5's single cloud retry at about 17:21 UTC was 429 on both and is superseded. **Gate 2 is met for this target**: JSTOR family clean, open-index pass done, Google Books and the second adversarial audit done earlier (this file's earlier gate table left only the JSTOR rows and the open-index pass open). The outward draft carrying it is `status: ready` (for Thurloe P4, issue 2 of outreach/bourdeau-issues.md; for Eckert and Blathwayt, outreach/huntington-eckert-blathwayt.md).
+
+Outward drafts written this session (status drafted, nothing sent): see `outreach/` and CONTRIBUTIONS.md.

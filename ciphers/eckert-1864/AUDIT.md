@@ -1029,3 +1029,15 @@ Recorded by the JSTOR runner on the owner's machine (logged-in JSTOR account, bu
 Rows 20-22 answered (3 queries; rows 20 and 21 no hits). One hit opened:
 
 - Roscoe Pound, "The Military Telegraph in the Civil War", *Proceedings of the Massachusetts Historical Society*, 3rd ser., 66 (1936-1941), pp. 185-203, https://www.jstor.org/stable/25080325 (read online). In-document search: "Eckert" 3 hits (pp. 195, 197), all on the Military Telegraph's independence from field commanders (Eckert's report praising Caldwell, OR ser. I vol. 51 pt 1 p. 200; Van Duzer answerable only to Eckert; Eckert holding up Grant's orders to Thomas), drawn from the Official Records. Nothing on Fort Monroe, Cipher No. 1, the Huntington ledger or the April 1864 Fox and Meigs telegrams.
+
+## Outreach gate 2: JSTOR family and open indexes (verifier V5, 24 Sept 2026)
+
+Verifier V5 (Opus, for LANE V4, session_01UBQ2tN51FBuKTx41RqnGAK), 24 Sept 2026 17:24 UTC. Triage of the JSTOR runner's first-page hits (JSTOR-QUEUE.tsv) by title, snippet and what the runner read; no decoding, no class change unless stated.
+
+3 rows (file lines 20-22), 1 candidate read by the runner (Pound 1936-41, stable/25080325), negative. Context only: Wilhelm 1999 (telegraph as strategic means), Halstead 1944 (Myer, Signal Service 1861-63). No candidate unread.
+
+JSTOR family: searched on the owner's machine 24 Sept 2026, 3 rows, 1 candidate read, result clean. **Gate 2's JSTOR condition is met for E4 and E5.**
+
+Open indexes: the owner ran this target's two queries on OpenAlex (API) and Semantic Scholar (site search) from their own machine on 24 Sept 2026 (ASKS row 34, `outreach/openalex-s2-owner-queries.md`): no relevant hit. V5's single cloud retry at about 17:21 UTC was 429 on both and is superseded. **Gate 2 is met for this target**: JSTOR family clean, open-index pass done, Google Books and the second adversarial audit done earlier (this file's earlier gate table left only the JSTOR rows and the open-index pass open). The outward draft carrying it is `status: ready` (for Thurloe P4, issue 2 of outreach/bourdeau-issues.md; for Eckert and Blathwayt, outreach/huntington-eckert-blathwayt.md).
+
+Outward drafts written this session (status drafted, nothing sent): see `outreach/` and CONTRIBUTIONS.md.

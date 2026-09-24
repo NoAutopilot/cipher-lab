@@ -488,3 +488,15 @@ five-number table: none known to it, none to us.
 
 Requests (V3c, this label): www.dbnl.org 5; archive.org 3 (one full djvu text, two 6 KB ranges); www.googleapis.com 1;
 www.periodata.nl 1. No subagents.
+
+## Outreach gate 2: JSTOR family and open indexes (verifier V5, 24 Sept 2026)
+
+Verifier V5 (Opus, for LANE V4, session_01UBQ2tN51FBuKTx41RqnGAK), 24 Sept 2026 17:24 UTC. Triage of the JSTOR runner's first-page hits (JSTOR-QUEUE.tsv) by title, snippet and what the runner read; no decoding, no class change unless stated.
+
+4 rows (file lines 52-54, 60). The runner wrote no section for this target; triage here. Context only: Revue Historique 'Recueils périodiques' 1900 and 1910 (periodical listings), Erbe (Bauduin 1563), Zijlstra-Zweens (Geuzenschaaltje), Fagel's two chapters in *Protagonists of War* (Dávila and Julián: the Spanish side of Mookerheyde), the Dauxy espionage article (Antwerp 1560s), Motley review 1856, reference works. Daussy 2007 ('Louis de Nassau et le parti huguenot') is not hosted on JSTOR. No candidate.
+
+JSTOR family: searched on the owner's machine 24 Sept 2026, 4 rows, 0 candidates read (none found), result clean. **Gate 2's JSTOR condition is met for 4610, 4611, 4616.** Daussy 2007 remains unread (not on JSTOR).
+
+Open indexes: OpenAlex (`api.openalex.org/works?search=...`) and Semantic Scholar (`/graph/v1/paper/search`) retried once each from the cloud at about 17:21 UTC: both HTTP 429 (shared free daily budget used up). The owner's run of 24 Sept 2026 (ASKS 34) covered Thurloe, Eckert and Blathwayt only; this target's queries are owed (ASKS row 44, `outreach/openalex-s2-owner-queries-2.md`).
+
+Outward drafts written this session (status drafted, nothing sent): see `outreach/` and CONTRIBUTIONS.md.

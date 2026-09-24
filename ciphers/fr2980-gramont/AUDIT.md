@@ -1729,3 +1729,15 @@ Rows 2-6, 26-28, 32-33 answered (11 queries). Two hits opened:
 - Cédric Michon, "Quand l'Église fait l'État", *Annuaire-Bulletin de la Société de l'histoire de France* (2005), pp. 127-147, https://www.jstor.org/stable/23408509 (read online). In-document search: "Villandry" 0, "2980" 0, "Gramont" 2, both passing mentions (Charles de Gramont as a royal relay in Guyenne; Gabriel de Gramont among the prelates who came forward after Pavia). No letter cited.
 
 The other first-page hits are bibliographies, parlement studies and name collisions (the `"fr. 2980"` query returns Swiss-franc prices). None discusses the letter.
+
+## Outreach gate 2: JSTOR family and open indexes (verifier V5, 24 Sept 2026)
+
+Verifier V5 (Opus, for LANE V4, session_01UBQ2tN51FBuKTx41RqnGAK), 24 Sept 2026 17:24 UTC. Triage of the JSTOR runner's first-page hits (JSTOR-QUEUE.tsv) by title, snippet and what the runner read; no decoding, no class change unless stated.
+
+11 rows (file lines 2-7, 27-29, 33-34), 2 candidates read by the runner (Mignet 1867, 'Le siège de Naples. Paix de Cambrai', stable/44726292; Michon 2005, stable/23408509), both negative. One candidate not opened: **Mignet, 'Rivalité de Charles-Quint et de François Ier' (Revue des Deux Mondes 1867, stable/44728935)**, a different instalment of the same series, returned by 'Gabriel de Gramont AND "Clement VII" AND Florence'; it may narrate Rome in spring 1530 from Gramont's dispatches. Listed `to read (owner's machine)` and queued as a READ row. Context only: Aubert 1905/1906/1912 (parlement), Baudouin-Matuszek 2010, Michon 2003, Bourrilly 1918 (1536), Barbiche (légats), Braun (Renée de France 1528), Hauser 1905 bulletin, Revue Historique 'Recueils périodiques' lists, bibliographies, Drysdall (name collision), Nicolay 'Naples' dossier (Louis XII); 'fr. 2980' returns Swiss-franc prices.
+
+JSTOR family: searched on the owner's machine 24 Sept 2026, 11 rows, 2 candidates read, result negative; 1 candidate (Mignet 1867, stable/44728935) still to read. Gate 2's JSTOR condition is **not yet met** (one READ row).
+
+Open indexes: OpenAlex (`api.openalex.org/works?search=...`) and Semantic Scholar (`/graph/v1/paper/search`) retried once each from the cloud at about 17:21 UTC: both HTTP 429 (shared free daily budget used up). The owner's run of 24 Sept 2026 (ASKS 34) covered Thurloe, Eckert and Blathwayt only; this target's queries are owed (ASKS row 44, `outreach/openalex-s2-owner-queries-2.md`).
+
+Outward drafts written this session (status drafted, nothing sent): see `outreach/` and CONTRIBUTIONS.md.

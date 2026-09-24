@@ -572,3 +572,15 @@ NOTES novelty line in the same commit as a class change.
 
 Requests: api.crossref.org 1 (Lodge; answer unreadable, not retried; Lodge was already in the log). No archive.org, no
 Google Books, no Huntington, no logins, no subagents.
+
+## Outreach gate 2: JSTOR family and open indexes (verifier V5, 24 Sept 2026)
+
+Verifier V5 (Opus, for LANE V4, session_01UBQ2tN51FBuKTx41RqnGAK), 24 Sept 2026 17:24 UTC. Triage of the JSTOR runner's first-page hits (JSTOR-QUEUE.tsv) by title, snippet and what the runner read; no decoding, no class change unless stated.
+
+6 rows (file lines 45-47, 57-59). The runner wrote no section for this target; triage here. Rows 57 and 59 no hits; row 46 three reference works. Context only: Webb 1969 (William Blathwayt to 1717), Goulding and Nelson (Dyrham Park cartography), McCully 1962, Altbauer 1980, Murray 1974, Durand (Laborde memoirs), directories and indexes. No review of HMC Polwarth vol. V on the first page; Storrs 2016 is not on JSTOR. No candidate.
+
+JSTOR family: searched on the owner's machine 24 Sept 2026, 6 rows, 0 candidates read (none found), result clean. **Gate 2's JSTOR condition is met for BLA 186, 191(a) and 184.**
+
+Open indexes: the owner ran this target's two queries on OpenAlex (API) and Semantic Scholar (site search) from their own machine on 24 Sept 2026 (ASKS row 34, `outreach/openalex-s2-owner-queries.md`): no relevant hit. V5's single cloud retry at about 17:21 UTC was 429 on both and is superseded. **Gate 2 is met for this target**: JSTOR family clean, open-index pass done, Google Books and the second adversarial audit done earlier (this file's earlier gate table left only the JSTOR rows and the open-index pass open). The outward draft carrying it is `status: ready` (for Thurloe P4, issue 2 of outreach/bourdeau-issues.md; for Eckert and Blathwayt, outreach/huntington-eckert-blathwayt.md).
+
+Outward drafts written this session (status drafted, nothing sent): see `outreach/` and CONTRIBUTIONS.md.

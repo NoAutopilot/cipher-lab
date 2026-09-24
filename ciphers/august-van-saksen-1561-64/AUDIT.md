@@ -760,3 +760,15 @@ its 'Zettel' remains the unpublished witness that could lower 57.
 
 Requests (V3d): archive.org 4 (advancedsearch 1, djvu texts 3); eprints.soton.ac.uk 2 (401 Anubis, stopped);
 www.googleapis.com 1; WebSearch 1. No subagents.
+
+## Outreach gate 2: JSTOR family and open indexes (verifier V5, 24 Sept 2026)
+
+Verifier V5 (Opus, for LANE V4, session_01UBQ2tN51FBuKTx41RqnGAK), 24 Sept 2026 17:24 UTC. Triage of the JSTOR runner's first-page hits (JSTOR-QUEUE.tsv) by title, snippet and what the runner read; no decoding, no class change unless stated.
+
+6 rows (file lines 48, 49, 55, 56, 63, 64). The runner wrote no section for this target; triage here. Rows 55, 56, 63, 64 (the 1561 items, 53 and 57): no hits. Row 48 (126, 1564): 11 hits, all name collisions (Jewish art, Kepler's correspondent, Leopold I, bibliographies). Row 49 ('Anna von Sachsen AND Oranien AND Kurfürst AND Briefwechsel'): one hit, **Philippson, 'Allemagne (bulletin historique)', Revue Historique 1908, stable/40941620**. A bulletin cannot print the postscripts itself, but it may notice a 1907-08 publication of the Orange-Saxony correspondence (the Anna von Sachsen literature) that the audit has not searched. Listed `to read (owner's machine)` and queued as a READ row; it concerns all three items.
+
+JSTOR family: searched on the owner's machine 24 Sept 2026, 6 rows, 0 candidates read, 1 candidate (Philippson 1908, stable/40941620) still to read. Gate 2's JSTOR condition is **not yet met** (one READ row).
+
+Open indexes: OpenAlex (`api.openalex.org/works?search=...`) and Semantic Scholar (`/graph/v1/paper/search`) retried once each from the cloud at about 17:21 UTC: both HTTP 429 (shared free daily budget used up). The owner's run of 24 Sept 2026 (ASKS 34) covered Thurloe, Eckert and Blathwayt only; this target's queries are owed (ASKS row 44, `outreach/openalex-s2-owner-queries-2.md`).
+
+Outward drafts written this session (status drafted, nothing sent): see `outreach/` and CONTRIBUTIONS.md.
