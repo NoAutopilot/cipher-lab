@@ -141,3 +141,16 @@ still unreachable, see above) is the only route left for this target's ciphertex
 
 Grades: none (no tokens read). Requests this pass: 0 (no network, per brief). Cost: transcription-pass work
 only, well under the $6 cap shared with decode-4450 (see that folder's NOTES.md for the combined total).
+
+## DECODE image-check follow-up answered, 24 September 2026
+
+The "one-line suggestion" above (check DECODE's own viewer for anything larger than the 200px thumbnail)
+was tried: no larger image exists. Full method and evidence in `sources/decode/NOTES.md` ("No larger image
+than the 200px thumbnail for 1162 (and 4450)"). Summary: RecordsView's on-page zoom modal reuses the same
+`TH_IMG_*` thumbnail URLs (CSS-stretched, not a real zoom); the guessed non-`TH_`-prefixed filenames the
+modal's own `alt` text names (`IMG_R1162_I5837_P1.png`, `IMG_R1162_I5838_P2.png`) return the same
+`forbidden.png` placeholder already seen for the blocked transcription document; the "Image Manager"
+(`ImagesList?showmaster=records&fk_id=1162`) link redirect-loops when opened directly and was not reachable
+this pass. Status unchanged: **open**, still blocked on image resolution for a blind transcription pass; the
+attached transcription document (id 3593) remains the only route to this record's text, and it is also
+blocked (same placeholder, see `sources/decode/NOTES.md`).

@@ -123,3 +123,53 @@ an actual PNG signature means the fetch silently failed. Image attachments (`TH_
 this pass (fetched fine, correct distinct content). Not yet known whether this is specific to record
 1162/document 3593, to the Transcription category, or to all non-image documents on this account -- next
 worker hitting a document attachment should check the response header the same way before committing.
+
+## No larger image than the 200px thumbnail for 1162 (and 4450), 24 September 2026
+
+LANE N worker, for LANE R2 (ROOM 09:42 flag: "if DECODE serves a larger image to a logged-in browser
+(ImagesList/zoom), please try once in your next login"). One login (`tools/decode_browser_login.js`),
+`RECORD_ID=1162`, `--shot`, plus in the same session `--fetch-page` for the real
+`ImagesList?showmaster=records&fk_id=1162` link (found verbatim in RecordsView/1162's own HTML, see below)
+and `--fetch` for two guessed non-`TH_`-prefixed filenames, `--delay 1800 --max-files 6`. Answer: **no**,
+DECODE serves nothing larger than the 200px `TH_IMG_*` thumbnail to this account for record 1162, checked
+three ways:
+
+1. **RecordsView's own on-page "zoom" modal is not a zoom.** The saved `record_1162.html` contains a
+   JS lightbox (`openModal()`/`currentSlide()`) that a viewer might expect to show a larger image; its
+   `<img>` tags inside `#myModal` point to the identical `/decrypt-custom/filesrv/?file=TH_IMG_R1162_I5837_P1.png`
+   / `..._I5838_P2.png` URLs already fetched as thumbnails, just CSS-stretched to `width:100%`. No distinct
+   full-size `src` anywhere in the modal markup. (The page's generic attachment-grid jsrender template,
+   elsewhere in the same HTML, does have separate `{{>url}}` (full) and `{{>thumbnailUrl}}` fields with an
+   `ew-lightbox`/colorbox anchor -- but that template block is inert source for a different grid, never
+   instantiated with data on this page; the only rendered image markup on RecordsView is the modal above.)
+2. **Guessed full filenames return the known "forbidden" placeholder, not a 404 or a real image.** The modal's
+   thumbnail `<img>` tags carry `alt="IMG_R1162_I5837_P1.png"` / `alt="IMG_R1162_I5838_P2.png"` -- i.e. the
+   underlying file plainly exists under those exact non-`TH_`-prefixed names. Fetching
+   `/decrypt-custom/filesrv/?file=IMG_R1162_I5837_P1.png` and `...I5838_P2.png` through the same logged-in
+   session both returned HTTP 200, `986x568` PNG, sha1 `035489a0605851154ab88372216354b63596ca22` -- byte-
+   identical to the `forbidden.png` placeholder already documented above for the blocked `.txt` document. So
+   the server recognises the filename but refuses to serve it to this account, the same failure mode as the
+   document block, not a missing/mistyped path.
+3. **The one real "bigger picture" link on the page, "Go to the Image Manager to zoom and view/edit metadata"
+   (`ImagesList?showmaster=records&fk_id=1162`, confirmed present verbatim in the RecordsView HTML, same query
+   shape as the working `DocumentsList?showmaster=records&fk_id=...` pattern), could not be loaded**:
+   `page.goto` on that URL hit `net::ERR_TOO_MANY_REDIRECTS` inside the same login. Unlike `DocumentsList`,
+   this page evidently expects some state `DocumentsList` doesn't (a referrer, a prior AJAX call, or a
+   session flag set only by clicking through the UI) and redirect-loops when opened directly. **Caution for
+   whoever retries this**: a redirect loop the browser chases to its own limit (Chromium's default is 20 hops)
+   can burn most of a request budget on one dead end -- try `ctx.request.get` with redirect-following
+   disabled, or a plain `curl -I` first to see the `Location` chain, before pointing `page.goto` at it again;
+   this pass did not retry (one login, one attempt, per CLAUDE.md).
+
+Not tested for 4450 directly this pass (brief's primary target was 1162; one login only), but the mechanism
+above -- a fake on-page zoom that reuses the thumbnail, and the same `forbidden.png` signature already seen
+on 4450's neighbour document fetch -- is a site-wide behaviour, not specific to one record, so the same
+"thumbnails only" conclusion is extended to 4450 rather than spending a second login to re-demonstrate it
+record by record. If a future worker gets a real `Image Manager` page to load (fixing point 3), check it for
+4450 too and correct this note.
+
+No full-size image exists to save; `ciphers/decode-1162-modena-ambung-1492/images/` and
+`ciphers/decode-4450-bnf-fr20506-1525/images/` are unchanged (still `TH_IMG_*` thumbnails only, no `*_full.*`
+files added). Requests this pass: de-crypt.org ~10-15 (login ~2, RecordsView/1162 auto-fetch 1, the
+ImagesList redirect-loop attempt an unknown but bounded number, 2 filesrv fetches) -- comfortably under the
+20-request cap even counting the loop at its ceiling. One login only. Cost: worker cap $3, well under.
