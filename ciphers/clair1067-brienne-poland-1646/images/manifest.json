@@ -1,0 +1,20 @@
+{
+  "ark": "ark:/12148/btv1b9000856f",
+  "source": "Gallica IIIF, BnF Clairambault 1067",
+  "target_folio": "Fol. 226 (per archivesetmanuscrits.bnf.fr finding aid)",
+  "note": "No folio labels in the manifest and no Gallica Pagination/ContentSearch index (422/422 pages 'NP', 0 OCR hits for 'Pologne'). Two naive-offset probes both missed, landing on later (c. 1701-1702) printed judicial material bound into the same composite volume -- same failure mode as ciphers/clairambault361-marini-1610. Target leaf not located this sweep.",
+  "files": [
+    {
+      "file": "probe_f246.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000856f/canvas/f246",
+      "guess_basis": "folio 226 + ~20 offset",
+      "result": "wrong -- printed French legal text (an 'Arrêt'), folio stamps '45'/'117' visible, content datable to 1701-1702"
+    },
+    {
+      "file": "probe_f232.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000856f/canvas/f232",
+      "guess_basis": "folio 226 + ~6 offset (M17's confirmed offset)",
+      "result": "wrong -- printed French legal text (a criminal trial factum, witness testimony), folio stamp '110'/'32' visible"
+    }
+  ]
+}

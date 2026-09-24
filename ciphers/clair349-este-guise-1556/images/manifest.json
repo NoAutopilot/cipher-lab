@@ -1,0 +1,15 @@
+{
+  "ark": "ark:/12148/btv1b9000668z",
+  "source": "Gallica IIIF, BnF Clairambault 349",
+  "note": "Manuscript foliation 'f.3' (per catalogue and Tomokiyo's guise.htm) corresponds to Gallica canvas f9 (no folio labels in the manifest; offset taken from Tomokiyo's own deep link, confirmed by independent fetch).",
+  "files": [
+    {
+      "file": "f9_thumb.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f9",
+      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f9/full/,400/0/native.jpg",
+      "manuscript_folio": "f.3 (per catalogue)",
+      "fetched": "2026-09-24T03:37Z",
+      "content": "Two-leaf spread; right page dense arbitrary-symbol ciphertext matching the fr.20974 no.15 key design; left page continuous plain French cursive."
+    }
+  ]
+}

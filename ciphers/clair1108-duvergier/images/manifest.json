@@ -1,0 +1,18 @@
+{
+  "ark": "ark:/12148/btv1b90009665",
+  "source": "Gallica IIIF, BnF Clairambault 1108",
+  "target_folio": "Fol. 245-264ish (per archivesetmanuscrits.bnf.fr finding aid, item 'Du Vergier')",
+  "note": "No folio labels in the manifest. Canvas f251 (folio+6 offset, same offset confirmed for M17) hit successfully; its own printed folio stamp reads '248', within the item. Canvas f248 (folio 245, the item's true start) and a high-res crop of f251 both failed on repeated tunnel-side connection resets and were not retried further this pass.",
+  "files": [
+    {
+      "file": "probe_f251.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90009665/canvas/f251",
+      "manuscript_folio": "248 (per the leaf's own stamp)",
+      "content": "Left page: numeral-group ciphertext with possible partial interlinear gloss (not confirmed at this resolution). Right page: clear French letter, signed 'Vergier'."
+    }
+  ],
+  "not_fetched": [
+    {"canvas": "f248", "target": "folio 245, item start", "status": "3 failed attempts, tunnel resets, not retried"},
+    {"note": "high-res crop of f251 left page", "status": "2 failed attempts, tunnel resets, not retried"}
+  ]
+}
