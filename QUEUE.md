@@ -4410,3 +4410,67 @@ block" read of the letter itself) and consists of **two different key blocks in 
 (a struck-through glyph nomenclator and a separate clean letter-substitution key with a worked German
 specimen) -- whose hand is the sender's, if either, is unresolved and flagged for a solver/palaeography pass,
 not decided here. Not decoded, per brief.
+
+## Trew Briefsammlung (LANE N3 scout of 24 September 2026)
+
+LANE N3 brief scTREW (`.claude/briefs/runs/2026-09-24-lane-n3-scTREW.md`), following on from the LANE N2
+Bavarikon sweep above that found BV1 (Posthius-Eysenmenger, already nominated, not redone here). Brief: find
+every *other* letter in UB Erlangen-Nuernberg's Trew Briefsammlung (~19,000 letters) that carries cipher.
+
+**The Trew-collection facet.** `holding_institution=Universitätsbibliothek Erlangen-Nürnberg` on
+Bavarikon's search narrows to 19,563 of 19,569 "Briefe"-category records under that institution -- effectively
+the whole Trew Briefsammlung, since "Trew Briefsammlung" is boilerplate in every record's own catalogue text
+(confirmed: `terms=Trew` alone already returns that same ~19,563 count). Adding `object_category=Briefe`
+removes the handful of non-letter UBE holdings (Graphische Sammlung prints, etc.) the institution facet alone
+would also catch. Working pattern: `/search?terms=TERM&holding_institution=Universitätsbibliothek+
+Erlangen-Nürnberg&object_category=Briefe`.
+
+**Not anticipated by the brief: exact whole-word tokenisation.** `terms=geheim` (bare stem) returns 0 hits
+against this facet even though `terms=Geheimschrift` (the whole word, matching BV1's own catalogue text)
+returns 2 -- the search engine does not do substring/stem matching. Bavarikon's own search-tips text documents
+a `*` wildcard (`test*` finds test/tester/Testament); `terms=geheim*` was required and is what surfaced the one
+new real hit below. Re-run with wildcards: `geheim*` (5, incl. both BV1 pages + 3 new), `Schlüssel*` (4,
+incl. both BV1 pages + TR-1 + 1 false positive), `chiffr*`, `verschlüsselt*`, `kryptogr*`, `Ziffer*`,
+`cifr*`, `steganograph*`, `geheimzeichen*` (all 0 beyond what plain terms already found).
+
+**Terms run (plain, per brief), raw against the Trew facet, all except Geheimschrift 0:** Chiffre, chiffriert,
+Ziffer, Ziffern, cifra, cifre, geheim, Zahlen, "in numeris", "litterae occultae", dechiffriert, Ziffernschrift,
+Chiffernschlüssel -- 0 each. **Geheimschrift: 2** (both already-nominated BV1 pages, `UBE-TRE-
+00000BAV80016364`/`...370`). **notae: 3**, all dropped as the generic word "Nota"/"Zettel" (an enclosure note),
+not cipher (Stoeberlin, Taube, Trionfetti letters -- see TSV). Wildcard reruns above added: **geheim\*: 3 new**
+(1 kept as TR-1; 2 dropped as the title "Geheimrat"/"Geheimde Räthin", Privy Councillor, not secret
+writing -- Stahl and Trew's own outgoing letter). **Schlüssel\*: 1 new**, dropped (the sender's own surname
+"Schlüsselfelder", not the word "key").
+
+**TR-1 -- the one real find.** A letter of 10 December 1653 from Sigismund Schellhammer (Schelhammer) to Dr.
+Johann Georg Volckamer I (`H62/TREWBR SCHELHAMMER_SIEGMUND[23`, `bav:UBE-TRE-00000BAV80017900`), dateline
+"Hamburgi". Catalogue title verbatim: "[Brief an Johann Georg Volkamer I] : vom 10.12.1653 : mit Siegel : mit
+verschiedenen Schlüsseln für Geheimschriften auf der Adressseite" (with various keys for secret
+writings on the address side). Both pages opened and eyeballed at 1200px (not transcribed, not decoded, per
+brief): recto is an ordinary Latin letter (no cipher visible); the address-side leaf carries, rotated 90 degrees
+at the top left beside the address block and wax seal, at least two distinct plaintext-to-cipher alphabet key
+rows -- key material confirmed present, matching the catalogue description; no obviously enciphered running-text
+block spotted alongside the keys at this pass (unlike BV1's 1614 letter, which pairs its key with a short
+cipher block and a clear-text crib -- this may be closer in shape to BV1's 1618 leaf, which also carries key
+material without a hidden message in the letter's own news). Language Latin, CC0 (metadata) / PDM
+(digitisation), images served off `api.digitale-sammlungen.de/iiif/image/v2/` at full native resolution (tested
+`bav80017900_00001` and `_00002`, both 200 OK at 1200px). **Copy-free.** Not marked deciphered anywhere in the
+record. Not found in `ciphers/`, QUEUE.md, CATALOG.md, LANDSCAPE.md, `sources/cryptiana/`, or fresh shallow
+clones of both solver repositories (grepped by "Schellhammer"/"Schelhammer"/"Volckamer"/"Volkamer", zero hits).
+
+**Per-host report:** `www.bavarikon.de`: 41 requests (search pages + 7 object-detail pages for the notae/
+geheim\*/Schlüssel\* hits), all >=2s apart, descriptive User-Agent, no challenge/403/429 seen.
+`api.digitale-sammlungen.de`: 6 requests (2 reachability/OAI probes, 2 page images for TR-1, plus the earlier
+root-path test) -- confirms QUEUE.md's existing note (lines ~949, ~1280) that this host has no plain-text search
+API; its own OAI path also 404s, so Bavarikon's aggregated metadata search remains the only practical entry
+point for this collection. `trew-letters.com`: 2 requests (home page, Expertensuche) -- confirmed search still
+requires a login (`Sie sind ausgeloggt`); per brief, not registered, route closed, same finding as the BV1
+scout's earlier note. `github.com`: 2 shallow clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers),
+grepped by exact name, not committed. WebSearch: 0 (not needed).
+
+**Raw/kept/copy-free:** 22 distinct search queries run (13 brief terms + notae + 9 wildcard variants), 13
+narrowed hits across all terms after dedup (2 already-known BV1 + 3 notae + 3 geheim\* + 1 Schlüssel\*,
+plus the 4 zero-hit-term reruns under wildcards), 1 new row kept (TR-1), 1 copy-free (100% of kept). **Total: 1
+row kept (TR-1), 1 copy-free.**
+
+No check-solved run on TR-1 (scout brief only); not promoted, not decoded, no novelty claim (rule 10).

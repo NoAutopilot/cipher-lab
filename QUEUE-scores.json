@@ -8910,5 +8910,27 @@
         "rationale": "language_fit3 material0 key_lead3(key visually confirmed on both leaves, drawn alphabet-to-symbol table) size1(two short single-leaf letters) competition3 weight1(physicians' correspondence, not diplomatic/political) unread2(recovery, key present but unread/untested)"
       }
     ]
+  },
+  "lane_n3_trew": {
+    "_about": "LANE N3 scout of 24 September 2026 (Trew Briefsammlung sweep beyond BV1; .claude/briefs/runs/2026-09-24-lane-n3-scTREW.md). Facet: holding_institution=Universitaetsbibliothek Erlangen-Nuernberg + object_category=Briefe narrows Bavarikon to the ~19,563-record Trew collection. 13 brief terms plus notae and 9 wildcard reruns (this search engine tokenises exact whole words, not substrings -- 'geheim' alone misses 'Geheimschrift'; the site's own '*' wildcard was needed). 1 new row kept (TR-1, Schellhammer-to-Volckamer 1653, several cipher keys on the address side), 1 copy-free. Full raw notes, per-hit catalogue text and dropped items: sources/solver-diffs/2026-09-24-lane-n3-trew.tsv and the QUEUE.md section itself.",
+    "date": "24 September 2026",
+    "requests_per_host": {
+      "www.bavarikon.de": 41,
+      "api.digitale-sammlungen.de (IIIF images)": 6,
+      "trew-letters.com": 2,
+      "github.com (shallow clones, grep only)": 2
+    },
+    "rows": [
+      {
+        "row_id": "TR-1",
+        "target": "Letter, Sigismund Schellhammer (Schelhammer) to Johann Georg Volckamer I, with several distinct alphabet-substitution keys for secret writing on the address side",
+        "year": "10 Dec 1653",
+        "kind": "recovery",
+        "holder": "Universitaetsbibliothek Erlangen-Nuernberg (Briefsammlung des Christoph Jacob Trew)",
+        "shelfmark": "H62/TREWBR SCHELHAMMER_SIEGMUND[23",
+        "total": 45,
+        "rationale": "language_fit3(Latin) material3(full native IIIF, no login, tested 200 OK, CC0/PDM) key_lead3(multiple key rows visually confirmed on the address-side leaf) size1(single leaf, key material only, no enciphered running text yet spotted) competition3(no tracker/repo/community-list hit) weight1(physicians' private correspondence, not diplomatic/political) unread2(recovery, key present but unread/untested)"
+      }
+    ]
   }
 }
