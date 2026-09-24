@@ -137,3 +137,49 @@ normalised and period spelling before reporting.
 ## 6. Second-opinion claims not confirmed
 
 None filed. No second-opinion prompt written: the class is N0, and CLAUDE.md asks for one only at N3 or above.
+
+## Google Books queries (LANE V runner), 24 Sept 2026
+
+LANE V worker (Sonnet), running the 5 queries LANE W worker C marked **optional** in ROOM.md 06:26 UTC ("class
+already N0 from IA full text"). Run last, after the P4 and rah-canada-1869 queries, since the cap allowed. This
+session only ran the queries and records what came back; it does not decode and does not assign or change a class.
+
+**Queries (5, verbatim from ROOM.md):** "Torpadie" chifferskrift; "godt positeur" "här oppe"; "hyglar bevuxen"; "vid
+Mitov"; "Några ord om chifferskrift". Full results: `google-books-2026-09-24.tsv`.
+
+**Hit counts:** all 5 queries returned hits. "Torpadie" chifferskrift and "Några ord om chifferskrift" each returned
+300 items (a bibliography-name/title match, capped by the API's totalItems estimate, 4 and 2 respectively after
+`filter=full`); "godt positeur" "här oppe", "hyglar bevuxen" and "vid Mitov" each returned 2 items (1 each after
+`filter=full`).
+
+**Hits whose snippet contains the quoted phrase (selected -- these directly corroborate the N0 finding already on
+record; the bibliography-citation hits for "Torpadie"/"Några ord om chifferskrift" are omitted here as duplicative
+of section 3's IA finding):**
+
+1. `"godt positeur" "här oppe"` -- volume `W38LAAAAIAAJ`, *Historisk tidskrift* (1887 -- catalogued a year off from
+   the 1888 volume already cited in section 1/3; likely a bound-volume or scan-metadata year, not a second
+   printing): "...godt positeur än här oppe; så är fördenskuld vår nådigeste vilie, dett I correspondere medh her
+   Steen Bielke..."; and volume `WQHKWzqiA2wC`, *Hemlig skrift* (Henning Stålhane, 1934), same wording verbatim --
+   a **later secondary source reprinting Torpadie's plaintext**, corroborating it independently of the 1888 journal.
+2. `"hyglar bevuxen"` -- same two volumes, `W38LAAAAIAAJ` and `WQHKWzqiA2wC` (Stålhane 1934): "...hyglar bevuxen, så
+   att I ej behöfve till att retranchera eder allestädes rund omkring, uthan bruka samma hyglar eder till fordeel
+   och retranchement. Corresponderer och flitigt med her Jahan Baner..."
+3. `"vid Mitov"` -- same two volumes: "...vid Mitov, nembligen, att I ej gå uhr det ena retrancherede lägret för än
+   I veta, hvar I kunne antreffa en ort..."
+4. `"Torpadie" chifferskrift` -- volume `xoqSF8GzYrMC`, *Historisk tidskrift* (1889, a bibliography/register volume
+   citing the 1888 article): "...chifferskrift. Af R. Torpadie. Utg. sid. 376-383 af Historisk Tidskrift 1888.
+   Inneh. bl. a. upplösning af ett chifferbref från k. Gustaf II Adolf till A. Oxenstierna af d. 23 Juli 1632."; and
+   volume `3fAtAAAAIAAJ`, *Svensk historisk bibliografi* (1907), same citation. Also volume `3S8rhOEmDIIC`, *The
+   Codebreakers* (David Kahn, 1996): "...Torpadie solution: 'Några ord om chifferskrift,'..." in Kahn's endnotes.
+5. `"Några ord om chifferskrift"` -- same *Historisk tidskrift* 1889 bibliography hit and the Kahn citation, plus
+   volume `dDkiAQAAIAAJ`, *Nordisk familjebok* (1906): "...'Några ord om chifferskrift' (i Hist. tidskr. VIII, s.
+   376)."
+
+**Effect on the class:** none needed -- already N0. These hits are useful corroboration, not new information: two
+independent secondary sources (Stålhane 1934, a Swedish cryptology history; Kahn 1996, *The Codebreakers*) confirm
+Torpadie's 1888 plaintext and cite his article by name, and several bibliographies (1889, 1891, 1907) index the
+article under Oxenstierna/Gustav II Adolf. No hit suggests a decipherment of this letter earlier or independent of
+Torpadie.
+
+Requests this session: www.googleapis.com 10 (5 base queries + 5 `filter=full` re-runs, since all 5 had hits), one
+at a time, at least 3 s apart, key never printed. No other host.

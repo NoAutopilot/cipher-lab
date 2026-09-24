@@ -127,3 +127,54 @@ api.crossref.org 7. api.openalex.org 1 (429). api.semanticscholar.org 1 (429). a
 ojs.ehu.eus 4. dialnet.unirioja.es 1. hemerotecadigital.bne.es 1 (403). be-api.us.archive.org 5. github.com 2 shallow
 clones. All requests were made one at a time, at least 2 s apart, with the descriptive UA except for the single RAE
 GET.
+
+## Google Books queries (LANE V runner), 24 Sept 2026
+
+LANE V worker (Sonnet), running the queries posted by LANE W worker E in ROOM.md 07:15 UTC. This session only ran
+the queries and records what came back; it does not decode and does not assign or change a class. The class here is
+already N0 (section 1 above: the plaintext is on the item itself), so nothing below can lower it; it is recorded for
+completeness per the brief.
+
+**Queries (8, verbatim from ROOM.md):** "nota del Conde de la Cañada"; "Conde de la Cañada" "González Bravo" 1869;
+"la justísima restauración" Isabel; "gana por momentos la idea"; "sentada V. M. en el trono de San Fernando"; "me
+aventaja en deseos"; "tal y como ha sido recibida" González Bravo; "Conde de la Cañada" carlista OR alfonsino 1869.
+Full results: `google-books-2026-09-24.tsv`.
+
+**Hit counts:** 5 of 8 queries returned 0 items (`"Conde de la Cañada" "González Bravo" 1869`; `"la justísima
+restauración" Isabel`; `"gana por momentos la idea"`; `"sentada V. M. en el trono de San Fernando"`; `"tal y como ha
+sido recibida" González Bravo`). 3 returned hits:
+
+- `"nota del Conde de la Cañada"` -- 1 item (1 after `filter=full`).
+- `"me aventaja en deseos"` -- 4 items (2 after `filter=full`).
+- `"Conde de la Cañada" carlista OR alfonsino 1869` -- 3 items (0 after `filter=full`).
+
+**Hits whose snippet contains the quoted phrase:**
+
+1. `"nota del Conde de la Cañada"` -- volume `TbUZAAAAMAAJ`, *Catálogo de los manuscritos relativos a los antiguos
+   Jesuítas de Chile* (Biblioteca Nacional de Chile, 1891): "Nota del Conde de la Cañada participando queda
+   enterado del estado en que se hallan los expedientes pendientes de las Temporalidades de Chile. Madrid, 21 de
+   agosto. 1793." -- **a different note, dated Madrid, 21 Aug 1793**, about Jesuit temporalities in Chile, 76 years
+   before this letter and a different subject; a coincidental title match on a formulaic catalogue heading ("Nota
+   del Conde de la Cañada..."), not the same document.
+2. `"me aventaja en deseos"` -- four items, all Spanish parliamentary/literary use of the same stock phrase ("nadie
+   me aventaja en deseos de..."), none about this letter: volume `nD3hZbSKPwAC`, *La Campana del terror, ó, Las
+   vísperas sicilianas* (Garci-Sánchez del Pinar, 1857); volume `eBoBAVf722MC`, *Diario de las sesiones de Cortes*
+   (1889); volume `Yj5IAQAAMAAJ`, *Diario de las sesiones...* (Congreso de los Diputados, 1876); volume
+   `KsE3AQAAMAAJ`, *Diario de las Sesiones de Cortes, Congreso de los Diputados* (1844). All four predate or postdate
+   1869 and are unrelated speeches/fiction, not the Cañada note.
+3. `"Conde de la Cañada" carlista OR alfonsino 1869` -- three items, all about a different, 19th-century Carlist-era
+   "Conde de la Cañada" as a political figure, not this letter's content: volume `GeMCAAAAYAAJ`, *Narración militar
+   de la guerra carlista de 1869 á 1876* (Spain, Cuerpo de Estado Mayor, 1885), no snippet returned; volume
+   `eHI_4wLzQEMC`, *Desamortización eclesiástica en la provincia de Ciudad Real, 1836-1854* (Ángel Ramón del Valle
+   Calzado, 1995): "...carlistas, como algunos otros miembros de esa élite como el Conde de la Cañada..."; volume
+   `0eNrvqCpvkoC`, *Elecciones y parlamentarios* (González Calleja/Moreno Luzón, 1993): "...conde de la Cañada y
+   organizador del partido a escala provincial... 1869, 1871 y septiembre de 1872...".
+
+**Non-decisive, for the record.** None of these seven hits quotes this note's own text (the "sentada... trono de San
+Fernando", "gana por momentos la idea de la justísima restauración" or "tal y como ha sido recibida" phrases all
+returned 0). The 1793 Cañada catalogue note and the Carlist-era "Conde de la Cañada" are different people/documents
+sharing a title; "me aventaja en deseos" is a stock 19th-century Spanish phrase. Nothing here changes section 2's
+ruling (N0, plaintext already on the item).
+
+Requests this session: www.googleapis.com 11 (8 base queries + 3 `filter=full` re-runs on the queries with hits),
+one at a time, at least 3 s apart, key never printed. No other host.

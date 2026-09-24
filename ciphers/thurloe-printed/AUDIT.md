@@ -496,3 +496,46 @@ today. No titles or DOIs to report.
 Requests this session: api.openalex.org 4 (1 query with one retry, 2 Eckert queries, all 429); api.semanticscholar.org
 6 (1 query with one retry, 2 further Thurloe queries, 2 Eckert queries, all 429). One at a time, >=2s apart, no
 logins.
+
+## Google Books queries (LANE V runner), 24 Sept 2026
+
+LANE V worker (Sonnet), the P4 Google Books gap named in "Toward N4 (what remains)" item 1 above (queries posted by
+LANE W worker B in ROOM.md 06:20 UTC). This session only ran the queries and records what came back; it does not
+decode and does not assign or change a class.
+
+**Queries (8, verbatim from ROOM.md):** "irreconcilable with them as long as I live"; "a plot hath been a hatching";
+"the whole party of" Stamford Calais 1655; "general rising" "Stamford" 1655 Calais; "without the least injunction of
+secrecy"; "by meere chance" "Whitehall" 1655 Stamford; "Stamford" "Kelsey" Calais 1655; "the qualitie I am of"
+cavaliers. Full results, including the `filter=full` re-run of any query with hits: `google-books-2026-09-24.tsv`.
+
+**Hit counts:** 6 of 8 queries returned 0 items. 2 returned hits:
+
+- `"without the least injunction of secrecy"` -- 7 items (1 after `filter=full`).
+- `"Stamford" "Kelsey" Calais 1655` -- 1 item (0 after `filter=full`).
+
+**Hits whose snippet contains the quoted phrase:**
+
+1. `"without the least injunction of secrecy"` -- volume `MVWTTZHgGGoC`, *English Historical Documents, 1783-1832*
+   (Douglas/Aspinall/Smith, 1996), and five further editions of the same title (1953, 1959 x3, 1996, 2024) plus
+   volume `uYwFAAAAQAAJ`, *House Documents, Otherwise Publ. as Executive Documents* (US Congress. House, no year
+   given), all with snippet: "...without the least injunction of secrecy, but on the contrary with an expression of
+   a wish that his opinion should be known..." (the Congress volume instead: "...without the least injunction of
+   secrecy; and I was by him authorized to inform the stockholders thereof...").
+2. `"Stamford" "Kelsey" Calais 1655"` -- volume `Yk3iAAAAMAAJ`, *Student Directory* (University of Michigan, 2000);
+   no snippet text returned for this hit.
+
+**Non-decisive, for the record.** Both hits look like coincidental matches on generic phrasing, not P4's content.
+The *English Historical Documents* editions are a documentary series covering 1783-1832, roughly 130-280 years after
+this letter (13 March 1655); their snippet is about a political opinion becoming known, not about Stamford, Calais,
+plots or a general rising. The *House Documents* snippet concerns a stockholders' notice, unrelated in subject and
+undated in the API response. The *Student Directory* hit is a University of Michigan student list and carries no
+snippet; "Stamford", "Kelsey" and "Calais" there are almost certainly unrelated proper nouns (a person, a place)
+with no connection to 1655. None of these four titles is a Thurloe edition, a Stamford/Kelsey/Cromwell-period
+correspondence, or a cryptology reference. I read no snippet that quotes P4's plaintext or names this letter.
+
+**Effect on the class:** none from this pass. Toward N4 item 1 is now answered: Google Books gives no prior print
+of P4's cipher plaintext. N4 still waits on items 2-6 of "Toward N4 (what remains)" (Marshall 2020/2023, OpenAlex/
+Semantic Scholar, the 1786 Clarendon vol. 3, DECODE, and the Bodleian leaf image).
+
+Requests this session: www.googleapis.com 10 (8 base queries + 2 `filter=full` re-runs on the two queries with
+hits), one at a time, at least 3 s apart, key never printed. No other host.
