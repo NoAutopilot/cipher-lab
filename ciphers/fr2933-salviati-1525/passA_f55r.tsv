@@ -412,7 +412,7 @@ line	pos	code	marks	action	conf	note
 15	1	_		plain	H	
 15	2	_		plain	H	
 15	3	_		plain	H	
-15	4	a		confirm	H	
+15	4	_		plain	M	part of plain word l'altri
 15	5	_		plain	H	
 15	6	_		plain	H	
 15	7	_		plain	M	
@@ -438,9 +438,9 @@ line	pos	code	marks	action	conf	note
 15	27	_		plain	H	
 15	28	_		plain	H	
 15	29	_		plain	H	
-16	1	S7		confirm	M	
+16	1	_		plain	M	continuous plain cursive stretch, not S7
 16	2	_		plain	M	
-16	3	a		confirm	M	
+16	3	_		plain	M	continuous plain cursive stretch, not a
 16	4	_	dot	plain	H	
 16	5	_		plain	H	
 16	6	S4		confirm	H	
@@ -469,10 +469,10 @@ line	pos	code	marks	action	conf	note
 16	29	_		plain	H	
 16	30	S7		confirm	M	
 16	31	_		plain	M	
-17	1	a		confirm	H	
+17	1	_		plain	M	plain word alcuno pericolo
 17	2	_		plain	H	
 17	3	_		plain	H	
-17	4	p		confirm	M	
+17	4	_		plain	M	the P of pericolo, plain
 17	5	_		plain	M	
 17	6	_		plain	H	
 17	7	_	dot	plain	H	
@@ -496,7 +496,7 @@ line	pos	code	marks	action	conf	note
 17	25	_	dot	plain	M	
 17	26	_	dot	plain	H	
 18	1	_		plain	M	
-18	2	N		confirm	H	
+18	2	_		plain	M	final a of plain word cosa
 18	3	_		plain	H	
 18	4	_	1	plain	M	
 18	5	N		confirm	H	
@@ -505,7 +505,7 @@ line	pos	code	marks	action	conf	note
 18	8	N		confirm	H	
 18	9	_		plain	H	
 18	10	_		plain	H	
-18	11	a		confirm	H	
+18	11	_		plain	M	part of continuous plain cursive word
 18	12	_		plain	H	
 18	13	_		plain	H	
 18	14	_		plain	M	
