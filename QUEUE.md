@@ -1318,6 +1318,15 @@ github.com 2 (shallow clones, deleted after grep). No logins, no credentials, no
 counts: NL/Nordic raw ~133 item-level hits read at note/title level (Riksarkivet API only; other hosts returned no
 item-level results to count), kept 8 scored + 2 caution rows, digitised 0.
 
+**check-solved 24 Sept 2026 (LANE S batch I):** R1 (`ciphers/ra-celsing-dohsson-1779`), R2
+(`ciphers/ra-celsing-sillen-1755`), R3 (`ciphers/ula-degeer-1644`) and R7 (`ciphers/ra-vellingk-1713`) all
+verified **open** (six sources each: web, print/editions, community lists, DECODE public/cached, Bourdeau,
+Aymeloglu — 0/24 found a solution, key transcription or documented attempt). All four confirmed
+`onlyDigitisedMaterials: false` again via a fresh Sök-API query (data.riksarkivet.se had transient
+SSL_ERROR_SYSCALL through the proxy on 2 of 5 queries, both recovered on the one allowed retry) — no route past
+a Riksarkivet copy order for any of the four; REQUEST.md written for each. Full search logs in each target's
+NOTES.md.
+
 ## Europeana and Real Academia de la Historia digitised candidates (LANE S scout of 24 September 2026)
 
 LANE S worker E (row E1-, `.claude/briefs/runs/2026-09-24-lane-s-scE.md`). Hosts: `api.europeana.eu` (JSON API,
