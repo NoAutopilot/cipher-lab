@@ -98,7 +98,7 @@ pamphlet), by Nicolay and Hay (1894) and by Basler, Collected Works vol 7 p.479;
 the OR, the Navy OR, Butler's Correspondence (1917) or Fox's Confidential Correspondence, but their substance
 is in print (Butler's reply, OR I/33 p.279; Fox to Ericsson, ORN I/9 p.667) and most of their words stand in
 clear on the Huntington page transcription published in 2018. Novelty classifications (CLAUDE.md rule 10):
-E6 N1, E12 N1, E4 N3, E5 N3. "Not printed" in the earlier text of this folder meant only "not matched by the
+E6 N1, E12 N1, E4 N3, E5 N3. **Second audit (adversarial), 24 Sept 2026 (AUDIT.md):** E4 and E5 confirmed N3, not raised to N4 (JSTOR and HathiTrust full text still to run); OR I/36 pts 1-3, I/51 pt 1, III/4, the OR Supplement pt I, Fox's Confidential Correspondence, the Lincoln Papers and Google Books were added to the search, all negative. Both telegrams also survive in a second ledger copy, mssEC 25 p.77 (E4) and p.79 (E5), still in cipher in the volunteers' transcription; it reads "Buxton" for the M token "Brenton" (residual for a solver, not yet checked against the image). "Not printed" in the earlier text of this folder meant only "not matched by the
 or_check sweep" and must not be read as "unpublished". Preference for unprinted entries could not be pushed
 further within the budget: most unmatched candidates were the Beckwith and Kimber entries, which are in the
 other cipher (section 2).

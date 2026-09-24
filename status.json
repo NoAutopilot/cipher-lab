@@ -95,7 +95,7 @@
    "state": "waiting",
    "holder": "Archive",
    "next": "Parked for cryptanalysis (every cipher in the ledger reads from a surviving book). An enquiry went to the Huntington curator on 20 Sept 2026 asking whether a corpus-level decoding dataset exists and whether one would be useful; their reply decides whether the mechanical corpus pass is run as an edition project.",
-   "note": "Twenty 1864 entries read at grade H from cipher book mssEC 41; seventeen agree word for word with the Official Records, one with the printed Lincoln works, two (E4, E5) not found in the sources listed in AUDIT.md. Corpus question (AUDIT.md section 12): no one has mapped the ledger entries to cipher, key, plaintext and print; the project's decoding phase was never launched (paused Jan 2018, ended July 2019). A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve.",
+   "note": "Twenty 1864 entries read at grade H from cipher book mssEC 41; seventeen agree word for word with the Official Records, one with the printed Lincoln works, two (E4, E5) not found in the sources listed in AUDIT.md (N3, confirmed by an adversarial second audit on 24 Sept 2026; N4 pending JSTOR and HathiTrust full text; a second ledger copy of both is in mssEC 25 pp.77, 79, still in cipher). Corpus question (AUDIT.md section 12): no one has mapped the ledger entries to cipher, key, plaintext and print; the project's decoding phase was never launched (paused Jan 2018, ended July 2019). A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve.",
    "wait": {
     "on": "The Huntington (curator reply to the 20 Sept enquiry)",
     "since": "20 Sept 2026",
@@ -917,8 +917,8 @@
    "date": "20 Sept 2026",
    "kind": "solve",
    "title": "Eckert 1864: two telegrams, Fox to Butler and Meigs to Butler, 21-22 Apr 1864",
-   "grade": "N3, single audit",
-   "line": "Read at grade H from the surviving cipher book; not located in the Official Records, Butler's Correspondence or the naval records after the logged search. Their substance is in print through the replies, the telegrams themselves are not.",
+   "grade": "N3, two audits; N4 pending",
+   "line": "Read at grade H from the surviving cipher book; not located in the Official Records (army, navy, supplement), Butler's or Fox's printed correspondence or by Google Books phrase search after two logged audits (20 and 24 Sept 2026). Their substance is in print through the replies, the telegrams themselves are not.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864"
   },
   {

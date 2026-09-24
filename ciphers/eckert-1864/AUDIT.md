@@ -359,3 +359,129 @@ public. Reading them from the surviving books is straightforward where a book su
 entry by entry with the search of section 4, never assumed. The project's own statement that Cipher No. 1 was
 withdrawn after the September 1864 captures ("Bonkers") should be tested against the Sept-Dec 1864 entries
 this folder reads with it.
+
+## Second audit (adversarial), 24 Sept 2026
+
+A separate verifier session (brief from the orchestrator, session_01EFmUvFAifLKGdBSsW9mjEG), working 02:54-03:10
+UTC. It took no part in the solving or the first audit. Its only job was to find E4 and E5 in print. It did not
+decode. Claim under audit: sections 1, 5 and 6 above, "E4 and E5 N3, no prior print or decipherment located".
+
+### Verdict
+
+| entry | prior plaintext | prior decipherment | class | change |
+|---|---|---|---|---|
+| E4 Fox to Butler, 21 Apr 1864 9.30 PM | no (not located in 13 printed volumes read by full text, nor in the 10 volumes of OR Supplement pt I by token count, nor by Google Books phrase search, nor in the Lincoln Papers) | no; both Huntington ledger copies are ciphertext with the code words unresolved | **N3** | confirmed, not raised |
+| E5 Meigs to Butler, 22 Apr 1864 10.45 AM | no (same families) | no; as E4 | **N3** | confirmed, not raised |
+
+Not raised to N4 for two reasons. JSTOR was not searched. HathiTrust full-text search, across the whole
+library, could not be run (Cloudflare); only the token counts of named volumes were checked. The same rule was
+applied to Dupuy 468 and Gramont f.29r. Not lowered either: nothing in print carries either telegram.
+
+### What this audit found that the first did not
+
+1. **A second ledger copy of both telegrams.** The Huntington's collection-wide full-text search (CONTENTdm
+   dmQuery on p16003coll11, the words "camels", "Pamlico", "Tecumseh", "cavalry depot") returns, besides mssEC
+   19 p.49 (pointer 8941), **mssEC 25 p.77 (pointer 5621, tel153)**. That page holds E4 again: "Geo D Sheldon
+   Washington April 21 1864 Geo D Sheldon Ft Monroe Rosetta for Knots unity if you can block the channel Baden
+   Sidney ... Yoke ass Buxton Fawks how fie you brave youths Thos T Eckert". **mssEC 25 p.79 (pointer 5623)**
+   holds E5 again: "Geo D Sheldon Washington April 22 1864 ... Elizabeth harsh peach for Knave unity dispatch of
+   last night received ... yoke Bender Thos T Eckert". Both are ciphertext, with the same code words left
+   unresolved in the volunteers' transcription. So this is not a prior decipherment and does not change the
+   class. It does mean the plain words of both telegrams have been public twice on the Huntington site, not
+   once. The same search also found the other ends of the exchange, in clear: Fox to Ericsson 21 Apr 9.40 PM
+   (mssEC 18 p.50, pointer 9716, printed ORN I/9 p.667), and Butler's midnight reply as received (mssEC 10
+   p.118, pointer 10260; mssEC 25 p.79 top, printed OR I/33 p.279).
+   *Residual for the solver, not for this audit:* mssEC 25 is a second witness for the transcription. It reads
+   "Buxton" where ciphertext.txt has "Brenton[?]", the one M token in E4. It also reads "Knots" for "Knox" and
+   "Spartans" for "Spartan". The volunteers read "waxy" where the ledger has "Navy", on both pages.
+2. **OR I/33 prints the reply but not the telegram.** Read in context at p.279 (IA warofrebellion33unit):
+   Butler to Fox, 21 Apr 12 p.m., ends "Will send your telegram to Graham". No Fox-to-Butler telegram of 21 Apr
+   is printed on that page or anywhere else in the volume. The Google Books full-text copies of vol. 33
+   (KHdYYXjL-X4C, wJgtAAAAIAAJ, House documents PM381btVBG0C) agree: they return the reply for "camels" +
+   "April 21, 1864", and nothing else.
+3. **Butler Corr. IV pp.111-116 read in context.** The 21 Apr sequence is: Halleck (horses); Butler to Meigs
+   (three regiments, the message E5 answers); Butler to Fry, Shepley and Dahlgren; three Butler-to-Fox
+   telegrams; Butler to Heckman, Palmer and Grant. None of the telegrams sent to Butler on 21 or 22 Apr by Fox
+   or Meigs is printed.
+4. **The secondary literature cites the Ericsson telegram, never the Butler one.** A search-within of each book
+   gave these results. Hoogenboom, *Gustavus Vasa Fox of the Union Navy* (2008, JmDZ0QcCFgUC), paraphrases Fox
+   to Ericsson; "Butler camels" returns 0 hits. Browning, *From Cape Charles to Cape Fear* (1993,
+   TAMEDAAAQBAJ), pp.105-106, is the same. Newsome, *The Fight for the Old North State* (2020, 8h-uEAAAQBAJ),
+   has "camels" only for the Albemarle's own floats (p.420) and "Tecumseh" 0 times. Still, *Confederate
+   Ironclads at War* (dUCIDwAAQBAJ), has nothing on this exchange.
+
+### Source-family log (24 Sept 2026)
+
+All Internet Archive fetches used the metadata API and then the item's `_djvu.txt`, one fetch per volume, 1.5 s
+apart. Texts were whitespace-normalised before grepping, which avoids the double-space trap of section 3. The
+patterns searched were: camels; lighten the Tecumseh; block the channel; Pamlico Sound we; into Pamlico Sound;
+bar at Hatteras; protect all; Roanoke Island so; instead of (three|3) regiments; cavalry depot( here)?; all the
+transportation; (4,000|four thousand) men here; ready to go to you; (1,000|thousand) cavalry horses; dispatch of
+last night received; here for (Fort )?Monroe. Two further checks: date-and-hour headers for 21 Apr 9.30 p.m. and
+22 Apr 10.45 a.m.; and every "M. C. MEIGS" signature within 300 characters of a date of 21-23 April 1864.
+
+| family | reachable | searched | result |
+|---|---|---|---|
+| (a) OR ser. I vol 33 | yes, IA warofrebellion33unit | all patterns; p.279 read in context | reply only (p.279); "cavalry depots" hits are Hagerstown etc. and Halleck to Grant 16 Apr; no E4, no E5 |
+| (a) OR ser. I vol 36 pts 1-3 | yes, IA warofrebellion361unit, 362unit, 363unit | all patterns | only "all the transportation" in May 1864 contexts; no E4, no E5 |
+| (a) OR ser. I vol 51 pt 1 (Union supplement) | yes, IA warofrebellion511unit | all patterns; every "April 21/22, 1864" header | Heckman order 21 Apr p.1159, Ninth Corps 22 Apr; no E4, no E5 |
+| (a) OR ser. III vol 4 | yes, IA warofrebellionco0004genf | all patterns | Giesborough cavalry depot (administrative); no E5 |
+| (a) OR Supplement (Broadfoot) pt I vols 1-10 | search-only on HathiTrust (record 002912198); HTRC Extracted Features per-page tokens | pages carrying "camels"; pages carrying "Meigs" or "Tecumseh" + Butler/Fox, with co-occurring tokens | "camels" on no page of any volume; no page has Meigs + Butler + April + 1864; the pt I v.6 pp.523-524 pair (Meigs/Monroe; Tecumseh/Butler/transportation) lacks "camels", "April" and "1864" |
+| (a) ORN ser. I vols 9, 10 | yes, IA officialrecordso0009unse, 0010unse | all patterns | Fox to Ericsson (p.667), Butler to Fox (pp.650-651), Welles to Lee "into Pamlico Sound" (question, not E4); no E4 |
+| (b) Butler, Private and Official Correspondence vol 4 | yes, IA privateofficialc04butl | all patterns; pp.111-116 read in context | antecedent to E5 (p.112) and reply to E4 (pp.114-115) only |
+| (c) Fox, Confidential Correspondence vols 1-2 | yes, IA confidentialcorr01foxg, 02foxg | all patterns; every "April 21/22, 1864" | "camels" = Mobile/Tennessee (Farragut); no April 1864 Butler letter |
+| (c) Meigs papers, printed | none exists (no printed Meigs letterbook located, as in section 4) | n/a | not searchable in print; Meigs Papers (LoC) and NARA RG 92 are unpublished archives |
+| (d) LoC Lincoln Papers | yes, loc.gov collections JSON | dates 1864-04-21/22 (all items listed); q "Tecumseh camels"; q "Meigs cavalry horses Butler" 1864-04/05 | 21-22 Apr items are unrelated (Ford, Forney, Fry, Stanton, Brayman ...); keyword queries return one unrelated item each |
+| (d) LoC Butler Papers | not digitised at item level | loc.gov search for the collection with online text | only books and other people's papers returned; item-level search impossible |
+| (e) Huntington mssEC 19 p.49 metadata | yes, CONTENTdm API pointer 8941 | every field | title, callid, telkwd "tel092 : Hatteras", telnum; no decoded field |
+| (e) Huntington collection full text | yes, dmQuery p16003coll11 | camels (6 pp), Pamlico (6), Tecumseh (12), cavalry depot (42), Roanoke (99); the camels and Pamlico pages opened | mssEC 25 pp.77, 79 duplicate ciphertext copies (above); nothing decoded |
+| (f) Google Books API (key, country=US) | yes | 15 phrase queries (lighten the Tecumseh; camels made in a few days; block the channel + Roanoke Tecumseh camels; cross the bar at Hatteras; get into Pamlico Sound; protect all the navy; instead of three / 3 regiments; now at the cavalry depot; 4,000 men here; four thousand men here for; you have all the transportation; dispatch of last night received + Meigs Butler; Meigs Butler "April 22, 1864" horses; Fox Butler "April 21, 1864" camels), 7 combination queries, 11 search-within-volume queries in 5 books | 0 hits for every distinctive E4/E5 phrase; generic phrases hit unrelated texts; OR vol 33 copies return only the reply |
+| (g) HathiTrust | catalog Bibliographic API and HTRC EF yes; full-text search no (Cloudflare, not tried again) | OR Supplement pt I vols 1-10, as above | negative at token level |
+| (h) Solver repositories | yes, anonymous git clone: dbourdeau/cyphersolver c85ece1 (23 Sept 2026), aaymeloglu/unsolved-ciphers 2495c45 (23 Sept 2026) | grep eckert, mssEC, tecumseh, camels, Meigs | Bourdeau: only the Cryptiana list line on the Decoding the Civil War project; Aymeloglu: nothing |
+| (h) Cryptiana | via the Bourdeau snapshot of unsolved.htm | as above | project mention only; no ledger readings |
+| Web | WebSearch | "Fox" "Butler" "camels" "Tecumseh" "Pamlico Sound" 1864 telegram | nothing on this telegram |
+| Not searched | — | JSTOR (credential session's task, outreach gate 2); HathiTrust whole-library full text; NARA RG 107 telegrams sent and RG 92 QMG letters sent (archival, not printed); Zooniverse Talk comments (not keyword-searchable, section 12) | — |
+
+Request count, per host: archive.org 25; hdl.huntington.org 16; loc.gov 8; googleapis.com 22; books.google.com
+11; catalog.hathitrust.org 1; data.htrc.illinois.edu 10; github.com (git) 2.
+
+### Classification
+
+**E4, Fox to Butler, 21 Apr 1864, 9.30 PM: N3.** Prior plaintext: none located. Prior decipherment: none; the
+two Huntington transcriptions (mssEC 19 p.49 and mssEC 25 p.77) leave the code words unresolved. Evidence:
+full-text negatives in every printed series where an editor would have put it (OR I/33, where the reply is
+printed; ORN I/9, where the Ericsson twin is printed; Butler Corr. IV; Fox Corr.); a negative at token level in
+the OR Supplement; phrase negatives on Google Books. Quality high for print. Confidence that it is not in print:
+moderate to high. Confidence that no one has read the code words: moderate, since internal and archival work is
+not excluded.
+- Safe sentence: "Fox's 9.30 p.m. telegram to Butler of 21 April 1864, of which two ledger copies survive in the
+  Huntington's Eckert Papers (mssEC 19 p.49, mssEC 25 p.77), was read from the surviving cipher book at grade H.
+  No printed text of it was located in the Official Records (army, navy, supplement), Butler's or Fox's printed
+  correspondence, or by Google Books phrase search (logged in AUDIT.md). Its substance is known from Butler's
+  reply (OR I/33 p.279) and Fox's parallel telegram to Ericsson (ORN I/9 p.667). Most of its words were already
+  public in clear in the Huntington transcriptions."
+- Unsafe sentence: "A lost Fox telegram, deciphered for the first time and never before published."
+
+**E5, Meigs to Butler, 22 Apr 1864, 10.45 AM: N3.** Prior plaintext: none located. Prior decipherment: none; the
+two transcriptions (mssEC 19 p.49, mssEC 25 p.79) leave the code words unresolved. Evidence as for E4. No
+printed Meigs edition exists, so the sender-side family is archival only. Confidence: moderate to high for print,
+moderate for no reading at all.
+- Safe sentence: "Meigs's telegram to Butler of 22 April 1864 (Huntington mssEC 19 p.49 and mssEC 25 p.79) was
+  read from the surviving cipher book at grade H. No printed text of it was located in the Official Records,
+  including series III and the supplement, in Butler's printed correspondence (which prints the telegram it
+  answers, vol. 4 p.112), or by Google Books phrase search (logged in AUDIT.md)."
+- Unsafe sentence: "An unpublished Meigs telegram recovered from cipher for the first time."
+
+To reach N4, three things remain: the credential session's JSTOR queries on the E4 and E5 phrases and on
+Fox-Butler, Albemarle and camels; a HathiTrust whole-library full-text search, from a browser that passes the
+challenge or from the person; and, optionally, a look at the Meigs Papers finding aid. Until then no sentence
+may use "first decipherment" or "previously unread", even with a qualifier.
+
+### Postmortem
+
+The first audit's N3 holds. It did miss the second ledger copy in mssEC 25, because it searched the item
+records for p.49 and not the collection's full text. The miss changes no class. It does double the public
+witnesses of the plain words, and it gives the solver a second witness for the one M token. Corrections in this
+commit: the board's results entry ("N3, single audit" becomes "N3, two audits; N4 pending"), NOTES.md section 4
+(adds the second copy and the second audit), and status.json's eckert-1864 target note. STATUS.md carries no
+sentence about E4 or E5 that over-claims; the orchestrator adds the result line when it republishes the board.
