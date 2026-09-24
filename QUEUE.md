@@ -5415,3 +5415,93 @@ not a citation. `QUEUE.md`'s ~5300 lines were not individually re-parsed row by 
 to a `ciphers/` folder (already captured via NOTES.md) or duplicates CATALOG.md's Item column; a full QUEUE.md
 sweep for rows with neither is the natural next pass and is not done here (budget). No network was used to
 verify any of this pass's counts; every figure is only as good as the TSV or NOTES.md it came from.
+
+## Image detector (24 Sept 2026)
+
+Worker detIMG (parent, Sonnet, cap $10): built `tools/cipher_page_detector.py` (numpy+PIL
+layout classifier, no OCR, no character shapes) to find cipher pages by looking at the
+image directly, since every scout so far has searched catalogue text for "chiffre" and
+would miss a page a cataloguer never flagged. Offline test `tools/tests/test_cipher_page_detector.py`
+passes (4 synthetic fixtures, `tools/tests/fixtures/`, 60 KB total).
+
+**Controls (rule 3), before any sweep.** `sources/detector-img/labels.tsv`
+(`sources/detector-img/build_labels.py` regenerates it from the paths and reasoning listed
+there): 41 cipher-page images from 10 hands and three centuries already on disk under
+`ciphers/*/images` -- Gramont (BnF fr.2980), Danzay (fr.20140), Salviati (fr.2933),
+Seure (fr.3151), Lodewijk van Nassau, August van Saksen, Blathwayt (Huntington), Eckert
+(Huntington mssEC 1862+1864 ledgers), Le Tellier/Brienne (fr.5160), Carpi (Dupuy 452) --
+plus 43 negatives, mostly matched same-dossier controls (a plain leaf of the same folder,
+a contemporary decipherment transcript sitting beside its cipher, a blank/address leaf)
+plus 10 printed prose pages from `print_check/`. Held out a third per class.
+
+Result: **train n=57 precision=0.808 recall=0.750 fpr=0.172; holdout n=27 precision=0.750
+recall=0.692 fpr=0.214.** Gate (recall>=0.85, fpr<=0.15 on the held-out set): **FAIL.**
+One round of feature changes tried per the brief (`--autocrop`, cropping to the ink
+bounding box before the 400px resize, meant to put a tight crop and a wide-margin full
+page on the same character scale): holdout recall fell to 0.538 and fpr rose to 0.286 --
+worse, reverted to non-default, kept as a documented `--autocrop` flag for a future
+retest with more data. No sweep run; per the brief a failed gate stops here and is
+reported as a result, not chased further this session.
+
+**What separates.** `small_token_ink_fraction` (share of page ink sitting in tokens no
+wider than about one line-height -- i.e. isolated short marks rather than long connected
+cursive runs) is the strongest single signal: 1.0 vs 0.0 on every synthetic fixture, and
+correctly ranks most of the real controls -- the ten printed-prose negatives all score
+under 0.13, and dense, unambiguous cipher blocks (Gramont f.30, Danzay f.71 crop, three
+Eckert 1862 ledger pages, four of six Lodewijk numeral-ciphertext leaves) score 0.7-0.98.
+`token_width_norm_mean` and `spacing_cv` move the same direction and reinforce this on
+the clean cases.
+
+**What does not separate, and why (the actual finding of this control run).**
+1. **Partly-ciphered real letters are not visually cipher-dominant.** Blathwayt's own
+   cipher-location table (`ciphers/huntington-blathwayt-madrid-1728/NOTES.md`) gives BLA
+   186 as "1 line + 1 line inline in an otherwise clear letter" -- a page that is
+   correctly, by NOTES.md's own account, >95% plain French. Even BLA 191(a) (12 lines,
+   pure numeric cipher, the single cleanest Blathwayt example) scored 0.427 (plain) on
+   this run: full-page photographs of Huntington folio sheets carry wide plain margins
+   and a return-address/docket area that dilute the page-level signal even when the body
+   is dense cipher. A page-level layout score cannot resolve a passage that occupies a
+   fraction of one page; it would need to work on cropped text blocks, not full folios,
+   for material like this.
+2. **Word-substitution telegraph code looks like ordinary handwriting.** Eckert's ledgers
+   ("still in code") replace words with other words (Stager vocabulary), not with numerals
+   or invented signs -- the two confirmed code-word ledger entries used as positives
+   (`mssEC19_p8941.jpg`, `mssEC25_p5621.jpg`) both scored under 0.28 (plain). This is a
+   real, expected limitation, not a bug: the brief's feature set (isolated tokens, digit
+   regularity, interlinear rows) targets numeral/symbol ciphers and cannot see a
+   substitution code that is orthographically ordinary prose. A text-content classifier,
+   not a layout one, would be needed for this family.
+3. **Sparse/blank leaves false-positive.** Address leaves, blank versos and short
+   docket lines (several Lodewijk p3/p4 leaves, one Blathwayt cover page) scored as
+   cipher (0.54-0.87): a handful of short, widely spaced marks on an otherwise blank page
+   (a wax-seal outline, a one-line address, a docket stamp) produces the same
+   "small isolated tokens, big gaps" signature the model was trained to read as cipher.
+   This is the converse of #1 and the harder problem to fix without adding an
+   ink-density floor or an OCR-free "is this page mostly blank" gate, which the next
+   round should try first (cheap: reject `ink_density` below a floor before scoring).
+4. **Resolution/framing inconsistency hurt more than it helped to "fix" this round.**
+   Positives ranged from cropped, near-full-frame line images (Danzay's `f69_cipher.jpg`,
+   `f71_cipher.jpg`, tight crops, both scored 0.75-0.93) to native full-page photographs
+   with large plain borders (Danzay's own `native_f70.jpg`, described in NOTES.md as
+   "cipher from the first line to the last," scored 0.358, plain) -- the same folio's
+   full page and its own dense-cipher crop landed on opposite sides of the gate. The
+   `--autocrop` attempt to fix this by trimming to the ink bounding box made holdout
+   worse, not better (see above); the bounding-box crop is too coarse a proxy for "where
+   the cipher block sits" when a page mixes a long plain passage and a short cipher one
+   (case 1 above dominates the same pages this was meant to fix).
+
+**Recommendation for the next round (not attempted this session, out of the one-round
+allowance and the $10 cap):** split the training set by whether the source image is
+already a tight crop of the cipher/plain passage or a full folio photograph, and either
+train two separate thresholds or add a per-page "is this a tight crop" feature (aspect
+ratio and border-ink-density are cheap proxies); add an ink-density floor to suppress
+blank/address-leaf false positives before scoring; and, if pursuing case 2 (Eckert-style
+substitution code), note plainly that no layout feature will separate it -- a different
+detector (vocabulary/word-frequency based) is needed, not a tuning pass on this one.
+
+**Cost:** parent worker, Sonnet, cap $10; own cost not obtainable via `get_session` in
+this environment build (field absent from the result), so not quoted here -- the work
+performed (tool + fixtures + offline test + 84-image labelled control set + one fit +
+one feature-change round) is the basis for the report. No network requests made this
+session (gallica.bnf.fr: 0 of the planned 300-thumbnail + 2-manifest allowance -- the
+sweep step never ran because the gate failed).
