@@ -1,0 +1,1544 @@
+line	position	sign	confidence	alt	why
+BLA179_p6_L01	1	737	M		agree-flagged
+BLA179_p6_L01	2	278	H		agree
+BLA179_p6_L01	3	947	M		agree-flagged
+BLA179_p6_L01	4	826	M		agree-flagged
+BLA179_p6_L01	5	272	M		agree-flagged
+BLA179_p6_L01	6	68	H		agree
+BLA179_p6_L02	1	210	H		agree
+BLA179_p6_L02	2	18	H		agree
+BLA179_p6_L02	3	766	H		agree
+BLA179_p6_L02	4	101	H		agree
+BLA179_p6_L02	5	816	H		agree
+BLA179_p6_L02	6	383	M	B:355	differ
+BLA179_p6_L02	7	888	H		agree
+BLA179_p6_L02	8	1042	H		agree
+BLA179_p6_L02	9	278	H		agree
+BLA179_p6_L02	10	660	H		agree
+BLA179_p6_L02	11	1007	M		agree-flagged
+BLA179_p6_L03	1	1016	H		agree
+BLA179_p6_L03	2	926	H		agree
+BLA179_p6_L03	3	661	H		agree
+BLA179_p6_L03	4	1006	H		agree
+BLA179_p6_L03	5	659	M		agree-flagged
+BLA179_p6_L03	6	26	H		agree
+BLA179_p6_L03	7	1099	H		agree
+BLA179_p6_L03	8	1039	H		agree
+BLA179_p6_L03	9	926	H		agree
+BLA179_p6_L03	10	661	H		agree
+BLA179_p6_L03	11	1213	H		agree
+BLA179_p6_L04	1	278	H		agree
+BLA179_p6_L04	2	691	M		agree-flagged
+BLA179_p6_L04	3	941	M		agree-flagged
+BLA179_p6_L04	4	1013	M		agree-flagged
+BLA184_p1_L01	1	1150	H		agree
+BLA184_p1_L01	2	1259	H		agree
+BLA184_p1_L02	1	1240	H		agree
+BLA184_p1_L02	2	1243	H		agree
+BLA184_p1_L03	1	1243	H		agree
+BLA184_p1_L03	2	1240	H		agree
+BLA184_p1_L04	1	1250	H		agree
+BLA185_p5_L01	1	580	H		agree
+BLA185_p5_L01	2	754	H		agree
+BLA185_p5_L01	3	26	H		agree
+BLA185_p5_L01	4	841	H		agree
+BLA185_p5_L01	5	1137	H		agree
+BLA185_p5_L01	6	941	H		agree
+BLA185_p5_L01	7	100	H		agree
+BLA185_p5_L01	8	1041	H		agree
+BLA185_p5_L01	9	275	H		agree
+BLA185_p5_L01	10	737	H		agree
+BLA185_p5_L02	1	647	H		agree
+BLA185_p5_L02	2	756	H		agree
+BLA185_p5_L02	3	937	H		agree
+BLA185_p5_L02	4	661	H		agree
+BLA185_p5_L02	5	1129	H		agree
+BLA185_p5_L02	6	271	H		agree
+BLA185_p5_L02	7	67	H		agree
+BLA185_p5_L02	8	136	H		agree
+BLA185_p5_L02	9	282	H		agree
+BLA185_p5_L02	10	111	H		agree
+BLA185_p5_L03	1	1013	H		agree
+BLA185_p5_L03	2	756	H		agree
+BLA185_p5_L03	3	1022	H		agree
+BLA185_p5_L03	4	595	H		agree
+BLA185_p5_L03	5	824	H		agree
+BLA185_p5_L03	6	857	H		agree
+BLA185_p5_L03	7	835	H		agree
+BLA185_p5_L03	8	666	H		agree
+BLA185_p5_L03	9	576	H		agree
+BLA185_p5_L04	1	106	H		agree
+BLA185_p5_L04	2	278	H		agree
+BLA185_p5_L04	3	737	H		agree
+BLA185_p5_L04	4	822	H		agree
+BLA185_p5_L04	5	1109	H		agree
+BLA185_p5_L04	6	506	H		agree
+BLA185_p5_L04	7	758	H		agree
+BLA185_p5_L05	1	743	H		agree
+BLA185_p5_L05	2	1024	H		agree
+BLA185_p5_L05	3	54	H		agree
+BLA185_p5_L05	4	835	H		agree
+BLA185_p5_L05	5	702	H		agree
+BLA185_p5_L06	1	1016	H		agree
+BLA185_p5_L06	2	662	H		agree
+BLA185_p5_L06	3	521	H		agree
+BLA185_p5_L06	4	1013	H		agree
+BLA185_p5_L06	5	698	H		agree
+BLA185_p5_L06	6	381	H		agree
+BLA185_p5_L06	7	189	M		agree-flagged
+BLA185_p5_L06	8	823	H		agree
+BLA185_p5_L06	9	97	H		agree
+BLA185_p5_L06	10	191	H		agree
+BLA185_p5_L07	1	591	H		agree
+BLA185_p5_L07	2	1185	M	B:1186	differ
+BLA185_p5_L07	3	271	H		agree
+BLA185_p5_L07	4	433	H		agree
+BLA185_p5_L07	5	941	H		agree
+BLA185_p5_L07	6	278	H		agree
+BLA185_p5_L07	7	998	H		agree
+BLA185_p5_L07	8	473	H		agree
+BLA185_p5_L07	9	278	H		agree
+BLA185_p5_L07	10	219	H		agree
+BLA185_p5_L08	1	30	H		agree
+BLA185_p5_L08	2	1099	H		agree
+BLA185_p5_L08	3	387	H		agree
+BLA185_p5_L08	4	932	H		agree
+BLA185_p5_L08	5	1129	H		agree
+BLA185_p5_L08	6	84	H		agree
+BLA185_p5_L08	7	926	H		agree
+BLA185_p5_L08	8	188	H		agree
+BLA185_p5_L08	9	18	H		agree
+BLA185_p5_L08	10	1017	H		agree
+BLA185_p5_L09	1	942	H		agree
+BLA185_p5_L09	2	461	H		agree
+BLA185_p5_L09	3	796	H		agree
+BLA185_p5_L09	4	958	H		agree
+BLA185_p5_L09	5	942	H		agree
+BLA185_p5_L09	6	1033	H		agree
+BLA185_p5_L09	7	163	H		agree
+BLA185_p5_L09	8	930	H		agree
+BLA185_p5_L09	9	40	H		agree
+BLA185_p5_L10	1	754	H		agree
+BLA185_p5_L10	2	1099	H		agree
+BLA185_p5_L10	3	823	H		agree
+BLA185_p5_L10	4	765	H		agree
+BLA185_p5_L10	5	1243	M		agree-flagged
+BLA185_p5_L10	6	588	H		agree
+BLA185_p5_L10	7	1201	H		agree
+BLA185_p5_L10	8	18	H		agree
+BLA185_p5_L10	9	1148	H		agree
+BLA185_p5_L11	1	943	H		agree
+BLA185_p5_L11	2	695	H		agree
+BLA185_p5_L11	3	278	H		agree
+BLA185_p5_L11	4	18	H		agree
+BLA185_p5_L11	5	163	H		agree
+BLA185_p5_L11	6	713	H		agree
+BLA185_p5_L11	7	924	H		agree
+BLA185_p5_L11	8	796	H		agree
+BLA185_p5_L11	9	1153	H		agree
+BLA185_p5_L12	1	270	H		agree
+BLA185_p5_L12	2	942	H		agree
+BLA185_p5_L12	3	659	H		agree
+BLA185_p5_L12	4	32	H		agree
+BLA185_p5_L12	5	663	H		agree
+BLA185_p5_L12	6	926	H		agree
+BLA185_p5_L12	7	941	H		agree
+BLA186_p1_L01	1	659	H		agree
+BLA186_p1_L01	2	78	H		agree
+BLA186_p1_L01	3	73	H		agree
+BLA186_p1_L01	4	18	H		agree
+BLA186_p1_L01	5	438	H		agree
+BLA186_p1_L01	6	468	H		agree
+BLA186_p1_L01	7	470	M		agree-flagged
+BLA186_p1_L01	8	758	M	B:738	differ
+BLA186_p1_L01	9	190	H		agree
+BLA186_p1_L01	10	1102	H		agree
+BLA186_p1_L01	11	53	H		agree
+BLA186_p3_L01	1	733	H		agree
+BLA186_p3_L01	2	278	H		agree
+BLA186_p3_L01	3	822	H		agree
+BLA186_p3_L01	4	1109	H		agree
+BLA186_p3_L01	5	506	H		agree
+BLA186_p3_L01	6	758	H		agree
+BLA186_p3_L01	7	690	H		agree
+BLA186_p3_L01	8	381	H		agree
+BLA186_p3_L01	9	18	H		agree
+BLA186_p3_L01	10	849	H		agree
+BLA186_p3_L01	11	163	H		agree
+BLA186_p3_L01	12	1022	H		agree
+BLA186_p3_L01	13	593	M		agree-flagged
+BLA187_p3_L01	1	1154	H		agree
+BLA187_p3_L01	2	731	H		agree
+BLA187_p3_L01	3	581	H		agree
+BLA187_p3_L01	4	1013	M		agree-flagged
+BLA187_p3_L01	5	1240	H		agree
+BLA187_p3_L01	6	733	H		agree
+BLA187_p3_L01	7	822	H		agree
+BLA187_p3_L01	8	1109	H		agree
+BLA187_p3_L02	1	506	H		agree
+BLA187_p3_L02	2	758	H		agree
+BLA187_p3_L02	3	561	M		agree-flagged
+BLA187_p3_L02	4	291	H		agree
+BLA187_p3_L02	5	935	M		agree-flagged
+BLA187_p3_L02	6	238	M	B:258	differ
+BLA187_p3_L02	7	219	M	B:213	differ
+BLA187_p3_L02	8	384	H		agree
+BLA187_p3_L03	1	106	H		agree
+BLA187_p3_L03	2	278	M	B:258	differ
+BLA187_p3_L03	3	1014	H		agree
+BLA187_p3_L03	4	909	M	B:509	differ
+BLA187_p3_L03	5	184	H		agree
+BLA187_p3_L03	6	1148	H		agree
+BLA187_p3_L03	7	122	H		agree
+BLA187_p3_L03	8	46	H		agree
+BLA187_p3_L04	1	1250	H		agree
+BLA187_p3_L04	2	558	H		agree
+BLA187_p3_L04	3	38	H		agree
+BLA187_p3_L04	4	1022	M		agree-flagged
+BLA187_p3_L04	5	593	H		agree
+BLA187_p3_L04	6	588	H		agree
+BLA187_p3_L04	7	695	H		agree
+BLA187_p3_L04	8	345	H		agree
+BLA187_p3_L05	1	929	H		agree
+BLA187_p3_L05	2	1182	H		agree
+BLA187_p3_L05	3	387	H		agree
+BLA187_p3_L05	4	1135	H		agree
+BLA187_p3_L05	5	1131	H		agree
+BLA187_p3_L05	6	258	H		agree
+BLA187_p3_L05	7	140	H		agree
+BLA187_p3_L05	8	1288	M	B:1233	differ
+BLA187_p3_L06	1	101	H		agree
+BLA187_p3_L06	2	662	H		agree
+BLA187_p3_L06	3	80	M		agree-flagged
+BLA187_p3_L06	4	692	H		agree
+BLA187_p3_L06	5	925	M		agree-flagged
+BLA187_p3_L06	6	756	H		agree
+BLA187_p3_L06	7	1153	H		agree
+BLA187_p3_L06	8	250	H		agree
+BLA187_p3_L06	9	948	H		agree
+BLA187_p3_L07	1	495	H		agree
+BLA187_p3_L07	2	829	M	B:824	differ
+BLA187_p3_L07	3	381	H		agree
+BLA187_p3_L07	4	439	H		agree
+BLA187_p3_L07	5	660	H		agree
+BLA187_p3_L07	6	289	H		agree
+BLA187_p3_L07	7	825	H		agree
+BLA187_p3_L07	8	385	M	B:387	differ
+BLA187_p3_L08	1	658	H		agree
+BLA187_p3_L08	2	18	H		agree
+BLA187_p3_L08	3	1149	H		agree
+BLA187_p3_L08	4	154	M		agree-flagged
+BLA187_p3_L08	5	1109	H		agree
+BLA187_p3_L08	6	695	H		agree
+BLA187_p3_L08	7	1243	M		agree-flagged
+BLA187_p3_L08	8	926	H		agree
+BLA187_p3_L09	1	1020	H		agree
+BLA187_p3_L09	2	796	M		agree-flagged
+BLA187_p3_L09	3	1123	H		agree
+BLA187_p3_L09	4	18	H		agree
+BLA187_p3_L09	5	338	H		agree
+BLA187_p3_L09	6	941	H		agree
+BLA187_p3_L09	7	659	H		agree
+BLA187_p3_L09	8	451	H		agree
+BLA187_p3_L10	1	835	H		agree
+BLA187_p3_L10	2	792	H		agree
+BLA187_p3_L10	3	137	M	B:135	differ
+BLA187_p3_L10	4	1119	H		agree
+BLA187_p3_L10	5	339	H		agree
+BLA187_p3_L10	6	941	H		agree
+BLA187_p3_L10	7	385	H		agree
+BLA187_p3_L10	8	951	M	B:551	differ
+BLA187_p3_L11	1	289	H		agree
+BLA187_p3_L11	2	197	H		agree
+BLA187_p3_L11	3	696	H		agree
+BLA188_p3_L01	1	1212	H		agree
+BLA188_p3_L01	2	298	M	B:278	differ
+BLA188_p3_L01	3	596	M		agree-flagged
+BLA188_p3_L01	4	591	M		agree-flagged
+BLA188_p3_L01	5	289	H		agree
+BLA188_p3_L01	6	834	M	B:831	differ
+BLA188_p3_L01	7	298	M	B:278	differ
+BLA188_p3_L01	8	1014	M		agree-flagged
+BLA188_p3_L02	1	591	H		agree
+BLA188_p3_L02	2	1102	H		agree
+BLA188_p3_L02	3	691	M		agree-flagged
+BLA188_p3_L02	4	945	H		agree
+BLA188_p3_L02	5	369	M	B:869	differ
+BLA188_p3_L02	6	1268	M		agree-flagged
+BLA188_p3_L02	7	697	H		agree
+BLA188_p3_L02	8	665	H		agree
+BLA188_p3_L03	1	941	H		agree
+BLA188_p3_L03	2	250	H		agree
+BLA188_p3_L03	3	1255	H		agree
+BLA188_p3_L03	4	575	H		agree
+BLA188_p3_L03	5	26	H		agree
+BLA188_p3_L03	6	849	H		agree
+BLA188_p3_L03	7	101	H		agree
+BLA188_p3_L03	8	733	M		agree-flagged
+BLA188_p3_L03	9	822	M		agree-flagged
+BLA188_p3_L04	1	1109	H		agree
+BLA188_p3_L04	2	506	M		agree-flagged
+BLA188_p3_L04	3	758	H		agree
+BLA188_p3_L04	4	1033	H		agree
+BLA188_p3_L04	5	661	H		agree
+BLA188_p3_L04	6	241	H		agree
+BLA188_p3_L04	7	255	H		agree
+BLA188_p3_L04	8	1196	M		agree-flagged
+BLA188_p3_L04	9	672	M	B:692	differ
+BLA188_p3_L05	1	289	H		agree
+BLA188_p3_L05	2	1209	H		agree
+BLA188_p3_L05	3	691	H		agree
+BLA188_p3_L05	4	1201	H		agree
+BLA188_p3_L05	5	802	M		agree-flagged
+BLA188_p3_L05	6	1154	M		agree-flagged
+BLA188_p3_L05	7	695	H		agree
+BLA188_p3_L05	8	934	M		agree-flagged
+BLA188_p3_L05	9	282	H		agree
+BLA188_p3_L06	1	1033	H		agree
+BLA188_p3_L06	2	661	H		agree
+BLA188_p3_L06	3	691	H		agree
+BLA188_p3_L06	4	945	H		agree
+BLA188_p3_L06	5	18	H		agree
+BLA188_p3_L06	6	508	H		agree
+BLA188_p3_L06	7	1261	M		agree-flagged
+BLA188_p3_L06	8	163	M		agree-flagged
+BLA188_p3_L06	9	697	M		agree-flagged
+BLA188_p3_L07	1	755	H		agree
+BLA188_p3_L07	2	1025	M	B:1029	differ
+BLA188_p3_L07	3	948	H		agree
+BLA188_p3_L07	4	928	H		agree
+BLA188_p3_L07	5	18	H		agree
+BLA188_p3_L07	6	1114	M	B:1119	differ
+BLA188_p3_L07	7	661	H		agree
+BLA188_p3_L07	8	263	H		agree
+BLA188_p3_L07	9	152	H		agree
+BLA188_p3_L07	10	792	H		agree
+BLA188_p3_L08	1	926	H		agree
+BLA188_p3_L08	2	1154	M		agree-flagged
+BLA188_p3_L08	3	835	H		agree
+BLA188_p3_L08	4	576	M		agree-flagged
+BLA188_p3_L08	5	385	M		agree-flagged
+BLA188_p3_L08	6	1033	H		agree
+BLA188_p3_L08	7	704	H		agree
+BLA188_p3_L08	8	1109	H		agree
+BLA188_p3_L08	9	660	H		agree
+BLA188_p3_L08	10	342	H		agree
+BLA188_p3_L09	1	282	M	A:-	gap
+BLA188_p3_L09	2	665	M	A:-	gap
+BLA188_p3_L09	3	576	M	A:-	gap
+BLA188_p3_L09	4	388	M	A:-	gap
+BLA188_p3_L09	5	1033	M	A:-	gap
+BLA188_p3_L09	6	704	M	A:-	gap
+BLA188_p3_L09	7	407	M	A:-	gap
+BLA188_p3_L09	8	660	M	A:-	gap
+BLA188_p3_L09	9	252	M	B:342	differ
+BLA188_p3_L10	1	282	M	A:-	gap
+BLA188_p3_L10	2	665	H		agree
+BLA188_p3_L10	3	576	H		agree
+BLA188_p3_L10	4	389	M	B:1200	differ
+BLA188_p3_L10	5	1033	M	B:1020	differ
+BLA188_p3_L10	6	704	M	B:660	differ
+BLA188_p3_L10	7	407	M	B:899	differ
+BLA188_p3_L10	8	660	M	B:837	differ
+BLA188_p3_L10	9	342	M	B:1143	differ
+BLA188_p3_L11	1		M	B:1150	differ
+BLA188_p3_L11	2	665	M	B:795	differ
+BLA188_p3_L11	3	576	M	B:520	differ
+BLA188_p3_L11	4	1200	M	B:941	differ
+BLA188_p3_L11	5	1020	M	B:1014	differ
+BLA188_p3_L11	6	660	M	B:968	differ
+BLA188_p3_L11	7	899	M	B:381	differ
+BLA188_p3_L11	8	831	M	B:429	differ
+BLA188_p3_L11	9	1143	M	B:30	differ
+BLA188_p3_L12	1	1150	M	B:1099	differ
+BLA188_p3_L12	2	495	M	B:289	differ
+BLA188_p3_L12	3	520	M	B:164	differ
+BLA188_p3_L12	4	941	M	B:34	differ
+BLA188_p3_L12	5	1014	M	B:662	differ
+BLA188_p3_L12	6	968	M	B:1250	differ
+BLA188_p3_L12	7	381	M	B:1033	differ
+BLA188_p3_L12	8	429	M	B:659	differ
+BLA188_p3_L12	9	30	M	B:432	differ
+BLA188_p3_L13	1	278	M	A:-	gap
+BLA188_p3_L13	2	1099	M	B:660	differ
+BLA188_p3_L13	3	289	M	B:140	differ
+BLA188_p3_L13	4	164	M	B:623	differ
+BLA188_p3_L13	5	34	M	B:258	differ
+BLA188_p3_L13	6	662	M	B:1014	differ
+BLA188_p3_L13	7	1250	M	B:709	differ
+BLA188_p3_L13	8	1033	M	B:123	differ
+BLA188_p3_L13	9	659	M	B:595	differ
+BLA188_p3_L13	10	432	M	B:	differ
+BLA188_p3_L14	1	1100	M	A:-	gap
+BLA188_p3_L14	2	298	M	B:757	differ
+BLA188_p3_L14	3	660	M	B:926	differ
+BLA188_p3_L14	4	140	M	B:18	differ
+BLA188_p3_L14	5	623	M	B:838	differ
+BLA188_p3_L14	6	238	M	B:1013	differ
+BLA188_p3_L14	7	1014	M	B:668	differ
+BLA188_p3_L14	8	709	M	B:12	differ
+BLA188_p3_L14	9	123	M	B:843	differ
+BLA188_p3_L14	10	595	M	B:588	differ
+BLA188_p3_L15	1	1100	M	B:695	differ
+BLA188_p3_L15	2	757	M	B:345	differ
+BLA188_p3_L15	3	926	H		agree
+BLA188_p3_L15	4	18	M	B:-	gap
+BLA188_p3_L15	5	838	M	B:191	differ
+BLA188_p3_L15	6	1013	M	B:792	differ
+BLA188_p3_L15	7	668	M	B:823	differ
+BLA188_p3_L15	8	12	M	B:1045	differ
+BLA188_p3_L15	9	843	M	B:432	differ
+BLA188_p3_L15	10	588	M	B:926	differ
+BLA188_p3_L16	1	659	M	A:-	gap
+BLA188_p3_L16	2	695	M	B:454	differ
+BLA188_p3_L16	3	345	M	B:68	differ
+BLA188_p3_L16	4	926	M	B:438	differ
+BLA188_p3_L16	5	191	M	B:96	differ
+BLA188_p3_L16	6	792	M	B:369	differ
+BLA188_p3_L16	7	823	M	B:18	differ
+BLA188_p3_L16	8	1045	M	B:218	differ
+BLA188_p3_L16	9	432	M	B:830	differ
+BLA188_p3_L16	10	926	M	B:581	differ
+BLA188_p3_L17	1	659	M	B:-	gap
+BLA188_p3_L17	2	459	M	B:1193	differ
+BLA188_p3_L17	3	68	M	B:941	differ
+BLA188_p3_L17	4	438	M	B:1013	differ
+BLA188_p3_L17	5	96	M	B:843	differ
+BLA188_p3_L17	6	369	M	B:101	differ
+BLA188_p3_L17	7	18	M	B:850	differ
+BLA188_p3_L17	8	218	M	B:192	differ
+BLA188_p3_L17	9	830	M	B:369	differ
+BLA188_p3_L17	10	581	M	B:588	differ
+BLA188_p3_L18	1	1195	M	B:922	differ
+BLA188_p3_L18	2	941	M	B:381	differ
+BLA188_p3_L18	3	1013	M	B:1081	differ
+BLA188_p3_L18	4	843	M	B:796	differ
+BLA188_p3_L18	5	101	M	B:1013	differ
+BLA188_p3_L18	6	850	M	B:386	differ
+BLA188_p3_L18	7	192	M	B:538	differ
+BLA188_p3_L18	8	369	M	B:251	differ
+BLA188_p3_L18	9	388	M	B:379	differ
+BLA188_p3_L19	1	922	M	B:-	gap
+BLA188_p3_L19	2	381	M	B:-	gap
+BLA188_p3_L19	3	1081	M	B:-	gap
+BLA188_p3_L19	4	796	M	B:-	gap
+BLA188_p3_L19	5	1013	M	B:-	gap
+BLA188_p3_L19	6	386	M	B:-	gap
+BLA188_p3_L19	7	538	M	B:-	gap
+BLA188_p3_L19	8	291	M	B:-	gap
+BLA188_p3_L19	9	379	M	B:-	gap
+BLA190_p7_L01	1	575	H		agree
+BLA190_p7_L01	2	26	H		agree
+BLA190_p7_L01	3	356	H		agree
+BLA190_p7_L01	4	18	H		agree
+BLA190_p7_L01	5	737	H		agree
+BLA190_p7_L01	6	1028	H		agree
+BLA190_p7_L01	7	756	H		agree
+BLA190_p7_L01	8	828	H		agree
+BLA190_p7_L01	9	1149	H		agree
+BLA190_p7_L01	10	672	H		agree
+BLA190_p7_L01	11	835	H		agree
+BLA190_p7_L02	1	1154	H		agree
+BLA190_p7_L02	2	1033	H		agree
+BLA190_p7_L02	3	662	H		agree
+BLA190_p7_L02	4	53	H		agree
+BLA190_p7_L02	5	1013	H		agree
+BLA190_p7_L02	6	928	H		agree
+BLA190_p7_L02	7	853	H		agree
+BLA190_p7_L02	8	942	H		agree
+BLA190_p7_L02	9	823	H		agree
+BLA190_p7_L02	10	661	H		agree
+BLA190_p7_L02	11	892	H		agree
+BLA190_p7_L03	1	259	H		agree
+BLA190_p7_L03	2	561	H		agree
+BLA190_p7_L03	3	491	H		agree
+BLA190_p7_L03	4	101	H		agree
+BLA190_p7_L03	5	1149	H		agree
+BLA190_p7_L03	6	111	H		agree
+BLA190_p7_L03	7	1033	H		agree
+BLA190_p7_L03	8	704	H		agree
+BLA190_p7_L03	9	854	H		agree
+BLA190_p7_L03	10	620	H		agree
+BLA190_p7_L04	1	162	H		agree
+BLA190_p7_L04	2	113	H		agree
+BLA190_p7_L04	3	427	H		agree
+BLA190_p7_L04	4	583	M	B:588	differ
+BLA190_p7_L04	5	1201	H		agree
+BLA190_p7_L04	6	18	H		agree
+BLA190_p7_L04	7	1207	H		agree
+BLA190_p7_L04	8	703	H		agree
+BLA190_p7_L04	9	1148	H		agree
+BLA190_p7_L04	10	119	H		agree
+BLA190_p7_L04	11	669	M		agree-flagged
+BLA190_p7_L04	12	387	H		agree
+BLA190_p7_L05	1	278	M	B:258	differ
+BLA190_p7_L05	2	197	H		agree
+BLA190_p7_L05	3	796	H		agree
+BLA190_p7_L05	4	695	H		agree
+BLA190_p7_L05	5	659	H		agree
+BLA190_p7_L05	6	18	H		agree
+BLA190_p7_L05	7	972	H		agree
+BLA190_p7_L05	8	1016	H		agree
+BLA190_p7_L05	9	929	H		agree
+BLA190_p7_L05	10	1201	H		agree
+BLA190_p7_L05	11	26	H		agree
+BLA190_p7_L05	12	1090	M		agree-flagged
+BLA190_p7_L06	1	388	H		agree
+BLA190_p7_L06	2	834	H		agree
+BLA190_p7_L06	3	835	H		agree
+BLA190_p7_L06	4	659	H		agree
+BLA190_p7_L06	5	42	H		agree
+BLA190_p7_L06	6	941	H		agree
+BLA190_p7_L06	7	1250	M		agree-flagged
+BLA190_p7_L06	8	163	H		agree
+BLA190_p7_L06	9	928	H		agree
+BLA190_p7_L06	10	690	H		agree
+BLA190_p7_L06	11	18	H		agree
+BLA190_p7_L06	12	468	H		agree
+BLA190_p7_L07	1	321	H		agree
+BLA190_p7_L07	2	278	H		agree
+BLA190_p7_L07	3	742	H		agree
+BLA190_p7_L07	4	278	H		agree
+BLA190_p7_L07	5	695	H		agree
+BLA190_p7_L07	6	1069	H		agree
+BLA190_p7_L07	7	580	H		agree
+BLA190_p7_L07	8	1154	H		agree
+BLA190_p7_L07	9	839	H		agree
+BLA190_p7_L07	10	360	H		agree
+BLA190_p7_L08	1	357	H		agree
+BLA190_p7_L08	2	607	H		agree
+BLA190_p7_L08	3	665	H		agree
+BLA190_p7_L08	4	941	H		agree
+BLA190_p7_L08	5	270	H		agree
+BLA190_p7_L08	6	278	H		agree
+BLA190_p7_L08	7	695	H		agree
+BLA190_p7_L08	8	473	H		agree
+BLA190_p7_L08	9	67	H		agree
+BLA190_p7_L08	10	1206	H		agree
+BLA190_p7_L08	11	16	H		agree
+BLA190_p7_L09	1	663	M		agree-flagged
+BLA190_p7_L09	2	1142	H		agree
+BLA190_p7_L09	3	945	M		agree-flagged
+BLA190_p7_L09	4	1029	H		agree
+BLA190_p7_L09	5	941	M		agree-flagged
+BLA190_p7_L09	6	663	M		agree-flagged
+BLA190_p7_L09	7	754	H		agree
+BLA190_p7_L09	8	506	M		agree-flagged
+BLA190_p7_L09	9	1013	H		agree
+BLA190_p7_L09	10	387	H		agree
+BLA190_p7_L09	11	605	H		agree
+BLA190_p7_L10	1	344	H		agree
+BLA190_p7_L10	2	1033	H		agree
+BLA190_p7_L10	3	927	M	B:027	differ
+BLA190_p7_L10	4	833	H		agree
+BLA190_p7_L10	5	580	H		agree
+BLA190_p7_L10	6	1032	H		agree
+BLA190_p7_L10	7	594	M		agree-flagged
+BLA190_p7_L10	8	835	H		agree
+BLA190_p7_L10	9	691	H		agree
+BLA190_p7_L10	10	963	H		agree
+BLA190_p7_L10	11	661	H		agree
+BLA190_p7_L11	1	1114	H		agree
+BLA190_p7_L11	2	381	H		agree
+BLA190_p7_L11	3	238	H		agree
+BLA190_p7_L11	4	278	M	B:258	differ
+BLA190_p7_L11	5	659	H		agree
+BLA190_p7_L11	6	54	H		agree
+BLA190_p7_L11	7	926	H		agree
+BLA190_p7_L11	8	1154	H		agree
+BLA190_p7_L11	9	38	H		agree
+BLA190_p7_L11	10	385	H		agree
+BLA190_p7_L12	1	835	H		agree
+BLA190_p7_L12	2	702	H		agree
+BLA190_p7_L12	3	358	H		agree
+BLA190_p7_L12	4	580	H		agree
+BLA190_p7_L12	5	1018	H		agree
+BLA190_p7_L12	6	26	H		agree
+BLA190_p7_L12	7	1112	H		agree
+BLA190_p7_L12	8	592	H		agree
+BLA190_p7_L12	9	1143	H		agree
+BLA190_p7_L12	10	941	M		agree-flagged
+BLA190_p7_L12	11	959	H		agree
+BLA190_p7_L13	1	1013	H		agree
+BLA190_p7_L13	2	1018	M	B:1015	differ
+BLA190_p7_L13	3	1099	M		agree-flagged
+BLA190_p7_L13	4	1240	M		agree-flagged
+BLA190_p7_L13	5	1207	H		agree
+BLA190_p7_L13	6	758	H		agree
+BLA190_p7_L13	7	1145	H		agree
+BLA190_p7_L13	8	690	H		agree
+BLA190_p7_L13	9	123	H		agree
+BLA190_p7_L13	10	369	H		agree
+BLA190_p7_L14	1	17	H		agree
+BLA190_p7_L14	2	1211	H		agree
+BLA190_p7_L14	3	16	H		agree
+BLA190_p7_L14	4	8	H		agree
+BLA190_p7_L14	5	1213	H		agree
+BLA188_p4_L01	1	661	H		agree
+BLA188_p4_L01	2	208	H		agree
+BLA188_p4_L01	3	588	H		agree
+BLA188_p4_L01	4	386	H		agree
+BLA188_p4_L01	5	918	M		agree-flagged
+BLA188_p4_L01	6	823	H		agree
+BLA188_p4_L01	7	163	H		agree
+BLA188_p4_L01	8	926	H		agree
+BLA188_p4_L01	9	661	H		agree
+BLA188_p4_L02	1	1006	H		agree
+BLA188_p4_L02	2	508	H		agree
+BLA188_p4_L02	3	599	M	B:999	differ
+BLA188_p4_L02	4	508	H		agree
+BLA188_p4_L02	5	892	H		agree
+BLA188_p4_L02	6	65	M	B:69	differ
+BLA188_p4_L02	7	904	H		agree
+BLA188_p4_L02	8	1033	H		agree
+BLA188_p4_L02	9	500	H		agree
+BLA188_p4_L03	1	123	H		agree
+BLA188_p4_L03	2	379	H		agree
+BLA188_p4_L03	3	1105	H		agree
+BLA188_p4_L03	4	1243	H		agree
+BLA188_p4_L03	5	588	H		agree
+BLA188_p4_L03	6	695	H		agree
+BLA188_p4_L03	7	348	M	B:398	differ
+BLA188_p4_L03	8	922	H		agree
+BLA188_p4_L04	1	381	H		agree
+BLA188_p4_L04	2	59	M	B:39	differ
+BLA188_p4_L04	3	1148	H		agree
+BLA188_p4_L04	4	734	H		agree
+BLA188_p4_L04	5	594	H		agree
+BLA188_p4_L04	6	1102	H		agree
+BLA188_p4_L04	7	943	H		agree
+BLA188_p4_L04	8	461	H		agree
+BLA188_p4_L04	9	1149	H		agree
+BLA188_p4_L05	1	53	H		agree
+BLA188_p4_L05	2	922	H		agree
+BLA188_p4_L05	3	1148	H		agree
+BLA188_p4_L05	4	111	H		agree
+BLA188_p4_L05	5	993	H		agree
+BLA188_p4_L05	6	924	H		agree
+BLA188_p4_L05	7	588	H		agree
+BLA188_p4_L05	8	1097	H		agree
+BLA188_p4_L05	9	1252	H		agree
+BLA188_p4_L06	1	929	H		agree
+BLA188_p4_L06	2	386	H		agree
+BLA188_p4_L06	3	764	H		agree
+BLA188_p4_L06	4	258	H		agree
+BLA188_p4_L06	5	1013	H		agree
+BLA188_p4_L06	6	416	M	B:716	differ
+BLA188_p4_L06	7	132	H		agree
+BLA188_p4_L06	8	1020	H		agree
+BLA188_p4_L06	9	596	H		agree
+BLA188_p4_L07	1	1155	M		agree-flagged
+BLA188_p4_L07	2	1099	H		agree
+BLA188_p4_L07	3	453	H		agree
+BLA188_p4_L07	4	1149	H		agree
+BLA188_p4_L07	5	843	H		agree
+BLA188_p4_L07	6	484	M	B:984	differ
+BLA188_p4_L07	7	929	H		agree
+BLA188_p4_L07	8	456	H		agree
+BLA188_p4_L07	9	551	H		agree
+BLA188_p4_L08	1	823	H		agree
+BLA188_p4_L08	2	900	H		agree
+BLA188_p4_L08	3	932	H		agree
+BLA188_p4_L08	4	851	H		agree
+BLA188_p4_L08	5	581	M		agree-flagged
+BLA188_p4_L08	6	258	H		agree
+BLA188_p4_L08	7	660	H		agree
+BLA188_p4_L08	8	140	H		agree
+BLA188_p4_L08	9	1150	H		agree
+BLA188_p4_L09	1	658	H		agree
+BLA188_p4_L09	2	596	H		agree
+BLA188_p4_L09	3	1102	H		agree
+BLA188_p4_L09	4	289	H		agree
+BLA188_p4_L09	5	1006	H		agree
+BLA188_p4_L09	6	251	H		agree
+BLA188_p4_L09	7	59	M	B:39	differ
+BLA188_p4_L09	8	38	H		agree
+BLA188_p4_L09	9	535	H		agree
+BLA188_p4_L09	10	381	H		agree
+BLA188_p4_L10	1	134	H		agree
+BLA188_p4_L10	2	1109	H		agree
+BLA188_p4_L10	3	169	H		agree
+BLA188_p4_L10	4	369	H		agree
+BLA188_p4_L10	5	1092	M	B:1042	differ
+BLA188_p4_L10	6	835	H		agree
+BLA188_p4_L10	7	1125	H		agree
+BLA188_p4_L10	8	941	H		agree
+BLA188_p4_L10	9	18	H		agree
+BLA188_p4_L11	1	1014	H		agree
+BLA188_p4_L11	2	709	H		agree
+BLA188_p4_L11	3	184	H		agree
+BLA188_p4_L11	4	922	H		agree
+BLA188_p4_L11	5	596	H		agree
+BLA188_p4_L11	6	59	H		agree
+BLA188_p4_L11	7	278	H		agree
+BLA188_p4_L11	8	140	H		agree
+BLA188_p4_L11	9	488	H		agree
+BLA188_p4_L12	1	1290	H		agree
+BLA188_p4_L12	2	588	H		agree
+BLA188_p4_L12	3	695	H		agree
+BLA188_p4_L12	4	345	H		agree
+BLA188_p4_L12	5	922	H		agree
+BLA188_p4_L12	6	381	H		agree
+BLA188_p4_L12	7	1024	H		agree
+BLA188_p4_L12	8	854	H		agree
+BLA188_p4_L13	1	588	H		agree
+BLA188_p4_L13	2	1065	H		agree
+BLA188_p4_L13	3	792	H		agree
+BLA188_p4_L13	4	1148	H		agree
+BLA188_p4_L13	5	46	H		agree
+BLA188_p4_L13	6	692	H		agree
+BLA188_p4_L13	7	929	H		agree
+BLA188_p4_L13	8	455	H		agree
+BLA188_p4_L14	1	278	H		agree
+BLA188_p4_L14	2	1119	H		agree
+BLA188_p4_L14	3	369	H		agree
+BLA188_p4_L14	4	851	H		agree
+BLA188_p4_L14	5	493	H		agree
+BLA188_p4_L14	6	662	H		agree
+BLA188_p4_L14	7	542	H		agree
+BLA188_p4_L14	8	1013	H		agree
+BLA188_p4_L15	1	378	M	B:-	gap
+BLA188_p4_L15	2	661	H		agree
+BLA188_p4_L15	3	951	H		agree
+BLA188_p4_L15	4	290	H		agree
+BLA188_p4_L15	5	19	H		agree
+BLA188_p4_L15	6	661	H		agree
+BLA188_p4_L15	7	926	H		agree
+BLA188_p4_L15	8	662	H		agree
+BLA188_p4_L15	9	907	M		agree-flagged
+BLA188_p4_L16	1	1013	H		agree
+BLA188_p4_L16	2	525	H		agree
+BLA188_p4_L16	3	385	H		agree
+BLA188_p4_L16	4	756	H		agree
+BLA188_p4_L16	5	459	H		agree
+BLA188_p4_L16	6	792	H		agree
+BLA188_p4_L16	7	830	H		agree
+BLA188_p4_L16	8	100	H		agree
+BLA188_p4_L17	1	369	H		agree
+BLA188_p4_L17	2	609	H		agree
+BLA188_p4_L17	3	1033	H		agree
+BLA188_p4_L17	4	659	H		agree
+BLA188_p4_L17	5	134	H		agree
+BLA188_p4_L17	6	289	H		agree
+BLA188_p4_L17	7	1006	H		agree
+BLA188_p4_L17	8	184	H		agree
+BLA188_p4_L17	9	910	H		agree
+BLA188_p4_L18	1	415	H		agree
+BLA188_p4_L18	2	596	H		agree
+BLA188_p4_L18	3	668	M	B:665	differ
+BLA188_p4_L18	4	576	H		agree
+BLA188_p4_L18	5	461	H		agree
+BLA188_p4_L18	6	1113	M		agree-flagged
+BLA188_p4_L18	7	592	H		agree
+BLA188_p4_L18	8	1142	M		agree-flagged
+BLA188_p4_L18	9	941	H		agree
+BLA188_p5_L01	1	1013	H		agree
+BLA188_p5_L01	2	18	H		agree
+BLA188_p5_L01	3	164	H		agree
+BLA188_p5_L01	4	385	M	B:589	differ
+BLA188_p5_L01	5	384	H		agree
+BLA188_p5_L01	6	660	H		agree
+BLA188_p5_L01	7	890	H		agree
+BLA188_p5_L01	8	695	H		agree
+BLA188_p5_L02	1	1013	H		agree
+BLA188_p5_L02	2	1015	M	B:1013	differ
+BLA188_p5_L02	3	101	H		agree
+BLA188_p5_L02	4	1149	M	B:1199	differ
+BLA188_p5_L02	5	555	M	B:955	differ
+BLA188_p5_L02	6	870	H		agree
+BLA188_p5_L02	7	1250	H		agree
+BLA188_p5_L02	8	191	H		agree
+BLA188_p5_L03	1	1024	H		agree
+BLA188_p5_L03	2	347	M	B:349	differ
+BLA188_p5_L03	3	926	H		agree
+BLA188_p5_L03	4	580	H		agree
+BLA188_p5_L03	5	1154	H		agree
+BLA188_p5_L03	6	919	H		agree
+BLA188_p5_L03	7	56	M		agree-flagged
+BLA188_p5_L03	8	1154	H		agree
+BLA188_p5_L04	1	1201	H		agree
+BLA188_p5_L04	2	454	M	B:484	differ
+BLA188_p5_L04	3	581	H		agree
+BLA188_p5_L04	4	1013	H		agree
+BLA188_p5_L04	5	659	H		agree
+BLA188_p5_L04	6	36	H		agree
+BLA188_p5_L04	7	30	H		agree
+BLA188_p5_L04	8	1109	H		agree
+BLA188_p5_L04	9	596	M	B:996	differ
+BLA188_p5_L05	1	929	M		agree-flagged
+BLA188_p5_L05	2	695	H		agree
+BLA188_p5_L05	3	943	M	B:945	differ
+BLA188_p5_L05	4	1102	H		agree
+BLA188_p5_L05	5	1290	H		agree
+BLA188_p5_L05	6	746	M	B:	differ
+BLA188_p5_L05	7	162	H		agree
+BLA188_p5_L05	8	1024	H		agree
+BLA188_p5_L06	1	1099	H		agree
+BLA188_p5_L06	2	386	H		agree
+BLA188_p5_L06	3	103	H		agree
+BLA188_p5_L06	4	441	H		agree
+BLA188_p5_L06	5	381	H		agree
+BLA188_p5_L06	6	1114	H		agree
+BLA188_p5_L06	7	385	H		agree
+BLA188_p5_L06	8	1020	H		agree
+BLA188_p5_L06	9	596	H		agree
+BLA188_p5_L07	1	356	H		agree
+BLA188_p5_L07	2	660	H		agree
+BLA188_p5_L07	3	693	H		agree
+BLA188_p5_L07	4	18	H		agree
+BLA188_p5_L07	5	1149	H		agree
+BLA188_p5_L07	6	843	H		agree
+BLA188_p5_L07	7	101	H		agree
+BLA188_p5_L07	8	325	H		agree
+BLA188_p5_L07	9	192	H		agree
+BLA188_p5_L08	1	588	H		agree
+BLA188_p5_L08	2	386	H		agree
+BLA188_p5_L08	3	605	H		agree
+BLA188_p5_L08	4	922	H		agree
+BLA188_p5_L08	5	796	H		agree
+BLA188_p5_L08	6	756	M		agree-flagged
+BLA188_p5_L08	7	659	H		agree
+BLA188_p5_L08	8	441	M	B:941	differ
+BLA188_p5_L09	1	942	H		agree
+BLA188_p5_L09	2	600	H		agree
+BLA188_p5_L09	3	533	M	B:833	differ
+BLA188_p5_L09	4	289	H		agree
+BLA188_p5_L09	5	1114	M	B:1119	differ
+BLA188_p5_L09	6	208	H		agree
+BLA188_p5_L09	7	756	M	B:796	differ
+BLA188_p5_L09	8	18	H		agree
+BLA188_p5_L10	1	461	H		agree
+BLA188_p5_L10	2	282	H		agree
+BLA188_p5_L10	3	891	H		agree
+BLA188_p5_L10	4	1013	H		agree
+BLA188_p5_L10	5	1243	H		agree
+BLA188_p5_L10	6	580	H		agree
+BLA188_p5_L10	7	1032	H		agree
+BLA188_p5_L10	8	594	H		agree
+BLA188_p5_L11	1	192	H		agree
+BLA188_p5_L11	2	295	M	B:298	differ
+BLA188_p5_L11	3	163	H		agree
+BLA188_p5_L11	4	155	M	B:195	differ
+BLA188_p5_L11	5	1293	M		agree-flagged
+BLA188_p5_L11	6	659	H		agree
+BLA188_p5_L11	7	51	M	B:54	differ
+BLA188_p5_L11	8	926	H		agree
+BLA188_p5_L11	9	935	M	B:939	differ
+BLA188_p5_L12	1	822	H		agree
+BLA188_p5_L12	2	409	M	B:1109	differ
+BLA188_p5_L12	3	506	H		agree
+BLA188_p5_L12	4	758	H		agree
+BLA188_p5_L12	5	18	H		agree
+BLA188_p5_L12	6	835	H		agree
+BLA188_p5_L12	7	502	H		agree
+BLA188_p5_L12	8	1013	M	B:1018	differ
+BLA188_p5_L13	1	792	H		agree
+BLA188_p5_L13	2	1185	H		agree
+BLA188_p5_L13	3	1020	H		agree
+BLA188_p5_L13	4	396	M	B:796	differ
+BLA188_p5_L13	5	1013	H		agree
+BLA188_p5_L13	6	445	M	B:945	differ
+BLA188_p5_L13	7	792	H		agree
+BLA188_p5_L13	8	295	M	B:298	differ
+BLA188_p5_L14	1	1350	H		agree
+BLA188_p5_L14	2	580	H		agree
+BLA188_p5_L14	3	1032	H		agree
+BLA188_p5_L14	4	594	H		agree
+BLA188_p5_L14	5	1085	H		agree
+BLA188_p5_L14	6	926	H		agree
+BLA188_p5_L14	7	925	M	B:923	differ
+BLA188_p5_L14	8	1020	H		agree
+BLA188_p5_L15	1	1114	H		agree
+BLA188_p5_L15	2	385	H		agree
+BLA188_p5_L15	3	695	H		agree
+BLA188_p5_L15	4	1013	H		agree
+BLA188_p5_L15	5	692	M	B:652	differ
+BLA188_p5_L15	6	1013	H		agree
+BLA188_p5_L15	7	795	H		agree
+BLA188_p5_L15	8	404	H		agree
+BLA188_p5_L16	1	369	H		agree
+BLA188_p5_L16	2	385	H		agree
+BLA188_p5_L16	3	588	H		agree
+BLA188_p5_L16	4	476	H		agree
+BLA188_p5_L16	5	926	H		agree
+BLA188_p5_L16	6	828	H		agree
+BLA188_p5_L16	7	661	H		agree
+BLA188_p5_L16	8	892	H		agree
+BLA188_p5_L17	1	259	H		agree
+BLA188_p5_L17	2	576	H		agree
+BLA188_p5_L17	3	384	H		agree
+BLA188_p5_L17	4	446	H		agree
+BLA188_p5_L17	5	1154	M		agree-flagged
+BLA188_p5_L17	6	690	M		agree-flagged
+BLA188_p5_L17	7	426	H		agree
+BLA188_p5_L17	8	385	H		agree
+BLA188_p5_L18	1	1198	H		agree
+BLA188_p5_L18	2	554	M	B:354	differ
+BLA188_p5_L18	3	164	H		agree
+BLA188_p5_L18	4	584	H		agree
+BLA188_p5_L18	5	943	H		agree
+BLA188_p5_L18	6	732	H		agree
+BLA188_p5_L18	7	169	H		agree
+BLA188_p5_L18	8	831	H		agree
+BLA188_p6_L01	1	1013	H		agree
+BLA188_p6_L01	2	385	H		agree
+BLA188_p6_L01	3	1149	H		agree
+BLA188_p6_L01	4	555	M	B:955	differ
+BLA188_p6_L01	5	21	H		agree
+BLA188_p6_L01	6	945	H		agree
+BLA188_p6_L01	7	1013	H		agree
+BLA188_p6_L01	8	385	M	A:-	gap
+BLA188_p6_L02	1	932	H		agree
+BLA188_p6_L02	2	1041	H		agree
+BLA188_p6_L02	3	385	H		agree
+BLA188_p6_L02	4	924	M	B:954	differ
+BLA188_p6_L02	5	1015	M	B:1013	differ
+BLA189_p3_L01	1	208	H		agree
+BLA189_p3_L01	2	659	H		agree
+BLA189_p3_L01	3	78	H		agree
+BLA189_p3_L01	4	278	H		agree
+BLA189_p3_L01	5	502	H		agree
+BLA189_p3_L02	1	659	H		agree
+BLA189_p3_L02	2	807	H		agree
+BLA189_p3_L02	3	18	H		agree
+BLA189_p3_L02	4	1109	H		agree
+BLA189_p3_L02	5	796	H		agree
+BLA189_p3_L03	1	580	H		agree
+BLA189_p3_L03	2	1154	H		agree
+BLA189_p3_L03	3	92	H		agree
+BLA189_p3_L03	4	770	H		agree
+BLA189_p3_L03	5	922	H		agree
+BLA189_p3_L03	6	796	H		agree
+BLA189_p3_L03	7	386	H		agree
+BLA189_p3_L03	8	984	H		agree
+BLA189_p3_L03	9	600	H		agree
+BLA189_p3_L04	1	278	H		agree
+BLA189_p3_L04	2	756	H		agree
+BLA189_p3_L04	3	998	H		agree
+BLA189_p3_L04	4	465	H		agree
+BLA189_p3_L04	5	593	H		agree
+BLA189_p3_L04	6	922	H		agree
+BLA189_p3_L04	7	101	H		agree
+BLA189_p3_L04	8	217	H		agree
+BLA189_p3_L04	9	278	H		agree
+BLA189_p3_L04	10	1113	H		agree
+BLA189_p3_L04	11	1250	H		agree
+BLA189_p3_L05	1	802	H		agree
+BLA189_p3_L05	2	101	H		agree
+BLA189_p3_L05	3	518	H		agree
+BLA189_p3_L05	4	759	H		agree
+BLA189_p3_L05	5	278	H		agree
+BLA189_p3_L05	6	850	H		agree
+BLA189_p3_L05	7	692	H		agree
+BLA189_p3_L05	8	278	H		agree
+BLA189_p3_L05	9	521	H		agree
+BLA189_p3_L06	1	402	H		agree
+BLA189_p3_L06	2	576	H		agree
+BLA189_p3_L06	3	1145	H		agree
+BLA189_p3_L06	4	1243	H		agree
+BLA189_p3_L06	5	387	H		agree
+BLA189_p3_L06	6	930	H		agree
+BLA189_p3_L06	7	1018	H		agree
+BLA189_p3_L06	8	797	H		agree
+BLA189_p3_L06	9	109	H		agree
+BLA189_p3_L06	10	18	H		agree
+BLA189_p3_L07	1	958	H		agree
+BLA189_p3_L07	2	941	H		agree
+BLA189_p3_L07	3	1033	H		agree
+BLA189_p3_L07	4	193	H		agree
+BLA189_p3_L07	5	381	H		agree
+BLA189_p3_L07	6	59	H		agree
+BLA189_p3_L07	7	1020	H		agree
+BLA189_p3_L07	8	796	H		agree
+BLA189_p3_L07	9	756	H		agree
+BLA189_p3_L07	10	515	H		agree
+BLA189_p3_L08	1	660	H		agree
+BLA189_p3_L08	2	1007	H		agree
+BLA189_p3_L08	3	823	H		agree
+BLA189_p3_L08	4	661	H		agree
+BLA189_p3_L08	5	691	H		agree
+BLA189_p3_L08	6	947	H		agree
+BLA189_p3_L08	7	18	H		agree
+BLA189_p3_L08	8	508	H		agree
+BLA189_p3_L08	9	802	H		agree
+BLA189_p3_L08	10	823	H		agree
+BLA189_p3_L08	11	659	H		agree
+BLA189_p3_L08	12	638	H		agree
+BLA189_p3_L09	1	162	H		agree
+BLA189_p3_L09	2	658	H		agree
+BLA189_p3_L09	3	369	H		agree
+BLA189_p3_L09	4	1006	H		agree
+BLA189_p3_L09	5	754	H		agree
+BLA189_p3_L09	6	58	H		agree
+BLA189_p3_L09	7	18	H		agree
+BLA189_p3_L09	8	599	H		agree
+BLA189_p3_L09	9	101	H		agree
+BLA189_p3_L09	10	242	H		agree
+BLA189_p3_L10	1	278	H		agree
+BLA189_p3_L10	2	140	H		agree
+BLA189_p3_L10	3	256	H		agree
+BLA189_p3_L11	1	1240	H		agree
+BLA189_p3_L11	2	1324	H		agree
+BLA189_p3_L11	3	926	H		agree
+BLA189_p3_L11	4	510	H		agree
+BLA189_p3_L11	5	123	H		agree
+BLA189_p3_L11	6	28	H		agree
+BLA189_p3_L11	7	1107	H		agree
+BLA189_p3_L11	8	756	H		agree
+BLA189_p3_L11	9	1017	H		agree
+BLA189_p3_L11	10	942	H		agree
+BLA189_p3_L12	1	944	H		agree
+BLA189_p3_L12	2	289	H		agree
+BLA189_p3_L12	3	369	H		agree
+BLA189_p3_L13	1	735	H		agree
+BLA189_p3_L13	2	647	H		agree
+BLA189_p3_L13	3	756	H		agree
+BLA189_p3_L13	4	756	H		agree
+BLA189_p3_L13	5	695	H		agree
+BLA189_p3_L13	6	461	H		agree
+BLA189_p3_L13	7	100	H		agree
+BLA189_p3_L13	8	224	H		agree
+BLA189_p3_L13	9	770	H		agree
+BLA189_p3_L14	1	691	H		agree
+BLA189_p3_L14	2	140	H		agree
+BLA189_p3_L14	3	54	H		agree
+BLA189_p3_L14	4	835	H		agree
+BLA189_p3_L14	5	1154	H		agree
+BLA189_p3_L14	6	692	H		agree
+BLA189_p3_L14	7	588	H		agree
+BLA189_p3_L14	8	386	H		agree
+BLA189_p3_L14	9	1063	H		agree
+BLA189_p3_L14	10	389	H		agree
+BLA189_p3_L14	11	1200	H		agree
+BLA189_p3_L15	1	399	H		agree
+BLA189_p3_L15	2	880	M	B:890	differ
+BLA189_p3_L15	3	695	M	B:625	differ
+BLA189_p3_L15	4	696	H		agree
+BLA189_p3_L15	5	929	H		agree
+BLA189_p3_L15	6	756	H		agree
+BLA189_p3_L15	7	1065	H		agree
+BLA189_p3_L16	1	691	H		agree
+BLA189_p3_L16	2	320	H		agree
+BLA189_p3_L17	1	735	H		agree
+BLA189_p3_L17	2	822	H		agree
+BLA189_p3_L17	3	1109	H		agree
+BLA189_p3_L17	4	506	H		agree
+BLA189_p3_L17	5	758	H		agree
+BLA189_p3_L17	6	18	H		agree
+BLA189_p3_L17	7	900	H		agree
+BLA189_p3_L17	8	835	H		agree
+BLA189_p3_L17	9	702	H		agree
+BLA189_p3_L17	10	1149	H		agree
+BLA189_p3_L18	1	54	H		agree
+BLA189_p3_L18	2	591	H		agree
+BLA189_p3_L18	3	1155	H		agree
+BLA189_p3_L18	4	588	H		agree
+BLA189_p3_L18	5	369	H		agree
+BLA189_p3_L18	6	842	H		agree
+BLA189_p3_L18	7	926	H		agree
+BLA189_p3_L18	8	998	H		agree
+BLA189_p3_L18	9	756	H		agree
+BLA189_p3_L18	10	695	H		agree
+BLA189_p3_L19	1	1147	H		agree
+BLA189_p3_L19	2	381	H		agree
+BLA189_p3_L19	3	1099	H		agree
+BLA189_p3_L19	4	278	H		agree
+BLA189_p3_L19	5	1176	H		agree
+BLA189_p3_L19	6	851	H		agree
+BLA189_p3_L19	7	18	H		agree
+BLA189_p3_L19	8	344	H		agree
+BLA189_p3_L19	9	757	H		agree
+BLA189_p3_L19	10	473	H		agree
+BLA190_p5_L01	1	757	M	B:737	differ
+BLA190_p5_L01	2	647	H		agree
+BLA190_p5_L01	3	1240	H		agree
+BLA190_p5_L01	4	756	H		agree
+BLA190_p5_L02	1	690	H		agree
+BLA190_p5_L02	2	113	H		agree
+BLA190_p5_L02	3	279	H		agree
+BLA190_p5_L02	4	981	H		agree
+BLA190_p5_L02	5	278	H		agree
+BLA190_p5_L02	6	1020	H		agree
+BLA190_p5_L02	7	530	H		agree
+BLA190_p5_L03	1	399	H		agree
+BLA190_p5_L03	2	323	H		agree
+BLA190_p5_L03	3	1024	H		agree
+BLA190_p5_L03	4	322	H		agree
+BLA190_p5_L03	5	259	H		agree
+BLA190_p5_L03	6	381	H		agree
+BLA190_p5_L03	7	941	H		agree
+BLA190_p5_L04	1	659	H		agree
+BLA190_p5_L04	2	111	H		agree
+BLA190_p5_L04	3	592	H		agree
+BLA190_p5_L04	4	1143	H		agree
+BLA190_p5_L04	5	941	H		agree
+BLA190_p5_L04	6	1250	H		agree
+BLA190_p5_L04	7	580	H		agree
+BLA190_p5_L05	1	26	H		agree
+BLA190_p5_L05	2	974	H		agree
+BLA190_p5_L05	3	926	H		agree
+BLA190_p5_L05	4	759	H		agree
+BLA190_p5_L05	5	846	M		agree-flagged
+BLA190_p5_L06	1	756	H		agree
+BLA190_p5_L06	2	1038	H		agree
+BLA190_p5_L06	3	1013	H		agree
+BLA190_p5_L06	4	922	H		agree
+BLA190_p5_L06	5	399	H		agree
+BLA190_p5_L06	6	1243	H		agree
+BLA190_p5_L06	7	588	H		agree
+BLA190_p5_L06	8	18	H		agree
+BLA190_p5_L06	9	109	H		agree
+BLA190_p5_L06	10	943	H		agree
+BLA190_p5_L06	11	900	H		agree
+BLA190_p5_L06	12	926	H		agree
+BLA190_p5_L06	13	560	H		agree
+BLA190_p5_L06	14	474	H		agree
+BLA190_p5_L07	1	191	M	B:791	differ
+BLA190_p5_L07	2	137	H		agree
+BLA190_p5_L07	3	910	H		agree
+BLA190_p5_L08	1	756	H		agree
+BLA190_p5_L08	2	833	H		agree
+BLA190_p5_L08	3	970	H		agree
+BLA190_p5_L08	4	941	H		agree
+BLA190_p5_L08	5	661	H		agree
+BLA190_p5_L08	6	1182	H		agree
+BLA190_p5_L08	7	435	H		agree
+BLA190_p5_L08	8	282	H		agree
+BLA190_p5_L08	9	53	H		agree
+BLA190_p5_L08	10	1013	M	B:1012	differ
+BLA190_p5_L08	11	757	H		agree
+BLA190_p5_L08	12	661	H		agree
+BLA190_p5_L08	13	331	H		agree
+BLA190_p5_L09	1	1261	M		agree-flagged
+BLA190_p5_L09	2	18	H		agree
+BLA190_p5_L09	3	926	H		agree
+BLA190_p5_L09	4	580	H		agree
+BLA190_p5_L09	5	345	H		agree
+BLA190_p5_L10	1	163	H		agree
+BLA190_p5_L10	2	753	H		agree
+BLA190_p5_L10	3	386	H		agree
+BLA190_p5_L10	4	292	M	B:792	differ
+BLA190_p5_L10	5	824	H		agree
+BLA190_p5_L10	6	691	H		agree
+BLA190_p5_L10	7	477	H		agree
+BLA190_p5_L11	1	926	H		agree
+BLA190_p5_L11	2	691	H		agree
+BLA190_p5_L11	3	140	H		agree
+BLA190_p5_L11	4	613	H		agree
+BLA190_p5_L12	1	695	H		agree
+BLA190_p5_L12	2	971	H		agree
+BLA190_p5_L12	3	390	H		agree
+BLA190_p5_L12	4	174	H		agree
+BLA190_p5_L12	5	1014	H		agree
+BLA190_p5_L12	6	130	H		agree
+BLA190_p5_L12	7	387	H		agree
+BLA190_p5_L12	8	922	H		agree
+BLA190_p5_L12	9	381	H		agree
+BLA190_p5_L12	10	1114	H		agree
+BLA190_p5_L12	11	133	H		agree
+BLA190_p5_L12	12	575	H		agree
+BLA190_p5_L13	1	26	H		agree
+BLA190_p5_L13	2	701	H		agree
+BLA190_p5_L13	3	594	H		agree
+BLA190_p5_L13	4	732	H		agree
+BLA190_p5_L13	5	1154	H		agree
+BLA190_p5_L13	6	694	H		agree
+BLA190_p5_L13	7	281	H		agree
+BLA190_p5_L14	1	867	H		agree
+BLA190_p5_L14	2	385	H		agree
+BLA190_p5_L14	3	18	H		agree
+BLA190_p5_L14	4	1154	H		agree
+BLA190_p5_L14	5	928	H		agree
+BLA190_p5_L14	6	113	H		agree
+BLA190_p5_L14	7	278	H		agree
+BLA190_p5_L14	8	659	H		agree
+BLA190_p5_L14	9	54	H		agree
+BLA190_p5_L14	10	835	H		agree
+BLA190_p5_L14	11	702	H		agree
+BLA190_p5_L14	12	1121	H		agree
+BLA190_p5_L14	13	942	H		agree
+BLA190_p5_L15	1	385	H		agree
+BLA190_p5_L15	2	278	H		agree
+BLA190_p5_L15	3	473	H		agree
+BLA190_p5_L15	4	1158	H		agree
+BLA190_p5_L15	5	691	H		agree
+BLA190_p5_L15	6	140	H		agree
+BLA190_p5_L15	7	425	H		agree
+BLA190_p5_L15	8	1250	H		agree
+BLA190_p5_L15	9	157	H		agree
+BLA190_p5_L15	10	386	H		agree
+BLA190_p5_L15	11	600	H		agree
+BLA190_p5_L15	12	802	H		agree
+BLA190_p5_L16	1	588	H		agree
+BLA190_p5_L16	2	690	H		agree
+BLA190_p5_L16	3	18	H		agree
+BLA190_p5_L16	4	1033	H		agree
+BLA190_p5_L16	5	900	H		agree
+BLA190_p5_L16	6	381	H		agree
+BLA190_p5_L16	7	695	H		agree
+BLA190_p5_L16	8	346	H		agree
+BLA190_p5_L16	9	926	H		agree
+BLA190_p5_L16	10	580	H		agree
+BLA190_p5_L16	11	900	H		agree
+BLA190_p5_L16	12	520	H		agree
+BLA190_p5_L17	1	18	H		agree
+BLA190_p5_L17	2	1154	H		agree
+BLA190_p5_L17	3	399	H		agree
+BLA190_p5_L17	4	162	H		agree
+BLA190_p5_L17	5	1176	H		agree
+BLA190_p5_L17	6	532	H		agree
+BLA190_p5_L17	7	1121	H		agree
+BLA190_p5_L17	8	792	H		agree
+BLA190_p5_L17	9	18	H		agree
+BLA190_p5_L17	10	307	H		agree
+BLA190_p5_L17	11	192	H		agree
+BLA190_p5_L17	12	369	H		agree
+BLA190_p5_L17	13	256	H		agree
+BLA190_p5_L17	14	928	H		agree
+BLA190_p5_L18	1	756	H		agree
+BLA190_p5_L19	1	829	H		agree
+BLA190_p5_L19	2	26	H		agree
+BLA190_p5_L19	3	1022	H		agree
+BLA190_p5_L19	4	595	H		agree
+BLA190_p5_L19	5	833	H		agree
+BLA190_p5_L20	1	291	M	B:791	differ
+BLA190_p5_L20	2	597	H		agree
+BLA190_p5_L20	3	563	H		agree
+BLA190_p5_L20	4	928	H		agree
+BLA190_p6_L01	1	387	H		agree
+BLA190_p6_L01	2	922	H		agree
+BLA190_p6_L01	3	38	H		agree
+BLA190_p6_L01	4	674	H		agree
+BLA190_p6_L01	5	278	H		agree
+BLA190_p6_L01	6	271	H		agree
+BLA190_p6_L01	7	406	H		agree
+BLA190_p6_L01	8	384	H		agree
+BLA190_p6_L01	9	28	H		agree
+BLA190_p6_L01	10	157	M	B:131	differ
+BLA190_p6_L01	11	909	H		agree
+BLA190_p6_L01	12	659	H		agree
+BLA190_p6_L02	1	43	H		agree
+BLA190_p6_L02	2	929	H		agree
+BLA190_p6_L02	3	695	H		agree
+BLA190_p6_L02	4	1150	H		agree
+BLA190_p6_L02	5	595	H		agree
+BLA190_p6_L02	6	65	M	B:67	differ
+BLA190_p6_L02	7	186	M	B:106	differ
+BLA190_p6_L02	8	278	H		agree
+BLA190_p6_L02	9	737	H		agree
+BLA190_p6_L02	10	822	H		agree
+BLA190_p6_L02	11	1109	H		agree
+BLA190_p6_L02	12	506	H		agree
+BLA190_p6_L03	1	758	H		agree
+BLA190_p6_L04	1	1020	H		agree
+BLA190_p6_L04	2	580	H		agree
+BLA190_p6_L04	3	842	H		agree
+BLA190_p6_L04	4	169	H		agree
+BLA190_p6_L04	5	821	H		agree
+BLA190_p6_L04	6	1107	M		agree-flagged
+BLA190_p6_L04	7	1033	H		agree
+BLA190_p6_L04	8	932	H		agree
+BLA190_p6_L04	9	34	H		agree
+BLA190_p6_L04	10	508	H		agree
+BLA190_p6_L04	11	754	M		agree-flagged
+BLA190_p6_L05	1	1099	H		agree
+BLA190_p6_L05	2	278	H		agree
+BLA190_p6_L05	3	1176	H		agree
+BLA190_p6_L05	4	851	H		agree
+BLA190_p6_L05	5	823	H		agree
+BLA190_p6_L05	6	54	H		agree
+BLA190_p6_L05	7	381	M		agree-flagged
+BLA190_p6_L05	8	113	H		agree
+BLA190_p6_L05	9	533	H		agree
+BLA190_p6_L05	10	136	H		agree
+BLA190_p6_L05	11	588	H		agree
+BLA190_p6_L06	1	756	H		agree
+BLA190_p6_L06	2	1017	H		agree
+BLA190_p6_L06	3	942	H		agree
+BLA190_p6_L06	4	833	H		agree
+BLA190_p6_L06	5	869	H		agree
+BLA190_p6_L06	6	719	H		agree
+BLA190_p6_L06	7	1013	H		agree
+BLA190_p6_L06	8	702	M		agree-flagged
+BLA190_p6_L06	9	1033	H		agree
+BLA190_p6_L06	10	928	H		agree
+BLA190_p6_L06	11	580	H		agree
+BLA190_p6_L07	1	842	H		agree
+BLA190_p6_L07	2	1109	H		agree
+BLA190_p6_L07	3	943	H		agree
+BLA190_p6_L07	4	941	H		agree
+BLA190_p6_L07	5	38	H		agree
+BLA190_p6_L07	6	880	H		agree
+BLA191_p5_L01	1	659	H		agree
+BLA191_p5_L01	2	805	H		agree
+BLA191_p5_L01	3	926	H		agree
+BLA191_p5_L01	4	580	H		agree
+BLA191_p5_L01	5	1154	H		agree
+BLA191_p5_L01	6	26	H		agree
+BLA191_p5_L01	7	693	M	B:697	differ
+BLA191_p5_L01	8	665	H		agree
+BLA191_p5_L01	9	947	H		agree
+BLA191_p5_L01	10	220	M	B:270	differ
+BLA191_p5_L01	11	386	M	B:786	differ
+BLA191_p5_L02	1	135	H		agree
+BLA191_p5_L02	2	533	H		agree
+BLA191_p5_L02	3	369	H		agree
+BLA191_p5_L02	4	835	H		agree
+BLA191_p5_L02	5	1176	H		agree
+BLA191_p5_L02	6	672	H		agree
+BLA191_p5_L02	7	289	H		agree
+BLA191_p5_L02	8	6	H		agree
+BLA191_p5_L02	9	575	H		agree
+BLA191_p5_L02	10	1201	H		agree
+BLA191_p5_L02	11	26	H		agree
+BLA191_p5_L03	1	924	H		agree
+BLA191_p5_L03	2	163	H		agree
+BLA191_p5_L03	3	1210	H		agree
+BLA191_p5_L03	4	278	H		agree
+BLA191_p5_L03	5	689	H		agree
+BLA191_p5_L03	6	34	H		agree
+BLA191_p5_L03	7	1013	H		agree
+BLA191_p5_L03	8	18	H		agree
+BLA191_p5_L03	9	660	H		agree
+BLA191_p5_L03	10	892	H		agree
+BLA191_p5_L03	11	369	H		agree
+BLA191_p5_L04	1	21	H		agree
+BLA191_p5_L04	2	945	H		agree
+BLA191_p5_L04	3	1017	M		agree-flagged
+BLA191_p5_L04	4	1250	H		agree
+BLA191_p5_L04	5	924	H		agree
+BLA191_p5_L04	6	1154	H		agree
+BLA191_p5_L04	7	695	H		agree
+BLA191_p5_L04	8	460	H		agree
+BLA191_p5_L04	9	945	H		agree
+BLA191_p5_L04	10	1038	H		agree
+BLA191_p5_L05	1	208	H		agree
+BLA191_p5_L05	2	580	H		agree
+BLA191_p5_L05	3	285	H		agree
+BLA191_p5_L05	4	594	H		agree
+BLA191_p5_L05	5	58	H		agree
+BLA191_p5_L05	6	84	H		agree
+BLA191_p5_L05	7	661	H		agree
+BLA191_p5_L05	8	258	H		agree
+BLA191_p5_L05	9	823	H		agree
+BLA191_p5_L05	10	1899	M		agree-flagged
+BLA191_p5_L05	11	289	H		agree
+BLA191_p5_L06	1	214	M	B:274	differ
+BLA191_p5_L06	2	162	H		agree
+BLA191_p5_L06	3	737	M		agree-flagged
+BLA191_p5_L06	4	647	M		agree-flagged
+BLA191_p5_L06	5	756	M		agree-flagged
+BLA191_p5_L06	6	690	H		agree
+BLA191_p5_L06	7	65	H		agree
+BLA191_p5_L06	8	692	H		agree
+BLA191_p5_L06	9	588	H		agree
+BLA191_p5_L06	10	754	M		agree-flagged
+BLA191_p5_L06	11	18	H		agree
+BLA191_p5_L07	1	100	H		agree
+BLA191_p5_L07	2	816	H		agree
+BLA191_p5_L07	3	282	H		agree
+BLA191_p5_L07	4	1019	H		agree
+BLA191_p5_L07	5	711	H		agree
+BLA191_p5_L07	6	1013	H		agree
+BLA191_p5_L07	7	835	H		agree
+BLA191_p5_L07	8	702	H		agree
+BLA191_p5_L07	9	933	M		agree-flagged
+BLA191_p5_L07	10	275	M		agree-flagged
+BLA191_p5_L07	11	659	H		agree
+BLA191_p5_L08	1	53	H		agree
+BLA191_p5_L08	2	824	H		agree
+BLA191_p5_L08	3	1017	M		agree-flagged
+BLA191_p5_L08	4	369	H		agree
+BLA191_p5_L08	5	580	H		agree
+BLA191_p5_L08	6	666	H		agree
+BLA191_p5_L08	7	576	M		agree-flagged
+BLA191_p5_L08	8	26	H		agree
+BLA191_p5_L08	9	461	H		agree
+BLA191_p5_L08	10	1118	H		agree
+BLA191_p5_L08	11	122	H		agree
+BLA191_p5_L09	1	1052	M		agree-flagged
+BLA191_p5_L09	2	163	M		agree-flagged
+BLA191_p5_L09	3	1016	M		agree-flagged
+BLA191_p5_L09	4	929	M		agree-flagged
+BLA191_p5_L09	5	690	M		agree-flagged
+BLA191_p5_L09	6	26	M		agree-flagged
+BLA191_p5_L09	7	1099	M		agree-flagged
+BLA191_p5_L09	8	599	M		agree-flagged
+BLA191_p5_L09	9	345	M		agree-flagged
+BLA191_p5_L09	10	163	M		agree-flagged
+BLA191_p5_L09	11	926	M		agree-flagged
+BLA191_p5_L10	1	580	M		agree-flagged
+BLA191_p5_L10	2	831	M		agree-flagged
+BLA191_p5_L10	3	1143	M		agree-flagged
+BLA191_p5_L10	4	1150	M		agree-flagged
+BLA191_p5_L10	5	594	M		agree-flagged
+BLA191_p5_L10	6	493	M		agree-flagged
+BLA191_p5_L10	7	835	M		agree-flagged
+BLA191_p5_L10	8	661	M		agree-flagged
+BLA191_p5_L10	9	732	M		agree-flagged
+BLA191_p5_L10	10	18	M		agree-flagged
+BLA191_p5_L10	11	659	M		agree-flagged
+BLA191_p5_L11	1	46	M		agree-flagged
+BLA191_p5_L11	2	836	M		agree-flagged
+BLA191_p5_L11	3	385	M		agree-flagged
+BLA191_p5_L11	4	575	M		agree-flagged
+BLA191_p5_L11	5	585	M		agree-flagged
+BLA191_p5_L11	6	758	M		agree-flagged
+BLA191_p5_L11	7	943	M		agree-flagged
+BLA191_p5_L11	8	1152	M		agree-flagged
+BLA191_p5_L11	9	623	M		agree-flagged
+BLA191_p5_L11	10	1013	M		agree-flagged
+BLA191_p5_L11	11	385	M	B:387	differ
+BLA191_p5_L12	1	580	M		agree-flagged
+BLA191_p5_L12	2	1018	M		agree-flagged
+BLA191_p5_L12	3	26	M		agree-flagged
+BLA191_p5_L12	4	591	M		agree-flagged
+BLA191_p5_L12	5	1185	M		agree-flagged
+BLA191_p5_L12	6	275	M		agree-flagged
+BLA191_p5_L12	7	659	M		agree-flagged
+BLA191_p5_L12	8	585	M		agree-flagged
+BLA191_p5_L12	9	758	M		agree-flagged
+BLA191_p5_L12	10	942	M		agree-flagged
+BLA191_p5_L12	11	754	M		agree-flagged
+BLA191_p5_L12	12	163	M		agree-flagged
+BLA191_p5_L13	1	694	H		agree
+BLA191_p5_L13	2	282	H		agree
+BLA191_p5_L13	3	702	M		agree-flagged
+BLA191_p5_L13	4	377	M	B:357	differ
+BLA191_p5_L13	5	932	H		agree
+BLA191_p5_L13	6	816	H		agree
+BLA191_p5_L13	7	835	H		agree
+BLA191_p5_L13	8	691	H		agree
+BLA191_p5_L13	9	222	H		agree
+BLA194_p1_L01	1	837	M	B:534	differ
+BLA194_p1_L01	2	822	H		agree
+BLA194_p1_L01	3	1109	H		agree
+BLA194_p1_L01	4	506	H		agree
+BLA194_p1_L01	5	758	H		agree
+BLA194_p1_L01	6	101	H		agree
+BLA194_p1_L01	7	928	H		agree
+BLA194_p1_L02	1	580	H		agree
+BLA194_p1_L02	2	1032	H		agree
+BLA194_p1_L02	3	594	H		agree
+BLA194_p1_L02	4	495	H		agree
+BLA194_p1_L02	5	696	H		agree
+BLA194_p1_L02	6	695	H		agree
+BLA194_p1_L03	1	1049	H		agree
+BLA194_p1_L03	2	351	H		agree
+BLA194_p1_L03	3	18	H		agree
+BLA194_p1_L03	4	34	M	A:-	gap
+BLA194_p1_L03	5		M	B:692	differ
+BLA194_p1_L03	6	1013	H		agree
+BLA194_p1_L03	7	416	M	B:916	differ
+BLA194_p1_L04	1	101	H		agree
+BLA194_p1_L04	2	1154	M	B:1194	differ
+BLA194_p1_L04	3	381	H		agree
+BLA194_p1_L04	4	290	M		agree-flagged
+BLA194_p1_L04	5	918	H		agree
+BLA194_p1_L04	6	536	M	B:576	differ
+BLA194_p1_L04	7	1120	H		agree
+BLA194_p1_L04	8	943	M	B:918	differ
+BLA194_p1_L05	1	588	M	B:508	differ
+BLA194_p1_L05	2	695	H		agree
+BLA194_p1_L05	3	659	H		agree
+BLA194_p1_L05	4	18	H		agree
+BLA194_p1_L05	5	395	H		agree
+BLA194_p1_L05	6	692	H		agree
+BLA194_p1_L05	7	588	H		agree
+BLA194_p1_L05	8	754	H		agree
+BLA194_p1_L05	9	65	H		agree
+BLA194_p1_L06	1	824	H		agree
+BLA194_p1_L06	2	278	H		agree
+BLA194_p1_L06	3	425	M		agree-flagged
+BLA194_p1_L06	4	660	H		agree
+BLA194_p1_L06	5	892	H		agree
+BLA194_p1_L06	6	907	H		agree
+BLA194_p1_L06	7	1250	H		agree
+BLA194_p1_L07	1	1020	H		agree
+BLA194_p1_L07	2	396	H		agree
+BLA194_p1_L07	3	1199	M	B:1159	differ
+BLA194_p1_L07	4	1099	H		agree
+BLA194_p1_L07	5	60	H		agree
+BLA194_p1_L07	6	475	H		agree
+BLA194_p1_L07	7	278	M	B:298	differ
+BLA194_p1_L07	8	1176	H		agree
+BLA194_p1_L08	1	258	H		agree
+BLA194_p1_L08	2	385	M	B:389	differ
+BLA194_p1_L08	3	1069	H		agree
+BLA194_p1_L08	4	387	H		agree
+BLA194_p1_L08	5	891	H		agree
+BLA194_p1_L08	6	381	H		agree
+BLA194_p1_L08	7	639	M		agree-flagged
+BLA194_p1_L08	8	53	H		agree
+BLA194_p1_L09	1	282	H		agree
+BLA194_p1_L09	2	521	H		agree
+BLA194_p1_L09	3	1018	H		agree
+BLA194_p1_L09	4	271	M	B:291	differ
+BLA194_p1_L09	5	638	H		agree
+BLA194_p1_L09	6	575	M	B:595	differ
+BLA194_p1_L09	7	433	H		agree
+BLA194_p1_L10	1	926	H		agree
+BLA194_p1_L10	2	655	M		agree-flagged
+BLA194_p1_L10	3	96	H		agree
+BLA194_p1_L10	4	1013	H		agree
+BLA194_p1_L10	5	942	H		agree
+BLA194_p1_L10	6	109	H		agree
+BLA194_p1_L10	7	991	H		agree
+BLA194_p1_L11	1	385	M	B:389	differ
+BLA194_p1_L11	2	555	H		agree
+BLA194_p1_L11	3	1290	H		agree
+BLA194_p1_L11	4	704	H		agree
+BLA194_p1_L11	5	890	M		agree-flagged
+BLA194_p1_L11	6	482	H		agree
+BLA194_p1_L11	7	289	H		agree
+BLA194_p1_L11	8	691	H		agree
+BLA194_p1_L12	1	943	H		agree
+BLA194_p1_L12	2	18	H		agree
+BLA194_p1_L12	3	508	H		agree
+BLA194_p1_L12	4	829	H		agree
+BLA194_p1_L12	5	1013	H		agree
+BLA194_p1_L12	6	991	H		agree
+BLA194_p1_L12	7	921	M		agree-flagged
+BLA194_p1_L12	8	16	H		agree
+BLA194_p1_L12	9	660	H		agree
+BLA194_p1_L12	10	1081	H		agree
+BLA194_p1_L13	1	101	H		agree
+BLA194_p1_L13	2	98	H		agree
+BLA194_p1_L13	3	295	H		agree
+BLA194_p1_L13	4	659	H		agree
+BLA194_p1_L13	5	91	H		agree
+BLA194_p1_L13	6	1240	H		agree
+BLA194_p1_L13	7	692	H		agree
+BLA194_p1_L13	8	205	H		agree
+BLA194_p1_L13	9	1154	M	B:1159	differ
+BLA194_p1_L13	10	756	H		agree
+BLA194_p1_L14	1	695	H		agree
+BLA194_p1_L14	2	461	M	B:161	differ
+BLA194_p1_L14	3	381	H		agree
+BLA194_p1_L14	4	100	H		agree
+BLA194_p1_L14	5	369	H		agree
+BLA194_p1_L14	6		M		agree-flagged
+BLA194_p1_L14	7	991	H		agree
+BLA194_p1_L14	8	163	H		agree
+BLA194_p1_L14	9	1118	H		agree
+BLA194_p1_L14	10	704	H		agree
+BLA194_p2_L01	1	1135	H		agree
+BLA194_p2_L01	2	386	H		agree
+BLA194_p2_L01	3	869	H		agree
+BLA194_p2_L01	4	939	M	B:935	differ
+BLA194_p2_L01	5	595	H		agree
+BLA194_p2_L01	6	381	H		agree
+BLA194_p2_L01	7	491	H		agree
+BLA194_p2_L02	1	135	H		agree
+BLA194_p2_L02	2	835	H		agree
+BLA194_p2_L02	3	660	H		agree
+BLA194_p2_L02	4	843	M		agree-flagged
+BLA194_p2_L02	5	208	H		agree
+BLA194_p2_L02	6	735	H		agree
+BLA194_p2_L02	7	695	M	B:649	differ
+BLA194_p2_L03	1	956	M	B:556	differ
+BLA194_p2_L03	2	835	H		agree
+BLA194_p2_L03	3	592	H		agree
+BLA194_p2_L03	4	1125	H		agree
+BLA194_p2_L03	5	1243	H		agree
+BLA194_p2_L03	6	1260	H		agree

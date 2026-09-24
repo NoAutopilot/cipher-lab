@@ -178,3 +178,40 @@ sibling on the page for either); BLA 191's ~130-token undeciphered enclosure lik
 - `sources.tsv`: print-check sources (Coxe Walpole 1798 vols 1-3, Coxe Horatio Walpole 1802, Coxe Kings of Spain vols 2-3, HMC Townshend 1887, Armstrong 1892, OpenAlex, CrossRef). Not yet run: no phrases yet.
 
 **Left.** Finish pass B for the six missing pages. Settle recon disagreements on the image, excluding BLA188_p2. Write ciphertext.tsv. Build key.tsv from the glosses (H) and the 189/190 bracket pairs (C), with a conflict count per item to confirm or refute one system. Read 186, 184 and 191 p5 through decode.json + tools/decode_key.py with a matched synthetic control. Write phrases.txt and run `tools/print_check.py --only ia,ia-global,htrc,openalex,crossref` (not gbooks). Suggestion: a fresh worker can start from passA.tsv and must not repeat pass A.
+
+## R11: pass B finished, 24 Sept 2026 07:46 UTC (LANE R worker R11, session_01HQ6j9nsqSZ7JCHyNaSebLu)
+
+**Done.**
+- One blind Sonnet subagent (not shown pass A) finished the six pages R7 left uncovered: 179 p6, 184 p1, 185
+  p5, 188 p4-p6, 189 p3, 190 p5 (774 groups, 752 H / 22 M-L). Output `passB_missing.tsv`.
+- Band crops for these 8 page images were regenerated in this session's scratchpad (R7's own scratchpad no
+  longer exists); same convention as `pass_brief.md` (3 overlapping 2x horizontal bands per page).
+- `BLA190_p5`: the subagent split the page's one long paragraph block into `L14a`-`L14e` rather than forcing
+  `L14`-`L18`, since it wasn't shown pass A's line numbering. Per-line group counts matched pass A's `L14`-`L20`
+  exactly (13/12/12/14/1/5/4 both ways), so relabelled `L14a→L14, L14b→L15, L14c→L16, L14d→L17, L14e→L18`, old
+  `L15→L19`, old `L16→L20` before merging — a naming fix, not a content change; every group's number/conf/gloss
+  is untouched.
+- `BLA188_p4`/`p5`: the subagent independently flagged that p4's right-hand narrow column duplicates p5's
+  opening lines (bleed-through near the gutter) and transcribed that content only under p5. This was not asked
+  for and not cross-checked against pass A's judgement call on the same split — but the resulting per-line
+  group counts for both p4 (18 lines) and p5 (18 lines) match pass A's counts for those pages exactly, which is
+  reassuring (both blind passes independently drew the p4/p5 boundary in the same place) but not a substitute
+  for eye-checking the boundary on the image, which nobody has done. Flagged for the reconciler, distinct from
+  the confirmed BLA188_p2/p3 gutter duplicate below.
+- Dropped `BLA188_p2` (36 rows) from `passA.tsv` in place (R7's finding: p2's "column" is the edge of p3
+  caught in the gutter of the photograph, not its own cipher — see "Major finding" above). `passB_missing.tsv`
+  was never asked to cover p2, so `passB.tsv` (below) needed no p2 rows dropped from the new material, only
+  from the carried-over `passB_partial.tsv` rows.
+- `passB.tsv` = `passB_partial.tsv` (minus its 36 `BLA188_p2` rows) + `passB_missing.tsv` (renamed), 1531
+  groups across all 17 cipher-bearing pages (`passB_partial.tsv` kept as-is, unmodified, per brief).
+- `tools/reconcile_passes.py passA.tsv passB.tsv --out-dir recon`: **1344/1543 aligned columns agree, 87.1%**
+  (vs the partial-pass figure of 81% in `recon_partial/`, now superseded). 200 disagreement rows in
+  `recon/disagreements.tsv`, `recon/ciphertext_draft.tsv` (332 of 1543 signs M), `recon/agreement.tsv`. Not
+  settled — that is the next worker's job, from the image, excluding anything already resolved as the
+  BLA188_p2/p3 gutter duplicate.
+
+**Left.** Settle `recon/disagreements.tsv` on the image (200 rows), including eye-checking the BLA188_p4/p5
+boundary noted above before trusting it. Write `ciphertext.tsv`. Everything else in R7's "Left" section
+(key.tsv, decode.json + decode_key.py reading, matched control, phrases.txt + print_check.py) is still open.
+
+Requests: 0 network (images already on disk; band crops regenerated locally, no fetch).
