@@ -5856,3 +5856,23 @@ Output TSV: `sources/solver-diffs/2026-09-24-tomokiyo-vs-siblings.tsv` (2 rows).
 transient connection reset, each retried once per the good-citizen rule and both succeeded on retry) = 10 total,
 well under the 50 cap, all >=3s apart. github.com: 1 shallow clone of `dbourdeau/cyphersolver` (grep only, no
 push). WebSearch: 0 (not needed; Tomokiyo's pages and the shallow clone answered every check).
+
+**Check-solved verdicts, 24 Sept 2026 (Sonnet, csKT worker, LANE N4, cap $5 for both rows):**
+
+- **KT-01 fr7129-villeroy-bongars-1604 — open.** Anquez 1887, *Henri IV et l'Allemagne* (Gallica `bpt6k213732d`,
+  full-text searched: "7129" 21 hits all cited folios, "268" 2 hits neither this volume, "novembre 1604" 5 hits
+  none this letter), letter absent. Fresh Bourdeau and Aymeloglu shallow clones, DECODE files on disk, and
+  general web search: no hit naming this letter as solved. Full detail and per-source log in
+  `ciphers/fr7129-villeroy-bongars-1604/NOTES.md`. Nomination posted below.
+- **KT-02 baluze103-letellier-marca-1644 — blocked, not open.** `sources/decode/records-decrypted-2026-09-24.tsv`
+  (this lane's own DECODE sweep, files on disk, no login used) carries DECODE record **R2742**, shelfmark tag
+  `BnF_Baluze103_f50`, sender "Le Tellier", 1644, status **Decrypted** — the tag matches this exact leaf and
+  contradicts Tomokiyo's "undeciphered" tag for the same folio. Confirming what record 2742 actually holds needs
+  `RecordsView`/`DocumentsList`, which need a DECODE login this worker does not have (per lane rule, only the
+  DECODE worker logs in). **No nomination posted for KT-02.** Full detail in
+  `ciphers/baluze103-letellier-marca-1644/NOTES.md`.
+  **flag for the lane orchestrator:** route `https://de-crypt.org/decrypt-web/RecordsView/2742` to the DECODE
+  worker before any further work on this target or on other `louisxiv0.htm` Le Tellier-Marca leaves.
+
+nomination: fr7129-villeroy-bongars-1604 | copy-free | kind recovery | Bongars' Cipher no.3 (fr.7129 f.275)
+Tomokiyo | `btv1b8555834s` f.268
