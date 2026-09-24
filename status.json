@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 20:46 UTC",
+ "updated": "24 Sep 2026 20:54 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1660,7 +1660,7 @@
   {
    "name": "Lane N4, nominations",
    "live": 1,
-   "focus": "eleven firm copy-free nominations; scTOMO (Tomokiyo key lists against unread leaves, Gallica) and scDIGI (Torre do Tombo codices, isolating the cipher leaves) running; 12 workers $36 so far"
+   "focus": "eleven firm copy-free nominations; scTOMO done (Tomokiyo's other key tables swept: two new copy-free rows, the rest already worked by Bourdeau or us); scDIGI on the Torre do Tombo codices running"
   },
   {
    "name": "Parent workers",
@@ -1678,5 +1678,5 @@
    "focus": "hall of fame view live from CITATIONS.md: one public citation (Cryptiana, 24 Sept 2026) and the pending replies list"
   }
  ],
- "headline": "Evening of 24 Sept: fifteen readings at N4; the outreach set is sent (Tomokiyo, the Huygens Institute, the Huntington, two Bourdeau issues) and replies come to the parent. At 18:48 the owner chose momentum: LANE R5 (Salviati code+mark, Seure, the 1519 key) and LANE N4 (Gomberville t.2, fr.3985, keys against Gallica siblings) restarted under the seven-day warning, and a hall-of-fame view for public citations is being added to this board."
+ "headline": "Evening of 24 Sept: fifteen readings at N4; the outreach set is sent and replies come to the parent. The owner chose momentum at 18:48: R5 and N4 restarted, and the parent's own picks ran their controls (image detector: gate failed; crib loop: helps at short lengths only; Z13 forum mechanism: fails its control). Six Nevers letters sit under Tomokiyo's key no.60, blocked on the scribe's hand, with the calibration leaf identified. A Fable survey is ranking the public unsolved lists with an approach per item. Successor prompt: hub-seed/SUCCESSOR-PROMPT.md."
 }
