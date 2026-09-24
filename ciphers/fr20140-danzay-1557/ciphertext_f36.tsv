@@ -3,7 +3,9 @@
 # (key.tsv, inventory.tsv); glyph identity for eps, pd, x8, b6 checked against the same glyphs on f.35r (f69_cipher.jpg,
 # R2 "fort", R8 "pour"). conf: H clear and code certain; M code or glyph identity doubtful. passA/passB: that pass's
 # label at the aligned position ("-" none). Not a sign: a small ink dot between positions 12 and 13 (pass A's unk4, L).
-# Lines 2-4 of f.36r also carry cipher signs mixed with clear words; they are NOT transcribed here (see NOTES.md).
+# Lines 2-4 (36R2-36R4) appended 24 Sept 2026 by an Opus reconciler from passA_f36b.tsv / passB_f36b.tsv against
+# native_f71.jpg (y 1880-2370); clear-hand words are w:<word> (not cipher tokens). passA/passB: that pass's label(s) at
+# the aligned position, '+' where the pass split one sign, '-' where it has none. See NOTES.md 'f.36r lines 2-4 reading'.
 line	position	sign	confidence	passA	passB	note
 36R1	1	T	H	a	a	T-shape; key a|luy
 36R1	2	mu	H	u	u	u with right-leg descender
@@ -30,3 +32,58 @@ line	position	sign	confidence	passA	passB	note
 36R1	23	pib	H	a	n	pi with bar
 36R1	24	xb	H	l	e	x with bar underneath
 36R1	25	r2	H	r	r	large script 2
+36R2	1	le	H	g	g	z/3-shape with flat top, as 36R1 pos 9 and Tomokiyo's 'le'
+36R2	2	loop	M	q	d	looped c-f flourish, as Tomokiyo's null row 'cf cf ny rj'; read as null
+36R2	3	mc	M	m	m	small script m (Tomokiyo c row 2); the swash below it is taken as pos 4's tail
+36R2	4	h9	M	d	unk1	9 / g-shape whose tail sweeps back left under pos 3: Tomokiyo h col row 1 (cell added to key.tsv 24 Sept 2026); not s9 (straight stem)
+36R2	5	T	H	a	word:luy	T-shape; key a|luy
+36R2	6	ae	H	n	unk2	ae ligature
+36R2	7	g8	M	g	e	figure-8 with a small dot or stub at the left waist; x8 (barred 8, unkeyed) not excluded
+36R2	8	x	H	e	e	plain x
+36R2	9	w:fust	H	fust	fust	clear hand
+36R2	10	w:Et	H	r+x	r+unk3	clear hand, &-form E with t
+36R2	11	w:en	H	cy	-	clear hand
+36R2	12	w:telle	H	m+l+l+unk1	trllo	clear hand; pass A took it as four cipher signs
+36R2	13	w:sorte	H	forte	fortte	clear hand, long s
+36R2	14	w:vous	H	vous	boua	clear hand
+36R2	15	w:serez	M	fixuy	fixuy	clear hand; letter-forms long-s, c-e, x-r, u, z-with-tail, then a point; 'serez' by the forms and by 'vous ... asseuré' after it
+36R3	1	w:asseuré	H	a+seur	pouoir	clear hand
+36R3	2	w:de	H	de	de	clear hand
+36R3	3	w:faire	H	faur	faire	clear hand
+36R3	4	dia	H	d	null	slanted lozenge with inner stroke, same glyph as 36R1 pos 3 and 12
+36R3	5	mu	M	unk1	unk4+m	u-shape; the right-leg descender of 36R1 pos 2 is short here
+36R3	6	r2	M	z	z	plain small 2, flat foot; committed convention r2 (NOTES 'Second reader f.35'); Tomokiyo also draws a plain 2 among nulls (open key question)
+36R3	7	ae	H	n	unk2	ae ligature
+36R3	8	g8	H	g	g	plain figure-8, no bar
+36R3	9	xN	M	unk2	r	N with a curl at left, no crossbar visible; nearest drawn sign is Tomokiyo's crossed-N null
+36R3	10	w:quand	H	quand	quand	clear hand
+36R3	11	T	H	a	word:luy	T-shape
+36R3	12	sha	H	m	m	three strokes on a base line (Tomokiyo m row 1)
+36R3	13	dia	H	d	t	slanted lozenge with inner stroke
+36R3	14	T	H	a	unk5	T-shape
+36R3	15	eps	H	t	unk6	two-lobed epsilon with stem (not the q-shape s9)
+36R3	16	w:de	M	de	-	clear hand by letter-form (round d, e); cipher del+x not excluded
+36R3	17	loop	M	re	-	r-like stroke with looped descender, as Tomokiyo's null 'rj'; a clear 're' with flourish not excluded
+36R4	1	q4	M	l	m	open 4 (Tomokiyo q row 1); his closed 4 in d row 3 not excluded
+36R4	2	ww	M	m	m	sharp double caret (inverted w) after a hairline; no drawn match; new code, unkeyed
+36R4	3	ven	M	h	y	y-shape with looped descender
+36R4	4	iii	H	null	null+null	three slanted strokes
+36R4	5	pp	H	m	unk8+unk8	two uprights each crossed by a bar (Tomokiyo m row 2)
+36R4	6	dia	H	i	e	slanted lozenge with inner stroke
+36R4	7	ae	H	b+n	unk2	ae ligature; pass A split it
+36R4	8	LRD	M	l	word:leRoyDeDannemarch	script L with top hook and foot; Tomokiyo's 'le Roy de Dannemarch' drawing; his circled t row 2 (long s/f with foot) is the nearest alternative, which would give '...ment par deça'
+36R4	9	xA	H	u	unk7	A with crossbar through
+36R4	10	b6	H	p	word:dict	6-shape with large loop top; same as 36R1 pos 11/22 (p); context 'par'
+36R4	11	T	H	a	word:luy	T-shape
+36R4	12	eps	H	t	unk10	two-lobed epsilon with stem
+36R4	13	fd	H	f	d	long f / dagger with descender
+36R4	14	xA	M	u	unk7	A-like sign with a crossing stroke and s-tail; read as crossed A
+36R4	15	x	H	x	e	plain x
+36R4	16	al	H	e	unk7	alpha, as 36R1 pos 4
+36R4	17	T	H	a	word:luy	T-shape
+36R4	18	xA	H	s	m	doubled crossed A (Tomokiyo nulls row 4, first sign)
+36R4	19	w:fust	H	fust	fust	clear hand
+36R4	20	r2	M	z	null	plain small 2, as 36R3 pos 6
+36R4	21	x88	H	unk1	unk9	double loop with two vertical bars
+36R4	22	ringT	H	z	unk8	T with small ring above; unkeyed (f.35 ringT)
+36R4	23	iii	H	null	null	three slanted strokes, line end

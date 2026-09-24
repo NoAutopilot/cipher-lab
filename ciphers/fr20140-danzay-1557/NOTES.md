@@ -550,3 +550,79 @@ No reconciliation, sign inventory, key application, or decode attempt follows fr
 applies. Cost note: two Sonnet subagents, well under the $5 cap for this worker.
 
 - Toward-N4 gap worker, 24 Sept 2026: the Daussy 2001 chapter gap (above) is closed as far as this repository's tools can take it, not closed positively or negatively. The only IA copy, `lpistolaireauxvi0000unse`, is in Internet Archive's print-disabled-only access tier (`is_lendable: false`, `max_borrowable_copies: 0` on the no-login availability check) — a harder wall than the obfuscated-image limit `tools/ia_borrow.py` already documents for ordinary lending items, since `browse_book` cannot even open a loan on this account. be-api full-text search found all five of the reading's distinctive terms present somewhere in the 262-leaf book (Danzay, chancelier, cardinal de Lorraine, 1557) except Danois/Augsbourg/marchans de Lion (0 hits), but every present-term snippet reads as unrelated to this letter (a different chancellor, bibliographic citations of editions, unrelated 1557 dates, an index/name-list entry with no date). Full log and reasoning in AUDIT.md "Toward N4: Daussy 2001, 24 Sept 2026". This needs a library copy or ILL, not another automated pass; a REQUEST.md/ASKS.md row for the person is the next step, not a further worker.
+
+## f.36r lines 2-4 reading (24 Sept 2026)
+
+Opus reconciler (LANE G), working from disk only: `images/native_f71.jpg` (y 1880-2370, re-cut in 2x zooms in the
+session scratchpad), the line crops `f71_R{2,3,4}_L01_s{1,2}.jpg`, `passA_f36b.tsv`, `passB_f36b.tsv`, and
+Tomokiyo's table (`sources/cryptiana/web/danzay_1557.png`) for glyph identity. No network. Lines 36R2-36R4 are now
+appended to `ciphertext_f36.tsv` (line 1 unchanged). Each row carries both passes' labels at the aligned position
+and a glyph note. `decode.py` regenerates `reading_f36.txt` and `reading_tokens_f36.tsv`. f.35's `reading.txt` and
+`reading_tokens.tsv` stay byte-identical (md5 checked before and after), and so does the 36R1 line of
+`reading_f36.txt`. `decode.py --check` exits 0 when current and 1 when stale (tested by appending to
+reading_f36.txt). `tools/tests/test_decode_key.py` passes.
+
+**Alignment.** Neither pass is sign-for-sign right. Most of the gap is segmentation. Pass A read the clear words
+"Et" and "telle" (R2) as cipher signs (r x, m l l unk1), and it split the ae ligature at R4 pos 7 into b + n.
+Pass B split `iii` and `pp` in R4 into two signs each, and it has no token for the clear "en" (R2) or for the last
+"de" and flourish of R3. After this reconciliation: R2 has 8 cipher signs and 7 clear words, R3 has 12 cipher
+signs and 5 clear words, and R4 has 22 cipher signs and 1 clear word. That makes 42 cipher tokens and 13 clear
+words. **Only one of pass B's four word-sign labels is kept as a word-sign:**
+- `word:luy` (x4). These are all the T-shape, which Tomokiyo keys twice (a | luy). The context gives a at R2 pos
+  5 ("change") and at R4 pos 11 and 17 ("par deça"). R3 pos 11 and 14 are unread. Graded M (decode.py grades
+  every T as M).
+- `word:dict` (R4 pos 10). This is the same 6-shape (`b6` = p) that the f.36 line-1 reconciliation settled. The
+  context here is "par".
+- `word:leRoyDeDannemarch` (R4 pos 8). The script L matches Tomokiyo's drawing, so it is coded `LRD`, grade M.
+  It is kept, not repaired, although it breaks the run "...m e n [LRD] par deça". The closest alternative is his
+  circled t in row 2 (a long s/f with a foot), which would give "...ment par deça". That is a suggestion only
+  (grade I), not applied.
+
+**Key cell added.** Tomokiyo's image has an h in column h, row 1: a 9/g-shape whose tail curves back to the left.
+The first transcription of his table into `key.tsv` left this cell out. It is added as `h9` = h, with the source
+cited. It is used once, at R2 pos 4. No f.35 token uses it, so f.35 is unchanged. Other cells of his image that
+key.tsv also omits (d row 1 '9', d row 3 '4', i row 3, y row 2, t row 2 circled, z row 2, and the nulls '2', 'cf',
+'ny', 'rj', 'Z0') were **not** added. That is a key-transcription check for someone else. It bears on the open
+plain-2 question (see below) and on `ls`, which key.tsv cites as s row 3, where the image seems to show the
+circled t cell.
+New code: `ww` (R4 pos 2), a sharp double caret like an inverted w. Nothing in the table matches it, so it is
+unkeyed.
+
+**Grades, lines 2-4 (42 cipher tokens; 13 clear words not graded):** H 22 (9 of them nulls), C 0, S 0, M 18,
+I 0 applied, U 2 (`ww`, `ringT`). All of f.36 (lines 1-4, 67 cipher tokens): H 37 (10 nulls), M 26, U 4.
+Every H or M value comes from Tomokiyo's published key. No contemporary decipherment of this leaf is known, and
+no control was run. This is a reading from his key, not a cryptanalytic result of ours.
+
+**Reading** (`reading_f36.txt`; CAPS = clear hand, nulls dropped, [code] = unkeyed):
+```
+36R1  a u e c [I] u e s <le> [x8] p e u d e p e r t e p o u r
+36R2  <le> c h a n g e FUST ET EN TELLE SORTE VOUS SEREZ
+36R3  ASSEURÉ DE FAIRE e u r n g QUAND a m e a r DE
+36R4  q [ww] y m e n <le Roy de Dannemarch> p a r d e c a FUST r [ringT]
+36R5- (clear) toutes les foys qu'il vous plairoyt, ou je feray tout le debvoyr et diligence qui sera possible ...
+```
+- **Read:** R2 cipher = **"le change"** (le + [null] + c h a n g e). Everything comes from key values. M on mc,
+  h9, T and g8, where the dot at the 8's waist leaves x8 possible. R4 pos 10-17 = **"par deça"** (p a r d
+  [null] e c a). M on the two T's and one crossed A.
+- **Clear words:** "fust et en telle sorte vous serez / asseuré de faire ... quand ... de / ... fust". The
+  word "serez" is by letter-form and sense. The literal forms are long-s, c-e, x-r, u, tailed z. The final
+  "de" of R3 is clear by letter-form, but cipher del + x is not ruled out.
+- **Not read:** R3 "e u r n g [xN]" after "faire". With the plain 2 taken as a null rather than r2, it is
+  "e u n g", which is still not a word. R3 "a m e a r" after "quand". R4 "q [ww] y m e n [LRD]" before "par
+  deça", and "r [ringT]" after the last "fust". `ringT` stays unkeyed.
+- **Plain 2 (R3 pos 6, R4 pos 20).** Both are coded `r2`, following the committed f.35 convention. At both
+  places r gives nothing and a null reads no worse. That is two more data points for the open key question
+  (Tomokiyo draws a plain 2 among the nulls). No change was made.
+
+**How lines 1-4 run with the clear French.** Joined, the text runs: "[f.35v: ...car du [xk]] avecques le peu de
+perte pour le change fust. Et en telle sorte vous serez asseuré de faire [e u r n g] quand [a m e a r] de
+[q ? y m e n ...] par deça fust [r ?] toutes les foys qu'il vous plairoyt, ou je feray tout le debvoyr et
+diligence qui sera possible ...". The joins read as grammar where the key gives words: "pour le change" across
+lines 1-2, and "par deça fust ... toutes les foys qu'il vous plairoyt" across lines 4-5. The sense fits the
+f.35v run about sending by way of the Augsburg and Lyon merchants: "with as little loss as possible on the
+exchange". That is an inference (grade I), not a reading. Three stretches (R3 twice, R4 opening) and the f.35v
+`xk` bridge stay unread, and they are not repaired. No phrase or print search was run (verifier's work), and
+no novelty is claimed.
+
+Suggestions (not done): check key.tsv cell by cell against Tomokiyo's image (see above). Test `LRD` against t
+row 2 in "...ment par deça". Put the two plain-2 rows here into the f.35 plain-2 question.
