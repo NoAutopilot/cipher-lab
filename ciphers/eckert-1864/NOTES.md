@@ -209,3 +209,62 @@ cipher, key, plaintext and provenance was ever completed internally or since; if
 systematically would be useful. The repository was offered. A reply from the archive is the only route to
 N5 for anything in this folder and is the decision point for the corpus pass (section 5, AUDIT.md section 12).
 Log the reply here by date; no personal data (rule 9).
+
+## Second reader E4/E5, 24 Sept 2026
+
+Blind second reading (LANE V worker, 24 Sept 2026): the E4 and E5 entries were read word by word from the page images
+before ciphertext.txt, reading.md or AUDIT.md sections 5-6 were opened. Witnesses: mssEC 19 p.49 (pointer 8941,
+the working ledger, on disk) and the second ledger copy the adversarial audit found, mssEC 25 p.77 (pointer 5621, E4)
+and p.79 (pointer 5623, E5). Both were fetched once at full size (5941 x 7200 px) through the Huntington IIIF
+server and read at that size; they are committed at 2971 px as images/mssEC25_p5621.jpg and _p5623.jpg to keep
+the folder under 30 MB (images/manifest.json has the full-size URLs). The word-by-word blind reading of all four
+entry-witness pairs is images/secondreader-E4E5.tsv (248 rows). The volunteers' transcription (Decoding the Civil
+War, CONTENTdm "text" field of item 8941) was fetched once after the blind reading, for the comparison only.
+
+The mssEC 25 copy is a fair copy in a different, clearer hand, with the ledger's commas dropped and a column grid.
+Where it departs from mssEC 19 on plain words (Knots, make, Cleared, bare, &, ass, Fawks, fie) the mssEC 19 image
+does not support it; those are copyist variants and are not proposed. Where mssEC 19 is ambiguous and mssEC 25 is
+clear on a key word, the clear copy settles it.
+
+**Agreement.** My mssEC 19 reading against ciphertext.txt, case-insensitive, doubt marks ignored: E4 62/64, E5
+57/60, together 119/124 (96.0%). Of my five disagreements, re-inspection shows two were my errors (E5 "Animals":
+the final stroke is the clerk's l, so "Animal"; E4 "Hon": the volunteers and mssEC 25 read "how", the ledger's
+last letter is compatible with w), one is a genuine R/B ambiguity (E4 "Radin"/"Baden", key word, "Baden" kept),
+one a P/B ambiguity (E5 "Pender"/"Bender", key word, "Bender" kept), and one a real correction (E5 "Spartans").
+
+**Every word where a witness differs from ciphertext.txt** (index = word position in the entry, comma-free):
+
+| tel | # | ciphertext.txt | my mssEC 19 | mssEC 25 | volunteers | image evidence | proposal |
+|---|---|---|---|---|---|---|---|
+| E4 | 3 | Knox | Knox (m) | Knots | Knox | EC19: K-n-o + an open double loop, no t or s; EC25 clear "Knots" | keep Knox (key: Knox = Maj Gen B. F. Butler); EC25 is a copyist's slip |
+| E4 | 27 | made | made (m) | make | made | EC19 ending de/ke indistinct | keep (plain word) |
+| E4 | 37 | Clad | clad | Cleared | claid | EC19 "clad" | keep |
+| E4 | 43 | Bar | bar | bare | bar | EC19 no final e | keep |
+| E4 | 49 | and | and | & | and | EC19 written out | keep |
+| E4 | 52 | Navy | Navy (m) | waxy | Waxy | EC19 at 3x: the capital is an I-stroke with a V joined to it, the W form this clerk uses, then a-x-y; EC25 lowercase w-form; volunteers "Waxy" | **change Navy -> Waxy** (key p.23 l.22 R: Waxy = South, H); reading becomes "protect all South of Roanoke Island" |
+| E4 | 54 | Baden | Radin (m) | Badin | Baden | EC19 capital R/B ambiguous; EC25 B | keep Baden (key: Roanoke) |
+| E4 | 57 | Asst | asst | ass | Asst | EC19 raised t | keep |
+| E4 | 58 | Brenton[?] | Brenton (l) | Buxton | Brenton | EC19 at 3x: B, u, a crossed x-form, t whose cross-stroke is the long line running right of the word, o, n = "Buxton"; EC25 clear u and x, "Buxton" | **change Brenton[?] -> Buxton** (key p.10 l.21 R: Buxton = Secretary of Navy, H); the tail reads "Asst [Secretary of Navy] Fox", which the key now supplies instead of the M gloss |
+| E4 | 59 | Fox | Fox | Fawks | Fox | EC19 "Fox" | keep (plain: Fox) |
+| E4 | 60 | How | Hon (m) | how | How | EC19 last letter compatible with w | keep |
+| E4 | 61 | are | are | fie | are | EC19 "are" | keep |
+| E5 | 7 | Dispatch | Dispatch | dispatch | Despatch | EC19 i, not e | keep |
+| E5 | 22 | Animal | Animals (m) | animal | Animal | EC19 at 3x: final stroke is the clerk's l, no s | keep Animal (my blind reading was wrong) |
+| E5 | 46 | Spartan | Spartans | Spartans | Spartans | final s clear in both ledgers | **change Spartan -> Spartans** (Spartan = Horse; reading "Horses", the book's stem-plus-ending rule) |
+| E5 | 51 | queenly[?] | Queenly (m) | queenly | queenly | EC25 clear "queenly"; EC19 compatible | **change queenly[?] -> queenly** (drop doubt mark; key: Queenly = Depot, H) |
+| E5 | 60 | Bender | Pender (m) | Bender | Bender | EC19 capital P/B ambiguous; EC25 B | keep Bender (key: Qr Master Genl U.S.) |
+
+Known cases from the brief: Brenton[?]/Buxton -> Buxton (proposed); Knox/Knots -> Knox (kept); Spartan/Spartans ->
+Spartans (proposed); waxy/Navy -> Waxy (proposed). Also proposed: queenly without the doubt mark. **Four proposed
+changes**, none applied here; a Sonnet worker applies the accepted ones to ciphertext.txt and reading.md and reruns
+`decode.py --check`. Grade effect if accepted: E4 M 1 -> 0 (Buxton H), "Navy" moves from plain to a code word (H).
+
+Observation, no change proposed: E5's ledger header reads "10.45 am" (both copies, and the volunteers "1045 AM"),
+while the time word Elizabeth reads 10.30 AM; the reading's {time: 10.30 AM} is the key's value, not the header's.
+
+Suggestion (not done, outside this brief): the mssEC 25 fair copies exist for other entries on pp.77-79 (E4's
+neighbours, e.g. the Beckwith/Culpeper entry); a second-witness pass over every E-entry that has an mssEC 25 copy
+would settle the remaining [?] tokens the same way.
+
+Requests: hdl.huntington.org 5 (2 info.json, 2 full-size IIIF images, 1 CONTENTdm item API for the volunteers'
+text), 3 s apart, all HTTP 200.

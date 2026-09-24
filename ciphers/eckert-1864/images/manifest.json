@@ -1261,6 +1261,44 @@
    "saved_as": "mssEC47_p589.jpg",
    "saved_width_px": 1199,
    "saved_bytes": 175179
+  },
+  {
+   "object": 5952,
+   "call_number": "mssEC 25",
+   "page_pointer": 5621,
+   "page_title": "Page 77",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/5621",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/5621/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/5621/info.json",
+   "full_size_px": [
+    5941,
+    7200
+   ],
+   "full_bytes": 2252088,
+   "saved_as": "mssEC25_p5621.jpg",
+   "saved_width_px": 2971,
+   "saved_bytes": 798266,
+   "fetched": "24 Sept 2026",
+   "note": "read at full size (5941 px, largest the IIIF server lists) by the E4/E5 second reader; committed at 2971 px (IIIF size tier) to keep the folder under 30 MB; re-fetch full from iiif_full"
+  },
+  {
+   "object": 5952,
+   "call_number": "mssEC 25",
+   "page_pointer": 5623,
+   "page_title": "Page 79",
+   "item_page": "https://hdl.huntington.org/digital/collection/p16003coll11/id/5623",
+   "iiif_full": "https://hdl.huntington.org/digital/iiif/p16003coll11/5623/full/full/0/default.jpg",
+   "iiif_info": "https://hdl.huntington.org/digital/iiif/p16003coll11/5623/info.json",
+   "full_size_px": [
+    5941,
+    7200
+   ],
+   "full_bytes": 2367214,
+   "saved_as": "mssEC25_p5623.jpg",
+   "saved_width_px": 2971,
+   "saved_bytes": 851904,
+   "fetched": "24 Sept 2026",
+   "note": "read at full size (5941 px, largest the IIIF server lists) by the E4/E5 second reader; committed at 2971 px (IIIF size tier) to keep the folder under 30 MB; re-fetch full from iiif_full"
   }
  ],
  "book_mssEC47_page_count": 48
