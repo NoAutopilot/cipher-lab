@@ -14,7 +14,7 @@ aligned letters, key_*_extended.tsv / align_*.tsv) from ciphertext.txt / *_pairs
 and the relevant key_*.tsv. --check recomputes in memory and exits non-zero if a
 committed output file is stale.
 
-Grading (mechanical-only letters: P14, P17):
+Grading (mechanical-only letter: P14):
   H  the CLEANED token (after thurloe_extract.py's own l/i->1, o->0 normalisation)
      parses as a bare integer that is a key in the relevant key_*.tsv.
   M  thurloe_extract.py itself marked the token doubtful (trailing '?' in CLEANED --
@@ -49,7 +49,9 @@ import interlinear_align as ia  # noqa: E402
 # carries a decipherment for them); P10 likewise (extended_from_pairs, Blake system).
 LETTERS = [
     ("P14", ["P14/ciphertext.txt"], "key_montagu_extended.tsv", "reading_P14.txt"),
-    ("P17", ["P17/ciphertext.txt"], "key_downing.tsv", "reading_P17.txt"),
+    # P17 removed 24 Sept 2026 (LANE T): it is Fauconberg to H. Cromwell, not Downing;
+    # its reading is reading_fauconberg_P17.txt from decode_fauconberg.py. key_downing.tsv
+    # (Tomokiyo's Downing values) is kept as a source transcription but no row uses it.
 ]
 
 CLEANED_LINE_RE = re.compile(r"CLEANED: (.*)$")
