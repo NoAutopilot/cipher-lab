@@ -228,3 +228,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 183 | 24 Sep | cipher-lab | check-solved M22 M25 M26 M28 M29 M34 | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | check-solved, Sonnet cap $6, lane-g2-cs2 | running, session_013RzruXodCFkcHba3hUuWaT |
 2026-09-24T08:48Z	session_017QzVuGiZ8wFQY6HZfUxH1q	LANE V2 orchestrator (Opus, cap $100)	French/Dutch/German verification successor	from the LANE V 07:50 handoff
 2026-09-24T08:48Z	session_0169D5ZhVf9y378dTq1bHp41	LANE R2 orchestrator (Opus, cap $100)	recovery lane successor	from the LANE R 08:44 handoff
+| 184 | 24 Sep | cipher-lab | Danzay f.35r-36r N4 decision after Cryptiana close | LANE V (session_01B5x2Dshzz71xBzbJqFnXYQ) | verifier N4-decision, Opus cap $8 | done, a53e4eb (collected by LANE V2) session_01MoWhkX7KpTtDeEZ8YAWg6z |
+| 185 | 24 Sep | cipher-lab | Verifier clair1067-brienne-poland-1646 | LANE V (session_01B5x2Dshzz71xBzbJqFnXYQ) | verifier, Opus cap $10 | done, 01f4259 (collected by LANE V2) session_01Udgi32LVQHdPhEgPKEf6fe |
