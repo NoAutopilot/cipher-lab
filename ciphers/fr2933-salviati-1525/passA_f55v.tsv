@@ -320,11 +320,11 @@ line	pos	code	marks	action	conf	note
 12	26	_	ot	plain	M	
 13	1	S4		confirm	H	
 13	2	Lx		confirm	H	
-13	3	S7		confirm	H	
+13	3	S7		confirm	M	
 13	4	w		confirm	H	
 13	5	y		confirm	H	
 13	6	_		plain	H	
-13	7	Z		confirm	H	
+13	7	Z		confirm	L	compound loop+crossbar shape, ambiguous, kept classifier Z
 13	8	g		confirm	H	
 13	9	H		confirm	H	
 13	10	H	1|o	confirm	H	
@@ -334,45 +334,45 @@ line	pos	code	marks	action	conf	note
 13	14	#	dot	confirm	H	
 13	15	e	dot	confirm	H	
 13	16	S7		confirm	H	
-13	17	#	dot	confirm	H	
+13	17	#	dot	confirm	M	
 13	18	]	ot	confirm	H	
 13	19	L		confirm	H	
 13	20	g	1	confirm	H	
 13	21	_		plain	H	
 13	22	S4		confirm	H	
 13	23	dl		confirm	H	
-13	24	Lx		confirm	H	
+13	24	Lx		confirm	M	
 14	1	eps	1	confirm	H	
 14	2	_		plain	H	
-14	3	_		plain	H	
+14	3	_		plain	M	
 14	4	_		plain	H	
 14	5	_		plain	H	
-14	6	_		plain	H	
+14	6	_		plain	M	
 14	7	_		plain	H	
-14	8	_		plain	H	
-14	9	_		plain	H	
+14	8	_		plain	L	
+14	9	_		plain	M	
 14	10	_		plain	H	
-14	11	S		confirm	H	
-14	12	_	dot	plain	H	
-14	13	f		confirm	H	
+14	11	_		correct	H	plain 'os', part of a legible word
+14	12	_	dot	plain	L	
+14	13	_		correct	H	plain 'fa', part of a legible word (letter-like f confusion)
 14	14	_		plain	H	
 14	15	_		plain	H	
 14	16	_	dot|dot	plain	H	
 14	17	_		plain	H	
-14	18	nt		confirm	H	
-14	19	N		confirm	H	
-14	20	S		confirm	H	
-14	21	lam		confirm	H	
+14	18	_		correct	M	plain 'm'-ish loop, part of 'intendera'; letter-like nt confusion
+14	19	_		correct	M	plain 'a', part of 'intendera'; letter-like N confusion
+14	20	_		correct	M	'.S.' with dots either side, plausibly the standard 'V.S.' (Vostra Signoria) abbreviation, plain not sign
+14	21	lam		confirm	M	M/Al-like cursive shape, kept classifier lam call, moderate share
 14	22	lam	#	confirm	H	
-14	23	p		confirm	H	
+14	23	p		confirm	L	compound shape with superscript-4-like mark, kept classifier p call, low share
 14	24	Lx		confirm	H	
-14	25	_		plain	H	
-15	1	sq	ot	confirm	H	
+14	25	_		plain	M	
+15	1	sq	ot	confirm	M	
 15	2	_		plain	H	
 15	3	rz		confirm	H	
-15	4	U		confirm	H	
+15	4	U		confirm	M	
 15	5	w		confirm	H	
-15	6	_		plain	H	
+15	6	_		plain	L	y-like plain letter, part of a word
 15	7	_	5	plain	H	
 15	8	e	dot	confirm	H	
 15	9	e	dot|#	confirm	H	
@@ -380,13 +380,13 @@ line	pos	code	marks	action	conf	note
 15	11	S7	#	confirm	H	
 15	12	eps	dot	confirm	H	
 15	13	g		confirm	H	
-15	14	nt		confirm	H	
+15	14	nt		confirm	M	
 15	15	]	o	confirm	H	
 15	16	_	1	plain	H	
-15	17	sq	#	confirm	H	
+15	17	sq	#	confirm	M	
 15	18	_	~	plain	H	
 15	19	S7		confirm	H	
-15	20	+		confirm	H	
+15	20	+		confirm	M	crossing-stroke mark, ambiguous between + and #, kept classifier +
 15	21	rz		confirm	H	
 15	22	Z		confirm	H	
 15	23	S7		confirm	H	
