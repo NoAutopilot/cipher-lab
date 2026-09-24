@@ -128,7 +128,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 102 | 24 Sep | cipher-lab | Brienne 1659: canvas 173 reconciled, joint key through f.88 tail, LANE V regrade applied | LANE G | solver, Opus cap $8 | done, archived: c173 reconciled 87%; key 79 groups; 6 over-graded C tokens now M; f.86 C69 M199, f.88 C103 M165 U3; $2.97 |
 | 103 | 24 Sep | cipher-lab | M19 Du Vergier (Clairambault 1108): leaves, extent, interlinear-mark check, who/to whom | LANE G | access, Sonnet cap $6 | done, archived: cipher on 4 leaves (f.247v, 249r-250r 26 Mar 1696, 262), mixed clear+numeral nomenclator, no gloss; Vergier to Pontchartrain likely; $1.86 |
 | 104 | 24 Sep | cipher-lab | U2 Blathwayt + U1 Luzerne: Huntington images, inventory, U2 blind passes | LANE R | access+passes, Sonnet cap $9 | running, session_01CVF6mjon5FLeHjR8vPRUuH |
-| 105 | 24 Sep | cipher-lab | U1 La Luzerne 1781 code: Tomokiyo pairs, Yale images, key and reading of mssDE 68/108(A) | LANE R | key recovery, Opus cap $12 | running, session_01FXR2GAyQxRaqaW17RMtXtW |
+| 105 | 24 Sep | cipher-lab | U1 La Luzerne 1781 code: Tomokiyo pairs, Yale images, key and reading of mssDE 68/108(A) | LANE R | key recovery, Opus cap $12 | steps 1-2 done ($2.89: Yale 8 Jan 1781 aligned, 73 C figures, two-part code); idle awaiting Huntington images, session_01FXR2GAyQxRaqaW17RMtXtW |
 | 106 | 24 Sep | cipher-lab | W1 Oxenstierna 1632: OCR checked on page image, design, solver with matched control | LANE R | solver, Opus cap $15 | running, session_01My28Sj2WBPDNdakzKkGXEB |
 | 107 | 24 Sep | cipher-lab | rah-canada-1869: RAH images, inventory, blind passes | LANE R | access+passes, Sonnet cap $8 | running, session_01SeErdv6XUsPNGirMDfnkMn |
 2026-09-24T05:05Z	session_01W4z8JhXJYHRjorPC1Qkpiy	LANE N orchestrator (Opus, cap $80)	nominations lane	steady stream of stage-2 copy-free nominations; DECODE census; successor to LANE S
@@ -152,3 +152,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 123 | 24 Sep | cipher-lab | M19 Du Vergier passes on 3 native leaves | LANE G | transcription, Sonnet cap $6 | running, session_01JK39bZoixdss9gzKuPRH8Z |
 | 124 | 24 Sep | cipher-lab | M19 Du Vergier key leads and edition check (non-Gallica hosts) | LANE G | print-check, Sonnet cap $5 | running, session_01KzqHTZS7T25886C4agJC7W |
 | 125 | 24 Sep | cipher-lab | Gramont f.30r unread top lines re-read from native crops | LANE G | solver, Opus cap $8 | running, session_014Tt8yJTXduJiSSEuoq8g9d |
+| 126 | 24 Sep | cipher-lab | W1 Oxenstierna: is the 23 July 1632 original (or a chancery copy) digitised at Riksarkivet, with a decipherment beside it? | LANE R | access, Sonnet cap $6 | running, session_01Nhp5kiZmrZ8Hda5KgMgqML |
