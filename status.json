@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 17:08 UTC",
+ "updated": "24 Sep 2026 17:30 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -616,6 +616,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 17:30",
+   "what": "Outreach gate: JSTOR family searched on your machine (60 rows), open-index queries done (0 hits), the Richard 1910 Danzay lead negative. Four outward drafts written: Huntington and the Thurloe issue ready; Tomokiyo and Huygens wait on three JSTOR reads. Significance memo: 0 substantive, 12 confirm or add detail, 3 form and key only."
+  },
   {
    "when": "24 Sep, 17:08",
    "what": "Ninth second opinion checked (Saxony 53/57): no prior print. Score for the day: nine outside checks, zero prior prints found, nine folders corrected. Checked pull requests closed unmerged."
@@ -1576,5 +1580,5 @@
    "focus": "all nine ChatGPT second opinions checked: no prior print or decipherment found for any reading, every class unchanged, citation and count slips corrected in every folder; next verifiers run when the JSTOR rows land"
   }
  ],
- "headline": "Afternoon of 24 Sept: fifteen readings at N4, one cryptanalytic. Cryptiana accepted the Bowes 1583 sign table. ChatGPT's second opinions are flowing: eight posted, the first checked with no prior print found and four small errors in our files fixed. Posthius 1614/18 turned out already deciphered on the leaf (N0). The seven-day usage window is at its warning; two focused lanes run on your call. Ready for you: the JSTOR searches from your PC, the mailbox variables, the DECODE message, the history swap; six grant drafts wait in cipher-lab-private."
+ "headline": "Evening of 24 Sept: fifteen readings at N4 with the JSTOR and open-index families now searched from your machine; nine ChatGPT second opinions checked, no prior print found. The significance memo rates 12 of 15 as confirming or adding detail to the printed editions, 3 as form and key only, none as substantive news. Two outward notes are ready to send (Huntington; the Thurloe issue for Bourdeau); the Tomokiyo and Huygens notes wait on three JSTOR articles your runner still has to read."
 }
