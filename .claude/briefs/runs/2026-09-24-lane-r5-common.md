@@ -28,3 +28,6 @@ COMMON RULES (LANE R5 worker; parent LANE R5 orchestrator session_01LcgYWtnKYzBk
   and was interrupted by the orchestrator at $9.37 with pass B unfinished -- the same image-heavy pipeline cost $6.50 on the
   reference leaf (J, f.54v), so an $8 cap with no per-step checkpoint had about one leaf's worth of margin for a job already showing
   ~44% variance leaf to leaf.
+- (PROCESS-2026-09-24 proposal 4) No leaf is bought before the previous leaf's reading has a judge output: LANE R5 spent about
+  $40 on three Nevers leaves before the palaeographic blocker was named (ROOM.md, 24 Sept 2026, F1-F3: "sign identification,
+  not the key"); a $3 breadth test (apply the key to one pass, judge) would have named it first.

@@ -27,6 +27,9 @@ from the images and cluster them by shape into one shared atlas first (see ciphe
 then give both passes the atlas's codes; two passes that each invent their own code book cannot be reconciled
 row by row (Raince, 23-24 Sept: 124 codes against 25). This applies whenever ANY non-numeral sign occurs, mixed pages included: a numeral nomenclator with some invented marks still needs the atlas first (Salviati fr.2933, 24 Sept: atlas skipped on a mixed page, free-text passes agreed on 4.7%). Report token count and type count against any gate the
 orchestrator names in the brief; if it fails, say so in NOTES.md and stop rather than start another full pass.
+(PROCESS-2026-09-24 proposal 4) If pass agreement is under 60%, stop and report the blocker; the next step is a
+glyph atlas, not a third pass -- two passes at 37-54% agreement (LANE R5 F1-F3) cannot pass a language gate, and a
+third pass does not help.
 Scripts (24 Sept 2026; CLAUDE.md Usage 8): find the leaf with `tools/gallica_folio.py ARK --folio N` (use the label;
 it reports offset changes), cut crops with `tools/iiif_lines.py` and check its `--debug` overlay before the passes
 start, and reconcile from `tools/reconcile_passes.py passA.tsv passB.tsv --crops <crop dir>`: settle only the rows

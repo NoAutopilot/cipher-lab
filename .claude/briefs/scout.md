@@ -12,3 +12,6 @@ When ROOM.md carries a note that a downstream lane (recovery, cryptanalysis) has
 next scout dispatch targets source families with known digitised/IIIF access (CLAUDE.md access playbook route
 1) before catalogue-only archives that would need a copy order. Lesson of 24 Sept 2026: LANE N posted 17
 nominations in its first hour, all copy-order, while LANE R sat idle for copy-free work (ROOM.md 05:22 UTC).
+(PROCESS-2026-09-24 proposal 4) A Top-50 item enters the queue only with its survey rank and the named cheap
+test: `UNSOLVED-SURVEY.md` already gives the ranking with the reason per row, and QUEUE.md's dropped table
+already says so for most famous items -- do not score one in by fame alone.

@@ -17,4 +17,5 @@ Common tail (paste into every brief):
 > the answer), stop. Per rule 10, report what was found and where it was not found; never new, unpublished,
 > first. Per rule 7, a claimed reading on a target with a spec is reported only with `tools/judge_plaintext.py`'s
 > output pasted in, and stands only after a fresh-instance re-derivation from the spec and key. Do not start other
-> targets. Never print or commit credentials, and never echo a credential into your own transcript: no unfiltered `env`, no `curl -v` or `set -x` on a call that carries one (Access playbook item 3).
+> targets. Never print or commit credentials, and never echo a credential into your own transcript: no unfiltered `env`, no `curl -v` or `set -x` on a call that carries one (Access playbook item 3). A negative's done line carries
+> target and control numbers side by side, or it is not a negative (rule 3).
