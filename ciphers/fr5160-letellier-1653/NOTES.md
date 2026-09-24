@@ -1856,3 +1856,42 @@ Report: 65 = ma (an alignment slip in f.88, corrected by an external seed). 6 = 
 letter, so it is a letter-scoped value. Whether that reflects a table revision or an unchecked sign reading in f.67 was not
 settled, because the f.67 image was not on disk. No H anywhere (no key source), no novelty wording. Requests: none (no network).
 No subagents.
+
+## Code 6 image compare (24 Sept 2026)
+
+LANE G3 worker A (Opus, cap $3). Question from 'key_1659 codes 6 and 65': is f.67's code 6 (value a, 13 of 14) really a 6, or the
+November `m` misread by both passes? **It is a real 6. No correction to ciphertext_f67.tsv; LETTER_SCOPED stays.**
+
+Image: canvas 129 (f.67r) cipher region `380,1750,3050,3420` at native resolution (3050x3420), one Gallica request after the full
+`native.jpg` and `default.jpg` URLs each reset once (manifest entry in `images/manifest.json`; kept in the worker's scratchpad,
+folder at its 30 MB cap). Canvas 130 was not fetched (brief: one native), so its six occurrences (f130a L01/7, L05/8, L06/5, L06/16;
+f130b L03/16, L07/10) are not image-checked.
+
+Comparison signs: `crops/f86_cipher_L08.jpg` (f.86 code 6 before "M.r", = qu) and `crops/f86_cipher_L11.jpg` (f.86 `m`, = a).
+
+| f.67 token | on the image | confidence |
+|---|---|---|
+| f129 L06/1 | plain 6, open bowl with tall ascending stroke, no bar; line-initial | high |
+| f129 L09/9 | plain 6 after `16`, no bar; clearly separated from `16` | high |
+| f129 L10/20 | plain 6 before `7 _12 24`, no bar | high |
+| f129 L11/9 | plain 6 before `23 _11 18`, no bar | high |
+| f129 L16/6 | plain 6 after barred `_7`; bar stops before it | high |
+| f129 L16/9 | plain 6 after `10` | high |
+| f129 L16/14, L16/15 | two plain 6s after `9`, before `23 23` | high |
+
+All eight are the same form as the f.86 six (loop with a tall, rightward-leaning ascender) and the same form as the 6 inside this
+page's own `16`, `26`, `36`, `66`, `76`. None resembles the f.86 `m`, which is a three-minim minuscule m with no ascender; no
+two-minim or three-minim sign occurs anywhere in the f.67 region (the letter has no `m`, as the earlier count said). The only
+nearby confusable, overlined `_6` (= qu on f.67, 13 of 13), is excluded because none of the eight carries a bar. So a
+misread cannot explain the split: on the evidence of the 8 image-checked tokens, code 6 = a in the 10 Oct 1659 letter and qu in
+the 21 Nov 1659 letter, with a written as `m` only in November. This fits a revised issue of the table between the two letters
+(or a second table variant in use at the office), not a sign-reading error. Recorded as a table revision; LETTER_SCOPED kept
+with an image-check comment in `align_f67.py`.
+
+`_12` = ri conflict: the two `_12` tokens in the fetched region that were viewed (f129 L09/11, L10/22) are a clear overlined 12,
+so that conflict is not a sign misread either; f.67 gives ri 8/8 against key_1659's i 2/3. Reported, not forced.
+
+Grades: unchanged, since no ciphertext changed (f.67 on f.68r C 454 M 92; f.67 cryptanalytic S 102 M 421 I 9 U 14).
+`align_f67.py --check`, `read_f67.py --check` and `tools/decode_key.py . --config decode_f67.json --check` exit 0.
+Not checked: canvas 130's six 6s (suggestion: one region request on canvas 130 if a later worker needs 14/14).
+Requests: gallica.bnf.fr 3 (2 resets, 1 success). No subagents.

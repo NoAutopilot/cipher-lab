@@ -87,7 +87,7 @@ A_NONSIGN = {',', ';', '.', ':', '—', 'X'}
 # is qu (5/5: "que M.r", "quel(s)", "desquelles"); on f.67 (10 Oct 1659) it is a, and f.67 has no `m` (the November letter's
 # a, 21 times). Different values in different letters, so key_1659's f.86/f.88 counts for these codes are not used as the
 # prior here and the f.67 value is graded as the letter's own.
-LETTER_SCOPED = {'6': 'a'}
+LETTER_SCOPED = {'6': 'a'}  # image-checked 24 Sept 2026: a plain 6 on f.67 (NOTES 'Code 6 image compare')
 
 
 def load_key():
