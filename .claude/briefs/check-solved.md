@@ -2,6 +2,16 @@
 Six blind searchers (web, print, community lists, DECODE, Bourdeau, Aymeloglu) and a reconciler. Each
 searcher lists every query and URL; found=true only for a real solution, key, plaintext or documented
 attempt with a status. Verdict appended to NOTES.md with the date. + common tail.
+A verdict of `open` is written only in the same sentence as the edition (or calendar) read and the page(s)
+checked, e.g. "open -- Ribier 1666 vol.2 pp.140-145 read, letter absent." A verdict with no edition named in
+it defaults to `blocked`, never `open` (RETRO-2026-09-24e: csCS2a and csCS2c both posted "open" rows with the
+edition unread despite the same rule already stated in the LANE N COMMON tail -- a rule read once at claim
+time does not survive a five-row batch; putting it in the verdict sentence itself makes the gap visible to
+whoever reads the row).
+For a target from the Trew Briefsammlung, a physician's correspondence, or any German/Latin medical-humanist
+collection, add aerztebriefe.de (Schlagwort "Geheimschrift") as a seventh search before scoring. Lesson of 24
+Sept 2026 (Posthius to Eysenmenger 1614/1618): the six standard sources missed a listed decipherment there;
+a solver read both letters (H96 M13, $1.79) before a verifier found both N0 (RETRO-2026-09-24e).
 When a calendar or edition is unreachable (HathiTrust 403, paywall), do not log it as unreachable and move on: run
 the HTRC Extracted Features word-count test (`tools/htrc_ef_headwords.py`, or the ef-api pages call) for the item's
 names, dates and folio numbers, and treat a page that carries them as a probable calendar entry. Lesson of 23 Sept
