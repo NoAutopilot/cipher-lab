@@ -1,0 +1,62 @@
+sign	value	grade	source	note
+4	d	M	anneal	n=1
+8	f	M	anneal	n=1
+9	i	M	anneal	n=2
+13	h	M	anneal	n=1
+14	t	M	anneal	n=1
+16	s	S	anneal	n=5
+17	s	S	anneal	n=30
+18	t	S	anneal	n=6
+19	m	S	anneal	n=3
+20	m	S	anneal	n=19
+22	f	S	anneal	n=7
+23	f	S	anneal	n=7
+24	e	S	anneal	n=20
+25	e	S	anneal	n=12
+26	e	S	anneal	n=86
+27	l	S	anneal	n=15
+28	l	S	anneal	n=21
+29	l	M	anneal	n=2
+30	e	M	crib-correction	n=1; 17 54 72 32 30 = Sparre (name; e)
+31	r	S	anneal	n=17
+32	r	S	anneal	n=52
+33	o	M	anneal	n=1
+35	o	M	crib-correction	n=1; höglar, as 33 in the same word two lines up
+38	x	M	crib-correction	n=1; 71 26 57 62 38 26 80 = bevuxen
+44	k	S	anneal	n=15
+46	d	M	anneal	n=1
+47	d	S	anneal	n=37
+48	c	S	anneal	n=5
+49	c	M	crib-correction	n=1; retranchera eder
+50	c	S	crib-correction	n=3; 65 50 66 = och; retranchera
+51	i	S	anneal	n=22
+52	i	S	anneal	n=3
+53	i	M	crib-correction	n=1; her 53 72 68 73 78 70 72 78 26 32 = Johan Baner? (j=i)
+54	p	S	anneal	n=9
+55	a	M	anneal	n=2
+57	u	S	anneal	n=14
+58	v	M	crib-correction	n=1; 57 26 27 24 72 58 73 80 48 26 32 73 = vele advancera
+61	o	M	anneal	n=1
+62	u	S	crib-correction	n=15; 44 62 80 78 = kunne (x3), 20 26 47 26 32 ... 62 = eder numera
+63	o	M	anneal	n=1
+64	o	S	anneal	n=3
+65	o	S	anneal	n=25
+65''	o	S	crib-correction	n=7; 23 65'' 27 51 73 = följa; förste, tilförne (printed mark = ö)
+66	h	S	anneal	n=17
+68	h	S	anneal	n=4
+70	b	M	crib-correction	n=2; 70 51 26 27 44 26 = Bielke; 70 72 78 26 32 = Baner
+71	b	S	anneal	n=5
+72	a	S	anneal	n=41
+72°	a	S	crib-correction	n=3; 54 72° = på (på foten, påkomma); 72° 81 26 32 = åter (printed mark = å)
+73	a	S	anneal	n=22
+74	a	M	anneal	n=2
+75	g	S	anneal	n=13
+78	n	S	anneal	n=13
+80	n	S	anneal	n=36
+81	t	S	anneal	n=36
+82	t	S	anneal	n=14
+83	e	S	anneal	n=3
+93	w	M	anneal	n=1
+96	f	M	anneal	n=1
+99	a	M	crib-correction	n=2; advancera 99 100 det närmeste = åt det närmeste
+100	t	M	anneal	n=1

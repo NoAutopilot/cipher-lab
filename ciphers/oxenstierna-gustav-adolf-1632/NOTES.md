@@ -1,6 +1,6 @@
 # Oxenstierna, Gustav II Adolf to Axel Oxenstierna, Nürnberg 23 July 1632
 
-**Status: open**
+**Status: partial** (letter layer read cryptanalytically, grade S/M, 24 Sept 2026; 39 nomenclator codes and 38 printed letter-signs unread)
 
 ## Item
 
@@ -261,3 +261,76 @@ time, static project page, no search query submitted); `api.openalex.org` 1 (429
 `github.com` 2 shallow clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers, grepped, not committed);
 WebSearch 6; WebFetch 2 (`sok.riksarkivet.se/oxenstierna`, github wiki page). No logins, no credentials, no
 subagents, no decoding, no novelty wording, no promotion.
+
+## Image check, design, control and reading (LANE R worker R3, 24 September 2026)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-r-w1-solver.md`. Cryptanalytic result: no key source, no known plaintext.
+
+**Step 1, image over OCR.** Letter 602 runs over three printed pages, not two: p.821 = leaf n830, p.822 = n831,
+p.823 = n832 (the extraction note's "n831 = p.821" was off by one; n832 carries the last three cipher lines, the
+dateline and the editor's note on the item). Images in `images/` with `manifest.json` (sha1, size, URL). Every printed
+line was read against the image into `verified_lines.txt`; `build_verified.py` tokenises it and writes
+`ciphertext_verified.tsv`, recording each difference from `tokens.tsv` (column `change_from_ocr`, 24 rows). Changes
+that touch cipher tokens: `26.24` is two groups, 26 and 24 (printed with a stray dot); `11` is printed `ll`, a letter-sign
+(twice, 822.19 and 822.32); `1102 J` is `1102½`; `O` after "när" is a `0`; p.823 line 1 `33` is `32`, and line 2 `76` is
+`75`. The marks are kept: `65"` (7 times, reads ö) and `72°` (3 times, reads å) are distinct signs. The rest are
+clear-word OCR repairs (som, till, måge, sambla ...). Token counts: 733 numerals (694 of them ≤100, 59 values plus the
+two marked variants; 39 above 100, 30 values), 38 letter-signs (r, rr, nn, ee, gg, ll, u, d, aa, H, t, n, W, mm, 0),
+208 clear words. The editor's note on p.823 says the original is a "tripplet" (a triplicate copy) on a quarto leaf,
+with a "duplett" and a "triplett" to Gustaf Horn of the same day, meant to be read by the Chancellor too.
+
+**Step 2, design.** The numerals ≤100 are a letter cipher with light homophony: IoC 0.044 (plain Swedish is about
+0.064), the top 22 values carry 84% of the tokens, 17 values are hapax, and 26 alone is 12.4% (e). Runs of 1 to 39
+letter symbols sit between clear Swedish words with no word division. Repeated trigrams (47 26 32 ×7, 44 62 80 ×5,
+72 28 27 ×4) behave like Swedish letter strings. The groups above 100 (198-5152, 30 values, 3 repeat) break the letter
+runs where a name or word would stand: a nomenclator. The printed letter-signs (r, rr, nn ...) sit where signs stand
+in the manuscript; unread.
+
+**Step 3, matched control first.** `solve.py control`: letter 604 (Gustav Adolf to Oxenstierna, Nürnberg 1 Aug 1632,
+in his own hand, Swedish with Latin, same volume) laid onto the target's exact token layout (same 208 clear-word slots,
+same letters per run, one word per code or sign slot), enciphered with a homophonic key that copies the target's
+rank-frequency profile (61 letter values). Language model: the letter 4-gram model of `tools/subst_hillclimb.py`
+trained on the same volume's djvu text with letters 602 and 604 removed (å, ä → a; ö → o; i=j; u=v). The solver
+anneals value→letter maps (at most 6 values per letter) with the clear words fixed as context. It ran 8 restarts of 3M
+iterations, blind.
+Control: **98.0% of the 694 letter tokens correct** (solver −1.730 per token; the true key scores −1.741; a
+shuffled-ciphertext null scores −1.878). `control_result.json`.
+Target, same settings (`solve.py target`, `target_result.json`): best −1.599 per token against a shuffled null of
+−1.778. All 8 restarts land within −1.600 to −1.608, and the output is Swedish.
+
+**Reading.** `make_key.py` writes `key.tsv` from the annealed key plus 12 hand corrections, each from a crib in the
+solver's own output (listed with the crib in `make_key.py`: 62=u from "kunne" ×3, 50/49=c from "och" and
+"retranchera", 72°=å from "på foten", "påkomma", "åter", 65"=ö from "följa", "förste", 38=x from "bevuxen", 99=å from
+"advancera åt det närmeste", and so on). `decode.json` + `tools/decode_key.py . --check` regenerates `reading.txt` /
+`reading_tokens.tsv` and exits 0. Grades over 771 cipher tokens: **H 0, C 0, S 665, M 29, I 0, U 77** (S = letter
+value seen ≥3 times, the class the control reads; M = rarer values; U = the 39 codes and the 38 letter-signs, not read).
+Phrases that read clearly (normalised spelling): "icke mindre bakefter oss i ett godt positeur än här oppe"; "måge komma
+opå medh thet aldraförste"; "hvardera ett [code] complett"; "anhålla hos [code]"; "någen annen god officerer";
+"sambla någre [code]"; "både till att följa [code] på foten, så väl som till att resistera hvad som uhr [code]
+påkomma kan"; "eder numera [codes] tilsamman"; "vele advancera åt det närmeste"; "allting [code] långsampt";
+"medel som vij giorde vid Mitou [Mitau]"; "uhr det enare retrancherede"; "för än I veta hvar ... kunne antreffa";
+"deran lände eder retranchera kunne"; "allestedes är medh höglar bevuxen"; "behöfve till att retranchera eder
+allestädes rundt omkring"; "correspondere och flitige medh her Johan[?] Banér"; "kund göra oss hvad eder lider";
+"sakerna"; "Sparre ... stött"; "allenest [codes] i [code] stark"; "slette bussar"; "alla vara complette"; "desse
+höra en deel under Holcken, en deel under andra"; "deres ankompst"; "eder marche"; "avantage". In short, the King tells
+Oxenstierna to join forces with Banér and the others, to entrench wherever he halts on the march, and gives news of the
+enemy's regiments (Holk). Letter 601 of 21 July, in clear, gives the same orders ("at I sambla först ... ther fatta en
+god posto och eder retrenchere"). The name after "her" at 821.05 (`17 81 26 24 8 96 99 [205] 70 51 26 27 44 26`)
+reads "Stee.. [code] Bielke", probably Sten Bielke (named in letter 604), with 8 and 96 unresolved (M). Unresolved
+stretches (kept as the key gives them, graded by value count): "omlopalath", "mistaboetium", "som droged [code]
+tneder", "enore", "Tirskas", "befruell r stutta", "lw".
+
+**Not done / suggestions (one line each).** The 39 codes (30 values) need the key or a parallel text: the Horn
+"duplett"/"triplett" of the same day (REQUEST.md, Horn-Bielkesamlingen E 2348/E 2350) would give a second copy of the
+same codes. A second reader should settle the M stretches from context. The printed letter-signs need the manuscript
+(Riksarkivet), because the edition's r/rr/nn are its own stand-ins for signs.
+
+**Search log for LANE V (what the solver checked; no novelty classified).** Earlier workers' logs above: the edition's
+own footnote (the editor found no key); Konung Gustaf II Adolfs skrifter (Styffe 1861) does not print the letter;
+Irmer 1888 has one unrelated hit; WebSearch; Cryptiana, CATALOG.md and LANDSCAPE.md (0 hits); Bourdeau and Aymeloglu
+(no folder); DECODE through Aymeloglu's cached sweep (no row). sok.riksarkivet.se/oxenstierna sits behind a captcha and
+was not searched. Unreachable on 24 Sept 2026: OpenAlex, Semantic Scholar, DiVA, the Waldispühl paper. This session ran
+no new novelty search (brief: do not classify novelty). Phrases for the verifier's phrase search: "bakefter oss i ett
+godt positeur", "vid Mitou", "höglar bevuxen", "retranchera eder allestädes rundt omkring", "en deel under Holcken".
+
+**Requests this session:** archive.org 4 (3 page images, 1 djvu text), all 200, ≥2 s apart. No other host, no subagents, no logins.

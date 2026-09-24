@@ -1,0 +1,6 @@
+{"jobs": [{"ciphertext": "ciphertext_key.tsv", "key": "key.tsv", "reading": "reading.txt", "tokens": "reading_tokens.tsv",
+  "format": "tsv", "style": "concat", "unknown_values": [], "include_clear": true,
+  "header": ["# W1, Gustav II Adolf to Axel Oxenstierna, Nurnberg 23 July 1632 (Styffe no. 602): cryptanalytic reading",
+             "# (no key source, no known plaintext). Letter values from solve.py + make_key.py; codes and printed letter-signs unkeyed.",
+             "# Grades {HCSMIU}"],
+  "token_columns": [["line","line"],["pos","pos"],["sign","raw"],["value","value"],["grade","grade"]]}]}
