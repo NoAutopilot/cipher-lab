@@ -1423,6 +1423,14 @@
    "grade": "dataset: 749 tokens, 320 distinct letter+number codes; agrees with Bourdeau's fr.2988 f.9 transcription at 705 of 749 positions (94.1%)",
    "line": "Transcribed from Gallica images (fetched by LANE G2), compared with dbourdeau/cyphersolver vasto1527/n20 (ranzo_c017/c018, cited). The two copies give a second witness for the Ranzo code Bourdeau's annealer could not break; no decipherment attempted.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/decode-4450-bnf-fr20506-1525"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "negative",
+   "title": "Baluze 156 f.157-158 (DECODE R2754, 9 Feb 1636): Lasry's Sabran 1631 key does not read it, either half",
+   "grade": "negative with matched controls: numeral half 0/31 key hits vs shuffled-key control mean 19.1%; letter-symbol half 5.65 bits/char vs shuffle median 6.19 (6.8% of shuffles as good) and positive control 3.07",
+   "line": "Both halves of George Lasry's published Sabran (1631) key (Cryptiana GL.htm, cited) tested against the Gallica/DECODE images with controls; the letter is not in that key. Untested: the Farnese f.40 key, the fr.4135-4138 keys, a fresh solve.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/decode-2754-bnf-baluze156-1636"
   }
  ],
  "lanes": [
