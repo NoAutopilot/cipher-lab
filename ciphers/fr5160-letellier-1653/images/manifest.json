@@ -88,6 +88,12 @@
    "size": "3826x5356, 2383516 bytes; native NOT committed (folder near the 30 MB cap), re-fetch from the URL",
    "files_pattern": "crops/f88_cipher_top.jpg, crops/f88_cipher_bottom.jpg (canvas 172 native box x740-3230, y3150-3760 and y3700-4330); crops/f86_cipher_L13-L16_recrop.jpg (canvas 169 native box x1300-3400, y1620-2200)",
    "generated_by": "Opus reconciler+solver, no subagent"
+  },
+  {
+   "date": "24 Sept 2026 (this pass)",
+   "canvas": 173,
+   "file": "native/f173.jpg",
+   "content": "f.88 letter tail: 7 more cipher lines + [je][suis], then dateline/signature/docket (A Paris ce 21e nov. 1659, signed de Brienne, docket M. de Servien)"
   }
  ],
  "requests_this_pass": {

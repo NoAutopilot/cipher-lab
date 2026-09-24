@@ -1,0 +1,124 @@
+line	pos	group	conf	note
+L01	1	2	H
+L01	2	19	H
+L01	3	15	H
+L01	4	16	H
+L01	5	_16	M	overline present; could be decorative flourish rather than macron
+L01	6	_13	M	overline present; tail shape makes final digit ambiguous between 3 and 8
+L01	7	15	H
+L01	8	19	H
+L01	9	28	H
+L01	10	18	H
+L01	11	[.]	M	small mark after 18, likely a point/period separator, not fully certain it is punctuation vs ink dot
+L01	12	_6	M	overline above 6
+L01	13	_28	M	overline spans both digits
+L01	14	7	M	curly descender tail; scribe's 3 and 7 are similar here, chose 7 (tail loops down-right rather than closing back left)
+L01	15	20	H
+L01	16	2	H
+L01	17	7	L	heavy dark/blotted ink, possibly a correction or overwritten digit; shape mostly obscured, tentative read as 7
+L01	18	20	H
+L01	19	15	M	near right edge of crop; possible truncation, token may continue past crop boundary
+L02	1	20	M	small curl beneath the digits; may be decorative underline rather than part of the numeral
+L02	2	_17	M	overline above 17
+L02	3	2	H
+L02	4	10	H
+L02	5	_96	M	overline above group; second digit could be 6 or 8
+L02	6	_1	M	single digit with overline; could instead belong with following token as part of a longer group
+L02	7	71	H
+L02	8	19	H
+L02	9	_11	M	overline above 11
+L02	10	21	M	small squiggle/tilde above the group; unclear if this is an abbreviation mark or a flourish, not transcribed as overline since it looks wavy rather than straight
+L02	11	_7	M	overline above 7
+L02	12	64	H
+L02	13	9	H
+L02	14	2	H
+L02	15	18	H
+L02	16	111	L	written as a run of vertical strokes resembling "iii"/roman numeral shape; read as digit group 111 but could be a different 3-digit number or an abbreviation
+L02	17	40	H
+L02	18	15	M	near right edge of crop; possible truncation
+L03	1	70	H
+L03	2	15	H
+L03	3	20	H
+L03	4	19	H
+L03	5	_11	M	overline above 11
+L03	6	60	H
+L03	7	40	H
+L03	8	18	H
+L03	9	_20	M	overline above 20
+L03	10	15	H
+L03	11	_17	M	overline above 17
+L03	12	2	H
+L03	13	[car]	H	clear French word, plaintext
+L03	14	[ce]	H	clear French word, plaintext
+L03	15	[ne]	H	clear French word, plaintext
+L03	16	[peut]	M	clear French word, plaintext; near right edge of crop, final letters slightly compressed/possibly cut by crop boundary
+L04	1	_5	M	overline above 5
+L04	2	26	H
+L04	3	4	H
+L04	4	96	M	second digit ambiguous, could be 76 depending on how the first stroke's curl is read
+L04	5	20	H
+L04	6	_16	M	overline above 16
+L04	7	15	H
+L04	8	18	H
+L04	9	26	M	same first-digit ambiguity as pos 4 (could be 96); read as 26 here
+L04	10	60	H
+L04	11	62	H
+L04	12	2	H
+L04	13	71	H
+L04	14	21	H
+L04	15	96	M	same 9/7 ambiguity as above
+L04	16	60	H	line ends here at crop boundary; bottom crop begins a new manuscript line, not a continuation
+L05	1	71	M	curly tail; could be 72 or 21, chose 71 by analogy with other confirmed 71s on this line
+L05	2	20	H
+L05	3	19	H
+L05	4	7	H
+L05	5	71	M	same ambiguity as pos 1
+L05	6	4	H
+L05	7	53	H
+L05	8	_16	M	overline above 16
+L05	9	_7	M	overline above 7
+L05	10	16	H
+L05	11	40	H
+L05	12	7	H
+L05	13	19	H
+L05	14	_26	M	overline above 26
+L05	15	15	H
+L05	16	16	H
+L05	17	61	M	last two digits crowded together, could be 61 or 67; near right edge of crop, possible additional token hidden toward the gutter
+L06	1	76	M	could be 96, same 7/9 shape ambiguity noted elsewhere in this hand
+L06	2	23	H
+L06	3	_11	M	overline above 11
+L06	4	10	H
+L06	5	_16	M	overline above 16
+L06	6	45	H
+L06	7	21	H
+L06	8	35	M	could be 38, tail on second digit ambiguous
+L06	9	18	H
+L06	10	19	H
+L06	11	_3	M	overline above single digit; curly tail makes it possibly 7 instead, chose 3 (shorter tail, no closed descender loop)
+L06	12	7	H
+L06	13	21	H
+L06	14	_20	M	overline above 20
+L06	15	18	H
+L06	16	19	H
+L06	17	27	L	near right edge of crop, second digit partly cut off by crop boundary, low confidence
+L07	1	76	M	7/9 ambiguity as in L06 pos 1
+L07	2	78	H
+L07	3	18	H
+L07	4	71	M	ambiguity as elsewhere (71/21/72)
+L07	5	21	H
+L07	6	111	L	vertical-stroke group as in L02 pos 16, read as 111
+L07	7	77	M	doubled curly-tail digits hard to distinguish from 33 or 73; chose 77 by comparison with other confirmed 7s
+L07	8	18	H
+L07	9	73	M	second digit ambiguous between 3 and 7 (this scribe's curly tail issue)
+L07	10	15	H
+L07	11	20	H
+L07	12	19	H
+L07	13	_11	M	overline above 11
+L07	14	_8	M	overline above 8
+L07	15	18	H
+L07	16	9	H
+L07	17	_1	L	overline above single digit, at right edge of crop; token likely truncated, possible additional digit(s) hidden near the gutter/binding shadow
+L08	1	[je]	H	clear French, start of closing formula
+L08	2	[suis]	H	clear French
+L08	3	[,]	M	mark after "suis" reads as a comma with a small downward flourish; could alternatively be a paraph/pen flourish rather than true punctuation

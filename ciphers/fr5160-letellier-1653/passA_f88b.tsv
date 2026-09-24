@@ -1,0 +1,124 @@
+line	pos	group	conf	note
+L01	1	2	H
+L01	2	19	H
+L01	3	15	H
+L01	4	16	H
+L01	5	16	M	second of two similar "16" shapes in a row; could also be 76, kept as 16 for consistency with rest of line
+L01	6	13	M	curly tail on the 3 could read as 8; chose 13 by comparison with clearer 13-like shapes elsewhere
+L01	7	15	H
+L01	8	19	H
+L01	9	28	H
+L01	10	18	H
+L01	11	[.]	M	small mark after 18 read as a period; could be ink blot rather than punctuation
+L01	12	_6	M	overline present but faint; single digit under it
+L01	13	_28	H	clear overline over both digits
+L01	14	7	H
+L01	15	20	H
+L01	16	2	H
+L01	17	?	L	heavy dark ink mark/blot immediately after the "2"; not clearly a digit, possibly a struck-through token or a paraph/flourish; excluded from digit reading, flagged for image review
+L01	18	20	H
+L01	19	15	M	at right edge of top crop; may be truncated, possible additional stroke cut off by crop boundary
+L02	1	_20	M	small curl above the "2" of uncertain nature (accent vs. start of overline); overline over both digits read as present but faint
+L02	2	_17	H	clear overline
+L02	3	2	H
+L02	4	10	H
+L02	5	96	H
+L02	6	_7	M	overline over single digit, slightly short/uncertain
+L02	7	71	M	curly descender tail on first digit; could be 31 instead of 71, chose 71 by comparison with clear 7-shapes later in the line
+L02	8	19	H
+L02	9	_11	M	written as two narrow strokes "ii" with an overline; could be a single digit under overline rather than 11
+L02	10	_21	M	overline drawn as a curved/tilde-like stroke rather than a straight bar; digit shapes themselves clear
+L02	11	_7	M	second overlined "7" in this line, shape slightly different from #6, kept as 7
+L02	12	64	H
+L02	13	9	H
+L02	14	2	H
+L02	15	18	H
+L02	16	3	M	ambiguous curly descender-tailed digit, this scribe's hand makes 3 and 7 similar; chose 3 based on the tighter curl of the tail compared to the open hook of clear 7s in the line
+L02	17	40	H
+L02	18	15	M	at right edge of top crop, possibly truncated by crop boundary
+L03	1	70	H
+L03	2	15	H
+L03	3	20	H
+L03	4	19	H
+L03	5	_11	M	same "ii" plus overline shape as L02 pos 9
+L03	6	60	H
+L03	7	40	H
+L03	8	18	H
+L03	9	_20	H	clear overline
+L03	10	15	H
+L03	11	_17	H
+L03	12	2	H
+L03	13	[car]	H	clear French word, plain secretary hand
+L03	14	[ce]	H
+L03	15	[ne]	H
+L03	16	[peut]	M	clear word but crop cuts close at the right edge right after it; a further word or token may be hidden near the gutter, not visible in this crop
+L04	1	_5	H	overline clear, single digit
+L04	2	_26	H	overline over both digits
+L04	3	4	H
+L04	4	96	H
+L04	5	20	H
+L04	6	_16	H
+L04	7	15	H
+L04	8	18	H
+L04	9	96	H
+L04	10	60	H
+L04	11	62	H
+L04	12	2	H
+L04	13	71	M	same 7/3 ambiguity as elsewhere; chose 71 by shape comparison
+L04	14	21	H
+L04	15	96	H
+L04	16	60	M	near right edge of top crop; a faint top stroke of a possible further digit is visible right at the gutter shadow, not confidently a separate token so not transcribed
+L05	1	71	M	7/3 ambiguity, chose 71
+L05	2	20	H
+L05	3	19	H
+L05	4	7	H
+L05	5	71	M	7/3 ambiguity, chose 71
+L05	6	4	H
+L05	7	53	H
+L05	8	_16	H	overline clear
+L05	9	7	H
+L05	10	16	H
+L05	11	40	H
+L05	12	7	H
+L05	13	19	H
+L05	14	_26	H	overline clear
+L05	15	15	H
+L05	16	16	H
+L05	17	61	M	near right edge of bottom crop; possible further digit hidden at the gutter, not confidently legible
+L06	1	96	H
+L06	2	23	H
+L06	3	_11	M	same "ii" plus overline shape as earlier instances
+L06	4	10	H
+L06	5	_16	H
+L06	6	45	H
+L06	7	21	H
+L06	8	35	M	first digit has the curly descender tail; could be 75 instead of 35, chose 35 by comparison with the clearer 3-shapes in this line
+L06	9	18	H
+L06	10	19	H
+L06	11	_7	M	overline slightly faint
+L06	12	7	H
+L06	13	21	H
+L06	14	_20	H
+L06	15	18	H
+L06	16	19	H
+L06	17	27	M	near right edge of bottom crop, digit possibly truncated by crop boundary
+L07	1	96	H
+L07	2	78	H
+L07	3	18	H
+L07	4	71	M	7/3 ambiguity, chose 71
+L07	5	21	H
+L07	6	3	M	single ambiguous curly-tailed digit, chose 3 over 7
+L07	7	77	M	both digits share the curly descender tail typical of this scribe's 7s here; could alternatively be read 33 or 37, chose 77 by comparison with unambiguous 7s elsewhere in the line
+L07	8	18	H
+L07	9	73	M	second digit 3/7 ambiguous, chose 3
+L07	10	15	H
+L07	11	20	H
+L07	12	19	H
+L07	13	_11	M	same recurring "ii" plus overline shape
+L07	14	_8	H	overline clear over single digit
+L07	15	18	H
+L07	16	9	H
+L07	17	_18	M	right at the edge of the bottom crop where the gutter shadow begins; overline and second digit partly obscured, possible additional token cut off entirely
+L08	1	[je]	H
+L08	2	[suis]	H
+L08	3	[,]	M	comma-like mark after "suis"; could be a short flourish rather than true punctuation

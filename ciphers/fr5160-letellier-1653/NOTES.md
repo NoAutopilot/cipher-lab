@@ -762,3 +762,64 @@ grade C, with `ev_f86`/`ev_f88` columns (modal value count / occurrences in each
 Not done: canvas 173 (the rest of the f.88 cipher and its date); a hand-seeded f.88-only key (seeds from f.88's
 own repeats) would give a cleaner mirror than the unseeded run. No novelty wording, no class; that is for a
 verifier. Requests: none (no network). One Sonnet subagent.
+
+## Canvas 173 (24 Sept 2026)
+
+Access worker, LANE G. Fetched canvas 173 natively (`images/native/f173.jpg`, 3827x5356, one request, 200 on
+first try). This canvas is the tail of the f.88 letter: 7 more cipher lines (numeral groups) closing with the
+clear-French words "je suis," (start of the sign-off formula), then blank space, then the letter's own dateline,
+signature and docket, all on the same physical page — no key or alignment work done, per brief.
+
+### Date and signature
+
+Read directly by this worker (not a blind pass — plain secretary-hand French, not cipher): the dateline reads
+**"A Paris ce 21e nov[e] / 1659"** (crop `/tmp/f173_dateword2.jpg`, not committed, regenerable from
+`images/native/f173.jpg`), i.e. **21 November 1659** — independently confirming, from the letter's own closing
+dateline, the date already read from the f.87 decipherment heading ("Brienne du 21 9.bre 1659") in the prior
+pass. The signature block below it reads "[flourish] Vostre humble et tresh[umble] serviteur / de Brienne" —
+signed by (Loménie de) Brienne, the letter-book's author. A docket in a different hand at the foot of the page
+reads **"M. de Servien"** (crop `/tmp/f173_addressee.jpg`, not committed) — independent corroboration, from the
+manuscript itself, of LANE V's 04:30 UTC correction (AUDIT.md s.3, ROOM.md) that the 1659 letters in this
+dossier are addressed to a Servien, matching "Servien" rather than confirming which given name (Abel died Feb
+1659; the correction argues for Ennemond).
+
+### (1) Line crops
+
+Two crops, `images/crops/f173_cipher_{top,bottom}.jpg` (<=2400px wide, no overlap: top holds the first 4
+numeral lines, bottom the remaining 3 numeral lines plus the closing "je suis," line), following the same
+{top,bottom} convention used for f.88's own second reading.
+
+### (2) Two blind Sonnet passes (`passA_f88b.tsv`, `passB_f88b.tsv`)
+
+Two independent Sonnet subagents transcribed the two crops blind (neither saw the other's output, any existing
+transcription, key or note; each was told only the generic paleographic convention already established for this
+hand: a leading `_` for an overlined group, `[word]` for clear French). Both read 8 manuscript lines (L01-L07
+numeral, L08 = "je suis,") and landed on identical token counts, 123 each.
+
+**Token-level agreement: 107/123 = 87.0%** (line/pos/group compared exactly, overline prefix included) — in
+the same range as f.86's 91.5% and f.88's own second-reading 92.2%. 16 disagreements, all at points either
+pass already flagged as uncertain in its own notes, not new problems:
+- **Overline presence/absence** on an otherwise-agreed digit (5 cases: L01/5, L01/6, L02/1, L02/5, L04/2,
+  L05/9) — both passes read the same digits, differ on whether a stroke above them is a macron or a flourish.
+- **9/7 shape ambiguity** at the start of a group (3 cases, all the same pattern): L04/9 `96` vs `26`, L06/1
+  and L07/1 both `96` vs `76` — this scribe's 9 and 7 (and this scribe's 2) share a similar curled top stroke;
+  both passes flag it independently.
+- **The recurring curly descender-tailed digit** (this hand's 3/7 confusion, already documented for f.86/f.88):
+  L02/6 `_7` vs `_1`, L02/10 `_21` vs `21`, L06/11 `_7` vs `_3`, L07/17 `_18` vs `_1`.
+  L07/17 sits at the crop's right edge; pass A flagged truncation, pass B additionally shrank the group.
+- **"111"-shaped tokens** (2 cases, L02/16, L07/6): pass B independently read a token as a run of vertical
+  strokes resembling "iii"/roman numerals as the 3-digit group `111` in both places; pass A read the same
+  positions as the single ambiguous curly digit `3`. Both passes flag low confidence; this is a real
+  disagreement about segmentation (one token vs. three), not just glyph choice, and is the one item here that
+  looks like more than a legibility call — worth checking on the image before it goes in a key.
+- **L01/17**: the one token both passes flag as a heavy ink blot rather than a clean digit — pass A left it
+  unread (`?`), pass B tentatively read `7`.
+
+Not settled by eye and not reconciled into a single ciphertext_f88b.tsv or merged into `key_1659.tsv` — that is
+key/alignment work, out of scope for this brief (an Opus worker follows, matching the f.86/f.88 handoff
+pattern). No novelty wording, no class.
+
+### Requests this pass
+
+gallica.bnf.fr: 1 (canvas 173 native, 200 on first try). No other host. Two Sonnet subagents (the two blind
+passes only).
