@@ -5918,11 +5918,15 @@ push). WebSearch: 0 (not needed; Tomokiyo's pages and the shallow clone answered
 
 **Check-solved verdicts, 24 Sept 2026 (Sonnet, csKT worker, LANE N4, cap $5 for both rows):**
 
-- **KT-01 fr7129-villeroy-bongars-1604 — blocked (held by the LANE N4 orchestrator 21:27 UTC: Tomokiyo's Bongars cipher paper not read, M9 lesson; was: open).** Anquez 1887, *Henri IV et l'Allemagne* (Gallica `bpt6k213732d`,
-  full-text searched: "7129" 21 hits all cited folios, "268" 2 hits neither this volume, "novembre 1604" 5 hits
-  none this letter), letter absent. Fresh Bourdeau and Aymeloglu shallow clones, DECODE files on disk, and
-  general web search: no hit naming this letter as solved. Full detail and per-source log in
-  `ciphers/fr7129-villeroy-bongars-1604/NOTES.md`. Nomination posted below.
+- **KT-01 fr7129-villeroy-bongars-1604 — blocked (csBONG pass, 24 Sept 2026: Tomokiyo's Bongars cipher paper,
+  academia.edu/40982854, tried by OpenAlex, Semantic Scholar, Tomokiyo's own site, Cryptiana blog, HAL/
+  ResearchGate/Cryptologia landing pages and the Wayback Machine — unreachable by every route, 403 direct,
+  `web.archive.org` egress-blocked this session (HTTP 000); M9 lesson still applies, stays blocked, not open).**
+  Anquez 1887, *Henri IV et l'Allemagne* (Gallica `bpt6k213732d`, full-text searched: "7129" 21 hits all cited
+  folios, "268" 2 hits neither this volume, "novembre 1604" 5 hits none this letter), letter absent. Fresh
+  Bourdeau and Aymeloglu shallow clones, DECODE files on disk, and general web search: no hit naming this letter
+  as solved. Full detail and per-source log in `ciphers/fr7129-villeroy-bongars-1604/NOTES.md`. No nomination
+  (verdict is blocked, not open).
 - **KT-02 baluze103-letellier-marca-1644 — blocked, not open.** `sources/decode/records-decrypted-2026-09-24.tsv`
   (this lane's own DECODE sweep, files on disk, no login used) carries DECODE record **R2742**, shelfmark tag
   `BnF_Baluze103_f50`, sender "Le Tellier", 1644, status **Decrypted** — the tag matches this exact leaf and

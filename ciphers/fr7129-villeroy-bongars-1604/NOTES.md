@@ -2,7 +2,11 @@
 
 Status: blocked
 
-**Held by the LANE N4 orchestrator, 24 Sept 2026 21:27 UTC:** `blocked`, not `open`. Tomokiyo himself names this letter as solvable with Bongars' Cipher no.3, and his paper "Development of Ciphers under Henry IV of France: A Case of Jacques Bongars: 1590-1611" (academia.edu, 403 to this worker) was not read; the M9 lesson applies (the named source may already read this very letter). Bongars' printed Lettres (1668/1695) were also not opened. Needs the paper read (another route: Cryptologia/HAL/Tomokiyo's site PDF, or the owner) before open.
+**csBONG pass, 24 Sept 2026 21:5x UTC:** stays `blocked`. Tomokiyo's paper "Development of Ciphers under Henry IV
+of France: A Case of Jacques Bongars: 1590-1611" (academia.edu/40982854), which the M9 lesson requires be read
+before this letter can be called `open`, is not reachable by any route tried this pass. See "Tomokiyo's Bongars
+paper — route search" below for the full log. Bongars' printed *Lettres* (1668/1695) remain unopened (would need a
+copy, out of a copy-free lane's scope).
 Anquez 1887, *Henri IV et l'Allemagne d'après les mémoires et la correspondance de Jacques Bongars* (Gallica
 `bpt6k213732d`), full-text searched (Gallica ContentSearch) for "7129" (21 hits, all fr.7129 folios cited by
 Anquez in his narrative), "268" (2 hits, neither this volume), and "novembre 1604" (5 hits, none this letter)
@@ -38,6 +42,50 @@ No reading is offered anywhere on the page. Contrast the next item down, fr.7131
 Beaumont), which Tomokiyo tags "can be (for the most part) deciphered" with cipher no.3 — f.268 carries no
 such partial-reading language, only "can be deciphered", i.e. a claim about key applicability, not a claim
 that anyone has applied it.
+
+## Tomokiyo's Bongars paper — route search (csBONG, 24 Sept 2026)
+
+Job: read "Development of Ciphers under Henry IV of France: A Case of Jacques Bongars: 1590-1611" for what it
+says about this letter, by a route other than the academia.edu page (403 to two separate workers now: scTOMO's
+original check and this pass's own `WebFetch`, same result). Routes tried, all negative:
+
+1. **OpenAlex** (`Authorization: Bearer $OPENALEX_KEY`). `works?search=Development of Ciphers under Henry IV of
+   France Bongars` returns 2 results, neither Tomokiyo's paper (an unrelated Princeton book chapter, an unrelated
+   history-of-cryptography survey). `works?search=Tomokiyo Bongars cipher` returns 0 results. The paper is not
+   indexed in OpenAlex under any query tried.
+2. **Semantic Scholar** (`x-api-key: $S2_KEY`, >=1.1 s apart). `paper/search?query=Development of Ciphers under
+   Henry IV of France Bongars` returns 0 results. `author/search?query=Tomokiyo` finds Satoshi Tomokiyo
+   (authorId 83148217); his indexed paper list (`author/83148217/papers`) holds exactly 3 items — "How I
+   reconstructed a Spanish cipher from 1591" (Cryptologia 2018), "Identifying Italian ciphers from
+   continuous-figure ciphertexts (1593)" (Cryptologia 2018), "Deciphering Mary Stuart's lost letters from
+   1578-1584" (Cryptologia 2023, with Lasry and Biermann) — the Bongars/Henry IV paper is not among them. This
+   confirms the paper was never placed in a venue Semantic Scholar or Cryptologia's own index covers; it is an
+   academia.edu-only upload, not a published article with a second host.
+3. **Tomokiyo's own site.** `sources/cryptiana/PAPERS.tsv` (already on disk, built by an earlier pass) records
+   for this exact paper: "no (bongars.htm ... is a related but distinct catalogue article, not the same text)" —
+   i.e. cryptiana.web.fc2.com hosts no PDF or htm mirror of this paper, only the related-but-different catalogue
+   page already quoted above. `crypto.htm` (Tomokiyo's own index of his papers, in repo) links this paper's title
+   only to the same academia.edu URL, no alternate host.
+4. **Cryptiana blog.** WebSearch for `site:cryptiana.blogspot.com Bongars` surfaces one post, "Henry IV's Cipher
+   from 1590" (2020/08); fetched directly (`WebFetch`) and asked specifically for any mention of this letter,
+   its date, f.268, or Bongars' Cipher no.3 — none found; the post covers Maisse's Venice cipher instead, not
+   Bongars. No other blog post matched "Bongars" in search. No post after `bongars.htm`'s own date discusses
+   this letter.
+5. **HAL / ResearchGate / Cryptologia landing pages** (WebSearch). Two queries (`"Development of Ciphers under
+   Henry IV" Tomokiyo hal.science OR researchgate.net`; `Tomokiyo Bongars Cryptologia Jacques Bongars cipher
+   article`) return only the same academia.edu URL, Tomokiyo's academia.edu profile, and his three *actual*
+   Cryptologia articles (none is this paper) — no HAL, ResearchGate or Cryptologia hit for this title.
+6. **Wayback Machine.** `web.archive.org` is unreachable from this session at the transport level: every request
+   (CDX API for the academia.edu URL, a direct wayback snapshot URL via `WebFetch`, and a bare fetch of
+   `https://web.archive.org/`) returned `curl: (35) Recv failure: Connection reset by peer` / HTTP `000` via the
+   agent proxy (`ws_closed_mid_exchange`), including after the one permitted retry-after-pause — this is an
+   egress-level block (CLAUDE.md: "`000` means the egress policy blocks it"), not a site challenge, so no
+   further retries were made this pass.
+
+**Conclusion: the paper is not reachable by any route available to this worker.** It exists only as an
+academia.edu upload (403 to unauthenticated fetches) with no second host, no journal placement, and no archived
+snapshot reachable from this container. Verdict stays `blocked` per the M9 lesson (the paper is named as
+possibly deciding this letter and has still not been read) — this is not converted to `open`.
 
 ## Six sources + editions, 24 Sept 2026
 
@@ -88,9 +136,13 @@ the volume was run this pass (out of brief scope for a check-solved row — flag
 
 ## Verdict
 
-**open** — Anquez 1887 (the standard modern edition built specifically from BnF fr.7125-7132, the Bongars
-volumes) read by full-text search this pass, letter absent; Tomokiyo names it explicitly as undeciphered with
-no reading offered; no hit in Bourdeau, Aymeloglu, DECODE files on disk, or general web search.
+**blocked** — Anquez 1887 (the standard modern edition built specifically from BnF fr.7125-7132, the Bongars
+volumes) read by full-text search, letter absent; no hit in Bourdeau, Aymeloglu, DECODE files on disk, or
+general web search; but Tomokiyo's own Bongars paper (academia.edu/40982854), which he cites as the source for
+this letter's "can be deciphered" tag, is not reachable by any route tried (see "Tomokiyo's Bongars paper —
+route search" above) — per the M9 lesson, a verdict of `open` requires that paper to have been read, not merely
+searched around. Held `blocked` until the paper is read (the owner may be the only remaining route: a personal
+academia.edu login, or an email to Tomokiyo).
 
 Follow-up suggestion (not pursued, out of this brief's scope): a ±10-folio thumbnail scan of fr.7129 around
 f.268 for an unlisted duplicate or minute (Luzerne-rule sweep), and a look at fr.15571-73 (Villeroy's outgoing
