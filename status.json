@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026, 02:27 UTC",
+ "updated": "24 Sep 2026, 02:33 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -898,6 +898,192 @@
   {
    "when": "19 Sept",
    "what": "Repo set up: catalogue, landscape, lessons, conventions, two workflows."
+  }
+ ],
+ "results": [
+  {
+   "date": "24 Sept 2026",
+   "kind": "solve",
+   "title": "Gramont to Villandry, Rome, 20 May 1530 (BnF fr. 2980 f.29r)",
+   "grade": "N3, two audits; N4 pending",
+   "line": "A 569-sign cipher passage read with the published Gramont 1530 key: 538 signs valued, several lines continuous French, a blind second reader agreeing on 92 percent. No printed plaintext or decipherment located after two logged searches. Partial and still being tightened.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont"
+  },
+  {
+   "date": "20 Sept 2026",
+   "kind": "solve",
+   "title": "Eckert 1864: two telegrams, Fox to Butler and Meigs to Butler, 21-22 Apr 1864",
+   "grade": "N3, single audit",
+   "line": "Read at grade H from the surviving cipher book; not located in the Official Records, Butler's Correspondence or the naval records after the logged search. Their substance is in print through the replies, the telegrams themselves are not.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "reading",
+   "title": "Raince to Madame, Rome, 25 Oct 1525 (BnF Dupuy 452 ff.28-29)",
+   "grade": "N0, F0",
+   "line": "5,281 of 5,725 signs read with Tomokiyo's 1526 key from a two-pass transcription rebuilt by glyph clustering; Jacqueton printed it in 1892 from the decipherment at f.31. The reading stands as an independent check of the edition.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy452-carpi-1520"
+  },
+  {
+   "date": "23 Sept 2026",
+   "kind": "reading",
+   "title": "Ernst of Lüneburg and Joachim von Moltzan to François I, Zerbst, 24 Jan 1520 (BnF Dupuy 468 f.28)",
+   "grade": "N1, F1",
+   "line": "687 tokens read from the Latin cipher original with the leaf's own gloss and a 99.8 percent control; printed only in French translation in the Reichstagsakten (1896) from another manuscript. Nobody had linked the two.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy468-anhalt"
+  },
+  {
+   "date": "23 Sept 2026",
+   "kind": "reading",
+   "title": "Robert Bowes to Walsingham, 1583, eleven cipher fragments (BL Cotton Caligula C VII)",
+   "grade": "N1, F2",
+   "line": "A sign table reading 93 of 101 tokens as the names printed in Bowes's letter-book (1842). No key or mapping of this cipher had been published.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bowes-walsingham-1583"
+  },
+  {
+   "date": "20 Sept 2026",
+   "kind": "reading",
+   "title": "Eckert 1864: twenty ledger entries read from cipher book mssEC 41",
+   "grade": "H 20 of 20; 17 N1, 1 N1 (Lincoln), 2 N3",
+   "line": "Machine-readable Cipher No. 1 and No. 2 keys; every reading checked against print.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864"
+  },
+  {
+   "date": "23 Sept 2026",
+   "kind": "contribution",
+   "title": "Bowes 1583 sign table sent to S. Tomokiyo, who lists the item as unsolved",
+   "grade": "F2, sent",
+   "line": "Key table for the eleven fragments, with the audit log and the 1842 print it rests on.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/CONTRIBUTIONS.md"
+  },
+  {
+   "date": "23 Sept 2026",
+   "kind": "contribution",
+   "title": "Dupuy 468 f.28: catalogue correction sent to the BnF Département des Manuscrits",
+   "grade": "F1, sent",
+   "line": "The leaf catalogued as Anhalt 1515/16 is the cipher original of a letter the Reichstagsakten print from fr. 3897, dated 24 Jan 1520, from Lüneburg and Moltzan.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/CONTRIBUTIONS.md"
+  },
+  {
+   "date": "20 Sept 2026",
+   "kind": "contribution",
+   "title": "Eckert keys, 23 checked readings and the corpus-status finding offered to the Huntington Library",
+   "grade": "offered, reply pending",
+   "line": "The Zooniverse project never launched its decoding phase; the mechanical corpus pass is possible and was offered as an edition, not a solve.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1862"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "correction",
+   "title": "BnF Français 5160: the 47 ciphered letters are Brienne père et fils to Servien, not Michel Le Tellier",
+   "grade": "catalogue",
+   "line": "Gallica's own item description read against the scout's title.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "correction",
+   "title": "Gramont was bishop of Tarbes, not yet cardinal, on 20 May 1530",
+   "grade": "edition",
+   "line": "Created cardinal 8 June 1530; the BnF notice's title is the cataloguer's later one.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont"
+  },
+  {
+   "date": "23 Sept 2026",
+   "kind": "correction",
+   "title": "BnF Dupuy 452: two letters 'presque entièrement en chiffres', not nine",
+   "grade": "catalogue",
+   "line": "The finding aid names ff.20 and 28 only; the queue row was corrected before any order.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy452-carpi-1520"
+  },
+  {
+   "date": "23 Sept 2026",
+   "kind": "correction",
+   "title": "Orange to Nassau, 21 Sept 1572, is in Groen's tome III pp. 501-510, not tome IV pp. 501-506",
+   "grade": "edition",
+   "line": "Confirmed against DBNL and the Huygens database.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/orange-nassau-1572"
+  },
+  {
+   "date": "19 Sept 2026",
+   "kind": "correction",
+   "title": "Whitworth to Harley 1707-08: four of five 'undeciphered' items are already in print (Sbornik vols 39, 50) or deciphered in the same volume",
+   "grade": "catalogue",
+   "line": "Only one clause of f.108 is actually unread.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/whitworth-1707"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "catch",
+   "title": "Orange 1572: partial decipherment printed by Nepveu tot Ameyde in 1842, key table now machine-readable",
+   "grade": "F0",
+   "line": "Caught by the Huygens database before promotion; his key reads 867 of 913 groups.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/orange-nassau-1572"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "catch",
+   "title": "Morvillier 1546 (M9) read by Lasry 2023; Danzay 1557 three of four letters keyed by Tomokiyo",
+   "grade": "found-solved",
+   "line": "Both dropped before transcription.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/QUEUE.md"
+  },
+  {
+   "date": "23 Sept 2026",
+   "kind": "catch",
+   "title": "Seven queue rows shown solved or printed years ago: Randolph 1570, Charles I to Rupert 1645, Boswell 1628, Goring 1645, Sadler 1559, Anne 1711, Pallotto 1628",
+   "grade": "found-solved",
+   "line": "Diffed against fresh clones of both solver repositories (tools/solver_repo_diff.py).",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/QUEUE.md"
+  },
+  {
+   "date": "23 Sept 2026",
+   "kind": "catch",
+   "title": "Colbert 369 (Maisse register), Dupuy 111 (Sarpi), 1722 intercepts (SP 35), Erving 1807",
+   "grade": "found-solved",
+   "line": "Editions-first check-solved on the digitised and non-DECODE lanes.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/QUEUE.md"
+  },
+  {
+   "date": "23 Sept 2026",
+   "kind": "negative",
+   "title": "Sforza-Maino 1446 pair: clean negative with a matched control",
+   "grade": "closed-negative",
+   "line": "Four synthetic pairs of the same design read at 99 percent; the target did not, conditional on Bourdeau's draft transcription.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sforza-maino-1446"
+  },
+  {
+   "date": "23 Sept 2026",
+   "kind": "negative",
+   "title": "Burgess, The Master of Mysteries 1912: no third hidden message in eight families",
+   "grade": "closed-negative",
+   "line": "Both known messages recovered as the control.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/burgess-mysteries-1912"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Thurloe State Papers: 23 letters printed with their cipher groups, none in any list, five with reconstructed keys",
+   "grade": "lane opened",
+   "line": "Found by the printed-ciphertext detector over 274 editions (controls 2 of 2).",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/sources/ia-fulltext"
+  },
+  {
+   "date": "23 Sept 2026",
+   "kind": "dataset",
+   "title": "493 catalogue items with cipher that neither solver project names (TNA, BL, NRS, Gallica)",
+   "grade": "scout",
+   "line": "Nineteen scored, seven verified unsolved at stage 2.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/QUEUE.md"
+  },
+  {
+   "date": "23 Sept 2026",
+   "kind": "dataset",
+   "title": "tools/nomenclator_anneal.py, italian and latin n-gram models, solver_repo_diff.py, decode_neighbours_exclude.py",
+   "grade": "tools",
+   "line": "Reusable across targets; the annealer carries its own matched-control harness.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/tools"
   }
  ]
 }

@@ -103,6 +103,14 @@ n_blocked = sum(1 for t in d["targets"] if t["state"] == "blocked")
 n_requests = sum(1 for t in d["targets"] if t["stage"] == 5)
 n_you = sum(1 for t in d["targets"] if t["state"] == "you")
 n_solved = sum(1 for t in d["targets"] if t["state"] == "solved")
+results = d.get("results", [])
+KIND = {"solve": ("Unique solve", "k-solve"), "reading": ("Reading", "k-reading"), "contribution": ("Handed on", "k-contrib"), "correction": ("Correction", "k-corr"), "catch": ("Caught before spending", "k-catch"), "negative": ("Negative with control", "k-neg"), "dataset": ("Dataset or tool", "k-data")}
+rc = Counter(x["kind"] for x in results)
+n_unique = rc.get("solve", 0); n_readings = rc.get("reading", 0) + n_unique; n_handed = rc.get("contribution", 0); n_corr = rc.get("correction", 0) + rc.get("catch", 0)
+result_items = "".join(
+    f'<li><span class="rk {KIND[x["kind"]][1]}">{E(KIND[x["kind"]][0])}</span><div><div class="r-title">{E(x["title"])} <span class="muted">{E(x["grade"])}</span></div><div class="r-line">{E(x["line"])}</div><div class="r-meta"><span class="mono muted">{E(x["date"])}</span> · <a href="{E(x["link"])}">{E(x["link"].replace("https://github.com/NoAutopilot/cipher-lab/tree/main/", ""))}</a></div></div></li>'
+    for x in results
+)
 
 card_items = "".join(
     f'<li data-row="{E(m["slug"])}" id="ask-{E(m["slug"])}"><input type="checkbox" aria-labelledby="ask-what-{E(m["slug"])}"><div>'
@@ -191,6 +199,12 @@ th, td {{ text-align:left; padding:7px 10px; border-bottom:1px solid var(--line)
 .card input[type=checkbox] {{ width:20px; height:20px; margin-top:2px; accent-color:var(--good); cursor:pointer; }}
 .ask-what {{ font-weight:600; }} .ask-action {{ font-size:0.92rem; margin-top:2px; }} .ask-meta {{ font-size:0.8rem; color:var(--muted); margin-top:4px; }}
 .card-note {{ font-size:0.85rem; color:var(--muted); margin:8px 0 0; }}
+.results {{ list-style:none; margin:0; padding:0; display:grid; gap:10px; }}
+.results li {{ display:grid; grid-template-columns:150px 1fr; gap:12px; align-items:start; padding:10px 0; border-top:1px solid var(--line); }}
+.rk {{ font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; padding:3px 8px; border-radius:999px; white-space:nowrap; justify-self:start; margin-top:2px; }}
+.k-solve {{ background:var(--good-soft); color:var(--good); }} .k-reading {{ background:var(--info-soft); color:var(--info); }} .k-contrib {{ background:var(--warn-soft); color:var(--warn); }} .k-corr {{ background:var(--accent-soft); color:var(--accent); }} .k-catch {{ background:var(--idle-soft); color:var(--idle); }} .k-neg {{ background:var(--idle-soft); color:var(--idle); }} .k-data {{ background:var(--idle-soft); color:var(--idle); }}
+.r-title {{ font-weight:600; }} .r-line {{ font-size:0.92rem; margin-top:2px; }} .r-meta {{ font-size:0.8rem; margin-top:4px; }}
+@media (max-width:600px) {{ .results li {{ grid-template-columns:1fr; gap:4px; }} }}
 .ok {{ color:var(--good); font-weight:600; }} .mail {{ white-space:pre-wrap; font-family:inherit; font-size:0.92rem; background:var(--ground); padding:10px 12px; border-radius:4px; margin:8px 0; }}
 details summary {{ cursor:pointer; color:var(--accent); font-size:0.92rem; margin-top:6px; }} .copy {{ font:inherit; font-size:0.85rem; padding:4px 10px; border:1px solid var(--line); border-radius:4px; background:var(--surface); color:var(--ink); cursor:pointer; }}
 @media (prefers-reduced-motion: no-preference) {{ .seg {{ transition:background .2s; }} }}
@@ -205,7 +219,15 @@ details summary {{ cursor:pointer; color:var(--accent); font-size:0.92rem; margi
     <div class="tile"><div class="n">{n_active}</div><div class="l">Targets in motion</div><div class="sub muted">{E(holder_line)}; {n_blocked} blocked</div></div>
     <div class="tile"><div class="n">{n_requests}</div><div class="l">Archive requests out</div></div>
     <div class="tile"><div class="n">{n_you}</div><div class="l">Waiting on you</div></div>
-    <div class="tile"><div class="n">{n_solved}</div><div class="l">Solved</div></div>
+    <div class="tile"><div class="n">{n_unique}</div><div class="l">Unique solves</div><div class="sub muted">N3 or better, verified; {n_readings} readings with a class</div></div>
+    <div class="tile"><div class="n">{n_handed}</div><div class="l">Handed on</div><div class="sub muted">to a list keeper, a library or an archive</div></div>
+    <div class="tile"><div class="n">{n_corr}</div><div class="l">Corrections and catches</div><div class="sub muted">catalogue fixes; solved items caught before money was spent</div></div>
+  </section>
+
+  <section class="panel" id="results">
+    <h2>Results so far</h2>
+    <p class="how muted">Every kind the README counts: a unique solve is a reading a separate verifier classed N3 or better; a reading below that is still a checked text; a correction or a catch is a contribution to whoever keeps the catalogue; a negative with a matched control and a dataset handed on count too. Classes come only from each target's AUDIT.md.</p>
+    <ul class="results">{result_items}</ul>
   </section>
 
   <section class="panel" id="your-card">
