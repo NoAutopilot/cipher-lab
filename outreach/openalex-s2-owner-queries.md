@@ -1,4 +1,4 @@
-status: ready
+status: done 2026-09-24
 subject: Six open-index searches from your own machine (OpenAlex and Semantic Scholar refuse every cloud session today)
 to: you (no email; a browser on your machine)
 
