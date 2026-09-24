@@ -1,0 +1,49 @@
+{
+  "source": "reddit r/codes thread 18lz1b5, gallery images via oauth.reddit.com API + preview.redd.it",
+  "fetched_utc": "2026-09-24T21:22Z",
+  "note": "960px-wide preview renditions, not the 4000px originals (kept the folder under 5 MB); the original preview URLs (1080-4000px) are in jobA_thread.json request logged in NOTES.md if a full-resolution refetch is wanted later.",
+  "images": [
+    {
+      "file": "page1.jpg",
+      "reddit_media_id": "qp85bfomd87c1",
+      "source_url": "https://preview.redd.it/qp85bfomd87c1.jpg?width=960&crop=smart&auto=webp&s=3ba3ab1017f29d4cd2c6f270aca2950fdfecb409",
+      "size_bytes": 193932,
+      "gallery_order": 1
+    },
+    {
+      "file": "page2.jpg",
+      "reddit_media_id": "uol7nh3nd87c1",
+      "source_url": "https://preview.redd.it/uol7nh3nd87c1.jpg?width=960&crop=smart&auto=webp&s=b0d2154504064409ad8fa6330e36dcbcba9a4cb5",
+      "size_bytes": 206778,
+      "gallery_order": 2
+    },
+    {
+      "file": "page3.jpg",
+      "reddit_media_id": "skmi39ind87c1",
+      "source_url": "https://preview.redd.it/skmi39ind87c1.jpg?width=960&crop=smart&auto=webp&s=41438f1bd698b01d74b4632c4e221898765c54db",
+      "size_bytes": 125429,
+      "gallery_order": 3
+    },
+    {
+      "file": "page4.jpg",
+      "reddit_media_id": "vjssimvnd87c1",
+      "source_url": "https://preview.redd.it/vjssimvnd87c1.jpg?width=960&crop=smart&auto=webp&s=a33b40cc7a92478336fcb72bfc8533e91bd5d3da",
+      "size_bytes": 128219,
+      "gallery_order": 4
+    },
+    {
+      "file": "page5.jpg",
+      "reddit_media_id": "gdkfsaaod87c1",
+      "source_url": "https://preview.redd.it/gdkfsaaod87c1.jpg?width=960&crop=smart&auto=webp&s=d95c4600e45de66db6942c1541cfa939fb6f66ad",
+      "size_bytes": 107079,
+      "gallery_order": 5
+    },
+    {
+      "file": "page6.jpg",
+      "reddit_media_id": "mtts8smod87c1",
+      "source_url": "https://preview.redd.it/mtts8smod87c1.jpg?width=960&crop=smart&auto=webp&s=3b78bd645579c68092d2a00c1bf991bed7d2e1d3",
+      "size_bytes": 128999,
+      "gallery_order": 6
+    }
+  ]
+}
