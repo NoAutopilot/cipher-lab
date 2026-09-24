@@ -119,3 +119,8 @@ canvas	stamped_page	content	date	heading
 121	120	clear letter	-	"Sauf Conduit pour Les Deputez du Roy Catholique pour aller a Calais traicter la paix avec le Cardinal d'York Legat du pape Leon Xme" (new title + text, a safe-conduct document, signed "Francoys")
 125	124	clear letter	-	"Ratiffication des Articles accordez Entre Les Deputez a Calais" (new title + text, a ratification document)
 126	125	blank	-	mostly blank, faint offset close of document only
+127	126	clear letter	-	"Lettre Escrite au cardinal d'Yorc Legat pour les deputez a Calais" (new title + text)
+128	127	blank	-	mostly blank, faint offset of next title only
+129	128	clear letter	-	"Lettre du Resident du Roy aupres du Cardinal d'Yorc Legat sur les affaires de la paix adressée au secretaire d'Estat Robertet" (new title + text)
+130	129	clear letter	-	continuation/close, signed
+131	-	blank	-	back binding/flyleaf, faint address note "A Monseigneur Monsieur [illegible] Sedun...Tresorier de France" -- last canvas

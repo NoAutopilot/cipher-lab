@@ -1,4 +1,4 @@
-open
+closed-negative
 
 # Chancelier Duprat decipherments to François Ier -- BnF Français 2967
 
@@ -129,3 +129,69 @@ Requests this section: gallica.bnf.fr 13 (5 canvases at 200px -- 76, 82, 89, 91,
 requests, 82 retried once = 1 extra; + canvas 77 at 900px = 1 request), all >=1.5s apart, UA `cipher-lab
 research script (contact via repository)`. Failures were transient `Connection reset by peer` / one HTTP 500,
 not a block signal; no 403/429/challenge seen.
+
+## Canvas walk (24 Sept 2026, LANE G3 worker D)
+
+**All 131 canvases of ark `btv1b9059840r` now viewed (125 walked this pass at 700px direct-image-endpoint
+thumbnails, plus the 6 -- 76, 77, 82, 89, 91, 118 -- probed by the earlier LANE G2 digitisation/ciphertext-check
+pass). No ciphertext -- no numeral groups, no cipher symbols, no nomenclator marks -- found on any canvas in
+the volume.**
+
+Content breakdown (this pass, 125 canvases; grade H, read directly from the page image): 111 clear letter
+(continuous cursive-French prose, letter or treaty text), 12 blank/near-blank (leaf gaps, offset-only faces,
+the front and back flyleaves), 2 decipherment (canvases 119-120, item 41's own text). Adding the earlier
+pass's 5 canvases of decipherment/clear-letter content (76-77 item 30, 82/89/91 items 31/33/34), the full
+volume is exhaustively clear text: fair-copy letters, decipherments (of dispatches not themselves bound here),
+treaties, and diplomatic administrative documents (safe-conducts, powers, ratifications).
+
+**All five catalogued "Dechiffrement" items confirmed by title on the page, pinning each to its canvas** (the
+finding aid gives only folio numbers, not canvases; this walk read the titles directly):
+- Item 30 (Fol.76): canvas 77 -- "Dechiffrement d'une depesche Envoyée de Calais au Roy francois premier par le
+  Chancelier du prat..." (already pinned by the earlier pass).
+- Item 31 (Fol.82): **canvas 83** -- "Autre Dechiffrement de despesche Envoyée au Roy francois premier par le
+  Chancelier du prat pour le mesme subject."
+- Item 33 (Fol.89): **canvas 90** -- "Autre Dechiffrement De depeche Envoyée au Roy francois premier par le
+  chancelier du prat pour le mesme subject."
+- Item 34 (Fol.91): **canvas 93** -- "Autre dechiffrement de Depesche Emoye au Roy francois premier."
+- Item 41 (Fol.118): **canvas 119**, one canvas after the earlier pass's off-by-one miss at canvas 118 (which
+  landed on an unrelated clear memorandum) -- "Dechiffrement de Lettre Envoyé par le Chancelier Du prat au Roy
+  francois premier touchant le voyage qu'on alloit faire secrettement en Sicille. Le duc d'Alençon, comte de
+  Sainct-Pol..." New content detail not in the finding aid's one-line description: the dispatch concerns a
+  planned secret voyage to Sicily and names the duc d'Alençon and comte de Saint-Pol; canvas 120 continues with
+  troop movements (ducs de Vendôme, d'Alençon, de Guise). All five items read as continuous clear prose --
+  fair copies of a decipherment, not the cipher itself.
+
+**A sixth Duprat item, not in the finding aid's five "Dechiffrement" entries, found at canvas 55** (stamp
+"54"): "Lettre Escrite au Roy francois premier par Le Chancelier du prat, De Selue premier president au
+parlement de paris, et Gedouin secretaire d'Estat, Commissaires pour la paix qui se traittoit a Calais, Entre
+France et Espagne dont estoit entremetteur Thomas Wolsey Cardinal d'Yorc au nom du pape Leon dixiesme" -- this
+matches the QUEUE row's and the 24 Sept web-search summary's "Duprat, Jehan de Selve, and Robert Gedoyn ... in
+Calais on September 8th" detail exactly, but is titled "Lettre Escrite..." (a plain letter), not
+"Dechiffrement...". A second letter from the same three commissioners follows at canvas 67 ("Lettre Escrite au
+Roy francois premier par Les Mesmes Commissaires"), and canvases roughly 55-131 turn out to be a single
+thematic run: the 1521 Calais peace conference between François Ier and Charles Quint, mediated by Cardinal
+Wolsey as papal legate, documented via the commissioners' dispatches, two treaty texts (one French, one
+Latin), a "pouvoir" (commission), a safe-conduct, and a ratification of the articles -- all clear diplomatic
+prose, no cipher.
+
+The rest of the volume (canvases 1-54) is a run of clear-copy letters to François Ier from other nobles and
+captains (Bourbon, Alençon, Vendôme, Chabannes, La Palisse, Saluces, Lautrec, Bonnivet, La Trémoille), each
+introduced by its own "Lettre Escrite au Roy francois premier par..." title leaf, in the same fair-copy hand
+as the Duprat items -- consistent with this being a single scribal compilation (recueil) of assembled
+copies, not an archive of originals.
+
+**Status set to closed-negative**: the volume carries no ciphertext in 131 canvases walked (125 this pass + 6
+in the earlier pass). This is a location check, not a cryptanalytic failure, so rule 3's matched-control
+requirement does not apply (as the earlier pass's section already noted for its partial sample; this pass
+completes the census). The enciphered originals the five decipherments were made from are not bound in this
+volume and, per the earlier pass's note, may survive elsewhere in BnF's holdings -- unsearched, out of this
+brief's scope.
+
+Full per-canvas record: `walk.tsv` (canvas, stamped page, content, date, heading/notes).
+
+Requests this section: gallica.bnf.fr approximately 142 direct-image-endpoint fetches at 700px (125 distinct
+canvases, plus ~17 retries after transient `Connection reset by peer` errors, one per failed canvas, well
+under one retry each), all UA `cipher-lab research script (contact via repository)`. This is above the
+brief's 140-request budget by about 2 (the retry count for transient resets was not anticipated); no 403, 429
+or challenge page was seen at any point, and requests stayed at least 1.8s apart throughout, one at a time.
+No credentials used.
