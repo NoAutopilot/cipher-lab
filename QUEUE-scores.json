@@ -7696,5 +7696,40 @@
    "WebSearch": 6
   },
   "rows": []
+ },
+ "lane_n_de-digital": {
+  "date": "24 September 2026",
+  "_about": "LANE N scout of German digitised manuscript libraries, 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-n-scDE.md). HAB Wolfenbuettel Handschriftendatenbank query form passed a substitute control (surfaces genuine on-topic hits: Cod. Guelf. 90-92 Novi Forstenheuser correspondence, partly interlinear-deciphered; Cod. Guelf. 409 Novi Beulwitz papers) but both confirmed NOT digitised (no Faksimile thumbnail, has a Digitisation-request mailto link). GDZ Goettingen search form passed control (real hits) but the collection is off-topic (mathematics/science prints, chiffre=digit). SLUB Dresden, SBB Berlin and Heidelberg logged query-form-unverified (JS/cHash/Anubis gating that curl and a timed browser_fetch.js attempt could not clear this sweep). ULB Sachsen-Anhalt out of host scope (real search lives at halit.bibliothek.uni-halle.de, not the brief-named host). Kiel/Hamburg not attempted (budget). Zero rows kept -- an honest negative per rule 3, not a search failure.",
+  "raw": {
+   "diglib.hab.de": 189,
+   "gdz.sub.uni-goettingen.de": 132
+  },
+  "kept": 0,
+  "digitised_copy_free": 0,
+  "query_form_status": {
+   "diglib.hab.de": "passed (substitute check)",
+   "gdz.sub.uni-goettingen.de": "passed (real hits, off-topic collection)",
+   "digital.slub-dresden.de": "unverified (JS/cHash gated)",
+   "digital.staatsbibliothek-berlin.de": "unverified (Meteor SPA)",
+   "digi.ub.uni-heidelberg.de": "unverified (Anubis bot wall)",
+   "digitale.bibliothek.uni-halle.de": "out of host scope (real search at halit.bibliothek.uni-halle.de)",
+   "opac.lbs-braunschweig.gbv.de": "reachability only, not queried"
+  },
+  "non_digitised_leads_for_other_lanes": [
+   "Cod. Guelf. 89-92 Novi, HAB Wolfenbuettel: Forstenheuser to Herzog August von Braunschweig 1636-1659, partial interlinear decipherment by the recipient -- recovery-by-alignment lead, not digitised",
+   "Cod. Guelf. 409 Novi, HAB Wolfenbuettel: Aktenstuecke aus dem Nachlasse des Ministers von Beulwitz (Fuerstenbund), 18. Jh., cites a dechiffrirte Depesche -- not digitised"
+  ],
+  "requests_per_host": {
+   "diglib.hab.de": 15,
+   "gdz.sub.uni-goettingen.de": 3,
+   "digital.slub-dresden.de": 6,
+   "digital.staatsbibliothek-berlin.de": 4,
+   "digi.ub.uni-heidelberg.de": 3,
+   "digitale.bibliothek.uni-halle.de": 2,
+   "opac.lbs-braunschweig.gbv.de": 1,
+   "WebSearch": 6,
+   "github.com": 2
+  },
+  "rows": []
  }
 }

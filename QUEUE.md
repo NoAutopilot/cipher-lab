@@ -2631,3 +2631,74 @@ check (200) + 1 query attempt (Cloudflare/hCaptcha challenge). `ria.ie` / `www.r
 502). WebSearch: 7 queries. github.com: 1 shallow clone each of dbourdeau/cyphersolver and
 aaymeloglu/unsolved-ciphers, grep only, both deleted after. No credentials used, no subagents, never
 check-solved, never promoted.
+
+## German digitised manuscript libraries (LANE N scout of 24 September 2026)
+
+Hosts reached (egress-tested first, none blocked at 000): `diglib.hab.de` (200), `opac.lbs-braunschweig.gbv.de`
+(200, reachability only), `digital.staatsbibliothek-berlin.de` (200), `digital.slub-dresden.de` (307, follows),
+`digitale.bibliothek.uni-halle.de` (301, follows), `digi.ub.uni-heidelberg.de` (301, follows),
+`gdz.sub.uni-goettingen.de` (200). Kiel/Hamburg not attempted this sweep (budget).
+
+**Controls.** HAB's Handschriftendatenbank search (`?db=mss&q=TERM`) has no pre-known item from QUEUE.md,
+CATALOG.md, Tomokiyo or the solver repos to use as a named control (grepped both fresh shallow clones for
+`guelf`/`wolfenb` -- no hits beyond an already-solved Bellifortis gloss cited from scholarship, not from this
+search form). Substitute check, as the Ireland sweep used: the query genuinely surfaces on-topic manuscript
+descriptions, not noise -- `dechiffriert` returns three real 17th-c. diplomatic-correspondence volumes whose
+physDesc explicitly discusses cipher passages and partial interlinear decipherment (Cod. Guelf. 90-92 Novi),
+and `Chiffre` returns a real 18th-c. political-papers volume citing a "dechiffrirte Depesche in chiffre" (Cod.
+Guelf. 409 Novi). Logged as **passed (substitute check)**, per the rule that a host whose named-item control
+can't be run gets a logged substitute, not a skip. GDZ Göttingen's search (`/suche?search[q]=&search[searchType]=default`)
+returns real, correctly-matching full-text hits for both query terms -- **passed** -- but every hit is a 19th-
+20th c. mathematics/science journal where "chiffre" means digit, confirming the query mechanism works while
+also confirming the collection itself is off-topic for this brief (prints, not manuscript correspondence).
+SLUB Dresden, SBB Berlin and Heidelberg's search interfaces could not be driven to a results page this sweep
+(SLUB: TYPO3 `cHash`-gated, `browser_fetch.js` timed out filling the search box; SBB: Meteor SPA, curl returns
+only the client-side shell, `browser_fetch.js` timed out rendering results; Heidelberg: every `/diglit/` path,
+including `/diglit/search`, serves curl an Anubis bot-challenge page, matching CLAUDE.md's existing note that
+the IIIF manifest route works but the browse/search UI does not) -- all three logged **query form unverified**,
+not "no candidates." ULB Sachsen-Anhalt's named host (`digitale.bibliothek.uni-halle.de`) is a WordPress
+front page whose own search forms point to `bibliothek.uni-halle.de` and `halit.bibliothek.uni-halle.de` --
+neither is the host this brief names, so neither was queried (out of this worker's host scope); flagged for a
+brief that names `halit.bibliothek.uni-halle.de` explicitly.
+
+**Raw/kept/copy-free.** HAB: 189 raw hits across 7 query terms (1 Chiffre + 6 dechiffriert + 18 Geheimschrift +
+0 chiffriert + 147 Ziffern + 16 "in Ziffern geschrieben" + 0 for Chiffreschrift/verschluesselt/Chiffren
+combined), 2 genuinely on-topic manuscripts found (Forstenheuser correspondence Cod. Guelf. 89-92 Novi;
+Beulwitz papers Cod. Guelf. 409 Novi) but **both confirmed not digitised** (no Faksimile thumbnail on the
+record page; both carry a "Digitisation of ..." mailto request link, the pattern a known-digitised HAB record
+lacks -- verified against a confirmed-digitised sample from the `?db=mss&list=browse&id=digitised` date index).
+GDZ: 132 raw hits across 2 terms, 0 on-topic (all mathematics/science prints). SLUB/SBB/Heidelberg/Halle: 0
+reached this sweep. **Kept: 0. Copy-free: 0.** No DE rows filed (the DE1-DE20 prefix is reserved and unused).
+
+**Why zero, not a nomination anyway.** This brief's target is specifically material that is digitised with a
+public viewer and carries no decipherment beside it. Cod. Guelf. 89-92 Novi is a strong recovery-by-alignment
+lead in the LESSONS.md sense (a large multi-volume correspondence where the recipient's own interlinear
+decipherment survives for most, not all, of the cipher passages -- exactly the "sibling with a contemporary
+decipherment" pattern that has produced real solves elsewhere) but is out of scope for a copy-free/digitised
+scout; it is not nominated here and no copy order is requested (this brief does not authorise one). It is left
+in this section's raw file for a general (non-digitised-only) German scout or a copy-order lane to pick up.
+
+**Caveats.** (1) HAB's `Ziffern` false-positive rate (147 raw, ~0 on-topic in the sample checked) shows the
+term is too broad for this database; future HAB sweeps should lead with `dechiffriert`/`Geheimschrift`/`Chiffre`
+and skip `Ziffern` entirely. (2) The HAB "digitised" check (Faksimile thumbnail present/absent + presence of a
+"Digitisation of ..." mailto link) was applied to every genuine hit this sweep and is a reliable, cheap
+per-record signal -- worth adding to `tools/` if HAB is swept again. (3) GDZ's `searchType=default` (metadata
++ fulltext) surfaces real hits only through browser rendering (`browser_fetch.js`); a plain curl GET to `/suche`
+returns the empty SPA shell even with the query string set, because the results panel is client-rendered --
+the working recipe needs `search[searchType]=default` explicit in the URL, confirmed reproducible. (4) SLUB,
+SBB and Heidelberg all need either a longer `browser_fetch.js` timeout/retry budget than this sweep had, or a
+different access route (SLUB's `katalog.slub-dresden.de` SRU/library-catalogue endpoint, not yet tried; SBB
+likely has a documented REST API behind its Meteor frontend, not located this sweep) -- worth a dedicated
+retry with a larger time budget rather than more query terms on the hosts that did answer. (5) No item scored
+here was check-solved; this scout never promotes.
+
+**Per-host report:** `diglib.hab.de`: 9 search requests (paced >=1.6s) + 5 record-page fetches + 1 digitised-
+index sample fetch = 15 requests. `gdz.sub.uni-goettingen.de`: 1 curl reachability + 2 `browser_fetch.js`
+renders (Chiffre, Geheimschrift) = 3 requests. `digital.slub-dresden.de`: 1 reachability + 3 curl search
+attempts + 2 `browser_fetch.js` attempts (both timed out) = 6 requests. `digital.staatsbibliothek-berlin.de`:
+1 reachability + 2 curl (SPA shell) + 1 `browser_fetch.js` (timed out) = 4 requests. `digi.ub.uni-heidelberg.de`:
+1 reachability + 2 curl search attempts (Anubis) = 3 requests. `digitale.bibliothek.uni-halle.de`: 2 requests
+(home page, form-action discovery), no further queries (host out of scope). `opac.lbs-braunschweig.gbv.de`: 1
+reachability check only. WebSearch: 6 queries. github.com: 1 shallow clone each of dbourdeau/cyphersolver and
+aaymeloglu/unsolved-ciphers, grep only (`guelf`/`wolfenb`/`hab.de`), both deleted after. No credentials used,
+no subagents, never check-solved, never promoted.
