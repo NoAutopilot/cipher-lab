@@ -247,3 +247,53 @@ code per box id, so they compare row by row without alignment. Orchestrator's sc
 boxes where both read '_' excluded: lines 1-7, **base codes 131/156 = 84.0%**, with marks 125/156 = 80.1% (with the partial line 8:
 142/169 = 84.0%, 132/169 = 78.1%). Against the 80% gate on base codes this is a pass on seven lines, not yet on the page. Next: finish
 pass B (lines 8 pos 14 to the end) blind to pass A, recompute, settle disagreements from the strips (brief lane-r4-g).
+
+## Pass B finished and gate (24 Sept 2026, LANE R4 G)
+
+Worker G (Sonnet, cap $4, session_01Uyv6LetDKFhBPYZtneJEbf), 15:28-15:48 UTC. Finished pass B blind to passA2.tsv: from line 8
+pos 14 to the last box of f54r_boxlist_for_passes.tsv (line 19 pos 28), confirmed or corrected each box's code and marks from
+strips/, box by box, line by line, committing and pushing after every one-to-two lines (`passB2.tsv`, now 509 rows: the 505
+boxlist positions plus 4 split rows -- 2/14.5 and 3/3.5 from worker B's earlier partial pass B, 8/9.5 and 11/10.5 added this
+session where a single boxlist box visibly held two stacked signs). Disk only; no network fetches.
+
+**Gate.** `recon_box/` (script in the session scratchpad, not yet promoted to `tools/`): compared passA2.tsv and passB2.tsv by
+(line, pos) over all 505 shared boxlist positions, excluding the 129 where both passes read `_` (plain), per the NOTES
+precedent above. **Base code agreement: 314/376 = 83.5%.** With marks also required to match: 302/376 = 80.3%. **Gate (>=80%
+base) PASSES over the whole page**, consistent with the 84.0% measured on lines 1-7 alone before this session. Files:
+`recon_box/agreement.tsv` (315 rows), `recon_box/disagreements.tsv` (62 rows).
+
+**Settling.** All 62 disagreements were settled from the line strips (`recon_box/settled.tsv`: line, pos, source pass kept,
+chosen code, marks, one-line reason each). Two recurring patterns did most of the work rather than one-off judgement calls:
+(a) an angular hook shape that pass A read as `Z` and pass B read as `L` at four separate boxes (line5 pos4/10, line6 pos22,
+and by the same reasoning line6 pos3's S7); checked against the atlas plates, the shape is consistently the angular `L`
+cluster, not the wavy `Z` cluster -- settled `L` throughout. (b) A long run of boxes where pass A read plain `_` and pass B
+(this session) had already independently confirmed the *original script classifier's* code at high share (many at 1.00):
+lines 16 and 19 account for 19 of the 62 disagreements this way. Since the automated classifier and pass B agree independently
+or the classifier's own confidence was already low, agreement or disagreement was treated as a 2-votes-vs-1 majority rather
+than arbitrated by eye alone; settled toward the majority except two low-share (0.41-0.42) `Z` calls at line19 pos18/19 where
+pass B's own note had already flagged the shape as resembling a plain "n", so those settled plain. One genuine bookkeeping
+find: line13 pos15-21, where pass A's codes (H, a, e, S4, dl, p) each matched pass B's code one position *later* -- i.e. pass
+A's row for a box was shifted one early for a seven-box stretch. Checked against the boxlist's own per-box marks (`1|o` at
+pos16, `5` at pos17, `dot|+` at pos18, all share 1.00) against the image: pass B's own position-to-mark alignment matches
+exactly, so the whole stretch settled to pass B's alignment. Three disagreements read as plain Italian words/abbreviations in
+context and settled to pass A's plain call against pass B's coded guess: line1 pos5/6 ("Iano Ptr" in the letter's own opening
+per the leaf inventory above) and line3 pos20-22 (the sequence "quello ch. s . s ." following the legible word "quello").
+
+**Reading.** `ciphertext_f54r.tsv` (line, pos, code, marks, grade): 509 rows, grade `AB` (443, both passes agreed on the base
+code), `settled` (62, this session's arbitration), `B` (4, the split rows only pass B produced; no split rows existed only in
+pass A). **370 sign tokens across 36 distinct types** (`#,+,H,K,L,Lx,N,S,S4,S7,U,Z,[,],a,bh,ch,dl,e,eps,f,g,lam,m,nt,o.,p,phi,
+psi,rz,sq,tee,v,w,wd,y`), **139 boxes plain** (`_`, continuous Italian cursive words/abbreviations, not part of the atlas code
+book). Grades here mark provenance (both passes agreed vs. this session's settled arbitration vs. one pass only), not rule 4's
+H/C/S/M/I -- no key exists to test this reading against and no plaintext is claimed; this is a **transcription**, not a
+decipherment. Types/counts only, no solving attempted (out of this brief's scope).
+
+Cost: `get_session` on this worker's own session id never returned a `usage.cost_usd` field this run (a rate-limit-plan
+session, not per-token billing) -- self-monitoring fell back to line-by-line pacing and frequent pushes rather than a dollar
+readout; flagging for the lane orchestrator in case this is worth checking on other worker sessions before assuming the cap
+mechanism is working as briefed.
+
+Suggested follow-up (not attempted, out of this brief's scope): promote the box-keyed (line,pos) reconciliation script from
+the session scratchpad into `tools/` (it is generic to any target using the confirm/correct-per-box-id convention, distinct
+from `tools/reconcile_passes.py`'s line-crop alignment); a solver session could now test the 36-type code book and the
+superscript-numeral-on-sign pattern (flagged in the capture section above) against nomenclator conventions, now that a full
+settled transcription of f.54r exists.

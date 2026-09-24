@@ -1,0 +1,315 @@
+line	pos	code	marks_match	a_marks	b_marks
+1	13	[	True		
+1	14	bh	True		
+1	16	U	True		
+1	17	y	True		
+1	18	nt	True		
+1	19	[	True		
+1	20	bh	True		
+1	21	sq	True	ot	ot
+1	22	psi	True		
+1	23	lam	True	o	o
+1	24	eps	True	5	5
+1	26	[	True		
+2	1	rz	True		
+2	2	g	True	~	~
+2	3	m	True	~	~
+2	4	w	True		
+2	6	L	True		
+2	7	g	True	~	~
+2	8	o.	True		
+2	9	S7	True		
+2	10	lam	True	dot	dot
+2	11	S7	True	~	~
+2	12	e	True	#	#
+2	13	g	True	~	~
+2	15	K	True		
+2	17	]	True	o	o
+2	19	bh	True	dot	dot
+2	20	S7	True	+	+
+2	21	a	False	~	
+2	22	S7	True	~	~
+2	23	lam	True	~	~
+2	24	e	True	#	#
+2	25	wd	True		
+2	26	bh	True		
+2	27	K	True		
+2	28	Lx	True	#	#
+3	1	phi	True		
+3	2	]	True	o	o
+3	4	]	True	dot|o	dot|o
+3	5	S7	True	dot	dot
+3	7	e	True	dot	dot
+3	8	y	True		
+3	9	e	True	#	#
+3	13	g	False		7
+3	14	Z	True		
+3	15	S4	True		
+3	31	S4	True		
+4	1	phi	True		
+4	2	y	True		
+4	3	lam	True	1	1
+4	5	]	True	o	o
+4	6	g	True	~	~
+4	7	nt	True		
+4	8	S7	True		
+4	9	#	True		
+4	10	y	True	dot	dot
+4	11	nt	True		
+4	12	bh	True		
+4	13	w	True		
+4	14	e	False	dot	#
+4	15	Z	True		
+4	16	nt	True		
+4	18	bh	True	dot	dot
+4	19	S7	True	#	#
+4	20	m	True	~	~
+4	21	w	True		
+4	22	m	True	~	~
+4	23	lam	True		
+4	24	y	True		
+4	25	f	True		
+4	26	w	True		
+5	1	y	True		
+5	2	]	True	dot|o	dot|o
+5	3	S7	True	dot	dot
+5	5	]	True	o	o
+5	6	tee	True		
+5	7	f	True		
+5	8	w	True		
+5	9	bh	True		
+5	11	H	False	1	1|o
+5	13	S4	True		
+6	1	S4	True		
+6	2	nt	True		
+6	4	L	True		
+6	5	e	True	#	#
+6	6	[	True		
+6	7	S7	True		
+6	8	e	False	dot	+
+6	9	nt	True		
+6	10	bh	True		
+6	11	]	True	o	o
+6	13	]	True	ot	ot
+6	14	H	True	1	1
+6	16	w	True		
+6	17	y	True		
+6	18	m	False	1	
+6	19	tee	True		
+6	20	lam	True		
+6	21	rz	True		
+6	23	L	True		
+6	24	w	True		
+6	25	tee	True		
+6	26	[	True		
+6	27	nt	True		
+6	28	bh	True		
+7	1	]	True	dot|ot	dot|ot
+7	2	phi	True		
+7	3	U	True		
+7	4	w	True		
+7	5	bh	True		
+7	6	a	True	~	~
+7	8	bh	True		
+7	9	S7	True	#	#
+7	10	]	True	dot|o	dot|o
+7	11	g	True	~	~
+7	12	psi	True		
+7	13	lam	True	7	7
+7	15	S4	True		
+7	16	dl	True		
+7	17	lam	True		
+7	18	bh	True		
+7	19	S7	True	#	#
+7	20	e	True	+	+
+7	21	g	True	dot|~	dot|~
+7	23	[	True		
+7	24	bh	True		
+7	25	S7	True	#	#
+7	26	wd	True		
+7	27	y	True		
+7	28	sq	True	?	?
+7	29	Z	True		
+8	1	g	True		
+8	2	rz	False		~
+8	3	tee	True		
+8	4	S4	True		
+8	5	dl	False		dot|~
+8	6	Z	False	dot|~	
+8	7	eps	True	~	~
+8	8	g	True	~	~
+8	10	]	True		
+8	12	Z	False	7	7|ot
+8	13	a	True	~	~
+8	15	g	True	~	~
+8	16	psi	True		
+8	17	eps	True		
+8	18	w	True		
+8	19	nt	True		
+8	20	m	True	5	5
+8	21	]	True	ot	ot
+8	22	S4	True		
+8	23	dl	True		
+9	18	Lx	True		
+9	21	rz	True		
+9	23	S7	True		
+10	1	lam	True		
+10	2	S7	True	~	~
+10	3	lam	True		
+10	4	g	True	~	~
+10	5	psi	True		
+10	6	lam	True		
+10	7	lam	True		
+10	8	S	True		
+10	9	[	True		
+10	10	g	True		
+10	11	Z	True		
+10	12	]	True	o	o
+10	13	m	True	5	5
+10	14	nt	True		
+10	15	rz	True		
+10	16	nt	True	dot	dot
+10	18	]	True	o	o
+10	19	g	True		
+10	20	m	True	~	~
+10	21	g	True	7	7
+10	22	bh	True		
+10	23	S7	True		
+10	24	g	True	#|7	#|7
+10	25	lam	True		
+10	26	H	True	1|o	1|o
+11	3	U	True		
+11	4	g	True	~	~
+11	5	lam	True		
+11	6	S7	True	~	~
+11	7	e	False	#	
+11	8	m	True	~	~
+11	9	w	True		
+11	11	nt	True		
+11	12	rz	True		
+11	13	g	True	~	~
+11	15	lam	True		
+11	16	nt	True	~	~
+11	17	y	True		
+11	18	p	True		
+11	19	g	True	?	?
+11	20	y	True	7	7
+11	21	Z	True		
+11	22	]	True	dot|ot	dot|ot
+11	23	g	True		
+11	24	y	True	5	5
+11	25	S	True		
+11	26	]	True	ot	ot
+11	27	#	True	~	~
+11	28	S7	True	#	#
+12	4	Z	True	dot	dot
+12	5	nt	True		
+12	6	g	True	1	1
+12	7	a	True	~	~
+12	8	S7	True		
+12	9	lam	True		
+12	10	e	True	#	#
+12	11	wd	True		
+12	12	bh	True		
+12	13	K	True		
+12	15	tee	True		
+12	16	v	True	1	1
+12	17	y	True	5	5
+12	18	]	True	o	o
+12	19	rz	True		
+12	20	S7	True	+	+
+12	21	g	True	~	~
+12	22	lam	True		
+12	23	nt	True	~	~
+12	24	y	True		
+12	25	e	True		
+12	27	m	True	~	~
+12	28	g	True	7	7
+12	29	bh	True		
+13	1	rz	True	?|?|1	?|?|1
+13	3	g	True	dot	dot
+13	4	w	True		
+13	5	S7	True		
+13	6	o.	True		
+13	7	rz	True		
+13	8	g	True	1	1
+13	10	w	True		
+13	11	bh	True		
+13	12	Z	True	?	?
+13	13	g	True	~	~
+13	14	sq	True	~	~
+14	2	H	True	o|1	o|1
+14	3	]	True	ot	ot
+14	4	nt	True		
+14	5	rz	True		
+14	6	g	True	~	~
+14	7	g	True	~	~
+14	8	psi	True		
+14	9	Lx	True		
+14	11	lam	True	1	1
+14	12	]	True	o	o
+14	13	m	False	5	
+14	14	nt	True		
+14	15	rz	True		
+14	16	nt	True		
+14	17	phi	True		
+14	18	S7	True	#	#
+14	20	y	True		
+14	21	y	True		
+14	22	lam	True		
+14	23	S4	True		
+14	24	m	True		
+14	25	a	True		
+14	26	#	True		
+15	8	S4	True		
+15	9	e	True	dot|+	dot|+
+15	10	a	True	5	5
+15	11	e	True	#	#
+15	12	S7	True	dot|+	dot|+
+15	13	dl	True		
+16	16	eps	True	1|1	1|1
+16	24	eps	True		
+17	1	S	True		
+17	4	K	True		
+17	5	a	True	1	1
+17	6	S7	True		
+17	7	eps	True	1	1
+17	8	nt	True		
+17	9	Z	True		
+17	10	phi	True		
+17	11	]	True	o	o
+17	12	U	True		
+17	13	w	True		
+17	14	bh	True		
+17	15	m	True	5	5
+17	16	psi	True		
+17	17	lam	True		
+17	18	e	True	#	#
+17	19	wd	True		
+17	20	o.	True		
+17	21	e	True	dot|+	dot|+
+17	22	y	True	dot	dot
+17	23	S4	True		
+17	24	dl	True		
+18	2	v	True	dot	dot
+18	3	p	True		
+18	4	w	True		
+18	5	S4	True		
+18	6	e	True	dot|+	dot|+
+18	7	K	True		
+18	9	w	True		
+18	11	S7	True	#	#
+18	12	eps	True	5	5
+18	13	S7	True		
+18	14	L	True		
+18	15	w	True		
+18	16	a	True	~	~
+18	17	y	True		
+18	18	S	True		
+19	20	Lx	True		
+19	21	U	True		
+19	22	w	True		
+19	23	bh	True		
+19	24	a	True	~	~
+19	26	]	True	o	o
+19	27	e	True	ot	ot

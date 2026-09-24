@@ -1,0 +1,63 @@
+line	pos	a_code	a_marks	a_action	a_conf	b_code	b_marks	b_action	b_conf
+1	5	_		plain	L	g		correct	L
+1	6	_		plain	M	p		confirm	M
+1	10	_		plain	L	psi		confirm	M
+1	11	_		plain	L	+		confirm	M
+1	15	m		correct	H	rz		confirm	M
+1	25	dl		correct	M	nt		confirm	M
+2	14	_		confirm	L	y		correct	H
+2	16	_		confirm	L	sq		correct	L
+3	3	Z		confirm	M	nt		correct	M
+3	6	f		confirm	M	lam		correct	M
+3	10	_		confirm	L	o.		correct	M
+3	11	_		confirm	M	m		correct	M
+3	12	lam	7	confirm	L	_		delete	M
+3	20	_		plain	H	ch		confirm	H
+3	21	_		plain	H	S		confirm	M
+3	22	_		plain	H	S	#	confirm	M
+3	30	S4		correct	M	_		correct	L
+4	17	f		correct	M	S4		correct	M
+5	4	Z	dot|#	confirm	M	L		correct	M
+5	10	Z		confirm	M	L		correct	M
+6	3	Z		confirm	L	S7	+	correct	M
+6	22	Z		confirm	M	L		correct	M
+7	14	_		confirm	L	lam		correct	M
+7	22	_		confirm	L	#		correct	M
+7	30	_		confirm	L	m	~	correct	H
+8	9	Z		confirm	H	nt		correct	M
+8	11	nt		confirm	M	_		delete	M
+9	3	_	1	confirm	M	H	7	correct	M
+9	13	_		plain	L	tee		confirm	L
+9	14	_		plain	L	tee		confirm	M
+9	19	_	1	plain	M	g	dot	correct	M
+11	10	_		confirm	M	lam		correct	M
+13	15	H	1|o	confirm	H	tee		confirm	H
+13	16	a	5	confirm	H	H	1|o	confirm	H
+13	17	e	dot|+	confirm	H	a	5	confirm	M
+13	18	S4		confirm	H	e	dot|+	confirm	M
+13	19	dl		confirm	H	S4		confirm	H
+13	20	p		confirm	H	dl		confirm	M
+13	21	_		confirm	H	p		confirm	M
+13	25	_		plain	M	p		confirm	M
+15	18	_		plain	M	p		confirm	M
+15	21	_		plain	M	v		confirm	M
+15	22	_		plain	M	S		confirm	H
+16	6	_		plain	M	N		confirm	M
+16	10	_		plain	H	ch		confirm	M
+16	12	_		plain	H	p		confirm	M
+16	14	_		plain	M	N		confirm	M
+16	18	_		plain	H	a	dot	confirm	M
+16	21	_		plain	H	S		confirm	M
+16	22	_		plain	M	Lx		confirm	M
+16	23	_		plain	L	v		confirm	M
+16	26	_		plain	M	m		confirm	M
+19	2	_		plain	H	S		confirm	H
+19	3	_		plain	H	S		confirm	H
+19	4	_		plain	H	eps		confirm	H
+19	5	_		plain	H	+		confirm	M
+19	7	_		plain	M	tee		confirm	M
+19	8	_		confirm	H	S		confirm	M
+19	11	_		plain	M	N		confirm	M
+19	17	_		plain	H	ch		confirm	M
+19	18	_		plain	L	Z		confirm	L
+19	19	_		plain	L	Z		confirm	L

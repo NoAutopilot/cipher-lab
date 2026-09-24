@@ -1,0 +1,63 @@
+line	pos	source	code	marks	reason
+1	5	A	_		part of legible name "Iano" in the opening formula ("R.do Dnt Iano Ptr"); box is a loop-tail letter, not a coded sign
+1	6	A	_		part of legible "Ptr" in the opening formula
+1	10	B	psi		loop+tail shape matches psi atlas; pass B higher confidence (M vs L)
+1	11	B	+		clear cross shape, matches + atlas
+1	15	A	m		pass A higher confidence (H vs M); tall loop read as three-hump m
+1	25	B	nt		original script classification agreed with pass B (2 votes) against pass A's single correction
+2	14	B	y		wide hook shape matches y atlas; pass B higher confidence (H vs L)
+2	16	B	sq		squarish shape with vertical strokes, closest atlas match despite low confidence both ways
+3	3	B	nt		composite box (n+ over tail), top "n+" shape dominates the box, matches nt
+3	6	B	lam		tall A-shape matches lam atlas better than f
+3	10	B	o.		pass B higher confidence (M vs L)
+3	11	A	_		tiny separate mark, distinct from neighbouring pos12's clear g/m hump; not itself a full sign
+3	12	B	_		pass B's active delete determination (spurious mark) outweighs pass A's low-confidence confirm
+3	20	A	_		reads as plain abbreviation "ch." after the legible word "quello"; pass A's high confidence (H)
+3	21	A	_		reads as plain abbreviation "s." following pos20
+3	22	A	_		reads as plain abbreviation "s." (second occurrence), matching pos21's pattern
+3	30	A	S4		pass A higher confidence (M vs L); tall double-stroke shape within "desidera..." cluster
+4	17	B	S4		tall stroke with crossbar matches S4 atlas better than f
+5	4	B	L		clear angular hook shape matches L atlas, not wavy Z
+5	10	B	L		same angular hook shape as pos4, matches L not Z
+6	3	B	S7		thin numeral-shape with cross mark, pass B higher confidence (M vs L)
+6	22	B	L		same recurring angular-hook L-vs-Z confusion, settled as L (cf. line5 pos4/10)
+7	14	B	lam		tall A-like shape, pass B higher confidence (M vs L)
+7	22	B	#		clear hash/cross shape, pass B higher confidence (M vs L)
+7	30	B	m	~	small m-hump shape at line edge, pass B higher confidence (H vs L)
+8	9	B	nt		box holds two stacked signs (n+ over Z per pass B's detailed split); top sign is nt, bottom recorded separately as pos9.5=Z
+8	11	B	_		small mark belongs to neighbouring pos12's Z sign, not a separate sign (pass B's specific delete determination)
+9	3	B	H	7	isolated numeral-marked H shape, standalone, matches the letter's recurring superscript-numeral-H motif
+9	13	B	tee		original script classification already leaned tee (share 0.43); pass B agreed
+9	14	B	tee		original script classification already leaned tee (share 0.61); pass B agreed, higher confidence
+9	19	B	g	dot	original script already called this g (share 0.59); pass B agreed, only adjusting marks
+11	10	B	lam		pass B's detailed split (two-tier shape, top=lam, bottom recorded separately as pos10.5=S)
+13	15	B	tee		pass B's pos-to-shape alignment matches the boxlist's own high-confidence classification and specific marks (1|o at pos16, 5 at pos17, etc.); pass A's codes for pos15-21 appear shifted one position early
+13	16	B	H	1|o	see pos15 note: boxlist share=1.00 with marks 1|o matches pass B's direct visual read exactly
+13	17	B	a	5	see pos15 note: boxlist share=1.00 with mark 5 matches pass B
+13	18	B	e	dot|+	see pos15 note: boxlist share=1.00 with marks dot|+ matches pass B
+13	19	B	S4		see pos15 note: boxlist share=1.00 matches pass B
+13	20	B	dl		see pos15 note: boxlist share=1.00 matches pass B
+13	21	B	p		see pos15 note: boxlist share=1.00 matches pass B
+13	25	B	p		boxlist share=1.00 for p; pass B's visual read (loop shape, start of word "par...") matches
+15	18	B	p		original script confident (share 1.00); pass B agreed
+15	21	B	v		original script leaned v (share 0.58); pass B agreed, no stronger countervailing evidence
+15	22	B	S		original script confident (share 1.00); pass B agreed, higher confidence (H)
+16	6	B	N		original script fully confident (share 1.00); majority (script+pass B) over pass A alone
+16	10	B	ch		original script fully confident (share 1.00); majority over pass A
+16	12	B	p		original script fully confident (share 1.00); majority over pass A
+16	14	B	N		original script fully confident (share 1.00); majority over pass A
+16	18	B	a	dot	original script fully confident (share 1.00); majority over pass A
+16	21	B	S		original script fully confident (share 1.00); majority over pass A
+16	22	B	Lx		original script leaned Lx (share 0.66); majority over pass A, weaker confidence
+16	23	B	v		original script leaned v (share 0.53); majority over pass A, weaker confidence
+16	26	B	m		original script fully confident (share 1.00); majority over pass A
+19	2	B	S		original script fully confident (share 1.00); majority over pass A
+19	3	B	S		original script fully confident (share 1.00); majority over pass A
+19	4	B	eps		original script fully confident (share 1.00); majority over pass A
+19	5	B	+		original script leaned + (share 0.81); majority over pass A
+19	7	B	tee		original script leaned tee (share 0.61); majority over pass A, weak
+19	8	B	S		original script fully confident (share 1.00) despite pass A's high-confidence plain call; majority (script+pass B)
+19	11	B	N		original script fully confident (share 1.00); majority over pass A
+19	17	B	ch		original script fully confident (share 1.00); majority over pass A
+19	18	A	_		both passes' own confidence was already low (L) and pass B explicitly flagged this shape as resembling a plain "n" as much as Z; tie goes to the more cautious plain reading
+19	19	A	_		same reasoning as pos18: classifier itself very low-confidence (0.41), pass B flagged genuine ambiguity
