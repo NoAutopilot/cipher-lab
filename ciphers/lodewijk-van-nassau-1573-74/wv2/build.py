@@ -47,7 +47,7 @@ def build(nr):
         fix = {(r['line'], r['position']): r for r in csv.DictReader(open(st), delimiter='\t')}
         for r in rows:
             f = fix.get((r['line'], r['position']))
-            if f: r.update(sign=f['sign'], confidence='H', why='settled on image by W1: ' + f['why'])
+            if f: r.update(sign=f['sign'], confidence='H', why='settled: ' + f['why'])
     with open(f'{T}/ciphertext_{nr[1:]}.tsv', 'w', newline='') as fo:
         w = csv.DictWriter(fo, ['line', 'position', 'sign', 'confidence', 'alt', 'why'], delimiter='\t', lineterminator='\n')
         w.writeheader(); [w.writerow({k: r.get(k, '') for k in w.fieldnames}) for r in rows]

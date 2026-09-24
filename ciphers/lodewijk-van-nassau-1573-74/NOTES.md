@@ -504,3 +504,69 @@ print checked). Novelty not classified.
 Left: settle 5811 disagreements (318 rows in wv2/recon/05811/*/disagreements.tsv) on the image; pass A for 5810 and 4503
 (then `wv2/build.py`, add 04503 to KEYED); 5194 and 5797 untranscribed (band crops can be regenerated with a playwright
 screenshot of the page scaled 2x); 5799 and 4612 need a table recovery (cryptanalysis, a separate brief).
+
+## W2: 4503 pass A + build, 5811 settle attempt (LANE R2 worker W2, Sonnet, cap $5, 24 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-24-lane-r2-lodewijk-4503.md`. No subagents, no network this brief.
+
+**4503 p1 pass A.** Blind transcription from `images_wv2/04503_p1.jpg` (line ids matching passB's segmentation,
+L05-L22; the L01-L04 plaintext salutation was not transcribed, matching passB's own scope). Caveat on blindness:
+this worker read passB's line-numbering scheme (to match line ids for `tools/reconcile_passes.py`) before typing
+pass A's digit values; a genuinely independent second session did not exist for this pass, since the brief runs
+one Sonnet worker with no subagents. `wv2/recon/04503/04503_p1/agreement.tsv`: 272/274 positions agree (99.3%),
+2 disagreements (L07 pos10 85/65, L08 pos5 82/62) left at the reconciler's default (A's sign, M, alt=B) -- not
+settled, budget went to 5811 instead per the brief's priority. `04503` added to `wv2/build.py`'s KEYED set;
+`tools/decode_key.py --config decode_wv2.json --check` exits 0. `ciphertext_4503.tsv`: 237 tokens, I 7, M 219,
+U 11 (no H/C: every token carries confidence M from both passes, which suppresses the job's default_grade "C"
+per rule 4). Reads as continuous French ("...si pour estre bien mal possible d'assa[ult?]... les gens que je
+desire de envoyer pour vostre escorte, et toutesfois je crois que pour demain aurons quelque trente cinq ou
+trente six compaignies ensemble... et aussi quelque bon nombre... et pour tant encores je donne ordre de suis
+assures en jouir qu'on doibt en ceste ville, parquoy je vous prie me mander le plustost ou vous aves delibere de
+passer la riviere pour vous aller recevoir"), consistent with W1's spot sample. Search log: none (no print
+checked; not this brief's job, and rule 10 forbids calling it novel from this worker alone).
+
+**5811 disagreement settlement -- blocker found, partial result.** Tried "on the image" literally first: opened
+`images_wv2/05811_p{1,2,5}.jpg` (the only local copies -- 150dpi JPEG direct from the WVO PDF, no IIIF tiles, no
+higher-resolution source cached, and this brief has no network to refetch one) and attempted to eye-read a sample
+of the highest-scored disagreements (by a 4-gram French LM over this target's own tiny corpus, ~2.8k chars --
+see the rejected `/tmp/rank_impact.py` experiment: the score differences were too small and noisy at that corpus
+size to trust for single-digit resolution, e.g. margins under 0.2 nats/char on candidates like 44 vs 111). The
+eye-read did not reliably reproduce either pass's transcription at the disputed positions (secretary-hand 2-3
+digit numeral groups are only a few pixels wide at this resolution) -- concluded that literal glyph-level
+settlement of most of these 212 non-gap disagreements is not achievable from the material on disk, and said so
+rather than manufacture false-confidence H-grade calls.
+
+Two things *are* reliable without needing pixel-level reading, and `wv2/settle_05811.py` (script, rule 7,
+`--check` regenerates) applies them: (1) **structural** -- one candidate is not a valid `key.tsv` code at all
+(a run two Sonnet passes split differently), the other is: settle for the keyed one, no ambiguity (7 rows).
+(2) **cross-page corroboration** -- confirmed by eye that p5 is a parallel copy of p1+p2 (same salutation, same
+closing sentence, same date; W1's note). Aligning p1+p2's raw sign sequence against p5's with `difflib` (both
+directions) finds long literal sign-for-sign runs between two independently-reconciled documents; where a
+disagreement's position falls inside such a run and exactly one candidate matches the other document's
+independently-read sign there, that is real evidence from a second manuscript witness (not a coin flip --
+`difflib` only marks a run 'equal' when the surrounding context also lines up), so it is taken (34 rows). Both
+methods write to `wv2/settle_05811.tsv` (line, position, sign, why), which `wv2/build.py` applies exactly like
+the original four letters' settle files (grade lands as C after rebuild, same as their existing settled rows,
+not H -- this worker did not confirm any of these 41 by eye on the glyph itself).
+
+Rebuilt: `python3 wv2/build.py 05811` then `tools/decode_key.py --config decode_wv2.json`, both `--check` clean.
+`ciphertext_5811.tsv`: 1542 tokens, **C 616 (+34 from W1's 582), I 81, M 792 (-33), U 53 (-1)**. 41 of 314 listed
+disagreement rows settled (7 structural + 34 cross-page); 171 left M ("no structural or cross-page signal") and
+102 left as gaps (one pass has nothing at that line, mostly the p1 L01-L04 salutation passB never transcribed) --
+all individually logged in `wv2/settle_log_05811.tsv` with a reason, so the next worker does not re-attempt what
+already failed. Did not re-run the 4503 disagreement pair with this method (only 2 rows, low impact, out of the
+5811 budget).
+
+**What would actually move this**: a higher-resolution capture (the WVO PDF itself, not yet cached locally, may
+render at higher DPI than the 150dpi JPEGs in `images_wv2/`) or a proper crop tool (`tools/iiif_lines.py` needs
+IIIF, which this WVO source doesn't have) so a human or a model can see individual numeral groups at a legible
+size; failing that, extending the cross-page method to also check p1 against p2 directly (they may overlap in
+content near the page boundary) and, more speculatively, checking 4503/5810's already-keyed French runs for the
+same code groups recurring in 5811's still-M positions (the nomenclator repeats digits for common letters, so a
+"149 always decodes to a small set of consistent letters elsewhere" argument could settle more rows without new
+images).
+
+Search log: none (not this brief's job). Requests: 0 network (brief forbids it). No subagents. Files:
+`wv2/passA/04503_p1.tsv`, `wv2/build.py` (KEYED +04503, settle-file `why` string no longer says "by W1"),
+`ciphertext_4503.tsv`, `reading_4503*`, `wv2/recon/04503/`, `wv2/settle_05811.py`, `wv2/settle_05811.tsv`,
+`wv2/settle_log_05811.tsv`, `ciphertext_5811.tsv`, `reading_5811*`.

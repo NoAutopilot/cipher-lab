@@ -176,7 +176,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L13	22	104	H		agree
 05811_p1_L14	1	4	M		agree-flagged
 05811_p1_L14	2	85	M		agree-flagged
-05811_p1_L14	3	9	M	B:0	differ
+05811_p1_L14	3	9	H	B:0	settled: structural: 0 is not a valid key.tsv code
 05811_p1_L14	4	31	H		agree
 05811_p1_L14	5	81	M	B:82	differ
 05811_p1_L14	6	27	H		agree
@@ -196,7 +196,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L14	20	2	M	B:62	differ
 05811_p1_L14	21	38	H		agree
 05811_p1_L14	22	1	M	B:-	gap
-05811_p1_L14	23	85	M	B:185	differ
+05811_p1_L14	23	85	H	B:185	settled: structural: 185 is not a valid key.tsv code
 05811_p1_L15	1	70	H		agree
 05811_p1_L15	2	7	H		agree
 05811_p1_L15	3	14	M	B:104	differ
@@ -214,7 +214,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L15	15	26	H		agree
 05811_p1_L15	16	72	H		agree
 05811_p1_L15	17	62	M		agree-flagged
-05811_p1_L15	18	12	M	B:19	differ
+05811_p1_L15	18	12	H	B:19	settled: matches p5 parallel-copy alignment
 05811_p1_L15	19	102	H		agree
 05811_p1_L16	1	35	H		agree
 05811_p1_L16	2	62	H		agree
@@ -234,7 +234,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L16	16	31	H		agree
 05811_p1_L16	17	64	H		agree
 05811_p1_L16	18	37	H		agree
-05811_p1_L16	19	127	M	B:167	differ
+05811_p1_L16	19	127	H	B:167	settled: matches p5 parallel-copy alignment
 05811_p1_L17	1	11	H		agree
 05811_p1_L17	2	113	H		agree
 05811_p1_L17	3	37	H		agree
@@ -250,10 +250,10 @@ line	position	sign	confidence	alt	why
 05811_p1_L17	13	26	H		agree
 05811_p1_L17	14	9	H		agree
 05811_p1_L17	15	38	H		agree
-05811_p1_L17	16	37	M	B:57	differ
+05811_p1_L17	16	37	H	B:57	settled: matches p5 parallel-copy alignment
 05811_p1_L17	17	81	H		agree
 05811_p1_L17	18	22	H		agree
-05811_p1_L17	19	82	M	B:81	differ
+05811_p1_L17	19	82	H	B:81	settled: matches p5 parallel-copy alignment
 05811_p1_L17	20	27	H		agree
 05811_p1_L18	1	82	H		agree
 05811_p1_L18	2	2	H		agree
@@ -325,7 +325,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L21	9	81	H		agree
 05811_p1_L21	10	113	H		agree
 05811_p1_L21	11	84	H		agree
-05811_p1_L21	12	31	M	B:311	differ
+05811_p1_L21	12	31	H	B:311	settled: structural: 311 is not a valid key.tsv code
 05811_p1_L21	13	131	M		agree-flagged
 05811_p1_L21	14	52	H		agree
 05811_p1_L21	15	83	H		agree
@@ -365,7 +365,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L23	11	9	H		agree
 05811_p1_L23	12	105	H		agree
 05811_p1_L23	13	27	H		agree
-05811_p1_L23	14	89	M	B:384	differ
+05811_p1_L23	14	89	H	B:384	settled: structural: 384 is not a valid key.tsv code
 05811_p1_L23	15	37	H		agree
 05811_p1_L23	16	26	M		agree-flagged
 05811_p1_L23	17	135	H		agree
@@ -579,14 +579,14 @@ line	position	sign	confidence	alt	why
 05811_p2_L05	2	83	H		agree
 05811_p2_L05	3	22	H		agree
 05811_p2_L05	4	84	H		agree
-05811_p2_L05	5	98	M	B:82	differ
+05811_p2_L05	5	98	H	B:82	settled: matches p5 parallel-copy alignment
 05811_p2_L05	6	78	H		agree
 05811_p2_L05	7	81	H		agree
-05811_p2_L05	8	38	M	B:28	differ
+05811_p2_L05	8	38	H	B:28	settled: matches p5 parallel-copy alignment
 05811_p2_L05	9	84	H		agree
 05811_p2_L05	10	37	H		agree
 05811_p2_L05	11	27	H		agree
-05811_p2_L05	12	28	M	B:25	differ
+05811_p2_L05	12	28	H	B:25	settled: matches p5 parallel-copy alignment
 05811_p2_L05	13	37	H		agree
 05811_p2_L05	14	102	H		agree
 05811_p2_L05	15	38	H		agree
@@ -619,7 +619,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L07	6	6	H		agree
 05811_p2_L07	7	37	H		agree
 05811_p2_L07	8	21	H		agree
-05811_p2_L07	9	109	M	B:102	differ
+05811_p2_L07	9	109	H	B:102	settled: matches p5 parallel-copy alignment
 05811_p2_L07	10	22	H		agree
 05811_p2_L07	11	16	H		agree
 05811_p2_L07	12	37	H		agree
@@ -701,7 +701,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L11	16	62	H		agree
 05811_p2_L11	17	37	H		agree
 05811_p2_L11	18	113	H		agree
-05811_p2_L11	19	31	M	B:81	differ
+05811_p2_L11	19	31	H	B:81	settled: matches p5 parallel-copy alignment
 05811_p2_L12	1	22	H		agree
 05811_p2_L12	2	81	H		agree
 05811_p2_L12	3	120	H		agree
@@ -740,7 +740,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L13	19	2	H		agree
 05811_p2_L14	1	12	H		agree
 05811_p2_L14	2	81	H		agree
-05811_p2_L14	3	37	M	B:77	differ
+05811_p2_L14	3	37	H	B:77	settled: matches p5 parallel-copy alignment
 05811_p2_L14	4	112	H		agree
 05811_p2_L14	5	31	H		agree
 05811_p2_L14	6	123	H		agree
@@ -908,7 +908,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L04	19	22	M		agree-flagged
 05811_p5_L04	20	83	M		agree-flagged
 05811_p5_L04	21	70	M		agree-flagged
-05811_p5_L05	1	76	M	B:55	differ
+05811_p5_L05	1	76	H	B:55	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L05	2	84	M		agree-flagged
 05811_p5_L05	3	24	M		agree-flagged
 05811_p5_L05	4	54	M	B:94	differ
@@ -924,10 +924,10 @@ line	position	sign	confidence	alt	why
 05811_p5_L05	14	5	M	B:6	differ
 05811_p5_L05	15	104	M		agree-flagged
 05811_p5_L05	16	23	M		agree-flagged
-05811_p5_L05	17	63	M	B:83	differ
+05811_p5_L05	17	63	H	B:83	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L05	18	37	M		agree-flagged
 05811_p5_L05	19	81	M		agree-flagged
-05811_p5_L05	20	71	M	B:91	differ
+05811_p5_L05	20	71	H	B:91	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L05	21	38	M		agree-flagged
 05811_p5_L06	1	23	M		agree-flagged
 05811_p5_L06	2	8	M		agree-flagged
@@ -943,13 +943,13 @@ line	position	sign	confidence	alt	why
 05811_p5_L06	12	98	M		agree-flagged
 05811_p5_L06	13	81	M		agree-flagged
 05811_p5_L06	14	93	M		agree-flagged
-05811_p5_L06	15	64	M	B:84	differ
+05811_p5_L06	15	64	H	B:84	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L06	16	121	M		agree-flagged
 05811_p5_L06	17	81	M		agree-flagged
 05811_p5_L06	18	33	M		agree-flagged
 05811_p5_L06	19	83	M		agree-flagged
 05811_p5_L06	20	90	M	B:80	differ
-05811_p5_L06	21	82	M	B:80	differ
+05811_p5_L06	21	82	H	B:80	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L06	22	2	M		agree-flagged
 05811_p5_L07	1	88	M		agree-flagged
 05811_p5_L07	2	85	M	B:87	differ
@@ -1041,7 +1041,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L11	8	104	M		agree-flagged
 05811_p5_L11	9	4	M		agree-flagged
 05811_p5_L11	10	89	M	B:80	differ
-05811_p5_L11	11	9	M	B:6	differ
+05811_p5_L11	11	9	H	B:6	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L11	12	31	M		agree-flagged
 05811_p5_L11	13	82	M		agree-flagged
 05811_p5_L11	14	27	M		agree-flagged
@@ -1065,7 +1065,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L12	9	4	M		agree-flagged
 05811_p5_L12	10	82	M		agree-flagged
 05811_p5_L12	11	11	M		agree-flagged
-05811_p5_L12	12	62	M	B:82	differ
+05811_p5_L12	12	62	H	B:82	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L12	13	25	M	B:29	differ
 05811_p5_L12	14	32	M		agree-flagged
 05811_p5_L12	15	104	M		agree-flagged
@@ -1073,7 +1073,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L12	17	80	M		agree-flagged
 05811_p5_L12	18	81	M		agree-flagged
 05811_p5_L12	19	119	M		agree-flagged
-05811_p5_L12	20	81	M	B:80	differ
+05811_p5_L12	20	81	H	B:80	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L12	21	28	M		agree-flagged
 05811_p5_L12	22	92	M		agree-flagged
 05811_p5_L12	23	82	M		agree-flagged
@@ -1109,9 +1109,9 @@ line	position	sign	confidence	alt	why
 05811_p5_L14	7	81	M		agree-flagged
 05811_p5_L14	8	32	M		agree-flagged
 05811_p5_L14	9	20	M		agree-flagged
-05811_p5_L14	10	9	M	B:0	differ
+05811_p5_L14	10	9	H	B:0	settled: structural: 0 is not a valid key.tsv code
 05811_p5_L14	11	38	M		agree-flagged
-05811_p5_L14	12	37	M	B:39	differ
+05811_p5_L14	12	37	H	B:39	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L14	13	81	M		agree-flagged
 05811_p5_L14	14	22	M		agree-flagged
 05811_p5_L14	15	82	M		agree-flagged
@@ -1152,7 +1152,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L16	5	62	M		agree-flagged
 05811_p5_L16	6	38	M		agree-flagged
 05811_p5_L16	7	8	M	A:-	gap
-05811_p5_L16	8	839	M	B:39	differ
+05811_p5_L16	8	39	H	B:39	settled: structural: 839 is not a valid key.tsv code
 05811_p5_L16	9	29	M	B:27	differ
 05811_p5_L16	10	24	M		agree-flagged
 05811_p5_L16	11	84	M		agree-flagged
@@ -1220,7 +1220,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L19	6	30	M		agree-flagged
 05811_p5_L19	7	82	M		agree-flagged
 05811_p5_L19	8	28	M		agree-flagged
-05811_p5_L19	9	89	M	B:85	differ
+05811_p5_L19	9	89	H	B:85	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L19	10	9	M		agree-flagged
 05811_p5_L19	11	109	M	B:100	differ
 05811_p5_L19	12	29	M		agree-flagged
@@ -1295,7 +1295,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L22	12	93	M	B:83	differ
 05811_p5_L22	13	2	M		agree-flagged
 05811_p5_L22	14	31	M		agree-flagged
-05811_p5_L22	15	92	M	B:02	differ
+05811_p5_L22	15	92	H	B:02	settled: structural: 02 is not a valid key.tsv code
 05811_p5_L22	16	39	M		agree-flagged
 05811_p5_L22	17	28	M		agree-flagged
 05811_p5_L22	18	28	M	B:26	differ
@@ -1329,7 +1329,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L24	6	84	M		agree-flagged
 05811_p5_L24	7	114	M		agree-flagged
 05811_p5_L24	8	82	M		agree-flagged
-05811_p5_L24	9	27	M	B:29	differ
+05811_p5_L24	9	27	H	B:29	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L24	10	90	M		agree-flagged
 05811_p5_L24	11	22	M		agree-flagged
 05811_p5_L24	12	92	M	B:82	differ
@@ -1354,7 +1354,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L25	10	38	M		agree-flagged
 05811_p5_L25	11	81	M		agree-flagged
 05811_p5_L25	12	2	M		agree-flagged
-05811_p5_L25	13	37	M	B:39	differ
+05811_p5_L25	13	37	H	B:39	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L25	14	90	M		agree-flagged
 05811_p5_L25	15	121	M		agree-flagged
 05811_p5_L25	16	104	M		agree-flagged
@@ -1367,7 +1367,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L26	1	84	M		agree-flagged
 05811_p5_L26	2	38	M		agree-flagged
 05811_p5_L26	3	8	M		agree-flagged
-05811_p5_L26	4	37	M	B:39	differ
+05811_p5_L26	4	37	H	B:39	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L26	5	28	M		agree-flagged
 05811_p5_L26	6	119	M		agree-flagged
 05811_p5_L26	7	84	M		agree-flagged
@@ -1381,7 +1381,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L26	15	2	M		agree-flagged
 05811_p5_L26	16	33	M		agree-flagged
 05811_p5_L26	17	17	M		agree-flagged
-05811_p5_L26	18	38	M	B:28	differ
+05811_p5_L26	18	38	H	B:28	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L26	19	81	M		agree-flagged
 05811_p5_L26	20	99	M		agree-flagged
 05811_p5_L26	21	81	M		agree-flagged
@@ -1427,13 +1427,13 @@ line	position	sign	confidence	alt	why
 05811_p5_L28	18	31	M		agree-flagged
 05811_p5_L28	19	90	M		agree-flagged
 05811_p5_L28	20	82	M		agree-flagged
-05811_p5_L28	21	113	M	B:11	differ
+05811_p5_L28	21	113	H	B:11	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L29	1	102	M		agree-flagged
 05811_p5_L29	2	90	M		agree-flagged
 05811_p5_L29	3	83	M		agree-flagged
 05811_p5_L29	4	22	M		agree-flagged
 05811_p5_L29	5	84	M		agree-flagged
-05811_p5_L29	6	98	M	B:88	differ
+05811_p5_L29	6	98	H	B:88	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L29	7	98	M		agree-flagged
 05811_p5_L29	8	81	M		agree-flagged
 05811_p5_L29	9	38	M		agree-flagged
@@ -1441,7 +1441,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L29	11	37	M		agree-flagged
 05811_p5_L29	12	29	M		agree-flagged
 05811_p5_L29	13	28	M		agree-flagged
-05811_p5_L29	14	37	M	B:39	differ
+05811_p5_L29	14	37	H	B:39	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L29	15	102	M		agree-flagged
 05811_p5_L29	16	38	M		agree-flagged
 05811_p5_L29	17	32	M		agree-flagged
@@ -1477,7 +1477,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L31	2	8	M		agree-flagged
 05811_p5_L31	3	37	M		agree-flagged
 05811_p5_L31	4	21	M		agree-flagged
-05811_p5_L31	5	109	M	B:100	differ
+05811_p5_L31	5	109	H	B:100	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L31	6	22	M		agree-flagged
 05811_p5_L31	7	18	M		agree-flagged
 05811_p5_L31	8	37	M		agree-flagged
@@ -1509,7 +1509,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L32	11	90	M		agree-flagged
 05811_p5_L32	12	8	M	A:-	gap
 05811_p5_L32	13	8	M		agree-flagged
-05811_p5_L32	14	117	M	B:119	differ
+05811_p5_L32	14	117	H	B:119	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L32	15	118	M		agree-flagged
 05811_p5_L32	16	91	M	B:81	differ
 05811_p5_L32	17	104	M		agree-flagged
@@ -1529,7 +1529,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L33	7	8	M		agree-flagged
 05811_p5_L33	8	37	M		agree-flagged
 05811_p5_L33	9	28	M		agree-flagged
-05811_p5_L33	10	37	M	B:39	differ
+05811_p5_L33	10	37	H	B:39	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L33	11	101	M		agree-flagged
 05811_p5_L33	12	81	M		agree-flagged
 05811_p5_L33	13	1	M		agree-flagged
@@ -1542,7 +1542,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L33	20	92	M	B:82	differ
 05811_p5_L33	21	112	M		agree-flagged
 05811_p5_L33	22	92	M	B:82	differ
-05811_p5_L33	23	12	M	B:19	differ
+05811_p5_L33	23	12	H	B:19	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L34	1	21	M		agree-flagged
 05811_p5_L34	2	8	M		agree-flagged
 05811_p5_L34	3	14	M		agree-flagged
@@ -1557,7 +1557,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L34	12	81	M		agree-flagged
 05811_p5_L34	13	89	M		agree-flagged
 05811_p5_L34	14	92	M	B:82	differ
-05811_p5_L34	15	37	M	B:39	differ
+05811_p5_L34	15	37	H	B:39	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L34	16	113	M		agree-flagged
 05811_p5_L34	17	31	M		agree-flagged
 05811_p5_L34	18	22	M		agree-flagged
@@ -1586,7 +1586,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L35	20	37	M		agree-flagged
 05811_p5_L36	1	101	M		agree-flagged
 05811_p5_L36	2	81	M		agree-flagged
-05811_p5_L36	3	37	M	B:39	differ
+05811_p5_L36	3	37	H	B:39	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L36	4	112	M		agree-flagged
 05811_p5_L36	5	49	M		agree-flagged
 05811_p5_L36	6	16	M		agree-flagged
@@ -1595,7 +1595,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L36	9	2	M		agree-flagged
 05811_p5_L36	10	12	M		agree-flagged
 05811_p5_L36	11	81	M		agree-flagged
-05811_p5_L36	12	37	M	B:39	differ
+05811_p5_L36	12	37	H	B:39	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L36	13	112	M		agree-flagged
 05811_p5_L36	14	31	M		agree-flagged
 05811_p5_L36	15	123	M		agree-flagged
