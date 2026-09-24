@@ -124,3 +124,38 @@ no comparison can be made. Deferred to whoever pins the canvas.
 
 Requests this section: gallica.bnf.fr 8 (1 manifest re-fetch, 2 ContentSearch, 5 image previews at 1000px:
 f130, f137, f144, f250, f300, all 200 on first try, >=1.5s apart). No other host.
+
+## Step-10 thumbnail sweep (24 Sept 2026, LANE G2 worker T)
+
+Sampled canvases 1,11,21,...,311 (32 canvases, step 10 across all 316) at 200px, then f311 again at 800px.
+29/32 fetched; f11, f131, f221 each failed twice (`Connection reset by peer`, transient) and were not retried
+further (one-retry-per-URL rule). Built a contact sheet (not committed, scratchpad only) to eyeball all 29 at
+once instead of 29 separate reads.
+
+**Result: still not pinned, but the sweep narrows where to look.** Canvases 21,31,41,51,61,71,81,91,101,111,
+121,141,151,161,171,181,191,201,211,231,241,251,261,271,281,291,301 are all **printed** matter (title pages,
+factums, pamphlets, ordinances -- confirms worker P's "printed items interspersed" reading over a much wider
+span than P's 5 probes covered). Canvas 1 is Gallica's own placeholder binding image, not a real leaf.
+
+**Canvas 311 is the one handwritten item found this sweep**, and it is not the Paget letter: a French letter
+in a secretary hand, dated "**a Blayes 8 Juillet 1713**" (Blaye, 8 July 1713 -- not 14 January), addressed
+"Monseigneur", signed, with the recto's own ink page stamp "**623**" (top right corner) -- consistent with
+worker P's continuous-pagination calibration (interpolating P's rate of ~2.24 pages/canvas from f130="235"
+predicts ~640 at canvas 311, in the right range for "623"). No cipher, no numerals, plain prose throughout as
+far as legible at this resolution. This is the first manuscript correspondence found in the whole 316-canvas
+volume by this sweep, and it sits near the very end (canvas 311 of 316) -- suggesting the volume's few
+manuscript letters (as opposed to its many bound printed pamphlets) cluster in this last stretch rather than
+being spread evenly, which is worth checking first if a further narrowing pass has any budget left (e.g.
+canvases 295-316 at every 2-3 canvases).
+
+**Hand/cipher comparison with clairambault1225-paget-1714 (M4): still not possible.** Checked M4's own
+`images/` on disk: it holds one probe image, `btv1b9001034d_canvas48_probe_not_folio48.jpg`, which M4's own
+NOTES.md records as an unrelated 18th-century religious-community letter, not the Paget 1714 item itself (that
+folio was never pinned either). No image of either Paget letter (1713 or 1714) is on disk in this repo, so no
+hand or cipher comparison can be made from disk images; both items remain to be located by image before that
+comparison is possible.
+
+Requests this section: gallica.bnf.fr 36 (32 canvases attempted at 200px: 29 ok on first try, 3 -- f11, f131,
+f221 -- failed twice each = 6 requests for those three, so 35 at 200px; + 1 re-fetch of f311 at 800px), all
+>=1.5s apart, UA `cipher-lab research script (contact via repository)`. No 403/429/challenge seen (all
+failures were `Connection reset by peer`, not a block signal). No other host. Status stays `open`.
