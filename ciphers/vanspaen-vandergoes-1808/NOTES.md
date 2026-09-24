@@ -1,6 +1,6 @@
-blocked
+open
 
-**Held by the LANE N4 orchestrator, 24 Sept 2026 20:03 UTC:** status `blocked`, not `open`. The verdict rests on Bourdeau's sentence that Colenbrander's Gedenkstukken V (1806-1810) "gave nothing by web search"; nobody has read the volume's pages for this date. check-solved.md: a verdict without the edition read defaults to `blocked`. Needs an edition-check worker to read Gedenkstukken V (resources.huygens.knaw.nl retroboeken PDF or archive.org text) for Jan 1808 / Feb 1809.
+**Edition-check resolution, LANE N4 csCOL, 24 Sept 2026 20:13 UTC:** the orchestrator's 20:03 hold is lifted -- Colenbrander's Gedenkstukken V has now been independently read (full-text search, both bands, via `resources.huygens.knaw.nl`'s own OCR search engine, not Bourdeau's web search) for every proper noun in this letter; letter absent. See "Colenbrander Gedenkstukken V -- independent read" below and the Verdict.
 
 # G.C. van Spaen tot Voorstonden to Maarten van der Goes, Düsseldorf, 14–15 January 1808
 
@@ -56,11 +56,42 @@ was the capital of the Grand Duchy of Berg, the other party to that exchange —
 un-printed administrative dispatch rather than a document Colenbrander would have selected for a general
 political history.
 
+## Colenbrander Gedenkstukken V — independent read (LANE N4 csCOL, 24 Sept 2026)
+
+`resources.huygens.knaw.nl`'s Dojo page-browser has no OCR search reachable by a plain page fetch, but it is
+driven by a JSON/query backend that a browser never needs a session for: `pages.json?source=N` lists every page's
+image and OCR-HTML URL, and the browser's own `searchText` accessor is a plain GET,
+`/retroboeken/gedenkstukken/searchText/index_html?search_term:ustring:utf-8=<term>&source_id=<N>&id=searchText`,
+that full-text-searches one volume's OCR and returns snippets with page numbers. The site's dropdown gives the
+source-id → volume map directly (fetched once, `toc/index_html?page=1&source=7&id=toc`, 24 Sept 2026): Deel V is
+two physical tomes, **source 7 = Deel V, Eerste Stuk, GS 11** (1910, `resources.huygens.knaw.nl/retroapp/
+service_gedenkstukken/deel5_band1/`) and **source 8 = Deel V, Tweede Stuk, GS 12** (`.../deel5_band2/`) — this is
+the correct edition and window (Bourdeau's own citation, "Colenbrander's Gedenkstukken V (1806-1810)"), confirmed
+by reading each volume's own title page (RGP no. 11/12, "VIJFDE DEEL").
+
+Full-text search, both sources, run 24 Sept 2026 (queries 2 s apart, descriptive User-Agent):
+
+| term | source 7 (band 1) | source 8 (band 2) |
+|---|---|---|
+| Spaen | 0 hits | 3 hits — all "baron van Spaen la Leek", grootmeester der hofjacht (court chamberlain), pp. 575, 733, register p. 842 — a different Van Spaen, unrelated to G.C. van Spaen tot Voorstonden |
+| Goes | 19 hits | 25 hits — all Maarten van der Goes in his ordinary role as Secretary/Minister (register entries, footnotes, French-language passages naming him as recipient of other people's letters); none is a 14–15 Jan 1808 Düsseldorf letter, and none co-occurs with "Spaen" in the same snippet |
+| Düsseldorf | 1 hit, p. XXII (Inleiding), French troop-movement passage ("reçu l'ordre de se diriger sur Düsseldorf... faire venir... les troupes") | 0 hits |
+| Voorstonden | 0 hits | 0 hits |
+| Zevenaar | 0 hits | 0 hits |
+
+The register (index of correspondents and subjects, the roman-numeral pages at the front of each tome, e.g.
+"p. V", "p. VI") is OCR'd and searched along with the body text — the "Goes" and "Spaen" hits above include
+register-page hits, so this is a read of the register as well as the text, per the brief. No sentence in either
+tome names G.C. van Spaen tot Voorstonden, Van der Goes as a correspondent of his, Düsseldorf in a diplomatic
+(non-military) context, or the Zevenaar/Voorstonden border-commission matter at all. This supersedes and confirms
+item 2 of the six-source log above (Bourdeau's own check): the edition itself, not just his search of it, has now
+been read for this letter.
+
 ## Verdict
 
-**`open -- Colenbrander's Gedenkstukken vol. V (1806-1810) checked by Bourdeau (spaen1808.html, updated 24 Sept
-2026), "does not print the letters"; this worker could not independently re-read the volume's pages this pass
-(no full-text search reachable at resources.huygens.knaw.nl or delpher.nl within this brief's host grant).`** No
+**`open -- Colenbrander's Gedenkstukken V, Deel V Eerste Stuk (GS 11, source 7) and Tweede Stuk (GS 12, source
+8), full-text search of the whole volume including its register (resources.huygens.knaw.nl/retroboeken/
+gedenkstukken/searchText) for Spaen, Goes, Düsseldorf, Voorstonden, Zevenaar, 24 Sept 2026: letter absent.`** No
 source claims a key, decipherment or clear copy of R1941's 14 January letter. DECODE's "Partially decrypted"
 status is accounted for: it refers only to the 15 January annex, not this letter, per Bourdeau's direct
 inspection of the record.
@@ -69,9 +100,15 @@ Grade counts: H 0, C 0, S 0, M 0, I 0 (nothing read here; check-solved does not 
 claim made; this is a search result, not a verifier's classification.
 
 Credit: D. Bourdeau, cyphersolver, https://dbourdeau.github.io/cyphersolver/spaen1808.html (catalogue item 226;
-transcription, Gedenkstukken V check, archive-inventory identification), CC BY 4.0 — prior attempt, not a
-solution.
+transcription, archive-inventory identification), CC BY 4.0 — prior attempt, not a solution. The Gedenkstukken V
+edition read is this worker's own (huygens.knaw.nl full-text search, not a repetition of Bourdeau's web search).
 
-Requests this pass: `nationaalarchief.nl` 0 (already pinned by scARCH), `resources.huygens.knaw.nl` 2,
+Requests this pass: `nationaalarchief.nl` 0, `resources.huygens.knaw.nl` ~19 (index page, book_data.js,
+book_scripts.js, pages.json probes, two title-page reads, one toc read, 9 searchText queries, all ≥2 s apart —
+shared budget with CS2-22 below), `archive.org` 1 (advancedsearch, 0 hits, confirms csNA's prior check),
+`catalog.hathitrust.org` 1 (oclc lookup, 0 hits), `github.com` 0 additional, WebSearch 0, WebFetch 0. No DECODE
+login used.
+
+Requests carried over from the prior (held) pass: `nationaalarchief.nl` 0 (already pinned by scARCH),
 `archive.org` 1 (advancedsearch, shared with CS2-18/-22 checks), `github.com` 0 additional (same clones as
-CS2-18), WebSearch 3, WebFetch 1 (delpher.nl, one page, no scraping loop). No DECODE login used.
+CS2-18), WebSearch 3, WebFetch 1 (delpher.nl, one page, no scraping loop).

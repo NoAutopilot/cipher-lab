@@ -5580,24 +5580,30 @@ NOTES.md; state changes below.
   not a solve. nomination: hellen-frederick-1752 | copy-free | kind recovery | NA 1.10.29 invnr 5206 (target
   archive; the 8 ciphertexts themselves are at KHA Prins Willem V inv.196, not yet re-checked for a separate
   viewer).
-- **CS2-21** (Van Spaen to Van der Goes, 14-15 Jan 1808) -> **`blocked` (held by the LANE N4 orchestrator 20:03 UTC: Colenbrander Gedenkstukken V not read; was: open).** New folder
+- **CS2-21** (Van Spaen to Van der Goes, 14-15 Jan 1808) -> **`open` (LANE N4 csCOL, 24 Sept 2026 20:13 UTC: Colenbrander Gedenkstukken V independently read, letter absent; orchestrator's 20:03 hold lifted).** New folder
   `ciphers/vanspaen-vandergoes-1808/`. DECODE's "Partially decrypted" status resolved: it covers only the 15 Jan
   annex (per Bourdeau's direct inspection of the record, quoted in NOTES.md), not the 14 Jan letter this row
-  targets. Colenbrander's Gedenkstukken vol. V (1806-1810) checked by Bourdeau, "does not print the letters";
-  this worker could not independently re-read the volume (no full-text search reachable at huygens.knaw.nl's
-  Dojo viewer or delpher.nl within this brief's host grant -- flagged, not closed as a gap). nomination:
-  vanspaen-vandergoes-1808 | copy-free | kind cryptanalysis | NA 2.01.08 invnr 281.
-- **CS2-22** (Röell (attrib.) to Van Dedem, 9 Feb 1809) -> **`blocked` (held by the LANE N4 orchestrator 20:03 UTC: Colenbrander Gedenkstukken V not read; was: open).** New folder
-  `ciphers/roell-vandedem-1809/`. Same Gedenkstukken vol. V check by Bourdeau, "gave nothing by web search";
-  same independent-re-read gap as CS2-21. No key, decipherment or clear copy found in six sources. nomination:
+  targets. Colenbrander's Gedenkstukken V, Deel V Eerste Stuk (GS 11) and Tweede Stuk (GS 12), full-text searched
+  via `resources.huygens.knaw.nl`'s own `searchText` accessor (register included) for Spaen, Goes, Düsseldorf,
+  Voorstonden, Zevenaar: letter absent (the only "Spaen" hits are a different person, baron van Spaen la Leek).
+  nomination: vanspaen-vandergoes-1808 | copy-free | kind cryptanalysis | NA 2.01.08 invnr 281.
+- **CS2-22** (Röell (attrib.) to Van Dedem, 9 Feb 1809) -> **`open` (LANE N4 csCOL, 24 Sept 2026 20:13 UTC: Colenbrander Gedenkstukken V independently read, letter absent; orchestrator's 20:03 hold lifted).** New folder
+  `ciphers/roell-vandedem-1809/`. Same Gedenkstukken V (both bands) full-text searched for Röell and Dedem: 80/73
+  and 5/1 hits respectively, none pairing the two names as correspondents and none dated 9 Feb 1809. No key,
+  decipherment or clear copy found in six sources. nomination:
   roell-vandedem-1809 | copy-free | kind cryptanalysis | NA 1.02.20 invnr 804 (DECODE's cached toegang 1.02.04 is
   wrong; scARCH's viewer test confirms 1.02.20).
 
-**Gap flagged for a future worker, not closed here:** the Colenbrander Gedenkstukken vol. V full-text check for
-CS2-21/-22 rests on Bourdeau's own search, not an independent re-read -- resources.huygens.knaw.nl's retroboeken
-viewer is a Dojo page-image browser with no OCR search reachable by plain HTTP, and delpher.nl (out of this
-brief's host grant beyond one WebFetch) needs a JS-rendered session. A worker with a browser-tool slot on
-delpher.nl or huygens.knaw.nl could close this properly.
+**Gap closed (was flagged 20:03 UTC):** the Colenbrander Gedenkstukken V check for CS2-21/-22 now rests on an
+independent read, not Bourdeau's web search -- `resources.huygens.knaw.nl`'s retroboeken viewer is a Dojo
+page-image browser with no OCR search reachable by a plain page fetch, but its `searchText` accessor is a plain
+query-string GET that full-text-searches one volume's OCR (`pages.json?source=N` plus the source dropdown gave
+the volume map: source 7 = Deel V Eerste Stuk GS 11, source 8 = Deel V Tweede Stuk GS 12). See both NOTES.md
+files for the query-by-query results table.
 
-Per-host report: `nationaalarchief.nl` 1, `service.archief.nl` 1, `resources.huygens.knaw.nl` 2, `archive.org`/
+Per-host report (this pass, csCOL): `resources.huygens.knaw.nl` ~19 (index/scripts probes, two title-page reads,
+one toc read, 9 searchText queries, all >=2 s apart, shared across both rows), `archive.org` 1 (advancedsearch,
+0 hits), `catalog.hathitrust.org` 1 (0 hits), `github.com` 0, WebSearch 0, WebFetch 0. No DECODE login.
+
+Per-host report (prior, held pass, csNA): `nationaalarchief.nl` 1, `service.archief.nl` 1, `resources.huygens.knaw.nl` 2, `archive.org`/
 `be-api.us.archive.org` 5, `github.com` 2 shallow clones (grep only), WebSearch 5, WebFetch 2. No DECODE login.
