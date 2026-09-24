@@ -322,3 +322,54 @@ transcribed them; the numerical name-codes are the open remainder. Next step whe
 numerical codes across both letters with the Letter-Book and calendar contexts (870 appears with Cobham twice, 189 is
 Montrose) and attempt identifications with CSP Scotland vi as the check; grade every identification C or M. No
 image of the manuscript is in the folder; Tomokiyo's check is from his own reading of the leaves.
+
+## Numerical name-codes (24 Sept 2026, LANE R4 E)
+
+Worker LANE R4 E (Opus, cap $5), 24 Sept 2026 from 15:28 UTC. Disk and printed text only. No image was fetched.
+Scripts: `codes_scan.py` lists every bare number in the body of the Surtees 1842 OCR (1,490 hits, `codes_scan.tsv`).
+It skips years, page headers and money or measure words. `codes.py` collates the codes of CLXXXVII (7 Apr 1583) and
+CCXL (31 Jul 1583) and writes `codes.tsv`. That file has one row per occurrence, with 200 characters of print
+context, CSP vi token counts, the other occurrences in the Letter-Book, the identification, the grade and a
+one-line reason. `codes.py --check` exits 1 if `codes.tsv` is stale. CCXXXIX has no codes.
+
+**CSP Scotland vi (1910) is not on archive.org.** Four requests on 24 Sept 2026: three advancedsearch queries and
+one metadata call. They found vols IV (`calendarstatepa00boydgoog`), V? (`calendarstatepa01boydgoog`, 1907), VIII,
+IX (`calendarofstatep08grea`, metadata vol. 9) and XIII, but not vol. VI. The calendar check therefore rests on the
+HTRC token counts already on disk (`audit_csp6_tokens.tsv`, pp.369-371 and 564-567). The calendar's running text
+was not read. The token bags show that **the calendar keeps the codes as numbers**:
+- p.371 (the 7 Apr entry) has 870 ×7, 91 ×3, 32, 54 and 000. The Surtees print has 91 ×3 as well.
+- p.566-567 (31 Jul) has 223, 111, 54 and 85.
+- The calendar prints Montrose in clear on p.371 and has no 189 token. This matches Tomokiyo's check.
+
+So the 1910 calendar identifies none of the other codes, and no C grade can come from it.
+
+**Result.** 12 codes, 33 occurrences in the two letters.
+- **Codes:** C 1 (189), M 9 (870, 91, 32, 54, 000, 149, 19, 29, 223), unread 2 (85, 0100).
+- **Occurrences:** C 3, M 28, unread 2.
+
+The code is one-to-one across every use found (1577-1583). The one exception is 29, read as a misprint or OCR slip
+for 23.
+
+| code | identification | grade | basis (full line in codes.tsv) |
+|---|---|---|---|
+| 189 | John Graham, 3rd Earl of Montrose | C | Tomokiyo: MS f.196 has 189 where the print has "Montrosse". CCXL uses the same code |
+| 870 | Esmé Stewart, Duke of Lennox | M | In France with Cobham and Smallet in 1583; "return this summer into 70" with French forces; last used Apr 1583, before his death on 26 May 1583 |
+| 91 | James VI | M | "223 shall be on his knees before 91 and council" |
+| 32 | Queen Elizabeth / England | M | "the minister of 32"; "32 hath shaken him off ... the course of France" |
+| 54 | France | M | "others in 54"; "54, and chiefly the duke of Guyse" |
+| 000 | England | M | "come into 000"; "an ambassador into 000 to intreat her Majesty" |
+| 149 | Henri III (alt. Catherine de Médicis) | M | "an ambassador ... from 149 into this realm"; Mary via Mauvissière persuades 149 |
+| 19 | Duke of Guise (alt. Anjou), weak | M | "149 and 19 ... until advertised by Manningville" |
+| 29 | = 23, Mary Queen of Scots (list reads "149, 19, 23, and 85" in CLXXXIX) | M | 23: "dealt with Mauvisier", "intelligence with 23 will satisfy G. Douglas" |
+| 223 | William Ruthven, Earl of Gowrie | M | "on his knees before 91 ... to acknowledge his fault done at Ruthen". CCXL also prints "Gowrye" in clear nearby |
+| 85 | unread (Spain, the Pope, the Queen Mother, Archbishop Beaton?) | - | only in the two lists |
+| 0100 | unread (the King? Dumbarton Castle?) | - | once: "delivery of 0100 to 32" |
+
+key.tsv and reading.tsv are unchanged. 189 is a number in the manuscript, not one of Tomokiyo's drawn signs 02-28.
+check.py still exits 0. What would settle the M grades:
+- the Bowes/Cary nomenclator ("the cypher left me by Sir George Cary, the double whereof I send inclosed",
+  CLXXXVII), or any decipher of these letters that gives the names;
+- the running text of CSP vi pp.370-371 and 566-567.
+
+Suggestion (not done): the Letter-Book uses about 40 further codes outside these two letters (0150 ×24, 111, 333,
+0700, 41, 31, 70, 90, 440, 800 ...; `codes_scan.tsv`). Collating them would test and tighten the M grades above.
