@@ -78,3 +78,9 @@ about $14, four workers $41.15.
 worker is started until the window resets or the owner says otherwise; the hourly check-in keeps running and does owner
 asks, ledger, board and second-opinion routing only. Parent usage $978.8 since 23 Sept 15:12; lanes and workers today about
 $1,000 more. The five-hour window is not the binding limit any longer; the seven-day one is.
+
+**Owner decision, 24 Sept 2026 14:45 UTC:** told of the seven-day `allowed_warning` and that `rejected` would stop every session
+including their own until Sat 26 Sept 13:00 UTC, the owner chose to keep going ("momentum"). The parent started two lanes
+(R4 recovery, cap $50, 5 workers; N3 copy-free nominations, cap $35, 4 Sonnet workers) instead of the earlier four-lane load.
+Rule for this period: `allowed_warning` no longer stops spawning inside those caps; `rejected` on any session stops every lane
+at once (interrupt workers, handoff, stop). The parent checks every 30 minutes.

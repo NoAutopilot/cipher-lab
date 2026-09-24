@@ -310,3 +310,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T13:36Z	session_019HSXApEw1FQvwqDTcnuSUN	Grants scout (Sonnet, cap $10)	private artifact 74ENvF2RWsFnWiskrfcX3s	done 13:52, $4.40; public copy removed f848025
 2026-09-24T13:36Z	session_014o1Q2GRr539B86vvKbgrnP	Grants applications (Opus, cap $12)	private artifact Pnm7gvCUyfj6a8DJopSV3w	done 13:51, $4.90; public copies removed f848025
 2026-09-24T13:23Z	session_012QC4L49VqeaQqqrs21uD9w	LANE R3 J7 (Opus, cap $15)	5549 body crib cryptanalysis + control	done, $4.16, negative with control (10.9%)
+2026-09-24T14:46Z	session_01LrTggxL1PyxmJd6eygqaGY	LANE R4 orchestrator (Opus, cap $50)	recovery successor	from the R3 13:52 and G3 14:01 handoffs; owner decision 14:45 to run under the seven-day warning
+2026-09-24T14:46Z	session_01QimvzgvoH4ALachGScXUC9	LANE N3 orchestrator (Opus, cap $35)	copy-free nominations successor	from the N2 14:16 handoff; scCS2 first

@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 14:32 UTC",
+ "updated": "24 Sep 2026 14:50 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -616,6 +616,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 14:50",
+   "what": "On your call, two lanes restarted under the seven-day warning: R4 recovery (five jobs, cap $50) and N3 copy-free nominations (cap $35). Stop rule: any session reading 'rejected' halts every lane."
+  },
   {
    "when": "24 Sep, 14:32",
    "what": "Cryptiana replied on the Bowes 1583 sign table: accepted, page updated the same day with a link to the folder, three corrections from the manuscript, numerical codes still open. First outside acknowledgement of a repository reading."
@@ -1489,25 +1493,20 @@
  ],
  "lanes": [
   {
-   "name": "Lane G3, Gallica manuscripts",
+   "name": "Lane R4, recovery",
    "live": 0,
-   "focus": "closed 14:01 on the seven-day warning; found fr.2933 Salviati 1525 (M35, 9 leaves captured) and the 1519 election key fr.5761 (M36), both open; five BnF orders on your card"
+   "focus": "started 14:46: Posthius to Eysenmenger 1614/18 (key on the leaf), Salviati 1525 atlas passes and key trial, 1519 election key, 5549 key source, Bowes numerical codes"
   },
   {
-   "name": "Lane V3, verification",
+   "name": "Lane N3, copy-free nominations",
    "live": 0,
-   "focus": "closed 13:27 with nothing unowned; Jan van Nassau 5549 postscript N1; outreach drafts wait on your JSTOR rows"
+   "focus": "started 14:46: cyphersolver site re-diff (236 write-ups), Trew collection cipher sweep, check-solved on copy-free rows"
   },
   {
-   "name": "Lane N2, nominations",
+   "name": "Lane V4, verification",
    "live": 0,
-   "focus": "closed 14:16; 73 Willem van Oranje letters sorted by print status, 15 stage-2 nominations, 2 copy-free (5549, Posthius-Eysenmenger 1614/18)"
-  },
-  {
-   "name": "Lane R3, recovery",
-   "live": 0,
-   "focus": "closed 13:52; 5549 body negative by crib with a matched control, needs a key source"
+   "focus": "not started; the parent spawns a verifier per reading R4 reports"
   }
  ],
- "headline": "Afternoon of 24 Sept: fifteen readings at N4 ('no prior decipherment located'), one cryptanalytic (August of Saxony 53). The seven-day usage window hit its warning at 13:50, so all four lanes closed on handoffs and nothing restarts before Sat 26 Sept 13:00 UTC. Ready for you meanwhile: six grant application drafts in two private artifacts, the JSTOR waiver, the private repository, mail access, the history swap."
+ "headline": "Afternoon of 24 Sept: fifteen readings at N4, one cryptanalytic. Cryptiana accepted the Bowes 1583 sign table and linked the folder. The seven-day usage window is at its warning; on your decision two focused lanes run (recovery on Posthius 1614/18, Salviati 1525, the 1519 election key, 5549; copy-free nominations) and everything stops only if the window rejects. Ready for you: six grant drafts in two private artifacts, the JSTOR waiver, the private repository, mail access, the history swap."
 }
