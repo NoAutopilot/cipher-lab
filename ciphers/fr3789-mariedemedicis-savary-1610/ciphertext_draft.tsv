@@ -1,0 +1,105 @@
+line	position	sign	confidence	alt	why
+sept_L01	1	encore	H		agree
+sept_L01	2	de	M	B:-	gap
+sept_L01	3	la	M	B:cela	differ
+sept_L01	4	difficulte	M	B:difficulté	differ
+sept_L01	5	a,	H		agree
+sept_L01	6	56	M	B:7̄o	differ
+sept_L01	7	hz	H		agree
+sept_L01	8	p̄dxd	M	B:-	gap
+sept_L01	9	ayc	M	B:-	gap
+sept_L01	10	no	M	B:-	gap
+sept_L01	11	q	M	B:-	gap
+sept_L01	12	b	M	B:ppdxd	differ
+sept_L01	13	qqr	M	B:ayonoqt	differ
+sept_L01	14	II	M	B:ppr	differ
+sept_L01	15	q̄i	M	B:[mark:pi-like]	differ
+sept_L01	16	bx	M	B:7̄i	differ
+sept_L01	17	m	M	B:bxmy	differ
+sept_L01	18	ka,	H		agree
+sept_L01	19	y,	H		agree
+sept_L01	20	za	M	B:-	gap
+sept_L01	21	bm	M	B:3a	differ
+sept_L01	22	go	M	B:[mark:round]mgo	differ
+sept_L01	23	72	H		agree
+sept_L02	1	Jestime	H		agree
+sept_L02	2	s'il	H		agree
+sept_L02	3	en	H		agree
+sept_L02	4	falloit	H		agree
+sept_L02	5	venir	H		agree
+sept_L02	6	a	H		agree
+sept_L02	7	l'effet	M	B:-	gap
+sept_L02	8	d'une	M	B:-	gap
+sept_L02	9	lettre	M	B:-	gap
+sept_L02	10	zu	M	B:-	gap
+sept_L02	11	ka	M	B:-	gap
+sept_L02	12	d	M	B:-	gap
+sept_L02	13	y	M	B:-	gap
+sept_L02	14	r	M	B:-	gap
+sept_L02	15	f	M	B:-	gap
+sept_L02	16	q	M	B:-	gap
+sept_L02	17	ß	M	B:-	gap
+sept_L02	18	t	M	B:-	gap
+sept_L02	19	l	M	B:-	gap
+sept_L02	20	d	M	B:l'effait	differ
+sept_L02	21	Z	M	B:devoir	differ
+sept_L02	22	h	M	B:estre	differ
+sept_L02	23	tu	M	B:zukadyrfq	differ
+sept_L02	24	t	M	B:[mark:ß-like]	differ
+sept_L02	25	x,	M	B:tldZhtu[mark:cross]x,	differ
+sept_L02	26	a,	H		agree
+sept_L02	27	y,	H		agree
+sept_L03	1	I,	M	B:-	gap
+sept_L03	2	p	M	B:3,	differ
+sept_L03	3	x	M	B:pax,	differ
+sept_L03	4	y	H		agree
+sept_L03	5	6̄39	M	B:tz̄9	differ
+sept_L03	6	t	H		agree
+sept_L03	7	8̄6	H		agree
+sept_L03	8	selon	M	B:selon,	differ
+sept_L03	9	la	H		agree
+sept_L03	10	constitution	H		agree
+sept_L03	11	puisse	M	A:-	gap
+sept_L03	12	d[unclear:esoun-eboir]	M	A:-	gap
+sept_L03	13	affin.	M	A:-	gap
+sept_L03	14	pour	M	B:[unclear:capital]ravon	differ
+sept_L03	15	desdits	M	B:a	differ
+sept_L03	16	affaires	M	B:durci[unclear:signs]Huy	differ
+nov_L01	1	conforme	H		agree
+nov_L01	2	a	H		agree
+nov_L01	3	leur	H		agree
+nov_L01	4	ambition.	H		agree
+nov_L01	5	Aussy	H		agree
+nov_L01	6	croiste	M	B:avisse	differ
+nov_L01	7	bien	H		agree
+nov_L01	8	7̄2	H		agree
+nov_L01	9	4	H		agree
+nov_L01	10	7̄9	H		agree
+nov_L01	11	b	M	B:-	gap
+nov_L01	12	Ir	M	B:-	gap
+nov_L01	13	c	M	B:-	gap
+nov_L01	14	Iy	M	B:v[unclear:J-b]rc[unclear:J-1]y	differ
+nov_L02	1	et	M	B:-	gap
+nov_L02	2	sy	M	B:-	gap
+nov_L02	3	qq	M	B:-	gap
+nov_L02	4	4̄1	M	B:[mark:cross]	differ
+nov_L02	5	3	M	B:8y	differ
+nov_L02	6	d	M	B:qq[mark:crossbar]	differ
+nov_L02	7	Ir	M	B:4̄13	differ
+nov_L02	8	x	M	B:[unclear:delta]J	differ
+nov_L02	9	fa	M	B:rxfa,	differ
+nov_L02	10	y,	H		agree
+nov_L02	11	et	M	B:-	gap
+nov_L02	12	x,	M	B:etc,	differ
+nov_L02	13	9̄93	H		agree
+nov_L02	14	f	H		agree
+nov_L02	15	p	M	B:pp[mark:crossbar]	differ
+nov_L02	16	bx	H		agree
+nov_L02	17	yl	M	B:-	gap
+nov_L02	18	c	M	B:-	gap
+nov_L02	19	m	M	B:-	gap
+nov_L02	20	t	M	B:ylc	differ
+nov_L02	21	y	M	B:mty	differ
+nov_L02	22	qqr	M	B:qq[mark:crossbar]r	differ
+nov_L02	23	ne	M	B:uc	differ
+nov_L02	24	seroit	M	B:lire	differ

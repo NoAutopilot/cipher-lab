@@ -1,0 +1,13 @@
+# Pass B — blind mechanical transcription, f.17r cipher passage ("15 Sept" letter)
+# Method: read only the crops listed; plain French words kept as words; each cipher
+# sign/cluster kept as a separate token exactly as drawn. Overbars shown with a
+# combining macron on the character they sit over (e.g. "7̄o"); marks that don't
+# transliterate are given a short bracketed note. "[unclear: X]" = best guess, low
+# confidence; "[unclear]" = could not resolve the shape at all. No outside source
+# consulted; no plaintext inferred.
+
+L01: encore cela difficulté a, 7̄o hz ppdxd ayonoqt ppr [mark: pi-like sign, two vertical strokes joined by a bar, possibly a ligature or numeral] 7̄i bxmy ka, y, 3a [mark: round sign, 6-like or o-with-tail]mgo 72
+
+L02: Jestime s'il en falloit venir a l'effait devoir estre zukadyrfq [mark: ß-like sign] tldZhtu[mark: small cross/plus stroke]x, a, y,
+
+L03: 3, pax, y tz̄9 t 8̄6 selon, la constitution puisse d[unclear: "esoun"/"eboir", word partly obscured by a flourish] affin. [unclear: capital letter, E/C/G-shaped]ravon a durci[unclear: one or two signs before the capital]Huy —

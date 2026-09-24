@@ -94,3 +94,59 @@ known ciphers. Camille Desenclos for locating R2077's key at the BnF (per Tomoki
 Not decoded, not transcribed here beyond the presence check above (out of scope for check-solved; Bourdeau's
 `breves1610/ciphertext.txt` already has a transcription if a solver picks this up). Rule 10: no novelty claim
 made; this is a search result, not a verifier's classification.
+
+## Key capture and reading (24 Sept 2026, LANE R4 M)
+
+**fr.3642 key: not obtainable via Gallica, confirmed independently.** Gallica SRU (`gallica.bnf.fr/SRU`), four
+query variants on 24 Sept 2026 (`gallica adj "Français 3642"`, lowercase `"francais 3642"`, `gallica all "ms-3642"`,
+`gallica all "fr. 3642"`; the last two intentionally broad as a check) all return either the same 3 unrelated
+records (a Béthune manuscripts catalogue, a national bibliography serial, an Algiers newspaper — none is BnF
+Français 3642) or thousands of noise hits from the untokenised broad query, never the manuscript itself. This
+independently reproduces Bourdeau's own finding (`breves1610/NOTES.md`: "not on Gallica, SRU search 0 hits").
+BnF fr.3642 is simply not digitised on Gallica. The only image of its key in either project is a 833×587px photo
+attached to DECODE record R2077 (Camille Desenclos's find, per Tomokiyo/Bourdeau), and DECODE image access is
+permission-blocked for this brief (ASKS.md row 42; not attempted, per brief instruction). **No key.tsv, no
+decode.json, no decode run this session** — per this brief and rule 3/rule 7, a key that cannot be fetched is not
+a cryptanalysis attempt to report, just an access blocker, already logged by Bourdeau and now reconfirmed.
+
+**Cipher passages fetched and transcribed (two independent blind passes).** Gallica IIIF, ark `btv1b9059628m`
+(manifest cached `sources/gallica-manifests/btv1b9059628m.json`, all 126 canvases labelled 'NP'; foliation fixed
+by eye-checked anchors, canvas 36 = stamped f.19r, canvas 37 = f.19v, confirmed by the printed folio numeral
+visible on each leaf and by the letter's dateline). Confirms Bourdeau's foliation exactly: the 15 Sept 1610 letter
+is stamped f.17r (cipher, canvas 32) – f.17v (canvas 33, plain) – f.18r (canvas 34, signature "...jour de
+Septembre 1610", "Brulart") – f.18v (canvas 35, blank/offset, not fetched); the 10 Nov 1610 letter is f.19r
+(cipher, canvas 36) – f.19v (canvas 37, digits are show-through per Bourdeau, not more cipher, not separately
+transcribed here). Native-resolution page images and line crops (`tools/iiif_lines.py`, ink-profile line
+detection, debug overlays checked by eye) are in `images/`; `images/manifest.json` records the fetch.
+
+Pass A (this worker) and pass B (one Sonnet subagent, blind from the same line-crop images, no outside source,
+no plaintext inference) were reconciled with `tools/reconcile_passes.py` (`passA.tsv`, `passB.tsv` ->
+`disagreements.tsv`, `ciphertext_draft.tsv`, `agreement.tsv`). Raw agreement: 32/104 aligned columns, 30.8%.
+Reading `disagreements.tsv` by eye, the great majority of this is a **segmentation artifact, not a sign-identity
+disagreement**: pass A tokenised the run largely letter-by-letter (`bx m ka`), pass B kept adjacent letters as
+run-together clusters (`bxmy ka`), which shifts the column alignment for the rest of each line without either
+pass actually disagreeing on the ink. Genuine content disagreements are narrower and listed for a future
+reconciler to settle from the image: sept_L01 col 6 ("56" vs "7̄o" — plain digits vs a barred numeral +
+letter-form, at the position Bourdeau's own transcription reads as part of the alphabet run), sept_L01 cols
+20-22 ("za bm go" vs "3a [round-mark]mgo"), nov_L01 col 6 ("croiste" vs "avisse", both guesses at a hard-to-read
+verb before "bien"), and the tail runs of nov_L02 (cols 15-24) where both passes agree on shape but not on
+whether "ylc/yl c/mty" segment one way or another. `ciphertext_draft.tsv` (pass A's line/token grid, alternate
+pass-B readings in the `alt` column, confidence M on every token because there is no key to grade against) is
+the working transcription; it has not been fully settled against the image sign-by-sign and should not be
+treated as a finished ciphertext.tsv without that pass. No H or C grade applies anywhere in this section: there
+is no key and no known plaintext, so nothing here is a decipherment or a graded reading, only a transcription
+capture, per this brief's "no cryptanalysis" instruction.
+
+**Files:** `images/` (leaves, line crops, manifest), `sources/gallica-manifests/btv1b9059628m.json`,
+`passA.tsv`, `passB.tsv`, `passA_sept.txt`/`passA_nov.txt`/`passB_sept.txt`/`passB_nov.txt` (line-prose working
+notes behind the TSVs), `disagreements.tsv`, `ciphertext_draft.tsv`, `agreement.tsv`.
+
+**Follow-up (not in this brief, one line only):** a settling pass on `disagreements.tsv` against the image would
+sharpen `ciphertext_draft.tsv` into a citable `ciphertext.tsv`; separately, per Bourdeau's own note, only Lasry's
+R2077 plaintext/ciphertext pair or a full-resolution fr.3642 image (BnF reading room, not Gallica) would reopen
+the key side of this target. Status stays `open`.
+
+Credit: this session's transcription and Gallica-negative reconfirmation build directly on D. Bourdeau's prior
+`breves1610/` attempt (cited above) and do not supersede it; Bourdeau's own ciphertext transcription
+(`ciphertext.txt`, `ct_sept.txt`, `ct_nov.txt` in his repository, CC BY 4.0) was deliberately not consulted before
+this worker's pass A, to keep both passes blind.
