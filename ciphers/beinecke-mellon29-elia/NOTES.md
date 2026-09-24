@@ -141,3 +141,61 @@ This pass (csED3): catalog.hathitrust.org 2 (brief request), api.openalex.org 1 
 WebSearch 2, WebFetch 1 (societasmagica.org PDF, read via the Read tool once fetched). github.com 2 shallow clones
 (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers, grep only — shared with the fr2988-ranzo-1520s folder's
 checks, not two separate clones). No archive.org needed for this folder (the Witten catalogue is not on it).
+
+## Capture and passes (24 Sept 2026, LANE R4 Q)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-r4-q-mellon-capture.md`. Image route confirmed and used:
+`collections.library.yale.edu` IIIF only, catalog record 17388793. Manifest (`/manifests/17388793`, IIIF
+Presentation 3.0) labels canvases plainly by folio ('1r','1v','2r',...); no offset puzzle like fr.20140/fr.16092.
+ff.1v/2r/2v = canvases/image ids 17388797/17388798/17388799. `tools/iiif_lines.py` already accepted a plain IIIF
+image URL as its positional `url` argument (quality defaults to `default` for any non-Gallica base) — no
+`--image-url` option was needed, the brief's premise ("if it only handles Gallica arks") did not hold, so the
+tool is unchanged. Native images and line crops in `images/` (manifest.json), pruned to the cipher-bearing lines
+only (f1v_L16-18, f2r_L08-10, f2v_L01-12) to stay well under 30 MB (5.4 MB total).
+
+**Atlas: `tools/glyph_atlas.py` not used, by design.** The brief assumed pseudo-Elian/pigpen glyph shapes (per
+Bourdeau's catalogue description, itself from a DECODE thumbnail, not the image). The image shows otherwise: the
+ff.1v-2r "alchemical operations" passage and the f.2v zodiac codeword list (Beinecke catalogue: "on f.2v is an
+explanation of the ciphers for the signs of the Zodiac") are both written in the *same* ordinary Italian
+humanist cursive hand as the surrounding plaintext — short nonsense letter-groups (word-nomenclature/substitution,
+not an invented symbol alphabet), dot- or space-separated, mixed with a few scribal extensions (a tironian-shaped
+mark transcribed '7', a yogh/z-tail shape transcribed '3', a long-s, an eszett-like ligature 'ß' on the Leo row,
+small superscript flourishes transcribed "'"). `glyph_atlas.py`'s connected-component segmentation is built for
+per-glyph invented alphabets (dupuy452, fr2933-salviati) and would blob-segment joined cursive strokes, not
+letters; running it here would not have produced a usable atlas. `atlas.tsv` (committed) is instead a direct
+paleographic sign tally built from the two transcription passes: 32 distinct codes over 248 signs (close to
+Bourdeau's "~234 letters" estimate for ff.1v-2v — the gap is consistent with an estimate made from a thumbnail).
+
+**Rec 2014 as an external anchor (grade C).** Agnieszka Rec's footnote 8 (already quoted in section 2 above)
+gives two of the twelve f.2v zodiac codewords verbatim: Cancer -> "irgp∫hk∫cel", Scorpio -> "prk∫yq∫7gp". Both
+match this pass's images letter-for-letter once ∫ (long s) is read as 's' -- and both resolve, in the scribe's
+own hand, a letterform this pass otherwise found genuinely hard to call between 'q' and 'g' (a closed loop with
+a descender tail). Those two words are graded C throughout (from print); the same letterform was then read 'g'
+elsewhere only where the shape matched (graded S, calibration from Rec, not a raw guess), left 'q'/M where the
+shape did not clearly match. Note for whoever solves this: Rec cites this list as "f.1r"; the Beinecke catalogue
+and this pass's own canvas labels place it on f.2v. Same wording, same two confirmed words -- almost certainly a
+foliation discrepancy (older count, or a citation slip), not a second list. Not resolved here.
+
+**Passes.** Pass A (this worker, `passA_Q.tsv`) and pass B (one blind Sonnet subagent, `passB_subagent.tsv`,
+crops only, no access to pass A) transcribed independently. `tools/reconcile_passes.py` (wide format, NW
+alignment): 78.7% raw sign agreement (237/301 aligned columns; the brief's 80% gate was narrowly missed, driven
+almost entirely by f2v's twelve short, closely-spaced codewords and one pass-B error including two words of
+plaintext, "pista im", that continue past the last cipher word on f1v_L18). `disagreements.tsv`,
+`ciphertext_draft.tsv` and `agreement.tsv` committed as the reconciler's output. This worker then settled every
+disagreement row against the image crops by hand (word breaks re-checked against visible dots/gaps, e.g. the
+Virgo and Aquario codewords were re-segmented from 1-2 words to 3-4 once the dots were looked at directly; the
+f1v_L18 plaintext tail dropped; case and the X-I roman-numeral form on the Sagitarius row settled) and wrote the
+adjudicated reading to `ciphertext.tsv` (long format: line, position, sign, confidence H/C/S/M, alt).
+Grade counts: **H 197, C 21 (Rec 2014, two words), S 11 (g/q calibration from Rec), M 19 (genuine letterform or
+mark ambiguity left open -- mostly q/a, 3/z, s/f-long-s and two uncertain marks)**. No H or C majority overall:
+this is a cryptanalytic-capture result except the two Rec-sourced words. 58 word-tokens, 248 signs, 32 sign
+types; word lengths 1-13 (median 3, the f.2v codewords running longer than the ff.1v-2r recipe words).
+
+Rule 10: no novelty claim made; this is a transcription capture, not a reading or a solve. No decoding attempted
+(out of scope, a separate Opus brief per the parent's line).
+
+Requests this pass: collections.library.yale.edu -- 2 (manifest, one `info.json` reachability check) + N cached
+IIIF image fetches (3 full-page: canvases 17388797/98/99; each >=2s apart, well under the 20-request brief cap).
+No other hosts touched. Subagents: 1 (Sonnet, blind pass B only, per the LANE R4 16:58 rule).
+
+ROOM.md: `done: for LANE R4: mellon capture 78.7% raw / settled to 197H+21C+11S+19M of 248 signs, 58 tokens/32 types`.

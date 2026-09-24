@@ -1,0 +1,302 @@
+line	position	sign	confidence	alt	why
+f1v_L16	1	o	H		agree
+f1v_L16	2	l	H		agree
+f1v_L16	3	o	H		agree
+f1v_L16	4	r	H		agree
+f1v_L17	1	R	H		agree
+f1v_L17	2	e	H		agree
+f1v_L17	3	r	H		agree
+f1v_L17	4	p	H		agree
+f1v_L17	5	i	H		agree
+f1v_L17	6	j	H		agree
+f1v_L17	7	/	H		agree
+f1v_L17	8	l	H		agree
+f1v_L17	9	e	H		agree
+f1v_L17	10	o	H		agree
+f1v_L17	11	r	H		agree
+f1v_L17	12	/	H		agree
+f1v_L17	13	s	H		agree
+f1v_L17	14	q	M	B:a	differ
+f1v_L17	15	l	H		agree
+f1v_L17	16	g	H		agree
+f1v_L17	17	r	H		agree
+f1v_L17	18	z	M	B:3	differ
+f1v_L17	19	/	H		agree
+f1v_L17	20	h	H		agree
+f1v_L17	21	s	H		agree
+f1v_L17	22	h	H		agree
+f1v_L17	23	r	H		agree
+f1v_L17	24	/	H		agree
+f1v_L17	25	h	H		agree
+f1v_L17	26	y	H		agree
+f1v_L17	27	o	H		agree
+f1v_L17	28	r	H		agree
+f1v_L17	29	/	H		agree
+f1v_L17	30	l	H		agree
+f1v_L17	31	a	H		agree
+f1v_L17	32	r	H		agree
+f1v_L17	33	o	H		agree
+f1v_L17	34	h	H		agree
+f1v_L17	35	q	M	B:g	differ
+f1v_L17	36	t	H		agree
+f1v_L18	1	q	M	B:y	differ
+f1v_L18	2	s	H		agree
+f1v_L18	3	q	M	B:a	differ
+f1v_L18	4	/	H		agree
+f1v_L18	5	y	H		agree
+f1v_L18	6	h	H		agree
+f1v_L18	7	z	H		agree
+f1v_L18	8	v	M	B:y	differ
+f1v_L18	9	/	H		agree
+f1v_L18	10	s	H		agree
+f1v_L18	11	o	H		agree
+f1v_L18	12	l	H		agree
+f1v_L18	13	i	H		agree
+f1v_L18	14	r	H		agree
+f1v_L18	15	/	H		agree
+f1v_L18	16	t	H		agree
+f1v_L18	17	3	M	B:z	differ
+f1v_L18	18	5	H		agree
+f1v_L18	19	/	H		agree
+f1v_L18	20	n	H		agree
+f1v_L18	21	o	H		agree
+f1v_L18	22	y	H		agree
+f1v_L18	23	p	M	A:-	gap
+f1v_L18	24	/	M	A:-	gap
+f1v_L18	25	p	H		agree
+f1v_L18	26	i	M	A:-	gap
+f1v_L18	27	s	M	A:-	gap
+f1v_L18	28	t	M	A:-	gap
+f1v_L18	29	a	M	A:-	gap
+f1v_L18	30	/	M	A:-	gap
+f1v_L18	31	i	M	A:-	gap
+f1v_L18	32	m	M	A:-	gap
+f2r_L08	1	y	H		agree
+f2r_L08	2	/	M	B:-	gap
+f2r_L08	3	l	H		agree
+f2r_L08	4	i	H		agree
+f2r_L08	5	o	H		agree
+f2r_L08	6	r	H		agree
+f2r_L09	1	l	H		agree
+f2r_L09	2	a	H		agree
+f2r_L09	3	y	H		agree
+f2r_L09	4	/	H		agree
+f2r_L09	5	g	M		agree-flagged
+f2r_L09	6	n	H		agree
+f2r_L09	7	o	H		agree
+f2r_L09	8	t	H		agree
+f2r_L09	9	r	H		agree
+f2r_L09	10	h	H		agree
+f2r_L09	11	/	H		agree
+f2r_L09	12	g	M		agree-flagged
+f2r_L09	13	h	H		agree
+f2r_L09	14	p	H		agree
+f2r_L09	15	l	H		agree
+f2r_L09	16	r	H		agree
+f2r_L09	17	/	H		agree
+f2r_L09	18	a	H		agree
+f2r_L09	19	q	M	B:g	differ
+f2r_L09	20	k	H		agree
+f2r_L09	21	s	M	B:f	differ
+f2r_L09	22	r	H		agree
+f2r_L09	23	o	H		agree
+f2r_L09	24	/	H		agree
+f2r_L09	25	7	M	B:a	differ
+f2r_L09	26	s	H		agree
+f2r_L09	27	h	H		agree
+f2r_L09	28	u	H		agree
+f2r_L09	29	k	H		agree
+f2r_L09	30	s	M	B:f	differ
+f2r_L09	31	s	M	B:f	differ
+f2r_L10	1	q	H		agree
+f2r_L10	2	p	H		agree
+f2r_L10	3	r	H		agree
+f2r_L10	4	/	H		agree
+f2r_L10	5	s	H		agree
+f2r_L10	6	q	H		agree
+f2r_L10	7	r	H		agree
+f2r_L10	8	q	H		agree
+f2r_L10	9	h	H		agree
+f2r_L10	10	s	H		agree
+f2r_L10	11	/	H		agree
+f2r_L10	12	h	H		agree
+f2r_L10	13	r	H		agree
+f2r_L10	14	/	H		agree
+f2r_L10	15	h	H		agree
+f2r_L10	16	q	H		agree
+f2r_L10	17	i	H		agree
+f2r_L10	18	h	H		agree
+f2r_L10	19	z	H		agree
+f2r_L10	20	/	H		agree
+f2r_L10	21	y	H		agree
+f2r_L10	22	z	H		agree
+f2r_L10	23	/	H		agree
+f2r_L10	24	s	H		agree
+f2r_L10	25	e	H		agree
+f2r_L10	26	t	H		agree
+f2r_L10	27	/	H		agree
+f2r_L10	28	V	H		agree
+f2r_L10	29	z	H		agree
+f2r_L10	30	/	H		agree
+f2r_L10	31	V	H		agree
+f2r_L10	32	s	H		agree
+f2r_L10	33	/	H		agree
+f2r_L10	34	s	H		agree
+f2r_L10	35	n	H		agree
+f2r_L10	36	/	H		agree
+f2r_L10	37	q	H		agree
+f2r_L10	38	r	H		agree
+f2r_L10	39	p	H		agree
+f2r_L10	40	t	H		agree
+f2v_L01	1	f	H		agree
+f2v_L01	2	r	H		agree
+f2v_L01	3	c	H		agree
+f2v_L01	4	o	H		agree
+f2v_L01	5	n	H		agree
+f2v_L01	6	/	H		agree
+f2v_L01	7	p	H		agree
+f2v_L01	8	q	H		agree
+f2v_L01	9	q	H		agree
+f2v_L01	10	v	H		agree
+f2v_L02	1	l	H		agree
+f2v_L02	2	r	H		agree
+f2v_L02	3	q	H		agree
+f2v_L02	4	r	H		agree
+f2v_L02	5	l	H		agree
+f2v_L02	6	r	H		agree
+f2v_L02	7	p	H		agree
+f2v_L02	8	n	H		agree
+f2v_L02	9	g	M	B:q	differ
+f2v_L02	10	s	H		agree
+f2v_L02	11	r	H		agree
+f2v_L02	12	7	M	B:z	differ
+f2v_L02	13	g	M	B:q	differ
+f2v_L03	1	q	M	B:g	differ
+f2v_L03	2	r	H		agree
+f2v_L03	3	q	M	B:a	differ
+f2v_L03	4	r	H		agree
+f2v_L03	5	s	H		agree
+f2v_L03	6	i	H		agree
+f2v_L03	7	p	H		agree
+f2v_L03	8	q	M	B:g	differ
+f2v_L03	9	s	H		agree
+f2v_L03	10	o	H		agree
+f2v_L03	11	p	H		agree
+f2v_L03	12	/	H		agree
+f2v_L03	13	3	M	B:z	differ
+f2v_L03	14	g	H		agree
+f2v_L03	15	'	H		agree
+f2v_L04	1	i	H		agree
+f2v_L04	2	r	H		agree
+f2v_L04	3	q	M	B:g	differ
+f2v_L04	4	p	H		agree
+f2v_L04	5	s	H		agree
+f2v_L04	6	h	H		agree
+f2v_L04	7	k	H		agree
+f2v_L04	8	s	H		agree
+f2v_L04	9	c	H		agree
+f2v_L04	10	e	H		agree
+f2v_L04	11	l	H		agree
+f2v_L04	12	'	M	A:-	gap
+f2v_L05	1	r	H		agree
+f2v_L05	2	g	H		agree
+f2v_L05	3	l	H		agree
+f2v_L05	4	p	H		agree
+f2v_L05	5	s	H		agree
+f2v_L05	6	o	H		agree
+f2v_L05	7	n	H		agree
+f2v_L05	8	/	M	A:-	gap
+f2v_L05	9	s	H		agree
+f2v_L05	10	p	H		agree
+f2v_L05	11	y	H		agree
+f2v_L05	12	h	H		agree
+f2v_L05	13	/	M	A:-	gap
+f2v_L05	14	B	M	A:-	gap
+f2v_L05	15	ß	M	B:l	differ
+f2v_L06	1	p	H		agree
+f2v_L06	2	q	M	B:a	differ
+f2v_L06	3	y	H		agree
+f2v_L06	4	g	M	A:-	gap
+f2v_L06	5	q	M	B:/	differ
+f2v_L06	6	p	H		agree
+f2v_L06	7	q	M	B:a	differ
+f2v_L06	8	s	H		agree
+f2v_L06	9	'	M	A:-	gap
+f2v_L06	10	/	H		agree
+f2v_L06	11	q	H		agree
+f2v_L06	12	/	H		agree
+f2v_L06	13	s	M	B:f	differ
+f2v_L06	14	t	H		agree
+f2v_L07	1	9	M	A:-	gap
+f2v_L07	2	q	M	B:/	differ
+f2v_L07	3	q	H		agree
+f2v_L07	4	s	H		agree
+f2v_L07	5	g	H		agree
+f2v_L07	6	q	H		agree
+f2v_L07	7	x	H		agree
+f2v_L07	8	q	H		agree
+f2v_L07	9	k	H		agree
+f2v_L07	10	'	M	A:-	gap
+f2v_L07	11	b	H		agree
+f2v_L07	12	3	M	B:z	differ
+f2v_L08	1	p	H		agree
+f2v_L08	2	r	H		agree
+f2v_L08	3	k	H		agree
+f2v_L08	4	/	M	A:-	gap
+f2v_L08	5	s	H		agree
+f2v_L08	6	y	H		agree
+f2v_L08	7	a	M	A:-	gap
+f2v_L08	8	q	M	B:/	differ
+f2v_L08	9	s	H		agree
+f2v_L08	10	7	H		agree
+f2v_L08	11	q	H		agree
+f2v_L08	12	p	H		agree
+f2v_L09	1	x	M	B:X	differ
+f2v_L09	2	i	M	B:I	differ
+f2v_L09	3	/	H		agree
+f2v_L09	4	a	H		agree
+f2v_L09	5	k	H		agree
+f2v_L09	6	/	M	A:-	gap
+f2v_L09	7	7	H		agree
+f2v_L09	8	/	M	A:-	gap
+f2v_L09	9	s	H		agree
+f2v_L09	10	g	M	B:q	differ
+f2v_L09	11	o	H		agree
+f2v_L09	12	l	H		agree
+f2v_L10	1	7	H		agree
+f2v_L10	2	n	H		agree
+f2v_L10	3	g	M	B:/	differ
+f2v_L10	4	q	H		agree
+f2v_L10	5	g	M	A:-	gap
+f2v_L10	6	p	H		agree
+f2v_L10	7	y	H		agree
+f2v_L10	8	/	M	A:-	gap
+f2v_L10	9	p	H		agree
+f2v_L10	10	e	H		agree
+f2v_L10	11	7	H		agree
+f2v_L10	12	r	H		agree
+f2v_L11	1	q	H		agree
+f2v_L11	2	k	H		agree
+f2v_L11	3	/	M	A:-	gap
+f2v_L11	4	s	H		agree
+f2v_L11	5	q	H		agree
+f2v_L11	6	r	H		agree
+f2v_L11	7	o	H		agree
+f2v_L11	8	n	H		agree
+f2v_L11	9	q	H		agree
+f2v_L11	10	v	M	B:y	differ
+f2v_L11	11	a	M	B:n	differ
+f2v_L12	1	7	H		agree
+f2v_L12	2	t	H		agree
+f2v_L12	3	/	M	A:-	gap
+f2v_L12	4	h	H		agree
+f2v_L12	5	y	H		agree
+f2v_L12	6	/	H		agree
+f2v_L12	7	h	H		agree
+f2v_L12	8	q	M	B:g	differ
+f2v_L12	9	p	H		agree
+f2v_L12	10	q	M	A:-	gap
+f2v_L12	11	h	H		agree
+f2v_L12	12	/	M	A:-	gap
+f2v_L12	13	x	M	B:v	differ
+f2v_L12	14	v	H		agree
