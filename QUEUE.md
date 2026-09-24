@@ -2702,3 +2702,20 @@ attempts + 2 `browser_fetch.js` attempts (both timed out) = 6 requests. `digital
 reachability check only. WebSearch: 6 queries. github.com: 1 shallow clone each of dbourdeau/cyphersolver and
 aaymeloglu/unsolved-ciphers, grep only (`guelf`/`wolfenb`/`hab.de`), both deleted after. No credentials used,
 no subagents, never check-solved, never promoted.
+
+## Printed ciphertext, HathiTrust detector (LANE N, 24 September 2026)
+
+DETECTOR resume worker (`.claude/briefs/runs/2026-09-24-lane-n-detHT2.md`, continuing
+`.claude/briefs/runs/2026-09-24-lane-n-detHT.md`): full method, both positive controls (Thurloe vol.1 Vande
+Perre cipher, Rommel 1840 Hesse cipher) and the negative control (Balzac) all PASS, and the systematic
+false-positive analysis of the 212-volume main pass, are in `sources/htrc/NOTES.md`. This is a detector round,
+not a solver or verifier pass: rule 10 applies, nothing here is promoted or solved, no wording of new/unpublished/
+first is used. Row prefix `HT` was reserved for this round; only one row survives judging (quality over
+quantity -- the other 55 of 56 flagged volumes are explained as General Index sections, muster/pay-roll lists,
+or notarial footnote appendices, detailed in NOTES.md, and are not listed as rows here).
+
+| id | edition | htid(s) | scan seq | signal | decipherment word nearby | next step |
+|---|---|---|---|---|---|---|
+| HT1 | *Recueil des instructions données aux ambassadeurs et ministres de France ... Suède*, vol. 2 (1884) | `njp.32101076191640` (seq 24), `hvd.hl237b` (seq 26) -- two independent library scans agreeing | 24 / 26 (table of contents, near front matter) | Header `TABLE DES CHAPITRES`; body token `Chiffre` (capitalised) x2 -- consistent with a chapter/appendix titled "Chiffre" (cipher table) for the Sweden embassy, which this series includes in some volumes | "Chiffre" itself is the signal; not a decipherment-word coincidence in calendar prose (see NOTES.md's discussion of why that check is unreliable for calendar-style editions) | Not found by name in `dbourdeau/cyphersolver` or `aaymeloglu/unsolved-ciphers` (grepped for Suède/Sweden/Recueil des instructions this session). EF gives no word order, so the printed page number for the "Chiffre" chapter could not be read from the token counts -- next worker needs the table-of-contents page image (babel.hathitrust.org or a library copy; out of this brief's hosts) to find that page number, then check it |
+
+Requests and per-series false-positive breakdown: `sources/htrc/NOTES.md`.
