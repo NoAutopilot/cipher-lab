@@ -67,3 +67,33 @@ Read each cipher-block line left to right. For every mark:
 - Word/group breaks (visible gaps in the manuscript line): start a new `idx` but do not insert a separate
   "space" sign; the reconciler compares position-by-position within each `line` key, and gaps are handled by
   the alignment, not by an explicit token.
+
+## R21 codes (24 Sept 2026, aligner, from the native-resolution Huygens scans, not the 100dpi PNGs)
+
+Used in `align_*.txt`, `ciphertext_*.tsv`, `pairs_*.tsv`, `key.tsv`. Digits and plain letters as themselves.
+The 74 alignment settles several atlas entries: G1 (Λ/λ) = t, G2 (Δ) = o and does occur in 74 (atlas said
+not), G3 = m, G4 (π, two straight legs) = s, G6 (ε) = i. New codes:
+
+| code | shape | unit (74) |
+|---|---|---|
+| 1 | short upright stroke, dotless "ı" or "1" (not separable at this hand) | e |
+| TL | T with the right leg turned into an L foot (distinct from G4's two straight legs) | sch |
+| XX | two X written together | w |
+| Zb | Z with a crossbar (Ƶ) | z (plain Z = d) |
+| ZZ | two barred Z run together | zu (word sign) |
+| F | long s / f with crossbar (ƒ) | p |
+| J | I-beam, bar top and bottom (⌶ small, lowercase height) | st |
+| Xy | x with dots/flourish | y |
+| Xk | x with horizontal bar (Ӿ) | k |
+| VmV | G3 between two V | König (word sign) |
+| Wm | w-like loop joined to G3 | Frankreich (word sign) |
+| ENG | reversed-L / hook + V (⅂V) | Engelland (word sign) |
+| UND | down-arrow, V with a stem | und (word sign) |
+| EL | large ⌶, capital height | E. L. (Euer Liebden) |
+| PAPST | large X-house sign with roof (line end, 74 p3 l.4) | Bapst |
+| HZG | cross + 0 | Hertzog |
+| BAY | tilde-struck 0 | Beyern |
+| NL | double-barred cross (‡) | Niderland |
+| HISP | underlined S + Zb | Hispanien |
+| ITAL | large X with bar, word-initial | Ital(ianer) |
+A trailing `?` on a code (X?, T?, 1?) marks a sign read with doubt.

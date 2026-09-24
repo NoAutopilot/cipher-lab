@@ -1,0 +1,27 @@
+# Aligner transcription of briefnr 74 cipher (f.18r = p3, f.18v = p4) against the leaf's contemporary
+# decipherment (f.19r). R21, 24 Sept 2026, from the native-resolution scan (Huygens PDF 00074.pdf).
+# One word per entry: cipher tokens | plaintext units (one unit per token). '?' = unit not readable.
+# Sign codes: see glyphs/atlas.md "R21 codes". Lines follow the manuscript.
+p3 1: Z G6 1 | d i e ;; Z V 1 Xy | d r e y ;; G1 5 3 X G4 1 7 G1 | t h a u s e n t ;; T F 3 7 G6 1 V | s p a n i e r ;; XX 1 6 4 5 1 | w e l c h e ;; X 7 T 1 V | u n s e r ;; VmV | König ;; Z 1 G3 | d e m
+p3 2: 9 V 3 7 G1 Zb G2 T 1 7 | f r a n t z o s e n ;; ZZ | zu ;; 5 X 6 9 9 | h u l f f ;; TL G6 4 Xk G1 G1 | sch i c k t t ;; 6 G6 1 0 1 7 | l i e g e n ;; X 9 9 | u f f ;; Z 1 V | d e r ;; T F 3 7 G6 TL 1 7 | s p a n i sch e n
+p3 3: 0 V 1 7 G6 G1 Zb 1 7 | g r e n i t z e n ;; X 7 Z G1 | u n d t ;; T 1 G6 7 G1 | s e i n t ;; 9 1 V G1 G6 0 | f e r t i g ;; G6 7 | i n ;; Wm | Frankreich ;; ZZ | zu ;; Zb G6 1 5 1 7 | z i e h e n ;; T G2 | s o ;; T 1 G6 7 G1 | s e i n t
+p3 4: 3 X 4 5 | a u c h ;; Z G6 1 | d i e ;; Z V 1 G6 | d r e i ;; G1 5 3 X G4 1 7 G1 | t h a u s e n t ;; ITAL G6 7 1 V | Ital i n e r ;; G6 G3 | i m ;; 3 7 Zb X? 0 | a n z u g ;; T G2 | s o ;; S 3 G1 | h a t ;; Z 1 V | d e r ;; PAPST | Bapst
+p3 5: Z 1 G3 | d e m ;; VmV | König ;; ZZ | zu ;; Wm | Frankreich ;; 1 G6 7 | e i n ;; 3 7 Zb 3 5 6 6 | a n z a h l l ;; Xk V G6 0 G4 X G2 6 4 Xk | k r i g s v o l c k ;; ZZ | zu ;; 0 1 TL G6 4 Xk G1 | g e sch i c k t
+p3 6: 3 8 1 V | a b e r ;; XX G6 1 Z 3 T | w i e d a s ;; 0 1 TL V 1 Xy | g e sch r e y ;; X G2 G3 | v o m ;; 9 V G6 1 Z 1 7 | f r i e d e n ;; 0 1 XX 1 G4 1 7 | g e w e s e n ;; S 3 G1 | h a t ;; 1 V | e r ;; T G2 6 G6 4 S | s o l i c h
+p3 7: 8 1 X V 6 3 X 8 1 7 | b e u r l a u b e n ;; 6 3 G4 1 7 | l a s e n ;; 3 8 1 V | a b e r ;; 7 X 5 7 | n u h n ;; XX G6 1 Z 1 V | w i e d e r ;; 3 7 0 1 7 G2 G3 G3 1 7 | a n g e n o m m e n ;; Z 1? V | d e r
+p3 8: HZG | Hertzog ;; ZZ | zu ;; BAY | Beyern ;; 5 3 G1 | h a t ;; T 1 G6 7 X G2 6 4 Xk | s e i n v o l c k ;; T G2 | s o ;; Z 1 G3 | d e m ;; VmV | König ;; ZZ | zu ;; Wm | Frankreich ;; ZZ | zu ;; 5 X 6 9 9 | h u l f f
+p3 9: Xk S G2 G3 G3 1 7 | k h o m m e n ;; T G2 6 6 | s o l l ;; 3 X 4 5 | a u c h ;; 9 1 V G1 G6 0 | f e r t i g ;; XX G6 V | w i r ;; 3 8 1 V | a b e r ;; G6 7 | i n ;; Z G6 1 G4 1 7 | d i e s e n ;; NL 1 7 | Niderland e n
+p3 10: T 1 G6 7 G1 | s e i n t ;; T? G2 4 S | n o c h ;; J G6 6 | st i l ;; XX G6 V | w i r ;; 0 6 1 G6 4 S XX G2 6 | g l e i c h w o l ;; 1 V | e r ;; T X 4 S G1 | s u c h t ;; XX G2 V Z 1 7 | w o r d e n
+p3 11: Z 1 G3 | d e m ;; VmV | König ;; ZZ | zu ;; Wm | Frankreich ;; 8 1 G6 J 3 7 Z G1 | b e i st a n d t ;; ZZ | zu ;; G1 5 X 7 | t h u n ;; 5 3 8 1 7 T | h a b e n s ;; 3 8 1 V | a b e r ;; G3 G6 G1 | m i t
+p3 12: 0 6 G6 G3 9 9 | g l i m f f ;; 3 8 0 1 TL 6 3 0 1 7 | a b g e sch l a g e n ;; X 7 Z G1 | u n d t ;; G3 G2 4 5 G1 1 7 | m o c h t e n ;; XX G2 6 6 | w o l l ;; 6 G6 1 Z 1 7 | l i e d e n
+p3 13: Z 3 T | d a s ;; X 7 T 1 V | u n s e r ;; VmV | König ;; G6 7 | i n ;; HISP | Hispanien ;; Z 1 V 0 6 G6 4 S 1 7 | d e r g l i c h e n ;; 3 X 4 5 | a u c h ;; G1 S 1 G1 1 | t h e t e ;; XX G6 V | w i r
+p3 14: Xk S G2 7 7 1 7 | k h o n n e n ;; G6 5 7 1 7 | i h n e n ;; 3 8 1 V | a b e r ;; G6 5 1 7 | i h e n ;; T 1 G6 G1 | s e i t ;; Zb 3 5 7 | z a h n ;; T 1 G6 7 1 G3 | s e i n e m ;; X G2 V S 3 8 1 7 | v o r h a b e n
+p3 15: 7 G6 G1 G1 | n i t t ;; X 1 V 5 G6 7 Z 1 V 1 7 | v e r h i n d e r e n ;; XX 1 6 4 5 T | w e l c h s ;; 3 6 6 1 T | a l l e s ;; EL | E.L. ;; 8 1 G6 | b e i ;; T G6 4 5 | s i c h ;; G6 7 | i n
+p3 16: 0 1 S 3 G6 G3 8 G1 | g e h a i m b t ;; XX 1 V Z 1 7 | w e r d e n ;; Zb 8 1 5 3 6 G1 1 7 | z b e h a l t e n ;; XX G6 G4 1 7 | w i s e n
+p4 1: 1 T S 3 G1 G1 | e s h a t t ;; 3 X 4 5 | a u c h ;; 1 G6 7 | e i n ;; 9 V 3 7 G1 Zb G2 T G6 TL 1 V | f r a n t z o s i sch e r ;; S 1 V V | h e r r ;; 0 1 7 3 7 G1 | g e n a n t ;; Z 1 V S 1 V X G2 7 | d e r h e r v o n
+p4 2: G3 3 6 6 8 G6 7 G6 7 | ? ? ? ? ? ? ? ? ? ;; Z 1 V | d e r ;; VmV G6 7 | König i n ;; ZZ | zu ;; ENG | Engelland ;; 1 G6 7 1 7 | e i n e n ;; 5 3 9 1 7 | h a f e n ;; 0 1 7 3 7 G1 | g e n a n t ;; 6 3 5 3 X 1 V | l a h a v e r ;; Z 1 | d e
+p4 3: 0 V 3 T | g r a s ;; X 1 V Xk 3 X 9 9 G1 | v e r k a u f f t ;; T G2 6 6 | s o l l ;; T 1 S V | s e h r ;; J 3 V 4 Xk | st a r c k ;; UND | und ;; ENG | Engelland ;; XX G2 6 6 | w o l l ;; 0 1 6 1 0 1 7 | g e l e g e n ;; T 1 G6 7 | s e i n
+p4 4: T G2 S 3 G1 G1 | s o h a t t ;; 3 X 4 5 | a u c h ;; Z G6 1 | d i e ;; VmV G6 7 | König i n ;; ZZ | zu ;; ENG | Engelland ;; G6 1 7 | i e n ;; 3 G3 8 3 G4 3 Z 1 X V | a m b a s a d e u r ;; 3 X G4 | a u s ;; Wm | Frankreich
+p4 5: XX G6 1 Z 1 V | w i e d e r ;; 3 8 9 X V Z 1 V 7 | a b f u r d e r n ;; 6 3 G4 1 7 | l a s e n ;; Z 3 T | d a s ;; G3 3 7 | m a n ;; X 1 V G3 X 1 Z G1 | v e r m u e d t ;; T G6 1 | s i e ;; XX 1 V Z 1 | w e r d e
+p4 6: T G6 4 5 | s i c h ;; XX G6 1 Z 1 V | w i e d e r ;; Z 1 7 | d e n ;; VmV | König ;; UND | und ;; Z 1 G3 | d e m ;; F V G6 7 G1 Zb 1 7 | p r i n t z e n ;; X G2 7 | v o n ;; 4 G2 7 Z 1 | c o n d e ;; ZZ G3 | zu m
+p4 7: 8 1 J 1 7 | b e st e n ;; G6 7 | i n ;; Z G6 1 G4 1 7 | d i e s e n ;; 6 1 X 9 9 1 7 | l e u f f e n ;; 1 V Xk 6 1 V 1 7 | e r k l e r e n
