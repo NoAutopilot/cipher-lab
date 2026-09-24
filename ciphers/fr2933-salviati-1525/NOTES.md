@@ -589,3 +589,35 @@ Regenerate: `python3 control/solvex2/make_cm.py N`, then `tools/crib_rounds.py -
 (5 it16 files, control/corpus_args.txt) --seed N --restarts 6 --iters 120000`, then `--round R --cribs cm720_sN/cribsR.txt`
 and `--score`. Requests: none.
 Suggestion (not done): at N=720, try blind at 48-96 restarts and give the loop only the best-scoring restart.
+
+## Leaf f.55v (24 Sept 2026, LANE R5 H2)
+
+Worker H2 (Sonnet, cap $12, session_01QKxu7fUbqYfthJc5gXcZ5m), starting 20:51 UTC. Disk only, no fetches. Method
+exactly as J's f.54v ("Leaves f.54v-f.57v" above), Sonnet pass B this time given J's confusable-code pairs
+(eps/e, h/bh, tee/S4, psi/y, w/e, o./dl/h/tee/S7/#/+, Z/L).
+
+**Atlas rebuild check.** `glyphs/build.sh` needed numpy/pillow/opencv-python-headless/scikit-image/scikit-learn
+installed first (none present in this container). After installing, the rebuild's `segment`+`cluster` step did
+**not** reproduce the committed atlas byte-identically: box counts differ page by page from the committed
+`glyphs/signs.tsv` (e.g. this container's rebuild counted 499 f.55v sign boxes against the committed 495;
+f.54r 506 vs. the committed page's own count; `clusters.tsv` 5289 vs 5257 rows) -- almost certainly opencv/
+scikit-image version drift changing `connectedComponentsWithStats`/percentile-threshold results, not a
+non-deterministic seed (the script's own comment expects a fixed seed to reproduce exactly). Per the brief:
+**did not commit the atlas.** `git checkout --` restored `glyphs/{atlas.tsv,atlas.png,atlas_part1.png,
+atlas_part2.png,bitmaps.npz,clusters.tsv,marks.tsv,signs.tsv,sheet_signs_*.png}` to the committed versions
+before doing anything else, and reverted `f54r_boxes.tsv` and five `strips/f54r_*.jpg` that `build.sh`'s own
+last step (a classify call on f.54r) had overwritten using the drifted rebuild -- f.54r is H1's leaf, not
+touched otherwise. Kept only `glyphs/crops/*.png`: `cmd_segment` writes these straight from
+`Image.open(path).convert('L')` before any opencv connected-components call, so they are a deterministic
+grayscale render of the same source image regardless of the library-version drift, and `classify`'s strip
+cutter only reads them for pixel content (`cv2.imread`), not coordinates -- coordinates come from the
+committed `signs.tsv`. Confirmed committed `signs.tsv` already holds 495 f.55v boxes as NOTES' "Leaves
+f.54v-f.57v" section recorded, matching after the restore.
+
+**Classify.** `tools/glyph_atlas.py classify --out glyphs --labels glyphs/labels.json --page f55v --tsv
+f55v_boxes.tsv --strips strips` against the committed atlas/labels: 495 boxes classified, kNN code = cluster
+code for 451/495, 359 cipher codes (script_code != `_`), 19 line strips written
+(`strips/f55v_L01..L19.jpg`). `f55v_boxlist_for_passes.tsv` built from `f55v_boxes.tsv` (line, pos,
+script_code, script_marks, share), same column set as `f54v_boxlist_for_passes.tsv`.
+
+Progress continues below as pass A / pass B / reconciliation land.
