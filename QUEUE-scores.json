@@ -6965,5 +6965,18 @@
    }
   ],
   "rows": []
+ },
+ "lane_n_pares": {
+  "_about": "LANE N scout of 24 September 2026 (worker for session_01W4z8JhXJYHRjorPC1Qkpiy, .claude/briefs/runs/2026-09-24-lane-n-scES.md): pares.mcu.es/pares.cultura.gob.es and bdh.bne.es. Both hosts unreachable this session before any query form loaded -- zero candidates, zero rows, control not attempted (query form unverified). PARES: pares.mcu.es answers curl cleanly (302) but the redirect target pares.cultura.gob.es fails TLS verification (real FNMT-RCM government cert, root not in this session's CA bundle -- a passthrough/trust gap, not the usual proxy-MITM CA issue) and fails the browser tool twice with a distinct 'upstream request failed' proxy stub; one Wayback CDX attempt also failed (reset then timeout via curl, same stub via browser) though a plain web.archive.org page loaded fine, confirming the failure is specific to PARES/the CDX endpoint. BDH: bnesearch/Search.do gives curl 403 and the browser tool a Cloudflare-style 'Just a moment...' interstitial, matching QUEUE.md's 19 Sept 2026 note for this host; three alternate BNE endpoints (datos.bne.es, the OAI-PMH handler, bdh-rd.bne.es) also 403. Full log: sources/solver-diffs/2026-09-24-lane-n-pares.tsv.",
+  "date": "24 September 2026",
+  "requests_per_host": {
+   "pares.mcu.es/pares.cultura.gob.es (curl)": 3,
+   "pares.mcu.es/pares.cultura.gob.es (browser_fetch.js)": 3,
+   "web.archive.org (curl)": 2,
+   "web.archive.org (browser_fetch.js)": 2,
+   "bdh.bne.es/datos.bne.es/bdh-rd.bne.es (curl)": 3,
+   "bdh.bne.es (browser_fetch.js)": 1
+  },
+  "rows": []
  }
 }

@@ -1,0 +1,16 @@
+host	url_or_query	method	result	notes
+pares.mcu.es	https://pares.mcu.es/	curl -A "Mozilla/5.0"	302 -> https://pares.cultura.gob.es/inicio.html	root redirects cleanly; TLS handshake to pares.mcu.es itself succeeds
+pares.mcu.es	https://pares.mcu.es/ParesBusquedas20/catalogo/find/2?texto=cifra	curl -L -A "Mozilla/5.0"	curl 60, unable to get local issuer certificate	fails only after following the redirect onto pares.cultura.gob.es; that host's real cert chains to ES FNMT-RCM "AC Componentes Informaticos", a root not in this session's CA bundle (openssl s_client via proxy shows the real government leaf cert, not a proxy-MITM cert, so this is a genuine passthrough/root-trust gap, not the usual agent-proxy CA problem)
+pares.cultura.gob.es	https://pares.cultura.gob.es/inicio.html	openssl s_client -proxy 127.0.0.1:34021	TLS handshake completes, verify return code 21 (unable to verify first certificate)	diagnostic only, confirms cert-chain gap, not a retry
+pares.mcu.es	https://pares.mcu.es/ParesBusquedas20/catalogo/find	browser_fetch.js	"upstream request failed" (174 bytes), two attempts >=3s apart	one retry per good-citizen rule; same stub both times
+pares.mcu.es	https://pares.mcu.es/ParesBusquedas20/catalogo/inicio.html	browser_fetch.js	"upstream request failed"	different path, same stub
+pares.cultura.gob.es	https://pares.cultura.gob.es/inicio.html	browser_fetch.js	"upstream request failed"	same stub on the redirect target directly
+web.archive.org	cdx/search/cdx?url=pares.mcu.es*&output=json&filter=statuscode:200	curl -A "Mozilla/5.0"	curl 35, connection reset by peer	one attempt
+web.archive.org	cdx/search/cdx?url=pares.mcu.es*&output=json&filter=statuscode:200	curl -A "Mozilla/5.0" (retry)	curl 28, timed out after 25s	one retry per good-citizen rule
+web.archive.org	cdx/search/cdx?url=pares.mcu.es&matchType=domain&output=json	browser_fetch.js	"upstream request failed"	CDX API specifically fails; plain web.archive.org pages load fine (control below)
+web.archive.org	https://web.archive.org/web/20240101000000*/pares.mcu.es	browser_fetch.js	200, Wayback Machine calendar page rendered, 142252 bytes	confirms web.archive.org itself and browser_fetch.js both work; calendar widget is client-side JS and the saved DOM carries no direct capture links to follow further within the one-retry budget
+bdh.bne.es	https://bdh.bne.es/bnesearch/Search.do	curl -A "Mozilla/5.0"	403	one attempt
+bdh.bne.es	https://bdh.bne.es/bnesearch/Search.do?text=cifra	browser_fetch.js	200 but "Just a moment..." Cloudflare-style JS/security-review interstitial, 1311653 bytes	same class of block QUEUE.md already logged for this host on 19 Sept 2026 ("403 to curl, one attempt, stood down (a bot check)")
+datos.bne.es	https://datos.bne.es/	curl -A "Mozilla/5.0"	403	alternate BNE endpoint tried once, same block
+bdh.bne.es	https://bdh.bne.es/bnedigital/oai/OAIHandler?verb=Identify	curl -A "Mozilla/5.0"	403	OAI-PMH endpoint tried once, same block
+bdh-rd.bne.es	https://bdh-rd.bne.es/	curl -A "Mozilla/5.0"	403	alternate BNE subdomain tried once, same block

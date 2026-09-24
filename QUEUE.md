@@ -1673,3 +1673,55 @@ errors, first pass) + 2 controls + 15 bug-recovery reruns (1 succeeded, 14 repro
 total, well within the ~400 cap, one at a time, >=1.5s apart, no other host touched. No subagents, no logins;
 two solver-repo shallow clones made available for grep but not needed (no survivor passage required it) and not
 committed.
+
+## Spanish archives beyond the queue, PARES and BDH (LANE N scout of 24 September 2026)
+
+Brief: PARES (pares.mcu.es / pares.cultura.gob.es) beyond Simancas/AHN/AGI rows already on the board, and the
+Biblioteca Digital Hispanica (bdh.bne.es), for cifra/cifrado/en cifra/descifrado/"carta en cifra"/"despacho
+cifrado"/"con su descifrado"/"cifra de"/"contracifra" items 1450-1800 with PARES images online and no descifrado
+alongside. Zero candidates: both hosts were unreachable this session before any query form loaded, so no search
+was ever run and no control could be attempted (logged as **query form unverified** for both, per the brief's
+control rule, not as "no candidates").
+
+**PARES: blocked, not a bot challenge in the usual sense.** `pares.mcu.es` itself completes a TLS handshake and
+answers curl with a clean 302 to `pares.cultura.gob.es/inicio.html` (the real search UI lives there). Following
+that redirect fails with curl's "unable to get local issuer certificate": `openssl s_client` through the session
+proxy shows the *real* Spanish government leaf certificate (CN `*.cultura.gob.es`, issuer FNMT-RCM "AC Componentes
+Informaticos"), not a proxy-generated one, so this host is passed through untouched by the intercepting proxy and
+its root CA is simply not in this session's trust bundle -- a different failure from the usual agent-proxy
+MITM-CA gap the Access playbook fixes with `certutil`. The browser tool (already fixed for the proxy's own CA,
+confirmed by `certutil -L` listing `ccr-agent-proxy`) gets a distinct failure on every path tried against either
+hostname (`/ParesBusquedas20/catalogo/find`, `/ParesBusquedas20/catalogo/inicio.html`,
+`pares.cultura.gob.es/inicio.html`): a 174-byte `upstream request failed` stub, twice >=3s apart (the one retry
+the good-citizen rule allows), never a real page. Per the brief, tried one Wayback capture: the CDX search API
+(`web.archive.org/cdx/search/cdx?url=pares.mcu.es...`) itself fails the same way (curl: connection reset, then a
+25s timeout on the one retry; browser tool: the same `upstream request failed` stub) while a plain
+`web.archive.org/web/.../pares.mcu.es` calendar page loads fine (200, 142KB) -- confirming web.archive.org and the
+browser tool both work in general and the failure is specific to PARES/the CDX endpoint, not this session's
+egress broadly. The calendar page is a client-side JS widget with no capture links in the saved DOM, so it could
+not be followed further within the one-retry budget. This matches and extends QUEUE.md's 19 Sept 2026 note that
+PARES was unreachable from this environment (then: curl reset + WebFetch 503; now: a cert-chain gap plus a
+distinct proxy-stub failure on the browser tool) -- five days apart, still blocked, by a different symptom each
+time. Switched to BDH per the brief.
+
+**BDH: Cloudflare-style challenge, as already logged.** `bdh.bne.es/bnesearch/Search.do?text=cifra` returns curl
+403 (one attempt) and the browser tool a "Just a moment..." security-review interstitial (200, 1.3MB, one
+attempt) -- the same bot check QUEUE.md's 19 Sept 2026 entry already stood down on ("403 to curl, one attempt,
+stood down (a bot check)"). Tried three alternate BNE endpoints once each, hoping for an API route around the
+challenge: `datos.bne.es` (BNE's linked-data service) 403, `bdh.bne.es/bnedigital/oai/OAIHandler` (OAI-PMH) 403,
+`bdh-rd.bne.es` (an alternate viewer subdomain) 403. All blocked the same way; stood down per the good-citizen
+rule rather than retrying in a loop.
+
+Per-host counts: pares.mcu.es/pares.cultura.gob.es -- curl 3, browser_fetch.js 3, openssl diagnostic 1 (not a
+retry); web.archive.org -- curl 2, browser_fetch.js 2; bdh.bne.es/datos.bne.es/bdh-rd.bne.es -- curl 3,
+browser_fetch.js 1. Raw 0, kept 0, copy-free 0 from both hosts combined. Full log:
+`sources/solver-diffs/2026-09-24-lane-n-pares.tsv`.
+
+No ES-prefixed rows this sweep (the prefix stays reserved for whichever LANE N worker gets a working route to
+either host). Caveats: (1) this is an access failure, not evidence the hosts hold nothing -- Aymeloglu's
+`unsolved-ciphers` repository already caches a PARES sweep (`catalogue/pares-*.jsonl`, cited in QUEUE.md's 19
+Sept entry) that a later worker should grep instead of re-querying PARES live; (2) the FNMT-RCM cert gap is a
+session/environment issue a later worker or the orchestrator could resolve by adding that CA to the trust bundle,
+which would very likely unblock `pares.cultura.gob.es` for curl even without the browser tool; (3) BDH's
+challenge may be solvable the way RAH's Anubis challenge was solved by a browser click-through elsewhere in
+QUEUE.md's 24 Sept LANE S section -- not attempted here to stay within the one-retry-per-host rule and the $8 cap.
