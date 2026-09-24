@@ -1,0 +1,22 @@
+{
+  "ark": "btv1b9060495t",
+  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/manifest.json",
+  "canvas_count": 367,
+  "note": "All 367 IIIF canvas labels are 'NP' (no folio metadata in the manifest itself). archivesetmanuscrits.bnf.fr's own item notice (cc58150z) gives item 1 (the 47 ciphered letters) as Fol. 1-110, item 2 (Le Tellier, no cipher) as Fol. 111-182, but does not enumerate item 1's 47 letters individually -- no folio-level shortcut exists beyond that two-item split.",
+  "fetches": [
+    {"date": "24 Sept 2026 (prior pass)", "canvas": 20, "file": "f20.jpg", "content": "clear French letter, Italy news, siege of Bordeaux (the city, unrelated to the diplomat Antoine de Bordeaux)", "folio_seen": 7},
+    {"date": "24 Sept 2026 (prior pass)", "canvas": 100, "file": "f100.jpg", "content": "faint illegible verso show-through, no cipher"},
+    {"date": "24 Sept 2026 (prior pass)", "canvas": 150, "file": "f150.jpg", "content": "blank verso"},
+    {"date": "24 Sept 2026 (this pass)", "canvas": 106, "file": "f106_thumb.jpg", "content": "blank/docket verso, faint sideways endorsement '...16 [?] octobre 1659'"},
+    {"date": "24 Sept 2026 (this pass)", "canvas": 107, "file": "f107_thumb.jpg / f107_corner.jpg", "content": "clear French letter, 'Monsieur' opening, no cipher", "folio_seen": "57 (corner-crop read, NOT trusted -- see NOTES.md calibration discussion, contradicted by the more consistent canvas 160-180 rate)"},
+    {"date": "24 Sept 2026 (this pass)", "canvases": "8,12,16,...,220 (stride 4, 54 canvases)", "files_pattern": "census/f{N}.jpg", "size": "600px wide IIIF thumbnails (full/,600/0/native.jpg), 8-44KB each", "content": "see NOTES.md 'Census pass' section for the full per-canvas table (content type, decipherment presence, folio numbers where legible); 6/54 show cipher or mixed content, in two bands (canvas 8-32 and 168-172), none show a visible decipherment in this sample", "read_by": "Sonnet subagent, image-only, no network access"}
+  ],
+  "requests_this_pass": {
+    "gallica.bnf.fr": "~63 (2 texteBrut probes redirected to an altcha challenge, stopped and not retried; 1 manifest.json already on disk; 3 single-leaf/corner-crop fetches for calibration, 1 connection reset retried once; 54 census thumbnails, 3 connection resets each retried once, all recovered; no 403/altcha on any IIIF image fetch)",
+    "archivesetmanuscrits.bnf.fr": "3 (1 redirect, 1 connection reset retried once, 1 success -- the item notice, see NOTES.md)",
+    "archive.org / be-api.us.archive.org": "6 (1 advancedsearch, 1 bad-identifier probe, 4 full-text-search queries against Depping's Correspondance administrative, one per volume)",
+    "googleapis.com/books": "2 (with &key=$GOOGLE_BOOKS_KEY&country=US, key never printed)",
+    "github.com": "2 shallow clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers), grepped for '5160'/'brienne'/'servien', deleted after",
+    "WebSearch": "0 (direct API/catalogue checks covered this pass)"
+  }
+}
