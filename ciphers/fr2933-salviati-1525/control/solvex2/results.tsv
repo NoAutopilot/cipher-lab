@@ -1,0 +1,4 @@
+seed	K	blind6	blind24	r0	r1	r2	r3	r4	cribs_right_wrong_per_round
+1	108	46.9	50.1	46.9	50.7	-	-	-	r1 8/4; stopped, no further sure word
+2	108	65.3	58.9	65.3	61.1	72.5	75.6	76.1	r1 7/5, r2 5/0, r3 4/2, r4 7/0
+3	109	18.9	75.4	18.9	-	-	-	-	no word the reader was sure of, 0 cribs

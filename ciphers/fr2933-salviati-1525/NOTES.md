@@ -537,3 +537,55 @@ Files: `control/solvex/{a_it720,b_de540}_s{1,2,3}/` (cipher.tsv, hidden.json, st
 cribs*.txt, scores.tsv, blind_24restarts.json), Mellon's in `ciphers/beinecke-mellon29-elia/control/solvex/`. Regenerate
 any round with `python3 tools/crib_rounds.py --dir DIR --round R --cribs DIR/cribsR.txt` (deterministic by seed) and
 `--score`. Requests: none.
+
+## Crib loop on code+mark at N=720 (solvEX2)
+
+Worker solvEX2 (Opus, cap $12, session_01DHytvHaqJK368edmcp46ZJ), 24 Sept 2026 20:11-20:19 UTC. Brief
+`.claude/briefs/runs/2026-09-24-solvex2-codemark-loop.md`. Disk only, no hosts, no subagents. **Controls only; the target
+was not run** (gate below not met). No reading of fr.2933; grades stay H0 C0 S0 M0 I0.
+
+**Question.** Does solvEX's crib loop lift the code+mark (cm) design at N=720, the design and length of the pooled
+f.54r+f.54v ciphertext, where worker P's blind solve reads 22-67%?
+
+**Method.** Three cm controls built exactly as P's `codemark_curve.py build('cm', 720, seed)` (126 code+mark types
+allotted by frequency deficit, the target's own sign/box row pattern, each plain box withholding 2 letters, Vanzolini
+chars 200,050 on, held out of the five-collection corpus), seeds 1-3, K = 108/108/109 as P's. `control/solvex2/make_cm.py`
+writes them with sign ids u000-u125 (the code^mark names contain '#'); `tools/crib_rounds.py` gained `--cipher-tsv/--plain`
+to load such a prebuilt control (test added to `tools/tests/test_crib_rounds.py`, passes). The key and plaintext sit in
+`src/hidden_sN.json` and each run's `hidden.json`, which the reader never opened; `--score` printed numbers only.
+Solver settings as P: order 3, 6 restarts x 120,000 per round; blind 24 = the same control at 24 restarts. The reader
+worked from `control/solvex2/view_gaps.py`, which shows the decode with the target's plain-box positions as '..' (public
+on the leaf). At most 12 cribs a round, from words read in the decode, each crib file giving its reason.
+
+| seed | K | blind 6 | blind 24 | round 0 -> 1 -> 2 -> 3 -> 4 (letter %) | cribs right/wrong per round |
+|---|---|---|---|---|---|
+| 1 | 108 | 46.9 | 50.1 | 46.9 -> 50.7, then stopped (no further word the reader was sure of) | 8/4 |
+| 2 | 108 | 65.3 | 58.9 | 65.3 -> 61.1 -> 72.5 -> 75.6 -> 76.1 | 7/5, 5/0, 4/2, 7/0 |
+| 3 | 109 | 18.9 | 75.4 | 18.9, no word the reader was sure of, 0 cribs | - |
+
+(`control/solvex2/results.tsv`; per-run `cm720_sN/scores.tsv`, `cm720_sN_blind24/`.) Blind 6 does not repeat P's
+66.9/30.8/21.9 on the same controls: the sign ids differ, so the anneal takes another random path. At this design and
+length, the same control and seed read anywhere from 19% to 75% depending on the solver's path.
+
+**Verdict.**
+- **The loop adds 4.9 points on average on cm controls at N=720** (+3.8, +10.8, 0 over blind 6); no seed ends above 85%
+  (best 76.1). Gate for the target step (mean gain >= 15 and two seeds above 85%) **not met; target not run; no reading.**
+- **Does a mid-range decode give readable Italian?** At 65% (seed 2), yes, just enough: "necessita", "in fatto",
+  "non so che", "a uostre" in round 0, and "Signoria", "tutte quelle", "la commissione di andare" after round 2. The seed
+  ended 17.2 points above its own 24-restart blind run. At 47% (seed 1), only fragments; one round, 4 of 12 cribs wrong,
+  +3.8. At 19% (seed 3), nothing the reader could trust. solvEX found the same at 33%.
+- **The reader's cribs are less reliable here than on simple homophonic controls.** 31 of 42 new cribs were right (74%),
+  against 29 of 30 in solvEX. Two things account for it: every plain box cuts 2 letters out of the stream, so words
+  arrive in fragments, and most of the 108 signs occur only 1-5 times. One round made things worse (seed 2 round 1,
+  -4.2). The reader could not tell which of its cribs were wrong; it recovered by dropping a block that never settled.
+- **More compute competes with the loop at this design.** Seed 3 went from 18.9 to 75.4 at 24 restarts with no reader,
+  and seed 2 went down (65.3 to 58.9). The spread between runs is larger than anything the loop added, so at N=720 the
+  cheaper lever is more restarts, with the reader added on the best of them. Worker P's estimate stands: cm needs about
+  2,800 sign tokens (f.55r-f.57v) before blind decodes sit near 90%.
+- One reader, one run per seed; a small sample, not a measured curve.
+
+Files: `control/solvex2/{make_cm.py,view_gaps.py,results.tsv,src/,cm720_s{1,2,3}/,cm720_s{1,2,3}_blind24/}`.
+Regenerate: `python3 control/solvex2/make_cm.py N`, then `tools/crib_rounds.py --cipher-tsv ... --plain ... --corpus
+(5 it16 files, control/corpus_args.txt) --seed N --restarts 6 --iters 120000`, then `--round R --cribs cm720_sN/cribsR.txt`
+and `--score`. Requests: none.
+Suggestion (not done): at N=720, try blind at 48-96 restarts and give the loop only the best-scoring restart.

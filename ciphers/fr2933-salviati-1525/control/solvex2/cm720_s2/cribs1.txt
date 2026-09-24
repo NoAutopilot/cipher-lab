@@ -1,0 +1,6 @@
+# round 1 (seed 2), from round0 decode (view_gaps.py + positions)
+u035=t  # "necessida" 265-273 -> necessita
+u052=c u037=o u079=t u067=t  # "con tutto" 231-238
+u032=f u094=a u064=t u075=t  # "in fatto" 495-501
+u019=p u063=r  # "proporre" 347-353 (and "questo pe" 276-282)
+u068=n  # "o non so che" 408-415

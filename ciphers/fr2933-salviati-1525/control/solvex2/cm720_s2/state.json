@@ -1,0 +1,108 @@
+{
+ "control": "ciphers/fr2933-salviati-1525/control/solvex2/src/cipher_s2.tsv",
+ "corpus": [
+  "tools/data/it16/alcuneletteredip00ferr.txt",
+  "tools/data/it16/delleletterefam02seghgoog.txt",
+  "tools/data/it16/lettereinedited00tassgoog.txt",
+  "tools/data/it16/lettereinedited01cibrgoog.txt",
+  "tools/data/it16/lettereineditedi01carouoft.txt"
+ ],
+ "N": 720,
+ "K": 108,
+ "seed": 2,
+ "restarts": 6,
+ "iters": 120000,
+ "order": 3,
+ "uni_weight": 1.0,
+ "rounds": {
+  "0": {
+   "cribs": {}
+  },
+  "1": {
+   "cribs": {
+    "u035": "t",
+    "u052": "c",
+    "u037": "o",
+    "u079": "t",
+    "u067": "t",
+    "u032": "f",
+    "u094": "a",
+    "u064": "t",
+    "u075": "t",
+    "u019": "p",
+    "u063": "r",
+    "u068": "n"
+   }
+  },
+  "2": {
+   "cribs": {
+    "u035": "t",
+    "u032": "f",
+    "u094": "a",
+    "u064": "t",
+    "u075": "t",
+    "u019": "p",
+    "u063": "r",
+    "u068": "n",
+    "u006": "u",
+    "u091": "u",
+    "u010": "c",
+    "u015": "h",
+    "u022": "e"
+   }
+  },
+  "3": {
+   "cribs": {
+    "u035": "t",
+    "u032": "f",
+    "u094": "a",
+    "u064": "t",
+    "u075": "t",
+    "u019": "p",
+    "u063": "r",
+    "u068": "n",
+    "u006": "u",
+    "u091": "u",
+    "u010": "c",
+    "u015": "h",
+    "u022": "e",
+    "u016": "g",
+    "u017": "q",
+    "u097": "e",
+    "u061": "l",
+    "u043": "s",
+    "u115": "b"
+   }
+  },
+  "4": {
+   "cribs": {
+    "u035": "t",
+    "u032": "f",
+    "u094": "a",
+    "u064": "t",
+    "u075": "t",
+    "u019": "p",
+    "u063": "r",
+    "u068": "n",
+    "u006": "u",
+    "u091": "u",
+    "u010": "c",
+    "u015": "h",
+    "u022": "e",
+    "u016": "g",
+    "u017": "q",
+    "u097": "e",
+    "u061": "l",
+    "u043": "s",
+    "u115": "b",
+    "u011": "m",
+    "u026": "o",
+    "u046": "o",
+    "u041": "a",
+    "u045": "n",
+    "u012": "d",
+    "u051": "a"
+   }
+  }
+ }
+}

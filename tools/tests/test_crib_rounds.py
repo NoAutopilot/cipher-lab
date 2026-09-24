@@ -32,3 +32,11 @@ with tempfile.TemporaryDirectory() as d:
     assert (r1s[5], r1s[6], r1s[7]) == ('5', '4', '1'), out
     assert 'hidden' not in out and not any(c.isalpha() and len(c) == 1 for c in out.split()), out
     print('ok', out.strip().replace('\n', ' | '))
+    # --cipher-tsv/--plain: reload the same control from files into a fresh dir; round 0 must match the original
+    d2 = os.path.join(d, 'reload')
+    subprocess.run([sys.executable, T, '--dir', d2, '--cipher-tsv', os.path.join(d, 'cipher.tsv'), '--plain',
+                    os.path.join(d, 'hidden.json'), '--restarts', '6', '--iters', '60000'] +
+                   sum((['--corpus', c] for c in C), []), check=True, stdout=subprocess.DEVNULL)
+    assert json.load(open(os.path.join(d2, 'round0.json')))['decoded'] == \
+        json.load(open(os.path.join(d, 'round0.json')))['decoded']
+    print('ok --cipher-tsv reload')

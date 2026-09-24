@@ -1,0 +1,2 @@
+loaded control N=720 K=109; round 0 -> ciphers/fr2933-salviati-1525/control/solvex2/cm720_s3/round0.txt
+loaded control N=720 K=109; round 0 -> ciphers/fr2933-salviati-1525/control/solvex2/cm720_s3_blind24/round0.txt

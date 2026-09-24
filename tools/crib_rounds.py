@@ -10,6 +10,11 @@ only --score reads it, and it prints numbers only (accuracy, cribs right/wrong),
                          [--seed 1] [--restarts 8] [--iters 40000] [--order 3]
           builds the control (homophonic_anneal.make_control), writes DIR/cipher.tsv, DIR/hidden.json,
           DIR/state.json, and runs round 0 (blind) -> DIR/round0.txt
+  make from a prebuilt control (solvEX2, 24 Sept 2026; e.g. the code+mark design on a target's row pattern):
+          crib_rounds.py --cipher-tsv C.tsv --plain H.json --corpus A.txt [...] --dir DIR [--seed --restarts --iters]
+          C.tsv has a header and pos<TAB>sign rows (sign ids free of '=', ',', '#' and spaces); H.json holds
+          {"plain": the letter per token, "truth": {sign: letter}}. Both are copied into DIR (cipher.tsv,
+          hidden.json) and round 0 runs blind. The builder writes H.json without printing it.
   round:  crib_rounds.py --dir DIR --round R --cribs FILE
           FILE holds cumulative cribs, one sign=letter per line or comma-separated ('#' comments allowed);
           re-anneals with them fixed -> DIR/roundR.txt (decode + confidence) and DIR/roundR.json
@@ -134,6 +139,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dir", required=True)
     ap.add_argument("--control")
+    ap.add_argument("--cipher-tsv")
+    ap.add_argument("--plain")
     ap.add_argument("--signs", type=int)
     ap.add_argument("--length", type=int)
     ap.add_argument("--corpus", action="append")
@@ -162,6 +169,27 @@ def main():
         save_state(a.dir, st)
         run_round(a.dir, st, 0, {})
         print(f"made control N={len(seq)} K={len(set(seq))}; round 0 -> {a.dir}/round0.txt")
+    elif a.cipher_tsv:
+        if not (a.plain and a.corpus):
+            ap.error("--cipher-tsv needs --plain and --corpus")
+        os.makedirs(a.dir, exist_ok=True)
+        corpus = [rel(c) for c in a.corpus]
+        seq = [l.rstrip("\n").split("\t")[1] for l in open(a.cipher_tsv)][1:]
+        bad = [x for x in set(seq) if any(c in x for c in "=,# ")]
+        if bad:
+            raise SystemExit(f"sign ids must not contain '=', ',', '#' or spaces: {sorted(bad)[:5]}")
+        hid = json.load(open(a.plain))
+        if len(hid["plain"]) != len(seq) or set(seq) - set(hid["truth"]):
+            raise SystemExit("--plain does not match --cipher-tsv (length or sign set)")
+        with open(os.path.join(a.dir, "cipher.tsv"), "w") as fh:
+            fh.write("pos\tsign\n" + "".join(f"{i}\t{s}\n" for i, s in enumerate(seq)))
+        json.dump({"plain": hid["plain"], "truth": hid["truth"]}, open(os.path.join(a.dir, "hidden.json"), "w"))
+        st = {"control": rel(a.cipher_tsv), "corpus": corpus, "N": len(seq), "K": len(set(seq)),
+              "seed": a.seed, "restarts": a.restarts, "iters": a.iters, "order": a.order,
+              "uni_weight": a.uni_weight}
+        save_state(a.dir, st)
+        run_round(a.dir, st, 0, {})
+        print(f"loaded control N={len(seq)} K={len(set(seq))}; round 0 -> {a.dir}/round0.txt")
     elif a.view is not None:
         view(a.dir, a.view, a.width)
     elif a.score:
@@ -171,7 +199,7 @@ def main():
         run_round(a.dir, st, a.round, read_cribs(a.cribs) if a.cribs else {})
         print(f"round {a.round} -> {a.dir}/round{a.round}.txt")
     else:
-        ap.error("give --control (make), --round (re-anneal) or --score")
+        ap.error("give --control or --cipher-tsv (make), --round (re-anneal) or --score")
 
 
 if __name__ == "__main__":

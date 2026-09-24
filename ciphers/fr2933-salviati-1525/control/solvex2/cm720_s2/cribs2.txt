@@ -1,0 +1,9 @@
+# round 2 (seed 2): round-1 cribs kept where the round-1 decode still reads; "con tutto" block dropped (decode went to "contittoi")
+u035=t  # necessita (reads cleanly in round 1)
+u032=f u094=a u064=t u075=t  # "in fatto" still reads
+u019=p u063=r  # proporre
+u068=n  # non so che
+u006=u  # a uostre (457) / e questo (276) in round 0; round 1 moved it to i ("aiostra", "eiesto")
+u091=u  # tutte 681-685
+u010=c u015=h  # che: 112, 413, 637 (round 0), "ochele" 395
+u022=e  # l'esser 485-490

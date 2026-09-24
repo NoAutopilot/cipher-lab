@@ -1,0 +1,38 @@
+{
+ "control": "ciphers/fr2933-salviati-1525/control/solvex2/src/cipher_s1.tsv",
+ "corpus": [
+  "tools/data/it16/alcuneletteredip00ferr.txt",
+  "tools/data/it16/delleletterefam02seghgoog.txt",
+  "tools/data/it16/lettereinedited00tassgoog.txt",
+  "tools/data/it16/lettereinedited01cibrgoog.txt",
+  "tools/data/it16/lettereineditedi01carouoft.txt"
+ ],
+ "N": 720,
+ "K": 108,
+ "seed": 1,
+ "restarts": 6,
+ "iters": 120000,
+ "order": 3,
+ "uni_weight": 1.0,
+ "rounds": {
+  "0": {
+   "cribs": {}
+  },
+  "1": {
+   "cribs": {
+    "u018": "z",
+    "u049": "i",
+    "u014": "g",
+    "u008": "n",
+    "u011": "s",
+    "u055": "t",
+    "u003": "o",
+    "u035": "t",
+    "u042": "u",
+    "u007": "t",
+    "u082": "q",
+    "u106": "q"
+   }
+  }
+ }
+}

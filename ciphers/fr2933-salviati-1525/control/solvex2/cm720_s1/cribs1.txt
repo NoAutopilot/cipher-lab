@@ -1,0 +1,6 @@
+# round 1 (seed 1), read from round0 decode with box gaps (view_gaps.py)
+u018=z  # -genza 30, -izio 285, -azia 507: z in three Italian endings
+u049=i u014=g u008=n  # (negl)igenza 26-29, u014 doubled g at 24/27
+u011=s u055=t u003=o  # "e lo sento" 120-127
+u035=t u042=u u007=t  # "tutta" 681-684
+u082=q u106=q  # q before u006=u at 457 (qual) and 214 (que)
