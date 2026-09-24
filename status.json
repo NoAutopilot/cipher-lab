@@ -1327,6 +1327,22 @@
    "grade": "negative; 754 tokens reconciled (f1 H508 M20, f9 H202 M24)",
    "line": "Brienne's 1646, 1647 and 1651 tables lose to 200 shuffled derangements on both letters; the 1659 table beats its character-level control (z 3.4/3.7) but reads no words, so the 1653 table is a different one sharing a few syllable codes. A constrained anneal reads only 25.7% of a synthetic control of the same size, so the letters are below what that method can solve without more text or a key.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "recovery",
+   "title": "William of Orange to Elector August of Saxony, Brussels 16 Sept 1564 (WVO 126, Dresden Locat 8510/5 f.139): cipher postscript read with a key aligned from Orange's 1563 letter (WVO 98) and its decipherment",
+   "grade": "C 214, M 26 of 240 signs; novelty not yet audited",
+   "line": "The Orange-Saxony symbol ciphers use two systems: A in WVO 74 (1562), B in 98 (1563) and 126 (1564). Aligning 98's cipher against its decipherment on f.67 gives system B's key (33 signs, C), which reads 126's postscript: news from Spain, the Queen bled and purged twice and lost the child. WVO 53 and 57 not read.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "recovery",
+   "title": "Lodewijk van Nassau to William of Orange, four cipher letters 1573-1574 (WVO 4610, 4611, 4612, 4616): partial reading with a key aligned from two sibling letters' decipherments",
+   "grade": "C 2512, I 267, M 658, U 575 of 4012 groups; partial, novelty not yet audited",
+   "line": "System: letters, five numbers each in blocks from n; numbers above 120 are names and nulls. Key aligned from WVO 4613 and 4615 against their contemporary decipherments (siblings C 1086 of 1107). The four targets read in French where both passes agree; 4616 (12 Apr 1574, two days before Mookerheyde) C 207 of 261. Still gappy: no letter reads straight through.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74"
   }
  ],
  "lanes": [
