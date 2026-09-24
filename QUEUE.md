@@ -3044,3 +3044,96 @@ transcription, does not even apply until metadata surfaces a candidate) and woul
 signal (out of this brief's hosts, LANE T's lane) or a collection-by-collection browse, not a keyword search.
 Requests: `archive.org` 15 (advancedsearch: 14, metadata: 1), all ≥1.5 s apart, descriptive User-Agent. No
 subagents, no other hosts, no novelty wording, no promotion to board.
+
+## Digital correspondence editions with cipher notes (LANE N scout of 24 September 2026)
+
+Row EM of the lane brief (`.claude/briefs/runs/2026-09-24-lane-n-scEMLO.md`). Hosts named: EMLO
+(`emlo.bodleian.ox.ac.uk`), Huygens ePistolarium (`ckcc.huygens.knaw.nl`), Bullinger Digital
+(`www.bullinger-digital.ch`), correspSearch (`correspsearch.net`, API). Read first: CLAUDE.md rule 1,
+LESSONS.md §§1-2, `.claude/briefs/check-solved.md`. Excluded against `ciphers/`, CATALOG.md, LANDSCAPE.md,
+`sources/cryptiana/`, and fresh shallow clones of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers`
+(grepped for every sender/recipient surname below — no genuine match beyond binary/image false positives; see
+caveats for the one real overlap risk found, Henry Cromwell/Thurloe). Raw hits and every exclusion, with
+verbatim notes, in `sources/solver-diffs/2026-09-24-lane-n-emlo.tsv`.
+
+**Egress:** all four named hosts reachable (`emlo.bodleian.ox.ac.uk` 200, `ckcc.huygens.knaw.nl` 200,
+`www.bullinger-digital.ch` 302→200, `correspsearch.net` 302→200).
+
+**EMLO — the productive route, via its own Solr backend.** EMLO's search UI is entirely client-side JS (an
+"edges"/Solr9 app); reading its own `js/search.js` and `js/edges.js` found the backend is same-origin and
+public: `emlo.bodleian.ox.ac.uk/solr/all/select` answers plain GET with standard Solr query syntax (`q=`,
+`fl=`, `rows=`, quoted phrases), no key, no login. **Control:** `q=default_search_field:cipher` returns 510
+hits including real, on-topic records (John Wallis's cipher-example manuscript, Aphra Behn's spy letters), so
+the query form works. Phrase search on the editors' own comment field (`bibo_Note`) is the productive query:
+`bibo_Note:"not decoded"` (33 hits) and the broader `ox_keywords:"Cipher letter"` facet (76 works: 53 Wallis
+manuscript examples, 9 Aphra Behn, 8 "Bodleian early modern letter collections", 6 Henry Cromwell) let every
+cipher-tagged record be read and checked by hand for whether the note describes a genuinely undeciphered
+passage or an already-solved one. Every record traces to a `frbr_Work` → `frbr_Manifestation` chain giving
+holder, shelfmark and (where present) a linked digital edition.
+
+**Huygens ePistolarium.** The user-facing app at `ckcc.huygens.knaw.nl/epistolarium/` loads its own config
+(`js/config.js`) naming a separate backend, `tc13.huygens.knaw.nl/glp-ckcc/` (same Huygens institution,
+implementing this named host's own search box — not a new host chosen independently). **Control:**
+`POST .../search {q: "cijfer"}` → 17 hits, correctly split across Grotius↔Reigersberch and Huygens-circle
+correspondence, confirming full-text search works. `bibo_Note`-equivalent per-letter notes are not exposed
+here; this is a full-text search of the letter bodies themselves.
+
+**Bullinger Digital.** A TEI-Publisher app; its `letters.html` search form documents seven fields
+(`text`/`regest`/`footnotes`/`print-literature`/`notes`/`fnhd-normalization`), served by
+`www.bullinger-digital.ch/api/collection/?query=&field=`. **Control:** `query=bullinger&field=text` → 3304
+hits (query form works). `Chiffre`/`Ziffer`/`verschluesselt` (French/German for cipher) all return 0;
+`Geheimschrift` (the period German term actually used by the edition) returns 11 hits, all real — see caveats.
+
+**correspSearch.** `/en/api.html` documents the API in full: it queries only by correspondence partner
+(GND/VIAF/BNF/LC/NDL person URI), place and date range. There is no free-text or note-field parameter, so this
+brief's discovery pattern ("does the record say cipher/chiffre/undeciphered") cannot be run against it as
+designed — logged as a capability gap, not a zero-result search on a working control.
+
+Scored per `.claude/workflows/scout.js` (language_fit×3 + material×2 + key_lead×3 + size×2 + competition×2 +
+weight + unread×3, max 48):
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Leaf viewed | Image route | Total |
+|---|---|---|---|---|---|---|---|---|---|
+| EM1 | Aphra Behn, spy correspondence with her handlers: two letters with an explicit "not decoded" numeric-cipher note — to Thomas Killigrew, 17 Sep 1666 ("a few instances of a simple substitutional numeric cipher that are not decoded"), and to James Halsall, 31 Aug 1666 ("limited instances... replaces keywords with numbers. This is not decoded"); a third, 21 Sep 1666 to Halsall, has only *some* instances decoded interline | 1666 | en | cryptanalysis | TNA SP 29/172 f.15 (17 Sep letter); other two shelfmarks not given in the EMLO record | EMLO's own "Cipher letter" tag covers 9 Behn works in this Antwerp/Rotterdam spy correspondence (with William Scot, for Halsall/Killigrew/Bennet); 6 of the 9 are noted fully "decoded interline" by the editor and excluded. The 17 Sep letter's printed edition is named directly by EMLO: W. J. Cameron, *New Light on Aphra Behn* (Auckland UP, 1961), Document 10, pp. 61–64 — check-solved's first move should be reading that page, since Cameron may already print/gloss the "not decoded" figures even though EMLO's own transcription does not. A public secondary source (a period-history blog, not fetched successfully this pass, JS-challenge-gated) states the correspondence used a simple numeric code with some names public (Behn = 160 "Astrea", Scot = 159 "Celladon"), which is *not* the same as a full key for the specific undecoded instances — this is a real risk that the code's outline is already known even if these particular figures are not. | No (image link found, host unreachable) | EMLO cross-references a free "Transcription and manuscript image on Taylor Editions, University of Oxford" for both letters (`editions.mml.ox.ac.uk/editions/behn-d10/` for 17 Sep, `.../behn-d5/` for 31 Aug) — unreachable this pass (503 via WebFetch, connection-reset via curl, one retry each, not pursued further per good-citizen rule) | 31 |
+| EM2 | Four letters to James Butler, Duke of Ormond, each with a short numeric-substitution cipher passage for names/nomenclature amid an otherwise plain letter, no decoding noted: Henry Jermyn, 19 Feb 1661; Thomas Luttrell ×2, 2 Mar and 16 Mar 1660; an unknown correspondent, 23 Mar 1660 | 1660-1661 | en | cryptanalysis | Bodleian MS Carte 213, ff. 602, 632, 660, 680-681 | EMLO's abstracts for all four are drawn from the 19th-century Bodleian Carte catalogue ("[Edward Edwards]"), which describes the letters' general contents but is not itself evidence about the cipher's status. **Not checked this pass, and needed before any nomination**: the Historical Manuscripts Commission's *Calendar of the Manuscripts of the Marquess of Ormonde... at Kilkenny Castle* is an extensive, multi-volume calendar of exactly this correspondent's papers (confirmed from `dbourdeau/cyphersolver`'s unrelated Ormonde-Maltravers target, which used the same HMC series for a different 1630s letter) — a real risk these four are already calendared with their cipher content noted or resolved. | No | Not confirmed digitised this pass — Digital Bodleian, which holds much of the Carte collection, is a separate LANE N scout's named host this same day (ROOM.md 07:12 UTC note) and was not queried here to avoid duplicate work | 25 |
+| EM3 | Two Jacobite-court cipher letters to the exiled James II: William Austen, 25 Feb 1691 ("A simple substitutional cipher where letters of the alphabet are replaced with letters and numbers"), and Catharine Sedley, Countess of Dorchester, 3 Mar 1691 (same note) — plus a vaguer third item, an unattributed letter from/near Cardiganshire, 28-30 Jun 1690, on French fleet positions ("implicit cryptographic features") | 1690-1691 | en | cryptanalysis | Bodleian MS Eng. misc. c. 382, pp. 224-225 (Austen, Sedley); p. 221 (Cardigan item) | Part of the same freshly-added EMLO source ("Bodleian early modern letter collections", contributed by Emma Grummitt, 18 June 2025, indexed into EMLO 13 Sept 2026) as EM2, but Jacobite exile-court correspondence rather than Carte/Ormond material — no large printed calendar equivalent to HMC Ormonde is known to cover this specific collection, so the duplication risk is lower than EM2's, though not checked against a specific edition this pass. | No | Not confirmed digitised this pass (same Digital Bodleian caveat as EM2) | 31 |
+
+**Excluded this pass (with reasons in the TSV):** 53 works from John Wallis's own cipher-example manuscript
+(the editors describe the exact system for every one — already solved, a teaching document, not a target); 6
+letters to Henry Cromwell from Thomas Harrison (1656) and William Jephson (1656-57), each noted "attempts at
+decoding have been made in the footnotes" — this is very likely the same Thurloe State Papers material already
+being worked in `ciphers/thurloe-printed` (Birch's 1742 edition footnote-decodes cipher for this correspondent
+and period; see that folder's NOTES.md on the Fauconberg–Henry Cromwell items) and needs checking against
+Thurloe vol. 5 before anyone touches it, not a fresh nomination; a Roger Boyle (Lord Broghill)–Henry Cromwell
+cipher *key* draft (no ciphertext itself, kept as a lead only); 11 "Geheimschrift" full-text hits on Bullinger
+Digital, all from the Ambrosius Blarer–Heinrich Bullinger–Georg Frölich circle (1546-1551) — every instance
+found is already identified and footnoted in the printed critical edition (*Heinrich Bullingers Briefwechsel*,
+vol. XVII, with a published facsimile plate for one passage), an F0-type "already linked" case, not an open
+target.
+
+**A lead, not a candidate:** 17 "cijfer" hits on the Huygens ePistolarium are the Hugo de Groot
+(Grotius)–Nicolaas van Reigersberch correspondence, 1628-1637, freely readable with full annotation on
+dbnl.org (*Briefwisseling van Hugo Grotius*, Molhuysen/Meulenbroek/Witkam eds.). Two of the 17 were read in
+full this pass (11 Dec 1636 and 25 Jan 1637): both only discuss needing or having received a cipher key
+("Ick verlange seer naer een cijfer"; "Het cijfer is mij wel behandycht") and contain no surviving cipher
+digits themselves. The other 15 were not read — a future pass should check whether any of them actually
+carries ciphertext, and if so whether DBNL's own footnotes already resolve it, before scoring anything open.
+
+Caveats: (1) None of EM1-EM3 has been check-solved; all three rest on the source database's own editorial
+description, not this worker's reading of an image (no image was opened for any of the nine rows, per the
+brief — "never transcribe"). (2) EM1's Cameron 1961 print and EM2's HMC Ormonde calendar are both named,
+specific, and unread this pass — per the common-tail quality rule, neither EM1 nor EM2 should be scored `open`
+by a later worker until those two sources are actually checked; if either turns out to print or gloss the
+cipher, the correct label is found-solved (F-grade), not open. (3) EM3 is comparatively the cleanest lead here
+(fresh source, no known overlapping calendar) but still unconfirmed for a public image. (4) Digital Bodleian,
+which likely holds the actual page images for EM2/EM3's Carte and MS Eng. misc. shelfmarks, was deliberately
+not queried — a separate LANE N scout has that host today (ROOM.md 07:12 UTC) — so "material" is scored
+conservatively (citation only) rather than assumed absent. Requests: `emlo.bodleian.ox.ac.uk` ~28 (1 root, 1
+quick-search HTML, 3 JS files read for the backend URL, ~23 Solr queries, all ≥1.5s apart), `ckcc.huygens.knaw.nl`
+~6 (root, epistolarium page, 4 JS files), `tc13.huygens.knaw.nl` 4 (1 reachability + 1 POST search + 2 letter-text
+GETs — the search backend for the named `ckcc.huygens.knaw.nl` host, see above), `www.bullinger-digital.ch` ~12
+(root, letters.html, ~10 collection queries), `correspsearch.net` 3 (root, start page, api.html),
+`editions.mml.ox.ac.uk` 2 (1 curl + 1 WebFetch, both failed: 503/connection-reset, not retried further),
+`github.com` 2 (shallow clones of both solver repos, grepped, kept on disk). WebSearch 3, WebFetch 3. All
+curl hosts ≥1.5s apart, one request at a time. No logins, no credentials, no subagents, no image opened or
+transcribed, no novelty wording, nothing promoted or check-solved.
