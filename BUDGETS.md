@@ -84,3 +84,8 @@ including their own until Sat 26 Sept 13:00 UTC, the owner chose to keep going (
 (R4 recovery, cap $50, 5 workers; N3 copy-free nominations, cap $35, 4 Sonnet workers) instead of the earlier four-lane load.
 Rule for this period: `allowed_warning` no longer stops spawning inside those caps; `rejected` on any session stops every lane
 at once (interrupt workers, handoff, stop). The parent checks every 30 minutes.
+
+**Owner, 24 Sept 2026 16:53 UTC:** "not concerned about the limits; whatever is pending will be parked till Saturday." Caps raised:
+LANE N3 to $60 and 6 Sonnet workers (six new copy-free scout families), LANE R4 to $80 and 8 workers (the four new Gallica
+letters, Salviati code-and-mark model, 1519 key). The stop rule is unchanged: `rejected` on any session halts every lane and
+the parent re-arms at the reset.
