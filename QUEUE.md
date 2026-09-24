@@ -2021,3 +2021,116 @@ goal is not met by this batch on its own. Requests: `archiviodistatomantova.cult
 head/get requests), `archivi.ibc.regione.emilia-romagna.it` 2 (both 502), `patrimonio.archiviodistatonapoli.it`
 3 (all unreachable). All hosts one request at a time, >=1.5s apart, descriptive UA. No SAN, no SIAS, no Google
 Books, no logins, no subagents, no credentials.
+
+## Vatican and Venetian archives (LANE N scout of 24 September 2026)
+
+LANE N worker (`.claude/briefs/runs/2026-09-24-lane-n-scIT2.md`), row prefix VA (reserved). Target: nuncio
+despatches, avvisi, cardinals' letters and Venetian ambassadors' dispacci 1450-1800 in cipher with NO
+decipherment beside them. Read first: CLAUDE.md rule 1, the Access playbook, LESSONS.md sections 1-2,
+`.claude/briefs/check-solved.md` (Thurloe/Raince/Bowes/M9 lessons). Excluded against fresh shallow clones of
+dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers, sources/cryptiana/, CATALOG.md, LANDSCAPE.md, ciphers/.
+
+**Egress test.** `archivioapostolicovaticano.va` 302->200; `digi.vatlib.it` 200; `manus.iccu.sbn.it` 200;
+`www.internetculturale.it` 200; `www.archiviodistatovenezia.it` 301/200 on the bare root but `curl: (35) Recv
+failure: Connection reset by peer` on every subpath tried (`/divenire/`, the `moreveneto` HTML page) across
+four separate attempts on three different URLs -- a proxy-level reset (`ws_closed_mid_exchange`), not a clean
+block or a repeated retry loop on one URL; logged and stood down per the one-retry rule, not pursued further
+this pass. Biblioteca Nazionale Marciana's own manuscript catalogue was not reached at all this pass (budget) --
+next worker should try it fresh.
+
+**digi.vatlib.it -- the productive host, and a CONTENTdm-shaped gotcha.** The obvious query form
+(`/mss/search?q=TERM`) silently ignores the query exactly like the Huntington CONTENTdm case CLAUDE.md already
+documents: `q=cifra` and `q=zzznonsensequeryxyz123` both returned the identical "31081 results found (278005
+records)" banner. The real simple-search form is the two-field one (`k_f=0` for Keywords, `k_v=TERM`) reached
+from `/mss/`; it also needs a same-origin `Referer` header (`https://digi.vatlib.it/mss/`) or the search path
+403s even with a real browser User-Agent (the browser tool hit the same 403, and separately could not drive the
+JS search box: `.queryText` stayed `disabled`/invisible after 30s, an unresolved lead for a future worker who
+wants item-level Manus/DigiVatLib results without this curl workaround). **CONTROL, confirmed**: `k_v=cifra`
+gives 24 results, `k_v=zzznonsensequeryxyz123` gives 0 -- the form genuinely filters once `k_f`/`k_v` are used.
+Record-to-shelfmark pairing on the results page needed care: a naive regex split by `box-search-result-details`
+mis-attributes each record to the *following* shelfmark header, not its own (caught by fetching two detail
+pages and reading their own embedded `f_v[]=SHELFMARK` value, which disagreed with the naive split twice before
+a corrected parser -- split on `row-search-result-record` and take the title that opens each block -- was
+verified 3/3 against ground truth). Worth documenting so the next worker doesn't repeat the mis-pairing.
+Terms tried: `cifra` (24), `cifrato` (0), `cifrata` (1), `cifre` (106, six pages; shelfmark list scanned for
+correspondence-shaped titles on pages 2-6, one repeat hit, no new candidates). Full list with exclusion reasons:
+`sources/solver-diffs/2026-09-24-lane-n-italy-b.tsv`.
+
+**Clean negative, with a pattern worth naming for the next Italian/Vatican scout.** Every "cifra"-tagged
+correspondence item found (not the 15+ keyword-noise hits: foliation, music, unrelated Latin prose) turned out
+to already carry its own decipherment or its own published edition, confirmed by reading the record's own
+catalogue note (never by title alone, per the M9 lesson) and, twice, cross-checked against a solver repository:
+- **Cappon.164 ff.292r-299r, 298r** (5+1 cipher letters, nuncio Ludovico Taverna, Bishop of Lodi, in Spain,
+  "forse al card. segretario di Stato, Filippo Boncompagni") -- leaf viewed (both folios, native IIIF images):
+  the text under the heading "Cifra del Nuntio di Spagna" / "Cifra del N.o di Sp.a" is plain, fully legible
+  Italian prose, not ciphertext. "Cifra" here is the archival document-class label for a *decoded paraphrase
+  copy* kept by the Secretariat, not the cipher itself -- the single most useful negative finding of this pass,
+  since it will recur across this fondo and probably others (the Vatican chancery habit of filing the decrypt
+  under a "Cifra del..." heading). Any future "cifra"-titled Vatican item should have its leaf checked before
+  scoring, not just its catalogue title.
+- **Urb.lat.1704 f.237r** (nunzio Giambattista Castagna, later Urban VII, to card. Alessandrino/Michele
+  Bonelli; catalogue note: "Nel codice: solo la parte in cifra" -- only the ciphered part is kept) -- not
+  excluded by an in-codex decipherment, but the record's own Bibliographic References field cites L. Serrano,
+  *Correspondencia diplomatica entre Espana y la Santa Sede... Pio V*, t.II, Madrid 1914, p.278-279. The same
+  correspondent pair (Alessandrino to Castagna, Madrid nunciature, 1568-69) is independently confirmed already
+  solved end-to-end in `dbourdeau/cyphersolver/alessandrino1568/` (11 ciphertexts read with Lasry's key,
+  DECODE R93-R102/R115) -- that NOTES.md itself names the same Serrano 1914 edition as an open comparison task,
+  so this specific direction of the correspondence (Castagna to Alessandrino rather than the reverse) is the
+  same archive, same years, same already-worked correspondent pair.
+- **Vat.lat.2392 f.72v** ("Secretum... scriptum in cifra cum eius explicatione") and **Vat.lat.9684** ff.23r-26r
+  (Federico Cesi/Johann Eck, early Lincei academy, "parole anteposte alle cifre" as a key to 19 letters) both
+  carry their decipherment in the same codex (Vat.lat.9684's at f.140r, Francesco Cancellieri's hand, and
+  ff.144r-146v, Domenico Morosini's hand, both early 19th century).
+- **Vat.lat.13153 ff.38v-39r** (Du Vernay-Boucault, French envoy, to Imre Thokoly, the Hungarian rebel leader,
+  1682) carries "decifrazione interlineare" in the manuscript and is discussed in print: C. Gerin, *Revue des
+  questions historiques* 39 (1886), p.117-118.
+
+**Two resource leads, not scored as targets (both fail the rubric's unread=0 "edition" test for themselves, but
+match CLAUDE.md's "a key beside undeciphered letters elsewhere is a recovery lead").** Neither has a matched
+undeciphered sibling located this pass; both are handed on for a future worker who wants to pair them with one:
+- **Urb.lat.948, ff.1r-101v**, "Scriptura occulta, vulgo cifra, Friderici II, Urbini ducis" -- a cipher system/
+  key manual belonging to Federico II, Duke of Urbino (sec. XV), fully digitised, no login. A future scout
+  should look for an undeciphered Della Rovere/Montefeltro-court cipher letter (ASV or elsewhere) this system
+  might open.
+- **Barb.lat.9848-9849, ff.2r-232r+** (Francesco Mancini to Cardinal Francesco Barberini and to Mons. Attilio
+  Marcellini, 1644-1655) -- catalogued "Cifre e decifrati" (ciphers and their decipherments together), exactly
+  the Barberini-fondo cipher register CLAUDE.md flags as often holding keys. The letters themselves are already
+  decoded in situ, but the key they carry is a plausible match for *other* Barberini Segreteria di Stato cipher
+  correspondence of the same 1640s-50s window that is not yet paired with a decrypt -- worth an ASV (not just
+  BAV) search for that sibling before this is dropped for good.
+
+**manus.iccu.sbn.it -- query form unverified (control incomplete).** Reached (200); its real simple search is
+`monocampo` posted GET to `/web/manus/risultati-ricerca-manoscritti` (found from the homepage's
+`data-form-config`, not documented). The browser tool (results load via AJAX/Handlebars templates, not present
+in the plain HTML) shows a live "Trovati: 861 Manoscritti" banner for `monocampo=cifra` that a nonsense query
+does not render, so the header count is plausibly live filtering rather than the CONTENTdm-style no-op -- but
+861 hits for "cifra" in an all-Italy manuscript catalogue is consistent with the same foliation/numbering noise
+CLAUDE.md already documents for Gallica's "chiffre" and BAV's own "cifra romana" (Roman numeral) usage, and the
+actual item list is behind a separate infinite-scroll fetch this budget did not resolve (playwright's
+`--wait` does not trigger the lazy-load; needs a real scroll or a network-trace approach). Per the brief: logged
+"query form unverified", not "no candidates" -- do not read 861 as a real count.
+
+**internetculturale.it -- query form not found.** Root reachable (200); the guessed search endpoints
+(`/it/16/search?q=`, `/opencms/.../ricerca_avanzata.jsp?testo1=`) either ignored the parameter or 404'd. Not
+resolved this budget.
+
+**archivioapostolicovaticano.va -- no online finding aid found in plain HTML.** The site is almost entirely
+institutional/informational pages; its own "Archives" catalogue link routes to `www.mss.vatlib.it/arch_guii/
+console?service=tree`, an ArchiveGuide console likely requiring JS, not tried this pass.
+
+Caveats: (1) no leaf image was opened except the two Cappon.164 folios (292r, 298r) and none of the excluded
+items' images were needed once the catalogue note or a cited edition settled the exclusion, per the brief's
+"never transcribe" instruction and the M9/Thurloe lesson (check the note and the cited edition before the
+image, not instead of it, when the note already names a decipherment or a print). (2) The `cifre` search (106
+hits) was only sampled by shelfmark/title text on pages 2-6, not individually detail-checked; a title-only pass
+can miss a case shaped like Urb.lat.1704 (whose title alone gave no hint of "cifra" -- only the full catalogue
+note did). (3) Zero VA rows are filed: every correspondence-shaped hit resolved to found-solved or
+already-decoded-in-situ once checked, which is itself the result of this sweep, not an absence of effort --
+raw 131 keyword hits reviewed across digi.vatlib.it (24 cifra + 1 cifrata new + 106 cifre, with cifre sampled
+by title beyond the two already seen), kept 0, copy-free 0. Requests: digi.vatlib.it ~55 (reachability,
+6 keyword-search fetches with pagination, 11 detail pages, 4 IIIF manifests, 3 leaf images, all with a browser
+User-Agent and same-origin Referer, >=1.5s apart); manus.iccu.sbn.it curl 3 + browser_fetch.js 3; www.
+internetculturale.it curl 2; www.archiviodistatovenezia.it curl 5 (2 succeeded on the bare root, 3 reset on
+subpaths); www.archivioapostolicovaticano.va curl 2; github.com 2 shallow clones (dbourdeau/cyphersolver,
+aaymeloglu/unsolved-ciphers, grepped only); WebSearch 2. No DECODE, no Google Books, no logins, no subagents,
+no novelty wording, no promotion.
