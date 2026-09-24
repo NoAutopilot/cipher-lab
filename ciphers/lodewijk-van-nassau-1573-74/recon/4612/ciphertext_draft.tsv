@@ -1,0 +1,1171 @@
+line	position	sign	confidence	alt	why
+p1_L01	1	=Monsieur	M		agree-flagged
+p1_L01	2	=Je	M	B:=je	differ
+p1_L01	3	=seray	M	B:=croy	differ
+p1_L01	4	=soit	M		agree-flagged
+p1_L01	5	=bien	M		agree-flagged
+p1_L01	6	=escript	M	A:-	gap
+p1_L01	7	=du	H		agree
+p1_L01	8	=xxij	M	B:22	differ
+p1_L01	9	=de	H		agree
+p1_L01	10	=febvrier	H		agree
+p1_L01	11	=et	M		agree-flagged
+p1_L01	12	=bien	M		agree-flagged
+p1_L01	13	=a	M	B:=ce	differ
+p1_L01	14	=qui	M		agree-flagged
+p1_L01	15	=mandez	M	B:=mande	differ
+p1_L01	16	=de	H		agree
+p1_L01	17	=la	H		agree
+p1_L01	18	=correspondance	H		agree
+p1_L01	19	=de	H		agree
+p1_L01	20	=Bruxelles	M	A:-	gap
+p1_L01	21	=Angleterre	M	B:=Suy	differ
+p1_L02	1	=avec	M	B:-	gap
+p1_L02	2	=ce	M	B:=Puis	differ
+p1_L02	3	=que	M	B:=a	differ
+p1_L02	4	=soy	M	B:=foy	differ
+p1_L02	5	=dictes	M	B:=Dieu	differ
+p1_L02	6	=le	M	B:=se	differ
+p1_L02	7	=suppliant	M		agree-flagged
+p1_L02	8	=tant	M	A:-	gap
+p1_L02	9	=que	M	A:-	gap
+p1_L02	10	=Dieu	M	A:-	gap
+p1_L02	11	=tres	M	B:=vous	differ
+p1_L02	12	=humblement	M	B:=face	differ
+p1_L02	13	=de	M	B:=bonne	differ
+p1_L02	14	=Coua	M	B:=poursuite	differ
+p1_L02	15	=boursois	M	B:=continuee	differ
+p1_L02	16	=autrement	M	B:=fistes	differ
+p1_L02	17	=filz	M	B:=de	differ
+p1_L02	18	=sieur	M	B:=S	differ
+p1_L02	19	=Bourdictions	M	B:=benedictions	differ
+p1_L02	20	=Et	H		agree
+p1_L02	21	=Quant	M	B:=quant	differ
+p1_L02	22	=a	H		agree
+p1_L02	23	=nous	M		agree-flagged
+p1_L03	1	=Je	M		agree-flagged
+p1_L03	2	=vous	M		agree-flagged
+p1_L03	3	=diray	M		agree-flagged
+p1_L03	4	=ce	M		agree-flagged
+p1_L03	5	=qui	M	A:-	gap
+p1_L03	6	=que	M	B:=c'est	differ
+p1_L03	7	=scay	M	B:=passé	differ
+p1_L03	8	=du	H		agree
+p1_L03	9	=xxij	M	B:27	differ
+p1_L03	10	=de	H		agree
+p1_L03	11	=febvrier	H		agree
+p1_L03	12	180	H		agree
+p1_L03	13	141	H		agree
+p1_L03	14	54	H		agree
+p1_L03	15	98	H		agree
+p1_L03	16	26	H		agree
+p1_L03	17	68	M	B:62	differ
+p1_L03	18	22	H		agree
+p1_L03	19	68	H		agree
+p1_L03	20	81	H		agree
+p1_L03	21	27	H		agree
+p1_L03	22	48	H		agree
+p1_L03	23	29	H		agree
+p1_L03	24	149	H		agree
+p1_L03	25	65	H		agree
+p1_L03	26	6	H		agree
+p1_L03	27	25	H		agree
+p1_L03	28	9	H		agree
+p1_L04	1	88	H		agree
+p1_L04	2	111	H		agree
+p1_L04	3	42	H		agree
+p1_L04	4	30	H		agree
+p1_L04	5	12	H		agree
+p1_L04	6	61	H		agree
+p1_L04	7	26	H		agree
+p1_L04	8	12	H		agree
+p1_L04	9	88	H		agree
+p1_L04	10	77	H		agree
+p1_L04	11	116	H		agree
+p1_L04	12	81	H		agree
+p1_L04	13	31	H		agree
+p1_L04	14	33	H		agree
+p1_L04	15	69	H		agree
+p1_L04	16	26	H		agree
+p1_L04	17	81	H		agree
+p1_L04	18	27	H		agree
+p1_L04	19	41	M	B:47	differ
+p1_L04	20	28	H		agree
+p1_L04	21	42	H		agree
+p1_L04	22	2	H		agree
+p1_L04	23	31	H		agree
+p1_L04	24	61	H		agree
+p1_L04	25	14	H		agree
+p1_L04	26	68	H		agree
+p1_L04	27	4	H		agree
+p1_L05	1	72	H		agree
+p1_L05	2	12	H		agree
+p1_L05	3	276	H		agree
+p1_L05	4	=si	M	B:=Ce	differ
+p1_L05	5	=fort	M	B:=sort	differ
+p1_L05	6	=bonne	M		agree-flagged
+p1_L05	7	=disposicion	M	B:=disposition	differ
+p1_L05	8	81	H		agree
+p1_L05	9	32	H		agree
+p1_L05	10	48	H		agree
+p1_L05	11	71	H		agree
+p1_L05	12	2	H		agree
+p1_L05	13	26	H		agree
+p1_L05	14	14	H		agree
+p1_L05	15	38	H		agree
+p1_L05	16	66	H		agree
+p1_L05	17	71	H		agree
+p1_L05	18	42	H		agree
+p1_L05	19	10	H		agree
+p1_L05	20	27	H		agree
+p1_L05	21	23	H		agree
+p1_L05	22	9	H		agree
+p1_L05	23	4	H		agree
+p1_L05	24	21	M	B:27	differ
+p1_L06	1	83	M	B:85	differ
+p1_L06	2	117	H		agree
+p1_L06	3	59	H		agree
+p1_L06	4	25	H		agree
+p1_L06	5	77	H		agree
+p1_L06	6	81	M	B:84	differ
+p1_L06	7	127	H		agree
+p1_L06	8	128	M	B:138	differ
+p1_L06	9	73	H		agree
+p1_L06	10	42	H		agree
+p1_L06	11	77	H		agree
+p1_L06	12	118	M	B:113	differ
+p1_L06	13	12	H		agree
+p1_L06	14	28	H		agree
+p1_L06	15	63	H		agree
+p1_L06	16	79	H		agree
+p1_L06	17	39	H		agree
+p1_L06	18	34	H		agree
+p1_L06	19	61	H		agree
+p1_L06	20	9	H		agree
+p1_L06	21	40	H		agree
+p1_L06	22	4	H		agree
+p1_L06	23	12	H		agree
+p1_L06	24	83	H		agree
+p1_L06	25	3	H		agree
+p1_L06	26	83	H		agree
+p1_L07	1	26	M	A:-	gap
+p1_L07	2	71	H		agree
+p1_L07	3	27	H		agree
+p1_L07	4	30	H		agree
+p1_L07	5	45	M	B:48	differ
+p1_L07	6	53	M	B:33	differ
+p1_L07	7	47	M	B:77	differ
+p1_L07	8	46	H		agree
+p1_L07	9	37	H		agree
+p1_L07	10	81	H		agree
+p1_L07	11	101	H		agree
+p1_L07	12	29	H		agree
+p1_L07	13	64	H		agree
+p1_L07	14	6	H		agree
+p1_L07	15	38	M	B:78	differ
+p1_L07	16	72	H		agree
+p1_L07	17	12	H		agree
+p1_L07	18	26	H		agree
+p1_L07	19	82	H		agree
+p1_L07	20	102	M	B:-	gap
+p1_L07	21	22	M	B:37	differ
+p1_L07	22	28	M	B:26	differ
+p1_L07	23	140	M	B:12	differ
+p1_L08	1	33	M	A:-	gap
+p1_L08	2	75	M	B:40	differ
+p1_L08	3	51	M	B:28	differ
+p1_L08	4	12	M	B:73	differ
+p1_L08	5	48	M	B:27	differ
+p1_L08	6	29	M	B:25	differ
+p1_L08	7	62	M	B:56	differ
+p1_L08	8	42	M	B:24	differ
+p1_L08	9	27	M	B:43	differ
+p1_L08	10	19	M	B:82	differ
+p1_L08	11	25	M	B:23	differ
+p1_L08	12	7	M	B:27	differ
+p1_L08	13	28	M	B:81	differ
+p1_L08	14	62	M	B:2	differ
+p1_L08	15	54	M	B:77	differ
+p1_L08	16	10	M	B:69	differ
+p1_L08	17	29	M	B:104	differ
+p1_L08	18	62	M	B:74	differ
+p1_L08	19	83	M	B:31	differ
+p1_L08	20	9	M	B:60	differ
+p1_L08	21	2	M	B:59	differ
+p1_L08	22	28	M	B:40	differ
+p1_L08	23	16	M	B:25	differ
+p1_L09	1	33	M	B:-	gap
+p1_L09	2	46	M	B:192	differ
+p1_L09	3	28	H		agree
+p1_L09	4	73	M	B:-	gap
+p1_L09	5	27	M	B:9	differ
+p1_L09	6	25	M	B:4	differ
+p1_L09	7	56	M	B:12	differ
+p1_L09	8	24	M	B:41	differ
+p1_L09	9	43	M	B:13	differ
+p1_L09	10	82	M	B:77	differ
+p1_L09	11	23	M	B:84	differ
+p1_L09	12	27	M	B:4	differ
+p1_L09	13	81	M	B:34	differ
+p1_L09	14	2	M	B:67	differ
+p1_L09	15	77	M	B:13	differ
+p1_L09	16	69	M	B:68	differ
+p1_L09	17	104	M	B:72	differ
+p1_L09	18	74	M	B:83	differ
+p1_L09	19	31	H		agree
+p1_L09	20	26	M	A:-	gap
+p1_L09	21	72	M	A:-	gap
+p1_L09	22	60	M	B:4	differ
+p1_L09	23	59	M	B:34	differ
+p1_L09	24	40	M	B:87	differ
+p1_L09	25	25	M	B:88	differ
+p1_L10	1	13	M	A:-	gap
+p1_L10	2	2	M	A:-	gap
+p1_L10	3	84	M	A:-	gap
+p1_L10	4	82	M	A:-	gap
+p1_L10	5	22	M	A:-	gap
+p1_L10	6	192	M	B:61	differ
+p1_L10	7	28	M	B:39	differ
+p1_L10	8	9	M	B:67	differ
+p1_L10	9	4	H		agree
+p1_L10	10	12	H		agree
+p1_L10	11	41	M	B:-	gap
+p1_L10	12	13	M	B:-	gap
+p1_L10	13	77	M	B:60	differ
+p1_L10	14	84	H		agree
+p1_L10	15	4	M	B:-	gap
+p1_L10	16	34	M	B:-	gap
+p1_L10	17	67	M	B:39	differ
+p1_L10	18	13	M	B:26	differ
+p1_L10	19	68	M	B:130	differ
+p1_L10	20	72	M	B:128	differ
+p1_L10	21	83	M	B:136	differ
+p1_L10	22	31	M	B:46	differ
+p1_L10	23	26	M	B:52	differ
+p1_L10	24	72	M	B:28	differ
+p1_L10	25	4	M	B:84	differ
+p1_L10	26	34	M	B:112	differ
+p1_L10	27	81	M	B:42	differ
+p1_L10	28	88	M	B:27	differ
+p1_L11	1	4	M	A:-	gap
+p1_L11	2	13	M	B:40	differ
+p1_L11	3	2	M	B:27	differ
+p1_L11	4	68	M	B:9	differ
+p1_L11	5	82	M	B:4	differ
+p1_L11	6	22	M	B:85	differ
+p1_L11	7	61	M	B:16	differ
+p1_L11	8	39	M	B:101	differ
+p1_L11	9	67	M	B:114	differ
+p1_L11	10	4	M	B:43	differ
+p1_L11	11	12	H		agree
+p1_L11	12	60	M	B:-	gap
+p1_L11	13	84	M	B:-	gap
+p1_L11	14	39	M	B:79	differ
+p1_L11	15	26	M	B:40	differ
+p1_L11	16	150	M	B:29	differ
+p1_L11	17	128	M	B:9	differ
+p1_L11	18	136	M	B:28	differ
+p1_L11	19	46	M	B:77	differ
+p1_L11	20	52	M	B:59	differ
+p1_L11	21	28	M	B:11	differ
+p1_L11	22	84	M	B:202	differ
+p1_L11	23	112	M	B:12	differ
+p1_L11	24	42	M	B:201	differ
+p1_L11	25	27	M	B:12	differ
+p1_L12	1	54	M	B:-	gap
+p1_L12	2	46	M	B:279	differ
+p1_L12	3	27	M	B:=mesme	differ
+p1_L12	4	9	M	B:=chose	differ
+p1_L12	5	4	M	B:=quelle	differ
+p1_L12	6	83	M	B:=est	differ
+p1_L12	7	16	M	B:=pu	differ
+p1_L12	8	101	M	B:=bien	differ
+p1_L12	9	114	M	B:=bonjour	differ
+p1_L12	10	43	M	B:=convertir	differ
+p1_L12	11	12	M	B:=bon	differ
+p1_L12	12	79	M	B:=frans	differ
+p1_L12	13	40	M	B:59	differ
+p1_L12	14	29	M	B:37	differ
+p1_L12	15	9	M	B:25	differ
+p1_L12	16	28	M	B:76	differ
+p1_L12	17	77	M	B:2	differ
+p1_L12	18	59	M	B:31	differ
+p1_L12	19	11	M	B:142	differ
+p1_L12	20	202	M	B:51	differ
+p1_L12	21	12	M	B:52	differ
+p1_L12	22	201	M	B:61	differ
+p1_L12	23	12	M	B:2	differ
+p1_L13	1	33	M	A:-	gap
+p1_L13	2	62	M	A:-	gap
+p1_L13	3	42	M	A:-	gap
+p1_L13	4	88	M	A:-	gap
+p1_L13	5	279	M	B:62	differ
+p1_L13	6	=mesme	M	B:13	differ
+p1_L13	7	=chose	M	B:82	differ
+p1_L13	8	=qu'il	M	B:40	differ
+p1_L13	9	=fut	M	B:62	differ
+p1_L13	10	=buy	M	B:7	differ
+p1_L13	11	=boiseur	M	B:41	differ
+p1_L13	12	=comme	M	B:54	differ
+p1_L13	13	59	M	B:39	differ
+p1_L13	14	37	M	B:29	differ
+p1_L13	15	25	M	B:62	differ
+p1_L13	16	76	M	B:38	differ
+p1_L13	17	2	M	B:26	differ
+p1_L13	18	31	M	B:73	differ
+p1_L13	19	142	M	B:27	differ
+p1_L13	20	51	M	B:33	differ
+p1_L13	21	52	M	B:142	differ
+p1_L13	22	61	M	B:121	differ
+p1_L13	23	2	M	B:135	differ
+p1_L14	1	33	M	B:62	differ
+p1_L14	2	42	M	B:54	differ
+p1_L14	3	88	M	B:4	differ
+p1_L14	4	62	M	B:27	differ
+p1_L14	5	13	M	B:48	differ
+p1_L14	6	82	M	B:26	differ
+p1_L14	7	40	M	B:57	differ
+p1_L14	8	62	M	B:101	differ
+p1_L14	9	7	M	B:52	differ
+p1_L14	10	41	M	B:12	differ
+p1_L14	11	54	H		agree
+p1_L14	12	40	M	A:-	gap
+p1_L14	13	27	M	A:-	gap
+p1_L14	14	67	M	A:-	gap
+p1_L14	15	39	M	B:2	differ
+p1_L14	16	29	M	B:78	differ
+p1_L14	17	62	M	B:67	differ
+p1_L14	18	38	M	B:4	differ
+p1_L14	19	26	M	B:6	differ
+p1_L14	20	73	M	B:105	differ
+p1_L14	21	27	H		agree
+p1_L14	22	31	M	A:-	gap
+p1_L14	23	33	M	B:67	differ
+p1_L14	24	142	M	B:29	differ
+p1_L14	25	121	M	B:12	differ
+p1_L14	26	135	M	B:7	differ
+p1_L15	1	62	M	B:-	gap
+p1_L15	2	54	M	B:-	gap
+p1_L15	3	4	M	B:-	gap
+p1_L15	4	27	M	B:-	gap
+p1_L15	5	48	M	B:41	differ
+p1_L15	6	26	M	B:47	differ
+p1_L15	7	57	M	B:39	differ
+p1_L15	8	101	M	B:72	differ
+p1_L15	9	52	M	B:81	differ
+p1_L15	10	12	M	B:31	differ
+p1_L15	11	54	H		agree
+p1_L15	12	40	M	B:-	gap
+p1_L15	13	27	M	B:-	gap
+p1_L15	14	67	M	B:-	gap
+p1_L15	15	2	M	B:-	gap
+p1_L15	16	78	M	B:39	differ
+p1_L15	17	61	M	B:29	differ
+p1_L15	18	4	M	B:74	differ
+p1_L15	19	6	M	B:116	differ
+p1_L15	20	105	M	B:47	differ
+p1_L15	21	27	M	B:26	differ
+p1_L15	22	31	M	B:148	differ
+p1_L15	23	67	M	B:81	differ
+p1_L15	24	29	M	B:120	differ
+p1_L15	25	12	M	B:56	differ
+p1_L15	26	7	M	B:61	differ
+p1_L16	1	30	M	B:-	gap
+p1_L16	2	102	M	B:-	gap
+p1_L16	3	29	M	B:-	gap
+p1_L16	4	12	M	B:60	differ
+p1_L16	5	12	H		agree
+p1_L16	6	6	M	B:-	gap
+p1_L16	7	41	M	B:-	gap
+p1_L16	8	47	M	B:-	gap
+p1_L16	9	39	M	B:26	differ
+p1_L16	10	72	M	B:74	differ
+p1_L16	11	81	M	B:26	differ
+p1_L16	12	31	M	B:27	differ
+p1_L16	13	54	M	B:77	differ
+p1_L16	14	39	M	B:62	differ
+p1_L16	15	29	M	B:37	differ
+p1_L16	16	74	M	B:46	differ
+p1_L16	17	116	M	B:12	differ
+p1_L16	18	47	M	B:16	differ
+p1_L16	19	26	M	B:111	differ
+p1_L16	20	148	M	B:37	differ
+p1_L16	21	81	M	B:49	differ
+p1_L16	22	120	M	B:4	differ
+p1_L16	23	56	M	B:33	differ
+p1_L16	24	61	M	B:=cet	differ
+p1_L16	25	60	M	B:=d'aultre	differ
+p1_L16	26	12	M	B:=plaindre	differ
+p1_L16	27	26	M	B:=ou	differ
+p1_L16	28	74	M	B:=nous	differ
+p1_L16	29	26	M	B:=faisons	differ
+p1_L16	30	27	M	B:=amasser	differ
+p1_L16	31	77	M	B:=le	differ
+p1_L16	32	62	M	B:=plu	differ
+p1_L16	33	37	M	B:=de	differ
+p1_L16	34	46	M	B:=non	differ
+p1_L17	1	=pouvons	M	A:-	gap
+p1_L17	2	16	M	B:=et	differ
+p1_L17	3	111	M	B:=la	differ
+p1_L17	4	37	M	B:=distribuer	differ
+p1_L17	5	49	M	B:=aux	differ
+p1_L17	6	4	M	B:=gens	differ
+p1_L17	7	33	M	B:=de	differ
+p1_L17	8	=et	M	B:=guerre	differ
+p1_L17	9	=d'aultres	M	B:81	differ
+p1_L17	10	=plusieurs	M	B:2	differ
+p1_L17	11	=que	M	B:56	differ
+p1_L17	12	=nous	M	B:51	differ
+p1_L17	13	=faisons	M	B:62	differ
+p1_L17	14	=amasser	M	B:3	differ
+p1_L17	15	=le	M	B:37	differ
+p1_L17	16	=plus	M	B:62	differ
+p1_L17	17	=de	M	B:54	differ
+p1_L18	1	=pouvons	M	B:-	gap
+p1_L18	2	=et	M	B:49	differ
+p1_L18	3	=la	M	B:2	differ
+p1_L18	4	=distribuer	M	B:91	differ
+p1_L18	5	=aux	M	B:4	differ
+p1_L18	6	=gens	M	B:4	differ
+p1_L18	7	=de	M	B:49	differ
+p1_L18	8	=guerre	M	B:101	differ
+p1_L18	9	81	M	B:82	differ
+p1_L18	10	2	H		agree
+p1_L18	11	12	M	A:-	gap
+p1_L18	12	26	M	A:-	gap
+p1_L18	13	105	M	A:-	gap
+p1_L18	14	67	M	A:-	gap
+p1_L18	15	150	M	A:-	gap
+p1_L18	16	=Et	M	A:-	gap
+p1_L18	17	56	M	B:=esperons	differ
+p1_L18	18	51	M	B:=que	differ
+p1_L18	19	62	M	B:=plaisir	differ
+p1_L18	20	3	M	B:=nous	differ
+p1_L18	21	37	M	B:=ferons	differ
+p1_L19	1	49	M	B:=de	differ
+p1_L19	2	2	M	B:=mai	differ
+p1_L19	3	91	M	B:61	differ
+p1_L19	4	4	M	B:36	differ
+p1_L19	5	4	M	B:47	differ
+p1_L19	6	49	M	B:59	differ
+p1_L19	7	101	M	B:22	differ
+p1_L19	8	82	M	B:77	differ
+p1_L19	9	2	M	B:26	differ
+p1_L19	10	12	H		agree
+p1_L19	11	26	M	B:-	gap
+p1_L19	12	105	M	B:276	differ
+p1_L19	13	67	M	B:59	differ
+p1_L19	14	150	M	B:37	differ
+p1_L19	15	=Et	M	B:25	differ
+p1_L19	16	=esperons	M	B:12	differ
+p1_L19	17	=que	M	B:45	differ
+p1_L19	18	=la	M	B:27	differ
+p1_L19	19	=place	M	B:62	differ
+p1_L20	1	9	M	A:-	gap
+p1_L20	2	=d	M	B:148	differ
+p1_L20	3	=mais	M	B:47	differ
+p1_L20	4	61	M	B:3	differ
+p1_L20	5	36	M	B:12	differ
+p1_L20	6	47	M	B:29	differ
+p1_L20	7	59	M	B:=tout	differ
+p1_L20	8	22	M	B:=a	differ
+p1_L20	9	77	M	B:=passé	differ
+p1_L20	10	26	M	B:=du	differ
+p1_L20	11	12	M	B:=cras	differ
+p1_L20	12	276	M	B:=la	differ
+p1_L20	13	59	M	B:=mesme	differ
+p1_L20	14	37	M	B:9	differ
+p1_L20	15	25	M	B:39	differ
+p1_L20	16	12	M	B:54	differ
+p1_L20	17	45	M	B:40	differ
+p1_L20	18	27	H		agree
+p1_L20	19	61	M	A:-	gap
+p1_L20	20	84	M	A:-	gap
+p1_L20	21	4	M	A:-	gap
+p1_L21	1	81	M	A:-	gap
+p1_L21	2	2	M	A:-	gap
+p1_L21	3	9	M	B:72	differ
+p1_L21	4	118	M	B:117	differ
+p1_L21	5	47	M	B:66	differ
+p1_L21	6	3	M	B:42	differ
+p1_L21	7	12	M	B:130	differ
+p1_L21	8	25	M	B:138	differ
+p1_L21	9	=tout	M	B:8	differ
+p1_L21	10	=a	M	B:4	differ
+p1_L21	11	=passe	M	B:26	differ
+p1_L21	12	=de	M	B:48	differ
+p1_L21	13	=deux	M	B:112	differ
+p1_L21	14	=Colmars	M	B:339	differ
+p1_L21	15	9	M	B:81	differ
+p1_L21	16	39	M	B:33	differ
+p1_L21	17	54	M	B:12	differ
+p1_L21	18	40	M	B:36	differ
+p1_L21	19	27	M	B:46	differ
+p1_L21	20	61	M	B:48	differ
+p1_L21	21	34	M	B:124	differ
+p1_L22	1	81	M	B:=s'il	differ
+p1_L22	2	2	M	B:=a	differ
+p1_L22	3	72	M	B:=mon	differ
+p1_L22	4	117	M	B:=avis	differ
+p1_L22	5	66	M	B:82	differ
+p1_L22	6	42	M	B:26	differ
+p1_L22	7	130	M	B:76	differ
+p1_L22	8	138	M	B:2	differ
+p1_L22	9	8	M	B:37	differ
+p1_L22	10	4	M	B:35	differ
+p1_L22	11	16	M	B:69	differ
+p1_L22	12	48	M	B:12	differ
+p1_L22	13	112	M	B:57	differ
+p1_L22	14	339	M	B:36	differ
+p1_L22	15	81	M	B:129	differ
+p1_L22	16	33	M	B:137	differ
+p1_L22	17	12	M	B:59	differ
+p1_L22	18	38	H		agree
+p1_L22	19	25	M	A:-	gap
+p1_L22	20	81	M	A:-	gap
+p1_L22	21	2	M	A:-	gap
+p1_L22	22	46	M	B:83	differ
+p1_L22	23	43	M	B:67	differ
+p1_L22	24	134	M	B:25	differ
+p1_L23	1	=a	M	B:-	gap
+p1_L23	2	=un	M	B:-	gap
+p1_L23	3	=mary	M	B:-	gap
+p1_L23	4	=advis	M	B:-	gap
+p1_L23	5	82	M	B:-	gap
+p1_L23	6	26	M	B:-	gap
+p1_L23	7	76	M	B:-	gap
+p1_L23	8	2	M	B:-	gap
+p1_L23	9	33	M	B:-	gap
+p1_L23	10	35	M	B:-	gap
+p1_L23	11	69	M	B:-	gap
+p1_L23	12	12	M	B:-	gap
+p1_L23	13	57	M	B:-	gap
+p1_L23	14	36	M	B:-	gap
+p1_L23	15	129	M	B:-	gap
+p1_L23	16	137	M	B:-	gap
+p1_L23	17	59	M	B:-	gap
+p1_L23	18	38	M	B:-	gap
+p1_L23	19	25	M	B:-	gap
+p1_L23	20	81	M	B:-	gap
+p1_L23	21	2	M	B:-	gap
+p1_L23	22	83	M	B:-	gap
+p1_L23	23	67	M	B:-	gap
+p1_L23	24	29	M	B:-	gap
+p1_L23	25	3	H		agree
+p1_L23	26	81	H		agree
+p1_L23	27	2	H		agree
+p1_L23	28	61	H		agree
+p1_L23	29	81	H		agree
+p1_L23	30	2	H		agree
+p1_L23	31	33	H		agree
+p1_L23	32	11	H		agree
+p1_L23	33	5	H		agree
+p1_L23	34	28	H		agree
+p1_L23	35	42	H		agree
+p1_L23	36	56	H		agree
+p1_L23	37	102	H		agree
+p1_L23	38	29	H		agree
+p1_L23	39	12	H		agree
+p1_L23	40	211	M		agree-flagged
+p1_L23	41	32	H		agree
+p1_L23	42	78	H		agree
+p1_L23	43	104	H		agree
+p1_L23	44	26	H		agree
+p1_L23	45	62	H		agree
+p1_L23	46	12	H		agree
+p1_L23	47	67	H		agree
+p1_L23	48	31	M	B:29	differ
+p1_L24	1	4	H		agree
+p1_L24	2	22	H		agree
+p1_L24	3	71	H		agree
+p1_L24	4	100	H		agree
+p1_L24	5	14	H		agree
+p1_L24	6	4	H		agree
+p1_L24	7	34	H		agree
+p1_L24	8	9	H		agree
+p1_L24	9	5	H		agree
+p1_L24	10	47	H		agree
+p1_L24	11	14	H		agree
+p1_L24	12	4	H		agree
+p1_L24	13	52	H		agree
+p1_L24	14	40	M	B:80	differ
+p1_L24	15	19	H		agree
+p1_L24	16	22	H		agree
+p1_L24	17	33	H		agree
+p1_L24	18	4	H		agree
+p1_L24	19	4	H		agree
+p1_L24	20	52	H		agree
+p1_L24	21	81	H		agree
+p1_L24	22	26	H		agree
+p1_L24	23	57	H		agree
+p1_L24	24	66	H		agree
+p1_L24	25	4	H		agree
+p1_L24	26	7	H		agree
+p1_L24	27	149	H		agree
+p1_L24	28	6	H		agree
+p1_L24	29	25	H		agree
+p1_L24	30	62	H		agree
+p1_L24	31	13	H		agree
+p1_L24	32	67	H		agree
+p1_L24	33	28	H		agree
+p1_L24	34	32	H		agree
+p1_L24	35	59	H		agree
+p1_L24	36	38	H		agree
+p1_L24	37	22	H		agree
+p1_L24	38	66	H		agree
+p1_L24	39	52	H		agree
+p1_L24	40	26	M	B:10	differ
+p1_L24	41	105	H		agree
+p1_L24	42	67	H		agree
+p1_L25	1	48	H		agree
+p1_L25	2	7	H		agree
+p1_L25	3	5	H		agree
+p1_L25	4	29	H		agree
+p1_L25	5	48	H		agree
+p1_L25	6	115	M	B:111	differ
+p1_L25	7	86	H		agree
+p1_L25	8	44	H		agree
+p1_L25	9	68	H		agree
+p1_L25	10	5	H		agree
+p1_L25	11	26	H		agree
+p1_L25	12	=qui	M		agree-flagged
+p1_L25	13	=sera	M		agree-flagged
+p1_L25	14	=bon	M	B:=bonne	differ
+p1_L25	15	=remboursse	M	B:=remboursée	differ
+p1_L25	16	=de	M		agree-flagged
+p1_L25	17	=la	M	A:-	gap
+p1_L25	18	=quenon	M	A:-	gap
+p1_L25	19	=d'ceur	M	A:-	gap
+p1_L26	1	=a	M		agree-flagged
+p1_L26	2	=fait	M		agree-flagged
+p1_L26	3	=tel	M	B:-	gap
+p1_L26	4	=cas	M	B:=sçavoir	differ
+p1_L26	5	=de	M		agree-flagged
+p1_L26	6	=un	M	B:=au	differ
+p1_L26	7	=gens	M	B:=gouverneur	differ
+p1_L26	8	=de	M		agree-flagged
+p1_L26	9	=guerre	M		agree-flagged
+p1_L26	10	=Guo	M	A:-	gap
+p1_L26	11	=la	M	A:-	gap
+p1_L26	12	=voye	M	A:-	gap
+p1_L26	13	=ung	M	A:-	gap
+p1_L26	14	9	H		agree
+p1_L26	15	39	H		agree
+p1_L26	16	59	H		agree
+p1_L26	17	40	H		agree
+p1_L26	18	25	H		agree
+p1_L26	19	55	H		agree
+p1_L27	1	53	H		agree
+p1_L27	2	23	H		agree
+p1_L27	3	12	H		agree
+p1_L27	4	45	H		agree
+p1_L27	5	26	H		agree
+p1_L27	6	92	H		agree
+p1_L27	7	66	H		agree
+p1_L27	8	4	H		agree
+p1_L27	9	77	H		agree
+p1_L27	10	54	H		agree
+p1_L27	11	119	H		agree
+p1_L27	12	66	H		agree
+p1_L27	13	67	H		agree
+p1_L27	14	9	H		agree
+p1_L27	15	112	H		agree
+p1_L27	16	47	H		agree
+p1_L27	17	6	H		agree
+p1_L27	18	41	H		agree
+p1_L27	19	52	M	A:-	gap
+p1_L27	20	68	M	A:-	gap
+p1_L27	21	77	M	A:-	gap
+p1_L28	1	77	H		agree
+p1_L28	2	51	H		agree
+p1_L28	3	5	H		agree
+p1_L28	4	26	H		agree
+p1_L28	5	7	H		agree
+p1_L28	6	211	M	B:311	differ
+p1_L28	7	12	H		agree
+p1_L28	8	12	H		agree
+p1_L28	9	6	H		agree
+p1_L28	10	41	H		agree
+p1_L28	11	47	H		agree
+p1_L28	12	36	H		agree
+p1_L28	13	72	H		agree
+p1_L28	14	104	H		agree
+p1_L28	15	114	H		agree
+p1_L28	16	81	H		agree
+p1_L28	17	26	H		agree
+p1_L28	18	33	H		agree
+p1_L28	19	79	H		agree
+p1_L28	20	40	H		agree
+p1_L28	21	32	M	A:-	gap
+p1_L29	1	76	H		agree
+p1_L29	2	101	H		agree
+p1_L29	3	2	H		agree
+p1_L29	4	63	H		agree
+p1_L29	5	115	M	B:118	differ
+p1_L29	6	54	H		agree
+p1_L29	7	40	H		agree
+p1_L29	8	27	H		agree
+p1_L29	9	83	H		agree
+p1_L29	10	81	H		agree
+p1_L29	11	2	H		agree
+p1_L29	12	77	H		agree
+p1_L29	13	60	H		agree
+p1_L29	14	12	H		agree
+p1_L29	15	29	H		agree
+p1_L29	16	74	H		agree
+p1_L29	17	112	H		agree
+p1_L29	18	11	M	B:2	differ
+p1_L29	19	93	H		agree
+p1_L29	20	60	H		agree
+p1_L30	1	=par	M		agree-flagged
+p1_L30	2	=de	M		agree-flagged
+p1_L30	3	=guerre	M	B:=Guerre	differ
+p1_L30	4	=comme	M	B:=Comme	differ
+p1_L30	5	12	H		agree
+p1_L30	6	279	H		agree
+p1_L30	7	104	H		agree
+p1_L30	8	114	H		agree
+p1_L30	9	51	H		agree
+p1_L30	10	81	H		agree
+p1_L30	11	4	H		agree
+p1_L30	12	83	H		agree
+p1_L30	13	82	H		agree
+p1_L30	14	2	H		agree
+p1_L30	15	32	H		agree
+p1_L30	16	12	H		agree
+p1_L30	17	26	H		agree
+p1_L30	18	71	H		agree
+p1_L30	19	70	H		agree
+p1_L30	20	88	M	A:-	gap
+p1_L30	21	26	M	A:-	gap
+p1_L31	1	42	H		agree
+p1_L31	2	26	H		agree
+p1_L31	3	34	H		agree
+p1_L31	4	38	M	B:88	differ
+p1_L31	5	22	H		agree
+p1_L31	6	29	H		agree
+p1_L31	7	81	H		agree
+p1_L31	8	31	M	B:81	differ
+p1_L31	9	54	H		agree
+p1_L31	10	72	H		agree
+p1_L31	11	69	H		agree
+p1_L31	12	2	H		agree
+p1_L31	13	33	H		agree
+p1_L31	14	56	H		agree
+p1_L31	15	65	H		agree
+p1_L31	16	6	H		agree
+p1_L31	17	40	H		agree
+p1_L31	18	72	H		agree
+p1_L31	19	12	H		agree
+p1_L31	20	54	H		agree
+p1_L31	21	27	M	A:-	gap
+p1_L31	22	27	H		agree
+p1_L31	23	61	M	A:-	gap
+p1_L31	24	61	M	A:-	gap
+p1_L32	1	84	H		agree
+p1_L32	2	101	H		agree
+p1_L32	3	73	H		agree
+p1_L32	4	51	M	B:81	differ
+p1_L32	5	22	H		agree
+p1_L32	6	85	H		agree
+p1_L32	7	116	H		agree
+p1_L32	8	57	H		agree
+p1_L32	9	28	H		agree
+p1_L32	10	71	M	B:81	differ
+p1_L32	11	27	H		agree
+p1_L32	12	22	H		agree
+p1_L32	13	42	H		agree
+p1_L32	14	27	H		agree
+p1_L32	15	24	M	B:74	differ
+p1_L32	16	115	H		agree
+p1_L32	17	11	H		agree
+p1_L32	18	31	H		agree
+p1_L32	19	59	H		agree
+p1_L32	20	86	H		agree
+p1_L32	21	66	H		agree
+p1_L32	22	4	H		agree
+p1_L32	23	9	H		agree
+p1_L32	24	101	H		agree
+p1_L33	1	30	H		agree
+p1_L33	2	12	H		agree
+p1_L33	3	56	H		agree
+p1_L33	4	26	H		agree
+p1_L33	5	72	H		agree
+p1_L33	6	22	H		agree
+p1_L33	7	56	H		agree
+p1_L33	8	22	H		agree
+p1_L33	9	42	H		agree
+p1_L33	10	13	H		agree
+p1_L33	11	33	H		agree
+p1_L33	12	211	M	B:311	differ
+p1_L33	13	=comme	M		agree-flagged
+p1_L33	14	=il	M	B:-	gap
+p1_L33	15	=a	M	B:=est	differ
+p1_L33	16	=fait	M	B:=affaict	differ
+p1_L33	17	=naguere	M	B:=naguères	differ
+p1_L33	18	=pour	M		agree-flagged
+p1_L33	19	4	H		agree
+p1_L33	20	39	H		agree
+p1_L33	21	101	H		agree
+p1_L33	22	11	M	B:111	differ
+p1_L33	23	44	H		agree
+p1_L33	24	4	M	A:-	gap
+p1_L34	1	[blank]	H		agree
+p1_L35	1	[blank]	H		agree
+p1_L36	1	[blank]	H		agree
+p2_L01	1	93	M	A:-	gap
+p2_L01	2	12	M		agree-flagged
+p2_L01	3	201	H		agree
+p2_L01	4	54	H		agree
+p2_L01	5	84	H		agree
+p2_L01	6	4	H		agree
+p2_L01	7	61	H		agree
+p2_L01	8	22	H		agree
+p2_L01	9	68	H		agree
+p2_L01	10	82	H		agree
+p2_L01	11	69	H		agree
+p2_L01	12	4	H		agree
+p2_L01	13	84	H		agree
+p2_L01	14	76	H		agree
+p2_L01	15	2	H		agree
+p2_L01	16	32	H		agree
+p2_L01	17	62	H		agree
+p2_L01	18	54	H		agree
+p2_L01	19	40	H		agree
+p2_L01	20	26	H		agree
+p2_L01	21	81	H		agree
+p2_L01	22	2	H		agree
+p2_L02	1	84	H		agree
+p2_L02	2	39	H		agree
+p2_L02	3	77	H		agree
+p2_L02	4	69	H		agree
+p2_L02	5	5	H		agree
+p2_L02	6	26	H		agree
+p2_L02	7	=Monsieur	M	B:=M	differ
+p2_L02	8	=reste	M		agree-flagged
+p2_L02	9	=sinon	M	B:=jamais	differ
+p2_L02	10	=que	M	B:=qui	differ
+p2_L02	11	=vous	M	B:=bien	differ
+p2_L02	12	=plaise	M	B:=plaira	differ
+p2_L02	13	=me	M		agree-flagged
+p2_L02	14	=mander	M		agree-flagged
+p2_L02	15	=bref	M	B:=sixiesme	differ
+p2_L02	16	=s'advis	M	B:=advis	differ
+p2_L02	17	=si	M	B:=suivi	differ
+p2_L02	18	=est	M	B:=ou	differ
+p2_L02	19	=tousiours	M	B:=telle	differ
+p2_L03	1	=peu	M	B:=plus	differ
+p2_L03	2	=pour	M	B:=toujours	differ
+p2_L03	3	=que	M		agree-flagged
+p2_L03	4	=vous	M	B:=bonne	differ
+p2_L03	5	=pourrez	M		agree-flagged
+p2_L03	6	=et	M	B:=Et	differ
+p2_L03	7	=a	M		agree-flagged
+p2_L03	8	=que	M		agree-flagged
+p2_L03	9	=vous	M	B:=bonne	differ
+p2_L03	10	=publierez	M	B:=publier	differ
+p2_L03	11	=quelque	M	B:=quelle	differ
+p2_L03	12	=chose	M	B:=en	differ
+p2_L03	13	=Je	M		agree-flagged
+p2_L03	14	=suis	M	B:=serai	differ
+p2_L03	15	=comme	M		agree-flagged
+p2_L03	16	=de	M	B:=a	differ
+p2_L03	17	=moy	M		agree-flagged
+p2_L03	18	=vostre	M	B:-	gap
+p2_L03	19	=bon	M	B:-	gap
+p2_L03	20	=amy	M	B:=n'estrangié	differ
+p2_L04	1	=bien	M	B:=vous	differ
+p2_L04	2	=delibere	M	B:=d'chien	differ
+p2_L04	3	=de	M		agree-flagged
+p2_L04	4	=ne	M	B:=me	differ
+p2_L04	5	=passer	M		agree-flagged
+p2_L04	6	=plus	M	B:=bien	differ
+p2_L04	7	=seul	M		agree-flagged
+p2_L04	8	=jour	M		agree-flagged
+p2_L04	9	=Ge	M	A:-	gap
+p2_L04	10	=que	M	B:=Fr	differ
+p2_L04	11	=ne	M	B:=me	differ
+p2_L04	12	=face	M	B:=fera	differ
+p2_L04	13	=chose	M	B:=bien	differ
+p2_L04	14	=gaigner	M		agree-flagged
+p2_L04	15	=au	M		agree-flagged
+p2_L04	16	=pedar	M	B:=perdre	differ
+p2_L04	17	=sa	M	B:=la	differ
+p2_L04	18	=par	M	B:=perte	differ
+p2_L04	19	=que	M	B:=qu'il	differ
+p2_L05	1	=quatre	M		agree-flagged
+p2_L05	2	=jours	M		agree-flagged
+p2_L05	3	145	M	B:148	differ
+p2_L05	4	127	H		agree
+p2_L05	5	54	H		agree
+p2_L05	6	40	H		agree
+p2_L05	7	26	H		agree
+p2_L05	8	62	H		agree
+p2_L05	9	84	H		agree
+p2_L05	10	4	H		agree
+p2_L05	11	28	H		agree
+p2_L05	12	7	H		agree
+p2_L05	13	29	H		agree
+p2_L05	14	34	H		agree
+p2_L05	15	40	H		agree
+p2_L05	16	22	H		agree
+p2_L05	17	26	H		agree
+p2_L05	18	101	H		agree
+p2_L05	19	8	H		agree
+p2_L05	20	33	H		agree
+p2_L05	21	66	H		agree
+p2_L05	22	102	H		agree
+p2_L05	23	72	H		agree
+p2_L06	1	77	H		agree
+p2_L06	2	61	H		agree
+p2_L06	3	82	H		agree
+p2_L06	4	75	H		agree
+p2_L06	5	42	H		agree
+p2_L06	6	82	H		agree
+p2_L06	7	26	H		agree
+p2_L06	8	62	H		agree
+p2_L06	9	12	H		agree
+p2_L06	10	279	H		agree
+p2_L06	11	15	H		agree
+p2_L06	12	62	H		agree
+p2_L06	13	111	H		agree
+p2_L06	14	61	H		agree
+p2_L06	15	84	H		agree
+p2_L06	16	4	H		agree
+p2_L06	17	26	H		agree
+p2_L06	18	15	H		agree
+p2_L06	19	69	H		agree
+p2_L06	20	47	H		agree
+p2_L06	21	26	H		agree
+p2_L06	22	72	H		agree
+p2_L07	1	12	M	B:62	differ
+p2_L07	2	79	H		agree
+p2_L07	3	40	H		agree
+p2_L07	4	77	H		agree
+p2_L07	5	61	H		agree
+p2_L07	6	48	H		agree
+p2_L07	7	78	H		agree
+p2_L07	8	81	H		agree
+p2_L07	9	64	M	B:84	differ
+p2_L07	10	40	H		agree
+p2_L07	11	111	H		agree
+p2_L07	12	33	M	B:88	differ
+p2_L07	13	67	H		agree
+p2_L07	14	47	H		agree
+p2_L07	15	4	H		agree
+p2_L07	16	34	H		agree
+p2_L07	17	81	H		agree
+p2_L07	18	36	H		agree
+p2_L07	19	26	H		agree
+p2_L07	20	73	H		agree
+p2_L07	21	9	H		agree
+p2_L07	22	4	H		agree
+p2_L07	23	30	H		agree
+p2_L08	1	73	M	B:78	differ
+p2_L08	2	101	H		agree
+p2_L08	3	83	M	B:88	differ
+p2_L08	4	84	H		agree
+p2_L08	5	26	H		agree
+p2_L08	6	33	H		agree
+p2_L08	7	67	H		agree
+p2_L08	8	9	H		agree
+p2_L08	9	4	H		agree
+p2_L08	10	72	H		agree
+p2_L08	11	105	H		agree
+p2_L08	12	115	H		agree
+p2_L08	13	12	M	B:120	differ
+p2_L08	14	30	H		agree
+p2_L08	15	33	M	B:88	differ
+p2_L08	16	9	H		agree
+p2_L08	17	37	M	B:87	differ
+p2_L08	18	5	H		agree
+p2_L08	19	150	H		agree
+p2_L08	20	46	H		agree
+p2_L08	21	101	H		agree
+p2_L08	22	30	H		agree
+p2_L09	1	54	H		agree
+p2_L09	2	40	H		agree
+p2_L09	3	20	M	B:26	differ
+p2_L09	4	54	H		agree
+p2_L09	5	38	H		agree
+p2_L09	6	27	H		agree
+p2_L09	7	59	H		agree
+p2_L09	8	33	M	B:88	differ
+p2_L09	9	22	H		agree
+p2_L09	10	84	H		agree
+p2_L09	11	102	H		agree
+p2_L09	12	69	H		agree
+p2_L09	13	2	H		agree
+p2_L09	14	30	M	B:80	differ
+p2_L09	15	15	H		agree
+p2_L09	16	4	H		agree
+p2_L09	17	65	H		agree
+p2_L09	18	37	H		agree
+p2_L09	19	112	H		agree
+p2_L09	20	33	M	B:88	differ
+p2_L09	21	67	H		agree
+p2_L10	1	30	H		agree
+p2_L10	2	28	H		agree
+p2_L10	3	71	H		agree
+p2_L10	4	22	H		agree
+p2_L10	5	51	M	B:55	differ
+p2_L10	6	=Et	M	B:=Est	differ
+p2_L10	7	=possible	M		agree-flagged
+p2_L10	8	=Et	M	A:-	gap
+p2_L10	9	=pour	M	B:=vous	differ
+p2_L10	10	=la	M		agree-flagged
+p2_L10	11	=fin	M	B:=foy	differ
+p2_L10	12	=de	M		agree-flagged
+p2_L10	13	=cestuy	M	B:=notre	differ
+p2_L10	14	=Monsieur	M		agree-flagged
+p2_L10	15	=a	M		agree-flagged
+p2_L10	16	=la	M		agree-flagged
+p2_L10	17	=vray	M	A:-	gap
+p2_L10	18	=que	M	B:=Vous	differ
+p2_L10	19	=Jaurons	M	B:=demeurera	differ
+p2_L11	1	=Et	M	B:=je	differ
+p2_L11	2	=veul	M	B:=vous	differ
+p2_L11	3	=bien	M	B:=prie	differ
+p2_L11	4	=que	M	B:=de	differ
+p2_L11	5	=vous	M		agree-flagged
+p2_L11	6	=supplerez	M	B:=supplierai	differ
+p2_L11	7	=affectueusement	M		agree-flagged
+p2_L11	8	=en	M	B:=Dieu	differ
+p2_L11	9	=donner	M		agree-flagged
+p2_L11	10	=gage	M	B:=grace	differ
+p2_L11	11	=a	M		agree-flagged
+p2_L11	12	=qui	M		agree-flagged
+p2_L11	13	=ce	M	A:-	gap
+p2_L11	14	=luy	M	A:-	gap
+p2_L11	15	=dieu	M	B:=donne	differ
+p2_L12	1	=avoir	M	B:=amy	differ
+p2_L12	2	=en	M	B:=et	differ
+p2_L12	3	=fin	M	B:=fils	differ
+p2_L12	4	=mon	M	B:=Monsieur	differ
+p2_L12	5	=du	M	B:=de	differ
+p2_L12	6	=maupertuis	M	B:=Marnfoisin	differ
+p2_L12	7	=de	M		agree-flagged
+p2_L12	8	=regarder	M	B:=regarde	differ
+p2_L12	9	=a	M		agree-flagged
+p2_L12	10	=tout	M	B:=tous	differ
+p2_L12	11	=ce	M		agree-flagged
+p2_L12	12	=qui	M		agree-flagged
+p2_L12	13	=luy	M	B:-	gap
+p2_L12	14	=pouons	M	B:=suy	differ
+p2_L12	15	=a	M	B:=pourrais	differ
+p2_L12	16	=partenir	M	B:=appartenir	differ
+p2_L12	17	=luy	M	B:=bd	differ
+p2_L13	1	=Je	M	B:-	gap
+p2_L13	2	=luy	M	B:=de	differ
+p2_L13	3	=prie	M		agree-flagged
+p2_L13	4	=donne	M	A:-	gap
+p2_L13	5	=suis	M	A:-	gap
+p2_L13	6	=a	M	A:-	gap
+p2_L13	7	=sur	M	B:=Je	differ
+p2_L13	8	=sa	M	B:=Fr	differ
+p2_L13	9	=demande	M	B:=Avignon	differ
+p2_L13	10	=pour	M		agree-flagged
+p2_L13	11	=l'envoyer	M		agree-flagged
+p2_L13	12	=a	M		agree-flagged
+p2_L13	13	=sa	M		agree-flagged
+p2_L13	14	=femme	M	B:-	gap
+p2_L13	15	=bien	M	B:-	gap
+p2_L13	16	=faire	M	B:=pauvre	differ
+p2_L13	17	=chose	M	B:=bourse	differ
+p2_L13	18	=d'huy	M	B:=garde	differ
+p2_L13	19	=nouvelle	M	B:=d'aujourd'hui	differ
+p2_L14	1	=de	M		agree-flagged
+p2_L14	2	=petits	M		agree-flagged
+p2_L14	3	=enfans	M		agree-flagged
+p2_L14	4	=quils	M	B:=qu'il	differ
+p2_L14	5	=a	M		agree-flagged
+p2_L14	6	=laisses	M	B:=laissez	differ
+p2_L14	7	=sans	M		agree-flagged
+p2_L14	8	=beaucoup	M		agree-flagged
+p2_L14	9	=de	M		agree-flagged
+p2_L14	10	=moyens	M		agree-flagged
+p2_L14	11	=B	M	A:-	gap
+p2_L14	12	=S'il	M	B:=le	differ
+p2_L14	13	=lui	M	B:=tenteray	differ
+p2_L14	14	=plaisoit	M	B:=le	differ
+p2_L14	15	=luy	M	B:=m	differ
+p2_L15	1	=faire	M	B:=je	differ
+p2_L15	2	=tenir	M	B:=fere	differ
+p2_L15	3	=ou	M		agree-flagged
+p2_L15	4	=ce	M	A:-	gap
+p2_L15	5	=j'iray	M	B:=jour	differ
+p2_L15	6	=J'ay	M	B:=Jay	differ
+p2_L15	7	=moyen	M	B:=mercy	differ
+p2_L15	8	=de	M		agree-flagged
+p2_L15	9	=luy	M	B:=suy	differ
+p2_L15	10	=envoyer	M	B:=amie	differ
+p2_L15	11	=a	M		agree-flagged
+p2_L15	12	=ce	M	A:-	gap
+p2_L15	13	=Coday	M	B:=jour	differ
+p2_L15	14	=Ce	M		agree-flagged
+p2_L15	15	=sera	M		agree-flagged
+p2_L15	16	=tout	M	B:=dour	differ
+p2_L15	17	=Ludewich	M	B:=Ludovic	differ
+p2_L16	1	=ne	M	A:-	gap
+p2_L16	2	=que	M	B:=m'asseurez	differ
+p2_L16	3	=m'assurant	M	B:=mais	differ
+p2_L16	4	=eu	M	B:=vous	differ
+p2_L16	5	=veu	M	B:=aussi	differ
+p2_L16	6	=aussy	M	B:=assez	differ
+p2_L16	7	=ay	M	B:=y	differ
+p2_L16	8	=recommande	M	B:=recommend	differ
+p2_L16	9	=avy	M	B:=avoy	differ
+p2_L16	10	=tout	M		agree-flagged
+p2_L16	11	=ce	M		agree-flagged
+p2_L16	12	=qui	M		agree-flagged
+p2_L16	13	=pourrait	M	B:=pourroit	differ
+p2_L16	14	=apparoistre	M	B:=appartenir	differ
+p2_L17	1	=a	M		agree-flagged
+p2_L17	2	=ceux	M	B:=ma	differ
+p2_L17	3	=qui	M	B:=Je	differ
+p2_L17	4	=veulent	M	B:=veux	differ
+p2_L17	5	=tout	M		agree-flagged
+p2_L17	6	=faire	M	B:=fault	differ
+p2_L17	7	=sonner	M	B:=donné	differ
+p2_L17	8	=Je	M		agree-flagged
+p2_L17	9	=me	M		agree-flagged
+p2_L17	10	=recommanderay	M	B:-	gap
+p2_L17	11	=sur	M	B:-	gap
+p2_L17	12	=tout	M	B:=recommenderay	differ
+p2_L17	13	=bien	M	B:=tres	differ
+p2_L17	14	=humblement	M		agree-flagged
+p2_L17	15	=a	M		agree-flagged
+p2_L17	16	=vos	M	B:=bonne	differ
+p2_L17	17	=bonnes	M	B:=bonne	differ
+p2_L18	1	=graces	M	B:=gratieuse	differ
+p2_L18	2	=suppliant	M		agree-flagged
+p2_L18	3	=dieu	M	B:=Dieu	differ
+p2_L18	4	=que	M		agree-flagged
+p2_L18	5	=gard	M	B:=gay	differ
+p2_L18	6	=vous	M		agree-flagged
+p2_L18	7	=donne	M	B:=doint	differ
+p2_L19	1	=Monsieur	M		agree-flagged
+p2_L19	2	=soit	M	A:-	gap
+p2_L19	3	=en	M		agree-flagged
+p2_L19	4	=bonne	M		agree-flagged
+p2_L19	5	=sante	M	B:=santé	differ
+p2_L19	6	=tres	M		agree-flagged
+p2_L19	7	=humblement	M	B:-	gap
+p2_L19	8	=etc	M	B:=Bruxelles	differ
+p2_L20	1	=au	M		agree-flagged
+p2_L20	2	=six[ie]me	M	B:=sixiesme	differ
+p2_L20	3	=jour	M		agree-flagged
+p2_L20	4	=de	M		agree-flagged
+p2_L20	5	=mars	M		agree-flagged
+p2_L20	6	1574	H		agree
+p2_L20	7	=Vostre	M	B:=Vre	differ
+p2_L20	8	=bon	M		agree-flagged
+p2_L20	9	=frere	M		agree-flagged
+p2_L20	10	=Ey	M	A:-	gap
+p2_L20	11	=m	M	A:-	gap
+p2_L20	12	=Louys	M	B:=Camp	differ
+p2_L20	13	=de	M	B:=a	differ
+p2_L20	14	=Nassau	M	B:=Mars	differ
+p2_L21	1	[blank]	H		agree
+p2_L22	1	[blank]	H		agree
+p2_L23	1	[blank]	H		agree

@@ -153,6 +153,7 @@ Do not settle disagreements.tsv from this brief; do not decode; do not classify 
 |---|---|---|---|---|---|
 | 4610 | p1-p3 | 109 | 1934 | 1899 | 1558/1981 = 78.6% |
 | 4611 | p1-p3 | 94 | 1692 | 1626 | 1201/1755 = 68.4% |
+| 4612 | p1-p2 | 59 | 1097 | 1108 | 559/1170 = 47.8% |
 
 ## R12: sibling passes, 24 September 2026 (LANE R worker R12)
 

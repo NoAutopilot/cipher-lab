@@ -1,0 +1,612 @@
+line	col	A	B	flagged	crop
+p1_L01	2	=Je	=je	A	
+p1_L01	3	=seray	=croy	A	
+p1_L01	6	-	=escript		
+p1_L01	8	=xxij	22		
+p1_L01	13	=a	=ce	A	
+p1_L01	15	=mandez	=mande	A	
+p1_L01	20	-	=Bruxelles		
+p1_L01	21	=Angleterre	=Suy	AB	
+p1_L02	1	=avec	-	A	
+p1_L02	2	=ce	=Puis	A	
+p1_L02	3	=que	=a	A	
+p1_L02	4	=soy	=foy	A	
+p1_L02	5	=dictes	=Dieu	A	
+p1_L02	6	=le	=se	A	
+p1_L02	8	-	=tant		
+p1_L02	9	-	=que		
+p1_L02	10	-	=Dieu		
+p1_L02	11	=tres	=vous	A	
+p1_L02	12	=humblement	=face	A	
+p1_L02	13	=de	=bonne	A	
+p1_L02	14	=Coua	=poursuite	A	
+p1_L02	15	=boursois	=continuee	A	
+p1_L02	16	=autrement	=fistes	A	
+p1_L02	17	=filz	=de	A	
+p1_L02	18	=sieur	=S	AB	
+p1_L02	19	=Bourdictions	=benedictions	A	
+p1_L02	21	=Quant	=quant		
+p1_L03	5	-	=qui	B	
+p1_L03	6	=que	=c'est	AB	
+p1_L03	7	=scay	=passé	AB	
+p1_L03	9	=xxij	27	B	
+p1_L03	17	68	62		
+p1_L04	19	41	47		
+p1_L05	4	=si	=Ce	AB	
+p1_L05	5	=fort	=sort	AB	
+p1_L05	7	=disposicion	=disposition	AB	
+p1_L05	24	21	27	A	
+p1_L06	1	83	85		
+p1_L06	6	81	84		
+p1_L06	8	128	138		
+p1_L06	12	118	113		
+p1_L07	1	-	26		
+p1_L07	5	45	48		
+p1_L07	6	53	33		
+p1_L07	7	47	77		
+p1_L07	15	38	78		
+p1_L07	20	102	-		
+p1_L07	21	22	37		
+p1_L07	22	28	26		
+p1_L07	23	140	12		
+p1_L08	1	-	33		
+p1_L08	2	75	40		
+p1_L08	3	51	28		
+p1_L08	4	12	73		
+p1_L08	5	48	27		
+p1_L08	6	29	25		
+p1_L08	7	62	56		
+p1_L08	8	42	24		
+p1_L08	9	27	43		
+p1_L08	10	19	82		
+p1_L08	11	25	23		
+p1_L08	12	7	27		
+p1_L08	13	28	81		
+p1_L08	14	62	2		
+p1_L08	15	54	77		
+p1_L08	16	10	69		
+p1_L08	17	29	104		
+p1_L08	18	62	74		
+p1_L08	19	83	31		
+p1_L08	20	9	60		
+p1_L08	21	2	59		
+p1_L08	22	28	40		
+p1_L08	23	16	25		
+p1_L09	1	33	-		
+p1_L09	2	46	192		
+p1_L09	4	73	-		
+p1_L09	5	27	9		
+p1_L09	6	25	4		
+p1_L09	7	56	12		
+p1_L09	8	24	41		
+p1_L09	9	43	13		
+p1_L09	10	82	77		
+p1_L09	11	23	84		
+p1_L09	12	27	4		
+p1_L09	13	81	34		
+p1_L09	14	2	67		
+p1_L09	15	77	13		
+p1_L09	16	69	68		
+p1_L09	17	104	72		
+p1_L09	18	74	83		
+p1_L09	20	-	26		
+p1_L09	21	-	72		
+p1_L09	22	60	4		
+p1_L09	23	59	34		
+p1_L09	24	40	87		
+p1_L09	25	25	88		
+p1_L10	1	-	13		
+p1_L10	2	-	2		
+p1_L10	3	-	84		
+p1_L10	4	-	82		
+p1_L10	5	-	22		
+p1_L10	6	192	61	A	
+p1_L10	7	28	39		
+p1_L10	8	9	67		
+p1_L10	11	41	-		
+p1_L10	12	13	-		
+p1_L10	13	77	60		
+p1_L10	15	4	-		
+p1_L10	16	34	-		
+p1_L10	17	67	39		
+p1_L10	18	13	26		
+p1_L10	19	68	130		
+p1_L10	20	72	128		
+p1_L10	21	83	136		
+p1_L10	22	31	46		
+p1_L10	23	26	52		
+p1_L10	24	72	28		
+p1_L10	25	4	84		
+p1_L10	26	34	112		
+p1_L10	27	81	42		
+p1_L10	28	88	27		
+p1_L11	1	-	4		
+p1_L11	2	13	40		
+p1_L11	3	2	27		
+p1_L11	4	68	9		
+p1_L11	5	82	4		
+p1_L11	6	22	85		
+p1_L11	7	61	16		
+p1_L11	8	39	101		
+p1_L11	9	67	114		
+p1_L11	10	4	43		
+p1_L11	12	60	-		
+p1_L11	13	84	-		
+p1_L11	14	39	79		
+p1_L11	15	26	40		
+p1_L11	16	150	29		
+p1_L11	17	128	9		
+p1_L11	18	136	28		
+p1_L11	19	46	77		
+p1_L11	20	52	59		
+p1_L11	21	28	11		
+p1_L11	22	84	202		
+p1_L11	23	112	12		
+p1_L11	24	42	201		
+p1_L11	25	27	12		
+p1_L12	1	54	-		
+p1_L12	2	46	279		
+p1_L12	3	27	=mesme	B	
+p1_L12	4	9	=chose	B	
+p1_L12	5	4	=quelle	B	
+p1_L12	6	83	=est	B	
+p1_L12	7	16	=pu	B	
+p1_L12	8	101	=bien	B	
+p1_L12	9	114	=bonjour	B	
+p1_L12	10	43	=convertir	B	
+p1_L12	11	12	=bon	B	
+p1_L12	12	79	=frans	B	
+p1_L12	13	40	59		
+p1_L12	14	29	37		
+p1_L12	15	9	25		
+p1_L12	16	28	76		
+p1_L12	17	77	2		
+p1_L12	18	59	31		
+p1_L12	19	11	142		
+p1_L12	20	202	51		
+p1_L12	21	12	52		
+p1_L12	22	201	61		
+p1_L12	23	12	2		
+p1_L13	1	-	33		
+p1_L13	2	-	62		
+p1_L13	3	-	42		
+p1_L13	4	-	88		
+p1_L13	5	279	62		
+p1_L13	6	=mesme	13	A	
+p1_L13	7	=chose	82	A	
+p1_L13	8	=qu'il	40	A	
+p1_L13	9	=fut	62	A	
+p1_L13	10	=buy	7	A	
+p1_L13	11	=boiseur	41	A	
+p1_L13	12	=comme	54	A	
+p1_L13	13	59	39		
+p1_L13	14	37	29		
+p1_L13	15	25	62		
+p1_L13	16	76	38		
+p1_L13	17	2	26		
+p1_L13	18	31	73		
+p1_L13	19	142	27		
+p1_L13	20	51	33		
+p1_L13	21	52	142		
+p1_L13	22	61	121		
+p1_L13	23	2	135		
+p1_L14	1	33	62		
+p1_L14	2	42	54		
+p1_L14	3	88	4		
+p1_L14	4	62	27		
+p1_L14	5	13	48		
+p1_L14	6	82	26		
+p1_L14	7	40	57		
+p1_L14	8	62	101		
+p1_L14	9	7	52		
+p1_L14	10	41	12		
+p1_L14	12	-	40		
+p1_L14	13	-	27		
+p1_L14	14	-	67		
+p1_L14	15	39	2		
+p1_L14	16	29	78		
+p1_L14	17	62	67		
+p1_L14	18	38	4		
+p1_L14	19	26	6		
+p1_L14	20	73	105		
+p1_L14	22	-	31		
+p1_L14	23	33	67		
+p1_L14	24	142	29		
+p1_L14	25	121	12		
+p1_L14	26	135	7		
+p1_L15	1	62	-		
+p1_L15	2	54	-		
+p1_L15	3	4	-		
+p1_L15	4	27	-		
+p1_L15	5	48	41		
+p1_L15	6	26	47		
+p1_L15	7	57	39		
+p1_L15	8	101	72		
+p1_L15	9	52	81		
+p1_L15	10	12	31		
+p1_L15	12	40	-		
+p1_L15	13	27	-		
+p1_L15	14	67	-		
+p1_L15	15	2	-		
+p1_L15	16	78	39		
+p1_L15	17	61	29		
+p1_L15	18	4	74		
+p1_L15	19	6	116		
+p1_L15	20	105	47		
+p1_L15	21	27	26		
+p1_L15	22	31	148		
+p1_L15	23	67	81		
+p1_L15	24	29	120		
+p1_L15	25	12	56		
+p1_L15	26	7	61		
+p1_L16	1	30	-		
+p1_L16	2	102	-		
+p1_L16	3	29	-		
+p1_L16	4	12	60		
+p1_L16	6	6	-		
+p1_L16	7	41	-		
+p1_L16	8	47	-		
+p1_L16	9	39	26		
+p1_L16	10	72	74		
+p1_L16	11	81	26		
+p1_L16	12	31	27		
+p1_L16	13	54	77		
+p1_L16	14	39	62		
+p1_L16	15	29	37		
+p1_L16	16	74	46		
+p1_L16	17	116	12		
+p1_L16	18	47	16		
+p1_L16	19	26	111		
+p1_L16	20	148	37		
+p1_L16	21	81	49		
+p1_L16	22	120	4		
+p1_L16	23	56	33		
+p1_L16	24	61	=cet	B	
+p1_L16	25	60	=d'aultre	B	
+p1_L16	26	12	=plaindre	B	
+p1_L16	27	26	=ou	B	
+p1_L16	28	74	=nous	B	
+p1_L16	29	26	=faisons	B	
+p1_L16	30	27	=amasser	B	
+p1_L16	31	77	=le	B	
+p1_L16	32	62	=plu	B	
+p1_L16	33	37	=de	B	
+p1_L16	34	46	=non	B	
+p1_L17	1	-	=pouvons		
+p1_L17	2	16	=et		
+p1_L17	3	111	=la		
+p1_L17	4	37	=distribuer		
+p1_L17	5	49	=aux		
+p1_L17	6	4	=gens		
+p1_L17	7	33	=de		
+p1_L17	8	=et	=guerre		
+p1_L17	9	=d'aultres	81	A	
+p1_L17	10	=plusieurs	2	A	
+p1_L17	11	=que	56		
+p1_L17	12	=nous	51		
+p1_L17	13	=faisons	62	A	
+p1_L17	14	=amasser	3	A	
+p1_L17	15	=le	37		
+p1_L17	16	=plus	62		
+p1_L17	17	=de	54	B	
+p1_L18	1	=pouvons	-	A	
+p1_L18	2	=et	49		
+p1_L18	3	=la	2		
+p1_L18	4	=distribuer	91	A	
+p1_L18	5	=aux	4	A	
+p1_L18	6	=gens	4		
+p1_L18	7	=de	49		
+p1_L18	8	=guerre	101	A	
+p1_L18	9	81	82		
+p1_L18	11	-	12		
+p1_L18	12	-	26		
+p1_L18	13	-	105		
+p1_L18	14	-	67		
+p1_L18	15	-	150		
+p1_L18	16	-	=Et		
+p1_L18	17	56	=esperons	B	
+p1_L18	18	51	=que		
+p1_L18	19	62	=plaisir	B	
+p1_L18	20	3	=nous		
+p1_L18	21	37	=ferons	B	
+p1_L19	1	49	=de		
+p1_L19	2	2	=mai		
+p1_L19	3	91	61		
+p1_L19	4	4	36		
+p1_L19	5	4	47		
+p1_L19	6	49	59		
+p1_L19	7	101	22		
+p1_L19	8	82	77		
+p1_L19	9	2	26		
+p1_L19	11	26	-		
+p1_L19	12	105	276		
+p1_L19	13	67	59		
+p1_L19	14	150	37		
+p1_L19	15	=Et	25		
+p1_L19	16	=esperons	12	A	
+p1_L19	17	=que	45		
+p1_L19	18	=la	27	A	
+p1_L19	19	=place	62	AB	
+p1_L20	1	-	9		
+p1_L20	2	=d	148	A	
+p1_L20	3	=mais	47	A	
+p1_L20	4	61	3		
+p1_L20	5	36	12		
+p1_L20	6	47	29		
+p1_L20	7	59	=tout		
+p1_L20	8	22	=a		
+p1_L20	9	77	=passé		
+p1_L20	10	26	=du	B	
+p1_L20	11	12	=cras	B	
+p1_L20	12	276	=la		
+p1_L20	13	59	=mesme	B	
+p1_L20	14	37	9		
+p1_L20	15	25	39		
+p1_L20	16	12	54		
+p1_L20	17	45	40		
+p1_L20	19	-	61		
+p1_L20	20	-	84		
+p1_L20	21	-	4		
+p1_L21	1	-	81		
+p1_L21	2	-	2		
+p1_L21	3	9	72		
+p1_L21	4	118	117		
+p1_L21	5	47	66		
+p1_L21	6	3	42		
+p1_L21	7	12	130		
+p1_L21	8	25	138		
+p1_L21	9	=tout	8	A	
+p1_L21	10	=a	4	A	
+p1_L21	11	=passe	26	A	
+p1_L21	12	=de	48	A	
+p1_L21	13	=deux	112	A	
+p1_L21	14	=Colmars	339	A	
+p1_L21	15	9	81		
+p1_L21	16	39	33		
+p1_L21	17	54	12		
+p1_L21	18	40	36		
+p1_L21	19	27	46		
+p1_L21	20	61	48		
+p1_L21	21	34	124		
+p1_L22	1	81	=s'il	B	
+p1_L22	2	2	=a		
+p1_L22	3	72	=mon	B	
+p1_L22	4	117	=avis	B	
+p1_L22	5	66	82		
+p1_L22	6	42	26		
+p1_L22	7	130	76		
+p1_L22	8	138	2		
+p1_L22	9	8	37		
+p1_L22	10	4	35		
+p1_L22	11	16	69		
+p1_L22	12	48	12		
+p1_L22	13	112	57		
+p1_L22	14	339	36		
+p1_L22	15	81	129		
+p1_L22	16	33	137		
+p1_L22	17	12	59		
+p1_L22	19	-	25		
+p1_L22	20	-	81		
+p1_L22	21	-	2		
+p1_L22	22	46	83		
+p1_L22	23	43	67		
+p1_L22	24	134	25		
+p1_L23	1	=a	-	A	
+p1_L23	2	=un	-	A	
+p1_L23	3	=mary	-	A	
+p1_L23	4	=advis	-	A	
+p1_L23	5	82	-		
+p1_L23	6	26	-		
+p1_L23	7	76	-		
+p1_L23	8	2	-		
+p1_L23	9	33	-		
+p1_L23	10	35	-		
+p1_L23	11	69	-		
+p1_L23	12	12	-		
+p1_L23	13	57	-		
+p1_L23	14	36	-		
+p1_L23	15	129	-		
+p1_L23	16	137	-		
+p1_L23	17	59	-		
+p1_L23	18	38	-		
+p1_L23	19	25	-		
+p1_L23	20	81	-		
+p1_L23	21	2	-		
+p1_L23	22	83	-		
+p1_L23	23	67	-		
+p1_L23	24	29	-		
+p1_L23	48	31	29		
+p1_L24	14	40	80		
+p1_L24	40	26	10		
+p1_L25	6	115	111		
+p1_L25	14	=bon	=bonne	A	
+p1_L25	15	=remboursse	=remboursée	AB	
+p1_L25	17	-	=la		
+p1_L25	18	-	=quenon	B	
+p1_L25	19	-	=d'ceur	B	
+p1_L26	3	=tel	-	A	
+p1_L26	4	=cas	=sçavoir	AB	
+p1_L26	6	=un	=au	AB	
+p1_L26	7	=gens	=gouverneur	AB	
+p1_L26	10	-	=Guo	B	
+p1_L26	11	-	=la		
+p1_L26	12	-	=voye	B	
+p1_L26	13	-	=ung	B	
+p1_L27	19	-	52		
+p1_L27	20	-	68		
+p1_L27	21	-	77		
+p1_L28	6	211	311	B	
+p1_L28	21	-	32		
+p1_L29	5	115	118		
+p1_L29	18	11	2	B	
+p1_L30	3	=guerre	=Guerre	AB	
+p1_L30	4	=comme	=Comme	A	
+p1_L30	20	-	88		
+p1_L30	21	-	26		
+p1_L31	4	38	88		
+p1_L31	8	31	81		
+p1_L31	21	-	27		
+p1_L31	23	-	61		
+p1_L31	24	-	61		
+p1_L32	4	51	81		
+p1_L32	10	71	81		
+p1_L32	15	24	74		
+p1_L33	12	211	311	B	
+p1_L33	14	=il	-	A	
+p1_L33	15	=a	=est	A	
+p1_L33	16	=fait	=affaict	AB	
+p1_L33	17	=naguere	=naguères	AB	
+p1_L33	22	11	111		
+p1_L33	24	-	4		
+p2_L01	1	-	93		
+p2_L02	7	=Monsieur	=M	AB	
+p2_L02	9	=sinon	=jamais	AB	
+p2_L02	10	=que	=qui	AB	
+p2_L02	11	=vous	=bien	AB	
+p2_L02	12	=plaise	=plaira	AB	
+p2_L02	15	=bref	=sixiesme	AB	
+p2_L02	16	=s'advis	=advis	A	
+p2_L02	17	=si	=suivi	AB	
+p2_L02	18	=est	=ou	AB	
+p2_L02	19	=tousiours	=telle	AB	
+p2_L03	1	=peu	=plus	A	
+p2_L03	2	=pour	=toujours	A	
+p2_L03	4	=vous	=bonne	A	
+p2_L03	6	=et	=Et	A	
+p2_L03	9	=vous	=bonne	A	
+p2_L03	10	=publierez	=publier	AB	
+p2_L03	11	=quelque	=quelle	A	
+p2_L03	12	=chose	=en	A	
+p2_L03	14	=suis	=serai	A	
+p2_L03	16	=de	=a	A	
+p2_L03	18	=vostre	-	A	
+p2_L03	19	=bon	-	A	
+p2_L03	20	=amy	=n'estrangié	AB	
+p2_L04	1	=bien	=vous	A	
+p2_L04	2	=delibere	=d'chien	AB	
+p2_L04	4	=ne	=me	A	
+p2_L04	6	=plus	=bien	A	
+p2_L04	9	-	=Ge	B	
+p2_L04	10	=que	=Fr	AB	
+p2_L04	11	=ne	=me	A	
+p2_L04	12	=face	=fera	A	
+p2_L04	13	=chose	=bien	A	
+p2_L04	16	=pedar	=perdre	A	
+p2_L04	17	=sa	=la	A	
+p2_L04	18	=par	=perte	A	
+p2_L04	19	=que	=qu'il	A	
+p2_L05	3	145	148		
+p2_L07	1	12	62	A	
+p2_L07	9	64	84		
+p2_L07	12	33	88		
+p2_L08	1	73	78		
+p2_L08	3	83	88		
+p2_L08	13	12	120		
+p2_L08	15	33	88		
+p2_L08	17	37	87		
+p2_L09	3	20	26		
+p2_L09	8	33	88		
+p2_L09	14	30	80		
+p2_L09	20	33	88		
+p2_L10	5	51	55		
+p2_L10	6	=Et	=Est	A	
+p2_L10	8	-	=Et		
+p2_L10	9	=pour	=vous	A	
+p2_L10	11	=fin	=foy	A	
+p2_L10	13	=cestuy	=notre	AB	
+p2_L10	17	-	=vray	B	
+p2_L10	18	=que	=Vous	A	
+p2_L10	19	=Jaurons	=demeurera	A	
+p2_L11	1	=Et	=je	AB	
+p2_L11	2	=veul	=vous	A	
+p2_L11	3	=bien	=prie	A	
+p2_L11	4	=que	=de	A	
+p2_L11	6	=supplerez	=supplierai	A	
+p2_L11	8	=en	=Dieu	A	
+p2_L11	10	=gage	=grace	A	
+p2_L11	13	-	=ce		
+p2_L11	14	-	=luy		
+p2_L11	15	=dieu	=donne	AB	
+p2_L12	1	=avoir	=amy	A	
+p2_L12	2	=en	=et	A	
+p2_L12	3	=fin	=fils	A	
+p2_L12	4	=mon	=Monsieur	A	
+p2_L12	5	=du	=de	A	
+p2_L12	6	=maupertuis	=Marnfoisin	AB	
+p2_L12	8	=regarder	=regarde	A	
+p2_L12	10	=tout	=tous	A	
+p2_L12	13	=luy	-	A	
+p2_L12	14	=pouons	=suy	A	
+p2_L12	15	=a	=pourrais	AB	
+p2_L12	16	=partenir	=appartenir	AB	
+p2_L12	17	=luy	=bd	AB	
+p2_L13	1	=Je	-	A	
+p2_L13	2	=luy	=de	A	
+p2_L13	4	-	=donne		
+p2_L13	5	-	=suis		
+p2_L13	6	-	=a		
+p2_L13	7	=sur	=Je	A	
+p2_L13	8	=sa	=Fr	AB	
+p2_L13	9	=demande	=Avignon	AB	
+p2_L13	14	=femme	-	A	
+p2_L13	15	=bien	-	A	
+p2_L13	16	=faire	=pauvre	A	
+p2_L13	17	=chose	=bourse	A	
+p2_L13	18	=d'huy	=garde	A	
+p2_L13	19	=nouvelle	=d'aujourd'hui	AB	
+p2_L14	4	=quils	=qu'il	A	
+p2_L14	6	=laisses	=laissez	A	
+p2_L14	11	-	=B	B	
+p2_L14	12	=S'il	=le	A	
+p2_L14	13	=lui	=tenteray	AB	
+p2_L14	14	=plaisoit	=le	A	
+p2_L14	15	=luy	=m	AB	
+p2_L15	1	=faire	=je	AB	
+p2_L15	2	=tenir	=fere	AB	
+p2_L15	4	-	=ce		
+p2_L15	5	=j'iray	=jour	A	
+p2_L15	6	=J'ay	=Jay	A	
+p2_L15	7	=moyen	=mercy	AB	
+p2_L15	9	=luy	=suy	AB	
+p2_L15	10	=envoyer	=amie	AB	
+p2_L15	12	-	=ce		
+p2_L15	13	=Coday	=jour	A	
+p2_L15	16	=tout	=dour	AB	
+p2_L15	17	=Ludewich	=Ludovic	AB	
+p2_L16	1	-	=ne		
+p2_L16	2	=que	=m'asseurez	AB	
+p2_L16	3	=m'assurant	=mais	A	
+p2_L16	4	=eu	=vous	AB	
+p2_L16	5	=veu	=aussi	A	
+p2_L16	6	=aussy	=assez	A	
+p2_L16	7	=ay	=y	A	
+p2_L16	8	=recommande	=recommend	AB	
+p2_L16	9	=avy	=avoy	AB	
+p2_L16	13	=pourrait	=pourroit	A	
+p2_L16	14	=apparoistre	=appartenir	AB	
+p2_L17	2	=ceux	=ma	A	
+p2_L17	3	=qui	=Je	A	
+p2_L17	4	=veulent	=veux	AB	
+p2_L17	6	=faire	=fault	A	
+p2_L17	7	=sonner	=donné	AB	
+p2_L17	10	=recommanderay	-	A	
+p2_L17	11	=sur	-	A	
+p2_L17	12	=tout	=recommenderay	AB	
+p2_L17	13	=bien	=tres	A	
+p2_L17	16	=vos	=bonne	AB	
+p2_L17	17	=bonnes	=bonne	AB	
+p2_L18	1	=graces	=gratieuse	A	
+p2_L18	3	=dieu	=Dieu	A	
+p2_L18	5	=gard	=gay	A	
+p2_L18	7	=donne	=doint	AB	
+p2_L19	2	-	=soit		
+p2_L19	5	=sante	=santé	A	
+p2_L19	7	=humblement	-	A	
+p2_L19	8	=etc	=Bruxelles	AB	
+p2_L20	2	=six[ie]me	=sixiesme	A	
+p2_L20	7	=Vostre	=Vre	AB	
+p2_L20	10	-	=Ey	B	
+p2_L20	11	-	=m	B	
+p2_L20	12	=Louys	=Camp	AB	
+p2_L20	13	=de	=a	AB	
+p2_L20	14	=Nassau	=Mars	AB	
