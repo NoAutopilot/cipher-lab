@@ -1303,6 +1303,14 @@
    "grade": "C 347, M 157, U 215 of 719 groups; novelty not yet audited",
    "line": "Key of 229 figures from the ink decipherments written in mssDE 68 (31 Jan), 37 (26 Feb) and 55 (3 Mar 1781), graded C (known plaintext); 13 conflicting figures listed. The Huntington code is not the one Tomokiyo aligned from the Yale letter of 8 Jan 1781 (44 shared figures, none agree). mssDE 68 is read from its own complete decipherment (a transcription, C 158 M 19). 173 distinct figures in 108(A) stay unkeyed. A context pass (R16) added 22 values at M: its control on mssDE 68 reached 50 percent, below the bar for S.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-luzerne-destouches-1781"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "recovery",
+   "title": "Blathwayt papers addenda, Madrid and Port Ste Marie intelligence 1727-1729 (Huntington mssBLA 184, 186, 191(a)): reading with a key rebuilt from seven deciphered items of the same run",
+   "grade": "C 129, M 22, U 21 of 172 groups; novelty not yet audited",
+   "line": "Key of 395 groups (grade C) from the contemporary decipherments of BLA 179, 185, 187, 188, 189, 190 and 194; one code for 1725-29 by leave-one-item-out (0.68-0.91). Reads the undeciphered BLA 186 (Madrid, 13 Sept 1728, Ripperda's escape: 20 of 24 groups), BLA 191 enclosure (a) (106 of 141) and the code words in BLA 184.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-blathwayt-madrid-1728"
   }
  ],
  "lanes": [
