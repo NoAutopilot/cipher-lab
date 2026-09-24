@@ -4587,3 +4587,48 @@ log per row in the target's own NOTES.md.
 
 Nomination lines posted to ROOM.md for CS2-01, -02, -05 (the three stage-2 `open` verdicts); none for CS2-04
 (`blocked`, per LANE N2 addition (e) and this row's own rule-9 gate).
+
+### Check-solved verdicts, CS2-06/-16/-17/-26/-28 (LANE N3 csCS2b, 24 September 2026)
+
+Six-source blind check-solved run per `.claude/briefs/runs/2026-09-24-lane-n3-csCS2b.md` (Gallica IIIF slot),
+folded in a fresh shallow clone of dbourdeau/cyphersolver (each target has its own working folder there, deeper
+than the catalogue.html summary above), a fresh shallow clone of aaymeloglu/unsolved-ciphers, Tomokiyo's local
+cryptiana snapshot, and the local DECODE snapshot. All four are Nevers-circle items (Gonzague-Nevers papers,
+fr. 3198-3993); Tomokiyo has worked this archive heavily but none of his pages names any of these five items.
+Full search log per row in the target's own NOTES.md.
+
+- **CS2-06** -> `ciphers/fr3625-lauriere-1593/` -- **blocked**, not open. Bourdeau's own `champagne1590/` folder:
+  read in fragments (19 of 86 groups, grade C) from a 12-entry code table rebuilt off a glossed sibling letter;
+  67 groups remain open. Held at `blocked` because the standard printed edition (Gomberville's *Mémoires du duc
+  de Nevers*, 1665) was not read for this letter's date this pass -- Bourdeau checked only a secondary Tomokiyo
+  index, not the edition itself, and archive.org (which would let it be searched) is held by csED. No
+  nomination posted.
+- **CS2-16** -> `ciphers/fr3621-dinteville-1592/` -- **blocked**, not open. DECODE confirms the sibling f.128
+  (no. 114, R9450) is status Decrypted, but Bourdeau's own alignment test of its interlinear crib against f.130
+  (no. 116, R9451) found no consistent one-sign-one-letter mapping -- code signs likely, not a clean
+  substitution a short crib alone unlocks; not yet a recovery. Held at `blocked` because the printed edition was
+  not checked at all this pass (not even an index lookup) and archive.org is unavailable. No nomination posted.
+- **CS2-17** -> `ciphers/fr3975-vieuville-1587/` -- **copy-order**, not copy-free, not nominated. Bourdeau's own
+  `vieuville1587/` folder reads the code numbers in full (key no. 16, fr.3995 f.32v) but the three short
+  letter-sign runs (33 signs) fail every substitution model under a matched noise-ladder control -- the
+  target's score matches a 40%-noise control, i.e. the blocker is the B/W microfilm's legibility (~30-40%
+  read), not the cryptanalysis. Gomberville 1665 (both parts) already searched by Bourdeau for
+  Vieuville/Vieville/Vieuuille/Aignan near 1587: no hit. Needs a colour scan or BnF reading-room access.
+- **CS2-26** -> `ciphers/fr3993-villeroy-1595/` -- **open**, nominated (cryptanalysis). Bourdeau's own
+  `nevers1595/` folder is the strongest of this batch: full transcription (753 signs, 17 runs), eleven candidate
+  Nevers keys from fr. 3995 ruled out, six unit-segmentation models run through a solver validated against a
+  matched homophonic control that solves cleanly while every target run fails (rule 3 satisfied), and -- unlike
+  the other four rows -- an actual Gallica full-text search of the correct Gomberville tome (t. 2) against this
+  letter's own clear phrases, with no hit. Sibling fr. 3993 no. 133 (18 Aug, next letter to Villeroy) confirmed
+  all-clear.
+- **CS2-28** -> `ciphers/fr3198-labbe-1577/` -- **blocked**, per this row's own brief instruction. Bourdeau's own
+  `labbe1582/` folder (two full sessions, `REASSESSMENT.md`) reads most of the clear text but not the cipher:
+  1,500+ key configurations tested, solver validated on a matched synthetic control (538/538), no French
+  recovered from the real ciphertext. Held at `blocked` because the Nevers-papers editions and the imperial
+  nunciature/Venetian series for 1576-78 could not be read without archive.org, which is held by csED this
+  pass. A possible crib (BnF fr. 4695 no. 51, 5 Feb 1577) is named but not yet inspected.
+
+Nomination line posted to ROOM.md for CS2-26 (the one stage-2 `open` verdict); none for CS2-06/-16/-28
+(`blocked`, edition not read this pass) or CS2-17 (`copy-order`, poor scan), per LANE N2 addition (e) and this
+lane's R8/LANE-N3-addition rules.
+
