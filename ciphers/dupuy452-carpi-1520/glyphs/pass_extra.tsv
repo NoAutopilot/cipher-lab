@@ -1,0 +1,713 @@
+pass	crop	line_no	pass_row	code	page_line	after_sign_n
+A	f28r_L08_s1.jpg	2	f28r_L08_s1.jpg:2:13	x	14	103
+A	f28r_L08_s1.jpg	2	f28r_L08_s1.jpg:2:15	o	14	104
+A	f28r_L08_s1.jpg	2	f28r_L08_s1.jpg:2:17	o	14	106
+A	f28r_L09_s1.jpg	2	f28r_L09_s1.jpg:2:34	?	16	246
+A	f28r_L10_s1.jpg	1	f28r_L10_s1.jpg:1:3	rho	17	272
+A	f28r_L10_s1.jpg	1	f28r_L10_s1.jpg:1:8	z	17	276
+A	f28r_L10_s1.jpg	1	f28r_L10_s1.jpg:1:10	phi	17	277
+A	f28r_L10_s1.jpg	1	f28r_L10_s1.jpg:1:17	I	17	283
+A	f28r_L10_s1.jpg	1	f28r_L10_s1.jpg:1:24	phi	17	289
+A	f28r_L10_s1.jpg	1	f28r_L10_s1.jpg:1:25	the	17	289
+A	f28r_L10_s1.jpg	1	f28r_L10_s1.jpg:1:27	phi	17	290
+A	f28r_L10_s1.jpg	1	f28r_L10_s1.jpg:1:28	f	17	290
+A	f28r_L10_s1.jpg	2	f28r_L10_s1.jpg:2:1	lam	18	
+A	f28r_L10_s1.jpg	2	f28r_L10_s1.jpg:2:4	z	18	327
+A	f28r_L10_s1.jpg	2	f28r_L10_s1.jpg:2:8	lam	18	330
+A	f28r_L10_s1.jpg	2	f28r_L10_s1.jpg:2:9	phi	18	330
+A	f28r_L10_s1.jpg	2	f28r_L10_s1.jpg:2:13	lam	18	336
+A	f28r_L10_s1.jpg	2	f28r_L10_s1.jpg:2:16	lam	18	338
+A	f28r_L10_s1.jpg	2	f28r_L10_s1.jpg:2:33	o	18	356
+A	f28r_L11_s1.jpg	1	f28r_L11_s1.jpg:1:18	n	19	405
+A	f28r_L11_s1.jpg	1	f28r_L11_s1.jpg:1:21	lam	19	407
+A	f28r_L11_s1.jpg	1	f28r_L11_s1.jpg:1:29	T	19	414
+A	f28r_L11_s1.jpg	1	f28r_L11_s1.jpg:1:33	f	19	417
+A	f28r_L11_s1.jpg	1	f28r_L11_s1.jpg:1:35	f	19	418
+A	f28r_L11_s1.jpg	2	f28r_L11_s1.jpg:2:2	v	20	442
+A	f28r_L11_s1.jpg	2	f28r_L11_s1.jpg:2:5	dag	20	444
+A	f28r_L11_s1.jpg	2	f28r_L11_s1.jpg:2:6	z	20	444
+A	f28r_L11_s1.jpg	2	f28r_L11_s1.jpg:2:7	T	20	444
+A	f28r_L11_s1.jpg	2	f28r_L11_s1.jpg:2:11	z	20	447
+A	f28r_L11_s1.jpg	2	f28r_L11_s1.jpg:2:12	f	20	447
+A	f28r_L11_s1.jpg	2	f28r_L11_s1.jpg:2:14	v	20	448
+A	f28r_L11_s1.jpg	2	f28r_L11_s1.jpg:2:18	z	20	451
+A	f28r_L11_s1.jpg	2	f28r_L11_s1.jpg:2:19	rho	20	451
+A	f28r_L11_s1.jpg	2	f28r_L11_s1.jpg:2:26	phi	20	457
+A	f28r_L11_s1.jpg	2	f28r_L11_s1.jpg:2:38	I	20	471
+A	f28r_L11_s1.jpg	2	f28r_L11_s1.jpg:2:39	phi	20	471
+A	f28r_L12_s1.jpg	1	f28r_L12_s1.jpg:1:2	lam	21	498
+A	f28r_L12_s1.jpg	1	f28r_L12_s1.jpg:1:7	psi	21	502
+A	f28r_L12_s1.jpg	1	f28r_L12_s1.jpg:1:11	n	21	505
+A	f28r_L12_s1.jpg	1	f28r_L12_s1.jpg:1:16	psi	21	509
+A	f28r_L12_s1.jpg	1	f28r_L12_s1.jpg:1:22	box	21	515
+A	f28r_L12_s1.jpg	2	f28r_L12_s1.jpg:2:19	dag	22	583
+A	f28r_L12_s1.jpg	2	f28r_L12_s1.jpg:2:22	o	22	585
+A	f28r_L12_s1.jpg	2	f28r_L12_s1.jpg:2:23	I	22	585
+A	f28r_L12_s1.jpg	2	f28r_L12_s1.jpg:2:25	f	22	586
+A	f28r_L12_s1.jpg	2	f28r_L12_s1.jpg:2:26	dag	22	586
+A	f28r_L12_s1.jpg	2	f28r_L12_s1.jpg:2:27	lam	22	586
+A	f28r_L14_s1.jpg	1	f28r_L14_s1.jpg:1:2	o	25	730
+A	f28r_L14_s1.jpg	1	f28r_L14_s1.jpg:1:4	lam	25	731
+A	f28r_L14_s1.jpg	1	f28r_L14_s1.jpg:1:18	o	25	744
+A	f28r_L14_s1.jpg	1	f28r_L14_s1.jpg:1:23	rho	25	748
+A	f28r_L14_s1.jpg	2	f28r_L14_s1.jpg:2:18	phi	26	784
+A	f28r_L14_s1.jpg	2	f28r_L14_s1.jpg:2:23	lam	26	788
+A	f28r_L14_s1.jpg	2	f28r_L14_s1.jpg:2:32	phi	26	796
+A	f28r_L14_s1.jpg	2	f28r_L14_s1.jpg:2:33	z	26	796
+A	f28r_L15_s1.jpg	1	f28r_L15_s1.jpg:1:2	f	27	831
+A	f28r_L15_s1.jpg	1	f28r_L15_s1.jpg:1:7	lam	27	835
+A	f28r_L15_s1.jpg	1	f28r_L15_s1.jpg:1:10	v	27	837
+A	f28r_L15_s1.jpg	1	f28r_L15_s1.jpg:1:11	phi	27	837
+A	f28r_L15_s1.jpg	1	f28r_L15_s1.jpg:1:23	lam	27	849
+A	f28r_L15_s1.jpg	1	f28r_L15_s1.jpg:1:25	rho	27	850
+A	f28r_L15_s1.jpg	1	f28r_L15_s1.jpg:1:31	o	27	855
+A	f28r_L15_s1.jpg	2	f28r_L15_s1.jpg:2:8	v	28	886
+A	f28r_L15_s1.jpg	2	f28r_L15_s1.jpg:2:10	rho	28	887
+A	f28r_L15_s1.jpg	2	f28r_L15_s1.jpg:2:11	eps	28	887
+A	f28r_L15_s1.jpg	2	f28r_L15_s1.jpg:2:15	box	28	890
+A	f28r_L15_s1.jpg	2	f28r_L15_s1.jpg:2:16	x	28	890
+A	f28r_L15_s1.jpg	2	f28r_L15_s1.jpg:2:17	f	28	890
+A	f28r_L15_s1.jpg	2	f28r_L15_s1.jpg:2:19	I	28	891
+A	f28r_L15_s1.jpg	2	f28r_L15_s1.jpg:2:21	rho	28	892
+A	f28r_L15_s1.jpg	2	f28r_L15_s1.jpg:2:25	C6	28	895
+A	f28r_L16_s1.jpg	1	f28r_L16_s1.jpg:1:8	phi	29	950
+A	f28r_L16_s1.jpg	1	f28r_L16_s1.jpg:1:10	m	29	951
+A	f28r_L16_s1.jpg	1	f28r_L16_s1.jpg:1:11	phi	29	951
+A	f28r_L16_s1.jpg	1	f28r_L16_s1.jpg:1:15	o	29	954
+A	f28r_L16_s1.jpg	2	f28r_L16_s1.jpg:2:1	lam	30	
+A	f28r_L16_s1.jpg	2	f28r_L16_s1.jpg:2:2	o	30	
+A	f28r_L16_s1.jpg	2	f28r_L16_s1.jpg:2:3	C6	30	
+A	f28r_L16_s1.jpg	2	f28r_L16_s1.jpg:2:5	phi	30	988
+A	f28r_L16_s1.jpg	2	f28r_L16_s1.jpg:2:9	z	30	991
+A	f28r_L16_s1.jpg	2	f28r_L16_s1.jpg:2:11	A	30	992
+A	f28r_L16_s1.jpg	2	f28r_L16_s1.jpg:2:12	y	30	992
+A	f28r_L16_s1.jpg	2	f28r_L16_s1.jpg:2:13	m	30	992
+A	f28r_L16_s1.jpg	2	f28r_L16_s1.jpg:2:20	phi	30	1000
+A	f28r_L17_s1.jpg	2	f28r_L17_s1.jpg:2:5	dag	32	1100
+A	f28r_L18_s1.jpg	1	f28r_L18_s1.jpg:1:10	rho	33	1161
+A	f28r_L18_s1.jpg	1	f28r_L18_s1.jpg:1:24	o	33	1175
+A	f28r_L18_s1.jpg	2	f28r_L18_s1.jpg:2:8	dag	34	1216
+A	f28r_L18_s1.jpg	2	f28r_L18_s1.jpg:2:26	omg	34	1236
+A	f28r_L18_s1.jpg	2	f28r_L18_s1.jpg:2:28	phi	34	1237
+A	f28r_L18_s1.jpg	2	f28r_L18_s1.jpg:2:29	f	34	1237
+A	f28r_L18_s1.jpg	2	f28r_L18_s1.jpg:2:32	eps	34	1239
+A	f28r_L18_s1.jpg	2	f28r_L18_s1.jpg:2:33	a	34	1239
+A	f28r_L19_s1.jpg	1	f28r_L19_s1.jpg:1:1	f	35	
+A	f28r_L19_s1.jpg	1	f28r_L19_s1.jpg:1:4	lam	35	1265
+A	f28r_L19_s1.jpg	1	f28r_L19_s1.jpg:1:5	n	35	1265
+A	f28r_L19_s1.jpg	1	f28r_L19_s1.jpg:1:9	f	35	1268
+A	f28r_L19_s1.jpg	1	f28r_L19_s1.jpg:1:19	I	35	1279
+A	f28r_L19_s1.jpg	2	f28r_L19_s1.jpg:2:5	f	36	1322
+A	f28r_L19_s1.jpg	2	f28r_L19_s1.jpg:2:6	lam	36	1322
+A	f28r_L19_s1.jpg	2	f28r_L19_s1.jpg:2:12	v	36	1328
+A	f28r_L19_s1.jpg	2	f28r_L19_s1.jpg:2:17	dag	36	1333
+A	f28r_L19_s1.jpg	2	f28r_L19_s1.jpg:2:28	v	36	1343
+A	f28r_L20_s1.jpg	1	f28r_L20_s1.jpg:1:10	o	37	1378
+A	f28r_L20_s1.jpg	1	f28r_L20_s1.jpg:1:22	dag	37	1389
+A	f28r_L20_s1.jpg	1	f28r_L20_s1.jpg:1:24	I	37	1390
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:1	A		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:2	phi		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:3	phi		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:4	box		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:5	v		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:6	phi		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:7	Rk		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:8	phi		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:9	z		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:10	lam		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:11	rho		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:12	o		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:13	phi		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:14	v		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:15	x		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:16	lam		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:17	phi		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:18	phi		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:19	rho		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:20	phi		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:21	lam		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:22	dag		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:23	f		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:24	x		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:25	a		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:26	theta		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:27	z		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:28	f		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:29	z		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:30	lam		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:31	theta		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:32	I		
+A	f28r_L20_s1.jpg	2	f28r_L20_s1.jpg:2:33	phi		
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:11	n	1	1436
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:13	rho	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:14	dag	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:15	S	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:16	o	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:16	v	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:17	H	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:18	I	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:19	n	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:20	v	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:21	star	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:22	rho	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:23	o	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:23	Rk	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:24	a	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:25	I	1	1437
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:27	theta	1	1438
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:29	phi	1	1439
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:31	z	1	1440
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:32	A	1	1440
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:33	phi	1	1440
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:34	box	1	1440
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:35	eps	1	1440
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:36	o	1	1440
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:37	phi	1	1440
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:39	box	1	1441
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:40	o	1	1441
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:40	v	1	1441
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:41	rho	1	1441
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:42	I	1	1441
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:43	box	1	1441
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:44	S	1	1441
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:45	phi	1	1441
+A	f28v_L02_s1.jpg	1	f28v_L02_s1.jpg:1:46	H(-)	1	1441
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:12	o	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:12	v	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:13	rho	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:14	[z]A	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:15	phi	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:16	rho	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:17	o	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:18	Delta	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:19	o	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:20	I	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:21	lam	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:22	phi	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:23	f	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:24	l	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:25	phi	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:26	lam	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:27	dag	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:28	f	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:29	rho	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:30	phi	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:31	f	2	1494
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:32	v	2	1495
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:33	z	2	1495
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:34	I	2	1495
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:35	phi	2	1495
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:36	TOL	2	1495
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:37	T	2	1495
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:37	a	2	1495
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:38	I	2	1495
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:39	f	2	1495
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:40	lam	2	1495
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:41	rho	2	1495
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:42	phi	2	1495
+A	f28v_L02_s1.jpg	2	f28v_L02_s1.jpg:2:44	phi	2	1496
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:1	phi	3	
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:2	o	3	
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:2	v	3	
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:3	rho	3	
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:4	x	3	
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:5	box	3	
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:6	lam	3	
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:7	omg	3	
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:10	lam	3	1541
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:11	n	3	1541
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:16	v	3	1546
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:17	H	3	1546
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:19	n	3	1547
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:20	v	3	1547
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:21	star	3	1547
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:22	rho	3	1547
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:23	o	3	1547
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:23	Rk	3	1547
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:25	I	3	1548
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:26	lam	3	1548
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:27	theta	3	1548
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:28	I	3	1548
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:30	rho	3	1549
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:32	A	3	1550
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:33	phi	3	1550
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:34	box	3	1550
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:35	eps	3	1550
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:36	o	3	1550
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:37	phi	3	1550
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:38	dag	3	1550
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:39	o	3	1550
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:39	v	3	1550
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:40	rho	3	1550
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:41	I	3	1550
+A	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:44	phi	3	1552
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:1	phi	4	
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:3	S	4	1594
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:4	o	4	1594
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:6	phi	4	1595
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:8	lam	4	1596
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:10	phi	4	1597
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:12	lam	4	1598
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:13	z	4	1598
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:15	z	4	1599
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:17	lam	4	1600
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:19	a	4	1601
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:20	v	4	1601
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:21	phi	4	1601
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:24	S	4	1603
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:26	phi	4	1604
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:30	a	4	1607
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:31	v	4	1607
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:32	phi	4	1607
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:33	rho	4	1607
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:36	z	4	1609
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:37	a	4	1609
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:38	rho	4	1609
+A	f28v_L03_s1.jpg	2	f28v_L03_s1.jpg:2:39	dag	4	1609
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:1	v	5	
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:3	T	5	1650
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:4	dag	5	1650
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:5	v	5	1650
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:6	T	5	1650
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:8	psi(phi)	5	1651
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:11	dag	5	1653
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:13	phi	5	1654
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:15	dag	5	1655
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:16	n	5	1655
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:18	z	5	1656
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:19	lam	5	1656
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:20	o	5	1656
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:22	phi	5	1657
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:24	f	5	1658
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:26	lam	5	1659
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:27	dag	5	1659
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:28	lam	5	1659
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:29	phi	5	1659
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:30	z	5	1659
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:31	f	5	1659
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:32	v	5	1659
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:33	z	5	1659
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:35	a	5	1660
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:36	I	5	1660
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:37	lam	5	1660
+A	f28v_L04_s1.jpg	1	f28v_L04_s1.jpg:1:40	v	5	1662
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:4	f	6	1705
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:6	o	6	1706
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:6	v	6	1706
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:7	H	6	1706
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:8	I	6	1706
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:9	box	6	1706
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:10	eps	6	1706
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:11	o	6	1706
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:12	phi	6	1706
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:14	phi	6	1707
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:15	o	6	1707
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:15	v	6	1707
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:16	rho	6	1707
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:17	I	6	1707
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:19	eps	6	1708
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:20	o	6	1708
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:21	S	6	1708
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:22	theta	6	1708
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:23	phi	6	1708
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:24	I	6	1708
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:25	phi	6	1708
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:26	phi	6	1708
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:27	rho	6	1708
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:28	x	6	1708
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:30	dag	6	1709
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:31	o	6	1709
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:31	v	6	1709
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:32	rho	6	1709
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:33	I	6	1709
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:35	lam	6	1710
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:36	nu(?)	6	1710
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:37	o	6	1710
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:38	T	6	1710
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:40	I	6	1711
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:42	lam	6	1712
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:43	T	6	1712
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:44	phi	6	1712
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:46	f	6	1713
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:47	lam	6	1713
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:48	rho	6	1713
+A	f28v_L04_s1.jpg	2	f28v_L04_s1.jpg:2:50	v	6	1714
+A	f28v_L05_s1.jpg	1	f28v_L05_s1.jpg:1:10	z	7	1767
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:6	Rk	9	1869
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:8	f	9	1871
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:9	rho	9	1871
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:11	lam	9	1873
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:12	phi	9	1873
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:13	dag	9	1873
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:15	theta	9	1874
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:16	phi	9	1874
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:17	C6	9	1874
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:19	lam	9	1875
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:20	T	9	1875
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:20	o	9	1875
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:22	z	9	1876
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:23	C6	9	1876
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:24	dag	9	1876
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:25	lam	9	1876
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:26	v	9	1877
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:26	6	9	1877
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:27	Delta	9	1877
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:28	I	9	1877
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:29	f	9	1877
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:30	lam	9	1877
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:31	n	9	1877
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:33	dag	9	1878
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:34	rho	9	1878
+A	f28v_L06_s1.jpg	1	f28v_L06_s1.jpg:1:35	phi	9	1878
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:1	box	10	1920
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:2	lam	10	1920
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:4	v	10	1921
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:5	I	10	1921
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:6	rho	10	1921
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:8	phi	10	1922
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:9	v	10	1922
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:11	z	10	1923
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:13	H	10	1924
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:14	I	10	1924
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:15	theta	10	1924
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:16	rho	10	1924
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:18	n	10	1925
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:19	v	10	1925
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:20	dag	10	1925
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:22	n	10	1926
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:24	dag	10	1927
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:25	lam	10	1927
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:26	phi	10	1927
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:27	S	10	1927
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:28	T	10	1927
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:29	lam	10	1927
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:31	f	10	1928
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:35	v	10	1931
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:38	T	10	1933
+A	f28v_L06_s1.jpg	2	f28v_L06_s1.jpg:2:39	A	10	1933
+A	f28v_L07_s1.jpg	1	f28v_L07_s1.jpg:1:1	Delta	11	
+A	f28v_L07_s1.jpg	1	f28v_L07_s1.jpg:1:7	7	11	1975
+A	f28v_L07_s1.jpg	1	f28v_L07_s1.jpg:1:9	phi	11	1976
+A	f28v_L07_s1.jpg	1	f28v_L07_s1.jpg:1:11	o	11	1977
+A	f28v_L07_s1.jpg	1	f28v_L07_s1.jpg:1:12	lam	11	1978
+A	f28v_L07_s1.jpg	2	f28v_L07_s1.jpg:2:8	v	12	2033
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:1	dag	13	
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:3	o	13	2079
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:3	v	13	2079
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:6	v	13	2081
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:7	dag	13	2081
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:10	o	13	2083
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:12	lam	13	2084
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:13	phi	13	2084
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:16	o	13	2086
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:17	f	13	2086
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:18	eps	13	2086
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:21	v	13	2088
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:22	lam	13	2088
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:23	phi	13	2088
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:24	dag	13	2088
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:25	rho	13	2088
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:27	box	13	2089
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:29	phi	13	2090
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:30	dag	13	2090
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:31	v	13	2090
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:32	T	13	2090
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:35	lam	13	2092
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:36	box	13	2092
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:37	phi	13	2092
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:38	rho	13	2092
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:39	o	13	2092
+A	f28v_L08_s1.jpg	1	f28v_L08_s1.jpg:1:40	n	13	2092
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:6	box	14	2137
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:7	phi	14	2137
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:8	a	14	2137
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:14	phi	14	2142
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:15	dag	14	2142
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:18	phi	14	2144
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:19	f	14	2144
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:21	z	14	2145
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:22	v	14	2145
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:24	I	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:25	box	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:26	eps	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:27	z	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:28	v	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:29	T	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:29	o	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:30	phi	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:31	box	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:32	z	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:32	v	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:32	-o	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:33	box	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:34	x	14	2146
+A	f28v_L08_s1.jpg	2	f28v_L08_s1.jpg:2:36	a	14	2147
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:1	box	15	
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:2	x	15	
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:3	phi	15	
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:4	rho	15	
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:6	box	15	2189
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:7	eps	15	2189
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:9	v	15	2190
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:13	dag	15	2193
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:14	phi	15	2193
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:15	rho	15	2193
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:16	phi	15	2193
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:18	o	15	2194
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:20	lam	15	2195
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:22	rho	15	2196
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:23	n	15	2196
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:25	I	15	2197
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:27	lam	15	2198
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:29	I	15	2199
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:31	T	15	2200
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:32	z	15	2200
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:33	phi	15	2200
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:34	phi	15	2200
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:36	phi	15	2201
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:38	rho	15	2202
+A	f28v_L09_s1.jpg	1	f28v_L09_s1.jpg:1:39	phi	15	2202
+A	f28v_L09_s1.jpg	2	f28v_L09_s1.jpg:2:2	phi	16	2247
+A	f28v_L09_s1.jpg	2	f28v_L09_s1.jpg:2:11	v	16	2255
+A	f28v_L09_s1.jpg	2	f28v_L09_s1.jpg:2:13	phi	16	2256
+A	f28v_L09_s1.jpg	2	f28v_L09_s1.jpg:2:14	v	16	2256
+A	f28v_L09_s1.jpg	2	f28v_L09_s1.jpg:2:16	x	16	2257
+A	f28v_L10_s1.jpg	1	f28v_L10_s1.jpg:1:3	lam	17	2303
+A	f28v_L10_s1.jpg	1	f28v_L10_s1.jpg:1:8	dag	17	2308
+A	f28v_L10_s1.jpg	2	f28v_L10_s1.jpg:2:13	x	18	2372
+A	f28v_L10_s1.jpg	2	f28v_L10_s1.jpg:2:14	omg	18	2372
+A	f28v_L10_s1.jpg	2	f28v_L10_s1.jpg:2:15	I	18	2372
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:2	phi	19	2414
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:4	phi	19	2415
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:8	v	19	2418
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:10	rho	19	2419
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:11	I	19	2419
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:12	dag	19	2419
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:13	phi	19	2419
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:14	rho	19	2419
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:15	phi	19	2419
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:16	n	19	2419
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:18	I	19	2420
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:19	phi	19	2420
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:20	lam	19	2420
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:21	z	19	2420
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:22	I	19	2420
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:24	T	19	2421
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:26	v	19	2422
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:27	phi	19	2422
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:28	phi	19	2422
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:29	lam	19	2422
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:30	phi	19	2422
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:31	dag	19	2422
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:32	rho	19	2422
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:35	o	19	2424
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:36	v	19	2424
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:38	phi	19	2425
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:41	v	19	2427
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:42	T	19	2427
+A	f28v_L11_s1.jpg	1	f28v_L11_s1.jpg:1:44	v	19	2428
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:1	lam	20	
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:2	phi	20	
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:3	s	20	
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:4	dag	20	
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:5	z	20	
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:6	v	20	
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:7	box	20	
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:8	x	20	
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:13	lam	20	2473
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:14	I	20	2473
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:16	v	20	2474
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:19	o	20	2476
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:20	f	20	2477
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:21	lam	20	2477
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:22	I	20	2477
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:23	n	20	2477
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:24	v	20	2477
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:25	dag	20	2477
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:26	Theta	20	2477
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:28	v	20	2478
+A	f28v_L11_s1.jpg	2	f28v_L11_s1.jpg:2:30	eps	20	2479
+A	f28v_L12_s1.jpg	1	f28v_L12_s1.jpg:1:6	dag	21	2531
+A	f28v_L12_s1.jpg	1	f28v_L12_s1.jpg:1:9	phi	21	2533
+A	f28v_L12_s1.jpg	1	f28v_L12_s1.jpg:1:10	z	21	2533
+A	f28v_L12_s1.jpg	2	f28v_L12_s1.jpg:2:3	o	22	2578
+A	f28v_L12_s1.jpg	2	f28v_L12_s1.jpg:2:10	lam	22	2585
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:1	I	23	
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:2	lam	23	
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:3	Rk	23	
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:4	f	23	
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:5	phi	23	
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:6	theta	23	
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:7	z	23	
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:15	rho	23	2638
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:17	Rk	23	2639
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:18	z	23	2639
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:19	v	23	2639
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:20	lam	23	2639
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:23	phi	23	2641
+A	f28v_L13_s1.jpg	1	f28v_L13_s1.jpg:1:28	T	23	2645
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:1	v	24	
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:4	omg	24	2681
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:5	I	24	2681
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:6	phi	24	2681
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:7	v	24	2681
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:9	dag	24	2682
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:10	z	24	2682
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:10	v	24	2682
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:12	phi	24	2683
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:14	phi	24	2684
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:16	omg	24	2685
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:17	I	24	2685
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:18	phi	24	2685
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:20	s	24	2686
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:22	o	24	2687
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:24	lam	24	2689
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:25	I	24	2689
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:29	Theta	24	2692
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:30	o	24	2692
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:30	v	24	2692
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:31	z	24	2692
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:35	f	24	2695
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:36	rho	24	2695
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:37	dag	24	2695
+A	f28v_L13_s1.jpg	2	f28v_L13_s1.jpg:2:38	f	24	2695
+A	f28v_L14_s2.jpg	1	f28v_L14_s2.jpg:1:1	rho	25	
+A	f28v_L14_s2.jpg	1	f28v_L14_s2.jpg:1:44	eps	25	2789
+A	f28v_L15_s2.jpg	1	f28v_L15_s2.jpg:1:6	rho	27	2866
+A	f28v_L15_s2.jpg	2	f28v_L15_s2.jpg:2:1	T	28	
+A	f28v_L15_s2.jpg	2	f28v_L15_s2.jpg:2:2	H	28	
+A	f28v_L17_s2.jpg	2	f28v_L17_s2.jpg:2:34	A	32	3167
+A	f28v_L18_s1.jpg	2	f28v_L18_s1.jpg:2:17	A(?)	34	3255
+A	f29r_L02_s1.jpg	1	f29r_L02_s1.jpg:1:18	o	1	3433
+A	f29r_L03_s1.jpg	1	f29r_L03_s1.jpg:1:13	a	3	3542
+A	f29r_L03_s1.jpg	1	f29r_L03_s1.jpg:1:14	T	3	3542
+A	f29r_L04_s2.jpg	2	f29r_L04_s2.jpg:2:13	phi	6	3729
+A	f29r_L04_s2.jpg	2	f29r_L04_s2.jpg:2:17	phi	6	3732
+A	f29r_L04_s2.jpg	2	f29r_L04_s2.jpg:2:22	?	6	3736
+A	f29r_L05_s2.jpg	2	f29r_L05_s2.jpg:2:21	v	8	3858
+A	f29r_L06_s2.jpg	1	f29r_L06_s2.jpg:1:6	O	9	3890
+A	f29r_L07_s1.jpg	1	f29r_L07_s1.jpg:1:4	v	11	3974
+A	f29r_L07_s2.jpg	1	f29r_L07_s2.jpg:1:14	v	11	4006
+A	f29r_L07_s2.jpg	1	f29r_L07_s2.jpg:1:22	v	11	4013
+A	f29r_L08_s1.jpg	1	f29r_L08_s1.jpg:1:14	rho	13	4094
+A	f29r_L08_s1.jpg	1	f29r_L08_s1.jpg:1:30	phi	13	4111
+A	f29r_L08_s1.jpg	1	f29r_L08_s1.jpg:1:31	f	13	4111
+A	f29r_L08_s2.jpg	1	f29r_L08_s2.jpg:1:1	T	13	
+A	f29r_L10_s1.jpg	1	f29r_L10_s1.jpg:1:30	a	17	4331
+A	f29r_L10_s2.jpg	2	f29r_L10_s2.jpg:2:1	box	18	
+A	f29r_L11_s1.jpg	2	f29r_L11_s1.jpg:2:22	n	20	4484
+A	f29r_L11_s2.jpg	1	f29r_L11_s2.jpg:1:2	phi	19	4430
+A	f29r_L11_s2.jpg	2	f29r_L11_s2.jpg:2:5	phi	20	4491
+A	f29r_L11_s2.jpg	2	f29r_L11_s2.jpg:2:22	o	20	4509
+A	f29r_L12_s2.jpg	1	f29r_L12_s2.jpg:1:2	phi	21	4536
+A	f29r_L12_s2.jpg	2	f29r_L12_s2.jpg:2:1	v	22	
+A	f29r_L13_s2.jpg	1	f29r_L13_s2.jpg:1:13	o	23	4650
+A	f29r_L13_s2.jpg	2	f29r_L13_s2.jpg:2:17	o	24	4706
+A	f29r_L15_s1.jpg	1	f29r_L15_s1.jpg:1:24	o	27	4841
+A	f29r_L15_s1.jpg	2	f29r_L15_s1.jpg:2:26	rho	28	4900
+A	f29r_L15_s2.jpg	1	f29r_L15_s2.jpg:1:2	o	27	4841
+A	f29r_L15_s2.jpg	2	f29r_L15_s2.jpg:2:6	rho	28	4900
+A	f29r_L17_s1.jpg	2	f29r_L17_s1.jpg:2:15	z	32	5108
+A	f29r_L17_s2.jpg	1	f29r_L17_s2.jpg:1:12	a	31	5071
+A	f29r_L19_s2.jpg	2	f29r_L19_s2.jpg:2:15	o	36	5345
+A	f29v_L02_s2.jpg	2	f29v_L02_s2.jpg:2:4	o	2	5431
+A	f29v_L02_s2.jpg	2	f29v_L02_s2.jpg:2:5	v	2	5431
+A	f29v_L02_s2.jpg	2	f29v_L02_s2.jpg:2:6	rho	2	5431
+A	f29v_L03_s2.jpg	1	f29v_L03_s2.jpg:1:25	v	3	5508
+A	f29v_L03_s2.jpg	2	f29v_L03_s2.jpg:2:1	lam	4	
+A	f29v_L04_s1.jpg	1	f29v_L04_s1.jpg:1:16	dag	5	5597
+A	f29v_L04_s2.jpg	1	f29v_L04_s2.jpg:1:28	v	5	5628
+A	f29v_L04_s2.jpg	2	f29v_L04_s2.jpg:2:8	o	6	5650
+A	f29v_L04_s2.jpg	2	f29v_L04_s2.jpg:2:33	z	6	5680
+A	f29v_L05_s1.jpg	2	f29v_L05_s1.jpg:2:9	m	8	
+A	f29v_L05_s1.jpg	2	f29v_L05_s1.jpg:2:9	a	8	
+A	f29v_L05_s1.jpg	2	f29v_L05_s1.jpg:2:11	--	8	
+A	f29v_L05_s2.jpg	1	f29v_L05_s2.jpg:1:16	v	7	5712
+A	f29v_L05_s2.jpg	1	f29v_L05_s2.jpg:1:19	o	7	5714
+A	f29v_L05_s2.jpg	1	f29v_L05_s2.jpg:1:27	box	7	5721
+B	f28r_L01_s1.jpg	1	f28r_L01_s1.jpg:1:1	?	0	
+B	f28r_L01_s2.jpg	1	f28r_L01_s2.jpg:1:1	?	0	
+B	f28r_L02_s2.jpg	1	f28r_L02_s2.jpg:1:2	7	2	
+B	f28r_L07_s2.jpg	2	f28r_L07_s2.jpg:2:15	o	12	13
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:1	v	14	
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:2	C08	14	
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:3	C01	14	
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:4	f	14	
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:4	o	14	
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:5	I	14	
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:6	C15	14	
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:7	S	14	
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:8	C15	14	
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:9	I	14	
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:10	C10	14	
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:12	C04	14	114
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:13	C11	14	114
+B	f28r_L08_s2.jpg	2	f28r_L08_s2.jpg:2:14	C06	14	114
+B	f28r_L09_s2.jpg	2	f28r_L09_s2.jpg:2:3	o	16	234
+B	f28r_L09_s2.jpg	2	f28r_L09_s2.jpg:2:12	C13	16	243
+B	f28r_L10_s2.jpg	1	f28r_L10_s2.jpg:1:14	o	17	318
+B	f28r_L10_s2.jpg	1	f28r_L10_s2.jpg:1:15	C11	17	318
+B	f28r_L11_s2.jpg	1	f28r_L11_s2.jpg:1:11	z	19	428
+B	f28r_L11_s2.jpg	2	f28r_L11_s2.jpg:2:5	C20	20	477
+B	f28r_L11_s2.jpg	2	f28r_L11_s2.jpg:2:6	C20	20	477
+B	f28r_L12_s2.jpg	1	f28r_L12_s2.jpg:1:11	C10	21	529
+B	f28r_L12_s2.jpg	1	f28r_L12_s2.jpg:1:12	C20	21	529
+B	f28r_L12_s2.jpg	1	f28r_L12_s2.jpg:1:22	C19	21	538
+B	f28r_L12_s2.jpg	1	f28r_L12_s2.jpg:1:31	C01	21	549
+B	f28r_L12_s2.jpg	2	f28r_L12_s2.jpg:2:23	v	22	602
+B	f28r_L14_s1.jpg	1	f28r_L14_s1.jpg:1:34	o	25	757
+B	f28r_L14_s2.jpg	1	f28r_L14_s2.jpg:1:14	C11	25	758
+B	f28r_L14_s2.jpg	2	f28r_L14_s2.jpg:2:16	E	26	800
+B	f28r_L15_s2.jpg	1	f28r_L15_s2.jpg:1:13	C09	27	867
+B	f28r_L15_s2.jpg	2	f28r_L15_s2.jpg:2:11	o	28	921
+B	f28r_L18_s2.jpg	2	f28r_L18_s2.jpg:2:1	C07	34	
+B	f28r_L18_s2.jpg	2	f28r_L18_s2.jpg:2:36	T	34	1263
+B	f28r_L19_s2.jpg	2	f28r_L19_s2.jpg:2:20	C10	36	1369
+B	f28r_L20_s2.jpg	1	f28r_L20_s2.jpg:1:24	C10	37	1425
+B	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:3	C09	3	1544
+B	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:4	C10	3	1544
+B	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:5	f	3	1544
+B	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:11	v	3	1549
+B	f28v_L03_s1.jpg	1	f28v_L03_s1.jpg:1:12	C10	3	1549
+B	f28v_L05_s1.jpg	1	f28v_L05_s1.jpg:1:9	o	7	1765
+B	f28v_L05_s1.jpg	1	f28v_L05_s1.jpg:1:10	f	7	1765
+B	f28v_L05_s2.jpg	1	f28v_L05_s2.jpg:1:9	I	7	1775
+B	f28v_L06_s2.jpg	1	f28v_L06_s2.jpg:1:36	f	9	1910
+B	f28v_L06_s2.jpg	2	f28v_L06_s2.jpg:2:3	C01	10	1934
+B	f28v_L06_s2.jpg	2	f28v_L06_s2.jpg:2:4	x	10	1934
+B	f28v_L06_s2.jpg	2	f28v_L06_s2.jpg:2:6	C10	10	1935
+B	f28v_L07_s2.jpg	1	f28v_L07_s2.jpg:1:5	C01	11	1990
+B	f28v_L13_s2.jpg	1	f28v_L13_s2.jpg:1:20	o	23	2666
+B	f28v_L13_s2.jpg	1	f28v_L13_s2.jpg:1:21	C11	23	2666
+B	f28v_L13_s2.jpg	2	f28v_L13_s2.jpg:2:41	I	24	2733
+B	f28v_L14_s2.jpg	1	f28v_L14_s2.jpg:1:43	E	25	2789
+B	f28v_L15_s2.jpg	2	f28v_L15_s2.jpg:2:1	C13	28	
+B	f28v_L18_s1.jpg	2	f28v_L18_s1.jpg:2:17	ρ	34	3255
+B	f28v_L19_s2.jpg	1	f28v_L19_s2.jpg:1:3	o	35	3314
+B	f29r_L02_s1.jpg	1	f29r_L02_s1.jpg:1:20	ρ	1	3433
+B	f29r_L05_s2.jpg	1	f29r_L05_s2.jpg:1:2	o	7	3789
+B	f29r_L06_s1.jpg	1	f29r_L06_s1.jpg:1:4	o	9	3870
+B	f29r_L06_s1.jpg	1	f29r_L06_s1.jpg:1:5	C11	9	3870
+B	f29r_L08_s1.jpg	1	f29r_L08_s1.jpg:1:14	ρ	13	4093
+B	f29r_L10_s1.jpg	2	f29r_L10_s1.jpg:2:20	o	18	4375
+B	f29r_L10_s1.jpg	2	f29r_L10_s1.jpg:2:21	C11	18	4375
+B	f29r_L11_s2.jpg	2	f29r_L11_s2.jpg:2:28	o	20	4509
+B	f29r_L12_s1.jpg	2	f29r_L12_s1.jpg:2:17	ρ	22	4583
+B	f29r_L12_s2.jpg	2	f29r_L12_s2.jpg:2:1	v	22	
+B	f29r_L13_s1.jpg	1	f29r_L13_s1.jpg:1:15	o	23	4635
+B	f29r_L13_s1.jpg	1	f29r_L13_s1.jpg:1:16	C11	23	4635
+B	f29r_L13_s2.jpg	1	f29r_L13_s2.jpg:1:1	C09	23	
+B	f29r_L13_s2.jpg	2	f29r_L13_s2.jpg:2:7	C11	24	4707
+B	f29r_L13_s2.jpg	2	f29r_L13_s2.jpg:2:8	C06	24	4707
+B	f29r_L14_s2.jpg	2	f29r_L14_s2.jpg:2:2	7	26	4788
+B	f29r_L15_s1.jpg	2	f29r_L15_s1.jpg:2:27	ρ	28	4900
+B	f29r_L15_s2.jpg	2	f29r_L15_s2.jpg:2:1	ρ	28	
+B	f29r_L15_s2.jpg	2	f29r_L15_s2.jpg:2:2	C11	28	
+B	f29r_L15_s2.jpg	2	f29r_L15_s2.jpg:2:8	ρ	28	4900
+B	f29r_L17_s2.jpg	1	f29r_L17_s2.jpg:1:21	C26	31	5085
+B	f29r_L19_s1.jpg	2	f29r_L19_s1.jpg:2:31	C11	36	5342
+B	f29r_L19_s2.jpg	2	f29r_L19_s2.jpg:2:15	o	36	5345
+B	f29r_L19_s2.jpg	2	f29r_L19_s2.jpg:2:16	C11	36	5345
+B	f29v_L03_s2.jpg	1	f29v_L03_s2.jpg:1:21	v	3	5508
+B	f29v_L03_s2.jpg	2	f29v_L03_s2.jpg:2:1	C10	4	
+B	f29v_L05_s2.jpg	1	f29v_L05_s2.jpg:1:24	C11	7	5721
