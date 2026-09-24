@@ -2,6 +2,9 @@
 Six blind searchers (web, print, community lists, DECODE, Bourdeau, Aymeloglu) and a reconciler. Each
 searcher lists every query and URL; found=true only for a real solution, key, plaintext or documented
 attempt with a status. Verdict appended to NOTES.md with the date. + common tail.
+The web-search source also covers model-solve announcements (Vals AI's blog, the AI labs' and evaluation
+companies' posts) as a source family for "already solved" since September 2026 (Vals AI, "Claude Fable 5.1
+Solves the Cyphral Distich", 31 Aug 2026): search the cipher's name with "solves" and "Claude" or "GPT".
 The bare status word stays alone on NOTES.md's first line (CLAUDE.md rule 5) -- do not fold a citation into that
 line. Instead, the line immediately below the status word (before anything else, including "QUEUE row:") is one
 sentence naming the edition or calendar actually read by *this worker* and the page(s) checked, e.g. "Ribier 1666

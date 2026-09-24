@@ -12,3 +12,7 @@ references) and spot-check 10 dropped clusters; judge from +-10 lines, run the i
 volume for a decipherment indicator ("dechiffr", "deciphered", "Dechifrerede", "decyphered", "Nyckeln", "clave") before calling
 any passage undeciphered (round 4: Christian IV's letters were deciphered in a same-volume appendix). Never commit+rebase or
 checkout while a background fetch still writes a tracked file (round 4 lost 130 identifiers' clusters to an orphaned handle).
+Lesson of 24 Sept 2026 (Urquhart 1653, Vals AI): host-text-as-key pass before solver -- for each cipher-without-decipherment
+cluster, test the host edition's own structure (sections, stanzas, lines, words matching the cipher's counts, index-into-text
+rules) before handing the cluster to a substitution or frequency solver. See LESSONS.md, "24 September 2026: a printed
+cryptogram's key is often the host text".

@@ -156,3 +156,22 @@ readings needing unrelated sources. Both lanes also kept an idle Opus verifier s
 per reading, so claim latency was dispatch time, not spin-up time. Worth keeping as the default shape when a third
 language group (e.g. German, for the Saxony/Schwarzburg run) grows large enough to compete for the same two
 verifiers.
+
+## 24 September 2026: a printed cryptogram's key is often the host text (Urquhart 1653, read by a model on 31 Aug 2026)
+
+Geby Jaff, "Claude Fable 5.1 Solves the Cyphral Distich" (Vals AI blog, 31 Aug 2026,
+sources/vals-ai/2026-08-31-fable-solves-cyphral-distich.html). Sir Thomas Urquhart's Cyphral Distich, two lines of
+32 numbers each (64 numbers total), sat on Klaus Schmeh's Top 50 unsolved list after failing frequency analysis,
+substitution and homophonic substitution for over 370 years. Fable 5.1 found in 44 minutes and 176k tokens that
+the 32 numbers in each line index words in Urquhart's own 32 Proquiritations (printed just before the cipher, and
+a count Urquhart himself emphasises); i-th number -> i-th Proquiritation -> that word -> its first letter. Three
+rules transfer to our pipeline:
+(a) Before any substitution or frequency work on a cryptogram printed inside a book, test the book's own structure
+   as the key: count things (sections, stanzas, lines, words) that match the cipher's own counts, and try
+   index-into-text rules (the i-th number is a word index into the i-th section; take the first letter).
+(b) A solution that is self-verifying by form (exact length per line, rhyme, metre, a sentence that parses in the
+   period's language) is grade C evidence without a key source, and should be stated together with the form
+   checks that verify it, not stated as certain outright.
+(c) Persistence over simple hypotheses beat 370 years of frequency analysis on this target: the printed-ciphertext
+   detector's candidates (the 23 unswept Thurloe passages, STATUS lane table) should get a host-text-as-key pass
+   before a solver run, not after.
