@@ -23,8 +23,12 @@ from italian_ngram import ALPHA, IDX  # noqa: E402
 from seg_homophonic import LM, NL, Problem, make_control, parse_design, read_cipher, segment  # noqa: E402
 
 ANCHOR = ['17', '9', '6', '10', '20', '4', 'y', '3', '18']
-CANDS = ['cardinale', 'francesco', 'guglielmo', 'monsignor', 'suamaesta', 'laregina1', 'ilducadis', 'monferrat',
+CANDS = ['cardinale', 'lcardinal', 'francesco', 'guglielmo', 'monsignor', 'suamaesta', 'ilducadis', 'monferrat',
          'disauoiae', 'lacorteet', 'cheilrede']
+# 9-letter windows of 'nostro/vostro/suo fratello': the unconstrained solve reads the anchor as '..oesaofrat..'
+# both times, and the clear line after f8_left_L4 is 'il cardinale nostro fratello'
+for ph in ('nostrofratello', 'vostrofratello', 'suofratello'):
+    CANDS += [ph[i:i + 9] for i in range(len(ph) - 8) if ph[i:i + 9] not in CANDS]
 
 
 def anneal_fixed(prob, lm, rng, fixed, iters, restarts, t0=60.0):
