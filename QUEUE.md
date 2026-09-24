@@ -3585,8 +3585,8 @@ positive check of the surrounding pages.
 
 | Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Leaf viewed | Image route |
 |---|---|---|---|---|---|---|---|---|
-| HU1 | Heinsius correspondence: van Dopff to Heinsius, letter no. 357, one letter with a numeric name-code (110, 103, 121, 105, 111, 174, 37...) | 18 May 1702 | fr | cryptanalysis | Nationaal Archief 3.01.19, inv.nr. 756 (cited in the edition as "H.A. 756") | Veenendaal's own footnote: "De sleutel van dit cijferschrift is niet gevonden" (the key to this cipher was never found) -- a genuine editorial non-solve, not merely "not stated". Single instance found this pass; below-unicity risk without a sibling. | No (printed-edition OCR page read, not the manuscript image) | NA 3.01.19 invnr/756 confirmed to carry a scan viewer (`nationaalarchief.nl/onderzoeken/archief/3.01.19/invnr/756`, HTTP 200) |
-| HU2 | Heinsius correspondence: Sauniere de l'Hermitage (London) to Heinsius, three letters in the same H.A. 946 dossier, "gedeeltelijk in onopgelost cijferschrift" each time, cross-referenced to each other by the editor | 26 Feb, 29 Feb, 30 May 1704 (nos. 166, 177, 477) | fr | cryptanalysis | Nationaal Archief 3.01.19, inv.nr. 946 | Same unsolved system recurring three times in one correspondent's three-month run -- no solved sibling found, but three ciphertext instances materially improve on a single-letter unicity problem. | No | H.A.=NA 3.01.19 invnr pattern confirmed on a different item (756); not individually re-checked for 946 |
+| HU1 | Heinsius correspondence: van Dopff to Heinsius, letter no. 357, one letter with a numeric name-code (110, 103, 121, 105, 111, 174, 37...) | 18 May 1702 | fr | cryptanalysis | Nationaal Archief 3.01.19, inv.nr. 756 (cited in the edition as "H.A. 756") | CHECK-SOLVED 24 Sept 2026 (csHU2): open, confirmed. Veenendaal's own footnote: "De sleutel van dit cijferschrift is niet gevonden" (the key to this cipher was never found). `ciphers/heinsius-dopff-1702/`. | No (printed-edition page image read, not the manuscript) | **NOT copy-free**, corrected 24 Sept 2026: invnr 756's own per-item record is `availability:PHYSICAL, scans:[]` (the earlier "scan viewer" claim was generic page-shell boilerplate). REQUEST.md written. |
+| HU2 | Heinsius correspondence: Sauniere de l'Hermitage (London) to Heinsius, three letters in the same H.A. 946 dossier, "gedeeltelijk in onopgelost cijferschrift" each time, cross-referenced to each other by the editor | 26 Feb, 29 Feb, 30 May 1704 (nos. 166, 177, 477) | fr | recovery (candidate key found, unconfirmed) | Nationaal Archief 3.01.19, inv.nr. 946 | CHECK-SOLVED 24 Sept 2026 (csHU2): open, confirmed, all three footnotes re-read verbatim; a fourth instance (letter 251, ambiguous wording) also found. A candidate cipher key, invnr 2317 "Sleutel van een cijferschrift, waarschijnlijk voor correspondentie met Engeland" (c.1705), sits in the same archive -- unconfirmed match. `ciphers/heinsius-hermitage-1704/`. | No | **NOT copy-free**: invnr 946 and the candidate key (2315-2317) all `availability:PHYSICAL, scans:[]`. REQUEST.md written (946 + 2317 together). |
 | HU3 | Heinsius correspondence: Schonenberg (Lisbon envoy) to Heinsius, letter no. 185, one unsolved word/phrase in the body | 24 Jul 1709 | nl | cryptanalysis | Nationaal Archief 3.01.19, inv.nr. 1445 | "Het cijferschrift is niet opgelost" -- low extent alone, listed for the correspondent circle's completeness | No | Pattern, not individually re-checked |
 | HU4 | Heinsius correspondence: H.W. Rumpf (Rotterdam, then Stockholm) and van de Bie (Stockholm), a cipher never broken by Heinsius's own professional decipherer d'Alonne across three archival years | 17 Nov 1716 (no. 142, H.A. not directly given, neighbour cites 1975); 23 Mar 1718 (no. 309, H.A. 2030, addressed directly "Aan A.T. d'Alonne in onopgelost cijfer"); 15 Aug 1719 (no. 446, H.A. 2044, two full cipher-line runs omitted from the print entirely, "weggelaten"); one further unresolved instance in the same volume span (approx. printed p.337) | nl | cryptanalysis | Nationaal Archief 3.01.19, inv.nrs. 1975 / 2030 / 2044 | The most interesting circle found this pass: a contemporary failure (d'Alonne, not just a later editor, could not read it), recurring across at least three years and archival numbers without ever being broken. No. 446's cipher lines are not even in the printed edition -- only the NA original would carry the actual ciphertext. | No | Pattern (2030) confirmed-shape; 446/1975/one instance not individually checked -- and no. 446's own ciphertext is absent from this source, so material for it is archive-only |
 | HU5 | Heinsius correspondence: Ph.J. van Borssele van der Hooghe (London) to Heinsius, letter no. 959, an unsolved cipher letter on the same leaf, with the editor noting a *separate* decipherment (about the queen's health) is "mogelijk dezelfde" (possibly the same) | 3 Apr 1714 | fr | recovery (ambiguous -- possible solved sibling in the same dossier, unconfirmed whether it is this exact letter) | Nationaal Archief 3.01.19, inv.nr. 1836 | Exactly WVO's NB1 "sibling with a decipherment" pattern if the noted solution is for a *different* letter; found-solved if it is this one. Neither checked against the leaf this pass. | No | Pattern, not individually re-checked |
@@ -3646,6 +3646,40 @@ citing it extensively was read in full and contains zero mentions of cijfer/gehe
 pass (budget spent on the four required targets). Firm nominations this hour: HU4, HU5, HU6, HU8 (4 open; 2
 copy-free/likely-copy-free [HU4, HU5], 1 copy-order [HU6], 1 unresolved [HU8]). Full search logs, verbatim
 edition quotes and images in each target's own NOTES.md/images/.
+
+**Check-solved outcome, 24 September 2026, continued** (LANE N2 worker csHU2, brief
+`.claude/briefs/runs/2026-09-24-lane-n2-csHU2.md`): three jobs. **(1) NA 3.01.19 digitisation, settled.** The
+"Scan"/"Viewer" page-shell text every earlier pass read is generic boilerplate, not a per-item signal; the
+archive's own per-item JSON (`drupal-settings-json` -> `viewer.response` on each invnr page) gives a real
+`availability`/`scans` field, validated against a positive control (NA 1.04.02 invnr 1, a digitised VOC item
+with real IIIF URLs). Checked for every cipher-relevant invnr found in this Heinsius harvest so far -- **756
+(HU1), 946 (HU2), 1836 (HU5), 1975/2030/2044 (HU4), and 2315/2316/2317 (a candidate key found for HU2)** --
+and every one returns `availability:PHYSICAL, scans:[]`. **None is digitised.** This reverses HU4's "likely
+copy-free" and HU5's "likely copy-free" verdicts above to NOT copy-free; `REQUEST.md` now written in all four
+folders (HU1, HU2, HU4, HU5). HU2's cipher (below) also turns up a real find: **inv.nr. 2317**, "Sleutel van
+een cijferschrift, waarschijnlijk voor correspondentie met Engeland" (c.1705), a candidate archive-held key --
+unconfirmed match, but no better-fitting English correspondent exists in this batch. **(2) HU8 archive
+location, partly resolved.** NA 3.01.17 confirmed as the correct archive (Johan de Witt's own papers) via two
+independent sources -- the Fruin/Japikse edition's own front matter (Deel 1, p.XVI: "de brieven aan De Witt
+alle eigenhandige originelen zijn") and EMLO's "Correspondence of Johan de Witt" project page, which names
+"National Archive: inventory Raadpensionaris De Witt, 3.01.17" directly and indexes ~7,465 diplomatic letters
+online with (provisional-quality) image links. The **specific inv.nr for the 19/29 Sept 1657 letter, and
+whether it or its separately-surviving cipher copy is scanned, was NOT resolved** -- EMLO's own advanced search
+is a React app that a guessed URL-query filter did not actually drive (it returned the unfiltered 16,736-row
+catalogue), and NA's own client-rendered search API's real endpoint was not found by guessing (503/404 on two
+tries, not retried further, per the one-retry rule). **(3) HU1 and HU2 check-solved to the full brief.**
+**HU1** -> `ciphers/heinsius-dopff-1702/` -- open, cryptanalysis, unchanged from the harvest's verdict but now
+independently re-verified (editions, post-edition journal search via WebSearch, community lists, DECODE, both
+solver repos, neighbouring letters 356/358 read and clean). **HU2** -> `ciphers/heinsius-hermitage-1704/` --
+open, **upgraded from cryptanalysis to recovery (candidate key, unconfirmed)** because of the invnr 2317 find
+above; all three footnotes (166, 177, 477) re-read verbatim and cross-checked, plus a fourth ambiguous instance
+(letter 251) found and flagged, not counted toward the open verdict. Full search logs, verbatim edition quotes
+and images in each target's own NOTES.md/images/; `sources/huygens/NOTES.md` addendum has the same summary.
+Nominations this pass: HU1, HU2 (2 open, both stage-2 verified unsolved, neither copy-free -- copy-order
+routes in each REQUEST.md). Requests: `resources.huygens.knaw.nl` ~23, `www.nationaalarchief.nl` ~13 (na_scan_
+check.py batch across 9 invnrs plus HU8's collection/research-guide pages), `github.com` 2 shallow clones
+(grepped, not committed), `emlo-portal.bodleian.ox.ac.uk`/`emlo.bodleian.ox.ac.uk` 1 curl (503, unreachable,
+not retried) + 2 browser_fetch (worked), WebSearch 8. No subagents. Well under the brief's $6 cap.
 
 ## Florence, Dieci di Balìa Responsive (LANE N2 probe of 24 September 2026)
 
