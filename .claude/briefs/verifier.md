@@ -30,3 +30,6 @@ moves only on a confirmed source. A ROOM.md line `for LANE V: <target> second op
 Before logging an Internet Archive volume as unidentified or unreadable, read its metadata `source` field and run be-api
 full-text search inside it (fts works when _djvu.txt returns 500). A search section that reports a mid-run fix states
 which rows were re-run after it. Lessons of the Gramont N4 decision, 24 Sept 2026.
+Edition conventions are evidence: in Japikse's Correspondentie spaced type marks deciphered cipher, and a WVO record's
+Brongegevens code (GPA, GPAS, JC) names the printed edition. Read the cited page before any other family. Lessons of
+V4 (8246) and V7 (5811/4503), 24 Sept 2026.

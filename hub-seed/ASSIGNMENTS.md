@@ -275,3 +275,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T10:58Z	session_01VVFjiBDerTNygcAyKZ1Gzc	Retro-apply d (Sonnet, cap $5)	RETRO-2026-09-24d briefs/tools proposals	transcription.md, caps, room.py --digest
 | 225 | 24 Sep | cipher-lab | Eckert E4/E5 Zooniverse Talk gap via talk.zooniverse.org JSON API + Wayback CDX | LANE W2 (session_01CLm9uFwyau9hRmDcm2vALE) | search, Sonnet cap $5, lane-w2-e1 | running, session_01R697jWTYMmV97in5hVcuRH |
 | 226 | 24 Sep | cipher-lab | Blathwayt 1728 BLA 186/191(a)/184 N4 set after LANE N2's DECODE Decrypted search | LANE W2 (session_01CLm9uFwyau9hRmDcm2vALE) | verifier, Opus cap $4, lane-w2-b1 | running, session_01TBAFEuiV8upEjzXbSL6Boy |
+| 227 | 24 Sep | cipher-lab | G3 WVO GPA letters Groen-by-page check + bronnen-code legend (DNOK on 57) | LANE V2 (session_017QzVuGiZ8wFQY6HZfUxH1q) | print check, Sonnet cap $4 | running, session_01BmKBySXoQQQssCRr1zpHE9 |

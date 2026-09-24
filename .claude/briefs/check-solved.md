@@ -37,3 +37,10 @@ the specific letter under review (by date, sender, recipient or shelfmark, not j
 quote its sentence about that letter verbatim in the verdict before writing "open". Lesson of 24 Sept 2026
 (M9, fr.2996 Morvillier): the worker had Tomokiyo's page open and still wrote "open", though the page says
 Lasry broke that very letter in 2023 (RETRO-2026-09-24 proposal 3).
+
+For a letter from the Willem van Oranje database (WVO, resources.huygens.knaw.nl/wvo), read the record's
+Brongegevens line before writing a verdict: code GPA means printed in Groen van Prinsterer's Archives (GPAS its
+Supplément), JC means Japikse's Correspondentie. Open the cited page and check whether the cipher passage is printed
+in clear (Groen printed 5200, 5218, 5222, 4503 and 5811 with their cipher passages deciphered; Japikse prints the
+deciphered insertions in spaced type, as in 8246). Lesson of 24 Sept 2026: three lanes captured and read five WVO
+letters that were already in print, because the harvest treated the source codes as "inferred".
