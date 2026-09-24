@@ -114,7 +114,7 @@ contemporary decode sheet on c8-c9, rest clear French. Route: access playbook 1 
 **Alignment.** `alignment_yale_8jan1781.tsv` (one row per group: figure, unit aligned, grade),
 `key_tomokiyo.tsv` (per figure), both regenerated and checked by `build_key_tomokiyo.py [--check]` against the
 Cryptiana snapshot plus the image correction list. Figures: Tomokiyo's transcription checked against the image at 1800
-px (all lines viewed; one crop at native resolution); one difference, group 155 is **1170** on the page (Tomokiyo 470).
+px (all lines viewed and compared by eye, not re-read digit by digit in a blind pass; one crop at native resolution); one difference seen, group 155 is **1170** on the page (Tomokiyo 470).
 Plaintext: Tomokiyo's print checked against the decode sheet; the sheet reads "le **reste** de l'armée", "quitta",
 "je l'assurai promptement du **zèle** (interlined over a struck word) avec lequel votre **armée**", "le **soin** de ces
 mesures", "laissé **aux** général Washington", and after "les ameriquains" a struck-out phrase (the last 8 groups,
