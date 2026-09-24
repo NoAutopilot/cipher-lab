@@ -34,3 +34,13 @@ Never write my name or email; never call a reading new, first, unpublished or un
 ```
 
 Ongoing: JSTOR has no public search API; institutions reach it through licensed discovery feeds and text-mining agreements, not open to individuals. A scheduled task on the owner's computer with the text above, every 4 hours while the machine is on, is the standing arrangement; the parent's check-in routes rows that turn `done` with hits to a verifier.
+
+## Second job for the same session or scheduled task: the open-index rows (added 24 Sept 2026)
+
+OpenAlex and Semantic Scholar rate-limit the cloud egress address (OpenAlex's free daily budget per IP; resets midnight UTC),
+so queries a verifier could not run are handed over the same way. After the JSTOR rows: open any `outreach/*owner-queries*.md`
+file with `status: ready`; run each query in its table in the owner's Chrome on https://openalex.org and
+https://www.semanticscholar.org, one at a time, a few seconds apart; record per query "no relevant hit" or title, author, year
+and URL of anything that prints or discusses a decipherment of the letter; write the results into the ASKS.md row the file
+names (one line per query, pipes intact); set the file's first line to `status: done <date>`; commit those files by path,
+rebase, push; ROOM line `<UTC> | open-index runner (owner's machine) | done: N queries, K hits`.
