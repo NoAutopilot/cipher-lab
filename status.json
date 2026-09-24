@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 20:10 UTC",
+ "updated": "24 Sep 2026 20:23 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1617,23 +1617,47 @@
    "grade": "matched controls only, no target touched: Italian N 244 K 31 from 83.6 to 98.4 and 65.6 to 79.1 letter accuracy, 29 of 30 cribs right; German N 540 K 82 no gain over 24 blind restarts; Italian N 720 simple substitution at ceiling blind",
    "line": "First measured answer to whether a model in the loop shifts the control curve: yes at short lengths and mid-range blind scores, no where the anneal already reads. Next test is the code-and-mark design at N 720, where the blind solve reads 22 to 67 percent, before any target is run under it.",
    "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/tools/crib_rounds.py"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Crib loop on the code-and-mark design at N 720 (Salviati's design and length): 4.9 points on matched controls, not enough to run the target",
+   "grade": "controls only: seeds from 46.9 to 50.7 and 65.3 to 76.1 over four rounds, one seed at 18.9 gave no usable cribs; 31 of 42 cribs right",
+   "line": "Second answer from the solver experiment: the reader in the loop needs a partial decode above roughly 45 percent to find cribs, and on this design at 720 signs the blind solve often sits below that. For Salviati the path is the remaining leaves (more ciphertext), which R5 is now buying, not a better reader.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2933-salviati-1525"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Portuguese national archive (Torre do Tombo, digitarq): two composite codices catalogued as holding cipher letters, 1657-67 and 1660-63, images online under CC BY-SA",
+   "grade": "volume-level leads (592 and 864 images), cipher leaves not yet isolated; PARES (Spain) is down at the server, not blocked here",
+   "line": "First look at the Iberian state archives: Spain's PARES fails its own TLS chain for every client, Portugal's digitarq serves an undocumented JSON API and full image sets. The Sande embassy codex cross-references the BL Add MS 38038 English-side despatches already in the queue.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/sources/solver-diffs/2026-09-24-pares-digitarq.tsv"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "negative",
+   "title": "The seven remaining copy-order rows from Bourdeau's catalogue (Dresden, Munich, the Dutch Royal House archive): resolved to their exact holding units, none digitised",
+   "grade": "item-level check at each archive's own viewer; order-only at all three",
+   "line": "Closes the question of whether any of these could be had without a copy order: no. They stay on the owner's card as orders. One note for later: the Royal House archive's own description of the Affry series says some copies there are already deciphered.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/QUEUE.md"
   }
  ],
  "lanes": [
   {
    "name": "Lane R5, recovery",
    "live": 1,
-   "focus": "Salviati f.55r priced at $9.4 a leaf; owner 20:14: buy the rest (f.55v to f.57v), then the code-and-mark model on about 2,800 signs; Seure blocked at 42.9 percent after the coarse atlas; 1519 key extended by 38 rows from f.110; next: key application on the five open Nevers letters with Tomokiyo's key no.60 (the best odds of a reading tonight)"
+   "focus": "three Opus workers applying Tomokiyo's key no.60 to six Nevers-circle letters (fr.3985 f.88 and f.176, fr.3986 f.198, fr.3987 f.66, fr.3989 f.169, fr.3990 f.27), leaves on disk, no interlinear decipherment on any; Salviati f.55v to f.57v to be bought next (owner 20:16)"
   },
   {
    "name": "Lane N4, nominations",
    "live": 1,
-   "focus": "firm copy-free nominations 9: Villeroy, Lauriere, Dinteville (Gomberville t.2 read), five Nevers-circle letters with published keys (fr.3985, 3986, 3987, 3989, 3990), Hellen 1752; van Spaen 1808 and Roell 1809 held until the Colenbrander edition is read (csCOL); scPARES on the Spanish and Portuguese archives and scARCH2 on Dresden, Munich and the Royal House archive running"
+   "focus": "eleven firm copy-free nominations (van Spaen 1808 and Roell 1809 restored after the Colenbrander edition was read at the Huygens site); Iberian archives scouted (two Torre do Tombo codex leads); the seven Bourdeau copy-order rows confirmed order-only"
   },
   {
    "name": "Parent workers",
    "live": 0,
-   "focus": "solvEX closed: the crib loop adds 13.5 to 15 points at N 244 on controls; solvEX2 next on the code-and-mark design at N 720; detIMG closed on its controls (gate failed)"
+   "focus": "solvEX and solvEX2 closed: the crib loop helps at short lengths with a mid-range blind decode, adds 4.9 points on Salviati's design at 720; retrospective f done, retro-apply f next"
   },
   {
    "name": "Lane V4, verification",

@@ -363,7 +363,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T20:05Z	session_01AQQEu9PsJBipbJuRnccrh5	LANE N4 scPARES (Sonnet, cap $6)	PARES / DigitArq cipher letters (parent 19:27)	brief lane-n4-scPARES
 2026-09-24T20:05Z	session_01DHo4wEHhZ5cF5ZjABxc5Fi	LANE N4 csCOL (Sonnet, cap $4)	Colenbrander Gedenkstukken V for CS2-21/-22	brief lane-n4-csCOL
 2026-09-24T20:05Z	session_01GEGhc5p3nKrhrFkTdmdaXD	LANE N4 scARCH2 (Sonnet, cap $5)	Dresden R5005-08, BayHStA ÄA 4591, KHA A31 item-level viewers	brief lane-n4-scARCH2
-2026-09-24T20:11Z	session_01DHytvHaqJK368edmcp46ZJ	solvEX2 crib loop on code+mark at N=720 (Opus, cap 2)	Salviati pooled design; controls first	follows solvEX; brief 2026-09-24-solvex2-codemark-loop.md
+2026-09-24T20:11Z	session_01DHytvHaqJK368edmcp46ZJ	solvEX2 crib loop on code+mark at N=720 (Opus, cap 2)	Salviati pooled design; controls first	done 20:19, $2.48, N, +4.9 points on cm at 720, gate not met; archived 20:22
 2026-09-24T20:11Z	session_01Txh1Si1xmaExtkUSFgMHSr	Retrospective f (Sonnet, cap 0)	RETRO-2026-09-24f.md	15 worker rows, 3 since retro e; trigger rule 12 rows
 2026-09-24T20:12Z	session_019BqK12YeUXwrP5nNtCMiLi	LANE R5 F1 (Opus, cap 8)	fr3985-nevers-revol-1593 key no.60 f.88+f.176	brief 2026-09-24-lane-r5-f-nevers-keyapply.md
 2026-09-24T20:12Z	session_01FmmDMW6DjBWayqWxiLQLbv	LANE R5 F2 (Opus, cap 8)	fr3986 f.198 + fr3987 f.66 key no.60	brief 2026-09-24-lane-r5-f-nevers-keyapply.md

@@ -10,7 +10,7 @@ Order and dates are in grants/PLAN.md there. In short:
 3. Anthropic External Researcher Access ($1,000 API credits, same 5 Oct review), only if you accept the over-claiming study framing: grants/applications/anthropic-external-researcher-access.md.
 4. Bibliographical Society Minor Grant (up to 300 pounds, any time; Major Grant cycle opens November): grants/applications/bibsoc-grants.md; needs one referee.
 5. Huntington short-term fellowship (by 15 Nov 2026; residency required, which you said you do not want): skip unless that changes.
-6. OpenAI Researcher Access ($1,000, by 30 Nov): grants/applications/openai-researcher-access.md.
+6. OpenAI Researcher Access ($1,000, by 30 Nov): grants/applications/openai-researcher-access.md. **Submitted by the person 24 Sept 2026** (research areas: model exploration, interdisciplinary; base access; 6 months; $1,000).
 
 Submission is yours, or a local agent in your browser with you watching; a cloud session never submits or pays. Fill the
 personal fields on your own machine; the completed copies do not go in either repository.
