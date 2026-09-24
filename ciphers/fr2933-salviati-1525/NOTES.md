@@ -300,7 +300,7 @@ settled transcription of f.54r exists.
 
 ## Solver (24 Sept 2026, LANE R4 I)
 
-Worker I (Opus, cap $8, session_01GN6EQNWzVSwj6k7CvC9urZ), 16:05-16:30 UTC. Disk only, no fetches, no subagents. Input
+Worker I (Opus, cap $8, session_01GN6EQNWzVSwj6k7CvC9urZ), 16:05-16:10 UTC. Disk only, no fetches, no subagents. Input
 `ciphertext_f54r.tsv` (370 sign tokens, 36 base types, 139 plain boxes). **No reading; no key.tsv, decode.json or grades.**
 
 **Layout seen on the line images (L04, L05).** f.54r mixes plain Italian ("tutto quello ch[e] V. S. desidera", line 3) with
