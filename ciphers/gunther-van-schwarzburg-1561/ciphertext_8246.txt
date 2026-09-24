@@ -1,0 +1,39 @@
+# 8246 cipher, G1 one careful reading, 24 Sept 2026, codes as ciphertext_5109.txt (see NOTES.md G1). '?' suffix = doubtful (M).
+# New codes not in 5109: cro, tb (b with cross on top), xy, od (circled dot), b (reversed-6 / looped b), 44_ (underlined 44), xr_ (underlined xr),
+# 98, bbb (underlined bbb), Ol (large looped O with l), 58, 67, sqt (square with a stem on top), aa (aa without bar), ut, t (small t), Ib+ (I with cross), BLOT.
+p1L01	ps f 33 m ob xr xb? th f oo
+p1L02	aab r 34 88x x tau zz 77 34 60 ob aaa xr aab f or th
+p1L03	v ps cc f 33 ii 88x xr dd 34 ps xm 6 m vt 6 101 88
+p1L04	rp cc rr f ps BLOT lx 87 cro Ib tb aab x xy hs d6 x_
+p1L05	cc ob a xb zz 34 od cc 44_ 60 f b r oo ] vt ps xm
+p1L06	f 88x 34 or d f 88 z aab f or hs rr Ib 7 f 8 tau aab
+p1L07	hs f ps aaa zz r oo d x+ rf ob 6 fb d6 xr_ 4000 34
+p1L08	44 60 88 tau f ps 53 48 34 d f cc or r 3 01 88 xr
+p1L09	dd rr f ps v ob + 7 34 cc d f 88 m xb? L ] f ps
+p1L10	dd 34 or d f cc 98 bbb ro th Ol hs oo ps?
+p1L11	88 f 34 ps th m hs xr aab f tn 34 f 88x 7 88
+p2L01	x+ 34 f cc 53 34 f 88 rf f m d f ps th x sqt
+p2L02	] hs xr aab tau hs r 01 m 7 f x_ f 88 z 53 od
+p2L03	rr ob oo 58 34 60 m Ib zz xb 88x ob ps
+p2L04	ro f cc 60 f? 88 cc f 33 f ps m x ] L
+p2L05	f cc aab 01 6 f aaa L phi m of f oo th
+p2L06	Ol 34 Ib ps d f 88x 4000 34 60 44 88x th
+p2L07	f or 58 48 60 th f or cc f 33 x 88 xr dd
+p2L08	sq f 60 r m xr xb x_ x vi f oo th hs f ] Ib
+p2L09	f ps aab f 60 88x x th 6 aa 44 od ps 34
+p2L10	60 f b f oo hs 88 f 88x 34 48 60 88x th f or
+p2L11	x or? 88 6 53 34 ] f 6 77 f or Ib Ib+
+p2L12	aa x q ob d6 x_ x 44 xr aab 34 od ps
+p2L13	rr m x 60 q 34 60 44 88x th ob b f or
+p2L14	m f 34 6 x_ f ps 60 f 88x ps Ib 33 rf f oo
+p2L15	f sqt m x ] aaa f ps hs 33 m th 6 101
+p2L16	88 ob oo b f ps th hs f ] L f ps aab f
+p2L17	60 88 x th 6 aa hs x+ aaa ut aab f x z
+p2L18	ob b x oo b f m f t f ps ] f hs oo
+p2L19	x+ m sqt th f ps oo f 3 01 88 xr dd
+p2L20	34 3 33 f 88x zz aab 60 ps rf ii b 67 Ib
+p2L21	th f 88x 60 34 g t f oo rf th b f ps Ol
+p2L22	34 60 th m of q f BLOT 88 x+ d6 aab 7 f ps
+p2L23	th x+ f zz 60 60 x+ ps th f 88 ] f m q f ps
+p2L24	34 33 sq xn g 88 hs xr 101 zz th Ib f ] L g 8?
+p2L25	aaa x+ xr 101 f ps 60 phi oo aab hs ps th x+ cc

@@ -1,4 +1,4 @@
-open
+partial
 
 # Willem van Oranje to Günther van Schwarzburg, cipher letter, 2 May 1561
 
@@ -168,3 +168,50 @@ concrete plaintext-ciphertext pair on disk to build the key from.
 Host: resources.huygens.knaw.nl, ~17 requests this pass (2 PDF fetches + ~1 WVO record HTML + ~1 book_data.js +
 1 pages.json + ~6 Japikse page images + retries, all >=1.5s apart, descriptive UA), shared budget with the other
 two C1 targets.
+
+## G1: key from 5109, reading of 8246 (LANE R2 worker G1, Opus, 24 September 2026)
+
+**Correction to C1 and inventory.tsv:** 5109's cipher is **not** on `05109_p6.jpg` (that image is Japikse p.230, the
+letter's printed heading). The cipher is the **last 8 lines of `05109_p4.jpg`** (MS f.25v, after "...zu schicken")
+and the **first 10 lines of `05109_p5.jpg`** (f.26), with clear interruptions "Euer liebe" (p4 line 2),
+"das ich E.L. wol haben wissen lassen wollen" and "Eur liebe" (p5 lines 6-7), matching Japikse's spaced type.
+
+**Aligner method (step 1).** One careful reading of the 5109 cipher (230 units), paired by hand with Japikse no.236
+pp.232-233 spaced passage (plaintext credited there to H. Koot, footnote 5). A diagonal alignment gave no consistent
+key; a hard-EM alignment seeded from "uf das" = `34 p xm x aaa` settled the pairing, and the rest was fixed by eye
+(`build_pairs_5109.py` holds the alignment and regenerates `pairs_5109.tsv` and `ciphertext_5109.tsv`; `--check`).
+Three glyph distinctions were settled on zoomed crops: A2 small v-shape `v2`=g (not o), A4 φ `phi`=o (not g), P3 `ro`=g.
+Spelling points the cipher shows and the print normalises: "Denemarck" (9 signs), "unbewust"; three signs after
+"und" (p5 L1 `rf hs lx`) and a few single signs (p5 L2 `48`, L5 `34`, L9 `34`) have no counterpart in the print (M).
+
+**System (step 2).** Monoalphabetic **homophonic** German letter cipher: 79 signs (`key.tsv`, grade C, source
+pairs_5109.tsv), 2-6 homophones per common letter (e: f r ss g 85 xnr; n: cc oo ps or c ox; d: d d6 tau th th+ xm;
+t: 6 7 z zz dot7; u/v/w one class: 34 44 48 60), plus `4000` = König. **Zero conflicts among the C-grade pairs**
+(`key_conflicts.tsv` lists only disagreements from M-graded alignments). **Not one of the August van Saksen systems:**
+key_74 (System A) and key_98 (System B) use single digits 0-9 and invented signs for letters (e.g. 1=e, 3=a / 3=e,
+0=a); this system uses two-digit numbers, doubled and tripled letters (aa aab aaa cc ss zz rr dd) and ligatures, and
+no value agrees in form (e.g. `3` = m here). Nothing merged from that folder.
+
+**Reading of 8246 (steps 3-4).** One careful reading of pp.1-2 cipher (36 lines, 553 sign tokens) in the 5109 codes
+(`ciphertext_8246.txt` -> `ciphertext.tsv`; `?` = doubtful shape, M), decoded by `tools/decode_key.py .`
+(`decode.json`; `--check` exits 0). **Tokens 553: H 0, C 491, M 24, U 38.** No H: this is a reading with a key
+recovered from a sibling's known plaintext (grade C), not a key source. U = signs absent from the 5109 key
+(b x8, od x4, sqt x3, aa x3, Ol x3, v, t, 58 x2; single: xy xr_ ut tb lx cro bbb Ib+ 98 67 44_); left unread, no
+guessing. **Page 3 (about 31 cipher lines, above the clear close) is not transcribed**: stopped for the usage cap.
+
+German rendering, pp.1-2, word division and gaps mine ([?] = unkeyed sign, [..] = run of them):
+> ... nemlich den heuradt zu[w]ischen [De]nnemarck undt Lothringen [blot/..] nicht [..] sondern underthenig
+> ... erdienst[?], damit i[..] König[liche] wurden zu Dennemarck gen[..]igt und erl[..]ssen kunden [..]
+> [f]reundliche[m] vertrauen zu ermelden, das sich die alte Hertz[o]gin [z]u Lothringen vernemen lassen hat,
+> es sollen die von der König[lichen] wurden zu Dennemarck bevelch haben, die so[..]en heuradt [..]
+> [..]ireur wurden anzusetzen [..] hab ich auch [..] glaubwurdi[g]en leuthen vernommen, [..] in Lothringen
+> diessen heuradt [..] dan [..] sein [..] Dennemarck ... derwegen [..] beradhten, das etwa an derselben umb
+> bericht diesser sachen von hindan ...
+
+This agrees with WVO's content summary (progress of the marriage plan between Frederik II of Denmark and Renata
+of Lorraine). Suggestion (not done): transcribe p.3's ~31 cipher lines the same way (one reading, ~$1.5), and
+settle the 11 U sign types from context as M in an exceptions file.
+
+**Search log for the verifier:** Japikse (1934) no.316, pp.343-344, read by C1/earlier worker: prints 8246 only to
+the clear opening, no cipher passage or solution (NOTES "Source"). No other source searched this pass (no network).
+Requests this pass: 0 (all work from images on disk; crops rendered locally with headless Chromium).
