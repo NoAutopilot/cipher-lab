@@ -1,4 +1,4 @@
-status: ready
+status: sent 24 Sept 2026 (thank-you in the same thread; nothing further expected)
 subject: Re: MS.20769 enquiry, thank you
 to: manuscripts@nls.uk (reply in the same thread as your 23 Sept enquiry)
 
