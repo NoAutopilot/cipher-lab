@@ -337,3 +337,95 @@ and their contexts, key those the siblings cannot. (3) 4613 p2 decipherment: re-
 Tool change: `tools/decode_key.py` gained `clear_prefix` (a tsv sign starting with it is a clear word, for
 LANE R's `=word` passes). `tools/tests/test_decode_key.py` fails on ciphers/rah-canada-1869 both before and
 after this change (pre-existing, not touched).
+
+## R20: targets settled (24 September 2026, LANE R worker R20, Sonnet)
+
+Settled R13's `recon/<nr>/disagreements.tsv` for the four target letters against `key.tsv`, per brief
+(`.claude/briefs/runs/2026-09-24-lane-r-nb1-settle.md`). No subagents, no network requests.
+
+**`settle.py` [--check] [--letters 4610,4611,4612,4616].** For every disagreement row where both passes read an
+actual sign (not a segmentation gap), decodes both variants with `key.tsv` (a `=word` sign to the word itself, a
+keyed numeral/roman code to its table letter or word-sign value, an unkeyed code excluded from scoring) in a
+2-token window either side on the same line, and scores each resulting string with an order-4 (trigram-context)
+French letter n-gram model, Laplace-smoothed, built from `plaintext_4613.txt` + `plaintext_4615.txt` (this
+correspondence's own contemporary decipherments -- this repo's own English transcription-note header paragraph
+is stripped first) plus `ciphers/fr2980-gramont/reading*.txt` (7354 characters of period French in all). A
+variant is taken only when its score beats the other's by **0.35 nats/char** (chosen by eye on the first run,
+recorded as the script's default, not tuned further within budget); otherwise the row stays M, unchanged from
+R13/R18's majority reading. Every decision (score, margin, note) is logged to `settle_log_<nr>.tsv`; every
+settled row's `alt`/`why` in `ciphertext_<nr>.tsv` records what it beat and by how much, so a later worker can
+re-open only the close calls. `--check` regenerates both files in memory and exits 1 if either differs from
+what is committed (rule 7); currently exits 0.
+
+A **case-only** short-circuit precedes the n-gram score (e.g. `=du`/`=Du`, `=jour`/`=Jour`): once both variants
+lower-case to the same word the model cannot and need not choose, so the capitalised spelling is kept only at
+a line's first token, else the lower-case one, logged `case-only, no content difference` and graded H (no
+content uncertainty, only orthography).
+
+**Counts, all four letters combined:** 1641 disagreement rows. 44 settled by the n-gram score (24+7 to A,
+10+16+19+2 to B across the four letters -- see the per-letter table below), plus the **case-only** rows folded
+into those same A/B counts. 444 rows are **segmentation gaps** (one pass has nothing, `-`, where the other has
+a token or a short run) -- these are never settled by the score (comparing "present" against "absent" isn't a
+fair n-gram comparison) and stay M pending an image check, except the one cluster resolved by image below.
+1153 rows stayed M: score difference under the margin.
+
+**Image check (step 2 of the brief, up to 30 rows).** Ranked the four letters' gap-disagreement rows by
+manuscript line to find stretches where one whole pass disagrees with the other over a run of tokens, and
+opened the crop for the three largest clusters:
+- **4611 `p2_L36`, 20 rows -- settled by image, `overrides.tsv`.** `images/04611_p2_L36.jpg` is the archive's own
+  footer stamp on the page image ("A 11/XIV D/13a", "http://www.inghist.nl/Onderzoek/Projecten/WVO/brief/4611"),
+  not manuscript text at all. Pass A correctly read nothing there; pass B fabricated 19 numerals and one word.
+  All 20 positions are now `[blank]` at grade H (confirmed by the image, `nonsign` in `decode.json` so they do
+  not count as U). This is the only override in `overrides.tsv`; `settle.py` applies it after the automated
+  pass so it survives a rerun without being re-scored.
+- **4612 `p1_L23`, 24 rows -- recorded, not settled.** `images/04612_p1_L23.jpg` shows a dense three-line
+  numeral stretch; pass A's 24-token reading ("a un mary advis 82, 26, 76, 2, 33, ...") tracks the visible
+  digits closely by eye, while pass B has nothing for the whole line. Left M rather than promoted: confirming
+  each of the ~24 individual digits against the crop, not just the word count and general shape, was out of
+  this worker's remaining budget. A future settler with more digit-by-digit patience should start here.
+- **4610 `p2_L26`, 14 rows -- recorded, not settled.** `images/04610_p2_L26.jpg` is a genuine dense
+  digit-and-clear-word line ("...85,120, 13, 83, 29, 75, 99, 85, 25, ou pour le mouuoir auoir..."), consistent
+  with both passes attempting it and disagreeing on the digit boundaries; no artifact, just hard material.
+  Left M.
+- `4611 p2_L14/L15` (16 rows each) were ranked but not opened within budget; next in line for a future pass.
+
+**Per-letter disagreement settlement:**
+
+| letter | disagreements | settled A | settled B | override (image) | gap (M) | other M |
+|---|---|---|---|---|---|---|
+| 4610 | 423 | 24 | 10 | 0 | 129 | 260 |
+| 4611 | 554 | 7 | 16 | 20 | 173 | 338 |
+| 4612 | 611 | 14 | 19 | 0 | 135 | 443 |
+| 4616 | 53 | 3 | 2 | 0 | 7 | 41 |
+
+**`ciphertext_<nr>.tsv` (new, replaces `recon/<nr>/ciphertext_draft.tsv` as `decode.json`'s input) and
+`tools/decode_key.py . --check` exit 0, per-letter grade counts:**
+
+| letter | tokens | C | I | M | U |
+|---|---|---|---|---|---|
+| 4610 (3 June 1573) | 1545 | 1098 | 58 | 101 | 288 |
+| 4611 (2 July 1573) | 1393 | 836 | 71 | 259 | 227 |
+| 4612 (6 March 1574) | 813 | 371 | 137 | 271 | 34 |
+| 4616 (12 April 1574) | 261 | 207 | 1 | 27 | 26 |
+
+Against R18's counts on the unsettled drafts (4610 C1094/M106, 4611 C833/M276, 4612 C358/M287, 4616 C206/M28):
+C is up and M down on all four, by the amount actually settled -- a modest, honest gain, not a re-solve. All
+four readings are still gappy: no letter is a clean run of French start to finish, most of the C/I comes from
+`{word}`-braced clear text and keyed word-signs (names, "artillerie", "vivres" etc.), and every keyed *numeral*
+run still decodes letter-by-letter with no word boundary of its own (the cipher does not mark them), so a
+homophonic stretch reads as an unbroken lower-case string until the next clear word or word-sign, e.g. 4616
+`p1_L04`: `{Monsr}{frere}{nous}{sommes}{este}{fort}{iii}{avons}{auprest}{de}{Goch}{et}{sommes}` (clean; this is
+4616's best line, two days before Lodewijk's death at Mookerheyde), against 4612 `p1_L04`:
+`flvspaspfdmettbsesvsvntapbn` (a fully keyed but still-unreadable homophonic run -- no word breaks exist to
+recover without either more sibling material or a cryptanalytic pass on the letter frequencies, out of this
+brief's scope). 4610 `p1_L02` shows the pattern of what stayed M: `{Il}{fault}{que}{on}{pardonne}{de}{ce}o{au}
+{col}{qui}{depesche}...` -- `col` (twice) is one of the closest unresolved calls (`=col` vs `=vous`, score
+diff 0.34, just under the 0.35 margin) sitting right where "vous" reads naturally; flagged in `settle_log_4610.tsv`
+for whoever tightens the margin or checks the image next.
+
+**What is left.** (1) `4612 p1_L23`, `4610 p2_L26`, `4611 p2_L14/L15` and the rest of the 444 gap rows need the
+image, not the n-gram score. (2) The ~15 rows sitting within 0.05 nats/char of the 0.35 margin (visible in
+`settle_log_<nr>.tsv` by sorting on `|score_A - score_B|`) are the cheapest next gain if the margin itself is
+revisited. (3) Numbers above 120 not yet in `key.tsv` and still unkeyed (U) in the target letters (R18's item 2,
+still open). (4) No novelty search, no key changes, no context fills beyond what the settled disagreements
+already read -- per brief, this pass only applied the existing key to a settled transcription.

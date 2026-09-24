@@ -1,0 +1,555 @@
+line	col	A	B	score_A	score_B	decision	note
+p1_L01	1	=Monsieur	=pourriez	-2.693	-2.743	M	margin 0.35
+p1_L01	2	140	110	-2.811	-2.876	M	margin 0.35
+p1_L01	4	62	61	-3.289	-3.289	M	margin 0.35
+p1_L01	16	-	=la			M	gap: passes disagree on segmentation, needs image
+p1_L01	20	2	8	-3.385	-3.363	M	margin 0.35
+p1_L01	21	78	71	-3.385	-3.299	M	margin 0.35
+p1_L01	25		=demeurant	-inf	-3.233	B	settled
+p1_L02	10		=deugues	-3.344	-3.538	M	margin 0.35
+p1_L03	2	=at	=et	-3.018	-2.958	M	margin 0.35
+p1_L03	15	31	81	-3.572	-3.683	M	margin 0.35
+p1_L03	22	21	26	-3.538	-3.352	M	margin 0.35
+p1_L04	3	=sceu	=deça	-3.300	-3.210	M	margin 0.35
+p1_L04	6	=curgar	=songer	-3.263	-3.320	M	margin 0.35
+p1_L04	7	=Jay	=jay			B	case-only, no content difference
+p1_L04	10	=Long	=long			B	case-only, no content difference
+p1_L04	13	=pourse	=porté	-2.890	-2.976	M	margin 0.35
+p1_L04	14	=actendant	=attendant	-3.010	-2.918	M	margin 0.35
+p1_L04	19	=seg	80	-2.938	-2.869	M	margin 0.35
+p1_L05	1	7	-			M	gap: passes disagree on segmentation, needs image
+p1_L05	15	=a	=et	-3.378	-3.443	M	margin 0.35
+p1_L06	8	=tout	=soubz	-3.092	-3.231	M	margin 0.35
+p1_L06	9	=effroya	=affeya	-3.071	-2.996	M	margin 0.35
+p1_L06	11	=quils	=guils	-3.186	-3.217	M	margin 0.35
+p1_L06	21	72	71	-3.439	-3.439	M	margin 0.35
+p1_L06	23	1	8	-3.245	-3.333	M	margin 0.35
+p1_L07	3	=at	=et	-3.351	-3.374	M	margin 0.35
+p1_L07	4	=guaury	=guarny	-3.267	-3.271	M	margin 0.35
+p1_L07	5	=bidy	=bien	-3.220	-2.996	M	margin 0.35
+p1_L07	15	150	130	-3.337	-3.337	M	margin 0.35
+p1_L08	1	=Des	=car	-3.149	-2.700	B	settled
+p1_L08	22	21	22	-3.644	-3.644	M	margin 0.35
+p1_L09	2	3	5	-3.404	-3.404	M	margin 0.35
+p1_L09	13	150	130	-3.074	-3.074	M	margin 0.35
+p1_L09	14	=Sont	=vous	-2.738	-2.253	B	settled
+p1_L09	15	=tres	=ira	-2.334	-2.674	M	margin 0.35
+p1_L09	18	=trouves	=trouver	-2.711	-2.794	M	margin 0.35
+p1_L09	19	=de	=sy	-2.804	-3.048	M	margin 0.35
+p1_L10	17	29	24	-3.380	-3.380	M	margin 0.35
+p1_L10	20	-	=de			M	gap: passes disagree on segmentation, needs image
+p1_L10	21	=Devant	=cela	-2.732	-2.760	M	margin 0.35
+p1_L10	24	=vostre	=mettray	-2.501	-2.782	M	margin 0.35
+p1_L11	1	=aultres	=autres	-2.572	-2.672	M	margin 0.35
+p1_L11	6	=sinuoge	=remets	-3.104	-3.067	M	margin 0.35
+p1_L11	7	=Dauttant	=dautant	-3.011	-2.941	M	margin 0.35
+p1_L11	10	=feray	=seray	-2.925	-2.856	M	margin 0.35
+p1_L11	15	=pouiez	=pouant	-3.203	-3.035	M	margin 0.35
+p1_L11	21	30	10	-3.344	-3.344	M	margin 0.35
+p1_L12	6	53	83	-3.277	-3.301	M	margin 0.35
+p1_L12	22	125	121	-3.344	-3.344	M	margin 0.35
+p1_L12	23	135	138	-3.367	-3.367	M	margin 0.35
+p1_L13	1	31	37	-3.339	-3.339	M	margin 0.35
+p1_L13	17	=est	=et	-3.306	-3.402	M	margin 0.35
+p1_L13	20	=repandant	=repondant	-3.140	-3.076	M	margin 0.35
+p1_L13	22	=L	=l			B	case-only, no content difference
+p1_L17	7	38	78	-3.417	-3.454	M	margin 0.35
+p1_L17	13	248	148	-3.398	-3.398	M	margin 0.35
+p1_L17	15	-	=d			M	gap: passes disagree on segmentation, needs image
+p1_L17	17	=fait	=faict	-3.065	-2.532	B	settled
+p1_L18	14	=baillent	=veulent	-2.691	-2.702	M	margin 0.35
+p1_L18	17	=ny	=ou	-2.774	-2.772	M	margin 0.35
+p1_L18	18	=que	=guerre	-2.894	-3.158	M	margin 0.35
+p1_L19	14	41	=vi	-3.543	-3.551	M	margin 0.35
+p1_L19	20	=sur	=de	-3.178	-3.118	M	margin 0.35
+p1_L20	1	=a	=au	-2.529	-2.650	M	margin 0.35
+p1_L20	18	=vaincre	=remectre	-3.164	-3.043	M	margin 0.35
+p1_L20	19	=Ce	=le	-3.265	-3.152	M	margin 0.35
+p1_L20	24	83	73	-3.373	-3.373	M	margin 0.35
+p1_L21	8	=august	=auguel	-3.226	-3.152	M	margin 0.35
+p1_L21	9	=mettre	=mectre	-3.165	-3.178	M	margin 0.35
+p1_L22	5	=grandes	=grandeur	-2.715	-2.806	M	margin 0.35
+p1_L23	2	=Il	=il			B	case-only, no content difference
+p1_L23	3	=beult	=veult	-3.100	-3.095	M	margin 0.35
+p1_L23	6	=pourboiz	=prouvez	-2.788	-2.758	M	margin 0.35
+p1_L23	7	=dirniers	=dermener	-2.782	-2.790	M	margin 0.35
+p1_L24	1	6	=c	-3.344	-3.344	M	margin 0.35
+p1_L24	4	35	55	-3.282	-3.268	M	margin 0.35
+p1_L24	9	=ainsy	=aussy	-2.903	-2.983	M	margin 0.35
+p1_L24	11	214	114	-3.213	-3.333	M	margin 0.35
+p1_L24	20	54	34	-3.360	-3.360	M	margin 0.35
+p1_L25	9	64	60	-3.503	-3.548	M	margin 0.35
+p1_L26	5	85	75	-3.135	-3.229	M	margin 0.35
+p1_L26	12	=Vous	-			M	gap: passes disagree on segmentation, needs image
+p1_L26	13	=pourez	=vous	-2.663	-2.382	M	margin 0.35
+p1_L26	14	=peust	=pouez	-2.730	-2.685	M	margin 0.35
+p1_L26	15	=estre	=penser	-2.999	-3.072	M	margin 0.35
+p1_L26	17	=ya	=y	-3.053	-2.996	M	margin 0.35
+p1_L27	19	-	=telle			M	gap: passes disagree on segmentation, needs image
+p1_L27	20	=tellafosa	=sorte	-2.609	-2.434	M	margin 0.35
+p1_L29	14	-	=voyant			M	gap: passes disagree on segmentation, needs image
+p1_L29	15	-	=que			M	gap: passes disagree on segmentation, needs image
+p1_L29	16	-	11			M	gap: passes disagree on segmentation, needs image
+p1_L29	17	-	51			M	gap: passes disagree on segmentation, needs image
+p1_L29	18	-	21			M	gap: passes disagree on segmentation, needs image
+p1_L29	19	74	140	-3.504	-3.548	M	margin 0.35
+p1_L29	20	10	5	-3.348	-3.366	M	margin 0.35
+p1_L29	21	39	6	-3.352	-3.344	M	margin 0.35
+p1_L29	22	75	26	-3.348	-3.347	M	margin 0.35
+p1_L29	23	100	31	-3.403	-3.303	M	margin 0.35
+p1_L29	24	85	22	-3.408	-3.538	M	margin 0.35
+p1_L29	25	60	82	-3.408	-3.329	M	margin 0.35
+p1_L29	26	150	127	-3.347	-3.347	M	margin 0.35
+p1_L29	27	52	108	-3.353	-3.339	M	margin 0.35
+p1_L29	28	40	4	-3.344	-3.344	M	margin 0.35
+p1_L30	7	127	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	8	=Voyans	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	9	=que	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	10	12	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	11	51	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	12	21	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	13	140	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	14	5	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	15	6	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	16	26	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	17	31	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	18	22	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	19	82	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	21	101	-			M	gap: passes disagree on segmentation, needs image
+p1_L30	22	4	-			M	gap: passes disagree on segmentation, needs image
+p1_L31	4	32	34	-3.453	-3.453	M	margin 0.35
+p1_L31	12	-	=qu			M	gap: passes disagree on segmentation, needs image
+p1_L31	13	=quesque	=egu	-2.974	-3.164	M	margin 0.35
+p1_L31	19	85	88	-3.383	-3.542	M	margin 0.35
+p1_L32	1	15	18	-3.339	-3.339	M	margin 0.35
+p1_L33	7	=aussi	=devez	-3.278	-3.464	M	margin 0.35
+p1_L33	19	71	75	-3.339	-3.339	M	margin 0.35
+p1_L34	4	53	55	-3.360	-3.360	M	margin 0.35
+p1_L34	8	=by	=aussy	-3.042	-3.040	M	margin 0.35
+p1_L34	9	=sy	=si	-2.938	-2.897	M	margin 0.35
+p1_L34	11	=bien	-			M	gap: passes disagree on segmentation, needs image
+p1_L34	12	=assouvir	=scavoir	-3.143	-2.976	M	margin 0.35
+p1_L34	13	=scauoir	=dheure	-3.157	-3.131	M	margin 0.35
+p1_L34	15	=autre	=aultre	-3.214	-3.072	M	margin 0.35
+p1_L35	6	31	71	-3.388	-3.366	M	margin 0.35
+p1_L35	8	=dou	=dnt	-3.380	-3.429	M	margin 0.35
+p1_L36	14	=qu	=quil	-3.250	-3.290	M	margin 0.35
+p1_L36	19	3	5	-3.405	-3.405	M	margin 0.35
+p1_L36	22	-	=dira			M	gap: passes disagree on segmentation, needs image
+p1_L37	2	=L	=le	-2.960	-3.148	M	margin 0.35
+p1_L37	3	=mtra	=mesme	-2.946	-2.820	M	margin 0.35
+p1_L38	4	63	65	-3.337	-3.337	M	margin 0.35
+p1_L38	9	135	125	-3.434	-3.434	M	margin 0.35
+p1_L38	12	=some	=souuenance	-3.257	-3.137	M	margin 0.35
+p1_L38	13	=ce	=de	-3.292	-3.126	M	margin 0.35
+p1_L38	14	=ptra	=prin	-3.272	-3.118	M	margin 0.35
+p1_L40	19	-	=cela			M	gap: passes disagree on segmentation, needs image
+p2_L02	12	84	74	-3.212	-3.272	M	margin 0.35
+p2_L02	19	55	65	-3.371	-3.271	M	margin 0.35
+p2_L03	2	38	36	-3.362	-3.362	M	margin 0.35
+p2_L03	5	111	211	-3.321	-3.485	M	margin 0.35
+p2_L03	21	=est	=et	-3.243	-3.393	M	margin 0.35
+p2_L04	17	=Et	=et			B	case-only, no content difference
+p2_L04	18	=fout	=font	-3.227	-3.312	M	margin 0.35
+p2_L05	2	145	141	-3.344	-3.344	M	margin 0.35
+p2_L05	16	35	39	-3.347	-3.337	M	margin 0.35
+p2_L05	20	113	118	-3.264	-3.359	M	margin 0.35
+p2_L07	15	=satisfaction	-			M	gap: passes disagree on segmentation, needs image
+p2_L07	19	80	85	-3.315	-3.082	M	margin 0.35
+p2_L08	4	81	91	-3.178	-3.352	M	margin 0.35
+p2_L08	8	=ait	=et	-3.153	-3.058	M	margin 0.35
+p2_L08	9	=quig	=guig	-3.086	-3.141	M	margin 0.35
+p2_L08	20	331	333	-3.431	-3.431	M	margin 0.35
+p2_L09	10	148	146	-2.953	-2.953	M	margin 0.35
+p2_L09	11	232	132	-2.922	-2.922	M	margin 0.35
+p2_L09	13	=que	-			M	gap: passes disagree on segmentation, needs image
+p2_L09	14	=ils	=quils	-3.114	-3.085	M	margin 0.35
+p2_L09	15	=ayent	=ayant	-3.233	-3.160	M	margin 0.35
+p2_L09	20	5	6	-3.277	-3.411	M	margin 0.35
+p2_L11	1	=Et	-			M	gap: passes disagree on segmentation, needs image
+p2_L11	2	=quant	=y aurait	-2.902	-3.160	M	margin 0.35
+p2_L11	4	=ceux	-			M	gap: passes disagree on segmentation, needs image
+p2_L11	14	82	62	-3.407	-3.323	M	margin 0.35
+p2_L12	12	82	81	-3.356	-3.356	M	margin 0.35
+p2_L12	14	=vge	=tge	-3.413	-3.314	M	margin 0.35
+p2_L13	1	65	5	-3.254	-3.380	M	margin 0.35
+p2_L13	2	26	42	-3.327	-3.415	M	margin 0.35
+p2_L13	3	30	82	-3.433	-3.333	M	margin 0.35
+p2_L13	4	81	114	-3.481	-3.590	M	margin 0.35
+p2_L13	5	36	18	-3.597	-3.560	M	margin 0.35
+p2_L13	6	21	39	-3.492	-3.391	M	margin 0.35
+p2_L13	7	81	85	-3.483	-3.483	M	margin 0.35
+p2_L13	8	1	127	-3.276	-3.370	M	margin 0.35
+p2_L13	9	71	89	-3.260	-3.228	M	margin 0.35
+p2_L13	10	84	10	-3.246	-3.246	M	margin 0.35
+p2_L13	11	150	5	-3.344	-3.446	M	margin 0.35
+p2_L13	12	127	79	-3.366	-3.436	M	margin 0.35
+p2_L13	13	148	84	-3.237	-3.085	M	margin 0.35
+p2_L13	14	=Il	120	-3.186	-3.206	M	margin 0.35
+p2_L13	15	=y	83	-3.151	-3.171	M	margin 0.35
+p2_L13	16	=auroit	3	-3.195	-3.294	M	margin 0.35
+p2_L13	17	19	35	-3.331	-3.312	M	margin 0.35
+p2_L13	18	40	140	-3.304	-3.298	M	margin 0.35
+p2_L13	19	73	125	-3.339	-3.344	M	margin 0.35
+p2_L14	1	9	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	2	42	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	3	82	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	4	114	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	5	18	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	6	39	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	7	85	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	8	127	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	9	89	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	10	10	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	11	5	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	12	79	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	13	84	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	14	120	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	15	83	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	16	3	-			M	gap: passes disagree on segmentation, needs image
+p2_L14	17	35	311	-3.104	-3.344	M	margin 0.35
+p2_L14	18	140	=cela	-3.434	-3.150	M	margin 0.35
+p2_L14	19	125	=a	-3.405	-3.257	M	margin 0.35
+p2_L14	20	=mayo	=moy	-3.253	-3.130	M	margin 0.35
+p2_L14	21	=de	=admin	-3.253	-3.300	M	margin 0.35
+p2_L15	1	311	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	2	=octa	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	3	=a	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	4	=moy	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	5	=advis	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	6	26	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	7	82	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	8	114	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	9	18	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	10	39	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	11	85	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	12	111	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	13	85	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	14	119	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	15	81	-			M	gap: passes disagree on segmentation, needs image
+p2_L15	17	-	74			M	gap: passes disagree on segmentation, needs image
+p2_L15	18	35	150	-3.191	-3.118	M	margin 0.35
+p2_L15	19	114	63	-3.217	-3.027	M	margin 0.35
+p2_L15	20	82	7	-3.164	-3.580	A	settled
+p2_L16	5	71	77	-3.402	-3.415	M	margin 0.35
+p2_L16	7	28	-			M	gap: passes disagree on segmentation, needs image
+p2_L16	8	71	-			M	gap: passes disagree on segmentation, needs image
+p2_L16	9	14	-			M	gap: passes disagree on segmentation, needs image
+p2_L16	10	64	-			M	gap: passes disagree on segmentation, needs image
+p2_L16	12	71	-			M	gap: passes disagree on segmentation, needs image
+p2_L16	13	100	-			M	gap: passes disagree on segmentation, needs image
+p2_L16	14	65	-			M	gap: passes disagree on segmentation, needs image
+p2_L16	15	5	-			M	gap: passes disagree on segmentation, needs image
+p2_L16	16	95	-			M	gap: passes disagree on segmentation, needs image
+p2_L17	1	62	=45	-3.367	-3.344	M	margin 0.35
+p2_L17	2	72	64	-3.385	-3.352	M	margin 0.35
+p2_L17	3	17	50	-3.373	-3.351	M	margin 0.35
+p2_L17	4	37	90	-3.413	-3.454	M	margin 0.35
+p2_L17	7	-	65			M	gap: passes disagree on segmentation, needs image
+p2_L17	8	-	122			M	gap: passes disagree on segmentation, needs image
+p2_L17	9	-	14			M	gap: passes disagree on segmentation, needs image
+p2_L17	10	-	64			M	gap: passes disagree on segmentation, needs image
+p2_L17	11	-	104			M	gap: passes disagree on segmentation, needs image
+p2_L17	12	-	4			M	gap: passes disagree on segmentation, needs image
+p2_L17	13	-	125			M	gap: passes disagree on segmentation, needs image
+p2_L17	14	-	135			M	gap: passes disagree on segmentation, needs image
+p2_L17	19	=Et	=et			B	case-only, no content difference
+p2_L17	21	=un	-			M	gap: passes disagree on segmentation, needs image
+p2_L18	8	115	111	-2.786	-2.786	M	margin 0.35
+p2_L18	9	81	61	-2.712	-2.876	M	margin 0.35
+p2_L18	10	=Que	=Gue	-2.847	-3.299	A	settled
+p2_L19	4	=Il	=Ji	-3.391	-3.480	M	margin 0.35
+p2_L19	6	37	57	-3.307	-3.307	M	margin 0.35
+p2_L19	7	85	126	-3.185	-3.395	M	margin 0.35
+p2_L19	8	63	65	-3.143	-3.143	M	margin 0.35
+p2_L20	3	245	-			M	gap: passes disagree on segmentation, needs image
+p2_L20	4	200	-			M	gap: passes disagree on segmentation, needs image
+p2_L20	5	65	-			M	gap: passes disagree on segmentation, needs image
+p2_L20	6	142	-			M	gap: passes disagree on segmentation, needs image
+p2_L20	7	125	241	-3.318	-3.318	M	margin 0.35
+p2_L20	8	137	300	-3.368	-3.368	M	margin 0.35
+p2_L20	9	=Respire	=especes	-3.242	-3.054	M	margin 0.35
+p2_L20	10	60	=sont	-3.062	-2.993	M	margin 0.35
+p2_L20	11	=survient	=envoyer	-3.062	-3.256	M	margin 0.35
+p2_L20	12	=aussi	=avec	-2.908	-2.860	M	margin 0.35
+p2_L21	2	120	126	-3.200	-3.171	M	margin 0.35
+p2_L21	3	=sur	=entre	-3.029	-2.641	B	settled
+p2_L21	4	=le	=fr	-2.604	-2.892	M	margin 0.35
+p2_L21	21	103	107	-3.373	-3.373	M	margin 0.35
+p2_L22	2	36	35	-3.243	-3.159	M	margin 0.35
+p2_L22	3	7	3	-3.275	-3.304	M	margin 0.35
+p2_L22	7	-	=y			M	gap: passes disagree on segmentation, needs image
+p2_L22	8	-	=a			M	gap: passes disagree on segmentation, needs image
+p2_L22	15	38	35	-3.342	-3.347	M	margin 0.35
+p2_L23	1	=dont	=douz	-3.110	-3.198	M	margin 0.35
+p2_L23	2	=mescripuez	=inscripuz	-3.113	-3.162	M	margin 0.35
+p2_L23	4	=Aray	=aray			B	case-only, no content difference
+p2_L23	7	36	35	-3.366	-3.242	M	margin 0.35
+p2_L23	12	=Quant	-			M	gap: passes disagree on segmentation, needs image
+p2_L23	13	=a	-			M	gap: passes disagree on segmentation, needs image
+p2_L23	14	97	-			M	gap: passes disagree on segmentation, needs image
+p2_L23	15	82	-			M	gap: passes disagree on segmentation, needs image
+p2_L23	16	6	-			M	gap: passes disagree on segmentation, needs image
+p2_L23	17	21	-			M	gap: passes disagree on segmentation, needs image
+p2_L23	18	92	-			M	gap: passes disagree on segmentation, needs image
+p2_L23	19	82	-			M	gap: passes disagree on segmentation, needs image
+p2_L23	20	29	-			M	gap: passes disagree on segmentation, needs image
+p2_L23	21	150	-			M	gap: passes disagree on segmentation, needs image
+p2_L24	2	10	60	-3.342	-3.337	M	margin 0.35
+p2_L24	10	=a	-			M	gap: passes disagree on segmentation, needs image
+p2_L24	11	=xxroy	=secroy	-3.189	-3.111	M	margin 0.35
+p2_L24	12	=guc	=guils	-3.104	-3.081	M	margin 0.35
+p2_L24	17	34	74	-3.627	-3.627	M	margin 0.35
+p2_L25	1	38	=quanta	-3.353	-3.036	M	margin 0.35
+p2_L25	2	51	97	-3.334	-3.408	M	margin 0.35
+p2_L25	4	116	-			M	gap: passes disagree on segmentation, needs image
+p2_L25	5	15	-			M	gap: passes disagree on segmentation, needs image
+p2_L25	6	81	-			M	gap: passes disagree on segmentation, needs image
+p2_L25	7	27	-			M	gap: passes disagree on segmentation, needs image
+p2_L25	8	75	-			M	gap: passes disagree on segmentation, needs image
+p2_L25	9	98	-			M	gap: passes disagree on segmentation, needs image
+p2_L25	10	81	-			M	gap: passes disagree on segmentation, needs image
+p2_L25	11	124	-			M	gap: passes disagree on segmentation, needs image
+p2_L25	12	64	-			M	gap: passes disagree on segmentation, needs image
+p2_L25	13	104	-			M	gap: passes disagree on segmentation, needs image
+p2_L25	14	114	-			M	gap: passes disagree on segmentation, needs image
+p2_L25	15	111	6	-3.043	-3.543	A	settled
+p2_L25	16	83	21	-3.139	-3.539	A	settled
+p2_L25	17	36	92	-3.369	-3.384	M	margin 0.35
+p2_L25	18	24	82	-3.439	-3.408	M	margin 0.35
+p2_L25	19	30	29	-3.481	-3.481	M	margin 0.35
+p2_L25	20	280	150	-3.344	-3.344	M	margin 0.35
+p2_L26	1	=auoir	38	-3.246	-3.420	M	margin 0.35
+p2_L26	2	65	51	-3.261	-3.287	M	margin 0.35
+p2_L26	3	39	82	-3.250	-2.930	M	margin 0.35
+p2_L26	4	61	116	-3.215	-3.236	M	margin 0.35
+p2_L26	5	2	15	-3.241	-3.397	M	margin 0.35
+p2_L26	6	31	81	-3.407	-3.255	M	margin 0.35
+p2_L26	7	114	27	-3.499	-3.384	M	margin 0.35
+p2_L26	8	100	75	-3.482	-3.500	M	margin 0.35
+p2_L26	9	54	98	-3.348	-3.340	M	margin 0.35
+p2_L26	10	38	81	-3.399	-3.272	M	margin 0.35
+p2_L26	11	84	128	-3.408	-3.339	M	margin 0.35
+p2_L26	12	24	64	-3.439	-3.219	M	margin 0.35
+p2_L26	13	124	104	-3.160	-3.208	M	margin 0.35
+p2_L26	14	149	114	-2.839	-2.623	M	margin 0.35
+p2_L26	15	=Tres	111	-3.140	-3.376	M	margin 0.35
+p2_L26	16	60	83	-3.170	-3.088	M	margin 0.35
+p2_L26	17	=sinuoy	36	-3.193	-3.107	M	margin 0.35
+p2_L26	18	12	24	-3.380	-3.491	M	margin 0.35
+p2_L26	19	101	30	-3.350	-3.350	M	margin 0.35
+p2_L27	1	-	=avoir			M	gap: passes disagree on segmentation, needs image
+p2_L27	2	-	85			M	gap: passes disagree on segmentation, needs image
+p2_L27	3	-	39			M	gap: passes disagree on segmentation, needs image
+p2_L27	4	-	61			M	gap: passes disagree on segmentation, needs image
+p2_L27	5	-	8			M	gap: passes disagree on segmentation, needs image
+p2_L27	6	-	31			M	gap: passes disagree on segmentation, needs image
+p2_L27	7	-	114			M	gap: passes disagree on segmentation, needs image
+p2_L27	8	26	100	-3.322	-3.474	M	margin 0.35
+p2_L27	9	6	34	-3.182	-3.102	M	margin 0.35
+p2_L27	10	104	38	-3.142	-3.410	M	margin 0.35
+p2_L27	12	-	24			M	gap: passes disagree on segmentation, needs image
+p2_L27	13	14	124	-3.564	-3.516	M	margin 0.35
+p2_L27	14	64	149	-3.267	-3.267	M	margin 0.35
+p2_L27	15	30	=ce	-3.187	-3.100	M	margin 0.35
+p2_L27	16	=loqus	81	-3.225	-3.315	M	margin 0.35
+p2_L27	17	=treuve	21	-3.226	-3.397	M	margin 0.35
+p2_L27	18	=guil	21	-3.224	-3.342	M	margin 0.35
+p2_L27	19	1	32	-3.334	-3.466	M	margin 0.35
+p2_L27	20	84	150	-3.153	-3.269	M	margin 0.35
+p2_L28	1	83	26	-3.104	-2.965	M	margin 0.35
+p2_L28	2	3	6	-3.202	-3.361	M	margin 0.35
+p2_L28	3	33	104	-3.105	-3.024	M	margin 0.35
+p2_L28	5	-	14			M	gap: passes disagree on segmentation, needs image
+p2_L28	6	-	64			M	gap: passes disagree on segmentation, needs image
+p2_L28	7	-	30			M	gap: passes disagree on segmentation, needs image
+p2_L28	8	-	80			M	gap: passes disagree on segmentation, needs image
+p2_L28	9	-	22			M	gap: passes disagree on segmentation, needs image
+p2_L28	10	-	17			M	gap: passes disagree on segmentation, needs image
+p2_L28	11	147	37	-3.226	-3.347	M	margin 0.35
+p2_L28	12	85	83	-3.272	-3.272	M	margin 0.35
+p2_L28	13	5	63	-3.580	-3.335	M	margin 0.35
+p2_L28	14	111	39	-3.525	-3.328	M	margin 0.35
+p2_L28	15	46	148	-3.541	-3.250	M	margin 0.35
+p2_L28	16	12	=loqui	-3.399	-3.290	M	margin 0.35
+p2_L28	17	82	=suivant	-3.563	-3.375	M	margin 0.35
+p2_L28	18	22	=quil	-3.570	-3.368	M	margin 0.35
+p2_L28	19	102	1	-3.567	-3.595	M	margin 0.35
+p2_L28	20	117	84	-3.367	-3.089	M	margin 0.35
+p2_L29	1	=ma	-			M	gap: passes disagree on segmentation, needs image
+p2_L29	2	=tout	-			M	gap: passes disagree on segmentation, needs image
+p2_L29	3	=effroya	-			M	gap: passes disagree on segmentation, needs image
+p2_L29	4	=tousiours	-			M	gap: passes disagree on segmentation, needs image
+p2_L29	5	=semble	-			M	gap: passes disagree on segmentation, needs image
+p2_L29	6	=auoir	-			M	gap: passes disagree on segmentation, needs image
+p2_L29	7	65	-			M	gap: passes disagree on segmentation, needs image
+p2_L29	8	21	83	-3.386	-3.144	M	margin 0.35
+p2_L29	9	71	3	-3.500	-3.533	M	margin 0.35
+p2_L29	10	96	33	-3.201	-3.216	M	margin 0.35
+p2_L29	11	101	84	-2.931	-3.151	M	margin 0.35
+p2_L29	12	81	147	-3.048	-3.046	M	margin 0.35
+p2_L29	13	81	85	-3.216	-3.216	M	margin 0.35
+p2_L29	14	72	5	-3.483	-3.348	M	margin 0.35
+p2_L29	15	32	111	-3.365	-3.551	M	margin 0.35
+p2_L29	16	37	=faisant	-3.496	-3.113	B	settled
+p2_L29	17	23	=tousiours	-3.077	-3.035	M	margin 0.35
+p2_L29	18	84	=semblant	-3.201	-2.984	M	margin 0.35
+p2_L29	19	145	=avoir	-3.344	-2.673	B	settled
+p2_L30	1	65	-			M	gap: passes disagree on segmentation, needs image
+p2_L30	2	36	-			M	gap: passes disagree on segmentation, needs image
+p2_L30	3	130	-			M	gap: passes disagree on segmentation, needs image
+p2_L30	4	87	-			M	gap: passes disagree on segmentation, needs image
+p2_L30	5	64	-			M	gap: passes disagree on segmentation, needs image
+p2_L30	6	104	-			M	gap: passes disagree on segmentation, needs image
+p2_L30	7	74	63	-3.367	-3.412	M	margin 0.35
+p2_L30	8	34	76	-3.355	-3.359	M	margin 0.35
+p2_L30	9	33	101	-3.363	-3.374	M	margin 0.35
+p2_L30	10	71	112	-3.359	-3.551	M	margin 0.35
+p2_L30	11	56	51	-3.359	-3.366	M	margin 0.35
+p2_L30	12	74	140	-3.344	-3.337	M	margin 0.35
+p2_L30	13	8	121	-3.347	-3.346	M	margin 0.35
+p2_L30	14	4	26	-3.366	-3.371	M	margin 0.35
+p2_L30	15	140	72	-3.375	-3.314	M	margin 0.35
+p2_L30	16	104	62	-3.352	-3.405	M	margin 0.35
+p2_L30	18	92	-			M	gap: passes disagree on segmentation, needs image
+p2_L30	20	118	-			M	gap: passes disagree on segmentation, needs image
+p2_L30	21	83	-			M	gap: passes disagree on segmentation, needs image
+p2_L30	22	3	2	-3.151	-3.151	M	margin 0.35
+p2_L30	24	134	-			M	gap: passes disagree on segmentation, needs image
+p2_L31	1	-	142			M	gap: passes disagree on segmentation, needs image
+p2_L31	2	-	123			M	gap: passes disagree on segmentation, needs image
+p2_L31	3	63	84	-3.366	-3.341	M	margin 0.35
+p2_L31	5	-	77			M	gap: passes disagree on segmentation, needs image
+p2_L31	6	-	86			M	gap: passes disagree on segmentation, needs image
+p2_L31	7	104	27	-3.349	-3.359	M	margin 0.35
+p2_L31	8	9	24	-3.373	-3.548	M	margin 0.35
+p2_L31	9	5	74	-3.366	-3.347	M	margin 0.35
+p2_L31	10	29	26	-3.372	-3.372	M	margin 0.35
+p2_L31	11	129	6	-3.140	-3.125	M	margin 0.35
+p2_L31	12	137	111	-2.840	-2.837	M	margin 0.35
+p2_L31	13	=Estamens	36	-3.016	-3.126	M	margin 0.35
+p2_L31	14	=estans	82	-3.016	-3.147	M	margin 0.35
+p2_L31	15	=ce	27	-3.016	-2.929	M	margin 0.35
+p2_L32	1	142	-			M	gap: passes disagree on segmentation, needs image
+p2_L32	2	123	-			M	gap: passes disagree on segmentation, needs image
+p2_L32	3	84	-			M	gap: passes disagree on segmentation, needs image
+p2_L32	4	34	-			M	gap: passes disagree on segmentation, needs image
+p2_L32	5	77	-			M	gap: passes disagree on segmentation, needs image
+p2_L32	6	86	-			M	gap: passes disagree on segmentation, needs image
+p2_L32	7	27	-			M	gap: passes disagree on segmentation, needs image
+p2_L32	8	31	-			M	gap: passes disagree on segmentation, needs image
+p2_L32	9	111	21	-3.607	-3.678	M	margin 0.35
+p2_L32	10	24	30	-3.596	-3.315	M	margin 0.35
+p2_L32	11	74	101	-3.519	-3.534	M	margin 0.35
+p2_L32	12	26	5	-3.373	-3.366	M	margin 0.35
+p2_L32	13	6	82	-3.555	-3.496	M	margin 0.35
+p2_L32	14	111	81	-3.544	-3.437	M	margin 0.35
+p2_L32	15	36	29	-3.581	-3.388	M	margin 0.35
+p2_L32	16	82	148	-3.408	-3.339	M	margin 0.35
+p2_L32	17	27	137	-3.439	-3.344	M	margin 0.35
+p2_L33	1	88	-			M	gap: passes disagree on segmentation, needs image
+p2_L33	2	71	-			M	gap: passes disagree on segmentation, needs image
+p2_L33	3	21	-			M	gap: passes disagree on segmentation, needs image
+p2_L33	4	29	-			M	gap: passes disagree on segmentation, needs image
+p2_L33	5	148	-			M	gap: passes disagree on segmentation, needs image
+p2_L33	6	187	-			M	gap: passes disagree on segmentation, needs image
+p2_L33	9	=que	=quil	-2.558	-2.760	M	margin 0.35
+p2_L33	11	=trouvez	=trouverez	-2.361	-2.531	M	margin 0.35
+p2_L36	1	-	=bien			OVERRIDE	image: crop images/04611_p2_L36.jpg is the archive footer/URL stamp (A 11/XIV D/13a, resources.huygens.knaw.nl/.../brief/4611), not manuscript text; A correctly saw nothing, B's 19 numerals + word are fabricated (R20, 24 Sept 2026)
+p2_L36	2	-	78			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	3	-	81			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	4	-	28			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	5	-	100			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	6	-	9			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	7	-	118			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	8	-	120			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	9	-	82			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	10	-	29			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	11	-	138			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	12	-	127			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	13	-	12			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	14	-	51			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	15	-	21			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	16	-	77			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	17	-	84			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	18	-	111			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	19	-	54			OVERRIDE	image: archive footer stamp, not manuscript text (R20)
+p2_L36	20	[blank]	124			OVERRIDE	image: archive footer stamp, not manuscript text; both passes already agreed here (R20)
+p3_L01	2	=pourrons	=pouvons	-2.838	-2.991	M	margin 0.35
+p3_L01	3	75	78	-2.892	-2.833	M	margin 0.35
+p3_L01	19	70	40	-3.496	-3.492	M	margin 0.35
+p3_L02	2	=meltray	=mettray	-3.243	-3.226	M	margin 0.35
+p3_L02	3	=point	=peine	-3.251	-3.100	M	margin 0.35
+p3_L02	4	=diy	=dy	-3.328	-3.319	M	margin 0.35
+p3_L02	9	36	38	-3.336	-3.336	M	margin 0.35
+p3_L02	17	84	34	-3.555	-3.511	M	margin 0.35
+p3_L03	2	=les	=la	-3.147	-3.068	M	margin 0.35
+p3_L03	4	=sinuoye	=envoyer	-3.290	-3.240	M	margin 0.35
+p3_L03	6	=mo	=ne	-3.313	-3.238	M	margin 0.35
+p3_L03	8	-	=scay			M	gap: passes disagree on segmentation, needs image
+p3_L03	9	=seray	=si	-3.108	-3.086	M	margin 0.35
+p3_L03	10	=offrir	=serai	-3.109	-3.099	M	margin 0.35
+p3_L03	11	=plus	=trop	-3.150	-3.266	M	margin 0.35
+p3_L03	12	=congnu	=long	-3.070	-2.876	M	margin 0.35
+p3_L03	13	=ne	=mais	-3.012	-2.958	M	margin 0.35
+p3_L03	14	=resistans	=respondrai	-3.070	-3.121	M	margin 0.35
+p3_L04	1	=fut	-			M	gap: passes disagree on segmentation, needs image
+p3_L04	2	=scauoir	=fu	-2.887	-2.964	M	margin 0.35
+p3_L04	3	=vostre	=scavoir	-2.829	-2.890	M	margin 0.35
+p3_L04	4	=affaire	=tousiours	-2.626	-2.757	M	margin 0.35
+p3_L04	7	115	15	-2.695	-2.640	M	margin 0.35
+p3_L04	10	81	85	-3.203	-3.203	M	margin 0.35
+p3_L04	14	225	125	-3.344	-3.344	M	margin 0.35
+p3_L05	1	=de	-			M	gap: passes disagree on segmentation, needs image
+p3_L05	3	=vous	=mettray	-2.636	-3.087	A	settled
+p3_L05	4	=prieray	=poine	-2.478	-2.391	M	margin 0.35
+p3_L05	7	=tost	=tot	-2.862	-3.010	M	margin 0.35
+p3_L05	8	=pourvoyez	=promptement	-2.851	-2.779	M	margin 0.35
+p3_L05	9	=De	=de			B	case-only, no content difference
+p3_L05	11	=supplieray	-			M	gap: passes disagree on segmentation, needs image
+p3_L05	12	=fructueuse	-			M	gap: passes disagree on segmentation, needs image
+p3_L05	13	=plu	=supplerai	-2.858	-2.906	M	margin 0.35
+p3_L05	14	=ce	=fraischement	-2.846	-2.893	M	margin 0.35
+p3_L05	15	=fait	=pour	-2.386	-2.303	M	margin 0.35
+p3_L05	16	=de	=ceste	-2.233	-2.641	A	settled
+p3_L05	17	=nous	=foys	-2.350	-2.883	A	settled
+p3_L06	1	=porter	=porteur	-2.618	-2.688	M	margin 0.35
+p3_L06	3	=recommandez	=recommandé	-2.738	-2.786	M	margin 0.35
+p3_L06	5	=fut	-			M	gap: passes disagree on segmentation, needs image
+p3_L06	6	=sil	-			M	gap: passes disagree on segmentation, needs image
+p3_L06	8	=plaisir	-			M	gap: passes disagree on segmentation, needs image
+p3_L06	9	=quis	=supplira	-2.936	-2.857	M	margin 0.35
+p3_L06	10	=considerans	=vray	-2.863	-2.862	M	margin 0.35
+p3_L06	11	=du	=pouoir	-2.885	-2.852	M	margin 0.35
+p3_L06	12	=bien	=de	-2.892	-2.881	M	margin 0.35
+p3_L06	13	=et	=sa	-2.692	-2.644	M	margin 0.35
+p3_L06	14	=fidelle	=fidele	-2.687	-2.757	M	margin 0.35
+p3_L07	2	60	=bon	-2.575	-2.623	M	margin 0.35
+p3_L07	5	=desir	=désir	-2.841	-2.936	M	margin 0.35
+p3_L07	6	=couvrir	=continue	-3.042	-3.039	M	margin 0.35
+p3_L07	7	=toutessabiez	=toursabin	-3.148	-3.187	M	margin 0.35
+p3_L07	11	=pris	=prise	-3.058	-3.135	M	margin 0.35
+p3_L07	12	=subvenir	=subiectz	-3.061	-3.143	M	margin 0.35
+p3_L08	1	-	=Et			M	gap: passes disagree on segmentation, needs image
+p3_L08	2	=De	=sur	-2.885	-2.996	M	margin 0.35
+p3_L08	3	=suivre	=ce	-2.797	-2.579	M	margin 0.35
+p3_L08	4	=mes	=recommendera	-2.846	-2.832	M	margin 0.35
+p3_L08	5	=recommandez	=Trebom	-2.770	-2.887	M	margin 0.35
+p3_L08	6	=tresbumblement	=chimieux	-2.735	-3.022	M	margin 0.35
+p3_L08	9	-	=bon			M	gap: passes disagree on segmentation, needs image
+p3_L08	10	=bonnes	=mis	-2.937	-2.886	M	margin 0.35
+p3_L08	11	=graces	=grand	-2.833	-2.786	M	margin 0.35
+p3_L08	12	=suppliant	=supplian	-2.722	-2.813	M	margin 0.35
+p3_L08	14	=createur	=Créateur	-2.636	-2.754	M	margin 0.35
+p3_L09	3	=donne	=doint	-3.040	-3.331	M	margin 0.35
+p3_L11	2	=en	-			M	gap: passes disagree on segmentation, needs image
+p3_L11	3	=peu	=mon	-2.653	-2.639	M	margin 0.35
+p3_L11	4	=de	=plus	-2.856	-2.958	M	margin 0.35
+p3_L11	5	=faintz	=faicte	-2.713	-2.510	M	margin 0.35
+p3_L11	6	=sante	=saluer	-2.798	-2.975	M	margin 0.35
+p3_L11	8	=humblez	-			M	gap: passes disagree on segmentation, needs image
+p3_L11	9	=et	=Ghuallier	-2.802	-3.060	M	margin 0.35
+p3_L11	10	=longue	=congnou	-2.910	-3.050	M	margin 0.35
+p3_L11	11	=vie	=sire	-2.984	-2.848	M	margin 0.35
+p3_L12	1		=n	-2.713	-2.781	M	margin 0.35
+p3_L12	2	=Jour	=jour			B	case-only, no content difference

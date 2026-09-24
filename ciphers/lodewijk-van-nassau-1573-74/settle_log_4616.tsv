@@ -1,0 +1,54 @@
+line	col	A	B	score_A	score_B	decision	note
+p1_L04	1	=Monsr	-			M	gap: passes disagree on segmentation, needs image
+p1_L04	2	=frere	=Monsigneur	-2.623	-2.485	M	margin 0.35
+p1_L04	5	=este	=ceste	-2.858	-3.003	M	margin 0.35
+p1_L04	6	=fort	=heure	-2.884	-2.860	M	margin 0.35
+p1_L04	7	=iii	iii	-2.785	-2.638	M	margin 0.35
+p1_L04	8	=avons	=anitte	-2.662	-3.020	A	settled
+p1_L04	11	=Goch	=goese	-2.911	-2.844	M	margin 0.35
+p1_L05	17	1	-			M	gap: passes disagree on segmentation, needs image
+p1_L05	22	81	91	-3.046	-3.352	M	margin 0.35
+p1_L05	23	23	21	-3.188	-3.188	M	margin 0.35
+p1_L06	16	9	4	-3.337	-3.375	M	margin 0.35
+p1_L06	18	40	90	-3.337	-3.485	M	margin 0.35
+p1_L07	4	72/16	32/16	-3.352	-3.352	M	margin 0.35
+p1_L07	14	82	89	-3.256	-3.293	M	margin 0.35
+p1_L07	20	3	31	-3.372	-3.152	M	margin 0.35
+p1_L09	3	735/71	335/71	-2.991	-2.991	M	margin 0.35
+p1_L09	14	25/81	25/51	-3.395	-3.395	M	margin 0.35
+p1_L10	13	=iii	iii	-3.351	-3.456	M	margin 0.35
+p1_L11	20	1	-			M	gap: passes disagree on segmentation, needs image
+p1_L12	5	118	115	-3.284	-3.061	M	margin 0.35
+p1_L12	7	123	120	-3.365	-3.359	M	margin 0.35
+p1_L12	20	13	132	-3.344	-3.367	M	margin 0.35
+p1_L13	20	34	3	-3.634	-3.634	M	margin 0.35
+p1_L14	1	75	78	-3.339	-3.339	M	margin 0.35
+p1_L14	17	5	6	-3.395	-3.362	M	margin 0.35
+p1_L15	11	9	4	-3.366	-3.395	M	margin 0.35
+p1_L15	20	8	81	-3.347	-3.428	M	margin 0.35
+p1_L16	8	=Verrons	=Verons	-2.570	-2.454	M	margin 0.35
+p1_L16	11	118	116	-3.481	-3.481	M	margin 0.35
+p1_L16	15	111	144	-3.629	-3.392	M	margin 0.35
+p1_L16	18	81	89	-3.219	-3.678	A	settled
+p1_L16	19	114	144	-3.219	-3.344	M	margin 0.35
+p1_L17	1	25	-			M	gap: passes disagree on segmentation, needs image
+p1_L17	3	21	31	-3.346	-3.130	M	margin 0.35
+p1_L17	11	102	101	-3.299	-3.299	M	margin 0.35
+p1_L17	15	121	124	-3.344	-3.344	M	margin 0.35
+p1_L18	1	=attendant	=faict	-2.472	-2.119	B	settled
+p1_L18	2	=de	=Je	-2.408	-2.479	M	margin 0.35
+p1_L18	4	=souhaicte	=supplie	-2.318	-1.938	B	settled
+p1_L19	1	=coppendant	-			M	gap: passes disagree on segmentation, needs image
+p1_L19	3	=que	=qui	-2.698	-2.869	M	margin 0.35
+p1_L19	8	=feray	=ferons	-2.562	-2.526	M	margin 0.35
+p1_L19	14	=vous	=Vous			A	case-only, no content difference
+p1_L20	1	=Vostre	-			M	gap: passes disagree on segmentation, needs image
+p1_L20	2	=bon	=La	-3.021	-2.693	M	margin 0.35
+p1_L20	3	=frere	=Saincte	-2.825	-2.927	M	margin 0.35
+p1_L20	5	=serviteur	=heureuse	-2.754	-2.830	M	margin 0.35
+p1_L20	7	-	=Longue			M	gap: passes disagree on segmentation, needs image
+p1_L20	8	=Loyaulx	=vie	-2.910	-2.796	M	margin 0.35
+p1_L20	9	=en	=et	-2.835	-2.863	M	margin 0.35
+p1_L20	10	=fait	=faict	-2.749	-2.563	M	margin 0.35
+p1_L20	14	=Weess	=Wees	-2.912	-2.871	M	margin 0.35
+p1_L21	4	=lan	=l'an	-3.013	-2.865	M	margin 0.35

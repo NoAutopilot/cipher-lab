@@ -158,8 +158,8 @@ p1_L09	20	26	s	M
 p1_L09	21	72	c	M
 p1_L09	22	60	z	I
 p1_L09	23	59	z	I
-p1_L09	24	40	u	M
-p1_L09	25	25	r	M
+p1_L09	24	87	f	C
+p1_L09	25	25	r	C
 p1_L10	1	13	p	M
 p1_L10	2	2	n	M
 p1_L10	3	84	e	M
@@ -186,14 +186,14 @@ p1_L10	23	26	s	M
 p1_L10	24	72	c	M
 p1_L10	25	4	n	M
 p1_L10	26	34	t	M
-p1_L10	27	81	e	M
-p1_L10	28	88	f	M
+p1_L10	27	81	e	C
+p1_L10	28	88	f	C
 p1_L11	1	4	n	M
 p1_L11	2	13	p	M
 p1_L11	3	2	n	M
 p1_L11	4	68	b	I
 p1_L11	5	82	e	M
-p1_L11	6	22	r	M
+p1_L11	6	85	e	C
 p1_L11	7	61	a	M
 p1_L11	8	39	u	M
 p1_L11	9	67	b	I
@@ -217,7 +217,6 @@ p1_L12	1	54	y	I
 p1_L12	2	46	x	I
 p1_L12	3	27	s	M
 p1_L12	4	9	o	M
-p1_L12	5	4	n	M
 p1_L12	6	83	e	M
 p1_L12	7	16	q	M
 p1_L12	8	101	i	M
@@ -277,7 +276,7 @@ p1_L14	22	31	t	M
 p1_L14	23	33	t	M
 p1_L14	24	142	?	U
 p1_L14	25	121	NULL	M
-p1_L14	26	135	?	U
+p1_L14	26	7	o	C
 p1_L15	1	62	a	M
 p1_L15	2	54	y	I
 p1_L15	3	4	n	M
@@ -286,7 +285,7 @@ p1_L15	5	48	x	I
 p1_L15	6	26	s	M
 p1_L15	7	57	z	M
 p1_L15	8	101	i	M
-p1_L15	9	52	y	I
+p1_L15	9	81	e	C
 p1_L15	10	12	p	M
 p1_L15	11	54	y	I
 p1_L15	12	40	u	M
@@ -328,13 +327,10 @@ p1_L16	21	81	e	M
 p1_L16	22	120	m	M
 p1_L16	23	56	z	M
 p1_L16	24	61	a	M
-p1_L16	25	60	z	I
 p1_L16	26	12	p	M
 p1_L16	27	26	s	M
-p1_L16	28	74	c	M
 p1_L16	29	26	s	M
 p1_L16	30	27	s	M
-p1_L16	31	77	d	M
 p1_L16	32	62	a	M
 p1_L16	33	37	u	M
 p1_L16	34	46	x	I
@@ -344,6 +340,7 @@ p1_L17	4	37	u	M
 p1_L17	5	49	x	I
 p1_L17	6	4	n	M
 p1_L17	7	33	t	M
+p1_L18	8	101	i	C
 p1_L18	9	81	e	M
 p1_L18	10	2	n	C
 p1_L18	11	12	p	M
@@ -351,10 +348,8 @@ p1_L18	12	26	s	M
 p1_L18	13	105	i	M
 p1_L18	14	67	b	I
 p1_L18	15	150	?	U
-p1_L18	17	56	z	M
 p1_L18	18	51	y	I
 p1_L18	19	62	a	M
-p1_L18	20	3	n	M
 p1_L18	21	37	u	M
 p1_L19	1	49	x	I
 p1_L19	2	2	n	M
@@ -362,7 +357,7 @@ p1_L19	3	91	g	M
 p1_L19	4	4	n	M
 p1_L19	5	4	n	M
 p1_L19	6	49	x	I
-p1_L19	7	101	i	M
+p1_L19	7	101	i	C
 p1_L19	8	82	e	M
 p1_L19	9	2	n	M
 p1_L19	10	12	p	C
@@ -374,8 +369,6 @@ p1_L20	1	9	o	M
 p1_L20	4	61	a	M
 p1_L20	5	36	u	M
 p1_L20	6	47	x	I
-p1_L20	7	59	z	I
-p1_L20	8	22	r	M
 p1_L20	9	77	d	M
 p1_L20	10	26	s	M
 p1_L20	11	12	p	M
@@ -417,7 +410,7 @@ p1_L22	10	4	n	M
 p1_L22	11	16	q	M
 p1_L22	12	48	x	I
 p1_L22	13	112	l	M
-p1_L22	14	339	harquebouziers	M
+p1_L22	14	339	harquebouziers	C
 p1_L22	15	81	e	M
 p1_L22	16	33	t	M
 p1_L22	17	12	p	M
@@ -613,7 +606,7 @@ p1_L30	21	26	s	M
 p1_L31	1	42	v	I
 p1_L31	2	26	s	C
 p1_L31	3	34	t	C
-p1_L31	4	38	u	M
+p1_L31	4	88	f	C
 p1_L31	5	22	r	C
 p1_L31	6	29	s	C
 p1_L31	7	81	e	C
@@ -648,7 +641,7 @@ p1_L32	11	27	s	C
 p1_L32	12	22	r	C
 p1_L32	13	42	v	I
 p1_L32	14	27	s	C
-p1_L32	15	24	r	M
+p1_L32	15	24	r	C
 p1_L32	16	115	l	C
 p1_L32	17	11	p	C
 p1_L32	18	31	t	C
@@ -799,7 +792,7 @@ p2_L09	4	54	y	I
 p2_L09	5	38	u	C
 p2_L09	6	27	s	C
 p2_L09	7	59	z	I
-p2_L09	8	33	t	M
+p2_L09	8	88	f	C
 p2_L09	9	22	r	C
 p2_L09	10	84	e	C
 p2_L09	11	102	i	C
