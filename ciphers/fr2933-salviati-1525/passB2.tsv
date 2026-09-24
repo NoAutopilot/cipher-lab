@@ -354,3 +354,52 @@ line	pos	code	marks	action	conf	note
 13	24	_		plain	H	legible word-like fragment "amt"
 13	25	p		confirm	M	loop shape, resembles start of word "par"
 13	26	_		plain	H	legible word-like fragment "ars"
+14	1	_		plain	L	tiny faint mark, share was already low (0.61)
+14	2	H	o|1	confirm	H	clean H-shape with numeral mark above
+14	3	]	ot	confirm	M	bracket shape with ot mark
+14	4	nt		confirm	H	crossed n shape
+14	5	rz		confirm	M	hook shape
+14	6	g	~	confirm	M	small loop, tilde mark
+14	7	g	~	confirm	M	small loop, tilde mark
+14	8	psi		confirm	H	y-hook shape
+14	9	Lx		confirm	M	double-peak shape, share was 0.63
+14	10	_		confirm	M	bracket-like shape but classifier confident (0.82) plain; resembles a ] sign
+14	11	lam	1	confirm	M	small A-shape, numeral 1 mark above
+14	12	]	o	confirm	H	bracket shape with circle mark
+14	13	m		confirm	H	clean m-hump shape
+14	14	nt		confirm	M	crossed n shape, share was 0.82
+14	15	rz		confirm	M	hook shape, merged visually with neighbours
+14	16	nt		confirm	M	crossed n shape
+14	17	phi		confirm	M	circle-with-tail shape, share was 0.82
+14	18	S7	#	confirm	M	small numeral-ish shape with # mark above
+14	19	_		plain	M	tall hook shape, part of a three-box cluster
+14	20	y		confirm	M	y hook, part of cluster with pos19/21
+14	21	y		confirm	M	y hook, adjacent to pos20
+14	22	lam		confirm	M	small A-shape
+14	23	S4		confirm	H	tall cross shape
+14	24	m		confirm	M	m hump, part of word-like cluster with pos25
+14	25	a		confirm	M	tiny a-shape squeezed next to pos24
+14	26	#		confirm	M	hash-ish shape
+14	27	_	dot	plain	M	word-like fragment, dot mark uncertain; share was low (0.64)
+15	1	_		plain	H	legible plain word (reads roughly "sfando"/"stando")
+15	2	_		plain	M	small trailing loop after word, likely final vowel
+15	3	_		plain	H	legible plain word "ancora"
+15	4	_		correct	M	small trailing loop after "ancora", visually matches pos2's pattern (final vowel), not coded N
+15	5	_		plain	M	thin vertical stroke, letter unclear
+15	6	_		plain	H	legible word-like shape ("Cosa")
+15	7	_		plain	M	small hook overlapping pos6's tail
+15	8	S4		confirm	M	tall stroke with cross
+15	9	e	dot|+	confirm	M	loop shape with dot and cross marks
+15	10	a	5	confirm	M	tiny a-shape, numeral 5 mark
+15	11	e	#	confirm	M	loop shape at edge of crop, # mark
+15	12	S7	dot|+	confirm	M	thin numeral-7 shape, dot and cross marks
+15	13	dl		confirm	M	small hook/loop shape
+15	14	_		plain	H	legible plain word ("Come"/"Conte")
+15	15	_		plain	M	tiny mark at corner of pos14's word
+15	16	_		plain	M	word-like shape, exact letters unclear
+15	17	_		plain	M	thin stroke, share was 0.83
+15	18	p		confirm	M	loop/flourish shape, part of word-like cluster
+15	19	_		plain	M	continues shape from pos18
+15	20	_		plain	M	small tail shape, share was 0.81
+15	21	v		confirm	M	hook-with-dot shape, share was low (0.58)
+15	22	S		confirm	H	clean small S-shape
