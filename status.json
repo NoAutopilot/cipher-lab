@@ -1148,7 +1148,7 @@
    "date": "24 Sept 2026",
    "kind": "reading",
    "title": "Gramont 1530, fr.2980 f.30r-v: published key applied, 11 more signs at grade S with a matched control",
-   "grade": "H 1502 / S 158 / M 254 / U 59 of 1973",
+   "grade": "N3, single audit; H 1502 / S 158 / M 254 / U 59 of 1973",
    "line": "Continuous French on 32 of 55 lines; verifier (LANE V) running, no novelty class yet.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont"
   },

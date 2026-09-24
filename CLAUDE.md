@@ -276,6 +276,11 @@ Getting the material is most of the work. Try routes in this order and record wh
    so the first worker to use it should expect to debug that path and should record what it finds here. The
    response body carries live session cookies: write it to a file, read what you need, delete the file, and
    never print it.
+   **Borrow findings, 23-24 Sept 2026:** a held CDL loan serves page images obfuscated for the archive.org reader,
+   which `tools/ia_borrow.py` correctly refuses to decode (ASKS row 18), so a loan gives a person a readable page, not a
+   worker. Items in the print-disabled tier (`is_lendable: false`, `max_borrowable_copies: 0` on the no-login
+   availability check) cannot be borrowed by this account at all (ASKS row 26, Daussy 2001). Check availability and
+   be-api fts first; a page read in a lending-only book goes to the person as an ASKS row.
    Without login: `be-api.us.archive.org/fts/v1/search?q=<term>&identifier=<id>` full-text-searches even
    lending-only items and returns snippet highlights, but its `page_num` field is not a real page locator --
    it equals the item's total `imagecount` (confirmed on two different items) -- so this route can confirm a
