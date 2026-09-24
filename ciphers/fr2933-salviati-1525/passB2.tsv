@@ -210,3 +210,37 @@ line	pos	code	marks	action	conf	note
 8	11	_		delete	M	small "ot"-shaped mark, belongs above pos12's Z sign, not its own sign
 8	12	Z	7|ot	correct	H	Z shape; added ot mark from pos11 alongside existing 7 mark
 8	13	a	~	confirm	H	bold cursive a with tilde mark
+8	14	_		plain	M	two-tier loop+squiggle shape, unusual but no clear atlas sign match; treated as plain cursive per script call
+8	15	g	~	confirm	M	small round g, tilde mark above, boundary with pos14 close
+8	16	psi		confirm	H	cursive y-hook, clear match
+8	17	eps		confirm	H	backward-3/E shape, clear match
+8	18	w		confirm	H	double-hump w with flourish
+8	19	nt		confirm	H	n with cross-stroke flag
+8	20	m	5	confirm	M	three-hump m; small numeral mark above plausible but faint
+8	21	]	ot	confirm	M	squared double-bar rendering, closest atlas match; ot mark visible above
+8	22	S4		confirm	H	tall stroke with crossbar
+8	23	dl		confirm	M	small hook/loop
+8	24	_		plain	H	legible plain word "Con"
+9	1	_		plain	H	small serif/flourish before word, matches classifier
+9	2	_		plain	H	legible plain word "auenuta"
+9	3	H	7	correct	M	isolated H-shape standing alone with numeral mark, not part of a word; digit read as 7, script guessed 1, uncertain
+9	4	_		correct	M	start of legible word "Duca" ("D"), not coded S7 (script share was already low, 0.52)
+9	5	_		plain	H	"uca" continuing word "Duca"
+9	6	_		correct	M	start of legible word "Secondo" ("S"), not coded S (script share was already moderate, 0.65)
+9	7	_		plain	H	"econdo" continuing word "Secondo"
+9	8	_		plain	M	thin ambiguous stroke after "Secondo"
+9	9	_		plain	M	final flourish/fragment of line, ambiguous shape
+9	10	_		correct	M	start of legible word "Poco" ("P"), not coded p; forms word with pos11
+9	11	_		plain	H	"oco" continuing word "Poco"
+9	12	_		plain	L	small loop, classifier itself low-confidence (0.40), genuinely unclear
+9	13	tee		confirm	L	small thin mark, classifier low-confidence (0.43), tentative
+9	14	tee		confirm	M	small thin mark, classifier moderate-confidence (0.61)
+9	15	_		plain	M	medium shape with ascender, letter unclear but treated as plain
+9	16	_		plain	M	blue loop "b"-like shape, letter unclear but treated as plain
+9	17	_	dot	confirm	L	tall descender shape, classifier low-confidence (0.41), dot mark uncertain
+9	18	Lx		confirm	H	isolated "Af"-shape, clean match to Lx atlas
+9	19	g	dot	correct	M	curled shape with two dot-like marks below, not a single "1"; script share was already low (0.59)
+9	20	_		confirm	M	curled loop shape resembling a coded sign but classifier confident (1.00) it is plain; visual read uncertain
+9	21	rz		confirm	H	small hook shape, matches rz atlas well
+9	22	_	5	confirm	M	two-part shape (loop over stroke), classifier confident (1.00) plain with mark 5; visual read uncertain
+9	23	S7		confirm	H	clear numeral-7 cursive shape, matches S7 atlas well
