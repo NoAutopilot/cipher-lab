@@ -4642,6 +4642,44 @@ Nomination line posted to ROOM.md for CS2-26 (the one stage-2 `open` verdict); n
 (`blocked`, edition not read this pass) or CS2-17 (`copy-order`, poor scan), per LANE N2 addition (e) and this
 lane's R8/LANE-N3-addition rules.
 
+### Edition check, CS2-04/-06/-16/-28 (LANE N3 csED2, 24 September 2026, IA + Gallica SRU slots)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n3-csED2.md`. Full search log per row in each target's own NOTES.md.
+
+- **CS2-04** -> `ciphers/fr3984-sega-1593/` -- **partial** (was `blocked`). *Mémoires de la Ligue* (Goujet, 1758)
+  vol. 5 (archive.org, full text) prints, pp. 411-414, "Copie des Lettres du Docteur Mauclerc, envoyées de Paris
+  au Docteur de Creil à Rome," dated 4 August 1593 -- the correspondent pair and the last date of this row's own
+  window. This is a strong found-solved candidate for the fr.3985 no. 7 item specifically (not independently
+  confirmed against the Gallica leaf's hand/date this pass -- flagged for a follow-up with the image). The four
+  fr.3984 items (Baudouin-Desportes) stay `blocked`: the named edition, *Acta Nuntiaturae Gallicae* (Sega
+  legation), is a modern series with 0 archive.org hits and no HathiTrust record found. No ROOM retraction posted
+  (CS2-04 was never nominated -- it was held `blocked` at csCS2a/csED already); a `flag:` line posted instead for
+  the orchestrator, since `partial` with a found-solved component is a new status this lane hasn't produced
+  before.
+- **CS2-06** -> `ciphers/fr3625-lauriere-1593/` -- **blocked**, unchanged. Gomberville's *Mémoires du duc de
+  Nevers* (1665) located on Gallica (`bpt6k6435941k`/`bpt6k8717151d`) but not reachable via archive.org (absent)
+  or Gallica SRU (metadata-only, no full-text search); Google Books scans exist but are out of this brief's
+  route. Two substitute sources read in full and both negative for "Laurière": Xivrey's *Recueil des lettres
+  missives de Henri IV* t.3 (1589-1593) and Pérot's *Les luttes religieuses en Champagne au XVIe siècle: la
+  Ligue* (1911). No nomination posted.
+- **CS2-16** -> `ciphers/fr3621-dinteville-1592/` -- **blocked**, unchanged; same Gomberville result as CS2-06.
+  Xivrey (16 hits, all Henri IV's own letters *to* Dinteville, plus an identifying footnote) and Pérot (extensive
+  coverage, sourced from an unpublished manuscript correspondence, not this edition's own text) both read; no
+  cipher content or decipherment in either. Flagged a likely catalogue error: the correspondent is probably
+  Joachim, baron de Dinteville (a royal lieutenant at Langres/Troyes), not "Bishop of Langres" as this target's
+  NOTES.md currently states -- no source read this pass supports the bishop identification. Also flagged, not
+  pursued: BnF fr. 3623 may hold a sibling correspondence from the same "J., baron de Dinteville" to Nevers dated
+  5 and 13 July 1592, days after this letter. No nomination posted.
+- **CS2-28** -> `ciphers/fr3198-labbe-1577/` -- **blocked**, unchanged, now with the specific volume named:
+  *Nuntiaturberichte aus Deutschland*, III. Abteilung, Band IX (Delfino/Portia nunciature, 1577-78, ed. Koller,
+  Tübingen 2003) -- a 21st-century critical edition, 0 archive.org hits, no HathiTrust record found. The
+  Venetian-dispatches lead was not pursued (it could not itself confirm whether L'Abbé's own cipher passages are
+  printed). No nomination posted.
+
+No new nomination lines this pass (all four rows stay at `blocked`/`partial`, none crossing to a clean stage-2
+`open`); a `flag:` ROOM line posted for CS2-04's `partial`/found-solved-candidate status for the orchestrator to
+route (verifier or an image check, not a solver).
+
 ## Bavarikon round 2 (LANE N3 scout of 24 September 2026)
 
 LANE N3 brief scBAV2 (`.claude/briefs/runs/2026-09-24-lane-n3-scBAV2.md`), following the LANE N2 Bavarikon sweep
