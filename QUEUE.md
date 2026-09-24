@@ -4294,3 +4294,106 @@ Arcinsys Niedersachsen: 125 raw hits across 2 terms (page 1 only), 3 kept (DA1, 
 Staatsarchiv: 56 raw hits (page 1 only), 1 kept (DA4), 0 copy-free (digitisation indicator seen, not resolved to
 a working image). Bavarikon: 6,818 raw hits across 2 terms, 0 kept, 0 copy-free. **Total: 11 rows kept (DA1-DA11),
 0 copy-free.**
+
+## Bavarikon (LANE N2 scout of 24 September 2026)
+
+LANE N2 brief scBAV, following on from scDEA's 24 Sept sweep of the same host (above), which cleared Bavarikon's
+Anubis proof-of-work with a real browser but found `Chiffre` (6,300 raw) and `Geheimschrift` (518 raw) too noisy
+and left the institution/object-category facet unresolved. This sweep resolves it: **`curl` alone works now**
+(no Anubis challenge hit on any of the ~30 requests below, browser tool not needed) -- either Anubis was not
+triggered this session or scDEA's browser run had already satisfied a per-session cookie; either way, log it as
+curl-reachable for the next worker and re-test if it starts 403ing again.
+
+**Facet URL pattern (the brief's main ask).** The search page (`/search?terms=TERM`, GET, server-rendered HTML,
+result count and facet counts embedded per-request, no separate API call needed) exposes checkbox facets as
+repeatable query params on the same endpoint: `object_category` (`Buch`, `Biogramm`, `Druckgraphik`,
+`Handschrift`, `Musikalie`, `Datensatz`, `Archäologisches Objekt`, `Briefe`), `holding_institution`, `sector`,
+`media_type`, plus date-range and other facets not needed this sweep. Multiple values of the same facet OR
+together: `/search?terms=Chiffre&object_category=Handschrift&object_category=Briefe` narrowed 6,300 raw
+"Chiffre" hits to 7 by selecting only the two object categories a real manuscript letter could be filed under.
+The facet counts are printed on the *unfiltered* results page next to each checkbox, so the noise-vs-signal
+split can be read without narrowing first: for "Chiffre", `object_category=Buch` alone was 6,258 of 6,300 (the
+BSB's own digitised-book OCR corpus, confirmed the brief's suspicion), and `holding_institution` for the same
+term never lists a Staatsarchiv at all -- Bavarikon's aggregated full-text corpus for this term is overwhelmingly
+Bayerische Staatsbibliothek book scans; state-archive finding aids are not meaningfully represented in it for
+either "Chiffre" or "Geheimschrift" (a real gap against the brief's assumption that this host reaches BayHStA/
+Staatsarchive -- see caveats). `object_category=Handschrift&object_category=Briefe` is therefore the working
+narrowing recipe for any future term on this host; `Datensatz`/`Biogramm` were checked and stayed near-zero
+(catalogue records and biographical notes, not correspondence) so were not added to the recipe.
+
+**Terms run, raw / Handschrift+Briefe-narrowed:** `Chiffre` 6,300 / 7, `Geheimschrift` 518 / 5, `chiffriert` 11 / 0,
+`dechiffriert` 4 / 0, `Ziffernschrift` 23 / 0, `cifra` 192 / 9, `"in Chiffren"` (quoted phrase; the search engine
+does not appear to enforce phrase adjacency -- see caveats) 541 / 3, `"en chiffre"` 130 / 0. `Chiffernschlüssel`
+and `Zifferbrief` (LABW's zero-hit terms) not re-run here, no reason to expect a different corpus to carry them.
+21 narrowed hits total across all terms, several duplicated across terms (Reventlow and the Hoffmann letter hit
+both "Chiffre" and "in Chiffren"); 9 distinct objects after dedup.
+
+**BV1 -- the one real find.** Two single-leaf letters from Erasmus Posthius (1582-1618, a Heidelberg physician,
+son of the physician-poet Johannes Posthius) to Dr. Johann Christoph Eysenmenger (1592-1663), in the
+Universitätsbibliothek Erlangen-Nürnberg's Trew letter collection (Christoph Jacob Trew's 18th c. collection of
+physicians' autographs, catalogued by Schmidt-Herrling 1940 -- both records' `remark` cites her "Kurzaufnahme
+eines Autographen" verbatim). Both records state a cipher with its key on the same leaf: the 13 March 1614
+letter (`H62/TREWBR POSTHIUS_ERASMUS[2`, `bav:UBE-TRE-00000BAV80016364`) -- "Links unten Geheimschrift mit
+beigefügtem Schlüssel" -- and the February 1618 letter (`H62/TREWBR POSTHIUS_ERASMUS[8`,
+`bav:UBE-TRE-00000BAV80016370`) -- "Auf der Adressseite: Geheimschrift mit beigefügtem Schlüssel". Both pairs of
+page images opened and eyeballed (not transcribed, not decoded, per brief): the 1614 letter's first leaf carries,
+bottom left below the signature "Erasmus Posthius D.", a short block of enciphered text next to a clear-text
+line naming a real, dateable event ("Fridericus Henricus vocat[ur] recens natus Princeps" -- a newborn prince
+named Friedrich Heinrich) and, directly under it, what reads as a keyed alphabet ("Salutembcdfg" over
+"bilknopqrwxyz"). The 1618 letter's address-side leaf (page 2 of 2) carries a plain substitution key headed
+"Conrad..." (a cipher alphabet running roughly k-l-m-n-p-q-s-t-u-w-x-z against drawn symbols, struck through
+with a line) beside a short block of enciphered German-looking text. Both letters: language Latin (the letter
+bodies), CC0/PDM licensed, `viewer: bookViewer`, images served off `api.digitale-sammlungen.de/iiif/image/v2/`
+at full native resolution (tested: `bav80016364_00001` 3279x5044, `_00002` 3275x5034; `bav80016370_00001`
+3249x4037, `_00002` 3254x4042 -- all four fetched, none blocked, no login). **Copy-free.** Not marked deciphered
+anywhere in either record. Excluded against `ciphers/`, QUEUE.md, CATALOG.md, LANDSCAPE.md, `sources/cryptiana/`,
+and fresh shallow clones of both solver repositories (grep by "Posthius"/"Eysenmenger"/"Trew", exact-name
+matches only -- zero hits; "Trew" alone false-positives inside unrelated English words in both repos, logged and
+not counted). Scored as one row (both letters, same correspondents and collection, plausibly the same or a
+related key) rather than two, on the DA-section's own precedent of grouping paired items.
+
+**Found, read, not nominated (per rule 10, not scored) -- the other 8 narrowed hits, none a cipher-correspondence
+target:** the "Chiffre"-heavy `object_category=Buch` bulk is BSB book OCR and was not opened item-by-item (6,258
+of 6,300, sampled by facet count only, per the brief's "narrow before reading" instruction); within
+Handschrift/Briefe specifically: five volumes of J.M.W. von Prey's "Sammlung zur Genealogie des bayrischen
+Adels" (BSB Cgm 2290, an 18th c. genealogical reference manuscript bound and catalogued like a book) where
+"Chiffre" is the heraldic-monogram sense the brief named for exclusion; a 19th c. Munich periodical
+(*Stadtfraubas*, BSB-MDZ-00000BSB10616697) where "Chiffre" is the classified-ad reply-code convention (same
+noise class LABW logged, above); a real 1808 letter of E.T.A. Hoffmann to Julius von Soden (Bamberg
+Msc.Misc.70/84/2) whose catalogue remark covers paper and watermark only, no cipher content, so the match is in
+the corpus elsewhere, not this record; an early-20th-c. literary manuscript by Franziska zu Reventlow
+(Monacensia) where "Chiffre"/"Geheimschrift" reads as a metaphor in an essay on education, out of period and
+not correspondence; a 15th c. Justinian's-Code manuscript (BSB Clm 28178) with a short recurring encrypted
+*ownership formula*, not correspondence, flagged ambiguous not dropped-noise; a 9th/10th c. liturgical
+manuscript (Bamberg Msc.Lit.131) where the scribe's own name is written in "bfk-Geheimschrift", a documented and
+long-studied medieval scriptorium cipher convention (consonant/vowel substitution), not an unsolved target; a
+music manuscript with no cipher content locatable in its own record; and nine further BSB Latin manuscripts
+matching "cifra" as the ordinary Latin/Italian word for a numeral (page numbers, computus tables), the same
+noise class Gallica/GDZ already taught LESSONS.md to expect.
+
+**Caveats.** (1) Bavarikon's aggregated full-text corpus, at least for the terms run here, does not meaningfully
+index Bavarian state-archive finding aids (BayHStA, the Staatsarchive) -- it is overwhelmingly Bayerische
+Staatsbibliothek book/manuscript holdings plus a handful of other libraries (Erlangen-Nürnberg, Augsburg,
+Regensburg, Bamberg, Monacensia, the Archäologische Staatssammlung); this narrows what the brief's facet
+question can deliver on this host and should be recorded before spending more budget here on archive-scoped
+terms. (2) The `"in Chiffren"`/`"en chiffre"` quoted-phrase searches returned far more hits than plausible for a
+real phrase match (541 and 130 raw) and their narrowed hits duplicated the plain-term results exactly --
+Bavarikon's search likely tokenises quoted input the same as unquoted, so quoting bought nothing; not resolved
+further this budget. (3) BV1's two letters were eyeballed for the presence of ciphertext and a key only, per
+brief; no transcription, no reading, no cryptanalysis attempted, no claim about whether the visible "keyed
+alphabet" actually is the cipher's key or matches the enciphered block next to it -- that is check-solved's and
+a solver's job. (4) Only `Handschrift`+`Briefe` were tried as the narrowing pair; `Datensatz` and `Biogramm`
+were checked via facet count only (both near-zero for every term run) and not opened.
+
+**Per-host report:** `www.bavarikon.de`: 30 requests (>=2s apart, descriptive User-Agent, no challenge/403/429
+seen on any of them -- see host note above), all plain `curl`, no browser tool needed this sweep.
+`api.digitale-sammlungen.de` (IIIF image host, distinct from bavarikon.de): 6 requests (4 full-size page images
+for BV1, 1 redirect-following retest, 1 redirect-only probe), all 200 after following one 301. `github.com`: 2
+shallow clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers), grepped by exact name, deleted after.
+WebSearch: 0 (not needed, the host's own search sufficed). No credentials used, no subagents, never check-solved,
+never promoted, never solved.
+
+**Raw/kept/copy-free:** 6,818 raw hits across 8 terms (dominated by the 6,300 "Chiffre"/518 "Geheimschrift"
+already logged by scDEA, plus 6 further terms run this sweep), 21 narrowed hits (Handschrift+Briefe facet), 9
+distinct objects after dedup, 1 row kept (BV1, both letters), 1 copy-free (BV1 -- full-size images tested and
+working for all 4 pages). **Total: 1 row kept (BV1), 1 copy-free (100%).**

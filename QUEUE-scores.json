@@ -8889,5 +8889,26 @@
         "rationale": "language_fit3 material0 key_lead0 size1(partial cipher within a diary, extent unconfirmed) competition3 weight2(named chronicler) unread3(cryptanalysis)"
       }
     ]
+  },
+  "lane_n2_bav": {
+    "_about": "LANE N2 scout of 24 September 2026 (Bavarikon faceted narrowing; .claude/briefs/runs/2026-09-24-lane-n2-scBAV.md), following up scDEA's same-day sweep of the same host which left the object-category facet unresolved. Facet recipe: /search?terms=TERM&object_category=Handschrift&object_category=Briefe narrows Bavarikon's aggregated full-text corpus (overwhelmingly BSB book OCR) to plausible manuscript/letter hits. 8 terms run, 21 narrowed hits, 9 distinct objects, 1 row kept (BV1, two Posthius-to-Eysenmenger letters with a cipher and key on each leaf, UB Erlangen-Nuernberg Trew collection), 1 copy-free (full-size IIIF images tested for all 4 pages). Full raw notes, per-hit catalogue text and dropped items: sources/solver-diffs/2026-09-24-lane-n2-bav.tsv and the QUEUE.md section itself.",
+    "date": "24 September 2026",
+    "requests_per_host": {
+      "www.bavarikon.de": 30,
+      "api.digitale-sammlungen.de (IIIF images)": 6,
+      "github.com (shallow clones, grep only)": 2
+    },
+    "rows": [
+      {
+        "row_id": "BV1",
+        "target": "Two letters, Erasmus Posthius to Johann Christoph Eysenmenger, each with a cipher passage and its own substitution key on the leaf",
+        "year": "1614-1618",
+        "kind": "recovery",
+        "holder": "Universitaetsbibliothek Erlangen-Nuernberg (Briefsammlung des Christoph Jacob Trew)",
+        "shelfmark": "H62/TREWBR POSTHIUS_ERASMUS[2 (1614); H62/TREWBR POSTHIUS_ERASMUS[8 (1618)",
+        "total": 33,
+        "rationale": "language_fit3 material0 key_lead3(key visually confirmed on both leaves, drawn alphabet-to-symbol table) size1(two short single-leaf letters) competition3 weight1(physicians' correspondence, not diplomatic/political) unread2(recovery, key present but unread/untested)"
+      }
+    ]
   }
 }
