@@ -9,7 +9,7 @@
       "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00053.pdf",
       "date": "24 October 1561", "direction": "Willem -> August",
       "status": "target, undeciphered per WVO Opmerkingen",
-      "images": ["00053_p1.png"], "note": "p2 not fetched this pass (budget, per prior worker)"
+      "pages": 2, "images": ["00053_p1.png", "00053_p2.png"], "note": "p1 by csNB. PDF has 2 pages (checked 24 Sept 2026 by A2); p2 rendered by A2 from the PDF's embedded JPEG (2567x4187, 309 dpi) scaled to 831 px wide (~100 dpi) through headless Chromium"
     },
     {
       "briefnr": 57,

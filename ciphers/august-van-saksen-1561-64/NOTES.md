@@ -229,7 +229,9 @@ In short: the Emperor had envoys ask August to elect his son Maximilian King of 
 lifetime, and the same was probably being asked of the other Electors. This is this worker's gloss, not a search result.
 
 **53 p1 postscript (Willem -> August, Breda 24 Oct 1561; Dresden Loc. 9941/3 f.266) is a third key, read
-cryptanalytically.** 10 lines, not 12. The first crop set mixed lines and was replaced by deskewed crops. Two
+cryptanalytically.** [A2 correction, 24 Sept 2026: the cipher does not end on p1. PDF 00053 has two pages; f.266v
+(`images/00053_p2.png`) carries three more cipher lines (about 90 signs), then the end of the letter and an autograph
+postscript in clear. The reading below covers p1 only; "mrch" is a line end, not the end of the text.] 10 lines, not 12. The first crop set mixed lines and was replaced by deskewed crops. Two
 blind passes (passA_53/passB_53, 90.9% agreement), `settle_53.py` → `ciphertext_53.tsv`: 282 letters, 20
 distinct signs, dots as word separators. Solver: `tools/homophonic_anneal.py` (new, pure Python, trigram +
 KL letter term, w folded to uu), LM = `tools/data/de16/composed_enhg.txt` (composed text, see its README) +
@@ -262,3 +264,13 @@ Suggestions: a verifier should read Demandt nr.113 and the Groen/Kluckhohn volum
 phrase-search "Vandosme" / "Maximilianum" / "vatters schwester". A native-resolution re-read of 53 (Huygens PDF 00053)
 would settle the 119 M tokens.
 Requests: none (no network). Subagents: 4 Sonnet passes (2 for 57, 2 for 53), plus 2 discarded passes over the mis-cut 53 crops.
+
+## A2: second audit of 126, first verification of 53 and 57 (24 Sept 2026, Auditor A2 for LANE V2)
+
+Classes in AUDIT.md: 126 N3 (second audit, unchanged), 53 N3, 57 N3. Findings: 53 has an unread second page of cipher
+(f.266v, now `images/00053_p2.png`, about 90 signs); Demandt's regests of 57 (HessJb 38, 1988, nrs. 113 and 115, read
+through Google Books snippets) summarise only the clear letter and its 23 Nov postscript, so the check-solved gap on
+Demandt is closed; 57's Dresden witness is August's minute "met een 'Zettel'", unseen, the likeliest place for the
+plaintext in clear; V3's "Rachfahl II.1" was vol. II part 2, and II.1 (1907) was checked only through HTRC token counts.
+Suggestions: a solver pass on f.266v with key_53; Dresden inquiry for Loc. 9941/3 f.268-269; KHA inquiry for A 11/XIV
+I/4 nr. 26.

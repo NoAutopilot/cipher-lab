@@ -1336,8 +1336,8 @@
    "date": "24 Sept 2026",
    "kind": "recovery",
    "title": "William of Orange to Elector August of Saxony, Brussels 16 Sept 1564 (WVO 126, Dresden Locat 8510/5 f.139): cipher postscript read with a key aligned from Orange's 1563 letter (WVO 98) and its decipherment",
-   "grade": "C 214, M 26 of 240 signs; N3 (AUDIT.md): no prior decipherment or printed plaintext located; KHA minute with its Zeitung not seen",
-   "line": "The Orange-Saxony symbol ciphers use two systems: A in WVO 74 (1562), B in 98 (1563) and 126 (1564). Aligning 98's cipher against its decipherment on f.67 gives system B's key (33 signs, C), which reads 126's postscript: news from Spain, the Queen bled and purged twice and lost the child. WVO 53 and 57 not read.",
+   "grade": "126: C 214, M 26 of 240 signs, N3. 53 (p1 only): S 163, M 119 of 282, N3. 57: C 247, M 53 of 300, N3. AUDIT.md: no prior decipherment or printed plaintext located for any of the three; minutes unseen (126 KHA, 57 Dresden with a 'Zettel')",
+   "line": "The Orange-Saxony symbol ciphers use more than one key. System A (WVO 74, 1562) also reads August's enclosure of 18 Nov 1561 (WVO 57: the Emperor asked the Electors to elect Maximilian King of the Romans). System B (98, 1563) reads 126 (1564: the Queen of Spain was bled and purged and lost the child). Orange's postscript of 24 Oct 1561 (WVO 53) was read cryptanalytically on its first page (Don Carlos marriage rumour, Vendôme and Navarre); three more cipher lines on f.266v are unread. No prior decipherment or printed plaintext was located for any of the three (AUDIT.md, N3 each).",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64"
   },
   {

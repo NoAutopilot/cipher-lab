@@ -1,5 +1,6 @@
 briefnr	page	content	cipher_type	approx_tokens	decipherment_location
 53	p1	German secretary-hand plaintext letter (courtesy/family news) with a cipher postscript at the foot of the page	arbitrary symbols (X, V, Λ, ϖ, Δ) mixed with digits	~30 (postscript only)	none -- target, unsolved (p2 not fetched this pass, per prior worker)
+53	p2	f.266v: three more lines of the cipher postscript (continuing p1), end of letter 'Datum Breda den 24 Octobris ao 61', full signature, then autograph postscript in clear (recipe, bitch and ferrets), signed 'Wilhelm printz zu Uranien'	same as p1	~90 (cipher lines only)	none (seen by A2, 24 Sept 2026)
 57	p1	clear German prose	n/a	0	n/a
 57	p2	clear German prose continues, ends mid-letter	n/a	0	n/a
 57	p3	clear German prose (postscript intro) then, lower half, a cipher block signed "Augustus Churfurst"	letters + arbitrary symbols (Λ, Δ and others) mixed, alphabetic-looking substitution, not pure numerals	~90	none -- target, unsolved

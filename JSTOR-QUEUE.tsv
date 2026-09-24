@@ -52,3 +52,5 @@ ciphers/clair1108-duvergier	"Clairambault 1108"	2026-09-24	queued
 ciphers/lodewijk-van-nassau-1573-74	"Lodewijk van Nassau" OR "Louis de Nassau" AND (chiffre OR cipher OR cijfer OR geheimschrift) AND 1574	2026-09-24	queued	
 ciphers/lodewijk-van-nassau-1573-74	"Louis of Nassau" AND Mookerheyde AND letters AND 1574	2026-09-24	queued	
 ciphers/lodewijk-van-nassau-1573-74	("Willem van Oranje" OR "William of Orange") AND (cryptografie OR geheimschrift OR cipher) AND Nassau AND 1573	2026-09-24	queued	
+ciphers/august-van-saksen-1561-64	"Kurfürst August" AND Oranien AND 1561 AND (Maximilian OR "römischen König") AND (Chiffre OR Ziffer)	2026-09-24	queued	
+ciphers/august-van-saksen-1561-64	"Don Carlos" AND Oranien AND Sachsen AND 1561 AND (Vendôme OR Navarra)	2026-09-24	queued	
