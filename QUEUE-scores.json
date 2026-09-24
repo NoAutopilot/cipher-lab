@@ -7001,5 +7001,21 @@
   "raw_count": 13,
   "kept_count": 0,
   "copy_free_count": 0
+ },
+ "lane_n_italy-a": {
+  "_about": "LANE N scout of 24 September 2026 (Italian state archives, Florence and Milan; .claude/briefs/runs/2026-09-24-lane-n-scIT1.md): SIAS (sias-archivi.cultura.gov.it, fondo-level description search, RicProgetto=as-milano/as-firenze) and the ASFi archividigitali viewer (6610-filza Mediceo del Principato image reproduction, its own testo_libero search). Zero rows: SIAS found only fondo-level cipher-office history text (Milan Cancelleria di guerra e cifra) with no document-level browse route; Florence SIAS hits were all numeral/amount-sense noise; the ASFi digitised-viewer free-text search failed its own control (searching Giovio, a name on its own homepage showcase item, returned zero results) and is logged query-form-unverified. MIA (ex-BIA, mia.medici.org) needs a login, out of the public-search-only scope. SIUSA egress-blocked, Antenati 403-blocked. One named lead from secondary literature (Cipher Mysteries 2011, Maletta to Sforza, ASMi Potenze Estere 1455) is already tracked by dbourdeau/cyphersolver (oldest/CANDIDATES.md row B6, the adjacent 1465 Maletta letter at the same shelf series) and excluded per rule 1. Full raw hits and exclusion reasons: sources/solver-diffs/2026-09-24-lane-n-italy-a.tsv.",
+  "date": "24 September 2026",
+  "requests_per_host": {
+   "sias-archivi.cultura.gov.it": 18,
+   "archiviodistatofirenze.cultura.gov.it": 8,
+   "archiviodistatofirenze.cultura.gov.it (browser_fetch.js)": 1,
+   "mia.medici.org": 1,
+   "bia.medici.org": 1,
+   "siusa.archivi.beniculturali.it": 2,
+   "antenati.cultura.gov.it": 2,
+   "san.beniculturali.it": 1,
+   "catalogo.beniculturali.it": 1
+  },
+  "rows": []
  }
 }

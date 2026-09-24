@@ -1841,3 +1841,109 @@ archives.gov` 2 direct curl (WAF-challenged) + 7 via `tools/browser_fetch.js` (d
 org` 3, `www.vahistorical.org` 1 (blocked), `digitalcollections.hsp.org` 1 (blocked), `blogs.loc.gov` 2 (both
 blocked). WebSearch used as the practical substitute for founders.archives.gov's own search UI, per COMMON
 RULES. No Google Books, no Gallica, no DECODE, no subagents, no logins, no credentials.
+
+## Italian state archives, Florence and Milan (LANE N scout of 24 September 2026)
+
+Brief: `.claude/briefs/runs/2026-09-24-lane-n-scIT1.md`. Hosts named: Archivio di Stato di Firenze, the Medici
+Archive Project/BIA, Archivio di Stato di Milano, SIUSA/SAN, Antenati -- ciphered despatches and letters 1450-1800
+(cifra, cifrato/a, deciferato, zifra, "lettere in cifra", "con cifra", "contrassegni", Latin "notis arcanis") with
+no decipherment beside them, strongest preference for a public image online. Read first: LESSONS.md, the BnF and
+non-BnF digitised sections above, STATUS.md's 24 Sept lane table. Every candidate lead below was checked against
+fresh shallow clones of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers`, `sources/cryptiana/`, and this
+file/CATALOG.md/LANDSCAPE.md/`ciphers/`. Raw hits and exclusion reasons:
+`sources/solver-diffs/2026-09-24-lane-n-italy-a.tsv`. **The row-id prefix IT stays reserved for this lane; zero
+rows this sweep** -- a future pass with document-level access (not fondo-level description search) should
+continue from IT1.
+
+**Domain migration, worth recording once.** Both institutes' historic domains (`www.archiviodistato.firenze.it`,
+`www.archiviodistatomilano.beniculturali.it`) now TLS-reset or serve an expired/mismatched certificate to curl;
+both redirect (Milan, plain HTTP 301) or resolve (Florence) to a new `cultura.gov.it` subdomain
+(`archiviodistatofirenze.cultura.gov.it`, `archiviodistatomilano.cultura.gov.it`), which is what the CLAUDE.md
+Access playbook's egress-test-first step is for. `bia.medici.org` similarly answers with a TLS hostname mismatch;
+its replacement, found from the medici.org site map, is `mia.medici.org` (MAP renamed BIA to MIA at some point
+after this repo's LESSONS.md/CLAUDE.md were last updated with the old name).
+
+**SIAS (Sistema Informativo degli Archivi di Stato, `sias-archivi.cultura.gov.it`), reached, fondo-level only.**
+Both archives publish through the national SIAS portal (`RicProgetto=as-milano` / `as-firenze`), a working,
+curl-reachable GET search (`ricercasemplice`) confirmed functioning correctly by two genuine positive matches and
+several confirmed true-negative matches (below) -- but SIAS describes archival complexes (fondo/series/sub-series)
+down to box level, never individual letters, so a "cifra" hit here is a lead to a box of up to several hundred
+buste, not a candidate item. Milan: "cifra"/"cifrata"/"in cifra" match 2 fondi via one shared sentence in the
+archival-history note for "Registri delle cancellerie dello Stato" (1538-1796) and its child "Militare parte
+antica" (1440-1802, 460 buste): both fondi absorbed documents from several ducal-period magistracies, "particolarmente
+dalla Cancelleria di guerra e cifra" -- a historical "War and Cipher Chancery" office of the Sforza/Spanish-Milan
+administration. This is a real structural fact (the Milanese ducal chancery had a dedicated cipher office,
+matching the published literature on Sforza-era cryptography), but SIAS gives no way to browse or search inside
+either fondo for the letters that office actually produced; "cifrato", "cifrati", "deciferato" and "zifra" all
+return zero complessi at Milan. Florence: "cifra"/"in cifra" match 7 fondi, every one confirmed by opening the
+record to be the numeral/amount sense of cifra ("la consistente cifra di 500.000 scudi" in a Lunigiana
+acquisition note; tax registers; a chivalric order's insignia; a 20th-c. publicist's figures) -- the same
+foliation-noise pattern QUEUE.md's Europeana section already documented for Spanish "se cifra en"; "cifrato" and
+"cifrata" return zero. Requests: sias-archivi.cultura.gov.it curl, 1 reachability + 7 Milan term queries + 6
+Florence term queries + 4 record-detail fetches = 18, >=1.5s apart, HTTP 200 throughout.
+
+**Archivio di Stato di Firenze's own digitised-image viewer (`archividigitali/`), reached, CONTROL FAILED.**
+Separately from SIAS, ASFi runs a WordPress-based viewer over 6,610 digitised filze/registri of the Mediceo del
+Principato (Minute di lettere 1536-1671, Carteggio Universale 1530-1737), reproduced in partnership with the
+Medici Archive Project, with its own "Cerca" free-text search (`testo_libero=`, confirmed to need the
+`ricerca_testo_libero=Cerca` companion field, found by reading the page's own form markup). **Required control:**
+before trusting a zero count here, the search was run for "Giovio" -- the surname of the sender on the site's own
+homepage "In Evidenza" showcase item ("Lettera di Paolo Giovio a Cosimo I, 1538 gennaio 11", Mediceo del Principato
+332 c.85). It returned "La ricerca non ha prodotto risultati" (zero results), confirmed twice: once by a plain curl
+GET with the correct field names, and once by a real Playwright browser filling the field and submitting the form
+(screenshot in the worker's scratchpad, not committed). A search engine that cannot find a name it advertises on
+its own front page is not indexing document content at any scale useful to this brief -- **this host's "cifra"
+zero-count is logged as query form unverified, not no candidates**, per the brief's control requirement. Most
+likely explanation: the "In Evidenza" captions are a small hand-curated set and the great majority of the 6,610
+digitised units carry no per-item transcription for free text to match against. Requests:
+archiviodistatofirenze.cultura.gov.it curl ~8 (homepage, cerca page, 2 curl search attempts, 4 record/fondo
+pages) + 1 Playwright browser_fetch.js call (2 page loads inside it: initial + post-submit).
+
+**Medici Archive Project (MIA, ex-BIA) -- blocked, needs a login.** `mia.medici.org` (found via medici.org's own
+"Databases > Access MIA" link; the brief's `bia.medici.org` now answers with a TLS hostname mismatch and appears
+retired) redirects every path to `/Mia/user/LoginUser.do`. The brief scopes this lane to "a public search or API
+only, no login"; MAP is not in CLAUDE.md's credentialed-hosts list, so this is out of scope rather than an
+access-playbook route to pursue. Not counted as raw/kept/copy-free; logged for the next worker who does have a
+MAP account.
+
+**SIUSA, Antenati -- blocked.** `siusa.archivi.beniculturali.it` (the national SIUSA portal, distinct from SIAS)
+answered the egress proxy with a policy-style `connect_rejected` (502 to CONNECT) on the one permitted attempt
+and its retry; not a site-side block, logged for the orchestrator to check egress policy if this host matters
+later. `antenati.cultura.gov.it` (vital-records genealogy portal, unlikely to index diplomatic correspondence
+even if reached) answered 403 twice; stood down per the one-retry rule.
+
+**SAN, catalogo.beniculturali.it -- reached but not productive within budget.** `san.beniculturali.it` redirects
+(one hop) to a Liferay portal at `/web/san/home`, HTTP 200; its underlying search API was not identified this
+budget (out of scope to chase further given SIAS already covers both archives' own fondo descriptions).
+`catalogo.beniculturali.it` is reachable but is the ICCD general heritage-object catalogue (paintings,
+archaeological finds, monuments) -- the wrong domain for archival correspondence, confirmed by reading its
+own category list (`typeOfResources/HistoricOrArtisticProperty` etc.), not swept further.
+
+**One named lead, already covered by a competitor.** WebSearch surfaced a 2011 Cipher Mysteries post naming a
+specific unread cipher passage: Albrico Maletta (Sforza's ambassador in Naples) to Duke Francesco Sforza, 26 July
+1455, "in cifre", at ASMi Potenze Estere, Napoli 1455 -- not digitised, no image online. A grep of a fresh
+`dbourdeau/cyphersolver` clone found his own `oldest/CANDIDATES.md` already tracking the adjacent item at the
+same shelf series (Louis XI to the same Alberico Maletta, Saumur, 11 Apr 1465, Latin, one cipher passage never
+printed in Vaesen's or Mandrot's editions): "Original at ASMi, Potenze Estere, Francia; not online. Milan keys in
+DECODE. Needs a photograph from Milan." This confirms Bourdeau's project already works ASMi Potenze Estere and
+Sforza-era diplomatic cipher material directly against material held in Milan, including tracking the same
+not-yet-photographed gap themselves -- excluded per rule 1, and not copy-free even if it were not already tracked.
+
+**Per-host counts.** sias-archivi.cultura.gov.it: raw 9 complessi + 1 produttore, kept 0, copy-free 0.
+archiviodistatofirenze.cultura.gov.it/archividigitali: raw 0 (control failed), kept 0, copy-free n/a.
+mia.medici.org, siusa.archivi.beniculturali.it, antenati.cultura.gov.it: blocked, 0/0/0. san.beniculturali.it,
+catalogo.beniculturali.it: reached, not swept for candidates, 0/0/0. WebSearch/github (secondary literature): 1
+named lead, excluded as already tracked by a competitor.
+
+Caveats: (1) SIAS's fondo-level granularity is a structural limit, not a budget one -- the Sforza/Spanish-Milan
+ducal chancery plainly had a dedicated cipher office ("Cancelleria di guerra e cifra"), and Florence's Mediceo del
+Principato is the single largest ducal-diplomatic correspondence archive in Italy (6,610 filze, per the
+`archividigitali` project page), so this sweep's zero rows reflect a lack of a working item-level search route
+into either archive from this budget, not an absence of cipher material. (2) The most promising next step is not
+another keyword sweep of SIAS but either (a) a MAP/MIA account (the BIA/MIA database is specifically a
+transcribed, searchable letter-level index of the Mediceo del Principato, built for exactly this kind of query),
+or (b) reading the printed inventories SIAS links for "Registri delle cancellerie" and the Sforzesco Carteggio
+Interno PDF inventories (`archiviodistatomilano.cultura.gov.it/fileadmin/.../Carteggio_Visconteo_Sforzesco-*.pdf`)
+by hand/script for filza-level notes naming cipher content, which a script can grep without a model reading the
+whole PDF (Usage rule 2). (3) No score here claims a reading or a novelty class; nothing was promoted, nothing
+was solved.
