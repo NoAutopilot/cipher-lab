@@ -319,3 +319,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T15:27Z	session_01WreUsMyBqdXikTKqhXRQXz	LANE R4 F (Opus, cap $6)	Posthius 1614/1618 solver	done, $1.79, D, H96 M13, for V4
 2026-09-24T15:27Z	session_01PdNqoHMDbatWScPnmNWTH8	LANE R4 E (Opus, cap $5)	Bowes 1583 numerical name-codes	done, $2.01, D, C1 M9
 2026-09-24T15:28Z	session_01Uyv6LetDKFhBPYZtneJEbf	LANE R4 G (Sonnet, cap $4)	Salviati f.54r finish pass B + gate	live
+2026-09-24T15:46Z	session_0188Y3YdstbXbXdvT9TCfTxP	LANE R4 H (Sonnet, cap $3)	M36 f.104 pass B + key.tsv	live
