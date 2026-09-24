@@ -939,9 +939,9 @@
    "kind": "solve",
    "title": "Eckert 1864: two telegrams, Fox to Butler and Meigs to Butler, 21-22 Apr 1864",
    "grade": "N3, two audits; N4 pending",
-   "line": "Read at grade H from the surviving cipher book; a second ledger copy of both found in mssEC 25. Thirteen printed volumes, the Butler and Fox correspondence, the Lincoln Papers and 33 Google Books queries print neither telegram. A blind second reader agrees on 96 percent of tokens.",
+   "line": "Read at grade H from the surviving cipher book; a second ledger copy of both found in mssEC 25. Thirteen printed volumes, the Butler and Fox correspondence, the Lincoln Papers and Google Books phrase searches print neither telegram. A blind second reader agrees on 96 percent of tokens.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
-   "gap": "HathiTrust full text and the JSTOR rows; the Meigs letterbooks at the Library of Congress (229 images, no text) are the one archive copy nobody has read",
+   "gap": "the Decoding the Civil War Zooniverse Talk subject comments, unreachable from here (ASKS row 27); if that search is negative, the N4 decision of 24 Sept 2026 puts both at N4. The Meigs letterbooks at the Library of Congress (229 images, no text) remain unread",
    "phrases": [
     "Fox to Butler, 21 April 1864, 9.30 PM",
     "Meigs to Butler, 22 April 1864, 10.45 AM",
@@ -987,7 +987,7 @@
    "kind": "reading",
    "title": "Robert Bowes to Walsingham, 1583, eleven cipher fragments (BL Cotton Caligula C VII)",
    "grade": "N1, F2",
-   "line": "A sign table reading 93 of 101 tokens as the names printed in Bowes's letter-book (1842). No key or mapping of this cipher had been published.",
+   "line": "A sign table reading 93 of 101 tokens as the names printed in Bowes's letter-book (1842). No earlier sign-level key was found in the sources listed in AUDIT.md; the plaintext has been in print since 1842.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bowes-walsingham-1583",
    "gap": "nothing above N1: the names are printed in the 1842 letter-book; the sign table is the F2 contribution"
   },
@@ -1077,7 +1077,7 @@
    "kind": "catch",
    "title": "Seven queue rows shown solved or printed years ago: Randolph 1570, Charles I to Rupert 1645, Boswell 1628, Goring 1645, Sadler 1559, Anne 1711, Pallotto 1628",
    "grade": "found-solved",
-   "line": "Diffed against fresh clones of both solver repositories (tools/solver_repo_diff.py).",
+   "line": "Boswell, Goring, Sadler/Croft and Anne by a diff against fresh clones of both solver repositories (tools/solver_repo_diff.py); Randolph by its decrypted sibling leaf f.278; Charles I to Rupert and Pallotto by check-solved.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/QUEUE.md"
   },
   {
@@ -1107,9 +1107,9 @@
   {
    "date": "24 Sept 2026",
    "kind": "dataset",
-   "title": "Thurloe State Papers: 23 letters printed with their cipher groups, none in any list, five with reconstructed keys",
-   "grade": "lane opened",
-   "line": "Found by the printed-ciphertext detector over 274 editions (controls 2 of 2).",
+   "title": "Thurloe State Papers: 23 letters printed with their cipher groups, distinct from the catalogued pieces, five in ciphers Tomokiyo reconstructed",
+   "grade": "22 N0, P4 N3 (AUDIT.md)",
+   "line": "Found by the printed-ciphertext detector over 274 editions (controls 2 of 2). The verifier found Birch's own printed decipherment for 22 of the 23 (N0; P3's postscript and 14 groups of P10 unglossed); P4 Stamford is N3 after one audit.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/sources/ia-fulltext"
   },
   {
@@ -1131,9 +1131,9 @@
   {
    "date": "24 Sept 2026",
    "kind": "catch",
-   "title": "Cotton MS Tudor cluster (N40): 5 of 14 volumes already read (Tomokiyo's keys, a 1759 print)",
+   "title": "Cotton MS Tudor cluster (N40): 4 of 14 volumes with a cipher item already read (Tomokiyo's keys, a 1759 print)",
    "grade": "found-solved",
-   "line": "Check-solved batch B; 9 volumes unchecked; saved copy-order and solver time.",
+   "line": "Check-solved batch B; Galba B VII calendared, cipher content not confirmed; 9 volumes unchecked; saved copy-order and solver time.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/cotton-tudor-cluster"
   },
   {
@@ -1196,7 +1196,7 @@
    "date": "24 Sept 2026",
    "kind": "reading",
    "title": "Thurloe State Papers (Birch 1742): 14 cipher letters whose decipherment Birch printed, aligned to their cipher groups (Stouppe, Butler, Stamford x2, Blake, Fauconberg x9)",
-   "grade": "N0",
+   "grade": "N0 (P3 body only; its postscript is open)",
    "line": "Birch printed these letters in 1742 with their contemporary decipherment; we aligned it to the groups, which gives group-level keys for the Blake, Stamford and Fauconberg ciphers and real-data benchmarks.",
    "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md"
   },
@@ -1211,9 +1211,9 @@
   {
    "date": "24 Sept 2026",
    "kind": "catch",
-   "title": "Cotton Galba B IV (N40 cluster): six cipher items with 1516 decipherments already printed in Brewer's Letters and Papers ii pt 1",
+   "title": "Cotton Galba B IV (N40 cluster): at least six cipher items with 1516 decipherments already printed in Brewer's Letters and Papers ii pt 1",
    "grade": "found-solved",
-   "line": "6 of 14 Cotton volumes now closed; 4 unresolved.",
+   "line": "5 of 14 Cotton volumes now have a cipher item already read (Galba B VII calendared only); Vitellius B II and Vespasian F VI negative; Vitellius B XIII a lead; 5 unresolved; Galba B IV item 2673 unread even in Brewer.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/cotton-tudor-cluster"
   },
   {
