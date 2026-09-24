@@ -92,7 +92,7 @@ over-claims prevented by the gates before anything left the repository.
 
 ## Parent handoff (session cipher-lab-7a, session_01EFmUvFAifLKGdBSsW9mjEG), kept current from 12:05 UTC 24 Sept 2026
 
-The parent orchestrator runs the hourly check-in (trigger trig_011namEpfonJUpciRVL4JtQq, self-bound, re-armed by send_later at every firing; its prompt is the
+The parent orchestrator runs the hourly check-in (trigger trig_01EePrmg22xt65fqnCAAiMbK (30-minute cadence while lanes run), self-bound, re-armed by send_later at every firing; its prompt is the
 full duty list: rate limit, swap, JSTOR gate, second-opinion PRs, lanes, parent workers, board, results audit, owner
 report), publishes the board (https://claude.ai/artifact/HzYszSGfSoWPsYXpxvM5zr, built by `python3 tools/build_dashboard.py`
 from status.json; docs/index.html is the Pages copy), keeps ASKS.md and the owner's card (outreach/*.md with `status: ready`),
