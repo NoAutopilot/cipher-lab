@@ -1394,10 +1394,10 @@
   },
   {
    "date": "24 Sept 2026",
-   "kind": "recovery",
-   "title": "William of Orange to Jan van Nassau, 18 Oct 1572 (WVO 5200): page 1 read with the 1572 table printed in a 19th-century reprint found in sibling 5198's scan",
-   "grade": "p1: H 680, M 26, U 101 of 807 tokens; pp.2-3 not yet read; novelty not audited",
-   "line": "A multiples-of-3 letter table with nulls, printed in the Algemeene Konst- en Letterbode reprint bundled in WVO 5198's PDF. Page 1 reads as French on the fall of Mons and Mechelen ('est remise entre les mains des Espagnolz qui ont saccagé tout'). Groen IV 2-6 (5200's cited print) not yet checked.",
+   "kind": "catch",
+   "title": "William of Orange to Jan van Nassau, 18 Oct 1572 (WVO 5200): page 1 read with the 1572 table; the letter is printed in clear in Groen van Prinsterer, Archives 1re série IV (1837), no. CCCLXXXIX",
+   "grade": "p1: H 680, M 26, U 101 of 807 tokens; decoded letters agree with Groen's print at 454/460 (shuffled control 35-37%); novelty N1 (AUDIT.md V6), found-solved",
+   "line": "WVO 5200: page 1 read at grade H under the multiples-of-3 table printed in the Algemeene Konst- en Letterbode. Groen, Archives 1re série IV (1837), no. CCCLXXXIX, pp.2-6, prints the whole letter in clear, cipher passage included, and the reading agrees with it (N1, found-solved). This is an independent re-decipherment that confirms the key.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75"
   },
   {

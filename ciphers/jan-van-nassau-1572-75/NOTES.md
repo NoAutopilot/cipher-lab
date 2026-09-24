@@ -1,5 +1,7 @@
 open
 
+(Per letter, 24 Sept 2026: 5218, 5222 and 5200 found-solved, all printed in clear in Groen; 5200 is N1 per AUDIT.md V6. 5207, 5213, 5221 and 5549 open; 5213 and 5221 have Groen prints to compare first, see AUDIT.md.)
+
 # Jan van Nassau to/from Willem van Oranje, seven cipher letters, 1572-1575
 
 QUEUE row: WV1 (`QUEUE.md`, "Willem van Oranje correspondence: unsolved cipher letters (LANE N harvest of 24
@@ -222,7 +224,7 @@ for every row (a printed key source); rows 1-99 not multiples of 3 are the print
 Worker J2 (Sonnet, cap $6, no network, at most one subagent -- none used). Per
 `.claude/briefs/runs/2026-09-24-lane-r2-jan-5200.md`. **Scope reached: 5200 page 1 of 3 only** -- pages 2-3
 (images `images/05200_p2.jpg`, `05200_p3.jpg`) exist but were not transcribed this pass (cap). This is the first
-graded, reconciled reading under key_1572; **key_1572 reads real French prose**, confirming J1's spot check
+graded, reconciled reading under key_1572 in this repository (the letter's plaintext is printed in Groen IV, 1837: AUDIT.md V6); **key_1572 reads real French prose**, confirming J1's spot check
 beyond a handful of words.
 
 **Blindness caveat.** Before starting pass B this worker read the first and last ~20 rows of `passes/passA_5200.tsv`
@@ -360,3 +362,13 @@ cipher tokens across pages 1 and the left block of page 2.
 
 Status stays **open** (page 1 complete, page 2 left block lines 1-27 of ~29+ read, page 2 right block and page 3
 unread; letter not fully read; no novelty check performed).
+## V6: novelty audit of 5200 p1 (LANE V2, 24 September 2026)
+
+Verifier V6. See `AUDIT.md`. **5200: N1, found-solved.** Groen van Prinsterer, Archives 1re série IV (1837),
+no. CCCLXXXIX, pp.2-6, prints the whole letter in clear. The cipher passage is on pp.3-4, in roman type with no
+cipher marking. J2's decoded letters agree with the print at 454 of 460 (98.7%); the shuffled control gives 35-37%
+(`align/groen_match_5200.py`). That confirms key_1572 on this letter. The clear-hand transcription has errors (L02
+"A ZOLLINGEN" = Groen "à solliciter ceux que savez"); correct them from the image if the reading is kept. Pages 2-3 need
+no fresh reading: Groen pp.4-6 gives their text, and a C-graded alignment is the only useful further step.
+Lead: 5213 = Groen V DXXIII (Delft, 26 Nov 1574) and 5221 = Groen V DLXXIII (Dordrecht, 30 Jul 1575). Compare them
+before any passes. 5207 was not located in IV/V; 5549 is in GPAS, not checked.
