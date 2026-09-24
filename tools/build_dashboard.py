@@ -231,6 +231,30 @@ def md_light(text):
     return "<p>" + t.replace("\n", "<br>") + "</p>"
 
 
+def reflow(text):
+    """Join the file's hard-wrapped lines inside a paragraph; keep blank lines, list items and lines that are only a URL."""
+    out, buf = [], []
+    def flush():
+        if buf:
+            out.append(" ".join(x.strip() for x in buf)); buf.clear()
+    for line in text.split("\n"):
+        st = line.strip()
+        if not st:
+            flush(); out.append("")
+        elif st.startswith(("- ", "* ")):
+            flush(); buf.append(st)
+        elif re.match(r"^https?://\S+,?$", st) or st.startswith("Dear "):
+            flush(); out.append(st)
+        elif buf and buf[0].startswith(("- ", "* ")) and line.startswith("  "):
+            buf.append(st)
+        else:
+            if buf and buf[0].startswith(("- ", "* ")):
+                flush()
+            buf.append(st)
+    flush()
+    return "\n".join(out)
+
+
 def copy_field(uid, label, value, pre=False):
     """One labelled value with its own copy button (address, subject or body)."""
     shown = f'<pre class="mail">{E(value)}</pre>' if pre else f'<code class="val">{E(value)}</code>'
@@ -241,7 +265,7 @@ def copy_field(uid, label, value, pre=False):
 def copy_block(uid, to, subject, text):
     """Three copy boxes: address, subject, body. `to` may be a non-address instruction; it is still copyable."""
     return ('<div class="cfs">' + copy_field(uid + "-to", "To", to) + copy_field(uid + "-subj", "Subject", subject)
-            + copy_field(uid + "-body", "Body", text, pre=True) + '</div>')
+            + copy_field(uid + "-body", "Body", reflow(text), pre=True) + '</div>')
 
 # ---------------------------------------------------------------- readings
 
