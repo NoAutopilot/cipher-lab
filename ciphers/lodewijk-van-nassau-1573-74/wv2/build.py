@@ -62,7 +62,7 @@ def job(nr):
             "token_columns": [["line", "line"], ["idx", "pos"], ["sign", "raw"], ["value", "value"], ["grade", "grade"]]}
 # letters whose numeral runs read as French under key.tsv (wv2/table_test.py, k=0 near the siblings' 3.1 b/c);
 # only these get a graded reading; the others keep ciphertext_<nr>.tsv only.
-KEYED = {'05811', '05810'}
+KEYED = {'05811', '05810', '04503'}
 if __name__ == '__main__':
     nrs = sys.argv[1:] or sorted(DATES)
     done = [nr for nr in nrs if build(nr)]
