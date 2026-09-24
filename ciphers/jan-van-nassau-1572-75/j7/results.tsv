@@ -1,0 +1,4 @@
+case	cipher	tokens	types	design	best_score	shuffled_best	gap	token_acc	letter_acc	sign_acc	note
+target	body_5549.txt (runs 1-61)	539	134	unknown (values 1-345; 82 distinct <100, 52 >99 = 24% of tokens)	-3152.6	-3226.7	74.1	n/a	n/a	n/a	reading is not German; only '59/54/69/74=e' stable in >=6 of 8 top restarts
+control	control_cipher.txt (Groen IV CDXLIV, held out)	539	113	82 letter homophones + 20 syllables + 32 word/name signs + 1 null, same 61-run pattern and frames	-3244.3	-3308.0	63.7	0.109	0.144	0.097	true key scores -3276.0, below the found key: model cannot tell truth from a spurious key at this length
+control2 (easier)	control2_cipher.txt	539	92	82 letter homophones + 14 word signs, no syllables, no nulls	-3207.8	-	-	0.369	0.328	0.304	even letters-only at this length is not read

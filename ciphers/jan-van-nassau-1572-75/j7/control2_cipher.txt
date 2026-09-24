@@ -1,0 +1,285 @@
+# synthetic control, design control2_design.json, seed 7
+{gnediger herr e g schreiben de dato}
+S32 S10 S3 S59 S59
+{den}
+S72 S84 S76
+{iunius haben meine bruedere}
+{und ich alhie entpfangen und}
+S38 S79 S17 S66 S70 S93 S84 S22
+{und der gantzen sachen zustandt}
+{mit freuden uernommen konnen gott dem}
+S78 S39 S56 S16 S51 S25 S15 S31 S24 S33 S63 S59
+{die}
+S21 S20 S75 S11 S47
+{uber}
+{menschliche}
+S11 S70 S81 S42 S34 S91 S20 S1 S47 S72 S81 S92 S95 S39
+{erzeigte grosze gnad und wunder}
+{nimmer gnucksam uolndancken wie}
+S10 S5 S87 S29 S49
+{ortt}
+S56 S45
+{unsz und allen}
+{sachen geschaffen}
+S7 S53 S49
+{e g unsers}
+{uerhoffens}
+S73 S18 S20 S15 S25
+{ausz unsern schreiben}
+{uon dem bottelierer}
+S4 S87 S78 S85 S14 S88 S94
+{haben}
+S54 S14
+{das e g wir so}
+{langsam schreiben}
+S65
+{furwahr}
+S12 S86 S70 S5
+{uergesz oder}
+{unachtsamkeit}
+S75
+{uon}
+S53 S33 S24 S42 S88 S54 S92 S61 S82 S14 S93 S30 S84 S37 S17 S16 S60 S91
+{und manchfaltiger}
+{geschefft der zuuersicht}
+S4 S47 S35 S2 S52 S81 S88 S24 S49
+{g}
+S4 S64 S21 S61 S85 S37 S66 S63 S24 S28 S18 S67 S86 S17 S56 S61
+{niederlande}
+S75 S35 S3 S39 S10 S40
+{desz}
+S68 S27 S11
+{nicht}
+S79
+{gemasz}
+S21 S33 S2
+{sondern}
+S91 S35 S89 S1
+{muhe solle}
+{geliebt gott}
+S32 S42 S56
+{algemeinen}
+{uatterlandt}
+S74 S63 S81 S85 S11 S91 S4
+{frommen}
+S22 S14 S37 S33 S92 S1 S47 S95 S43 S48 S66 S26
+{der almechtige}
+{seine gnade und}
+S5
+{wolle uerleihen}
+{die schwere}
+S39 S86 S93 S85 S5 S94 S37
+{muhe}
+S79 S17 S21 S18 S20 S15
+{und gefahr so e g biszhero auf sich}
+{liegen}
+S65 S61 S25 S66 S72 S15 S4 S40
+{haben}
+S13 S35
+{wir und}
+{dieienige}
+S73 S94 S46 S9
+{sachen etwas wiszen}
+S42 S28 S82 S29 S51 S71 S18 S17 S56 S78
+{erachten ist aber sonsten}
+{gewiszlich unglaublich dieweil}
+S78 S44 S33
+{dieser}
+S47
+{nicht}
+{menschen}
+S73
+{gottes}
+S53 S42
+{und sach ist darzu}
+{e g sich nicht}
+S24 S77 S62
+{sondern}
+S24 S35 S72 S72 S27
+{almechtige}
+S32 S79
+{beruffen}
+S4
+{als}
+S68 S9 S57 S86 S17
+{herbei}
+S65
+{hat}
+S16
+{g auch im werck}
+{und mit der}
+S15
+{gottes}
+S47
+{gnade und wander}
+{scheinbarlich}
+S21 S14 S2 S20
+{so}
+S25
+{e g}
+S4 S19 S86 S39 S89 S84
+{ime}
+S42
+{hochlich zu dancken und uolgents}
+{seiner uetterlichen hulffe beistandts}
+S91 S0 S57
+{und schirms zu erfrewen und getrosten}
+{unangesehen wie beschwerlich und}
+S24 S18 S2 S95 S37 S39 S31 S0
+{sich auch die sachenn ahnlaszenn}
+{den uerlust mit seras haben wir}
+S65 S79 S88
+{ungern uernommen dieweil aber}
+{ohne den willen gottes nichts}
+S31 S79 S79 S89
+{den seinen zum besten geschicht}
+{mueszen und sollen wir in deme und}
+S78 S23 S87 S77 S34 S80
+{auch}
+S32 S86 S80
+{zufriden}
+S5 S16
+{gott der herr kan balt andere}
+{erwecken oder sonst mittel schicken}
+S32 S86 S34
+{wir}
+S12 S65
+{wie wir}
+{dan biszhero}
+S22 S94 S28 S28 S3 S94 S21 S81 S45 S84 S3 S59 S86 S89 S15 S92 S22
+{erfaren was seithero e g schreibens}
+{sich zugetragen wie es in sanct gertrudenbergk}
+S22 S49 S73 S51 S47 S79 S2 S2
+{ob des}
+{herzogen}
+S46 S66 S39 S44 S78 S81 S35 S89 S0 S13 S30 S94 S17 S86 S39 S0 S13 S56 S78 S26
+{abgezogen}
+S20
+{ob er ahn seinen schieffen abermals}
+{schaden gelietten und denen uon ambsterdam}
+S75 S94 S54
+{fruchtt}
+S65
+{wie hierauszen}
+{gesagt}
+S8 S20 S90 S87 S28 S47 S35 S59 S2 S42
+{wir in kurtzen uon e g berichtet}
+{zu werden dan obwol wir teglichs}
+S25 S20 S18 S43 S4 S53 S31 S18 S32 S95 S34 S81
+{zeittung und particulariteten uon}
+{hohen und niedern standts personen}
+S93
+{e g}
+S4
+{der gantzen}
+{sachen}
+S53
+{gewogen und sowol uon}
+{den bapstischen als euangelischen}
+S75 S77
+{ahngelangt}
+S53
+{so}
+S75 S0 S71 S90 S61 S31
+{meine}
+S21
+{und ich doch keine zeittunge}
+{uon uns es sei dan das die}
+S46 S33
+{g oder derselben dhiener kommen}
+{derwegen dan uieler uhrsachen halben}
+S58 S81 S15 S11 S4 S24 S30
+{were}
+S53
+{da e l die}
+{uerordnung}
+S15 S25 S70
+{konten}
+S7 S30 S43 S5 S78 S89 S82 S14
+{particulariteten zugeschrieben wurden}
+{e g mogen gewiszlich glauben und}
+S47 S78 S21
+{wir}
+S86 S82 S89 S95 S38 S14 S80
+{almechtigen}
+{darumb zu}
+S87 S79 S40
+{das}
+S42 S22 S4 S64 S24
+{sach}
+S45
+{lenger ie mehr gonder und beifals}
+{bekommen und mehr dan sie glauben}
+S13 S94 S67 S43 S14 S40 S25 S94 S59 S2 S84
+{sie}
+S91 S94 S3 S3 S95 S52 S6 S13 S70 S26 S72 S11 S16 S76 S22 S42
+{gott mit der thatt befinden dan}
+{den leuthen beginnen nhunmehr die}
+S79 S70
+{und}
+S25 S33 S37
+{etlicher maszen aufzugehen und des}
+{gegentheils anschlege und untrew}
+S44 S49 S13 S78 S58
+{zu werden}
+S48 S86 S30 S94 S40 S29 S0 S57 S78
+{dismals kurtze}
+{der zeitt halben}
+S12 S5 S51 S71
+{kan}
+S53 S61 S26 S87
+{e g nhumehr}
+{uon der bekannten}
+S36 S42 S90 S73 S35 S71 S43
+{allen bericht haben entfangen}
+{nemlich dateno wir seint resoluirt}
+S79 S39
+{das geld daruf man alle stundt alhie}
+{hoffen und demselbigen albereit}
+S83 S3 S42 S30 S72 S4
+{wagen entgegen}
+S65 S77 S75 S51 S47 S31
+{nhur ahnkumpt}
+{das so balt zur}
+S75
+{mit}
+S22 S26
+{soll}
+{gethan}
+S24 S77 S53 S45 S5
+{tag}
+S4 S53
+{bestimmt und das geld gespielt werden}
+{und wirdt mit bruder der nach}
+S91 S94 S3
+{ahn die ortte ein zeitlangk sich}
+{begeben und zuuor nothwendige}
+S81 S61 S37 S5 S61 S71
+{und}
+S21
+{thun}
+S8 S60 S95 S18 S24 S71
+{ob gott will die obgemelte}
+{persohn nhumehr genucksam}
+S8 S31 S26 S48
+{berichtet}
+S47 S66
+{begert das}
+{uff dert mogen}
+S36 S57 S92 S28 S75
+{e}
+S24 S71 S92
+{und nach der ahngezeigten ahnkunft}
+{sobalt uol ssen gemacht werden}
+S54 S49 S90 S91 S1 S25 S78 S59 S2 S15 S4 S48
+{haupter damit eins das ander}
+{im fall der noth uersehen konnte}
+S65 S18 S35 S34 S38 S88 S84 S85 S4
+{denen}
+S64 S11 S31 S2
+{so}
+S19
+{brauchen auch mit mitgeteilt}
+{wurden damit man wan uonnothen}
+S11 S54 S93
+{konne meinung ist die schlachtordnung}
