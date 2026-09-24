@@ -1,8 +1,11 @@
 # Thurloe printed cipher letters (23 items, Birch 1742, vols 2/3/5/7)
 
 **Status: partial** for the 5 letters with a Tomokiyo-reconstructed cipher system (7 rows:
-P9, P11, P12, P13, P14, P15, P17); **open** for the other 16 rows (15 distinct letters, since
-P5/P6 are two cipher clusters of one letter). No item here is `solved` or `found-solved`;
+P9, P11, P12, P13, P14, P15, P17); **found-solved** for P19, P21, P22, P23 (24 Sept 2026: four
+letters of Lord Fauconberg to Henry Cromwell, 1658, which the print gives with an interlinear
+decipherment and whose cipher Tomokiyo has reconstructed -- see "Monck pool solver" below);
+**open** for the other 12 rows (11 distinct letters, since P5/P6 are two cipher clusters of one
+letter). No item here is `solved`;
 rule 10 applies throughout -- nothing below is described as new, unpublished, unread, first
 or never printed, and no N-class is assigned (that is a verifier's job).
 
@@ -171,7 +174,7 @@ length/symbol-count/design before a negative result means anything -- not attemp
 | P14 | partial | as P11-13; also check BL Add MS 4166 f.90-91 (DECODE R4885) Tomokiyo cites for this exact letter |
 | P15 | partial | as P11-13 |
 | P17 | partial | BL Add MS 4166 f.115-116 (DECODE R4896) is Downing's original key manuscript per Tomokiyo -- reading it would turn most of this letter's 892 U-tokens into H |
-| P19, P21, P22, P23 | open | the Monck/speech pool (1,610 tokens) is the best cryptanalysis candidate among the 18 unkeyed rows -- would need a matched control per rule 3 before any attempt is reported |
+| P19, P21, P22, P23 | found-solved | Fauconberg to H. Cromwell, 1658: decipherment printed interlinearly by Birch, key reconstructed by Tomokiyo (section 8). Not a cryptanalysis target |
 | P2, P3, P4, P5+P6, P7, P8, P10, P16, P18, P20, P24 | open | no lead found this pass; each is a short, isolated numeral cipher with no reconstructed key and no obvious shared system |
 
 ## 6. Files
@@ -190,3 +193,66 @@ archive.org: 4 (`_djvu.txt` fetches for vols 2/3/5/7, none cached in this fresh 
 1.5s apart via `tools/ia_numeral_runs.py`). No other host touched this pass (thurloe.htm was
 read from the existing local mirror, `sources/cryptiana/web/thurloe.htm`; no re-clone of either
 solver repository). No subagents, no logins, no credentials.
+
+## 8. Monck pool solver (24 Sept 2026)
+
+Brief: attack the "Monck pool" (P19, P22, P23 as General Monck to Thurloe, P21 as Richard
+Cromwell's speech; 1,610 raw groups) with a matched control and an anneal. **Stopped before any
+cryptanalysis, because the premise was wrong in two ways.** No control and no anneal were run, no
+`key_monck.tsv` was written, and no reading is claimed.
+
+**1. The four items are not Monck letters or a speech.** All four are letters from **Lord
+Fauconberg to Henry Cromwell** (lord deputy, later lord lieutenant, of Ireland), in vol. 7 of the
+1742 print. In the cached djvu text of `collectionofstat07thur`, each window comes straight after the
+heading "Lord Fauconberg to H. Cromwell, lord deputy [lieutenant] of Ireland" (djvu lines 35655,
+41199, 42243, 49474). The "General Monck" attribution came from "George Monck." at djvu lines
+41196 and 42241, which is the signature on the *preceding* letter. P21's "Richard Cromwell's
+speech" came from reading the clear text. Dates from the print: P22 is subscribed "Oaob.26.
+[1658.] B." (djvu 42314); P23 speaks of "Our solemnity ... well over ... as this day" (the
+Protector's funeral, 23 Nov 1658), djvu 49610; P19 falls among September 1658 letters; P21 is
+October 1658. Its dateline was not located in the window. The group values are consistent
+across the four texts (next point), so they are one system. `sources/ia-fulltext/thurloe-check.tsv`,
+`index.tsv` and the four `ciphertext.txt` headers are corrected. The cipher lines themselves are
+untouched.
+
+**2. The print already carries the decipherment.** Birch set the contemporary decipherment
+letter-spaced on the line next to each numeral line. In P22 and P23 it comes before the cipher line,
+and in P19 it straddles the line. Example, P22 djvu 42258-42260: "The councel doe just nothing," over
+`39 16 11 7 28 38 29 9 11 23 6 28 11 21 38 34 41 27 26 41 16 21 29 15`, which is 24 groups for 24
+letters: t h e c o u n c e l d o e j u s t n o t h i n g. `check_interlinear.py` measures this
+from the extraction files alone. Cipher lines with a neighbouring clear line within +-3 letters of
+their group count: P19 2/2, P22 13/17, P23 12/24, P21 14/29. The rest are OCR line-break
+misalignments. Pairing letters with groups on the exact-length lines gives one consistent
+substitution across all four texts: 11=e (16 of 22 votes), 13=e, 23=l (6/6), 27=n (5/5), 6=d
+(4/4), 26=o (6/10), 39=t, 41=t, 16=h (`interlinear_check.tsv`). 11 and 13 as E match
+Tomokiyo's statement.
+
+**3. Tomokiyo has this cipher.** `sources/cryptiana/web/thurloe.htm`, section "Henry Cromwell
+(1658-1659)": "From 1658 to 1659, he received letters in cipher from Lord Fauconberg ... a
+numerical cipher as follows (E=11/13)". His table is the image `fauconberg.jpg`, which is not in
+our local mirror, so the table was not compared value by value. He also gives single-capital name
+codes: A = Henry Cromwell, O = Lambert, V = Desbrowe, Z = Protector. The capitals seen in these
+lines match: "V." sits where the clear line reads "Desb.", "Z." sits over "made a speech", and
+"A." appears in P21/P23. `unsolved.htm` does not list these letters. Neither solver repository was
+re-cloned for this pass. Both are cited from the 02:12 leaf-check.
+
+**Grades.** Nothing was decoded, so there are no per-token grades. A reading of these letters is the
+printed decipherment of 1742. A key built from it would be grade C (known plaintext) throughout.
+Tomokiyo's table would be H.
+
+**Matched control (rule 3):** not run. A control is only needed to support a cryptanalytic result,
+and none is claimed or needed here.
+
+**Still unread:** nothing in these four texts, beyond OCR damage to the interlinear lines, which
+the page images would settle.
+
+**Follow-ups (suggestions only, not done):** (a) `check_interlinear.py` also finds clear lines
+matching the group count in P17 (Downing, 36/46), P24 (Maynard, 12/15), P8 (Steele, 12/15), P16
+and P18. Those rows may also be printed with their decipherment, so the leaf-check's "unkeyed"
+list should be re-examined row by row against the page images before any other thurloe-printed
+row goes to a solver. (b) Every other row's sender should be checked against the heading
+*above* its window, not the signature before it. (c) Fetch Tomokiyo's `fauconberg.jpg` (one
+request) if anyone wants the key as a TSV.
+
+Requests this pass: archive.org 1 (the `collectionofstat07thur_djvu.txt` refetch; gitignored). No
+other host, no subagents, no logins.

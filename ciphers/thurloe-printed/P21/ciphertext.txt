@@ -1,10 +1,10 @@
 # Thurloe State Papers, collectionofstat07thur, printed p.449
-# Sender: [Richard Cromwell's speech to army officers, in Thurloe's hand, corrected by him]
-# Recipient: --
-# Date: not dated in excerpt (context: A.D. 1658/59, Richard Cromwell's protectorate)
-# Cipher system: unidentified (small-alphabet numerals ~1-50, resembles P19/P22/P23 style)
-# Prior work: none found
-# Notes: not an intercepted letter but a secretarial transcript of a speech, partly rendered in cipher; unusual item, no sender/recipient pair
+# Sender: Lord Fauconberg
+# Recipient: Henry Cromwell, lord deputy/lieutenant of Ireland
+# Date: Oct 1658 (dateline not located in OCR)
+# Cipher system: Fauconberg-H. Cromwell numeral cipher (Tomokiyo thurloe.htm 'Henry Cromwell (1658-1659)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment
+# Prior work: Tomokiyo reconstructs this cipher's key (thurloe.htm); the 1742 print carries the decipherment line by line
+# Notes: corrected 24 Sept 2026 (Monck pool solver): not a speech -- a letter headed 'Lord Fauconberg to H. Cromwell' (djvu line 41199); the clear lines are the printed decipherment
 #
 # As transcribed (OCR), never silently repaired. Source: Internet Archive
 # identifier collectionofstat07thur, cached djvu text sources/ia-fulltext/collectionofstat07thur_djvu.txt

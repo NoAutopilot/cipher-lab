@@ -1,10 +1,10 @@
 # Thurloe State Papers, collectionofstat07thur, printed p.~403
-# Sender: General Monck
-# Recipient: secretary Thurloe
-# Date: not read (opening excerpt only)
-# Cipher system: unidentified (small-alphabet numerals ~1-50, unlike Montagu/Downing's larger code sets)
-# Prior work: none found; thurloe.htm mentions Monck only as a third party in Broghill's and DECODE key entries, no dedicated "Monck's cipher" reconstruction
-# Notes: page marker OCR-garbled ("40j"), read as ~403
+# Sender: Lord Fauconberg
+# Recipient: Henry Cromwell, lord deputy/lieutenant of Ireland
+# Date: Sept 1658 (dateline not located in OCR; follows Fleetwood 21 Sept [1658])
+# Cipher system: Fauconberg-H. Cromwell numeral cipher (Tomokiyo thurloe.htm 'Henry Cromwell (1658-1659)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment
+# Prior work: Tomokiyo reconstructs this cipher's key (thurloe.htm); the 1742 print carries the decipherment line by line
+# Notes: corrected 24 Sept 2026 (Monck pool solver): heading 'Lord Fauconberg to H. Cromwell' precedes the window; 'General Monck' was the preceding letter's signature
 #
 # As transcribed (OCR), never silently repaired. Source: Internet Archive
 # identifier collectionofstat07thur, cached djvu text sources/ia-fulltext/collectionofstat07thur_djvu.txt
