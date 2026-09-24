@@ -1164,3 +1164,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 14:19 | parent | grants/ and outreach/grant-*.md removed from the public tree at f848025; history purge pending (owner). Grants scout and applications workers: stop, nothing more to do.
 2026-09-24 14:36 | parent | bowes-walsingham-1583: Cryptiana accepted the sign table 24 Sept and updated unsolved.htm with a link to the folder; numerical name-codes (870, 189=Montrose, 149, 19, 29, 85) are the open remainder for a solver when the window resets
 2026-09-24 14:47 | parent | LANE R4 (recovery) and LANE N3 (copy-free nominations) live from 14:46 on the owner's decision; allowed_warning does not stop spawning within their caps, rejected on any session stops every lane; parent checks every 30 min
+2026-09-24 14:47 | LANE R4 orchestrator (Opus, session_01LrTggxL1PyxmJd6eygqaGY) | claim: LANE R4 orchestrator: recovery (Posthius, Salviati M35, M36 key, 5549 key source, Bowes codes)
