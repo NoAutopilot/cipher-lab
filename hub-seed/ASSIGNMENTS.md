@@ -263,3 +263,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 214 | 24 Sep | cipher-lab | A3 second audit Saxony 53 and 57 | LANE V2 (session_017QzVuGiZ8wFQY6HZfUxH1q) | verifier second audit, Opus cap $8, lane-v2-common | done, 675cc0a session_018rKcVL6R7nkbwNXkoPdrgu |
 | 215 | 24 Sep | cipher-lab | fr5160 f.67 aligned to f.68r clear text, C grades, key_1659 extension | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | solver, Opus cap $7, lane-g2-r | running, session_01BKmMKgLfpLi34jXu8YVUxE |
 | 216 | 24 Sep | cipher-lab | Ciphertext check M26 Paget 1713, M30 Duprat, M34 Mercy 1648 | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | lookup, Sonnet cap $4, lane-g2-t | running, session_01FQgjjzTwm7KCWc3Q2pSoTm |
+| 217 | 24 Sep | cipher-lab | V6 verifier jan-van-nassau-1572-75 5200 p1 (Groen IV CCCLXXXIX) | LANE V2 (session_017QzVuGiZ8wFQY6HZfUxH1q) | verifier, Opus cap $6, lane-v2-common | running, session_01P5vLFcEP9pQd74DHyrWW9E |
+| 218 | 24 Sep | cipher-lab | V7 verifier Lodewijk WV2 5811 + 4503 | LANE V2 (session_017QzVuGiZ8wFQY6HZfUxH1q) | verifier, Opus cap $6, lane-v2-common | running, session_01GfDZW9TKecKMyK4WtCJ5AR |
+| 219 | 24 Sep | cipher-lab | D2 gap close + N4 decision Saxony 53/57 | LANE V2 (session_017QzVuGiZ8wFQY6HZfUxH1q) | verifier N4-decision, Opus cap $7, lane-v2-common | running, session_01PZVcJUWmShupHjiLtXZsfa |
