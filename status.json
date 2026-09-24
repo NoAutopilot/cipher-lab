@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 07:43 UTC",
+ "updated": "24 Sep 2026 08:47 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -615,6 +615,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 08:50",
+   "what": "Danzay f.35r-36r: N4, no prior decipherment located (07:53, after the Cryptiana forum closed negative). Brienne to the Queen of Poland 1646 and Du Vergier 1696: both carry interlinear decipherments in a second hand (N0 for 1646; 1696 with the verifier). La Luzerne 1781: N0, a deciphered duplicate mssDE 108(B) in the same collection. Blathwayt 1728 (C 129 of 172, key 395 groups), Lodewijk van Nassau 1573-74 (four letters, partial) and August of Saxony 1564 (C 214 of 240) read by alignment; verifiers next. fr.5160 1653 band: constrained solve with control negative. Nominations hour 07-08: six copy-free from DECODE records with images plus three from the Nassau circle. LANE V and LANE R closed on handoffs; V2 and R2 started. Retro c applied (pacing rule, access weight, copy-free routing, post-edition journal search)."
+  },
   {
    "when": "24 Sep, 07:45",
    "what": "Gramont f.29r and f.30: N4, no prior decipherment located (final-families verifier, 07:03 UTC; Camusat 1619 negative page by page, DECODE none, Cryptiana forum none); outreach gate 2 open only on the 11 Gramont JSTOR rows (ASKS 32, card). Danzay stays N3 with one family left. Thurloe P4 (Stamford, Calais, 13 March 1655): N3 after two audits; N4 decision running. RAH Cañada 1869: read from its own interlinear plaintext (C 665, M 2), N0. Brienne to the Queen of Poland 1646 (Clairambault 1067): interlinear decipherment on all 30 lines, key of 84 codes recovered; verifier next. Nominations: three copy-free from the Nassau papers (Lodewijk van Nassau 1573-74, August of Saxony 1561-64, La Garde 1577) with the recovery lane; 20 DECODE records with images not in any solver list under check-solved. LANE G handed over to G2; retrospective c applied."
@@ -1348,29 +1352,29 @@
  "lanes": [
   {
    "name": "Lane G2, Gallica manuscripts",
-   "live": 3,
-   "focus": "Brienne-Poland 1646 key (84 codes) to the verifier; key trials on the fr.5160 1653 band; Du Vergier 1696 reconciliation; Gramont f.30r top lines"
+   "live": 6,
+   "focus": "fr.5160 canvas walk done (119 of 123), 1653 band still unread; Du Vergier 1696 gloss; Gramont f.30r top lines partly read; scout round 4; DECODE-BnF items DC8, DC9"
   },
   {
-   "name": "Lane V, French verification",
-   "live": 3,
-   "focus": "Gramont N4 done; Danzay N3, one family left; Brienne-Poland 1646 next"
+   "name": "Lane V2, French/Dutch/German verification",
+   "live": 0,
+   "focus": "starting: Du Vergier 1696, Lodewijk van Nassau, August of Saxony; Danzay and Gramont outreach held at gate 2 (your JSTOR rows)"
   },
   {
    "name": "Lane N, nominations",
    "live": 8,
-   "focus": "DECODE census: 20 records with images not in any list (DC1-DC20) under check-solved; Nassau papers; German, Polish, EMLO, LoC sweeps done"
+   "focus": "DECODE census: DC1-DC20 checked, six copy-free released; Nassau circle WV1-4; RAH Morillo 1817-20 lead; German, Polish, EMLO, LoC negative"
   },
   {
-   "name": "Lane R, recovery",
-   "live": 6,
-   "focus": "Blathwayt 1728 and La Luzerne 1781 alignment (over cap, pushing what they have); Nassau 1573-74 letters captured with sibling decipherments"
+   "name": "Lane R2, recovery",
+   "live": 0,
+   "focus": "starting: Jan van Nassau 1572-75, Günther of Schwarzburg 1561, the four DECODE records with images, Lodewijk additions"
   },
   {
    "name": "Lane W, English verification",
-   "live": 2,
-   "focus": "Thurloe P4 N4 decision; Eckert E4/E5 Zooniverse Talk gap; RAH Cañada N0"
+   "live": 3,
+   "focus": "Blathwayt 1728 audit; Thurloe P4 N4 decision waits on the DECODE search (0 hits, 08:34); Eckert Zooniverse gap"
   }
  ],
- "headline": "Gramont to Villandry and Gramont to Francis I, Rome, 20 May 1530 (BnF fr. 2980 ff.29-30), reached N4 at 07:03 UTC: no prior decipherment located after the final-families audit; outreach waits only on 11 JSTOR rows, on your card. Six readings stand at N3 or better after two audits (Gramont x2, Eckert E4/E5, Danzay f.35-36r, Thurloe P4 Stamford 1655). Lanes re-paced to ten workers after the 05:50 window event; three copy-free nominations from the Dutch Nassau papers went to the recovery lane."
+ "headline": "Three readings at N4, no prior decipherment located: Gramont to Villandry and to Francis I (20 May 1530) and Danzay to the Cardinal of Lorraine (27 Jan 1557). Six at N3 or better after two audits with Thurloe P4 and Eckert E4/E5. The recovery lane produced five alignment readings in four hours (Cañada 1869, Blathwayt 1728, La Luzerne 1781, Lodewijk van Nassau 1573-74, August of Saxony 1561-64), three already found to carry their own decipherment. Outreach for Gramont and Danzay waits only on your JSTOR rows."
 }
