@@ -5918,7 +5918,7 @@ push). WebSearch: 0 (not needed; Tomokiyo's pages and the shallow clone answered
 
 **Check-solved verdicts, 24 Sept 2026 (Sonnet, csKT worker, LANE N4, cap $5 for both rows):**
 
-- **KT-01 fr7129-villeroy-bongars-1604 — open.** Anquez 1887, *Henri IV et l'Allemagne* (Gallica `bpt6k213732d`,
+- **KT-01 fr7129-villeroy-bongars-1604 — blocked (held by the LANE N4 orchestrator 21:27 UTC: Tomokiyo's Bongars cipher paper not read, M9 lesson; was: open).** Anquez 1887, *Henri IV et l'Allemagne* (Gallica `bpt6k213732d`,
   full-text searched: "7129" 21 hits all cited folios, "268" 2 hits neither this volume, "novembre 1604" 5 hits
   none this letter), letter absent. Fresh Bourdeau and Aymeloglu shallow clones, DECODE files on disk, and
   general web search: no hit naming this letter as solved. Full detail and per-source log in

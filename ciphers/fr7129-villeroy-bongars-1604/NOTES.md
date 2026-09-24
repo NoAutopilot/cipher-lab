@@ -1,6 +1,8 @@
 # BnF fr.7129, f.268 — Nicolas de Neufville, seigneur de Villeroy, to Jacques Bongars, 2 November 1604
 
-Status: open
+Status: blocked
+
+**Held by the LANE N4 orchestrator, 24 Sept 2026 21:27 UTC:** `blocked`, not `open`. Tomokiyo himself names this letter as solvable with Bongars' Cipher no.3, and his paper "Development of Ciphers under Henry IV of France: A Case of Jacques Bongars: 1590-1611" (academia.edu, 403 to this worker) was not read; the M9 lesson applies (the named source may already read this very letter). Bongars' printed Lettres (1668/1695) were also not opened. Needs the paper read (another route: Cryptologia/HAL/Tomokiyo's site PDF, or the owner) before open.
 Anquez 1887, *Henri IV et l'Allemagne d'après les mémoires et la correspondance de Jacques Bongars* (Gallica
 `bpt6k213732d`), full-text searched (Gallica ContentSearch) for "7129" (21 hits, all fr.7129 folios cited by
 Anquez in his narrative), "268" (2 hits, neither this volume), and "novembre 1604" (5 hits, none this letter)
