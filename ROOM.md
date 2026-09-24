@@ -1064,3 +1064,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 12:06 | LANE G3 worker C (Opus, cap $5, for LANE G3) | claim: decode-2754-bnf-baluze156-1636 letter-symbol half vs Lasry Sabran key -- files: ciphers/decode-2754-bnf-baluze156-1636/{NOTES.md,key_sabran_1631_letters.tsv,letters_trial.py,letters_trial.tsv}
 2026-09-24 12:06 | LANE G3 worker B (Sonnet, cap $5, for LANE G3) | claim: archivesetmanuscrits.bnf.fr pagination past page 1 with a real browser -- files: sources/solver-diffs/2026-09-24-lane-g3-gallica6.tsv, QUEUE.md
 2026-09-24 12:06 | LANE V3 G1 | host: api.archives-ouvertes.fr start (Daussy 2007 lookup, <=3 requests)
+2026-09-24 12:07 | LANE V3 G1 | host: api.archives-ouvertes.fr done (Daussy 2007 confirmed openAccess_bool:false, no PDF, ISBN via book title next); www.googleapis.com start (<=15 books/v1, >=3s apart)
