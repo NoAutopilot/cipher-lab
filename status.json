@@ -1300,8 +1300,8 @@
    "date": "24 Sept 2026",
    "kind": "recovery",
    "title": "La Luzerne to Destouches, Philadelphia 16 Jan 1781 (Huntington mssDE 108(A)): partial reading with a key rebuilt from three sibling letters' contemporary decipherments",
-   "grade": "C 347, M 110, U 262 of 719 groups; novelty not yet audited",
-   "line": "Key of 229 figures from the ink decipherments written in mssDE 68 (31 Jan), 37 (26 Feb) and 55 (3 Mar 1781), graded C (known plaintext); 13 conflicting figures listed. The Huntington code is not the one Tomokiyo aligned from the Yale letter of 8 Jan 1781 (44 shared figures, none agree). mssDE 68 is read from its own complete decipherment (a transcription, C 158 M 19). 173 distinct figures in 108(A) stay unkeyed.",
+   "grade": "C 347, M 157, U 215 of 719 groups; novelty not yet audited",
+   "line": "Key of 229 figures from the ink decipherments written in mssDE 68 (31 Jan), 37 (26 Feb) and 55 (3 Mar 1781), graded C (known plaintext); 13 conflicting figures listed. The Huntington code is not the one Tomokiyo aligned from the Yale letter of 8 Jan 1781 (44 shared figures, none agree). mssDE 68 is read from its own complete decipherment (a transcription, C 158 M 19). 173 distinct figures in 108(A) stay unkeyed. A context pass (R16) added 22 values at M: its control on mssDE 68 reached 50 percent, below the bar for S.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-luzerne-destouches-1781"
   }
  ],
