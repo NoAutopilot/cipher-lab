@@ -199,3 +199,75 @@ server accepts is now a task for the person (new/corrected credentials), not a t
 
 No images or files for 8725 were fetched (login never succeeded), so `/tmp/decode/8725` holds nothing beyond
 `tools/decode_fetch.sh`'s own failure marker, and nothing from this session is committed under `images/`.
+
+## DECODE record 8725 (24 Sept 2026)
+
+Login now works (`CLAUDE.md` Access playbook item 3, "Resolved 24 Sept 2026, 04:40 UTC": the curl POST in
+`tools/decode_fetch.sh` is never evaluated by the server; `tools/decode_browser_login.js`, a real headless-Chromium
+submission, logs in first try). This session extended that tool with `--fetch`/`--fetch-page`/`--delay`/`--max-files`
+options (downloads inside the same logged-in browser context, auto-following any `/decrypt-custom/filesrv/?file=`
+link found on a fetched list page) and added `tools/tests/test_decode_browser_login_help.py` as an offline `--help`
+smoke test, then ran it once (one login) for record 8725, plus one further login to search RecordsList for
+sibling records in the same volume (see below). Files saved under `ciphers/intercepted-royalist-1646/decode/`:
+`record_8725.html`, `DocumentsList.html` (both scrubbed of the account name), the two attached documents, and the
+two page images; `siblings.tsv` from the RecordsList search. Requests to de-crypt.org: 3 logins (main fetch run,
+one aborted ImagesList diagnostic, one RecordsList search run) + roughly 15 page/file GETs total, all ≥1.5s apart,
+well under the few-hundred-per-session budget.
+
+**Record 8725 = BL Add MS 72438 f.104, confirmed again:** RecordsView shows Status **Decrypted**, Cipher Type
+Unknown, Symbol Sets Numerical, 1 page. `DocumentsList?showmaster=records&fk_id=8725` lists two attached documents:
+
+| doc id | title | category | uploaded | uploader |
+|---|---|---|---|---|
+| 4349 | "Cipher between Charles I and Prince Rupert (1647)" | Key | 10/12/24 | account id 83 |
+| 4350 | "Decipher of the beginning" | Deciphered text | 10/12/24 | account id 83 |
+
+DECODE gives only a numeric uploader id (83) in the fields this account can see, not a name — consistent with the
+project's own convention, nothing to redact. The titles themselves are new information: f.104 has no sender/date
+in the BL catalogue description ("Royalist intercepted letter almost wholly in undecoded cipher, n.d.", logged in
+the Scout addition above), but DECODE's own metadata for this record now names the correspondents and date as
+**Charles I and Prince Rupert, 1647** and confirms a "Deciphered text" document exists for it.
+
+**Content of both documents could not be read.** Fetching either attachment's file
+(`DOC_8725_2024-Oct-12-01-33-12_24005.jpg` for the Key, `DOC_8725_2024-Oct-12-01-36-20_15694.txt` for the
+Deciphered text) returns, for both, a byte-identical 17,947-byte PNG (not the named format — the filenames'
+extensions do not describe the actual returned content) reading "Insufficient permissions to see the full image"
+in plain black text on white. This is a server-generated placeholder, not the file — this account has RecordsView/
+DocumentsList *metadata* access but not Documents *content* access. `ImagesList?showmaster=records&fk_id=8725`
+("Manage Images" / "Image Manager" in the record page's own UI) is unreachable for the same evident reason: both a
+full page navigation and a plain authenticated HTTP GET to that URL end in `ERR_TOO_MANY_REDIRECTS` /
+"max redirect count exceeded" (tested once each, not retried further, consistent with the good-citizen single-retry
+rule for anomalous host behaviour). What *is* reachable: the two page-image thumbnails already known from the
+record page, `TH_IMG_R8725_I40320_P1.jpg` (200×268, a real manuscript recto in a secretary hand — legible as a
+short block of running text, not obviously cipher symbols at this resolution, but too small to transcribe) and
+`TH_IMG_R8725_I40320_P2.jpg` (200×267, blank/verso, folded). Both downloaded successfully and are committed.
+
+**Is this a found-solved lead for our leaf?** Record 8725 *is* f.104 (established independently in the Scout
+addition above), so the "Decipher of the beginning" document is attached to the very folio in question, not a
+different one — DECODE's own project has therefore marked f.104 as already deciphered, at least in part. But this
+session could not read that document's actual text (permission-blocked), so per the brief's instruction the first/
+last ten words of its plaintext cannot be quoted, and it cannot be confirmed whether "the beginning" means a few
+lines or a full transcription, nor whether it is a contemporary or modern decipherment. This is a **found-solved
+lead, not a confirmed found-solved reading**: report to whoever picks this up next that DECODE record 8725
+(f.104) carries a named, dated attachment titled "Decipher of the beginning" that this account cannot open: the
+person (or a worker with different DECODE credentials/role) needs to open it directly, e.g. via
+`https://de-crypt.org/decrypt-web/DocumentsList?showmaster=records&fk_id=8725` while logged in with a role that
+has document-download permission, or by asking DECODE's maintainers for the file. Not classifying novelty here
+(rule 10) — that is the verifier's job once the text is actually read, and this is not a reading yet, only a
+provenance/status finding about f.104's record.
+
+**This target's own scope (f.9/f.10) is unaffected and still open.** f.104 was never adopted as a target of this
+folder, only flagged as a candidate pending this DECODE check (see the Scout addition above); the top-line
+`Status: Open` refers to f.9/f.10 and is not changed by this f.104 finding. That check is now resolved: **do not
+promote f.104 as a fresh cryptanalysis target** — DECODE already holds (even if this account cannot read) a
+named decipherment for it, so any campaign on f.104 should start from requesting that document, not from
+transcribing and attacking the cipher again.
+
+**RecordsList search for "72438" (siblings, `decode/siblings.tsv`, all 5 pages / 81 records fetched).** Confirms,
+independently of this folder's own file, that f.9 (record 8623) and f.10 (record 8624) are still the *only* two
+"Cipher" records under Add MS 72438 marked **Non-decrypted** by DECODE; every other Cipher-type record in the
+volume (f.1, f.3-4, f.5-6, f.7, f.12-13, f.14-15, f.104, f.107 — 8 records) is already Decrypted, and 71 further
+records are Key-type (status N/A, not applicable to a cipher/decrypted distinction). f.107 (record 8728) is a
+second already-Decrypted single-page Cipher record adjacent to f.104 worth noting for later but out of this
+brief's scope (no document check run on it). This corroborates the folder's existing "Verdict: Still open" for
+f.9/f.10 from an independent DECODE-side source (status field, not a text search), rather than changing it.
