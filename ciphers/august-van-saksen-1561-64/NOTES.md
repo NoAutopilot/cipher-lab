@@ -138,3 +138,64 @@ re-running the passes, then `tools/reconcile_passes.py passA.tsv passB.tsv` (hea
 briefnr page lineno`, matching the tool's "long" format) into `recon/`. No sign count or agreement
 percentage is available -- the passes never completed. No H/C/S/M/I grades apply here (no decoding
 attempted this pass).
+
+## R21: key from 74/98, reading of 126 (24 September 2026, LANE R worker R21, Opus, aligner)
+
+Method: aligner, as in rah-canada-1869 and lodewijk R18: no blind passes. Worked from **native-resolution
+scans** (the page JPEGs inside the Huygens PDFs, 3600-4400 px wide, about 5x the 100dpi PNGs in images/). The PDFs
+were fetched once to the scratchpad and not committed (74, 98, 126, 53; URLs in images/manifest.json).
+
+**Two cipher systems, not one.** 
+- **System A (74, f.18r-v, 1562)**: German written letter by letter. Digits, Latin letters and invented signs,
+  one sign per letter, with homophones: s = T or G4, h = 5 or S, u/v = X, w = XX. Also sch = TL and st = J, plus
+  word signs for König, zu, Frankreich, Engelland, und, Bapst, Hertzog, Beyern, Niderland, Hispanien, E.L. and
+  Ital-. Aligned against the contemporary decipherment on f.19r: **864 signs**, `align_74.txt` ->
+  `ciphertext_74.tsv`, `pairs_74.tsv`. The f.19r text is a close decipherment, not a paraphrase, but its
+  wording differs in places (cipher "so hatt", f.19 "Er hat"; cipher "uff der", f.19 "bey der"; one name
+  at 74 p4 l.2 left unpaired). Where they differ, the pairs record the cipher's own German, checked word
+  by word against f.19. The f.19 paragraphs are the Le Havre cession of 1562 ("einen hafen genant la haver
+  de gras verkaufft"), followed by Spanish, Italian, papal and Bavarian troops for the French king. (This worker's
+  own gloss, not a search result.) f.20 was not used.
+- **System B (98, f.66, 1563; the same system reads 126, 1564)**: a different key over a similar repertoire
+  (3 = e, 0 = a, Or = r, Qg = g, ...; see atlas "R21 codes, 98 system"). **Its decipherment is f.67 (p3), not
+  ff.68-69.** plaintext_98.txt (ff.68-69, "Zeittunge auss Franckreich") is an enclosed newsletter and does
+  not correspond to the cipher. f.67 reads "Es wirdt bey uns fur gewiss gesagt, das Wilhelm von Grumbach
+  ... und Staupitz ... vom Konige zu Frankreich bestallung haben sol, wir bitten aber E.L. ...". It is a
+  free decipherment: it adds "fur" and smooths the troop numbers. **184 signs** aligned, `align_98.txt` ->
+  `ciphertext_98.tsv`, `pairs_98.tsv`. Units marked `~` are pairings the aligner is unsure of.
+  f.67 was read at native resolution but not transcribed to a file; the words used are in align_98.txt's
+  header.
+
+**Key** (`build_key.py`, --check 0): `key_74.tsv` 38 signs, `key_98.tsv` 33 signs, `key.tsv` both (system
+column), `key_conflicts.tsv` 8 rows. Grade C where every sure pairing agrees. Otherwise M: all word signs
+in 98, and Λ, which is l or m in 98 (the l/m split, L vs filled Lf, cannot be seen in 126's hand).
+
+**126 p4 (f.139, Willem -> August, Brussel 16 Sept 1564)**: one careful reading in System B codes,
+`ciphertext_126.tsv` (240 signs, 4 marked M on the image), `exceptions_126.tsv` (15 context values, all
+M), `decode.json`; `tools/decode_key.py . --check` exits 0. **Tokens 240: H 0, C 214, S 0, M 26, I 0, U 0.**
+The C grades come from the 98 decipherment. No sign of 126 is unkeyed, apart from K (word sign, "die") and
+the down-arrow (k / ge), which are given M by context. Result: cryptanalytic reading with a sibling key
+(C from known plaintext of 98, applied to 126). The interlinear letters above 126 l.1 ("e e r e", a later
+hand?) contradict the key (they give e for N and r for 3) and were not used.
+
+German rendering (`reading_126.txt`; brackets = word signs; u/v normalised to u by the key):
+
+> [Wir] konnen auch [E.L.] in freundtlichem vertrauen nit verhalten, [das] [wir] seidhero auss Hispanien
+> andere zeitung bekommen haben, welche vermelden, [das] [die] Konnigin so heftig kranc[k] [ge]worden sei,
+> [das] man ir [die] ade[r]n zwei mahl s[ch]lagen [und] auch zwei mahl purgieren mussen, dermassen [das]
+> sie irer frucht erlediget worden sei.
+
+In short: news from Spain that the Queen fell so ill that she was bled twice and purged twice, and so lost
+the child she was carrying. Gaps: "adesn" (Sb read s where r is expected; one sign), "slagen" (no c/h
+sign written). Nothing else is missing.
+
+**53 p1 and 57 p3: not read.** 53's postscript (native scan, 2633x4175, fetched once) shares System A's
+sign shapes (XX, ϖ, Δ, λ, ƒ, Ƶ, ε) but not its values. Under key_74, 53 l.2 gives "uettelah?e.znnregu...".
+It also uses dots as word separators and a frequent "15" ending. It is a third key over the same
+repertoire. 57 was not opened. Suggestion: an aligner or solver for 53/57 could start from System A's sign
+inventory and treat 53 as a fresh monoalphabetic German substitution with homophones, about 400 signs.
+Suggestion: transcribe f.67 (98's decipherment) to a file and settle the `~` pairings. Superseded:
+plaintext_74.txt f.19 l.1 "dreyhundert" should read "dreythaussent" (cipher and f.19 agree).
+
+Requests: resources.huygens.knaw.nl 5 (PDFs 74, 98, 126 [one 404 on a mistyped 3-digit path, then 200], 53),
+>=2 s apart. No other host.
