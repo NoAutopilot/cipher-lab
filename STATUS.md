@@ -110,7 +110,11 @@ history swap (owner's four clicks, ASKS 24). State at 14:20 UTC 24 Sept: the sev
 handoffs (G3, V3, R3, N2 sections below) and no lane runs until then; the grants material was removed from the public tree
 (f848025, outreach/private-repo.md) and lives in two private artifacts until the owner creates cipher-lab-private. When the
 window resets, restart in this order: V4 (outreach drafts if JSTOR waived, second-opinion PRs), R4 (5549 key source, M35
-Salviati passes), N3 (copy-free scouts only). If this parent stops, a successor parent reads this section, the lane table,
+Salviati passes), N3 (copy-free scouts only). N3's first brief: scCS2, a re-diff of dbourdeau.github.io/cyphersolver (236 write-ups on 24 Sept
+2026 against the 99 folders diffed on 23 Sept; the 38 'not solved' and the '· partial' write-ups as recovery candidates where
+an archive route exists, catalogue.html 'attempted, open' rows against QUEUE.md, and keys.html, the key web, as an index of
+published keys to try on unread Gallica siblings). Checked 24 Sept 14:45 UTC by grep of writeups/catalogue/keys: none of
+the fifteen N4 items appears there; Thurloe P4 is on his 'not solved' list (a contribution once the JSTOR gate passes). If this parent stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
 ## LANE N2 handoff (session_01DfQyAaXAgcoFZMAbBTGj4f), 24 September 2026, 14:16 UTC
