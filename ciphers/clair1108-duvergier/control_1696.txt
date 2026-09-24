@@ -1,0 +1,5 @@
+true pairing      consistency 0.926  loglik -1330.1
+shuffled pairing  1 consistency 0.492  loglik -2784.3
+shuffled pairing  2 consistency 0.463  loglik -3248.7
+shuffled pairing  3 consistency 0.457  loglik -2659.5
+shuffled: consistency max 0.492 mean 0.470; loglik max -2659.5

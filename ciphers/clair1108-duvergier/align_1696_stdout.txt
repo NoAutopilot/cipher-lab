@@ -1,0 +1,31 @@
+A01 722=# 143=et 185=a 38=y 151=eu 34=u 224=ne
+A02 198=lo 17=n 168=u 18=e 119=co 50=n 301=fe 28=r 277=en 290=c 238=e 10=a 301=ue 14=c 200=uy
+A03 249=plus 18=e 15=m 24=p 267=re 30=s 278=se 259=que
+A04 133=p 119=o 35=u 292=rl 206=e 251=n 13=tr 145=e 25=p 268=ri 278=se
+A05 195=la 20=f 161=faire 142=est 10=a 24=p 267=re 277=en
+A06 50=0 32=0 25=p 267=re 30=s 259=que 11=i 48=m 24=p 266=ra 290=ti 116=ca 12=b 196=le 281=su 29=r 195=la 119=co 30=s 289=te 133=de 42=k 18=e 50=n 32=t
+A08 155=fo 29=r 117=ce 30=s 259=que 725=le&
+A09 289=te 17=n 289=te 28=r 196=le 133=des 107=ba 28=r 259=que 211=ment 137=dans 195=les 25=p 269=ro 302=ui 17=n 117=ce 16=d 38=y 52=o 29=r 42=k 237=ou 282=sont 24=p 267=re 30=s 259=que 291=to 35=u 30=s 196=le 30=s 175=ha 266=ra 30=s 16=d 105=@
+A10 238=on 32=t 269=ro 34=u 301=ue 275=ro 33=it 196=le 30=s 14=c 176=he 300=ua 35=u 37=x 224=ne 117=ce 30=s 277=sa 44=i 267=re 30=s 251=pour 46=l 104=rme 18=e 237=ou 112=ien 137=dans 34=u 224=ne 133=de 30=s 24=p 269=ro 302=ui 17=n 117=ce 30=s 133=de 13=l 237=ou 192=est
+A11 38=y 142=na 10=a 113=bon 132=da 50=n 33=cee 133=nsort 259=que 13=l 104=rme 18=e 38=y 281=su 12=b 279=si 30=s 289=te 275=ro 32=t 10=a 11=i 278=se 211=ment
+A12 161=faire 195=la 133=de 30=s 117=ce 17=n 33=t 137=dans 117=ce 30=s 16=d 150=eux 197=li 150=eux 10=a 195=la
+A13 133=de 161=faire 18=e 48=m 107=ba 29=r 259=que 28=r 10=a 12=b 29=r 142=est 196=le 30=s 294=troup 30=s 133=de 30=s 290=ti 224=ne 18=e 30=s 251=pour 46=l 237=ou 142=est 143=et 10=a 116=ca 195=la 11=i 30=s 117=ce 13=l 196=le 30=s 133=de 30=s 290=ti 224=ne 18=e 30=s 251=pour 38=y 52=o 29=r 42=k
+A14 280=so 17=n 24=p 269=ro 186=ie 32=t
+A15 191=il 119=co 15=m 24=p 289=te 281=su 29=r 195=la 154=fi 133=de 197=li 289=te 133=de 249=plus 44=i 18=e 35=u 28=r 30=s 245=pe 29=r 28=on 224=ne 30=s 137=dans 117=ce 244=pa 38=y 30=s 195=la
+A16 134=di 17=n 289=te 13=l 197=li 165=g 50=n 117=ce 225=nymes 221=me 133=de 125=corres 122=ondance 191=il 30=s 224=ne 50=n 267=re 119=co 11=i 301=ue 228=nt 10=a 35=u 120=cu 224=ne 232=nouue 225=leny 244=pa 28=r 195=la 183=holl 225=andeny 132=da 11=i 13=l 196=le 35=u 29=r 30=s
+A17 136=du 14=c 176=he 300=ua 197=li 18=e 29=r 166=gi 266=ra 28=u 134=di 17=n
+A18 44=i 29=r 195=la 17=n 135=do 11=i 30=s 18=e 288=sta 12=b 197=ly 10=a 136=du 17=n 259=ke 28=r 259=que
+B01 10=a 208=mo 17=n 133=des 244=pa 28=r 32=t 34=u 50=n 291=to 34=u 29=r 260=qui 223=na 250=pas 133=des 25=p 199=le 10=a 34=u 720=%
+B02 186=ie 200=uy 10=a 38=y 152=f 10=a 33=it 18=e 50=n 289=te 17=n 16=d 267=re 259=que 206=me 303=uo 38=y 10=a 228=nt 44=i 118=cy 11=i 17=n 34=u 290=ti 196=le 251=pour 280=so 17=n 278=se 29=r 302=ui 117=ce
+B03 10=a 210=m 300=uostre 245=pe 267=re 245=pe 29=r 207=mi 30=s 279=si 238=on 133=de 206=me 50=n 267=re 291=to 35=u 29=r 224=ne 28=r 10=a 136=du 50=n 259=ke 28=r 259=que 251=pour 38=y 10=a 38=y 133=de 28=raa 10=cerlarm 211=ment
+B04 11=i 17=n 35=u 290=ti 196=le 10=a 110=bo 35=u 198=lo 21=g 224=ne 186=ie 247=po 35=u 303=rro 11=i 30=s
+B05 196=le 275=ro 16=d 105=@ 10=a 24=p 269=ro 34=u 300=ua 30=s 33=t 208=mo 17=n 133=des 244=pa 29=r 32=t 259=que 221=me 191=il 205=ma 303=uo 11=i 32=t
+B06 206=me 8=0 610=m 601=0 206=e 32=t 33=t 267=re 280=so 35=u 30=s 278=se 30=s 52=o 28=r 16=d 267=re 30=s
+B07 161=faire 10=a 34=u 120=cu 50=n 208=mo 35=u 301=ue 211=ment 285=sans 280=so 17=n 235=ordre 18=e 36=x 24=p 267=re 30=s 191=il 205=ma 244=pa 270=ru 155=fo 28=r 32=t 291=to 34=chedece 14=ttehon 176=nestete 133=de
+B08 210=m 133=de 247=po 17=n 33=t 14=c 175=ha 28=r 32=t 266=ra 11=i 17=n 143=et 133=de 208=mo 50=n
+B09 191=il 142=est 298=tres 245=pe 28=r 281=su 10=a 133=de 259=que 195=la 28=r 206=me 211=ment 133=de 136=du 17=n 259=ke 28=r 250=ue 267=re 29=r 133=de 277=la 133=de 30=s 117=ce 50=n 289=te 143=et 135=do 11=i 32=t 278=se 188=io 11=i 50=n 16=d 267=re 10=a 210=m
+B10 186=ie 281=su 11=i 30=s
+B11 10=a 301=ue 14=c 722=# 143=et 10=a 301=ue 14=c 291=to 34=u 32=t 117=ce 260=qui 46=l 38=y 10=a 11=i 118=cy 16=d 700=angloi 35=u 17=n 245=pe 34=u
+B12 150=eux 19=e 17=n 119=co 32=0 289=te 268=ri 18=e 188=io 34=u 29=r 223=na 197=li 18=e 267=re 133=de 8=0 133=des 107=ba 34=u 14=c 176=he 143=et 133=de 24=p 195=la 11=i 279=si 28=r
+B13 18=e 17=n 722=#
+consistency 0.933  groups 129  loglik -1319.5

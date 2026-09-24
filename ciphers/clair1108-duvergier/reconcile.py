@@ -6,13 +6,13 @@ rows.tsv: leaf, row, layer (main|gloss), text, conf, note. In `text` a numeral i
 clear word; a trailing '?' marks conf M for that token; {..} marks a struck word or group; 192|142 gives an
 alternative reading (first preferred).
 
-  python3 reconcile.py           write ciphertext.tsv, dechiffre.tsv, pass_agreement.tsv
+  python3 reconcile.py           write ciphertext.tsv, dechiffre.tsv, pass_agreement.tsv, signs.tsv (decode_key input)
   python3 reconcile.py --check   regenerate in memory, exit 1 if any committed file differs (rule 7)
 """
 import csv, difflib, io, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = ['ciphertext.tsv', 'dechiffre.tsv', 'pass_agreement.tsv']
+OUT = ['ciphertext.tsv', 'dechiffre.tsv', 'pass_agreement.tsv', 'signs.tsv']
 
 
 def load_rows():
@@ -59,6 +59,9 @@ def build():
     ct = io.StringIO()
     w = csv.writer(ct, delimiter='\t', lineterminator='\n')
     w.writerow(['leaf', 'line', 'pos', 'token', 'conf', 'layer', 'alt', 'note'])
+    sg = io.StringIO()
+    ws = csv.writer(sg, delimiter='\t', lineterminator='\n')
+    ws.writerow(['line', 'pos', 'token', 'conf'])
     dc = io.StringIO()
     wd = csv.writer(dc, delimiter='\t', lineterminator='\n')
     wd.writerow(['leaf', 'line', 'words', 'conf', 'note'])
@@ -77,7 +80,8 @@ def build():
             pos += 1
             note = r['note'] if pos == 1 else ''
             w.writerow([r['leaf'], r['row'], pos, tok, conf, kind, alt, note])
-    return ct.getvalue(), dc.getvalue(), rows
+            ws.writerow([r['leaf'] + '_' + r['row'], pos, tok if kind == 'cipher' else 'w:' + tok.replace(' ', '_'), conf])
+    return ct.getvalue(), dc.getvalue(), rows, sg.getvalue()
 
 
 def cipher_stream(ct_text):
@@ -113,16 +117,16 @@ def agreement(ct_text):
 
 
 def main():
-    ct, dc, _ = build()
+    ct, dc, _, sg = build()
     ag = agreement(ct)
-    new = dict(zip(OUT, [ct, dc, ag]))
+    new = dict(zip(OUT, [ct, dc, ag, sg]))
     if '--check' in sys.argv:
         bad = [f for f in OUT if not os.path.exists(os.path.join(HERE, f))
                or open(os.path.join(HERE, f), encoding='utf-8').read() != new[f]]
         if bad:
             print('STALE:', ', '.join(bad))
             sys.exit(1)
-        print('ok: ciphertext.tsv, dechiffre.tsv, pass_agreement.tsv match rows.tsv')
+        print('ok: ' + ', '.join(OUT) + ' match rows.tsv')
         return
     for f, t in new.items():
         open(os.path.join(HERE, f), 'w', encoding='utf-8').write(t)

@@ -1,0 +1,10 @@
+{"jobs": [{
+  "ciphertext": "signs.tsv", "format": "tsv", "key": "key_1696.tsv",
+  "reading": "reading_1696.txt", "tokens": "reading_tokens_1696.tsv", "style": "spaced",
+  "votes": {"file": "align_1696.tsv", "value_column": "plain"},
+  "voted_grade": "C", "unvoted_grade": "M", "null_values": ["0"],
+  "header": ["Vergier to Pontchartrain(?), BnF Clairambault 1108 f.253 (fol.249v-250r, 26 Mar 1696) and f.265 (fol.261v-262r): cipher groups under key_1696.tsv",
+             "Key recovered from the interlinear decipherment (dechiffre.tsv) by align_1696.py (control: control_1696.txt). Grades (rule 4): {grades_sorted}; {total} tokens.",
+             "C = key value equals the aligned decipherment at this position; M = it does not, or the group is uncertain; U = unkeyed (unglossed runs).",
+             "Regenerate: python3 tools/decode_key.py ciphers/clair1108-duvergier [--check]", ""]
+}]}

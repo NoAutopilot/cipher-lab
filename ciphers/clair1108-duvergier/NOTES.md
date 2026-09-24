@@ -1,4 +1,4 @@
-open
+partial
 
 # "Du Vergier", several original ciphered letters, BnF Clairambault 1108
 
@@ -334,3 +334,67 @@ No candidate here was confirmed against a page image or full page text; none sho
 **Requests this session:** archive.org 3, be-api.us.archive.org 4, catalog.hathitrust.org 4 (1 root reachability, 1 API test call, 1 real bibliographic-API call, 1 blocked `Search/Home`), data.htrc.illinois.edu 16 (2 passes of 8 volumes each, token-count endpoint only), francearchives.gouv.fr 3 (2 curl, 1 browser_fetch), siv.archives-nationales.culture.gouv.fr 1 (blocked), siv.archives-nationales.fr 1 (blocked), archivesnationales.culture.gouv.fr 2 (blocked), servicehistorique.sga.defense.gouv.fr 3 (1 root, 2 PDFs), www.googleapis.com 2 (Google Books volumes API, key+country=US, neither printed), books.google.com 17 (SearchWithinVolume JSON endpoint, ≥2s apart; 1 direct page fetch blocked by Google's own bot check, not retried), persee.fr 2, web.archive.org 5 (4 CDX lookups, one retried once after a tunnel reset per playbook), github.com 1 (shallow clone of aaymeloglu/unsolved-ciphers, grepped and discarded). WebSearch 5. No gallica.bnf.fr request made (out of scope for this lane). No logins, no subagents, no images fetched. Cost well under the $5 cap.
 
 Not touched: no decoding, no key application, no novelty wording, no fetch of the actual candidate pages (Google Books p.113 etc., HathiTrust v.3 p.318) -- all four candidate-key leads above are unread and are the concrete next step for a follow-on worker or for LANE G2 (Gallica) if any of them turn out to cross-reference a Gallica ark.
+## Reconciliation (24 Sept 2026)
+
+LANE G2 worker C (Opus), disk only, no network. Settled on the native page images (`images/folio250_canvas253.jpg`,
+`images/folio262_canvas265.jpg`), not on the crops: the crop "lines" cut a gloss tier and its cipher row into different
+crops, which is most of passA/passB's 58.6% disagreement.
+
+**Tiers, answered: the clear words written ABOVE the numeral groups are an interlinear decipherment, not part of the
+letter.** This reverses the "gloss verdict" in "Du Vergier leaves" above, which was read at thumbnail scale. Evidence:
+(1) a second hand, smaller and more cursive, each gloss ending in a long trailing flourish; on f.265 it is also a
+different ink: the letter is pale brown-grey, the glosses are near-black. PassB's "fainter second layer" on f.265 is the
+letter itself, and the "bold main hand" is the decipherer. (2) Each gloss stands over a run of groups, never over clear
+words: f253L "i'ay veu ce matin 722 143 185 38 151 34 224" carries "Milord Myddleton et Jay eu une" over the groups
+only. (3) The glosses are consistent with one another: 722 is "Milord Myddleton" three times (f253L R01, f265R R09 and
+R13); 225 is "ny" four times (f253R R12, R14 twice); "10 301 14" is "avec" three times; "16 105" is "d'Angleterre"
+twice. (4) The glosser corrects himself: "faict l'honneur" struck on f265L R20, "parfaitement" struck on f265R R08
+because it is clear text on the next row. Every cipher run on the four pages carries a gloss, except that on f265R R01
+the gloss begins at "M de Pontchartrain": the first nine groups (117 .. 289) have none. Same practice as clair1067 and
+fr5160 f.87.
+
+**Files.** `rows.tsv`: 141 physical rows (main and gloss), settled on the image, conf per token, alternatives and notes.
+`reconcile.py [--check]` builds `ciphertext.tsv` (leaf, line, pos, token, conf, layer, alt, note: 668 cipher groups,
+290 clear words, 1 struck group, 1 struck word), `dechiffre.tsv` (51 gloss rows), `signs.tsv` (the decode_key input), and
+`pass_agreement.tsv`. Against the reconciliation, passA matches 94.4% of groups on f.253 and 86.5% on f.265; passB matches
+52.2% and 64.7% (it dropped whole runs, not digits).
+
+**Out-of-range values, checked on the image.** 722, 725, 720 and 700 are real single groups, a name series: 722 is
+Milord Myddleton; 725 is Prince d'Orange (after 259 "le"); 720 is Roy d'Angleterre (f265L R09); 700 is "(d')Anglois"
+(f265R R10). 601 is real and written twice in the letter's pale ink (f265L R15, R20). Both times it sits beside a
+correction ("16" struck before it; "6[6]10" rewritten before it), and the alignment gives it no letters (null or slip).
+Pass A's "1917" (f265R R11) is written without a gap; it is read 19 17 (M, alt 1917), since 17 is common and the alignment
+gives 19 17 = "en". Also retouched in dark ink: "300" f265L R13, "30" f265R R01, and "143" f265R R12 (4 over 2).
+
+**Structure.** 668 groups, 132 distinct values: 8-52 (dense, frequent: 30 x41, 10 x27, 17 x24, 28/29 x20), 104-303
+(syllables and short words), 601/610, and 700-725 (names). The layout alternates clear connective French with cipher
+runs of 4-45 groups; the sensitive nouns and the whole of each sensitive clause are in cipher. It is a syllabic code:
+single letters, syllables (259 que, 133 de, 195 la, 196 le, 267 re, 289 te, 275 roi, 211 ment), words (225 ny, 298
+tres, 142 est, 251 pour, 137 dans, 161 faire) and names. Repeats within and across the letters are frequent: "133 30
+290 224 18 30 251" (des tinées pour) twice on f253R.
+
+**Key.** `align_1696.py` reuses clair1067's `align_1646.py` EM unchanged (imported, not copied). It has 31 spans (one per
+continuous cipher run, with its gloss), and four long names are treated as one symbol each ([text|sym] in SPANS). Result:
+`key_1696.tsv` has 129 codes; 36 are single attestations and 25 are flagged conflict or minor conflict. Consistency is
+0.933. Control (`control_1696.txt`, 3 shuffled span/gloss pairings, same EM): true pairing 0.926 against shuffled max
+0.492 (mean 0.470); loglik -1330 against a best shuffled -2660. The control was run on the version before the A06 fix
+below. `decode.json` + `python3 tools/decode_key.py ciphers/clair1108-duvergier --check` regenerates `reading_1696.txt`
+and `reading_tokens_1696.tsv`: **667 tokens, C 584, M 82, U 1** (C = key value equals the aligned gloss at that
+position; no H, no key source; the struck 16 is kept as a clear token). A cryptanalytic result graded from the letter's own
+known plaintext.
+
+The first key run itself caught an error in my span table. The 11 groups "281 29 / 195 119 30 289 133 42 18 50 32"
+(f253L R07-R08) looked unglossed, but they decode as "sur la coste de Kent": the gloss over R07 runs on into R08. A06
+was widened and the run repeated.
+
+**Known weak spots for a solver (M rows, conflicts).** Words longer than the aligner's 7-letter cap (correspondance,
+Hollande, honnesteté, recoivent) are split across neighbours. 725 prints "le&" (the aligner took "le" too); read 725 =
+Prince d'Orange and 259 = le. 700 prints "angloi": a letter was dropped at the cap. 610 "m", 601 "0" and 8 "0" in "206
+8 610 601 206" = "me mettre" are uncertain: the writer's slip, and only the two 206s and "32 33 267" are secure. 20 "f" /
+161 "faire" (l'affaire = 195 20 161) is right as printed.
+
+**Not done (follow-ups, one line each).** (1) f.252 (fol.249r), the first page of the 26 March letter, is dense cipher
+with glosses and was never cut or transcribed: it is the next transcription job and more evidence for the key. (2) f.251
+(fol.247v, tail of an earlier letter) has not been cut either. (3) Rerun `align_1696.py --control 3` on the current spans
+(about 10 minutes); the separation is not expected to change. (4) A search on the decoded plaintext (print_check, Marine
+B3 inventory) was not run: this is a reconciliation, and novelty is not classified here.

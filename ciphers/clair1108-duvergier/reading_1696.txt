@@ -1,0 +1,86 @@
+Vergier to Pontchartrain(?), BnF Clairambault 1108 f.253 (fol.249v-250r, 26 Mar 1696) and f.265 (fol.261v-262r): cipher groups under key_1696.tsv
+Key recovered from the interlinear decipherment (dechiffre.tsv) by align_1696.py (control: control_1696.txt). Grades (rule 4): C 584, M 82, U 1; 667 tokens.
+C = key value equals the aligned decipherment at this position; M = it does not, or the group is uncertain; U = unkeyed (unglossed runs).
+Regenerate: python3 tools/decode_key.py ciphers/clair1108-duvergier [--check]
+
+f253L_R00	[B]OULOGNE CE 26E MARS 1696
+f253L_R01	I'AY VEU CE MATIN Milord Myddleton et a y eu u ne
+f253L_R02	lo n u e co n ue r en ti on a ue c uy
+f253L_R03	IL M'A PARU BEAUCOUP plus e m p re s se que
+f253L_R04	de co u rl me pour l e p ri se IL M'A
+f253L_R05	DIT SEULEMENT QU'IL CROYOIT ET IE TROUVE QUE C'EST AVEC
+f253L_R06	ASSEZ DE RAISON QUE la f faire est a p re en
+f253L_R07	n t p re s que i m p ra ti ca b le su r
+f253L_R08	la co s te de k e n t A CAUSE DES fo r ce s
+f253L_R09	que le& A MISES DE CE COSTÉ LA ET QU'IL SEROIT A
+f253L_R10	PRESENT NECESSAIRE DE te n te r le de ba r que
+f253L_R11	ment dans la p ro ui n ce d y o r k ou sont
+f253L_R12	p re s que to u s le s ha ra s d Angleterre ET OU
+f253L_R13	PAR CONSEQUENT on t ro u ue ro t le s c he
+f253L_R14	ua u x ne ce s en i re s pour l rme e ou ien
+f253L_R15	dans u ne de s p ro ui n ce s de l ou est
+f253L_R16	PARCEQUE LE PAYS y est a bon da n t de que l rme
+f253L_R17	e y su b si s te ro t a i se ment OU MESME
+f253L_R18	DE faire la de s ce n t dans ce s d eux li eux a la
+f253R_R01	fo i s ET POUR CELA de faire e m ba r que r a
+f253R_R02	b r est le s troup s de s ti ne e s pour l ou est
+f253R_R03	et a ca la i s ce l le s de s ti ne e s pour
+f253R_R04	y o r k VOILA MONSEIGNEUR so n p ro ie t
+f253R_R05	IL PEUT Y AVOIR QUELQUE CHOSE DE BON MAIS IE NE
+f253R_R06	SAY SI L'EXECUTION N'EN SEROIT PAS PLUS DIFFICILE QUE
+f253R_R07	DU PREMIER
+f253R_R08	D'AILLEURS il co m p te su r la fi de li te de
+f253R_R09	plus i e u r s pe r r ne s dans ce pa y s la
+f253R_R10	ET IE VEUX BIEN LE CROIRE MAIS IE IUGE PAR TOUT
+f253R_R11	CE QUE I'ENTENDS DIRE ET A LUY ET AUX AUTRES QU'ILS N'Y
+f253R_R12	ONT GUERE di n te l li g n ce nymes me de corres
+f253R_R13	ondance il s ne n re co i ue nt a u cu ne nouue
+f253R_R14	nymes pa r la holl nymes da i l le u r s ET TOUT CE
+f253R_R15	QU'ILS EN APPRENNENT LEUR VIENT du c he ua li e r
+f253R_R16	gi ra r di n QUI EST UN i r la n do i s e sta
+f253R_R17	b li a du n que r que
+f253R_R18	JE SUIS AVEC UN PROFFOND RESPECT
+f253R_R19	MONSEIGNEUR VOSTRE TRES HUMBLE ET TRES OBEISSANT SERVITEUR
+f253R_R20	VERGIER
+f265L_R01	CET ADVIS D'ENNUY ET D'INQUIETUDE DE MA PART
+f265L_R02	PLUSTOST QUE DE PRUDENCE ET DE BON CONSEIL
+f265L_R03	CEPENDANT CELA ME FRAPOIT DEPUIS LONG TEMPS ET
+f265L_R04	SURTOUT DEPUIS QU'ON SAIT ICY QU'ON ARME A
+f265L_R05	DUNKERQUE OU IE POURROIS ESTRE UTILE PENDANT
+f265L_R06	QUE L'ON ME VOIT TRES INUTILE ICY C'EST POURQUOY
+f265L_R07	IE N'AY PAS CRU DEVOIR ESSAYER D'Y RESTER DAVANTAGE
+f265L_R08	I'AY SEULEMENT DONNÉ a mo n de pa r t u n
+f265L_R09	to u r qui na pas de p le a u Roy d'Angleterre ET QUE IE
+f265L_R10	CROY QUE VOUS NE DESAPROUVERÉS PAS ie uy a y
+f265L_R11	f a t e n te n d re que me uo y a nt i cy
+f265L_R12	i n u ti le pour so n se r ui ce I'AVOIS DEMMENDÉ
+f265L_R13	IL Y A QUELQUE TEMPS a m ua pe re pe r mi s
+f265L_R14	si on de me n re to u r ne r a du n que r
+f265L_R15	que pour y a y de r a 16 a ua n ce r la r me
+f265L_R16	ment ET QU'IL M'A REPONDU QUE SI IE ME CROYOIS
+f265L_R17	i n u ti le a bo u lo g ne ie po u uo i s
+f265L_R18	M'EN RETOURNER A DUNKERQUE POURVEUQUE le ro d Angleterre
+f265L_R19	a p ro u ua s t mo n de pa r t que me
+f265L_R20	il ma uo i t FAIT L'HONNEUR DE me m me
+f265L_R21	t t re so u s se s o r d re s IE NE DEVOIS
+f265L_R22	faire a u cu n mo u ue ment sans so n ordre e x p
+f265L_R23	re s il ma pa ru fo r t to u c he de
+f265R_R01	ce t te [178] ne s te te de m de po n t
+f265R_R02	c ha r t ra i n et de mo n EMPRESSEMENT
+f265R_R03	POUR SON SERVICE CAR il est tres pe r su a de
+f265R_R04	que la r me ment de du n que r pas re r de
+f265R_R05	en de s ce n te et do i t se io i n d re
+f265R_R06	a m DE CHASTEAURENAUT ET IL M'A DIT QU'IL
+f265R_R07	CROYOIT QU'EFFECTIVEMENT IE SEROIS PLUS UTILE A
+f265R_R08	DUNKERQUE D'AILLEURS MONSEIGNEUR ie su i s
+f265R_R09	PARFAITEMENT a ue c Milord Myddleton et a ue c to u t
+f265R_R10	ce qui l y a i cy d angloi u n pe u CONSIDERABLE
+f265R_R11	MOT ESTANT AVEC eux e n co t te ri e io u r na
+f265R_R12	li e re de de ba u c he et de p la i si r
+f265R_R13	JE N'AY RIEN REMARQUÉ e n Milord Myddleton QUI NE ME CONFIRME
+f265R_R14	CE QUE I'AY EU L'HONNEUR DE VOUS EN MARQUER EN
+f265R_R15	DERNIER LIEU
+f265R_R16	JE SUIS AVEC UN PROFFOND RESPECT
+f265R_R17	MONSEIGNEUR
+f265R_R18	VOTRE TRES HUMBLE ET TRES OBEISSANT SERVITEUR
+f265R_R19	VERGIER
