@@ -1,0 +1,339 @@
+line	position	sign	confidence	alt	why
+f226r_C1	1	_35	M	B:35	differ
+f226r_C1	2	18	H		agree
+f226r_C1	3	_84	H		agree
+f226r_C1	4	v	M	B:>	differ
+f226r_C1	5	35	H		agree
+f226r_C2	1	40	M	A:-	gap
+f226r_C2	2	_40	M	B:54	differ
+f226r_C2	3	_54	M	B:Z	differ
+f226r_C2	4	63	M	B:65	differ
+f226r_C2	5	64	H		agree
+f226r_C2	6	_88	H		agree
+f226r_C2	7	_48	M	B:48	differ
+f226r_C2	8	Z	H		agree
+f226r_C2	9	d	H		agree
+f226r_C2	10	13	H		agree
+f226r_C2	11	n	M	B:w	differ
+f226r_C2	12	_27	H		agree
+f226v_C01	1	_94	M	B:94	differ
+f226v_C01	2	9	H		agree
+f226v_C01	3	y	H		agree
+f226v_C01	4	68	H		agree
+f226v_C01	5	L	M	B:-	gap
+f226v_C01	6	v	M		agree-flagged
+f226v_C01	7	c	M	A:-	gap
+f226v_C01	8	70	H		agree
+f226v_C01	9	55	M		agree-flagged
+f226v_C01	10	18	H		agree
+f226v_C01	11	28	H		agree
+f226v_C01	12	_99	M	B:99	differ
+f226v_C01	13	Z	H		agree
+f226v_C01	14	65	M	B:63	differ
+f226v_C02	1	2#	M		agree-flagged
+f226v_C02	2	81	H		agree
+f226v_C02	3	99	M	B:77	differ
+f226v_C02	4	L	M	B:c	differ
+f226v_C02	5	X	M		agree-flagged
+f226v_C02	6	65	H		agree
+f226v_C02	7	Z	H		agree
+f226v_C02	8	c	M	A:-	gap
+f226v_C02	9	y	H		agree
+f226v_C02	10	70	H		agree
+f226v_C02	11	p	M		agree-flagged
+f226v_C02	12	82	H		agree
+f226v_C02	13	Z	H		agree
+f226v_C03	1	w	M	B:un	differ
+f226v_C03	2	Z	H		agree
+f226v_C03	3	_64	M	B:63	differ
+f226v_C03	4	9	H		agree
+f226v_C03	5	72	H		agree
+f226v_C03	6	Z	H		agree
+f226v_C03	7	v	M		agree-flagged
+f226v_C03	8	60	H		agree
+f226v_C03	9	Z	H		agree
+f226v_C03	10	50	H		agree
+f226v_C03	11	y	H		agree
+f226v_C04	1	L	M		agree-flagged
+f226v_C04	2	60	H		agree
+f226v_C04	3	_71	M	B:71	differ
+f226v_C04	4	91	M	B:gt	differ
+f226v_C04	5	33	H		agree
+f226v_C04	6	_40	M	B:40	differ
+f226v_C04	7	Z	H		agree
+f226v_C04	8	v	M		agree-flagged
+f226v_C04	9	60	H		agree
+f226v_C04	10	Z	H		agree
+f226v_C04	11	_88	M	B:88	differ
+f226v_C04	12	36	H		agree
+f226v_C04	13	_88	M	B:88	differ
+f226v_C05	1	31	H		agree
+f226v_C05	2	y	H		agree
+f226v_C05	3	72	H		agree
+f226v_C05	4	rr	H		agree
+f226v_C05	5	9	H		agree
+f226v_C05	6	_54	M	B:54	differ
+f226v_C05	7	y	H		agree
+f226v_C05	8	L	M		agree-flagged
+f226v_C05	9	22	H		agree
+f226v_C05	10	9	H		agree
+f226v_C05	11	60	H		agree
+f226v_C05	12	_41	M	B:41	differ
+f226v_C05	13	rr	H		agree
+f226v_C05	14	75	H		agree
+f226v_C06	1	ff	H		agree
+f226v_C06	2	24	H		agree
+f226v_C06	3	62	H		agree
+f226v_C06	4	v	M	B:c	differ
+f226v_C06	5	9	H		agree
+f226v_C06	6	y	H		agree
+f226v_C06	7	v	M		agree-flagged
+f226v_C06	8	29	H		agree
+f226v_C06	9	Z	H		agree
+f226v_C06	10	v	M	B:c	differ
+f226v_C06	11	y	H		agree
+f226v_C06	12	Z	H		agree
+f226v_C07	1	69	H		agree
+f226v_C07	2	y	H		agree
+f226v_C07	3	82	H		agree
+f226v_C07	4	Z	H		agree
+f226v_C08	1	69	H		agree
+f226v_C08	2	rr	H		agree
+f226v_C08	3	y	H		agree
+f226v_C08	4	25	M	B:23	differ
+f226v_C08	5	9	H		agree
+f226v_C08	6	X	M		agree-flagged
+f226v_C08	7	_88	M	B:88	differ
+f226v_C08	8	82	H		agree
+f226v_C08	9	ff	H		agree
+f226v_C08	10	24	H		agree
+f226v_C09	1	23	H		agree
+f226v_C09	2	_94	M	B:94	differ
+f226v_C09	3	w	M		agree-flagged
+f226v_C09	4	c	M	A:-	gap
+f226v_C09	5	y	M		agree-flagged
+f226v_C09	6	66	H		agree
+f226v_C09	7	24	H		agree
+f226v_C09	8	71	H		agree
+f226v_C09	9	v	M		agree-flagged
+f226v_C09	10	60	H		agree
+f226v_C09	11	103	H		agree
+f226v_C10	1	_91	M	B:91	differ
+f226v_C10	2	9	H		agree
+f226v_C10	3	rr	H		agree
+f226v_C10	4	75	M		agree-flagged
+f226v_C10	5	X	M		agree-flagged
+f226v_C10	6	39	H		agree
+f226v_C10	7	81	H		agree
+f226v_C10	8	_88	M	B:88	differ
+f226v_C10	9	_40	M	B:40	differ
+f226v_C10	10	73	H		agree
+f226v_C10	11	X	M		agree-flagged
+f226v_C10	12	_41	M	B:41	differ
+f226v_C11	1	Z	H		agree
+f226v_C11	2	65	H		agree
+f226v_C11	3	v	M		agree-flagged
+f226v_C11	4	62	H		agree
+f226v_C11	5	rr	H		agree
+f226v_C11	6	35	M	B:75	differ
+f226v_C11	7	39	M	B:59	differ
+f226v_C11	8	100	H		agree
+f226v_C11	9	X	M		agree-flagged
+f226v_C11	10	71	H		agree
+f226v_C11	11	m	M		agree-flagged
+f226v_C12	1	99	H		agree
+f226v_C12	2	9	H		agree
+f226v_C12	3	91	H		agree
+f226v_C12	4	39	H		agree
+f226v_C12	5	50	H		agree
+f226v_C12	6	Z	H		agree
+f226v_C12	7	65	H		agree
+f226v_C12	8	2#	M		agree-flagged
+f226v_C12	9	66	H		agree
+f226v_C12	10	9	M	B:q	differ
+f226v_C12	11	y	H		agree
+f226v_C12	12	102	H		agree
+f226v_C13	1	31	H		agree
+f226v_C13	2	v	M		agree-flagged
+f226v_C13	3	y	H		agree
+f226v_C13	4	70	H		agree
+f226v_C13	5	42	H		agree
+f226v_C13	6	9	H		agree
+f226v_C13	7	88	H		agree
+f226v_C13	8	51	H		agree
+f226v_C13	9	v	M		agree-flagged
+f226v_C13	10	Z	H		agree
+f226v_C14	1	67	H		agree
+f226v_C14	2	y	H		agree
+f226v_C14	3	w	M	B:n	differ
+f226v_C14	4	y	H		agree
+f226v_C14	5	65	H		agree
+f226v_C14	6	y	H		agree
+f226v_C14	7	82	H		agree
+f226v_C14	8	91	H		agree
+f226v_C14	9	62	H		agree
+f226v_C14	10	h	M		agree-flagged
+f226v_C14	11	71	H		agree
+f226v_C14	12	32	H		agree
+f227r_C01	1	54	H		agree
+f227r_C01	2	y	H		agree
+f227r_C01	3	v	M		agree-flagged
+f227r_C01	4	_71	M	B:71	differ
+f227r_C01	5	b	M		agree-flagged
+f227r_C01	6	62	H		agree
+f227r_C01	7	L	M	B:-	gap
+f227r_C01	8	d	M	B:-	gap
+f227r_C01	9	v	M	B:-	gap
+f227r_C02	1	q	M	B:9	differ
+f227r_C02	2	y	H		agree
+f227r_C02	3	_91	M	B:91	differ
+f227r_C02	4	73	H		agree
+f227r_C02	5	rr	H		agree
+f227r_C02	6	X	M		agree-flagged
+f227r_C02	7	_92	M	B:92	differ
+f227r_C02	8	_91	M	B:91	differ
+f227r_C02	9	d	H		agree
+f227r_C02	10	9	H		agree
+f227r_C02	11	_88	M	B:88	differ
+f227r_C03	1	_40	M	B:40	differ
+f227r_C03	2	73	H		agree
+f227r_C03	3	X	M		agree-flagged
+f227r_C03	4	_41	M	B:41	differ
+f227r_C03	5	v	M		agree-flagged
+f227r_C03	6	Z	H		agree
+f227r_C03	7	56	M		agree-flagged
+f227r_C03	8	ff	H		agree
+f227r_C03	9	63	M		agree-flagged
+f227r_C03	10	62	H		agree
+f227r_C03	11	v	M	B:-	gap
+f227r_C03	12	v	M	B:-	gap
+f227r_C04	1	v	M		agree-flagged
+f227r_C04	2	y	H		agree
+f227r_C04	3	50	H		agree
+f227r_C04	4	Z	H		agree
+f227r_C04	5	66	H		agree
+f227r_C04	6	y	H		agree
+f227r_C04	7	24	H		agree
+f227r_C04	8	_88	M	B:88	differ
+f227r_C04	9	24	H		agree
+f227r_C04	10	32	H		agree
+f227r_C04	11	v	M		agree-flagged
+f227r_C04	12	x	M		agree-flagged
+f227r_C04	13	60	H		agree
+f227r_C05	1	9	H		agree
+f227r_C05	2	y	H		agree
+f227r_C05	3	_90	M	B:90	differ
+f227r_C05	4	rr	H		agree
+f227r_C05	5	y	H		agree
+f227r_C05	6	70	H		agree
+f227r_C05	7	_94	M	B:94	differ
+f227r_C05	8	w	M		agree-flagged
+f227r_C05	9	v	M		agree-flagged
+f227r_C05	10	y	H		agree
+f227r_C05	11	66	H		agree
+f227r_C05	12	9	H		agree
+f227r_C05	13	y	H		agree
+f227r_C06	1	23	H		agree
+f227r_C06	2	_48	M	B:48	differ
+f227r_C06	3	y	H		agree
+f227r_C06	4	65	M	B:63	differ
+f227r_C06	5	9	H		agree
+f227r_C06	6	_88	M	B:88	differ
+f227r_C06	7	24	H		agree
+f227r_C06	8	73	H		agree
+f227r_C06	9	y	H		agree
+f227r_C06	10	b	M		agree-flagged
+f227r_C06	11	60	H		agree
+f227r_C07	1	80	H		agree
+f227r_C07	2	31	H		agree
+f227r_C07	3	18	H		agree
+f227r_C07	4	Z	H		agree
+f227r_C07	5	70	H		agree
+f227r_C07	6	v	M		agree-flagged
+f227r_C07	7	62	H		agree
+f227r_C07	8	rr	H		agree
+f227r_C07	9	75	M	B:73	differ
+f227r_C07	10	62	H		agree
+f227r_C07	11	v	M		agree-flagged
+f227r_C07	12	v	M		agree-flagged
+f227r_C08	1	88	H		agree
+f227r_C08	2	23	H		agree
+f227r_C08	3	89	H		agree
+f227r_C08	4	w	M		agree-flagged
+f227r_C08	5	99	H		agree
+f227r_C08	6	85	H		agree
+f227r_C08	7	ff	H		agree
+f227r_C08	8	70	H		agree
+f227r_C08	9	31	H		agree
+f227r_C08	10	v	M		agree-flagged
+f227r_C08	11	Z	H		agree
+f227r_C09	1	52	M		agree-flagged
+f227r_C09	2	65	M	B:63	differ
+f227r_C09	3	24	M		agree-flagged
+f227r_C09	4	86	M		agree-flagged
+f227r_C09	5	63	M		agree-flagged
+f227r_C09	6	X	M		agree-flagged
+f227r_C09	7	75	M		agree-flagged
+f227r_C09	8	X	M		agree-flagged
+f227r_C09	9	22	M		agree-flagged
+f227r_C09	10	h	M		agree-flagged
+f227r_C09	11	w	M		agree-flagged
+f227r_C10	1	rr	M		agree-flagged
+f227r_C10	2	y	M		agree-flagged
+f227r_C10	3	9	M		agree-flagged
+f227r_C10	4	m	M		agree-flagged
+f227r_C10	5	9	M		agree-flagged
+f227r_C10	6	v	M		agree-flagged
+f227r_C10	7	88	M	B:60	differ
+f227r_C10	8	24	M		agree-flagged
+f227r_C10	9	56	M	B:38	differ
+f227r_C10	10	y	M	B:3	differ
+f227r_C10	11	52	M	B:32	differ
+f227r_C10	12	103	M		agree-flagged
+f227r_C11	1	9	M		agree-flagged
+f227r_C11	2	ff	M		agree-flagged
+f227r_C11	3	24	M		agree-flagged
+f227r_C11	4	9	M		agree-flagged
+f227r_C11	5	y	M		agree-flagged
+f227r_C11	6	82	M		agree-flagged
+f227r_C11	7	55	M	B:33	differ
+f227r_C11	8	26	M		agree-flagged
+f227r_C11	9	h	M		agree-flagged
+f227r_C11	10	w	M		agree-flagged
+f227r_C11	11	7	M	A:-	gap
+f227r_C11	12	40	M	B:0	differ
+f227r_C12	1	y	M		agree-flagged
+f227r_C12	2	v	M		agree-flagged
+f227r_C12	3	_71	M	B:71	differ
+f227r_C12	4	v	M		agree-flagged
+f227r_C12	5	60	M		agree-flagged
+f227r_C12	6	_100	M	B:100	differ
+f227r_C12	7	v	M		agree-flagged
+f227r_C12	8	Z	M		agree-flagged
+f227r_C12	9	52	M		agree-flagged
+f227r_C12	10	73	M		agree-flagged
+f227r_C12	11	rr	M		agree-flagged
+f227r_C13	1	_71	M	B:71	differ
+f227r_C13	2	_91	M	B:91	differ
+f227r_C13	3	d	H		agree
+f227r_C13	4	_88	M	B:88	differ
+f227r_C13	5	39	H		agree
+f227r_C13	6	75	H		agree
+f227r_C13	7	X	M		agree-flagged
+f227r_C13	8	Z	H		agree
+f227r_C13	9	103	H		agree
+f227r_C13	10	102	H		agree
+f227r_C14	1	88	M		agree-flagged
+f227r_C14	2	28	M		agree-flagged
+f227r_C14	3	v	M	B:-	gap
+f227r_C14	4	v	M	B:00	differ
+f227r_C14	5	23	M	B:62	differ
+f227r_C14	6	2	M	B:32	differ
+f227r_C14	7	v	M		agree-flagged
+f227r_C14	8	X	M	B:x	differ
+f227r_C14	9	v	M	B:60	differ
+f227r_C14	10	24	M		agree-flagged
+f227r_C14	11	60	M	A:-	gap
+f227r_C14	12	v	M	B:00	differ
+f227r_C14	13	v	M	B:60	differ
+f227r_C14	14	Z	M		agree-flagged

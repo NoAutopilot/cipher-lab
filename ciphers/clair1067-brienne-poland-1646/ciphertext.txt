@@ -1,0 +1,339 @@
+line	pos	token	conf	alt	note
+f226r_C1	1	55	M	A:_35|B:35	both figures have the flat-topped 5 form; both passes 35
+f226r_C1	2	18	H		
+f226r_C1	3	_84	H		
+f226r_C1	4	>	H	A:v	hook sign, distinct from the loop v (A v, B >)
+f226r_C1	5	35	H		
+f226r_C2	1	40	H	A:_40	
+f226r_C2	2	54	H	A:_54	
+f226r_C2	3	Z	H	A:63	Z present on the image, missed by A
+f226r_C2	4	65	H	A:-	6 + flat-topped 5 (the hand writes 5 like a z with a flat top; 3 has a round top)
+f226r_C2	5	64	H		
+f226r_C2	6	_88	H		
+f226r_C2	7	48	H	A:_48	
+f226r_C2	8	Z	H		
+f226r_C2	9	d	H		
+f226r_C2	10	13	H		
+f226r_C2	11	w	H	A:n	
+f226r_C2	12	_27	H		
+f226v_C01	1	_94	H	B:94	
+f226v_C01	2	9_	H	A:9|B:9	bar through the tail at baseline
+f226v_C01	3	y_	H	A:y|B:y	
+f226v_C01	4	68	H		
+f226v_C01	5	~	H	A:L|B:-	long swash; A L, B v
+f226v_C01	6	v	H		small open loop; B c
+f226v_C01	7	70	H		
+f226v_C01	8	55	H		
+f226v_C01	9	18	H		
+f226v_C01	10	28	H		
+f226v_C01	11	_99	H	B:99	
+f226v_C01	12	Z	H		
+f226v_C01	13	65	H	B:63	
+f226v_C02	1	2#	H		2 followed by a double-barred cross; same sign at f226v_C12/8
+f226v_C02	2	_81	H	A:81|B:81	
+f226v_C02	3	77	H	A:99	A 99; two 7s on the crop
+f226v_C02	4	~	H	A:L|B:c	swash omitted by A; B c
+f226v_C02	5	v	H	A:-|B:-	
+f226v_C02	6	X	H		
+f226v_C02	7	65	H		
+f226v_C02	8	Z	H		
+f226v_C02	9	~	H	A:-|B:c	swash omitted by both passes
+f226v_C02	10	y_	H	A:y|B:y	
+f226v_C02	11	70	H		
+f226v_C02	12	p	H		
+f226v_C02	13	82	H		
+f226v_C02	14	Z	H		
+f226v_C03	1	w	H	B:un	
+f226v_C03	2	Z	H		
+f226v_C03	3	65	H	A:_64|B:63	flat-topped 5; A 64, B 63
+f226v_C03	4	9	H		
+f226v_C03	5	72	H		
+f226v_C03	6	Z	H		
+f226v_C03	7	v	H		
+f226v_C03	8	60	H		
+f226v_C03	9	Z	H		
+f226v_C03	10	50	H		
+f226v_C03	11	y	H		
+f226v_C04	1	L	H		
+f226v_C04	2	60	H		
+f226v_C04	3	_71	H	B:71	
+f226v_C04	4	9+	M	A:91|B:gt	9 followed by a cross (A 91, B gt); unlike the plain 91 at f226v_C10/1
+f226v_C04	5	33	H		
+f226v_C04	6	40	H	A:_40	slanting stroke over the 4 is the descender of the interlinear word above, not an overline
+f226v_C04	7	Z	H		
+f226v_C04	8	v	H		
+f226v_C04	9	60	H		
+f226v_C04	10	Z	H		
+f226v_C04	11	_88	H	B:88	
+f226v_C04	12	36	H		
+f226v_C04	13	_88	H	B:88	
+f226v_C05	1	31	H		
+f226v_C05	2	y_	H	A:y|B:y	
+f226v_C05	3	72	H		
+f226v_C05	4	rr	H		
+f226v_C05	5	9_	H	A:9|B:9	
+f226v_C05	6	54	H	A:_54	
+f226v_C05	7	y_	H	A:y|B:y	
+f226v_C05	8	L	H		
+f226v_C05	9	22	H		
+f226v_C05	10	9	H		
+f226v_C05	11	60	H		
+f226v_C05	12	41	H	A:_41	
+f226v_C05	13	rr	H		
+f226v_C05	14	75	H		
+f226v_C06	1	ff	H		
+f226v_C06	2	24	H		
+f226v_C06	3	62	H		
+f226v_C06	4	~	H	A:v|B:c	
+f226v_C06	5	9_	H	A:9|B:9	
+f226v_C06	6	y_	H	A:y|B:y	
+f226v_C06	7	v	H		
+f226v_C06	8	29	H		
+f226v_C06	9	Z	H		
+f226v_C06	10	~	H	A:v|B:c	
+f226v_C06	11	y_	H	A:y|B:y	
+f226v_C06	12	Z	H		
+f226v_C07	1	69	H		
+f226v_C07	2	y_	H	A:y|B:y	
+f226v_C07	3	_82	H	A:82|B:82	
+f226v_C07	4	Z	H		
+f226v_C08	1	69	H		
+f226v_C08	2	rr	H		
+f226v_C08	3	y	H		short unlooped y form (also f226v_C14/4, f227r_C04/6, f227r_C05/5)
+f226v_C08	4	25	H	B:23	2 + flat-topped 5; B 23
+f226v_C08	5	9_	H	A:9|B:9	
+f226v_C08	6	X	H		
+f226v_C08	7	_88	H	B:88	
+f226v_C08	8	_82	H	A:82|B:82	
+f226v_C08	9	ff	H		
+f226v_C08	10	24	H		
+f226v_C09	1	23	H		
+f226v_C09	2	_94	H	B:94	
+f226v_C09	3	w	H		
+f226v_C09	4	~	H	A:-|B:c	swash omitted by A; B c
+f226v_C09	5	y_	H	A:y|B:y	
+f226v_C09	6	66	H		
+f226v_C09	7	24	H		
+f226v_C09	8	71	H		
+f226v_C09	9	v	H		
+f226v_C09	10	60	H		
+f226v_C09	11	103	H		
+f226v_C10	1	_91	H	B:91	
+f226v_C10	2	9	H		
+f226v_C10	3	rr	H		
+f226v_C10	4	75	H		
+f226v_C10	5	X	H		
+f226v_C10	6	39	H		
+f226v_C10	7	81	H		
+f226v_C10	8	_88	H	B:88	
+f226v_C10	9	40	H	A:_40	
+f226v_C10	10	75	H	A:73|B:73	
+f226v_C10	11	X	H		7 + flat-topped 5, the same form as pos 4; both passes 73
+f226v_C10	12	41	H	A:_41	
+f226v_C11	1	~	H	A:-|B:-	swash at line start omitted by both passes (visible on f226v_L17_s2)
+f226v_C11	2	Z	H		
+f226v_C11	3	65	H		
+f226v_C11	4	v	H		
+f226v_C11	5	62	H		
+f226v_C11	6	rr	H		
+f226v_C11	7	75	H	A:35	A 35
+f226v_C11	8	59	H	A:39	A 39
+f226v_C11	9	_100	H	A:100|B:100	
+f226v_C11	10	X	H		
+f226v_C11	11	71	H		
+f226v_C11	12	m	H		
+f226v_C12	1	_99	H	A:99|B:99	
+f226v_C12	2	9_	H	A:9|B:9	
+f226v_C12	3	_91	H	A:91|B:91	
+f226v_C12	4	39	H		
+f226v_C12	5	50	H		
+f226v_C12	6	Z	H		
+f226v_C12	7	65	H		
+f226v_C12	8	2#	H		
+f226v_C12	9	66	H		
+f226v_C12	10	q	H	A:9	q with a slash; A 9
+f226v_C12	11	y_	H	A:y|B:y	
+f226v_C12	12	102	H		
+f226v_C13	1	31	H		
+f226v_C13	2	~	H	A:v|B:v	
+f226v_C13	3	y_	H	A:y|B:y	
+f226v_C13	4	70	H		
+f226v_C13	5	42	H		
+f226v_C13	6	9_	H	A:9|B:9	
+f226v_C13	7	_88	H	A:88|B:88	
+f226v_C13	8	51	H		
+f226v_C13	9	~	H	A:v|B:v	
+f226v_C13	10	Z	H		
+f226v_C14	1	67	H		
+f226v_C14	2	y_	H	A:y|B:y	
+f226v_C14	3	w	H	B:n	
+f226v_C14	4	y	M		short unlooped y; could be a distinct sign
+f226v_C14	5	65	H		
+f226v_C14	6	y_	H	A:y|B:y	
+f226v_C14	7	_82	H	A:82|B:82	
+f226v_C14	8	_91	H	A:91|B:91	
+f226v_C14	9	62	H		
+f226v_C14	10	h_	M	A:h|B:h	h-shaped sign with a baseline bar; both passes h
+f226v_C14	11	_71	H	A:71|B:71	
+f226v_C14	12	32	H		
+f227r_C01	1	54	H		
+f227r_C01	2	y_	H	A:y|B:y	
+f227r_C01	3	v	H		
+f227r_C01	4	_71	H	B:71	
+f227r_C01	5	L	H	B:b	same looped L as f226v_C04/1 and C05/8; both passes b here
+f227r_C01	6	62	H	A:-	
+f227r_C01	7	~	H	A:-|B:-	swash, d, v omitted by B
+f227r_C01	8	d	H	B:-	
+f227r_C01	9	v	H	B:-	
+f227r_C02	1	9_	H	A:q|B:9	
+f227r_C02	2	y_	H	A:y|B:y	
+f227r_C02	3	_91	H	B:91	
+f227r_C02	4	75	H	A:73|B:73	7 + flat-topped 5; both passes 73
+f227r_C02	5	rr	H		
+f227r_C02	6	X	H		
+f227r_C02	7	_92	H	B:92	
+f227r_C02	8	_91	H	B:91	
+f227r_C02	9	d	H		
+f227r_C02	10	9	H		
+f227r_C02	11	_88	H	B:88	
+f227r_C03	1	40	H	A:_40	
+f227r_C03	2	75	H	A:73|B:73	7 + flat-topped 5; both passes 73
+f227r_C03	3	X	H		
+f227r_C03	4	41	H	A:_41	
+f227r_C03	5	~	H	A:v|B:v	
+f227r_C03	6	Z	H		
+f227r_C03	7	56	H		
+f227r_C03	8	ff	H		
+f227r_C03	9	65	H	A:63|B:63	flat-topped 5; both passes 63
+f227r_C03	10	62	H		
+f227r_C03	11	~	H	A:-|B:-	
+f227r_C03	12	v	H	B:-	
+f227r_C04	1	~	H	A:v|B:v	
+f227r_C04	2	y	H		
+f227r_C04	3	50	H		
+f227r_C04	4	Z	H		
+f227r_C04	5	66	H		
+f227r_C04	6	y	H		
+f227r_C04	7	24	H		
+f227r_C04	8	_88	H	B:88	
+f227r_C04	9	24	H		
+f227r_C04	10	32	H		
+f227r_C04	11	v	H		
+f227r_C04	12	x	H		
+f227r_C04	13	60	H		
+f227r_C05	1	9_	H	A:9|B:9	
+f227r_C05	2	y_	H	A:y|B:y	
+f227r_C05	3	_90	H	B:90	
+f227r_C05	4	rr	H		
+f227r_C05	5	y	H		
+f227r_C05	6	70	H		
+f227r_C05	7	_94	H	B:94	
+f227r_C05	8	w	H		
+f227r_C05	9	~	H	A:v|B:v	
+f227r_C05	10	y_	H	A:y|B:y	
+f227r_C05	11	66	H		
+f227r_C05	12	9_	H	A:9|B:9	
+f227r_C05	13	y_	H	A:y|B:y	
+f227r_C06	1	23	H		
+f227r_C06	2	48	H	A:_48	
+f227r_C06	3	y_	H	A:y|B:y	
+f227r_C06	4	65	H	B:63	flat-topped 5; B 63
+f227r_C06	5	9_	H	A:9|B:9	
+f227r_C06	6	_88	H	B:88	
+f227r_C06	7	24	H		
+f227r_C06	8	75	H	A:73|B:73	7 + flat-topped 5; both passes 73
+f227r_C06	9	y_	H	A:y|B:y	
+f227r_C06	10	L	H	A:b|B:b	
+f227r_C06	11	60	H		
+f227r_C07	1	80	H		
+f227r_C07	2	31	H		
+f227r_C07	3	18	H		
+f227r_C07	4	Z	H		
+f227r_C07	5	70	H		
+f227r_C07	6	v	H		
+f227r_C07	7	62	H		
+f227r_C07	8	rr	H		
+f227r_C07	9	75	H	B:73	B 73
+f227r_C07	10	62	H		
+f227r_C07	11	~	H	A:-|B:-	
+f227r_C07	12	v	H		
+f227r_C08	1	_88	H	A:88|B:88	
+f227r_C08	2	23	H		
+f227r_C08	3	89	H		
+f227r_C08	4	w	H		
+f227r_C08	5	_99	H	A:99|B:99	
+f227r_C08	6	85	H		
+f227r_C08	7	ff	H		
+f227r_C08	8	70	H		
+f227r_C08	9	31	H		
+f227r_C08	10	~	H	A:v|B:v	
+f227r_C08	11	Z	H		
+f227r_C09	1	52	H		
+f227r_C09	2	65	H	B:63	flat-topped 5; B 63
+f227r_C09	3	24	H		
+f227r_C09	4	_86	H	A:86|B:86	
+f227r_C09	5	65	H	A:63|B:63	flat-topped 5; both passes 63
+f227r_C09	6	X	H		
+f227r_C09	7	75	H		
+f227r_C09	8	X	H		
+f227r_C09	9	22	H		
+f227r_C09	10	h_	H	A:h|B:h	
+f227r_C09	11	w	H		
+f227r_C10	1	rr	H		
+f227r_C10	2	y_	H	A:y|B:y	
+f227r_C10	3	9_	H	A:9|B:9	
+f227r_C10	4	m+	H	A:m|B:m	m with a cross; both passes m
+f227r_C10	5	9_	H	A:9|B:9	
+f227r_C10	6	>	H	A:v|B:v	hook sign as f226r_C1/4; both passes v
+f227r_C10	7	oo	H	A:88|B:60	two linked loops (A 88, B 60); same sign as f227r_C14/3 and /11
+f227r_C10	8	24	H		
+f227r_C10	9	56	H	B:38	
+f227r_C10	10	5	H	A:y|B:3	single flat-topped 5 standing alone (A y, B 3)
+f227r_C10	11	52	H	B:32	A 52, B 32
+f227r_C10	12	103	H		
+f227r_C11	1	9_	H	A:9|B:9	
+f227r_C11	2	ff	H		
+f227r_C11	3	24	H		
+f227r_C11	4	9_	H	A:9|B:9	
+f227r_C11	5	y_	H	A:y|B:y	
+f227r_C11	6	_82	H	A:82|B:82	
+f227r_C11	7	55	H	B:33	B 33
+f227r_C11	8	26	H		
+f227r_C11	9	h_	M	A:h|B:h	h with baseline bar and a looped tail
+f227r_C11	10	w	H		
+f227r_C11	11	h_	H	A:40|B:7	
+f227r_C11	12	o	H	A:-|B:0	single loop (A reads h o as 40, B as 7 0)
+f227r_C12	1	y_	M	A:y|B:y	baseline bar under y faint
+f227r_C12	2	v	H		
+f227r_C12	3	_71	H	B:71	
+f227r_C12	4	v	H		
+f227r_C12	5	60	H		
+f227r_C12	6	_100	H	B:100	
+f227r_C12	7	~	H	A:v|B:v	
+f227r_C12	8	Z	H		
+f227r_C12	9	52	H		
+f227r_C12	10	75	H	A:73|B:73	
+f227r_C12	11	rr	H		
+f227r_C13	1	_71	H	B:71	
+f227r_C13	2	_91	H	B:91	
+f227r_C13	3	d	H		
+f227r_C13	4	_88	H	B:88	
+f227r_C13	5	39	H		
+f227r_C13	6	75	H		
+f227r_C13	7	X	H		
+f227r_C13	8	Z	H		
+f227r_C13	9	103	H		
+f227r_C13	10	102	H		
+f227r_C14	1	_88	H	A:88|B:88	
+f227r_C14	2	28	H		
+f227r_C14	3	oo	H	A:-|B:00	two linked loops (A v v, B 00)
+f227r_C14	4	62	H	A:-	
+f227r_C14	5	32	M	A:-	the 2 has a descending tail; A 23 2
+f227r_C14	6	v	H		
+f227r_C14	7	x	H	A:v	
+f227r_C14	8	60	H	A:23	
+f227r_C14	9	24	H		
+f227r_C14	10	60	H	A:v	
+f227r_C14	11	oo	H	A:v|B:00	two linked loops (A v v, B 00)
+f227r_C14	12	60	H	A:-	
+f227r_C14	13	Z	H		

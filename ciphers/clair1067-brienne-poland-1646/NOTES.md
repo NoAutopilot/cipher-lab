@@ -142,7 +142,7 @@ back half. This matches the finding aid's own description, "Lettre avec chiffres
 not entirely in cipher), and the same hybrid clear/cipher style already characterised for this office in
 `ciphers/fr5160-letellier-1653/NOTES.md`.
 
-**No interlined or facing decipherment.** fol.226r shows faint, differently-oriented handwriting bleeding
+**No interlined or facing decipherment.** [Corrected 24 Sept 2026 by the reconciler, see "Reconciliation and structure": the short clear words written *above* the cipher groups on 226r-227r are in a second, heavier hand and stand over runs of groups; they read as an interlinear gloss, not as the letter's own clear captions. The bleed-through remark below stands.] fol.226r shows faint, differently-oriented handwriting bleeding
 through from the verso in the left margin (checked at 3x crop: it runs in a different flow/orientation than
 the recto's bold cursive and does not line up with the recto's own lines) — this is ordinary paper bleed-
 through, not a contemporary decipherment beside the cipher. No decipherment was found on any of the six sides
@@ -206,7 +206,7 @@ that the resulting plaintext is correct). No cryptanalysis attempted beyond this
 ## Status and next step
 
 **Status stays `open`.** This pass: pinned the leaf on the correct ark and diagnosed why the other ark
-looked empty for this folio (section 1); established extent and confirmed no interlined/facing decipherment
+looked empty for this folio (section 1); established extent and confirmed no interlined/facing decipherment [corrected 24 Sept 2026: interlinear words in a second hand are present, see the last section]
 exists, so this is a blind-transcription target, not a recovery-by-alignment case (section 2); produced two
 independent blind transcription passes (section 3); mechanically ruled out both published same-office Brienne
 keys as direct hits, with matched controls (section 4). No decipherment recovered, no novelty wording.
@@ -216,3 +216,69 @@ line-segmentation disagreement flagged in section 3, before committing a canonic
 letter's own key still needs to be recovered from scratch (cryptanalytically, or by finding a sibling
 Brienne-to-Warsaw letter with a facing decipherment elsewhere in this correspondence), which is out of scope
 for this brief.
+
+## Reconciliation and structure (24 Sept 2026)
+
+Opus reconciler, disk only (no network), from the native line crops in `images/` plus Chromium re-crops of four lines
+that straddle two crops (f227r cipher lines 10, 11, 13, 14; same pixels, rendered with Playwright, not committed).
+
+**Segmentation settled.** The page has 30 physical cipher lines: f226r C1-C2, f226v C01-C14, f227r C01-C14. The
+passes' line ids did not match these (pass B split f226v_L5 into two physical lines, both passes merged or shifted
+f227r captions). `relabel_passes.py` maps every cipher row of each pass onto the physical lines (A 332 rows, B 331; A's
+`fait` on f227r_L19 and B's `Z` on f226v_L7 are clear-text letters, *fait* and the z of *tempz*, and are dropped).
+`tools/reconcile_passes.py passA_lines.tsv passB_lines.tsv --out-dir recon` then gives **257/338 aligned columns agree
+(76.0%)**, 81 disagreement columns (`recon/disagreements.tsv`).
+
+**Settled from the image, every column.** `build_ciphertext.py` holds the reading and writes `ciphertext.txt` (line,
+pos, token, conf, alt, note; alt = what each pass read where it differs) and `inventory.tsv`; `--check` exits 1 if either
+is stale. **338 tokens: 331 H, 7 M.** Most disagreements were notation, not ink: the long swash was written `L`/`v` by
+A and `v`/`c` by B, and is `~` here; the small loop is `v`; the hook `>` (A `v`). Ink corrections that both passes
+missed: the flat-topped 5 was read 3 by both passes at seven positions (73 -> 75 at f226v_C10/11, f227r_C02/4, C03/2,
+C06/8; 63 -> 65 at f227r_C03/9, C09/5); the baseline bar on 9 and y (26 tokens, `9_`, `y_`) and on h was not recorded
+by either pass; a swash at the start of f226v_C11 and in f226v_C02 was missed by both. Pass A recorded the ubiquitous
+small tick above the first figure (`6\`0`, `3\`1`) as an overline at about ten positions; ticks are not transcribed.
+The two linked loops (`oo`, 3 tokens, A read 88 or v v, B 60 or 00), `m+`, `9+` and the lone `5` are new sign
+readings. The 7 M tokens: f226r_C1/1 (55, both passes 35), f226v_C04/4 (9+), C14/4 (short y), C14/10 (h_),
+f227r_C11/9 (h_), C12/1 (y_), C14/5 (32).
+
+**Inventory** (`inventory.tsv`). 338 tokens, 84 distinct signs (79 when overline and bar are ignored), 32 singletons.
+Numerals 194 tokens: one-figure 19 (`9_` barred 14, plain `9` 4, `5` 1), two-figure 168 (39 overlined), three-figure 7 (100, 102, 103; `_100`
+overlined twice), range 5-103, 58 distinct values. Symbols 144 tokens, 22 kinds (`y` and `y_` counted apart): `Z` 23, `y_` 22, `~` 17, `v` 16, `X` 10, `rr` 10, `w` 8, `y` 6, `ff` 5, `L` 4, `d` 4, `h_` 4, `oo` 3, `2#` 2, and `>`, `x`, `m`, `m+`, `o`, `p`,
+`q`, `9+` at one or two each. Most frequent numerals: `_88` 12, `60` 11, `65` 11, `75` 11, `24` 10, `62` 8.
+
+**Structure notes (no values assigned).**
+- Sign classes: (1) letter-like symbols, 144 of 338 tokens, with a baseline bar kept consistently on some signs (also on
+  the figure 9: `9_` 14 against plain `9` 4) (`y_` 22 against plain `y` 6); (2) two-figure numerals 13-99; (3) a few three-figure numerals 100-103;
+  (4) an overline on a subset of numerals. The overline is stable per value for the commonest ones (`88`, `94`, `99`
+  always barred, 12/3/3 tokens) and mixed for `71` (5 barred, 2 plain) and `82` (4 barred, 1 plain).
+- Doubled forms: the symbols `ff`, `rr` and `oo` are written as doubled letters; no identical group is repeated
+  adjacently anywhere.
+- Repeats: the 5-group runs `_88 40 75 X 41` (f226v_C10, f227r_C02-03), `40 75 X 41 ~ Z` (f226v_C10, f227r_C03) and
+  `_94 w ~ y_ 66` (f226v_C09, f227r_C05) recur; 4-group repeats `Z v 60 Z`, `v 62 rr 75`, `32 v x 60`.
+- Clear text on cipher lines, in the letter's own hand: *son sens, qui pouvoit estre* (f226r_C1), *et que ce seroit*
+  (f226v_C03), *et peut estre qu'ayants* (f226v_C07), *pourront* (f226v_C08), *de Vre Mate* (f227r_C01), *estably*
+  (f227r_C02), *fait* (f227r_C13); whole clear lines interleave the cipher lines on all three sides.
+- **Interlinear words in a second hand.** Above every cipher line on 226r-227r stand short words in a heavier, upright
+  hand distinct from the letter's italic (for example over f226r_C1 and C2, over f226v_C01-C14, over f227r_C01-C14).
+  They sit over runs of groups, not over the clear text, and the passes already transcribed them as "clear" rows.
+  This reads as a contemporary interlinear decipherment and corrects section (2). The target is then an alignment
+  (recovery) case, not blind cryptanalysis. **Not aligned here** (brief: no decoding); flagged to the orchestrator.
+
+**Family comparison (sign classes only).**
+
+| | clair1067, 1646 (this letter) | Tomokiyo 1647 (key_brienne_1647.tsv) | Tomokiyo 1651 (key_brienne_1651.tsv) | fr5160, 1653 (passA.tsv) |
+|---|---|---|---|---|
+| letter-like symbols | 22 kinds: Z y ~ v X x w d L m m+ p q o oo > h ff rr 2# 9+ | b p q- q= y Z a m u f d l w Y, doubled tt nn ss, ny | m' d cn cm Z q c y w x g ~ z+ m+ n, doubled tt | db m mm u I d X q # ä o £ H L Z |
+| numerals | 5-103, overline on a subset | 10-94, plus a marked series 35_-89_ and 1_ | 11-64 (small numbers 11-21 share letters with symbols), marked series 1_-62_ | 3-154, overline on a subset |
+| symbols shared with this letter | | Z y w d m p (6) | Z y w d x ~ m+ q (8) | Z d X q m o L (7) |
+| doubled-letter signs | ff rr oo | tt nn ss | tt | mm |
+
+Verdict: **same family, different table.** All four mix letter-shaped symbols, several of them identical in shape (Z,
+y, w, d, q, m+, ~), with a two-figure numeral range and a marked (overlined) numeral series, and write doubled letters
+as signs. The 1646 repertoire overlaps the 1651 table most closely (8 shared symbols, including `m+`, `~` and `x`), but
+none of the three is this letter's key: both Tomokiyo tables failed their matched shuffled-key controls in section (4),
+and this letter uses values above 94 (99-103) and signs (`oo`, `2#`, `9+`, `>`) absent from both tables.
+
+Files: `relabel_passes.py`, `passA_lines.tsv`, `passB_lines.tsv`, `recon/` (tool output), `build_ciphertext.py`,
+`ciphertext.txt`, `inventory.tsv`. Next step (suggestion only): an alignment worker pairs the interlinear words with
+the group runs line by line; this is a recovery target.

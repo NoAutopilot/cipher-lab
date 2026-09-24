@@ -1,0 +1,103 @@
+token	count	class
+Z	23	symbol
+y_	22	symbol-barred
+~	17	symbol
+v	16	symbol
+9_	14	numeral-1fig
+_88	12	numeral-2fig-overlined
+60	11	numeral-2fig
+65	11	numeral-2fig
+75	11	numeral-2fig
+24	10	numeral-2fig
+X	10	symbol
+rr	10	symbol
+62	8	numeral-2fig
+w	8	symbol
+70	6	numeral-2fig
+_91	6	numeral-2fig-overlined
+y	6	symbol
+_71	5	numeral-2fig-overlined
+ff	5	symbol
+31	4	numeral-2fig
+40	4	numeral-2fig
+66	4	numeral-2fig
+9	4	numeral-1fig
+L	4	symbol
+_82	4	numeral-2fig-overlined
+d	4	symbol
+h_	4	symbol-barred
+103	3	numeral-3fig
+18	3	numeral-2fig
+23	3	numeral-2fig
+32	3	numeral-2fig
+39	3	numeral-2fig
+41	3	numeral-2fig
+50	3	numeral-2fig
+52	3	numeral-2fig
+54	3	numeral-2fig
+55	3	numeral-2fig
+_94	3	numeral-2fig-overlined
+_99	3	numeral-2fig-overlined
+oo	3	symbol
+102	2	numeral-3fig
+2#	2	symbol
+22	2	numeral-2fig
+28	2	numeral-2fig
+48	2	numeral-2fig
+56	2	numeral-2fig
+69	2	numeral-2fig
+71	2	numeral-2fig
+72	2	numeral-2fig
+>	2	symbol
+_100	2	numeral-3fig-overlined
+x	2	symbol
+13	1	numeral-2fig
+25	1	numeral-2fig
+26	1	numeral-2fig
+29	1	numeral-2fig
+33	1	numeral-2fig
+35	1	numeral-2fig
+36	1	numeral-2fig
+42	1	numeral-2fig
+5	1	numeral-1fig
+51	1	numeral-2fig
+59	1	numeral-2fig
+64	1	numeral-2fig
+67	1	numeral-2fig
+68	1	numeral-2fig
+77	1	numeral-2fig
+80	1	numeral-2fig
+81	1	numeral-2fig
+82	1	numeral-2fig
+85	1	numeral-2fig
+89	1	numeral-2fig
+9+	1	symbol
+_27	1	numeral-2fig-overlined
+_81	1	numeral-2fig-overlined
+_84	1	numeral-2fig-overlined
+_86	1	numeral-2fig-overlined
+_90	1	numeral-2fig-overlined
+_92	1	numeral-2fig-overlined
+m	1	symbol
+m+	1	symbol
+o	1	symbol
+p	1	symbol
+q	1	symbol
+#total_tokens	338	
+#distinct_signs	84	overline/bar variants counted separately
+#distinct_bases	79	overline/bar ignored
+#singletons	32	
+#class:numeral-1fig	19	tokens
+#class:numeral-2fig	129	tokens
+#class:numeral-2fig-overlined	39	tokens
+#class:numeral-3fig	5	tokens
+#class:numeral-3fig-overlined	2	tokens
+#class:symbol	118	tokens
+#class:symbol-barred	26	tokens
+#clear_on_line	f226r_C1	before: son sens, qui pouvoit estre
+#clear_on_line	f226v_C03	before: et que ce seroit
+#clear_on_line	f226v_C07	after: et peut estre qu'ayants
+#clear_on_line	f226v_C08	before: pourront
+#clear_on_line	f227r_C01	after: de Vre Mate
+#clear_on_line	f227r_C02	before: estably
+#clear_on_line	f227r_C13	before: fait
