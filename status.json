@@ -1513,13 +1513,21 @@
    "grade": "C 1 (189 = Montrose, from Tomokiyo's manuscript check), M 9, unread 2 (85, 0100)",
    "line": "codes.tsv collates every numerical code in the Letter-Book with its printed context; proposed identifications at grade M (870 Lennox, 91 James VI, 32 Elizabeth, 54 France, 000 England, 149 Henri III, 19 Guise, 29 Mary, 223 Gowrie). CSP Scotland vi was not reachable as full text, so none rose to C.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bowes-walsingham-1583"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "contribution",
+   "title": "BnF fr.2933 no.11, Salviati 1525, f.54r: two-pass transcription of a mixed plain/invented-sign page (dataset)",
+   "grade": "transcription, not a reading: 509 boxes, 370 sign tokens in 36 atlas types with superscript marks, 139 plain Italian boxes; passes agree 83.5% on base codes (80.3% with marks), 62 disagreements settled from the image",
+   "line": "A shared glyph atlas plus script classification of every box, then two confirm/correct passes, lifted agreement from 4.7% (free text) and 62.8% (free alignment) to 83.5%. The page is ready for a key trial (LANE R4 I running).",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2933-salviati-1525"
   }
  ],
  "lanes": [
   {
    "name": "Lane R4, recovery",
-   "live": 2,
-   "focus": "Posthius 1614/18 read from the tables on the leaf (109 tokens, H 96 M 13), sent to verification; Salviati f.54r transcribed and gated (83.5%), key trial next; 1519 election key stopped at cap; Bowes codes tabled (1 C, 9 M, 2 unread)"
+   "live": 1,
+   "focus": "Posthius read (H96 M13, for V4); Bowes codes C1 M9; Salviati f.54r transcribed (83.5%), solver running; 1519 key pass failed on atlas coverage (open); 5549 sources 5205/5209 negative"
   },
   {
    "name": "Lane N3, copy-free nominations",
