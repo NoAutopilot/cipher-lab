@@ -22,7 +22,16 @@
           "iiif_id": "bav80016364_00001",
           "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80016364_00001/0,3423,1965,1610/full/0/default.jpg",
           "native_region": "0,3423,1965,1610 (native pixels)",
-          "note": "native-resolution crop of the enciphered block, keyed alphabet and clear-text crib, for legibility"
+          "note": "SUPERSEDED for the key line by 1614_p1_full_key.jpg below: this region's width (1965 of 3279 native) cuts off the right end of the 'Salutembcdfg'/'biknopqrWxyz' key row (the 'fg'/'yz' fall past x=1965). Kept for the cipher block and clear lines, which fit within it."
+        },
+        {
+          "file": "1614_p1_full_key.jpg",
+          "iiif_id": "bav80016364_00001",
+          "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80016364_00001/0,3423,3279,1621/full/0/default.jpg",
+          "native_region": "0,3423,3279,1621 (native pixels, full page width)",
+          "fetched": "2026-09-24",
+          "fetched_by": "LANE R4 worker A (session_01Q6YWoBLE8pbptEpkmhPpGr)",
+          "note": "corrected native-resolution crop, full page width, of the 4-line cipher block, the two-line key alphabet (complete: 'Salutembcdfg'/'biknopqrWxyz'), the clear note above and the clear crib line below, plus the signature 'Erasmus Posthius D.' -- source for the line crops in iiif_lines"
         },
         {
           "file": "1614_p2.jpg",
