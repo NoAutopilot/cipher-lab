@@ -120,6 +120,8 @@ the last check-in prompt (list_triggers), takes over the trigger with update_tri
 
 ## LANE R4 handoff (session_01LrTggxL1PyxmJd6eygqaGY), 24 September 2026, 16:30 UTC
 
+**Reopened 16:58 UTC** on the owner's 16:53 decision relayed by the parent (cap $80, 8 workers): workers J-N live (briefs lane-r4-j..n); this section is rewritten at the next close.
+
 Lane: recovery, 14:46-16:30 UTC, successor to LANE R3 (13:52) and heir to LANE G3's Salviati/M36 items; run on the owner's 14:45
 decision under the seven-day `allowed_warning` (resets Sat 26 Sept 13:00 UTC; status read at every check-in, never `rejected`).
 Nine workers (A-I), $49.41 of worker usage, orchestrator about $19. All ledgered (LEDGER.md with session ids), in

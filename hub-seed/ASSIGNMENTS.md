@@ -327,3 +327,8 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T16:25Z	session_01J653u9mXgcT3gwBenQP5kh	LANE V4 verifier V3b (Opus, cap $10)	SO-DANZAY-F35, SO-GRAMONT-F30 (PRs 3,4)	second-opinion checks
 2026-09-24T16:25Z	session_01HBMnLTuZ2DR2voSQ3vFQHs	LANE V4 verifier V3c (Opus, cap $10)	SO-LODEWIJK-1573-74, SO-SAXONY-126 (PRs 8,7)	second-opinion checks
 2026-09-24T16:58Z	session_01Ly3mwAF7mCgYnLZxpd5ENK	LANE V4 verifier V3d (Opus, cap $8)	SO-SAXONY-53-57 (PR 9)	second-opinion check
+2026-09-24T17:00Z	session_016p35ZUnkX32oxmhk5v2nJV	LANE R4 J (Sonnet, cap $8)	Salviati f.54v-f.57v box-keyed passes	live
+2026-09-24T17:00Z	session_0169hJvWRbS7v5JTe4oitTim	LANE R4 K (Sonnet, cap $8)	Seure 1558 capture, atlas, passes	live
+2026-09-24T17:00Z	session_01TYYHUF4Wp6aehGDRQF6Qrv	LANE R4 L (Sonnet, cap $3)	M36 f.104 pass C + dataset	live
+2026-09-24T17:00Z	session_01TUCsu5jvT9abcbErymiSk3	LANE R4 M (Sonnet, cap $5)	Marie de Medicis 1610 key capture + apply	live
+2026-09-24T17:00Z	session_018cVYFykz1TpBPHHHgWqHuN	LANE R4 N (Opus, cap $7)	Villeroy 1595 + Garbino 1528 control-first	live
