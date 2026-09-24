@@ -1,0 +1,71 @@
+value	meaning	grade	n_in_letter	n_agree	other_alignments	source
+10	d	C	5	4	a:1	printed interlinear, 4 agreeing places
+20	a	C	21	21		printed interlinear, 21 agreeing places
+21	b	C	8	6	c:1,d:1	printed interlinear, 6 agreeing places
+22	c	C	11	11		printed interlinear, 11 agreeing places
+23	d	C	10	10		printed interlinear, 10 agreeing places
+24	e	H	45	44	c:1	Tomokiyo thurloe.htm key_blake.tsv; print agrees
+25	f	C	14	14		printed interlinear, 14 agreeing places
+26	g	H	8	7	r:1	Tomokiyo thurloe.htm key_blake.tsv; print agrees
+27	h	C	18	18		printed interlinear, 18 agreeing places
+28	i	C	28	28		printed interlinear, 28 agreeing places
+29	k	C	2	2		printed interlinear, 2 agreeing places
+30	l	C	15	13	i:2	printed interlinear, 13 agreeing places
+31	m	H	6	6		Tomokiyo thurloe.htm key_blake.tsv; print agrees
+32	n	H	13	13		Tomokiyo thurloe.htm key_blake.tsv; print agrees
+33	o	H	17	16	b:1	Tomokiyo thurloe.htm key_blake.tsv; print agrees
+34	p	C	7	7		printed interlinear, 7 agreeing places
+36	r	H	15	15		Tomokiyo thurloe.htm key_blake.tsv; print agrees
+37	f	C	23	23		printed interlinear, 23 agreeing places
+38	t	H	29	29		Tomokiyo thurloe.htm key_blake.tsv; print agrees
+39	u	H	17	17		Tomokiyo thurloe.htm key_blake.tsv; print agrees
+40	w	C	11	11		printed interlinear, 11 agreeing places
+41	x	C	3	3		printed interlinear, 3 agreeing places
+42	y	C	8	8		printed interlinear, 8 agreeing places
+43	z	C	2	2		printed interlinear, 2 agreeing places
+50	a	C	9	9		printed interlinear, 9 agreeing places
+52	c	C	2	2		printed interlinear, 2 agreeing places
+53	d	C	4	3	o:1	printed interlinear, 3 agreeing places
+54	e	H	22	22		Tomokiyo thurloe.htm key_blake.tsv; print agrees
+55	f	M	1	1		printed interlinear, one place only
+57	h	C	2	2		printed interlinear, 2 agreeing places
+58	i	C	5	5		printed interlinear, 5 agreeing places
+60	l	C	5	4	i:1	printed interlinear, 4 agreeing places
+61	m	C	2	2		printed interlinear, 2 agreeing places
+62	n	C	8	7	o:1	printed interlinear, 7 agreeing places
+63	o	C	11	11		printed interlinear, 11 agreeing places
+64	p	C	2	2		printed interlinear, 2 agreeing places
+66	r	C	12	12		printed interlinear, 12 agreeing places
+67	f	C	2	2		printed interlinear, 2 agreeing places
+68	t	C	8	8		printed interlinear, 8 agreeing places
+69	u	C	4	4		printed interlinear, 4 agreeing places
+72	y	C	3	3		printed interlinear, 3 agreeing places
+78	a	C	2	2		printed interlinear, 2 agreeing places
+80	e	M	1	1		printed interlinear, one place only
+82	e	H	3	3		Tomokiyo thurloe.htm key_blake.tsv; print agrees
+83	f	M	1	1		printed interlinear, one place only
+84	g	M	1	1		printed interlinear, one place only
+85	h	C	2	2		printed interlinear, 2 agreeing places
+86	i	M	1	1		printed interlinear, one place only
+88	l	M	1	1		printed interlinear, one place only
+89	m	M	1	1		printed interlinear, one place only
+90	n	C	3	3		printed interlinear, 3 agreeing places
+91	o	M	1	1		printed interlinear, one place only
+93	p	M	1	1		printed interlinear, one place only
+94	r	C	2	2		printed interlinear, 2 agreeing places
+104	[the States General]	H	0	0		Tomokiyo thurloe.htm key_blake.tsv; not in this letter's aligned pairs
+105	[the States of Holland / Hollanders / Holland]	H	1	1		Tomokiyo thurloe.htm key_blake.tsv; print differs
+113	a	M	1	1		printed interlinear, one place only
+124	[ambassador]	H	0	0		Tomokiyo thurloe.htm key_blake.tsv; not in this letter's aligned pairs
+125	mediteran	M	1	1		printed interlinear, one place only
+126	fea	M	1	1		printed interlinear, one place only
+127	inform	C	2	2		printed interlinear, 2 agreeing places
+128	fleet	C	3	2	fleetwh:1	printed interlinear, 2 agreeing places
+130	[the Protector / Cromwell / England]	H	0	0		Tomokiyo thurloe.htm key_blake.tsv; not in this letter's aligned pairs
+135	[money]	H	0	0		Tomokiyo thurloe.htm key_blake.tsv; not in this letter's aligned pairs
+142	i	M	3	1	inftr:1,irtft:1	printed interlinear, one place only
+145	[the Orange party]	H	0	0		Tomokiyo thurloe.htm key_blake.tsv; not in this letter's aligned pairs
+171	[peace]	H	0	0		Tomokiyo thurloe.htm key_blake.tsv; not in this letter's aligned pairs
+179	[commerce, trade]	H	0	0		Tomokiyo thurloe.htm key_blake.tsv; not in this letter's aligned pairs
+198	[Brussels]	H	0	0		Tomokiyo thurloe.htm key_blake.tsv; not in this letter's aligned pairs
+401	w	M	1	1		printed interlinear, one place only

@@ -345,3 +345,160 @@ decipherment, would be a real-data benchmark for the solver.
 `5°?` x2, `9°?`, `4°°?`) I rather than C in `decode.py`, giving P11-13 H 36 / C 223 / I 7 / M 32 /
 U 11; (d) BL Add MS 4200 f.76 (Montagu, 19 May 1656, DECODE 8387, per Tomokiyo) may be a manuscript
 of part of this journal-letter -- worth a comparison if the image is ever fetched.
+
+## 13. P2, P3, P8 (LANE T worker D, 24 Sept 2026)
+
+Brief: confirm heading/signature/page/extent for P2, P3, P8; say whether the print carries a
+decipherment; for P8 only, align it and build a key (rule 7); otherwise write `<row>/tokens.tsv`.
+No cryptanalysis. All three rows' `index.tsv` attributions turn out wrong (heading-above-window
+scan, not signature-of-preceding-letter, per the Monck-pool solver's method above), and all three
+have far more cipher text than their committed `ciphertext.txt` window captures. `sources/ia-fulltext/*_djvu.txt`
+restored from the committed gzip cache (`thurloe-gz/`) for this pass; no archive.org fetch.
+
+**Attribution table (djvu = `sources/ia-fulltext/<identifier>_djvu.txt` line numbers):**
+
+| Row | index.tsv said | Corrected | Evidence |
+|---|---|---|---|
+| P2 | Gen. Fleetwood \| Thurloe \| p.368 | **Stouppe** to **the prince of Tarante** \| London/Londres, 25 Aug. 1654 \| p.565-566 | heading "Stouppe to the prince tf'Tarante." djvu 46954, "My Lord," 46955, dateline both languages (46-47026, 47059); Fleetwood's own letter is a separate, earlier item ending djvu 46910 |
+| P3 | Mr. Bradshaw (Hamburgh) \| Thurloe \| p.402 | **John Butler**, informant in Holland \| c.22 Sept 1656 \| p.575-577 | heading is the generic "A letter of intelligence." (djvu 47926, no named correspondent); signed "John Butler." djvu 47998; Bradshaw's own letters are elsewhere (row P7) |
+| P8 | Ld. chief baron Steele \| Thurloe \| p.289 | **General Blake** to **the Protector** \| 12 June 1655, aboard the George \| p.541 | Steele's letter (djvu 45193-45222, signed "William Steele.", p.289 is its own MS-volume marginal note) ends before P8's cipher starts; the heading immediately above the cipher (djvu 45229, printed-page running head "541" at djvu 45227) is "General Blake to the protector.", signed "Rob. Blake." djvu 45307 |
+
+`printed_page` in `index.tsv` looks like it was taken from the "Vol. xvii/xxiv/xxvii p.NNN"
+marginal notes next to each letter (Thurloe's own manuscript-volume pagination), not from Birch's
+1742 running headers (which give the print page directly, e.g. "541", "565", "576"). This is a
+plausible systematic bug affecting every row in `index.tsv`, not just these three -- flagged, not
+checked further (out of this brief's three rows).
+
+**Full extent (all three rows' cipher runs well past their committed `ciphertext.txt` window):**
+
+| Row | Committed window | Actual extent (djvu) | Raw numeral tokens (extent) vs committed |
+|---|---|---|---|
+| P2 | 46981-46993 (2 lines, 39 tokens) | 46965-47024 | 267 tokens / 29 lines (`P2/tokens.tsv`) |
+| P3 | 47994-48006 (3 lines, 57 tokens) -- the tail postscript only | 47926-48004 | 297 tokens / 23 lines (`P3/tokens.tsv`) |
+| P8 | 45228-45278 (15 lines, 316 tokens) | 45229-45309 | 526 tokens / 35 lines (`P8/tokens.tsv`); 513 cipher groups per `decode_steele.py` |
+
+`<row>/tokens.tsv` (order, djvu line, raw, cleaned, doubtful flag, clear words either side) covers
+the corrected full extent for all three, not just the old window; `ciphertext.txt` itself is
+untouched (out of scope for this brief).
+
+### P2 -- Stouppe to the prince of Tarante
+
+**Decipherment: yes, inline (whole-passage translation, not letter-by-letter).** The letter is
+French with a diplomatic nomenclature (numbers mostly under 100) embedded for names/sensitive
+nouns in otherwise-plain French prose (djvu 46965-47024, spanning the 565/566 page break). Right
+after it and the French dateline ("Londres, 25. Aug. 1654"), the print sets off "Deciphered
+thus:" (OCR "Tiecyphered thus:", djvu 47028) followed by a continuous **English** rendering of the
+whole passage (djvu 47030-47059), closing with the same date restated in English ("London, 25;
+Aug. 1654."). This is a section-level translation, not a group-for-group interlinear key like
+Fauconberg/Montagu/P8 below -- the English prose does not visibly line up one cipher group to one
+word. No attempt was made to align specific numeral codes to specific English words (would need
+careful bilingual alignment; out of this brief's scope, restricted to P8).
+
+Searched `sources/cryptiana/web/thurloe.htm` for "Stouppe" and "Tarante"/"Tarente": no hit. No
+other row in `index.tsv` shares this correspondent or system.
+
+**Verdict: inline printed decipherment (translation) present; not aligned; no key.** Materially
+stronger than "open, no lead" (this row's prior classification in section 5 above) -- the print
+already supplies English content for the whole enciphered passage.
+
+### P3 -- John Butler, informant in Holland
+
+**This is Tomokiyo's own "John Butler (1656)" cipher**, confirmed this pass by reading
+`sources/cryptiana/web/thurloe.htm` in full: "John Butler, an informant in Holland, used a
+cipher, which seems to have randomly assigned numbers 1-60 and generally alphabetically assigned
+numbers 400-424 to represent single letters, in a letter of 22 September 1656 (cf. deciphered
+text and ciphertext (Page 575) in Thurloe State Papers). It had some codes for names such as
+62(Spain) and 156(Charles). Other numbers such as 913, 350, etc. may be nulls. (E=3/5/405)."
+Tomokiyo's cited page (575) matches this row's corrected printed page exactly, and he cites a
+**"deciphered text"** alongside the ciphertext at that page -- unlike Blake/Montagu/Downing in
+section 2 above (systems reconstructed from *other* letters), Tomokiyo already has, or has seen,
+a decipherment of this *specific* letter. The two named code values check out directly against
+the extracted text: "62" and "156" appear together exactly where the clear text reads "Spayne
+Ch. St." (djvu 47970, "are ufed by 62 542 and 156, to..." -- 62=Spain, 156=Charles [Stuart]); the
+two proposed nulls (913, 350) both appear in the passage (djvu 47931, 47978/47986).
+
+**Decipherment: very likely yes, interlinear, for the main body (djvu 47929-47992).** Each
+cipher-bearing line there is immediately preceded by a short line of otherwise-unexplained clear
+English words. Letter-count vs group-count (`check_interlinear.py`'s own method, applied by hand
+since no committed `ciphertext.txt` window covers this range): "arrived Rotterdam" (16 letters)
+against 16 groups in the next cipher line (djvu 47932/47934) -- **exact match**; "wind contrary"
+(12) against 14 groups (47929/47931); "eighteenth September" (19) against 16 groups (47936/47938);
+"Strong endeavourings" (19) against 20 groups (47959/47961) -- all within the tolerance
+`check_interlinear.py` uses for the Fauconberg letters. Not verified against the page image, not
+aligned, no key or reading built this pass (P8 only was authorised for that work). The tail
+postscript (48000-48004, after the "John Butler." signature) is a different, sparser style --
+codes embedded directly in otherwise-clear running prose, closer to P2's style -- with no obvious
+adjacent decipherment line.
+
+No formal dateline for the letter was found in the clear text extracted this pass (heading,
+"Sir,", and signature only, no "London, [date]" line); the internal narrative mentions "eighteenth
+September ... old ftyle" and "the twentyeth-one of the month" (djvu 47936-47946), consistent with
+Tomokiyo's "22 September 1656".
+
+**Verdict: the highest-value follow-up of these three rows.** Tomokiyo already names E and two
+code values for this exact letter (not a cross-letter reconstruction), and the letter's own body
+looks interlinear by letter-count. A dedicated worker building `key_butler.tsv` from Tomokiyo's
+stated values and running `tools/interlinear_align.py` on djvu 47926-48004 (the method this pass
+used for P8, below) would very likely recover most of the letter in one pass. Flagged in `ROOM.md`
+for LANE T; not attempted here (out of this brief's scope).
+
+### P8 -- General Blake to the Protector, 12 June 1655
+
+**This is Tomokiyo's own first-named Blake letter.** Section 2 above already records: "Tomokiyo's
+'General Blake (1655)' section names two Blake-to-Cromwell letters by date/page -- 12 June 1655,
+p.541 ('almost entirely in cipher') and 4 July 1655, p.611 ('only enciphered his reference to the
+Plate Fleet')." P8's corrected date (12 June 1655, signed "Rob. Blake.", "George" is presumably
+his flagship) and printed page (541) match the first citation exactly; the second is the
+already-known P9 row. P8's density (cipher on nearly every line of the body) matches "almost
+entirely in cipher".
+
+**Decipherment: yes, confirmed.** The print sets a letter-by-letter English decipherment directly
+over/under nearly every cipher line, the same technique as the Fauconberg letters and the Montagu
+journal-letter (sections 8-9 above). `tools/interlinear_align.py pairs` recovers 25 verbatim
+plain/cipher pairs across the corrected full extent (djvu 45229-45309) into `P8_pairs.tsv`.
+
+**Built (rule 7: `python3 decode_steele.py` regenerates both; `--check` exits 0):**
+`key_steele.tsv` (62 values) and `reading_P8.txt` (539 tokens). "Steele" is kept in both filenames
+only for continuity with the brief that named them; the letter is Blake's, not Steele's (see the
+attribution table above). Grading follows the P11-13 convention (section 9): H = Tomokiyo's
+`key_blake.tsv` (reconstructed from *other* Blake/Hague letters), C = the print's own interlinear
+decipherment agreeing at >=2 places in this letter, I = an OCR-doubtful token repaired to a value
+the alignment supports elsewhere, M = aligned once only or in conflict, U = unread, "-" = not a
+cipher group (a clear word printed inline, e.g. "The", "A.  D.").
+
+| H | C | I | M | U | not-cipher | total tokens | cipher groups |
+|---|---|---|---|---|---|---|---|
+| 176 | 270 | 10 | 25 | 32 | 26 | 539 | 513 |
+
+446 of 513 cipher groups (87%) now read at H or C. Every one of Tomokiyo's worked-example letters
+for this system (26=g, 33=o, 39=u, 36=r, 31=m, 32=n, 38=t, from "26 33 39 24 36 31 24 32 38" =
+"gouerment") agrees with the print's own independent alignment here -- a strong cross-check in
+both directions, not just an application of the key. No matched control (rule 3 is for
+cryptanalytic claims; every H/C value here comes from Tomokiyo's published key or the print's own
+decipherment, i.e. known plaintext, the same basis as sections 8-9 above).
+
+**Rough continuous sense** (assembling the H/C-graded `reading_P8.txt` in djvu-line order,
+spelling as printed; not checked against the page image, not a claimed transcription): the letter
+reports the Spanish silver-fleet galleons at Cadiz, expected in about a month or five weeks;
+Blake's own position off a cape ("Cape Maries"/"Cape Sprat", OCR-uncertain); intent to range with
+the wind and keep informed; the Spanish "very distrustful", with four galleons designed for the
+Mediterranean and six for New Spain; closing asking the Protector to rest assured of Blake's
+diligence. Consistent with Blake's 1655 Cadiz blockade and with Tomokiyo's one-line description.
+Per rule 10, this is not compared against any edition or checked for prior print this pass.
+
+**Resemblance:** same system and worked example as `key_blake.tsv` (already in this project, used
+for the unrelated P9 letter, 4 July 1655); not close to any other unkeyed row.
+
+### Proposed `index.tsv` correction (LANE T applies; not edited here)
+
+```
+row	identifier	window_lines	printed_page	sender	recipient	date	cipher_system	n_cipher_lines	n_numeral_tokens_raw	keyed
+P2	collectionofstat02thur	46954-47059	565-566	Stouppe	the prince of Tarante	London/Londres, 25 Aug. 1654	French diplomatic nomenclature (<100); print gives an inline English translation "Deciphered thus:", not a letter-by-letter key	29	267	no
+P3	collectionofstat02thur	47926-48004	575-577	John Butler, informant in Holland	secretary Thurloe (implicit; "Sir,")	c.22 Sept 1656 (Tomokiyo; internal dates 18th/21st Sept O.S.)	Tomokiyo's "John Butler (1656)" cipher, E=3/5/405, letters 1-60 + 400-424 alphabetic, codes incl. 62=Spain 156=Charles, nulls 913/350; print's body looks interlinear by letter-count, not yet aligned	23	297	partial (Tomokiyo has E + 2 code values; not yet applied)
+P8	collectionofstat03thur	45229-45309	541	General Blake	the Protector [Cromwell]	12 June 1655, aboard the George	Blake's cipher per key_blake.tsv (E=24/54/[82]), same system as P9 (4 July 1655); print carries its own interlinear decipherment, aligned this pass	35	526 (513 cipher groups per decode_steele.py)	yes (key_steele.tsv: H from key_blake.tsv, C from the print)
+```
+
+Files this pass: `P2/tokens.tsv`, `P3/tokens.tsv`, `P8/tokens.tsv`, `P8_pairs.tsv`,
+`key_steele.tsv`, `decode_steele.py`, `reading_P8.txt`. `ciphertext.txt`, `index.tsv` and every
+other row untouched. Requests: archive.org 0 (djvu text restored from the committed
+`sources/ia-fulltext/thurloe-gz/` cache, per this brief); no other host; no subagents; no logins.
