@@ -4,18 +4,114 @@
   "note": "filenames are Gallica IIIF canvas index (fN), not necessarily the manuscript's own foliation; physical folio as read from the image, where legible, is given per row",
   "fetched": "2026-09-24",
   "canvases": [
-    {"file": "f5.jpg", "canvas": 5, "folio_seen": "f.1 (faint)", "content": "clear Italian, mostly illegible (faint ink), letter 1 opening region", "cipher": false},
-    {"file": "f6.jpg", "canvas": 6, "folio_seen": "uncertain", "content": "very faint pencil/draft script on both pages, largely illegible at this resolution; no clear cipher numerals identified", "cipher": "uncertain"},
-    {"file": "f7.jpg", "canvas": 7, "folio_seen": "f.5", "content": "clear Italian salutation 'Al Ill.mo... figlio caris[si]mo'", "cipher": false},
-    {"file": "f8.jpg", "canvas": 8, "folio_seen": "f.6", "content": "dense two-digit numeral cipher block, several lines, mid-letter-1", "cipher": true, "crop": "f8_crop.jpg (pre-existing, from prior check-solved pass)"},
-    {"file": "f9.jpg", "canvas": 9, "folio_seen": "f.7 (verso marked '2')", "content": "left page: clear Italian closing lines of letter 1 with one dense cipher line embedded near the end; right page: clear Italian, new letter opening 'Ill.mo figlio caris.mo'", "cipher": true, "crop": "f9_crop.jpg"},
-    {"file": "f10.jpg", "canvas": 10, "folio_seen": "f.8", "content": "left page: end of letter 1 -- clear line 'lase le mie le posete brusare' (burn these of mine) followed by a 6-line dense cipher postscript, signed 'la Duchessa di Mantua'; right page: clear Italian, continuation of letter 2", "cipher": true, "crop": "f10_crop.jpg"},
-    {"file": "f11.jpg", "canvas": 11, "folio_seen": "f.9", "content": "clear Italian throughout, both pages", "cipher": false},
-    {"file": "f12.jpg", "canvas": 12, "folio_seen": "f.10", "content": "clear Italian throughout, both pages", "cipher": false},
-    {"file": "f13.jpg", "canvas": 13, "folio_seen": "f.11", "content": "clear Italian throughout, both pages", "cipher": false},
-    {"file": "f14.jpg", "canvas": 14, "folio_seen": "f.12(?)", "content": "clear Italian throughout, both pages", "cipher": false},
-    {"file": "f15.jpg", "canvas": 15, "folio_seen": "f.13(?)", "content": "clear Italian throughout; right page ends with signature 'vostra madre la Duchessa di Mantua' and a date '26 [di] 9bre [novembre] del 6-' (last digit(s) of year not legibly read at this resolution)", "cipher": false}
+    {
+      "file": "f5.jpg",
+      "canvas": 5,
+      "folio_seen": "f.1 (faint)",
+      "content": "clear Italian, mostly illegible (faint ink), letter 1 opening region",
+      "cipher": false
+    },
+    {
+      "file": "f6.jpg",
+      "canvas": 6,
+      "folio_seen": "uncertain",
+      "content": "very faint pencil/draft script on both pages, largely illegible at this resolution; no clear cipher numerals identified",
+      "cipher": "uncertain"
+    },
+    {
+      "file": "f7.jpg",
+      "canvas": 7,
+      "folio_seen": "f.5",
+      "content": "clear Italian salutation 'Al Ill.mo... figlio caris[si]mo'",
+      "cipher": false
+    },
+    {
+      "file": "f8.jpg",
+      "canvas": 8,
+      "folio_seen": "f.6",
+      "content": "dense two-digit numeral cipher block, several lines, mid-letter-1",
+      "cipher": true,
+      "crop": "f8_crop.jpg (pre-existing, from prior check-solved pass)"
+    },
+    {
+      "file": "f9.jpg",
+      "canvas": 9,
+      "folio_seen": "f.7 (verso marked '2')",
+      "content": "left page: clear Italian closing lines of letter 1 with one dense cipher line embedded near the end; right page: clear Italian, new letter opening 'Ill.mo figlio caris.mo'",
+      "cipher": true,
+      "crop": "f9_crop.jpg"
+    },
+    {
+      "file": "f10.jpg",
+      "canvas": 10,
+      "folio_seen": "f.8",
+      "content": "left page: end of letter 1 -- clear line 'lase le mie le posete brusare' (burn these of mine) followed by a 6-line dense cipher postscript, signed 'la Duchessa di Mantua'; right page: clear Italian, continuation of letter 2",
+      "cipher": true,
+      "crop": "f10_crop.jpg"
+    },
+    {
+      "file": "f11.jpg",
+      "canvas": 11,
+      "folio_seen": "f.9",
+      "content": "clear Italian throughout, both pages",
+      "cipher": false
+    },
+    {
+      "file": "f12.jpg",
+      "canvas": 12,
+      "folio_seen": "f.10",
+      "content": "clear Italian throughout, both pages",
+      "cipher": false
+    },
+    {
+      "file": "f13.jpg",
+      "canvas": 13,
+      "folio_seen": "f.11",
+      "content": "clear Italian throughout, both pages",
+      "cipher": false
+    },
+    {
+      "file": "f14.jpg",
+      "canvas": 14,
+      "folio_seen": "f.12(?)",
+      "content": "clear Italian throughout, both pages",
+      "cipher": false
+    },
+    {
+      "file": "f15.jpg",
+      "canvas": 15,
+      "folio_seen": "f.13(?)",
+      "content": "clear Italian throughout; right page ends with signature 'vostra madre la Duchessa di Mantua' and a date '26 [di] 9bre [novembre] del 6-' (last digit(s) of year not legibly read at this resolution)",
+      "cipher": false
+    }
   ],
   "fetch_params": "IIIF Image API, /full/1600,/0/native.jpg (reduced width); one request per canvas, 1.5s apart, descriptive User-Agent, no altcha/403 encountered",
-  "requests_this_pass": "gallica.bnf.fr: 1 manifest.json + 8 canvas images (f6,f9-f15) + 2 info.json (f9,f10; 1 connection reset on first f10 attempt, retried once after a pause per the good-citizen rule, recovered) = 11 requests"
+  "requests_this_pass": "gallica.bnf.fr: 1 manifest.json + 8 canvas images (f6,f9-f15) + 2 info.json (f9,f10; 1 connection reset on first f10 attempt, retried once after a pause per the good-citizen rule, recovered) = 11 requests",
+  "native_regions": [
+    {
+      "file": "f8_native_region.jpg",
+      "canvas": 8,
+      "iiif_region": "pct:13,26,86,54",
+      "size": "max",
+      "px": "6485x2961",
+      "content": "both pages' cipher: left page ~4 cipher lines (untranscribed), right page L2-L12"
+    },
+    {
+      "file": "f9_native_region.jpg",
+      "canvas": 9,
+      "iiif_region": "pct:11,9,39,68",
+      "size": "max",
+      "px": "2955x3756",
+      "content": "left page: cipher lines 2-5 at top (untranscribed) and L6"
+    },
+    {
+      "file": "f10_native_region.jpg",
+      "canvas": 10,
+      "iiif_region": "pct:12,46,38,29",
+      "size": "max",
+      "px": "2873x1601",
+      "content": "six-line cipher postscript L2-L7"
+    }
+  ],
+  "native_fetch": "24 Sept 2026, reconciler: 3 IIIF region requests (https://gallica.bnf.fr/iiif/ark:/12148/btv1b90075058/fN/<region>/max/0/native.jpg), 2 s apart, descriptive User-Agent, all HTTP 200"
 }

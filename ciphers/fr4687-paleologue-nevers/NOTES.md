@@ -211,3 +211,80 @@ queries. archive.org advancedsearch: 1. jstor.org: 1 reachability check + 1 WebF
 JS-gated search page). academia.edu: 1 reachability check (403). archivesetmanuscrits.bnf.fr: 1 WebFetch (403).
 WebSearch: 3 queries. No logins, no credentials printed. Two Sonnet subagents for the blind passes (within the
 brief's fan-out limit).
+
+## Segmentation (24 Sept 2026, reconciler, Opus)
+
+Written before reconciling, from the page images. The on-disk crops (`f9_crop.jpg`, `f10_crop.jpg` at 800 px;
+`f8_crop.jpg` upscaled) were too coarse to show separators, so three native-resolution IIIF regions were fetched
+once (`images/f8_native_region.jpg`, `f9_native_region.jpg`, `f10_native_region.jpg`; regions and request log in
+`images/manifest.json`). Evidence, read at about 400 dpi:
+
+- **No separators.** Digits run at an even pitch across each line. There is no consistent space, point, virgule or
+  superscript between groups. The dots are part of the letterforms: the tittle of `i` (the scribe writes 1 as a
+  dotted i, and the dot often drifts left), the entry tick of `2` and `7`, and the ink blobs at the ends of the
+  descenders of 4, 7 and 9. They occur at every position, so they do not mark group boundaries.
+- **One non-digit sign, `y`** (an `ij`/`ÿ` shape with a long descender, sometimes with two dots). It occurs 28 times
+  in 588 signs. Pass A saw it on its own and wrote it `11~`; pass B read it as 9 or 1. Here it is a separate sign.
+  Its function (letter, null or divider) is not decided. It comes most often after 7, 4 or 3 and before 6 or 2.
+- **4 and 9 are separate shapes.** 4 has a horizontal crossbar through the stem; 9 is a q with a plain descender.
+  Most of the A/B digit disputes are 4/9 pairs, and the coarse crops lose the crossbar.
+- **Scribal corrections** (flagged in the `note` column of ciphertext.txt): a superscript `24` over a struck group
+  (f8_L4 start); an interlinear `y20` placed at a colon-shaped caret after `17` (f8_L9; pass A had put it in
+  f8_L8); a superscript `17` over a blotted group (f9_L6); a superscript `2` over a blotted digit (f10_L7). Each
+  replacement is one or two digits, or `y` plus two digits. None of them fixes a group length.
+- **Statistical test** (`seg_test.py`). Under a fixed two-digit grid, the most frequent two-digit units should sit on
+  one parity within a line. The parity lock is 0.577 with `y` kept as a sign and 0.629 with `y` dropped.
+  Matched synthetic controls use the same line lengths, Italian letter frequencies and homophonic codes. A fixed
+  two-digit control scores 0.716 / 0.657 / 0.643 (mean) at 0 / 5 / 10 % digit insertion-deletion error, with 5th
+  percentiles 0.632 / 0.599 / 0.593. A mixed 1/2/3-digit control scores 0.584-0.586 (95th percentile about 0.62-0.63).
+  Shuffled real lines score 0.611. The runs between `y` signs have odd length 24 times out of 44. So a strict
+  two-digit grid with `y` as a one-sign token falls below every fixed-two-digit control's 5th percentile and sits
+  at the mixed control's mean. With `y` dropped, the value is compatible with either design. The test is weak
+  (shuffled lines overlap both controls) and **leans mixed-length without settling it.**
+
+**Rule adopted.** The scribe marks no group boundaries, and neither the image nor the statistics settle the group
+length. The transcription unit is therefore the **sign** (0-9 and y). Each pass's grouping is kept per sign as
+an alternative (`a_start`, `b_start`), and every intra-line boundary counts as M. Frequent units are 17, 18,
+20 and 22 (30, 26, 30 and 18 occurrences as adjacent pairs). They are consistent with a design built on 1x/2x
+two-digit numbers plus single signs, which is a hypothesis for the solver, not a finding.
+
+## Reconciliation (24 Sept 2026)
+
+`reconcile.py` aligns pass A, pass B and the reconciler's native-resolution reading (`passC_native.tsv`, one sign
+stream per line) and writes `ciphertext.txt` (line, pos, sign, conf, alt, a_start, b_start, note) and
+`inventory.tsv`. `python3 reconcile.py --check` exits 1 if either file is stale. Confidence is H when A, B and
+the native reading all give the same sign (at least two readings). Otherwise it is M, with the other readings
+in `alt`. The alignment is difflib's, which pairs signs inside replaced blocks by position, so H is a slight
+overcount wherever a pass dropped or added a sign.
+
+| | count |
+|---|---|
+| lines | 17 (the 16 both passes read, plus f8_L11, which only pass B read; pass A called it cut off) |
+| signs | 588 (H 480, M 108) |
+| distinct signs | 11 (0-9, y) |
+| intra-line boundaries | 572, all M under the rule; A and B agree on 327 (101 boundary, 226 no boundary), disagree on 134; one pass lacks the sign at 111 |
+| distinct adjacent sign pairs | 99 |
+
+Sign counts (inventory.tsv): 1 100, 2 93, 9 63, 4 56, 5 47, 7 45, 3 41, 8 41, 0 38, 6 36, y 28.
+Top-20 adjacent pairs (candidate units, not established groups): 20 30, 17 30, 18 26, 51 19, 22 18, 41 15, 92 14,
+32 14, 91 12, 61 12, 85 12, 19 11, 29 10, 24 10, 62 10, 84 10, 31 9, 73 9, 42 9, 01 8.
+f8_L11 is M-heavy (15/37 H) because only one pass read it.
+
+**Coverage gap: cipher the passes never saw.** The native regions show cipher outside the three old crops:
+about 4 lines at the top of canvas 9's left page (from "...ogni cosa p. che 1759" to "...vostro S. Idio facia",
+with clear words such as "et mi" mixed in), about 4 lines on canvas 8's left page (lower half, above "i cardinali
+vostro fratello..."), and a twelfth cipher line on canvas 8's right page below f8_L11 (ending with a carried "184").
+Estimate: about 280-300 more signs, so about 870-890 in all. They are in the native regions on disk. They need
+two blind passes before anything is run on the whole text (a follow-up, not done here). Canvas 6 (faint) is
+still unclassified.
+
+**Enough for a solver run?** Not yet. `tools/nomenclator_anneal.py` takes pre-segmented group codes, and this text
+has no settled segmentation. A run needs either a segmentation hypothesis fixed in advance (for example "1x/2x
+are two-digit, 3-9 and y single") or a solver that infers segmentation jointly. It should also wait for the
+missing ~300 signs to be transcribed. A matched control would need: Italian letter prose of the 1560s at the same
+length (~880 signs); the same 11-sign alphabet with one ~5 % extra sign; the same code design as the hypothesis
+under test; the text written as an unbroken stream at the same line lengths; about 18 % sign-level noise, 4/9
+confusions in particular; and scoring by the same model (`tools/italian_ngram.py`, which was built on 15th-c.
+Lombard chancery Italian, so a 1560s Mantuan corpus would be the better fit).
+
+Requests this pass: gallica.bnf.fr 3 (IIIF regions, 2 s apart, all 200). No other host, no subagents, no logins.
