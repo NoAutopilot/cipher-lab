@@ -1,6 +1,6 @@
 import csv,sys,collections
 key={}
-for r in csv.DictReader(open('../../lodewijk-van-nassau-1573-74/key.tsv'),delimiter='\t'): key[r['code']]=r['value']
+for r in csv.DictReader(open(__import__('os').path.join(__import__('os').path.dirname(__file__),'../../lodewijk-van-nassau-1573-74/key.tsv')),delimiter='\t'): key[r['code']]=r['value']
 f=sys.argv[1]; col=sys.argv[2] if len(sys.argv)>2 else 'token'
 runs=collections.OrderedDict()
 for r in csv.DictReader(open(f),delimiter='\t'):
