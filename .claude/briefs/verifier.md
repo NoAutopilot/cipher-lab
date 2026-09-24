@@ -10,3 +10,5 @@ sentence in the folder. + common tail.
 If you re-date or re-attribute the item from the plaintext, the edition search widens to every volume of the series
 within two years of every plausible date and under every candidate sender; it never narrows. Read the volume's
 Regesten by date and source note, not by phrase. Lesson of Dupuy 468, 23 Sept 2026.
+Search the holding archive's full text across the whole collection (e.g. CONTENTdm dmQuery on the collection), not only the
+item's own record: duplicates and letter-book copies live elsewhere. Lesson of Eckert 1864 second audit, 24 Sept 2026.
