@@ -485,3 +485,136 @@ key-table PNGs, not previously mirrored). No other host queried this pass (no ar
 GitHub, WebSearch, or logins). Three Sonnet subagents for image reading/classification (the dense-band census
 table) and two for the key-table transcriptions (image-only, no network); two further Sonnet subagents for
 the blind passA/passB transcription (image-only, no network). Folder size 21MB, under the 30MB cap.
+
+## Folio 86 cipher and folio 87 decipherment, passes (24 Sept 2026)
+
+Following on the dense-band-walk flag above. All images already on disk (`images/native/f168.jpg`,
+`f169.jpg`, `f170.jpg`); no fetches this pass (another worker held this session's Gallica lane slots).
+
+### Correction: the decipherment heading's date is 21 November, not 21 September
+
+The prior pass's gloss of "9.bre" as "septembre" was wrong. In ancien-régime French dating, the period
+abbreviation follows the Latin ordinal from March = 1: 7bre = septembre, 8bre = octobre, **9bre = novembre**,
+Xbre = décembre. Both of this pass's independent blind readers of the heading (below) read the abbreviation as
+"9.bre" and neither read "7.bre" — pass A additionally checked the ascender shape of the abbreviation's "b"
+against the same scribe's "b" in "publiez" later on the same page and confirmed it is a "b", not a "d" (which
+would give a different, implausible reading). The heading reads **"Brienne du 21 9.bre 1659"** = 21 November
+1659. The "Correction to the queue row" and "Census pass" sections above have been corrected in place.
+
+### (1) Line crops
+
+16 single-line crops of the folio 86 cipher block (`images/crops/f86_cipher_L01.jpg`..`L16.jpg`, L01-L07 from
+canvas 168, L08-L16 from canvas 169, continuous across the two canvases) and 26 single-line crops of the folio
+87 decipherment leaf (`f170_H01_heading1.jpg`, `H02_heading2.jpg`, `P1L01`..`P1L12`, `P2L01`..`P2L12`), all
+<=2400px on the long side. Line bands were located by manual pixel-grid inspection (overlaying a coordinate
+grid on a downscaled copy and reading off line boundaries by eye) — an automatic row-darkness-projection
+segmentation was tried first and rejected: this cursive secretary hand has no clean zero-valley between text
+lines (ascenders/descenders of adjacent lines overlap in the row-darkness profile), so it merged most lines
+into single blobs. The manual bands include deliberate generous padding, so several crops show a thin sliver
+of the neighbouring line at the very top or bottom edge by design.
+
+**Known weak spot, flagged independently by both f86 cipher passes below:** the crop bands for lines L13-L16
+(the tail of the block, canvas 169) sit over a region with visible bleed-through/ghosting (from the facing
+page and page-turn shadow), and the calibration used for the earlier, more widely-spaced lines (L01-L12)
+undershoots there — L15 and L16 in particular are narrower crops than the actual line height, cutting content.
+This should be re-cropped with tighter, individually-checked bands before any committed reading of this
+region; not fixed this pass (out of scope — recropping was not part of the brief, and a second bad crop
+without redoing the passes would not have helped a blind comparison).
+
+### (2) Two blind Sonnet passes, folio 86 cipher (`passA_f86.tsv`, `passB_f86.tsv`)
+
+Two independent Sonnet subagents transcribed the 16 line crops blind (neither saw the other's output, any
+existing key, or the folio 87 text). Token counts: pass A 251 tokens, pass B 263 tokens, over the same 16
+lines. Both passes independently flag the same problems, unprompted: overlines are common on both single- and
+double-digit groups (recorded as a leading underscore, e.g. `_18`); digit-count is genuinely ambiguous in a
+couple of spots (a token read as "115" could be one 3-digit group or two, "11"+"5", at L05 and L10 in both
+passes); and lines L13-L16 have visible bleed-through/ghosting making the line boundary itself uncertain (both
+passes' confidence drops sharply there, and pass B separately flags a token at L08 pos 17 as possibly cut off
+at the crop's right edge).
+
+Ten to twelve of the sixteen lines carry a clear-French token mixed in among the numerals (mostly a lone "m"
+or the title abbreviation "M."/"M.r"), plus two lines with short clear-French runs: L07 "mais aussy" and L09
+"et c'est ce qui donne lieu de" (six consecutive clear words) — both passes agree closely on these clear-text
+spans, cross-checking independently of any digit reading.
+
+Agreement (`line`, `pos`, `group` compared, confidence/note ignored): of 16 lines, 11 have matching token
+counts between the two passes; 5 do not (L09, L12, L13, L15, L16 — the L15/L16 mismatch is large, 6-7 tokens
+in pass A vs 15 in pass B, consistent with the L13-L16 crop-boundary problem above rather than a real
+disagreement about the cipher). **Token-level agreement on the 11 count-matched lines: 172/188 = 91.5%** —
+markedly higher than fr2980-gramont's or fr5160's own folio-1-2-letter precedent (65.8%), consistent with this
+being a plainer numeral-only hand versus the symbol+numeral hybrid transcribed in the prior pass. Restricting
+to the 10 lines away from the flagged L13-16 region, count-matching and token agreement are both high; the
+tail of the block (L13-16) is the only real weak spot and should not be relied on without a recrop.
+
+### (3) Two blind passes, folio 87 decipherment (`dechiffre_f87_A.txt`, `dechiffre_f87_B.txt`)
+
+Two independent Sonnet subagents transcribed the same 26 line crops as diplomatic French text, blind to each
+other and to the cipher passes. Both independently read the heading date as "21 9.bre 1659" (see date
+correction above). Word count of the body (excluding the 2 heading lines): 213 words, identical for both
+passes.
+
+Diff (`diff -y`, then a normalised comparison stripping apostrophes, accents and `[?]` markers): of 26 lines,
+8 are character-for-character identical; 18 of 26 are identical once apostrophe-insertion and secretary-hand
+u/v spelling variants are normalised away (pass A consistently does not insert elision apostrophes not
+clearly drawn in the hand — "lauoir", "quil", "cest" — while pass B does — "l'avoir", "qu'il", "c'est" — a
+transcription-convention difference each pass stated up front, not a reading disagreement). The genuine
+content-level disagreements, not explained by that convention difference:
+
+- Line 7 ("celle la, mais aussi j'ay peine de croire que M.**r**" (A) vs "M.**e**" (B)): the two passes
+  disagree on which title abbreviation follows — Monsieur or Madame — immediately before "de la croire
+  capable". Worth a third look at the crop.
+- Line 26, the closing line: pass A reads "**quoy** y pense" (cross-checked, no `[?]`); pass B reads
+  "**qu'on** y pense". These are different words ("what does he/she think of it" vs "that one thinks of it")
+  — the single most important disagreement between the two passes, since it is the letter's last line.
+- Line 3, the name after "M.r": pass A reads "Dambrun" (no flag); pass B reads "Dambruon[?]" (flagged
+  uncertain) — likely the same name, pass B just less confident of the exact letters.
+- Minor: line 9 "desirer"/"désirer" (accent only), line 12/24 comma placement — cosmetic, not a reading
+  disagreement.
+
+No word was marked fully illegible by either pass. Both passes independently noted that several crops show
+two overlapping manuscript lines (the deliberate-overlap-by-design padding mentioned above) and that they
+resolved which text belonged to the "target" line by requiring the reconstructed multi-line sequence to read
+as continuous, grammatical French — a sound blind-transcription strategy, and the reason the two passes agree
+so closely despite the crop overlap.
+
+### (4) Does the decipherment plausibly belong to folio 86's own cipher?
+
+Read folio 86's own clear French text in full (the "Monsieur..." opening on canvas 168 before the cipher
+block, and the "je ne croy pas..." closing on canvas 169 after it, down to where the leaf ends mid-sentence,
+"C'est d'une lettre de M[...]"). **Folio 86 itself carries no explicit date anywhere in either its opening or
+its closing prose** — only a relative reference, "La lettre qu'il vous a pleu de m'escrire du 8.e de ce
+mois...", which dates the letter *received*, not this one being *written*. This confirms rather than resolves
+the prior pass's flag: the pairing still rests on context, not a matching date written on the page itself.
+
+Content match: folio 86's opening prose discusses **M. d'Ambrun** advising **Madame de Sauoye** on securing
+her power (garrisoning places, controlling troops) and whether he could be held "innocent" without the King's
+order — and folio 87 paragraph 1 is *entirely* about whether **M. d'Ambrun** made damaging remarks about
+someone "to Monsieur son fils" and whether it reflects "justice ou... hayne" on his part. Folio 86's closing
+prose discusses **M. de Mantoue**'s claims and **M. de Sauoye** needing to defend Montferrat — while folio 87
+paragraph 2 discusses **M. de Savoye** possibly arranging a marriage alliance for his sister at Parme. Both
+leaves circle the same small cast (d'Ambrun, M./Mme de Savoye) and the same register of content: private,
+speculative political commentary on named individuals' motives — exactly the kind of material a mid-17th-
+century diplomat would encipher rather than write in clear, while the surrounding narrative frame (who wrote
+to whom, what is publicly known) stays in plain French. This is consistent with folio 87 being the
+decipherment *of* folio 86's cipher block, but it is a topical/thematic match, not a token-by-token one.
+
+Length check: folio 86's cipher block is ~251-263 numeral tokens (the two passes' raw counts; the true count
+is uncertain in the L13-16 region flagged above); folio 87's body is 213 words. A ratio of roughly 1.2 cipher
+tokens per plaintext word is unremarkable for a nomenclator system mixing letter-, syllable- and word-codes
+with occasional nulls — it neither confirms nor rules out the pairing on its own.
+
+**Net: the pairing is plausible and, on content, fairly strongly suggested, but remains unconfirmed** — no
+date match, and no token-by-token alignment attempted this pass (out of scope per brief). The cheapest next
+step named in the dense-band-walk section above still stands: align folio 86's cipher against folio 87's
+clear French token by token as a known-plaintext crib, ideally after a recrop of the L13-16 region.
+
+Grades: everything in this section is a transcription pass (grade M throughout, model-read from crops, no
+key applied, nothing decoded). No novelty wording (rule 10) — this section describes transcriptions and a
+content-based pairing hypothesis, not a claimed decipherment.
+
+### Requests this pass
+
+No fetches (all six source images already on disk from the prior pass; this session's Gallica lane slots were
+held by another worker). Four Sonnet subagents (two blind passes of the folio 86 cipher, two blind passes of
+the folio 87 decipherment leaf, image-only, no network). Folder size unchanged from the prior pass's ~21MB
+plus ~2.8MB of new line-crop JPEGs, still well under the 30MB cap.
