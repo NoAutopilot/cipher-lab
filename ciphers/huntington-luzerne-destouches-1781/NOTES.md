@@ -236,3 +236,64 @@ Status unchanged: open. Nothing below classifies novelty.
 - Consistent Huntington values seen across letters (ink): 10 de, 202 a, 125 a, 6 que, 32 vous, 941 ne, 947 les, 725 les, 331 a, 341 fre, 981 ga, 391 tes, 599 sur, 610 etre, 880 pres, 626 r, 628 sont, 940 '.', 976 '.', 1181 se, 480 ri, 832 vi, 991 ere, 1193 ti, 444 te, 1151 de, 1086 de, 1131 cent, 863 hommes, 1070 ser, 1187 nul.
 
 **Left.** Apply the settlements above -> `ciphertext_decipher.tsv`; finish `interlinear_readings.tsv` and run `build_pairs.py` (pairs_contemporary.tsv, key.tsv, conflicts, Yale cross-check); decode.json + tools/decode_key.py on 108(A) with --check; per-token grades; matched control before any S grade; NOTES search log (Stevens's Facsimiles, Founders Online not re-run). ROOM 'for LANE W' line only when the reading is ready.
+
+## R10: key and reading, 24 Sep 2026 07:32 UTC (LANE R worker R10)
+
+Status unchanged: open (mssDE 68/37/55 are transcriptions of an existing decipherment, not solves; mssDE 108(A) is
+a partial recovery, most of the key still missing). Nothing below classifies novelty (rule 10).
+
+**Applied `apply_r6_settlements.py`:** all 29 disagreement rows R6 read off the image (`recon_decipher/disagreements.tsv`)
+applied to `recon_decipher/ciphertext_draft.tsv` -> `ciphertext_decipher.tsv` (533 groups, matches `--check`). Several
+settled values match neither blind pass (e.g. mssDE68 p2 L03/1 = 80, mssDE68 p2 L09/4 = 341, mssDE37 p2 L01/2 = 341):
+the hand's flat-topped '3' is what the two passes split between 2, 3 and 9 (already flagged by R6).
+
+**`interlinear_readings.tsv`:** converted straight from `interlinear_readings_draft.txt` (56 lines, header added).
+Checked every line's unit count against its settled group count in `ciphertext_decipher.tsv`: zero mismatches, so no
+crop was reopened this pass.
+
+**`build_pairs.py` grading fix (LANE W's ruling, ROOM.md 24 Sept 2026 07:18):** the script graded an undoubted ink
+gloss 'H', treating the interlinear decipherment as a key source. Per rule 4 a contemporary decipherment of the same
+letter is known plaintext, not a key source -- LANE W's flag for the parallel rah-canada-1869 case ("interlinear = C
+not H") applies here identically. Changed the three places that wrote 'H' for this case to 'C' (grade assignment,
+the ink-bucket test, and key.tsv's per-figure grade column); also fixed the run summary, which printed only H/M/U
+counts and silently dropped the (now renamed) C bucket. `python3 build_pairs.py --check` passes.
+
+**Outputs (all regenerate from `ciphertext_decipher.tsv` + `interlinear_readings.tsv` + `key_tomokiyo.tsv`):**
+- `pairs_contemporary.tsv`: 533 tokens across mssDE 68 (177), 37 (85), 55 (271) -- **C 323, M 119, U 91**.
+- `key.tsv`: **229 distinct figures** (206 from an ink gloss without doubt or agreeing pencil = grade C; the rest
+  M from pencil-only, doubtful '?' or struck glosses). `key_conflicts.tsv`: **13 figures** where two C readings
+  disagree (e.g. 391 = tes/te, 835 = chez/cher, 981 = ga/le) -- decode_key.py grades these M via the 'a|b' rule,
+  not silently picking one.
+- `key_yale_crosscheck.tsv`: 44 figures shared with the Yale 8 Jan 1781 (Rochambeau) alignment, **0 agree** --
+  confirms R6's finding that the Huntington code and the Yale/Tomokiyo code are different systems; the Yale values
+  are compared, never merged.
+- mssDE 68's own ink decipherment: **not a solve, a transcription** of the archive's own contemporary reading
+  (every one of its 177 groups already glossed, per R1/R6). Written to `reading_68.txt` by `build_reading_68.py`
+  (struck glosses kept as `[x:...]`, the decipherer's own null marks kept as `nul`); C 158, M 19, U 0.
+- mssDE 108(A) (16 Jan 1781, the one item in this small correspondence with no decipherment in the archive):
+  `decode.json` + `tools/decode_key.py` apply `key.tsv` (built from 68/37/55's known plaintext, not a key sheet for
+  108(A) itself) to `ciphertext.tsv`. **719 tokens: C 347, M 110, U 262** (173 distinct unkeyed figures). No S grade
+  assigned or possible: 108(A) carries no per-position plaintext vote (its only marks are the sparse later pencil
+  glosses already logged in 'R6 progress', which are not usable as votes without their own date/hand established).
+  `tools/decode_key.py ciphers/huntington-luzerne-destouches-1781 --check` exits 0. Sample lines already read
+  plausibly as continuous French about troop movement up a river in Virginia ("...ils ont remonte la riviere...",
+  p1 L03-04), consistent with the covering catalogue note ("French naval operations", "British forces").
+
+**Search log for the 16 Jan 1781 letter (mssDE 108(A)) plaintext, from the 24 Sept 2026 check-solved sweep above:**
+searched Doniol vol. 5 (IA full-text, phrase search on the date and "Destouches chiffre" -- one hit, a different,
+later letter), the OAC finding aid for the Destouches papers (collection-level only, no item entries), Founders
+Online (La Luzerne<->Washington/Destouches items near this date -- none enclose or quote the 16/31 Jan letters),
+Cryptiana's list and blog (the only Luzerne hit is the unrelated 8 Jan 1781 Yale item), live web search (no
+Cipherbrain/Cipher Mysteries/MysteryTwister/r/codes discussion), the DECODE catalogue snapshot in Aymeloglu's
+repository (BL Add MS 32263 rows only, a different collection), and both solver repositories by grep for
+"luzerne"/"destouches" (no mssDE hit in either). Not found in any of the six sources. Not checked: Stevens's
+Facsimiles (no full-text copy located), DECODE's live search (login broken, ASKS.md row 1), Google Books.
+
+**Left for a future pass (not started, out of this worker's brief):** 173 unkeyed figures in mssDE 108(A) (U
+grade) and 13 conflicted figures in `key_conflicts.tsv` are candidates for an Opus context-fitting pass over the
+partial French already recovered (e.g. crib "riviere" at p1 L04, "virginie"/"Arnold" from the catalogue note) --
+any such pass needs a matched synthetic control of the same length/design/language before an S grade is claimed
+(rule 3), which nothing here attempts. The sparse later pencil glosses on 108(A) itself (logged in 'R6 progress')
+are a second, independent partial decipherment attempt by an unknown, undated hand -- worth comparing against this
+key once both exist, not done this pass. No subagents used; no network requests this session (all inputs already
+on disk from R1/R2/R6).
