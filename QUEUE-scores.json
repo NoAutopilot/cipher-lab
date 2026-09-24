@@ -8179,5 +8179,47 @@
    "github.com": 2
   },
   "rows": []
+ },
+ "lane_n_ia-mss": {
+  "_about": "LANE N scout of 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-n-scIA.md, worker for session_01W4z8JhXJYHRjorPC1Qkpiy): digitised manuscripts and archival microfilm on the Internet Archive, copy-free only (archive.org advancedsearch.php, title/description/subject/collection fields, never full text). Row prefix IA reserved, unused. Control: title:(cipher) surfaces BeineckeMS408_47 (Voynich, catalogued 'Cipher manuscript'), confirming the search method returns genuine cipher-manuscript records; the brief's own suggested bplscas control instead returned one metaphorical false positive (memorialofharrie00chap, 'the president a cypher too'). Zero candidates kept across ten field-scoped queries (English/French/Spanish/Italian/German cipher terms and phrases, subject:(Ciphers), named manuscript collections bplscas/bplmanuscriptcatalog/bplmedmss/JohnCarterBrownLibrary, a collection-listing sweep for special-collections/manuscript repositories): every hit was either a printed book about cryptography as a genre (the overwhelming majority), a false positive from another sense of cipher/cypher/chiffre/cifra (metaphor, royal monogram, printer's signature mark, financial figure, litigant surname), or genuinely cipher-adjacent but out of this brief's scope (a printed 1873 transcript, a HistoCrypt paper about ciphertexts, James Hampton's mid-20th-century invented-script notebook). Full log: sources/solver-diffs/2026-09-24-lane-n-ia-mss.tsv; narrative: QUEUE.md 'Digitised manuscripts on the Internet Archive (LANE N scout of 24 September 2026)'. Structural caveat: a metadata-only keyword sweep cannot find a cipher letter catalogued neutrally as 'letter, n.d.' -- that gap needs a full-text/OCR signal (LANE T's detector lane) or a collection-by-collection browse, not this method.",
+  "date": "24 September 2026",
+  "control": {
+   "host": "archive.org",
+   "result": "passed",
+   "evidence": "title:(cipher) surfaces BeineckeMS408_47, 'Beinecke MS 408, Cipher manuscript. (Known as: Voynich manuscript)' -- a genuine cipher-manuscript catalogue record on archive.org, confirming the search returns real hits and not just cryptography-genre noise. The brief's own suggested bplscas-collection control returned only a metaphorical false positive (memorialofharrie00chap), logged separately, not treated as passing."
+  },
+  "raw": 15,
+  "kept": 0,
+  "dropped": [
+   {
+    "name": "memorialofharrie00chap (Memorial of Harriet Martineau, bplscas)",
+    "reason": "false positive -- 'cypher' used metaphorically ('the president a cypher too'), not a cipher letter"
+   },
+   {
+    "name": "biostor-202630 / jstor-981646 (Transcript of a Curious Manuscript Work in Cypher, 1873)",
+    "reason": "out of scope -- a printed 19th-century transcript of a cipher manuscript, not a digitised manuscript image; a lead for the printed-ciphertext detector lane instead"
+   },
+   {
+    "name": "dinnissen-araujo-mirror-for-all-traitors-histo-crypt-2023",
+    "reason": "out of scope -- a HistoCrypt 2023 scholarly paper describing captured ciphertexts, not itself a digitised manuscript"
+   },
+   {
+    "name": "Jaham (Hampton's undeciphered diary / Hamptonese)",
+    "reason": "out of project genre -- mid-20th-century American outsider-art invented script, not a chancery/diplomatic cipher in a known plaintext language; already extensively publicly covered (Smithsonian ownership), not a fresh find under rule 1"
+   },
+   {
+    "name": "verordnungbetref00denm_0 / inquiryintonatur01smit_2 (John Carter Brown Library)",
+    "reason": "false positives -- 'Chiffre' is a royal monogram on a 1757 flag ordinance; 'cipher' is a printer's signature-correction note in a 1776 book, neither is cryptography"
+   },
+   {
+    "name": "MN003278PartiallyDamagedUndecipheredSharadaManuscriptsAtKurukshetraUniversity",
+    "reason": "false positive -- 'undeciphered' means damaged/illegible in a known script (Sharada), a palaeography problem, not a cipher"
+   }
+  ],
+  "hosts_blocked": [],
+  "requests_per_host": {
+   "archive.org": 15
+  },
+  "rows": []
  }
 }

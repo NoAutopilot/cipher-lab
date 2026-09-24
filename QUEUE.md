@@ -2904,3 +2904,61 @@ step: de-crypt.org ~28 (volume-sibling check, no login, >=1.7s apart) + 1 login 
 (>=1.6s apart, per the brief) + auto-discovered attachment fetches (deleted, unread) = about 80 total this
 step; combined with the ~24 DECODE requests in the Gramont/Danzay search above, this worker's de-crypt.org
 total is about 104, under the 150-request cap.
+
+## Digitised manuscripts on the Internet Archive (LANE N scout of 24 September 2026)
+
+Brief: `.claude/briefs/runs/2026-09-24-lane-n-scIA.md`, copy-free only. Host: `archive.org` `advancedsearch.php`
+(title/description/subject/collection fields only, never full text -- that is LANE T's detector lane).
+Target: items on archive.org that are digitised manuscripts or archival microfilm (special-collections
+uploads, microfilm reels of state papers) whose catalogue metadata itself names a cipher, in English, French,
+Spanish, Italian or German, excluding printed books about cryptography, modern crime/thriller fiction titled
+"cipher", and anything already on the board or in the solver repos. Row prefix `IA` reserved, unused.
+
+**CONTROL (required by the brief).** `title:(cipher)` (unrestricted) surfaces `BeineckeMS408_47`, "Beinecke MS
+408, Cipher manuscript. (Known as: Voynich manuscript)" -- confirming the advancedsearch API does return
+genuine cipher-manuscript catalogue records, not just noise about the cryptography genre. (Voynich itself is
+not a candidate: it is the most publicly worked cipher manuscript there is, already on every tracker, and this
+project's genre is post-1450 chancery/diplomatic ciphers with a plaintext language, not an undeciphered script.)
+The brief's own suggested control, `bplscas` (Boston Public Library special collections) narrowed to "cipher
+OR cypher", surfaced one hit, `memorialofharrie00chap` (1876 Maria Weston Chapman memoir), which quotes
+Gallatin saying "the president a cypher too" -- a metaphor, not a cipher letter; not a control pass on its own,
+which is why the Voynich item above is cited instead.
+
+**Result: 0 candidates kept.** Ten field-scoped advancedsearch queries (title/description/subject "cipher OR
+cypher OR ciphered" crossed with "letter/papers/manuscript/correspondence"; the French, Spanish, Italian and
+German terms "chiffre", "chiffré", "cifra", "cifrado", "Geheimschrift" and phrase variants "lettre chiffrée",
+"carta cifrada", "en cipher", "code letter", "undeciphered"; `subject:("Ciphers")`; named manuscript-heavy
+collections `bplscas`/`bplmanuscriptcatalog`/`bplmedmss`/`JohnCarterBrownLibrary`), plus a collection-listing
+query for special-collections/manuscript repositories on IA, returned no genuine unread diplomatic or military
+cipher letter. What the searches return instead, consistently, in three shapes:
+
+1. **Printed books and reference works about cryptography as a subject** (Kahn's *Codebreakers*, children's
+   code-puzzle books, the Bacon-cipher Shakespeare literature, NSA Friedman-collection *correspondence about
+   cipher machines*, RFC/DTIC technical documents) -- the overwhelming majority of every query's hits, because
+   IA's `subject:("Ciphers")` LCSH heading and free-text "cipher"/"cypher" match the genre of the book, not the
+   content of a manuscript.
+2. **False positives from other senses of the word** -- "cypher" meaning nonentity (`memorialofharrie00chap`),
+   French/Spanish/Italian "chiffre"/"cifra" as ordinary financial or numerical figures (Leiden tax-law theses,
+   "tension artérielle... et chiffre", Wealth of Nations' errata note "cipher '2' added by hand"), a royal
+   monogram ("Königl. Chiffre" on a 1757 Danish flag ordinance), and litigant surnames in US federal court
+   filings (`gov.uscourts.*` "Cypher").
+3. **Genuinely cipher-adjacent items outside this brief's scope**, logged here rather than scored as rows: a
+   1873 Proc. Amer. Phil. Soc. article, "Transcript of a Curious Manuscript Work in Cypher, Supposed to be
+   Astrological" (`biostor-202630`/`jstor-981646`) -- a printed 19th-century transcript, not a manuscript image,
+   candidate for the printed-ciphertext detector lane, not this one; a HistoCrypt 2023 paper on captured
+   Portuguese-Brazil ciphertexts (`dinnissen-araujo-mirror-for-all-traitors-histo-crypt-2023`) -- a scholarly
+   paper about ciphertexts, not itself a digitised manuscript; and James Hampton's "Hamptonese" notebook
+   (`Jaham`, a crowd-uploaded N-gram analysis with page scans) -- a mid-20th-century American outsider-art
+   invented script, already the subject of extensive public coverage (Smithsonian ownership, decades of press),
+   outside this project's chancery/diplomatic-cipher genre and not a fresh find by any reading of rule 1.
+
+No collection dedicated to digitised manuscripts (Boston Public Library's three manuscript collections, the
+John Carter Brown Library's own uploader collection) returned a single cipher-flagged item beyond the false
+positives above. Full log: `sources/solver-diffs/2026-09-24-lane-n-ia-mss.tsv`. Caveat: this method only
+surfaces items whose own cataloguer wrote "cipher" (or a foreign-language equivalent) into the title,
+description or subject field; it cannot find a manuscript letter that is in cipher but was catalogued
+neutrally as "letter, n.d." -- that gap is structural to a metadata-only sweep (rule 2, image over
+transcription, does not even apply until metadata surfaces a candidate) and would need either a full-text/OCR
+signal (out of this brief's hosts, LANE T's lane) or a collection-by-collection browse, not a keyword search.
+Requests: `archive.org` 15 (advancedsearch: 14, metadata: 1), all ≥1.5 s apart, descriptive User-Agent. No
+subagents, no other hosts, no novelty wording, no promotion to board.
