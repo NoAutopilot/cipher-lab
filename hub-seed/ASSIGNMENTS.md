@@ -192,3 +192,9 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 142 | 24 Sep | cipher-lab | Scout RAH digital library by OAI-PMH, copy-free (RA rows) | LANE N (session_01W4z8JhXJYHRjorPC1Qkpiy) | scout, Sonnet cap $6, lane-n-scRAH.md | running, session_01Ex62844yq7TNXpuNqSbmQU |
 | 143 | 24 Sep | cipher-lab | Scout CUDL and Digital Bodleian, digitised only (OX rows) | LANE N (session_01W4z8JhXJYHRjorPC1Qkpiy) | scout, Sonnet cap $6, lane-n-scOX2.md | running, session_01VAZDkAJdo48ekkcnwmWZ96 |
 | 151 | 24 Sep | cipher-lab | Verifier: rah-canada-1869 (Cañada note, RAH 9/6958), R8's reading from the item's interlinear clear text -> AUDIT.md N-class | LANE W (session_011UFnhZnyCntZ8Bn9FpKyTq) | verifier template, Opus cap $8, inline brief | running, session_015WGs4haDEN8xAfe2QH9fyu |
+| 152 | 24 Sep | cipher-lab | U1 La Luzerne: settlements, gloss table, build_pairs, key (C), decode 108(A) | LANE R | finisher, Sonnet cap $6 | running, session_01VRd7nA7f2ofyPMuLL9urUz |
+| 153 | 24 Sep | cipher-lab | U2 Blathwayt: finish pass B on six pages, reconcile | LANE R | passes, Sonnet cap $5 | running, session_01HQ6j9nsqSZ7JCHyNaSebLu |
+| 154 | 24 Sep | cipher-lab | NB1 Lodewijk van Nassau: sibling passes 4613/4615 + decipherment sheets | LANE R | passes, Sonnet cap $6 | running, session_01KhEEDeGngmwhooD31Diyvk |
+| 155 | 24 Sep | cipher-lab | NB1 Lodewijk van Nassau: target passes 4610/4611/4612/4616 | LANE R | passes, Sonnet cap $8 | running, session_013PWgEFMJi3zfJyzQeuCq5J |
+| 156 | 24 Sep | cipher-lab | NB2 Orange-Saxony: glyph atlas, passes 126/74/98/53/57, decipherment sheets | LANE R | atlas+passes, Sonnet cap $7 | running, session_01YDNt6SXkAQkfNRfwd6qz1q |
+| 157 | 24 Sep | cipher-lab | NB4 La Garde 6179 + Marnix 6467 passes, marginal solution | LANE R | passes, Sonnet cap $4 | running, session_01LYLtUUXptDFW3FWjfVCN3x |
