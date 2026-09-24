@@ -1,0 +1,365 @@
+# Cipher no.60, the Court symbol cipher ("Chiffre baille a Monsieur de Nevers, Montereau, aoust 1593"),
+# BnF fr.3995 ff.108-111 (Gallica btv1b525085665 canvases 208-213). Reconstruction and numbering: Satoshi
+# Tomokiyo, Cryptiana (cryptiana.web.fc2.com, nevers.htm and henryiv2.htm). Transcription of the tables and
+# glyph tags: Daniel Bourdeau, github.com/dbourdeau/cyphersolver nevers1593/key60.txt + decode60.py
+# (commit a0d5a07349e98cfc47d41608cd88722a219c44a3; code MIT, text CC BY 4.0). Converted by tools/keys/key60_from_bourdeau.py, 24 Sept 2026.
+# Tags are Bourdeau's descriptive stand-ins (see his key60.txt for the shapes). grade M = crib-read cursive
+# form or value marked uncertain by him; Tomokiyo's own table is an image on henryiv2.htm, not compared here.
+sign	value	grade	source	note
+∂	a	H	table	
+o	a	H	table	
+x	a|d	M	table	Bourdeau decode60.py value a
+·q	a	H	table	
+o'	a	H	table	
+ꝝ	b	H	table	
+oo	b	H	table	
+14	b	H	table	
+n~	b	H	table	
+//	c	H	table	
+∠	c	H	table	
+·x	c	H	table	
+=	d	H	table	
+‡|	d	H	table	
+.x.	d	H	table	
+uij	d	H	table	
+f	e	H	table	
+ue	e	H	table	
+ur	e	M	crib-f151	
+x:	e	H	table	
+x.	e	H	table	
+9	e	H	table	
+g	de	H	table	
+8	t	H	table	
+>	f	H	table	
+L	f	H	table	
+a+	g	H	table	
+H#	g	H	table	
+h+	g	H	table	
+c+	g	H	table	
+5+	g	H	table	
+g+	gu	H	table	
+q++	g	H	table	
+V+	g	H	table	
+8o'	g	H	table	
+ξ	h	H	table	
+z8	h	H	table	
+uu+	h	H	table	
+4+	bien	H	table	
+to	i	H	table	
+++	u	H	table	
+u+	aussi	H	table	
+‡	i	H	table	
+d+	i	H	table	
+2+	p|i	M	table	Bourdeau decode60.py value p
+2+'	u	H	table	
+ꝗ	l	H	table	
+cH	l	H	table	
+t	ru	H	table	
+p~	l	H	table	
+t'	m	H	table	
+ʃ	m	H	table	
+ß	n	H	table	
+ccc	m	H	table	
+m	m	H	table	
+ſ	m	H	table	
+A	m	H	table	
+fs	n	H	table	
+T	n	H	table	
+⊥	n	M	crib-f151	
+s	n	H	table	
+TL	n	H	table	
+1	n	M	crib-f151	
+π	o	H	table	
+ᛉ	o	H	table	
+Δ	o	H	table	
+X	o	H	table	
+\\	o	H	table	
+g3	p	H	table	
+v+	p	H	table	
+10	p	H	table	
+7	p	H	table	
+9+	q	H	table	
+A-	q	H	table	
+8+	tous	H	table	
+oe	r	H	table	
+v	li	H	table	
+///	r	H	table	
+X~	r	H	table	
+d'	r	H	table	
+do	r	M	crib-f151	
+ꝺo	r	M	crib-f151	
+ꝺ	r	M	crib-f151	
+y	s|ve	M	table	Bourdeau decode60.py value s
+6	di|s	M	table	Bourdeau decode60.py value di
+r	s	H	table	
+b	s	H	table	
+c	s	H	table	
+2z	t	H	table	
+ꝛ	luy	H	table	
+ɤ	t	H	table	
+La	t	H	table	
+.xx.	t	H	table	
+xx	t	H	table	
+v'	u	H	table	
+ll	bon	H	table	
+20	u	H	table	
+4	x	H	table	
+sqrt	u	H	table	
+17	x	H	table	
+29	x	H	table	
+30	x	H	table	
+c‡	y	H	table	
+2‡	y	H	table	
+oto	y	H	table	
+L++	y	H	table	
+2++	y	H	table	
+C	y	H	table	
+q-	z	H	table	
+±	z	H	table	
+F-	z	H	table	
+y~	z	H	table	
+3	ri	H	table	
+ai	bi	H	table	
+d	be	H	table	
+η	bo	H	table	
+:.	na	H	table	
+φ	ca	H	table	
+18	ce	H	table	
+t3	ci	H	table	
+∝	co	M	crib-f151	
+l	cu	H	table	
+p	da	H	table	
+de	de	H	table	
+12	du	H	table	
+91	fa	H	table	
+16	fe	H	table	
+Lo	fi	H	table	
+o-''	fo	H	table	
+w	fu	H	table	
+λ	la	M	crib-f151	
++o	le	H	table	
+o-	tu	H	table	
+V	lo	H	table	
+q'	lu	H	table	
+rp	ma	H	table	
+ro	me	H	table	
+.|.	mi	H	table	
+aj	mo	H	table	
+ct	mu	H	table	
+x~	ne	H	table	
+50	ni	H	table	
+52	no	H	table	
+53	nu	H	table	
+54	pa	H	table	
+42	pe	H	table	
+q~	pi	H	table	
+tt	po	H	table	
+13	pu	H	table	
+pr	qua	H	table	
+pi	que	M	crib-f151	
+L40	qui	H	table	
+.:	ra	H	table	
+E	re	H	table	
+m~	ro	H	table	
+ae	armee	H	table	
+2	sa	H	table	
+X+	se	H	table	
+X++	si	M	crib-f151	
+Q	so	H	table	
+ꝑ	so	M	crib-f151	
+C~	su	H	table	
+Δ'''	ta	H	table	
+q	te	H	table	
+e	to	H	table	
+o-'	ua	H	table	
+w'	vu	H	table	
+3~	vi	H	table	
+ci	mu	H	table	
+h3	ceulx	H	table	
+com	plus	H	table	
+cy	ilz	H	table	
+ss	qu'ilz	H	table	
+n	et	H	table	
++	nostre	H	table	
+|-	nous	H	table	
++7	vous	H	table	
+θ7	fait	H	table	
+Q'	est	H	table	
+f++	qu'il	H	table	
+p'	fault	H	table	
+s'	en	H	table	
+theta	des	H	table	
+-|-	paix	H	table	
+|--	guerre	H	table	
+_|_	combat	H	table	
+.:.	Je	H	table	
++8	sans	H	table	
+8o	raison	H	table	
+d8	tant	H	table	
+~~	deux	H	table	
+5	comme	H	table	
+45	tout	H	table	
+60	affaires	H	table	
+67	affin	H	table	
+92	chacun	H	table	
+94	dont	H	table	
+96	chose	H	table	
+97	catolique	H	table	
+99	davantage	H	table	
+lh	beaucoup	H	table	
+cc	car	H	table	
+car	tousiours	H	table	
+est	rien	H	table	
+cS	leurs	H	table	
+Se	mais	H	table	
+Le	audiance	H	table	
+Jl	gouvernement	H	table	
+OO	assistance	H	table	
+nre	grand	H	table	
+per	moy	H	table	
+po	pour	H	table	
+ꝑ3	pour	H	table	
+p3	pour	H	table	
+G~	quelque	H	table	
+tt'	aultre	H	table	
+n'	ville	H	table	
++++	moins	H	table	
+w+	Les	H	table	
++w	aux	H	table	
++w'	les	H	table	
+4++	asseurance	H	table	
+p-o	Iceux	H	table	
+p-o'	Icelluy	H	table	
+F	Armes	H	table	
+ↄ	neantmoins	H	table	
+V(inv)	deffaute	H	table	
+V'	tresve	H	table	
+Vre	non	H	table	
+T'	autorite	H	table	
+δ	rencontre	H	table	
+w''	avec	H	table	
+w'''	aiant	H	table	
+8~	Riviere	H	table	
+8~'	Religion	H	table	
+8~~	par	H	table	
+8~~~	Province	H	table	
+k	ont	H	table	
+&t	f	H	table	
+G	vitoire	H	table	
+8'	ainsi	H	table	
+++O	d'autant	H	table	
+q+	village	H	table	
+oo+	le Roy	H	table	
+O++	le Pape	H	table	
+3+	le grand Seigneur	H	table	
+#'	l'Empereur	H	table	
+8+'	Roy d'Espaigne	H	table	
++C	la Seigneurie de Venise	H	table	
++phi	le grand Duc de Toscane	H	table	
+R	Duc de Mantoue	H	table	
+phi	Duc de Ferrare	H	table	
+alpha'	Duc de Savoye	H	table	
+oo b	Duc de Lorraine	H	table	
+II	Cardinal de Bourbon	H	table	
+X.	Mr de Chomberg	H	table	
+ooo	Conte de Soissons	H	table	
+oo~	Mr de Montpensier	H	table	
+8++	Mr de Longueville	H	table	
+otto	Conte de St Paul	H	table	
+###	Mr de Montmorency	H	table	
+O	Cardinal Gondy	H	table	
+Psi+	Mareschal de Retz	H	table	
+phi-o	Mareschal d'Aumont	H	table	
+#~	Mareschal de Bouillon	H	table	
+4+'	Mr d'Espernon	H	table	
+X~~	Mr de Schomberg	H	table	
+ʊ	Alphonse d'Ornano	H	table	
+G'	Mr Desdiguieres	H	table	
+4+''	Marquis de Pisany	H	table	
++oo	Mr de Sancy	H	table	
+R'	Mr Gondy	H	table	
+++C	Mr de Maisse	H	table	
+obo	Mr de Sillery	H	table	
+Δ+	Mr de Fresne	H	table	
+A'	Mr de la Chastre	H	table	
+77	Duc de Mayenne	H	table	
+E''	Duc de Guise	H	table	
+L7	Mr de Nemours	H	table	
+*	Mr d'Aumale	H	table	
+Q+	Mr de Mercure	H	table	
+Q''	Mr d'Elbeuf	H	table	
+H''	Mr de Rosne	H	table	
+H	St Pol	H	table	
+A:	Mr de Belin	H	table	
+Φ	Mr de Bellievre	H	table	
+Φ'	Mr de Villeroy	H	table	
+7~	President Jeannin	H	table	
+H'	Chevalier de Diou	H	table	
+S	Mr Zamet	H	table	
+t5	Bassompierre	H	table	
+P	Monsieur	H	table	
+P'	Madame	H	table	
+m'	Royne d'Angleterre	H	table	
+M	prelatz	H	table	
+J	consistoire	H	table	
+Cg	?Cg	M	table	
+ij	a	H	table	roman numeral, col.1
+iij	d	H	table	roman numeral, col.1
+xxij	le Legat	H	table	roman numeral, col.1
+xxiij	Ambassadeur d'Espagne	H	table	roman numeral, col.1
+xxiiij	Duc de Feria	H	table	roman numeral, col.1
+xxv	Ambassadeur de Venise	H	table	roman numeral, col.1
+xxvj	princes protestans	H	table	roman numeral, col.1
+xxvij	estatz des Pays Bas	H	table	roman numeral, col.1
+xxviij	Conte de Nassau	H	table	roman numeral, col.1
+xxix	Francois	H	table	roman numeral, col.1
+xxx	Italiens	H	table	roman numeral, col.1
+xxxj	Espagnolz	H	table	roman numeral, col.1
+xxxij	Reistres	H	table	roman numeral, col.1
+xxxiij	Lansquenetz	H	table	roman numeral, col.1
+xxxiiij	Anglois	H	table	roman numeral, col.1
+xxxv	Wallons	H	table	roman numeral, col.1
+xxxvj	Neapolitains	H	table	roman numeral, col.1
+xxxvij	Suisses	H	table	roman numeral, col.1
+xxxviij	France	H	table	roman numeral, col.1
+xxxix	Espagne	H	table	roman numeral, col.1
+xl	Italie	H	table	roman numeral, col.1
+xlj	la Suisse	H	table	roman numeral, col.1
+xlij	Angleterre	H	table	roman numeral, col.1
+xliij	la Savoye	H	table	roman numeral, col.1
+xliiij	l'Allemagne	H	table	roman numeral, col.1
+xlv	le Piemont	H	table	roman numeral, col.1
+xlvj	le Milanois	H	table	roman numeral, col.1
+xlvij	la Lorraine	H	table	roman numeral, col.1
+xlviij	Cardinaux	H	table	roman numeral, col.1
+xlix	Evesques	H	table	roman numeral, col.1
+lxj	Lion	H	table	roman numeral, col.1
+lxij	Tours	H	table	roman numeral, col.1
+lxiij	St Denys	H	table	roman numeral, col.1
+lxiiij	Mante	H	table	roman numeral, col.1
+lxv	Chartres	H	table	roman numeral, col.1
+lxvj	Bordeaux	H	table	roman numeral, col.1
+lxvij	Blois	H	table	roman numeral, col.1
+lxviij	Melun	H	table	roman numeral, col.1
+lxix	Corbeil	H	table	roman numeral, col.1
+lxx	Vernon	H	table	roman numeral, col.1
+lxxj	Senlis	H	table	roman numeral, col.1
+lxxij	Compiegne	H	table	roman numeral, col.1
+lxxiij	Chaalons	H	table	roman numeral, col.1
+lxxiiij	Meaux	H	table	roman numeral, col.1
+lxxv	Pontoise	H	table	roman numeral, col.1
+lxxvj	Caen	H	table	roman numeral, col.1
+lxxvij	Dreux	H	table	roman numeral, col.1
+lxxviij	Verneuil	H	table	roman numeral, col.1
+lxxix	Rome	H	table	roman numeral, col.1
+lxxx	Venise	H	table	roman numeral, col.1
+iiijxx	Florence	H	table	roman numeral, col.1
+iiijxxj	Mantoue	H	table	roman numeral, col.1
+iiijxxij	Marseille	H	table	roman numeral, col.1
+iiijxxiij	Ferrare	H	table	roman numeral, col.1
+iiijxxv	Verone	H	table	roman numeral, col.1
+***	NULL	H	table	null (enciphering sheet)
+-oo	NULL	H	table	null (enciphering sheet)
+4‡	NULL	H	table	null (enciphering sheet)
+g#	NULL	H	table	null (enciphering sheet)
+ſo	NULL	H	table	null (enciphering sheet)
