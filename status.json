@@ -367,7 +367,7 @@
    "state": "active",
    "holder": "Worker",
    "kind": "cryptanalysis",
-   "next": "Two blind passes on the 290 signs the first crops missed; then a joint-segmentation solver (the scribe wrote unbroken digit strings with no separators, 11 distinct signs), with an Italian model and a matched control.",
+   "next": "Extra passes on the 290 untranscribed signs running; Opus joint-segmentation solver with a 16th-c. Italian model and matched control started (LANE G).",
    "note": "Reconciled 24 Sept 2026: 588 signs, 11 distinct, every boundary uncertain; the cipher is a digit-string system without separators, so segmentation and solving must be done together.",
    "wait": {
     "on": "Reconciliation from the image",
@@ -385,8 +385,8 @@
    "state": "active",
    "holder": "Worker",
    "kind": "recovery",
-   "next": "Dense sampling of the two cipher bands (fol. 1-12 and 86-88), crops of the two fullest letters, two blind passes, and a mechanical trial of Tomokiyo's Brienne ciphers of 1647 and 1651 from the same office.",
-   "note": "Census of 24 Sept 2026: cipher on 6 of 54 sampled leaves, no decipherment seen yet although the catalogue says one often accompanies the letters; print check negative. The catalogue's 'Le Tellier' attribution was wrong; Gallica's own description names Brienne to Servien.",
+   "next": "Folio 87 is a contemporary decipherment leaf of Brienne's letter of 21 Nov 1659; folio 86 (numeral cipher) is its likely ciphertext. Crops and two blind passes of both running (LANE G); then an Opus alignment to recover the key at grade C and read folio 88 with it.",
+   "note": "Census of 24 Sept 2026: cipher on 6 of 54 sampled leaves, no decipherment seen yet although the catalogue says one often accompanies the letters; print check negative. The catalogue's 'Le Tellier' attribution was wrong; Gallica's own description names Brienne to Servien. Dense walk 24 Sept 2026: 18 of 53 canvases cipher or mixed in two bands (Jan-Aug 1653 symbol+numeral; Nov 1659 numeral-only); Tomokiyo's 1647/1651 Brienne keys do not beat a shuffled control on the 1653 letter.",
    "wait": {
     "on": "Band sampling and the key trial",
     "since": "24 Sep 2026, 02:27 UTC",
@@ -439,7 +439,7 @@
    "state": "blocked",
    "holder": "Nobody",
    "kind": "recovery",
-   "next": "Held: no ciphered leaf found in 25 sampled canvases and the BnF notice flags none; Boucher's Lettres de Henri III V-VI unreachable online. Lead: fr. 17834, Maisse's own outgoing register.",
+   "next": "LANE G worker checking fr.17834 series (Maisse's own outgoing registers) for ciphered leaves.",
    "note": "Tomokiyo reconstructed the key from this volume and wrote that he had not seen it used. Until a ciphered leaf is seen this is a key, not a target.",
    "wait": {
     "on": "A ciphered leaf, in this volume or fr. 17834",

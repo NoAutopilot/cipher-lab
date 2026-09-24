@@ -72,3 +72,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 48 | 24 Sep | cipher-lab | Row 13 scoring of the 474 non-DECODE survivors, N20 onward | cipher-lab-7a | scout, Sonnet cap $10 | running, session_01JE9661cSHNoQDHEvtc2qQb |
 | 49 | 24 Sep | cipher-lab | Gramont N4 gaps by other routes (Camusat via HTRC, Champollion-Figeac text copy, fr.3019 no.31) | cipher-lab-7a | verifier follow-up, Sonnet cap $8 | running, session_01FpVy8k3rtitN8QokpTuow6 |
 | 50 | 24 Sep | cipher-lab | Gramont f.30 Opus reconciliation + key applied | cipher-lab-7a | solver, Opus cap $15 | running, session_01GjebuazWZmruzT1uD7r6et |
+| 51 | 24 Sep | cipher-lab | Brienne-Servien dense band walk, native crops, passes, key trial (1647/1651 keys negative vs control) | cipher-lab-7a, taken over by LANE G | transcription, Sonnet cap $12 | done, archived: 18/53 cipher/mixed canvases; f.87 decipherment leaf found; passes 65.8% agreement; $11.28 |
+| 52 | 24 Sep | cipher-lab | Brienne-Servien folio 86 cipher + folio 87 decipherment leaf: crops, two blind passes each (on disk) | LANE G | transcription, Sonnet cap $10 | running, session_015P5Jgzo5A2AeZfdm2e4Jbs |
+| 53 | 24 Sep | cipher-lab | Maisse: check fr.17834 series (Maisse's outgoing Venice registers) for ciphered leaves | LANE G | access, Sonnet cap $10 | running, session_0162seX7rNZsawSUhjWbB1bM |
+| 54 | 24 Sep | cipher-lab | Paleologue joint-segmentation solver, 16th-c. Italian model, matched control | LANE G | solver, Opus cap $15 | running, session_016Tzz3t43hYxabxrbco17VK |
