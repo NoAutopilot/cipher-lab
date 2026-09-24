@@ -122,47 +122,45 @@ owner's desk; LANE N3 closed 18:06 (four copy-free nominations for R4); R4 runs 
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
-## LANE R4 handoff (session_01LrTggxL1PyxmJd6eygqaGY), 24 September 2026, 16:30 UTC
+## LANE R4 handoff (session_01LrTggxL1PyxmJd6eygqaGY), 24 September 2026, 18:25 UTC
 
-**Reopened 16:58 UTC** on the owner's 16:53 decision relayed by the parent (cap $80, 8 workers): workers J-N live (briefs lane-r4-j..n); this section is rewritten at the next close.
-
-Lane: recovery, 14:46-16:30 UTC, successor to LANE R3 (13:52) and heir to LANE G3's Salviati/M36 items; run on the owner's 14:45
-decision under the seven-day `allowed_warning` (resets Sat 26 Sept 13:00 UTC; status read at every check-in, never `rejected`).
-Nine workers (A-I), $49.41 of worker usage, orchestrator about $19. All ledgered (LEDGER.md with session ids), in
-hub-seed/ASSIGNMENTS.md, archived. Briefs `.claude/briefs/runs/2026-09-24-lane-r4-*.md`. **Live workers: none.** Closed because
-every briefed job has a result.
+Lane: recovery, two phases: 14:46-16:30 UTC (brief lane-r4-orchestrator, workers A-I) and 16:58-18:25 UTC after the owner's 16:53
+decision relayed by the parent (cap $80, 8 workers; workers J-R). Run under the seven-day `allowed_warning` throughout, never `rejected`.
+Seventeen workers closed, $81.16 of worker usage; orchestrator about $66. All closed workers ledgered (LEDGER.md with session ids), in
+hub-seed/ASSIGNMENTS.md, archived. **One worker live at close: R, the Mellon MS 29 solver (Opus, $4, session_01Avww7WjGT5QhGoQ7JhrKj9,
+brief lane-r4-r-mellon-solver) -- for the parent to ledger, archive and route ('for LANE V4' only if it posts a reading).**
 
 **Results (novelty from the verifiers, not this lane):**
 | Target | Result | Class |
 |---|---|---|
-| trew-posthius-1614-18 | 1614 cipher block and 1618 specimen read with the leaves' own keys (both 12-pair reciprocal two-row tables, not keyword alphabets); 1614 German "ich hab nit gewist das ihr mein nachtbar wolt werden bei der dihlin ..."; 109 tokens H 96 M 13, `decode_key.py --check` 0 (F) | for LANE V4 |
-| bowes-walsingham-1583 | numerical name-codes collated, codes.tsv: 12 codes, 33 uses; C 1 (189 Montrose), M 9, unread 2 (E) | -- |
-| fr2933-salviati-1525 f.54r | transcription dataset: 509 boxes, 370 signs in 36 types, passes agree 83.5% (B, G); no key on file fits by shape; simple homophonic over base codes excluded with a matched interleaved control at 75-92% (I) | -- |
-| jan-van-nassau 5549 | key source: 5205 and 5209 fitted, both negative (cos 0.33, 0.39) (C) | -- |
-| fr5761-election-1519 (M36) | atlas of 35 codes over f104-f110 and two f104 passes; gate failed 2.8% because the atlas does not cover the key's alphabet signs (D, H) | -- |
+| trew-posthius-1614-18 | both cipher passages read with the leaves' own 12-pair reciprocal keys; 109 tokens H 96 M 13, --check 0 (F); German 1614 text; status partial | for LANE V4 |
+| bowes-walsingham-1583 | numerical name-codes collated, codes.tsv: C 1 (189 Montrose), M 9, unread 2 (E) | -- |
+| fr5761-election-1519 | f.104 key as a dataset: key.tsv 37 rows H 30 M 7 (three atlas passes, D H L) | -- |
+| fr2933-salviati-1525 | f.54r and f.54v transcribed (83.5%, 83.6%; 719 signs). Excluded with matched controls: simple homophonic over base signs (control 75-92%), consonant-sign + vowel-mark (control 93-96%). Code+mark homophonic needs ~2,800 signs (P's curve) | -- |
+| fr3993-villeroy-1595, fr3022-garbino-1528 | no design with a working control at their lengths (Villeroy letters+syllables+codes control 2-6%; Garbino none at 1,315 groups), conditional on Bourdeau's transcriptions (N) | -- |
+| jan-van-nassau 5549 | 5205 and 5209 fitted, negative (C) | -- |
+| fr3789-mariedemedicis-savary-1610 | both passages transcribed; key (BnF fr.3642) not on Gallica, DECODE photo blocked: status blocked, ASKS 43 (M) | -- |
+| fr3151-seure-1558 | six items surveyed (cipher in 40=41, 43=44), f75L captured and re-segmented (noise 56% -> 9%), passes still 38.5%: the hand's signs do not separate by shape (K, O) | -- |
+| beinecke-mellon29-elia | ff.1v-2v captured from Yale IIIF, two passes reconciled: 248 signs, 32 types, 58 words (Q); solver R live | -- |
 
-**Open items:**
-1. Posthius (for V4): faint small-hand letters above 1614 cipher lines 2-4 may be a contemporary decipherment; read at native
-   resolution (api.digitale-sammlungen.de, id bav80016364_00001) before classing. trew-letters.com, Karrer's catalogue and
-   Schmidt-Herrling 1940 not searched.
-2. Salviati: transcribe f.54v-f.57v with the same box-keyed passes (script classification + two confirm/correct Sonnet passes,
-   about $1/page) to reach ~2000 tokens, where the code+mark model has a working control; then test marks-as-vowel-indicators with a
-   control of that design. Key source: a Salviati nunciature key (ASV Segreteria di Stato; Strozziane). Promote G's recon_box
-   script to tools/ (reconcile by box id).
-3. M36 1519 key: rebuild the atlas for the alphabet row of f104 (check atlas coverage of the leaf first: share of boxes with a
-   confident code), then one more pair of passes. It is a key without ciphertext; the catalogue shows no "chiffre" letter in fr.5761.
-4. Bowes: a C for the other codes needs CSP Scotland vi as text (not on archive.org; HathiTrust EF keeps numbers only).
-5. 5549: the key source lies outside Willem's 1574 letters (5204-5213 all tested); next are letters to or from Jan Nov 1573-Mar 1574
-   in other archives, and csWV3's 5801/11250 leads.
+**Open items (priority):**
+1. Posthius (LANE V4): read the faint interlinear letters over 1614 cipher lines 2-4 at native resolution before classing.
+2. Mellon MS 29: R's result (parent processes).
+3. Salviati: f.55r-f.57v with the box-keyed method (~$6.5 a leaf, ~$40), then `codemark_curve.py target cm` on ~2,800 signs; keys
+   to seek: a Salviati nunciature key (ASV Segreteria di Stato; Strozziane).
+4. Marie de Medicis 1610: waits on ASKS 43 (DECODE role upgrade of ASKS 42, or a BnF reproduction of the fr.3642 key leaf).
+5. Seure 1558: not box-keyable; needs an Opus reconciler reading the image for the codes, or a key. Costed at roughly $30 for item 40.
+6. M36: f.105-f.110 of the key (same atlas) and the 1519 letters it might open (none in fr.5761 carries 'chiffre').
+7. Bowes: a C beyond 189 needs CSP Scotland vi as text. 5549: key source outside Willem's 1574 letters.
 
 **Lessons:**
-- Workers that supervise subagents overran 1.7-2.7x (A $10.72/$4, B $13.56/$6, D $8.69/$5) and lost in-flight passes when
-  stopped; workers that did the job themselves on script output finished at 26-73% of cap (C, E, F, I). Brief small passes as
-  "do it yourself, no subagents".
-- The orchestrator's scripted reconcile of a stopped worker's two passes (Posthius, 90.6%) made the solver's job 30 minutes and $1.79.
-- Box-keyed confirm/correct passes over a script's classification lifted Salviati from 62.8% to 83.5%; free-text passes on the
-  same page had agreed 4.7%.
-- Control first again settled a cryptanalysis question in five minutes (I, $2.10).
+- Workers that supervised pass subagents overran 1.7-2.7x (A, B, D); after the 16:58 common-rule addendum ("do it yourself, at most one
+  pass-B subagent, check cost every page") every phase-2 worker finished under its cap.
+- Price a target at its first leaf before buying the rest (J: $6.5 a leaf) and price cryptanalysis with a control curve before buying
+  transcription (P, $1.60, showed the code+mark model needs the whole letter).
+- Box-keyed confirm/correct passes work where signs separate by shape (Salviati 62.8% -> 83.5%) and fail where they do not (Seure 38.5%
+  after the segmentation was fixed); check that on three lines before committing a capture budget.
+- Control-first settled five cryptanalysis questions for $1.60-$2.15 each (I, N, P).
 
 ## LANE N3 handoff (session_01QimvzgvoH4ALachGScXUC9), 24 September 2026, 16:36 UTC, updated 18:05 UTC
 
