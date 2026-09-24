@@ -315,7 +315,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T14:48Z	session_01Q6YWoBLE8pbptEpkmhPpGr	LANE R4 A (Sonnet, cap $4)	Posthius 1614/1618 capture, two passes	interrupted 15:26, $10.72, D-, passes pushed
 2026-09-24T14:48Z	session_01EXdQ9RrhhFBqgnb8DhByzv	LANE R4 B (Opus lead, cap $6)	Salviati f.54r atlas revision + script-assisted passes	interrupted 15:26, $13.56, D-, pass A + partial B
 2026-09-24T14:48Z	session_017fUceqo34ts5wphGfeKG4G	LANE R4 C (Sonnet, cap $3)	5549 key source: fit 5205/5209	done, $2.18, negative (5205 cos 0.33, 5209 cos 0.39)
-2026-09-24T15:13Z	session_01KvtMK21Ab1rzhyobtgTdv7	LANE R4 D (Sonnet, cap $5)	M36 fr5761 key atlas + f.104 passes	live
-2026-09-24T15:27Z	session_01WreUsMyBqdXikTKqhXRQXz	LANE R4 F (Opus, cap $6)	Posthius 1614/1618 solver	live
-2026-09-24T15:27Z	session_01PdNqoHMDbatWScPnmNWTH8	LANE R4 E (Opus, cap $5)	Bowes 1583 numerical name-codes	live
+2026-09-24T15:13Z	session_01KvtMK21Ab1rzhyobtgTdv7	LANE R4 D (Sonnet, cap $5)	M36 fr5761 key atlas + f.104 passes	interrupted 15:45, $8.69, D-, atlas + pass A
+2026-09-24T15:27Z	session_01WreUsMyBqdXikTKqhXRQXz	LANE R4 F (Opus, cap $6)	Posthius 1614/1618 solver	done, $1.79, D, H96 M13, for V4
+2026-09-24T15:27Z	session_01PdNqoHMDbatWScPnmNWTH8	LANE R4 E (Opus, cap $5)	Bowes 1583 numerical name-codes	done, $2.01, D, C1 M9
 2026-09-24T15:28Z	session_01Uyv6LetDKFhBPYZtneJEbf	LANE R4 G (Sonnet, cap $4)	Salviati f.54r finish pass B + gate	live

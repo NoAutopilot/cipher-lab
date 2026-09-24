@@ -1493,13 +1493,29 @@
    "grade": "no reading: H0 C0 S0 M0 I0. Matched German control (same 61-run pattern, 82 homophones + 20 syllables + 32 code words) recovers 10.9% of tokens, 14.4% of letters; the true key scores below the found one; so the design is beyond this method at this length, not evidence about the key",
    "line": "WVO 5549's body is in a key no other letter on file shares: not the 1572 table, not Lodewijk's 1574 table (which reads the letter's closing stretch), not the <100 system of 5207/5208/5213 and unlike the 1575 nomenclator. A crib-constrained anneal failed on the target and on a matched German control alike (10.9% of control tokens), so the letter needs a key source, not more cryptanalysis. Dataset: image-checked ciphertext_5549.tsv (590/593 agree with Groen Suppl. no.45).",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "recovery",
+   "title": "Erasmus Posthius to J. C. Eysenmenger, Heidelberg, 13 March 1614 and February 1618 (UB Erlangen, Trew Briefsammlung): the cipher passages read with the keys on the leaves",
+   "grade": "109 tokens: H 96, M 13, C 0, S 0, I 0 (decode_key.py --check 0). Novelty not yet classed (LANE V4)",
+   "line": "Both keys are 12-pair reciprocal two-row tables written on the leaf (SALUTEMBCDFG/HIKNOPQRWXYZ in 1614; CONRADBEFGHI/KLMPQSTUWXYZ in 1618), not keyword-mixed alphabets. 1614 reads German: 'ich hab nit gewist das ihr mein nachtbar wolt werden bei der dihlin ...'; 1618's address-side specimen alternates clear and cipher lines ('der heis ist ein feiner man der abraham kein gelt'). Faint interlinear letters over the 1614 lines may be a contemporary decipherment: for the verifier.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/trew-posthius-1614-18"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "contribution",
+   "title": "Robert Bowes to Walsingham, 1583: the numerical name-codes collated (12 codes, 33 uses)",
+   "grade": "C 1 (189 = Montrose, from Tomokiyo's manuscript check), M 9, unread 2 (85, 0100)",
+   "line": "codes.tsv collates every numerical code in the Letter-Book with its printed context; proposed identifications at grade M (870 Lennox, 91 James VI, 32 Elizabeth, 54 France, 000 England, 149 Henri III, 19 Guise, 29 Mary, 223 Gowrie). CSP Scotland vi was not reachable as full text, so none rose to C.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bowes-walsingham-1583"
   }
  ],
  "lanes": [
   {
    "name": "Lane R4, recovery",
-   "live": 3,
-   "focus": "Posthius 1614/18 capture and Salviati 1525 atlas passes running (over their caps at the 15:25 check), 1519 election key transcription spawned; 5549 key sources 5205 and 5209 both negative (fit against the body); Bowes codes queued"
+   "live": 1,
+   "focus": "Posthius 1614/18 read with the leaf keys (H 96 M 13; for V4); Bowes codes collated (C 1, M 9); 5549 sources 5205/5209 negative; 1519 key transcription stopped at 1.7x cap; Salviati pass B finishing against the 80% gate"
   },
   {
    "name": "Lane N3, copy-free nominations",

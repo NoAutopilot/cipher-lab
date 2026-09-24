@@ -1,4 +1,4 @@
-open
+partial
 
 # Two letters, Erasmus Posthius to Johann Christoph Eysenmenger — UB Erlangen, Trew Briefsammlung
 
