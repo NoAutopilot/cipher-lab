@@ -29,21 +29,36 @@
     {
       "file": "f69_cipher.jpg",
       "source": "native_f69.jpg",
-      "native_box_xyxy": [1400, 3560, 4800, 4920],
+      "native_box_xyxy": [
+        1400,
+        3560,
+        4800,
+        4920
+      ],
       "resized_to": "2400 wide",
       "content": "folio 35 recto, ~7 lines of cipher at foot of page (starts mid-line after clear French 'Monseigneur je vous puis asseurer que')"
     },
     {
       "file": "f70_cipher_top.jpg",
       "source": "native_f70.jpg",
-      "native_box_xyxy": [599, 399, 4392, 2794],
+      "native_box_xyxy": [
+        599,
+        399,
+        4392,
+        2794
+      ],
       "resized_to": "2400 wide",
       "content": "folio 35 verso, upper half of the cipher block (whole page is cipher, no contemporary decipherment visible)"
     },
     {
       "file": "f70_cipher_bot.jpg",
       "source": "native_f70.jpg",
-      "native_box_xyxy": [599, 2394, 4392, 4790],
+      "native_box_xyxy": [
+        599,
+        2394,
+        4392,
+        4790
+      ],
       "resized_to": "2400 wide",
       "content": "folio 35 verso, lower half of the cipher block; overlaps top crop by ~4-5 lines (400px pad each side of the native midpoint) so no line is split across crops without duplication"
     }
@@ -87,11 +102,186 @@
       {
         "file": "f71_cipher.jpg",
         "source": "native_f71.jpg",
-        "native_box_xyxy": [1300, 1770, 4700, 1980],
+        "native_box_xyxy": [
+          1300,
+          1770,
+          4700,
+          1980
+        ],
         "resized_to": "2400 wide",
         "content": "folio 36 recto, the single cipher line at the top of the page (first line only); clear French resumes immediately on line 2 ('Iy m'a...') and continues to the signature 'Dantzay' at the foot -- the cipher on f.36 is one line, not a further multi-line block"
       }
     ],
     "verso_not_cropped": "f.36v (native_f72.jpg) carries no cipher -- it is the address/docket panel of the folded sheet (bleed-through text, an address line, a wax seal); no crop cut from it"
+  },
+  "iiif_lines": [
+    {
+      "crop": "f71_R2_L01_s1.jpg",
+      "source_url": "",
+      "source_file": "native_f71.jpg",
+      "box": [
+        1300,
+        1921,
+        3700,
+        2021
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 102,
+        "distance": 71,
+        "prominence": 107.8
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f71_R2_L01_s2.jpg",
+      "source_url": "",
+      "source_file": "native_f71.jpg",
+      "box": [
+        2300,
+        1921,
+        4700,
+        2021
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 102,
+        "distance": 71,
+        "prominence": 107.8
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f71_R3_L01_s1.jpg",
+      "source_url": "",
+      "source_file": "native_f71.jpg",
+      "box": [
+        1300,
+        2058,
+        3700,
+        2158
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 105,
+        "distance": 73,
+        "prominence": 80.2
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f71_R3_L01_s2.jpg",
+      "source_url": "",
+      "source_file": "native_f71.jpg",
+      "box": [
+        2300,
+        2058,
+        4700,
+        2158
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 105,
+        "distance": 73,
+        "prominence": 80.2
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f71_R4_L01_s1.jpg",
+      "source_url": "",
+      "source_file": "native_f71.jpg",
+      "box": [
+        1300,
+        2199,
+        3700,
+        2299
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 104,
+        "distance": 72,
+        "prominence": 88.3
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f71_R4_L01_s2.jpg",
+      "source_url": "",
+      "source_file": "native_f71.jpg",
+      "box": [
+        2300,
+        2199,
+        4700,
+        2299
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 104,
+        "distance": 72,
+        "prominence": 88.3
+      },
+      "date": "24 Sep 2026"
+    }
+  ],
+  "f36_lines2-4_pass_24_sept_2026": {
+    "note": "Follow-up to f36_pass_24_sept_2026 / NOTES.md \"f.36 reading\": lines 2-4 of f.36r also carry cipher mixed with clear words (clear-only text starts on line 5). Line crops cut with tools/iiif_lines.py from native_f71.jpg already on disk, no network fetch, ink-profile line detection (same method as the shared tool tests). Region checked by eye against a debug overlay before cropping: line 2 = \"[cipher] fust et en telle sorte vous serez\", line 3 = \"asseure de faire [cipher] quand [cipher] de [cipher]\", line 4 = \"[cipher] fust [cipher]\", line 5 (not cropped, confirmed clear) = \"toutes les foys quil vous plairoyt, ou je feray tout le...\".",
+    "lines": {
+      "R2": {
+        "crops": [
+          "f71_R2_L01_s1.jpg",
+          "f71_R2_L01_s2.jpg"
+        ],
+        "box_xyxy": [
+          1300,
+          1921,
+          4700,
+          2021
+        ]
+      },
+      "R3": {
+        "crops": [
+          "f71_R3_L01_s1.jpg",
+          "f71_R3_L01_s2.jpg"
+        ],
+        "box_xyxy": [
+          1300,
+          2058,
+          4700,
+          2158
+        ]
+      },
+      "R4": {
+        "crops": [
+          "f71_R4_L01_s1.jpg",
+          "f71_R4_L01_s2.jpg"
+        ],
+        "box_xyxy": [
+          1300,
+          2199,
+          4700,
+          2299
+        ]
+      }
+    },
+    "each_line_two_segments": "s1/s2 overlap ~400px (segment boundary at x=2300 of 1300-4700 native span) because the line is 3400px wide, over the 2400px max crop width; both segments given to each pass so no sign is missed at the join."
   }
 }
