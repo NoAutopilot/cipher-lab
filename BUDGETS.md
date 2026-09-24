@@ -89,3 +89,8 @@ at once (interrupt workers, handoff, stop). The parent checks every 30 minutes.
 LANE N3 to $60 and 6 Sonnet workers (six new copy-free scout families), LANE R4 to $80 and 8 workers (the four new Gallica
 letters, Salviati code-and-mark model, 1519 key). The stop rule is unchanged: `rejected` on any session halts every lane and
 the parent re-arms at the reset.
+
+**JSTOR, 24 Sept 2026 17:05 UTC:** the owner bought JPASS monthly (about $20 a month, cancel any time) on the account Chrome is
+logged into on their machine: unlimited online reading, 10 PDF downloads a month. Reads are no longer rationed; the runner
+still reads in the online viewer only and never downloads. Review at the end of October whether the runner used it enough to
+keep; the cloud still cannot reach JSTOR at all.

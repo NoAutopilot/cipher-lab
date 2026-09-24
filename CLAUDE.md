@@ -299,8 +299,8 @@ Getting the material is most of the work. Try routes in this order and record wh
    it equals the item's total `imagecount` (confirmed on two different items) -- so this route can confirm a
    term is present/absent and show the surrounding sentence, but cannot cite a page number; page images and
    raw OCR files (`_djvu.txt`, `_hocr_searchtext.txt.gz`, `_page_numbers.json`) all 403 without a valid loan.
-   JSTOR: JSTOR_USER and JSTOR_PASS (set 20 Sept 2026) give a free account with about 10 online article reads a month (owner,
-   24 Sept 2026; not 100), used only from the owner's machine (Cloudflare blocks the cloud), online reading only, never PDF downloads; log the article and date in AUDIT.md and never print the credentials.
+   JSTOR: JSTOR_USER and JSTOR_PASS (set 20 Sept 2026) are the owner's JSTOR account, on JPASS monthly from 24 Sept 2026 (unlimited online reading,
+   10 PDF downloads a month), used only from the owner's machine (Cloudflare blocks the cloud), online reading only, never PDF downloads; log the article and date in AUDIT.md and never print the credentials.
    **DECODE (de-crypt.org) login, confirmed 20 Sept 2026:** plain CSRF-protected form POST, no client-side
    password encryption despite the site's `ENCRYPTED_PASSWORD` flag (that flag is server-side hashing only;
    checked the unminified `ewcore.js` behind its source map, no JS touches the password field). GET
