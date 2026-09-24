@@ -624,3 +624,27 @@ Jan and Lodewijk, Sept 1573 - July 1574). PDFs fetched from resources.huygens.kn
 - **5797** (Lodewijk, Dillenburg 22 Oct 1573, A 3, 895/I; before the new cipher arrived): many runs in the same style on
   pp.3-8; the likeliest old-key sibling. Groen IV Lettre CDXLIV prints it in clear; that text is not on disk (dbnl.org is
   LANE V3's host; requested in ROOM 24 Sept 2026). Sonnet pass on its numerals running (`j5s/ciphertext_5797.tsv`).
+
+### J5S result (24 Sept 2026, ~12:50 UTC) -- corrects the old/new assignment above
+
+- **The postscript stretch (J5I's PS1-PS26, 226 tokens, pp.4-5) is in Lodewijk's 1574 five-per-letter table**, the
+  same table Jan uses in 5550 (25 Dec 1573, glossed on the leaf) and 5557 (31 May 1574; partial glossed pass
+  `j5s/ciphertext_glossed_5557_5552.tsv`, 13 runs, reads "sechstausent ... hundert", "besatzung", "krigsuolcks").
+  Reading `reading_5549_ps.txt` / `_tokens.tsv` from `ciphertext_5549_ps.tsv` + `key_5549.tsv` via
+  `python3 tools/decode_key.py ciphers/jan-van-nassau-1572-75 --config ciphers/jan-van-nassau-1572-75/decode_5549.json`
+  (`--check` exits 0). **Grades: C 163, I 13, M 6, U 44** (U = codes above 120 not in the table, mostly nulls or
+  name codes). It agrees with Groen's clear print of the postscript (Suppl. pp.146-148): "monsieur de la noue",
+  "strossi", "uf del[?] wasser", "den remediis", "de lumbres", "zuleger", "gr(en)tzen", "ligen", "uolck".
+  So this is the letter's "alte Ciffer" ("bisz zu ende gebraucht"), and J5I's inference that the stretch is not
+  in the table Groen had is superseded: Groen (or the archive's decipherment) read it with this table.
+- **The body (runs 1-61, Groen pp.141-146, 537 numerals) is therefore the "verendertte Instruction oder Ciffer"**,
+  and it is not Lodewijk's table (no rotation reads), not key_1572, and has no contiguous-block or modular
+  structure (`j5s/stats.py`). No sibling letter in that key was found: 5550, 5557 (and 5552 by eye) use the old
+  table; 5575 is a clear copy. **Body: no reading; no H/C/S token.** No cryptanalytic attempt was made (job 2 not
+  reached within the cap), so there is no negative to report and no control was run.
+- Search log for a sibling key (24 Sept 2026): sources/wvo/cipher-letters-2026-09-24.tsv rows Sept 1573-July 1574;
+  WVO PDFs 5550, 5552, 5557, 5575, 5797 viewed; 5797 (Lodewijk, 22 Oct 1573) runs not yet transcribed (pass stopped),
+  Groen IV CDXLIV text requested from LANE V3 in ROOM, not on disk.
+- Suggestions: (1) test 5797's runs and Willem's letters to Jan after Nov 1573 (5204, 5205, 5207-5209, Groen in
+  clear) for the new key, since a letter FROM Willem in his own new cipher with Groen's clear text is the natural
+  known-plaintext pair; (2) only then job 2 (crib cryptanalysis of runs 1-61 with a matched control).
