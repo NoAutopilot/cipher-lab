@@ -138,3 +138,12 @@ Desjardins Toscane and the Catalogue des Actes de François Ier were not queried
 shared with M35).
 
 Stage-2 eligible on this verdict (`open`, six sources checked, per check-solved.md).
+
+## Key transcription, progress (24 Sept 2026, 14:00 UTC, written by the LANE G3 orchestrator)
+
+Worker G (session_01VqKFDYvBPedSfydmRjbFWq, Sonnet) was interrupted at 13:59 UTC at about 1.9x its $4 cap, under the account's seven-day
+rate-limit warning (no new workers anywhere). On disk: natives of the whole key, folio 50v-53v (canvases f104-f110, 1500 px,
+images/manifest.json), and ONE blind pass, key_passB.tsv (319 rows: f104 38, f105 74, f106 43, f107 45, f108 39, f109 41, f110 39; sign
+shapes described in words, no glyph atlas). Pass A was running in a subagent and was lost. No key.tsv, no grades: a single pass is grade M
+throughout and is not a reading. Next (for a successor): build a glyph atlas for the alphabet signs first (.claude/briefs/transcription.md;
+tools/glyph_atlas.py from the Salviati worker), then two atlas-coded passes of f104 only before the rest; reuse the natives on disk.
