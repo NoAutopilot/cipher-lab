@@ -1,9 +1,11 @@
-open
+solved
 
 > **Verifier, 24 Sept 2026 (AUDIT.md): N0.** The interlinear gloss on fol.226r-227r is a decipherment of this very item
 > (manuscript, on the leaf, not mentioned in the catalogue entry; no print located). Key and reading are grade C (307 C, 31 M,
 > no H). Say "key table set out from the leaf's own interlinear decipherment", never "deciphered" or any novelty word.
 > Status word: `solved` fits by the rah-canada-1869 precedent; left to the orchestrator.
+
+Status set to solved by LANE G2, 24 Sept 2026 08:12 UTC, on the verifier's recommendation (plaintext on the leaf, key and reading complete, C307 M31; AUDIT.md N0).
 
 # Loménie de Brienne to the Queen of Poland, BnF Clairambault 1067, 19 May 1646
 

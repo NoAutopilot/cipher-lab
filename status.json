@@ -1165,7 +1165,7 @@
    "kind": "solve",
    "title": "Gramont 1530, fr.2980 f.30r-v: published key applied, 11 more signs at grade S with a matched control",
    "grade": "N4 (no prior decipherment located)",
-   "line": "Continuous French on 32 of 55 lines; N4 (no prior decipherment located) after two audits and the final-families decision of 24 Sept 2026; outreach waits on the Gramont JSTOR rows.",
+   "line": "Continuous French on 32 of 55 lines; N4 (no prior decipherment located) after two audits and the final-families decision of 24 Sept 2026; outreach waits on the Gramont JSTOR rows. 24 Sept 2026 08:00 (LANE G2 worker E): two more values at grade S in the extended f.30 reading with a shuffled-position control (Tb=O, q=B); extended H1486 S181 M239 U63 of 1969; f.30r L12 now French with gaps, L01, L02, L11 still not.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont"
   },
   {
