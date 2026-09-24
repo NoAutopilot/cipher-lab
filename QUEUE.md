@@ -5340,3 +5340,78 @@ up seven unread, copy-free siblings, so the negative-and-stop clause did not app
 plus one precise re-query), OAIRecord 5 (catalogue-note confirmation), manifest.json 1 (canvas-label check),
 info.json 7 (image tests) = 18 total, well under the 40 cap, all >=3s apart. github.com: 1 shallow clone of
 `dbourdeau/cyphersolver` (grep only, no push). No WebSearch needed (Tomokiyo's pages were already on disk).
+
+## Cipher letter pools by key (LANE N4 scPOOL, 24 Sept 2026)
+
+`POOLS.tsv` (repo root, 603 rows) groups every letter found in QUEUE.md, CATALOG.md, the two named
+solver-diffs TSVs (`2026-09-24-cyphersolver-keys.tsv`'s 82 keys and their `reads` column,
+`2026-09-24-keys-vs-siblings.tsv`'s 7 rows), `ciphers/*/NOTES.md` (183 folders, ciphertext.txt sign-counted
+where present), and the finding-aid dumps under `sources/` (`decode/records-non-decrypted-2026-09-24.tsv`
+1187 rows, `huygens/cipher-letters*.tsv` 49 rows, `wvo/cipher-letters-2026-09-24.tsv` 93 rows,
+`emlo/cipher-letters-2026-09-24.tsv` 21 rows), by (sender, office/recipient, and for the DECODE pool by decade
+since it carries no per-letter sender). Columns: letters, years, arks/shelfmarks (first 8), estimated signs
+(summed from our own transcribed `ciphertext.txt`, else left `unknown` -- DECODE gives only a page count per
+record, which is *not* converted to a signs estimate and is reported separately as "~N pages"), known key
+(citation string where one is recorded, else `none`), copy-free share (n/total, mostly `unknown` outside our
+own folders since the source TSVs were not re-tested for live images this pass), who has read what, and the
+source file(s) each group's facts came from.
+
+**Top 15 by total signs in one key, then by key known** (the brief's literal ranking rule): all but four are
+single letters *already* tracked as their own `ciphers/` target, most already read -- two are `found-solved`
+(oxenstierna-gustav-adolf-1632: Torpadie 1888, AUDIT class N0; dupuy468-anhalt: found-solved 23 Sept 2026) and
+most of the rest are mid-campaign (clair1067-brienne-poland-1646: grade C, still open). Ranking by raw signs
+surfaces our own biggest existing targets, not new pools -- worth recording as the honest result of applying
+the brief's rule literally, not worth re-nominating.
+
+| # | Group | Letters | Years | Signs | Known key | Status |
+|---|---|---|---|---|---|---|
+| 1 | Oxenstierna (Gustav to Axel) | 1 | 1632 | 34177 | Torpadie 1888 table p.382 | found-solved N0 |
+| 2 | Orange-Nassau 1572 | 1 | 1572 | 18132 | keyword | see NOTES.md |
+| 3 | fr.4687 Paleologue-Nevers | 1 | 1562-64 | 14253 | keys + correspondence as ambassador | see NOTES.md |
+| 4 | Dupuy 452 Carpi 1520 | 1 | 1520 | 13236 | key | see NOTES.md |
+| 5 | Eckert 1864 | 1 | 1864 | 8223 | key no.2 | see AUDIT.md (rule 10 precedent) |
+| 6 | Dupuy 468 Anhalt (Ernest/Joachim-Francis) | 1 | 1520s | 7829 | key | found-solved (23 Sept 2026) |
+| 7 | fr.20140 Danzay-Lorraine | 1 | 1557 | 7001 | key read 24 Sept 2026 | see NOTES.md |
+| 8 | Clair.1067 Brienne-Poland 1646 | 1 | 1646 | 6698 | grade C (307 C/31 M) | open, mid-campaign |
+| 9 | Wellington-Maitland 1812 | 1 | 1812 | 6133 | published (Spink lot) | see NOTES.md |
+| 10 | Eckert 1862 | 1 | 1862 | 5431 | key | see NOTES.md |
+| 11 | SP53/16 nos.78-79 | 2 | 1585 | 3937 | keys published | closed-negative (per CATALOG.md) |
+| 12 | Randolph-Sussex 1569/70 | 1 | 1570 | 3424 | key record | see NOTES.md |
+| 13 | fr.2980 Gramont | 1 | 1530 | 1532 | key/gloss on leaf | see NOTES.md |
+| 14 | Sforza reply to Zorzo 1446 | 1 | 1446 | 1496 | ASMi Sforzesco keys | see NOTES.md |
+| 15 | Charles II-Hamilton 1650 | 2 | 1650 | 1392 (1/2 transcribed) | catalogued, in archive | archive-request pending |
+
+**The real pools (letters > 1, ranked by letter count) -- these are the candidates worth a follow-on sampling
+pass**, all from DECODE's non-decrypted-records dump (no sender parsed there, grouped by holder archive x
+series x decade) or the WVO/Huygens correspondent series:
+
+| Archive / series | Letters | Years | Pages on record | Notes |
+|---|---|---|---|---|
+| Biblioteca RAH, Signatura 9/23 | 133 | 1521-1525 | ~749 | Spanish, same era as CATALOG.md's Adrian 1521/Juan Manuel 1521-22 items; RAH also has a second Signatura 9/24-9/25 cluster of 38 more, undated in our data |
+| BAV, Barb.lat 6956 | 98 | 1628-1629 | ~542 | Vatican, unexamined by us |
+| BL, Cotton MS Vespanian C III | 46 | 1526-1529 | ~132 | overlaps CATALOG.md's Henry VIII-era English/Latin items |
+| ASV i1025 SdS Spain 364C | 45 | 1717-1720 | ~186 | Vatican Secret Archive, Spain series |
+| ARA Brussels, Secretairerie/Carpio-Fuenmayor | 44 | 1674-1678 | ~186 | one correspondent pair, 44 letters |
+| ASV i1025 SdS France 17-18 | 44 | 1580-1589 | ~193 | Vatican, France series |
+| BL Cotton/Harley/Sloane/Add clusters (several rows) | 9-29 each | 1526-1667 | 40-70 each | English state-paper series, likely overlaps CATALOG.md's English/Elizabethan section |
+| Lodewijk/Jan van Nassau to Willem van Oranje (WVO) | 34 / 27 | 1572-74 / 1572-77 | n/a (WVO gives no page count) | printed in Groen van Prinsterer per WVO's own field -- check print-status before treating as open |
+
+**No group meets the R5 flag (over 2,500 signs in one key, all copy-free) this pass.** The eight groups with
+signs over 2,500 (the top 8 of 15 above) are all single, already-catalogued letters, not pools, so the flag as
+defined (a *pool* worth a curve-length attack) does not fire; the script enforces `letters > 1` before flagging
+and none of the real multi-letter pools has a measured sign count (DECODE gives page counts only, not
+converted to signs per rule 3's no-fabrication standard) -- so the honest result is zero R5 candidates, with
+the RAH Signatura 9/23-25 cluster (171 letters total, Spanish, 1521-25) the single most promising lead for a
+follow-on worker to sample a few pages for a real signs-per-page figure before any R5 claim.
+
+**Method note (five lines):** grouped is not deduplicated across sources -- the same letter can appear once
+via its `ciphers/` folder and again via a QUEUE.md or CATALOG.md text row if the two didn't share a `Folder`
+link, so `letters` counts in the DECODE-only and WVO/Huygens rows are the most reliable (single source, no
+folder overlap possible) and the small `ciphers/`-sourced singleton rows are exact. Sender/office extraction
+is regex ("X to Y" pattern, stopword-stripped), not hand-checked, so office labels for DECODE rows (taken from
+the third comma-field of `holder_raw`, e.g. "signatura", "barb lat", "1025") are archive fonds/series
+fragments, not real office names -- treat every group label as a starting point for a human/script re-check,
+not a citation. `QUEUE.md`'s ~5300 lines were not individually re-parsed row by row beyond what already links
+to a `ciphers/` folder (already captured via NOTES.md) or duplicates CATALOG.md's Item column; a full QUEUE.md
+sweep for rows with neither is the natural next pass and is not done here (budget). No network was used to
+verify any of this pass's counts; every figure is only as good as the TSV or NOTES.md it came from.
