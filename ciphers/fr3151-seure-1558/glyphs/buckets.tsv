@@ -1,0 +1,10 @@
+old_code	bucket	rule
+W	loop	pen visibly closes into one or more full loops on the strip (a repeated double hump, like a cursive w)
+loopMN	loop	pen visibly closes into a chain of small loops (a repeated wave, like cursive mmmm/nnnn)
+hook2	loop	a closed loop (P-shaped) with a stem below it -- the loop closure is the feature a reader catches first
+chook	hook	a simple open curve (C-shaped), no closure, no tail reaching below the line
+hook	hook	a small open comma-shaped hook, tail curls but the stroke neither closes into a loop nor drops below the line
+hookS	hook	a thin open S-curve stroke, no full loop closure, no clear descender below the line
+hook7	hookdesc	an open hook (7-shaped) whose stroke drops clearly below the line
+hookJ	hookdesc	a J/3-shaped open hook whose stroke drops clearly below the line
+hookL	hookdesc	a tall stroke combining a hook top with a long descender/tail below the line
