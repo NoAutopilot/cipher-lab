@@ -421,13 +421,13 @@
    "state": "active",
    "holder": "Worker",
    "kind": "contribution",
-   "next": "Every Birch row is being checked for a decipherment interlined in the 1742 print before any solver runs; the Montagu and Fauconberg letters turned out to carry one (N0). What remains is a correction to the queue and a dataset: the 23 printed ciphertexts aligned with their printed decipherments where they exist.",
-   "note": "Lesson of 24 Sept 2026: the detector found printed cipher whose decipherment Birch had set interlined; the OCR separated the two, so the sweep read them as unread. Montagu 20 Apr 1656 and the four Fauconberg letters are N0. The five 'keyed' rows and the rest are being rechecked leaf by leaf.",
+   "next": "LANE T: G reads Stamford P4 (the one letter with no printed decipherment) from a key built on his two sibling letters' printed decipherments, with a real-data control; H aligns P2 and P3; V1 classes the printed-decipherment rows; B aligns P9, P10, P14, P15.",
+   "note": "Attribution by the heading above each passage, 24 Sept 2026: 21 of the 23 rows are letters Birch printed WITH the contemporary decipherment (Montagu N0 in AUDIT.md; nine Fauconberg-to-Henry-Cromwell 1658 letters aligned, key of two homophones per letter; Stamford x2, Blake, Butler, Stouppe). Only Stamford's letter of 13 March 1654 (P4, about 387 tokens) has none in print. Solver benchmark on the Fauconberg letters: 80 percent on every seed from 3,024 real groups. Nothing here is called new.",
    "wait": {
-    "on": "LANE T workers A-F",
-    "since": "24 Sep 2026, 03:08 UTC",
-    "expected": "Within two hours",
-    "unblock": "Aligned keys for the printed-decipherment letters; a one-system verdict and a solver-length benchmark for P2-P8"
+    "on": "LANE T workers B, G, H, V1",
+    "since": "24 Sep 2026, 03:33 UTC",
+    "expected": "Within the hour",
+    "unblock": "P4 reading with control; classes in AUDIT.md"
    }
   },
   {
