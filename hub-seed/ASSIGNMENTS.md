@@ -226,3 +226,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 181 | 24 Sep | cipher-lab | DC8 Baluze 156 + DC9 Colbert 127 pin, capture, passes, Sabran key trial (Gallica fetcher; LANE N nominations) | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | transcription, Sonnet cap $7, lane-g2-k | running, session_0165Z8QQHv4jMszeaABGAHqX |
 | 182 | 24 Sep | cipher-lab | check-solved M23 M31 M32 M30 M24 M27 | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | check-solved, Sonnet cap $6, lane-g2-cs1 | running, session_01W8oM7kBoWrqTLrmo3ZzGJz |
 | 183 | 24 Sep | cipher-lab | check-solved M22 M25 M26 M28 M29 M34 | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | check-solved, Sonnet cap $6, lane-g2-cs2 | running, session_013RzruXodCFkcHba3hUuWaT |
+2026-09-24T08:48Z	session_017QzVuGiZ8wFQY6HZfUxH1q	LANE V2 orchestrator (Opus, cap $100)	French/Dutch/German verification successor	from the LANE V 07:50 handoff
+2026-09-24T08:48Z	session_0169D5ZhVf9y378dTq1bHp41	LANE R2 orchestrator (Opus, cap $100)	recovery lane successor	from the LANE R 08:44 handoff
