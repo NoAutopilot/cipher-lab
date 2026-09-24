@@ -329,6 +329,10 @@ Getting the material is most of the work. Try routes in this order and record wh
    `set -x` on a command that carries a credential; pass credentials only through `--netrc-file` (mode 600,
    deleted after), a cookie jar, or a library's own config, and test presence with `test -n`. A transcript is
    the person's private log, but a password in it must still be rotated, so say so at once in ROOM.md.
+   OpenAlex: the owner set OPENALEX_KEY (24 Sept 2026); append `&api_key=$OPENALEX_KEY` (URL-encoded) to every
+   api.openalex.org call, which lifts the per-address daily budget that returned 429 to every cloud session that day. Test
+   presence with `test -n`, never print it. A Semantic Scholar key is requested (owner, 24 Sept 2026); until it arrives the
+   S2 API stays rate-limited from the cloud.
    Google Books also needs `&country=US` on every call (the API otherwise answers 403 "Cannot determine user
    location" from cloud containers).
    **Credential diagnostic, 21 September 2026:** after DECODE and IA both rejected freshly rotated

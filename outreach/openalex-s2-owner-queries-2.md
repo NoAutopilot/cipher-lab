@@ -1,4 +1,4 @@
-status: ready
+status: done 24 Sept 2026 17:50 UTC from the cloud with the owner's OpenAlex key (six queries; one relevant hit: Ryabov 2025, Quaestio Rossica 13/4, on Danzay's diplomatic cipher, sent to verifier V6); Semantic Scholar still owed
 subject: Six more open-index searches from your own machine (the four targets not in the first six)
 to: you (no email; a browser on your machine)
 
