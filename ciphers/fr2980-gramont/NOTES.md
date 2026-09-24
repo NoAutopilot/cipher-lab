@@ -725,3 +725,92 @@ five would make L04, L07 and L08 continuous French. None of them has an image re
 Suggestion (not done): check eh, CROSS (both shapes), nn and the arch ss2 against the Lasry and Tomokiyo key images.
 
 Requests this pass: none to any host.
+
+## f.30r L01, L02, L11, L12 (24 Sept 2026)
+
+Worker: LANE G2 worker E (Opus, cap $6), 07:47-07:56 UTC by `date -u`, parent session_015NqJ9uu5Ef3Bo6QaRiGcGp. Disk only:
+no host contacted, no subagents. Brief: `.claude/briefs/runs/2026-09-24-lane-g2-e-gramont-f30r.md`.
+
+**Method.** `test_f30r_top.py` (with `--help`; `--round1` reproduces the first round) uses infer_unkeyed.py's model,
+window and costs. The base is the extended reading (key.tsv + key_extension_f30.tsv). For each sign under test it scores
+every candidate value over **all** occurrences on f.29r and f.30. The candidates are 23 letters, NULL and 24 word signs
+(ET, COM, CON, SS, LL, PAR, POVR, QVE, DE, ... ROY, SIRE, PAPE, EMPEREVR), which covers the nomenclator hypothesis. The
+statistic is the score of the best value minus the score of the current value. The control is the same test on
+shuffled positions, 100 draws, matched on n:
+- n positions of the sign's current value, taken from high-confidence keyed tokens of other signs outside the four
+  lines ('matched'). When that value has too few positions, the positions come from any letter ('any').
+- For NULL signs, n pseudo-signs inserted at random gaps ('gaps').
+
+p is the share of draws with a statistic at least as large. Recovery is the share of draws in which the proposed
+letter comes out best at the same n, on positions whose true value it is. The acceptance rule was fixed before the
+run: best differs from current, margin >= 10 bits, p <= 0.01, recovery >= 0.9, n >= 5, and no breakage elsewhere
+(the change summed over occurrences outside the four lines >= 0, and at most a quarter of those occurrences lose
+more than 3 bits). Results: `test_f30r_top_round1.tsv` (round 1), `test_f30r_top.tsv` (round 2, the accepted values
+in the base), `linescore_f30r_top.tsv` (bits/char per f.30 line, before and after).
+
+**Hypotheses tested (round 1; d = bits gained on f.29r / f.30 / the four lines):**
+
+| hypothesis | n | result | decision |
+|---|---|---|---|
+| arch ss2 not a null (letter or nomenclator word) | 47 | NULL is best over every letter and word sign (margin 0) | rejected: ss2 stays NULL |
+| barred zb not a null | 43 | NULL is best (margin 0) | rejected: zb stays NULL |
+| nomenclator words for HASH, B8, INF, TRI, ev | 12/15/4/2/2 | HASH best EMPEREVR 10.8 bits but p=0.99 and -71 bits outside; the rest best NULL or below 10 bits | rejected |
+| Af = M doubtful | 39 | M is best (margin 0) | table M kept |
+| E = B doubtful | 27 | I best by 71.8 bits, p=0.01, but 7/26 outside occurrences lose >3 bits (IMPOSSIBLE, LIBERTE, SEMBLE, HVMBLE need B) | rejected by the breakage rule: B kept |
+| **Tb = P doubtful** | 22 | **O best by 283.4 bits**, p=0.010 ('any'), recovery 1.00, d +18.1/+247.9/+17.4, 4/21 lose >3 bits | **accepted, grade S** |
+| eh = T (sense only) | 32 | T best by 110.4 bits on the whole, p=0.010, but d **-57.1** on f.29r / +157.1 on f.30, and 10/31 lose >3 bits | rejected by the breakage rule |
+| CROSS = C (sense only) | 8 | NULL 0.7 bits ahead of C; round 2: C ahead by 4.4 bits, p=0.97 | rejected (not decided) |
+| L07 q = P (sense only) | 1 | P best by 14.9 bits, p=0.02, recovery 0.78, n=1 | rejected (n < 5; stays grade I) |
+| nn = V (sense only) | 1 | V best by 2.7 bits, p=0.44 | rejected (n=1) |
+| A2 null or I (sense only) | 17 | E stays best; NULL -112.5 bits | rejected: A2 = E kept |
+| q = B (key note: reads B on f.29r) | 9 | B best by 50.0 bits, p=0.010 (matched), recovery 1.00 ('any'), d +9.2/+40.8/0, 0/9 lose | **accepted, grade S** |
+
+Round 2 (Tb = O and q = B in the base) accepts nothing else, so the procedure has converged.
+
+**Tb = O, per occurrence.** The gain is on POVR RECOVVRER (L33, +31), COGNOISSE (v L14, +34), DESESPOIR (v L20),
+MONSTRE (L18), EN VOZ MAINS (v L03), C(H)OVSE (L12), and LE ROI VOVLSIST on f.29r L13 (+18). Four occurrences lose: f.30r
+L13 (-3.4, m), L19 (-15.3, l), L20 pos5 (-7.8, l), L21 (-4.5, l). Three of the four are low-confidence identifications,
+and every high-confidence Tb gains. The likeliest reading is that Tb is the O sign and that these few `l` positions are
+misread P signs (dl or q9). That is an inference for a crop check, not a correction.
+**eh splits by leaf.** It reads D on f.29r (LE DICT, GRANDES, ADVERTISSE, DEMANDER) and T on much of f.30 (NESTOIT,
+ESPERANT, TOVTES, REPVTATION, DECLARATION). One value cannot serve both leaves. This looks like two shapes merged under
+one code (the second reader's eh>c class), and it is a shape question for the crops and the key images, not a value.
+**q at f.30r L07** now reads B (LES BAROLLES). The previous re-read noted that this sign is "not atlas q; q9, g2 or 9".
+As q9 (= P, keyed) it would give PAROLLES. Suggestion: re-check that one sign on `crops/f30r_top/L07_q.jpg`.
+
+**Output.** `key_extension_f30.tsv` gains two rows, Tb = O and q = B, each grade S and marked `OVERRIDE`. decode.py now
+lets an OVERRIDE row replace the key.tsv value, **in the extended f.30 reading only**. key.tsv, reading.txt (f.29r) and
+reading_f30.txt are unchanged. infer_unkeyed.py keeps OVERRIDE rows if it is rerun, and now has `--help`: any other
+argument used to run target mode and overwrite key_extension_f30.tsv. This worker's first probe did exactly that, and the
+two files were restored from git before any work. `decode.py --check` exits 0.
+
+**Grades, f.30, 1969 tokens:** published key unchanged, H 1502, C 0, S 0, M 231, I 0, U 236. Extended before: H 1502,
+C 0, S 159, M 245, I 0, U 63. **Extended after: H 1486, C 0, S 181, M 239, I 0, U 63.** No C, so this is a cryptanalytic
+result on top of a key-based reading.
+
+**The four lines** (extended reading after; bits/char under the model, before -> after; the 32 continuous lines have
+median 3.00 and 90th percentile 3.51):
+- **L01** `·sIMReIEAEeNsEIVeVDVSEsDIMeREI` (4.46 -> 4.46). **Still not French.** None of its signs changed value. Its
+  six ss2 and three zb are nulls on the evidence of both leaves, so they cannot be letters here unless the line uses a
+  different key. The line is the densest in nulls on the leaf. That fits a padded opening, or a nomenclator passage
+  whose signs have been coded as known shapes. No word sign tested fits.
+- **L02** `·Qve·eNSVIs·sISDTdEVOVSesCRPRE` (4.20 -> 4.20). **Still not French.** Fragments only (VOVS). INF, TRI and B8
+  stay unread: none has a value that passes the control, and B8 as NULL is the best score but NULL is never accepted.
+- **L11** `lE·BAIMERLESOVSTDELANOI··QVEl[COM]Ve` (3.58 -> 3.58). **Still not French** as a line, though it sits inside
+  the range of the continuous lines. BAIMER rests on E = B and Af = M, and both tables survive the test on the whole
+  text, so the doubt is not in those values. The reading `LE · B AIMER LES OVST DE LA NOI` does not give words. Either a
+  sign is misidentified here or the passage is nomenclator.
+- **L12** `·hOVSEQvILlSYseMOLASTQVENDeV[SS]IEI` (4.47 -> 4.09). **French with gaps.** Tb = O turns hPVSE into hOVSE:
+  with the unkeyed cross pattee as C (grade I, not applied) it reads CHOVSE QV'IL ... The rest after QVIL is not yet
+  words.
+
+**Not established:** whether L01, L02 and L11 hold nomenclator words, and what CROSS (both shapes), HASH, INF, TRI, B8
+and ev stand for. The two cross shapes (pattee on L03 and L12, double-barred on L07, L08 and L11; checked on
+`crops/f30r_top/L12_lz.jpg` and `L11_CROSS.jpg`) should be split before any further test. A key-image check against
+the Lasry and Tomokiyo tables is the next step for eh, Tb and the crosses.
+
+**Suggestions (not done):** apply Tb = O to f.29r as well (+18.1 bits there; reading.txt is not extended, by
+convention); split eh into its two shapes on the crops; re-check L07 q against q9.
+
+**Where not searched:** no phrase or print search on the new text. Novelty is not classified (rule 10).
+Requests this pass: none to any host.

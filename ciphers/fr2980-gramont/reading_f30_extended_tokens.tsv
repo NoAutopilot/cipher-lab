@@ -221,7 +221,7 @@ f30r	L06	28	5	h	C	H
 f30r	L06	29	m	h	T	H
 f30r	L06	31	ss2	h	NULL	M
 f30r	L06	32	eh	h	D	H
-f30r	L06	33	Tb	l	P	M
+f30r	L06	33	Tb	l	O	M
 f30r	L06	34	2	h	S	H
 f30r	L06	35	2	h	S	H
 f30r	L06	36	5	h	C	H
@@ -258,7 +258,7 @@ f30r	L07	28	g	h	V	H
 f30r	L07	29	ST	m	L	S
 f30r	L07	30	III	h	E	S
 f30r	L07	31	2	h	S	H
-f30r	L07	32	q	h	E	M
+f30r	L07	32	q	h	B	S
 f30r	L07	33	z	h	A	H
 f30r	L07	34	r3	m	R	H
 f30r	L07	35	lt	h	O	H
@@ -355,7 +355,7 @@ f30r	L10	8	q9	l	P	M
 f30r	L10	9	9	h	E	H
 f30r	L10	10	xr	l	I	M
 f30r	L10	11	c	h	L	H
-f30r	L10	12	Tb	m	P	H
+f30r	L10	12	Tb	m	O	S
 f30r	L10	13	r3	m	R	H
 f30r	L10	14	9	h	E	H
 f30r	L10	15	n6	m	N	H
@@ -417,7 +417,7 @@ f30r	L11	33	g	h	V	H
 f30r	L11	34	BOX	h	E	S
 f30r	L12	0	CROSS	h	?	U
 f30r	L12	1	lz	m	H	S
-f30r	L12	2	Tb	l	P	M
+f30r	L12	2	Tb	l	O	M
 f30r	L12	3	g	h	V	H
 f30r	L12	4	2	h	S	H
 f30r	L12	5	9	h	E	H
@@ -463,7 +463,7 @@ f30r	L13	10	z	h	A	H
 f30r	L13	11	z3	h	I	H
 f30r	L13	12	br	h	R	H
 f30r	L13	13	sl	m	E	H
-f30r	L13	14	Tb	m	P	H
+f30r	L13	14	Tb	m	O	S
 f30r	L13	15	r3	h	R	H
 f30r	L13	16	9	h	E	H
 f30r	L13	17	9	m	E	H
@@ -649,7 +649,7 @@ f30r	L18	4	aq	m	Y	H
 f30r	L18	5	2	h	S	H
 f30r	L18	6	9	h	E	H
 f30r	L18	7	h	h	V	H
-f30r	L18	8	Tb	h	P	H
+f30r	L18	8	Tb	h	O	S
 f30r	L18	9	2	l	S	M
 f30r	L18	10	c	h	L	H
 f30r	L18	11	lt	h	O	H
@@ -671,9 +671,9 @@ f30r	L18	26	h	h	V	H
 f30r	L18	27	lt	h	O	H
 f30r	L18	28	g	h	V	H
 f30r	L18	29	2	h	S	H
-f30r	L18	30	Tb	h	P	H
+f30r	L18	30	Tb	h	O	S
 f30r	L18	31	Af	m	M	H
-f30r	L18	32	Tb	h	P	H
+f30r	L18	32	Tb	h	O	S
 f30r	L18	33	n6	m	N	H
 f30r	L18	34	2	h	S	H
 f30r	L18	35	m	h	T	H
@@ -699,7 +699,7 @@ f30r	L19	15	n6	m	N	H
 f30r	L19	16	m	h	T	H
 f30r	L19	18	lam	h	A	H
 f30r	L19	19	aq	m	Y	H
-f30r	L19	20	Tb	l	P	M
+f30r	L19	20	Tb	l	O	M
 f30r	L19	21	9	h	E	H
 f30r	L19	22	r3	h	R	H
 f30r	L19	23	lam	h	A	H
@@ -719,7 +719,7 @@ f30r	L20	1	sl	m	E	H
 f30r	L20	2	dl	h	P	H
 f30r	L20	3	9	h	E	H
 f30r	L20	4	r3	h	R	H
-f30r	L20	5	Tb	l	P	M
+f30r	L20	5	Tb	l	O	M
 f30r	L20	6	sl	m	E	H
 f30r	L20	7	H	m	I	H
 f30r	L20	8	9	h	E	H
@@ -744,12 +744,12 @@ f30r	L20	26	ss2	h	NULL	M
 f30r	L20	27	zb	m	NULL	M
 f30r	L20	28	dl	m	P	H
 f30r	L20	29	B8	l	?	U
-f30r	L20	30	Tb	m	P	H
+f30r	L20	30	Tb	m	O	S
 f30r	L20	31	g	h	V	H
 f30r	L20	32	h	h	V	H
 f30r	L20	33	9	h	E	H
 f30r	L20	34	4t	l	ET	M
-f30r	L21	0	q	m	E	M
+f30r	L21	0	q	m	B	S
 f30r	L21	1	lam	h	A	H
 f30r	L21	2	ss2	h	NULL	M
 f30r	L21	3	r3	h	R	H
@@ -774,7 +774,7 @@ f30r	L21	21	2	h	S	H
 f30r	L21	22	z3	h	I	H
 f30r	L21	23	r3	h	R	H
 f30r	L21	24	9	h	E	H
-f30r	L21	25	Tb	l	P	M
+f30r	L21	25	Tb	l	O	M
 f30r	L21	26	4t	m	ET	M
 f30r	L21	27	Af	h	M	H
 f30r	L21	28	lam	h	A	H
@@ -795,7 +795,7 @@ f30r	L22	5	nq	m	Q	H
 f30r	L22	6	n	m	V	S
 f30r	L22	7	sl	l	E	M
 f30r	L22	8	h	h	V	H
-f30r	L22	9	Tb	m	P	H
+f30r	L22	9	Tb	m	O	S
 f30r	L22	10	nr	m	N	H
 f30r	L22	11	2	h	S	H
 f30r	L22	12	FL	m	S	S
@@ -991,7 +991,7 @@ f30r	L27	24	2	h	S	H
 f30r	L27	25	z3	h	I	H
 f30r	L27	26	9	h	E	H
 f30r	L27	27	g	h	V	H
-f30r	L27	28	Tb	h	P	H
+f30r	L27	28	Tb	h	O	S
 f30r	L27	29	re	l	V	M
 f30r	L27	30	2	h	S	H
 f30r	L27	31	ss2	h	NULL	M
@@ -1018,7 +1018,7 @@ f30r	L28	17	lt	h	O	H
 f30r	L28	18	g	h	V	H
 f30r	L28	19	2	h	S	H
 f30r	L28	20	fh	h	D	H
-f30r	L28	21	Tb	h	P	H
+f30r	L28	21	Tb	h	O	S
 f30r	L28	22	z3	h	I	H
 f30r	L28	23	lt	l	O	M
 f30r	L28	24	2	h	S	H
@@ -1056,7 +1056,7 @@ f30r	L29	17	xr	h	I	H
 f30r	L29	18	sl	m	E	H
 f30r	L29	19	g	m	V	H
 f30r	L29	20	9	h	E	H
-f30r	L29	21	Tb	h	P	H
+f30r	L29	21	Tb	h	O	S
 f30r	L29	22	aq	l	Y	M
 f30r	L29	23	c	h	L	H
 f30r	L29	24	sl	m	E	H
@@ -1186,7 +1186,7 @@ f30r	L32	38	nr	h	N	H
 f30r	L33	0	dl	m	P	H
 f30r	L33	1	ss2	h	NULL	M
 f30r	L33	2	zb	m	NULL	M
-f30r	L33	3	Tb	m	P	H
+f30r	L33	3	Tb	m	O	S
 f30r	L33	4	g	h	V	H
 f30r	L33	5	br	h	R	H
 f30r	L33	6	r3	h	R	H
@@ -1261,7 +1261,7 @@ f30r	L35	5	nq	m	Q	H
 f30r	L35	6	n	m	V	S
 f30r	L35	7	xr	h	I	H
 f30r	L35	8	c	h	L	H
-f30r	L35	9	q	h	E	M
+f30r	L35	9	q	h	B	S
 f30r	L35	10	x	h	A	H
 f30r	L35	11	r3	h	R	H
 f30r	L35	12	ST	h	L	S
@@ -1385,7 +1385,7 @@ f30v	L03	21	m	h	T	H
 f30v	L03	22	9	h	E	H
 f30v	L03	23	nr	h	N	H
 f30v	L03	24	h	h	V	H
-f30v	L03	25	Tb	h	P	H
+f30v	L03	25	Tb	h	O	S
 f30v	L03	26	H	m	I	H
 f30v	L03	27	Af	m	M	H
 f30v	L03	28	lam	h	A	H
@@ -1583,7 +1583,7 @@ f30v	L08	35	E	m	B	M
 f30v	L08	36	xr	h	I	H
 f30v	L09	0	lam	h	A	H
 f30v	L09	1	g	h	V	H
-f30v	L09	2	Tb	h	P	H
+f30v	L09	2	Tb	h	O	S
 f30v	L09	3	xr	h	I	H
 f30v	L09	4	4t	l	ET	M
 f30v	L09	5	c	h	L	H
@@ -1648,7 +1648,7 @@ f30v	L10	29	m	h	T	H
 f30v	L10	30	sl	m	E	H
 f30v	L10	31	lt	h	O	H
 f30v	L10	32	h	h	V	H
-f30v	L10	33	q	h	E	M
+f30v	L10	33	q	h	B	S
 f30v	L10	34	xr	h	I	H
 f30v	L10	35	9	m	E	H
 f30v	L10	36	n6	m	N	H
@@ -1667,7 +1667,7 @@ f30v	L11	11	lam	h	A	H
 f30v	L11	12	z3	h	I	H
 f30v	L11	13	nr	h	N	H
 f30v	L11	14	fh	h	D	H
-f30v	L11	15	Tb	h	P	H
+f30v	L11	15	Tb	h	O	S
 f30v	L11	16	Mx	h	L	S
 f30v	L11	17	lam	h	A	H
 f30v	L11	18	nr	h	N	H
@@ -1688,7 +1688,7 @@ f30v	L11	32	x	l	A	M
 f30v	L12	0	c	h	L	H
 f30v	L12	1	z	h	A	H
 f30v	L12	2	Af	m	M	H
-f30v	L12	3	q	h	E	M
+f30v	L12	3	q	h	B	S
 f30v	L12	4	lam	h	A	H
 f30v	L12	5	T	h	SS	H
 f30v	L12	6	x	m	A	H
@@ -1771,7 +1771,7 @@ f30v	L14	19	5	h	C	H
 f30v	L14	20	lt	h	O	H
 f30v	L14	21	g2	m	G	H
 f30v	L14	22	n6	m	N	H
-f30v	L14	23	Tb	m	P	H
+f30v	L14	23	Tb	m	O	S
 f30v	L14	24	xr	h	I	H
 f30v	L14	25	T	h	SS	H
 f30v	L14	26	9	h	E	H
@@ -1820,7 +1820,7 @@ f30v	L16	6	5	h	C	H
 f30v	L16	7	xr	h	I	H
 f30v	L16	8	ff	l	?	U
 f30v	L16	9	lam	h	A	H
-f30v	L16	10	q	m	E	M
+f30v	L16	10	q	m	B	S
 f30v	L16	11	r3	h	R	H
 f30v	L16	12	9	h	E	H
 f30v	L16	13	2	h	S	H
@@ -1960,7 +1960,7 @@ f30v	L20	15	FL	m	S	S
 f30v	L20	16	9	h	E	H
 f30v	L20	17	2	h	S	H
 f30v	L20	18	dl	m	P	H
-f30v	L20	19	Tb	h	P	H
+f30v	L20	19	Tb	h	O	S
 f30v	L20	20	xr	h	I	H
 f30v	L20	21	r3	h	R	H
 f30v	L20	22	zb	m	NULL	M

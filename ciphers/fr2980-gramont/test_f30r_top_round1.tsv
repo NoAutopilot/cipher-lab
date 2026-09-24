@@ -1,0 +1,17 @@
+sign	n	n_top	current	best	margin	second	p_shuffled	recovery	out_delta	out_lose3	out_n	named	named_delta	named_p	decision	control	d_f29	d_f30	d_top
+ss2	47	8	NULL	NULL	0.0	EMPEREVR	1.000		0.0	0	39				reject	gaps	0.0	0.0	0.0
+zb	43	8	NULL	NULL	0.0	EMPEREVR	1.000		0.0	0	35				reject	gaps	0.0	0.0	0.0
+Af	39	4	M	M	0.0	NULL	1.000	1.00	0.0	0	35				reject	any	0.0	0.0	0.0
+E	27	1	B	I	71.8	NULL	0.010	1.00	53.9	7	26				reject	any	19.8	34.0	17.9
+Tb	22	1	P	O	283.4	E	0.010	1.00	266.0	4	21				accept	any	18.1	247.9	17.4
+eh	32	1	D	T	110.4	L	0.010	1.00	99.9	10	31	T	110.4	0.010	reject	matched	-57.1	157.1	10.5
+CROSS	8	2	None	NULL	0.7	C	0.990		-38.0	4	6	C	-0.7	1.000	reject	gaps	0.0	0.0	0.0
+A2	17	0	E	E	0.0	EMPEREVR	1.000	1.00	0.0	0	17	NULL	-112.5	1.000	reject	matched	0.0	0.0	0.0
+HASH	12	1	None	EMPEREVR	10.8	I	0.990		-71.3	6	11				reject	gaps	0.0	14.9	-0.9
+B8	15	2	None	NULL	58.7	V	0.812		-36.6	7	13				reject	gaps	0.0	0.0	0.0
+INF	4	1	None	NULL	6.0	EMPEREVR	0.693		-4.5	2	3				reject	gaps	0.0	0.0	0.0
+TRI	2	1	None	I	4.0	POVR	0.604	0.62	1.9	0	1				reject	gaps	0.0	6.8	2.2
+ev	2	1	None	EMPEREVR	1.1	E	0.832		-0.4	0	1				reject	gaps	0.0	14.0	5.4
+nn	1	0	None	V	2.7	LE	0.436	0.52	2.7	0	1	V	9.4	0.050	reject	gaps	0.0	9.4	0.0
+q	9	0	E	B	50.0	P	0.010	1.00	50.0	0	9				accept	matched	9.2	40.8	0.0
+q@L07	1	0	E	P	14.9	EMPEREVR	0.020	0.78	14.9	0	1	P	14.9	0.020	reject	matched	0.0	14.9	0.0

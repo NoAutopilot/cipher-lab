@@ -21,6 +21,7 @@ script), the large word-sign set and a null penalty (NPEN 3-10) all lowered the 
 margin >= 10 bits.
 """
 import os, sys, math, random, functools, collections
+if '--help' in sys.argv or '-h' in sys.argv: print(__doc__); sys.exit(0)
 H = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(H, '..', '..', 'tools'))
 from french16_ngram import load
@@ -147,4 +148,6 @@ if __name__ == '__main__':
             if acc(v, int(n), float(m)):
                 ext.append(f'{s}\t{v}\tS\tinfer_unkeyed.py 24 Sept 2026: {n} occurrences, margin {m} bits over {sec}; '
                            f'control, accepted proposals at band {b}: {ctl(b)} correct (control_f30.tsv, 10 draws)')
-        open(os.path.join(H, 'key_extension_f30.tsv'), 'w').write('\n'.join(ext) + '\n')
+        kx = os.path.join(H, 'key_extension_f30.tsv')   # keep OVERRIDE rows written by test_f30r_top.py
+        ext += [l.rstrip('\n') for l in open(kx) if l.split('\t')[3:4] and l.split('\t')[3].startswith('OVERRIDE')]
+        open(kx, 'w').write('\n'.join(ext) + '\n')
