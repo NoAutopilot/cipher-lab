@@ -1,4 +1,4 @@
-status: ready
+status: sent 24 Sept 2026
 subject: Re: Cotton Caligula C VII, Bowes to Walsingham 1583 (reply in the same thread, two lines)
 to: S. Tomokiyo (reply to his 24 Sept 2026 message in the thread; his address stays out of this file)
 
