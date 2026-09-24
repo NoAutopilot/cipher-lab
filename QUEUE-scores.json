@@ -7203,5 +7203,21 @@
     "total": 22
    }
   ]
+ },
+ "lane_n_italy-b": {
+  "_about": "LANE N scout of 24 September 2026 (.claude/briefs/runs/2026-09-24-lane-n-scIT2.md): Vatican and Venetian archives, row prefix VA (reserved, unused this pass). digi.vatlib.it (browser-UA + same-origin Referer curl, k_f=0/k_v=TERM simple-search form; q=TERM is a CONTENTdm-style no-op, confirmed by control), manus.iccu.sbn.it (monocampo=TERM via browser_fetch.js, control incomplete -- item list behind unresolved infinite-scroll), www.internetculturale.it (search form not found), www.archiviodistatovenezia.it (root reachable, subpaths reset at the proxy), www.archivioapostolicovaticano.va (reached, no online finding aid found in plain HTML), Biblioteca Nazionale Marciana not reached. Clean negative: every cifra/cifrata/cifre correspondence hit on digi.vatlib.it already carries an in-situ decipherment or a cited published edition (Serrano 1914, Gerin 1886) or duplicates a correspondent pair already solved in dbourdeau/cyphersolver (alessandrino1568). Two key-lead resources (Urb.lat.948 cipher-system manuscript, Barb.lat.9848-9849 'Cifre e decifrati' Barberini register) noted for a future pairing with an undeciphered sibling, not scored as targets. Full raw list: sources/solver-diffs/2026-09-24-lane-n-italy-b.tsv.",
+  "date": "24 September 2026",
+  "requests_per_host": {
+   "digi.vatlib.it": 55,
+   "manus.iccu.sbn.it (curl)": 3,
+   "manus.iccu.sbn.it (browser_fetch.js)": 3,
+   "www.internetculturale.it": 2,
+   "www.archiviodistatovenezia.it": 5,
+   "www.archivioapostolicovaticano.va": 2
+  },
+  "raw": 131,
+  "kept": 0,
+  "copy_free": 0,
+  "rows": []
  }
 }
