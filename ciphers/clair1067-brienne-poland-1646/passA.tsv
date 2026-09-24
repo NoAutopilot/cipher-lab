@@ -1,0 +1,390 @@
+line	position	group	confidence
+f226r_L1	clear	[no legible ink — round archival/library stamp only, no letter content]	low
+f226r_L2	clear	La lettre dont Vre Mate m'a honoree en	high
+f226r_L3	clear	datte du Xe du passé, ne me fust rendue que le	high
+f226r_L4	clear	Jour d'hier xbme du present. Je tiens a grace le	high
+f226r_L5	clear	reproche et le Commandement que Vre Mate me	high
+f226r_L6	clear	fait la raison de ma retenue n'a pas peu luy desplaire	high
+f226r_L7	clear	puis que c'est par respect. V:Mate Je trouve	high
+f226r_L8	clear	aussy obeye par la prompte response que je	high
+f226r_L9	clear	fais a sa lettre mais peut estre n'ay je pas suivy	high
+f226r_L10	clear	Son sens, qui pouvoit estre que ie communicasse ... sa depesche a la Reyne.	medium
+f226r_L10	1	_35	medium
+f226r_L10	2	18	medium
+f226r_L10	3	_84	medium
+f226r_L10	4	v	low
+f226r_L10	5	35	medium
+f226r_L10	6	_40	medium
+f226r_L10	7	_54	medium
+f226r_L10	8	63	low
+f226r_L10	9	64	medium
+f226r_L10	10	_88	medium
+f226r_L10	11	_48	medium
+f226r_L10	12	Z	medium
+f226r_L10	13	d	medium
+f226r_L10	14	13	medium
+f226r_L10	15	n	low
+f226r_L10	16	_27	medium
+f226v_L1	clear	[blank — top margin, no ink]	high
+f226v_L2	clear	[blank — top margin, no ink]	high
+f226v_L3	clear	[blank — top margin, no ink]	high
+f226v_L4	clear	et en suitte ... que ie luy fisse	high
+f226v_L4	1	_94	medium
+f226v_L4	2	9	medium
+f226v_L4	3	y	medium
+f226v_L4	4	68	medium
+f226v_L4	5	L	low
+f226v_L4	6	v	low
+f226v_L4	7	70	medium
+f226v_L4	8	55	medium
+f226v_L4	9	18	medium
+f226v_L4	10	28	medium
+f226v_L4	11	_99	medium
+f226v_L4	12	Z	medium
+f226v_L4	13	65	medium
+f226v_L5	clear	sauviz ... les intentions	medium
+f226v_L5	1	2#	low
+f226v_L5	2	81	medium
+f226v_L5	3	99	medium
+f226v_L5	4	L	low
+f226v_L5	5	X	low
+f226v_L5	6	65	medium
+f226v_L5	7	Z	medium
+f226v_L5	8	y	medium
+f226v_L5	9	70	medium
+f226v_L5	10	p	low
+f226v_L5	11	82	medium
+f226v_L5	12	Z	medium
+f226v_L6	clear	le mien aesté qu'en la plus part des affaires du	high
+f226v_L7	clear	monde le souverain Conseil est de gaigner tempz.	high
+f226v_L8	clear	et que ce seroit affez soft respondre	medium
+f226v_L8	1	w	medium
+f226v_L8	2	Z	medium
+f226v_L8	3	_64	medium
+f226v_L8	4	9	medium
+f226v_L8	5	72	medium
+f226v_L8	6	Z	medium
+f226v_L8	7	v	low
+f226v_L8	8	60	medium
+f226v_L8	9	Z	medium
+f226v_L8	10	50	medium
+f226v_L8	11	y	medium
+f226v_L9	clear	aux Ministres de[ux] de	low
+f226v_L9	1	L	low
+f226v_L9	2	60	medium
+f226v_L9	3	_71	medium
+f226v_L9	4	91	medium
+f226v_L9	5	33	medium
+f226v_L9	6	_40	medium
+f226v_L9	7	Z	medium
+f226v_L9	8	v	low
+f226v_L9	9	60	medium
+f226v_L9	10	Z	medium
+f226v_L9	11	_88	medium
+f226v_L9	12	36	medium
+f226v_L9	13	_88	medium
+f226v_L10	clear	Mantenue quand ilz	medium
+f226v_L10	1	31	medium
+f226v_L10	2	y	medium
+f226v_L10	3	72	medium
+f226v_L10	4	rr	medium
+f226v_L10	5	9	medium
+f226v_L10	6	_54	medium
+f226v_L10	7	y	medium
+f226v_L10	8	L	low
+f226v_L10	9	22	medium
+f226v_L10	10	9	medium
+f226v_L10	11	60	medium
+f226v_L10	12	_41	medium
+f226v_L10	13	rr	medium
+f226v_L10	14	75	medium
+f226v_L11	clear	renouvelleroient leur	medium
+f226v_L11	1	ff	medium
+f226v_L11	2	24	medium
+f226v_L11	3	62	medium
+f226v_L11	4	v	low
+f226v_L11	5	9	medium
+f226v_L11	6	y	medium
+f226v_L11	7	v	low
+f226v_L11	8	29	medium
+f226v_L11	9	Z	medium
+f226v_L11	10	v	low
+f226v_L11	11	y	medium
+f226v_L11	12	Z	medium
+f226v_L12	clear	instances ... et peut estre quarante	low
+f226v_L12	1	69	medium
+f226v_L12	2	y	medium
+f226v_L12	3	82	medium
+f226v_L12	4	Z	medium
+f226v_L13	clear	presentement diverses choses a poursuivre ilz	high
+f226v_L14	clear	soubliez de celle la ... pourront	medium
+f226v_L14	1	69	medium
+f226v_L14	2	rr	medium
+f226v_L14	3	y	medium
+f226v_L14	4	25	medium
+f226v_L14	5	9	medium
+f226v_L14	6	X	low
+f226v_L14	7	_88	medium
+f226v_L14	8	82	medium
+f226v_L14	9	ff	medium
+f226v_L14	10	24	medium
+f226v_L15	clear	et ainsy le titre	medium
+f226v_L15	1	23	medium
+f226v_L15	2	_94	medium
+f226v_L15	3	w	low
+f226v_L15	4	y	low
+f226v_L15	5	66	medium
+f226v_L15	6	24	medium
+f226v_L15	7	71	medium
+f226v_L15	8	v	low
+f226v_L15	9	60	medium
+f226v_L15	10	103	medium
+f226v_L16	clear	Du gouvernement de Nivernois	medium
+f226v_L16	1	_91	medium
+f226v_L16	2	9	medium
+f226v_L16	3	rr	medium
+f226v_L16	4	75	medium
+f226v_L16	5	X	low
+f226v_L16	6	39	medium
+f226v_L16	7	81	medium
+f226v_L16	8	_88	medium
+f226v_L16	9	_40	medium
+f226v_L16	10	73	medium
+f226v_L16	11	X	low
+f226v_L16	12	_41	medium
+f226v_L17	clear	Le trouvera	medium
+f226v_L17	1	Z	medium
+f226v_L17	2	65	medium
+f226v_L17	3	v	low
+f226v_L17	4	62	medium
+f226v_L17	5	rr	medium
+f226v_L17	6	35	medium
+f226v_L17	7	39	medium
+f226v_L17	8	100	medium
+f226v_L17	9	X	low
+f226v_L17	10	71	medium
+f226v_L17	11	m	low
+f226v_L18	clear	d'une possession	medium
+f226v_L18	1	99	medium
+f226v_L18	2	9	medium
+f226v_L18	3	91	medium
+f226v_L18	4	39	medium
+f226v_L18	5	50	medium
+f226v_L18	6	Z	medium
+f226v_L18	7	65	medium
+f226v_L18	8	2#	low
+f226v_L18	9	66	medium
+f226v_L18	10	9	medium
+f226v_L18	11	y	medium
+f226v_L18	12	102	medium
+f226v_L19	clear	maintenue depuis	medium
+f226v_L19	1	31	medium
+f226v_L19	2	v	low
+f226v_L19	3	y	medium
+f226v_L19	4	70	medium
+f226v_L19	5	42	medium
+f226v_L19	6	9	medium
+f226v_L19	7	88	medium
+f226v_L19	8	51	medium
+f226v_L19	9	v	low
+f226v_L19	10	Z	medium
+f226v_L20	clear	son absence du Royaume	medium
+f226v_L20	1	67	medium
+f226v_L20	2	y	medium
+f226v_L20	3	w	low
+f226v_L20	4	y	medium
+f226v_L20	5	65	medium
+f226v_L20	6	y	medium
+f226v_L20	7	82	medium
+f226v_L20	8	91	medium
+f226v_L20	9	62	medium
+f226v_L20	10	h	low
+f226v_L20	11	71	medium
+f226v_L20	12	32	medium
+f226v_L21	clear	[blank — bottom margin, no ink]	high
+f226v_L22	clear	[blank — bottom margin, no ink]	high
+f226v_L23	clear	[blank — bottom margin, no ink]	high
+f227r_L1	clear	[blank — top margin, no ink]	high
+f227r_L2	clear	[blank — top margin, no ink]	high
+f227r_L3	clear	[blank — top margin, no ink]	high
+f227r_L4	clear	227	high
+f227r_L5	clear	quant au droict	medium
+f227r_L5	1	54	medium
+f227r_L5	2	y	medium
+f227r_L5	3	v	low
+f227r_L5	4	_71	medium
+f227r_L5	5	b	low
+f227r_L5	6	62	medium
+f227r_L5	7	L	low
+f227r_L5	8	d	medium
+f227r_L5	9	v	low
+f227r_L6	clear	Vre Mate me permettra de luy dire, qu'il est si puissamment	medium
+f227r_L7	clear	en faveur des Ducs de estably	medium
+f227r_L7	1	q	low
+f227r_L7	2	y	medium
+f227r_L7	3	_91	medium
+f227r_L7	4	73	medium
+f227r_L7	5	rr	medium
+f227r_L7	6	X	low
+f227r_L7	7	_92	medium
+f227r_L7	8	_91	medium
+f227r_L7	9	d	medium
+f227r_L7	10	9	medium
+f227r_L7	11	_88	medium
+f227r_L8	clear	Nivernois quil servit	medium
+f227r_L8	1	_40	medium
+f227r_L8	2	73	medium
+f227r_L8	3	X	low
+f227r_L8	4	_41	medium
+f227r_L8	5	v	low
+f227r_L8	6	Z	medium
+f227r_L8	7	56	low
+f227r_L8	8	ff	medium
+f227r_L8	9	63	low
+f227r_L8	10	62	medium
+f227r_L8	11	v	low
+f227r_L8	12	v	low
+f227r_L9	clear	impossible de le mettre	medium
+f227r_L9	1	v	low
+f227r_L9	2	y	medium
+f227r_L9	3	50	medium
+f227r_L9	4	Z	medium
+f227r_L9	5	66	medium
+f227r_L9	6	y	medium
+f227r_L9	7	24	medium
+f227r_L9	8	_88	medium
+f227r_L9	9	24	medium
+f227r_L9	10	32	medium
+f227r_L9	11	v	low
+f227r_L9	12	x	low
+f227r_L9	13	60	medium
+f227r_L10	clear	en doubte ainsy en	medium
+f227r_L10	1	9	medium
+f227r_L10	2	y	medium
+f227r_L10	3	_90	medium
+f227r_L10	4	rr	medium
+f227r_L10	5	y	medium
+f227r_L10	6	70	medium
+f227r_L10	7	_94	medium
+f227r_L10	8	w	low
+f227r_L10	9	v	low
+f227r_L10	10	y	medium
+f227r_L10	11	66	medium
+f227r_L10	12	9	medium
+f227r_L10	13	y	medium
+f227r_L11	clear	la pensee de le Vandre	medium
+f227r_L11	1	23	medium
+f227r_L11	2	_48	medium
+f227r_L11	3	y	medium
+f227r_L11	4	65	medium
+f227r_L11	5	9	medium
+f227r_L11	6	_88	medium
+f227r_L11	7	24	medium
+f227r_L11	8	73	medium
+f227r_L11	9	y	medium
+f227r_L11	10	b	low
+f227r_L11	11	60	medium
+f227r_L12	clear	Vostre Mate trouverois	medium
+f227r_L12	1	80	medium
+f227r_L12	2	31	medium
+f227r_L12	3	18	medium
+f227r_L12	4	Z	medium
+f227r_L12	5	70	medium
+f227r_L12	6	v	low
+f227r_L12	7	62	medium
+f227r_L12	8	rr	medium
+f227r_L12	9	75	medium
+f227r_L12	10	62	medium
+f227r_L12	11	v	low
+f227r_L12	12	v	low
+f227r_L13	clear	de la difficulte mais	medium
+f227r_L13	1	88	medium
+f227r_L13	2	23	medium
+f227r_L13	3	89	medium
+f227r_L13	4	w	low
+f227r_L13	5	99	medium
+f227r_L13	6	85	medium
+f227r_L13	7	ff	medium
+f227r_L13	8	70	medium
+f227r_L13	9	31	medium
+f227r_L13	10	v	low
+f227r_L13	11	Z	medium
+f227r_L14	clear	pour le le conserver il y a	medium
+f227r_L14	1	52	low
+f227r_L14	2	65	low
+f227r_L14	3	24	low
+f227r_L14	4	86	low
+f227r_L14	5	63	low
+f227r_L14	6	X	low
+f227r_L14	7	75	low
+f227r_L14	8	X	low
+f227r_L14	9	22	low
+f227r_L14	10	h	low
+f227r_L14	11	w	low
+f227r_L15	clear	un exemple qui fait pour	medium
+f227r_L15	1	rr	low
+f227r_L15	2	y	low
+f227r_L15	3	9	low
+f227r_L15	4	m	low
+f227r_L15	5	9	low
+f227r_L15	6	v	low
+f227r_L15	7	88	low
+f227r_L15	8	24	low
+f227r_L15	9	56	low
+f227r_L15	10	y	low
+f227r_L15	11	52	low
+f227r_L15	12	103	low
+f227r_L16	clear	elle en ce que le Roy yavoit	medium
+f227r_L16	1	9	low
+f227r_L16	2	ff	low
+f227r_L16	3	24	low
+f227r_L16	4	9	low
+f227r_L16	5	y	low
+f227r_L16	6	82	low
+f227r_L16	7	55	low
+f227r_L16	8	26	low
+f227r_L16	9	h	low
+f227r_L16	10	w	low
+f227r_L16	11	40	low
+f227r_L17	clear	nautre [struck through] fais pourveu	low
+f227r_L17	1	y	low
+f227r_L17	2	v	low
+f227r_L17	3	_71	low
+f227r_L17	4	v	low
+f227r_L17	5	60	low
+f227r_L17	6	_100	low
+f227r_L17	7	v	low
+f227r_L17	8	Z	low
+f227r_L17	9	52	low
+f227r_L17	10	73	low
+f227r_L17	11	rr	low
+f227r_L18	clear	l'on se contenta pour reparer le tort qui estoit	high
+f227r_L19	clear	au Duc De Nevers de luy promettre le regres	medium
+f227r_L19	1	fait	low
+f227r_L19	2	_71	medium
+f227r_L19	3	_91	medium
+f227r_L19	4	d	medium
+f227r_L19	5	_88	medium
+f227r_L19	6	39	medium
+f227r_L19	7	75	medium
+f227r_L19	8	X	low
+f227r_L19	9	Z	medium
+f227r_L19	10	103	medium
+f227r_L19	11	102	medium
+f227r_L20	1	88	low
+f227r_L20	2	28	low
+f227r_L20	3	v	low
+f227r_L20	4	v	low
+f227r_L20	5	23	low
+f227r_L20	6	2	low
+f227r_L20	7	v	low
+f227r_L20	8	X	low
+f227r_L20	9	v	low
+f227r_L20	10	24	low
+f227r_L20	11	v	low
+f227r_L20	12	v	low
+f227r_L20	13	Z	low
+f227r_L21	clear	[blank — bottom margin, no ink]	high
+f227r_L22	clear	[blank — bottom margin, no ink]	high
+f227r_L23	clear	[blank — bottom margin, no ink]	high
+f227r_L24	clear	[blank — bottom margin, no ink]	high
