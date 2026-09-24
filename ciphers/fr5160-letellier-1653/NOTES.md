@@ -953,12 +953,12 @@ shapes, kept apart. `θ` is an o with a stroke through it and `_o` an o with a b
   three-figure values. The most frequent tokens are db 46, tt 37, then 11, m and mm at 22 each, _11 21,
   36 19, I 18 and d 15. Letter-like signs make up 41% of the tokens. That is the symbol+numeral hybrid named
   in the census.
-- **Overlines.** 131 tokens are overlined. Some figures occur only overlined (_21 x13, _16 x9, _6 x7, _10,
+- **Overlines.** 124 tokens are overlined. Some figures occur only overlined (_21 x13, _16 x9, _6 x7, _10,
   _22, _12, _7, _50, _18, _20, _28, _42, _27, _78). Others occur both ways (11 22 bare vs 21 overlined; 23 9
   vs 3; 17 3 vs 4; 3 5 vs 1). So the overline is probably part of the code value, not decoration, but that is
   an inference, not a test.
 - **Dotted figures.** `¨4` x6, `¨1`, `¨2`, `¨15`, `¨34`; also one-dot `14` (f9_L3) and `15` (f10_L13), in notes.
-  `¨4` stands next to `£` four times (`£ ¨4` f8_L10, f9_L7, f10_L13; `¨4 £` f10_L3; `£ ¨4` f10_L4), and three
+  `¨4` stands next to `£` five times (`£ ¨4` f8_L10, f9_L7, f10_L4, f10_L13; `¨4 £` f10_L3), and three
   of these sit directly against a clear phrase.
 - **`db` is a trailer.** 46 times, most often after 33, q‡, d, 40, X, 11 and 62, and often written raised
   against the sign before it (`40ᵈᵇ`, `Xᵈᵇ`, `q‡ᵈᵇ`). A solver should test it both as its own token and as a
