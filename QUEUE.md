@@ -438,6 +438,91 @@ Leiden and the KB were not reached this sweep (bot-challenge empty responses, JS
 reCAPTCHA wall, or a transport failure on every attempt) -- a browser-tool pass (CLAUDE.md's Access playbook)
 is the next step for those six, not a fresh curl attempt.
 
+## Digitised candidates outside the BnF (scout of 24 September 2026)
+
+Row 14 continuation: a browser-tool pass (CLAUDE.md Access playbook route 2) on the six hosts the 23 Sept
+sweep left unreached by curl, plus JSON/IIIF API checks on catalogues the 23 Sept sweep did not try. Read
+first: LESSONS.md, the BnF digitised section above and its caveats, QUEUE.md "Candidates not on DECODE".
+Every candidate below was checked against fresh shallow clones of dbourdeau/cyphersolver and
+aaymeloglu/unsolved-ciphers, against sources/cryptiana/, and against this file, CATALOG.md, LANDSCAPE.md and
+ciphers/ -- none is already named there. No image was opened at full resolution and no group was counted;
+"leaf viewed" below means a catalogue/record page was read, not the ciphertext itself, per the M1/M3 caveat
+in the BnF section.
+
+**Hosts reached, real results, nothing scored.** Beinecke (Yale, `collections.library.yale.edu`, browser
+tool): 54 hits for "cipher", 20 for the exact phrase "in cipher". The results are almost entirely two
+already-mined clusters, not fresh material: the Voynich manuscript's own provenance/research files (Beinecke
+MS 408A -- a separate, already enormously studied research area, out of this project's profile), and the
+Manchester papers (OSB MSS fc37, Series II Letterbooks) -- Yard to the Earl of Manchester (12 & 16 Oct 1699)
+is Bourdeau's own `yard1699/`, solved 18 Sept 2026 from a key in the same box ("Diplomatic cipher,
+contemporary copy", OID 2046948, also in these results); the Earl of Jersey and Vernon letters to the same
+recipient use the same THE=452/454 keys Bourdeau's `stepney/NOTES.md` already documents (DECODE R2854-R2872),
+and Stepney-to-Manchester 1702 is already `ciphers/stepney-manchester-1702/` in our own repo. One
+unattributed "Cipher manuscript" (OID 2002046, "unidentified language ... apparently based") and an
+"Alchemical miscellany" surfaced but neither is correspondence with a named sender/recipient; not scored.
+Bodleian Digital (`digital.bodleian.ox.ac.uk`, browser tool, reached, no challenge) returned only the
+foliation/rhetorical-figure sense of "cipher" (a date in alphanumeric cipher notation, a Shakespeare
+quotation, "cipher" meaning zero/nought) -- the same noise pattern as Gallica's "chiffré", confirmed again
+for English; the exact phrase "in cipher" returned zero hits. CUDL (`cudl.lib.cam.ac.uk`, browser tool,
+reached) returned 90 hits by collection facet (Cairo Genizah 13, Newton Papers 8, Medieval Medical Recipes
+11, etc.) but the titled results sampled (Lambeth Palace MS 2086, Trinity College MS R.14.30, an Album
+Amicorum, a Peterhouse astronomical text) are miscellanies and notebooks where "cipher" is an incidental
+OCR/transcription hit, not correspondence; not scored.
+
+**Hosts still blocked.** Folger (`catalog.folger.edu`): still a bot-check page ("Human Verification") to the
+browser tool, one attempt, stood down. Trinity College Dublin (`digitalcollections.tcd.ie`): confirmed
+reCAPTCHA challenge by page source (`recaptcha/releases/.../recaptcha__en.js`), one attempt, stood down.
+Leiden (`digitalcollections.universiteitleiden.nl`): "upstream request failed" on both the first attempt and
+the one permitted retry -- a transport/egress failure, not a bot page, matching CLAUDE.md's existing note for
+this host. KB: `manuscripts.kb.nl/search` redirects to a static "Middeleeuwse handschriften" browse page that
+does not honour a `?query=` parameter (no hits, no error) -- the right search endpoint for KB's own
+manuscript catalogue was not found this budget; a Wayback fallback was not tried for any of these three
+because none had a plain-page search result to look for in the archive (a live query, not a fixed URL).
+
+**New API sources tried.** Wellcome (`api.wellcomecollection.org`, JSON API, reached): re-queried with
+"cifra letter" and "chiffre lettre manuscrit" beyond the 23 Sept "cipher" query -- zero hits both times, this
+lane is exhausted. LOC (`loc.gov/search/?fo=json`, reached): not re-queried, 23 Sept's Founders-Online-noise
+verdict stands. Europeana (`api.europeana.eu`, JSON API, reached, `wskey=api2demo`): the productive new
+route this sweep -- see below. e-manuscripta.ch: Cloudflare "Verifying your browser" challenge, stood down,
+one attempt. e-codices.unifr.ch: reached (real server-rendered search, not a JS shell), English full-text
+search for "cipher" returns zero documents; three metadata-field-name guesses (`sSearchField=description`)
+all 500'd and the correct field name was not found this budget -- worth a second, better-briefed attempt, not
+a plain retry. Manuscripta.se: reached (200) but is a client-rendered SPA with no results in the static HTML
+for any curl query; needs the browser tool, not tried this pass (budget). BSB Digitale Sammlungen: has IIIF
+Image/Presentation and OCR APIs (confirmed by documentation) but no plain-text search API found at the
+guessed endpoint (404); the real search lives behind `opacplus`/`digitale-sammlungen.de`'s own search UI, not
+resolved this budget. ONB: Primo Discovery, a JS-only shell to curl, not tried with the browser tool this
+pass. Biblioteca Digital Hispánica (bdh.bne.es): 403 to curl, one attempt, stood down (a bot check, distinct
+from its sister site below). Biblioteca Nacional de Portugal: the guessed URL (`purl.pt`) is a PURL resolver
+index page, not a search interface -- the real BND search endpoint was not identified this budget.
+
+**Europeana, the productive lane.** Europeana aggregates member-library metadata (including BnF, BNE, and
+smaller archives neither solver project nor the 23 Sept sweep queries directly) behind one JSON API. "cipher"
+alone is dominated by modern/WWII resistance material and Pepys-diary noise (already published, already
+deciphered in the 19th century). Non-English terms are cleaner: "cifrada carta" (Spanish) surfaced a cluster
+at the **Real Academia de la Historia's own Biblioteca Digital** (`bibliotecadigital.rah.es`, Madrid, public
+domain / CC mark, reachable directly by curl with a browser-style User-Agent -- notably, Bourdeau's own
+`lopehurtado/NOTES.md` and `r9658/NOTES.md` record this same site returning HTTP 403 to automated requests
+for a different collection (Salazar y Castro A-26) as recently as 22 Sept 2026; it did not block this sweep's
+`/es/consulta/` and `/es/catalogo_imagenes/` requests, which may be worth a retry for that stalled Bourdeau
+lead -- not pursued here, out of this brief's scope, noted for NOTES.md/ASKS only).
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Leaf viewed | Image route | Total |
+|---|---|---|---|---|---|---|---|---|---|
+| N1 | Cluster of royalist military-intelligence ciphered letters from the Spanish reconquest of Venezuela/New Granada against Bolívar, addressed to or from General Pablo Morillo, in a continuous archival series | 1817, 1817, 1820 | es | recovery (tentative) | Real Academia de la Historia, Madrid, Colección (Sig. 9/76xx): "Carta reservada y cifrada del General Enrile a Morillo..." (9/7658, leg.15, ff.32-34, 15 Jul 1817, record id=2242); "Morillo al Ministro de la Guerra... propone una clave en cifra para comunicar los asuntos reservados" (9/7657, leg.14, ff.155v-156v, 19 Nov 1817, id=1957); "Herrera a Morillo en carta cifrada dándole noticias de Romerito, que iba en busca de Bolívar" (9/7666, leg.23, ff.420-420v, 7 Nov 1820, id=5186) | Three items in one numbered series (9/7657-9/7666) spanning the same royalist expeditionary command: two explicitly-catalogued ciphered letters three years apart (1817, 1820) plus, in between, a letter of Morillo's own proposing a cipher key ("clave en cifra") for confidential business with the Minister of War -- a plausible in-collection key lead for the other two, in the "the key was in the archive beside the letter" pattern (LESSONS.md). Not confirmed: whether the Nov 1817 letter itself carries the key table or only announces the proposal. | No (record pages read via curl; RAH's `imagen_id.do` endpoint confirmed serving real JPEGs for two of the three ids, not opened) | bibliotecadigital.rah.es direct JPEG viewer, public domain (CC PDM), no login | 36 |
+| N2 | "Nota cifrada del Conde de la Cañada" inside an exchange between Queen Isabel II and her Minister of the Interior Luis González Bravo | 1869 | es | cryptanalysis | Real Academia de la Historia, Madrid, Sig. 9/6958, Legajo XIX, Nº 117 (record id=14495) | Single named ciphered note inside a small folder of royal correspondence; different reign and collection from N1, no key lead found, not checked against N1's material this pass. | No (record page read via curl only) | bibliotecadigital.rah.es direct JPEG viewer, public domain (CC PDM), no login | 27 |
+
+Caveats: (1) RAH's own on-site search (`/es/consulta/busqueda.do` -> `resultados_busqueda.do`) returned zero
+rows for every query tried (`busq_general=cifrada` and variants) despite the site itself being reachable --
+either it needs a session/cookie the plain GET does not carry, or a different field encoding; both records
+above were found only via Europeana's index of RAH's metadata, so RAH's collection is very likely under-swept
+here and a dedicated pass (ideally with the browser tool driving the real search form) would very likely find
+more "cifrada"/"clave" items in the same 9/76xx-9/79xx numbered series. (2) Neither item's actual ciphertext
+has been read off the image; "cryptanalysis" vs "recovery" for N1 is provisional pending that. (3) No score
+here claims a reading or a novelty class; both rows still need check-solved's six-source sweep, including a
+DECODE and PARES check specific to Spanish material (PARES holds the companion Consejo de Guerra/Estado
+papers for this same 1817-1820 Venezuela campaign and was not queried this pass), before the board.
+
 ## Printed ciphertext (detector test of 23 September 2026)
 
 Detector-test worker (RETRO-2026-09-23.md proposal 5, hypothesis A): `tools/ia_numeral_runs.py` swept 300
