@@ -1,0 +1,16 @@
+line	pos	value	grade	reason
+1	32	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
+3	30	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
+3	31	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
+4	17	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
+5	31	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
+6	14	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
+6	38	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
+7	11	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
+7	21	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
+5	35	i	M	sign 1 (98: h) read as i in 'ihr' from context
+6	12	i	M	sign 1 (98: h) read as i in 'zwei' from context
+4	26	die	M	word sign K, not in 98; 'die Königin', 'die adern' from context
+6	1	die	M	word sign K, not in 98; context
+5	11	k	M	down-arrow sign, not in 98; 'kranck' from context
+5	17	ge	M	down-arrow sign, second use; 'geworden' from context (74 system uses it for 'und')
