@@ -404,3 +404,45 @@ this brief's scope): a solver session could now widen the f.54r control-first an
 still short of where the code+mark (K=94) model would need its own control before testing.
 
 Requests: none (disk only). Subagents: 1 (Sonnet, pass B, blind to pass A).
+
+## Code+mark control curve (24 Sept 2026, LANE R4 P)
+
+Worker P (Opus, cap $4, session_012iPigthLUviMQnUiE8MDaC), 17:46-18:00 UTC. Disk only, no fetches, no subagents. Input: the
+pooled `ciphertext_f54r.tsv` + `ciphertext_f54v.tsv` (1,017 rows: 719 sign tokens, 298 plain boxes, 36 base codes,
+28 mark strings, 126 code+mark types, 243 tokens (34%) carrying a mark). **No reading; no key.tsv, decode.json or grades
+(H0 C0 S0 M0 I0).**
+
+**Method.** `control/codemark_curve.py`, solver `tools/homophonic_anneal.py` (order 3, 6 restarts x 120,000 iterations,
+corpus the same five it16 collections as worker I, control plaintext Vanzolini chars 200,050 on, held out of the corpus).
+Both designs are laid out on the target's own sign/box row pattern (tiled past 1,017 rows), each plain box withholding 2
+letters, as `control/make_interleaved.py`. N counts sign tokens; token accuracy = every letter the token stands for right.
+- **cm, code+mark as distinct signs:** the target's 126 code+mark types allotted to letters by frequency deficit, each
+  letter picking a homophone with the target type's own pooled frequency as weight (108-126 types appear per control).
+- **vi, mark = following vowel:** consonant+vowel is one token (base code + mark), anything else a bare base code; 36 base
+  codes and the 10 commonest target mark strings allotted by frequency. Solved as a symbol stream code, mark, with mark
+  symbols restricted to a e i o u (new `allowed=` option in the tool, test added); without it the solver swaps the roles of
+  codes and marks. Control mismatch to note: 51% of vi control tokens carry a mark, against 34% on the target.
+
+**Curve (`control_curve.tsv`, token accuracy, seeds 1/2/3):**
+
+| design | N=720 | N=1,400 | N=2,800 |
+|---|---|---|---|
+| cm | 66.9 / 30.8 / 21.9% | 29.4 / 68.9 / 87.1% | 88.9 / 89.1 / 94.0% |
+| vi | 93.1 / 95.7 / 93.9% | 97.4 / 98.4 / 96.4% | 99.2 / 99.8 / 99.4% |
+
+**Target (step 2).** Run only under vi (control > 60% at N=720); cm's control fails at 720 (2 of 3 seeds under 31%), so the
+target was **not run under cm** and that model stays untested, not negative. **vi, target, 3 seeds: no Italian.** Best scores
+-2.567, -2.584, -2.566 per symbol (962 symbols) against -2.29 for the control's solve and -2.30 for its true plaintext;
+the three decodes agree with each other on 19-47% of symbols (the control's seeds reproduce at 93%+). Files
+`control/codemark_target_vi_s{1,2,3}.json`. Conditional on the transcription (83.5-83.6% pass agreement) and on treating
+each multi-mark string (e.g. `dot|+`) as one vowel symbol: **the pooled text is not a consonant-sign + vowel-mark
+syllabary of Italian of this design; the same solver reads a matched synthetic at 93-96%.**
+
+**Tokens needed (step 3).** vi reads reliably at 720 already (no more leaves needed to test it; tested negative above).
+**cm needs about 2,800 sign tokens** (all seeds 89-94%; at 1,400 only 1 of 3 seeds is above 80%): about 2,100 more, i.e.
+**~6 more leaves at ~350 signs a leaf, which is f.55r-f.57v, the rest of the letter.**
+
+Models still not excluded: cm (code+mark as homophones, needs f.55r-f.57v); marks as syllable or word indicators other
+than a single following vowel; a nomenclator of syllable/word codes; nulls. Where not found: as worker I (no key on file).
+Suggestion (not done): transcribe f.55r-f.57v with the box-keyed passes, then rerun `codemark_curve.py target cm` on the
+pooled ~2,800 tokens.
