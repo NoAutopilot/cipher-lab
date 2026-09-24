@@ -109,6 +109,47 @@ ASKS 42 and the card). Backups: refs/backup/old-main-snapshot 9866425 in the par
 history swap (owner's four clicks, ASKS 24). If this parent stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE N2 handoff (session_01DfQyAaXAgcoFZMAbBTGj4f), 24 September 2026, 14:16 UTC
+
+Lane: nominations, successor to LANE N (09:53-14:16 UTC). Stopped on the **seven-day** rate-limit `allowed_warning` (first seen 13:50,
+resets Sat 26 Sept 13:00 UTC; BUDGETS.md). Own usage $68.2; 20 Sonnet worker sessions about $73.5, every one ledgered (LEDGER.md), ASSIGNMENTS
+rows, archived. Briefs: `.claude/briefs/runs/2026-09-24-lane-n2-*.md`; shared rules `2026-09-24-lane-n2-COMMON.md`. Nothing is running.
+
+**Firm stage-2 nominations (15, of which 2 copy-free), per hour:**
+09:53-10:53: 2/0 heinsius-dopff-1702, heinsius-hermitage-1704 (+HU10 addendum later; candidate key NA 3.01.19 invnr 2317).
+10:53-11:53: 6/1 **jan-van-nassau-1572-75 letter 5549** (copy-free; LANE R3: postscript read, body negative with control, needs a key source),
+sp36-stquentin-pretender-1743, pro3053-horesse-1717, sp81-roe-1638 (decipher sibling f.88?), heinsius-vanhaersolte-1703, breda-statengeneraal-1624-25.
+11:53-12:53: 0 (the hour went to closing the WVO family).
+12:53-13:53: 4/0 sp99-wotton-1622 (f.159 sibling), sp81-stanning-1631 (decipher siblings ff.93/169/216), sp8-ehrenstein-1689, sp36-ball-1745.
+13:53-14:16: 3/1 nla-heinrich-braunschweig-1519, stas-waldburg-1653 (edition leads closed by csDA2), **trew-posthius-1614-18** (copy-free, IIIF,
+Erlangen; 1614 block has a complete SALUTEM keyword alphabet on the leaf in the sender's hand; 1618 two key blocks in two hands -- a recovery for
+whoever runs the next recovery lane; no reading yet, no verifier yet).
+Collected from LANE N's last worker: rumpf-vandebie-heinsius-1716-19 (letter 142 negative with control, LANE R2 H1) and vaudemont-willemiii-1699, both copy-order.
+**Held, not firm:** gla-claudiamedici-1633 (BAGK NF II/8 unreadable: not on IA, HathiTrust Cloudflare), hza-hohenlohe-1679 (Archiv für hohenlohische
+Geschichte 2, WLB journals Anubis-gated), hstas-osiander-1627 (Württembergische Vierteljahrshefte, no full-text route); sp78-waldegrave-delafaye-1734
+(N55: catalogue may describe a copy, page check first); borssele-heinsius-1714 and vanbeuningen-dewitt-1657 (leaf/holding unresolved);
+DA4 Krauske 1893 Manteuffel decipherment (in-archive, not printed in NASG 14: a contribution once copied).
+**Retracted:** jan-van-nassau 5207, 5213, 5221 (printed in clear in Groen V). **Corrected:** rumpf and borssele are copy-order (NA 3.01.19 has no scans).
+
+**Copy-order is the norm now.** Every Heinsius (NA 3.01.19), De Witt (3.01.17), Staten-Generaal (1.01.02) item checked is physical, unscanned; TNA and
+German state archives likewise. Copy-free came only from printed ciphertext (Groen 5549) and Bavarikon.
+
+**Sources closed this lane (do not repeat):** WVO as a target source (sources/wvo/print-status-2026-09-24.tsv: 43 of 73 printed, 20 carry
+contemporary decipherments on the leaf = key sources for recovery, listed there); DECODE DC11-DC20 (Partially decrypted / no images); DECODE
+full-size images (blocked for our account by permission, ASKS 42, outreach/decode-image-access.md; Bourdeau's login reads them); Florence Dieci di
+Balìa 32 records (blocked: no edition; Gabbrielli 1863 keys 3-4 name filza 7; images only via DECODE); Polish repcyfr/FBC (negative); EMLO beyond
+EM5 (EM4 Wallis-undeciphered blocked on Bodleian imaging, EM5 found-solved); Huygens retroboeken rounds 1-2 (HU1-HU11 done); Arcinsys Hessen (WAF 403).
+**Next, if the lane reopens after 26 Sept 13:00:** check-solved csN4 (TNA/BL, brief lane-n-csN4.md) and N48/N49/N56, AN1-AN7, IE1-IE4 (copy-order);
+LABW `chiffre` pages 2-8 (scDEA stopped at page 1); Bavarikon other object categories (Urkunden, Akten) with the facet pattern in QUEUE.md; the three
+held German edition leads by a browser-capable worker; one enquiry to the holding archive for any undigitised 'in cipher' line (NLS MS 20769 lesson).
+**For a recovery lane:** trew-posthius-1614-18 (copy-free, key on leaf); the WVO key sources above for the Nassau circle; key collections DA1-DA3/DA6.
+
+**Lessons (written into lane-n2-COMMON.md where they are rules):** (1) create_session for a worker needs `source_url`; without it five workers idled
+23 minutes refusing an 'unverified instruction' (LEDGER row X). Check get_session two minutes after spawning. (2) Read cost_usd, not an estimate: this
+session reported ~$12 when get_session said $34. (3) A check-solved worker will post 'open' with an edition lead named but unopened; the
+orchestrator must hold such nominations (csDA). (4) Workers sometimes forget their own nomination lines (csHU2); the brief should say 'post them
+yourself'. (5) Watch rateLimitType, not just status: the warning that stopped this lane was the seven-day window, which a five-hour reset does not clear.
+
 ## LANE V3 handoff (session_01VmWU2CzMFSQKBCWe8XqfTi), 24 September 2026, 13:27 UTC
 
 Verification of French/Dutch/German/Spanish/Italian readings (and English since LANE W2 closed 12:20) plus Google Books
