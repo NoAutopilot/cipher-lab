@@ -1,0 +1,140 @@
+open
+
+# 1519 imperial-election embassy cipher key -- BnF Français 5761, no. 3
+
+QUEUE row: M36 (`sources/solver-diffs/2026-09-24-lane-g3-gallica6.tsv`, "Sixth pass (LANE G3), 24 September 2026").
+
+## Source
+
+BnF, Département des Manuscrits, **Français 5761** ("Anc. 10332(3)", "Recueil de copies de lettres et de
+pièces concernant"), item 3: "Recueil des négociations « pour le faict de l'empire » recherché par
+François Ier contre Charles, roi d'Espagne, le futur Charles-Quint, après la mort de l'empereur Maximilien
+Ier," subdivided (finding aid `archivesetmanuscrits.bnf.fr/ark:/12148/cc587094/cd0e296`, fetched via
+browser, 24 Sept 2026):
+- Fol. 46-50: "Instruction... à ceulx qui vont devers le conte palatin. Messieurs Cordier, conseiller du
+  roy en son grant conseil, et le Sr de La Motheaugroing,... envoye[s] par devers... le conte palatin du
+  Rin, prince et electeur de l'empire..."
+- **Fol. 50-53: "Chiffres desquelz l'on a usé durant le voiage d'Allemagne, faict pour l'empire, deppartiz
+  ainsi qu'i s'ensuit"** -- the M36 target itself, a cipher-assignment key list naming: Cordier & La
+  Motheaugroing; Langjac; La Vernade (to Trèves); Lorraine, Orval, Bazoges, Savonnières, Chasteaubriant and
+  **Salviati**; treasurer Robertet; La Guiche; Joachin de Moltzau (to the marquis de Brandebourg); Tavannes
+  and de Surie (to the duke of Saxony); the grand archdeacon of Sens (to the legate in Germany); François de
+  Bordeaux (to the marquis de Brandebourg).
+- Fol. 54-102: "Lectres du roy durant ledict voiage" -- the king's own letters to the negotiators (Jean
+  d'Albret Sr d'Orval, Guillaume Gouffier Sr de Bonnyvet amiral de France, président Guillard), 7 Feb - 5 Jul
+  1519, from Paris, Port de Marly, Saint-Germain-en-Laye, Vincennes, l'Isle-Adam, Melun (one, fol.77v, to
+  Pope Leo X).
+- Fol. 104-172: "Responces au roy durant ledict voyage" -- the negotiators' replies, 10 Feb - 18 Jul 1519,
+  from Lunéville, Trèves-Sierck, Nancy, Dieuse, Coblentz.
+- Fol. 173-179: further individual letters "Voiage d'Allemaigne pour l'empire. A plusieurs Srs
+  particuliers" (to captaine Francisque, the Palatine elector's brother, Louise de Savoie, "monseigneur
+  Cordier," duke Frederic of Bavaria, the Palatine elector twice more, his chancellor), before Easter 1520
+  through 15 Jul 1519 (sic, dates as catalogued span both years across subsections).
+
+**Key finding for a recovery worker**: the catalogue text for Fol. 54-102 and Fol. 104-172 (the actual
+letters exchanged during this embassy, by the same negotiators the key list names) **does not use the word
+"chiffre" anywhere** -- per the finding aid's own wording, no ciphertext is stated to survive among the
+volume's own letters. This is a catalogue-text check only (per brief: "catalogue only, no canvas walk");
+it does not rule out an unremarked cipher passage within any of those ~170 folios of correspondence, only
+that the cataloguer did not flag one. A companion ciphertext letter using this exact key, if one exists,
+was not located in this volume by catalogue wording alone.
+
+One correspondent named in the key list, **"Salviati,"** is not identified further by the catalogue (a
+Frenchified surname spelling consistent with the era's cipher-key lists, which often garble names). Given
+the Salviati banking family's established presence in Lyon and French royal finance in this period, this
+is plausibly an unrelated Salviati agent/banker in French service, not the Medici-circle Cardinal Giovanni
+Salviati of M35 (BnF fr.2933 no.11, dated 1525, a different volume, different date, different context --
+Cardinal Salviati was not part of a 1519 French embassy to the Palatine elector). Flagged as a naming echo
+worth a follow-up worker's attention, not concluded as the same person.
+
+## Check-solved sweep (24 September 2026)
+
+1. **Web search.** `"Français 5761" chiffres 1519 Cordier Motheaugroing`, `1519 élection impériale chiffre
+   clé Cordier La Motheaugroing François Ier`: surfaced only the manuscript's own finding-aid page and
+   general 1519-imperial-election historiography (Wikipedia, Wikisource, Cairn.info, Herodote.net) -- none
+   ties this cipher key to a prior transcription, print or decipherment. Wikisource's "Une Election à
+   l'Empire en 1519" (Mignet, checked directly below) was the one lead worth following through.
+2. **Print / calendars.** Mignet, *Rivalité de François Ier et de Charles-Quint* (1886 ed., Perrin;
+   Internet Archive `rivalitdefranois01mign`, vol.1) is the standard calendar/narrative history of exactly
+   this 1519 election and its embassies. Full-text search (`be-api.us.archive.org/fts`) against this volume:
+   - "Motheaugroing": 0 hits. "Salviati": 0 hits. "5761": 0 hits. "chiffre": 0 hits anywhere in the volume.
+   - **"Cordier": 1 hit, page 554** -- "Instruction de février 1519 pour Cordier (conseiller du roi en son
+     grand conseil) et La [Motheaugroing]..." and again on p.193, "maître des requêtes Cordier, de l'autre
+     Armerstorff, le comte de Nassau..." The footnote for the first passage cites **"Moitzan. Carton J.,
+     952, page 8"** -- an Archives Nationales Trésor des Chartes series reference (J 952), **not** BnF
+     fr.5761. Mignet therefore knew of and used this same February 1519 instruction, from a different
+     archival copy, and at no point in the volume mentions a cipher for it. This is a real, checked negative
+     for one major calendar/narrative source: the instruction is in print (Mignet cites and paraphrases it),
+     but its accompanying cipher key is not, at least not in this volume.
+   - "Palatin"/"électeur palatin": 5 hits, all on the same page 554 spread, general narrative about the
+     Palatine electorate's grievances -- no cipher content.
+3. Duplicate of item 2 (Mignet is this period's standard narrative/calendar; Desjardins Toscane and the
+   Catalogue des Actes de François Ier, used for other 1519-1525 BnF fr. targets this pass and last, cover
+   different theatres -- Italy/Tuscany and royal acts respectively -- not the German/imperial-election
+   embassy; not separately queried this pass, a gap for a follow-up if Mignet's coverage is judged
+   insufficient).
+4. **Cryptiana / Cipherbrain.** Grepped all 104 cached `sources/cryptiana/web/*.htm` pages for "5761",
+   "motheaugroing", "cordier", "voiage.*allemagne", "conte palatin", "cardinalis": no relevant hit (the two
+   files matching "5761" as a bare substring, `codebreaking.htm` and `spanish3.htm`, are unrelated numeral
+   coincidences in cipher-figure examples, checked directly). `habsburg.htm`'s "Margaret of Austria (1519)"
+   section covers a different 1519 cipher entirely (Nassau-to-Margaret, Achembourg, 13 April 1519, already
+   in `spanish2.htm`) -- no mention of the French embassy to the Palatine elector or this key. No
+   Cipherbrain page found by web search.
+5. **DECODE.** `unsolved-ciphers/catalogue/decode-catalog.csv` grepped for "5761" (the numeral is an
+   unrelated DECODE record id, a Florence ASFi 1504 item) and for "Cordier"/"Motheaugroing"/"palatin": no
+   hit under any of these terms tied to a French 1519 item.
+6. **Solver repositories.** Fresh shallow clones of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers`
+   grepped for "5761", "motheaugroing", "cordier", "cardinalis", "voiage.*allemagne", "conte palatin" (all
+   matches inspected): every hit is a coincidental filename/id/numeral (`labbe1582/segment_sweep.tsv`,
+   `bethune/em_model_v2.json`, `sunyatsen/*.csv`, etc.) -- no shelfmark or content match to BnF fr.5761 in
+   either repository.
+
+Requests: WebSearch 4 queries. archive.org 6 be-api fts queries (Cordier, Motheaugroing, Salviati, "5761",
+chiffre, Palatin/électeur palatin), ≥1.5s apart. github.com 2 shallow clones (shared with M35 above). No
+credentials, no logins.
+
+## Digitisation and key-leaf check (24 Sept 2026)
+
+**Digitised: yes.** ark `btv1b52510561g`, found by a Gallica SRU query (`gallica adj "Français 5761"`,
+after one transient reset and one retry) matching the exact catalogue title "Recueil de copies de lettres
+et de pièces concernant." `tools/gallica_folio.py btv1b52510561g --folio 50` resolved the manifest cleanly
+(460 canvases, 448 with folio labels; **canvas f103 = folio 50r, canvas f104 = folio 50v**; the manifest
+flags an inconsistent offset and a duplicate label later in the volume around canvas f435-f438/folio
+216r-v -- not relevant to folio 50).
+
+**Key leaf confirmed by direct inspection: canvas f104 (folio 50v).** The image
+(`images/canvas104_folio50v_key.jpg`) shows the heading "Chiffres des[quel]z l'on a [us]é durant [le]
+voiage d'Allemagne, [faict] pour l'empire, deppartiz ainsi qu'i s'ensuit," matching the catalogue text
+verbatim, followed by "A monsieur Cordier et [Sr] de la Motheaugroing," a substitution alphabet (symbols
+for each letter, a-t or so), and the start of the per-correspondent code list (comte palatin, Trèves,
+Brandebourg, and further names cut off at the image's bottom edge, continuing onto later leaves toward
+folio 53 per the catalogue's stated span). Folio 50r (canvas f103, checked first) is still the tail end of
+the Instruction (fol.46-50), in continuous prose, not yet the key -- consistent with the catalogue's
+"Instruction... (Fol. 46-50)" / "Chiffres... (Fol. 50-53)" boundary falling mid-folio 50.
+
+This item is a **plaintext key document**, not ciphertext -- "ciphertext present" does not apply to it the
+way it does to M35. What was checked (per catalogue wording only, no canvas walk) is whether a companion
+ciphered letter using this key survives in the same volume: **no letter in Fol. 54-172 is catalogued with
+the word "chiffre"** (see Source section above) -- a catalogue-level negative, not a leaf-by-leaf one.
+
+Requests this section: gallica.bnf.fr 1 SRU query (1 reset + 1 retry) + 1 manifest.json fetch + 2 image
+fetches (f103, f104), all ≥2s apart, UA `cipher-lab research script (contact via repository)`. No
+403/429/challenge seen.
+
+## Verdict
+
+**Open**, 24 Sept 2026. Six sources checked (web, print/calendars, cryptiana/cipherbrain, DECODE,
+Bourdeau, Aymeloglu): no found-solved claim, no prior transcription or decipherment of this key list located
+under this shelfmark, these names, or this embassy in any of them. Mignet's standard narrative (1886 ed.)
+cites and paraphrases the same February 1519 instruction from a *different* archival copy (Archives
+Nationales J 952) and never mentions a cipher for it -- real evidence the key itself has not been printed
+by the one calendar source checked, not proof for every source. Not scored closed-negative: no cryptanalytic
+attempt was made (this is a plaintext key-recovery target, not a ciphertext to break), so rule 3's
+matched-control requirement does not apply. Confirmed digitised (ark `btv1b52510561g`) with the key leaf
+pinned by manifest label (canvas f104 = folio 50v) and content-matched by direct inspection. The volume's own
+Fol. 54-172 correspondence is a real, catalogue-level gap for finding a companion ciphertext (no "chiffre"
+word in the finding aid for those items, but no leaf was opened to check for an unremarked cipher passage);
+Desjardins Toscane and the Catalogue des Actes de François Ier were not queried this pass (a further gap,
+shared with M35).
+
+Stage-2 eligible on this verdict (`open`, six sources checked, per check-solved.md).
