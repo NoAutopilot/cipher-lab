@@ -23,3 +23,6 @@ list of leads, never as a verdict: every citation in it is checked against the s
 catalogue record, a DOI), confirmed leads go into AUDIT.md's search log with the source, invented or unverifiable
 citations are listed in AUDIT.md under "Second-opinion claims not confirmed" so nobody chases them twice. The class
 moves only on a confirmed source. A ROOM.md line `for LANE V: <target> second opinion filed` announces each file.
+Before logging an Internet Archive volume as unidentified or unreadable, read its metadata `source` field and run be-api
+full-text search inside it (fts works when _djvu.txt returns 500). A search section that reports a mid-run fix states
+which rows were re-run after it. Lessons of the Gramont N4 decision, 24 Sept 2026.

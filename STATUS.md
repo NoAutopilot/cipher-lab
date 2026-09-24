@@ -108,6 +108,11 @@ targets, Eckert and Thurloe. 29 workers collected (LEDGER rows carry session ids
 - Eckert 1862 T1-T10: N1. Thurloe P11-13: N0. fr5160 Brienne f.86/f.88: N0 (f.87 is the contemporary decipherment).
   Eckert E4/E5: N3, two audits, N4 blocked only by Zooniverse Talk (ASKS 27); now LANE W's.
 
+**07:21 UTC update:** Gramont f.29r and f.30 are **N4 (no prior decipherment located)**; outreach gate 2 is open only on 11
+JSTOR rows (ASKS row for the owner); draft the outreach once they are answered or waived. Danzay stays N3 until the Cryptiana
+forum thread is read (worker session_01L1CNm9KdabuHxwMAGjocEr), then a fresh N4-decision verifier. Google Books runner for
+LANE W: session_01KvYknGitoZUTD1KDPB6XW7. Collect both.
+
 **Next, in order (for whoever runs verification):** (1)-(2) DECODE search (LANE N, none) and Camusat ff.91-217 (LANE G, negative) are in; fresh N4-decision verifiers started
 06:53: Danzay session_01PKbcXogQ4jYw1rsHvm2Svx, Gramont session_01FwWKsqwM57oancfisEiVEE ($10 each) -- collect them; (3) f.36r adjudicated and applied 06:24 (H 37 / M 26 / U 4); (4) second-opinion
 PRs [SO-*]: check every citation as a lead, log unconfirmed ones in AUDIT.md; (5) at N4, outreach gate 2 still needs the
