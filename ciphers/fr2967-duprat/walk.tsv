@@ -76,3 +76,19 @@ canvas	stamped_page	content	date	heading
 75	74	clear letter	-	continuation
 78	76	clear letter	-	continuation (facing canvas 77's own item-30 heading, already probed)
 79	77	clear letter	-	continuation of item 30 decipherment text
+80	79	clear letter	-	continuation, clear prose
+81	80	clear letter	-	continuation
+83	82	clear letter	-	item 31 (Fol.82) title confirmed: "Autre Dechiffrement de despesche Envoyée au Roy francois premier par le Chancelier du prat pour le mesme subject" + text, matches finding-aid item 31 exactly; plain prose, no cipher
+84	83	clear letter	-	continuation of item 31 text
+85	84	clear letter	-	continuation
+86	85	clear letter	-	continuation, mentions "Pape"
+87	86	clear letter	-	continuation
+88	87	clear letter	-	continuation of item 31/33 area, dense clear prose
+90	89	clear letter	-	item 33 (Fol.89) title confirmed: "Autre Dechiffrement De depeche Envoyée au Roy francois premier par le chancelier du prat pour le mesme subject" + text, matches finding-aid item 33 exactly; plain prose, no cipher
+92	90	clear letter	-	continuation of item 33 text
+93	91	clear letter	-	item 34 (Fol.91) title confirmed: "Autre dechiffrement de Depesche Emoye au Roy francois premier" + text, matches finding-aid item 34; plain prose, no cipher
+94	92	clear letter	-	continuation of item 34 text
+95	93	clear letter	-	continuation, discusses treaty/negotiation terms
+96	95	clear letter	-	continuation, clear prose (Charles Quint / François treaty context)
+97	96	blank	-	mostly blank, faint offset only
+98	97	clear letter	-	"Traité Entre L'Empereur Charles quint et Le Roy francois premier" (new title + text, a treaty document, not a letter or decipherment)
