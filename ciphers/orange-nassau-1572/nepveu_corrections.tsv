@@ -1,0 +1,14 @@
+footnote	letter	printed_page	as_printed_verbatim_nl	our_paraphrase_en	grade
+1	CCCLXXXV	19	"Hier moet 42. 51. 42. noodwendig zijn 45. 51. 42."	printed cipher group 42.51.42 must be 45.51.42	H
+2	CCCLXXXV	19	"21. 41. 3. 39. 12. moet hier zijn 21. 51. 3. 39. 12."	printed cipher group 21.41.3.39.12 should here be 21.51.3.39.12	H
+3	CCCLXXXV	19	"60. 42. 40. 69. 5. 51. moet zijn 60. 42. 40. 69. 15. 51."	printed cipher group 60.42.40.69.5.51 should be 60.42.40.69.15.51	H
+4	CCCLXXXV	20	"42. 15. 60. 57. moet zijn 45. 15. 60. 57."	printed cipher group 42.15.60.57 should be 45.15.60.57	H
+5	CCCLXXXV	20	"Voor 42. 24. lees 24. 42."	for (printed) 42.24 read 24.42 (order swapped)	H
+6	CCCLXXXV	20	"Lees voor 54. 51."	read 54.51 in place of [value not separately given in the footnote text as OCR'd/imaged; see p20_letter_end_and_387.png]	H
+7	CCCLXXXV	20	"Venir ou voir."	gloss on a word read as "vir": (short for) venir or voir	H
+8	CCCLXXXVII	20	"Ie is je."	gloss: "Ie" (as printed) should read "je"	H
+9	CCCLXXXVII	20	"14. 6. 12. 6. 9. geeft b.d.b.c.: men leze 14. 12. 60. 9."	printed 14.6.12.6.9 gives b.d.b.c (nonsense); read 14.12.60.9 instead -- decodes with key_nepveu.tsv, treating 14 as a non-valeur, to "duc" (matches "duc d'Albe" in the surrounding plain text)	H
+10	CCCLXXXVII	20	"15. 37. 51. moet zijn 15. 39. 57."	printed 15.37.51 should be 15.39.57 -- decodes to "ent" (matches "estoyent" in the surrounding plain text)	H
+11	CCCLXXXVII	20	"Hier is 21 als nonvaleur geplaatst."	here 21 is placed as a non-valeur (null), not a letter, despite being a valid key value elsewhere	H
+12	CCCLXXXVII	20	"14. 36. 27. 15. 39. 51. moet zijn 54. 36. 27. 15. 39. 54."	printed 14.36.27.15.39.51 should be 54.36.27.15.39.54 -- decodes to "smiens", matching "les miens" (the trailing -s of "les" plus "miens") in the surrounding plain text	H
+13	CCCLXXXVII	21	"11. moet zijn 12."	printed 11 should be 12 -- decodes to "d" (context: "pouvoir (13) aider ces affaires", i.e. "pouvoir d'aider")	H

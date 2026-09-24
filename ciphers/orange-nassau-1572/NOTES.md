@@ -184,21 +184,126 @@ database's own description; no verifier N-class is being claimed or needed here,
 since this is a "found-solved" catalogue correction, not a claimed reading of our
 own.
 
+## Nepveu tot Ameyde 1842, read in full (24 September 2026)
+
+Located and read via Delpher (delpher.nl, tijdschriften collection); curl alone
+returns an empty JS shell, so fetched with `tools/browser_fetch.js` (route: Delpher
+search page render -> "49 tijdschriften gevonden" for `"Nepveu tot Ameyde"` ->
+first hit is the right issue). Full citation confirmed: L. J. Nepveu tot Ameyde,
+[untitled letter to the editor], *Algemeene Konst- en Letterbode, voor het jaar
+1842*, no. 2 (14 Jan. 1842), A. Loosjes Pz., Haarlem, pp. 18-22, signed "Utrecht,
+... Dec. 1841." Delpher item identifier `MMKB13:002671002:mpeg21`, page identifiers
+`:00001`-`:00006` for printed pp. 17-22. Images (screenshots of the rendered page
+scan, not a re-transcription) and OCR text saved to
+`sources/nepveu-1842/` with `manifest.json` (URLs, identifiers, what each page
+contains). Requests: delpher.nl ~13 (browser_fetch.js, >=1.5s apart, all 200; no
+challenge encountered, route 1 -- JSON/plain URL -- did not work for this site's
+client-rendered search/view pages, so route 2 -- real browser -- was used
+throughout; no other host queried this pass).
+
+**What the article actually contains, pp.18-22 (grade H throughout, read directly
+from the 1842 print via the page images):**
+
+- **p.18**: Nepveu's covering letter to the editor. States he found the key to
+  cipher passages in Groen van Prinsterer's *Archives*, I Ser., 3e t., **both**
+  no. CCCLXXXV (our target, pp.501-510) **and no. CCCLXXXVII** (pp.511-513 or
+  thereabouts -- a different letter in the same volume, "du même au même, datée du
+  Camp de Geel", 24 Sept./7bre 1572, i.e. Orange to Jean de Nassau again, three
+  days after our letter -- **not currently a target in this repo**; flagging as a
+  possible companion item, not pursued further this pass per brief).
+- **p.19**: the key table in full (`key_nepveu.tsv`): a-z mapped to multiples of 3
+  from 3 to 72 (i/j merged at 27, u/v merged at 60); "de overige cijfers zijn
+  zoogenaamde non-valeurs, ter nedergesteld, om den oningewijden lezer het spoor
+  bijster te maken" -- every other number is a null, inserted to throw off an
+  uninitiated reader. Then the deciphered text of **CCCLXXXV** begins ("Vous etes
+  fans doubte asfez adverty du ... meurtre" (de la St. Barthélemy) ...").
+  Footnotes 1-3.
+- **p.20**: CCCLXXXV continues to its end, **including the postscript** ("Quant a
+  Diets von Sch(p)onenberg ..."), on which Nepveu himself notes: "(Omtrent dit P.
+  S. schijnt eenige rectificatie of aanvulling van den tekst vereischt te
+  worden.)" -- "Regarding this P.S. some rectification or completion of the text
+  seems to be required" -- **this is almost certainly what the Huygens database's
+  "(onv.)"/incomplete marker refers to**: Nepveu read the whole letter (the
+  narrative body plus every cipher-bearing passage Groen printed, matching the
+  page range 501-510/pp.502-503, 506-507, 509 noted above -- pencil marginal page
+  numbers "p.503", "504/5", "505", "506/7" visible in the scan margin next to the
+  corresponding paragraphs, apparently added by a later reader/cataloguer, not
+  part of the 1842 print, tracking his readings against Groen's pages) but flags
+  the postscript specifically as unresolved. Footnotes 4-7. **CCCLXXXVII** then
+  begins ("du même au même, datée du Camp de Geel"), footnotes 8-12.
+- **p.21**: CCCLXXXVII concludes ("Escrit en mon camp à Geel ce 24 de 7bre
+  1572"), footnote 13. Immediately after, an **unrelated** section begins ("Ik
+  wenschte bij deze gelegenheid uwe lezers mede nog opmerkzaam te maken op eene
+  uitgaaf van Archieven ...") introducing an extract from Bertrand de Salignac de
+  la Mothe Fénelon's published diplomatic correspondence (Paris, 1840) -- this is
+  **not a decipherment**, it is already-plain French text Nepveu is sharing as a
+  supplementary curiosity; it is not part of the Orange-Nassau cipher at all.
+- **p.22**: the Fénelon extract concludes; article signed "Utrecht, L. J. Nepveu
+  tot Ameyde. Dec. 1841." A new, unrelated article (an obituary of J. F. Hoefman)
+  begins on the same page.
+
+**Method** (as stated and as evidenced by the 13 footnoted corrections,
+`nepveu_corrections.tsv`): simple monoalphabetic number substitution (multiples
+of 3 for letters, everything else a null), applied by Nepveu against the cipher
+numerals **as Groen printed them in 1836**. Where a printed numeral is not a
+multiple of 3 (hence cannot be a letter under his own key) or otherwise yields
+nonsense, he proposes in a footnote what the numeral should be, always adjusting
+to a nearby number that (a) is a multiple of 3 and (b) makes the surrounding word
+legible -- e.g. footnote 9 corrects a printed "14.6.12.6.9" (reads as nonsense
+"b.d.b.c") to "14.12.60.9", which decodes (14 as a null) to "duc", matching "le
+maine du duc d'Albe" in the immediately surrounding plain text; footnote 12
+similarly resolves to "les miens". This reads as Nepveu treating the printed
+numerals as probably containing 1836 typesetting/transcription errors rather than
+cipher he could not break -- i.e. his stated key applies successfully to nearly
+every cipher group in both letters once such corrections are made, and the cipher
+mixed single enciphered letters into otherwise-plaintext words rather than
+enciphering whole sentences.
+
+**What is established vs inferred:** H (read directly from the 1842 print) --
+the key table, the reconstructed French text of both letters, and the 13
+footnoted corrections, all as printed by Nepveu. **I** (inferred by this worker,
+not printed by Nepveu) -- the reading of footnotes 9 and 12 against
+`key_nepveu.tsv` to show they decode to "duc" and "les miens" respectively, and
+the identification of the postscript remark as the likely source of the "(onv.)"
+tag; these are arithmetic checks of Nepveu's own published key against his own
+published footnotes, not new cryptanalysis of the ciphertext, and are not a
+claimed reading of our own under rule 4. No novelty class is claimed or implied
+by any of this; rule 10 wording ("new", "first", "unpublished") is not used
+anywhere in this section, consistent with the "found-solved" verdict already on
+record above.
+
+**Not established this pass:** whether Nepveu's key, applied group-by-group to
+`ciphertext.txt`, reproduces the same French text and where it might diverge --
+that comparison was not attempted (out of this brief's scope: "do not decode
+anything yourself"). Whether letter CCCLXXXVII belongs in this repo as a
+sibling target. Whether the marginal pencil page numbers in the scan were added
+by Huygens ING staff or an earlier reader (not established, not material to the
+reading itself).
+
 ## Next
 
-1. Locate and read Nepveu tot Ameyde 1842, pp. 18-22 (Delpher.nl / Google Books /
-   KB catalogue), to record what fraction of the cipher he broke and whether a
-   usable key survives -- this could still be a **contribution** lane item (handing
-   a machine-readable key to DECODE/the solver repos) even though the letter itself
-   is not a fresh solve.
-2. If a key does survive, check whether the same cipher was reused in the Sept 1572
+1. ~~Locate and read Nepveu tot Ameyde 1842~~ -- done, this pass; see section
+   above, `sources/nepveu-1842/`, `key_nepveu.tsv`, `nepveu_corrections.tsv`.
+2. Apply `key_nepveu.tsv` to `ciphertext.txt` mechanically (a decode.py, per
+   CLAUDE.md's "reproducible readings" rule) to see whether it reproduces
+   Nepveu's printed French exactly, flags where the cipher groups in our own
+   transcription disagree with his printed corrections, and whether any of the
+   pp.506-507/509 cipher groups he apparently covered (per the marginal page
+   markers) still show unread numerals in our transcription -- this is solver
+   work, not done here.
+3. Consider whether Groen van Prinsterer, *Archives*, I Ser., 3e t., no.
+   CCCLXXXVII (pp. ~511-513, "du même au même, datée du Camp de Geel", 24 Sept.
+   1572) should be scouted as a companion target: same correspondents, same
+   cipher/key per Nepveu, three days after our letter, also partially deciphered
+   by Nepveu in the same 1842 article.
+4. If a key does survive, check whether the same cipher was reused in the Sept 1572
    "merchant's letters" pseudonym correspondence between Willem and Lodewijk van
    Nassau referenced by the Huygens ING project description (sibling-key lead named
    in the brief) -- would extend a recovered key across other Nassau-family items in
-   the same tome.
-3. Correct QUEUE.md's P1 row from "check-solved: six-source sweep" to "found-solved,
+   the same tome. (Nepveu's key, now in hand, makes this directly testable.)
+5. Correct QUEUE.md's P1 row from "check-solved: six-source sweep" to "found-solved,
    see ciphers/orange-nassau-1572/NOTES.md" (done, this sweep).
-4. Whether an earlier Nederlandse-historische-bronnen volume covers 1572-1578
+6. Whether an earlier Nederlandse-historische-bronnen volume covers 1572-1578
    Willem-Jan correspondence (distinct from Kluiver's 1578-1584 edition) was not
    resolved -- worth one more targeted search before treating source family (3) in
    the brief (Japikse/other editions) as exhausted.

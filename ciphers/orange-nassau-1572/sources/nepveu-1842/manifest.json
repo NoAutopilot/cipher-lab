@@ -1,0 +1,59 @@
+{
+  "fetched_utc": "2026-09-24",
+  "route": "Delpher tijdschriften (delpher.nl), rendered via tools/browser_fetch.js (curl alone returns an empty JS shell; Delpher's results and viewer are client-rendered)",
+  "publication": "Algemeene Konst- en Letterbode, voor het jaar 1842, no. 2, 14 January 1842",
+  "publisher": "A. Loosjes Pz., Haarlem",
+  "delpher_item_identifier": "MMKB13:002671002:mpeg21",
+  "article_title_as_printed": "[untitled letter to the editor, headed] \"Aan de Redactie van den Algemeenen Konst- en Letterbode te Haarlem\", signed \"Utrecht, L. J. Nepveu tot Ameyde. Dec. 1841.\"",
+  "article_pages_printed": "18-22 (cipher key, both deciphered letters, and Nepveu's corrections occupy pp.18-20; pp.20(end)-22 is an unrelated supplementary extract from Fenelon's diplomatic correspondence, not a decipherment)",
+  "search_used": "https://www.delpher.nl/nl/tijdschriften/results?query=%22Nepveu+tot+Ameyde%22&coll=dts (49 tijdschriften gevonden; first hit is this issue)",
+  "pages_fetched": [
+    {
+      "printed_page": 17,
+      "delpher_page_identifier": "MMKB13:002671002:00001",
+      "view_url": "https://www.delpher.nl/nl/tijdschriften/view?identifier=MMKB13:002671002:00001&coll=dts",
+      "content": "issue front matter (Amsterdam Letteroefenend Genootschap prize announcement); article does not start here",
+      "saved": "ocr_p17.txt"
+    },
+    {
+      "printed_page": 18,
+      "delpher_page_identifier": "MMKB13:002671002:00002",
+      "view_url": "https://www.delpher.nl/nl/tijdschriften/view?identifier=MMKB13:002671002:00002&coll=dts",
+      "content": "article opens: Nepveu's letter to the editor, cites Groen van Prinsterer's Archives I Ser. 3e t., nrs CCCLXXXV and CCCLXXXVII, p.503 line 10 and p.513 line 4, states he found the key",
+      "saved": ["ocr_p18.txt", "p18_intro.png"]
+    },
+    {
+      "printed_page": 19,
+      "delpher_page_identifier": "MMKB13:002671002:00003",
+      "view_url": "https://www.delpher.nl/nl/tijdschriften/view?identifier=MMKB13:002671002:00003&coll=dts",
+      "content": "the key table (a-z -> multiples of 3, u/v and i/j merged); rest are non-valeurs (nulls); start of letter CCCLXXXV (Malines, 21 Sept 1572) deciphered text, footnotes 1-3",
+      "saved": ["ocr_p19.txt", "p19_key_table.png"]
+    },
+    {
+      "printed_page": 20,
+      "delpher_page_identifier": "MMKB13:002671002:00004",
+      "view_url": "https://www.delpher.nl/nl/tijdschriften/view?identifier=MMKB13:002671002:00004&coll=dts",
+      "content": "end of letter CCCLXXXV including postscript (Nepveu flags the P.S. as needing further rectification); start of letter CCCLXXXVII (Camp de Geel, 24 Sept/7bre 1572), footnotes 4-12",
+      "saved": ["ocr_p20.txt", "p20_letter_end_and_387.png"]
+    },
+    {
+      "printed_page": 21,
+      "delpher_page_identifier": "MMKB13:002671002:00005",
+      "view_url": "https://www.delpher.nl/nl/tijdschriften/view?identifier=MMKB13:002671002:00005&coll=dts",
+      "content": "end of letter CCCLXXXVII, footnote 13; then unrelated supplementary extract begins (Fenelon diplomatic correspondence, already-plain French, not a decipherment)",
+      "saved": ["ocr_p21.txt", "p21_letter387_end.png"]
+    },
+    {
+      "printed_page": 22,
+      "delpher_page_identifier": "MMKB13:002671002:00006",
+      "view_url": "https://www.delpher.nl/nl/tijdschriften/view?identifier=MMKB13:002671002:00006&coll=dts",
+      "content": "end of the Fenelon extract; article signed off 'Utrecht, L. J. Nepveu tot Ameyde. Dec. 1841.'; next article (Hoefman obituary) begins on the same page",
+      "saved": "ocr_p22.txt"
+    }
+  ],
+  "requests": {
+    "www.delpher.nl": "~13 (1 search page render, 6 page views without screenshot, 4 page views with screenshot, ~2 reachability checks), all via browser_fetch.js, 1.5s+ apart",
+    "note": "curl reachability check only; no API found for Delpher tijdschriften beyond the client-rendered search/view pages"
+  },
+  "not_fetched": "full-resolution IIIF/download image (the 'Download als plaatje (jpg)' control did not expose a static URL within the page load window used; screenshots of the rendered viewer were taken instead, which show the actual scan, not a re-transcription)"
+}
