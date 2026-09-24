@@ -327,7 +327,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T16:25Z	session_01J653u9mXgcT3gwBenQP5kh	LANE V4 verifier V3b (Opus, cap $10)	SO-DANZAY-F35, SO-GRAMONT-F30 (PRs 3,4)	second-opinion checks
 2026-09-24T16:25Z	session_01HBMnLTuZ2DR2voSQ3vFQHs	LANE V4 verifier V3c (Opus, cap $10)	SO-LODEWIJK-1573-74, SO-SAXONY-126 (PRs 8,7)	second-opinion checks
 2026-09-24T16:58Z	session_01Ly3mwAF7mCgYnLZxpd5ENK	LANE V4 verifier V3d (Opus, cap $8)	SO-SAXONY-53-57 (PR 9)	second-opinion check
-2026-09-24T17:00Z	session_016p35ZUnkX32oxmhk5v2nJV	LANE R4 J (Sonnet, cap $8)	Salviati f.54v-f.57v box-keyed passes	live
+2026-09-24T17:00Z	session_016p35ZUnkX32oxmhk5v2nJV	LANE R4 J (Sonnet, cap $8)	Salviati f.54v-f.57v box-keyed passes	done, $6.85, D, f54v 83.6%
 2026-09-24T17:00Z	session_0169hJvWRbS7v5JTe4oitTim	LANE R4 K (Sonnet, cap $8)	Seure 1558 capture, atlas, passes	done, $5.47, D, 1 line 51.7%
 2026-09-24T17:00Z	session_01TYYHUF4Wp6aehGDRQF6Qrv	LANE R4 L (Sonnet, cap $3)	M36 f.104 pass C + dataset	done, $2.81, D, key.tsv H30 M7
 2026-09-24T17:00Z	session_01TUCsu5jvT9abcbErymiSk3	LANE R4 M (Sonnet, cap $5)	Marie de Medicis 1610 key capture + apply	done, $3.75, N, key blocked (ASKS 43)
@@ -335,4 +335,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T17:10Z	session_0162BqYqTNF2sZPq4qELMPKu	N4 significance memo (Opus, cap $8)	N4-READINGS.md	what each N4 passage says and why it matters, rule 10 wording
 2026-09-24T17:08Z	session_01GmsYdQh3aQqRj6zP9TPgkw	close PR 9 (Sonnet, cap $1)	pull request 9	unmerged close
 2026-09-24T17:19Z	session_01UBQ2tN51FBuKTx41RqnGAK	LANE V4 verifier V5 (Opus, cap $12)	JSTOR triage, Danzay lead, outreach gate 2, drafts (a)-(d)	after the owner-machine JSTOR run 49921dd
-2026-09-24T17:23Z	session_01MgepRzyak6uX3P245fPjsa	LANE R4 O (Sonnet, cap $8)	Seure f75L re-segmentation + passes	live
+2026-09-24T17:23Z	session_01MgepRzyak6uX3P245fPjsa	LANE R4 O (Sonnet, cap $8)	Seure f75L re-segmentation + passes	done, $4.55, N, gate 38.5%
+2026-09-24T17:46Z	session_012iPigthLUviMQnUiE8MDaC	LANE R4 P (Opus, cap $4)	Salviati code+mark control curve	live
