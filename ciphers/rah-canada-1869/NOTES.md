@@ -64,6 +64,60 @@ clave"): a genuine cryptanalysis candidate if pursued, though the RAE letters ca
 first (route 2 of CLAUDE.md's Access playbook, browser tool, since the plain GET returned 403) in case it
 turns out to hold a plaintext copy of the same exchange.
 
+## Access notes and interlinear decipherment (24 September 2026, LANE R worker R4)
+
+**Working image route (bypasses the site's Anubis bot-challenge):** every plain path on
+`bibliotecadigital.rah.es` (`registro.do`, `catalogo_imagenes/grupo.do`, `resultados_busqueda.do`, and the
+`imagen_id.do` image endpoint itself) sits behind the site's Anubis JS proof-of-work challenge -- curl always
+gets a 307 to `/.within.website/?redir=...` (confirmed again this pass) and never solves it. The site's own
+OAI-PMH endpoint (`/oai/oai.do`) is **not** behind Anubis and answers plain curl. `verb=GetRecord` with
+`metadataPrefix=didl` (not the default `oai_dc`, which only gives the `grupo.do` group-viewer link) returns a
+`didl:Resource` entry per page image, each `ref` a direct `.../i18n/catalogo_imagenes/imagen_id.do?idImagen=NNNNNNNN`
+URL:
+```
+curl -A "Mozilla/5.0 ..." "https://bibliotecadigital.rah.es/oai/oai.do?verb=GetRecord&identifier=oai:bibliotecadigital.rah.es:14495&metadataPrefix=didl"
+```
+Those `imagen_id.do` URLs are themselves still behind Anubis for curl. A real headless Chromium
+(`tools/browser_fetch.js`) clears the challenge, but intermittently -- of about 8 attempts this pass, one
+returned the real page/image on the first try, several returned Anubis's own unsolved challenge page ("Anubis
+could not load its JavaScript. The server may be overloaded."), one returned a bare "upstream request
+failed". `tools/browser_fetch.js` gained a `--binary` option this session (saves the navigation response's
+raw body instead of `page.content()`, retrying the navigation up to `--retries` times, default 3, until the
+content-type isn't `text/html`) which made the five image fetches reliable:
+```
+NODE_PATH=$(npm root -g) node tools/browser_fetch.js "<imagen_id.do URL>" OUT.jpg --profile /tmp/rah_profile --binary
+```
+This route is worth reusing for `rah-morillo-1817` (already has three record ids and a note that
+`imagen_id.do` serves real JPEGs but was "not opened") and for E1 `rah-xiquena-1868` (whose `grupo.do` viewer
+"did not yield a static image URL to curl" -- the OAI didl route should).
+
+**The record is two items, not one.** `record id=14495`'s five page images (`images/manifest.json`) are: pp.1-3
+(`10137299`-`10137301`) Luis González Bravo's covering letter to the Queen, clear Spanish, Biarritz, 18 Nov
+1869 ("La mejor respuesta que puedo dar ... es el envio de la adjunta nota del Conde de la Cañada. La remito
+tal y como ha sido recibida" -- "I send it exactly as received"); pp.4-5 (`10137302`-`10137303`, foliated
+"Leg. XIX, nº 117/2" and "/3") the "nota cifrada" itself.
+
+**The nota cifrada is interlinear: the plaintext is already in the document.** Every clear Spanish
+line/sentence on 117/2-3 is followed directly below it, same hand, by that same sentence's own cipher
+encoding (digits plus a set of pen-drawn marks -- see `glyphs/atlas.md`). E.g. "Ruega al Sr. D. Luis Gonzalez
+Bravo, haga llegar a manos de S.M. la Reina, la carta que en forma de nota se estampa a continuación..." each
+have a cipher line beneath them; the note closes "Señora: Tengo el mas alto honor en felicitar muy
+cordialmente á V.M. en el dia de su santo... A.L.R.P. de V.V. Ms.M. y Real familia con el mas profundo respeto
+y veneracion." This means the plaintext for this item does not need to be searched for in print or
+cryptanalysed -- it is written on the same leaf as the cipher, so a straightforward alignment (grade C, from
+known plaintext) reads the whole nomenclator once the two are lined up. Flagged in ROOM.md 2026-09-24 05:17
+UTC per this brief's instruction ("if there is any interlinear or separate decipherment... that makes this
+recovery"); **not decoded or aligned by this worker** (out of this brief's scope -- access + transcription
+only).
+
+**Symbol set.** Mixed Arabic digits (0-9) and roughly a dozen recurring pen marks (a raised dot, a
+cross/dagger, a plain plus, a circle-with-interior-mark, a plain circle/oval, an equals sign, a short dash,
+one- and two-hump cursive loops, a larger looping flourish, a small hooked stroke, an accent tick) -- see
+`glyphs/atlas.md` for the working legend built before the two blind passes, and `images/inventory.tsv` for
+the per-page breakdown. Not yet an established codebook (no key or table found on these five pages;
+González Bravo's letter gives no indication one exists elsewhere in this small file) -- the interlinear
+plaintext supplies the reading without one.
+
 ## Copy status
 
 Copy-free (per the 23-24 Sept scout): `bibliotecadigital.rah.es`, public domain / CC PDM, no login. Record
