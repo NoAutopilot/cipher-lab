@@ -12,8 +12,6 @@ queue_hit, and a final verdict column: "excluded:<reason>" or "survives".
 """
 import csv, glob, json, os, re, sys
 
-pairs_tsv, bour, aym = sys.argv[1:4]
-
 def ids_in(s):
     out = set(re.findall(r"\bR\d{1,5}\b", s))
     for a, b in re.findall(r"\bR(\d{1,5})\s*[-–]\s*R?(\d{1,5})\b", s):
@@ -54,46 +52,58 @@ def volume_keys(s):
     for m in re.findall(r"asve.*?b(?:usta)?\.? ?(\d{1,4})", s): k.add(f"asve busta {m}")
     return k
 
-# Bourdeau index: folder -> (ids, volume keys, class)
-bidx = {}
-for prof in glob.glob(os.path.join(bour, "*", "profile.json")):
-    folder = os.path.basename(os.path.dirname(prof))
-    try: p = json.load(open(prof, encoding="utf-8"))
-    except Exception: continue
-    blob = json.dumps(p, ensure_ascii=False)
-    notes = os.path.join(os.path.dirname(prof), "NOTES.md")
-    head = open(notes, encoding="utf-8", errors="replace").read(3000) if os.path.exists(notes) else ""
-    shelf = " | ".join(d.get("shelfmark", "") for d in p.get("documents", [])) + " | " + p.get("title", "") + " | " + head
-    o = p.get("outcome") if isinstance(p.get("outcome"), dict) else {}
-    bidx[folder] = (ids_in(blob), volume_keys(shelf), str(o.get("class", "?")))
+def build_bourdeau_index(bour):
+    """folder -> (ids, volume keys, class), from every */profile.json (+ NOTES.md head)."""
+    bidx = {}
+    for prof in glob.glob(os.path.join(bour, "*", "profile.json")):
+        folder = os.path.basename(os.path.dirname(prof))
+        try: p = json.load(open(prof, encoding="utf-8"))
+        except Exception: continue
+        blob = json.dumps(p, ensure_ascii=False)
+        notes = os.path.join(os.path.dirname(prof), "NOTES.md")
+        head = open(notes, encoding="utf-8", errors="replace").read(3000) if os.path.exists(notes) else ""
+        shelf = " | ".join(d.get("shelfmark", "") for d in p.get("documents", [])) + " | " + p.get("title", "") + " | " + head
+        o = p.get("outcome") if isinstance(p.get("outcome"), dict) else {}
+        bidx[folder] = (ids_in(blob), volume_keys(shelf), str(o.get("class", "?")))
+    return bidx
 
-# Aymeloglu tracker lines
-alines = []
-for fp in glob.glob(os.path.join(aym, "**", "*.md"), recursive=True):
-    if re.search(r"(TARGETS|SHORTLIST|README|CATALOGUE|ranked)", os.path.basename(fp)):
-        for ln in open(fp, encoding="utf-8", errors="replace"):
-            alines.append((os.path.relpath(fp, aym), ln.strip()))
+def build_aymeloglu_lines(aym):
+    """[(relpath, line), ...] from TARGETS/SHORTLIST/README/CATALOGUE/ranked .md files."""
+    alines = []
+    for fp in glob.glob(os.path.join(aym, "**", "*.md"), recursive=True):
+        if re.search(r"(TARGETS|SHORTLIST|README|CATALOGUE|ranked)", os.path.basename(fp)):
+            for ln in open(fp, encoding="utf-8", errors="replace"):
+                alines.append((os.path.relpath(fp, aym), ln.strip()))
+    return alines
 
-queue = open("QUEUE.md", encoding="utf-8").read()
-queue_ids = ids_in(queue); queue_vols = volume_keys(queue)
+def main():
+    pairs_tsv, bour, aym = sys.argv[1:4]
+    bidx = build_bourdeau_index(bour)
+    alines = build_aymeloglu_lines(aym)
 
-rows = list(csv.DictReader(open(pairs_tsv, encoding="utf-8"), delimiter="\t"))
-fields = list(rows[0].keys()) + ["bourdeau_id_hit", "bourdeau_volume_hit", "aym_id_hit", "aym_volume_hit", "queue_hit", "verdict"]
-w = csv.DictWriter(sys.stdout, fieldnames=fields, delimiter="\t"); w.writeheader()
-for r in rows:
-    my_ids = {("R" + x.lstrip("Rr")) for x in (r["id"], r["neighbour_id"]) if x}
-    my_vols = volume_keys(r["shelfmark"])
-    if re.fullmatch(r"\d{3,5}", r["shelfmark"].strip()):  # bare BnF-style number in the scrape
-        my_vols |= {f"bnf français {r['shelfmark'].strip()}"}
-    bid = sorted(f"{f}[{c}]" for f, (ids, vols, c) in bidx.items() if my_ids & ids)
-    bvol = sorted(f"{f}[{c}]" for f, (ids, vols, c) in bidx.items() if my_vols & vols and not (my_ids & ids))
-    aid = sorted({rel for rel, ln in alines if my_ids & ids_in(ln)})
-    avol = sorted({rel for rel, ln in alines if my_vols & volume_keys(ln)})
-    qh = "id" if my_ids & queue_ids else ("volume" if my_vols & queue_vols else "")
-    if bid: v = "excluded:bourdeau-id"
-    elif bvol: v = "excluded:bourdeau-volume"
-    elif aid: v = "excluded:aymeloglu-id"
-    elif qh == "id": v = "excluded:queue-id"
-    else: v = "survives" + (":queue-volume" if qh else "") + (":aym-volume" if avol else "")
-    r.update({"bourdeau_id_hit": ";".join(bid), "bourdeau_volume_hit": ";".join(bvol), "aym_id_hit": ";".join(aid), "aym_volume_hit": ";".join(avol), "queue_hit": qh, "verdict": v})
-    w.writerow(r)
+    queue = open("QUEUE.md", encoding="utf-8").read()
+    queue_ids = ids_in(queue); queue_vols = volume_keys(queue)
+
+    rows = list(csv.DictReader(open(pairs_tsv, encoding="utf-8"), delimiter="\t"))
+    fields = list(rows[0].keys()) + ["bourdeau_id_hit", "bourdeau_volume_hit", "aym_id_hit", "aym_volume_hit", "queue_hit", "verdict"]
+    w = csv.DictWriter(sys.stdout, fieldnames=fields, delimiter="\t"); w.writeheader()
+    for r in rows:
+        my_ids = {("R" + x.lstrip("Rr")) for x in (r["id"], r["neighbour_id"]) if x}
+        my_vols = volume_keys(r["shelfmark"])
+        if re.fullmatch(r"\d{3,5}", r["shelfmark"].strip()):  # bare BnF-style number in the scrape
+            my_vols |= {f"bnf français {r['shelfmark'].strip()}"}
+        bid = sorted(f"{f}[{c}]" for f, (ids, vols, c) in bidx.items() if my_ids & ids)
+        bvol = sorted(f"{f}[{c}]" for f, (ids, vols, c) in bidx.items() if my_vols & vols and not (my_ids & ids))
+        aid = sorted({rel for rel, ln in alines if my_ids & ids_in(ln)})
+        avol = sorted({rel for rel, ln in alines if my_vols & volume_keys(ln)})
+        qh = "id" if my_ids & queue_ids else ("volume" if my_vols & queue_vols else "")
+        if bid: v = "excluded:bourdeau-id"
+        elif bvol: v = "excluded:bourdeau-volume"
+        elif aid: v = "excluded:aymeloglu-id"
+        elif qh == "id": v = "excluded:queue-id"
+        else: v = "survives" + (":queue-volume" if qh else "") + (":aym-volume" if avol else "")
+        r.update({"bourdeau_id_hit": ";".join(bid), "bourdeau_volume_hit": ";".join(bvol), "aym_id_hit": ";".join(aid), "aym_volume_hit": ";".join(avol), "queue_hit": qh, "verdict": v})
+        w.writerow(r)
+
+if __name__ == "__main__":
+    main()

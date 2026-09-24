@@ -59,3 +59,29 @@ neighbour-record pass (`sources/solver-diffs/2026-09-23-decode-neighbours*.tsv`)
 The `city`/`shelfmark_code` split is a simple `<b>`/`<small>` tag split of the list's `c_holder` field, not
 independently verified against RecordsView; about 1% of rows may lack a `<small>` code segment (matches the
 "about 1%" figure `tools/decode_neighbours.py` reports for the cached catalogue's holder string).
+
+## Census diff: who already holds each record (24 Sept 2026)
+
+LANE N DECODE worker B. `tools/solver_repo_diff.py --census` (new mode, added this session; keeps the
+original QUEUE.md-row mode working unchanged) matches every row of `records-non-decrypted-2026-09-24.tsv`
+against: cipher-lab's own `ciphers/*/{NOTES.md,AUDIT.md}` plus `QUEUE.md`/`CATALOG.md` ("ours"), a fresh
+shallow clone of dbourdeau/cyphersolver's target folders ("bourdeau:<folder>"), and a fresh shallow clone
+of aaymeloglu/unsolved-ciphers's target folders/TARGETS.md/SHORTLIST.md/CATALOGUE.md/ranked files
+("aymeloglu:<path>"), falling through to "none". Matching is by DECODE id (`R<id>`) and by a normalised
+shelfmark "volume key" (`tools/decode_neighbours_exclude.py`'s `ids_in`/`volume_keys`, the same matcher
+validated on the 23 Sept 2026 neighbour-record sweep — refactored this session into importable functions,
+behaviour unchanged, checked against the existing `2026-09-23-decode-neighbours-annotated.tsv` as a
+regression fixture).
+
+Output: `records-non-decrypted-2026-09-24-diff.tsv` (1186 rows + header), columns `ours_hit`,
+`bourdeau_hit`, `aymeloglu_hit`, `held_by`. Counts: **ours 596, bourdeau 510, aymeloglu 9, none 71**.
+
+**Read the high "ours"/"bourdeau" counts as real, not noise, checked by sampling**: `QUEUE.md` alone is a
+2,568-line scouting survey that already covers wide swaths of DECODE's Spanish holdings (the RAH Signatura
+9.x and AGS Estado series especially), and Bourdeau has worked the AGS Estado series hard (`mai1531`,
+`muxetula1531`, `vargas1552`, `caracciolo1537`, `cifuentes1534`, ...) — spot-checked several `ours:queue`
+and `bourdeau:<folder>` rows against the actual QUEUE.md/NOTES.md text they cite and all held up. As with
+the neighbour-sweep matcher this is derived from, **this is hits to check, not verdicts**: a volume key can
+match a passing mention (e.g. a sibling shelfmark cited only for context in another target's NOTES.md) as
+readily as an actual solve, so `held_by` should be read as "worth checking before treating as new ground",
+not as a solved/unsolved verdict on its own. The 71 `none` rows are the input to step 3's ranking.
