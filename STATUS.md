@@ -158,6 +158,37 @@ every briefed job has a result.
   same page had agreed 4.7%.
 - Control first again settled a cryptanalysis question in five minutes (I, $2.10).
 
+## LANE N3 handoff (session_01QimvzgvoH4ALachGScXUC9), 24 September 2026, 16:36 UTC
+
+Lane: copy-free nominations, successor to LANE N2 (14:16). Ran 14:46-16:36 UTC under the seven-day `allowed_warning` (owner's decision
+14:50; never `rejected`). Own usage about $11.5 of $35; 8 Sonnet workers $25.59, every one ledgered and archived. Briefs:
+`.claude/briefs/runs/2026-09-24-lane-n3-*.md`, shared rules `2026-09-24-lane-n3-COMMON.md` (N2 COMMON plus an edition rule, below). Nothing is running.
+
+**Firm stage-2 nominations: 4, all copy-free (Gallica IIIF), per hour:** 14:46-15:46: 1 **fr3993-villeroy-1595** (CS2-26, Nevers to Villeroy
+16 Aug 1595, 753-sign mixed nomenclator, cryptanalysis; the edition check rests on Bourdeau's named full-text search of Gomberville t.2, not re-run by us).
+15:46-16:36: 3 **fr3022-garbino-1528** (CS2-01, cryptanalysis; CSP Spain III.2 and Lanz v.1 read; Sanudo Diarii v.47 OCR unusable, a gap),
+**fr3151-seure-1558** (CS2-02, cryptanalysis; Ribier both tomes and Francisque-Michel read), **fr3789-mariedemedicis-savary-1610** (CS2-05, recovery:
+key BnF fr.3642 per Lasry 2021/DECODE R2077, only a partial photo tried; Lasry's break covers sibling fr.3541, not this letter).
+**Blocked (edition unreadable, volume named):** fr3625-lauriere-1593 and fr3621-dinteville-1592 (Gomberville 1665 on Gallica only as images; Xivrey t.3
+and Perot 1911 read, negative; CS2-16 signer probably the baron, not the bishop, and sibling fr.3623 5/13 July 1592 is a lead), fr3198-labbe-1577
+(Nuntiaturberichte III/IX, Koller 2003, not online), fr3984-sega-1593 (Acta Nuntiaturae Gallicae; **fr.3985 no.7 is a probable found-solved**, Goujet 1758
+Mémoires de la Ligue v.5 pp.411-414, leaf check pending). **Copy-order:** CS2-17 fr3975-vieuville-1587 (B/W microfilm) and the 22 DECODE-thumbnail CS2 rows.
+**Closed-negative:** TR-1 trew-schellhammer-1653 (key-only leaf; a key source for the Volckamer circle).
+
+**Sources closed this lane (do not repeat):** cyphersolver site (writeups/catalogue/keys re-diffed 24 Sept; 32 CS2 rows, keys index at
+sources/solver-diffs/2026-09-24-cyphersolver-keys.tsv, 81 published keys); Trew Briefsammlung (all cipher terms, wildcards; BV1 + TR-1 only); Bavarikon
+(round 2, Handschrift/Urkunde/Archivgut x institutions: 0 rows; the whole host is now a tested negative for archive-held cipher).
+**Next, if the lane reopens after 26 Sept 13:00:** (1) a Gallica page-reader for Gomberville 1665 t.1-2 (images only: read the pages for July 1592 and
+July 1593 by eye or OCR) unblocks CS2-06 and CS2-16; (2) a verifier/image check of fr.3985 no.7 against Goujet v.5 pp.411-414; (3) CS2-05 is the best
+recovery pick: fetch fr.3642 at full size from Gallica and apply it; (4) the 22 copy-order CS2 rows could turn copy-free only through DECODE full images
+(ASKS 42) or the holding archives' own viewers (Saxony R5005-08, BayHStA ÄA 4591 R9319/R9424 are the likeliest); (5) the keys TSV against unread
+Gallica siblings for the recovery lane.
+**Lessons (written into lane-n3-COMMON.md where they are rules):** (1) check-solved workers call 'open' with the edition "not located this pass"
+(csCS2a, third time today); the rule now says the nomination line needs the volume and pages read in NOTES section 2, and an edition-check worker
+($3-4) after check-solved is the cheap fix. (2) Workers misuse status words (csED2 wrote `partial` for "partly printed"): the orchestrator corrects
+line 1. (3) Workers under-report their own cost (scBAV2 ~$1.5 vs $3.94): read get_session. (4) Scouts on already-digitised collections are cheap
+($2.6-4.3) but yield is thin once a collection is swept; the solver's own catalogue ("attempted, open") was this lane's best source.
+
 ## LANE N2 handoff (session_01DfQyAaXAgcoFZMAbBTGj4f), 24 September 2026, 14:16 UTC
 
 Lane: nominations, successor to LANE N (09:53-14:16 UTC). Stopped on the **seven-day** rate-limit `allowed_warning` (first seen 13:50,

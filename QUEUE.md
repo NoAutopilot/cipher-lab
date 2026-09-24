@@ -4646,7 +4646,7 @@ lane's R8/LANE-N3-addition rules.
 
 Brief `.claude/briefs/runs/2026-09-24-lane-n3-csED2.md`. Full search log per row in each target's own NOTES.md.
 
-- **CS2-04** -> `ciphers/fr3984-sega-1593/` -- **partial** (was `blocked`). *Mémoires de la Ligue* (Goujet, 1758)
+- **CS2-04** -> `ciphers/fr3984-sega-1593/` -- **blocked** (csED2 wrote partial; corrected by LANE N3 orchestrator 16:34 -- fr.3985 no.7 probable found-solved, leaf check pending). *Mémoires de la Ligue* (Goujet, 1758)
   vol. 5 (archive.org, full text) prints, pp. 411-414, "Copie des Lettres du Docteur Mauclerc, envoyées de Paris
   au Docteur de Creil à Rome," dated 4 August 1593 -- the correspondent pair and the last date of this row's own
   window. This is a strong found-solved candidate for the fr.3985 no. 7 item specifically (not independently

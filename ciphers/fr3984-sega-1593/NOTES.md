@@ -1,4 +1,6 @@
-partial
+blocked
+
+**LANE N3 orchestrator, 24 Sept 2026 16:34 UTC:** status corrected from `partial` (csED2) to `blocked`: `partial` in this repo means a partial reading, and nothing here is read. The four fr.3984 items stay blocked on Acta Nuntiaturae Gallicae (Sega legation, not reachable). fr.3985 no.7 is a probable `found-solved`: Mémoires de la Ligue (Goujet 1758) vol.5 pp.411-414 prints a Mauclerc-to-Creil letter of 4 Aug 1593 matching its correspondents and date; confirm against the Gallica leaf (a verifier or image check, not a solver) before splitting it off.
 
 **Edition check (LANE N3 csED2, 24 Sept 2026 16:17 UTC):** fr.3985 no. 7 (Mauclerc to Creil) has a strong print
 match -- see section below, "possible found-solved: fr.3985 no. 7." The four fr.3984 items (Baudouin-Desportes)
