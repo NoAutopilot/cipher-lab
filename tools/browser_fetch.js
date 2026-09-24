@@ -18,15 +18,23 @@ const opt = (k, d) => { const i = args.indexOf(k); return i > -1 ? args[i + 1] :
 const has = (k) => args.includes(k);
 
 (async () => {
-  const browser = await chromium.launch({
-    executablePath: process.env.CHROMIUM_PATH || '/opt/pw-browsers/chromium',
-    args: ['--no-sandbox', '--disable-gpu'],
-  });
-  const ctx = await browser.newContext({
+  // --profile DIR keeps cookies and logins between runs (the owner's local runner, tools/local_runner_brief.md);
+  // --headed shows the window so a login or a click can be done by hand. Without --profile nothing changes.
+  const exe = process.env.CHROMIUM_PATH || (fs.existsSync('/opt/pw-browsers/chromium') ? '/opt/pw-browsers/chromium' : undefined);
+  const ctxOpts = {
     userAgent: opt('--ua', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36'),
     viewport: { width: 1280, height: 1800 },
     locale: 'en-GB',
-  });
+  };
+  const profile = opt('--profile', null);
+  let browser, ctx;
+  if (profile) {
+    ctx = await chromium.launchPersistentContext(profile, { executablePath: exe, headless: !has('--headed'), args: ['--disable-gpu'], ...ctxOpts });
+    browser = ctx;
+  } else {
+    browser = await chromium.launch({ executablePath: exe, headless: !has('--headed'), args: ['--no-sandbox', '--disable-gpu'] });
+    ctx = await browser.newContext(ctxOpts);
+  }
   const page = await ctx.newPage();
   try {
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
