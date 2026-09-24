@@ -1,0 +1,69 @@
+{
+ "item": "Beinecke GEN MSS 146, Rochambeau Papers, Box 2 folder 137: La Luzerne to Rochambeau, Philadelphia, 8 Jan 1781 (OID 16490985)",
+ "manifest": "https://collections.library.yale.edu/manifests/16490985",
+ "fetched": "2026-09-24",
+ "route": "IIIF manifest + image API with curl, descriptive UA (the catalog HTML page answers 202/challenge)",
+ "notes": "c1-c7 letter (code on c6 right half of left page .. c7 left page), c8-c9 separate decode sheet; 1800 px wide derivatives, native ~5000 px re-fetchable",
+ "files": [
+  {
+   "file": "c1_16567220.jpg",
+   "url": "https://collections.library.yale.edu/iiif/2/16567220/full/1800,/0/default.jpg",
+   "bytes": 284730,
+   "sha1": "6940b4871a96ed02d8f449047a8162f5d7fdf4c0"
+  },
+  {
+   "file": "c2_16567221.jpg",
+   "url": "https://collections.library.yale.edu/iiif/2/16567221/full/1800,/0/default.jpg",
+   "bytes": 1004765,
+   "sha1": "367b41e82e427ade31965302b54ef7e66413afcc"
+  },
+  {
+   "file": "c3_16567222.jpg",
+   "url": "https://collections.library.yale.edu/iiif/2/16567222/full/1800,/0/default.jpg",
+   "bytes": 599184,
+   "sha1": "918df36cfa9cf5026c2dce421e5c41f09703afbb"
+  },
+  {
+   "file": "c4_16567223.jpg",
+   "url": "https://collections.library.yale.edu/iiif/2/16567223/full/1800,/0/default.jpg",
+   "bytes": 601237,
+   "sha1": "54566765a229cc23385b7d0bb440cb7ca1256167"
+  },
+  {
+   "file": "c5_16567224.jpg",
+   "url": "https://collections.library.yale.edu/iiif/2/16567224/full/1800,/0/default.jpg",
+   "bytes": 606837,
+   "sha1": "31a326797dc5d461e298ad6c5c5ddde2446c5dce"
+  },
+  {
+   "file": "c6_16567225.jpg",
+   "url": "https://collections.library.yale.edu/iiif/2/16567225/full/1800,/0/default.jpg",
+   "bytes": 530330,
+   "sha1": "b755974407b1177711a907cb18cc6968ebe2dde5"
+  },
+  {
+   "file": "c6_crop_line10.jpg",
+   "url": "https://collections.library.yale.edu/iiif/2/16567225/4200,2830,900,260/full/0/default.jpg",
+   "bytes": 38192,
+   "sha1": "554ba109b34e427b14b18bed9c3403ecb5350f4a"
+  },
+  {
+   "file": "c7_16567226.jpg",
+   "url": "https://collections.library.yale.edu/iiif/2/16567226/full/1800,/0/default.jpg",
+   "bytes": 505052,
+   "sha1": "201266be9722f133959662bce669a31d25656476"
+  },
+  {
+   "file": "c8_16567227.jpg",
+   "url": "https://collections.library.yale.edu/iiif/2/16567227/full/1800,/0/default.jpg",
+   "bytes": 522880,
+   "sha1": "e12cac43e132b57b4ecea1805c359c795e04883a"
+  },
+  {
+   "file": "c9_16567228.jpg",
+   "url": "https://collections.library.yale.edu/iiif/2/16567228/full/1800,/0/default.jpg",
+   "bytes": 469191,
+   "sha1": "901a16be8aa37f9f863b93d235b293a5e296586a"
+  }
+ ]
+}

@@ -26,7 +26,7 @@ idx	line	figure	mark	unit	grade
 24	3	959		on	C
 25	3	1173		dan(s)	C
 26	3	874		le	C
-27	3	992		tes(te)	M
+27	3	992		res	M
 28	3	739		te	M
 29	3	32		de la	C
 30	4	736		armee	C
@@ -95,15 +95,15 @@ idx	line	figure	mark	unit	grade
 93	10	532		[stop]	M
 94	10	161		je	C
 95	10	185		l'	M
-96	10	881		assure	M
+96	10	881		assurai	M
 97	10	179		promptement	M
 98	10	177		du	C
-99	10	199		zele	M
+99	10	199		zele	C
 100	10	797		avec	C
 101	10	874		le	C
 102	10	642		quel	C
 103	10	828		votre	C
-104	11	736		armee	I
+104	11	736		armee	C
 105	11	1062		con	M
 106	11	4		cou	M
 107	11	957		roit	M
@@ -130,7 +130,7 @@ idx	line	figure	mark	unit	grade
 128	13	613	〇	devoit	C
 129	13	1199		etre	C
 130	13	1123		laisse	C
-131	13	1010		avec	C
+131	13	1010		aux	C
 132	13	45		general	C
 133	13	482		Washington	C
 134	13	50		a	M
@@ -154,7 +154,7 @@ idx	line	figure	mark	unit	grade
 152	15	999		sorte	C
 153	15	953		cette	C
 154	15	328		demarche	C
-155	15	470		parceque	C
+155	15	1170		parceque	C
 156	16	711	★	si	C
 157	16	1022		l'	C
 158	16	736		armee	C

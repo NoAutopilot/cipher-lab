@@ -4,7 +4,7 @@
 Source: Tomokiyo, Cryptiana blog, 23 Sept 2021 (sources/cryptiana/blog/2021_09_decoded-but-not-identified-code-of.html),
 Beinecke Rochambeau Papers item 4528532. alignment_yale_8jan1781.tsv holds one row per code group
 (figures re-extracted from the snapshot and checked here) with the plaintext unit it was aligned to and a grade:
-C aligned from the printed decoded text, M alignment uncertain, I repaired against the printed text, U unaligned.
+C aligned from the decoded text (Tomokiyo's print checked against the contemporary decode sheet, images/yale/c8-c9), M alignment uncertain, I repaired against the printed text, U unaligned.
 
   python3 build_key_tomokiyo.py          # rewrite key_tomokiyo.tsv, print counts and the ordering test
   python3 build_key_tomokiyo.py --check  # exit 1 if the figures differ from the snapshot or the key is stale
@@ -15,7 +15,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SNAP = os.path.join(HERE, '..', '..', 'sources', 'cryptiana', 'blog', '2021_09_decoded-but-not-identified-code-of.html')
 ALIGN = os.path.join(HERE, 'alignment_yale_8jan1781.tsv')
 KEY = os.path.join(HERE, 'key_tomokiyo.tsv')
-SRC = 'Tomokiyo 2021 (Cryptiana blog), Beinecke 4528532, 8 Jan 1781'
+SRC = 'Tomokiyo 2021 (Cryptiana blog) + Beinecke GEN MSS 146 box 2 f.137 (OID 16490985) images, 8 Jan 1781'
+# Figures read differently on the page image (images/yale/, 24 Sept 2026): idx -> (Tomokiyo, image)
+IMAGE_CORRECTIONS = {155: ('470', '1170')}
 
 
 def snapshot_figures():
@@ -27,6 +29,9 @@ def snapshot_figures():
 def build():
     rows = [l.rstrip('\n').split('\t') for l in open(ALIGN, encoding='utf-8')][1:]
     figs = snapshot_figures()
+    for i, (old, new) in IMAGE_CORRECTIONS.items():
+        assert figs[i] == old, (i, figs[i])
+        figs[i] = new
     if [r[2] for r in rows] != figs:
         sys.exit('alignment figures differ from the Tomokiyo snapshot')
     by = collections.OrderedDict()
