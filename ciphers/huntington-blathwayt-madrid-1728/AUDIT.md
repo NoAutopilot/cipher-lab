@@ -393,3 +393,34 @@ statuses the cache holds; a Non-decrypted list cannot show a prior decipherment.
 
 catalog.hathitrust.org 2 (Bibliographic API); data.htrc.illinois.edu 6 (3 metadata, 3 page files, 2 s apart,
 sequential); WebSearch 2; www.huntington.org 0; de-crypt.org 0; Google Books 0; gallica 0.
+
+### DECODE Decrypted search (LANE N2), 24 September 2026
+
+For LANE W (ROOM 09:51, worker K): the DECODE gap named in section 5 above ("the earlier audits recorded
+DECODE as covered from lists that cannot contain a Decrypted record") is now closed. `tools/decode_list.py
+--status decrypted --record-type cipher` (no login; the RecordsList grid is public for any status per
+`sources/decode/NOTES.md`) fetched the full Decrypted-cipher catalogue: **1360 records**, 28 requests, 1.6s
+apart, written to `sources/decode/records-decrypted-2026-09-24.tsv`. Case-insensitive grep of `holder_raw`,
+`city`, `shelfmark_code` against each name/place:
+
+| Query | Hits |
+|---|---|
+| Huntington | 0 |
+| Blathwayt | 0 |
+| Marchmont | 0 |
+| Ripperda | 0 |
+| Keene | 0 |
+| Pati\[nñ\]o (Patiño/Patino) | 0 |
+| Madrid | 59 (none dated 1725-1732; date ranges cluster 1424-1626, none in 1728-29) |
+| Sevill(e/a) | 0 |
+| Port(e)? Sainte.Marie | 0 |
+| Puerto de Santa Mar(ía/ia) | 0 |
+
+No DECODE Decrypted record matches Huntington, Blathwayt, Marchmont, Ripperda, Keene, Patiño, or Madrid/
+Seville/Port Sainte-Marie/Puerto de Santa María for 1728-29. This does not change any N-class above (no
+prior decipherment of BLA 186, BLA 191(a) or BLA 184 found on DECODE); it closes the one still-open search
+family named in section 5. Note per rule 10: absence from DECODE's Decrypted list is a search result, not a
+novelty verdict -- the N4 sentences in section 4 stand as written. No N-class in this file is changed by this
+subsection (append-only per LANE N2 brief).
+
+Requests this subsection: de-crypt.org 28 (decode_list.py, no login). Cost: well under $5 cap for this step.
