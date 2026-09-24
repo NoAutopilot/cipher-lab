@@ -399,12 +399,12 @@ line	pos	code	marks	action	conf	note
 16	6	g	5	confirm	H	
 16	7	phi	1	confirm	H	
 16	8	e		confirm	H	
-16	9	psi		confirm	H	
-16	10	g		confirm	H	
+16	9	psi		confirm	M	
+16	10	g		confirm	M	
 16	11	H	o|1	confirm	H	
 16	12	]		confirm	H	
-16	13	nt		confirm	H	
-16	14	g		confirm	H	
+16	13	nt		confirm	M	o with crossed stroke, kept classifier nt
+16	14	g		confirm	M	
 16	15	S		confirm	H	
 16	16	rz		confirm	H	
 16	17	g	5	confirm	H	
@@ -414,7 +414,7 @@ line	pos	code	marks	action	conf	note
 16	21	tee		confirm	H	
 16	22	lam	5	confirm	H	
 16	23	o.		confirm	H	
-16	24	y		confirm	H	
+16	24	y		confirm	M	
 16	25	S7		confirm	H	
 16	26	y		confirm	H	
 16	27	_		plain	H	
@@ -422,53 +422,53 @@ line	pos	code	marks	action	conf	note
 16	29	Z		confirm	H	
 16	30	S4		confirm	H	
 16	31	dl		confirm	H	
-16	32	+		confirm	H	
-17	1	S		confirm	H	
-17	2	N	#	confirm	H	
+16	32	+		confirm	M	
+17	1	_		correct	M	'.S.' with dots, plausibly 'V.S.' (Vostra Signoria) abbreviation, plain not sign
+17	2	_		correct	L	unclear abbreviation-like shape with superscript t, not N zigzag
 17	3	_	1|1	plain	H	
 17	4	_		plain	H	
-17	5	g		confirm	H	
+17	5	g		confirm	M	simple diagonal stroke, kept classifier g, low share
 17	6	_		plain	H	
-17	7	S	dot	confirm	H	
+17	7	_		correct	M	plain cursive letters, part of a legible word, not sign S
 17	8	_		plain	H	
 17	9	y		confirm	H	
 17	10	e		confirm	H	
-17	11	_		plain	H	
+17	11	_		plain	M	
 17	12	_		plain	H	
-17	13	ch		confirm	H	
+17	13	ch		confirm	M	
 17	14	_	dot	plain	H	
 17	15	_		plain	H	
 17	16	_	1|1	plain	H	
-17	17	#		confirm	H	
-17	18	m		confirm	H	
-17	19	_		plain	H	
-17	20	_		plain	H	
-17	21	w		confirm	H	
+17	17	#		confirm	M	
+17	18	_		correct	H	plain 'int', part of 'intenderi'
+17	19	_		plain	M	
+17	20	_		plain	M	low share, kept classifier plain call
+17	21	_		correct	M	plain letters, likely continuing 'intenderi', cut at line edge
 18	1	y		confirm	H	
 18	2	p		confirm	H	
 18	3	_		plain	H	
-18	4	#		confirm	H	
-18	5	y		confirm	H	
-18	6	S		confirm	H	
-18	7	_		plain	H	
-18	8	L		confirm	H	
-18	9	N		confirm	H	
-18	10	Lx		confirm	H	
-18	11	_		plain	H	
-18	12	_		plain	H	
+18	4	#		confirm	L	
+18	5	y		confirm	M	
+18	6	_		correct	M	'.S' with dot, plausibly 'V.S.' abbreviation again, plain not sign
+18	7	_		plain	M	
+18	8	_		correct	M	plausibly plain capital 'L' starting the word 'La', paired with pos9 'a'; L sign and plain L are visually identical by atlas design
+18	9	_		correct	M	plain 'a' completing 'La'
+18	10	Lx		confirm	M	
+18	11	_		plain	L	tr-like plain letters, kept classifier plain call
+18	12	_		plain	M	
 18	13	S	7	confirm	H	
 18	14	_	~	plain	H	
-18	15	H		confirm	H	
+18	15	H		confirm	L	unclear so/fs-like shape, kept classifier H at low share
 18	16	_		plain	H	
-18	17	_		plain	H	
-18	18	N		confirm	H	
+18	17	_		plain	L	man/wan-like cursive, kept classifier plain call, low share
+18	18	N		confirm	H	repeated-hump zigzag, could be N sign or plain un/m; kept classifier N
 18	19	_		plain	H	
 18	20	_		plain	H	
 18	21	S4		confirm	H	
 18	22	dl		confirm	H	
 18	23	H	1|o	confirm	H	
 18	24	]	o	confirm	H	
-18	25	_		plain	H	
+18	25	_		plain	M	
 19	1	eps	7	confirm	H	
 19	2	Z		confirm	H	
 19	3	psi		confirm	H	
@@ -486,9 +486,9 @@ line	pos	code	marks	action	conf	note
 19	15	eps	1	confirm	H	
 19	16	w		confirm	H	
 19	17	e	dot	confirm	H	
-19	18	Z		confirm	H	
+19	18	Z		confirm	L	
 19	19	]		confirm	H	
-19	20	nt		confirm	H	
+19	20	nt		confirm	M	
 19	21	S4		confirm	H	
 19	22	_		plain	H	
 19	23	eps		confirm	H	
