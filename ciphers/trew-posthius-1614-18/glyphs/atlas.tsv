@@ -1,0 +1,10 @@
+code	desc	page	bbox_x0	bbox_y0	bbox_x1	bbox_y1	note
+G1	hook-with-small-loop, hangs below the diagonal strike, 1st position after plaintext "b"	1618_left_L01.jpg	800	100	940	240	manual eyeball segmentation (see NOTES.md); overlaps the diagonal strike-through line
+G2	hook-with-small-loop, 2nd position, similar general form to G1 but a shorter tail	1618_left_L01.jpg	920	105	1050	240	manual segmentation; distinctness from G1 not confirmed, could be the same intended sign in a hastier stroke
+G3	larger paddle/blob shape with a closed loop tail, 3rd position	1618_left_L01.jpg	1040	95	1160	260	manual segmentation
+G4	hook with a figure-8-like double loop, 4th position	1618_left_L01.jpg	1140	95	1260	240	manual segmentation
+G5	small hook, 5th position, with a separate apostrophe-like mark just above/right of it	1618_left_L01.jpg	1245	90	1360	210	manual segmentation; the apostrophe mark may be an attribute mark on G5 (cf. the similar mark after "bi" in the right-hand key block's "Conradbefgbi") rather than part of the base sign
+G6	tall stroke crossed by a short horizontal, row 2 1st position (after plaintext "klmp")	1618_left_L01.jpg	715	230	800	340	manual segmentation
+G7	two short parallel downstrokes ("h"-like), row 2 2nd position	1618_left_L01.jpg	815	230	900	340	manual segmentation
+G8	hook with a short tail, row 2 3rd position (after the plain letter "w")	1618_left_L01.jpg	1030	255	1115	340	manual segmentation
+G9	faint short curl/comma, row 2 4th position, at the right edge of the row	1618_left_L01.jpg	1115	290	1180	340	manual segmentation; very faint -- may be a stray pen mark or damage rather than a cipher sign, flagged uncertain
