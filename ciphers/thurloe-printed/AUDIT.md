@@ -364,7 +364,7 @@ says col. Kelsey), and Tomokiyo's key image as a possible prior decipherment. Fo
 ## Second audit (adversarial), P4, 24 Sept 2026
 
 LANE W worker B (Opus). This is the verifier hat and a separate session: I neither solved P4 nor ran V2, and I defend
-neither. Started 06:14 UTC, written 06:27-06:40 UTC. **Claim under audit:** V2's class N3 for P4 (Stamford, Calais,
+neither. Started 06:14 UTC, written 06:27-06:29 UTC. **Claim under audit:** V2's class N3 for P4 (Stamford, Calais,
 13 March 1655 N.S., Birch 1742 vol. 3 pp.187-189): "no prior plaintext or decipherment located". Brief: try to find P4's
 plaintext or a decipherment in print or online. I did not decode.
 
