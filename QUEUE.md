@@ -1740,3 +1740,104 @@ session/environment issue a later worker or the orchestrator could resolve by ad
 which would very likely unblock `pares.cultura.gob.es` for curl even without the browser tool; (3) BDH's
 challenge may be solvable the way RAH's Anubis challenge was solved by a browser click-through elsewhere in
 QUEUE.md's 24 Sept LANE S section -- not attempted here to stay within the one-retry-per-host rule and the $8 cap.
+
+## United States archives (LANE N scout of 24 September 2026)
+
+LANE N brief: 1600-1900 letters in cipher or code with **no decipherment beside them** (Revolutionary
+War/Continental Congress/early-republic diplomats, Confederate and Union cipher telegrams, colonial governors,
+fur trade), preferring items with a public image, excluding the Eckert 1864 telegrams and anything Tomokiyo or
+the solver repos read. Hosts named in the brief: `loc.gov` JSON API, NARA catalog API (`catalog.archives.gov`),
+`founders.archives.gov`, and up to two state historical societies with an open CONTENTdm/ArchivesSpace GET
+search.
+
+**Egress test (`curl -sS -o /dev/null -w "%{http_code}"`).** `www.loc.gov/search/?fo=json` 200; `catalog.
+archives.gov/api/v2/records/search` 200 (but serves the front-end app shell, not JSON, without an API key --
+see below); `founders.archives.gov/API/core/search/Founders` 202 with an empty body; `www.masshist.org` 200;
+`www.vahistorical.org` connection reset (`000`); `digitalcollections.hsp.org` `CONNECT tunnel failed` (`000`).
+The last two were dropped at the egress test per the brief's own instruction ("000 means the egress policy
+blocks it... say so and stop").
+
+**founders.archives.gov is behind an AWS WAF challenge to plain `curl`** (`x-amzn-waf-action: challenge` on
+every response, empty body, HTTP 202), confirmed on both the documented-looking `/API/core/search/Founders`
+endpoint and the `/search`/`/?q=` faceted-browse UI -- the latter renders (via `tools/browser_fetch.js`) but
+only as facet/counts (Author, Recipient, Period), never an actual document-result list a script can read; the
+underlying result list appears to be populated by a further in-page AJAX call this pass did not reverse-engineer.
+Individual document pages (`/documents/<Project>/<id>`) do render in full via `tools/browser_fetch.js` once the
+URL is known. Given this, and the brief's specific ask (search editorial notes for "in cipher", "not
+deciphered", "undeciphered", "code not found"), the practical route this pass used was `WebSearch
+site:founders.archives.gov "<phrase>"` to locate candidate document URLs, each then read in full with
+`tools/browser_fetch.js` + `tools/html2text.py` (7 document-page fetches, all successful; 1.5s+ apart, single
+fetcher).
+
+**Control (required by the brief before trusting a zero count).** This method demonstrably surfaces genuine
+editor-written "not deciphered"/"undecypherable" annotations, not just noise: five such letters were found and
+read in full --
+[Robert R. Livingston to John Jay, 20 Oct. 1781](https://founders.archives.gov/documents/Jay/01-02-02-0254),
+[same, 28 Nov. 1781](https://founders.archives.gov/documents/Jay/01-02-02-0272) and
+[1 Nov. 1781](https://founders.archives.gov/documents/Jay/01-02-02-0258),
+[Robert R. Livingston to John Adams, 20 Nov. 1781](https://founders.archives.gov/documents/Adams/06-12-02-0044),
+and James Madison's "Buried Cipher" letter to Jefferson, 22 Apr. 1783 -- so **founders.archives.gov's
+zero-candidates result below is a verified negative**, not an unswept query form. `catalog.archives.gov` and the
+one historical society reached have no equivalent control (no already-known cipher item on either host to test
+the query form against) and are logged as **query form unverified**, not "no candidates", per the brief.
+
+**Result: 0 open candidates kept of 13 raw items examined in depth (0 copy-free, since none is open).** Every
+genuine "not deciphered"/"undecypherable" editorial note found in the Founders Online corpus (Jay, Adams,
+Jefferson and Madison Papers) turned out **found-solved**: the modern documentary-editing projects behind
+Founders Online had already recovered the plaintext decades ago from a surviving sender's draft, letterbook
+copy or duplicate held elsewhere, even in every case where the historical recipient never deciphered their own
+copy at the time. This is the same "sibling with a decipherment" pattern LESSONS.md describes (recovery by
+alignment) -- except it was already executed, and published, by professional editors:
+
+| Letter | Cipher | Contemporary status | Modern resolution |
+|---|---|---|---|
+| Livingston to Jay, 20 Oct. 1781 | Thomson's nomenclator (the copy sent via consul Palfrey, lost at sea) | ALS "partly in code, not decoded... illegible to JJ"; endorsed "not decd." | Editors supplied the decoded passage from Livingston's own surviving draft (NHi) |
+| Livingston to Jay, 28 Nov. 1781 | same lost Palfrey code | ALS "partly in code, not decoded"; coded passages omitted from the 1890s Johnston and Wharton printed editions | "Decoding based on Dft, with additional decoding by the editors" |
+| Livingston to Jay, 1 Nov. 1781 | YESCA cipher (Weber WE033) | triplicate LS and letterbook copies "partly in code, not decoded" | Decoded from the sibling LS copy that was deciphered on receipt; full text printed |
+| Livingston to Adams, 20 Nov. 1781 | Lovell cipher, 8 passages | JA's own interlineations show he deciphered only 4 of 8 (enciphering errors defeated the rest) | Editors supplied the whole enciphered paragraph's text from Livingston's surviving draft (NHi) |
+| Madison to Jefferson, 22 Apr. 1783 ("Buried Cipher") | Jefferson-Madison code, heavily cancelled by Madison, marked "Undecypherable" | unread at the time | Irving Brant (20th-c. Madison biographer) was first to penetrate the cancellation and decode it |
+
+Also examined and excluded, outside Founders Online: the **Confederate "Vicksburg cipher" telegrams** among
+Gov. John J. Pettus's papers at the Mississippi Department of Archives and History (Jefferson Davis and Gen.
+Pemberton to Pettus, 1863, Vigenère keyed "Manchester Bluff") -- found-solved, already deciphered and published
+by the CWRGM (Civil War & Reconstruction Governors of Mississippi) digital edition project; the **Huntington
+"Decoding the Civil War" Union telegram ledgers** -- the same corpus as this repo's own `ciphers/eckert-1862`
+and `ciphers/eckert-1864` targets, excluded per the brief; and **Thomas Hutchinson's** (colonial Governor of
+Massachusetts) private letterbook cipher (Mass. Archives, SC1/series 45X, vols. 26-27) -- found-solved, decoded
+by Malcolm Freiberg using Hutchinson's own key (which Hutchinson himself recorded in vol. 27), published with
+footnotes in the Colonial Society of Massachusetts's edition of his correspondence. Full detail and citations
+for every row: `sources/solver-diffs/2026-09-24-lane-n-us.tsv`.
+
+**NARA (`catalog.archives.gov`), query form unverified.** The API v2 requires an `x-api-key` (confirmed from
+NARA's own `usnationalarchives/Catalog-API` GitHub README: a key must be requested by emailing
+Catalog_API@nara.gov, no self-service or keyless read access), which this environment does not hold. Per the
+brief, the public catalog search page was tried once with the browser tool instead:
+`catalog.archives.gov/search?q=cipher%20telegram` returns 15,493 hits, but the visible results are dominated by
+unrelated full-text OCR noise across huge digitized series (a spot-checked hit: "Records Related to Radium Dial
+Painters") rather than item-level cipher correspondence -- not tractable to narrow to genuine candidates within
+this lane's $8 cap and no subagent budget for it. Flagged for a future pass with either an API key or a
+subagent budget to page and filter the item list, not scored as "no candidates".
+
+**State historical societies, one tried, two blocked at egress.** `www.masshist.org` answers 200 at the root,
+but its actual library catalog is `balthazaar.masshist.org`, a legacy III/Innovative ILS with no documented GET
+search API (not CONTENTdm or ArchivesSpace as the brief anticipated) -- no query built this pass, logged as
+unverified rather than swept. `www.vahistorical.org` (Virginia Museum of History & Culture) and
+`digitalcollections.hsp.org` (Historical Society of Pennsylvania) both failed the initial egress test (`000`)
+and were dropped without further attempts, per the brief's own instruction.
+
+**Blocked host.** `blogs.loc.gov` -- one specific, on-topic post found by web search ("Copies of Copies:
+British-Intercepted Letters During the Revolutionary War", LOC Manuscript Division, Sept. 2025) could not be
+read: `curl` got HTTP 403, and the one `tools/browser_fetch.js` retry allowed by the good-citizen rule hit a
+Cloudflare challenge domain (`brunhild.challenges.cloudflare.com`) that this environment's egress proxy refuses
+to reach (`connect_rejected`, organization policy) -- logged, not retried further.
+
+Caveats: (1) this sweep found and closed leads, it did not sweep NARA, the historical societies or fur-trade
+archives (American Fur Company, Hudson's Bay Company) at item level -- a genuine gap remains there for a future
+pass with either a NARA API key or more budget; (2) nothing here has been check-solved in the formal sense
+(rule 1's six-source order) since every item resolved to found-solved or excluded well before that stage was
+needed; (3) no ciphertext was transcribed and no page image was opened beyond what the cited pages themselves
+show. Requests: `www.loc.gov` 2, `catalog.archives.gov` 2 (1 API test, 1 browser search page), `founders.
+archives.gov` 2 direct curl (WAF-challenged) + 7 via `tools/browser_fetch.js` (document pages), `www.masshist.
+org` 3, `www.vahistorical.org` 1 (blocked), `digitalcollections.hsp.org` 1 (blocked), `blogs.loc.gov` 2 (both
+blocked). WebSearch used as the practical substitute for founders.archives.gov's own search UI, per COMMON
+RULES. No Google Books, no Gallica, no DECODE, no subagents, no logins, no credentials.

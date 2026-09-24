@@ -6978,5 +6978,28 @@
    "bdh.bne.es (browser_fetch.js)": 1
   },
   "rows": []
+ },
+ "lane_n_us": {
+  "_about": "LANE N scout of 24 September 2026 (United States archives): 1600-1900 letters in cipher or code with no decipherment beside them (Revolutionary War/Continental Congress/early-republic diplomats, Confederate/Union telegrams, colonial governors, fur trade). Hosts reached: loc.gov JSON API (200), NARA catalog API v2 (requires an x-api-key not held in this environment, confirmed from NARA's own Catalog-API README; public catalog.archives.gov search page works via browser tool), founders.archives.gov (its own search UI and /API/core/search/Founders endpoint are behind an AWS WAF challenge to curl -- x-amzn-waf-action: challenge -- so individual document pages were read via tools/browser_fetch.js and the corpus was queried via WebSearch site:founders.archives.gov + phrase, per the brief's instruction to search for editorial notes such as 'not deciphered'/'undeciphered'). Massachusetts Historical Society reachable (200) but its real catalog is a legacy III/Innovative ILS (balthazaar.masshist.org), not CONTENTdm/ArchivesSpace, so no GET search built this pass. Virginia Museum of History & Culture and Historical Society of Pennsylvania both failed the egress test (000/connection reset) and were not pursued further. blogs.loc.gov (one promising specific post) is Cloudflare-challenged; blocked both via curl (403) and one browser_fetch.js attempt (egress proxy refused the Cloudflare challenge domain); logged, not retried. CONTROL: the WebSearch+browser_fetch.js method for founders.archives.gov demonstrably surfaces genuine editorial 'not decoded'/'undecypherable' annotations (5 concrete Jay/Adams/Madison-Jefferson letters found and read in full), so its zero-candidates result is a verified negative, not an unswept query form. NARA and the two historical societies have no equivalent control (no known-cipher item on those hosts to test the query against) and are logged as 'query form unverified', not 'no candidates', per the brief. Result: 13 raw items examined in depth, 0 kept as open candidates -- every genuine 'not deciphered'/'undecypherable' editorial note checked in the Founders Online corpus (Jay, Adams, Jefferson, Madison papers) turned out already found-solved by the modern documentary-editing projects themselves, which recovered the plaintext decades ago from a surviving sender's draft, letterbook copy or duplicate, even where the historical recipient never deciphered it; the Confederate Vicksburg-cipher telegrams (MDAH, Gov. Pettus papers) are found-solved via the CWRGM digital edition; the Thomas Hutchinson colonial-governor letterbook cipher is found-solved via Malcolm Freiberg's decoding with Hutchinson's own key; the Huntington 'Decoding the Civil War' Union telegram ledgers are the same corpus as this repo's own ciphers/eckert-1862 and eckert-1864 targets (excluded per brief). Raw hits and exclusion reasons: sources/solver-diffs/2026-09-24-lane-n-us.tsv. Never check-solved, never promoted, no ciphertext transcribed.",
+  "date": "24 September 2026",
+  "requests_per_host": {
+   "www.loc.gov": 2,
+   "catalog.archives.gov": 2,
+   "founders.archives.gov (curl, WAF-challenged)": 2,
+   "founders.archives.gov (browser_fetch.js document pages)": 7,
+   "www.masshist.org": 3,
+   "www.vahistorical.org": 1,
+   "digitalcollections.hsp.org": 1,
+   "blogs.loc.gov": 2
+  },
+  "controls": {
+   "founders_archives_gov": "PASS -- WebSearch site:founders.archives.gov phrase queries + browser_fetch.js document reads surfaced 5 genuine editor-written 'not deciphered'/'undecypherable' annotations (Jay 01-02-02-0254, 01-02-02-0258, 01-02-02-0272; Adams 06-12-02-0044; Madison Papers 22 Apr 1783 'Buried Cipher'), all read in full and all found-solved -- see TSV",
+   "catalog_archives_gov": "UNVERIFIED -- no API key; public search UI returns 15,493 hits for \"cipher telegram\" dominated by unrelated full-text OCR noise (spot-checked hit: Records Related to Radium Dial Painters), not narrowed to item level this pass; no known NARA cipher item available to confirm the query form itself",
+   "historical_societies": "UNVERIFIED -- masshist.org's real catalog (balthazaar.masshist.org, legacy ILS) not queried this pass; vahistorical.org and digitalcollections.hsp.org failed the egress test (000)"
+  },
+  "rows": [],
+  "raw_count": 13,
+  "kept_count": 0,
+  "copy_free_count": 0
  }
 }
