@@ -1138,3 +1138,83 @@ keyed, country=US, key never printed): 12, run through a copy of print_check wit
 (429). api.crossref.org: 8 (the last a 429). api.semanticscholar.org: 2 (429, 429). api.archives-ouvertes.fr: 6.
 www.persee.fr: 6. cryptiana.web.fc2.com: 2. github.com: 2 shallow clones (deleted after). gallica.bnf.fr: 0. No logins,
 no credentials printed, no decoding, no subagents.
+
+## Camusat tract, dense read (24 Sept 2026)
+
+LANE G access worker, for LANE V (picking up the flag left in "Print check through Gallica page images": "the next
+worker on it should read the 'Lettres du Roy François premier' tract's folios 1-90 first ... rather than resampling
+at wide intervals"). Not a verifier session: does not move the N3 class, does not decode. Job: read folios 1-90 of
+the tract densely and compare against `reading.txt`'s and `reading_f30*.txt`'s decoded phrases and against the
+target items' particulars (Gramont, cipher letters to Villandry, Rome, 20 May 1530).
+
+**Method.** `tools/gallica_folio.py`'s prior calibration (canvas = 155 + 2×(folio−1) for folio N's recto on this
+ark) was reused. Fetched the recto side of every folio 1-90 (90 canvases, `,1000`-width thumbnails; this printed
+book's type is clean enough at that width to read letter headings, dates and body text directly, unlike a
+manuscript hand) via a plain loop, one request at a time, ≥1.6 s apart, UA `cipher-lab research script (contact via
+repository)`. 9 of the 90 hit a connection reset (HTTP code `000`); all 9 were retried once per the single-retry
+rule and all 9 succeeded on retry — **0 unrecovered failures, 90/90 folio rectos read.** One further full-resolution
+fetch (canvas 279, folio 63) was made to check a tentative "1530" date misread off the low-res thumbnail; the
+full-resolution image corrected this to no year visible on that specific line, adjacent text dating the item to
+~Sept/Oct 1531 (Louise of Savoy's death) — logged as a caught misreading, not reported as a finding.
+
+**Verso sides (folio v) were not fetched.** This is a real gap: a letter heading that happens to land on a verso
+rather than the following recto would not be caught by this scan. Given the pattern observed (letters mostly open at
+the top of a fresh recto page in this edition, per the headings found), this is judged a minor residual risk, not
+ruled out.
+
+**Net result: no hit.** Across all 90 folio rectos:
+- **No date of May or June 1530 appears anywhere.** Dated items found range from 16 Février 1531 (f.77r) to 21 Mai
+  1532 (f.89r, the Franco-English treaty of Boulogne/Chasteaubriant), with one isolated outlier at 11 Septembre
+  1566 (f.54r, a description of the kingdom of Poland, unrelated). The tract is not in date order (the volume's own
+  editorial aside at f.57r, "AV LECTEVR... me contrainct de laisser l'ordre des dates", says so directly), but no
+  amount of resampling within this span turned up 1530 at all — every dated item sits in 1531-1533.
+- **"Villandry"/"Villandre" does not appear in folios 1-90** (the earlier pass's only hit for this name was folio
+  180, outside this range — Gap (2) of "Toward N4" narrows further but is not closed: ~127 folios, 91-217, remain
+  unread).
+- **"Tarbes" does not appear in folios 1-90.**
+- **Gramont is named five times, always as a third party, never as a letter's author or addressee**: f.2r-3r
+  ("COPPIE DES LETTRES DES CARDINAVX de Tournon & de Gramont au Roy François du 21. Ianvier à Boulogne 1532" — a
+  letter jointly signed by Tournon and Gramont, but dated January 1532 at Boulogne, eighteen months after the
+  target and about a different matter — the Bologna/England negotiations, not a Villandry letter); f.34r (a royal
+  letter mentioning "mon Cousin le Cardinal de Grãmont" and his efforts over "l'abolition & suspension des
+  privileges", Fontainebleau, 10 Juillet 1531); f.64r (a royal letter to the Bishop of Auxerre mentioning Cardinal
+  de Gramont's efforts over a "bulle" and "dispense" for a marriage, Chantilly, 16 Septembre 1531); f.82r-83r and
+  f.84r (two royal letters to the Bailly de Troyes, England, both mentioning "les Cardinaux de Tournon & de Grãmont"
+  as royal agents active with the Pope, undated on the visible page but sitting among 1531-1532 material). None of
+  the five is a Gramont-authored letter, none is addressed to Villandry, none carries the target date.
+- **No overlap** was spotted between any of these 90 folios' visible text and reading.txt's or reading_f30's
+  distinctive decoded phrases ("le porteur", "l'adresse de dessus", "du vingtiesme", "pour vous donner cognoissance
+  de tout", "la declaration de la liberté de Florence", "la ville et la force entre vos mains") — this is a
+  non-rigorous visual scan at thumbnail resolution, not a phrase-searchable OCR pass (the whole reason this tract
+  needs page images at all is that Gallica's own OCR/`.texteBrut` route is altcha-walled for this ark), so it is a
+  read, not a search, same caveat as the first sampling pass.
+- The tract's own structure, now clearer from a dense pass: folios 1-57 run under the header "Historiques" (mixed
+  royal/ambassadorial correspondence, chiefly Auxerre's and the Bailly de Troyes' own dispatches, 1531-1533, with
+  the Hungary sub-dossier at f.48r-51r and the 1566 Poland outlier at f.54r); folios 58-90 run under "Memoires ou
+  meslanges" (ransom/obligation terms from the 1529 Cambray treaty, Swiss-canton articles, more Auxerre
+  correspondence, then the Franco-English treaty text of May 1532 from f.85r to past f.90). Nothing in this
+  structure suggests the 1530 Rome correspondence is filed nearby, just outside folio 90 — the Gramont mentions are
+  scattered through both halves, and the volume is demonstrably not chronological, so this is not a strong signal
+  either way about folios 91-217.
+
+**Recommendation (not a class change — this worker does not move the class).** Folios 1-90 recto can be struck
+from "still open": this specific span, read recto-side, contains no May 1530 material and no Gramont-authored or
+Villandry-addressed letter. Camusat is not closed overall — ~127 folios (91-217) remain, plus the verso gap noted
+above within 1-90. The next Camusat pass should (a) continue the recto read from folio 91, same method and same
+calibration, and (b) if budget allows, spot-check versos in the 1-90 range near the five Gramont mentions above
+(f.2v-3v, f.34v, f.64v, f.82v-84v) on the chance a companion or continuation letter sits there unseen by this
+recto-only pass. N3 should stay N3.
+
+### Requests this session
+
+gallica.bnf.fr: 101 (1 initial single-canvas thumbnail check of f.155 before scripting the loop, 90 recto
+thumbnails in the main loop — 81 succeeded first try, 9 hit a connection reset and were each retried once
+successfully per the single-retry rule — plus 1 full-resolution re-fetch of canvas 279/folio 63 to correct a
+tentative misreading). All ≥1.6 s apart, one request at a time, UA `cipher-lab research script (contact via
+repository)`, shared with this session's Part A (fr5160, 1 request) under the LANE G two-fetcher/~110-request
+courtesy cap — no more Gallica requests taken this session after this pass, to leave headroom for the other LANE G
+fetcher (M18). No other host. No logins, no credentials, no decoding, no subagents. Images:
+`images/print_check/camusat_dense/manifest.json` (all 90 folios logged: canvas, url, date/heading tag) plus a
+10-image representative sample (title page + every Gramont-mention page + the two section-boundary pages) kept on
+disk; the other 80 thumbnails were fetched, read from disk this session, and then deleted (not committed) to stay
+under the 30 MB/folder cap — re-fetch any of them from the manifest's per-folio url, one request, in seconds.

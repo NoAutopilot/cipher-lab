@@ -1,0 +1,729 @@
+{
+ "ark": "bpt6k5039434",
+ "edition": "Camusat, Meslanges historiques, 1644 Troyes 3rd ed.",
+ "tract": "Lettres du Roy Francois premier & instructions a ses Ambassadeurs...avec le Roy d'Angleterre Henry 8 (own foliation 1-217; canvas = 155 + 2*(folio-1) for the recto of folio N)",
+ "pass": "Dense recto-only read, folios 1-90 (24 Sept 2026), thumbnails at ,1000 width",
+ "note": "Verso sides (folio v) not fetched this pass -- a letter heading landing on a verso rather than the following recto would not be caught by this scan. Full folder of 90 recto thumbnails fetched to disk; only a representative sample (title page + every Gramont-mention page + section-boundary pages) kept committed to stay under the 30MB/folder cap (CLAUDE.md Access playbook); re-fetch any other folio from its url above (one request, 1.5s+ apart, per the good-citizen rule).",
+ "entries": [
+  {
+   "folio": 1,
+   "canvas": 155,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f155/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "Double d'une lettre du Roy au Pape touchant l'affaire du Roy d'Angleterre"
+  },
+  {
+   "folio": 2,
+   "canvas": 157,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f157/full/,1000/0/native.jpg",
+   "date_seen": "21 Jan 1532, Boulogne",
+   "content": "COPPIE DES LETTRES DES CARDINAVX de Tournon & de GRAMONT au Roy Francois -- GRAMONT letter (co-signed w/ Tournon), wrong date/recipient for target"
+  },
+  {
+   "folio": 3,
+   "canvas": 159,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f159/full/,1000/0/native.jpg",
+   "date_seen": "(cont. of f.2)",
+   "content": "same letter continues"
+  },
+  {
+   "folio": 4,
+   "canvas": 161,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f161/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "MEMOIRE ET INSTRUCTION a M. le Bailly de Troyes"
+  },
+  {
+   "folio": 5,
+   "canvas": 163,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f163/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "instruction continues"
+  },
+  {
+   "folio": 6,
+   "canvas": 165,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f165/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "instruction continues"
+  },
+  {
+   "folio": 7,
+   "canvas": 167,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f167/full/,1000/0/native.jpg",
+   "date_seen": "10 Sept 1531, Vendome",
+   "content": "instruction ends; new heading COPIE D'VN ARTICLE DE LETRE de M. le Card. de Tournon touchant le faict d'Angleterre"
+  },
+  {
+   "folio": 8,
+   "canvas": 169,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f169/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "Tournon article continues"
+  },
+  {
+   "folio": 9,
+   "canvas": 171,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f171/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "LETTRE DV ROY A M. DE PO[T]... Bailly de Troyes"
+  },
+  {
+   "folio": 10,
+   "canvas": 173,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f173/full/,1000/0/native.jpg",
+   "date_seen": "8 Sept 1533",
+   "content": "cont., new heading DOVBLE D'VNE LETTRE ENVOYEE par le Roy au Roy d'Angleterre par le Sieur de Castillon"
+  },
+  {
+   "folio": 11,
+   "canvas": 175,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f175/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "Castillon letter continues"
+  },
+  {
+   "folio": 12,
+   "canvas": 177,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f177/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "LETTRES DV ROY A SON Ambassadeur en Angleterre"
+  },
+  {
+   "folio": 13,
+   "canvas": 179,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f179/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "INSTRUCTION AV BAILLY DE Troyes"
+  },
+  {
+   "folio": 14,
+   "canvas": 181,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f181/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "instruction continues"
+  },
+  {
+   "folio": 15,
+   "canvas": 183,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f183/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "instruction continues"
+  },
+  {
+   "folio": 16,
+   "canvas": 185,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f185/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "instruction continues"
+  },
+  {
+   "folio": 17,
+   "canvas": 187,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f187/full/,1000/0/native.jpg",
+   "date_seen": "2 Juin 1533",
+   "content": "NARRATION DE L'ENTREE ET Couronnement de la Royne d'Angleterre, Anne de Boulan a Londres"
+  },
+  {
+   "folio": 18,
+   "canvas": 189,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f189/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "coronation narrative continues"
+  },
+  {
+   "folio": 19,
+   "canvas": 191,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f191/full/,1000/0/native.jpg",
+   "date_seen": "Aout 1533",
+   "content": "DOVBLE D'VN MEMOIRE DRESSE par M. de Potzy, Bailly de Troyes"
+  },
+  {
+   "folio": 20,
+   "canvas": 193,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f193/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "memoire continues"
+  },
+  {
+   "folio": 21,
+   "canvas": 195,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f195/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "AVTRE MEMOIRE NON DATTE"
+  },
+  {
+   "folio": 22,
+   "canvas": 197,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f197/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "memoire continues"
+  },
+  {
+   "folio": 23,
+   "canvas": 199,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f199/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "memoire continues"
+  },
+  {
+   "folio": 24,
+   "canvas": 201,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f201/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "mentions Pape Clement & Empereur a Boulongne"
+  },
+  {
+   "folio": 25,
+   "canvas": 203,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f203/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "narrative continues"
+  },
+  {
+   "folio": 26,
+   "canvas": 205,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f205/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "narrative continues"
+  },
+  {
+   "folio": 27,
+   "canvas": 207,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f207/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "Latin canon-law text (footnoted)"
+  },
+  {
+   "folio": 28,
+   "canvas": 209,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f209/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "Latin text continues"
+  },
+  {
+   "folio": 29,
+   "canvas": 211,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f211/full/,1000/0/native.jpg",
+   "date_seen": "1531 (marginal)",
+   "content": "C'ESTE LETTRE ESCRIPTE PAR le Roy Francois au Roy d'Escosse"
+  },
+  {
+   "folio": 30,
+   "canvas": 213,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f213/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "letter to Scotland continues"
+  },
+  {
+   "folio": 31,
+   "canvas": 215,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f215/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "Latin conciliar text"
+  },
+  {
+   "folio": 32,
+   "canvas": 217,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f217/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "RESPONCE DV ROY A SA Sainctete, sur le faict du Concile"
+  },
+  {
+   "folio": 33,
+   "canvas": 219,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f219/full/,1000/0/native.jpg",
+   "date_seen": "1531/1532 (marginal)",
+   "content": "AVTRES LETTRES DV ROY"
+  },
+  {
+   "folio": 34,
+   "canvas": 221,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f221/full/,1000/0/native.jpg",
+   "date_seen": "10 Juil 1531, Fontainebleau",
+   "content": "LETTRES DV ROY a 'mon Cousin' -- mentions Cardinal de GRAMONT's efforts re abolition/suspension of privileges; not addressed to Gramont"
+  },
+  {
+   "folio": 35,
+   "canvas": 223,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f223/full/,1000/0/native.jpg",
+   "date_seen": "14 Avril 1532",
+   "content": "LETTRES DV ROY a M. d'Auxerre"
+  },
+  {
+   "folio": 36,
+   "canvas": 225,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f225/full/,1000/0/native.jpg",
+   "date_seen": "16 Dec 1531",
+   "content": "AVTRES LETTRES DV ROY, adressee Trescher Pere le Pape"
+  },
+  {
+   "folio": 37,
+   "canvas": 227,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f227/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "letter continues"
+  },
+  {
+   "folio": 38,
+   "canvas": 229,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f229/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "letter continues"
+  },
+  {
+   "folio": 39,
+   "canvas": 231,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f231/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "MEMOIRE ENVOYE AVEC les susdictes lettres"
+  },
+  {
+   "folio": 40,
+   "canvas": 233,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f233/full/,1000/0/native.jpg",
+   "date_seen": "14 Avril 1532",
+   "content": "memoire continues, dated"
+  },
+  {
+   "folio": 41,
+   "canvas": 235,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f235/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "LETTRES DV ROY TOVCHANT l'Eufche de Glandeue"
+  },
+  {
+   "folio": 42,
+   "canvas": 237,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f237/full/,1000/0/native.jpg",
+   "date_seen": "14 Mai 1532",
+   "content": "Nouvelles envoyees d'Allemagne"
+  },
+  {
+   "folio": 43,
+   "canvas": 239,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f239/full/,1000/0/native.jpg",
+   "date_seen": "16 Juin 1532, Chasteaubriant",
+   "content": "letter a M. d'Auxerre continues"
+  },
+  {
+   "folio": 44,
+   "canvas": 241,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f241/full/,1000/0/native.jpg",
+   "date_seen": "1532",
+   "content": "Latin, 'procez criminel...'"
+  },
+  {
+   "folio": 45,
+   "canvas": 243,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f243/full/,1000/0/native.jpg",
+   "date_seen": "13 Juin 1532",
+   "content": "AVTRE LETTRE a M. d'Auxerre, marquis de Saluces"
+  },
+  {
+   "folio": 46,
+   "canvas": 245,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f245/full/,1000/0/native.jpg",
+   "date_seen": "11 Oct 1532",
+   "content": "AVTRE LETTRE"
+  },
+  {
+   "folio": 47,
+   "canvas": 247,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f247/full/,1000/0/native.jpg",
+   "date_seen": "19 Oct 1532",
+   "content": "ADVERTISSEMENT DE GENNES"
+  },
+  {
+   "folio": 48,
+   "canvas": 249,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f249/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "Latin, Ioannes Dei gratia Rex Hungariae letter"
+  },
+  {
+   "folio": 49,
+   "canvas": 251,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f251/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "Hongrie section continues"
+  },
+  {
+   "folio": 50,
+   "canvas": 253,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f253/full/,1000/0/native.jpg",
+   "date_seen": "10 Dec 1531",
+   "content": "LETTRES DV SEIGNEVR HIEROSme de Lasco au Pape Clement VII"
+  },
+  {
+   "folio": 51,
+   "canvas": 255,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f255/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "Fin des memoires de Hongrie"
+  },
+  {
+   "folio": 52,
+   "canvas": 257,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f257/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "Hiftoriques section, military/siege narrative"
+  },
+  {
+   "folio": 53,
+   "canvas": 259,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f259/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "narrative continues"
+  },
+  {
+   "folio": 54,
+   "canvas": 261,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f261/full/,1000/0/native.jpg",
+   "date_seen": "11 Sept 1566",
+   "content": "LETTRE MISSIVE CONTENANT la description du Royaume de Poulongne -- isolated later document, out of range"
+  },
+  {
+   "folio": 55,
+   "canvas": 263,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f263/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "Pologne narrative continues"
+  },
+  {
+   "folio": 56,
+   "canvas": 265,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f265/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "narrative continues"
+  },
+  {
+   "folio": 57,
+   "canvas": 267,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f267/full/,1000/0/native.jpg",
+   "date_seen": "various, 1520s-1573",
+   "content": "AV LECTEVR editorial note (order not chronological); LETTRES D'EMPRVNT FAICT du Roy d'Angleterre pour la delivrance des enfans de France ostagez en Espagne"
+  },
+  {
+   "folio": 58,
+   "canvas": 269,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f269/full/,1000/0/native.jpg",
+   "date_seen": "refs 1529 Cambray treaty",
+   "content": "Memoires ou meslanges: ransom/obligation terms"
+  },
+  {
+   "folio": 59,
+   "canvas": 271,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f271/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "obligations continue"
+  },
+  {
+   "folio": 60,
+   "canvas": 273,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f273/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "obligations continue"
+  },
+  {
+   "folio": 61,
+   "canvas": 275,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f275/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "Latin conciliar/legal text, English/French royal matters"
+  },
+  {
+   "folio": 62,
+   "canvas": 277,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f277/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "Latin text continues"
+  },
+  {
+   "folio": 63,
+   "canvas": 279,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f279/full/,1000/0/native.jpg",
+   "date_seen": "~Sept/Oct 1531 (Louise de Savoye's death)",
+   "content": "letter to M. d'Auxerre ends (dated 18 Sept, signed Berthereau); new heading LETTRE DV ROY SVR LA MORT de Madame Louyse de Savoye sa mere -- verified at full resolution, no 1530 date present (correcting an initial thumbnail misreading)"
+  },
+  {
+   "folio": 64,
+   "canvas": 281,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f281/full/,1000/0/native.jpg",
+   "date_seen": "16 Sept 1531, Chantilly",
+   "content": "letter a M. d'Auxerre -- mentions Cardinal de GRAMONT's efforts re bulle/dispense re mariage"
+  },
+  {
+   "folio": 65,
+   "canvas": 283,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f283/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "A TRESHAVLT TRESEXCELLENT Prince (a l'Empereur)"
+  },
+  {
+   "folio": 66,
+   "canvas": 285,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f285/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "letter to Emperor continues"
+  },
+  {
+   "folio": 67,
+   "canvas": 287,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f287/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "mentions M. de Rambouillet"
+  },
+  {
+   "folio": 68,
+   "canvas": 289,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f289/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "narrative continues"
+  },
+  {
+   "folio": 69,
+   "canvas": 291,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f291/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "ARTICLES des Cantons Suisses (Zurich/Berne treaty articles)"
+  },
+  {
+   "folio": 70,
+   "canvas": 293,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f293/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "articles continue"
+  },
+  {
+   "folio": 71,
+   "canvas": 295,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f295/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "articles continue"
+  },
+  {
+   "folio": 72,
+   "canvas": 297,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f297/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "A MONSIEVR L'EVESQVE D'Auxerre mon Conseiller & Ambassadeur devers nostre Sainct Pere le Pape a Rome"
+  },
+  {
+   "folio": 73,
+   "canvas": 299,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f299/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "letter continues"
+  },
+  {
+   "folio": 74,
+   "canvas": 301,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f301/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "COPPIE DE LA LETTRE ESCRITE par le Roy a Messieurs les Cardinaux de St. Siege"
+  },
+  {
+   "folio": 75,
+   "canvas": 303,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f303/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "letter continues"
+  },
+  {
+   "folio": 76,
+   "canvas": 305,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f305/full/,1000/0/native.jpg",
+   "date_seen": "1532 (marginal)",
+   "content": "mentions Cardinal de Tournon"
+  },
+  {
+   "folio": 77,
+   "canvas": 307,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f307/full/,1000/0/native.jpg",
+   "date_seen": "16 Fev 1531, Rouen",
+   "content": "A MONSIEVR L'EVESQVE D'AVxerre mon Conseiller & Ambassadeur"
+  },
+  {
+   "folio": 78,
+   "canvas": 309,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f309/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "letter continues"
+  },
+  {
+   "folio": 79,
+   "canvas": 311,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f311/full/,1000/0/native.jpg",
+   "date_seen": "10 Mars, 1531 (marginal)",
+   "content": "letter signed I. DV BELLAY E. de Paris (Jean du Bellay, Bishop of Paris), De la Ferte"
+  },
+  {
+   "folio": 80,
+   "canvas": 313,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f313/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "A MONSIEVR, MONSIEVR D'AVxerre Ambassadeur pour le Roy tres-Chrestien vers nostre Sainct Pere"
+  },
+  {
+   "folio": 81,
+   "canvas": 315,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f315/full/,1000/0/native.jpg",
+   "date_seen": "10 Mars 1531",
+   "content": "letter continues, mentions Sieur de Rochefort"
+  },
+  {
+   "folio": 82,
+   "canvas": 317,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f317/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "A MON COVSIN MONSIEVR le Bailly de Troyes -- mentions Cardinaux de Tournon & de GRAMONT as royal agents"
+  },
+  {
+   "folio": 83,
+   "canvas": 319,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f319/full/,1000/0/native.jpg",
+   "date_seen": "21 Mars",
+   "content": "letter to Bailly de Troyes continues, mentions Tournon & GRAMONT again"
+  },
+  {
+   "folio": 84,
+   "canvas": 321,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f321/full/,1000/0/native.jpg",
+   "date_seen": "undated",
+   "content": "A MONSIEVR LE BAILLY DE Troyes mon Ambassadeur -- mentions Cardinal de Tournon & le Cardinal de GRAMONT again"
+  },
+  {
+   "folio": 85,
+   "canvas": 323,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f323/full/,1000/0/native.jpg",
+   "date_seen": "17 Avril 1532, Lamotte l'Evesque",
+   "content": "letter ends; new heading TRAICTE ENTRE LES ROIS DE France & d'Angleterre begins"
+  },
+  {
+   "folio": 86,
+   "canvas": 325,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f325/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "treaty text continues"
+  },
+  {
+   "folio": 87,
+   "canvas": 327,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f327/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "treaty text continues"
+  },
+  {
+   "folio": 88,
+   "canvas": 329,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f329/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "treaty text continues"
+  },
+  {
+   "folio": 89,
+   "canvas": 331,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f331/full/,1000/0/native.jpg",
+   "date_seen": "21 Mai 1532, Chasteau Briant / Henry VIII reign 18/14",
+   "content": "treaty dated"
+  },
+  {
+   "folio": 90,
+   "canvas": 333,
+   "side": "r",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f333/full/,1000/0/native.jpg",
+   "date_seen": "(cont.)",
+   "content": "treaty text continues, end of folio range read"
+  }
+ ]
+}
