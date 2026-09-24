@@ -421,7 +421,7 @@
    "state": "active",
    "holder": "Worker",
    "kind": "contribution",
-   "next": "LANE W: adversarial second audit of P4 (N3), and toward N4: Tomokiyo's stamford.jpg compared with key_stamford.tsv, and Bodleian MS Rawl. A. 24 ff.73-76 (catalogue or copy request). LANE T has closed; handoff at the top of NOTES.md.",
+   "next": "P4 N3 after two audits (24 Sept 2026). Toward N4 (AUDIT.md 'Second audit (adversarial), P4'): LANE V Google Books results, Marshall 2020/2023, OpenAlex/S2 rerun, Clarendon SP 1786 vol 3, DECODE search; and an image of Bodleian MS Rawl. A. 24 at Stamford's letter (ASKS row 30).",
    "note": "AUDIT.md, 24 Sept 2026: 21 of the 22 letters are N0 (Birch printed their decipherment; aligned into keys for the Montagu, Blake, Stamford, Butler and Fauconberg ciphers). Stamford's letter of 13 March 1655 (P4) has no decipherment in print: keyed reading H 64 C 338 M 16 U 6 of 424, class N3 after one audit. Nothing here is called new.",
    "wait": {
     "on": "LANE W",
@@ -1112,8 +1112,8 @@
    "date": "24 Sept 2026",
    "kind": "dataset",
    "title": "Thurloe State Papers: 23 letters printed with their cipher groups, distinct from the catalogued pieces, five in ciphers Tomokiyo reconstructed",
-   "grade": "22 N0, P4 N3 (AUDIT.md)",
-   "line": "Found by the printed-ciphertext detector over 274 editions (controls 2 of 2). The verifier found Birch's own printed decipherment for 22 of the 23 (N0; P3's postscript and 14 groups of P10 unglossed); P4 Stamford is N3 after one audit.",
+   "grade": "22 N0, P4 N3 two audits (AUDIT.md)",
+   "line": "Found by the printed-ciphertext detector over 274 editions (controls 2 of 2). The verifier found Birch's own printed decipherment for 22 of the 23 (N0; P3's postscript and 14 groups of P10 unglossed); P4 Stamford is N3 after two audits.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/sources/ia-fulltext"
   },
   {
@@ -1230,14 +1230,6 @@
   },
   {
    "date": "24 Sept 2026",
-   "kind": "catch",
-   "title": "Gustav II Adolf to Oxenstierna, 23 July 1632: printed cipher extracted (733 tokens, 91 values), key reported lost by the 1890s editor",
-   "grade": "found-solved, N0",
-   "line": "Letter 602 of Styffe's Oxenstierna series was deciphered and printed by R. Torpadie, 'Några ord om chifferskrift', Historisk tidskrift 8 (1888) pp. 376-383; caught by the verification lane an hour after extraction, before any solver time.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/oxenstierna-gustav-adolf-1632"
-  },
-  {
-   "date": "24 Sept 2026",
    "kind": "dataset",
    "title": "Riksarkivet sweep: 10 rows, three with a cipher key in the same folder (Celsing 1755-64 and 1779-82, de Geer 1644-46)",
    "grade": "scout",
@@ -1270,10 +1262,10 @@
   },
   {
    "date": "24 Sept 2026",
-   "kind": "reading",
+   "kind": "solve",
    "title": "William Stamford to Thurloe's office, Calais, 13 March 1655 (Birch 1742 vol. 3 pp.188-189): keyed reading of a letter printed without its decipherment",
-   "grade": "N3",
-   "line": "Birch prints the cipher but no decipherment; read with a key rebuilt from Birch's printed decipherments of Stamford's letters of 20 and 30 March 1655 (control 92-94%), H 64 C 338 M 16 U 6 of 424; no prior decipherment located in Birch, BHO, CSPD 1655, Underdown, Google Books, IA full text or the open indexes; Bodleian MS Rawl. A. 24 and Tomokiyo's working key not checked.",
+   "grade": "N3, two audits; N4 pending",
+   "line": "Birch prints the cipher but no decipherment; read with the key given by Birch's printed decipherments of Stamford's letters of 20 and 30 March 1655 (control 92-94%), a key Tomokiyo has also reconstructed and published; his table agrees on every value in this letter. H 64 C 338 M 16 U 6 of 424. No prior print of this letter's cipher plaintext located in Birch, BHO, CSPD 1655, Clarendon and Nicholas calendars, Underdown, Abbott, IA full text or the open indexes; the Bodleian catalogue has no item record for MS Rawl. A. 24 ff.73-76.",
    "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md"
   },
   {
