@@ -199,3 +199,43 @@ IIIF image fetches (3 full-page: canvases 17388797/98/99; each >=2s apart, well 
 No other hosts touched. Subagents: 1 (Sonnet, blind pass B only, per the LANE R4 16:58 rule).
 
 ROOM.md: `done: for LANE R4: mellon capture 78.7% raw / settled to 197H+21C+11S+19M of 248 signs, 58 tokens/32 types`.
+
+## Solver (24 Sept 2026, LANE R4 R)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-r4-r-mellon-solver.md`, Opus, disk only, no subagents, no hosts contacted.
+Input: `ciphertext.tsv` (LANE R4 Q transcription from the Yale IIIF images: 248 signs, 32 types, word breaks kept).
+Solver: `tools/homophonic_anneal.py` (order 3, 8 restarts x 40000 iters for the target; `--control` mode for controls),
+signs `/` (word break) and `'` (superscript flourish) skipped, so the target runs at N=244, K=31.
+
+**Controls (rule 3), `control_results.tsv`, N=248, 3 seeds each:**
+
+| language / corpus | monoalphabetic K=21 | homophonic K=32 |
+|---|---|---|
+| Italian (it16 letters corpus; plaintext from letterescrittea01vanzgoog, excluded from corpus) | 96.0 / 96.0 / 88.3 % | 96.0 / 89.9 / 89.5 % |
+| German (de16 composed_enhg, last 2.5 KB held out as plaintext) | 97.2 / 97.2 / 97.2 % | 92.3 / 83.1 / 85.5 % |
+| Latin (`control/corpus_la_composed.txt`, 4 KB composed by the model -- NOT a historical source, n-gram stats only; plaintext `plain_la.txt` held out) | 87.1 / 87.1 / 11.3 % | 15.3 / 18.1 / 13.3 % |
+
+No Latin corpus was on disk; the composed one is too small for the 32-type homophonic design, so **Latin homophonic
+is uncontrolled** (control < 60%) and nothing below speaks to it. Latin monoalphabetic reads in 2 of 3 seeds.
+
+**Target:** run under Italian, German and Latin models, in written order and with each word's letters reversed
+(the reading-order variant; `control/target_wordrev.tsv`). None of the six gives language: best Italian
+"rirelleochilreinitemaiaeaureineratat...", German "stsechedgothseertneinenenas...", Latin "pmperaeratmapestmued...".
+Score per letter: target -2.61 to -2.83 against solved controls -2.13 (Italian), -2.34 (German), -2.68 (Latin mono);
+the target sits well below the Italian and German controls. Outputs `control/target_{fwd,rev}_{it,la,de}.json`.
+
+**Result: no reading (cryptanalytic negative, conditional on the Q transcription).** Monoalphabetic and homophonic
+simple substitution (up to 32 types) over continuous Italian or German, in either reading order, is excluded at this
+length with controls reading 83-97%; for Latin only the monoalphabetic design is excluded (controls 87/87/11%).
+No token is graded; no decode.json or key.tsv written (no key exists). No phrase search run (nothing to search);
+archive.org not contacted.
+
+Why the design may not be a continuous substitution at all (observations, not tested): f.2v is a list of twelve
+codewords, one per zodiac sign (Cancer = `irgpshkscel`, Scorpio = `prksyqs7gp` per Rec 2014), not running prose, so
+the text is a set of short labelled items; the Cancer word fails the pattern of "dissolutione/dissolution" (the
+alchemical process traditionally paired with Cancer: plaintext ss at 3-4, cipher g,p) under any monoalphabetic key.
+Several ff.1v-2r words end alike (`leor`, `hyor`, `olor`), consistent with a nomenclature or verbal code.
+
+Suggestions (one line each, not done): a real Latin corpus (Latin Library or an alchemical Latin text from
+archive.org) to control the Latin homophonic design; test the twelve f.2v words as a codeword list keyed to their
+zodiac labels (known plaintext per line) under a progressive/Alberti design with the f.2v labels as cribs.

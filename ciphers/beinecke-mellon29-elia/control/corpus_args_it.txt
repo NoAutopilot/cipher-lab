@@ -1,0 +1,1 @@
+--corpus ../../../tools/data/it16/alcuneletteredip00ferr.txt --corpus ../../../tools/data/it16/delleletterefam02seghgoog.txt --corpus ../../../tools/data/it16/lettereinedited00tassgoog.txt --corpus ../../../tools/data/it16/lettereinedited01cibrgoog.txt --corpus ../../../tools/data/it16/lettereineditedi01carouoft.txt

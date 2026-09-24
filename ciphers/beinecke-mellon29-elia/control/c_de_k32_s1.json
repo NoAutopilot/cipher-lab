@@ -1,0 +1,20 @@
+{
+ "mode": "control",
+ "N": 248,
+ "K": 32,
+ "letters_correct": 229,
+ "share": 0.923,
+ "score": -579.2563405378278,
+ "plain": "dhatmanirzweymalzuradergelassenundsieauchpurgierenmussenalsodassieirerfruchtentledigetwordenistmansagtauchdasderkonigindiesemiarnichtindieniderlandekommenwerdesonderndaserdiehertzoginuonparmaalsregentindaselbstlassenwollediestendedieserlandeseingan",
+ "decoded": "dhatmanirzuermalzunadengelassenundsieauchfurgierenmussenalsodassieinenenuchtentledigetuondenistmansagtauchdasderkonigindiesemiarnichtindienidenlandekommenuerdesonderndaserdiehentzoginuonfanmaalsnegentindaselbstlassenuollediestendediesenlandeseingan",
+ "restart_scores": [
+  -579.3,
+  -582.7,
+  -626.9,
+  -628.0,
+  -637.8,
+  -655.1,
+  -668.2,
+  -677.6
+ ]
+}
