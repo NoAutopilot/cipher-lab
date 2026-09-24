@@ -348,7 +348,7 @@
    "state": "active",
    "holder": "Worker",
    "kind": "recovery",
-   "next": "f.29r: N3 after two audits; a blind second reader agreed on 92 percent of signs and its corrections are applied (seven more words read as French; L06, L07, L12 still not). Toward N4 by other routes running. f.30r-v: two passes at 60 percent agreement, Opus reconciler applying the key now.",
+   "next": "f.29r: N3 after two audits; a blind second reader agreed on 92 percent of signs and its corrections are applied (seven more words read as French; L06, L07, L12 still not). Toward N4 by other routes running. f.30r-v: read with the published key 24 Sept 2026, 1973 signs, H 1502 / M 239 / U 232, continuous French on 22 of 55 lines; verifier is LANE V's; values for the unkeyed signs with a matched control running (LANE G).",
    "note": "Safe sentence (AUDIT.md): BnF fr.2980 f.29r (no.21) is a letter of Gabriel de Gramont, bishop of Tarbes, to Jean Breton de Villandry, Rome, 20 May [1530], with a 569-sign cipher passage; Tomokiyo had identified it as readable with the published Gramont 1530 key (Tomokiyo; Lasry 2023); we transcribed the passage from the Gallica image (one reader) and applied that key: the table gives values for 533 signs (H), 30 are uncertain and 5 unkeyed after a blind second reader's corrections, and several lines read as continuous French; no prior printed plaintext or decipherment of the letter was located in the editions listed in AUDIT.md (N3, two audits, 24 Sept 2026).",
    "wait": {
     "on": "Toward-N4 checks and the second reader",
@@ -403,7 +403,7 @@
    "state": "active",
    "holder": "Worker",
    "kind": "recovery",
-   "next": "Adversarial second audit and a blind second reader of f.35; f.36 continuation reconciled and read next.",
+   "next": "f.35 N3 (single audit; LANE V). f.36r carries one more cipher line (25-26 signs), then clear to the signature; Opus reconciliation with the key running (LANE G).",
    "note": "Verifier class N3 (AUDIT.md, 24 Sept 2026): no prior plaintext or decipherment located; not N4 because Delavaud 1911 and Cuisiat 1998 were read only in snippets and JSTOR was not searched. Read with Tomokiyo's published Danzay key: 638 tokens, H 508, M 61, U 69, French on 23 of 37 lines.",
    "wait": {
     "on": "Second audit",
@@ -439,7 +439,7 @@
    "state": "blocked",
    "holder": "Nobody",
    "kind": "recovery",
-   "next": "LANE G worker checking fr.17834 series (Maisse's own outgoing registers) for ciphered leaves.",
+   "next": "Held. Maisse's own outgoing registers (fr.16089-16091, all on Gallica) sampled at 78 of 2104 canvases on 24 Sept 2026: all clear copies, no cipher. No ciphered despatch to Maisse located yet.",
    "note": "Tomokiyo reconstructed the key from this volume and wrote that he had not seen it used. Until a ciphered leaf is seen this is a key, not a target.",
    "wait": {
     "on": "A ciphered leaf, in this volume or fr. 17834",
