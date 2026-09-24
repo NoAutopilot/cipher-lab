@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 19:14 UTC",
+ "updated": "24 Sep 2026 19:49 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1585,18 +1585,47 @@
    "grade": "negative with matched controls: Italian and German mono- and homophonic controls read at 88-97 percent; the target scores below every control, forward and word-reversed",
    "line": "Captured from Yale's IIIF (ff.1v-2v, 248 signs, 32 types, two passes at 78.7 percent raw agreement). A control-first solver excludes simple and homophonic substitution of continuous Italian, German or Latin; the item is more likely a list of disguised names than a text. Closed-negative; the capture and controls stay in the folder.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/beinecke-mellon29-elia"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "negative",
+   "title": "Image cipher-page detector, layout features only: does not separate cipher leaves from plain ones well enough to sweep",
+   "grade": "controls on 84 real images from 10 hands and three centuries: holdout recall 0.69, false-positive rate 0.21; gate recall 0.85 and false positives 0.15 not met",
+   "line": "Built and gated before any sweep (rule 3); no Gallica volume was scanned. The labelled set of 41 cipher and 43 plain pages is committed as the fixture for the next design, which needs character-shape features or a vision model reading the thumbnail.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/tools/cipher_page_detector.py"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Cipher letters pooled by sender, office and years: 603 groups from every catalogue on disk (POOLS.tsv)",
+   "grade": "no group meets the flag (more than one letter, over 2,500 real signs, all copy-free); the largest lead is RAH 9/23-25, 171 Spanish letters of 1521-25, page counts only",
+   "line": "The pooling test for the code-and-mark model found no ready corpus among catalogued items; the multi-letter pools are archive series with page counts, not sign counts, so the next step is a sampling pass on the RAH series to get a real signs-per-page figure.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/POOLS.tsv"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "catch",
+   "title": "Pisany to Nevers 1593 (BnF fr.3983 f.169, key no.46): found-solved, the leaf carries a contemporary interlinear decipherment",
+   "grade": "check-solved from the Gallica leaf; not nominated",
+   "line": "Caught before any capture. Lesson posted in ROOM: a letter left untagged in a published key list where others are tagged 'undeciphered' may already be solved on the leaf; check the image before nominating.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr3983-pisany-nevers-1593"
   }
  ],
  "lanes": [
   {
    "name": "Lane R5, recovery",
    "live": 1,
-   "focus": "three workers at 19:12: Salviati f.55r box-keyed pass A in progress (pricing the leaf), Seure coarse-atlas pass A on three lines, Salviati key search done (not found in eight sources, Meister 1906 included)"
+   "focus": "workers A, B, C closed (Salviati f.55r priced, key search negative, Seure coarse atlas); D on the 1519 key leaves; next: key application on the three open Nevers letters (fr.3985 f.88 and f.176, fr.3986 f.198, key no.60) as the best odds of a reading tonight"
   },
   {
    "name": "Lane N4, nominations",
    "live": 1,
-   "focus": "three scouts done by 19:01: Gomberville seconde partie found as text on Google Books and searched (letters absent), so Villeroy 1595, Lauriere 1593 and Dinteville 1592 are re-nominated copy-free; seven unread Nevers-circle letters with published keys (KS-01 to KS-07) queued as recovery rows; Fagel/Hellen 1752-53 turned copy-free at the Nationaal Archief; check-solved batches next"
+   "focus": "nine copy-free nominations so far: Villeroy, Lauriere, Dinteville (Gomberville t.2 read), Hellen 1752, van Spaen 1808, Roell 1809 (Nationaal Archief), three Nevers-Revol letters with Tomokiyo's key no.60; scPARES on the Spanish and Portuguese archives running; pooling found no ready corpus"
+  },
+  {
+   "name": "Parent workers",
+   "live": 1,
+   "focus": "solvEX (Opus, $15): model-in-the-loop crib rounds measured on matched controls before any target; detIMG closed on its controls (gate failed)"
   },
   {
    "name": "Lane V4, verification",
