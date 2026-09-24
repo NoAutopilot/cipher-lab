@@ -294,3 +294,103 @@ line	pos	code	marks	action	conf	note
 11	22	dl		correct	M	loop-with-wavy-tail shape, matches dl; classifier had called this box "_" (share 0.82); merged in the same wide box as pos22.5's f
 11	22.5	f		split	M	crossbar stroke immediately after the dl loop, a second sign merged into the same wide box as pos22
 11	23	Lx		confirm	H	Λ with bar crossing right leg
+12	1	_		correct	H	clear capital cursive S, start of word "Sanza", not phi
+12	2	_		confirm	H	plain letters "an" continuing Sanza
+12	3	_		correct	H	plain letter "z", part of "-anza"; not S7, no 7-shape
+12	4	_		correct	H	plain letter "a" w/ decorative loop finishing "Sanza"; loop makes it superficially N-like but no N structure, just flourished a
+12	5	_		confirm	H	plain word fragment "quest" (questo), fully legible
+12	6	_		confirm	H	plain "to" (tail of "questo"), legible cursive
+12	7	_		confirm	H	plain "no", legible cursive
+12	8	_		confirm	M	tall diagonal stroke + small curl; looks like an oversegmented duplicate of the ascender that continues into box 9's "fa"; margin numeral "15" visible below is a foliation/quire mark bleeding in, not part of this box's ink
+12	9	_		confirm	H	plain "fa" (tall f + a), legible cursive, start of "fara"
+12	10	_		confirm	H	plain "ar", legible cursive
+12	11	_		correct	H	plain letter "a" w/ flourish loop, final letter of "fara"; same pattern as pos4, not N
+12	12	_		confirm	M	ascender+loop resembling plain letter "d" with a crossbar near top (possibly ink bleed from line above) and a closed bowl below; margin numeral "9" below is unrelated foliation bleed; no clean match to a cipher-sign shape so plain is the safer call
+12	13	S4		confirm	H	clear cross with foot/slash, matches S4 atlas plate well
+12	14	y		confirm	H	cursive y with looped tail, matches atlas
+12	15	nt		confirm	M	zigzag (Z-like) stroke joined to a crossed vertical; closest match is the "n+"/nt atlas exemplars that show a similar angular n joined to a crossbar, though a Z+cross split reading is not implausible
+12	16	bh		confirm	H	tall stem with small hooked loop at upper right and lead-in stroke, matches bh atlas exactly
+12	17	w		confirm	H	cursive w with lead-in stroke, matches atlas
+12	18	e	#	correct	H	looped e sign is correct, but the mark above is clearly a double-crossbar "#" (matches the e-with-# atlas exemplars), not a single "dot"
+12	19	phi		confirm	H	small slashed circle on a stem, matches phi atlas exactly
+12	20	dl		confirm	H	delta-like loop with curling tail, matches dl atlas
+12	21	_		confirm	H	plain cursive "Jo"/"To" (capital + o), legible letters, not a sign
+12	22	_		confirm	H	plain cursive "pe" (loop-stemmed p), part of word "penso"
+12	23	_		correct	H	plain cursive "ns", part of "penso"; not w, no w-shape present
+12	24	_		confirm	H	plain "o", end of "penso"
+12	25	_		confirm	M	small "c"-like curved mark, plausibly a plain letter/abbreviation stroke, no cipher-sign shape match
+12	26	_	ot	confirm	L	tiny (15x18px) squiggly end-of-line flourish, genuinely hard to call; no clean atlas match, keeping classifier's plain/"ot" call for lack of a better read
+13	1	S4		confirm	H	clear cross with foot, matches S4 atlas
+13	2	Lx		confirm	H	two strokes joined by a top bar plus a crossing diagonal on the right leg, matches Lx atlas
+13	3	tee		correct	M	clean capital-T shape (horizontal top bar, straight vertical stem); does not match S7's hooked-7 shape at all, closer to the tee atlas plate (vertical stroke with a crossbar); plain-letter "T" is a secondary possibility but the shape sits in an unbroken run of signs
+13	4	w		confirm	H	cursive w with lead-in stroke, matches atlas
+13	5	y		confirm	H	cursive y with looped tail, matches atlas
+13	6	S7	dot	correct	H	exact-bounds crop shows a clean hooked "7" with a dot at the foot of the diagonal, a textbook S7 -- this is a real sign the classifier tagged plain ("_") at share 1.00
+13	7	nt		correct	H	"u/n" hook joined to a crossed vertical stroke, matches the nt atlas exemplars (n+ shape) much better than Z's zigzag; same pattern as line 12 pos 15
+13	8	g		confirm	M	tall loopy 9/g-shaped glyph; the crop is busy (a small mark bleeding in from box 7's crossbar at the left edge) but the core shape -- a curled top opening into a loop with descending tail -- matches g
+13	9	H		confirm	H	block H with small serif feet, matches atlas H
+13	10	H	1|o	confirm	H	block H with small marks near center, matches atlas H with given marks
+13	11	e	+	correct	M	e-bowl sign correct, but there is a clear "+" mark above it (separated from the bowl), not blank as listed
+13	12	H		confirm	H	block H with small serif feet, matches atlas
+13	13	S7		confirm	H	hooked 7-shape, matches atlas
+13	14	#	dot	confirm	H	double-barred cross with a dot beside it, matches atlas # with dot mark
+13	15	e	+	correct	M	e-bowl sign correct, but the mark above reads as a "+" cross, not a "dot"; a small separate dot sits further up-right but the dominant mark touching the glyph is the +
+13	16	S7		confirm	H	hooked 7-shape, matches atlas
+13	17	#	dot	confirm	H	double-barred cross with dot beside it, matches atlas
+13	18	]	ot	confirm	H	square box open to the left, matches atlas ] exactly
+13	19	L		confirm	H	L-angle with a small numeral-like stroke inside the angle, matches atlas L
+13	20	g	1	confirm	M	9/g-shaped loop with a small mark to its left, roughly consistent with the "1" mark listed though hard to be fully certain at this size
+13	21	_		confirm	H	plain cursive letters (word continues), legible non-sign script
+13	22	S4		confirm	H	cross with foot, matches S4 atlas
+13	23	dl		confirm	H	delta-like loop with tail, matches dl atlas
+13	24	Lx		confirm	H	two crossed strokes, matches Lx atlas
+14	1	eps	1	confirm	M	two-lobed open shape at line start reads as a genuine eps (epsilon) sign per atlas, though it could alternatively be read as the plain word-initial capital "E" of "E stato..."; kept the sign call since the two stacked open bowls match eps better than a simple cursive E loop
+14	2	_		confirm	H	plain cursive "sta", part of "stato"
+14	3	_		confirm	H	plain cursive "tato", finishing "stato"
+14	4	_		confirm	H	plain cursive "mo", part of "molto"
+14	5	_		confirm	H	plain cursive continuing "molto"
+14	6	_		confirm	H	plain word "ad", fully legible
+14	7			delete	M	tiny (6x10px) isolated tick mark between "ad" and the next word; too small and isolated to be a letter or sign, reads as a stray pen mark/apostrophe fleck
+14	8	_		confirm	H	plain cursive "pro...", start of long word
+14	9	_		confirm	H	plain cursive continuing the same word
+14	10	_		confirm	H	plain cursive continuing the same word
+14	11	_		correct	M	wavy double-hook stroke inside a legible cursive run (matches the leaf's known pattern of plain letters mistagged as S mid-word); read as plain letters, not a standalone S sign
+14	12	_	dot	confirm	H	plain cursive "eto"/"ito", continuing the word
+14	13	f		confirm	M	tall stem with a long full crossbar starting a new word; shape matches the atlas f sign closely, though a plain cursive capital F/f beginning a new word is also plausible
+14	14	_		confirm	M	plain cursive letters continuing after the f-glyph, legible but faint
+14	15	_		confirm	M	plain cursive letters, faint, part of running text
+14	16	_	dot|dot	confirm	H	large box spans the fully legible plain word "intende"; two small dot-like ink marks visible above the word, kept as given
+14	17	_		confirm	M	faint plain cursive fragment following "intende"
+14	18	nt		confirm	M	curl joined to a long crossbar, matches the nt (n+) pattern confirmed elsewhere on this leaf (line 12 pos 15, line 13 pos 7)
+14	19	N		confirm	H	bold cursive N with loop, matches atlas N clearly
+14	20	S		confirm	M	simple S/ʃ curve with a small dot near its foot, matches atlas S reasonably
+14	21	lam		confirm	H	clear two-stroke apex (Λ) shape, first of a pair of adjacent lambda signs, matches atlas lam
+14	22	lam	#	confirm	H	second of the adjacent pair of Λ shapes, small tick at the foot consistent with the "#" mark given
+14	23	p		confirm	M	crossed stem with a loop below, matches atlas p; box overlaps its neighbor (Lx) so the crop is a little busy
+14	24	Lx		confirm	H	crossed-lambda "4"-like shape, matches atlas Lx clearly
+14	25	_		confirm	M	plain letter "o" with a long decorative flourish tail, consistent with a plain end-of-word/line flourish
+15	1	sq	ot	confirm	H	clean closed square box, matches atlas sq exactly
+15	2	_		confirm	H	plain cursive letters ("aw"-like), legible non-sign script; a small numeral trace below the line is unrelated margin bleed
+15	3	rz		confirm	H	low hook-then-wave shape, matches atlas rz
+15	4	U		confirm	M	two roughly-vertical strokes joined near the bottom forming a cup-like ⊔, reasonably matches atlas U
+15	5	w		confirm	H	cursive w with lead-in and trailing stroke, matches atlas w
+15	6	_		confirm	H	plain cursive "y"-like letter with lead-in stroke, legible non-sign script
+15	7	S7	5	split	M	this box's true bounds contain two separate, disconnected ink groups stacked vertically: an upper hooked "7" (matches S7) and a lower block "H" (matches H), with a visible gap between them, not one continuous stroke -- reading as an oversegmented pair rather than a single sign; row order (S7 on top, H below) follows top-to-bottom position, not a claim about encoding order
+15	7.5	H		split	M	second sign of the pos-7 split: block H shape below the S7, see note on pos 7
+15	8	e	+	correct	H	e-bowl sign correct, but the mark above is a clear "+" cross, not a "dot"
+15	9	e	dot|#	confirm	M	e-bowl with two small tick marks above, roughly consistent with the dot|# marks given, hard to be fully certain at this size
+15	10	a	~	confirm	H	plain letter a with a squiggle mark above, matches atlas a with ~ mark
+15	11	S7	#	confirm	H	hooked-7 shape with a mark near the top, matches atlas S7 with # mark
+15	12	eps	dot	confirm	H	clear two-bowl epsilon shape with a dot mark, matches atlas eps
+15	13	g		confirm	H	continuous single stroke forming a curled top flowing into a loop with descending tail, matches atlas g cleanly
+15	14	nt		confirm	H	clean n-hump joined to a crossed stroke, matches the nt (n+) pattern confirmed elsewhere on this leaf
+15	15	]	o	confirm	H	box open to the left, matches atlas ] with o mark
+15	16	_	1	confirm	M	numeral-like top ("14"-ish) flowing into a large loop/flourish tail below; reads most plausibly as a plain word with a decorative flourish rather than a catalogued sign shape, but the top portion is not fully clean
+15	17	sq	#	confirm	H	clean closed square box with a mark, matches atlas sq
+15	18	eps	~	correct	H	clear two-stacked-open-bowl epsilon shape with a squiggle mark above -- a real eps sign the classifier tagged plain ("_") at share 1.00
+15	19	S7		confirm	H	hooked-7 shape, matches atlas S7
+15	20	#		correct	H	clean double-barred cross, matches atlas # (two bars), not the single-stroke "+"
+15	21	rz		confirm	H	low hook-then-wave shape, matches atlas rz
+15	22	Z		confirm	M	compound glyph: an upper n+-like hook flowing into a lower zigzag "Z" body; the atlas Z plate includes similarly compound n+/Z-like exemplars, and the two parts are not clearly separated by a gap the way the pos-7 split was, so kept as one Z sign rather than splitting
+15	23	S7		confirm	H	hooked-7 shape, matches atlas S7
+15	24	lam	#	confirm	H	two-stroke apex (Λ) shape with a mark, matches atlas lam
