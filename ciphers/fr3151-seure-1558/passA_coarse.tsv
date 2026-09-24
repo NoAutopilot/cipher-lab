@@ -1,0 +1,64 @@
+line	pos	sign	conf	note
+9	1	star	H	clear asterisk/star burst, 4-6 arms crossing at center
+9	2	flag?	M	small open hook, possible flag-like serif at top; classifier agrees
+9	3	hookdesc?	M	open hook curling into a long descender stroke; classifier's flag call looks too small for this shape
+9	4	loop	H	clear P-shape, closed loop with long descender
+9	5	arrow	H	clear triangular/checkmark arrow with tail
+9	6	_?	M	tiny sliver, minimal ink
+9	7	loop	H	clear P-shape, closed loop with long descender, matches pos4
+9	8	num1	H	vertical stroke with small serif/flag top
+9	9	num1?	M	vertical stroke with hook-like top, could be num1 or hook; classifier calls hook
+9	10	hash	H	clear # grid
+9	11	hook	H	small open comma/hook shape, no closure
+9	12	b8	H	clear figure-8 double loop, distinct from the closed-P loop bucket
+9	13	hook	H	open C-curve with a long trailing tail, no closure
+9	14	loop	H	clear multi-hump wave, closes into small loops (loopMN family)
+9	15	star	H	clear 6-8 point asterisk burst
+9	16	inf	H	clear three-loop ooo pattern
+9	17	loop?	M	small 2-hump wave, ambiguous with the hook family
+9	18	hash	H	clear # grid
+9	19	arrow	H	clear arrow/triangle with flourish tail
+9	20	star	H	clear 4-point asterisk/plus burst
+9	21	loop	H	wide dense multi-hump wave pattern
+5	1	hash2	H	dense crosshatch grid, doubled bars
+5	2	signA	H	cursive A-like double-loop shape
+5	3	num1	H	vertical stroke with small flag/serif top
+5	4	wedge	H	horizontal row of short wavy strokes
+5	5	hookdesc	H	tall hook shape with long descender and crossbar
+5	6	b8	H	closed "6"-shaped loop with tail
+5	7	_?	M	tiny vertical sliver, minimal ink
+5	8	hook?	M	small open v/hook shape, faint
+5	9	hash2?	M	crosshatch grid, possible extra loop attached
+5	10	circ?	M	small round loop, ambiguous vs b8
+5	11	b8	H	compact closed "6"-shaped loop
+5	12	b8	H	compact closed "6"-shaped loop
+5	13	hash2	H	clear double cross-hatch grid
+5	14	hook	H	clean open C-curve, no closure
+5	15	inf	H	clear three-loop ooo pattern
+5	16	hookdesc	H	tall curved stroke into an open hook with a long descender
+5	17	star?	M	crossing asterisk/star shape with legs
+5	18	loop?	M	small messy loop, ambiguous
+5	19	blob?	M	small dense/bracket shape, faint
+5	20	hook	H	two adjacent open bracket/hook shapes
+5	21	inf	H	clear three-loop ooo pattern
+15	1	bar	H	thin vertical stroke, slight curve
+15	2	tcross?	M	small L/cross-top shape
+15	3	_?	M	tiny diagonal sliver
+15	4	ctlig?	M	cross shape with loop-like top, ambiguous
+15	5	bar?	M	thin diagonal/vertical stroke
+15	6	wedge	H	dense wide wavy scribble, row of short strokes
+15	7	star	H	hash/asterisk shape with legs
+15	8	hook?	M	small open comma shape
+15	9	signN	H	clear cursive N
+15	10	hookdesc	H	J/3-shaped hook with a descender curl
+15	11	plus?	M	horizontal cross with a small vertical tick
+15	12	b8	H	closed loop with tail (b-shaped); disagree with classifier's noise call
+15	13	hash	H	clear # grid with an extra squiggle
+15	14	hash2	H	clear double cross-hatch
+15	15	_?	M	tiny faint fragment
+15	16	hookdesc	H	large hook with a long curved tail and a crossbar top
+15	17	hook?	M	tiny open C-curve fragment
+15	18	flag?	M	hook with a flag-like serif top, open curl
+15	19	num1	H	vertical stroke with serif top
+15	20	wedge?	M	dense wavy scribble; disagree with classifier's plus
+15	21	bar?	M	thin vertical sliver at the page edge
