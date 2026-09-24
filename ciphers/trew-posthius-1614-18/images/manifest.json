@@ -1,0 +1,68 @@
+{
+  "source": "Universitaetsbibliothek Erlangen-Nuernberg, Briefsammlung des Christoph Jacob Trew (Trew Briefsammlung), via bavarikon / api.digitale-sammlungen.de IIIF image API v2",
+  "licence": "CC0/PDM (per bavarikon object record)",
+  "fetched": "2026-09-24",
+  "fetched_by": "LANE N2 csBV (session_01NtJ129g3M8Fnh6EFzG3HyY)",
+  "items": [
+    {
+      "letter": "1614-03-13",
+      "shelfmark": "H62/TREWBR POSTHIUS_ERASMUS[2",
+      "bavarikon_id": "bav:UBE-TRE-00000BAV80016364",
+      "pages": [
+        {
+          "file": "1614_p1.jpg",
+          "iiif_id": "bav80016364_00001",
+          "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80016364_00001/full/2000,/0/default.jpg",
+          "native_size": "3279x5044",
+          "fetched_size": "2000x3074",
+          "note": "recto: letter text, signature 'Erasmus Posthius D.', enciphered block + keyed alphabet ('Salutembcdfg'/'hiknopqrwxyz') bottom left, and clear-text crib 'Fridericus Henricus vocat[ur] recens natus Princeps'"
+        },
+        {
+          "file": "1614_p1_key_crop.jpg",
+          "iiif_id": "bav80016364_00001",
+          "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80016364_00001/0,3423,1965,1610/full/0/default.jpg",
+          "native_region": "0,3423,1965,1610 (native pixels)",
+          "note": "native-resolution crop of the enciphered block, keyed alphabet and clear-text crib, for legibility"
+        },
+        {
+          "file": "1614_p2.jpg",
+          "iiif_id": "bav80016364_00002",
+          "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80016364_00002/full/2000,/0/default.jpg",
+          "native_size": "3275x5034",
+          "fetched_size": "2000x3076",
+          "note": "verso/address side: no cipher content visible, address block and wax seal"
+        }
+      ]
+    },
+    {
+      "letter": "1618-02",
+      "shelfmark": "H62/TREWBR POSTHIUS_ERASMUS[8",
+      "bavarikon_id": "bav:UBE-TRE-00000BAV80016370",
+      "pages": [
+        {
+          "file": "1618_p1.jpg",
+          "iiif_id": "bav80016370_00001",
+          "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80016370_00001/full/2000,/0/default.jpg",
+          "native_size": "3249x4037",
+          "fetched_size": "2000x2485",
+          "note": "recto: letter text (headed SALVTEM), signed 'Erasmus Posthius', dated 'Februarij 1618 Haidelbergae raptim'; no cipher content in the letter body itself"
+        },
+        {
+          "file": "1618_p2.jpg",
+          "iiif_id": "bav80016370_00002",
+          "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80016370_00002/full/2000,/0/default.jpg",
+          "native_size": "3254x4042",
+          "fetched_size": "2000x2484",
+          "note": "verso/address side: address block, wax seal, and (bottom) two distinct cipher-key blocks in two different hands plus a short worked plain/cipher German specimen"
+        },
+        {
+          "file": "1618_p2_key_crop2.jpg",
+          "iiif_id": "bav80016370_00002",
+          "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80016370_00002/0,1550,3254,2000/full/0/default.jpg",
+          "native_region": "0,1550,3254,2000 (native pixels)",
+          "note": "native-resolution crop of both key blocks and the worked specimen, for legibility"
+        }
+      ]
+    }
+  ]
+}

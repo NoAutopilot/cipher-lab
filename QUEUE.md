@@ -4397,3 +4397,16 @@ never promoted, never solved.
 already logged by scDEA, plus 6 further terms run this sweep), 21 narrowed hits (Handschrift+Briefe facet), 9
 distinct objects after dedup, 1 row kept (BV1, both letters), 1 copy-free (BV1 -- full-size images tested and
 working for all 4 pages). **Total: 1 row kept (BV1), 1 copy-free (100%).**
+
+**Check-solved 24 Sept 2026 (LANE N2 csBV; `ciphers/trew-posthius-1614-18/NOTES.md`): BV1 open, stage 2
+verified unsolved, kind recovery, copy-free** (all 4 pages + 2 native-resolution key/cipher crops fetched,
+`images/manifest.json`). Six sources checked (web, editions, cryptiana/community lists, DECODE files on disk,
+fresh clones of both solver repos, Kalliope): no found-solved hit anywhere. At full native resolution the 1614
+leaf's key reads as a complete "SALUTEM"-keyword mixed alphabet (`salutembcdfg`/`hiknopqrwxyz` -- corrects the
+scout's second-line read of "b..." to "h...", the initial letter after the keyword's own trailing "g"), in the
+same hand as the signature -- by eye the sender's own. The 1618 leaf's cipher material turned out to be on the
+**address side only** (the recto carries no ciphertext at all, contrary to the scout's "short enciphered
+block" read of the letter itself) and consists of **two different key blocks in two visibly different hands**
+(a struck-through glyph nomenclator and a separate clean letter-substitution key with a worked German
+specimen) -- whose hand is the sender's, if either, is unresolved and flagged for a solver/palaeography pass,
+not decided here. Not decoded, per brief.
