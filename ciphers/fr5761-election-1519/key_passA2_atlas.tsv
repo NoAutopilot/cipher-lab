@@ -1,0 +1,39 @@
+leaf	line	section	plain	sign_code	note
+f110	1	alphabet	a	UNLISTED	diagonal slash sign, no atlas match found
+f110	1	alphabet	b	UNLISTED	small loop/flag sign
+f110	1	alphabet	c	UNLISTED	open circle sign
+f110	1	alphabet	d	UNLISTED	door/Pi (Π) shape, two verticals + bar
+f110	1	alphabet	e	UNLISTED	small cursive loop, low confidence
+f110	1	alphabet	f	UNLISTED	tailed loop (g-like) sign
+f110	1	alphabet	g	UNLISTED	T with raised bar
+f110	1	alphabet	h	K27	double horizontal bar / hash (=) sign, matches K27 (cluster 48) box/hash family
+f110	1	alphabet	i	UNLISTED	plus/cross with vertical tick
+f110	1	alphabet	k	UNLISTED	script capital with dot, low confidence
+f110	1	alphabet	l	UNLISTED	cross with small flag
+f110	1	alphabet	m	UNLISTED	numeral-3/loop shape
+f110	1	alphabet	n	UNLISTED	script capital F
+f110	1	alphabet	o	UNLISTED	tall T/I with crossbar
+f110	1	alphabet	p	UNLISTED	sideways T / L-hook
+f110	1	alphabet	q	UNLISTED	z-like hook
+f110	1	alphabet	r	UNLISTED	n-like hook, low confidence
+f110	1	alphabet	s	UNLISTED	hash/comb (III over bar)
+f110	1	alphabet	t	UNLISTED	triple hash (m-like) sign
+f110	1	alphabet	v	UNLISTED	ornate hash with dot
+f110	1	alphabet	x	UNLISTED	row edge, not confidently isolated
+f110	1	alphabet	y	UNLISTED	row edge, not confidently isolated
+f110	2	correspondent	Palatin	UNLISTED	hash/hook (#) shape with a descending hook, no confident atlas match (differs from f104's Le conte palatin=K27 box shape -- consistent with each correspondent's key using its own sign assignment for the same referent)
+f110	3	correspondent	Treves	UNLISTED	box divided by a horizontal bar with a small flourish (6-like tail)
+f110	4	correspondent	Maguence	K34	H-shaped box sign, close visual match to K34 (cluster 51), the same shape family read as Mugance's code on f104
+f110	5	correspondent	Brandebourg	UNLISTED	capital lambda/triangle (Λ) shape, single stroke with apex, no confident atlas match
+f110	6	correspondent	Saxe	K20	small circle sitting on a short horizontal dash, close visual match to K20 (cluster 32.1), the same shape family as the small-circle-on-bar signs in that cluster
+f110	7	correspondent	[Colonne?]	UNLISTED	name torn at left margin; sign is a small circle/bracket shape ("o-)"), no confident atlas match
+f110	8	correspondent	[name torn]	UNLISTED	name lost to page damage (top-left tear); sign is an X made of crossed vertical strokes (IX/hash), no confident atlas match
+f110	9	correspondent	[name torn, ".Ave"?]	UNLISTED	name lost to page damage; sign is a small C/loop shape, no confident atlas match
+f110	10	correspondent	Francisme	UNLISTED	capital H with a small superscript loop ("H" + small o/o), no confident atlas match
+f110	11	correspondent	Catholicquer	UNLISTED	cross with a small circle attached at an angle (anchor-like), no confident atlas match
+f110	12	correspondent	Roy [d'Angleterre]	UNLISTED	capital M shape, no confident atlas match; name reads roughly "Roy Junglatore/Dangleterre" -- almost certainly "le Roy d'Angleterre" (Henry VIII), matching the embassy's diplomatic scope
+f110	13	correspondent	Madame Marguerite	UNLISTED	double-f / ladder (ff) shape, no confident atlas match; "Madame Marguerite" is very likely Margaret of Austria, governor of the Netherlands
+f110	14	nulls	Null1	UNLISTED	hash with a slanted crossbar (double-tick over hash)
+f110	14	nulls	Null2	UNLISTED	three vertical strokes under a horizontal bar (comb/grid)
+f110	14	nulls	Null3	UNLISTED	cross with a horizontal bar through the middle, tilted
+f110	14	nulls	Null4	K27	bold cross-in-box (#) sign, close visual match to K27 (cluster 48) box/hash family

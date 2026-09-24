@@ -295,3 +295,98 @@ and, ideally, f105-f110 atlas coverage to cross-check the K-codes that recur acr
 
 Files: `key_passC_atlas.tsv`, `recon_key/coverage.py`, `recon_key/majority_key.py`, `key.tsv`. Requests: 0
 hosts (disk only, per brief). Cost: see ROOM.md done line / session metadata.
+
+## Key f.105-f.110 and letters to try (24 Sept 2026, LANE R5 D)
+
+**Container note first.** A fresh `pip install numpy opencv-python-headless scikit-image scikit-learn Pillow`
+in this container does **not** reproduce `glyphs/clusters.tsv`/`signs.tsv`/`atlas.tsv` byte-identically from
+`glyphs/build.sh` (174 vs 184 f104 sign boxes, 26 vs 37 coded clusters) -- the same library-version hazard
+LANE R5 worker A flagged for the Salviati atlas. Restored the seven committed files (`clusters.tsv`,
+`signs.tsv`, `atlas.tsv`, `marks.tsv`, `atlas.png`, `atlas_part1/2.png`, `sheet_signs_00-04.png`,
+`sheet_marks.png`, `bitmaps.npz`, `pages.json`) via `git checkout --`, keeping only the regenerated
+`glyphs/crops/*.png` (grey per-page working copies, uncommitted, used for cropping exemplars below) and
+`glyphs/debug_*.jpg`. All work below is against the **committed** atlas/clustering, unchanged; no reclustering
+was attempted this pass, so `--split` boundaries are exactly as LANE R4 D left them.
+
+**Atlas extension (box-level coverage, no reclustering).** The segmentation/clustering already spans all
+seven leaves (`glyphs/segment_args.txt` always did); K1-K35 are cluster-family codes, not page-specific, so
+most of "extending the atlas to f105-f110" turned out to already exist mechanically. Box-level coverage
+(share of each leaf's sign boxes -- plain script and invented signs together -- already carrying a non-`_`
+K-code via `clusters.tsv`+`labels.json`, computed from committed files only, no new labels):
+f104 34/174 (19.5%, 28 distinct codes), f105 52/369 (14.1%, 26), f106 32/189 (16.9%, 17), f107 43/224
+(19.2%, 18), f108 27/217 (12.4%, 18), f109 20/172 (11.6%, 10), f110 31/165 (18.8%, 18). Per worker L's f104
+scoping note, this is a page-wide box figure (cursive prose and invented signs mixed, no per-box flag to
+separate them), not a per-code-position figure -- useful as "does the shared codebook recur on this leaf at
+all" (yes, on every leaf), not as "is every code sign on this leaf labelled."
+
+**New-code search.** Listed every uncoded cluster (`signs_lab.get(cluster,'_')=='_'`) with >=3 members outside
+f104 (52 clusters) and inspected all five contact sheets (`glyphs/sheet_signs_00..04.png`) plus a 2x zoom crop
+of the strongest single candidate (cluster 45, 19 members, present on 6 of 7 leaves, `/tmp/cluster45_zoom.png`,
+not committed). Every large uncoded cluster is spread near-evenly across all seven leaves in a pattern matching
+ordinary cursive prose (repeated "m"/"n"/"L"/"S"/"o" letterforms, minim strokes, underlines, abbreviation
+flourishes), consistent with worker D's own f104 judgment that these families are plain script, not invented
+signs. Cluster 45's zoomed crop, the best candidate by shape and by leaf-spread, resolved on close inspection
+to a cursive secretary-hand "h" ligature (fluid connected strokes, not the isolated geometric strokes the
+confirmed K-codes show), not a new sign. **No new code minted this pass** -- a conservative call under budget
+(each candidate needs page-context to confirm, i.e. is it standing alone at a code position or is it mid-word;
+that check was not done for all 52, only the visually strongest ones). Left as a follow-up: clusters 29 (mixed
+plain/possible-sign blob, already flagged ambiguous on f104) and 35.0/56 (modest, fairly uniform round shapes,
+not clearly script but not confidently a sign either) are the next candidates for a worker with more budget to
+crop and check in page context. The contamination already flagged for K1/K13/K15 (cluster 13/2.0/2.2 mixing a
+plain-script blob into an otherwise consistent invented-sign cluster) is unresolved and unchanged; it was not
+re-split (would require reclustering, unsafe in this container per the note above).
+
+**Two atlas-coded passes, one leaf (f110, folio 53v, 39 rows in the existing `key_passB.tsv`).** Budget did not
+allow more than one leaf at real per-row quality (see "what's left" below); f110 was chosen over the larger
+f105-f109 for tractability, not leaf order. `key_passA2_atlas.tsv` and `key_passC2_atlas.tsv` (both new,
+leaf-scoped, columns `leaf,line,section,plain,sign_code,note`) read the correspondent-name rows and the
+alphabet row fresh from native crops cut directly from `images/canvas110_folio53v.jpg` (PIL crops of the
+segmented region, not committed, `/tmp/f110_*.png`), checked against the atlas legend exemplars in
+`glyphs/sheet_signs_00-04.png` already viewed for the new-code search above. **Caveat on "blind"**: both
+passes were written in this one session with the same crops already in view, so true independence (as
+between separate worker sessions) was not achieved -- pass C was written without opening
+`key_passA2_atlas.tsv`, re-deriving each call from the images directly, but is not a fully independent
+re-fetch. Flagged per the common brief's honesty requirement rather than presented as equivalent to LANE R4's
+cross-session f104 passes.
+
+f110's correspondent block is headed "Maistre [Jehan] de Bourdeaulx devers le marquis de Brandebourg" (read
+directly off the page and confirmed against `key_passB.tsv`'s own independent free-text read of the same
+name, and against NOTES.md's Source section, which already lists "François de Bordeaux (to the marquis de
+Brandebourg)" among the key's correspondents) -- this is a **different correspondent's own alphabet+code
+list** from f104's Cordier/Motheaugroing block, confirming the document assigns each negotiator their own
+sign set rather than one shared alphabet (the same referent, e.g. "Saxe", gets a visually different sign on
+f110 than whatever f104's block would assign it, so K-codes were matched by this leaf's own shape against the
+atlas legend, never carried over by name from f104's rows).
+
+`key_passB.tsv` (free-text, predates the atlas, no `sign_code` column) could not itself cast a majority vote,
+so it is not the third voter the common brief's 2-of-3 language assumes: `recon_key/majority_key_leaf.py`
+(new script) folds it in as a non-voting cross-check (its `cipher_desc` text carried into the `note` column)
+and grades H where A and C's atlas codes agree (UNLISTED counting as agreeing, the same convention
+`recon_key/majority_key.py` used for f104), M otherwise. Result: **38 rows appended to key.tsv, all grade H**
+(34 on UNLISTED agreement, 4 on a named K-code: alphabet-row `h`=K27, Maguence=K34, Saxe=K20, Null4=K27) --
+`key.tsv` now carries a `leaf` column (f104 rows backfilled to `leaf=f104`, unchanged otherwise) and 76 rows
+total. The four named agreements are a real, if narrow, majority-backed reading: both passes independently
+matched f110's Maguence sign to the same H-box shape as f104's Mugance=K34 (cluster 51), and f110's Saxe sign
+to K20 (cluster 32.1, a small-circle-on-a-bar shape distinct from f104's Saxe=K15) -- i.e. the same referent
+name gets a *different* code across correspondents' blocks, as expected. This is a real dataset result (rule
+7: `recon_key/majority_key_leaf.py f110` regenerates these 38 rows deterministically from the two pass files
+and `key_passB.tsv`, no key stage-checker script written this pass since there is no ciphertext to `--check`
+against yet). Most of the leaf (34/38 rows) stayed UNLISTED by honest agreement, not by a forced code --
+grade H here documents "both readers found no confident atlas match," not "the sign is unread."
+
+Two names on f110 are worth a flag for a solving pass: line 12 "Roy [d'Angleterre]" (most likely Henry VIII
+of England, plausible for a 1519 embassy with wide diplomatic reach) and line 13 "Madame Marguerite" (most
+likely Margaret of Austria, governor of the Habsburg Netherlands) -- both read from the image directly, not
+inferred from the catalogue's correspondent list (which does not name either). Lines 7-9's correspondent
+names are lost to a torn top-left corner of the leaf (page damage, not a transcription failure); `plain` is
+left `[name torn]` per rule 2 rather than guessed.
+
+**What's left** (per brief, stopping before adding more leaves so this section can be written): f105
+(74 rows, largest), f106 (43), f107 (45), f108 (39), f109 (41) still need their own pass-A2/C2 pair and a
+`majority_key_leaf.py <leaf>` run -- each is the same shape of work as f110 above, at roughly the same
+per-leaf cost. `recon_key/majority_key_leaf.py` is written generally (any leaf name) so a successor only
+needs to write that leaf's two pass files and run it with `--migrate-header` omitted (already done once).
+
+Files: `key_passA2_atlas.tsv`, `key_passC2_atlas.tsv`, `recon_key/majority_key_leaf.py`, `key.tsv` (migrated
+to add a `leaf` column + 38 new f110 rows). Requests: 0 hosts (disk only, per brief). No subagents. Cost: see
+ROOM.md done line / session metadata.

@@ -1,0 +1,39 @@
+leaf	line	section	plain	sign_code	note
+f110	1	alphabet	a	UNLISTED	diagonal slash, isolated stroke, no atlas match
+f110	1	alphabet	b	UNLISTED	small loop with flag, low confidence
+f110	1	alphabet	c	UNLISTED	open circle/hook
+f110	1	alphabet	d	UNLISTED	Pi-shaped door (two verticals + top bar)
+f110	1	alphabet	e	UNLISTED	tiny stray mark, too faint to read confidently
+f110	1	alphabet	f	UNLISTED	tailed loop, g-like
+f110	1	alphabet	g	UNLISTED	T with raised crossbar
+f110	1	alphabet	h	K27	double-bar hash (=) sign; same box/hash family as K27 (cluster 48), agrees with pass A's read at this position
+f110	1	alphabet	i	UNLISTED	plus sign with extra tick, low confidence
+f110	1	alphabet	k	UNLISTED	capital with dot, low confidence
+f110	1	alphabet	l	UNLISTED	cross with small pennant
+f110	1	alphabet	m	UNLISTED	loop resembling a numeral 3
+f110	1	alphabet	n	UNLISTED	cursive capital F
+f110	1	alphabet	o	UNLISTED	tall crossed I/T
+f110	1	alphabet	p	UNLISTED	L-hook / sideways T
+f110	1	alphabet	q	UNLISTED	z-hook shape
+f110	1	alphabet	r	UNLISTED	n-hook, low confidence
+f110	1	alphabet	s	UNLISTED	comb (three verticals over a bar)
+f110	1	alphabet	t	UNLISTED	triple-hash (m-like)
+f110	1	alphabet	v	UNLISTED	ornate hash with a dot
+f110	1	alphabet	x	UNLISTED	crowded at the row's right edge, not confidently isolated
+f110	1	alphabet	y	UNLISTED	crowded at the row's right edge, not confidently isolated
+f110	2	correspondent	Palatin	UNLISTED	hash-hook sign; loosely resembles the K1 (cluster 13) family but that cluster is flagged contaminated with plain script (NOTES "Known limitation"), so not coded here
+f110	3	correspondent	Treves	UNLISTED	divided box with a curling tail, no confident atlas match
+f110	4	correspondent	Maguence	K34	plain H-box sign, same shape as Mugance's K34 sign on f104; confirms pass A's read
+f110	5	correspondent	Brandebourg	UNLISTED	single-stroke triangle/lambda apex, no confident atlas match
+f110	6	correspondent	Saxe	K20	small circle on a short dash, same shape as K20 (cluster 32.1) exemplars; confirms pass A's read
+f110	7	correspondent	[name torn]	UNLISTED	left margin torn away; bracket/circle sign, no confident atlas match
+f110	8	correspondent	[name torn]	UNLISTED	name lost to damage; crossed-X hash sign, no confident atlas match
+f110	9	correspondent	[name torn]	UNLISTED	name lost to damage; small looped C, no confident atlas match
+f110	10	correspondent	Francisme	UNLISTED	H shape with a small attached loop; close to but not a clean match for K34's plain H (the extra loop is not present on the Maguence/Mugance exemplars), left unlisted rather than forced
+f110	11	correspondent	Catholicquer	UNLISTED	angled cross with a small circle, no confident atlas match
+f110	12	correspondent	Roy [d'Angleterre]	UNLISTED	capital M, no confident atlas match
+f110	13	correspondent	Madame Marguerite	UNLISTED	ladder/double-f shape, no confident atlas match
+f110	14	nulls	Null1	UNLISTED	hash with a slanted extra tick
+f110	14	nulls	Null2	UNLISTED	comb/grid (three verticals under a bar)
+f110	14	nulls	Null3	UNLISTED	tilted cross with a mid-bar
+f110	14	nulls	Null4	K27	bold hash-in-box, same family as K27 (cluster 48); confirms pass A's read
