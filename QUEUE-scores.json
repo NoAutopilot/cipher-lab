@@ -6277,6 +6277,21 @@
     "BL": 215,
     "TNA": 60
    }
+  },
+  "rescore_2026-09-24": {
+   "_about": "Scoring pass of 24 Sept 2026 (ASSIGNMENTS row 13): N41-N66, scored after fixing the piece-exclusion regex bug that undercounted N6/N28 SP 87 coverage. See QUEUE.md non-DECODE section for the full account.",
+   "date": "24 September 2026",
+   "dropped_already_decoded": [
+    "SP 54/19/98B",
+    "ADM 1/1665/176"
+   ],
+   "dropped_false_lead_or_edition": [
+    "Egerton MS 2813",
+    "Add MS 8280",
+    "Add MS 63742",
+    "Add MS 24321",
+    "Add MS 48049"
+   ]
   }
  },
  "digitised": {

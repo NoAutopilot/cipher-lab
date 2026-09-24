@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026, 03:16 UTC",
+ "updated": "24 Sep 2026, 03:37 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -616,6 +616,10 @@
  ],
  "log": [
   {
+   "when": "24 Sep, 03:37",
+   "what": "Lanes running about 24 workers. Thurloe: Birch printed the decipherment beside most of the 23 letters, so the lane is turning into a dataset and a correction rather than solves; the Blake letter of 12 June 1655 aligned with its printed decipherment. Danzay f.36 continuation reads with the same key (one cipher line). Gramont f.30 with the verifier. A cross-lane retrospective is running on 33 ledger rows; JSTOR moved off the class gate to a queue for the owner's local runner."
+  },
+  {
    "when": "24 Sep, 02:57",
    "what": "Danzay to the Cardinal of Lorraine, 27 Jan 1557 (fr. 20140 f.35) reads with Tomokiyo's published key: 638 tokens, 508 at grade H, French on 23 of 37 lines; verifier started, the letter's continuation on f.36 being transcribed. Thurloe: all 23 printed-cipher letters extracted; Tomokiyo's keys are cribs, not readings, so two solvers with matched controls started (Montagu 1656, the Monck pool). Gramont f.29r tightened by the second reader; f.30 in the reconciler. Fourth batch: Eckert E4/E5 adversarial audit, Gallica round 3, detector round 2, the 474 non-DECODE items scored."
   },
@@ -925,7 +929,7 @@
    "date": "24 Sept 2026",
    "kind": "reading",
    "title": "Danzay to the Cardinal of Lorraine, dated 27 Jan 1557 (BnF fr. 20140 f.35)",
-   "grade": "N3, single audit; second audit pending",
+   "grade": "N3, single audit; adversarial second audit and blind second reader running",
    "line": "Read with the key Tomokiyo published: 508 of 638 cipher tokens at grade H, about 23 of 37 lines continuous French, 69 signs unkeyed; no contemporary decipherment. No prior decipherment or printed plaintext located in the Danzay editions, the Scottish and English state-paper series or the Danish regesta (AUDIT.md). Partial; the letter continues on f.36.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr20140-danzay-1557"
   },
@@ -1040,14 +1044,6 @@
    "grade": "F0",
    "line": "Caught by the Huygens database before promotion; his key reads 867 of 913 groups.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/orange-nassau-1572"
-  },
-  {
-   "date": "24 Sept 2026",
-   "kind": "catch",
-   "title": "Morvillier 1546 (M9) read by Lasry 2023; Danzay 1557 three of four letters keyed by Tomokiyo",
-   "grade": "found-solved",
-   "line": "Both dropped before transcription.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/QUEUE.md"
   },
   {
    "date": "23 Sept 2026",
