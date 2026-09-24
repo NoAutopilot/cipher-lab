@@ -107,6 +107,16 @@ rate-limit status `allowed_warning` and interrupts its workers at `rejected`. Th
 owner's card and the hourly check-in, and promotes to the board. Twelve workers started before the lanes keep their
 original parent until they report.
 
+**LANE S, 03:23 UTC: two new working hosts.** Huntington Library's CONTENTdm API (`hdl.huntington.org`) and
+Lambeth Palace Library's CalmView catalogue (`archives.lambethpalacelibrary.org.uk/CalmView`, a plain repeatable
+GET results URL found, no session needed -- see QUEUE.md's new section for the exact pattern) both answer curl
+directly and produced real candidates (U1-U3, U5 in QUEUE.md "UK and US catalogue candidates"). The Royal
+Archives/Georgian Papers Programme (`gpp.rct.uk`, same CalmView software) is reachable but low-yield (heraldic
+"cipher" noise, one already-famous 1880 telegram). e-codices.unifr.ch's real search endpoint was found and gives
+zero "cipher" hits; not worth another sweep. NRS stays egress-blocked (one reachability test only, per the
+brief). County-record-office access via TNA Discovery stays gated on ASSIGNMENTS row 13's scoring worker
+(`session_01JE9661cSHNoQDHEvtc2qQb`) posting `done` in ROOM.md -- not posted yet, skipped entirely this sweep.
+
 ## Handoff from orchestrator wake 2 (noautopilotytbiz, session_01SepNMpYrr6L2EwqL43aTnm), 24 September 2026, 01:20 UTC
 
 **What this wake produced.** One reading at N3 and one reading found in print; still zero unique solves until the Gramont second audit reports.

@@ -1,0 +1,57 @@
+host	query	id_or_ref	title	date	note	status
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS/425	CICERO. HORACE. PALLADIUS.	12th-15th c.	Sancroft's contents note; no cipher relevance beyond incidental word match	noise
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/597/109a	PELHAM to ORMOND	20 Nov 1579	Carew MSS; no explicit cipher note itself, swept in by adjacent hits	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/597/158a	PELHAM to CAPTAIN YORKE	25 Dec 1579	"an alphabet to write ... in secret" -- cipher-adjacent, not itself ciphertext	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/597/228	PELHAM to the QUEEN	31 Jan 1580	"a cipher herein closed"; Carew Calendar (Brewer & Bullen 1867-73) vol.II covers this piece-run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/597/243a	PELHAM to the COUNCIL	11 Feb 1580	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/597/246a	A CIPHER	11 Feb 1580	Record page's own FindingAids field cites "Calendar of the Carew Manuscripts ... ed. Brewer & Bullen (6 vols, 1867-73), vol. II, document 308" -- printed	found-solved-by-calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/597/314a	PELHAM to SIR WILLIAM WINTER	15 Apr 1580	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/597/343a	PELHAM to SIR WARHAM SENTLEGER	30 May 1580	"your letter in cipher"; Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/597/346	PELHAM to SIR WARHAM SENTLEGER	15 June 1580	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/597/413	LORD JUSTICE PELHAM to the QUEEN	12 Aug 1580	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/597/414a	PELHAM to SECRETARY WALSINGHAM	12 Aug 1580	"In cipher"; Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/597/418	PELHAM to SIR WARHAM SENTLEGER	15 Aug 1580	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/604/195	CECIL to CAREW	1 Oct 1602	Carew Calendar run (vol. beyond II, later volumes of the same edition)	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/604/202	CECIL to CAREW	24 Oct 1602	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/615/512	MOUNTJOY to CAREW	24 Dec 1602	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/615/520	MOUNTJOY to CAREW	6 Dec 1602	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/615/522	MOUNTJOY to CAREW	10 Dec 1602	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/615/560,567	MOUNTJOY to CAREW	1 Aug 1602	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/615/561	PRIVY COUNCIL to MOUNTJOY	18 July 1602	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/615/586	MOUNTJOY to CAREW	9 June 1602	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/624/147	CAREW to MOUNTJOY	28 May 1602	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/624/224	CAREW to MOUNTJOY	9 Oct 1602	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/624/233	CAREW to MOUNTJOY	25 Oct 1602	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-596-638/624/248	CAREW to MOUNTJOY	20 Nov 1602	Carew Calendar run	excluded_calendar
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS-647-662/647/218	CASENOWE (A. Dufauk de) to HENRI IV	[1586]	Bacon Papers; "Language: French and cipher"; no FindingAids/printed-edition field	kept_U5
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS/2094	BIBLE: ETHIOPIC GOSPELS	20th c.	noise, incidental word match	noise
+archives.lambethpalacelibrary.org.uk/CalmView	text=cipher	MSS/3192-3206/3193	Talbot Papers, f.99 (Willoughby to Shrewsbury)	1547-1558 (hit f.99, 1548)	"the enclosed 'crossrow' [cipher]" -- a key sent for future use, not ciphertext itself	noise_key_only
+archives.lambethpalacelibrary.org.uk/CalmView	text=cypher	MSS/358	BERENGAUDUS SUPER APOCALYPSIM	12th c.	noise	noise
+archives.lambethpalacelibrary.org.uk/CalmView	text=cypher	MSS/477	PICTOR IN CARMINE	13th c.	noise	noise
+archives.lambethpalacelibrary.org.uk/CalmView	text=cypher	MSS/645	FAMILY CORRESPONDENCE OF CHARLES II	1654-1665	collection-level, not opened this pass	unscored
+archives.lambethpalacelibrary.org.uk/CalmView	text=cypher	MSS/646	LETTERS TO CHARLES II	1655-1661	collection-level, not opened this pass	unscored
+archives.lambethpalacelibrary.org.uk/CalmView	text=cypher	MSS-647-662/649/490-5	Letters in cypher to BACON (Anthony), Secretary to the Earl of Essex	n/a	Bacon Papers, 6 ff, plural letters; no FindingAids/printed-edition field	kept_U3
+archives.lambethpalacelibrary.org.uk/CalmView	text=cypher	MSS/668	THOMAS MURRAY PAPERS	early 17th c.	collection-level, not opened this pass	unscored
+archives.lambethpalacelibrary.org.uk/CalmView	text=cypher	MSS/679	CIVIL WAR PAPERS	1642-1649	collection-level, not opened this pass	unscored
+archives.lambethpalacelibrary.org.uk/CalmView	text=cypher	MSS/929-942/930	Miscellaneous Papers	1590-1714	not opened this pass	unscored
+archives.lambethpalacelibrary.org.uk/CalmView	text=cypher	MSS/929-942/941	Miscellaneous Papers	1603-1715	not opened this pass	unscored
+archives.lambethpalacelibrary.org.uk/CalmView	text=cypher	SionMSS/E/46	RAMON LULL, Testament (alchemical)	1545	alchemical cipher/symbol usage, not correspondence	noise
+hdl.huntington.org	CISOSEARCHALL^cipher, p15150coll7	mssDE 37 (ptr 10246)	Letter, Philadelphia, to Destouches	26 Feb 1781	14 lines numerical cipher, decoded by Destouches (key source, in-collection)	kept_key_source
+hdl.huntington.org	CISOSEARCHALL^cipher, p15150coll7	mssDE 55 (ptr 10313)	Letter, Philadelphia, to Destouches (HMS Romulus)	3 Mar 1781	numerical cipher, translated in another hand (key source, in-collection)	kept_key_source
+hdl.huntington.org	CISOSEARCHALL^cipher, p15150coll7	mssDE 68 (ptr 10343-10345+)	Letter, Philadelphia, to Destouches, pp.1-4	31 Jan 1781	5+9+4+? lines numerical cipher across 4 pages; no decode/translation noted	kept_U1
+hdl.huntington.org	CISOSEARCHALL^cipher, p15150coll7	mssDE 108(A) (ptr 10565-10579)	Letter, Philadelphia, to Destouches, pp.1-8	16 Jan 1781	11+ lines cipher on p.1 alone, 8pp total; no decode/translation noted	kept_U1
+hdl.huntington.org	CISOSEARCHALL^cipher, p15150coll7	mssBLA 186 (ptr 61211)	Letter of intelligence, Madrid	13 Sept 1728	"In French, with two lines in cipher" -- small, below-unicity fragment	kept_low_U2
+hdl.huntington.org	CISOSEARCHALL^cipher, p15150coll7	mssBLA 188 (ptr 60924)	Copies of 3 letters to Newcastle/Townshend	July 1729	one enclosure "in cipher ... deciphered in French" -- key source for the mssBLA cluster	kept_key_source
+hdl.huntington.org	CISOSEARCHALL^cipher, p15150coll7	ptr 60843,60892,60898,60914,60966,61008,61084,61126	mssBLA items "To [-----]" / named, 1725-1729, same Spain-intelligence run	1725-1729	not opened to item-info level this pass; same phycola as mssBLA 186/188	kept_U2_unopened
+hdl.huntington.org	CISOSEARCHALL^cipher, p15150coll7	ptr 52437, 18403, 18407, 18373	Book of Hours; loose folio scans	15th c.	noise (medieval devotional MS, foliation)	noise
+hdl.huntington.org	CISOSEARCHALL^cipher, p16003coll20 (Stowe)	--	(0 hits)	--	CISOSEARCHALL with suppressfulltextsearch on/off both 0; raw/quoted-phrase queries without CISOSEARCHALL wrapper returned a bogus fixed 77-row title-sorted set unrelated to the term (broken query syntax, diagnosed and discarded)	noise_query_bug
+gpp.rct.uk/CalmView	text=cipher	ADD2/2/10 (GEO/ADD/2/86)	Inventory of the King's Jewels, "Cipher G.R."	[1819]	royal monogram, not cryptography	noise
+gpp.rct.uk/CalmView	text=cipher	SP (Stuart Papers, series-level)	Stuart Papers	1400-1999	series-level hit only, not an item; high edition risk noted in brief (HMC Stuart Papers calendar exists)	noise_series_level
+gpp.rct.uk/CalmView	text=cypher	FOR-RF/4/11 (GEO/MAIN/51939-51940)	Letter, Augusta Carolina of Wurttemberg to parents	2 Nov 1782	"an English cypher" = a monogram on a carriage, not cryptography	noise
+gpp.rct.uk/CalmView	text=cypher	VICADD92/3/32-34	Transcript of Mary, Duchess of Gloucester's will	1904	noise, incidental word match	noise
+gpp.rct.uk/CalmView	text=cypher	VICMAIN/1/18/1/74 (VIC/MAIN/A/52/75)	Draft telegram, Kimberley to Bartle Frere	30 July 1880	"Cypher telegram ... recalling him from South Africa" -- genuine but a single short government telegram on a famous, heavily documented recall (Anglo-Zulu War aftermath); high print-risk, not pursued further	noise_low_value
+gpp.rct.uk/CalmView	text=cypher	VICMAIN/5/2/3/64 (VIC/MAIN/E/37/64)	Letter, Colonel Douglas to General Grey	11-15 Feb 1857	not opened to record level this pass	unscored
+e-codices.unifr.ch	fullText=cipher	--	(0 documents)	--	"Your query for cipher in Full text returned no documents"	noise_zero
+e-codices.unifr.ch	fullText=chiffre	--	(many hits, Bodmer 29 / Geneve 56 / etc.)	--	French "chiffre" = digit/numeral in most medieval-MS metadata, same noise pattern as Gallica's "chiffré"; e-codices' profile (medieval literary/liturgical codices) is a poor fit for archival correspondence anyway; not opened item-by-item this pass	noise_not_pursued
+e-codices.unifr.ch	fullText=Geheimschrift	--	(some hits, not enumerated)	--	not opened item-by-item this pass, budget	unscored
+catalogue.nrs.gov.uk	reachability test	--	--	--	CONNECT tunnel failed (egress-blocked), confirms 23 Sept finding; one attempt only per brief	blocked_confirmed

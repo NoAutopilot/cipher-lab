@@ -6606,5 +6606,101 @@
     "total": 27
    }
   ]
+ },
+ "lane_s_uk-us": {
+  "_about": "LANE S scout of 24 September 2026: catalogues neither solver project reads, outside Gallica. Huntington Library CONTENTdm API (p15150coll7 Manuscripts collection; Stowe Papers collection queried but 0 real hits after diagnosing a broken naive query form), Lambeth Palace Library CalmView (a working GET results URL found: /CalmView/Overview.aspx?src=CalmView.Catalog&r=((((text)='TERM'))), no session needed), the Royal Archives/Georgian Papers Programme (gpp.rct.uk, same CalmView software, low yield), e-codices.unifr.ch (real search endpoint found, zero 'cipher' hits, 'chiffre'/'Geheimschrift' noise-dominated, not pursued). NRS: one reachability test, still egress-blocked. County record offices via TNA Discovery gated on ASSIGNMENTS row 13's scoring worker (session_01JE9661cSHNoQDHEvtc2qQb) posting done in ROOM.md; not posted as of this sweep, so skipped entirely, not attempted. Raw hits and exclusions: sources/solver-diffs/2026-09-24-lane-s-uk-us.tsv. Never promoted, never solved; every row still needs check-solved before the board.",
+  "date": "24 September 2026",
+  "requests_per_host": {
+   "hdl.huntington.org": 18,
+   "archives.lambethpalacelibrary.org.uk": 14,
+   "gpp.rct.uk": 8,
+   "e-codices.unifr.ch": 6,
+   "catalogue.nrs.gov.uk": 1
+  },
+  "rows": [
+   {
+    "rank": "U1",
+    "target": "La Luzerne to Destouches, two undeciphered cipher letters with two already-deciphered siblings in the same small collection",
+    "year": "1781",
+    "lang": "fr",
+    "kind": "recovery",
+    "reference": "Huntington Library, mssDE 68 (16 Jan 1781, 4pp) and mssDE 108(A) (31 Jan 1781, 8pp)",
+    "holder": "Huntington Library, Papers of Charles-Rene-Dominique Sochet Destouches",
+    "axes": {
+     "language_fit": 3,
+     "material": 3,
+     "key_lead": 3,
+     "size": 3,
+     "competition": 3,
+     "weight": 2,
+     "unread": 2
+    },
+    "total": 44
+   },
+   {
+    "rank": "U2",
+    "target": "Blathwayt Papers (Addenda), Spain/Madrid diplomatic-intelligence run, one confirmed cipher fragment plus an in-collection key and unopened siblings",
+    "year": "1725-1729",
+    "lang": "fr",
+    "kind": "recovery",
+    "reference": "Huntington Library, mssBLA 186 (13 Sept 1728) + mssBLA 188 (July 1729, key source) + 8 unopened items",
+    "holder": "Huntington Library, William Blathwayt papers (Addenda)",
+    "axes": {
+     "language_fit": 3,
+     "material": 3,
+     "key_lead": 2,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 2
+    },
+    "total": 37
+   },
+   {
+    "rank": "U3",
+    "target": "Letters in cypher to Anthony Bacon, Secretary to the Earl of Essex",
+    "year": "1579-1598 span",
+    "lang": "en/fr(?)",
+    "kind": "cryptanalysis",
+    "reference": "Lambeth Palace Library, MS 649, ff. 490-495",
+    "holder": "Lambeth Palace Library, Bacon Manuscripts",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 1,
+     "size": 2,
+     "competition": 3,
+     "weight": 3,
+     "unread": 3
+    },
+    "total": 36
+   },
+   {
+    "rank": "U5",
+    "target": "Casenowe (A. Dufauk de) to Henri IV, King of France/Navarre",
+    "year": "[1586]",
+    "lang": "fr",
+    "kind": "cryptanalysis",
+    "reference": "Lambeth Palace Library, MS 647, f. 218",
+    "holder": "Lambeth Palace Library, Bacon Manuscripts",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 30
+   }
+  ],
+  "caution_not_scored": [
+   {
+    "target": "Carew Manuscripts, ~16 'cipher'-flagged items across MS 597/604/615/624",
+    "reference": "Lambeth Palace Library, MS 596-638",
+    "reason": "record opened (MS 597 p.246a) cites FindingAids: Calendar of the Carew Manuscripts, ed. Brewer & Bullen (6 vols., 1867-73), vol. II, document 308 -- printed calendar covers this piece-run"
+   }
+  ]
  }
 }

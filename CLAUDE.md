@@ -184,6 +184,23 @@ Getting the material is most of the work. Try routes in this order and record wh
 
 1. **A JSON API or plain URL with curl**, with a browser User-Agent (`-A "Mozilla/5.0"`). Gallica IIIF, TNA
    Discovery's API, the Huntington's CONTENTdm API and the Internet Archive all serve this way.
+   **Huntington CONTENTdm, confirmed 24 Sept 2026:** the naive `dmQuery/ALIAS/TERM/fields!list/sort/maxrecs/
+   start/0/0/0/0/json` form silently ignores the search term and returns a fixed title-sorted listing (caught by
+   testing "cipher", a quoted phrase, and no term at all, all returning the identical 77 rows) -- always use the
+   documented `CISOSEARCHALL^TERM^all^and` clause instead, and set the sixth path segment (suppressfulltextsearch)
+   to `1` to search page-level OCR/notes text, not `0`. The Stowe Papers collection (`/p16003coll20`) genuinely
+   has no "cipher"/"cypher" hits this way; the Manuscripts collection (`/p15150coll7`) does. `dmGetItemInfo/
+   ALIAS/POINTER/json` gives the full catalogue note per item (the search endpoint truncates `descri` to empty
+   for many records).
+   **Lambeth Palace Library and the Georgian Papers Programme / Royal Archives, confirmed 24 Sept 2026:** both
+   run CalmView (same ASP.NET WebForms software; GPP redirects `www.gpp.rct.uk` -> blocked, but the bare
+   `gpp.rct.uk` serves). The bare Lambeth hostname 403s at the root; the real catalogue is under `/CalmView/`.
+   The search box itself is a WebForms postback (needs `__VIEWSTATE`), but submitting it once yields a plain,
+   repeatable GET URL for the results page that needs no session or postback replay:
+   `/CalmView/Overview.aspx?src=CalmView.Catalog&r=((((text)='TERM')))` (URL-encode the parentheses and quotes).
+   Paging past the default 20 rows needs one POST setting the page-size dropdown (`ctl00$main$TopPager$ctl15`)
+   to `0` ("All"), with `__VIEWSTATE`/`__EVENTVALIDATION` copied from that same results page. CalmView's text
+   search tokenises "cipher" and "cypher" as distinct terms -- query both spellings.
 2. **A real browser.** Sites that answer curl with 403, 202, a JavaScript challenge or a Cloudflare page
    (HathiTrust, PARES, Spink, TNA Discovery record pages, Yale) usually serve headless Chromium. Use
    `NODE_PATH=$(npm root -g) node tools/browser_fetch.js URL out.html --shot out.png`, which drives the

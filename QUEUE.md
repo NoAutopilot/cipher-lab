@@ -619,6 +619,99 @@ here claims a reading or a novelty class; both rows still need check-solved's si
 DECODE and PARES check specific to Spanish material (PARES holds the companion Consejo de Guerra/Estado
 papers for this same 1817-1820 Venezuela campaign and was not queried this pass), before the board.
 
+## UK and US catalogue candidates (LANE S scout of 24 September 2026)
+
+LANE S brief: catalogues neither solver project reads, outside Gallica (LANE G's host). Read first: LANDSCAPE.md's
+noise patterns ("cipher" as zero/foliation, Pepys, WWII, Voynich, Founders Online), QUEUE.md "Candidates not on
+DECODE" and "Digitised candidates outside the BnF" (what those sweeps already reached and left blocked). Hosts
+reached: Huntington Library CONTENTdm API (`hdl.huntington.org`, JSON), Lambeth Palace Library CalmView
+(`archives.lambethpalacelibrary.org.uk/CalmView`), the Royal Archives / Georgian Papers Programme (`gpp.rct.uk`,
+also CalmView-based), e-codices.unifr.ch (real search, English-language full text). Queried "cipher", "cypher"
+(Lambeth/GPP, both spellings distinguished by CalmView's tokeniser), "chiffre"/"Geheimschrift" (e-codices, per
+the brief's language list). NRS (`catalogue.nrs.gov.uk`): one reachability test only, `CONNECT tunnel failed`,
+confirming the 23 Sept egress block -- not queried further. County record offices via TNA Discovery's "held by
+other archives" records were gated on ASSIGNMENTS row 13's scoring worker (`session_01JE9661cSHNoQDHEvtc2qQb`)
+posting a `done` line in ROOM.md; it had not by the time of this sweep (still only its 02:57 UTC claim line) --
+skipped entirely per the brief, not attempted. Folger and Beinecke were not retried (already covered/blocked 24
+Sept). Every candidate below was checked against fresh shallow clones of `dbourdeau/cyphersolver` and
+`aaymeloglu/unsolved-ciphers` (by name and shelfmark/call-id, not just folder name), the cached DECODE catalogue
+notes already in this repo, and QUEUE.md/CATALOG.md/LANDSCAPE.md/`ciphers/`; none is already named there. Raw
+hits (86 across the three CalmView/CONTENTdm queries) and exclusion reasons are in
+`sources/solver-diffs/2026-09-24-lane-s-uk-us.tsv`.
+
+**Lambeth Palace Library, a working access route found.** The bare hostname 403s (an IIS-level block, both a
+default and a browser User-Agent tried, one retry as the good-citizen rule allows); the actual catalogue lives
+under `/CalmView/` and answers curl directly at 200 with no bot challenge. Its ASP.NET search form is a
+WebForms postback, but submitting it once yields a **plain, repeatable GET URL** for the results page:
+`/CalmView/Overview.aspx?src=CalmView.Catalog&r=((((text)='TERM')))` (URL-encode the parentheses/quotes) --
+no session cookie needed, confirmed by re-fetching it cold. Paging beyond the default 20 needs one POST
+setting the page-size dropdown to `0` ("All"), captured from the results page's own `__VIEWSTATE`. This route
+is worth recording in CLAUDE.md's Access playbook for the next worker who needs Lambeth. "Cipher" returned 27
+hits, "cypher" a further 10 (no overlap). Most of the "cipher" hits are the printed **Carew Manuscripts** (MS
+596-638, Elizabethan Ireland, Sir George Carew/Mountjoy/Pelham correspondence): opening one record
+(MS 597 p.246a, "A CIPHER") shows its own FindingAids field citing *Calendar of the Carew Manuscripts ... ed.
+Brewer & Bullen (6 vols., 1867-73), vol. II, document 308* -- the whole run is a printed calendar, not a fresh
+target; the other 15 Carew hits in the sweep are the same piece-run and almost certainly share that fate
+(not individually opened). Two hits outside Carew have no such citation and are Anthony Bacon's own
+intelligence archive (MS 647-662, Bacon's network for the Earl of Essex):
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | What the catalogue says | Material | Total |
+|---|---|---|---|---|---|---|---|---|
+| U3 | Letters in cypher to Anthony Bacon, Secretary to the Earl of Essex | n/a (Bacon Papers, 1579-1598 span) | en/fr(?) | cryptanalysis | Lambeth Palace Library, MS 649, ff. 490-495 / Bacon Manuscripts | Title reads plainly "Letters in cypher to BACON (Anthony), Secretary to the Earl of Essex" -- plural letters, 6 folios, no FindingAids/printed-edition field (unlike every Carew hit checked). Bacon ran Essex's continental intelligence network; this class of archive (secret correspondence with named and coded agents) is exactly where a real nomenclator shows up. | Not confirmed online; LPL's own "Image database" link not checked this pass -- likely a copy order or on-site visit | 36 |
+| U5 | Casenowe (A. Dufauk de) to Henri IV, King of France/Navarre | [1586] | fr | cryptanalysis | Lambeth Palace Library, MS 647, f. 218 / Bacon Manuscripts | Catalogue's own Language field: "French and cipher". Single letter, no FindingAids/printed-edition field. Possibly part of the same network/key as U3 (same MS 647-662 fonds), not established this pass. | Not confirmed online | 30 |
+
+**Huntington Library CONTENTdm API, a working query found after a false start.** The naive
+`dmQuery/ALIAS/TERM/fields/...` form silently ignores the search term and returns a fixed title-sorted listing
+(diagnosed on the Stowe Papers collection: "cipher", `"in cipher"` and no term at all all returned the identical
+77 rows, all Jamaica plantation surveys with no cipher content) -- discard that form. The documented
+`CISOSEARCHALL^TERM^all^and` clause works once `suppressfulltextsearch` is set to include full text (position 6
+of the path = `1`, i.e. **not** 0 as in the first attempt, which gave a true zero). Query against the
+**Manuscripts** collection (`/p15150coll7`), not Stowe: "cipher" (CISOSEARCHALL, full-text on) returned 31
+genuine hits, "cypher" zero (the collection's own cataloguers use "cipher" only). Two clusters stand out, both
+already digitised and viewable at `hdl.huntington.org/digital/collection/p15150coll7/id/<pointer>` with no
+login wall hit (200, no auth):
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | What the catalogue says | Material | Total |
+|---|---|---|---|---|---|---|---|---|
+| U1 | La Luzerne to Destouches (French naval commander, Chesapeake campaign), two undeciphered letters, with two sibling letters in the same small collection already deciphered | 16 & 31 Jan 1781 | fr | recovery | Huntington Library, mssDE 68 (4pp, 16 Jan) and mssDE 108(A) (8pp, 31 Jan) / Papers of Charles-René-Dominique Sochet Destouches | Per-page item records: mssDE 68 has 5+9+4 lines of "numerical cipher" across pp.1-3 (p.4 not checked) with no decode/translation noted; mssDE 108(A) has 11+ lines on p.1 of 8. Two other letters in the SAME small collection -- mssDE 37 (26 Feb, "decoded by Destouches") and mssDE 55 (3 Mar, "translated in another hand") -- are explicitly already deciphered, giving a plausible in-collection key (LESSONS.md's "the key was in the archive beside the letter" pattern). Destouches commanded the French fleet that fought the First Battle of the Chesapeake weeks later; La Luzerne was France's minister to the United States. | Digitised, viewer page loads without login (rights-reserved for reproduction per Huntington's standard notice, not access-gated) | 44 |
+| U2 | Blathwayt Papers (Addenda), Spain/Madrid diplomatic-intelligence run, one confirmed cipher fragment plus an in-collection key and several unopened siblings | 1725-1729 | fr | recovery (tentative) | Huntington Library, mssBLA 186 (Madrid, 13 Sept 1728) + mssBLA 188 (July 1729, key source) + 8 further unopened items (mssBLA, "To [-----]"/named, same phycola) / William Blathwayt papers (Addenda) | mssBLA 186: "In French, with two lines in cipher" -- a small, likely below-unicity fragment on its own. mssBLA 188: an enclosure "in cipher [from Port Ste. Marie] ... deciphered in French" already in the same collection, i.e. a key for this correspondence network exists somewhere in mssBLA. Eight further 1725-29 items from the same "phycola" were returned by the search but not opened to item-info level this pass (pointers in the TSV). | Digitised, viewer page loads without login | 37 |
+
+**Georgian Papers Programme / Royal Archives (`gpp.rct.uk`), reached, low yield.** Runs the same CalmView
+software as Lambeth (confirmed by identical CSS paths and the same `Overview.aspx?r=` query pattern) once the
+`https://www.` host is dropped for the bare one (the `www` host is egress-blocked, `000`, the bare host
+redirects and serves 200). "cipher" (2 hits) and "cypher" (4 hits) found only heraldic/monogram noise (a "Cipher
+G.R." royal-jewels inventory, an "English cypher" on a carriage panel) and one single, already-famous 1880
+telegram (Kimberley recalling Sir Bartle Frere from South Africa after the Anglo-Zulu War, VIC/MAIN/A/52/75) --
+not scored, near-certain to be quoted in print given how documented that recall is. The Stuart Papers series
+itself matched "cipher" only at the series (not item) level; per the brief's own warning, HMC's *Calendar of the
+Stuart Papers* (7 vols.) already covers this collection in depth, so it was not swept item-by-item this pass.
+
+**e-codices.unifr.ch, a real search this time, still no yield.** Found the actual search endpoint
+(`/en/search/all?sQueryString=TERM&sSearchField=fullText`, confirmed from the page's own form, not a guessed
+field name). "cipher" in full text: confirmed zero ("Your query for cipher in Full text returned no documents").
+"chiffre" and "Geheimschrift" both return many hits, but e-codices' holdings are overwhelmingly medieval
+liturgical/literary codices, not archival correspondence, and French "chiffre" = digit/numeral is the same
+foliation-noise pattern already documented for Gallica; not opened item-by-item (budget, and a poor profile
+match for this project regardless). Recommend dropping this host from future sweeps rather than retrying again.
+
+Caveats: (1) neither the Bacon Papers items (U3, U5) nor the Blathwayt/Destouches items (U1, U2) have been
+check-solved -- "not found in the two solver repos or this repo's own trackers" is a catalogue-matching result
+under rule 10, not a verified-unsolved verdict; all four need the six-source sweep before the board. (2) None
+of the four has had its actual page image opened; "cryptanalysis" vs "recovery" and the size estimates rest on
+the catalogue's own item-level notes, not a leaf view. (3) U2's "recovery" is explicitly tentative: it is not
+established that mssBLA 188's key covers the same cipher system as mssBLA 186's two lines, only that both are
+in the same small collection from the same three-year window. (4) The Carew Manuscripts cluster (15 further
+"cipher" hits beyond the one opened) is recorded here as a caution, not scored, so the next scout does not
+re-find it: FindingAids on the one record opened cites the printed Calendar directly, and Carew's Calendar was
+compiled specifically to print this correspondence in full, so the whole run is almost certainly already in
+print. (5) Materials for U1/U2 (Huntington) carry a standard rights-reserved notice for reproduction use; that
+is a copyright caveat on republishing images, not a login wall on viewing them (confirmed 200, no auth, on the
+digital-library viewer page). Requests: hdl.huntington.org 18 (1 collection list, 6 dmQuery searches including
+the diagnosed-broken form, 9 dmGetItemInfo, 2 viewer-page checks), archives.lambethpalacelibrary.org.uk 14 (2
+root 403s, 1 retry per the good-citizen rule, then 11 under `/CalmView/`), gpp.rct.uk 8, e-codices.unifr.ch 6,
+catalogue.nrs.gov.uk 1 (blocked, confirmed). All hosts one request at a time, >=1.5s apart, descriptive UA. No
+Google Books, no TNA Discovery, no logins, no credentials, no subagents.
+
 ## Printed ciphertext (detector test of 23 September 2026)
 
 Detector-test worker (RETRO-2026-09-23.md proposal 5, hypothesis A): `tools/ia_numeral_runs.py` swept 300
