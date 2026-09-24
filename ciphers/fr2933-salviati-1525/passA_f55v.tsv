@@ -246,11 +246,11 @@ line	pos	code	marks	action	conf	note
 9	27	w		confirm	H	
 9	28	_		plain	H	
 9	29	g		confirm	H	
-10	1	y	dot	confirm	H	
+10	1	y	dot	confirm	M	
 10	2	_		plain	H	
 10	3	g	1	confirm	H	
 10	4	y		confirm	H	
-10	5	_		plain	H	
+10	5	_		plain	M	page crease/fold crosses this box, uncertain reading, kept classifier plain call
 10	6	_		plain	H	
 10	7	bh		confirm	H	
 10	8	S7		confirm	H	
@@ -259,50 +259,50 @@ line	pos	code	marks	action	conf	note
 10	11	wd		confirm	H	
 10	12	bh		confirm	H	
 10	13	y		confirm	H	
-10	14	f		confirm	H	
+10	14	f		confirm	L	
 10	15	f	5	confirm	H	
 10	16	e		confirm	H	
-10	17	Z		confirm	H	
-10	18	y		confirm	H	
+10	17	Z		confirm	L	complex loop+cross shape, kept classifier Z at low confidence
+10	18	y		confirm	L	
 10	19	_		plain	H	
-10	20	_	dot	plain	H	
+10	20	_	dot	plain	L	ambiguous crossed shape, kept classifier plain call
 10	21	w		confirm	H	
-10	22	_	dot	plain	H	
+10	22	_	dot	plain	M	
 10	23	S7	1	confirm	H	
 11	1	eps	7	confirm	H	
 11	2	S7		confirm	H	
-11	3	]	ot	confirm	H	
-11	4	_		plain	H	
+11	3	sq	ot	correct	M	sharp right-angle box shape matches sq atlas better than ]
+11	4	_		plain	M	
 11	5	_		plain	H	
 11	6	#		confirm	H	
 11	7	H	1|o	confirm	H	
 11	8	S7		confirm	H	
 11	9	w		confirm	H	
-11	10	g		confirm	H	
+11	10	g		confirm	M	y-like cursive tail shape, kept classifier g at moderate share
 11	11	S7		confirm	H	
-11	12	y		confirm	H	
+11	12	y		confirm	M	
 11	13	g		confirm	H	
 11	14	]	o	confirm	H	
 11	15	bh		confirm	H	
-11	16	_		plain	H	
+11	16	_		plain	M	compound loop+cross shape, uncertain, kept classifier plain call
 11	17	rz		confirm	H	
 11	18	g	1	confirm	H	
 11	19	S7		confirm	H	
 11	20	#		confirm	H	
 11	21	S4		confirm	H	
-11	22	_		plain	H	
+11	22	_		plain	M	
 11	23	Lx		confirm	H	
-12	1	phi		confirm	H	
-12	2	_		plain	H	
+12	1	_		correct	H	clearly plain 'Sa', start of 'Sanza'
+12	2	_		plain	M	
 12	3	S7		confirm	H	
-12	4	N		confirm	H	
+12	4	_		correct	H	plain 'za', completing 'Sanza' (without); letter-like N confusion, same pattern as line4/8
 12	5	_		plain	H	
-12	6	_		plain	H	
-12	7	_		plain	H	
-12	8	_	dot	plain	H	
-12	9	_		plain	H	
+12	6	_		plain	L	
+12	7	_		plain	L	
+12	8	_	dot	plain	M	
+12	9	_		plain	L	
 12	10	_		plain	H	
-12	11	N		confirm	H	
+12	11	_		correct	M	plain cursive letters, letter-like N confusion
 12	12	_		plain	H	
 12	13	S4		confirm	H	
 12	14	y		confirm	H	
@@ -312,12 +312,12 @@ line	pos	code	marks	action	conf	note
 12	18	e	dot	confirm	H	
 12	19	phi		confirm	H	
 12	20	dl		confirm	H	
-12	21	_		plain	H	
-12	22	_		plain	H	
-12	23	w		confirm	H	
+12	21	_		plain	M	
+12	22	_		plain	M	
+12	23	_		correct	H	plain 'nso', part of 'penso'; letter-like w confusion
 12	24	_		plain	H	
 12	25	_		plain	H	
-12	26	_	ot	plain	H	
+12	26	_	ot	plain	M	
 13	1	S4		confirm	H	
 13	2	Lx		confirm	H	
 13	3	S7		confirm	H	
