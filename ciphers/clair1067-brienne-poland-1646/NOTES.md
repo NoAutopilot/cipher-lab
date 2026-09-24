@@ -1,5 +1,10 @@
 open
 
+> **Verifier, 24 Sept 2026 (AUDIT.md): N0.** The interlinear gloss on fol.226r-227r is a decipherment of this very item
+> (manuscript, on the leaf, not mentioned in the catalogue entry; no print located). Key and reading are grade C (307 C, 31 M,
+> no H). Say "key table set out from the leaf's own interlinear decipherment", never "deciphered" or any novelty word.
+> Status word: `solved` fits by the rah-canada-1869 precedent; left to the orchestrator.
+
 # Loménie de Brienne to the Queen of Poland, BnF Clairambault 1067, 19 May 1646
 
 QUEUE row: M18 (sources/solver-diffs — "Third pass, 24 September 2026 (M17-M21)" section of QUEUE.md).
@@ -77,7 +82,7 @@ up next.
 
 ## Verdict
 
-**Open.** No published plaintext, decipherment, or key lead specific to this letter found in six sources. The
+[Superseded 24 Sept 2026: the leaf carries an interlinear decipherment, see AUDIT.md, N0.] **Open.** No published plaintext, decipherment, or key lead specific to this letter found in six sources. The
 Tomokiyo same-office cipher designs (1647, 1651, different correspondent) are a real but unconfirmed lead, not
 a match — a solver should try Brienne's Cipher 1/2 against this letter's ciphertext once an image is obtained,
 before any cryptanalysis from scratch. **Leaf not viewed** — the single open item before this target can go to

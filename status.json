@@ -1292,7 +1292,7 @@
    "date": "24 Sept 2026",
    "kind": "recovery",
    "title": "Loménie de Brienne to the Queen of Poland, 19 May 1646 (BnF Clairambault 1067 fol.226r-227r): key and reading of the cipher passages",
-   "grade": "C 307, M 31 of 338 tokens (no H: no key sheet); novelty not yet classified (for LANE V)",
+   "grade": "N0 (interlinear decipherment on the leaf itself, not in the catalogue entry, no print located; AUDIT.md); C 307, M 31 of 338 tokens (no H: no key sheet)",
    "line": "A contemporary interlinear decipherment stands over every cipher line; aligning it gives key_1646 (84 codes, syllabic nomenclator; pairing consistency 0.863 vs shuffled <=0.448) and a reading decode_key.py regenerates. Same design family as Brienne's 1647/1651 tables, a different table.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1067-brienne-poland-1646"
   },

@@ -1,0 +1,6 @@
+host	requests	status
+api.crossref.org	3	ok
+api.openalex.org	1	blocked: HTTP 429 on https://api.openalex.org/works?per-page=5&search=%22que%20ie%20communicasse%20sa%20despesche%20a%20la%20Reyne%22
+archive.org	7	ok
+be-api.us.archive.org	11	ok
+www.googleapis.com	11	ok
