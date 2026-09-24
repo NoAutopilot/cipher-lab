@@ -23,6 +23,8 @@ session is billed. Every session record checked that day shows a five-hour windo
 caps in briefs are pacing for the shared window, not a budget; if any session ever shows `isUsingOverage: true`,
 stop and tell the owner.
 
+**Scaling rule, 24 Sept 2026:** with about fifty sessions on one five-hour window, every orchestrator checks `rate_limit_info.status` on itself before each dispatch: `allowed_warning` means no new workers anywhere; `rejected` means every lane interrupts its workers and writes the reset time here and in ROOM.md. The window resets on the rolling schedule get_session reports; work already pushed is safe.
+
 ## What to do when you see a warning
 
 - **allowed_warning**: finish the worker you are running, do not start another large one, and say so in

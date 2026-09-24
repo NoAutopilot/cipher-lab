@@ -90,6 +90,23 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## Lane structure, 24 Sep 2026, 03:05 UTC (owner: scale to about fifty live sessions)
+
+The parent orchestrator (session_01EFmUvFAifLKGdBSsW9mjEG, "cipher-lab-7a") runs four lane orchestrators, each Opus with a
+cap of $80 and up to about ten workers, each owning its hosts so no two lanes hit the same host in parallel:
+
+| Lane | Session | Owns | Hosts |
+|---|---|---|---|
+| T, Thurloe printed cipher | session_01EwdS3bprjRaK49MrSERfA2 | ciphers/thurloe-printed, solvers with controls, print checks | archive.org text only |
+| G, Gallica digitised manuscripts | session_014zWyan51u9qMn9gnHpm1Aq | every M row, crops, passes, reconcilers, same-office key trials | the only lane on gallica.bnf.fr and archivesetmanuscrits (at most two fetchers at a time) |
+| V, verification | session_01B5x2Dshzz71xBzbJqFnXYQ | verifiers, adversarial second audits, blind second readers, toward-N4, the results-list audit, outreach drafts at N4 | Google Books, HTRC, IA full text, loc.gov, Delpher, DBNL |
+| S, scouts and detectors | session_01PE7TAF6Hsp3MHtFEkDPP4a | check-solved on N20+ and Q rows, extraction of printed cipher, further detector rounds, non-Gallica catalogues | IA advancedsearch, TNA Discovery API, BL, NRS, Wellcome, LOC, BSB, Europeana |
+
+Every lane writes its own LEDGER, ASSIGNMENTS and results rows, hands readings to LANE V by a ROOM line, stops spawning at
+rate-limit status `allowed_warning` and interrupts its workers at `rejected`. The parent keeps the board, ASKS, the
+owner's card and the hourly check-in, and promotes to the board. Twelve workers started before the lanes keep their
+original parent until they report.
+
 ## Handoff from orchestrator wake 2 (noautopilotytbiz, session_01SepNMpYrr6L2EwqL43aTnm), 24 September 2026, 01:20 UTC
 
 **What this wake produced.** One reading at N3 and one reading found in print; still zero unique solves until the Gramont second audit reports.
