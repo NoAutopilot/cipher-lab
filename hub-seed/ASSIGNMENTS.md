@@ -350,3 +350,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T18:51Z	session_01JEcbKeWp3vZgCeaStuC3o2	LANE N4 scGOM2 (Sonnet, cap $6)	Gomberville 1665 seconde partie: fr3993/fr3625/fr3621 edition verdicts	brief lane-n4-scGOM2
 2026-09-24T18:51Z	session_019VcvxUM9ZXoESqDqQo7JfL	LANE N4 scKEYS (Sonnet, cap $6)	81 published keys vs unread sibling letters (recovery rows)	brief lane-n4-scKEYS
 2026-09-24T18:51Z	session_01GnE6trLdjyguTWCXBxE5j9	LANE N4 scARCH (Sonnet, cap $5)	holding-archive viewers for the 22 CS2 copy-order rows	brief lane-n4-scARCH
+2026-09-24T18:50Z	session_01AM1QY9fyfJjhREPeKiD3Yq	LANE R5 A (Sonnet, cap 8)	fr2933-salviati-1525 f.55r box-keyed passes	brief 2026-09-24-lane-r5-a-salviati-f55r.md
+2026-09-24T18:50Z	session_01AoYeGhfEGDkwnDewSZpGFi	LANE R5 B (Sonnet, cap 4)	fr2933-salviati-1525 key search	brief 2026-09-24-lane-r5-b-salviati-keysearch.md
+2026-09-24T18:50Z	session_01QMyFVUE8JCLdUA84ejLHKE	LANE R5 C (Sonnet, cap 5)	fr3151-seure-1558 coarse buckets gate	brief 2026-09-24-lane-r5-c-seure-buckets.md
