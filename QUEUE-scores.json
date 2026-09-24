@@ -8717,5 +8717,53 @@
         "total": 33
       }
     ]
+  },
+  "lane_g3_gallica6": {
+    "_about": "LANE G3 worker B, Gallica scout round 6, 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-g3-b-scout6.md). Real-browser pagination past page 1 of archivesetmanuscrits.bnf.fr for the five capped terms x three century buckets the Fifth pass used (735 raw page-2+ items, 25 survived noise/context/known/fr.3xxx filtering, 2 kept as new candidates M35/M36, 2 flagged not nominated, 21 dropped). Pagination itself works via a real browser session (resolves the Fifth pass's open question) but is non-deterministic run-to-run (same query returned different item counts in two runs) -- see QUEUE.md Sixth pass section.",
+    "date": "24 September 2026",
+    "requests_per_host": {
+      "archivesetmanuscrits.bnf.fr": 110,
+      "github.com": 2
+    },
+    "rows": [
+      {
+        "rank": "M35",
+        "target": "Lettre en chiffres, et en italien, de cardinal Giovanni Salviati",
+        "year": "1525",
+        "lang": "it",
+        "kind": "cryptanalysis",
+        "reference": "BnF Français 2933, no. 11, ark cc493855/cd0e354",
+        "holder": "BnF",
+        "axes": {
+          "language_fit": 3,
+          "material": 3,
+          "key_lead": 0,
+          "size": 1,
+          "competition": 3,
+          "weight": 1,
+          "unread": 3
+        },
+        "total": 39
+      },
+      {
+        "rank": "M36",
+        "target": "Chiffres desquelz l'on a use durant le voiage d'Allemagne -- cipher-assignment key list, 1519 imperial-election embassy to the Palatine elector",
+        "year": "1519",
+        "lang": "fr",
+        "kind": "recovery",
+        "reference": "BnF Français 5761, no. 3, ark cc587094/cd0e296",
+        "holder": "BnF",
+        "axes": {
+          "language_fit": 3,
+          "material": 3,
+          "key_lead": 3,
+          "size": 1,
+          "competition": 3,
+          "weight": 2,
+          "unread": 2
+        },
+        "total": 46
+      }
+    ]
   }
 }

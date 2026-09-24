@@ -791,6 +791,109 @@ the browser tool should (a) reproduce `pageEnCours=2` in an actual browser sessi
 if browser pagination works, resume these same nine buckets past page 1 rather than re-running them, since the
 control and the bucketing method are already validated here.
 
+**Sixth pass, 24 September 2026 (LANE G3 worker B).** Brief: with a real browser session
+(`tools/browser_fetch.js`'s own Playwright/Chromium, driven directly for this multi-field form rather than
+through the CLI, which only fills one field at a time), page past page 1 of archivesetmanuscrits.bnf.fr for
+the five capped terms (`chiffre`, `en chiffre`, `avec chiffres`, `en chiffres`, `déchiffrement`) across the
+same three century buckets (1500-1599, 1600-1699, 1700-1799) the Fifth pass used, resolving that pass's own
+"concrete next step".
+
+**Finding 1: the real-browser session does page past page 1, unlike curl.** The advanced-search form
+(`pageRechercheAvancee.html`) submits via `onClickRechercheAvancee()` to `pageResultatRechercheAvancee.html`,
+and its own `<li class="next"><a href="...pageEnCours=N">` links, clicked in the same session, serve real,
+distinct content on pages 2 and beyond — confirmed on the control bucket (`avec chiffres` 1600-1699, 213
+results, Clairambault 1067/M18 on page 1) reading all 3 of its pages with genuinely new arks on 2 and 3. The
+Fifth pass's curl-side "ERREUR RESULTATS" on `pageEnCours=2` is specific to that reduced, cookie-only session;
+a full Playwright browser context does not hit it.
+
+**Finding 2, and the more important one this pass: pagination past page 1 is non-deterministic even within
+the browser.** The same query, run again in a fresh browser session minutes later, returned a different page
+count and a different item set. Two reproductions logged: `en chiffre` 1600-1699 returned 338 items over 5
+pages in one run and 0 items over 1 page (next-page link absent) in a second run of the identical form
+submission; `chiffre` 1500-1599 returned total=1474 correctly on first submission, then failed with the site's
+own "... résultat s'affichera dans un instant." AJAX-loading placeholder never resolving to a real count on a
+second submission (worked around with a poll-and-wait, see `tools/browser_fetch.js`-adjacent scratch script,
+not committed as this was one-off). Two buckets also returned literal `upstream request failed` (the proxy's
+own transient marker, not a site block) on first attempt, cleared by the one-retry rule. **Net effect: this
+pass's page-2+ coverage is a sample per bucket, not exhaustive, and not reproducible run-to-run** — a
+concrete, different problem from the Fifth pass's "curl can't page at all", worth flagging for whoever next
+budgets a browser-tool pass against this host: expect to retry, and expect two runs of the same query to
+disagree.
+
+**Buckets run**, 5 terms × 3 centuries = 15, digitised-only, pages 2+ collected up to a 6-page cap (the site's
+own reported "sur N pages" was usually far higher than what actually served, matching the Fourth/Fifth passes'
+own note that the UI caps well short of the reported total):
+
+| Term | Bucket | Reported total | Pages served beyond 1 | Items extracted |
+|---|---|---|---|---|
+| chiffre | 1500-1599 | 1474 | 1 | 0 |
+| chiffre | 1600-1699 | 1175 | 1 | 0 |
+| chiffre | 1700-1799 | 653 | 2 | 53 |
+| en chiffre | 1500-1599 | 1471 | 3 | 100 |
+| en chiffre | 1600-1699 | 1173 | 1 | 0 |
+| en chiffre | 1700-1799 | 648 | 2 | 53 |
+| avec chiffres | 1500-1599 | 323 | 3 | 162 |
+| avec chiffres | 1600-1699 | 213 | 2 | 155 |
+| avec chiffres | 1700-1799 | 125 | 1 | 52 |
+| en chiffres | 1500-1599 | 446 | 2 | 50 |
+| en chiffres | 1600-1699 | 334 | 3 | 102 |
+| en chiffres | 1700-1799 | 346 | 1 | 0 |
+| déchiffrement | 1500-1599 | 326 | 0 | 0 |
+| déchiffrement | 1600-1699 | 390 | 1 | 8 |
+| déchiffrement | 1700-1799 | 113 | 0 | 0 |
+
+735 raw item rows (page 2+ only), 521 unique arks after in-run dedup. Filtered: known-ark match against
+every ark already in QUEUE.md/CATALOG.md/ciphers/NOTES.md/LANDSCAPE.md (18 dropped), the Fourth pass's own
+noise/context regex (406 dropped — the majority: this term set, unbucketed by a narrower phrase, pulls in
+heavy false-positive traffic from Arabic/Persian numeral-value texts, Greek and Latin literary miscellanies,
+and administrative/chancery volumes, the same "chiffre = digit" and "roi/lettre" false-friend patterns the
+Fourth and Fifth passes already named), and the Français 3005-3993 wholesale exclusion checked against every
+"Français NNNN" occurrence in each row's own text and its group shelfmark, not just the first match (69
+dropped — this pass's own bug, caught before commit: matching only the first "Français NNNN" number in a
+combined shelfmark+text string silently let volume-level header rows through under a different, lower,
+already-scored sibling's shelfmark). 25 survived to a manual per-item read (full table:
+`sources/solver-diffs/2026-09-24-lane-g3-gallica6.tsv`).
+
+**All 25 resolved by hand; two new, two flagged, twenty-one dropped.** Fifteen are false positives the
+noise/context filter missed because the matched cipher-family term never actually names ciphertext in that
+row's own text (a literary Histoire, a chancery formulary, a trial register, Greek/Persian/administrative
+volumes, six Nîmes Bibliothèque-Séguier letters and one BULAC/Nantes item with no "chiffre" word anywhere
+displayed — the search term must have matched unshown metadata). Two are already-known: Français 2988 no.8
+is the item CATALOG.md's "Earlier" list already names ("misplaced English cipher in BnF fr.2988"); Français
+20974 ("Clefs de la correspondance chiffrée de François, duc DE GUISE") is the exact key register QUEUE.md's
+M17 already cites as Tomokiyo's guise.htm source for the Clairambault 349 key. Two are flagged, not
+nominated: Français 3995 ("Recueil de chiffres avec leurs clefs... du duc de Nevers") sits inside the
+"Français 3974-3995, Collection Mémoires de la Ligue" volume the Fourth pass excluded by name — its own
+number falls 2 past that exclusion's stated upper bound of 3993, which should be corrected to 3995 rather
+than treated as a gap; italien 2061 (Paolo Sarpi/Castrino/Gillot correspondence, 1608-1612, "chiffres employés
+dans les précédentes lettres" at f.125) shares both correspondents and years with M3 (BnF Dupuy 111, Sarpi's
+Castrino cipher, already found-solved via Busnelli 1931/1986) and needs a check-solved pass against that
+edition before any nomination — not run this pass (out of brief: "do not check-solved").
+
+Two survive as new, copy-free candidates, checked against fresh shallow clones of both solver repositories
+(grepped by shelfmark number, sender surname and ministry-adjacent terms — "2933", "Salviati", "5761",
+"Motheaugroing", "Cordier" — no relevant hit in either) and against CATALOG.md/QUEUE.md/sources/cryptiana:
+
+| Rank | Target | Year | Lang | Kind | Reference | Catalogue note | Total |
+|---|---|---|---|---|---|---|---|
+| M35 | "Lettre en chiffres, et en italien, de JOHANNES, cardinalis de Salviatis" | 16 Oct 1525 | it | cryptanalysis | BnF Français 2933, no. 11, ark cc493855/cd0e354 | A single ciphered letter from Cardinal Giovanni Salviati (a leading Medici-circle cardinal, active in French/Italian diplomacy in this period), named apart from its siblings in a "Recueil de lettres et de pièces originales" below the fr.3xxx exclusion threshold; no key or decipherment stated. Not in either solver repo or DECODE by this shelfmark; not in CATALOG.md. | 39 |
+| M36 | "Chiffres desquelz l'on a usé durant le voiage d'Allemagne" — a cipher-assignment key list for the 1519 embassy to the Palatine elector (Cordier, La Motheaugroing, and others named) over the imperial election that made Charles V emperor | 1519 | fr | recovery | BnF Français 5761, no. 3, ark cc587094/cd0e296 | The item itself is a contemporary key (correspondent-to-cipher-code list), not yet matched against any ciphertext letter — the same "Recueil" volume (Français 5573-5894 range) was not checked this pass for a companion ciphered letter using this exact key. Not in either solver repo or DECODE by this shelfmark; not in CATALOG.md. | 46 |
+
+Caveats: (1) as with every prior BnF pass, no image was opened and no row here has been check-solved (M36
+especially needs its own volume searched for a matching ciphertext before any solving attempt); (2) M35's
+size (letter length) is unknown from the catalogue text alone, scored conservatively; (3) this pass's own
+pagination non-determinism (Finding 2) means the 735-row sample is neither exhaustive nor exactly
+reproducible — a future pass re-running these same 15 buckets should expect a different page-2+ item set,
+not treat a differing count as an error.
+
+**Report:** raw rows (pages 2+) 735, unique arks 521 (521 further filtered per above), kept for manual review
+25, new candidates 2 (both digitised/copy-free), flagged 2 (not nominated), dropped 21. Requests:
+archivesetmanuscrits.bnf.fr approximately 110 (three sweep attempts — one crashed mid-run on a site-side
+placeholder/timeout and was resumed rather than restarted, all ≥1.5s apart, one retry per failed combo per
+the good-citizen rule, well under the 150-request cap), github.com 2 shallow clones (dbourdeau/cyphersolver,
+aaymeloglu/unsolved-ciphers, grepped by shelfmark and surname, deleted after). No subagents, no logins, no
+images opened. Under the $5 cap.
+
 ## Digitised candidates outside the BnF (scout of 24 September 2026)
 
 Row 14 continuation: a browser-tool pass (CLAUDE.md Access playbook route 2) on the six hosts the 23 Sept
