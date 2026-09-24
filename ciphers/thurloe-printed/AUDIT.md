@@ -437,3 +437,62 @@ stretch" now reads "stretch added in this pass"). No other sentence in `ciphers/
 5. DECODE: search "Stamford" and "Thurloe" in the next session that holds the login.
 6. Not an N4 gate, but decisive in substance: an image of Bodleian MS Rawl. A. 24 at Stamford's letter (Birch "vol. xxiv p.73, 76"; the current
    foliation is uncertain, see (d)) for any interlined or separate decipherment. This is an ASKS/REQUEST item for the person.
+
+## Gap search, LANE W worker D, 24 Sept 2026
+
+LANE W worker D (Sonnet, session_01F234Ho27aPryLTBhTerxbK), parent LANE W orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq.
+Closes "Toward N4 (what remains)" items 3 and 4 above. No decoding, no reclassification; log only. Clock read
+06:43-06:50 UTC.
+
+### Item 4: 1786 Clarendon State Papers vol. 3, via Internet Archive
+
+Could not find the volume on archive.org to search it. Four `advancedsearch.php` queries, each read before the
+next (title/creator combinations for "State Papers Collected by Edward, Earl of Clarendon", "great rebellion",
+and a 1780-1790 date filter) return only **one** copy of the 1767-1786 printed edition (not the separate 1869-72
+*Calendar* series, which the first and second audits already searched with 0 hits for Stamford/Kelsey): identifier
+`10622705bsb`, "State Papers Collected By Edward, Earl of Clarendon ... 2" (metadata title/date fields, dated
+1773). That "2" is the volume number: **this is vol. 2** (1773, running to 1654), not vol. 1 as the first
+adversarial audit's line 376 says ("only `10622705bsb` (vol. 1)") -- small correction, worth fixing there. Vol. 3
+(1786, the volume that would cover March 1655) is **not on Internet Archive** under any of these queries, so the
+be-api in-item full-text search for Stamford / Kelsey / "Calais March 1655" / P4 phrases could not be run --
+there is no vol. 3 item to run it against. Did not query vol. 2 (`10622705bsb`) itself: it does not cover 1655,
+so a hit there could not be P4's letter or its content.
+
+One-shot check of the *catalog.hathitrust.org* Bibliographic API (`oclc:1899749`, a guessed OCLC number) also
+failed: 403 from Cloudflare, one request, stopped, consistent with the "Access playbook" item 3 HathiTrust note.
+Google Books / HathiTrust full search for this volume is LANE V's per the brief and item 4's own text; not
+repeated here.
+
+**Result: item 4 not closed.** The gap is now "vol. 3 is not on IA (confirmed by four queries); still needs
+Google Books or HathiTrust by title/volume rather than by full text search", which is a narrower, more useful
+gap than before.
+
+Requests this session: archive.org advancedsearch 4 (>=2s apart); catalog.hathitrust.org 1 (403, not retried,
+per credential/access-playbook rule).
+
+### Item 3 (and the parallel Eckert rerun): OpenAlex and Semantic Scholar
+
+Both hosts returned the same global 429 seen earlier today (06:16-06:30 UTC, first and second P4 audits; also
+logged in `ciphers/eckert-1864/AUDIT.md` "Open-index scholarship pass"), not a query-specific limit:
+
+- **OpenAlex**: `Thurloe Stamford Calais 1655` -- 429, "Insufficient budget... shared by everyone on your
+  network's IP address... resets at midnight UTC" (`retryAfter` ~62100s, i.e. this is a whole-day, whole-IP
+  exhaustion, not a per-request throttle). Retried once after a 5s pause: identical 429 with the same
+  `retryAfter` countdown, confirming it will not clear within this session. Given that explicit shared-budget,
+  whole-day message, the two remaining P4 queries (`William Stamford Thurloe spy`, `Thurloe intelligence cipher
+  1655`) were **not** separately sent to OpenAlex -- a third and fourth call would return the identical error,
+  and the good-citizen rule caps retries against a host already answering 429. They were sent to Semantic
+  Scholar instead (below). The two Eckert queries (`Decoding the Civil War Huntington telegram`, `Eckert cipher
+  book Union telegraph 1864`) were each sent to OpenAlex once, for the Eckert AUDIT.md log: both 429, same
+  message.
+- **Semantic Scholar**: `Thurloe Stamford Calais 1655` -- 429 "Too Many Requests". Retried once after a 5s
+  pause: identical 429. `William Stamford Thurloe spy` and `Thurloe intelligence cipher 1655` sent once each:
+  both 429, same message. The two Eckert queries were also sent once each: both 429.
+
+**Result: item 3 not closed, unreachable for this session.** Both APIs are confirmed down at the shared-IP level
+(not just this worker), consistent with the same finding already on record for Eckert's open-index pass earlier
+today. No titles or DOIs to report.
+
+Requests this session: api.openalex.org 4 (1 query with one retry, 2 Eckert queries, all 429); api.semanticscholar.org
+6 (1 query with one retry, 2 further Thurloe queries, 2 Eckert queries, all 429). One at a time, >=2s apart, no
+logins.
