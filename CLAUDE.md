@@ -118,6 +118,12 @@ without looking it up; a private individual's address never goes in the file (24
 3. **Orchestrator** promotes to the board only after check-solved, at most a handful at a time, choosing by
    score and by the three kinds together, so the board always carries at least one recovery and one
    cryptanalysis candidate and never fills with editions.
+   Selection rule (24 Sept 2026): rank by expected value = P(the first cheap test moves it) x value / cost, not by
+   fame or by scout score alone. Prefer items with a transcription on disk, a formal constraint (a known key family,
+   a crib, a host text, a form), a language with a corpus in tools/data, and no published matched-control negative.
+   Famous items (Voynich, Kryptos K4, Zodiac Z13/Z32, Beale, Rohonc, Dorabella) enter only with a named untried
+   cheap test; `UNSOLVED-SURVEY.md` is the reference ranking for the public list and is re-ranked when a row's
+   status changes.
 3a. **Breadth lane.** Before any target gets a campaign (a cap above $10), it gets a spec (`specs/<slug>.json`:
     ciphertext as transcribed with source and date, alphabet, constraints, cheap tests in order, a `judge` block) and
     one Sonnet worker runs its first cheap test at a cap of $3, with the matched control, and writes the two numbers
