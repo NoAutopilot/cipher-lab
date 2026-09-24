@@ -474,6 +474,10 @@ taken from the Lasry/Tomokiyo table" (key.tsv). It does not grade the identifica
 on the reconciler. M means a sign read with doubt. U means a sign key.tsv does not cover. No value was added to
 key.tsv and no cryptanalytic extension was made, so this is a key-based reading with unread signs, not a
 cryptanalytic result, and no control was needed.
+*[Verifier note, f.30 audit, 24 Sept 2026: only `l` signs are demoted to M (decode.py). 331 of the 1502 H tokens
+are on signs read at medium confidence (`m`); H on a high-confidence identification is 1171. 43 H tokens fall on the
+flagged signs eh (19), Tb (16) and H (8). "M means a sign read with doubt" should read "M means a sign read with
+low confidence (`l`) or a key value graded M". See AUDIT.md, section "f.30".]*
 
 **Lines that read as continuous French** (word division possible by eye with at most one or two unread signs,
 22 of 55): f.30r L13, L14, L19, L20, L21, L26, L27, L31, L32, L33; f.30v L02, L03, L04, L07, L08, L09, L10,
@@ -492,7 +496,9 @@ uses nomenclator signs outside both tables. It needs a second reader on the crop
    recouvrer" something (f.30r L33) and of someone who "·yont perdu" (f.30r L34).
 3. Formulas addressed to "Sire" occur (f.30v L05-L06 "TRES ·VMBL / ·ENTSIRE"), with
    "vostre commandement" (f.30v L17). So the cipher is addressed at least in part to the king. The addressee
-   of item 22 is not established here.
+   of item 22 is not established here. *[Verifier note, 24 Sept 2026: the cipher addresses the king ("Sire", "vostre
+   commandement"; grade I). It is probably the "article mis a part" that f.29r says was addressed on the outside to
+   Villandry although meant for the king (inference). See AUDIT.md, section "f.30".]*
 4. The letter names "l'ambassadeur ... et aultres ses ·ini·res" (f.30v L12), "il est impossible" (f.30r L31),
    "il est rayson" (f.30r L14), "a craindre" (f.30v L15), "neantmoins qu'il ait maulvayse fan·asie" (f.30v L18).
 5. Closing matter on f.30v L19-L20 (DE·ESPPIR, ...), before the clear-text date and signature.
@@ -617,3 +623,5 @@ view that signs there are misidentified or belong to a nomenclator outside both 
 Tomokiyo key images; a second reader on f.30r L01-L12; test v as EM or M, and B8 as a null, on the crops.
 
 Requests this pass: archive.org 4. No other host, no subagents, no logins.
+
+**Suggestions from the f.30 audit (24 Sept 2026, not done):** grep *Archivio storico italiano* Appendice II-IX and Sanuto *Diarii* 52-53 for Gramont, May-June 1530 (the two gaps between f.30 and N4); for the solver, Dupuy 452 f.48 (Gramont to Du Prat, 15 May 1530) and fr.3019 f.84 (to the grand maître, 15 May) are context letters in clear, and the printed April 1530 letter to the king (ASI App. I pp.473-481) is a period word list for the same negotiation.

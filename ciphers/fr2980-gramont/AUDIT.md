@@ -50,6 +50,10 @@ recovered"; "538 of 569 signs read" or "read in full" (the reading is partial an
 Gramont" as of 20 May 1530 (he was created cardinal on 8 June 1530); "we found that the key applies" (Tomokiyo
 said so first, and Bourdeau catalogued it).
 
+*[Verifier note, f.30 audit, 24 Sept 2026: the counts above are the first reader's. After the second reader's
+changes the passage is 568 signs, H 533 / M 30 / U 5 (NOTES.md, "Second reader: changes applied"; decode.py --check).
+Use those in any safe sentence.]*
+
 ## 2. What the repo claims (extracted)
 
 | field | value in the repo | source |
@@ -692,3 +696,233 @@ api.semanticscholar.org 6 (all 429). api.crossref.org 6 (one per row, `query.bib
 api.archives-ouvertes.fr 12 (6 combined-query attempts at 0 hits, 6 narrower single/double-term follow-ups,
 200 each). www.persee.fr 6 (`ta=article&q=...`, 200 each) plus 1 article-page fetch (Fraikin 1906, 200). WebSearch
 7 queries. No logins, no credentials, no decoding, no edits to reading.txt/key.tsv/ciphertext.txt/key_extension_f30.tsv.
+
+## f.30
+
+Verifier session (LANE V, Opus, cap $15, orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ), 24 September 2026,
+03:34-04:05 UTC (`date -u` read). It took no part in the f.30 passes, the reconciliation or the S extension. It did
+not decode, and it did not touch ciphertext_f30.tsv, key.tsv, key_extension_f30.tsv or any reading. It audits
+reading_f30.txt / reading_f30_tokens.tsv (published key) and reading_f30_extended.txt (key + grade-S extension,
+commit e8567d0, which landed during this session). Section 4 and the three sections after it cover families already
+searched for f.29r. They are reused here and not repeated. This section adds the searches that f.30's own plaintext
+calls for.
+
+Claim under audit (orchestrator, ROOM.md 24 Sept 03:16; status.json): "f.30r-v: read with the published key 24
+Sept 2026, 1973 signs, H 1502 / M 239 / U 232, continuous French on 22 of 55 lines", and, since e8567d0, "11
+unkeyed signs given values at grade S with a matched control (96/103): U 232 to 59, continuous French on 32 of 55
+lines".
+
+### Verdict
+
+| item | prior plaintext | prior decipherment of this item | class |
+|---|---|---|---|
+| BnF fr.2980 f.30r-v, no.22 (Anc. 8505), entirely in cipher, "Faict à Rome, le XXme jour de may M.D.XXX", signed "De Gramont E. de Tarbe"; addressed **to the king** (see below), 1973 signs | **not located.** No printed text, extract, calendar entry or summary of this letter was found. Its existence and date are in print only in the 1868 BnF catalogue and the *Catalogue des actes* IX [411] ("2980, fol. 29 et suiv."). A **sibling letter** on the same negotiation is in print: Gramont to Francis I, Rome, April 1530, in clear (Béthune 8530 c.35), *Archivio storico italiano*, Appendice I (1842-44), doc. XXXVIII, pp.473-481 (Molini's transcription). **It is a different letter** (test below). | **not located.** None on the leaf, in the volume, in the BnF or Dupuy catalogues, in print or online. As for no.21, it had been **identified as readable** before us: Tomokiyo, francis.htm ("These undeciphered letters can be read with Gramont's cipher (1530)"; his page source also holds a commented-out image slot `francisBnFfr2980f29.png`, f.29 only), and Bourdeau, CATALOGUE.md line 76, catalogue 328 ("fr. 2980 nos. 21–22 … Gramont 1530 key held"; re-checked at head c85ece1, 23 Sept 2026 20:50 -05:00). Neither gives a reading. | **N3** |
+
+**Why N3 and not N4.** The gaps that hold f.29r at N3 are shared by f.30 and are still open: Camusat (1619) and
+Champollion-Figeac's *Captivité* (1847), both located on Gallica and both behind its challenge; HathiTrust full
+text (Cloudflare). f.30 adds three gaps of its own. (1) The *Archivio storico italiano* Appendice was read in vol.
+I only. Vols. II-IX, where Molini's and others' Florentine documents continue, were not grepped. (2) Sanuto's
+*Diarii* for 1530 (vols. 52-53) were not searched. They register intercepted and copied letters, and they are the
+next place a summary of a French letter from Rome would appear. (3) OpenAlex and Semantic Scholar were unreachable
+this session (quota exhausted; 429). The JSTOR rows are queued and do not block the class on their own (CLAUDE.md,
+24 Sept 2026). A session that closes (1) and (2) and reruns the open indexes can take f.30 to N4, together with
+f.29r once Camusat is read.
+
+**Confidence in N3:** high for the English, Spanish and Venetian calendars, Le Grand's *Preuves*, Desjardins,
+De Leva, Pastor and the Dupuy catalogue, which were read or grepped in full text. Medium for the rest of Molini's
+output and the Italian series.
+
+**Safe sentence.** "BnF fr.2980 f.30r-v (no.22) is a letter written entirely in cipher by Gabriel de Gramont,
+bishop of Tarbes, Rome, 20 May 1530. The formulas 'Sire' and 'vostre commandement' show that it is addressed to
+Francis I. Tomokiyo had identified it as readable with the published Gramont 1530 key (Tomokiyo; Lasry 2023), and
+Bourdeau catalogued it (328). We transcribed it from the Gallica image (one reconciled reading of two blind passes)
+and applied that key: the table gives values for 1502 of 1973 signs (H), 239 are uncertain and 232 unkeyed. A
+further 11 signs were given values cryptanalytically (grade S, matched control 96/103), leaving 59 unread. Parts of
+32 of 55 lines read as continuous French, on the declaration of the liberty of Florence. No prior printed plaintext
+or decipherment of the letter was located in the editions listed in AUDIT.md (N3). A clear-text letter of April 1530
+from Gramont to the king on the same negotiation is printed in *Archivio storico italiano*, Appendice I, pp.473-481."
+
+**Unsafe sentences.** "First decipherment" / "previously unread" / "newly recovered" / "unpublished" (rule 10;
+N3 only). "Gramont to Villandry" for f.30: its cipher addresses the king, and the BnF notice names no recipient.
+"Cardinal Gramont" on 20 May 1530: he was created cardinal on 8 June. "1502 of 1973 signs read" or "read in
+full": the reading is partial and rests on one reconciled transcription. "1712 signs deciphered": S values are
+cryptanalytic, not key readings. "A new letter on Florence": the negotiation is documented in print (ASI App. I;
+Pastor X; De Leva III).
+
+### Who, to whom, when, where: is f.30 a separate letter?
+
+- **Separate item, own date and signature.** The BnF notice (re-fetched this session, cc494342, one reset then
+  200) lists no.22 on its own, "Lettre en chiffre", with the full date "Faict à Rome, le XXme jour de may M.D.XXX".
+  The date and signature on f.30v are in clear (NOTES.md, check-solved). No recipient is named in the notice (its
+  "…" elides the address). no.21 names Villandry. **Established** (catalogue and image).
+- **Recipient: the king.** The cipher contains "SIRE QV'IL VOVS" (f.30r L17), "… SIRE P[ET] MAINTENIR" (L21), "TRES
+  HVMBL[EM]ENT SIRE" (f.30v L05-06) and "VOVSTRE [COM]MANDE[M]ENT" (f.30v L17). "Sire" is the form of address to the
+  king. **Inferred, grade I, strong.** It fits f.29r's cipher: "il y baille a ce porteur ung article que j'ay mis a
+  part, et … faict l'adresse de dessus a vous, combien que ce soit au roy" (reading.txt L01-L03). Villandry received
+  a piece set apart and addressed on the outside to him, though meant for the king. f.30, an all-cipher letter to the king on the same
+  day, is the obvious candidate for that piece. **This identification is an inference, not established.** An
+  alternative is the "double des lettres que j'escriptz lundi" of f.29r's clear text. It is less likely because
+  f.30 is dated the 20th in clear, not Monday the 16th.
+- **Sender, place, year.** Gramont (clear signature), Rome, 1530 (clear dateline). Consistent with the embassy
+  record (Pastor X: Gramont in Rome from April 1530; CSP Spanish IV.1 pp.560-561, Mai on Gramont "some days ago",
+  late May 1530: a courier of Gramont's "stopped at Florence and the despatches taken from him").
+- **Subject (grade I, from the decoded runs):** "la declaration de la liberte de Florence" (f.30v L02-03, L10),
+  "la ville et la force entre vo[s] mains" (f.30v L09), "qu'il ve[u]lt aller en Avi[g]non" (f.30r L32), "pour
+  recouvrer ce que ses predecesse[u]rs … ont perdu" (f.30r L33-34), "il n'a aucune desliberation" (f.30v L01),
+  "l'ambassadeur … et aultres ses ministres" (f.30v L12). This continues the plan Gramont reported in April: the
+  Florentines lay down arms, the papal camp withdraws, and "la force de la ville demourast entre voz mains", under
+  the king's protection (ASI App. I p.477).
+
+### Is f.30 the printed April letter in cipher? Test
+
+The April letter (ASI App. I pp.473-481, OCR from IA `archiviostoricoi01fireuoft`, 16,126 letters after folding)
+was compared with the f.30 reading (1,840 letters in 47 unbroken runs of 8+, extended reading). Both were folded to
+the cipher alphabet (upper case, no accents, J→I, U→V, Y→I). For each run, the longest substring present in the
+April text was found.
+- **April letter:** longest shared run 18 letters (SIREQVILVOVSPLAISE, "Sire, qu'il vous plaise", a formula), then 14
+  (FAIRECEQVILVOV; ETQVENEANTMOIN), then 12 (TACRAINDREQV, SICENESTQVEL, FAIRESERVICE).
+- **Controls**, same length, same test: Bourrilly's *Jacques Colin* (French, 1905) 11; Desjardins II, two windows,
+  11 and 11; De Leva III (Italian with French and Spanish quotations) 9.
+- f.30 has continuous runs of 30-40 letters (e.g. f.30v L03, 40 letters). If it were a cipher copy of the April
+  letter, those runs would match in full. **They do not. f.30 is a different letter.** Its slightly higher shared
+  runs match a letter by the same writer, to the same recipient, in the same month-range and on the same subject.
+  The shared vocabulary ("la force … entre voz mains", "recouvrer", "maintenir", "il est impossible") is topical, and
+  the order differs: f.30 has "la ville et la force entre vo[s] mains", April has "la force de la ville demourast
+  entre voz mains". Script: inline in this session; the method is reproducible from the two files named above.
+
+### Reading quality (rule 4, rule 7)
+
+- **decode.py --check passes** (exit 0, this session, after e8567d0). It prints f.29r 568: H 533/M 30/U 5; f.30
+  1973: H 1502/M 239/U 232; f.30 extended: H 1502/S 158/M 254/U 59. These match NOTES.md and status.json.
+- **H is from a key source.** Every key.tsv row graded H cites Lasry and/or Tomokiyo (checked by script: no H row
+  without one of the two). Grade H is correct under rule 4 as "value from the published table".
+- **What H does not say, and NOTES.md understated.** NOTES.md says "M means a sign read with doubt". In fact only
+  the reconciler's `l` signs are demoted (decode.py line 53). **331 of the 1502 H tokens are on signs the
+  reconciler read at medium confidence (`m`).** H on a high-confidence identification is 1171. Also, 43 H tokens
+  fall on the four keyed signs the reconciler itself flagged as doubtful in context: eh 19, Tb 16, H 8. The
+  solver's own model puts eh at T, not the table's D (47.6 bits; DECLARA*t*ION), a contradiction a key-image check
+  must settle. This does not break rule 4, but the H count overstates the firmness of the reading. The honest
+  summary is "values from the key for 1502 signs, 1171 of them on confidently identified signs; one reconciled
+  transcription (agreement with blind passes 63.5% and 55.3%)". NOTES.md is corrected (below).
+- **M/U share reported honestly.** U 232 (11.8%) and M 239 (12.1%) are stated in every place that gives H. The
+  eight unread lines at the top of f.30r are named. The extension's S grade has a matched control run before the
+  real signs (held-out 50/53) and states its limits (25 keyed signs in the pool; S values on `l` signs demoted
+  to M). No over-claim found in the extension's wording ("a cryptanalytic result resting on a key-based reading").
+- **Transcription.** A single reconciled reading, as NOTES.md says. The class is about print, not the transcription.
+  Any outward sentence must still say "partial".
+
+### Search log (24 Sept 2026, this session)
+
+(a) **Canonical series, re-grepped for f.30's content** (full djvu text, IA): LP iv.3 (`11332111bsb`): "liberty of
+Florence" 0 hits; "Avignon" hits are Wolsey/legatine (1527-29); no Gramont item of 20 May (as section 4). CSP
+Spanish IV (`calendarofletter0004pasc`): Tarbes 121 hits. Mai's despatch printed at pp.560-561 (late May 1530)
+reports Gramont's words to the pope and Muscettola, and a Gramont courier stopped at Florence. That is the imperial
+report, not the letter. September 1530 hits (pp.701-702) are later. CSP Venetian IV (`calendarofstatep4187brow`):
+Tarbes 77 hits, all 1527-29 (Spain, Burgos, Poza) or index. None is of May 1530. **Searched.**
+
+(b) **Sender/recipient editions new to this file.**
+- ***Archivio storico italiano*, Appendice, t. I (1842-44)** (IA `archiviostoricoi01fireuoft`, full text): the
+  only Tarbes items are doc. XXXVIII (April 1530 letter to the king, above) and its index entry. **Searched; a
+  sibling letter, not ours.** Vols. II-IX: **not searched** (gap 1).
+- **Desjardins/Canestrini, *Négociations diplomatiques de la France avec la Toscane* II** (IA
+  `gri_33125010469852`, full text): Carducci's legation 1528-30. Tarbes hits end with Gramont's 1529 departure for
+  Italy. No Gramont letter of 1530, and no "liberté de Florence" declaration. **Searched.** Vol. I
+  (`gri_33125017127347`) fetched; it predates 1510, out of range.
+- **De Leva, *Storia documentata di Carlo V* III** (IA `storiadocumenta03levagoog`): cites Gramont's April letter
+  (Molini, ASI App.) and Mai and Muscettola of 29 May 1530 (Simancas). No 20 May letter, and no 2980/8505.
+  **Searched.**
+- **Pastor, *Histoire des papes* X** (IA `kpbc.umk.pl.Magazyn_220_10_180359`, French tr., full text): Gramont in
+  Rome from April 1530. Cites the April letter (ASI App. I p.476), Le Grand III p.386 (Bologna, Feb) and Vienna
+  reports. No 20 May letter, no fr.2980. The German editions (`geschichtederpap42past`, `p2geschichtederp04past`)
+  appear in the fts only for the April quotation. **Searched.**
+- ***Catalogue de la collection Dupuy*** (1899, IA `cataloguedelaco00dupugoog`, `…01…`, full text): Dupuy 452
+  holds **Gramont to Du Prat, Rome, 15 May [1530], orig. (f.48)**, a companion letter five days earlier, not
+  flagged as cipher. It is the same volume as the Raince decipherment ("[par le même?], s.d. (31)"). No
+  decipherment, copy or unattributed piece dated May 1530 "au Roi" is listed there. Catalogue-wide: 0 hits for
+  "20 mai 1530" and for "déchiffr-"/"en chiffres" with 1530/Tarbe/Gramont. **Searched.** Dupuy 452 f.48 is
+  context for the solver, not a decipherment (for LANE G, if wanted).
+- Bourrilly, *Jacques Colin* (1905, `jacquescolinabb00bourgoog`): hit on a list of May 1530 dates. It is Colin's
+  material, with no Gramont letter. **Searched.**
+
+(c) **Holding archive.** BnF notice cc494342 re-fetched: no recipient for no.22, no bibliography, no decipherment
+listed in the volume (confirms the second audit's Raince test). Gallica not used (LANE G's host); nothing
+pending for it.
+
+(d) **Phrase search on the decoded text** (u/v, i/j normalised; accented and unaccented).
+- IA be-api fts, 0 relevant hits: "declaration de la liberte de Florence", "declaration de la liberté de Florence",
+  "que ses predecesseurs ont perdu" Florence, "la force entre voz mains", "la ville et la force entre", "neantmoins
+  qu'il ait mauvaise fantaisie", "maulvaise fantasie" 1530, "toutes choses qui vous touchent de si bon pied", "qui
+  vous touchent de si bon pied", "qu'il n'a aucune deliberation", "maintenir les amitiez" 1530, "liberte de
+  Florence" roy 1530 Rome, "2980, fol. 30", "2980, f. 30". The hits for "liberte de Florence" Tarbe, "aller en
+  Avignon" Tarbe 1530, "de si bon pied" Tarbe, "pour recouvrer ce que ses predecesseurs" (3: a universal history,
+  Hugh Capet), "la declaration de la liberte" Florence Tarbe and "la ville et la force" Florence 1530 are all
+  unrelated (the Tarbé family, Froissart, Revolutionary debates). "Florance n'eust jamais este" found the April
+  letter and the works citing it (Pastor, Reumont, the DHGE).
+- Google Books API (keyed, country=US), 0 relevant: "declaration de la liberte de Florence" (both spellings),
+  "liberté de Florence" Tarbes 1530, "liberté de Florence" Gramont (1: *Mercure françois*, 1970 reprint, unrelated),
+  "libertà di Firenze" Tarbes 1530 (1: *L'assedio di Firenze*, 1857, the August capitulation), "la ville et la force
+  entre", "que ses predecesseurs ont perdu" Florence, "veult aller en Avignon", "maulvaise fantasie" (3, unrelated),
+  "evesque de Tarbe" "au roy" 1530 Florence, Gramont Tarbes "20 mai 1530" roi, "Tarbes" "mai 1530" Florence roi
+  lettre chiffre, "2980, fol. 30", "Gramont" "lettre chiffrée" 1530 Florence, "qui vous touchent de si bon pied",
+  "n'a aucune deliberation" Florence, "la ville et la force" Florence 1530 roy, "liberté de Florence" "mai 1530"
+  Tarbes, "Tarbes" Clément "Avignon" 1530 Florence liberté. "évêque de Tarbes" "mai 1530" Florence gave 3: the
+  Dupuy catalogue (searched above) and *Revue des Hautes-Pyrénées* 1907 (no snippet; a local-history journal,
+  **not read**). "fr. 2980" Tarbe gives only Tournon's correspondence (fol.33) and the *Catalogue des actes*
+  (fol.83, 1531).
+
+(e) **Solver repositories and cipher pages**, fresh shallow clones, grep only, deleted after:
+dbourdeau/cyphersolver head c85ece1: fr.2980 only at CATALOGUE.md:76 (328, "Gramont 1530 key held"),
+rangone1530/NOTES.md:68 (no.44, not ours) and two mirrors of Tomokiyo's francis.htm. gramont1529/ reads fr.3091
+no.23 and fr.3071 no.7. **Catalogued, not read.** aaymeloglu/unsolved-ciphers head 2495c45: its DECODE catalogue
+has three Gramont records (fr.3040 f.16 and f.18, fr.3091 f.45-47, all "Non-decrypted" in DECODE's field and
+all 1529 or Bologna 1530). None is fr.2980.
+
+(f) **Scholarship, open indexes.** CrossRef (7 queries: Gramont Tarbes 1530; Gramont Tarbes ambassade Rome;
+Gramont cipher 1530; liberté de Florence 1530 François Ier Clément VII; Gramont Villandry; French diplomatic
+cipher Francis I Lasry; siège de Florence 1530 France diplomatie Rome): the only on-topic hit is the PUR chapter
+"Gabriel de Gramont (1486-1534)" (2011), already read (section 4(b)). HAL (same 7): 0. Persée (2 queries,
+"Gramont Tarbes 1530" and "évêque de Tarbes" Florence 1530): on-topic only "La première application à Bordeaux du
+concordat de 1516: Gabriel et Charles de Grammont (1529-1530)" (*Annales du Midi* 1956, benefices; not the
+embassy). **OpenAlex: unreachable** (429, "creditsRemaining 0", after one retry). **Semantic Scholar:
+unreachable** (429, one retry). JSTOR: not probed. Three rows added to JSTOR-QUEUE.tsv: `"Gramont" AND Florence AND 1530 AND (liberté OR
+liberty)`; `"évêque de Tarbes" AND Florence AND 1530`; `"Gabriel de Gramont" AND "Clement VII" AND Florence`.
+
+(g) **Not searched (named gaps):** ASI Appendice II-IX; Sanuto *Diarii* 52-53; *Revue des Hautes-Pyrénées* 1907;
+Varchi and Nardi (Florentine narratives, which would paraphrase at most); Camusat, Champollion-Figeac and
+HathiTrust as for f.29r.
+
+### Corrections made (this session)
+
+1. NOTES.md, "f.30 reading", Grades paragraph: added a verifier note that `m`-confidence signs keep H (331 of
+   1502), so "M means a sign read with doubt" understates the doubt. It also names the 43 H tokens on the
+   flagged signs eh/Tb/H.
+2. NOTES.md, "f.30 reading", Plain sense item 3: "The addressee of item 22 is not established here" now carries
+   the verifier's finding (the king, grade I; the likely "article mis a part" of f.29r, an inference).
+3. status.json, the fr2980-gramont row's `name`: "Gramont to Villandry, Rome, 20 May 1530, two letters in
+   cipher" became "Gramont to Villandry (f.29) and to the king (f.30), Rome, 20 May 1530, two letters in cipher".
+   Its `note` "569-sign" became "568-sign", to match its own counts (533+30+5) and decode.py.
+4. Section 1 of this file (f.29r): its safe sentence gives 569 / H 538 / M 26, the first reader's counts. The
+   current counts after the second reader are 568 / H 533 / M 30 / U 5 (NOTES.md, "Second reader: changes
+   applied"). A pointer is added under section 1.
+No new/first/unread/unpublished wording about f.30 was found in the folder, the ROOM line or status.json (grep).
+
+### Postmortem
+
+**Failure named: the recipient was carried over from the sibling item.** The board row and the folder title
+presented both letters as "Gramont to Villandry". The BnF notice gives no recipient for no.22, and the cipher
+addresses the king. Nobody read the plaintext for its addressee before this audit, and a verifier who took the
+board's line would have searched Villandry's papers only. The Dupuy 468 lesson applied again: the plaintext
+widened the search to letters to the king, and that is how the April 1530 letter in ASI App. I turned up. It is
+the closest printed text to f.30. **Second finding: an editor's continuation was missed.** The first audit read
+Molini's *Documenti* (1836-37) and found only item 23 of 8505. Molini's later Béthune transcriptions went into the
+*Archivio storico italiano* Appendice, which no audit had opened. Lesson for the verifier template: when a
+source's editor is identified, search that editor's later series and the journal they fed, not only the book.
+
+### Requests this session
+
+archive.org: about 75 (be-api fts about 41 queries, advancedsearch 6, metadata about 15, djvu.txt downloads 11),
+at least 3.2 s apart. www.googleapis.com (Books, keyed, country=US, key never printed): 21, 3.2 s apart.
+archivesetmanuscrits.bnf.fr: 2 (1 reset, 1 retry 200). api.crossref.org: 7. api.archives-ouvertes.fr: 7.
+api.openalex.org: 9 (all 429; stopped). api.semanticscholar.org: 9 (all 429; stopped). www.persee.fr: 2. github.com: 4
+shallow clones (two repositories, twice). gallica.bnf.fr: 0. No logins, no credentials printed, no decoding, no
+subagents.

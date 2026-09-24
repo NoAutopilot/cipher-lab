@@ -24,3 +24,6 @@ ciphers/fr20140-danzay-1557	"Danzay" AND "Christian III" AND (1557 OR 1558)	2026
 ciphers/fr20140-danzay-1557	"Quissarme" AND Danzay	2026-09-24	queued	
 ciphers/fr20140-danzay-1557	Daussy AND Danzay AND (lettres OR épistolaire)	2026-09-24	queued	
 ciphers/fr20140-danzay-1557	"Danzay" AND ("marchands de Lyon" OR Augsbourg) AND 1557	2026-09-24	queued	
+ciphers/fr2980-gramont	"Gramont" AND Florence AND 1530 AND (liberté OR liberty)	2026-09-24	queued	
+ciphers/fr2980-gramont	"évêque de Tarbes" AND Florence AND 1530	2026-09-24	queued	
+ciphers/fr2980-gramont	"Gabriel de Gramont" AND "Clement VII" AND Florence	2026-09-24	queued	
