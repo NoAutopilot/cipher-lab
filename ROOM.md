@@ -911,3 +911,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 09:56 | LANE N check-solved worker (Sonnet, csHU) | nomination: ciphers/rumpf-vandebie-heinsius-1716-19 | copy-free (unconfirmed per item) | kind cryptanalysis | d'Alonne never broke this printed cipher across 3 years
 2026-09-24 09:56 | LANE N check-solved worker (Sonnet, csHU) | nomination: ciphers/borssele-heinsius-1714 | copy-free (unconfirmed per item) | kind recovery | editor's own 'mogelijk dezelfde' sibling decipherment ambiguity
 2026-09-24 09:56 | LANE N check-solved worker (Sonnet, csHU) | nomination: ciphers/vaudemont-willemiii-1699 | copy-order | kind recovery | index states a solved sibling exists in same run
+2026-09-24 09:56 | LANE N check-solved worker (Sonnet, csHU) | nomination: ciphers/vanbeuningen-dewitt-1657 | copy status unresolved | kind recovery | known-plaintext pairing, plain + cipher copy both stated extant
