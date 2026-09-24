@@ -206,6 +206,16 @@ def drafts_for(r):
     return [x for x in drafts if f in x["targets"]]
 
 
+def who(x):
+    """Short recipient name from the draft's file name: tomokiyo-gramont-danzay -> Tomokiyo, bourdeau-issue-thurloe -> Bourdeau issue."""
+    head = x["slug"].split("-")[0]
+    name = {"tomokiyo": "Tomokiyo", "huygens": "Huygens", "huntington": "Huntington", "bourdeau": "Bourdeau", "bowes": "Tomokiyo", "decode": "DECODE", "nls": "NLS"}.get(head, head.capitalize())
+    return name + (" issue" if "issue" in x["slug"] else "")
+
+
+STATE = {"ready": "ready to send", "drafted": "drafted", "sent": "sent, awaiting reply"}
+
+
 def rating_kind(rating):
     if rating.startswith("adds substantive"):
         return "r-sub", "adds substantive information"
@@ -302,9 +312,8 @@ def reading_row(r, idx):
         lab = {"queued": "second opinion queued", "posted": "second opinion posted", "checked": "second opinion checked"}.get(st, "")
         if lab:
             chips += f'<span class="chip so-{st}" title="{E(so[0]["label"] + ((": " + so[0]["outcome"]) if so[0]["outcome"] else ""))}">{lab}</span>'
-    if dr:
-        k = dr[0]["kind"]
-        chips += f'<span class="chip out-{k}">{ {"ready": "ready to send", "drafted": "note drafted", "sent": "sent, awaiting reply"}[k] }</span>'
+    for x in dr:
+        chips += f'<span class="chip out-{x["kind"]}">{E(who(x))}: {STATE[x["kind"]]}</span>'
     unique = ' unique' if (n >= 3 and a >= 2) else ''
     # detail
     parts = [f'<div class="dz"><h4>What it is</h4><p>{E(r.get("line", ""))}</p><p class="mono muted">{E(r.get("grade", ""))}</p></div>']
@@ -312,13 +321,13 @@ def reading_row(r, idx):
         parts.append(f'<div class="dz"><h4>What the passage says, and why it matters</h4>'
                      + (f'<p class="rating {rk}">{E(rating)}</p>' if rating else "")
                      + f'<div class="memo">{md_light(m[0]["text"])}</div></div>')
-    for x in dr[:2]:
+    for x in dr:
         sent_box = (f'<label class="sentbox" data-row="{E(x["slug"])}"><input type="checkbox"> Mark as sent</label>' if x["kind"] == "ready" else "")
         covers = ""
         if len(x["targets"]) > 1:
             names = [t.split("/")[-1] for t in x["targets"]]
             covers = f'<p class="muted small">One note covers {len(names)} readings ({E(", ".join(names))}); send it once and tick it once.</p>'
-        parts.append(f'<div class="dz"><h4>Who to tell</h4><p><b>{E(x["to"])}</b> <span class="chip out-{x["kind"]}">{ {"ready": "ready to send", "drafted": "drafted", "sent": "sent, awaiting reply"}[x["kind"]] }</span></p>' + covers +
+        parts.append(f'<div class="dz"><h4>Who to tell</h4><p><b>{E(x["to"])}</b> <span class="chip out-{x["kind"]}">{E(who(x))}: {STATE[x["kind"]]}</span></p>' + covers +
                      f'<p class="muted small">{E(x["status"])}</p>'
                      + copy_block(f"cp-{rid}-{slug(x['slug'])}", x["to"], x["subject"], x["text"]) + sent_box + '</div>')
     links = {"folder": r["link"], "audit": r["link"].rstrip("/") + "/AUDIT.md"}
