@@ -1,0 +1,123 @@
+# 5549 body runs 1-61, J7 24 Sept 2026, from ciphertext_5549.tsv + groen frames
+# run 1
+{ff derhalben damit auch schreiben will.} 73 50 28 9 335 {aus} 14 24 316 {ist noch auf dem wege und nunmehr}
+# run 2
+{ist noch auf dem wege und nunmehr} 8 98 125 53 54 42 126 302 {bitt E.G. wollen vermöge meins vorigen}
+# run 3
+{ins vorigen schreiben unsz verstendigen} 128 133 109 4 69 100 13 91 9 106 4 32 {und} 121 99 104 120 19 {man so}
+# run 4
+{man so} 9 24 86 62 7 59 28 9 48 72 3 23 67 90 {en. Es ist gleichwol albereit viel dara}
+# run 5
+{n. Es ist gleichwol albereit viel daran} 70 51 2 60 93 {en} 14 9 {Sie haben in}
+# run 6
+{Sie haben in} 316 127 136 {der von}
+# run 7
+{der von} 137 42 64 29 114 {und andere ahn xlviii.}
+# run 8
+{und andere ahn xlviii.} 124 135 10 32 55 88 80 {en} 14 19 {desgleichen auch}
+# run 9
+{desgleichen auch} 181 {dasz} 132 129 335 340 {für dasz zu}
+# run 10
+{für dasz zu} 291 {ge} 24 9 14 81 79 33 34 127 59 8 78 56 59 3 65 96 44 59 {n. Wir haben für}
+# run 11
+{tagen zeittung beckomen, dasz} 14 68 69 37 9 2 115 66 59 {rn} 9 50 39 79 27 110 44 77 74 4 76 70 78 73 127 137 {uff} 53 54 92 9 111 54 {ge} 98 55 7 {er} 14 {dem} 83 13 63 {er} 91 65 93 34 {sey und viel}
+# run 12
+{sey und viel} 14 24 335 {auch bisz ahn}
+# run 13
+{auch bisz ahn} 105 18 64 42 12 100 83 {d} 9 69 47 48 9 345 14 71 74 4 38 23 {So habe, derhalben}
+# run 14
+{So habe, derhalben} 201 {alszbalt}
+# run 15
+{alszbalt} 78 60 7 74 47 9 182 {vert} 179 104 94 6 69 93 {der zuversicht ahn dem ortt etwaz nütz}
+# run 16
+{cl.} 138 129 344 14 24 60 88 27 {eig} 39 44 {en und umb}
+# run 17
+{en und umb} 8 7 64 39 {}
+# run 18
+{und derselben gegent} 73 74 98 14 65 93 11 27 18 5 {zu thun understehen. Man sagt}
+# run 19
+{zu thun understehen. Man sagt} 62 42 132 {ey} 9 {schon}
+# run 20
+{schon} 137 {frü} 9 32 {ettlichen tagen}
+# run 21
+{ettlichen tagen} 63 105 37 {ch} 14 16 42 69 126 {in} 66 120 {v} 127 {gü} 14 88 68 128 2 {e} 115 {ogen} 19 {Es ist noch vom}
+# run 22
+{Es ist noch vom} 336 {zu} 295 {und in andern}
+# run 23
+{und in andern} 28 29 59 63 {n} 19 {für} 14 3 50 98 58 59 {n} 129 {hoff es solle mit diesem gleich dem and}
+# run 24
+{n verstanden haben das die handlung mit} 157 137 133 {Gott lob, gahr wohl und besser dan wir}
+# run 25
+{chtige wolle ferner gnad verleihen. Die} 60 76 96 18 65 93 62 64 {dieser ortt davon D. ist auch in gutten}
+# run 26
+{rs, und ist fürwahr der last nit gering} 126 137 181 {lest sich je lenger, je besser ahn, beg}
+# run 27
+{begind [gnedig] zu werden ist noch bey} 127 19 178 9 {hoffe es solle ohne grossen frucht nit}
+# run 28
+{it viel guts können auszrichten. Dan es} 9 23 33 34 133 53 {ür} 52 22 126 {}
+# run 29
+{gantz} 19 290 {und sonderlich in den fürnemsten}
+# run 30
+{und sonderlich in den fürnemsten} 43 44 64 {d} 134 74 {nu gahr}
+# run 31
+{nu gahr} 19 21 27 79 28 33 69 47 14 77 70 78 6 74 76 127 137 {wen nuhn E.G. denen etwaz uff leidliche}
+# run 32
+{. denen etwaz uff leidliche conditiones} 9 105 84 86 11 63 88 9 {und bisz}
+# run 33
+{und bisz} 120 1 5 14 73 4 19 15 27 79 78 44 8 74 42 9 91 13 10 15 {ern} 126 {zu lassen sich erpietten wurden, hoffte}
+# run 34
+{t verursachen. Ich vermercke soviel ahn} 128 135 157 {das} 142 {sachen}
+# run 35
+{sachen} 18 88 128 311 14 38 35 50 93 13 {en und sonsten nit wolh stehen, und das}
+# run 36
+{n, und dasz man nichts liebers sehe als} 74 4 54 78 14 15 47 23 53 69 137 128 {und ist derenthalben viel mit mir darvo}
+# run 37
+{n geredt worden. Wir haben warnung dasz} 140 {und} 142 {durch}
+# run 38
+{durch} 168 {und die beckentte alte mit}
+# run 39
+{und die beckentte alte mit} 30 69 {te} 14 {r} 19 79 67 7 28 74 {n} 127 {hefftig practiciren und von}
+# run 40
+{hefftig practiciren und von} 129 146 {gehrn erlangen wolten, das sie der ort}
+# run 41
+{gehrn erlangen wolten, das sie der ort} 66 99 49 104 90 93 69 {cht} 128 {und was zur}
+# run 42
+{und was zur} 19 9 48 {ch} 138 8 10 15 120 88 6 138 {gehörig bekomen möchten, dan sie dahien}
+# run 43
+{ie dahien entschlossen, wo der obgemelt} 2 120 61 {er} 14 9 98 70 39 84 42 {nit solte}
+# run 44
+{nit solte} 73 14 126 {en} 9 5 27 4 68 {en} 135 {erhalten, wie sie doch meinen das ihnen}
+# run 45
+{n nit felen werde, dasz sie alszden all} 77 70 72 7 29 129 14 9 104 100 19 {v} 43 54 3 64 14 134 105 54 37 48 115 52 12 59 88 9 {wolten. Derhalben E.G. diesen ding uff}
+# run 46
+{aben durch mittel persohnen und sonsten} 137 178 {und} 14 19 183 {berichten und diese ding mit vleisz und}
+# run 47
+{derbawen lassen. Man schreibt unsz ausz} 129 135 14 9 316 {dasz} 28 29 27 79 33 38 108 14 19 {albereit nach der}
+# run 48
+{albereit nach der} 34 54 17 64 {wa} 9 43 44 43 {sey dem von}
+# run 49
+{sey dem von} 14 91 70 9 88 99 100 {e. die hand zu bieten, sobalt er nicht}
+# run 50
+{t er nicht schreiben und resolution von} 24 201 {beckome. Wiewohl nuhn solches vorlengst}
+# run 51
+{d ime nit gefallen lassen von wegen der} 24 105 83 90 94 14 {}
+# run 52
+{sten und} 9 11 69 10 70 32 {dasz man solche}
+# run 53
+{dasz man solche} 342 {und} 343 128 {solle}
+# run 54
+{solle} 119 118 115 137 111 {a} 43 48 {er lassen ziehen, schrieb derhalben E.G}
+# run 55
+{ediger Herr, es schreibt der man D. das} 19 24 201 {der ort hoch nöttig seie; wiewohl nuhn}
+# run 56
+{wohl nuhn zu erachten das E.G. itzo ahn} 91 69 110 39 44 14 {en} 9 {gahr} 71 96 99 43 134 136 {sind, so ist doch dieser ort}
+# run 57
+{sind, so ist doch dieser ort} 33 64 8 88 {er} 14 19 {auch nit wol}
+# run 58
+{auch nit wol} 104 120 59 83 29 {va} 14 49 19 {en. Sonderlich dweil daszjenig darnach}
+# run 59
+{; stünde auch zu besorgen, wan E.G. und} 201 19 24 66 69 23 43 70 77 74 78 127 {sein wurden, es wurde alsdan E.G. und d}
+# run 60
+{alsdan E.G. und denselben örtten desto} 12 65 42 44 59 47 14 124 115 {ge} 48 54 39 118 {t} 19 {werden, doch zweiffel ich nit uf E.G. f}
+# run 61
+{rbt gewesen, hab zubringen .... müssen.} 121 133 192 {begert hefftig von E.G. allezeit zeittu}

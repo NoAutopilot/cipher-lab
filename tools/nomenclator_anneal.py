@@ -52,6 +52,18 @@ PAD = ing.IDX["#"]
 VOWELS = "aeiou"
 CONS = "bcdfghlmnpqrstxz"
 DEFAULT_WORDS = "de che per quale con ma quello perche et el la lo non".split()
+FREQ_LETTERS = "eaoinrlstcdupmghbfqzx"
+
+
+def set_lang(lang):
+    """--lang de (24 Sept 2026, J7): swap in tools/german_ngram.py's alphabet, consonants and default words.
+    Models must be built by the matching module (german_ngram build for de)."""
+    global ing, ALPHA, K, PAD, CONS, DEFAULT_WORDS, FREQ_LETTERS
+    if lang == "it":
+        return
+    import german_ngram as gng
+    ing, ALPHA, K, PAD = gng, gng.ALPHA, gng.K, gng.IDX["#"]
+    CONS, DEFAULT_WORDS, FREQ_LETTERS = gng.CONS, gng.DEFAULT_WORDS, gng.FREQ_LETTERS
 
 # ---------------------------------------------------------------- parsing
 
@@ -185,12 +197,13 @@ def lib():
 
 
 class Problem:
-    def __init__(self, texts, model, context="none", syl="vc", words=None, letters=ALPHA, scoring="gen",
+    def __init__(self, texts, model, context="none", syl="vc", words=None, letters=None, scoring="gen",
                  p_null=0.03, extra_syl=None):
         self.model = model
         self.scoring = scoring
         self.p_null = p_null
         self.context = context
+        letters = letters or ALPHA
         self.values = []            # value strings
         self.vkind = []             # 'l' letter, 's' syllable, 'w' word, 'n' null, 'f' fixed
         for c in letters:
@@ -355,7 +368,7 @@ class Problem:
 def anneal(pb, rng, iters, T0, T1, caps, fixed, init=None):
     n = pb.nsign
     lvals = pb.byk["l"]
-    freq_letters = "eaoinrlstcdupmghbfqzx"
+    freq_letters = FREQ_LETTERS
     if init is not None:
         key = list(init)
     else:
@@ -698,7 +711,11 @@ def main():
     d.add_argument("files", nargs="+")
     d.add_argument("--key", required=True)
     d.add_argument("--map")
+    for p in (s, y, d):
+        p.add_argument("--lang", default="it", choices=["it", "de"],
+                       help="language module: it = italian_ngram (default), de = german_ngram")
     a = ap.parse_args()
+    set_lang(getattr(a, "lang", "it"))
 
     if a.cmd == "solve":
         fix = dict(f.split("=", 1) for f in a.fix)
