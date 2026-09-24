@@ -362,6 +362,92 @@ cipher tokens across pages 1 and the left block of page 2.
 
 Status stays **open** (page 1 complete, page 2 left block lines 1-27 of ~29+ read, page 2 right block and page 3
 unread; letter not fully read; no novelty check performed).
+
+## csWV2: Groen-printed but undeciphered, 5549 (LANE N2, 24 September 2026)
+
+Worker csWV2 (Sonnet, cap $4). Per `.claude/briefs/runs/2026-09-24-lane-n2-csWV2.md`, following LANE V2 G3's flag
+(`sources/wvo/groen-check-2026-09-24.tsv` row 5549, ROOM 11:24/11:35): Groen prints 5549's cipher passage as raw
+undeciphered numbers, not solved -- this pass re-checks the post-edition literature, quantifies the extent from
+the print, and settles whether the numbers fall in either of this circle's two known ranges. **Does not decode.**
+
+**1. Post-edition search (negative).** WebSearch, each query logged, no hit naming this letter or a later
+decipherment of it: `"Jan van Nassau" 1573 Dillenburg Groen van Prinsterer supplement cijferschrift ontcijferd`;
+`"verendertte Instruction" OR "verenderte Instruction" Ciffer Jan Nassau 1573` (the letter's own opening phrase,
+quoted verbatim from the print below); `Bijdragen Mededelingen Historisch Genootschap Nassau cijferschrift
+ontcijferd 1573 1574 Willem van Oranje`; `Japikse "Correspondentie van Willem den Eerste" Lodewijk van Nassau 1573
+chiffre ontcijferd`; `Gachard "Correspondance de Guillaume le Taciturne" Lodewijk Louis Nassau 1573 22 octobre
+déchiffré`; `Mout van der Lem Willem van Oranje briefwisseling Jan Lodewijk van Nassau cijferschrift 1573 sleutel`;
+`"Gravenbund" OR "Grafenbund" 1573 Nassau Wilhelm Oranien Chiffre entziffert Dillenburg` (this letter's own
+"Graveneinigung" business, see below). None returned a specific hit for this letter, its date, or its cipher; the
+Kronijk van het Historisch Genootschap was not separately searched (no online full-text index found this pass --
+gap, not a negative). Solver-repository grep for nassau/oranje (both `dbourdeau/cyphersolver` and
+`aaymeloglu/unsolved-ciphers`) was already done for this whole folder by the prior check-solved worker (see
+"Check-solved sweep" above, item 5) and not repeated -- no hit for either repo, unchanged. `resources.huygens.knaw.nl/wvo/downloads/Corr_WVO_literatuurlijst`
+(the WVO project's own 60-page literature list, a huygens URL) was fetched but not read -- no PDF-text tool was
+available in this container (`pypdf` import failed on a `cryptography`/`_cffi_backend` error after install; no
+`pdftotext`) and fixing that was out of scope/budget for this pass. **Flagged as a genuine search gap**, not
+folded into the negative above: a future pass with working PDF tooling should grep that list for Blok, Kervyn,
+Kronijk and BMHG entries specific to this correspondence circle. Nothing from the archive.org IA slot was used
+this pass (WebSearch and the two direct edition fetches below answered the job without it; budget went there
+instead).
+
+**2. Copy status: copy-free, already on disk.** `images/05549_p1.jpg`..`p6.jpg` (C1 capture, 24 Sept 2026) plus
+`images/manifest.json`'s `pdf_url`, tested reachable at capture time:
+`https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05549.pdf`. No REQUEST.md needed.
+
+**3. Extent, counted from the printed page.** Fetched Groen, *Archives*, Supplément, Lettre 45, pp.140-148, direct
+(`www.dbnl.org/tekst/groe009arch09_01/groe009arch09_01_0048.php`, raw HTML via curl + `tools/html2text.py`, not a
+WebFetch summary -- the earlier WebFetch pass on this same URL was kept only for its postscript quote, cross-checked
+below). A small script (`re.findall(r'(?<!\d)(\d{1,4})\.(?!\d)', text)`) counted every `NNN.`-style numeral token in
+the letter body (pp.140-146, before the postscript -- see next paragraph): **537 raw cipher-numeral groups**, none
+translated by Groen anywhere in that span (no interlinear gloss, no bracketed word for any of them -- contrast 5218/
+5222 in this same folder, J1's finding above, where the cipher passages are silently printed in full clear French).
+Values run 1-345: **408 of 537 (76%) are <=99** (numerically inside key_1572.tsv's covered range, though that table's
+own design marks only multiples of 3 as letters and the rest NULL, so falling in-range does not by itself mean
+readable); **129 of 537 (24%) are >99** (100-345), entirely outside key_1572's range -- that table has no entries
+above 98 (confirmed: `tools/../ciphers/jan-van-nassau-1572-75/key_1572.tsv`'s highest row is 98). The 1575
+nomenclator J1 found on 5218/5222 (not itself solved -- no confirmed value-to-letter mapping, per J1 section 2
+above) is attested only up to 329 (5218's own highest reading); 5549's max of 335 is just above that, close enough
+to be the same order of design, but this is a range comparison, not a match -- **5549 falls partly inside
+key_1572's numeric range and partly, at its high end, slightly beyond even the un-recovered 1575 nomenclator's
+attested range; it does not sit cleanly inside either.** The letter's own opening states it is meant to be under a
+*third*, freshly-issued key: "Die verendertte Instruction oder Ciffer haben wir entpfangen und wollen unsz
+derselben nuhn fürthers gebrauchen" ("We have received the changed instruction or cipher and will now use it
+going forward") -- so none of the three circle keys on file (1572 small table, 1575 large nomenclator, or
+whatever 5549 itself introduces) is confirmed to cover this letter's pre-postscript majority.
+
+**Postscript finding -- the letter mixes two ciphers, and Groen's print shows exactly where.** At the very end (p.146,
+`voetnoot`-free, no page break before it), the letter's own postscript reads: *"Nachdem ich mich geeilet, hab ich
+die alte Ciffer ausz vergesz alhie widder ahngefangen undt bisz zu ende gebraucht: pluribus intentus minor est ad
+singula sensus."* ("Having hurried, I have here by mistake started using the old cipher again, and used it to the
+end: attending to many things, one's sense for each particular is diminished.") The 537-group count above covers
+only pp.140-146 (before this postscript); **the printed text from the postscript to the letter's close (pp.146-148,
+roughly the last fifth of the letter) contains zero raw numeral groups** -- confirmed by the same regex over that
+span. Two readings are open, and this pass does not decide between them (out of scope, no decoding done): (a) the
+writer's "alte Ciffer" produced text Groen could read and silently rendered as the clear German seen on pp.146-148,
+the same silent-decode pattern already established for 5218/5222 in this folder (J1) -- in which case "die alte
+Ciffer" plausibly is key_1572 itself, already H-graded and recovered in this repo, and that closing stretch may
+already be readable/found-solved without any fresh work; or (b) the postscript is a loose figure of speech and the
+close was simply drafted in clear from the start. **This is the single most useful lead in this pass and is flagged
+for a verifier or solver, not resolved here.**
+
+**Content note, not previously in this folder.** The pre-postscript body discusses the "Graveneinigung"/league of
+German counts (matches Lodewijk's letter 5797 in the sibling folder, same autumn 1573 business -- Willem's brothers
+were coordinating a German counts' league against the Habsburgs) and explicitly asks that allies be given "die
+ziffer so wir brauchen" (the cipher we use) -- a rare in-letter reference to the correspondence's own key being
+distributed to third parties, worth noting for anyone dating key changes across this circle.
+
+**Verdict: status open** for the pre-postscript body (408+129 = 537 raw groups, no known circle key confirmed to
+cover it; testing key_1572 and the partial 1575 nomenclator against it is the natural next step, not fresh
+cryptanalysis from nothing, since both candidate designs already exist in this repo). The post-postscript close
+(pp.146-148) is flagged, not solved: possibly already legible under key_1572 without further transcription work.
+No solution, key, plaintext or documented attempt for 5549 found in the post-edition search above (search gap noted:
+Kronijk, BMHG, WVO literature list not fully checked). **Kind: recovery** (the circle already has two candidate keys
+on file and an active alignment effort; per LESSONS.md §2 this is an alignment/testing problem, not a blind attack).
+
+**Nomination: `ciphers/jan-van-nassau-1572-75`, item 5549, open, copy-free** (image URL above, pages on disk),
+kind recovery. QUEUE.md WV1 row updated to reflect this pass's findings.
+
 ## V6: novelty audit of 5200 p1 (LANE V2, 24 September 2026)
 
 Verifier V6. See `AUDIT.md`. **5200: N1, found-solved.** Groen van Prinsterer, Archives 1re série IV (1837),

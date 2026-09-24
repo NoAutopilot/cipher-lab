@@ -570,3 +570,83 @@ Search log: none (not this brief's job). Requests: 0 network (brief forbids it).
 `wv2/passA/04503_p1.tsv`, `wv2/build.py` (KEYED +04503, settle-file `why` string no longer says "by W1"),
 `ciphertext_4503.tsv`, `reading_4503*`, `wv2/recon/04503/`, `wv2/settle_05811.py`, `wv2/settle_05811.tsv`,
 `wv2/settle_log_05811.tsv`, `ciphertext_5811.tsv`, `reading_5811*`.
+
+## csWV2: Groen-printed but undeciphered, 5797 (LANE N2, 24 September 2026)
+
+Worker csWV2 (Sonnet, cap $4, shared with the sibling `jan-van-nassau-1572-75` folder's 5549 -- see that folder's
+NOTES.md for the shared method and search log). Per `.claude/briefs/runs/2026-09-24-lane-n2-csWV2.md`, following
+LANE V2 G3's flag (`sources/wvo/groen-check-2026-09-24.tsv` row 5797, ROOM 11:24/11:35): Groen's own editorial note
+on this letter reads "plusieurs passages n'ont pu être déchiffrés" (several passages could not be deciphered).
+This pass fetches the raw print directly, counts and locates every such passage, and checks the post-edition
+literature. **Does not decode, does not classify novelty.**
+
+**1. Post-edition search (negative).** Same query set as 5549 (see sibling folder's NOTES.md item 1) plus one
+specific to this letter's contents: `"Gravenbund" OR "Grafenbund" 1573 Nassau Wilhelm Oranien Chiffre entziffert
+Dillenburg` (the "Graveneinigung"/counts'-league business this letter discusses, see below) -- no hit naming this
+letter, its date, or a decipherment of it. Solver-repository grep (nassau/oranje/lodewijk/huisarchief/khag/wvo) was
+already run for this whole folder by the earlier check-solved worker (see "Check-solved sweep" and "WV2" sections
+above) -- no hit, not repeated. Kronijk, the WVO literature list PDF and archive.org were not reached this pass
+(same tooling/budget gap logged in the sibling folder -- see that NOTES.md item 1).
+
+**2. Copy status: copy-free, already on disk.** `images_wv2/05797_p1.jpg`..`p8.jpg` (C1 capture, 24 Sept 2026) plus
+`images_wv2/manifest.json`'s `pdf_url`, tested reachable at capture time:
+`https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05797.pdf`. No REQUEST.md needed.
+
+**3. Extent, counted from the printed page -- a materially different finding than the "raw numbers" framing
+expected.** Fetched Groen, *Archives*, 1re série, tome IV, Lettre CDXLIV, pp.217-226, direct (`www.dbnl.org/tekst/
+groe009arch04_01/groe009arch04_01_0063.php`, raw HTML via curl + `tools/html2text.py`, not a WebFetch summary --
+an earlier WebFetch pass on the same URL gave a materially wrong "3 gaps, mostly footnote markers" read, discarded
+in favour of this direct read; flagged as a caution on trusting a WebFetch summary for a source this dense, same
+lesson this folder's WV2 section already records for WebSearch AI summaries on 5194). **The printed letter body
+(pp.219-226) is almost entirely continuous, grammatical German prose -- not raw cipher numerals as in the sibling
+5549.** A regex count for the `NNN.`-style numeral tokens used on 5549 finds essentially none in this letter's
+print (the one number present, "11 haupter", is ordinary German for "11 leaders/captains" in running prose, not a
+cipher code). This is consistent with the WVO images' own eye-check (C1's capture note, above: "cipher extent much
+lighter than the French numeral letters elsewhere in this circle") but goes further: the manuscript images do show
+embedded cipher numerals up to ~172 on some pages (`images_wv2/inventory.tsv`), yet almost none of that survives as
+raw digits in Groen's print. **Either Groen (or a contemporary decipherer whose work he transcribed) silently
+resolved nearly all of this letter's cipher into the clear German seen here -- the same silent-decode pattern
+already confirmed for 5218/5222 in the sibling `jan-van-nassau-1572-75` folder (that folder's J1 section) -- or the
+manuscript's cipher usage is lighter than the inventory's page-level eye-check suggested. This pass does not decide
+between them (would require re-reading the manuscript images against the print line by line, out of scope) but
+flags it as the main finding for a verifier: 5797 may be far closer to "already published" than "raw cipher" for
+most of its length.**
+
+What Groen's "plusieurs passages n'ont pu être déchiffrés" note concretely corresponds to, quoted in full from the
+direct fetch: **one extended garbled paragraph** (p.222, between "Soviel den secours und bewuste entreprinse
+betrift..." and "...Bergen op Zoom leichtlich können von Scholbich[fn], welches ein insel ist, bringen") that reads
+as a partial, non-grammatical decipherment attempt -- "begert das uff dert mögen. [Phit] so E.G. hierzwischen...
+vol ssen gemacht werden, verschafft, und darzu 11 haupter... und denen die ziffer so wir brauchen auch mit
+mitgeteilt würden" -- with two editorially bracketed conjectures inside it (`[Phit]`, and `[testgu]` with footnote
+"escus (?)"), plus one uncertain place-name footnote ("Scholbich(?)"); and **six further short spots** (pp.223-225)
+where an otherwise grammatical German clause is missing its subject -- most plausibly a coded personal name or
+code-name the editor could not resolve: "...helt sich wol und thut in warheit viel" (p.225); "Bey dem Herzog von
+Sachsen und ist [w]illens, nicht allein E.G. und sachen zu sollicitiren..." (pp.223-224); "zeuget diesen morgen
+Kölln der hofnung die sachen... dahien zu handlen das er sich nicht allein vom Herzog von Alba absondern..."
+(p.224, re: the Elector of Cologne's leanings); "ist gestern zue ghen gezogen lest ihme die sach, Gott lob, nhumehr
+ernstlich ahngelegen sein" (p.223); "ist willig und urbietig, ja hat ein verlangens und lusten dazu dasz er mit
+bruder möge mit vortziehen, und sonderlich den handel in Friszland treiben helffen" (p.225); "begert meiner, kan
+aber nicht wiszen warumb" (p.225). **Total: 7 distinct locations** (one multi-word garbled cluster plus six
+single missing-subject spots), not a letter's worth of raw digits.
+
+**Content note, not previously in this folder.** The garbled paragraph itself is about the "Graveneinigung"
+(counts' league, matching 5549's sibling business the same autumn -- both letters are coordinating the same German
+counts'-league negotiation) and, like 5549, contains a rare in-letter reference to the cipher itself: "...und denen
+die ziffer so wir brauchen auch mit mitgeteilt würden" ("...and that they too be given the cipher we use") -- a
+request to share the correspondence's key with allied counts, cross-referencing 5549's identical request in the
+sibling folder. Both letters were written from Dillenburg within a month of each other (5549: 21 Nov 1573; 5797:
+22 Oct 1573) by Jan and Lodewijk jointly to their brother, so this is plausibly the same key-sharing episode
+discussed from two sides.
+
+**Verdict: status open**, but narrowly -- for the ~7 unresolved spots only, not the whole letter, which is already
+substantially in print as clear German prose (whether by silent contemporary/editorial decode or because the
+manuscript's own cipher use was this sparse). No solution, key, plaintext or documented attempt for 5797 found in
+the post-edition search above (gap noted: Kronijk, WVO literature list, archive.org not reached). **Kind: neither
+recovery nor cryptanalysis fits well** -- the residual is a handful of missing proper names/code-names in an
+already-legible letter, a philological identification problem (cross-reference against 5549, Jan/Lodewijk's other
+1573 correspondence, and the counts actually party to the Graveneinigung), not a cipher-breaking one. **No
+nomination line posted for 5797** -- the extent does not support a fresh solver campaign on a "cryptanalysis" or
+"recovery" model, and per COMMON rule 11/the Thurloe-Raince lesson, most of this letter's content is already
+available in Groen's print; flagging this for the orchestrator and for LANE V2's own earlier "5797... likely
+printed too, unchecked" note (WV2 verdict table above) to resolve, rather than nominating a copy order. QUEUE.md
+WV2 row updated to reflect this.
