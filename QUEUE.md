@@ -377,6 +377,22 @@ Add MS 63742, Add MS 24321, Add MS 48049 — five, corrected). Requests: discove
 35 (16 search + 16 full-record + a handful of format probes before finding the working `?format=json` query
 form — `/catalog.json?q=` redirects to an HTML page for this endpoint, `/?format=json&q=` does not).
 
+check-solved 24 Sept 2026 (LANE S batch G): N45 (`ciphers/bl-portugal-bombay-1661/`) open, stage 2 verified
+unsolved (conditional — no image seen, BL catalogue offline since 2023). Prestage 1925 and the relevant *Corpo
+diplomatico portuguez* tome are named editions with real edition risk, neither actually checked against this
+correspondence yet; REQUEST.md drafted for the cipher-flagged folios only, contingent on that edition check.
+N46 (`ciphers/bl-farnese-cipher/`) open, stage 2 verified unsolved (conditional — no image seen, BL catalogue
+offline since 2023). Disambiguated from three other "Farnese cipher" items already known to this project
+(Vatican Spagna 1A/DECODE R91-R92, the Duke of Parma's general cipher, and the solved Odoardo Farnese/Sabran
+1637 item) — all confirmed different people, items, or both. *Nunziature di Francia*/*Portogallo*, Susta and
+Ancel named as candidate editions, none checked against this item's two date ranges yet; REQUEST.md drafted,
+contingent on that edition check given the item's size (280+ folios). N47 (`ciphers/newcastle-stone-1728/`)
+open, stage 2 verified unsolved (conditional — TNA Discovery out of this brief's hosts, digitised status not
+directly re-confirmed). Coxe's 1798 Walpole and 1802 Horatio Walpole memoir volumes (both on archive.org) are
+named, readily available editions from this exact circle and period, not yet full-text searched against this
+note's own language — the cheap next step before any TNA page-copy order, which REQUEST.md notes as a
+precondition.
+
 ## Digitised candidates, no copy needed (scout of 23 September 2026)
 
 Scout sweep for cipher manuscripts whose page images are already free online, in catalogues neither solver
@@ -1376,3 +1392,10 @@ instruction to check before scoring. Requests: bibliotecadigital.rah.es curl ~24
 form-structure probes + 11 term-query POSTs + ~10 record-detail GETs, ≥1.5s apart, HTTP 200 throughout);
 `tools/browser_fetch.js` against the same host 6 (2 hit RAH's own Anubis bot-challenge, both stood down per the
 one-retry limit and not repeated; logged here rather than retried further).
+
+check-solved 24 Sept 2026 (LANE S batch G): E1 (`ciphers/rah-xiquena-1868/`) open, stage 2 verified unsolved
+(conditional — image still not opened at full resolution; the RAE 1869-71 letters catalogue, RAH's own "1869 á
+1875" correspondence catalogue, and the file's own two unopened sibling items, especially undated path
+1008499, are outstanding). No edition of Isabel II's 1868 correspondence with the Conde de Xiquena found; the
+item's own catalogue record still carries no "Publicado por..." note. Not on DECODE (cached), not in Bourdeau's
+or Aymeloglu's repositories, no Cryptiana mention.
