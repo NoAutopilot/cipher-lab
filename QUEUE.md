@@ -2719,3 +2719,74 @@ or notarial footnote appendices, detailed in NOTES.md, and are not listed as row
 | HT1 | *Recueil des instructions données aux ambassadeurs et ministres de France ... Suède*, vol. 2 (1884) | `njp.32101076191640` (seq 24), `hvd.hl237b` (seq 26) -- two independent library scans agreeing | 24 / 26 (table of contents, near front matter) | Header `TABLE DES CHAPITRES`; body token `Chiffre` (capitalised) x2 -- consistent with a chapter/appendix titled "Chiffre" (cipher table) for the Sweden embassy, which this series includes in some volumes | "Chiffre" itself is the signal; not a decipherment-word coincidence in calendar prose (see NOTES.md's discussion of why that check is unreliable for calendar-style editions) | Not found by name in `dbourdeau/cyphersolver` or `aaymeloglu/unsolved-ciphers` (grepped for Suède/Sweden/Recueil des instructions this session). EF gives no word order, so the printed page number for the "Chiffre" chapter could not be read from the token counts -- next worker needs the table-of-contents page image (babel.hathitrust.org or a library copy; out of this brief's hosts) to find that page number, then check it |
 
 Requests and per-series false-positive breakdown: `sources/htrc/NOTES.md`.
+## DECODE non-decrypted records with images (LANE N diff of 24 September 2026)
+
+Ranking of the census-diff `none` rows (`sources/decode/records-non-decrypted-2026-09-24-diff.tsv`, held_by
+none, number_of_pages >= 1 -- 69 candidates) by the rubric in `.claude/workflows/scout.js` (language_fit,
+material, key_lead, size, competition, weight, unread; scored directly against the evidence in hand, not run
+as the full multi-agent workflow). Top 25 by heuristic score were checked with one DECODE login
+(`tools/decode_browser_login.js`, `--fetch-page RecordsView/<id>` for each, `--delay 1600`, `--max-files 30`;
+no images or documents downloaded on purpose -- the tool's own attachment auto-discovery pulled a handful of
+thumbnails and three document files anyway before this session noticed and deleted them, unread beyond their
+file names/tags; see "Method" below) to read each record's own images-count and any attached document's tag
+(`[key]`, `[transc]`, `[decrypt]`, `[cleartext]`, `[pub]`, etc. -- DECODE's own vocabulary for what a document
+is). **Images viewable on DECODE after a free registration count as copy-free for us: no archive order, no
+payment, no wait.** Prefix `DC1`-`DC20` reserved for this diff; 20 rows below, best first.
+
+**None of these are stage 2.** This is a scout-style ranking only: check-solved (six sources, blind) has not
+run on any of them, and per CLAUDE.md's pipeline no copy order, transcription pass or promotion to the board
+happens before it does. Three rows carry a real lead found this session, not inferred from the catalogue
+metadata alone: **DC1** (18 sibling records in the same BnF volume already Decrypted), **DC3** (an attached
+document literally tagged `[key]`, titled "Preliminary Assignment"), and **DC4** (an attached `[transc]`
+document -- transcribed but not necessarily broken). Everything else found no attached key/transcription/
+decryption document on its own RecordsView page; that is a negative result for this pass, not a guarantee --
+DECODE's DocumentsList (a separate page from RecordsView) was not checked per record, so a document not
+inlined on RecordsView could still exist (flagged explicitly for DC2, whose Partially decrypted status has no
+matching document found here).
+
+### Method
+
+`tools/solver_repo_diff.py --census` (new mode, this session) flagged 71 `records-non-decrypted-2026-09-24.tsv`
+rows as `held_by: none`; 69 have `number_of_pages >= 1`. Scored by date (1450-1800 preferred), language
+(any of the project's eight), page count, and a same-shelfmark-volume Decrypted-sibling check (a second,
+no-login `RecordsList?x_c_holder=LIKE&...` query per distinct volume prefix among the 69 -- 28 distinct
+volumes, 1 real hit: BnF Français 20506). Top 25 by that score got the one login pass above; the lowest-scoring
+5 of the 25 (the tail of the Modena/Milano envoy-report cluster) were dropped to fit the reserved DC1-DC20
+range. Catherine de Medicis to Philibert du Croc (DC20, a private-collection record with zero images even
+after login) was kept despite scoring lowest of the 20 that remain, flagged explicitly as "not copy-free"
+rather than silently dropped, for its historical interest.
+
+| # | Target | Year | Lang | Kind | Next step | Detail | Total |
+|---|---|---|---|---|---|---|---|
+| DC1 | Unsigned letter, BnF Français 20506 f.136 (envoy/despatch series) | 1525-1550 | fr | recovery | finish-existing-key | 18 other records in this exact volume (BnF fr.20506, DECODE ids 4434-4449 + 4815-4816) are already Decrypted -- a key almost certainly exists and reads across the volume. Register (free) and read one Decrypted sibling's key/transcription first, then apply to f.136 (8 images). [DECODE id 4450, 8 images (free login), attached docs: none found] | 39 |
+| DC2 | Vienna, Österreichisches Staatsarchiv, HHStA, Staatskanzlei Interiora, Chiffrenschlüssel Kt.14 Fasc.20 f.182-192 | 1600-1799 | de | cryptanalysis | transcription | At least 12 images (auto-discovery capped before finishing the count; the record page lists more), 18 pages per the census, Partially decrypted status but no attached key/transcription/decryption document found on the page itself -- the partial reading, if any, may only be inside a document not linked from this view. Register and check DocumentsList directly before transcribing from scratch. [DECODE id 1411, 12 images (free login), attached docs: none found] | 38 |
+| DC3 | Villeroi to Henry III (private collection) | 1577 | fr | recovery | finish-existing-key | RecordsView page shows an attached document tagged '[key]', titled 'Preliminary Assignment' -- someone has already started a key for this cipher. Register (free) and read that document before any fresh cryptanalysis. [DECODE id 2787, 2 images (free login), attached docs: Preliminary Assignment [key]] | 36 |
+| DC4 | Envoy report, State Archives of Modena, Amb. Ung. b. 2/20 no.6, Ferrara | 1492 | it | cryptanalysis | transcription | Has an attached '[transc]' document (SAMo_Amb_Ung_b_2_20_6) -- the glyphs are already transcribed, saving that step, but transcription is not the same as a broken key; still cryptanalysis. Read the transcription file, then check whether the other Amb. Ung. b.2/20 items in this same section share its alphabet. [DECODE id 1162, 2 images (free login), attached docs: SAMo_Amb_Ung_b_2_20_6 [transc]] | 36 |
+| DC5 | Simancas, Archivo General de Simancas, sec. Estado, leg. 1563, fol. 572 | 1527 | es | cryptanalysis | transcription | 4 images, no attached key/transcription/decryption document found on the record page. Register and transcribe. [DECODE id 9970, 4 images (free login), attached docs: none found] | 36 |
+| DC6 | Paris, BnF, Melanges de Colbert 11, f.479 | 1654- | fr | cryptanalysis | transcription | 6 images, no attached key/transcription document found. Register and transcribe. [DECODE id 9482, 6 images (free login), attached docs: none found] | 36 |
+| DC7 | Catherine of Aragon material, Archivo General de Simancas, España | 1509 | es | cryptanalysis | search-print | Two attached documents: an 'envelope [cleartext]' image (the outer address, likely already in clear -- common for diplomatic letters, not the cipher body) and a 'paleography study [pub]' PDF -- read the [pub] document first; if it already discusses or dates this item, that is a print-check lead, not our reading. [DECODE id 361, 3 images (free login), attached docs: envelope [cleartext]; paleography study [pub]] | 35 |
+| DC8 | Paris, BnF, Baluze 156, f.157-158 | 1636- | fr | cryptanalysis | transcription | 4 images, 1 page, no attached document found. [DECODE id 2754, 4 images (free login), attached docs: none found] | 33 |
+| DC9 | Paris, BnF, Melanges de Colbert 127, f.349-350 | 1665-1665 | fr | cryptanalysis | transcription | 4 images, 1 page, no attached document found. [DECODE id 2678, 4 images (free login), attached docs: none found] | 33 |
+| DC10 | Envoy report, State Archives of Modena, Amb. Ung. b.2/21 no.8, Ferrara/Milan correspondence | 1492 | it | cryptanalysis | transcription | Part of the same Este/Sforza envoy-report cluster as the R1162 item above (which has an attached transcription). No key or decipherment document found on this record's own page. Read R1162's transcription first to see whether the alphabet carries over. [DECODE id 1168, 9 images (free login), attached docs: none found] | 33 |
+| DC11 | Envoy report, State Archives of Modena, Amb. Ung. b.2/20 no.44, Ferrara/Milan correspondence | 1491 | it | cryptanalysis | transcription | Part of the same Este/Sforza envoy-report cluster as the R1162 item above (which has an attached transcription). No key or decipherment document found on this record's own page. Read R1162's transcription first to see whether the alphabet carries over. [DECODE id 1167, 7 images (free login), attached docs: none found] | 33 |
+| DC12 | Envoy report, State Archives of Modena, Amb. Ung. b.2/20 no.16, Ferrara/Milan correspondence | 1491 | it | cryptanalysis | transcription | Part of the same Este/Sforza envoy-report cluster as the R1162 item above (which has an attached transcription). No key or decipherment document found on this record's own page. Read R1162's transcription first to see whether the alphabet carries over. [DECODE id 1166, 4 images (free login), attached docs: none found] | 33 |
+| DC13 | Envoy report, State Archives of Modena, Amb. Ung. b.2/20 no.12, Ferrara/Milan correspondence | 1491 | it | cryptanalysis | transcription | Part of the same Este/Sforza envoy-report cluster as the R1162 item above (which has an attached transcription). No key or decipherment document found on this record's own page. Read R1162's transcription first to see whether the alphabet carries over. [DECODE id 1165, 6 images (free login), attached docs: none found] | 33 |
+| DC14 | Envoy report, State Archives of Modena, Amb. Ung. b.2/20 no.7 (a), Ferrara/Milan correspondence | 1491 | it | cryptanalysis | transcription | Part of the same Este/Sforza envoy-report cluster as the R1162 item above (which has an attached transcription). No key or decipherment document found on this record's own page. Read R1162's transcription first to see whether the alphabet carries over. [DECODE id 1164, 4 images (free login), attached docs: none found] | 33 |
+| DC15 | Envoy report, State Archives of Modena, Amb. Ung. b.2/20 no.7 (b), Ferrara/Milan correspondence | 1491 | it | cryptanalysis | transcription | Part of the same Este/Sforza envoy-report cluster as the R1162 item above (which has an attached transcription). No key or decipherment document found on this record's own page. Read R1162's transcription first to see whether the alphabet carries over. [DECODE id 1163, 4 images (free login), attached docs: none found] | 33 |
+| DC16 | Envoy report, State Archives of Milano, Sf. Ung. b.645/2 no.4, Ferrara/Milan correspondence | 1492 | it | cryptanalysis | transcription | Part of the same Este/Sforza envoy-report cluster as the R1162 item above (which has an attached transcription). No key or decipherment document found on this record's own page. Read R1162's transcription first to see whether the alphabet carries over. [DECODE id 1152, 4 images (free login), attached docs: none found] | 33 |
+| DC17 | Envoy report, State Archives of Milano, Sf. Ung. b.645/1 no.7, Ferrara/Milan correspondence | 1491 | it | cryptanalysis | transcription | Part of the same Este/Sforza envoy-report cluster as the R1162 item above (which has an attached transcription). No key or decipherment document found on this record's own page. Read R1162's transcription first to see whether the alphabet carries over. [DECODE id 1148, 1 images (free login), attached docs: none found] | 33 |
+| DC18 | Envoy report, State Archives of Milano, Sf. Ung. b.645/1 no.6, Ferrara/Milan correspondence | 1491 | it | cryptanalysis | transcription | Part of the same Este/Sforza envoy-report cluster as the R1162 item above (which has an attached transcription). No key or decipherment document found on this record's own page. Read R1162's transcription first to see whether the alphabet carries over. [DECODE id 1146, 4 images (free login), attached docs: none found] | 33 |
+| DC19 | Envoy report, State Archives of Modena, Ambasciatori b.1/13 no.22, Ferrara/Milan correspondence | 1486 | it | cryptanalysis | transcription | Part of the same Este/Sforza envoy-report cluster as the R1162 item above (which has an attached transcription). No key or decipherment document found on this record's own page. Read R1162's transcription first to see whether the alphabet carries over. [DECODE id 1121, 1 images (free login), attached docs: none found] | 33 |
+| DC20 | Catherine de Medicis to Philibert du Croc (private collection) | 1567 | fr | cryptanalysis | blocked | No images on the record page (private collection, holder field blank) and no attached key/transcription document. Historically interesting sender (Catherine de' Medici) but nothing to read without the private owner's cooperation; DECODE's free login does not make this one copy-free. [DECODE id 2788, 0 images (free login), attached docs: none found] | 26 |
+
+Caveats: scores are this session's own single-pass application of the scout.js rubric to the evidence found,
+not a multi-agent scout run -- read as ranked leads to check, not verdicts (same caveat as the census diff
+itself). Image counts for records after DC1's login-fetch position in the request order (DC10-DC19, the
+Modena/Milano cluster tail) are read directly from each record's saved HTML page, not from the auto-discovery
+fetch log, which stopped early once its own 30-file cap was reached (see `sources/decode/NOTES.md` for the
+one-line note on that cap's actual scope). No image or document was read beyond its file name and DECODE's own
+one-word tag; nothing here has been transcribed, decoded or checked against a print source. Requests this
+step: de-crypt.org ~28 (volume-sibling check, no login, >=1.7s apart) + 1 login + 25 RecordsView page fetches
+(>=1.6s apart, per the brief) + auto-discovered attachment fetches (deleted, unread) = about 80 total this
+step; combined with the ~24 DECODE requests in the Gramont/Danzay search above, this worker's de-crypt.org
+total is about 104, under the 150-request cap.

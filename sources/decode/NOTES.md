@@ -85,3 +85,23 @@ the neighbour-sweep matcher this is derived from, **this is hits to check, not v
 match a passing mention (e.g. a sibling shelfmark cited only for context in another target's NOTES.md) as
 readily as an actual solve, so `held_by` should be read as "worth checking before treating as new ground",
 not as a solved/unsolved verdict on its own. The 71 `none` rows are the input to step 3's ranking.
+
+## Ranking pass, DC1-DC20 (24 Sept 2026)
+
+LANE N DECODE worker B, continuing the same session. Ranked the census diff's `held_by: none` rows (69 with
+pages >= 1) by the scout.js rubric and wrote `QUEUE.md`'s "DECODE non-decrypted records with images" section
+plus `QUEUE-scores.json`'s `lane_n_decode` key. Full method and caveats are in QUEUE.md itself.
+
+**`tools/decode_browser_login.js --max-files N` note for the next user of this tool:** the cap applies only to
+the queue of *auto-discovered* attachment links found while scanning `--fetch-page` pages, not to the total
+request count. Every `--fetch-page` URL is always fetched regardless of `N` (`out.fetched.push` happens inside
+the `fetchPageUrls` loop, before the `maxFiles`-bounded `queue`/`seen` logic is ever consulted), and auto-
+discovered attachments only stop being *queued* once `seen.size` reaches `N` -- files already queued before
+that point still get fetched. Requesting `--max-files 30` with 25 `--fetch-page` URLs this session fetched all
+25 RecordsView pages **plus 29 auto-discovered attachments** (54 total), not "≤30 total" as the flag name
+suggests. This worker wanted RecordsView pages only (per its brief, "no images, no documents downloaded") and
+had not anticipated the auto-discovery firing on plain RecordsView pages (the tool's own comment describes it
+for DocumentsList/ImagesList/gallery pages) -- caught after the fact by grepping the output directory,
+`TH_IMG_*`/`DOC_*` files (image thumbnails and three genuine document files, all under 130KB) deleted
+unread beyond their filenames/DECODE-assigned tags, none committed. If a future pass wants pages only with no
+attachment fetching at all, pass `--max-files 0`, which this session did not test.
