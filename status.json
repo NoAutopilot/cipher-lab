@@ -1355,6 +1355,22 @@
    "grade": "S 107, M 416, I 9, U 14 of 546 groups (no H or C on this letter); novelty not yet classified",
    "line": "A cipher letter not recorded in earlier passes over fr.5160, found by the canvas walk. key_1659 (from the contemporary decipherment of f.86-88) keys 95.8% of its groups and beats 200 shuffled keys at word level (0.721 vs max 0.647). Subject: Savoy, Madame Royale withdrawing from affairs, the Duke's marriage.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "recovery",
+   "title": "William of Orange to Günther von Schwarzburg, 2 May 1561 (WVO 8246, Kanzlei Sondershausen 693): cipher body read with a key aligned from the sibling letter of 24 Mar 1561 (WVO 5109) and its printed plaintext (Japikse no. 236)",
+   "grade": "8246 pp.1-2: C 491, M 24, U 38 of 553 signs; p.3 not transcribed; novelty not yet audited",
+   "line": "A 79-sign homophonic German letter cipher (two-digit numbers, doubled letters, 4000 = König), not the Orange-Saxony systems. Key aligned from 5109's cipher against the spaced passage Japikse prints as the Prince's cipher insertion (zero conflicts among C pairs). Japikse's edition prints 8246 only up to its clear opening.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/gunther-van-schwarzburg-1561"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "contribution",
+   "title": "La Garde to William of Orange, 28 Nov 1577 (WVO 6179) and Marnix's marginal notes (WVO 6467): numeral cipher, values 1-24, not read (negative with matched controls)",
+   "grade": "negative, conditional on one transcription: homophonic control 73.5% read, target none; periodic Vigenère/Beaufort control 100%, target none",
+   "line": "228 numeral tokens transcribed. The overline marks were under-recorded in the transcription, so the negative is conditional on it; the next step is a retranscription with overlines as signs.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/la-garde-1577"
   }
  ],
  "lanes": [
