@@ -1,0 +1,306 @@
+line	col	A	B	flagged	crop
+f54r_L02	1	sym:capital-r-with-x-cross	sym:capital-r-crossed-stroke	AB	ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	2	w:dr?	w:de?		ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	3	w:dnt?	w:dnt		ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	4	w:tanq3?	w:tanq		ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	5	w:ptr?	w:ptr		ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	6	sym:hook-with-crossbar	sym:c-hook-tail	AB	ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	7	w:che	sym:cross-tick		ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	8	m	sym:small-circle-with-bar	B	ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	9	sym:reversed-l-shape	sym:open-box-bracket	A	ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	10	sym:i-with-hook	sym:m-with-tilde	A	ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	11	sym:y-with-tail	sym:letter-cluster-liyz-slashed	AB	ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	12	sym:z-with-slash	sym:cross-tick	A	ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	13	w:che	sym:open-box-bracket		ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	14	sym:a-with-cross^superscript	29		ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	15	sym:o-with-loop	sym:circle-dot-mark	AB	ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	16	sym:y-with-two-strokes^5-5	sym:cursive-r-double-dot-hook^7		ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	17	sym:backward-3	sym:o-with-loop-hook^55	AB	ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	18	sym:x-strike	sym:epsilon-curl		ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L02	19	sym:open-c-shape	sym:delta-cross-slashed	AB	ciphers/fr2933-salviati-1525/images/f54r_L02_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L02_s2.jpg
+f54r_L03	1	sym:hooked-g-with-tilde	sym:g-with-tilde		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	3	sym:looped-l-with-tilde	-		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	4	sym:hooked-g-with-tilde^2	-		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	5	sym:looped-o-with-hook	sym:w-flourish		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	6	29	sym:capital-l-with-tilde-g	B	ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	7	sym:hooked-e-with-crossbar	071		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	8	sym:hooked-g-with-tilde	sym:e-with-tilde-g	B	ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	9	sym:y-with-tail	w:yt?		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	10	sym:letter-k	sym:capital-k		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	11	sym:squared-p-shape	sym:phi-loop		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	12	sym:o-with-ring	sym:small-circle		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	13	sym:looped-r-with-hook^dots	sym:cursive-r-double-dot-hook^7		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	14	sym:p-with-crossbar^7	sym:cross-tick		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	15	sym:a-with-loop^7	sym:cursive-a-hook^7	B	ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	16	sym:looped-lambda	sym:lambda-peak		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	17	sym:hooked-e-double-hash	sym:e-with-double-hash	B	ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	18	sym:w-with-hook	sym:w-flourish		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	19	sym:p-with-crossbar	sym:c-hook-tail	B	ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L03	20	sym:letter-k	sym:capital-k		ciphers/fr2933-salviati-1525/images/f54r_L03_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L03_s2.jpg
+f54r_L04	1	sym:p-with-ring	-		ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	2	sym:o-with-ring^n4	sym:phi-with-small-circle	B	ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	3	sym:o-with-ring	sym:n-with-flag-stroke^4		ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	4	sym:looped-l-with-hook^7	sym:small-circle-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	5	sym:lambda-shape	sym:small-circle-hook^71	B	ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	6	sym:hooked-e-with-crossbar	sym:cross-tick		ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	7	sym:y-double-hash^7	sym:y-with-double-hash^7	B	ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	8	sym:looped-o-hook^3	sym:m-with-hook^3	B	ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	9	sym:cross-bar-d	sym:cross-tick-flourish	B	ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	13	-	w:.s.		ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	14	-	w:.s.ta?		ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	15	-	w:desidera		ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	16	-	14		ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L04	17	-	4		ciphers/fr2933-salviati-1525/images/f54r_L04_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L04_s2.jpg
+f54r_L05	1	-	sym:phi-loop		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	2	-	sym:cursive-c-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	3	-	sym:lambda-peak		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	4	-	sym:cursive-r-double-dot-hook		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	5	-	sym:small-circle^2		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	6	-	sym:n-with-flag-stroke		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	7	-	sym:double-hash-tick		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	8	-	sym:y-letter-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	9	-	sym:z-with-crossbar		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	10	-	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	11	-	sym:w-flourish		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	12	-	sym:e-with-double-hash		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	13	-	sym:reversed-r-loop	B	ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	14	sym:cross-bar-d	sym:n-with-flag-stroke		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	15	w:tutto	sym:hook-flag-mark^7	B	ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	16	w:quello	sym:m-tilde-flourish		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	17	w:che	sym:w-flourish		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	18	w:.s.	sym:m-with-tilde		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	19	w:s.tu	sym:lambda-peak		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	20	w:desidera	sym:y-letter-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	21	sym:lambda-cross^1	sym:hook-flag-f	B	ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L05	22	sym:lambda-cross	sym:w-flourish		ciphers/fr2933-salviati-1525/images/f54r_L05_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L05_s2.jpg
+f54r_L06	1	sym:hooked-p-with-loop	-		ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	2	sym:o-ring-double-hash	sym:y-letter-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	3	sym:looped-x-shape	sym:open-box-flag^7	B	ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	4	sym:o-ring-hook^8	sym:cursive-x-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	5	sym:f-with-hook	sym:open-box-hook-f	B	ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	6	sym:w-with-hook	sym:w-flourish		ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	7	sym:p-crossbar	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	8	sym:looped-x-shape	sym:cursive-x-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	9	sym:letter-h^3	sym:capital-h		ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	10	sym:looped-e-shape	sym:triple-hash^3	B	ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	11	lambda-cross	sym:cross-tick		ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	13	w:uolte	w:volte		ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	15	w:ha	w:ha'		ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L06	18	w:dice	w:dic?		ciphers/fr2933-salviati-1525/images/f54r_L06_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L06_s2.jpg
+f54r_L07	1	-	4		ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	2	-	sym:n-with-flag-stroke		ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	3	-	sym:cross-tick		ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	4	sym:lambda-cross^3	sym:open-box-bracket^2	B	ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	5	sym:p-crossbar	sym:e-with-double-hash		ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	6	sym:looped-x-shape	sym:reversed-c-bracket^7	B	ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	7	sym:hooked-n-with-crossbar^cross	sym:e-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	8	sym:reversed-l-shape	sym:z-flag-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	9	sym:hooked-e-double-hash	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	10	sym:reversed-c^7	sym:open-box-circle-small	B	ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	11	sym:hooked-e-with-crossbar	w:br?		ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	12	sym:p-crossbar	sym:open-box-circle-cross	B	ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	13	sym:o-ring-loop^o	sym:capital-h-flag	B	ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	14	sym:b-with-loop	sym:hook-flag-f	B	ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	15	sym:o-ring-loop^of	sym:w-flourish		ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	16	sym:letter-h^delta	sym:y-letter-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L07	17	sym:f-with-hook-w-loop-y^1	sym:m-letter-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L07_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L07_s2.jpg
+f54r_L08	1	sym:letter-h^of^delta	-		ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	2	sym:f-with-hook-w-loop-y	-		ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	3	sym:m-with-hook^3	-		ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	4	sym:letter-a	-		ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	5	sym:looped-x-shape	-		ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	6	sym:looped-x-shape	-		ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	7	sym:reversed-l-shape^2	sym:open-box-cross	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	8	sym:w-with-hook	sym:phi-loop		ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	9	sym:p-crossbar	sym:u-w-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	10	sym:reversed-c^7	sym:a-with-circle^2	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	11	sym:p-with-loop	sym:delta-hook^7	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	12	sym:o-ring^of	sym:hash-circle^73	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	13	sym:hooked-phi	sym:open-box-bracket	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	14	sym:u-w-hook	sym:g-with-hook^7	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	15	sym:p-with-loop^a	sym:lambda-lambda-pair	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	16	sym:o-with-tail^delta-p^7	sym:cross-tick		ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	17	sym:o-ring^double-hash	sym:delta-lambda-hook^7	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	18	sym:hooked-g-with-tilde	sym:e-with-hash-g	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	19	sym:y-with-loop	sym:u-bracket-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	20	sym:lambda-shape^double	sym:dt-hash^2	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	21	sym:cross-bar	sym:cross-hash-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	22	sym:reversed-delta-shape	sym:cross-hash-w-y	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	23	sym:looped-lambda-p^7	sym:small-o-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	24	sym:hooked-e-with-tilde	sym:open-box-bracket	B	ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L08	25	sym:hooked-g-with-tilde^double-hash	sym:m-with-tilde^2		ciphers/fr2933-salviati-1525/images/f54r_L08_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L08_s2.jpg
+f54r_L09	1	-	sym:g-shape^5	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	2	-	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	3	-	sym:cross-tick		ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	4	sym:hooked-g-with-tilde^5	sym:cross-tick		ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	5	sym:looped-r-cross	sym:n-with-flag-stroke	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	6	sym:cross-bar	sym:z-with-crossbar	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	7	sym:reversed-delta	sym:g-shape^2	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	8	sym:hooked-n^n^2	sym:z-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	9	sym:z-with-slash	sym:open-box-bracket	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	10	sym:backward-epsilon^2	sym:n-with-flag-hash	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	11	sym:hooked-g-with-tilde	sym:z-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	12	sym:z-with-slash^n4	sym:a-with-circle-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	13	sym:reversed-open-box^of	sym:g-shape^2	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	14	sym:z-with-slash^n	sym:y-letter-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	15	sym:reversed-open-box^2	sym:z-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	16	sym:a-with-loop	sym:w-flourish		ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	17	sym:looped-o-hook	sym:n-with-flag-stroke	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	18	sym:hooked-g-with-tilde^2	sym:m-with-hash^5ot	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	19	sym:y-with-tail	sym:cross-tick		ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	20	sym:backward-epsilon	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L09	21	w:con	w:con?		ciphers/fr2933-salviati-1525/images/f54r_L09_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L09_s2.jpg
+f54r_L10	1	w:lauenuta	w:avvenuto?		ciphers/fr2933-salviati-1525/images/f54r_L10_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L10_s2.jpg
+f54r_L10	2	w:di	w:di?		ciphers/fr2933-salviati-1525/images/f54r_L10_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L10_s2.jpg
+f54r_L10	5	w:mia	w:mi		ciphers/fr2933-salviati-1525/images/f54r_L10_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L10_s2.jpg
+f54r_L10	7	w:credibile	-		ciphers/fr2933-salviati-1525/images/f54r_L10_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L10_s2.jpg
+f54r_L10	8	14	-		ciphers/fr2933-salviati-1525/images/f54r_L10_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L10_s2.jpg
+f54r_L10	9	sym:comma-shape^13	-		ciphers/fr2933-salviati-1525/images/f54r_L10_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L10_s2.jpg
+f54r_L10	10	sym:comma-shape^5	-		ciphers/fr2933-salviati-1525/images/f54r_L10_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L10_s2.jpg
+f54r_L10	11	sym:looped-r-cross	-		ciphers/fr2933-salviati-1525/images/f54r_L10_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L10_s2.jpg
+f54r_L10	12	sym:backward-epsilon-7	w:credibile?		ciphers/fr2933-salviati-1525/images/f54r_L10_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L10_s2.jpg
+f54r_L11	1	-	sym:lambda-hook^7	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	2	-	sym:lambda-peak		ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	3	-	sym:g-with-hash-y	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	4	-	sym:lambda-lambda-pair	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	5	-	sym:open-box-bracket	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	6	-	sym:g-shape^2	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	7	-	sym:open-box-bracket	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	8	sym:lambda-cross^7	sym:m-hook-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	9	sym:lambda-shape	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	10	sym:hooked-g-with-tilde^2	sym:o-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	11	sym:y-with-tail	22		ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	12	sym:lambda-double	sym:y-letter-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	13	sym:reversed-open-box	sym:open-box-bracket	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	14	sym:hooked-g-with-tilde^2	sym:g-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	15	sym:o-with-ring^5	sym:m-g-shape^3	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	16	sym:comma-shape	sym:g-shape^7	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	17	sym:hooked-m-with-tilde	sym:hook-flag^4	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	18	sym:z-with-slash^4	sym:hook-flag^7	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L11	19	10	sym:h-shape^10	B	ciphers/fr2933-salviati-1525/images/f54r_L11_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L11_s2.jpg
+f54r_L12	1	-	sym:open-box-bracket-g^2	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	2	-	sym:double-hash^2	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	3	-	sym:m-flourish	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	4	-	sym:w-flourish		ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	5	-	sym:hook-flag-pair	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	6	sym:looped-u-with-hook	sym:open-box-bracket-g	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	7	sym:hooked-g-with-tilde^2^2	sym:lambda-hook-y	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	8	sym:double-hash	sym:open-box-bracket	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	9	sym:hooked-e-with-tilde^2	sym:m-g-y^7	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	10	sym:m-with-hook-w-loop	sym:lambda-hook-y	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	11	sym:z-with-slash^2	sym:open-box-bracket	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	12	sym:z-with-slash^2	sym:m-g-y^7	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	13	sym:hooked-g-with-tilde	sym:open-box-bracket	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	14	sym:lambda-shape	sym:circle-hash	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	15	sym:y-with-tail	sym:circle-hash^5	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	16	sym:reversed-c	sym:g-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	17	sym:hooked-m-with-tilde^7	sym:open-box-bracket	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L12	18	sym:y-with-tail	sym:hook-flag-hash	B	ciphers/fr2933-salviati-1525/images/f54r_L12_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L12_s2.jpg
+f54r_L13	1	-	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	2	-	sym:hash-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	3	-	sym:hook-flag-g	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	4	-	sym:a-with-hook^2	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	5	-	sym:hash-flag	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	6	-	sym:k-shape^10	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	7	-	sym:hash-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	8	-	sym:u-letter-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	9	-	sym:y-circle^2	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	10	sym:reversed-open-box^of	sym:hook-flag^13	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	11	sym:reversed-open-box^of-s	sym:circle-hash	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	12	sym:hooked-g-with-tilde	sym:hook-flag^79	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	13	sym:y-with-tail	sym:lambda-hook-y	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	14	sym:reversed-open-box^of-c	sym:hash-circle	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L13	15	sym:double-hash	sym:m-g-hash	B	ciphers/fr2933-salviati-1525/images/f54r_L13_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L13_s2.jpg
+f54r_L14	1	-	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L14	2	sym:looped-r-cross	sym:u-r-g-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L14	3	sym:p-crossbar^7	sym:w-theta-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L14	4	sym:hooked-n-with-tilde	sym:hook-flag-g	B	ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L14	5	sym:hooked-g-with-tilde^1-2	sym:hook-flag-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L14	6	sym:a-with-loop^7	sym:open-box-circle-g^10	B	ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L14	7	sym:lambda-shape	sym:open-box-square	B	ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L14	8	sym:double-hash	sym:h-shape^5	B	ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L14	9	sym:looped-w-with-hook	sym:a-with-hash	B	ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L14	10	sym:p-crossbar	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L14	11	sym:letter-k^17	w:pure		ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L14	12	sym:double-hash^13	w:ame?		ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L14	13	sym:o-with-ring	w:par?		ciphers/fr2933-salviati-1525/images/f54r_L14_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L14_s2.jpg
+f54r_L15	1	-	sym:h-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	2	sym:letter-k^17	sym:open-box-bracket^10-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	3	sym:double-hash^13	sym:hook-flag-g	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	4	sym:o-with-ring	sym:g-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	5	sym:cross-t	sym:g-y-m-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	6	sym:reversed-open-box	sym:open-box-bracket	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	7	sym:looped-v-with-loop	sym:m-hook-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	8	sym:y-with-tail^double-ring	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	9	sym:reversed-open-box	sym:hash-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	10	sym:m-with-hook	sym:open-box-bracket-hash	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	11	sym:z-with-slash	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	12	sym:reversed-c	sym:y-y-pair	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	13	sym:z-with-slash	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L15	14	sym:theta-shape^double-hash	w:maximo?		ciphers/fr2933-salviati-1525/images/f54r_L15_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L15_s2.jpg
+f54r_L16	3	sym:cross-bar	w:che?		ciphers/fr2933-salviati-1525/images/f54r_L16_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L16_s2.jpg
+f54r_L16	4	sym:open-c-shape^double-hash	w:cosi?		ciphers/fr2933-salviati-1525/images/f54r_L16_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L16_s2.jpg
+f54r_L16	5	sym:hooked-e-with-cross	sym:hash-hook-hash	B	ciphers/fr2933-salviati-1525/images/f54r_L16_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L16_s2.jpg
+f54r_L16	6	sym:a-with-hook-double-hash^cross	sym:e-with-hash-a	B	ciphers/fr2933-salviati-1525/images/f54r_L16_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L16_s2.jpg
+f54r_L16	7	sym:looped-o-hook	sym:hash-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L16_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L16_s2.jpg
+f54r_L16	9	-	w:stanno		ciphers/fr2933-salviati-1525/images/f54r_L16_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L16_s2.jpg
+f54r_L16	10	-	w:pure		ciphers/fr2933-salviati-1525/images/f54r_L16_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L16_s2.jpg
+f54r_L16	11	-	w:v.s.		ciphers/fr2933-salviati-1525/images/f54r_L16_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L16_s2.jpg
+f54r_L17	1	-	w:ricordera		ciphers/fr2933-salviati-1525/images/f54r_L17_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L17_s2.jpg
+f54r_L17	2	-	w:quello		ciphers/fr2933-salviati-1525/images/f54r_L17_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L17_s2.jpg
+f54r_L17	3	-	w:che		ciphers/fr2933-salviati-1525/images/f54r_L17_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L17_s2.jpg
+f54r_L17	4	-	w:li?		ciphers/fr2933-salviati-1525/images/f54r_L17_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L17_s2.jpg
+f54r_L17	5	-	w:parra		ciphers/fr2933-salviati-1525/images/f54r_L17_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L17_s2.jpg
+f54r_L17	6	sym:hooked-e-with-cross	w:e		ciphers/fr2933-salviati-1525/images/f54r_L17_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L17_s2.jpg
+f54r_L17	7	sym:a-with-hook-double-hash^cross	w:piaciuto		ciphers/fr2933-salviati-1525/images/f54r_L17_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L17_s2.jpg
+f54r_L17	8	sym:looped-o-hook	w:a.s.		ciphers/fr2933-salviati-1525/images/f54r_L17_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L17_s2.jpg
+f54r_L17	9	w:come	w:mtri?		ciphers/fr2933-salviati-1525/images/f54r_L17_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L17_s2.jpg
+f54r_L17	10	sym:looped-a-shape^1	w:e		ciphers/fr2933-salviati-1525/images/f54r_L17_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L17_s2.jpg
+f54r_L17	11	w:pure	w:ricordo		ciphers/fr2933-salviati-1525/images/f54r_L17_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L17_s2.jpg
+f54r_L17	12	sym:v.s.	w:dj?	A	ciphers/fr2933-salviati-1525/images/f54r_L17_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L17_s2.jpg
+f54r_L18	1	-	w:.s.		ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	2	-	w:.s.		ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	3	w:ricordera	sym:z-letter-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	4	w:quello	sym:k-shape^7	B	ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	5	w:che	sym:a-with-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	6	w:li	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	7	w:parra	sym:phi-loop		ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	8	sym:epsilon-shape	sym:open-box-bracket	B	ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	9	w:piaciuto	sym:u-hook-g^5	B	ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	10	w:a.s.	sym:m-y-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	11	w:mta	sym:e-with-hash	B	ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	12	sym:epsilon-shape	sym:circle-theta	B	ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	13	w:ricordo	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L18	14	w:di	w:con?		ciphers/fr2933-salviati-1525/images/f54r_L18_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L18_s2.jpg
+f54r_L19	1	-	w:tentassi?		ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	2	-	w:piu?		ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	3	-	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	4	-	sym:e-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	5	-	sym:capital-k		ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	6	-	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	7	-	sym:w-flourish		ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	8	-	sym:hook-flag-mark	B	ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	9	w:tentassi	sym:hash-mark^5	B	ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	10	w:piu	sym:z-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	11	sym:lambda-cross	sym:l-hook^5	B	ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	12	sym:hooked-e-with-cross	sym:w-flourish		ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	13	sym:letter-k	sym:a-shape	B	ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	14	sym:looped-x-with-hook	sym:y-circle	B	ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	15	sym:looped-x-with-hook^cross^5	sym:hash-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	16	sym:backward-epsilon^7	w:la		ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L19	17	sym:reversed-l-shape^5	w:oppinione?		ciphers/fr2933-salviati-1525/images/f54r_L19_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L19_s2.jpg
+f54r_L20	1	-	w:dj?		ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	2	-	w:.s.		ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	3	-	w:.s.		ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	4	-	w:et		ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	5	-	w:desidera		ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	6	-	w:in		ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	7	-	w:tal		ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	8	-	w:caso		ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	9	-	w:che?		ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	10	-	w:.n.		ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	11	sym:reversed-l-shape^5	w:.s.		ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	12	sym:backward-epsilon^7	sym:hook-flag-m	B	ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	13	sym:reversed-open-box^cross	sym:u-hook	B	ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	14	w:la	sym:hook-flag-a^2	B	ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg
+f54r_L20	15	w:oppinione	sym:hash-circle	B	ciphers/fr2933-salviati-1525/images/f54r_L20_s1.jpg,ciphers/fr2933-salviati-1525/images/f54r_L20_s2.jpg

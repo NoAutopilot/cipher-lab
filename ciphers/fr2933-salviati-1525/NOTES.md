@@ -98,3 +98,93 @@ manifest-pinned). The Desjardins/Canestrini Toscane calendar (item 2 above) is t
 searched this pass for "Salviati" + this date, out of the shared $8 cap for both M35 and M36.
 
 Stage-2 eligible on this verdict (`open`, six sources checked, per check-solved.md).
+
+## Capture and passes (24 Sept 2026)
+
+**Pre-capture check.** Confirmed by direct inspection rather than only the finding aid: fetched Fol.70
+(catalogue item 17, "Deschiffrement d'un rapport concernant messire PHILIBERT", canvas 72 at 600px --
+`images/canvas72_fol70_check.jpg`) and its facing leaf (canvas 71, `images/canvas71_fol70_check.jpg`): both
+are unrelated plain documents (a plain French letter and what looks like a Latin/legal instrument with an
+attached document fragment), not adjoining item 11 and not an interlinear gloss over it. No second copy of
+item 11 found in the fonds (the finding aid's Fol.1-84+ item list was already read in the check-solved
+section above; nothing there duplicates item 11). No interlinear or facing-page gloss over the cipher
+letter itself (its own left-hand pages are blank, per the leaf inventory below).
+
+**Extent of the letter (item 11).** Canvas = folio + 1 throughout this ark (confirmed by the visible
+foliation numerals in the images, e.g. canvas 71 = f.69, canvas 72 = f.70). The manifest carries no folio
+labels (`tools/gallica_folio.py btv1b90600674 --folio 70` returns 0 labelled canvases; cached at
+`sources/gallica-manifests/btv1b90600674.json`), so this offset is image-confirmed, not manifest-pinned.
+Item 11 runs f.54r-f.57v (canvases 55 left-blank/right-f.54r, 56, 57, 58, 59 left-half only), immediately
+followed by item 12 beginning at f.58r (canvas 59, right half): a different, unrelated plain document,
+confirmed by direct inspection, bounding the letter at its end.
+
+Leaf inventory (`images/manifest.json`, key `leaves`):
+| folio | canvas | side | content |
+|---|---|---|---|
+| 53v | 55 | left | blank (end of item 10's gathering) |
+| 54r | 55 | right | cipher, letter opens "R.dr Dnt Iano Ptr..." |
+| 54v | 56 | left | cipher continues |
+| 55r | 56 | right | cipher continues |
+| 55v | 57 | left | cipher continues, opens "Trouuo ancora..." |
+| 56r | 57 | right | cipher continues |
+| 56v | 58 | left | cipher continues |
+| 57r | 58 | right | cipher continues |
+| 57v | 59 | left | cipher ends; date line "...octobre 1525"; signature "Jo. Card[inale] Salviati"; wax/paper seal (Bibliotheque Royale crown stamp); a second, shorter cipher paragraph (postscript) below the seal; closes in plain Italian "La p[rese]nte e stata suggellata due volte" (this letter has been sealed twice) |
+| 58r | 59 | right | item 12 begins here (unrelated) -- bounds the letter |
+
+All 9 leaf-images are on disk (native crop for f.54r via `tools/iiif_lines.py`, 1600px references for the
+rest via the direct IIIF endpoint with `pct:` region splits) -- 11 MB total, well under the 30 MB cap. No
+further Gallica fetch is needed to read any leaf of this letter.
+
+**Layout and script.** This is a *nomenclator* letter, not a fully-enciphered one: continuous, legible
+Italian secretary-hand cursive (readable words and short phrases throughout: "tutto quello che", "piu
+uolte mi ha detto et dice", "la oppinione", "ricordera quello che li parra", etc.) with individual words or
+names replaced inline by (a) arabic-numeral code-groups (e.g. "245", "29", "14", "10") and (b) a large
+number of small, idiosyncratic non-alphabetic marks (hooks, tildes, crossbars, mirrored/rotated
+letterforms) that are visually distinct from ordinary secretary-hand letters and from each other. A notable,
+unexplained feature, present on every leaf and not confined to one hand: many (not all) of these marks carry
+a small superscript number floating just above them (examples on f.54r alone: 1, 2, 3, 5, 7, 8, 10, 13, 15,
+73...; also visible on f.57v). This is not a plaintext interlinear gloss (it gives no words, only numbers,
+and does not sit over every sign), but it is a candidate index/frequency annotation -- either original to
+the letter's own encoding, or added later by a reader/cataloguer. Flagging it rather than interpreting it:
+determining which is a cryptanalytic question, out of scope for this capture-only brief ("no solving, no
+key trials").
+
+**Passes.** Per the brief's condition ("if the signs are invented symbols, build one shared glyph atlas
+first... if numerals/letters, skip"): given the mix above, two blind Sonnet subagent passes were run
+directly on f.54r's 20 line-crops (`images/f54r_L01..L20_{s1,s2}.jpg`, cut by `tools/iiif_lines.py --debug`,
+overlay checked) without a pre-built atlas, each pass free to describe non-numeral signs in its own words
+(`passA.tsv`, `passB.tsv`; both flagged the page as unusually dense and most of their own `sym:` tokens as
+low-confidence, `?`-marked; pass A additionally flagged uncertainty about the exact L19/L20 line boundary).
+`tools/reconcile_passes.py passA.tsv passB.tsv --crops images --keep-plain --rows`: **20 lines, pass A 245
+signs, pass B 305 signs, agreement 15/320 = 4.7%** (`agreement.tsv`, `disagreements.tsv` -- 306 rows,
+`ciphertext_draft.tsv` -- 321 positions, 306 graded M). Agreement is near-total only on the plain Italian
+words (`w:` tokens, which matched or near-matched letter-for-letter) and collapses on every `sym:` token:
+the two independent descriptions almost never coincide on the same mark (this is the CLAUDE.md Usage-8
+lesson from Raince, 23-24 Sept 2026, "two passes that each invent their own code book cannot be reconciled
+row by row," reproduced here in a different letter: 124 vs 25 codes there, 245 vs 305 here, both far apart).
+
+**This confirms the atlas step is not skippable for this letter's symbol tokens.** 306 disagreement rows is
+far beyond what this worker's cap can settle from the image one by one (transcription.md: "settle
+disagreements.tsv rows from the image only if it stays inside the cap; else leave them"). Per the common
+brief, stopping here at cap rather than starting a third pass or hand-settling: `passA.tsv`/`passB.tsv` are
+raw and committed for reuse; `ciphertext_draft.tsv`/`disagreements.tsv`/`agreement.tsv` are diagnostic only
+and **not a reading** (306 of 321 positions are grade M from pure pass disagreement, not from an unclear
+image) -- do not cite them as a transcription.
+
+**Types, grades:** 0 H, 0 C, 15 S (agreed `w:` tokens only, and only in the weak sense of "two blind Sonnet
+reads agreed," no key or known-plaintext control), 306 M (disagreement), 0 I. No decoding attempted; no
+key exists for this letter to test against.
+
+**Suggested follow-up (not attempted this pass, cap reached):** before any further transcription pass,
+segment and cluster the non-numeral signs across all leaves into a shared glyph atlas (`tools/iiif_lines.py`
+crops already on disk for f.54r; the other 7 leaves still need line-cutting) on the model of
+`ciphers/dupuy452-carpi-1520/glyphs/` (`segment.py`/`cluster.py`/`classify.py`), give both future passes the
+atlas's codes rather than free-text shape descriptions, and separately check whether the superscript-number
+annotation is itself a key to the symbol index (a question for a solver session, not a capture worker).
+
+Requests this section: gallica.bnf.fr 7 successful pct-region page fetches + 2 pre-capture-check fetches (1
+retry after a reset on f60, stopped per playbook after the second failure -- f57v/canvas59 already covers
+the letter's end, so f60 was not needed) + 1 manifest.json fetch (succeeded on this attempt, cached) +
+1 iiif_lines.py native region fetch (f54r), all >=1.5s apart, UA per playbook. 2 Sonnet subagents (the two
+blind passes), no other subagents. Well under the $6 cap.
