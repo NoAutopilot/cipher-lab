@@ -1,0 +1,5 @@
+identifier	title	date	url	bytes_uncompressed	fetched
+lettresindites00marg	Lettres inédites de Marguerite de Valois, 1579-1606	1886	https://archive.org/download/lettresindites00marg/lettresindites00marg_djvu.txt	145024	24 Sept 2026
+lettresdecatheri01cathuoft	Lettres de Catherine de Médicis, t.1	1880	https://archive.org/download/lettresdecatheri01cathuoft/lettresdecatheri01cathuoft_djvu.txt	3634258	24 Sept 2026
+lettresdecatheri02cathuoft	Lettres de Catherine de Médicis, t.2	1880	https://archive.org/download/lettresdecatheri02cathuoft/lettresdecatheri02cathuoft_djvu.txt	2559880	24 Sept 2026
+model_o5.pkl.gz is a build cache (python3 tools/french16_ngram.py); not committed.

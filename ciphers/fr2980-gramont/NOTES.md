@@ -532,3 +532,88 @@ signs; a key-table check of the recurring unkeyed shapes (FL, BOX, n, Sx, re, v,
 and Tomokiyo images, which is a key-identification job, not a guess from context.
 
 Requests this pass: none to any host. Subagents: none.
+
+## f.30 unkeyed signs (24 Sept 2026)
+
+Worker: solver (Opus, cap $12), 03:26-03:45 UTC by `date -u`, LANE G orchestrator session_014zWyan51u9qMn9gnHpm1Aq.
+No image fetched; archive.org only, 4 requests (one search, three `_djvu.txt` downloads) for the corpus.
+
+**Model.** `tools/french16_ngram.py`: a character 5-gram model (Witten-Bell), folded as the cipher tables are
+(upper case, no accents, J->I, U->V). Corpus: Internet Archive OCR of *Lettres inédites de Marguerite de Valois*
+(1886) and *Lettres de Catherine de Médicis* t.1-2 (1880), 939,272 words, listed in `tools/data/fr16/MANIFEST.tsv`
+(gzipped text committed; the pickled model is a rebuildable cache). Held-out 2.70 bits/char. These are 1530s-1600
+letters, which is close to Gramont's period and spelling but later. No edition that could hold Gramont's own letters
+was used as corpus.
+
+**Procedure** (`infer_unkeyed.py`, deterministic): every sign key.tsv values is decoded as decode.py reads it
+(M values included). Each hidden sign is tried at each candidate value: 23 letters, NULL, and the table's word signs
+ET/COM/SS/LL. Every occurrence on both leaves is scored in a window of +-8 signs under the model. Each letter is
+charged at the model's mean bits/char so that deleting letters earns nothing, and a word sign pays 3 bits.
+Neighbouring signs with no value are filled with the model's likeliest letter. The procedure greedily fixes the
+sign whose best value leads its runner-up by the largest margin (bits), then repeats.
+
+**Matched control first (rule 3), `control_f30.tsv`.** Ten draws. Each draw hid 20 keyed H signs, one per unkeyed
+target sign (the 20 that occur twice or more). Each hidden sign was chosen at random from the 5 keyed signs whose
+total count was nearest the target's. The real unkeyed signs stayed unvalued throughout. Excluded from the pool:
+M-graded key entries, and the four keyed signs the reconciler flagged (Tb, eh, H, q), whose true value here is in
+doubt. Settings and the acceptance rule were chosen on draws 0-4 only; draws 5-9 were held out.
+- All proposals: 155/200 correct (tuning 77/100, held-out 78/100). By frequency band: n>=10 91/101, 5-9 36/36,
+  2-4 8/24.
+- **Acceptance rule** (fixed on draws 0-4): the value is not NULL, the sign occurs 5+ times, and the margin is at
+  least 10 bits. Under the rule: tuning 46/50, **held-out 50/53**, all draws 96/103 (93%). The seven misses are
+  aq Y->I six times (a period spelling twin) and Af M->R once. NULL proposals were right about half the time,
+  which is why NULL is never accepted. The word sign COM (bb) was always proposed as NULL.
+- What did not help on the tuning draws: a dictionary-coverage bonus for word segmentation (0.5 and 1 bit per
+  char), a larger set of candidate word signs, and a null penalty. The control score fell each time, so all three
+  were left out. The brief asked for a segmentation bonus; the control says it hurts with this corpus.
+- Limitation: only 25 distinct keyed signs could fill the pool, so the draws repeat signs, and the 103 accepted
+  control proposals are not 103 independent trials.
+
+**Values accepted** (`key_extension_f30.tsv`, grade S; `infer_f30.tsv` has every proposal):
+
+| sign | n | value | margin (bits) | runner-up | sample context (extended reading) |
+|---|---|---|---|---|---|
+| n | 26 | V | 351 | N | SIREQ**v**ILVOVS, QvIL throughout |
+| BOX | 27 | E | 124 | I | S**e**RVICE, CEN**e**ST |
+| FL | 35 | S | 109 | NULL | QVILE**s**TIMPOSSIBLE, VOVS**s**AVRIE |
+| re | 7 | V | 69 | N | AVC**v**NE DESLIBERATION |
+| A2 | 17 | E | 68 | I | LAFORC**e** ENTRE |
+| III | 14 | E | 53 | I | (f.30r L01-L04 mostly) |
+| lz | 5 | H | 31 | L | TRES**h**VMBL, TOVDES C**h**OVSES QVI VOVS TOVC**h**VNT |
+| ST | 18 | L | 25 | NULL | DE LA **l**IBERTE, DES**l**IBERATION |
+| QQ | 8 | D | 17 | NULL | |
+| Mx | 12 | L | 13 | N | |
+| Sx | 7 | Q | 11 | I | SELON·E**q**VVIL |
+
+Not accepted: B8 (NULL, 49 bits; NULL is never accepted), v (M, 5.4 bits), HASH (I, 4.8 bits), and every sign
+seen fewer than 5 times (Zs, Hb, INF, TRI, ev, CROSS, nn, ff, tb, [?]). Mx, III, lz and Hb also occur on f.29r.
+Those occurrences were scored, but reading.txt (f.29r) is not extended.
+
+**Information only, not applied:** the same procedure, hiding the four flagged keyed signs (`infer_unkeyed.py
+doubtful`), gives eh -> T (47.6 bits; DECLARA*t*ION, REPVTA*t*ION), H -> I (as in the table), q -> B (8.7 bits,
+below the rule) and Tb -> E (1.2 bits, no decision). key.tsv is untouched. eh = T contradicts the table's D, and a
+key-image check should settle it.
+
+**Readings.** `decode.py` now also writes `reading_f30_extended.txt` / `reading_f30_extended_tokens.tsv`: key.tsv
+plus key_extension_f30.tsv, which fills only the signs key.tsv leaves unvalued. S values are printed in lower
+case. `--check` covers all six outputs, and `--extended` prints the extended reading. The published-key reading is
+unchanged. Grades, f.30, 1973 tokens:
+- published key: H 1502, C 0, S 0, M 239, I 0, U 232
+- extended: **H 1502, C 0, S 158, M 254, I 0, U 59**. The 15 extra M are S values on signs read with doubt (l).
+There is no C, so the extension is a cryptanalytic result resting on a key-based reading.
+
+**Lines that read as continuous French**, by eye on the extended reading, in the reconciler's classes (sense
+grade I): **32 of 55** (was 22). Newly continuous: f.30r L15, L16, L28, L29, L30; f.30v L01, L05, L14, L16, L19.
+The rest are French with gaps (18) or not French (f.30r L01, L02, L04, L08, L11). f.30r L03, L07 and L12 move
+from not French to gaps. Samples: f.30r L30 TOVDES CHOVSES QVI VOVS TOVCHVNT DE SI BON PIED; f.30r L29 FOY QVE IE
+VOVS DOIBS ... ALLER EN; f.30v L01 ... QVIL NA AVCVNE DESLIBERATION; f.30v L05 ET A VOVS ... ET VOVS ... TRES
+HVMBL-. The top of f.30r (L01-L04, L08, L11) stays unread with the new values. That supports the reconciler's
+view that signs there are misidentified or belong to a nomenclator outside both tables.
+
+**Where not searched:** no phrase or print search on the new text (not in the brief); novelty is not classified
+(rule 10).
+
+**Suggestions (not done):** check eh = T and the accepted shapes (FL, BOX, n, ST, lz) against the Lasry and
+Tomokiyo key images; a second reader on f.30r L01-L12; test v as EM or M, and B8 as a null, on the crops.
+
+Requests this pass: archive.org 4. No other host, no subagents, no logins.

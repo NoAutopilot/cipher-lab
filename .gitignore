@@ -1,3 +1,4 @@
 __pycache__/
 *.pyc
 sources/ia-fulltext/*_djvu.txt
+tools/data/fr16/*.pkl.gz
