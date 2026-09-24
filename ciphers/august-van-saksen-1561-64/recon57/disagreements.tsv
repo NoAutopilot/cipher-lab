@@ -1,0 +1,50 @@
+line	col	A	B	flagged	crop
+57_L01	3	9	G7	AB	images/crops_s1/57_L01.png
+57_L01	4	9	G7	AB	images/crops_s1/57_L01.png
+57_L01	6	9	G7	AB	images/crops_s1/57_L01.png
+57_L01	14	E	G6	B	images/crops_s1/57_L01.png
+57_L01	39	-	E		images/crops_s1/57_L01.png
+57_L01	40	THE	DOT	A	images/crops_s1/57_L01.png
+57_L01	42	E	G6	B	images/crops_s1/57_L01.png
+57_L02	14	9	G7	AB	images/crops_s1/57_L02.png
+57_L02	21	-	G6	B	images/crops_s1/57_L02.png
+57_L02	22	E	THE	B	images/crops_s1/57_L02.png
+57_L02	23	G2	G1	B	images/crops_s1/57_L02.png
+57_L02	35	E	G6	B	images/crops_s1/57_L02.png
+57_L02	44	E	G6	B	images/crops_s1/57_L02.png
+57_L03	6	-	2		images/crops_s1/57_L03.png
+57_L03	15	E	6	B	images/crops_s1/57_L03.png
+57_L03	25	THE	6	A	images/crops_s1/57_L03.png
+57_L03	32	E	G6	B	images/crops_s1/57_L03.png
+57_L03	40	OQ	-	A	images/crops_s1/57_L03.png
+57_L03	41	DOT	G3	AB	images/crops_s1/57_L03.png
+57_L03	42	G4	THE	AB	images/crops_s1/57_L03.png
+57_L03	43	3	SG	B	images/crops_s1/57_L03.png
+57_L04	1	-	G6	B	images/crops_s1/57_L04.png
+57_L04	2	E	SG	B	images/crops_s1/57_L04.png
+57_L04	3	G4	G6	AB	images/crops_s1/57_L04.png
+57_L04	5	E	G6	B	images/crops_s1/57_L04.png
+57_L04	9	G4	SG	AB	images/crops_s1/57_L04.png
+57_L04	14	8	6	B	images/crops_s1/57_L04.png
+57_L04	16	E	G6	B	images/crops_s1/57_L04.png
+57_L04	19	E	G6	B	images/crops_s1/57_L04.png
+57_L04	22	G4	SG	AB	images/crops_s1/57_L04.png
+57_L04	23	Z	2		images/crops_s1/57_L04.png
+57_L04	34	-	X	B	images/crops_s1/57_L04.png
+57_L04	35	Xk	G6	AB	images/crops_s1/57_L04.png
+57_L04	37	E	G6	B	images/crops_s1/57_L04.png
+57_L04	40	G4	SG	AB	images/crops_s1/57_L04.png
+57_L04	43	G4	SG	AB	images/crops_s1/57_L04.png
+57_L04	44	E	G6	B	images/crops_s1/57_L04.png
+57_L04	47	5	S		images/crops_s1/57_L04.png
+57_L05	1	OQ	G3	AB	images/crops_s1/57_L05.png
+57_L05	2	V	G1	B	images/crops_s1/57_L05.png
+57_L05	15	-	X		images/crops_s1/57_L05.png
+57_L05	16	Xk	G6	AB	images/crops_s1/57_L05.png
+57_L05	44	E	G6	B	images/crops_s1/57_L05.png
+57_L05	50	DOT	-	A	images/crops_s1/57_L05.png
+57_L06	15	5	F	B	images/crops_s1/57_L06.png
+57_L06	23	0	THE	B	images/crops_s1/57_L06.png
+57_L07	17	G4	OQ	AB	images/crops_s1/57_L07.png
+57_L07	25	Z	Zb	B	images/crops_s1/57_L07.png
+57_L07	28	6	THE	AB	images/crops_s1/57_L07.png
