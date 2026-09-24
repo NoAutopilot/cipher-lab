@@ -1,11 +1,11 @@
 status: ready
-subject: Create a private repository for the grant applications (one click), then tell me
+subject: Create one private repository for grants and correspondence (one click), then tell me
 to: github.com/new (your account; no email)
 
-You asked at 13:41 UTC that grants material stay out of this public repository. A cloud session cannot create repositories (the GitHub app returns 403 for that), so this one is yours:
+You asked (13:41 and 13:52 UTC) that grants material and the email correspondence stay out of this public repository. A cloud session cannot create repositories (the GitHub app returns 403), so this is yours:
 
-1. github.com/new: name `cipher-lab-grants`, Private, tick "Add a README". Create.
-2. github.com/apps/claude/installations/select_target: add `cipher-lab-grants` to the Claude app's repository access and save (the same page you used this morning for cipher-lab).
-3. Tell me "grants repo ready". I attach it, move the scout's table and the application drafts into it, and from then on the grants workers write only there. Personal fields stay as placeholders even in the private repo; you fill them at submission time.
+1. github.com/new: name `cipher-lab-private`, Private, tick "Add a README". Create.
+2. github.com/apps/claude/installations/select_target: add `cipher-lab-private` to the Claude app's repository access and save.
+3. Tell me "private repo ready".
 
-Until then the two grants workers publish their outputs as private artifacts readable only by you and me, nothing is committed anywhere.
+What goes there: `grants/` (the scout's table, application drafts, plan, your fill-in checklists) and `mail/` (outbox drafts with recipient addresses, sent copies, filed replies, the address book). What stays here: CONTRIBUTIONS.md rows by date, institution and class with no addresses; a one-line stub per draft in outreach/ with `status: ready` so the card still shows what is waiting for your tick, and the tick still counts as the send. Even in the private repository, your own personal fields stay placeholders until you submit an application, and mail credentials never go in either repository (environment variables only).
