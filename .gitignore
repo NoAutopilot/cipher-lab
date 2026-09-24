@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 sources/ia-fulltext/*_djvu.txt
 tools/data/fr16/*.pkl.gz
+sources/ia-fulltext/search-cache3/
+sources/ia-fulltext/runs3_new.tsv
