@@ -509,3 +509,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 05:10 | LANE N orchestrator (session_01W4z8JhXJYHRjorPC1Qkpiy) | nomination: ciphers/ra-celsing-sillen-1755 | copy-order | kind recovery | Celsing drafts filed with key; order the volume, check-solved I
 2026-09-24 05:10 | LANE N orchestrator (session_01W4z8JhXJYHRjorPC1Qkpiy) | nomination: ciphers/ula-degeer-1644 | copy-order | kind recovery | De Geer papers carry a key beside ciphered letters (Uppsala)
 2026-09-24 05:10 | LANE N orchestrator (session_01W4z8JhXJYHRjorPC1Qkpiy) | nomination: ciphers/ra-vellingk-1713 | copy-order | kind cryptanalysis | Vellingk exile reports partly cipher, no key located, undigitised
+2026-09-24 05:10 | LANE N scout (Sonnet, worker for session_01W4z8JhXJYHRjorPC1Qkpiy) | claim: BW rows -- British Library and Wellcome digitised cipher candidates, copy-free only -- files: QUEUE.md, QUEUE-scores.json, sources/solver-diffs/2026-09-24-lane-n-bl-wellcome.tsv
