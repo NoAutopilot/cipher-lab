@@ -115,3 +115,116 @@ line	pos	code	marks	action	conf	note
 4	24	_		confirm	H	reads 'anva'/'anda', plain cursive continuing
 4	25	_		confirm	H	reads 'ars', plain cursive text
 4	26	_		confirm	M	small closing flourish, plain; share only 0.43
+5	1	y		confirm	H	matches y per strip context
+5	2	_		confirm	H	plain, per strip
+5	3	_		correct	L	small soft wavy hook, doesn't match N's bold zigzag shape; share only 0.44
+5	4	_		confirm	H	plain
+5	5	_	1	confirm	H	as scripted
+5	6	S	dot	confirm	H	matches S
+5	7	_		confirm	M	plain-looking cursive fragment; share 0.79, no clear cipher match found on recrop
+5	8	_		confirm	H	plain
+5	9	_		confirm	H	recrop clearly shows plain letters 'Co'
+5	10	_		correct	M	single stroke with a dot, no second leg - does not show lam's two-stroke Λ; share 0.83
+5	11	S		confirm	H	matches S
+5	12	S	dot	correct	M	recrop shows a clear S-curve with a dot, not plain; script had code _ but share only 0.63
+5	13	phi		confirm	H	matches phi
+5	14	a	7	confirm	H	matches a
+5	15	g	7	confirm	H	matches g
+5	16	a	1	confirm	H	matches a
+5	17	S7		confirm	H	matches S7
+5	18	e	dot|+	correct	M	recrop clearly shows an e-bowl; script's own marks (dot|+) already implied e-like features though code was left _; share 0.61
+5	19	L		correct	M	recrop shows a clear angular bracket/right-angle shape with a 7 nearby, matches L; script proposed plain _ despite share 1.00
+5	20	S7		confirm	H	matches S7
+5	21	S		confirm	H	matches S
+5	22	w		confirm	H	matches w
+5	23	_		confirm	H	plain
+5	24	rz		confirm	H	matches rz
+5	25	lam	5	confirm	H	matches lam
+6	1	sq		correct	M	recrop shows a clean closed box shape, no zigzag - does not match Z; share only 0.61
+6	2	psi		confirm	H	matches psi
+6	3	lam	5	confirm	H	matches lam
+6	4	eps	5	confirm	H	matches eps (two stacked open bowls)
+6	5	nt		confirm	H	matches nt
+6	6	[		confirm	H	matches [ (box open right)
+6	7	rz		confirm	H	matches rz
+6	8	g	~	confirm	H	matches g
+6	9	Z		confirm	H	matches Z
+6	10	]	o	confirm	H	matches ]
+6	11	S7		confirm	H	matches S7
+6	12	e	#	confirm	H	matches e with # mark
+6	13	eps	5	confirm	H	matches eps
+6	14	_		confirm	H	plain
+6	15	lam		confirm	H	matches lam
+6	16	S		confirm	M	recrop shows a '3'-like curve consistent with S; share 0.62
+6	17	_		confirm	H	plain
+6	18	rz		confirm	H	matches rz
+6	19	]	ot	confirm	H	matches ]
+6	20	g		confirm	H	recrop shows a clear 9/g loop; share 0.78
+6	21	g	7	confirm	H	matches g
+6	22	]	o	confirm	H	matches ]
+6	23	lam		confirm	H	matches lam
+6	24	bh		confirm	H	matches bh
+6	25	S7	#	confirm	H	matches S7
+6	26	Lx		confirm	M	recrop shows a lambda-like shape with a crossing bar, consistent with Lx; share 0.60
+6	27	dl		confirm	H	matches dl
+6	28	_		correct	M	recrop reads as plain cursive letters ('Av'-like), no y-loop tail present; share only 0.61
+6	29	_		confirm	H	plain
+6	30	_		confirm	M	small loop plus flourish, plain; share 0.80
+7	1	_		confirm	H	plain
+7	2	_		confirm	H	plain
+7	3	S		confirm	H	matches S
+7	4	S	#	confirm	H	matches S
+7	5	ch		confirm	H	matches ch (c + looped h)
+7	6	e		confirm	H	matches e
+7	7	_		confirm	H	plain
+7	8	S4		correct	M	recrop shows a slash crossing a ⊥-foot, matches S4; script proposed plain at share 0.80
+7	9	dl		confirm	H	matches dl
+7	10	_		correct	L	recrop shows a rounded hump on a baseline, not L's angular hook; very low share 0.41
+7	11	nt		confirm	H	matches nt
+7	12	S7	+	confirm	H	matches S7
+7	13	bh		confirm	H	matches bh
+7	14	nt		confirm	H	matches nt
+7	15	y		confirm	H	matches y
+7	16	g		confirm	H	matches g
+7	17	bh		confirm	H	matches bh
+7	18	S7		confirm	H	matches S7
+7	19	#		correct	M	recrop shows a clear double-barred cross, matches #; script proposed plain at share 0.82
+7	20	g	1	confirm	H	matches g
+7	21	w		confirm	H	matches w
+7	22	y		correct	M	recrop shows a clear y-loop tail, not g's 9-loop; very low share 0.41
+7	23	_		confirm	H	plain
+7	24	S7		confirm	H	matches S7
+7	25	]	o	confirm	H	matches ]
+7	26	sq		correct	M	recrop shows a closed parallelogram/box, matches sq better than ] (which should be open on the left); original marks field held a literal '?', itself a flag of script uncertainty; share 0.77
+8	1	Z		confirm	H	matches Z
+8	2	_		confirm	H	plain
+8	3	bh		confirm	H	matches bh
+8	4	sq	o	confirm	H	recrop shows a clean closed box, matches sq
+8	5	w	#	confirm	H	matches w
+8	6	rz		confirm	H	matches rz
+8	7	lam		confirm	H	matches lam
+8	8	g	1|~	confirm	H	matches g
+8	9	]		confirm	H	matches ]
+8	10	y	ot	confirm	H	matches y
+8	11	lam		confirm	H	matches lam
+8	12	lam		confirm	H	matches lam
+8	13	g		confirm	H	matches g
+8	14	bh		confirm	H	matches bh
+8	15	phi		confirm	H	recrop shows a clear slashed-circle-on-stem, matches phi; share 0.82
+8	16	e		confirm	H	matches e
+8	17	g		confirm	H	matches g
+8	18	bh		confirm	H	matches bh
+8	19	[		confirm	H	matches [
+8	20	_		confirm	H	plain
+8	21	_		confirm	M	recrop shows small plain hook/curve shapes; share 0.63
+8	22	m	~	confirm	H	matches m
+8	23	w		confirm	H	matches w
+8	24	m	~	confirm	H	matches m
+8	25	lam		confirm	H	matches lam
+8	26	bh	7	confirm	H	matches bh
+8	27	phi		confirm	H	matches phi
+8	28	y		confirm	H	matches y
+8	29	g		confirm	H	matches g
+8	30	Z		confirm	H	matches Z
+8	31	g		confirm	H	matches g
+8	32	Z		confirm	H	matches Z
