@@ -7408,6 +7408,7 @@
   "bl_add_ms_digitised_since": [],
   "rows": []
  },
+<<<<<<< Updated upstream
  "lane_n_us-b": {
   "_about": "LANE N scout of 24 September 2026 (worker for session_01W4z8JhXJYHRjorPC1Qkpiy, .claude/briefs/runs/2026-09-24-lane-n-scUS2.md): William L. Clements Library, American Philosophical Society, NYPL Digital Collections, New-York Historical Society, Harvard Houghton/CURIOSity, Princeton special collections (dpul.princeton.edu). Six of seven brief-named hosts blocked before any query form loaded (403: quod.lib.umich.edu, clements.umich.edu, search.amphilsoc.org, digitalcollections.nyhistory.org; Cloudflare Turnstile redirect: diglib.amphilsoc.org; token-gated: api.repo.nypl.org; Incapsula challenge: digitalcollections.nypl.org; 429 never resolving: curiosity.lib.harvard.edu, hollisarchives.lib.harvard.edu) -- all logged 'query form unverified', not 'no candidates'. dpul.princeton.edu answered and its control passed (found a genuine cipher item, Arthur Lee to the Continental Congress Committee of Correspondence, 31 Aug 1778, ark:/88435/dcr781wv919), but that item is already deciphered in-place (interlinear, contemporary) so it scores unread=0 and is not nominated; remaining 34+115+15+5 hits across four queries are printed books/pamphlets using 'cipher'/'cypher' in ordinary prose, no manuscript ciphertext found. findingaids.princeton.edu (not brief-named, tried only as the source catalogue for the one genuine hit) is Cloudflare Turnstile-blocked. Zero rows filed (UB1 unused). Full log: sources/solver-diffs/2026-09-24-lane-n-us-b.tsv.",
   "date": "24 September 2026",
@@ -7465,10 +7466,34 @@
    "agatha.arch.be": 4,
    "opac.kbr.be": 1,
    "www.kbr.be": 1,
+=======
+ "lane_n_ireland": {
+  "date": "24 September 2026",
+  "_about": "LANE N scout of 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-n-scIE.md): National Library of Ireland (sources.nli.ie union index + www.nli.ie PDF collection-list finding aids), PRONI eCatalogue, Trinity College Dublin Digital Collections, Royal Irish Academy archives portal. No cipher item at any of the four hosts was already known to this project, so the brief's 'known item' control could not be run as specified; sources.nli.ie's search-result quality (correct subject tagging, no foliation/noise hits) was logged as the substitute check. catalogue.nli.ie and digital.nli.ie Cloudflare/proxy-blocked; PRONI eCatalogue's GET times out to a session page and its POST replay of the ASP.NET VIEWSTATE triple is WAF-rejected; TCD Digital Collections serves a Cloudflare/hCaptcha challenge (matches CLAUDE.md's existing note); RIA's archives.ria.ie is proxy-blocked (502, egress policy). Four rows kept (IE1-IE4), all catalogue-snippet or PDF-finding-aid leads with no image reached; three dropped (an Orrery cipher key with no paired letter, a literary glossarial cipher, and a printer's-monogram false positive).",
+  "kept": 4,
+  "dropped": 3,
+  "digitised_copy_free": 0,
+  "raw_hits_sources_nli_unfiltered": 51,
+  "raw_hits_sources_nli_dublin_only": 6,
+  "requests_per_host": {
+   "sources.nli.ie": 7,
+   "www.nli.ie": 4,
+   "catalogue.nli.ie": 3,
+   "digital.nli.ie": 1,
+   "apps.proni.gov.uk": 3,
+   "www.proni.gov.uk": 1,
+   "www.nidirect.gov.uk": 1,
+   "discovery.proni.gov.uk": 1,
+   "digitalcollections.tcd.ie": 2,
+   "ria.ie_www.ria.ie": 2,
+   "archives.ria.ie": 1,
+   "WebSearch": 7,
+>>>>>>> Stashed changes
    "github.com": 2
   },
   "rows": [
    {
+<<<<<<< Updated upstream
     "rank": "NB1",
     "target": "Lodewijk van Nassau to Willem van Oranje, four cipher letters (4610, 4611, 4612, 4616) with two sibling letters (4613, 4615) carrying a contemporary decipherment imaged in the same shelfmark",
     "year": "1573-1574",
@@ -7581,6 +7606,58 @@
      "unread": 3
     },
     "total": 32
+=======
+    "row": "IE1",
+    "name": "Correspondence in cipher by statesmen and others, re. negotiations from Belgium on the restoration prospects of Charles II",
+    "year": "[c.1656-60, undated in snippet]",
+    "language": "en",
+    "material": 0,
+    "key_lead": 0,
+    "size": 0,
+    "unread": 3,
+    "kind": "cryptanalysis",
+    "where": "sources.nli.ie/Record/MS_UR_019357 (Cloudflare-blocked; snippet only)",
+    "total": 24
+   },
+   {
+    "row": "IE2",
+    "name": "'Rendition of Ireland 1690' volume: letters to Sir Robert Southwell plus a (Jacobite?) cypher of names",
+    "year": "1690",
+    "language": "en",
+    "material": 0,
+    "key_lead": 0,
+    "size": 0,
+    "unread": 3,
+    "kind": "cryptanalysis",
+    "where": "sources.nli.ie/Record/MS_UR_028273 (Cloudflare-blocked; snippet only)",
+    "total": 22
+   },
+   {
+    "row": "IE3",
+    "name": "[Letter] in cypher. With 2 photostat copies.",
+    "year": "[c.165-]",
+    "language": "en (unconfirmed)",
+    "material": 1,
+    "key_lead": 0,
+    "size": 0,
+    "unread": 3,
+    "kind": "cryptanalysis",
+    "where": "NLI Ms. 11,061 (1-20) item 3, Ormond Papers Collection List a017 PDF p.129",
+    "total": 21
+   },
+   {
+    "row": "IE4",
+    "name": "Minute da porsi in cifra a varii Nuntii, 1608-10",
+    "year": "1608-1610",
+    "language": "it",
+    "material": 0,
+    "key_lead": 0,
+    "size": 0,
+    "unread": 1,
+    "kind": "contribution (tentative)",
+    "where": "sources.nli.ie/Record/MS_UR_066509 (Cloudflare-blocked; snippet only)",
+    "total": 18
+>>>>>>> Stashed changes
    }
   ]
  }

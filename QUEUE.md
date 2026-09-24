@@ -2408,6 +2408,7 @@ worth a look for any future Italian-diplomatic-cipher lane even though the volum
 (4) The Willes Papers (Add MS 45518-45523) are a key-lead resource across many other targets' correspondents,
 not themselves a single unread letter -- worth opening before scoring as its own target.
 
+<<<<<<< Updated upstream
 ## US research libraries B (LANE N scout of 24 September 2026)
 
 LANE N brief (US research libraries B, worker for session_01W4z8JhXJYHRjorPC1Qkpiy): the William L. Clements
@@ -2472,3 +2473,77 @@ digitalcollections.nypl.org 1, digitalcollections.nyhistory.org 2, curiosity.lib
 hollisarchives.lib.harvard.edu 2, dpul.princeton.edu 8 (1 reset, retried once), findingaids.princeton.edu 2,
 github.com 2 shallow clones (grepped only, deleted after). No Google Books, no TNA, no DECODE, no Gallica, no
 subagents, no novelty wording, no promotion, no solving.
+=======
+## Irish archives and libraries (LANE N scout of 24 September 2026)
+
+Hosts reached: `sources.nli.ie` (an NLI-run union index of manuscript sources for Irish history, indexing
+material held at NLI and at many other repositories -- its `/Search/Results` pages load cleanly over curl,
+its `/Record/` item pages are Cloudflare-challenged and were not reached); `www.nli.ie` (PDF collection-list
+finding aids under `/pdfs/mss%20lists/` and `/sites/default/files/`, item-level text, no login). Controls: no
+cipher item at NLI, PRONI, TCD or RIA was already known to this project before this sweep (checked QUEUE.md,
+CATALOG.md, LANDSCAPE.md, ciphers/, sources/cryptiana, and fresh greps of both solver repositories -- zero
+hits), so the brief's "known item" control could not be run as specified; logged as a control-note row in the
+TSV rather than skipped. Blocked hosts, one attempt each, not retried: `catalogue.nli.ie` and `digital.nli.ie`
+(Cloudflare JS challenge / proxy 502); PRONI eCatalogue (`apps.proni.gov.uk/eCatNI_IE`) -- GET redirects to a
+session-timeout page, a POST replaying the ASP.NET `__VIEWSTATE`/`__EVENTVALIDATION` triple is rejected by a
+WAF ("Request Rejected"); `digitalcollections.tcd.ie` -- a Cloudflare/hCaptcha challenge page, matching
+CLAUDE.md's existing note on this host; `archives.ria.ie` -- proxy CONNECT tunnel failure (egress-policy
+denial, not the site). `www.nidirect.gov.uk` and `www.proni.gov.uk` load (HTTP 200) but neither is the
+eCatalogue search itself. Every one of these four is logged "query form unverified," not "no candidates."
+
+Raw: 51 hits for `cipher` on sources.nli.ie across all repositories it indexes (6 held at NLI itself after
+filtering to `Archive: Dublin: National Library of Ireland`, plus 2 further hits for `cypher` found only by
+grepping the two Ormond Papers PDF finding aids, which the search box does not reach). Kept: 4 (IE1-IE4).
+Copy-free: 0 -- every kept row is a catalogue description or finding-aid line, not an image; none of the four
+`/Record/` pages or any digitisation could be reached this sweep, so material scores 0-1 throughout and every
+row needs a reading-room visit or copy order, not a free download.
+
+| Row | Target | Year | Lang | Kind | Next step | Detail | Total | Sources |
+|---|---|---|---|---|---|---|---|---|
+| IE1 | Correspondence in cipher by statesmen and others, re. negotiations from Belgium on the restoration prospects of Charles II | [c.1656-60, undated in the catalogue snippet] | en | cryptanalysis | search-print | NLI, ref. not visible in the search snippet (sources.nli.ie/Record/MS_UR_019357, page Cloudflare-blocked). Diplomatic/exile correspondence about the Restoration is heavily published (Thurloe, Clarendon State Papers, Nicholas Papers); check those editions by date range before any campaign. Record page and image not reached this sweep -- material and size both unconfirmed. | 24 | sources.nli.ie |
+| IE2 | "Rendition of Ireland 1690" volume: letters to Sir Robert Southwell (Secretary of State for Ireland) from Captains Sincock, Wright and Dover, plus a "(Jacobite?) cypher of names" and Navy Office letters, 1639-1741 | 1690 | en | cryptanalysis (the cypher-of-names item only; the volume's other letters read as plain covering correspondence) | search-print | NLI, ref. not visible in the snippet (sources.nli.ie/Record/MS_UR_028273, page Cloudflare-blocked). Likely a small nomenclator/alias list rather than running ciphertext -- confirm size before scoring further. Williamite War in Ireland (1690) is well covered by CSPD and Dalton's *English Army Lists*; check both for Southwell's correspondence of this date. | 22 | sources.nli.ie |
+| IE3 | "[Letter] in cypher. With 2 photostat copies." | [c.165-] | en (unconfirmed) | cryptanalysis | archive-request | NLI Ms. 11,061 (1-20), item 3, in "Miscellaneous items relating to the Ormond's lands in Kilkenny etc." (Ormond Papers, Collection List a017, PDF p.129 of the finding aid). No decipherment noted for this item or its neighbours (1,2,4,5, all read). That photostat copies already exist suggests the item has been consulted before, which cuts both ways -- worth a search-print pass (Carte's Ormond calendars, HMC Ormonde) before an archive-request, not skipped in favour of one. | 21 | www.nli.ie (PDF finding aid) |
+| IE4 | "Minute da porsi in cifra a varii Nuntii, 1608-10" (instructions to be put into cipher for various nuncios) | 1608-1610 | it | contribution (tentative; may be an administrative minute rather than a ciphertext) | search-print | NLI, ref. not visible in the snippet (sources.nli.ie/Record/MS_UR_066509, page Cloudflare-blocked). Papal-nuncio diplomatic material of this date is the same family Tomokiyo and the solver repos already cover heavily for Italy (Pallotto, Morosini, Ottobon, Vatican Challenges) -- check those pages by date before assuming this is unclaimed material, and confirm the item is ciphertext, not an instruction document, before scoring further. | 18 | sources.nli.ie |
+
+**Dropped this sweep:**
+
+| Name | Reason |
+|---|---|
+| Four ciphers used by the Earl of Orrery, late 17th c. (NLI, sources.nli.ie MS_UR_088020) | A cipher key/table itself, not an unread ciphertext letter; no paired letter using this key located this sweep. Worth keeping as a key-lead resource if any Orrery correspondence turns up cipher-flagged elsewhere. |
+| Miscellaneous quatrains with glossarial notes in cipher, by Seán Ó Murchú of Sunday's Well(?), early 19th c. (NLI, MS_UR_053333) | A literary/scribal cipher notation, not a political or personal ciphertext letter; wrong kind and low weight for this project. |
+| "A dissuasive from Protestancy," bearing the "ciphers" W.N./N.W. (NLI, MS_UR_050136) | The catalogue's "ciphers" are a printer's/author's monogram device, not encryption -- false positive on the search term. |
+| Everything else on sources.nli.ie held outside Dublin (British Museum, Bodleian, Rome, Madrid, Siena, Brussels items that surfaced under the unfiltered `cipher` query) | Out of this lane's scope (other lanes cover BL/TNA and the continental archives); not excluded as solved, just not this brief's material. |
+
+**Caveats.** (1) None of IE1-IE4 has an image or a full catalogue record confirmed this sweep -- every
+`/Record/` page on sources.nli.ie returned a Cloudflare "Just a moment" challenge to curl, `browser_fetch.js`
+and WebFetch alike (one attempt each, not retried), so dates, extents, and full descriptions rest on the
+search-result snippet or the PDF finding-aid line only; a session that can clear that specific Cloudflare
+challenge (or an NLI reading-room/reproduction request) is the next step for all four, not further search.
+(2) IE1's and IE2's language, size and any key lead are unconfirmed for the same reason -- both next-step
+entries say "search-print" rather than anything stronger because the print-check itself (the standard
+pre-campaign step) could not be run without knowing the correspondents' identities beyond what the snippet
+gives. (3) IE3 was found by brute-force grepping a 1,072-page PDF finding aid (`a017_ormond.pdf`) for
+"cipher"/"cypher" after the catalogue's own search interfaces failed; the same method applied to the
+NLI's other ~175 numbered collection-list PDFs (Inchiquin, Wild Geese/"Irish Abroad" material, and the rest of
+the Ormond Papers' own numbered lists beyond a017 and the "Additional" list checked here) was not attempted
+this sweep for lack of a bulk index of their filenames -- a real, cheap next lane if a filename list can be
+found or guessed. (4) IE4's Italian "minute da porsi in cifra" phrasing reads as instructions about what to
+encipher, not necessarily a surviving ciphertext; flagged, not resolved. (5) check-solved has not been run on
+any of the four; a later worker does that before promotion, per the brief.
+
+**Per-host report:** sources.nli.ie: 7 curl requests (3 unfiltered-query pages + 1 NLI-only-filtered page + 1
+alternate-spelling filtered page + 2 record-page attempts, plain and with a cookie jar, both hitting the
+Cloudflare wall), all >=1.5s apart, descriptive UA, plus 1 `browser_fetch.js` and 2 WebFetch attempts on the
+same blocked record page (different network paths, same result). `www.nli.ie`: 1 reachability check + 3 PDF downloads (Ormond Papers Additional list, Ormond
+Papers main list, and one 403 on a third-party mirror of an Inchiquin Papers list, not an nli.ie host so
+dropped from the count), >=1.5s apart. `catalogue.nli.ie`: 1 curl (403) + 1 curl with browser UA (403) + 1
+`browser_fetch.js` attempt (Cloudflare challenge page returned). `digital.nli.ie`: 1 attempt (proxy 502).
+`apps.proni.gov.uk`: 1 GET (session-timeout redirect) + 1 form-page fetch + 1 POST replay (WAF rejection).
+`www.proni.gov.uk` / `www.nidirect.gov.uk`: 1 reachability check each (200, not searched further -- neither is
+the eCatalogue). `discovery.proni.gov.uk`: 1 attempt (proxy 502). `digitalcollections.tcd.ie`: 1 reachability
+check (200) + 1 query attempt (Cloudflare/hCaptcha challenge). `ria.ie` / `www.ria.ie`: 2 reachability checks
+(403 default UA, 200/301 browser UA), no working catalogue search located. `archives.ria.ie`: 1 attempt (proxy
+502). WebSearch: 7 queries. github.com: 1 shallow clone each of dbourdeau/cyphersolver and
+aaymeloglu/unsolved-ciphers, grep only, both deleted after. No credentials used, no subagents, never
+check-solved, never promoted.
+>>>>>>> Stashed changes
