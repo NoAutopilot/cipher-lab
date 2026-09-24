@@ -256,6 +256,7 @@ request) if anyone wants the key as a TSV.
 
 Requests this pass: archive.org 1 (the `collectionofstat07thur_djvu.txt` refetch; gitignored). No
 other host, no subagents, no logins.
+
 ## 9. P11-13 solver (24 Sept 2026)
 
 **What was found.** The 1742 print (IA `collectionofstat05thur`, pp. 67-69, djvu lines 5700-6075)
