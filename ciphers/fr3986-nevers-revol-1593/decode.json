@@ -1,0 +1,8 @@
+{"target": "ciphers/fr3986-nevers-revol-1593",
+ "note": "Key no.60 (Tomokiyo; Bourdeau key60.txt) applied mechanically to the two-pass draft, LANE R5 F2, 24 Sept 2026.",
+ "jobs": [{"ciphertext": "ciphertext.tsv", "key": "key.tsv", "reading": "reading.txt", "tokens": "reading_tokens.tsv"}],
+ "defaults": {"format": "tsv", "style": "spaced", "uncertain_conf": ["M"], "include_clear": true,
+   "header": ["# Mechanical reading of {name} with key.tsv (key no.60). One value per sign; a|b = two table entries;",
+              "# [sign] = sign not in the key. Grades per token in reading_tokens.tsv (H key, M uncertain sign or value, U unkeyed)."],
+   "token_columns": [["line","line"],["pos","pos"],["sign","raw"],["value","value"],["grade","grade"]]}
+}

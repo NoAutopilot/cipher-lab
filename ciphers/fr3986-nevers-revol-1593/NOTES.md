@@ -1,3 +1,5 @@
+open
+
 # fr.3986 f.198 (Nevers -> Revol, 23 Oct 1593) — Louis de Gonzague, duc de Nevers, to Louis Revol
 
 Status: **open**
@@ -79,3 +81,31 @@ location, cropped but unread in his session scratch).
 
 Run the "Octobre 1593" date-phrase search in Gomberville before transcribing; then transcribe against
 `key60.txt` (LANE R5), noting the leaf mixes clear and cipher rather than being solid cipher throughout.
+
+## Key no.60 applied (24 Sept 2026, LANE R5 F2)
+
+Key: `key.tsv`, cipher no.60 (Satoshi Tomokiyo's reconstruction and numbering, BnF fr.3995 ff.109-111, henryiv2.htm), from
+Daniel Bourdeau's transcription `nevers1593/key60.txt` (github.com/dbourdeau/cyphersolver @a0d5a07, text CC BY 4.0), mapped
+to the ASCII sign tags of `sign_guide.md`; a row carries H where the table gives one value, M where the table gives two
+(e.g. `4` x in the table, i in Bourdeau's crib atlas; `#`, renamed `dbl`, n or m). Shared content with fr3987/fr3986 (same
+file in both folders). Images: Gallica IIIF image API only, one native region per leaf (`images/manifest.json`), line cuts
+by `tools/iiif_lines.py` (debug overlay checked). Pass A: Opus worker F2, read against the key's sign list; pass B: one blind
+Sonnet subagent; `tools/reconcile_passes.py` gave `passes/ciphertext_draft.tsv`, copied unchanged to `ciphertext.tsv`
+(disagreements NOT settled on the image: at this agreement rate settling them is a glyph-atlas job, see below).
+Reading: `python3 tools/decode_key.py ciphers/<t>` (decode.json), `--check` exits 0. No interlinear or marginal
+decipherment on the leaf (the margin '+' marks are insertion marks).
+
+fr.3986 f.198 (canvas 397): continuation leaf, clear text with short inline cipher runs; the letter's close ("... le 23
+[octobre] 1593") is at crop line L21-22, then a postscript in clear. Cipher found in crop lines L05, L07, L09, L10, L13,
+L15 (the longest run, ~32 signs), L16, L18, L19. Pass agreement 27/66 = 40.9% (A 64 signs, B 53). Tokens graded:
+**H 5, M 56, U 5, I 0** (66). L09 ends "de R phi phi+" = "de [Duc de Mantoue] [Duc de Ferrare|ca] [?]" (M: the passes
+disagree on R). The rest gives letter strings only.
+
+Result: the key applied sign by sign does **not** give a continuous reading. The blocker is the one Bourdeau recorded on
+17 Sept 2026 ("the copyist's cursive forms map to two or three table entries each"): the Revol copyist writes no.60 in
+a cursive whose shapes the two passes cannot even agree on, and many shapes have more than one table value. Status stays
+`open` (no reading; a mechanical application is not one). Grade I: 0 (nothing repaired).
+
+Suggestion (one line, not done): build the copyist glyph atlas from the interlined Instruction of 31 Aug 1593 (fr.3985
+c.264-268, same hand, printed in Memoires de Nevers ii 492-499) as Bourdeau's 'Next pass' says, then re-run both passes
+with atlas tags instead of table shapes; only then settle `passes/disagreements.tsv` on the image.

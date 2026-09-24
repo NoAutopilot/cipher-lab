@@ -76,3 +76,34 @@ QUEUE.md KS-05 as scKEYS first wrote it gave sender "the Court (unnamed correspo
 canvas "~132, unconfirmed". Both are corrected here from Tomokiyo's page and the leaf itself: the sender is the
 Duke of Nevers, the addressee Revol, the canvas 121. `kind` stays `recovery` (key no.60 is published, by
 Tomokiyo/Bourdeau).
+
+## Key no.60 applied (24 Sept 2026, LANE R5 F2)
+
+Key: `key.tsv`, cipher no.60 (Satoshi Tomokiyo's reconstruction and numbering, BnF fr.3995 ff.109-111, henryiv2.htm), from
+Daniel Bourdeau's transcription `nevers1593/key60.txt` (github.com/dbourdeau/cyphersolver @a0d5a07, text CC BY 4.0), mapped
+to the ASCII sign tags of `sign_guide.md`; a row carries H where the table gives one value, M where the table gives two
+(e.g. `4` x in the table, i in Bourdeau's crib atlas; `#`, renamed `dbl`, n or m). Shared content with fr3987/fr3986 (same
+file in both folders). Images: Gallica IIIF image API only, one native region per leaf (`images/manifest.json`), line cuts
+by `tools/iiif_lines.py` (debug overlay checked). Pass A: Opus worker F2, read against the key's sign list; pass B: one blind
+Sonnet subagent; `tools/reconcile_passes.py` gave `passes/ciphertext_draft.tsv`, copied unchanged to `ciphertext.tsv`
+(disagreements NOT settled on the image: at this agreement rate settling them is a glyph-atlas job, see below).
+Reading: `python3 tools/decode_key.py ciphers/<t>` (decode.json), `--check` exits 0. No interlinear or marginal
+decipherment on the leaf (the margin '+' marks are insertion marks).
+
+fr.3987 f.66 (canvas 121, eye-checked: "10 de Nove 1593", folio "66", opens "Monsieur de Revol"): 13 lines carry cipher
+(crop lines f66_L07-L11, L13-L18, L20-L21), the long run in L07-L11. Pass agreement 157/308 = 51.0% (A 299 signs, B 270;
+151 disagreement columns). Tokens graded: **H 69, M 211, U 28, I 0** (308). Mechanical reading L07:
+"tous f [I] m a de o p n n sa x [A] n so n a n u e sa x p e bien de la co n a so a a bien o n ...". Tomokiyo's fragment
+("tous sont de opinion que le pape veul ... asseurance de la conversion") lines up with L07 by shape -- 8+ tous, then
+g pi 7 dbl inT ... T = "de opinion"?, 4+ g lam alpha inT ... X T = "[asseurance] de la con...on" -- but only where the
+glyphs are given his values, not the table's (7 = p is in the table; dbl = i, x = v/e are not), so these alignments are
+graded nowhere and not written into the reading.
+
+Result: the key applied sign by sign does **not** give a continuous reading. The blocker is the one Bourdeau recorded on
+17 Sept 2026 ("the copyist's cursive forms map to two or three table entries each"): the Revol copyist writes no.60 in
+a cursive whose shapes the two passes cannot even agree on, and many shapes have more than one table value. Status stays
+`open` (no reading; a mechanical application is not one). Grade I: 0 (nothing repaired).
+
+Suggestion (one line, not done): build the copyist glyph atlas from the interlined Instruction of 31 Aug 1593 (fr.3985
+c.264-268, same hand, printed in Memoires de Nevers ii 492-499) as Bourdeau's 'Next pass' says, then re-run both passes
+with atlas tags instead of table shapes; only then settle `passes/disagreements.tsv` on the image.

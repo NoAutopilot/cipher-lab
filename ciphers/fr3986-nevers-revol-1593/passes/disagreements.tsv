@@ -1,0 +1,40 @@
+line	col	A	B	flagged	crop
+f198_L05	1	8	2	B	images/f198_L05_s1.jpg,images/f198_L05_s2.jpg
+f198_L07	1	ff	-	A	images/f198_L07_s1.jpg,images/f198_L07_s2.jpg
+f198_L07	2	3	-	A	images/f198_L07_s1.jpg,images/f198_L07_s2.jpg
+f198_L09	1	R	l	B	images/f198_L09_s1.jpg,images/f198_L09_s2.jpg
+f198_L09	3	phi+	phi	B	images/f198_L09_s1.jpg,images/f198_L09_s2.jpg
+f198_L10	1	8	-	A	images/f198_L10_s1.jpg,images/f198_L10_s2.jpg
+f198_L10	2	dbl	o#		images/f198_L10_s1.jpg,images/f198_L10_s2.jpg
+f198_L10	3	f'	pl	B	images/f198_L10_s1.jpg,images/f198_L10_s2.jpg
+f198_L10	5	n	q	B	images/f198_L10_s1.jpg,images/f198_L10_s2.jpg
+f198_L13	2	o-	o	B	images/f198_L13_s1.jpg,images/f198_L13_s2.jpg
+f198_L13	3	X	dbl		images/f198_L13_s1.jpg,images/f198_L13_s2.jpg
+f198_L13	5	E	pl		images/f198_L13_s1.jpg,images/f198_L13_s2.jpg
+f198_L13	6	pi	T		images/f198_L13_s1.jpg,images/f198_L13_s2.jpg
+f198_L13	7	1	inT	B	images/f198_L13_s1.jpg,images/f198_L13_s2.jpg
+f198_L15	1	-	v	B	images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	2	s'	pl	B	images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	4	s	5		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	6	d	-		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	7	f	o	B	images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	9	-	h	B	images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	11	n	y	B	images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	15	del	-		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	16	dbl	del#		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	18	g	-		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	19	///	g111		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	22	del	-		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	23	t	-		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	24	e	del+		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	28	inT	11		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	31	3	g		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	32	dbl	inT+		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L15	33	4	q		images/f198_L15_s1.jpg,images/f198_L15_s2.jpg
+f198_L16	1	r	-		images/f198_L16_s1.jpg,images/f198_L16_s2.jpg
+f198_L16	5	X	-		images/f198_L16_s1.jpg,images/f198_L16_s2.jpg
+f198_L16	6	+	x+		images/f198_L16_s1.jpg,images/f198_L16_s2.jpg
+f198_L16	7	E	ye	B	images/f198_L16_s1.jpg,images/f198_L16_s2.jpg
+f198_L18	1	e	-		images/f198_L18_s1.jpg,images/f198_L18_s2.jpg
+f198_L18	2	3	-	A	images/f198_L18_s1.jpg,images/f198_L18_s2.jpg
+f198_L19	1	f+	-	A	images/f198_L19_s1.jpg,images/f198_L19_s2.jpg

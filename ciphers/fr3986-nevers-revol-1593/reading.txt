@@ -1,0 +1,11 @@
+# Mechanical reading of ciphertext.tsv with key.tsv (key no.60). One value per sign; a|b = two table entries;
+# [sign] = sign not in the key. Grades per token in reading_tokens.tsv (H key, M uncertain sign or value, U unkeyed).
+f198_L05	t n be a
+f198_L07	g ri
+f198_L09	Duc de Mantoue Duc de Ferrare [phi+]
+f198_L10	t n [f'] a et
+f198_L13	la tu o be re o n
+f198_L15	li [s'] x n n be e n [h] so et di p de a n li de r la p a ru e a x et n la di ri n x n
+f198_L16	s u so ri o nostre re n
+f198_L18	e ri
+f198_L19	[f+]

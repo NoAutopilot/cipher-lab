@@ -1,0 +1,67 @@
+line	position	sign	confidence	alt	why
+f198_L05	1	8	M	B:2	differ
+f198_L05	2	dbl	H		agree
+f198_L05	3	d	H		agree
+f198_L05	4	x	H		agree
+f198_L07	1	ff	M	B:-	gap
+f198_L07	2	3	M	B:-	gap
+f198_L09	1	R	M	B:l	differ
+f198_L09	2	phi	H		agree
+f198_L09	3	phi+	M	B:phi	differ
+f198_L10	1	8	M	B:-	gap
+f198_L10	2	dbl	M	B:o#	differ
+f198_L10	3	f'	M	B:pl	differ
+f198_L10	4	x	H		agree
+f198_L10	5	n	M	B:q	differ
+f198_L13	1	lam	M		agree-flagged
+f198_L13	2	o-	M	B:o	differ
+f198_L13	3	X	M	B:dbl	differ
+f198_L13	4	d	H		agree
+f198_L13	5	E	M	B:pl	differ
+f198_L13	6	pi	M	B:T	differ
+f198_L13	7	1	M	B:inT	differ
+f198_L15	1	v	M	A:-	gap
+f198_L15	2	s'	M	B:pl	differ
+f198_L15	3	4	H		agree
+f198_L15	4	s	M	B:5	differ
+f198_L15	5	1	H		agree
+f198_L15	6	d	M	B:-	gap
+f198_L15	7	f	M	B:o	differ
+f198_L15	8	dbl	H		agree
+f198_L15	9	h	M	A:-	gap
+f198_L15	10	pl	M		agree-flagged
+f198_L15	11	n	M	B:y	differ
+f198_L15	12	6	H		agree
+f198_L15	13	7	H		agree
+f198_L15	14	g	H		agree
+f198_L15	15	del	M	B:-	gap
+f198_L15	16	dbl	M	B:del#	differ
+f198_L15	17	v	H		agree
+f198_L15	18	g	M	B:-	gap
+f198_L15	19	///	M	B:g111	differ
+f198_L15	20	lam	H		agree
+f198_L15	21	7	H		agree
+f198_L15	22	del	M	B:-	gap
+f198_L15	23	t	M	B:-	gap
+f198_L15	24	e	M	B:del+	differ
+f198_L15	25	o	M		agree-flagged
+f198_L15	26	4	H		agree
+f198_L15	27	n	M		agree-flagged
+f198_L15	28	inT	M	B:11	differ
+f198_L15	29	lam	H		agree
+f198_L15	30	6	H		agree
+f198_L15	31	3	M	B:g	differ
+f198_L15	32	dbl	M	B:inT+	differ
+f198_L15	33	4	M	B:q	differ
+f198_L15	34	T	H		agree
+f198_L16	1	r	M	B:-	gap
+f198_L16	2	20	H		agree
+f198_L16	3	pl	H		agree
+f198_L16	4	3	H		agree
+f198_L16	5	X	M	B:-	gap
+f198_L16	6	+	M	B:x+	differ
+f198_L16	7	E	M	B:ye	differ
+f198_L16	8	dbl	H		agree
+f198_L18	1	e	M	B:-	gap
+f198_L18	2	3	M	B:-	gap
+f198_L19	1	f+	M	B:-	gap
