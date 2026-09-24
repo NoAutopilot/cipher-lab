@@ -165,3 +165,16 @@ no novelty wording in this pass.
 **Not done this pass:** mssBLA 184's 7 code-numbers and 186's 2 inline lines were not attacked (no decipherment
 sibling on the page for either); BLA 191's ~130-token undeciphered enclosure likewise untouched cryptanalytically
 — all left for a solver session with a matched control (rule 3), after the passes above land.
+
+## R7 progress, 24 Sep 2026 07:11 UTC (LANE R worker R7, stopped over cap by the orchestrator)
+
+**Done.**
+- Step 1, provisional: one code across the run. The same groups have the same values in BLA 179 (Paris 1725), 185, 186 (Madrid 1728), 189 and 191 (Port Ste Marie 1729): 659 = l', 78 = ambassadeur, 737 = Monsieur, 278 = de, 926 = que, 661 = le, 580 = je, 1154 = vous, 18 = a, 756 = ne. Groups 1240/1243/1250/1324 act as nulls or dashes (189 p3; used inline in 184 p1). This is by eye from the images; it is not yet backed by a count of conflicting pairs.
+- BLA 186 p1 cipher line begins 659.78 (l'ambassadeur...) under that code. This is an image-only observation, not graded.
+- **BLA 188 p2 has no cipher of its own.** Its right-hand "column" is the edge of p3 caught in the gutter of the photograph: 18 rows of two groups that repeat the start of p3 L01-L08 (pass A confirms, e.g. 1212 298 / 591 1102 / 941 250 ...). Drop BLA188_p2 lines from any ciphertext. The inventory's ~60 tokens on p2 are double-counted.
+- `passA.tsv`: blind Sonnet pass A over all 18 cipher pages (1565 groups, with the interlinear gloss per group). Brief: `pass_brief.md`. Pass A reports BLA191_p5 L05 pos 10 as "1899", out of range, to check on the image.
+- `passB_partial.tsv`: blind pass B, **stopped part-way** (793 groups). It covers 186 p1/p3, 187 p3, 188 p2-p3, 190 p6-p7, 191 p5 and 194 p1-p2. It does **not** cover 179 p6, 184 p1, 185 p5, 188 p4-p6, 189 p3 or 190 p5.
+- `recon_partial/`: `tools/reconcile_passes.py passA.tsv passB_partial.tsv` output. On the lines both passes cover, 645 of 795 aligned columns agree (81%). Partial and not settled on the image.
+- `sources.tsv`: print-check sources (Coxe Walpole 1798 vols 1-3, Coxe Horatio Walpole 1802, Coxe Kings of Spain vols 2-3, HMC Townshend 1887, Armstrong 1892, OpenAlex, CrossRef). Not yet run: no phrases yet.
+
+**Left.** Finish pass B for the six missing pages. Settle recon disagreements on the image, excluding BLA188_p2. Write ciphertext.tsv. Build key.tsv from the glosses (H) and the 189/190 bracket pairs (C), with a conflict count per item to confirm or refute one system. Read 186, 184 and 191 p5 through decode.json + tools/decode_key.py with a matched synthetic control. Write phrases.txt and run `tools/print_check.py --only ia,ia-global,htrc,openalex,crossref` (not gbooks). Suggestion: a fresh worker can start from passA.tsv and must not repeat pass A.
