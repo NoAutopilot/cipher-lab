@@ -1275,6 +1275,14 @@
    "grade": "N3",
    "line": "Birch prints the cipher but no decipherment; read with a key rebuilt from Birch's printed decipherments of Stamford's letters of 20 and 30 March 1655 (control 92-94%), H 64 C 338 M 16 U 6 of 424; no prior decipherment located in Birch, BHO, CSPD 1655, Underdown, Google Books, IA full text or the open indexes; Bodleian MS Rawl. A. 24 and Tomokiyo's working key not checked.",
    "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "catch",
+   "title": "Gustav II Adolf to Axel Oxenstierna, Nürnberg 23 July 1632 (printed cipher, Oxenstierna series letter 602): found solved",
+   "grade": "N0",
+   "line": "Deciphered and printed by R. Torpadie, Historisk tidskrift 8 (1888) pp. 376-383 (key table p. 382). Our reading of the letter layer, made before the verifier found Torpadie, is an independent re-decipherment: control 98.0% on letter 604 in the same layout; target graded S 665, M 29, U 77 (NOTES.md, R3 section).",
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/oxenstierna-gustav-adolf-1632/AUDIT.md"
   }
  ],
  "lanes": [
