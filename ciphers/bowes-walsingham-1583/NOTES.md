@@ -299,3 +299,26 @@ Searched 23 September 2026, a search result only, not a novelty verdict:
    be the same system.
 3. CSP Scotland vi (Boyd 1910) at the f.196/f.299 calendar entries, to see how the calendar prints the cipher
    words (the verifier's job, not this session's).
+
+
+## Specialist reply, 24 Sept 2026 (Cryptiana)
+
+The sign table was offered to S. Tomokiyo by email on 23 Sept 2026 (CONTRIBUTIONS.md row of that date; ASKS row 20).
+He replied on 24 Sept 2026, accepted the identification, and updated https://cryptiana.web.fc2.com/code/unsolved.htm
+the same day (section "Ciphers related to Sir Francis Walsingham", read 24 Sept 2026 14:29 UTC, one request): the
+entry now credits the repository owner, links this folder, and records that the two letters are printed in the
+Surtees Society Correspondence of Robert Bowes (1842) and CSP Scotland vi (1910). His own check of the manuscript
+adds three corrections and one identification that our reading, made from the transcription alone, did not have:
+
+- fragment 4: the print's "Manningvile" is the manuscript's MAGNYVIL (so the one-letter disagreement logged in the
+  token table is the print's normalisation, not a key error);
+- fragment 4: the token read as "and" is a handwriting abbreviation, not a cipher sign (our "?" token);
+- "Montrosse" in the print stands for the numerical code 189 in the manuscript (grade C for 189 = Montrose);
+- the other numerical codes (870, 149, 19, 29, 85 and the rest listed above from the Letter-Book) remain unread on
+  his side too.
+
+Status stays `partial`: the letter-substitution fragments are read and now confirmed by the specialist who
+transcribed them; the numerical name-codes are the open remainder. Next step when a solver runs again: collate the
+numerical codes across both letters with the Letter-Book and calendar contexts (870 appears with Cobham twice, 189 is
+Montrose) and attempt identifications with CSP Scotland vi as the check; grade every identification C or M. No
+image of the manuscript is in the folder; Tomokiyo's check is from his own reading of the leaves.

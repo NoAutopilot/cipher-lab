@@ -352,3 +352,14 @@ Requests: api.openalex.org 8 (all 429, shared budget). api.semanticscholar.org 6
 (one per row, 200 each). api.archives-ouvertes.fr 8 (4 combined-query attempts at 0 hits, 4 narrower follow-ups).
 www.persee.fr 4 (200 each). WebSearch 4 queries. No logins, no credentials, no decoding, no edits to
 reading.tsv/key.tsv/ciphertext.txt.
+
+
+## Specialist acknowledgement (24 Sept 2026, recorded by the orchestrator, not a verifier verdict)
+
+S. Tomokiyo, whose transcription the reading rests on, accepted the identification by email on 24 Sept 2026 and
+recorded it on https://cryptiana.web.fc2.com/code/unsolved.htm the same day, with a link to this folder and three
+corrections from the manuscript (NOTES.md, "Specialist reply"). The class stays N1: the plaintext was in print in
+1842, and the item's novelty is unchanged by the acknowledgement. Rule 10's N5 ("confirmed by a specialist") is a
+verifier's call and has not been assigned; a verifier reading this section may record that the specialist confirmed
+the letter-substitution reading and left the numerical codes open. The page itself is not snapshotted into sources/
+because the entry names the repository owner (rule 9); it is cited by URL, section and date instead.
