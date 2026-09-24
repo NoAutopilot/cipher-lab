@@ -2718,6 +2718,120 @@ or notarial footnote appendices, detailed in NOTES.md, and are not listed as row
 |---|---|---|---|---|---|---|
 | HT1 | *Recueil des instructions données aux ambassadeurs et ministres de France ... Suède*, vol. 2 (1884) | `njp.32101076191640` (seq 24), `hvd.hl237b` (seq 26) -- two independent library scans agreeing | 24 / 26 (table of contents, near front matter) | Header `TABLE DES CHAPITRES`; body token `Chiffre` (capitalised) x2 -- consistent with a chapter/appendix titled "Chiffre" (cipher table) for the Sweden embassy, which this series includes in some volumes | "Chiffre" itself is the signal; not a decipherment-word coincidence in calendar prose (see NOTES.md's discussion of why that check is unreliable for calendar-style editions) | Not found by name in `dbourdeau/cyphersolver` or `aaymeloglu/unsolved-ciphers` (grepped for Suède/Sweden/Recueil des instructions this session). EF gives no word order, so the printed page number for the "Chiffre" chapter could not be read from the token counts -- next worker needs the table-of-contents page image (babel.hathitrust.org or a library copy; out of this brief's hosts) to find that page number, then check it |
 
+## Polish digital libraries (LANE N scout of 24 September 2026)
+
+Brief: `.claude/briefs/runs/2026-09-24-lane-n-scPL.md`, continuing the Z-sweep's unfinished Polona attempt
+(`## Central and Eastern European digital-library candidates` above, "Polona (polona.pl), blocked -- API not
+found"). Target: Polish royal and magnate correspondence (Radziwiłł, Sobieski, Załuski, Czartoryski Library),
+nuncio despatches from Poland, Swedish-Polish war letters, searched for 'szyfr', 'szyfrem', 'pismo szyfrowane',
+'deszyfraż', 'cyfra', Latin 'notis arcanis', 'in cifra', 'en chiffre'. Read first: LESSONS.md, CLAUDE.md rules
+1/3/5/10, the Access playbook, and the Z-sweep's Polona notes in full, per the brief. Solver repos
+(`dbourdeau/cyphersolver`, `aaymeloglu/unsolved-ciphers`, fresh shallow clones) grepped for
+polona/Radziwiłł/Sobieski/Załuski/Czartoryski/Poland/Polish/Warsaw: no Polish-digital-library-hosted item found
+in either (the two Polish-named items present, `chodkiewicz1575` and `warsaw`, are both HHStA Vienna
+manuscripts, not digitised at any Polish library, so unusable as a "known item" control). Raw hits and every
+excluded row: `sources/solver-diffs/2026-09-24-lane-n-poland.tsv`.
+
+**Route (a), fbc.pionier.net.pl -- unblocked this session.** The Z-sweep found the SPA's REST-style endpoints
+(`/simple`, `/basic`, `/results`, `/advanced`, `/query`) all 400 and stopped. Network-logging a real search in
+headless Chromium (`page.on('response')`, per the brief's suggested method) found the actual API: FBC's site
+runs a GraphQL endpoint at `POST https://fbc.pionier.net.pl/graphql`, operation `getSearchResults`, with
+`variables.requestInputParams.params` carrying the classic dlibra query-string pairs verbatim (`action:
+AdvancedSearchAction, type: -3, val1: q:"<term>", ipp, sf`). It answers plain `curl` with no bot-challenge, no
+session, no auth (the PoW "High Load - Verifying Browser" challenge seen on `/results` and `/robots.txt` does
+not gate `/graphql`). **Control passed:** `val1=q:szyfr` (ipp=5) returns 301 hits with correct `<em>szyfr</em>`
+title highlighting and sane facets (Type teksty/obrazy/pozostałe/audio/muzykalia/wideo; Language polski 283,
+angielski 27, łaciński 5...) -- the engine works as a real search, not a Huntington-CONTENTdm-style fixed
+listing. No pre-existing Polish-library item was available for a "known item" control (see solver-repo check
+above), so this query-quality check is the substitute, per the Ireland-lane precedent (`## Irish archives and
+libraries` above). 20 phrase queries run (`"pismo szyfrowane"`, `"list szyfrowany"`, `"depesza szyfrowa"`,
+`"klucz do szyfru"`, `"cyfrą/cyframi pisany/pisana/pisanego/pisanej/pisanym"` in all case/gender forms, `"in
+cifra"`, `"en chiffre"`, `"notis arcanis"`, `Radziwiłł szyfr` as an unquoted AND, and others -- full list and
+counts in the TSV); FBC's 6.6M-record index is dominated by digitised 19th-20th c. newspapers and journals, so
+every short phrase or word-AND query returns OCR co-occurrence noise almost exclusively (worked example:
+`Radziwiłł szyfr` unquoted gives 14 hits, every one an unrelated newspaper page where both words happen to
+appear). **One genuine manuscript hit surfaced**, found and then excluded (see below). Raw: ~600 result rows
+examined across all queries (mostly 0-30 per query); kept 0; copy-free n/a (nothing kept).
+
+**The one real find, and why it is excluded.** `q:"cyframi pisanego"` (and five other word-form variants of the
+same phrase) surfaces „Copia listu od Jego Mci Pana Podkomorzego lwowskiego (cyframi pisanego) posła wielkiego
+JKMci do Porty Ottomańskiej” -- a 1634 letter from Aleksander Trzebiński, Chamberlain of Lwów and grand envoy to
+the Ottoman Porte, to Hetman Stanisław Koniecpolski, catalogued as `rękopis` (manuscript) at **repcyfr.pl**
+("Repozytorium Cyfrowe Poloników" -- Digital Repository of Polonica), Archive field "Riksarkivet (Stockholm)",
+collection "Extranea IX Polen", sygn. 140, id 15343. The PDF (2pp, direct-download, copy-free, no login) was
+read in full: both pages are plain 17th-c. Polish cursive prose, headed "Copia listu ... (cyframi pisanego)" --
+this is a period chancellery **decipherment/fair copy**, not the ciphertext. The comment field confirms it:
+"List oryginalnie był szyfrowany" (the letter was originally in cipher, past tense). Excluded per the brief's
+rule: the catalogue/content already gives the plaintext and no cipher symbols appear on the digitised leaf.
+
+**Route (c), repcyfr.pl (Riksarkivet Extranea IX Polen digitisation) -- a real lead, not exhausted this
+budget.** This is exactly the "Swedish-Polish war letters" material the brief named, and worth a dedicated
+follow-up: Sweden's Riksarkivet holds a large "Extranea IX Polen" series of captured/archived Polish royal and
+chancellery correspondence, of which a Polish-funded project ("Pozyskanie kopii cyfrowych poloników-archiwaliów
+z Riksarkivet w Sztokholmie") has digitised 15 volumes (130-148) plus 3 fondy from the Ukrainian Central State
+Historical Archive (Lviv). repcyfr.pl's OAI-PMH interface (`/dlibra/oai-pmh-repository.xml`) answers plain curl
+with no bot-challenge and confirms the collection structure; a `ListRecords` harvest of its top-level
+`riksarkivet` set gave 387 records, none with a cipher-root term (szyfr/cyfr/deszyfr/cifra/chiffre) in
+`dc:title` or `dc:description` -- but **this OAI set is stale or incomplete**: record 15343 above is not among
+the 387 harvested, and per-sub-collection harvests of the 130-148 sets individually returned 0 records for 14
+of the 15 (only 133, 51 records, responded), while the live site's own nav shows all 15 populated. The
+repository's own classic-dlibra search page (`/dlibra/results`) loads with no bot-challenge but returns no
+result markup to either curl or a rendered Playwright session within budget -- its query mechanism was not
+found. **Given the collection's evident relevance and this session's negative result resting on a demonstrably
+incomplete harvest, the next worker on this lane should re-harvest via FBC's graphql route restricted to this
+collection (Archive:"Riksarkivet (Stockholm)" or GroupName:"Extranea IX Polen*", field-search syntax not yet
+found -- `att<id>:` and bare field-name prefixes were both tried and failed silently) or walk repcyfr.pl's own
+publication-neighbour links (`doccontent?id=N` pages carry Previous/Next links within a folder) rather than
+trusting the OAI harvest's zero.**
+
+**Route (b), Polona (polona.pl) -- still blocked, but with new, actionable findings.** `GET
+/api/search-service/search/advanced-form` gives the full field schema: the "any field" target is literally
+`ANY` (param name `any`), and the `documentTypes` facet lists `Rękopisy` (Manuscripts) among its values --
+confirming a manuscript-only filter exists once the results endpoint is found. `GET
+/api/search-service/search/search` exists (400, not 404/405 -- the Z-sweep's `/simple`/`/basic`/`/results` guesses
+were wrong names, this is the real one) but no parameter shape tried this session (`any=`, `query=`, `q=`, a JSON
+body on POST, which 405s) was accepted; `GET .../suggest?query=TERM` works and returns grouped autocomplete
+(title/keywords/creator/subject hits, e.g. "Szyfr Stanisława Lubienieckiego", a 2019 scholarly article about a
+17th-c. cipher -- not a primary source, not pursued) but is not the full search. On the browser-automation side
+(the brief's suggested route), the earlier Z-sweep attempt's failure is now partly explained: a cookie-consent
+overlay ("Zgoda na wszystkie") sits in front of everything and must be dismissed first, after which the
+"Zaawansowane" (advanced search) modal does open (confirmed via DOM inspection, 90 form elements appear). But a
+persistent `#main-loading` overlay mask, and once open an `ngb-modal-window`, intercepted every fill/click
+attempt on the modal's own criterion-value input and its "Wyszukaj" submit button across three attempts (8-30s
+wait budgets) -- not resolved this session. Next attempt: try `--headed` with a longer settle wait before the
+first click, or drive the modal's Angular reactive form directly via `page.evaluate` instead of simulated
+clicks, since the DOM elements exist and are just not clickable through Playwright's actionability checks.
+
+**Per-host report.** `fbc.pionier.net.pl`: ~90 requests (graphql POSTs plus a handful of page/robots.txt/OpenSearch
+curl fetches), all ≥1.5s apart, browser UA (required -- the descriptive UA and the bare `/dlibra/results` legacy
+path both hit the site's PoW bot-challenge; `/graphql` itself does not). `polona.pl`: 7 full page loads (well
+under the brief's 60-load cap) plus their internal XHR/fetch traffic, ≥3s apart between page loads, browser UA
+per the playbook. `repcyfr.pl`: ~45 requests (OAI harvests, doccontent pages, one PDF download, one search
+attempt), ≥1.5s apart, descriptive UA except the PDF download and Playwright session (browser UA). No 429/403/
+Cloudflare challenge hit on any of the three hosts; FBC's PoW challenge on non-graphql paths is logged above,
+not retried in a loop. github.com: 1 shallow clone each of `dbourdeau/cyphersolver` and
+`aaymeloglu/unsolved-ciphers`, grep only. No credentials used, no subagents spawned, never check-solved, never
+promoted.
+
+**Zero rows this sweep.** Row prefix **PL** stays reserved for this lane; the one candidate found
+(repcyfr.pl id 15343) is excluded as an already-deciphered chancellery copy, not a cryptanalysis or recovery
+target. A future PL1 should come from either the repcyfr.pl re-harvest above or a working Polona query.
+
+**Caveats.** (1) FBC's central index, not Polona's own API, did the real work this session -- Polona itself
+remains unqueried end-to-end; anything said about Polona's holdings is inferred from its field schema, not from
+search results. (2) The repcyfr.pl OAI negative (0/387) is conditional on a harvest now shown to be stale/
+incomplete (Caveat, rule 2 of CLAUDE.md) -- it is not a clean "no candidates" verdict for that collection. (3)
+FBC's phrase-search noise floor (newspapers/journals dominate 6.6M records) means a true correspondence hit
+could still be missed by any query shape not yet tried; field-restricted search (Description/Subject only, not
+full "ANY" text) was attempted (`op:`, `opis:`, `ti:`, `wid:`, `att5:` and similar guesses) and failed silently
+every time -- the correct field-query syntax for FBC's graphql endpoint was not found this session and is worth
+a short dedicated attempt (capture a real advanced-field-search submission via the browser, as done successfully
+for the simple-search endpoint, rather than guessing field-code prefixes). (4) Czartoryski Library, Biblioteka
+Kórnicka and DataProvider-level filtering by institution were not reached this budget -- the brief's route (c)
+fallback is untested for those two named institutions specifically (repcyfr.pl was the regional library FBC's
+central search actually surfaced, not either of the two named in the brief). (5) No copy-order or archive
+request was needed; nothing here reached "open" status requiring one.
+
 Requests and per-series false-positive breakdown: `sources/htrc/NOTES.md`.
 ## DECODE non-decrypted records with images (LANE N diff of 24 September 2026)
 

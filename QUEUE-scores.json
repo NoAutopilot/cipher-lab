@@ -8165,5 +8165,19 @@
     "language": "fr"
    }
   ]
+ },
+ "lane_n_poland": {
+  "date": "24 September 2026",
+  "_about": "LANE N scout of 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-n-scPL.md), continuing the Z-sweep's unfinished Polona attempt. Found FBC's real search API (POST https://fbc.pionier.net.pl/graphql, operation getSearchResults, classic dlibra query params passed through as GraphQL variables) -- unblocked route (a), no bot-challenge, control passed (q:szyfr, 301 hits, correct highlighting and facets). 20+ phrase queries run against Polish royal/magnate correspondence terms; FBC's 6.6M-record index is dominated by digitised newspapers/journals so almost all hits are OCR co-occurrence noise. One genuine manuscript hit found (repcyfr.pl id 15343, Extranea IX Polen / Riksarkivet Stockholm, 1634 Trzebiński-to-Koniecpolski letter) and excluded after viewing the image: it is a period chancellery decipherment/fair copy in plain Polish, not ciphertext. repcyfr.pl (route c, the regional library FBC's search actually surfaced) holds a promising but under-explored Riksarkivet Polonica collection; its own OAI-PMH harvest (387 records, 0 cipher-term hits) is flagged as stale/incomplete (the known hit is not among the harvested records). Polona itself (route b) remains blocked end-to-end: found its real field schema (/api/search-service/search/advanced-form, confirms a Rękopisy/manuscripts filter exists) and the real (not the Z-sweep's guessed) results endpoint name (/api/search-service/search/search, 400 not 404/405), but no working parameter shape; browser automation reached the advanced-search modal (after dismissing a cookie-consent overlay, a new finding) but could not fill/submit it within budget due to a persistent loading-overlay/modal-window intercept. Full detail and caveats in QUEUE.md 'Polish digital libraries (LANE N scout of 24 September 2026)'; raw hits and exclusions in sources/solver-diffs/2026-09-24-lane-n-poland.tsv.",
+  "kept": 0,
+  "dropped": 1,
+  "digitised_copy_free": 0,
+  "requests_per_host": {
+   "fbc.pionier.net.pl": 90,
+   "polona.pl": 7,
+   "repcyfr.pl": 45,
+   "github.com": 2
+  },
+  "rows": []
  }
 }
