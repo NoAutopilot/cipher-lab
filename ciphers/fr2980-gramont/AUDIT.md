@@ -1,0 +1,249 @@
+# AUDIT: the fr.2980 f.29r reading (novelty class)
+
+Verifier session, 24 September 2026, 00:50-01:20 UTC (`date -u` read; Opus, no subagents, started by the
+orchestrator session_01SepNMpYrr6L2EwqL43aTnm). Audits NOTES.md, reading.txt, key.tsv and decode.py as of
+commit 4493903. This session took no part in the check-solved, print-check or transcription passes. It did not
+decode and does not protect the solver's conclusions. Classes are those of CLAUDE.md rule 10.
+
+Claim under audit: "BnF fr.2980 f.29r (item 21), Cardinal Gabriel de Gramont, bishop of Tarbes, to Jean Breton
+de Villandry, Rome, 20 May 1530: the cipher passage reads with Tomokiyo/Lasry's Gramont 1530 key, 569 signs,
+H 538 / M 26 / U 5 (reading.txt, decode.py --check)."
+
+## 1. Verdict
+
+| item | prior plaintext | prior decipherment of this item | class |
+|---|---|---|---|
+| BnF fr.2980 f.29r, no.21 (old shelfmark Anc. 8505), Gramont to Villandry, Rome, 20 May [1530], cipher passage of 569 signs | **not located.** No printed text, extract, calendar entry or summary of the letter's content was found in the editions of section 4. The letter's *existence and date* are in print: the BnF *Catalogue des manuscrits français* (1868) describes it, and *Catalogue des actes de François Ier* IX (entry [411], list of ambassadors) cites "Écrit de Rome … 20 mai, ibid., 2980, fol. 29 et suiv." to date Gramont's stay in Rome. Neither gives any content. | **not located.** No decipherment was found on the leaf (NOTES.md, check-solved), in print or online. **But it has been identified as readable before us:** Tomokiyo (cryptiana, francis.htm, "BnF fr.2980 (1530)", live page re-read 24 Sept 2026) says "These undeciphered letters can be read with Gramont's cipher (1530)", and Bourdeau lists both items as catalogue 328, "Gramont 1530 key held" (dbourdeau/cyphersolver CATALOGUE.md line 76, sweep of 22 Sept 2026). Neither gives a reading. | **N3** |
+| f.30r-v, no.22 (same date, entirely cipher) | not yet read by the solver | none located | **none assigned**: no reading exists to audit. The searches below cover it as well, so its prior-print status is the same as no.21's, but a class needs a reading. |
+
+**Why N3 and not N4.** The principal editions for this embassy were covered (section 4), most of them by full
+text. Four gaps keep it below N4. (1) Le Grand, *Preuves* (1688): read through the HTRC per-page token counts,
+not page by page, because Google Books blocked the page and PDF routes (429 `/sorry/`). The counts are strong
+evidence of absence, not a reading of the pages. (2) Camusat, *Meslanges historiques* (1619): only Google Books
+API snippets could be checked. (3) HathiTrust full-text search (Cloudflare) and JSTOR (ASKS row 17) could not be
+reached. (4) Michon's thesis *La Crosse et le Sceptre* and Wirtz-Daviau were not reached. If the owner runs the
+JSTOR queries of section 4(g) and a second adversarial session closes (1) and (2), N4 is within reach. Outreach
+gate 2 applies in any case: nothing above N1 goes outside the repo before that second audit.
+
+**What the "H" means.** The 538 H tokens are signs whose *value* comes from the published table
+(Tomokiyo/Lasry). The *identification of each sign* on the leaf rests on one reader. The two blind Sonnet passes
+agreed on 29% of signs and decoded to nothing (reconciliation.md). About two lines (L10-L11) and parts of L02, L08,
+L09 and L12 read as continuous French. The rest is letters not yet divided, and NOTES.md says some sign
+identifications in L01, L03-L07 and L13 are probably wrong. So this is a **partial key-based reading from a
+single transcription**. Grade H is correct under rule 4 for value-lookup, but the reading as a whole is not
+"read" in the sense of a checked text. Evidence quality: medium for the key and the attribution, low-to-medium for
+the sign-level transcription.
+
+**Confidence in N3:** high that no printed plaintext exists in the English and papal series, in Pocock, Ehses,
+Molini, Ribier, Scheurer's du Bellay or Decrue. Medium-high for Le Grand, whose token-count evidence is below.
+Medium for Camusat.
+
+**Safe sentence.** "BnF fr.2980 f.29r (no.21) is a letter of Gabriel de Gramont, bishop of Tarbes, to Jean Breton
+de Villandry, Rome, 20 May [1530], with a 569-sign cipher passage. Tomokiyo had identified it as readable with
+the published Gramont 1530 key (Tomokiyo; Lasry 2023). We transcribed the passage from the Gallica image (one
+reader) and applied that key: the table gives values for 538 signs (H), 26 are uncertain and 5 unkeyed, and
+several lines read as continuous French. No prior printed plaintext or decipherment of the letter was located in
+the editions listed in AUDIT.md (N3)."
+
+**Unsafe sentences.** "First decipherment of Cardinal Gramont's letter"; "a previously unread letter"; "newly
+recovered"; "538 of 569 signs read" or "read in full" (the reading is partial and single-reader); "Cardinal
+Gramont" as of 20 May 1530 (he was created cardinal on 8 June 1530); "we found that the key applies" (Tomokiyo
+said so first, and Bourdeau catalogued it).
+
+## 2. What the repo claims (extracted)
+
+| field | value in the repo | source |
+|---|---|---|
+| shelfmark | BnF fr.2980 f.29 no.21 (Anc. 8505), Gallica ark:/12148/btv1b9059991d canvas f31 | NOTES.md, images/manifest.json, BnF notice cc494342 (re-fetched this session: "Ancienne cote : Anc. 8505") |
+| sender, recipient | Gabriel de Gramont, bishop of Tarbes, to "monseigneur... de Villandry, conseiller du roy et secretaire de ses commandemens et finances" | BnF notice, verbatim |
+| date, place | "A Rome, le XXme jour de may", no year on no.21; no.22 "M.D.XXX" | BnF notice |
+| cipher, key | Gramont's Cipher (1530): Tomokiyo from fr.3019 f.20; Lasry 04/11/2023 from fr.3071 f.17 | key.tsv, NOTES.md |
+| reading | reading.txt, 14 lines; distinctive decoded phrases: "il y baille a ce porteur ... article que j'ay mis a part"; "l'adresse de dessus a vous combien que ce soit au roy"; "vous prie le luy demander car c'est le total"; "du vingtiesme"; "pour le contenter et oster ... de suspecon"; "qui est cause que j'ay faict ledit article a part"; "pour vous donner cognoissance de tout"; clear text: "pensant que ce courrier pourra estre plustost a vous que le pacquet", "ung double des lettres que j'escriptz lundi", "satisfaction de nostre Sainct Pere" | reading.txt, NOTES.md |
+| grades | 569 tokens: H 538, C 0, S 0, M 26, I 0, U 5 | reading.txt header |
+| solver's search | IA fts two phrases; Google Books API three queries; print-check pass (LP iv.3 direct, Decrue, PUR/Rentet, Tomokiyo, Bourrilly-Vindry vol.1, Google Books Le Grand bot-blocked) | NOTES.md |
+
+## 3. The attribution tested against the plaintext
+
+- **Recipient Villandry fits.** The cipher says the writer put an article apart and "faict l'adresse de dessus a
+  vous, combien que ce soit au roy": he addressed it to the secretary although it is meant for the king. That is
+  how one writes to the king's secretary of commands, Breton de Villandry, whose office was to carry such pieces
+  to the king (Rentet, PUR chapter). The clear text's "le pacquet que j'ay envoye au Roy" fits the same relay.
+- **Rome fits.** The clear text mentions "la satisfaction de nostre Sainct Pere" and "les affaires du Roy par
+  deca". The *Catalogue des actes* IX places Gramont in Rome from April to June 1530 (letters of 2 May, fr.3053
+  f.11, and 20 May, this item). Spanish Calendar IV.1 p.560 cites him on 26 May, and LP iv.3 nos. 6441 and 6443
+  (8-9 June 1530) have Mai congratulating "the cardinal of Tarbes on his promotion" in Rome.
+- **Year 1530 fits, and the catalogue's title does not.** He signs "De Gramont E. de Tarbe" (bishop). He was
+  created cardinal in the consistory of 8 June 1530 (LP iv.3 6441), so "cardinal" in the BnF notice and in the
+  claim is the cataloguer's later title. The decoded "du vingtiesme" (L07) fits the date of 20 May. No.22's
+  explicit M.D.XXX and the shared date support 1530 for no.21.
+- **One internal point for the solver (grade I, not an attribution problem).** The draft clear text has a packet
+  sent to the king "du xxi[?]e de ce moys". That cannot precede a letter of the 20th. 20 May 1530 (Julian) was a
+  Friday, and the same sentence mentions letters written "lundi", i.e. Monday 16 May, so "xvi" is likelier. This
+  note was added to NOTES.md for re-reading against the image.
+- Nothing in the reading points to another sender, recipient or year. The Dupuy 468 failure (a wrong bracketed
+  attribution narrowing the search) does not arise here: the notice has no brackets for these fields, and the
+  search below was widened to the whole embassy (June 1529 to November 1530) and the later Rome missions
+  (1531, 1532-33).
+
+## 4. Search log (24 Sept 2026)
+
+Hosts and counts are in section 6. "Searched" means the text itself was searched. "Snippet" means only
+API snippets were checked.
+
+(a) **Canonical series**
+- *Letters and Papers Henry VIII* iv.3 (IA `11332111bsb`, full djvu.txt, 3.7 MB): grepped "Villandry"
+  (2 hits: no.6245, 27 Feb 1530, Bologna; a 1530 mention of his return), "Tarb|Tarpe|Gramont", and "20 May". The
+  20 May 1530 entries are nos.6394-6395 (Henry VIII to Dorigny; a silver assay). **No Gramont item of 20 May.**
+  Searched. The *Addenda* vol. I (1929) was not found on IA (advancedsearch, 0 hits): **unreached**.
+- *State Papers Henry VIII* vol. 7 (IA `statepaperspubli07grea`, full text): 0 "Villandry". The Tarbes/Gramont hits
+  are English ambassadors' reports of 1530-33. Searched.
+- *CSP Spanish* iv (IA `calendarofletter0004pasc`, `…_f5h4`, full text): 0 "Villandry". Searched. The
+  *Catalogue des actes* cites iv.1 p.560 for Gramont on 26 May: that is Mai's report, not this letter.
+- *CSP Venetian* iv, 1527-1533 (IA `calendarofstatep4187brow`, full text): 0 "Villandry". Searched.
+- *CSP Milan*: not located on IA by title search. **Unreached** (and unlikely to hold a French secretary's letter).
+
+(b) **Sender and recipient**
+- **Le Grand, *Histoire du divorce* (1688), vols. I-III**, HathiTrust ids from the Bibliographic API (OCLC
+  4941630): njp.32101037456710 (v.1), njp.32101037456702 (v.2), njp.32101037456694 (v.3, *Preuves*, 678
+  scans). HTRC Extracted Features per-page token counts were downloaded for all three.
+  - In v.3 "Villandry" occurs on 7 scans: 24 and 28 (1527-28 letters); 409 and 411 (printed pp.391-393, the
+    Bologna 27 Feb 1530 letter, which LP 6245 also calendars); 491, 497 and 508 (pp.473-490, du Bellay's June 1530
+    letters from Paris). "Tarbe(s)", "Gramont/Grammont" run from p.336 to p.457 (Bologna, Feb-Mar 1530; Ehses cites
+    "III. 399" for 27 March and "III. 454"), then from p.511 (Aug 1530, "Aoust ... XXX") and pp.514-526 (Oct 1530
+    and 1531). **No page carries Gramont or Tarbe together with a May 1530 Rome date.**
+  - A per-page overlap of 28 words from the reading and the clear text (porteur, article, adresse, contenter,
+    oster, suspecon, cognoissance, pacquet, courrier, plustost …, with long-s/f and u/v normalised) gives at most
+    6 of 28 on any page. The best pages (seq 262, 475, 215, 183) are other letters.
+  - v.1 (narrative): Grandmont with Rome on pp.~230-255, May on seq 232 and 238. This is the historian's narrative,
+    and a paraphrase there cannot be excluded without reading those pages. **Gap, noted.**
+  - v.2: Tarbes/Grammont hits only in the *Défense de Sanderus* and the *Réfutation*.
+  - Google Books API (keyed, country=US): the *Preuves* volume `e1Z-8yywx6kC` is indexed and full view. A snippet
+    for "Monsieur de Villandry" returns only the 27 Feb Bologna letter, which is headed "MSS. de Bethune" (the
+    Béthune collection, the source of fr.2980). The API's signed PDF link and the page view both returned 429
+    `/sorry/` (one attempt, then stopped).
+  - **Result: not in Le Grand's *Preuves*** (token-count evidence, medium-high).
+- **Decrue, *Anne de Montmorency*** (1885/1889): the print-check pass searched it and found no citation of items
+  21-22. This session's IA fts for "Gramont" "Villandry" "1530" returned only the same volumes. Not re-searched.
+- **Rentet**, PUR chapter on Breton de Villandry (pur/120024): read by the print-check pass. This session read the
+  **PUR chapter on Gabriel de Gramont** (books.openedition.org/pur/120012, full text): the 1530 Rome mission is
+  cited only to the Ferrarese ambassador (ASModena busta 9) and CAF; no fr.2980, no cipher. Searched.
+- **du Bellay correspondence**: Bourrilly & Vindry vol. 1 (1527-29) is out of range (print-check). Scheurer,
+  *Correspondance du cardinal Jean du Bellay* I (1969, IA `correspondancedu0000remy`, lending; fts within the
+  item): "2980" 0 hits; "20 mai 1530" 0; "Gramont Breton" gives one note, a Gramont letter "citée par Breton à
+  Montmorency le 20 mars" (not ours). Searched (fts only).
+- **Camusat, *Meslanges historiques*** (1619; Google Books `MKpSAAAAcAAJ`, `1d19ZkCU0v8C`; not on IA): snippets
+  for Gramont, Villandry and "Evesque de Tarbe". The hits are 1532-33 letters (Tournon and Gramont; Lazare de Baïf
+  to the bishop of Auxerre). **Snippet only.**
+- **Ribier, *Lettres et mémoires d'estat*** (1666; IA `bub_gb_Tbs9UbObcPUC`, `bub_gb_bOnmNv2ZLVoC`,
+  `bub_gb_qWTswSr32NYC`, full text): "Villandry" 1-3 hits each, all later (benefices; "Agent à Rome", 1540s);
+  "1530" 1 unrelated. Ribier does print another leaf of this volume, fr.2980 f.55 (I p.561, per Bourrilly,
+  *Guillaume du Bellay* 1904), which shows the volume was used by editors. **Not items 21-22.** Searched.
+- **Champollion-Figeac, *Captivité du roi François Ier*** (1847): not found on IA or through the Google Books API
+  (0 hits for Gramont/Tarbes/Villandry). **Unreached.**
+
+(c) **Documentary editions**
+- **Pocock, *Records of the Reformation*** (1870), both volumes (IA `recordsreformat02pocogoog` = vol. 1, heavy on
+  1527-30; `recordsofreforma02pocouoft` = vol. 2): 0 "Villandry". The Tarbe hits are English despatches. Searched.
+- **Ehses, *Römische Dokumente*** (1893, IA `romischedokument00ehse`): 0 "Villandry". Gramont appears through papal
+  documents and references to Le Grand III.399 and III.454 (Bologna, March 1530). Searched.
+- **Molini, *Documenti di storia italiana*** (1836-37, IA `documentidistor00-03moligoog`, both volumes, two
+  scans each). Vol. 1 is a register of Béthune volumes by old number. Its entry for 8505 (= fr.2980) lists only
+  Italian-language items (c.52, 61, 70-76). Vol. 2 prints only item 23 of 8505 ("Libr. R. MSS. Vol. N.° 8505 a
+  c. 31", the 1526 truce). Molini lists Raince to Villandry, Rome, 11 May 1530, and several Gramont cipher letters
+  in other volumes (27 Aug; 11 Oct). **Not items 21-22.** Searched.
+- **Nuntiaturberichte**: the German series begins in 1533, and no French nunciature edition covers 1530.
+  **Not applicable**, not searched.
+- ***Catalogue des actes de François Ier* IX** (IA `collectiondesord09acad`, full text): entry [411] cites the
+  letter by date, as in section 1. **Existence and date only.**
+- **Tournon correspondence** (M. François, 1946, Google Books snippets): cites fr.2980 fol.33 (no.24, Lyon), not
+  fol.29-30.
+
+(d) **Holding archive**
+- BnF notice `archivesetmanuscrits.bnf.fr/ark:/12148/cc494342`, re-fetched: Anc. 8505; items 21-22 described;
+  no bibliography, no "déchiffré" and no edition cited. Microfilm MF 8140.
+- Clairambault 312-452 finding aid (the 17th-century copies of Béthune pieces): the part that loaded (2,152 folio
+  entries) lists no copy of fr.2980 ff.29-30. It has one leaf removed from fr.2980 (anc. fol.14, a Doge's letter),
+  no 1530 Gramont entry, and no decipherment copy. Partial.
+- Gallica/BnF blog: web search (below) found no page on this letter. No Gallica image or text service was
+  used (another worker is fetching images).
+
+(e) **Phrase search on the decoded text** (u/v, i/j and spacing normalised; accented and unaccented forms)
+- IA full text (be-api fts, all items): "baille a ce porteur" 42 hits, all other letters (Gobat, Mazarin's
+  *Lettres*, Foix). The following gave 0 hits: "adresse de dessus a vous", "combien que ce soit au roy", "pour le
+  contenter et oster", "ledit article a part", "ledict article a part", "article que j ay mis a part", "faict
+  ledit article", "car c est le total", "pensant que ce courrier", "le pacquet que j ay envoye au roy", "oster
+  toute suspecon", "la depesche dudit porteur" and "satisfaction de nostre sainct pere". "donner cognoissance de
+  tout" gave 2 hits and "oster toute souspecon" 10, all unrelated. "ung double des lettres que" gave 3 hits
+  (Charles V; Catherine de Médicis), unrelated.
+- Google Books API (keyed): "pour le contenter et oster", "faict ledit article a part", "l adresse de dessus a
+  vous", "combien que ce soit au roy", "baille a ce porteur" Tarbe, "Gramont" "Villandry" "20 mai 1530", "Tarbes"
+  "Villandry" "mai 1530", "fr. 2980, fol. 29", "fr. 2980, fol. 30" and "français 2980" Gramont: 0 relevant.
+- IA fts "2980, fol. 29" found the *Catalogue des actes* entry above. "fr. 2980" Gramont found Decrue and
+  Bourrilly's *Guillaume du Bellay* (fr.2980 f.31, f.55), not items 21-22.
+- HathiTrust full-text search: Cloudflare-blocked per CLAUDE.md, not attempted. EF token counts were used for
+  Le Grand instead. **Unreachable.**
+
+(f) **Solver repositories and cipher pages**
+- dbourdeau/cyphersolver, fresh shallow clone, head 763a3b9 (23 Sept 2026 12:30 -05:00). Grep for 2980,
+  btv1b9059991d, Villandry, Tarbe and 8505 finds **CATALOGUE.md line 76, catalogue 328**, "Gramont to Villandry,
+  Rome (BnF fr. 2980 nos. 21–22, ff. 29–30): Gramont 1530 key held (gramont1529)", in the 22 Sept sweep of
+  letters "a key already in hand reads", and `gallica_sweep/bnf_candidates.txt` line 302. gramont1529/ reads
+  fr.3071 no.7, not fr.2980. **Catalogued, not read.** This contradicts the check-solved note, which is now
+  corrected.
+- aaymeloglu/unsolved-ciphers, fresh shallow clone: 0 hits for 2980, Gramont, Villandry or Tarbe.
+- Tomokiyo, francis.htm, fetched live 24 Sept 2026 (1 request; same text as the 23 Sept mirror): "These
+  undeciphered letters can be read with Gramont's cipher (1530) below." No transcription or plaintext. GL.htm
+  (mirror): no mention of fr.2980.
+- Lasry: web search "Lasry Cryptologia French diplomatic ciphers Francis I Gramont 1530" found nothing on
+  fr.2980 (Mary Stuart, Maximilian II, papal ciphers). His Gramont work is known through Tomokiyo's pages. His
+  own "Codebreaking" pages were not fetched this session (Tomokiyo's GL.htm mirrors their listings).
+- DECODE: login rejected (ASKS row 1); cached catalogue empty. **Unreachable.**
+
+(g) **Scholarship**
+- Web searches: "Gabriel de Gramont évêque de Tarbes ambassade Rome 1530 thèse correspondance"; "Gramont"
+  "Villandry" 1530 "lettre chiffrée" Rome "20 mai". Results: Wikipedia, catholic-hierarchy, BnF notices
+  (Clairambault, fr.3045) and the PUR chapter (searched above). Nothing on this letter.
+- Not reached: Cédric Michon, *La Crosse et le Sceptre* (thesis; Tallandier 2008); Wirtz-Daviau on the 1529-30
+  embassy (flagged in Bourdeau's notes; not located); Le Glay, *Négociations diplomatiques entre la France et
+  l'Autriche* (the Margaret of Austria period, off-target).
+- **JSTOR queries for the owner** (JSTOR is challenge-blocked, ASKS row 17): `"Gramont" AND "Villandry"`;
+  `"évêque de Tarbes" AND 1530 AND chiffre`; `"fr. 2980"`; `"Gabriel de Gramont" AND (Rome OR Clement) AND 1530`;
+  `"Gramont's cipher"`; `Lasry AND (Gramont OR "Francis I")` in Cryptologia 2022-2026. Log article and date in
+  this file.
+
+## 5. Postmortem
+
+**Failure named: an incomplete repository grep reported as a negative.** The check-solved pass wrote "fr.2980
+does not appear anywhere in his [Bourdeau's] repository" and "the only two projects that read letters in this key
+... explicitly did not include this manuscript". Bourdeau's CATALOGUE.md lists both items as catalogue 328 with
+the key marked "held". Nobody has published a reading, so the class is unaffected. The error matters for
+outreach, though. A message to Bourdeau that did not mention his catalogue 328 would look careless, and the
+fair credit line is "identified as readable by Tomokiyo, catalogued by Bourdeau (328), read here". Lesson: grep a
+solver repository's catalogue and sweep files, not only its target folders, and quote the hit.
+
+**Corrections made in NOTES.md** (each marked "Verifier correction, 24 Sept 2026"):
+1. Title: "Cardinal Gabriel de Gramont" became "Gabriel de Gramont, bishop of Tarbes (cardinal from 8 June 1530)".
+2. Check-solved, Bourdeau bullet: the "does not appear anywhere" sentence now carries the correction and the
+   CATALOGUE.md citation.
+3. Check-solved verdict: "explicitly did not include" became "have not read", with the correction.
+4. "the cheapest kind of unique solve: a known key, an unread ciphertext" became "a key-based reading ... for
+   which no prior reading has been located" (rule 10).
+5. Print-check, Decrue bullet: "consistent with ... them being unread ciphertext in his day" became "his not
+   having read them" (rule 10).
+6. Transcription section, clear text: "du xxi[?]e" now carries a grade-I note that the date is impossible and
+   "xvi" (Monday 16 May) is likelier. The reading itself is not changed.
+
+**Not corrected here (outside this folder, for the orchestrator):** QUEUE.md row M8 calls him "cardinal", which
+is anachronistic for 20 May 1530. The orchestrator's claim sentence ("Cardinal Gabriel de Gramont") has the same
+problem. Any status or board line should use the safe sentence above and state that the reading is partial and
+single-reader.
+
+## 6. Requests this session
+
+archive.org (advancedsearch, metadata, download, be-api fts): about 75, 1.6 s apart. data.htrc.illinois.edu: 4.
+catalog.hathitrust.org Bibliographic API: 2. www.googleapis.com (Books, keyed, country=US): about 45, 1.6 s apart.
+books.google.com: 1 (429 `/sorry/`, stopped). gallica.bnf.fr: 2 SRU catalogue queries, no images.
+archivesetmanuscrits.bnf.fr: 3 (fr.2980 notice, Clairambault 312-452 twice). books.openedition.org: 1.
+cryptiana.web.fc2.com: 2 (a 302 redirect, then 200). www.digitale-sammlungen.de: 1 (JavaScript page, unused).
+github.com: 2 shallow clones. WebSearch: 3. No logins, no credentials printed, no decoding, and reading.txt,
+key.tsv and ciphertext.txt untouched.

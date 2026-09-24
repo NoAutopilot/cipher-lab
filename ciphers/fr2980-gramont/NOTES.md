@@ -1,4 +1,4 @@
-# BnF Français 2980, ff.29-30: two cipher letters of Cardinal Gabriel de Gramont, bishop of Tarbes
+# BnF Français 2980, ff.29-30: two cipher letters of Gabriel de Gramont, bishop of Tarbes (cardinal from 8 June 1530)
 
 partial
 
@@ -53,7 +53,11 @@ Total extent across both items: roughly 650-800 cipher tokens, well above the M6
   two other letters. His NOTES.md is explicit that "Neither site gives any plaintext... the task here was
   reading the letters, not breaking the ciphers" — i.e. he applied Tomokiyo/Lasry's published keys by hand.
   **fr.2980 does not appear anywhere in his repository** (grepped the full clone for "2980" and "gramont",
-  checked every hit; none is this manuscript).
+  checked every hit; none is this manuscript). *[Verifier correction, 24 Sept 2026: wrong. A fresh clone (head
+  763a3b9) lists both items in `CATALOGUE.md` line 76, "Gramont to Villandry, Rome (BnF fr. 2980 nos. 21–22,
+  ff. 29–30; catalogue 328): Gramont 1530 key held (gramont1529)", in its 22 Sept 2026 sweep of letters "a key
+  already in hand reads", and in `gallica_sweep/bnf_candidates.txt` line 302. Bourdeau had catalogued them as
+  readable with the key; he had not read them. See AUDIT.md.]*
 - **aaymeloglu/unsolved-ciphers** (fresh shallow clone, 23 Sept 2026): no hit for "2980" or "gramont" anywhere
   in the repository.
 - **DECODE cached catalogue** (`sources/decode/`): empty, nothing to grep (no cached catalogue file present
@@ -66,14 +70,14 @@ Total extent across both items: roughly 650-800 cipher tokens, well above the M6
 
 **Open, verified unsolved by this sweep** (not found-solved): no source checked gives a plaintext or a
 transcription of fr.2980 ff.29-30 specifically, and the only two projects that read letters in this key
-(Bourdeau, and Tomokiyo/Lasry themselves) explicitly did not include this manuscript.
+(Bourdeau, and Tomokiyo/Lasry themselves) have not read this manuscript. *[Verifier correction, 24 Sept 2026: Tomokiyo names both letters as readable with the key, and Bourdeau lists them as his catalogue 328; neither gives a reading. See AUDIT.md.]*
 
 **Reclassify kind: recovery, not cryptanalysis.** The QUEUE row scored this as "cryptanalysis" on the
 assumption no key existed. A key does exist, is published, and is independently cross-validated on three other
 manuscripts (fr.3019, fr.3071, fr.3040) by two different methods (Tomokiyo's reconstruction and Lasry's
 codebreaking) — applying it to fr.2980 is transcription-and-substitution, not fresh cryptanalysis. Per
-README's metric this is close to the cheapest kind of unique solve: a known key, an unread ciphertext, in
-different boxes. Rule 10 still applies in full: nothing here may be called new, unpublished, first or unread
+README's metric this is a key-based reading: a published key applied to a ciphertext for which no prior reading
+has been located, in different boxes. *[Verifier correction, 24 Sept 2026: "unique solve" and "unread" removed (rule 10).]* Rule 10 still applies in full: nothing here may be called new, unpublished, first or unread
 until a verifier searches for the plaintext in print (Gramont's own printed correspondence/embassy papers,
 etc.) and classifies N0-N5.
 
@@ -152,8 +156,8 @@ prior plaintext or decipherment located after the logged search below) for each.
   number for *other* letters in the same recueil (items 7, 25, 26, 27, 57, 80, all Montmorency/royal
   correspondence, none in the 20-22 range). Searched by exact phrase `"2980, 21"` / `"2980, 22"` and by
   folio form `"2980, f. 29"` / `"2980, f. 30"` in all three IA copies: **zero hits**. Decrue plainly worked
-  through this volume item-by-item and did not cite ours — consistent with (not proof of) them being unread
-  ciphertext in his day too.
+  through this volume item-by-item and did not cite ours — consistent with (not proof of) his not having
+  read them. *[Wording corrected by the verifier, 24 Sept 2026, rule 10.]*
 - **PUR OpenEdition**, Thierry Rentet's chapter on Jean Breton (Villandry) in *Conseils et conseillers sous
   François Ier* (`books.openedition.org/pur/120024`, fetched directly, full chapter read) — biographical detail
   on Breton/Villandry's 1530 role as Montmorency's relay at court (citing Rentet's own 2008 conference paper on
@@ -257,7 +261,7 @@ letters I have not yet divided, and some sign identifications in L01, L03-L07 an
 decoded "du vingtiesme" (L07) fits the letter's own date (20 May) or a reference to an earlier letter of the 20th.
 
 **Clear text, f.29r (draft, read by eye from the image, grade M throughout, for context only):** "Monsr, pensant
-que ce courrier pourra estre plustost a vous que le pacquet que j'ay envoye au Roy du xxi[?]e de ce moys, je vous ay
+que ce courrier pourra estre plustost a vous que le pacquet que j'ay envoye au Roy du xxi[?]e [verifier note, grade I: a packet of the 21st cannot precede a letter of the 20th; 20 May 1530 (Julian) was a Friday and 'lundi' was 16 May, so 'xvi' is likelier; re-read against the image] de ce moys, je vous ay
 bien voulu envoyer ung double des lettres que j'escriptz lundi ... et demeurant voz ... La venue ... et la depesche
 dudit porteur ... pour la satisfaction de nostre Sainct Pere et assez tost ... des affaires du Roy par deca ...
 Je m'escriptz pour ... messeigneurs ... d'Ancone(?) que j'ay ... par la depesche dudit xxie ... qui sera la fin,
@@ -284,3 +288,11 @@ cryptiana.web.fc2.com 2 (the two key images; the key is not in the mirror as an 
 **For the next worker (one line each):** transcribe f.30r and f.30v by the reconciler method (reconciliation.md),
 reusing key.tsv codes; re-read f.29r L01, L03-L07, L13 against the image with the decoded letters in hand; add
 exceptions.tsv for g-as-E and 9-as-B positions so reading.txt carries the context values with their grade.
+
+## Verifier audit, 24 September 2026
+
+AUDIT.md: item 21 (f.29r) is **N3**. No prior printed plaintext or decipherment was located. Tomokiyo had
+identified the letter as readable with the key, and Bourdeau catalogued it (catalogue 328); neither read it.
+The reading is partial and rests on one reader. Item 22 has no class until it is read. The safe sentence and
+the gaps (Le Grand pages seen only as token counts, Camusat as snippets, JSTOR, HathiTrust full text) are in
+AUDIT.md. Suggestion: a second adversarial audit (outreach gate 2) before any message to Tomokiyo or Bourdeau.
