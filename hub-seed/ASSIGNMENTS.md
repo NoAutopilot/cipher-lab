@@ -369,8 +369,8 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T20:12Z	session_01FmmDMW6DjBWayqWxiLQLbv	LANE R5 F2 (Opus, cap 8)	fr3986 f.198 + fr3987 f.66 key no.60	brief 2026-09-24-lane-r5-f-nevers-keyapply.md
 2026-09-24T20:12Z	session_01KBZiKfkpmpcs9LpKWUyqpP	LANE R5 F3 (Opus, cap 8)	fr3989 f.169 + fr3990 f.55 key no.60	brief 2026-09-24-lane-r5-f-nevers-keyapply.md
 2026-09-24T20:22Z	session_01BAiHM1HFXwf83oYtGb7h4v	Retro-apply f (Sonnet, cap )	RETRO-2026-09-24f.md proposals 1, 2, 3, 5	briefs, tools, CLAUDE.md procedural; proposal 4 applied by the parent
-2026-09-24T20:27Z	session_01TgawRbgrF85Xcmw2xPwitd	z13 stress test of a forum ARTHUR LA mechanism (Opus, cap )	ciphers/zodiac-z13-stress/	owner's request ('for fun'); brief 2026-09-24-z13-stress-test.md
-2026-09-24T20:36Z	session_01DayNPYcrVxbaiXwNBcjRgN	rfetch reddit thread mwhtp0 via API (Sonnet, cap )	ciphers/reddit-runaway-2021/ redacted save	owner added a Reddit credential 24 Sept; brief 2026-09-24-reddit-fetch-runaway.md
+2026-09-24T20:27Z	session_01TgawRbgrF85Xcmw2xPwitd	z13 stress test of a forum ARTHUR LA mechanism (Opus, cap )	ciphers/zodiac-z13-stress/	done 20:37, $1.98, N, mechanism closed-negative with control; archived 20:45
+2026-09-24T20:36Z	session_01DayNPYcrVxbaiXwNBcjRgN	rfetch reddit thread mwhtp0 via API (Sonnet, cap )	ciphers/reddit-runaway-2021/ redacted save	done 20:38, $0.36, N, single variable, 401; needs client id + secret; archived 20:45
 2026-09-24T20:38Z	session_01UohbhkMcYaK5vzr6mBwqcT	Lessons ingest: Urquhart host-text-as-key (Sonnet, cap )	LESSONS.md, check-solved.md, sources/vals-ai/	owner's pointer to the Vals AI post; brief 2026-09-24-lessons-urquhart-hosttext.md
 2026-09-24T20:38Z	queued	rfetch2 reddit thread 18lz1b5, r/codes 1600s book (Sonnet, cap )	ciphers/reddit-oldbook-1600s/	after rfetch reports; brief 2026-09-24-reddit-fetch-oldbook.md
 2026-09-24T20:38Z	session_01HSqJsqbR6Dtu5u1NJHUXg5	LANE N4 scTOMO (Sonnet, cap $6)	Tomokiyo key lists vs unread siblings (beyond Nevers)	brief lane-n4-scTOMO

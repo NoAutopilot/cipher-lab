@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 20:22 UTC",
+ "updated": "24 Sep 2026 20:46 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1641,23 +1641,31 @@
    "grade": "item-level check at each archive's own viewer; order-only at all three",
    "line": "Closes the question of whether any of these could be had without a copy order: no. They stay on the owner's card as orders. One note for later: the Royal House archive's own description of the Affry series says some copies there are already deciphered.",
    "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/QUEUE.md"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "negative",
+   "title": "Zodiac Z13, a forum's ARTHUR LA typewriter-keyboard mechanism: fails its matched control (the mechanism, not the cipher)",
+   "grade": "16 free choices across 13 characters, five different per-letter operations, only three letters produced sequentially; the same rule family yields a 7-letter name on 968 of 1,000 random strings of Z13's shape, and 13 other given names on Z13 itself",
+   "line": "Answer to the poster's own question: the mechanism fails at the choice of a different operation for each letter, not in the chain. Conditional on the widely reproduced transcription (Wikipedia refused the fetch). Says nothing about who wrote Z13.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/zodiac-z13-stress"
   }
  ],
  "lanes": [
   {
    "name": "Lane R5, recovery",
    "live": 1,
-   "focus": "three Opus workers applying Tomokiyo's key no.60 to six Nevers-circle letters (fr.3985 f.88 and f.176, fr.3986 f.198, fr.3987 f.66, fr.3989 f.169, fr.3990 f.27), leaves on disk, no interlinear decipherment on any; Salviati f.55v to f.57v to be bought next (owner 20:16)"
+   "focus": "key no.60 applied mechanically to fr.3985 f.88 and f.176 and fr.3990 f.27: no reading (73 keyed tokens against 162 uncertain; pass agreement 37 to 55 percent). The blocker is sign identification in this hand, not the key. Next: calibrate the key's signs on fr.3983 f.169, the Nevers leaf that carries a contemporary decipherment, then re-run; Salviati f.55v to f.57v to be bought (owner 20:16)"
   },
   {
    "name": "Lane N4, nominations",
    "live": 1,
-   "focus": "eleven firm copy-free nominations (van Spaen 1808 and Roell 1809 restored after the Colenbrander edition was read at the Huygens site); Iberian archives scouted (two Torre do Tombo codex leads); the seven Bourdeau copy-order rows confirmed order-only"
+   "focus": "eleven firm copy-free nominations; scTOMO (Tomokiyo key lists against unread leaves, Gallica) and scDIGI (Torre do Tombo codices, isolating the cipher leaves) running; 12 workers $36 so far"
   },
   {
    "name": "Parent workers",
-   "live": 0,
-   "focus": "solvEX and solvEX2 closed: the crib loop helps at short lengths with a mid-range blind decode, adds 4.9 points on Salviati's design at 720; retrospective f done, retro-apply f next"
+   "live": 1,
+   "focus": "survey on Fable: the public unsolved lists as one ranked list with an approach and spec per item and a mechanical judge; lessons ingest (Urquhart host-text method); retro-apply f; Z13 stress test closed (mechanism fails its control); Reddit fetch waits on a client id and secret"
   },
   {
    "name": "Lane V4, verification",
