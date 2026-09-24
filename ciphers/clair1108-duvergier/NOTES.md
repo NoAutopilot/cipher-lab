@@ -156,3 +156,87 @@ f252/f253/f265), all ≥1.5s apart, single fetcher, UA `cipher-lab research scri
 Not touched: no key work, no decoding beyond reading the clear-French portions directly off the images, no
 novelty wording, no attempt to pin the exact folio where the Du Vergier item ends and the next item begins
 (somewhere canvas265-268; canvas268 is a printed "FACTUM" title leaf, an odd insertion worth a follow-on look).
+
+## Key leads and print check (24 Sept 2026)
+
+**Verdict: open, no key lead.** No published key, decipherment, or printed edition found anywhere for the
+Marine/Pontchartrain/Dunkerque nomenclator correspondence of the 1690s, and specifically none for Vergier's
+letters. This is a cryptanalytic-only target for now: no external key to warm-start against.
+
+**(a) Key/decipherment leads.**
+
+- *Cryptiana* (`sources/cryptiana/`, grepped in full for "vergier", "pontchartrain", "phelypeaux", "dunkerque",
+  "clairambault 1108"/"clair1108", "marine"): no page addresses this item or this correspondence. One
+  near-miss, not a match: `web/louisxiii.htm` ("Council of Béarn — Hesperien's Cipher") covers BnF Clair 373,
+  two 1612 cipher letters of Théophile Hesperien to **Paul Phélypeaux, seigneur de Pontchartrain**, secretary
+  of state for Protestant affairs — the addressee's great-grandfather, 84 years earlier, a different office
+  (Protestant affairs, not the Navy) and a different cipher (3-digit nomenclature reconstructed by Tomokiyo).
+  Worth noting as a methodological precedent (Tomokiyo has worked Phélypeaux-addressed nomenclator ciphers
+  before) but not a key or lead for this item.
+- **Both solver repositories**, fresh shallow clones, grepped for "vergier", the ark (`btv1b90009665`),
+  "clair1108"/"clairambault 1108", "pontchartrain", "dunkerque"/"dunkirk": no hit on this target. Two
+  unrelated homonyms surfaced and are ruled out: (1) `cyphersolver/gallica_sweep/sru_chiffre_desc.json`, a
+  generic Gallica SRU catalogue-search dump, has one snippet naming a 1574 municipal letter from "Seveste" and
+  "**Du Vergier**" (Bordeaux jurats) to Matignon — wrong century, wrong place, wrong genre; (2)
+  `cyphersolver/yard1699/` is an unrelated English diplomatic nomenclator (1699) whose key has an entry
+  `2280: *Pontchartrain` alongside `*Pomponne`/`*Privy Seal` — Pontchartrain there is a subject name to be
+  encoded in an English key, not a decipherment of any French correspondence, let alone this one.
+- **DECODE catalogue.** No cached DECODE catalogue CSV exists yet in this repo (`sources/decode/` holds only
+  an unrelated login-form capture from another lane, dated today); the aaymeloglu mirror's
+  `catalogue/decode-catalog.csv` was grepped instead for "pontchartrain", "dunkerque"/"dunkirk", "vergier",
+  "clairambault 110": no row.
+- **Lasry/Tomokiyo papers.** Web search for their joint and individual work turned up the Mary Stuart
+  1578-1584 decipherment (Cryptologia, with Tomokiyo and John Chris Miller) and a separate credit to Lasry for
+  a 1684 letter to Louis XIV from his ambassador to the United Provinces — no paper by either author on a
+  Marine/Pontchartrain/Dunkerque nomenclator of the 1690s, and no mention of Vergier or Clairambault 1108
+  anywhere in the search results.
+
+**(b) Printed edition of Vergier's administrative letters.** Not found. Two named editions checked by web
+search, both organized by a different axis than the Marine department's own internal correspondence:
+- **Depping, *Correspondance administrative sous le règne de Louis XIV*** (4 vols, 1850-55): organized by
+  topic — provincial/municipal affairs (t.1), justice/police/galleys (t.2), religious affairs/Protestants/
+  sciences (t.4) — and by intendants and provincial governors' correspondence with the king's cabinet and
+  secretaries of state. Dunkerque appears only via its admiralty lieutenant-general (Nacquart) and the
+  intendant of maritime Flanders (Robert) writing to Colbert in the 1660s-70s, a generation before Vergier;
+  no volume covers Marine-department internal correspondence of the 1690s.
+- **Boislisle, *Correspondance des contrôleurs généraux des finances avec les intendants des provinces*** (3
+  vols, 1874-97): scoped to the Contrôle général/intendants of finance, not the Marine secretariat; one
+  incidental 1715 Dunkerque reference (Chamillart) turned up, two decades after and unrelated to Vergier.
+  Neither edition is the right series for a Marine commissioner's dispatches to the secretary of state for
+  the Navy.
+- Vergier's only located printed correspondence is his own literary *Œuvres diverses* (poetic epistles,
+  including pieces addressed to Pontchartrain such as "La Couche," 1696) — already flagged in the prior sweep
+  as a different genre from these administrative cipher dispatches, and confirmed again here: nothing in the
+  search results ties that volume to the ciphered administrative letters in Clairambault 1108.
+- Google Books (key + country=US, 7 calls, ≥2s apart): `"du Vergier" Dunkerque marine chiffre` (2 hits, both
+  irrelevant: *Carnet de la sabretache* 1895, and Darsel & Le Bouëdec's *L'Amirauté en Bretagne* 2012 — Brittany,
+  not Dunkerque); `"clef du chiffre" marine Pontchartrain` (5 hits, all Michaud's *Biographie universelle*
+  editions — the three query terms matching as unrelated words in a huge biographical dictionary, not a real
+  edition); `Vergier "commissaire" Dunkerque Pontchartrain déchiffrement` (0 hits); `"correspondance chiffrée"
+  marine Louis XIV Pontchartrain` (4 hits, all unrelated — a Saintonge/Aunis historical bulletin and a Mazarin-
+  Nevers biography). No genuine hit for a printed key or decipherment in any query.
+
+**(c) Archive series holding the Pontchartrain side, and whether a cipher key sits there.** AN (Archives
+nationales) **Marine B2** is *correspondance générale* — orders and dispatches sent out by the secretariat
+(the Pontchartrain side going out); **Marine B3** is *lettres reçues* — incoming letters, where Vergier's own
+originals or ministry copies would be filed if the department kept them (our BnF Clairambault 1108 leaves may
+be a private/genealogical-collection copy rather than the ministry's own filed copy — not established either
+way this pass). FranceArchives finding-aid snippets surfaced dispatches specifically dated 1695-1697 and 1699
+under Pontchartrain, consistent with the window of these letters, but nothing describing a cipher key held
+in either sub-series. One specific and load-bearing fact: the Marine's own **central archive service was
+established by Pontchartrain only in 1699** (a pavilion by the Discalced Augustinians' convent, place des
+Victoires, Paris) — three years *after* the 26 March 1696 letter — so if a cipher key for this correspondence
+was ever formally filed as an artifact of the ministry's own record-keeping, it would postdate the letters
+themselves; nothing in the finding-aid text located this pass says such a key exists in B2/B3 at all. Not
+checked this pass: the Marine B2/B3 series' own detailed inventory beyond finding-aid abstracts (would need a
+Gallica/SIV fetch, out of scope — other lanes own those hosts) and the Service historique de la Défense
+(Vincennes) manuscript catalogue (one PDF fetched turned out to be an unrelated 1733-35 ship's log, not a
+chiffre/key inventory; not retried).
+
+Requests this session: WebSearch 7, googleapis.com (Google Books) 7 (all ≥2s apart, `country=US` +
+`key=$GOOGLE_BOOKS_KEY`, neither printed), 2 shallow git clones (github.com, dbourdeau/cyphersolver and
+aaymeloglu/unsolved-ciphers, grepped and discarded), 1 servicehistorique.sga.defense.gouv.fr PDF fetch (dead
+end, wrong manuscript). No gallica.bnf.fr, no archive.org. Cost well under the $5 cap.
+
+Not touched: no decoding, no novelty wording, no fetch of BnF Marine B2/B3 finding aids or Gallica/SIV records
+(other lanes' hosts).
