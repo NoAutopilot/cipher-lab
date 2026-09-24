@@ -231,7 +231,7 @@ lifetime, and the same was probably being asked of the other Electors. This is t
 **53 p1 postscript (Willem -> August, Breda 24 Oct 1561; Dresden Loc. 9941/3 f.266) is a third key, read
 cryptanalytically.** [A2 correction, 24 Sept 2026: the cipher does not end on p1. PDF 00053 has two pages; f.266v
 (`images/00053_p2.png`) carries three more cipher lines (about 90 signs), then the end of the letter and an autograph
-postscript in clear. The reading below covers p1 only; "mrch" is a line end, not the end of the text.] 10 lines, not 12. The first crop set mixed lines and was replaced by deskewed crops. Two
+postscript in clear. The reading below covers p1 only; "mrch" is a line end, not the end of the text. F1 read p2 below.] 10 lines, not 12. The first crop set mixed lines and was replaced by deskewed crops. Two
 blind passes (passA_53/passB_53, 90.9% agreement), `settle_53.py` → `ciphertext_53.tsv`: 282 letters, 20
 distinct signs, dots as word separators. Solver: `tools/homophonic_anneal.py` (new, pure Python, trigram +
 KL letter term, w folded to uu), LM = `tools/data/de16/composed_enhg.txt` (composed text, see its README) +
@@ -251,6 +251,16 @@ plaintext_98.txt. The 74 text is kept out of the LM because it is the control.
   (mich?). Read with the image, not repaired. In short: news that the Prince of Spain would marry his father's sister and
   come to govern these lands, and that the Duke of Vendôme would recover his kingdom of Navarre by agreement or
   war. This is this worker's gloss.
+- **F1 extension, 24 Sept 2026 (LANE R2 worker F1, Opus, one careful reading, no passes, no network):** f.266v's three
+  cipher lines (`images/00053_p2.png`, read at 3-5x from the 100 dpi render) are appended to `ciphertext_53.tsv` as
+  `53p2_L01`-`L03` (86 rows, 82 letters, same codes) and read with key_53 unchanged. One sign absent from key_53, `9`,
+  occurs twice and is set to f by context in `exceptions_53.tsv` ("zu [9]ranckreich", "[9]urgang"), grade M.
+  **p2 tokens 82: S 75, M 7. Whole letter (p1+p2) tokens 364: H 0, C 0, S 238, M 126, I 0, U 0.** `decode_key.py --check` exits 0.
+> dunck aber die uueil der konnig zu franckreich noch so iung ist, es uuerde keinen furgang geuuinnen.
+  In short: "but it seems to me that, as the King of France is still so young, it will make no progress" (this
+  worker's gloss). p2 opening "dunck aber" suggests p1's last word "mrch" is "mich" ("mich dunck aber"): L10 pos 26 is
+  a 'differ' row (V vs another sign); an image re-check of that one sign is suggested, not repaired here. Doubtful on
+  p2: G7 in "so" (lambda-like, could be X), the blotted 1 in "uuerde", the barred Z in "zu".
 - This is a cryptanalytic result: no H or C tokens. 53 shares System A's sign shapes but has its own
   alphabet, e.g. 1 = e (e in 74 too), 5 = n, 7 = u, X = i, V = r, Xk = t, G3 = h.
 
