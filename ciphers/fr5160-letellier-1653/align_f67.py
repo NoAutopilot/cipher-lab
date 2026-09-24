@@ -83,12 +83,23 @@ def segments():
 A_NONSIGN = {',', ';', '.', ':', '—', 'X'}
 
 
+# Letter-scoped values (24 Sept 2026, LANE G2 worker Y, NOTES 'key_1659 codes 6 and 65'): on f.86/f.88 (21 Nov 1659) code 6
+# is qu (5/5: "que M.r", "quel(s)", "desquelles"); on f.67 (10 Oct 1659) it is a, and f.67 has no `m` (the November letter's
+# a, 21 times). Different values in different letters, so key_1659's f.86/f.88 counts for these codes are not used as the
+# prior here and the f.67 value is graded as the letter's own.
+LETTER_SCOPED = {'6': 'a'}
+
+
 def load_key():
     key, prior = {}, defaultdict(Counter)
     rows = list(csv.DictReader(open('key_1659.tsv', encoding='utf-8'), delimiter='\t'))
     for r in rows:
         v = '#' if r['value'] == 'M.' else ('' if r['value'] == '0' else r['value'])
         alts = {('' if kv.rsplit(':', 1)[0] == '0' else kv.rsplit(':', 1)[0]) for kv in filter(None, r['other_values'].split(','))}
+        if r['code'] in LETTER_SCOPED:
+            key[r['code']] = (LETTER_SCOPED[r['code']], r, set())
+            prior[r['code']][LETTER_SCOPED[r['code']]] += PRIOR_W
+            continue
         key[r['code']] = (v, r, alts)
         prior[r['code']][v] += int(r['evidence']) * PRIOR_W
         for kv in filter(None, r['other_values'].split(',')):
@@ -144,7 +155,9 @@ def build():
             folio, ln = line.split('_', 1)
             if g in key:
                 kv = key[g][0]
-                if a == kv:
+                if a == kv and g in LETTER_SCOPED:
+                    grade, why = 'C', f'f.68r agrees with the f.67-scoped value "{kv}" (key_1659 f.86/f.88 "{key[g][1]["value"]}")'
+                elif a == kv:
                     grade, why = 'C', 'f.68r agrees with key_1659'
                 elif a in key[g][2]:
                     grade, why = 'C', f'f.68r "{a or "0"}" = alternate key_1659 attests (modal "{kv or "0"}")'

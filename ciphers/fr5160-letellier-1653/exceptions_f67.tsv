@@ -28,12 +28,12 @@ f129	L03	2	l	M	key row conflict
 f129	L03	3	le	S	inside a French word
 f129	L03	4	s	S	inside a French word
 f129	L03	5	de	M	group read at conf M
-f129	L03	7	i	M	outside every French word
+f129	L03	7	i	M	key row conflict
 f129	L03	8	n	M	key row conflict
 f129	L03	9	de	M	group read at conf M
 f129	L03	10	la	M	key row conflict
 f129	L03	11	ve	M	key row conflict
-f129	L03	12	i	S	inside a French word
+f129	L03	12	i	M	key row conflict
 f129	L03	13	te	M	key row conflict
 f129	L03	14	de	M	group read at conf M
 f129	L03	16	s	M	outside every French word
@@ -132,7 +132,7 @@ f129	L08	4	t	M	key row conflict
 f129	L08	5	re	M	key row conflict
 f129	L08	6	r	M	key row conflict
 f129	L08	7	du	M	group read at conf M
-f129	L08	8	ar	M	outside every French word
+f129	L08	8	ma	S	inside a French word
 f129	L08	9	ni	I	proposed from context: f129 L08 "du ma[ni]ement des affaires"; L13 "mi[ni]stres" (with 67)
 f129	L08	10	e	M	key row conflict
 f129	L08	11	me	S	inside a French word
@@ -154,7 +154,7 @@ f129	L09	7	q	M	outside every French word
 f129	L09	8	l	M	key row conflict
 f129	L09	9	qu	S	inside a French word
 f129	L09	10	r	M	key row conflict
-f129	L09	11	i	M	outside every French word
+f129	L09	11	i	M	key row conflict
 f129	L09	13	s	M	outside every French word
 f129	L09	14	t	M	key row conflict
 f129	L10	1	ou	M	key row conflict
@@ -177,7 +177,7 @@ f129	L10	18	ou	M	key row conflict
 f129	L10	19	s	S	inside a French word
 f129	L10	20	qu	S	inside a French word
 f129	L10	21	ou	M	key row conflict
-f129	L10	22	i	S	inside a French word
+f129	L10	22	i	M	key row conflict
 f129	L10	23	i	M	key row conflict
 f129	L11	1	n	M	key row conflict
 f129	L11	2	s	M	outside every French word
@@ -220,7 +220,7 @@ f129	L12	17	ou	M	key row conflict
 f129	L12	18	r	M	key row conflict
 f129	L12	19	s	M	outside every French word
 f129	L12	20	pr	M	key row conflict
-f129	L12	21	i	S	inside a French word
+f129	L12	21	i	M	key row conflict
 f129	L12	22	n	M	key row conflict
 f129	L12	23	ci	I	proposed from context: f129 L12 "prin[ci]paux"
 f129	L12	24	pa	M	key row conflict
@@ -233,7 +233,7 @@ f129	L13	6	t	M	key row conflict
 f129	L13	7	re	M	key row conflict
 f129	L13	8	s	S	inside a French word
 f129	L13	9	pr	M	key row conflict
-f129	L13	10	i	S	inside a French word
+f129	L13	10	i	M	key row conflict
 f129	L13	11	s	S	inside a French word
 f129	L13	12	se	M	key row conflict
 f129	L13	13	n	M	key row conflict
@@ -340,12 +340,12 @@ f130a	L02	11	p	M	group read at conf M
 f130a	L02	12	ou	M	key row conflict
 f130a	L02	13	r	M	key row conflict
 f130a	L02	14	se	M	key row conflict
-f130a	L02	15	ar	M	outside every French word
-f130a	L02	16	i	S	inside a French word
+f130a	L02	15	ma	S	inside a French word
+f130a	L02	16	i	M	key row conflict
 f130a	L02	17	e	M	key row conflict
 f130a	L02	18	r	M	key row conflict
 f130a	L03	1	ou	M	key row conflict
-f130a	L03	2	s	S	inside a French word
+f130a	L03	2	s	M	outside every French word
 f130a	L03	3	la	M	key row conflict
 f130a	L03	4	pe	S	inside a French word
 f130a	L03	5	e	M	key row conflict
@@ -379,7 +379,7 @@ f130a	L04	15	pu	M	outside every French word
 f130a	L04	16	b	M	key row conflict
 f130a	L04	17	i	M	key row conflict
 f130a	L04	18	e	M	key row conflict
-f130a	L05	1	ar	M	outside every French word
+f130a	L05	1	ma	M	outside every French word
 f130a	L05	2	da	S	inside a French word
 f130a	L05	3	mo	I	proposed from context: f130a L05, L06 "Ma de[mo]iselle" twice
 f130a	L05	4	oi	M	key row conflict
@@ -393,15 +393,15 @@ f130a	L05	11	du	S	inside a French word
 f130a	L05	12	t	M	key row conflict
 f130a	L05	13	re	M	key row conflict
 f130a	L05	14	s	S	inside a French word
-f130a	L05	15	ar	M	outside every French word
+f130a	L05	15	ma	M	outside every French word
 f130a	L05	16	ou	M	key row conflict
 f130a	L05	18	oi	M	key row conflict
 f130a	L06	1	i	M	key row conflict
 f130a	L06	2	f	M	key row conflict
 f130a	L06	3	fi	M	outside every French word
 f130a	L06	4	ce	S	inside a French word
-f130a	L06	5	qu	S	inside a French word
-f130a	L06	6	ar	M	outside every French word
+f130a	L06	5	qu	M	outside every French word
+f130a	L06	6	ma	M	outside every French word
 f130a	L06	7	da	S	inside a French word
 f130a	L06	8	mo	I	proposed from context: f130a L05, L06 "Ma de[mo]iselle" twice
 f130a	L06	9	oi	M	key row conflict
@@ -451,13 +451,13 @@ f130b	L02	17	re	M	key row conflict
 f130b	L03	1	oi	M	key row conflict
 f130b	L03	2	t	M	key row conflict
 f130b	L03	3	ve	M	key row conflict
-f130b	L03	4	i	S	inside a French word
+f130b	L03	4	i	M	key row conflict
 f130b	L03	5	ta	M	key row conflict
 f130b	L03	6	b	M	key row conflict
 f130b	L03	7	le	S	inside a French word
 f130b	L03	8	si	M	outside every French word
 f130b	L03	9	le	S	inside a French word
-f130b	L03	10	ar	M	outside every French word
+f130b	L03	10	ma	S	inside a French word
 f130b	L03	11	r	M	key row conflict
 f130b	L03	12	q	M	outside every French word
 f130b	L03	13	s	M	outside every French word

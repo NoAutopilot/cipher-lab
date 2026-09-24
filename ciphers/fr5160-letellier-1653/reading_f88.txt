@@ -1,7 +1,7 @@
-# grades: C=103 M=165 P=13 U=3  (P = clear in the manuscript; ? = unkeyed)
+# grades: C=101 M=167 P=13 U=3  (P = clear in the manuscript; ? = unkeyed)
 L01  [peut] [estre] [que] [M.r] de sa v y e a l la n t a c c m pa gn ne r M.
 L02  sa s e ou r ju s ques a pa r me p ou r r oi t pr
-L03  re n e re re s lu t i n de s y ar i e r y a
+L03  re n e re re s lu t i n de s y ma i e r y a
 L04  y a n t de s pr i n ne s se s de s qu l le s
 L05  i n di t be a ou c ou pr de b e n [mais] la l i
 L06  a n ne e s t si di s b r p r t i n ne e a ce l

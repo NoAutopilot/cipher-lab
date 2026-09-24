@@ -1,4 +1,4 @@
-# grades: C=69 M=199 P=12  (P = clear in the manuscript; ? = unkeyed)
+# grades: C=68 M=200 P=12  (P = clear in the manuscript; ? = unkeyed)
 L01  s oi t p ou r le lu y a v oi r e s te a oi
 L02  n si y di t pa r [M.] da m b ru m n ou p ou r
 L03  la v oi r c n t r ou ve p ou r le ru oi ne r

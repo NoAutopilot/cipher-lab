@@ -53,9 +53,9 @@ L03	9	24	i	M	i
 L03	10	18	n	M	on
 L03	11	36	de	M	de
 L03	12	20	s	C	s
-L03	13	9	y	M	ym
-L03	14	65	ar	C	ar
-L03	15	_12	i	C	i
+L03	13	9	y	M	y
+L03	14	65	ma	C	ma
+L03	15	_12	i	M	ri
 L03	16	2	e	M	e
 L03	17	21	r	C	r
 L03	18	9	y	M	y
@@ -67,7 +67,7 @@ L04	4	19	t	C	t
 L04	5	36	de	M	de
 L04	6	20	s	C	s
 L04	7	23	pr	M	pr
-L04	8	_12	i	C	i
+L04	8	_12	i	M	i
 L04	9	18	n	M	n
 L04	10	71	ne	M	ce
 L04	11	20	s	C	s

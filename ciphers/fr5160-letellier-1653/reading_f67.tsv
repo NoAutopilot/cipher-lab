@@ -36,7 +36,7 @@ f129	L03	8	18	H	n	M
 f129	L03	9	36	M	de	M
 f129	L03	10	60	H	la	M
 f129	L03	11	_26	H	ve	M
-f129	L03	12	_12	H	i	S
+f129	L03	12	_12	H	i	M
 f129	L03	13	_21	H	te	M
 f129	L03	14	36	M	de	M
 f129	L03	16	20	H	s	M
@@ -136,7 +136,7 @@ f129	L08	4	_22	H	t	M
 f129	L08	5	_11	H	re	M
 f129	L08	6	21	H	r	M
 f129	L08	7	39	M	du	M
-f129	L08	8	65	H	ar	M
+f129	L08	8	65	H	ma	S
 f129	L08	9	72	H	ni	I
 f129	L08	10	2	H	e	M
 f129	L08	11	66	H	me	S
@@ -183,7 +183,7 @@ f129	L10	18	7	H	ou	M
 f129	L10	19	20	H	s	S
 f129	L10	20	6	H	qu	S
 f129	L10	21	7	H	ou	M
-f129	L10	22	_12	H	i	S
+f129	L10	22	_12	H	i	M
 f129	L10	23	24	H	i	M
 f129	L11	1	18	H	n	M
 f129	L11	2	20	H	s	M
@@ -227,7 +227,7 @@ f129	L12	17	7	H	ou	M
 f129	L12	18	21	H	r	M
 f129	L12	19	20	H	s	M
 f129	L12	20	23	H	pr	M
-f129	L12	21	_12	H	i	S
+f129	L12	21	_12	H	i	M
 f129	L12	22	18	H	n	M
 f129	L12	23	32	M	ci	I
 f129	L12	24	_0	H	pa	M
@@ -240,7 +240,7 @@ f129	L13	6	19	H	t	M
 f129	L13	7	_11	H	re	M
 f129	L13	8	20	H	s	S
 f129	L13	9	23	H	pr	M
-f129	L13	10	_12	H	i	S
+f129	L13	10	_12	H	i	M
 f129	L13	11	20	H	s	S
 f129	L13	12	_16	H	se	M
 f129	L13	13	18	H	n	M
@@ -350,12 +350,12 @@ f130a	L02	11	_3	M	p	M
 f130a	L02	12	7	H	ou	M
 f130a	L02	13	21	H	r	M
 f130a	L02	14	_16	H	se	M
-f130a	L02	15	65	H	ar	M
-f130a	L02	16	_12	H	i	S
+f130a	L02	15	65	H	ma	S
+f130a	L02	16	_12	H	i	M
 f130a	L02	17	2	M	e	M
 f130a	L02	18	21	M	r	M
 f130a	L03	1	7	H	ou	M
-f130a	L03	2	20	H	s	S
+f130a	L03	2	20	H	s	M
 f130a	L03	3	60	H	la	M
 f130a	L03	4	_1	H	pe	S
 f130a	L03	5	2	H	e	M
@@ -391,7 +391,7 @@ f130a	L04	15	_4	H	pu	M
 f130a	L04	16	5	H	b	M
 f130a	L04	17	62	H	i	M
 f130a	L04	18	2	M	e	M
-f130a	L05	1	65	H	ar	M
+f130a	L05	1	65	H	ma	M
 f130a	L05	2	35	H	da	S
 f130a	L05	3	68	H	mo	I
 f130a	L05	4	15	H	oi	M
@@ -405,7 +405,7 @@ f130a	L05	11	39	H	du	S
 f130a	L05	12	19	H	t	M
 f130a	L05	13	_11	H	re	M
 f130a	L05	14	20	H	s	S
-f130a	L05	15	65	H	ar	M
+f130a	L05	15	65	H	ma	M
 f130a	L05	16	7	H	ou	M
 f130a	L05	17	_25	H	?	U
 f130a	L05	18	15	H	oi	M
@@ -413,8 +413,8 @@ f130a	L06	1	24	H	i	M
 f130a	L06	2	1	M	f	M
 f130a	L06	3	42	H	fi	M
 f130a	L06	4	31	H	ce	S
-f130a	L06	5	6	H	qu	S
-f130a	L06	6	65	H	ar	M
+f130a	L06	5	6	H	qu	M
+f130a	L06	6	65	H	ma	M
 f130a	L06	7	35	H	da	S
 f130a	L06	8	68	H	mo	I
 f130a	L06	9	15	H	oi	M
@@ -466,13 +466,13 @@ f130b	L02	17	_11	H	re	M
 f130b	L03	1	15	H	oi	M
 f130b	L03	2	19	H	t	M
 f130b	L03	3	_26	M	ve	M
-f130b	L03	4	_12	H	i	S
+f130b	L03	4	_12	H	i	M
 f130b	L03	5	_20	H	ta	M
 f130b	L03	6	5	H	b	M
 f130b	L03	7	61	H	le	S
 f130b	L03	8	_17	H	si	M
 f130b	L03	9	61	H	le	S
-f130b	L03	10	65	H	ar	M
+f130b	L03	10	65	H	ma	S
 f130b	L03	11	21	H	r	M
 f130b	L03	12	_7	H	q	M
 f130b	L03	13	20	H	s	M

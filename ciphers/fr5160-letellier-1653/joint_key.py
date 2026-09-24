@@ -119,7 +119,14 @@ def write_key(counts, per_folio):
             f.write(f'{g}\t{val}\tC\t{n}\t{tot}\t{other}\t{note}\t{e86}\t{e88}\n')
 
 
+# External seed (24 Sept 2026, LANE G2 worker Y): f.67 aligned to its clear text f.68r gives 65 = ma at 5 of 6 occurrences
+# (maniement, marier, madamoiselle x2, marquis); f.88's one 65 is "sy marier", which the unseeded EM split as 9=ym 65=ar.
+# Used only in joint(), not in the hold-outs, whose seed/non-seed split refers to the hand seeds read from f.86.
+EXTRA_SEEDS = {'65': 'ma'}
+
+
 def joint():
+    A.SEEDS = {**A.SEEDS, **EXTRA_SEEDS}
     s86, s88 = A.segments(), f88_segments()
     old = {r['code']: r for r in csv.DictReader(open('key_1659_f86only.tsv'), delimiter='\t')}
     if '--cold' in sys.argv:

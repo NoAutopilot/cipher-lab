@@ -1804,3 +1804,55 @@ gallica.bnf.fr: 79 (160-229 sequential, plus the 9 spot-check canvases 240-367),
 ≥1.8 s apart, descriptive User-Agent (`cipher-lab research script (contact via repository)`). All 200 on first or
 second try; one transient `curl: (35) Recv failure` on the automatic retry within the fetch loop resolved itself
 (same URL, no host-level block). No subagents, no other hosts. Well under $6 cap.
+
+## key_1659 codes 6 and 65 (24 Sept 2026)
+
+LANE G2 worker Y (Opus, cap $4, disk only, no network). Question: key_1659 has 6=qu and 65=ar; the f.67/f.68r alignment
+gives 6=a (11 of 14) and 65=ma (5 of 6). Is each one a homophone, a value that differs between letters, or an alignment slip?
+
+**65: an alignment slip in f.88. The value is ma in all three letters.** f.88's only 65 falls in "de sy marier" (f.87 l.17), coded
+`36 20 9 65 _12 2 21`. The unseeded EM split it as `9`=ym `65`=ar `_12`=i. The same word in f.67 ("pour se marier", f130a
+L02) is `65 _12 2 21` again, and f.67's other five 65s are ma-: maniement, madamoiselle x2, marquis, plus one "quema" the
+aligner merged. `9`=y is otherwise 8/15 and was never ym. Fix: `joint_key.py` now seeds `65`=ma (`EXTRA_SEEDS`, used in
+`joint()` only, so the hold-outs are unchanged), which is external known plaintext from f.68r. Only f.88 L03/13-15 realigns
+(y | ma | ri), and every other f.86/f.88 alignment row is unchanged. The same realignment exposes `_12`=ri: f.67 gives ri at
+8 of 8 (tu-ri-n, ve-ri-té, ar-ri-vast, au-ri-ons, p-ri-ncipaux, p-ri-sent, ma-ri-er), and key_1659 row `_12` is now i 2/3 with ri
+1, flagged `conflict`. That is honest, but it costs three C tokens on f.86/f.88 (below). A later key worker could set `_12`=ri
+and `23`=p, not pr: f.67 gives `23`=p at 9 of 10.
+
+**6: a different value in each letter. It is not a homophone, and neither alignment slipped.**
+- f.86/f.88 (21 Nov 1659): 6 = qu at 5 of 5, all in unambiguous f.87 contexts: "si noire **que** seroit", "de croire **que** M.r
+  Dambrun", "en **quel**s termes", "discours **quel**le a tenus", "des**quel**les". The native crop `crops/f86_cipher_L08.jpg`
+  shows a plain, un-overlined 6 directly before the clear "M.r", so the sign reading holds there.
+- f.67 (10 Oct 1659): 6 = a at 11 of 14 (du filz **a** l'endroit, qu'il **a**rrivast, **a**urions, mesures **a** prendre, office **a**
+  mademoiselle, Orle**a**ns, Pi**a**nese, madamoiselle **a** rendu...). Under the letter-scoped value the aligner puts a at 13 of 14. The
+  remaining one, f129 L16/15 (p), sits in the aligner's untidy "possible/pour" run.
+- The two letters also swap the a-sign. f.86/f.88 write a as `m` 21 times in 438 cipher groups. f.67 has **no `m` at all** in 546
+  groups: at the same rate about 26 would be expected, and it writes a as `6` (14) and `70` (3). f.67's qu is `_6` (13 of 13).
+  A code does not carry two unrelated values inside one letter. The pattern fits a table in which 6 was reassigned between
+  10 Oct and 21 Nov 1659 (a revised issue of the same table, or a scribe's variant), or, less likely, a sign in f.67 that two blind
+  passes and the reconciler all read as 6 when it is the November `m`. **Not settled:** the canvas 129/130 natives are not on
+  disk, since earlier workers kept them in their own scratchpads, so the f.67 sign was not compared with f.86's 6 and `m`.
+  Suggestion: fetch canvas 129 once, crop f129 L06/1 and L16/9, and compare them with `crops/f86_cipher_L08.jpg` (6) and
+  `crops/f86_cipher_L11.jpg` (`m`).
+- Fix: key_1659 row 6 stays qu (f.86/f.88). `align_f67.py` has `LETTER_SCOPED = {'6': 'a'}`. For f.67 it drops key_1659's
+  f.86/f.88 counts for code 6 as the prior and grades an f.68r "a" as C "f.67-scoped value". `key_1659_ext.tsv` row 6 keeps the
+  value qu and records ev_f67 13/14.
+
+**Grades before / after (tokens; every `--check` exits 0: decode_1659, align_f67, read_f67, reconcile_f88b, decode_key both jobs):**
+
+| reading | before | after | why |
+|---|---|---|---|
+| f.86 (decode_1659) | C 69 M 199 P 12 | C 68 M 200 P 12 | L04/7 `_12` now a conflict row |
+| f.88 (decode_1659) | C 103 M 165 U 3 P 13 | C 101 M 167 U 3 P 13 | L03/14 `65` ma stays C; L03/15, L04/8 `_12` now M |
+| f.67 on f.68r (align_f67, job 2) | C 435 M 111 | **C 454 M 92** | 6=a x13 and 65=ma x2 C; `_12` ri via attested alternate |
+| f.67 cryptanalytic (read_f67, job 1) | S 107 M 416 I 9 U 14 | S 102 M 421 I 9 U 14 | 65 ma now S x2; `_12` conflict drops S |
+
+The f.67 cryptanalytic control is unchanged in kind: true rate 0.720 against derangements with mean 0.488, sd 0.061, and 0 of 200
+at or above the true rate (z 3.82; it was 0.721 and z 3.85).
+f.67's conflicts drop from 51 to 32 tokens (`align_f67_conflicts.tsv`). Side change: `_24` is now tu (Turin = tu-ri-n), not tur.
+
+Report: 65 = ma (an alignment slip in f.88, corrected by an external seed). 6 = qu in the November letter and a in the October
+letter, so it is a letter-scoped value. Whether that reflects a table revision or an unchecked sign reading in f.67 was not
+settled, because the f.67 image was not on disk. No H anywhere (no key source), no novelty wording. Requests: none (no network).
+No subagents.

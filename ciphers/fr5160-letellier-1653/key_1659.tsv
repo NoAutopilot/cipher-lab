@@ -15,11 +15,11 @@ _6	ques	C	1	2	qu:1	conflict	0/0	1/2
 _7	q	C	8	8			3/3	5/5
 8	x	C	2	2			2/2	0/0
 _8	qu	C	1	1		single attestation	0/0	1/1
-9	y	C	8	15	bl:2,d:1,yp:1,n:1,la:1,ym:1	conflict	3/9	5/6
+9	y	C	9	15	bl:2,d:1,yp:1,n:1,la:1	conflict	3/9	6/6
 10	je	C	1	4	st:1,s:1,z:1	conflict	1/2	0/2
 _10	st	C	1	1		single attestation	0/0	1/1
 _11	re	C	9	17	e:3,en:3,r:1,fe:1	conflict	6/7	3/10
-_12	i	C	3	3			1/1	2/2
+_12	i	C	2	3	ri:1	conflict	1/1	1/2
 13	gn	C	1	1		single attestation	0/0	1/1
 _13	r	C	7	10	er:2,o:1	conflict	4/5	3/5
 _14	ru	C	2	3	r:1	conflict	2/3	0/0
@@ -70,7 +70,7 @@ _37	n	C	1	1		single attestation	1/1	0/0
 61	le	C	13	13			9/9	4/4
 62	i	C	4	5	ne:1	minor conflict	2/3	2/2
 64	lu	C	2	3	ol:1	conflict	1/1	1/2
-65	ar	C	1	1		single attestation	0/0	1/1
+65	ma	C	1	1		single attestation	0/0	1/1
 66	me	C	2	2			1/1	1/1
 70	a	C	2	2			0/0	2/2
 71	ne	C	7	15	e:4,ce:3,dan:1	conflict	3/7	4/8

@@ -9,17 +9,17 @@ _3	p	C	7	7			3/3	4/4	1/1	f.68r agrees
 _4	pu	C	1	1		single attestation	1/1	0/0	2/2	f.68r agrees
 5	b	C	3	4	ua:1	minor conflict	3/4	0/0	6/6	f.68r agrees
 _5	estr	C	1	1		single attestation	0/0	1/1	0/1	f.68r other: {'qua': 1}
-6	qu	C	5	5			4/4	1/1	0/14	f.68r other: {'a': 11, 'ar': 1, 'uia': 1, 'p': 1}
+6	qu	C	5	5			4/4	1/1	13/14	f.68r other: {'p': 1}
 _6	ques	C	1	2	qu:1	conflict	0/0	1/2	0/13	f.68r other: {'qu': 13}
 7	ou	C	13	23	u:9,eu:1	conflict	8/14	5/9	8/23	f.68r other: {'v': 1, 'u': 14}
 _7	q	C	8	8			3/3	5/5	5/9	f.68r other: {'po': 3, 'o': 1}
 8	x	C	2	2			2/2	0/0	1/1	f.68r agrees
 _8	qu	C	1	1		single attestation	0/0	1/1	2/2	f.68r agrees
-9	y	C	8	15	bl:2,d:1,yp:1,n:1,la:1,ym:1	conflict	3/9	5/6	3/3	f.68r agrees
+9	y	C	9	15	bl:2,d:1,yp:1,n:1,la:1	conflict	3/9	6/6	3/3	f.68r agrees
 10	je	C	1	4	st:1,s:1,z:1	conflict	1/2	0/2	0/9	f.68r other: {'z': 4, 's': 4, 'p': 1}
 _10	st	C	1	1		single attestation	0/0	1/1	0/3	f.68r other: {'a': 1, 'ra': 2}
 _11	re	C	9	17	e:3,en:3,r:1,fe:1	conflict	6/7	3/10	17/18	f.68r other: {'e': 1}
-_12	i	C	3	3			1/1	2/2	8/8	f.68r agrees
+_12	i	C	2	3	ri:1	conflict	1/1	1/2	0/8	f.68r other: {'ri': 8}
 13	gn	C	1	1		single attestation	0/0	1/1	0/1	f.68r other: {'gr': 1}
 _13	r	C	7	10	er:2,o:1	conflict	4/5	3/5	3/3	f.68r agrees
 _14	ru	C	2	3	r:1	conflict	2/3	0/0		
@@ -38,7 +38,7 @@ _20	ta	C	2	3	t:1	conflict	1/1	1/2	1/1	f.68r agrees
 21	r	C	28	30	te:1,ez:1	minor conflict	15/17	13/13	22/23	f.68r other: {'et': 1}
 _21	te	C	2	3	ten:1	conflict	2/3	0/0	5/5	f.68r agrees
 _22	t	C	2	4	ti:1,ut:1	conflict	1/2	1/2	2/4	f.68r other: {'ti': 2}
-23	pr	C	5	7	p:1,pre:1	conflict	1/1	4/6	2/10	f.68r other: {'p': 7, 'l': 1}
+23	pr	C	5	7	p:1,pre:1	conflict	1/1	4/6	0/10	f.68r other: {'p': 9, 'l': 1}
 _23	o	C	1	1		single attestation	1/1	0/0	2/2	f.68r agrees
 24	i	C	3	9	ui:2,0:2,t:1,us:1	conflict	1/6	2/3	2/6	f.68r other: {'0': 3, 'so': 1}
 26	be	C	1	1		single attestation	0/0	1/1		
@@ -70,7 +70,7 @@ _37	n	C	1	1		single attestation	1/1	0/0
 61	le	C	13	13			9/9	4/4	16/19	f.68r other: {'l': 1, 'af': 1, 'a': 1}
 62	i	C	4	5	ne:1	minor conflict	2/3	2/2	8/8	f.68r agrees
 64	lu	C	2	3	ol:1	conflict	1/1	1/2	2/2	f.68r agrees
-65	ar	C	1	1		single attestation	0/0	1/1	0/6	f.68r other: {'ma': 5, 'quema': 1}
+65	ma	C	1	1		single attestation	0/0	1/1	6/6	f.68r agrees
 66	me	C	2	2			1/1	1/1	12/12	f.68r agrees
 70	a	C	2	2			0/0	2/2	3/3	f.68r agrees
 71	ne	C	7	15	e:4,ce:3,dan:1	conflict	3/7	4/8	5/5	f.68r agrees
@@ -79,7 +79,7 @@ _37	n	C	1	1		single attestation	1/1	0/0
 115	M.	C	3	3			2/2	1/1	1/1	f.68r agrees
 m	a	C	21	21			11/11	10/10		
 _2	pi	C	1	1		single attestation	0/0	0/0	1/1	added from f.67/f.68r alignment at f130b_L03/15
-_24	tur	C	1	1		single attestation	0/0	0/0	1/1	added from f.67/f.68r alignment at f129_L03/6
+_24	tu	C	1	1		single attestation	0/0	0/0	1/1	added from f.67/f.68r alignment at f129_L03/6
 25	va	C	1	1		single attestation	0/0	0/0	1/1	added from f.67/f.68r alignment at f129_L09/12
 _25	va	C	1	1		single attestation	0/0	0/0	1/1	added from f.67/f.68r alignment at f130a_L05/17
 32	ci	C	1	1		single attestation	0/0	0/0	1/1	added from f.67/f.68r alignment at f129_L12/23

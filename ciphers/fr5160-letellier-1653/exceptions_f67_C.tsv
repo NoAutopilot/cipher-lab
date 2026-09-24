@@ -29,13 +29,13 @@ f129	L03	2	l	C	f.68r agrees with key_1659
 f129	L03	3	l	M	f.68r has "l", key_1659 "le"
 f129	L03	4	s	C	f.68r agrees with key_1659
 f129	L03	5	de	M	conf M group; f.68r agrees with key_1659
-f129	L03	6	tur	C	code not in key_1659; f.68r gives "tur" at all 1 occurrences
-f129	L03	7	i	C	f.68r agrees with key_1659
+f129	L03	6	tu	C	code not in key_1659; f.68r gives "tu" at all 1 occurrences
+f129	L03	7	ri	C	f.68r "ri" = alternate key_1659 attests (modal "i")
 f129	L03	8	n	C	f.68r agrees with key_1659
 f129	L03	9	de	M	conf M group; f.68r agrees with key_1659
 f129	L03	10	la	C	f.68r agrees with key_1659
 f129	L03	11	ve	C	f.68r agrees with key_1659
-f129	L03	12	i	C	f.68r agrees with key_1659
+f129	L03	12	ri	C	f.68r "ri" = alternate key_1659 attests (modal "i")
 f129	L03	13	te	C	f.68r agrees with key_1659
 f129	L03	14	de	M	conf M group; f.68r agrees with key_1659
 f129	L03	16	s	C	f.68r agrees with key_1659
@@ -85,7 +85,7 @@ f129	L05	18	du	C	f.68r agrees with key_1659
 f129	L05	19	fi	C	f.68r agrees with key_1659
 f129	L05	20	l	C	f.68r agrees with key_1659
 f129	L05	21	s	C	f.68r "s" = alternate key_1659 attests (modal "je")
-f129	L06	1	a	M	f.68r has "a", key_1659 "qu"
+f129	L06	1	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
 f129	L06	2	le	C	f.68r agrees with key_1659
 f129	L06	3	n	C	f.68r agrees with key_1659
 f129	L06	4	d	M	f.68r has "d", key_1659 "e"
@@ -135,7 +135,7 @@ f129	L08	4	ti	C	f.68r "ti" = alternate key_1659 attests (modal "t")
 f129	L08	5	re	C	f.68r agrees with key_1659
 f129	L08	6	r	C	f.68r agrees with key_1659
 f129	L08	7	du	M	conf M group; f.68r agrees with key_1659
-f129	L08	8	ma	M	f.68r has "ma", key_1659 "ar"
+f129	L08	8	ma	C	f.68r agrees with key_1659
 f129	L08	9	ni	C	code not in key_1659; f.68r gives "ni" at all 2 occurrences
 f129	L08	10	e	C	f.68r agrees with key_1659
 f129	L08	11	me	C	f.68r agrees with key_1659
@@ -155,9 +155,9 @@ f129	L09	5	n	C	f.68r agrees with key_1659
 f129	L09	6	t	C	f.68r agrees with key_1659
 f129	L09	7	q	C	f.68r agrees with key_1659
 f129	L09	8	uil	C	f.68r "uil" = alternate key_1659 attests (modal "l")
-f129	L09	9	ar	M	f.68r has "ar", key_1659 "qu"
+f129	L09	9	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
 f129	L09	10	r	C	f.68r agrees with key_1659
-f129	L09	11	i	C	f.68r agrees with key_1659
+f129	L09	11	ri	C	f.68r "ri" = alternate key_1659 attests (modal "i")
 f129	L09	12	va	C	code not in key_1659; f.68r gives "va" at all 1 occurrences
 f129	L09	13	s	C	f.68r agrees with key_1659
 f129	L09	14	t	C	f.68r agrees with key_1659
@@ -179,9 +179,9 @@ f129	L10	16	t	C	f.68r agrees with key_1659
 f129	L10	17	n	C	f.68r agrees with key_1659
 f129	L10	18	ou	C	f.68r agrees with key_1659
 f129	L10	19	s	C	f.68r agrees with key_1659
-f129	L10	20	a	M	f.68r has "a", key_1659 "qu"
+f129	L10	20	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
 f129	L10	21	u	C	f.68r "u" = alternate key_1659 attests (modal "ou")
-f129	L10	22	i	C	f.68r agrees with key_1659
+f129	L10	22	ri	C	f.68r "ri" = alternate key_1659 attests (modal "i")
 f129	L10	23	0	C	f.68r "0" = alternate key_1659 attests (modal "i")
 f129	L11	1	on	C	f.68r "on" = alternate key_1659 attests (modal "n")
 f129	L11	2	s	C	f.68r agrees with key_1659
@@ -191,7 +191,7 @@ f129	L11	5	me	C	f.68r agrees with key_1659
 f129	L11	6	su	C	f.68r agrees with key_1659
 f129	L11	7	re	C	f.68r agrees with key_1659
 f129	L11	8	s	C	f.68r agrees with key_1659
-f129	L11	9	a	M	f.68r has "a", key_1659 "qu"
+f129	L11	9	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
 f129	L11	10	p	C	f.68r "p" = alternate key_1659 attests (modal "pr")
 f129	L11	11	re	M	conf M group; f.68r agrees with key_1659
 f129	L11	12	n	C	f.68r agrees with key_1659
@@ -224,8 +224,8 @@ f129	L12	16	le	C	f.68r agrees with key_1659
 f129	L12	17	u	C	f.68r "u" = alternate key_1659 attests (modal "ou")
 f129	L12	18	r	C	f.68r agrees with key_1659
 f129	L12	19	s	C	f.68r agrees with key_1659
-f129	L12	20	pr	C	f.68r agrees with key_1659
-f129	L12	21	i	C	f.68r agrees with key_1659
+f129	L12	20	p	C	f.68r "p" = alternate key_1659 attests (modal "pr")
+f129	L12	21	ri	C	f.68r "ri" = alternate key_1659 attests (modal "i")
 f129	L12	22	n	C	f.68r agrees with key_1659
 f129	L12	23	ci	M	conf M group; code not in key_1659; f.68r gives "ci" at all 1 occurrences
 f129	L12	24	pa	C	f.68r agrees with key_1659
@@ -237,8 +237,8 @@ f129	L13	5	s	C	f.68r agrees with key_1659
 f129	L13	6	t	C	f.68r agrees with key_1659
 f129	L13	7	re	C	f.68r agrees with key_1659
 f129	L13	8	s	C	f.68r agrees with key_1659
-f129	L13	9	pr	C	f.68r agrees with key_1659
-f129	L13	10	i	C	f.68r agrees with key_1659
+f129	L13	9	p	C	f.68r "p" = alternate key_1659 attests (modal "pr")
+f129	L13	10	ri	C	f.68r "ri" = alternate key_1659 attests (modal "i")
 f129	L13	11	s	C	f.68r agrees with key_1659
 f129	L13	12	se	C	f.68r agrees with key_1659
 f129	L13	13	n	C	f.68r agrees with key_1659
@@ -296,16 +296,16 @@ f129	L16	1	sa	M	f.68r has "sa", key_1659 "oi"
 f129	L16	2	n	C	f.68r agrees with key_1659
 f129	L16	3	ce	M	conf M group; f.68r agrees with key_1659
 f129	L16	5	q	C	f.68r agrees with key_1659
-f129	L16	6	uia	M	f.68r has "uia", key_1659 "qu"
+f129	L16	6	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
 f129	L16	7	ve	C	f.68r agrees with key_1659
 f129	L16	8	z	C	f.68r "z" = alternate key_1659 attests (modal "je")
-f129	L16	9	a	M	f.68r has "a", key_1659 "qu"
+f129	L16	9	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
 f129	L16	10	u	C	f.68r "u" = alternate key_1659 attests (modal "ou")
 f129	L16	11	s	C	f.68r agrees with key_1659
 f129	L16	12	s	C	f.68r agrees with key_1659
 f129	L16	13	y	C	f.68r agrees with key_1659
-f129	L16	14	a	M	f.68r has "a", key_1659 "qu"
-f129	L16	15	p	M	f.68r has "p", key_1659 "qu"
+f129	L16	14	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
+f129	L16	15	p	M	f.68r has "p", key_1659 "a"
 f129	L16	16	p	C	f.68r "p" = alternate key_1659 attests (modal "pr")
 f129	L16	17	l	M	f.68r has "l", key_1659 "pr"
 f129	L16	18	i	C	f.68r agrees with key_1659
@@ -320,7 +320,7 @@ f130a	L01	3	s	C	f.68r agrees with key_1659
 f130a	L01	4	oi	C	f.68r agrees with key_1659
 f130a	L01	5	n	C	f.68r agrees with key_1659
 f130a	L01	6	s	C	f.68r agrees with key_1659
-f130a	L01	7	a	M	f.68r has "a", key_1659 "qu"
+f130a	L01	7	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
 f130a	L01	8	pe	C	f.68r agrees with key_1659
 f130a	L01	9	ne	C	f.68r agrees with key_1659
 f130a	L01	10	t	C	f.68r agrees with key_1659
@@ -348,8 +348,8 @@ f130a	L02	11	p	M	conf M group; f.68r agrees with key_1659
 f130a	L02	12	ou	C	f.68r agrees with key_1659
 f130a	L02	13	r	C	f.68r agrees with key_1659
 f130a	L02	14	se	C	f.68r agrees with key_1659
-f130a	L02	15	ma	M	f.68r has "ma", key_1659 "ar"
-f130a	L02	16	i	C	f.68r agrees with key_1659
+f130a	L02	15	ma	C	f.68r agrees with key_1659
+f130a	L02	16	ri	C	f.68r "ri" = alternate key_1659 attests (modal "i")
 f130a	L02	17	e	M	conf M group; f.68r agrees with key_1659
 f130a	L02	18	r	M	conf M group; f.68r agrees with key_1659
 f130a	L03	1	ou	C	f.68r agrees with key_1659
@@ -389,21 +389,21 @@ f130a	L04	15	pu	C	f.68r agrees with key_1659
 f130a	L04	16	b	C	f.68r agrees with key_1659
 f130a	L04	17	i	C	f.68r agrees with key_1659
 f130a	L04	18	e	M	conf M group; f.68r agrees with key_1659
-f130a	L05	1	quema	M	f.68r has "quema", key_1659 "ar"
+f130a	L05	1	ma	C	f.68r agrees with key_1659
 f130a	L05	2	da	C	f.68r agrees with key_1659
 f130a	L05	3	mo	C	code not in key_1659; f.68r gives "mo" at all 2 occurrences
 f130a	L05	4	i	C	f.68r "i" = alternate key_1659 attests (modal "oi")
 f130a	L05	5	se	C	f.68r agrees with key_1659
 f130a	L05	6	l	C	f.68r agrees with key_1659
 f130a	L05	7	le	C	f.68r agrees with key_1659
-f130a	L05	8	a	M	f.68r has "a", key_1659 "qu"
+f130a	L05	8	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
 f130a	L05	9	re	C	f.68r agrees with key_1659
 f130a	L05	10	n	C	f.68r agrees with key_1659
 f130a	L05	11	du	C	f.68r agrees with key_1659
 f130a	L05	12	t	C	f.68r agrees with key_1659
 f130a	L05	13	re	C	f.68r agrees with key_1659
 f130a	L05	14	s	C	f.68r agrees with key_1659
-f130a	L05	15	ma	M	f.68r has "ma", key_1659 "ar"
+f130a	L05	15	ma	C	f.68r agrees with key_1659
 f130a	L05	16	u	C	f.68r "u" = alternate key_1659 attests (modal "ou")
 f130a	L05	17	va	C	code not in key_1659; f.68r gives "va" at all 1 occurrences
 f130a	L05	18	i	C	f.68r "i" = alternate key_1659 attests (modal "oi")
@@ -411,8 +411,8 @@ f130a	L06	1	so	M	f.68r has "so", key_1659 "i"
 f130a	L06	2	f	M	conf M group; f.68r agrees with key_1659
 f130a	L06	3	fi	C	f.68r agrees with key_1659
 f130a	L06	4	ce	C	f.68r agrees with key_1659
-f130a	L06	5	a	M	f.68r has "a", key_1659 "qu"
-f130a	L06	6	ma	M	f.68r has "ma", key_1659 "ar"
+f130a	L06	5	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
+f130a	L06	6	ma	C	f.68r agrees with key_1659
 f130a	L06	7	da	C	f.68r agrees with key_1659
 f130a	L06	8	mo	C	code not in key_1659; f.68r gives "mo" at all 2 occurrences
 f130a	L06	9	i	C	f.68r "i" = alternate key_1659 attests (modal "oi")
@@ -422,7 +422,7 @@ f130a	L06	12	le	C	f.68r agrees with key_1659
 f130a	L06	13	d	C	f.68r agrees with key_1659
 f130a	L06	14	r	C	f.68r agrees with key_1659
 f130a	L06	15	le	C	f.68r agrees with key_1659
-f130a	L06	16	a	M	f.68r has "a", key_1659 "qu"
+f130a	L06	16	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
 f130a	L06	17	n	C	f.68r agrees with key_1659
 f130a	L07	1	ssa	M	f.68r has "ssa", key_1659 "oi"
 f130a	L07	2	s	C	f.68r agrees with key_1659
@@ -462,19 +462,19 @@ f130b	L02	17	re	C	f.68r agrees with key_1659
 f130b	L03	1	oi	C	f.68r agrees with key_1659
 f130b	L03	2	t	C	f.68r agrees with key_1659
 f130b	L03	3	ve	M	conf M group; f.68r agrees with key_1659
-f130b	L03	4	i	C	f.68r agrees with key_1659
+f130b	L03	4	ri	C	f.68r "ri" = alternate key_1659 attests (modal "i")
 f130b	L03	5	ta	C	f.68r agrees with key_1659
 f130b	L03	6	b	C	f.68r agrees with key_1659
 f130b	L03	7	le	C	f.68r agrees with key_1659
 f130b	L03	8	si	C	f.68r agrees with key_1659
 f130b	L03	9	le	C	f.68r agrees with key_1659
-f130b	L03	10	ma	M	f.68r has "ma", key_1659 "ar"
+f130b	L03	10	ma	C	f.68r agrees with key_1659
 f130b	L03	11	r	C	f.68r agrees with key_1659
 f130b	L03	12	q	C	f.68r agrees with key_1659
 f130b	L03	13	s	C	f.68r agrees with key_1659
 f130b	L03	14	de	C	f.68r agrees with key_1659
 f130b	L03	15	pi	C	code not in key_1659; f.68r gives "pi" at all 1 occurrences
-f130b	L03	16	a	M	f.68r has "a", key_1659 "qu"
+f130b	L03	16	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
 f130b	L03	17	ne	C	f.68r agrees with key_1659
 f130b	L03	18	s	C	f.68r "s" = alternate key_1659 attests (modal "je")
 f130b	L04	1	de	C	f.68r agrees with key_1659
@@ -539,7 +539,7 @@ f130b	L07	6	qu	C	f.68r "qu" = alternate key_1659 attests (modal "ques")
 f130b	L07	7	de	C	f.68r agrees with key_1659
 f130b	L07	8	s	C	f.68r agrees with key_1659
 f130b	L07	9	y	C	f.68r agrees with key_1659
-f130b	L07	10	a	M	f.68r has "a", key_1659 "qu"
+f130b	L07	10	a	C	f.68r agrees with the f.67-scoped value "a" (key_1659 f.86/f.88 "qu")
 f130b	L07	11	p	C	f.68r "p" = alternate key_1659 attests (modal "pr")
 f130b	L07	12	p	C	f.68r "p" = alternate key_1659 attests (modal "pr")
 f130b	L07	13	i	C	f.68r agrees with key_1659
