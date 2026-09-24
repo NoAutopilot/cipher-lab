@@ -104,7 +104,9 @@ def audits(r):
     return 1 if n is not None else 0
 rungs = {i: [] for i in range(6)}
 for r in results:
-    if r["kind"] in ("solve", "reading") and nclass(r) is not None:
+    # Any classed reading sits on the ladder, whatever its kind label (a recovery by alignment that reached N4 is a
+    # unique solve by the policy; fix of 24 Sept 2026 13:28 UTC). Catches (N0/N1 found-solved) stay on their rung too.
+    if nclass(r) is not None and r["kind"] not in ("dataset", "correction", "negative"):
         rungs[nclass(r)].append(r)
 def short(t, n=70):
     return t if len(t) <= n else t[:n-1].rstrip(" ,;:") + "…"
