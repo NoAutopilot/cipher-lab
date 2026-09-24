@@ -156,3 +156,44 @@ blind pass B on this target's two leaves was **not started: capped before the re
 $3.5 a leaf for pass A+B; what was left of G's $8 cap after the atlas was less than one leaf). Status unchanged
 (blocked). Suggestion: a Sonnet pass B given only `contact_sheet.png` and the conflict table, then an Opus pass A, one
 leaf (f.176, 12 short runs) first, gate 80%.
+
+## Calibrated re-run f.176 (24 Sept 2026, LANE R5 G2)
+
+Worker: LANE R5 G2 (Opus, session_01ETeZfwyk93CjzP7ygFWdF7). Leaf f.176 only, disk only (no fetches; images from F1).
+Status unchanged: **blocked** (sign identification).
+
+- **Passes, against G's atlas** (`tools/keys/key60_atoms.md`, `tools/keys/key60_atlas/contact_sheet.png`, the five
+  hand-specific confusions +o/to, 20/ro, ++/ll, φ/f, X+/X++): pass A (Opus) `f176_passA_atlas.tsv`, 172 signs in 12 runs;
+  blind pass B (one Sonnet subagent, given only the contact sheet, the atom table, the confusions and each run's position
+  by its clear-text neighbours) `f176_passB_atlas.tsv`, 147 signs, 22 flagged.
+- **Agreement** (`tools/reconcile_passes.py`, `recon_f176_atlas/`): **78/196 columns = 39.8%** (F1 on the same leaves
+  without the atlas: 37.5%). The atlas did not lift agreement. Runs 3, 7 and 10-12 align reasonably; B read run 8 short
+  (6 signs vs A's 32) and put a clear-text stretch into run 9, so part of the gap is run segmentation, but the runs that do
+  align still differ sign by sign on the cursive forms (∂/ꝺo, 4/24/‡, o/∝, ꝑ/p, # /++).
+- **Key applied** (brief step 2): `decode.json` second job -> `f176_reading_atlas.txt`, `f176_reading_atlas_tokens.tsv`
+  (pass A's sign where the passes differ). **Tokens 191: H 43, M 125, U 23, C 0, S 0, I 0.** `decode_key.py --check` exit 0.
+  Nothing reads continuously; run 3 again gives `s b n s s a d e u r` (F1's [l'a]mbassadeur anchor, grade I, unchanged).
+- **Judge** (`specs/fr3985-nevers-f176.json`, judge block language fr / fr16 corpus, min_word_cover 0.5; script
+  `f176_judge.py --noise 0.60 --seeds 5`, full output `f176_judge_out.txt`):
+
+  | text (12 runs, same run lengths) | letters | language score (mean log10 4-gram/letter) | word cover | verdict |
+  |---|---|---|---|---|
+  | target, decoded f.176 draft | 244 | **-1.689** | 0.758 | FAIL (language) |
+  | matched control: fr16 French, enciphered with key60, 60% sign noise, decoded, 5 seeds | 617-716 | -1.14 to -1.30 | 0.80-0.86 | FAIL (language) x5 |
+  | control at 0% noise (same pipeline, 3 seeds, dry run on pass A lengths) | 209-215 | -1.01 to -1.18 | 0.86-0.94 | FAIL (language) x3 |
+  | null: the target's own decoded tokens shuffled across the leaf, 5 seeds | 244 | -1.64 to -1.78 | 0.72-0.75 | FAIL x5 |
+  | judge thresholds for N=244 | | null p99 -1.803, real-text p05 -0.906 | real median 0.947 | |
+
+  Reading of the table: the spec's judge cannot PASS twelve disjoint fragments even when the decode is perfect (0%-noise
+  control fails its real-text 5th-percentile gate), so the target's FAIL alone says little. What discriminates is that the
+  target scores inside its own shuffled null (-1.69 vs -1.64..-1.78) and well below the noisy control (-1.14..-1.30), i.e.
+  the decoded draft carries no more French order than its own tokens in random order. Caveat on the control: random
+  replacement signs include word and syllable values, which inflates its letter count (617-716 vs 244); a stricter noise
+  model (letter-valued replacements only) is a one-line change in `f176_judge.py`. Control plaintext is fr16 letters, not
+  the clear text of f.176 (not transcribed on disk) -- a deviation from the brief.
+- **Conclusion (cryptanalytic, with control):** with the atlas as the only calibration, two passes still agree on 40% of
+  signs and the key60 decode of the draft is indistinguishable from shuffled tokens; the blocker remains sign identification
+  for this copyist, not the key. Disagreements were not settled on the image (gate < 80%).
+- Suggestion (one line): extend the atlas from c.264's lower half and c.266-268 (brief G's own suggestion) and add a
+  fragment-aware judge mode (score each run in its clear-text context) before any further pass on this hand.
+- Hosts: none (disk only). Tooling: a local headless-Chromium crop/zoom helper in the scratchpad (no PIL in the container).

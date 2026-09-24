@@ -1,11 +1,98 @@
-{"target": "ciphers/fr3985-nevers-revol-1593",
+{
+ "target": "ciphers/fr3985-nevers-revol-1593",
  "note": "Key no.60 applied to fr.3985 f.88 (21 Aug 1593) and f.176 (2 Sept 1593), LANE R5 F1, 24 Sept 2026.",
  "jobs": [
-  {"ciphertext": "ciphertext.tsv", "key": "key.tsv", "format": "tsv", "style": "spaced",
-   "uncertain_conf": ["M"], "unknown_values": ["", "?"], "unknown_if_q": true, "null_values": ["NULL"],
-   "reading": "reading.txt", "tokens": "reading_tokens.tsv",
-   "header": ["# Mechanical application of key no.60 (key.tsv) to ciphertext.tsv (pass A reconciled against blind pass B).",
-              "# Grades: H sign read the same by both passes and single-valued in key60; M uncertain sign or two-valued key entry; U sign not in key60 as read.",
-              "# tokens {total}: {grades_sorted}"],
-   "token_columns": [["line","line"],["pos","pos"],["sign","raw"],["value","value"],["grade","grade"]]}
- ]}
+  {
+   "ciphertext": "ciphertext.tsv",
+   "key": "key.tsv",
+   "format": "tsv",
+   "style": "spaced",
+   "uncertain_conf": [
+    "M"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "unknown_if_q": true,
+   "null_values": [
+    "NULL"
+   ],
+   "reading": "reading.txt",
+   "tokens": "reading_tokens.tsv",
+   "header": [
+    "# Mechanical application of key no.60 (key.tsv) to ciphertext.tsv (pass A reconciled against blind pass B).",
+    "# Grades: H sign read the same by both passes and single-valued in key60; M uncertain sign or two-valued key entry; U sign not in key60 as read.",
+    "# tokens {total}: {grades_sorted}"
+   ],
+   "token_columns": [
+    [
+     "line",
+     "line"
+    ],
+    [
+     "pos",
+     "pos"
+    ],
+    [
+     "sign",
+     "raw"
+    ],
+    [
+     "value",
+     "value"
+    ],
+    [
+     "grade",
+     "grade"
+    ]
+   ]
+  },
+  {
+   "ciphertext": "recon_f176_atlas/ciphertext_draft.tsv",
+   "key": "key.tsv",
+   "format": "tsv",
+   "style": "spaced",
+   "uncertain_conf": [
+    "M"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "unknown_if_q": true,
+   "null_values": [
+    "NULL"
+   ],
+   "reading": "f176_reading_atlas.txt",
+   "tokens": "f176_reading_atlas_tokens.tsv",
+   "header": [
+    "# key no.60 (key.tsv) applied to f.176 atlas passes A+B (LANE R5 G2, 24 Sept 2026), recon_f176_atlas/ciphertext_draft.tsv (pass A's sign where the passes differ).",
+    "# Grades: H both passes agree and single-valued in key60; M disagreement, flagged, or two-valued; U not in key60. Mechanical, not a reading.",
+    "# tokens {total}: {grades_sorted}"
+   ],
+   "token_columns": [
+    [
+     "line",
+     "line"
+    ],
+    [
+     "pos",
+     "pos"
+    ],
+    [
+     "sign",
+     "raw"
+    ],
+    [
+     "value",
+     "value"
+    ],
+    [
+     "grade",
+     "grade"
+    ]
+   ]
+  }
+ ]
+}

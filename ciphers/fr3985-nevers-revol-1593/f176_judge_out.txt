@@ -1,0 +1,55 @@
+TARGET letters=244 runs=12 rc=1
+FAIL language: score=-1.689, null_p99=-1.803, real_p05=-0.906, real_median=-0.788, mode=both, N=244
+ok   words: cover=0.758, min=0.5, real_text_median_cover=0.947
+FAIL - fr3985-nevers-f176 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+CONTROL seed=1 noise=0.60 letters=666 rc=1
+FAIL language: score=-1.183, null_p99=-1.882, real_p05=-0.862, real_median=-0.781, mode=both, N=666
+ok   words: cover=0.856, min=0.5, real_text_median_cover=0.944
+FAIL - fr3985-nevers-f176 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+CONTROL seed=2 noise=0.60 letters=646 rc=1
+FAIL language: score=-1.301, null_p99=-1.875, real_p05=-0.881, real_median=-0.78, mode=both, N=646
+ok   words: cover=0.797, min=0.5, real_text_median_cover=0.946
+FAIL - fr3985-nevers-f176 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+CONTROL seed=3 noise=0.60 letters=716 rc=1
+FAIL language: score=-1.137, null_p99=-1.872, real_p05=-0.866, real_median=-0.774, mode=both, N=716
+ok   words: cover=0.863, min=0.5, real_text_median_cover=0.95
+FAIL - fr3985-nevers-f176 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+CONTROL seed=4 noise=0.60 letters=617 rc=1
+FAIL language: score=-1.278, null_p99=-1.855, real_p05=-0.874, real_median=-0.786, mode=both, N=617
+ok   words: cover=0.827, min=0.5, real_text_median_cover=0.947
+FAIL - fr3985-nevers-f176 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+CONTROL seed=5 noise=0.60 letters=626 rc=1
+FAIL language: score=-1.256, null_p99=-1.856, real_p05=-0.88, real_median=-0.786, mode=both, N=626
+ok   words: cover=0.827, min=0.5, real_text_median_cover=0.946
+FAIL - fr3985-nevers-f176 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+NULL (target tokens shuffled) seed=1 rc=1
+FAIL language: score=-1.722, null_p99=-1.803, real_p05=-0.906, real_median=-0.788, mode=both, N=244
+ok   words: cover=0.746, min=0.5, real_text_median_cover=0.947
+FAIL - fr3985-nevers-f176 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+NULL (target tokens shuffled) seed=2 rc=1
+FAIL language: score=-1.747, null_p99=-1.803, real_p05=-0.906, real_median=-0.788, mode=both, N=244
+ok   words: cover=0.721, min=0.5, real_text_median_cover=0.947
+FAIL - fr3985-nevers-f176 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+NULL (target tokens shuffled) seed=3 rc=1
+FAIL language: score=-1.778, null_p99=-1.803, real_p05=-0.906, real_median=-0.788, mode=both, N=244
+ok   words: cover=0.725, min=0.5, real_text_median_cover=0.947
+FAIL - fr3985-nevers-f176 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+NULL (target tokens shuffled) seed=4 rc=1
+FAIL language: score=-1.714, null_p99=-1.803, real_p05=-0.906, real_median=-0.788, mode=both, N=244
+ok   words: cover=0.75, min=0.5, real_text_median_cover=0.947
+FAIL - fr3985-nevers-f176 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+NULL (target tokens shuffled) seed=5 rc=1
+FAIL language: score=-1.639, null_p99=-1.803, real_p05=-0.906, real_median=-0.788, mode=both, N=244
+ok   words: cover=0.742, min=0.5, real_text_median_cover=0.947
+FAIL - fr3985-nevers-f176 (a PASS is a gate for a verifier, not a reading; rule 10)
+
