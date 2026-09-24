@@ -3,15 +3,24 @@
 
   python3 ciphers/la-garde-1577/solve_l2.py --corpus FR16.txt --control-plain PLAIN.txt [--seed 3]
 
+L3 rerun (24 Sept 2026) on the reconciled v2 transcription, treating overlined/marked numerals as signs distinct
+from their plain form (L1's transcription under-recorded these marks -- see NOTES 'L3'):
+
+  python3 ciphers/la-garde-1577/solve_l2.py --corpus FR16.txt --control-plain PLAIN.txt \
+      --ciphertext-6179 ciphertext_6179_v2.tsv --ciphertext-6467 ciphertext_6467_v2.tsv --mark-signs
+
 Tests (all offline; corpus = tools/data/fr16 Catherine de Medicis letters, control prose = Marguerite de Valois,
 Lettres inedites, 1580 letter, which is not in the training corpus):
   A  monoalphabetic / homophonic substitution (tools/homophonic_anneal.py), control with 0 and 8 percent token
      noise (the transcription's M rows), then the target 6179 (185 tokens, 24 signs).
   B  periodic polyalphabetic (Vigenere and Beaufort, periods 1-14) over fixed 24-letter alphabets in which number
-     n is the n-th letter: control enciphered with a random period-5 key, then the target.
+     n is the n-th letter: control enciphered with a random period-5 key, then the target. Always uses the base
+     digit value (marks have no numeric meaning under this design), so --mark-signs does not change test B.
   C  crib: the 6467 marginal note "Justifier le faict du grand" beside run 1, tested for a consistent many-to-one
      sign->letter map with up to 6 nulls.
-Prints one line per test; exits 0. Signs: overline/loop marks stripped, '07' kept distinct from '7'.
+Prints one line per test; exits 0. Default: overline/loop marks stripped, '07' kept distinct from '7'.
+--mark-signs (test A/C only): a marked numeral ('16^', '4~') is a sign distinct from its plain form; a
+free-standing '[mark]' row becomes its own sign 'MARK' instead of being dropped.
 """
 import argparse, csv, os, random, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -22,13 +31,22 @@ ALPHS = {"a24": "abcdefghiklmnopqrstuxyz&", "a24rev": "&zyxutsrqponmlkihgfedcba"
          "a23": "abcdefghiklmnopqrstuxyz"}
 
 
-def signs(fn):
+def signs(fn, mark_signs=False):
     out = []
-    for r in csv.DictReader(open(os.path.join(HERE, fn)), delimiter="\t"):
-        g = r["group"].replace("[mark]", "").rstrip("^~")
+    for r in csv.DictReader(open(fn if os.path.isabs(fn) else os.path.join(HERE, fn)), delimiter="\t"):
+        raw = r["group"]
+        if mark_signs:
+            g = "MARK" if raw.startswith("[mark]") and raw == "[mark]" else raw.replace("[mark]", "")
+        else:
+            g = raw.replace("[mark]", "").rstrip("^~")
         if g:
             out.append(g)
     return out
+
+
+def base_signs(fn):
+    """Plain digit value only, for test B's numeric alphabet (marks are never numeric)."""
+    return signs(fn, mark_signs=False)
 
 
 def share(dec, truth):
@@ -102,10 +120,14 @@ def main():
     ap.add_argument("--corpus", required=True)
     ap.add_argument("--control-plain", required=True)
     ap.add_argument("--seed", type=int, default=3)
+    ap.add_argument("--ciphertext-6179", default="ciphertext_6179.tsv")
+    ap.add_argument("--ciphertext-6467", default="ciphertext_6467.tsv")
+    ap.add_argument("--mark-signs", action="store_true",
+                     help="treat a marked numeral ('16^', '4~') as a sign distinct from its plain form (test A/C)")
     a = ap.parse_args()
     model = Model([open(a.corpus, encoding="utf-8").read()], order=3)
     rng = random.Random(a.seed)
-    tgt = signs("ciphertext_6179.tsv")
+    tgt = signs(a.ciphertext_6179, a.mark_signs)
     N, K = len(tgt), len(set(tgt))
     ctrl_text = open(a.control_plain, encoding="utf-8").read()
 
@@ -126,10 +148,10 @@ def main():
     nums = [(alpha.index(ch) + key[i % 5]) % 24 + 1 for i, ch in enumerate(p)]
     r = poly_best(nums, model)
     print(f"B control period 5 a24: best {r[2]} sign {r[3]} period {r[4]}: {share(r[5], p):.1%}  {r[5][:60]}")
-    run1 = signs("ciphertext_6467.tsv")[:27]
+    run1 = signs(a.ciphertext_6467, a.mark_signs)[:27]
     for c in ("iustifierlefaictdugrand", "iustiffierlefaictdugrand"):
         print(f"C crib {c} in 6467 run 1 (27 signs, <=6 nulls): {'fits' if crib_fits(run1, c) else 'no consistent map'}")
-    tn = [int(x) for x in tgt]
+    tn = [int(x) for x in base_signs(a.ciphertext_6179)]
     r = poly_best(tn, model)
     print(f"B target 6179: best {r[2]} sign {r[3]} period {r[4]} score/tok {r[1]/N:.3f}  {r[5][:60]}")
 
