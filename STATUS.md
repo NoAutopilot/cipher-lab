@@ -99,7 +99,7 @@ targets, Eckert and Thurloe. 29 workers collected (LEDGER rows carry session ids
 **Classes (all in the targets' AUDIT.md; status.json results rows match):**
 - Gramont f.29r (Villandry) and f.30 (Francis I), Rome, 20 May 1530: N3, two audits each; blind second readers done and
   applied (f.30 H 1500 / M 241 / U 232). N4 decision (05:14): stays N3 until two families come back negative: Camusat
-  tract ff.91-217 plus versos (LANE G worker running) and a DECODE search (LANE N, queued). Then a fresh N4-decision
+  tract ff.91-217 plus versos (read by LANE G 05:37: negative) and a DECODE search (LANE N, queued; the only gap left). Then a fresh N4-decision
   verifier; nothing else to search. SO-GRAMONT-F29R and SO-GRAMONT-F30 prompts queued.
 - Danzay to the Cardinal of Lorraine, Copenhagen, 27 Jan 1557 (fr.20140 f.35r-36r): N3, two audits plus the f.36r
   verifier; f.35 second-reader changes applied (H 509 / M 59 / U 70). Delavaud 1911 and Daussy 2015 read, negative;
@@ -110,7 +110,7 @@ targets, Eckert and Thurloe. 29 workers collected (LEDGER rows carry session ids
 
 **Next, in order (for whoever runs verification):** (1) when LANE N writes 'DECODE search' into the Danzay AUDIT.md,
 start a fresh N4-decision verifier for Danzay; (2) when LANE G's Camusat ff.91-217 read and the DECODE search are both
-in the Gramont AUDIT.md, the same for Gramont; (3) a small Opus adjudicator for the one f.36r proposal; (4) second-opinion
+in the Gramont AUDIT.md, the same for Gramont; (3) f.36r adjudicator started 06:20 (session_01Q61FpWAZV89SDiRpFbGCje, $5 cap; collect it); (4) second-opinion
 PRs [SO-*]: check every citation as a lead, log unconfirmed ones in AUDIT.md; (5) at N4, outreach gate 2 still needs the
 JSTOR-QUEUE.tsv rows for the target answered or waived by the owner before any draft goes out.
 
