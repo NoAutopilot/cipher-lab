@@ -1,5 +1,5 @@
 page	line	idx	group	doubt	plain	note
-1	29	1	RUN	0	clear before: 'jay veu la' | print p.141: 'j'ay veu la poursuyte du duc Hans-Casimir pour avoir remboursement de quelque argent a luy deu a raison par vous alleguee' | clear after: 'a raison par vous alleguee'	anchor example from brief; 57 groups read for 60-letter span
+1	29	0	RUN	0	clear before: 'jay veu la' | print p.141: 'j'ay veu la poursuyte du duc Hans-Casimir pour avoir remboursement de quelque argent a luy deu a raison par vous alleguee' | clear after: 'a raison par vous alleguee'	anchor example from brief; 57 groups read for 60-letter span
 1	30	1	106	0	d	
 1	30	2	120	0	u	
 1	30	3	3	0	d	
@@ -57,7 +57,7 @@ page	line	idx	group	doubt	plain	note
 1	33	2	26	0	l	
 1	33	3	80	0	u	
 1	33	4	8	0	y	last group of run (matches brief's example, immediately followed by clear 'a raison par vous alleguee'); count: 57 groups read vs 60 letters in print span, positional 1:1 mapping breaks down near the end (word 'deu' not individually resolved) -- treat idx 50-57 as low-confidence position only
-2	14	1	RUN	0	clear before: '...tournera au grand bien et honneur de mon maison.' | print p.142: 'Quant a l'affaire de Besancon, j'attendray ce que vous y aurez davantaige besoingne' | clear after: 'jattendray ce que vous y aurez davantaige besoingne'	39 groups read for a 24-letter span (Besancon); marginal note reads (abbreviated) 'quant a l'affaire de Besancon'
+2	14	0	RUN	0	clear before: '...tournera au grand bien et honneur de mon maison.' | print p.142: 'Quant a l'affaire de Besancon, j'attendray ce que vous y aurez davantaige besoingne' | clear after: 'jattendray ce que vous y aurez davantaige besoingne'	39 groups read for a 24-letter span (Besancon); marginal note reads (abbreviated) 'quant a l'affaire de Besancon'
 2	15	1	70	0	q	
 2	15	2	89	0	u	
 2	15	3	13	0	a	
@@ -97,7 +97,7 @@ page	line	idx	group	doubt	plain	note
 2	16	17	130	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
 2	16	18	112	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
 2	16	19	127	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
-3	2	1	RUN	0	clear before: '...que vous portez a nos bien. Mais du Conte de Schwartzbourg:' | print pp.142: 'je n'ay jusques icy peu apercevoir en luy que une sincere intention, et qu'il desire de veoir les' | clear after (mid-run insert): 'choses reduictes de bonne paix et union'	margin gloss 'le dit conte desire paix et union'; 94 groups read for this 78-letter span
+3	2	0	RUN	0	clear before: '...que vous portez a nos bien. Mais du Conte de Schwartzbourg:' | print pp.142: 'je n'ay jusques icy peu apercevoir en luy que une sincere intention, et qu'il desire de veoir les' | clear after (mid-run insert): 'choses reduictes de bonne paix et union'	margin gloss 'le dit conte desire paix et union'; 94 groups read for this 78-letter span
 3	3	1	3	0	j	
 3	3	2	124	0	e	
 3	3	3	113	0	n	
@@ -192,8 +192,8 @@ page	line	idx	group	doubt	plain	note
 3	7	14	23	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
 3	7	15	28	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
 3	7	16	4	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
-3	7	17	RUN	0	CLEAR INSERT (not enciphered): ms 'choses reduictes de bonne paix et union' = print p.142 'les choses reduictes en bonne paix et union' -- separates run A (above) from run B (below)	
-3	7	18	RUN	0	clear before: 'choses reduictes de bonne paix et union.' | print p.142-143: 'Le Conte Gunther de Schwartzbourg est esmerveille de veoir' | clear after: 'noz affaires icy en si bon estat'	35 groups read for this 50-letter span (deficit, opposite of run A -- consistent with 'Gunther'/'Schwartzbourg' as name-level codes)
+3	7	0	RUN	0	CLEAR INSERT (not enciphered): ms 'choses reduictes de bonne paix et union' = print p.142 'les choses reduictes en bonne paix et union' -- separates run A (above) from run B (below)	
+3	7	0	RUN	0	clear before: 'choses reduictes de bonne paix et union.' | print p.142-143: 'Le Conte Gunther de Schwartzbourg est esmerveille de veoir' | clear after: 'noz affaires icy en si bon estat'	35 groups read for this 50-letter span (deficit, opposite of run A -- consistent with 'Gunther'/'Schwartzbourg' as name-level codes)
 3	7	17	4	0	l	
 3	7	18	128	0	e	
 3	7	19	155	0	c	
@@ -229,7 +229,7 @@ page	line	idx	group	doubt	plain	note
 3	9	6	4	0	e	
 3	9	7	109	0	s	
 3	9	8	120	0	m	
-3	16	6	RUN	0	clear before: '...la chose se pourroit faire' | print p.143: 'a raisonable prix, et que je pourrois avoir certains termes de payement, comme de demy-an en demy-an,' | clear after: 'vous me ferez plaisir de vous enquester'	margin '4' = 'quant a l'affaire du Culembourg...' (topic gloss); 95 groups read for this 80-letter span
+3	16	0	RUN	0	clear before: '...la chose se pourroit faire' | print p.143: 'a raisonable prix, et que je pourrois avoir certains termes de payement, comme de demy-an en demy-an,' | clear after: 'vous me ferez plaisir de vous enquester'	margin '4' = 'quant a l'affaire du Culembourg...' (topic gloss); 95 groups read for this 80-letter span
 3	16	6	125	0	a	
 3	16	7	3	0	r	
 3	16	8	10	0	a	
