@@ -259,3 +259,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T09:53Z	session_017kdHb7pkSvUhcP53BoN6Nm	Retrospective d (Sonnet, cap $6)	31 rows since retro-apply c	RETRO-2026-09-24d.md
 | 211 | 24 Sep | cipher-lab | Lookups: fr5160 f.68 vs f.67 (for LANE V2), fr.2751 f.116r retry, Paget M26 pin | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | lookup, Sonnet cap $4, lane-g2-p | running, session_01NpaUwYa9n5epPYp6nPEXid |
 | 212 | 24 Sep | cipher-lab | M29 Portugais 33 São Vicente 1667 capture + two passes | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | transcription, Sonnet cap $6, lane-g2-q | running, session_01P2VKVtBiwy1KJTxBZyrAqc |
+| 213 | 24 Sep | cipher-lab | V5b re-class fr5160 f.67 after f.68r clear text | LANE V2 (session_017QzVuGiZ8wFQY6HZfUxH1q) | verifier, Opus cap $3, lane-v2-common | running, session_01E9HY3MNQsa6D79j4mh6DHD |
+| 214 | 24 Sep | cipher-lab | A3 second audit Saxony 53 and 57 | LANE V2 (session_017QzVuGiZ8wFQY6HZfUxH1q) | verifier second audit, Opus cap $8, lane-v2-common | running, session_018rKcVL6R7nkbwNXkoPdrgu |
