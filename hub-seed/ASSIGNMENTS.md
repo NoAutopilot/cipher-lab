@@ -123,3 +123,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 98 | 24 Sep | cipher-lab | LANE T L: P4 Stamford keyed reading from the page-image transcription | LANE T (cipher-lab-7a child) | ciphers/thurloe-printed/briefs/lane-T-L.md, solver follow-up, Sonnet cap $5 | running, session_019TPZ6GtoCcyhoqUABsKzxV |
 | 99 | 24 Sep | cipher-lab | Gallica fetcher: Brienne canvas 173 passes, then Camusat tract ff.1-90 dense read (Gramont) | LANE G | access, Sonnet cap $10 | running, session_01XK6rphje8CaPQYPNShQ8TD |
 | 100 | 24 Sep | cipher-lab | Paleologue finisher: write up full-text rerun, finish calibration/crib runs | LANE G | solver, Opus cap $8 | running, session_01NbonkK5UiMJJGcdF75R6tC |
+2026-09-24T04:43Z	session_01Xb8nxPKKD8dbiDPR21usby	DECODE fetch worker (Sonnet, cap $8)	intercepted-royalist-1646 / DECODE 8725	extend decode_browser_login.js --fetch; documents, images, siblings; NOTES

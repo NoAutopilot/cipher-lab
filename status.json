@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026, 03:37 UTC",
+ "updated": "24 Sep 2026 04:43 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -615,6 +615,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sept 2026 04:40 UTC",
+   "what": "DECODE login works through a real browser (tools/decode_browser_login.js); the user name is the plain site user name. Record 8725 (BL Add MS 72438 f.104) is marked Decrypted on DECODE; a worker is fetching its documents. ASKS row 1 closed."
+  },
   {
    "when": "24 Sep, 03:37",
    "what": "Lanes running about 24 workers. Thurloe: Birch printed the decipherment beside most of the 23 letters, so the lane is turning into a dataset and a correction rather than solves; the Blake letter of 12 June 1655 aligned with its printed decipherment. Danzay f.36 continuation reads with the same key (one cipher line). Gramont f.30 with the verifier. A cross-lane retrospective is running on 33 ledger rows; JSTOR moved off the class gate to a queue for the owner's local runner."
@@ -1255,5 +1259,5 @@
    "focus": "check-solved on the 26 new catalogue rows, German, Dutch, Nordic, UK and US catalogues, detector round 3"
   }
  ],
- "headline": "Two unique solves stand at N3 after two audits (Gramont 1530, Eckert 1864); a third (Danzay 1557) is under its second audit; three findings handed on; about 24 workers live in four lanes."
+ "headline": "Three unique solves stand at N3 after two audits (Gramont 1530 f.29r, Eckert 1864 E4/E5, Danzay 1557 f.35-36); Gramont f.30 and Brienne 1659 readings are under audit; DECODE login works as of 04:40 UTC 24 Sept; outside second opinions arrive as [SO-...] pull requests."
 }
