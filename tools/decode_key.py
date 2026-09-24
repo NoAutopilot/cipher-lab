@@ -45,6 +45,7 @@ decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   null_values ["NULL", "null"]; empty_is_null (false: '' is unknown); unknown_values ["", "?"];
   unknown_if_q  (a value containing '?' is unknown); unkeyed_value ('?'); unkeyed_grade ('U'); default_grade ('H')
   uncertain_conf (["M","m","L","l","low","?"]); word_values (list: values shown <w> in the spaced style)
+  clear_prefix  a tsv sign starting with this prefix is a clear word (e.g. '=' for '=nous', LANE R passes)
   nonsign       list of tsv signs that are not cipher tokens (punctuation, a word-break marker): kept in the index,
                 not graded; with it, concat prints them and prints word_sep (e.g. '/') as a space
   defaults (object merged under every job), m_sources, m_words, votes {file, value_column, word_prefix, strip_prefixes}, voted_grade, unvoted_grade, word_glossed_grade
@@ -143,6 +144,9 @@ def load_tsv(path, job):
         if ln not in seen:
             seen.add(ln); recs.append(dict(folio=fo, line=l2, label=label, pos=None, kind='line'))
         t = r[si]; conf = r[ki] if ki is not None and ki < len(r) else ''
+        cp = job.get('clear_prefix')
+        if cp and t.startswith(cp) and len(t) > len(cp):
+            t = 'w:' + t[len(cp):]
         recs.append(dict(folio=fo, line=l2, label=label, pos=int(r[pi]), raw=t, sign=t, conf=conf, gloss='',
                          kind='dot' if t == '.' or t in job.get('nonsign', []) else
                          'clear' if clear_word(t) is not None else 'sign'))

@@ -1,0 +1,1306 @@
+briefnr	line	idx	token	plain	block	status
+4613	4613_L01	1	w:Monsieur			clear-unmatched
+4613	4613_L01	2	w:depuis			clear-unmatched
+4613	4613_L01	3	w:nostre			clear-unmatched
+4613	4613_L01	4	w:derniere			clear-unmatched
+4613	4613_L01	5	w:lettre			clear-unmatched
+4613	4613_L01	6	w:par			clear-unmatched
+4613	4613_L01	7	w:la			clear-unmatched
+4613	4613_L01	8	w:quel			clear-unmatched
+4613	4613_L01	9	w:nous			clear-unmatched
+4613	4613_L01	10	w:vous			clear-unmatched
+4613	4613_L01	11	w:avons			clear-unmatched
+4613	4613_L01	12	w:mande?			clear-unmatched
+4613	4613_L02	1	81	e	e	match
+4613	4613_L02	2	1	n	n	match
+4613	4613_L02	3	19	q	q	match
+4613	4613_L02	4	36	u	u	match
+4613	4613_L02	5	82	e	e	match
+4613	4613_L02	6	iii	l		word
+4613	4613_L02	7	112	l	l	match
+4613	4613_L02	8	88	e	f	conflict
+4613	4613_L02	9	31	t	t	match
+4613				e		plain-only
+4613	4613_L02	10	21	r	r	match
+4613	4613_L02	11	61		a	null
+4613	4613_L02	12	71		c	null
+4613	4613_L02	13	72	m	c	conflict
+4613	4613_L02	14	84	e	e	match
+4613				s		plain-only
+4613	4613_L02	15	2	n	n	match
+4613	4613_L02	16	61	o	a	conflict
+4613	4613_L02	17	37	u	u	match
+4613	4613_L02	18	26	s	s	match
+4613	4613_L02	19	85	e	e	match
+4613	4613_L02	20	27	s	s	match
+4613	4613_L02	21	33	t	t	match
+4613	4613_L02	22	101	i	i	match
+4613	4613_L02	23	7	o	o	match
+4613	4613_L02	24	3	n	n	match
+4613	4613_L02	25	28	s	s	match
+4613	4613_L03	1	62	a	a	match
+4613	4613_L03	2	38	u	u	match
+4613	4613_L03	3	62	e	a	conflict
+4613	4613_L03	4	72	c	c	match
+4613				q		plain-only
+4613	4613_L03	5	4	n	n	match
+4613	4613_L03	6	8	o	o	match
+4613	4613_L03	7	39		u	null
+4613	4613_L03	8	29	z	s	conflict
+4613	4613_L03	9	22	r	r	match
+4613	4613_L03	10	83	e	e	match
+4613	4613_L03	11	36	y	u	conflict
+4613	4613_L03	12	27	s	s	match
+4613	4613_L03	13	32	t	t	match
+4613	4613_L03	14	23	r	r	match
+4613	4613_L03	15	84	e	e	match
+4613	4613_L03	16	28	s	s	match
+4613	4613_L03	17	113	l	l	match
+4613	4613_L03	18	85	e	e	match
+4613				s		plain-only
+4613	4613_L03	19	17	q	q	match
+4613	4613_L03	20	40	u	u	match
+4613	4613_L03	21	84	e	e	match
+4613	4613_L03	22	115	l	l	match
+4613	4613_L03	23	56	z	z	match
+4613	4613_L04	1	4	n	n	match
+4613	4613_L04	2	7	o	o	match
+4613	4613_L04	3	38	u	u	match
+4613	4613_L04	4	29	s	s	match
+4613	4613_L04	5	10	o	o	match
+4613	4613_L04	6	5	n	n	match
+4613	4613_L04	7	31	t	t	match
+4613	4613_L04	8	62	a	a	match
+4613	4613_L04	9	113	l	l	match
+4613	4613_L04	10	63	a	a	match
+4613	4613_L04	11	85	f	e	conflict
+4613	4613_L04	12	102	i	i	match
+4613	4613_L04	13	7	n	o	conflict
+4613	4613_L04	14	63	a	a	match
+4613	4613_L04	15	72	c	c	match
+4613	4613_L04	16	74	c	c	match
+4613	4613_L04	17	10	o	o	match
+4613	4613_L04	18	24	r	r	match
+4613	4613_L04	19	77	d	d	match
+4613	4613_L04	20	81	e	e	match
+4613	4613_L04	21	136	uingt		word
+4613	4613_L04	22	1		n	null
+4613	4613_L04	23	76	d	d	match
+4613	4613_L04	24	82	e	e	match
+4613	4613_L05	1	116	m	m	match
+4613	4613_L05	2	107	y	k	conflict
+4613	4613_L05	3	116	m	m	match
+4613	4613_L05	4	7	o	o	match
+4613	4613_L05	5	104	i	i	match
+4613	4613_L05	6	29	s	s	match
+4613	4613_L05	7	63	a	a	match
+4613	4613_L05	8	37	u	u	match
+4613	4613_L05	9	84	e	e	match
+4613	4613_L05	10	72	c	c	match
+4613				q		plain-only
+4613	4613_L05	11	91	g	g	match
+4613	4613_L05	12	21	r	r	match
+4613	4613_L05	13	64	a	a	match
+4613	4613_L05	14	7	n	o	conflict
+4613	4613_L05	15	76	d	d	match
+4613	4613_L05	16	82	e	e	match
+4613	4613_L05	17	12	p	p	match
+4613	4613_L05	18	83	e	e	match
+4613	4613_L05	19	101	i	i	match
+4613	4613_L05	20	9	n	o	conflict
+4613	4613_L05	21	81	e	e	match
+4613	4613_L05	22	112	l	l	match
+4613	4613_L05	23	85	e	e	match
+4613	4613_L06	1	18	q	q	match
+4613	4613_L06	2	37	u	u	match
+4613	4613_L06	3	81	e	e	match
+4613	4613_L06	4	115	l	l	match
+4613	4613_L06	5	77		d	null
+4613	4613_L06	6	84		e	null
+4613	4613_L06	7	73	c	c	match
+4613	4613_L06	8	6	o	o	match
+4613	4613_L06	9	117	m	m	match
+4613	4613_L06	10	118	m	m	match
+4613	4613_L06	11	82	e	e	match
+4613	4613_L06	12	2	n	n	match
+4613	4613_L06	13	75	c	c	match
+4613	4613_L06	14	84	e	e	match
+4613	4613_L06	15	114	l	l	match
+4613	4613_L06	16	81	e	e	match
+4613	4613_L06	17	[blot]	24		word
+4613	4613_L06	18	77	d	d	match
+4613	4613_L06	19	37	u	u	match
+4613	4613_L06	20	11	p	p	match
+4613	4613_L06	21	22	r	r	match
+4613	4613_L06	22	83	e	e	match
+4613	4613_L06	23	26	s	s	match
+4613	4613_L07	1	82	e	e	match
+4613	4613_L07	2	3	n	n	match
+4613	4613_L07	3	33	t	t	match
+4613	4613_L07	4	76	d	d	match
+4613	4613_L07	5	82	e	e	match
+4613	4613_L07	6	12	p	p	match
+4613	4613_L07	7	36	u	u	match
+4613	4613_L07	8	103	i	i	match
+4613	4613_L07	9	27	s	s	match
+4613	4613_L07	10	2	n	n	match
+4613	4613_L07	11	7	o	o	match
+4613	4613_L07	12	40	u	u	match
+4613	4613_L07	13	30	s	s	match
+4613				n		plain-only
+4613	4613_L07	14	65	a	a	match
+4613	4613_L07	15	37	u	u	match
+4613	4613_L07	16	10	o	o	match
+4613	4613_L07	17	5	n	n	match
+4613	4613_L07	18	29	s	s	match
+4613	4613_L07	19	13	p	p	match
+4613	4613_L07	20	61	a	a	match
+4613	4613_L07	21	26	s	s	match
+4613	4613_L07	22	82	e	e	match
+4613	4613_L07	23	40	u	u	match
+4613	4613_L08	1	79	d	d	match
+4613	4613_L08	2	82	e	e	match
+4613	4613_L08	3	30	u	s	conflict
+4613	4613_L08	4	6	o	o	match
+4613	4613_L08	5	40		u	null
+4613	4613_L08	6	26	z	s	conflict
+4613	4613_L08	7	2	n	n	match
+4613	4613_L08	8	7	o	o	match
+4613				u		plain-only
+4613	4613_L08	9	38	u	u	match
+4613	4613_L08	10	83	e	e	match
+4613				l		plain-only
+4613	4613_L08	11	112	l	l	match
+4613	4613_L08	12	81	e	e	match
+4613	4613_L08	13	28	s	s	match
+4613	4613_L08	14	16	q	q	match
+4613	4613_L08	15	37	u	u	match
+4613	4613_L08	16	81	e	e	match
+4613	4613_L08	17	115	l	l	match
+4613	4613_L08	18	82	e	e	match
+4613				s		plain-only
+4613	4613_L08	19	76	d	d	match
+4613	4613_L08	20	83	e	e	match
+4613	4613_L08	21	22	r	r	match
+4613	4613_L08	22	1	n	n	match
+4613	4613_L08	23	102	i	i	match
+4613	4613_L08	24	8	e	o	conflict
+4613	4613_L09	1	21	r	r	match
+4613	4613_L09	2	85	e	e	match
+4613	4613_L09	3	30	s	s	match
+4613	4613_L09	4	17		q	null
+4613	4613_L09	5	36	p	u	conflict
+4613	4613_L09	6	61	a	a	match
+4613	4613_L09	7	37	u	u	match
+4613	4613_L09	8	8	o	o	match
+4613	4613_L09	9	2	n	n	match
+4613	4613_L09	10	29	s	s	match
+4613	4613_L09	11	21	r	r	match
+4613	4613_L09	12	82	e	e	match
+4613	4613_L09	13	71	c	c	match
+4613	4613_L09	14	83	e	e	match
+4613	4613_L09	15	39	u	u	match
+4613	4613_L09	16	ii	p		word
+4613	4613_L09	17	63	a	a	match
+4613	4613_L09	18	29	r	s	conflict
+4613	4613_L09	19	40	u	u	match
+4613	4613_L09	20	5	n	n	match
+4613				g		plain-only
+4613	4613_L09	21	12	p	p	match
+4613	4613_L09	22	83	e	e	match
+4613				t		plain-only
+4613	4613_L09	23	71	i	c	conflict
+4613	4613_L09	24	10	t	o	conflict
+4613	4613_L10	1	96	h	h	match
+4613	4613_L10	2	9	o	o	match
+4613				m		plain-only
+4613	4613_L10	3	118	m	m	match
+4613	4613_L10	4	85	e	e	match
+4613	4613_L10	5	113	l	l	match
+4613	4613_L10	6	84	e	e	match
+4613	4613_L10	7	18	q	q	match
+4613	4613_L10	8	37	u	u	match
+4613	4613_L10	9	82	e	e	match
+4613	4613_L10	10	112	l	l	match
+4613	4613_L10	11	62	a	a	match
+4613	4613_L10	12	85	e	e	match
+4613	4613_L10	13	40	u	u	match
+4613	4613_L10	14	iii	l		word
+4613	4613_L10	15	64	a	a	match
+4613	4613_L10	16	28		s	null
+4613	4613_L10	17	72	c	c	match
+4613	4613_L10	18	96	h	h	match
+4613	4613_L10	19	65	a	a	match
+4613	4613_L10	20	21	r	r	match
+4613	4613_L10	21	91	g	g	match
+4613	4613_L10	22	8	e	o	conflict
+4613	4613_L11	1	76	d	d	match
+4613	4613_L11	2	82	e	e	match
+4613	4613_L11	3	112	l	l	match
+4613	4613_L11	4	65	a	a	match
+4613				u		plain-only
+4613				i		plain-only
+4613	4613_L11	5	312	lledetillemontlaultredem		word
+4613	4613_L11	6	218	iddelbuerchpourenscauoir		word
+4613	4613_L11	7	w:pour			clear-unmatched
+4613	4613_L11	8	w:autant			clear-unmatched
+4613	4613_L11	9	w:nous	nous		clear
+4613	4613_L11	10	w:vous	uous		clear
+4613	4613_L11	11	w:supplions	supplions		clear
+4613	4613_L11	12	w:bien	bien		clear
+4613	4613_L11	13	w:humblement	humblement		clear
+4613	4613_L11	14	76	d	d	match
+4613	4613_L11	15	82	e	e	match
+4613	4613_L12	1	2	n	n	match
+4613	4613_L12	2	6	o	o	match
+4613	4613_L12	3	37	u	u	match
+4613	4613_L12	4	26	s	s	match
+4613	4613_L12	5	118	m	m	match
+4613	4613_L12	6	62	a	a	match
+4613	4613_L12	7	2	n	n	match
+4613	4613_L12	8	76	d	d	match
+4613	4613_L12	9	81	e	e	match
+4613	4613_L12	10	22	r	r	match
+4613	4613_L12	11	39	u	u	match
+4613	4613_L12	12	8	o	o	match
+4613	4613_L12	13	27		s	null
+4613	4613_L12	14	31		t	null
+4613	4613_L12	15	23		r	null
+4613	4613_L12	16	82	z	e	conflict
+4613	4613_L12	17	55	a	y	conflict
+4613	4613_L12	18	80	d	d	match
+4613	4613_L12	19	36	u	u	match
+4613	4613_L12	20	103	i	i	match
+4613	4613_L12	21	39	s	u	conflict
+4613	4613_L12	22	83	e	e	match
+4613	4613_L12	23	33	t	t	match
+4613	4613_L13	1	21	r	r	match
+4613	4613_L13	2	81	e	e	match
+4613	4613_L13	3	30	s	s	match
+4613	4613_L13	4	10	o	o	match
+4613	4613_L13	5	111	l	l	match
+4613	4613_L13	6	36	u	u	match
+4613	4613_L13	7	32	t	t	match
+4613	4613_L13	8	105	i	i	match
+4613	4613_L13	9	9	o	o	match
+4613	4613_L13	10	5	n	n	match
+4613	4613_L13	11	29	s	s	match
+4613	4613_L13	12	38	u	u	match
+4613	4613_L13	13	24	r	r	match
+4613	4613_L13	14	34	t	t	match
+4613	4613_L13	15	10	o	o	match
+4613	4613_L13	16	40	u	u	match
+4613	4613_L13	17	35	t	t	match
+4613	4613_L13	18	61	a	a	match
+4613	4613_L13	19	39	u	u	match
+4613	4613_L13	20	12	p	p	match
+4613	4613_L13	21	112	l	l	match
+4613	4613_L13	22	36	u	u	match
+4613	4613_L13	23	26	s	s	match
+4613	4613_L14	1	31	t	t	match
+4613	4613_L14	2	6	o	o	match
+4613	4613_L14	3	26	s	s	match
+4613	4613_L14	4	32	t	t	match
+4613	4613_L14	5	16	q	q	match
+4613	4613_L14	6	40	u	u	match
+4613	4613_L14	7	102	e	i	conflict
+4613	4613_L14	8	86	f	f	match
+4613	4613_L14	9	62	a	a	match
+4613	4613_L14	10	103	i	i	match
+4613	4613_L14	11	28	r	s	conflict
+4613	4613_L14	12	82	e	e	match
+4613	4613_L14	13	71	s	c	conflict
+4613	4613_L14	14	83	e	e	match
+4613	4613_L14	15	15	p	p	match
+4613	4613_L14	16	9	o	o	match
+4613	4613_L14	17	38	u	u	match
+4613	4613_L14	18	112	r	l	conflict
+4613	4613_L14	19	22	r	r	match
+4613	4613_L14	20	62	a	a	match
+4613	4613_L14	21	w:affin	affin		clear
+4613	4613_L14	22	w:que	que		clear
+4613	4613_L15	1	w:nous	nous		clear
+4613	4613_L15	2	2	n	n	match
+4613	4613_L15	3	83	e	e	match
+4613	4613_L15	4	14	p	p	match
+4613	4613_L15	5	65	e	a	conflict
+4613	4613_L15	6	24	r	r	match
+4613	4613_L15	7	76	d	d	match
+4613				i		plain-only
+4613	4613_L15	8	8	o	o	match
+4613	4613_L15	9	4	n	n	match
+4613	4613_L15	10	27	s	s	match
+4613	4613_L15	11	13	p	p	match
+4613	4613_L15	12	62	a	a	match
+4613	4613_L15	13	28	s	s	match
+4613	4613_L15	14	113	l	l	match
+4613	4613_L15	15	85	e	e	match
+4613	4613_L15	16	31	t	t	match
+4613	4613_L15	17	84	e	e	match
+4613	4613_L15	18	119	m	m	match
+4613	4613_L15	19	12	p	p	match
+4613	4613_L15	20	28	s	s	match
+4613	4613_L16	1	iii	l		word
+4613	4613_L16	2	83	e	e	match
+4613	4613_L16	3	20	q	q	match
+4613	4613_L16	4	40	u	u	match
+4613	4613_L16	5	82	e	e	match
+4613	4613_L16	6	112	l	l	match
+4613	4613_L16	7	81	e	e	match
+4613	4613_L16	8	26	s	s	match
+4613	4613_L16	9	31	t	t	match
+4613	4613_L16	10	66	b	b	match
+4613	4613_L16	11	101	i	i	match
+4613	4613_L16	12	85	e	e	match
+4613	4613_L16	13	5	n	n	match
+4613	4613_L16	14	72	c	c	match
+4613	4613_L16	15	6	o	o	match
+4613	4613_L16	16	40	u	u	match
+4613	4613_L16	17	25	r	r	match
+4613	4613_L16	18	34	t	t	match
+4613	4613_L16	19	w:quant	quant		clear
+4613	4613_L16	20	w:a	a		clear
+4613				n		plain-only
+4613				o		plain-only
+4613				z		plain-only
+4613	4613_L16	21	w:nous			clear-unmatched
+4613	4613_L17	1	90	f	f	match
+4613	4613_L17	2	21	r	r	match
+4613	4613_L17	3	61	a	a	match
+4613	4613_L17	4	1	n	n	match
+4613	4613_L17	5	71	c	c	match
+4613				h		plain-only
+4613	4613_L17	6	6	o	o	match
+4613	4613_L17	7	101	i	i	match
+4613	4613_L17	8	26	s	s	match
+4613	4613_L17	9	2	n	n	match
+4613	4613_L17	10	7	o	o	match
+4613	4613_L17	11	37	u	u	match
+4613	4613_L17	12	26	s	s	match
+4613	4613_L17	13	62	a	a	match
+4613	4613_L17	14	38	u	u	match
+4613	4613_L17	15	8	o	o	match
+4613	4613_L17	16	3	n	n	match
+4613	4613_L17	17	29	s	s	match
+4613	4613_L17	18	21	r	r	match
+4613	4613_L17	19	82	e	e	match
+4613	4613_L17	20	73	c	c	match
+4613	4613_L17	21	84	e	e	match
+4613	4613_L17	22	40	u	u	match
+4613	4613_L18	1	76		d	null
+4613	4613_L18	2	81		e	null
+4613	4613_L18	3	4	n	n	match
+4613	4613_L18	4	9	o	o	match
+4613				u		plain-only
+4613	4613_L18	5	39	u	u	match
+4613	4613_L18	6	83	e	e	match
+4613	4613_L18	7	111	l	l	match
+4613	4613_L18	8	114	l	l	match
+4613	4613_L18	9	84	e	e	match
+4613	4613_L18	10	27	s	s	match
+4613	4613_L18	11	16	q	q	match
+4613	4613_L18	12	36	u	u	match
+4613	4613_L18	13	102	i	i	match
+4613	4613_L18	14	123	l		word
+4613	4613_L18	15	57	z	z	match
+4613	4613_L18	16	28	s	s	match
+4613	4613_L18	17	82	e	e	match
+4613	4613_L18	18	21		r	null
+4613	4613_L18	19	22	r	r	match
+4613	4613_L18	20	6	o	o	match
+4613	4613_L18	21	1	n	n	match
+4613	4613_L18	22	31	t	t	match
+4613	4613_L19	1	66	b	b	match
+4613	4613_L19	2	102	i	i	match
+4613	4613_L19	3	81	e	e	match
+4613	4613_L19	4	2	n	n	match
+4613	4613_L19	5	31	t	t	match
+4613	4613_L19	6	7	o	o	match
+4613	4613_L19	7	26	s	s	match
+4613	4613_L19	8	32	t	t	match
+4613	4613_L19	9	30	s	s	match
+4613	4613_L19	10	40	u	u	match
+4613	4613_L19	11	25	r	r	match
+4613	4613_L19	12	111	l	l	match
+4613	4613_L19	13	61	a	a	match
+4613	4613_L19	14	120	m	m	match
+4613	4613_L19	15	85	e	e	match
+4613	4613_L19	16	30	u	s	conflict
+4613	4613_L19	17	27	s	s	match
+4613	4613_L19	18	82		e	null
+4613	4613_L19	19	111		l	null
+4613	4613_L19	20	112		l	null
+4613	4613_L19	21	84	e	e	match
+4613	4613_L20	1	81	e	e	match
+4613	4613_L20	2	33	t	t	match
+4613	4613_L20	3	104	i	i	match
+4613	4613_L20	4	112	l	l	match
+4613	4613_L20	5	81	y	e	conflict
+4613	4613_L20	6	62	a	a	match
+4613	4613_L20	7	16		q	null
+4613	4613_L20	8	36		u	null
+4613	4613_L20	9	101		i	null
+4613	4613_L20	10	2		n	null
+4613	4613_L20	11	56		z	null
+4613	4613_L20	12	82		e	null
+4613	4613_L20	13	73		c	null
+4613	4613_L20	14	83		e	null
+4613	4613_L20	15	5		n	null
+4613	4613_L20	16	32		t	null
+4613	4613_L20	17	339	1500harquebouzi		word
+4613	4613_L20	18	81	e	e	match
+4613	4613_L20	19	32		t	null
+4613	4613_L20	20	33		t	null
+4613	4613_L20	21	21	r	r	match
+4613	4613_L20	22	6		o	null
+4613	4613_L21	1	105		i	null
+4613	4613_L21	2	26	s	s	match
+4613	4613_L21	3	72		c	null
+4613	4613_L21	4	82	e	e	match
+4613	4613_L21	5	5		n	null
+4613	4613_L21	6	34	t	t	match
+4613	4613_L21	7	338	300cheuaulxlegiers		word
+4613	4613_L21	8	2	n	n	match
+4613	4613_L21	9	6	o	o	match
+4613	4613_L21	10	36	u	u	match
+4613	4613_L21	11	26	s	s	match
+4613	4613_L21	12	81	e	e	match
+4613	4613_L21	13	27	s	s	match
+4613	4613_L21	14	12	p	p	match
+4613	4613_L21	15	83	e	e	match
+4613	4613_L21	16	21	r	r	match
+4613	4613_L21	17	6	o	o	match
+4613	4613_L21	18	1	n	n	match
+4613	4613_L21	19	28	s	s	match
+4613	4613_L21	20	16	q	q	match
+4613	4613_L21	21	37	u	u	match
+4613	4613_L21	22	101	i	i	match
+4613	4613_L21	23	iii	l		word
+4613				z		plain-only
+4613	4613_L22	1	26	s	s	match
+4613	4613_L22	2	82	e	e	match
+4613	4613_L22	3	22	r	r	match
+4613	4613_L22	4	10	o	o	match
+4613	4613_L22	5	5	n	n	match
+4613	4613_L22	6	35	t	t	match
+4613	4613_L22	7	61	b	a	conflict
+4613	4613_L22	8	101	i	i	match
+4613	4613_L22	9	82	e	e	match
+4613	4613_L22	10	2	n	n	match
+4613	4613_L22	11	31	t	t	match
+4613	4613_L22	12	6	o	o	match
+4613	4613_L22	13	26	s	s	match
+4613	4613_L22	14	32	t	t	match
+4613	4613_L22	15	61	a	a	match
+4613	4613_L22	16	38	u	u	match
+4613	4613_L22	17	13	p	p	match
+4613	4613_L22	18	21	r	r	match
+4613	4613_L22	19	82	e	e	match
+4613	4613_L22	20	26	s	s	match
+4613				d		plain-only
+4613	4613_L22	21	82	e	e	match
+4613	4613_L22	22	w:nous	nous		clear
+4613	4613_L23	1	w:au	au		clear
+4613	4613_L23	2	w:demourant	demourant		clear
+4613	4613_L23	3	w:il	il		clear
+4613	4613_L23	4	w:nous	nous		clear
+4613	4613_L23	5	61	a	a	match
+4613	4613_L23	6	86	f	f	match
+4613	4613_L23	7	62	a	a	match
+4613	4613_L23	8	101		i	null
+4613	4613_L23	9	112	l	l	match
+4613	4613_L23	10	103		i	null
+4613	4613_L23	11	92		g	null
+4613	4613_L23	12	[blot]	lu		word
+4613	4613_L23	13	21		r	null
+4613	4613_L23	14	82		e	null
+4613	4613_L23	15	31	t	t	match
+4613	4613_L23	16	102	i	i	match
+4613	4613_L23	17	22	r	r	match
+4613	4613_L23	18	83	e	e	match
+4613	4613_L23	19	23	r	r	match
+4613	4613_L24	1	1	n	n	match
+4613	4613_L24	2	6	o	o	match
+4613	4613_L24	3	40		u	null
+4613	4613_L24	4	30	z	s	conflict
+4613	4613_L24	5	92	g	g	match
+4613	4613_L24	6	82	e	e	match
+4613	4613_L24	7	3	n	n	match
+4613	4613_L24	8	26	s	s	match
+4613	4613_L24	9	76	d	d	match
+4613	4613_L24	10	63	a	a	match
+4613	4613_L24	11	38	u	u	match
+4613	4613_L24	12	15	p	p	match
+4613	4613_L24	13	21	r	r	match
+4613	4613_L24	14	81	e	e	match
+4613				s		plain-only
+4613	4613_L24	15	22	d	r	conflict
+4613	4613_L24	16	85	e	e	match
+4613	4613_L24	17	112	l	l	match
+4613	4613_L24	18	61	a	a	match
+4613	4613_L24	19	312	uillede		word
+4613	4613_L24	20	273	maestricht		word
+4613	4613_L24	21	62	a	a	match
+4613	4613_L25	1	71	c	c	match
+4613	4613_L25	2	62	a	a	match
+4613	4613_L25	3	39	u	u	match
+4613	4613_L25	4	26	s	s	match
+4613	4613_L25	5	82	e	e	match
+4613	4613_L25	6	16	q	q	match
+4613	4613_L25	7	36	u	u	match
+4613	4613_L25	8	81	e	e	match
+4613	4613_L25	9	112	l	l	match
+4613	4613_L25	10	81	e	e	match
+4613	4613_L25	11	26	s	s	match
+4613	4613_L25	12	96	f	h	conflict
+4613	4613_L25	13	6	o	o	match
+4613	4613_L25	14	39	u	u	match
+4613				r		plain-only
+4613	4613_L25	15	21	r	r	match
+4613	4613_L25	16	62	a	a	match
+4613				i		plain-only
+4613	4613_L25	17	92	g	g	match
+4613	4613_L25	18	83	e	e	match
+4613	4613_L25	19	27	s	s	match
+4613	4613_L25	20	w:et	et		clear
+4613	4613_L25	21	347	uiures		word
+4613	4613_L25	22	w:nous	nous		clear
+4613	4613_L26	1	6	o	o	match
+4613	4613_L26	2	2	n	n	match
+4613	4613_L26	3	32	t	t	match
+4613	4613_L26	4	71	c	c	match
+4613	4613_L26	5	7	o	o	match
+4613	4613_L26	6	118	m	m	match
+4613	4613_L26	7	119	m	m	match
+4613	4613_L26	8	81	e	e	match
+4613	4613_L26	9	3	n	n	match
+4613	4613_L26	10	72	c	c	match
+4613	4613_L26	11	83	e	e	match
+4613	4613_L26	12	90	f	f	match
+4613	4613_L26	13	6	o	o	match
+4613	4613_L26	14	21	r	r	match
+4613	4613_L26	15	31	t	t	match
+4613	4613_L26	16	61	a	a	match
+4613	4613_L26	17	88	f	f	match
+4613	4613_L26	18	62	a	a	match
+4613	4613_L26	19	101	i	i	match
+4613				l		plain-only
+4613	4613_L26	20	111	l	l	match
+4613	4613_L26	21	101	i	i	match
+4613	4613_L26	22	81		e	null
+4613	4613_L27	1	21	r	r	match
+4613	4613_L27	2	w:et	et		clear
+4613	4613_L27	3	62	a	a	match
+4613	4613_L27	4	36	u	u	match
+4613	4613_L27	5	6	o	o	match
+4613	4613_L27	6	2	n	n	match
+4613	4613_L27	7	26	s	s	match
+4613	4613_L27	8	112	l	l	match
+4613	4613_L27	9	7	o	o	match
+4613	4613_L27	10	91	g	g	match
+4613	4613_L27	11	82	e	e	match
+4613	4613_L27	12	2	n	n	match
+4613	4613_L27	13	6	o	o	match
+4613	4613_L27	14	40		u	null
+4613	4613_L27	15	30	z	s	conflict
+4613	4613_L27	16	94	g	g	match
+4613	4613_L27	17	81	e	e	match
+4613	4613_L27	18	3	n	n	match
+4613	4613_L27	19	27	s	s	match
+4613	4613_L27	20	101		i	null
+4613	4613_L27	21	71		c	null
+4613	4613_L27	22	51		y	null
+4613	4613_L27	23	62	a	a	match
+4613	4613_L28	1	113	l	l	match
+4613	4613_L28	2	83	e	e	match
+4613	4613_L28	3	4	n	n	match
+4613	4613_L28	4	32	t	t	match
+4613	4613_L28	5	8	o	o	match
+4613	4613_L28	6	39	u	u	match
+4613	4613_L28	7	24	r	r	match
+4613	4613_L28	8	76	d	d	match
+4613	4613_L28	9	81		e	null
+4613	4613_L28	10	41		v	null
+4613	4613_L28	11	82	e	e	match
+4613	4613_L28	12	31	t	t	match
+4613	4613_L28	13	96		h	null
+4613	4613_L28	14	83		e	null
+4613	4613_L28	15	128	rittheim		word
+4613	4613_L28	16	82	e	e	match
+4613	4613_L28	17	33	t	t	match
+4613	4613_L28	18	73	c	c	match
+4613	4613_L28	19	61	a	a	match
+4613	4613_L28	20	21	r	r	match
+4613	4613_L28	21	31	t	t	match
+4613	4613_L29	1	104	i	i	match
+4613	4613_L29	2	123	llaafrancquemont		word
+4613	4613_L29	3	56		z	null
+4613	4613_L29	4	84	e	e	match
+4613	4613_L29	5	33	t	t	match
+4613	4613_L29	6	115	l	l	match
+4613	4613_L29	7	61	a	a	match
+4613	4613_L29	8	65	a	a	match
+4613	4613_L29	9	36	u	u	match
+4613	4613_L29	10	12	p	p	match
+4613	4613_L29	11	21	r	r	match
+4613	4613_L29	12	81	e	e	match
+4613	4613_L29	13	27	s	s	match
+4613	4613_L29	14	w:Nous			clear-unmatched
+4613	4613_L29	15	w:vous			clear-unmatched
+4613	4613_L29	16	w:supplions			clear-unmatched
+4613	4613_L29	17	w:afin			clear-unmatched
+4613	4613_L30	1	w:que			clear-unmatched
+4613	4613_L30	2	w:nous			clear-unmatched
+4613	4613_L30	3	w:puissions			clear-unmatched
+4613	4613_L30	4	w:avoir			clear-unmatched
+4613	4613_L30	5	w:de			clear-unmatched
+4613	4613_L30	6	w:vous			clear-unmatched
+4613	4613_L30	7	w:nouvelles			clear-unmatched
+4613	4613_L30	8	w:ou			clear-unmatched
+4613	4613_L30	9	w:si			clear-unmatched
+4613	4613_L30	10	w:tost			clear-unmatched
+4613	4613_L30	11	w:que			clear-unmatched
+4613	4613_L30	12	w:faire			clear-unmatched
+4613	4613_L30	13	w:se			clear-unmatched
+4613	4613_L30	14	w:pourra			clear-unmatched
+4613	4613_L30	15	w:ferons			clear-unmatched
+4613	4613_L30	16	w:la			clear-unmatched
+4613	4613_L30	17	w:fin			clear-unmatched
+4613	4613_L30	18	w:priant			clear-unmatched
+4613	4613_L30	19	w:le			clear-unmatched
+4613	4613_L30	20	w:Createur			clear-unmatched
+4613	4613_L30	21	w:vous			clear-unmatched
+4613	4613_L30	22	w:donner			clear-unmatched
+4613	4613_L31	1	w:Monsieur			clear-unmatched
+4613	4613_L31	2	w:sa			clear-unmatched
+4613	4613_L31	3	w:saincte			clear-unmatched
+4613	4613_L31	4	w:grace			clear-unmatched
+4613	4613_L31	5	w:ce			clear-unmatched
+4613	4613_L31	6	w:faict			clear-unmatched
+4613	4613_L31	7	w:au			clear-unmatched
+4613	4613_L31	8	w:Camp			clear-unmatched
+4613	4613_L31	9	w:de			clear-unmatched
+4613	4613_L31	10	w:Cartelz?			clear-unmatched
+4613	4613_L31	11	w:ce			clear-unmatched
+4613	4613_L31	12	w:25			clear-unmatched
+4613	4613_L31	13	w:de			clear-unmatched
+4613	4613_L31	14	w:Mars			clear-unmatched
+4613	4613_L31	15	w:l'an			clear-unmatched
+4613	4613_L31	16	w:1574			clear-unmatched
+4615	4615_L01	1	w:Monsieur			clear-unmatched
+4615	4615_L01	2	w:depuis			clear-unmatched
+4615	4615_L01	3	w:nostre			clear-unmatched
+4615	4615_L01	4	w:derniere			clear-unmatched
+4615	4615_L01	5	w:nous			clear-unmatched
+4615	4615_L01	6	w:avons			clear-unmatched
+4615	4615_L01	7	121			null
+4615	4615_L01	8	132			null
+4615	4615_L01	9	31	t	t	match
+4615	4615_L01	10	22	r	r	match
+4615	4615_L01	11	61	a	a	match
+4615				i		plain-only
+4615	4615_L01	12	71	c	c	match
+4615	4615_L01	13	32	t	t	match
+4615	4615_L01	14	81	e	e	match
+4615	4615_L01	15	121			null
+4615	4615_L02	1	61	a	a	match
+4615	4615_L02	2	36	u	u	match
+4615	4615_L02	3	92	e	g	conflict
+4615	4615_L02	4	72	c	c	match
+4615				q		plain-only
+4615	4615_L02	5	1	n	n	match
+4615	4615_L02	6	6	o	o	match
+4615	4615_L02	7	37		u	null
+4615	4615_L02	8	26	z	s	conflict
+4615	4615_L02	9	337	reystres		word
+4615	4615_L02	10	121			null
+4615	4615_L02	11	141			null
+4615	4615_L02	12	116	m	m	match
+4615	4615_L02	13	62	a	a	match
+4615	4615_L02	14	101	i	i	match
+4615	4615_L02	15	27	s	s	match
+4615	4615_L02	16	103	i	i	match
+4615	4615_L02	17	93	e	g	conflict
+4615	4615_L02	18	38	u	u	match
+4615	4615_L02	19	7	o	o	match
+4615				u		plain-only
+4615				s		plain-only
+4615				d		plain-only
+4615	4615_L02	20	51	i	y	conflict
+4615	4615_L02	21	53	z	y	conflict
+4615	4615_L03	1	16	q	q	match
+4615	4615_L03	2	40	u	u	match
+4615	4615_L03	3	85	e	e	match
+4615	4615_L03	4	111	l	l	match
+4615	4615_L03	5	63	a	a	match
+4615	4615_L03	6	12	p	p	match
+4615	4615_L03	7	112	l	l	match
+4615	4615_L03	8	39	u	u	match
+4615	4615_L03	9	23	s	r	conflict
+4615	4615_L03	10	91	g	g	match
+4615	4615_L03	11	21	r	r	match
+4615	4615_L03	12	64	a	a	match
+4615	4615_L03	13	3	n	n	match
+4615	4615_L03	14	76	d	d	match
+4615	4615_L03	15	81	e	e	match
+4615	4615_L03	16	13	p	p	match
+4615	4615_L03	17	64	a	a	match
+4615	4615_L03	18	22	r	r	match
+4615	4615_L03	19	33	t	t	match
+4615	4615_L03	20	107		k	null
+4615	4615_L03	21	88		f	null
+4615	4615_L03	22	71	i	c	conflict
+4615	4615_L03	23	82	e	e	match
+4615				s		plain-only
+4615	4615_L04	1	82	e	e	match
+4615	4615_L04	2	4	n	n	match
+4615	4615_L04	3	21	r	r	match
+4615	4615_L04	4	85	e	e	match
+4615	4615_L04	5	31	t	t	match
+4615	4615_L04	6	8	o	o	match
+4615	4615_L04	7	37	u	u	match
+4615	4615_L04	8	24	r	r	match
+4615	4615_L04	9	5	n	n	match
+4615	4615_L04	10	81	e	e	match
+4615	4615_L04	11	77	d	d	match
+4615	4615_L04	12	83	e	e	match
+4615	4615_L04	13	87	f	f	match
+4615	4615_L04	14	61	a	a	match
+4615	4615_L04	15	72	c	c	match
+4615	4615_L04	16	9	o	o	match
+4615	4615_L04	17	4	n	n	match
+4615	4615_L04	18	17	q	q	match
+4615	4615_L04	19	38	u	u	match
+4615	4615_L04	20	81	e	e	match
+4615	4615_L04	21	2	n	n	match
+4615	4615_L04	22	6	o	o	match
+4615	4615_L04	23	40	u	u	match
+4615	4615_L04	24	27	s	s	match
+4615				n		plain-only
+4615	4615_L05	1	84	e	e	match
+4615	4615_L05	2	28	s	s	match
+4615				t		plain-only
+4615				o		plain-only
+4615				i		plain-only
+4615	4615_L05	3	33	t	t	match
+4615	4615_L05	4	13	p	p	match
+4615	4615_L05	5	8	o	o	match
+4615	4615_L05	6	27	s	s	match
+4615	4615_L05	7	30	s	s	match
+4615	4615_L05	8	102	i	i	match
+4615	4615_L05	9	66	b	b	match
+4615	4615_L05	10	113	l	l	match
+4615	4615_L05	11	82	e	e	match
+4615	4615_L05	12	79	d	d	match
+4615	4615_L05	13	81	e	e	match
+4615	4615_L05	14	76	d	d	match
+4615	4615_L05	15	83	e	e	match
+4615	4615_L05	16	117	m	m	match
+4615	4615_L05	17	8	o	o	match
+4615				u		plain-only
+4615	4615_L05	18	25	r	r	match
+4615	4615_L05	19	82	e	e	match
+4615	4615_L05	20	21	r	r	match
+4615	4615_L05	21	121			null
+4615	4615_L05	22	132			null
+4615	4615_L05	23	12		p	null
+4615	4615_L06	1	15	p	p	match
+4615	4615_L06	2	114	l	l	match
+4615	4615_L06	3	36	u	u	match
+4615	4615_L06	4	28	s	s	match
+4615	4615_L06	5	115	l	l	match
+4615	4615_L06	6	10	o	o	match
+4615	4615_L06	7	5	n	n	match
+4615	4615_L06	8	94	g	g	match
+4615	4615_L06	9	31	t	t	match
+4615	4615_L06	10	81	e	e	match
+4615	4615_L06	11	120	m	m	match
+4615	4615_L06	12	19	p	q	conflict
+4615	4615_L06	13	26	s	s	match
+4615	4615_L06	14	82	e	e	match
+4615	4615_L06	15	3	n	n	match
+4615	4615_L06	16	74	c	c	match
+4615	4615_L06	17	83	e	e	match
+4615	4615_L06	18	28	s	s	match
+4615	4615_L06	19	34	q	t	conflict
+4615	4615_L06	20	71	u	c	conflict
+4615	4615_L06	21	62	a	a	match
+4615	4615_L06	22	23	r	r	match
+4615	4615_L07	1	33	t	t	match
+4615	4615_L07	2	102	i	i	match
+4615	4615_L07	3	82	e	e	match
+4615				r		plain-only
+4615	4615_L07	4	26	s	s	match
+4615	4615_L07	5	4	n	n	match
+4615	4615_L07	6	8	o	o	match
+4615	4615_L07	7	40	u	u	match
+4615	4615_L07	8	30	s	s	match
+4615	4615_L07	9	61	a	a	match
+4615	4615_L07	10	31	t	t	match
+4615	4615_L07	11	35	t	t	match
+4615	4615_L07	12	62	e	a	conflict
+4615	4615_L07	13	2	n	n	match
+4615	4615_L07	14	77	d	d	match
+4615	4615_L07	15	83		e	null
+4615	4615_L07	16	24	r	r	match
+4615	4615_L07	17	10	o	o	match
+4615	4615_L07	18	1	n	n	match
+4615	4615_L07	19	29	s	s	match
+4615	4615_L07	20	84	e	e	match
+4615	4615_L07	21	2	n	n	match
+4615	4615_L07	22	11	c	p	conflict
+4615	4615_L07	23	6	o	o	match
+4615				i		plain-only
+4615	4615_L07	24	2	r	n	conflict
+4615	4615_L08	1	83	e	e	match
+4615	4615_L08	2	27	s	s	match
+4615	4615_L08	3	61	a	a	match
+4615	4615_L08	4	40	u	u	match
+4615	4615_L08	5	12	p	p	match
+4615	4615_L08	6	113	l	l	match
+4615	4615_L08	7	36	u	u	match
+4615	4615_L08	8	21	s	r	conflict
+4615	4615_L08	9	114	l	l	match
+4615	4615_L08	10	6	o	o	match
+4615	4615_L08	11	2	n	n	match
+4615	4615_L08	12	93	g	g	match
+4615	4615_L08	13	76	d	d	match
+4615	4615_L08	14	81	e	e	match
+4615	4615_L08	15	78	d	d	match
+4615				e		plain-only
+4615	4615_L08	16	40	u	u	match
+4615	4615_L08	17	85		e	null
+4615	4615_L08	18	27	x	s	conflict
+4615	4615_L08	19	101	i	i	match
+4615	4615_L08	20	1	o	n	conflict
+4615	4615_L08	21	39	u	u	match
+4615	4615_L08	22	21	r	r	match
+4615	4615_L08	23	27	s	s	match
+4615	4615_L09	1	62	a	a	match
+4615	4615_L09	2	13	p	p	match
+4615	4615_L09	3	21	r	r	match
+4615	4615_L09	4	82	e	e	match
+4615	4615_L09	5	26	s	s	match
+4615	4615_L09	6	2	n	n	match
+4615	4615_L09	7	9	o	o	match
+4615	4615_L09	8	40		u	null
+4615	4615_L09	9	27	z	s	conflict
+4615	4615_L09	10	87	f	f	match
+4615	4615_L09	11	21	r	r	match
+4615	4615_L09	12	61	a	a	match
+4615	4615_L09	13	3	n	n	match
+4615	4615_L09	14	71	c	c	match
+4615				h		plain-only
+4615	4615_L09	15	6	o	o	match
+4615				i		plain-only
+4615				s		plain-only
+4615	4615_L09	16	w:Si	si		clear
+4615				t		plain-only
+4615				o		plain-only
+4615				u		plain-only
+4615				t		plain-only
+4615				e		plain-only
+4615				s		plain-only
+4615				f		plain-only
+4615				o		plain-only
+4615				i		plain-only
+4615				s		plain-only
+4615				c		plain-only
+4615				e		plain-only
+4615				u		plain-only
+4615				l		plain-only
+4615				x		plain-only
+4615	4615_L09	17	w:en			clear-unmatched
+4615	4615_L09	18	w:cas			clear-unmatched
+4615	4615_L09	19	w:que	que		clear
+4615	4615_L09	20	2	n	n	match
+4615	4615_L09	21	81	e	e	match
+4615	4615_L10	1	40	u	u	match
+4615	4615_L10	2	101	i	i	match
+4615	4615_L10	3	82	e	e	match
+4615				n		plain-only
+4615	4615_L10	4	2	n	n	match
+4615	4615_L10	5	81	e	e	match
+4615	4615_L10	6	3	n	n	match
+4615	4615_L10	7	33	t	t	match
+4615	4615_L10	8	12	p	p	match
+4615	4615_L10	9	62	a	a	match
+4615	4615_L10	10	26	s	s	match
+4615	4615_L10	11	85	e	e	match
+4615	4615_L10	12	3	n	n	match
+4615	4615_L10	13	72	c	c	match
+4615	4615_L10	14	94	e	g	conflict
+4615	4615_L10	15	31	t	t	match
+4615	4615_L10	16	83	e	e	match
+4615	4615_L10	17	117	m	m	match
+4615	4615_L10	18	12	p	p	match
+4615	4615_L10	19	26	s	s	match
+4615	4615_L10	20	5	n	n	match
+4615	4615_L10	21	6	o	o	match
+4615	4615_L10	22	39	u	u	match
+4615	4615_L10	23	28	s	s	match
+4615	4615_L11	1	14	p	p	match
+4615	4615_L11	2	25	r	r	match
+4615	4615_L11	3	63	e	a	conflict
+4615	4615_L11	4	4	n	n	match
+4615	4615_L11	5	76	d	d	match
+4615	4615_L11	6	81		e	null
+4615	4615_L11	7	22	r	r	match
+4615	4615_L11	8	7	o	o	match
+4615	4615_L11	9	3	n	n	match
+4615	4615_L11	10	27	s	s	match
+4615	4615_L11	11	1	n	n	match
+4615	4615_L11	12	6	o	o	match
+4615	4615_L11	13	26	s	s	match
+4615	4615_L11	14	31	t	t	match
+4615	4615_L11	15	[blot]	r		word
+4615	4615_L11	16	81	e	e	match
+4615	4615_L11	17	26		s	null
+4615	4615_L11	18	71	c	c	match
+4615	4615_L11	19	96	h	h	match
+4615	4615_L11	20	81	e	e	match
+4615	4615_L11	21	118	m	m	match
+4615	4615_L11	22	101	y	i	conflict
+4615	4615_L11	23	2	n	n	match
+4615	4615_L11	24	121			null
+4615	4615_L12	1	83	e	e	match
+4615	4615_L12	2	4	n	n	match
+4615	4615_L12	3	31	t	t	match
+4615	4615_L12	4	21	r	r	match
+4615	4615_L12	5	82	e	e	match
+4615	4615_L12	6	92	g	g	match
+4615	4615_L12	7	23	r	r	match
+4615	4615_L12	8	61	a	a	match
+4615	4615_L12	9	40	u	u	match
+4615	4615_L12	10	84	e	e	match
+4615	4615_L12	11	81	e	e	match
+4615	4615_L12	12	38	t	u	conflict
+4615	4615_L12	13	272	nyeumegen		word
+4615	4615_L12	14	35	t	t	match
+4615	4615_L12	15	6	o	o	match
+4615	4615_L12	16	39	u	u	match
+4615	4615_L12	17	31	t	t	match
+4615	4615_L12	18	78	d	d	match
+4615	4615_L12	19	21	r	r	match
+4615	4615_L12	20	7	o	o	match
+4615	4615_L12	21	102	i	i	match
+4615	4615_L12	22	73	c	c	match
+4615	4615_L12	23	34	t	t	match
+4615	4615_L12	24	122			null
+4615	4615_L13	1	39	u	u	match
+4615	4615_L13	2	81	e	e	match
+4615	4615_L13	3	22	r	r	match
+4615	4615_L13	4	26	s	s	match
+4615	4615_L13	5	270	bommel		word
+4615	4615_L13	6	121			null
+4615	4615_L13	7	132			null
+4615	4615_L13	8	w:pour	pour		clear
+4615	4615_L13	9	w:autant	autant		clear
+4615	4615_L13	10	w:je	ie		clear
+4615	4615_L13	11	w:vous	uous		clear
+4615	4615_L13	12	w:supplie	supplie		clear
+4615	4615_L13	13	w:de	de		clear
+4615	4615_L13	14	w:y	y		clear
+4615	4615_L13	15	w:adviser	aduiser		clear
+4615	4615_L13	16	123			null
+4615	4615_L13	17	132			null
+4615	4615_L14	1	12	p	p	match
+4615	4615_L14	2	6	o	o	match
+4615	4615_L14	3	37	u	u	match
+4615	4615_L14	4	21	r	r	match
+4615	4615_L14	5	2	n	n	match
+4615	4615_L14	6	7	o	o	match
+4615	4615_L14	7	36	u	u	match
+4615	4615_L14	8	27	s	s	match
+4615	4615_L14	9	33	t	t	match
+4615	4615_L14	10	61	e	a	conflict
+4615	4615_L14	11	2	n	n	match
+4615	4615_L14	12	76	d	d	match
+4615	4615_L14	13	21	r	r	match
+4615	4615_L14	14	82	e	e	match
+4615	4615_L14	15	112	l	l	match
+4615	4615_L14	16	61	a	a	match
+4615	4615_L14	17	117	m	m	match
+4615	4615_L14	18	62	a	a	match
+4615	4615_L14	19	102	i	i	match
+4615	4615_L14	20	4	n	n	match
+4615	4615_L14	21	132			null
+4615	4615_L15	1	65	a	a	match
+4615	4615_L15	2	86	f	f	match
+4615	4615_L15	3	90	f	f	match
+4615	4615_L15	4	101	i	i	match
+4615	4615_L15	5	2	n	n	match
+4615	4615_L15	6	16	q	q	match
+4615	4615_L15	7	40	u	u	match
+4615	4615_L15	8	82	e	e	match
+4615	4615_L15	9	4	n	n	match
+4615	4615_L15	10	8	o	o	match
+4615	4615_L15	11	[spot]	u		word
+4615	4615_L15	12	28	s	s	match
+4615	4615_L15	13	40	u	u	match
+4615	4615_L15	14	7	o	o	match
+4615	4615_L15	15	36	u	u	match
+4615	4615_L15	16	27	s	s	match
+4615	4615_L15	17	14	p	p	match
+4615	4615_L15	18	37	u	u	match
+4615				i		plain-only
+4615	4615_L15	19	26	s	s	match
+4615	4615_L15	20	30	s	s	match
+4615	4615_L15	21	101	i	i	match
+4615	4615_L15	22	9	o	o	match
+4615	4615_L15	23	2	n	n	match
+4615	4615_L15	24	26	s	s	match
+4615	4615_L16	1	105	i	i	match
+4615	4615_L16	2	7	o	o	match
+4615	4615_L16	3	102	i	i	match
+4615	4615_L16	4	2	n	n	match
+4615	4615_L16	5	76	d	d	match
+4615	4615_L16	6	21	r	r	match
+4615	4615_L16	7	82	e	e	match
+4615	4615_L16	8	30	s	s	match
+4615	4615_L16	9	61	a	a	match
+4615	4615_L16	10	1	n	n	match
+4615	4615_L16	11	29		s	null
+4615	4615_L16	12	29	s	s	match
+4615	4615_L16	13	12	p	p	match
+4615	4615_L16	14	81	e	e	match
+4615	4615_L16	15	22	r	r	match
+4615	4615_L16	16	33	t	t	match
+4615	4615_L16	17	84	e	e	match
+4615	4615_L16	18	77	d	d	match
+4615	4615_L16	19	81	e	e	match
+4615	4615_L16	20	92	g	g	match
+4615	4615_L16	21	83	e	e	match
+4615	4615_L16	22	9	n	o	conflict
+4615	4615_L16	23	29	s	s	match
+4615	4615_L17	1	7	o	o	match
+4615	4615_L17	2	2	n	n	match
+4615	4615_L17	3	4	n	n	match
+4615	4615_L17	4	6	o	o	match
+4615	4615_L17	5	36	u	u	match
+4615	4615_L17	6	27	s	s	match
+4615	4615_L17	7	76	d	d	match
+4615	4615_L17	8	7	o	o	match
+4615	4615_L17	9	3	n	n	match
+4615	4615_L17	10	81		e	null
+4615	4615_L17	11	4	n	n	match
+4615	4615_L17	12	31	e	t	conflict
+4615	4615_L17	13	91	g	g	match
+4615	4615_L17	14	22	r	r	match
+4615	4615_L17	15	61	a	a	match
+4615	4615_L17	16	2	n	n	match
+4615	4615_L17	17	76	d	d	match
+4615	4615_L17	18	84	e	e	match
+4615	4615_L17	19	121			null
+4615	4615_L17	20	82	e	e	match
+4615	4615_L17	21	26	s	s	match
+4615	4615_L17	22	12	p	p	match
+4615	4615_L17	23	83	e	e	match
+4615	4615_L17	24	21	r	r	match
+4615	4615_L17	25	61	a	a	match
+4615	4615_L17	26	3	n	n	match
+4615	4615_L18	1	71	c	c	match
+4615	4615_L18	2	82	e	e	match
+4615	4615_L18	3	18	q	q	match
+4615	4615_L18	4	37	u	u	match
+4615	4615_L18	5	81	e	e	match
+4615	4615_L18	6	27	s	s	match
+4615	4615_L18	7	101	i	i	match
+4615	4615_L18	8	5	n	n	match
+4615	4615_L18	9	6	o	o	match
+4615	4615_L18	10	40	u	u	match
+4615	4615_L18	11	29	s	s	match
+4615	4615_L18	12	62	a	a	match
+4615	4615_L18	13	37	u	u	match
+4615	4615_L18	14	102		i	null
+4615	4615_L18	15	9	o	o	match
+4615	4615_L18	16	4	n	n	match
+4615	4615_L18	17	28	s	s	match
+4615	4615_L18	18	76	d	d	match
+4615				e		plain-only
+4615	4615_L18	19	37	u	u	match
+4615	4615_L18	20	81		e	null
+4615	4615_L18	21	26	x	s	conflict
+4615	4615_L18	22	7	o	o	match
+4615	4615_L18	23	39	u	u	match
+4615	4615_L19	1	31	t	t	match
+4615	4615_L19	2	22	r	r	match
+4615	4615_L19	3	8	o	o	match
+4615	4615_L19	4	102	i	i	match
+4615	4615_L19	5	29	s	s	match
+4615	4615_L19	6	13	p	p	match
+4615	4615_L19	7	105	i	i	match
+4615	4615_L19	8	82	e	e	match
+4615	4615_L19	9	72	c	c	match
+4615	4615_L19	10	94	e	g	conflict
+4615	4615_L19	11	26	s	s	match
+4615	4615_L19	12	77	d	d	match
+4615	4615_L19	13	83		e	null
+4615	4615_L19	14	326	artillerie		word
+4615	4615_L19	15	16	q	q	match
+4615	4615_L19	16	37	u	u	match
+4615	4615_L19	17	81	e	e	match
+4615	4615_L19	18	83	e	e	match
+4615	4615_L19	19	3	n	n	match
+4615	4615_L19	20	12	p	p	match
+4615	4615_L19	21	61	a	a	match
+4615	4615_L19	22	26	s	s	match
+4615	4615_L19	23	29	s	s	match
+4615	4615_L20	1	61	a	a	match
+4615	4615_L20	2	2	n	n	match
+4615	4615_L20	3	31	t	t	match
+4615	4615_L20	4	3	n	n	match
+4615	4615_L20	5	6	o	o	match
+4615	4615_L20	6	40	u	u	match
+4615	4615_L20	7	29	s	s	match
+4615	4615_L20	8	14	p	p	match
+4615	4615_L20	9	7	o	o	match
+4615	4615_L20	10	39	u	u	match
+4615	4615_L20	11	111	r	l	conflict
+4615	4615_L20	12	21	r	r	match
+4615	4615_L20	13	102	i	i	match
+4615	4615_L20	14	8	o	o	match
+4615	4615_L20	15	2	n	n	match
+4615	4615_L20	16	27	s	s	match
+4615	4615_L20	17	82	e	e	match
+4615	4615_L20	18	117	m	m	match
+4615	4615_L20	19	13	p	p	match
+4615	4615_L20	20	6	o	o	match
+4615	4615_L20	21	21	r	r	match
+4615	4615_L20	22	31	t	t	match
+4615	4615_L20	23	84	e	e	match
+4615				r		plain-only
+4615	4615_L21	1	121			null
+4615	4615_L21	2	272	nyeumegen		word
+4615	4615_L21	3	12	p	p	match
+4615	4615_L21	4	7	o	o	match
+4615	4615_L21	5	35	u	t	conflict
+4615	4615_L21	6	21	r	r	match
+4615	4615_L21	7	61	b	a	conflict
+4615	4615_L21	8	39	u	u	match
+4615	4615_L21	9	33		t	null
+4615	4615_L21	10	62		a	null
+4615	4615_L21	11	2		n	null
+4615	4615_L21	12	33	t	t	match
+4615	4615_L21	13	26	s	s	match
+4615	4615_L21	14	102	i	i	match
+4615	4615_L21	15	82		e	null
+4615	4615_L21	16	40	u	u	match
+4615	4615_L21	17	8	o	o	match
+4615	4615_L21	18	39	u	u	match
+4615	4615_L21	19	28	s	s	match
+4615	4615_L21	20	33	t	t	match
+4615	4615_L21	21	24	r	r	match
+4615	4615_L21	22	7	o	o	match
+4615	4615_L22	1	40	u	u	match
+4615	4615_L22	2	36	u	u	match
+4615	4615_L22	3	81	e	e	match
+4615	4615_L22	4	27	z	s	conflict
+4615	4615_L22	5	112	l	l	match
+4615	4615_L22	6	61	a	a	match
+4615	4615_L22	7	28		s	null
+4615	4615_L22	8	71	c	c	match
+4615	4615_L22	9	96	h	h	match
+4615	4615_L22	10	9	o	o	match
+4615	4615_L22	11	26	s	s	match
+4615	4615_L22	12	82	e	e	match
+4615	4615_L22	13	86	f	f	match
+4615	4615_L22	14	61	a	a	match
+4615	4615_L22	15	101	i	i	match
+4615	4615_L22	16	26	s	s	match
+4615	4615_L22	17	62	a	a	match
+4615	4615_L22	18	66	b	b	match
+4615	4615_L22	19	112	l	l	match
+4615	4615_L22	20	82	e	e	match
+4615	4615_L22	21	122			null
+4615	4615_L22	22	121			null
+4615	4615_L23	1	36	u	u	match
+4615	4615_L23	2	6	o	o	match
+4615	4615_L23	3	39	u	u	match
+4615	4615_L23	4	28	s	s	match
+4615	4615_L23	5	3	u	n	conflict
+4615	4615_L23	6	7	o	o	match
+4615	4615_L23	7	40	u	u	match
+4615	4615_L23	8	30	s	s	match
+4615	4615_L23	9	12	p	p	match
+4615	4615_L23	10	6	o	o	match
+4615	4615_L23	11	37	u	u	match
+4615	4615_L23	12	113		l	null
+4615	4615_L23	13	7		o	null
+4615	4615_L23	14	113	r	l	conflict
+4615	4615_L23	15	21	r	r	match
+4615	4615_L23	16	102	i	i	match
+4615	4615_L23	17	82	e	e	match
+4615	4615_L23	18	27	z	s	conflict
+4615	4615_L23	19	61	a	a	match
+4615	4615_L23	20	26	s	s	match
+4615	4615_L23	21	30	s	s	match
+4615	4615_L23	22	104	i	i	match
+4615	4615_L23	23	27	s	s	match
+4615	4615_L23	24	31	t	t	match
+4615	4615_L23	25	81	e	e	match
+4615	4615_L23	26	22	r	r	match
+4615	4615_L24	1	w:et	et		clear
+4615	4615_L24	2	76	d	d	match
+4615	4615_L24	3	81	e	e	match
+4615	4615_L24	4	13	p	p	match
+4615	4615_L24	5	101	i	i	match
+4615	4615_L24	6	82	e	e	match
+4615	4615_L24	7	72	c	c	match
+4615	4615_L24	8	83	e	e	match
+4615	4615_L24	9	26	s	s	match
+4615	4615_L24	10	w:et	et		clear
+4615	4615_L24	11	77	d	d	match
+4615	4615_L24	12	82	e	e	match
+4615	4615_L24	13	91	u	g	conflict
+4615	4615_L24	14	6	o	o	match
+4615	4615_L24	15	37		u	null
+4615	4615_L24	16	26	z	s	conflict
+4615	4615_L24	17	91	g	g	match
+4615	4615_L24	18	82	e	e	match
+4615	4615_L24	19	2	n	n	match
+4615	4615_L24	20	27	s	s	match
+4615	4615_L24	21	121			null
+4615	4615_L24	22	78	d	d	match
+4615	4615_L24	23	84	e	e	match
+4615	4615_L25	1	79	d	d	match
+4615	4615_L25	2	82	e	e	match
+4615	4615_L25	3	112	l	l	match
+4615	4615_L25	4	65	a	a	match
+4615	4615_L25	5	w:nous			clear-unmatched
+4615	4615_L25	6	w:avons			clear-unmatched
+4615	4615_L25	7	w:eu			clear-unmatched
+4615	4615_L25	8	w:les			clear-unmatched
+4615	4615_L25	9	w:nouvelles			clear-unmatched
+4615	4615_L25	10	w:que			clear-unmatched
+4615	4615_L25	11	w:Rittmeister			clear-unmatched
+4615	4615_L25	12	w:Schenck			clear-unmatched
+4615	4615_L25	13	w:et			clear-unmatched
+4615	4615_L25	14	w:encores			clear-unmatched
+4615	4615_L25	15	w:par			clear-unmatched
+4615	4615_L25	16	w:dela			clear-unmatched
+4615	4615_L25	17	w:en			clear-unmatched
+4615	4615_L25	18	w:voz			clear-unmatched
+4615	4615_L25	19	w:quartiers			clear-unmatched
+4615	4615_L25	20	w:je			clear-unmatched
+4615	4615_L25	21	w:vous			clear-unmatched
+4615	4615_L25	22	w:supplie			clear-unmatched
+4615	4615_L25	23	w:de			clear-unmatched
+4615	4615_L25	24	w:nous			clear-unmatched
+4615	4615_L25	25	w:mander			clear-unmatched
+4615	4615_L25	26	w:s'il			clear-unmatched
+4615	4615_L25	27	w:est			clear-unmatched
+4615	4615_L25	28	w:ainsi			clear-unmatched
+4615	4615_L25	29	w:ou			clear-unmatched
+4615	4615_L25	30	w:non			clear-unmatched
+4615	4615_L26	1	w:sur			clear-unmatched
+4615	4615_L26	2	w:ce			clear-unmatched
+4615	4615_L26	3	w:ferai			clear-unmatched
+4615	4615_L26	4	w:la			clear-unmatched
+4615	4615_L26	5	w:fin			clear-unmatched
+4615	4615_L26	6	w:priant			clear-unmatched
+4615	4615_L26	7	w:le			clear-unmatched
+4615	4615_L26	8	w:tout			clear-unmatched
+4615	4615_L26	9	w:puissant			clear-unmatched
+4615	4615_L26	10	w:vous			clear-unmatched
+4615	4615_L26	11	w:donner			clear-unmatched

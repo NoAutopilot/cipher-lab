@@ -1,0 +1,20 @@
+code	value	grade	evidence
+ii	p	C	4613 L09 'receu ii ar' = receu par
+iii	l	C	4613 L02 que-iii-le, L10 eu iii a charge, L16 iii equel; L21 qu'i iii (z not written)
+121	NULL	C	4615 between words, 8x, no plaintext letters (traicte 121 avecq; chemin 121 entre; grande 121 esperance)
+122	NULL	C	4615 L12 droict 122 vers; L22 faisable 122
+123	l	M	4613 L18 qui-123-z = qu'ilz, L29 cart-i-123-z = Cartil(la); but 4615 L13 after clear 'adviser' 123 132 reads as null
+128	?	M	4613 L28 d-e-v-e-t-h-e-128 against 'de Trittheim': last part of the place name, unit not settled
+132	NULL	C	4615 with 121 as a pair (121 132) after avons, demourer, Bommel; alone after main
+136	uingt	M	4613 L04 accorde 136 [1] demy: 'vingt' in the decipherment; the following 1 (n) is not accounted for
+141	NULL	C	4615 L02 337 121 141 mais: no plaintext between Reystres and mais
+218	tillemont	M	4613 L11 de la 312 218 pour: decipherment 'Tillemont, l'aultre de Middelbuerch'; the cipher has one sign
+270	bommel	C	4615 L13 uers 270 = vers Bommel
+272	nyeumegen	C	4615 L12 entre Graue et 272; L21 emporter 272
+273	maestricht	C	4613 L24 de la 312 273 = de la ville de Maestricht
+312	uillede	C	4613 L11 and L24 de la 312 = de la ville de
+326	artillerie	C	4615 L19 pieces de 326 = pieces d'artillerie
+337	reystres	C	4615 L02 avec nous 337 = avecq noz Reystres
+338	cheuaulxlegiers	C	4613 L21 trois cent 338 = 300 chevaulx legiers
+339	harquebouziers	C	4613 L20 quinze cent 339 = 1500 harquebouziers
+347	uiures	C	4613 L25 fourraiges et 347 = et vivres

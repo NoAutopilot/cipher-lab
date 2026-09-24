@@ -1,0 +1,140 @@
+code	value	grade	source	note
+1	n	C	aligned 4613/4615	matches plaintext 10x of 12
+2	n	C	aligned 4613/4615	matches plaintext 33x of 36
+3	n	C	aligned 4613/4615	matches plaintext 16x of 17
+4	n	C	aligned 4613/4615	matches plaintext 15x of 15
+5	n	C	aligned 4613/4615	matches plaintext 10x of 12
+6	o	C	aligned 4613/4615	matches plaintext 32x of 33
+7	o	C	aligned 4613/4615	matches plaintext 22x of 25
+8	o	C	aligned 4613/4615	matches plaintext 14x of 16
+9	o	C	aligned 4613/4615	matches plaintext 9x of 11
+10	o	C	aligned 4613/4615	matches plaintext 8x of 9
+11	p	C	aligned 4613/4615	matches plaintext 1x of 2
+12	p	C	aligned 4613/4615	matches plaintext 17x of 18
+13	p	C	aligned 4613/4615	matches plaintext 9x of 9
+14	p	C	aligned 4613/4615	matches plaintext 4x of 4
+15	p	C	aligned 4613/4615	matches plaintext 3x of 3
+16	q	C	aligned 4613/4615	matches plaintext 8x of 9
+17	q	C	aligned 4613/4615	matches plaintext 2x of 3
+18	q	C	aligned 4613/4615	matches plaintext 3x of 3
+19	q	C	aligned 4613/4615	matches plaintext 1x of 2
+20	q	C	aligned 4613/4615	matches plaintext 1x of 1
+21	r	C	aligned 4613/4615	matches plaintext 33x of 36
+22	r	C	aligned 4613/4615	matches plaintext 16x of 17
+23	r	C	aligned 4613/4615	matches plaintext 4x of 6
+24	r	C	aligned 4613/4615	matches plaintext 7x of 7
+25	r	C	aligned 4613/4615	matches plaintext 4x of 4
+26	s	C	aligned 4613/4615	matches plaintext 36x of 41
+27	s	C	aligned 4613/4615	matches plaintext 23x of 28
+28	s	C	aligned 4613/4615	matches plaintext 15x of 18
+29	s	C	aligned 4613/4615	matches plaintext 13x of 16
+30	s	C	aligned 4613/4615	matches plaintext 10x of 14
+31	t	C	aligned 4613/4615	matches plaintext 24x of 26
+32	t	C	aligned 4613/4615	matches plaintext 8x of 10
+33	t	C	aligned 4613/4615	matches plaintext 14x of 16
+34	t	C	aligned 4613/4615	matches plaintext 4x of 5
+35	t	C	aligned 4613/4615	matches plaintext 4x of 5
+36	u	C	aligned 4613/4615	matches plaintext 18x of 21
+37	u	C	aligned 4613/4615	matches plaintext 19x of 21
+38	u	C	aligned 4613/4615	matches plaintext 10x of 11
+39	u	C	aligned 4613/4615	matches plaintext 17x of 19
+40	u	C	aligned 4613/4615	matches plaintext 25x of 29
+41	v	I	table rule	observed only off-block: {'NULL': 1}
+42	v	I	table rule	not observed in 4613/4615
+43	v	I	table rule	not observed in 4613/4615
+44	v	I	table rule	not observed in 4613/4615
+45	v	I	table rule	not observed in 4613/4615
+46	x	I	table rule	not observed in 4613/4615
+47	x	I	table rule	not observed in 4613/4615
+48	x	I	table rule	not observed in 4613/4615
+49	x	I	table rule	not observed in 4613/4615
+50	x	I	table rule	not observed in 4613/4615
+51	y	I	table rule	observed only off-block: {'NULL': 1, 'i': 1}
+52	y	I	table rule	not observed in 4613/4615
+53	y	I	table rule	observed only off-block: {'z': 1}
+54	y	I	table rule	not observed in 4613/4615
+55	y	I	table rule	observed only off-block: {'a': 1}
+56	z	C	aligned 4613/4615	matches plaintext 1x of 3
+57	z	C	aligned 4613/4615	matches plaintext 1x of 1
+58	z	I	table rule	not observed in 4613/4615
+59	z	I	table rule	not observed in 4613/4615
+60	z	I	table rule	not observed in 4613/4615
+61	a	C	aligned 4613/4615	matches plaintext 27x of 32
+62	a	C	aligned 4613/4615	matches plaintext 23x of 26
+63	a	C	aligned 4613/4615	matches plaintext 6x of 7
+64	a	C	aligned 4613/4615	matches plaintext 4x of 4
+65	a	C	aligned 4613/4615	matches plaintext 6x of 7
+66	b	C	aligned 4613/4615	matches plaintext 4x of 4
+67	b	I	table rule	not observed in 4613/4615
+68	b	I	table rule	not observed in 4613/4615
+69	b	I	table rule	not observed in 4613/4615
+70	b	I	table rule	not observed in 4613/4615
+71	c	C	aligned 4613/4615	matches plaintext 9x of 15
+72	c	C	aligned 4613/4615	matches plaintext 11x of 13
+73	c	C	aligned 4613/4615	matches plaintext 4x of 5
+74	c	C	aligned 4613/4615	matches plaintext 2x of 2
+75	c	C	aligned 4613/4615	matches plaintext 1x of 1
+76	d	C	aligned 4613/4615	matches plaintext 20x of 21
+77	d	C	aligned 4613/4615	matches plaintext 7x of 8
+78	d	C	aligned 4613/4615	matches plaintext 3x of 3
+79	d	C	aligned 4613/4615	matches plaintext 3x of 3
+80	d	C	aligned 4613/4615	matches plaintext 1x of 1
+81	e	C	aligned 4613/4615	matches plaintext 40x of 47
+82	e	C	aligned 4613/4615	matches plaintext 50x of 55
+83	e	C	aligned 4613/4615	matches plaintext 27x of 31
+84	e	C	aligned 4613/4615	matches plaintext 18x of 19
+85	e	C	aligned 4613/4615	matches plaintext 13x of 15
+86	f	C	aligned 4613/4615	matches plaintext 4x of 4
+87	f	C	aligned 4613/4615	matches plaintext 2x of 2
+88	f	C	aligned 4613/4615	matches plaintext 1x of 3
+89	f	I	table rule	not observed in 4613/4615
+90	f	C	aligned 4613/4615	matches plaintext 3x of 3
+91	g	C	aligned 4613/4615	matches plaintext 6x of 7
+92	g	C	aligned 4613/4615	matches plaintext 4x of 6
+93	g	C	aligned 4613/4615	matches plaintext 1x of 2
+94	g	C	aligned 4613/4615	matches plaintext 2x of 4
+95	g	I	table rule	not observed in 4613/4615
+96	h	C	aligned 4613/4615	matches plaintext 4x of 6
+97	h	I	table rule	not observed in 4613/4615
+98	h	I	table rule	not observed in 4613/4615
+99	h	I	table rule	not observed in 4613/4615
+100	h	I	table rule	not observed in 4613/4615
+101	i	C	aligned 4613/4615	matches plaintext 16x of 20
+102	i	C	aligned 4613/4615	matches plaintext 14x of 16
+103	i	C	aligned 4613/4615	matches plaintext 4x of 5
+104	i	C	aligned 4613/4615	matches plaintext 4x of 4
+105	i	C	aligned 4613/4615	matches plaintext 3x of 4
+106	k	I	table rule	not observed in 4613/4615
+107	k	I	table rule	observed only off-block: {'y': 1, 'NULL': 1}
+108	k	I	table rule	not observed in 4613/4615
+109	k	I	table rule	not observed in 4613/4615
+110	k	I	table rule	not observed in 4613/4615
+111	l	C	aligned 4613/4615	matches plaintext 5x of 7
+112	l	C	aligned 4613/4615	matches plaintext 17x of 19
+113	l	C	aligned 4613/4615	matches plaintext 7x of 9
+114	l	C	aligned 4613/4615	matches plaintext 4x of 4
+115	l	C	aligned 4613/4615	matches plaintext 5x of 5
+116	m	C	aligned 4613/4615	matches plaintext 3x of 3
+117	m	C	aligned 4613/4615	matches plaintext 5x of 5
+118	m	C	aligned 4613/4615	matches plaintext 5x of 5
+119	m	C	aligned 4613/4615	matches plaintext 2x of 2
+120	m	C	aligned 4613/4615	matches plaintext 2x of 2
+ii	p	C	aligned 4613/4615 (r18/words.tsv)	4613 L09 'receu ii ar' = receu par
+iii	l	C	aligned 4613/4615 (r18/words.tsv)	4613 L02 que-iii-le, L10 eu iii a charge, L16 iii equel; L21 qu'i iii (z not written)
+121	NULL	C	aligned 4613/4615 (r18/words.tsv)	4615 between words, 8x, no plaintext letters (traicte 121 avecq; chemin 121 entre; grande 121 esperance)
+122	NULL	C	aligned 4613/4615 (r18/words.tsv)	4615 L12 droict 122 vers; L22 faisable 122
+123	l	M	aligned 4613/4615 (r18/words.tsv)	4613 L18 qui-123-z = qu'ilz, L29 cart-i-123-z = Cartil(la); but 4615 L13 after clear 'adviser' 123 132 reads as null
+128	?	M	aligned 4613/4615 (r18/words.tsv)	4613 L28 d-e-v-e-t-h-e-128 against 'de Trittheim': last part of the place name, unit not settled
+132	NULL	C	aligned 4613/4615 (r18/words.tsv)	4615 with 121 as a pair (121 132) after avons, demourer, Bommel; alone after main
+136	uingt	M	aligned 4613/4615 (r18/words.tsv)	4613 L04 accorde 136 [1] demy: 'vingt' in the decipherment; the following 1 (n) is not accounted for
+141	NULL	C	aligned 4613/4615 (r18/words.tsv)	4615 L02 337 121 141 mais: no plaintext between Reystres and mais
+218	tillemont	M	aligned 4613/4615 (r18/words.tsv)	4613 L11 de la 312 218 pour: decipherment 'Tillemont, l'aultre de Middelbuerch'; the cipher has one sign
+270	bommel	C	aligned 4613/4615 (r18/words.tsv)	4615 L13 uers 270 = vers Bommel
+272	nyeumegen	C	aligned 4613/4615 (r18/words.tsv)	4615 L12 entre Graue et 272; L21 emporter 272
+273	maestricht	C	aligned 4613/4615 (r18/words.tsv)	4613 L24 de la 312 273 = de la ville de Maestricht
+312	uillede	C	aligned 4613/4615 (r18/words.tsv)	4613 L11 and L24 de la 312 = de la ville de
+326	artillerie	C	aligned 4613/4615 (r18/words.tsv)	4615 L19 pieces de 326 = pieces d'artillerie
+337	reystres	C	aligned 4613/4615 (r18/words.tsv)	4615 L02 avec nous 337 = avecq noz Reystres
+338	cheuaulxlegiers	C	aligned 4613/4615 (r18/words.tsv)	4613 L21 trois cent 338 = 300 chevaulx legiers
+339	harquebouziers	C	aligned 4613/4615 (r18/words.tsv)	4613 L20 quinze cent 339 = 1500 harquebouziers
+347	uiures	C	aligned 4613/4615 (r18/words.tsv)	4613 L25 fourraiges et 347 = et vivres

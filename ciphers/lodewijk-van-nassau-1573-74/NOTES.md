@@ -1,4 +1,4 @@
-open
+partial
 
 # Lodewijk (Louis) van Nassau to Willem van Oranje, four cipher letters, 1573-1574
 
@@ -220,3 +220,67 @@ count; no third pass was run (out of budget/brief scope) to settle which is clos
 
 No host requests (images already on disk from R9's capture). No key, no alignment, no novelty wording. Cost:
 under the $6 cap (2 Sonnet subagents for the blind passes, no Opus).
+
+## R18: key from 4613/4615 (24 September 2026, LANE R worker R18, Opus)
+
+**Unit: the letter.** The cipher is a regular homophonic table, five numbers per letter in alphabetical blocks
+that start at n: n 1-5, o 6-10, p 11-15, q 16-20, r 21-25, s 26-30, t 31-35, u 36-40, v 41-45, x 46-50, y 51-55,
+z 56-60, a 61-65, b 66-70, c 71-75, d 76-80, e 81-85, f 86-90, g 91-95, h 96-100, i 101-105, k 106-110,
+l 111-115, m 116-120. Numbers above 120 are names, words or nulls (121, 122, 132, 141 nulls in 4615); roman
+ii = p, iii = l. Clear French words are written among the numerals. Found from the alignment itself: 4613's
+"ne perdions pas le temps lequel est bien court" is 37 tokens for 37 letters, and the numbers fall into the
+blocks; the rule was then tested on every aligned numeral of both letters.
+
+**Method.** The blind passes were not reconciled. R18 read 4613 p1 and 4615 p1 again on the page image (2x
+enlarged strips, halves with overlap) with the decipherment beside it: `r18/cipher_4613.txt`,
+`r18/cipher_4615.txt` (manuscript line numbers L01.., not R12's crop bands). `r18/build.py` aligns each letter
+to its decipherment body (`r18/segments.tsv`) by dynamic programming (a numeral emits its block letter, a
+different letter at a cost, or nothing; name and null signs from `r18/words.tsv`) and writes
+`ciphertext_sib.tsv`, `pairs_sib.tsv`, `key.tsv`, `key_conflicts.tsv`; `python3 r18/build.py --check` exits
+non-zero if any is stale. `decode.json` + `tools/decode_key.py . --check` (exit 0) regenerates the readings.
+
+**Where R18 differs from both blind passes** (not a full diff): both passes missed the last 3-6 numerals of
+many 4613 lines (line ends at the right edge; e.g. L02 ends `85 27 33 101 7 3 28`); both read 4613's clear line
+"pour autant nous vous supplions bien humblement" and "Au demourant il nous" as other words or numerals; their
+line numbering drifts from the manuscript's by up to two lines. 4615: passes and R18 mostly agree; R18 reads
+L09 clear "Si en cas que", L13 clear "je vous supplie de y adviser", and 121 (not "e") at L22 end, doubtful.
+
+**Counts.** Aligned numerals: 4613 485 match / 34 conflict, 4615 441 / 35 (926 / 69 in all); 91 nulls, 25
+word signs. Most conflicts are the cipher text differing from the decipherment, not the key: the cipher has
+"avec nous" for "avecq noz", "vostre" for "voz", "quinze cent" / "trois cent" for "1500" / "300", "il e a" for
+"il y a", "pour autant" where R12's transcription of the decipherment reads "pour [?enscavoir]" (4613) and
+"pour but" (4615); R12's "[?p'avons]" in 4613 should be checked on the sheet. A few are likely misreadings by
+R18 at 150 dpi (4615 L24 91 where v = 41-45 is expected; 4613 L12 55 for a; 4615 L06 19 for p); listed in
+`key_conflicts.tsv`.
+
+**key.tsv:** 120 numerals: 87 grade C (seen aligned to their block letter), 33 grade I (not seen in
+4613/4615, value from the table rule). 19 word/name/null signs: 15 C (270 Bommel, 272 Nyeumegen, 273
+Maestricht, 312 "ville de", 326 artillerie, 337 Reystres, 338 chevaulx legiers, 339 harquebouziers, 347
+vivres, 121/122/132/141 null, ii p, iii l), 4 M (123 l in 4613 but a null after clear text in 4615; 128 part
+of "Trittheim", unit unsettled; 136 "vingt" with a following 1 unexplained; 218 Tillemont, where the
+decipherment has "Tillemont, l'aultre de Middelbuerch" for one sign).
+
+**Readings (grade counts from `tools/decode_key.py`, 24 Sept 2026):**
+
+| letter | source of ciphertext | tokens | C | I | M | U |
+|---|---|---|---|---|---|---|
+| 4613+4615 (siblings) | R18 eye-read | 1107 | 1086 | 7 | 13 | 1 |
+| 4610 (3 June 1573) | R13 draft, unsettled | 1546 | 1094 | 58 | 106 | 288 |
+| 4611 (2 July 1573) | R13 draft, unsettled | 1414 | 833 | 74 | 276 | 231 |
+| 4612 (6 Mar 1574) | R13 draft, unsettled | 820 | 358 | 140 | 287 | 35 |
+| 4616 (12 Apr 1574) | R13 draft, unsettled | 261 | 206 | 1 | 28 | 26 |
+
+The token counts include clear words. The target readings come from R13's reconciled drafts, where every
+column the two passes disagree on is confidence M and every split token (`22/112`) is U; they read as French
+in the agreed stretches (4616 L05 "forcen pein ... pod enlogier", L10 "...lustos...") and are gappy
+elsewhere. 4610/4611/4612 use numbers above 120 more often (I and U counts), consistent with a larger
+nomenclator in 1573 than the siblings show, or with the same table plus names; not settled here.
+
+**What is left.** (1) Settle R13's `recon/<briefnr>/disagreements.tsv` on the image with this key as a check
+(the table makes most disagreements decidable: the reading must be the number whose block gives the letter
+the context needs, on the image); then re-run `decode_key.py`. (2) Signs above 120 in the targets: list them
+and their contexts, key those the siblings cannot. (3) 4613 p2 decipherment: re-read "[?enscavoir]" and
+"[?p'avons]" against the cipher's "pour autant" and the aligned letters. Novelty not classified.
+Tool change: `tools/decode_key.py` gained `clear_prefix` (a tsv sign starting with it is a clear word, for
+LANE R's `=word` passes). `tools/tests/test_decode_key.py` fails on ciphers/rah-canada-1869 both before and
+after this change (pre-existing, not touched).
