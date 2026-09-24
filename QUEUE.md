@@ -4870,3 +4870,88 @@ no candidate reached that stage). WebSearch: 0.
 **Raw/kept/copy-free: 0 new rows, 0 copy-free.** No rows added to `QUEUE-scores.json` (nothing to score); no
 `EU2-` prefixed nominations this pass. Full detail and every dropped item's reason:
 `sources/solver-diffs/2026-09-24-lane-n3-eu2.tsv`.
+
+## Dutch digital editions with facsimiles (LANE N3 scout of 24 September 2026, scNL)
+
+Row of `.claude/briefs/runs/2026-09-24-lane-n3-scNL.md`. Hosts: `resources.huygens.knaw.nl`/`*.huygens.knaw.nl`,
+`jsru.kb.nl`/KB IIIF, WebSearch, github.com. Read first: CLAUDE.md rule 1, LESSONS.md §§1-2, the "Dutch and
+Nordic archive candidates", "Dutch and Belgian archives" and "Huygens and Nationaal Archief correspondence
+editions" sections above (WVO closed; Heinsius/De Witt/Oldenbarnevelt/Willem III-Bentinck/Staten-Generaal
+retroboeken swept twice, HU1-HU11), and `sources/wvo/print-status-2026-09-24.tsv`. Full raw data:
+`sources/solver-diffs/2026-09-24-lane-n3-nl.tsv`. Excluded against fresh shallow clones of
+`dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers`, `sources/cryptiana/`, CATALOG.md, LANDSCAPE.md and
+`ciphers/` (grepped for Alva/Alba, Grotius, Reigersberch -- no match to this pass's finds beyond Tomokiyo's
+unrelated Spanish-archive Alba material, detailed below).
+
+**Zero copy-free candidates this pass — a tested negative, per the LANE N3 widening note (24 Sept 16:53 UTC).**
+Two untried routes named in this brief were run to completion and both close out clean:
+
+**1. Grotius's Briefwisseling (`grotius.huygens.knaw.nl`), the one Huygens ING correspondence database never
+searched before this pass** (flagged explicitly unsearched in the "Huygens and Nationaal Archief" section's
+caveat 3, since it is a separate E-laborate/Apache Wicket app, not a retroboeken viewer). Its search form is a
+stateful Wicket AJAX panel that a plain form POST/GET cannot drive cold (curl gets an "Internal error" page
+without a live session; Playwright's own navigation refuses the server's un-encoded `;jsessionid=...` redirect
+Location header outright, "path contains matrix parameter separator" — a Chromium URL-parser hardening
+against semicolon-delimited matrix parameters, not a proxy or server block, confirmed by the identical raw
+Location header working fine when followed by curl instead of a browser). **Working route for the next
+worker:** curl with a cookie jar, GET the `/years/YYYY/` page once, then GET the visible search form's own
+`;jsessionid=...` action path with `query=<term>` appended as a plain query string (the form's `method="get"`
+means the browser would do exactly this) — the response is a 302 to a fresh `wicket:interface=:N::::` URL,
+follow that once (still with curl) to get the results page. Individual letter pages need a **completely fresh**
+`curl -c cookies.txt https://grotius.huygens.knaw.nl/letters/ID` (no jsessionid, new session) — reusing the
+search session's cookie/jsessionid on a `letters/ID` path returns the stale search-results page silently, not
+an error, which cost this pass one wasted round of fetches before the pattern was caught.
+
+`query=cijfer`, scope "Search site", type filtered to `letter` (627 raw hits including 598 apparatus/index
+"note"-type false positives; 29 after the type filter) → 14 real letters, all read in full, all from the
+Hugo de Groot (Grotius)–Nicolaas van Reigersberch correspondence, 1628-1637 (dbnl.org, Molhuysen/Meulenbroek/
+Witkam eds.) — **the same circle already flagged as "a lead, not a candidate" in the "Digital correspondence
+editions with cipher notes" section above** (17 ePistolarium `cijfer` hits, only 2 of 17 read there). This
+pass reads all 14 of this site's own letter-type hits (a slightly different count than ePistolarium's 17,
+same circle) and finds **zero surviving ciphertext**: every letter only discusses sending, receiving,
+awaiting or losing a cipher key ("Ick sende cijfer ende jargon" / "Het cijfer is mij wel behandycht" / "mijn
+cijfer is misleyt"), except one (1403, 27 May 1629) which reports that a *different* person's letter
+("Verreyckens brieff") was "int cijfer geschreven ... noch niet ontcijfert" — a report about someone else's
+undeciphered letter, not surviving ciphertext in this correspondence. Checked by a digit-run regex across
+every letter body plus a manual read of every cijfer-adjacent sentence. **This closes the Grotius-Reigersberch
+lead with a definitive negative** (not a solver run — no ciphertext exists here to attempt).
+
+**2. KB IIIF / manuscripts and Delpher via jsru.kb.nl SRU.** `manuscripts.kb.nl` (the KB's own medieval-
+manuscripts search, BYVANCK set) was retired 15 December 2025 per the KB's own site notice (confirmed by
+WebSearch; no successor named yet). `collecties.kb.nl/zoeken`, KB's newer unified collection search, is
+Cloudflare-challenged (HTTP 403, "Just a moment..." interstitial) — one attempt, not retried, not pursued
+further (same class of block CLAUDE.md already documents as unsolvable by the browser tool alone).
+`jsru.kb.nl/sru/sru` serves only the GGC collection for this project (confirmed again: `x-collection=DDD` and
+`x-collection=DTS` both return "Collection ... does not exist" — Delpher's newspaper/text full-text indexes are
+not reachable from this SRU base under those codes, so "Delpher via jsru.kb.nl SRU" in practice means GGC, the
+same book/manuscript metadata catalogue LANE S/N already found noisy for "cijferschrift"). This pass ran the
+brief's other named terms not yet tried against GGC: `geheimschrift` (142 hits — a 1993 cryptology-exhibition
+book, two 2023/2024 puzzle books and other noise, same pattern as before, **except one real hit**, below);
+`gecijferde brief` and `cijferbrief` (0 hits each).
+
+**One genuine, previously unflagged find, not copy-free, not scored as a row:** KB Den Haag, shelfmark **KA
+169**, catalogued as "Sleutels van geheimschrift, gebruikt in brieven aan Alva e.a." (Keys of cipher, used in
+letters to Alva and others) — a manuscript, paper, 6 folios, PPN 310865956, subject-tagged Fernando Alvarez de
+Toledo, 3rd Duke of Alba (1507-1582), the Spanish governor-general of the Netherlands during the Dutch Revolt
+(1567-1573). Cipher *keys* to letters to Alba, catalogued in Den Haag rather than the Spanish archives — not
+named anywhere in this repository: fresh shallow clones of both solver repos have no "alva"/"alba" hit at all;
+`sources/cryptiana/`'s Spanish-cipher pages (spanish2.htm/2B/2C/3.htm) discuss the Duke of Alba's ciphers at
+length but exclusively via AGS/Simancas material (PARES), never citing a KB Den Haag shelfmark. The GGC record
+carries no `<dcx:image>` field, and both `resolver.kb.nl` and the underlying `webggc.oclc.org` PICA catalogue
+interface need session state a plain curl fetch could not establish this pass (the same WebGGC/OCLC problem as
+CalmView's WebForms, unsolved here) — **not confirmed digitised**, so it fails this brief's copy-free bar and
+is not nominated. Logged here as a lead for whichever future lane can run a copy order or drive the WebGGC
+session properly: if genuine surviving cipher letters *to* Alva exist anywhere reachable (Nationaal Archief,
+Koninklijk Huisarchief, or a Spanish-side holding already known to Tomokiyo/PARES), this key is exactly the
+"key beside a different letter" pattern LESSONS.md ranks highest — worth a follow-up search for the
+letters themselves before any copy order on the key alone.
+
+No QUEUE-scores.json rows added this pass (nothing scored copy-free). Requests: `grotius.huygens.knaw.nl` ~35
+(2 reachability, ~4 page-structure fetches, 2 JS files, ~4 search-submission round trips [1 browser-tool
+attempt that failed and was abandoned, curl thereafter], ~27 letter-page fetches [12 wasted on stale-session
+reuse before the fresh-session fix, 14 correct + 1 results-list refetch], all ≥1.5-2s apart), `jsru.kb.nl` 7
+(1 explain, 2 collection-does-not-exist probes, 4 GGC term queries, ≥2s apart), `resolver.kb.nl`/
+`webggc.oclc.org` 3 (redirect-chain probes for KA 169, abandoned, not retried), `www.kb.nl`/`collecties.kb.nl`
+2 (1 reachability 200, 1 search 403 Cloudflare, not retried), `github.com` 2 shallow clones (grepped for
+alva/alba, deleted after), WebSearch 3. No logins, no credentials, no subagents, no image opened, no novelty
+wording, nothing promoted, no check-solved run.
