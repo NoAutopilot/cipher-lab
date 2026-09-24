@@ -1,4 +1,4 @@
-open
+partial
 
 # August van Saksen (Sachsen) and Willem van Oranje, three cipher letters/postscripts, 1561-1564
 
@@ -199,3 +199,12 @@ plaintext_74.txt f.19 l.1 "dreyhundert" should read "dreythaussent" (cipher and 
 
 Requests: resources.huygens.knaw.nl 5 (PDFs 74, 98, 126 [one 404 on a mistyped 3-digit path, then 200], 53),
 >=2 s apart. No other host.
+
+## Verifier V3 audit, 24 September 2026 (LANE V2)
+
+126 classed **N3** in AUDIT.md (no prior decipherment or printed plaintext located; principal editions searched, see
+its log). Correction to the check-solved sweep above and to `images/inventory.tsv` ("decipherment location: none"):
+WVO lists two more witnesses for 126 beyond the Dresden original. They are the **KHA minute A 11/XIV I/4 nr. 26,
+recorded "met een 'Zeitung'"**, and a 20th-century copy in the Collectie Japikse. The minute may hold the
+postscript's text in clear. Neither has been seen. Status word moved from open to partial because 126 is read
+(C 214 of 240) and 53/57 are not.

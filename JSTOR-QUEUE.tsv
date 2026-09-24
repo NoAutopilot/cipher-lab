@@ -45,3 +45,5 @@ ciphers/huntington-luzerne-destouches-1781	"Luzerne" AND "Destouches" AND "Arnol
 ciphers/huntington-blathwayt-madrid-1728	"Port St Mary" OR "Port Ste Marie" AND 1729 AND (Keene OR Marchmont) AND (intelligence OR cipher)	2026-09-24	queued	
 ciphers/huntington-blathwayt-madrid-1728	"Ripperda" AND Segovia AND 1728 AND (letter OR intelligence) AND Madrid	2026-09-24	queued	
 ciphers/huntington-blathwayt-madrid-1728	"Blathwayt" AND Huntington AND (Spain OR Spanish) AND 1728	2026-09-24	queued	
+ciphers/august-van-saksen-1561-64	"Oranien" AND "August" AND Sachsen AND 1564 AND (Chiffre OR Zeitung)	2026-09-24	queued	
+ciphers/august-van-saksen-1561-64	"Anna von Sachsen" AND Oranien AND Kurfürst AND Briefwechsel	2026-09-24	queued	

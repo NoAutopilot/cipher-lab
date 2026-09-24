@@ -1,0 +1,6 @@
+host	requests	status
+api.crossref.org	3	ok
+api.openalex.org	1	blocked: HTTP 429 on https://api.openalex.org/works?per-page=5&search=%22auss%20Hispanien%20andere%20zeitung%20bekommen%22
+archive.org	7	ok
+be-api.us.archive.org	18	ok
+www.googleapis.com	9	ok
