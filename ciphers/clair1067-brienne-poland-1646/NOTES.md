@@ -154,3 +154,65 @@ Images: `images/src_ark_12148_btv1b90008551_f48_full_ref1600.jpg` (and f49/f50, 
 keep the folder under 30MB; native fetched fresh on demand), plus line crops `f226r_body_L*`, `f226v_L*`,
 `f227r_L*` and their `*_lines_debug.jpg` overlays. Calibration-only probes (`probe_f*.jpg`, `probe2_f*.jpg`)
 kept for the reproducibility trail.
+
+## (3) Two blind transcription passes, 24 September 2026
+
+Two independent Sonnet subagents transcribed the three cipher-bearing leaf-sides (fol.226r's last line,
+226v, 227r) blind from the line crops — neither given the other's output, neither given any existing key or
+reading — to `passA.tsv` and `passB.tsv` (line/position/group/confidence, the project's standard format;
+overline/macron marked with a leading `_`). Both independently reported that the tool's automatic line-crop
+boundaries frequently split or merged physical lines on this page (tight interlinear spacing, captions
+bleeding across crop numbers) and reconstructed the true line sequence from the full-leaf reference images
+rather than transcribing each crop slot literally — flagged here since a future reconciler should expect the
+two passes' line-numbering to already represent each transcriber's own best line segmentation, not a
+mechanical 1:1 crop mapping.
+
+| pass | lines | cipher tokens (226r/226v/227r) | total |
+|---|---|---|---|
+| A | 57 | 16 / 156 / 161 | 333 |
+| B | 57 | 17 / 159 / 156 | 332 |
+
+Both passes agree with the brief's own description: cipher confined to fol.226r's last physical line, dense
+on 226v and 227r. Both independently flagged the same trouble spots by kind (not necessarily the same exact
+tokens): a recurring loop-shaped symbol read inconsistently as `v`/`c`/a null-letter code, a few digit pairs
+genuinely hard to call (e.g. 75/73/59, 38/88), one dense stretch of 227r (pass A: lines 14-17; pass B similar
+region) marked low-confidence throughout, and one very faint near-illegible line low on 227r. No third pass or
+reconciliation attempted — out of scope for this brief (mechanical key trial runs on pass A only, per
+instruction); a future transcription campaign on this target should expect the same "more than a tenth of
+rows disagree" trigger for a third pass that fr5160-letellier-1653 and fr20140-danzay-1557 hit, given the
+independently-reported line-segmentation ambiguity above.
+
+## (4) Mechanical key trial (pass A only), 24 September 2026
+
+`decode.py key_brienne_1647.tsv passA.tsv --check` and the same for `key_brienne_1651.tsv`, both seed 1
+(script and both key tables copied in from `ciphers/fr5160-letellier-1653/`, Tomokiyo's published Brienne's
+Cipher 1 [DE=46, Clairambault 411, 1647] and Cipher 2 [DE=47, Clairambault 579, 1651] tables, per the same
+same-office lead already flagged for fr.5160). `--check` confirms both runs are deterministic. passA.tsv has
+333 cipher-group tokens.
+
+| key | resolved (H) | unresolved (U) | decoded chars | French-word chars (real) | French-word chars (shuffled control) |
+|---|---|---|---|---|---|
+| key_brienne_1647.tsv (DE=46, 1647) | 123/333 | 210/333 | 173 | 72 (41.6%), 31 words | **80 (39.0%), 40 words** |
+| key_brienne_1651.tsv (DE=47, 1651) | 129/333 | 204/333 | 176 | 43 (24.4%), 20 words | **58 (22.1%), 23 words** |
+
+**Both keys score at or below their own shuffled-key control** (rule 3: no negative without a matched
+control) — the 1647 key gives fewer French words than its control (31 vs 40) and the 1651 key does too (20 vs
+23). Same clean-negative pattern already established for fr.5160 against these same two published keys: this
+is Loménie de Brienne père's office, but writing to a *different* correspondent (D'Estrades, 1647 and 1651)
+than the Queen of Poland (1646) — a same-office lead, not this letter's own key. Grade: mechanical trial only,
+no H/C grade applies (the "resolved(H)" counts mean only "this code string appears in Tomokiyo's table", not
+that the resulting plaintext is correct). No cryptanalysis attempted beyond this trial, per brief.
+
+## Status and next step
+
+**Status stays `open`.** This pass: pinned the leaf on the correct ark and diagnosed why the other ark
+looked empty for this folio (section 1); established extent and confirmed no interlined/facing decipherment
+exists, so this is a blind-transcription target, not a recovery-by-alignment case (section 2); produced two
+independent blind transcription passes (section 3); mechanically ruled out both published same-office Brienne
+keys as direct hits, with matched controls (section 4). No decipherment recovered, no novelty wording.
+
+**Cheapest next step:** a third transcription pass or higher-resolution/tighter-region crops to resolve the
+line-segmentation disagreement flagged in section 3, before committing a canonical ciphertext.txt — this
+letter's own key still needs to be recovered from scratch (cryptanalytically, or by finding a sibling
+Brienne-to-Warsaw letter with a facing decipherment elsewhere in this correspondence), which is out of scope
+for this brief.
