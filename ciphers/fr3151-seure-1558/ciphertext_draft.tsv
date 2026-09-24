@@ -1,66 +1,64 @@
 line	position	sign	confidence	alt	why
-9	1	hash	M	B:bar	differ
+9	1	star	M	B:hash	differ
 9	2	flag	M	B:_	differ
-9	3	bar	M		agree-flagged
-9	4	hook2	M		agree-flagged
-9	5	arrow	M		agree-flagged
-9	6	num1	M	B:_	differ
-9	7	loopP	M	B:hook2	differ
-9	8	bar	M	B:_	differ
-9	9	hash	M	B:_	differ
-9	10	hash2	M		agree-flagged
-9	11	tcross	M	B:hook	differ
-9	12	_	M	B:bar	differ
-9	13	wedge	M	B:loopMN	differ
-9	14	W	M	B:loopMN	differ
+9	3	hookdesc	M	B:hook	differ
+9	4	loop	H		agree
+9	5	arrow	M	B:hook	differ
+9	6	_	M	B:hook	differ
+9	7	loop	H		agree
+9	8	num1	M	B:bar	differ
+9	9	num1	M	B:bar	differ
+9	10	hash	M	B:hash2	differ
+9	11	hook	M	B:wedge	differ
+9	12	b8	M		agree-flagged
+9	13	hook	M		agree-flagged
+9	14	loop	H		agree
 9	15	star	H		agree
 9	16	inf	M		agree-flagged
-9	17	loopMN	M	B:bar	differ
-9	18	hash	H		agree
-9	19	arrow	M	B:tcross	differ
-9	20	star	M	B:_	differ
-9	21	wedge	M	B:loopMN	differ
-5	1	hash	M	B:hash2	differ
-5	2	signA	M		agree-flagged
+9	17	loop	M	B:bar	differ
+9	18	hash	M	B:hash2	differ
+9	19	arrow	M	B:plus	differ
+9	20	star	M	B:plus	differ
+9	21	loop	H		agree
+5	1	hash2	H		agree
+5	2	signA	M	B:wedge	differ
 5	3	num1	M	B:bar	differ
-5	4	wedge	M	B:hash	differ
-5	5	flag	M	B:hookL	differ
+5	4	wedge	H		agree
+5	5	hookdesc	M	B:flag	differ
 5	6	b8	M		agree-flagged
-5	7	num1	M	B:_	differ
-5	8	flag	M	B:hash	differ
-5	9	plus	M	B:hash	differ
-5	10	_	M		agree-flagged
-5	11	circ	M	A:-	gap
-5	12	_	M		agree-flagged
-5	13	b8	M	B:-	gap
-5	14	hash2	M		agree-flagged
-5	15	bar	M		agree-flagged
-5	16	inf	M		agree-flagged
-5	17	hookL	M	B:hookJ	differ
-5	18	star	M		agree-flagged
-5	19	loopMN	M	B:b8	differ
-5	20	blob	M	B:_	differ
-5	21	hook	M	B:bar	differ
-5	22	inf	M		agree-flagged
-15	1	bar	M	A:-	gap
-15	2	bar	M		agree-flagged
+5	7	_	M		agree-flagged
+5	8	hook	M	B:hash	differ
+5	9	hash2	M	B:wedge	differ
+5	10	circ	M		agree-flagged
+5	11	b8	H		agree
+5	12	b8	M		agree-flagged
+5	13	hash2	M	B:ctlig	differ
+5	14	hook	M		agree-flagged
+5	15	inf	H		agree
+5	16	hookdesc	M	B:hook	differ
+5	17	star	M	B:ctlig	differ
+5	18	loop	M	B:hash	differ
+5	19	blob	M	B:_	differ
+5	20	hook	M		agree-flagged
+5	21	inf	H		agree
+15	1	bar	M	B:_	differ
+15	2	tcross	M	B:hash	differ
 15	3	_	M		agree-flagged
-15	4	bar	M		agree-flagged
-15	5	hash	M	B:-	gap
-15	6	ctlig	M	B:_	differ
-15	7	wedge	M	B:loopMN	differ
-15	8	star	M	B:hash	differ
-15	9	hook	M	B:bar	differ
-15	10	signN	H		agree
-15	11	hookJ	M	B:hook2	differ
-15	12	star	M	B:plus	differ
-15	13	_	M	B:flag	differ
-15	14	hash	M		agree-flagged
-15	15	hash2	M		agree-flagged
-15	16	_	M		agree-flagged
-15	17	hookL	M	B:tcross	differ
-15	18	blob	M	B:_	differ
-15	19	flag	M		agree-flagged
-15	20	num1	M	B:bar	differ
-15	21	plus	M		agree-flagged
-15	22	bar	M	B:_	differ
+15	4	ctlig	M	B:hash	differ
+15	5	bar	M		agree-flagged
+15	6	wedge	M	B:loop	differ
+15	7	star	M	B:hash	differ
+15	8	hook	M	B:hash	differ
+15	9	signN	H		agree
+15	10	hookdesc	M	B:b8	differ
+15	11	plus	M	B:tcross	differ
+15	12	b8	M	B:flag	differ
+15	13	hash	H		agree
+15	14	hash2	M	B:hash	differ
+15	15	_	M		agree-flagged
+15	16	hookdesc	H		agree
+15	17	hook	M	B:_	differ
+15	18	flag	M		agree-flagged
+15	19	num1	M	B:bar	differ
+15	20	wedge	M		agree-flagged
+15	21	bar	M	B:_	differ

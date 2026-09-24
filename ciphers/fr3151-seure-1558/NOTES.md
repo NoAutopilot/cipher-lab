@@ -280,3 +280,60 @@ native capture); no ciphertext file for any line.
 `glyphs/crops/f75L.png`, the same reproducible full-page intermediate K's note flags; superseded the whole of
 K's `glyphs/` and `images/strips/` with this pass's re-segmentation rather than keeping both, to stay under the
 30 MB/folder budget -- K's per-line-9 box IDs and codes are preserved above in this file's own text, not lost).
+
+## Coarse buckets and gate (24 Sept 2026, LANE R5 C)
+
+Worker C (Sonnet, cap $5), brief `.claude/briefs/runs/2026-09-24-lane-r5-c-seure-buckets.md`, following worker
+O's gate failure above (38.5% on lines 9/5/15, root-caused to nine easily-confused hook/loop codes: `loopMN`,
+`W`, `hookL`, `hookS`, `hookJ`, `hook`, `hook2`, `hook7`, `chook`). No solving, no fetches (disk-first; O's
+native source and page config reused, 0 new gallica.bnf.fr requests).
+
+**Merge.** `glyphs/buckets.tsv` maps the nine codes to three shape buckets defined by one feature a reader can
+actually see on a strip at this ink density: does the pen close into a loop, stay open with no descender, or
+stay open but drop a tail below the line.
+- `loop` (was `W`, `loopMN`, `hook2`) -- the pen visibly closes into one or more full loops (a double-hump
+  cursive w, a repeated wave of small loops, or a closed P-shape).
+- `hook` (was `chook`, `hook`, `hookS`) -- a simple open curve or hook, no closure, no tail below the line.
+- `hookdesc` (was `hook7`, `hookJ`, `hookL`) -- an open hook (7-shaped, J-shaped, or a tall hook-topped
+  stroke) whose stroke drops clearly below the line into a descender.
+
+Re-labelled via `glyph_atlas.py atlas`/`classify` (edited `labels.json`'s cluster->code map, not the
+segmenter): **21 codes (was 27)**. kNN self-match on reclassification: 818/1033 = 79.2% (was 816/1033 = 79.0%
+before the merge) -- unchanged within noise, as expected for a relabelling that does not touch segmentation.
+Commit 74c5623.
+
+**Free check: old passA/passB (worker O's fine-grained pass, 38.5%) mapped through `buckets.tsv`.** Every
+sign in `passA.tsv`/`passB.tsv` with one of the nine old codes was rewritten to its bucket name (trailing `?`
+kept) and re-reconciled with no new reading: **27/65 = 41.5%** (up from 38.5%, `reconcile_passes.py` run
+against the remapped copies, not committed -- a scratch check, not a new pass). The merge recovers some
+agreement even on the old, finer-grained reads, but nowhere near the 80% gate.
+
+**Fresh gate, coarse atlas, same three lines (9, 5, 15; 63 boxes).** Pass A (worker C, `passA_coarse.tsv`):
+read every box directly from `glyphs/atlas.png`/`atlas.tsv` and the line strips, independent of the old
+fine-grained passes. Pass B: one blind Sonnet subagent (`passB_coarse.tsv`), given only the strip images,
+`glyphs/atlas.tsv`/`atlas.png`/`buckets.tsv`, explicitly told not to open `passA_coarse.tsv`, any
+`disagreement`/`ciphertext_draft`/`agreement` file, or this NOTES.md. `tools/reconcile_passes.py
+passA_coarse.tsv passB_coarse.tsv --rows`: **27/63 = 42.9% overall** (line 9: 8/21 = 38.1%; line 5: 11/21 =
+52.4%; line 15: 8/21 = 38.1%) -- `disagreements.tsv`, `ciphertext_draft.tsv`, `agreement.tsv` (overwriting
+worker O's fine-grained-gate versions of the same three diagnostic files, per the K->O precedent of
+superseding rather than keeping both; the fine-grained numbers stay on the record in this file's text above).
+**Gate (>=80%) failed**, marginally better than the fine-grained 38.5% and than the free-check 41.5%, but not
+close to the target, and worse than worker K's original single-line 51.7%.
+
+**Grades (3 lines, 63 positions, from `ciphertext_draft.tsv`):** 0 H-from-key (no key exists), 0 C, 13 S (both
+passes independently agreed at H confidence -- all 13 are real signs, none a noise/`_` agreement, unlike the
+fine-grained gate's 9 noise agreements out of 25), 50 M (disagreement, or agreed but flagged by a pass). No I.
+No decoding attempted. 20 of the 21 coarse codes appear somewhere in the 63-position draft (only `signR` does
+not) -- the coarse atlas narrows the confusion only a little; most individual boxes are still not confidently
+one code over another from the image alone.
+
+**f75L is not box-keyable at this image quality even with coarse buckets (42.9%); needs a different capture or
+a key.**
+
+No hand-settling from the image either way, per the brief. Scope not attempted: lines other than 9, 5, 15 (already
+segmented/classified/stripped from worker O's pass, ready for a future pass if a better image or a key changes
+the calculus); no ciphertext file for any line.
+
+**Requests this session:** no fetches (disk-first; native source and page region already on disk from workers
+K/O). Subagents: 1 (Sonnet, blind pass B on the same 3 lines, 63 boxes, general-purpose agent, model override
+sonnet). Folder size unchanged from worker O's pass (no new images).

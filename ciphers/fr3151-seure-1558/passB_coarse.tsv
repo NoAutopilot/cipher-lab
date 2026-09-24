@@ -1,0 +1,64 @@
+line	pos	sign	conf	note
+9	1	hash	H	vertical stroke crossed by two horizontal bars, hash-like
+9	2	_	H	empty box, no ink, plain paper
+9	3	hook	H	small open curved hook, no closure, stays above line
+9	4	loop	H	jagged looped top merging into descending stem with foot
+9	5	hook	M	wide shallow open arc/wave spanning box, no clear closure
+9	6	hook	M	very narrow sliver, small open curve fragment, mostly cropped
+9	7	loop	H	clear P-shape, closed loop with descending stem
+9	8	bar	H	solid narrow vertical stroke, fully inked
+9	9	bar?	M	diagonal single stroke crossing box, ambiguous shape
+9	10	hash2	H	dense double cross-hatch grid pattern
+9	11	wedge	H	clean V-shaped tick/wedge mark
+9	12	b8?	M	faint compact loop shape with tail, ambiguous with signR
+9	13	hook?	M	flat elongated open curve, faint, hard to read
+9	14	loop	H	chain of zigzag humps, mmmm-like wave, closed loops
+9	15	star	H	clear asterisk/star burst, radiating lines from center
+9	16	inf?	M	small chain of connected loops/circles, infinity-like
+9	17	bar	H	narrow thin vertical stroke
+9	18	hash2?	M	moderately dense cross-hatch grid
+9	19	plus	H	clear vertical-horizontal cross, single crossing point
+9	20	plus?	M	small faint cross-like mark, short horizontal tick on vertical
+9	21	loop	H	wide chain of small waves/humps, mmmm-like
+5	1	hash2	H	dense grid of crossing bars, hash2-like
+5	2	wedge?	M	thin zigzag vertical stroke with kinks, tick-like
+5	3	bar	H	single straight thin vertical stroke
+5	4	wedge	H	horizontal row of small connected tick marks
+5	5	flag	H	hook with flag-like curl at top of vertical stem
+5	6	b8?	M	compact double-loop rounded shape, faint
+5	7	_?	M	very narrow sliver, negligible ink
+5	8	hash?	M	small dense compact mark, faint cross-hatch texture
+5	9	wedge	H	horizontal row of small connected tick marks
+5	10	circ?	M	tiny faint loop/dot shape, small circle-like
+5	11	b8	H	compact rounded loop with small hook/tail
+5	12	b8?	M	small compact loop shape, faint
+5	13	ctlig	H	double vertical strokes crossed by small ticks, ct-ligature-like
+5	14	hook?	M	tall smooth open curve, bracket-like, no clear closure
+5	15	inf	H	clear chain of connected circles, ooo pattern
+5	16	hook?	M	tall smooth open curve, C-shaped, no closure visible
+5	17	ctlig?	M	double stroke ligature-like shape with cross ticks
+5	18	hash?	M	small faint cross-hatch mark
+5	19	_?	M	narrow sliver, negligible ink
+5	20	hook?	M	faint small open curve, low ink density
+5	21	inf	H	clear chain of loops, ooo pattern
+15	1	_?	M	essentially empty box, negligible faint mark
+15	2	hash?	M	faint partial cross-hatch marks, low ink density
+15	3	_?	M	tiny box, negligible ink
+15	4	hash?	M	vertical stroke with cross ticks, hash-like, faint
+15	5	bar?	M	faint thin vertical stroke
+15	6	loop?	M	horizontal wave of connected small humps, mmmm-like
+15	7	hash	H	vertical stroke crossed by two horizontal bars, clear
+15	8	hash?	M	small faint mark, minimal cross-hatch texture
+15	9	signN	H	clear cursive N shape
+15	10	b8?	M	small curvy shape resembling 3 or partial loop
+15	11	tcross?	M	long horizontal bar crossed by shorter vertical, T-shaped
+15	12	flag?	M	small hook with curling top, flag-like
+15	13	hash	H	vertical stroke crossed by two horizontal bars
+15	14	hash?	M	two vertical strokes crossed by ticks, hash-like
+15	15	_?	M	tiny box, faint partial mark, low confidence
+15	16	hookdesc	H	crossbar top (t-shaped) with open curl dropping below into descender
+15	17	_?	M	tiny box, negligible ink
+15	18	flag?	M	hook curling into small loop, 6-shaped, flag-like
+15	19	bar?	M	tall straight vertical stroke, no visible serif, ambiguous with num1
+15	20	wedge	H	horizontal cluster of small tick marks
+15	21	_?	M	empty box, negligible ink at edge
