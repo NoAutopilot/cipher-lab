@@ -1,0 +1,370 @@
+# Cipher no.60 ("the Court's symbol cipher", BnF fr.3995 f.109-111), reconstruction Satoshi Tomokiyo (cryptiana, nevers.htm/henryiv2.htm);
+# transcription Daniel Bourdeau, github.com/dbourdeau/cyphersolver nevers1593/key60.txt + decode60.py (CC BY 4.0 text, MIT code), commit a0d5a07349e98cfc47d41608cd88722a219c44a3.
+# Converted 24 Sept 2026 (LANE R5 F1). Value a|b = two readings in the sources (graded M). Tags are Bourdeau's glyph stand-ins.
+sign	value	source	note
+∂	a	key60	
+o	a|b	key60	o = a (alphabet); oo = b
+x	a|d	key60	x = a in the alphabet and the cursive atlas; Roman x = d in table col.1
+·q	a	key60	
+o'	a	key60	
+ꝝ	b	key60	
+oo	b	key60	
+14	b	key60	
+n~	b	key60	
+//	c	key60	
+∠	c	key60	
+·x	c	key60	
+=	d	key60	
+‡|	d	key60	
+.x.	d	key60	
+uij	d	key60	
+f	e	key60	
+ue	e	key60	
+ur	e	key60	
+x:	e	key60	
+x.	e	key60	
+9	e	key60	
+g	de	key60	
+8	t	key60	figure 8 = t; 8+ tous
+>	f	key60	
+L	f	key60	L = f
+a+	g	key60	
+H#	g	key60	
+h+	g	key60	
+c+	g	key60	
+5+	g	key60	
+g+	gu	key60	
+q++	g	key60	
+V+	g	key60	
+8o'	g	key60	
+ξ	h	key60	
+z8	h	key60	
+uu+	h	key60	
+4+	bien	key60	
+to	i	key60	
+++	u	key60	
+u+	aussi	key60	
+‡	i	key60	
+d+	i	key60	
+2+	p	key60	
+2+'	u	key60	
+ꝗ	l	key60	
+cH	l	key60	
+t	ru	key60	
+p~	l	key60	
+t'	m	key60	
+ʃ	m	key60	
+ß	n	key60	
+ccc	m	key60	
+m	m	key60	
+ſ	s|m	key60	enciphering sheet f.109 lists ſ under s; deciphering table f.110v col.3 gives ſ -> m
+A	m	key60	
+fs	n	key60	
+T	n|T	key60	T = n (alphabet); f.110v col.3 "T T(?)"
+⊥	n	key60	
+s	n	key60	
+TL	n	key60	
+1	n	key60	decode60 1 = n (Bourdeau); in f.176.3 it stands where a is expected
+π	o	key60	
+ᛉ	o	key60	
+Δ	o	key60	
+X	o	key60	
+\\	o	key60	
+g3	p	key60	
+v+	p	key60	
+10	p	key60	
+7	p|s	key60	7 = p (figures, f.110v); 7 = s (f.111 col.3)
+9+	q	key60	
+A-	q	key60	
+8+	tous	key60	
+oe	r	key60	
+v	li	key60	
+///	r	key60	
+X~	r	key60	
+d'	r	key60	
+do	r	key60	
+ꝺo	r	key60	
+ꝺ	r	key60	
+y	s	key60	
+6	di	key60	
+r	s	key60	
+b	s	key60	
+c	s|a|y	key60	c = s and c = a (f.110v col.3); C = y
+2z	t	key60	
+ꝛ	luy	key60	
+ɤ	t	key60	
+La	t	key60	
+.xx.	t	key60	
+xx	t	key60	
+v'	u	key60	
+ll	bon	key60	
+20	u	key60	
+4	x|bien	key60	4 = x (figure); 4+ = bien, a flourish can hide the +
+sqrt	u	key60	
+17	x	key60	
+29	x	key60	
+30	x	key60	
+c‡	y	key60	
+2‡	y	key60	
+oto	y	key60	
+L++	y	key60	
+2++	y	key60	
+C	y	key60	
+q-	z	key60	
+±	z	key60	
+F-	z	key60	
+y~	z	key60	
+3	ri|z	key60	3 = ri (f.111 col.3); 3 -> z (f.110v col.3)
+ai	bi	key60	
+d	be	key60	
+η	bo	key60	
+:.	na	key60	
+φ	ca	key60	
+18	ce	key60	
+t3	ci	key60	
+∝	co	key60	
+l	cu	key60	
+p	da	key60	
+de	de	key60	
+12	du	key60	
+91	fa	key60	
+16	fe	key60	
+Lo	fi	key60	
+o-''	fo	key60	
+w	fu	key60	
+λ	la	key60	
++o	le	key60	
+o-	tu	key60	
+V	lo	key60	
+q'	lu	key60	
+rp	ma	key60	
+ro	me	key60	
+.|.	mi	key60	
+aj	mo	key60	
+ct	mu	key60	
+x~	ne	key60	
+50	ni	key60	
+52	no	key60	
+53	nu	key60	
+54	pa	key60	
+42	pe	key60	
+q~	pi	key60	
+tt	po	key60	
+13	pu	key60	
+pr	qua	key60	
+pi	que	key60	
+L40	qui	key60	
+.:	ra	key60	
+E	re	key60	
+m~	ro	key60	
+ae	armee	key60	
+2	sa	key60	
+X+	se	key60	
+X++	si	key60	
+Q	so	key60	
+ꝑ	so	key60	
+C~	su	key60	
+Δ'''	ta	key60	
+q	te	key60	
+e	to	key60	
+o-'	ua	key60	
+w'	vu	key60	
+3~	vi	key60	
+ci	mu	key60	
+h3	ceulx	key60	
+com	plus	key60	
+cy	ilz	key60	
+ss	qu'ilz	key60	
+n	et	key60	
++	nostre	key60	
+|-	nous	key60	
++7	vous	key60	
+θ7	fait	key60	
+Q'	est	key60	
+f++	qu'il	key60	
+p'	fault	key60	
+s'	en	key60	
+theta	des	key60	
+-|-	paix	key60	
+|--	guerre	key60	
+_|_	combat	key60	
+.:.	Je	key60	
++8	sans	key60	
+8o	raison	key60	
+d8	tant	key60	
+~~	deux	key60	
+5	comme	key60	
+45	tout	key60	
+60	affaires	key60	
+67	affin	key60	
+92	chacun	key60	
+94	dont	key60	
+96	chose	key60	
+97	catolique	key60	
+99	davantage	key60	
+lh	beaucoup	key60	
+cc	car	key60	
+car	tousiours	key60	
+est	rien	key60	
+cS	leurs	key60	
+Se	mais	key60	
+Le	audiance	key60	
+Jl	gouvernement	key60	
+OO	assistance	key60	
+nre	grand	key60	
+per	moy	key60	
+po	pour	key60	
+ꝑ3	pour	key60	
+p3	pour	key60	
+G~	quelque	key60	
+tt'	aultre	key60	
+n'	ville	key60	
++++	moins	key60	
+w+	Les	key60	
++w	aux	key60	
++w'	les	key60	
+4++	asseurance	key60	
+p-o	Iceux	key60	
+p-o'	Icelluy	key60	
+F	Armes	key60	
+ↄ	neantmoins	key60	
+V(inv)	deffaute	key60	
+V'	tresve	key60	
+Vre	non	key60	
+T'	autorite	key60	
+δ	rencontre	key60	
+w''	avec	key60	
+w'''	aiant	key60	
+8~	Riviere	key60	
+8~'	Religion	key60	
+8~~	par	key60	
+8~~~	Province	key60	
+k	ont	key60	
+&t	f	key60	
+G	vitoire	key60	
+8'	ainsi	key60	
+++O	d'autant	key60	
+q+	village	key60	
+oo+	le Roy	key60	
+O++	le Pape	key60	
+3+	le grand Seigneur	key60	
+#'	l'Empereur	key60	
+8+'	Roy d'Espaigne	key60	
++C	la Seigneurie de Venise	key60	
++phi	le grand Duc de Toscane	key60	
+R	Duc de Mantoue	key60	
+phi	Duc de Ferrare	key60	
+alpha'	Duc de Savoye	key60	
+oo b	Duc de Lorraine	key60	
+II	Cardinal de Bourbon	key60	
+X.	Mr de Chomberg	key60	
+ooo	Conte de Soissons	key60	
+oo~	Mr de Montpensier	key60	
+8++	Mr de Longueville	key60	
+otto	Conte de St Paul	key60	
+###	Mr de Montmorency	key60	
+O	Cardinal Gondy	key60	
+Psi+	Mareschal de Retz	key60	
+phi-o	Mareschal d'Aumont	key60	
+#~	Mareschal de Bouillon	key60	
+4+'	Mr d'Espernon	key60	
+X~~	Mr de Schomberg	key60	
+ʊ	Alphonse d'Ornano	key60	
+G'	Mr Desdiguieres	key60	
+4+''	Marquis de Pisany	key60	
++oo	Mr de Sancy	key60	
+R'	Mr Gondy	key60	
+++C	Mr de Maisse	key60	
+obo	Mr de Sillery	key60	
+Δ+	Mr de Fresne	key60	
+A'	Mr de la Chastre	key60	
+77	Duc de Mayenne	key60	
+E''	Duc de Guise	key60	
+L7	Mr de Nemours	key60	
+*	Mr d'Aumale	key60	
+Q+	Mr de Mercure	key60	
+Q''	Mr d'Elbeuf	key60	
+H''	Mr de Rosne	key60	
+H	St Pol	key60	
+A:	Mr de Belin	key60	
+Φ	Mr de Bellievre	key60	
+Φ'	Mr de Villeroy	key60	
+7~	President Jeannin	key60	
+H'	Chevalier de Diou	key60	
+S	Mr Zamet	key60	
+t5	Bassompierre	key60	
+P	Monsieur	key60	
+P'	Madame	key60	
+m'	Royne d'Angleterre	key60	
+M	prelatz	key60	
+J	consistoire	key60	
+Cg	?Cg	key60	
+ij	a	key60 roman	
+iij	d	key60 roman	
+xxij	le Legat	key60 roman	
+xxiij	Ambassadeur d'Espagne	key60 roman	
+xxiiij	Duc de Feria	key60 roman	
+xxv	Ambassadeur de Venise	key60 roman	
+xxvj	princes protestans	key60 roman	
+xxvij	estatz des Pays Bas	key60 roman	
+xxviij	Conte de Nassau	key60 roman	
+xxix	Francois	key60 roman	
+xxx	Italiens	key60 roman	
+xxxj	Espagnolz	key60 roman	
+xxxij	Reistres	key60 roman	
+xxxiij	Lansquenetz	key60 roman	
+xxxiiij	Anglois	key60 roman	
+xxxv	Wallons	key60 roman	
+xxxvj	Neapolitains	key60 roman	
+xxxvij	Suisses	key60 roman	
+xxxviij	France	key60 roman	
+xxxix	Espagne	key60 roman	
+xl	Italie	key60 roman	
+xlj	la Suisse	key60 roman	
+xlij	Angleterre	key60 roman	
+xliij	la Savoye	key60 roman	
+xliiij	l'Allemagne	key60 roman	
+xlv	le Piemont	key60 roman	
+xlvj	le Milanois	key60 roman	
+xlvij	la Lorraine	key60 roman	
+xlviij	Cardinaux	key60 roman	
+xlix	Evesques	key60 roman	
+lxj	Lion	key60 roman	
+lxij	Tours	key60 roman	
+lxiij	St Denys	key60 roman	
+lxiiij	Mante	key60 roman	
+lxv	Chartres	key60 roman	
+lxvj	Bordeaux	key60 roman	
+lxvij	Blois	key60 roman	
+lxviij	Melun	key60 roman	
+lxix	Corbeil	key60 roman	
+lxx	Vernon	key60 roman	
+lxxj	Senlis	key60 roman	
+lxxij	Compiegne	key60 roman	
+lxxiij	Chaalons	key60 roman	
+lxxiiij	Meaux	key60 roman	
+lxxv	Pontoise	key60 roman	
+lxxvj	Caen	key60 roman	
+lxxvij	Dreux	key60 roman	
+lxxviij	Verneuil	key60 roman	
+lxxix	Rome	key60 roman	
+lxxx	Venise	key60 roman	
+iiijxx	Florence	key60 roman	
+iiijxxj	Mantoue	key60 roman	
+iiijxxij	Marseille	key60 roman	
+iiijxxiij	Ferrare	key60 roman	
+iiijxxv	Verone	key60 roman	
+***	NULL	key60 null	
+-oo	NULL	key60 null	
+4‡	NULL	key60 null	
+g#	NULL	key60 null	
+ſo	NULL	key60 null	
+ɔ	?	not in key60 as read	M
+ʒ	z	atlas60 copyist form	
+##	?	not in key60 as read	M
+#	?	not in key60 as read	M
+ı	?	not in key60 as read	M
+·	?	not in key60 as read	M
+11	?	not in key60 as read	M
+0	?	not in key60 as read	M
+40	?	not in key60 as read	M
