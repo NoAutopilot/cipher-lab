@@ -59,10 +59,14 @@ should be relabelled; if the two ciphers are visibly different (different hand, 
 subject beyond "queen's health"), this remains open and becomes a genuine sibling-recovery case like WVO's NB1
 pattern.
 
-**Copy status: likely copy-free, not confirmed per item this pass.** `www.nationaalarchief.nl/onderzoeken/
-archief/3.01.19/invnr/1836` returns HTTP 200 with the same generic "Scan"/"Viewer" page-shell text seen on
-every other invnr tested this pass (756, 1975, 2030, 2044) -- not a reliable per-item confirmation (see HU4's
-NOTES.md for the same finding in more detail). No REQUEST.md written.
+**Copy status: NOT copy-free, corrected 24 Sept 2026 (LANE N2 worker csHU2).** The "likely copy-free" claim
+above rested only on the generic "Scan"/"Viewer" page-shell text, which is identical across every invnr
+regardless of digitisation. The real per-item record (`nationaalarchief.nl/onderzoeken/archief/3.01.19/
+invnr/1836`'s embedded `drupal-settings-json` -> `viewer.response`, not the page shell) gives
+`"availability":"PHYSICAL","scans":[]` -- **not digitised**, confirmed against a positive control (NA 1.04.02
+invnr 1, `"availability":"DIGITALIZED"` with real IIIF URLs, proving the accessor correctly reports a scan
+when one exists). This means the leaf check called for above (comparing the "oplossing" text to the cipher
+letter) cannot be done online; it requires an archive visit or copy order. `REQUEST.md` written this pass.
 
 **Kind: recovery (ambiguous)**, pending the leaf check above -- either a found-solved correction, or a
 sibling-decipherment recovery case if the "oplossing" resolves to a different item.

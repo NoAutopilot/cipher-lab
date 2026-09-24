@@ -51,9 +51,19 @@ endpoint found this pass -- not searched (flagged for a future sweep)." That swe
    own inventory numbering.** `www.nationaalarchief.nl/onderzoeken/archief/3.01.19` titles itself "Inventaris
    van het archief van Anthonie Heinsius..."; `www.nationaalarchief.nl/onderzoeken/archief/3.01.19/invnr/756`
    (the H.A. number cited for letter 357 below) returns 200 with a scan viewer present ("Scan"/"Viewer" in
-   the page). Not individually re-checked for every other H.A. number in the TSV -- the brief's own
-   description of NA 3.01.19 as "many inventory numbers scanned on nationaalarchief.nl" is taken as the
-   general expectation, confirmed on this one instance, not verified per-row.
+   the page). **Corrected 24 Sept 2026 (LANE N2 worker csHU2):** that "Scan"/"Viewer" text is generic page-
+   shell boilerplate, identical on every invnr regardless of digitisation, and is NOT a per-item confirmation.
+   The real signal is the same page's embedded `drupal-settings-json` -> `viewer.response`, which gives a
+   per-item `availability` field and `scans` array; a positive control (NA 1.04.02 invnr 1, a VOC item) shows
+   `"availability":"DIGITALIZED"` with real IIIF `info.json` image URLs at `service.archief.nl`, proving the
+   accessor works correctly. Checked this way for six Heinsius invnrs cited in this harvest's own TSV --
+   **756 (HU1), 946 (HU2), 1836 (HU5), 1975/2030/2044 (HU4), plus 2315/2316/2317 (a candidate cipher key found
+   for HU2)** -- and every one of the nine returns `"availability":"PHYSICAL","scans":[]`. **None of the
+   cipher-relevant items checked so far in NA 3.01.19 is actually digitised**, reversing this harvest's
+   "many inventory numbers scanned on nationaalarchief.nl" general expectation for this specific slice of the
+   archive (item 5's "general expectation" language above may still be true for the archive as a whole; it is
+   not true for the cipher letters found by this harvest). Copy orders/REQUEST.md now written for HU1, HU2,
+   HU4 and HU5 in their own folders.
 6. **Classification is a heuristic reading of the editorial footnote**, exactly as WVO's harvest did for its
    `opmerkingen` field -- not a check-solved verdict (the brief forbids running check-solved here) and not a
    claim about what the *manuscript* actually says (rule 2, image over transcription: none of these
@@ -176,3 +186,26 @@ budget named in the brief.
 Heinsius/Grotius/de Witt/Bentinck/Portland/Oldenbarnevelt, kept on disk in `/tmp`, not committed.
 No other hosts touched. No subagents (brief did not name any). No novelty wording; nothing promoted; no
 check-solved run.
+
+## Addendum, 24 September 2026 (LANE N2 check-solved+access worker csHU2)
+
+Ran check-solved on HU1 and HU2 (see `ciphers/heinsius-dopff-1702/` and `ciphers/heinsius-hermitage-1704/` for
+full sweeps) and the NA 3.01.19 digitisation check named in item 5 above (now corrected). Two findings worth
+recording here for the next worker on this series:
+
+- **A candidate cipher key survives in the same archive as HU2's letters.** NA 3.01.19 invnr. 2317, "Sleutel
+  van een cijferschrift, waarschijnlijk voor correspondentie met Engeland" (c.1705), sits in a small dedicated
+  "Cijferschrift" subsection (invnrs 2315-2317) at the end of the Heinsius series, found via WebSearch, not the
+  retroboeken viewer. Not confirmed to match Sauniere de l'Hermitage's cipher (the editor's own "waarschijnlijk"
+  is uncertain), but no better-fitting English correspondent exists among HU1-HU8. Worth a targeted search of
+  this "Cijferschrift" subsection (and any sibling subsections in other correspondents' archives, e.g. is there
+  an equivalent in 3.01.17 De Witt or elsewhere) for keys matching other rows in this table -- not done this
+  pass (out of scope, flagged as a lead).
+- **HU2's letter 166/177/477 footnotes cross-reference each other but a fourth instance (letter 251, same H.A.
+  946 dossier) uses different wording** ("Door Sauniere gedeeltelijk in cijferschrift gesteld", no "onopgelost")
+  -- ambiguous whether already resolved by the editor. See `ciphers/heinsius-hermitage-1704/NOTES.md`.
+- **HU8's archive (Brieven aan Johan de Witt, van Beuningen circle) is confirmed NA 3.01.17**, via the printed
+  edition's own front matter and EMLO's project page (not this harvest's search route) -- see
+  `ciphers/vanbeuningen-dewitt-1657/NOTES.md`. The specific inv.nr for the 19/29 Sept 1657 letter (and its
+  separately-surviving cipher copy) remains unresolved; EMLO's advanced search is a React app that needs
+  interactive form-filling, not URL query guessing.

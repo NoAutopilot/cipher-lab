@@ -85,17 +85,18 @@ record or solver-repository entry names a solution or even a serious attempt. Th
 "open" verdict of this batch: letter 142's actual ciphertext is in print and was confirmed by eye in the page
 image, not merely inferred from a footnote.
 
-**Copy status: likely copy-free, not confirmed per item this pass.** `www.nationaalarchief.nl/onderzoeken/
-archief/3.01.19/invnr/{1975,2030,2044}` all return HTTP 200 with the collection's generic "Scan"/"Viewer"
-boilerplate text -- but that same boilerplate is byte-identical across invnr 756 (confirmed by the harvest
-worker to carry a real scan), 1975, 2030, 2044 and 1836 (this batch's HU5), which means it is almost certainly
-part of the page shell served for every invnr regardless of whether that specific item is actually digitised,
-not a per-item confirmation. This corrects an over-claim in `sources/huygens/NOTES.md` caveat 5 ("confirmed to
-carry a scan viewer... on 756"), which rested on the same generic check. NA 3.01.19 as a whole is understood to
-be a digitised series (per the LANE N scout's general note on Dutch archives), so copy-free is the working
-assumption, but no worker has yet confirmed an actual scan image loads for any of 1975/2030/2044/1836/756
-specifically; the next worker should use the real NA scan API or a browser fetch, not this static-page check.
-No REQUEST.md written this pass (not yet established as copy-order).
+**Copy status: NOT copy-free, corrected 24 Sept 2026 (LANE N2 worker csHU2).** The "likely copy-free" claim
+above, and the harvest's original claim that 756 "carries a real scan," both rested only on the generic
+"Scan"/"Viewer" page-shell text -- neither actually read the per-item record. Fetched and decoded the real
+per-item JSON this pass (each invnr page's embedded `drupal-settings-json` -> `viewer.response`, not the
+page shell) for **all** of 1975, 2030, 2044 (this target) plus 756 (HU1) and 1836 (HU5): every one returns
+`"availability":"PHYSICAL","scans":[]` -- **none is digitised**, confirmed against a positive control (NA
+1.04.02 invnr 1, `"availability":"DIGITALIZED"` with real IIIF URLs, proving the accessor correctly reports a
+scan when one exists). This also corrects `sources/huygens/NOTES.md` caveat 5 and the "NA 3.01.19 as a whole is
+understood to be a digitised series" working assumption above -- at least this cipher-relevant slice of the
+archive is not. `REQUEST.md` written this pass for the two instances with printed extent worth copying (309/
+H.A. 2030, whose cipher letter is not in the edition at all; 446/H.A. 2044, two omitted cipher lines);
+letter 142's ciphertext is already fully in print (`ciphertext_142.tsv`) and needs no copy.
 
 **Kind: cryptanalysis.** No contemporary decipherment, no known key, no solved sibling identified for this
 correspondent circle. Letter 142's printed ciphertext (confirmed present, image on disk) is the one instance a

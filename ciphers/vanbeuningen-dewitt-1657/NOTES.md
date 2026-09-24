@@ -71,12 +71,29 @@ that a separate cipher copy of this exact letter survives; no decipherment, key,
 copy was found in the (partial, one source unreachable) secondary-literature search, community lists, DECODE,
 or either solver repository.
 
-**Copy status: not resolved this pass.** Japikse's edition uses no H.A.-style archive number for this letter
-(unlike the Heinsius edition); its manuscript home -- most likely Johan de Witt's own archive, Nationaal
-Archief **3.01.17** (per this worker's brief, which names 3.01.17 for De Witt), but not confirmed -- was not
-looked up this pass (budget). No REQUEST.md written; this is a gap for the next worker to close with one more
-page fetch (Japikse's own list of abbreviations/sources) or an NA 3.01.17 inventory search, not a copy-order
-determination yet.
+**Copy status: archive confirmed, specific inv.nr NOT resolved.** LANE N2 worker csHU2 (24 Sept 2026) confirmed
+**NA 3.01.17** ("Inventaris van het archief van Johan de Witt, raadpensionaris van Holland, 1653-1672") is the
+correct archive, two independent ways: (1) the printed edition's own front matter (Deel 1, p.XVI) states "de
+brieven aan De Witt alle eigenhandige originelen zijn" (the letters to De Witt are all autograph originals),
+collated by Fruin against the originals, with Van Beuningen's Copenhagen letters named as the volume's single
+most important chapter (p.XV); (2) EMLO's "Correspondence of Johan de Witt" project page (fetched via
+`tools/browser_fetch.js`, curl alone returns HTTP 503 for both nationaalarchief.nl's own client-rendered search
+API and emlo-portal.bodleian.ox.ac.uk, both logged as unreachable by curl and not retried a second time, per the
+good-citizen one-retry rule) states plainly: "National Archive: inventory Raadpensionaris De Witt, 3.01.17" and
+that EMLO indexes ~7,465 of the ~35,000-letter archive online (the "diplomatic correspondence" category, which
+Sauniere-style diplomatic dispatches like Van Beuningen's would fall under) with links to digitised images
+where available (EMLO's own caveat: "the manuscript images available at present are provisional... lower-
+quality"). **The specific inv.nr for the 19/29 Sept 1657 letter, and separately for the "unsolved cipher copy,
+van een andere hand" the footnote states survives, was NOT resolved this pass.** EMLO's advanced-search form
+(`emlo.bodleian.ox.ac.uk/forms/advanced`) is a React app; a browser-rendered fetch with guessed URL query
+parameters (`sender=Beuningen&date=1657`) did not actually filter the result set (it returned the full 16,736-
+row catalogue unfiltered, confirming those aren't the real parameter names) -- finding the exact record needs
+either interactive form-filling (`--type`/`--selector` in `tools/browser_fetch.js`) or NA's own `zvt.
+nationaalarchief.nl` / `hub3.nationaalarchief.nl` search API, whose real endpoint path was not found by
+guessing (both returned 503/404). No REQUEST.md written; the next worker should either drive EMLO's search form
+interactively or find NA's real search API before ordering a copy -- and note the separate cipher copy "van een
+andere hand" may not even be catalogued in EMLO the same way as the plain copy, since it is a different
+physical item in a different hand.
 
 **Kind: recovery.** A plain copy and a separately-surviving unsolved cipher copy of the identical letter is
 exactly the known-plaintext pairing pattern LESSONS.md ranks as the strongest lead class -- stronger than a
@@ -87,3 +104,15 @@ Search log (rule 10): reported above, per source. Not classified for novelty. Re
 `resources.huygens.knaw.nl` ~3 (book_data.js, 1 pages.json, 1 html_url OCR fetch, 1 image fetch), WebFetch 2
 (Academia.edu, blocked 403; vriendenvandewitt.nl PDF, fetched and locally OCR'd with `pdftotext`, not a network
 re-fetch), WebSearch 2, `github.com` 0 (reused clones already on disk this session). No subagents.
+
+## HU8: archive location, 24 September 2026 (LANE N2 worker csHU2)
+
+Confirmed NA 3.01.17 (see Copy status above, revised). Requests this pass: `www.nationaalarchief.nl` ~3
+(3.01.17 collection landing page, the "Briefwisseling van Johan de Witt" research-guide page and index search
+page, all >=2s apart), `resources.huygens.knaw.nl` ~9 (De Witt book_data.js, pages.json source=1, 6 front-
+matter OCR fetches [pages X-XVI] read for the "eigenhandige originelen" line, `retroboeken/heinsius` book's own
+search form reused from the same-session HU1/HU2 work), 2 attempted `zvt.nationaalarchief.nl`/`hub3.
+nationaalarchief.nl` API-endpoint guesses (503/404, abandoned, not retried), `emlo-portal.bodleian.ox.ac.uk` 1
+curl attempt (503/connection timeout, logged unreachable, not retried per the one-retry rule) + 2 browser_fetch
+(worked: the project overview page, and one advanced-search attempt whose guessed query params did not
+actually filter). No subagents.
