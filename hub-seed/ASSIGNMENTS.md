@@ -127,3 +127,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 101 | 24 Sep | cipher-lab | LANE T V2: N-class for Stamford P4; N0 check P9 P10 P14 P15 | LANE T (cipher-lab-7a child) | ciphers/thurloe-printed/briefs/lane-T-V2.md, verifier, Opus cap $10 | running, session_01JjjEErSwxrXpw27oi8tcZf |
 | 102 | 24 Sep | cipher-lab | Brienne 1659: canvas 173 reconciled, joint key through f.88 tail, LANE V regrade applied | LANE G | solver, Opus cap $8 | running, session_014HFYRQGqTQKpWQEnhkqHyg |
 | 103 | 24 Sep | cipher-lab | M19 Du Vergier (Clairambault 1108): leaves, extent, interlinear-mark check, who/to whom | LANE G | access, Sonnet cap $6 | running, session_01PAx7T3Lgc5brsc2SKf1Yvf |
+2026-09-24T05:05Z	session_01W4z8JhXJYHRjorPC1Qkpiy	LANE N orchestrator (Opus, cap $80)	nominations lane	steady stream of stage-2 copy-free nominations; DECODE census; successor to LANE S
+2026-09-24T05:05Z	session_01SEnQgi5wPVmMADaVHnWkNN	LANE R orchestrator (Opus, cap $80)	recovery lane	U2, U1, W1, rah-canada-1869, then LANE N nominations
