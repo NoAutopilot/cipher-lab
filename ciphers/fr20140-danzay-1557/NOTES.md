@@ -631,3 +631,47 @@ Suggestions (not done): check key.tsv cell by cell against Tomokiyo's image (see
 row 2 in "...ment par deça". Put the two plain-2 rows here into the f.35 plain-2 question.
 
 - Suggestion (verifier, 24 Sept 2026): test Tomokiyo's null-word list ("bien du est il? ou / par quand?") against the clear words set inside cipher runs on f.35 and f.36r.
+
+## Second reader f.36r, 24 Sept 2026
+
+Blind pass C (LANE V, second reader), lines 36R1-36R4 of f.36r. The reader cut crops at native size and at 2x
+from `images/native_f71.jpg` on disk (scratch only, not committed; no network). Before the pass was committed
+(f3c7d64) the reader consulted only key.tsv's sign and glyph columns. ciphertext_f36.tsv, the passes and the
+reading files were opened only after that commit. Pass C holds 80 tokens: 67 cipher signs (37 H, 25 M, 5 L)
+and 13 clear-hand words. The two sides have the same token count on every line (25/15/17/23), so positions
+align 1:1.
+
+**Agreement.** With the naming crosswalk (pass C plain 2 `z2` = committed `r2`; the circle-over-cross drawn as
+`ven` = `ringT`; pass C `ry` = `loop`; `Om` = `ww`), the two readings match on 64 of 80 tokens, or **80.0%**.
+Over cipher signs alone they match on 53 of 67, or **79.1%**. Five of those 14 cipher disagreements come from a
+single consistent naming split: pass C calls the slanted lozenge `bd` and the committed text calls it `dia`.
+Each side uses its name for all five occurrences. With that split set aside, cipher agreement is 58/67 =
+**86.6%**, the same level as f.35 (86.8%). The remaining disagreement sits in 36R1 (pos 6, 9, 10, 20, 23) and
+the 36R4 opening (pos 3, 8, 18). Lines 36R2 and 36R3 agree on every cipher sign apart from `dia` and 36R2 pos 2.
+
+**Proposed changes: 1** (`passC_proposed_changes_f36.tsv`; not applied):
+- 36R1 pos 9: `le` → `r2`. At 2x, side by side, it is the plain flat-footed 2. It matches 36R3 pos 6 and
+  36R4 pos 20, which the committed text codes `r2`. The yogh at 36R2 pos 1 has a long descending tail, which
+  this sign lacks. The committed text codes the same glyph two ways, so the reconciler should test the value
+  change against the reading.
+
+The other 15 disagreements are not proposed. Pass C was rated M or L on them, the two labels describe the same
+glyph, or the token is a clear-hand word. For the adjudicator: 36R4 pos 8 (`LRD`) and 36R1 pos 20 (`pd`) are
+the same looped l with a foot. They differ only by a small detached tick at the left of the stem in 36R4 pos 8.
+If that tick is a crossbar stub, pos 8 is nearer `pd` than pos 20 is. The image does not settle this at 2x.
+
+**The two places the reconciler left unread, read as signs, not as values.**
+- 36R3 pos 16-17. Pos 16 is two letters, round d then e. Their letter forms are the same as the clear-hand
+  "de" earlier in the same line (asseuré de faire), so pass C also reads them as clear. Pos 17 is one glyph:
+  a small r whose stroke rises into a loop and descends into a yogh-like curl ending in a dot. The ink is
+  continuous, so the image gives one sign here, not two (not r + yogh). Its shape agrees with committed `loop`.
+- 36R4 opening, pos 1-5. The image lets each one be read as a sign:
+  - pos 1: an open 4 / zigzag (`q4`).
+  - pos 2: a single double-caret, one stroke, with no drawn key match (`ww`).
+  - pos 3: a small loop on a stem that descends to the lower left. Pass C found no key match; the committed
+    `ven` (y with looped descender) fits the image.
+  - pos 4: three separate strokes leaning left (`iii`).
+  - pos 5: a reversed-t and a plus. They sit closer together than neighbouring signs, which supports one `pp`,
+    but two signs are not excluded.
+
+  None of these five is illegible. The open questions are key membership (pos 2, pos 3), not reading.

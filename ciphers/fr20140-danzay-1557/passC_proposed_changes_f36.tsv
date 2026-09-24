@@ -1,0 +1,18 @@
+# Pass C (blind second reader) vs ciphertext_f36.tsv, f.36r lines 36R1-36R4, 24 Sept 2026. Positions align 1:1 (25/15/17/23 tokens both sides). Only rows where the two differ after the naming crosswalk (pass C z2 = committed r2; ven drawn as ring above T = ringT; ry = loop; Om = ww; see NOTES.md "Second reader f.36r"). yours = pass C sign. NOT applied.
+line	index	committed	yours	image_evidence	proposed_change
+36R1	9	le	r2	plain z/2 with flat foot and no descender; side by side at 2x identical to 36R3 pos 6 and 36R4 pos 20 (both committed r2); the yogh at 36R2 pos 1 has a long descending tail this sign lacks	yes
+36R1	3	dia	bd	slanted lozenge with inner strokes; a small tick sits above it but is detached; same glyph at 36R1 pos 12, 36R3 pos 4 and 13, 36R4 pos 6 and both readings are internally consistent: a code-name question for the f.35 convention, not a reading	no
+36R1	12	dia	bd	as 36R1 pos 3	no
+36R3	4	dia	bd	as 36R1 pos 3; stroke rises above the top point here	no
+36R3	13	dia	bd	as 36R3 pos 4	no
+36R4	6	dia	bd	as 36R1 pos 3	no
+36R1	6	hk	del	both describe the same glyph (arc rising right over a small v); key-code choice only	no
+36R1	10	x8	g8	short stroke at the left waist of the 8 is visible at 2x; committed x8 matches the image	no
+36R1	20	pd	bl	looped l with foot, no crossbar; committed follows f.35r R2 identity; see also 36R4 pos 8	no
+36R1	23	pib	pi	omega-pi with bar above; pass C left pi/pib open	no
+36R2	2	loop	q4	looped head with a descender crossing right; pass C M; not decisive at 2x	no
+36R2	11	w:en	w:cy	clear hand; pass C read c + y-with-loop; 'en telle sorte' is the idiom; clear-text reading, not a cipher sign	no
+36R2	15	w:serez	w:seruy	clear hand; end of word unclear; not a cipher sign	no
+36R4	3	ven	?loop	small loop on a stem descending lower left; pass C found no key match (L); committed 'y with looped descender' fits the image	no
+36R4	8	LRD	bl	looped l with foot and a small detached tick at the left of the stem; at 2x beside 36R1 pos 20 (committed pd) the two differ only by that tick; if the tick is a crossbar stub this is nearer pd than 36R1 pos 20 is; worth the adjudicator's look	no
+36R4	18	xA	xM	two A-forms under one long bar; pass C L; committed 'doubled crossed A' describes the same sign	no
