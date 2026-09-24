@@ -112,6 +112,13 @@ without looking it up; a private individual's address never goes in the file (24
 3. **Orchestrator** promotes to the board only after check-solved, at most a handful at a time, choosing by
    score and by the three kinds together, so the board always carries at least one recovery and one
    cryptanalysis candidate and never fills with editions.
+3a. **Breadth lane.** Before any target gets a campaign (a cap above $10), it gets a spec (`specs/<slug>.json`:
+    ciphertext as transcribed with source and date, alphabet, constraints, cheap tests in order, a `judge` block) and
+    one Sonnet worker runs its first cheap test at a cap of $3, with the matched control, and writes the two numbers
+    into the spec's `cheap_test_done`. A breadth worker takes the next spec whose first test is unrun, never a second
+    test on the same spec, and never a campaign. The orchestrator promotes to a campaign only a spec whose first test
+    moved it (judge PASS, found-solved, or a control-backed negative that names the next test). Ten first tests at $3
+    beat one campaign at $30: the mathematics results resolved 4 of 700 and 9 of 353 by trying everything cheaply.
 4. **Access workers** (lookup, print check, image capture, transcription) move a target from stage 2 to stage
    7 without the person where the playbook allows, and write REQUEST.md when it does not.
 5. **Solver** reads (stage 8), grades per token, reports what was found and where it was not found.
