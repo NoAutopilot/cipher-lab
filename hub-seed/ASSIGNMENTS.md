@@ -359,3 +359,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T19:30Z	session_01PKTy3iKiH3LzJpQauLb8Wu	LANE N4 csNA (Sonnet, cap $5)	check-solved CS2-18/-21/-22 at the Nationaal Archief	brief lane-n4-csNA
 2026-09-24T19:30Z	session_01VTcPkWcCTRGdRFMTXLWY39	LANE N4 scPOOL (Sonnet, cap $6)	cipher letter pools by key, POOLS.tsv (parent 19:27)	brief lane-n4-scPOOL
 2026-09-24T19:33Z	session_01KzaH2nfuJtkSwFDqnS5XHF	LANE R5 D (Sonnet, cap 5)	fr5761-election-1519 key f.105-f.110	brief 2026-09-24-lane-r5-d-election-leaves.md
+2026-09-24T19:47Z	session_pending_solvex	solvEX model-in-the-loop crib rounds (Opus, cap 5)	matched controls, tools/crib_rounds.py	parent's pick 19:47; brief 2026-09-24-solvex-model-in-the-loop.md
