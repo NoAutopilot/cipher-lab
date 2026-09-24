@@ -1,0 +1,76 @@
+sign	glyph	key_value	count	first_line
+w:(clear word)	clear-hand word	(clear)	152	R2
+x	x	e	51	R2
+eps	epsilon with stem	r	44	R2
+T	T-shape	a|luy	36	R4
+dia	lozenge	e	35	R1
+ae	ae / script n-e ligature	n	29	R2
+lam	lambda / caret	l	27	R1
+H	H	s	26	R4
+iii	three strokes	null	24	R2
+pd	pound-sign t	t	23	R2
+mu	mu / u-shape with descender	u	22	R6
+pi	pi with curl (omega-pi)	o	19	R2
+eq	equals sign	i	19	R2
+r2	script 2	r	16	R1
+x8	figure-8 with horizontal bar	UNKEYED	16	R2
+fd	f / long dagger	d	16	R2
+al	alpha	c	16	R4
+b6	6 / b-shape	p	16	R4
+a1	omega with flourish at right	a	13	R2
+xb	x with bar	u	12	R5
+ring7	7-shape with small ring above	UNKEYED	10	R4
+ringT	T / division-sign with small ring above	UNKEYED	8	R2
+x88	double-loop with vertical bars	null	8	R3
+pib	pi with bar	o	8	R4
+xinf	crossed double-loop (infinity)	null	7	R1
+LRD	script L	le Roy de Dannemarch	7	R2
+sha	sha (underlined m)	m	6	R4
+hp	p-shape	h	6	R4
+B	sharp-s / B-shape	p	6	R4
+q4	open 4 / zigzag	q	6	R6
+loop	long-s loop flourish	null	6	V5
+xN	crossed N	null	5	R6
+xk	k-like sign (x with loop)	UNKEYED	4	R2
+hk	check-mark hook	u|a	4	R2
+et	3 with f	et	4	R2
+ls	long s	s	4	R5
+I	capital I with serifs	UNKEYED	4	R7
+Y	Y	son?	4	R8
+mc	small script m	c	4	V1
+xst	crossed asterisk	null	4	V6
+bd	lozenge with tall ascender	b	4	V10
+xA	crossed A	null	3	R1
+s9	reversed-9 with long tail	s	3	R7
+circ	small 3-shape inside an open circle (arc)	UNKEYED	3	R7
+Pbar	D/P-shape with horizontal bar	UNKEYED	3	R7
+fdx	long dagger with cross-stroke	UNKEYED	3	V12
+del	delta / round d	f	2	R2
+O	oval	null	2	R5
+phi	phi (stroke through loop)	f	2	R5
+llt	t-shape (pound sign) with tilde	ll	2	R6
+rx	small r-shape	x	2	R6
+Om	Omega	o	2	V1
+le	3-shape (yogh)	le	2	V1
+llam	lambda with tilde	UNKEYED	2	V2
+S	large S	UNKEYED	2	V3
+Zl	z with loop descender	UNKEYED	2	V5
+pp	double cross-bar	m	2	V5
+xM	crossed m (m-o)	null	2	V8
+bl	script l loop	b	2	V10
+fdl	long dagger with hook below	UNKEYED	2	V20
+g8	8-shape	g	2	V26
+st	asterisk-bar	i	1	R1
+D	capital D	UNKEYED	1	R2
+ven	venus / y with loop	y	1	R2
+tss	t-shape joined to long-s with tilde	UNKEYED	1	V1
+Hh	H with hook/flourish	UNKEYED	1	V4
+shat	sha with tilde	UNKEYED	1	V5
+pdx	t-shape (pound sign) with extra stroke	UNKEYED	1	V6
+lsx	long s with cross-stroke	UNKEYED	1	V17
+bbar	script l/b with bar	UNKEYED	1	V20
+dt	d-with-cross (d+) group	UNKEYED	1	V23
+g7	7-shape	g	1	V26
+rt	r-sign with tilde	rr	1	V28
+ep	small epsilon without stem	UNKEYED	1	V29
+mut	u-shape with tilde	UNKEYED	1	V29

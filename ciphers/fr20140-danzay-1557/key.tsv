@@ -1,0 +1,58 @@
+# Key for BnF fr.20140 Danzay 1557 cipher, transcribed from S. Tomokiyo's reconstruction image
+# (sources/cryptiana/web/danzay_1557.png, page sources/cryptiana/web/danzay.htm, first posted 22 Feb 2026).
+# sign = this repo's ASCII code for the glyph; glyph = description of Tomokiyo's drawing; value = his cell.
+# "null" = his nulls column. A value with "|" is a glyph he draws in two cells (circled and linked in his image).
+# Only glyphs he draws are listed. Signs in ciphertext.txt not listed here are unkeyed (grade U).
+sign	glyph	value	source
+a1	omega with flourish at right	a	Tomokiyo 1557 table, a col row 1
+T	T-shape	a|luy	Tomokiyo a col row 2 (circled) and word 'luy'
+hk	check-mark hook	u|a	Tomokiyo a col row 3 (circled) and u col row 3 (circled)
+bd	lozenge with tall ascender	b	Tomokiyo b col row 1
+bl	script l loop	b	Tomokiyo b col row 2
+al	alpha	c	Tomokiyo c col row 1
+mc	small script m	c	Tomokiyo c col row 2
+fd	f / long dagger	d	Tomokiyo d col row 2
+x	x	e	Tomokiyo e col row 1
+dia	lozenge	e	Tomokiyo e col row 2
+del	delta / round d	f	Tomokiyo f col row 1
+phi	phi (stroke through loop)	f	Tomokiyo f col row 2
+g7	7-shape	g	Tomokiyo g col row 1
+g8	8-shape	g	Tomokiyo g col row 2
+hp	p-shape	h	Tomokiyo h col row 2
+eq	equals sign	i	Tomokiyo i col row 1
+st	asterisk-bar	i	Tomokiyo i col row 2
+lam	lambda / caret	l	Tomokiyo l col rows 1-2
+llt	t-shape (pound sign) with tilde	ll	Tomokiyo doubled row under l
+sha	sha (underlined m)	m	Tomokiyo m col row 1
+pp	double cross-bar	m	Tomokiyo m col row 2
+ae	ae / script n-e ligature	n	Tomokiyo n col row 1
+pi	pi with curl (omega-pi)	o	Tomokiyo o col row 1
+pib	pi with bar	o	Tomokiyo o col row 2
+Om	Omega	o	Tomokiyo o col row 3
+b6	6 / b-shape	p	Tomokiyo p col row 1
+B	sharp-s / B-shape	p	Tomokiyo p col row 2
+q4	open 4 / zigzag	q	Tomokiyo q col row 1
+r2	script 2	r	Tomokiyo r col row 1
+eps	epsilon with stem	r	Tomokiyo r col row 2
+rt	r-sign with tilde	rr	Tomokiyo doubled row under r
+H	H	s	Tomokiyo s col row 1
+s9	reversed-9 with long tail	s	Tomokiyo s col row 2
+ls	long s	s	Tomokiyo s col row 3
+pd	pound-sign t	t	Tomokiyo t col row 1
+mu	mu / u-shape with descender	u	Tomokiyo u col row 1
+xb	x with bar	u	Tomokiyo u col row 2
+rx	small r-shape	x	Tomokiyo x col row 1
+ven	venus / y with loop	y	Tomokiyo y col row 1
+Y	Y	son?	Tomokiyo word 'son?' (his query)
+le	3-shape (yogh)	le	Tomokiyo word 'le'
+et	3 with f	et	Tomokiyo word 'et'
+LRD	script L	le Roy de Dannemarch	Tomokiyo word 'le Roy de Dannemarch'
+iii	three strokes	null	Tomokiyo nulls
+O	oval	null	Tomokiyo nulls
+loop	long-s loop flourish	null	Tomokiyo nulls
+xA	crossed A	null	Tomokiyo nulls
+xN	crossed N	null	Tomokiyo nulls
+xinf	crossed double-loop (infinity)	null	Tomokiyo nulls
+x88	double-loop with vertical bars	null	Tomokiyo nulls
+xst	crossed asterisk	null	Tomokiyo nulls
+xM	crossed m (m-o)	null	Tomokiyo nulls

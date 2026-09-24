@@ -1,6 +1,6 @@
 # BnF fr.20140 — Charles de Danzay to Henri II / Cardinal of Lorraine, January 1557
 
-Status: found-solved (3 of 4 items); open (1 of 4, f.35)
+Status: found-solved (3 of 4 items); partial (1 of 4, f.35: Tomokiyo's key read, 24 Sept 2026)
 
 Check-solved pass, 24 September 2026 (Sonnet, orchestrator brief for M13-M16). Editions-first + one-leaf pass.
 The formal six-source check-solved run for the f.35 remainder is done (below, same day); verdict unchanged:
@@ -208,3 +208,87 @@ coherent French; no image-hunting beyond that single leaf is needed.
 gallica.bnf.fr: 1 OAI record + 1 manifest + 2 IIIF image attempts on the primary ark (1 connection reset,
 retried once per rule, failed again, stood down) + 1 IIIF image fetch on the alternate ark (succeeded).
 github.com: 2 shallow clones (shared with M13/M14, deleted after grep).
+
+## Reading with Tomokiyo's key (solver, 24 Sept 2026)
+
+Files: `ciphertext.txt` (791 tokens, one per row: line, position, sign code, H/M image confidence),
+`inventory.tsv` (75 distinct codes, each with a glyph description, key value or UNKEYED, and count),
+`reconciliation.md` (how passA/passB were settled), `key.tsv` (Tomokiyo's 1557 table as codes; source column
+cites his cell), `decode.py` (writes `reading.txt` and `reading_tokens.tsv`; `--check` exits 1 if either is
+stale), `reading.txt`.
+
+**Transcription.** The two passes could not be merged sign by sign, because their `unk` labels are private to
+each pass. So the cipher was read again, glyph by glyph, from native-resolution strips of f.35v (29 lines) and
+from the f.35r crop (8 lines). Pass A's line numbering matches. See reconciliation.md. The letter does not end
+on f.35v: V29 stops at "... du [xk]" at the foot of the page, and the text goes on to f.36, which is not on disk.
+
+**Token grades (decode.py, cipher tokens only):** 638 cipher tokens, plus 152 clear-hand words and the 7-sign
+gloss above V18.
+- H 508: the sign was read clearly and Tomokiyo keys it to one value. 61 of these are his nulls.
+- M 61: 21 keyed signs that are doubtful in the image, plus the 40 glyphs he keys twice (T = a/luy, hook = u/a). A 22nd doubtful sign, `D`, is unkeyed and counted under U.
+- U 69: signs in none of his cells.
+
+No token is C, because there is no contemporary decipherment of f.35. Everything above is a reading
+from his published key, which he built from the sibling decipherments on f.16, f.24 and f.30.
+
+**Where the key reads continuous French** (cipher runs, allowing for nulls):
+- Recto: R5 "preste ... sauf"; R6 "laquelle ... ne faultra"; R8 "present ... pour".
+- Verso: V2 "chancel[l]i-r ... Danoys ... quelque"; V5 "... oyaume ... a promis"; V6 "qu'il ... renploy-er";
+  V7 "-ence, dont"; V8 "les ... propos"; V9 "tenu / d'aultre part le chancelier"; V10 "peult ... beaucoup".
+- Verso, continued: V11 "envers la ... "; V12 "prepare ... c'est a ... "; V17 "... et affections"; V18 "de ceulx
+  desquels ... me ayder"; V19 "la resolution des"; V20 "... affaires ... pend"; V23 "de leur volonte".
+- Verso, end: V24 "en doubte"; V25 "au mo[y]en ... de faire"; V26 "quelque ... Augsbourg"; V27 "par ... les
+  marchans de Lion"; V28 "car de Augsbourg on le pourra".
+
+**Where it does not:** R1, R2 (apart from "fort"), R3, R4 (apart from "n'empesche"), R7, V1, V3, V4, V29.
+These lines carry most of the unkeyed signs and the M rows.
+
+**Where the key fails, and what the image and context suggest.** These are grade I suggestions only. None is
+applied in key.tsv or reading.txt.
+1. `ring7` (7 with a ring, 10 uses) reads as **y** wherever the context is clear: "royaume", "moyen",
+   "renployer", "Danoys".
+2. `Y`, keyed by Tomokiyo as "son?" (his query), gives **e** twice ("chancellier" V2, "Royne" V11) and
+   plausibly in V20 as well.
+3. The script-L glyph coded `LRD` ("le Roy de Dannemarch" in his table) reads as a single **r / R** in V5
+   ("royaume"), V11 ("Royne"), V26 and V28 ("Augsbourg"). Either this manuscript's glyph is a different sign
+   from his, or the sign stands for more than one value.
+4. The barred figure-8 `x8` (16 uses) fits best as a null (V28 "on le pourra", V17 "passions").
+5. `I` reads as **q** ("quelque" V2 and V26, "desquels" V19).
+6. Crossed long letters (`lsx`, `fdx`, `fdl`) look like doubled letters or d-variants ("passions",
+   "affaires"). Uncertain.
+7. `hk` is **u** in "Augsbourg" and **a** in "Danoys a", matching the two cells Tomokiyo draws for it.
+
+A second reader applying these seven would still leave `ringT` (8 uses), `xk`, `circ`, `Pbar`, `S` and `Zl`
+open.
+
+**Plain sense, as far as the key reads it** (five lines; the clear passages carry much of it):
+1. Danzay assures the Cardinal that the King of Denmark is ... (R1-R2 not fully read). He is anxious that ...;
+   if there were an affair, it would not fail ... (R3-R8).
+2. The Danish chancellor, and the Danes more generally, are discussed. Something concerning the kingdom was
+   promised. The King's letters, "propos", and on the other side the chancellor, who "can do much" (V2-V10).
+3. Something is said about the Queen. As soon as someone arrives Danzay will prepare ...; he has sent this
+   despatch so the Cardinal knows the state of this kingdom's affairs and the long-standing promise (V11-V16,
+   mostly clear).
+4. He speaks of the passions and affections of those whose help he needs, and of affairs whose resolution
+   depends on means he has followed and will keep to, while he awaits express command. He cannot yet vouch for
+   their will, which is in doubt (V17-V24).
+5. It seems good to consider the means of ... through Augsburg, by way of the merchants of Lyon, "for from
+   Augsburg one could ...". The page ends mid-sentence, going on to recover something (V25-V29).
+
+**Distinctive phrases for the verifier.** Clear hand:
+- "le plus commodement qu'il me sera possible"
+- "j'ay bien voulu faire ceste depesche affin que vous peussiez congnoistre l'estat des affaires de ce
+  royaulme"
+- "la promesse qui de long temps m'a esté faicte"
+- "attendant plus certain et expres commandement de ce que je doy entreprendre"
+- "il me semble qu'il seroyt bon de regarder"
+
+From the key: "le chancelier", "Danoys", "marchans de Lion", "Augsbourg", "de ceulx desquels", "la resolution
+des", "de leur volonte".
+
+No print search was run in this session (verifier's job). Novelty is not classified.
+
+**Follow-up suggestions** (not done):
+- Fetch f.36r, where the letter continues.
+- Have a second reader check the 61 M rows and the unkeyed codes on the same strips.
+- Test suggestions 1-5 against the contemporary decipherments on f.16, f.24 and f.30.
