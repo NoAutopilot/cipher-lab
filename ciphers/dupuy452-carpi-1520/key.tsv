@@ -1,0 +1,65 @@
+# Key for the Raince cipher of 25 Oct 1525 (Dupuy 452 ff.28r-29v), atlas codes of inventory.tsv -> plaintext.
+# Solver worker, 24 Sept 2026. Base: Tomokiyo's reconstruction of Raince's 1526 cipher (cryptiana francis.htm,
+# section "BnF fr.2984 (1526)", image francisRaince.png), as measured glyph by glyph by D. Bourdeau
+# (github.com/dbourdeau/cyphersolver, commit 763a3b98ab1c, raince/CALIBRATION.md and raince/img/key_labelled.png;
+# MIT code, CC BY 4.0 text). Mapping made by shape, contact_sheet.jpg against key_labelled.png.
+# kind: letter | null | word (word sign) | open (not in the 1526 key, value not assigned)
+# source: key = the 1526 key's glyph for this value, matched by shape (grade H);
+#         print = value confirmed from known plaintext, Jacqueton, La politique extérieure de Louise de Savoie
+#         (1892), P.J. XXXIII pp. 366-370, archive.org lapolitiqueext00jacquoft, printed from the contemporary
+#         decipherment at Dupuy 452 f.31 (grade C);
+#         context = not in the 1526 key (or a different value), assigned from decoded context (grade S);
+#         open = no value (grade U; shown in reading.txt as <code>).
+# value: plaintext (lower case). Word signs are written in brackets, e.g. [con].
+code	value	kind	source	key_glyph	evidence
+psi	e	letter	key	e_psi	
+db	e	letter	key	e3_barred	dagger on a small o = barred stem with a circle at its foot
+7	e	letter	key	e_7	
+diamond	e	letter	key	e_diamond	
+o	a	letter	key	a_o	
+ankh	a	letter	key	a_cross	
+X	i	letter	key	i_xx	
+I	i	letter	key	i_I	
+l	t	letter	key	t_ell	
+v	u	letter	key	u_v	
+R	u	letter	key	u_R	
+zslash	u	letter	key	u_Z	
+arr	r	letter	key	r_4	arrowhead on a stem = the 4-shape
+dash_o	r	letter	key	r_dasho	"box z v [dash_o] X psi arr" = courier
+lam	s	letter	key	s_caret	
+H	s	letter	key	s_H	
+f	n	letter	key	n_longf	
+rho	l	letter	key	l_9	loop with a tail = the 9 of l (Bourdeau's column correction)
+q	d	letter	key	d_tail	
+z	o	letter	key	o_z	
+sq	o	letter	key	o_z2loop	loop with a diagonal stroke
+box	c	letter	key	c_sq	
+T	p	letter	key	p_T	
+n	q	letter	key	q_n	
+E	y	letter	key	y_E	the passes merged the key's E (y) and epsilon (h): "cy" reads "ch" (cyargeau = chargé, cyambrier); shown as y
+S	m	letter	key	m_rounds	
+th	b	letter	key	b_th	
+Del	f	letter	key	f_tri	
+dbar	g	letter	key	g_barredb	
+w	z	letter	key	z_w	espaignolz, saisyz, quilz
+lamL	-	null	key	null_lam	
+m	-	null	key	null_ny	
+K	-	null	key	null_K	
+L	[con]	word	key	word_con	[con]gnoistre, [con]sidere
+U	[l'empereur]	word	key	word_empereur	"chasteau de Cremone pour [l'empereur]"
+yogh	[Véniciens]	word	print		Jacqueton 1892 P.J. XXXIII: "tenir en piedz les Véniciens", "les Véniciens monstroyent", "que les Véniciens faysoyent bien compte"; 8 of 12 tokens are uncertain slivers
+y	[le pape]	word	key	word_pape	one token, cursive y with tail: "ce iourdhuy matin estant alle devers [le pape] pour l'affaire de monseigneur le chancelier"
+six	x	letter	print		not in the 1526 key; Jacqueton 1892 P.J. XXXIII: exécuter, aux fins, xvii (dixseptiesme); positions where print has l (ville, aller, diligence, chancellier) are probably a second shape merged into this class
+A	n	letter	print		Jacqueton 1892 P.J. XXXIII: bonne, Crémonne, Colonne, donner
+x	f	letter	print		not the key's a_x; Jacqueton 1892 P.J. XXXIII: proffit, en effect, affaires
+three	u	letter	print		Jacqueton 1892 P.J. XXXIII: souvent, descouvert
+oplus	i	letter	print		Jacqueton 1892 P.J. XXXIII: traictent, j'avoye
+bz	u	letter	print		Jacqueton 1892 P.J. XXXIII: qu'on / voulu
+plus	[duc de Bar]	word	print		Jacqueton 1892 P.J. XXXIII: "demandé au duc de Bar estre saisiz" = "au [+] ses tres saisyz"; "ledict duc de Bar" throughout (Francesco Sforza, duke of Milan and Bari)
+cross4	<cross4>	open	open		10 tokens; Jacqueton 1892 has "advertir le Roy de tout" at one place and nothing at most others (before [l'empereur], after "duc de Bar"): a null or "le Roy", not settled
+Tbox	[marquis de Pesquère]	word	print		Jacqueton 1892 P.J. XXXIII: "du bon tour que faict le marquis de Pesquère", "ledict marquis de Pesquère", "audict marquis de Pesquère"
+pi	[Madame]	word	print		Jacqueton 1892 P.J. XXXIII: "comme vous, Madame, par vostre prudence"; "Madame, ce jourd'huy matin"; one uncertain token inside Pr[pi]pero (Prospère) is a misread
+heart	[cardinal de Côme]	word	print		Jacqueton 1892 P.J. XXXIII: "n'en eurent jamais le cardinal de Côme et le conte de Carpy", "l'advis desdictz cardinal de Côme et conte de Carpy" (2 tokens)
+box3	[France]	word	print		Jacqueton 1892 P.J. XXXIII: "offres qu'il monstra luy avoir esté faictz de France" (1 token)
+hash	[Millan]	word	print		Jacqueton 1892 P.J. XXXIII: "grosse armée au duché de Millan", "laisser ledit duc de Bar à Millan", "chasteaulx de Millan et de Crémonne"
+?	<?>	open	open		transcription left the shape unresolved

@@ -465,3 +465,55 @@ account in reconciliation.md.
 - **Next (not this brief).** Solver worker on ciphertext.txt. The allograph pairs listed in
   reconciliation.md are open questions for frequency analysis. Optional third pass on the unread
   _s2 bands.
+
+## Solver: the 1526 key applied, and the printed plaintext (24 Sept 2026)
+
+Solver worker (Opus, orchestrator session_01SepNMpYrr6L2EwqL43aTnm; ASKS row 22 option a). Clock read at
+00:51 and 00:58 UTC.
+
+**It is the 1526 cipher.** Our 50 atlas codes were mapped by shape (glyphs/contact_sheet.jpg against
+Bourdeau's measured cut-out of Tomokiyo's key, `raince/img/key_labelled.png`, github.com/dbourdeau/cyphersolver
+commit 763a3b98ab1c, MIT/CC BY 4.0; key published by S. Tomokiyo, cryptiana francis.htm, "BnF fr.2984 (1526)",
+located by Desenclos 2018). 36 of our codes match a key glyph and were applied unchanged; the first decode
+read continuous French from the first sign ("du bon tour faict par [...] a ceulx qui se sont trop fiez de
+luy"). Same alphabet, same homophones, same nulls (λ, "ny", K), same word signs *con*, *l'empereur*,
+*le pape* (one token). Differences from the 1526 key, which make it a variant rather than a different system:
+- extra signs not in the 1526 table: `six` = x (the 1526 key has no x), `A` = n, `x` = f (the key's single x
+  is an a; here the curly x is f), `three` = u, `oplus` = i, `bz` = u;
+- eight word signs for this letter's names: [duc de Bar] (Francesco Sforza), [Millan], [Madame],
+  [marquis de Pesquère], [Véniciens], [cardinal de Côme], [France]; `cross4` (10 tokens) not settled
+  (a null or "le Roy").
+- The passes merged the key's E (y) and ε (h) into one class `E`: "cy" reads "ch".
+Nothing was merged by hand; every code of inventory.tsv keeps its own row in key.tsv.
+
+**The plaintext is in print.** Phrase search (24 Sept 2026; Google Books API keyed, 6 queries) for
+"Raince" "Madame" 1525 returned P. Jacqueton, *La politique extérieure de Louise de Savoie* (Paris 1892),
+archive.org `lapolitiqueext00jacquoft` (full text fetched once). Its Pièces justificatives print all three
+Oct 1525 cipher letters of this volume, each from a contemporary decipherment in Dupuy 452 itself:
+- **XXXIII, Raince à Madame, 25 Oct 1525, pp. 366-370: "Original chiffré au f° 28 et déchiffrement au f° 31"**,
+  with the editor's "Commencement du chiffre" at "du bon tour" and "Fin du chiffre" at "touchant les
+  affaires", exactly our cipher span. Excerpt kept unmodified in `print/jacqueton1892_PJ33.txt`.
+- XXXI, Carpi à Madame, 22 Oct 1525: "Original en partie chiffré au f° 20 et déchiffrement au f° 22"
+  (the f.20 letter of `ciphertext_f20_carpi.txt`).
+- XXXII, Raince à Robertet, 24 Oct 1525: "Original chiffré au f° 24 et déchiffrement au f° 25".
+Jacqueton (p. 222 n. 1, and his remark that earlier historians "n'ont pas connu les dépêches françaises du
+ms. Dupuy 452") also cites them in his narrative. The earlier print checks (23 Sept) searched Champollion-Figeac
+1847 and Tomokiyo/Bourdeau but not Jacqueton; the finding aid's unmarked "[par le meme?], s.d. (31)" is the
+f.31 decipherment.
+
+**Grades** (decode.py, 5,725 tokens): **H 5,281** (key glyph by shape), **C 77** (value from the printed
+plaintext: the word signs and the six extra letter signs), **S 0**, **M 355** (transcription marked `?`),
+**U 12** (cross4 10, `?` 2). No I. Letter agreement of reading.txt with the printed passage
+(`compare_print.py`, LCS after normalising accents, j/i, u/v, y/i, h): **5,211 of 5,973 print letters, 87.2 %**;
+the residue is transcription error (q/ρ, l/ρ, ankh, the `six` class carrying both x and l) and the editor's
+spelling.
+
+**Controls and annealer (step 2) not run.** The brief says to stop when the key reads the text; the key
+reads it and the plaintext is in print, so there is no negative for rule 3 to control. Suggestion, not done:
+a corrected transcription could use the print as a crib to split `six` (x vs l) and settle `cross4`.
+
+**Files:** key.tsv, decode.py (`python3 decode.py --check` exits 1 if reading.txt or reading_tokens.tsv is
+stale), reading.txt, reading_tokens.tsv, compare_print.py, print/jacqueton1892_PJ33.txt.
+
+**Requests:** archive.org 3 (Champollion djvu, advancedsearch, Jacqueton djvu), googleapis.com 6 (keyed,
+country=US), github.com 1 (shallow clone). No Gallica.
