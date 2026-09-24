@@ -2123,6 +2123,27 @@ head/get requests), `archivi.ibc.regione.emilia-romagna.it` 2 (both 502), `patri
 3 (all unreachable). All hosts one request at a time, >=1.5s apart, descriptive UA. No SAN, no SIAS, no Google
 Books, no logins, no subagents, no credentials.
 
+check-solved 24 Sept 2026 (LANE N batch csIR, six sources per target, full logs in each target's NOTES.md;
+IR6/IR7/IR9 not run this pass, budget):
+- **IR1** (`ciphers/della-torre-olanda-1690/`): open. Nothing found in web, print, lists, DECODE cache, Bourdeau
+  or Aymeloglu naming this envoy's cipher-book or mission. Not digitised.
+- **IR2** (`ciphers/viganego-torino-1717/`): open. Same six sources, nothing found. Not digitised.
+- **IR3** (`ciphers/belmesseri-napoli-1627/`): open. Nothing found; flagged that "evvi congiunta una cifra" is
+  ambiguous between a key and a ciphered letter, unresolved without inspection. Not digitised.
+- **IR4** (`ciphers/salvago-caraffa-1691/`): open. Nothing found; one near-miss ruled out (Bourdeau's buda1489
+  target names an unrelated 16th-c. Gabriele Salvago). Not digitised.
+- **IR5** (`ciphers/clerville-francia-1648/`): open. Nothing found; the "Clerville" name partially checked
+  against Louis Nicolas de Clerville (Louis XIV's fortifications commissioner, 1610-1677) with no source
+  confirming or ruling out a link to this Este mission. Busta/fascicolo still unresolved from the PDF (scout's
+  caveat 4 stands). Not digitised.
+- **IR8** (`ciphers/taurello-roma-1527/`): open. Nothing found beyond general Sack-of-Rome background; Pastor's
+  and Venturi/Balan's appendices not searched page-by-page this pass. Piece no. "32" not confirmed as a current
+  shelfmark. Not digitised.
+Every verdict rests on WebSearch, local `sources/cryptiana/` and `sources/decode/` greps, and fresh shallow
+clones of both solver repositories — no printed Savoy/Este/Genoa diplomatic edition was read cover-to-cover
+(out of this pass's budget), so "open" here means "not found in this search", not a verifier-level N-class.
+Nominations posted to ROOM.md for all five/six firm rows below.
+
 ## Vatican and Venetian archives (LANE N scout of 24 September 2026)
 
 LANE N worker (`.claude/briefs/runs/2026-09-24-lane-n-scIT2.md`), row prefix VA (reserved). Target: nuncio
