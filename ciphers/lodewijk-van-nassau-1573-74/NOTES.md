@@ -128,3 +128,27 @@ those specific cipher letters, not unrelated enclosures. No alignment attempted 
 the "next step" above). Host: resources.huygens.knaw.nl, 4 requests this pass (>=2s apart), well under the
 shared LANE R budget. Folder kept at 25MB (PDFs deleted after rendering; re-fetch pdf_url in manifest.json if
 needed) under the 30MB cap.
+
+## R13: target passes (24 September 2026)
+
+Two independent blind Sonnet-subagent passes (never from an existing transcription, per LESSONS.md/CLAUDE.md
+Usage item 2 and 3) of the four target letters' line crops (`tools/iiif_lines.py --image`, local PNGs already on
+disk, `--distance`/`--prominence` tuned per page after checking the `--debug` overlay -- default autodetected
+pitch under-segmented several pages, e.g. 4610 p3 found only 11 of ~34 real lines at default settings). Crop
+filenames `<briefnr>_p<page>_L<NN>.jpg` give the canonical line id both passes share. `passA.tsv`/`passB.tsv`
+columns: briefnr, page, line, idx, token (idx 1-based within line); clear French words as `=word`; uncertain
+tokens carry a trailing `?`; footer/margin-only crops (archive stamp, blank page bottom) are one row,
+token `[blank]`. Reconciled with `tools/reconcile_passes.py` via a small unpublished adapter script (line id =
+`page_line`, e.g. `p1_L05`, since the tool's long-format header must start with the literal column `line` and
+recognises `pos`/`idx` only as `pos`/`position`/`index` -- the committed passA/passB.tsv keep the brief's literal
+column order and names; only the reconciler's throwaway input copy is reordered). Its `--crops` line-id-prefix
+match does not find the crops (real crop filenames are `<briefnr>_p<page>_L<NN>.jpg`, not `p<page>_L<NN>.jpg`),
+so `recon/<briefnr>/disagreements.tsv`'s `crop` column is empty; a reconciler settling a row should look at
+`images/<briefnr>_<line-id-with-underscore-for-page>.jpg`, e.g. row `p1_L05` -> `images/4610_p1_L05.jpg` (briefnr
+zero-padded to 4 digits as in the actual filenames, e.g. `04610_p1_L05.jpg`).
+
+Do not settle disagreements.tsv from this brief; do not decode; do not classify novelty.
+
+| briefnr | pages | lines | tokens A | tokens B | agreement (aligned cols) |
+|---|---|---|---|---|---|
+| 4610 | p1-p3 | 109 | 1934 | 1899 | 1558/1981 = 78.6% |

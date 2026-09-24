@@ -1,0 +1,424 @@
+line	col	A	B	flagged	crop
+p1_L01	1	=du	=Du	A	
+p1_L01	3	=jour	=Jour		
+p1_L01	5	=iung	=Juing	AB	
+p1_L01	7	=duplicata	=Duplicata	A	
+p1_L02	1	=il	=Il		
+p1_L02	4	=on	=me		
+p1_L02	5	=pardonne	=pardonnez		
+p1_L02	10	=col	60	AB	
+p1_L02	11	=qui	=ay		
+p1_L02	12	=depesche	=depesché		
+p1_L02	15	-	=ce		
+p1_L02	16	-	=lundy		
+p1_L02	17	-	=mais		
+p1_L02	18	=scelon	=selon	A	
+p1_L02	19	=lespoulx	=l'esperance	A	
+p1_L02	21	=col	=vous	A	
+p1_L02	22	=auoit	=m'auiez		
+p1_L02	24	=parme	=pense	A	
+p1_L03	14	123	133		
+p1_L04	1	-	145		
+p1_L04	2	=auoit	=auoué	AB	
+p1_L04	3	=fut	=este	AB	
+p1_L04	11	75	55		
+p1_L04	18	101	108		
+p1_L05	5	-	=a		
+p1_L05	6	=apparoistre	=paravec	AB	
+p1_L06	1	=leu	-	A	
+p1_L06	2	=la	=le	AB	
+p1_L06	3	=main	=mal	B	
+p1_L06	10	=descripre	=escripre	A	
+p1_L06	12	=fauet	=fault	A	
+p1_L06	13	=auroit	=aucun	A	
+p1_L06	15	=paine	=peine		
+p1_L06	17	=n'a	-	A	
+p1_L06	18	=re	=apres	A	
+p1_L06	20	=lettre	=fortune	A	
+p1_L07	1	=de	-		
+p1_L07	2	=la	-		
+p1_L07	3	=rechute	-	A	
+p1_L08	8	=lisguisez	=lesquelz	A	
+p1_L08	9	=lauoient	=l'auoient	A	
+p1_L08	18	82	32		
+p1_L09	15	65	68		
+p1_L10	2	=la	=lu	B	
+p1_L10	3	=forgue	=foge	AB	
+p1_L10	15	=guet	=quil	A	
+p1_L11	6	=a	=le		
+p1_L11	7	=moytie	=moyen		
+p1_L11	9	=a	=affaire	AB	
+p1_L11	10	=nuy	=ny	AB	
+p1_L12	1	29	19		
+p1_L12	5	=de	=du		
+p1_L12	17	=guanimschez	=souuiendra	AB	
+p1_L12	18	=de	=aluy	AB	
+p1_L13	1	=g	=a	A	
+p1_L13	16	=r	=a	A	
+p1_L13	17	3	=la		
+p1_L14	5	=paroingy	=pareansy	AB	
+p1_L14	6	=siua	=sura	AB	
+p1_L14	9	=quaduisez	=qu'advise		
+p1_L15	6	=souuent	=sous	B	
+p1_L15	8	15	25		
+p1_L15	19	-	=affing	B	
+p1_L15	20	=affin	=d	A	
+p1_L16	1	=pouuoir	=pourvoir		
+p1_L16	2	=ouurir	=ouvrir		
+p1_L16	4	=csoiny	=esting	AB	
+p1_L17	2	120	128		
+p1_L17	7	64	84		
+p1_L17	16	=merveilleusement	=mesuscauoit	AB	
+p1_L18	1	=ay	=ny		
+p1_L18	3	=fait	=fault		
+p1_L18	4	=je	=Je	A	
+p1_L18	5	=sol	=vol	A	
+p1_L18	6	=dig	=dis	A	
+p1_L18	7	=aut	=aussi	A	
+p1_L19	4	64	84		
+p1_L19	7	-	=sry	B	
+p1_L19	8	=exp	=m	A	
+p1_L19	11	=et	=ou	AB	
+p1_L19	19	31	81		
+p1_L20	6	=je	=Je		
+p1_L21	15	=deu	=du	A	
+p1_L22	7	=deu	=du	A	
+p1_L23	1	=stauccuna	=Stancourt	AB	
+p1_L23	8	25	26		
+p1_L23	11	-	=affingé	B	
+p1_L23	12	=affayd	=pourvoir	A	
+p1_L23	13	=pouuoir	=aduis		
+p1_L23	14	=aduisera	=a		
+p1_L25	1	=col	=vol	A	
+p1_L25	4	=no	=vol	A	
+p1_L25	5	=lenuoyer	=renvoye		
+p1_L25	7	=geif	=C	A	
+p1_L25	8	=admis	=fadura	B	
+p1_L26	6	80	86		
+p1_L27	3	=la	=ea	B	
+p1_L27	15	=alea	=Slea	AB	
+p1_L29	7	=dy	=D'y	A	
+p1_L29	8	=entendu	=entendre	B	
+p1_L29	9	=quesgune	=geusgue	AB	
+p1_L29	10	=fuger	=Guge	AB	
+p1_L29	12	=au	=aux		
+p1_L29	13	=ffy	=psy	AB	
+p1_L30	15	=a	=A		
+p1_L31	1	=gmg	=guy	A	
+p1_L31	2	=go	60	A	
+p1_L32	3	=autre	=austri	B	
+p1_L32	12	=goulau	=Goulain	A	
+p1_L32	13	=fort	=sort		
+p1_L32	16	=nfisin	=mafessom	AB	
+p1_L33	1	=g	=gu	AB	
+p1_L34	9	=de	-		
+p1_L34	10	=lavans	=d'esfauons	AB	
+p1_L34	16	=de	=le		
+p1_L35	3	=de	-		
+p1_L35	4	=fu	=d?f	AB	
+p1_L35	13	131	135		
+p1_L36	9	=may	-	A	
+p1_L36	10	=n	=maya	AB	
+p1_L36	11	=cest	=J'est	A	
+p2_L01	1	-	=puistttmuit	B	
+p2_L01	2	=quelquement	=de	A	
+p2_L01	20	=gru	=que	AB	
+p2_L01	21	=len	=lui	AB	
+p2_L02	1	-	192		
+p2_L02	2	-	112		
+p2_L02	3	-	182		
+p2_L02	4	-	81		
+p2_L02	14	64	84		
+p2_L02	20	80	50		
+p2_L03	1	-	130	B	
+p2_L03	2	-	139	B	
+p2_L03	3	=qu	=que	A	
+p2_L03	4	=sbuoiuent	=scauoit	A	
+p2_L03	15	=put	=peut	A	
+p2_L04	11	=moiuga	=moyen	A	
+p2_L05	5	=yaa	=par	A	
+p2_L05	16	-	=bien		
+p2_L05	17	=vet	=est	A	
+p2_L06	9	-	=vu		
+p2_L06	10	=eu	=quel		
+p2_L06	11	=guerguer	=que	A	
+p2_L07	5	148	118		
+p2_L07	9	=fontana	=fontaine	A	
+p2_L07	20	115	118		
+p2_L08	16	=trouue	=trouvé		
+p2_L09	5	31	71		
+p2_L10	9	=pres	=prest		
+p2_L11	4	138	137		
+p2_L11	5	37	87		
+p2_L11	8	61	81		
+p2_L12	6	=fg	=Il	A	
+p2_L12	7	=guillaume	=Guillaume		
+p2_L12	11	101	105		
+p2_L12	14	=6c	=car	A	
+p2_L13	14	143	145		
+p2_L13	15	=de	=d	AB	
+p2_L13	16	=6	=mais	AB	
+p2_L13	17	=ou	120	AB	
+p2_L14	8	=at	=et	A	
+p2_L14	18	103	108		
+p2_L15	8	=si	=Il		
+p2_L15	10	-	=va		
+p2_L15	11	=ay	=en		
+p2_L15	12	=amy	=sfy	AB	
+p2_L16	6	38	78		
+p2_L16	13	-	127		
+p2_L16	14	-	7		
+p2_L16	16	-	=g	B	
+p2_L17	3	75	78		
+p2_L17	16	=lpfg	=frijs	AB	
+p2_L18	16	=34	-	A	
+p2_L18	17	=leur	=d?Len	B	
+p2_L18	18	=si	61		
+p2_L19	5	-	=fenuoyen	B	
+p2_L19	6	=fervoyer	=Gol'	A	
+p2_L19	7	=coladmierg	=adressez	AB	
+p2_L19	8	=nara	=sera	AB	
+p2_L19	14	137	138		
+p2_L20	9	=at	=ce	A	
+p2_L20	11	=guel	=quel	A	
+p2_L20	12	51	71		
+p2_L20	19	=il	=Il		
+p2_L20	22	=donne	=dans		
+p2_L22	18	=fouuoir	=fouvoir	B	
+p2_L23	8	=6	-	A	
+p2_L23	9	=boultez	=Goultjs	AB	
+p2_L23	10	=de	=Je	B	
+p2_L24	1	101	105		
+p2_L24	14	136	-		
+p2_L24	15	=6	130	A	
+p2_L24	16	=oy	=Goy	B	
+p2_L24	17	=leur	=len	B	
+p2_L24	18	=pouuoir	=pourroit		
+p2_L25	2	-	2		
+p2_L25	3	25	5		
+p2_L25	6	-	65		
+p2_L25	7	-	105		
+p2_L25	8	66	21		
+p2_L25	9	140	84		
+p2_L25	10	26	4		
+p2_L25	20	=sang	=sam	AB	
+p2_L25	21	=gm	=que	A	
+p2_L26	1	-	85		
+p2_L26	2	-	148		
+p2_L26	3	-	120		
+p2_L26	4	-	=le		
+p2_L26	5	-	=parlé	B	
+p2_L26	17	=le	-		
+p2_L26	18	=moiuga	-		
+p2_L26	19	=auoir	-		
+p2_L26	20	70	-		
+p2_L26	21	10	-		
+p2_L26	22	25	-		
+p2_L26	23	77	-		
+p2_L26	24	85	-		
+p2_L26	25	24	-		
+p2_L28	1	102	-		
+p2_L28	8	=at	=arG	AB	
+p2_L29	7	145	148		
+p2_L29	9	=fd	=fb	AB	
+p2_L29	11	81	83		
+p2_L29	19	=la	=La		
+p2_L29	20	=isso	=iso	AB	
+p2_L30	5	=dla	=deca	AB	
+p2_L30	17	=loy	-	A	
+p2_L30	18	=nol	-	A	
+p2_L30	19	=affiver	=loynolapitmor	AB	
+p2_L31	17	38	39		
+p2_L31	19	=6	-	A	
+p2_L31	20	=boil	=Goul	A	
+p2_L31	21	=suppli	=suppl	AB	
+p2_L32	1	=d	-	A	
+p2_L32	2	=no	-	A	
+p2_L32	3	=q	-	A	
+p2_L32	4	=boulois	=Dumo	AB	
+p2_L32	5	=manda	=Goulois		
+p2_L32	6	=ou	=mande		
+p2_L32	7	=aduis	=adui	B	
+p2_L32	8	=cau	=Cau	A	
+p2_L32	9	=flg	=fz	A	
+p2_L33	5	=cause	=Jos	B	
+p2_L33	21	=et	-		
+p3_L01	11	=la	=La		
+p3_L01	12	26	25		
+p3_L01	20	=pour	=dont		
+p3_L01	21	=go	=Gol	AB	
+p3_L01	22	=ag	=ay	A	
+p3_L02	1	=faict	=faut		
+p3_L02	2	=autrey	=entrer	AB	
+p3_L02	4	-	=ce		
+p3_L02	5	=cy	=que	A	
+p3_L02	6	=disant	=savoir	B	
+p3_L02	7	=af	=ce	A	
+p3_L02	8	=sana	=sans	A	
+p3_L02	9	=autrem	=aucune	A	
+p3_L02	10	=auditrey	=entretien	B	
+p3_L03	3	=6	=Gol	AB	
+p3_L03	6	=auiz	=avlez	B	
+p3_L03	18	=destre	=lestuduo	AB	
+p3_L03	19	=6	6	A	
+p3_L03	22	=sungefir	=sengaser	AB	
+p3_L04	1	=toui	=vira	AB	
+p3_L04	18	115	116		
+p3_L05	6	=de	-		
+p3_L05	7	=soy	=descoy	B	
+p3_L05	8	=fait	=fis	B	
+p3_L06	6	=d	-	A	
+p3_L06	7	81	=D'81	B	
+p3_L06	13	=goulut	-		
+p3_L06	14	=pouuoir	=Goulez		
+p3_L06	15	6	=prouvoir		
+p3_L07	11	70	130		
+p3_L08	1	=gm	=gu	AB	
+p3_L08	17	=oultra	-		
+p3_L08	18	=fu	=oultrafre	B	
+p3_L09	9	=de	-		
+p3_L09	10	=mistre	=d'histoire	AB	
+p3_L09	13	71	78		
+p3_L10	6	=coudroins	=Coudroins	AB	
+p3_L11	3	-	=et		
+p3_L11	4	=at	=encores	AB	
+p3_L11	5	=mrcubet	=noust	AB	
+p3_L11	9	-	91		
+p3_L11	10	-	124		
+p3_L12	2	=disons	=d'auec		
+p3_L12	14	=les	=La		
+p3_L12	15	=grandes	=grande		
+p3_L12	16	=orraisons	=oraine	AB	
+p3_L12	19	65	61		
+p3_L14	4	=la	=La		
+p3_L14	10	131	121		
+p3_L14	11	128	120		
+p3_L14	14	=lauez	-		
+p3_L14	15	=cu	=l'anx	AB	
+p3_L14	16	=vaya	=sait	AB	
+p3_L14	20	25	21		
+p3_L15	5	125	121		
+p3_L15	13	=lest	-		
+p3_L15	14	=bien	=let	B	
+p3_L15	15	=inutile	=Gien	B	
+p3_L15	16	=de	=nourdlon	B	
+p3_L15	17	=nuire	=famines	B	
+p3_L16	1	=je	-		
+p3_L16	2	=no	=si	A	
+p3_L16	3	=6	=m'God	AB	
+p3_L16	4	=escripra	=escripa		
+p3_L16	6	=ora	-	A	
+p3_L16	7	=dun	=ma	A	
+p3_L16	8	=pouuez	=daig		
+p3_L16	9	=ici	=pouvoir		
+p3_L16	11	80	70		
+p3_L17	9	38	33		
+p3_L17	12	8	3		
+p3_L17	18	150	130		
+p3_L18	1	8	6		
+p3_L18	18	=6	-	A	
+p3_L18	19	=boil	=d?Gol	AB	
+p3_L18	21	81	61		
+p3_L19	1	-	1		
+p3_L19	2	-	31		
+p3_L19	3	83	29		
+p3_L19	4	71	84		
+p3_L19	5	100	24	A	
+p3_L19	6	100	84	A	
+p3_L19	7	70	102	A	
+p3_L19	8	60	3	A	
+p3_L19	10	20	26		
+p3_L19	19	-	=Aprys	B	
+p3_L19	20	=affuign	=gm	AB	
+p3_L20	1	100	148	A	
+p3_L20	2	101	143		
+p3_L20	4	-	60		
+p3_L20	9	=quel	=gu	B	
+p3_L20	10	=estat	=etat	B	
+p3_L20	13	=gostz	=forces	A	
+p3_L20	14	180	150		
+p3_L20	16	=ne	-		
+p3_L20	17	=fceipt	-	A	
+p3_L20	18	=guis	-	A	
+p3_L20	19	=auoir	-		
+p3_L20	20	=tenu	-		
+p3_L20	21	=de	=m'escript	A	
+p3_L21	1	114	104		
+p3_L21	12	151	251		
+p3_L21	17	-	118		
+p3_L21	18	=mande	4	A	
+p3_L21	19	=gm	25	A	
+p3_L22	13	38	30		
+p3_L22	16	=aftr	=a	AB	
+p3_L22	23	21	-		
+p3_L22	24	10	-		
+p3_L22	25	55	-		
+p3_L22	26	150	-		
+p3_L22	27	125	-		
+p3_L23	9	=mesurect	=meschief	A	
+p3_L23	11	=mesme	=meur	B	
+p3_L23	13	=maffineroy	-	A	
+p3_L23	14	=6	=mafessom	AB	
+p3_L23	15	=la	=cela		
+p3_L23	20	85	-		
+p3_L23	21	64	-		
+p3_L23	22	104	-		
+p3_L23	23	73	-		
+p3_L23	24	33	-		
+p3_L24	1	-	=La		
+p3_L24	2	-	28		
+p3_L24	3	-	7		
+p3_L24	4	-	112		
+p3_L24	5	-	101		
+p3_L24	6	-	72		
+p3_L24	7	-	104		
+p3_L24	8	9	111		
+p3_L25	7	=estre	-		
+p3_L25	8	=isuivue	-	A	
+p3_L25	9	53	-		
+p3_L25	10	90	-		
+p3_L25	11	63	-		
+p3_L25	12	104	=otte	B	
+p3_L25	13	74	=Tehussy	B	
+p3_L25	14	34	77		
+p3_L25	15	15	85		
+p3_L25	16	115	113		
+p3_L26	7	=du	=de		
+p3_L26	11	-	=crest	B	
+p3_L26	12	=este	6	A	
+p3_L27	7	=gm	-	A	
+p3_L27	8	=sy	=quirty	AB	
+p3_L27	9	=fua	=fba	AB	
+p3_L28	1	=il	=Il		
+p3_L28	2	=auoit	=auois		
+p3_L28	3	=guelque	=quiquant	B	
+p3_L28	8	75	-		
+p3_L28	10	=cau	-		
+p3_L28	11	=au	-		
+p3_L28	12	=ny	-		
+p3_L28	13	=bicy	-	A	
+p3_L28	14	=faudroins	-	A	
+p3_L29	5	=cau	=cav	B	
+p3_L29	6	=ffg	=iz	AB	
+p3_L29	7	=augmentation	=conquestat	AB	
+p3_L29	8	59	19		
+p3_L29	12	=pour	-		
+p3_L29	13	=fs	-	A	
+p3_L29	14	21	-		
+p3_L29	15	81	-		
+p3_L29	16	31	-		
+p3_L29	17	101	-		
+p3_L29	18	22	-		
+p3_L30	7	133	73		
+p3_L30	10	=sinon	-		
+p3_L30	11	=a	-		
+p3_L30	12	=apres	-		
+p3_L30	13	=scaure	=signe	B	
+p3_L30	14	=aubiery	=annoncy	AB	
+p3_L31	9	=oultre	-		
+p3_L31	10	=a	-		
+p3_L31	11	=ginlg	-	A	
+p3_L31	12	=oun	-	A	
+p3_L31	13	79	-		
+p3_L31	14	82	-		
+p3_L31	24	=loy	=les	A	
