@@ -1,0 +1,6 @@
+# Reading of ciphertext_1618.tsv with the two-row reciprocal key on the leaf (tools/decode_key.py; decode.json).
+# Grades: H 33, M 7 of 40 tokens. '/' = word break seen on the image.
+1618_spec2 | der heis ist ein
+1618_spec4 | feiner man
+1618_spec6 | der abraham
+1618_spec8 | kein gelt

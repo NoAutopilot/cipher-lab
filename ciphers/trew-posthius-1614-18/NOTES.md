@@ -165,3 +165,59 @@ stage 2, no novelty claim made (rule 10).
   either 1618 key.
 - Karrer's *Johannes Posthius* letter-catalogue (Google Books) not opened — check whether it also indexes
   Erasmus's letters before calling either item unpublished at any grade.
+
+## Reading (24 Sept 2026, LANE R4 F)
+
+LANE R4 worker F (Opus, session_01WreUsMyBqdXikTKqhXRQXz), brief `.claude/briefs/runs/2026-09-24-lane-r4-f-posthius-solver.md`.
+Status line above stays `open` for the orchestrator to change; this section reports a reading, not a novelty class.
+
+**Step 0.** The 31 columns of `recon/disagreements.tsv` were settled on the crops (`images/crops/1614_cipher_L01.jpg`,
+`1614_note_above_L01.jpg`, `1618_right_L01.jpg`); `ciphertext.tsv` is `recon/ciphertext_draft.tsv` with those settlements
+(and five corrections seen on the same crops: 1614_c1 pos 4 is a long s ſ both passes read as f; 1618 spec3 pos 1 k;
+spec4 pos 3 and spec8 pos 3 are the ʒ-form z, as in "zdb"; spec8 last sign b, "xuob."), each marked `settled:` in `why`.
+Leaf keys: `key_leaf_1614.tsv`, `key_leaf_1618_right.tsv`, `key_leaf_1618_left.tsv`.
+
+**1614, design.** Both designs tested on the 4-line block (script in the session; outputs):
+- (a) keyword-mixed alphabet, plain a..z -> SALUTEMBCDFG HIKNOPQRWXYZ: `bwaloudbrzsibnrxzn / bahtsbddowaruohiepr / ...` -- no language.
+- (b) two-row reciprocal table, top letter <-> letter below (s-h a-i l-k u-n t-o e-p m-q b-r c-w d-x f-y g-z): reads **German**:
+
+  `ich hab nit gewist das / ihr mein nachtbar wolt / werden bei der dihlin / uiei gluck darzu`
+  ("I did not know that you would become my neighbour at the Dihlin['s]; [much?] luck with it").
+
+  So the key is design (b), a 12-pair reciprocal (Porta-style "two-row") table, not a keyword-mixed alphabet as the
+  check-solved pass inferred. "dihlin" is read as written (sign 16, k, uncertain on the image) and may be a surname with
+  the feminine -in (a landlady "Diehl"); "uiei" is read as written, probably a slip for "uiel" (= viel), not repaired.
+- The clear lines are **not the plaintext**: "Fridericus Henricus vocat[ur] recens natus Princeps" is separate news in
+  Latin (Frederick Henry of the Palatinate, son of Elector Frederick V and Elizabeth Stuart, born at Heidelberg 1 Jan
+  1614 -- consistent with a letter of 13 March 1614 from Heidelberg), and "Eande[m] descriptionem olim communicavit Parens
+  b.m. dno D. Camerario Noribg." refers to a description in the letter body. Neither is a crib for the German block.
+- **For the verifier:** the crop shows faint small-hand letters written above cipher lines 2-4 along ruled/struck lines
+  (partly legible, e.g. "...ach..." "...bar..." over "Uiwſorib"), possibly a contemporary interlinear decipherment on the
+  leaf. Not transcribed this pass; a verifier should look at it at native resolution before any class is assigned.
+
+**1618.** The right block "Conradbefghi / klmpqstuwxyz" (top row pos 11 is h, pass B) is a complete 24-letter reciprocal
+table (c-k o-l n-m r-p a-q d-s b-t e-u f-w g-x h-y i-z) and reads the cipher lines of the specimen. The specimen
+alternates clear and cipher lines (clear: spec1, 3, 5, 7; cipher: spec2, 4, 6, 8):
+
+  `der heis ist ein / feiner man / der abraham / kein gelt`
+
+against the clear lines "De[r] Seid(?) ist ein / kleiner man / Der abrasam (= Abraham) / Kei[n] gelt". Two words differ
+(clear "Seid"/"kleiner" vs cipher "heis"/"feiner"); the cipher letters are as seen, not repaired. The keyword-mixed
+design (CONRADB... order) gives `suqyuzfzfguzp ...`, no language. The left block ("Conradb" + G1-G5 over "klmp" + G6 G7
+w G8 G9) is struck through and incomplete (9 of 12 bottom-row places); its five drawn signs after "Conradb" stand where
+the right block has e f g h i, so they are most likely cursive letterforms, not invented symbols (not verified). No
+passage uses glyphs, so it was not applied.
+
+**Grades (tools/decode_key.py, `--check` exits 0):** 1614: 69 tokens, H 63, M 6. 1618: 40 tokens, H 33, M 7. Total 109:
+H 96, M 13, C 0, S 0, I 0. M = transcription settled on a low-resolution crop. Files: `key.tsv`, `key_1618.tsv`,
+`ciphertext_1614.tsv`, `ciphertext_1618.tsv`, `decode.json`, `reading_1614.txt`, `reading_1618.txt`, `reading_tokens_*.tsv`.
+
+**Search log (what was found and where not).** Six-source check-solved list above (24 Sept 2026, csBV): nothing.
+archive.org full text (be-api fts, 24 Sept 2026, 4 requests >= 3 s apart): `"nachtbar wolt werden"` 0 hits;
+`"bei der Dihlin" OR "ihr mein nachtbar"` 0 hits; `"Erasmus Posthius" Chiffre OR Geheimschrift OR cipher` 0 hits;
+`"Posthius" "Eysenmenger"` 20 items (e.g. dieregierungdesh0000reus, iteritalicum0000paul, bwb_W9-CZY-094; not opened,
+co-occurrence of names only). Not searched: Google Books, trew-letters.com transcriptions, Karrer's Posthius catalogue,
+Schmidt-Herrling 1940 text. No novelty class claimed (rule 10).
+
+Suggestions (not done): verifier to read the interlinear marks on 1614 at native resolution; a Trew-project transcription
+of either letter on trew-letters.com would decide whether the reading is already printed.

@@ -1,0 +1,53 @@
+{
+ "jobs": [
+  {
+   "ciphertext": "ciphertext_1614.tsv",
+   "key": "key.tsv",
+   "reading": "reading_1614.txt",
+   "tokens": "reading_tokens_1614.tsv"
+  },
+  {
+   "ciphertext": "ciphertext_1618.tsv",
+   "key": "key_1618.tsv",
+   "reading": "reading_1618.txt",
+   "tokens": "reading_tokens_1618.tsv"
+  }
+ ],
+ "defaults": {
+  "format": "tsv",
+  "style": "concat",
+  "nonsign": [
+   "/"
+  ],
+  "word_sep": "/",
+  "uncertain_conf": [
+   "M"
+  ],
+  "header": [
+   "# Reading of {name} with the two-row reciprocal key on the leaf (tools/decode_key.py; decode.json).",
+   "# Grades: {grades_sorted} of {total} tokens. '/' = word break seen on the image."
+  ],
+  "token_columns": [
+   [
+    "line",
+    "line"
+   ],
+   [
+    "pos",
+    "pos"
+   ],
+   [
+    "sign",
+    "raw"
+   ],
+   [
+    "value",
+    "value"
+   ],
+   [
+    "grade",
+    "grade"
+   ]
+  ]
+ }
+}

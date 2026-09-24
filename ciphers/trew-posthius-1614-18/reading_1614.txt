@@ -1,0 +1,6 @@
+# Reading of ciphertext_1614.tsv with the two-row reciprocal key on the leaf (tools/decode_key.py; decode.json).
+# Grades: H 63, M 6 of 69 tokens. '/' = word break seen on the image.
+1614_c1 | ich hab nit gewist das
+1614_c2 | ihr mein nachtbar wolt
+1614_c3 | werden bei der dihlin
+1614_c4 | uiei gluck darzu
