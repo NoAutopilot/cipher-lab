@@ -126,8 +126,93 @@ def so_chip(r):
         out += f' <span class="so {cls}" title="{E(tip)}">{icon} {E(txt)}' + (f' <span class="muted">({E(x["outcome"])})</span>' if st == "checked" and x["outcome"] else "") + '</span>'
     return out
 
+def load_n4_readings():
+    """N4-READINGS.md sections keyed by '## <folder> <item id> ...' headings; each holds text, rating and links."""
+    out = []
+    if not os.path.exists("N4-READINGS.md"):
+        return out
+    txt = open("N4-READINGS.md", encoding="utf-8").read()
+    for sec in re.split(r"\n(?=## )", txt):
+        m = re.match(r"## (ciphers/[\w.-]+)\s*(.*)", sec)
+        if not m:
+            continue
+        body = sec.split("\n", 1)[1] if "\n" in sec else ""
+        rating = ""; links = {}
+        mr = re.search(r"^rating:\s*(.+)$", body, re.M)
+        if mr: rating = mr.group(1).strip()
+        ml = re.search(r"^links:\s*(.+)$", body, re.M)
+        if ml:
+            for part in ml.group(1).split(";"):
+                if "=" in part:
+                    k, v = part.split("=", 1); links[k.strip()] = v.strip()
+        text = re.sub(r"^(rating|links):.*$", "", body, flags=re.M).strip()
+        out.append({"folder": m.group(1), "head": m.group(2).strip(), "text": text, "rating": rating, "links": links})
+    return out
+
+def load_drafts_by_target():
+    """outreach/*.md with a targets: header, any status except done/sent, keyed by folder."""
+    out = {}
+    if not os.path.isdir("outreach"):
+        return out
+    for fn in sorted(os.listdir("outreach")):
+        if not fn.endswith(".md"): continue
+        txt = open(os.path.join("outreach", fn), encoding="utf-8").read()
+        head = {}
+        lines = txt.split("\n"); k = 0
+        while k < len(lines) and re.match(r"^(to|subject|checked|status|targets|links):", lines[k]):
+            mm = re.match(r"^(\w+):\s*(.*)$", lines[k]); head[mm.group(1)] = mm.group(2).strip(); k += 1
+        if "targets" not in head: continue
+        body = "\n".join(lines[k:]).strip()
+        d = {"slug": fn[:-3], "to": head.get("to", ""), "subject": head.get("subject", ""), "status": head.get("status", ""), "text": body, "links": head.get("links", "")}
+        for f in re.split(r"[,;]\s*", head["targets"]):
+            f = f.strip().strip("`")
+            if f: out.setdefault(f, []).append(d)
+    return out
+
+def safe_sentences(folder):
+    p = os.path.join(folder, "AUDIT.md")
+    if not os.path.exists(p): return []
+    out = []
+    for line in open(p, encoding="utf-8"):
+        if "safe sentence" in line.lower():
+            m = re.search(r'"([^"]{20,})"', line)
+            if m: out.append(m.group(1))
+    seen = []; [seen.append(x) for x in out if x not in seen]
+    return seen[:3]
+
+def item_tokens(title):
+    """ids that identify one item inside a folder: WVO 53, f.29r, E4, P4, BLA 186, 4610."""
+    return set(re.findall(r"\b(?:wvo\s*\d+|f\.\s*\d+[rv]?|e\d|p\d|bla\s*\d+|\d{4})\b", title.lower()))
+
+def dossier(r):
+    folder = r["link"].replace(REPO, "").strip("/")
+    parts = []
+    parts.append(f'<div class="dz"><b>What it is.</b> {E(r.get("line", ""))} <span class="muted">{E(r.get("grade", ""))}</span></div>')
+    toks = item_tokens(r["title"])
+    secs = [x for x in n4_readings if x["folder"] == folder]
+    if len(secs) > 1 and toks:
+        narrowed = [x for x in secs if item_tokens(x["head"]) & toks]
+        secs = narrowed or secs
+    for x in secs[:2]:
+        parts.append(f'<div class="dz"><b>Why it matters.</b>' + (f' <span class="rating">{E(x["rating"])}</span>' if x["rating"] else "") + f'<div class="dz-text">{E(x["text"][:1400])}{"…" if len(x["text"]) > 1400 else ""}</div></div>')
+    for dft in drafts_by_target.get(folder, [])[:2]:
+        did = re.sub(r"[^a-z0-9]+", "-", (dft["slug"] + "-" + folder).lower())
+        parts.append(f'<div class="dz"><b>Who to tell.</b> {E(dft["to"])} <span class="muted">({E(dft["status"])})</span><br><b>Subject.</b> {E(dft["subject"])}'
+                     f'<details><summary>Text to send</summary><pre class="mail">Subject: {E(dft["subject"])}{NL}{NL}{E(dft["text"])}</pre>'
+                     f'<button type="button" class="copy" data-for="dz-{E(did)}">Copy subject and text</button><textarea id="dz-{E(did)}" hidden>Subject: {E(dft["subject"])}{NL}{NL}{E(dft["text"])}</textarea></details></div>')
+    links = {"folder": r["link"], "audit": r["link"].rstrip("/") + "/AUDIT.md"}
+    for x in secs[:1]:
+        links.update({k: v for k, v in x["links"].items() if v and not v.startswith("none")})
+    parts.append('<div class="dz"><b>Links.</b> ' + " · ".join(f'<a href="{E(v)}">{E(k)}</a>' for k, v in links.items()) + '</div>')
+    if not secs and not drafts_by_target.get(folder):
+        parts.append('<div class="dz muted">Significance memo and outreach draft are being written; this dossier fills in when they land.</div>')
+    return '<details class="dossier"><summary>Open the dossier</summary>' + "".join(parts) + '</details>'
+
+NL = chr(10)
 asks = load_asks()
 emails = load_emails()
+n4_readings = load_n4_readings()
+drafts_by_target = load_drafts_by_target()
 second_opinions = load_second_opinions()
 jq, jdone = load_jstor_queue()
 stages = d["stages"]
@@ -180,7 +265,8 @@ for i, (code, name, desc) in reversed(list(enumerate(LADDER))):
         audit = r["link"].rstrip("/") + "/AUDIT.md"
         chip = so_chip(r)
         items += (f'<li class="{cls}"><a href="{E(r["link"])}">{E(short(r["title"], 96))}</a>'
-                  f'<span class="rung-meta">{E(a_txt)}' + (f' · <b>next rung needs:</b> {E(short(gap, 140))}' if gap else '') + '</span>' + chip + '</li>')
+                  f'<span class="rung-meta">{E(a_txt)}' + (f' · <b>next rung needs:</b> {E(short(gap, 140))}' if gap else '') + '</span>' + chip
+                  + (dossier(r) if i >= 3 else "") + '</li>')
     hi = " hi" if i >= 3 else ""
     empty = '<li class="muted empty">nothing here yet</li>'
     ladder_cols += (f'<div class="rung{hi}"><div class="rung-head"><div><span class="rung-code">{code}</span> <span class="rung-name">{E(name)}</span></div>'
@@ -205,7 +291,6 @@ headline = d.get("headline") or (
 )
 
 # ---------- your card ----------
-NL = chr(10)
 def card_li(m):
     drafted = m["status"] != "ready"
     licls = ' class="drafted"' if drafted else ""
@@ -327,6 +412,7 @@ header .top {{ display:flex; flex-wrap:wrap; align-items:baseline; justify-conte
 .rung, .rung-item, .tile, .card li, .lanes > *, .results li > * {{ min-width:0; }} .rung-item a, .r-title, .r-line, .rung-meta {{ overflow-wrap:anywhere; }}
 .rung {{ border:1px solid var(--line); border-radius:6px; padding:12px 14px; background:var(--ground); display:grid; grid-template-columns:190px minmax(0,1fr); gap:14px; align-items:start; }}
 .rung-count {{ font-size:0.78rem; margin-top:6px; }}
+.dossier {{ margin-top:6px; font-size:0.86rem; }} .dossier summary {{ cursor:pointer; color:var(--accent); font-weight:600; }} .dz {{ margin-top:8px; }} .dz-text {{ white-space:pre-wrap; margin-top:4px; }} .rating {{ font-weight:600; color:var(--good); }}
 .rung.hi {{ background:var(--good-soft); border-color:var(--good); }}
 .rung-head {{ display:grid; gap:2px; }} .rung-code {{ font-family:"JetBrains Mono", monospace; font-weight:600; font-size:1.05rem; }} .rung-name {{ font-weight:600; }}
 .rung-desc {{ font-size:0.8rem; line-height:1.3; }}
