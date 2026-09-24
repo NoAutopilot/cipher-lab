@@ -363,3 +363,46 @@ sign misreadings or encipherer's errors.
 
 Requests: none to any host (no fetch). Files: passC_f29.tsv, reading_passC.txt, passC_proposed_changes.tsv, this
 section. AUDIT.md, ciphertext.txt, reading.txt, reading_tokens.tsv and f.30 files are not touched.
+
+## Second reader: changes applied (24 Sept 2026)
+
+Applied per ASKS.md row 25 (orchestrator decision, 24 Sept 2026, by `date -u`). Every row of
+`passC_proposed_changes.tsv` whose `basis` column reports image support was written into `ciphertext.txt`: 14
+sign changes (15 rows, one change merges two signs: L01 idx24-25 `sl r3` -> `rs`) plus L02 idx5 (`4t` gains a
+following `z`, a genuine 4th-token insertion) and L04 idx3/idx21 (two deletions: a double-counted `2` folded into
+`ll`, and a spurious `yt` with no sign in the image). L08 idx0 (`Rt` -> `L2`) is a sign change whose new code is
+itself uncertain, so it was written as `L2?`. The 4 rows the table marks as uncertain-without-changing (L03
+idx34 `eh`, L04 idx0 `sl`, L06 idx6 `fh`, L09 idx0 `r3`) were left at their existing value and given a trailing
+`?` only. Nothing the table calls uncertain or unsupported was applied otherwise.
+
+`python3 decode.py` regenerated `reading.txt` and `reading_tokens.tsv` from these inputs; `python3 decode.py
+--check` passes (reading matches the committed inputs, rule 7).
+
+**Grade counts, before -> after** (of all graded tokens; U = sign not covered by the key):
+
+| | tokens | H | M | U |
+|---|---|---|---|---|
+| before (first reader, committed) | 569 | 538 | 26 | 5 |
+| after (passC changes applied) | 568 | 533 | 30 | 5 |
+
+The token count drops by 1 (one deletion net of one insertion and one 2-for-1 split minus one merge: L01
+2-for-1 +1, L01 merge -1, L02 insertion +1, L04 two deletions -2). H falls by 5 only because five signs (the
+four newly uncertain plus L08's changed-and-uncertain `L2?`) can no longer carry a firm grade under decode.py's
+rule that an uncertain sign is capped at M -- no reading got worse.
+
+**Words that changed** (grade H unless noted): IAY (was ILY, L01), PORTEVR (was PORTVVR, L01/L03), VNG ARTICLE
+(was VNGAERTICLE, L01), BIEN (was BIVN, L02), LE LVY DEMANDER (was LVTIDEMANDER, L04), FONDEMENT less its first
+sign, still reading T for F and unresolved by this pass (was TONDEPETT, L05), ORS DE (was ORADE, L09).
+
+**Lines that now read as continuous French** (word division by eye, decoded from `reading.txt`): L01 `IAY EAILLE
+A CE PORTEVR VNG ARTICLE QVE IAY MIS` (bracketed digraphs as decode.py renders them: `IAYEAI[LL]EACEPORTEVRVNGARTICLEQVEIAYMIS`).
+L02 `A PART [ET] AI FAICT LA DRE[SS]E DE DE[SS]VS A VOVS [COM]BIEN QVV CE SOIT`. L03 `A ROY [ET] SI LE DICT
+PORTEVR [COM]VELIOIT D'AVENDVRE AYE VOVS`. L04 `EAILLERIE VOVS PRIE LE LVI DEMANDER CAR CEST LE TOTAL`. L05
+`TONDEMENT [ET] I AI CE FAICT D'AVLTANT QVE NOVS TRE SAIB` (T for F at the first sign is a separate, unresolved
+issue, not touched by this pass). L08 `LVI SATASFAIRE I AI CE FAICT [ET] LVY AI MONSTRE TOVT`. L09 `RE[COM]TENV POVR LE [COM]TENTER
+[ET] OVSTER · ORS DE SVSPECON`. This matches the preview above; L06, L07, L12 and part of L13 are unchanged and
+still do not read as French (their disputed signs are unaffected by this pass; see the preview note above for
+where to look next).
+
+Files touched: ciphertext.txt, reading.txt, reading_tokens.tsv, this section, ASKS.md (row 25 set to done).
+AUDIT.md, key.tsv and f.30 files not touched. No novelty wording used or implied.
