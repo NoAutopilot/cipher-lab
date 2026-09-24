@@ -1,0 +1,22 @@
+{
+  "ark": "btv1b90612993",
+  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90612993/manifest.json",
+  "canvas_count": 932,
+  "note": "All 932 IIIF canvas labels are 'NP' (no folio metadata in the manifest itself); folio numbers below are read directly off each fetched image, not derived from manifest labels.",
+  "fetches": [
+    {"date": "24 Sept 2026 (earlier pass)", "canvas": 12, "file": "f12.jpg", "url_pattern": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90612993/f12/full/full/0/native.jpg", "content": "the key, 'La clef du chiffre de Mr. de Maisse Ambassadeur a Venise'", "folio_seen": "catalogue states f.5 for the key; not independently re-read this pass"},
+    {"date": "24 Sept 2026 (earlier pass)", "canvas": 20, "file": "f20.jpg", "content": "plain-French clear extract of a royal letter, 1 Feb 1583"},
+    {"date": "24 Sept 2026 (earlier pass)", "canvas": 30, "file": "f30.jpg", "content": "Villeroy to Maisse, clear French, no cipher", "folio_seen": 14},
+    {"date": "24 Sept 2026 (earlier pass)", "canvas": 70, "file": "f70.jpg", "content": "Villeroy to Maisse, 21 Jan 1583, clear French, no cipher", "folio_seen": 21},
+    {"date": "24 Sept 2026 (this pass)", "canvases": "74,78,82,86,90,94,98,102,106,110,114,118,122,126,130,134,138,142,146,150,154", "files_pattern": "probe_c{N}.jpg", "size": "500px wide IIIF thumbnails (full/500,/0/native.jpg), ~24-78KB each", "content": "all clear cursive French letters/dockets or blank versos/covers; no dense numeral cipher text seen on any of the 21", "contact_sheet": "probe_contact_sheet.jpg (labeled c{canvas}/f{canvas-49}, offset per NOTES.md's own estimate; see NOTES.md for why that offset is not fully trusted)"},
+    {"date": "24 Sept 2026 (this pass)", "canvas": 106, "file": "probe_c106_full.jpg is NOT committed (kept only the 500px probe_c106.jpg)", "purpose": "calibration check: fetched at 1400px wide and cropped the dorsal-note corner to try to read the folio number directly; read as '62' with low confidence (poor handwriting/resolution) -- see NOTES.md Print Check section"}
+  ],
+  "requests_this_pass": {
+    "gallica.bnf.fr": "23 IIIF image fetches (21 probe thumbnails canvas 74-154 + 1 recalibration fetch at canvas 106 + 1 manifest.json), one at a time >=1.5s apart, 2 transient connection resets each recovered on the single allowed retry, no 403/altcha seen",
+    "archivesetmanuscrits.bnf.fr": "3 (parent notice cc462243, wrong sub-node cd0e136 from a search result that turned out to be fr.16093, then the correct ajaxGetCompDisplay.html?eadCompId=FRBNFEAD000046224_d0e62 for fr.16092 itself)",
+    "googleapis.com/books": "2 (with &key=$GOOGLE_BOOKS_KEY&country=US, key never printed)",
+    "archive.org": "2 (advancedsearch for Boucher's edition -- not found, be-api.us.archive.org full-text search for 'Hurault de Maisse' + 'chiffre' -- noisy, not conclusive)",
+    "catalog.hathitrust.org": "1 (guessed OCLC number for Boucher's edition, no record -- not pursued further)",
+    "WebSearch": "2"
+  }
+}
