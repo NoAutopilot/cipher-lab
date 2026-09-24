@@ -6702,5 +6702,175 @@
     "reason": "record opened (MS 597 p.246a) cites FindingAids: Calendar of the Carew Manuscripts, ed. Brewer & Bullen (6 vols., 1867-73), vol. II, document 308 -- printed calendar covers this piece-run"
    }
   ]
+ },
+ "lane_s_nl-nordic": {
+  "_about": "LANE S scout of Dutch and Nordic archive catalogues, 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-s-scR.md). Nationaal Archief (main site down for maintenance, HTTP 503), KB (jsru.kb.nl SRU reached but only the GGC printed-book collection, noise), Riksarkivet's own search UI (sok.riksarkivet.se, captcha-walled to both curl and a real headless browser) worked around via its public unauthenticated REST API at data.riksarkivet.se/api/records, Rigsarkivet's Daisy (daisy.rigsarkivet.dk, reached but its search box is a JS-hidden-field autocomplete Playwright could not fill), manuscripta.se (reached, searched by URL, returns only Riksantikvarieämbetet administrative-letter noise for cipher terms), openarch.nl/openarchieven.nl (Dutch civil-registration records, off-profile by design). Riksarkivet API queries: chiffer (125), chifferskrift (0), chiffrerad (1), chifferskrivelse (0), chiffernyckel (5), dechiffrerad (0), \"en chiffre\" (0), chiffer+only_digitised_materials=true (2, both WWII administrative volumes, confirming zero digitised/copy-free hits this sweep). Excluded the Riksarkivet 'Chifferklaver' collection as DECODE/Bourdeau territory (riksarkivet1628, goertz1717, baner1640 are drawn from it). Excluded a cluster of ~20th-century Utrikesdepartementet 'telegram i chiffer' diary volumes and Krigsarkivet Kryptoavdelningen files as administrative logistics with an existing published historiography (Beckman, Åsebo), not scored. 8 rows scored (R1-R3, R5-R8), 2 caution rows carried for the record (R4 as a class note, R9-R10 flagged not-fresh) — see QUEUE.md 'Dutch and Nordic archive candidates (LANE S scout of 24 September 2026)' for the full table and caveats. Never promoted, never solved; every row still needs check-solved's six-source sweep before the board.",
+  "date": "24 September 2026",
+  "requests_per_host": {
+   "www.nationaalarchief.nl": 2,
+   "service.archief.nl": 1,
+   "jsru.kb.nl": 3,
+   "sok.riksarkivet.se": 3,
+   "data.riksarkivet.se": 16,
+   "daisy.rigsarkivet.dk": 3,
+   "www.sa.dk": 1,
+   "manuscripta.se": 9,
+   "openarch.nl_openarchieven.nl": 3,
+   "github.com": 2
+  },
+  "rows": [
+   {
+    "rank": "R1",
+    "target": "Ulric Celsing (Swedish minister to the Ottoman Porte) correspondence with Ignace Mouradgea d'Ohsson, cipher key in the same folder",
+    "year": "1779-1782",
+    "lang": "sv/fr",
+    "kind": "recovery",
+    "reference": "SE/RA/721512/IV/IV 1/5",
+    "holder": "Riksarkivet i Stockholm/Täby (Beskickningsarkivet från Biby)",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 3,
+     "size": 2,
+     "competition": 3,
+     "weight": 3,
+     "unread": 2
+    },
+    "total": 37
+   },
+   {
+    "rank": "R2",
+    "target": "Gustaf Celsing (Swedish minister to the Ottoman Porte) letter-drafts to Georg Wilhelm af Sillén, cipher key in the same volume",
+    "year": "1755-1764",
+    "lang": "sv/fr",
+    "kind": "recovery",
+    "reference": "SE/RA/721512/II/II 1/II 1 B/4",
+    "holder": "Riksarkivet i Stockholm/Täby (Beskickningsarkivet från Biby)",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 3,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 2
+    },
+    "total": 34
+   },
+   {
+    "rank": "R3",
+    "target": "Louis de Geer papers with a cipher key, journals and letters in the circle of Axel Oxenstierna",
+    "year": "1644-1646",
+    "lang": "sv/nl/fr",
+    "kind": "recovery",
+    "reference": "SE/ULA/13506/1/I/45",
+    "holder": "Riksarkivet i Uppsala landsarkiv (Leufstaarkivet I)",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 2,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 2
+    },
+    "total": 31
+   },
+   {
+    "rank": "R5",
+    "target": "Unsigned enciphered private letters, Welin to Östergren, incoming letters to Count Adolf Göran Mörner",
+    "year": "undated",
+    "lang": "sv",
+    "kind": "cryptanalysis",
+    "reference": "SE/RA/720290/I/12/2/153",
+    "holder": "Riksarkivet i Stockholm/Täby (Esplunda arkiv)",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 1,
+     "unread": 3
+    },
+    "total": 27
+   },
+   {
+    "rank": "R6",
+    "target": "Magnus Jakob Crusenstolpe papers: spy reports and cipher documents concerning the 1809 revolution",
+    "year": "1809",
+    "lang": "sv",
+    "kind": "cryptanalysis",
+    "reference": "SE/RA/720266/03/08/~/2,5",
+    "holder": "Riksarkivet i Stockholm/Täby (Ericsbergsarkivet, Crusenstolpe-papper)",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 28
+   },
+   {
+    "rank": "R7",
+    "target": "Mauritz Vellingk reports partly in cipher from Hamburg exile, plus his own copies re: the 1713 neutrality treaty",
+    "year": "1713-1714",
+    "lang": "sv/de",
+    "kind": "cryptanalysis",
+    "reference": "SE/RA/1411/E/E VI/1 + SE/RA/720626/E/E 6015",
+    "holder": "Riksarkivet i Stockholm/Täby (Kanslikollegium; Mauritz Vellingks samling)",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 28
+   },
+   {
+    "rank": "R8",
+    "target": "Karl XI's full power for the Swedish peace commissioners, partly in cipher",
+    "year": "1677",
+    "lang": "la",
+    "kind": "cryptanalysis",
+    "reference": "SE/RA/25.3/4/II/7/B",
+    "holder": "Riksarkivet i Stockholm/Täby (Originaltraktater med främmande makter)",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 28
+   },
+   {
+    "rank": "R9",
+    "target": "Handlingar ang. chiffer: 18th/19th-c. cipher-system descriptions incl. a 1786 Gripenstierna cipher-machine proposal (contribution/caution, not a solve target)",
+    "year": "1700s-1800s",
+    "lang": "sv",
+    "kind": "contribution",
+    "reference": "SE/RA/221/2210.01.1/F/F 5/F 5 C/7",
+    "holder": "Riksarkivet i Stockholm/Täby (Utrikesdepartementet med föregångare)",
+    "axes": {
+     "language_fit": 3,
+     "material": 0,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 1,
+     "weight": 2,
+     "unread": 1
+    },
+    "total": 22
+   }
+  ]
  }
 }

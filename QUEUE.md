@@ -1147,3 +1147,107 @@ the solver repositories).
 raw clusters from the 255 fetched identifiers plus the 3 controls, reproducible by re-running
 `python3 tools/ia_numeral_runs.py $(tail -n +2 sources/ia-fulltext/editions2.tsv | cut -f1) collectionofstat01thur correspondancein00henr archivesoucorre04housgoog --cache sources/ia-fulltext --tsv sources/ia-fulltext/runs2.tsv`
 against freshly-fetched `_djvu.txt` files, gitignored, not committed).
+
+## Dutch and Nordic archive candidates (LANE S scout of 24 September 2026)
+
+Row 5 of the lane brief (`.claude/briefs/runs/2026-09-24-lane-s-scR.md`): Nationaal Archief, KB, Riksarkivet,
+Rigsarkivet, manuscripta.se, openarch.nl. Read LANDSCAPE.md, LESSONS.md secs 1-2, README "What counts as a
+result", the rubric in `.claude/workflows/scout.js`, and the two QUEUE.md sections named in the brief before
+starting. Excluded against fresh shallow clones of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers`
+(grepped by name/shelfmark), `sources/cryptiana/`, CATALOG.md, LANDSCAPE.md and `ciphers/` — none of the rows
+below is already named there. No image was opened (none of these items is digitised); "leaf viewed" does not
+apply to any row.
+
+**Hosts blocked, one attempt logged, not pursued further per the good-citizen rule.** `www.nationaalarchief.nl`
+serves "Site in onderhoud" (site under maintenance) at HTTP 503 on every path, confirmed by page title, not a
+bot block — retried once, still 503, stopped. `sok.riksarkivet.se` (the NAD/Riksarkivet search UI) redirects
+every query to `/captcha`, confirmed both by curl and by `tools/browser_fetch.js` (a real headless Chromium hit
+the same captcha page) — one retry via the browser tool, still captcha, stopped; its underlying JSON search API
+lives on a different host and was used instead (see below). `daisy.rigsarkivet.dk` (the Danish Rigsarkivet's
+Daisy finding-aid database) is reachable and not challenge-blocked, but its search box is a React component
+with a hidden `<input>` behind a JS autocomplete widget that Playwright's `fill()` cannot target (confirmed:
+`waiting for element to be visible` timeout) — no query was executed; a worker with more budget for
+reverse-engineering the widget's underlying request, or a person with a browser, could search it directly at
+`https://daisy.rigsarkivet.dk/daisy_forside`, field "Arkivskaber eller arkivserie" — note Daisy is a
+fonds/series-name search, not a free-text item-description search like TNA Discovery, so it would not surface
+"partly in cipher" notes the way the Riksarkivet API below does even if the widget were driven successfully.
+
+**KB (Koninklijke Bibliotheek).** `jsru.kb.nl/sru/sru` is a real, working SRU endpoint (confirmed via
+`operation=explain`), but its only collection reached (`x-collection=GGC`, the general printed-book catalogue)
+returns exclusively noise for cipher terms: "cijferschrift" is 19th/20th-century numbered singing notation
+(sheet music), not cryptography (142-100 hits sampled, all bladmuziek/liederen). No manuscripts-specific KB SRU
+collection was found this pass (matches the 23 Sept sweep's finding that `manuscripts.kb.nl/search` does not
+honour a `?query=` parameter); KB is exhausted for this budget, not pursued further.
+
+**openarch.nl / openarchieven.nl.** Redirects to the modern `openarchieven.nl` domain; its API
+(`api.openarch.nl/1.0/records/search.json`) requires a registered email parameter (`error_code:22`) and the
+site itself indexes Dutch civil-registration records (birth/marriage/death registers), not archival
+correspondence — structurally the wrong source family for cipher letters, so not pursued past reachability
+checks (out of profile by design, not a block).
+
+**manuscripta.se — reached, searched, off-profile.** A real, working full-text search
+(`https://manuscripta.se/search?q=...`, confirmed navigable by URL once the initial JS route is loaded).
+"chiffer", "chifferskrift" and "kryptografi" return zero hits. "hemlig skrift" (43 hits) and "brev chiffer" (63
+hits, OR-matched, not a phrase) are entirely one pattern: 19th-century administrative letter-registers of the
+Riksantikvarieämbetet (Swedish National Heritage Board), where "hemlig" and "skrift" match as ordinary index
+words, not cipher correspondence. Manuscripta.se catalogues medieval/early-modern codices and a few
+institutional archives, not the diplomatic/private correspondence collections this project needs — checked and
+exhausted, not a live lane.
+
+**Riksarkivet's public Sök-API — the productive route.** `sok.riksarkivet.se` itself is captcha-walled (above),
+but its search functionality is also exposed, unauthenticated, as a documented REST API at a different host,
+`data.riksarkivet.se/api/records` (docs: `github.com/Riksarkivet/dataplattform/wiki/Sök-API`, found by
+websearch after the captcha block, not named in the brief). It searches item-level archive records (`Record`,
+types Volume/Dossier/MapDrawing/etc., not just fonds titles), which is exactly the TNA-Discovery-style
+free-text-over-descriptions search the brief wants, and it is not captcha-gated. Connection to
+`data.riksarkivet.se` itself is noisy (intermittent `SSL_ERROR_SYSCALL` resets through the agent proxy, same
+class of transient failure other lanes report for Gallica) — every query below needed 1-3 attempts, all
+eventually 200. Queries run: `chiffer` (125 hits, both pages fetched), `chifferskrift` (0), `chiffrerad` (1),
+`chifferskrivelse` (0), `chiffernyckel` (5), `dechiffrerad` (0), `"en chiffre"` (0), and `chiffer` restricted to
+`only_digitised_materials=true` (2 hits, both WWII Krigsarkivet organisational-history volumes about the
+signals/crypto service's administration, not ciphertext — confirming **zero digitised, copy-free items** in
+this sweep). ~133 raw item-level hits read at snippet/note level; most are 20th-century Utrikesdepartementet
+diary volumes recording only that a bundle of "telegram i chiffer" existed (administrative logistics, not
+extant ciphertext) or WWI/WWII Krigsarkivet Kryptoavdelningen files, which the results themselves point to as
+an already-published field (one hit's own note cites Gunnar Åsebo's *Chiffer och koder inom svenska flottan
+under ett sekel 1845-1945* and three Bengt Beckman books on Swedish 20th-century cryptology) — not scored, per
+rule 1, same pattern as the non-DECODE section's dropped "administrative correspondence about cipher/code
+logistics" rows. One hit set also self-names the Riksarkivet "Chifferklaver" collection as a card-indexed cipher
+group (`SE/RA/221/2210.01.1/F/F 5/F 5 C/7`'s note); that collection is already Bourdeau's ground —
+`riksarkivet1628` (DECODE R4282-R4341, "låda II:113" etc.), `goertz1717` (DECODE R4350) and `baner1640` are all
+drawn from material DECODE has catalogued out of Riksarkivet Stockholm, so **Chifferklaver items are excluded
+from this sweep as DECODE/Bourdeau territory**, not a fresh Riksarkivet lane. The rows below are all outside
+Chifferklaver, in named family/embassy/chancery archives.
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Next move | Total |
+|---|---|---|---|---|---|---|---|---|
+| R1 | Ulric Celsing (Swedish minister to the Ottoman Porte, Dresden, Vienna) — correspondence with Ignace Mouradgea d'Ohsson (dragoman, later Swedish minister at Constantinople, author of *Tableau général de l'Empire othoman*), with a cipher key in the same folder | 1779-1782 | sv/fr | recovery | SE/RA/721512/IV/IV 1/5 (Beskickningsarkivet från Biby, "Ulric Celsings tid i Dresden, Wien och Sverige 1780-1805 / Korrespondens") / Riksarkivet i Stockholm/Täby | "Korrespondens med Ignace Mouradgea d'Ohsson... Brev och brevkoncept ligger tillsammans: - Chiffernyckel. Se även bilaga till brevkoncept 13/10 1780. - [dated runs of letters/drafts] 1779-1782" — several years of letters and drafts filed with an explicit cipher key, the "key beside the letter" pattern (LESSONS.md). d'Ohsson is independently notable (his *Tableau* is a major primary source on the Ottoman Empire), raising the weight and the chance a specialist edition already exists — not checked this sweep. | Riksarkivet reading-room copy order for the whole folder (key + letters); check d'Ohsson biographical/editorial literature for a published correspondence before cryptanalysis. Not digitised. | 37 |
+| R2 | Gustaf Celsing (Swedish minister to the Ottoman Porte) — letter-drafts to Georg Wilhelm af Sillén, with a cipher key in the same volume | 1755-1764 | sv/fr | recovery | SE/RA/721512/II/II 1/II 1 B/4 (Beskickningsarkivet från Biby, "Beskickningarna till Konstantinopel 1737-1779 / Korrespondens / Korrespondens med hemlandet") / Riksarkivet i Stockholm/Täby | "Brevkoncept av Gustaf Celsing till Georg Wilhelm af Sillén 1755-1757, 1760-1764, odat. Med ett brevkoncept... till greve Ekeblad 3 maj 1763... Med chiffernyckel." Same family/embassy archive as R1 (father and son, one fonds); a Dutch archive item in Bourdeau's own `roell1809/turk_inv.txt` independently names "G. Celsing, Zweeds gezant te Constantinopel" in an unrelated 1753/1763 context, confirming the person but not this material. | Riksarkivet reading-room copy order (drafts + key); combine with R1 as one fonds-level request. Not digitised. | 34 |
+| R3 | Louis de Geer (financier of Sweden's Thirty Years' War armaments) papers — journals, letters and a cipher key, in the circle of Axel Oxenstierna | 1644-1646 | sv/nl/fr | recovery | SE/ULA/13506/1/I/45 (Leufstaarkivet I, "Leufsta arkiv. Det historiska arkivet") / Riksarkivet i Uppsala landsarkiv | "Brev från W. Lancken (?) 1644... Louis de Geers advertisement insänt till Axel Oxenstierna 17/8 1644... Journal myner Reyse... Chiffernyckel. Förteckning över adressater (moderna) i journalerna." A cipher key sits among de Geer's own war-logistics correspondence and journals; which specific letter(s) it maps to is not stated in the catalogue note — genuine but unconfirmed key-to-text match. | Riksarkivet i Uppsala reading-room copy order; on arrival, check whether the key matches any of the bundled letters before assuming cryptanalysis is needed. Not digitised. | 31 |
+| R4 | Krigsarkivet Kryptoavdelningen and UD "telegram i chiffer" diary cluster — administrative, not scored | 1901-1949 | sv | — | ~60 further SE/RA/221 and SE/KrA/0202 items from this sweep's raw TSV | Excluded as a class, not a row: diary volumes recording only that ciphered telegrams existed (the cipher itself not preserved as text) or Kryptoavdelningen instruction/policy files; the field already has a dedicated published historiography (Beckman, Åsebo — cited above). Listed here for the record per rule 10 ("report where it was not found"), not scored. | None — do not pursue without a specific published gap identified first. | — |
+| R5 | Anonymous unsigned enciphered private letters, "Welin" to "Östergren", among incoming letters to Count Adolf Göran Mörner and his wife | undated | sv | cryptanalysis | SE/RA/720290/I/12/2/153 (Esplunda arkiv, "Excellensen greve Adolf Göran Mörners och hans makas handlingar / Inkommande brev") / Riksarkivet i Stockholm/Täby | "Brev från privatpersoner: Welin - Östergren, brev i chiffer och icke undertecknade" — private, unsigned, enciphered correspondence in a count's incoming-letters series; no key or date given at catalogue level, no printed source found. Lowest-confidence dating of this batch (Mörner's own dates not established here). | Riksarkivet reading-room copy order; establish date/hand before anything else, since "undated, unsigned, private" is also the profile of a much later (e.g. 19th-c. social/romantic) cipher, not necessarily diplomatic. | 28 |
+| R6 | Magnus Jakob Crusenstolpe (1795-1865) papers — spy reports and cipher documents concerning the 1809 revolution (the coup against Gustav IV Adolf) | 1809 (papers collected/held by Crusenstolpe, who was 14 in 1809) | sv | cryptanalysis | SE/RA/720266/03/08/~/2,5 (Ericsbergsarkivet, "Smärre enskilda arkiv och arkivfragment / Crusenstolpe-papper") / Riksarkivet i Stockholm/Täby | "Ink brev och skrivelser, diverse utkast och anteckningar m m. Spionrapporter, chiffer handlingar rörande revolutionen 1809." Crusenstolpe was a well-known 19th-c. Swedish writer/censor whose own later work is extensively published, but this note describes items about 1809 in his papers, not by him — provenance and authorship of the cipher material itself unclear from the catalogue snippet alone. | Riksarkivet reading-room copy order; read the full finding-aid entry (not just this snippet) to date and attribute the cipher items before scoring further. Not digitised. | 28 |
+| R7 | Mauritz Vellingk (former Swedish governor-general of Bremen-Verden), reports partly in cipher sent from exile in Hamburg after the Danish conquest of Bremen-Verden, plus his own collected copies referencing the 1713 neutrality treaty | 1713-1714 | sv/de | cryptanalysis | SE/RA/1411/E/E VI/1 (Kanslikollegium, "Inkomna handlingar / Skrivelser i utrikesärenden...") and SE/RA/720626/E/E 6015 (Mauritz Vellingks samling, "Avskrifter") / Riksarkivet i Stockholm/Täby | First: "Från M. Vellingk... som efter dessa provinsers erövring av danskarna vistades i Hamburg utan egentligt uppdrag men sände rapporter, delvis i chiffer." Second (his own collection): "Avskrifter. Chiffer. Handlingar angående neutralitetstraktaten 1713." Great Northern War period, one named correspondent, two related holdings in the same repository. | Riksarkivet reading-room copy order for both; check Great Northern War documentary editions (e.g. Nordisk familjebok-adjacent or period diplomatic-history print series) for Vellingk material before cryptanalysis. Not digitised. | 28 |
+| R8 | Karl XI's full power (fullmakt) for the Swedish peace commissioners, partly in cipher | 6 May 1677 | la | cryptanalysis | SE/RA/25.3/4/II/7/B (Originaltraktater med främmande makter, "Tyskland / Kejsaren (Österrike-Ungern) / Fredsfördrag med tillägg") / Riksarkivet i Stockholm/Täby | "Konung Karl XI:s fullmakt för svenske kommissarierna, Nääs, 6 maj 1677. Latin, delvis i chiffer. Papper, 3 sidor text, sigill." A royal full-power document for treaty negotiations (Sweden-Empire, Scanian War era) — high formal weight but real edition risk: full-power instruments for named 17th-c. treaties are often already printed in treaty collections (e.g. Du Mont's *Corps universel diplomatique* or period Swedish riksdag/chancery print series), not checked this sweep. | Search treaty-edition literature for this Nääs/1677 full power before any copy order; lowest-priority row here pending that check. Not digitised. | 28 |
+| R9 | "Handlingar ang. chiffer" — 18th/19th-c. cipher-system descriptions, incl. a 1786 proposal for a cipher machine by F. Gripenstierna | 1700s-1800s | sv | contribution (caution) | SE/RA/221/2210.01.1/F/F 5/F 5 C/7 (Utrikesdepartementet med föregångare, "Samlingsserie") / Riksarkivet i Stockholm/Täby | "Handlingar ang. chiffer, med bl.a. skrivelser från F. Gripenstierna 1786 ang. en chiffermaskin, beskrivningar av chiffersystem under 1700- och 1800-tal, kvitton på mottagna chiffernycklar. Jfr. vidare samlingen Chifferklaver..." — about cipher *systems and machines*, not a specific enciphered text to read; the note's own cross-reference to Chifferklaver puts this adjacent to Bourdeau's territory. Interesting as a history-of-technology contribution (an 18th-c. Swedish cipher-machine proposal), not a solve target. | Not a cryptanalysis/recovery candidate; flagged for the contribution lane only if someone wants the Gripenstierna machine description specifically. Not digitised. | 22 |
+| R10 | "Chiffer och chiffernycklar avseende Axel Oxenstiernas korrespondens" — a modern research project's notes and copies, not primary material | undated (project active) | sv | caution, not scored | SE/RA/721502/3/1 (Oxenstiernaprojektets arkiv, "Anteckningar om och kopior av källmaterial") / Riksarkivet i Stockholm/Täby | This is the Oxenstierna edition project's own working notes/copies about ciphers in Axel Oxenstierna's correspondence, not an unread original — secondary material, and Bourdeau already has Oxenstierna-adjacent Riksarkivet targets (`riksarkivet1628`) via DECODE's Chifferklaver. Excluded as likely-duplicate research territory, not a fresh lead. | None. | — |
+
+Caveats: (1) every row above rests on a catalogue note or item title, never a page image — none of this material is
+digitised (`onlyDigitisedMaterials: false` on every hit, confirmed also by a dedicated `only_digitised_materials=true`
+query returning only two unrelated WWII administrative volumes), so every row is a copy-order/reading-room target,
+scoring `material=0`; per the lane rule these score lower and the person already has 13 copy-order targets waiting.
+(2) None of R1-R10 has been check-solved; "not named in Bourdeau/Aymeloglu/our files" is a name/shelfmark match under
+rule 1, not a verified-unsolved verdict. (3) R1-R3's cipher keys are catalogued as present but their exact mapping to
+specific letters is not established from the snippet alone (especially R3) — confirming that mapping is the first
+reading-room task, before any solver time. (4) KB, manuscripta.se and openarch.nl are exhausted for this profile at
+this budget (noise or off-topic, detailed above); Nationaal Archief's main site and Riksarkivet's own search UI are
+blocked (maintenance, captcha) but Riksarkivet's underlying data is reachable through its public API, which is the
+one genuinely new access route this sweep found and which a future NL/Nordic sweep should try first for Rigsarkivet
+too (Daisy's data almost certainly has an equivalent API; not located this pass — worth ten minutes at the start of
+the next session rather than fighting the JS widget again). (5) Requests: nationaalarchief.nl 2, service.archief.nl 1,
+jsru.kb.nl 3, sok.riksarkivet.se 2 (curl) + 1 (browser tool), data.riksarkivet.se ~16 (several needed 1-2 retries for
+transient TLS resets through the agent proxy, all eventually 200), daisy.rigsarkivet.dk 3 (browser tool; no query
+executed), www.sa.dk 1, manuscripta.se ~9 (browser tool + direct query-string GETs), openarch.nl/openarchieven.nl 3,
+github.com 2 (shallow clones, deleted after grep). No logins, no credentials, no subagents, no image opened. Per-host
+counts: NL/Nordic raw ~133 item-level hits read at note/title level (Riksarkivet API only; other hosts returned no
+item-level results to count), kept 8 scored + 2 caution rows, digitised 0.
