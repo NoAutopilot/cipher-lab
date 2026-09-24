@@ -1,0 +1,30 @@
+# Polyphonic substitution cipher used by Duke of Mayenne, commander de Diou (ambassador in Rome for the
+# Catholic League) and others, 1592-93. Reconstructed by S. Tomokiyo from letters in BnF fr.3982 (f.97,
+# f.101, f.124), fr.3983 (f.106, f.108v, f.211); fr.4715 f.61 flagged as the same cipher, undeciphered.
+# Source image: sources/cryptiana/web/mayenne.png (from mayenne.htm, fetched 24 Sept 2026).
+# NOT the cipher used in fr.2751 (that item's own encipherment is unread this pass, see NOTES.md) --
+# captured here only for a later mechanical trial against a transcribed fr.2751 ciphertext.
+# Layout: the source table stacks two alphabet rows (a-m over n-z) at the same column positions and
+# draws mostly ONE glyph per column -- i.e. the column for "a" is directly above the column for "n" and
+# most columns show a single symbol, consistent with Tomokiyo's text noting confusable "similar" symbols
+# for the pairs a/n, c/p, d/q (some columns, a/n and d/q here, show two stacked glyph variants instead of
+# one). sign = this repo's code; value = both letters the column stands for, pipe-separated where the
+# image shows two stacked glyphs, else the pair as given by the layout. Grade M throughout: small
+# (~55x90px) web thumbnail, glyph identity within the crowded "hash/cross" family (columns b/o, c/p, d/q,
+# e/r, h/u) is not reliably distinguishable at this resolution. Re-derive from the BnF fr.3982/3983 page
+# images directly before use in a real trial.
+sign	glyph	value	source	note
+col_an	two stacked small hooked squiggles (row1 above row2, similar curl)	a|n	mayenne.png col 1	M, low-res; text flags a/n as confusable
+col_bo	small looped "flag on a stem" shape	b|o	mayenne.png col 2	M, low-res
+col_cp	hash/cross mark (# family)	c|p	mayenne.png col 3	M, low-res; text flags c/p as confusable
+col_dq	two stacked hash/cross marks, # family, slightly different sizes	d|q	mayenne.png col 4	M, low-res; text flags d/q as confusable
+col_er	hash/cross mark (# family), single glyph	e|r	mayenne.png col 5	M, low-res
+col_fs	small open hook (reversed comma)	f|s	mayenne.png col 6	M, low-res
+col_gt	small "t"-shape with cross-bar flag	g|t	mayenne.png col 7	M, low-res
+col_hu	hash/cross mark (# family), single glyph	h|u	mayenne.png col 8	M, low-res
+col_ix	forward-slanted stroke with small loop/tail	i|x	mayenne.png col 9	M, low-res
+col_ly	tall ascender with loop at top, long descender	l|y	mayenne.png col 10	M, low-res
+col_mz	tall ascender/loop shape, distinct curl from col_ly	m|z	mayenne.png col 11	M, low-res
+w_que	small "y"-like descender shape	=que	mayenne.png nomenclature	printed label "que"
+w_qui	shape resembling numeral 7 / checkmark	=qui	mayenne.png nomenclature	printed label "qui"
+w_pour	looped script "C/L" combination	=pour	mayenne.png nomenclature	printed label "pour"

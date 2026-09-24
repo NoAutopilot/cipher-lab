@@ -1,0 +1,88 @@
+{
+  "ark": "btv1b52523734p",
+  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b52523734p",
+  "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/manifest.json",
+  "fetched": "2026-09-24",
+  "item": "BnF Departement des Manuscrits, Francais 2751, item 45 (finding aid ark cc49202m): \"Lettre du sieur DE DIOU a monsieur le duc de Maienne, lieutenant general de la couronne et Estat de France, escripte en chiffre. Dechiffrement de cette lettre.\" Item 46 (folio 120, a different letter, King Henri IV to Cardinal de Bourbon, 5 May 1592) is NOT part of this item.",
+  "canvases": [
+    {
+      "canvas": "f241",
+      "folio": "116r",
+      "status": "unreachable",
+      "note": "Connection reset by peer on both the initial fetch and the one permitted retry (brief's Gallica-reset rule); stopped per brief, not fetched. Most likely holds the actual chiffre (encrypted) text: 116v opens mid-narrative in plain decipherment prose, and the catalogue entry names one item spanning 116-119 with both a ciphertext and its decipherment bound together.",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f241/full/1000,/0/default.jpg"
+    },
+    {
+      "canvas": "f242",
+      "folio": "116v",
+      "status": "fetched",
+      "content": "decipherment, continuous prose, opens mid-sentence",
+      "preview": "preview_f242.jpg",
+      "native": "native_f242.jpg",
+      "native_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f242/full/full/0/native.jpg",
+      "size_px": "4854x7279"
+    },
+    {
+      "canvas": "f243",
+      "folio": "117r",
+      "status": "fetched",
+      "content": "decipherment, continuous prose; period foliation '117' visible top right",
+      "preview": "preview_f243.jpg",
+      "native": "native_f243.jpg",
+      "native_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f243/full/full/0/native.jpg",
+      "size_px": "4854x7279"
+    },
+    {
+      "canvas": "f244",
+      "folio": "117v",
+      "status": "fetched",
+      "content": "decipherment, continuous prose",
+      "preview": "preview_f244.jpg",
+      "native": "native_f244.jpg",
+      "native_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f244/full/full/0/native.jpg",
+      "size_px": "4864x7296"
+    },
+    {
+      "canvas": "f245",
+      "folio": "118r",
+      "status": "fetched",
+      "content": "decipherment, continuous prose; fetched on the one permitted retry (first attempt reset)",
+      "preview": "preview_f245.jpg",
+      "native": "native_f245.jpg",
+      "native_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f245/full/full/0/native.jpg",
+      "size_px": "4864x7296"
+    },
+    {
+      "canvas": "f246",
+      "folio": "118v",
+      "status": "fetched",
+      "content": "decipherment, continuous prose",
+      "preview": "preview_f246.jpg",
+      "native": "native_f246.jpg",
+      "native_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f246/full/full/0/native.jpg",
+      "size_px": "4864x7296"
+    },
+    {
+      "canvas": "f247",
+      "folio": "119r",
+      "status": "fetched",
+      "content": "end of decipherment, dateline 'De Rome Le 5 Avril 1592', signed 'de Diou', 'Seellee d'un cachet'; fetched on the one permitted retry (first attempt returned an HTTP 500 error page)",
+      "preview": "preview_f247.jpg",
+      "native": "native_f247.jpg",
+      "native_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f247/full/full/0/native.jpg",
+      "size_px": "4864x7296"
+    },
+    {
+      "canvas": "f248",
+      "folio": "119v",
+      "status": "previewed_not_kept",
+      "note": "blank, only pencil offset/bleed-through of 119r visible; not part of the letter text; not committed"
+    },
+    {
+      "canvas": "f249-f250",
+      "folio": "120r-120v",
+      "status": "previewed_not_kept",
+      "note": "different item (finding aid item 46): 'Copie de la lettre du Roy escrite a Monsieur Cardinal de Bourbon du 5 May 1592'. Confirms the De Diou item (45) is confined to ff.116-119, not 116-120 as the QUEUE row's WebSearch-derived folio range said. Not committed, not relevant to this target."
+    }
+  ]
+}

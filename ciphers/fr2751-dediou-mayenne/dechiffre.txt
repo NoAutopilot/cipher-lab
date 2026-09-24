@@ -1,0 +1,183 @@
+# Working transcription, one Sonnet pass, 24 Sept 2026, from the Gallica 1000px preview images
+# (images/preview_f242.jpg..preview_f247.jpg, ark btv1b52523734p, canvases f242-f247 = BnF fr.2751
+# folios 116v-119r). This is the ARCHIVE'S OWN "Déchiffrement de cette lettre" (a period clear-text
+# copy), not a cryptanalytic reading -- grade M throughout (one blind pass, secretary hand, no
+# collation against a second pass or the original cipher folio). The cipher folio itself, 116r
+# (canvas f241), could not be fetched this pass (see NOTES.md); it is not transcribed here.
+# Spelling kept as read (u/v, i/j not normalised); [?] marks a word read with low confidence;
+# [--code--] marks a place where the period decipherer left a nomenclature code UNRESOLVED in the
+# clear copy (a short symbol drawn over a blank/underline in the manuscript, not a plaintext word) --
+# these are transcribed as a bracketed description of the mark, not guessed at.
+# Letter: de Diou (commander de Diou, League agent in Rome) to "Monsigneur" (addressee not named on
+# this leaf, but BnF's own catalogue entry ties this item to "monsieur le duc de Maienne"), Rome,
+# 5 April 1592. Signed "Vostre treshumble et tresobeissant serviteur de Diou", sealed ("Seellée d'un
+# cachet"). Distinct from Tomokiyo's listed de Diou-to-Mayenne letters of 27 Oct 1592 (fr.3982 f.97)
+# and 12 Nov 1592 (fr.3982 f.124) -- this is an earlier letter in the same correspondence, not in his
+# list.
+
+[f.116v, canvas f242]
+de l'estat des affaires de France de pardela chacun en pense estre
+si capable en cette court et principallement ceux a qui nous avons af-
+faire quilz n'en veulent point de plus particuliere information, Je n'ay
+rien oublié de representer de tout ce que vous me commandez par vos
+lettres. Le secours est resolu, Les monitoires expediées, Le comte Sfondrat[o]
+me vient tout presentement asseurer qu'il a depesché en diligence a
+Milan et donné ordre aux levées des trouppes tant Italiennes que Suis-
+ses qui se feront en la plus grande diligence que faire ce pourra. Il[?]
+qu'a son compte il se rendra en France dans deux mois et demi au plus
+tard, ainsy les choses ne peuvent plus differer ny changer que par mal-
+heur et disgrace. L'argent ne fut tiré du chasteau pour les frais des le-
+vées que dimanche dernier et fut Monsieur le Cardinal de Lorraine
+commis du college a cet effect, si plusieurs des Cardinaux ont consenty
+tres mal volontiers et comme par force n'eussent esté lentz et retenus a
+signer le decret en vertu duquel l'on a touché pour cette despence aux
+trois millions resolus par le feu Pape Sixte soubz les conditions données
+[?bulle] tres expresse et ce pour l'indisposition de Sa Saincteté qui est graces a
+Dieu retournée en convalescence. Les affaires fussent bien plus advancées
+qu'elles ne sont. Ledict conte se dit fort vostre serviteur & a une tres
+bonne volonté de bien faire et de rapporter ou acquerir de l'honneur en
+son voyage. Ce secours de mil [--underline, no code drawn legibly--] six mille — [symbol, undissolved] —
+et deux mil Italiens choisis, comme il les desire, ne sera pas import-
+[u]nent si l'arrivee a propos. Nous avons bien faict tout ce qu'il a esté possible
+pour le diligenter, mais les difficultez qui se sont presentées sur ces
+resolutions tres difficiles a surmonter ont esté cause d'un grand retarde-
+ment. Depuis trois sepmaines je n'ay peu avoir audience de Sa Saincteté
+ny traicter [?] avec le Cardinal son nepveu de ce que vous m'avez escript
+
+[f.117r, canvas f243 -- numbered "117" top right]
+sinon que je n'ay aussy communicqué avec le Cardinal Caietan &
+[?es]de — S — [symbol, undissolved] et les Ambassade[urs] — [symbol] — Delespaigne
+[--line, undissolved--] pour faire sur ce office conjoinctement. Sadicte Saincteté a esté
+depuis ce temps en si mauvaise disposition que ceux qui desiroient sa fin
+n'en don[?] promettoient rien moins; elle est graces a Dieu retournée a
+convalescence et espere que j'auray l'honneur de la voir de main ou de
+luy presenter les dernieres lettres que vous luy avez escriptes. Je pourrois
+bien faire un plus long discours de ce que j'ay recogneu par deca. Si je
+n'estois pressé du soudain partement de ce courrier, mais je vous vou-
+drois bien encores plustost representer de vive voix par ce qu'il y a — [symbol] —
+plusieurs choses qui vous touchent en particulier et qui importent grand-
+ement aux affaires, desquelles je vous diray seulement ces particularitez que
+vous ne pouvez dissimuler pour le treshumble service que je vous dois.
+Le mespris auquel l'on vous a, a esté cause qu'on n'est pas soucié
+beaucoup de me communiquer librement les desseins et intentions
+que l'on a de quelque endroict que ce soit. L'on vous preste des grands
+de charitez et n'estes pas en telle opinion et predicamment en cette
+court, que vostre zele et vertu et les labeurs et travaux que
+vous avez souffert pour la conservation de la Religion — [symbol, undissolved] —
+et de cet estat meritent: L'on vous a depeint au Cardinal Sfondrato
+comme homme [?] Lundy dernier pour un prince qui prefere les deli-
+ces & voluptez aux affaires, fort negligent et addonné aux femmes
+et fort peu soigneux, que vous n'ayez lettres quelconques de celles
+que vous escrivez et qu'on vous escrivoit. Je parray ces coups la
+de ce qu'elle contraire & mon debvoir y peuvent opposer. Il m'as-
+seura de n'avoir lettres et me dict que je vous en donnasse advis de
+sa part, cela ne peut venir que de personnes tres mal affectionnées &
+desquelles vous avez a vous prendre garde qui desirent par [t]elles
+
+[f.117v, canvas f244]
+impostures ainsy que je monstray audict Cardinal e[s]loign[ant]
+Saincteté de la consideration de vos merites et luy oster la volonté
+qu'elle a tesmoignée de vous en vouloir procurer la juste recompense
+et remuneration qui vous en est deue: croyez Monseigneur que je ne
+demeuray court en cette occasion, mais ces choses ont esté si dilatées &
+publiées en cette court que chacun en est abbreuvé a mon tresgrand
+desplaisir. L'on en a autant dict au comte de Sesse ainsy qu'il apprist
+hier de luy comme nous estions a traicter des affaires et m'asseura que
+[il] avoit respondu et opposé que l'on ne se pouvoit plaindre que vous ne
+rendissiez bien exact compte de tout ce qui se passoit & dependoit
+de vostre charge et administration et de l'estat des affaires, a quoy
+l'on avoit recogneu jusques a present que vous en fissiez tresgrande diligence
+de vostre part. Sachez aussy que le comte Sfondrato en est mesme
+adverty et m'on a parlé tesmoignant l'affection qu'il vous porte, par
+me conseiller de vous en advertir avec demonstration de ne les rece-
+voir que pour calomnie, mais cela touche & offense trop vostre honneur
+pour n'en faire de cas et le negliger. Parquoy advisez Monseigneur
+d'y remedier a temps & quant a moy j'empescherai de tout mon pou-
+voir qu'on ne donne lieu a cette mauvaise impression. Descouvriray
+s'il est possible de qui peuvent estre descouvertes ces choses et qui sont
+ceux qui s'ingerent de donner des pernicieux advis: [?S]cay bien [creu]
+aussy qu'on avoit fait d'icy de tresmauvais offices de scavoir au vray
+de qui ils sont procedez, je ne vous en puis rien dire. Le Cardinal
+Caietan en apparence se monstre bien affectionné envers vous & scay
+certainement qu'il a rendu de tres[?ch]dignes tesmoignages de vostre cons-
+tance & resolution a n'avoir voulu jamais a entendre a la paix ny
+mesme au plus grand peril des affaires et lors que tout sembloit
+
+[f.118r, canvas f245]
+desespere encores, que tous ceux qui estoient aupres de vous s'ust
+ent porter a ce desire vous sollicitassent vivement. De sorte que
+l'on pourvoit tenir et adviser la conservation de la Religion — [symbol, undissolved] —
+ou de cet estat apres Dieu de vostre seul zele & fermeté qui n'a ja-
+mais flechi en telles occasions. Mais pour ne vous point tromper
+d'esperance vaine, ne vous en promettez pas trop de faveur ny de recom-
+mendation nonplus que d'un seul de ce clorge, tant que nous serons
+en cet estat, car tout se conduit icy avec plus d'artifices et de dissimulation
+qu'autrement. Au reste il y a ces jours passez couru un bruit que
+l'on s'estoit saisi de Marseilles, qui a apresté a plusieurs subiect & ma-
+tiere de discourir, qui en parlant d'une facon qui de l'autre, et chacun
+selon sa passion. Jusques a ce qu'un advocat du Roy d'Aix en Provence
+est arrivé icy envoyé pour informer Sa Saincteté a ce qu'il m'a dict de ce
+qui s'est passé audict Marseille ou il estoit le deuxiesme de mars quand
+[--symbol, undissolved--] y entra, lequel a levé les — o — opinions qu'on
+en avoit pris, asseurant qu'il n'a faict aucun changement en l'estat de
+ladicte ville ny acte quelconque d'autorité ny puissance absolue &
+qu'apres avoir sejourné six jours audict Marseille il s'estoit embarqué
+avec Monsieur le President Jeannin et quelques deputez du pais
+pour passer en Espagne — [symbol, undissolved] — j'estime que vous estes bien
+adverty de tout cela. Ledict Sr advocat m'a aussy promis qu'il vous escriroit
+de la charge qu'il luy a esté commise en ce voyage, mais vous scaurez qu'il
+vous a son arrivée les Ambassadeurs — [symbol] — Despaigne — [symbol, undissolved] — pre-
+mier que s'abboucher avec moy, par le moyen desquels il a eu audience
+de Sa Saincteté. Je vous donneray, si je puis, plus particulier compte de
+ce qu'il negociera, si je puis penetrer plus avant. On ne despeschera rien
+des matieres beneficiales pource que — S — [symbol, undissolved] ne veut pas
+que le Cardinal Pallotte face la charge de vice protecteur, contre la volonté
+
+[f.118v, canvas f246]
+[--symbol, undissolved--] et en cela leur division et contrarieté nuit &
+prejudicie beaucoup. Quand au [Sr] Sieur — S — [symbol, undissolved] Je ne blasme point
+l'intention pour laquelle il empesche l'autre, encores que ce ne soit que pour
+ce qu'il l'a son voit desdaigné, car veritablement Pallotte ne merite pas cet
+honneur d'estre employé pour les affaires de ce royaume, luy qui a fort
+aidé a persecuter cette cause du temps du feu Pape [S]ixte, mais p[our]
+assoupir cela et remedier aux inconveniens qui en naissent, la presence
+de Monsieur — [symbol, undissolved] — seroit tres necessaire icy pour cela, et non moins
+utile en autre chose. Aussy m'a t'il escript qu'il n'attend sinon des amples
+memoires de vous point s'y acheminer. J'attend de jour a autre — [symbol] —
+et me tourmente de ce qu'il demeure tant a venir. Je suis pour mon particu-
+lier si affronté, chacun jour des indignitez que je recois, & de la
+misere on je suis reduit, que je succombe au fais et n'en puis plus.
+J'espere que vous m'en delivererez par le retour de mon secretaire.
+Sinon on envoie des lettres de change a Anvers pour faire fourn-
+ir quinze mil escus [--symbol, undissolved--] Monsieur de Plaisance, a laquelle l'on
+a reduit les soixante mille que — [symbol] — Pape devoit
+bailler pour le paiement de trois mois de la garnison de — [symbol, undissolved] —
+de laquelle partie vous me pouvez faire remettre ce qui m'est deub
+icy, et on faire contenter Monsieur de Plaisance de la promotion
+duquel au reste l'on ne veut point ouy parler. L'on ay faict bien grand
+de instance de vostre part. Pour fin de vous diray que Balbany
+n'advance rien aux affaires du — [symbol, undissolved: "TT"] — et qu'il a
+sexc sa[?] sur les [?] qu'ils attendent de jour en jour, et aussy
+messieurs qui sont icy de la part de sa — [symbol, undissolved: "O"] — une resolution aux affaires
+toutesfois bon nombre de cavaliers, hommes soubz la charge de Mons. de la Chapelle, aux vostrains,
+pour me [?] a Rome ou Monsieur de Lorraine, Monseigneur mon nepveu, Messieurs Dhumalle et
+d'estant se trouverent quelques jours apres, affin de conserver entre nous ce qui se pourroit provenir de cette
+
+[f.119r, canvas f247]
+force du monitoire que ledict Balbany demandoit et la dou-
+ble mesme memoire qu'il a baillé pour advis de ce que Sa Saincteté delib-
+verra suivre selon la volonté ou passion dudict Cardinal — [symbol, undissolved: "Pi"] —
+L'on a respondu pertinemment sur tout cela, advisez S.[a]. [?] a
+propos que cela soit veu. Voila ce que je vous puis dire maintenant
+et pour lors, qui suis,
+
+Monsigneur,
+
+Je vous envoie des lettres que              Vostre treshumble et tresobeis-
+Monsieur le Cardinal Sfondrato              sant serviteur de Diou.
+Vous escript.
+
+De Rome
+Le 5. Avril 1592.
+
+                                             Seellée d'un cachet

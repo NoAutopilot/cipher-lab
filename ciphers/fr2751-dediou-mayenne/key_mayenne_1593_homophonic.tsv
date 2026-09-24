@@ -1,0 +1,58 @@
+# Homophonic substitution cipher used by Duke of Mayenne writing to commander de Diou, Paris, 13 May 1593
+# (BnF fr.3984, f.7-10). Reconstructed by S. Tomokiyo; the same cipher is BnF fr.3995 no.55 (f.98, 1592),
+# endorsed "Chiffre de monsieur duma[yne] auec le Chevalier de Dyou". Source image:
+# sources/cryptiana/web/mayenne3.png (from sources/cryptiana/web/mayenne.htm, fetched 24 Sept 2026).
+# NOT the cipher used in fr.2751 (that item's own encipherment is unread this pass, see NOTES.md) --
+# captured here only for a later mechanical trial against a transcribed fr.2751 ciphertext.
+# sign = this repo's ASCII code; glyph = terse description of Tomokiyo's drawing (row 1 / primary symbol
+# per letter only -- his image also shows 2nd-4th homophone rows and a "double letters" row per column
+# that are NOT transcribed here, grade M/low confidence: the source image is a small compressed web
+# thumbnail (~55px per cell) and several row-1 glyphs are themselves hard to tell apart at this
+# resolution (grade M throughout). value = the letter; source = column position in mayenne3.png row 1.
+# A future pass should re-derive this from the BnF fr.3984 or fr.3995 page image directly, at full
+# resolution, before relying on it for a keyed reading.
+sign	glyph	value	source	note
+r1a	small loop with a trailing dot	a	mayenne3.png col a row1	M, low-res
+r1b	short hooked comma stroke	b	mayenne3.png col b row1	M, low-res
+r1c	bold X-cross	c	mayenne3.png col c row1	M, low-res
+r1d	small solid dark square/blob	d	mayenne3.png col d row1	M, low-res
+r1e	tall looped ascender (script h-like)	e	mayenne3.png col e row1	M, low-res
+r1f	swirl loop with descending tail	f	mayenne3.png col f row1	M, low-res
+r1g	numeral "9"-like loop	g	mayenne3.png col g row1	M, low-res
+r1h	numeral "9"/"4"-like loop, distinct from g	h	mayenne3.png col h row1	M, low-res
+r1i	small backward-E / "3"-like squiggle	i	mayenne3.png col i row1	M, low-res
+r1l	short hook, similar to r1b but shorter	l	mayenne3.png col l row1	M, low-res
+r1m	open script "c" curve	m	mayenne3.png col m row1	M, low-res
+r1n	faint dotted small blob	n	mayenne3.png col n row1	M, low-res
+r1o	small hook with a dot above	o	mayenne3.png col o row1	M, low-res
+r1p	looped stroke with descender (script g-like)	p	mayenne3.png col p row1	M, low-res
+r1r	short plain stroke	r	mayenne3.png col r row1	M, low-res
+r1s	small solid loop/blob	s	mayenne3.png col s row1	M, low-res
+r1t	tall ascender with small hook (script b/6-like)	t	mayenne3.png col t row1	M, low-res
+r1u	small solid blob, plainer than s	u	mayenne3.png col u row1	M, low-res
+r1x	bold X-cross, similar to c	x	mayenne3.png col x row1	M, low-res
+r1y	swirl "w"-like loop with tail	y	mayenne3.png col y row1	M, low-res
+r1z	small circled loop (looks like circled "9")	z	mayenne3.png col z row1	M, low-res
+r1null	swirl combining two loops	null	mayenne3.png nulls col row1	M, low-res; nulls (no plaintext value)
+w_quil	small ring/blob glyph	=quil	mayenne3.png nomenclature list	word sign, printed label "quil"
+w_que	short vertical stroke with small hook	=que	mayenne3.png nomenclature list	word sign, printed label "que"
+w_quelque	solid dark blob	=quelque	mayenne3.png nomenclature list	word sign, printed label "quelque"
+w_depeche	capital F-like stroke	=depeche	mayenne3.png nomenclature list	word sign, printed label "depeche"
+w_qui	short curved stroke	=qui	mayenne3.png nomenclature list	word sign, printed label "qui"
+w_est	small X/cross with flag	=est	mayenne3.png nomenclature list	word sign, printed label "est"
+w_affaire	small loop pair	=affaire	mayenne3.png nomenclature list	word sign, printed label "affaire" (two glyph variants shown)
+w_catholique	short dashes/tick marks	=catholique	mayenne3.png nomenclature list	word sign, printed label "catholique"
+w_sa_sanctete	small loop with dot	=sa sanctete	mayenne3.png nomenclature list	word sign, printed label "sa sanctete"
+w_jour	small horizontal squiggle	=jour	mayenne3.png nomenclature list	word sign, printed label "jour"
+w_couronne	crowned "2m"-like ligature	=couronne	mayenne3.png nomenclature list	word sign, printed label "couronne"
+w_et	small cross with flourish	=et	mayenne3.png nomenclature list	word sign, printed label "et"
+w_je	looped descender	=je	mayenne3.png nomenclature list	word sign, printed label "je"
+w_vous	bold looped stroke	=vous	mayenne3.png nomenclature list	word sign, printed label "vous"
+w_nous	ligature with tilde	=nous	mayenne3.png nomenclature list	word sign, printed label "nous"
+w_luy	short vertical stroke	=luy	mayenne3.png nomenclature list	word sign, printed label "luy"
+w_la	stroke with small flag	=la	mayenne3.png nomenclature list	word sign, printed label "la"
+w_les	short curved tick	=les	mayenne3.png nomenclature list	word sign, printed label "les"
+w_par	bold X mark	=par	mayenne3.png nomenclature list	word sign, printed label "par" (two glyph variants shown)
+w_pour	looped script "L/C" ligature	=pour	mayenne3.png nomenclature list	word sign, printed label "pour"
+w_roy_de_navarre	tall stroke with small loop	=roy de Navarre	mayenne3.png nomenclature list	word sign, printed label "roy de Naavarre" [sic]
+w_mr	compressed cursive ligature	=Mr	mayenne3.png nomenclature list	word sign, printed label "Mr"

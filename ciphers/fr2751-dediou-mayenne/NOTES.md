@@ -1,4 +1,4 @@
-open
+partial
 
 # Sieur de Diou to duc de Mayenne, League era -- BnF Français 2751
 
@@ -60,3 +60,96 @@ independent verification step -- not a substitute for reading the item's own dec
 `python3 tools/room.py ... "nomination: ciphers/fr2751-dediou-mayenne | copy-free | recovery | own
 decipherment present (cheap-transcription pattern); 2 published Mayenne-de-Diou cipher tables exist (different
 volumes/dates) for cross-check once transcribed, item itself not found in either"`
+
+## Capture and passes (24 September 2026)
+
+**Digitised.** Confirmed via the finding aid (archivesetmanuscrits ark `cc49202m`, 1 request, 200): fr.2751 is on
+Gallica at ark `btv1b52523734p`. The finding aid's own item list gives the exact folio range: item 45
+"Fol. 116 -- 45 « Lettre du sieur DE DIOU à monsieur le duc de Maienne, lieutenant general de la couronne et
+Estat de France, escripte en chiffre ». Déchiffrement de cette lettre." Item 46, immediately following, is
+"Copie de la lettre du roy escri[te]..." at folio 120 -- a **different, unrelated** letter (Henri IV to Cardinal
+de Bourbon, 5 May 1592, about a military engagement). This corrects the QUEUE/NOTES "f.116-120" range above
+(WebSearch-derived, not checked against the source this pass): the De Diou item is confined to **ff.116-119**.
+
+**Pinning.** `tools/gallica_folio.py btv1b52523734p --folio N` (manifest fetched on the second attempt --
+first attempt hit the "manifest/services endpoints reset often" issue the brief warned of, `[Errno 104]
+Connection reset by peer`; one retry per the brief's rule, succeeded). Offsets are NOT constant across the
+volume (three runs, k=8/10/-10), so folios were read from the manifest's own per-canvas labels, not a formula:
+
+| folio | canvas | label |
+|---|---|---|
+| 116r | f241 | 116r |
+| 116v | f242 | 116v |
+| 117r | f243 | 117r |
+| 117v | f244 | 117v |
+| 118r | f245 | 118r |
+| 118v | f246 | 118v |
+| 119r | f247 | 119r |
+| 119v | f248 | 119v |
+| 120r | f249 | 120r (different item) |
+| 120v | f250 | 120v (different item) |
+
+**Fetch.** 1000px previews of f241-f250 fetched via the direct image endpoint (the brief's advice that it
+"works" held: 8 of 10 succeeded on the first or second attempt). f241 (116r) returned `Connection reset by
+peer` on both the first attempt and the one permitted retry; per the brief ("after one retry per URL stop
+that endpoint and report; do not route around") this URL was not tried a third time. f245 (118r) and f247
+(119r, first attempt returned an HTTP 500 error page) succeeded on their one retry. Natives fetched for the
+six readable canvases (f242-f247) only; f248-f250 previewed to confirm content then discarded (not part of
+this item, or blank). Folder is 17 MB, under the 30 MB cap. Manifest: `images/manifest.json`.
+
+**What is on ff.116v-119r.** Continuous, legible French prose in a clear secretary hand -- this is the
+**decipherment**, not the ciphertext: no cipher symbols, numerals or nomenclature figures anywhere in this
+running text, except a small number of places where the period decipherer left a nomenclature code
+**unresolved** (a short drawn symbol over a blank/underline, e.g. "— S —", "— o —", "— Ϟ —", "TT"), which
+this pass has NOT attempted to identify. The letter is from **de Diou** (commander de Diou, the League's agent
+in Rome) to an addressee named only "Monsigneur" on this leaf (the finding aid ties the whole item to "monsieur
+le duc de Maienne"), **Rome, 5 April 1592**, "Seellée d'un cachet". Content: League/Vatican politics -- Cardinal
+Sfondrato, the Spanish ambassadors, Cardinal Caietan, a rumoured seizure of Marseille and a royal advocat from
+Aix sent to investigate it, Cardinal Pallotte's contested vice-protectorship, financial arrangements (bills of
+exchange to Antwerp, payment to "Monsieur de Plaisance"), and complaints that his own dispatches are not
+reaching Mayenne. This date (5 April 1592) is **not** among Tomokiyo's listed de Diou-to-Mayenne letters
+(27 Oct 1592, fr.3982 f.97; 12 Nov 1592, fr.3982 f.124) -- it is an earlier letter in the same run of
+correspondence, distinct from any item his two articles name.
+
+**Transcription.** One Sonnet pass, `dechiffre.txt` (grade M throughout: single pass, secretary hand, no
+second pass to reconcile against; rule 7's "reproducible reading" does not apply here since this is a period
+document transcription, not a keyed decipherment this repo is claiming credit for). Uncertain words marked
+`[?]`; the unresolved period nomenclature codes marked `[symbol, undissolved]` rather than guessed at.
+
+**Cipher folio, cipher passes, key trial -- BLOCKED this pass.** f.116r (canvas f241), almost certainly the
+actual "escripte en chiffre" text (116v opens mid-sentence, consistent with continuing a page begun on 116r,
+and the finding aid names one item spanning 116-119 with both a cipher and its decipherment), could not be
+fetched (see Fetch above). Without it there is no ciphertext to transcribe, so **no `passA.tsv`/`passB.tsv`,
+no `decode.json`, and no mechanical trial of the two published Mayenne-de-Diou tables against this item's
+ciphertext (`trial.tsv`) could be produced this pass** -- all three are brief deliverables not met. Whoever
+retries f241 next: it is a single Gallica IIIF image URL
+(`https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f241/full/full/0/native.jpg` or a smaller size),
+already reset twice in immediate succession on 24 Sept while every neighbouring canvas succeeded, so a retry
+after a longer pause, or later in the day, seems more likely to work than an immediate third attempt.
+
+**Published Mayenne-de-Diou cipher tables, captured for a later trial (brief's secondary task).** Fetched from
+`sources/cryptiana/web/mayenne.htm` (already in the shared snapshot) to `sources/cryptiana/web/`:
+`mayenne.png` (the 1592-93 **polyphonic** cipher, BnF fr.3982/fr.3983), `mayenne3.png` (the May-1593
+**homophonic** cipher, BnF fr.3984 f.7-10, the same cipher as `nevers.htm` no.55/BnF fr.3995), plus the two
+annotated specimen pages `mayenne2.png` and `mayenne4.png` (kept for reference, not re-keyed). Transcribed the
+primary symbol per letter (row 1 only; the homophonic table's 2nd-5th homophone rows and "double letters" row
+are NOT transcribed, left for a future pass with more time) into `key_mayenne_1592-93_polyphonic.tsv` and
+`key_mayenne_1593_homophonic.tsv`. **Grade M throughout on both**: the source images are small compressed web
+thumbnails (~55-90px per cell), several glyphs within the same "hash/cross" family are not reliably
+distinguishable at this resolution, and this pass could not verify the descriptions against the original BnF
+page images. Do not treat either key.tsv as more than a rough placeholder for a real trial; re-derive from
+fr.3982/3983/3984 at full resolution first. Neither table has been tried against anything yet -- there is no
+ciphertext transcription from fr.2751 to try it against (see above).
+
+**Requests this pass.** archivesetmanuscrits.bnf.fr 1. gallica.bnf.fr: 1 manifest fetch (1 reset + 1 retry) +
+10 preview fetches (2 resets + 2 retries, all >=1.5s apart) + 6 native fetches = ~19. cryptiana.web.fc2.com: 4
+(mayenne.png, mayenne3.png already-fetched-this-session mayenne2.png/mayenne4.png re-confirmed, all >=1.5s
+apart; mayenne.htm itself was fetched by the check-solved pass, not repeated). No 429/403/challenge on any
+host. No subagents.
+
+**For whoever picks this up next:** (1) retry f.116r once, later; (2) if it is the cipher, run the brief's
+step 2 in full (crops, two blind passes, decode.json, the key trial) against it; (3) identify the small number
+of unresolved nomenclature codes left in the decipherment ("— S —", "— o —", "TT", etc.) against the two
+published tables above or a nomenclature list, if one turns up; (4) do the "cross-check the plaintext... against
+Tomokiyo's two published Mayenne-de-Diou cipher tables" step this row's earlier note called for, once a real
+ciphertext transcription exists to check.
