@@ -11,10 +11,11 @@ Inputs (all in this folder):
                             'P:' a pencil gloss, in another, undated hand)
   key_tomokiyo.tsv          the Yale 8 Jan 1781 figure/plaintext alignment (LANE R worker R2)
 
-Grades: an ink gloss read without doubt is H (a contemporary decipherment on the leaf is a key source, rule 4); an ink
-gloss marked '?' is M; a pencil gloss is M (hand and date unknown) unless an ink gloss for the same figure agrees, then
-H. key.tsv keeps one row per figure; a figure whose H glosses disagree gets 'a|b' (decode_key.py grades it M) and a
-row in key_conflicts.tsv. Yale (Tomokiyo) values are NOT merged: key_yale_crosscheck.tsv compares every figure present
+Grades (LANE W's ruling, 24 Sept 2026 07:18, ROOM.md: an interlinear contemporary decipherment on the same leaf is
+known plaintext, not a key source, so rule 4 grades it C, not H): an ink gloss read without doubt is C; an ink gloss
+marked '?' is M; a pencil gloss is M (hand and date unknown) unless an ink gloss for the same figure agrees, then C.
+key.tsv keeps one row per figure; a figure whose C glosses disagree gets 'a|b' (decode_key.py grades it M) and a row
+in key_conflicts.tsv. Yale (Tomokiyo) values are NOT merged: key_yale_crosscheck.tsv compares every figure present
 in both, and the agreement rate decides (see NOTES.md).
 """
 import csv, sys, os, re, io
@@ -68,13 +69,13 @@ def build():
             elif struck == '1' or '?' in u or conf != 'H' or h == 'pencil':
                 grade = 'M'
             else:
-                grade = 'H'
+                grade = 'C'
             pairs.append([item, page, ln, str(pos), g, u, h, struck, grade])
     # key
     ink = defaultdict(list); pen = defaultdict(list); weak = defaultdict(list)
     for item, page, ln, pos, g, u, h, struck, grade in pairs[1:]:
         where = f'{item}_{page}_{ln}/{pos}'
-        if grade == 'H':
+        if grade == 'C':
             ink[g].append((norm(u), where))
         elif h == 'pencil' and struck == '0' and '?' not in u:
             pen[g].append((norm(u), where))
@@ -88,7 +89,7 @@ def build():
             pv = {v for v, _ in pen.get(g, [])}
             note = f'ink x{len(ink[g])}' + (f'; pencil agrees x{len(pen[g])}' if pv and pv <= set(vals) else
                                             (f'; pencil reads {"/".join(sorted(pv))}' if pv else ''))
-            key.append([g, '|'.join(vals), 'H', 'contemporary interlinear decipherment (mssDE 68/37/55)', note])
+            key.append([g, '|'.join(vals), 'C', 'contemporary interlinear decipherment (mssDE 68/37/55)', note])
             if len(vals) > 1:
                 conflicts.append([g, ' / '.join(vals), ' '.join(w for _, w in ink[g])])
         elif g in pen:
@@ -138,7 +139,7 @@ def main():
     for f, s in out.items():
         open(P(f), 'w').write(s)
     g = [r[8] for r in pairs[1:]]
-    print('pairs', len(g), {k: g.count(k) for k in 'HMU'}, 'key figures', len(key) - 1,
+    print('pairs', len(g), {k: g.count(k) for k in 'CMU'}, 'key figures', len(key) - 1,
           'conflicts', len(conflicts) - 1,
           'yale shared', len(cross) - 1, 'agree', sum(r[5] == 'yes' for r in cross[1:]))
 
