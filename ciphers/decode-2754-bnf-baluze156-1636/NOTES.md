@@ -154,3 +154,49 @@ sizes thereafter); archivesetmanuscrits.bnf.fr ~10 (search+notice+ajax fetches, 
 `cipher-lab research script (contact via repository)`); cryptiana.web.fc2.com 5 (the five Sabran/Farnese key and
 decipherment images from GL.htm, ≥1.5s apart); 2 Sonnet subagents (the two blind passes, never concurrent with
 any other subagent this worker ran).
+
+## Letter-symbol half (24 Sept 2026)
+
+LANE G3 worker C (Opus, cap $5), brief `.claude/briefs/runs/2026-09-24-lane-g3-c-dc8-letters.md`. Worked from disk
+plus two Cryptiana image fetches; no Gallica requests.
+
+**Key alphabet.** `key_sabran_1631_letters.tsv` transcribes the 23-column letter alphabet of George Lasry's key
+"BNF Francais 4134" (25/05/2022, published on Tomokiyo's Cryptiana GL.htm, image `code/GL/BnF_fr4134.jpg`, 624x261
+px; not committed, cite it): 52 glyphs, all grade M because each is ~15 px. It replaces the placeholder `letter`
+rows of `key_sabran_1631.tsv` (whose glyph counts per column were partly wrong; e.g. E has five glyphs, I four, V
+four). The Sabran alphabet is itself a disguise alphabet: most glyphs are ordinary letter and digit shapes (a, o,
+5, c, 8, 4, u, 9, 6, m, e, d, 10, x, 7, 11) plus barred doubles (barred II for L, crossed tt-like # for P, crossed
+ff-like # for S). Lasry's own decipherment image of Baluze 155 f.79 (`BnF_fr4134_decipher.png`, fetched once,
+viewed only) shows it in use: "d g d r o 6 10 44 ..." = MONACHO LA ... So DC8's mix of lower-case letters, digits
+and doubled letters is the same *style* of cipher, which is why the lead deserved the test.
+
+**Shape match.** Each DC8 token class in `ciphertext_draft.tsv` was matched by eye (key zoom vs. crops of
+`images/dc8_f157r.jpg`) to the closest key glyph; the match is the `dc8_token` column. 29 token classes map;
+nn, h, Φ, 12, 94, 36, Sr, do, ttu, C, c̃ have no counterpart in the key (21 of 137 tokens unmapped).
+**Doubled letters:** ll fits the key's barred II (L) well, tt the crossed # of P, ff the looped crossed # of S; nn
+(4 occurrences) has no key glyph at all.
+
+**Result: does not read. Negative with matched control** (`letters_trial.py`, `letters_trial.tsv`, `--check` exits 0):
+
+| | French 5-gram bits/char (lower = more French) |
+|---|---|
+| DC8 decoded with the key-derived mapping (116 letters) | **5.649** |
+| same mapping, values shuffled over the same token classes, 1000 draws | median 6.191, best 5.100; 6.8 % of shuffles score as well or better |
+| positive control: 116 letters of held-out period French, enciphered with the key's homophones under the same token classes and run breaks, decoded with the same mapping | **3.066** (0.0 % of 1000 shuffles as good) |
+
+Best case over 432 combinations of the ambiguous shape assignments (r as A/C/R, c as D/V, n as E/P, 6 as H/D,
+9 as I/H/O, g as O/X/I, b as H/T): 5.220, still inside the shuffle range and 2.2 bits/char from the positive
+control. No French word of four or more letters appears in the decode (runs: `X EF VAPGCAGOOM EROOELOAGVCM ...`,
+full list in `letters_trial.tsv`). The internal repeat `7 4 t o` (L23 "...g 7 4 t o e amy", L32 "par ledit 9 7 4 t
+o p") decodes to AGVC under the key, which is not French.
+
+Together with the nomenclator trial above (0/31 numeral hits vs control mean 19 %), the Sabran (1631) key, in the
+form Lasry published it, does not open f.157r. What stays untested: (a) the Farnese-to-Sabran key of Baluze 156
+f.40 (Lasry's second break in the same volume, GL.htm "?Odoardo Farnese", images `BnF_Baluze156_f40.png` /
+`_decipher.png`, not fetched this pass); (b) a different Sabran-circle key in fr.4135-4138; (c) fresh
+cryptanalysis of the 137 tokens (short: a homophonic solve at this length is weak, so a control is essential).
+One-line suggestion for a solver: the repeat `7 4 t o` sits where the plain text elsewhere names "Levanto" and
+"ledit", so a crib (a name ending -ANTO) is the cheapest way into a fresh solve.
+
+Requests: cryptiana.web.fc2.com 4 (2 answered 302 to https, then 2 images at 200). No other host.
+Reported what was found and where it was not found; no novelty classification.

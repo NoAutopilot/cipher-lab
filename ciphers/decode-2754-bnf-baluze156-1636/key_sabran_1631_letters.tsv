@@ -1,0 +1,62 @@
+# key_sabran_1631_letters.tsv -- letter-symbol alphabet of George Lasry's key "BNF Francais 4134" (dated by him
+# 25/05/2022), published on S. Tomokiyo's Cryptiana page sources/cryptiana/web/GL.htm, section "Melchior de Sabran
+# (1631)"; image cryptiana.web.fc2.com/code/GL/BnF_fr4134.jpg (624x261 px, fetched 24 Sept 2026, not committed:
+# it is Lasry's work, cite and link it). Transcribed 24 Sept 2026 by LANE G3 worker C from a 3.5x browser zoom.
+# One row per glyph, top to bottom in each column. `glyph` describes the hand-drawn shape; `grade` M throughout
+# because the published image is small (each glyph ~15 px) -- the letter column headings are Lasry's, typed.
+# `dc8_token`: the DC8 (Baluze 156 f.157r) transcription token this glyph was matched to by shape, '-' if no
+# DC8 token resembles it. Several DC8 tokens compete for one key glyph (see note); the first-listed is used.
+# The two lower-case columns "d" and "p" are Lasry's own headings (second homophones for D and P, or signs he
+# kept apart); treated as D and P here.
+col	sym	letter	glyph	grade	dc8_token	note
+A	1	A	lower-case a	M	a
+A	2	A	k/r-like with a hooked top	M	r	DC8 'r' could equally be C sym2 or R sym1
+A	3	A	numeral 7	M	7
+C	1	C	lower-case o	M	o
+C	2	C	small r/2-like hook	M	-
+D	1	D	numeral 5	M	5
+D	2	D	lower-case c	M	c	DC8 'c' could equally be V sym4 (small c with tick)
+E	1	E	n/m-like with lead-in stroke	M	n	DC8 'n' could equally be the p column's n
+E	2	E	numeral 8	M	8
+E	3	E	l/t with a hooked foot	M	-
+E	4	E	p-like with a looped descender	M	p
+E	5	E	q with a cross-bar on the stem	M	-
+F	1	F	long s / f without bar	M	f
+G	1	G	numeral 4 with a crossed stem	M	4
+G	2	G	lower-case u	M	u
+H	1	H	q-like (9 with straight tail)	M	q
+H	2	H	numeral 6	M	6	DC8 'b' also matched here (b and 6 alike in this hand)
+I	1	I	g-like 9 with curled tail	M	9
+I	2	I	a joined to 4	M	-
+I	3	I	y with a cross-bar	M	-
+I	4	I	dagger-like t with two bars	M	-
+L	1	L	lower-case m	M	m
+L	2	L	double upright with top and bottom bar (barred II)	M	ll	DC8 'll' is the barred double stroke
+M	1	M	lower-case e	M	e
+M	2	M	lower-case d	M	d
+M	3	M	looped e/co ligature	M	-
+N	1	N	n with a descender (y-like)	M	-
+N	2	N	round d (delta)	M	-
+O	1	O	gamma/y-like	M	y
+O	2	O	numeral 10	M	10
+O	3	O	g with an open tail	M	g
+P	1	P	double crossed t (tt with a bar, #-like)	M	tt
+P	2	P	capital X	M	-
+Q	1	Q	C joined to m	M	-
+R	1	R	z/zeta-like	M	Z
+R	2	R	C joined to n	M	-
+S	1	S	double crossed f (ff with a bar and loop)	M	ff
+S	2	S	n joined to a crossed t	M	-
+S	3	S	3/z with a tail	M	-
+T	1	T	&-like with a tail	M	-
+T	2	T	epsilon (open E)	M	E
+V	1	V	t with a cross-bar	M	t
+V	2	V	numeral 11	M	11
+V	3	V	long S	M	-
+V	4	V	small c with a tick	M	-
+X	1	X	g-like with a flat top	M	-
+X	2	X	x with a looped stroke	M	x
+Y	1	Y	t joined to e	M	-
+Z	1	Z	B/3 with a cross-bar	M	-
+d	1	D	numeral 6 (second d column)	M	-	shape identical to H sym2; DC8 '6' assigned to H
+p	1	P	lower-case n	M	-	shape close to E sym1; DC8 'n' assigned to E
