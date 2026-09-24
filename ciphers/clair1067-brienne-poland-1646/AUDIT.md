@@ -107,3 +107,12 @@ Corrections made:
 Requests this audit: archive.org 15 (8 advancedsearch by hand, 7 by print_check), be-api.us.archive.org 25 (11
 print_check, 14 fts by hand), www.googleapis.com 11 + 3, api.crossref.org 3, api.openalex.org 1 (429), api.semanticscholar.org 1 (429),
 api.archives-ouvertes.fr 1, WebSearch 1. Gallica 0, de-crypt.org 0.
+
+
+## JSTOR (owner's machine, 24 Sept 2026)
+
+Recorded by the JSTOR runner on the owner's machine (logged-in JSTOR account, built-in browser, one search per queue row, 6 s apart, no block page). First-page hits for every row are in `JSTOR-QUEUE.tsv`; only the hits that could print, calendar or discuss the letter were opened. No class is changed here; the verifier moves it.
+
+Rows 41-42 answered (2 queries; Grell's article is not a JSTOR title). One hit opened:
+
+- Albert Vandal, "Un mariage politique au XVIIe siècle: Marie de Gonzague à Varsovie", *Revue des Deux Mondes*, 3e période, 55/3 (1er février 1883), pp. 671-694, https://www.jstor.org/stable/44753034 (read online). In-document search: "Brienne" 1 hit, a footnote on p. 694 citing Brégy to Loménie de Brienne, 28 July 1646 (Affaires étrangères); "Nivern" only the Nivernais governorship Louis XIII gave Marie (p. 673); "chiffre" 0. The narrative rests on Mazarin's and the queen's letters in the Affaires étrangères (e.g. the queen to the cardinal, 17 April 1646). The 19 May 1646 letter is neither printed nor cited.

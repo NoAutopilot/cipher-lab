@@ -110,3 +110,12 @@ alone; its grades stay valid as a record of what the sibling key gives.
 **Recommendation (not done):** a transcription worker reads 108(B) pp.1-6 (glosses) into interlinear_readings.tsv, then
 108(A) is re-graded C from its own duplicate and the R16 fills scored against it: that is the matched control R16 wanted.
 No SO prompt written: N0 is below N3.
+
+
+## JSTOR (owner's machine, 24 Sept 2026)
+
+Recorded by the JSTOR runner on the owner's machine (logged-in JSTOR account, built-in browser, one search per queue row, 6 s apart, no block page). First-page hits for every row are in `JSTOR-QUEUE.tsv`; only the hits that could print, calendar or discuss the letter were opened. No class is changed here; the verifier moves it.
+
+Rows 43-44 answered (2 queries). One hit opened:
+
+- Waldo G. Leland (ed.), "Letters from Lafayette to Luzerne, 1780-1782", *American Historical Review* 20/3 (Apr. 1915), pp. 577-612, https://www.jstor.org/stable/1835861 (open access). In-document search: "Destouches" 1 hit (pp. 583-584), Lafayette to Luzerne early in 1781 reporting that Destouches "n'a pas de biscuit" and cannot put to sea, with the editor's note that Destouches succeeded Ternay on 15 December 1780 and held the command until Barras arrived on 8 May 1781; "chiffre" only for Lafayette's own letter to Vergennes being enciphered. It prints Lafayette's letters, not La Luzerne's to Destouches; the 16 and 31 January 1781 letters are not cited. Sioussat 1936 (*Pennsylvania Magazine* 60/4, pp. 391-418, Luzerne and the Maryland ratification) was not opened.

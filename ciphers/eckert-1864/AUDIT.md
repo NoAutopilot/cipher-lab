@@ -1021,3 +1021,11 @@ reading, not from earlier sections.
 
 Requests: archive.org 11 (3 advancedsearch, 4 metadata, 4 djvu downloads), be-api.us.archive.org 4 (full-text
 API), www.googleapis.com 2 (title lookups). No Gallica, no logins, no subagents.
+
+## JSTOR (owner's machine, 24 Sept 2026)
+
+Recorded by the JSTOR runner on the owner's machine (logged-in JSTOR account, built-in browser, one search per queue row, 6 s apart, no block page). First-page hits for every row are in `JSTOR-QUEUE.tsv`; only the hits that could print, calendar or discuss the letter were opened. No class is changed here; the verifier moves it.
+
+Rows 20-22 answered (3 queries; rows 20 and 21 no hits). One hit opened:
+
+- Roscoe Pound, "The Military Telegraph in the Civil War", *Proceedings of the Massachusetts Historical Society*, 3rd ser., 66 (1936-1941), pp. 185-203, https://www.jstor.org/stable/25080325 (read online). In-document search: "Eckert" 3 hits (pp. 195, 197), all on the Military Telegraph's independence from field commanders (Eckert's report praising Caldwell, OR ser. I vol. 51 pt 1 p. 200; Van Duzer answerable only to Eckert; Eckert holding up Grant's orders to Thomas), drawn from the Official Records. Nothing on Fort Monroe, Cipher No. 1, the Huntington ledger or the April 1864 Fox and Meigs telegrams.

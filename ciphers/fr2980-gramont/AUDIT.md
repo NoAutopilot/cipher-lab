@@ -1718,3 +1718,14 @@ counts from `decode.py --check` at the time of writing, and grep the whole file 
 
 Requests this session for this label: www.gutenberg.org 1. No Google Books, no Gallica, no archive.org.
 
+
+## JSTOR (owner's machine, 24 Sept 2026)
+
+Recorded by the JSTOR runner on the owner's machine (logged-in JSTOR account, built-in browser, one search per queue row, 6 s apart, no block page). First-page hits for every row are in `JSTOR-QUEUE.tsv`; only the hits that could print, calendar or discuss the letter were opened. No class is changed here; the verifier moves it.
+
+Rows 2-6, 26-28, 32-33 answered (11 queries). Two hits opened:
+
+- Mignet, "Rivalité de Charles-Quint et de François Ier: le siège de Naples. Paix de Cambrai", *Revue des Deux Mondes*, 2e période, 68/2 (15 mars 1867), pp. 382-426, https://www.jstor.org/stable/44726292 (open access). In-document search: "Villandry" 0 hits; "Gramont" and "Tarbes" 1 hit each, the same footnote (p. 419), which quotes a letter of Gabriel de Gramont, bishop of Tarbes, to the admiral Chabot de Brion dated 25 February 1530 (Mss. Béthune 8578, f. 43) on the emperor's coronation at Bologna. Nothing on the 20 May letter to Villandry, on fr. 2980 or on a cipher.
+- Cédric Michon, "Quand l'Église fait l'État", *Annuaire-Bulletin de la Société de l'histoire de France* (2005), pp. 127-147, https://www.jstor.org/stable/23408509 (read online). In-document search: "Villandry" 0, "2980" 0, "Gramont" 2, both passing mentions (Charles de Gramont as a royal relay in Guyenne; Gabriel de Gramont among the prelates who came forward after Pavia). No letter cited.
+
+The other first-page hits are bibliographies, parlement studies and name collisions (the `"fr. 2980"` query returns Swiss-franc prices). None discusses the letter.

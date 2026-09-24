@@ -363,3 +363,12 @@ corrections from the manuscript (NOTES.md, "Specialist reply"). The class stays 
 verifier's call and has not been assigned; a verifier reading this section may record that the specialist confirmed
 the letter-substitution reading and left the numerical codes open. The page itself is not snapshotted into sources/
 because the entry names the repository owner (rule 9); it is cited by URL, section and date instead.
+
+
+## JSTOR (owner's machine, 24 Sept 2026)
+
+Recorded by the JSTOR runner on the owner's machine (logged-in JSTOR account, built-in browser, one search per queue row, 6 s apart, no block page). First-page hits for every row are in `JSTOR-QUEUE.tsv`; only the hits that could print, calendar or discuss the letter were opened. No class is changed here; the verifier moves it.
+
+Rows 8-11 answered (4 queries; rows 9-10 no hits). One hit opened:
+
+- Patricia Basing, "Robert Beale and the Queen of Scots", *British Library Journal* 20/1 (Spring 1994), pp. 65-82, https://www.jstor.org/stable/42554379. In-document search: "Bowes" 1 hit (p. 68), Bowes's report of 29 June 1583 that James had no wish for the Association, cited from the calendar; "cipher" 5 hits, all on Mary's own letters (the 1569-70 letter in cipher read to her at Sheffield in April 1583; her cipher letter to Mauvissière of 21 March 1584). Nothing on Bowes's letters of 7 April or 31 July 1583 or on their cipher.

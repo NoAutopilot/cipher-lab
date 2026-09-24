@@ -1191,3 +1191,14 @@ verifier with that host free should open it, not carry the limitation forward.
 
 Requests this session for this label: api.crossref.org 1, www.persee.fr 1, dissovet2.urfu.ru 1, WebSearch 1.
 
+
+## JSTOR (owner's machine, 24 Sept 2026)
+
+Recorded by the JSTOR runner on the owner's machine (logged-in JSTOR account, built-in browser, one search per queue row, 6 s apart, no block page). First-page hits for every row are in `JSTOR-QUEUE.tsv`; only the hits that could print, calendar or discuss the letter were opened. No class is changed here; the verifier moves it.
+
+Rows 16-19, 23-26 answered (9 queries). Two hits opened:
+
+- Petit-Dutaillis and Hauser, "Histoire de France" (bulletin historique), *Revue Historique* 105/2 (1910), pp. 353-397, https://www.jstor.org/stable/40943205 (read online). The Danzay passage (pp. 375-376) is Hauser's notice of Alfred Richard, *Un diplomate poitevin au XVIe siècle: Charles de Danzay* (Poitiers 1910), which he says prints one letter in appendix (Danzay to Catherine de Médicis, 25 Dec 1566); a footnote reads the initials on the Concorde treaty as "Carolus Quissarme Danzaeus Aquitanus" and refers to Bricka's *Indberetninger*. Nothing on 1557, the Cardinal of Lorraine or a cipher. Richard 1910 and Bricka 1901 are already covered in section 3.
+- "Inventaire des pièces manuscrites de la collection Godefroy", *Annuaire-Bulletin de la Société de l'histoire de France* 3/2 (1865), pp. 4-239, https://www.jstor.org/stable/23401625 (open access). The only Danzay entry found is item 34 of a Sillery bundle (p. 110): Isaac Maillet to the king, undated (1593?), on the affairs of Danzay "mort ambassadeur en Danemark". The viewer's own search returned nothing for "Danzay" or "Dansay", so this rests on the pages the viewer loaded, not on a full read of the 236 pages. No 1557 piece seen.
+
+The other first-page hits (Baudouin-Matuszek 1989 on d'Oisel, Jensen 1974, Jeannin 1956, Zeller 1956, Gaffarel 1879, Pelus-Kaplan 2013) are context, not prints of the letter.
