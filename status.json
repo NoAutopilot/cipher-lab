@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 19:48 UTC",
+ "updated": "24 Sep 2026 20:10 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1609,23 +1609,31 @@
    "grade": "check-solved from the Gallica leaf; not nominated",
    "line": "Caught before any capture. Lesson posted in ROOM: a letter left untagged in a published key list where others are tagged 'undeciphered' may already be solved on the leaf; check the image before nominating.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr3983-pisany-nevers-1593"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Model-in-the-loop crib rounds: the solver with a reader proposing cribs gains 13.5 to 15 points on short Italian controls (N 244), nothing where the blind solve already reads",
+   "grade": "matched controls only, no target touched: Italian N 244 K 31 from 83.6 to 98.4 and 65.6 to 79.1 letter accuracy, 29 of 30 cribs right; German N 540 K 82 no gain over 24 blind restarts; Italian N 720 simple substitution at ceiling blind",
+   "line": "First measured answer to whether a model in the loop shifts the control curve: yes at short lengths and mid-range blind scores, no where the anneal already reads. Next test is the code-and-mark design at N 720, where the blind solve reads 22 to 67 percent, before any target is run under it.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/tools/crib_rounds.py"
   }
  ],
  "lanes": [
   {
    "name": "Lane R5, recovery",
    "live": 1,
-   "focus": "workers A, B, C closed (Salviati f.55r priced, key search negative, Seure coarse atlas); D on the 1519 key leaves; next: key application on the three open Nevers letters (fr.3985 f.88 and f.176, fr.3986 f.198, key no.60) as the best odds of a reading tonight"
+   "focus": "Salviati f.55r priced at $9.4 a leaf, the remaining leaves not bought (about $55, the code-and-mark model stays untested, not negative); Seure blocked at 42.9 percent after the coarse atlas; 1519 key extended by 38 rows from f.110; next: key application on the five open Nevers letters with Tomokiyo's key no.60 (the best odds of a reading tonight)"
   },
   {
    "name": "Lane N4, nominations",
    "live": 1,
-   "focus": "nine copy-free nominations so far: Villeroy, Lauriere, Dinteville (Gomberville t.2 read), Hellen 1752, van Spaen 1808, Roell 1809 (Nationaal Archief), three Nevers-Revol letters with Tomokiyo's key no.60; scPARES on the Spanish and Portuguese archives running; pooling found no ready corpus"
+   "focus": "firm copy-free nominations 9: Villeroy, Lauriere, Dinteville (Gomberville t.2 read), five Nevers-circle letters with published keys (fr.3985, 3986, 3987, 3989, 3990), Hellen 1752; van Spaen 1808 and Roell 1809 held until the Colenbrander edition is read (csCOL); scPARES on the Spanish and Portuguese archives and scARCH2 on Dresden, Munich and the Royal House archive running"
   },
   {
    "name": "Parent workers",
-   "live": 1,
-   "focus": "solvEX (Opus, $15): model-in-the-loop crib rounds measured on matched controls before any target; detIMG closed on its controls (gate failed)"
+   "live": 0,
+   "focus": "solvEX closed: the crib loop adds 13.5 to 15 points at N 244 on controls; solvEX2 next on the code-and-mark design at N 720; detIMG closed on its controls (gate failed)"
   },
   {
    "name": "Lane V4, verification",

@@ -359,7 +359,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T19:30Z	session_01PKTy3iKiH3LzJpQauLb8Wu	LANE N4 csNA (Sonnet, cap $5)	check-solved CS2-18/-21/-22 at the Nationaal Archief	brief lane-n4-csNA	done 19:44, $3.37, X, CS2-21/-22 held blocked 20:03; hellen stands; archived by N4 20:04
 2026-09-24T19:30Z	session_01VTcPkWcCTRGdRFMTXLWY39	LANE N4 scPOOL (Sonnet, cap $6)	cipher letter pools by key, POOLS.tsv (parent 19:27)	brief lane-n4-scPOOL	done 19:40, $2.15, N, POOLS.tsv; archived by N4 20:04
 2026-09-24T19:33Z	session_01KzaH2nfuJtkSwFDqnS5XHF	LANE R5 D (Sonnet, cap 5)	fr5761-election-1519 key f.105-f.110	brief 2026-09-24-lane-r5-d-election-leaves.md
-2026-09-24T19:47Z	session_01XXo5gDVwAEHgVUbkSW74Dr	solvEX model-in-the-loop crib rounds (Opus, cap 5)	matched controls, tools/crib_rounds.py	parent's pick 19:47; brief 2026-09-24-solvex-model-in-the-loop.md
+2026-09-24T19:47Z	session_01XXo5gDVwAEHgVUbkSW74Dr	solvEX model-in-the-loop crib rounds (Opus, cap 5)	matched controls, tools/crib_rounds.py	done 19:58, $2.97, D, loop +13.5 to +15 points at N=244 on controls; archived 20:10
 2026-09-24T20:05Z	session_01AQQEu9PsJBipbJuRnccrh5	LANE N4 scPARES (Sonnet, cap $6)	PARES / DigitArq cipher letters (parent 19:27)	brief lane-n4-scPARES
 2026-09-24T20:05Z	session_01DHo4wEHhZ5cF5ZjABxc5Fi	LANE N4 csCOL (Sonnet, cap $4)	Colenbrander Gedenkstukken V for CS2-21/-22	brief lane-n4-csCOL
 2026-09-24T20:05Z	session_01GEGhc5p3nKrhrFkTdmdaXD	LANE N4 scARCH2 (Sonnet, cap $5)	Dresden R5005-08, BayHStA ÄA 4591, KHA A31 item-level viewers	brief lane-n4-scARCH2
