@@ -104,7 +104,7 @@ resolution, but nothing was missed for the leaves actually fetched natively.
 | Canvas | Folio (stamped) | Content | Cipher? | Rough extent | Symbol type |
 |---|---|---|---|---|---|
 | f251 (prior sweep) | 247v (left) / 248r (right) | Tail of a letter: cipher body on 247v, closing + signature "Vergier" on 248r | Yes, 247v | ~9 lines mixed clear/cipher, ~60-70 numeral groups, plus a short clear paragraph (Dunkerque troop-ship news) at the foot | Numeral groups, 1-3 digits, values seen from 2 to ~730 |
-| f252 (native, this session) | 248v (left, docket/address only) / 249r (right) | New letter opens "Monseigneur", dated by docket "26e mars 1696"; dense cipher | Yes, 249r | ~15+ lines, dense mixed clear/cipher | Same numeral scheme |
+| f252 (native, this session) | 248v (left, docket/address only) / 249r (right) | New letter opens "Monseigneur", dated "a Boulogne ce 26e mars 1696" in the heading on 249r; ~~dense cipher~~ **corrected 24 Sept 2026 (see "fol.249r"): 249r is all clear French; the pale numerals on it are mirrored show-through of 249v** | No | 12 clear lines | none on 249r |
 | f253 (native, this session) | 249v (left) / 250r (right) | Continues the 26 March 1696 letter; names "Milord Myddleton" in clear; closes "Vergier" at foot of 250r | Yes, both pages | ~30+ lines across the two pages, roughly 150-250 numeral groups (rough count, not a transcription) | Same numeral scheme |
 | f265 (native, this session) | 262 (stamped; both pages read as one opening) | A separate letter, not a continuation of the 26 March one; opens naming "Mde Pontchartrain" in clear, discusses Dunkerque armament, "M. de Chasteaurenault", "Milord Myddleton"; closes "Vergier" | Yes, both pages | ~20 lines, roughly 60-90 numeral groups | Same numeral scheme |
 
@@ -393,8 +393,42 @@ Prince d'Orange and 259 = le. 700 prints "angloi": a letter was dropped at the c
 8 610 601 206" = "me mettre" are uncertain: the writer's slip, and only the two 206s and "32 33 267" are secure. 20 "f" /
 161 "faire" (l'affaire = 195 20 161) is right as printed.
 
-**Not done (follow-ups, one line each).** (1) f.252 (fol.249r), the first page of the 26 March letter, is dense cipher
-with glosses and was never cut or transcribed: it is the next transcription job and more evidence for the key. (2) f.251
+**Not done (follow-ups, one line each).** (1) ~~f.252 (fol.249r) ... is dense cipher with glosses~~ Settled 24 Sept 2026 in "fol.249r" below: no cipher on
+249r; its numerals are show-through of 249v. Nothing to transcribe for the key. (2) f.251
 (fol.247v, tail of an earlier letter) has not been cut either. (3) Rerun `align_1696.py --control 3` on the current spans
 (about 10 minutes); the separation is not expected to change. (4) A search on the decoded plaintext (print_check, Marine
 B3 inventory) was not run: this is a reconciliation, and novelty is not classified here.
+
+## fol.249r (24 Sept 2026)
+
+LANE G2 worker J (Opus), disk only, no network, 0 requests. Question: is fol.249r (right page of
+`images/folio249_canvas252.jpg`) dense cipher with glosses (Reconciliation, "Not done" 1) or show-through of 249v
+(`check_bleedthrough_f252.py`)? **Decided on the native image: show-through. 249r carries no cipher.**
+
+Evidence. (1) Read at native scale, the pale numeral rows on 249r run right to left with mirrored glyphs: the top ghost
+row reads, from the right edge leftwards, "l'ay ueu ce matin 722 143 185 38 ...", which is 249v's first row
+(rows.tsv f253L R01) reversed. (2) `check_bleedthrough_f252.py` mirrors that region; the mirrored crop reads
+"198 17 168 18 119 50 301 28 277 290 238 10 301 14 200." and "il m'a paru beaucoup 249 18 15 24 267 30 278 259",
+digit for digit f253L R02-R03, and the glosses "longue conference avec luy" and "plus empressé ..." show through
+with them (evidence crop `images/thumbs/check_f252_ghost_flipped_small.jpg`, 58 KB). (3) The show-through runs both
+ways: the "faint dateline top left, partly lost" read as f253L R00 on 249v is 249r's heading, mirrored. (4) The dark
+ink on 249r is all clear words; not one numeral group is written in it. The reconciler's "dense cipher with glosses"
+and the thumbnail-sweep table's "dense cipher" came from the ghost rows, which at reduced scale look right-reading.
+
+What 249r does say (clear, one hand; read from the image, grade H as transcription, not a decipherment):
+"Mr Vergier a Boulogne ce 26e mars 1696 / Monseigneur / Depuis la derniere lettre que i'ay eu l'honneur de vous
+ecrire i'ay esté deux iours a Dunkerque, ainsy que ie m'estois donné l'honneur de vous le marquer. et Mr De Louvigny
+m'a obligé d'en rester un a Calais pour y congedier et payer la conduite de Calais a Dunkerque a l'equipage du
+Lutin. et enfin i'arrivay icy hyer au soir." The letter then runs on to 249v ("i'ay veu ce matin 722 ...").
+"Mr Vergier" at the head may be a clerk's docket-style heading; not settled.
+
+Changes. rows.tsv: row f253L R00 removed (commented, with the reason); `reconcile.py` regenerated ciphertext.tsv and
+signs.tsv (5 clear tokens fewer, cipher groups unchanged at 668); `tools/decode_key.py ... --check` exits 0 with the
+same grades, **667 tokens: C 584, M 82, U 1**. key_1696.tsv is unchanged: 249r confirms, adds and contradicts
+**0** codes, because it has none. align_1696.py was not rerun (no span or gloss changed; its control stands as before).
+
+fol.247v (canvas 251): only `images/probe_f251.jpg` (654 x 500) and no native image are on disk, so 247v was
+skipped, per the brief; its native fetch is LANE G2's to schedule. Suggestion (one line): once fetched, check 247v
+at native scale for mirrored ghosts from 248r before cutting crops.
+
+Not found / not done: no cipher on 249r to add to the key; no network; no novelty classification.

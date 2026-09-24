@@ -3,7 +3,6 @@ Key recovered from the interlinear decipherment (dechiffre.tsv) by align_1696.py
 C = key value equals the aligned decipherment at this position; M = it does not, or the group is uncertain; U = unkeyed (unglossed runs).
 Regenerate: python3 tools/decode_key.py ciphers/clair1108-duvergier [--check]
 
-f253L_R00	[B]OULOGNE CE 26E MARS 1696
 f253L_R01	I'AY VEU CE MATIN Milord Myddleton et a y eu u ne
 f253L_R02	lo n u e co n ue r en ti on a ue c uy
 f253L_R03	IL M'A PARU BEAUCOUP plus e m p re s se que

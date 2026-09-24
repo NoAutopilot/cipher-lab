@@ -2,7 +2,7 @@
 # leaf	row	layer	text	conf	note
 # layer: main = the letter's own line (clear words and numeral groups, one hand, one ink); gloss = interlinear decipherment written ABOVE that row's groups, smaller cursive second hand, ended by a trailing flourish.
 # In 'text', a token ending in ? is conf M; =N forces a numeral to clear (dates); alternatives as 192|142 (first is preferred). Clear words are kept as written.
-f253L	R00	main	[B]oulogne ce 26e mars =1696	M	faint dateline top left, partly lost; year from docket f.248v
+# f253L R00 removed 24 Sept 2026 (LANE G2 worker J): the "faint dateline" at the top of 249v is mirrored show-through of the heading "Mr Vergier a Boulogne ce 26e mars 1696" written on fol.249r (images/folio249_canvas252.jpg), not writing on 249v. Date of the letter: 26 Mar 1696, read on 249r in clear.
 f253L	R01	gloss	Milord Myddleton et Jay eu une	H	
 f253L	R01	main	i'ay veu ce matin 722 143? 185 38 151 34 224	H	143: last digit overwritten (passA 148?)
 f253L	R02	gloss	longue conference avec luy.	H	
