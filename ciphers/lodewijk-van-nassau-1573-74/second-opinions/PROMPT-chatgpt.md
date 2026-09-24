@@ -23,8 +23,10 @@ French words written in clear between the numbers.
 
 Already checked, and none of the four found in them: Groen van Prinsterer, Archives de la maison d'Orange-Nassau,
 1st series t. III-V and the Supplément; Gachard, Correspondance de Guillaume le Taciturne t. III and
-Correspondance de Philippe II t. II-III; Kervyn de Lettenhove, Les Huguenots et les Gueux t. III; Blok, Lodewijk
-van Nassau (1889). Groen prints William's replies to 4610, 4611 and 4616.
+Correspondance de Philippe II t. II-III; Kervyn de Lettenhove, Les Huguenots et les Gueux t. III and Relations politiques t. VI-VII; Blok,
+Lodewijk van Nassau (1889) and Correspondentie (Werken HG n.s. 47, 1887, by search-within and table of contents);
+La Huguerye, Mémoires inédits t. I (1877), which describes this cipher (pp. 175-176) but prints none of the four;
+CODOIN t. 102; the Koninklijk Huisarchief inventory. Groen prints William's replies to 4610, 4611 and 4616.
 
 Questions:
 1. Is the text of any of these four letters, deciphered, printed anywhere? Check especially P.J. Blok,

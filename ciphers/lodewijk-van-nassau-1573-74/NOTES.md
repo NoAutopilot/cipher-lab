@@ -465,3 +465,13 @@ pages are German. Orange's printed replies to 4610, 4611 and 4616 (Groen IV, Let
 answer their content. N4 is withheld: Blok 1887 was not read, Kervyn's Relations politiques, the KHA inventory and
 the Wiesbaden papers were not searched, and OpenAlex/S2 were unreachable. Note for the solver: 4612's keyed runs
 mostly do not read as French under the 4613/4615 key, so test for a changed table in 1574.
+
+## Second audit A1: novelty (24 September 2026)
+
+AUDIT.md "Second audit (A1)": 4610 N4, 4611 N4, 4616 N4, 4612 N3 (kept until it has a reading). No prior decipherment
+of 4610, 4611 or 4616 was located in the principal editions (Groen, Blok 1887 and 1889, Gachard, Kervyn's Huguenots and
+Relations politiques, La Huguerye's Mémoires), the KHA inventory (A 11/XIV d/13a-17..23) or WVO. The WVO PDFs bundle
+no printed page. La Huguerye, Mémoires t. I pp. 175-176, describes this cipher (syllables, letters, words and nulls),
+the practice of sending two or three duplicates to Orange, and Alba's failure to read intercepted packets: useful
+context for the solver. Suggestions, not done: HHStA Wiesbaden Abt. 170/171 in Arcinsys for Dillenburg file copies;
+Daussy 2007 (JSTOR row); OpenAlex and Semantic Scholar when their budgets reset.

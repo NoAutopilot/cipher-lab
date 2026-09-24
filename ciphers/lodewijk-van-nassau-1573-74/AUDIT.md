@@ -132,3 +132,158 @@ dbnl.org 9; archive.org advancedsearch 10, metadata 7, download 7; be-api.us.arc
 4; www.googleapis.com 7; books.google.com 4 (search-in-book pages and one epub link, which returned a captcha page;
 stopped); catalog.hathitrust.org 3; data.htrc.illinois.edu 2; openlibrary.org 1; api.openalex.org 7 (all 429);
 api.semanticscholar.org 4 (429, stopped); api.crossref.org 4; api.archives-ouvertes.fr 1; persee.fr 1; WebSearch 2.
+
+## Second audit (A1)
+
+Second auditor A1 for LANE V2 (Opus), 24 Sept 2026, 09:20-09:45 UTC (`date -u` read). This session did no solving,
+no decoding and no part of the first audit. It set out to find these four letters, their plaintext or a
+decipherment in print, by attacking the first audit's named gaps and its method. The WV2 letters are out of scope.
+
+### A1.1 Verdict
+
+| item | V2 class | A1 class | why |
+|---|---|---|---|
+| 4610 (3 Jun 1573) | N3 | **N4** | every principal family in A1.3 is now covered or shown not principal; no prior plaintext or decipherment located |
+| 4611 (2 Jul 1573) | N3 | **N4** | same |
+| 4612 (6 Mar 1574) | N3 | **N3** (kept) | coverage is the same as the others, but there is no reading to qualify: most keyed runs do not read as French, so "no prior decipherment located" would describe a decipherment this repo does not have. Re-class when a reading exists |
+| 4616 (12 Apr 1574) | N3 | **N4** | same as 4610; the reading is short (226 numerals) and partial |
+
+Nothing was found that lowers any item to N0-N2. N4 still means only that the principal editions, catalogues and
+project pages were covered. Internal or unpublished work, including a file copy in the Nassau papers at Wiesbaden,
+is not excluded (see A1.3, Wiesbaden).
+
+### A1.2 What was attacked, and the result
+
+1. **Bundled print in the WVO PDFs** (LANE N lesson, ROOM 09:16). All 13 rendered pages (4610 p1-4, 4611 p1-4,
+   4612 p1-3, 4616 p1-2) were viewed as a contact sheet. Every page is manuscript: cipher, clear words, and address
+   leaves with seals. None is printed and none carries an interlinear decipherment. The four PDFs were then
+   re-fetched (4 requests) to check that nothing had been dropped when they were rendered. They hold 4, 4, 3 and 2
+   image XObjects, the same as the page counts in `images/manifest.json`. Their only fonts are for the KHA footer
+   caption, so they contain no bundled text page. The PDFs were deleted after the check.
+2. **Blok, Correspondentie van en betreffende Lodewijk van Nassau (Werken HG n.s. 47, 1887)**, the first audit's
+   main gap. It is on neither IA nor Delpher, so it was searched inside Google Books vfYnSGD4fpQC through the
+   search-within endpoint (23 queries, no captcha). Positive controls hit: "Lodewijk" 20, "1574" 15, "Dillenburg" 6,
+   "Monseigneur" 16. Zero hits: Goch, Weeze, chiffre, cijfer, duplicata, "Pour Hollande", Mook, Cartilz, xije.
+   "Wees" and "Meer" hit only unrelated pages (p.184 "wees reeds", p.129 German "Meer", p.v, p.157). The table of
+   contents (pp. x-xiii, read through the snippets) lists for 1573-74 only letters with Hesse, Mainz, Saxony,
+   Hendrik and Willem van den Berghe, and Orange to his brothers (LXI, 16 Oct 1573; LXII, 10 Oct). There is no
+   letter of Lodewijk to Orange of 3 June or 2 July 1573, or of 6 March or 12 April 1574. **Result: none of the four
+   is in Blok 1887.** This rests on search-within plus the table of contents, not a page-by-page read.
+3. **Blok, Lodewijk van Nassau (1889)**, full djvu text (IA `lodewijkvannass00blokgoog`) grepped. It never
+   mentions a cipher, and it quotes none of the four. It led to two families V2 had not listed (items 6 and 7).
+4. **Kervyn de Lettenhove, Relations politiques des Pays-Bas et de l'Angleterre t. VI (1571-73) and VII
+   (1574-75).** V2 logged these as "IA title search found no item". They are on IA as `relationspolitiq06nethuoft`
+   and `relationspolitiq07nethuoft`, and their full text was grepped. Their "(En chiffre)" pieces are all from
+   Spanish agents (Guerau de Spes, Guaras, Sweveghem, Mendoza). Every "Lettres interceptées" heading (for example
+   t. VI no. MMDCXIX, 17 Aug 1573; t. VII, Heton, 3 Jan 1574) concerns English or Spanish correspondence. Louis
+   appears only in third-party reports. **None of the four is there.**
+5. **Groen, 1st series t. IV, by date and for cipher notes.** The DBNL text was re-fetched and every
+   chiffr/déchiffr/indéchiffr occurrence read in context. The only decipherment note is on p. 89 (May 1573): a
+   letter to the Nassau brothers "Depuis ce poinct il y a du chiffre dont le sens est icy joinct, tiré de la main de
+   Sinisgar", with Groen's footnote "Nous regrettons de n'avoir pas trouvé ce déchiffrement". That is a different
+   letter (May, sent to Louis, not from him). No note near the four dates. The Supplément had been covered by V2;
+   the 2nd series t. I (1584-) is outside the range. Context from WVO's cipher-remarks sweep
+   (`sources/solver-diffs/2026-09-24-lane-n-wvo-cijfer-96.tsv`): the sibling 4614 (4 Apr 1574) is "het origineel
+   hoofdzakelijk in cijferschrift", yet Groen's Supplément no. 49 prints it in clear. So Groen printed cipher
+   letters of this series when he had a decipherment, and he printed none of these four.
+6. **La Huguerye, Mémoires inédits, ed. A. de Ruble (SHF, 1877), t. I** (IA `mmoiresindit01lahuuoft`). La Huguerye
+   was Louis's secretary in 1573. Pp. 175-176 describe this correspondence: "Nous estions contrainctz de faire une ou
+   deux, quelquefois trois, duplicata des dépesches adressantes aud. sr prince d'Orenge". He also "renforcer le
+   chiffre, qui estoit significatif, de quatre choses, sillabes, lettres, vocables et nulles", and says that "bien
+   que le duc d'Albe surprint souvent de ses pacquetz, si n'en peult-il jamais tirer la substance". This fits
+   4610's duplicate status and the numeral design. It is a period statement that the Spanish did not read
+   intercepted packets of this series, and it prints no plaintext of any of the four. The introduction (p. xl)
+   lists La Huguerye's own printed letters: 20 Oct 1573 (Groen IV p. 216), May 1574 and 10 Jul 1574 (Groen
+   Supplément). None is one of the four.
+7. **Meulleners, "Legertochten tusschen Maastricht en Mook", Publications ... du Limbourg t. XXV (1888)** (IA
+   `publicasocietehistlimbourg25`, full text). Cited by Blok 1889 for the 1574 campaign. Its sources are local
+   Limburg records (Meerssen, Maastricht, Elsloo); it quotes no letter of Louis to Orange. Its "cijferletters" are
+   chronogram letters. The continuation in t. XXVI was searched in-item (Goch 0, 1574 1 unrelated).
+8. **Spanish intercept route.** CODOIN t. 102 (Requesens and Zúñiga, 1574; IA `coleccindedocu102madruoft`; the
+   `...unkngoog` copy is dark, HTTP 500) was grepped: "Ludovico" 2 times, no intercepted or deciphered letter of
+   his. IA full-text phrases "cartas del conde Ludovico", "cifra de Ludovico", "Ludovico" descifrada 1574,
+   "lettres interceptées" "comte Louis" 1574 returned only unrelated hits (CODOIN t. 111 has Monteagudo's
+   "carta descifrada", Vienna, not Louis). The WVO cipher-remarks sweep lists no contemporary copy, Simancas or
+   other, of 4610/4611/4612/4616. It does list one for nr. 424, which shows WVO does record such copies when they
+   exist. Gachard, Correspondance de Philippe II t. II-III was covered by V2.
+9. **Holding-archive catalogue.** The KHA inventory is online (koninklijkeverzamelingen.nl, a JS app, rendered with
+   tools/browser_fetch.js, 6 page loads). A 11/XIV d/13a, "Briefwisseling met diversen, 1568-1584", lists "Van
+   Lodewijk van Nassau" 3 Jun 1573 (13a-17), 2 Jul 1573 (13a-18), 6 Mar 1574 (13a-19), 25 Mar (13a-20), 4 Apr
+   (13a-21), 7 Apr (13a-22) and 12 Apr 1574 (13a-23). The item pages for 13a-17, -18, -19 and -23 say only "Voor
+   het digitale exemplaar en een nadere beschrijving zie ... WVO". There is no decipherment and no copy.
+10. **Phrase search** (Google Books API with a positive control of 300 hits, IA full text, Delpher books via
+    `jsru.kb.nl` SRU collection `DTS_document`; `phrase_hits` in the session log). The reading has no long
+    deciphered run that makes sense, so the phrases were the letters' clear-text runs plus the deciphered runs
+    that read: "puissions avoir de vous nouvelles", "camp de Weess", "auprès de Goch" 1574, "mandez de la
+    correspondance de Bruxelles", "sa pauvre famille", "conte van den Berghe" 1573, "une convocation" électeurs,
+    "conseillers des électeurs" 1573, "quelques conditions" négociation électeurs, "Louys de Nassau" "vostre bon
+    frere" 1574, "il fault que me pardonnez", "douze florins", "en chiffre" "comte Louis" 1573, "déchiffré" "comte
+    Louis de Nassau" 1574, "lettres en chiffre" "Louis de Nassau", "Lambert Certain" Goch. Google Books: 0
+    everywhere except one Groen Supplément table hit. IA: unrelated only (SHPF Bulletin t. 14, checked: 1571 La
+    Rochelle; others generic). Delpher: 0 for all 16.
+11. **Scholarship.** OpenAlex was still 429 (3 requests, stopped). Semantic Scholar was 429 (1 request, stopped).
+    The HAL item V2 left unread is Hugues Daussy, "Louis de Nassau et le parti huguenot", in *Entre calvinistes et
+    catholiques* (2007), pp. 31-43. It is a conference paper with no attached file, and it was not read. By its
+    title it is political history. It stays a suggestion; JSTOR row added.
+
+### A1.3 Principal families
+
+| family | status | what | result |
+|---|---|---|---|
+| Groen, Archives 1st series III-V, Supplément | covered (V2 + A1 5) | DBNL full text; by date and cipher notes | none of the four; replies to 4610/4611/4616 printed |
+| Sender's edited correspondence: Blok 1887 | covered (A1 2) | Google Books search-within, 23 q with controls; table of contents | none |
+| Sender's biography: Blok 1889 | covered (A1 3) | IA full text | none; no cipher mention |
+| Recipient's edited correspondence: Gachard, Guillaume le Taciturne t. III | covered (V2) | IA full text | none |
+| Documentary editions: Kervyn, Huguenots et Gueux III; Relations politiques VI-VII; Gachard, Philippe II II-III; CODOIN 102 | covered (V2 + A1 4, 8) | IA full text | none |
+| Secretary's memoirs: La Huguerye, Mémoires t. I | covered (A1 6) | IA full text | describes the cipher and duplicates; no plaintext of the four |
+| Regional study: Meulleners, Limbourg XXV-XXVI | covered (A1 7) | IA full text | none |
+| Holding archive: KHA inventory A 11/XIV d/13a | covered (A1 9) | online inventory, item pages | points to WVO only |
+| Project pages: WVO records and cipher-remarks sweep | covered (V2 + A1 8) | 4 record pages; 96-row remarks sweep | manuscript only; no copy or solution |
+| Page images (bundled print) | covered (A1 1) | 13 pages viewed; PDF objects counted | no print, no gloss |
+| IA / Google Books / Delpher full text | covered (V2 + A1 10) | 16 new phrases × 3 hosts | none |
+| DBNL | covered through the Groen texts; no whole-site phrase search | | partial, not principal beyond Groen |
+| Solver repos, Cryptiana, Cipherbrain, DECODE | covered by check-solved, 24 Sept 2026 (NOTES.md) | | none |
+| Scholarship | partly: CrossRef, HAL searched; OpenAlex, Semantic Scholar unreachable (429); Daussy 2007 not read; JSTOR queued (4 rows) | | no cryptologic study found |
+| HHStA Wiesbaden Abt. 170/171 (Arcinsys) | **not searched in-catalogue** (WebSearch only). **Not principal for this class**: the four are Orange's received originals in the KHA, and a Dillenburg file copy would be unpublished work, which N4 does not exclude | | open; a suggestion |
+
+### A1.4 Did we first-decipher?
+
+No, in the sense of rule 10. Orange read these letters in 1573-74, and his secretaries worked from a key of this
+system, as the decipherments on 4613/4615 show. What the repository has is a partial modern reading of 4610, 4611
+and 4616, with a period key recovered by alignment. After the logged search no prior decipherment of them was
+located. 4612 has no reading yet.
+
+Confidence: moderate-high that no printed edition carries these four. Groen, Blok (both), Gachard, Kervyn (both
+works) and La Huguerye are the editions that would, and the KHA and WVO catalogues give no copy. Lower for
+scholarship: the open indexes were unreachable.
+
+### A1.5 Safe and unsafe sentences
+
+- **4610** safe: "WVO 4610 (Lodewijk van Nassau to Orange, 3 June 1573, duplicate) is partly read with a key aligned
+  from the contemporary decipherments of WVO 4613/4615. No prior decipherment was located in the principal
+  editions (Groen, Blok 1887 and 1889, Gachard, Kervyn), the KHA inventory or WVO; see AUDIT.md." Unsafe: "first
+  decipherment of Lodewijk's letter" without "no prior decipherment located"; "unread since 1573" (Orange read it).
+- **4611** safe: the same with "2 July 1573"; Groen IV CDXXXIII acknowledges it. Unsafe: "previously unread".
+- **4612** safe (N3 kept): "WVO 4612 (6 March 1574): the 4613/4615 key reads its clear passages and a few keyed words;
+  most keyed runs do not yet read as French. No prior decipherment was located in the sources listed in AUDIT.md."
+  Unsafe: any "decipherment" or "first" wording.
+- **4616** safe: "WVO 4616 (12 April 1574, near Goch, two days before Mookerheyde) is partly read with the 4613/4615
+  key; no prior decipherment was located in the principal editions, the KHA inventory or WVO; Orange's reply of
+  15 April 1574 (Groen IV CDLXXXIV) acknowledges it." Unsafe: "Lodewijk's last letter, unread until now".
+
+### A1.6 Postmortem
+
+The first audit's method was sound, but it closed two families too early. (1) Its IA title search missed Kervyn's
+*Relations politiques*, which is on IA under a Toronto identifier. That was harmless: nothing is there. (2) It
+did not follow the leads from Blok 1889's footnotes: La Huguerye's *Mémoires*, which describe this very cipher and
+the duplicate practice, and Meulleners. Both are closed now with no plaintext. The Google Books captcha that
+stopped V2 applies to download, not to the search-within JSON, which answered 23 queries without one. Record that
+route for the next verifier. Nothing in the folder over-claims after V2's corrections. status.json and the second
+opinion prompt are updated to the new classes and the new sources.
+
+### A1.7 Requests (this session)
+
+archive.org advancedsearch 9, metadata 1, download 6 (1 HTTP 500); be-api.us.archive.org 23; www.googleapis.com 17;
+books.google.com 23 (search-within); jsru.kb.nl 24; www.delpher.nl 1; www.dbnl.org 1; resources.huygens.knaw.nl 4;
+www.koninklijkeverzamelingen.nl 2 curl + 6 browser loads; api.openalex.org 3 (429); api.semanticscholar.org 1 (429);
+api.archives-ouvertes.fr 2; WebSearch 3.

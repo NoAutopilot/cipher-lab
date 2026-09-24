@@ -1344,8 +1344,8 @@
    "date": "24 Sept 2026",
    "kind": "recovery",
    "title": "Lodewijk van Nassau to William of Orange, four cipher letters 1573-1574 (WVO 4610, 4611, 4612, 4616): partial reading with a key aligned from two sibling letters' decipherments",
-   "grade": "C 2512, I 267, M 658, U 575 of 4012 cipher signs; partial; novelty N3 (AUDIT.md, 24 Sept 2026)",
-   "line": "System: letters, five numbers each in blocks from n; numbers above 120 are names and nulls. Key aligned from WVO 4613 and 4615 against their contemporary decipherments. 4610, 4611 and 4616 read as French in stretches; most of 4612's keyed runs do not yet read as French. No letter reads straight through. N3: no prior plaintext or decipherment of these four letters was located in the sources listed in AUDIT.md; Orange's printed replies (Groen IV, Lettres CDXXVII, CDXXXIII, CDLXXXIV) answer 4610, 4611 and 4616.",
+   "grade": "C 2512, I 267, M 658, U 575 of 4012 cipher signs; partial; novelty 4610/4611/4616 N4, 4612 N3 (AUDIT.md, second audit A1, 24 Sept 2026)",
+   "line": "System: letters, five numbers each in blocks from n; numbers above 120 are names and nulls. Key aligned from WVO 4613 and 4615 against their contemporary decipherments. 4610, 4611 and 4616 read as French in stretches; most of 4612's keyed runs do not yet read as French. No letter reads straight through. 4610, 4611, 4616 N4: no prior decipherment located in the principal editions (Groen, Blok 1887 and 1889, Gachard, Kervyn, La Huguerye), the KHA inventory or WVO; Orange's printed replies (Groen IV, Lettres CDXXVII, CDXXXIII, CDLXXXIV) answer them. 4612 N3 until it has a reading.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74"
   },
   {
