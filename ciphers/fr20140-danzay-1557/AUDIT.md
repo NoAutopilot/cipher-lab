@@ -1271,3 +1271,6 @@ READ row (Hauser 1923, stable/40944190).
 bullet; the paragraph otherwise stands. The CONTRIBUTIONS.md row, ASKS.md row 44(a) and the NOTES.md sources were updated.
 status.json is untouched because the class did not change. No over-claiming sentence was found in the folder about Ryabov:
 sections 3(d)/3(e) and NOTES.md already said "different cipher, different volume", and this read confirms it.
+
+
+JSTOR family closed, 24 Sept 2026 18:03 UTC: the remaining READ row (Hauser 1923 (stable/40944190)) was read on the owner's machine (JSTOR-QUEUE.tsv, hits column) and does not print, calendar or discuss the letter. Open-index pass done the same day with the OpenAlex key (six queries, ASKS row 44). Outreach gate 2 is met; the parent set the outward draft to ready.

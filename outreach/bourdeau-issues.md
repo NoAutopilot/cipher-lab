@@ -1,4 +1,4 @@
-status: ready (issue 2, Thurloe P4: gate 2 met 24 Sept 2026; you post it at github.com/dbourdeau/cyphersolver/issues/new from your own account, since a cloud session cannot write to another account's repository, confirmed 17:32 UTC; issue 1, Gramont, waits on one JSTOR read and the open-index rows)
+status: ready (issues 1 and 2: gate 2 met 24 Sept 2026 for Gramont and Thurloe P4; you post them at github.com/dbourdeau/cyphersolver/issues/new from your own account, since a cloud session cannot write to another account's repository)
 subject: see each issue title below
 to: github.com/dbourdeau/cyphersolver/issues/new (you, from your GitHub account; an issue, never a pull request)
 targets: ciphers/thurloe-printed, ciphers/fr2980-gramont

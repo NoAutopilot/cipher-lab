@@ -1742,3 +1742,6 @@ JSTOR family: searched on the owner's machine 24 Sept 2026, 11 rows, 2 candidate
 Open indexes: OpenAlex (`api.openalex.org/works?search=...`) and Semantic Scholar (`/graph/v1/paper/search`) retried once each from the cloud at about 17:21 UTC: both HTTP 429 (shared free daily budget used up). The owner's run of 24 Sept 2026 (ASKS 34) covered Thurloe, Eckert and Blathwayt only; this target's queries are owed (ASKS row 44, `outreach/openalex-s2-owner-queries-2.md`).
 
 Outward drafts written this session (status drafted, nothing sent): see `outreach/` and CONTRIBUTIONS.md.
+
+
+JSTOR family closed, 24 Sept 2026 18:03 UTC: the remaining READ row (Mignet 1867 (stable/44728935)) was read on the owner's machine (JSTOR-QUEUE.tsv, hits column) and does not print, calendar or discuss the letter. Open-index pass done the same day with the OpenAlex key (six queries, ASKS row 44). Outreach gate 2 is met; the parent set the outward draft to ready.

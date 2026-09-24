@@ -1,4 +1,4 @@
-status: drafted (gate 2: open-index rows owed, ASKS 44; JSTOR READ row owed for Saxony, JSTOR-QUEUE.tsv; Lodewijk JSTOR family clean)
+status: ready (gate 2 met 24 Sept 2026 18:05 UTC: JSTOR family searched on the owner's machine incl. the Philippson 1908 read, negative; open-index pass done with the OpenAlex key, no relevant hit; AUDIT.md sections)
 subject: Cipher passages in six WVO letters (4610, 4611, 4616; 53, 57, 126) read with contemporary keys
 to: Huygens Instituut, editors of the Correspondence of William of Orange (WVO) (role, not an address)
 targets: ciphers/lodewijk-van-nassau-1573-74, ciphers/august-van-saksen-1561-64

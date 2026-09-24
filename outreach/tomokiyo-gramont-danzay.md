@@ -1,4 +1,4 @@
-status: drafted (Danzay HOLD of 24 Sept 2026 17:54 lifted: verifier V6 read Ryabov 2025, Quaestio Rossica 13/4, in full at 17:57 UTC -- a different cipher, letters of 14 Oct 1574 and 28 Feb 1578, BnF fr.4736 and fr.2812; no fr.20140, no 1557 letter; Danzay stays N4 and the paragraph stands. Open-index queries done from the cloud with the OpenAlex key, ASKS 44(a); still owed: JSTOR READ rows for Gramont and Danzay, JSTOR-QUEUE.tsv)
+status: ready (gate 2 met 24 Sept 2026 18:05 UTC: JSTOR family searched on the owner's machine incl. the Mignet 1867 and Hauser 1923 reads, negative; open-index pass done with the OpenAlex key, Ryabov 2025 read by V6 and found to concern a different Danzay cipher; AUDIT.md sections)
 subject: Gramont 1530 (fr.2980 ff.29-30) and Danzay 1557 (fr.20140 ff.35-36) read with your keys
 to: S. Tomokiyo, Cryptiana (address held by the person, not in this repository)
 targets: ciphers/fr2980-gramont, ciphers/fr20140-danzay-1557, ciphers/dupuy452-carpi-1520
