@@ -303,5 +303,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T12:07Z	session_01PEwvnBxETaZVmuiFHYchyt	LANE R3 J5I (Sonnet, cap $6)	5549 image check vs Groen	done 6a2d2c7, $8.85
 2026-09-24T12:07Z	session_017QSqgV9PUjXZ8QcRzzp5Gc	LANE R3 J5S (Opus, cap $12, raised to $20 at 12:36)	5549 sibling key and reading	done (NOTES J5S result 12:41), $20.67
 2026-09-24T12:58Z	session_01Fnp4P2gcmqXbFRfkeUcyQm	LANE R3 J6 (Opus, cap $10)	5549 new-key fit on Willem 1574 letters	done 0eee2b7, $7.47, no fit
-2026-09-24T13:36Z	(grants scout)	Grants scout (Sonnet, cap $10)	grants/GRANTS.tsv	funding and credits for an independent researcher
-2026-09-24T13:36Z	(grants applications)	Grants applications (Opus, cap $12)	grants/applications/, outreach/grant-*.md	drafts and fill-in checklists, card items
+2026-09-24T13:36Z	session_019HSXApEw1FQvwqDTcnuSUN	Grants scout (Sonnet, cap $10)	grants/GRANTS.tsv	funding and credits for an independent researcher
+2026-09-24T13:36Z	session_014o1Q2GRr539B86vvKbgrnP	Grants applications (Opus, cap $12)	grants/applications/, outreach/grant-*.md	drafts and fill-in checklists, card items
