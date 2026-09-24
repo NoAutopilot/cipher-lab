@@ -4,7 +4,7 @@ Verifier session, 24 Sept 2026 (03:00-03:15 UTC), orchestrator session_01EFmUvFA
 did not take part in the check-solved, transcription or solver sessions and did no decoding. Levels N0-N5 are
 those of CLAUDE.md rule 10. Claim under audit: NOTES.md "Reading with Tomokiyo's key" says f.35 reads with
 Tomokiyo's published 1557 Danzay key: 638 cipher tokens, H 508 (61 nulls) / M 61 / U 69 [H 509 / M 59 / U 70 after the second-reader adjudication of 24 Sept 2026, NOTES.md], continuous French on
-about 23 of 37 lines; the letter continues on f.36, which has not been transcribed. The repo makes no novelty
+about 23 of 37 lines; the letter continues on f.36, which has not been transcribed [superseded: f.36r has since been transcribed and partly read, see "f.36r, 24 Sept 2026"; V3b, 24 Sept 2026]. The repo makes no novelty
 claim. This audit tests whether the plaintext or a decipherment of f.35 is already in print.
 
 ## 1. Verdict
@@ -22,7 +22,7 @@ was not searched. Until those three gaps are closed, the class stays N3.
 contemporary decipherment. Read with the key Tomokiyo published in 2026, about 23 of its 37 lines give
 continuous French (509 of 638 cipher tokens at grade H, 70 signs unkeyed). No prior decipherment or printed
 plaintext was located in the Danzay editions, the Scottish and English state-paper series, or the Danish
-regesta (search log in AUDIT.md). The letter continues on f.36, which has not been read."
+regesta (search log in AUDIT.md). The letter continues on f.36, which has not been read." [Superseded by the N4 safe sentence in "N4 decision (Cryptiana closed)"; f.36r is now partly read. V3b, 24 Sept 2026.]
 
 **Unsafe sentence:** "The first decipherment of a previously unread 1557 letter from Danzay." Four things are
 wrong with it. It needs N4. The reading is partial. The key is Tomokiyo's, so the result is a key application
@@ -1107,7 +1107,7 @@ session ran one logged pass:
   2026, except by re-solving the cipher, which none of his work reports. **Limitation:** the PDF itself was not opened,
   because its host is not on this session's list. The scope comes from search summaries and is graded I, not read.
   Suggestion, not a gate: before any outreach, the drafting worker fetches the PDF once and greps for `20140`, `1557`,
-  `Лотаринг`, `Lorraine`. A hit reopens the class.
+  `Лотаринг`, `Lorraine`. A hit reopens the class. [Closed 24 Sept 2026 by V3b: the PDF (239 pp.) was fetched and grepped; 0 hits for `20140`, no quotation of the letter; see "Second opinion SO-DANZAY-F35".]
 
 Nothing found lowers the class.
 
@@ -1124,7 +1124,7 @@ see above), OpenAlex (unreachable) and the 8 JSTOR rows (queued). None of them b
 > (BnF fr.20140 f.35-36), which carries no contemporary decipherment. It was read here by applying the key
 > S. Tomokiyo reconstructed and published in 2026 (Cryptiana, "Danzay's Ciphers") from the sibling decipherments of
 > f.16, f.24 and f.30, so the result is a key application (a recovery), credited to his reconstruction: on f.35, 509
-> of 638 cipher tokens are at grade H, and on f.36r, 37 of 67. The reading is partial. Search log in AUDIT.md."
+> of 638 cipher tokens are at grade H [61 of them nulls, so 448 H signs carry text; V3b, 24 Sept 2026], and on f.36r, 37 of 67. The reading is partial. Search log in AUDIT.md."
 
 **Unsafe sentence:** "We have produced the first decipherment of a previously unread Danzay letter." It uses
 "first" and "previously unread" without the qualifier. It credits the result to us, not to Tomokiyo's key. It hides
@@ -1154,3 +1154,40 @@ check) before assigning N4.
 
 Requests this session: api.crossref.org 6 (≥1.5 s apart), WebSearch 3. No other host: no Gallica, no de-crypt.org, no
 cryptiana (its files were read from disk), no logins, no decoding, no subagents.
+
+## Second opinion SO-DANZAY-F35 (ChatGPT, pull request 3), checked 24 Sept 2026 16:28 UTC
+
+LANE V4 verifier V3b (Opus, session_01J653u9mXgcT3gwBenQP5kh). The outside answer (GPT-6 via Codex, branch
+`second-opinion/SO-DANZAY-F35`, copied to `second-opinions/chatgpt-2026-09-24.md`) reports **no prior print and no prior
+decipherment of f.35**. It offers no citation that prints, quotes or calendars the letter. Its main challenge is to the
+logic of the exclusions: a dissertation's stated scope does not prove it leaves out 1557. This session tested that
+challenge on the one specialist text it applies to, Ryabov's dissertation. The text was fetched and read, and it has
+no hit. **Class stays N4 (no prior decipherment located).**
+
+| # | claim | verdict | what was done / correction |
+|---|---|---|---|
+| 1 | No same-letter printing established; own search limited | right (a search result, weaker than this file's log) | none needed |
+| 2 | Cuisiat 1998 prints mainly outgoing letters; Margolin's review in *RBPH* 78/3-4 (2000), pp.1076-1077, Persée | right | Persée page fetched once: Margolin, *RBPH* t.78 fasc.3-4, pp.1076-1077, reviewing Cuisiat (Droz 1998, 711 pp., 1279 letters, the Cardinal's letters). This agrees with the "final families" row ("prints outgoing letters only"). WorldCat OCLC 645897230 was not fetched |
+| 3 | A title's date range cannot exclude a retrospective quotation; the scope-based exclusion of the 1558-1581 dissertation needs qualifying | right in principle; **now tested, negative** | Ryabov's dissertation (`dissovet2.urfu.ru`, "Рябов_Диссертация.pdf", 239 pp., 3.5 MB) was fetched once and its text extracted. There are 0 hits for `20140`. The 1557 hits are context only: the Danish-Swedish tension of 1557 "quickly reached the French court" (p.48, n.180 cites a 1561 Catherine de Médicis letter), Noailles in England 1557, Nepeya 1557, and bibliography dates. It quotes no Danzay letter of 1557 and names no letter to the Cardinal of Lorraine. The phrases `depesche`, `royaulme`, `marchans`, `commodement` and `Augsbourg` all give 0 hits (one hit for the 1555 Augsburg peace). The Danzay manuscripts it cites are fr.15966, 17832, 3324, 3224, 3304 and 2812, none of them fr.20140. The AUDIT limitation "PDF not opened" is closed in place |
+| 4 | The Handlingar volume correction (IX to XI) should be kept | right | already in section 3 (`handlingarrrand02scangoog`, vol. XI) |
+| 5 | Ryabov 2025, *Quaestio Rossica* 13/4, pp.1487-1508, doi 10.15826/qr.2025.4.1034, treats letters of 14 Oct 1574 and 28 Feb 1578, not 1557 | right | CrossRef record fetched: title, volume, issue and pages match. The abstract names the letters "dated 14 October 1574, and 28 February 1578". This agrees with section 3(d) and the N4 table. Page images not inspected (not needed for the class) |
+| 6 | Tomokiyo's danzay.htm could not be reached live | unverifiable here | not re-fetched. The repo's snapshot and earlier sections stand |
+| 7 | The royal word sign sits inside ordinary words (V5, V11-12, V28 "Augsbourg") | right, **already recorded** | NOTES.md "Reading with Tomokiyo's key", item 3 (LRD reads r/R in V5, V11, V26, V28). The reading is unchanged. A one-line suggestion was added to NOTES.md |
+| 8 | T and hk are ambiguous in the key; the header resolves them to a/u | right, already recorded | reading.txt header line 2; NOTES.md items on `hk` (u in "Augsbourg", a in "Danoys a") |
+| 9 | Tomokiyo's candidate null words (bien, du, ou, par, quand) mean clear words inside runs may be nulls | right, already recorded | NOTES.md verifier bracket and suggestion (Tomokiyo's list "bien du est il? ou / par quand?") |
+| 10 | f.36r has been partly read, so the prompt and the opening audit statements are stale | right for AUDIT.md's opening, **wrong for the prompt** | The prompt says only that the letter "continues on f.36", which is true. AUDIT.md lines 7 and 25 (the original N3 claim line and safe sentence) are annotated in place as superseded. The NOTES.md header still read N3 and now reads N4, following "N4 decision (Cryptiana closed)" |
+| 11 | "No marginal decipherment and a late public key" do not prove nobody re-solved the cipher independently | right in logic; the class already allows for it | N4 excludes printed and project work only, and says so: "internal or unpublished work not excluded". The N4 text itself frames this as a condition ("except by re-solving the cipher, which none of his work reports"). Nothing in print found such a re-solution |
+| 12 | Keep 27 Jan 1557 as written; the year style (1557/1558 n.s.) is unresolved | right | already handled: the body dateline and the docket both read 1557 (NOTES.md f.36 section). The second audit notes "possibly 1558 n.s.". Unchanged |
+| 13 | The 509 H include 61 nulls, so 448 H tokens carry text | right (arithmetic) | the qualifier is added in brackets to the N4 safe sentence. status.json's line was not edited (no class change; the brief limits status.json edits to a class change) |
+| 14 | Leads: Delavaud and Richard for fr.20140 references; Ryabov's full text; Cuisiat's notes; collate f.35 with the sibling decipherments; the Danish and Swedish editions' appendices | covered, or now closed | Delavaud: "Print check through Gallica page images" (negative, pp.27, 48-56, 70, 74-80, 85). Richard: the second audit and N4 tables. Ryabov: closed this session. Cuisiat: 21 snippet queries, notes included. Collation: a reading task for a solver, not novelty. Danish and Swedish editions: section 3 (full OCR grepped) |
+
+**Did the second opinion find a prior print or decipherment?** No. **Class:** f.35-36r stays **N4** (no prior
+decipherment located). The safe sentence is the one in "N4 decision (Cryptiana closed)", with the nulls qualifier.
+
+**Postmortem.** The one real gap the outside reader named was a limitation this file already logged: Ryabov's
+dissertation, excluded only by its stated scope. It is now closed by reading the text. The lesson repeats the Ryabov
+postmortem above: when a limitation says "not opened, because the host is not on this session's list", the next
+verifier with that host free should open it, not carry the limitation forward.
+
+Requests this session for this label: api.crossref.org 1, www.persee.fr 1, dissovet2.urfu.ru 1, WebSearch 1.
+

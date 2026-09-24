@@ -1,8 +1,7 @@
 # BnF fr.20140 — Charles de Danzay to Henri II / Cardinal of Lorraine, January 1557
 
 Status: found-solved (3 of 4 items); partial (1 of 4, f.35: Tomokiyo's key read, 24 Sept 2026)
-Novelty (f.35): N3 per AUDIT.md (verifier, 24 Sept 2026); use only the safe sentence there.
-Novelty (f.36r): same letter as f.35, N3 per AUDIT.md "f.36r, 24 Sept 2026" (one audit of f.36r; safe sentence there).
+Novelty (f.35-36r, one letter): N4 (no prior decipherment located) per AUDIT.md "N4 decision (Cryptiana closed)", held after second opinion SO-DANZAY-F35 (V3b, 24 Sept 2026); use only the safe sentence there.
 
 Check-solved pass, 24 September 2026 (Sonnet, orchestrator brief for M13-M16). Editions-first + one-leaf pass.
 The formal six-source check-solved run for the f.35 remainder is done (below, same day); verdict unchanged:
@@ -693,3 +692,4 @@ Grade counts on f.36r are unchanged: both rows were M before and are M now, and 
 remains H 37 (10 nulls) / M 26 / U 4 (line 1 H 15 M 8 U 2; lines 2-4 H 22 M 18 U 2), so the figures in this file,
 AUDIT.md and status.json stand. The earlier suggestion "test LRD against t row 2 in ...ment par deça" is settled
 by the sign identity, without using Tomokiyo's t row 2 cell. `<le>` now occurs on f.36r only at 36R2 pos 1.
+- Suggestion (V3b, 24 Sept 2026, from second opinion SO-DANZAY-F35): reading.txt shows LRD as `<le Roy de Dannemarch>` where it reads r/R (V5, V11-12, V26, V28, item 3 above); a solver should decide whether to key LRD as letter r in context and show both values, as for T and hk.
