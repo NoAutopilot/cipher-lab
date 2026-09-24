@@ -147,8 +147,8 @@ VERIFIER: <target folder>. Claim under audit: <the sentence as the repo states i
    (a) the canonical series, its index and its supplements; (b) the sender's and the recipient's printed
    correspondence; (c) the documentary editions for the period; (d) the holding archive's catalogue,
    blog and project pages; (e) full-text search on Internet Archive, HathiTrust and Google Books;
-   (f) the solver repositories and cipher blogs; (g) scholarship through the open indexes (OpenAlex API, Semantic
-   Scholar API, Persée, HAL, CrossRef, Google Scholar when reachable) and, for JSTOR, a row per query appended to
+   (f) the solver repositories and cipher blogs; (g) scholarship through the open indexes (OpenAlex API and Semantic
+   Scholar API with the keys of access playbook item 3, Persée, HAL, CrossRef, Google Scholar when reachable) and, for JSTOR, a row per query appended to
    `JSTOR-QUEUE.tsv` for the owner's local runner; a queued JSTOR row never blocks N3 or N4 on its own (24 Sept 2026,
    the owner is not the bottleneck at fifty sessions). Log each family
    as searched or unreachable, with what was searched.
@@ -270,6 +270,18 @@ Getting the material is most of the work. Try routes in this order and record wh
    has set GOOGLE_BOOKS_KEY in the environment (20 Sept 2026): append `&key=$GOOGLE_BOOKS_KEY` to every
    `www.googleapis.com/books/v1/volumes` call. Full-text hits still need the volume to be full view; use
    `filter=full` and read pages through the volume's `accessInfo` links. Never print the key.
+   **OpenAlex and Semantic Scholar keys (24 Sept 2026).** OpenAlex retired its mailto "polite pool" in February 2026
+   and meters a daily credit budget per caller; keyless callers are counted per IP, and every cloud session shares one
+   egress IP, which is why all of them saw 429 on 24 Sept 2026. The person has set `OPENALEX_KEY` (a free key from
+   openalex.org/settings/api, ten times the keyless budget, a `search=` call costs 10 credits, a single-record lookup 0).
+   Send it as a header, never in the URL: `curl -H "Authorization: Bearer $OPENALEX_KEY" "https://api.openalex.org/works?search=..."`;
+   check what is left with `curl "https://api.openalex.org/rate-limit?api_key=$OPENALEX_KEY"` (resets at midnight UTC;
+   429 also on more than 100 requests/s). Semantic Scholar: unauthenticated traffic shares one pool and 429s; the person
+   has requested a key (form at semanticscholar.org/product/api, delivered by email, backlog as of 24 Sept 2026) which will
+   be `S2_KEY`, sent as `-H "x-api-key: $S2_KEY"`, 1 request per second, no Retry-After on 429, so sleep 1.1 s between
+   calls and back off. `tools/print_check.py` reads both variables and adds the headers itself (and runs its `s2`
+   check only when the key is present). With the keys, a session runs the open-index pass itself; no owner-machine row
+   is needed for OpenAlex or Semantic Scholar. Test presence with `test -n`; never print or commit either key.
    Internet Archive: IA_USER and IA_PASS (set 20 Sept 2026) let a worker borrow a lending-only book for one
    hour and read its pages (the `internetarchive` Python library's `ia configure` flow, or the web login with
    a cookie jar; the loan endpoint is /services/loans/loan/ with action browse_book, then the page images

@@ -33,6 +33,11 @@ Per source:
   gbooks    Books API volumes?q="phrase"&country=US&key=$GOOGLE_BOOKS_KEY (the key is never printed or written); listed
             volume ids are flagged when they appear among the results.
   openalex  works?search="phrase" and works?search=<keywords>;  crossref  works?query.bibliographic=<keywords or phrase>.
+  s2        Semantic Scholar graph/v1/paper/search?query="phrase" and <keywords>; run only when a key is set (below).
+Keys (CLAUDE.md access playbook item 3, never printed or written): OPENALEX_KEY (or OPENALEX_API_KEY) is sent to
+api.openalex.org as 'Authorization: Bearer', which moves the run from the shared per-IP daily budget to the key's own;
+S2_KEY (or S2_API_KEY, SEMANTIC_SCHOLAR_API_KEY) is sent to api.semanticscholar.org as 'x-api-key' (1 request/s).
+Without a key, OpenAlex still runs on the keyless budget and Semantic Scholar is skipped (its keyless pool 429s).
 Politeness (CLAUDE.md good-citizen rule): one request at a time, 1.5 s apart per host, descriptive User-Agent (a Chrome
 string only for HathiTrust's catalogue API, which needs it); on 403, 429 or a challenge page the host is marked
 blocked and not asked again this run. --max-requests caps the run. --offline uses cached texts only.
@@ -45,7 +50,30 @@ import urllib.error, urllib.parse, urllib.request
 UA = 'cipher-lab research script (contact via repository)'
 CHROME = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-KINDS = ('ia', 'hathi', 'oclc', 'htid', 'gbooks', 'openalex', 'crossref')
+KINDS = ('ia', 'hathi', 'oclc', 'htid', 'gbooks', 'openalex', 'crossref', 's2')
+
+
+def _first_env(*names):
+    for n in names:
+        v = os.environ.get(n, '').strip()
+        if v:
+            return v
+    return ''
+
+
+def key_headers():
+    """Per-host auth headers from the environment; values are never logged (only 'set'/'unset' may be printed)."""
+    h = {}
+    oa = _first_env('OPENALEX_KEY', 'OPENALEX_API_KEY')
+    if oa:
+        h['api.openalex.org'] = {'Authorization': 'Bearer ' + oa}
+    s2 = _first_env('S2_KEY', 'S2_API_KEY', 'SEMANTIC_SCHOLAR_API_KEY')
+    if s2:
+        h['api.semanticscholar.org'] = {'x-api-key': s2}
+    return h
+
+
+KEY_HEADERS = key_headers()
 
 
 def norm(s, early=True):
@@ -79,7 +107,9 @@ class Net:
         if wait > 0:
             time.sleep(wait)
         self.count[host] += 1
-        req = urllib.request.Request(url, headers={'User-Agent': ua, 'Accept': '*/*'})
+        headers = {'User-Agent': ua, 'Accept': '*/*'}
+        headers.update(KEY_HEADERS.get(host, {}))
+        req = urllib.request.Request(url, headers=headers)
         try:
             body = urllib.request.urlopen(req, timeout=120).read()
             self.last[host] = time.time()
@@ -265,6 +295,20 @@ def check_openalex(queries, net, rows):
         rows.append([label, 'openalex', f"{d.get('meta', {}).get('count', 0)} work(s)" if res else 'no hits', det, url])
 
 
+def check_s2(queries, net, rows):
+    """Semantic Scholar relevance search; the keyed limit is 1 request/s, so the per-host delay is at least 1.1 s."""
+    for label, q in queries:
+        url = ('https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds'
+               '&query=' + urllib.parse.quote(q))
+        d, st = net.json(url)
+        if d is None:
+            rows.append([label, 's2', f'not searched ({st})', '', url]); continue
+        res = d.get('data', [])
+        det = '; '.join(f"{(p.get('title') or '')[:60]} ({p.get('year')}) "
+                        f"{(p.get('externalIds') or {}).get('DOI') or p.get('paperId', '')}" for p in res)
+        rows.append([label, 's2', f"{d.get('total', 0)} paper(s)" if res else 'no hits', det, url])
+
+
 def check_crossref(queries, net, rows):
     for label, q in queries:
         url = 'https://api.crossref.org/works?rows=5&query.bibliographic=' + urllib.parse.quote(q)
@@ -327,6 +371,11 @@ def main(argv=None):
     kw = [(f'(keywords) {v}', v) for k, v in srcs if k == 'openalex']
     if run('openalex'):
         check_openalex([(p, f'"{p}"') for p in phrases] + kw, net, rows)
+    if run('s2') and 'api.semanticscholar.org' in KEY_HEADERS:
+        s2kw = [(f'(keywords) {v}', v) for k, v in srcs if k in ('s2', 'openalex')]
+        check_s2([(p, f'"{p}"') for p in phrases] + s2kw, net, rows)
+    elif run('s2') and only is not None:
+        rows.append(['(all)', 's2', 'not searched (no S2_KEY in the environment)', '', ''])
     if run('crossref'):
         ck = [(f'(keywords) {v}', v) for k, v in srcs if k in ('crossref', 'openalex')]
         check_crossref(ck or [(p, p) for p in phrases], net, rows)
