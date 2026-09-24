@@ -1,0 +1,131 @@
+# Orange-Nassau 1572 -- ciphertext_2.txt (companion letter, CCCLXXXVII)
+#
+# Extracted 24 September 2026, per the mechanical-decode brief's item 3, from a single
+# fresh fetch of the Internet Archive djvu OCR of the SAME item used for ciphertext.txt
+# (archivesoucorre04housgoog, Google-digitised copy of Groen van Prinsterer, Archives ou
+# correspondance inedite de la maison d'Orange-Nassau, 1re serie, tome III, Leiden 1836).
+# The earlier check-solved sweep (23 Sept 2026) had used a cached extraction of lines
+# 24010-24378 for the main letter but did not save the full djvu.txt to disk; that file
+# was not present in sources/ia-fulltext/ this pass, so it was re-fetched once from
+# https://archive.org/download/archivesoucorre04housgoog/archivesoucorre04housgoog_djvu.txt
+# (one request, browser User-Agent, per the Access playbook) rather than re-scraping a
+# search page. As transcribed, never silently repaired.
+#
+# Lettre CCCLXXXVII, "Le Prince d'Orange au Comte Jean de Nassau. Sur la reddition de
+# Mons et la position deplorable des affaires", dated "en mon camp a Geel, ce 24 de
+# [7bre/septembre] 1572" -- three days after Lettre CCCLXXXV (our main target). This is
+# the second letter L.J. Nepveu tot Ameyde treats in his 1842 article (pp.20-21), stating
+# in his covering letter (p.18) that he found ONE key covering the cipher passages in
+# BOTH CCCLXXXV and CCCLXXXVII. Djvu OCR lines 24429-24557 (djvu-text line numbers, not
+# printed page numbers); printed extent approximately pp.511-514 (running heads "-- 511 --"
+# at djvu line ~24457, "-- 513 --" at ~24480, "-- 515 --" at djvu line ~24555, the last
+# belonging to the NEXT letter CCCLXXXVIII).
+#
+# IMPORTANT -- Groen printed this letter TWICE, back to back, and only the second printing
+# is ciphertext (the material below). Per Groen's own editorial note (reproduced verbatim
+# below, djvu lines ~24487-24490): "Le chiffre de cette Lettre etant, selon toutes les
+# apparences, le meme que celui de la Lettre 384, nous le reproduisons ici, afin de
+# faciliter la tache de ceux qui voudroient tenter de retablir les lacunes p.504 sqq."
+# ["The cipher of this letter being, by all appearances, the same as that of Letter 384,
+# we reproduce it here, to help those who would want to try to restore the gaps p.504
+# sqq [i.e. in Lettre CCCLXXXV]."] -- i.e. Groen believed this letter's cipher matches
+# Lettre 384 (an earlier letter, not catalogued in this repo), and printed the enciphered
+# original specifically as a cryptanalytic aid for Lettre CCCLXXXV's still-unbroken
+# passages. This is Groen's own 1836 statement, established fact from the primary source,
+# not a claim by this worker.
+#
+# ESTABLISHED, NOT INFERRED: Groen's FIRST printing of this letter (djvu lines 24429-24485,
+# NOT reproduced in this file) already gives the full letter in clear, unenciphered French
+# ("Monsr mon frere. Depuis l'enclose escrite, j'ay entendu telles nouvelles, que je crain
+# fort que mon frere Loyse soit entre les mains du Duc d'Alve et la ville rendue..."
+# through "...vous y teniez la main tant que possible vous sera. Escrit en mon camp a
+# Geel, ce 24 de septembre 1572. Vostre bien bon frere a vous faire service, Guillaume de
+# Nassau."). Groen's 1836 edition therefore already contains a matched plaintext/ciphertext
+# pair for this letter -- printed by Groen himself, six years before Nepveu's 1842 key --
+# because a separate, unenciphered copy or register draft of this particular letter
+# survived alongside the enciphered original sent to Jean de Nassau. This is a primary-
+# source fact about Groen's 1836 print, stated here for the record; it is not a claim of
+# novelty or priority by this worker, and no N-class is being assigned (rule 10, verifier's
+# job). It has NOT been used to decode anything below or to check/repair the ciphertext.
+#
+# Ciphertext is printed the same way as in ciphertext.txt: groups of 1-2 digit Arabic
+# numerals separated by periods, interleaved with plaintext French, copied VERBATIM
+# including OCR errors (long-s/ligature confusion, "i5"/"6o"/"3i" etc. digit misreads --
+# lowercase L/i for "1", "o" for "0" -- and other Google-Books-OCR artefacts). THIS IS A
+# TRANSCRIPTION, NOT THE PAGE IMAGE; no page image has been checked against this file (no
+# images/manifest.json entry for this letter). Any negative result from this file is
+# conditional on this OCR pass being faithful to the 1836 print.
+#
+# ============================================================================
+
+
+Le  chiffre  de  cette  Lettre  étant ,  selon  toutes  les  apparences ,  le
+même  que  celui  de  la  Lettre  384  >  nous  le  reproduisons  ici ,  afin  de
+faciliter  la  tâche  de  ceux  qui  Toudroient  tenter  de  rétablir  les
+lacunes  p.  5o4  »  sqq.
+
+Mons'  mon  frère!
+
+Depuis  Tenclose  escrite ,  j  ay  entendu  telles  nouvelles
+que  1  e  i3.  5.  7.  aS.  ao.  3i.  17.  4o.  9.  10.  5i.  3.  27.  S9.  17.  18.
+4a.5o.5i«56. 57*46.48. 60.  i5.  35.  36.43. 39.  18.  5i.  i5.ai.a5.
+33.43.  4o.  ji.  13.43.  4o.  11.  13.  43.  37.  9.  8.  54.  4o. 43.  37.  67.
+i4.  i5.  37.  57.  5i.  i5.  4.  33.  i5.  i4.  34.  35.  36.  35.  3.  37.  39.  9.
+59. 13.  60.  i4.  6.  13.  6.  9.  13.  3.  33.  6.  i5-  et  33.  33.  60,  37.  U*
+i4.  i5.  33. 3«  35. 5i.  i5.  39.  13.  60.  i4.  i5.  à  l'occasion  que
+3i.  33.35.  i5.  54.  18.  5i.  3.  39.  9.4.  37.54.  qui  est  35.43.  69.
+15.37.  5i.  33.3.  13.  i5  13.  16.  3.39.  54*  38.39.  >^*  i4.  6o.
+4o.  43.  60.  33.  43.  69.  %S.  i4.  39.  54.  45.  33.  60.  5i.  3i.  33.  4».
+39.  ao.  tanps  31.  33.  67.  i5.  39.  38.  37.  5i.  5o.  33  3.60.37.
+33.34.5o.5o.33.  i4.  i5.i4.i3. pour  avoir  entendu  3a.3i.35.
+33.  37.  39.  57.  ]5.  i4,  39.  57.  37.  4a.  39  la.  60.  5i.  4a.  69.  i4.
+38.  i5.  54.  55.  57.  5i.  i5.  9.  34.  3.  39.  31.  i5.  i4.  e.  i4.  30.  i5.
+39. 18.  5i.  3.  39.  9.  i5.  Toutesfois  je  nen  ay  encor  rien  as-
+seurë.   Dieu  vueille  tourner  le  tout  à  la  gloire  de  son  S^
+
+nom.  D'autre  costë  je  3i.  35.  3i,  4o.  36.  i5.  57.  5i.  i5.  60.
+3  33
+
+
+lï.  i5.  LC  que  a6,
+que  3i.  aS.  40.  5
+
+
+■  67.  45.  iS.  fti.  p.  Sa.  34.  53  e.  66-
+
+la.  4i.  Gçi.  18.  3.  37.  5i.  i5  i  <.-au5e
+i.  10.11.16.39.54.  56.  ij.  iS.  17.
+31.  60.  iS.  5).  V.  i4.  i5.  39.  lâ.  64.  43.  S9.  57.  i3.  15.33. 17.
+6.  jB.  5i.  i.'i.  71.  11.  17,  »5.  13.  t.  17.  ifl.  3.  a?.  Si.  i5.t.  17.
+î6.  15.39.  48.  Go,  57- 60.  3.  37.33.35.53.  i5.  i4.,et  ce  pour
+la  iiieame  uccSMon  susdit ,  ce  que  tous  pouvez  estimer
+il  qud  1 1.  >5-  4o.  17.  la.  4>.  36.  5&.  m,  3. 11.  i5.  et  4a.  bi.
+«0.37.39.15.  14.37.93.57.41.60,61.60.39.  1S.51.S.S9.
+43.11.».  aS.  3i.  i5.  60.  35.  i5.  36.  i5.  S9.57.  5.36.0.69.70.
+«5.1.  e.  30.  35.  i4.56.37.  i5.  39.  5i.  56- «.  37.  54.  3.  60.  5*.
+65.  35.  s.  69.  3.  Co.  66.  4o.  45.  61.37.39.9.  i5.  54.  11.  5.  33.
+i4.  i5.  36.3.31.39.  i5.  i4.  aiisquel.n  certes  cesie  affiire
+touche  Je  plus  près  qu'eus  mesnies  ne  pensent.  Cepen-
+dant je  suis  délilieré,  avecjla  grâce  de  Dieu,  5i.  sa.  17.
+i3.  s5.  36.  3.  33.  34.  33.  i5.5i.5i>.  67.  >4.  e.  39.  38.  37.  Si.
+1S.39.  34.  43. 41.33.  33.33.  â  39.  11.  16.43.60.73.  i5.  53.5.
+3g.  13.  i5.  et  36.17.  33.  1.  i4.  16.  13.  13.3.67.4.  i5.  59,  la.
+61.  16.  i4.  9.  B.  16.  16.  38.  43.  60.  17.33.  luy  44.  45.  3a.  35.  3.
+37.61.3.  11.  i5.  18.  3.  37.  5).  i5.  16.  i5.  3i.  ce  que  n'ay
+voulu  obmettre  à  tous  mander  affin  que ,  si  l'ocasion  se
+présente,43.45.  3.51.13.  16.  33.  3.  13.  i5.  45.4a.  60.  )t.4i.
+43.37.54.3.37.  11.  i5.  Si.  ces  iS.So.  3.18-3.87.  St.  1S.54.
+57.3.  39.  57.45.1S.  61.  p.  33.  33.  i5.  66.  i5.64.5S.  a5.9«.
+io.  3i.  17.  i5.  Tousy  teniez  la  main  tant  que  passible  Ton*
+sera.  Eacrit  en  mon  camp  à  GecI,  ce  34  de  7^  1572.
+
+
+Vostre  bien  bon  irère  à  tous  faire  aerriee,
+6U11.1.ADMS  va  Nassau.
+
+
+# ============================================================================
+# NOT read by decode.py: the fact of a matched plaintext/ciphertext pair for this
+# letter noted above is a candidate matched crib for a FUTURE key-verification pass
+# (rule 3), not attempted here. No decoding, novelty class, or "solved" wording is
+# claimed for this file; see NOTES.md for what this worker actually did.

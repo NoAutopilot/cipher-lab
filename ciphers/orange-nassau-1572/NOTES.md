@@ -284,18 +284,16 @@ reading itself).
 
 1. ~~Locate and read Nepveu tot Ameyde 1842~~ -- done, this pass; see section
    above, `sources/nepveu-1842/`, `key_nepveu.tsv`, `nepveu_corrections.tsv`.
-2. Apply `key_nepveu.tsv` to `ciphertext.txt` mechanically (a decode.py, per
-   CLAUDE.md's "reproducible readings" rule) to see whether it reproduces
-   Nepveu's printed French exactly, flags where the cipher groups in our own
-   transcription disagree with his printed corrections, and whether any of the
-   pp.506-507/509 cipher groups he apparently covered (per the marginal page
-   markers) still show unread numerals in our transcription -- this is solver
-   work, not done here.
-3. Consider whether Groen van Prinsterer, *Archives*, I Ser., 3e t., no.
-   CCCLXXXVII (pp. ~511-513, "du même au même, datée du Camp de Geel", 24 Sept.
-   1572) should be scouted as a companion target: same correspondents, same
-   cipher/key per Nepveu, three days after our letter, also partially deciphered
-   by Nepveu in the same 1842 article.
+2. ~~Apply `key_nepveu.tsv` to `ciphertext.txt` mechanically~~ -- done, 24
+   September 2026; see "Mechanical decode" section below.
+3. ~~Consider whether Groen ... CCCLXXXVII ... should be scouted as a companion
+   target~~ -- extracted as `ciphertext_2.txt`, 24 September 2026; see below.
+   Groen's 1836 print itself already gives this letter's plaintext in clear
+   French (a second, separate copy survived), immediately followed by a second,
+   enciphered printing of the same letter offered as a cryptanalytic aid for
+   letter 385 -- established from the primary source, see `ciphertext_2.txt`'s
+   header. Not pursued as a folder of its own this pass (out of this job's
+   brief); flagging again for a future worker.
 4. If a key does survive, check whether the same cipher was reused in the Sept 1572
    "merchant's letters" pseudonym correspondence between Willem and Lodewijk van
    Nassau referenced by the Huygens ING project description (sibling-key lead named
@@ -307,3 +305,105 @@ reading itself).
    Willem-Jan correspondence (distinct from Kluiver's 1578-1584 edition) was not
    resolved -- worth one more targeted search before treating source family (3) in
    the brief (Japikse/other editions) as exhausted.
+7. Per the mechanical decode below, the residue left unread by `decode.py` looks
+   resolvable by a page-image check (letter 385) or by aligning against Groen's
+   own printed plaintext of letter 387 (letter 387) -- neither attempted here,
+   both flagged as cheap next steps, not a cryptanalytic campaign.
+
+## Mechanical decode (24 September 2026)
+
+`decode.py` (this folder) applies `key_nepveu.tsv` to `ciphertext.txt` and, since
+`ciphertext_2.txt` now exists (see below), to it as well, regenerating `reading.txt`
+and `reading_2.txt`. `--check` recomputes both from the committed inputs and exits
+non-zero if either committed reading file is stale (CLAUDE.md rule 7); both are
+current as committed.
+
+**What the script does, precisely** (see its own docstring for the full spec): it
+tokenises each ciphertext file into numeral-group runs (chains of 2+ short,
+period-terminated tokens -- the transcription's own convention for separating
+groups), excludes Groen's own editorial footnotes (citation apparatus in French/
+Latin/Dutch, not cipher) from group-scanning by line range, and classifies each
+group token:
+- **H** -- the token, after only the OCR-digit-misread substitution
+  `ciphertext.txt`'s own header sanctions (lowercase l/i to "1", "o" to "0"),
+  parses to a clean integer that `key_nepveu.tsv` resolves to a letter or, per
+  Nepveu's own stated rule, a null ("de overige cijfers zijn non-valeurs").
+- **M** -- uncertain: the token parses to a clean integer only after also
+  stripping one stray non-digit typographic character (bracket, caret, asterisk)
+  that is *not* part of the sanctioned substitution. Flagged, not decoded --
+  `reading.txt` shows `[M:<token>]`, no letter is asserted.
+- **U** -- unread: does not parse under either rule.
+- **margin** -- a small, separately-counted class: tokens that are marginal
+  "1572. Septembre" running-header text bled into the OCR by the lost
+  two-column layout (recognisable by a literal caret or a fragment of
+  "1572"/"1567"/"septembre"), not cipher at all; excluded from the H/M/U counts
+  entirely.
+
+It does **not** apply `nepveu_corrections.tsv`'s 7 footnoted numeral corrections
+for letter 385 to `ciphertext.txt`: each correction cites the printed 1836
+numeral as Nepveu read it from the original, and an exact-string search for
+every "as printed" value in `ciphertext.txt` (a different, independent OCR
+pass -- Google/Internet Archive, not Nepveu's own reading of the print) found no
+match; the two OCR passes misread the same digits differently, and resolving the
+mismatch would need the page image, which is solver work outside this job's
+mechanical-key-application brief. This is a stated limitation of `decode.py`,
+not a claim the corrections don't apply somewhere in the text.
+
+**Counts** (per this job's grading scale -- H/C/M/U, not the general CLAUDE.md
+rule-4 scale; see decode.py's docstring for why C is 0 here):
+
+| Letter | groups scanned | margin excl. | H | M | U | C |
+|---|---|---|---|---|---|---|
+| CCCLXXXV (`ciphertext.txt`, our main target) | 917 (88 runs) | 4 | 867 | 6 | 40 | 0 |
+| CCCLXXXVII (`ciphertext_2.txt`, companion) | 347 (49 runs) | 1 | 288 | 1 | 57 | 0 |
+
+C = 0 for both: this pass mechanically applies the key table only; it does not
+attempt the token-by-token alignment against Nepveu's own printed French
+reconstruction (`sources/nepveu-1842/ocr_p19.txt`-`ocr_p21.txt`) that would let a
+specific group be graded C ("confirmed by known plaintext") rather than H. A
+spot check of one run (djvu-derived `ciphertext.txt` lines 126-128, the "Or(i)
+[cipher]. cela nous ait esté" passage) shows the mechanically-decoded letters
+reading, with gaps at the unread tokens, as a plausible fragment of Nepveu's
+own printed "quel coup de masfue" -- consistent with, but not a rigorous
+per-token confirmation of, the key's correctness; a full alignment pass was not
+attempted (would itself be a substantial solver task, out of this brief).
+
+**Unread (U) groups, main target (`ciphertext.txt`), 40 occurrences, 24 distinct
+spellings:** `a5`(4) `e`(4) `s`(4) `4a`(3) `m`(3) `d`(2) `is`(2) `la`(2) `2S`(1)
+`4ft`(1) `5a`(1) `5t`(1) `Si`(1) `_`(1) `a`(1) `aô`(1) `f`(1) `g`(1) `iS`(1)
+`j6`(1) `n`(1) `p`(1) `v`(1) `y3`(1). Full list with line-adjacent context is
+regenerable any time from `reading.txt`'s own header (`decode.py`'s output).
+
+**Unread (U) groups, companion (`ciphertext_2.txt`), 57 occurrences, 39 distinct
+spellings:** `la`(4) `4a`(3) `Si`(3) `aS`(3) `e`(3) `iS`(3) `5)`(2) `S9`(2)
+`ao`(2) `p`(2), plus 29 more at 1 occurrence each (`%S 3a 3g 4> 4» 5& 9.4 >4 B
+Co Gçi Sa U V a? bi fti ifl ij jB ji lâ lï s s5 sa t « »5 î6`). Full list in
+`reading_2.txt`'s header.
+
+**Assessment: is the unread residue enough to be a cryptanalytic target?** No.
+Both counts are small relative to the whole (40/913 = 4.4% of graded groups for
+the main letter, 57/346 = 16.5% for the companion, whose page range is visibly
+more OCR-degraded -- compare the raw excerpts in `ciphertext_2.txt`), and the
+unread tokens are scattered singly through otherwise-cleanly-decoding runs
+rather than forming an unbroken block: the spot check above found a legible
+French phrase fragment straddling three unread tokens in one run. This reads as
+an artefact of this specific secondary OCR transcription (Google/Internet
+Archive), not evidence of any cipher complexity beyond Nepveu's published key,
+and not a cryptanalytic failure -- so CLAUDE.md rule 3's matched-control
+requirement does not apply here (that rule is for a solver's claimed inability
+to break a cipher; this is a mechanical transcription-fidelity gap in an
+already-published key's application, not a claimed negative result). What
+would close it, cheaply, without a cryptanalytic campaign: (a) for the main
+letter, checking the ~24 distinct unread spots against the page image
+(`images/manifest.json` already holds pp.501/503/506; pp.505/507/509 are not
+yet fetched); (b) for the companion letter, aligning its unread groups against
+Groen's own already-printed clear-French duplicate of the same letter (see
+`ciphertext_2.txt`'s header) -- a crib-alignment exercise, not cryptanalysis,
+and the cheaper of the two since no further image fetch is needed. Neither is
+attempted here, per this job's brief ("do not attempt to solve the residue").
+
+**Requests this pass:** archive.org 2 (one `curl -o /dev/null` reachability
+check, one single fetch of `archivesoucorre04housgoog_djvu.txt`, cached to the
+worker's scratch directory only -- not committed to the repo, since the extract
+needed is now committed as `ciphertext_2.txt` and the manifest above records
+where to re-fetch it). No other host queried this pass.
