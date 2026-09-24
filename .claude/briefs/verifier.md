@@ -14,6 +14,10 @@ within two years of every plausible date and under every candidate sender; it ne
 Regesten by date and source note, not by phrase. Lesson of Dupuy 468, 23 Sept 2026.
 Search the holding archive's full text across the whole collection (e.g. CONTENTdm dmQuery on the collection), not only the
 item's own record: duplicates and letter-book copies live elsewhere. Lesson of Eckert 1864 second audit, 24 Sept 2026.
+Search the recipient's (and the sender's) printed family papers, including 19th-century selections that print the
+letter in English translation and mark the cipher only as '(Cypher.)' or '[in cipher]': phrase search will miss a
+translation, so search by date, correspondent and subject there. Lesson of Blathwayt BLA 186 (Pareti to Marchmont,
+13 Sept 1728, in Rose, Marchmont Papers 1831 ii 414-15), second audit, 24 Sept 2026.
 
 ## Second opinions from outside models
 
