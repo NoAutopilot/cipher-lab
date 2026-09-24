@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 18:06 UTC",
+ "updated": "24 Sep 2026 18:40 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -616,6 +616,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 18:40",
+   "what": "Recovery lane closed on its handoff after seventeen workers: no reading reached the ladder this evening; Salviati, Seure and the 1519 key each need a costed next step, Marie de Medicis waits on a key leaf. Mellon MS 29 closed as a negative with controls. Retrospective e delivered five proposals; a worker applies the safe ones. Semantic Scholar key confirmed."
+  },
   {
    "when": "24 Sep, 18:05",
    "what": "Every outreach gate met: your machine read the last three JSTOR articles (negative), the OpenAlex key ran the open-index queries, and the 2025 Ryabov article on Danzay's cipher turned out to concern his 1574 and 1578 letters, not 1557. The Tomokiyo, Huygens and Huntington notes and both Bourdeau issues are ready on your desk. Nominations lane closed on its handoff; retrospective started."
@@ -1573,23 +1577,31 @@
    "grade": "no reading: H0 C0 S0 M0 I0. Pool 719 signs (two leaves, 83.5% and 83.6% pass agreement). Vowel-mark control 93-96% at N 720, target none; code+mark control 89-94% at N 2,800, unreliable at 1,400",
    "line": "Two designs out (simple homophonic over base signs; consonant sign + vowel mark). The code+mark homophonic model needs the whole letter (~2,800 signs, f.55r-f.57v, about $40 of box-keyed passes) before it can be tested.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2933-salviati-1525"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "negative",
+   "title": "Beinecke Mellon MS 29, the cipher names in Frater Elias's Lumen luminum (c.1525): not a substitution of a continuous text",
+   "grade": "negative with matched controls: Italian and German mono- and homophonic controls read at 88-97 percent; the target scores below every control, forward and word-reversed",
+   "line": "Captured from Yale's IIIF (ff.1v-2v, 248 signs, 32 types, two passes at 78.7 percent raw agreement). A control-first solver excludes simple and homophonic substitution of continuous Italian, German or Latin; the item is more likely a list of disguised names than a text. Closed-negative; the capture and controls stay in the folder.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/beinecke-mellon29-elia"
   }
  ],
  "lanes": [
   {
    "name": "Lane R4, recovery",
-   "live": 1,
-   "focus": "closed 18:22 on its handoff; one worker (R, Mellon MS 29 solver) handed to the parent. Posthius read (for V4); Salviati two designs excluded, code+mark needs the whole letter; Marie blocked (ASKS 43); M36 key dataset"
+   "live": 0,
+   "focus": "closed 18:25 on its handoff: no new reading; Salviati needs three more leaves for the code-and-mark test, Marie de Medicis 1610 waits on the fr.3642 key leaf (DECODE role or a BnF copy), Seure needs an image-reading reconciler"
   },
   {
    "name": "Lane N3, nominations",
    "live": 0,
-   "focus": "closed 18:06: four firm copy-free nominations (Garbino 1528, Seure 1558, Marie de Medicis 1610, Beinecke Mellon 29), nine collection families tested negative, three retractions after edition checks"
+   "focus": "closed 18:06 with four copy-free nominations; the Mellon one is now a controlled negative"
   },
   {
    "name": "Lane V4, verification",
    "live": 0,
-   "focus": "all gates met for the seven outreach targets; next verifiers run when R4 reports a reading"
+   "focus": "every outreach gate met; three notes sent by the owner, two Bourdeau issues on the desk"
   }
  ],
  "headline": "Evening of 24 Sept: fifteen readings at N4, every outreach gate now met. Four notes wait on your desk: Tomokiyo (Gramont and Danzay, with his keys), the Huygens Institute (six Nassau and Saxony letters), the Huntington (Eckert and Blathwayt), and two issues for Bourdeau. Nine ChatGPT second opinions and a 2025 article on Danzay's cipher were checked today; no prior print found anywhere. The significance memo rates 12 readings as adding detail to the editions, 3 as form and key only."
