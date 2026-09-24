@@ -1,0 +1,5 @@
+ROLE: READER, La Garde 1577 (LANE R2 worker L1). Model Sonnet, cap $4. No subagents, no network (images are on disk).
+Target: ciphers/la-garde-1577. Read NOTES.md (Source, R9 capture, R15 progress: two pass workers lost their output at an interrupt) and images/inventory.tsv.
+1. Transcribe 6179 pp.2-3: every numeral group in its French context (the clear words before and after), one row per group: page, line, idx, group (digits as written, overlines/dots noted), left_context, right_context, doubt (M if unsure). Write ciphertext_6179.tsv and COMMIT AND PUSH AFTER EACH PAGE (the last two workers lost everything by writing at the end).
+2. Same for the short marginal cipher notes of 6467 (Marnix, same design) into ciphertext_6467.tsv.
+3. freq table (tools/ or a 20-line script): distinct groups, counts, value range. NOTES.md "L1: transcription": counts and what the design looks like (numbers for words? for letters?). Do not decode and do not fetch Groen's text (dbnl.org is LANE V2's host); the next worker (Opus, matched control) does the cryptanalysis. ROOM done line. Stop.
