@@ -216,7 +216,7 @@ boundary noted above before trusting it. Write `ciphertext.tsv`. Everything else
 
 Requests: 0 network (images already on disk; band crops regenerated locally, no fetch).
 
-## R17: key and reading, 24 Sept 2026 08:30 UTC (LANE R worker R17, Opus, session_011yvU8fdYtfhhpuMK1C9nvJ)
+## R17: key and reading, 24 Sept 2026 08:16 UTC (LANE R worker R17, Opus, session_011yvU8fdYtfhhpuMK1C9nvJ)
 
 **Settling (`settle.py`, `--check` 0).** Pass A split BLA188 p3 line 9 in two, so its L10-L19 sat one line ahead of
 pass B; `settle.py` joins A L09+L10 and renumbers before aligning (this accounted for most of the 109 BLA188 p3 rows in
