@@ -1,0 +1,234 @@
+line	pos	token	conf	alt	note
+f9r_L01	1	[PLAIN:Monsieur]	H		clear French
+f9r_L02	1	[PLAIN:Je croy que vous vous souuiendrez bien de ce]	H		clear French
+f9r_L03	1	[PLAIN:diverses ordres que vous avez receu]	H		clear French
+f9r_L03	2	I	M		barred I, or a flourish of 'receu'
+f9r_L03	3	36	H		
+f9r_L03	4	60	H		
+f9r_L04	1	33	H		
+f9r_L04	2	db	H		
+f9r_L04	3	39	H		
+f9r_L04	4	X	H		
+f9r_L04	5	_21	H		comma after
+f9r_L04	6	_6	H		
+f9r_L04	7	_28	H		
+f9r_L04	8	11	H		
+f9r_L04	9	tt	H		comma after
+f9r_L04	10	m	H		
+f9r_L04	11	11	H		
+f9r_L05	1	_12	H		
+f9r_L05	2	d	H		
+f9r_L05	3	q'	M	g	large looped 9, the large q' form of f1 f9_L10
+f9r_L05	4	m	H		
+f9r_L05	5	_21	H		
+f9r_L05	6	72	H		
+f9r_L05	7	I	H		
+f9r_L05	8	d	H		
+f9r_L05	9	db	H		
+f9r_L05	10	_26	H		
+f9r_L06	1	I	H		
+f9r_L06	2	tt	H		comma after
+f9r_L06	3	123	H		
+f9r_L06	4	11	H		
+f9r_L06	5	115	H		
+f9r_L06	6	36	H		
+f9r_L06	7	¨34	H		
+f9r_L06	8	[PLAIN:Sy contre lattente]	H		clear French
+f9r_L07	1	[PLAIN:des gens de bien]	H		clear French
+f9r_L07	2	61	H		
+f9r_L07	3	94	H		
+f9r_L07	4	_18	H		
+f9r_L07	5	11	H		
+f9r_L07	6	9	M	q	same shape as the 9 of 94
+f9r_L07	7	62	H		
+f9r_L07	8	q‡	M	9	the line-filler stroke crosses the descender
+f9r_L08	1	X	H		
+f9r_L08	2	mm	H		
+f9r_L08	3	36	H		
+f9r_L08	4	31	H		
+f9r_L08	5	_1	M	_7	overline only, no foot bar
+f9r_L08	6	_3	H		
+f9r_L08	7	11	H		
+f9r_L08	8	_13	H		
+f9r_L08	9	X	H		
+f9r_L08	10	mm	H		comma after
+f9r_L09	1	36	H		
+f9r_L09	2	_53	H		
+f9r_L09	3	m	H		
+f9r_L09	4	_15	H		
+f9r_L09	5	~121	M	121	struck through, hatched stroke above
+f9r_L09	6	X	H		
+f9r_L09	7	m‡	H		
+f9r_L09	8	d	H		dot after it
+f9r_L09	9	17	H		
+f9r_L09	10	9	M	q	
+f9r_L10	1	_10	H		
+f9r_L10	2	tt	H		
+f9r_L10	3	_18	H		
+f9r_L10	4	X	H		
+f9r_L10	5	mm	H		comma after
+f9r_L10	6	36	H		
+f9r_L10	7	tt	H		
+f9r_L10	8	_94	H		
+f9r_L10	9	tt	H		comma after
+f9r_L11	1	_7	H		
+f9r_L11	2	62	H		
+f9r_L11	3	_25	H		
+f9r_L11	4	tt	H		
+f9r_L11	5	_16	H		
+f9r_L11	6	db	H		
+f9r_L11	7	mm	H		
+f9r_L11	8	60	H		
+f9r_L11	9	11	H		
+f9r_L11	10	_23	H		
+f9r_L11	11	_12	H		
+f9r_L12	1	_21	H		comma after
+f9r_L12	2	q‡	H		
+f9r_L12	3	11	H		
+f9r_L12	4	60	H		
+f9r_L12	5	_o	H		
+f9r_L12	6	_11	H		
+f9r_L12	7	db	H		
+f9r_L12	8	91	M	31	closed head like the scribe's 9; both passes 31; comma after
+f9r_L12	9	36	H		
+f9r_L12	10	63	H		
+f9r_L12	11	_23	H		
+f9r_L12	12	_12	H		
+f9r_L13	1	_21	H		comma after
+f9r_L13	2	m	H		
+f9r_L13	3	60	H		
+f9r_L13	4	~121	M	121	struck through, hatched stroke above, as L9
+f9r_L13	5	¨1	M	1	one dot, like i
+f9r_L13	6	¨2	M		two dots over a small 2-like sign, as f1 f8_L10
+f9r_L13	7	£	H		
+f9r_L13	8	X	H		
+f9r_L13	9	¨4	H		
+f9r_L13	10	190	H		
+f9r_L14	1	_7	H		
+f9r_L14	2	d	H		
+f9r_L14	3	tt	H		
+f9r_L14	4	_23	H		
+f9r_L14	5	X	H		
+f9r_L14	6	d	H		
+f9r_L14	7	db	H		
+f9r_L14	8	mm	H		comma after
+f9r_L14	9	36	H		
+f9r_L14	10	¨2	M		two dots over a small 2-like sign, at the margin
+f9r_L15	1	60	H		
+f9r_L15	2	tt	H		
+f9r_L15	3	_19	H		
+f9r_L15	4	_11	H		
+f9r_L15	5	I	H		
+f9r_L15	6	_6	H		
+f9r_L15	7	60	H		
+f9r_L15	8	149	H		
+f9r_L15	9	36	H		
+f9v_L01	1	31	H		
+f9v_L01	2	mm	H		
+f9v_L01	3	_21	H		
+f9v_L01	4	33	H		
+f9v_L01	5	11	H		
+f9v_L01	6	_13	H		
+f9v_L01	7	db	H		
+f9v_L01	8	71	H		comma after
+f9v_L01	9	71	H		
+f9v_L01	10	_47	M	_77	first figure open and crossed, as the scribe's 4
+f9v_L02	1	36	H		
+f9v_L02	2	40	H		
+f9v_L02	3	11	H		
+f9v_L02	4	3	H		
+f9v_L02	5	_13	H		
+f9v_L02	6	X	H		dot before it
+f9v_L02	7	mm	H		comma after
+f9v_L02	8	55	H		
+f9v_L02	9	_48	H		
+f9v_L02	10	11	H		
+f9v_L03	1	db	H		
+f9v_L03	2	_23	M	_27	second figure a single hook, the scribe's 3
+f9v_L03	3	11	H		
+f9v_L03	4	_21	H		comma after
+f9v_L03	5	_11	H		
+f9v_L03	6	db	H		
+f9v_L03	7	33	H		
+f9v_L03	8	db	H		
+f9v_L03	9	mm	H		
+f9v_L03	10	_11	H		comma after
+f9v_L04	1	q‡	H		
+f9v_L04	2	db	H		
+f9v_L04	3	41	H		
+f9v_L04	4	_13	H		
+f9v_L04	5	X	H		
+f9v_L04	6	mm	H		comma after
+f9v_L04	7	33	H		
+f9v_L04	8	đ	M	_d	a long stroke crosses the ascender and runs on over 73
+f9v_L04	9	73	H		
+f9v_L04	10	X	M		cut at the margin
+f9v_L05	1	tt	H		
+f9v_L05	2	mm	H		
+f9v_L05	3	_11	H		comma after
+f9v_L05	4	z	M	d	looped d with a bar through the bowl
+f9v_L05	5	m	H		
+f9v_L05	6	11	H		
+f9v_L05	7	80	H		
+f9v_L05	8	_1	M	_7	overline only, no foot bar
+f9v_L05	9	m‡	H		
+f9v_L05	10	d	H		
+f9v_L05	11	db	H		
+f9v_L06	1	m	H		
+f9v_L06	2	_28	H		
+f9v_L06	3	X	H		
+f9v_L06	4	mm	H		
+f9v_L06	5	_41	H		
+f9v_L06	6	d	H		
+f9v_L06	7	36	M	96	both passes 96
+f9v_L06	8	θ	H		
+f9v_L06	9	41	M	4	
+f9v_L06	10	db	M		raised, cut at the margin
+f9v_L07	1	39	H		comma after
+f9v_L07	2	11	H		
+f9v_L07	3	d	H		
+f9v_L07	4	db	H		
+f9v_L07	5	_16	H		
+f9v_L07	6	_13	H		
+f9v_L07	7	X	H		
+f9v_L07	8	mm	H		
+f9v_L07	9	m	H		
+f9v_L07	10	60	H		
+f9v_L08	1	_26	H		
+f9v_L08	2	72	H		
+f9v_L08	3	I	H		comma after
+f9v_L08	4	23	H		
+f9v_L08	5	_13	H		
+f9v_L08	6	_21	H		
+f9v_L08	7	46	H		
+f9v_L08	8	_49	H		
+f9v_L09	1	33	H		
+f9v_L09	2	db	H		
+f9v_L09	3	_17	H		
+f9v_L09	4	36	H		
+f9v_L09	5	_10	H		
+f9v_L09	6	_52	H		
+f9v_L09	7	d	H		
+f9v_L09	8	db	H		
+f9v_L09	9	60	H		
+f9v_L10	1	_6	H		
+f9v_L10	2	m‡	H		
+f9v_L10	3	61	H		comma after
+f9v_L10	4	_16	H		
+f9v_L10	5	mm	H		
+f9v_L10	6	_13	H		
+f9v_L10	7	11	H		
+f9v_L10	8	_28	H		
+f9v_L10	9	d	M	X	cut at the margin
+f9v_L11	1	mm	H		comma after
+f9v_L11	2	115	H		comma after
+f9v_L11	3	168	H		
+f9v_L11	4	m	H		
+f9v_L11	5	m‡	H		
+f9v_L11	6	61	H		
+f9v_L11	7	[PLAIN:et de mesnage]	H		clear French
+f9v_L12	1	[PLAIN:en sorte toutes parolles]	H		clear French
+f9v_L12	2	_6	H		
+f9v_L12	3	63	M	67	
+f9v_L12	4	11	H		
+f9v_L12	5	d	M		cut at the margin

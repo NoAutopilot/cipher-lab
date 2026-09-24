@@ -1,0 +1,88 @@
+section	item	class	count	detail
+total	sign tokens		226	H 202, M 24
+total	distinct tokens (with overline/dots)		73	
+total	distinct base signs (overline/dots stripped)		66	
+total	clear phrases		7	
+total	commas after a sign		21	
+class	numeral	numeral	139	overlined 58, dotted 5, bare 76
+class	letter-like sign	letter-like sign	87	overlined 1, dotted 0, bare 86
+token	11	numeral	15	
+token	db	letter-like sign	15	
+token	mm	letter-like sign	14	
+token	X	letter-like sign	12	
+token	36	numeral	11	
+token	d	letter-like sign	11	
+token	tt	letter-like sign	9	
+token	60	numeral	8	
+token	m	letter-like sign	8	
+token	_13	numeral	7	
+token	_21	numeral	7	
+token	33	numeral	5	
+token	I	letter-like sign	5	
+token	_11	numeral	5	
+token	_23	numeral	4	
+token	_6	numeral	4	
+token	m‡	letter-like sign	4	
+token	61	numeral	3	
+token	_12	numeral	3	
+token	_16	numeral	3	
+token	_28	numeral	3	
+token	q‡	letter-like sign	3	
+token	115	numeral	2	
+token	31	numeral	2	
+token	39	numeral	2	
+token	41	numeral	2	
+token	62	numeral	2	
+token	63	numeral	2	
+token	71	numeral	2	
+token	72	numeral	2	
+token	9	numeral	2	
+token	_1	numeral	2	
+token	_10	numeral	2	
+token	_18	numeral	2	
+token	_26	numeral	2	
+token	_7	numeral	2	
+token	~121	numeral	2	
+token	¨2	numeral	2	
+token	123	numeral	1	
+token	149	numeral	1	
+token	168	numeral	1	
+token	17	numeral	1	
+token	190	numeral	1	
+token	23	numeral	1	
+token	3	numeral	1	
+token	40	numeral	1	
+token	46	numeral	1	
+token	55	numeral	1	
+token	73	numeral	1	
+token	80	numeral	1	
+token	91	numeral	1	
+token	94	numeral	1	
+token	_15	numeral	1	
+token	_17	numeral	1	
+token	_19	numeral	1	
+token	_25	numeral	1	
+token	_3	numeral	1	
+token	_41	numeral	1	
+token	_47	numeral	1	
+token	_48	numeral	1	
+token	_49	numeral	1	
+token	_52	numeral	1	
+token	_53	numeral	1	
+token	_94	numeral	1	
+token	_o	letter-like sign	1	
+token	q'	letter-like sign	1	
+token	z	letter-like sign	1	
+token	£	letter-like sign	1	
+token	¨1	numeral	1	
+token	¨34	numeral	1	
+token	¨4	numeral	1	
+token	đ	letter-like sign	1	
+token	θ	letter-like sign	1	
+clear	Monsieur	clear French	1	f9r_L01 pos 1 (line start)
+clear	Je croy que vous vous souuiendrez bien de ce	clear French	9	f9r_L02 pos 1 (line start)
+clear	diverses ordres que vous avez receu	clear French	6	f9r_L03 pos 1 (line start)
+clear	Sy contre lattente	clear French	3	f9r_L06 pos 8 (line end)
+clear	des gens de bien	clear French	4	f9r_L07 pos 1 (line start)
+clear	et de mesnage	clear French	3	f9v_L11 pos 7 (line end)
+clear	en sorte toutes parolles	clear French	4	f9v_L12 pos 1 (line start)
