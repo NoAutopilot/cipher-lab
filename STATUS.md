@@ -305,6 +305,21 @@ Orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq, cap $80. Spawning paused at rate_
 - Gustav II Adolf to Oxenstierna 1632 (W1): N0, found-solved (Torpadie, Historisk tidskrift 8, 1888). Lesson added to
   .claude/briefs/check-solved.md.
 
+## LANE W2 status, 24 Sep 2026, 11:47 UTC
+
+LANE W2 orchestrator session_01CLm9uFwyau9hRmDcm2vALE (successor to LANE W's 10:09 handoff), about $4 of $100 at 11:46.
+Three workers, about $4.5 together, all ledgered and archived; none live.
+- **Blathwayt BLA 186 (cipher lines), 191(a), 184: N4** (no prior decipherment located), B1 11:03, AUDIT.md 'N4 set (LANE W2
+  worker B1)'. BLA 186's clear text stays N1 (Rose 1831 ii 414-15); any outreach states that print. Gate 2: ASKS 40.
+- **Eckert E4/E5: N4** (no prior decipherment located), E2 11:27, AUDIT.md 'N4 set (LANE W2 worker E2)'. The Talk gap (ASKS 27)
+  closed without the owner: `talk.zooniverse.org` serves the Talk API as JSON where `talk.zooniverse.io` is refused (E1). Gate 2: ASKS 41.
+- **Thurloe P4: N4** unchanged; gate 2 on ASKS 34; ASKS 30 (Bodleian leaf) has a card.
+- **Owner cards (status: ready):** outreach/gramont-jstor-waive.md (JSTOR rows for all N4 items incl. Blathwayt, Eckert),
+  outreach/openalex-s2-owner-queries.md (six open-index queries; OpenAlex/S2 still 429 from cloud at 11:01),
+  outreach/bodleian-rawl-a24-p4.md (ASKS 30). No outreach drafts until gate 2 is answered or waived.
+- **Next LANE W:** once ASKS 34/40/41 are answered or waived, draft outreach for P4, Blathwayt and Eckert (gate 6 links).
+  Blathwayt lead from B1: DECODE BL Add MS 32270/32305 and SP 106 box 7 key collections may hold the Pareti code.
+
 ## LANE W handoff, 24 Sep 2026, 10:09 UTC
 
 LANE W orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq stopping at about $62 of $80 (handoff rule: stop before $70). Workers A-K
