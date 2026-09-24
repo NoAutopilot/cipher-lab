@@ -343,4 +343,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T18:20Z	session_pending	S2 key check (Sonnet, cap $1)	CLAUDE.md playbook line	owner added a Semantic Scholar key 24 Sept 2026
 2026-09-24T18:22Z	session_01Avww7WjGT5QhGoQ7JhrKj9	LANE R4 R (Opus, cap $4)	Mellon MS 29 control-first solver	done 18:26, $1.40, A, controlled negative; ledgered by 7a, archived by 7b 18:42
 2026-09-24T18:40Z	session_01K7ZbE95o1pUW5gof8VA5PR	Parent orchestrator 7b (Fable)	successor to 7a	took over 18:41; check-in trigger trig_01Ks1wNXPjfn7XW9EucmV9ru; hand-over point 750k context
-2026-09-24T18:37Z	session_0119AEp7E59uvwSMs2Eboq9F	Retro-apply e (Sonnet, cap $6)	RETRO-2026-09-24e.md proposals	briefs, tools, CLAUDE.md procedural lines only
+2026-09-24T18:37Z	session_0119AEp7E59uvwSMs2Eboq9F	Retro-apply e (Sonnet, cap $6)	RETRO-2026-09-24e.md proposals	done 18:45, $2.16, D, 4 of 5 applied (5 had no diff); archived 18:50
+2026-09-24T18:48Z	session_01LcgYWtnKYzBkdEwVU1ae1t	LANE R5 orchestrator (Opus, cap 0)	recovery successor to R4	owner 18:48: keep chasing momentum; brief 2026-09-24-lane-r5-orchestrator.md
+2026-09-24T18:48Z	session_01Nrrp9gDcF8aHUgcMSXxU7q	LANE N4 orchestrator (Opus, cap 0)	copy-free nominations successor to N3	brief 2026-09-24-lane-n4-orchestrator.md
+2026-09-24T18:48Z	session_01RjbAN7B7GsuXHwuPr1Ak5X	Board: hall of fame (Sonnet, cap )	CITATIONS.md + fourth board view	owner's ask 18:48; brief 2026-09-24-board-hall-of-fame.md

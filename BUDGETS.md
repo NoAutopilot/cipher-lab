@@ -94,3 +94,5 @@ the parent re-arms at the reset.
 logged into on their machine: unlimited online reading, 10 PDF downloads a month. Reads are no longer rationed; the runner
 still reads in the online viewer only and never downloads. Review at the end of October whether the runner used it enough to
 keep; the cloud still cannot reach JSTOR at all.
+
+**Owner, 24 Sept 2026 18:48 UTC (to parent 7b): "we want to keep chasing momentum."** Seven-day window still `allowed_warning` (resets Sat 26 Sept 13:00 UTC). Restarted LANE R5 (Opus, cap $60, 6 workers) and LANE N4 (Opus, cap $40, 4 Sonnet workers) plus one Sonnet board worker ($6). Same stop rule: `rejected` on any session halts every lane and the parent re-arms at the reset. Parent 7b own usage at 18:52: about $4.

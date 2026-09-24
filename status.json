@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 18:40 UTC",
+ "updated": "24 Sep 2026 18:52 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1589,20 +1589,25 @@
  ],
  "lanes": [
   {
-   "name": "Lane R4, recovery",
-   "live": 0,
-   "focus": "closed 18:25 on its handoff: no new reading; Salviati needs three more leaves for the code-and-mark test, Marie de Medicis 1610 waits on the fr.3642 key leaf (DECODE role or a BnF copy), Seure needs an image-reading reconciler"
+   "name": "Lane R5, recovery",
+   "live": 1,
+   "focus": "started 18:48 (owner: keep chasing momentum): Salviati f.55r-f.57v priced at the first leaf, then the code+mark model on ~2,800 signs; Seure coarse atlas; M36 key leaves f.105-110; N4 nominations as they post"
   },
   {
-   "name": "Lane N3, nominations",
-   "live": 0,
-   "focus": "closed 18:06 with four copy-free nominations; the Mellon one is now a controlled negative"
+   "name": "Lane N4, nominations",
+   "live": 1,
+   "focus": "started 18:48: Gomberville 1665 seconde partie as text (unblocks Villeroy, Lauriere, Dinteville), fr.3985 no.7 leaf check against Goujet v.5, published keys against unread Gallica siblings, holding-archive viewers for the CS2 copy-order rows"
   },
   {
    "name": "Lane V4, verification",
    "live": 0,
-   "focus": "every outreach gate met; three notes sent by the owner, two Bourdeau issues on the desk"
+   "focus": "every outreach gate met; three notes sent by the owner, two Bourdeau issues posted; replies come to the parent; a V5 verifier starts when a reading posts"
+  },
+  {
+   "name": "Board",
+   "live": 1,
+   "focus": "hall of fame view (public citations of this work, from CITATIONS.md) being added by a Sonnet worker, cap $6"
   }
  ],
- "headline": "Evening of 24 Sept: fifteen readings at N4, every outreach gate now met. Four notes wait on your desk: Tomokiyo (Gramont and Danzay, with his keys), the Huygens Institute (six Nassau and Saxony letters), the Huntington (Eckert and Blathwayt), and two issues for Bourdeau. Nine ChatGPT second opinions and a 2025 article on Danzay's cipher were checked today; no prior print found anywhere. The significance memo rates 12 readings as adding detail to the editions, 3 as form and key only."
+ "headline": "Evening of 24 Sept: fifteen readings at N4; the outreach set is sent (Tomokiyo, the Huygens Institute, the Huntington, two Bourdeau issues) and replies come to the parent. At 18:48 the owner chose momentum: LANE R5 (Salviati code+mark, Seure, the 1519 key) and LANE N4 (Gomberville t.2, fr.3985, keys against Gallica siblings) restarted under the seven-day warning, and a hall-of-fame view for public citations is being added to this board."
 }
