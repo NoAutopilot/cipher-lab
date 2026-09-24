@@ -49,11 +49,18 @@ def load_emails():
             m = re.match(r"^(to|subject|checked|status):\s*(.*)$", line)
             if m:
                 head[m.group(1)] = m.group(2).strip()
-        if head.get("status") != "ready":
+        st = head.get("status", "")
+        if not (st == "ready" or st.startswith("drafted")):
             continue
-        body = txt.split("## Text", 1)[1] if "## Text" in txt else ""
-        body = body.split("\n## ", 1)[0].strip()
-        out.append({"slug": fn[:-3], "to": head.get("to", ""), "subject": head.get("subject", ""), "checked": head.get("checked", ""), "text": body})
+        if "## Text" in txt:
+            body = txt.split("## Text", 1)[1].split("\n## ", 1)[0].strip()
+        else:
+            lines = txt.split("\n")
+            k = 0
+            while k < len(lines) and re.match(r"^(to|subject|checked|status):", lines[k]):
+                k += 1
+            body = "\n".join(lines[k:]).strip()
+        out.append({"slug": fn[:-3], "to": head.get("to", ""), "subject": head.get("subject", ""), "checked": head.get("checked", ""), "text": body, "status": st})
     return out
 
 def load_jstor_queue():
@@ -86,7 +93,7 @@ def load_second_opinions():
 def so_rows_for(r):
     """Second-opinion rows for a result: by folder, narrowed by a label token (F29R, F30, 126, 53) found in the title.
     Only readings carry the chip (kinds solve and reading); corrections, datasets and catches do not."""
-    if r.get("kind") not in ("solve", "reading"):
+    if r.get("kind") in ("contribution", "correction", "dataset", "negative", "catch"):
         return []
     folder = r["link"].replace(REPO, "").strip("/")
     rows = [x for x in second_opinions.get(folder, []) if not x["status"].startswith("withdrawn")]
@@ -162,7 +169,7 @@ for r in results:
 def short(t, n=70):
     return t if len(t) <= n else t[:n-1].rstrip(" ,;:") + "…"
 ladder_cols = ""
-for i, (code, name, desc) in enumerate(LADDER):
+for i, (code, name, desc) in reversed(list(enumerate(LADDER))):
     items = ""
     for r in rungs[i]:
         a = audits(r)
@@ -171,34 +178,14 @@ for i, (code, name, desc) in enumerate(LADDER):
         cls = "rung-item" + (" unique" if (i >= 3 and a >= 2) else "")
         slug = re.sub(r"[^a-z0-9]+", "-", r["title"].lower())[:40].strip("-")
         audit = r["link"].rstrip("/") + "/AUDIT.md"
-        phrases = r.get("phrases", [])
-        prompt = (
-            f"I want an adversarial second opinion on a claim about a historical cipher letter. Please try to prove the claim wrong.\n\n"
-            f"CLAIM: {r['title']}. {r['line']} Our verifier's class is {code} ({name.lower()}: {desc}), after {a_txt}.\n\n"
-            f"WHAT WE ALREADY SEARCHED: the search log is in {audit} (families searched, what was found, what was unreachable). "
-            + (f"The last auditor says the next rung needs: {gap}\n\n" if gap else "\n")
-            + (("DISTINCTIVE PHRASES OR IDENTIFIERS FROM THE TEXT: " + "; ".join(phrases) + "\n\n") if phrases else "")
-            + "WHAT I WANT FROM YOU:\n"
-            "1. Try to find this letter, or its plaintext, or a decipherment of it, anywhere in print or online: documentary editions, calendars of state papers, "
-            "journal articles, theses, library catalogues, cipher databases (DECODE), the two GitHub cipher projects (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers), Cryptiana. "
-            "Give exact citations (edition, volume, page, URL). If you cannot find it, say 'not found' plainly; do not guess or invent a source.\n"
-            "2. Check the attribution: sender, recipient, place, date. Say what would make it wrong.\n"
-            "3. Name three sources we should have searched and apparently did not, with why.\n"
-            "4. Give your own class on the same scale (N0 already known, N1 text in print, N2 mapping new, N3 nothing found, N4 everywhere looked, N5 confirmed) and one sentence on why.\n"
-            "Be skeptical. A wrong 'not found' costs us more than a wrong 'found'."
-        )
         chip = so_chip(r)
-        details = ""
-        if i >= 3 and not chip:
-            details = (f'<details class="xc"><summary>Second-opinion prompt</summary><p class="rung-meta">Paste into ChatGPT or another model. It asks for an adversarial check with exact citations.</p>'
-                       f'<button type="button" class="copy" data-for="xc-{E(slug)}">Copy prompt</button><textarea id="xc-{E(slug)}" hidden>{E(prompt)}</textarea>'
-                       f'<pre class="mail xc-text">{E(prompt)}</pre></details>')
-        items += (f'<li class="{cls}"><a href="{E(r["link"])}">{E(short(r["title"]))}</a>'
-                  f'<span class="rung-meta">{E(a_txt)}' + (f' · <b>next rung needs:</b> {E(gap)}' if gap else '') + '</span>' + chip + details + '</li>')
+        items += (f'<li class="{cls}"><a href="{E(r["link"])}">{E(short(r["title"], 96))}</a>'
+                  f'<span class="rung-meta">{E(a_txt)}' + (f' · <b>next rung needs:</b> {E(short(gap, 140))}' if gap else '') + '</span>' + chip + '</li>')
     hi = " hi" if i >= 3 else ""
     empty = '<li class="muted empty">nothing here yet</li>'
-    ladder_cols += (f'<div class="rung{hi}"><div class="rung-head"><span class="rung-code">{code}</span><span class="rung-name">{E(name)}</span></div>'
-                    f'<div class="rung-desc muted">{E(desc)}</div><ul class="rung-list">{items or empty}</ul></div>')
+    ladder_cols += (f'<div class="rung{hi}"><div class="rung-head"><div><span class="rung-code">{code}</span> <span class="rung-name">{E(name)}</span></div>'
+                    f'<div class="rung-desc muted">{E(desc)}</div><div class="rung-count muted">{len(rungs[i])} reading{"s" if len(rungs[i]) != 1 else ""}</div></div>'
+                    f'<ul class="rung-list">{items or empty}</ul></div>')
 n_unique = sum(1 for i in (3, 4, 5) for r in rungs[i] if audits(r) >= 2)
 n_climbing = sum(len(rungs[i]) for i in range(6)) - n_unique
 n_pending = sum(1 for t in targets_all if t["stage"] == 8)
@@ -218,15 +205,19 @@ headline = d.get("headline") or (
 )
 
 # ---------- your card ----------
-card_items = "".join(
-    f'<li data-row="{E(m["slug"])}" id="ask-{E(m["slug"])}"><input type="checkbox" aria-labelledby="ask-what-{E(m["slug"])}"><div>'
-    f'<div class="ask-what" id="ask-what-{E(m["slug"])}"><span class="muted">Subject:</span> {E(m["subject"])}</div>'
-    f'<div class="ask-action"><b>To:</b> {E(m["to"])}</div>'
-    f'<div class="ask-meta"><span class="ok">&#10003; checked</span> {E(m["checked"])}</div>'
-    f'<details><summary>Text to send</summary><pre class="mail">Subject: {E(m["subject"])}\n\n{E(m["text"])}</pre><button type="button" class="copy" data-for="mail-{E(m["slug"])}">Copy subject and text</button><textarea id="mail-{E(m["slug"])}" hidden>Subject: {E(m["subject"])}\n\n{E(m["text"])}</textarea></details>'
-    f'</div></li>'
-    for m in emails
-)
+NL = chr(10)
+def card_li(m):
+    drafted = m["status"] != "ready"
+    licls = ' class="drafted"' if drafted else ""
+    dis = " disabled" if drafted else ""
+    return (f'<li data-row="{E(m["slug"])}" id="ask-{E(m["slug"])}"{licls}><input type="checkbox" aria-labelledby="ask-what-{E(m["slug"])}"{dis}><div>'
+            + (f'<div class="ask-meta warn">{E(m["status"])}</div>' if drafted else "")
+            + f'<div class="ask-what" id="ask-what-{E(m["slug"])}"><span class="muted">Subject:</span> {E(m["subject"])}</div>'
+            f'<div class="ask-action"><b>To:</b> {E(m["to"])}</div>'
+            + (f'<div class="ask-meta"><span class="ok">&#10003; checked</span> {E(m["checked"])}</div>' if m["checked"] else "")
+            + f'<details><summary>Text to send</summary><pre class="mail">Subject: {E(m["subject"])}{NL}{NL}{E(m["text"])}</pre><button type="button" class="copy" data-for="mail-{E(m["slug"])}">Copy subject and text</button><textarea id="mail-{E(m["slug"])}" hidden>Subject: {E(m["subject"])}{NL}{NL}{E(m["text"])}</textarea></details>'
+            f'</div></li>')
+card_items = "".join(card_li(m) for m in emails)
 jstor_line = (f'<b>{jq}</b> JSTOR quer{"y" if jq == 1 else "ies"} waiting for your runner' + (f', {jdone} answered' if jdone else '') +
               ' (<a href="' + REPO + 'JSTOR-QUEUE.tsv">JSTOR-QUEUE.tsv</a>, runner brief in <a href="' + REPO + 'tools/jstor_runner_brief.md">tools/jstor_runner_brief.md</a>).') if jq or jdone else ''
 other_asks = [a for a in asks if not any(k in a["what"].lower() for k in ("history purge", "decode login"))]
@@ -331,14 +322,15 @@ header .top {{ display:flex; flex-wrap:wrap; align-items:baseline; justify-conte
 .panel {{ background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:16px 18px; }}
 .how {{ font-size:0.92rem; margin:0 0 10px; }}
 /* ladder */
-.ladder {{ display:grid; grid-template-columns:repeat(4, minmax(0,1fr)) minmax(0,2fr) minmax(0,1fr); gap:10px; }}
-@media (max-width:900px) {{ .ladder {{ grid-template-columns:repeat(2, minmax(0,1fr)); }} }} @media (max-width:560px) {{ .ladder {{ grid-template-columns:minmax(0,1fr); }} }}
+.ladder {{ display:grid; gap:10px; }}
+@media (max-width:760px) {{ .rung {{ grid-template-columns:minmax(0,1fr); }} }}
 .rung, .rung-item, .tile, .card li, .lanes > *, .results li > * {{ min-width:0; }} .rung-item a, .r-title, .r-line, .rung-meta {{ overflow-wrap:anywhere; }}
-.rung {{ border:1px solid var(--line); border-radius:6px; padding:10px 12px; background:var(--ground); display:grid; gap:6px; align-content:start; min-height:120px; }}
+.rung {{ border:1px solid var(--line); border-radius:6px; padding:12px 14px; background:var(--ground); display:grid; grid-template-columns:190px minmax(0,1fr); gap:14px; align-items:start; }}
+.rung-count {{ font-size:0.78rem; margin-top:6px; }}
 .rung.hi {{ background:var(--good-soft); border-color:var(--good); }}
-.rung-head {{ display:flex; align-items:baseline; gap:8px; }} .rung-code {{ font-family:"JetBrains Mono", monospace; font-weight:600; font-size:1.05rem; }} .rung-name {{ font-weight:600; }}
+.rung-head {{ display:grid; gap:2px; }} .rung-code {{ font-family:"JetBrains Mono", monospace; font-weight:600; font-size:1.05rem; }} .rung-name {{ font-weight:600; }}
 .rung-desc {{ font-size:0.8rem; line-height:1.3; }}
-.rung-list {{ list-style:none; margin:0; padding:0; display:grid; gap:6px; }}
+.rung-list {{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:8px; }}
 .rung-item {{ background:var(--surface); border:1px solid var(--line); border-radius:4px; padding:6px 8px; font-size:0.9rem; display:grid; gap:2px; }}
 .rung-item.unique {{ border-color:var(--good); box-shadow:0 0 0 2px var(--good-soft); }}
 .xc-text {{ white-space:pre-wrap; overflow-wrap:anywhere; font-size:0.72rem; max-height:220px; overflow:auto; }}
@@ -352,7 +344,7 @@ header .top {{ display:flex; flex-wrap:wrap; align-items:baseline; justify-conte
 /* card */
 .card {{ list-style:none; margin:0; padding:0; display:grid; gap:8px; }}
 .card li {{ display:grid; grid-template-columns:22px 1fr; gap:12px; align-items:start; padding:10px 12px; border:1px solid var(--line); border-radius:6px; background:var(--surface); }}
-.card li.done {{ opacity:0.55; }} .card li.done .ask-what {{ text-decoration:line-through; }}
+.card li.done {{ opacity:0.55; }} .card li.drafted {{ opacity:0.8; border-style:dashed; }} .warn {{ color:#b26a00; font-weight:600; }} .card li.done .ask-what {{ text-decoration:line-through; }}
 .card input[type=checkbox] {{ width:20px; height:20px; margin-top:2px; accent-color:var(--good); cursor:pointer; }}
 .ask-what {{ font-weight:600; }} .ask-action {{ font-size:0.92rem; margin-top:2px; }} .ask-meta {{ font-size:0.8rem; color:var(--muted); margin-top:4px; }}
 .card-note {{ font-size:0.85rem; color:var(--muted); margin:8px 0 0; }}

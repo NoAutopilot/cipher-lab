@@ -44,3 +44,12 @@ https://www.semanticscholar.org, one at a time, a few seconds apart; record per 
 and URL of anything that prints or discusses a decipherment of the letter; write the results into the ASKS.md row the file
 names (one line per query, pipes intact); set the file's first line to `status: done <date>`; commit those files by path,
 rebase, push; ROOM line `<UTC> | open-index runner (owner's machine) | done: N queries, K hits`.
+
+## Feedback from the first run (24 Sept 2026, 60 rows, 47 with first-page hits, two audits' worth of reads)
+
+What worked: faithful first-page lists, honest AUDIT.md sections ("none discusses the letter"), a real lead surfaced (Hauser's
+1910 notice of Alfred Richard, *Un diplomate poitevin: Charles de Danzay*, which prints a Danzay letter in appendix), reads spent
+only on candidates, no block page, nothing personal written. Change for the next run: JSTOR's search matches loosely, so a raw
+first page is mostly noise ("fr. 2980" returned Swiss-franc prices). Record only hits whose title or snippet names the
+correspondents, the place or the decade, prefixed `candidate:` or `context:`; write `no relevant hit (N results, none about
+the letter)` otherwise. That keeps the verifier's triage to the rows that matter.
