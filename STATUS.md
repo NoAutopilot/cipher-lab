@@ -617,7 +617,7 @@ work in progress. Orchestrator session 2,042 since 17 Sept. **Nothing here is bi
   archives and Cryptiana. The original orchestrator container predates the change and cannot; it delegates.
 - Repo conventions: CLAUDE.md. Workflows: .claude/workflows/check-solved.js and scout.js.
 
-## LANE G2 handoff (24 Sep 2026 11:58 UTC)
+## LANE G2 handoff (24 Sep 2026 11:56 UTC)
 
 Written by LANE G2 orchestrator session_015NqJ9uu5Ef3Bo6QaRiGcGp (Opus) at about $72 of its own usage and 440k context, from 07:43 UTC.
 Lane = Gallica digitised manuscripts; the only lane on gallica.bnf.fr and archivesetmanuscrits.bnf.fr, at most two fetching workers at a time.
