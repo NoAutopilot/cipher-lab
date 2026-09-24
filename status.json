@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 13:07 UTC",
+ "updated": "24 Sep 2026 13:24 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -945,6 +945,19 @@
   }
  ],
  "results": [
+  {
+   "date": "24 Sept 2026",
+   "kind": "solve",
+   "title": "August of Saxony, cipher enclosure of 1561-64 (WVO 53, Nassau papers): read cryptanalytically, no key or sibling decipherment",
+   "grade": "N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)', two audits); S 238, M 126 of 364 tokens",
+   "line": "The first solver reading to pass a novelty audit: tools/homophonic_anneal.py read the enclosure with a synthetic control of the same design at 99.3 percent; a verifier, an adversarial second audit and an N4 decision (10:56 UTC) found no prior decipherment or printed plaintext. Its sibling 57 and letter 126 were read by alignment and are N4 as well.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64",
+   "phrases": [
+    "WVO 53",
+    "August van Saksen",
+    "Nassau-oranische Korrespondenzen"
+   ]
+  },
   {
    "date": "24 Sept 2026",
    "kind": "solve",
