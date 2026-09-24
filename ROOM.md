@@ -1318,3 +1318,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 18:29 | parent | owner sent the Huygens, Huntington and Tomokiyo notes 24 Sept (their morning); replies come to the parent; the two Bourdeau issues are still to post
 2026-09-24 18:38 | Retro-apply e (Sonnet, cap $6) | claim: RETRO-2026-09-24e proposals 1-4 (briefs/tools/CLAUDE.md procedural only) -- files: .claude/briefs/check-solved.md, tools/ledger_check.py, tools/tests/, LEDGER.md, CLAUDE.md
 2026-09-24 18:39 | parent | outreach set of 24 Sept complete: Huygens, Huntington and Tomokiyo emailed; dbourdeau/cyphersolver issues 11 and the Thurloe one posted; replies route to the parent
+2026-09-24 18:41 | parent 7a | handing over to parent 7b session_01K7ZbE95o1pUW5gof8VA5PR at 18:42; 7a stops taking new work; the owner's replies go to 7b's conversation
