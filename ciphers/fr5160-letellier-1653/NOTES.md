@@ -1276,3 +1276,62 @@ never recovered and are left unfetched) + 3 native full-res fetches for canvas 1
 6 Sonnet subagents total (4 for the canvas-walk classification batches, at most 4 concurrent; 2 for the blind
 passA/passB_f11, run after the walk batches finished). No logins, no credentials, no novelty wording. Well
 under the $8 cap.
+
+## 1653 band: constrained solve (24 Sept 2026)
+
+LANE G2 worker G (Opus, cap $10). Disk only, no network, no subagent. Brief step 1 (control first) failed its bar, so,
+as the brief says, **the real run on f1 + f9 was not made**, and no key_1653.tsv or decode.json was written (there is
+no reading to regenerate).
+
+**Inputs** (`solve_inputs.py`, `--check` exits 1 if stale). `real_f1.txt`, `real_f9.txt` and `real_f1f9.txt` hold
+ciphertext_f1/f9 in the annealer's format, with clear runs in braces and ~121 dropped: 752 sign tokens, 112 types. The
+control plaintext `control_plain.txt` (2,345 letters) is the f.87 decipherment (Brienne, 21 Nov 1659), then the
+clair1067 1646 reading (Brienne). A held-out Marguerite de Valois letter of 12 March 1581, from the fr16 corpus, fills
+the rest, because the two repo letters alone ran out at 676 tokens. The French 5-gram model uses tools/data/fr16
+(4.43M letters) with every paragraph that contains a control sentence removed. It is built into a 20 MB npz, which is
+not committed; `FR_MODEL_DIR=<dir> python3 solve_inputs.py` rebuilds it.
+
+**Tool change.** `tools/nomenclator_anneal.py` gained three things. `--words` takes a French word list in place of the
+Italian default. `--extra-syl` accepts syllable values of any length (ques, estr, ment). `--p-syl` sets the share of
+moves that propose a syllable. synth now matches syllables of up to 4 letters, longest first. With the defaults,
+behaviour is unchanged.
+
+**Control** (`control_1653_design.json`, `control_1653.txt`, `.truth.json`, seed 1653). The design follows key_1659:
+21 letter signs, 96 syllable signs (key_1659's own values plus common French pairs and trigraphs, including ques and
+estr), 16 word signs and 2 nulls. It is enciphered on the real letters' run pattern (`synth --pattern`), so cipher
+runs and clear frames sit where they do on f1 and f9. That gives 752 tokens and 114 types. The top-8 token shares are
+7.3 6.0 4.5 3.5 3.3 3.3 3.3 2.9 %, against the real 8.1 6.1 4.9 4.8 4.0 4.0 3.5 3.5 %, with 27 singletons against 36.
+The solver uses the same settings the real run would have used: `--context clear` (clear phrases as frames), `--syl cv`
+plus the design syllables (`control_1653_syl.txt`), a French word list, caps of 100 syllables, 16 words, 3 nulls and
+4 homophones, and the true signs for de, ques, le and se fixed. That seeds the same four values that the real run would
+seed from key_1659.
+
+| run | schedule | restarts | best score | token accuracy (best, spread) | letter accuracy (best run) |
+|---|---|---|---|---|---|
+| t3 | 4M iterations, tool-default move mix | 4 | -3058.6 | 12.5% (12.0-12.5) | 13.8% |
+| t4 | 2M, p-syl 0.45 | 4 | -3033.8 | 18.8% (10.9-23.0) | 18.9% |
+| t5 | 10M, T0 2, T1 0.02, p-syl 0.45 | 4 | -3013.0 | **25.7%** (10.9-25.7) | 21.0% |
+| true key | same scoring | - | **-2309.7** | 100% | 100% |
+
+Per-restart rows are in `control_1653_runs.tsv`, and the best t5 key and reading are in `control_1653_best.json`.
+**The control reads at most 25.7% of tokens, far under the brief's ~60% bar.** The best of 12 restarts reads no French
+beyond scattered syllables. The true key scores about 700 nats better than anything the annealer reaches. So at 752
+tokens the language model can pick out the right key, but this search cannot find it: the failure is in the search,
+not the scoring. Raising the syllable move share and running 2.5 times longer lifted token accuracy from 12% to 26%.
+That is still nowhere near a reading.
+
+**Result.** The 1653 letters (f1 + f9, 752 tokens, 112 types, a key_1659-like syllabic nomenclator) are below what
+tools/nomenclator_anneal.py can do, even seeded with the four key_1659 codes. This is a method-limit negative with its
+matched control (control 25.7% of tokens). It is not evidence about the letters themselves. **Grades: S 0, M 0, H 0,
+C 0.** No token was read in this pass, and the worker A M-list stands as it was. Status stays `open`.
+
+What was found, and where it was not found: no reading of f1 or f9. The control shows that the method fails at this
+size and design. No print or phrase search was needed, because nothing was read.
+
+Suggestions, not attempted (Usage item 7): (1) a solver whose moves act on whole words, such as a word-lattice or
+dictionary-constrained search over the cipher runs between clear frames, since the frames give sentence context on
+both sides; (2) rerun this same control after adding the canvas 11-12 block (about 80 tokens, once reconciled) or the
+canvas 32 leaf, to see whether more text moves the control; (3) find the 1653 key itself, in the Brienne and Servien
+keys of the same office (a recovery route), which is likelier to open these letters than cryptanalysis.
+
+Requests: none. Cost: about $4 of the $10 cap.

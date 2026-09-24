@@ -186,7 +186,7 @@ def lib():
 
 class Problem:
     def __init__(self, texts, model, context="none", syl="vc", words=None, letters=ALPHA, scoring="gen",
-                 p_null=0.03):
+                 p_null=0.03, extra_syl=None):
         self.model = model
         self.scoring = scoring
         self.p_null = p_null
@@ -200,6 +200,7 @@ class Problem:
             syls += [v + c for v in VOWELS for c in CONS]
         if syl in ("cv", "both"):
             syls += [c + v for c in CONS for v in VOWELS]
+        syls += [x for x in (extra_syl or []) if x not in syls]
         for s in syls:
             self._add(s, "s")
         for w in (words if words is not None else DEFAULT_WORDS):
@@ -391,7 +392,8 @@ def anneal(pb, rng, iters, T0, T1, caps, fixed, init=None):
         else:
             s2 = None
             q = rng.random()
-            if q < 0.8:
+            p_syl = caps.get("p_syl", 0.1)
+            if q < 0.9 - p_syl:
                 nv = rng.choice(lvals)
             elif q < 0.9 and pb.byk["s"] and caps["syl"]:
                 nv = rng.choice(pb.byk["s"])
@@ -460,7 +462,7 @@ def _worker(args):
     if opts.get("shuffle") is not None:
         texts = shuffle_texts(texts, opts["shuffle"])
     pb = Problem(texts, model, opts["context"], opts["syl"], opts.get("words"), scoring=opts["scoring"],
-                 p_null=opts["p_null"])
+                 p_null=opts["p_null"], extra_syl=opts.get("extra_syl"))
     fixed = {pb.sidx[k]: pb.vid[v] for k, v in opts["fix"].items() if k in pb.sidx}
     if opts.get("units"):
         pb.set_units(opts["units"], opts["vocab"])
@@ -472,11 +474,11 @@ def _worker(args):
 
 def solve(files, model_path, mapfile=None, context="none", restarts=8, iters=100000, T0=3.0, T1=0.05,
           caps=None, fix=None, syl="vc", words=None, dots=False, shuffle=None, seed=0, procs=4,
-          scoring="gen", p_null=0.03, units=None, vocab=None):
+          scoring="gen", p_null=0.03, units=None, vocab=None, extra_syl=None):
     caps = caps or dict(syl=6, word=4, null=2, homo=4)
     opts = dict(context=context, iters=iters, T0=T0, T1=T1, caps=caps, fix=fix or {}, syl=syl, words=words,
                 dots=dots, shuffle=shuffle, scoring=scoring, p_null=p_null,
-                units=units, vocab=vocab)
+                units=units, vocab=vocab, extra_syl=extra_syl)
     jobs = [(files, mapfile, model_path, opts, seed * 1000 + r) for r in range(restarts)]
     if procs > 1:
         import multiprocessing as mp
@@ -488,7 +490,7 @@ def solve(files, model_path, mapfile=None, context="none", restarts=8, iters=100
     texts = load_texts(files, mapfile, dots)
     if shuffle is not None:
         texts = shuffle_texts(texts, shuffle)
-    pb = Problem(texts, model, context, syl, words, scoring=scoring, p_null=p_null)
+    pb = Problem(texts, model, context, syl, words, scoring=scoring, p_null=p_null, extra_syl=extra_syl)
     if units:
         pb.set_units(units, vocab)
     runs = []
@@ -565,10 +567,12 @@ def encipher(plain, key, rng, ntok=None):
         else:
             i = 0
             while i < len(w):
-                two = w[i:i + 2]
-                if len(two) == 2 and two in table and rng.random() < key["syl_rate"]:
-                    out.append((pick(two), two))
-                    i += 2
+                for n in (4, 3, 2):
+                    two = w[i:i + n]
+                    if len(two) == n and two in table and rng.random() < key["syl_rate"]:
+                        out.append((pick(two), two))
+                        i += n
+                        break
                 else:
                     out.append((pick(w[i]), w[i]))
                     i += 1
@@ -660,6 +664,9 @@ def main():
     s.add_argument("--max-word", type=int, default=4)
     s.add_argument("--max-null", type=int, default=2)
     s.add_argument("--max-homo", type=int, default=4)
+    s.add_argument("--p-syl", type=float, default=0.1,
+                   help="share of annealing moves that propose a syllable value (default 0.1; raise it for "
+                   "syllable-heavy nomenclators)")
     s.add_argument("--syl", default="vc", choices=["vc", "cv", "both", "none"])
     s.add_argument("--dots", action="store_true")
     s.add_argument("--shuffle", type=int)
@@ -670,6 +677,10 @@ def main():
     s.add_argument("--unit", action="append", default=[],
                    help="label sequence, e.g. 'F p B H c', that must decode to 1-2 corpus words")
     s.add_argument("--vocab", help="corpus file with '#' word boundaries (for --unit)")
+    s.add_argument("--words", help="space-separated word values replacing the default (Italian) list, "
+                   "e.g. 'de que le la les et' for French")
+    s.add_argument("--extra-syl", help="space-separated extra syllable values of any length (e.g. 'ques estr "
+                   "pr st'), added to the --syl set")
     s.add_argument("--out")
     y = sp.add_parser("synth")
     y.add_argument("plain")
@@ -692,10 +703,11 @@ def main():
     if a.cmd == "solve":
         fix = dict(f.split("=", 1) for f in a.fix)
         caps = dict(syl=a.max_syl if a.syl != "none" else 0, word=a.max_word, null=a.max_null,
-                    homo=a.max_homo)
+                    homo=a.max_homo, p_syl=a.p_syl)
         r = solve(a.files, a.model, a.map, a.context, a.restarts, a.iters, a.T0, a.T1, caps, fix,
-                  a.syl if a.syl != "none" else "vc", None, a.dots, a.shuffle, a.seed, a.procs,
-                  a.scoring, a.p_null, [u.split() for u in a.unit] or None, a.vocab)
+                  a.syl if a.syl != "none" else "vc", a.words.split() if a.words else None, a.dots, a.shuffle,
+                  a.seed, a.procs, a.scoring, a.p_null, [u.split() for u in a.unit] or None, a.vocab,
+                  a.extra_syl.split() if a.extra_syl else None)
         print(json.dumps(dict(scores=[round(x, 1) for x in r["scores"]], per_token=round(r["per_token"], 3),
                               ntokens=r["ntokens"], nsigns=r["nsigns"]), ensure_ascii=False))
         for name, txt in r["best"]["reading"]:

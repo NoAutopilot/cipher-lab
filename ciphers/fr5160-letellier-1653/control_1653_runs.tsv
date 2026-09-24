@@ -1,0 +1,14 @@
+run	config	restart	score	token_acc	letter_acc	sign_acc
+t3	iters 4M, T0 5, p-syl 0.10 (tool default)	1	-3058.6	0.125	0.138	0.061
+t3	iters 4M, T0 5, p-syl 0.10 (tool default)	2	-3127.6	0.124	0.094	0.070
+t3	iters 4M, T0 5, p-syl 0.10 (tool default)	3	-3135.8	0.122	0.168	0.053
+t3	iters 4M, T0 5, p-syl 0.10 (tool default)	4	-3140.6	0.120	0.147	0.061
+t4	iters 2M, T0 3, p-syl 0.45	1	-3033.8	0.188	0.189	0.061
+t4	iters 2M, T0 3, p-syl 0.45	2	-3036.7	0.221	0.052	0.088
+t4	iters 2M, T0 3, p-syl 0.45	3	-3051.6	0.230	0.164	0.079
+t4	iters 2M, T0 3, p-syl 0.45	4	-3091.7	0.109	0.139	0.044
+t5	iters 10M, T0 2, T1 0.02, p-syl 0.45, seed 7	1	-3013.0	0.257	0.210	0.096
+t5	iters 10M, T0 2, T1 0.02, p-syl 0.45, seed 7	2	-3077.3	0.215	0.164	0.096
+t5	iters 10M, T0 2, T1 0.02, p-syl 0.45, seed 7	3	-3125.9	0.109	0.122	0.044
+t5	iters 10M, T0 2, T1 0.02, p-syl 0.45, seed 7	4	-3165.9	0.109	0.152	0.044
+truth	true key scored by the same Problem	-	-2309.7	1.000	1.000	1.000
