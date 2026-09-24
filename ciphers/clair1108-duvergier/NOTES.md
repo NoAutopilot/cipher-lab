@@ -240,3 +240,56 @@ end, wrong manuscript). No gallica.bnf.fr, no archive.org. Cost well under the $
 
 Not touched: no decoding, no novelty wording, no fetch of BnF Marine B2/B3 finding aids or Gallica/SIV records
 (other lanes' hosts).
+
+## Passes (24 Sept 2026)
+
+Two transcription passes over all 61 cropped cipher lines (f253L L01-L12, f253R L01-L14, f265L L01-L16, f265R
+L01-L19; 2 crops each, s1/s2 overlapping horizontal halves), both disk-only, both continuing/repeating the
+prior sweep's crop set (see "Du Vergier leaves, extent and gloss check" above) with no new fetches.
+
+**passA.tsv** (1210 token rows + header). A prior worker (interrupted by the rate limit at 05:40) had
+transcribed f253L L02-L08 before this session; a Sonnet subagent completed the remainder this session
+(f253L L01/L09-L12, all of f253R, f265L, f265R), continuing the same schema and note vocabulary
+(`leaf\tline\tpos\ttoken\tconf\tnote`; conf H/M/L; note values like "cipher", "clear, main row", "clear,
+caption above row", "cipher, digit ambiguous X/Y"). All 61 leaf/line pairs present, 6 fields per row (checked
+with awk). Notable additions to the convention, flagged by the completing agent: (1) several rows tagged
+"bottom/top edge cut, reconstructed via L0X bleed" where the automatic line-splitting crop cut a row's text at
+a boundary and content from the neighbouring line's own crop was used to complete it — not covered by the
+original s1/s2 (horizontal-overlap) merge instructions, worth documenting in the crop-cutting tool's own notes
+for the next target; (2) five genuinely blank margin crops (f253L L01, f253R L01, f265L L01/L16, f265R L01) got
+a single `[no legible text]` placeholder row at conf L rather than a forced reading; (3) a handful of
+illegible/cancelled fragments got single low-confidence placeholder rows (`[illegible fragment]`, `[cancelled
+word/phrase]`, `[bleed fragment, unresolved]`); (4) f253R L08's top bleed did not clearly reconcile with f253R
+L07's own bottom row and was left unmerged, flagged for review; (5) a few unusually large cipher values (601,
+700, 1917, 722) outside the ~1-310 range seen elsewhere are flagged as likely misreadings rather than trusted.
+
+**passB.tsv** (794 token rows + header), a fresh Sonnet subagent, genuinely blind: it did not read passA.tsv,
+this NOTES.md, or anything but the crop images themselves, and built its own note/confidence vocabulary
+independently (converging on similar terms — "clear, main row", "clear, caption above/below row", "cipher,
+digit ambiguous X/Y" — without having seen passA's). All 61 leaf/line pairs present. Observations from that
+agent, useful for a future reconciler: adjacent line IDs on a leaf are not always physically adjacent
+manuscript lines (a curated subset, not every consecutive row), so it transcribed each line from its own
+crop pair rather than assuming continuity except where a cross-line sentence join was directly legible (e.g.
+f265L L04->L05->L06). On f265L/f265R specifically it reports two overlapping layers — a bold main-hand
+cipher letter and a fainter second (pencil?) layer, possibly a later paraphrase or archivist gloss — and
+transcribed the bold main-hand text as primary, substituting the faint layer only where it was the sole
+content present (f265R L07/L08/L10/L11). This second-layer observation was not mentioned by passA's completing
+agent and is a candidate for a dedicated look at those specific crops before any reconciliation.
+
+**Token counts and agreement.** passA: 1210 tokens. passB: 794 tokens (passA has roughly 50% more tokens
+overall). Per-line token counts differ substantially in many places (e.g. f253L L02: 36 vs 11; f265L L14: 46
+vs 10), which is a segmentation difference, not necessarily a reading disagreement: passA's completing agent
+read every caption/gloss tier as its own token stream per line (stacking multiple caption rows plus the main
+row into one flat per-position list), while passB's agent more often collapsed a line to its single dominant
+text layer. A same-position, shorter-list-basis comparison (`compare_passes.py`, committed alongside; not a
+reconciler — no merged output is produced) gives **462/788 = 58.6% overall token agreement**, with wide
+per-line spread: several lines at or near 90-100% (f253L L11 92%, f253R L07 96%, f265L L10 100%, f253R L14
+100%) where segmentation happened to line up, and several at or near 0% (f253L L02/L03/L05/L06/L08/L09, f253R
+L04/L11, f265L L01/L13/L14/L16, f265R L01/L04/L11) where it did not — the low-agreement lines are dominated by
+the segmentation mismatch described above rather than by the two passes disagreeing digit-for-digit. Full
+per-line table is `compare_passes.py`'s stdout (rerun to regenerate; not committed as a separate report file).
+
+No reconciliation was attempted (out of scope for this pass): before any reconciliation pass, the aligner
+should expect to normalize segmentation (decide whether caption/gloss tiers count as separate tokens) rather
+than diff the two files positionally as-is. No key work, no decoding, no novelty wording. Disk only, no
+network requests by either subagent.
