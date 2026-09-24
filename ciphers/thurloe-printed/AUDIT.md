@@ -543,7 +543,7 @@ hits), one at a time, at least 3 s apart, key never printed. No other host.
 ## N4 decision, P4, 24 Sept 2026
 
 LANE W worker F (Opus), a fresh verifier session, parent LANE W orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq,
-07:39-07:50 UTC. I did not solve, audit or search P4 before this session, and I did not decode. **Question:** does the
+07:39-07:43 UTC. I did not solve, audit or search P4 before this session, and I did not decode. **Question:** does the
 logged coverage now meet rule 10's N4 ("N3 with the principal editions, catalogues and project pages covered, internal
 or unpublished work not excluded") for P4 (William Stamford, Calais, 13 March 1655 N.S.; Birch 1742 vol. 3 pp.187-189)?
 
