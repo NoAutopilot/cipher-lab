@@ -1,0 +1,496 @@
+line	pos	code	marks	action	conf	note
+1	1	_		plain	H	
+1	2	_		plain	H	
+1	3	_		plain	M	low share but legible word 'ancora'
+1	4	_		plain	H	
+1	5	_		plain	H	
+1	6	S4		confirm	H	
+1	7	dl		confirm	H	
+1	8	o.	1	correct	M	compound box rh~2.18 rw~1.94: reads o.-shaped sign + g tail merged, not plain cursive; classifier called it _; flag split-check vs pass B
+1	9	v	5|1	confirm	H	
+1	10	_		plain	H	
+1	11	y		confirm	M	
+1	12	nt		confirm	M	
+1	13	bh		confirm	H	
+1	14	w	dot	confirm	H	
+1	15	e		confirm	H	
+1	16	eps	5	confirm	H	
+1	17	S7		confirm	H	
+1	18	p		confirm	H	
+1	19	g		confirm	L	ambiguous figure-8-like shape, share 0.43, no clearly better code in atlas
+1	20	v	1|1	confirm	H	
+1	21	m	1	confirm	H	
+1	22	bh		confirm	H	
+1	23	Z		confirm	H	
+2	1	S7	+	confirm	H	
+2	2	g	dot	confirm	H	
+2	3	S4	~	confirm	H	
+2	4	dl		confirm	H	
+2	5	_		plain	M	tall ascender-height word start, plausibly a capital letter in a legible cursive word
+2	6	bh		confirm	M	
+2	7	tee		confirm	L	tiny box (15x25), adjacent to pos8 also tee at low share; possible single-sign/two-box segmentation split, flag for pass B
+2	8	tee		confirm	L	tiny compound box adjacent to pos7 tee; see pos7 note
+2	9	N		confirm	H	
+2	10	S		confirm	H	
+2	11	Lx		confirm	M	M-like cursive shape at moderate share; kept classifier Lx call
+2	12	v		confirm	L	
+2	13	S4		confirm	H	
+2	14	dl		confirm	H	
+2	15	rz		confirm	H	
+2	16	#		confirm	L	
+2	17	w		confirm	H	
+2	18	_		plain	H	
+2	19	rz		confirm	H	
+2	20	Z	~	confirm	H	
+2	21	e		confirm	H	
+2	22	wd		confirm	M	
+2	23	y		confirm	H	
+2	24	e	dot	confirm	H	
+2	25	psi		confirm	H	
+2	26	m	~	confirm	H	
+3	1	L		confirm	L	low share, compound shape with neighbor pos2, possible two-part sign; kept classifier L
+3	2	bh		confirm	M	two-tier compound (mark over base), kept classifier bh; low share
+3	3	phi		confirm	H	
+3	4	y		confirm	H	
+3	5	#		confirm	L	
+3	6	g		confirm	H	
+3	7	]	o	confirm	H	
+3	8	lam		confirm	H	
+3	9	bh		confirm	H	
+3	10	S7	#	confirm	H	
+3	11	_	1	plain	H	
+3	12	S4		confirm	H	
+3	13	_		plain	H	clearly the plain word 'Cosi'/'Così', classifier share was low (0.39), overridden by legible cursive
+3	14	_	dot	plain	H	clearly plain 'uol' (part of a legible word), classifier share was low (0.46), overridden
+3	15	_		plain	H	
+3	16	_		plain	M	
+3	17	_		plain	H	
+3	18	_		plain	H	
+3	19	_		plain	M	
+3	20	_		plain	H	
+3	21	_		plain	H	
+3	22	_		plain	M	
+3	23	_		plain	H	
+3	24	_		plain	M	
+3	25	f		confirm	L	cut off at strip/line-end, uncertain between f and plain letters
+3	26	_		plain	H	
+4	1	_		plain	M	plausible plain letter, low share
+4	2	_		plain	H	
+4	3	S		confirm	H	
+4	4	_		plain	H	
+4	5	_		plain	H	
+4	6	_		plain	L	plausible plain letter (y/g-like), low share
+4	7	_		plain	H	
+4	8	p		confirm	H	
+4	9	_		plain	H	
+4	10	_		plain	M	
+4	11	bh		confirm	H	
+4	12	S4		confirm	H	
+4	13	Lx		confirm	M	
+4	14	+		confirm	M	
+4	15	lam		confirm	H	
+4	16	nt	~	confirm	H	
+4	17	y		confirm	H	
+4	18	g		confirm	H	
+4	19	eps		correct	M	clear epsilon-shaped sign, classifier called it plain at share 1.00 -- overridden by shape match to atlas eps
+4	20	_		correct	M	plain cursive a/u shape (rounded, no zigzag), not Z; classifier share was very low (0.38)
+4	21	rz		confirm	H	
+4	22	lam	#	confirm	H	
+4	23	_		plain	M	
+4	24	_		correct	M	part of plain word 'Bisogna' ('iso' letters), not sign S
+4	25	_		correct	M	part of plain word 'Bisogna' (the 'g'), not Lx
+4	26	_		plain	H	part of plain word 'Bisogna' ('n')
+4	27	_		correct	M	tail/flourish ending 'Bisognar', not Z
+4	28	ch		confirm	L	compound c+tall-loop shape, kept classifier ch at low share (0.26)
+4	29	sq	ot	correct	M	sharp right-angle box shape matches sq atlas better than the rounder ] cluster
+4	30	tee		confirm	M	
+5	1	e	#	confirm	H	
+5	2	wd		confirm	H	
+5	3	y		confirm	H	
+5	4	e	dot|+	confirm	H	
+5	5	psi		confirm	H	
+5	6	m	~	confirm	H	
+5	7	S7		confirm	H	
+5	8	g		confirm	M	
+5	9	S7	#	confirm	H	
+5	10	a		confirm	H	
+5	11	_	+	plain	M	
+5	12	]	o	confirm	H	
+5	13	g		confirm	H	
+5	14	[	~	correct	M	angular bracket shape matches atlas [ better than the sq cluster
+5	15	S7	+	correct	M	clear digit-7 shape with separate stroke, matches S7 not psi
+5	16	S4		confirm	H	
+5	17	_		plain	M	
+5	18	_		plain	H	
+5	19	_		correct	M	plain 'v.' abbreviation stroke, not N
+5	20	_		plain	H	
+5	21	_		plain	H	
+5	22	_		plain	H	
+5	23	g	dot	confirm	H	
+5	24	_		correct	M	plain cursive m/n-like letters, not digit-7 S7
+5	25	_		plain	H	
+5	26	_		plain	H	
+5	27	_		plain	H	
+5	28	_		plain	H	
+5	29	eps		correct	L	epsilon-shaped sign, cut off at strip edge
+6	1	_		plain	H	
+6	2	_		plain	H	
+6	3	_		plain	H	
+6	4	S7	dot	confirm	L	simple diagonal stroke, plausible S7 without crossbar, low share
+6	5	S4		confirm	H	
+6	6	rz		confirm	H	
+6	7	tee		confirm	H	
+6	8	m	1	confirm	H	
+6	9	g		confirm	H	
+6	10	S7	~	confirm	H	
+6	11	lam		confirm	H	
+6	12	e	#	confirm	H	
+6	13	g		confirm	H	
+6	14	lam		confirm	H	
+6	15	rz		confirm	H	
+6	16	_	#	plain	H	
+6	17	m	~	confirm	H	
+6	18	w		confirm	H	
+6	19	L		confirm	H	
+6	20	_		plain	H	
+6	21	bh		confirm	H	
+6	22	phi		confirm	H	
+6	23	]	o	confirm	H	
+6	24	e		confirm	H	
+6	25	lam	dot|dot	confirm	H	
+7	1	e	+	confirm	H	
+7	2	eps	5	confirm	H	
+7	3	S7	#	confirm	H	
+7	4	S7	#	confirm	H	
+7	5	S7	dot|ot	confirm	H	
+7	6	eps		confirm	H	
+7	7	S7	~	confirm	H	
+7	8	lam		confirm	H	
+7	9	a	5|7	confirm	H	
+7	10	]	o	confirm	H	
+7	11	e	dot	confirm	H	
+7	12	eps	1	confirm	H	
+7	13	_	7	plain	H	
+7	14	_		plain	H	
+7	15	_	#	plain	H	
+7	16	lam		confirm	H	
+7	17	S7	1	confirm	H	
+7	18	e		confirm	H	
+7	19	e	dot	confirm	H	
+7	20	#	dot|#	confirm	H	
+7	21	_		plain	H	
+7	22	lam	5	confirm	H	
+7	23	a		confirm	H	
+7	24	S7		confirm	H	
+7	25	]	o	confirm	H	
+7	26	H	1	confirm	H	
+7	27	tee		confirm	H	
+7	28	K	1	confirm	H	
+7	29	m	1|5	confirm	H	
+7	30	Z		confirm	H	
+8	1	lam	5	confirm	H	
+8	2	#	o	confirm	H	
+8	3	wd		confirm	H	
+8	4	bh		confirm	H	
+8	5	y		confirm	H	
+8	6	y		confirm	H	
+8	7	psi		confirm	H	
+8	8	y		confirm	H	
+8	9	Z		confirm	H	
+8	10	g	~	confirm	H	
+8	11	S4		confirm	H	
+8	12	dl		confirm	H	
+8	13	H		confirm	H	
+8	14	H	1|o	confirm	H	
+8	15	_		plain	H	
+8	16	e		confirm	H	
+8	17	a	1	confirm	H	
+8	18	S7		confirm	H	
+8	19	e	+	confirm	H	
+8	20	S4		confirm	H	
+8	21	_		plain	H	
+8	22	S		confirm	H	
+8	23	_		plain	H	
+8	24	H	dot	confirm	H	
+8	25	L		confirm	H	
+8	26	S		confirm	H	
+8	27	_		plain	H	
+8	28	N		confirm	H	
+8	29	_		plain	H	
+9	1	S7		confirm	H	
+9	2	tee		confirm	H	
+9	3	g	dot	confirm	H	
+9	4	nt	dot	confirm	H	
+9	5	_	1|1	plain	H	
+9	6	_		plain	H	
+9	7	_		plain	H	
+9	8	ch		confirm	H	
+9	9	S4		confirm	H	
+9	10	dl		confirm	H	
+9	11	_		plain	H	
+9	12	Lx		confirm	H	
+9	13	g		confirm	H	
+9	14	_		plain	H	
+9	15	S7		confirm	H	
+9	16	lam		confirm	H	
+9	17	S7	~	confirm	H	
+9	18	lam		confirm	H	
+9	19	g	1	confirm	H	
+9	20	_	1	plain	H	
+9	21	e	#	confirm	H	
+9	22	wd		confirm	H	
+9	23	y		confirm	H	
+9	24	_	dot	plain	H	
+9	25	w		confirm	H	
+9	26	#	#	confirm	H	
+9	27	w		confirm	H	
+9	28	_		plain	H	
+9	29	g		confirm	H	
+10	1	y	dot	confirm	H	
+10	2	_		plain	H	
+10	3	g	1	confirm	H	
+10	4	y		confirm	H	
+10	5	_		plain	H	
+10	6	_		plain	H	
+10	7	bh		confirm	H	
+10	8	S7		confirm	H	
+10	9	#		confirm	H	
+10	10	e		confirm	H	
+10	11	wd		confirm	H	
+10	12	bh		confirm	H	
+10	13	y		confirm	H	
+10	14	f		confirm	H	
+10	15	f	5	confirm	H	
+10	16	e		confirm	H	
+10	17	Z		confirm	H	
+10	18	y		confirm	H	
+10	19	_		plain	H	
+10	20	_	dot	plain	H	
+10	21	w		confirm	H	
+10	22	_	dot	plain	H	
+10	23	S7	1	confirm	H	
+11	1	eps	7	confirm	H	
+11	2	S7		confirm	H	
+11	3	]	ot	confirm	H	
+11	4	_		plain	H	
+11	5	_		plain	H	
+11	6	#		confirm	H	
+11	7	H	1|o	confirm	H	
+11	8	S7		confirm	H	
+11	9	w		confirm	H	
+11	10	g		confirm	H	
+11	11	S7		confirm	H	
+11	12	y		confirm	H	
+11	13	g		confirm	H	
+11	14	]	o	confirm	H	
+11	15	bh		confirm	H	
+11	16	_		plain	H	
+11	17	rz		confirm	H	
+11	18	g	1	confirm	H	
+11	19	S7		confirm	H	
+11	20	#		confirm	H	
+11	21	S4		confirm	H	
+11	22	_		plain	H	
+11	23	Lx		confirm	H	
+12	1	phi		confirm	H	
+12	2	_		plain	H	
+12	3	S7		confirm	H	
+12	4	N		confirm	H	
+12	5	_		plain	H	
+12	6	_		plain	H	
+12	7	_		plain	H	
+12	8	_	dot	plain	H	
+12	9	_		plain	H	
+12	10	_		plain	H	
+12	11	N		confirm	H	
+12	12	_		plain	H	
+12	13	S4		confirm	H	
+12	14	y		confirm	H	
+12	15	nt		confirm	H	
+12	16	bh		confirm	H	
+12	17	w		confirm	H	
+12	18	e	dot	confirm	H	
+12	19	phi		confirm	H	
+12	20	dl		confirm	H	
+12	21	_		plain	H	
+12	22	_		plain	H	
+12	23	w		confirm	H	
+12	24	_		plain	H	
+12	25	_		plain	H	
+12	26	_	ot	plain	H	
+13	1	S4		confirm	H	
+13	2	Lx		confirm	H	
+13	3	S7		confirm	H	
+13	4	w		confirm	H	
+13	5	y		confirm	H	
+13	6	_		plain	H	
+13	7	Z		confirm	H	
+13	8	g		confirm	H	
+13	9	H		confirm	H	
+13	10	H	1|o	confirm	H	
+13	11	e		confirm	H	
+13	12	H		confirm	H	
+13	13	S7		confirm	H	
+13	14	#	dot	confirm	H	
+13	15	e	dot	confirm	H	
+13	16	S7		confirm	H	
+13	17	#	dot	confirm	H	
+13	18	]	ot	confirm	H	
+13	19	L		confirm	H	
+13	20	g	1	confirm	H	
+13	21	_		plain	H	
+13	22	S4		confirm	H	
+13	23	dl		confirm	H	
+13	24	Lx		confirm	H	
+14	1	eps	1	confirm	H	
+14	2	_		plain	H	
+14	3	_		plain	H	
+14	4	_		plain	H	
+14	5	_		plain	H	
+14	6	_		plain	H	
+14	7	_		plain	H	
+14	8	_		plain	H	
+14	9	_		plain	H	
+14	10	_		plain	H	
+14	11	S		confirm	H	
+14	12	_	dot	plain	H	
+14	13	f		confirm	H	
+14	14	_		plain	H	
+14	15	_		plain	H	
+14	16	_	dot|dot	plain	H	
+14	17	_		plain	H	
+14	18	nt		confirm	H	
+14	19	N		confirm	H	
+14	20	S		confirm	H	
+14	21	lam		confirm	H	
+14	22	lam	#	confirm	H	
+14	23	p		confirm	H	
+14	24	Lx		confirm	H	
+14	25	_		plain	H	
+15	1	sq	ot	confirm	H	
+15	2	_		plain	H	
+15	3	rz		confirm	H	
+15	4	U		confirm	H	
+15	5	w		confirm	H	
+15	6	_		plain	H	
+15	7	_	5	plain	H	
+15	8	e	dot	confirm	H	
+15	9	e	dot|#	confirm	H	
+15	10	a	~	confirm	H	
+15	11	S7	#	confirm	H	
+15	12	eps	dot	confirm	H	
+15	13	g		confirm	H	
+15	14	nt		confirm	H	
+15	15	]	o	confirm	H	
+15	16	_	1	plain	H	
+15	17	sq	#	confirm	H	
+15	18	_	~	plain	H	
+15	19	S7		confirm	H	
+15	20	+		confirm	H	
+15	21	rz		confirm	H	
+15	22	Z		confirm	H	
+15	23	S7		confirm	H	
+15	24	lam	#	confirm	H	
+16	1	a	5	confirm	H	
+16	2	tee		confirm	H	
+16	3	lam		confirm	H	
+16	4	g	5	confirm	H	
+16	5	a		confirm	H	
+16	6	g	5	confirm	H	
+16	7	phi	1	confirm	H	
+16	8	e		confirm	H	
+16	9	psi		confirm	H	
+16	10	g		confirm	H	
+16	11	H	o|1	confirm	H	
+16	12	]		confirm	H	
+16	13	nt		confirm	H	
+16	14	g		confirm	H	
+16	15	S		confirm	H	
+16	16	rz		confirm	H	
+16	17	g	5	confirm	H	
+16	18	S7	#	confirm	H	
+16	19	a	dot	confirm	H	
+16	20	S		confirm	H	
+16	21	tee		confirm	H	
+16	22	lam	5	confirm	H	
+16	23	o.		confirm	H	
+16	24	y		confirm	H	
+16	25	S7		confirm	H	
+16	26	y		confirm	H	
+16	27	_		plain	H	
+16	28	g		confirm	H	
+16	29	Z		confirm	H	
+16	30	S4		confirm	H	
+16	31	dl		confirm	H	
+16	32	+		confirm	H	
+17	1	S		confirm	H	
+17	2	N	#	confirm	H	
+17	3	_	1|1	plain	H	
+17	4	_		plain	H	
+17	5	g		confirm	H	
+17	6	_		plain	H	
+17	7	S	dot	confirm	H	
+17	8	_		plain	H	
+17	9	y		confirm	H	
+17	10	e		confirm	H	
+17	11	_		plain	H	
+17	12	_		plain	H	
+17	13	ch		confirm	H	
+17	14	_	dot	plain	H	
+17	15	_		plain	H	
+17	16	_	1|1	plain	H	
+17	17	#		confirm	H	
+17	18	m		confirm	H	
+17	19	_		plain	H	
+17	20	_		plain	H	
+17	21	w		confirm	H	
+18	1	y		confirm	H	
+18	2	p		confirm	H	
+18	3	_		plain	H	
+18	4	#		confirm	H	
+18	5	y		confirm	H	
+18	6	S		confirm	H	
+18	7	_		plain	H	
+18	8	L		confirm	H	
+18	9	N		confirm	H	
+18	10	Lx		confirm	H	
+18	11	_		plain	H	
+18	12	_		plain	H	
+18	13	S	7	confirm	H	
+18	14	_	~	plain	H	
+18	15	H		confirm	H	
+18	16	_		plain	H	
+18	17	_		plain	H	
+18	18	N		confirm	H	
+18	19	_		plain	H	
+18	20	_		plain	H	
+18	21	S4		confirm	H	
+18	22	dl		confirm	H	
+18	23	H	1|o	confirm	H	
+18	24	]	o	confirm	H	
+18	25	_		plain	H	
+19	1	eps	7	confirm	H	
+19	2	Z		confirm	H	
+19	3	psi		confirm	H	
+19	4	eps	5	confirm	H	
+19	5	Z	ot	confirm	H	
+19	6	e	dot|+	confirm	H	
+19	7	lam		confirm	H	
+19	8	wd		confirm	H	
+19	9	rz		confirm	H	
+19	10	e	#	confirm	H	
+19	11	g	dot	confirm	H	
+19	12	y		confirm	H	
+19	13	L		confirm	H	
+19	14	bh		confirm	H	
+19	15	eps	1	confirm	H	
+19	16	w		confirm	H	
+19	17	e	dot	confirm	H	
+19	18	Z		confirm	H	
+19	19	]		confirm	H	
+19	20	nt		confirm	H	
+19	21	S4		confirm	H	
+19	22	_		plain	H	
+19	23	eps		confirm	H	
+19	24	+		confirm	H	
+19	25	_		plain	H	
