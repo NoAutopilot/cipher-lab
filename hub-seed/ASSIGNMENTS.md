@@ -63,7 +63,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 39 | 24 Sep | cipher-lab | Danzay f.35: Opus reconciliation of passA/passB against the crops, Tomokiyo's Danzay key applied through decode.py with --check, per-token grades; verifier if it reads | cipher-lab-7a | solver, Opus cap $12 | open |
 | 40 | 24 Sep | cipher-lab | Danzay f.35: VERIFIER (template) on the reading with Tomokiyo's key | cipher-lab-7a | verifier, Opus cap $15 | running, session_012hcNgfNwrTvQfot5kXmUhV |
 | 41 | 24 Sep | cipher-lab | Danzay f.36 continuation: image, crops, two blind passes | cipher-lab-7a | transcription, Sonnet cap $8 | done, archived by LANE G: f.36r has one cipher line (25-26 signs); $7.64 |
-| 42 | 24 Sep | cipher-lab | Paleologue: two blind passes on the 290 untranscribed signs; then a joint-segmentation solver design | cipher-lab-7a | transcription, Sonnet cap $8 | running, session_01LoaCdPqqeEHixnJGRqvnYi |
+| 42 | 24 Sep | cipher-lab | Paleologue: two blind passes on the 290 untranscribed signs; then a joint-segmentation solver design | cipher-lab-7a | transcription, Sonnet cap $8 | interrupted by LANE G at $11.20 (40% over $8 cap): crops + pass B pushed, pass A not; archived |
 | 43 | 24 Sep | cipher-lab | Thurloe P11-13 Montagu 1656: solver with a matched control, Tomokiyo's partial key as crib | cipher-lab-7a | solver, Opus cap $20 | done, 453ae37 (session_01VhjzUfuprDQM9fW8sboHUK): the print carries the decipherment; aligned, H36 C228 I2 M32 U11, control 100% on C; LANE T took over |
 | 44 | 24 Sep | cipher-lab | Thurloe Monck pool (1,610 tokens): solver with a matched control | cipher-lab-7a | solver, Opus cap $20 | done, stopped before cryptanalysis (session_014idLey1ABoyWBvDUeL7aVt): pool is Fauconberg to H. Cromwell 1658 with printed decipherment, found-solved; LANE T took over |
 | 45 | 24 Sep | cipher-lab | Eckert 1864 E4/E5: adversarial second audit | cipher-lab-7a | verifier, Opus cap $12 | running, session_01Ek8FXd88GirKHDpbLbpnn8 |
@@ -93,3 +93,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 69 | 24 Sep | cipher-lab | Check-solved M20 Clairambault 1161, M21 NAF 14913 (Rousseau) | LANE G | check-solved, Sonnet cap $10 | running, session_01A2eTaxkXSpQ9NCH3d58w5b |
 | 70 | 24 Sep | cipher-lab | Danzay f.36 Opus reconciliation + key | LANE G | solver, Opus cap $6 | running, session_01Ld6UioMCUVJm3GpyeNyaCc |
 | 71 | 24 Sep | cipher-lab | Gramont f.30 unkeyed signs, context solver with matched control | LANE G | solver, Opus cap $12 | running, session_01Di1aC6jZtnNT7fdqcpG1aW |
+| 72 | 24 Sep | cipher-lab | Paleologue blind pass A on the extra-region crops (replacement) | LANE G | transcription, Sonnet cap $4 | running, session_011q7kdkaAsAmnTGbGeFJ6F7 |
