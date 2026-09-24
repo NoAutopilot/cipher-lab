@@ -11,3 +11,10 @@ COMMON RULES (LANE R worker; parent LANE R orchestrator session_01SEnQgi5wPVmMAD
 - Cost discipline (07:07 UTC, after R6 ran to $21 on a $14 cap and R7 to $34 on $15): an Opus worker never reads page images to transcribe; Sonnet subagent passes produce TSVs first, and Opus opens an image only for a row in disagreements.tsv or a named pair. Check your cost after every step; at 80 percent of the cap, push and write a progress section; at the cap, stop.
 - Subagent output (08:05 UTC, after R14 and R15 lost every pass to an interrupt): a pass subagent writes its TSV to disk page by page and the worker commits and pushes after each page. Output that lives only in a subagent's reply is lost at the cap.
 - Where the plaintext of a sibling or the same letter sits in the file, do not run two blind passes: an aligner transcribes the cipher against the plaintext on the image (rah-canada-1869, R8, $3.42 for 667 signs).
+- Cap by page count, not by target (RETRO-2026-09-24d: R6 $44, R7 $35, R14 $10.70/$7, R15 $8/$4, J1 $12.6/$9,
+  W1 $15.8/$9 all blew a flat cap that did not scale with pages read). For any brief that reads page images
+  directly (an aligner, a reconciler, or a blind pass over images rather than an existing TSV): cap = $2/page
+  for an Opus reader, $1/page for a Sonnet blind-pass subagent, floor $4, and a brief asking for more than 6
+  pages is split into per-page-range briefs rather than raised to a single large cap. Pass subagents write their
+  TSV page by page as they go (not held to the end), so an interrupt-at-cap keeps whatever pages already landed
+  -- R14 and R15 lost $20 of work this window because their subagents wrote nothing until finished.

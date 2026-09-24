@@ -6,10 +6,17 @@ Usage:
   tools/room.py --start                             worker start: fetch, checkout -B main origin/main, sanity check
   tools/room.py --push [paths...]                   commit the named paths (already staged or listed) and push with the
                                                     same rebase-and-retry loop, keeping both sides of a ROOM.md conflict
+  tools/room.py --digest "YYYY-MM-DD HH:MM"         print only ROOM.md lines at or after SINCE whose signal starts
+                                                    with nomination:, for LANE, flag:, done:, handoff, or retract,
+                                                    or contains allowed_warning, rejected, or a bare N0-N5 class
+                                                    token, plus one summary line "K of N lines matched". Read-only:
+                                                    nothing is dropped from ROOM.md itself, only what is printed.
 
 Why: on 24 Sept 2026 six commits were spent fixing ROOM.md conflict markers and one worker replaced the file with a
 four-line stub from a stale clone. This script appends with >>, never rewrites, resolves a ROOM.md conflict by
 keeping both sides, refuses to push a ROOM.md that shrank, and retries the fetch-rebase-push loop up to five times.
+--digest was added from RETRO-2026-09-24d (subject 3): an orchestrator checking in across several live lanes had no
+way to read ROOM.md short of the full, growing file, unlike a worker's own "last 30 lines" rule.
 """
 import os, re, subprocess, sys, time
 
@@ -94,6 +101,47 @@ def push(message, paths):
         time.sleep(3 + 2 * i)
     print("push failed five times"); return 6
 
+def _digest_matches(rest):
+    """Whether a ROOM.md line's signal text (everything after 'TIMESTAMP | actor | ') belongs in a digest."""
+    prefixes = ("nomination:", "for LANE", "flag:", "done:", "handoff", "retract")
+    contains = ("allowed_warning", "rejected")
+    if rest.startswith(prefixes):
+        return True
+    if any(c in rest for c in contains):
+        return True
+    if re.search(r"\bN[0-5]\b", rest):
+        return True
+    return False
+
+def filter_lines(lines, since):
+    """Pure filter used by --digest and its test: lines is an iterable of raw ROOM.md lines."""
+    kept = []
+    for line in lines:
+        line = line.rstrip("\n")
+        if not line.strip():
+            continue
+        parts = line.split(" | ", 2)
+        if len(parts) < 3:
+            continue
+        ts, actor, rest = parts
+        if ts < since:
+            continue
+        if _digest_matches(rest):
+            kept.append(line)
+    return kept
+
+def digest(a):
+    if not a:
+        print('--digest requires a SINCE argument, e.g. --digest "2026-09-24 09:00"'); return 1
+    since = a[0]
+    with open(ROOM, encoding="utf-8") as f:
+        all_lines = [l for l in f if l.strip()]
+    kept = filter_lines(all_lines, since)
+    for line in kept:
+        print(line)
+    print(f"{len(kept)} of {len(all_lines)} lines matched")
+    return 0
+
 def main(a):
     if not a or a[0] in ("-h", "--help"):
         print(__doc__); return 0
@@ -102,6 +150,8 @@ def main(a):
     if a[0] == "--push":
         msg = os.environ.get("MSG", "update")
         return push(msg, a[1:])
+    if a[0] == "--digest":
+        return digest(a[1:])
     if len(a) < 2:
         print(__doc__); return 1
     line = f"{utc()} | {a[0]} | {a[1]}".replace("\n", " ")

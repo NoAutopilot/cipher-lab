@@ -3,6 +3,17 @@ Read CLAUDE.md (rules 2, 7, Usage 4 and 6). Target: <folder>. Fetch images once 
 manifest.json. Two independent passes by Sonnet subagents from the images, never from an existing
 transcription; reconcile row by row against the image; a third pass only where the two disagree on more than
 a tenth of rows. Output ciphertext.txt in the repo's group format and a reconciliation log. + common tail.
+Before spawning any pass (RETRO-2026-09-24d, five same-window instances -- Cañada, La Luzerne, Günther von
+Schwarzburg, Du Vergier, Brienne 1646 -- all turned out to carry their own decipherment): on the fetched
+images, look for (a) an interlinear or marginal gloss above or beside the cipher groups -- if every group has
+one, this is a recovery target, not a transcription target, and the brief is wrong; (b) any note that the same
+fonds/collection holds a second copy of this letter (a docketed duplicate, a recipient's or clerk's copy) --
+a collection-wide search by item, not just by this shelfmark; (c) whether the printed edition already cited
+for this target (sources.tsv, NOTES.md) prints the passage in clear, including spaced or italicised type used
+for cipher insertions in some 19th-century editions (Günther von Schwarzburg: Japikse no.316 was fetched and
+misread as "prints only the opening" before a second look found the whole passage in spaced type). Two minutes
+of looking; if any of the three holds, stop and hand the target to check-solved/verifier rather than starting
+passes.
 Commit and push after each pass lands (passA.tsv, then passB.tsv, then any atlas file), not once at the end --
 every F row in RETRO-2026-09-24b's window lost at least one already-finished pass to an interruption at cap
 because nothing was pushed until reconciliation. Use `tools/iiif_lines.py` to cut crops and

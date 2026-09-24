@@ -15,6 +15,10 @@ Outcome codes: **D** delivered on brief and stopped; **D-** delivered but needed
 the brief; **F** failed (usage limit, init error, blocked); **X** over-claimed and was corrected, written on the
 row of the session that over-claimed (a worker, or an `Orchestrator` row), never on the one that caught it;
 **N** clean negative (a search that found nothing, done right).
+Use only these five codes. RETRO-2026-09-24d found 9 of 28 rows in one window using a bare `A`/`B`/`C`
+instead (apparently a leftover from an earlier scout-quality shorthand) -- that number then has to be
+recovered by hand from the Lesson-column prose for every retrospective. If a row does not fit one of the
+five, write the closest one and say why in the Lesson column, rather than inventing a new letter.
 
 Cost is the session metadata's `usage.cost_usd`, read by the orchestrator with get_session when it archives the
 worker; "~" only when that call fails, and then say why. From 24 Sept 2026 rows add four columns after Outcome:
@@ -364,3 +368,4 @@ the end of every wake.
 | 24 Sep | LANE R2 L4: La Garde reconcile and rerun | Sonnet | session_01TpQ8BnH2BrrVb971VSNKwm | 2.39 | D | 3-witness reconciliation (H 178 of 239); rerun both modes: negative again against controls 73.5% and 100%. The negative now rests on a reconciled transcription. |
 | 24 Sep | LANE N orchestrator: nominations, 05:04-09:55 (about 30 workers) | Opus | 167.84 | D | 19 firm stage-2 nominations, 9 copy-free, in under five hours; found the DECODE thumbnails-only limit, the Huygens and WVO accessors, RAH OAI, FBC graphql. Ran to $168 before the parent asked for the handoff: the parent must watch lane cost at every check-in, not lane context alone. session_01W4z8JhXJYHRjorPC1Qkpiy |
 | 24 Sep | LANE W orchestrator: English verification, 05:06-10:09 (about 12 workers) | Opus | 72.43 | D | Thurloe P4 to N4, Blathwayt x3 to N3 two audits, Oxenstierna and La Luzerne caught as N0; wrote its handoff before $70 unprompted. Its owner-facing asks (JSTOR rows, Zooniverse Talk, a Bodleian leaf) go to the card, not a blocked status. session_011UFnhZnyCntZ8Bn9FpKyTq |
+| 24 Sep | Retrospective d: 31 rows since retro-apply c, alignment pipeline, caps, room digest | Sonnet | 1.31 | D | Five proposals; the pre-capture check and page-scaled caps address the two costliest patterns of the morning. session_017kdHb7pkSvUhcP53BoN6Nm |

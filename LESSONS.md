@@ -143,3 +143,16 @@ What now does each job, in tools/, each with --help and an offline test in tools
 - `print_check.py`: always searches beyond the listed sources (IA full text across all items, Google Books,
   OpenAlex), because the listed sources are what the last worker already thought of. A 429 stops that host for the
   run (OpenAlex answered 429 on the first live call on 24 Sept, with the open-index worker running).
+
+## 24 September 2026: verifier throughput, split by language rather than one shared queue
+
+A reading waited under 25 minutes for its verifier twice this window (RETRO-2026-09-24d): LANE R2 worker G1 posted
+the Günther von Schwarzburg reading "for LANE V2" at 09:24 UTC and Verifier V4 finished it at 09:50; LANE G2 worker M
+posted the fr5160 f.67 reading "for LANE V2" at 09:27 and Verifier V5 finished it at 09:49. What made this work: LANE
+V/V2 owned the French BnF and Dutch/Huygens targets while LANE W owned the English targets (Blathwayt, Thurloe,
+Eckert), so a reading landed directly in the queue of the verifier lane already primed for its source families
+(Delpher/DBNL/Huygens for V2; HathiTrust/Google Books/HTRC for W) instead of competing in one shared backlog against
+readings needing unrelated sources. Both lanes also kept an idle Opus verifier standing rather than spinning one up
+per reading, so claim latency was dispatch time, not spin-up time. Worth keeping as the default shape when a third
+language group (e.g. German, for the Saxony/Schwarzburg run) grows large enough to compete for the same two
+verifiers.
