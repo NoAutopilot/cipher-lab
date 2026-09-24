@@ -7,3 +7,4 @@ files its answer as `chatgpt-<date>.md` in this folder on a branch `second-opini
 request titled `[<label>] second opinion: ...`, never a commit to main. The orchestrator posts "for LANE V:
 <folder> second opinion <label> PR #n" in ROOM.md; the verifier reads it as leads, checks every citation, and
 merges or closes the PR after logging unconfirmed citations in AUDIT.md.
+The prompt is answered automatically by the owner's scheduled ChatGPT task (tools/second_opinion_runner_prompt.md), which takes rows from SECOND-OPINIONS-QUEUE.tsv.
