@@ -1,19 +1,10 @@
 {
-  "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo",
-  "note": "One page rendered this pass to confirm ciphertext presence (brief item 3). Full PDF is 3 pages; not all rendered.",
+  "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo, plus the Huygens retroboeken viewer for the Japikse edition (resources.huygens.knaw.nl/retroboeken/willem_den_eerste/)",
+  "note": "LANE R2 worker C1, 24 Sept 2026: 8246 (target, all 3 pages) and 5109 (sibling, all 9 pages) fetched in full, plus Japikse edition pages 229-234 via the retroboeken viewer's pages.json route. MAJOR FINDING (see NOTES.md): 5109's own PDF already bundles the Japikse printed pages 231-233 as pages 7-9 -- the retroboeken fetch below duplicates what was already on disk in 5109_p7/p8/p9, done in that order because the retroboeken route was tried first per the brief's instruction before 5109's own PDF had been opened past its cipher page.",
+  "retroboeken_route": "WVO record HTML for a solved sibling links directly to the retroboeken viewer with a page number (e.g. 5109's page linked '#page=261...' -- an internal viewer index, not the printed page number). The viewer is a Dojo single-page app with no static image URL in the HTML; its book_data.js gives base_url and accessor ids, and the per-page image/html URLs come from '<base_url>/pages.json?source=1', each entry {page_index, source, number, image_url, html_url}. 'number' is the sequential asset number (not always equal to the printed page number, though it happened to run 31 less than page_index in this range); image_url points to a static .jpg under /retroapp/service_willemdeeerste/willemdeeerste/images/, no auth needed.",
   "files": [
-    {
-      "briefnr": 8246,
-      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=8246",
-      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/08000-08999/08246.pdf",
-      "date": "2 May 1561 (\"Datum door bewerker bepaald\", editorially assigned from Japikse's edition; letter itself undated)",
-      "correspondent": "to Günther van Schwarzburg, from Brussel (Bruxelles)",
-      "shelfmark": "Staatsarchiv Rudolstadt, Kanzlei Sondershausen 693 o.s. (na f. 26), per the image's own archive stamp",
-      "archive_bronnen_codes": "JC ; SAR (not resolved to full names by the harvest worker; SAR plausibly Staatsarchiv Rudolstadt per this page's own caption)",
-      "printed_edition": "Japikse, N., ed. Correspondentie van Willem den Eerste, prins van Oranje. Eerste deel (1551-1561) ('s-Gravenhage 1934), letter no. 316, pp.343-344 -- read directly this pass (images/japikse_p343.png, japikse_p344.png); prints only the clear opening and stops before the ciphered majority of the letter, see NOTES.md",
-      "pages_in_pdf": 3,
-      "status": "target, 'Grotendeels in cijfer' per WVO Opmerkingen, no solution word; confirmed by eye this pass -- p.1 opens in clear German prose then switches to a German nomenclator: doubled/tripled letters (aa, cc, dd, hs, xr) mixed with 2-digit numbers, a different and more complex system than the pure-numeral French Nassau-Oranje ciphers",
-      "images": ["08246_p1.png", "japikse_p343.png", "japikse_p344.png"]
-    }
+    {"briefnr": 8246, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=8246", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/08000-08999/08246.pdf", "date": "2 May 1561 (editorial)", "correspondent": "to Gunther van Schwarzburg, from Brussel", "pages_in_pdf": 3, "images": ["08246_p1.jpg", "08246_p2.jpg", "08246_p3.jpg"]},
+    {"briefnr": 5109, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5109", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05109.pdf", "date": "24 March 1561 (per Japikse's own heading; WVO record undated, placed 24 Mar 1561 by the QUEUE.md harvest row)", "correspondent": "to Gunther van Schwarzburg, from Brussel", "pages_in_pdf": 9, "images": ["05109_p1.jpg", "05109_p2.jpg", "05109_p3.jpg", "05109_p4.jpg", "05109_p5.jpg", "05109_p6.jpg", "05109_p7.jpg", "05109_p8.jpg", "05109_p9.jpg"], "note": "pages 1-5 clear German, page 6 is the letter's only cipher passage, pages 7-9 are Japikse pp.231-233 bundled in the same PDF -- the printed plaintext of page 6's cipher, see NOTES.md"},
+    {"source": "japikse retroboeken viewer", "book": "willem_den_eerste", "page_index_range": "261-266 (viewer index)", "printed_pages": "229-234", "url_pattern": "https://resources.huygens.knaw.nl/retroapp/service_willemdeeerste/willemdeeerste/images/WillemDenEerste_{number}.jpg where number = page_index - 31 in this range", "images": ["japikse_p229.jpg", "japikse_p230.jpg", "japikse_p231.jpg", "japikse_p232.jpg", "japikse_p233.jpg", "japikse_p234.jpg"], "note": "p231-233 duplicate 05109_p7-p9; p229-230 and p234 fetched to bound the Gunther letter's start/end. Earlier pass's japikse_p343.png/p344.png (letter 316, 8246 itself) unchanged, still present."}
   ]
 }

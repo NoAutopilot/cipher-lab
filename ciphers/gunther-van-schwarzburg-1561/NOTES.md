@@ -111,3 +111,60 @@ similarity is not yet confirmed since 8246 was only viewed, not compared token-b
 **Next step (not this brief's scope):** get Japikse p.261 (5109's solution) and p.374 (8246 itself) read --
 either via a working route into the retroboeken viewer or by locating the Japikse volume itself on Internet
 Archive/HathiTrust/a library scan -- before any solving or promotion.
+
+## C1: capture and inventory (LANE R2, 24 September 2026)
+
+Per `.claude/briefs/runs/2026-09-24-lane-r2-capture-huygens.md`. Fetched 8246 in full (3 pages, was only p1
+before), 5109 in full (9 pages), and Japikse edition pages 229-234 via the retroboeken viewer. `images/manifest.json`
+updated, `images/inventory.tsv` written per page. Capture and inventory only -- no decoding, no alignment, no
+novelty classification.
+
+**Major finding: 5109's cipher is a single page, and its own WVO PDF already contains the printed plaintext.**
+Fetching 5109 (the "de editie met oplossing" sibling) in full shows its cipher is confined to **page 6 only**
+(pages 1-5 and the letter's close are all clear German prose). Reading it against the printed edition (fetched
+independently this pass via the Huygens retroboeken viewer, see route note below, before noticing it was already
+sitting in 5109's own PDF) shows:
+
+- **Page 6's ciphertext** ("d tf hs tr 87 86 88 ii...") uses the same repertoire as target 8246's cipher: doubled
+  letters, 2-3 digit numbers, occasional symbols.
+- **5109 pages 7-9 are a scan of Japikse pp.231-233**, i.e. the printed edition's plaintext is bundled directly
+  into the manuscript's own WVO PDF, immediately after the cipher page -- the same "printed edition scanned into
+  the manuscript file" pattern independently found this pass in `ciphers/jan-van-nassau-1572-75/` (see that
+  folder's NOTES.md 'C1' section) for letters 5218 and 5222.
+- **Japikse p.232 carries an explicit editorial footnote** immediately before the relevant passage (printed there
+  in spaced-out type, the edition's convention for a passage restored from a source other than the plain
+  manuscript text): *"Het nu volgende ontbreekt in de minuut en is dus door den Prins zelf in cijferschrift
+  ingelascht"* -- "the following is missing from the draft/minute and was thus inserted in cipher by the Prince
+  himself." The spaced-out plaintext runs from "Der v(on) Egmont hat mich gefragt, ob Euer Liebe von
+  S(ondershausen) eher nach Lothringen ziehen verden..." through to "...das nichtz gegenwider den König
+  gehandelt werde." on p.233, then reverts to normal type and closes the letter in the clear.
+- This is therefore a **complete, ready-made alignment pair**: `images/05109_p6.jpg` (ciphertext) against
+  `images/05109_p8.jpg`+`05109_p9.jpg` / `japikse_p232.jpg`+`japikse_p233.jpg` (its own printed plaintext,
+  editorially confirmed as the cipher's content) -- unblocked for a future alignment worker. This pass did not
+  attempt the alignment or build a key (out of brief scope).
+- Confirmed the letter's identity by content, independent of WVO's own citation: WVO's Bron field for 5109 gives
+  "Japikse p.261" (an index or different-edition page number not matched by this pass), but the printed heading
+  actually reads **"236. Aan Günther, graaf van Schwarzburg. 24 Maart 1561"** at printed page 230, and footnote 4
+  there reads *"S.A. Sondershausen; de minuut (K.H.A. 2123) is 22 en 23 Maart gedateerd. -- Uit Brussel"* --
+  matching WVO's own Opmerkingen for 5109 ("de minuut is op 22 maart gedateerd") word for word. The "p.261"
+  citation is unresolved (possibly a different Japikse volume/printing, or a typo for "231"); not chased further
+  this pass.
+
+**Retroboeken viewer route (for the record, since a working route was previously unknown -- see route note in
+`images/manifest.json`):** the WVO record HTML for a solved sibling links straight to the viewer with an internal
+page index (`#page=261...`), not the printed page number. The viewer itself is a Dojo single-page app with no
+static image URL in its HTML, but its `book_data.js` names a `pages.json` endpoint; fetching
+`<base_url>/pages.json?source=1` returns a JSON array of `{page_index, source, number, image_url, html_url}` per
+page, and `image_url` is a plain, unauthenticated `.jpg`. This is a faster, cheaper route than the previous
+worker's `browser_fetch.js` + full-text-search approach for any future Japikse page fetch, and should generalise
+to any other Huygens retroboeken-hosted edition (same `book_scripts.js`/`pages.json` pattern expected).
+
+**Design comparison for the alignment step (not attempted here):** 8246's cipher (pp.1-3, dense throughout) and
+5109's single cipher page use the same character repertoire (doubled letters aa/cc/dd/hs/xr, 2-3 digit numbers,
+occasional overline diacritics), consistent with the same nomenclator system two months apart in the same
+correspondence -- exactly the "kind: recovery" classification already in this file's Verdict section, now with a
+concrete plaintext-ciphertext pair on disk to build the key from.
+
+Host: resources.huygens.knaw.nl, ~17 requests this pass (2 PDF fetches + ~1 WVO record HTML + ~1 book_data.js +
+1 pages.json + ~6 Japikse page images + retries, all >=1.5s apart, descriptive UA), shared budget with the other
+two C1 targets.
