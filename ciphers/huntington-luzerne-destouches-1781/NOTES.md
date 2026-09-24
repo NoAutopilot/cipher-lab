@@ -363,3 +363,83 @@ weeks. Consistent with the covering catalogue note; the rendering is too gappy t
 **Suggested follow-ups (not started):** a second filler on the 68 control to test whether the 50 percent is the
 method or this filler; compare the R16 fills with the later pencil glosses on 108(A) itself ('R6 progress'); a
 reader of Arnold's January 1781 raid (dates, Westover, the James) may fix 1157/387/66/366/1145 from facts, not syntax.
+
+## R19: 108(B) duplicate, 24 Sep 2026 08:52 UTC (LANE R worker R19)
+
+Status unchanged: `open` in this file (the orchestrator sets `found-solved` from AUDIT.md's N0, per README's
+"Result label" rule -- not done here). Nothing below classifies novelty (rule 10); AUDIT.md already carries the
+N0 verdict for 108(A) from mssDE 108(B) and the AAE/Idzerda print citation.
+
+**Access.** `images/`: six IIIF page images of mssDE 108(B) (compound object 10580, pointers 10574-10579,
+`p15150coll7`, same 1200px route as 108(A)/68/37/55) fetched and added to `images/manifest.json`. Folder now
+~16 MB, under the 30 MB cap. Requests to hdl.huntington.org this session: 1 reachability probe, 6 page images at
+1200px (committed), 1 `info.json`, 6 full-native-resolution page fetches (kept in this worker's scratchpad, not
+committed) plus 9 small native-resolution region crops used only to resolve individual ambiguous words on page 1
+-- 23 total, all >=1.5 s apart, descriptive UA, well under the brief's 30-request cap.
+
+**Transcription, `pairs_108B.tsv`** (718 rows: page, line, idx, group, gloss, note). Read line by line from the
+image against the cipher groups, per the RAH/R18 method (no blind pass). Page 1 (116 groups) was read carefully
+with several native-resolution zoom crops per ambiguous word; pages 2-6 (602 groups) were read in a single faster
+pass per page against the 1200px/native images already on disk, cross-checked line by line against key.tsv's
+existing values rather than re-verified word by word -- lower individual-word confidence than page 1, many
+low-confidence readings marked with a trailing `?` in the gloss and/or a note, and several genuinely illegible
+positions left as `?`/`_`. This is a single-pass worker transcription, not independently reconciled; a second,
+independent read of pages 2-6 would raise confidence on the low-confidence rows before any of them is treated as
+more than M-grade support.
+
+**Compare, `compare_108B.py` (+ `compare_108B.tsv`, `--check` exits 0):**
+- **(a) Same group sequence.** 690/719 (96.0%) of groups fall in matching runs (`difflib.SequenceMatcher`, robust
+  to a single shift) against 108(A)'s own H-grade `ciphertext.tsv`, after dropping 108(B) p1 L01's one leading
+  group (835, an opening word 108(A) itself doesn't carry -- R1/AUDIT.md already noted this). 108(B) is the same
+  letter enciphered with the same group sequence, i.e. a **duplicate**, not a re-encipherment with a different
+  code -- confirms AUDIT.md's finding by direct comparison rather than the single-line spot check AUDIT.md made.
+  30 non-equal alignment ops remain, each either a genuine copying variant between the clerk's original and the
+  duplicate or a transcription slip by this worker (not distinguished here; one is `1111` in 108(A), already
+  graded M "agree-flagged" there, vs this worker's uncertain `111` read of 108(B) at the same position).
+- **(b) Agreement, before merging 108(B) into key.tsv:** C-grade key values 358/380 (94.2%); R16 context fills
+  (`fills.tsv`) 40/46 (87.0%); the 13 conflict figures in `key_conflicts.tsv` 26/28 (92.9%). All three are high,
+  which is the expected result for a genuine duplicate read independently by the same worker's own eye against
+  the same code -- it is not an independent confirmation of the sibling-built key by a different method, since
+  both readings are this project's own. One concrete fill test asked for by AUDIT.md: figure 655, R16 filled
+  `selon` (M, context), 108(B) glosses it **`suivant`** twice (p1 L03, p2 L06) -- R16's fill was wrong, confirming
+  AUDIT's spot check. 166, which R16 considered and dropped, is confirmed `dernieres` by 108(B).
+- **(c) New figures.** 31 distinct codes that neither the 68/37/55 sources nor `fills.tsv` had keyed at all,
+  legible enough on 108(B) (no trailing `?`) to add: 34 ans, 40 mettre, 66 cinq, 124 gouvernement, 139 e, 151
+  sans, 166 dernieres, 169 dans, 216 me, 357 puis|suis, 462 bi, 479 pouvoit, 521 sous, 527 ainsi, 617 fort, 645
+  ennemi, 697 armes, 707 des, 802 tan, 838 ha, 932 tout, 983 ci, 1123 hors, 1145 lieues, 1153 va, 1158 deffense,
+  1161 nt, 1173 bien, 1185 nul, 1195 ville, 1199 puis. Several form recognisable phrases confirming the plain-text
+  sense already guessed at grade M in 'R16': 1123 hors + 1151 de + 1158 deffense = "entierement hors de deffense"
+  (108(A) p1 L09, previously three U tokens); 838 ha + 462 bi + 802 tan = "habitans" (108(A) p1 L10); 1145 lieues
+  gives "onze lieues au-dessous de Richmond" (108(A) p1 L06, previously guessed "onze [U] au-dessous de Richmond"
+  from context alone).
+
+**Added to `key.tsv` (grade C, source "contemporary interlinear decipherment (mssDE 108(B), Destouches)").**
+`build_pairs.py` now merges these 31 figures from `pairs_108B.tsv` after the 68/37/55 rows and the `fills.tsv`
+rows (same precedent as fills.tsv's own merge: a contemporary decipherment of a duplicate of this very letter is
+known plaintext under rule 4, exactly as 68/37/55 are for their own letters), for codes neither source already
+keys; a trailing `?` gloss, `_`/`?` (struck/illegible) is never merged. `python3 build_pairs.py --check`,
+`python3 fills_r16.py --check` (regenerated: its context strings changed once 108(B)'s new figures resolved
+previously-bracketed U positions) and `python3 ../../tools/decode_key.py . --check` all exit 0.
+
+**New counts, mssDE 108(A), 719 tokens:** before this pass, C 347, M 157, U 215 (per 'R16'). **After: C 410, M
+163, U 146.** (+63 C, +6 M -- two of the new C figures are homophone pairs written `a|b`, which `decode_key.py`
+grades M per the existing rule rather than picking one -- and -69 U.) Sample lines that were previously gappy now
+read continuous French, e.g. 108(A) p1 L09 "[124] de virginie sont ent[1167]ment [1123] de [1158]" -> "gouvernement
+de virginie sont entierement hors de deffense" (all five figures now C or R16-M).
+
+**Consequence for the target's kind (per README "Result label"):** 108(A) is no longer read from an independent
+key built out of sibling letters at the same court (a cryptanalysis-by-alignment result) -- it is now read
+primarily from the contemporary decipherment of its own duplicate in the same collection, at grade C, exactly as
+68/37/55 already were. Per AUDIT.md's N0 and this pass's 96% sequence match, **the kind for this target moves
+from "cryptanalysis" to "found-solved / recovery"**: the reading was on the leaf all along (108(B)), and this
+project's contribution is locating it in the collection (AUDIT.md/LANE W) and transcribing it (this worker), not
+recovering a lost key. The orchestrator sets the card's kind and status.json/STATUS.md; not done here.
+
+**Left for a future pass (not started, out of this worker's brief).** Pages 2-6 of `pairs_108B.tsv` want a second,
+independent read to raise confidence on the many `?`-flagged tokens before they are used for anything beyond M
+support; several figures got inconsistent tentative readings across repeat occurrences in this single pass (1185,
+301, 486, 387, 646/1181 confusion) and are flagged inline in `pairs_108B.tsv`'s note column -- a dedicated
+re-check of just those codes against the image would resolve most of them quickly. Code 1184 (read `mr?` on p6)
+sits suspiciously close to 1188 (key.tsv's C-grade `mr`, but this worker's own p1 L01 reading of 1188 was `prets`
+not `mr` -- flagged there too): worth checking on the image whether the sibling ink sources for 1188 actually
+read 1184, a one-digit transcription slip somewhere in the chain. No subagents used this pass; model Sonnet.

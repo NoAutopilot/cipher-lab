@@ -1,0 +1,719 @@
+page	line	idx	group	key_value	key_grade	is_fill	is_conflict	b_gloss	verdict
+p1	L01	1	835	chez|cher	C		y	cher	agree
+p1	L01	2	436	vous	C			nous	disagree
+p1	L01	3	895					_	n/a
+p1	L01	4	880	pres	C			pres	agree
+p1	L01	5	86	non	C			non	agree
+p1	L01	6	1188	mr	C			prets	disagree
+p1	L01	7	6	que	C			que	agree
+p1	L01	8	947	les	C			les	agree
+p1	L01	9	443	anglais	C			anglais	agree
+p1	L01	10	961	ont	C			ont	agree
+p1	L01	11	744	faites|fait	C		y	fait	agree
+p1	L02	1	878	une	C			une	agree
+p1	L02	2	428	des	C			des	agree
+p1	L02	3	72	cen	M	y		cent	agree
+p1	L02	4	444	te	C			te	agree
+p1	L02	5	1022	en	C			en	agree
+p1	L02	6	677	virginie	C			virginie	agree
+p1	L02	7	266	ou	M	y		ou	agree
+p1	L02	8	1068	ils	C			ils	agree
+p1	L02	9	765					exe?	n/a
+p1	L02	10	931	y	C			y	agree
+p1	L03	1	72	cen	M	y		ent	disagree
+p1	L03	2	932	tout	C			tout	agree
+p1	L03	3	617	fort	C			fort	agree
+p1	L03	4	1151	de	C			de	agree
+p1	L03	5	355	ras	C			ras	agree
+p1	L03	6	64	vo	C			va	disagree
+p1	L03	7	915	ge	M			ge	agree
+p1	L03	8	940	.	C			.	agree
+p1	L03	9	655	selon	M	y		suivant	disagree
+p1	L03	10	947	les	C			les	agree
+p1	L03	11	166	dernieres	C			dernieres	agree
+p1	L04	1	217	nouvelle	C			nouvelles	agree
+p1	L04	2	456	ils	C			ils	agree
+p1	L04	3	961	ont	C			ont	agree
+p1	L04	4	555	re	C			re	agree
+p1	L04	5	789	mon	C			mon	agree
+p1	L04	6	444	te	C			te	agree
+p1	L04	7	890	la	C			la	agree
+p1	L04	8	480	vi|ri	C		y	vi	agree
+p1	L04	9	832	vi	C			vi	agree
+p1	L04	10	991	er|ere	C		y	ere	agree
+p1	L05	1	80	e	C			e	agree
+p1	L05	2	10	de	C			de	agree
+p1	L05	3	1157					ja?	n/a
+p1	L05	4	387					volt?	n/a
+p1	L05	5	96	et	C			et	agree
+p1	L05	6	10	de	C			de	agree
+p1	L05	7	165	ba	M			ba	agree
+p1	L05	8	626	r	C			r	agree
+p1	L05	9	884	que	C			que	agree
+p1	L05	10	125	a	C			a	agree
+p1	L05	11	66	cinq	C			cinq	agree
+p1	L06	1	366					?	n/a
+p1	L06	2	111					onze?	n/a
+p1	L06	3	1145	lieues	C			lieues	agree
+p1	L06	4	301	au	M			au	agree
+p1	L06	5	10	de	C			de	agree
+p1	L06	6	521	sous	C			sous	agree
+p1	L06	7	1086	de	C			de	agree
+p1	L06	8	480	vi|ri	C		y	ri	agree
+p1	L06	9	656	ch	M	y		ch	agree
+p1	L06	10	789	mon	C			mont	agree
+p1	L07	1	976	.	C			.	agree
+p1	L07	2	1032	cette	M	y		cette	agree
+p1	L07	3	1195	ville	C			ville	agree
+p1	L07	4	527	ainsi	C			ainsi	agree
+p1	L07	5	997	que	C			que	agree
+p1	L07	6	4	wilm	M			wilm	agree
+p1	L07	7	4	wilm	M			wilm	agree
+p1	L07	8	1068	ils	C			ils	agree
+p1	L07	9	587	li	C			li	agree
+p1	L07	10	175	ce	M	y		ce	agree
+p1	L07	11	808	s	C			s	agree
+p1	L08	1	101					?	n/a
+p1	L08	2	818	qui	M			qui	agree
+p1	L08	3	961	ont	C			ont	agree
+p1	L08	4	579	etc	M			etc	agree
+p1	L08	5	110					?	n/a
+p1	L08	6	1125	si	C			si	agree
+p1	L08	7	446	ve	C			ve	agree
+p1	L08	8	620	ment	C			ment	agree
+p1	L08	9	381	le	C			le	agree
+p1	L08	10	321					?	n/a
+p1	L08	11	109	du	C			du	agree
+p1	L09	1	124	gouvernement	C			gouvernement	agree
+p1	L09	2	10	de	C			de	agree
+p1	L09	3	677	virginie	C			virginie	agree
+p1	L09	4	628	sont|d	C		y	sont	agree
+p1	L09	5	52	ent	M			enti	agree
+p1	L09	6	1167	iere	M	y		ere	agree
+p1	L09	7	620	ment	C			ment	agree
+p1	L09	8	1123	hors	C			hors	agree
+p1	L09	9	1151	de	C			de	agree
+p1	L09	10	1158	deffense	C			deffense	agree
+p1	L10	1	363	hommes	M	y		et?	disagree
+p1	L10	2	947	les	C			les	agree
+p1	L10	3	838	ha	C			?	n/a
+p1	L10	4	462	bi	C			?	n/a
+p1	L10	5	802	tan	C			?	n/a
+p1	L10	6	909					?	n/a
+p1	L10	7	410					?	n/a
+p1	L10	8	402	avec	M			avec	agree
+p1	L10	9	880	pres	C			pres	agree
+p1	L10	10	1025	ci	M	y		ci	agree
+p1	L10	11	519	pi	M	y		pi	agree
+p1	L11	1	1129	ta	M	y		ta	agree
+p1	L11	2	868	tion	C			tion	agree
+p1	L11	3	599	sur	C			sur	agree
+p1	L11	4	947	les	C			les	agree
+p1	L11	5	375					der?	n/a
+p1	L11	6	480	vi|ri	C		y	ri	agree
+p1	L11	7	991	er|ere	C		y	ere	agree
+p1	L11	8	460	es	C			es	agree
+p1	L11	9	940	.	C			.	agree
+p1	L11	10	1185	nul	C			nul	agree
+p2	L01	1	608	d	C			d	agree
+p2	L01	2	34	ans	C			ans	agree
+p2	L01	3	1153	va	C			va	agree
+p2	L01	4	1074	po	C			po	agree
+p2	L01	5	585	ke	C			ke	agree
+p2	L01	6	913					?	n/a
+p2	L01	7	824	et	C			et	agree
+p2	L01	8	10	de	C			de	agree
+p2	L01	9	165	ba	M			ba	agree
+p2	L01	10	785	l	M	y		l	agree
+p2	L01	11	1193	ti	C			ti	agree
+p2	L02	1	678	mo	C			mo	agree
+p2	L02	2	149	se|re	M			_	n/a
+p2	L02	3	1181	se	C			se	agree
+p2	L02	4	643	croit	C			croient	disagree
+p2	L02	5	52	ent	M			ent	agree
+p2	L02	6	80	e	C			e	agree
+p2	L02	7	135	gal	M	y		gal	agree
+p2	L02	8	80	e	C			e	agree
+p2	L02	9	620	ment	C			ment	agree
+p2	L02	10	1022	en	C			en	agree
+p2	L02	11	169	dans	C			environ?	disagree
+p2	L03	1	38					ger?	n/a
+p2	L03	2	363	hommes	M	y		?	n/a
+p2	L03	3	386					?	n/a
+p2	L03	4	389					?	n/a
+p2	L03	5	680	moi	C			moi	agree
+p2	L03	6	517	ns	C			?	n/a
+p2	L03	7	628	sont|d	C		y	sont	agree
+p2	L03	8	38					ger?	n/a
+p2	L03	9	202	a	C			a	agree
+p2	L03	10	888	leurs	C			leurs	agree
+p2	L03	11	1158	deffense	C			deffense	agree
+p2	L03	12	6	que	C			que	agree
+p2	L03	13	301	au	M			au	agree
+p2	L04	1	128					moyen?	n/a
+p2	L04	2	1151	de	C			de	agree
+p2	L04	3	177	faire	C			faire	agree
+p2	L04	4	60	pas	C			pas	agree
+p2	L04	5	1070	ser	C			ser	agree
+p2	L04	6	888	leurs	C			leurs	agree
+p2	L04	7	536					marchandises?	n/a
+p2	L04	8	169	dans	C			dans?	agree
+p2	L04	9	434	l	C			l	agree
+p2	L04	10	264					int?	n/a
+p2	L04	11	80	e	C			e	agree
+p2	L05	1	666					ces?	n/a
+p2	L05	2	1123	hors	C			hors	agree
+p2	L05	3	337	dela	C			dela	agree
+p2	L05	4	385	port	M			port	agree
+p2	L05	5	80	e	C			e	agree
+p2	L05	6	10	de	C			de	agree
+p2	L05	7	672					l'ennemi?	n/a
+p2	L05	8	645	ennemi	C			?	n/a
+p2	L05	9	940	.	C			.	agree
+p2	L05	10	1185	nul	C			ceux?	disagree
+p2	L05	11	983	ci	C			ci	agree
+p2	L06	1	628	sont|d	C		y	sont	agree
+p2	L06	2	655	selon	M	y		suivent?	disagree
+p2	L06	3	947	les	C			les	agree
+p2	L06	4	355	ras	C			ras	agree
+p2	L06	5	385	port	M			port	agree
+p2	L06	6	947	les	C			les	agree
+p2	L06	7	830	plus	C			plus	agree
+p2	L06	8	378					general?	n/a
+p2	L06	9	824	et	C			et	agree
+p2	L06	10	655	selon	M	y		suivant	disagree
+p2	L06	11	1185	nul	C			du?	disagree
+p2	L06	12	109	du	C			du	agree
+p2	L07	1	1015					?	n/a
+p2	L07	2	301	au	M			au	agree
+p2	L07	3	141	nom	M	y		nom	agree
+p2	L07	4	648	bre	M	y		bre	agree
+p2	L07	5	10	de	C			de	agree
+p2	L07	6	422					quinze?	n/a
+p2	L07	7	202	a	C			a	agree
+p2	L07	8	70					seize?	n/a
+p2	L07	9	1103	huit	M			huit	agree
+p2	L07	10	1131	cent	C			cent	agree
+p2	L07	11	363	hommes	M	y		hommes	agree
+p2	L08	1	1179	l'on	M			l'on	agree
+p2	L08	2	712	assure|assurer	C		y	assure	agree
+p2	L08	3	30	quels	M			quels	agree
+p2	L08	4	941	ne	C			ne	agree
+p2	L08	5	244					sont?	n/a
+p2	L08	6	367					?	n/a
+p2	L08	7	354					?	n/a
+p2	L08	8	997	que	C			que	agree
+p2	L08	9	145	par	M	y		par	agree
+p2	L08	10	878	une	C			une	agree
+p2	L08	11	8					fregatte?	n/a
+p2	L09	1	199					deux?	n/a
+p2	L09	2	349					?	n/a
+p2	L09	3	991	er|ere	C		y	ere	agree
+p2	L09	4	444	te	C			te	agree
+p2	L09	5	905	ette	C			ette	agree
+p2	L09	6	903	deux	C			deux	agree
+p2	L09	7	165	ba	M			ba	agree
+p2	L09	8	1193	ti	C			ti	agree
+p2	L09	9	620	ment	C			ment	agree
+p2	L09	10	10	de	C			de	agree
+p2	L09	11	123					canon?	n/a
+p2	L10	1	903	deux	C			deux	agree
+p2	L10	2	763	ca	C			ca	agree
+p2	L10	3	86	non	C			non	agree
+p2	L10	4	976	.	C			.	agree
+p2	L10	5	169	dans	C			cette?	disagree
+p2	L10	6	1032	cette	M	y		cette	agree
+p2	L10	7	487					circonstance?	n/a
+p2	L10	8	947	les	C			les	agree
+p2	L10	9	1151	de	C			de	agree
+p2	L10	10	381	le	C			le	agree
+p2	L11	1	377					les?	n/a
+p2	L11	2	428	des	C			des	agree
+p2	L11	3	507	etat	C			etat	agree
+p2	L11	4	1022	en	C			en	agree
+p2	L11	5	64	vo	C			vo	agree
+p2	L11	6	137	fr	M			fr?	agree
+p2	L11	7	442					ou?	n/a
+p2	L11	8	266	ou	M	y		me?	disagree
+p2	L11	9	216	me	C			nos?	disagree
+p2	L11	10	1153	va	C			ces?	disagree
+p2	L11	11	646					sont?	n/a
+p2	L11	12	628	sont|d	C		y	venus?	disagree
+p2	L11	13	153					?	n/a
+p2	L12	1	486	nos	M			nos	agree
+p2	L12	2	331	a	C			a	agree
+p2	L12	3	680	moi	C			moi	agree
+p2	L12	4	1082					pris?	n/a
+p2	L12	5	139	e	C			e	agree
+p2	L12	6	961	ont	C			ont	agree
+p2	L12	7	416	pris	C			pris	agree
+p2	L12	8	80	e	C			e	agree
+p2	L12	9	337	dela	C			dela	agree
+p2	L12	10	962					rivieres?	n/a
+p2	L12	11	890	la	C			la	agree
+p3	L01	1	850	pour	C			pour	agree
+p3	L01	2	912					instante?	n/a
+p3	L01	3	1151	de	C			de	agree
+p3	L01	4	32	vous	C			vous	agree
+p3	L01	5	555	re	C			re	agree
+p3	L01	6	770					precepte?	n/a
+p3	L01	7	933					ce?	n/a
+p3	L01	8	888	leurs	C			leurs	agree
+p3	L01	9	310					situation?	n/a
+p3	L01	10	947	les	C			les	agree
+p3	L01	11	29					interesses?	n/a
+p3	L02	1	90					quil?	n/a
+p3	L02	2	931	y	C			y	agree
+p3	L02	3	202	a	C			a	agree
+p3	L02	4	10	de	C			de	agree
+p3	L02	5	232					les?	n/a
+p3	L02	6	595					?	n/a
+p3	L02	7	888	leurs	C			leurs	agree
+p3	L02	8	351					paix?	n/a
+p3	L02	9	333					oro?	n/a
+p3	L02	10	301	au	M			avec	disagree
+p3	L02	11	10	de	C			de	agree
+p3	L03	1	64	vo	C			va	disagree
+p3	L03	2	808	s	C			s	agree
+p3	L03	3	1129	ta	M	y		ta	agree
+p3	L03	4	868	tion	C			tion	agree
+p3	L03	5	608	d	C			d	agree
+p3	L03	6	378					general?	n/a
+p3	L03	7	1074	po	C			po	agree
+p3	L03	8	500					?	n/a
+p3	L03	9	858					?	n/a
+p3	L03	10	80	e	C			e	agree
+p3	L03	11	608	d	C			d	agree
+p3	L04	1	645	ennemi	C			ennemi?	agree
+p3	L04	2	151	sans	C			sans?	agree
+p3	L04	3	30	quels	M			quil	disagree
+p3	L04	4	1199	puis	C			pris?	disagree
+p3	L04	5	389					cent?	n/a
+p3	L04	6	947	les	C			les	agree
+p3	L04	7	555	re	C			de?	disagree
+p3	L04	8	1074	po	C			po	agree
+p3	L04	9	486	nos	M			nos	agree
+p3	L04	10	766					parceque?	n/a
+p3	L05	1	1125	si	C			si	agree
+p3	L05	2	947	les	C			les	agree
+p3	L05	3	682	mis	C			mis	agree
+p3	L05	4	587	li	C			li	agree
+p3	L05	5	646					ces?	n/a
+p3	L05	6	1181	se	C			se	agree
+p3	L05	7	574					forme?	n/a
+p3	L05	8	816	ver	M	y		ver	agree
+p3	L05	9	434	l	C			l	agree
+p3	L05	10	713	en	C			en	agree
+p3	L05	11	281					droit?	n/a
+p3	L06	1	266	ou	M	y		ou	agree
+p3	L06	2	947	les	C			les	agree
+p3	L06	3	443	anglais	C			anglais	agree
+p3	L06	4	1181	se	C			se	agree
+p3	L06	5	628	sont|d	C		y	sont	agree
+p3	L06	6	425	etablir	C			etablis	disagree
+p3	L06	7	1068	ils	C			ils	agree
+p3	L06	8	1181	se	C			se	agree
+p3	L06	9	626	r	C			r	agree
+p3	L06	10	49	ten	M			ten	agree
+p3	L07	1	1161	nt	C			nt?	agree
+p3	L07	2	824	et	C			et	agree
+p3	L07	3	4	wilm	M			wilm	agree
+p3	L07	4	961	ont	C			ont	agree
+p3	L07	5	169	dans	C			dans	agree
+p3	L07	6	878	une	C			une	agree
+p3	L07	7	750					autre?	n/a
+p3	L07	8	402	avec	M			avec	agree
+p3	L07	9	878	une	C			une	agree
+p3	L07	10	525	ce	C			ce	agree
+p3	L08	1	381	le	C			le	agree
+p3	L08	2	480	vi|ri	C		y	ri	agree
+p3	L08	3	444	te	C			te	agree
+p3	L08	4	824	et	C			et	agree
+p3	L08	5	878	une	C			une	agree
+p3	L08	6	542					facilite?	n/a
+p3	L08	7	997	que	C			que	agree
+p3	L08	8	947	les	C			les	agree
+p3	L08	9	1133	ma	C			ma	agree
+p3	L08	10	626	r	C			r	agree
+p3	L09	1	1010					che?	n/a
+p3	L09	2	947	les	C			les	agree
+p3	L09	3	830	plus	C			plus	agree
+p3	L09	4	880	pres	C			pres	agree
+p3	L09	5	983	ci	C			ci	agree
+p3	L09	6	519	pi	M	y		pi	agree
+p3	L09	7	444	te	C			te	agree
+p3	L09	8	460	es	C			es	agree
+p3	L09	9	911					ne?	n/a
+p3	L09	10	771	peut	C			peut	agree
+p3	L10	1	195	vent	M	y		vent	agree
+p3	L10	2	80	e	C			e	agree
+p3	L10	3	135	gal	M	y		gal	agree
+p3	L10	4	221					er?	n/a
+p3	L10	5	976	.	C			.	agree
+p3	L10	6	646					ce?	n/a
+p3	L10	7	1151	de	C			de	agree
+p3	L10	8	381	le	C			le	agree
+p3	L10	9	858					?	n/a
+p3	L10	10	1181	se	C			se	agree
+p3	L11	1	628	sont|d	C		y	sont	agree
+p3	L11	2	8					?	n/a
+p3	L11	3	309	forces	C			forces	agree
+p3	L11	4	10	de	C			de	agree
+p3	L11	5	316					?	n/a
+p3	L11	6	1113	pro	M	y		pro	agree
+p3	L11	7	4	wilm	M			wilm	agree
+p3	L11	8	816	ver	M	y		ver	agree
+p3	L11	9	6	que	C			que	agree
+p3	L11	10	1147					?	n/a
+p3	L11	11	941	ne	C			ne	agree
+p3	L11	12	1181	se	C			se	agree
+p3	L12	1	414					vos?	n/a
+p3	L12	2	741					?	n/a
+p3	L12	3	542					facilite?	n/a
+p3	L12	4	884	que	C			que	agree
+p3	L12	5	1151	de	C			de	agree
+p3	L12	6	177	faire	C			faire	agree
+p3	L12	7	402	avec	M			avec	agree
+p3	L12	8	913					?	n/a
+p3	L12	9	10	de	C			de	agree
+p3	L12	10	1159	vos	C			vos	agree
+p3	L12	11	267	yache	M			yache	agree
+p4	L01	1	96	et	C			et	agree
+p4	L01	2	220	quelques	C			quelques	agree
+p4	L01	3	341	fre	C			fre	agree
+p4	L01	4	981	ga|le	C		y	ga	agree
+p4	L01	5	878	une	C			une	agree
+p4	L01	6	831	expedi|expedition	C		y	expedi	agree
+p4	L01	7	868	tion	C			tion	agree
+p4	L01	8	521	sous	C			sous	agree
+p4	L01	9	1002	da	C			ba?	disagree
+p4	L01	10	452					ins?	n/a
+p4	L02	1	80	e	C			e	agree
+p4	L02	2	466					dans?	n/a
+p4	L02	3	116	cheza	M			chaque?	disagree
+p4	L02	4	608	d	C			d	agree
+p4	L02	5	931	y	C			y	agree
+p4	L02	6	10	de	C			de	agree
+p4	L02	7	1018					tro?	n/a
+p4	L02	8	185					iv?	n/a
+p4	L02	9	80	e	C			e	agree
+p4	L02	10	256					cre?	n/a
+p4	L02	11	476	s|p	M			p?	agree
+p4	L03	1	415	rendre	M			rend?	agree
+p4	L03	2	725	les	C			les	agree
+p4	L03	3	165	ba	M			ba	agree
+p4	L03	4	1193	ti	C			ti	agree
+p4	L03	5	620	ment	C			ment	agree
+p4	L03	6	599	sur	C			sur	agree
+p4	L03	7	947	les	C			les	agree
+p4	L03	8	594	quelles|quelle	C		y	quels?	disagree
+p4	L03	9	947	les	C			les	agree
+p4	L03	10	443	anglais	C			anglais	agree
+p4	L03	11	628	sont|d	C		y	sont	agree
+p4	L04	1	153					venir?	n/a
+p4	L04	2	486	nos	M			nos	agree
+p4	L04	3	1082					et?	n/a
+p4	L04	4	1151	de	C			de	agree
+p4	L04	5	232					les?	n/a
+p4	L04	6	626	r	C			r	agree
+p4	L04	7	537					?	n/a
+p4	L04	8	617	fort	C			fort	agree
+p4	L04	9	1185	nul	C			ceux?	disagree
+p4	L04	10	983	ci	C			ci	agree
+p4	L05	1	202	a	C			a	agree
+p4	L05	2	890	la	C			la	agree
+p4	L05	3	28					mer?	n/a
+p4	L05	4	983	ci	C			ci	agree
+p4	L05	5	424					des?	n/a
+p4	L05	6	838	ha	C			ha	agree
+p4	L05	7	462	bi	C			bi	agree
+p4	L05	8	802	tan	C			tan	agree
+p4	L05	9	818	qui	M			qui	agree
+p4	L05	10	947	les	C			les	agree
+p4	L06	1	309	forces	C			forces	agree
+p4	L06	2	62					avoient?	n/a
+p4	L06	3	701	ait	C			ait?	agree
+p4	L06	4	1181	se	C			ce?	disagree
+p4	L06	5	620	ment	C			ment	agree
+p4	L06	6	202	a	C			a	agree
+p4	L06	7	40	mettre	C			mettre?	agree
+p4	L06	8	165	ba	M			bas?	agree
+p4	L06	9	947	les	C			les	agree
+p4	L06	10	697	armes	C			armes?	agree
+p4	L06	11	557					si?	n/a
+p4	L07	1	1068	ils	C			ils	agree
+p4	L07	2	430					accordent?	n/a
+p4	L07	3	1181	se	C			se	agree
+p4	L07	4	799					po?	n/a
+p4	L07	5	1088					des?	n/a
+p4	L07	6	10	de	C			de	agree
+p4	L07	7	888	leurs	C			leurs	agree
+p4	L07	8	247	secret	M			?	n/a
+p4	L07	9	940	.	C			.	agree
+p4	L07	10	888	leurs	C			leurs	agree
+p4	L08	1	853					demander?	n/a
+p4	L08	2	961	ont	C			ont	agree
+p4	L08	3	579	etc	M			ete	disagree
+p4	L08	4	1125	si	C			si	agree
+p4	L08	5	880	pres	C			pres	agree
+p4	L08	6	151	sans	C			sans	agree
+p4	L08	7	381	le	C			le	agree
+p4	L08	8	96	et	C			et	agree
+p4	L08	9	1125	si	C			si	agree
+p4	L08	10	252	able	C			pouvoir?	disagree
+p4	L08	11	555	re	C			re	agree
+p4	L09	1	472					vit?	n/a
+p4	L09	2	107					etoit?	n/a
+p4	L09	3	460	es	C			es	agree
+p4	L09	4	6	que	C			que	agree
+p4	L09	5	1004	la	C			se?	disagree
+p4	L09	6	941	ne	C			ne	agree
+p4	L09	7	1199	puis	C			puis?	agree
+p4	L09	8	216	me	C			me?	agree
+p4	L09	9	408	l	M			?	n/a
+p4	L09	10	97					perte?	n/a
+p4	L09	11	626	r	C			r	agree
+p4	L10	1	1151	de	C			de	agree
+p4	L10	2	32	vous	C			vous	agree
+p4	L10	3	947	les	C			les	agree
+p4	L10	4	1165	tra	C			tra?	agree
+p4	L10	5	517	ns	C			ns?	agree
+p4	L10	6	40	mettre	C			mettre	agree
+p4	L10	7	10	de	C			de	agree
+p4	L10	8	217	nouvelle	C			nouvelle	agree
+p4	L10	9	324					?	n/a
+p4	L10	10	187					mais?	n/a
+p4	L10	11	1004	la	C			se	disagree
+p4	L10	12	216	me	C			me	agree
+p4	L11	1	357	puis|suis	C			puis?	agree
+p4	L11	2	1058					abs?	n/a
+p4	L11	3	444	te	C			te	agree
+p4	L11	4	622					me?	n/a
+p4	L11	5	402	avec	M			avec	agree
+p4	L11	6	777					soins?	n/a
+p4	L11	7	1151	de	C			de	agree
+p4	L11	8	888	leurs	C			leurs	agree
+p4	L11	9	740	donne	C			donne?	agree
+p4	L11	10	626	r	C			r	agree
+p4	L12	1	890	la	C			la	agree
+p4	L12	2	680	moi	C			moi	agree
+p4	L12	3	646					n?	n/a
+p4	L12	4	105					etre?	n/a
+p4	L12	5	122					expresse?	n/a
+p4	L12	6	940	.	C			.	agree
+p4	L12	7	1004	la	C			se	disagree
+p4	L12	8	727					leurs?	n/a
+p4	L12	9	692					ait?	n/a
+p4	L12	10	301	au	M			aux	agree
+p4	L12	11	330					contraire?	n/a
+p5	L01	1	744	faites|fait	C		y	fait	agree
+p5	L01	2	713	en	C			en	agree
+p5	L01	3	832	vi	C			vis	agree
+p5	L01	4	935					sa?	n/a
+p5	L01	5	38					ger?	n/a
+p5	L01	6	98	com	C			com?	agree
+p5	L01	7	1173	bien	C			rien?	disagree
+p5	L01	8	1068	ils	C			ils	agree
+p5	L01	9	579	etc	M			ete	disagree
+p5	L01	10	771	peut	C			peu	agree
+p5	L02	1	1113	pro	M	y		pro	agree
+p5	L02	2	165	ba	M			bas	agree
+p5	L02	3	36	ble	C			ble	agree
+p5	L02	4	6	que	C			que	agree
+p5	L02	5	474					mene?	n/a
+p5	L02	6	713	en	C			en	agree
+p5	L02	7	486	nos	M			us?	disagree
+p5	L02	8	490					ant?	n/a
+p5	L02	9	10	de	C			de	agree
+p5	L02	10	890	la	C			la	agree
+p5	L02	11	830	plus	C			plus	agree
+p5	L03	1	683	grande	M	y		grande	agree
+p5	L03	2	1028	ce	C			ce?	agree
+p5	L03	3	381	le	C			le	agree
+p5	L03	4	480	vi|ri	C		y	ri	agree
+p5	L03	5	444	te	C			te	agree
+p5	L03	6	947	les	C			les	agree
+p5	L03	7	267	yache	M			yache	agree
+p5	L03	8	997	que	C			que	agree
+p5	L03	9	32	vous	C			vous	agree
+p5	L03	10	850	pour	C			pour	agree
+p5	L04	1	480	vi|ri	C		y	ri	agree
+p5	L04	2	460	es	C			es	agree
+p5	L04	3	707	des	C			des?	agree
+p5	L04	4	1193	ti	C			ti	agree
+p5	L04	5	941	ne	C			ne	agree
+p5	L04	6	626	r	C			r	agree
+p5	L04	7	202	a	C			a	agree
+p5	L04	8	1032	cette	M	y		cette	agree
+p5	L04	9	831	expedi|expedition	C		y	expedi	agree
+p5	L04	10	868	tion	C			tion	agree
+p5	L05	1	1199	puis	C			puis	agree
+p5	L05	2	389					sent?	n/a
+p5	L05	3	642	ar	C			av?	disagree
+p5	L05	4	480	vi|ri	C		y	ri	agree
+p5	L05	5	816	ver	M	y		ver	agree
+p5	L05	6	169	dans	C			dans	agree
+p5	L05	7	116	cheza	M			?	n/a
+p5	L05	8	518	avant	C			?	n/a
+p5	L05	9	1175	trois	C			trois?	agree
+p5	L05	10	1181	se	C			se	agree
+p5	L05	11	544	main	M	y		main	agree
+p5	L05	12	460	es	C			es	agree
+p5	L06	1	266	ou	M	y		ou	agree
+p5	L06	2	878	une	C			une	agree
+p5	L06	3	680	moi	C			moi	agree
+p5	L06	4	1174					?	n/a
+p5	L06	5	1107					?	n/a
+p5	L06	6	12	lors	C			lors	agree
+p5	L06	7	642	ar	C			av	disagree
+p5	L06	8	767	no	C			ne?	disagree
+p5	L06	9	434	l	C			l	agree
+p5	L06	10	608	d	C			d	agree
+p5	L07	1	818	qui	M			qui	agree
+p5	L07	2	78					dit?	n/a
+p5	L07	3	551					ou?	n/a
+p5	L07	4	227					comma?	n/a
+p5	L07	5	525	ce	C			ce	agree
+p5	L07	6	1151	de	C			de	agree
+p5	L07	7	1129	ta	M	y		ta	agree
+p5	L07	8	656	ch	M	y		ch	agree
+p5	L07	9	733	ement	M	y		ement	agree
+p5	L07	10	301	au	M			au	agree
+p5	L08	1	387					roit?	n/a
+p5	L08	2	744	faites|fait	C		y	fait	agree
+p5	L08	3	628	sont|d	C		y	sont	agree
+p5	L08	4	103	co	C			co?	agree
+p5	L08	5	4	wilm	M			wilm	agree
+p5	L08	6	476	s|p	M			p?	agree
+p5	L08	7	363	hommes	M	y		hommes?	agree
+p5	L08	8	1181	se	C			se	agree
+p5	L08	9	482	e	C			se?	agree
+p5	L08	10	387					cet?	n/a
+p5	L08	11	1103	huit	M			pro?	disagree
+p5	L09	1	165	ba	M			bas	agree
+p5	L09	2	36	ble	C			ble	agree
+p5	L09	3	620	ment	C			ment	agree
+p5	L09	4	626	r	C			r	agree
+p5	L09	5	49	ten	M			ten	agree
+p5	L09	6	324					?	n/a
+p5	L09	7	884	que	C			que	agree
+p5	L09	8	1028	ce	C			ce	agree
+p5	L09	9	1181	se	C			se	agree
+p5	L09	10	387					doit?	n/a
+p5	L10	1	145	par	M	y		par	agree
+p5	L10	2	570					consequent?	n/a
+p5	L10	3	293					expose?	n/a
+p5	L10	4	626	r	C			r	agree
+p5	L10	5	151	sans	C			sans	agree
+p5	L10	6	683	grande	M	y		grand	agree
+p5	L10	7	162					aprouver?	n/a
+p5	L10	8	1151	de	C			de	agree
+p5	L10	9	110					succes?	n/a
+p5	L10	10	878	une	C			une	agree
+p5	L11	1	969					di?	n/a
+p5	L11	2	832	vi	C			vis	agree
+p5	L11	3	975					fions?	n/a
+p5	L11	4	10	de	C			de	agree
+p5	L11	5	990					votre?	n/a
+p5	L11	6	665					entiere?	n/a
+p5	L11	7	202	a	C			a	agree
+p5	L11	8	878	une	C			une	agree
+p5	L11	9	1181	se	C			se	agree
+p5	L11	10	799					fra?	n/a
+p5	L12	1	355	ras	C			vai?	disagree
+p5	L12	2	868	tion	C			tions	agree
+p5	L12	3	1060					qui?	n/a
+p5	L12	4	479	pouvoit	C			pourroit?	disagree
+p5	L12	5	538	avoient	M			avoir?	disagree
+p5	L12	6	707	des	C			des	agree
+p5	L12	7	112					suites?	n/a
+p5	L12	8	1066	fa	C			fa?	agree
+p5	L12	9	1010					ches?	n/a
+p5	L12	10	486	nos	M			us?	disagree
+p6	L01	1	460	es	C			es	agree
+p6	L01	2	1125	si	C			si	agree
+p6	L01	3	1043	comment	C			comment?	agree
+p6	L01	4	551					on?	n/a
+p6	L01	5	941	ne	C			ne	agree
+p6	L01	6	479	pouvoit	C			pouvoit	agree
+p6	L01	7	170					guere?	n/a
+p6	L01	8	1022	en	C			en	agree
+p6	L01	9	946	doute	C			douter?	agree
+p6	L01	10	626	r	C			r	agree
+p6	L02	1	208					elle?	n/a
+p6	L02	2	579	etc	M			etoit	disagree
+p6	L02	3	357	puis|suis	C			puis	agree
+p6	L02	4	832	vi	C			vis	agree
+p6	L02	5	80	e	C			e	agree
+p6	L02	6	145	par	M	y		par	agree
+p6	L02	7	878	une	C			une	agree
+p6	L02	8	141	nom	M	y		nom	agree
+p6	L02	9	648	bre	M	y		bre	agree
+p6	L02	10	872					?	n/a
+p6	L02	11	787	pe	C			pe?	agree
+p6	L03	1	480	vi|ri	C		y	ri	agree
+p6	L03	2	666					eur?	n/a
+p6	L03	3	10	de	C			de	agree
+p6	L03	4	267	yache	M			yache	agree
+p6	L03	5	645	ennemi	C			ennemi	agree
+p6	L03	6	940	.	C			.	agree
+p6	L03	7	527	ainsi	C			ainsi	agree
+p6	L03	8	1184					mr?	n/a
+p6	L03	9	347					mes?	n/a
+p6	L03	10	108					repons?	n/a
+p6	L03	11	949					or?	n/a
+p6	L04	1	888	leurs	C			leurs	agree
+p6	L04	2	232					laisse?	n/a
+p6	L04	3	1161	nt	C			nt	agree
+p6	L04	4	60	pas	C			pas	agree
+p6	L04	5	890	la	C			plus?	disagree
+p6	L04	6	741					plus?	n/a
+p6	L04	7	381	le	C			le	agree
+p6	L04	8	915	ge	M			ge	agree
+p6	L04	9	149	se|re	M			re	agree
+p6	L04	10	132					expresen?	n/a
+p6	L04	11	824	et	C			et	agree
+p6	L05	1	919	je	C			je?	agree
+p6	L05	2	357	puis|suis	C			suis	agree
+p6	L05	3	1173	bien	C			bien	agree
+p6	L05	4	839					persuade?	n/a
+p6	L05	5	6	que	C			que	agree
+p6	L05	6	381	le	C			le	agree
+p6	L05	7	651					parti?	n/a
+p6	L05	8	884	que	C			que	agree
+p6	L05	9	32	vous	C			vous	agree
+p6	L05	10	1076					prendre?	n/a
+p6	L05	11	415	rendre	M			rend?	agree
+p6	L06	1	1181	se	C			se	agree
+p6	L06	2	355	ras	C			ra	agree
+p6	L06	3	381	le	C			le	agree
+p6	L06	4	830	plus	C			plus	agree
+p6	L06	5	1113	pro	M	y		pro	agree
+p6	L06	6	880	pres	C			pre	agree
+p6	L06	7	202	a	C			a	agree
+p6	L06	8	540					considerer?	n/a
+p6	L06	9	993					la?	n/a
+p6	L06	10	890	la	C			la	agree
+p6	L06	11	262					gloire?	n/a
+p6	L06	12	707	des	C			des	agree
+p6	L07	1	697	armes	C			armes	agree
+p6	L07	2	109	du	C			du	agree
+p6	L07	3	463	roy	C			auguste?	disagree
+p6	L07	4	402	avec	M			avec	agree
+p6	L07	5	947	les	C			les	agree
+p6	L07	6	555	re	C			re	agree
+p6	L07	7	1072					gle?	n/a
+p6	L07	8	337	dela	C			dela	agree
+p6	L07	9	987					?	n/a
+p6	L07	10	16					plus?	n/a
+p6	L07	11	686	n	M			de?	disagree
+p6	L08	1	1028	ce	C			ce	agree
+p6	L08	2	441					nul?	n/a
+p6	L08	3	316					unis?	n/a
+p6	L08	4	448					?	n/a
+p6	L08	5	224					mordi?	n/a
+p6	L08	6	320					?	n/a
+p6	L08	7	366					ne?	n/a
+p6	L08	8	1199	puis	C			puis	agree
+p6	L08	9	1012					plus?	n/a
+p6	L08	10	425	etablir	C			vant?	disagree

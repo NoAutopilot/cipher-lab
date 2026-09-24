@@ -119,6 +119,25 @@ def build():
         for r in csv.DictReader(open(P('fills.tsv')), delimiter='\t'):
             if r['code'] not in keyed:
                 key.append([r['code'], r['value'], r['grade'], r['source'], f"x{r['occurrences']} in 108(A); fills.tsv"])
+    # mssDE 108(B) (compound 10580, Destouches's own contemporary decipherment of the duplicate of
+    # 108(A), transcribed by LANE R worker R19, 24 Sept 2026): new figures 108(B)'s glosses give that
+    # neither the 68/37/55 sources nor fills.tsv keyed. Grade C: a contemporary decipherment of a
+    # duplicate of this very letter is known plaintext, exactly as 68/37/55 are (rule 4); low-confidence
+    # single-pass reads (gloss ending '?', struck '_', or plain '?') are left out. See pairs_108B.tsv,
+    # compare_108B.tsv, NOTES.md 'R19: 108(B) duplicate'.
+    if os.path.exists(P('pairs_108B.tsv')):
+        keyed = {r[0] for r in key[1:]}
+        new108b = defaultdict(list)
+        for r in csv.DictReader(open(P('pairs_108B.tsv')), delimiter='\t'):
+            code, gloss = r['group'], r['gloss']
+            if code in keyed or not gloss or gloss in ('_', '?') or gloss.endswith('?'):
+                continue
+            new108b[code].append(gloss)
+        for g in sorted(new108b, key=int):
+            vals = list(OrderedDict.fromkeys(new108b[g]))
+            note = f'ink x{len(new108b[g])}' if len(new108b[g]) > 1 else 'ink x1'
+            key.append([g, '|'.join(vals), 'C',
+                        'contemporary interlinear decipherment (mssDE 108(B), Destouches)', note])
     return pairs, key, conflicts, cross, problems
 
 
