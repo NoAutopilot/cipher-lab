@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026, 02:33 UTC",
+ "updated": "24 Sep 2026, 02:57 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -348,8 +348,8 @@
    "state": "active",
    "holder": "Worker",
    "kind": "recovery",
-   "next": "f.29r: N3 confirmed by the adversarial second audit (Le Grand read page by page). Toward N4: Camusat, HathiTrust, Google Books re-runs, Michon and the fr.3019 companion letter are being checked; a second independent transcription is reconciling the sign identifications, since the reading is partial and single-reader. f.30r-v: crops and blind passes running.",
-   "note": "Safe sentence (AUDIT.md): BnF fr.2980 f.29r (no.21) is a letter of Gabriel de Gramont, bishop of Tarbes, to Jean Breton de Villandry, Rome, 20 May [1530], with a 569-sign cipher passage; Tomokiyo had identified it as readable with the published Gramont 1530 key (Tomokiyo; Lasry 2023); we transcribed the passage from the Gallica image (one reader) and applied that key: the table gives values for 538 signs (H), 26 are uncertain and 5 unkeyed, and several lines read as continuous French; no prior printed plaintext or decipherment of the letter was located in the editions listed in AUDIT.md (N3, two audits, 24 Sept 2026).",
+   "next": "f.29r: N3 after two audits; a blind second reader agreed on 92 percent of signs and its corrections are applied (seven more words read as French; L06, L07, L12 still not). Toward N4 by other routes running. f.30r-v: two passes at 60 percent agreement, Opus reconciler applying the key now.",
+   "note": "Safe sentence (AUDIT.md): BnF fr.2980 f.29r (no.21) is a letter of Gabriel de Gramont, bishop of Tarbes, to Jean Breton de Villandry, Rome, 20 May [1530], with a 569-sign cipher passage; Tomokiyo had identified it as readable with the published Gramont 1530 key (Tomokiyo; Lasry 2023); we transcribed the passage from the Gallica image (one reader) and applied that key: the table gives values for 533 signs (H), 30 are uncertain and 5 unkeyed after a blind second reader's corrections, and several lines read as continuous French; no prior printed plaintext or decipherment of the letter was located in the editions listed in AUDIT.md (N3, two audits, 24 Sept 2026).",
    "wait": {
     "on": "Toward-N4 checks and the second reader",
     "since": "24 Sep 2026, 02:05 UTC",
@@ -367,8 +367,8 @@
    "state": "active",
    "holder": "Worker",
    "kind": "cryptanalysis",
-   "next": "Opus reconciler settling the segmentation of the two-digit cipher from the image; then a solver with an Italian model and a matched control. Class gate at best case N3 (no print located; Ferrari 1999 unread).",
-   "note": "Confirmed 24 Sept 2026: dense two-digit numeral cipher on three passages, Italian, no key in the volume, in no solver's list; the two blind passes agree on digits but not on group boundaries.",
+   "next": "Two blind passes on the 290 signs the first crops missed; then a joint-segmentation solver (the scribe wrote unbroken digit strings with no separators, 11 distinct signs), with an Italian model and a matched control.",
+   "note": "Reconciled 24 Sept 2026: 588 signs, 11 distinct, every boundary uncertain; the cipher is a digit-string system without separators, so segmentation and solving must be done together.",
    "wait": {
     "on": "Reconciliation from the image",
     "since": "24 Sep 2026, 02:27 UTC",
@@ -399,17 +399,17 @@
    "year": "1557",
    "ref": "BnF Français 20140 f.35 (Gallica canvases 69-70)",
    "folder": "ciphers/fr20140-danzay-1557",
-   "stage": 7,
+   "stage": 8,
    "state": "active",
    "holder": "Worker",
    "kind": "recovery",
-   "next": "Opus reconciles the two blind passes against the crops and applies Tomokiyo's published Danzay key through decode.py; then a verifier.",
-   "note": "Tomokiyo reconstructed this key from the three other Danzay letters in the volume, which carry contemporary decipherments; f.35 does not. Check-solved 24 Sept 2026: open, conditional (Fryxell vol. IX unreached, not cleared).",
+   "next": "Verifier (template) on the f.35 reading; f.36 continuation imaged and passed; second reader after that.",
+   "note": "Read 24 Sept 2026 with Tomokiyo's published Danzay key: 638 cipher tokens, H 508 (61 null), M 61, U 69, continuous French on 23 of 37 lines (chancelier, Danoys, marchans de Lion, Augsbourg). No class yet; nothing is called new before AUDIT.md.",
    "wait": {
-    "on": "Reconciliation and key application",
-    "since": "24 Sep 2026, 02:27 UTC",
+    "on": "Verifier",
+    "since": "24 Sep 2026, 02:57 UTC",
     "expected": "Within the hour",
-    "unblock": "A reading; the verifier then decides the class"
+    "unblock": "A class in AUDIT.md"
    }
   },
   {
@@ -417,12 +417,12 @@
    "year": "1653-1660",
    "ref": "Birch, A Collection of the State Papers of John Thurloe, vols 2, 3, 5, 7 (Internet Archive full text)",
    "folder": "ciphers/thurloe-printed",
-   "stage": 3,
+   "stage": 8,
    "state": "active",
    "holder": "Worker",
    "kind": "recovery",
-   "next": "Extract the 23 ciphertexts from the OCR; check the five with Tomokiyo-reconstructed systems against his page; apply his keys where the letter is unread; group the 18 unkeyed by correspondent and system.",
-   "note": "Detector lane result of 23-24 Sept 2026: none of the 23 is one of the four catalogued unsolved Thurloe pieces. Printed ciphertext costs no transcription. Nothing is called read until a key produces English and a verifier has checked the calendars.",
+   "next": "Two solvers with matched controls: Montagu 20 Apr 1656 (319 groups, Tomokiyo's partial key as crib) and the Monck pool (1,610 tokens, no key). The five keyed letters are not read on Tomokiyo's page; his tables cover about a dozen values each, so they are cribs, not readings.",
+   "note": "All 23 letters extracted from the 1742 print on 24 Sept 2026 with OCR doubt marks (ciphers/thurloe-printed/index.tsv). None is a catalogued piece; none is read by Tomokiyo or either solver repository.",
    "wait": {
     "on": "Extraction and key trial",
     "since": "24 Sep 2026, 02:27 UTC",
@@ -615,6 +615,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 02:57",
+   "what": "Danzay to the Cardinal of Lorraine, 27 Jan 1557 (fr. 20140 f.35) reads with Tomokiyo's published key: 638 tokens, 508 at grade H, French on 23 of 37 lines; verifier started, the letter's continuation on f.36 being transcribed. Thurloe: all 23 printed-cipher letters extracted; Tomokiyo's keys are cribs, not readings, so two solvers with matched controls started (Montagu 1656, the Monck pool). Gramont f.29r tightened by the second reader; f.30 in the reconciler. Fourth batch: Eckert E4/E5 adversarial audit, Gallica round 3, detector round 2, the 474 non-DECODE items scored."
+  },
   {
    "when": "24 Sep, 02:27",
    "what": "Second batch reported: Thurloe's 23 printed-cipher letters are all distinct from the catalogued pieces and five use keys Tomokiyo reconstructed (printed ciphertext, no transcription cost); Paleologue and Brienne-Servien confirmed as cipher on the leaf and in no solver's list; Danzay f.35 imaged and passed; Maisse held as key-only. Gramont f.29r: a blind second reader agreed on 92 percent of signs and its 14 image-supported corrections are being applied; the toward-N4 checks narrowed but did not close the four gaps, so N3 stays. Third batch running."
@@ -906,7 +910,7 @@
    "kind": "solve",
    "title": "Gramont to Villandry, Rome, 20 May 1530 (BnF fr. 2980 f.29r)",
    "grade": "N3, two audits; N4 pending",
-   "line": "A 569-sign cipher passage read with the published Gramont 1530 key: 538 signs valued, several lines continuous French, a blind second reader agreeing on 92 percent. No printed plaintext or decipherment located after two logged searches. Partial and still being tightened.",
+   "line": "A 569-sign cipher passage read with the published Gramont 1530 key: 533 signs valued after a blind second reader's corrections (92 percent agreement), several lines continuous French. No printed plaintext or decipherment located after two logged searches. Partial and still being tightened.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont"
   },
   {
