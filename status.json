@@ -1275,6 +1275,14 @@
    "grade": "N0",
    "line": "Deciphered and printed by R. Torpadie, Historisk tidskrift 8 (1888) pp. 376-383 (key table p. 382). Our reading of the letter layer, made before the verifier found Torpadie, is an independent re-decipherment: control 98.0% on letter 604 in the same layout; target graded S 665, M 29, U 77 (NOTES.md, R3 section).",
    "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/oxenstierna-gustav-adolf-1632/AUDIT.md"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "recovery",
+   "title": "Conde de la Cañada's ciphered note in González Bravo's letter to Isabel II, Biarritz 18 Nov 1869 (RAH 9/6958, Leg. XIX nº 117/2-3): key and reading",
+   "grade": "H 665, M 2 of 667 signs; novelty not yet audited",
+   "line": "The note writes each Spanish sentence with its encipherment below it; aligning the two gives the key (simple letter substitution, digits and pen marks, no nulls) and a reading that decode_key.py regenerates. A recovery from the document itself, not cryptanalysis.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/rah-canada-1869"
   }
  ],
  "lanes": [
