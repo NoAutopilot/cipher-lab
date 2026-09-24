@@ -1,4 +1,4 @@
-open
+blocked
 
 # fr.3986 f.198 (Nevers -> Revol, 23 Oct 1593) — Louis de Gonzague, duc de Nevers, to Louis Revol
 
@@ -109,3 +109,7 @@ a cursive whose shapes the two passes cannot even agree on, and many shapes have
 Suggestion (one line, not done): build the copyist glyph atlas from the interlined Instruction of 31 Aug 1593 (fr.3985
 c.264-268, same hand, printed in Memoires de Nevers ii 492-499) as Bourdeau's 'Next pass' says, then re-run both passes
 with atlas tags instead of table shapes; only then settle `passes/disagreements.tsv` on the image.
+
+## Status blocked (24 Sept 2026, 20:52 UTC, LANE R5 orchestrator)
+
+Key no.60 applied mechanically by LANE R5 F1-F3 does not read: blind pass agreement 37-55%, blocked on identifying this copyist's sign forms, not on the key. Next: LANE R5 G builds a no.60 sign atlas from the interlined leaves of the same copyist (fr.3985 f.126-130, fr.3986 f.151/152) and re-runs F1's leaves; if that passes 80%, this letter follows.

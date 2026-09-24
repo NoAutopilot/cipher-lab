@@ -377,3 +377,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T20:38Z	session_017trM1LkowyQ4Ku8hR9wipa	LANE N4 scDIGI (Sonnet, cap $6)	DigitArq ANTT cipher leaves PP-01/02 and beyond	brief lane-n4-scDIGI
 2026-09-24T20:43Z	session_013GkMQP9y84gHGG4pSSwaQj	Survey of the public unsolved list with an approach and spec per item; process memo from the AI-mathematics results (Fable, cap 0)	UNSOLVED-SURVEY.md, specs/, tools/judge_plaintext.py, PROCESS-2026-09-24.md	owner's request 20:40; brief 2026-09-24-survey-top-unsolved.md
 2026-09-24T20:50Z	session_01C42R9V78cat9KR28yCpxxc	rfetch (second run) reddit thread mwhtp0 via REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET (Sonnet, cap )	ciphers/reddit-runaway-2021/	owner set the pair 24 Sept 20:5x; brief 2026-09-24-reddit-fetch-runaway.md
+2026-09-24T20:51Z	session_01Jr8vChfUMF2NEofCVZWVSs	LANE R5 G (Opus, cap 8)	key no.60 atlas from interlined leaves; re-run fr3985	brief 2026-09-24-lane-r5-g-key60-atlas.md
+2026-09-24T20:51Z	session_01DjYdTGsK72PjN4TpqA35fE	LANE R5 H1 (Sonnet, cap 12)	fr2933-salviati-1525 f.55r pass B	brief 2026-09-24-lane-r5-h-salviati-leaf.md
+2026-09-24T20:51Z	session_01QKxu7fUbqYfthJc5gXcZ5m	LANE R5 H2 (Sonnet, cap 12)	fr2933-salviati-1525 f.55v	brief 2026-09-24-lane-r5-h-salviati-leaf.md

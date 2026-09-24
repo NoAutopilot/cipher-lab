@@ -1,4 +1,4 @@
-open
+blocked
 
 **Check-solved, LANE N4 csKSb, 24 Sept 2026:** letter absent from Gomberville's *Mémoires de Nevers* seconde
 partie and from *Mémoires de la Ligue* (Goulart) vols 5-6; see the search log below. Corrects QUEUE.md row
@@ -75,3 +75,7 @@ the Duke of Nevers, addressee Revol, date 12 March 1594, canvas 340. `kind` stay
 - **Suggestion (one line).** After a hand atlas exists, redo this leaf. It is a cheap one: about 110 atoms, and Tomokiyo's partial "de la diuision", "discours susdit" can serve as a crib.
 
 Requests: gallica.bnf.fr 2 for this leaf (thumbnail, native region).
+
+## Status blocked (24 Sept 2026, 20:52 UTC, LANE R5 orchestrator)
+
+Key no.60 applied mechanically by LANE R5 F1-F3 does not read: blind pass agreement 37-55%, blocked on identifying this copyist's sign forms, not on the key. Next: LANE R5 G builds a no.60 sign atlas from the interlined leaves of the same copyist (fr.3985 f.126-130, fr.3986 f.151/152) and re-runs F1's leaves; if that passes 80%, this letter follows.
