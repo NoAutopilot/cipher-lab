@@ -417,17 +417,17 @@
    "year": "1653-1660",
    "ref": "Birch, A Collection of the State Papers of John Thurloe, vols 2, 3, 5, 7 (Internet Archive full text)",
    "folder": "ciphers/thurloe-printed",
-   "stage": 8,
+   "stage": 9,
    "state": "active",
    "holder": "Worker",
    "kind": "contribution",
-   "next": "LANE T: G reads Stamford P4 (the one letter with no printed decipherment) from a key built on his two sibling letters' printed decipherments, with a real-data control; H aligns P2 and P3; V1 classes the printed-decipherment rows; B aligns P9, P10, P14, P15.",
-   "note": "Attribution by the heading above each passage, 24 Sept 2026: 21 of the 23 rows are letters Birch printed WITH the contemporary decipherment (Montagu N0 in AUDIT.md; nine Fauconberg-to-Henry-Cromwell 1658 letters aligned, key of two homophones per letter; Stamford x2, Blake, Butler, Stouppe). Only Stamford's letter of 13 March 1654 (P4, about 387 tokens) has none in print. Solver benchmark on the Fauconberg letters: 80 percent on every seed from 3,024 real groups. Nothing here is called new.",
+   "next": "LANE T: I fetches page images for the OCR-damaged cipher in P4, P14, P9, P10; J print-checks P4 and P14 (the two letters with no decipherment in print). Then an Opus reader on P14 with the Montagu key, the P4 reading updated from the images, and a verifier on both.",
+   "note": "AUDIT.md, 24 Sept 2026: 17 letters N0 (Birch printed their decipherment; Montagu P11-13 and 14 others). Keys aligned from the print: Montagu, Blake, Stamford, Butler, Fauconberg. Two letters have no decipherment in print: Stamford 13 March 1655 (P4, keyed from his sibling letters, H 63 C 322 of 443; control 92-94 percent) and the Protector to Blake and Mountagu 9 June 1656 (P14, Montagu key). No class for those two yet; nothing here is called new.",
    "wait": {
-    "on": "LANE T workers B, G, H, V1",
-    "since": "24 Sep 2026, 03:33 UTC",
+    "on": "LANE T workers I, J",
+    "since": "24 Sep 2026, 04:00 UTC",
     "expected": "Within the hour",
-    "unblock": "P4 reading with control; classes in AUDIT.md"
+    "unblock": "Image transcription of P4/P14 and their print check"
    }
   },
   {
@@ -1183,6 +1183,14 @@
    "grade": "check-solved",
    "line": "U2 Blathwayt has French decipherments beside six sibling cipher items: a recovery by alignment.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/QUEUE.md"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "reading",
+   "title": "Thurloe State Papers (Birch 1742): 14 cipher letters whose decipherment Birch printed, aligned to their cipher groups (Stouppe, Butler, Stamford x2, Blake, Fauconberg x9)",
+   "grade": "N0",
+   "line": "Birch printed these letters in 1742 with their contemporary decipherment; we aligned it to the groups, which gives group-level keys for the Blake, Stamford and Fauconberg ciphers and real-data benchmarks.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md"
   }
  ],
  "lanes": [
