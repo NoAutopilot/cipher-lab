@@ -97,3 +97,85 @@ soft budget noted in ROOM.md.
   still applies once a target is picked up — this harvest only read the database record text).
 - Full shelfmarks (beyond the archive-code abbreviation) were not fetched per-letter; the four rows promoted
   to WV1-WV4 below would need one detail-page fetch each before a capture worker starts, the same as NB1-NB6.
+
+## Print check G3, 24 September 2026 (worker for LANE V2, session 01BmKBy)
+
+Job 1: for each GPA/GPAS-code letter LANE R2 stopped reading on (5194, 5207, 5213, 5221, 5549, 5797, 5799, 5810,
+10260), fetched its WVO detail page once for the Groen volume/page/nr from Brongegevens, found the letter's
+direct DBNL page via that volume's own Inhoudsopgave (table of contents lists every "Lettre <roman>" with a
+direct link -- no page-offset guessing needed), fetched that DBNL page once, and read whether the cipher
+passage is printed in clear, omitted, or left as raw ciphertext. Full table: `groen-check-2026-09-24.tsv`.
+
+**Result: WVO's Brongegevens "(onv)" flag is not a reliable proxy for "cipher passage still in ciphertext".**
+Only 5549 and 10260 carry (onv) in Brongegevens; 5797 does not, yet 5797's own printed page carries an explicit
+Groen editorial note that several passages "n'ont pu etre dechiffres" (could not be deciphered) and the printed
+German text has visible syntactic gaps where a ciphered name/word was dropped rather than resolved. Conversely
+5207, 5213, 5221, 5799, 5810 carry no (onv) and print as complete, ungapped plain French with no cipher-related
+editorial note anywhere on the page (not even an acknowledgement that the source was enciphered) -- consistent
+with a silent full decipherment, but that is an absence-of-a-note inference, not a positive statement from
+Groen, so they are marked `unclear` rather than `yes` in the TSV.
+
+Three distinct patterns found across the nine letters (evidence quotes in the TSV):
+1. **Silently printed in clear, no cipher note at all**: 5207, 5213, 5221, 5799, 5810 (5 of 9). Whole letter,
+   ordinary plain French, footnote only "Autographe" where present.
+2. **Explicitly printed in clear with an editorial note confirming full decipherment**: 5194 -- "d'ordinaire le
+   dechiffrement y est joint" (the decipherment usually accompanies it).
+3. **Genuinely still ciphertext in the print**: 5549 -- Groen's Supplement prints the coded passage as raw
+   numbers (e.g. "73. 50. 28. 9. 335...") interleaved with a handful of plain German connector words, never
+   deciphered. This is a different case from "omitted": the numbers themselves are there, so a worker with the
+   key could in principle check WVO's own transcription against this 1847 print as an independent witness.
+4. **Explicitly printed with gaps, not fully deciphered**: 5797 -- Groen's own headnote says so outright, and
+   the printed German text has short clauses missing their subject where a coded name once stood.
+5. **Ambiguous**: 10260 -- WVO marks (onv) but the Groen VII printing itself reads as continuous plain French
+   with no visible chiffre marker; the letter has four further editions (Lacroix/LMSAC 1860, Muller/MBWI 1888,
+   Gerlo-de Smet/GSME 1990-96) not cross-checked this pass, any of which could hold the (onv) gap Groen's own
+   print does not show.
+
+**For LANE R2/V2:** before reading any cipher passage of 5207/5213/5221/5799/5810 as a genuine unread target,
+open the DBNL page linked in the TSV and grade the reading against that print (silent-decipherment letters are
+candidates for N0/N1, same pattern as 5200/5811/4503, not for a fresh S-grade attempt). 5549 is the one letter
+in this batch where the ciphertext itself, not the plaintext, is what Groen printed -- a possible independent
+transcription check, not a solved reading. 5797's gaps are Groen's own unsolved residue and may be worth a
+fresh attempt with the modern key if one exists. 10260 needs its other four editions checked before any grade.
+
+Job 2: WVO's own `bronnen` page and `literatuurlijst` give no abbreviation legend (confirmed again, same as the
+24 Sept harvest above); the working legend has to be built by matching each briefnr's own Brongegevens list
+(which gives each source's full name) against that briefnr's `archive_bronnen_codes` column in
+`cipher-letters-2026-09-24.tsv`, in row order -- the two lists correspond one-to-one. Resolved this pass, from
+briefnr 57 (DNOK, HHSAWB, KHAG, SAD), 10260 (GPA, GSME, HUA, LMSAC, MBWI, NA, SAG) and 8246 (JC, SAR):
+
+- **DNOK** = Demandt, *Nassau-oranische Korrespondenzen*, printed edition. On briefnr 57 it appears as
+  "Demandt, Nassau-oranische Korrespondenzen I, 78 nr. 113 excerpt" -- an **excerpt**, not the letter in full;
+  whether that excerpt covers the ciphered passage is not established this pass (would need the book open).
+- **HHSAWB** = Hessisches Hauptstaatsarchiv Wiesbaden (archive, not an edition).
+- **SAD** = Sachsisches Hauptstaatsarchiv Dresden (archive).
+- **SAR** = Staatsarchiv Rudolstadt (archive; on briefnr 8246, Kanzlei Sondershausen 693).
+- **JC** = Japikse, ed., *Correspondentie van Willem den Eerste, prins van Oranje*, eerste deel (1551-1561),
+  's-Gravenhage 1934, printed edition -- already flagged as "Japikse" in 8246's own `printed_edition_named`
+  column, not a new find.
+- **GSME** = Gerlo & De Smet, eds., *Marnixi Epistulae. De briefwisseling van Marnix van Sint-Aldegonde*, 3 dln.
+  (Brussel 1990-1996), printed edition. Not previously captured in 10260's `printed_edition_named` column
+  (which only lists Groen/Lacroix) -- worth adding.
+- **HUA** = Het Utrechts Archief (archive; on 10260, Staten van Utrecht 704-1).
+- **LMSAC** = Marnix de Sainte Aldegonde, *Correspondance et melanges*, ed. Alb. Lacroix (Parijs-Brussel-Geneve
+  1860), printed edition -- same edition already flagged as "Lacroix" in 10260's `printed_edition_named` column.
+- **MBWI** = Muller, 'Brieven van prins Willem I en van zijne derde vrouw...', *Bijdragen en Mededeelingen van
+  het Historisch Genootschap* 11 (1888) 509-520, printed edition. Not previously captured in 10260's
+  `printed_edition_named` column -- worth adding.
+- **SAG** = Stadsarchief Gent (archive; on 10260, Reeks 94 bis, 29-1, marked (onv) at that repository).
+- **NA** = Nationaal Archief Den Haag (archive; on 10260, Staten-Generaal 1576-1796, 11099).
+
+flag for LANE V2: **DNOK is a printed edition** (Demandt 1962, *Nassau-oranische Korrespondenzen*), and briefnr
+57 -- one of the two N4 items D2 set this session (57 and 53) -- carries it as an "excerpt" source alongside
+KHAG/SAD/HHSAWB. This was not in D2's AUDIT.md search log. Whether Demandt's excerpt prints 57's cipher
+passage (in clear or not) is unresolved and should be checked, by a verifier with book access, before 57's
+N4 stands; 53, 126, 4610, 4611, 4612, 4616 carry no DNOK or other edition code, only archive-holding codes
+(KHAG/SAD), so this flag is scoped to 57 alone.
+
+Requests this pass: resources.huygens.knaw.nl 12 (9 target-letter detail pages + briefnr 57 + briefnr 8246),
+all >=2s apart; www.dbnl.org 22 (4 volume tables of contents [III, IV, V, VII] + 9 detail-page fetches on a
+wrong URL shape caught immediately by a "Deze pagina bestaat niet" response, not retried in a loop, + 9 correct
+refetches once the URL pattern -- `/tekst/<textid>/<textid>_<page>.php`, directory repeated -- was found from
+the WVO-supplied 5549 dbnl link), all >=2s apart, descriptive User-Agent. No PDFs fetched, no images opened
+(text-only per this job's scope). No novelty classification made -- this is a print-location check, not a
+verifier pass.
