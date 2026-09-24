@@ -1,0 +1,15 @@
+line	col	A	B	flagged	crop
+9	6	_	bar	B	
+9	7	flag	blob	AB	
+9	9	circ	bar	B	
+9	11	inf	hook7	B	
+9	15	circ	hook7	B	
+9	16	inf	b8	AB	
+9	19	bar	_	AB	
+9	20	bar	_	AB	
+9	23	-	ctlig	B	
+9	24	bar	ctlig	B	
+9	25	hash	_	AB	
+9	27	star	-	A	
+9	28	W	loopMN	AB	
+9	29	bar	_	B	

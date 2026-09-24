@@ -1,0 +1,30 @@
+line	position	sign	confidence	alt	why
+9	1	_	H		agree
+9	2	_	H		agree
+9	3	_	M		agree-flagged
+9	4	_	M		agree-flagged
+9	5	_	M		agree-flagged
+9	6	_	M	B:bar	differ
+9	7	flag	M	B:blob	differ
+9	8	_	H		agree
+9	9	circ	M	B:bar	differ
+9	10	_	H		agree
+9	11	inf	M	B:hook7	differ
+9	12	plus	H		agree
+9	13	tcross	H		agree
+9	14	_	M		agree-flagged
+9	15	circ	M	B:hook7	differ
+9	16	inf	M	B:b8	differ
+9	17	_	M		agree-flagged
+9	18	hash	H		agree
+9	19	bar	M	B:_	differ
+9	20	bar	M	B:_	differ
+9	21	bar	M		agree-flagged
+9	22	_	M		agree-flagged
+9	23	ctlig	M	A:-	gap
+9	24	bar	M	B:ctlig	differ
+9	25	hash	M	B:_	differ
+9	26	hook2	M		agree-flagged
+9	27	star	M	B:-	gap
+9	28	W	M	B:loopMN	differ
+9	29	bar	M	B:_	differ

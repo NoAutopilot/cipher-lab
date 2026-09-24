@@ -1,0 +1,29 @@
+line	pos	sign	conf	note
+9	1	_	H	thin vertical dark line at page edge, matches gutter shadow band, no ink shape visible
+9	2	_	H	small box within same gutter shadow band as pos1, no distinct ink
+9	3	_	M	overlaps gutter shadow region, no clear ink shape resolved; possible false positive from shadow texture
+9	4	_	M	overlaps box 3's region within the shadow band, same as pos3, no distinct shape resolved
+9	5	_	M	small faint mark just past the shadow band, could be ink speck or shadow bleed, too faint to call a sign
+9	6	bar?	M	short thin vertical stroke, isolated on page; could be a genuine bar-type sign or a paper crease, not a confident match
+9	7	blob?	M	small rounded mark isolated on the page, faint; tentative match to blob but low confidence at this size
+9	8	_	H	extremely small speck below/right of box 7, looks like noise not a sign
+9	9	bar?	M	thin vertical stroke at left edge of strip, near gutter-adjacent zone; uncertain if sign or artifact
+9	10	_	H	very small speck, noise
+9	11	hook7?	M	rounded loop shape(s) with a small tail/descender; doesn't cleanly match any single atlas row
+9	12	plus	H	clear four-armed cross shape, good match to atlas "plus"
+9	13	tcross	H	horizontal top stroke with vertical/diagonal descender, matches atlas "tcross" (T/7-like) well
+9	14	_	M	very small mark between boxes 13 and 15, likely noise but low confidence
+9	15	hook7?	M	round loop with small tail, cursive "e"/"8"-like; closest to hook7/circ but not a clean match
+9	16	b8?	M	two small adjoining round shapes side by side; tentatively like atlas "b8" doubled but uncertain
+9	17	_	M	very small mark, possibly noise or a fragment of a sign, not confidently a full sign
+9	18	hash	H	clear set of crossing/parallel diagonal strokes, good match to atlas "hash"
+9	19	_	M	small mark at left edge of strip, unclear whether ink or gutter/shadow artifact
+9	20	_	M	small faint mark, insufficient resolution to identify as a sign
+9	21	bar?	M	tall thin vertical stroke; could be a genuine sign or a crease/shadow line
+9	22	_	M	tiny box nested near top of box 21's region, looks like a speck or shadow fragment, not a distinct sign
+9	23	ctlig?	M	complex looped cursive shape, ligature-like; no clean single-glyph atlas match
+9	24	ctlig?	M	box overlaps box 23's region with a similar complex looped shape; possibly duplicate segmentation of the same mark
+9	25	_	M	small mark to the left of box 26, possibly noise or a fragment of the sign in box 26
+9	26	hook2?	M	elongated squiggling cursive stroke; tentative match to atlas "hook2" but not confident
+9	27	loopMN?	M	double-hump loop shape resembling a cursive "W"/"M"; tentative match to atlas "loopMN"
+9	28	_	M	box sits at the far right edge of the strip image, view incomplete/cut off, cannot confidently identify a shape
