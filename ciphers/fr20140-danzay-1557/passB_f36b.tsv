@@ -1,0 +1,56 @@
+line	position	sign	confidence	note
+R2	1	g	M
+R2	2	d	M
+R2	3	m	M
+R2	4	unk1	L
+R2	5	word:luy	M
+R2	6	unk2	M
+R2	7	e	M
+R2	8	e	H
+R2	9	fust	M	clear
+R2	10	r	M
+R2	11	unk3	L
+R2	12	trllo	L	clear
+R2	13	fortte	L	clear
+R2	14	boua	M	clear
+R2	15	fixuy	L	clear
+R3	1	pouoir	L	clear
+R3	2	de	H	clear
+R3	3	faire	M	clear
+R3	4	null	M
+R3	5	unk4	L
+R3	6	m	M
+R3	7	z	M
+R3	8	unk2	M
+R3	9	g	M
+R3	10	r	M
+R3	11	quand	H	clear
+R3	12	word:luy	M
+R3	13	m	M
+R3	14	t	L
+R3	15	unk5	L
+R3	16	unk6	L
+R4	1	m	M
+R4	2	y	M
+R4	3	null	H
+R4	4	null	H
+R4	5	unk8	L
+R4	6	unk8	L
+R4	7	e	M
+R4	8	unk2	M
+R4	9	word:leRoyDeDannemarch	M
+R4	10	unk7	L
+R4	11	word:dict	M
+R4	12	word:luy	M
+R4	13	unk10	L
+R4	14	d	M
+R4	15	unk7	L
+R4	16	e	H
+R4	17	unk7	L
+R4	18	word:luy	M
+R4	19	m	M
+R4	20	fust	M	clear
+R4	21	null	H
+R4	22	unk9	L
+R4	23	unk8	L
+R4	24	null	H
