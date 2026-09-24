@@ -539,3 +539,95 @@ Semantic Scholar, the 1786 Clarendon vol. 3, DECODE, and the Bodleian leaf image
 
 Requests this session: www.googleapis.com 10 (8 base queries + 2 `filter=full` re-runs on the two queries with
 hits), one at a time, at least 3 s apart, key never printed. No other host.
+
+## N4 decision, P4, 24 Sept 2026
+
+LANE W worker F (Opus), a fresh verifier session, parent LANE W orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq,
+07:39-07:50 UTC. I did not solve, audit or search P4 before this session, and I did not decode. **Question:** does the
+logged coverage now meet rule 10's N4 ("N3 with the principal editions, catalogues and project pages covered, internal
+or unpublished work not excluded") for P4 (William Stamford, Calais, 13 March 1655 N.S.; Birch 1742 vol. 3 pp.187-189)?
+
+**Answer: no, not yet. P4 stays N3.** Every principal printed edition, the holding archive's catalogue and the cipher's
+project page are now covered. The 1786 *Clarendon State Papers* vol. 3 is covered by proxy through Macray's *Calendar*
+(s.2 below). One principal family is still open: **DECODE** (de-crypt.org). It is the catalogue of cipher manuscripts
+where someone could have uploaded a Rawlinson leaf with its decryption. The only DECODE data on disk (LANE N's no-login
+crawl of 24 Sept 2026) covers Non-decrypted and Partially decrypted records, and none of its 1186 rows has a Bodleian or
+Oxford holder. **Decrypted** records were never listed. DECODE was treated as an N4 gate for Gramont and Danzay
+(LANE N closed both today), and I treat it the same way here. If the job in s.3 comes back negative, P4 goes to N4
+without any other audit.
+
+### 1. Principal families and coverage
+
+| family | principal? | covered | where AUDIT.md shows it |
+|---|---|---|---|
+| Birch 1742 vol. 3, letter pp.187-189 with covering letter and endorsement | yes (canonical series) | yes: djvu read in full; no "decypher'd" paragraph | V2 s.2 (a) |
+| Birch vol. 3 index and vol. 7 general index | yes | yes: Stamford is indexed at 274, 279 and 340 only; p.187 is not indexed under Stamford, W.S. or Calais; vol. 7 gives 0 | second audit (a) |
+| British History Online, Thurloe vol. 3 pp.185-195 | yes (online edition of the series) | yes: same numerals, no decipherment, no note | V2 s.2 (a) |
+| CSPD 1655 | yes | yes, in-item: "Stamford" hits only Blake's troop at Stamford fair; "Calais" hits only fishing licences | V2 s.2 (c) (s.19); second audit (b) |
+| *Calendar of the Clarendon SP* (Macray) vol. 3 (1655-57) | yes (royalist side) | yes, in-item: "Stamford" 0, "Stanford" 0, "Kelsey" 0; the "Calais" control hits | second audit (b) |
+| *Clarendon State Papers* 1767-86, vol. 3 (1786, ed. Monkhouse) | yes as an edition, but its contents are Clarendon MSS, which the *Calendar* above calendars item by item | **by proxy, this session** (s.2): Macray marks items that were printed there ("Partly printed, Cl. S. P. vol. iii. p. 284"), so a Stamford item printed in 1786 would be calendared, and the *Calendar* gives 0 for Stamford, Stanford and Kelsey. P4 itself is a Rawlinson (Thurloe) MS, not a Clarendon MS. The volume itself is not on IA (worker D) and not on HathiTrust (s.2). Google Books search-within would be optional confirmation, not a gate | this section, s.2; worker D item 4 |
+| *Nicholas Papers* vols 2-3 | yes (royalist side) | yes, in-item: "Stamford" 0 | second audit (b) |
+| Abbott, *Writings and Speeches* vol. 3 | yes (Protector's side; "your friend" is the Protector) | yes, in-item: "Stamford" hits only a Blore citation | second audit (c) |
+| *Clarke Papers* vol. 3 | yes | yes: "Stamford" 0, "Calais" 0 | second audit (c) |
+| Gardiner, *Commonwealth and Protectorate* vol. 3 | yes (narrative of the 1655 rising) | yes: Earl of Stamford only; "Calais" only as the proposed siege | second audit (c) |
+| Firth, *Last Years of the Protectorate* | no: it begins in 1656. Firth's 1655 material is in the *Clarke Papers* (above) | not searched | this section |
+| Underdown, *Royalist Conspiracy* | yes (the standard study of the 1655 plots) | yes, in-item: "W. S." 0 and "Kelsey" 0; the Calais hits are other men | V2 s.2 (c) |
+| Sender/recipient editions (Stamford, Kelsey) | would be principal | none exists | V2 s.2 (b) |
+| Bodleian catalogue (holding archive): Macray's printed Rawlinson index and the ArchivesSpace item records | yes | yes: Macray indexes "Stamford, W., Calais ... A. 24. 73". ArchivesSpace (via Wayback, since the live host is Anubis-challenged) has no item record for ff.73-76 | V2 s.2 (d); second audit (d) |
+| MS Rawl. A. 24 leaf image | no for N4: archival and unpublished, so rule 10's "internal or unpublished work not excluded" applies. Decisive in substance | not seen | second audit, Toward N4 item 6 |
+| Tomokiyo / Cryptiana, "William Stamford (1655)" (project page for this cipher) | yes | yes: `stamford.jpg` compared value by value; a published reconstruction of the *system*; no P4-only value, and no P4 plaintext on the page | second audit (e) |
+| Solver repositories (Bourdeau, Aymeloglu) | yes | yes: no P4 reading | second audit (g) |
+| **DECODE (de-crypt.org)** | **yes (cipher-manuscript catalogue; also treated as an N4 gate for Gramont and Danzay)** | **no**: not searched for Stamford, Thurloe or Rawlinson. Indirect evidence only: no Bodleian holder among the 1186 Non-decrypted and Partially decrypted records (`sources/decode/records-non-decrypted-2026-09-24.tsv`, grep "bodleian\|oxford\|rawl" 0) | this section |
+| Google Books phrase search | yes (template family e) | yes: V2's 12 queries plus LANE V's 8; no P4 content | V2 s.2 (e); Google Books section |
+| IA full text | yes (template family e) | yes: V2's 10 global and 11 in-item queries, and the second audit's 6 global queries | V2 s.2 (e); second audit (f) |
+| HathiTrust whole-library full text | no for N4: a search engine, not an edition or catalogue; every edition above is covered by other routes (Eckert precedent) | unreachable (403) | second audit (f) |
+| Scholarship: Marshall 2020 and 2023, JSTOR, OpenAlex, Semantic Scholar | no for N4: outreach gate 2 (Eckert precedent; CLAUDE.md: a queued JSTOR row never blocks N3 or N4) | CrossRef and HAL yes; OpenAlex and S2 429 all day; Marshall unread; JSTOR rows queued | V2 s.2 (g); second audit (h); worker D item 3 |
+
+### 2. This session's search log
+
+- HathiTrust Bibliographic API (full Chrome User-Agent), three calls. `oclc/4713616` (the 1767-86 edition's OCLC
+  number, from Open Library's search API) returns record 000770724 with **v.1 and v.2 only**
+  (njp.32101078304340, njp.32101078304332). `oclc/1006002852` returns no items. `lccn/02023355` returns the same
+  two volumes. HathiTrust holds no copy of vol. 3 (1786), so the HTRC token-count route cannot be used. A WebSearch
+  (1 query) found the vol. 3 copies at the Royal Collection and Google Books (`ELb2B_YZdmAC`, `g4NaAAAAYAAJ`). Google
+  Books is LANE V's host, so I did not query it.
+- Proxy check on Macray's *Calendar* vol. 3 (`calendarofclaren03bodluoft`, be-api in-item fts, 6 queries):
+  - `"Printed" "iii."` returns "Partly printed, Cl. S. P. vol. iii. p. 284" and "printed in Thurloe's S. P. vol. iii.
+    p. 153". So the *Calendar* records both the 1786 printing and Birch cross-references.
+  - `"iii. p. 185"` returns one hit: "insurrection. See Thurloe's S. P. vol. iii. p. 185", the item just before P4.
+  - `"iii. p. 187"`, `"iii. p. 188"` and `"iii. p. 189"` return 0.
+  - Macray therefore links no Clarendon MS to P4's pages, and the second audit's 0 for Stamford, Stanford and Kelsey
+    in the same volume stands.
+- DECODE: not queried (LANE N's host). `tools/decode_list.py --help` confirms that the RecordsList grid can be listed
+  by status without a login (x_status 1 = Decrypted).
+
+Requests this session: openlibrary.org 1; catalog.hathitrust.org 3; be-api.us.archive.org 6; WebSearch 1. All one at
+a time, at least 2 s apart. No logins, no credentials read.
+
+### 3. Decision
+
+**P4, Stamford to [Kelsey or Thurloe], Calais, 13 March 1655: N3 (not raised).** The blocking family is **DECODE**.
+
+**Smallest job that closes it** (for LANE N, no login needed): run `tools/decode_list.py --status decrypted
+--record-type cipher` (and `partially-decrypted` is already on disk), then grep `holder_raw` and `shelfmark_code` for
+Bodleian, Oxford and Rawl. If a Rawl. A. 24 record appears, open its RecordsView with that session's one login and
+check whether it is Stamford's leaf (Birch "vol. xxiv p.73, 76"). If none appears, or none is Stamford's, the verifier
+who logs that result may set P4 to **N4** without re-auditing anything else. No ASKS row is needed, because the job
+needs no person.
+
+Safe sentence, **for use only once N4 is set (not before):**
+"Birch (1742) prints William Stamford's letter from Calais of 13 March 1655 with its cipher numerals and no
+decipherment. We read its cipher with the key given by Birch's printed decipherments of Stamford's letters of 20 and
+30 March 1655. Thurloe's office deciphered this system in 1655, and Tomokiyo has since reconstructed and published it
+(Cryptiana, 'William Stamford (1655)'). Our table agrees with his on every value that occurs in this letter. By token:
+H 64, C 338, M 16, U 6 of 424, and eleven lines of p.188 are still partly incoherent. No prior decipherment of this letter
+located in Birch and its indexes, British History Online, CSPD 1655, the Clarendon calendar vol. 3, the Nicholas
+Papers, Abbott, the Clarke Papers, Gardiner, Underdown, the Bodleian's catalogues, Tomokiyo's pages, the solver
+repositories, DECODE, Google Books or Internet Archive full text (searched 24 Sept 2026, AUDIT.md). The original leaf,
+Bodleian MS Rawl. A. 24, has not been seen."
+
+**Unsafe at any class:** "we broke / cracked / solved Stamford's cipher" (the system was deciphered in 1655 and
+reconstructed by Tomokiyo; ours is a keyed reading of one more letter), "first decipherment" without the qualifier "no
+prior decipherment located", "previously unread", "unpublished", "no decipherment exists" (the MS leaf is unseen).
+
+**Corrections:** none new. The second audit's "only `10622705bsb` (vol. 1)" was already corrected to vol. 2 by worker D.
