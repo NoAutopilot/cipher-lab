@@ -213,3 +213,112 @@ second call resumed at 3767 with the same session cookies, so this is one DECODE
 interruption, not a second authentication attempt. Combined with job 1 of this brief (`records-decrypted-
 2026-09-24.tsv`, 28 requests, no login), this worker's de-crypt.org total is 112 requests, under the
 150-request cap. All requests >=1.6s apart, one at a time.
+
+## Full-size images: account permission test (LANE N2 dcB), 24 September 2026
+
+**Verdict: (b) blocked by permission.** Full-size DECODE page scans are gated to accounts our credentials do
+not belong to; the gate is account-level, not per-record, per-uploader or a missing-image gap. Draft outreach
+at `outreach/decode-image-access.md`; ASKS row filed (see below).
+
+One login (`tools/decode_browser_login.js`, extended this session -- see "Tool changes" below -- rather than
+written as a private script), `RECORD_ID=3754` (Bourdeau's florence1429 record, the one his own login fetched
+a 5512x3674 full image from, per `ciphers/florence-dieci-responsive/NOTES.md` "Job 1"), `--fetch-page
+RecordsView/3761,RecordsView/3758,personaldata`, `--guess-fullsize`, `--probe
+"ImagesList?showmaster=records&fk_id=3754"`, `--delay 1700 --max-files 30`. 17 requests total (2 login,
+1 primary RecordsView, 3 fetch-page, 6 filesrv fetches, 5 probe hops), well under the brief's 60-request cap.
+Raw HTML/images kept in the session scratchpad, not committed (Usage rule 3, "digests not repositories"); the
+navbar's account-name string was in `personaldata.html` (as CLAUDE.md's DECODE section warns) and is not
+quoted anywhere below or committed to this file.
+
+**1. Filesrv full-size fetch, three records (R3754, R3761, R3758).** Each RecordsView page's zoom-modal
+`<img alt="IMG_R<record>_I<internal>_P.jpg">` names the underlying full-size file without the `TH_` prefix
+carried by the thumbnail `<img src>` (`TH_IMG_R<record>_I<internal>_P.jpg`) -- confirmed by grepping the three
+saved pages, `alt="IMG_R3754_I23011_P.jpg"`, `alt="IMG_R3761_I23018_P.jpg"`, `alt="IMG_R3758_I23015_P.jpg"`,
+matching the `--guess-fullsize` flag's own derivation exactly. Requesting each un-prefixed name through
+`/decrypt-custom/filesrv/?file=<name>` in the same logged-in session returned, for all three:
+
+| record | thumbnail (real) | "full-size" request | sha1 | size/dims |
+|---|---|---|---|---|
+| R3754 | `TH_IMG_R3754_I23011_P.jpg`, 9165 bytes, distinct JPEG | `IMG_R3754_I23011_P.jpg` | `035489a0605851154ab88372216354b63596ca22` | 17947 bytes, PNG 986x568 |
+| R3761 | `TH_IMG_R3761_I23018_P.jpg`, 16488 bytes, distinct JPEG | `IMG_R3761_I23018_P.jpg` | `035489a0605851154ab88372216354b63596ca22` | 17947 bytes, PNG 986x568 |
+| R3758 | `TH_IMG_R3758_I23015_P.jpg`, 3852 bytes, distinct JPEG | `IMG_R3758_I23015_P.jpg` | `035489a0605851154ab88372216354b63596ca22` | 17947 bytes, PNG 986x568 |
+
+All three "full-size" responses are the same sha1 as the `forbidden.png` placeholder already documented above
+(the blocked `.txt` attachment on R1162/D3593) -- byte-identical to each other and to that placeholder, HTTP
+200, `986x568` PNG, `Content-Disposition: inline` (per that earlier finding's header check; not re-verified
+per-header this pass since the sha1 match alone is conclusive). The three real thumbnails are genuinely
+distinct (different byte counts, different pixel dimensions per `file`), so the server can and does tell these
+three records' images apart -- it simply refuses the un-prefixed name for all three, including **R3754**, the
+exact record whose full image Daniel Bourdeau's own DECODE login *did* fetch (5512x3674, per
+`ciphers/florence-dieci-responsive/NOTES.md`). Same record, same file, two different DECODE accounts, two
+different results: this is not "no image was ever uploaded for this record" (Bourdeau's own notes prove one
+exists) and not a per-uploader quirk of the Florence cluster specifically (R3754 isn't Florence) -- it is this
+account being refused a file another account can read.
+
+**2. ImagesList probe (`--probe`, `maxRedirects: 0`, no `page.goto`).** For R3754's
+`ImagesList?showmaster=records&fk_id=3754` (the "Go to the Image Manager to zoom and view/edit metadata" link,
+present verbatim in RecordsView's own HTML, same as documented for record 1162 above): the Location chain,
+read without ever following a redirect automatically, is
+
+```
+GET ImagesList?showmaster=records&fk_id=3754        -> 302 Location: /decrypt-web/login
+GET login                                           -> 302 Location: /decrypt-web/ImagesList?showmaster=records&fk_id=3754?showmaster=records&fk_id=3754
+GET ImagesList?...?showmaster=records&fk_id=3754    -> 302 Location: /decrypt-web/login
+GET login                                           -> 302 Location: /decrypt-web/ImagesList?...(query string doubling again)
+GET ImagesList?...                                   -> 302 Location: /decrypt-web/login   [stopped at 5 hops, per brief]
+```
+
+This is a real finding, not the generic `ERR_TOO_MANY_REDIRECTS` a browser's own redirect-follower reports (the
+1162 pass hit that limit at Chromium's 20-hop ceiling without ever seeing why): DECODE's server treats our
+**already-authenticated** session (the same cookies that load RecordsView, DocumentsList and Personal Data
+without issue) as unauthenticated specifically for `ImagesList` -- it redirects straight to `/login`, and
+`/login` bounces back to the *same* `ImagesList` URL with its own query string appended a second time (a bug in
+the login page's own return-URL handling, not something this account can route around). Since the failure mode
+is "not logged in" rather than "logged in but refused," a plain GET is missing a prerequisite `ImagesList`
+wants and `RecordsView`/`DocumentsList` don't -- consistent with `ImagesList` (the Image Manager) sitting behind
+a separate permission check that this account's login does not satisfy, on top of (not instead of) the filesrv
+block already shown in step 1. The brief's fallback ("reach it by clicking through the UI from RecordsView
+instead of `goto`") was not attempted this pass to respect the brief's "ONE login" cap -- it would need a
+second script invocation with the newly-added `--click` option (see below) or folding into a single combined
+run; flagged here as the next concrete step for whichever worker next holds the DECODE login, since the same
+result (redirect to `/login`) for a URL taken verbatim from an authenticated page's own HTML already answers
+"is this reachable by a plain request" (no), and a click only tests whether the UI supplies some referrer or
+prior AJAX call a script doesn't -- worth one try, not yet done.
+
+**3. Profile/permissions and help/terms pages.** `/decrypt-web/personaldata` (the only per-account settings
+page linked from the navbar's user menu, alongside `/decrypt-web/changepassword`) shows no role, tier or
+access-level field of any kind -- its entire visible content is: *"Your account contains personal data that
+you have given us. This page allows you to download or delete that data. Deleting this data will permanently
+remove your account, and this cannot be recovered."* with Download/Delete buttons (a GDPR data-control page,
+not a profile). No "researcher" vs "guest" wording, no request-access button, no upload-owner rule is stated
+anywhere in the authenticated UI reached this pass. The navbar's "Administration" menu (visible only because
+we are logged in at all) exposes exactly one item, "Record Group" (`/decrypt-web/RecordGroupList`) -- no
+"Users"/"Logins"/"Permissions" list is offered to this account, meaning it is a plain non-admin member with no
+in-UI path to request or grant itself elevated image access. No help or terms-of-use page is linked anywhere in
+the authenticated interface (navbar, sidebar, user-menu, footer) beyond the standing DECRYPT-project citation
+block (Héder/Megyesi HistoCrypt 2022, Megyesi et al. Cryptologia 2020, Megyesi et al. HistoCrypt 2019) already
+noted above -- if DECODE documents an image-access permission tier anywhere, it is not reachable from inside
+de-crypt.org itself with this account, and this brief's host restriction (de-crypt.org only) means the
+project's own public site (cl.lingfil.uu.se) was not checked for it this pass.
+
+**Tool changes (`tools/decode_browser_login.js`):** added `--guess-fullsize` (derives each thumbnail's
+un-prefixed full-size filename and queues it, used in step 1), `--probe URL[,...]` (`maxRedirects: 0`,
+manual up-to-5-hop redirect chain via `ctx.request.get`, used in step 2, never `page.goto`), and `--click
+"PAGE_URL|LINK_TEXT"` (navigate, click the first link containing that text, save wherever it lands --
+built for the step-2 fallback above but not yet exercised). All three are additive and off by default;
+existing callers are unaffected. New offline test `tools/tests/test_decode_browser_login_guessfullsize.py`
+(no network, no credentials) covers `guessFullsizeName`/`scanFilesrvLinks`; the existing `--help` and
+`safeFilename` tests still pass unchanged.
+
+**What this means for LANE N2/copy-free scoring:** the recommendation in
+`ciphers/florence-dieci-responsive/NOTES.md` "Job 1" to re-run the login against ids 3758-3789's `ImagesList`
+pages is now answered without needing to spend a second login on the Florence cluster specifically -- the
+block demonstrated on R3754/R3761/R3758 is an account-wide gate (step 1 uses a non-Florence record precisely
+to show this), so the same six filza-7 ids (3758, 3759, 3760, 3761, 3762, 3763) would return the same
+`forbidden.png` placeholder. **No images were fetched into `ciphers/florence-dieci-responsive/images/`** and
+none of DECODE's held copy-order rows become copy-free from this route. `outreach/decode-image-access.md`
+drafted (subject/recipient/sign-off left blank) asking whether image access can be granted to this account,
+citing this section; ASKS.md row added for the owner to send it once reviewed.
+
+Requests this pass: de-crypt.org 17 (2 login, 1 primary RecordsView, 3 fetch-page, 6 filesrv, 5 probe hops),
+all >=1.6s apart, one at a time, well under the 60-request cap. No other hosts. One login.
