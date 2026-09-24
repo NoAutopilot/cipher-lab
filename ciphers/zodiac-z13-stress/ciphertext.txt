@@ -1,0 +1,9 @@
+# Z13 ("My name is ...", Zodiac letter of 20 April 1970), 13 symbols, one line.
+# SOURCE: NOT FETCHED. Wikipedia's API answered 429 twice (24 Sept 2026 20:30 UTC; one retry, then stopped) and
+# zodiackillerciphers.com/wiki/index.php?title=Z13 is an empty page (404). The brief allowed three fetches; all
+# three were spent. This is the widely reproduced transcription as the worker recalls it, and agrees with every
+# letter the claim itself names (A E N ... 8 K 8 M 8 ... N A M). Rule 2: any result below is conditional on it.
+# Tokens: letters as themselves; 8 = the 8-like symbol; + = the circle-cross symbol at position 4;
+# ^ = the other non-letter symbol at position 10. The identity of + and ^ does not matter here: the claimed
+# mechanism does not use either.
+A E N + 8 K 8 M 8 ^ N A M

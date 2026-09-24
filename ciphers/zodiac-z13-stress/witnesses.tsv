@@ -1,0 +1,6 @@
+ARTHUR+LA	ARTHURLAM	Params(move='UR', npass=1, slide_dir=1, count=7, start1=False, count_dir=-1, boundary='reflect', chain_from=3)	1:LM 2:S 3:X 6:X 8:X 11:M 12:L 13:L
+ANGELA+KEL	ANGELAKEL	Params(move='UL', npass=1, slide_dir=1, count=10, start1=False, count_dir=1, boundary='reflect', chain_from=3)	1:L 2:X 3:L 6:X 8:M 11:M 12:M 13:M
+DELLA+BEN	DELLABENAM	Params(move='UR', npass=1, slide_dir=1, count=6, start1=False, count_dir=1, boundary='reflect', chain_from=3)	1:S 2:L 3:M 6:X 8:S 11:L 12:L 13:L
+ELLA+KENN	AELLAKENN	Params(move='UL', npass=0, slide_dir=1, count=7, start1=False, count_dir=1, boundary='reflect', chain_from=3)	1:L 2:L 3:X 6:S 8:M 11:L 12:X 13:S
+JANE+BAN	AENLJANEBAN	Params(move='UR', npass=0, slide_dir=-1, count=7, start1=False, count_dir=1, boundary='reflect', chain_from=3)	1:L 2:L 3:L 6:S 8:S 11:S 12:L 13:S
+EVAN+ARM	AENGKEVANARM	Params(move='UL', npass=2, slide_dir=1, count=9, start1=False, count_dir=1, boundary='reflect', chain_from=3)	1:L 2:L 3:L 6:L 8:S 11:L 12:LM 13:L

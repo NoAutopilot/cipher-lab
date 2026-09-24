@@ -1,0 +1,18 @@
+measure	value	note
+poster_rules_reproduce_ARTHURLA	yes	mechanism.py --check exits 0
+per_letter_operation_types_used	5	L copy (A12), LM copy-and-move (A1), M move-up-right+pass1 (N11), S pass1 no move (E2), X emit nothing (N3 seed, K6, M8, M13)
+chain_rules_used	3	8-count from the seed with start=1 on the reverse track; reflect at Q; pass1 in the current direction
+free_choices	16	7 global parameters + chain seed position + 8 per-letter operation choices
+output_letters_from_sequential_chain	3 of 8	HUR; ART and LA are chosen per position
+family_param_rows	1280	move 4 x pass 0-3 x slide dir 2 x count 6-10 x start 2 x count dir 2 x boundary 2
+family_combinations_valid	165552000	x 5 ops per letter (5^8), minus combinations with an impossible move; counted exactly by DP
+family_combinations_with_name7	16179	0.0098%; name7 = given name >=4 + surname-list prefix, >=7 letters, or given name >=7
+family_param_rows_with_name7	30	of 1280
+family_distinct_name7_labels_on_Z13	61	names_found.tsv
+family_distinct_given_names_on_Z13	13	ANGELA, ARTHUR, ELLA, DELLA, JANE, EVAN, ALEX, KYLE, GLEN, FRED, FELIX, ALLAN, ABEL (names_found.tsv; witnesses.tsv gives rule sets for five)
+control_n	1000	random letters at Z13's 8 letter positions, 8s and symbols kept in place, seed 13
+control_a_fixed_poster_rules_name6	0/1000	real Z13: yes (ARTHUR)
+control_b_poster_globals_free_ops_name6	1/1000	real Z13: yes
+control_b_poster_globals_free_ops_name7	22/1000	real Z13: yes
+control_c_family_name7	968/1000	real Z13: yes
+control_d_family_name6	299/1000	real Z13: yes (ARTHUR, ANGELA); commonest in controls MARCUS 22, NELSON 16, DWIGHT 14, ANGELA 14, GERALD 13
