@@ -173,3 +173,43 @@ No full-size image exists to save; `ciphers/decode-1162-modena-ambung-1492/image
 files added). Requests this pass: de-crypt.org ~10-15 (login ~2, RecordsView/1162 auto-fetch 1, the
 ImagesList redirect-loop attempt an unknown but bounded number, 2 filesrv fetches) -- comfortably under the
 20-request cap even counting the loop at its ceiling. One login only. Cost: worker cap $3, well under.
+
+## DC11-DC20 and the Florence Dieci di Balia cluster, DocumentsList checked (LANE N2, 24 September 2026)
+
+One login (`tools/decode_browser_login.js`, `--max-files 0` so no auto-discovered thumbnail/document fetching,
+`--delay 1600`), `RecordsView/<id>` plus `DocumentsList?showmaster=records&fk_id=<id>` for each of the ten
+DC11-DC20 records (ids 1121-1167, 1152, 1146, 1148, 2788) and the 32 Florence census rows with holder
+"Florence State Archives", shelfmark `Dieci_di_Balia_Responsive_*` (ids 3758-3789, filze 7/8/9/22 of the
+Dieci di Balìa Responsive series). The site's own generic navbar shows the logged-in account's user name on
+every page fetched; it has been scrubbed from every file committed here (`sources/decode/dc11-20-documents-
+2026-09-24.tsv`, `florence-dieci-2026-09-24.tsv` carry only DECODE's own record fields, not the raw HTML).
+
+**DC11-DC20**: confirmed live. DC11-DC19 (the Modena/Milano Amb. Ung./Sf. Ung. envoy-report cluster) are all
+still "Partially decrypted" with 0 documents attached on either RecordsView or DocumentsList -- QUEUE.md's
+hard filter (Partially decrypted = not a candidate) applies to all nine, and none carries a [decrypt]/[key]
+document that would make it a firmer negative. DC20 (id 2788, Catherine de Medicis to Philibert du Croc) is
+confirmed "Non-decrypted" with 0 documents and, as already noted, 0 images -- still not copy-free. No
+uploader comments or per-record bibliography field exists on any of the ten; the only "bibliography" DECODE
+shows anywhere on these pages is its own site-wide DECRYPT-project citation block (Héder/Megyesi HistoCrypt
+2022, Megyesi et al. Cryptologia 2020, Megyesi et al. HistoCrypt 2019), not per-item literature.
+
+**Florence Dieci di Balia cluster (32 rows, ids 3758-3789)**: all 32 confirmed "Non-decrypted" on RecordsView,
+0 documents attached on DocumentsList for every one (checked individually, not sampled). No uploader comments
+found on any record. No per-record bibliography; only the same site-wide DECRYPT-project citation block as
+above. No publication or project beyond DECODE's own is named on any of these 32 pages -- if a Dieci di Balìa
+Responsive edition or project exists (the Florence State Archives' own finding aids, or an Italian Renaissance
+diplomatic-correspondence edition project), it was not surfaced by this pass and would need a search outside
+DECODE (this pass's brief was capture only, no WebSearch spent here). Two records (3758, 3760) show a blank
+"Pages" field on RecordsView itself, unlike the other 30 (1-2 pages each) -- a DECODE data-entry gap, not
+something this pass can resolve. Per-record detail (shelfmark, holder, date range, cleartext/plaintext
+language, page count, status, documents, comments, bibliography) is in
+`sources/decode/florence-dieci-2026-09-24.tsv`. No images were downloaded beyond what RecordsView's own page
+view pulls (thumbnails inline in the page HTML, not saved separately); nothing was transcribed.
+
+Requests this pass: de-crypt.org 84 fetch-page requests (42 records x RecordsView + DocumentsList) plus one
+login, split across two consecutive fetch calls in the same login session after the first call's own
+subprocess timeout (not a site rejection) cut it off partway through the Florence range at id 3766 -- the
+second call resumed at 3767 with the same session cookies, so this is one DECODE login with a client-side
+interruption, not a second authentication attempt. Combined with job 1 of this brief (`records-decrypted-
+2026-09-24.tsv`, 28 requests, no login), this worker's de-crypt.org total is 112 requests, under the
+150-request cap. All requests >=1.6s apart, one at a time.
