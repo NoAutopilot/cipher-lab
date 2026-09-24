@@ -1356,8 +1356,8 @@
    "date": "24 Sept 2026",
    "kind": "recovery",
    "title": "Brienne to Servien, Paris 10 Oct 1659 (BnF fr.5160 folio 67): partly read with the 1659 key recovered from the office's November letters",
-   "grade": "C 435, M 111 of 546 groups, aligned to the letter's clear text on f.68r (was S 107, M 416, I 9, U 14 from the key alone); N0 (verifier, AUDIT.md f.67 V5b)",
-   "line": "A cipher letter not flagged by earlier passes over fr.5160, found by the canvas walk. key_1659 (from the contemporary decipherment of f.86-88) keys 95.8% of its groups and beats 200 shuffled keys at word level (0.721 vs max 0.647). Its clear text survives on f.68r of the same volume (N0), which our partial reading matches and which resolves 'le duc' and 'le marquis de Pianese'; f.68r is known plaintext for C-grading the M tokens.",
+   "grade": "C 435, M 111 of 546 groups (aligned to its own clear text on f.68r); N0 (AUDIT.md f.67 re-class V5b)",
+   "line": "A cipher letter not recorded in earlier passes over fr.5160, found by the canvas walk; key_1659 read it first (control z 3.85), then f.68r of the same volume proved to be the letter in clear, which confirms 435 groups and adds 16 codes to the 1659 table (key_1659_ext). Savoy affairs, Madame Royale, the Duke's marriage.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653"
   },
   {
