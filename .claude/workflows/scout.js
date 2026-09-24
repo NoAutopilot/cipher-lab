@@ -105,13 +105,13 @@ const scored = await pipeline(
 )
 const ranked = scored.filter(Boolean).map(s => ({
   ...s,
-  total: s.language_fit * 3 + s.material * 2 + s.key_lead * 3 + s.size * 2 + s.competition * 2 + s.weight + s.unread * 3,
+  total: s.language_fit * 3 + s.material * 4 + s.key_lead * 3 + s.size * 2 + s.competition * 2 + s.weight + s.unread * 3,
 })).sort((a, b) => b.total - a.total)
 log(`${ranked.length} candidates scored; top: ${ranked.slice(0, 3).map(r => `${r.name} (${r.total})`).join('; ')}`)
 
 phase('File')
 const filed = await agent(
-  `Date: ${date}. Write QUEUE.md at the repository root from this ranked list (JSON):\n${JSON.stringify(ranked, null, 1)}\n\nAnd this list of drops with reasons:\n${JSON.stringify(filtered.dropped, null, 1)}\n\nFormat: a short header stating the date, the scoring formula (language_fit x3 + material x2 + key_lead x3 + size x2 + competition x2 + weight + unread x3, max 48) and the kind column (cryptanalysis, recovery, contribution; editions are listed under Dropped) and the reader profile (${langs.join('/')} only, no archive access, copy requests possible). Then three tiers by total: A (34 and up), B (25 to 33), C (below 25), each a table with columns Rank, Target, Year, Lang, Kind, Next step, Detail, Total, Sources. Then a "Dropped this sweep" table with name and reason. Then a "Sources unreachable" line if any harvester reported a blocked source: ${JSON.stringify(raw.filter(r => r.blocked).map(r => r.source + ': ' + r.blocked))}. Keep existing entries' folder links if ciphers/<name> already exists (check with ls ciphers). Commit as "scout: refresh QUEUE.md, ${date}" without pushing. Return the counts per tier.`,
+  `Date: ${date}. Write QUEUE.md at the repository root from this ranked list (JSON):\n${JSON.stringify(ranked, null, 1)}\n\nAnd this list of drops with reasons:\n${JSON.stringify(filtered.dropped, null, 1)}\n\nFormat: a short header stating the date, the scoring formula (language_fit x3 + material x4 + key_lead x3 + size x2 + competition x2 + weight + unread x3, max 54) and the kind column (cryptanalysis, recovery, contribution; editions are listed under Dropped) and the reader profile (${langs.join('/')} only, no archive access, copy requests possible). Then three tiers by total: A (38 and up), B (28 to 37), C (below 28), each a table with columns Rank, Target, Year, Lang, Kind, Next step, Detail, Total, Sources. Then a "Dropped this sweep" table with name and reason. Then a "Sources unreachable" line if any harvester reported a blocked source: ${JSON.stringify(raw.filter(r => r.blocked).map(r => r.source + ': ' + r.blocked))}. Keep existing entries' folder links if ciphers/<name> already exists (check with ls ciphers). Commit as "scout: refresh QUEUE.md, ${date}" without pushing. Return the counts per tier.`,
   { label: 'file', phase: 'File', schema: { type: 'object', properties: { tierA: { type: 'integer' }, tierB: { type: 'integer' }, tierC: { type: 'integer' } }, required: ['tierA', 'tierB', 'tierC'] } },
 )
 return { ...filed, scored: ranked.length, dropped: filtered.dropped.length }

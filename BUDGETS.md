@@ -41,12 +41,28 @@ stop and tell the owner.
 Sonnet for searches, sweeps, harvesting and transcription passes. The strongest model only for reconciling
 passes against an image, verifier verdicts and orchestration. `CLAUDE.md`'s Usage section is binding.
 
-**Scaling rule, 24 Sept 2026 05:12 UTC (owner: "2x our efforts overall keeping our rate limit approach in mind").** Seven lanes (T, G, V, S winding down, N, R, W), each capped at $120 and 16 live workers; the parent adds a lane on an unowned host family whenever every lane is at capacity and its own rate-limit status is still `allowed`. `allowed_warning` anywhere: that lane stops spawning and says so in ROOM.md; `rejected`: every lane interrupts its workers, notes the reset time here, and re-arms for it. Gallica stays at two fetchers regardless.
+**Scaling rule, 24 Sept 2026 05:12 UTC, corrected 06:34 UTC after the 05:30-06:10 window exhaustion (owner: "2x
+our efforts overall keeping our rate limit approach in mind").** Live lanes (T, G, V, N, R, W; S and T close
+when their scope is exhausted rather than fill to ceiling — see below), each capped at $120 and **10** live
+workers (cut from 16 after the doubling burned the shared window in 18 minutes: 05:12 authorised, 05:30
+`allowed_warning`, 05:50 `rejected`, 06:10 reset, next reset 11:10 UTC). The parent adds a lane on an unowned
+host family whenever every lane is at capacity and its own rate-limit status is still `allowed`.
+- **The window is one account-wide pool, not per lane.** A ceiling raise applies to every live lane at once, so
+  raise in increments (e.g. +3 per lane), not straight to target, and let a few minutes pass between increments
+  while every lane's status stays `allowed`, so a burst shows up as an early warning instead of an immediate wall.
+- **`allowed_warning` posted by any lane in ROOM.md stops spawning in every lane immediately** — do not wait to
+  see it on your own `get_session` call, since by the time you do, the shared pool may already be past it. The
+  lane that saw it also logs the reset time here and in ROOM.md.
+- **`rejected`:** every lane interrupts its workers, notes the reset time here, and re-arms for it.
+- **A lane whose scope is exhausted closes and says so, rather than filling to the ceiling** (LANE T, 24 Sept:
+  "lane scope exhausted, so not filling to the new 16-worker ceiling"). A raised ceiling is a maximum, not a
+  quota to hit.
+Gallica stays at two fetchers regardless.
 
 **LANE N, 24 Sept 2026 05:31 UTC:** five-hour window at `allowed_warning` (seen on three LANE N workers and on LANE N itself; resets 06:10 UTC). LANE N stopped spawning at 15 live (the last three spawned 05:30, before the reading). No worker interrupted (status is not `rejected`). LANE N own usage $6.69.
 
 **Rate-limit event, 24 Sept 2026.** The 2x load (seven lanes, 16 workers each) reached `allowed_warning` at 05:30 UTC and
-`rejected` at about 05:50; the window reset at 06:10 (next reset 11:10 UTC). Three lane orchestrators (G, N, R) ended their
-turns on the rejection and were woken by the parent at 06:36. Pacing rule from 06:34 UTC: 10 live workers per lane, Sonnet
-for anything another agent checks, and a warning anywhere is account-wide: every lane stops spawning when any lane posts
-`allowed_warning` in ROOM.md. The parent re-arms its check-in for the reset time when the status is `rejected`.
+`rejected` at about 05:50; the window reset at 06:10. Three lane orchestrators (G, N, R) ended their
+turns on the rejection and were woken by the parent at 06:36. The corrected pacing rule above (10 live workers per lane,
+Sonnet for anything another agent checks, a warning anywhere stops spawning account-wide) dates from this same 06:34 UTC
+correction. The parent re-arms its check-in for the reset time when the status is `rejected`.
