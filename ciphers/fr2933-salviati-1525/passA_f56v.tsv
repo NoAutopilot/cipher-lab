@@ -1,0 +1,505 @@
+line	pos	code	marks	action	conf	note
+1	1	y		confirm	H	
+1	2	ch		confirm	M	
+1	3	_		plain	M	
+1	4	_	1	plain	H	
+1	5	_		plain	H	
+1	6	_		plain	H	
+1	7	_	#	plain	H	
+1	8	w		confirm	M	
+1	9	_		plain	M	
+1	10	+		correct	M	oversized/merged box (dist 6.16 highest non-plain call on leaf); cross+flag shape closer to atlas '+' (single cross standing) than 'g' (loop); confusable +/# per J's list, defer to pass B
+1	11	psi		confirm	M	
+1	12	nt		confirm	H	
+1	13	bh		confirm	H	
+1	14	a	5	correct	H	bold cursive 'a' (atlas match) with superscript '5' mark not auto-segmented by the classifier; classifier called it plain at share 0.80
+1	15	a	5	correct	H	same as pos14: bold cursive 'a' with superscript '5' mark, classifier called it plain at share 0.80
+1	16	tee		confirm	H	
+1	17	lam		confirm	H	
+1	18	S		confirm	H	
+1	19	Z	dot|ot	confirm	H	
+1	20	g		confirm	H	
+1	21	lam	7	confirm	H	
+1	22	rz	~	confirm	H	
+1	23	g		confirm	H	
+1	24	_		plain	M	
+1	25	tee		confirm	H	
+1	26	lam		confirm	H	
+1	27	S		confirm	H	
+1	28	_	dot	plain	H	
+1	29	bh	dot	confirm	H	
+1	30	Z	#	correct	M	diagonal+hash shape matches atlas Z (marks_seen includes '#'); classifier's own top guess was Z but cluster disagreed (share 0.43)
+1	31	phi	dot	confirm	M	
+1	32	w		confirm	H	
+2	1	v	dot	confirm	H	atlas v = 'curved v with a hooked left arm (ṽ-like)' -- exact match to the tilde-over-hook shape seen, despite share 0.40
+2	2	_		plain	M	
+2	3	S7		confirm	H	
+2	4	y	5	confirm	H	
+2	5	w		confirm	H	
+2	6	Z	ot	confirm	H	
+2	7	lam		confirm	H	
+2	8	g	~	confirm	H	
+2	9	e		confirm	H	
+2	10	tee		confirm	H	
+2	11	K	1	confirm	H	
+2	12	phi	5	confirm	M	
+2	13	U		confirm	H	
+2	14	w		confirm	H	
+2	15	bh		confirm	H	
+2	16	lam	~	confirm	H	
+2	17	_		plain	H	
+2	18	bh		confirm	H	
+2	19	g		confirm	H	
+2	20	Z		confirm	M	
+2	21	Z		confirm	H	
+2	22	g		confirm	H	
+2	23	S		confirm	H	
+2	24	e		confirm	H	
+2	25	p	1	confirm	H	
+2	26	eps	o	confirm	H	
+2	27	tee		confirm	M	
+2	28	p		confirm	H	
+2	29	_		correct	H	plain cursive word ('harmj'/'barmi'), not sign nt -- classifier's own cluster_code already disagreed (_), share 0.60
+3	1	y	dot	confirm	H	
+3	2	_	dot	plain	H	
+3	3	_		plain	M	
+3	4	_	dot	plain	M	
+3	5	_		plain	H	
+3	6	_	dot	plain	M	
+3	7	_		plain	M	
+3	8	_		plain	H	
+3	9	_		correct	M	flourish above the capital T of plain word 'Torto', not a separate sign; share 0.63
+3	10	_		plain	H	
+3	11	#		confirm	M	
+3	12	lam		confirm	H	
+3	13	f		confirm	M	
+3	14	Z		confirm	M	
+3	15	y		confirm	H	
+3	16	e	dot	confirm	H	
+3	17	_		plain	M	
+3	18	rz		confirm	H	
+3	19	g	7	confirm	H	
+3	20	g		confirm	H	
+3	21	Z		confirm	H	
+3	22	S7		confirm	H	
+3	23	#		confirm	M	
+3	24	rz	dot	confirm	H	
+3	25	S7		confirm	H	
+3	26	lam		confirm	H	
+3	27	nt		confirm	M	oversized box (dist 8.84, highest on leaf), likely two merged shapes ('a' plus a hook); kept classifier's top code, flag for pass B split check
+3	28	Lx		confirm	M	
+3	29	g		confirm	M	heavy ink blot/smudge over an oversized box (dist 6.0, cluster disagrees _); could be damage rather than a sign -- flag for pass B/settling, not confidently deleted
+3	30	p		confirm	M	
+3	31	_		plain	M	
+3	32	_		plain	M	
+4	1	w		confirm	H	
+4	2	tee		confirm	H	
+4	3	rz		confirm	H	
+4	4	y		confirm	H	
+4	5	lam		confirm	H	
+4	6	lam	1	confirm	H	
+4	7	S7		confirm	H	
+4	8	U		confirm	M	
+4	9	w		confirm	H	
+4	10	bh		confirm	H	
+4	11	a	~	confirm	H	
+4	12	nt		confirm	M	
+4	13	bh		confirm	H	
+4	14	dl		confirm	H	
+4	15	Lx		confirm	H	
+4	16	y		confirm	M	
+4	17	w		confirm	M	
+4	18	tee		confirm	M	
+4	19	y	dot	confirm	M	
+4	20	eps	~	confirm	H	
+4	21	g		confirm	H	
+4	22	Z		confirm	H	
+4	23	phi		confirm	H	
+4	24	w		confirm	M	
+4	25	w		confirm	H	
+4	26	psi		confirm	H	
+4	27	S7		confirm	H	
+4	28	_		plain	H	
+4	29	S7		confirm	H	
+5	1	eps	~	confirm	H	
+5	2	wd		confirm	H	
+5	3	o.		confirm	H	
+5	4	w		confirm	H	
+5	5	g	5	confirm	H	
+5	6	g		confirm	M	
+5	7	_		plain	M	
+5	8	_		plain	H	
+5	9	e	+	confirm	M	
+5	10	_	dot	plain	H	
+5	11	psi		confirm	H	
+5	12	_		plain	H	
+5	13	w		confirm	H	
+5	14	g		confirm	M	
+5	15	m	~	confirm	H	
+5	16	w		confirm	H	
+5	17	m	1	confirm	H	
+5	18	w		confirm	H	
+5	19	lam	~	confirm	H	
+5	20	e		confirm	H	
+5	21	wd		confirm	H	
+5	22	bh		confirm	M	
+5	23	K	1	confirm	H	
+5	24	_		plain	M	
+6	1	_	dot	plain	M	
+6	2	_		plain	H	
+6	3	_	dot	plain	M	
+6	4	_	1	plain	M	
+6	5	_		plain	H	
+6	6	_		plain	H	
+6	7	_		plain	H	
+6	8	_		plain	M	
+6	9	Lx		confirm	H	
+6	10	lam		confirm	H	
+6	11	S7	~	confirm	H	
+6	12	lam		confirm	H	
+6	13	g	1|~	confirm	H	
+6	14	nt		confirm	H	
+6	15	S7		confirm	H	
+6	16	+		confirm	M	
+6	17	dl	5	confirm	M	
+6	18	_		plain	H	
+6	19	S7		confirm	H	
+6	20	S	~	confirm	M	
+6	21	H	1|o	confirm	H	
+6	22	m		confirm	H	
+6	23	w		confirm	H	
+6	24	tee		confirm	H	
+6	25	o.		confirm	H	
+7	1	_		plain	H	
+7	2	y		confirm	H	
+7	3	nt		confirm	M	
+7	4	o.		confirm	H	
+7	5	S7		confirm	H	
+7	6	#		confirm	H	
+7	7	Z	o	confirm	M	
+7	8	_		plain	H	
+7	9	L	~	confirm	H	
+7	10	_		plain	M	
+7	11	g		confirm	H	
+7	12	bh		confirm	H	
+7	13	S7	#	confirm	H	
+7	14	e		confirm	H	
+7	15	wd		confirm	H	
+7	16	y		confirm	H	
+7	17	y		confirm	M	
+7	18	o.		confirm	H	
+7	19	rz		confirm	H	
+7	20	g		confirm	H	
+7	21	e		confirm	H	
+7	22	tee		confirm	H	
+7	23	K		confirm	H	
+7	24	g		confirm	H	
+7	25	e	#	confirm	H	
+7	26	Z	#	confirm	M	
+7	27	S7	dot	confirm	H	
+7	28	#		confirm	M	
+7	29	lam	dot	confirm	H	
+7	30	y	1	confirm	H	
+7	31	S7	#	confirm	H	
+7	32	phi	dot	confirm	H	
+8	1	_	dot|dot	plain	H	
+8	2	L		confirm	M	
+8	3	bh		confirm	H	
+8	4	g		confirm	H	
+8	5	S7	~	confirm	H	
+8	6	lam		confirm	H	
+8	7	S7		confirm	H	
+8	8	_	+	plain	M	
+8	9	e	#	confirm	H	
+8	10	tee		confirm	H	
+8	11	g		confirm	H	
+8	12	y	~	confirm	H	
+8	13	_	~	plain	M	
+8	14	e	dot	confirm	H	
+8	15	p	1	confirm	H	
+8	16	bh	~	confirm	M	
+8	17	H	o|1	confirm	H	
+8	18	eps	7	confirm	H	
+8	19	y		confirm	H	
+8	20	psi		confirm	H	
+8	21	_		plain	H	
+8	22	S7		confirm	H	
+8	23	#	dot	confirm	H	
+8	24	eps	5	confirm	M	
+8	25	_		plain	H	
+8	26	f		confirm	H	
+8	27	w		confirm	H	
+8	28	o.		confirm	H	
+8	29	_	dot	plain	H	
+8	30	o.	dot	confirm	H	
+8	31	nt		confirm	M	
+9	1	_		plain	H	
+9	2	_		plain	H	
+9	3	o.		confirm	H	
+9	4	m	~	confirm	H	
+9	5	w		confirm	H	
+9	6	_	1	plain	H	
+9	7	_		plain	H	
+9	8	f		confirm	M	
+9	9	_	dot	plain	H	
+9	10	_	ot	plain	M	
+9	11	wd		confirm	H	
+9	12	bh		confirm	H	
+9	13	g		confirm	H	
+9	14	e	#	confirm	M	
+9	15	nt		confirm	H	
+9	16	o.		confirm	H	
+9	17	]	ot	confirm	H	
+9	18	g		confirm	M	
+9	19	Lx	5	confirm	H	
+9	20	p		confirm	M	
+9	21	p		confirm	H	
+9	22	_		plain	H	
+9	23	_		plain	H	
+9	24	_		plain	H	
+9	25	_		plain	M	
+9	26	_		plain	H	
+9	27	_		plain	M	
+9	28	_		plain	H	
+9	29	S7		confirm	M	
+9	30	_		plain	M	
+10	1	_		plain	H	
+10	2	_	dot	plain	M	
+10	3	_		plain	M	
+10	4	_		delete	H	paper fold crease, no ink at all under 8x zoom (dist 9.29, highest non-plain call on leaf) -- stray artifact, not a sign
+10	5	_		plain	M	
+10	6	_		plain	M	
+10	7	_		plain	M	
+10	8	Lx		confirm	H	
+10	9	phi		confirm	H	
+10	10	]	#	confirm	H	
+10	11	wd		confirm	H	
+10	12	o.		confirm	H	
+10	13	_		plain	H	
+10	14	H	1	confirm	H	
+10	15	g	o	confirm	H	
+10	16	g		confirm	H	
+10	17	lam	1	confirm	H	
+10	18	nt		confirm	M	
+10	19	o.		confirm	H	
+10	20	S7		confirm	H	
+10	21	#		confirm	H	
+10	22	Z	dot	confirm	H	
+11	1	nt	dot|1	confirm	H	
+11	2	o.		confirm	H	
+11	3	rz		confirm	H	
+11	4	_	dot	plain	H	
+11	5	tee		confirm	M	
+11	6	S7	#	confirm	H	
+11	7	o.	dot	confirm	H	
+11	8	_		plain	M	
+11	9	w		confirm	H	
+11	10	a	1	confirm	H	
+11	11	lam	1	confirm	H	
+11	12	dl		confirm	H	
+11	13	+		confirm	M	distinct mark/abbreviation immediately before the plain word 'fare', kept classifier's uncertain call (share 0.61)
+11	14	_		correct	H	part of plain word 'fare' -- share 0.84, classifier's own cluster_code already _
+11	15	_		correct	H	part of plain word 'fare', classifier cluster_code already _
+11	16	_		confirm	H	plain, part of 'fare quale[s]'
+11	17	_		confirm	M	plain, part of 'fare quale[s]', share 0.63
+11	18	_		correct	H	part of plain word 'quale', not sign w -- share 0.83, visually the 'l' of 'quale'
+11	19	_		confirm	H	plain, part of 'quale[s]'
+11	20	_		correct	M	tail flourish of 'quale[s]', not sign ch -- share 0.62
+12	1	_		correct	H	part of plain word 'impresa' -- share 0.84
+12	2	_		correct	H	part of plain word 'impresa' -- share 0.24, cluster disagreed with the chosen code 'f' too (said Z)
+12	3	_		correct	H	part of plain word 'impresa'
+12	4	_		plain	H	
+12	5	_		correct	H	part of plain word 'impresa'
+12	6	_		plain	H	
+12	7	_		plain	M	
+12	8	dl		confirm	M	
+12	9	lam		confirm	M	near a paper fold/crease; cluster disagreed (_) but real ink present, share 0.80; kept classifier's code, flag for pass B
+12	10	_	1	plain	H	
+12	11	tee		confirm	H	
+12	12	tee	1	confirm	M	
+12	13	+	dot	confirm	M	
+12	14	Lx		confirm	H	
+12	15	bh		confirm	H	
+12	16	o.		confirm	H	
+12	17	S7		confirm	H	
+12	18	y		confirm	H	
+12	19	_		plain	M	
+12	20	w		confirm	H	
+12	21	o.		confirm	H	
+12	22	_		plain	H	
+12	23	bh		confirm	H	
+12	24	tee		confirm	H	
+12	25	f		confirm	H	
+12	26	w		confirm	H	
+12	27	bh		confirm	H	
+13	1	_		plain	H	
+13	2	phi		confirm	H	
+13	3	_	1|o	plain	M	
+13	4	m	~	confirm	H	
+13	5	y		confirm	M	
+13	6	S		confirm	M	
+13	7	nt		confirm	H	
+13	8	o.		confirm	H	
+13	9	e	dot|#	confirm	H	
+13	10	sq	?	confirm	M	
+13	11	tee		confirm	H	
+13	12	H	1	confirm	H	
+13	13	a	o	confirm	H	
+13	14	S		confirm	H	
+13	15	e	dot	confirm	H	
+13	16	e		confirm	H	
+13	17	S7	dot	confirm	H	
+13	18	f		confirm	H	
+13	19	w		confirm	H	
+13	20	y		confirm	H	
+13	21	_		plain	H	
+13	22	S7		confirm	H	
+13	23	#		confirm	H	
+13	24	w		confirm	H	
+14	1	]	o|o	confirm	H	
+14	2	Lx		confirm	M	
+14	3	p	dot	confirm	H	
+14	4	_		plain	H	
+14	5	_		correct	H	within plain word 'questo', not sign # -- share 0.61, cluster said Z
+14	6	_		correct	M	within plain word 'questo', not sign w -- share 0.84
+14	7	_		plain	H	
+14	8	_		correct	H	within plain word 'hanno', not sign L -- share 0.41, cluster already _
+14	9	_		plain	H	
+14	10	_		plain	H	
+14	11	_		plain	M	
+14	12	_		correct	H	within plain text ('detto ... non'), not sign S4 -- share 0.61, cluster already _
+14	13	_		correct	M	within plain text, not sign m -- share 1.00 but visually continuous with the plain run
+14	14	_	dot	plain	H	
+14	15	_		plain	H	
+14	16	eps		confirm	H	
+14	17	+		confirm	H	
+14	18	_		plain	M	
+14	19	_		plain	M	
+14	20	_		plain	H	
+14	21	ch		confirm	M	
+14	22	w		confirm	M	
+15	1	_		plain	M	
+15	2	psi		confirm	H	
+15	3	_	dot	plain	H	
+15	4	_		plain	H	
+15	5	_		plain	H	
+15	6	_		correct	M	within plain word 'metterlo', not sign Lx -- share 0.59
+15	7	_		correct	M	within plain word 'metterlo', not sign + -- share 0.60
+15	8	S7		confirm	H	
+15	9	wd	#	confirm	H	
+15	10	bh		confirm	H	
+15	11	y		confirm	H	
+15	12	nt		confirm	M	
+15	13	bh		confirm	H	
+15	14	w		confirm	H	
+15	15	e	dot	confirm	H	
+15	16	Lx		confirm	M	
+15	17	dl		confirm	H	
+15	18	rz		confirm	M	
+15	19	_		plain	H	
+15	20	S		confirm	H	
+15	21	_		plain	M	
+16	1	_		correct	H	within plain word 'risponda', not sign S7 -- share 0.79, confirmed by zoom
+16	2	_		plain	M	
+16	3	_	dot	plain	H	
+16	4	_		plain	M	
+16	5	_		plain	M	
+16	6	_		plain	M	
+16	7	_		correct	H	within plain text, not sign N -- share 1.00 but confirmed plain by zoom of the whole run
+16	8	_		plain	H	
+16	9	_		correct	H	within plain text ('la'), not sign p
+16	10	_	dot	plain	H	
+16	11	_		correct	H	within plain word 'oppenione', not sign g -- share 0.38, cluster said p
+16	12	_		correct	H	within plain word 'oppenione', not sign S
+16	13	_		plain	H	
+16	14	_		confirm	H	plain, cluster already disagreed with v (said _)
+16	15	_		correct	H	within plain text, not sign L -- share 0.64
+16	16	_		correct	H	within plain text, not sign N
+16	17	_		plain	H	
+16	18	_	dot	plain	H	
+16	19	_		correct	M	within plain text ('f.-5-5-' tail), not sign p -- share 0.61
+16	20	_		plain	H	
+16	21	_		correct	M	within plain text tail, not sign Z -- share 0.57
+16	22	_		plain	M	
+16	23	_		correct	M	within plain text tail, not sign g -- share 0.56
+16	24	_		plain	H	
+16	25	_		plain	M	
+17	1	_		correct	H	within plain word 'questa', not sign N
+17	2	_		correct	H	within plain word 'questa', not sign w
+17	3	_		plain	H	
+17	4	_		plain	H	
+17	5	_		correct	H	within plain word 'seconda', not sign N
+17	6	_		plain	H	
+17	7	_		plain	M	
+17	8	_		plain	H	
+17	9	_		correct	M	within plain word 'bisognera', not sign g -- share 0.63
+17	10	_		plain	M	
+17	11	_		correct	H	within plain text, not sign N
+17	12	_		correct	H	within plain text, not sign p
+17	13	_		plain	M	
+17	14	_		plain	H	
+17	15	_		plain	H	
+17	16	_		correct	M	within plain text, not sign p -- share 0.60
+17	17	_		correct	M	within plain text, not sign y -- share 0.42
+17	18	_	1	plain	H	
+17	19	_		plain	M	
+17	20	_		plain	H	
+17	21	_		plain	H	
+17	22	_		correct	M	within plain text tail, not sign lam -- share 0.41
+17	23	_		plain	M	
+18	1	_		plain	M	
+18	2	_		plain	H	
+18	3	_	dot	plain	H	
+18	4	_	dot	plain	M	
+18	5	_		correct	M	within plain text, not sign a
+18	6	_		plain	H	
+18	7	_		plain	H	
+18	8	_		plain	M	
+18	9	_		plain	M	
+18	10	_		correct	M	within plain word 'mattina'-like text, not sign m -- share 0.40
+18	11	_	dot	plain	H	
+18	12	_		plain	H	
+18	13	_		plain	M	
+18	14	_		plain	H	
+18	15	_		correct	M	within plain text, not sign S -- share 0.62
+18	16	_	dot	plain	M	
+18	17	_		correct	M	within plain text, not sign m -- share 0.40
+18	18	_		correct	M	within plain text, not sign f -- share 0.41
+18	19	_		correct	M	within plain text, not sign lam -- share 0.60
+18	20	_		confirm	M	plain, cluster already agrees, share 0.62 (S4 base code low confidence)
+18	21	_		correct	M	within plain text, not sign sq -- share 0.61
+18	22	_		correct	M	within plain text, not sign Lx -- share 0.60
+18	23	_	#	plain	H	
+18	24	_		correct	M	within plain text, not sign lam -- share 0.60
+18	25	_		plain	M	
+18	26	_		plain	H	
+18	27	_		correct	M	within plain text, not sign m
+18	28	_		plain	M	
+18	29	_	dot	plain	H	
+18	30	_		plain	H	
+19	1	_		plain	H	
+19	2	_		plain	M	
+19	3	_		plain	H	
+19	4	_		plain	M	
+19	5	_		plain	H	
+19	6	_		correct	M	within plain text, not sign Lx -- share 0.42
+19	7	_		plain	H	
+19	8	_		plain	M	
+19	9	_		plain	H	
+19	10	_		correct	M	within plain text, not sign g -- share 0.62
+19	11	_		plain	M	
+19	12	_		correct	M	within plain text, not sign eps
+19	13	_		plain	M	
+19	14	_		correct	M	within plain text, not sign a -- share 0.43
+19	15	_	1	plain	M	
+19	16	_		correct	M	within plain text, not sign m -- share 0.41
+19	17	_		plain	M	
+19	18	_		plain	M	
+19	19	_		plain	H	
+19	20	_		plain	M	
+19	21	_		correct	M	within plain text, not sign eps
+19	22	_		correct	M	within plain text, not sign +
+19	23	_		plain	H	
+19	24	_		plain	H	
+19	25	_		plain	H	
+19	26	_	dot	plain	H	
