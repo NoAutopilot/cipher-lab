@@ -146,6 +146,14 @@ Discovery 'held by other archives'; QUEUE-scores.json non_decode rows 41-66 stil
 **Lessons written into templates:** .claude/briefs/detector-test.md (index pre-filter, whole-volume decipherment grep, no rebase
 during a background fetch). ROOM.md: a claim commit stages ROOM.md only (5573927 deleted N41-N66; restored).
 
+## LANE W (English-language verification), 24 Sep 2026, 05:35 UTC
+
+Orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq, cap $80. Spawning paused at rate_limit `allowed_warning` (resets 06:10 UTC).
+- Eckert E4/E5: Talk gap not closable from this environment (no Wayback captures of talk.zooniverse.io; live host
+  egress-blocked). Stay N3; ASKS 27 now carries the three direct subject links (AUDIT.md 'Talk gap, second attempt').
+- Results rows, English targets: 16 checked, 7 corrected (hub-seed/results-audit-W-2026-09-24.tsv).
+- Thurloe P4 (Stamford, 13 Mar 1655): N3 after V2; adversarial second audit is ASSIGNMENTS 136, starts after 06:10 UTC.
+
 ## Lane structure, 24 Sep 2026, 03:05 UTC (owner: scale to about fifty live sessions)
 
 The parent orchestrator (session_01EFmUvFAifLKGdBSsW9mjEG, "cipher-lab-7a") runs four lane orchestrators, each Opus with a
