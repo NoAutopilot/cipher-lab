@@ -1,0 +1,795 @@
+leaf	line	pos	token	conf	note
+f253L	L01	1	Milord	L	clear, own crop shows only clipped ascender tips (crop misaligned/too high); reading cross-checked against context row visible at top of L02 crop
+f253L	L01	2	Myddleton	L	clear, name, same caveat as pos1
+f253L	L01	3	et	L	clear, same caveat
+f253L	L01	4	Jay	L	clear, "j'ay" written run-on as "Jay", same caveat
+f253L	L01	5	eu	L	clear, same caveat
+f253L	L01	6	vne	L	clear, ambiguous ending (une), same caveat
+f253L	L02	1	l'ay	L	clear, initial letter ambiguous j/l, could be "j'ay"
+f253L	L02	2	veu	M	clear
+f253L	L02	3	ce	H	clear
+f253L	L02	4	matin	H	clear
+f253L	L02	5	722	H	cipher
+f253L	L02	6	148	M	cipher, digit ambiguous 143/148
+f253L	L02	7	185	M	cipher
+f253L	L02	8	38	H	cipher
+f253L	L02	9	151	M	cipher
+f253L	L02	10	34	H	cipher
+f253L	L02	11	224	H	cipher
+f253L	L03	1	longue	M	clear, first letter cut/ambiguous at left edge of crop
+f253L	L03	2	conference	H	clear, old spelling "confevence"-looking but reads conference
+f253L	L03	3	auec	H	clear, old spelling of avec
+f253L	L03	4	luy.	H	clear, with period
+f253L	L04	1	198	H	cipher
+f253L	L04	2	17	H	cipher
+f253L	L04	3	168	H	cipher
+f253L	L04	4	18	H	cipher
+f253L	L04	5	119	H	cipher
+f253L	L04	6	50	H	cipher
+f253L	L04	7	301	H	cipher
+f253L	L04	8	28	H	cipher
+f253L	L04	9	277	H	cipher
+f253L	L04	10	290	H	cipher
+f253L	L04	11	238	H	cipher
+f253L	L04	12	10	H	cipher
+f253L	L04	13	301	H	cipher
+f253L	L04	14	14	H	cipher
+f253L	L04	15	200.	H	cipher, with trailing period
+f253L	L05	1	presque	H	clear, main/target row (middle of 3 visible rows; rows above/below appear clipped context)
+f253L	L05	2	impraticable	H	clear
+f253L	L05	3	sur	H	clear
+f253L	L05	4	la	H	clear
+f253L	L05	5	Coste	H	clear, old spelling of coste/cote
+f253L	L05	6	de	H	clear
+f253L	L05	7	Kent	M	clear, place name, could be "Rent"
+f253L	L06	1	Prince	M	clear, short target line (middle row); rows above/below show unrelated long cipher content, this may be a caption/gloss naming a referent
+f253L	L06	2	d'Orange	M	clear, name
+f253L	L07	1	present	H	clear, main row
+f253L	L07	2	necessaire	H	clear
+f253L	L07	3	de	H	clear
+f253L	L07	4	j'entev	L	clear, interlinear caption above row, first word uncertain
+f253L	L07	5	le	M	clear, caption above row
+f253L	L07	6	desbarquement	M	clear, caption above row
+f253L	L07	7	dans	M	clear, caption above row
+f253L	L07	8	le[s]	L	clear, caption above row, cut at right edge, ending uncertain
+f253L	L07	9	289	H	cipher
+f253L	L07	10	17	H	cipher
+f253L	L07	11	289	H	cipher
+f253L	L07	12	28	H	cipher
+f253L	L07	13	196	H	cipher
+f253L	L07	14	133	H	cipher
+f253L	L07	15	107	H	cipher
+f253L	L07	16	28	H	cipher
+f253L	L07	17	259	H	cipher
+f253L	L08	1	211	H	cipher, main row
+f253L	L08	2	137	H	cipher
+f253L	L08	3	195,	H	cipher, with comma
+f253L	L08	4	25	H	cipher
+f253L	L08	5	269	H	cipher
+f253L	L08	6	302	H	cipher
+f253L	L08	7	17	H	cipher
+f253L	L08	8	117	H	cipher
+f253L	L08	9	16	H	cipher
+f253L	L08	10	38	H	cipher
+f253L	L08	11	52	H	cipher
+f253L	L08	12	29	H	cipher
+f253L	L08	13	42	H	cipher
+f253L	L08	14	237	H	cipher
+f253L	L08	15	282	H	cipher
+f253L	L08	16	les	M	clear, caption/gloss line below main row, possibly names referent
+f253L	L08	17	haras	M	clear, caption below row
+f253L	L08	18	d'angleterre	M	clear, caption below row
+f253L	L09	1	par	H	clear, main row
+f253L	L09	2	consequent	H	clear
+f253L	L09	3	on	M	clear, interlinear caption above, gloss
+f253L	L09	4	trouveroit	M	clear, caption above row
+f253L	L09	5	les	M	clear, caption above row
+f253L	L09	6	chemins	M	clear, caption above row
+f253L	L09	7	necessaires	M	clear, caption above row
+f253L	L09	8	238	H	cipher
+f253L	L09	9	32	H	cipher
+f253L	L09	10	269	H	cipher
+f253L	L09	11	34	H	cipher
+f253L	L09	12	301	H	cipher
+f253L	L09	13	275	H	cipher
+f253L	L09	14	33	H	cipher
+f253L	L09	15	196	H	cipher
+f253L	L09	16	30	H	cipher
+f253L	L09	17	14	H	cipher
+f253L	L09	18	176	H	cipher
+f253L	L10	1	pour	M	clear, interlinear caption above main row
+f253L	L10	2	l'armée	M	clear, caption above row
+f253L	L10	3	oubien	M	clear, caption above row
+f253L	L10	4	dans	M	clear, caption above row
+f253L	L10	5	vne	M	clear, caption above row
+f253L	L10	6	deste	L	clear, caption above row, cut at right edge, incomplete word (destinée?)
+f253L	L10	7	300	H	cipher, main row
+f253L	L10	8	35	H	cipher
+f253L	L10	9	37	H	cipher
+f253L	L10	10	224	H	cipher
+f253L	L10	11	117	H	cipher
+f253L	L10	12	30	H	cipher
+f253L	L10	13	277	H	cipher
+f253L	L10	14	44	H	cipher
+f253L	L10	15	267	H	cipher
+f253L	L10	16	30	H	cipher
+f253L	L10	17	251.	H	cipher, with period
+f253L	L10	18	46	H	cipher
+f253L	L10	19	104	H	cipher
+f253L	L10	20	18	H	cipher
+f253L	L10	21	237	H	cipher
+f253L	L10	22	112	H	cipher
+f253L	L10	23	Prouinces	M	clear, caption/gloss line below main row
+f253L	L10	24	de	M	clear, caption below row
+f253L	L10	25	l'Ouest	M	clear, caption below row
+f253L	L11	1	y	M	clear, interlinear caption above main row
+f253L	L11	2	en	M	clear, caption above row
+f253L	L11	3	a	M	clear, caption above row
+f253L	L11	4	bondance	M	clear, caption above row (abondance)
+f253L	L11	5	ensorte	M	clear, caption above row
+f253L	L11	6	que	M	clear, caption above row
+f253L	L11	7	parceque	H	clear, main row
+f253L	L11	8	le	H	clear
+f253L	L11	9	pays	H	clear
+f253L	L11	10	38	H	cipher
+f253L	L11	11	142	H	cipher
+f253L	L11	12	10	H	cipher
+f253L	L11	13	113	H	cipher
+f253L	L11	14	132	H	cipher
+f253L	L11	15	50	H	cipher
+f253L	L11	16	33	H	cipher
+f253L	L11	17	133	H	cipher
+f253L	L11	18	259	H	cipher
+f253L	L11	19	13	H	cipher
+f253L	L11	20	104	H	cipher
+f253L	L11	21	armée	M	clear, caption below row, cut at bottom edge
+f253L	L11	22	y	M	clear, caption below row
+f253L	L11	23	subsisteroit	M	clear, caption below row
+f253L	L11	24	aisement	M	clear, caption below row
+f253L	L12	1	18	H	cipher, main row
+f253L	L12	2	38	H	cipher
+f253L	L12	3	281	H	cipher
+f253L	L12	4	12	H	cipher
+f253L	L12	5	279	H	cipher
+f253L	L12	6	30	H	cipher
+f253L	L12	7	289	H	cipher
+f253L	L12	8	275	H	cipher
+f253L	L12	9	32.	H	cipher, with period
+f253L	L12	10	10	H	cipher
+f253L	L12	11	11	H	cipher
+f253L	L12	12	278	H	cipher
+f253L	L12	13	211,	H	cipher, with comma
+f253L	L12	14	ou	H	clear
+f253L	L12	15	mesme	M	clear
+f253L	L12	16	faire	M	clear, caption below row, gloss
+f253L	L12	17	la	M	clear, caption below row
+f253L	L12	18	descente	M	clear, caption below row
+f253L	L12	19	dans	M	clear, caption below row
+f253L	L12	20	ces	M	clear, caption below row
+f253L	L12	21	deux	M	clear, caption below row
+f253L	L12	22	lieux	M	clear, caption below row
+f253L	L12	23	là	M	clear, caption below row
+f253L	L12	24	a	M	clear, caption below row
+f253L	L12	25	la	M	clear, caption below row
+f253L	L12	26	fois	M	clear, caption below row
+f253R	L01	1	240	L	cipher, own crop almost blank (top-of-page margin, crop misaligned/too high); only this one numeral visible at far right edge, rest of line not captured
+f253R	L02	1	de	M	clear, interlinear caption above main row
+f253R	L02	2	faire	M	clear, caption above row
+f253R	L02	3	embarquer	M	clear, caption above row
+f253R	L02	4	asse	L	clear, caption above row, cut at right edge, uncertain (asses/adresse?)
+f253R	L02	5	155	H	cipher, main row
+f253R	L02	6	44	H	cipher
+f253R	L02	7	30.	H	cipher, with period
+f253R	L02	8	et	H	clear
+f253R	L02	9	pour	H	clear
+f253R	L02	10	cela	H	clear
+f253R	L02	11	133	H	cipher
+f253R	L02	12	161	H	cipher
+f253R	L02	13	18	H	cipher
+f253R	L02	14	48	H	cipher
+f253R	L02	15	107	H	cipher
+f253R	L02	16	29	H	cipher
+f253R	L02	17	259	H	cipher
+f253R	L02	18	28	H	cipher
+f253R	L02	19	10	H	cipher
+f253R	L02	20	les	M	clear, caption below row
+f253R	L02	21	Troupes	M	clear, caption below row
+f253R	L02	22	destinées	M	clear, caption below row
+f253R	L02	23	pour	M	clear, caption below row
+f253R	L02	24	l'Ouest	M	clear, caption below row
+f253R	L02	25	et	M	clear, caption below row
+f253R	L02	26	ou	L	clear, caption below row, cut at right edge
+f253R	L03	1	Calais	M	clear, interlinear caption above main row
+f253R	L03	2	celles	M	clear, caption above row
+f253R	L03	3	destinées	M	clear, caption above row
+f253R	L03	4	pour	M	clear, caption above row
+f253R	L03	5	York	M	clear, caption above row
+f253R	L03	6	143	H	cipher, main row
+f253R	L03	7	10	H	cipher
+f253R	L03	8	116	H	cipher
+f253R	L03	9	195	H	cipher
+f253R	L03	10	11	H	cipher
+f253R	L03	11	30	H	cipher
+f253R	L03	12	117	H	cipher
+f253R	L03	13	13	H	cipher
+f253R	L03	14	196	H	cipher
+f253R	L03	15	30	H	cipher
+f253R	L03	16	133	H	cipher
+f253R	L03	17	30	H	cipher
+f253R	L03	18	190	L	cipher, partly obscured by ink blot
+f253R	L03	19	224	H	cipher
+f253R	L03	20	18	H	cipher
+f253R	L03	21	30	H	cipher
+f253R	L03	22	251	H	cipher
+f253R	L04	1	38	H	cipher, main/only row
+f253R	L04	2	52	H	cipher
+f253R	L04	3	29	H	cipher
+f253R	L04	4	42.	H	cipher, with period
+f253R	L04	5	voila	H	clear
+f253R	L04	6	Monteigneur	H	clear, old spelling of Monseigneur
+f253R	L04	7	280	H	cipher
+f253R	L04	8	17	H	cipher
+f253R	L04	9	24	H	cipher
+f253R	L04	10	269	H	cipher
+f253R	L04	11	186	H	cipher
+f253R	L04	12	32.	H	cipher, with period
+f253R	L05	1	il	H	clear, main/only row
+f253R	L05	2	peut	H	clear
+f253R	L05	3	y	H	clear
+f253R	L05	4	auoir	H	clear, old spelling of avoir
+f253R	L05	5	quelque	H	clear
+f253R	L05	6	chose	H	clear
+f253R	L05	7	de	H	clear
+f253R	L05	8	bon;	H	clear, with semicolon
+f253R	L05	9	mais	H	clear
+f253R	L05	10	ie	H	clear, old spelling of je
+f253R	L05	11	ne	H	clear, cut at right edge, sentence continues
+f253R	L06	1	say	M	clear, uncertain word (sçay?), first physical row in crop
+f253R	L06	2	si	H	clear
+f253R	L06	3	l'execution	H	clear
+f253R	L06	4	n'en	H	clear
+f253R	L06	5	seroit	H	clear
+f253R	L06	6	pas	H	clear
+f253R	L06	7	plus	H	clear
+f253R	L06	8	difficile	H	clear
+f253R	L06	9	que	H	clear
+f253R	L06	10	du	H	clear, second physical row in crop, both rows appear complete/unclipped so both included
+f253R	L06	11	premier.	H	clear, with period
+f253R	L07	1	Il	M	clear, interlinear caption above main row
+f253R	L07	2	compte	M	clear, caption above row
+f253R	L07	3	sur	M	clear, caption above row
+f253R	L07	4	la	M	clear, caption above row
+f253R	L07	5	seurté	L	clear, caption above row, uncertain reading
+f253R	L07	6	de	M	clear, caption above row
+f253R	L07	7	plusieurs	M	clear, caption above row, continues into caption below
+f253R	L07	8	d'ailleurs	H	clear, main row
+f253R	L07	9	191	H	cipher
+f253R	L07	10	119	H	cipher
+f253R	L07	11	15	H	cipher
+f253R	L07	12	24	H	cipher
+f253R	L07	13	289	H	cipher
+f253R	L07	14	281	H	cipher
+f253R	L07	15	29	H	cipher
+f253R	L07	16	195	H	cipher
+f253R	L07	17	154	H	cipher
+f253R	L07	18	133	H	cipher
+f253R	L07	19	197	H	cipher
+f253R	L07	20	289	H	cipher
+f253R	L07	21	133	H	cipher
+f253R	L07	22	personnes	M	clear, caption below row, continues "plusieurs" from above
+f253R	L07	23	dans	M	clear, caption below row
+f253R	L07	24	ce	M	clear, caption below row
+f253R	L07	25	pays	M	clear, caption below row
+f253R	L07	26	la	M	clear, caption below row
+f253R	L08	1	ce	H	clear, main row
+f253R	L08	2	que	H	clear
+f253R	L08	3	ientends	H	clear, old spelling (j'entends)
+f253R	L08	4	dire	H	clear
+f253R	L08	5	et	H	clear
+f253R	L08	6	a	H	clear
+f253R	L08	7	luy	H	clear
+f253R	L08	8	et	H	clear
+f253R	L08	9	aux	H	clear
+f253R	L08	10	autres	H	clear
+f253R	L08	11	qu'ils	M	clear, cut at right edge
+f253R	L08	12	n'y	M	clear, cut at right edge, sentence continues beyond crop
+f253R	L08	13	d'intelligence	M	clear, caption below row
+f253R	L08	14	n'y	M	clear, caption below row
+f253R	L08	15	mesme	M	clear, caption below row
+f253R	L08	16	de	M	clear, caption below row, cut at right edge
+f253R	L09	1	ont	H	clear, main row
+f253R	L09	2	guere	H	clear
+f253R	L09	3	134	H	cipher
+f253R	L09	4	17	H	cipher
+f253R	L09	5	289	H	cipher
+f253R	L09	6	13	H	cipher
+f253R	L09	7	197	H	cipher
+f253R	L09	8	165	H	cipher
+f253R	L09	9	50	H	cipher
+f253R	L09	10	117	H	cipher
+f253R	L09	11	225	H	cipher
+f253R	L09	12	221	H	cipher
+f253R	L09	13	133	H	cipher
+f253R	L09	14	125	H	cipher
+f253R	L09	15	Correspondance	M	clear, small tucked caption/gloss, position approximate
+f253R	L09	16	Ils	M	clear, caption/clause below-right, same row as pos15 but larger scale, possibly separate clause
+f253R	L09	17	n'en	M	clear, caption row
+f253R	L09	18	recevroient	M	clear, caption row
+f253R	L09	19	aucune	M	clear, caption row
+f253R	L09	20	nouvelle	M	clear, caption row
+f253R	L10	1	ny	M	clear, interlinear caption above main row, cut at left start
+f253R	L10	2	par	M	clear, caption above row
+f253R	L10	3	la	M	clear, caption above row
+f253R	L10	4	hollande	M	clear, caption above row
+f253R	L10	5	ny	M	clear, caption above row
+f253R	L10	6	d'ailleurs	M	clear, caption above row
+f253R	L10	7	225	H	cipher, main row
+f253R	L10	8	244	H	cipher
+f253R	L10	9	28	H	cipher
+f253R	L10	10	195	H	cipher
+f253R	L10	11	183	H	cipher
+f253R	L10	12	225	H	cipher
+f253R	L10	13	132	H	cipher
+f253R	L10	14	11	H	cipher
+f253R	L10	15	13	H	cipher
+f253R	L10	16	196	H	cipher
+f253R	L10	17	35	H	cipher
+f253R	L10	18	29	H	cipher
+f253R	L10	19	30.	H	cipher, with period
+f253R	L10	20	et	H	clear
+f253R	L10	21	tout	H	clear
+f253R	L10	22	ce	H	clear
+f253R	L10	23	du	M	clear, caption below row, gloss
+f253R	L10	24	chevalier	M	clear, caption below row
+f253R	L11	1	Irlandois	M	clear, tucked caption above main row (partial illegible fragment to its left not transcribed)
+f253R	L11	2	Esteblij	L	clear, caption above row, uncertain reading (établi?)
+f253R	L11	3	166	H	cipher, main row
+f253R	L11	4	266	H	cipher
+f253R	L11	5	28	H	cipher
+f253R	L11	6	134	H	cipher
+f253R	L11	7	17	H	cipher
+f253R	L11	8	qui	H	clear
+f253R	L11	9	est	H	clear
+f253R	L11	10	un	H	clear
+f253R	L11	11	44	H	cipher
+f253R	L11	12	29	H	cipher
+f253R	L11	13	195	H	cipher
+f253R	L11	14	17	H	cipher
+f253R	L11	15	135	H	cipher
+f253R	L11	16	11	H	cipher
+f253R	L11	17	30	H	cipher
+f253R	L11	18	18	H	cipher
+f253R	L11	19	288	H	cipher
+f253R	L11	20	a	M	clear, caption below row
+f253R	L11	21	Dunkerque	M	clear, caption below row
+f253R	L12	1	Je	H	clear, main/only row
+f253R	L12	2	suis	H	clear
+f253R	L12	3	avec	H	clear
+f253R	L12	4	un	H	clear
+f253R	L12	5	profond	H	clear
+f253R	L12	6	respect	H	clear
+f253R	L13	1	Monseigneur,	H	clear, address, left part of line
+f253R	L13	2	Votre	H	clear, closing formula, right part of same line
+f253R	L13	3	tres	H	clear
+f253R	L13	4	humble	H	clear
+f253R	L13	5	et	H	clear
+f253R	L13	6	tres	H	clear
+f253R	L13	7	obeissant	H	clear
+f253R	L13	8	seruiteur	H	clear, old spelling of serviteur
+f253R	L14	1	Vergier	M	clear, signature, single word, underlined; could read Dergier
+f265L	L01	1	[illegible]	L	own crop entirely blank (top-of-page margin), no text captured at all
+f265L	L02	1	cet	M	clear, faint pencil/light-ink draft hand, different style from f253 leaves
+f265L	L02	2	aduis	M	clear, faint, old spelling of avis
+f265L	L02	3	d'ennuy	M	clear, faint
+f265L	L02	4	et	M	clear, faint
+f265L	L02	5	d'inquietude	M	clear, faint
+f265L	L02	6	de	M	clear, faint
+f265L	L02	7	ma	M	clear, faint
+f265L	L02	8	part	M	clear, faint, cut at right edge, sentence continues
+f265L	L03	1	cependant	H	clear, main row, faint draft hand
+f265L	L03	2	cela	H	clear
+f265L	L03	3	me	H	clear
+f265L	L03	4	frapoit	H	clear
+f265L	L03	5	depuis	H	clear
+f265L	L03	6	long	H	clear
+f265L	L03	7	temps	H	clear
+f265L	L03	8	et	H	clear, cut at right edge, sentence continues
+f265L	L04	1	surtout	H	clear, faint draft hand
+f265L	L04	2	depuis	H	clear
+f265L	L04	3	qu'on	H	clear
+f265L	L04	4	sait	H	clear
+f265L	L04	5	iey	M	clear, old spelling of ici
+f265L	L04	6	qu'on	H	clear
+f265L	L04	7	arme	H	clear
+f265L	L04	8	a	H	clear, cut at right edge, sentence continues
+f265L	L05	1	Dunkerque	H	clear, main row (top row in crop; continues sentence from L04 "qu'on arme a Dunkerque")
+f265L	L05	2	ou	H	clear
+f265L	L05	3	je	H	clear
+f265L	L05	4	pourrois	H	clear
+f265L	L05	5	estre	H	clear
+f265L	L05	6	inutile	M	clear, partly obscured by round stamp/seal mark
+f265L	L05	7	pendant	H	clear, cut at right edge, sentence continues
+f265L	L06	1	ie	H	clear, main row (top row in crop); continues sentence begun in an unlabeled intervening line ending "c'est pourquoy"
+f265L	L06	2	n'ay	H	clear
+f265L	L06	3	pas	H	clear
+f265L	L06	4	cru	H	clear
+f265L	L06	5	devoir	H	clear
+f265L	L06	6	essayer	H	clear
+f265L	L06	7	d'y	H	clear
+f265L	L06	8	rester	H	clear
+f265L	L06	9	dauantage.	H	clear, with period
+f265L	L07	1	fait	H	clear, main bold-ink row; a separate fainter pencil-layer text ("croy que nous ne desapprouverés pas") overlaps above, not transcribed as its own line
+f265L	L07	2	entendre	H	clear
+f265L	L07	3	que	H	clear
+f265L	L07	4	me	H	clear
+f265L	L07	5	voyant	H	clear
+f265L	L07	6	icy	H	clear
+f265L	L07	7	inutile	H	clear
+f265L	L07	8	152	H	cipher
+f265L	L07	9	10	H	cipher
+f265L	L07	10	33	H	cipher
+f265L	L07	11	18	H	cipher
+f265L	L07	12	50	H	cipher
+f265L	L07	13	289	H	cipher
+f265L	L07	14	17	H	cipher
+f265L	L07	15	16	H	cipher
+f265L	L07	16	267	H	cipher
+f265L	L07	17	259	H	cipher
+f265L	L07	18	20	H	cipher
+f265L	L07	19	206	H	cipher
+f265L	L07	20	303	H	cipher
+f265L	L07	21	38	H	cipher
+f265L	L07	22	10	H	cipher
+f265L	L07	23	228	H	cipher
+f265L	L07	24	44	H	cipher
+f265L	L07	25	118.	H	cipher, with period
+f265L	L08	1	pour	H	clear, main bold-ink row
+f265L	L08	2	son	H	clear
+f265L	L08	3	service	H	clear
+f265L	L08	4	11	H	cipher
+f265L	L08	5	17	H	cipher
+f265L	L08	6	34	H	cipher
+f265L	L08	7	290	H	cipher
+f265L	L08	8	196	H	cipher
+f265L	L08	9	251	H	cipher
+f265L	L08	10	280	H	cipher
+f265L	L08	11	17	H	cipher
+f265L	L08	12	278	H	cipher
+f265L	L08	13	29	H	cipher
+f265L	L08	14	302	H	cipher
+f265L	L08	15	117	H	cipher
+f265L	L08	16	j'auois	L	clear, fainter pencil-layer caption text to the right, uncertain
+f265L	L08	17	demandé	L	clear, faint pencil-layer caption, uncertain
+f265L	L09	1	permission	H	clear, main bold row; fainter pencil-layer text above ("il y a quelque temps...") not transcribed as separate line
+f265L	L09	2	d'en	H	clear
+f265L	L09	3	retourner	H	clear
+f265L	L09	4	a	H	clear
+f265L	L09	5	Dunkerque	H	clear
+f265L	L09	6	238	H	cipher
+f265L	L09	7	133	H	cipher
+f265L	L09	8	206	H	cipher
+f265L	L09	9	50	H	cipher
+f265L	L09	10	267	H	cipher
+f265L	L09	11	291	H	cipher
+f265L	L09	12	35	H	cipher
+f265L	L09	13	29	H	cipher
+f265L	L09	14	224	H	cipher
+f265L	L09	15	28	H	cipher
+f265L	L09	16	10	H	cipher
+f265L	L09	17	136	H	cipher
+f265L	L09	18	50	H	cipher
+f265L	L09	19	259	H	cipher
+f265L	L09	20	28	H	cipher
+f265L	L10	1	pour	H	clear, main bold row
+f265L	L10	2	y	H	clear
+f265L	L10	3	ayder	H	clear
+f265L	L10	4	a	H	clear
+f265L	L10	5	auancer	H	clear
+f265L	L10	6	l'armement	H	clear
+f265L	L10	7	251	H	cipher
+f265L	L10	8	38	H	cipher
+f265L	L10	9	10	H	cipher
+f265L	L10	10	38	H	cipher
+f265L	L10	11	133	H	cipher
+f265L	L10	12	28	H	cipher
+f265L	L10	13	10	H	cipher
+f265L	L10	14	601	M	cipher, follows a struck-through/cancelled digit group in the manuscript
+f265L	L10	15	10	H	cipher
+f265L	L10	16	300	H	cipher
+f265L	L10	17	17	H	cipher
+f265L	L10	18	117	H	cipher
+f265L	L10	19	29	H	cipher
+f265L	L10	20	195	H	cipher
+f265L	L10	21	29	H	cipher
+f265L	L10	22	206	H	cipher
+f265L	L11	1	inutile	H	clear, main bold row; fainter pencil-layer text above ("et qu'il m'a repondu que si je me croyois") not transcribed as separate line
+f265L	L11	2	a	H	clear
+f265L	L11	3	Boulogne	H	clear
+f265L	L11	4	Je	H	clear
+f265L	L11	5	pourrois	H	clear
+f265L	L11	6	11	H	cipher
+f265L	L11	7	17	H	cipher
+f265L	L11	8	35	H	cipher
+f265L	L11	9	290	H	cipher
+f265L	L11	10	196	H	cipher
+f265L	L11	11	10	H	cipher
+f265L	L11	12	110	H	cipher
+f265L	L11	13	35	H	cipher
+f265L	L11	14	198	H	cipher
+f265L	L11	15	21	H	cipher
+f265L	L11	16	224	H	cipher
+f265L	L11	17	186	H	cipher
+f265L	L11	18	247	H	cipher
+f265L	L11	19	35	H	cipher
+f265L	L11	20	303	H	cipher
+f265L	L11	21	11	H	cipher
+f265L	L11	22	30	H	cipher
+f265L	L12	1	d'angleterre	H	clear, main bold row; fainter pencil-layer text above ("m'en retourner a Dunkerque pourvueque...") not transcribed as separate line
+f265L	L12	2	approuuast	H	clear
+f265L	L12	3	mon	H	clear
+f265L	L12	4	despart	H	clear
+f265L	L12	5	que	H	clear
+f265L	L12	6	comme	H	clear
+f265L	L12	7	10	H	cipher
+f265L	L12	8	24	H	cipher
+f265L	L12	9	269	H	cipher
+f265L	L12	10	34	H	cipher
+f265L	L12	11	300	H	cipher
+f265L	L12	12	30	H	cipher
+f265L	L12	13	33	H	cipher
+f265L	L12	14	208	H	cipher
+f265L	L12	15	17	H	cipher
+f265L	L12	16	133	H	cipher
+f265L	L12	17	244	H	cipher
+f265L	L12	18	29	H	cipher
+f265L	L12	19	32.	H	cipher, with period
+f265L	L12	20	269	H	cipher
+f265L	L12	21	221	H	cipher
+f265L	L13	1	191	M	cipher, faint pencil-layer numbers row
+f265L	L13	2	205	M	cipher
+f265L	L13	3	303	M	cipher
+f265L	L13	4	11	M	cipher
+f265L	L13	5	32	M	cipher
+f265L	L13	6	fait	H	clear, bold main text
+f265L	L13	7	l'honneur	H	clear
+f265L	L13	8	seur	L	clear, uncertain reading, possibly "de ses"
+f265L	L13	9	ordres	M	clear
+f265L	L14	1	ie	H	clear, bold main text (continues sentence from L13)
+f265L	L14	2	ne	H	clear
+f265L	L14	3	deuois	H	clear
+f265L	L14	4	faire	H	clear
+f265L	L14	5	aucun	H	clear
+f265L	L14	6	mouuement	H	clear
+f265L	L14	7	sans	H	clear
+f265L	L14	8	bon	H	clear
+f265L	L14	9	ordre	H	clear
+f265L	L14	10	expres	H	clear
+f265L	L15	1	il	L	clear, bold main row, first word uncertain (il/je)
+f265L	L15	2	m'a	H	clear
+f265L	L15	3	paru	H	clear
+f265L	L15	4	pour	H	clear
+f265L	L15	5	touchi	L	clear, uncertain (toucher?)
+f265L	L15	6	acette	M	clear, "à cette"
+f265L	L15	7	honnesteté	L	clear, uncertain reading, flourished ending
+f265L	L15	8	&c	M	clear, abbreviation for etc.
+f265L	L15	9	267	H	cipher
+f265L	L15	10	30.	H	cipher, with period
+f265L	L15	11	191	H	cipher
+f265L	L15	12	205	H	cipher
+f265L	L15	13	244	H	cipher
+f265L	L15	14	270	H	cipher
+f265L	L15	15	155	H	cipher
+f265L	L15	16	28	H	cipher
+f265L	L15	17	32	H	cipher
+f265L	L15	18	291	H	cipher
+f265L	L15	19	34	H	cipher
+f265L	L15	20	14	H	cipher
+f265L	L15	21	176	H	cipher
+f265L	L15	22	133	H	cipher
+f265L	L16	1	[illegible]	L	own crop entirely blank (bottom-of-page margin), no text captured at all
+f265R	L01	1	[illegible]	L	own crop almost entirely blank (top-of-page margin), no legible text captured
+f265R	L02	1	M.	H	clear, main row (address heading)
+f265R	L02	2	de	H	clear
+f265R	L02	3	Pontchartrain	H	clear, name
+f265R	L02	4	scde	L	clear, uncertain reading after name
+f265R	L02	5	117	H	cipher
+f265R	L02	6	33	H	cipher
+f265R	L02	7	289	H	cipher
+f265R	L02	8	159	M	cipher, digit ambiguous
+f265R	L02	9	224	H	cipher
+f265R	L02	10	30	H	cipher
+f265R	L02	11	260	H	cipher
+f265R	L02	12	8	M	cipher, digit ambiguous
+f265R	L02	13	260	H	cipher
+f265R	L02	14	133	H	cipher
+f265R	L02	15	244	H	cipher
+f265R	L02	16	133	H	cipher
+f265R	L02	17	247	H	cipher
+f265R	L02	18	17	H	cipher
+f265R	L02	19	33	H	cipher
+f265R	L03	1	mon	L	clear, tight interlinear caption above main row, cut/uncertain
+f265R	L03	2	14	H	cipher, main row
+f265R	L03	3	176	H	cipher
+f265R	L03	4	28	H	cipher
+f265R	L03	5	32	H	cipher
+f265R	L03	6	266	H	cipher
+f265R	L03	7	11	H	cipher
+f265R	L03	8	17	H	cipher
+f265R	L03	9	143	H	cipher
+f265R	L03	10	133	H	cipher
+f265R	L03	11	208	H	cipher
+f265R	L03	12	60	H	cipher
+f265R	L03	13	empressement	H	clear, end of row
+f265R	L04	1	Il	M	clear, tight interlinear caption above main row
+f265R	L04	2	est	M	clear, caption above row
+f265R	L04	3	tres	M	clear, caption above row
+f265R	L04	4	persuadé	M	clear, caption above row
+f265R	L04	5	pour	H	clear, main row
+f265R	L04	6	son	H	clear
+f265R	L04	7	service	H	clear
+f265R	L04	8	101	M	cipher, digit ambiguous
+f265R	L04	9	142	H	cipher
+f265R	L04	10	208	H	cipher
+f265R	L04	11	246	H	cipher
+f265R	L04	12	28	H	cipher
+f265R	L04	13	289	M	cipher, digit ambiguous
+f265R	L04	14	10	H	cipher
+f265R	L04	15	133	H	cipher
+f265R	L05	1	que	H	clear, main row
+f265R	L05	2	l'armement	H	clear
+f265R	L05	3	de	H	clear
+f265R	L05	4	Dunkerque	H	clear
+f265R	L05	5	regarde	H	clear
+f265R	L05	6	260	H	cipher
+f265R	L05	7	105	M	cipher, digit ambiguous
+f265R	L05	8	28	H	cipher
+f265R	L05	9	206	H	cipher
+f265R	L05	10	211	H	cipher
+f265R	L05	11	133	H	cipher
+f265R	L05	12	136	H	cipher
+f265R	L05	13	17	H	cipher
+f265R	L05	14	260	H	cipher
+f265R	L05	15	289	H	cipher
+f265R	L05	16	269	M	cipher, digit ambiguous
+f265R	L05	17	267	H	cipher
+f265R	L05	18	29	H	cipher
+f265R	L05	19	133	H	cipher
+f265R	L06	1	l'escadre	M	clear, main row, uncertain reading (could be "l'adefiente")
+f265R	L06	2	doit	H	clear
+f265R	L06	3	se	H	clear
+f265R	L06	4	joindre	H	clear
+f265R	L06	5	277	H	cipher
+f265R	L06	6	133	H	cipher
+f265R	L06	7	30	H	cipher
+f265R	L06	8	117	H	cipher
+f265R	L06	9	50	H	cipher
+f265R	L06	10	289	H	cipher
+f265R	L06	11	145	H	cipher
+f265R	L06	12	135	H	cipher
+f265R	L06	13	11	H	cipher
+f265R	L06	14	32	H	cipher
+f265R	L06	15	278	H	cipher
+f265R	L06	16	188	H	cipher
+f265R	L06	17	11	H	cipher
+f265R	L06	18	50	H	cipher
+f265R	L06	19	16	H	cipher
+f265R	L06	20	267	H	cipher
+f265R	L07	1	a	M	clear, small bold caption/address marker above main row
+f265R	L07	2	M.	M	clear, small bold caption above row
+f265R	L07	3	10	H	cipher, main row (faint pencil-layer hand, only substantial content on this crop)
+f265R	L07	4	210	H	cipher
+f265R	L07	5	de	H	clear
+f265R	L07	6	chasteauneuf.	M	clear, name, with period
+f265R	L07	7	et	H	clear
+f265R	L07	8	il	H	clear
+f265R	L07	9	m'a	H	clear
+f265R	L07	10	dit	H	clear
+f265R	L07	11	qu'il	H	clear, cut at right edge, sentence continues
+f265R	L08	1	croyoit	H	clear, main row (faint pencil-layer hand), continues sentence from L07
+f265R	L08	2	qu'effectiuement	H	clear
+f265R	L08	3	je	H	clear
+f265R	L08	4	serois	H	clear
+f265R	L08	5	plus	H	clear
+f265R	L08	6	utile	H	clear
+f265R	L08	7	a	H	clear, cut at right edge, sentence continues
+f265R	L08	8	Je	M	clear, small bold caption/aside, tucked to the side
+f265R	L08	9	suis	M	clear, bold caption
+f265R	L08	10	parfaitement	L	clear, bold caption, cut at right edge
+f265R	L09	1	auec	H	clear, main bold row
+f265R	L09	2	Milord	H	clear, name
+f265R	L09	3	Myddleton	H	clear, name
+f265R	L09	4	et	M	clear, cut at right edge
+f265R	L10	1	vne	M	clear, main row, faint pencil-layer hand
+f265R	L10	2	fois	M	clear
+f265R	L10	3	qu'il	M	clear
+f265R	L10	4	yaicy	L	clear, uncertain (y a icy?)
+f265R	L10	5	deaglois	L	clear, uncertain reading (d'anglois?)
+f265R	L10	6	vnpeu	L	clear, uncertain reading, cut at right edge
+f265R	L10	7	117	M	cipher
+f265R	L10	8	260	M	cipher
+f265R	L10	9	46	M	cipher
+f265R	L10	10	38	M	cipher
+f265R	L10	11	10	M	cipher
+f265R	L10	12	11	M	cipher
+f265R	L10	13	118	M	cipher
+f265R	L10	14	16	M	cipher
+f265R	L10	15	700	L	cipher, unusually large value, digit uncertain
+f265R	L10	16	36	M	cipher
+f265R	L10	17	17	M	cipher
+f265R	L10	18	246	M	cipher
+f265R	L10	19	34	M	cipher
+f265R	L11	1	leur	M	clear, small bold caption above main row
+f265R	L11	2	en	M	clear, caption above row
+f265R	L11	3	cotterie	M	clear, caption above row
+f265R	L11	4	journaliere	M	clear, caption above row
+f265R	L11	5	estant	M	clear, main row, faint pencil-layer hand (illegible scribble before this word not transcribed)
+f265R	L11	6	auec	H	clear
+f265R	L11	7	150	L	cipher, digit grouping uncertain
+f265R	L11	8	19	L	cipher, digit grouping uncertain
+f265R	L11	9	17	L	cipher, digit grouping uncertain
+f265R	L11	10	119	M	cipher
+f265R	L11	11	32	M	cipher
+f265R	L11	12	289	M	cipher
+f265R	L11	13	268	M	cipher
+f265R	L11	14	18	M	cipher
+f265R	L11	15	188	M	cipher
+f265R	L11	16	34	M	cipher
+f265R	L11	17	29	M	cipher
+f265R	L11	18	223	M	cipher
+f265R	L12	1	197	H	cipher, main row; small bold caption fragment above ("de d'ordinaire de plusieurs") not fully transcribed
+f265R	L12	2	18	H	cipher
+f265R	L12	3	267	H	cipher
+f265R	L12	4	133	H	cipher
+f265R	L12	5	8	M	cipher, digit ambiguous
+f265R	L12	6	133	H	cipher
+f265R	L12	7	107	H	cipher
+f265R	L12	8	34	H	cipher
+f265R	L12	9	14	H	cipher
+f265R	L12	10	176	H	cipher
+f265R	L12	11	123	M	cipher, digit ambiguous (12 or 3)
+f265R	L12	12	133	H	cipher
+f265R	L12	13	24	H	cipher
+f265R	L12	14	195	H	cipher
+f265R	L12	15	11	H	cipher
+f265R	L12	16	279	H	cipher
+f265R	L12	17	28.	H	cipher, with period
+f265R	L13	1	en	M	clear, small bold caption above main row
+f265R	L13	2	Milord	M	clear, caption above row, name
+f265R	L13	3	Myddleton.	M	clear, caption above row, with period
+f265R	L13	4	Je	H	clear, main row
+f265R	L13	5	n'ay	H	clear
+f265R	L13	6	rien	H	clear
+f265R	L13	7	remarque	H	clear
+f265R	L13	8	18	M	cipher, digit grouping uncertain
+f265R	L13	9	17	M	cipher, digit grouping uncertain
+f265R	L13	10	722	H	cipher
+f265R	L13	11	qui	H	clear
+f265R	L13	12	ne	H	clear
+f265R	L13	13	me	H	clear
+f265R	L13	14	confirme	H	clear
+f265R	L14	1	ce	H	clear, main row
+f265R	L14	2	que	H	clear
+f265R	L14	3	j'ay	H	clear
+f265R	L14	4	eu	H	clear
+f265R	L14	5	l'honneur	H	clear
+f265R	L14	6	de	H	clear
+f265R	L14	7	vous	H	clear
+f265R	L14	8	en	H	clear
+f265R	L14	9	marquer	H	clear
+f265R	L14	10	en	H	clear, cut at right edge, sentence continues
+f265R	L15	1	dernier	H	clear, main/only row
+f265R	L15	2	lieu.	H	clear, with period
+f265R	L16	1	Je	H	clear, main/only row (closing formula)
+f265R	L16	2	suis	H	clear
+f265R	L16	3	auec	H	clear
+f265R	L16	4	un	H	clear
+f265R	L16	5	profond	H	clear
+f265R	L16	6	respect	H	clear
+f265R	L17	1	Monseigneur	H	clear, main/only row (address)
+f265R	L18	1	Votre	H	clear, main/only row, closing formula
+f265R	L18	2	tres	H	clear
+f265R	L18	3	humble	H	clear
+f265R	L18	4	et	H	clear
+f265R	L18	5	tres	H	clear
+f265R	L19	1	obeissant	H	clear, main/only row, closing formula
+f265R	L19	2	seruiteur	H	clear, old spelling of serviteur

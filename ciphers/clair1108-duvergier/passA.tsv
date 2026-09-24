@@ -187,3 +187,1011 @@ f253L	L08	20	282	H	cipher
 f253L	L08	21	les	H	clear, caption below row
 f253L	L08	22	haras	H	clear, caption
 f253L	L08	23	d'Angleterre	H	clear, caption
+f253L	L01	1	[no legible text]	L	top margin band, essentially blank; only a few pen strokes bleeding down from L02's first word visible at the very bottom edge of the crop, nothing independently legible
+f253L	L09	1	24	M	cipher, top tier of crop, possibly bleed continuation, digit ambiguous 24/34
+f253L	L09	2	267	H	cipher
+f253L	L09	3	30	H	cipher
+f253L	L09	4	259	H	cipher
+f253L	L09	5	291	H	cipher
+f253L	L09	6	35	M	cipher, digit ambiguous 33/35
+f253L	L09	7	30	H	cipher
+f253L	L09	8	196	H	cipher
+f253L	L09	9	30	H	cipher
+f253L	L09	10	175	M	cipher, digit ambiguous 175/173
+f253L	L09	11	208	M	cipher, digit ambiguous 208/206
+f253L	L09	12	50	H	cipher
+f253L	L09	13	16	H	cipher
+f253L	L09	14	105	M	cipher, digit ambiguous 105/106
+f253L	L09	15	et	H	clear, end of cipher/clear row
+f253L	L09	16	ou	M	clear, end of row, letters uncertain
+f253L	L09	17	on	H	clear, smaller script caption
+f253L	L09	18	trouueroit	M	clear, smaller script caption, old spelling of "trouverait"
+f253L	L09	19	les	H	clear, smaller script caption
+f253L	L09	20	cheuaux	M	clear, smaller script caption, old spelling of "chevaux"
+f253L	L09	21	necessaires	M	clear, smaller script caption, right edge of s1 cut, confirmed in s2
+f253L	L09	22	par	H	clear, main row resumes
+f253L	L09	23	consequent	H	clear, main row
+f253L	L09	24	238	H	cipher
+f253L	L09	25	32	H	cipher
+f253L	L09	26	269	H	cipher
+f253L	L09	27	34	H	cipher
+f253L	L09	28	301	H	cipher
+f253L	L09	29	275	M	cipher, digit ambiguous 275/273
+f253L	L09	30	33	H	cipher
+f253L	L09	31	196	H	cipher
+f253L	L09	32	30	H	cipher
+f253L	L09	33	14	M	cipher, right edge of s2, digit ambiguous 14/19
+f253L	L09	34	176	M	cipher, right edge of s2, partly cut, continues into L10
+f253L	L10	1	pour	H	clear, smaller script caption above cipher row
+f253L	L10	2	l'armee	H	clear, smaller script caption
+f253L	L10	3	oubien	M	clear, smaller script caption, "ou bien" run together
+f253L	L10	4	dans	H	clear, smaller script caption
+f253L	L10	5	vne	H	clear, smaller script caption, old spelling of "une"
+f253L	L10	6	des-	L	clear, smaller script caption, word cut short by flourish/abbreviation mark, likely start of "descente"
+f253L	L10	7	300	H	cipher
+f253L	L10	8	35	M	cipher, digit ambiguous 35/37
+f253L	L10	9	37	M	cipher, digit ambiguous 37/34
+f253L	L10	10	224	H	cipher
+f253L	L10	11	117	H	cipher
+f253L	L10	12	30	H	cipher
+f253L	L10	13	277	H	cipher
+f253L	L10	14	44	H	cipher
+f253L	L10	15	267	H	cipher
+f253L	L10	16	30	H	cipher
+f253L	L10	17	251	M	cipher, digit ambiguous 251/259
+f253L	L10	18	46	H	cipher
+f253L	L10	19	104	M	cipher, digit ambiguous 104/106
+f253L	L10	20	18	H	cipher
+f253L	L10	21	237	H	cipher
+f253L	L10	22	112	H	cipher
+f253L	L10	23	provinces	H	clear, smaller script caption
+f253L	L10	24	de	H	clear, smaller script caption
+f253L	L10	25	l'Ouest	H	clear, smaller script caption, followed by paraph/flourish, not a word
+f253L	L10	26	137	M	cipher, bottom row cut by crop edge, reconstructed from top-bleed visible in L11 crop
+f253L	L10	27	34	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L10	28	224	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L10	29	133	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L10	30	30	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L10	31	24	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L10	32	269	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L10	33	302	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L10	34	17	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L10	35	117	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L10	36	30	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L10	37	133	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L10	38	13	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L10	39	237	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253L	L11	1	y	M	clear, smaller script caption above cipher row, preceding word likely cut at left margin
+f253L	L11	2	en	H	clear, smaller script caption
+f253L	L11	3	a	M	clear, smaller script caption
+f253L	L11	4	abondance	M	clear, smaller script caption, spacing of "a"/"bondance" uncertain
+f253L	L11	5	ensorte	H	clear, smaller script caption, "en sorte" run together
+f253L	L11	6	que	H	clear, smaller script caption
+f253L	L11	7	parceque	H	clear, main row, "parce que" run together
+f253L	L11	8	le	H	clear, main row
+f253L	L11	9	pays	H	clear, main row
+f253L	L11	10	38	H	cipher
+f253L	L11	11	142	H	cipher
+f253L	L11	12	10	H	cipher
+f253L	L11	13	113	H	cipher
+f253L	L11	14	132	H	cipher
+f253L	L11	15	50	H	cipher
+f253L	L11	16	33	H	cipher
+f253L	L11	17	133	H	cipher
+f253L	L11	18	259	H	cipher
+f253L	L11	19	13	H	cipher
+f253L	L11	20	104	M	cipher, right edge of s2, digit ambiguous 104/109
+f253L	L11	21	l'armee	M	clear, smaller script caption below row, bottom edge partly cut
+f253L	L11	22	y	M	clear, smaller script caption, bottom edge partly cut
+f253L	L11	23	subsisteroit	L	clear, smaller script caption, bottom edge partly cut, reading uncertain
+f253L	L11	24	aisement	L	clear, smaller script caption, bottom edge partly cut, followed by flourish, reading uncertain
+f253L	L12	1	18	H	cipher
+f253L	L12	2	38	H	cipher
+f253L	L12	3	281	M	cipher, digit ambiguous 281/285
+f253L	L12	4	12	H	cipher
+f253L	L12	5	279	H	cipher
+f253L	L12	6	30	H	cipher
+f253L	L12	7	289	H	cipher
+f253L	L12	8	275	M	cipher, digit ambiguous 275/273
+f253L	L12	9	32	H	cipher
+f253L	L12	10	10	H	cipher
+f253L	L12	11	11	H	cipher
+f253L	L12	12	278	H	cipher
+f253L	L12	13	211	H	cipher
+f253L	L12	14	ou	H	clear
+f253L	L12	15	mesme	M	clear, old spelling of "même", right edge of s2, letters uncertain
+f253L	L12	16	faire	H	clear, smaller script caption
+f253L	L12	17	la	H	clear, smaller script caption
+f253L	L12	18	descente	H	clear, smaller script caption
+f253L	L12	19	dans	H	clear, smaller script caption
+f253L	L12	20	ces	H	clear, smaller script caption
+f253L	L12	21	deux	H	clear, smaller script caption
+f253L	L12	22	lieuxla	M	clear, smaller script caption, "lieux là" run together
+f253L	L12	23	alafois	M	clear, smaller script caption, "à la fois" run together
+f253L	L12	24	de	H	clear, main row
+f253L	L12	25	161	H	cipher
+f253L	L12	26	195	H	cipher
+f253L	L12	27	133	H	cipher
+f253L	L12	28	30	H	cipher
+f253L	L12	29	117	H	cipher
+f253L	L12	30	17	H	cipher
+f253L	L12	31	33	H	cipher
+f253L	L12	32	137	H	cipher
+f253L	L12	33	117	H	cipher
+f253L	L12	34	30	H	cipher
+f253L	L12	35	16	H	cipher
+f253L	L12	36	150	H	cipher
+f253L	L12	37	197	M	cipher, digit ambiguous 197/199
+f253L	L12	38	150	H	cipher
+f253L	L12	39	10	H	cipher
+f253L	L12	40	195	H	cipher
+f253R	L01	1	[no legible text]	L	top margin band, essentially blank; only a cipher numeral and a couple pen strokes bleeding down from L02 visible at the very bottom edge of the crop, nothing independently legible
+f253R	L02	1	de	H	clear, smaller script caption above row
+f253R	L02	2	faire	H	clear, smaller script caption
+f253R	L02	3	embarquer	H	clear, smaller script caption
+f253R	L02	4	addresser	L	clear, smaller script caption, right edge cut, letters uncertain
+f253R	L02	5	155	M	cipher, digit ambiguous 155/135, stylized double-5 glyph
+f253R	L02	6	44	H	cipher
+f253R	L02	7	30	H	cipher
+f253R	L02	8	et	H	clear, main row
+f253R	L02	9	pour	H	clear, main row
+f253R	L02	10	cela	H	clear, main row
+f253R	L02	11	133	H	cipher
+f253R	L02	12	161	H	cipher
+f253R	L02	13	18	H	cipher
+f253R	L02	14	48	H	cipher
+f253R	L02	15	107	H	cipher
+f253R	L02	16	29	H	cipher
+f253R	L02	17	259	H	cipher
+f253R	L02	18	28	H	cipher
+f253R	L02	19	10	H	cipher
+f253R	L02	20	les	H	clear, smaller script caption below row
+f253R	L02	21	Troupes	H	clear, smaller script caption
+f253R	L02	22	destinees	H	clear, smaller script caption
+f253R	L02	23	pour	H	clear, smaller script caption
+f253R	L02	24	l'Ouest	H	clear, smaller script caption
+f253R	L02	25	et	M	clear, smaller script caption, bottom edge partly cut
+f253R	L02	26	ou	M	clear, smaller script caption, bottom edge partly cut, followed by flourish
+f253R	L02	27	12	M	cipher, bottom of L02 crop bled into top of L03 crop, reconstructed from both
+f253R	L02	28	29	M	cipher, bled into top of L03 crop
+f253R	L02	29	142	M	cipher, bled into top of L03 crop
+f253R	L02	30	196	M	cipher, bled into top of L03 crop
+f253R	L02	31	30	M	cipher, bled into top of L03 crop
+f253R	L02	32	294	M	cipher, bled into top of L03 crop
+f253R	L02	33	30	M	cipher, bled into top of L03 crop
+f253R	L02	34	133	M	cipher, bled into top of L03 crop
+f253R	L02	35	30	M	cipher, bled into top of L03 crop
+f253R	L02	36	290	M	cipher, bled into top of L03 crop
+f253R	L02	37	224	M	cipher, bled into top of L03 crop
+f253R	L02	38	18	M	cipher, bled into top of L03 crop
+f253R	L02	39	30	M	cipher, bled into top of L03 crop
+f253R	L02	40	251	M	cipher, bled into top of L03 crop
+f253R	L02	41	46	L	cipher, bled into top of L03 crop, right edge cut, digit uncertain
+f253R	L03	1	Calais	H	clear, smaller script caption above row
+f253R	L03	2	celles	H	clear, smaller script caption
+f253R	L03	3	destinees	H	clear, smaller script caption
+f253R	L03	4	pour	H	clear, smaller script caption
+f253R	L03	5	York	H	clear, smaller script caption, proper name
+f253R	L03	6	143	H	cipher
+f253R	L03	7	10	H	cipher
+f253R	L03	8	116	H	cipher
+f253R	L03	9	195	H	cipher
+f253R	L03	10	11	H	cipher
+f253R	L03	11	30	H	cipher
+f253R	L03	12	117	H	cipher
+f253R	L03	13	13	H	cipher
+f253R	L03	14	196	H	cipher
+f253R	L03	15	30	H	cipher
+f253R	L03	16	133	H	cipher
+f253R	L03	17	30	H	cipher
+f253R	L03	18	290	M	cipher, partly obscured by ink blot, digit read from visible remainder
+f253R	L03	19	224	H	cipher
+f253R	L03	20	18	H	cipher
+f253R	L03	21	30	H	cipher
+f253R	L03	22	251	H	cipher
+f253R	L04	1	[illegible fragment]	L	top edge, severely cut, tiny caption fragment above main row, not legible
+f253R	L04	2	38	H	cipher
+f253R	L04	3	52	H	cipher
+f253R	L04	4	29	H	cipher
+f253R	L04	5	42	H	cipher
+f253R	L04	6	voila	H	clear, main row
+f253R	L04	7	Monteigneur	M	clear, main row, likely "Monseigneur", spelling/letterform uncertain
+f253R	L04	8	280	H	cipher
+f253R	L04	9	17	H	cipher
+f253R	L04	10	24	H	cipher
+f253R	L04	11	269	H	cipher
+f253R	L04	12	186	M	cipher, digit ambiguous 186/188
+f253R	L04	13	32	H	cipher
+f253R	L05	1	il	H	clear
+f253R	L05	2	peut	H	clear
+f253R	L05	3	y	H	clear
+f253R	L05	4	avoir	H	clear
+f253R	L05	5	quelque	H	clear
+f253R	L05	6	chose	H	clear
+f253R	L05	7	de	H	clear
+f253R	L05	8	bon	H	clear
+f253R	L05	9	mais	H	clear
+f253R	L05	10	ie	H	clear, old spelling of "je"
+f253R	L05	11	ne	H	clear
+f253R	L06	1	say	M	clear, old spelling of "sçay/sais"
+f253R	L06	2	si	H	clear
+f253R	L06	3	l'execution	H	clear
+f253R	L06	4	n'en	H	clear
+f253R	L06	5	seroit	H	clear
+f253R	L06	6	pas	H	clear
+f253R	L06	7	plus	H	clear
+f253R	L06	8	difficile	H	clear
+f253R	L06	9	que	H	clear
+f253R	L06	10	du	H	clear
+f253R	L06	11	premier	H	clear
+f253R	L07	1	il	M	clear, smaller script caption above row, top edge partly cut
+f253R	L07	2	compte	H	clear, smaller script caption
+f253R	L07	3	sur	H	clear, smaller script caption
+f253R	L07	4	la	H	clear, smaller script caption
+f253R	L07	5	fidelite	M	clear, smaller script caption, letters uncertain
+f253R	L07	6	de	H	clear, smaller script caption
+f253R	L07	7	plusieurs	M	clear, smaller script caption, right edge cut
+f253R	L07	8	d'ailleurs	H	clear, main row
+f253R	L07	9	191	H	cipher
+f253R	L07	10	119	H	cipher
+f253R	L07	11	15	M	cipher, digit ambiguous 15/13
+f253R	L07	12	24	H	cipher
+f253R	L07	13	289	H	cipher
+f253R	L07	14	281	H	cipher
+f253R	L07	15	29	H	cipher
+f253R	L07	16	195	H	cipher
+f253R	L07	17	154	H	cipher
+f253R	L07	18	133	H	cipher
+f253R	L07	19	197	M	cipher, digit ambiguous 197/199
+f253R	L07	20	289	H	cipher
+f253R	L07	21	133	H	cipher
+f253R	L07	22	personnes	H	clear, smaller script caption
+f253R	L07	23	dans	H	clear, smaller script caption
+f253R	L07	24	ce	H	clear, smaller script caption
+f253R	L07	25	pays	H	clear, smaller script caption
+f253R	L07	26	la	H	clear, smaller script caption, followed by flourish
+f253R	L07	27	249	H	cipher
+f253R	L07	28	44	H	cipher
+f253R	L07	29	18	H	cipher
+f253R	L07	30	35	M	cipher, digit ambiguous 35/33
+f253R	L07	31	28	H	cipher
+f253R	L07	32	30	H	cipher
+f253R	L07	33	245	H	cipher
+f253R	L07	34	29	H	cipher
+f253R	L07	35	28	H	cipher
+f253R	L07	36	224	M	cipher, digits crowded/ligatured, read as 224/230
+f253R	L07	37	30	H	cipher
+f253R	L07	38	137	H	cipher
+f253R	L07	39	117	H	cipher
+f253R	L07	40	244	H	cipher
+f253R	L07	41	38	H	cipher
+f253R	L07	42	30	H	cipher
+f253R	L07	43	195	M	cipher, right edge of s2, digit ambiguous 195/196
+f253R	L07	44	ie	L	clear, bottom edge, severely cut, uncertain, old spelling of "je"
+f253R	L07	45	voudrois	L	clear, bottom edge, severely cut, reading uncertain
+f253R	L07	46	bien	L	clear, bottom edge, severely cut, reading uncertain
+f253R	L07	47	le	L	clear, bottom edge, severely cut, reading uncertain
+f253R	L07	48	croire	L	clear, bottom edge, severely cut, reading uncertain
+f253R	L07	49	mais	M	clear, bottom edge, cut
+f253R	L07	50	ie	M	clear, bottom edge, cut, old spelling of "je"
+f253R	L07	51	iuge	M	clear, bottom edge, cut, old spelling of "juge"
+f253R	L07	52	par	M	clear, bottom edge, cut
+f253R	L07	53	tout	M	clear, bottom edge, cut
+f253R	L08	1	[bleed fragment, unresolved]	L	top edge, cut caption bleeding down from L07's bottom row, does not clearly match L07's own bottom-row reading; left unmerged, flagged for review
+f253R	L08	2	ce	H	clear, main row
+f253R	L08	3	que	H	clear, main row
+f253R	L08	4	ientends	H	clear, main row, old spelling of "j'entends"
+f253R	L08	5	dire	H	clear, main row
+f253R	L08	6	et	H	clear, main row
+f253R	L08	7	aluy	M	clear, main row, "à luy" run together
+f253R	L08	8	et	H	clear, main row
+f253R	L08	9	aux	H	clear, main row
+f253R	L08	10	autres	H	clear, main row
+f253R	L08	11	qu'ils	M	clear, main row, letters uncertain
+f253R	L08	12	n'y	M	clear, main row, right edge of s2
+f253R	L08	13	d'Intelligence	M	clear, smaller script caption below row
+f253R	L08	14	ny	H	clear, smaller script caption, old spelling of "ni"
+f253R	L08	15	mesme	H	clear, smaller script caption, old spelling of "même"
+f253R	L08	16	de	M	clear, smaller script caption, right edge cut, followed by flourish
+f253R	L09	1	ont	M	clear, top of row, continues clause from L08's cut caption
+f253R	L09	2	guere	H	clear, old spelling of "guère"
+f253R	L09	3	134	H	cipher
+f253R	L09	4	17	H	cipher
+f253R	L09	5	289	H	cipher
+f253R	L09	6	13	H	cipher
+f253R	L09	7	197	M	cipher, digit ambiguous 197/199
+f253R	L09	8	165	M	cipher, digit ambiguous 165/163
+f253R	L09	9	50	H	cipher
+f253R	L09	10	117	H	cipher
+f253R	L09	11	225	M	cipher, digit ambiguous 225/223
+f253R	L09	12	221	H	cipher
+f253R	L09	13	133	H	cipher
+f253R	L09	14	125	M	cipher, right edge of s2, digit ambiguous 125/123
+f253R	L09	15	Correspondance	H	clear, smaller script caption
+f253R	L09	16	avec	H	clear, smaller script caption
+f253R	L09	17	ils	H	clear, smaller script caption
+f253R	L09	18	n'en	H	clear, smaller script caption
+f253R	L09	19	recoiuent	H	clear, smaller script caption, old spelling of "reçoivent"
+f253R	L09	20	aucune	H	clear, smaller script caption
+f253R	L09	21	nouuelle	H	clear, smaller script caption, old spelling of "nouvelle"
+f253R	L09	22	122	M	cipher, left margin of s1, digit ambiguous 122/162
+f253R	L09	23	161	H	cipher
+f253R	L09	24	30	H	cipher
+f253R	L09	25	224	H	cipher
+f253R	L09	26	60	M	cipher, digit ambiguous 60/40
+f253R	L09	27	267	H	cipher
+f253R	L09	28	119	H	cipher
+f253R	L09	29	11	H	cipher
+f253R	L09	30	301	H	cipher
+f253R	L09	31	228	H	cipher
+f253R	L09	32	10	H	cipher
+f253R	L09	33	35	M	cipher, digit ambiguous 35/33
+f253R	L09	34	120	H	cipher
+f253R	L09	35	224	H	cipher
+f253R	L09	36	232	M	cipher, right edge of s2, digit ambiguous 232/238
+f253R	L10	1	ny	H	clear, smaller script caption above row, old spelling of "ni"
+f253R	L10	2	par	H	clear, smaller script caption
+f253R	L10	3	laHollande	M	clear, smaller script caption, "la Hollande" run together
+f253R	L10	4	ny	H	clear, smaller script caption, old spelling of "ni"
+f253R	L10	5	d'ailleurs	H	clear, smaller script caption, followed by flourish
+f253R	L10	6	225	M	cipher, digit ambiguous 225/223
+f253R	L10	7	244	H	cipher
+f253R	L10	8	28	H	cipher
+f253R	L10	9	195	H	cipher
+f253R	L10	10	183	H	cipher
+f253R	L10	11	225	M	cipher, digit ambiguous 225/223
+f253R	L10	12	132	H	cipher
+f253R	L10	13	11	H	cipher
+f253R	L10	14	13	H	cipher
+f253R	L10	15	196	H	cipher
+f253R	L10	16	35	M	cipher, digit ambiguous 35/33
+f253R	L10	17	29	H	cipher
+f253R	L10	18	30	H	cipher
+f253R	L10	19	et	H	clear, main row resumes
+f253R	L10	20	tout	H	clear, main row
+f253R	L10	21	ce	H	clear, main row
+f253R	L10	22	du	M	clear, smaller script caption above, positioned near following cipher
+f253R	L10	23	chevalier	H	clear, smaller script caption, proper title
+f253R	L10	24	qu'ils	M	clear, bottom row cut by crop edge, reconstructed from top-bleed visible in L11 crop
+f253R	L10	25	en	M	clear, bottom row cut, reconstructed via L11 bleed
+f253R	L10	26	apprennent	L	clear, bottom row cut, reconstructed via L11 bleed, reading uncertain
+f253R	L10	27	130	M	cipher, bottom row cut, reconstructed via L11 bleed, digit ambiguous 130/136
+f253R	L10	28	14	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253R	L10	29	176	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253R	L10	30	300	M	cipher, bottom row cut, reconstructed via L11 bleed
+f253R	L10	31	197	M	cipher, bottom row cut, reconstructed via L11 bleed, digit ambiguous 197/191
+f253R	L11	1	s'il	L	clear, smaller script caption, top edge partly cut, reading uncertain
+f253R	L11	2	scauroit	L	clear, smaller script caption, reading uncertain
+f253R	L11	3	266	M	cipher, digit ambiguous 266/268
+f253R	L11	4	28	H	cipher
+f253R	L11	5	134	H	cipher
+f253R	L11	6	17	H	cipher
+f253R	L11	7	qui	H	clear, main row
+f253R	L11	8	est	H	clear, main row
+f253R	L11	9	un	H	clear, main row
+f253R	L11	10	Irlandois	H	clear, main row caption, right side, proper adjective "Irlandais"
+f253R	L11	11	estably	H	clear, main row caption, old spelling of "établi"
+f253R	L11	12	44	H	cipher
+f253R	L11	13	29	H	cipher
+f253R	L11	14	195	H	cipher
+f253R	L11	15	17	H	cipher
+f253R	L11	16	135	M	cipher, digit ambiguous 135/133
+f253R	L11	17	11	H	cipher
+f253R	L11	18	30	H	cipher
+f253R	L11	19	18	H	cipher
+f253R	L11	20	288	M	cipher, right edge of s2, digit ambiguous 288/286
+f253R	L11	21	aDunkerque	H	clear, smaller script caption below row, "à Dunkerque" run together
+f253R	L11	22	12	M	cipher, bottom row cut by crop edge, reconstructed from top-bleed visible in L12 crop
+f253R	L11	23	197	M	cipher, bottom row cut, reconstructed via L12 bleed, digit ambiguous 197/199
+f253R	L11	24	10	M	cipher, bottom row cut, reconstructed via L12 bleed
+f253R	L11	25	130	M	cipher, bottom row cut, reconstructed via L12 bleed
+f253R	L11	26	17	M	cipher, bottom row cut, reconstructed via L12 bleed
+f253R	L11	27	259	M	cipher, bottom row cut, reconstructed via L12 bleed
+f253R	L11	28	28	M	cipher, bottom row cut, reconstructed via L12 bleed
+f253R	L11	29	259	M	cipher, bottom row cut, reconstructed via L12 bleed, end of clause, period follows
+f253R	L12	1	Je	H	clear, closing formula
+f253R	L12	2	suis	H	clear, closing formula
+f253R	L12	3	auec	H	clear, closing formula, old spelling of "avec"
+f253R	L12	4	un	H	clear, closing formula
+f253R	L12	5	proffond	M	clear, closing formula, old spelling of "profond"
+f253R	L12	6	respect	H	clear, closing formula
+f253R	L13	1	Monseigneur	H	clear, salutation, own short line at left
+f253R	L13	2	Vostre	M	clear, closing formula, right side, top partly cut
+f253R	L13	3	tres	M	clear, closing formula, top partly cut
+f253R	L13	4	humble	M	clear, closing formula, top partly cut
+f253R	L13	5	et	M	clear, closing formula, top partly cut
+f253R	L13	6	tres	M	clear, closing formula, top partly cut
+f253R	L13	7	obeissant	H	clear, closing formula
+f253R	L13	8	seruiteur	H	clear, closing formula, old spelling of "serviteur"
+f253R	L14	1	Vergier	H	clear, signature, underlined, right side; rest of line blank (bottom margin of page)
+f265L	L01	1	[no legible text]	L	top margin band, entirely blank in both crops, no text visible
+f265L	L02	1	cet	H	clear, faint ink
+f265L	L02	2	aduis	H	clear, faint ink, old spelling of "avis"
+f265L	L02	3	d'ennuy	H	clear, faint ink
+f265L	L02	4	et	H	clear, faint ink
+f265L	L02	5	dinquietude	M	clear, faint ink, "d'inquiétude" run together
+f265L	L02	6	de	H	clear, faint ink
+f265L	L02	7	ma	H	clear, faint ink
+f265L	L02	8	part	H	clear, faint ink
+f265L	L02	9	plustost	M	clear, faint ink, bottom row cut by crop edge, reconstructed from top-bleed visible in L03 crop
+f265L	L02	10	que	M	clear, faint ink, reconstructed via L03 bleed
+f265L	L02	11	de	M	clear, faint ink, reconstructed via L03 bleed
+f265L	L02	12	prudence	M	clear, faint ink, reconstructed via L03 bleed
+f265L	L02	13	et	M	clear, faint ink, reconstructed via L03 bleed
+f265L	L02	14	de	M	clear, faint ink, reconstructed via L03 bleed
+f265L	L02	15	bon	M	clear, faint ink, reconstructed via L03 bleed
+f265L	L02	16	conseil	M	clear, faint ink, reconstructed via L03 bleed, end of clause, period follows
+f265L	L03	1	cependant	H	clear, faint ink
+f265L	L03	2	cela	H	clear, faint ink
+f265L	L03	3	me	H	clear, faint ink
+f265L	L03	4	frapoit	H	clear, faint ink, old spelling of "frappait"
+f265L	L03	5	depuis	H	clear, faint ink
+f265L	L03	6	long	H	clear, faint ink
+f265L	L03	7	temps	H	clear, faint ink
+f265L	L03	8	et	H	clear, faint ink
+f265L	L04	1	surtout	H	clear, faint ink
+f265L	L04	2	depuis	H	clear, faint ink
+f265L	L04	3	qu'on	H	clear, faint ink
+f265L	L04	4	sait	H	clear, faint ink
+f265L	L04	5	icy	H	clear, faint ink, old spelling of "ici"
+f265L	L04	6	qu'on	H	clear, faint ink
+f265L	L04	7	arme	H	clear, faint ink
+f265L	L04	8	a	H	clear, faint ink
+f265L	L05	1	Dunkerque	H	clear, faint ink, proper name
+f265L	L05	2	ou	H	clear, faint ink
+f265L	L05	3	ie	H	clear, faint ink, old spelling of "je"
+f265L	L05	4	pourrois	H	clear, faint ink
+f265L	L05	5	estre	H	clear, faint ink, old spelling of "être"
+f265L	L05	6	[cancelled word]	L	clear, faint ink, word struck through/corrected, illegible
+f265L	L05	7	utile	M	clear, faint ink
+f265L	L05	8	pendant	H	clear, faint ink
+f265L	L05	9	que	H	clear, faint ink
+f265L	L05	10	l'on	H	clear, faint ink
+f265L	L05	11	m'y	M	clear, faint ink, partly obscured by archival stamp
+f265L	L05	12	voit	M	clear, faint ink, partly obscured by archival stamp
+f265L	L05	13	tres	H	clear, faint ink
+f265L	L05	14	inutile	H	clear, faint ink
+f265L	L05	15	icy	H	clear, faint ink, old spelling of "ici"
+f265L	L05	16	c'est	H	clear, faint ink
+f265L	L05	17	pourquoy	H	clear, faint ink, old spelling of "pourquoi"
+f265L	L06	1	ie	H	clear, faint ink/pencil, old spelling of "je"
+f265L	L06	2	n'ay	H	clear, faint ink/pencil
+f265L	L06	3	pas	H	clear, faint ink/pencil
+f265L	L06	4	cru	H	clear, faint ink/pencil
+f265L	L06	5	devoir	H	clear, faint ink/pencil
+f265L	L06	6	essayer	H	clear, faint ink/pencil
+f265L	L06	7	d'y	H	clear, faint ink/pencil
+f265L	L06	8	rester	H	clear, faint ink/pencil
+f265L	L06	9	dauantage	H	clear, faint ink/pencil, old spelling of "davantage"
+f265L	L06	10	i'ay	M	clear, darker ink main row, "j'ay"
+f265L	L06	11	seulement	H	clear, darker ink main row
+f265L	L06	12	donne	M	clear, darker ink main row, letter ending uncertain
+f265L	L06	13	a	H	clear, darker ink main row
+f265L	L06	14	mon	H	clear, darker ink main row
+f265L	L06	15	despart	M	clear, darker ink main row, reading uncertain, possibly "départ"
+f265L	L06	16	outour	L	clear, darker ink main row, reading uncertain
+f265L	L06	17	10	H	cipher
+f265L	L06	18	208	M	cipher, digit ambiguous 208/206
+f265L	L06	19	17	H	cipher
+f265L	L06	20	133	H	cipher
+f265L	L06	21	244	H	cipher
+f265L	L06	22	28	H	cipher
+f265L	L06	23	32	H	cipher
+f265L	L06	24	34	H	cipher
+f265L	L06	25	50	H	cipher
+f265L	L06	26	qui	H	clear, smaller script caption below row
+f265L	L06	27	n'a	H	clear, smaller script caption
+f265L	L06	28	pas	H	clear, smaller script caption
+f265L	L06	29	desplu	H	clear, smaller script caption, old spelling of "déplu"
+f265L	L06	30	au	H	clear, smaller script caption
+f265L	L06	31	Roy	H	clear, smaller script caption
+f265L	L06	32	d'Angleterre	H	clear, smaller script caption
+f265L	L06	33	34	M	cipher, bottom edge partly cut
+f265L	L06	34	20	M	cipher, bottom edge partly cut
+f265L	L06	35	260	M	cipher, bottom edge partly cut
+f265L	L06	36	223	M	cipher, bottom edge partly cut
+f265L	L06	37	260	M	cipher, bottom edge partly cut, continues into L07
+f265L	L06	38	30	M	cipher, top-bleed reconstruction via L07 crop, bottom edge partly cut
+f265L	L06	39	155	M	cipher, top-bleed reconstruction via L07 crop
+f265L	L06	40	25	M	cipher, top-bleed reconstruction via L07 crop
+f265L	L06	41	199	M	cipher, top-bleed reconstruction via L07 crop
+f265L	L06	42	10	M	cipher, top-bleed reconstruction via L07 crop
+f265L	L06	43	34	M	cipher, top-bleed reconstruction via L07 crop
+f265L	L06	44	120	M	cipher, top-bleed reconstruction via L07 crop, digit ambiguous 120/220
+f265L	L06	45	et	M	clear, top-bleed reconstruction via L07 crop
+f265L	L06	46	que	M	clear, top-bleed reconstruction via L07 crop
+f265L	L06	47	ce	M	clear, top-bleed reconstruction via L07 crop, end of clause
+f265L	L07	1	croy	H	clear, faint pencil, old spelling of "crois"
+f265L	L07	2	que	H	clear, faint pencil
+f265L	L07	3	vous	H	clear, faint pencil
+f265L	L07	4	ne	H	clear, faint pencil
+f265L	L07	5	desaprouueres	M	clear, faint pencil, old spelling of "désapprouverez"
+f265L	L07	6	pas	H	clear, faint pencil
+f265L	L07	7	186	M	cipher, digit ambiguous 186/188
+f265L	L07	8	200	H	cipher
+f265L	L07	9	10	H	cipher
+f265L	L07	10	38	H	cipher
+f265L	L07	11	Ie	M	clear, small caption, right side
+f265L	L07	12	luy	H	clear, small caption
+f265L	L07	13	ay	H	clear, small caption
+f265L	L07	14	fait	H	clear, darker ink main row
+f265L	L07	15	entendre	H	clear, darker ink main row
+f265L	L07	16	que	H	clear, darker ink main row
+f265L	L07	17	me	H	clear, darker ink main row
+f265L	L07	18	voyant	H	clear, darker ink main row
+f265L	L07	19	icy	H	clear, darker ink main row, old spelling of "ici"
+f265L	L07	20	inutile	H	clear, darker ink main row
+f265L	L07	21	10	H	cipher
+f265L	L07	22	33	H	cipher
+f265L	L07	23	18	H	cipher
+f265L	L07	24	50	H	cipher
+f265L	L07	25	289	H	cipher
+f265L	L07	26	17	H	cipher
+f265L	L07	27	16	H	cipher
+f265L	L07	28	267	H	cipher
+f265L	L07	29	259	H	cipher
+f265L	L07	30	206	M	cipher, digit ambiguous 206/208
+f265L	L07	31	303	H	cipher
+f265L	L07	32	38	H	cipher
+f265L	L07	33	10	H	cipher
+f265L	L07	34	228	H	cipher
+f265L	L07	35	44	H	cipher
+f265L	L07	36	118	M	cipher, bottom edge of s2, digit partly cut, continues into L08
+f265L	L08	1	pour	H	clear, darker ink caption above row
+f265L	L08	2	son	H	clear, darker ink caption
+f265L	L08	3	service	H	clear, darker ink caption
+f265L	L08	4	11	M	cipher, faint pencil, possibly continuation of L07's cut final digit
+f265L	L08	5	17	H	cipher, faint pencil
+f265L	L08	6	34	H	cipher, faint pencil
+f265L	L08	7	290	H	cipher, faint pencil
+f265L	L08	8	196	H	cipher, faint pencil
+f265L	L08	9	251	M	cipher, faint pencil, digit ambiguous 251/259
+f265L	L08	10	280	H	cipher, faint pencil
+f265L	L08	11	17	H	cipher, faint pencil
+f265L	L08	12	278	H	cipher, faint pencil
+f265L	L08	13	29	H	cipher, faint pencil
+f265L	L08	14	302	H	cipher, faint pencil
+f265L	L08	15	117	H	cipher, faint pencil
+f265L	L08	16	iaurois	L	clear, faint pencil, smaller script, reading uncertain, "j'aurois"
+f265L	L08	17	demmende	L	clear, faint pencil, smaller script, reading uncertain, "demandé"
+f265L	L08	18	a	M	clear, main row resumes
+f265L	L08	19	M	M	clear, main row, abbreviation for "Monsieur"
+f265L	L08	20	vostre	H	clear, main row
+f265L	L08	21	Pere	H	clear, main row, proper reference
+f265L	L08	22	la	M	clear, main row, right edge cut, continues into L09
+f265L	L08	23	il	M	clear, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	24	y	M	clear, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	25	a	M	clear, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	26	quelque	M	clear, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	27	temps	M	clear, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	28	10	M	cipher, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	29	210	M	cipher, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	30	305	M	cipher, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	31	245	M	cipher, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	32	267	M	cipher, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	33	245	M	cipher, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	34	29	M	cipher, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	35	207	M	cipher, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L08	36	30	M	cipher, bottom edge cut, reconstructed via L09 top-bleed
+f265L	L09	1	permission	H	clear, darker ink main row
+f265L	L09	2	demen	M	clear, darker ink main row, "de m'en" run together, reading uncertain
+f265L	L09	3	retourner	H	clear, darker ink main row
+f265L	L09	4	a	H	clear, darker ink main row
+f265L	L09	5	Dunkerque	H	clear, darker ink main row, proper name
+f265L	L09	6	238	H	cipher, faint pencil
+f265L	L09	7	133	H	cipher, faint pencil
+f265L	L09	8	206	M	cipher, faint pencil, digit ambiguous 206/208
+f265L	L09	9	50	H	cipher, faint pencil
+f265L	L09	10	267	H	cipher, faint pencil
+f265L	L09	11	291	H	cipher, faint pencil
+f265L	L09	12	35	M	cipher, faint pencil, digit ambiguous 35/33
+f265L	L09	13	29	H	cipher, faint pencil
+f265L	L09	14	224	H	cipher, faint pencil
+f265L	L09	15	28	H	cipher, faint pencil
+f265L	L09	16	10	H	cipher, faint pencil
+f265L	L09	17	136	M	cipher, faint pencil, digit ambiguous 136/138
+f265L	L09	18	50	H	cipher, faint pencil
+f265L	L09	19	259	H	cipher, faint pencil
+f265L	L09	20	28	M	cipher, faint pencil, right edge of s2, cut, continues into L10
+f265L	L09	21	259	M	cipher, faint pencil, reconstructed via L10 top-bleed, digit ambiguous 259/257
+f265L	L10	1	pour	H	clear, darker ink main row
+f265L	L10	2	y	H	clear, darker ink main row
+f265L	L10	3	ayder	H	clear, darker ink main row
+f265L	L10	4	a	H	clear, darker ink main row
+f265L	L10	5	auancer	H	clear, darker ink main row, old spelling of "avancer"
+f265L	L10	6	l'armement	M	clear, darker ink main row, right edge cut
+f265L	L10	7	251	H	cipher, faint pencil
+f265L	L10	8	38	H	cipher, faint pencil
+f265L	L10	9	10	H	cipher, faint pencil
+f265L	L10	10	38	H	cipher, faint pencil
+f265L	L10	11	133	H	cipher, faint pencil
+f265L	L10	12	28	H	cipher, faint pencil
+f265L	L10	13	10	M	cipher, faint pencil, struck through/cancelled digit, superseded by following number
+f265L	L10	14	601	L	cipher, faint pencil, digit sequence unusual (out of range seen elsewhere), reading uncertain, possibly 301/108
+f265L	L10	15	10	H	cipher, faint pencil
+f265L	L10	16	300	H	cipher, faint pencil
+f265L	L10	17	17	H	cipher, faint pencil
+f265L	L10	18	117	H	cipher, faint pencil
+f265L	L10	19	29	H	cipher, faint pencil
+f265L	L10	20	195	H	cipher, faint pencil
+f265L	L10	21	29	H	cipher, faint pencil
+f265L	L10	22	206	M	cipher, faint pencil, right edge of s2, digit ambiguous 206/208
+f265L	L10	23	211	M	cipher, bottom edge cut, reconstructed via L11 top-bleed
+f265L	L10	24	et	M	clear, bottom edge cut, reconstructed via L11 top-bleed
+f265L	L10	25	qu'il	M	clear, bottom edge cut, reconstructed via L11 top-bleed
+f265L	L10	26	m'a	M	clear, bottom edge cut, reconstructed via L11 top-bleed
+f265L	L10	27	repondu	M	clear, bottom edge cut, reconstructed via L11 top-bleed
+f265L	L10	28	que	M	clear, bottom edge cut, reconstructed via L11 top-bleed
+f265L	L10	29	si	M	clear, bottom edge cut, reconstructed via L11 top-bleed
+f265L	L10	30	ie	M	clear, bottom edge cut, reconstructed via L11 top-bleed, old spelling of "je"
+f265L	L10	31	me	M	clear, bottom edge cut, reconstructed via L11 top-bleed
+f265L	L10	32	croyois	M	clear, bottom edge cut, reconstructed via L11 top-bleed
+f265L	L11	1	inutile	H	clear, darker ink main row
+f265L	L11	2	a	H	clear, darker ink main row
+f265L	L11	3	Boulogne	H	clear, darker ink main row, proper name
+f265L	L11	4	Je	H	clear, darker ink main row
+f265L	L11	5	pourrois	H	clear, darker ink main row
+f265L	L11	6	11	H	cipher, faint pencil
+f265L	L11	7	17	H	cipher, faint pencil
+f265L	L11	8	35	M	cipher, faint pencil, digit ambiguous 35/33
+f265L	L11	9	290	H	cipher, faint pencil
+f265L	L11	10	196	H	cipher, faint pencil
+f265L	L11	11	10	H	cipher, faint pencil
+f265L	L11	12	110	H	cipher, faint pencil
+f265L	L11	13	35	M	cipher, faint pencil, digit ambiguous 35/33
+f265L	L11	14	198	H	cipher, faint pencil
+f265L	L11	15	21	H	cipher, faint pencil
+f265L	L11	16	224	H	cipher, faint pencil
+f265L	L11	17	185	M	cipher, faint pencil, digit ambiguous 185/183
+f265L	L11	18	247	H	cipher, faint pencil
+f265L	L11	19	35	M	cipher, faint pencil, digit ambiguous 35/33
+f265L	L11	20	303	H	cipher, faint pencil
+f265L	L11	21	11	H	cipher, faint pencil
+f265L	L11	22	30	M	cipher, faint pencil, right edge of s2, cut, continues into L12
+f265L	L11	23	m'en	M	clear, bottom edge cut, reconstructed via L12 top-bleed
+f265L	L11	24	retourner	M	clear, bottom edge cut, reconstructed via L12 top-bleed
+f265L	L11	25	a	M	clear, bottom edge cut, reconstructed via L12 top-bleed
+f265L	L11	26	Dunkerque	M	clear, bottom edge cut, reconstructed via L12 top-bleed, proper name
+f265L	L11	27	pourueuque	M	clear, bottom edge cut, reconstructed via L12 top-bleed, "pourvu que" run together
+f265L	L11	28	196	M	cipher, bottom edge cut, reconstructed via L12 top-bleed
+f265L	L11	29	275	M	cipher, bottom edge cut, reconstructed via L12 top-bleed, digit ambiguous 275/273
+f265L	L11	30	16	M	cipher, bottom edge cut, reconstructed via L12 top-bleed
+f265L	L11	31	105	M	cipher, bottom edge cut, reconstructed via L12 top-bleed, digit ambiguous 105/106
+f265L	L12	1	d'angleterre	H	clear, darker ink main row
+f265L	L12	2	approuuast	M	clear, darker ink main row, old spelling of "approuvât"
+f265L	L12	3	mon	H	clear, darker ink main row
+f265L	L12	4	despart	M	clear, darker ink main row, reading uncertain, "départ"
+f265L	L12	5	que	H	clear, darker ink main row
+f265L	L12	6	comme	H	clear, darker ink main row
+f265L	L12	7	10	H	cipher, faint pencil
+f265L	L12	8	24	H	cipher, faint pencil
+f265L	L12	9	269	H	cipher, faint pencil
+f265L	L12	10	34	H	cipher, faint pencil
+f265L	L12	11	300	H	cipher, faint pencil
+f265L	L12	12	30	H	cipher, faint pencil
+f265L	L12	13	33	H	cipher, faint pencil
+f265L	L12	14	208	M	cipher, faint pencil, digit ambiguous 208/206
+f265L	L12	15	17	H	cipher, faint pencil
+f265L	L12	16	133	H	cipher, faint pencil
+f265L	L12	17	244	H	cipher, faint pencil
+f265L	L12	18	29	H	cipher, faint pencil
+f265L	L12	19	32	H	cipher, faint pencil
+f265L	L12	20	269	M	cipher, faint pencil, right edge of s2, digit ambiguous 269/267
+f265L	L12	21	221	M	cipher, faint pencil, right edge of s2, cut, continues into L13
+f265L	L13	1	il	H	clear, darker ink
+f265L	L13	2	m'a	H	clear, darker ink
+f265L	L13	3	voulu	H	clear, darker ink
+f265L	L13	4	[cancelled phrase]	L	clear, darker ink, several words struck through, illegible
+f265L	L13	5	191	M	cipher, faint pencil, digit ambiguous 191/199
+f265L	L13	6	205	M	cipher, faint pencil, digit ambiguous 205/208
+f265L	L13	7	303	H	cipher, faint pencil
+f265L	L13	8	11	H	cipher, faint pencil
+f265L	L13	9	32	H	cipher, faint pencil
+f265L	L13	10	fait	H	clear, darker ink/pencil
+f265L	L13	11	l'honneur	H	clear, darker ink/pencil
+f265L	L13	12	de	H	clear, darker ink/pencil
+f265L	L13	13	206	M	cipher, faint pencil, digit ambiguous 206/208
+f265L	L13	14	8	L	cipher, faint pencil, cancelled/corrected, digit uncertain
+f265L	L13	15	610	L	cipher, faint pencil, digit sequence unusual, reading uncertain
+f265L	L13	16	601	L	cipher, faint pencil, digit sequence unusual, reading uncertain
+f265L	L13	17	206	M	cipher, faint pencil, right edge of s2, digit ambiguous 206/208
+f265L	L13	18	meme	M	clear, faint pencil, smaller script caption
+f265L	L13	19	iour	M	clear, faint pencil, smaller script caption, old spelling of "jour"
+f265L	L13	20	Ses	H	clear, darker ink, own short line at bottom
+f265L	L13	21	ordres	H	clear, darker ink, followed by flourish
+f265L	L14	1	32	H	cipher, faint pencil
+f265L	L14	2	33	H	cipher, faint pencil
+f265L	L14	3	267	H	cipher, faint pencil
+f265L	L14	4	280	H	cipher, faint pencil
+f265L	L14	5	35	M	cipher, faint pencil, digit ambiguous 35/33
+f265L	L14	6	30	H	cipher, faint pencil
+f265L	L14	7	278	H	cipher, faint pencil
+f265L	L14	8	30	H	cipher, faint pencil
+f265L	L14	9	42	H	cipher, faint pencil
+f265L	L14	10	28	H	cipher, faint pencil
+f265L	L14	11	16	H	cipher, faint pencil
+f265L	L14	12	267	H	cipher, faint pencil
+f265L	L14	13	30	H	cipher, faint pencil
+f265L	L14	14	ie	H	clear, faint pencil, old spelling of "je"
+f265L	L14	15	ne	H	clear, faint pencil
+f265L	L14	16	deuois	H	clear, faint pencil, old spelling of "devois"
+f265L	L14	17	faire	H	clear, darker ink main row
+f265L	L14	18	aucun	H	clear, darker ink main row
+f265L	L14	19	mouuement	H	clear, darker ink main row, old spelling of "mouvement"
+f265L	L14	20	sans	H	clear, darker ink main row
+f265L	L14	21	son	H	clear, darker ink main row
+f265L	L14	22	ordre	H	clear, darker ink main row
+f265L	L14	23	lexpres	M	clear, darker ink main row, "l'exprès" run together
+f265L	L14	24	161	H	cipher, faint pencil
+f265L	L14	25	10	H	cipher, faint pencil
+f265L	L14	26	34	H	cipher, faint pencil
+f265L	L14	27	120	M	cipher, faint pencil, digit ambiguous 120/220
+f265L	L14	28	40	M	cipher, faint pencil, digit ambiguous 40/60
+f265L	L14	29	208	M	cipher, faint pencil, digit ambiguous 208/206
+f265L	L14	30	36	H	cipher, faint pencil
+f265L	L14	31	301	H	cipher, faint pencil
+f265L	L14	32	211	H	cipher, faint pencil
+f265L	L14	33	241	M	cipher, faint pencil, digit ambiguous 241/247
+f265L	L14	34	280	H	cipher, faint pencil
+f265L	L14	35	17	H	cipher, faint pencil
+f265L	L14	36	236	M	cipher, faint pencil, right edge of s2, digit ambiguous 236/238
+f265L	L14	37	19	M	cipher, faint pencil, right edge of s2, cut
+f265L	L14	38	36	M	cipher, faint pencil, right edge of s2, cut
+f265L	L14	39	24	M	cipher, faint pencil, right edge of s2, cut, continues into L15
+f265L	L14	40	283	M	cipher, bottom edge cut, reconstructed via L15 top-bleed
+f265L	L14	41	280	M	cipher, bottom edge cut, reconstructed via L15 top-bleed
+f265L	L14	42	17	M	cipher, bottom edge cut, reconstructed via L15 top-bleed
+f265L	L14	43	253	M	cipher, bottom edge cut, reconstructed via L15 top-bleed
+f265L	L14	44	18	M	cipher, bottom edge cut, reconstructed via L15 top-bleed
+f265L	L14	45	30	M	cipher, bottom edge cut, reconstructed via L15 top-bleed
+f265L	L14	46	24	M	cipher, bottom edge cut, reconstructed via L15 top-bleed
+f265L	L15	1	il	H	clear, darker ink main row
+f265L	L15	2	m'a	H	clear, darker ink main row
+f265L	L15	3	paru	H	clear, darker ink main row
+f265L	L15	4	fort	H	clear, darker ink main row
+f265L	L15	5	touchi	M	clear, darker ink main row, old spelling of "touché"
+f265L	L15	6	de	H	clear, darker ink main row
+f265L	L15	7	cette	H	clear, darker ink main row
+f265L	L15	8	honnestete	M	clear, darker ink main row, followed by flourish, old spelling of "honnêteté"
+f265L	L15	9	267	M	cipher, faint pencil, digit ambiguous 267/269
+f265L	L15	10	30	H	cipher, faint pencil
+f265L	L15	11	191	M	cipher, faint pencil, digit ambiguous 191/199
+f265L	L15	12	205	M	cipher, faint pencil, digit ambiguous 205/208
+f265L	L15	13	244	H	cipher, faint pencil
+f265L	L15	14	270	H	cipher, faint pencil
+f265L	L15	15	155	M	cipher, faint pencil, digit ambiguous 155/153
+f265L	L15	16	28	H	cipher, faint pencil
+f265L	L15	17	32	H	cipher, faint pencil
+f265L	L15	18	291	H	cipher, faint pencil
+f265L	L15	19	34	H	cipher, faint pencil
+f265L	L15	20	14	H	cipher, faint pencil
+f265L	L15	21	176	M	cipher, faint pencil, digit ambiguous 176/178
+f265L	L15	22	133	M	cipher, faint pencil, right edge of s2, cut, continues into L16
+f265L	L16	1	[no legible text]	L	bottom margin band, entirely blank in both crops, no text visible; L15's cipher row apparently completed within its own crop with no further continuation
+f265R	L01	1	[no legible text]	L	top margin band, entirely blank in both crops, no text visible
+f265R	L02	1	M	H	clear, darker ink, abbreviation for "Monsieur", start of address line
+f265R	L02	2	de	H	clear, darker ink
+f265R	L02	3	Pontchartrain	H	clear, darker ink, proper name
+f265R	L02	4	[flourish]	L	clear, darker ink, paraph/flourish after the name, not a word
+f265R	L02	5	262	M	archival folio-number stamp at far right of crop, not part of the letter text
+f265R	L02	6	117	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	7	33	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	8	289	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	9	176	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	10	224	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	11	30	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	12	289	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	13	8	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	14	289	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	15	133	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	16	210	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	17	133	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	18	247	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L02	19	11	M	cipher, bottom edge cut, reconstructed via L03 top-bleed
+f265R	L03	1	Mon	L	clear, own short line, large script with long flourish/underline, likely abbreviated salutation "Monseigneur", reading uncertain
+f265R	L03	2	14	H	cipher, faint pencil
+f265R	L03	3	176	M	cipher, faint pencil, digit ambiguous 176/178
+f265R	L03	4	28	H	cipher, faint pencil
+f265R	L03	5	32	H	cipher, faint pencil
+f265R	L03	6	266	M	cipher, faint pencil, digit ambiguous 266/268
+f265R	L03	7	11	H	cipher, faint pencil
+f265R	L03	8	17	H	cipher, faint pencil
+f265R	L03	9	143	H	cipher, faint pencil
+f265R	L03	10	133	H	cipher, faint pencil
+f265R	L03	11	208	M	cipher, faint pencil, digit ambiguous 208/206
+f265R	L03	12	60	M	cipher, faint pencil, digit ambiguous 60/40
+f265R	L03	13	empressement	M	clear, darker ink, right edge cut, continues into L04
+f265R	L04	1	[faint bleed fragment]	L	top edge, faint pencil, cut caption bleeding from L03, not clearly legible
+f265R	L04	2	Il	H	clear, darker ink main row
+f265R	L04	3	est	H	clear, darker ink main row
+f265R	L04	4	tres	H	clear, darker ink main row
+f265R	L04	5	persuade	H	clear, darker ink main row
+f265R	L04	6	pour	M	clear, smaller script caption below, top partly cut
+f265R	L04	7	son	M	clear, smaller script caption
+f265R	L04	8	service	M	clear, smaller script caption
+f265R	L04	9	191	M	cipher, faint pencil, digit ambiguous 191/199
+f265R	L04	10	142	H	cipher, faint pencil
+f265R	L04	11	208	M	cipher, faint pencil, digit ambiguous 208/206
+f265R	L04	12	246	H	cipher, faint pencil
+f265R	L04	13	28	H	cipher, faint pencil
+f265R	L04	14	289	H	cipher, faint pencil
+f265R	L04	15	10	H	cipher, faint pencil
+f265R	L04	16	133	M	cipher, faint pencil, right edge of s2, cut, continues into L05
+f265R	L04	17	191	M	cipher, bottom edge cut, reconstructed via L05 top-bleed, digit ambiguous 191/199
+f265R	L04	18	148	M	cipher, bottom edge cut, reconstructed via L05 top-bleed
+f265R	L04	19	296	M	cipher, bottom edge cut, reconstructed via L05 top-bleed
+f265R	L05	1	que	H	clear, darker ink main row
+f265R	L05	2	l'armement	H	clear, darker ink main row
+f265R	L05	3	de	H	clear, darker ink main row
+f265R	L05	4	Dunkerque	H	clear, darker ink main row, proper name
+f265R	L05	5	regarde	H	clear, darker ink main row
+f265R	L05	6	260	M	cipher, faint pencil, digit ambiguous 260/269
+f265R	L05	7	105	M	cipher, faint pencil, digit ambiguous 105/106
+f265R	L05	8	28	H	cipher, faint pencil
+f265R	L05	9	206	M	cipher, faint pencil, digit ambiguous 206/208
+f265R	L05	10	211	H	cipher, faint pencil
+f265R	L05	11	133	H	cipher, faint pencil
+f265R	L05	12	136	M	cipher, faint pencil, digit ambiguous 136/138
+f265R	L05	13	17	H	cipher, faint pencil
+f265R	L05	14	260	M	cipher, faint pencil, digit ambiguous 260/269
+f265R	L05	15	28	H	cipher, faint pencil
+f265R	L05	16	260	M	cipher, faint pencil, digit ambiguous 260/269
+f265R	L05	17	267	M	cipher, faint pencil, digit ambiguous 267/269
+f265R	L05	18	29	H	cipher, faint pencil
+f265R	L05	19	133	M	cipher, faint pencil, right edge of s2, cut, continues into L06
+f265R	L05	20	259	M	cipher, bottom edge cut, reconstructed via L06 top-bleed
+f265R	L05	21	197	M	cipher, bottom edge cut, reconstructed via L06 top-bleed, digit ambiguous 197/199
+f265R	L05	22	28	M	cipher, bottom edge cut, reconstructed via L06 top-bleed
+f265R	L05	23	211	M	cipher, bottom edge cut, reconstructed via L06 top-bleed
+f265R	L05	24	133	M	cipher, bottom edge cut, reconstructed via L06 top-bleed
+f265R	L05	25	130	M	cipher, bottom edge cut, reconstructed via L06 top-bleed
+f265R	L05	26	17	M	cipher, bottom edge cut, reconstructed via L06 top-bleed
+f265R	L05	27	259	M	cipher, bottom edge cut, reconstructed via L06 top-bleed
+f265R	L06	1	l'escadre	M	clear, darker ink main row, reading uncertain
+f265R	L06	2	lu	M	clear, darker ink main row, "lui" old spelling
+f265R	L06	3	doit	H	clear, darker ink main row
+f265R	L06	4	se	H	clear, darker ink main row
+f265R	L06	5	joindre	H	clear, darker ink main row
+f265R	L06	6	277	H	cipher, faint pencil
+f265R	L06	7	133	H	cipher, faint pencil
+f265R	L06	8	30	H	cipher, faint pencil
+f265R	L06	9	117	H	cipher, faint pencil
+f265R	L06	10	50	H	cipher, faint pencil
+f265R	L06	11	289	H	cipher, faint pencil
+f265R	L06	12	145	M	cipher, faint pencil, digit ambiguous 145/143
+f265R	L06	13	135	M	cipher, faint pencil, digit ambiguous 135/133
+f265R	L06	14	11	H	cipher, faint pencil
+f265R	L06	15	32	H	cipher, faint pencil
+f265R	L06	16	278	H	cipher, faint pencil
+f265R	L06	17	188	M	cipher, faint pencil, digit ambiguous 188/186
+f265R	L06	18	11	H	cipher, faint pencil
+f265R	L06	19	50	H	cipher, faint pencil
+f265R	L06	20	16	H	cipher, faint pencil
+f265R	L06	21	257	M	cipher, faint pencil, right edge of s2, digit ambiguous 257/259, continues into L07
+f265R	L07	1	a	H	clear, darker ink
+f265R	L07	2	M	H	clear, darker ink, abbreviation for "Monsieur"
+f265R	L07	3	10	H	cipher, faint pencil
+f265R	L07	4	210	H	cipher, faint pencil
+f265R	L07	5	de	H	clear, faint pencil
+f265R	L07	6	Chasteaurenaut	H	clear, faint pencil, proper name
+f265R	L07	7	et	H	clear, faint pencil
+f265R	L07	8	il	H	clear, faint pencil
+f265R	L07	9	m'a	H	clear, faint pencil
+f265R	L07	10	dit	H	clear, faint pencil
+f265R	L07	11	qu'il	M	clear, faint pencil, right edge cut, continues into L08
+f265R	L08	1	croyoit	H	clear, faint pencil
+f265R	L08	2	qu'effectiuement	M	clear, faint pencil, run together, old spelling of "qu'effectivement"
+f265R	L08	3	ie	H	clear, faint pencil, old spelling of "je"
+f265R	L08	4	serois	H	clear, faint pencil
+f265R	L08	5	plus	H	clear, faint pencil
+f265R	L08	6	vtile	M	clear, faint pencil, old spelling of "utile"
+f265R	L08	7	a	H	clear, faint pencil
+f265R	L08	8	Je	H	clear, darker ink, own short line
+f265R	L08	9	suis	H	clear, darker ink
+f265R	L08	10	[cancelled word]	L	clear, darker ink, struck through, illegible
+f265R	L08	11	meme	M	clear, darker ink, following the cancellation
+f265R	L08	12	Dunkerque	L	clear, faint pencil, bottom edge cut, reconstructed via L09 top-bleed, proper name, reading uncertain
+f265R	L08	13	[uncertain phrase]	L	clear, faint pencil, bottom edge cut, reconstructed via L09 top-bleed, illegible
+f265R	L08	14	180	M	cipher, faint pencil, bottom edge cut, reconstructed via L09 top-bleed
+f265R	L08	15	201	M	cipher, faint pencil, bottom edge cut, reconstructed via L09 top-bleed
+f265R	L08	16	11	M	cipher, faint pencil, bottom edge cut, reconstructed via L09 top-bleed
+f265R	L08	17	30	M	cipher, faint pencil, bottom edge cut, reconstructed via L09 top-bleed
+f265R	L09	1	auec	H	clear, darker ink main row, old spelling of "avec"
+f265R	L09	2	Milord	H	clear, darker ink main row
+f265R	L09	3	Myddleton	H	clear, darker ink main row, proper name
+f265R	L09	4	[flourish]	L	clear, darker ink, paraph/flourish, not a word
+f265R	L09	5	parfaitement	M	clear, faint pencil, smaller script caption below, top partly cut
+f265R	L09	6	301	M	cipher, faint pencil, bottom edge cut, reconstructed via L10 top-bleed
+f265R	L09	7	14	M	cipher, faint pencil, bottom edge cut, reconstructed via L10 top-bleed
+f265R	L09	8	266	L	cipher, faint pencil, bottom edge cut, reconstructed via L10 top-bleed, digit uncertain
+f265R	L09	9	143	M	cipher, faint pencil, bottom edge cut, reconstructed via L10 top-bleed
+f265R	L09	10	103	L	cipher, faint pencil, bottom edge cut, reconstructed via L10 top-bleed, digit sequence uncertain
+f265R	L09	11	14	M	cipher, faint pencil, bottom edge cut, reconstructed via L10 top-bleed
+f265R	L09	12	291	M	cipher, faint pencil, bottom edge cut, reconstructed via L10 top-bleed
+f265R	L09	13	34	M	cipher, faint pencil, bottom edge cut, reconstructed via L10 top-bleed
+f265R	L09	14	32	M	cipher, faint pencil, bottom edge cut, reconstructed via L10 top-bleed
+f265R	L10	1	auec	H	clear, darker ink main row, old spelling of "avec"
+f265R	L10	2	tout	H	clear, darker ink main row
+f265R	L10	3	ceq'il	M	clear, darker ink main row, "ce qu'il" run together
+f265R	L10	4	yaicy	M	clear, darker ink main row, "y a icy" run together, reading uncertain
+f265R	L10	5	deaglois	L	clear, darker ink main row, reading uncertain, possibly "d'anglois"
+f265R	L10	6	vnpeu	M	clear, darker ink main row, "un peu" run together
+f265R	L10	7	117	H	cipher, faint pencil
+f265R	L10	8	260	M	cipher, faint pencil, digit ambiguous 260/269
+f265R	L10	9	46	H	cipher, faint pencil
+f265R	L10	10	38	H	cipher, faint pencil
+f265R	L10	11	10	H	cipher, faint pencil
+f265R	L10	12	11	H	cipher, faint pencil
+f265R	L10	13	118	M	cipher, faint pencil, digit ambiguous 118/116
+f265R	L10	14	16	H	cipher, faint pencil
+f265R	L10	15	700	L	cipher, faint pencil, digit sequence unusual (out of range seen elsewhere), reading uncertain
+f265R	L10	16	36	H	cipher, faint pencil
+f265R	L10	17	17	H	cipher, faint pencil
+f265R	L10	18	246	M	cipher, faint pencil, digit ambiguous 246/240
+f265R	L10	19	34	H	cipher, faint pencil
+f265R	L10	20	confidence	M	clear, right edge of s2, cut, continues into L11
+f265R	L10	21	eux	M	clear, darker ink, smaller script caption, right side
+f265R	L10	22	en	H	clear, darker ink, smaller script caption
+f265R	L10	23	cotterie	M	clear, darker ink, smaller script caption, reading uncertain
+f265R	L10	24	journaliere	M	clear, darker ink, smaller script caption, followed by flourish
+f265R	L11	1	[cancelled numeral]	L	cipher, faint pencil, left margin, heavily corrected/overwritten, digits illegible
+f265R	L11	2	estant	H	clear, faint pencil, old spelling of "étant"
+f265R	L11	3	auec	H	clear, faint pencil, old spelling of "avec"
+f265R	L11	4	130	M	cipher, faint pencil, digit ambiguous 130/136
+f265R	L11	5	1917	L	cipher, faint pencil, digit sequence unusual, reading uncertain
+f265R	L11	6	119	H	cipher, faint pencil
+f265R	L11	7	32	H	cipher, faint pencil
+f265R	L11	8	289	H	cipher, faint pencil
+f265R	L11	9	268	M	cipher, faint pencil, digit ambiguous 268/266
+f265R	L11	10	18	H	cipher, faint pencil
+f265R	L11	11	188	M	cipher, faint pencil, digit ambiguous 188/186
+f265R	L11	12	34	H	cipher, faint pencil
+f265R	L11	13	29	H	cipher, faint pencil
+f265R	L11	14	223	M	cipher, faint pencil, right edge of s2, digit ambiguous 223/225, continues into L12
+f265R	L11	15	de	M	clear, darker ink, bottom edge cut, reconstructed via L12 top-bleed
+f265R	L11	16	desvouement	L	clear, darker ink, bottom edge cut, reconstructed via L12 top-bleed, reading uncertain
+f265R	L11	17	de	M	clear, darker ink, bottom edge cut, reconstructed via L12 top-bleed
+f265R	L11	18	pratique	L	clear, darker ink, bottom edge cut, reconstructed via L12 top-bleed, reading uncertain
+f265R	L12	1	197	M	cipher, faint pencil, digit ambiguous 197/199
+f265R	L12	2	18	H	cipher, faint pencil
+f265R	L12	3	267	M	cipher, faint pencil, digit ambiguous 267/269
+f265R	L12	4	133	H	cipher, faint pencil
+f265R	L12	5	8	H	cipher, faint pencil
+f265R	L12	6	133	H	cipher, faint pencil
+f265R	L12	7	107	H	cipher, faint pencil
+f265R	L12	8	34	H	cipher, faint pencil
+f265R	L12	9	14	H	cipher, faint pencil
+f265R	L12	10	176	M	cipher, faint pencil, digit ambiguous 176/178
+f265R	L12	11	123	M	cipher, faint pencil, digit ambiguous 123/125
+f265R	L12	12	133	H	cipher, faint pencil
+f265R	L12	13	24	H	cipher, faint pencil
+f265R	L12	14	195	H	cipher, faint pencil
+f265R	L12	15	11	H	cipher, faint pencil
+f265R	L12	16	279	H	cipher, faint pencil
+f265R	L12	17	28	H	cipher, faint pencil, end of clause, period follows
+f265R	L13	1	en	H	clear, darker ink, smaller script caption, right side
+f265R	L13	2	Milord	H	clear, darker ink, smaller script caption
+f265R	L13	3	Myddleton	H	clear, darker ink, smaller script caption, proper name
+f265R	L13	4	Je	H	clear, faint pencil main row
+f265R	L13	5	n'ay	H	clear, faint pencil main row
+f265R	L13	6	rien	H	clear, faint pencil main row
+f265R	L13	7	remarque	H	clear, faint pencil main row
+f265R	L13	8	18	H	cipher, faint pencil
+f265R	L13	9	17	H	cipher, faint pencil
+f265R	L13	10	722	M	cipher, faint pencil, digit sequence unusual, reading uncertain
+f265R	L13	11	qui	H	clear, faint pencil main row
+f265R	L13	12	ne	H	clear, faint pencil main row
+f265R	L13	13	me	H	clear, faint pencil main row
+f265R	L13	14	confirme	M	clear, faint pencil main row, right edge cut, continues into L14
+f265R	L14	1	ce	H	clear, faint pencil
+f265R	L14	2	que	H	clear, faint pencil
+f265R	L14	3	i'ay	H	clear, faint pencil, "j'ay"
+f265R	L14	4	eu	H	clear, faint pencil
+f265R	L14	5	l'honneur	H	clear, faint pencil
+f265R	L14	6	de	H	clear, faint pencil
+f265R	L14	7	vous	H	clear, faint pencil
+f265R	L14	8	en	H	clear, faint pencil
+f265R	L14	9	marquer	H	clear, faint pencil
+f265R	L14	10	en	H	clear, faint pencil
+f265R	L15	1	dernier	H	clear, faint pencil
+f265R	L15	2	lieu	H	clear, faint pencil, end of clause, period follows; rest of line blank
