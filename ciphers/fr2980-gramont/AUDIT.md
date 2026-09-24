@@ -1015,3 +1015,126 @@ archivesetmanuscrits.bnf.fr: 2 (1 reset, 1 retry 200). api.crossref.org: 7. api.
 api.openalex.org: 9 (all 429; stopped). api.semanticscholar.org: 9 (all 429; stopped). www.persee.fr: 2. github.com: 4
 shallow clones (two repositories, twice). gallica.bnf.fr: 0. No logins, no credentials printed, no decoding, no
 subagents.
+
+## Second audit (adversarial), f.30, 24 Sept 2026
+
+Adversarial second auditor (LANE V, Opus, cap $15, orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ), 24 September 2026,
+04:21-04:40 UTC (`date -u` read). This session is separate from the f.30 solver, the reconciler, the first f.30 verifier
+and the blind second reader (pass C, 04:28, which ran in parallel and whose files this section does not use). It did not
+decode. Its only aim was to find no.22 (f.30r-v, Gramont to Francis I, Rome, 20 May 1530), its plaintext, an extract, a
+summary or a decipherment, in print, and so prove the first audit's N3 wrong. It did not find one.
+
+### Verdict
+
+| item | first audit | this audit | reason |
+|---|---|---|---|
+| BnF fr.2980 f.30r-v, no.22, Gramont to the king, Rome, 20 May 1530, all cipher | N3 | **N3 confirmed (two audits)** | Gaps (1) and (2) of the first audit are closed as negatives: the *ASI* Appendice II-IX and the series' general index, and Sanuto's *Diarii* 52-54. So are Ribier, Molini, Desjardins II, the *Catalogue des actes* and both solver repositories, re-checked by phrase and name. The closest print is still the sibling letter of April 1530 (ASI App. I pp.473-481). **Not raised to N4** because Camusat (1644 ed., the tract of Francis I's letters) is sampled, not read (LANE G, cefda7c, 9 of about 217 folios); HathiTrust full text, OpenAlex and Semantic Scholar were unreachable; and the Simancas intercepts are unexamined (below). |
+
+### What this audit found that the first did not
+
+1. ***ASI*, general index of series I and Appendice I-IX** (IA `archiviostoricoi116depuuoft`, "Index 1-16 Append 1-9",
+   full text). Its chronological list for 1530 has exactly one Tarbes item, "aprile. Lettera del vescovo di Tarbes al re di
+   Francia … I App., 473" (the April letter). Between 4 May (Ferrucci) and 16-17 May / 31 May (Tedaldi) it lists nothing
+   French. The name index has one entry, "Tarbes (Vescovo di). V. Ind. 2.°, an. 1530, aprile". This covers App. III as well,
+   whose djvu text returned HTTP 500 twice (be-api fts on it: 0 hits for Tarbes). **Gap (1) closed.**
+2. **Sanuto, *I Diarii* 53 (1 Mar-30 Sept 1530)** (IA `idiariidimarinos53sanu`, full text; vols. 52 and 54 checked for
+   range). The editors' index gives "Gramont (Agramonte) (de) Gabriele … 268, 280, 298, 360, 368, 369, 544" and "Terbe (di),
+   v. Gramont". Every column was read in context. They are Surian's reports from Rome: the cardinal's hat (col. 268, June),
+   Gramont's remark about the king's sons (280), and the king's letters for Malatesta Baglioni and Gian Paolo da Ceri, 17 June
+   (298). There are also a July congratulation on the hat (368-369, "Agramonte") and a brawl between his household and the
+   Portuguese ambassador's (544, August). There is **no copy or summary of a Gramont letter of May 1530**. A proximity scan of
+   the May columns (lines 11000-18300) for the French ambassador, "libertà" and Avignon found only Florentine and Venetian
+   material. Vol. 52 (Oct 1529-Feb 1530) indexes Gramont at Bologna only. **Gap (2) closed.**
+3. **An interception route, not a print.** Loaysa's letters to Charles V (Heine 1848, IA `briefeankaiserk00loaygoog`, full
+   text; searched for Tarva/Tarbe) begin in late June 1530. In letter V the pope discusses "die in Asti aufgefangenen Briefe".
+   CSP Spanish IV.1 p.603 (Mai to Covos, summer 1530; IA `calendarofletter0004pasc`, re-read this session) says "Tarbes has
+   complained … that the governor of Asti, Scalenga, intercepts his letters" and that only letters going to Florence are
+   touched. The imperial side therefore intercepted French letters of this embassy and deciphered some ("Contemporary
+   deciphering on separate sheet" is noted on Mai's own despatches). No printed calendar entry is an intercepted copy or
+   decipherment of the 20 May letter to the king. The BnF original reached the French side (Béthune), which argues against
+   its interception. **An archival decipherment at Simancas (Estado) or Vienna is not excluded, because it is not in print.**
+4. **Gramont's secretary.** Persée (Thorel, *RHR* 71, 2011, pp.91-105) names Berthault as Gramont's secretary until 1534.
+   It is not a print of the letter, but a lead for anyone searching for a secretary's register of copies.
+
+### Source-family log (this session)
+
+(a) **Canonical series.** CSP Spanish IV (full djvu text, re-grepped for intercept/decipher/Asti with Tarbes and 1530):
+nothing for 20 May. The Asti passage is above. LP, CSP Venetian: as in the first audit, not repeated.
+(b) **Sender/recipient editions.** Ribier 1666, all three IA scans (full text, re-grepped for Tarbe/Gramont): hits are
+1540s (the Alger expedition, "l'Evesque de Tarbe Ambassadeur du Roy vers l'Empereur"), none of 1530. Molini, *Documenti*,
+four IA scans: 8505 appears only in the register of Béthune volumes, and the Gramont hits are other letters (Casale to
+Gramont, etc.). Desjardins II (`gri_33125010469852`): 11 Tarbes hits, none of May 1530, and no phrase hits. *Catalogue des
+actes* I, VI, VII, IX (full text): "2980" in IX only at [411] (existence and date, as known); the other hits are act
+numbers. **Searched.**
+(c) **Documentary editions and journals.** *ASI* App. II, IV-IX (full djvu text) and III (index + be-api fts); the general
+index (above). Tarbes hits: App. II p.153 (a review quoting Charles V, 1531, on the cardinal's return), App. VIII p.535 (a
+review of Heine's Loaysa). **Searched.** Sanuto 52-54: **searched** (above). Heine/Loaysa: **searched**.
+Champollion-Figeac, *Captivité* (LANE G, cefda7c): **closed**, structurally (Oct 1524-Apr 1526 only).
+(d) **Holding archive.** Not re-queried (the first audit fetched cc494342 today). Gallica: not used (LANE G's host).
+(e) **Phrase search on the decoded text** (tools/print_check.py, 12 phrases from reading_f30_extended.txt, 23 listed
+sources plus IA-global, Google Books, OpenAlex and CrossRef; output kept in the scratchpad, not committed, because this
+worker writes only AUDIT.md). All 23 listed sources gave **no hits** for every phrase. IA-global and Google Books gave no
+hits for 9 of 12 phrases: "la declaration de la liberte de Florence", "la ville et la force entre vos mains", "qu'il veult
+aller en Avignon", "pour recouvrer ce que ses predecesseurs ont perdu", "qu'il n'a aucune deliberation d'aller", "toutes
+choses qui vous touchent de si bon pied", "neantmoins qu'il ait maulvaise fantasie", "l'ambassadeur et aultres ses
+ministres", "qu'il ne s'y peut faire aultre chose". Three generic formulas hit unrelated works ("qu'il est impossible de
+voir", "maintenir les amities", and "sur la foy que je vous dois", which found 3 HMC Salisbury calendars). **Searched.**
+(f) **Solver repositories and cipher pages.** dbourdeau/cyphersolver, fresh shallow clone at head 54b0ac7 (23 Sept 2026
+23:30 -05:00), newer than the first audit's c85ece1: fr.2980 still only at CATALOGUE.md:76 (328, "Gramont 1530 key held"),
+gallica_sweep and rangone1530. Its raince/ and bethune/ folders are other volumes (fr.2984/3040/3091; fr.3484).
+aaymeloglu/unsolved-ciphers head 2495c45: no fr.2980 (the "2980" and "8505" hits are DECODE record numbers of BL
+items). Tomokiyo francis.htm, live (one 302 to https, then 200): the same sentence, "These undeciphered letters can be read
+with Gramont's cipher (1530)". The key comes from fr.3019 f.20 and fr.3071 f.17, and there is no reading of no.22.
+**Searched, catalogued not read.**
+(g) **Scholarship, open indexes.** HAL (6 queries): only the PUR Gramont chapter (2011, already read). Persée (5 queries):
+Fraikin, "La nonciature de France de la délivrance de Clément VII à sa mort", *MEFR* 26 (1906) pp.513-563 (a list of
+nuncios and missions with Gramont's credences; the snippet was read and the full text is not served on the doc page), and
+Thorel 2011 (above); nothing on this letter. CrossRef (5 queries by hand, 3 through the tool before a 429): nothing
+on-topic. **OpenAlex: unreachable** (429 on the first call, again today). **Semantic Scholar: unreachable** (429, one retry
+after a pause, 429). JSTOR: two rows added to JSTOR-QUEUE.tsv (the Asti interceptions; Berthault).
+(h) **Not reached:** Camusat, the rest of the Francis I tract (LANE G's flag stands: read folios 1-90 densely); HathiTrust
+full text (Cloudflare); *Revue des Hautes-Pyrénées* (the IA volume `revuedeshautesp00unkngoog` returned 500 for djvu;
+phrase fts 0 hits; it is not known to be the 1907 volume); Simancas and Vienna intercepts (archival).
+
+### Safe sentence
+
+"BnF fr.2980 f.30r-v (no.22) is a letter written entirely in cipher by Gabriel de Gramont, bishop of Tarbes, to Francis I,
+Rome, 20 May 1530. Tomokiyo had identified it as readable with the published Gramont 1530 key (Tomokiyo; Lasry 2023), and
+Bourdeau catalogued it (328). We transcribed it from the Gallica image (one reconciled reading of two blind passes, since
+compared with a third blind reader) and applied that key: the table gives values for 1502 of 1973 signs (H), and 158 more
+are cryptanalytic (S, matched control), leaving 59 unread. The reading is partial. No prior printed plaintext, extract,
+summary or decipherment of the letter was located after two independent audits of the editions and indexes listed in
+AUDIT.md (N3). A clear-text letter of April 1530 from Gramont to the king on the same negotiation is printed in *Archivio
+storico italiano*, Appendice I, pp.473-481."
+
+### Unsafe sentences
+
+All of the first audit's still apply. Also: "not in Sanuto or the *Archivio storico italiano*, so unpublished" (absence from
+named sources is a search result; Camusat and the archives are not closed); "never intercepted" or "the imperials never
+read it" (Asti interceptions are documented, and Simancas was not searched); "N4" (Camusat not read).
+
+### Corrections made (this session)
+
+1. status.json, the f.30 results row: grade "N3, single audit" became "N3, two audits". Its line "verifier (LANE V)
+   running, no novelty class yet" was stale since the first audit and now reads "N3 after two audits; below N4 while
+   Camusat is not read".
+2. No over-claiming wording (new, first, unread, unpublished, never printed) about f.30 was found in AUDIT.md,
+   status.json or the ROOM lines for this folder (grep). NOTES.md was not touched (the pass-C worker owns it this hour).
+
+### Postmortem
+
+**No failure of the first audit found. Its N3 stands.** Both named gaps were real places to look. The *ASI* index settles the
+Appendice in one read, and a verifier should reach for a series' general index before per-volume greps (lesson for the
+template). What the first audit could not have seen from print alone is the interception route. French letters of this
+embassy were stopped at Asti, and Mai's despatches carry contemporary decipherments. So "no prior decipherment" means
+"none in print". A Simancas decipherment of a Gramont letter of May 1530 would move the class, and only an archive search
+(or a specialist, N5) can rule it out.
+
+### Requests this session
+
+archive.org: about 44 (advancedsearch 8, metadata 3, djvu.txt 21 including 3 HTTP 500s and one retry each, plus 15 by
+print_check), at least 3 s apart. be-api.us.archive.org: 37 (1 by hand, 36 by print_check). www.googleapis.com (Books,
+keyed, country=US, key never printed): 12, run through a copy of print_check with 3.2 s spacing. api.openalex.org: 1
+(429). api.crossref.org: 8 (the last a 429). api.semanticscholar.org: 2 (429, 429). api.archives-ouvertes.fr: 6.
+www.persee.fr: 6. cryptiana.web.fc2.com: 2. github.com: 2 shallow clones (deleted after). gallica.bnf.fr: 0. No logins,
+no credentials printed, no decoding, no subagents.

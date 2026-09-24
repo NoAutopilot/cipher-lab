@@ -30,3 +30,5 @@ ciphers/fr2980-gramont	"Gabriel de Gramont" AND "Clement VII" AND Florence	2026-
 ciphers/fr5160-letellier-1653	"Servien" AND (Turin OR Savoie) AND 1659	2026-09-24	queued	
 ciphers/fr5160-letellier-1653	"Justine de Bressac" OR "président Servien" ambassade	2026-09-24	queued	
 ciphers/fr5160-letellier-1653	Brienne AND Servien AND (chiffre OR déchiffrement) AND Parme	2026-09-24	queued	
+ciphers/fr2980-gramont	"Gramont" AND ("Asti" OR "Scalenga") AND 1530 AND (intercepted OR intercettate OR interceptées)	2026-09-24	queued	
+ciphers/fr2980-gramont	"Berthault" AND "Gramont" AND (secrétaire OR chiffre)	2026-09-24	queued	
