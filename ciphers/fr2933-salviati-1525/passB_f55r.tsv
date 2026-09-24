@@ -1,0 +1,117 @@
+line	pos	code	marks	action	conf	note
+1	1	_		correct	L	isolated double parallel diagonal stroke, no loop or hook; does not match y (no loop tail) or any other atlas code well; script proposed y at low share 0.60
+1	2	o.		confirm	H	ring with central dot, matches o. atlas plate exactly
+1	3	y		confirm	H	cursive y with looped tail
+1	4	bh		confirm	H	tall stem with small hooked loop, matches bh
+1	5	e	#	correct	M	e-bowl matches atlas closely; a clear # mark sits above it that script left unrecorded
+1	6	tee		confirm	M	vertical stroke with bar to the right, matches tee; share only 0.59 but shape is clear
+1	7	S7		confirm	M	numeral-7 shape (top bar + downstroke), matches S7 though the downstroke is straighter than most exemplars; share 0.72
+1	8	w		confirm	H	wavy cursive w, matches atlas
+1	9	y		confirm	H	cursive y with looped tail
+1	10	lam		confirm	H	two strokes meeting near the top, matches lam (Λ)
+1	11	wd	~	confirm	H	w-shape joined to tall right stroke with tilde above, matches wd
+1	12	bh		confirm	M	stem + loop shape, plausible bh though could be misread as g; kept script's call given moderate resemblance
+1	13	g	7	correct	M	g-loop with a small numeral-like flourish above that script left unrecorded as a mark; exact digit uncertain, closest to 7
+1	14	_		correct	M	rounded plain 'u'-like stroke, part of continuous cursive script; the script's proposed # mark is not visually confirmed; share only 0.40
+1	15	Z	dot	correct	M	bold Z-shape with characteristic tail, matches atlas Z including its typical small upper flourish stroke (seen on several atlas Z exemplars); small dot visible below; script proposed plain _ at low share 0.62
+1	16	nt		confirm	H	n-loop merging into crossed stroke, matches nt
+1	17	y		confirm	H	cursive y with looped tail; share 0.82 but shape is clear
+1	18	e	+	correct	M	e-bowl with rising stroke and a clear + cross mark above that script left unrecorded
+1	19	w		confirm	H	wavy cursive w
+1	20	psi		correct	L	forked top (two arms) with fairly straight tail; better match to psi than S7 (no numeral-7 top bar/diagonal present); very low share 0.39 and small box, psi/y/S7 all plausible - flagged as uncertain
+1	21	e	+	correct	H	unambiguous e (bowl + rising stroke) with + cross mark above; script proposed Z/dot at low share 0.39, but no Z zigzag is present in the box
+1	22	w		confirm	H	wavy cursive w
+1	23	H		confirm	H	matches atlas H closely, including small marks consistent with 5|1
+1	24	nt		confirm	H	n-loop merging into crossed stroke, matches nt
+1	25	S7		confirm	H	clear numeral-7 shape, matches S7
+1	26	_	dot|#|~	confirm	H	two adjacent loop shapes resembling plain cursive 'gg' with an abbreviation-like mark above; consistent with plain Italian script, not cipher
+1	27	_	#|dot	confirm	H	very tall box spans a marginal numeral (looks like '3' + digit) above and a cursive word fragment ending '...dy' below; clearly not a cipher glyph, box over-large around a marginal annotation
+1	28	S		confirm	M	thin S/ʃ curve, matches S though the box is very narrow; share 0.61
+1	29	S		confirm	H	clear S/ʃ curve, matches atlas
+2	1	e	+|dot	correct	M	e-bowl with a clear + cross and small dot above; script recorded no marks
+2	2	e	dot|#	confirm	M	e-bowl with marks cluster above consistent with dot|#
+2	3	#	dot|~	confirm	M	cross shape consistent with # plus dot/tilde marks
+2	4	bh		confirm	H	tall stem with hooked loop, matches bh
+2	5	S7		confirm	H	clear numeral-7 shape, matches S7
+2	6	Z	dot	confirm	H	Z with its typical small upper flourish and a dot, matches atlas Z
+2	7	e	#	correct	M	e-bowl with rising stroke and a clear # mark above that script left unrecorded
+2	8	wd		confirm	H	w-shape joined to tall right stroke, matches wd
+2	9	y		confirm	H	cursive y with looped tail
+2	10	a	~	confirm	H	bold cursive a, tilde mark plausible though faint in this crop
+2	11	e	#	correct	H	unambiguous e (bowl + rising stroke) with # mark above, same pattern as pos1/2/7 of this line; script proposed plain _ at share 1.00 but no plain-script shape is present
+2	12	g	7	correct	M	loop-with-tail shape matches g (cf. line1 pos13) better than bh's tall-stem-plus-hook; small numeral mark above; classifier's own cluster_code already disagreed with the top pick 'bh' (share only 0.77)
+2	13	a	1	confirm	H	bold cursive a with small mark
+2	14	a	1	confirm	H	bold cursive a with small mark
+2	15	S		confirm	H	clear S/ʃ curve
+2	16	w		confirm	H	wavy cursive w
+2	17	rz		confirm	H	low hook-then-wave shape, matches rz
+2	18	y		confirm	H	cursive y with looped tail
+2	19	tee		confirm	H	vertical stroke with bar to the right, matches tee
+2	20	_		confirm	H	small plain hook/curve fragment
+2	21	g	3	correct	M	numeral-mark over a g-loop shape, same pattern as pos12; script proposed plain _ at share 0.80
+2	22	w		correct	M	clear w-loop shape rather than a plain stroke; script proposed plain _ at share 0.79; kept medium confidence since Italian plain script rarely produces a true w-shape
+2	23	_		confirm	H	small hook/apostrophe-like plain fragment
+2	24	S7		confirm	H	clear numeral-7 shape, matches S7
+2	25	bh		confirm	H	tall stem with hooked loop, matches bh
+2	26	g	~	confirm	H	g-loop shape with tilde-like mark
+2	27	y		confirm	M	top shows a slight fork that could suggest psi (known y/psi confusable pair), but the single tail and script's high share (1.00) support y; left as y
+2	28	_	o	confirm	M	wavy multi-stroke resembling a cursive 's' sequence, plain text
+2	29	_		confirm	H	plain cursive fragment with descender
+2	30	bh		confirm	H	tall stem with hooked loop, matches bh
+2	31	]	o	confirm	H	box open to the left, matches ] atlas plate; o mark visible inside
+2	32	lam	5	confirm	H	two strokes meeting near the top, matches lam
+2	33	phi		confirm	H	small slashed circle on a stem, matches phi exactly
+2	34	a	7	confirm	H	bold cursive a with small mark
+3	1	_		confirm	L	two y-loop-shaped cursive strokes at the very start of the line ('yy'); could be plain cursive letters (line openings are often plain text) or genuine cipher y signs; share only 0.63 and cluster_code disagreed ('nt'); kept plain per script's displayed call
+3	2	_		confirm	H	connected cursive shapes (e-like bowl into a v-like curve), consistent with a plain Italian word opening the line
+3	3	m	1	confirm	H	three-hump cursive m, matches atlas m
+3	4	w		confirm	H	wavy cursive w with lead-in stroke
+3	5	]	o	confirm	H	box shape, matches ] atlas plate
+3	6	lam	5	confirm	H	two strokes meeting near the top, matches lam
+3	7	H		confirm	H	matches atlas H closely
+3	8	e	#	correct	M	e-bowl with a clear # mark above that script left unrecorded
+3	9	wd		confirm	H	w-shape joined to tall right stroke, matches wd
+3	10	y		confirm	H	cursive y with looped tail
+3	11	L		confirm	H	angular hook with a small 7 written inside the angle, matches L (angular) not Z (wavy) - good confirmation of the Z/L distinction
+3	12	w		confirm	H	wavy cursive w
+3	13	tee		confirm	H	vertical stroke with bar to the right, matches tee
+3	14	o.		confirm	H	ring with central dot, matches o. exactly
+3	15	nt		confirm	H	n-loop merging into a crossed stroke, matches nt
+3	16	bh		confirm	H	tall stem with small hooked loop, matches bh (not plain h/b)
+3	17	]	o	confirm	H	box shape, matches ] atlas plate
+3	18	e	+	correct	M	e-bowl with rising stroke and a clear + cross mark above that script left unrecorded
+3	19	_		confirm	M	hook shape with a small numeral-like mark above; resembles atlas 'v' (curved hooked arm) as much as plain script, but share 1.00; kept as scripted
+3	20	phi		confirm	H	small slashed circle on a stem, matches phi exactly
+3	21	y		confirm	M	top shows a slight fork suggestive of psi (known y/psi confusable pair); share only 0.61; kept y per script's top pick, genuinely uncertain
+3	22	nt		confirm	H	n-loop merging into a crossed stroke, matches nt
+3	23	o.		correct	H	unmistakable ring with a central dot, matches o. atlas plate exactly; script proposed plain _ at share 1.00 despite the clear ring+dot shape
+3	24	g	3	correct	L	narrow box (22 px) showing a numeral-like mark above a partial loop, matching the recurring numeral+g-loop pattern seen elsewhere on this leaf; crop is narrow and may be split from neighboring pos25's loop, genuinely uncertain; script proposed plain _ at share 1.00
+3	25	g	~	confirm	H	9/g-shaped loop with tail, matches g
+3	26	g	1	confirm	H	9/g-shaped loop, matches g
+3	27	e		split	L	box appears to contain two components: an e-like bowl on the left and a squarish hooked shape with a vertical descender on the right (resembling tee/S4); script's low share (0.60) and disagreeing cluster_code ('_') reflect this ambiguity; best single-code guess is 'e' for the left/primary component only
+4	1	_		confirm	H	plain cursive letter opening the line, part of the following word
+4	2	S4		confirm	H	slash crossing a vertical foot, matches S4
+4	3	dl		confirm	H	delta-with-long-tail shape, matches dl
+4	4	p		correct	M	loop near the top with a crossed stem below, matches p (loop + crossed stem) rather than y (whose loop is a tail at the bottom, not at the top); script proposed y
+4	5	_		correct	H	clearly part of the plain word 'questo' (reads 'que...' in context); script proposed w at share 0.83
+4	6	_		confirm	H	reads 'esto', continuing the plain word 'questo'
+4	7	_		confirm	H	reads 'verso' (part of), plain cursive text
+4	8	_		confirm	H	plain 'o' letter, end of 'verso'
+4	9	eps		confirm	H	epsilon shape, two stacked open bowls open to the right, matches eps despite cluster_code disagreement ('g')
+4	10	+		confirm	H	single cross standing on the line, matches +
+4	11	p		correct	M	same loop-top-plus-crossed-stem shape as pos4; matches p, not y
+4	12	g		correct	M	9/g-shaped loop with descending tail; script proposed y at very low share 0.40, cluster_code disagreed ('_')
+4	13	_		confirm	H	plain cursive text ('oqmj'-like), part of a word
+4	14	a	dot	confirm	H	matches atlas a
+4	15	_		confirm	H	reads 'altro', plain cursive text
+4	16	_		confirm	H	reads 'ro', continuing 'altro'
+4	17	_		confirm	M	c+looped-h ligature shape; could be the plain digraph 'ch' (as in 'che') or the atlas ch cipher sign, which closely mirror each other in this hand; share only 0.42, kept plain given the surrounding plain-text context
+4	18	_		confirm	H	plain cursive text continuing
+4	19	_		confirm	H	reads 'apr', plain cursive text
+4	20	N		confirm	H	matches atlas N (cursive N)
+4	21	_		confirm	H	reads 'aut', plain cursive text; share 0.82 but clearly legible
+4	22	_		confirm	H	reads 'lom'/'lor', plain cursive continuing
+4	23	_		confirm	H	reads 'oma', plain cursive continuing; share only 0.60 but clearly legible
+4	24	_		confirm	H	reads 'anva'/'anda', plain cursive continuing
+4	25	_		confirm	H	reads 'ars', plain cursive text
+4	26	_		confirm	M	small closing flourish, plain; share only 0.43
