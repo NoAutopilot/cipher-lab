@@ -1191,7 +1191,7 @@ valid image. A Sonnet subagent (no network access) read all 119 thumbnails in fo
 97-126, 127-159) and classified each for folio/date/sender/cipher content; batches committed as a single
 `walk_37_159.tsv` (all four batches were ready together, so no intermediate 30-canvas commit was needed).
 
-**Result: zero cipher in canvas 37-159 except one new letter.** Canvas 129 (folio 67, mid-page) and canvas 130
+**Result: zero cipher in canvas 37-159 except one letter not flagged by earlier passes.** Canvas 129 (folio 67, mid-page) and canvas 130
 (its continuation, dated "A Paris ce 10 8bre 1659", signed Brienne, addressed M. de Servien) carry a dense,
 symbol+numeral cipher block — **not recorded in the census pass, dense band walk, or any prior NOTES.md
 section**. No interlinear or marginal decipherment visible on either canvas at thumbnail resolution (grade M).
@@ -1347,7 +1347,7 @@ LANE G2 worker H, Gallica fetcher (Sonnet, cap $7). Files: `passA_f67.tsv`/`pass
 Native fetches (`f129/full/full/0/native.jpg`, `f130/...`, 3801-3802x5180-5198px): canvas 129 needed one retry
 after a transient connection reset; canvas 130 succeeded first try. Folio number "67" visible top right of canvas
 129; canvas 130 carries the dateline "A Paris ce 10 8bre 1659" and signature "...de Brienne", addressed "M. de
-Servien" — the same letter the prior worker's canvas walk flagged as new (ROOM.md 08:10, "canvas 129/130, folio
+Servien" — the same letter the prior worker's canvas walk flagged as not seen before (ROOM.md 08:10, "canvas 129/130, folio
 67, dated 10 8bre (Oct) 1659, symbol+numeral, dense"). On the native image this is **numeral-only** (no
 symbol vocabulary), not symbol+numeral as the walk's thumbnail-resolution classification guessed — every group is
 a plain number, some with a horizontal overline over one or both digits, the same convention as f.86-88's
@@ -1467,6 +1467,10 @@ canvas 32, never more than 2 concurrent). All >=1.5s apart, UA `cipher-lab resea
 repository)`. No logins, no credentials, no novelty wording. Well under the $7 cap.
 
 ## Folio 67: reconciled and read (24 Sept 2026)
+
+> **Verifier V5, 24 Sept 2026 (AUDIT.md, section "f.67"):** N3 for the partial reading (gist; S 107 / M 416, no H or C).
+> No prior decipherment or print located in the editions listed there; f.68r (canvas 131) and the AE ministry minute not seen.
+> Quote the gist, not M words, as the letter.
 
 LANE G2 worker M (Opus, cap $8). Files: `reconcile_f67.py` -> `ciphertext_f67.tsv` (`--check`); `read_f67.py` ->
 `exceptions_f67.tsv` (per-token grades), `control_f67.tsv` (`--check`); `decode_f67.json` -> `tools/decode_key.py . --config

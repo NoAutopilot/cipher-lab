@@ -129,3 +129,116 @@ archive.org 14 (print_check 6 djvu/metadata, this session 6 advancedsearch + 2 m
 (print_check); www.googleapis.com 13 (key and country=US, key never printed); api.openalex.org 2 (both 429, stopped);
 api.semanticscholar.org 1 (429, stopped); api.archives-ouvertes.fr 2; api.crossref.org 3; github.com 2 anonymous
 clones (grep only, deleted); WebSearch 3. No Gallica, no logins, no credentials printed, no subagents.
+
+---
+
+# f.67: BnF fr.5160 f.67 (canvas 129/130), Brienne to Servien, "A Paris ce 10 8bre 1659": novelty class
+
+Verifier V5 (LANE V2, Opus), 24 Sept 2026, 09:48-10:05 UTC (`date -u` read at start and before writing). Audits
+LANE G2 worker M's claim (ROOM 09:27; NOTES.md "Folio 67: reconciled and read"; `reading_f67.{txt,tsv}`,
+`exceptions_f67.tsv`, `control_f67.tsv`, `decode_f67.json`; the f.67 results row in status.json). No decoding was
+done here and no reading, key or grade was changed. The 1653 letters (f.1-3, f.9) are a separate negative and are not
+covered.
+
+## F67.1 Verdict
+
+| item | what is actually read | prior plaintext | prior decipherment of this item | class |
+|---|---|---|---|---|
+| f.67 cipher (546 groups, canvas 129 L01 to canvas 130 block B) | a **partial cryptanalytic reading**: S 107, M 416, I 9, U 14 of 546 groups, **no H or C** on this letter. The words are M-grade as a whole; what is established is the **gist** (Savoy; is the reported rift between the Duke and his mother real; is Madame Royale withdrawing from the "maniement des affaires"; the Duke's marriage, a "Mademoiselle" named), not a verbatim text | none located (F67.3) | none located: no interlinear or facing decipherment on f.67 (cipher numeral-only, no gloss, per two passes and the reconciler); f.66 is blank; f.68r is unseen at full resolution (F67.2) | **N3** |
+
+**N3 applies to the gist and the S-grade words, not to a verbatim plaintext.** 416 of 546 tokens are M (homophone or
+syllable-level rows of key_1659 whose value is not settled on this letter, plus conflict rows). Nobody should quote a
+sentence of `reading_f67.txt` as Brienne's words. The clear French on the leaf (row 1, the canvas 130 middle passage,
+the close) is legible to anyone. It is not a decipherment and gets no class.
+
+**Did we first-decipher?** Not established. No prior decipherment or print was located. Two things are not excluded
+and are likely to exist in manuscript: (i) a clear minute or register copy of this dispatch among the Secretary of State's
+papers (AE, Correspondance politique Sardaigne/Piémont for 1659: Cosnac cites "Aff. étr., Piémont, vol. 50" for the
+Servien correspondence of 1656 and "Aff. étr., France, vol. 900" for a Brienne-to-Servien letter), and (ii) a decipherment
+on a leaf not yet seen at full resolution (f.68r). Either would move the class to N0 or N2.
+
+## F67.2 Item extract and the leaf question
+
+- **Item.** "M. de Servien" at Turin (Ennemond Servien; Abel died 17 Feb 1659, see section 3 above), from "de Brienne",
+  dateline "A Paris ce 10 8bre 1659" (canvas 130). Cipher numeral-only with overlined digits, the table of f.86-88
+  (`key_1659`, grade C from the f.87 decipherment of a different letter, 21 Nov 1659).
+- **Sender, grade I (verifier's inference for a historian to check).** The neighbouring letters are dated "a Bourdeaux le
+  30e 7bre 1659" (canvas 126) and "a Thoulouze ce 19e 8bre 1659" (canvas 136), with the court. A letter "A Paris" of 10 Oct
+  1659 between them suggests the other Brienne, the one not travelling with the court. This matters for the search:
+  the letter is not in the court's travelling register if it was written in Paris.
+- **Distinctive phrases** (`phrases_f67.txt`, 13 phrases, diplomatic and modern forms): "retirer du maniement des
+  affaires", "mesintelligence d'entre le filz et la mere", "leurs principaux ministres", "de la verite desquelles il
+  importeroit", "quelle peut estre l'inclination", "en devrez parler a leurs Altesses Royalles", "Desja ie vous ay mandé
+  ce qui s'est", "il est du service du Roy que vous nous mandiez".
+- **Neighbouring leaves** (`walk_37_159.tsv`, thumbnail resolution): f.66r (canvas 127) blank; f.67 verso (canvas 130)
+  carries the end of this letter; **f.68r (canvas 131) plain text on "Madame/duc/fils mesintelligence, duc de Parme
+  marriage prospects", no date, verso blank**; f.69 blank; f.70 opens the 19 Oct letter. f.68r shares the subject of
+  f.67's second cipher block. The walk read it at thumbnail size and misclassified f.67 itself ("symbol+numeral", in
+  fact numeral-only), so its "decipherment: n" for f.68 is weak. It has no "Dechiffré" heading visible at that size,
+  and its Parma content is not in f.67's reading, which points to a separate enclosure or a letter's final page. Asked of LANE G2
+  (ROOM 09:55, "for LANE G2": canvas 131 native, and a Gallica full-text search). **If f.68r proves to be a
+  decipherment or clear duplicate of f.67, the class is N0 and this section must be revised.**
+
+## F67.3 Principal families
+
+| family | searched / unreachable | what | result |
+|---|---|---|---|
+| holding volume, same and neighbouring leaves | partly | walk rows canvas 124-136; passes and reconciliation of f.67; the f.86-88 precedent (f.87 decipherment on its own leaf) | no decipherment on f.67 or f.66; **f.68r unseen at native resolution** (requested of LANE G2) |
+| (a) canonical series | searched | Chéruel, *Lettres de Mazarin* IX (IA `lettresducardina09maza`, full djvu): 13 phrases (`print_check.py`), grep Servien, "Madame Royale", "octobre 1659", mésintelligence | no phrase; Mazarin's letters and analyses only, no Brienne dispatch printed |
+| (a) | searched | *Recueil des instructions* XIV, Savoie-Sardaigne et Mantoue I (Horric de Beaucaire 1898, IA `recueildesinstr00diplgoog`): 13 phrases, grep 1659 | no phrase; the editor does not reproduce the day-to-day dispatches to Servien (section 3); 1659 mentions only Servien's May 1659 compliment on the Infanta marriage |
+| (b) sender's printed memoirs | searched | Brienne fils, *Mémoires* 1916 II-III (IA `memoiresdelouish02brie`, `03brie`): 13 phrases | no hits |
+| (b) recipient's correspondence | none located | no printed Ennemond Servien correspondence (section 3); Cosnac (next row) prints individual Brienne-to-Servien and Servien letters from AE | searched as below |
+| (c) documentary editions for the period | searched | Cosnac, *Mazarin et Colbert* (1892) I-II (IA `mazarinetcolbert01cosn`, `02cosn`): 13 phrases normalised, grep "10 octobre 1659", "maniement des affaires", mésintelligence, Servien | no phrase, no 10 Oct 1659 letter. Vol. II p.55 prints a **different** Brienne-to-Servien letter (1656, Queen Christina's etiquette) from AE France 900, and p.99-100 summarises Servien's Nov 1656 dispatches on Madame Royale keeping power (AE Piémont 50). This family prints Brienne-Servien letters, so it was the right one to search. The Google Books hit "Servien" + "10 octobre 1659" in this work is two separate occurrences, not a print of f.67 |
+| (c) Savoy side | searched | Claretta, *Storia del regno e dei tempi di Carlo Emanuele II* (1877-78) I-III (IA `storiadelregnoe02/00/01clargoog`); Saint-Genis, *Histoire de Savoie* (1869) I-III (IA `bub_gb_ivpiUnR_CIAC`, `histoiredesavoi00/01/02gngoog`): 13 phrases, grep Servien, Brienne, Montpensier, maniement | no phrase. Claretta works from Turin (A.S.T. "Lettere Ministri, Francia"), narrates the Orléans/Montpensier marriage soundings of 1658-59 (vol. I pp.239-242) with no Brienne-Servien dispatch; Saint-Genis II: Madame Royale kept "une grande part au maniement des affaires" to 1663 (context, not this letter) |
+| Claretta, *Storia della reggenza di Cristina di Francia* | not searched in full | covers 1637-1648, before this letter; one volume (`storiadellaregg00clargoog`) listed in `sources_f67.tsv` gave no hit | out of period |
+| AE Correspondance politique Sardaigne/Piémont (minutes, register copies) | unreachable | manuscript at La Courneuve; the printed *Inventaire sommaire* on IA covers Mémoires et documents, not CP | not searched; likely home of a clear minute |
+| (d) BnF / Gallica | requested | Gallica full text and canvas 131 are LANE G2's; posted "for LANE G2" in ROOM | pending |
+| (e) full text | searched | IA global full text (be-api) 13 phrases; Google Books 13 phrases (`print-check-f67.tsv`) + 6 metadata queries (date, correspondents, subject) | generic hits only ("retirer du maniement des affaires": Plutarch translations, Motley's *Barnevelt*, Saint-Simon; "leurs principaux ministres": 525 unrelated). GB metadata: Saint-Genis 1869 (checked, above), Cosnac 1892 (checked, above), *Revue d'histoire diplomatique* 2009 (id `1yFDAQAAIAAJ`, snippet-only, not read; JSTOR row) |
+| (f) solver repos, blogs, DECODE | searched | fresh anonymous clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers, grep 5160 / Servien / Ennemond / Brienne (deleted); Tomokiyo mirror (section 3: Brienne 1647/1651 only); `sources/decode/records-non-decrypted-2026-09-24*.tsv` | Servien hits are Rohan 1636 and German "Servien" (Serbia); no DECODE record for fr.5160 (the folder appears only as a cross-link tag on BL Add MS 4200 and Mélanges de Colbert 11 rows) |
+| (g) scholarship | partly | HAL "(Servien OR Madame Royale) AND 1659 AND (Savoie OR Turin)": 0; CrossRef 1 query: nothing relevant; OpenAlex **429**, stopped; S2 not tried (429 all morning per ROOM). Leads from section 3 still unread: Conti 2024 (HES 2024/4), Gellard 2014 (*De Paris à Turin*) | nothing located; two leads unread |
+| JSTOR | queued | 2 rows added to `JSTOR-QUEUE.tsv` | does not block |
+
+## F67.4 Evidence and grades
+
+- Grades as committed (`read_f67.py`, `decode_key.py --config decode_f67.json --check` exit 0 per worker M): S 107,
+  M 416, I 9, U 14; H 0, C 0. That is a cryptanalytic result (CLAUDE.md rule 4), with a word-level control of 0.721
+  against 200 derangements (mean 0.488, max 0.647) and worker H's n-gram trial z 3.57 (0/20). The control shows the
+  table is right for this letter. It does not make the individual M words right.
+- Kind: the key was recovered from a contemporary decipherment of another letter, so applying it here is a recovery
+  of the key, but the reading of f.67 itself is cryptanalytic (S/M) and partial.
+
+## F67.5 Safe and unsafe sentences
+
+- **Safe:** "BnF fr.5160 f.67 (Brienne to [Ennemond] Servien, Paris, 10 Oct 1659) is enciphered in the same table as the
+  21 Nov 1659 letter whose contemporary decipherment is on f.87. Using the table recovered from that decipherment, we can
+  partly read it (S 107 / M 416 of 546 groups, no H or C). The gist concerns the Savoy court: the reported rift between
+  the Duke and Madame Royale, whether she will withdraw from affairs, and the Duke's marriage. No prior decipherment or
+  printed text of this letter was located in Chéruel IX, the Recueil des instructions XIV, Cosnac, Claretta, Saint-Genis,
+  the Brienne memoirs, IA or Google Books full text (N3, 24 Sept 2026); the ministry's minute and f.68 were not seen."
+- **Unsafe:** "We deciphered Brienne's letter of 10 Oct 1659"; "the full text reads ..." (quoting M words as the letter);
+  "first decipherment", "previously unread", "unpublished"; "letter to Abel Servien".
+
+Confidence: medium. The negative is from printed editions whose scope is known (Recueil XIV says it does not
+reproduce the dispatches; Chéruel prints Mazarin, not Brienne; Cosnac and Claretta quote selectively). What most
+limits the class is manuscript, not print: f.68r, and the AE minute.
+
+## F67.6 Postmortem and corrections
+
+**Postmortem (one line):** no novelty over-claim by the solver, who wrote "novelty is not classified here". Two wording
+over-reaches were corrected: "read" for a mostly M reading, and "new letter" in the walk's notes, meaning "not flagged by
+earlier passes".
+
+Corrections made (24 Sept 2026):
+- status.json, f.67 results row: title "read" -> "partly read"; grade adds "N3 (verifier, AUDIT.md f.67)"; line keeps
+  the gist and adds that no H/C and the M share limit it to a gist.
+- NOTES.md "Canvas walk 37-159": "one new letter" -> "one letter not flagged by earlier passes"; "Canvas 129/130":
+  "flagged as new" -> "flagged as not seen before" (walk-internal sense only).
+- Not changed: readings, key, grades (the solver's); the f.86/f.88 N0 above.
+
+## F67.7 Requests
+
+archive.org 21 (print_check 4, advancedsearch 5, metadata 6, djvu 6),
+be-api.us.archive.org 26 (print_check), www.googleapis.com 19 (13 print_check + 6 targeted, 3 s apart; key and
+country=US, key never printed; D1 held the host at 09:49 for ~4 q, overlap small), api.archives-ouvertes.fr 1,
+api.crossref.org 1, api.openalex.org 1 (429, stopped), github.com 2 anonymous clones (grep, deleted). No Gallica, no
+logins, no subagents.
