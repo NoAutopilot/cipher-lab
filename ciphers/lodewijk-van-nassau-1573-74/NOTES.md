@@ -429,3 +429,28 @@ image, not the n-gram score. (2) The ~15 rows sitting within 0.05 nats/char of t
 revisited. (3) Numbers above 120 not yet in `key.tsv` and still unkeyed (U) in the target letters (R18's item 2,
 still open). (4) No novelty search, no key changes, no context fills beyond what the settled disagreements
 already read -- per brief, this pass only applied the existing key to a settled transcription.
+
+## C1: WV2 capture and inventory (LANE R2, 24 September 2026)
+
+Per `.claude/briefs/runs/2026-09-24-lane-r2-capture-huygens.md`. WV2's six letters (4503, 5194, 5797, 5799, 5810,
+5811) fetched in full to `images_wv2/` (150dpi, JPEG q80 direct from PDF, per brief -- `images/` was already at
+31MB, over the 30MB cap, so these went to a separate folder rather than pushing it further over). `images_wv2/manifest.json`
+and `images_wv2/inventory.tsv` written (per-page content, cipher design, hand). No decoding, no alignment, no
+novelty search this pass.
+
+**Design note, from the eye-check:** 4503, 5194, 5799, 5810, 5811 all show the same dense French numeral design
+as the R18-keyed 4610/4611/4612/4613/4615/4616 (2-3 digit groups, values seen up to ~180-197), so R18's homophonic
+table (n-m in alphabetical blocks of 5, numbers above 120 as names/words/nulls) is the first thing to try against
+them, not fresh cryptanalysis -- an unblocked next step this brief did not attempt. **5797 is different**: it is
+"from Lodewijk" (not "to"), in German, and its cipher is visually much lighter than WVO's "partly" tag might
+suggest -- most pages are clear German secretarial prose with only occasional embedded numeral groups (sparser
+than even 5549's German cipher in the neighbouring `jan-van-nassau-1572-75` folder). It may use a different,
+lighter-duty nomenclator, or the numerals may be code-groups for names/places within an otherwise-clear letter
+rather than a running cipher -- not established this pass.
+
+No printed Groen edition pages were found bundled in any of these six PDFs, unlike two of the seven targets in
+the sibling `jan-van-nassau-1572-75` folder (see that folder's NOTES.md 'C1' section) -- worth checking there
+first if a similar shortcut is wanted for these six.
+
+Host: resources.huygens.knaw.nl, 6 PDF fetches this pass (shared budget with the other two C1 targets, all
+>=1.5s apart, descriptive UA).

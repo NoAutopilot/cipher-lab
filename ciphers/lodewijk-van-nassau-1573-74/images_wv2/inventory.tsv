@@ -1,0 +1,28 @@
+briefnr	page	content	cipher_design	hand	note
+4503	1	clear French opening/closing lines around a cipher body	French numerals, up to ~197 seen, some 3-digit	secretary + autograph signature "Guillaume de Nassau"	single-page letter, "to Lodewijk", Gorinchem 15 Apr 1574
+5194	1	cipher, dense	French numerals, up to ~98 seen	secretary	merchant-letter cover ("Lambert Certain"/"George Certain" pseudonyms, see NOTES.md main text)
+5194	2	cipher, dense	French numerals, up to ~91 seen	secretary	continues, clear closing line at bottom ("...pour respondre a son... quelque")
+5194	3	mostly blank, docket + address ("Soit donne a mon frere Lambert Certain a Londres")	n/a	autograph	address/docket leaf, wax seal remnant
+5797	1	clear German prose with occasional embedded numerals	German-language numerals, sparse (not dense nomenclator), up to ~155 seen	secretary (Lodewijk's clerk)	from Lodewijk, Dillenburg 22 Oct 1573; cipher extent much lighter than the French numeral letters elsewhere in this circle
+5797	2	clear German prose, few numerals	as p1	secretary
+5797	3	clear German prose, few numerals	as p1	secretary
+5797	4	clear German prose with embedded numeral groups (denser here)	German numerals, up to ~137 seen	secretary
+5797	5	clear German prose with embedded numerals	as p4	secretary
+5797	6	clear German prose with embedded numerals, denser passage	German numerals, up to ~172 seen	secretary
+5797	7	clear German prose with embedded numerals	as p6	secretary
+5797	8	clear German prose, closing	sparse numerals	secretary	closes the letter
+5799	1	cipher mixed with clear French words	French numerals, up to ~137 seen (one figure "99" annotated/circled)	secretary	single-page letter, "to Lodewijk", Delft 3 Apr 1573; dense, WVO's "mainly" cipher tag matches by eye
+5810	1	cipher, dense	French numerals, up to ~180 seen	secretary	"to Lodewijk", Vlissingen 6 Jan 1574
+5810	2	cipher, dense	same design	secretary
+5810	3	cipher then clear closing + autograph signature	same design	secretary + autograph
+5810	4	docket/address leaf, small, wax seal	n/a	autograph
+5810	5	cipher, dense, resumes (looks like a second enclosure or continuation numbered separately)	same design	secretary	page has its own heading "Postscripta" area
+5810	6	cipher, dense	same design	secretary
+5810	7	cipher, dense	same design	secretary
+5810	8	clear French prose, closing/signature area, faded scan	n/a	secretary + autograph	dated "1574" at bottom
+5811	1	cipher, dense	French numerals, up to ~184 seen (marginal "R557" archival number top-left)	secretary	"to Lodewijk", Dordrecht 13 Apr 1574
+5811	2	cipher, dense	same design	secretary	closes with "faict a Dordrecht le [xiij]e ... 1574" marginal note
+5811	3	clear French prose, short, closing	n/a	secretary
+5811	4	docket/address leaf, small, with autograph signature "Nicolas Braczynck" or similar (a secretary/courier, not the correspondents)	n/a	autograph
+5811	5	cipher, dense	same design	secretary	separate enclosure or continuation, own pagination "102"
+5811	6	clear French prose, closing, "ce 13 apvril" note	n/a	secretary
