@@ -15,7 +15,23 @@ def build(nr):
     rows = []
     for pg in pages:
         out = f'{H}/recon/{nr}/{pg[:-4]}'; os.makedirs(out, exist_ok=True)
-        subprocess.run([sys.executable, REC, f'{H}/passA/{pg}', f'{H}/passB/{pg}', '--out-dir', out], check=True,
+        pa, pb = f'{H}/passA/{pg}', f'{H}/passB/{pg}'
+        lm = {}
+        if os.path.exists(f'{H}/linemap.tsv'):
+            lm = {(r['pass'], r['from_line']): r['to_line'] for r in csv.DictReader(open(f'{H}/linemap.tsv'), delimiter='\t')
+                  if r['page'] == pg[:-4]}
+        if lm:   # renumber a pass's lines (wv2/linemap.tsv) before aligning; the raw pass files stay untouched
+            for x in 'AB':
+                src = pa if x == 'A' else pb
+                if any(k[0] == x for k in lm):
+                    rr = list(csv.DictReader(open(src), delimiter='\t')); fn = rr and list(rr[0].keys())
+                    for r in rr: r['line'] = lm.get((x, r['line']), r['line'])
+                    dst = f'{out}/pass{x}_mapped.tsv'
+                    with open(dst, 'w', newline='') as fo:
+                        w = csv.DictWriter(fo, fn, delimiter='\t', lineterminator='\n'); w.writeheader(); w.writerows(rr)
+                    if x == 'A': pa = dst
+                    else: pb = dst
+        subprocess.run([sys.executable, REC, pa, pb, '--out-dir', out], check=True,
                        stdout=subprocess.DEVNULL)
         rows += list(csv.DictReader(open(f'{out}/ciphertext_draft.tsv'), delimiter='\t'))
     st = f'{H}/settle_{nr}.tsv'
