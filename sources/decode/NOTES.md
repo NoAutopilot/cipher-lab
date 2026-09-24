@@ -322,3 +322,9 @@ citing this section; ASKS.md row added for the owner to send it once reviewed.
 
 Requests this pass: de-crypt.org 17 (2 login, 1 primary RecordsView, 3 fetch-page, 6 filesrv, 5 probe hops),
 all >=1.6s apart, one at a time, well under the 60-request cap. No other hosts. One login.
+
+**Confirmed from the owner's own browser, 24 Sept 2026 16:50 UTC:** logged in as the account in Chrome on the owner's machine,
+record 3754's page image opens as the same "Insufficient permissions to so see the full image" placeholder
+(IMG_R3754_I23011_P.jpg), thumbnail fine. So the full-size block is an account role, not a session, proxy or browser
+issue; no worker should retry it. The request for a role upgrade (both asks in one email) went to the DECRYPT project
+mailbox on 24 Sept 2026 (CONTRIBUTIONS.md); until it is answered, DECODE gives thumbnails and record text only.
