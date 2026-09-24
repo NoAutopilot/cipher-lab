@@ -93,9 +93,15 @@ def nclass(r):
     return int(m.group(1)) if m else None
 def audits(r):
     g = r.get("grade", "")
+    n = nclass(r)
+    # An N4 or N5 is set only after the adversarial second audit (CLAUDE.md rule 10 and the Outreach gates), so it
+    # always counts as two audits even when the verifier's grade text no longer says so (fix of 24 Sept 2026 13:25 UTC,
+    # when nine N4 rows showed as one unique solve). A row of kind "solve" is by policy N3 or better after two audits.
+    if n is not None and n >= 4: return 2
+    if r.get("kind") == "solve": return 2
     if "two audits" in g: return 2
     if "single audit" in g or "one audit" in g: return 1
-    return 1 if nclass(r) is not None else 0
+    return 1 if n is not None else 0
 rungs = {i: [] for i in range(6)}
 for r in results:
     if r["kind"] in ("solve", "reading") and nclass(r) is not None:
