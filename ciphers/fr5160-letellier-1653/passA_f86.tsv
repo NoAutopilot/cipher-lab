@@ -1,0 +1,252 @@
+line	pos	group	conf	note
+L01	1	_18	H	overline over both digits
+L01	2	15	H
+L01	3	19	H
+L01	4	_7	H	overline over single digit
+L01	5	9	M	faint stroke
+L01	6	21	H
+L01	7	61	H
+L01	8	64	H
+L01	9	9	H
+L01	10	m	H	clear text
+L01	11	_28	H	overline over both digits
+L01	12	15	H
+L01	13	21	H
+L01	14	2	M	small caret/accent mark above this digit
+L01	15	20	H
+L01	16	_21	M	overline over both digits; could be _11, first digit ambiguous
+L01	17	m	H	clear text
+L01	18	15	H
+L02	1	18	H
+L02	2	_30	H	overline over both digits
+L02	3	9	H
+L02	4	37	H
+L02	5	29	H
+L02	6	_0	M	overline over single digit, shape uncertain
+L02	7	_34	H	overline over both digits
+L02	8	M.	H	clear text, title abbreviation
+L02	9	35	H
+L02	10	17	H
+L02	11	5	M	heavier/bolder stroke than surrounding digits, possibly retraced
+L02	12	_14	H	overline over both digits
+L02	13	17	H
+L02	14	_37	H	overline over both digits
+L02	15	7	H
+L02	16	_7	M	overline over single digit
+L02	17	7	H
+L02	18	21	H
+L03	1	60	H
+L03	2	_28	H	overline over both digits
+L03	3	15	H
+L03	4	21	H
+L03	5	37	H
+L03	6	18	H
+L03	7	19	H
+L03	8	_13	H	overline over both digits
+L03	9	7	H
+L03	10	_26	H	overline over both digits
+L03	11	_7	H	overline over single digit
+L03	12	7	H
+L03	13	21	H
+L03	14	61	H
+L03	15	_14	H	overline over both digits
+L03	16	15	H
+L03	17	71	M	digit order ambiguous, could be 17
+L03	18	21	H
+L04	1	35	H
+L04	2	18	H
+L04	3	20	H
+L04	4	61	H
+L04	5	20	H
+L04	6	23	H
+L04	7	_12	H	overline over both digits
+L04	8	19	H
+L04	9	36	H
+L04	10	M.	H	clear text, title abbreviation
+L04	11	_18	H	overline over both digits
+L04	12	18	H
+L04	13	42	H
+L04	14	16	M	digit shapes close together, could be 61 reversed
+L04	15	10	M	digits written tightly together
+L04	16	86	M	preceded by a small comma/point mark before this group
+L05	1	71	M
+L05	2	20	H
+L05	3	70	M	could be 30, loop ambiguous
+L05	4	7	H
+L05	5	_13	H	overline over both digits
+L05	6	15	H
+L05	7	20	H
+L05	8	40	H
+L05	9	15	H
+L05	10	_11	H	overline over both digits
+L05	11	71	M
+L05	12	_23	H	overline over both digits
+L05	13	21	H
+L05	14	19	H
+L05	15	m	H	clear text
+L05	16	115	L	genuinely ambiguous: could be one 3-digit group or two tokens "11" "5"
+L05	17	76	H
+L05	18	60	H
+L05	19	4	H
+L05	20	_13	H	overline over both digits
+L06	1	15	H
+L06	2	_11	H	overline over both digits
+L06	3	70	M	could be 30
+L06	4	_0	M	overline over single digit
+L06	5	5	H
+L06	6	61	H
+L06	7	39	M
+L06	8	71	M
+L06	9	m	H	clear text
+L06	10	4	H
+L06	11	_22	H	overline over both digits
+L06	12	24	H
+L06	13	18	H
+L06	14	_17	H	overline over both digits
+L06	15	73	M
+L06	16	15	H
+L06	17	_11	H	overline over both digits
+L07	1	6	H
+L07	2	_16	H	overline over both digits
+L07	3	_13	H	overline over both digits
+L07	4	15	H
+L07	5	19	H
+L07	6	31	H
+L07	7	16	H
+L07	8	61	H
+L07	9	60	H
+L07	10	mais	H	clear text
+L07	11	aussy	H	clear text
+L07	12	55	M	written as double long-s shape
+L07	13	9	H
+L07	14	_0	M	overline over single digit
+L07	15	9	H
+L07	16	71	M
+L07	17	76	H
+L08	1	4	H
+L08	2	_13	H	overline over both digits
+L08	3	15	H
+L08	4	_11	H	overline over both digits
+L08	5	6	H
+L08	6	M.	H	clear text, title abbreviation; small superscript/caret mark above it, possibly "M.r"
+L08	7	35	H
+L08	8	17	H
+L08	9	5	H
+L08	10	_14	H	overline over both digits
+L08	11	18	H
+L08	12	_16	H	overline over both digits
+L08	13	_18	H	overline over both digits
+L08	14	15	H
+L08	15	19	H
+L08	16	_20	H	overline over both digits
+L08	17	18	M	near right edge of crop, possible additional digit cut off after it
+L09	1	24	H
+L09	2	7	H
+L09	3	9	H
+L09	4	62	H
+L09	5	2	H
+L09	6	et	H	clear text
+L09	7	c'est	H	clear text
+L09	8	ce	H	clear text, written closely joined in cursive to following word
+L09	9	qui	H	clear text
+L09	10	donne	H	clear text
+L09	11	lieu	H	clear text
+L09	12	de	H	clear text
+L09	13	76	H
+L09	14	17	H
+L09	15	_11	M	overline over both digits
+L09	16	21	H
+L10	1	20	H
+L10	2	70	M	could be 30
+L10	3	_28	H	overline over both digits
+L10	4	15	H
+L10	5	21	H
+L10	6	18	H
+L10	7	6	H
+L10	8	16	H
+L10	9	10	M	digits written tightly together
+L10	10	_11	H	overline over both digits
+L10	11	21	H
+L10	12	66	H
+L10	13	20	H
+L10	14	115	L	genuinely ambiguous: could be one 3-digit group or two tokens "11" "5"
+L10	15	_17	M	overline placement ambiguous (may cover only first digit)
+L10	16	19	H
+L11	1	m	H	clear text
+L11	2	_28	H	overline over both digits
+L11	3	15	H
+L11	4	21	H
+L11	5	_0	M	overline over single digit, followed by a small point/dot mark
+L11	6	21	H
+L11	7	61	H
+L11	8	m	H	clear text
+L11	9	31	M
+L11	10	7	H
+L11	11	8	H
+L11	12	_7	M	overline over single digit
+L11	13	24	H
+L11	14	18	H
+L11	15	19	H
+L11	16	_0	M	overline over single digit
+L11	17	12	M
+L11	18	19	H
+L11	19	71	L	tail unclear, could be 17; line generally faint/low confidence
+L12	1	20	H
+L12	2	61	H
+L12	3	20	H
+L12	4	m	H	clear text
+L12	5	1	H
+L12	6	40	H
+L12	7	15	H
+L12	8	_11	H	overline over both digits
+L12	9	20	H
+L12	10	m	H	clear text
+L12	11	42	H
+L12	12	18	H
+L12	13	5	H
+L12	14	20	H
+L12	15	_16	H	overline over both digits
+L12	16	17	H
+L12	17	9	H
+L12	18	_60	L	at right edge of crop, appears cut off/incomplete
+L13	1	6	M	faint, overlapping bleed-through from line above makes this uncertain
+L13	2	87	L	unclear, could be 27 or 82, possible blot
+L13	3	_16	M	overline over both digits, uncertain
+L13	4	21	H
+L13	5	20	H
+L13	6	77	M
+L13	7	20	H
+L13	8	33	H
+L13	9	7	H
+L13	10	21	H
+L13	11	20	H
+L13	12	6	M
+L13	13	16	M
+L13	14	61	M
+L13	15	m	M	clear text, ink faint
+L13	16	_11	M	overline over both digits, uncertain
+L14	1	6	M	significant bleed-through from adjacent line above overlapping this whole line, low confidence throughout
+L14	2	8	M
+L14	3	20	H
+L14	4	_21	H	overline over both digits
+L14	5	7	H
+L14	6	18	H
+L14	7	2	H
+L14	8	1	H
+L14	9	41	M
+L14	10	4	H
+L14	11	19	H
+L14	12	76	H
+L15	1	24	M	line crop is unusually short and shows faint overlapping marks from adjacent line; whole-line low confidence
+L15	2	18	M
+L15	3	59	L	could be 89
+L15	4	40	M
+L15	5	79	L	could be 19
+L15	6	70	M	could be 30; line may be cut off at right edge, boundary uncertain
+L16	1	59	M	line crop is unusually short and shows faint overlapping marks from adjacent line; whole-line low confidence
+L16	2	20	H
+L16	3	_22	M	overline over both digits
+L16	4	71	M
+L16	5	24	H
+L16	6	7	H
+L16	7	76	M	line may be cut off at right edge, boundary uncertain
