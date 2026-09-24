@@ -1,4 +1,4 @@
-open
+blocked
 
 
 **Edition check (LANE N3 csED, 24 Sept 2026 15:45 UTC):** hold lifted -- verdict `open`. No printed edition of
@@ -150,3 +150,5 @@ Credit: this session's transcription and Gallica-negative reconfirmation build d
 `breves1610/` attempt (cited above) and do not supersede it; Bourdeau's own ciphertext transcription
 (`ciphertext.txt`, `ct_sept.txt`, `ct_nov.txt` in his repository, CC BY 4.0) was deliberately not consulted before
 this worker's pass A, to keep both passes blind.
+
+LANE R4 orchestrator, 24 Sept 2026 17:25 UTC: status set `blocked` -- the key (BnF fr.3642) is not on Gallica and its DECODE photo (R2077) is behind ASKS 42; ASKS 43 asks for the route.

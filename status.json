@@ -1541,6 +1541,22 @@
    "grade": "no reading: H0 C0 S0 M0 I0. Matched interleaved Italian control (N 370, 36 types, the page's own plain/cipher pattern) recovers 75.4-92.4% of tokens; the target gives no Italian in 3 seeds",
    "line": "Shape trial against the Raince 1526, Gramont 1530 and Ranzo keys on file: 9/36, 8/36, 0 generic matches, no Italian. f.54r is not simple homophonic substitution over the 36 base signs with marks ignored; marks-as-vowels, syllabic or nomenclator models remain open and need the other seven leaves transcribed (~2000 tokens) for a working control.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2933-salviati-1525"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "contribution",
+   "title": "1519 imperial-election cipher key list, BnF fr.5761 f.50v (f.104): the first correspondent's alphabet and codes as a dataset",
+   "grade": "key.tsv 37 rows: H 30 (two of three passes agree), M 7; 21 rows with a named atlas code; atlas covers 81% of the alphabet row",
+   "line": "A key without ciphertext: three atlas-checked passes of the Cordier/La Motheaugroing table give the sign for each letter and name code; the rest of the key (f.105-f.110) and any 1519 letter it opens are open.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5761-election-1519"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "cryptanalysis",
+   "title": "Nevers to Villeroy 1595 (fr.3993) and Garbino 1528 (fr.3022): control-first, no testable model at these lengths",
+   "grade": "no reading: H0 C0 S0 M0 I0. Villeroy letters+syllables+codes control 2.0-5.9% (homophonic control of the same size 61%); Garbino: no control reads at 1,315 groups",
+   "line": "Conditional on D. Bourdeau's transcriptions (copied with attribution). Neither letter can be tested by cryptanalysis at its own length; both need a key source or more ciphertext in the same key.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr3993-villeroy-1595"
   }
  ],
  "lanes": [
