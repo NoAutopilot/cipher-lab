@@ -295,3 +295,14 @@ Ritter I (weak OCR) and Kruse 1934 (search-inside counts only) print neither cip
 f.266v sentence (F1's reading) returned nothing. 53's reading is S grade only (M 126 of 364), so its class covers the
 text as read. Gaps for an N4 decision: Kluckhohn I clean read, Rachfahl II.1 as text, OpenAlex and Semantic Scholar
 (429 twice), Kervyn II.
+
+## D2: N4 decision for 53 and 57 (24 Sept 2026, N4-decision verifier D2 for LANE V2)
+
+Classes in AUDIT.md "N4 decision (D2)": 53 N4 (no prior decipherment located; for a cryptanalytic reading, S 238 M 126
+of 364), 57 N4 (no prior decipherment located). Gaps closed: Kluckhohn I read at sentence level for Oct-Dec 1561 (IA
+`briefefriedrichd00frie`; nr. 148 is the Palatine side of the election approach, with no August or Orange item);
+Kervyn *Relations politiques* II (IA, nothing); Rachfahl II.1 text unreachable (not on IA, Google NO_PAGES), so its
+HTRC tokens were scanned for co-occurrence of the gist (nothing; the "chiffrierter Zettel" pages are 1562). OpenAlex and
+Semantic Scholar 429 a third time (do not block). 24 Google Books API gist queries: nothing. Unpublished witnesses
+remain: the Dresden minute of 57 with its 'Zettel' (could lower 57), the KHA Japikse copy of 53. Outreach held at gate 2
+(ASKS row 39). Follow-ups: Dresden inquiry f.268-269; Namèche 1884 wedding pages; von Weber, Archiv f. sächs. Gesch. 3.
