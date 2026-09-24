@@ -72,3 +72,9 @@ correction. The parent re-arms its check-in for the reset time when the status i
 `rate_limit_info.status: allowed_warning`, `rateLimitType: seven_day`, resets Sat 26 Sept 2026 13:00 UTC (the five-hour window
 read `allowed` at 13:23). LANE R3 stopped spawning and closed on handoff; posted in ROOM for every lane. Lane usage: orchestrator
 about $14, four workers $41.15.
+
+**Parent, 24 Sept 2026 14:20 UTC:** the seven-day window reads `allowed_warning` on the parent and on every lane (resets Sat
+26 Sept 2026 13:00 UTC). Decision: every lane closed on its handoff (G3 14:01, V3 13:27, R3 13:52, N2 14:16), no lane or
+worker is started until the window resets or the owner says otherwise; the hourly check-in keeps running and does owner
+asks, ledger, board and second-opinion routing only. Parent usage $978.8 since 23 Sept 15:12; lanes and workers today about
+$1,000 more. The five-hour window is not the binding limit any longer; the seven-day one is.
