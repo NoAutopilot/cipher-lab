@@ -404,3 +404,82 @@ transcribed mechanically from `sources/cryptiana/web/louisxiv0_Brienne{1,2}.png`
 previously mirrored) by two Sonnet subagents, code+plaintext columns only. `decode.py` applies a key to a pass
 TSV and scores the output against a small embedded French word list, with a shuffled-key control at the same
 seed (rule 3). See "Key trial results" below.
+
+### Agreement, passA vs passB (canvas 8-10, folio 1-2 letter)
+
+Two Sonnet subagents transcribed the three crops blind and independently (`passA.tsv`, `passB.tsv`; neither
+saw the other's output or any existing key/reading). `agreement.py` compares them line by line: same token
+count at a line, and exact string match position by position (raw group only, confidence ignored).
+
+- 47 lines total; 35 have the same cipher-group count in both passes; only 2 lines agree on every token.
+- Token-level agreement, counting only the 35 count-matched lines: **258/392 = 65.8%**.
+- **A line-count divergence opens on the f9 crop**: pass A reads 16 physical lines on f9_body (ending
+  `f9_L16` = the clear line "nayant pas en sorte"), pass B reads 18 (`f9_L18` = the same clear line). The two
+  passes agree on every group up through `f9_L12`, then `f9_L13`/`f9_L14` have matching *counts* but **0%
+  token agreement** — the clearest sign of a line boundary drawn in different places by the two readers from
+  that point on (one reader likely split what the other read as one line into two, or vice versa), which then
+  carries the misalignment through the rest of the leaf. Not reconciled this pass (out of scope: "no
+  reconciliation beyond the agreement table" per brief) — flagged as exactly the kind of disagreement rule
+  6 of Usage ("two transcription passes... unless the two disagree on more than a tenth of the rows") would
+  trigger a third pass for, if this target is picked up for a real transcription campaign.
+- The clear-French phrases agree closely where both passes see the same line (7/12 clear-line pairs identical
+  verbatim, the rest differing only in a stray letter or apostrophe — e.g. "quitte ne prennent" vs "quils ne
+  prennent", both plausible misreadings of the same cursive hand) — this cross-checks against Tomokiyo's
+  description of this cipher family's camouflage style (clear French phrases interspersed with cipher
+  groups), independent of any decoding.
+- Overall: legible enough for a confident line-count and a real (if noisy) sense of the cipher's density and
+  alternation with clear French, **not** legible enough at this crop resolution/single-pass-per-reader depth
+  for a committed transcription — matches the fr20140-danzay-1557 precedent (24 Sept 2026 pass) where two
+  blind reads of a dense hybrid cipher diverge substantially without a third pass or higher-resolution crops.
+
+### Key trial results (mechanical, passA only)
+
+`decode.py key_brienne_1647.tsv passA.tsv --check` and the same for `key_brienne_1651.tsv`, both seed 1.
+passA has 506 cipher-group tokens; `--check` confirms both runs are deterministic.
+
+| key | resolved (H) | unresolved (U) | decoded chars | French-word chars (real) | French-word chars (shuffled control) |
+|---|---|---|---|---|---|
+| key_brienne_1647.tsv (DE=46, 1647) | 205/506 | 301/506 | 347 | **100 (28.8%), 46 words** | 70 (20.5%), 33 words |
+| key_brienne_1651.tsv (DE=47, 1651) | 216/506 | 290/506 | 272 | **45 (16.5%), 22 words** | 126 (38.4%), 55 words |
+
+**Neither key produces more French than its own shuffled-key control** (rule 3: no negative without a matched
+control). The 1647 key does marginally better than its control (46 vs 33 words) but the margin is small and
+the "French words" here are almost all 1-3 letter function-word homophones (se, es, et, ta...) that a
+short-token embedded wordlist will match by chance at a high base rate regardless of key — not evidence of
+real decode quality. The 1651 key does **worse** than its own control (22 vs 55 words), a clean negative.
+This is exactly the expected result: both keys are Tomokiyo's reconstructions for the *same office*
+(Loménie de Brienne père) writing to a *different* correspondent (D'Estrades, 1647 and 1651) — same-office
+leads, not fr.5160's own key, as already flagged in the prior pass. Grade: this is a mechanical trial only
+(no H/C grade applies to the trial's own "reading," since nothing here is claimed as a decipherment); the
+205-216 "resolved(H)" counts above mean only "this code string appears in Tomokiyo's table," not that the
+resulting plaintext is correct.
+
+### Status and next step
+
+**Status stays `open`.** This pass: (a) completed dense coverage of both cipher bands (53/54 canvases, one
+unreachable); (b) confirmed the volume does hold a contemporary decipherment for at least one letter, on a
+companion leaf (canvas 170/folio 87) rather than interlined — the strongest lead yet for actually keying this
+cipher; (c) ran a first blind transcription (uncommitted to a canonical reading, two passes disagree too much
+past line 12 of the f9 crop to reconcile without a third pass); (d) mechanically ruled out both published
+same-office Brienne keys as direct hits, with a matched control, as expected. No decipherment recovered, no
+novelty wording.
+
+**Cheapest next step:** align the folio 86 cipher (canvas 168-169) token by token against the folio 87
+decipherment transcript (canvas 170) already on disk (`images/native/f168.jpg`, `f169.jpg`, `f170.jpg`,
+`images/crops/f168_body.jpg`, `f170_body.jpg`) — a known-plaintext crib sitting in the same dossier, not yet
+used. That is very likely to recover fr.5160's own key directly at grade C, which no amount of trying published
+same-office keys from a different correspondent will do. Second, cheaper option: a third pass (or higher-
+resolution crops) on the f9 leaf of the folio 1-2 letter to resolve the line-count divergence before
+committing a transcription.
+
+### Requests this pass
+
+gallica.bnf.fr: ~56 (1 reachability check on the cached manifest.json; 3 diagnostic fetches while
+troubleshooting a slow-response timeout — two `curl` connection resets at the default timeout, resolved with
+`--max-time 30`, logged as a container/load note rather than a site block; 46 census-thumbnail attempts
+across the two bands, 40 target canvases with 6 needing one retry each, canvas 29 failing both attempts and
+left unfetched; 6 native-resolution leaf fetches, all first-try). cryptiana.web.fc2.com: 2 (the two Brienne
+key-table PNGs, not previously mirrored). No other host queried this pass (no archive.org, Google Books,
+GitHub, WebSearch, or logins). Three Sonnet subagents for image reading/classification (the dense-band census
+table) and two for the key-table transcriptions (image-only, no network); two further Sonnet subagents for
+the blind passA/passB transcription (image-only, no network). Folder size 21MB, under the 30MB cap.
