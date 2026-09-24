@@ -42,3 +42,32 @@ search alone before this is called blocked. Not found by any of the six sources 
 
 Requests this pass: WebSearch 1, archive.org 2 (advancedsearch 1 + be-api fts 1, >=3s apart), github.com 0. No
 DECODE login. No promotion, no decoding.
+
+## LANE N audit, 24 September 2026
+
+**DocumentsList check** (`DocumentsList?showmaster=records&fk_id=9970`): **"No records found"** — no
+attached document. RecordsView: `Available Documents:` (empty), `Inline Cleartext: Yes`, `Inline Plaintext:
+No`. No change to the verdict: still **open**, cryptanalysis. Status word unchanged.
+
+**Edition gap (job 3): CSP Spanish vol. 3.** Identified the correct HathiTrust volume for the letter's date
+(26 Oct 1527, per Bourdeau's `CATALOGUE.md` entry 2.5): *Calendar of letters, despatches, and state papers ...
+preserved in the archives at Simancas, Vienna, Brussels, and elsewhere*, v.3 pt.2, 1527-1529 (Gayangos, 1877),
+HathiTrust id `msu.31293027025760`, 1214 pages (bibliographic search only, catalog.hathitrust.org not queried
+directly — found via WebSearch). Ran `tools/htrc_ef_headwords.py msu.31293027025760 --words
+burgo,gattinara,ferrara,cipher` (HTRC Extracted Features API, no HathiTrust page view, no login) to place the
+correspondence without reading the Cloudflare-gated site. Del Burgo (69 pages), Gattinara (81 pages) and
+Ferrara (191 pages) all recur throughout the volume, as expected for its two chief correspondents-adjacent
+figures over two years — not by itself a page citation. Narrowed by requiring all three tokens within one page
+of each other: **seq 508, 643, 851, 980, 1065, 1105, 1129** (scan sequence numbers, front matter included, so
+not printed page numbers). Of these, **seq 508 and seq 980** also fall within one page of a "cipher" token hit,
+the two strongest candidates for the entry itself or an adjoining editorial note. **Not read**: HathiTrust's
+page images are Cloudflare-gated and out of this brief's host list (data.htrc.illinois.edu and
+catalog.hathitrust.org's bibliographic API only); nobody has yet opened seq 508 or seq 980 to confirm this is
+the 26 Oct 1527 del Burgo-to-Gattinara letter or check for an "in cipher"/deciphered editorial note. This
+narrows "read a 1214-page volume" to "read two candidate pages" for whichever worker has HathiTrust access
+next (or the person, via `REQUEST.md` if a login proves necessary) — genuine progress, not a block, and not a
+confirmed page citation. Status word unchanged (open); no REQUEST.md written (nothing here needs the person's
+direct action yet, only HathiTrust page access which the tool list may open to a future worker).
+
+Requests this pass (job 3 only): WebSearch 2 (PPKE, HathiTrust catalog record), data.htrc.illinois.edu 2
+(metadata + pages, one volume, cached to disk), curl direct 0.

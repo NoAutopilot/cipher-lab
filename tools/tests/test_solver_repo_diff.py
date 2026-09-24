@@ -42,6 +42,22 @@ with tempfile.TemporaryDirectory() as tmp:
     with open(os.path.join(aym, "TARGETS.md"), "w", encoding="utf-8") as f:
         f.write("| 1 | Some letter (BnF Français 9999) | 1600 | fr | solved |\n")
 
+    # Bourdeau: a folder whose NOTES.md names an accented "Mélanges de Colbert" shelfmark (volume hit
+    # only, no shared id). Regression case for the 24 Sept 2026 DC6/DC9 miss: census rows carry the
+    # unaccented "Melanges"/abbreviated "Mél." spellings and must still match this accented one.
+    os.makedirs(os.path.join(bour, "colbertfolder"))
+    with open(os.path.join(bour, "colbertfolder", "profile.json"), "w", encoding="utf-8") as f:
+        f.write('{"documents": [{"shelfmark": "irrelevant"}], "title": "Test", "outcome": {"class": "open"}}')
+    with open(os.path.join(bour, "colbertfolder", "NOTES.md"), "w", encoding="utf-8") as f:
+        f.write("BnF Mélanges de Colbert 11 ff. 479-481, Mazarin to Bordeaux.")
+
+    # A second Bourdeau folder for the abbreviated "Mél. Colbert 127" spelling (DC9 shape).
+    os.makedirs(os.path.join(bour, "colbertfolder127"))
+    with open(os.path.join(bour, "colbertfolder127", "profile.json"), "w", encoding="utf-8") as f:
+        f.write('{"documents": [{"shelfmark": "irrelevant"}], "title": "Test", "outcome": {"class": "open"}}')
+    with open(os.path.join(bour, "colbertfolder127", "NOTES.md"), "w", encoding="utf-8") as f:
+        f.write("Mél. Colbert 127, f. 349-350, Gravel to Colbert.")
+
     # cipher-lab: a target folder naming its own DECODE id.
     with open(os.path.join(repo, "ciphers", "oursletter", "NOTES.md"), "w", encoding="utf-8") as f:
         f.write("Read from DECODE R3000, our own target.")
@@ -58,6 +74,14 @@ with tempfile.TemporaryDirectory() as tmp:
         {"id": "2000", "holder_raw": "a Simancas legajo item", "shelfmark_code": "AGS_2"},
         {"id": "5000", "holder_raw": "Paris, BnF, Français 9999 fol. 1.", "shelfmark_code": "BNF_Français_9999_001"},
         {"id": "9000", "holder_raw": "an entirely unrelated record, nobody's", "shelfmark_code": "XYZ_1"},
+        # DC6 shape: accented holder_raw, hyphenated+accented shelfmark_code, single folio "f 479"
+        # against Bourdeau's "ff. 479-481" range.
+        {"id": "9482", "holder_raw": "Paris ,Bibliotheque nationale de France (BnF), Mélanges de Colbert 11, f 479.",
+         "shelfmark_code": "BnF_Mélanges-de-Colbert-11_1"},
+        # DC9 shape: unaccented "Melanges" in holder_raw, shelfmark_code abbreviates to "Mel127" with
+        # no separator and no "Colbert" at all (must be caught via holder_raw alone).
+        {"id": "2678", "holder_raw": "Paris ,Bibliothèque nationale de France, Melanges de Colbert 127, f.349-350",
+         "shelfmark_code": "BnF_Mel127_f349"},
     ]
     with open(census, "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields, delimiter="\t")
@@ -86,6 +110,8 @@ with tempfile.TemporaryDirectory() as tmp:
         "2000": "bourdeau:targetone",
         "5000": "aymeloglu:TARGETS.md",
         "9000": "none",
+        "9482": "bourdeau:colbertfolder",
+        "2678": "bourdeau:colbertfolder127",
     }
     for rid, expected in checks.items():
         got = held.get(rid)

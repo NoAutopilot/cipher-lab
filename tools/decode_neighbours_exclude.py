@@ -10,7 +10,7 @@ is flagged when any Bourdeau folder or Aymeloglu tracker line shares a volume ke
 Output: the input rows plus columns bourdeau_id_hit, bourdeau_volume_hit, aym_id_hit, aym_volume_hit,
 queue_hit, and a final verdict column: "excluded:<reason>" or "survives".
 """
-import csv, glob, json, os, re, sys
+import csv, glob, json, os, re, sys, unicodedata
 
 def ids_in(s):
     out = set(re.findall(r"\bR\d{1,5}\b", s))
@@ -20,7 +20,15 @@ def ids_in(s):
             out |= {f"R{i}" for i in range(lo, hi + 1)}
     return out
 
+def _fold_accents(s):
+    """Strip combining diacritics (Mélanges/Melanges, Français/Francais, ...) so shelfmark text from
+    different transcribers/scrapers normalises to the same ASCII form before the volume-key regexes run.
+    Lesson of 24 Sept 2026: DC6/DC9's census rows held_by 'none' though Bourdeau's NOTES.md names them,
+    because 'Mélanges de Colbert' (accented) never matched 'Melanges'/'Mél.' (unaccented or abbreviated)."""
+    return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
+
 def volume_keys(s):
+    s = _fold_accents(s)
     s = s.replace("_", " ").replace("-", " ").replace(".", ". ").lower()
     s = re.sub(r"\s+", " ", s)
     k = set()
@@ -34,10 +42,11 @@ def volume_keys(s):
     for m in re.findall(r"stowe ?ms\.? ?(\d{2,5})", s): k.add(f"bl stowe ms {m}")
     for m in re.findall(r"(?:cotton(?: ms)?|cott\.?)\s*(caligula|vespas?ian|vespanian|galba|nero|otho|titus|julius|tiberius|claudius|domitian|faustina|augustus|cleopatra)\.?,?\s*([a-e])\.?,?\s*([ivx]+)", s):
         fam = m[0].replace("vespanian", "vespasian"); k.add(f"bl cotton {fam} {m[1]} {m[2]}")
-    for m in re.findall(r"(?:français|francais|fr\.|fr )\s*(\d{3,5})", s): k.add(f"bnf français {m}")
+    for m in re.findall(r"(?:francais|fr\.|fr |french\s*(?:mss?|manuscripts?)?\s*)\s*(\d{3,5})", s): k.add(f"bnf français {m}")
     for m in re.findall(r"(?:espagnol|esp\.)\s*(\d{2,4})", s): k.add(f"bnf espagnol {m}")
     for m in re.findall(r"(?:italien|ital\.)\s*(\d{2,5})", s): k.add(f"bnf italien {m}")
     for m in re.findall(r"clairambault\s*(\d{2,4})", s): k.add(f"bnf clairambault {m}")
+    for m in re.findall(r"mel(?:anges?)?\.?\s*(?:de\s*)?colbert\.?\s*(\d{1,4})", s): k.add(f"bnf melanges colbert {m}")
     for m in re.findall(r"busta\s*(\d{1,5})", s): k.add(f"busta {m}")
     for m in re.findall(r"affari\.? ?esteri\.? ?(\d{2,5})", s): k.add(f"busta {m}")
     for m in re.findall(r"\bsp ?(\d{1,3})\s*/\s*(\d{1,4})", s): k.add(f"tna sp {m[0]}/{m[1]}")

@@ -631,3 +631,46 @@ reconstructed by Tomokiyo; ours is a keyed reading of one more letter), "first d
 prior decipherment located", "previously unread", "unpublished", "no decipherment exists" (the MS leaf is unseen).
 
 **Corrections:** none new. The second audit's "only `10622705bsb` (vol. 1)" was already corrected to vol. 2 by worker D.
+
+## DECODE search, 24 Sept 2026
+
+LANE N audit worker, per §3's "smallest job that closes it" and this session's own brief
+(`.claude/briefs/runs/2026-09-24-lane-n-auditDC.md`, job 5). I did not solve, audit or classify novelty; I ran
+the two searches this section specifies and report the result for LANE W's own verifier to act on.
+
+**Method.** `tools/decode_list.py --status decrypted --record-type cipher` (login-free, one request at a time,
+1.6s apart) crawled DECODE's full **Decrypted** cipher catalogue fresh: 1360 rows, 28 requests, written to
+`decode-decrypted-2026-09-24.tsv` (worker's scratch, not committed — see below). Combined with the **Non-
+decrypted + Partially decrypted** catalogue already on disk (`sources/decode/records-non-decrypted-2026-09-24.tsv`,
+1186 rows, LANE N's earlier no-login crawl), this covers DECODE's entire disclosed cipher-record catalogue as
+of today: 2546 rows.
+
+**Result: 0 hits.** Grepped `holder_raw`, `shelfmark_code` and `city` (case-insensitive) across all 2546 rows
+for `stamford`, `thurloe`, `bodleian`, `oxford` and `rawl`. Every one of the five terms returns zero matches in
+either file. No Rawl. A. 24 record, no Bodleian- or Oxford-held record, and no record whose location fields
+name Stamford or Thurloe, exists anywhere in DECODE's public catalogue. Per §3's own decision rule ("if none
+appears, or none is Stamford's, the verifier who logs that result may set P4 to N4 without re-auditing
+anything else"), this is that negative result, fully logged.
+
+**One caveat, for completeness.** DECODE's `holder_raw`/`shelfmark_code`/`city` fields (what `decode_list.py`
+captures) describe the manuscript's location, not its sender. A person-name search would also want the
+`c_author` field, which `decode_list.py` does not capture (RecordsList's public grid has no author column;
+only RecordsView, which needs a login, shows it). As a secondary, non-authoritative check, a cached third-
+party snapshot (`aaymeloglu/unsolved-ciphers`'s `catalogue/decode-catalog.csv`, cloned this session, 10106
+rows, date of that repo's own last catalogue refresh unknown) does carry a `c_author` field and shows exactly
+one Thurloe-adjacent row: id 4880, "London, British Library, Add MS 4166, f 77-78", author "John Thurloe
+Dublin", status Decrypted, 1657. This is John Thurloe himself as a correspondent from Dublin in 1657 — a
+different shelfmark, collection and date entirely from P4 (Bodleian MS Rawl. A. 24, Stamford's 1655 letter),
+and not itself searched further (out of this job's scope; flagged only so the next worker does not have to
+re-find it). No Rawl. A. 24 record appeared, so per the brief the RecordsView step was not opened (no
+second login).
+
+**Files.** `decode-decrypted-2026-09-24.tsv` is a worker scratch file (not committed — CLAUDE.md's "fetch once,
+keep a manifest" applies to committed campaign data; a one-off crawl made to answer a single yes/no gate for
+one target does not need a permanent home in `sources/decode/`). If a future worker wants the fresh Decrypted
+catalogue on disk, it can be regenerated in under a minute with the command above (28 requests, well under the
+good-citizen cap).
+
+Requests this section: de-crypt.org 28 (`decode_list.py`, all ≥1.6s apart, no login). Combined with the shared
+login used for the DC1-DC9 audit above (26 requests, logged in each `ciphers/decode-*/NOTES.md`), this worker's
+total de-crypt.org requests for the whole session: 54, under the brief's 80-request cap.

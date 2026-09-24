@@ -48,3 +48,18 @@ folio, names a key for this specific fasc./folio range.
 
 Requests this pass: WebSearch 1, github.com 0 (reused shared clones). No fresh DECODE login this pass. No
 promotion, no decoding.
+
+## LANE N audit, 24 September 2026
+
+DocumentsList check (`DocumentsList?showmaster=records&fk_id=1411`): **"No records found"** — no attached
+key, transcription or decryption document. RecordsView's own field table: `Available Documents:` (empty),
+`Inline Cleartext: Yes`, `Inline Plaintext: No`. Read together, this record's "Partially decrypted" DECODE
+status is **not backed by any attached document here** — DECODE's own vocabulary most plausibly reflects that
+the source pages carry inline cleartext passages around the cipher (a normal diplomatic-letter structure, not
+a partial break of the cipher itself), the same distinction QUEUE.md's DC10 note draws for the Modena/Milano
+cluster. Nothing here changes the verdict: still **open**, cryptanalysis, transcription is still the next
+step. Status word unchanged.
+
+Census diff regenerated this session (normaliser fix): R1411's `held_by` is now
+`ours:decode-1411-hhsta-vienna-1600` (was `none`, folder did not exist when the stale diff was made) — pipeline
+catching up, not a new finding.

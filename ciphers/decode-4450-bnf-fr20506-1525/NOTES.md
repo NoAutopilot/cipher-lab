@@ -51,3 +51,16 @@ ROOM.md). No fresh DECODE login (reused the prior worker's RecordsView read). No
 
 flag for LANE N orchestrator: DC1's QUEUE.md rationale over-states the strength of the "finish-existing-key"
 lead; recommend the row be corrected or the nomination carry this caveat.
+
+## LANE N audit, 24 September 2026
+
+DocumentsList check (`DocumentsList?showmaster=records&fk_id=4450`, read in the same login as DC2/DC4/DC5/
+DC8/DC9 below): **"No records found"** — no attached document of any kind. RecordsView confirms `Inline
+Cleartext: No`, `Inline Plaintext: No`, `Available Documents:` (empty). This adds nothing to the check-solved
+verdict above: still **open**, still the weaker "copy of a stalled Ranzo attempt" framing, not
+"finish-existing-key". Status word unchanged.
+
+`sources/decode/records-non-decrypted-2026-09-24-diff.tsv` was regenerated this session (normaliser fix, see
+`tools/decode_neighbours_exclude.py`); R4450's `held_by` is now `ours:decode-4450-bnf-fr20506-1525` (was
+`none`, because this folder did not exist when the stale diff was generated) — an artifact of the pipeline
+having since caught up to this record, not a new finding about the Ranzo system.

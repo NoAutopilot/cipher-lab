@@ -3143,6 +3143,25 @@ verdicts for DC1, DC2, DC3, DC4, DC5, each in its own `ciphers/decode-<id>-...` 
 DC1, DC2, DC4, DC5 nominated to ROOM.md for stage-2 promotion; DC3 is not (found-solved). DC6-DC20 remain
 unchecked scout-style rankings, not check-solved verdicts.
 
+**Audit, 24 Sept 2026 (`.claude/briefs/runs/2026-09-24-lane-n-auditDC.md`).** Fixed the census-diff normaliser
+(accent-folding + a "Mélanges de Colbert" shelfmark pattern, `tools/decode_neighbours_exclude.py`; regression
+tests in `tools/tests/test_solver_repo_diff.py`) that caused the DC6/DC9 `held_by: none` miss flagged at 07:52;
+regenerated `sources/decode/records-non-decrypted-2026-09-24-diff.tsv`. One shared DECODE login read
+DocumentsList for DC1, DC2, DC4, DC5, DC8, DC9: **no new key, transcription or decryption document found on
+any of the six** beyond DC4's already-known transcription (DOC 3593). DC2's "Partially decrypted" status has
+no attached document at all (`Available Documents:` empty) — likely DECODE's status tracking the record's own
+inline cleartext passages, not a partial break; same distinction as DC10-DC19's cluster. All six verdicts
+**unchanged** (still open as scored above), so no retraction. Two edition gaps closed negative: DC4's two named
+PPKE leads (Labancz thesis, Verbum/Lardi article) do not cover Costabili's Ferrara-Modena correspondence at
+all (Milanese/Sforza material and a different household officer, respectively); DC8's Lasry/Sabran published
+breaks (Baluze 155 f.79, Baluze 156 f.40) do not name f.157-158, so the sibling-key lead is untried there, not
+confirmed. DC5's CSP Spanish vol.3 pt.2 (HathiTrust `msu.31293027025760`) narrowed by HTRC Extracted Features
+word-position triangulation (del Burgo/Gattinara/Ferrara/cipher co-occurrence) to two candidate scan sequences,
+508 and 980, for a future worker with HathiTrust page access to check — not itself a page citation. Full detail
+in each folder's NOTES.md, "LANE N audit, 24 September 2026" section. Found a `decode_browser_login.js` bug
+along the way (`--fetch-page` URLs differing only by query string collided on the same saved filename) and
+fixed it with an offline regression test; see `ciphers/decode-2678-bnf-colbert127-gravel-1665/NOTES.md`.
+
 ## Digitised manuscripts on the Internet Archive (LANE N scout of 24 September 2026)
 
 Brief: `.claude/briefs/runs/2026-09-24-lane-n-scIA.md`, copy-free only. Host: `archive.org` `advancedsearch.php`

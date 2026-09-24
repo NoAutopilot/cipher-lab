@@ -65,3 +65,44 @@ transcription and context but explicitly did not attack it.
 DC9's `held_by` should be `bourdeau:colbert`, not `none` — flagged in ROOM.md, 24 Sept 2026, for the LANE N
 orchestrator to correct the census-diff matcher (shelfmark normalisation across "Mélanges"/"Melanges"/"Mél."
 spellings and accent-stripping should be checked).
+
+## LANE N audit, 24 September 2026
+
+**Normaliser fixed.** `tools/decode_neighbours_exclude.py`'s `volume_keys()` now folds combining diacritics
+(`unicodedata.normalize('NFKD', ...)`, so "Mélanges"/"Melanges"/"Mél." all reduce the same way) and adds a
+`mel(anges?)?\.?\s*(?:de\s*)?colbert\.?\s*(\d+)` pattern. Confirmed against this record's own two forms —
+holder_raw "Melanges de Colbert 127" (no accent) and the census's abbreviated `shelfmark_code`
+"BnF_Mel127_f349" (no "Colbert" at all, caught via holder_raw) — both now produce the volume key `bnf
+melanges colbert 127`, matching Bourdeau's `colbert/NOTES.md` ("Mél. Colbert 127, f. 349–350"). Regression
+cases added to `tools/tests/test_solver_repo_diff.py` (DC6/DC9 shapes); `tools/tests/test_solver_repo_diff.py`
+and the tool's own `--help` both pass. Census diff regenerated: R2678's `held_by` is now `ours:catalog` (this
+folder + QUEUE.md both now name it by id, which already wins over the volume match) and its `bourdeau_hit`
+field, previously blank, now correctly shows `colbert[not read]` — the field the original miss was about,
+even though `held_by`'s own top-level value had separately been fixed already by this folder's own creation.
+Full `sources/decode/records-non-decrypted-2026-09-24-diff.tsv` regenerated and committed; isolating the
+normaliser's own marginal effect (same run, normaliser reverted, current repo state otherwise unchanged) found
+0 additional `none`→held rows — the 71→60 `none`-count drop between the stale and fresh diffs is entirely
+attributable to six check-solved folders (this one plus DC1/DC2/DC4/DC6/DC7) having been created since the
+stale diff was generated, not to the normaliser. The normaliser fix is nonetheless real and matters for the
+*next* first-pass census run made before such folders exist — which is exactly the shape of miss DC6/DC9 were.
+
+**DocumentsList check** (`DocumentsList?showmaster=records&fk_id=2678`): **"No records found"**. RecordsView:
+`Available Documents:` (empty), `Inline Cleartext: Yes`, `Inline Plaintext: No`. No change to the verdict:
+still **open**, cryptanalysis, Bourdeau's "not attacked" lead stands. Status word unchanged.
+
+**DECODE login (shared across DC1/DC2/DC4/DC5/DC8/DC9), 24 Sept 2026.** One login
+(`tools/decode_browser_login.js`), `--fetch-page` for RecordsView/1411, /1162, /9970, /2754, /2678 plus
+`DocumentsList?showmaster=records&fk_id=` for all six ids (4450, 1411, 1162, 9970, 2754, 2678), `--delay 1700`.
+**Tool bug found and fixed**: `safeFilename()` derived a page's saved filename from the URL's last path
+segment only, so six `DocumentsList?...&fk_id=N` URLs (same path, different query) all collided on
+`DocumentsList.html`, silently overwriting all but the last on a first attempt (`--max-files 11` also let
+auto-discovery pull ~10 unwanted thumbnail images that pass hadn't asked for). Fixed to fold the query string
+into the filename when present (`tools/decode_browser_login.js`), added `require.main` guards so the module is
+requireable without touching Playwright/network, and an offline unit test
+(`tools/tests/test_decode_browser_login_safefilename.py`, passes, no credentials/network). Re-ran clean with
+`--max-files 0` (no `--fetch`, so 0 is correct for "no auto-discovered extras" — the fetch-page URLs are not
+gated by `--max-files`); all 12 pages saved distinct, no attachment images pulled. Account name (visible on
+every fetched page's nav bar) not quoted anywhere in this file or committed; no raw HTML committed. Total
+de-crypt.org requests this job: 1 login + 6 RecordsView + 6 DocumentsList = 13 on the first (partially wasted)
+attempt, + 1 login + 6 RecordsView + 6 DocumentsList = 13 on the clean re-run = **26 total**, all ≥1.6s apart,
+well under the brief's 80-request cap.

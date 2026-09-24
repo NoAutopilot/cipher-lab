@@ -20,9 +20,28 @@
 // success it saves RecordsView/RECORD_ID as OUT_DIR/record_RECORD_ID.html, then runs any --fetch/--fetch-page
 // requests. Session cookies live only in the in-memory browser context, never written to disk. Exit 0 on login,
 // 4 on a rejected login, 1 on an error. One login per run; do not loop it (CLAUDE.md single-attempt rule).
-const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
+
+const BASE = 'https://de-crypt.org/decrypt-web';
+
+function safeFilename(url) {
+  const u = new URL(url, BASE + '/');
+  const fileParam = u.searchParams.get('file');
+  if (fileParam) return fileParam.replace(/[^A-Za-z0-9._-]/g, '_');
+  const last = u.pathname.split('/').filter(Boolean).pop() || 'download';
+  // A query string is often the only thing distinguishing one page from another with the same path
+  // (DocumentsList?...&fk_id=1411 vs &fk_id=2678 both end in /DocumentsList): fold it into the name so
+  // repeat --fetch-page calls in one run don't overwrite each other's saved file (found 24 Sept 2026,
+  // six DocumentsList fetches in one login all landing on the same DocumentsList.html).
+  const suffix = u.search ? '_' + u.search.slice(1) : '';
+  return (last + suffix).replace(/[^A-Za-z0-9._-]/g, '_');
+}
+
+module.exports = { safeFilename };
+
+if (require.main === module) {
+const { chromium } = require('playwright');
 
 const args = process.argv.slice(2);
 if (args.length < 2) {
@@ -50,16 +69,7 @@ const fetchPageUrls = collectUrls('--fetch-page');
 const user = process.env.DECODE_USER, pass = process.env.DECODE_PASS;
 if (!user || !pass) { console.error('DECODE_USER/DECODE_PASS: unset'); process.exit(2); }
 
-const BASE = 'https://de-crypt.org/decrypt-web';
 const exe = process.env.CHROMIUM_PATH || (fs.existsSync('/opt/pw-browsers/chromium') ? '/opt/pw-browsers/chromium' : undefined);
-
-function safeFilename(url) {
-  const u = new URL(url, BASE + '/');
-  const fileParam = u.searchParams.get('file');
-  if (fileParam) return fileParam.replace(/[^A-Za-z0-9._-]/g, '_');
-  const last = u.pathname.split('/').filter(Boolean).pop() || 'download';
-  return last.replace(/[^A-Za-z0-9._-]/g, '_');
-}
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -144,3 +154,4 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     await browser.close();
   }
 })();
+}
