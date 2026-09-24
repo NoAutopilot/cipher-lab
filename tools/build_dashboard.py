@@ -276,9 +276,10 @@ def reading_row(r, idx):
                      + (f'<p class="rating {rk}">{E(rating)}</p>' if rating else "")
                      + f'<div class="memo">{md_light(m[0]["text"])}</div></div>')
     for x in dr[:2]:
+        sent_box = (f'<label class="sentbox" data-row="{E(x["slug"])}"><input type="checkbox"> Mark as sent</label>' if x["kind"] == "ready" else "")
         parts.append(f'<div class="dz"><h4>Who to tell</h4><p><b>{E(x["to"])}</b> <span class="chip out-{x["kind"]}">{"ready to send" if x["kind"] == "ready" else "drafted"}</span></p>'
                      f'<p class="muted small">{E(x["status"])}</p><p><b>Subject.</b> {E(x["subject"])}</p>'
-                     + copy_block(f"cp-{rid}-{slug(x['slug'])}", x["subject"], x["text"]) + '</div>')
+                     + copy_block(f"cp-{rid}-{slug(x['slug'])}", x["subject"], x["text"]) + sent_box + '</div>')
     links = {"folder": r["link"], "audit": r["link"].rstrip("/") + "/AUDIT.md"}
     if m:
         links.update({k: v for k, v in m[0]["links"].items() if v and not v.lower().startswith("none")})
@@ -383,6 +384,7 @@ section[hidden]{display:none}
 @media (max-width:600px){.rbody{padding-left:4px}}
 .dz p{max-width:70ch} .memo p{max-width:70ch} .rating{font-weight:600} .rating.r-sub{color:var(--good)} .rating.r-conf{color:var(--accent)} .rating.r-form{color:var(--muted)}
 .links a{margin-right:12px}
+.sentbox{display:inline-flex;gap:8px;align-items:center;margin-top:10px;font-weight:600;cursor:pointer} .sentbox input{width:18px;height:18px;accent-color:var(--good)} .sentbox.done{color:var(--good)}
 details.txt{margin-top:6px} details.txt summary{cursor:pointer;color:var(--accent);font-weight:600}
 .mail{white-space:pre-wrap;overflow-wrap:anywhere;font-family:inherit;font-size:0.9rem;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:12px 14px;margin:8px 0;max-height:420px;overflow:auto}
 .copy{appearance:none;font:inherit;font-size:0.85rem;font-weight:600;background:var(--accent);color:#fff;border:0;border-radius:4px;padding:7px 12px;cursor:pointer}
@@ -446,12 +448,15 @@ JS = """
     });
   });
   var status = document.getElementById('tick-status');
-  var items = Array.prototype.slice.call(document.querySelectorAll('li.task[data-row]'));
+  var items = Array.prototype.slice.call(document.querySelectorAll('[data-row]'));
   function paint(row, done, when) {
-    var li = document.getElementById('ask-' + row); if (!li) return;
-    var inp = li.querySelector('input'); if (inp) inp.checked = !!done; li.classList.toggle('done', !!done);
-    var meta = li.querySelector('.ask-meta');
-    if (done && when && meta && meta.textContent.indexOf('ticked') < 0) meta.textContent += ' · ticked ' + when;
+    Array.prototype.forEach.call(document.querySelectorAll('[data-row]'), function (el) {
+      if (el.dataset.row !== row) return;
+      var inp = el.querySelector('input'); if (inp) inp.checked = !!done; el.classList.toggle('done', !!done);
+      var meta = el.querySelector('.ask-meta');
+      if (done && when && meta && meta.textContent.indexOf('ticked') < 0) meta.textContent += ' · ticked ' + when;
+      if (el.classList.contains('sentbox')) el.lastChild.textContent = done ? (' Sent' + (when ? ' ' + when : '')) : ' Mark as sent';
+    });
   }
   function local(row, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem('ask-' + row) || 'null'); localStorage.setItem('ask-' + row, JSON.stringify(v)); } catch (e) { return null; } }
   items.forEach(function (li) { var r = li.dataset.row; var v = local(r); if (v) paint(r, v.done, v.when); });
