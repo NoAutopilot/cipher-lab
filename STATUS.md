@@ -739,6 +739,35 @@ work in progress. Orchestrator session 2,042 since 17 Sept. **Nothing here is bi
   archives and Cryptiana. The original orchestrator container predates the change and cannot; it delegates.
 - Repo conventions: CLAUDE.md. Workflows: .claude/workflows/check-solved.js and scout.js.
 
+## LANE G3 handoff (24 Sep 2026 14:02 UTC)
+
+Written by LANE G3 orchestrator session_01WVnAc4cU7RQjEoBfbkuGrG (Opus), about $13 own usage, from 12:03 UTC. Stopped early: the account shows
+**allowed_warning on the seven-day window** (LANE N2 13:50; resets 26 Sept 2026 13:00 UTC), which under BUDGETS' scaling rule means no new
+workers anywhere. **Live workers: none.** 8 workers, $36.85 of worker usage; all ledgered, ASSIGNMENTS rows done, archived.
+
+**Done this lane:**
+- fr5160-letellier-1653: code 6 on f.67 is a real 6 on 8/8 image-checked tokens, so a table revision between 10 Oct and 21 Nov 1659, not a misread;
+  grades unchanged (C454 M92); _12 is a clear overlined 12, so the ri conflict stands (A, 963dee8).
+- decode-2754-bnf-baluze156-1636 (DC8): Lasry's Sabran 1631 key negative on both halves with controls (results row). Untested: Farnese f.40 key,
+  fr.4135-4138 keys, fresh solve (crib: repeated '7 4 t o') (C, cf17087).
+- fr2967-duprat (M30): all 131 canvases walked, decipherments only, no ciphertext: closed-negative (D, 293b1a2).
+- Scout round 6: a real browser pages archivesetmanuscrits past page 1 (results vary run to run: run each query twice). 2 rows:
+  M35 fr2933-salviati-1525, M36 fr5761-election-1519, both check-solved open (stage 2), both digitised (B, E).
+- fr2933-salviati-1525 (M35): 9 leaves f.54r-57v on disk (canvases 55-59); letter mixing plain Italian, numeral groups and invented signs with
+  superscript marks. Glyph atlas of 40 codes (tools/glyph_atlas.py + test) covers 3068 of 4014 signs; atlas passes of f.54r agree 62.8% on
+  base codes, under the 80% gate. Confusions eps/e, h/bh; 57 of 130 disagreements are gaps (F, H).
+- fr5761-election-1519 (M36): natives of the key f.50v-53v on disk, one pass (key_passB.tsv, 319 rows, word descriptions); worker interrupted at 1.9x cap.
+
+**Owner items (unchanged, not ours to act on):** ASKS 35 and 38, five BnF reproductions, each with a REQUEST.md.
+
+**Next for a successor, once the warning clears (priority):** (1) Salviati: revise the atlas to split eps/e and h/bh, then two atlas passes of
+f.54r against the 80% gate (disk only, Opus lead with Sonnet passes, cap $6); (2) M36 key: atlas for the alphabet signs, then two atlas passes
+of f104 (disk only); (3) the verifier gap for both: Desjardins' Négociations avec la Toscane not full-text searched; (4) DC8 Farnese key trial.
+Gallica hosts are released.
+
+**Lessons (ledgered; transcription.md edited):** the atlas is required whenever any non-numeral sign appears, mixed pages and keys included
+(two workers skipped a conditional atlas step and wasted their passes); one-question image checks are the cheapest brief shape ($1.38).
+
 ## LANE G2 handoff (24 Sep 2026 11:56 UTC)
 
 Written by LANE G2 orchestrator session_015NqJ9uu5Ef3Bo6QaRiGcGp (Opus) at about $72 of its own usage and 440k context, from 07:43 UTC.
