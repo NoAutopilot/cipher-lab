@@ -12,14 +12,15 @@ THE ITEM
   entirely in cipher, signed "De Gramont E. de Tarbe", dated "Faict à Rome, le XXme jour de may M.D.XXX".
   Volume on Gallica: https://gallica.bnf.fr/ark:/12148/btv1b9059991d (find f.30 in the viewer).
 - Cipher: a nomenclator; read with the Gramont 1530 key published by Satoshi Tomokiyo and George Lasry.
-  1973 cipher signs: 1502 read from the key, 158 more values proposed cryptanalytically with a control (grade S),
-  254 uncertain, 59 unread.
+  1969 cipher signs: 1486 read from the key, 181 more values proposed cryptanalytically with a control (grade S),
+  239 uncertain, 63 unread. [Counts corrected 24 Sept 2026 (V3b) from decode.py --check; the prompt as sent said
+  1973 / 1502 / 158 / 254 / 59.]
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/fr2980-gramont/reading_f30_extended.txt, transcription
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/fr2980-gramont/ciphertext_f30.tsv, key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/fr2980-gramont/key.tsv, notes
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/fr2980-gramont/NOTES.md, our own search log https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/fr2980-gramont/AUDIT.md.
 - Distinctive phrases of the deciphered French, useful for full-text search (old spelling, try variants):
-  "la declaration de la liberte de Florence"; "la ville et la force entre vos mains"; "qu'il veult aller en
-  Avignon"; "pour recouvrer ce que ses predecesseurs ont perdu"; "qu'il n'a aucune deliberation d'aller";
+  "la declaration de la liberte de Florence" (letters as read: DECLARADION); "la ville et la force entre vos mains"; "qu'il veult aller en
+  Avilnon [Avignon?]" (letters as read: AVILNON); "pour recouvrer ce que ses predecesseurs ont perdu"; "qu'il n'a aucune deliberation d'aller";
   "toutes choses qui vous touchent de si bon pied"; "l'ambassadeur et aultres ses ministres".
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)

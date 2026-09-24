@@ -806,7 +806,7 @@ lines".
 
 | item | prior plaintext | prior decipherment of this item | class |
 |---|---|---|---|
-| BnF fr.2980 f.30r-v, no.22 (Anc. 8505), entirely in cipher, "Faict à Rome, le XXme jour de may M.D.XXX", signed "De Gramont E. de Tarbe"; addressed **to the king** (see below), 1973 signs | **not located.** No printed text, extract, calendar entry or summary of this letter was found. Its existence and date are in print only in the 1868 BnF catalogue and the *Catalogue des actes* IX [411] ("2980, fol. 29 et suiv."). A **sibling letter** on the same negotiation is in print: Gramont to Francis I, Rome, April 1530, in clear (Béthune 8530 c.35), *Archivio storico italiano*, Appendice I (1842-44), doc. XXXVIII, pp.473-481 (Molini's transcription). **It is a different letter** (test below). | **not located.** None on the leaf, in the volume, in the BnF or Dupuy catalogues, in print or online. As for no.21, it had been **identified as readable** before us: Tomokiyo, francis.htm ("These undeciphered letters can be read with Gramont's cipher (1530)"; his page source also holds a commented-out image slot `francisBnFfr2980f29.png`, f.29 only), and Bourdeau, CATALOGUE.md line 76, catalogue 328 ("fr. 2980 nos. 21–22 … Gramont 1530 key held"; re-checked at head c85ece1, 23 Sept 2026 20:50 -05:00). Neither gives a reading. | **N3** |
+| BnF fr.2980 f.30r-v, no.22 (Anc. 8505), entirely in cipher, "Faict à Rome, le XXme jour de may M.D.XXX", signed "De Gramont E. de Tarbe"; addressed **to the king** (see below), 1973 signs | **not located.** No printed text, extract, calendar entry or summary of this letter was found. Its existence and date are in print only in the 1868 BnF catalogue and the *Catalogue des actes* IX [412] [V3b, 24 Sept 2026: [412], not [411], per V2's check; p.61] ("2980, fol. 29 et suiv."). A **sibling letter** on the same negotiation is in print: Gramont to Francis I, Rome, April 1530, in clear (Béthune 8530 c.35), *Archivio storico italiano*, Appendice I (1842-44), doc. XXXVIII, pp.473-481 (Molini's transcription). **It is a different letter** (test below). | **not located.** None on the leaf, in the volume, in the BnF or Dupuy catalogues, in print or online. As for no.21, it had been **identified as readable** before us: Tomokiyo, francis.htm ("These undeciphered letters can be read with Gramont's cipher (1530)"; his page source also holds a commented-out image slot `francisBnFfr2980f29.png`, f.29 only), and Bourdeau, CATALOGUE.md line 76, catalogue 328 ("fr. 2980 nos. 21–22 … Gramont 1530 key held"; re-checked at head c85ece1, 23 Sept 2026 20:50 -05:00). Neither gives a reading. | **N3** |
 
 **Why N3 and not N4.** The gaps that hold f.29r at N3 are shared by f.30 and are still open: Camusat (1619) and
 Champollion-Figeac's *Captivité* (1847), both located on Gallica and both behind its challenge; HathiTrust full
@@ -1602,7 +1602,9 @@ Villandry, Rome, 20 May [1530] (BnF fr.2980 f.29r, no.21). Tomokiyo identified i
 **Safe sentence, no.22 (N4):** "No prior decipherment located of Gabriel de Gramont's all-cipher letter to Francis I,
 Rome, 20 May 1530 (BnF fr.2980 f.30r-v, no.22). Tomokiyo identified it as readable, and Bourdeau catalogued it (no.328).
 We read it in part with the Gramont 1530 key published by Tomokiyo and Lasry (2023): of 1,973 signs, 1,500 are at grade
-H and 158 at grade S with a matched control. Its closest print is the sibling letter of April 1530 (*Archivio storico
+H and 158 at grade S with a matched control. [V3b, 24 Sept 2026: counts stale. Since the seam fix and the second extension
+(NOTES.md) f.30 has 1,969 signs; `decode.py --check` gives extended H 1,486, S 181, M 239, U 63 (published key alone H 1,502).
+Quote: "of 1,969 signs, 1,486 are at grade H and 181 at grade S with a matched control".] Its closest print is the sibling letter of April 1530 (*Archivio storico
 italiano*, Appendice I, pp.473-481), which is a different letter. The search log is in AUDIT.md."
 
 **Unsafe sentences:** "first decipherment", "previously unread", "never printed" or "unpublished" without the qualifier
@@ -1675,3 +1677,44 @@ from `reading.txt` rather than from an earlier section.
 Requests this session: archive.org 6 (1 djvu download and 1 metadata for Catalogue IX, 2 advancedsearch, 2 djvu
 downloads for Génin 1841 and 1842); books.openedition.org 1. No Google Books, no Gallica, no
 de-crypt.org, no logins, no subagents.
+
+## Second opinion SO-GRAMONT-F30 (ChatGPT, pull request 4), checked 24 Sept 2026 16:31 UTC
+
+LANE V4 verifier V3b (Opus, session_01J653u9mXgcT3gwBenQP5kh). Input: `second-opinions/chatgpt-f30-2026-09-24.md`,
+GPT-6 via Codex, copied from branch `second-opinion/SO-GRAMONT-F30` (PR 4, unmerged). It found **no printing of the
+20 May letter and no prior decipherment**. It offers one "near-match" to collate, Capponi's discussion of a Tarbes
+letter. It also lists corrections to our counts and presentation. No decoding was done here.
+
+| # | claim | source checked | verdict | correction made |
+|---|---|---|---|---|
+| 1 | Capponi, *Storia della Repubblica di Firenze*, 2nd ed. (1876) III, pp.273-275, n.216, discusses a long Tarbes letter to Francis I, Rome, April 1530, and cites *ASI* Appendice I p.473 | Gutenberg #67297 HTML (fetched once): title page "Seconda edizione ... Tomo terzo ... 1876". The text before page mark [274] describes the letter. N.216 quotes "Venant de Boullogne icy, j'ay entendu la force et la foiblesse des Fleurentins ..." and cites "(Lettera del Vescovo di Tarbes al re Francesco I; da Roma, aprile 1530. Archivio Storico Ital., Appendice, vol. I, pag. 473.)". N.217 quotes "... commanderez à baguette ..." and cites "(Lettera citata.)" | **right, and it is the sibling April letter this file already tested as a different letter** | none to the class. Both Capponi quotations come from *ASI* App. I doc. XXXVIII (pp.473-481). "Is f.30 the printed April letter in cipher? Test" ran on that text: longest shared run 18 letters, a formula. A further check here: the words Capponi quotes (BAGVETTE, ARBITRE, FLEVRENTIN, BOVLLOGNE, ACCESSOIRE, CONSERVACION, VICTVAILLE, AOVST) give 0 hits in the folded f.30 extended reading. Capponi is a secondary print of the April letter, not of f.30. It is added to the evidence here |
+| 2 | Camusat 1619 vs the 1644 Gallica copy: equivalence not shown folio by folio | AUDIT.md "N4 decision (final families)" 1; V2's row 7 | **fair, already stated** | none (residual risk as logged there) |
+| 3 | CSP Spanish IV.1 p.603: intercepted Tarbes letters, an archival route only | f.30 second audit 3 and (a), with the p.603 passage quoted | **right, already covered** | none. The intercepts are archival, and N4 does not exclude unpublished work |
+| 4 | Tomokiyo francis.htm: the key is published and the letter is identified as readable; key credit is separate from plaintext | AUDIT.md f.30 verdict row (Tomokiyo's quotation, Bourdeau no.328) | **right, already covered** | none |
+| 5 | Prompt counts stale: the reading now gives 1969 tokens, H 1486 / S 181 / M 239 / U 63, not 1973 with H 1502 / S 158 / M 254 / U 59 | `decode.py --check` (exit 0, "reading up to date"): "f30 extended # tokens 1969: H 1486, C 0, S 181, M 239, I 0, U 63"; published key alone 1969: H 1502 / M 231 / U 236 | **right** | PROMPT-chatgpt-f30.md counts updated. The no.22 N4 safe sentence is annotated in place with the current counts. status.json's no.22 line was not edited (no class change). The orchestrator should refresh it from the annotated sentence |
+| 6 | "Avignon" is a normalization; f30r L32 reads AVILNON | reading_f30_extended.txt L32 "...QvILVEvLTA[LL]ElENAVILNON" | **right** | prompt phrase now "qu'il veult aller en Avilnon [Avignon?]". The reading itself is unchanged. A one-line solver suggestion was added to NOTES.md |
+| 7 | "declaration" reads DECLARADION (eh T/D conflict) | reading L02 f30v; AUDIT.md "Reading quality" (eh at T, not the table's D) | **right, already recorded** | prompt phrase now marked "(letters as read: DECLARADION)" |
+| 8 | L01, L02 and L11 are not continuous French | NOTES.md (the four lines, "Still not French") | **right, already recorded** | none |
+| 9 | The two cross shapes should be split before values are tested | NOTES.md (cross pattée vs double-barred, both coded CROSS) | **right, already recorded** | none (a solver matter) |
+| 10 | Grade S is not image confirmation; p = 0.01 from 100 draws is not the probability the reading is right | NOTES.md extension tables (p = 0.010, 100 draws) | **right in substance**; S is correctly defined as cryptanalytic with a control (rule 4) | none. AUDIT.md already says "a cryptanalytic result resting on a key-based reading" |
+| 11 | The recipient "Sire" supports the king; pronouns and COM antecedents need analysis | AUDIT.md f.30, "Who, to whom, when, where" | **right, already covered** for the recipient; the pronouns are a reading matter | none |
+
+**Leads.** (1) *ASI* App. I p.473: already read and tested (row 1). (2) The Asti intercepts in Simancas and Vienna are
+archival and do not block N4. (3) Camusat 1619 vs 1644: the residual is stated. (4) Florentine narratives with French
+originals: Capponi, the only concrete one named, is closed as row 1. Varchi, Segni and Nardi were named in our own
+prompt. The f.30 audits cover the *ASI* series and its index. These narrative histories were not grepped by name here,
+so they are **not searched**, low priority: they quote the April letter through Capponi at most. (5) An image recheck
+of AVILNON, the crosses and eh is a solver matter (NOTES.md).
+
+**Did the second opinion find a prior print or decipherment of f.30?** No. Its one concrete print is the April letter,
+already known and tested as different. **Class: no.22 (f.30r-v) stays N4** (no prior decipherment located). No.21 is
+untouched.
+
+**Postmortem.** Two of our own statements were stale and the outside reader caught both. The first is the counts. The
+prompt and the N4 safe sentence still gave 1,973 signs after the seam fix and the second extension changed them to
+1,969. The second is the catalogue entry: V2 corrected [411] to [412] at three places, but a fourth, in the f.30
+verdict row, was missed. Corrected in place. Lesson (it repeats V2's): regenerate a prompt's and a safe sentence's
+counts from `decode.py --check` at the time of writing, and grep the whole file when correcting a citation.
+
+Requests this session for this label: www.gutenberg.org 1. No Google Books, no Gallica, no archive.org.
+

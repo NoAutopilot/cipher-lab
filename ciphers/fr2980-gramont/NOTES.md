@@ -821,3 +821,4 @@ the letters, which read I A Y [q] A I LL E; with q as B (key.tsv's own note) the
 porteur". Re-divide L01 in the gloss; reading.txt itself is unaffected. Also noted by the ChatGPT second opinion
 (second-opinions/chatgpt-2026-09-24.md, section 3), with its unverified conjectures on L04-L05 "tondement"/"fondement",
 L10 "cavsenve" and L11 "do[nn]er".
+- Suggestion (V3b, 24 Sept 2026, from second opinion SO-GRAMONT-F30): f30r L32 reads AVILNON, which the prompt glossed as Avignon; check the L/G sign against the image and the key before any paraphrase says "Avignon" (same pass as eh T/D and the two crosses).
