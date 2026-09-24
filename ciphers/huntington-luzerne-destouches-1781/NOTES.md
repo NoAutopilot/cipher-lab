@@ -216,3 +216,23 @@ recovery, per ROOM.md).
 
 Requests this pass: hdl.huntington.org — see the combined count in this worker's ROOM.md `done` line (shared
 budget with the Blathwayt target above; both fetched in one session, well under the 250-request cap).
+
+## R6 progress, 24 Sep 2026 07:15 UTC (LANE R worker R6, stopped over cap by the lane orchestrator)
+
+Status unchanged: open. Nothing below classifies novelty.
+
+**Done (pushed).**
+- `images/crops/`: three overlapping 2x bands per cipher page (68 p1-3, 37 p1-2, 55 p1-2, 108(A) p1-6), cut from the images already on disk; no Huntington request this session.
+- mssDE 108(A): two blind Sonnet passes (`passA.tsv` 707 groups, `passB.tsv` 719), reconciled with tools/reconcile_passes.py (`recon108/`): 95.1% agreement after renumbering pass A's p5 (it skipped p5 L08, 387 ... 1113, confirmed on the image). **`ciphertext.tsv`: 719 groups, 685 H / 34 M**, every disagreement settled on the image (almost all were pass A dropping a leading 7 drawn as '>').
+- mssDE 68/37/55 groups: two blind passes (`passA_decipher.tsv` 533, `passB_decipher.tsv` 531), reconciled (`recon_decipher/`, 94.6%, 29 disagreement columns). Settlements read on the image but **not yet applied** (the tool call was stopped): 68 p1 L01/3 1066; 68 p1 L02/9 391, /12 49 (M); 68 p2 L01/3 346, /8 391; L02/5 341, /7 391; L03/1 80; L05/9 1125, /11 30 (M); L06/5 534; L09/4 341, /6 391, /10 391 (pass B missed it); 37 p1 L04/7 832; L06/5 931, /8 1103 (M); 37 p2 L01/2 341; L03/4 381; L04/8 339, /9 832; L07/9 1137 (M); 55 p1 L06/8 12; L08/8 444; L09/3 713 (M); 55 p2 L01/5 40, /9 953 (M); L03/10 336 (M); L11/9 1187. The hand's 3 (a flat-topped 'ʒ') is what the passes split between 2, 3 and 9.
+- `build_pairs.py`: pairs groups with the interlinear glosses, builds key.tsv (H from ink glosses, M from pencil), key_conflicts.tsv and key_yale_crosscheck.tsv, with --check. Not yet run (needs ciphertext_decipher.tsv).
+
+**Half-done.** `interlinear_readings_draft.txt`: the interlinear decipherment read from the image by R6 for every cipher line of 68, 37 and 55, one unit per group in order ('?' doubtful, '[x:..]' struck, 'P:' pencil, '_' nothing written). To become `interlinear_readings.tsv` (columns line, hand, units) once each line's unit count is checked against the settled groups.
+
+**Findings from the image (observed, not yet in a committed table).**
+- **mssDE 68's own decipherment is complete:** every one of its 177 groups (p1 5 lines, p2 9, p3 4) has an ink gloss under it, nulls marked "nul" (1187, 394, 848). So mssDE 68 is read by its own contemporary decipherment (a transcription of it, not a solve). mssDE 37 is also fully glossed in ink (amber/brown). **mssDE 55 is not:** ink glosses stop at p1 L08 pos 7 ("Mr de la Fayette"); the rest of p1 and all of p2 carry only sparse pencil glosses in another, undated hand.
+- mssDE 108(A) itself carries a few **pencil glosses** in what looks like the same hand as 55's pencil: margin "835" at p1 L01 (the group that opens 68, 37 and 55 but is absent from 108(A)), "e" under 80, "de" under 10 (x3), "ri" under 480/991 region, "les" under 947 on p3 (x4). A partial later decoding attempt on the leaf; hand and date not established.
+- The Huntington code is **not** the Yale 8 Jan 1781 (Rochambeau) code as aligned by Tomokiyo/R2: vous = 32 here (Yale 32 = de la), et = 96 (Yale 96 = se), tes = 391 (Yale la), de la = 337/531 (Yale 337 = et), bons = 45 (Yale general), en = 713 (Yale un/une), de = 10. The Yale C pairs should not be applied to 108(A) at grade C; build_pairs.py writes the shared-figure agreement to key_yale_crosscheck.tsv and does not merge them.
+- Consistent Huntington values seen across letters (ink): 10 de, 202 a, 125 a, 6 que, 32 vous, 941 ne, 947 les, 725 les, 331 a, 341 fre, 981 ga, 391 tes, 599 sur, 610 etre, 880 pres, 626 r, 628 sont, 940 '.', 976 '.', 1181 se, 480 ri, 832 vi, 991 ere, 1193 ti, 444 te, 1151 de, 1086 de, 1131 cent, 863 hommes, 1070 ser, 1187 nul.
+
+**Left.** Apply the settlements above -> `ciphertext_decipher.tsv`; finish `interlinear_readings.tsv` and run `build_pairs.py` (pairs_contemporary.tsv, key.tsv, conflicts, Yale cross-check); decode.json + tools/decode_key.py on 108(A) with --check; per-token grades; matched control before any S grade; NOTES search log (Stevens's Facsimiles, Founders Online not re-run). ROOM 'for LANE W' line only when the reading is ready.
