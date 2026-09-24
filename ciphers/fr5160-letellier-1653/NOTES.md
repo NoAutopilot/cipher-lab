@@ -1746,3 +1746,61 @@ Requests: archivesetmanuscrits.bnf.fr ~12 (POST searches + 1 item-page GET, ≥1
 `ws_closed_mid_exchange` reset recovered on retry), gallica.bnf.fr (SRU) ~5 (2 `ws_closed_mid_exchange` resets
 before the host recovered, then 3 clean queries). No logins, no subagents, no images fetched beyond the ark
 confirmations already in the sources TSV. Well under $3 cap.
+
+## Canvas walk 160-367 (24 Sept 2026)
+
+LANE G2 worker V, Sonnet, cap $6. Read `walk_160_367.tsv` for the full per-canvas table. IIIF `full/600,/0/default.jpg`
+thumbnails, one canvas at a time, ~1.8 s apart, descriptive User-Agent, one retry then skip (never needed — every
+fetch in this pass returned 200 on the first or second try). Read directly by this worker, no subagent, per brief.
+
+**No new cipher letter found in canvas 160-367.** Canvas 160-167 (folio 82-85 approx.) and 174-218 are plain French
+Brienne/Servien diplomatic correspondence, Nov-Dec 1659 (one Dec 1661 dateline noted near canvas ~205), covering the
+Pyrenees peace ratifications, the royal marriage, Piedmont/Savoy court affairs, Switzerland, and the Baltic war —
+ordinary recto/letter/verso-docket/blank pattern, no cipher on any of the 59 canvases fetched and read in that span.
+
+**Canvas 168-173 is the already-known folio 86-88 cipher dossier, not a new find.** Cross-checked this pass's own
+reading against the existing NOTES.md sections "Folio 86 cipher and folio 87 decipherment" and "Folio 86-88: key from
+the f.87 decipherment": canvas 168-169 = folio 86's numeral cipher (opens "Monsieur, la lettre qu'il vous a pleu de
+m'escrire du 8e..."), canvas 170 = folio 87, the contemporary decipherment ("Dechiffré de la lettre de M.r le Comte
+de Brienne du 21 9.e 1659"), canvas 172-173 = folio 88's own separate numeral cipher block, closing "A Paris ce 21e
+9bre 1659" signed Brienne. All three already reconciled (`ciphertext_f86.tsv`, `ciphertext_f88.tsv`,
+`dechiffre_f87*.txt`) by an earlier LANE G2 pass this same day; this walk independently confirms the canvas
+assignment and finds nothing beyond what is already committed.
+
+**Canvas 219 (folio 111) is a structural finding: the volume's second item starts here, and it is out of this
+brief's date scope.** The leaf reads "Lettres Originales de M.r le Tellier a M.r Servien" — exactly the item-2
+divider the catalogue notice (`archivesetmanuscrits.bnf.fr` OAIRecord, quoted earlier in this file) describes as
+folio 111-182, Le Tellier to Servien, 22 March 1652 - 27 August 1658, with **no cipher note** in the catalogue
+description. Canvas 221 (folio 112) confirms the start date directly: "Lyon ce 22 mars 1652", Le Tellier's own
+signature. Since item 1 (the only correspondent this volume's catalogue entry ever attributes cipher to, Brienne
+père-et-fils, folio 1-110) already runs the full 1653-1661 span and ends at canvas ~210 (folio 110, last blank
+recto before the title leaf), **item 2 cannot contain any further 1659-61 cipher letter by construction** — its
+latest possible date (27 Aug 1658) predates the whole window this brief was briefed to search.
+
+**Canvas 220-367 (item 2's ~147 remaining canvases) was therefore spot-sampled, not walked canvas-by-canvas,** to
+conserve the cap once the date-scope argument above was established: canvas 222-229 read in full (plain Le Tellier
+administrative correspondence, garrisons and munitions, no cipher), then single-canvas spot checks at 240, 260, 280,
+300, 320, 340, 360, 365, 367 (9 samples spanning the rest of the volume) — folio 121, 131, blank, dense plain prose,
+blank with a July dateline, blank with a Nov 165[7] dateline, folio ~17x plain French, folio 182 blank (matching the
+catalogue's stated end of item 2), and canvas 367 blank (the volume's last canvas). No cipher and no numeral groups
+in any of the 9 samples. This is a **sample, not an exhaustive walk** of 230-364 — a stray misfiled or misdated leaf
+inside item 2 cannot be fully ruled out by 9 samples over ~135 unread canvases — but it is consistent with the
+catalogue's own "no cipher" description of item 2 and gives no reason to expect a further 1659-61 cipher letter in
+this volume beyond what canvas 8-173 already documents (folio 1-3, folio 9, the unnumbered full-page 1653 letter at
+canvas 32, folio 67-68, folio 86-88).
+
+**Status stays `open`.** No decoding attempted this pass. No print or phrase search run (nothing new read as
+plaintext). No novelty class assigned — canvas 168-173's novelty is AUDIT.md's, unchanged. Grade of every cipher_extent
+call in `walk_160_367.tsv`: M (single-worker read at 600px, no subagent cross-check, no reconciliation against native
+resolution).
+
+**Follow-up, not attempted here (stop when the brief is met):** if a later worker wants to close the "no cipher in
+item 2" question more firmly than a 9-canvas sample, the remaining ~135 canvases of 230-364 are the next walk —
+cheap at 600px, low expected yield given the catalogue and the date argument above.
+
+### Requests this pass
+
+gallica.bnf.fr: 79 (160-229 sequential, plus the 9 spot-check canvases 240-367), all `full/600,/0/default.jpg`, all
+≥1.8 s apart, descriptive User-Agent (`cipher-lab research script (contact via repository)`). All 200 on first or
+second try; one transient `curl: (35) Recv failure` on the automatic retry within the fetch loop resolved itself
+(same URL, no host-level block). No subagents, no other hosts. Well under $6 cap.

@@ -1,0 +1,21 @@
+canvas	folio	date	sender_recipient	cipher_extent	cipher_kind	decipherment	note
+160	82	-	Brienne/Servien	none	none	n	plain French, traité de paix avec Espagne, mariage de l'Infante, M. de Grammont
+161	-	3e 9bre 1659	Brienne/Servien	none	none	n	dateline/signature only ("A Thoulouse"), close of folio-82 letter
+162	83	-	-	none	none	n	blank recto
+163	-	-	-	none	none	n	blank verso, faint bleed-through only
+164	-	17e 9bre 1659	Brienne/Servien	none	none	n	full-page plain French; traité paix/mariage confirmed by M. de Savoie's courier, Prince de Parme
+165	-	-	-	none	none	n	blank verso, faint illegible bleed-through
+166	-	-	-	none	none	n	mostly blank, faint offset text only
+167	-	-	-	none	none	n	blank verso, no visible writing
+168	86	21 9bre 1659 (per f.87 heading)	Brienne/Servien	dense	numeral-only	see f.87	ALREADY KNOWN: opening of folio 86 cipher block, continues to canvas 169; reconciled in ciphertext_f86.tsv (24 Sept 2026 pass), see NOTES.md "Folio 86 cipher and folio 87 decipherment"
+169	86 (cont.)	-	-	dense (tail)	numeral-only	see f.87	ALREADY KNOWN: closes folio 86 cipher block, then clear French "je ne croy pas..."; ciphertext_f86.tsv
+170	87	21 9bre 1659	-	none (clear)	n/a	IS the decipherment	ALREADY KNOWN: heading "Dechiffré de la lettre de M.r le Comte de Brienne du 21 9.e 1659"; dechiffre_f87*.txt, key source for key_1659
+171	-	-	-	none	none	n	blank verso, faint bleed-through
+172	88	-	Brienne/Servien	dense	numeral-only	n	ALREADY KNOWN: folio 88 cipher block, own separate letter; ciphertext_f88.tsv
+173	88 (cont.)	21e 9bre 1659	Brienne/Servien	dense (tail)	numeral-only	n	ALREADY KNOWN: continuation and close, signed Brienne; ciphertext_f88.tsv
+174-218	-	Nov-Dec 1659 (and one Dec 1661 dateline noted around canvas ~205)	Brienne/Servien	none	none	n	plain French throughout, not individually re-transcribed at folio/date level this pass (see caveat below); topics include Mme Royale, Archevêque d'Ambrun, Piedmont/Savoy court, Suisse cantons, ratifications of the Pyrenees peace and royal marriage, M. de Guénégaud; ordinary recto/verso/blank-docket pattern continues; no cipher, no numeral groups, seen on any canvas viewed in this span (all 45 canvases fetched and read at 600px)
+219	111	-	N/A (item divider)	none	none	n	title leaf: "Lettres Originales de M.r le Tellier a M.r Servien" -- START OF ITEM 2 (catalogue: fol.111-182, 22 Mar 1652-27 Aug 1658, no cipher noted in catalogue description)
+220	-	-	-	none	none	n	blank/faint offset of the title leaf
+221	112	22 mars 1652	Le Tellier/Servien	none	none	n	first Le Tellier letter, "Lyon ce 22 mars 1652", garrison/pain de munition business -- confirms item-2 date range starts 1652, well before this brief's 1659-61 scope
+222-229	-	-	Le Tellier/Servien	none	none	n	plain French Le Tellier administrative correspondence continues (garrisons, Piedmont places, munitions); no cipher on any canvas viewed
+230-367	spot-sampled, not walked canvas-by-canvas	-	Le Tellier/Servien (item 2)	none	none	n	SEE NOTES.md for rationale: item 2 (folio 111-182, dated 1652-1658 per catalogue) falls entirely outside this brief's 1659-61 scope, since item 1 (the only ciphered correspondent, Brienne, ending at folio 110/canvas ~210) already covers 1653-1661. Spot-checked 9 canvases across the remaining range at 600px, ~1.8s apart: 240 (folio 121, plain French, mentions "Comte de Brienne", no cipher), 260 (folio 131, plain French, no cipher), 280 (blank), 300 (plain French, dense prose, no cipher), 320 (blank, dateline "19 juillet"), 340 (blank, dateline "...9bre 165[7]"), 360 (folio faint ~17x, plain French, no cipher), 365 (folio 182, blank -- matches catalogue's stated end of item 2), 367 (blank, last canvas of the 367-canvas volume). No cipher, no numeral groups, found in any of the 9 samples; all consistent with the catalogue's "no cipher note" for item 2 and with the volume ending at its catalogued folio 182.
