@@ -153,3 +153,38 @@ of unresolved nomenclature codes left in the decipherment ("— S —", "— o �
 published tables above or a nomenclature list, if one turns up; (4) do the "cross-check the plaintext... against
 Tomokiyo's two published Mayenne-de-Diou cipher tables" step this row's earlier note called for, once a real
 ciphertext transcription exists to check.
+
+### f.116r fetched -- correction: no ciphertext in this item (24 Sept 2026)
+
+LANE G2 worker P (Sonnet, cap $4). Retried the single URL the brief named,
+`https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f241/full/2000,/0/default.jpg`: 200 on the first try this
+time (not committed; scratchpad only, folder already near cap). Read by eye (not cropped/OCR'd, since it settles
+a yes/no question, not a transcription one).
+
+**f.116r is not the ciphertext.** It is a title/header leaf in the same clear secretary hand as 116v-119r,
+reading (diplomatic): "Lettre du sieur de Diou à Monsieur le duc de Maienne, lieutenant general de la couronne
+et estat de France, escripte en chiffre, lequel signifie tout ce qui s'ensuit." [= "...written in cipher, which
+signifies all that follows"], underlined, then "Monseigneur." and the letter's opening paragraph in plain French
+beginning "Je vous ai assez amplement escript ce qui s'est passé icy par mon secrettaire que je vous ay envoié
+qui vous aura informé de toutes choses, et par mes lettres des 17 et 23 Mars ce qui est intervenu depuis son
+partement..." -- continuous prose, no cipher symbols, numerals or nomenclature figures anywhere on the leaf.
+
+This corrects the "almost certainly the actual chiffre text" guess above: the heading's own wording is a period
+archival note describing the letter as *originally* sent in cipher, introducing the decipherment that follows
+(116r's own body text through 119r) -- not a second, raw-cipher copy. **No ciphertext for this item has been
+located on any of the eight canvases examined (f241-f248, i.e. ff.116r-119v)**; the finding aid's phrase
+"escripte en chiffre. Déchiffrement de cette lettre" describes one continuous decipherment text, not two
+physical parts. Brief step 2 (crops, one blind Sonnet pass, passA.tsv) does not apply -- there is nothing
+enciphered to transcribe. The unresolved nomenclature codes noted above ("— S —" etc.) inside the decipherment
+remain the only cipher-like material in this item; they are isolated marks in an otherwise plaintext document,
+not a continuous ciphertext, and a solver pass against them would need the two published Mayenne-de-Diou tables
+(`key_mayenne_*.tsv` above) rather than a fresh transcription pass.
+
+Practical effect: this target likely does not carry an unsolved ciphertext of its own (status stays `partial`
+pending someone re-reading the finding aid / catalogue record directly, in case "chiffre" and "déchiffrement"
+describe two separately-shelved companion items rather than one leaf range); the interesting open question is
+the handful of unresolved nomenclature codes within the period decipherment, and whether fr.2751 elsewhere in
+the volume (outside ff.116-120) holds a raw cipher letter this item's decipherment corresponds to -- not
+checked this pass.
+
+Requests: gallica.bnf.fr 1 (f241, 200 first try). No other host.
