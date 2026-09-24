@@ -506,3 +506,127 @@ p4	L12	8	727	leurs?	new reading, not in key.tsv; low confidence
 p4	L12	9	692	ait?	new reading, not in key.tsv; low confidence
 p4	L12	10	301	aux	key.tsv has 301=au (M weak); 108(B) shows 'avec'/'aux'-like readings at every occurrence this letter (p1_L06/4, p3_L02/10, p4_L12/10) -- consistently different from the key's single weak sibling source, worth a dedicated re-check
 p4	L12	11	330	contraire?	new reading, not in key.tsv; low-moderate confidence
+p5	L01	1	744	fait	agrees with key.tsv
+p5	L01	2	713	en	agrees with key.tsv
+p5	L01	3	832	vis	agrees with key.tsv (vi, close reading)
+p5	L01	4	935	sa?	new reading, not in key.tsv; low confidence
+p5	L01	5	38	ger?	agrees with earlier tentative readings for the same figure (p2/p3)
+p5	L01	6	98	com?	new reading, not in key.tsv; low confidence
+p5	L01	7	1173	rien?	new reading, not in key.tsv; low-moderate confidence
+p5	L01	8	1068	ils	agrees with key.tsv
+p5	L01	9	579	ete	agrees with key.tsv (etc, close reading)
+p5	L01	10	771	peu	agrees with key.tsv (peut, close reading)
+p5	L02	1	1113	pro	agrees with key.tsv/fills.tsv (R16 fill 'pro', confirmed again)
+p5	L02	2	165	bas	agrees with earlier tentative reading (p4_L06/8) for the same figure
+p5	L02	3	36	ble	agrees with key.tsv
+p5	L02	4	6	que	agrees with key.tsv
+p5	L02	5	474	mene?	new reading, not in key.tsv; low confidence
+p5	L02	6	713	en	agrees with key.tsv
+p5	L02	7	486	us?	key.tsv has 486=nos; this and a later occurrence (L12/10) both read closer to 'us' -- possible real disagreement, flagged for review
+p5	L02	8	490	ant?	new reading, not in key.tsv; low confidence
+p5	L02	9	10	de	agrees with key.tsv
+p5	L02	10	890	la	agrees with key.tsv
+p5	L02	11	830	plus	agrees with key.tsv
+p5	L03	1	683	grande	agrees with key.tsv/fills.tsv (R16 fill 'grande', confirmed)
+p5	L03	2	1028	ce?	new reading, not in key.tsv; agrees with p5_L09/8 tentative reading for the same figure
+p5	L03	3	381	le	agrees with key.tsv
+p5	L03	4	480	ri	agrees with key.tsv
+p5	L03	5	444	te	agrees with key.tsv
+p5	L03	6	947	les	agrees with key.tsv
+p5	L03	7	267	yache	agrees with key.tsv (yachts)
+p5	L03	8	997	que	agrees with key.tsv
+p5	L03	9	32	vous	agrees with key.tsv
+p5	L03	10	850	pour	agrees with key.tsv
+p5	L04	1	480	ri	agrees with key.tsv
+p5	L04	2	460	es	agrees with key.tsv
+p5	L04	3	707	des?	new reading, not in key.tsv; agrees with p5_L12/6 tentative reading for the same figure
+p5	L04	4	1193	ti	agrees with key.tsv (deferred, as elsewhere on this letter)
+p5	L04	5	941	ne	agrees with key.tsv
+p5	L04	6	626	r	agrees with key.tsv
+p5	L04	7	202	a	agrees with key.tsv
+p5	L04	8	1032	cette	agrees with key.tsv/fills.tsv (R16 fill 'cette', confirmed again)
+p5	L04	9	831	expedi	agrees with key.tsv (expedi|expedition conflict; short form again, as p4_L01/6)
+p5	L04	10	868	tion	agrees with key.tsv
+p5	L05	1	1199	puis	agrees with p3_L04/4 tentative reading for the same figure (there read 'pris', close)
+p5	L05	2	389	sent?	new reading, not in key.tsv; low confidence
+p5	L05	3	642	av?	agrees with p4_L06/2 tentative reading for the same figure
+p5	L05	4	480	ri	agrees with key.tsv
+p5	L05	5	816	ver	agrees with key.tsv
+p5	L05	6	169	dans	agrees with the now-established majority reading for this figure (p3_L07/5)
+p5	L05	7	116	?	illegible, unkeyed in key.tsv
+p5	L05	8	518	?	illegible, unkeyed in key.tsv
+p5	L05	9	1175	trois?	new reading, not in key.tsv; low-moderate confidence, fits 'avant trois semaines'
+p5	L05	10	1181	se	agrees with key.tsv
+p5	L05	11	544	main	agrees with key.tsv/fills.tsv (R16 fill 'main', confirmed clearly: se-main-es = semaines)
+p5	L05	12	460	es	agrees with key.tsv; idx10-12 read 'semaines' (weeks), confirms R16's 'avant trois semaines' rendering
+p5	L06	1	266	ou	agrees with key.tsv (confirmed again)
+p5	L06	2	878	une	agrees with key.tsv
+p5	L06	3	680	moi	agrees with key.tsv
+p5	L06	4	1174	?	illegible, unkeyed in key.tsv
+p5	L06	5	1107	?	illegible, unkeyed in key.tsv
+p5	L06	6	12	lors	agrees with key.tsv
+p5	L06	7	642	av	agrees with p5_L05/3 tentative reading for the same figure
+p5	L06	8	767	ne?	new reading, not in key.tsv; low confidence
+p5	L06	9	434	l	agrees with key.tsv
+p5	L06	10	608	d	agrees with key.tsv
+p5	L07	1	818	qui	agrees with key.tsv
+p5	L07	2	78	dit?	new reading, not in key.tsv; low confidence
+p5	L07	3	551	ou?	new reading, not in key.tsv; low confidence
+p5	L07	4	227	comma?	new reading, not in key.tsv; low confidence
+p5	L07	5	525	ce	agrees with key.tsv
+p5	L07	6	1151	de	agrees with key.tsv
+p5	L07	7	1129	ta	agrees with key.tsv/fills.tsv (R16 fill 'ta', confirmed a third time)
+p5	L07	8	656	ch	agrees with key.tsv (detachement context, cf. fills.tsv note for 733)
+p5	L07	9	733	ement	agrees with key.tsv/fills.tsv (R16 fill 'ement', confirmed; de-ta-ch-ement = detachement)
+p5	L07	10	301	au	agrees with key.tsv (M weak) -- this occurrence DOES match 'au', unlike the 'avec'/'aux'-looking occurrences elsewhere on this letter
+p5	L08	1	387	roit?	new reading, not in key.tsv; low confidence; third distinct tentative reading for this figure this pass (cf. L09/10 'doit?') -- unreliable, needs re-check
+p5	L08	2	744	fait	agrees with key.tsv
+p5	L08	3	628	sont	agrees with key.tsv (eighth occurrence)
+p5	L08	4	103	co?	new reading, not in key.tsv; low confidence
+p5	L08	5	4	wilm	agrees with key.tsv
+p5	L08	6	476	p?	agrees with p4_L02/11 tentative reading for the same figure
+p5	L08	7	363	hommes?	fills.tsv has R16 fill 363=hommes; this occurrence's context is unclear, not clearly confirming or denying
+p5	L08	8	1181	se	agrees with key.tsv
+p5	L08	9	482	se?	new reading, not in key.tsv; low confidence, same gloss as previous token but a different figure
+p5	L08	10	387	cet?	same figure as idx1 this line, different tentative gloss -- inconsistent, flagged
+p5	L08	11	1103	pro?	new reading, not in key.tsv; disagrees with this worker's own earlier tentative 'huit' at p2_L07/9 for the same figure -- unreliable, flagged for re-check
+p5	L09	1	165	bas	agrees with the reading established above for this figure
+p5	L09	2	36	ble	agrees with key.tsv
+p5	L09	3	620	ment	agrees with key.tsv
+p5	L09	4	626	r	agrees with key.tsv
+p5	L09	5	49	ten	key.tsv has 49=ten; this occurrence unclear, deferred to key
+p5	L09	6	324	?	illegible, unkeyed in key.tsv (repeat of p4_L10/9, also illegible there)
+p5	L09	7	884	que	agrees with key.tsv
+p5	L09	8	1028	ce	agrees with p5_L03/2 tentative reading for the same figure
+p5	L09	9	1181	se	agrees with key.tsv
+p5	L09	10	387	doit?	third distinct tentative reading for this figure this pass -- unreliable, flagged
+p5	L10	1	145	par	agrees with key.tsv/fills.tsv (R16 fill 'par', confirmed again)
+p5	L10	2	570	consequent?	new reading, not in key.tsv; low-moderate confidence
+p5	L10	3	293	expose?	new reading, not in key.tsv; low confidence
+p5	L10	4	626	r	agrees with key.tsv
+p5	L10	5	151	sans	agrees with earlier tentative readings for the same figure
+p5	L10	6	683	grand	agrees with key.tsv/fills.tsv (R16 fill 'grande', confirmed again)
+p5	L10	7	162	aprouver?	new reading, not in key.tsv; low confidence
+p5	L10	8	1151	de	agrees with key.tsv
+p5	L10	9	110	succes?	new reading, not in key.tsv; fills a previously-illegible gap from p1_L08/5 for the same figure -- low-moderate confidence
+p5	L10	10	878	une	agrees with key.tsv
+p5	L11	1	969	di?	new reading, not in key.tsv; low confidence
+p5	L11	2	832	vis	agrees with key.tsv
+p5	L11	3	975	fions?	new reading, not in key.tsv; low confidence
+p5	L11	4	10	de	agrees with key.tsv
+p5	L11	5	990	votre?	new reading, not in key.tsv; low-moderate confidence
+p5	L11	6	665	entiere?	new reading, not in key.tsv; low confidence
+p5	L11	7	202	a	agrees with key.tsv
+p5	L11	8	878	une	agrees with key.tsv
+p5	L11	9	1181	se	agrees with key.tsv
+p5	L11	10	799	fra?	new reading, not in key.tsv; low confidence, possibly fregate context
+p5	L12	1	355	vai?	key.tsv has 355=ras; this occurrence looked different, possibly a misreading -- low confidence, flagged
+p5	L12	2	868	tions	agrees with key.tsv (tion, plural here)
+p5	L12	3	1060	qui?	new reading, not in key.tsv; low confidence
+p5	L12	4	479	pourroit?	new reading, not in key.tsv; low-moderate confidence
+p5	L12	5	538	avoir?	new reading, not in key.tsv; low confidence
+p5	L12	6	707	des	agrees with p5_L04/3 tentative reading for the same figure
+p5	L12	7	112	suites?	new reading, not in key.tsv; low-moderate confidence
+p5	L12	8	1066	fa?	new reading, not in key.tsv; low confidence
+p5	L12	9	1010	ches?	agrees with p3_L09/1 tentative reading ('che?') for the same figure
+p5	L12	10	486	us?	key.tsv has 486=nos; second occurrence reading closer to 'us' (cf. L02/7) -- possible real disagreement, flagged for review
