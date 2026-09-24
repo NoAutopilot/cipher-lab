@@ -1,0 +1,9 @@
+query	variant	status	total_items	volume_id	title	author	year	snippet	phrase_in_snippet	logged_url
+"Port St. Mary" 1729 Keene Marchmont	base	200	0							https://www.googleapis.com/books/v1/volumes?q=%22Port+St.+Mary%22+1729+Keene+Marchmont&maxResults=20&key=REDACTED&country=US
+"Port Sainte-Marie" 1729 "Keene" espion OR intelligence	base	200	0							https://www.googleapis.com/books/v1/volumes?q=%22Port+Sainte-Marie%22+1729+%22Keene%22+espion+OR+intelligence&maxResults=20&key=REDACTED&country=US
+"Monsieur de Patigno m'en a"	base	200	0							https://www.googleapis.com/books/v1/volumes?q=%22Monsieur+de+Patigno+m%27en+a%22&maxResults=20&key=REDACTED&country=US
+"mandez-moi donc quelque ordre"	base	200	0							https://www.googleapis.com/books/v1/volumes?q=%22mandez-moi+donc+quelque+ordre%22&maxResults=20&key=REDACTED&country=US
+"je serai inutile dans l'ignorance"	base	200	0							https://www.googleapis.com/books/v1/volumes?q=%22je+serai+inutile+dans+l%27ignorance%22&maxResults=20&key=REDACTED&country=US
+"pour le mieux à l'accommodement"	base	200	0							https://www.googleapis.com/books/v1/volumes?q=%22pour+le+mieux+%C3%A0+l%27accommodement%22&maxResults=20&key=REDACTED&country=US
+"Blathwayt" Huntington Storrs "Spanish Resurgence" Ripperda	base	200	0							https://www.googleapis.com/books/v1/volumes?q=%22Blathwayt%22+Huntington+Storrs+%22Spanish+Resurgence%22+Ripperda&maxResults=20&key=REDACTED&country=US
+HMC Polwarth vol. V "Port St. Mary"	base	200	0							https://www.googleapis.com/books/v1/volumes?q=HMC+Polwarth+vol.+V+%22Port+St.+Mary%22&maxResults=20&key=REDACTED&country=US
