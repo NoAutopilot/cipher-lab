@@ -1,0 +1,141 @@
+# Reconciled physical rows, settled on the native page images (images/folio250_canvas253.jpg, images/folio262_canvas265.jpg) with passA/passB as the digit check.
+# leaf	row	layer	text	conf	note
+# layer: main = the letter's own line (clear words and numeral groups, one hand, one ink); gloss = interlinear decipherment written ABOVE that row's groups, smaller cursive second hand, ended by a trailing flourish.
+# In 'text', a token ending in ? is conf M; =N forces a numeral to clear (dates); alternatives as 192|142 (first is preferred). Clear words are kept as written.
+f253L	R00	main	[B]oulogne ce 26e mars =1696	M	faint dateline top left, partly lost; year from docket f.248v
+f253L	R01	gloss	Milord Myddleton et Jay eu une	H	
+f253L	R01	main	i'ay veu ce matin 722 143? 185 38 151 34 224	H	143: last digit overwritten (passA 148?)
+f253L	R02	gloss	longue conference avec luy.	H	
+f253L	R02	main	198 17 168 18 119 50 301 28 277 290 238 10 301 14 200.	H	
+f253L	R03	gloss	plus empressé que de coustume	H	
+f253L	R03	main	il m'a paru beaucoup 249 18 15 24 267 30 278 259	H	
+f253L	R04	gloss	pour l'entreprise	H	
+f253L	R04	main	133 119 35 292 206 251 13 145? 25 268 278. il m'a	H	145|146
+f253L	R05	main	dit seulement qu'il croyoit, et ie trouve que c'est avec	H	
+f253L	R06	gloss	l'affaire est a present	H	
+f253L	R06	main	assez de raison, que 195 20 161 142 10 24 267 277?	H	last group blotted at page edge
+f253L	R07	gloss	presque impraticable sur la Coste de Kent	H	
+f253L	R07	main	50 32 25 267 30 259 11 48 24 266 290 116 12 196. 281 29	H	281 29 carry no gloss
+f253L	R08	gloss	forces que le	H	written above 155 29 117 30 only; 195..32 before 'a cause des' carry no gloss
+f253L	R08	main	195 119 30 289 133 42 18 50 32. a cause des 155 29 117 30	H	
+f253L	R09	gloss	Prince d'Orange	H	
+f253L	R09	main	259 725 a mises de ce costé la. et qu'il seroit a	H	725 = one group (7xx names)
+f253L	R10	gloss	?enter le desbarquement dans les	M	first letter unclear (t|j): 'tenter'
+f253L	R10	main	present necessaire de 289 17 289 28 196 133 107 28 259	H	
+f253L	R11	gloss	Province d'York ou sont presque tous	H	
+f253L	R11	main	211 137 195, 25 269 302 17 117 16 38 52 29 42 237 282	H	
+f253L	R12	gloss	les haras d'Angleterre	H	
+f253L	R12	main	24 267 30 259 291 35 30 196 30 175 266 30 16 105 et ou	H	
+f253L	R13	gloss	on trouveroit les chevaux necessaires	H	
+f253L	R13	main	par consequent 238 32 269 34 301 275 33 196 30 14 176	H	
+f253L	R14	gloss	pour l'armée ou bien dans une des	H	
+f253L	R14	main	300 35 37 224 117 30 277 44 267 30 251 46 104 18 237 112	H	
+f253L	R15	gloss	Provinces de l'Ouest	H	
+f253L	R15	main	137 34 224 133 30 24 269 302 17 117 30 133 13 237 192?.	H	192|142 last group
+f253L	R16	gloss	y en a abondance ensorte que	H	
+f253L	R16	main	parceque le pays 38 142 10 113 132 50 33 133 259 13 104	H	
+f253L	R17	gloss	l'armée y subsisteroit aisement	H	
+f253L	R17	main	18 38 281 12 279 30 289 275 32 10 11 278 211, ou mesme	H	
+f253L	R18	gloss	faire la descente dans ces deux lieux la a la fois	H	
+f253L	R18	main	de 161 195 133 30 117 17 33 137 117 30 16 150 197 150 10 195	H	
+f253R	R01	gloss	de faire embarquer a Brest	H	written above 133..10, after 'et pour cela'
+f253R	R01	main	155 44 30. et pour cela 133 161 18 48 107 29 259 28 10	H	155 44 30 continue f253L R18 and carry no gloss
+f253R	R02	gloss	Les Troupes destinées pour l'Ouest et a	H	
+f253R	R02	main	12 29 142 196 30 294 30 133 30 290 224 18 30 251 46 237 142	H	last group at page edge
+f253R	R03	gloss	Calais celles destinées pour York	H	
+f253R	R03	main	143 10 116 195 11 30 117 13 196 30 133 30 290? 224 18 30 251	H	290|190: ink blot on first digit; same run '133 30 290 224 18 30 251' as R02
+f253R	R04	gloss	son projet	H	above 280..32
+f253R	R04	main	38 52 29 42. voila Monseigneur 280 17 24 269 186 32.	H	
+f253R	R05	main	il peut y avoir quelque chose de bon; mais ie ne	H	
+f253R	R06	main	say si l'execution n'en seroit pas plus difficile que	H	
+f253R	R07	main	du premier.	H	
+f253R	R08	gloss	Il compte sur la fidelité de plusieurs	H	
+f253R	R08	main	d'ailleurs 191 119 15 24 289 281 29 195 154 133 197 289 133	H	
+f253R	R09	gloss	personnes dans ce pays la	H	
+f253R	R09	main	249 44 18 35 28 30 245 29 28 224 30 137 117 244 38 30 195	H	
+f253R	R10	main	et ie veux bien le croire mais ie iuge par tout	H	
+f253R	R11	main	ce que i'entends dire et a luy et aux autres qu'ils n'y	H	
+f253R	R12	gloss	d'intelligence ny mesme de	H	
+f253R	R12	main	ont guere 134 17 289 13 197 165 50 117 225 221 133 125	H	
+f253R	R13	gloss	Correspondance car ils n'en recoivent aucune nouvelle	H	
+f253R	R13	main	122 191 30 224 50 267 119 11 301 228 10 35 120 224 232	H	
+f253R	R14	gloss	ny par la Hollande ny d'ailleurs	H	
+f253R	R14	main	225 244 28 195 183 225 132 11 13 196 35 29 30. et tout ce	H	
+f253R	R15	gloss	du chevalier	H	
+f253R	R15	main	qu'ils en apprennent leur vient 136 14 176 300 197 18? 29?	H	last two groups squeezed at page edge, '18 29' or '1829'
+f253R	R16	gloss	Giraudin Irlandois estably	M	'Giraudin' at row start above 166..17; 'Irlandois estably' above 44..288
+f253R	R16	main	166 266 28 134 17 qui est un 44 29 195 17 135 11 30 18 288	H	
+f253R	R17	gloss	a Dunkerque	H	
+f253R	R17	main	12 197 10 136 17 259 28 259.	H	
+f253R	R18	main	Je suis avec un proffond respect	H	
+f253R	R19	main	Monseigneur Vostre tres humble et tres obeissant serviteur	H	
+f253R	R20	main	Vergier	H	signature
+f265L	R01	main	cet advis d'ennuy et d'inquietude de ma part	H	letter in pale ink throughout f265; glosses in dark ink
+f265L	R02	main	plustost que de prudence et de bon conseil. —	H	
+f265L	R03	main	cependant cela me frapoit depuis long temps et	H	
+f265L	R04	main	surtout depuis qu'on sait icy qu'on arme a	H	
+f265L	R05	main	Dunkerque ou ie pourrois estre utile pendant	M	'utile' written over an erased word
+f265L	R06	main	que l'on me voit tres inutile icy. c'est pourquoy	H	
+f265L	R07	main	ie n'ay pas cru devoir essayer d'y rester davantage.	H	
+f265L	R08	gloss	a mon despart un tour	M	'un|ou' tour
+f265L	R08	main	i'ay seulement donné 10 208 17 133 244 28 32 34 50	H	
+f265L	R09	gloss	qui n'a pas despleu au Roy d'Angleterre	H	
+f265L	R09	main	291 34 29 260 223 250 133 25 199 10 34 720 et que ie	H	720 = one group (7xx names)
+f265L	R10	gloss	Je luy ay	H	above 186..38
+f265L	R10	main	croy que vous ne desaprouverés pas. 186 200 10 38 —	H	
+f265L	R11	gloss	fait entendre que me voyant icy inutile	H	
+f265L	R11	main	152 10 33 18 50 289 17 16 267 259 206? 303 38 10 228 44 118.	H	206|200 (passB 20 206: read as one group)
+f265L	R12	gloss	pour son service	H	
+f265L	R12	main	11 17 34 290 196 251 280 17 278 29 302 117 i'avois demmendé	H	
+f265L	R13	gloss	a M vostre Pere la	H	
+f265L	R13	main	il y a quelque temps 10 210 300 245 267 245 29 207 30	H	300 retouched in dark ink
+f265L	R14	gloss	permission de m'en retourner a Dunkerque	H	
+f265L	R14	main	279 238 133 206 50 267 291 35 29 224 28 10 136 50 259 28	H	
+f265L	R15	gloss	pour y ayder a avancer l'armement	H	
+f265L	R15	main	259 251 38 10 38 133 28 10 {16} 601 10 300 17 117 29 195 29 206	H	{16} struck through; 601 checked on image, pale letter ink, one group
+f265L	R16	main	211 et qu'il m'a repondu que si ie me croyois —	H	
+f265L	R17	gloss	inutile a Boulogne Je pourrois	H	
+f265L	R17	main	11 17 35 290 196 10 110 35 198 21 224 186 247 35 303 11 30	H	
+f265L	R18	gloss	Le Roy	H	above 196..105
+f265L	R18	main	m'en retourner a Dunkerque pourveuque 196 275 16 105	H	
+f265L	R19	gloss	d'Angleterre approuvast mon despart que comme	H	
+f265L	R19	main	10 24 269 34 300 30 33 208 17 133 244 29 32. 259 221 —	H	
+f265L	R20	gloss	Il m'avoit {faict l'honneur} ... me mettre sous	M	'faict l'honneur' struck by the glosser; 'me mettre sous' above 206..206
+f265L	R20	main	191 205 303 11 32 fait l'honneur de 206 8 610? 601 206	M	'610': a pale 6, a second 6 overwritten, then 10 in darker ink (66 10|6 10); 601 checked on image
+f265L	R21	gloss	ses ordres	H	
+f265L	R21	main	32 33 267 280 35 30 278 30 52 28 16 267 30 ie ne devois	H	
+f265L	R22	gloss	faire aucun mouvement sans son ordre exprés	H	
+f265L	R22	main	161 10 34 120 50 208 35 301 211 285 280 17 235 18 36 24	H	
+f265L	R23	gloss	Il m'a paru fort touché de cette honnesteté de	H	
+f265L	R23	main	267 30. 191 205 244 270 155 28 32 291 34 14 176 133	H	
+f265R	R01	gloss	M de Pontchartrain et de	M	'et|le' de
+f265R	R01	main	117 33 289 178 224 30 289 8 289 133 210 133 247 17 33	H	30 retouched in dark ink
+f265R	R02	gloss	mon	H	above 14..50
+f265R	R02	main	14 175 28 32 266 11 17 143 133 208 50 empressement	H	
+f265R	R03	gloss	Il est tres persuadé	H	
+f265R	R03	main	pour son service. car 191 142 298 245 28 281 10 133	H	
+f265R	R04	gloss	que l'armement de Dunkerque regarde	H	
+f265R	R04	main	259 195 28 206 211 133 136 17 259 28 250 267 29 133	H	
+f265R	R05	gloss	la descente et doit se joindre	H	
+f265R	R05	main	277 133 30 117 50 289 143 135 11 32 278 188 11 50 16 267	H	
+f265R	R06	gloss	a M	H	
+f265R	R06	main	10 210 de Chasteaurenaut. et il m'a dit qu'il —	H	
+f265R	R07	main	croyoit qu'effectivement ie serois plus utile a	H	
+f265R	R08	gloss	Je suis {parfaitement}	H	'parfaitement' struck by the glosser (it is clear text on the next row)
+f265R	R08	main	Dunkerque. d'ailleurs monseigneur 186 281 11 30	H	
+f265R	R09	gloss	avec Milord Myddleton et	H	
+f265R	R09	main	parfaitement 10 301 14 722 143 10 301 14 291 34 32	H	
+f265R	R10	gloss	avec tout ce qu'il y a icy d'Anglois un peu	H	
+f265R	R10	main	117 260 46 38 10 11 118 16 700 35 17 245 34 considerable	H	700 = one group (7xx names), checked on image
+f265R	R11	gloss	Eux en coterie journaliere	H	
+f265R	R11	main	{mot} estant avec 150 19? 17? 119 32 289 268 18 188 34 29 223	H	{mot} struck by the writer; '1917' written without a gap, read 19 17 (alt one group 1917)
+f265R	R12	gloss	de desbauche et de plaisir.	H	
+f265R	R12	main	197 18 267 133 8 133 107 34 14 176 143? 133 24 195 11 279 28.	H	143: 4 written over 2 in dark ink (alt 123)
+f265R	R13	gloss	en Milord Myddleton.	H	
+f265R	R13	main	Je n'ay rien remarqué 18 17 722 qui ne me confirme	H	
+f265R	R14	main	ce que i'ay eu l'honneur de vous en marquer en	H	
+f265R	R15	main	dernier lieu.	H	
+f265R	R16	main	Je suis avec un proffond respect	H	
+f265R	R17	main	Monseigneur	H	
+f265R	R18	main	Votre tres humble et tres obeissant serviteur	H	
+f265R	R19	main	Vergier	H	signature
