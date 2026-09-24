@@ -1,0 +1,555 @@
+line	col	A	B	flagged	crop
+p1_L01	1	=Monsieur	=pourriez	B	
+p1_L01	2	140	110		
+p1_L01	4	62	61		
+p1_L01	16	-	=la	B	
+p1_L01	20	2	8		
+p1_L01	21	78	71		
+p1_L01	25		=demeurant	AB	
+p1_L02	10		=deugues	AB	
+p1_L03	2	=at	=et	AB	
+p1_L03	15	31	81		
+p1_L03	22	21	26		
+p1_L04	3	=sceu	=deça	AB	
+p1_L04	6	=curgar	=songer	AB	
+p1_L04	7	=Jay	=jay		
+p1_L04	10	=Long	=long		
+p1_L04	13	=pourse	=porté	AB	
+p1_L04	14	=actendant	=attendant		
+p1_L04	19	=seg	80	AB	
+p1_L05	1	7	-	A	
+p1_L05	15	=a	=et		
+p1_L06	8	=tout	=soubz	AB	
+p1_L06	9	=effroya	=affeya	AB	
+p1_L06	11	=quils	=guils	AB	
+p1_L06	21	72	71		
+p1_L06	23	1	8		
+p1_L07	3	=at	=et	AB	
+p1_L07	4	=guaury	=guarny	AB	
+p1_L07	5	=bidy	=bien	AB	
+p1_L07	15	150	130		
+p1_L08	1	=Des	=car	B	
+p1_L08	22	21	22		
+p1_L09	2	3	5		
+p1_L09	13	150	130		
+p1_L09	14	=Sont	=vous		
+p1_L09	15	=tres	=ira		
+p1_L09	18	=trouves	=trouver	B	
+p1_L09	19	=de	=sy	B	
+p1_L10	17	29	24		
+p1_L10	20	-	=de	B	
+p1_L10	21	=Devant	=cela	B	
+p1_L10	24	=vostre	=mettray	B	
+p1_L11	1	=aultres	=autres	B	
+p1_L11	6	=sinuoge	=remets	AB	
+p1_L11	7	=Dauttant	=dautant		
+p1_L11	10	=feray	=seray		
+p1_L11	15	=pouiez	=pouant	B	
+p1_L11	21	30	10		
+p1_L12	6	53	83		
+p1_L12	22	125	121		
+p1_L12	23	135	138		
+p1_L13	1	31	37	B	
+p1_L13	17	=est	=et		
+p1_L13	20	=repandant	=repondant		
+p1_L13	22	=L	=l	AB	
+p1_L17	7	38	78		
+p1_L17	13	248	148		
+p1_L17	15	-	=d	B	
+p1_L17	17	=fait	=faict		
+p1_L18	14	=baillent	=veulent		
+p1_L18	17	=ny	=ou	B	
+p1_L18	18	=que	=guerre	B	
+p1_L19	14	41	=vi	AB	
+p1_L19	20	=sur	=de	AB	
+p1_L20	1	=a	=au	B	
+p1_L20	18	=vaincre	=remectre	AB	
+p1_L20	19	=Ce	=le		
+p1_L20	24	83	73		
+p1_L21	8	=august	=auguel	AB	
+p1_L21	9	=mettre	=mectre	B	
+p1_L22	5	=grandes	=grandeur	B	
+p1_L23	2	=Il	=il		
+p1_L23	3	=beult	=veult		
+p1_L23	6	=pourboiz	=prouvez	AB	
+p1_L23	7	=dirniers	=dermener	AB	
+p1_L24	1	6	=c	B	
+p1_L24	4	35	55		
+p1_L24	9	=ainsy	=aussy	B	
+p1_L24	11	214	114		
+p1_L24	20	54	34		
+p1_L25	9	64	60		
+p1_L26	5	85	75		
+p1_L26	12	=Vous	-		
+p1_L26	13	=pourez	=vous		
+p1_L26	14	=peust	=pouez		
+p1_L26	15	=estre	=penser	A	
+p1_L26	17	=ya	=y	A	
+p1_L27	19	-	=telle		
+p1_L27	20	=tellafosa	=sorte	AB	
+p1_L29	14	-	=voyant	B	
+p1_L29	15	-	=que		
+p1_L29	16	-	11		
+p1_L29	17	-	51		
+p1_L29	18	-	21		
+p1_L29	19	74	140		
+p1_L29	20	10	5		
+p1_L29	21	39	6		
+p1_L29	22	75	26		
+p1_L29	23	100	31		
+p1_L29	24	85	22		
+p1_L29	25	60	82		
+p1_L29	26	150	127		
+p1_L29	27	52	108		
+p1_L29	28	40	4		
+p1_L30	7	127	-		
+p1_L30	8	=Voyans	-		
+p1_L30	9	=que	-		
+p1_L30	10	12	-		
+p1_L30	11	51	-		
+p1_L30	12	21	-		
+p1_L30	13	140	-		
+p1_L30	14	5	-		
+p1_L30	15	6	-		
+p1_L30	16	26	-		
+p1_L30	17	31	-		
+p1_L30	18	22	-		
+p1_L30	19	82	-		
+p1_L30	21	101	-		
+p1_L30	22	4	-		
+p1_L31	4	32	34		
+p1_L31	12	-	=qu	B	
+p1_L31	13	=quesque	=egu	AB	
+p1_L31	19	85	88		
+p1_L32	1	15	18		
+p1_L33	7	=aussi	=devez	B	
+p1_L33	19	71	75		
+p1_L34	4	53	55		
+p1_L34	8	=by	=aussy	AB	
+p1_L34	9	=sy	=si	A	
+p1_L34	11	=bien	-		
+p1_L34	12	=assouvir	=scavoir		
+p1_L34	13	=scauoir	=dheure		
+p1_L34	15	=autre	=aultre	A	
+p1_L35	6	31	71		
+p1_L35	8	=dou	=dnt	AB	
+p1_L36	14	=qu	=quil	A	
+p1_L36	19	3	5		
+p1_L36	22	-	=dira	B	
+p1_L37	2	=L	=le	A	
+p1_L37	3	=mtra	=mesme	A	
+p1_L38	4	63	65		
+p1_L38	9	135	125		
+p1_L38	12	=some	=souuenance	AB	
+p1_L38	13	=ce	=de	B	
+p1_L38	14	=ptra	=prin	AB	
+p1_L40	19	-	=cela	B	
+p2_L02	12	84	74		
+p2_L02	19	55	65		
+p2_L03	2	38	36		
+p2_L03	5	111	211		
+p2_L03	21	=est	=et		
+p2_L04	17	=Et	=et		
+p2_L04	18	=fout	=font	AB	
+p2_L05	2	145	141		
+p2_L05	16	35	39		
+p2_L05	20	113	118		
+p2_L07	15	=satisfaction	-		
+p2_L07	19	80	85		
+p2_L08	4	81	91		
+p2_L08	8	=ait	=et	A	
+p2_L08	9	=quig	=guig	AB	
+p2_L08	20	331	333	AB	
+p2_L09	10	148	146		
+p2_L09	11	232	132		
+p2_L09	13	=que	-		
+p2_L09	14	=ils	=quils		
+p2_L09	15	=ayent	=ayant		
+p2_L09	20	5	6		
+p2_L11	1	=Et	-		
+p2_L11	2	=quant	=y aurait	B	
+p2_L11	4	=ceux	-		
+p2_L11	14	82	62		
+p2_L12	12	82	81		
+p2_L12	14	=vge	=tge	AB	
+p2_L13	1	65	5		
+p2_L13	2	26	42		
+p2_L13	3	30	82		
+p2_L13	4	81	114		
+p2_L13	5	36	18		
+p2_L13	6	21	39		
+p2_L13	7	81	85		
+p2_L13	8	1	127		
+p2_L13	9	71	89		
+p2_L13	10	84	10		
+p2_L13	11	150	5		
+p2_L13	12	127	79		
+p2_L13	13	148	84		
+p2_L13	14	=Il	120		
+p2_L13	15	=y	83		
+p2_L13	16	=auroit	3		
+p2_L13	17	19	35		
+p2_L13	18	40	140		
+p2_L13	19	73	125		
+p2_L14	1	9	-		
+p2_L14	2	42	-		
+p2_L14	3	82	-		
+p2_L14	4	114	-		
+p2_L14	5	18	-		
+p2_L14	6	39	-		
+p2_L14	7	85	-		
+p2_L14	8	127	-		
+p2_L14	9	89	-		
+p2_L14	10	10	-		
+p2_L14	11	5	-		
+p2_L14	12	79	-		
+p2_L14	13	84	-		
+p2_L14	14	120	-		
+p2_L14	15	83	-		
+p2_L14	16	3	-		
+p2_L14	17	35	311	B	
+p2_L14	18	140	=cela	B	
+p2_L14	19	125	=a		
+p2_L14	20	=mayo	=moy	A	
+p2_L14	21	=de	=admin	AB	
+p2_L15	1	311	-		
+p2_L15	2	=octa	-	A	
+p2_L15	3	=a	-		
+p2_L15	4	=moy	-		
+p2_L15	5	=advis	-		
+p2_L15	6	26	-		
+p2_L15	7	82	-		
+p2_L15	8	114	-		
+p2_L15	9	18	-		
+p2_L15	10	39	-		
+p2_L15	11	85	-		
+p2_L15	12	111	-		
+p2_L15	13	85	-		
+p2_L15	14	119	-		
+p2_L15	15	81	-		
+p2_L15	17	-	74	B	
+p2_L15	18	35	150	B	
+p2_L15	19	114	63	B	
+p2_L15	20	82	7	B	
+p2_L16	5	71	77		
+p2_L16	7	28	-		
+p2_L16	8	71	-		
+p2_L16	9	14	-		
+p2_L16	10	64	-		
+p2_L16	12	71	-		
+p2_L16	13	100	-		
+p2_L16	14	65	-		
+p2_L16	15	5	-		
+p2_L16	16	95	-		
+p2_L17	1	62	=45	B	
+p2_L17	2	72	64		
+p2_L17	3	17	50		
+p2_L17	4	37	90		
+p2_L17	7	-	65		
+p2_L17	8	-	122		
+p2_L17	9	-	14		
+p2_L17	10	-	64		
+p2_L17	11	-	104		
+p2_L17	12	-	4		
+p2_L17	13	-	125		
+p2_L17	14	-	135		
+p2_L17	19	=Et	=et		
+p2_L17	21	=un	-	A	
+p2_L18	8	115	111		
+p2_L18	9	81	61		
+p2_L18	10	=Que	=Gue	B	
+p2_L19	4	=Il	=Ji	B	
+p2_L19	6	37	57		
+p2_L19	7	85	126		
+p2_L19	8	63	65		
+p2_L20	3	245	-		
+p2_L20	4	200	-		
+p2_L20	5	65	-		
+p2_L20	6	142	-		
+p2_L20	7	125	241		
+p2_L20	8	137	300	B	
+p2_L20	9	=Respire	=especes	AB	
+p2_L20	10	60	=sont	AB	
+p2_L20	11	=survient	=envoyer	AB	
+p2_L20	12	=aussi	=avec	B	
+p2_L21	2	120	126		
+p2_L21	3	=sur	=entre	AB	
+p2_L21	4	=le	=fr	B	
+p2_L21	21	103	107		
+p2_L22	2	36	35		
+p2_L22	3	7	3		
+p2_L22	7	-	=y	B	
+p2_L22	8	-	=a	B	
+p2_L22	15	38	35		
+p2_L23	1	=dont	=douz	B	
+p2_L23	2	=mescripuez	=inscripuz	B	
+p2_L23	4	=Aray	=aray	AB	
+p2_L23	7	36	35		
+p2_L23	12	=Quant	-		
+p2_L23	13	=a	-		
+p2_L23	14	97	-		
+p2_L23	15	82	-		
+p2_L23	16	6	-		
+p2_L23	17	21	-		
+p2_L23	18	92	-		
+p2_L23	19	82	-		
+p2_L23	20	29	-		
+p2_L23	21	150	-		
+p2_L24	2	10	60		
+p2_L24	10	=a	-		
+p2_L24	11	=xxroy	=secroy	AB	
+p2_L24	12	=guc	=guils	AB	
+p2_L24	17	34	74		
+p2_L25	1	38	=quanta		
+p2_L25	2	51	97		
+p2_L25	4	116	-		
+p2_L25	5	15	-		
+p2_L25	6	81	-		
+p2_L25	7	27	-		
+p2_L25	8	75	-		
+p2_L25	9	98	-		
+p2_L25	10	81	-		
+p2_L25	11	124	-		
+p2_L25	12	64	-		
+p2_L25	13	104	-		
+p2_L25	14	114	-		
+p2_L25	15	111	6		
+p2_L25	16	83	21		
+p2_L25	17	36	92		
+p2_L25	18	24	82		
+p2_L25	19	30	29		
+p2_L25	20	280	150		
+p2_L26	1	=auoir	38		
+p2_L26	2	65	51		
+p2_L26	3	39	82		
+p2_L26	4	61	116		
+p2_L26	5	2	15		
+p2_L26	6	31	81		
+p2_L26	7	114	27		
+p2_L26	8	100	75		
+p2_L26	9	54	98		
+p2_L26	10	38	81		
+p2_L26	11	84	128		
+p2_L26	12	24	64		
+p2_L26	13	124	104		
+p2_L26	14	149	114		
+p2_L26	15	=Tres	111		
+p2_L26	16	60	83	A	
+p2_L26	17	=sinuoy	36	A	
+p2_L26	18	12	24		
+p2_L26	19	101	30		
+p2_L27	1	-	=avoir	B	
+p2_L27	2	-	85		
+p2_L27	3	-	39		
+p2_L27	4	-	61		
+p2_L27	5	-	8		
+p2_L27	6	-	31		
+p2_L27	7	-	114		
+p2_L27	8	26	100		
+p2_L27	9	6	34		
+p2_L27	10	104	38		
+p2_L27	12	-	24		
+p2_L27	13	14	124		
+p2_L27	14	64	149		
+p2_L27	15	30	=ce	B	
+p2_L27	16	=loqus	81	A	
+p2_L27	17	=treuve	21	A	
+p2_L27	18	=guil	21	A	
+p2_L27	19	1	32		
+p2_L27	20	84	150		
+p2_L28	1	83	26		
+p2_L28	2	3	6		
+p2_L28	3	33	104		
+p2_L28	5	-	14		
+p2_L28	6	-	64		
+p2_L28	7	-	30		
+p2_L28	8	-	80		
+p2_L28	9	-	22		
+p2_L28	10	-	17		
+p2_L28	11	147	37		
+p2_L28	12	85	83		
+p2_L28	13	5	63		
+p2_L28	14	111	39		
+p2_L28	15	46	148		
+p2_L28	16	12	=loqui	B	
+p2_L28	17	82	=suivant	B	
+p2_L28	18	22	=quil	B	
+p2_L28	19	102	1		
+p2_L28	20	117	84		
+p2_L29	1	=ma	-		
+p2_L29	2	=tout	-		
+p2_L29	3	=effroya	-	A	
+p2_L29	4	=tousiours	-		
+p2_L29	5	=semble	-	A	
+p2_L29	6	=auoir	-		
+p2_L29	7	65	-		
+p2_L29	8	21	83		
+p2_L29	9	71	3		
+p2_L29	10	96	33		
+p2_L29	11	101	84		
+p2_L29	12	81	147		
+p2_L29	13	81	85		
+p2_L29	14	72	5		
+p2_L29	15	32	111		
+p2_L29	16	37	=faisant	B	
+p2_L29	17	23	=tousiours	B	
+p2_L29	18	84	=semblant	B	
+p2_L29	19	145	=avoir	B	
+p2_L30	1	65	-		
+p2_L30	2	36	-		
+p2_L30	3	130	-		
+p2_L30	4	87	-		
+p2_L30	5	64	-		
+p2_L30	6	104	-		
+p2_L30	7	74	63		
+p2_L30	8	34	76		
+p2_L30	9	33	101		
+p2_L30	10	71	112		
+p2_L30	11	56	51		
+p2_L30	12	74	140		
+p2_L30	13	8	121		
+p2_L30	14	4	26		
+p2_L30	15	140	72		
+p2_L30	16	104	62		
+p2_L30	18	92	-		
+p2_L30	20	118	-		
+p2_L30	21	83	-		
+p2_L30	22	3	2		
+p2_L30	24	134	-		
+p2_L31	1	-	142		
+p2_L31	2	-	123		
+p2_L31	3	63	84		
+p2_L31	5	-	77		
+p2_L31	6	-	86		
+p2_L31	7	104	27		
+p2_L31	8	9	24		
+p2_L31	9	5	74		
+p2_L31	10	29	26		
+p2_L31	11	129	6		
+p2_L31	12	137	111		
+p2_L31	13	=Estamens	36	A	
+p2_L31	14	=estans	82	A	
+p2_L31	15	=ce	27	A	
+p2_L32	1	142	-		
+p2_L32	2	123	-		
+p2_L32	3	84	-		
+p2_L32	4	34	-		
+p2_L32	5	77	-		
+p2_L32	6	86	-		
+p2_L32	7	27	-		
+p2_L32	8	31	-		
+p2_L32	9	111	21		
+p2_L32	10	24	30		
+p2_L32	11	74	101		
+p2_L32	12	26	5		
+p2_L32	13	6	82		
+p2_L32	14	111	81		
+p2_L32	15	36	29		
+p2_L32	16	82	148		
+p2_L32	17	27	137		
+p2_L33	1	88	-		
+p2_L33	2	71	-		
+p2_L33	3	21	-		
+p2_L33	4	29	-		
+p2_L33	5	148	-		
+p2_L33	6	187	-		
+p2_L33	9	=que	=quil	AB	
+p2_L33	11	=trouvez	=trouverez	B	
+p2_L36	1	-	=bien	B	
+p2_L36	2	-	78		
+p2_L36	3	-	81		
+p2_L36	4	-	28		
+p2_L36	5	-	100		
+p2_L36	6	-	9		
+p2_L36	7	-	118		
+p2_L36	8	-	120		
+p2_L36	9	-	82		
+p2_L36	10	-	29		
+p2_L36	11	-	138		
+p2_L36	12	-	127		
+p2_L36	13	-	12		
+p2_L36	14	-	51		
+p2_L36	15	-	21		
+p2_L36	16	-	77		
+p2_L36	17	-	84		
+p2_L36	18	-	111		
+p2_L36	19	-	54		
+p2_L36	20	[blank]	124		
+p3_L01	2	=pourrons	=pouvons	B	
+p3_L01	3	75	78		
+p3_L01	19	70	40		
+p3_L02	2	=meltray	=mettray	AB	
+p3_L02	3	=point	=peine	B	
+p3_L02	4	=diy	=dy	AB	
+p3_L02	9	36	38		
+p3_L02	17	84	34		
+p3_L03	2	=les	=la		
+p3_L03	4	=sinuoye	=envoyer	AB	
+p3_L03	6	=mo	=ne	A	
+p3_L03	8	-	=scay	B	
+p3_L03	9	=seray	=si	B	
+p3_L03	10	=offrir	=serai	B	
+p3_L03	11	=plus	=trop	B	
+p3_L03	12	=congnu	=long	B	
+p3_L03	13	=ne	=mais		
+p3_L03	14	=resistans	=respondrai	B	
+p3_L04	1	=fut	-	A	
+p3_L04	2	=scauoir	=fu	B	
+p3_L04	3	=vostre	=scavoir	B	
+p3_L04	4	=affaire	=tousiours		
+p3_L04	7	115	15		
+p3_L04	10	81	85		
+p3_L04	14	225	125		
+p3_L05	1	=de	-		
+p3_L05	3	=vous	=mettray	AB	
+p3_L05	4	=prieray	=poine	AB	
+p3_L05	7	=tost	=tot	B	
+p3_L05	8	=pourvoyez	=promptement	B	
+p3_L05	9	=De	=de	B	
+p3_L05	11	=supplieray	-		
+p3_L05	12	=fructueuse	-	A	
+p3_L05	13	=plu	=supplerai	B	
+p3_L05	14	=ce	=fraischement	B	
+p3_L05	15	=fait	=pour	B	
+p3_L05	16	=de	=ceste	B	
+p3_L05	17	=nous	=foys	B	
+p3_L06	1	=porter	=porteur	B	
+p3_L06	3	=recommandez	=recommandé	B	
+p3_L06	5	=fut	-		
+p3_L06	6	=sil	-		
+p3_L06	8	=plaisir	-		
+p3_L06	9	=quis	=supplira	AB	
+p3_L06	10	=considerans	=vray	B	
+p3_L06	11	=du	=pouoir	B	
+p3_L06	12	=bien	=de	B	
+p3_L06	13	=et	=sa	B	
+p3_L06	14	=fidelle	=fidele	B	
+p3_L07	2	60	=bon	AB	
+p3_L07	5	=desir	=désir	AB	
+p3_L07	6	=couvrir	=continue	AB	
+p3_L07	7	=toutessabiez	=toursabin	AB	
+p3_L07	11	=pris	=prise	B	
+p3_L07	12	=subvenir	=subiectz	B	
+p3_L08	1	-	=Et		
+p3_L08	2	=De	=sur	B	
+p3_L08	3	=suivre	=ce	B	
+p3_L08	4	=mes	=recommendera	B	
+p3_L08	5	=recommandez	=Trebom	B	
+p3_L08	6	=tresbumblement	=chimieux	B	
+p3_L08	9	-	=bon	B	
+p3_L08	10	=bonnes	=mis	B	
+p3_L08	11	=graces	=grand	B	
+p3_L08	12	=suppliant	=supplian	B	
+p3_L08	14	=createur	=Créateur		
+p3_L09	3	=donne	=doint		
+p3_L11	2	=en	-		
+p3_L11	3	=peu	=mon	B	
+p3_L11	4	=de	=plus	B	
+p3_L11	5	=faintz	=faicte	AB	
+p3_L11	6	=sante	=saluer	B	
+p3_L11	8	=humblez	-		
+p3_L11	9	=et	=Ghuallier	B	
+p3_L11	10	=longue	=congnou	B	
+p3_L11	11	=vie	=sire	B	
+p3_L12	1		=n	AB	
+p3_L12	2	=Jour	=jour		
