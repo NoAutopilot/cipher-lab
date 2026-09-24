@@ -1,0 +1,1533 @@
+line	pos	group	conf	alt	rule	gloss
+BLA179_p6_L01	1	737	H		agree-flagged,key-consistent	monsieur
+BLA179_p6_L01	2	278	H		agree	de
+BLA179_p6_L01	3	947	H		agree-flagged,key-consistent	ri
+BLA179_p6_L01	4	826	M		agree-flagged	par
+BLA179_p6_L01	5	272	M		agree-flagged	da
+BLA179_p6_L01	6	68	H		agree	avoit
+BLA179_p6_L02	1	210	H		agree	commence
+BLA179_p6_L02	2	18	H		agree	a
+BLA179_p6_L02	3	766	H		agree	negocie
+BLA179_p6_L02	4	101	H		agree	avec
+BLA179_p6_L02	5	816	H		agree	ordre
+BLA179_p6_L02	6	383	M	B:355	undecided	et
+BLA179_p6_L02	7	888	H		agree	pouvoir
+BLA179_p6_L02	8	1042	H		agree	secret
+BLA179_p6_L02	9	278	H		agree	de
+BLA179_p6_L02	10	660	H		agree	la
+BLA179_p6_L02	11	1007	H		agree-flagged,key-consistent	reine
+BLA179_p6_L03	1	1016	H		agree	sans
+BLA179_p6_L03	2	926	H		agree	que
+BLA179_p6_L03	3	661	H		agree	le
+BLA179_p6_L03	4	1006	H		agree	roi
+BLA179_p6_L03	5	659	M		agree-flagged	
+BLA179_p6_L03	6	26	H		agree	
+BLA179_p6_L03	7	1099	H		agree	sceu
+BLA179_p6_L03	8	1039	H		agree	sceu
+BLA179_p6_L03	9	926	H		agree	que
+BLA179_p6_L03	10	661	H		agree	le
+BLA179_p6_L03	11	1213	H		agree	neuf
+BLA179_p6_L04	1	278	H		agree	de
+BLA179_p6_L04	2	691	M		agree-flagged	
+BLA179_p6_L04	3	941	M		agree-flagged	
+BLA179_p6_L04	4	1013	M		agree-flagged	5
+BLA184_p1_L01	1	1150	H		agree	
+BLA184_p1_L01	2	1259	H		agree	
+BLA184_p1_L02	1	1240	H		agree	
+BLA184_p1_L02	2	1243	H		agree	
+BLA184_p1_L03	1	1243	H		agree	
+BLA184_p1_L03	2	1240	H		agree	
+BLA184_p1_L04	1	1250	H		agree	
+BLA185_p5_L01	1	580	H		agree	je
+BLA185_p5_L01	2	754	H		agree	n'
+BLA185_p5_L01	3	26	H		agree	ai
+BLA185_p5_L01	4	841	H		agree	pu
+BLA185_p5_L01	5	1137	H		agree	trouve
+BLA185_p5_L01	6	941	H		agree	r
+BLA185_p5_L01	7	100	H		agree	aucun
+BLA185_p5_L01	8	1041	H		agree	secours
+BLA185_p5_L01	9	275	H		agree	dans
+BLA185_p5_L01	10	737	H		agree	monsieur
+BLA185_p5_L02	1	647	H		agree	ken
+BLA185_p5_L02	2	756	H		agree	ne
+BLA185_p5_L02	3	937	H		agree	quoyque
+BLA185_p5_L02	4	661	H		agree	le
+BLA185_p5_L02	5	1129	H		agree	temps
+BLA185_p5_L02	6	271	H		agree	d'
+BLA185_p5_L02	7	67	H		agree	avoir
+BLA185_p5_L02	8	136	H		agree	besoin
+BLA185_p5_L02	9	282	H		agree	des
+BLA185_p5_L02	10	111	H		agree	autre
+BLA185_p5_L03	1	1013	H		agree	s
+BLA185_p5_L03	2	756	H		agree	ne
+BLA185_p5_L03	3	1022	H		agree	so
+BLA185_p5_L03	4	595	H		agree	it
+BLA185_p5_L03	5	824	H		agree	pas
+BLA185_p5_L03	6	857	H		agree	passe
+BLA185_p5_L03	7	835	H		agree	pour
+BLA185_p5_L03	8	666	H		agree	lu
+BLA185_p5_L03	9	576	H		agree	i
+BLA185_p5_L04	1	106	H		agree	auprez
+BLA185_p5_L04	2	278	H		agree	de
+BLA185_p5_L04	3	737	H		agree	monsieur
+BLA185_p5_L04	4	822	H		agree	pa
+BLA185_p5_L04	5	1109	H		agree	ti
+BLA185_p5_L04	6	506	H		agree	g
+BLA185_p5_L04	7	758	H		agree	no
+BLA185_p5_L05	1	743	H		agree	moyennant
+BLA185_p5_L05	2	1024	H		agree	son
+BLA185_p5_L05	3	54	H		agree	affection
+BLA185_p5_L05	4	835	H		agree	pour
+BLA185_p5_L05	5	702	H		agree	moi
+BLA185_p5_L06	1	1016	H		agree	sans
+BLA185_p5_L06	2	662	H		agree	les
+BLA185_p5_L06	3	521	H		agree	garnison
+BLA185_p5_L06	4	1013	H		agree	s
+BLA185_p5_L06	5	698	H		agree	mis
+BLA185_p5_L06	6	381	H		agree	en
+BLA185_p5_L06	7	189	M		agree-flagged	caution
+BLA185_p5_L06	8	823	H		agree	par
+BLA185_p5_L06	9	97	H		agree	avance
+BLA185_p5_L06	10	191	H		agree	c'est
+BLA185_p5_L07	1	591	H		agree	in
+BLA185_p5_L07	2	1185	H	1186	key-consistent	utile
+BLA185_p5_L07	3	271	H		agree	d'
+BLA185_p5_L07	4	433	H		agree	espere
+BLA185_p5_L07	5	941	H		agree	r
+BLA185_p5_L07	6	278	H		agree	de
+BLA185_p5_L07	7	998	H		agree	rien
+BLA185_p5_L07	8	473	H		agree	faire
+BLA185_p5_L07	9	278	H		agree	de
+BLA185_p5_L07	10	219	H		agree	conclu
+BLA185_p5_L08	1	30	H		agree	an
+BLA185_p5_L08	2	1099	H		agree	t
+BLA185_p5_L08	3	387	H		agree	et
+BLA185_p5_L08	4	932	H		agree	quelque
+BLA185_p5_L08	5	1129	H		agree	temps
+BLA185_p5_L08	6	84	H		agree	apres
+BLA185_p5_L08	7	926	H		agree	que
+BLA185_p5_L08	8	188	H		agree	cell
+BLA185_p5_L08	9	18	H		agree	a
+BLA185_p5_L08	10	1017	H		agree	se
+BLA185_p5_L09	1	942	H		agree	ra
+BLA185_p5_L09	2	461	H		agree	fait
+BLA185_p5_L09	3	796	H		agree	on
+BLA185_p5_L09	4	958	H		agree	recommence
+BLA185_p5_L09	5	942	H		agree	ra
+BLA185_p5_L09	6	1033	H		agree	sur
+BLA185_p5_L09	7	163	H		agree	ce
+BLA185_p5_L09	8	930	H		agree	qu'ils
+BLA185_p5_L09	9	40	H		agree	abandonne
+BLA185_p5_L10	1	754	H		agree	n
+BLA185_p5_L10	2	1099	H		agree	t
+BLA185_p5_L10	3	823	H		agree	par
+BLA185_p5_L10	4	765	H		agree	necessite
+BLA185_p5_L10	5	1243	M		agree-flagged,no-gloss	
+BLA185_p5_L10	6	588	H		agree	il
+BLA185_p5_L10	7	1201	H		agree	y
+BLA185_p5_L10	8	18	H		agree	a
+BLA185_p5_L10	9	1148	H		agree	un
+BLA185_p5_L11	1	943	H		agree	re
+BLA185_p5_L11	2	695	H		agree	me
+BLA185_p5_L11	3	278	H		agree	de
+BLA185_p5_L11	4	18	H		agree	a
+BLA185_p5_L11	5	163	H		agree	ce
+BLA185_p5_L11	6	713	H		agree	malheur
+BLA185_p5_L11	7	924	H		agree	quand
+BLA185_p5_L11	8	796	H		agree	on
+BLA185_p5_L11	9	1153	H		agree	vou
+BLA185_p5_L12	1	270	H		agree	d
+BLA185_p5_L12	2	942	H		agree	ra
+BLA185_p5_L12	3	659	H		agree	l'
+BLA185_p5_L12	4	32	H		agree	app
+BLA185_p5_L12	5	663	H		agree	li
+BLA185_p5_L12	6	926	H		agree	que
+BLA185_p5_L12	7	941	H		agree	r
+BLA186_p1_L01	1	659	H		agree	
+BLA186_p1_L01	2	78	H		agree	
+BLA186_p1_L01	3	73	H		agree	
+BLA186_p1_L01	4	18	H		agree	
+BLA186_p1_L01	5	438	H		agree	
+BLA186_p1_L01	6	468	H		agree	
+BLA186_p1_L01	7	470	H		image:4>0 clear	
+BLA186_p1_L01	8	778	M	B:738	image:reads 7>8 both leading glyphs the hand's 7;passes 758/738	
+BLA186_p1_L01	9	190	H		agree	
+BLA186_p1_L01	10	1102	H		agree	
+BLA186_p1_L01	11	53	H		agree	
+BLA186_p3_L01	1	737	H		image:73> final glyph is the hand's 7;passes both 733	
+BLA186_p3_L01	2	278	H		agree	
+BLA186_p3_L01	3	822	H		agree	
+BLA186_p3_L01	4	1109	H		agree	
+BLA186_p3_L01	5	506	H		agree	
+BLA186_p3_L01	6	758	H		agree	
+BLA186_p3_L01	7	690	H		agree	
+BLA186_p3_L01	8	381	H		agree	
+BLA186_p3_L01	9	18	H		agree	
+BLA186_p3_L01	10	849	H		agree	
+BLA186_p3_L01	11	163	H		agree	
+BLA186_p3_L01	12	1022	H		agree	
+BLA186_p3_L01	13	593	H		image:clear	
+BLA187_p3_L01	1	1154	H		agree	vous
+BLA187_p3_L01	2	731	H		agree	mettr
+BLA187_p3_L01	3	581	H		agree	ie
+BLA187_p3_L01	4	1013	H		agree-flagged,key-consistent	s
+BLA187_p3_L01	5	1240	H		agree	s
+BLA187_p3_L01	6	733	H		agree	monsieur
+BLA187_p3_L01	7	822	H		agree	ra
+BLA187_p3_L01	8	1109	H		agree	li
+BLA187_p3_L02	1	506	H		agree	gn
+BLA187_p3_L02	2	758	H		agree	no
+BLA187_p3_L02	3	561	M		agree-flagged	hors
+BLA187_p3_L02	4	291	H		agree	d'
+BLA187_p3_L02	5	935	M		agree-flagged	etat
+BLA187_p3_L02	6	258	H	238	key-consistent	de
+BLA187_p3_L02	7	219	M	B:213	undecided	contest
+BLA187_p3_L02	8	384	H		agree	er
+BLA187_p3_L03	1	106	H		agree	aupres
+BLA187_p3_L03	2	278	M	B:258	undecided	de
+BLA187_p3_L03	3	1014	H		agree	la
+BLA187_p3_L03	4	909	M	B:509	undecided	majeste
+BLA187_p3_L03	5	184	H		agree	catholique
+BLA187_p3_L03	6	1148	H		agree	un
+BLA187_p3_L03	7	122	H		agree	bon
+BLA187_p3_L03	8	46	H		agree	accommodeme
+BLA187_p3_L04	1	1250	H		agree	hier
+BLA187_p3_L04	2	558	H		agree	au
+BLA187_p3_L04	3	38	H		agree	so
+BLA187_p3_L04	4	1022	M		agree-flagged	ir
+BLA187_p3_L04	5	593	H		agree	ir
+BLA187_p3_L04	6	588	H		agree	il
+BLA187_p3_L04	7	695	H		agree	me
+BLA187_p3_L04	8	345	H		agree	dit
+BLA187_p3_L05	1	929	H		agree	qu'il
+BLA187_p3_L05	2	1182	H		agree	traite
+BLA187_p3_L05	3	387	H		agree	et
+BLA187_p3_L05	4	1135	H		agree	travaille
+BLA187_p3_L05	5	1131	H		agree	tout
+BLA187_p3_L05	6	258	H		agree	afait
+BLA187_p3_L05	7	140	H		agree	de
+BLA187_p3_L05	8	1288	M	B:1233	undecided	bonnefoy
+BLA187_p3_L06	1	101	H		agree	avec
+BLA187_p3_L06	2	662	H		agree	les
+BLA187_p3_L06	3	80	M		agree-flagged	anglois
+BLA187_p3_L06	4	692	H		agree	mais
+BLA187_p3_L06	5	925	M		agree-flagged	quel
+BLA187_p3_L06	6	756	H		agree	ne
+BLA187_p3_L06	7	1153	H		agree	vous
+BLA187_p3_L06	8	250	H		agree	d
+BLA187_p3_L06	9	948	H		agree	ro
+BLA187_p3_L07	1	495	H		agree	it
+BLA187_p3_L07	2	824	H	829	key-consistent	pas
+BLA187_p3_L07	3	381	H		agree	en
+BLA187_p3_L07	4	439	H		agree	oftre
+BLA187_p3_L07	5	660	H		agree	la
+BLA187_p3_L07	6	289	H		agree	du
+BLA187_p3_L07	7	825	H		agree	ne
+BLA187_p3_L07	8	385	M	B:387	undecided	et
+BLA187_p3_L08	1	658	H		agree	l
+BLA187_p3_L08	2	18	H		agree	a
+BLA187_p3_L08	3	1149	H		agree	vi
+BLA187_p3_L08	4	154	M		agree-flagged	c
+BLA187_p3_L08	5	1109	H		agree	ti
+BLA187_p3_L08	6	695	H		agree	me
+BLA187_p3_L08	7	1243	M		agree-flagged,no-gloss	
+BLA187_p3_L08	8	926	H		agree	que
+BLA187_p3_L09	1	1020	H		agree	si
+BLA187_p3_L09	2	796	H		agree-flagged,key-consistent	on
+BLA187_p3_L09	3	1123	H		agree	garde
+BLA187_p3_L09	4	18	H		agree	a
+BLA187_p3_L09	5	338	H		agree	determine
+BLA187_p3_L09	6	941	H		agree	r
+BLA187_p3_L09	7	659	H		agree	l'
+BLA187_p3_L09	8	451	H		agree	empereur
+BLA187_p3_L10	1	835	H		agree	pourr
+BLA187_p3_L10	2	792	H		agree	oit
+BLA187_p3_L10	3	137	H	135	key-consistent	bien
+BLA187_p3_L10	4	1119	H		agree	tout
+BLA187_p3_L10	5	339	H		agree	detourne
+BLA187_p3_L10	6	941	H		agree	r
+BLA187_p3_L10	7	385	H		agree	et
+BLA187_p3_L10	8	551	H	951	key-consistent	mettre
+BLA187_p3_L11	1	289	H		agree	du
+BLA187_p3_L11	2	197	H		agree	change
+BLA187_p3_L11	3	696	H		agree	ment
+BLA188_p3_L01	1	1212	H		agree	huit
+BLA188_p3_L01	2	278	H	298	key-consistent	de
+BLA188_p3_L01	3	596	M		agree-flagged	m
+BLA188_p3_L01	4	591	M		agree-flagged	du
+BLA188_p3_L01	5	289	H		agree	porte
+BLA188_p3_L01	6	834	M	B:831	undecided	de
+BLA188_p3_L01	7	298	M	B:278	undecided	fa
+BLA188_p3_L01	8	1014	M		agree-flagged	te
+BLA188_p3_L02	1	591	H		agree	in
+BLA188_p3_L02	2	1102	H		agree	te
+BLA188_p3_L02	3	691	H		agree-flagged,key-consistent	ma
+BLA188_p3_L02	4	945	H		agree	ri
+BLA188_p3_L02	5	369	H	869	key-consistent	e
+BLA188_p3_L02	6	1268	M		agree-flagged	e
+BLA188_p3_L02	7	697	H		agree	mi
+BLA188_p3_L02	8	665	H		agree	
+BLA188_p3_L03	1	941	H		agree	r
+BLA188_p3_L03	2	250	H		agree	d
+BLA188_p3_L03	3	1255	H		agree	j'ai
+BLA188_p3_L03	4	575	H		agree	parle
+BLA188_p3_L03	5	26	H		agree	avec
+BLA188_p3_L03	6	849	H		agree	monsieur
+BLA188_p3_L03	7	101	H		agree	pa
+BLA188_p3_L03	8	733	H		agree-flagged,key-consistent	monsieur
+BLA188_p3_L03	9	822	M		agree-flagged	ma
+BLA188_p3_L04	1	1109	H		agree	ti
+BLA188_p3_L04	2	506	H		agree-flagged,key-consistent	g
+BLA188_p3_L04	3	758	H		agree	no
+BLA188_p3_L04	4	1033	H		agree	sur
+BLA188_p3_L04	5	661	H		agree	le
+BLA188_p3_L04	6	241	H		agree	conteu
+BLA188_p3_L04	7	255	H		agree	dans
+BLA188_p3_L04	8	1196	M		agree-flagged	votre
+BLA188_p3_L04	9	672	H	692	key-consistent	lettre
+BLA188_p3_L05	1	289	H		agree	du
+BLA188_p3_L05	2	1209	H		agree	cinq
+BLA188_p3_L05	3	691	H		agree	ma
+BLA188_p3_L05	4	1201	H		agree	y
+BLA188_p3_L05	5	802	H		agree-flagged,key-consistent	ou
+BLA188_p3_L05	6	1154	H		agree-flagged,key-consistent	vous
+BLA188_p3_L05	7	695	H		agree	me
+BLA188_p3_L05	8	934	M		agree-flagged	responde
+BLA188_p3_L05	9	282	H		agree	des
+BLA188_p3_L06	1	1033	H		agree	sur
+BLA188_p3_L06	2	661	H		agree	le
+BLA188_p3_L06	3	691	H		agree	ma
+BLA188_p3_L06	4	945	H		agree	ri
+BLA188_p3_L06	5	18	H		agree	a
+BLA188_p3_L06	6	508	H		agree	ge
+BLA188_p3_L06	7	1261	M		agree-flagged	
+BLA188_p3_L06	8	163	H		agree-flagged,key-consistent	ce
+BLA188_p3_L06	9	697	H		agree-flagged,key-consistent	mi
+BLA188_p3_L07	1	755	H		agree	ni
+BLA188_p3_L07	2	1025	M	B:1029	undecided	th
+BLA188_p3_L07	3	948	H		agree	re
+BLA188_p3_L07	4	928	H		agree	qui
+BLA188_p3_L07	5	18	H		agree	a
+BLA188_p3_L07	6	1114	M	B:1119	undecided	tout
+BLA188_p3_L07	7	661	H		agree	le
+BLA188_p3_L07	8	263	H		agree	credit
+BLA188_p3_L07	9	152	H		agree	cr
+BLA188_p3_L07	10	792	H		agree	oit
+BLA188_p3_L08	1	926	H		agree	que
+BLA188_p3_L08	2	1154	H		agree-flagged,key-consistent	vous
+BLA188_p3_L08	3	835	H		agree	pourr
+BLA188_p3_L08	4	576	M		agree-flagged	1
+BLA188_p3_L08	5	385	H		agree-flagged,key-consistent	es
+BLA188_p3_L08	6	1033	H		agree	sur
+BLA188_p3_L08	7	704	H		agree	mon
+BLA188_p3_L08	8	1109	H		agree	tar
+BLA188_p3_L08	9	660	H		agree	la
+BLA188_p3_L08	10	342	H		agree	difficulte
+BLA188_p3_L09	1	252	M	B:282	undecided	dgo
+BLA188_p3_L09	2	665	H		agree	co
+BLA188_p3_L09	3	576	M		agree-flagged	1
+BLA188_p3_L09	4	389	M	B:388	undecided	
+BLA188_p3_L09	5	1033	H		agree	
+BLA188_p3_L09	6	704	H		agree	
+BLA188_p3_L09	7	407	M		agree-flagged	
+BLA188_p3_L09	8	660	H		agree	
+BLA188_p3_L09	9	342	H		agree	
+BLA188_p3_L10	1	282	M	A:?	undecided	
+BLA188_p3_L10	2	665	H		agree	
+BLA188_p3_L10	3	576	H		agree	
+BLA188_p3_L10	4	1200	H		agree	ze
+BLA188_p3_L10	5	1020	H		agree	si
+BLA188_p3_L10	6	660	H		agree	la
+BLA188_p3_L10	7	899	H		agree	princesse
+BLA188_p3_L10	8	831	M	B:837	undecided	non
+BLA188_p3_L10	9	1143	H		agree	v
+BLA188_p3_L11	1	1150	H		agree-flagged,key-consistent	vo
+BLA188_p3_L11	2	495	H	795	key-consistent	it
+BLA188_p3_L11	3	520	H		agree	garde
+BLA188_p3_L11	4	941	H		agree	v
+BLA188_p3_L11	5	1014	H		agree	la
+BLA188_p3_L11	6	968	H		agree	religion
+BLA188_p3_L11	7	381	H		agree	en
+BLA188_p3_L11	8	429	H		agree	espous
+BLA188_p3_L11	9	30	H		agree	au
+BLA188_p3_L12	1	1099	H		agree	a
+BLA188_p3_L12	2	289	H		agree	non
+BLA188_p3_L12	3	164	H		agree	ch
+BLA188_p3_L12	4	34	H		agree	ar
+BLA188_p3_L12	5	662	H		agree	les
+BLA188_p3_L12	6	1250	M		agree-flagged,no-gloss	
+BLA188_p3_L12	7	1033	H		agree	sur
+BLA188_p3_L12	8	659	H		agree	l'
+BLA188_p3_L12	9	432	H		agree	esperance
+BLA188_p3_L13	1	278	H	298	key-consistent	de
+BLA188_p3_L13	2	660	H		agree	la
+BLA188_p3_L13	3	140	H		agree	bonne
+BLA188_p3_L13	4	623	H		agree	intention
+BLA188_p3_L13	5	258	H	238	key-consistent	de
+BLA188_p3_L13	6	1014	H		agree	sa
+BLA188_p3_L13	7	709	H		agree	majeste
+BLA188_p3_L13	8	123	M		agree-flagged	3r
+BLA188_p3_L13	9	595	H		agree	il
+BLA188_p3_L13	10	?	M	A:-	undecided	
+BLA188_p3_L14	1	1100	H		agree	ta
+BLA188_p3_L14	2	757	M		agree-flagged	mi
+BLA188_p3_L14	3	926	H		agree	que
+BLA188_p3_L14	4	18	H		agree	a
+BLA188_p3_L14	5	838	H		agree	pre
+BLA188_p3_L14	6	1013	H		agree	f
+BLA188_p3_L14	7	668	H		agree	l
+BLA188_p3_L14	8	12	H		agree	a
+BLA188_p3_L14	9	843	H		agree	pain
+BLA188_p3_L14	10	588	H		agree	il
+BLA188_p3_L15	1	695	H		agree	me
+BLA188_p3_L15	2	345	H		agree	doit
+BLA188_p3_L15	3	926	H		agree	qui
+BLA188_p3_L15	4	191	H		agree	c'est
+BLA188_p3_L15	5	792	H		agree	oit
+BLA188_p3_L15	6	823	H		agree	par
+BLA188_p3_L15	7	1045	H		agree	semblable
+BLA188_p3_L15	8	432	H		agree	esperance
+BLA188_p3_L15	9	926	H		agree	que
+BLA188_p3_L16	1	659	M		agree-flagged	d'
+BLA188_p3_L16	2	459	M	B:454	undecided	espagne
+BLA188_p3_L16	3	68	H		agree	avoit
+BLA188_p3_L16	4	438	H		agree	ete
+BLA188_p3_L16	5	96	H		agree	attire
+BLA188_p3_L16	6	369	H		agree	e
+BLA188_p3_L16	7	18	H		agree	a
+BLA188_p3_L16	8	218	H		agree	conclurre
+BLA188_p3_L16	9	830	H		agree	plus
+BLA188_p3_L16	10	581	H		agree	te
+BLA188_p3_L17	1	1195	M	B:1193	undecided	v
+BLA188_p3_L17	2	941	H		agree	r
+BLA188_p3_L17	3	1013	H		agree	s
+BLA188_p3_L17	4	843	H		agree	paix
+BLA188_p3_L17	5	101	H		agree	avec
+BLA188_p3_L17	6	850	H		agree	perte
+BLA188_p3_L17	7	192	H		agree	certain
+BLA188_p3_L17	8	369	H		agree	e
+BLA188_p3_L17	9	388	M	B:588	undecided	et
+BLA188_p3_L18	1	922	H		agree	qu
+BLA188_p3_L18	2	381	H		agree	en
+BLA188_p3_L18	3	1081	H		agree	suite
+BLA188_p3_L18	4	796	H		agree	on
+BLA188_p3_L18	5	1013	H		agree	s'
+BLA188_p3_L18	6	386	H		agree	est
+BLA188_p3_L18	7	538	H		agree	moque
+BLA188_p3_L18	8	291	M	B:251	undecided	d'
+BLA188_p3_L18	9	379	H		agree-flagged,key-consistent	el
+BLA190_p7_L01	1	575	H		agree	j'
+BLA190_p7_L01	2	26	H		agree	ai
+BLA190_p7_L01	3	356	H		agree	donne
+BLA190_p7_L01	4	18	H		agree	a
+BLA190_p7_L01	5	737	H		agree	monsieur
+BLA190_p7_L01	6	1028	H		agree	ha
+BLA190_p7_L01	7	756	H		agree	no
+BLA190_p7_L01	8	828	H		agree	pe
+BLA190_p7_L01	9	1149	H		agree	une
+BLA190_p7_L01	10	672	H		agree	lettre
+BLA190_p7_L01	11	835	H		agree	pour
+BLA190_p7_L02	1	1154	H		agree	vous
+BLA190_p7_L02	2	1033	H		agree	sur
+BLA190_p7_L02	3	662	H		agree	les
+BLA190_p7_L02	4	53	H		agree	affaire
+BLA190_p7_L02	5	1013	H		agree	s
+BLA190_p7_L02	6	928	H		agree	qui
+BLA190_p7_L02	7	853	H		agree	parti
+BLA190_p7_L02	8	942	H		agree	ra
+BLA190_p7_L02	9	823	H		agree	par
+BLA190_p7_L02	10	661	H		agree	le
+BLA190_p7_L02	11	892	H		agree	premier
+BLA190_p7_L03	1	259	H		agree	cour
+BLA190_p7_L03	2	561	H		agree	ie
+BLA190_p7_L03	3	491	H		agree	r
+BLA190_p7_L03	4	101	H		agree	avec
+BLA190_p7_L03	5	1149	H		agree	une
+BLA190_p7_L03	6	111	H		agree	autre
+BLA190_p7_L03	7	1033	H		agree	sur
+BLA190_p7_L03	8	704	H		agree	mon
+BLA190_p7_L03	9	854	H		agree	particulier
+BLA190_p7_L03	10	620	H		agree	interest
+BLA190_p7_L04	1	162	H		agree	car
+BLA190_p7_L04	2	113	H		agree	ayant
+BLA190_p7_L04	3	427	H		agree	envoye
+BLA190_p7_L04	4	588	H	583	key-consistent	il
+BLA190_p7_L04	5	1201	H		agree	y
+BLA190_p7_L04	6	18	H		agree	a
+BLA190_p7_L04	7	1207	H		agree	trois
+BLA190_p7_L04	8	703	H		agree	mois
+BLA190_p7_L04	9	1148	H		agree	un
+BLA190_p7_L04	10	119	H		agree	bi
+BLA190_p7_L04	11	669	M		agree-flagged	el
+BLA190_p7_L04	12	387	H		agree	et
+BLA190_p7_L05	1	278	M	B:258	undecided	de
+BLA190_p7_L05	2	197	H		agree	change
+BLA190_p7_L05	3	796	H		agree	on
+BLA190_p7_L05	4	695	H		agree	me
+BLA190_p7_L05	5	659	H		agree	l'
+BLA190_p7_L05	6	18	H		agree	a
+BLA190_p7_L05	7	972	H		agree	rendu
+BLA190_p7_L05	8	1016	H		agree	sans
+BLA190_p7_L05	9	929	H		agree	qu'il
+BLA190_p7_L05	10	1201	H		agree	y
+BLA190_p7_L05	11	26	H		agree	ai
+BLA190_p7_L05	12	1090	M		agree-flagged	t
+BLA190_p7_L06	1	388	H		agree	en
+BLA190_p7_L06	2	834	H		agree	personne
+BLA190_p7_L06	3	835	H		agree	pour
+BLA190_p7_L06	4	659	H		agree	l'
+BLA190_p7_L06	5	42	H		agree	accepte
+BLA190_p7_L06	6	941	H		agree	r
+BLA190_p7_L06	7	1250	M		agree-flagged,no-gloss	
+BLA190_p7_L06	8	163	H		agree	ce
+BLA190_p7_L06	9	928	H		agree	qui
+BLA190_p7_L06	10	690	H		agree	m'
+BLA190_p7_L06	11	18	H		agree	a
+BLA190_p7_L06	12	468	H		agree	fort
+BLA190_p7_L07	1	321	H		agree	depourvu
+BLA190_p7_L07	2	278	H		agree	de
+BLA190_p7_L07	3	742	H		agree	moyen
+BLA190_p7_L07	4	278	H		agree	de
+BLA190_p7_L07	5	695	H		agree	me
+BLA190_p7_L07	6	1069	H		agree	soutenir
+BLA190_p7_L07	7	580	H		agree	je
+BLA190_p7_L07	8	1154	H		agree	vous
+BLA190_p7_L07	9	839	H		agree	pri
+BLA190_p7_L07	10	360	H		agree	e
+BLA190_p7_L08	1	357	H		agree	donc
+BLA190_p7_L08	2	607	H		agree	mi
+BLA190_p7_L08	3	665	H		agree	lo
+BLA190_p7_L08	4	941	H		agree	r
+BLA190_p7_L08	5	270	H		agree	d
+BLA190_p7_L08	6	278	H		agree	de
+BLA190_p7_L08	7	695	H		agree	me
+BLA190_p7_L08	8	473	H		agree	faire
+BLA190_p7_L08	9	67	H		agree	avoir
+BLA190_p7_L08	10	1206	H		agree	deux
+BLA190_p7_L08	11	16	H		agree	cent
+BLA190_p7_L09	1	663	H		agree-flagged,key-consistent	li
+BLA190_p7_L09	2	1142	H		agree	u
+BLA190_p7_L09	3	945	M		agree-flagged	ees
+BLA190_p7_L09	4	1029	H		agree	ste
+BLA190_p7_L09	5	941	H		agree-flagged,key-consistent	r
+BLA190_p7_L09	6	663	H		agree-flagged,key-consistent	li
+BLA190_p7_L09	7	754	H		agree	n
+BLA190_p7_L09	8	506	H		agree-flagged,key-consistent	g
+BLA190_p7_L09	9	1013	H		agree	s
+BLA190_p7_L09	10	387	H		agree	et
+BLA190_p7_L09	11	605	H		agree	me
+BLA190_p7_L10	1	344	H		agree	dixe
+BLA190_p7_L10	2	1033	H		agree	sur
+BLA190_p7_L10	3	927	M	B:027	undecided	quel
+BLA190_p7_L10	4	833	H		agree	point
+BLA190_p7_L10	5	580	H		agree	je
+BLA190_p7_L10	6	1032	H		agree	su
+BLA190_p7_L10	7	594	H		agree-flagged,key-consistent	is
+BLA190_p7_L10	8	835	H		agree	pour
+BLA190_p7_L10	9	691	H		agree	ma
+BLA190_p7_L10	10	963	H		agree	regle
+BLA190_p7_L10	11	661	H		agree	le
+BLA190_p7_L11	1	1114	H		agree	tout
+BLA190_p7_L11	2	381	H		agree	en
+BLA190_p7_L11	3	238	H		agree	consideration
+BLA190_p7_L11	4	278	M	B:258	undecided	de
+BLA190_p7_L11	5	659	H		agree	l'
+BLA190_p7_L11	6	54	H		agree	affection
+BLA190_p7_L11	7	926	H		agree	que
+BLA190_p7_L11	8	1154	H		agree	vous
+BLA190_p7_L11	9	38	H		agree	av
+BLA190_p7_L11	10	385	H		agree	es
+BLA190_p7_L12	1	835	H		agree	pour
+BLA190_p7_L12	2	702	H		agree	moi
+BLA190_p7_L12	3	358	H		agree	dont
+BLA190_p7_L12	4	580	H		agree	je
+BLA190_p7_L12	5	1018	H		agree	sec
+BLA190_p7_L12	6	26	H		agree	ai
+BLA190_p7_L12	7	1112	H		agree	tou
+BLA190_p7_L12	8	592	H		agree	jor
+BLA190_p7_L12	9	1143	H		agree	v
+BLA190_p7_L12	10	941	H		agree-flagged,key-consistent	r
+BLA190_p7_L12	11	959	H		agree	reconnoi
+BLA190_p7_L13	1	1013	H		agree	s
+BLA190_p7_L13	2	1018	M	B:1015	undecided	sans
+BLA190_p7_L13	3	1099	H		agree-flagged,key-consistent	t
+BLA190_p7_L13	4	1240	M		agree-flagged,no-gloss	
+BLA190_p7_L13	5	1207	H		agree	trois
+BLA190_p7_L13	6	758	H		agree	no
+BLA190_p7_L13	7	1145	H		agree	ve
+BLA190_p7_L13	8	690	H		agree	m
+BLA190_p7_L13	9	123	H		agree	be
+BLA190_p7_L13	10	369	H		agree	e
+BLA190_p7_L14	1	17	H		agree	mille
+BLA190_p7_L14	2	1211	H		agree	sept
+BLA190_p7_L14	3	16	H		agree	cent
+BLA190_p7_L14	4	8	H		agree	vingt
+BLA190_p7_L14	5	1213	H		agree	neuf
+BLA188_p4_L01	1	661	H		agree	le
+BLA188_p4_L01	2	208	H		agree	comme
+BLA188_p4_L01	3	588	H		agree	il
+BLA188_p4_L01	4	386	H		agree	est
+BLA188_p4_L01	5	918	M		agree-flagged	manifeste
+BLA188_p4_L01	6	823	H		agree	par
+BLA188_p4_L01	7	163	H		agree	ce
+BLA188_p4_L01	8	926	H		agree	que
+BLA188_p4_L01	9	661	H		agree	le
+BLA188_p4_L02	1	1006	H		agree	roy
+BLA188_p4_L02	2	508	H		agree	ge
+BLA188_p4_L02	3	599	M	B:999	undecided	or
+BLA188_p4_L02	4	508	H		agree	ge
+BLA188_p4_L02	5	892	H		agree	menier
+BLA188_p4_L02	6	65	M	B:69	undecided	avit
+BLA188_p4_L02	7	904	H		agree	promis
+BLA188_p4_L02	8	1033	H		agree	sur
+BLA188_p4_L02	9	500	H		agree	gi
+BLA188_p4_L03	1	123	H		agree	br
+BLA188_p4_L03	2	379	H		agree	el
+BLA188_p4_L03	3	1105	H		agree	ter
+BLA188_p4_L03	4	1243	H		agree	
+BLA188_p4_L03	5	588	H		agree	il
+BLA188_p4_L03	6	695	H		agree	me
+BLA188_p4_L03	7	348	M	B:398	undecided	disoit
+BLA188_p4_L03	8	922	H		agree	qu
+BLA188_p4_L04	1	381	H		agree	en
+BLA188_p4_L04	2	59	M	B:39	undecided	angleterre
+BLA188_p4_L04	3	1148	H		agree	un
+BLA188_p4_L04	4	734	H		agree	min
+BLA188_p4_L04	5	594	H		agree	is
+BLA188_p4_L04	6	1102	H		agree	te
+BLA188_p4_L04	7	943	H		agree	re
+BLA188_p4_L04	8	461	H		agree	fait
+BLA188_p4_L04	9	1149	H		agree	une
+BLA188_p4_L05	1	53	H		agree	affaire
+BLA188_p4_L05	2	922	H		agree	qu
+BLA188_p4_L05	3	1148	H		agree	un
+BLA188_p4_L05	4	111	H		agree	autre
+BLA188_p4_L05	5	993	H		agree	retranche
+BLA188_p4_L05	6	924	H		agree	quand
+BLA188_p4_L05	7	588	H		agree	il
+BLA188_p4_L05	8	1097	H		agree	succede
+BLA188_p4_L05	9	1252	H		agree	
+BLA188_p4_L06	1	929	H		agree	quil
+BLA188_p4_L06	2	386	H		agree	est
+BLA188_p4_L06	3	764	H		agree	necessaire
+BLA188_p4_L06	4	258	H		agree	de
+BLA188_p4_L06	5	1013	H		agree	s'entendre
+BLA188_p4_L06	6	416	M	B:716	undecided	bien
+BLA188_p4_L06	7	132	H		agree	si
+BLA188_p4_L06	8	1020	H		agree	on
+BLA188_p4_L06	9	596	H		agree	on
+BLA188_p4_L07	1	1155	M		agree-flagged	veut
+BLA188_p4_L07	2	1099	H		agree	faire
+BLA188_p4_L07	3	453	H		agree	une
+BLA188_p4_L07	4	1149	H		agree	paix
+BLA188_p4_L07	5	843	H		agree	ferme
+BLA188_p4_L07	6	484	M	B:984	undecided	quil
+BLA188_p4_L07	7	929	H		agree	faut
+BLA188_p4_L07	8	456	H		agree	mettre
+BLA188_p4_L07	9	551	H		agree	mettre
+BLA188_p4_L08	1	823	H		agree	par
+BLA188_p4_L08	2	900	H		agree	ecrit
+BLA188_p4_L08	3	932	H		agree	quelque
+BLA188_p4_L08	4	851	H		agree	part
+BLA188_p4_L08	5	581	H		agree-flagged,key-consistent	ie
+BLA188_p4_L08	6	258	H		agree	de
+BLA188_p4_L08	7	660	H		agree	la
+BLA188_p4_L08	8	140	H		agree	bonne
+BLA188_p4_L08	9	1150	H		agree	vo
+BLA188_p4_L09	1	658	H		agree	l
+BLA188_p4_L09	2	596	H		agree	on
+BLA188_p4_L09	3	1102	H		agree	te
+BLA188_p4_L09	4	289	H		agree	du
+BLA188_p4_L09	5	1006	H		agree	roy
+BLA188_p4_L09	6	251	H		agree	d
+BLA188_p4_L09	7	59	M	B:39	undecided	angleterre
+BLA188_p4_L09	8	38	H		agree	au
+BLA188_p4_L09	9	535	H		agree	moins
+BLA188_p4_L09	10	381	H		agree	en
+BLA188_p4_L10	1	134	H		agree	ar
+BLA188_p4_L10	2	1109	H		agree	ti
+BLA188_p4_L10	3	169	H		agree	cl
+BLA188_p4_L10	4	369	H		agree	e
+BLA188_p4_L10	5	1092	M	B:1042	undecided	savoit
+BLA188_p4_L10	6	835	H		agree	pour
+BLA188_p4_L10	7	1125	H		agree	temoigne
+BLA188_p4_L10	8	941	H		agree	v
+BLA188_p4_L10	9	18	H		agree	a
+BLA188_p4_L11	1	1014	H		agree	sa
+BLA188_p4_L11	2	709	H		agree	majeste
+BLA188_p4_L11	3	184	H		agree	catholique
+BLA188_p4_L11	4	922	H		agree	qu
+BLA188_p4_L11	5	596	H		agree	on
+BLA188_p4_L11	6	59	H		agree	agit
+BLA188_p4_L11	7	278	H		agree	de
+BLA188_p4_L11	8	140	H		agree	bonne
+BLA188_p4_L11	9	488	H		agree	foy
+BLA188_p4_L12	1	1290	H		agree	il
+BLA188_p4_L12	2	588	H		agree	il
+BLA188_p4_L12	3	695	H		agree	me
+BLA188_p4_L12	4	345	H		agree	dit
+BLA188_p4_L12	5	922	H		agree	qu
+BLA188_p4_L12	6	381	H		agree	en
+BLA188_p4_L12	7	1024	H		agree	son
+BLA188_p4_L12	8	854	H		agree	particulier
+BLA188_p4_L13	1	588	H		agree	il
+BLA188_p4_L13	2	1065	H		agree	souhaitoit
+BLA188_p4_L13	3	792	H		agree	oit
+BLA188_p4_L13	4	1148	H		agree	un
+BLA188_p4_L13	5	46	H		agree	acomodement
+BLA188_p4_L13	6	692	H		agree	mais
+BLA188_p4_L13	7	929	H		agree	quil
+BLA188_p4_L13	8	455	H		agree	falloit
+BLA188_p4_L14	1	278	H		agree	de
+BLA188_p4_L14	2	1119	H		agree	tout
+BLA188_p4_L14	3	369	H		agree	e
+BLA188_p4_L14	4	851	H		agree	part
+BLA188_p4_L14	5	493	H		agree	fournir
+BLA188_p4_L14	6	662	H		agree	les
+BLA188_p4_L14	7	542	H		agree	moyen
+BLA188_p4_L14	8	1013	H		agree	s
+BLA188_p4_L15	1	378	M	B:-	gap	ch
+BLA188_p4_L15	2	661	H		agree	le
+BLA188_p4_L15	3	951	H		agree	rendre
+BLA188_p4_L15	4	290	H		agree	dur
+BLA188_p4_L15	5	19	H		agree	ab
+BLA188_p4_L15	6	661	H		agree	le
+BLA188_p4_L15	7	926	H		agree	que
+BLA188_p4_L15	8	662	H		agree	les
+BLA188_p4_L15	9	907	M		agree-flagged	propositiv
+BLA188_p4_L16	1	1013	H		agree	s
+BLA188_p4_L16	2	525	H		agree	general
+BLA188_p4_L16	3	385	H		agree	es
+BLA188_p4_L16	4	756	H		agree	ne
+BLA188_p4_L16	5	459	H		agree	fais
+BLA188_p4_L16	6	792	H		agree	oit
+BLA188_p4_L16	7	830	H		agree	plus
+BLA188_p4_L16	8	100	H		agree	aucun
+BLA188_p4_L17	1	369	H		agree	e
+BLA188_p4_L17	2	609	H		agree	impression
+BLA188_p4_L17	3	1033	H		agree	sur
+BLA188_p4_L17	4	659	H		agree	l
+BLA188_p4_L17	5	134	H		agree	esprit
+BLA188_p4_L17	6	289	H		agree	du
+BLA188_p4_L17	7	1006	H		agree	roy
+BLA188_p4_L17	8	184	H		agree	catholique
+BLA188_p4_L17	9	910	H		agree	puisque
+BLA188_p4_L18	1	415	H		agree	ensuite
+BLA188_p4_L18	2	596	H		agree	on
+BLA188_p4_L18	3	668	M	B:665	undecided	eustruck
+BLA188_p4_L18	4	576	H		agree	il
+BLA188_p4_L18	5	461	H		agree	fait
+BLA188_p4_L18	6	1113	H		agree-flagged,key-consistent	tous
+BLA188_p4_L18	7	592	H		agree	jo
+BLA188_p4_L18	8	1142	H		agree-flagged,key-consistent	u
+BLA188_p4_L18	9	941	H		agree	r
+BLA188_p5_L01	1	1013	H		agree	s
+BLA188_p5_L01	2	18	H		agree	a
+BLA188_p5_L01	3	164	H		agree	ch
+BLA188_p5_L01	4	385	H	589	key-consistent	et
+BLA188_p5_L01	5	384	H		agree	en
+BLA188_p5_L01	6	660	H		agree	la
+BLA188_p5_L01	7	890	H		agree	pro
+BLA188_p5_L01	8	695	H		agree	me
+BLA188_p5_L02	1	1013	H		agree	s
+BLA188_p5_L02	2	1015	M	B:1013	undecided	fe
+BLA188_p5_L02	3	101	H		agree	avoit
+BLA188_p5_L02	4	1149	H	1199	key-consistent	une
+BLA188_p5_L02	5	555	M	B:955	undecided	nouvelle
+BLA188_p5_L02	6	870	H		agree	perte
+BLA188_p5_L02	7	1250	H		agree	c'est
+BLA188_p5_L02	8	191	H		agree	
+BLA188_p5_L03	1	1024	H		agree	son
+BLA188_p5_L03	2	347	M	B:349	undecided	discours
+BLA188_p5_L03	3	926	H		agree	que
+BLA188_p5_L03	4	580	H		agree	le
+BLA188_p5_L03	5	1154	H		agree	vous
+BLA188_p5_L03	6	919	H		agree	marqua
+BLA188_p5_L03	7	56	M		agree-flagged	afrique
+BLA188_p5_L03	8	1154	H		agree	vous
+BLA188_p5_L04	1	1201	H		agree	y
+BLA188_p5_L04	2	454	M	B:484	undecided	fais
+BLA188_p5_L04	3	581	H		agree	ie
+BLA188_p5_L04	4	1013	H		agree	s
+BLA188_p5_L04	5	659	H		agree	l
+BLA188_p5_L04	6	36	H		agree	at
+BLA188_p5_L04	7	30	H		agree	au
+BLA188_p5_L04	8	1109	H		agree	li
+BLA188_p5_L04	9	596	H	996	key-consistent	on
+BLA188_p5_L05	1	929	M		agree-flagged	que
+BLA188_p5_L05	2	695	H		agree	me
+BLA188_p5_L05	3	945	H	943	key-consistent	ri
+BLA188_p5_L05	4	1102	H		agree	se
+BLA188_p5_L05	5	1290	H		agree	
+BLA188_p5_L05	6	746	M	B:?	undecided	
+BLA188_p5_L05	7	162	H		agree	car
+BLA188_p5_L05	8	1024	H		agree	son
+BLA188_p5_L06	1	1099	H		agree	sentiment
+BLA188_p5_L06	2	386	H		agree	est
+BLA188_p5_L06	3	103	H		agree	aujourd'huy
+BLA188_p5_L06	4	441	H		agree	execute
+BLA188_p5_L06	5	381	H		agree	on
+BLA188_p5_L06	6	1114	H		agree	tout
+BLA188_p5_L06	7	385	H		agree	et
+BLA188_p5_L06	8	1020	H		agree	si
+BLA188_p5_L06	9	596	H		agree	on
+BLA188_p5_L07	1	356	H		agree	donne
+BLA188_p5_L07	2	660	H		agree	la
+BLA188_p5_L07	3	693	H		agree	main
+BLA188_p5_L07	4	18	H		agree	a
+BLA188_p5_L07	5	1149	H		agree	une
+BLA188_p5_L07	6	843	H		agree	paix
+BLA188_p5_L07	7	101	H		agree	avec
+BLA188_p5_L07	8	325	H		agree	desavantage
+BLA188_p5_L07	9	192	H		agree	certain
+BLA188_p5_L08	1	588	H		agree	il
+BLA188_p5_L08	2	386	H		agree	est
+BLA188_p5_L08	3	605	H		agree	immancable
+BLA188_p5_L08	4	922	H		agree	qu'
+BLA188_p5_L08	5	796	H		agree	on
+BLA188_p5_L08	6	756	H		agree-flagged,key-consistent	ne
+BLA188_p5_L08	7	659	H		agree	p'econte
+BLA188_p5_L08	8	441	M	B:941	undecided	
+BLA188_p5_L09	1	942	H		agree	va
+BLA188_p5_L09	2	600	H		agree	icy
+BLA188_p5_L09	3	833	H	533	key-consistent	point
+BLA188_p5_L09	4	289	H		agree	du
+BLA188_p5_L09	5	1114	M	B:1119	undecided	tout
+BLA188_p5_L09	6	208	H		agree	comme
+BLA188_p5_L09	7	796	H	756	key-consistent	on
+BLA188_p5_L09	8	18	H		agree	a
+BLA188_p5_L10	1	461	H		agree	fait
+BLA188_p5_L10	2	282	H		agree	des
+BLA188_p5_L10	3	891	H		agree	preliminaire
+BLA188_p5_L10	4	1013	H		agree	s
+BLA188_p5_L10	5	1243	H		agree	
+BLA188_p5_L10	6	580	H		agree	le
+BLA188_p5_L10	7	1032	H		agree	fu
+BLA188_p5_L10	8	594	H		agree	is
+BLA188_p5_L11	1	192	H		agree	certain
+BLA188_p5_L11	2	295	M	B:298	undecided	de
+BLA188_p5_L11	3	163	H		agree	ce
+BLA188_p5_L11	4	155	M	B:195	undecided	cy
+BLA188_p5_L11	5	1293	M		agree-flagged	l'
+BLA188_p5_L11	6	659	H		agree	l'
+BLA188_p5_L11	7	54	H	51	key-consistent	affection
+BLA188_p5_L11	8	926	H		agree	que
+BLA188_p5_L11	9	935	M	B:939	undecided	monsieur
+BLA188_p5_L12	1	822	H		agree	ra
+BLA188_p5_L12	2	1109	H	409	key-consistent	li
+BLA188_p5_L12	3	506	H		agree	g
+BLA188_p5_L12	4	758	H		agree	no
+BLA188_p5_L12	5	18	H		agree	a
+BLA188_p5_L12	6	835	H		agree	pour
+BLA188_p5_L12	7	502	H		agree	moi
+BLA188_p5_L12	8	1013	M	B:1018	undecided	fer
+BLA188_p5_L13	1	792	H		agree	oit
+BLA188_p5_L13	2	1185	H		agree	utile
+BLA188_p5_L13	3	1020	H		agree	si
+BLA188_p5_L13	4	396	M	B:796	undecided	on
+BLA188_p5_L13	5	1013	H		agree	s'explique
+BLA188_p5_L13	6	445	M	B:945	undecided	oit
+BLA188_p5_L13	7	792	H		agree	davantage
+BLA188_p5_L13	8	295	M	B:298	undecided	avantage
+BLA188_p5_L14	1	1350	H		agree	le
+BLA188_p5_L14	2	580	H		agree	fu
+BLA188_p5_L14	3	1032	H		agree	is
+BLA188_p5_L14	4	594	H		agree	surpris
+BLA188_p5_L14	5	1085	H		agree	que
+BLA188_p5_L14	6	926	H		agree	qua
+BLA188_p5_L14	7	925	M	B:923	undecided	si
+BLA188_p5_L14	8	1020	H		agree	
+BLA188_p5_L15	1	1114	H		agree	tout
+BLA188_p5_L15	2	385	H		agree	ce
+BLA188_p5_L15	3	695	H		agree	me
+BLA188_p5_L15	4	1013	H		agree	s
+BLA188_p5_L15	5	692	M	B:652	undecided	lettres
+BLA188_p5_L15	6	1013	H		agree	
+BLA188_p5_L15	7	795	H		agree	vient
+BLA188_p5_L15	8	404	H		agree	egar
+BLA188_p5_L16	1	369	H		agree	e
+BLA188_p5_L16	2	385	H		agree	es
+BLA188_p5_L16	3	588	H		agree	il
+BLA188_p5_L16	4	476	H		agree	faut
+BLA188_p5_L16	5	926	H		agree	que
+BLA188_p5_L16	6	828	H		agree	par
+BLA188_p5_L16	7	661	H		agree	le
+BLA188_p5_L16	8	892	H		agree	premier
+BLA188_p5_L17	1	259	H		agree	cour
+BLA188_p5_L17	2	576	H		agree	i
+BLA188_p5_L17	3	384	H		agree	er
+BLA188_p5_L17	4	446	H		agree	extraordinaire
+BLA188_p5_L17	5	1154	H		agree-flagged,key-consistent	vous
+BLA188_p5_L17	6	690	M		agree-flagged	vous
+BLA188_p5_L17	7	426	H		agree	m
+BLA188_p5_L17	8	385	H		agree	envoyes
+BLA188_p5_L18	1	1198	H		agree	un
+BLA188_p5_L18	2	554	M	B:354	undecided	nouveau
+BLA188_p5_L18	3	164	H		agree	ch
+BLA188_p5_L18	4	584	H		agree	if
+BLA188_p5_L18	5	943	H		agree	re
+BLA188_p5_L18	6	732	H		agree	mieux
+BLA188_p5_L18	7	169	H		agree	com
+BLA188_p5_L18	8	831	H		agree	po
+BLA188_p6_L01	1	1013	H		agree	se
+BLA188_p6_L01	2	385	H		agree	et
+BLA188_p6_L01	3	1149	H		agree	une
+BLA188_p6_L01	4	555	M	B:955	undecided	nouvelle
+BLA188_p6_L01	5	21	H		agree	ad
+BLA188_p6_L01	6	945	H		agree	ra
+BLA188_p6_L01	7	1013	H		agree	se
+BLA188_p6_L01	8	385	M	A:-	gap	et
+BLA188_p6_L02	1	932	H		agree	quelque
+BLA188_p6_L02	2	1041	H		agree	secours
+BLA188_p6_L02	3	385	H		agree	et
+BLA188_p6_L02	4	924	M	B:954	undecided	repon
+BLA188_p6_L02	5	1013	H	1015	key-consistent	se
+BLA189_p3_L01	1	208	H		agree	comme
+BLA189_p3_L01	2	659	H		agree	l'
+BLA189_p3_L01	3	78	H		agree	ambassadeur
+BLA189_p3_L01	4	278	H		agree	de
+BLA189_p3_L01	5	502	H		agree	france
+BLA189_p3_L02	1	659	H		agree	l'
+BLA189_p3_L02	2	807	H		agree	obstin
+BLA189_p3_L02	3	18	H		agree	a
+BLA189_p3_L02	4	1109	H		agree	ti
+BLA189_p3_L02	5	796	H		agree	on
+BLA189_p3_L03	1	580	H		agree	je
+BLA189_p3_L03	2	1154	H		agree	vous
+BLA189_p3_L03	3	92	H		agree	assure
+BLA189_p3_L03	4	770	H		agree	nonobstant
+BLA189_p3_L03	5	922	H		agree	qu
+BLA189_p3_L03	6	796	H		agree	on
+BLA189_p3_L03	7	386	H		agree	est
+BLA189_p3_L03	8	984	H		agree	resolu
+BLA189_p3_L03	9	600	H		agree	ici
+BLA189_p3_L04	1	278	H		agree	de
+BLA189_p3_L04	2	756	H		agree	ne
+BLA189_p3_L04	3	998	H		agree	rien
+BLA189_p3_L04	4	465	H		agree	fin
+BLA189_p3_L04	5	593	H		agree	ir
+BLA189_p3_L04	6	922	H		agree	qu
+BLA189_p3_L04	7	101	H		agree	avec
+BLA189_p3_L04	8	217	H		agree	concert
+BLA189_p3_L04	9	278	H		agree	de
+BLA189_p3_L04	10	1113	H		agree	tous
+BLA189_p3_L04	11	1250	H		agree	
+BLA189_p3_L05	1	802	H		agree	on
+BLA189_p3_L05	2	101	H		agree	avec
+BLA189_p3_L05	3	518	H		agree	garantie
+BLA189_p3_L05	4	759	H		agree	non
+BLA189_p3_L05	5	278	H		agree	de
+BLA189_p3_L05	6	850	H		agree	parole
+BLA189_p3_L05	7	692	H		agree	mais
+BLA189_p3_L05	8	278	H		agree	de
+BLA189_p3_L05	9	521	H		agree	garnison
+BLA189_p3_L06	1	402	H		agree	effect
+BLA189_p3_L06	2	576	H		agree	i
+BLA189_p3_L06	3	1145	H		agree	ve
+BLA189_p3_L06	4	1243	H		agree	
+BLA189_p3_L06	5	387	H		agree	et
+BLA189_p3_L06	6	930	H		agree	quils
+BLA189_p3_L06	7	1018	H		agree	ser
+BLA189_p3_L06	8	797	H		agree	ont
+BLA189_p3_L06	9	109	H		agree	aussitot
+BLA189_p3_L06	10	18	H		agree	a
+BLA189_p3_L07	1	958	H		agree	recommence
+BLA189_p3_L07	2	941	H		agree	r
+BLA189_p3_L07	3	1033	H		agree	sur
+BLA189_p3_L07	4	193	H		agree	chacun
+BLA189_p3_L07	5	381	H		agree	en
+BLA189_p3_L07	6	59	H		agree	action
+BLA189_p3_L07	7	1020	H		agree	si
+BLA189_p3_L07	8	796	H		agree	on
+BLA189_p3_L07	9	756	H		agree	ne
+BLA189_p3_L07	10	515	H		agree	gagne
+BLA189_p3_L08	1	660	H		agree	la
+BLA189_p3_L08	2	1007	H		agree	reine
+BLA189_p3_L08	3	823	H		agree	par
+BLA189_p3_L08	4	661	H		agree	le
+BLA189_p3_L08	5	691	H		agree	ma
+BLA189_p3_L08	6	947	H		agree	ri
+BLA189_p3_L08	7	18	H		agree	a
+BLA189_p3_L08	8	508	H		agree	ge
+BLA189_p3_L08	9	802	H		agree	ou
+BLA189_p3_L08	10	823	H		agree	par
+BLA189_p3_L08	11	659	H		agree	l'
+BLA189_p3_L08	12	638	H		agree	italie
+BLA189_p3_L09	1	162	H		agree	car
+BLA189_p3_L09	2	658	H		agree	l
+BLA189_p3_L09	3	369	H		agree	e
+BLA189_p3_L09	4	1006	H		agree	roy
+BLA189_p3_L09	5	754	H		agree	n
+BLA189_p3_L09	6	58	H		agree	agit
+BLA189_p3_L09	7	18	H		agree	a
+BLA189_p3_L09	8	599	H		agree	jamais
+BLA189_p3_L09	9	101	H		agree	avec
+BLA189_p3_L09	10	242	H		agree	continuation
+BLA189_p3_L10	1	278	H		agree	de
+BLA189_p3_L10	2	140	H		agree	bonne
+BLA189_p3_L10	3	256	H		agree	correspondance
+BLA189_p3_L11	1	1240	H		agree	que
+BLA189_p3_L11	2	1324	H		agree	gi
+BLA189_p3_L11	3	926	H		agree	br
+BLA189_p3_L11	4	510	H		agree	al
+BLA189_p3_L11	5	123	H		agree	ter
+BLA189_p3_L11	6	28	H		agree	ne
+BLA189_p3_L11	7	1107	H		agree	ser
+BLA189_p3_L11	8	756	H		agree	ra
+BLA189_p3_L11	9	1017	H		agree	ra
+BLA189_p3_L11	10	942	H		agree	
+BLA189_p3_L12	1	944	H		agree	ren
+BLA189_p3_L12	2	289	H		agree	du
+BLA189_p3_L12	3	369	H		agree	e
+BLA189_p3_L13	1	735	H		agree	monsieur
+BLA189_p3_L13	2	647	H		agree	ken
+BLA189_p3_L13	3	756	H		agree	ne
+BLA189_p3_L13	4	756	H		agree	ne
+BLA189_p3_L13	5	695	H		agree	me
+BLA189_p3_L13	6	461	H		agree	fait
+BLA189_p3_L13	7	100	H		agree	aucun
+BLA189_p3_L13	8	224	H		agree	confidence
+BLA189_p3_L13	9	770	H		agree	nonobstant
+BLA189_p3_L14	1	691	H		agree	ma
+BLA189_p3_L14	2	140	H		agree	bonne
+BLA189_p3_L14	3	54	H		agree	affection
+BLA189_p3_L14	4	835	H		agree	pour
+BLA189_p3_L14	5	1154	H		agree	vous
+BLA189_p3_L14	6	692	H		agree	mais
+BLA189_p3_L14	7	588	H		agree	il
+BLA189_p3_L14	8	386	H		agree	est
+BLA189_p3_L14	9	1063	H		agree	soupcon
+BLA189_p3_L14	10	389	H		agree	eu
+BLA189_p3_L14	11	1200	H		agree	x
+BLA189_p3_L15	1	399	H		agree	einre
+BLA189_p3_L15	2	880	M	B:890	undecided	plus
+BLA189_p3_L15	3	695	M	B:625	undecided	juste
+BLA189_p3_L15	4	696	H		agree	ment
+BLA189_p3_L15	5	929	H		agree	quil
+BLA189_p3_L15	6	756	H		agree	ne
+BLA189_p3_L15	7	1065	H		agree	souhaite
+BLA189_p3_L16	1	691	H		agree	ma
+BLA189_p3_L16	2	320	H		agree	demarche
+BLA189_p3_L17	1	735	H		agree	monsieur
+BLA189_p3_L17	2	822	H		agree	pa
+BLA189_p3_L17	3	1109	H		agree	ti
+BLA189_p3_L17	4	506	H		agree	g
+BLA189_p3_L17	5	758	H		agree	no
+BLA189_p3_L17	6	18	H		agree	a
+BLA189_p3_L17	7	900	H		agree	pris
+BLA189_p3_L17	8	835	H		agree	pour
+BLA189_p3_L17	9	702	H		agree	moi
+BLA189_p3_L17	10	1149	H		agree	une
+BLA189_p3_L18	1	54	H		agree	affection
+BLA189_p3_L18	2	591	H		agree	in
+BLA189_p3_L18	3	1155	H		agree	ut
+BLA189_p3_L18	4	588	H		agree	il
+BLA189_p3_L18	5	369	H		agree	e
+BLA189_p3_L18	6	842	H		agree	puis
+BLA189_p3_L18	7	926	H		agree	que
+BLA189_p3_L18	8	998	H		agree	rien
+BLA189_p3_L18	9	756	H		agree	ne
+BLA189_p3_L18	10	695	H		agree	me
+BLA189_p3_L19	1	1147	H		agree	vi
+BLA189_p3_L19	2	381	H		agree	en
+BLA189_p3_L19	3	1099	H		agree	t
+BLA189_p3_L19	4	278	H		agree	de
+BLA189_p3_L19	5	1176	H		agree	votre
+BLA189_p3_L19	6	851	H		agree	part
+BLA189_p3_L19	7	18	H		agree	a
+BLA189_p3_L19	8	344	H		agree	dire
+BLA189_p3_L19	9	757	H		agree	ni
+BLA189_p3_L19	10	473	H		agree	faire
+BLA190_p5_L01	1	737	H	757	key-consistent	monsieur
+BLA190_p5_L01	2	647	H		agree	ken
+BLA190_p5_L01	3	1240	H		agree	
+BLA190_p5_L01	4	756	H		agree	ne
+BLA190_p5_L02	1	690	H		agree	m'
+BLA190_p5_L02	2	113	H		agree	ayant
+BLA190_p5_L02	3	279	H		agree	dem
+BLA190_p5_L02	4	981	H		agree	en
+BLA190_p5_L02	5	278	H		agree	de
+BLA190_p5_L02	6	1020	H		agree	si
+BLA190_p5_L02	7	530	H		agree	je
+BLA190_p5_L03	1	399	H		agree	ecrire
+BLA190_p5_L03	2	323	H		agree	par
+BLA190_p5_L03	3	1024	H		agree	son
+BLA190_p5_L03	4	322	H		agree	dernier
+BLA190_p5_L03	5	259	H		agree	cour
+BLA190_p5_L03	6	381	H		agree	ier
+BLA190_p5_L03	7	941	H		agree	r
+BLA190_p5_L04	1	659	H		agree	l'
+BLA190_p5_L04	2	111	H		agree	autre
+BLA190_p5_L04	3	592	H		agree	so
+BLA190_p5_L04	4	1143	H		agree	u
+BLA190_p5_L04	5	941	H		agree	r
+BLA190_p5_L04	6	1250	H		agree	
+BLA190_p5_L04	7	580	H		agree	ge
+BLA190_p5_L05	1	26	H		agree	ai
+BLA190_p5_L05	2	974	H		agree	repondu
+BLA190_p5_L05	3	926	H		agree	que
+BLA190_p5_L05	4	759	H		agree	non
+BLA190_p5_L05	5	846	M		agree-flagged	parceque
+BLA190_p5_L06	1	756	H		agree	ne
+BLA190_p5_L06	2	1038	H		agree	scavoi
+BLA190_p5_L06	3	1013	H		agree	s
+BLA190_p5_L06	4	922	H		agree	qu'ecrire
+BLA190_p5_L06	5	399	H		agree	ecrire
+BLA190_p5_L06	6	1243	H		agree	il
+BLA190_p5_L06	7	588	H		agree	a
+BLA190_p5_L06	8	18	H		agree	aussitot
+BLA190_p5_L06	9	109	H		agree	re
+BLA190_p5_L06	10	943	H		agree	pris
+BLA190_p5_L06	11	900	H		agree	que
+BLA190_p5_L06	12	926	H		agree	je
+BLA190_p5_L06	13	560	H		agree	fais
+BLA190_p5_L06	14	474	H		agree	fais
+BLA190_p5_L07	1	191	M	B:791	undecided	sois
+BLA190_p5_L07	2	137	H		agree	bien
+BLA190_p5_L07	3	910	H		agree	quisque
+BLA190_p5_L08	1	756	H		agree	ne
+BLA190_p5_L08	2	833	H		agree	point
+BLA190_p5_L08	3	970	H		agree	rencontre
+BLA190_p5_L08	4	941	H		agree	r
+BLA190_p5_L08	5	661	H		agree	le
+BLA190_p5_L08	6	1182	H		agree	vray
+BLA190_p5_L08	7	435	H		agree	etat
+BLA190_p5_L08	8	282	H		agree	des
+BLA190_p5_L08	9	53	H		agree	affaire
+BLA190_p5_L08	10	1013	H	1012	key-consistent	s
+BLA190_p5_L08	11	757	H		agree	ni
+BLA190_p5_L08	12	661	H		agree	le
+BLA190_p5_L08	13	331	H		agree	dessein
+BLA190_p5_L09	1	1261	M		agree-flagged	a
+BLA190_p5_L09	2	18	H		agree	quoy
+BLA190_p5_L09	3	926	H		agree	je
+BLA190_p5_L09	4	580	H		agree	dit
+BLA190_p5_L09	5	345	H		agree	
+BLA190_p5_L10	1	163	H		agree	ce
+BLA190_p5_L10	2	753	H		agree	ne'est
+BLA190_p5_L10	3	386	H		agree	oit
+BLA190_p5_L10	4	292	M	B:792	undecided	pas
+BLA190_p5_L10	5	824	H		agree	ma
+BLA190_p5_L10	6	691	H		agree	faute
+BLA190_p5_L10	7	477	H		agree	faute
+BLA190_p5_L11	1	926	H		agree	que
+BLA190_p5_L11	2	691	H		agree	ma
+BLA190_p5_L11	3	140	H		agree	bonne
+BLA190_p5_L11	4	613	H		agree	inclination
+BLA190_p5_L12	1	695	H		agree	me
+BLA190_p5_L12	2	971	H		agree	rendre
+BLA190_p5_L12	3	390	H		agree	ex
+BLA190_p5_L12	4	174	H		agree	au
+BLA190_p5_L12	5	1014	H		agree	sa
+BLA190_p5_L12	6	130	H		agree	ble
+BLA190_p5_L12	7	387	H		agree	et
+BLA190_p5_L12	8	922	H		agree	qu'
+BLA190_p5_L12	9	381	H		agree	en
+BLA190_p5_L12	10	1114	H		agree	tout
+BLA190_p5_L12	11	133	H		agree	cas
+BLA190_p5_L12	12	575	H		agree	il
+BLA190_p5_L13	1	26	H		agree	ai
+BLA190_p5_L13	2	701	H		agree	mo
+BLA190_p5_L13	3	594	H		agree	oit
+BLA190_p5_L13	4	732	H		agree	mieux
+BLA190_p5_L13	5	1154	H		agree	vous
+BLA190_p5_L13	6	694	H		agree	man
+BLA190_p5_L13	7	281	H		agree	der
+BLA190_p5_L14	1	867	H		agree	pense
+BLA190_p5_L14	2	385	H		agree	es
+BLA190_p5_L14	3	18	H		agree	a
+BLA190_p5_L14	4	1154	H		agree	vous
+BLA190_p5_L14	5	928	H		agree	qui
+BLA190_p5_L14	6	113	H		agree	ayant
+BLA190_p5_L14	7	278	H		agree	de
+BLA190_p5_L14	8	659	H		agree	l'
+BLA190_p5_L14	9	54	H		agree	affection
+BLA190_p5_L14	10	835	H		agree	pour
+BLA190_p5_L14	11	702	H		agree	moi
+BLA190_p5_L14	12	1121	H		agree	tache
+BLA190_p5_L14	13	942	H		agree	ri
+BLA190_p5_L15	1	385	H		agree	est
+BLA190_p5_L15	2	278	H		agree	de
+BLA190_p5_L15	3	473	H		agree	faire
+BLA190_p5_L15	4	1158	H		agree	valoir
+BLA190_p5_L15	5	691	H		agree	ma
+BLA190_p5_L15	6	140	H		agree	bonne
+BLA190_p5_L15	7	425	H		agree	envie
+BLA190_p5_L15	8	1250	H		agree	
+BLA190_p5_L15	9	157	H		agree	c'
+BLA190_p5_L15	10	386	H		agree	c'est
+BLA190_p5_L15	11	600	H		agree	icy
+BLA190_p5_L15	12	802	H		agree	ou
+BLA190_p5_L16	1	588	H		agree	il
+BLA190_p5_L16	2	690	H		agree	m'
+BLA190_p5_L16	3	18	H		agree	a
+BLA190_p5_L16	4	1033	H		agree	sur
+BLA190_p5_L16	5	900	H		agree	pris
+BLA190_p5_L16	6	381	H		agree	en
+BLA190_p5_L16	7	695	H		agree	me
+BLA190_p5_L16	8	346	H		agree	quant
+BLA190_p5_L16	9	926	H		agree	que
+BLA190_p5_L16	10	580	H		agree	je
+BLA190_p5_L16	11	900	H		agree	pris
+BLA190_p5_L16	12	520	H		agree	garde
+BLA190_p5_L17	1	18	H		agree	a
+BLA190_p5_L17	2	1154	H		agree	vous
+BLA190_p5_L17	3	399	H		agree	ecrire
+BLA190_p5_L17	4	162	H		agree	car
+BLA190_p5_L17	5	1176	H		agree	votre
+BLA190_p5_L17	6	532	H		agree	gouvernement
+BLA190_p5_L17	7	1121	H		agree	tache
+BLA190_p5_L17	8	792	H		agree	oit
+BLA190_p5_L17	9	18	H		agree	a
+BLA190_p5_L17	10	307	H		agree	decouvrir
+BLA190_p5_L17	11	192	H		agree	certain
+BLA190_p5_L17	12	369	H		agree	e
+BLA190_p5_L17	13	256	H		agree	correspondance
+BLA190_p5_L17	14	928	H		agree	que
+BLA190_p5_L18	1	756	H		agree	ne
+BLA190_p5_L19	1	829	H		agree	je
+BLA190_p5_L19	2	26	H		agree	ai
+BLA190_p5_L19	3	1022	H		agree	so
+BLA190_p5_L19	4	595	H		agree	it
+BLA190_p5_L19	5	833	H		agree	point
+BLA190_p5_L20	1	291	M	B:791	undecided	c'est
+BLA190_p5_L20	2	597	H		agree	jalouse
+BLA190_p5_L20	3	563	H		agree	humeur
+BLA190_p5_L20	4	928	H		agree	qui
+BLA190_p6_L01	1	387	H		agree	et
+BLA190_p6_L01	2	922	H		agree	que
+BLA190_p6_L01	3	38	H		agree	au
+BLA190_p6_L01	4	674	H		agree	lieu
+BLA190_p6_L01	5	278	H		agree	de
+BLA190_p6_L01	6	271	H		agree	d'
+BLA190_p6_L01	7	406	H		agree	employ
+BLA190_p6_L01	8	384	H		agree	er
+BLA190_p6_L01	9	28	H		agree	au
+BLA190_p6_L01	10	157	M	B:131	undecided	
+BLA190_p6_L01	11	909	H		agree	public
+BLA190_p6_L01	12	659	H		agree	l'
+BLA190_p6_L02	1	43	H		agree	acces
+BLA190_p6_L02	2	929	H		agree	quil
+BLA190_p6_L02	3	695	H		agree	me
+BLA190_p6_L02	4	1150	H		agree	vo
+BLA190_p6_L02	5	595	H		agree	it
+BLA190_p6_L02	6	67	H	65	key-consistent	avoir
+BLA190_p6_L02	7	106	H	186	key-consistent	auprez
+BLA190_p6_L02	8	278	H		agree	de
+BLA190_p6_L02	9	737	H		agree	monsieur
+BLA190_p6_L02	10	822	H		agree	pa
+BLA190_p6_L02	11	1109	H		agree	ti
+BLA190_p6_L02	12	506	H		agree	g
+BLA190_p6_L03	1	758	H		agree	no
+BLA190_p6_L04	1	1020	H		agree	si
+BLA190_p6_L04	2	580	H		agree	je
+BLA190_p6_L04	3	842	H		agree	puis
+BLA190_p6_L04	4	169	H		agree	com
+BLA190_p6_L04	5	821	H		agree	p
+BLA190_p6_L04	6	1107	M		agree-flagged	ter
+BLA190_p6_L04	7	1033	H		agree	sur
+BLA190_p6_L04	8	932	H		agree	quelque
+BLA190_p6_L04	9	34	H		agree	ar
+BLA190_p6_L04	10	508	H		agree	ge
+BLA190_p6_L04	11	754	H		agree-flagged,key-consistent	n
+BLA190_p6_L05	1	1099	H		agree	t
+BLA190_p6_L05	2	278	H		agree	de
+BLA190_p6_L05	3	1176	H		agree	votre
+BLA190_p6_L05	4	851	H		agree	part
+BLA190_p6_L05	5	823	H		agree	par
+BLA190_p6_L05	6	54	H		agree	affection
+BLA190_p6_L05	7	381	H		agree-flagged,key-consistent	en
+BLA190_p6_L05	8	113	H		agree	ayant
+BLA190_p6_L05	9	533	H		agree	grand
+BLA190_p6_L05	10	136	H		agree	besoin
+BLA190_p6_L05	11	588	H		agree	il
+BLA190_p6_L06	1	756	H		agree	ne
+BLA190_p6_L06	2	1017	H		agree	se
+BLA190_p6_L06	3	942	H		agree	ra
+BLA190_p6_L06	4	833	H		agree	point
+BLA190_p6_L06	5	869	H		agree	perdu
+BLA190_p6_L06	6	719	H		agree	marque
+BLA190_p6_L06	7	1013	H		agree	s
+BLA190_p6_L06	8	702	H		agree-flagged,key-consistent	moi
+BLA190_p6_L06	9	1033	H		agree	sur
+BLA190_p6_L06	10	928	H		agree	qui
+BLA190_p6_L06	11	580	H		agree	se
+BLA190_p6_L07	1	842	H		agree	puis
+BLA190_p6_L07	2	1109	H		agree	ti
+BLA190_p6_L07	3	943	H		agree	ve
+BLA190_p6_L07	4	941	H		agree	r
+BLA190_p6_L07	5	38	H		agree	au
+BLA190_p6_L07	6	880	H		agree	plustot
+BLA191_p5_L01	1	659	H		agree	
+BLA191_p5_L01	2	805	H		agree	
+BLA191_p5_L01	3	926	H		agree	
+BLA191_p5_L01	4	580	H		agree	
+BLA191_p5_L01	5	1154	H		agree	
+BLA191_p5_L01	6	26	H		agree	
+BLA191_p5_L01	7	697	H	B:697	image:69> =697	
+BLA191_p5_L01	8	665	H		agree	
+BLA191_p5_L01	9	941	M		image:final stroke reads 1 not >;passes both 947	
+BLA191_p5_L01	10	270	H	B:270	image:2>0 =270	
+BLA191_p5_L01	11	386	M	B:786	image:first digit overwritten, bold 3 over another figure	
+BLA191_p5_L02	1	137	H		image:13> =137;passes both 135	
+BLA191_p5_L02	2	533	H		agree	
+BLA191_p5_L02	3	369	H		agree	
+BLA191_p5_L02	4	835	H		agree	
+BLA191_p5_L02	5	1176	H		agree	
+BLA191_p5_L02	6	672	H		agree	
+BLA191_p5_L02	7	289	H		agree	
+BLA191_p5_L02	8	6	H		agree	
+BLA191_p5_L02	9	575	H		agree	
+BLA191_p5_L02	10	1201	H		agree	
+BLA191_p5_L02	11	26	H		agree	
+BLA191_p5_L03	1	924	H		agree	
+BLA191_p5_L03	2	163	H		agree	
+BLA191_p5_L03	3	1210	H		agree	
+BLA191_p5_L03	4	278	H		agree	
+BLA191_p5_L03	5	689	H		agree	
+BLA191_p5_L03	6	34	H		agree	
+BLA191_p5_L03	7	1013	H		agree	
+BLA191_p5_L03	8	18	H		agree	
+BLA191_p5_L03	9	660	H		agree	
+BLA191_p5_L03	10	892	H		agree	
+BLA191_p5_L03	11	369	H		agree	
+BLA191_p5_L04	1	21	H		agree	
+BLA191_p5_L04	2	945	H		agree	
+BLA191_p5_L04	3	1017	H		image:101>	
+BLA191_p5_L04	4	1250	H		agree	
+BLA191_p5_L04	5	924	H		agree	
+BLA191_p5_L04	6	1154	H		agree	
+BLA191_p5_L04	7	695	H		agree	
+BLA191_p5_L04	8	460	H		agree	
+BLA191_p5_L04	9	945	H		agree	
+BLA191_p5_L04	10	1038	H		agree	
+BLA191_p5_L05	1	208	H		agree	
+BLA191_p5_L05	2	580	H		agree	
+BLA191_p5_L05	3	285	H		agree	
+BLA191_p5_L05	4	594	H		agree	
+BLA191_p5_L05	5	58	H		agree	
+BLA191_p5_L05	6	84	H		agree	
+BLA191_p5_L05	7	661	H		agree	
+BLA191_p5_L05	8	278	H		image:2>8 =278;passes both 258	
+BLA191_p5_L05	9	823	H		agree	
+BLA191_p5_L05	10	1099	M		image:second figure small, reads 0;passA 1899 out of range	
+BLA191_p5_L05	11	289	H		agree	
+BLA191_p5_L06	1	214	M	B:274	image:middle glyph 1 or 7;passB 274	
+BLA191_p5_L06	2	162	H		agree	
+BLA191_p5_L06	3	737	H		image:clear	
+BLA191_p5_L06	4	647	H		image:clear	
+BLA191_p5_L06	5	756	H		image:clear	
+BLA191_p5_L06	6	690	H		agree	
+BLA191_p5_L06	7	65	H		agree	
+BLA191_p5_L06	8	692	H		agree	
+BLA191_p5_L06	9	588	H		agree	
+BLA191_p5_L06	10	754	H		image:clear	
+BLA191_p5_L06	11	18	H		agree	
+BLA191_p5_L07	1	100	H		agree	
+BLA191_p5_L07	2	816	H		agree	
+BLA191_p5_L07	3	282	H		agree	
+BLA191_p5_L07	4	1019	H		agree	
+BLA191_p5_L07	5	711	H		agree	
+BLA191_p5_L07	6	1013	H		agree	
+BLA191_p5_L07	7	835	H		agree	
+BLA191_p5_L07	8	702	H		agree	
+BLA191_p5_L07	9	937	M		image:93) final glyph as in 186 p3 737;passes both 933	
+BLA191_p5_L07	10	275	H		image:clear	
+BLA191_p5_L07	11	659	H		agree	
+BLA191_p5_L08	1	53	H		agree	
+BLA191_p5_L08	2	824	H		agree	
+BLA191_p5_L08	3	1017	H		image:clear	
+BLA191_p5_L08	4	369	H		agree	
+BLA191_p5_L08	5	580	H		agree	
+BLA191_p5_L08	6	666	H		agree	
+BLA191_p5_L08	7	576	H		image:clear	
+BLA191_p5_L08	8	26	H		agree	
+BLA191_p5_L08	9	461	H		agree	
+BLA191_p5_L08	10	1118	H		agree	
+BLA191_p5_L08	11	122	H		agree	
+BLA191_p5_L09	1	1052	H		image:line eye-checked clear	
+BLA191_p5_L09	2	163	H		image:line eye-checked clear	
+BLA191_p5_L09	3	1016	H		image:line eye-checked clear	
+BLA191_p5_L09	4	929	H		image:line eye-checked clear	
+BLA191_p5_L09	5	690	H		image:line eye-checked clear	
+BLA191_p5_L09	6	26	H		image:line eye-checked clear	
+BLA191_p5_L09	7	1099	H		image:line eye-checked clear	
+BLA191_p5_L09	8	599	H		image:line eye-checked clear	
+BLA191_p5_L09	9	345	H		image:line eye-checked clear	
+BLA191_p5_L09	10	163	H		image:line eye-checked clear	
+BLA191_p5_L09	11	926	H		image:line eye-checked clear	
+BLA191_p5_L10	1	580	H		image:line eye-checked clear	
+BLA191_p5_L10	2	831	H		image:line eye-checked clear	
+BLA191_p5_L10	3	1143	H		image:line eye-checked clear	
+BLA191_p5_L10	4	1150	H		image:line eye-checked clear	
+BLA191_p5_L10	5	594	H		image:line eye-checked clear	
+BLA191_p5_L10	6	493	H		image:line eye-checked clear	
+BLA191_p5_L10	7	835	H		image:line eye-checked clear	
+BLA191_p5_L10	8	661	H		image:line eye-checked clear	
+BLA191_p5_L10	9	732	H		image:line eye-checked clear	
+BLA191_p5_L10	10	18	H		image:line eye-checked clear	
+BLA191_p5_L10	11	659	H		image:line eye-checked clear	
+BLA191_p5_L11	1	46	H		image:line eye-checked clear	
+BLA191_p5_L11	2	836	H		image:line eye-checked clear	
+BLA191_p5_L11	3	385	H		image:line eye-checked clear	
+BLA191_p5_L11	4	575	H		image:line eye-checked clear	
+BLA191_p5_L11	5	585	H		image:line eye-checked clear	
+BLA191_p5_L11	6	758	H		image:line eye-checked clear	
+BLA191_p5_L11	7	943	H		image:line eye-checked clear	
+BLA191_p5_L11	8	1152	H		image:line eye-checked clear	
+BLA191_p5_L11	9	623	H		image:line eye-checked clear	
+BLA191_p5_L11	10	1013	H		image:line eye-checked clear	
+BLA191_p5_L11	11	387	H	B:387	image:38> =387	
+BLA191_p5_L12	1	580	H		image:line eye-checked clear	
+BLA191_p5_L12	2	1018	M		agree-flagged	
+BLA191_p5_L12	3	26	M		agree-flagged	
+BLA191_p5_L12	4	591	M		agree-flagged	
+BLA191_p5_L12	5	1185	M		agree-flagged	
+BLA191_p5_L12	6	275	M		agree-flagged	
+BLA191_p5_L12	7	659	M		agree-flagged	
+BLA191_p5_L12	8	585	M		agree-flagged	
+BLA191_p5_L12	9	758	M		agree-flagged	
+BLA191_p5_L12	10	942	M		agree-flagged	
+BLA191_p5_L12	11	754	M		agree-flagged	
+BLA191_p5_L12	12	163	M		agree-flagged	
+BLA191_p5_L13	1	694	H		agree	
+BLA191_p5_L13	2	282	H		agree	
+BLA191_p5_L13	3	702	H		image:clear	
+BLA191_p5_L13	4	357	H	B:357	image:35> =357	
+BLA191_p5_L13	5	932	H		agree	
+BLA191_p5_L13	6	816	H		agree	
+BLA191_p5_L13	7	835	H		agree	
+BLA191_p5_L13	8	691	H		agree	
+BLA191_p5_L13	9	222	H		agree	
+BLA194_p1_L01	1	837	M	B:534	undecided	monsieur
+BLA194_p1_L01	2	822	H		agree	raligno
+BLA194_p1_L01	3	1109	H		agree	
+BLA194_p1_L01	4	506	H		agree	
+BLA194_p1_L01	5	758	H		agree	
+BLA194_p1_L01	6	101	H		agree	avec
+BLA194_p1_L01	7	928	H		agree	qui
+BLA194_p1_L02	1	580	H		agree	le
+BLA194_p1_L02	2	1032	H		agree	fu
+BLA194_p1_L02	3	594	H		agree	is
+BLA194_p1_L02	4	495	H		agree	favorable
+BLA194_p1_L02	5	696	H		agree	ment
+BLA194_p1_L02	6	695	H		agree	me
+BLA194_p1_L03	1	1049	H		agree	semble
+BLA194_p1_L03	2	351	H		agree	dispose'
+BLA194_p1_L03	3	18	H		agree	a
+BLA194_p1_L03	4	34	M	A:-	gap	
+BLA194_p1_L03	5	692	M	A:?	undecided	
+BLA194_p1_L03	6	1013	H		agree	s'entendre
+BLA194_p1_L03	7	416	M	B:916	undecided	s'entendre
+BLA194_p1_L04	1	101	H		agree	avec
+BLA194_p1_L04	2	1154	H	1194	key-consistent	vous
+BLA194_p1_L04	3	381	H		agree	en
+BLA194_p1_L04	4	290	M		agree-flagged	d
+BLA194_p1_L04	5	918	H		agree	ro
+BLA194_p1_L04	6	536	M	B:576	undecided	
+BLA194_p1_L04	7	1120	H		agree	su
+BLA194_p1_L04	8	943	H	918	key-consistent	ve
+BLA194_p1_L05	1	588	H	508	key-consistent	il
+BLA194_p1_L05	2	695	H		agree	ne
+BLA194_p1_L05	3	659	H		agree	l'
+BLA194_p1_L05	4	18	H		agree	a
+BLA194_p1_L05	5	395	H		agree	dit
+BLA194_p1_L05	6	692	H		agree	mais
+BLA194_p1_L05	7	588	H		agree	il
+BLA194_p1_L05	8	754	H		agree	n
+BLA194_p1_L05	9	65	H		agree	ame
+BLA194_p1_L06	1	824	H		agree	pas
+BLA194_p1_L06	2	278	H		agree	de
+BLA194_p1_L06	3	425	M		agree-flagged	faire
+BLA194_p1_L06	4	660	H		agree	la
+BLA194_p1_L06	5	892	H		agree	premier
+BLA194_p1_L06	6	907	H		agree	proposition
+BLA194_p1_L06	7	1250	H		agree	
+BLA194_p1_L07	1	1020	H		agree	si
+BLA194_p1_L07	2	396	H		agree	on
+BLA194_p1_L07	3	1199	M	B:1159	undecided	veu
+BLA194_p1_L07	4	1099	H		agree	h
+BLA194_p1_L07	5	60	H		agree	agreable
+BLA194_p1_L07	6	475	H		agree	faire
+BLA194_p1_L07	7	278	H	298	key-consistent	de
+BLA194_p1_L07	8	1176	H		agree	votre
+BLA194_p1_L08	1	258	H		agree	cotes
+BLA194_p1_L08	2	385	H	389	key-consistent	et
+BLA194_p1_L08	3	1069	H		agree	soutenir
+BLA194_p1_L08	4	387	H		agree	et
+BLA194_p1_L08	5	891	H		agree	perfection
+BLA194_p1_L08	6	381	H		agree	perfectioner
+BLA194_p1_L08	7	639	M		agree-flagged	l'
+BLA194_p1_L08	8	53	H		agree	affaire
+BLA194_p1_L09	1	282	H		agree	des
+BLA194_p1_L09	2	521	H		agree	garnison
+BLA194_p1_L09	3	1018	H		agree	s
+BLA194_p1_L09	4	271	M	B:291	undecided	d'
+BLA194_p1_L09	5	638	H		agree	italie
+BLA194_p1_L09	6	575	M	B:595	undecided	j'
+BLA194_p1_L09	7	433	H		agree	espera
+BLA194_p1_L10	1	926	H		agree	que
+BLA194_p1_L10	2	655	M		agree-flagged	l'arrondissement
+BLA194_p1_L10	3	96	H		agree	
+BLA194_p1_L10	4	1013	H		agree	se
+BLA194_p1_L10	5	942	H		agree	ve
+BLA194_p1_L10	6	109	H		agree	aussitot
+BLA194_p1_L10	7	991	H		agree	faite
+BLA194_p1_L11	1	385	H	389	key-consistent	et
+BLA194_p1_L11	2	555	H		agree	heureux
+BLA194_p1_L11	3	1290	H		agree	
+BLA194_p1_L11	4	704	H		agree	mon
+BLA194_p1_L11	5	890	M		agree-flagged	pro
+BLA194_p1_L11	6	482	H		agree	jet
+BLA194_p1_L11	7	289	H		agree	du
+BLA194_p1_L11	8	691	H		agree	ma
+BLA194_p1_L12	1	943	H		agree	vi
+BLA194_p1_L12	2	18	H		agree	a
+BLA194_p1_L12	3	508	H		agree	ge
+BLA194_p1_L12	4	829	H		agree	peu
+BLA194_p1_L12	5	1013	H		agree	pou
+BLA194_p1_L12	6	991	H		agree	s'execute
+BLA194_p1_L12	7	921	M		agree-flagged	r
+BLA194_p1_L12	8	16	H		agree	a
+BLA194_p1_L12	9	660	H		agree	la
+BLA194_p1_L12	10	1081	H		agree	fuite
+BLA194_p1_L13	1	101	H		agree	avec
+BLA194_p1_L13	2	98	H		agree	avantage
+BLA194_p1_L13	3	295	H		agree	dans
+BLA194_p1_L13	4	659	H		agree	l'alliance
+BLA194_p1_L13	5	91	H		agree	
+BLA194_p1_L13	6	1240	H		agree	
+BLA194_p1_L13	7	692	H		agree	mais
+BLA194_p1_L13	8	205	H		agree	comme
+BLA194_p1_L13	9	1154	H	1159	key-consistent	vous
+BLA194_p1_L13	10	756	H		agree	ne
+BLA194_p1_L14	1	695	H		agree	me
+BLA194_p1_L14	2	461	H	161	key-consistent	fait
+BLA194_p1_L14	3	381	H		agree	as
+BLA194_p1_L14	4	100	H		agree	aucun
+BLA194_p1_L14	5	369	H		agree	e
+BLA194_p1_L14	6	?	M	B:?	undecided	
+BLA194_p1_L14	7	991	H		agree	reponse
+BLA194_p1_L14	8	163	H		agree	cen
+BLA194_p1_L14	9	1118	H		agree	
+BLA194_p1_L14	10	704	H		agree	mon
+BLA194_p2_L01	1	1135	H		agree	travaille
+BLA194_p2_L01	2	386	H		agree	est
+BLA194_p2_L01	3	869	H		agree	perdu
+BLA194_p2_L01	4	939	M	B:935	undecided	quoyque
+BLA194_p2_L01	5	595	H		agree	j'
+BLA194_p2_L01	6	381	H		agree	en
+BLA194_p2_L01	7	491	H		agree	tire
+BLA194_p2_L02	1	135	H		agree	remarque
+BLA194_p2_L02	2	835	H		agree	pour
+BLA194_p2_L02	3	660	H		agree	la
+BLA194_p2_L02	4	843	H		agree-flagged,key-consistent	paix
+BLA194_p2_L02	5	208	H		agree	comme
+BLA194_p2_L02	6	735	H		agree	monsieur
+BLA194_p2_L02	7	695	M	B:649	undecided	ken
+BLA194_p2_L03	1	956	M	B:556	undecided	ne
+BLA194_p2_L03	2	835	H		agree	par
+BLA194_p2_L03	3	592	H		agree	oit
+BLA194_p2_L03	4	1125	H		agree	temoigne
+BLA194_p2_L03	5	1243	H		agree	
+BLA194_p2_L03	6	1260	H		agree	

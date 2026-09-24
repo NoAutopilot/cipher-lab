@@ -1,0 +1,58 @@
+line	pos	group	conf	note
+BLA186_p1_L01	7	470	H	4>0 clear
+BLA186_p1_L01	8	778	M	reads 7>8 both leading glyphs the hand's 7;passes 758/738
+BLA186_p3_L01	1	737	H	73> final glyph is the hand's 7;passes both 733
+BLA186_p3_L01	13	593	H	clear
+BLA191_p5_L01	7	697	H	69> =697
+BLA191_p5_L01	9	941	M	final stroke reads 1 not >;passes both 947
+BLA191_p5_L01	10	270	H	2>0 =270
+BLA191_p5_L01	11	386	M	first digit overwritten, bold 3 over another figure
+BLA191_p5_L02	1	137	H	13> =137;passes both 135
+BLA191_p5_L04	3	1017	H	101>
+BLA191_p5_L05	8	278	H	2>8 =278;passes both 258
+BLA191_p5_L05	10	1099	M	second figure small, reads 0;passA 1899 out of range
+BLA191_p5_L06	1	214	M	middle glyph 1 or 7;passB 274
+BLA191_p5_L06	3	737	H	clear
+BLA191_p5_L06	4	647	H	clear
+BLA191_p5_L06	5	756	H	clear
+BLA191_p5_L06	10	754	H	clear
+BLA191_p5_L07	9	937	M	93) final glyph as in 186 p3 737;passes both 933
+BLA191_p5_L07	10	275	H	clear
+BLA191_p5_L08	3	1017	H	clear
+BLA191_p5_L08	7	576	H	clear
+BLA191_p5_L11	11	387	H	38> =387
+BLA191_p5_L13	3	702	H	clear
+BLA191_p5_L13	4	357	H	35> =357
+BLA191_p5_L09	1	1052	H	line eye-checked clear
+BLA191_p5_L09	2	163	H	line eye-checked clear
+BLA191_p5_L09	3	1016	H	line eye-checked clear
+BLA191_p5_L09	4	929	H	line eye-checked clear
+BLA191_p5_L09	5	690	H	line eye-checked clear
+BLA191_p5_L09	6	26	H	line eye-checked clear
+BLA191_p5_L09	7	1099	H	line eye-checked clear
+BLA191_p5_L09	8	599	H	line eye-checked clear
+BLA191_p5_L09	9	345	H	line eye-checked clear
+BLA191_p5_L09	10	163	H	line eye-checked clear
+BLA191_p5_L09	11	926	H	line eye-checked clear
+BLA191_p5_L10	1	580	H	line eye-checked clear
+BLA191_p5_L10	2	831	H	line eye-checked clear
+BLA191_p5_L10	3	1143	H	line eye-checked clear
+BLA191_p5_L10	4	1150	H	line eye-checked clear
+BLA191_p5_L10	5	594	H	line eye-checked clear
+BLA191_p5_L10	6	493	H	line eye-checked clear
+BLA191_p5_L10	7	835	H	line eye-checked clear
+BLA191_p5_L10	8	661	H	line eye-checked clear
+BLA191_p5_L10	9	732	H	line eye-checked clear
+BLA191_p5_L10	10	18	H	line eye-checked clear
+BLA191_p5_L10	11	659	H	line eye-checked clear
+BLA191_p5_L11	1	46	H	line eye-checked clear
+BLA191_p5_L11	2	836	H	line eye-checked clear
+BLA191_p5_L11	3	385	H	line eye-checked clear
+BLA191_p5_L11	4	575	H	line eye-checked clear
+BLA191_p5_L11	5	585	H	line eye-checked clear
+BLA191_p5_L11	6	758	H	line eye-checked clear
+BLA191_p5_L11	7	943	H	line eye-checked clear
+BLA191_p5_L11	8	1152	H	line eye-checked clear
+BLA191_p5_L11	9	623	H	line eye-checked clear
+BLA191_p5_L11	10	1013	H	line eye-checked clear
+BLA191_p5_L12	1	580	H	line eye-checked clear

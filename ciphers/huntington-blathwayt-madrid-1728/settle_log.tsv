@@ -1,0 +1,169 @@
+line	pos	A	B	gloss_here	gloss_elsewhere	rule	taken
+BLA179_p6_L02	6	383	355	et	383:[];355:[]	undecided	383
+BLA185_p5_L07	2	1185	1186	utile	1185:[('utile', 2)];1186:[]	key-consistent	1185
+BLA186_p1_L01	7	470	470			image	470
+BLA186_p1_L01	8	758	738		758:[('no', 14)];738:[]	undecided	758
+BLA186_p1_L01	8	758	738			image	778
+BLA186_p3_L01	1	733	733			image	737
+BLA186_p3_L01	13	593	593			image	593
+BLA187_p3_L02	6	238	258	de	238:[('consideration', 2)];258:[('de', 4), ('afait', 2)]	key-consistent	258
+BLA187_p3_L02	7	219	213	contest	219:[('conclu', 2)];213:[]	undecided	219
+BLA187_p3_L03	2	278	258	de	278:[('de', 51), ('monsieur', 1)];258:[('de', 4), ('afait', 2)]	undecided	278
+BLA187_p3_L03	4	909	509	majeste	909:[('public', 2)];509:[]	undecided	909
+BLA187_p3_L05	8	1288	1233	bonnefoy	1288:[];1233:[]	undecided	1288
+BLA187_p3_L07	2	829	824	pas	"829:[('je', 1), (""qu'"", 1)];824:[('pas', 5), ('ma', 1)]"	key-consistent	824
+BLA187_p3_L07	8	385	387	et	385:[('es', 11), ('et', 8)];387:[('et', 16)]	undecided	385
+BLA187_p3_L10	3	137	135	bien	137:[('bien', 2)];135:[('remarque', 2)]	key-consistent	137
+BLA187_p3_L10	8	951	551	mettre	951:[('rendre', 2)];551:[('mettre', 1)]	key-consistent	551
+BLA188_p3_L01	2	298	278	de	298:[];278:[('de', 51), ('monsieur', 1)]	key-consistent	278
+BLA188_p3_L01	6	834	831	de	834:[('personne', 2)];831:[('po', 1)]	undecided	834
+BLA188_p3_L01	7	298	278	fa	298:[];278:[('de', 51), ('monsieur', 1)]	undecided	298
+BLA188_p3_L02	5	369	869	e	369:[('e', 24)];869:[('perdu', 4)]	key-consistent	369
+BLA188_p3_L04	9	672	692	lettre	672:[('lettre', 2)];692:[('mais', 11), ('il', 1)]	key-consistent	672
+BLA188_p3_L07	2	1025	1029	th	1025:[];1029:[('ste', 2)]	undecided	1025
+BLA188_p3_L07	6	1114	1119	tout	1114:[('tout', 8)];1119:[('tout', 4)]	undecided	1114
+BLA188_p3_L09	1	252	282	dgo	252:[];282:[('des', 10)]	undecided	252
+BLA188_p3_L09	4	389	388		389:[('eu', 2)];388:[('en', 2)]	undecided	389
+BLA188_p3_L10	1	?	282		282:[('des', 10)]	undecided	282
+BLA188_p3_L10	8	831	837	non	831:[('po', 1)];837:[]	undecided	831
+BLA188_p3_L11	2	495	795	it	495:[('favorable', 2), ('it', 1)];795:[('vient', 2)]	key-consistent	495
+BLA188_p3_L13	1	298	278	de	298:[];278:[('de', 51), ('monsieur', 1)]	key-consistent	278
+BLA188_p3_L13	5	238	258	de	238:[('consideration', 2)];258:[('de', 4), ('afait', 2)]	key-consistent	258
+BLA188_p3_L13	10	-	?			undecided	?
+BLA188_p3_L16	2	459	454	espagne	459:[('fais', 2)];454:[]	undecided	459
+BLA188_p3_L17	1	1195	1193	v	1195:[];1193:[]	undecided	1195
+BLA188_p3_L17	9	388	588	et	388:[('en', 2)];588:[('il', 29), ('me', 1)]	undecided	388
+BLA188_p3_L18	8	291	251	d'	"291:[(""d'"", 1), (""d'etat"", 1)];251:[('d', 1), (""d'"", 1)]"	undecided	291
+BLA190_p7_L04	4	583	588	il	583:[];588:[('il', 29), ('me', 1)]	key-consistent	588
+BLA190_p7_L05	1	278	258	de	278:[('de', 51), ('monsieur', 1)];258:[('de', 4), ('afait', 2)]	undecided	278
+BLA190_p7_L10	3	927	027	quel	927:[];027:[]	undecided	927
+BLA190_p7_L11	4	278	258	de	278:[('de', 51), ('monsieur', 1)];258:[('de', 4), ('afait', 2)]	undecided	278
+BLA190_p7_L13	2	1018	1015	sans	1018:[('sec', 2), ('ser', 2)];1015:[]	undecided	1018
+BLA188_p4_L02	3	599	999	or	599:[('jamais', 2)];999:[]	undecided	599
+BLA188_p4_L02	6	65	69	avit	65:[('ame', 1)];69:[]	undecided	65
+BLA188_p4_L03	7	348	398	disoit	348:[];398:[]	undecided	348
+BLA188_p4_L04	2	59	39	angleterre	59:[('agit', 2), ('action', 2)];39:[]	undecided	59
+BLA188_p4_L06	6	416	716	bien	416:[];716:[]	undecided	416
+BLA188_p4_L07	6	484	984	quil	484:[];984:[('resolu', 2)]	undecided	484
+BLA188_p4_L09	7	59	39	angleterre	59:[('agit', 2), ('action', 2)];39:[]	undecided	59
+BLA188_p4_L10	5	1092	1042	savoit	1092:[];1042:[('secret', 2)]	undecided	1092
+BLA188_p4_L15	1	378	-	ch	378:[]	gap	378
+BLA188_p4_L18	3	668	665	eustruck	668:[('l', 2)];665:[('lo', 2), ('co', 1)]	undecided	668
+BLA188_p5_L01	4	385	589	et	385:[('es', 11), ('et', 8)];589:[]	key-consistent	385
+BLA188_p5_L02	2	1015	1013	fe	1015:[];1013:[('s', 31), ('se', 5)]	undecided	1015
+BLA188_p5_L02	4	1149	1199	une	1149:[('une', 13), ('vi', 2)];1199:[]	key-consistent	1149
+BLA188_p5_L02	5	555	955	nouvelle	555:[('heureux', 2)];955:[]	undecided	555
+BLA188_p5_L03	2	347	349	discours	347:[];349:[]	undecided	347
+BLA188_p5_L04	2	454	484	fais	454:[];484:[]	undecided	454
+BLA188_p5_L04	9	596	996	on	596:[('on', 9), ('m', 1)];996:[]	key-consistent	596
+BLA188_p5_L05	3	943	945	ri	943:[('re', 7), ('pris', 1)];945:[('ri', 3), ('ma', 1)]	key-consistent	945
+BLA188_p5_L05	6	746	?		746:[]	undecided	746
+BLA188_p5_L08	8	441	941		441:[('execute', 2)];941:[('r', 32), ('v', 3)]	undecided	441
+BLA188_p5_L09	3	533	833	point	533:[('grand', 2)];833:[('point', 8)]	key-consistent	833
+BLA188_p5_L09	5	1114	1119	tout	1114:[('tout', 8)];1119:[('tout', 4)]	undecided	1114
+BLA188_p5_L09	7	756	796	on	756:[('ne', 33), ('no', 2)];796:[('on', 17), ('ne', 1)]	key-consistent	796
+BLA188_p5_L11	2	295	298	de	295:[('dans', 2)];298:[]	undecided	295
+BLA188_p5_L11	4	155	195	cy	155:[];195:[]	undecided	155
+BLA188_p5_L11	7	51	54	affection	51:[];54:[('affection', 12)]	key-consistent	54
+BLA188_p5_L11	9	935	939	monsieur	935:[('etat', 1)];939:[]	undecided	935
+BLA188_p5_L12	2	409	1109	li	409:[];1109:[('ti', 15), ('li', 3)]	key-consistent	1109
+BLA188_p5_L12	8	1013	1018	fer	1013:[('s', 31), ('se', 5)];1018:[('sec', 2), ('ser', 2)]	undecided	1013
+BLA188_p5_L13	4	396	796	on	396:[('on', 2)];796:[('on', 17), ('ne', 1)]	undecided	396
+BLA188_p5_L13	6	445	945	oit	445:[];945:[('ri', 3), ('ma', 1)]	undecided	445
+BLA188_p5_L13	8	295	298	avantage	295:[('dans', 2)];298:[]	undecided	295
+BLA188_p5_L14	7	925	923	si	925:[('quel', 2)];923:[]	undecided	925
+BLA188_p5_L15	5	692	652	lettres	692:[('mais', 11), ('il', 1)];652:[]	undecided	692
+BLA188_p5_L18	2	554	354	nouveau	554:[];354:[]	undecided	554
+BLA188_p6_L01	4	555	955	nouvelle	555:[('heureux', 2)];955:[]	undecided	555
+BLA188_p6_L01	8	-	385	et	385:[('es', 11), ('et', 8)]	gap	385
+BLA188_p6_L02	4	924	954	repon	924:[('quand', 4)];954:[]	undecided	924
+BLA188_p6_L02	5	1015	1013	se	1015:[];1013:[('s', 31), ('se', 5)]	key-consistent	1013
+BLA189_p3_L15	2	880	890	plus	880:[('plustot', 2)];890:[('pro', 2), ('po', 1)]	undecided	880
+BLA189_p3_L15	3	695	625	juste	695:[('me', 38), ('ne', 2)];625:[]	undecided	695
+BLA190_p5_L01	1	757	737	monsieur	757:[('ni', 4), ('mi', 2)];737:[('monsieur', 9), ('pa', 1)]	key-consistent	737
+BLA190_p5_L07	1	191	791	sois	"191:[(""c'est"", 4)];791:[]"	undecided	191
+BLA190_p5_L08	10	1013	1012	s	1013:[('s', 31), ('se', 5)];1012:[]	key-consistent	1013
+BLA190_p5_L10	4	292	792	pas	292:[];792:[('oit', 14), ('davantage', 1)]	undecided	292
+BLA190_p5_L20	1	291	791	c'est	"291:[(""d'"", 1), (""d'etat"", 1)];791:[]"	undecided	291
+BLA190_p6_L01	10	157	131		"157:[(""c'"", 1)];131:[]"	undecided	157
+BLA190_p6_L02	6	65	67	avoir	65:[('ame', 1)];67:[('avoir', 4)]	key-consistent	67
+BLA190_p6_L02	7	186	106	auprez	186:[];106:[('aupres', 3), ('auprez', 1)]	key-consistent	106
+BLA191_p5_L01	7	693	697		693:[('main', 2)];697:[('mi', 4)]	undecided	693
+BLA191_p5_L01	7	693	697			image	697
+BLA191_p5_L01	9	947	947			image	941
+BLA191_p5_L01	10	220	270		220:[];270:[('d', 4)]	undecided	220
+BLA191_p5_L01	10	220	270			image	270
+BLA191_p5_L01	11	386	786		386:[('est', 18), ('oit', 1)];786:[]	undecided	386
+BLA191_p5_L01	11	386	786			image	386
+BLA191_p5_L02	1	135	135			image	137
+BLA191_p5_L04	3	1017	1017			image	1017
+BLA191_p5_L05	8	258	258			image	278
+BLA191_p5_L05	10	1899	1899			image	1099
+BLA191_p5_L06	1	214	274		214:[];274:[]	undecided	214
+BLA191_p5_L06	1	214	274			image	214
+BLA191_p5_L06	3	737	737			image	737
+BLA191_p5_L06	4	647	647			image	647
+BLA191_p5_L06	5	756	756			image	756
+BLA191_p5_L06	10	754	754			image	754
+BLA191_p5_L07	9	933	933			image	937
+BLA191_p5_L07	10	275	275			image	275
+BLA191_p5_L08	3	1017	1017			image	1017
+BLA191_p5_L08	7	576	576			image	576
+BLA191_p5_L09	1	1052	1052			image	1052
+BLA191_p5_L09	2	163	163			image	163
+BLA191_p5_L09	3	1016	1016			image	1016
+BLA191_p5_L09	4	929	929			image	929
+BLA191_p5_L09	5	690	690			image	690
+BLA191_p5_L09	6	26	26			image	26
+BLA191_p5_L09	7	1099	1099			image	1099
+BLA191_p5_L09	8	599	599			image	599
+BLA191_p5_L09	9	345	345			image	345
+BLA191_p5_L09	10	163	163			image	163
+BLA191_p5_L09	11	926	926			image	926
+BLA191_p5_L10	1	580	580			image	580
+BLA191_p5_L10	2	831	831			image	831
+BLA191_p5_L10	3	1143	1143			image	1143
+BLA191_p5_L10	4	1150	1150			image	1150
+BLA191_p5_L10	5	594	594			image	594
+BLA191_p5_L10	6	493	493			image	493
+BLA191_p5_L10	7	835	835			image	835
+BLA191_p5_L10	8	661	661			image	661
+BLA191_p5_L10	9	732	732			image	732
+BLA191_p5_L10	10	18	18			image	18
+BLA191_p5_L10	11	659	659			image	659
+BLA191_p5_L11	1	46	46			image	46
+BLA191_p5_L11	2	836	836			image	836
+BLA191_p5_L11	3	385	385			image	385
+BLA191_p5_L11	4	575	575			image	575
+BLA191_p5_L11	5	585	585			image	585
+BLA191_p5_L11	6	758	758			image	758
+BLA191_p5_L11	7	943	943			image	943
+BLA191_p5_L11	8	1152	1152			image	1152
+BLA191_p5_L11	9	623	623			image	623
+BLA191_p5_L11	10	1013	1013			image	1013
+BLA191_p5_L11	11	385	387		385:[('es', 11), ('et', 8)];387:[('et', 16)]	undecided	385
+BLA191_p5_L11	11	385	387			image	387
+BLA191_p5_L12	1	580	580			image	580
+BLA191_p5_L13	3	702	702			image	702
+BLA191_p5_L13	4	377	357		377:[];357:[('donc', 2)]	undecided	377
+BLA191_p5_L13	4	377	357			image	357
+BLA194_p1_L01	1	837	534	monsieur	837:[];534:[]	undecided	837
+BLA194_p1_L03	4	-	34		34:[('ar', 4)]	gap	34
+BLA194_p1_L03	5	?	692		692:[('mais', 11), ('il', 1)]	undecided	692
+BLA194_p1_L03	7	416	916	s'entendre	416:[];916:[]	undecided	416
+BLA194_p1_L04	2	1154	1194	vous	1154:[('vous', 27)];1194:[]	key-consistent	1154
+BLA194_p1_L04	6	536	576		536:[];576:[('i', 7), ('1', 2)]	undecided	536
+BLA194_p1_L04	8	943	918	ve	943:[('re', 7), ('pris', 1)];918:[('manifeste', 2), ('ro', 2)]	key-consistent	943
+BLA194_p1_L05	1	588	508	il	588:[('il', 29), ('me', 1)];508:[('ge', 11)]	key-consistent	588
+BLA194_p1_L07	3	1199	1159	veu	1199:[];1159:[]	undecided	1199
+BLA194_p1_L07	7	278	298	de	278:[('de', 51), ('monsieur', 1)];298:[]	key-consistent	278
+BLA194_p1_L08	2	385	389	et	385:[('es', 11), ('et', 8)];389:[('eu', 2)]	key-consistent	385
+BLA194_p1_L09	4	271	291	d'	"271:[(""d'"", 6)];291:[(""d'"", 1), (""d'etat"", 1)]"	undecided	271
+BLA194_p1_L09	6	575	595	j'	"575:[(""j'"", 3), ('il', 2)];595:[('it', 5), ('il', 2)]"	undecided	575
+BLA194_p1_L11	1	385	389	et	385:[('es', 11), ('et', 8)];389:[('eu', 2)]	key-consistent	385
+BLA194_p1_L13	9	1154	1159	vous	1154:[('vous', 27)];1159:[]	key-consistent	1154
+BLA194_p1_L14	2	461	161	fait	461:[('fait', 10)];161:[]	key-consistent	461
+BLA194_p1_L14	6	?	?			undecided	?
+BLA194_p2_L01	4	939	935	quoyque	939:[];935:[('etat', 1)]	undecided	939
+BLA194_p2_L02	7	695	649	ken	695:[('me', 38), ('ne', 2)];649:[]	undecided	695
+BLA194_p2_L03	1	956	556	ne	956:[];556:[]	undecided	956
