@@ -1,0 +1,62 @@
+line	position	sign	confidence	note
+R2	1	g	H
+R2	2	q	M
+R2	3	m	H
+R2	4	d	M
+R2	5	a	M
+R2	6	n	M
+R2	7	g	H
+R2	8	e	H
+R2	9	fust	H	clear
+R2	10	r	H
+R2	11	x	M
+R2	12	cy	H	clear
+R2	13	m	L
+R2	14	l	M
+R2	15	l	L
+R2	16	unk1	L
+R2	17	forte	H	clear
+R2	18	vous	M	clear
+R2	19	fixuy	M	clear
+R3	1	a	M	clear
+R3	2	seur	M	clear
+R3	3	de	M	clear
+R3	4	faur	M	clear
+R3	5	d	M
+R3	6	unk1	L
+R3	7	z	H
+R3	8	n	M
+R3	9	g	H
+R3	10	unk2	L
+R3	11	quand	H	clear
+R3	12	a	M
+R3	13	m	H
+R3	14	d	M
+R3	15	a	M
+R3	16	t	H
+R3	17	de	M	clear
+R3	18	rẽ	M	clear
+R4	1	l	M
+R4	2	m	H
+R4	3	h	M
+R4	4	null	H
+R4	5	m	M
+R4	6	i	M
+R4	7	b	M
+R4	8	n	M
+R4	9	l	M
+R4	10	u	M
+R4	11	p	M
+R4	12	a	M
+R4	13	t	H
+R4	14	f	M
+R4	15	u	M
+R4	16	x	M
+R4	17	e	M
+R4	18	a	M
+R4	19	s	L
+R4	20	fust	H	clear
+R4	21	z	H
+R4	22	unk1	L
+R4	23	z	M
+R4	24	null	H
