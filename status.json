@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 14:50 UTC",
+ "updated": "24 Sep 2026 15:22 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -616,6 +616,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 15:20",
+   "what": "First half hour of R4/N3: 5549's two candidate key sources ruled out; cyphersolver site re-diff gives 10 copy-free rows and an 81-key index; Trew collection has no second cipher letter with text. No reading yet."
+  },
   {
    "when": "24 Sep, 14:50",
    "what": "On your call, two lanes restarted under the seven-day warning: R4 recovery (five jobs, cap $50) and N3 copy-free nominations (cap $35). Stop rule: any session reading 'rejected' halts every lane."
@@ -1494,13 +1498,13 @@
  "lanes": [
   {
    "name": "Lane R4, recovery",
-   "live": 0,
-   "focus": "started 14:46: Posthius to Eysenmenger 1614/18 (key on the leaf), Salviati 1525 atlas passes and key trial, 1519 election key, 5549 key source, Bowes numerical codes"
+   "live": 3,
+   "focus": "Posthius 1614/18 capture and Salviati 1525 atlas passes running (over their caps at the 15:25 check), 1519 election key transcription spawned; 5549 key sources 5205 and 5209 both negative (fit against the body); Bowes codes queued"
   },
   {
    "name": "Lane N3, copy-free nominations",
-   "live": 0,
-   "focus": "started 14:46: cyphersolver site re-diff (236 write-ups), Trew collection cipher sweep, check-solved on copy-free rows"
+   "live": 1,
+   "focus": "cyphersolver re-diff done: 32 rows (10 copy-free, 22 copy-order) and 81 published keys tabled; Trew sweep gave one row, closed-negative (key tables only, no ciphertext); check-solved on the copy-free rows running"
   },
   {
    "name": "Lane V4, verification",
