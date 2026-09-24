@@ -1305,14 +1305,14 @@
    "kind": "catch",
    "title": "La Luzerne to Destouches, Philadelphia 16 Jan 1781 (Huntington mssDE 108(A)): partial reading with a key rebuilt from three sibling letters' contemporary decipherments",
    "grade": "found-solved, N0 (AUDIT.md)",
-   "line": "Its duplicate in the same collection, mssDE 108(B), carries Destouches's own 1781 decipherment, and a copy is in AAE CP États-Unis vol. 15 (cited in Idzerda, Lafayette Papers 3:319). Our partial reading (C 347, M 157, U 215 of 719, key of 229 figures from the sibling letters' decipherments) is superseded by it; found by the verifier before any further solver time. mssDE 68 is also N0 (its own complete decipherment).",
+   "line": "Its duplicate in the same collection, mssDE 108(B), carries Destouches's own 1781 decipherment, and a copy is in AAE CP États-Unis vol. 15 (cited in Idzerda, Lafayette Papers 3:319). Our reading, aligned to 108(B)'s decipherment, is now C 410, M 163, U 146 of 719 (was C 347 from the sibling letters' decipherments alone); found by the verifier before any further solver time. mssDE 68 is also N0 (its own complete decipherment).",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-luzerne-destouches-1781"
   },
   {
    "date": "24 Sept 2026",
    "kind": "recovery",
    "title": "Blathwayt papers addenda, Madrid and Port Ste Marie intelligence 1727-1729 (Huntington mssBLA 184, 186, 191(a)): reading with a key rebuilt from seven deciphered items of the same run",
-   "grade": "C 129, M 22, U 21 of 172 groups; novelty not yet audited",
+   "grade": "C 129, M 22, U 21 of 172 groups; N3 each (BLA 184, 186, 191(a)), single audit, second audit running (AUDIT.md)",
    "line": "Key of 395 groups (grade C) from the contemporary decipherments of BLA 179, 185, 187, 188, 189, 190 and 194; one code for 1725-29 by leave-one-item-out (0.68-0.91). Reads the undeciphered BLA 186 (Madrid, 13 Sept 1728, Ripperda's escape: 20 of 24 groups), BLA 191 enclosure (a) (106 of 141) and the code words in BLA 184.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-blathwayt-madrid-1728"
   },
