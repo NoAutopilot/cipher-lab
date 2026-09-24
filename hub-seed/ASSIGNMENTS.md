@@ -369,3 +369,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T20:12Z	session_01FmmDMW6DjBWayqWxiLQLbv	LANE R5 F2 (Opus, cap 8)	fr3986 f.198 + fr3987 f.66 key no.60	brief 2026-09-24-lane-r5-f-nevers-keyapply.md
 2026-09-24T20:12Z	session_01KBZiKfkpmpcs9LpKWUyqpP	LANE R5 F3 (Opus, cap 8)	fr3989 f.169 + fr3990 f.55 key no.60	brief 2026-09-24-lane-r5-f-nevers-keyapply.md
 2026-09-24T20:22Z	session_01BAiHM1HFXwf83oYtGb7h4v	Retro-apply f (Sonnet, cap )	RETRO-2026-09-24f.md proposals 1, 2, 3, 5	briefs, tools, CLAUDE.md procedural; proposal 4 applied by the parent
+2026-09-24T20:27Z	session_pending_z13	z13 stress test of a forum ARTHUR LA mechanism (Opus, cap )	ciphers/zodiac-z13-stress/	owner's request ('for fun'); brief 2026-09-24-z13-stress-test.md
