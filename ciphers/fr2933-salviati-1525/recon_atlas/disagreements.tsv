@@ -1,0 +1,201 @@
+line	col	A	B	flagged	crop
+f54r_L02	1	+	-		glyphs/f54r_lines/f54r_L02.jpg
+f54r_L02	2	o^~	x:ornate-R^struck	A	glyphs/f54r_lines/f54r_L02.jpg
+f54r_L02	6	L	U	A	glyphs/f54r_lines/f54r_L02.jpg
+f54r_L02	8	Z	-		glyphs/f54r_lines/f54r_L02.jpg
+f54r_L02	9	f	Z^+		glyphs/f54r_lines/f54r_L02.jpg
+f54r_L02	11	o.	sq	A	glyphs/f54r_lines/f54r_L02.jpg
+f54r_L02	13	-	lam		glyphs/f54r_lines/f54r_L02.jpg
+f54r_L02	14	-	eps		glyphs/f54r_lines/f54r_L02.jpg
+f54r_L02	15	-	dh		glyphs/f54r_lines/f54r_L02.jpg
+f54r_L02	16	a	x:flourish	AB	glyphs/f54r_lines/f54r_L02.jpg
+f54r_L03	3	m	m^~		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	7	-	o.		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	8	S7^o	S7		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	9	lam^7	lam		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	10	eps^#	e^#		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	13	tee	-		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	15	phi	p		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	17	-	(		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	18	(^dot	v		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	19	dh^+	p^+		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	20	a^~	a		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	21	lam^~	lam		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	22	eps^#	e^#		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	24	-	f		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	25	h	K		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	26	K^14	lam		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L03	27	lam^#	#		glyphs/f54r_lines/f54r_L03.jpg
+f54r_L04	1	phi^o	phi		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L04	2	]	]^o		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L04	3	N^dot	N		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L04	4	]^dot	]^o		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L04	5	[	[^7		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L04	7	eps^dot	e^+		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L04	8	y	y^#		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L04	9	eps^#	]^7		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L04	10	g^7	m		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L04	11	tee	g^3		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L04	12	dh	S4^d		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L04	13	14	lam^+		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L04	14	4	S4		glyphs/f54r_lines/f54r_L04.jpg
+f54r_L05	2	-	psi		glyphs/f54r_lines/f54r_L05.jpg
+f54r_L05	3	psi^1	lam^1		glyphs/f54r_lines/f54r_L05.jpg
+f54r_L05	5	]^o	-		glyphs/f54r_lines/f54r_L05.jpg
+f54r_L05	8	S7^7	-		glyphs/f54r_lines/f54r_L05.jpg
+f54r_L05	10	Z	-		glyphs/f54r_lines/f54r_L05.jpg
+f54r_L05	11	f	Z^+		glyphs/f54r_lines/f54r_L05.jpg
+f54r_L05	12	h	bh		glyphs/f54r_lines/f54r_L05.jpg
+f54r_L05	17	f^dot	-		glyphs/f54r_lines/f54r_L05.jpg
+f54r_L05	18	h^#	f		glyphs/f54r_lines/f54r_L05.jpg
+f54r_L05	19	S7^7	bh^#		glyphs/f54r_lines/f54r_L05.jpg
+f54r_L05	22	m	m^2		glyphs/f54r_lines/f54r_L05.jpg
+f54r_L05	23	lam^3	lam	A	glyphs/f54r_lines/f54r_L05.jpg
+f54r_L06	2	-	]^dot		glyphs/f54r_lines/f54r_L06.jpg
+f54r_L06	3	]^dot^#	#		glyphs/f54r_lines/f54r_L06.jpg
+f54r_L06	9	h	bh		glyphs/f54r_lines/f54r_L06.jpg
+f54r_L06	12	rz^3	dl^3		glyphs/f54r_lines/f54r_L06.jpg
+f54r_L07	2	nt	-		glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	3	+	nt^+		glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	5	eps^#	-		glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	6	[	e^#		glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	7	7	[^7	A	glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	8	dl	e^+	A	glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	9	h	]^o		glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	10	bh^3	bh	A	glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	11	r	rz	A	glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	12	]^ot	]^+		glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	19	N	nt	A	glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	21	[^2	[	A	glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	25	nt	-		glyphs/f54r_lines/f54r_L07.jpg
+f54r_L07	26	h	nt^+		glyphs/f54r_lines/f54r_L07.jpg
+f54r_L08	1	]^ot	]^+		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	5	h	-		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	6	a^2	bh		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	7	bh^7	a^~		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	8	#^dot	dh^7		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	9	]^o	]^7		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	13	-	lam^+		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	14	lam	S4		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	15	tee	rz		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	16	dl	lam	A	glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	17	lam^7	h^7		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	18	h^#	S7		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	19	eps^dot	e		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	23	w	wd		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	25	-	N^o		glyphs/f54r_lines/f54r_L08.jpg
+f54r_L08	26	]^ot	]^+	A	glyphs/f54r_lines/f54r_L08.jpg
+f54r_L09	5	dl	h^~	A	glyphs/f54r_lines/f54r_L09.jpg
+f54r_L09	6	Z^dot	N		glyphs/f54r_lines/f54r_L09.jpg
+f54r_L09	7	eps	eps^2		glyphs/f54r_lines/f54r_L09.jpg
+f54r_L09	9	-	Z^2		glyphs/f54r_lines/f54r_L09.jpg
+f54r_L09	10	nt^#	]		glyphs/f54r_lines/f54r_L09.jpg
+f54r_L09	11	Z^ot	Z		glyphs/f54r_lines/f54r_L09.jpg
+f54r_L09	12	a	a^o		glyphs/f54r_lines/f54r_L09.jpg
+f54r_L09	13	bh	dh^2		glyphs/f54r_lines/f54r_L09.jpg
+f54r_L09	16	psi	y	A	glyphs/f54r_lines/f54r_L09.jpg
+f54r_L09	19	nt	nt^5		glyphs/f54r_lines/f54r_L09.jpg
+f54r_L09	22	rz	h^~		glyphs/f54r_lines/f54r_L09.jpg
+f54r_L09	23	(	x:flourish		glyphs/f54r_lines/f54r_L09.jpg
+f54r_L10	4	rz^5	-	A	glyphs/f54r_lines/f54r_L10.jpg
+f54r_L10	5	eps	rz		glyphs/f54r_lines/f54r_L10.jpg
+f54r_L10	6	tee	eps^7	A	glyphs/f54r_lines/f54r_L10.jpg
+f54r_L11	1	lam^2	lam^7		glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	2	lam^1	lam		glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	3	g^2	g^1		glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	4	psi	y		glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	6	lam^7^3	lam	A	glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	10	m^5	m^2		glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	14	-	o^f		glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	15	o.	x:ink-blot		glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	16	x:illegible-blot	y^5		glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	17	y^0	]^o	A	glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	18	S^3	g^3	A	glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	19	]^2	m	A	glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	21	m^4	-		glyphs/f54r_lines/f54r_L11.jpg
+f54r_L11	22	g^7	g	A	glyphs/f54r_lines/f54r_L11.jpg
+f54r_L12	1	]^2	U		glyphs/f54r_lines/f54r_L12.jpg
+f54r_L12	2	g^2	g^~		glyphs/f54r_lines/f54r_L12.jpg
+f54r_L12	4	eps^#	e^#		glyphs/f54r_lines/f54r_L12.jpg
+f54r_L12	9	g^2	-		glyphs/f54r_lines/f54r_L12.jpg
+f54r_L12	11	-	x:unclear		glyphs/f54r_lines/f54r_L12.jpg
+f54r_L12	12	x:unclear-cluster	y	A	glyphs/f54r_lines/f54r_L12.jpg
+f54r_L12	13	eps	[	A	glyphs/f54r_lines/f54r_L12.jpg
+f54r_L12	15	g	g^~	A	glyphs/f54r_lines/f54r_L12.jpg
+f54r_L12	17	S	-	A	glyphs/f54r_lines/f54r_L12.jpg
+f54r_L12	20	-	g		glyphs/f54r_lines/f54r_L12.jpg
+f54r_L12	21	-	y^5		glyphs/f54r_lines/f54r_L12.jpg
+f54r_L13	2	tee	-		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	3	S4^4	tee^7	A	glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	5	g	g^1		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	6	a^1	a^7		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	7	lam^2	lam		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	8	eps^#	e		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	9	w	wd		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	10	bh	K^14		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	11	K^14^#	e		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	13	v	U^15	A	glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	15	]^o	-		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	16	rz^2	-		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	17	S7^2	-	A	glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	18	lam^7	]	A	glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	19	g	rz^7		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	20	y^1	g^2	A	glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	22	-	a		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L13	24	-	y		glyphs/f54r_lines/f54r_L13.jpg
+f54r_L14	2	h^3	v^3		glyphs/f54r_lines/f54r_L14.jpg
+f54r_L14	5	S7	-		glyphs/f54r_lines/f54r_L14.jpg
+f54r_L14	6	o.	tee	A	glyphs/f54r_lines/f54r_L14.jpg
+f54r_L14	7	dl	x:unclear	A	glyphs/f54r_lines/f54r_L14.jpg
+f54r_L14	9	g	g^1		glyphs/f54r_lines/f54r_L14.jpg
+f54r_L14	12	h	bh		glyphs/f54r_lines/f54r_L14.jpg
+f54r_L14	13	Z	nt^2		glyphs/f54r_lines/f54r_L14.jpg
+f54r_L14	15	-	U		glyphs/f54r_lines/f54r_L14.jpg
+f54r_L14	16	-	tee		glyphs/f54r_lines/f54r_L14.jpg
+f54r_L14	17	-	H		glyphs/f54r_lines/f54r_L14.jpg
+f54r_L14	18	]^ot	a^1		glyphs/f54r_lines/f54r_L14.jpg
+f54r_L14	19	H^10^5^#	eps^#		glyphs/f54r_lines/f54r_L14.jpg
+f54r_L14	20	S4	tee	A	glyphs/f54r_lines/f54r_L14.jpg
+f54r_L15	4	g^2	g^7	A	glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	6	y^73	y	A	glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	7	m	M		glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	8	[^1	[	A	glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	10	]^o	]^7		glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	12	-	rz		glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	13	nt	tee		glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	14	m	phi^7		glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	15	nt	lam		glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	17	phi^#	-	A	glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	18	x:unclear-cluster	y^1		glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	20	-	tee		glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	21	-	m		glyphs/f54r_lines/f54r_L15.jpg
+f54r_L15	22	S4	rz	A	glyphs/f54r_lines/f54r_L15.jpg
+f54r_L16	1	+	-		glyphs/f54r_lines/f54r_L16.jpg
+f54r_L16	2	eps^dot	S4	A	glyphs/f54r_lines/f54r_L16.jpg
+f54r_L16	3	a	e^+	A	glyphs/f54r_lines/f54r_L16.jpg
+f54r_L16	4	tee	dh	A	glyphs/f54r_lines/f54r_L16.jpg
+f54r_L16	5	+	e^+		glyphs/f54r_lines/f54r_L16.jpg
+f54r_L16	6	o	rz	A	glyphs/f54r_lines/f54r_L16.jpg
+f54r_L17	1	-	eps		glyphs/f54r_lines/f54r_L17.jpg
+f54r_L18	1	rz	-		glyphs/f54r_lines/f54r_L18.jpg
+f54r_L18	2	K^7^8^1	K^8	A	glyphs/f54r_lines/f54r_L18.jpg
+f54r_L18	4	eps^1	eps^2		glyphs/f54r_lines/f54r_L18.jpg
+f54r_L18	6	phi^o	phi		glyphs/f54r_lines/f54r_L18.jpg
+f54r_L18	7	w	]^o		glyphs/f54r_lines/f54r_L18.jpg
+f54r_L18	8	tee	U		glyphs/f54r_lines/f54r_L18.jpg
+f54r_L18	9	m^5	w		glyphs/f54r_lines/f54r_L18.jpg
+f54r_L18	10	psi^1	bh	A	glyphs/f54r_lines/f54r_L18.jpg
+f54r_L18	11	eps^dot	m^1	A	glyphs/f54r_lines/f54r_L18.jpg
+f54r_L18	12	w^o	e^1		glyphs/f54r_lines/f54r_L18.jpg
+f54r_L18	13	#^dot	]^#		glyphs/f54r_lines/f54r_L18.jpg
+f54r_L18	16	o.	rz	A	glyphs/f54r_lines/f54r_L18.jpg
+f54r_L18	17	(	x:flourish		glyphs/f54r_lines/f54r_L18.jpg
+f54r_L19	1	tee^+	S4		glyphs/f54r_lines/f54r_L19.jpg
+f54r_L19	2	eps^dot	e^+		glyphs/f54r_lines/f54r_L19.jpg
+f54r_L19	7	eps^+	-	A	glyphs/f54r_lines/f54r_L19.jpg
+f54r_L19	8	+^5	+^7	A	glyphs/f54r_lines/f54r_L19.jpg
+f54r_L19	9	eps	eps^7		glyphs/f54r_lines/f54r_L19.jpg
+f54r_L19	10	L^5	[^5	A	glyphs/f54r_lines/f54r_L19.jpg
+f54r_L19	12	a^2	a^~		glyphs/f54r_lines/f54r_L19.jpg
+f54r_L19	15	o.^4	-	A	glyphs/f54r_lines/f54r_L19.jpg
+f54r_L20	5	h	bh		glyphs/f54r_lines/f54r_L20.jpg

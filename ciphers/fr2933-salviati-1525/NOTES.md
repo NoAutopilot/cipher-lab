@@ -188,3 +188,52 @@ retry after a reset on f60, stopped per playbook after the second failure -- f57
 the letter's end, so f60 was not needed) + 1 manifest.json fetch (succeeded on this attempt, cached) +
 1 iiif_lines.py native region fetch (f54r), all >=1.5s apart, UA per playbook. 2 Sonnet subagents (the two
 blind passes), no other subagents. Well under the $6 cap.
+
+## Glyph atlas and atlas passes (24 Sept 2026)
+
+Worker H (LANE G3; Opus lead, two Sonnet passes), 24 Sept 2026, 13:37-13:57 UTC. Disk only, no fetches.
+
+**Atlas.** `tools/glyph_atlas.py` (new shared tool, generalises `ciphers/dupuy452-carpi-1520/glyphs/`
+segment/cluster/montage; `--help`; offline test `tools/tests/test_glyph_atlas.py`) segmented all eight cipher
+leaves on disk (f.54r from the native region, f.54v-f.57v from the 1600 px reference copies; thresholds are in
+units of each page's median sign height, so both resolutions share one atlas): 4014 sign boxes and 1242 marks.
+Small marks written above a sign (wave/"2", #, +, ring, dots, 1, 5, 7, "ot", and small numbers such as 10, 13)
+are kept as an attribute of the sign below (`marks.tsv`, `sid` column), not as codes, as the brief asked.
+k-means over-split (64 sign clusters, 20 mark clusters, 7 clusters re-split with `--split`); the merges and
+splits were decided by eye from `glyphs/sheet_signs_0*.png` and written to `glyphs/labels.json`:
+**40 sign codes** covering 3068 of the 4014 boxes (`glyphs/atlas.tsv`, `glyphs/atlas.png`, split for reading
+into `atlas_part1.png`/`atlas_part2.png`); the rest are plain-script words, joined runs and noise ("_").
+Mark attribute classes: ~ # + o dot 1 5 7 ot. `glyphs/build.sh` regenerates everything and reproduces
+`clusters.tsv` exactly (fixed seed). Codes that look like digits were named S7 and S4 so a pass cannot write them
+as numerals. Weak codes by construction (clusters partly mixed with plain-script fragments): h, p, dh, (, hb.
+Observation, not interpretation: some marks concentrate on particular signs (of 61 H, 42 carry a 1 and 29 a ring,
+a sign may carry both; of 96 ], 63 carry a ring and 22 an "ot"), which a solver session may want to look at.
+
+**Passes.** Two blind Sonnet passes of f.54r, given the atlas and told to use its codes, `w:<word>` for plain
+Italian, digits for numerals on the line, `CODE^MARK` for a mark above (`passA_atlas.tsv`, `passB_atlas.tsv`;
+full-width line images `glyphs/f54r_lines/f54r_L01..L20.jpg`, L01 is the header with only the folio number).
+`tools/reconcile_passes.py`:
+| measure | agreement |
+|---|---|
+| codes with mark attributes (`recon_atlas/`) | 145/345 = **42.0%** |
+| base codes only, marks stripped (`recon_atlas_base/`) | 219/349 = **62.8%** |
+| with plain words kept (`--keep-plain`) | 178/409 = 43.5% |
+Earlier free-text passes (worker F): 4.7%. Tokens: pass A 321 signs, pass B 320 signs (385 tokens each with
+plain words); pass A flagged 93 tokens `?`, pass B 7.
+
+**Gate (>= 80%) failed. Stopped as briefed: no settling, no ciphertext_f54r.tsv.** `recon_atlas*/` are
+diagnostic only, not a reading.
+
+Confusions (`recon_atlas_base/confusion.tsv`, `per_code.tsv`): of the 130 base-code disagreements, 57 are gaps
+(one pass has a sign the other lacks: a count/segmentation problem, led by eps, tee, S7, +, lam, #, ], h), 65 are
+code against code, 8 involve an x: placeholder. Commonest code pairs: eps/e 7, h/bh 5, tee/S4 2, psi/y 2, w/e 2.
+Codes the passes nearly always agree on: g (0.85), w (0.85), ] (0.78), m, y, rz, K, H, [ (small counts).
+Codes they almost never agree on: o. (0/6), dl (0/5), h (2/12), tee (3/13), S7 (1/6), # (1/5), + (1/5), eps (8/25).
+With marks kept, the mark attribute alone costs 20 points (62.8% -> 42.0%): the passes attach marks to
+different neighbours and read ~/2, 5/s, 7/ot differently.
+
+Suggested follow-up (not done, outside the brief): let the script do the counting -- classify the segmented boxes
+of f.54r against the atlas (as carpi classify.py) and have the passes only confirm or correct each box's code,
+which removes the gap disagreements; sharpen or merge eps/e and h/bh in the atlas first.
+
+Requests: none (disk only). Subagents: 2 (Sonnet passes).

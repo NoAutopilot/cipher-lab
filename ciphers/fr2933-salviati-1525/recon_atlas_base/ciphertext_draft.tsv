@@ -1,0 +1,350 @@
+line	position	sign	confidence	alt	why
+f54r_L02	1	+	M	B:-	gap
+f54r_L02	2	o	M	B:x:ornate-R	differ
+f54r_L02	3	S4	M		agree-flagged
+f54r_L02	4	ch	H		agree
+f54r_L02	5	m	H		agree
+f54r_L02	6	L	M	B:U	differ
+f54r_L02	7	y	M		agree-flagged
+f54r_L02	8	Z	H		agree
+f54r_L02	9	f	M	B:-	gap
+f54r_L02	10	ch	H		agree
+f54r_L02	11	o.	M	B:sq	differ
+f54r_L02	12	y	H		agree
+f54r_L02	13	lam	M	A:-	gap
+f54r_L02	14	eps	M	A:-	gap
+f54r_L02	15	dh	M	A:-	gap
+f54r_L02	16	a	M	B:x:flourish	differ
+f54r_L03	1	rz	M		agree-flagged
+f54r_L03	2	g	H		agree
+f54r_L03	3	m	H		agree
+f54r_L03	4	w	H		agree
+f54r_L03	5	L	H		agree
+f54r_L03	6	g	H		agree
+f54r_L03	7	o.	M	A:-	gap
+f54r_L03	8	S7	H		agree
+f54r_L03	9	lam	H		agree
+f54r_L03	10	eps	M	B:e	differ
+f54r_L03	11	g	H		agree
+f54r_L03	12	y	H		agree
+f54r_L03	13	tee	M	B:-	gap
+f54r_L03	14	K	H		agree
+f54r_L03	15	phi	M	B:p	differ
+f54r_L03	16	]	H		agree
+f54r_L03	17	(	H		agree
+f54r_L03	18	v	M	A:-	gap
+f54r_L03	19	dh	M	B:p	differ
+f54r_L03	20	a	H		agree
+f54r_L03	21	lam	H		agree
+f54r_L03	22	eps	M	B:e	differ
+f54r_L03	23	w	H		agree
+f54r_L03	24	h	M	B:f	differ
+f54r_L03	25	K	H		agree
+f54r_L03	26	lam	H		agree
+f54r_L03	27	#	M	A:-	gap
+f54r_L04	1	phi	H		agree
+f54r_L04	2	]	H		agree
+f54r_L04	3	N	H		agree
+f54r_L04	4	]	H		agree
+f54r_L04	5	[	H		agree
+f54r_L04	6	lam	H		agree
+f54r_L04	7	eps	M	B:e	differ
+f54r_L04	8	y	H		agree
+f54r_L04	9	]	M	A:-	gap
+f54r_L04	10	eps	M	B:m	differ
+f54r_L04	11	g	H		agree
+f54r_L04	12	tee	M	B:-	gap
+f54r_L04	13	dh	M	B:S4	differ
+f54r_L04	14	14	M	B:lam	differ
+f54r_L04	15	4	M	B:S4	differ
+f54r_L05	1	phi	H		agree
+f54r_L05	2	psi	H		agree
+f54r_L05	3	lam	M	A:-	gap
+f54r_L05	4	v	H		agree
+f54r_L05	5	]	M	B:-	gap
+f54r_L05	6	g	H		agree
+f54r_L05	7	nt	H		agree
+f54r_L05	8	S7	M	B:-	gap
+f54r_L05	9	y	H		agree
+f54r_L05	10	Z	H		agree
+f54r_L05	11	f	M	B:-	gap
+f54r_L05	12	h	M	B:bh	differ
+f54r_L05	13	w	H		agree
+f54r_L05	14	e	H		agree
+f54r_L05	15	Z	H		agree
+f54r_L05	16	nt	H		agree
+f54r_L05	17	f	H		agree
+f54r_L05	18	h	M	B:-	gap
+f54r_L05	19	S7	M	B:bh	differ
+f54r_L05	20	m	H		agree
+f54r_L05	21	w	H		agree
+f54r_L05	22	m	H		agree
+f54r_L05	23	lam	H		agree
+f54r_L05	24	y	H		agree
+f54r_L05	25	f	H		agree
+f54r_L05	26	w	H		agree
+f54r_L06	1	y	H		agree
+f54r_L06	2	]	H		agree
+f54r_L06	3	#	M	A:-	gap
+f54r_L06	4	Z	H		agree
+f54r_L06	5	]	H		agree
+f54r_L06	6	tee	M		agree-flagged
+f54r_L06	7	f	H		agree
+f54r_L06	8	w	H		agree
+f54r_L06	9	h	M	B:bh	differ
+f54r_L06	10	Z	H		agree
+f54r_L06	11	H	H		agree
+f54r_L06	12	rz	M	B:dl	differ
+f54r_L06	13	S4	H		agree
+f54r_L07	1	S4	H		agree
+f54r_L07	2	nt	H		agree
+f54r_L07	3	+	M	B:-	gap
+f54r_L07	4	L	H		agree
+f54r_L07	5	eps	M	B:e	differ
+f54r_L07	6	[	H		agree
+f54r_L07	7	7	M	B:-	gap
+f54r_L07	8	dl	M	B:e	differ
+f54r_L07	9	h	M	B:]	differ
+f54r_L07	10	bh	H		agree
+f54r_L07	11	r	M	B:rz	differ
+f54r_L07	12	]	H		agree
+f54r_L07	13	H	H		agree
+f54r_L07	14	f	H		agree
+f54r_L07	15	w	H		agree
+f54r_L07	16	y	H		agree
+f54r_L07	17	m	H		agree
+f54r_L07	18	lam	M		agree-flagged
+f54r_L07	19	N	M	B:nt	differ
+f54r_L07	20	Z	H		agree
+f54r_L07	21	[	H		agree
+f54r_L07	22	w	H		agree
+f54r_L07	23	tee	H		agree
+f54r_L07	24	[	H		agree
+f54r_L07	25	nt	H		agree
+f54r_L07	26	h	M	B:-	gap
+f54r_L08	1	]	H		agree
+f54r_L08	2	phi	H		agree
+f54r_L08	3	U	H		agree
+f54r_L08	4	w	H		agree
+f54r_L08	5	h	M	B:bh	differ
+f54r_L08	6	a	H		agree
+f54r_L08	7	bh	M	B:-	gap
+f54r_L08	8	#	M	B:dh	differ
+f54r_L08	9	]	H		agree
+f54r_L08	10	g	H		agree
+f54r_L08	11	y	H		agree
+f54r_L08	12	lam	H		agree
+f54r_L08	13	lam	H		agree
+f54r_L08	14	tee	M	B:S4	differ
+f54r_L08	15	dl	M	B:rz	differ
+f54r_L08	16	lam	H		agree
+f54r_L08	17	h	H		agree
+f54r_L08	18	S7	M	A:-	gap
+f54r_L08	19	eps	M	B:e	differ
+f54r_L08	20	g	H		agree
+f54r_L08	21	[	H		agree
+f54r_L08	22	h	H		agree
+f54r_L08	23	w	M	B:wd	differ
+f54r_L08	24	y	H		agree
+f54r_L08	25	N	M	A:-	gap
+f54r_L08	26	]	H		agree
+f54r_L08	27	m	H		agree
+f54r_L09	1	g	H		agree
+f54r_L09	2	rz	H		agree
+f54r_L09	3	tee	H		agree
+f54r_L09	4	S4	H		agree
+f54r_L09	5	dl	M	B:h	differ
+f54r_L09	6	Z	M	B:N	differ
+f54r_L09	7	eps	H		agree
+f54r_L09	8	g	H		agree
+f54r_L09	9	Z	M	A:-	gap
+f54r_L09	10	nt	M	B:]	differ
+f54r_L09	11	Z	H		agree
+f54r_L09	12	a	H		agree
+f54r_L09	13	bh	M	B:dh	differ
+f54r_L09	14	rz	H		agree
+f54r_L09	15	g	H		agree
+f54r_L09	16	psi	M	B:y	differ
+f54r_L09	17	eps	H		agree
+f54r_L09	18	w	H		agree
+f54r_L09	19	nt	H		agree
+f54r_L09	20	m	H		agree
+f54r_L09	21	S4	H		agree
+f54r_L09	22	rz	M	B:h	differ
+f54r_L09	23	(	M	B:x:flourish	differ
+f54r_L10	1	14	H		agree
+f54r_L10	2	rz	H		agree
+f54r_L10	3	rz	H		agree
+f54r_L10	4	rz	H		agree
+f54r_L10	5	eps	H		agree
+f54r_L10	6	tee	M	B:-	gap
+f54r_L11	1	lam	H		agree
+f54r_L11	2	lam	H		agree
+f54r_L11	3	g	H		agree
+f54r_L11	4	psi	M	B:y	differ
+f54r_L11	5	lam	H		agree
+f54r_L11	6	lam	H		agree
+f54r_L11	7	[	H		agree
+f54r_L11	8	g	H		agree
+f54r_L11	9	]	H		agree
+f54r_L11	10	m	H		agree
+f54r_L11	11	nt	M		agree-flagged
+f54r_L11	12	rz	M		agree-flagged
+f54r_L11	13	nt	M		agree-flagged
+f54r_L11	14	o.	M	B:o	differ
+f54r_L11	15	x:illegible-blot	M	B:x:ink-blot	differ
+f54r_L11	16	y	H		agree
+f54r_L11	17	S	M	B:-	gap
+f54r_L11	18	]	H		agree
+f54r_L11	19	g	H		agree
+f54r_L11	20	m	H		agree
+f54r_L11	21	g	M	A:-	gap
+f54r_L11	22	g	H		agree
+f54r_L11	23	lam	H		agree
+f54r_L11	24	H	H		agree
+f54r_L12	1	]	M	B:U	differ
+f54r_L12	2	g	H		agree
+f54r_L12	3	lam	H		agree
+f54r_L12	4	eps	M	B:e	differ
+f54r_L12	5	m	H		agree
+f54r_L12	6	w	H		agree
+f54r_L12	7	rz	H		agree
+f54r_L12	8	rz	H		agree
+f54r_L12	9	g	M	B:-	gap
+f54r_L12	10	lam	M		agree-flagged
+f54r_L12	11	x:unclear	M	A:-	gap
+f54r_L12	12	x:unclear-cluster	M	B:y	differ
+f54r_L12	13	eps	M	B:[	differ
+f54r_L12	14	m	M		agree-flagged
+f54r_L12	15	g	M		agree-flagged
+f54r_L12	16	y	M		agree-flagged
+f54r_L12	17	S	M	B:-	gap
+f54r_L12	18	]	H		agree
+f54r_L12	19	]	H		agree
+f54r_L12	20	g	M	A:-	gap
+f54r_L12	21	y	M	A:-	gap
+f54r_L12	22	]	H		agree
+f54r_L12	23	#	H		agree
+f54r_L13	1	rz	H		agree
+f54r_L13	2	tee	H		agree
+f54r_L13	3	S4	M	B:-	gap
+f54r_L13	4	nt	H		agree
+f54r_L13	5	g	H		agree
+f54r_L13	6	a	H		agree
+f54r_L13	7	lam	H		agree
+f54r_L13	8	eps	M	B:-	gap
+f54r_L13	9	w	M	B:e	differ
+f54r_L13	10	bh	M	B:wd	differ
+f54r_L13	11	K	H		agree
+f54r_L13	12	e	M	A:-	gap
+f54r_L13	13	tee	M		agree-flagged
+f54r_L13	14	v	M	B:U	differ
+f54r_L13	15	y	H		agree
+f54r_L13	16	]	H		agree
+f54r_L13	17	rz	H		agree
+f54r_L13	18	S7	M	B:-	gap
+f54r_L13	19	lam	M	B:-	gap
+f54r_L13	20	g	H		agree
+f54r_L13	21	y	M	B:-	gap
+f54r_L13	22	lam	M		agree-flagged
+f54r_L13	23	a	M	A:-	gap
+f54r_L13	24	x:unclear	M		agree-flagged
+f54r_L13	25	y	M	A:-	gap
+f54r_L13	26	eps	H		agree
+f54r_L13	27	m	H		agree
+f54r_L13	28	g	H		agree
+f54r_L14	1	rz	H		agree
+f54r_L14	2	h	M	B:v	differ
+f54r_L14	3	g	H		agree
+f54r_L14	4	w	H		agree
+f54r_L14	5	S7	M	B:-	gap
+f54r_L14	6	o.	M	B:tee	differ
+f54r_L14	7	dl	M	B:x:unclear	differ
+f54r_L14	8	rz	H		agree
+f54r_L14	9	g	H		agree
+f54r_L14	10	f	H		agree
+f54r_L14	11	w	H		agree
+f54r_L14	12	h	M	B:bh	differ
+f54r_L14	13	Z	M	B:nt	differ
+f54r_L14	14	g	H		agree
+f54r_L14	15	U	M	A:-	gap
+f54r_L14	16	]	M	B:tee	differ
+f54r_L14	17	H	H		agree
+f54r_L14	18	a	M	A:-	gap
+f54r_L14	19	eps	M	A:-	gap
+f54r_L14	20	S4	M	B:tee	differ
+f54r_L14	21	dl	M		agree-flagged
+f54r_L15	1	H	H		agree
+f54r_L15	2	]	H		agree
+f54r_L15	3	rz	H		agree
+f54r_L15	4	g	H		agree
+f54r_L15	5	g	H		agree
+f54r_L15	6	y	H		agree
+f54r_L15	7	m	M	B:M	differ
+f54r_L15	8	[	H		agree
+f54r_L15	9	lam	M		agree-flagged
+f54r_L15	10	]	H		agree
+f54r_L15	11	m	H		agree
+f54r_L15	12	rz	M	A:-	gap
+f54r_L15	13	nt	M	B:tee	differ
+f54r_L15	14	m	M	B:phi	differ
+f54r_L15	15	nt	M	B:lam	differ
+f54r_L15	16	rz	H		agree
+f54r_L15	17	phi	M	B:-	gap
+f54r_L15	18	x:unclear-cluster	M	B:y	differ
+f54r_L15	19	lam	M		agree-flagged
+f54r_L15	20	tee	M	A:-	gap
+f54r_L15	21	m	M	A:-	gap
+f54r_L15	22	S4	M	B:rz	differ
+f54r_L16	1	+	M	B:-	gap
+f54r_L16	2	eps	M	B:S4	differ
+f54r_L16	3	a	M	B:e	differ
+f54r_L16	4	tee	M	B:dh	differ
+f54r_L16	5	+	M	B:e	differ
+f54r_L16	6	o	M	B:rz	differ
+f54r_L17	1	eps	M	A:-	gap
+f54r_L17	2	eps	M		agree-flagged
+f54r_L18	1	rz	M	B:-	gap
+f54r_L18	2	K	H		agree
+f54r_L18	3	a	H		agree
+f54r_L18	4	eps	H		agree
+f54r_L18	5	rz	H		agree
+f54r_L18	6	phi	H		agree
+f54r_L18	7	]	M	A:-	gap
+f54r_L18	8	U	M	A:-	gap
+f54r_L18	9	w	H		agree
+f54r_L18	10	tee	M	B:bh	differ
+f54r_L18	11	m	H		agree
+f54r_L18	12	psi	M	B:-	gap
+f54r_L18	13	eps	M	B:-	gap
+f54r_L18	14	w	M	B:e	differ
+f54r_L18	15	#	M	B:]	differ
+f54r_L18	16	y	H		agree
+f54r_L18	17	S4	H		agree
+f54r_L18	18	o.	M	B:rz	differ
+f54r_L18	19	(	M	B:x:flourish	differ
+f54r_L19	1	tee	M	B:S4	differ
+f54r_L19	2	eps	M	B:e	differ
+f54r_L19	3	K	H		agree
+f54r_L19	4	Lx	M		agree-flagged
+f54r_L19	5	w	H		agree
+f54r_L19	6	Lx	M		agree-flagged
+f54r_L19	7	eps	M	B:-	gap
+f54r_L19	8	+	H		agree
+f54r_L19	9	eps	H		agree
+f54r_L19	10	L	M	B:[	differ
+f54r_L19	11	w	H		agree
+f54r_L19	12	a	H		agree
+f54r_L19	13	y	H		agree
+f54r_L19	14	S4	H		agree
+f54r_L19	15	o.	M	B:-	gap
+f54r_L20	1	eps	H		agree
+f54r_L20	2	S4	H		agree
+f54r_L20	3	U	H		agree
+f54r_L20	4	w	H		agree
+f54r_L20	5	h	M	B:bh	differ
+f54r_L20	6	a	H		agree
+f54r_L20	7	dh	H		agree
+f54r_L20	8	y	H		agree
+f54r_L20	9	]	H		agree
+f54r_L20	10	eps	H		agree
