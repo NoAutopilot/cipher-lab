@@ -1,0 +1,128 @@
+[
+ {
+  "crop": "f24v_L01_s3.jpg",
+  "box": [
+   3550,
+   1250,
+   4400,
+   1447
+  ],
+  "sources": [
+   "f24v_L01_s2.jpg",
+   "f30_x4050_y1250_w350_h1900.jpg"
+  ],
+  "note": "x3550-4150 from the _s2 crop, x4150-4400 from the gutter strip; overlaps _s2 by 600 px"
+ },
+ {
+  "crop": "f24v_L02_s3.jpg",
+  "box": [
+   3550,
+   1447,
+   4400,
+   1742
+  ],
+  "sources": [
+   "f24v_L02_s2.jpg",
+   "f30_x4050_y1250_w350_h1900.jpg"
+  ],
+  "note": "x3550-4150 from the _s2 crop, x4150-4400 from the gutter strip; overlaps _s2 by 600 px"
+ },
+ {
+  "crop": "f24v_L03_s3.jpg",
+  "box": [
+   3550,
+   1742,
+   4400,
+   1945
+  ],
+  "sources": [
+   "f24v_L03_s2.jpg",
+   "f30_x4050_y1250_w350_h1900.jpg"
+  ],
+  "note": "x3550-4150 from the _s2 crop, x4150-4400 from the gutter strip; overlaps _s2 by 600 px"
+ },
+ {
+  "crop": "f24v_L04_s3.jpg",
+  "box": [
+   3550,
+   1945,
+   4400,
+   2156
+  ],
+  "sources": [
+   "f24v_L04_s2.jpg",
+   "f30_x4050_y1250_w350_h1900.jpg"
+  ],
+  "note": "x3550-4150 from the _s2 crop, x4150-4400 from the gutter strip; overlaps _s2 by 600 px"
+ },
+ {
+  "crop": "f24v_L05_s3.jpg",
+  "box": [
+   3550,
+   2156,
+   4400,
+   2359
+  ],
+  "sources": [
+   "f24v_L05_s2.jpg",
+   "f30_x4050_y1250_w350_h1900.jpg"
+  ],
+  "note": "x3550-4150 from the _s2 crop, x4150-4400 from the gutter strip; overlaps _s2 by 600 px"
+ },
+ {
+  "crop": "f24v_L06_s3.jpg",
+  "box": [
+   3550,
+   2359,
+   4400,
+   2553
+  ],
+  "sources": [
+   "f24v_L06_s2.jpg",
+   "f30_x4050_y1250_w350_h1900.jpg"
+  ],
+  "note": "x3550-4150 from the _s2 crop, x4150-4400 from the gutter strip; overlaps _s2 by 600 px"
+ },
+ {
+  "crop": "f24v_L07_s3.jpg",
+  "box": [
+   3550,
+   2553,
+   4400,
+   2756
+  ],
+  "sources": [
+   "f24v_L07_s2.jpg",
+   "f30_x4050_y1250_w350_h1900.jpg"
+  ],
+  "note": "x3550-4150 from the _s2 crop, x4150-4400 from the gutter strip; overlaps _s2 by 600 px"
+ },
+ {
+  "crop": "f24v_L08_s3.jpg",
+  "box": [
+   3550,
+   2756,
+   4400,
+   2982
+  ],
+  "sources": [
+   "f24v_L08_s2.jpg",
+   "f30_x4050_y1250_w350_h1900.jpg"
+  ],
+  "note": "x3550-4150 from the _s2 crop, x4150-4400 from the gutter strip; overlaps _s2 by 600 px"
+ },
+ {
+  "crop": "f24v_L09_s3.jpg",
+  "box": [
+   3550,
+   2982,
+   4400,
+   3150
+  ],
+  "sources": [
+   "f24v_L09_s2.jpg",
+   "f30_x4050_y1250_w350_h1900.jpg"
+  ],
+  "note": "x3550-4150 from the _s2 crop, x4150-4400 from the gutter strip; overlaps _s2 by 600 px"
+ }
+]
