@@ -1,4 +1,6 @@
-open
+blocked
+
+**Held by the LANE N3 orchestrator, 24 Sept 2026 17:40 UTC:** status `blocked`, not `open`: the check-solved pass did not read an edition or catalogue for the item (section 2) and did not check the DECODE record documents or the Aymeloglu repository (LANE N3 edition rule; COMMON addition (c)). The nomination line of 17:28 is held. Edition check: brief `.claude/briefs/runs/2026-09-24-lane-n3-csED3.md`.
 
 # Pseudo-Elian alchemical cipher, "Lumen luminum" — Beinecke Rare Book & MS Library, Mellon MS 29
 

@@ -1,4 +1,6 @@
-open
+blocked
+
+**Held by the LANE N3 orchestrator, 24 Sept 2026 17:40 UTC:** status `blocked`, not `open`: the check-solved pass did not read an edition or catalogue for the item (section 2) and did not check the DECODE record documents or the Aymeloglu repository (LANE N3 edition rule; COMMON addition (c)). The nomination line of 17:28 is held. Edition check: brief `.claude/briefs/runs/2026-09-24-lane-n3-csED3.md`.
 
 # Hieronimo Ranzo (Venice) cipher letters, 1520s — BnF fr. 2988 ff.9r-11v
 

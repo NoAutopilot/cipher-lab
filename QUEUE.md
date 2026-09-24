@@ -5035,12 +5035,12 @@ Follow-up to the 24 Sept scCS2 scout row above ("CS2-03, -14, -15, -27 are marke
   IIIF). No standard edition covering a June 1586 letter to Mercœur or from Guise located (Carné's Mercœur
   edition runs 1589-1598 only). Verdict `blocked` (edition not located, not `open`, per the LANE N3 addition).
   No nomination.
-- **CS2-15** (`ciphers/fr2988-ranzo-1520s/`): image confirmed copy-free, folios pinned exactly (Gallica ark
+- **CS2-15** (`ciphers/fr2988-ranzo-1520s/`): **blocked, held** (LANE N3 orchestrator 17:40: no edition read, DECODE docs and Aymeloglu unchecked; csED3). image confirmed copy-free, folios pinned exactly (Gallica ark
   `btv1b525240150`, ff.9r-11v = canvases f25-f30). Same cipher system as CS2-01 per Bourdeau's own catalogue
   note (not necessarily same correspondence: CS2-01 addressed to "Garbino," this item's recipient unnamed in
   the BnF catalogue). Tomokiyo/Cryptiana's published partial Ranzo key is about CS2-01 specifically, not this
   item. Verdict `open`. **Nominated.**
-- **CS2-14** (`ciphers/beinecke-mellon29-elia/`): image confirmed copy-free (Yale IIIF, catalog `17388793`, 74
+- **CS2-14** (`ciphers/beinecke-mellon29-elia/`): **blocked, held** (LANE N3 orchestrator 17:40: Witten Mellon catalogue, DECODE docs and Aymeloglu unchecked; csED3). image confirmed copy-free (Yale IIIF, catalog `17388793`, 74
   images, full resolution). Beinecke's own catalogue note that f.2v carries a self-keyed zodiac-sign legend does
   not cover the actual ~234-letter cipher (ff.1v-2r, alchemical operations); no literature found transcribing or
   solving it. Verdict `open`. **Nominated.**
