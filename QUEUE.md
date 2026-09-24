@@ -1251,3 +1251,78 @@ executed), www.sa.dk 1, manuscripta.se ~9 (browser tool + direct query-string GE
 github.com 2 (shallow clones, deleted after grep). No logins, no credentials, no subagents, no image opened. Per-host
 counts: NL/Nordic raw ~133 item-level hits read at note/title level (Riksarkivet API only; other hosts returned no
 item-level results to count), kept 8 scored + 2 caution rows, digitised 0.
+
+## Europeana and Real Academia de la Historia digitised candidates (LANE S scout of 24 September 2026)
+
+LANE S worker E (row E1-, `.claude/briefs/runs/2026-09-24-lane-s-scE.md`). Hosts: `api.europeana.eu` (JSON API,
+`wskey=api2demo`, `qf=TYPE:TEXT`, 24 queries across es/it/de/nl/fr/la/pt/sv terms from the brief) and
+`bibliotecadigital.rah.es` (RAH's own digital library, curl with a browser-style User-Agent). Read first: the
+"Digitised candidates outside the BnF" section above (its noise-pattern list and its RAH caveat that the on-site
+search needed the browser tool), LESSONS.md, STATUS.md's 24 Sept lane structure. Excluded per brief: the two RAH
+rows already on this file (N1 Morillo 1817-20, N2 Cañada 1869), being checked this wake by LANE S check-solved
+worker C.
+
+**Europeana: clean negative.** 24 queries, 208 unique raw hits (`sources/solver-diffs/2026-09-24-lane-s-europeana-rah.tsv`
+has the exclusion reasons; the full raw dump is in the scratchpad, not committed). 87 hits are `dataProvider`
+"National Library of France" — hosted on gallica.bnf.fr, off-limits to this worker and LANE G's own SRU sweep
+already covers BnF directly; not opened further. Of the rest, 32+ are National Library of Spain (BNE) items —
+checked against a fresh shallow clone of aaymeloglu/unsolved-ciphers and **all are already in its own
+`catalogue/bne-ranked.md`/`bne-hits.jsonl`** (his BNE harvest used the identical terms cifra/cifrada/cifrado
+across the whole BNE catalogue, 173 raw hits, 106 expanded records, confirmed by grep — this repeats
+LESSONS.md's "a catalogue a daily-active project also reads is not a lane"), including the two that looked most
+promising on title alone: *Cartas de la Reina de Hungría al Cardenal Granvela* (BNE MSS/7909/177-187, 1544-48,
+one letter "con texto cifrado") and *Cartas del Duque de Sessa al Emperador Carlos V* (BNE MSS/20214/52,
+1524-54, "algunas cartas con texto parcialmente cifrado" — note this is a different shelfmark from, but the
+same correspondent and overlapping years as, Bourdeau's already-solved `sessa1524/` (RAH Salazar A-31), an
+edition-risk worth flagging if anyone opens it later). The remaining ~60 non-Gallica, non-BNE hits are noise,
+confirming the established pattern in a new set of languages: Spanish "cifra" is dominated by guitar/accordion
+tablature notation ("método... por cifra") and the idiom "se cifra en" (amounts to); Dutch "cijferschrift" is a
+school-song numbered-notation method; "déchiffrement" hits are decipherment of ancient scripts (cuneiform,
+hieroglyphs, Etruscan), not historical cryptography; two Italian/German hits (Belaso 1553, "Il vero modo di
+scrivere in cifra" 1564) are printed cipher-instruction manuals, already-published editions, not correspondence;
+one Digital Memory of Catalonia item whose title claims "escrita en cifra" is, on viewing the leaf, a printed
+17th-century political pamphlet in plain Spanish prose (image checked, see caveats); a Romanian letter
+paraphrases in clear the content of a ciphered telegram it received, rather than containing ciphertext itself.
+Requests: api.europeana.eu 26 (24 term queries + 2 full-record fetches, 1.6s apart, no 429/403).
+
+**RAH: one new candidate, and a technical fix for the next worker.** The 24 Sept sweep's note that RAH's search
+needs the browser tool driving the real form was half right: the browser tool hit RAH's own Anubis
+("Making sure you're not a bot!") bot-challenge intermittently and its advanced search fields
+(`#busq_general` on `formBusqueda`) render hidden by default, so `--type` timed out waiting for visibility even
+after the challenge passed. **The actual fix is simpler: `resultados_busqueda.do` requires POST, not GET** — the
+23-24 Sept curl sweeps got HTTP 200 with zero rows because they sent a GET; a plain `curl -X POST
+--data-urlencode busq_general=<term>` reaches the same endpoint the advanced form posts to and returns real
+results with no login, no cookie jar and no CSRF token needed for the search itself (a cookie jar is needed only
+to keep a result-set's numeric `id` alive across a follow-up record-detail fetch, since each new search gets a
+fresh id and an old one's detail page reports "la búsqueda... ha expirado"). RAH also exposes a DIGIBIB OAI-PMH
+endpoint (`/oai/oai.do`, confirmed working, `completeListSize=24739`) but it has no query verb and only the
+generic "driver" set — a full-collection bulk harvest, not a substitute for the keyword search, and out of this
+budget. Eight terms tried beyond `cifrada` (already scored as N1/N2 above): `cifra` (4 hits: the known Morillo
+item plus three cartographic false positives, "cifra" = scale-figure legend on maps, matching the established
+foliation-noise pattern for a new host); `cifrado` (3 hits, two new); `clave en cifra`/`clave cifra` (2 hits
+each, both already-known); `despacho cifrado` (2 hits, the same two `cifrado` finds); `telegrama cifrado`
+(0); `clave` alone (410 hits, far too broad — not pursued); `descifrar`/`clave secreta` (0). The two new
+`cifrado` hits are War Minister Alós's and War Minister Eguía's despatches to Morillo (RAH 9/7655 and 9/7654,
+1819 and 1818, same 9/76xx numbered series as N1) — **both carry RAH's own cataloguer note that they are
+already printed**, "Publicado por Rodríguez Villa" (vol. IV doc. 814 and vol. III doc. 754 respectively): a
+useful negative and a flag for check-solved worker C's N1 sweep, since Rodríguez Villa's edition is not one of
+the six sources its note lists as checked. The one survivor:
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Leaf viewed | Image route | Total |
+|---|---|---|---|---|---|---|---|---|---|
+| E1 | Letters and documents exchanged between Queen Isabel II and the Count of Xiquena: copy of a ciphered telegram to the Queen's minister in Munich | 3 May 1868 | es | cryptanalysis (tentative) | Real Academia de la Historia, Madrid, Archivo de Isabel II, Sig. 9/6963, Legajo XXIV, Nº 158 | "[Cartas y documentos cruzados entre la Reina Isabel II y el Conde de Xiquena. Copia del telegrama cifrado al Ministro de la Reina en Munich. 3 de mayo de 1868] [Manuscrito]" — unlike the two Morillo `cifrado` hits above, this record's own catalogue entry carries **no** "Publicado por..." note. Two further items sit in the same small file (path 1008497, a plain minute on the Infanta's wedding announcement, not ciphertext; path 1008499, undated, title and author fields only read, not opened for content this pass — a possible sibling worth a look) plus an unrelated "Costados de..." genealogical roll that matches only on a different Conde de Xiquena's surname. | No — the record page's viewer is a JS-driven image loader (`catalogo_imagenes/grupo.do?path=1008498`) that did not yield a static image URL to curl this pass; not opened at full resolution | `bibliotecadigital.rah.es`, Public Domain Mark 1.0, no login (per the record's own rights field) | 32 |
+
+Caveats: (1) Europeana's own index of RAH is thin (only the already-known Morillo 1817 item surfaced across all
+24 queries) — the RAH-specific finds above came only from RAH's own search, confirming the 24 Sept section's
+guess that RAH is under-indexed in Europeana. (2) E1's kind is provisional: it is scored cryptanalysis because
+no key or sibling decipherment was found in this file this pass, but the two unopened companion items
+(1008497 sibling context, 1008499 undated) were not read closely enough to rule out a decipherment sitting
+beside it — check those before any solve attempt. (3) No score here claims a reading or a novelty class; E1
+still needs check-solved's six-source sweep, including PARES (which was not queried this pass — out of this
+brief's hosts) and a print check against Spanish 1868-revolution-era diplomatic correspondence editions, before
+the board. (4) The Digital Memory of Catalonia pamphlet and the two Rodríguez-Villa-printed Morillo despatches
+were confirmed by viewing the leaf/reading the catalogue's own note, not merely by title, per the brief's
+instruction to check before scoring. Requests: bibliotecadigital.rah.es curl ~24 (1 reachability + 2 initial
+form-structure probes + 11 term-query POSTs + ~10 record-detail GETs, ≥1.5s apart, HTTP 200 throughout);
+`tools/browser_fetch.js` against the same host 6 (2 hit RAH's own Anubis bot-challenge, both stood down per the
+one-retry limit and not repeated; logged here rather than retried further).

@@ -6872,5 +6872,35 @@
     "total": 22
    }
   ]
+ },
+ "lane_s_europeana-rah": {
+  "_about": "LANE S scout of 24 September 2026 (worker E, .claude/briefs/runs/2026-09-24-lane-s-scE.md): api.europeana.eu (24 non-English queries) and bibliotecadigital.rah.es (11 Spanish term queries via the advanced search POST endpoint, discovered to need POST not GET). Europeana: 208 unique raw hits, clean negative -- 87 hosted on gallica.bnf.fr (out of scope), 32+ National Library of Spain (BNE) items already in aaymeloglu/unsolved-ciphers catalogue/bne-ranked.md, remainder noise (music tablature notation, ancient-script decipherment essays, printed cipher-instruction manuals, one printed pamphlet whose title claims cipher but whose leaf is plain prose). RAH: one new candidate (E1) after excluding the two rows already on QUEUE.md (Morillo 1817-20, Canada 1869, checked this wake by check-solved worker C) and two items (Alos 1819, Eguia 1818, same 9/76xx series) whose own RAH catalogue note says already printed by Rodriguez Villa. Full raw hits and exclusion reasons: sources/solver-diffs/2026-09-24-lane-s-europeana-rah.tsv.",
+  "date": "24 September 2026",
+  "requests_per_host": {
+   "api.europeana.eu": 26,
+   "bibliotecadigital.rah.es": 24,
+   "bibliotecadigital.rah.es (browser_fetch.js)": 6
+  },
+  "rows": [
+   {
+    "rank": "E1",
+    "target": "Letters and documents exchanged between Queen Isabel II and the Count of Xiquena: copy of a ciphered telegram to the Queen's minister in Munich",
+    "year": "3 May 1868",
+    "lang": "es",
+    "kind": "cryptanalysis",
+    "reference": "Real Academia de la Historia, Madrid, Archivo de Isabel II, Sig. 9/6963, Legajo XXIV, No 158",
+    "holder": "Real Academia de la Historia, Madrid",
+    "axes": {
+     "language_fit": 3,
+     "material": 2,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 32
+   }
+  ]
  }
 }
