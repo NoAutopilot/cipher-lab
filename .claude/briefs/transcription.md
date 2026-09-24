@@ -25,7 +25,7 @@ every F row in the bucket shares the same shape (ran past cap mid-job, partial o
 Symbol alphabets (RETRO-2026-09-24 proposal 4, applied in part): on a page of invented signs, segment the glyphs
 from the images and cluster them by shape into one shared atlas first (see ciphers/dupuy452-carpi-1520/glyphs/),
 then give both passes the atlas's codes; two passes that each invent their own code book cannot be reconciled
-row by row (Raince, 23-24 Sept: 124 codes against 25). Report token count and type count against any gate the
+row by row (Raince, 23-24 Sept: 124 codes against 25). This applies whenever ANY non-numeral sign occurs, mixed pages included: a numeral nomenclator with some invented marks still needs the atlas first (Salviati fr.2933, 24 Sept: atlas skipped on a mixed page, free-text passes agreed on 4.7%). Report token count and type count against any gate the
 orchestrator names in the brief; if it fails, say so in NOTES.md and stop rather than start another full pass.
 Scripts (24 Sept 2026; CLAUDE.md Usage 8): find the leaf with `tools/gallica_folio.py ARK --folio N` (use the label;
 it reports offset changes), cut crops with `tools/iiif_lines.py` and check its `--debug` overlay before the passes
