@@ -1,0 +1,14 @@
+# Aligner transcription of briefnr 98 cipher postscript (f.66 = p2) against its decipherment, which is
+# f.67 (p3: "Es wirdt bey uns fur gewiss gesagt, das Wilhelm von Grumbach ... Staupitz ... bestallung haben
+# sol, wir bitten aber E.L. wollen meiner unvermeldt nachforschung haben und mich irer erkundigung ...").
+# NOT ff.68-69: plaintext_98.txt ("Zeittunge auss Franckreich") is an enclosed newsletter, not this cipher.
+# f.67 is a close but free decipherment (it adds "fur", renders "uff dreissig" loosely); units below are the
+# cipher's own German as confirmed word by word against f.67. R21, 24 Sept 2026, native-resolution scan.
+# A unit ending in '~' is a pairing the aligner is not sure of (graded M in key.tsv); '?' = no unit.
+# Codes are this letter's own (98 uses a different key from 74): see glyphs/atlas.md "R21 codes, 98 system".
+p2 1: 3 Sb | e s ;; 8 Z Or 9 9 | w i r d~ t ;; Pb 3 X | b e y ;; HX | uns~ ;; Pf 5 Or | f u r ;; Qg 3 8 Z Sb Sb | g e w i s s ;; Qg 3 Sb 0 Qg 9 | g e s a g t ;; EL8 | das~ ;; 8 Z L 1 0 L Lf | w i l h a l m
+p2 2: 5 4 N | v o n ;; Qg Or 5 L Pb 0 D 1 | g r u m~ b a c h ;; 5 Pf Pf | u f f ;; Yz 8 4 L Pf Pf | z w o l f f ;; BAR | hundert_pferde~ ;; Mf | und~ ;; Ma 0 5 Dp Z 9 Yz | st a u p i t z
+p2 3: 5 Pf Pf | u f f ;; Td Or 3 Z Sb Sb Z Qg | d r e i s s i g ;; Dl Sb | fendlein~ landtsknecht~ ;; 5 4 Lf | v o m ;; 0 Sb | König~ zu_Frankreich~ ;; Pb 3 Ma 0 L L 5 N Qg | b e st a l l u n g ;; 1 0 Pb 3 N | h a b e n
+p2 4: Sb 4 L L | s o l l ;; NW | wir~ ;; Pb Z 9 1 3 N | b i t t~ e n ;; 0 Pb 3 Or | a b e r ;; R | E.L.~ ;; R 8 4 Lf Lf 3 N | ?~ w o l l~ e n ;; Lf 3 Z N 3 Or | m e i n e r
+p2 5: 5 N 5 3 Or Lf 3 L Td 9 | u n v e r m e l d t ;; N 0 D 1 Qf Or 0 Qg 3 N | n a c h f~ r a g e n ;; Sb | ?~ ;; 1 0 Pb 3 N | h a b e n ;; M | und ;; Lf Z D 1 | m i c h
+p2 6: Z Or 3 Or | i r e r ;; 3 Or V 5 N Td Z Qg 5 N Qg | e r k u n d i g u n g ;; Qg 3 | ?~ ?~ ;; Sg 3 0 N Td 9 9 8 4 Or 3 N | b~ e a n t~ ?~ ?~ w o r e n~
