@@ -5312,9 +5312,9 @@ the next worker to fetch these must eye-check the leaf before transcribing, exac
 | KS-02 | fr3985-nevers-revol-1593 (same target, second leaf) | `btv1b90606498` f.176 (canvas 353, **confirmed** by leaf's own folio stamp + date "2 de Sept 1593") | 2 Sept 1593 | Nevers -> Revol | k-tomokiyo-nevers60 | 4727x6396, tested 24 Sept 2026 | **check-solved: open** (nominated; ciphers/fr3985-nevers-revol-1593/NOTES.md) |
 | KS-03 | fr3986-nevers-revol-1593 | `btv1b9060631k` f.198 (canvas 397, **confirmed** via facing verso canvas 398 stamped "199") | 23 Oct 1593 | Nevers -> Revol | k-tomokiyo-nevers60 | 4948x6957, tested 24 Sept 2026 | **check-solved: open** (nominated; ciphers/fr3986-nevers-revol-1593/NOTES.md) |
 | KS-04 | fr3983-pisany-nevers-1593 | `btv1b9059406b` f.169 (canvas 297, **confirmed** by leaf's own folio stamp + date "23 de Mars 1593") | 23 Mar 1593 | Marquis de Pisany -> Duke of Nevers | k-tomokiyo-nevers46 (no.46, fr.3995 f.86-87) | 4948x7008, tested 24 Sept 2026 | **check-solved: found-solved** -- leaf carries a contemporary interlinear decipherment (not nominated; ciphers/fr3983-pisany-nevers-1593/NOTES.md) |
-| KS-05 | fr3987-nevers-court-1593 | `btv1b90606320` f.66 (canvas ~132, unconfirmed) | 1593 (Nevers embassy correspondence, undated in `nevers.htm`'s citation) | the Court -> Nevers (Tomokiyo's `henryiv2.htm` list) | k-tomokiyo-nevers60 | 4940x6827, tested 24 Sept 2026 | copy-free |
-| KS-06 | fr3989-nevers-court-1594 | `btv1b9060514q` f.169 (canvas ~338, unconfirmed) | c.1593-94 | the Court -> Nevers (`henryiv2.htm` list) | k-tomokiyo-nevers60 | 4987x7040, tested 24 Sept 2026 | copy-free |
-| KS-07 | fr3990-nevers-court-1594 | `btv1b90068799` f.27 (canvas ~54, unconfirmed) | c.1593-94 | the Court -> Nevers (`henryiv2.htm` list) | k-tomokiyo-nevers60 | 4014x5766, tested 24 Sept 2026 | copy-free |
+| KS-05 | fr3987-nevers-revol-1593 (corrected 24 Sept, csKSb) | `btv1b90606320` f.66 (**canvas 121, confirmed by eye**) | **10 Nov 1593** (corrected) | **Nevers -> Revol** (corrected; Tomokiyo's `henryiv2.htm` list) | k-tomokiyo-nevers60 | 4940x6827, tested 24 Sept 2026 | **check-solved: open** (nominated; ciphers/fr3987-nevers-revol-1593/NOTES.md) |
+| KS-06 | fr3989-nevers-revol-1594 (corrected 24 Sept, csKSb) | `btv1b9060514q` f.169 (**canvas 340, confirmed by eye**) | **12 Mar 1594** (corrected) | **Nevers -> Revol** (corrected; `henryiv2.htm` list) | k-tomokiyo-nevers60 | 4987x7040, tested 24 Sept 2026 | **check-solved: open** (nominated; ciphers/fr3989-nevers-revol-1594/NOTES.md) |
+| KS-07 | fr3990-nevers-henri4-1594 (corrected 24 Sept, csKSb) | `btv1b90068799` f.27 (**canvas 55, confirmed by eye**) | **5/6 May 1594** (corrected) | **Nevers -> Henri IV** (corrected; reversed from `henryiv2.htm` list) | k-tomokiyo-nevers60 | 4014x5766, tested 24 Sept 2026 | **check-solved: open** (nominated; ciphers/fr3990-nevers-henri4-1594/NOTES.md) |
 
 **Flagged, not a row:** `nevers.htm`'s key no.46 section also cites "Jean de Vyvonne, Marquis de Pisany to the
 Duke of Nevers, Verona, 13 January 1593 (BnF fr.3883 fol.11, 13)". Gallica SRU confirms an ark for "Français
@@ -5345,6 +5345,52 @@ fr.3986 f.64-65v Gondi letter, and consistent with Tomokiyo tagging two *other* 
 `ciphers/fr3986-nevers-revol-1593/NOTES.md`. KS-05..KS-07 (fr.3987 f.66, fr.3989 f.169, fr.3990 f.27, all
 key no.60, all Court->Nevers) remain unswept -- next check-solved worker on this slug family, and the same
 found-solved interlinear-gloss check should be run on each before nominating.
+
+**Superseded by csKSb below (24 Sept 2026):** KS-05..KS-07 have now had that sweep; none carries an interlinear
+gloss (checked on the leaf image), all three verdict **open**.
+
+### Check-solved verdicts, KS-05/-06/-07 (LANE N4 csKSb, 24 September 2026)
+
+Six-source blind check-solved run per `.claude/briefs/runs/2026-09-24-lane-n4-csKSb.md` (fresh WebFetch of
+Tomokiyo's `henryiv2.htm`, a fresh shallow clone each of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers,
+`sources/decode/` grep, web search) plus the two editions the brief names beyond the standard six (Gomberville's
+*Mémoires de Nevers* seconde partie and *Mémoires de la Ligue*), and *Lettres missives de Henri IV* for KS-07.
+Full search log per row in the target's own NOTES.md.
+
+**Correction found before scoring:** all three of scKEYS's harvest rows had sender and recipient reversed.
+Tomokiyo's `henryiv2.htm` (not on disk when scKEYS wrote the row -- fetched fresh here) gives fr.3987 f.66 and
+fr.3989 f.169 as **the Duke of Nevers writing to Revol** (not "the Court" writing to Nevers), and fr.3990 f.27
+as **the Duke of Nevers writing to Henri IV himself** (not the reverse). The date field was also vague or wrong
+("undated"/"c.1593-94") where the leaf itself and Tomokiyo's citation both give an exact date. All three
+canvases were also wrong (manifest carries no folio labels for any of the three arks; the ~2x-folio estimate
+scKEYS used elsewhere in this table does not hold here -- confirmed each canvas by fetching the image and
+reading the manuscript's own pencil foliation against the leaf). See each row's table entry above (now marked
+"corrected") and its NOTES.md "Correction to the harvest row" section.
+
+- **KS-05** -> `ciphers/fr3987-nevers-revol-1593/` -- **open**. Gomberville *Mémoires de Nevers* seconde partie
+  (Google Books `H2eV4wAmIr0C` / Gallica `bpt6k64451005`) full-text and ContentSearch read for Tomokiyo's two
+  decoded fragments ("Despernon", "deliuranse") and the date ("Nouembre 1593"): all either 0 hits or hits on an
+  unrelated item (the king's own countersigned letters). *Mémoires de la Ligue* (Goulart) vols 5-6 read (shared
+  sweep with KS-07's control term). Letter absent from both. Tomokiyo has already tentatively read a couple of
+  words off the cipher himself (quoted in NOTES.md); no full plaintext found. Never opened by Bourdeau's session
+  (his `nevers1593/` folder lists it only inside Tomokiyo's inventory, not his own worked set or gaps list).
+- **KS-06** -> `ciphers/fr3989-nevers-revol-1594/` -- **open**. Same two editions read for Tomokiyo's fragments
+  ("diuision"/"division", "Mars 1594") and "Revol": 0 hits or unrelated item. Letter absent. Same Bourdeau status
+  as KS-05 (listed, not worked).
+- **KS-07** -> `ciphers/fr3990-nevers-henri4-1594/` -- **open**. Gomberville and *Mémoires de la Ligue* read for
+  "Castignac" (the name in the letter's own clear-text portion, read directly off the leaf) and "Retel"/"Rethel"
+  (12 generic title-mentions, none this event); *Lettres missives de Henri IV* vol.4 + Guadet supplément also
+  read for "Castignac" (0 hits) as a courtesy check, though the direction mismatch (this edition prints only the
+  King's own letters) makes it the weaker of the two checks, flagged as such in NOTES.md. Letter absent from all
+  four sources checked. No cipher fragment published anywhere found (Tomokiyo: "Undeciphered", no tentative
+  words offered, unlike KS-05/-06).
+
+Nomination lines posted to ROOM.md for KS-05, KS-06, KS-07 (all three `open`, all copy-free). `kind` stays
+`recovery` for all three (key no.60 is published). Requests this run: gallica.bnf.fr ~13 (image fetches + 4
+ContentSearch calls, all under this worker's LANE N4 Gallica slot 2, >=1.5s apart, 2 transient connection resets
+retried once each per the good-citizen rule and both succeeded), books.google.com/googleapis 6 (SearchWithinVolume,
+>=2s apart), archive.org 5 (be-api fts), github.com 2 shallow clones (grep only), WebFetch 3 (Tomokiyo's page),
+WebSearch 2.
 
 **First-third check (per brief):** not triggered -- the very first key group checked (Nevers no.46/no.60) turned
 up seven unread, copy-free siblings, so the negative-and-stop clause did not apply.
