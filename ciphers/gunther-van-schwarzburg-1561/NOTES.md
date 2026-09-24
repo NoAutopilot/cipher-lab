@@ -1,4 +1,4 @@
-partial
+found-solved
 
 # Willem van Oranje to Günther van Schwarzburg, cipher letter, 2 May 1561
 
@@ -49,6 +49,8 @@ the same "prints the envelope, omits the cipher" pattern already documented for 
 covering WV1/WV2/WV4 in this batch. This is now a directly confirmed reading of the named edition, not an
 inference from curatorial silence (rule 10 / M9 lesson satisfied for this target).
 
+> **Correction (Verifier V4, 24 Sept 2026, AUDIT.md): wrong.** Japikse pp.343-344 print the cipher passage deciphered, in spaced type, from "nemlich den heuradt" to "vertraulich mitzutheilem guttwillig". Spaced type is the edition's marking for the Prince's cipher insertions, solved by H. Koot (no.236, p.232 n.5). Only "Und wust ich E.L. ... wünschen" is the clear close. 8246 is N0.
+
 **Confirmed by eye this pass** (`images/08246_p1.png`): the manuscript (archive stamp reads "Staatsarchiv
 Rudolstadt, Kanzlei Sondershausen 693 o.s. (na f. 26)") opens in clear German prose ("Mein freundtlich dienst
 mit vermuege alles lieb vnd guten [...] Hochgeborner freundtlicher lieber Schwager vnd Bruder...") and then
@@ -74,7 +76,7 @@ van Prinsterer editions covering WV1/WV2/WV4.
 Run directly by this worker (Sonnet, no Workflow tool, no subagents), shared clones/searches with WV1/WV2/WV4
 (see those NOTES.md files for the same solver-repo and DECODE sweep, not repeated verbatim here).
 
-1. **Edition named in WVO's own record -- read directly this pass (see Source above).** Japikse's 1934 edition,
+1. **Edition named in WVO's own record -- read directly this pass (see Source above).** *[Corrected 24 Sept 2026, AUDIT.md: the "clear opening" reading below is wrong; pp.343-344 print the cipher passage deciphered in spaced type. N0.]* Japikse's 1934 edition,
    letter no. 316, pp.343-344: confirmed to print only the clear opening of this exact letter (same shelfmark,
    verbatim-matching text) and to stop before the ciphered majority of it, with no footnote acknowledging a
    cipher passage at all. This resolves the M9-lesson requirement (quote verbatim what a named source says
@@ -94,6 +96,8 @@ Run directly by this worker (Sonnet, no Workflow tool, no subagents), shared clo
 
 ## Verdict
 
+**Superseded 24 Sept 2026 by AUDIT.md: found-solved, N0 (Japikse 1934 no.316 prints the cipher passage deciphered).** The original check-solved verdict follows.
+
 **Status: open, directly confirmed.** The named edition (Japikse 1934, letter 316, pp.343-344) was located and
 read in full this pass: it prints only the letter's clear opening (already unremarkable, matching what the
 manuscript itself shows in clear) and stops before the ciphered majority of the letter, with no footnote
@@ -101,6 +105,8 @@ acknowledging a cipher or an omission. WVO's own curatorial silence (no solution
 the same-pair sibling 5109 which the same database marks as solved) is corroborating evidence, and no community
 list, DECODE record or solver repository names a decipherment of the ciphered portion. This is a page-checked
 verdict, not an inference from silence alone.
+
+> **Correction (Verifier V4, 24 Sept 2026, AUDIT.md): wrong.** Japikse pp.343-344 print the cipher passage deciphered, in spaced type, from "nemlich den heuradt" to "vertraulich mitzutheilem guttwillig". Spaced type is the edition's marking for the Prince's cipher insertions, solved by H. Koot (no.236, p.232 n.5). Only "Und wust ich E.L. ... wünschen" is the clear close. 8246 is N0.
 
 **Copy status: copy-free.** Free PDF confirmed reachable and viewed by eye. No REQUEST.md needed.
 
@@ -228,5 +234,7 @@ applied, left U (no guessing). Suggestion: an exceptions file settling `b` = c a
 context, and an image re-check of p3L01 `ob` / p3L16 `Ib` (the barred-o and barred-I shapes are close at this resolution).
 
 **Search log for the verifier:** Japikse (1934) no.316, pp.343-344, read by C1/earlier worker: prints 8246 only to
-the clear opening, no cipher passage or solution (NOTES "Source"). No other source searched this pass (no network).
+the clear opening, no cipher passage or solution (NOTES "Source").
+
+> **Correction (Verifier V4, 24 Sept 2026, AUDIT.md): wrong.** Japikse pp.343-344 print the cipher passage deciphered, in spaced type, from "nemlich den heuradt" to "vertraulich mitzutheilem guttwillig". Spaced type is the edition's marking for the Prince's cipher insertions, solved by H. Koot (no.236, p.232 n.5). Only "Und wust ich E.L. ... wünschen" is the clear close. 8246 is N0. No other source searched this pass (no network).
 Requests this pass: 0 (all work from images on disk; crops rendered locally with headless Chromium).
