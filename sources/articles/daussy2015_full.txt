@@ -1,0 +1,1476 @@
+Религия. Церковь. Общество   Выпуск IV
+
+
+
+
+                               Юг Досси                                                 УДК 261.7
+                               д. ист. н., профессор, университет Франш-Конте
+                               (1-ая ул. Клода Гудимеля, Безансон, Франция, 25000)
+                               hugues.daussy@univ-fcomte.fr
+
+
+                                                Гугенот-дипломат на службе
+                                          французской короне : Ш арль де Д анзе ,
+                                                 посол в Д ании (1548–1589)
+
+                                  Статья представляет собой исследование биографии французско-
+                               го посла во Франции Шарля де Данзе, который прибыл в Данию еще
+                               при Генрихе II Валуа и занимал свою должность в течение более чем
+                               40 лет, став примером безупречной службы короне. Парадокс поло-
+                               жения посла заключался в том, что со временем он стал искренним
+                               гугенотом, но, тем не менее, остался одним из самых доверенных лиц
+                               королей династии Валуа, равно как другом протестантских монар-
+                               хов Дании. На основе тщательного анализа корреспонденции Данзе,
+                               сохранившейся в Дании, автором дана пространная характеристика
+                               политических мыслей и акций французского посла, который, от имени
+                               Франции, являлся участником многих дипломатических переговоров
+                               с протестантскими государями, а также поддерживал тесные отно-
+                               шения с лидерами французский гугенотов — Генрихом Наваррским,
+                               Дю Плесси-Морне и др. Юг Досси также исследует проекты посла о соз-
+                               дании французского протектората в Ливонии и возможностях торго-
+                               вых отношений с Московским государством.
+                                  Ключевые слова: Франция, Дания, Герих II Валуа, Генрих Наварр-
+                               ский, Дю Плесси-Морне, дипломатия
+
+
+
+
+                                                                 198
+                                                                  Volume IV
+
+
+
+
+                                                                                Religion. Church. Society
+                                                           Hugues Daussy
+                      PhD in history, professor, University of Franche-Comté
+                         (1 Rue Claude Goudimel, Besançon, France, 25000)
+                                                 hugues.daussy@univ-fcomte.fr
+
+
+             Un diplomate huguenot au service
+      de la couronne de F rance : C harles de D anzay ,
+         ambassadeur au D anemark (1548–1589)
+
+    The article «A Huguenot diplomat in the service of the French crown:
+Charles de Danza, the Ambassador to Denmark (1548–1589)» is a study
+of the biography of the French Ambassador to France, Charles de Danzay,
+who arrived in Denmark under the rule of Henry II of Valois and hold his
+post for more than 40 years, becoming an example of impeccable service
+to the French crown. The paradoxical state of the ambassador was due
+to his religious views — in some time he became a true Huguenot, but nev-
+ertheless remained one of the authorized representatives of the Valois.
+However, he was also a friend of the Protestant monarchs of Denmark.
+On the basis of a careful analysis of the Danzay’ correspondence, preserved
+in Danish archives, the author gives a accurate description of the political
+thoughts and actions of the French ambassador, who on behalf of France
+participated in numerous diplomatic negotiations with the Protestant princ-
+es and maintained close relationships with the leaders of the French Hugue-
+nots, such as Henry of Navarre, Du Plessis-Mornay and others. The author
+also examines the Danzey’s projects about establishing the French protec-
+torate in Livonia and developing trade relations with Moscow.
+    Keywords: France, Denmark, Gerih II Valois, Henry of Navarre,
+Du Plessis-Mornay, diplomacy
+
+
+
+
+                                    199
+Религия. Церковь. Общество   Выпуск IV
+
+                                   Charles de Danzay demeure pour beaucoup un inconnu. Pour-
+                               tant, le parcours de ce diplomate protestant d’origine poitevine fut
+                               en bien des points remarquable. Ambassadeur du roi Très Chrétien
+                               au Danemark pendant plus de quarante ans, de 1548 à 1589, il est
+                               de loin le diplomate du XVIe siècle qui est demeuré le plus long-
+                               temps en poste, servant successivement cinq rois de France1. Cette
+                               longévité est d’autant plus exceptionnelle que Danzay ne faisait pas
+                               mystère d’être un fervent calviniste, à une époque où l’adhésion
+                               publique au protestantisme n’était pas pour favoriser les carrières.
+                               L’oubli dans lequel est aujourd’hui tombé Charles de Danzay s’ex-
+                               plique en grande partie par le vide historiographique qui l’entoure.
+                               Les études qui lui ont été consacrées sont en effet assez rares et
+                               toutes très anciennes. Ce sont d’abord les historiens scandinaves
+                               qui se sont intéressés à lui, éditant une partie de sa correspon-
+                               dance. En 1824 fut publié en Suède un ouvrage reproduisant un
+                               registre manuscrit, conservé à la bibliothèque royale de Stockholm,
+                               qui renferme des copies de lettres adressées par Danzay à Henri III
+                               et Catherine de Médicis entre le 23 janvier 1575 et le 18 août 15862.
+                               En 1901, c‘est au Danemark que fut édité par Carl Frederik Bric-
+                               ka un recueil reproduisant une partie des dépêches adressées par
+                               Danzay au roi de France entre le 26 février 1567 et le 2 août 1573 3.
+                               Entre temps, en 1898, le Danois Rördam s‘était livré à un petit essai
+                               biographique fondé sur l‘ensemble de ces sources ainsi que sur des
+                               documents qui demeurent inédits4. En France, l‘existence même
+                               de Danzay était alors encore largement ignorée, puisque la liste
+                                   1
+                                     Henri II, François II, Charles IX, Henri III et, seulement pendant quelques
+                               semaines, Henri IV (Danzay est décédé en fonction le 12 octobre 1589).
+                                   2
+                                     Correspondance de Charles Dantzai, ministre de France à la Cour
+                               de Danemarck. T. IX: Collection Handlingar rörande Skandinaviens His-
+                               toria. Stockholm, 1824.
+                                   3
+                                     Bricka C.-F. Indberetninger fra Charles de Dançay til det Franske Hof
+                               om forholdene I Norden 1567–1573 / Udgivne ved C. F. Bricka af Rigsarkiv-
+                               et. Kjobenhavn, 1901. On peut traduire le titre de cet ouvrage de la manière
+                               suivante: «Rapports de Charles de Danzay à la cour de France sur l’état
+                               des choses dans le Nord, 1567–1573 / Publiés par C. F. Bricka, des archives
+                               de l’État». Les minutes de ces dépêches sont conservées à Copenhague, aux
+                               archives de l’État danois.
+                                   4
+                                     Rördam H. F. Résidents français près la cour de Danemark au XVIe siè-
+                               cle // Extrait du Bulletin de l’Académie royale des sciences et des lettres du
+                               Danemark pour l’année 1897. Copenhague, 1898. Ce petit opuscule de 50
+                               pages est consacré à 95% à Charles de Danzay.
+
+                                                                     200
+                                                               Hugues Daussy
+
+des diplomates publiée dans l‘Annuaire historique de la Société de
+
+
+
+
+                                                                                    Un diplomate huguenot au service de la couronne de France...
+l‘Histoire de France en 1848 ne faisait aucune mention de lui5. Un
+demi-siècle plus tard, en 1903, Fleury Vindry ne lui consacrait tou-
+jours qu’une notice lapidaire dans son ouvrage sur les ambassadeurs
+français permanents au XVIe siècle6. C’est à Alfred Richard, archi-
+viste de la Vienne et érudit poitevin, que Danzay doit d’être sorti de
+l’oubli. La belle biographie qu’il a donnée de lui, en 1910, demeure
+encore aujourd’hui la seule et unique publication consacrée à un
+personnage qui semble pourtant mériter davantage d’attention7.
+Si elle est par certains aspects tout à fait complète, l’étude conduite
+par Alfred Richard il y a près d’un siècle doit cependant être
+revue dans la perspective de problématiques historiques récentes et
+à la lumière de documents qu’il a méconnus. Après une présentation
+rapide des origines familiales et des débuts de Charles de Danzay
+dans la carrière diplomatique, il conviendra de s’attarder sur son
+action comme ambassadeur ordinaire du roi de France au Dane-
+mark. Enfin, il faudra essayer de percevoir comment Danzay réussit
+à articuler son action au service d’un roi catholique et son engage-
+ment en faveur de la cause réformée.
+    Charles Quissarme, futur seigneur de Danzay, est né à Saint-
+Maixent, en Poitou, en 1515. Il est issu d’une famille récemment
+anoblie puisque son bisaïeul, Thomas Quissarme, médecin ordi-
+naire du roi Louis XI, a reçu des lettres de noblesse de ce prince
+en février 1480. C’est ce même Thomas Quissarme qui a fait l’ac-
+quisition du domaine de Danzay, un arrière-fief de l’abbaye de
+Saint-Maixent d’une importance locale assez considérable. Le père
+de Charles, Jean Quissarme, qui a été maire de Saint-Maixent,
+a épousé en 1512 Jeanne Payen, issue elle aussi d’une riche famille
+bourgeoise de noblesse récente. Charles a un frère aîné, prénommé
+Jean, qui s’est vu attribuer après la mort de sa mère le titre de sei-
+     5
+       Pour le XVIe siècle, la liste des diplomates en poste au Danemark ne men-
+tionne que la légation de Christophe Richer en 1542 // Annuaire historique pour
+l’année 1848, publié par la Société de l’Histoire de France. Paris, 1847. P. 188.
+     6
+       Vindry F. Les Ambassadeurs Français permanents au XVIe siècle. Par-
+is, 1903. P. 41. Cette notice d’à peine quatre lignes n’apporte que très peu
+d’informations précises sur Danzay et témoigne de la rareté des connais-
+sances rassemblées sur lui.
+     7
+       Richard A. Un diplomate poitevin du XVIe siècle. Charles de Danzay,
+ambassadeur de France en Danemark. Poitiers, 1910.
+
+                                       201
+Религия. Церковь. Общество   Выпуск IV
+
+                               gneur de la Touche-Gilbert. Son cadet, Charles, a ainsi pu porter
+                               durant sa jeunesse le nom seigneurial de son père et l’a conservé
+                               après la mort de ce dernier, en 1559, bien que le domaine de Danzay
+                               et le titre qui en dépend soient alors naturellement revenus à Jean.
+                               C’est donc en raison de son long usage que Charles a pu continuer
+                               toute sa vie à être désigné sous le nom de Danzay alors même que le
+                               titre appartenait à son frère aîné 8.
+                                   Bien qu’il ait suivi des études de droit à l’Université de Poitiers,
+                               Charles ne s’est pas lancé dans la carrière judiciaire. C’est vers
+                               Paris que s’est tourné son regard et, grâce à la protection de parents
+                               et d’amis, il a pu entrer au service du roi, sans doute entre 1540 et
+                               1542, soit à l’âge de vingt-cinq ou de vingt-sept ans. Parmi ces appuis
+                               influents, Amaury Bouchard, maître des requêtes de l’Hôtel du roi, a
+                               joué un rôle déterminant dans l’ascension de Danzay ainsi que dans
+                               l’orientation de sa future carrière. Ce personnage avait en effet rempli
+                               pour François Ier plusieurs missions diplomatiques en Allemagne, en
+                               1532, et en Angleterre, en 1534. Probablement guidé par Bouchard,
+                               Danzay s’est tout spécialement appliqué à l’étude des langues vivantes
+                               dont la maîtrise est devenue de plus en plus indispensable pour
+                               entreprendre une carrière de diplomate9. L’effort tout particulier qu’il
+                               a consacré à l’apprentissage de l’Allemand s’est de toute évidence avéré
+                               décisif dans le choix de son premier emploi pour le service du roi10.
+                                   Sa première mission le conduit en effet à Strasbourg, où il se trouve
+                               en qualité d’agent officieux du roi de France en 1547–1548. Déguisé
+                               sous les dehors d’un étudiant, il joue sans doute essentiellement le
+                               rôle d’un relais entre le pouvoir royal et des informateurs dévoués aux
+                               intérêts français. En cette période de conflit perpétuel entre Valois et
+                               Habsbourg, Strasbourg est un carrefour stratégique particulièrement
+                               important.
+                                   8
+                                      Richard A. Un diplomate poitevin du XVIe siècle. P. 13–14, 226–231.
+                                   9
+                                      Dans les premiers temps de la diplomatie permanente, à la charnière des
+                               XIVe et XVe siècles, le latin était généralement un véhicule suffisant pour le tra-
+                               vail du diplomate. Toutefois, progressivement, une connaissance minimale de la
+                               langue du pays est devenue une nécessité, notamment pour la conduite des négo-
+                               ciations officieuses avec des interlocuteurs souvent peu instruits en latin. La pra-
+                               tique de l’Allemand était particulièrement rare chez les diplomates et donc très
+                               appréciée. Sur ces questions, voir Russell J. G. Language: A barrier or a gateway?
+                               // Diplomats at work. Three Renaissance Studies. Wolfeboro Falls, 1992. P. 1–50.
+                                    10
+                                       Richard A. Un diplomate poitevin du XVIe siècle. P. 15–18.
+
+                                                                      202
+                                                          Hugues Daussy
+
+    De ce point d’observation privilégié, il est possible à Dan-
+
+
+
+
+                                                                             Un diplomate huguenot au service de la couronne de France...
+zay de se tenir au courant des agissements des princes protestants
+allemands11. Son industrie au service du roi lui donne l’occasion
+de nouer des relations d’amitié avec deux de ses indicateurs. Il s’agit
+de Jacques Sturm et de Jean Sturm12.
+    En dépit de leur homonymie, ces deux éminents personnages
+de la cité strasbourgeoise n‘ont aucun lien de parenté. Le premier est
+l‘un des membres les plus estimés de la haute bourgeoisie de la ville;
+son rôle au sein des institutions municipales s‘est avéré essentiel lors
+du passage de la cité à la Réforme protestante. Quant au second, Jean
+Sturm, il s‘est fait l‘apôtre d‘une réforme religieuse modérée. Très
+lié avec Melanchthon, il est également en étroite relation avec Cal-
+vin, qu‘il a accueilli en 1539 au sein du fameux “gymnase” de la ville.
+Sturm en est l‘un des fondateurs ainsi que le premier recteur.
+La fréquentation de ces deux hommes a très probablement joué un
+rôle déterminant dans l’évolution spirituelle de Danzay. Dans une
+lettre adressée à son ami Tycho Brahé, bien des années plus tard, le
+diplomate évoquera même une rencontre avec Calvin en personne
+que l’on peut situer pendant son séjour à Strasbourg13. Même s’il
+ne peut être daté avec précision, le basculement de Danzay vers le
+calvinisme remonte donc certainement à cette époque. C’est dans
+le courant de l’année 1548 que la mission du diplomate s’achève,
+avec l’échec du rapprochement entre la France et Strasbourg dans
+l’optique de la lutte menée contre Charles Quint.
+    Cet échec ne peut toutefois être imputé à Danzay, qui semble
+au contraire avoir donné entière satisfaction au roi puisque celui-
+ci décide de l’employer de nouveau. Il est envoyé à Bâle, puis au
+Danemark afin d’assurer à Henri II des alliés dans la lutte contre
+l’empereur, mais aussi dans le but de favoriser le commerce français
+avec les pays riverains de la Baltique.
+    11
+       Les rares informations relatives à cette première mission sont con-
+tenues dans une lettre de Danzay au cardinal Jean Du Bellay, datée du 28
+avril 1547 // BnF, Fds. fr. 3921, fol. 62.
+    12
+       À propos des services rendus à la France par ces deux personnages,
+voir: Brady Jr. Th. A. The Politics of the Reformation in Germany. Jacob
+Sturm (1489–1553) of Strasbourg. Atlantic Highlands, 1997. P. 127–129.
+    13
+       Carolus Danzaeus ad Tychonem Brahe, Copenhague, 17 novembre
+1576 // Tychonis Brahei et ad eum doctorum virorum epistolae ab anno
+1568 ad annum 1587, nunc primum collectae et editae a F.R. Friis. Copenh-
+ague, 1876–1886. P. 37–38.
+
+                                   203
+Религия. Церковь. Общество   Выпуск IV
+
+                                  Ses lettres de créance lui sont remises le 18 novembre 1548
+                               à Saint-Germain-en-Laye et il part aussitôt pour Copenhague. Dix
+                               jours plus tard, le 28 novembre, il se présente devant le roi Chris-
+                               tian III14. Il n’est pour l’heure que résident pour le roi de France
+                               au Danemark et ne recevra le titre d’ambassadeur ordinaire que
+                               quelques années plus tard. S’il n’est pas le premier diplomate fran-
+                               çais à être envoyé au Danemark, il est en revanche le premier à s‘y
+                               établir de manière permanente. Depuis 1518, plusieurs ambassadeurs
+                               extraordinaires y ont rempli des missions ponctuelles et le prédéces-
+                               seur de Danzay, Christophe Richer, y a séjourné de manière disconti-
+                               nue, d’abord en 1541, puis de 1544 à 1546 et enfin en 154815.
+                                  Toutefois, bien qu’étant pourvu de la qualité de résident, Dan-
+                               zay demeurera encore épisodiquement et pour des périodes plus ou
+                               moins longues dans le royaume de France ; d’abord assez réguliè-
+                               rement jusqu’en 1565, puis plus rarement par la suite. Il y viendra
+                               pour les besoins de sa charge, mais aussi pour y régler des affaires
+                               familiales. Sa place au sein de la maison du roi souffrira de cet éloi-
+                               gnement devenu peu à peu presque permanent. Introduit à la cour
+                               au plus tard en 1542, il est gentilhomme de la chambre du roi
+                               en 1548, lorsqu‘il est envoyé au Danemark.
+                                  Le 20 mai 1557, il se verra accorder une charge de panetier
+                               de l‘Hôtel du roi, mais, du fait de son absence, son état de gentil-
+                               homme servant sera transformé en 1562 en celui de Maître d‘Hôtel
+                               ordinaire, avec un revenu annuel de 500 livres16. Quant au titre d’am-
+                               bassadeur, il semble que Danzay l’a reçu en 156317. Un document atteste
+                               en tout cas qu’il le porte déjà en mars 156518. Dès lors, sa situation
+                               n’évoluera plus jusqu’à son décès, en 1589. Elle demeurera conforme
+                                   14
+                                       Rördam H. F.. Résidents français près la cour de Danemark au
+                               XVIe siècle. Р. 8–9. La minute des lettres de créance de Danzay est conservée
+                               aux Archives de l’État danois.
+                                   15
+                                      Rördam H. F.. Résidents français… P. 3–6; Vindry F. Les Ambassa-
+                               deurs Français... P. 34.
+                                   16
+                                      Richard A. Un diplomate poitevin... P. 40-41. Par une lettre du 21 avril
+                               1588, Catherine de Médicis informera Danzay que cette pension ne lui sera
+                               plus versée pour cause de restrictions budgétaires, mais que «l’honneur et
+                               la qualité» lui en demeureront toujours // Catherine de Medicis. Lettres //
+                               Publiées par Hector de La Ferrière et Gustave Baguenault de Puchesse.
+                               T. IX. Paris, 1905. P. 335.
+                                   17
+                                      Vindry F. Les Ambassadeurs Français... P. 41.
+                                  18
+                                       BnF, Pièces originales 974, «Danzay», fol.1.
+
+                                                                    204
+                                                            Hugues Daussy
+
+à ce qu’indique l’adresse d’une lettre que lui envoie Charles IX,
+
+
+
+
+                                                                               Un diplomate huguenot au service de la couronne de France...
+le 1er mai 1572, où Danzay est désigné comme «nostre conseiller,
+maistre d’hostel ordinaire et ambassadeur résident près très hault,
+très excellent et très puissant prince nostre très cher et très ami,
+bon frère et cousin le roi de Danemark»19.
+    Représenter son prince, l’informer, s’entremettre et négocier
+en son nom, telles sont les tâches ordinaires d’un ambassadeur.
+Charles de Danzay s’en acquitte avec conscience et constance. Afin
+de reconstituer l’action du diplomate protestant pour le service du roi,
+on dispose essentiellement de sa correspondance avec la cour20. Ces
+lettres, dépêches et instructions sont soit reproduites dans les volumes
+cités en introduction, soit conservées, pour la plupart d’entre elles,
+à la Bibliothèque nationale de France. Compte tenu du caractère très
+lacunaire des sources rassemblées pour les vingt premières années
+son ambassade, ce n’est que pour la période qui s’ouvre en 1567 que
+le déroulement de la mission de Danzay est bien connu.
+    Le rôle de Danzay est avant tout de représenter le roi de France
+au Danemark. Dans ce royaume, il occupe une place tout à fait
+éminente car la France est le seul parmi les États d’Europe
+à entretenir à la cour danoise un agent pourvu de la qualité d’ambas-
+sadeur ordinaire (au moins à partir de 1563). Il prime donc tous les
+autres envoyés étrangers, non seulement parce que la nature de leurs
+commissions ne leur confère qu’un rang inférieur, mais aussi parce
+que le représentant du roi Très chrétien prend habituellement le pas
+sur tous les autres diplomates. Mais il y a plus, car l’usage en vigueur
+dans les cours du Nord prévoit que l’ambassadeur d’un prince doit
+recevoir dans l’ordre des préséances la place que le souverain aurait
+occupée s’il avait été présent en personne. Cette particularité per-
+met à Danzay de tenir le premier rang après le roi lors des cérémonies
+officielles, quels que soient les princes présents à la cour. Un évé-
+nement atteste cette prééminence: en 1575, lors du grand repas
+de mariage du roi Frédéric II, il est assis à la droite de celui-ci alors
+que l’électeur Auguste de Saxe, qui est le premier parmi les princes
+    19
+       Lettre de Danzay au roi, 1er mai 1572 // Bricka Carl-Frédéric. Indbe-
+retninger fra Charles de Dançay... P. 152.
+    20
+       C’est-à-dire de sa correspondance avec les rois de France successifs,
+avec Catherine de Médicis (en sa qualité de régente ou de reine mère, selon
+les époques), avec les princes et avec quelques ministres importants (les
+secrétaires d’État L’Aubespine et Pinart par exemple).
+
+                                    205
+Религия. Церковь. Общество   Выпуск IV
+
+                               invités, est assis à la gauche du souverain danois. Dans certains cas, il
+                               semble même que l’étiquette ait prévu que l’ambassadeur de France
+                               doive prendre le pas sur le roi lui-même. Cette situation, qui permet
+                               à un gentilhomme de noblesse récente et modeste de tenir un rang
+                               d’une importance inouïe, ne manque pas de scandaliser certains
+                               observateurs21. Toutefois, Danzay ne semble pas en avoir conçu une
+                               quelconque vanité et il s’attache plutôt à exploiter cette situation pri-
+                               vilégiée afin de remplir au mieux son devoir d’ambassadeur.
+                                   Son accès au roi de Danemark est en effet des plus aisés. Cette
+                               proximité est confirmée par une marque d’estime qui lui est témoi-
+                               gnée en 1579, lorsqu’il devient le parrain du duc Ulric, second fils
+                               de Frédéric II. Parfois convié aux parties de chasse du roi, il le
+                               suit dans ses divers déplacements autant que ses ressources finan-
+                               cières le lui permettent, que ce soit dans ses châteaux de Kolding
+                               et d’Hadersleve ou ailleurs dans le Jutland. Son action à la cour est
+                               également facilitée par les relations amicales qu’il entretient avec le
+                               chancelier Nicolas Kaas22. D’une manière générale, on peut affirmer
+                               que Danzay jouit d’une grande estime à la cour et dans les cercles
+                               érudits du Danemark, comme en témoignent différents indices. Il
+                               faut d’abord souligner, comme preuve de sa bonne renommée, que
+                               le célèbre historien et poète latinisant danois Erasmus Laetus lui a
+                               dédié, en 1557, un grand poème religieux en langue latine dont on
+                               conserve le manuscrit autographe23 . Celui-ci porte une dédicace
+                               prolixe adressée à Carolus Danzaeus24. Danzay est d’ailleurs en rela-
+                               tion étroite avec nombre de savants et d’érudits Danois. L’un de ses
+                               amis les plus intimes n’est autre que Tycho Brahé, qui a fait faire
+                               à l’astronomie des progrès fondamentaux et que Danzay a rencon-
+
+                                  21
+                                     Ces informations relatives aux usages en vigueur à la cour de Dane-
+                               mark ainsi qu’à la place occupée par Danzay lors du mariage de Frédéric II
+                               sont contenues in: Abraham de Wicquefort. L’ambassadeur et ses fonctions.
+                               Deuxième édition augmentée, T. I. Cologne, 1690. P. 278–279.
+                                  22
+                                     Chancelier de 1573 jusqu’à sa mort, en 1594.
+                                  23
+                                      Caelestis filiorum Dei precatio, carmine heroïco Cimbrii Erasmi
+                               Michaëlidis Laeti Haffniae, Anno 1557. Cet ouvrage est demeuré manuscrit.
+                                  24
+                                     Rördam H. F.. Résidents français... P. 11–12. Ce même Erasmus Laetus
+                               a dépeint en des termes élogieux l’activité déployée par Danzay lors du
+                               congrès de Stettin, en 1570, dans son grand poème intitulé Rerum
+                               Danicarum, libri XI., citée in: Rördam H. F.. Résidents français... P. 30–31;
+                               Richard A. Un diplomate poitevin... P. 200.
+
+                                                                   206
+                                                               Hugues Daussy
+
+tré en 157225 . C’est d’ailleurs lui qui se voit déférer l’honneur de
+
+
+
+
+                                                                                   Un diplomate huguenot au service de la couronne de France...
+poser la première pierre du château-observatoire d’Uranienborg,
+sur l’île de Vén, dans le Sund, le 8 août 1576 26 . André Sörensen
+Vedel, historiographe du roi de Danemark, appartient également au
+cercle relationnel de l’ambassadeur de France. La haute estime qu’il
+professe pour Danzay est attestée dans le musée qu’il a organisé à
+Ribe. Parmi les noms de neuf amis honorés sur la Tabula Bibliothe-
+cae, “Carolus Danzaeus Legatus Gallicus” figure au premier rang27.
+En 1580, dans une lettre qu’il adresse au roi de Navarre, Frédéric II
+lui-même témoigne de la considération qu’il a pour l’ambassadeur,
+qu’il qualifie de “generosus, inprimis nobis propter virtutem dilec-
+tus ordinarius in aula nostra legatus Dominus Carolus Danzaeus”,
+c’est-à-dire de noble et vertueux Charles de Danzay, ambassadeur,
+attaché ordinairement auprès de notre personne 28. Une autre preuve
+de cette estime est fournie par la procédure qui a été suivie après sa
+mort et par l’hommage qui lui a été rendu. Son corps fut inhumé
+dans l’église Notre-Dame de Copenhague et l’Université publia
+un programme funèbre en latin, que l’on a conservé, dans lequel
+figure une belle appréciation de son honnête caractère: on y souligne
+notamment son désintéressement et sa générosité envers ceux qui
+l’ont servi29. Enfin, un dernier indice de l’opinion de ses contem-
+    25
+       Thoren V. E. The Lord of Uraniborg. A biography of Tycho Brahe.
+Cambridge, 1990. P. 42.
+    26
+       L’inscription gravée sur cette première pierre le confirme: «Reg-
+nante in Dania Friderico II. Carolus Danzaeus R[egis] G[alliarum] I[n]
+D[aniae] L[egatus] domui huic Philosophiae, imprimisque Astrorum con-
+templationi, Regis decreto a Nobili Viro Tychone Brahe de Knudstrup
+extructae, votivum hunc lapidem memoriae et felicis auspicii ergo p. Anno
+1576 Id. Augusti» // Rördam H. F. Résidents français... P. 39–42. Voir égale-
+ment Thoren V. E. The Lord of Uraniborg. A biography of Tycho Brahe.
+P. 114. Les liens tissés entre Danzay et Brahé sont attestés par leur correspon-
+dance dont on conserve quelques éléments significatifs (3 lettres de Danzay
+et 2 lettres de Brahé reproduites: Tychonis Brahei et ad eum doctorum...
+P. 31–32, 37–38, 52, 70–71). Il ressort de ces lettres que Brahé et Danzay
+avaient nombre d’amis communs, parmi lesquels Johannes Pratensis, profes-
+seur de médecine à l’Université. Danzay est d’ailleurs souvent cité dans les
+missives échangées par Brahé et Pratensis jusqu’à la mort de ce dernier
+en 1576 (Tychonis Brahei et ad eum doctorum... P. 21–22 et 24–27).
+    27
+       Rördam H. F.. Résidents français... P. 38.
+    28
+       Rördam H. F.. Résidents français... P. 46.
+    29
+       Programme funèbre publié par l’Université de Copenhague à l’occasion
+des funérailles de Charles de Danzay, reproduit: Rördam H. F. Résidents
+
+                                      207
+Религия. Церковь. Общество   Выпуск IV
+
+                               porains est révélé par un chroniqueur danois qui a écrit dans les
+                               années 1580. Il qualifie Danzay de “pieux et savant vieillard”30. La
+                               solide position de l’ambassadeur à la cour, qui s’enracine donc dans
+                               une bonne renommée, lui permet ainsi de représenter dignement le
+                               roi de France et de le servir avec zèle et efficacité.
+                                   Le rayon d’action de Danzay est bien plus étendu que le simple
+                               royaume de Danemark. Parmi les ambassadeurs que le roi de France
+                               entretient en Europe, il est le seul à être établi dans un pays du Nord.
+                               De ce fait, c’est pour quasiment tout le monde Baltique que Danzay
+                               remplit sa fonction de représentation et d’intermédiaire. On peut
+                               mesurer l’étendue de l’espace dans lequel il intervient grâce à l’énu-
+                               mération des princes auprès desquels il doit agir lors de la campagne
+                               de justification du massacre de la Saint-Barthélemy au nom de Charles
+                               IX, en août et septembre 1572. Il est chargé d‘écrire au roi de Suède,
+                               au duc de Holstein, au duc de Mecklembourg, au duc de Poméranie,
+                               au duc de Prusse, au roi de Pologne ainsi qu‘aux villes maritimes don-
+                               nant sur la Baltique, notamment celles de la Hanse31. Ce sont donc
+                               tous les États limitrophes de la mer Baltique qui relèvent de sa compé-
+                               tence diplomatique. Un discours envoyé au secrétaire d’État Claude
+                               Pinart, en avril 1575, témoigne en outre qu’il est également chargé de
+                               favoriser les intérêts commerciaux français en Moscovie32.
+                                   Pour cette immense étendue, il est l’œil et l’oreille du roi de
+                               France et c’est avec conscience et application qu’il remplit sa tâche
+                               d’informateur. Sa correspondance en témoigne, de même que les
+                               longs discours et autres mémoires qu’il adresse régulièrement
+                               à la cour sur l’état des affaires du Nord. Sa mission est plurielle et
+                               nous nous contenterons ici d’en dégager les aspects principaux.
+                                   Il a d’abord une double fonction principale, qui lui est explici-
+                               tement signifiée dès le début de sa légation par Henri II. Dans une
+                               lettre d’avril 1575, Danzay la rappelle lui-même :
+                                   Les principaux conseillers du feu roi Henri, mon seigneur
+                               de sainte mémoire, quand sa Majesté m’envoya en Danemark, me
+                               français... P. 47–50.
+                                   30
+                                      Programme funèbre publié par l’Université de Copenhague… P. 46.
+                                   31
+                                      Lettre de Danzay au roi. Copenhague, 23 octobre 1572 // Br ick a
+                               Carl-Frédéric. Indberetninger fra Charles de Dançay... P. 170.
+                                   32
+                                      Discours du sieur de Danzay, des affaires de Danemark et de Suède,
+                               à Monseigneur Pinart, conseiller du roy, secrétaire d’Estat et des finances,
+                               la douzième d’avril 1575 // BnF, Fds. fr. 6619, fol. 142–151v°.
+
+                                                                  208
+                                                          Hugues Daussy
+
+donnèrent cette instruction qu’ils m’ont depuis souvent réduit
+
+
+
+
+                                                                             Un diplomate huguenot au service de la couronne de France...
+en mémoire: c’est que je devais soigneusement retenir les rois
+de Danemark et de Suède en une bonne et ferme amitié et leur misse
+en jalousie les grandes forces de leurs voisins, et remontrasse les
+faciles moyens qu’ils avaient de les ruiner. Pour cette cause que le Roi,
+comme leur ancien ami, les voudrait assister et défendre contre ceux
+qui entreprendraient de les offenser, connaissant bien que ceux qui
+feraient telles entreprises ne lui seraient sûrs amis, et que, les conser-
+vant, il assurait grandement son État ; aussi que sa Majesté espérait
+qu’ils reconnaîtraient fidèlement cette sienne faveur, s’il en avait
+besoin, et que cela suffirait33.
+    En somme, il s’agit pour Danzay de veiller à ce que la Suède et
+le Danemark restent en paix afin qu’un affaiblissement de ces États
+qui résulterait d’une guerre ne profite pas aux puissances voisines,
+et notamment aux Habsbourg. Pour le roi de France, il convient
+en effet d’empêcher l’empereur d’étendre son influence en Baltique
+et de s’assurer l’amitié et l’alliance des royaumes du Nord.
+    Cette tâche est loin d’être aisée car les relations entre
+la Suède et le Danemark sont naturellement tendues depuis que
+l’union de Kalmar, qui les réunissait sous domination danoise
+depuis 1389, a été brisée par Gustave Vasa en 1523. Jusqu’en 1563, les
+deux royaumes demeurent toutefois en paix, mais Éric XIV, succes-
+seur de Gustave Vasa sur le trône de Suède en 1560 et Frédéric II,
+successeur de Christian III sur celui de Danemark en 1559, sont
+plus enclins à la guerre que leurs pères. Un long conflit de sept ans
+débute alors avec pour enjeu la domination sur les détroits du Sund,
+la porte de la Baltique, ainsi que sur quelques provinces côtières
+possédées par le Danemark au sud de la Suède (Halland, Scanie,
+Blekinge, plus les îles de Gotland et d’Osel)34.
+    En bonne application des principes qui président à sa mission,
+Danzay est immédiatement chargé par Charles IX de trouver un
+moyen pour réconcilier les belligérants et d’obtenir le rétablisse-
+ment de la paix. Pendant sept ans, il multiplie les efforts, offrant
+à travers son action la médiation du roi de France. La difficulté est de
+ne pas prendre partie et de demeurer neutre afin de conserver à la
+   33
+      Lettre de Danzay à Catherine de Médicis, 20 avril 1575 // Correspon-
+dance de Charles Dantzai... P. 91.
+   34
+      Helle Astrid E. Histoire du Danemark. Paris: Hatier, 1992. P. 71–73.
+
+                                   209
+Религия. Церковь. Общество   Выпуск IV
+
+                               France l’amitié des deux souverains en guerre l’un contre l’autre.
+                               C’est surtout à partir du mois de juin 1565 que les négociations s’in-
+                               tensifient. Cautionné par le roi de Danemark comme intercesseur
+                               officiel désigné par le roi de France avec charge de conduire les
+                               négociations, Danzay fait la navette entre les deux royaumes. Ses
+                               efforts auraient toutefois sans doute difficilement abouti si un chan-
+                               gement brutal sur le trône de Suède n’était advenu avec le renver-
+                               sement d’Éric XIV par son frère Jean III, duc de Finlande, le 29
+                               septembre 1568. Ce dernier est en effet plus favorable à la paix
+                               qui, grâce à l’industrie de Danzay, est finalement signée à Stettin
+                               le 13 décembre 1570 35. C’est un triomphe pour Danzay et pour
+                               sa politique, l’ambassadeur demandant au roi de France qu’il lui
+                               adresse une sorte d’attestation par laquelle il “advoue ce que j’ay
+                               négocié en son nom entre lesdicts roys de Danemarck, de Pon-
+                               logne et de Suède et la ville de Lubeck pour leur réconciliation
+                               comme intercesseur commun jusques à présent et traitterai encore
+                               cy-après, afin que par ceste générale attestation mes actions ayent
+                               plus de pouvoir et soyent plus recommandées”36. Quelques semaines
+                               plus tard, le roi répond favorablement à cette requête et lui adresse
+                               un mandement dans lequel il loue et ratifie son action diploma-
+                               tique37. Ainsi, c’est en grande partie grâce aux efforts de Danzay
+                               que le roi de France jouit, au début des années 1570, d’une posi-
+                               tion privilégiée dans le Nord comme artisan de la réconciliation.
+                                   Les intérêts français en Baltique ne sont pas uniquement poli-
+                               tiques. Un autre aspect de la mission de Danzay est en effet de sti-
+                               muler le développement des échanges commerciaux avec les pays du
+                               Nord. Des traités de commerce ont été conclus avec la Suède en 1542;
+                               Danzay participe à leur renouvellement en 1559, puis à leur extension
+                               en 1571. On connaît l’importance du droit de passage par le Sund,
+                               qu’une bonne amitié avec le Danemark contribue à garantir. D’autre
+                               part, dès le début des années 1560, Danzay est chargé de persuader les
+                               villes de la Hanse d’établir en France un comptoir identique à ceux
+
+                                   35
+                                      Le récit de cette interminable négociation a été fait par: Richard A. Un
+                               diplomate poitevin… P. 47–72.
+                                   36
+                                      Lettre de Danzay au roi. Stettin, 19 septembre 1570 // Br ick a Carl-
+                               Frédéric. Indberetninger fra Charles de Dançay... P. 105.
+                                   37
+                                      On trouve la copie de ce mandement: Br ick a Carl-Frédéric. Indberet-
+                               ninger fra Charles de Dançay... P. 116.
+
+                                                                    210
+                                                               Hugues Daussy
+
+qu’elles possèdent à Londres et à Bruges. Il effectue des voyages
+
+
+
+
+                                                                                    Un diplomate huguenot au service de la couronne de France...
+répétés à Lubeck et obtient un accord de principe dès 1562. Mais les
+interférences avec les intérêts anglais, que l’ambassadeur est chargé
+de contrer, et surtout les troubles qui agitent le royaume de France
+contraignent les émissaires de la ligue hanséatique à différer sans cesse
+leur voyage auprès de Charles IX 38. Enfin, toujours dans le domaine
+commercial, c’est le trafic des marchands français avec la Russie et
+surtout avec la riche et fertile Livonie que l’ambassadeur doit favo-
+riser39. Cette entreprise n’est pas sans présenter des difficultés poli-
+tiques car il y a un conflit d’intérêt entre le port suédois de Reval et le
+port moscovite de Narva, situés dans la zone très stratégique du golfe
+de Finlande. Ce différend débouche d’ailleurs sur une guerre entre
+la Moscovie et la Suède40. Cet affrontement débute en septembre 1572
+et se poursuit jusqu’en 1583, ce qui ne facilite pas l’action de Danzay
+en faveur du développement commercial41. Dans un discours de 1575,
+l’ambassadeur donne à Claude Pinart son sentiment sur la question,
+estimant que le souci du roi de France doit être de contrer l’expan-
+sionnisme d’Ivan le Terrible vers la Suède et la Pologne à l’ouest, car
+il serait préjudiciable aux intérêts français. Il va même jusqu’à regret-
+ter que les troubles de religion qui secouent le royaume de France ne
+permettent pas au roi d’entretenir des troupes dans cette région afin
+de contribuer à la lutte contre les Moscovites42.
+     Dans un autre domaine, mais non sans relation avec ces pro-
+blèmes territoriaux, Danzay fait une ouverture afin de procurer
+au duc d’Anjou, le futur Henri III, le moyen de monter sur un trône.
+    38
+       Richard A. Un diplomate poitevin... P. 74–77. Sur le déclin, la Hanse
+souffre beaucoup des conflits répétés en Baltique. Londres demeure alors
+le plus prospère de ses comptoirs: Dollinger Philippe. La Hanse XIIe–XVIIe
+siècles. Paris, 1988. P. 384–390.
+    39
+       Grâce à l’action de Danzay, la France est alors le seul État d’Europe
+occidentale à tenter de développer ses relations commerciales avec la
+Moscovie et la Livonie. Voir Kirchner W. Commercial relations between
+Russia and Europe 1400–1800. Bloomington, 1966. P. 100–104.
+    40
+       À propos de l’imbrication des intérêts politiques et économiques dans la
+région et des conflits qui en résultent en Livonie, voir Kirby D. Northern Europe
+in the Early Modern Period. The Baltic World 1492–1772. London; New York,
+1990. P. 113–119. Sur les guerres de Livonie, voir également Oakley S. P. War and
+Peace in the Baltic 1560–1790. London; New York, 1992. P. 27–41.
+    41
+       Richard A. Un diplomate poitevin... P. 81.
+    42
+       Discours du sieur de Danzay... Fol. 151v°.
+
+                                       211
+Религия. Церковь. Общество   Выпуск IV
+
+                               Dès janvier 1572, il fait part à Catherine de Médicis du projet que
+                               des nobles suédois sont venus lui présenter de renverser le roi
+                               de Suède, Jean III, atteint comme son prédécesseur Éric XIV
+                               de troubles psychiques. Portant jugement sur la santé mentale de
+                               la famille royale suédoise, Danzay écrit, parlant d’abord du père
+                               de Gustave Vasa, qu’il “estoit un fol naturel, courant dans les rues”;
+                               il poursuit par cette affirmation qui ne laisse aucun doute sur l’opi-
+                               nion qu’il a de ses descendants: “le roi Gustavus avait quelques lunes,
+                               et ses enfants sont bien pis”43 . Suivant le triste exemple d’Éric,
+                               Jean est alors connu pour ses accès de folie sanguinaire, y com-
+                               pris envers des membres de sa propre famille. Afin de l’évincer,
+                               les conspirateurs suédois réclament l’aide de la France et, avertie
+                               par Danzay, Catherine de Médicis donne à son ambassadeur l’auto-
+                               risation d’agir. Selon lui, une fois roi de Suède, le duc d’Anjou pourra
+                               aisément étendre sa domination sur la plupart des États du Nord 44.
+                               Toutefois, l’élection de ce prince au trône de Pologne, en mai 1573,
+                               finit par ruiner le projet 45.
+                                   Appelé auprès du nouveau roi de Pologne après l’arrivée de celui-
+                               ci dans ses États, en février 1574, Danzay est chargé des relations avec
+                               les sénateurs et les principaux personnages du royaume, avec lesquels
+                               il entretient de déjà anciens et excellents rapports46. Mais la fuite du
+                               futur Henri III, après l’annonce du décès de Charles IX, le place dans
+                               une situation délicate car il est chargé d’exposer au Sénat les motifs de
+                               ce départ précipité47. Finalement, abandonné sans charge officielle, il
+                               se résout à quitter la Pologne étant, écrit-il, «en danger, en tel tumulte,
+                               d’avoir tous les jours la gorge coupée»48.
+                                   Parmi tant d’autres, il est encore une initiative de Danzay qui
+                               mérite d’être citée. À la fin de l’année 1574, Catherine de Médicis
+                               lui annonce qu’elle envisage de marier Henri III avec Élisabeth,
+                               la sœur du roi de Suède. Danzay est saisi de l’affaire, mais l’idée doit
+                               être abandonnée lorsque le nouveau roi de France fait connaître son
+                                   43
+                                      Lettre de Danzay au roi, 4 janvier 1572 // Br ick a Carl-Frédéric. Indbe-
+                               retninger fra Charles de Dançay... P. 177.
+                                   44
+                                      Richard A. Un diplomate poitevin... P. 100–101.
+                                   45
+                                      Richard A. Un diplomate poitevin... P. 103.
+                                   46
+                                      Richard A. Un diplomate poitevin... P. 108–109.
+                                   47
+                                      Champion P. Henri III roi de Pologne (1573–1574). Paris: Grasset,
+                               1943. P. 268–270, 277, note 1.
+                                   48
+                                      Richard A. Un diplomate poitevin... P. 111.
+
+                                                                    212
+                                                            Hugues Daussy
+
+désir d’épouser Louise de Vaudémont 49. Convaincu du profit que
+
+
+
+
+                                                                                Un diplomate huguenot au service de la couronne de France...
+la France peut tirer d’une telle alliance, Danzay revient à la charge
+en proposant le mariage de la princesse suédoise avec François
+d’Alençon, dernier frère du roi. Dans un discours d’avril 1575, il
+expose le fruit qu’il espère de cette union: son plan consiste
+à convaincre le roi de Suède d’abandonner à sa sœur tous ses droits
+sur la Livonie (qui lui servira de dot), ce qui permettra au mari de
+la princesse d’en devenir le grand-duc 50 . Danzay voit un double inté-
+rêt à un tel arrangement. D’une part, la Livonie est une contrée fort
+avantageuse d’un point de vue commercial ; d’autre part il consi-
+dère cette position comme un tremplin dans une perspective plus
+vaste, estimant que le nouveau “seigneur de Livonie pourra espérer
+de estre ung jour roy de Poulongne de Suède et de Danemarck de
+leur bon gré et consentement s’il est amateur d’équité et justice et
+se rend recommandable à ung chascun par ses vertus comme il est
+à espérer d’un prince françoys”51. Avec ce prolongement utopique,
+le projet n’aura pas de suites, notamment en raison du peu d’empres-
+sement manifesté par le duc d’Alençon.
+    La tâche de Danzay en tant qu’ambassadeur de France au Dane-
+mark touche donc bien des domaines, et des affaires de grande
+ampleur dont on n’a cité ici que les principales. Le diplomate est par-
+fois également employé pour des questions plus secondaires, dont
+certaines sont amusantes. On peut ainsi faire état des nombreux
+efforts qu’il doit accomplir en 1571–1572 afin de procurer un nain de
+cour à Catherine de Médicis. À lire la correspondance de l’ambassa-
+deur, il semblerait bien que le nain de qualité ait été une denrée rare
+à cette époque et c’est vers le duc de Prusse qu’il finit par se tourner,
+celui-ci acceptant de céder son nain à la reine mère. Le 31 août 1572,
+Danzay peut ainsi écrire à Catherine de Médicis:
+    Madame, le duc de Prusse m’a envoyé ung nain pour vostre
+majesté, lequel est d’esprit assez gentil et pour bien faire ce qui
+luy sera commandé; il n’a difformité quelconque sus luy. Je crains
+   49
+       Richard A. Un diplomate poitevin... P. 113–116.
+   50
+       La sœur du roi de Suède ne disposant que de 150 000 thalers de dot,
+cette somme devait être enrichie d’un don complémentaire. Placer la Livonie
+dans la corbeille de la mariée pouvait offrir une solution satisfaisante.
+    51
+       Discours du sieur de Danzay... Fol. 151 et 151v°; Richard A. Un diplo-
+mate poitevin... P. 118–120.
+
+                                     213
+Религия. Церковь. Общество   Выпуск IV
+
+                               seulement qu’il soit ung peu trop hault, mais il n’a esté possible
+                               d’en recouvrer ung plus commode, dont je supply très humble-
+                               ment vostre majesté qu’il luy plaise m’avoir pour excusé 52.
+                                   Le marché du nain de cour semble donc alors des plus restreints.
+                                   Ce fidèle service qu’il rend à son maître le roi de France n’est
+                               toutefois sans doute pas toujours sans poser à Charles de Danzay
+                               des problèmes de conscience. Comment l’ambassadeur, calviniste
+                               fervent, réussit-il à conjuguer sans contradiction sa fidélité à un
+                               souverain catholique parfois ouvertement hostile aux protestants
+                               et l’obéissance qu’il doit à Dieu? Ce tiraillement, que le diplomate
+                               doit éprouver, est celui que bien des serviteurs protestants des rois
+                                                                                             e
+                               de France ont dû affronter dans la seconde moitié du XVI siècle.
+                               Pour comprendre la manière dont Danzay articule son action
+                               au service du roi et son dévouement à la cause protestante, il faut
+                               d’abord évoquer son insertion dans un réseau politique interna-
+                               tional. On retrouve en effet les vestiges de la correspondance du
+                               diplomate avec les principaux conseillers des princes protestants
+                               d’Europe. Ses contacts avec Hubert Languet, agent au service
+                               de l’Électeur de Saxe, etc. sont ainsi attestés53, de même que ses
+                               relations avec le secrétaire d’État anglais Francis Walsingham54.
+                                   Il communique également avec Pierre Loiseleur de Villiers, cha-
+                               pelain et conseiller de Guillaume d’Orange55, ainsi qu’avec Philippe
+                                   52
+                                      Lettre de Danzay à Catherine de Médicis, Copenhague, 31 août
+                               1572 // Br ick a Carl-Frédéric. Indberetninger fra Charles de Dançay...
+                               P. 167. Le nain en question est Jean Krassowski, dit le petit Domine, qui
+                               demeurera à la cour de France jusqu’à son décès, le 11 juillet 1599 // Cath-
+                               erine de Med cis. Lettres. T. X (suppléments). Paris, 1909. P. 313.
+                                   53
+                                      Béatrice Nicollier prouve que Danzay et Languet sont demeurés en
+                               contact toute leur vie. Leur amitié, scellée pendant leurs études à Poitiers,
+                               mais surtout leur communauté de pensée a favorisé la pérennisation de leur
+                               relation // Nicollier Béatrice. Hubert Languet (1518–1581). Un réseau poli-
+                               tique international de Melanchthon à Guillaume d’Orange. Genève, 1995.
+                               P. 414. Voir aussy: Daussy H. Le partie Huguenot. Chronique d’une disillu-
+                               sion (1557–1572). Genève, 2014. P. 446.
+                                   54
+                                      Des épaves de leur correspondance demeurent conservées à Londres,
+                               au Public Record Office. Plusieurs de ces lettres seront citées plus bas.
+                                   55
+                                      Cette relation est attestée dans une lettre de Danzay à Philippe
+                               Duplessis-Mornay, datée du 28 février 1580 et publiée in: Duplessis-Mornay
+                               Philippe. Mémoires et correspondence / Publiés par A.-D. de La Fontenelle
+                               de Vaudoré et P.-R. Auguis. Paris: Treuttel et Würtz, 1824–1825. T. II.
+                               P. 92, puis dans d’autres missives adressées à Mornay par l’ambassadeur.
+                               Elle est également évidente grâce à une lettre adressée à Loiseleur de Vil-
+
+                                                                   214
+                                                                   Hugues Daussy
+
+Duplessis-Mornay, concepteur de toute la politique extérieure d’Hen-
+
+
+
+
+                                                                                         Un diplomate huguenot au service de la couronne de France...
+ri de Navarre 56. Mais ses relations ne se limitent probablement pas
+à ces quelques têtes pensantes d’un réseau politique international
+dont Béatrice Nicollier a esquissé les contours dans son ouvrage sur
+Hubert Languet57.On sait que Charles de Danzay entretenait une
+importante correspondance privée qui a, malheureusement, presque
+totalement disparu du fait des conditions matérielles difficiles dans
+lesquelles l’ambassadeur a terminé sa vie. Criblé de dettes contrac-
+tées pour le service du roi, qui lui devait des sommes considérables
+sur ses gages et autres frais engagés dans le cadre de ses missions,
+il a dû laisser l’intégralité de ses maigres biens à ses créanciers qui
+les ont saisis après sa mort58. Du fait de leur haut intérêt politique,
+seuls ses papiers d’État ont été en partie préservés à l’instigation
+de Jacques Bongars, envoyé après lui au Danemark 59. Le reste a sans
+
+liers par Théodore de Bèze, le 20 février 1580 // Correspondance de Théo-
+dore de Bèze, recueillie par Hippolyte Aubert, publiée par Alain Dufour,
+Béatrice Nicollier et Hervé Genton. T. XXI (1580). Genève, 1999. P. 13, 16.
+    56
+       Le tome II des Mémoires et correspondance de Duplessis-Mornay
+reproduit notamment quatre lettres adressées par Danzay à Mornay (28
+février 1580. P. 84–94; 14 juin 1580. P. 100–109 ; 6 novembre 1580. P. 110–
+118; 18 mai 1582. P. 148–151).
+    57
+       Nicollier Béatrice. Hubert Languet... Passim.
+    58
+       La charge d’ambassadeur était souvent ruineuse pour son détenteur
+car les retards dans le paiement des gages et le remboursement des frais
+étaient la norme. Généralement, les diplomates étaient issus de la haute
+noblesse et disposaient de la fortune et des revenus nécessaires pour faire
+face à la dépense. Ce n’est pas le cas de Danzay, dont l’extraction est modeste.
+Dès 1570, il commence à être pris à la gorge par l’accumulation de ses dettes et
+réclame à Catherine de Médicis le remboursement des frais qu’il a engagés pour
+le service du roi. Les difficultés financières auxquelles la monarchie doit faire
+face, mais aussi la mauvaise volonté évidente des trésoriers de l’Épargne dif-
+fèrent sans cesse la satisfaction de sa demande. Dans les dernières années de sa
+vie, sa situation financière devient ainsi désespérée. Condamné à ne plus quit-
+ter Copenhague sans avoir remboursé ses créanciers dès 1581, il souffre de ce
+déshonneur mais continue à remplir sa mission du mieux possible. Il meurt
+insolvable, alors que le trésor royal lui doit le somme considérable de 20 000 écus.
+Pour un exposé détaillé des problèmes financiers de Danzay, voir: Richard A.
+Un diplomate poitevin... P. 174–196.
+    59
+       Sa correspondance officielle a d’abord été confiée en garde à son
+secrétaire, Isaac Maillet, jusqu’au départ de celui- ci pour la France au
+printemps 1594. On ignore ensuite le parcours de ces précieux documents.
+Quant à ses papiers privés, leur destin demeure mystérieux, mais il est prob-
+able qu’ils ont été dispersés lors de la saisie de ses biens. Il est à craindre qu’ils
+
+                                         215
+Религия. Церковь. Общество   Выпуск IV
+
+                               doute été détruit ou perdu. Il n’en demeure pas moins que les traces
+                               de ses contacts avec les membres de ce réseau, en partie ignorées par
+                               Alfred Richard en 1910, permettent de tracer les grandes lignes de son
+                               engagement au service de la cause protestante. Conduite en parallèle à
+                               celle qu’il mène au nom du roi de France, cette action n’est-elle jamais
+                               contradictoire avec les intérêts de la monarchie ?
+                                    Plusieurs événements offrent l’occasion de mesurer la nature et
+                               l’intensité du dévouement de Danzay au service de la religion réfor-
+                               mée. Il s’agit d’abord du massacre de la Saint-Barthélemy, qu’il est
+                               chargé de justifier auprès des princes du Nord. Malheureuse-
+                               ment, nous ne disposons d’aucun indice sur sa réaction personnelle
+                               immédiate. Seuls des éléments de sa correspondance diplomatique
+                               avec le roi et la reine mère permettent de vérifier qu’il a bel et bien
+                               transmis la version officielle fournie par la monarchie. Chargé d’apai-
+                               ser les craintes du roi de Danemark et des princes d’Europe du Nord,
+                               il a véhiculé la thèse du complot protestant dirigé contre le roi et jus-
+                               tement réprimé, puis minimisé l’ampleur des massacres qui ont été
+                               perpétrés à Paris60. Pour le roi de France, le fait que son représentant
+                               soit ouvertement calviniste est alors un avantage considérable car sa
+                               plaidoirie en faveur de la version royale s’en trouve lavée de bien des
+                               soupçons. Plusieurs lettres de Catherine de Médicis témoignent de la
+                               satisfaction de la reine mère quant au comportement de l’ambassa-
+                               deur à cette occasion61. Danzay a alors simplement rempli le devoir
+                               de sa charge, avec fidélité et abnégation, en faisant abstraction de
+                               ses sentiments personnels pour le service du roi et l’intérêt de l’État.
+                               Il n’est d’ailleurs pas impossible qu’il ait pu croire, dans un premier
+                               temps, à la version royale62. Ce qui est certain, en revanche, c’est que
+                               des informations plus précises et plus exactes sur les événements
+                               du 24 août ont fini par lui parvenir par d’autres canaux. Plusieurs
+
+                               soient irrémédiablement perdus. Voir R ic ha rd A . Un diplomate poitevin...
+                               P. 196–199.
+                                   60
+                                      R ic ha rd A . Un diplomate poitevin... P. 93–94.
+                                   61
+                                      Notamment dans une lettre adressée à Danzay au mois d’avril 1573 //
+                               Catherine de Medicis. Lettres. T. X (suppléments). Paris, 1909. P. 313;
+                               et dans une autre missive datée du 16 octobre 1573 // Catherine de Medicis.
+                               Lettres. T. IV. Paris, 1891.
+                                   62
+                                      Son apparente incompréhension initiale à l’égard de l’attitude des
+                               Rochelais semble l’attester. Lettre de Danzay au roi. Copenhague, 5 juin
+                               1573 // Bricka Carl-Frédéric. Indberetninger fra Charles de Dançay... P. 193.
+
+                                                                   216
+                                                           Hugues Daussy
+
+années après, son opinion rétrospective sur la Saint-Barthélemy
+
+
+
+
+                                                                              Un diplomate huguenot au service de la couronne de France...
+apparaît sans équivoque dans sa correspondance avec Duplessis-
+Mornay. Le massacre y est considéré comme «l’exécution de ce tant
+cruel et inhumain conseil» et qualifié de «tant détestable acte»63.
+Dans une autre lettre, Danzay évoque «ceste funeste et maudite jour-
+née de Sainct Barthelemi»64. Même s’il n’a été averti de la réalité des
+faits qu’après avoir justifié l’attitude de la monarchie, il n’en demeure
+pas moins que l’ambassadeur ne pouvait qu’amèrement regretter
+le retournement violent et soudain de la politique royale envers ses
+coreligionnaires. Dans cette circonstance, la fidélité avec laquelle il
+s’est comporté témoigne de sa capacité à dissocier son action poli-
+tique pour le service du roi de tout parti pris confessionnel.
+    Un deuxième indice permet de mesurer l’engagement de Dan-
+zay sur le plan religieux. Il s’agit de sa réaction face à la tenta-
+tive de mise en application de la Formule de Concorde. Ce texte,
+qui définit en 1577 la nouvelle orthodoxie luthérienne et condamne
+violemment le calvinisme, rend impossible l’union des puissances
+réformées contre l’oppression catholique ardemment souhaitée par
+les membres du réseau international auquel Danzay appartient. Les
+vestiges de sa correspondance avec Duplessis-Mornay prouvent que
+le problème du désaccord religieux qui divise les protestants le pré-
+occupe au plus haut point. À l’image d’Hubert Languet, qui a fait
+de la lutte contre la Formule l’une de ses priorités, l’ambassa-
+deur se lance dans le combat en publiant un opuscule par lequel
+il appelle les princes à mettre fin aux querelles théologiques qui
+divisent les protestants et font le jeu des papistes. Cet ouvrage,
+intitulé Ratio ineundae Concordiae65, paraît en 1579. Il est traduit
+en allemand la même année et diffusé anonymement à l’occasion
+d’une visite de l’Électeur de Saxe au Danemark. Il est possible
+d’identifier Danzay comme son auteur grâce aux initiales placées en
+tête du livret, C.Q.D.A., que l’on peut décoder en Carolo Quissarmo
+   63
+      Lettre de Danzay à Mornay. Hambourg, 14 juin 1580 // Duplessis-
+Mornay Philippe. Mémoires et correspondence. T. II. P. 103.
+   64
+      Lettre de Danzay à Mornay. Hambourg, 6 novembre 1580 // Duplessis-
+Mornay Philippe. Mémoires et correspondence. T. II. P. 115.
+   65
+      Ratio ineundae Concordiae, inter Ecclesias Reformatas. Sive quibus
+modis occuri possit mirificis artibus, quibus Pontificii per quosdam impru-
+dentes Theologos universas Christi ecclesias, potissimum autem et primum
+Germanicas pessundare conantur. S.l., 1579.
+
+                                    217
+Религия. Церковь. Общество   Выпуск IV
+
+                               domino Anzaei 66, mais aussi par l’aveu contenu dans l’une des lettres
+                               adressées par le diplomate à Duplessis-Mornay67. Le thème central
+                               de la Ratio ineundae Concordiae est la déploration de
+                                   la division qui existe entre calvinistes et luthériens, que Danzay
+                               considère comme éminemment préjudiciable au développement de
+                               la vraie religion, ainsi que les solutions proposées par l’ambassadeur
+                               pour mettre un terme à ces dissensions.
+                                   L’essentiel de l’argumentation contenue dans ce petit traité se
+                               retrouve exposé dans les trois lettres adressées par Danzay à Mornay
+                               entre février et novembre 1580. Ces missives sont longues et montrent,
+                               par les détails que fournit l’ambassadeur ainsi que par la détermination
+                               qu’il y manifeste à lutter contre la Formule de Concorde, non seulement
+                               la place éminente qu’il semble occuper au sein du réseau politique inter-
+                               national protestant, mais aussi son rôle de cheville ouvrière dans cette
+                               entreprise. Il est en effet, du fait de sa situation géographique, celui qui,
+                               avec Hubert Languet, est le mieux placé pour connaître les positions
+                               intimes des différents princes protestants sur ces questions de la For-
+                               mule et de l’Union. Il est également l’intermédiaire tout désigné pour
+                               obtenir du roi de Danemark, naturellement hostile à la Formule, qu’il
+                               accepte de jouer les bons offices entre calvinistes et luthériens. Dans
+                               ses lettres, il conseille Mornay sur la manière dont le roi de Navarre
+                               aura à se comporter afin de réduire la fracture qui l’oppose aux parti-
+                               sans de la Formule, parmi lesquels l’Électeur de Saxe est le plus résolu.
+                               Selon lui, toute la difficulté réside dans l’énonciation d’une proposi-
+                               tion acceptable par tous sur la question centrale de la présence réelle
+                               du Christ lors de la Cène68. Afin de convaincre Auguste de Saxe et les
+                               princes luthériens que les accusations d’hérésie (intra-protestante) qui
+                               ont été lancées contre lui sont calomnieuses, Danzay suggère qu’Henri
+                               de Navarre adresse aux princes allemands une «pure et simple confes-
+                               sion de sa foi»69. Enfin, il plaide avec vigueur en faveur de la tenue d’un
+                               synode général «pour composer, par l’auctorité et commun consente-
+                                   66
+                                      Au sujet de cet ouvrage et de ses différentes éditions, voir: Richard
+                               A. Un diplomate poitevin...P. 134–141.
+                                   67
+                                      Lettre de Danzay à Mornay. Hambourg, 6 novembre 1580 // Duplessis-
+                               Mornay Philippe. Mémoires et correspondence. P. 113.
+                                   68
+                                      Lettre de Danzay à Mornay, 28 février 1580 // Duplessis-Mornay
+                               Philippe. Mémoires et correspondence. T. II. P. 86–91; et Lettre de Danzay
+                               à Mornay. Hambourg, 14 juin 1580, lettre cit. P. 105–107.
+                                   69
+                                      Lettre de Danzay à Mornay. 28 février 1580, lettre cit. P. 86.
+
+                                                                   218
+                                                               Hugues Daussy
+
+ment des roys et princes de la relligion réformée, les différens qui sont
+
+
+
+
+                                                                                    Un diplomate huguenot au service de la couronne de France...
+en leur religion»70. Dans toutes ces lettres, Danzay fustige avec véhé-
+mence ceux qui jettent de l’huile sur le feu de la division confession-
+nelle, notamment «quelques corrompeus théologiens»71. On y retrouve
+saconviction, exprimée dans la Ratio ineundae Concordiae, que c’est
+aux princes seuls que revient la charge d’imposer l’Union, même sur les
+questions de doctrine72. Pour lui, l’enjeu est en effet capital car il faut à
+tout prix éviter que les protestants se trouvent divisés face à l’union des
+puissances catholiques, que les membres du réseau auquel il appartient
+considèrent comme une conjuration papiste internationale:
+    Les forces de nos ennemis sont grandes et s’augmentent jour-
+nellement. Ils sont tous unis et bien d’accord ; ils ne perdent une
+seule occasion qui leur puisse profiter, et executent diligentement et
+vivement leurs desseings. Au contraire nos forces sont petites et se
+diminuent journellement: nous sommes si irrités les ungs aulx aultres,
+que nous ne cherchons qu’à nous ruyner, et s’il se propose quelque
+sage et utile conseil, il le fault poursuivre trois ans premier qu’il y soit
+pourveu. Pourtant, si Dieu n’y met la main, et n’use d’une singulière
+miséricorde, je vois une extreme désolation des eglises chrestiennes73.
+    Il est intéressant de constater que, parallèlement à son action offi-
+cielle au service du roi de France, Danzay conduit une action person-
+nelle qui semble requérir de lui un investissement considérable en
+démarches diverses qu’il accomplit non seulement vers le roi de Dane-
+mark, mais aussi en direction des princes allemands. Ce volet secret
+de son action doit bien évidemment être ignoré du roi de France et de
+Catherine de Médicis ; il s’efforce donc de leur dissimuler cet enga-
+gement en faveur de la cause réformée. En novembre 1580, évoquant
+diverses initiatives qu’il vient de prendre, il écrit ainsi à Duplessis-
+Mornay : «je ne m’ose nommer de peur de perdre les moyens que j’ai
+de servir au public»74.
+    70
+       Lettre de Danzay à Mornay. Hambourg, 14 juin 1580, lettre cit. P. 100-101.
+À propos de l’influence de Danzay sur l’action de Mornay contre la Formule de
+Concorde, voir également Hugues D. Les huguenots et le roi. Le combat poli-
+tique de Philippe Duplessis-Mornay (1572–1600). Genève, 2002. P. 205–206.
+    71
+       Lettre de Danzay à Mornay. 28 février 1580, lettre cit. P. 90.
+    72
+       Richard A. Charles de Danzay... P. 138–139.
+    73
+       Lettre de Danzay à Mornay. Hambourg, 6 novembre 1580 // Duplessis-
+Mornay Philippe. Mémoires et correspondence. P. 117–118.
+    74
+       Lettre de Danzay à Mornay. P. 113.
+
+                                       219
+Религия. Церковь. Общество   Выпуск IV
+
+                                   Dès lors, une question s’impose : cet engagement si déterminé
+                               au service de la cause protestante conduit-il Danzay à servir le roi de
+                               France avec moins de zèle ? Privilégie-t-il les intérêts de ses coreli-
+                               gionnaires au détriment de ceux du royaume de France ? Son attitude
+                               lors des voyages accomplis par Jacques de Ségur-Pardaillan, ambassa-
+                               deur du roi de Navarre, auprès des princes protestants d’Europe entre
+                               1583 et 1587 permet d’esquisser une réponse.
+                                   Le but du voyage accompli par Ségur en 1583 est de favori-
+                               ser l’union des princes protestants et, dans cette optique, de les
+                               convaincre de trouver un accord du point de vue de la doctrine75.
+                               La mission qu’il remplit à partir de 1585 consiste essentiellement à
+                               obtenir une aide militaire pour Henri de Navarre en levant une armée
+                               de secours76. Dans l’un et l’autre cas, et surtout en ce qui concerne
+                               l’armée de secours, le roi de France et la reine mère manifestent leur
+                               inquiétude dans les lettres qu’ils adressent à Danzay. Ils lui demandent
+                               de les informer des actions de Ségur et de faire son possible afin de
+                               contrer ses tentatives en vue d’une levée de troupes en Allemagne. Il
+                               est évident que ces instructions sont en contradiction avec les intérêts
+                               de la cause que défend Danzay. Quel comportement adopte-t-il dans
+                               cette situation particulièrement délicate?
+                                   L’ambassadeur semble devoir être mieux informé que qui-
+                               conque des agissements de Ségur. En mai 1583, avant de rédiger
+                               les instructions pour l’envoyé du roi de Navarre, Duplessis- Mornay
+                               a demandé à Danzay de lui adresser «ung bref advis de la façon que
+                               pensez qui se doibt tenir en ceste negotiation», requérant de lui
+                               qu’il définisse en quelque sorte le parcours de l’émissaire hugue-
+                               not77. En juillet suivant, Mornay a demandé à Danzay de conseiller
+                               Ségur sur la conduite qu’il aura à tenir une fois qu’il sera arrivé au
+                               Danemark en invoquant «la cognoissance que j’ai de vostre zele et
+                               affection envers l’avancement de la vraie Église»78. D’ailleurs, l’ins-
+                               truction remise par Mornay à Ségur avant son départ, en juillet 1583,
+                                   75
+                                      Au sujet de cette négociation, voir: Daussy H. Les huguenots et le roi...
+                               P. 209–215.
+                                   76
+                                      Au sujet de cette mission, voir: Daussy H. Les huguenots et le roi... P. 347–
+                               350.
+                                   77
+                                      Lettre de Mornay à Danzay. Vitré, 26 mai 1583 // Duplessis-Mornay
+                               Philippe. Mémoires et correspondence. P. 234.
+                                   78
+                                      Lettre de Mornay à Danzay. Nérac, juillet 1583 // Duplessis-Mornay
+                               Philippe. Mémoires et correspondence. P. 307.
+
+                                                                      220
+                                                             Hugues Daussy
+
+stipule bien que l’émissaire devra prendre «soigneusement advis et
+
+
+
+
+                                                                                 Un diplomate huguenot au service de la couronne de France...
+conseil de M. de Danzai, ambassadeur du roi tres chrestien, par le
+moyen duquel aura acces et communication en Danemark et lieux
+circonvoisins, vers tous ceulx qui peuvent aider en cest affaire,
+desquels il entendra de lui les moyens, humeurs et conditions»79.
+L’investissement personnel de Danzay dans ces négociations est
+encore confirmé par les épaves de sa correspondance avec Francis
+Walsingham, secrétaire d’État d’Élisabeth Ire, membre du réseau
+et dévoué à la cause. Dans une lettre du 18 décembre 1583, l’am-
+bassadeur réaffirme avec détermination la nécessité de l’Union et
+l’opportunité de latenue d’un synode général80. Dans une certaine
+mesure, on peut donc considérer que la réussite de la mission de
+Ségur serait le couronnement des efforts que Danzay a déployés
+pour parvenir à la réconciliation. Enfin, une lettre de Thomas
+Bodley, émissaire anglais envoyé sur le continent en avril 1585 afin
+de contribuer à l’union des princes protestants, loue la “piété
+et le zèle de Monsieur de Danzay pour l’avancement de la cause
+commune” dans le cadre général de ces négociations 81.
+    Dans les limites restreintes d’un article, il ne saurait être ques-
+tion d’analyser dans le détail la correspondance de Danzay avec
+la cour de France entre 1583 et 1586 82. Un examen attentif de ces
+documents permet toutefois de percevoir la manière dont l’ambas-
+sadeur conjugue le service du roi et celui des Églises réformées. Ce
+qui frappe en premier lieu est que Danzay est généralement peu
+prolixe au sujet des missions de Ségur dans les lettres qu’il adresse
+à Henri III et Catherine de Médicis. S’il livre assez volontiers des
+renseignements nombreux et exacts sur les déplacements de l’émis-
+
+    79
+       Instruction pour traicter avec la royne d’Angleterre et aultres princes
+estrangers protestans, baillee par le roy de Navarre au sieur de Ségur,
+y allant de sa part en juillet 1583; dressée et minutée par M. Duplessis //
+Duplessis-Mornay Philippe. Mémoires et correspondence. P. 288.
+    80
+       Lettre de Danzay à Walsingham. Kolding, 18 décembre 1583 // Calen-
+dar of State papers, foreign series of the reign of Elisabeth (july 1583–july
+1584), preserved in the Public Record Office / Edited by Sophie Crawford
+Lomas, London, 1914. P. 274.
+    81
+       Lettre de Bodley à Walsingham. Hambourg, 28 juin 1585 // Calendar
+of State papers, foreign series of the reign of Elisabeth (august 1584–august
+1585), preserved in the Public Record Office / Edited by Sophie Crawford
+Lomas. London, 1916. P. 566.
+    82
+       Le dernier document dont on dispose est daté du 25 août 1586.
+
+                                     221
+Религия. Церковь. Общество   Выпуск IV
+
+                               saire huguenot, sur les audiences qu’il obtient et même sur le contenu
+                               de ses instructions, l’ambassadeur de France est en revanche beau-
+                               coup moins loquace lorsqu’il s’agit d’évoquer les résultats concrets des
+                               démarches entreprises par l’envoyé d’Henri de Navarre83. Est-ce à dire
+                               qu’il n’est au courant de rien ? Il est impossible de se prononcer avec cer-
+                               titude, mais il semble évident qu’il est mieux informé qu’il ne veut bien
+                               l’avouer, au moins lors de la première négociation de 1583. En revanche,
+                               en 1585-1587, alors que le roi de France est devenu un adversaire auquel
+                               il faut dissimuler le plus d’informations possible, il n’est pas improbable
+                               que l’entourage d’Henri de Navarre ait donné des consignes à Ségur afin
+                               qu’il fasse preuve de prudence à l’égard de l’ambassadeur. Pris entre deux
+                               feux, ce dernier s’était probablement fixé pour ligne de conduite de tenir
+                               le roi au courant avec le plus possible d’honnêteté, sans pour autant nuire
+                               à l’accomplissement de la mission de l’émissaire huguenot. En garantis-
+                               sant à Henri III la neutralité du roi de Danemark dans l’affrontement
+                               armé, Danzay pouvait estimer qu’il avait déjà rempli l’essentiel de son
+                               rôle84. Au delà, sa capacité à informer la cour des agissements de Ségur
+                               en dehors du royaume danois était fonction de diverses variables parmi
+                               lesquelles l’importance de ses moyens financiers n’était pas à négliger.
+                               Or sa gêne, dans les dernières années de sa vie, était devenue presque
+                               humiliante comme on l’a déjà expliqué. Simple invocation d’une réalité
+                               ou habile moyen de se décharger d’une obligation qui le contraint à agir
+                               en contradiction avec ses convictions, l’affirmation qu’il n’a plus les res-
+                               sources nécessaires pour payer ses informateurs revient fréquemment
+                               dans ses lettres de 1586 pour justifier son manque de nouvelles rela-
+                               tives à la constitution de l’armée de secours85.
+                                   83
+                                      Par exemple, le 28 septembre 1584, il écrit au roi: « Quant à ce que le
+                               sieur de Sigur a négocié en Angleterre et aux Pays-Bas où il a passé, j’en
+                               suis ignorant; mais je sais bien qu’il vint des Pays-Bas en Allemagne par
+                               la rivière de Weser jusqu’en la ville de Brême, et au delà alla première-
+                               ment visiter le duc Julius de Brunswick [...]» : Lettre de Danzay au roi, 28
+                               septembre 1584 // Correspondance de Charles Dantzai... P. 273.
+                                   84
+                                      «Je vous assure, Sire, que le roi de Danemark n’a jusqu’à present aidé
+                               la Reine [d’Angleterre], ni le roi de Navarre d’un seul écu ni d’un seul hom-
+                               me, ni promis de les en secourir»: Lettre de Danzay au roi. Copenhague,
+                               28 avril 1586 // Correspondance de Charles Dantzai… P. 328.
+                                   85
+                                      «Ce m’est très grande douleur, Sire, et le dis avec honte, que ne Vous puis
+                               donner plus assuré avis d’un fait de si grande importance que celui-ci ; mais étant
+                               privé de tous moyens, je n’y puis autrement pourvoir, car ayant employé mon bien
+                               et celui de mes amis, je suis réduit à présent à telle nécessité, que je ne puis envoyer
+
+                                                                        222
+                                                                Hugues Daussy
+
+    Sa correspondance officielle des années 1585–1586 livre un der-
+
+
+
+
+                                                                                     Un diplomate huguenot au service de la couronne de France...
+nier indice sur la position personnelle de Danzay. On remarque
+qu’il semble s’accrocher désespérément à l’idée que le roi de
+France n’est pas réellement hostile aux huguenots, mais qu’il agit
+sous la contrainte 86. C’est d’ailleurs en se fondant sur cette convic-
+tion qu’il tente d’apaiser les craintes du roi de Danemark. À travers
+le récit qu’il donne de ses démarches auprès du souverain danois,
+on a l’impression qu’il souhaite recevoir de la cour la confirmation
+que ce qui n’est au fond qu’un argument diplomatique reflète bien la
+réalité. C’est sans doutedans cet espoir qu’il se fait l’écho d’une offer
+de soutien militaire de la part du souverain danois:
+    Lors le roi de Danemark me dit que cette entreprise était de
+grande importance, et parce qu’il ne Vous voulait offenser, il
+me pria par deux ou trois fois de fort grande affection, que je misse
+peine de savoir au vrai Vostre volonté touchant ces troubles, me décla-
+rant apertement, s’il était certain que la levée de gens de guerre que
+le sieur Sigur désire à présent faire en Allemagne pour les mener en
+France Vous fut agréable, qu’il assemblerait quatre mille chevaux et
+six mille hommes de pieds prêts à marcher dedans un mois87.
+    En répercutant cette proposition, Danzay pense sans doute œuvrer
+dans le sens d’un éventuel rapprochement entre Henri III et Henri de
+Navarre qui pourrait se manifester par la mise au service du roi de France
+contre la Ligue de l’armée de secours préparée par Ségur. La convic-
+tion, qui semble habiter Danzay, que le roi est contraint d’agir contre les
+huguenots, lui permet de continuer à conjoindre, sans conflit intérieur,
+sa fidélité au roi et son action en faveur des Églises réformées de France
+qui attendent l’arrivée de troupes étrangères. Dans son optique, celle-ci
+sera tout aussi profitable à la cause du roi de Navarre que salutaire pour
+le roi de France, puisqu’elle lui permettra de se libérer de l’oppression
+des ligueurs. Toutefois, malgré cette pirouette politico- rhétorique,
+devers ceux desquels j’avais auparavant accoutumé d’entendre, à la vérité, comme
+les affaires se passaient aux cours de leurs Princes, ni à mes autres amis, ce que
+j’aime mieux librement déclarer, que de Vous tenir en suspends ni abuser, afin que
+Vostre Majesté y pourvoie par autres moyens»: Lettre de Danzay au roi. Copenh-
+ague, 28 avril 1586 // Correspondance de Charles Dantzai... P. 329–330.
+     86
+        Notamment dans la Lettre de Danzay au roi. Copenhague, 18 juin
+1585 // Correspondance de Charles Dantzai... P. 298; et dans la Lettre de
+Danzay au roi. Copenhague, 10 septembre 1585 // Correspondance de
+Charles Dantzai... P. 309–310.
+     87
+        Correspondance de Charles Dantzai... P. 310–311.
+
+                                       223
+Религия. Церковь. Общество   Выпуск IV
+
+                               Danzay demeure dans une position délicate, tiraillé entre sa fonction
+                               officielle et l’engagement que requièrent ses convictions religieuses.
+                               On peut regretter que le manque de sources susceptibles de nous ren-
+                               seigner sur les sentiments personnels de Danzay interdise de pénétrer
+                               plus avant les méandres de sa conscience. Il est ainsi malheureusement
+                               impossible de déterminer avec certitude s’il établissait, comme la plu-
+                               part des protestants, un système de priorité entre l’obéissance due au roi
+                               et l’obéissance due à Dieu.
+                                    En conclusion, il faut d’abord souligner le destin exceptionnel de cet
+                               homme d’extraction modeste. Sa position d’ambassadeur au Dane-
+                               mark l’a conduit à manipuler des affaires d’une importance extrême
+                               et lui a permis d’occuper une place centrale dans bien des négociations
+                               d’ampleur internationale. Mais, surtout, ce personnage apparaît comme
+                               exemplaire de cette catégorie de serviteurs de l’État protestants qui se
+                               sont souvent trouvés déchirés entre leur volonté d’obéir au roi et leur obli-
+                               gation à ne pas désobéir à Dieuc’est-à-dire à ne pas agir en contradiction
+                               avec les intérêts de ce qui est pour eux la «vraie religion». On le perçoit
+                               nettement, Danzay marche en permanence sur la corde raide, essayant
+                               de trouver un équilibre qui ne lèse ni le roi ni la cause protestante. Les
+                               marques d’estime et de satisfaction à son endroit, omniprésentes dans la
+                               correspondance de Catherine de Médicis comme dans celle de ses core-
+                               ligionnaires protestants, semblent attester que c’est avec succès qu’il a
+                               réussi à satisfaire à cette double exigence.
+                                                                 R eferences
+                                   1.    Abraham de Wicquefort (1690) L’ambassadeur et ses fonctions. Deu-
+                               xième édition augmentée, vol. 1, Cologne: chez Pierre Marteau, 457 р.
+                                   2.    Daussy H. (2014) Le partie Huguenot. Chronique d’une disillusion
+                               (1557–1572), Genève: Droz, 888 p.
+                                   3.    Daussy H. (2002) Les huguenots et le roi: le combat politique de Phi-
+                               lippe Duplessis- Mornay (1572–1600), Genève: Droz, 694 p.
+                                   4.    Dollinger P. (1988) La Hanse XIIe–XVIIe siècles, Paris: Aubier, 598 р.
+                                   5.    Helle A. E. (1992) Histoire du Danemark, Paris: Hatier, 253 p.
+                                   6.    Brady Jr. Thomas A. (1997) The Politics of the Reformation in Germa-
+                               ny. Jacob Sturm (1489–1553) of Strasbourg, Atlantic Highlands: Humanities
+                               Press of New Jersey, 300 р.
+                                   7.    Bricka C.-F. (1901) Indberetninger fra Charles de Dançay til det
+                               Franske Hof om forholdene I Norden 1567–1573 (ed. C. F. Bricka af Rigsarkivet),
+                               Kjobenhavn: I Kommission Hos C. A. Reitzel, 249 p.
+
+
+                                                                    224
+                                                               Hugues Daussy
+
+    8.     Champion P. (1943) Henri III roi de Pologne (1573–1574), Paris: Ber-
+
+
+
+
+                                                                                   Un diplomate huguenot au service de la couronne de France...
+nard Grasset, 323 p.
+    9.     Dufour А., Nicollier В., Genton H. (1999) Correspondance de Théo-
+dore de Bèze, recueillie par Hippolyte Aubert, Genève: Droz, vol. 21, 366 р.
+    10. Elmén et Granberg (1824) Correspondance de Charles Dantzai,
+ministre de France à la Cour de Danemarck, Stockholm: chez Elmén et Gran-
+berg, vol. 9, 347 p.
+    11. Fontenelle de Vaudoré A.-D., Auguis P.-R. (1824) Duplessis-Mornay
+Philippe: Mémoires et correspondance (eds. A.-D. de La Fontenelle de Vaudoré
+et P.-R. Auguis), Paris; Strasbourg; Londres: Treuttel; Würtz, vol. II, 699 p.
+    12. Friis F. R. (1876–1886) Tychonis Brahei et ad eum doctorum viro-
+rum epistolae ab anno 1568 ad annum 1587, Copenhague, 1876–1886: Apud
+G. E. C. Gad, 112 р.
+    13. Kirby D. (1990) Northern Europe in the Early Modern Period. The Bal-
+tic World 1492–1772, London; New York: Longman, 443 p.
+    14. Kirchner W. (1966) Commercial relations between Russia and Europe
+1400–1800, Bloomington: Indiana University, 342 р.
+    15. La Ferrière H., de, Puchesse G. B., de. (1891) Catherine de Medicis.
+Lettres (eds. Hector de La Ferrière et Gustave Baguenault de Puchesse), Paris:
+Impr. Nationale, vol. 4, 590 p.
+    16. La Ferrière H., de, Puchesse G. B., de. (1905) Catherine de Medicis.
+Lettres (eds. Hector de La Ferrière et Gustave Baguenault de Puchesse), Paris:
+Impr. Nationale, vol. 9, 621 p.
+    17. La Ferrière H., de, Puchesse G. B., de. (1909) Catherine de Medicis.
+Lettres (eds. Hector de La Ferrière et Gustave Baguenault de Puchesse), Paris:
+Impr. Nationale, vol. 10, 677 p.
+    18. Lomas S. C. (1914) Calendar of State papers, foreign series of the
+reign of Elisabeth (july 1583–july 1584), preserved in the Public Record Office
+(ed. S. C. Lomas), London: Longman, р.
+    19. Lomas S. C. (1916) Calendar of State papers, foreign series of the reign
+of Elisabeth (august 1584–august 1585), preserved in the Public Record Office
+(ed. S. C. Lomas), London: Longman, р.
+    20. Nicollier B. (1995) Hubert Languet (1518–1581). Un réseau politique
+international de Melanchthon à Guillaume d’Orange, Genève: Droz, 698 р.
+    21. Oakley S. P. (1992) War and Peace in the Baltic 1560–1790, London;
+New York: Routledge, 1992, 239 р.
+    22. Richard A. (1910) Un diplomate poitevin du XVIe siècle. Charles de
+Danzay, ambassadeur de France en Danemark, Poitiers: imprimerie Blais et
+Roy, 242 р.
+    23. Renouard J. (1847) Annuaire historique pour l’année 1848, Paris:
+chez Jules Renouard, 241 р.
+    25. Russell J. G. (1992) Language: a barrier or a gateway ?, Diplomats at
+work. Three Renaissance Studies, Wolfeboro Falls: Alan Sutton, pp. 1–50.
+
+
+
+                                      225
+Религия. Церковь. Общество   Выпуск IV
+
+                                    26. Thoren V. E. (1990) The Lord of Uraniborg. A biography of Tycho Bra-
+                               he, Cambridge: Cambridge University Press, 523 p.
+                                    27. Vindry F. (1903) Les Ambassadeurs Français permanents au XVIe
+                               siècle, Paris: Honoré Champion, 54 р.
+                                                               BnF archive fonds
+                                   28. BnF, Pièces originales 974, «Danzay», fol.1.
+                                   29. Discours du sieur de Danzay, des affaires de Danemark et de Suède,
+                               à Monseigneur Pinart, conseiller du roy, secrétaire d’Estat et des finances,
+                               la douzième d’avril 1575 // BnF, Fds. fr. 6619, fol. 142–151v°.
+                                   30. Lettre de Danzay au cardinal Jean Du Bellay, datée du 28 avril 1547 //
+                               BnF, Fds. fr. 3921, fol. 62.
+
+                                                          Источники и литература
+                                   1.     Abraham de Wicquefort. L’ambassadeur et ses fonctions. Deuxième
+                               édition augmentée. T. I. — Cologne: chez Pierre Marteau, 1690. — 457 р.
+                                   2.     Annuaire historique pour l’année 1848. — Paris: chez Jules Renouard,
+                               1847. — 241 р.
+                                   3.     Catherine de Medicis. Lettres / Publiées par Hector de La Ferrière et
+                               Gustave Baguenault de Puchesse. T. IV. — Paris: Impr. Nationale, 1891. — 590
+                               p.; T. IX. — Paris: Impr. Nationale, 1905. — 621 p.; Т. X (suppléments). —Paris:
+                               Impr. Nationale, 1909. — 677 p.
+                                   4.     Daussy H. Le partie Huguenot. Chronique d’une disillusion (1557–
+                               1572). — Genève: Droz, 2014. — 888 p.
+                                   5.     Daussy H. Les huguenots et le roi: le combat politique de Philippe
+                               Duplessis- Mornay (1572–1600). — Genève: Droz, 2002. — 694 p.
+                                   6.     Dollinger P. La Hanse XIIe–XVIIe siècles. — Paris: Aubier, 1988. —
+                               598 р.
+                                   7.     Helle A. E. Histoire du Danemark. — Paris: Hatier, 1992. — 253 p.
+                                   8.     Brady Jr. Thomas A. The Politics of the Reformation in Germany.
+                               Jacob Sturm (1489–1553) of Strasbourg. — Atlantic Highlands: Humanities
+                               Press of New Jersey, 1997. — 300 р.
+                                   9.     Bricka C.-F. Indberetninger fra Charles de Dançay til det Franske
+                               Hof om forholdene I Norden 1567–1573 / Udgivne ved C. F. Bricka af Rigsarki-
+                               vet. — Kjobenhavn: I Kommission Hos C. A. Reitzel, 1901. — 249 p.
+                                   10. Calendar of State papers, foreign series of the reign of Elisabeth (july
+                               1583–july 1584), preserved in the Public Record Office / Ed. by S. C. Lomas. —
+                               London: Longman, 1914. — р.
+                                   11. Calendar of State papers, foreign series of the reign of Elisabeth
+                               (august 1584–august 1585), preserved in the Public Record Office / Ed. by
+                               S. C. Lomas. — London: Longman, 1916. — р.
+                                   12. Champion P. Henri III roi de Pologne (1573–1574). P— aris: Bernard
+                               Grasset, 1943. — 323 p.
+
+
+
+                                                                    226
+                                                               Hugues Daussy
+
+     13. Correspondance de Charles Dantzai, ministre de France à la Cour
+
+
+
+
+                                                                                   Un diplomate huguenot au service de la couronne de France...
+de Danemarck. T. IX: Collection Handlingar rörande Skandinaviens Histo-
+ria. — Stockholm: chez Elmén et Granberg, 1824. — 347 p.
+     14. Correspondance de Théodore de Bèze, recueillie par Hippolyte
+Aubert / publiée par A. Dufour, B. Nicollier, H. Genton. T. XXI (1580). —
+Genève: Droz, 1999. — 366 р.
+     15. Duplessis-Mornay Philippe: Mémoires et correspondance / Publiés
+par A.-D. de La Fontenelle de Vaudoré et P.-R. Auguis. — Paris; Strasbourg;
+Londres: Treuttel; Würtz, 1824. T. II. — 699 p.
+     16. Kirby D. Northern Europe in the Early Modern Period. The Baltic
+World 1492–1772. — London; New York: Longman, 1990. — 443 p.
+     17. Kirchner W. Commercial relations between Russia and Europe
+1400–1800. — Bloomington: Indiana University, 1966. — 342 р.
+     18. Nicollier B. Hubert Languet (1518–1581). Un réseau politique inter-
+national de Melanchthon à Guillaume d’Orange. — Genève: Droz, 1995. —
+698 р.
+     19. Oakley S. P. War and Peace in the Baltic 1560–1790. — London; New
+York: Routledge, 1992. — 239 р.
+     20. Richard A. Un diplomate poitevin du XVIe siècle. Charles de Dan-
+zay, ambassadeur de France en Danemark. — Poitiers: imprimerie Blais et Roy,
+1910. — 242 р.
+     21. Extrait du Bulletin de l’Académie royale des sciences et des lettres du
+Danemark pour l’année 1897. — Copenhague: imprimerie de F. Dreyer, 1898.
+     22. Russell J. G. Language: a barrier or a gateway ? // Diplomats at work.
+Three Renaissance Studies / Wolfeboro Falls: Alan Sutton, 1992. P. 1–50.
+     23. Thoren V. E. The Lord of Uraniborg. A biography of Tycho Brahe. —
+Cambridge: Cambridge University Press, 1990. — 523 p.
+     24. Tychonis Brahei et ad eum doctorum virorum epistolae ab anno 1568
+ad annum 1587, nunc primum collectae et editae a F. R. Friis. — Copenhague,
+1876–1886: Apud G.E.C. Gad. — 112 р.
+     25. Vindry F. Les Ambassadeurs Français permanents au XVIe siècle. —
+Paris: Honoré Champion, 1903. — 54 р.
+                         Архивные источники из фондов
+                 Французской национальной библиотеки
+    27. BnF, Pièces originales 974, «Danzay», fol.1.
+    28. Discours du sieur de Danzay, des affaires de Danemark et de Suède,
+à Monseigneur Pinart, conseiller du roy, secrétaire d’Estat et des finances,
+la douzième d’avril 1575 // BnF, Fds. fr. 6619, fol. 142–151v°.
+    29. Lettre de Danzay au cardinal Jean Du Bellay, datée du 28 avril 1547 //
+BnF, Fds. fr. 3921, fol. 62.
+
+
+
+
+                                      227
+

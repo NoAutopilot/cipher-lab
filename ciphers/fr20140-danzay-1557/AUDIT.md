@@ -744,3 +744,67 @@ Requests: be-api.us.archive.org 10, archive.org 2 (advancedsearch 1, djvu 1), we
 page 1 TLS failure + 1 ok; PDF CDX 1 reset + 1 504, then stopped), www.googleapis.com 17 (key and country=US, never
 printed, ≥3.3 s apart), api.openalex.org 1 (429), api.semanticscholar.org 3 (1 ok, 2× 429, stopped),
 api.crossref.org 5, WebSearch 2. No Gallica, no logins, no decoding, no subagents.
+
+## Toward N4: Daussy 2015, 24 Sept 2026
+
+Closing the first of the two gaps the N4 decision above named: Hugues Daussy, "Un diplomate huguenot au service de
+la couronne de France: Charles de Danzay, ambassadeur au Danemark (1548-1589)", *Religiya. Tserkov'. Obshchestvo*
+4 (St Petersburg, 2015), pp. 264-281, doi 10.24411/2308-0698-2015-00013, CC BY 4.0.
+
+**DOI note.** `doi.org/10.24411/2308-0698-2015-00013` 302-redirects to
+`cyberleninka.ru/article/n/sud-o-darovanii-prav-i-problema-svetskoy-i-tserkovnoy-yurisdiktsii-angliyskogo-monarha-v-period-reformatsii/pdf`
+-- an unrelated article ("The Court of Delegates and the problem of secular and ecclesiastical jurisdiction of the
+English monarch during the Reformation"), not Daussy's. The DOI as printed in the brief and in this repo does not
+resolve to the article it names; whoever cites it next should use the direct URL below, not the DOI. Found the
+correct article instead by WebSearch (`rcs-almanac.ru/en/daussy-2015-en/`, confirmed by title, author, journal,
+volume and page range against the DOAJ record and the CyberLeninka mirror at
+`cyberleninka.ru/article/n/un-diplomate-huguenot-au-service-de-la-couronne-de-france-charles-de-danzay-ambassadeur-au-danemark-1548-1589`).
+
+**Fetch.** The article page's own `?format=pdf` link gives only a 3-page cover sheet (title, abstract, keywords --
+no body text). The full 30-page PDF (18 printed pages, pp. 264-281, plus front matter and endnotes) is linked from
+the same page as `rcs-almanac.ru/wp-content/uploads/2017/09/2015_досси.pdf`; fetched once, 391127 bytes, saved to
+`sources/articles/daussy2015_full.pdf` with `sources/articles/daussy2015_full.txt` (pdftotext -layout). Licence CC
+BY 4.0 per the article page. Manifest: url `https://rcs-almanac.ru/wp-content/uploads/2017/09/2015_%D0%B4%D0%BE%D1%81%D1%81%D0%B8.pdf`,
+fetched 24 Sept 2026, 391127 bytes, CC BY 4.0.
+
+**Read.** Full body text and all footnotes/bibliography read (not just grepped). Grepped for `1557|1558|Lorraine|
+20140|cardinal|chiffr|déchiffr|bibliotheque nationale`, then read every hit in context, plus a second grep for
+`augsbourg|augusta|marchan|lyon|chancelier` (terms from `reading.txt`/`reading_f36.txt`).
+
+- **"Lorraine" appears zero times in the article.** The only cardinal named anywhere in the text is Jean Du Bellay,
+  in a footnote citing a *different* 1547 letter (BnF Fds. fr. 3921, fol. 62) -- a different manuscript, a different
+  addressee, ten years before our letter.
+- **"20140" and "fr.20140"/"Français 20140" appear zero times.** The article's only BnF archival citations are
+  Pièces originales 974 "Danzay" fol. 1, Fds. fr. 6619 fol. 142-151v° (a 1575 *Discours* to Pinart), and Fds. fr.
+  3921 fol. 62 (the 1547 letter above). None is fr.20140.
+- **No "chiffre"/"déchiffr-" anywhere; no decipherment, cipher or code is mentioned in the article at all.**
+- The two other 1557 hits are unrelated to the letter: (1) Danzay was granted the office of *panetier de l'Hôtel
+  du roi* on 20 May 1557 (a court-appointment record, sourced to Rördam, not to any letter); (2) the Danish
+  historian-poet Erasmus Laetus dedicated a Latin religious poem to Danzay in 1557 (manuscript, sourced to Rördam
+  pp. 11-12) -- this is the same Laetus dedication already found in Daussy 2004 (NOTES.md "Check-solved"), which
+  confirms this session's earlier inference that the 2015 article is a version of the 2004 chapter: same content,
+  same citations, same absence of the 1557 letter to the Cardinal of Lorraine.
+- The article states plainly that its own sources are patchy for Danzay's first twenty years: "compte tenu du
+  caractère très lacunaire des sources rassemblées pour les vingt premières années [de] son ambassade, ce n'est
+  que pour la période qui s'ouvre en 1567 que le déroulement de la mission de Danzay est bien connu" (p. [267] of
+  the printed text) -- 1557 falls inside the span the author says is thin.
+- **Bibliography and footnote citations (25 numbered works + 3 BnF archival items), checked against NOTES.md/
+  AUDIT.md for what earlier sessions already covered:** Wicquefort 1690, Catherine de Médicis' *Lettres*, Daussy's
+  own *Le parti huguenot* (2014) and *Les huguenots et le roi* (2002), Bricka 1901, the *Correspondance de Charles
+  Dantzai* (1824, Handlingar XI), Richard 1910, Rördam 1897/98, Vindry 1903, Champion 1943, the two CSP Elizabeth
+  Foreign volumes (1583-85), Théodore de Bèze's *Correspondance*, Duplessis-Mornay's *Mémoires* -- **all already
+  read or ruled out by the first and second audits** (table above, "Danzay's printed dispatches" / "Danzay
+  studies" rows). Four titles are new to this repo's search log and were not chased further, since none is a
+  principal source under rule 10 (general secondary histories with no sign of citing fr.20140 or a 1557
+  decipherment): Dollinger, *La Hanse XIIe-XVIIe siècles* (1988); Kirby, *Northern Europe in the Early Modern
+  Period* (1990); Kirchner, *Commercial relations between Russia and Europe 1400-1800* (1966); Nicollier, *Hubert
+  Languet* (1995). Listed here for the record, not pursued.
+
+**Verdict: gap closed negative.** Daussy 2015 is a version of Daussy 2004 (already read in full by an earlier
+audit): same citations, same content, same silence on BnF fr.20140 and on any 1557 letter to the Cardinal of
+Lorraine. Read in full, it names no prior plaintext or decipherment of this letter. This does not by itself
+raise the class; it closes the one of the two named N4 gaps that this brief covers. The other named gap (a DECODE
+search for Danzay/fr.20140, assigned to LANE N) is untouched here.
+
+Requests: doi.org 1, rcs-almanac.ru 3 (page HTML, cover-sheet PDF, full-text PDF; all ≥1.5 s apart), cyberleninka.ru
+0 (found via WebSearch snippet, not fetched), WebSearch 1. No Gallica, no logins, no decoding, no class change.
