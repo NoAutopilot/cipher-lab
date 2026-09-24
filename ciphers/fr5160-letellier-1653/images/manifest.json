@@ -103,15 +103,21 @@
       "content": "native-resolution read of all 8; per-canvas notes in NOTES.md 'canvas 11/12 (folio 1-2 letter, continued)' and 'canvas 30-33 (folios 19-20, Mantoue/Montferrat letter)'. Line crops (f9r_L*, f9v_L*) cut from canvas 24/25 (folio 9 letter) only.",
       "disposition": "all 8 native full-resolution files deleted after use to stay under the 30MB folder cap (folder would be ~50MB with all 8 kept); canvas 8,9,10,168,169,170,173 natives from prior passes kept on disk. Re-fetch with the same URL pattern (https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f{N}/full/full/0/native.jpg) if needed again.",
       "read_by": "worker directly (Read tool), no subagent, for the 6 non-folio-9 canvases; two independent Sonnet subagents (blind, image-only) for the folio 9 line crops"
+    },
+    {
+      "date": "24 Sept 2026 (LANE G transcription worker, following up the prior pass)",
+      "canvases": "11, 12, 24, 25, 30, 31, 32, 33 (same 8 -- re-fetched, the prior pass's copies had already been deleted)",
+      "files_pattern": "not written to disk under images/ -- fetched to session scratchpad, read directly (Read tool), then left in scratchpad (not committed, not part of this folder)",
+      "size": "native resolution, ~2.4-2.6MB each (full/full/0/native.jpg)",
+      "content": "date/extent/decipherment report for all 8, see NOTES.md 'canvas 11/12/24/25/30/31/32/33' table -- finds canvas 11-12 is the dated (10 Jan 1653, signed Brienne) tail of the folio 1-2 letter with an untranscribed second cipher block, and two clear-French phrases inside canvas 30 and canvas 32's cipher blocks that the stride-4 census missed.",
+      "disposition": "all 8 native files fetched to scratchpad only, never written into this folder; folder size unchanged from the prior pass (still 30MB). Re-fetch with the same URL pattern (https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f{N}/full/full/0/native.jpg) if needed again.",
+      "read_by": "worker directly (Read tool), no subagent, for all 8 canvases; one Sonnet subagent (blind, image-only, no network) for passB_f9.tsv from the existing folio-9 crops"
     }
   ],
   "requests_this_pass": {
-    "gallica.bnf.fr": "~63 (2 texteBrut probes redirected to an altcha challenge, stopped and not retried; 1 manifest.json already on disk; 3 single-leaf/corner-crop fetches for calibration, 1 connection reset retried once; 54 census thumbnails, 3 connection resets each retried once, all recovered; no 403/altcha on any IIIF image fetch)",
-    "archivesetmanuscrits.bnf.fr": "3 (1 redirect, 1 connection reset retried once, 1 success -- the item notice, see NOTES.md)",
-    "archive.org / be-api.us.archive.org": "6 (1 advancedsearch, 1 bad-identifier probe, 4 full-text-search queries against Depping's Correspondance administrative, one per volume)",
-    "googleapis.com/books": "2 (with &key=$GOOGLE_BOOKS_KEY&country=US, key never printed)",
-    "github.com": "2 shallow clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers), grepped for '5160'/'brienne'/'servien', deleted after",
-    "WebSearch": "0 (direct API/catalogue checks covered this pass)"
+    "gallica.bnf.fr": "9 (8 native fetches, one at a time ~1.8s apart, UA per playbook, --max-time 30; canvas 33 connection-reset, recovered on the single allowed retry)",
+    "WebSearch": "0",
+    "other": "0 (no other host queried this pass)"
   },
   "iiif_lines": [
     {
