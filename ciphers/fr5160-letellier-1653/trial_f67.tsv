@@ -1,0 +1,2 @@
+letter	cipher_tokens	keyed	coverage	chars_scored	real_bpc	shuffled_mean	shuffled_sd	shuffled_max	shuffled_ge_real	z	n_derangements	beats_control
+f67	543	501	0.923	766	-4.272	-5.889	0.453	-4.735	0	3.57	20	yes

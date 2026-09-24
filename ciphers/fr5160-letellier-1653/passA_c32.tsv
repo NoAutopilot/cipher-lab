@@ -1,0 +1,116 @@
+line	pos	group	conf	note
+L01	1	m	H	
+L01	2	_11	M	two-minim sign under an overline
+L01	3	27	H	
+L01	4	_11	M	second overlined two-minim sign
+L01	5	db	M	recurring loop+cross ink shape (tt joined to looped d), tentative reading
+L01	6	3	H	
+L01	7	_11	M	third overlined two-minim sign
+L01	8	,	H	
+L01	9	91	H	
+L01	10	_40	H	
+L01	11	_9	M	stroke over/under the 9, orientation unclear, tentative overline reading
+L01	12	db	M	partial shape at right crop edge, same recurring loop+cross sign, uncertain if complete
+L02	1	60	M	first character loopy, could read as digit 6 or looped b, then 0
+L02	2	4	H	
+L02	3	50	H	"written cursively resembling ""so"""
+L02	4	20	H	
+L02	5	_16	H	
+L02	6	d	H	looped d
+L02	7	[Sanurse souvenir]	M	"cursive French-looking phrase, clearly ends ""...souvenir""; earlier letters not confidently resolved (candidates ""sans se"", a name, or scribal flourish) - needs image review"
+L03	1	[des obligations desquelles on estoit redevable]	C	"first word may be ""des"" or ""leurs""; final word truncated at crop edge, ends with a mark resembling a period or comma"
+L04	1	[a sa Couronne]	C	
+L04	2	11	H	written as a plain numeral here, not the two-minim sign shape
+L04	3	.	H	
+L04	4	9	H	
+L04	5	6	H	
+L04	6	61	H	
+L04	7	_20	H	
+L04	8	db	M	
+L04	9	_11	M	two-minim sign, overlined; faint trailing flourish after it, likely just pen-lift not a separate sign
+L05	1	X	H	
+L05	2	db	M	
+L05	3	11	M	two-minim sign
+L05	4	_22	H	
+L05	5	61	H	
+L05	6	68	M	second character ambiguous between digit 8 and a curling flourish resembling a Greek beta
+L05	7	db	M	
+L05	8	mm	H	
+L05	9	_9	M	short stroke over the 9, orientation unclear, tentative overline reading
+L05	10	db	M	at right crop edge, uncertain if complete
+L06	1	36	H	
+L06	2	66	H	
+L06	3	11	M	two-minim sign
+L06	4	_11	M	second two-minim sign, overlined
+L06	5	_13	H	
+L06	6	X	H	
+L06	7	mm	H	
+L06	8	d	M	looped d; small mark beside it possibly a dot/comma, not transcribed separately
+L06	9	£	H	crossed looped L, clear match to convention
+L07	1	_9	H	
+L07	2	_16	H	small stray ink mark above the 1, likely incidental, not transcribed separately
+L07	3	m	H	
+L07	4	_51	H	
+L07	5	97	H	
+L07	6	db	M	
+L07	7	93	H	
+L07	8	db	M	
+L07	9	_26	H	
+L07	10	—	H	dash/stroke the scribe wrote at end of run
+L08	1	72	H	
+L08	2	d	H	looped d
+L08	3	db	M	
+L08	4	20	H	
+L08	5	,	H	
+L08	6	6	H	
+L08	7	[il ne fault point que]	C	"old spelling ""fault"" for ""faut""; clause continues beyond crop edge"
+L09	1	[Je suopreme sy nous ne nous y portrons p]	M	"clause likely continues ""...si nous ne nous y portons point"" (old spelling ""sy"" for ""si""); word after ""Je"" not confidently resolved, transcribed as seen; cut at ""p"" by crop edge"
+L10	1	¨4	H	two dots over the 4
+L10	2	m	H	
+L10	3	61	H	
+L10	4	tt	H	
+L10	5	_23	H	
+L10	6	11	M	two-minim sign
+L10	7	21	H	
+L10	8	37	H	
+L10	9	d	H	
+L10	10	11	M	two-minim sign
+L10	11	m	H	faint uncertain mark trailing this token at crop edge, not transcribed as a separate token
+L11	1	4	H	
+L11	2	60	H	
+L11	3	,	H	
+L11	4	23	H	
+L11	5	_11	M	two-minim sign, overlined
+L11	6	3	H	
+L11	7	2	H	
+L11	8	_2	H	
+L11	9	_20	H	
+L11	10	_52	H	
+L11	11	_7	M	only one digit visible before crop edge cuts it off; may be part of a wider overlined group
+L12	1	73	H	
+L12	2	11	M	two-minim sign
+L12	3	tt	H	
+L12	4	,	H	
+L12	5	_50	H	
+L12	6	_13	H	
+L12	7	X	H	
+L12	8	mm	H	
+L12	9	_41	H	
+L12	10	11	M	two-minim sign
+L12	11	¨4	H	two dots over the 4
+L13	1	_19	H	
+L13	2	(4)	H	digit 4 written inside a circle/parenthesis mark
+L13	3	d	H	looped d
+L13	4	13	M	shape uncertain, possibly numeral 13 or a distinct sign, not confidently resolved
+L13	5	d	M	second loop shape, possibly same sign as pos 3 - uncertain
+L13	6	_11	M	two-minim sign, overlined
+L13	7	d	M	third loop shape
+L13	8	_49	H	
+L13	9	35	H	
+L13	10	11	M	two-minim sign
+L13	11	—	M	stroke/dash at right crop edge, uncertain whether it is a complete token
+L14	1	mm	H	
+L14	2	_11	M	two-minim sign, overlined
+L14	3	20	H	
+L14	4	.	H	
+L14	5	[le Comte Philippes que se]	C	"proper name ""Philippes"" (old spelling of Philippe); sentence continues beyond crop edge"

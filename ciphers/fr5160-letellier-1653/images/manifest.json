@@ -1,1270 +1,1324 @@
 {
-  "ark": "btv1b9060495t",
-  "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/manifest.json",
-  "canvas_count": 367,
-  "note": "All 367 IIIF canvas labels are 'NP' (no folio metadata in the manifest itself). archivesetmanuscrits.bnf.fr's own item notice (cc58150z) gives item 1 (the 47 ciphered letters) as Fol. 1-110, item 2 (Le Tellier, no cipher) as Fol. 111-182, but does not enumerate item 1's 47 letters individually -- no folio-level shortcut exists beyond that two-item split.",
-  "fetches": [
-    {
-      "date": "24 Sept 2026 (prior pass)",
-      "canvas": 20,
-      "file": "f20.jpg",
-      "content": "clear French letter, Italy news, siege of Bordeaux (the city, unrelated to the diplomat Antoine de Bordeaux)",
-      "folio_seen": 7
-    },
-    {
-      "date": "24 Sept 2026 (prior pass)",
-      "canvas": 100,
-      "file": "f100.jpg",
-      "content": "faint illegible verso show-through, no cipher"
-    },
-    {
-      "date": "24 Sept 2026 (prior pass)",
-      "canvas": 150,
-      "file": "f150.jpg",
-      "content": "blank verso"
-    },
-    {
-      "date": "24 Sept 2026 (this pass)",
-      "canvas": 106,
-      "file": "f106_thumb.jpg",
-      "content": "blank/docket verso, faint sideways endorsement '...16 [?] octobre 1659'"
-    },
-    {
-      "date": "24 Sept 2026 (this pass)",
-      "canvas": 107,
-      "file": "f107_thumb.jpg / f107_corner.jpg",
-      "content": "clear French letter, 'Monsieur' opening, no cipher",
-      "folio_seen": "57 (corner-crop read, NOT trusted -- see NOTES.md calibration discussion, contradicted by the more consistent canvas 160-180 rate)"
-    },
-    {
-      "date": "24 Sept 2026 (this pass)",
-      "canvases": "8,12,16,...,220 (stride 4, 54 canvases)",
-      "files_pattern": "census/f{N}.jpg",
-      "size": "600px wide IIIF thumbnails (full/,600/0/native.jpg), 8-44KB each",
-      "content": "see NOTES.md 'Census pass' section for the full per-canvas table (content type, decipherment presence, folio numbers where legible); 6/54 show cipher or mixed content, in two bands (canvas 8-32 and 168-172), none show a visible decipherment in this sample",
-      "read_by": "Sonnet subagent, image-only, no network access"
-    },
-    {
-      "date": "24 Sept 2026 (dense band pass)",
-      "canvases": "4-36 and 160-180 minus the 14 already on disk from the stride-4 walk (40 new fetches, 39 succeeded, canvas 29 failed twice -- connection resets, logged not retried further)",
-      "files_pattern": "census/f{N}.jpg",
-      "size": "600px wide IIIF thumbnails, --max-time 30 needed (default curl timeout too short under concurrent-worker load this session)",
-      "content": "see NOTES.md 'Dense band walk' section for the extended per-canvas table; read_by: Sonnet subagent, image-only, no network access"
-    },
-    {
-      "date": "24 Sept 2026 (dense band pass)",
-      "canvases": "8, 9, 10, 168, 169, 170",
-      "files_pattern": "native/f{N}.jpg",
-      "size": "native resolution, ~3810x5342px, 2.3-2.5MB each (full/full/0/native.jpg)",
-      "content": "the two chosen letters: folio 1-2 (canvas 8-10, Jan 1653, symbol+numeral hybrid cipher) and folio 86-88 (canvas 168-170, all-numeral cipher; canvas 170=folio 87 is headed 'Dechiffre de la lettre de M.r le Comte de Brienne du 21 9.bre 1659', a contemporary plaintext decipherment on the facing leaf, not interlined over the cipher itself -- see NOTES.md flag)"
-    },
-    {
-      "date": "24 Sept 2026 (dense band pass)",
-      "canvases": "8, 9, 10, 168, 170",
-      "files_pattern": "crops/f{N}_body.jpg",
-      "size": "cropped from native, longest side resized to <=2400px",
-      "content": "f8_body/f9_body/f10_body = the mixed clear-French+cipher body text of the folio 1-2 letter (used for the passA/passB transcription); f168_body = the cipher block on folio 86; f170_body = the decipherment heading+text on folio 87 (documentation only, not transcribed this pass)"
-    },
-    {
-      "date": "24 Sept 2026 (folio 86/87 line-crop pass)",
-      "canvases": "168, 169",
-      "files_pattern": "crops/f86_cipher_L01.jpg .. L16.jpg",
-      "size": "cropped from native (no fetch, already on disk), longest side <=2400px",
-      "content": "16 single-line crops of the folio 86 numeral cipher block, continuous across the two canvases: L01-L07 from canvas 168 (bottom of the leaf, after the 'Monsieur' prose opening), L08-L16 from canvas 169 (top of the leaf, cipher continuing before it breaks into the 'je ne croy pas...' prose closing). Line bands located by manual pixel-grid inspection (row-projection auto-segmentation was tried first and rejected -- cursive ink has no clean zero-valley between text lines -- see NOTES.md); generous padding included, minor slivers of neighbouring lines visible at some crop edges by design.",
-      "generated_by": "no subagent, this worker (image inspection + PIL crop script), no network"
-    },
-    {
-      "date": "24 Sept 2026 (folio 86/87 line-crop pass)",
-      "canvas": 170,
-      "files_pattern": "crops/f170_H01_heading1.jpg, H02_heading2.jpg, P1L01.jpg..P1L12.jpg, P2L01.jpg..P2L12.jpg",
-      "size": "cropped from native (no fetch), longest side <=2400px",
-      "content": "26 single-line crops of the decipherment leaf: 2 heading lines ('Dechiffre de la lettre de Mr le Comte de' / 'Brienne du 21 9bre 1659' -- see NOTES.md correction, 9bre = novembre not septembre), then paragraph 1 (12 lines) and paragraph 2 (12 lines) of the plaintext French. Same manual-grid method as f86_cipher_L*; para 2's line pitch is visibly tighter than para 1's, calibrated separately.",
-      "generated_by": "no subagent, this worker, no network"
-    },
-    {
-      "date": "24 Sept 2026 (f.86-88 key pass)",
-      "canvases": "172 (fetched), 173 (failed: connection reset twice, not retried further)",
-      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f172/full/full/0/native.jpg",
-      "size": "3826x5356, 2383516 bytes; native NOT committed (folder near the 30 MB cap), re-fetch from the URL",
-      "files_pattern": "crops/f88_cipher_top.jpg, crops/f88_cipher_bottom.jpg (canvas 172 native box x740-3230, y3150-3760 and y3700-4330); crops/f86_cipher_L13-L16_recrop.jpg (canvas 169 native box x1300-3400, y1620-2200)",
-      "generated_by": "Opus reconciler+solver, no subagent"
-    },
-    {
-      "date": "24 Sept 2026 (this pass)",
-      "canvas": 173,
-      "file": "native/f173.jpg",
-      "content": "f.88 letter tail: 7 more cipher lines + [je][suis], then dateline/signature/docket (A Paris ce 21e nov. 1659, signed de Brienne, docket M. de Servien)"
-    },
-    {
-      "date": "24 Sept 2026 (this pass, LANE G access+transcription worker)",
-      "canvases": "11, 12, 24, 25, 30, 31, 32, 33 (band-1 cipher/mixed canvases from the dense-band-walk table not previously fetched at native resolution)",
-      "files_pattern": "native/f{N}.jpg (native/f24.jpg and native/f25.jpg fetched twice this pass -- once to read+classify, deleted, refetched once to cut line crops -- see NOTES.md)",
-      "size": "native resolution, ~2.3-2.6MB each (full/full/0/native.jpg)",
-      "content": "native-resolution read of all 8; per-canvas notes in NOTES.md 'canvas 11/12 (folio 1-2 letter, continued)' and 'canvas 30-33 (folios 19-20, Mantoue/Montferrat letter)'. Line crops (f9r_L*, f9v_L*) cut from canvas 24/25 (folio 9 letter) only.",
-      "disposition": "all 8 native full-resolution files deleted after use to stay under the 30MB folder cap (folder would be ~50MB with all 8 kept); canvas 8,9,10,168,169,170,173 natives from prior passes kept on disk. Re-fetch with the same URL pattern (https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f{N}/full/full/0/native.jpg) if needed again.",
-      "read_by": "worker directly (Read tool), no subagent, for the 6 non-folio-9 canvases; two independent Sonnet subagents (blind, image-only) for the folio 9 line crops"
-    },
-    {
-      "date": "24 Sept 2026 (LANE G transcription worker, following up the prior pass)",
-      "canvases": "11, 12, 24, 25, 30, 31, 32, 33 (same 8 -- re-fetched, the prior pass's copies had already been deleted)",
-      "files_pattern": "not written to disk under images/ -- fetched to session scratchpad, read directly (Read tool), then left in scratchpad (not committed, not part of this folder)",
-      "size": "native resolution, ~2.4-2.6MB each (full/full/0/native.jpg)",
-      "content": "date/extent/decipherment report for all 8, see NOTES.md 'canvas 11/12/24/25/30/31/32/33' table -- finds canvas 11-12 is the dated (10 Jan 1653, signed Brienne) tail of the folio 1-2 letter with an untranscribed second cipher block, and two clear-French phrases inside canvas 30 and canvas 32's cipher blocks that the stride-4 census missed.",
-      "disposition": "all 8 native files fetched to scratchpad only, never written into this folder; folder size unchanged from the prior pass (still 30MB). Re-fetch with the same URL pattern (https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f{N}/full/full/0/native.jpg) if needed again.",
-      "read_by": "worker directly (Read tool), no subagent, for all 8 canvases; one Sonnet subagent (blind, image-only, no network) for passB_f9.tsv from the existing folio-9 crops"
-    },
-    {
-      "date": "24 Sept 2026 (this pass)",
-      "canvas": 11,
-      "file": "NOT COMMITTED (folder at 30MB cap) -- kept in worker scratchpad only, re-fetchable at https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
-      "content": "bottom of the folio 1-2-3 letter (canvas 8-12): 2 lines clear French, then a second, previously-untranscribed cipher block (6 lines, symbol+numeral), then 1 line mixed cipher+clear, then clear French continues onto canvas 12"
-    },
-    {
-      "date": "24 Sept 2026 (this pass)",
-      "canvas": 12,
-      "file": "NOT COMMITTED (folder at 30MB cap) -- kept in worker scratchpad only, re-fetchable at https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
-      "content": "folio 3r (folio number '3' visible top right): continuation of the same cipher block from canvas 11 (6 more lines, symbol+numeral, mixed cipher+clear on the last line), then clear French to the letter's close, signed Brienne, dated 'Paris le x janvier 1653' (bleed-through from facing canvas 11 verso, mirrored, visible bottom left)"
-    }
-  ],
-  "requests_this_pass": {
-    "gallica.bnf.fr": "9 (8 native fetches, one at a time ~1.8s apart, UA per playbook, --max-time 30; canvas 33 connection-reset, recovered on the single allowed retry)",
-    "WebSearch": "0",
-    "other": "0 (no other host queried this pass)"
-  },
-  "iiif_lines": [
-    {
-      "crop": "f9v_L01.jpg",
-      "source_url": "",
-      "source_file": "f25.jpg",
-      "box": [
-        1500,
-        1202,
-        3350,
-        1436
-      ],
-      "lines_in_crop": 1,
-      "band": 1,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 241,
-        "distance": 168,
-        "prominence": 48.6
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9v_L02.jpg",
-      "source_url": "",
-      "source_file": "f25.jpg",
-      "box": [
-        1500,
-        1436,
-        3350,
-        1666
-      ],
-      "lines_in_crop": 1,
-      "band": 2,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 241,
-        "distance": 168,
-        "prominence": 48.6
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9v_L03.jpg",
-      "source_url": "",
-      "source_file": "f25.jpg",
-      "box": [
-        1500,
-        1666,
-        3350,
-        1904
-      ],
-      "lines_in_crop": 1,
-      "band": 3,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 241,
-        "distance": 168,
-        "prominence": 48.6
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9v_L04.jpg",
-      "source_url": "",
-      "source_file": "f25.jpg",
-      "box": [
-        1500,
-        1904,
-        3350,
-        2164
-      ],
-      "lines_in_crop": 1,
-      "band": 4,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 241,
-        "distance": 168,
-        "prominence": 48.6
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9v_L05.jpg",
-      "source_url": "",
-      "source_file": "f25.jpg",
-      "box": [
-        1500,
-        2164,
-        3350,
-        2396
-      ],
-      "lines_in_crop": 1,
-      "band": 5,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 241,
-        "distance": 168,
-        "prominence": 48.6
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9v_L06.jpg",
-      "source_url": "",
-      "source_file": "f25.jpg",
-      "box": [
-        1500,
-        2396,
-        3350,
-        2610
-      ],
-      "lines_in_crop": 1,
-      "band": 6,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 241,
-        "distance": 168,
-        "prominence": 48.6
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9v_L07.jpg",
-      "source_url": "",
-      "source_file": "f25.jpg",
-      "box": [
-        1500,
-        2610,
-        3350,
-        2851
-      ],
-      "lines_in_crop": 1,
-      "band": 7,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 241,
-        "distance": 168,
-        "prominence": 48.6
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9v_L08.jpg",
-      "source_url": "",
-      "source_file": "f25.jpg",
-      "box": [
-        1500,
-        2851,
-        3350,
-        3082
-      ],
-      "lines_in_crop": 1,
-      "band": 8,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 241,
-        "distance": 168,
-        "prominence": 48.6
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9v_L09.jpg",
-      "source_url": "",
-      "source_file": "f25.jpg",
-      "box": [
-        1500,
-        3082,
-        3350,
-        3309
-      ],
-      "lines_in_crop": 1,
-      "band": 9,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 241,
-        "distance": 168,
-        "prominence": 48.6
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9v_L10.jpg",
-      "source_url": "",
-      "source_file": "f25.jpg",
-      "box": [
-        1500,
-        3309,
-        3350,
-        3584
-      ],
-      "lines_in_crop": 1,
-      "band": 10,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 241,
-        "distance": 168,
-        "prominence": 48.6
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9v_L11.jpg",
-      "source_url": "",
-      "source_file": "f25.jpg",
-      "box": [
-        1500,
-        3584,
-        3350,
-        3822
-      ],
-      "lines_in_crop": 1,
-      "band": 11,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 241,
-        "distance": 168,
-        "prominence": 48.6
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9v_L12.jpg",
-      "source_url": "",
-      "source_file": "f25.jpg",
-      "box": [
-        1500,
-        3822,
-        3350,
-        4000
-      ],
-      "lines_in_crop": 1,
-      "band": 12,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 241,
-        "distance": 168,
-        "prominence": 48.6
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L01_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        380,
-        2780,
-        869
-      ],
-      "lines_in_crop": 1,
-      "band": 1,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L01_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        380,
-        3080,
-        869
-      ],
-      "lines_in_crop": 1,
-      "band": 1,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L02_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        869,
-        2780,
-        1372
-      ],
-      "lines_in_crop": 1,
-      "band": 2,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L02_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        869,
-        3080,
-        1372
-      ],
-      "lines_in_crop": 1,
-      "band": 2,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L03_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        1372,
-        2780,
-        1537
-      ],
-      "lines_in_crop": 1,
-      "band": 3,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L03_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        1372,
-        3080,
-        1537
-      ],
-      "lines_in_crop": 1,
-      "band": 3,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L04_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        1537,
-        2780,
-        1730
-      ],
-      "lines_in_crop": 1,
-      "band": 4,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L04_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        1537,
-        3080,
-        1730
-      ],
-      "lines_in_crop": 1,
-      "band": 4,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L05_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        1730,
-        2780,
-        1941
-      ],
-      "lines_in_crop": 1,
-      "band": 5,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L05_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        1730,
-        3080,
-        1941
-      ],
-      "lines_in_crop": 1,
-      "band": 5,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L06_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        1941,
-        2780,
-        2142
-      ],
-      "lines_in_crop": 1,
-      "band": 6,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L06_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        1941,
-        3080,
-        2142
-      ],
-      "lines_in_crop": 1,
-      "band": 6,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L07_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        2142,
-        2780,
-        2333
-      ],
-      "lines_in_crop": 1,
-      "band": 7,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L07_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        2142,
-        3080,
-        2333
-      ],
-      "lines_in_crop": 1,
-      "band": 7,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L08_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        2333,
-        2780,
-        2549
-      ],
-      "lines_in_crop": 1,
-      "band": 8,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L08_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        2333,
-        3080,
-        2549
-      ],
-      "lines_in_crop": 1,
-      "band": 8,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L09_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        2549,
-        2780,
-        2799
-      ],
-      "lines_in_crop": 1,
-      "band": 9,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L09_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        2549,
-        3080,
-        2799
-      ],
-      "lines_in_crop": 1,
-      "band": 9,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L10_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        2799,
-        2780,
-        3022
-      ],
-      "lines_in_crop": 1,
-      "band": 10,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L10_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        2799,
-        3080,
-        3022
-      ],
-      "lines_in_crop": 1,
-      "band": 10,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L11_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        3022,
-        2780,
-        3231
-      ],
-      "lines_in_crop": 1,
-      "band": 11,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L11_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        3022,
-        3080,
-        3231
-      ],
-      "lines_in_crop": 1,
-      "band": 11,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L12_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        3231,
-        2780,
-        3444
-      ],
-      "lines_in_crop": 1,
-      "band": 12,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L12_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        3231,
-        3080,
-        3444
-      ],
-      "lines_in_crop": 1,
-      "band": 12,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L13_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        3444,
-        2780,
-        3644
-      ],
-      "lines_in_crop": 1,
-      "band": 13,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L13_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        3444,
-        3080,
-        3644
-      ],
-      "lines_in_crop": 1,
-      "band": 13,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L14_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        3644,
-        2780,
-        3862
-      ],
-      "lines_in_crop": 1,
-      "band": 14,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L14_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        3644,
-        3080,
-        3862
-      ],
-      "lines_in_crop": 1,
-      "band": 14,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L15_s1.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        380,
-        3862,
-        2780,
-        4081
-      ],
-      "lines_in_crop": 1,
-      "band": 15,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f9r_L15_s2.jpg",
-      "source_url": "",
-      "source_file": "f24.jpg",
-      "box": [
-        680,
-        3862,
-        3080,
-        4081
-      ],
-      "lines_in_crop": 1,
-      "band": 15,
-      "segment": 2,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 207,
-        "distance": 144,
-        "prominence": 111.1
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f11cipher_L03.jpg (as f11_L1)",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
-      "source_file": "NOT COMMITTED, scratchpad only",
-      "box": [
-        1250,
-        2700,
-        2150,
-        1450
-      ],
-      "lines_in_crop": 1,
-      "band": 3,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile, --distance 90 --prominence 25 on the full 9-band region",
-      "params": {
-        "pitch_autocorr": 174,
-        "distance": 90,
-        "prominence": 25
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f11cipher_L04.jpg (as f11_L2)",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
-      "source_file": "NOT COMMITTED, scratchpad only",
-      "box": [
-        1250,
-        2700,
-        2150,
-        1450
-      ],
-      "lines_in_crop": 1,
-      "band": 4,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 174,
-        "distance": 90,
-        "prominence": 25
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f11cipher_L05.jpg (as f11_L3)",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
-      "source_file": "NOT COMMITTED, scratchpad only",
-      "box": [
-        1250,
-        2700,
-        2150,
-        1450
-      ],
-      "lines_in_crop": 1,
-      "band": 5,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 174,
-        "distance": 90,
-        "prominence": 25
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f11cipher_L06.jpg (as f11_L4)",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
-      "source_file": "NOT COMMITTED, scratchpad only",
-      "box": [
-        1250,
-        2700,
-        2150,
-        1450
-      ],
-      "lines_in_crop": 1,
-      "band": 6,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 174,
-        "distance": 90,
-        "prominence": 25
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f11cipher_L07.jpg (as f11_L5)",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
-      "source_file": "NOT COMMITTED, scratchpad only",
-      "box": [
-        1250,
-        2700,
-        2150,
-        1450
-      ],
-      "lines_in_crop": 1,
-      "band": 7,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 174,
-        "distance": 90,
-        "prominence": 25
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f11cipher_L08.jpg (as f11_L6)",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
-      "source_file": "NOT COMMITTED, scratchpad only",
-      "box": [
-        1250,
-        2700,
-        2150,
-        1450
-      ],
-      "lines_in_crop": 1,
-      "band": 8,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 174,
-        "distance": 90,
-        "prominence": 25
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f12cipher_L01.jpg (as f12_L1)",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
-      "source_file": "NOT COMMITTED, scratchpad only",
-      "box": [
-        1100,
-        950,
-        2150,
-        1250
-      ],
-      "lines_in_crop": 1,
-      "band": 1,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile, --distance 90 --prominence 25",
-      "params": {
-        "pitch_autocorr": 172,
-        "distance": 90,
-        "prominence": 25
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f12cipher_L02.jpg (as f12_L2)",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
-      "source_file": "NOT COMMITTED, scratchpad only",
-      "box": [
-        1100,
-        950,
-        2150,
-        1250
-      ],
-      "lines_in_crop": 1,
-      "band": 2,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 172,
-        "distance": 90,
-        "prominence": 25
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f12cipher_L03.jpg (as f12_L3)",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
-      "source_file": "NOT COMMITTED, scratchpad only",
-      "box": [
-        1100,
-        950,
-        2150,
-        1250
-      ],
-      "lines_in_crop": 1,
-      "band": 3,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 172,
-        "distance": 90,
-        "prominence": 25
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f12cipher_L04.jpg (as f12_L4)",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
-      "source_file": "NOT COMMITTED, scratchpad only",
-      "box": [
-        1100,
-        950,
-        2150,
-        1250
-      ],
-      "lines_in_crop": 1,
-      "band": 4,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 172,
-        "distance": 90,
-        "prominence": 25
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f12cipher_L05.jpg (as f12_L5)",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
-      "source_file": "NOT COMMITTED, scratchpad only",
-      "box": [
-        1100,
-        950,
-        2150,
-        1250
-      ],
-      "lines_in_crop": 1,
-      "band": 5,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 172,
-        "distance": 90,
-        "prominence": 25
-      },
-      "date": "24 Sep 2026"
-    },
-    {
-      "crop": "f12cipher_L06.jpg (as f12_L6)",
-      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
-      "source_file": "NOT COMMITTED, scratchpad only",
-      "box": [
-        1100,
-        950,
-        2150,
-        1250
-      ],
-      "lines_in_crop": 1,
-      "band": 6,
-      "segment": 1,
-      "method": "tools/iiif_lines.py row ink profile",
-      "params": {
-        "pitch_autocorr": 172,
-        "distance": 90,
-        "prominence": 25
-      },
-      "date": "24 Sep 2026"
-    }
-  ]
+    "ark": "btv1b9060495t",
+    "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/manifest.json",
+    "canvas_count": 367,
+    "note": "All 367 IIIF canvas labels are 'NP' (no folio metadata in the manifest itself). archivesetmanuscrits.bnf.fr's own item notice (cc58150z) gives item 1 (the 47 ciphered letters) as Fol. 1-110, item 2 (Le Tellier, no cipher) as Fol. 111-182, but does not enumerate item 1's 47 letters individually -- no folio-level shortcut exists beyond that two-item split.",
+    "fetches": [
+        {
+            "date": "24 Sept 2026 (prior pass)",
+            "canvas": 20,
+            "file": "f20.jpg",
+            "content": "clear French letter, Italy news, siege of Bordeaux (the city, unrelated to the diplomat Antoine de Bordeaux)",
+            "folio_seen": 7
+        },
+        {
+            "date": "24 Sept 2026 (prior pass)",
+            "canvas": 100,
+            "file": "f100.jpg",
+            "content": "faint illegible verso show-through, no cipher"
+        },
+        {
+            "date": "24 Sept 2026 (prior pass)",
+            "canvas": 150,
+            "file": "f150.jpg",
+            "content": "blank verso"
+        },
+        {
+            "date": "24 Sept 2026 (this pass)",
+            "canvas": 106,
+            "file": "f106_thumb.jpg",
+            "content": "blank/docket verso, faint sideways endorsement '...16 [?] octobre 1659'"
+        },
+        {
+            "date": "24 Sept 2026 (this pass)",
+            "canvas": 107,
+            "file": "f107_thumb.jpg / f107_corner.jpg",
+            "content": "clear French letter, 'Monsieur' opening, no cipher",
+            "folio_seen": "57 (corner-crop read, NOT trusted -- see NOTES.md calibration discussion, contradicted by the more consistent canvas 160-180 rate)"
+        },
+        {
+            "date": "24 Sept 2026 (this pass)",
+            "canvases": "8,12,16,...,220 (stride 4, 54 canvases)",
+            "files_pattern": "census/f{N}.jpg",
+            "size": "600px wide IIIF thumbnails (full/,600/0/native.jpg), 8-44KB each",
+            "content": "see NOTES.md 'Census pass' section for the full per-canvas table (content type, decipherment presence, folio numbers where legible); 6/54 show cipher or mixed content, in two bands (canvas 8-32 and 168-172), none show a visible decipherment in this sample",
+            "read_by": "Sonnet subagent, image-only, no network access"
+        },
+        {
+            "date": "24 Sept 2026 (dense band pass)",
+            "canvases": "4-36 and 160-180 minus the 14 already on disk from the stride-4 walk (40 new fetches, 39 succeeded, canvas 29 failed twice -- connection resets, logged not retried further)",
+            "files_pattern": "census/f{N}.jpg",
+            "size": "600px wide IIIF thumbnails, --max-time 30 needed (default curl timeout too short under concurrent-worker load this session)",
+            "content": "see NOTES.md 'Dense band walk' section for the extended per-canvas table; read_by: Sonnet subagent, image-only, no network access"
+        },
+        {
+            "date": "24 Sept 2026 (dense band pass)",
+            "canvases": "8, 9, 10, 168, 169, 170",
+            "files_pattern": "native/f{N}.jpg",
+            "size": "native resolution, ~3810x5342px, 2.3-2.5MB each (full/full/0/native.jpg)",
+            "content": "the two chosen letters: folio 1-2 (canvas 8-10, Jan 1653, symbol+numeral hybrid cipher) and folio 86-88 (canvas 168-170, all-numeral cipher; canvas 170=folio 87 is headed 'Dechiffre de la lettre de M.r le Comte de Brienne du 21 9.bre 1659', a contemporary plaintext decipherment on the facing leaf, not interlined over the cipher itself -- see NOTES.md flag)"
+        },
+        {
+            "date": "24 Sept 2026 (dense band pass)",
+            "canvases": "8, 9, 10, 168, 170",
+            "files_pattern": "crops/f{N}_body.jpg",
+            "size": "cropped from native, longest side resized to <=2400px",
+            "content": "f8_body/f9_body/f10_body = the mixed clear-French+cipher body text of the folio 1-2 letter (used for the passA/passB transcription); f168_body = the cipher block on folio 86; f170_body = the decipherment heading+text on folio 87 (documentation only, not transcribed this pass)"
+        },
+        {
+            "date": "24 Sept 2026 (folio 86/87 line-crop pass)",
+            "canvases": "168, 169",
+            "files_pattern": "crops/f86_cipher_L01.jpg .. L16.jpg",
+            "size": "cropped from native (no fetch, already on disk), longest side <=2400px",
+            "content": "16 single-line crops of the folio 86 numeral cipher block, continuous across the two canvases: L01-L07 from canvas 168 (bottom of the leaf, after the 'Monsieur' prose opening), L08-L16 from canvas 169 (top of the leaf, cipher continuing before it breaks into the 'je ne croy pas...' prose closing). Line bands located by manual pixel-grid inspection (row-projection auto-segmentation was tried first and rejected -- cursive ink has no clean zero-valley between text lines -- see NOTES.md); generous padding included, minor slivers of neighbouring lines visible at some crop edges by design.",
+            "generated_by": "no subagent, this worker (image inspection + PIL crop script), no network"
+        },
+        {
+            "date": "24 Sept 2026 (folio 86/87 line-crop pass)",
+            "canvas": 170,
+            "files_pattern": "crops/f170_H01_heading1.jpg, H02_heading2.jpg, P1L01.jpg..P1L12.jpg, P2L01.jpg..P2L12.jpg",
+            "size": "cropped from native (no fetch), longest side <=2400px",
+            "content": "26 single-line crops of the decipherment leaf: 2 heading lines ('Dechiffre de la lettre de Mr le Comte de' / 'Brienne du 21 9bre 1659' -- see NOTES.md correction, 9bre = novembre not septembre), then paragraph 1 (12 lines) and paragraph 2 (12 lines) of the plaintext French. Same manual-grid method as f86_cipher_L*; para 2's line pitch is visibly tighter than para 1's, calibrated separately.",
+            "generated_by": "no subagent, this worker, no network"
+        },
+        {
+            "date": "24 Sept 2026 (f.86-88 key pass)",
+            "canvases": "172 (fetched), 173 (failed: connection reset twice, not retried further)",
+            "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f172/full/full/0/native.jpg",
+            "size": "3826x5356, 2383516 bytes; native NOT committed (folder near the 30 MB cap), re-fetch from the URL",
+            "files_pattern": "crops/f88_cipher_top.jpg, crops/f88_cipher_bottom.jpg (canvas 172 native box x740-3230, y3150-3760 and y3700-4330); crops/f86_cipher_L13-L16_recrop.jpg (canvas 169 native box x1300-3400, y1620-2200)",
+            "generated_by": "Opus reconciler+solver, no subagent"
+        },
+        {
+            "date": "24 Sept 2026 (this pass)",
+            "canvas": 173,
+            "file": "native/f173.jpg",
+            "content": "f.88 letter tail: 7 more cipher lines + [je][suis], then dateline/signature/docket (A Paris ce 21e nov. 1659, signed de Brienne, docket M. de Servien)"
+        },
+        {
+            "date": "24 Sept 2026 (this pass, LANE G access+transcription worker)",
+            "canvases": "11, 12, 24, 25, 30, 31, 32, 33 (band-1 cipher/mixed canvases from the dense-band-walk table not previously fetched at native resolution)",
+            "files_pattern": "native/f{N}.jpg (native/f24.jpg and native/f25.jpg fetched twice this pass -- once to read+classify, deleted, refetched once to cut line crops -- see NOTES.md)",
+            "size": "native resolution, ~2.3-2.6MB each (full/full/0/native.jpg)",
+            "content": "native-resolution read of all 8; per-canvas notes in NOTES.md 'canvas 11/12 (folio 1-2 letter, continued)' and 'canvas 30-33 (folios 19-20, Mantoue/Montferrat letter)'. Line crops (f9r_L*, f9v_L*) cut from canvas 24/25 (folio 9 letter) only.",
+            "disposition": "all 8 native full-resolution files deleted after use to stay under the 30MB folder cap (folder would be ~50MB with all 8 kept); canvas 8,9,10,168,169,170,173 natives from prior passes kept on disk. Re-fetch with the same URL pattern (https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f{N}/full/full/0/native.jpg) if needed again.",
+            "read_by": "worker directly (Read tool), no subagent, for the 6 non-folio-9 canvases; two independent Sonnet subagents (blind, image-only) for the folio 9 line crops"
+        },
+        {
+            "date": "24 Sept 2026 (LANE G transcription worker, following up the prior pass)",
+            "canvases": "11, 12, 24, 25, 30, 31, 32, 33 (same 8 -- re-fetched, the prior pass's copies had already been deleted)",
+            "files_pattern": "not written to disk under images/ -- fetched to session scratchpad, read directly (Read tool), then left in scratchpad (not committed, not part of this folder)",
+            "size": "native resolution, ~2.4-2.6MB each (full/full/0/native.jpg)",
+            "content": "date/extent/decipherment report for all 8, see NOTES.md 'canvas 11/12/24/25/30/31/32/33' table -- finds canvas 11-12 is the dated (10 Jan 1653, signed Brienne) tail of the folio 1-2 letter with an untranscribed second cipher block, and two clear-French phrases inside canvas 30 and canvas 32's cipher blocks that the stride-4 census missed.",
+            "disposition": "all 8 native files fetched to scratchpad only, never written into this folder; folder size unchanged from the prior pass (still 30MB). Re-fetch with the same URL pattern (https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f{N}/full/full/0/native.jpg) if needed again.",
+            "read_by": "worker directly (Read tool), no subagent, for all 8 canvases; one Sonnet subagent (blind, image-only, no network) for passB_f9.tsv from the existing folio-9 crops"
+        },
+        {
+            "date": "24 Sept 2026 (this pass)",
+            "canvas": 11,
+            "file": "NOT COMMITTED (folder at 30MB cap) -- kept in worker scratchpad only, re-fetchable at https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+            "content": "bottom of the folio 1-2-3 letter (canvas 8-12): 2 lines clear French, then a second, previously-untranscribed cipher block (6 lines, symbol+numeral), then 1 line mixed cipher+clear, then clear French continues onto canvas 12"
+        },
+        {
+            "date": "24 Sept 2026 (this pass)",
+            "canvas": 12,
+            "file": "NOT COMMITTED (folder at 30MB cap) -- kept in worker scratchpad only, re-fetchable at https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+            "content": "folio 3r (folio number '3' visible top right): continuation of the same cipher block from canvas 11 (6 more lines, symbol+numeral, mixed cipher+clear on the last line), then clear French to the letter's close, signed Brienne, dated 'Paris le x janvier 1653' (bleed-through from facing canvas 11 verso, mirrored, visible bottom left)"
+        },
+        {
+            "date": "24 Sept 2026 (this pass, LANE G2 worker H)",
+            "canvases": "129, 130 (folio 67, 10 Oct 1659, Brienne to Servien), 32 (unnumbered 1653 letter)",
+            "files_pattern": "native/f{N}.jpg (129, 130, 32 -- native resolution, 3801-3802x5180-5198px)",
+            "content": "canvas 129/130 = numeral-only cipher letter (key_1659 style), the new letter flagged by the prior canvas-37-159 walk; canvas 32 = symbol+numeral cipher, full page ~14 lines, never transcribed before (1653 band). See NOTES.md \"Canvas 129/130 and canvas 32 (24 Sept 2026)\".",
+            "not_committed": "images/ already at the 30 MB cap; natives and all iiif_lines.py crops kept in the worker scratchpad, not on disk here -- a later worker re-fetches (URLs below) or re-derives crops from the regions logged under iiif_lines.",
+            "fetch_urls": {
+                "f129": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f129/full/full/0/native.jpg",
+                "f130": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f130/full/full/0/native.jpg",
+                "f32": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f32/full/full/0/native.jpg"
+            }
+        },
+        {
+            "date": "24 Sept 2026 (this pass, LANE G2 worker H)",
+            "canvases": "45 (unfetched, connection reset x2), 55, 58, 74, 120, 121, 122, 123",
+            "files_pattern": "thumbs/f{N}.jpg (1000px wide IIIF thumbnails, full/1000,/0/default.jpg)",
+            "content": "45/55/58/74: canvas-walk follow-up (no cipher in 55/58/74; 45 never fetched). 120/121/122/123: dedupe check against the prior worker's duplicate flag -- confirmed 120 == 122 (same recto, MAE 3.37, corr 0.90), NOT confirmed 121 == 123 (MAE 8.05, corr 0.24, both just faint blank versos). See NOTES.md.",
+            "not_committed": "kept in worker scratchpad only"
+        }
+    ],
+    "requests_this_pass": {
+        "gallica.bnf.fr": "9 (8 native fetches, one at a time ~1.8s apart, UA per playbook, --max-time 30; canvas 33 connection-reset, recovered on the single allowed retry)",
+        "WebSearch": "0",
+        "other": "0 (no other host queried this pass)"
+    },
+    "iiif_lines": [
+        {
+            "crop": "f9v_L01.jpg",
+            "source_url": "",
+            "source_file": "f25.jpg",
+            "box": [
+                1500,
+                1202,
+                3350,
+                1436
+            ],
+            "lines_in_crop": 1,
+            "band": 1,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 241,
+                "distance": 168,
+                "prominence": 48.6
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9v_L02.jpg",
+            "source_url": "",
+            "source_file": "f25.jpg",
+            "box": [
+                1500,
+                1436,
+                3350,
+                1666
+            ],
+            "lines_in_crop": 1,
+            "band": 2,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 241,
+                "distance": 168,
+                "prominence": 48.6
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9v_L03.jpg",
+            "source_url": "",
+            "source_file": "f25.jpg",
+            "box": [
+                1500,
+                1666,
+                3350,
+                1904
+            ],
+            "lines_in_crop": 1,
+            "band": 3,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 241,
+                "distance": 168,
+                "prominence": 48.6
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9v_L04.jpg",
+            "source_url": "",
+            "source_file": "f25.jpg",
+            "box": [
+                1500,
+                1904,
+                3350,
+                2164
+            ],
+            "lines_in_crop": 1,
+            "band": 4,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 241,
+                "distance": 168,
+                "prominence": 48.6
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9v_L05.jpg",
+            "source_url": "",
+            "source_file": "f25.jpg",
+            "box": [
+                1500,
+                2164,
+                3350,
+                2396
+            ],
+            "lines_in_crop": 1,
+            "band": 5,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 241,
+                "distance": 168,
+                "prominence": 48.6
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9v_L06.jpg",
+            "source_url": "",
+            "source_file": "f25.jpg",
+            "box": [
+                1500,
+                2396,
+                3350,
+                2610
+            ],
+            "lines_in_crop": 1,
+            "band": 6,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 241,
+                "distance": 168,
+                "prominence": 48.6
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9v_L07.jpg",
+            "source_url": "",
+            "source_file": "f25.jpg",
+            "box": [
+                1500,
+                2610,
+                3350,
+                2851
+            ],
+            "lines_in_crop": 1,
+            "band": 7,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 241,
+                "distance": 168,
+                "prominence": 48.6
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9v_L08.jpg",
+            "source_url": "",
+            "source_file": "f25.jpg",
+            "box": [
+                1500,
+                2851,
+                3350,
+                3082
+            ],
+            "lines_in_crop": 1,
+            "band": 8,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 241,
+                "distance": 168,
+                "prominence": 48.6
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9v_L09.jpg",
+            "source_url": "",
+            "source_file": "f25.jpg",
+            "box": [
+                1500,
+                3082,
+                3350,
+                3309
+            ],
+            "lines_in_crop": 1,
+            "band": 9,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 241,
+                "distance": 168,
+                "prominence": 48.6
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9v_L10.jpg",
+            "source_url": "",
+            "source_file": "f25.jpg",
+            "box": [
+                1500,
+                3309,
+                3350,
+                3584
+            ],
+            "lines_in_crop": 1,
+            "band": 10,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 241,
+                "distance": 168,
+                "prominence": 48.6
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9v_L11.jpg",
+            "source_url": "",
+            "source_file": "f25.jpg",
+            "box": [
+                1500,
+                3584,
+                3350,
+                3822
+            ],
+            "lines_in_crop": 1,
+            "band": 11,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 241,
+                "distance": 168,
+                "prominence": 48.6
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9v_L12.jpg",
+            "source_url": "",
+            "source_file": "f25.jpg",
+            "box": [
+                1500,
+                3822,
+                3350,
+                4000
+            ],
+            "lines_in_crop": 1,
+            "band": 12,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 241,
+                "distance": 168,
+                "prominence": 48.6
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L01_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                380,
+                2780,
+                869
+            ],
+            "lines_in_crop": 1,
+            "band": 1,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L01_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                380,
+                3080,
+                869
+            ],
+            "lines_in_crop": 1,
+            "band": 1,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L02_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                869,
+                2780,
+                1372
+            ],
+            "lines_in_crop": 1,
+            "band": 2,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L02_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                869,
+                3080,
+                1372
+            ],
+            "lines_in_crop": 1,
+            "band": 2,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L03_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                1372,
+                2780,
+                1537
+            ],
+            "lines_in_crop": 1,
+            "band": 3,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L03_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                1372,
+                3080,
+                1537
+            ],
+            "lines_in_crop": 1,
+            "band": 3,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L04_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                1537,
+                2780,
+                1730
+            ],
+            "lines_in_crop": 1,
+            "band": 4,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L04_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                1537,
+                3080,
+                1730
+            ],
+            "lines_in_crop": 1,
+            "band": 4,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L05_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                1730,
+                2780,
+                1941
+            ],
+            "lines_in_crop": 1,
+            "band": 5,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L05_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                1730,
+                3080,
+                1941
+            ],
+            "lines_in_crop": 1,
+            "band": 5,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L06_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                1941,
+                2780,
+                2142
+            ],
+            "lines_in_crop": 1,
+            "band": 6,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L06_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                1941,
+                3080,
+                2142
+            ],
+            "lines_in_crop": 1,
+            "band": 6,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L07_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                2142,
+                2780,
+                2333
+            ],
+            "lines_in_crop": 1,
+            "band": 7,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L07_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                2142,
+                3080,
+                2333
+            ],
+            "lines_in_crop": 1,
+            "band": 7,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L08_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                2333,
+                2780,
+                2549
+            ],
+            "lines_in_crop": 1,
+            "band": 8,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L08_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                2333,
+                3080,
+                2549
+            ],
+            "lines_in_crop": 1,
+            "band": 8,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L09_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                2549,
+                2780,
+                2799
+            ],
+            "lines_in_crop": 1,
+            "band": 9,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L09_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                2549,
+                3080,
+                2799
+            ],
+            "lines_in_crop": 1,
+            "band": 9,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L10_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                2799,
+                2780,
+                3022
+            ],
+            "lines_in_crop": 1,
+            "band": 10,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L10_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                2799,
+                3080,
+                3022
+            ],
+            "lines_in_crop": 1,
+            "band": 10,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L11_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                3022,
+                2780,
+                3231
+            ],
+            "lines_in_crop": 1,
+            "band": 11,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L11_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                3022,
+                3080,
+                3231
+            ],
+            "lines_in_crop": 1,
+            "band": 11,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L12_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                3231,
+                2780,
+                3444
+            ],
+            "lines_in_crop": 1,
+            "band": 12,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L12_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                3231,
+                3080,
+                3444
+            ],
+            "lines_in_crop": 1,
+            "band": 12,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L13_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                3444,
+                2780,
+                3644
+            ],
+            "lines_in_crop": 1,
+            "band": 13,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L13_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                3444,
+                3080,
+                3644
+            ],
+            "lines_in_crop": 1,
+            "band": 13,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L14_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                3644,
+                2780,
+                3862
+            ],
+            "lines_in_crop": 1,
+            "band": 14,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L14_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                3644,
+                3080,
+                3862
+            ],
+            "lines_in_crop": 1,
+            "band": 14,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L15_s1.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                380,
+                3862,
+                2780,
+                4081
+            ],
+            "lines_in_crop": 1,
+            "band": 15,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f9r_L15_s2.jpg",
+            "source_url": "",
+            "source_file": "f24.jpg",
+            "box": [
+                680,
+                3862,
+                3080,
+                4081
+            ],
+            "lines_in_crop": 1,
+            "band": 15,
+            "segment": 2,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 207,
+                "distance": 144,
+                "prominence": 111.1
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f11cipher_L03.jpg (as f11_L1)",
+            "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+            "source_file": "NOT COMMITTED, scratchpad only",
+            "box": [
+                1250,
+                2700,
+                2150,
+                1450
+            ],
+            "lines_in_crop": 1,
+            "band": 3,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile, --distance 90 --prominence 25 on the full 9-band region",
+            "params": {
+                "pitch_autocorr": 174,
+                "distance": 90,
+                "prominence": 25
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f11cipher_L04.jpg (as f11_L2)",
+            "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+            "source_file": "NOT COMMITTED, scratchpad only",
+            "box": [
+                1250,
+                2700,
+                2150,
+                1450
+            ],
+            "lines_in_crop": 1,
+            "band": 4,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 174,
+                "distance": 90,
+                "prominence": 25
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f11cipher_L05.jpg (as f11_L3)",
+            "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+            "source_file": "NOT COMMITTED, scratchpad only",
+            "box": [
+                1250,
+                2700,
+                2150,
+                1450
+            ],
+            "lines_in_crop": 1,
+            "band": 5,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 174,
+                "distance": 90,
+                "prominence": 25
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f11cipher_L06.jpg (as f11_L4)",
+            "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+            "source_file": "NOT COMMITTED, scratchpad only",
+            "box": [
+                1250,
+                2700,
+                2150,
+                1450
+            ],
+            "lines_in_crop": 1,
+            "band": 6,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 174,
+                "distance": 90,
+                "prominence": 25
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f11cipher_L07.jpg (as f11_L5)",
+            "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+            "source_file": "NOT COMMITTED, scratchpad only",
+            "box": [
+                1250,
+                2700,
+                2150,
+                1450
+            ],
+            "lines_in_crop": 1,
+            "band": 7,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 174,
+                "distance": 90,
+                "prominence": 25
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f11cipher_L08.jpg (as f11_L6)",
+            "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+            "source_file": "NOT COMMITTED, scratchpad only",
+            "box": [
+                1250,
+                2700,
+                2150,
+                1450
+            ],
+            "lines_in_crop": 1,
+            "band": 8,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 174,
+                "distance": 90,
+                "prominence": 25
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f12cipher_L01.jpg (as f12_L1)",
+            "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+            "source_file": "NOT COMMITTED, scratchpad only",
+            "box": [
+                1100,
+                950,
+                2150,
+                1250
+            ],
+            "lines_in_crop": 1,
+            "band": 1,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile, --distance 90 --prominence 25",
+            "params": {
+                "pitch_autocorr": 172,
+                "distance": 90,
+                "prominence": 25
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f12cipher_L02.jpg (as f12_L2)",
+            "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+            "source_file": "NOT COMMITTED, scratchpad only",
+            "box": [
+                1100,
+                950,
+                2150,
+                1250
+            ],
+            "lines_in_crop": 1,
+            "band": 2,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 172,
+                "distance": 90,
+                "prominence": 25
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f12cipher_L03.jpg (as f12_L3)",
+            "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+            "source_file": "NOT COMMITTED, scratchpad only",
+            "box": [
+                1100,
+                950,
+                2150,
+                1250
+            ],
+            "lines_in_crop": 1,
+            "band": 3,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 172,
+                "distance": 90,
+                "prominence": 25
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f12cipher_L04.jpg (as f12_L4)",
+            "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+            "source_file": "NOT COMMITTED, scratchpad only",
+            "box": [
+                1100,
+                950,
+                2150,
+                1250
+            ],
+            "lines_in_crop": 1,
+            "band": 4,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 172,
+                "distance": 90,
+                "prominence": 25
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f12cipher_L05.jpg (as f12_L5)",
+            "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+            "source_file": "NOT COMMITTED, scratchpad only",
+            "box": [
+                1100,
+                950,
+                2150,
+                1250
+            ],
+            "lines_in_crop": 1,
+            "band": 5,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 172,
+                "distance": 90,
+                "prominence": 25
+            },
+            "date": "24 Sep 2026"
+        },
+        {
+            "crop": "f12cipher_L06.jpg (as f12_L6)",
+            "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+            "source_file": "NOT COMMITTED, scratchpad only",
+            "box": [
+                1100,
+                950,
+                2150,
+                1250
+            ],
+            "lines_in_crop": 1,
+            "band": 6,
+            "segment": 1,
+            "method": "tools/iiif_lines.py row ink profile",
+            "params": {
+                "pitch_autocorr": 172,
+                "distance": 90,
+                "prominence": 25
+            },
+            "date": "24 Sep 2026"
+        }
+    ],
+    "iiif_lines_regions": [
+        {
+            "date": "24 Sept 2026",
+            "canvas_129": {
+                "region": "380,1750,3050,3420",
+                "distance": 130,
+                "prominence": 15,
+                "prefix": "f129cipher",
+                "bands": 16,
+                "note": "bands 1 and 10 each hold two physical manuscript lines; bands 15-16 are blank/spurious -- see NOTES.md crop/line-count flag"
+            },
+            "canvas_130_blockA": {
+                "region": "390,650,3050,1050",
+                "distance": 120,
+                "prominence": 15,
+                "prefix": "f130ciphA",
+                "bands": 7
+            },
+            "canvas_130_blockB": {
+                "region": "390,2250,3050,1120",
+                "distance": 120,
+                "prominence": 15,
+                "prefix": "f130ciphB",
+                "bands": 7
+            },
+            "canvas_32": {
+                "region": "380,900,3250,3260",
+                "distance": 120,
+                "prominence": 15,
+                "prefix": "f32cipher",
+                "bands": 14,
+                "note": "a 15th band beyond height 3260 is spurious/blank (page margin), discarded"
+            }
+        }
+    ]
 }

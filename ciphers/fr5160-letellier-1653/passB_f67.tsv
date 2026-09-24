@@ -1,0 +1,561 @@
+line	pos	group	conf	note
+f129_L01	1	[en delivrez parler a leurs Alt.es Royalles]	C	clear-text gloss/phrase, reading of abbreviated words uncertain
+f129_L01	2	;	C	punctuation ending the clear-text run
+f129_L01	3	7	H	
+f129_L01	4	24	H	
+f129_L01	5	7	H	
+f129_L01	6	,	H	scribal comma
+f129_L01	7	3	M	faint
+f129_L01	8	21	H	
+f129_L01	9	_6	M	second numeral row within same L01 crop (band not shared with L02); overline over single digit
+f129_L01	10	66	M	
+f129_L01	11	_28	H	overline over both digits
+f129_L01	12	7	H	
+f129_L01	13	20	H	
+f129_L01	14	27	H	
+f129_L01	15	2	H	
+f129_L01	16	_8	M	overline single digit
+f129_L01	17	18	H	
+f129_L01	18	_4	M	overline single digit
+f129_L01	19	62	H	
+f129_L01	20	2	H	
+f129_L01	21	96	M	7/9 ambiguous
+f129_L01	22	20	H	
+f129_L01	23	73	M	
+f129_L01	24	7	M	near crop's right edge
+f129_L02	1	_26	H	overline both digits
+f129_L02	2	16	H	
+f129_L02	3	61	H	
+f129_L02	4	20	H	
+f129_L02	5	96	H	
+f129_L02	6	_24	H	
+f129_L02	7	_12	H	
+f129_L02	8	18	H	
+f129_L02	9	96	H	
+f129_L02	10	60	H	
+f129_L02	11	_26	H	
+f129_L02	12	_12	H	
+f129_L02	13	_21	H	
+f129_L02	14	96	H	
+f129_L02	15	20	H	
+f129_L02	16	_6	H	
+f129_L02	17	16	H	
+f129_L02	18	61	H	
+f129_L02	19	20	H	
+f129_L02	20	—	H	scribal dash ending the line
+f129_L03	1	15	H	
+f129_L03	2	16	H	
+f129_L03	3	15	H	
+f129_L03	4	17	H	
+f129_L03	5	_7	H	
+f129_L03	6	21	H	
+f129_L03	7	_21	H	
+f129_L03	8	_13	H	
+f129_L03	9	15	H	
+f129_L03	10	19	H	
+f129_L03	11	43	H	
+f129_L03	12	21	H	
+f129_L03	13	19	H	
+f129_L03	14	36	H	
+f129_L03	15	20	H	
+f129_L03	16	19	H	
+f129_L03	17	_11	M	"shape near ""n""; could be two 1s or ascender flourish"
+f129_L03	18	2	H	
+f129_L03	19	20	H	
+f129_L03	20	4	H	
+f129_L03	21	60	H	
+f129_L03	22	:	M	"two stacked dots after ""60""; unusual end-of-line mark, not a digit"
+f129_L04	1	15	H	
+f129_L04	2	20	H	
+f129_L04	3	4	H	
+f129_L04	4	9	H	
+f129_L04	5	20	H	
+f129_L04	6	70	H	
+f129_L04	7	_28	H	
+f129_L04	8	15	H	
+f129_L04	9	21	H	
+f129_L04	10	_6	H	
+f129_L04	11	60	H	
+f129_L04	12	1	H	
+f129_L04	13	41	H	
+f129_L04	14	4	H	
+f129_L04	15	_22	H	
+f129_L04	16	24	H	
+f129_L04	17	18	H	
+f129_L04	18	39	H	
+f129_L04	19	42	H	
+f129_L04	20	16	H	
+f129_L04	21	10	H	
+f129_L05	1	6	H	
+f129_L05	2	61	H	
+f129_L05	3	18	H	
+f129_L05	4	_17	H	
+f129_L05	5	15	H	
+f129_L05	6	19	H	
+f129_L05	7	26	H	
+f129_L05	8	60	H	
+f129_L05	9	66	H	
+f129_L05	10	_11	H	
+f129_L05	11	18	H	
+f129_L05	12	2	H	
+f129_L05	13	20	H	
+f129_L05	14	19	H	
+f129_L05	15	23	H	
+f129_L05	16	64	H	
+f129_L05	17	20	H	
+f129_L05	18	_17	H	
+f129_L05	19	13	H	
+f129_L05	20	_10	M	near crop's right edge
+f129_L06	1	18	H	
+f129_L06	2	26	H	
+f129_L06	3	_6	M	overline single digit shape uncertain (6 vs 0)
+f129_L06	4	7	H	
+f129_L06	5	_6	M	overline single digit shape uncertain (6 vs 0)
+f129_L06	6	20	H	
+f129_L06	7	_16	H	
+f129_L06	8	,	H	scribal comma
+f129_L06	9	2	H	
+f129_L06	10	19	H	
+f129_L06	11	_6	H	
+f129_L06	12	11	M	"written close to next digit; part of a run read as ""115"""
+f129_L06	13	5	M	"see above, split from ""115"""
+f129_L06	14	_16	H	
+f129_L06	15	_13	H	
+f129_L06	16	15	H	
+f129_L06	17	19	H	
+f129_L06	18	2	H	
+f129_L06	19	18	H	
+f129_L06	20	15	M	"part of a run read as ""154"""
+f129_L06	21	4	M	"see above, split from ""154"""
+f129_L06	22	_1	M	overline single digit
+f129_L06	23	18	H	
+f129_L06	24	_6	H	
+f129_L06	25	2	H	
+f129_L06	26	—	H	scribal dash ending the line
+f129_L07	1	96	M	7/9 ambiguous
+f129_L07	2	_6	H	
+f129_L07	3	_11	H	
+f129_L07	4	_22	H	
+f129_L07	5	_11	H	
+f129_L07	6	21	H	
+f129_L07	7	99	H	
+f129_L07	8	65	H	
+f129_L07	9	72	H	
+f129_L07	10	2	H	
+f129_L07	11	66	H	
+f129_L07	12	18	H	
+f129_L07	13	19	H	
+f129_L07	14	96	M	7/9 ambiguous, repeat of token 1's shape
+f129_L07	15	20	H	
+f129_L07	16	6	H	
+f129_L07	17	1	H	
+f129_L07	18	40	H	
+f129_L07	19	15	H	
+f129_L07	20	_11	H	
+f129_L07	21	20	H	
+f129_L07	22	—	H	scribal dash ending the line
+f129_L08	1	[parceque S'il pouvoit estre]	C	clear-text phrase
+f129_L08	2	4	H	
+f129_L08	3	_10	H	
+f129_L08	4	15	H	
+f129_L08	5	.	M	"small dot after ""15""; could be ink stop rather than punctuation"
+f129_L08	6	18	H	
+f129_L08	7	19	H	
+f129_L08	8	_7	H	
+f129_L08	9	16	H	
+f129_L08	10	6	H	
+f129_L08	11	21	H	
+f129_L08	12	_12	H	
+f129_L08	13	25	H	
+f129_L08	14	20	H	
+f129_L08	15	19	H	
+f129_L09	1	7	H	
+f129_L09	2	18	H	
+f129_L09	3	_16	H	
+f129_L09	4	17	M	unusual cursive shape, read as 17
+f129_L09	5	5	H	
+f129_L09	6	60	H	
+f129_L09	7	5	H	
+f129_L09	8	61	H	
+f129_L09	9	4	H	
+f129_L09	10	,	H	scribal comma
+f129_L09	11	50	H	
+f129_L09	12	18	H	
+f129_L09	13	46	H	
+f129_L09	14	66	H	
+f129_L09	15	18	H	
+f129_L09	16	19	H	
+f129_L09	17	73	H	
+f129_L09	18	7	H	
+f129_L09	19	20	H	
+f129_L09	20	6	H	
+f129_L09	21	7	H	
+f129_L09	22	_12	H	
+f129_L09	23	24	H	
+f129_L10	1	18	H	first of two rows sharing the L10 crop (band is not shared with L09/L11)
+f129_L10	2	20	H	
+f129_L10	3	76	M	7/9 ambiguous
+f129_L10	4	20	H	
+f129_L10	5	66	H	
+f129_L10	6	_19	H	
+f129_L10	7	_11	H	
+f129_L10	8	20	H	
+f129_L10	9	6	H	
+f129_L10	10	23	H	
+f129_L10	11	11	H	
+f129_L10	12	18	H	
+f129_L10	13	3	M	
+f129_L10	14	11	H	
+f129_L10	15	76	M	7/9 ambiguous; near crop's right edge
+f129_L10	16	_6	H	second row within L10 crop begins here
+f129_L10	17	61	H	
+f129_L10	18	42	H	
+f129_L10	19	16	H	
+f129_L10	20	10	H	
+f129_L10	21	,	H	scribal comma
+f129_L10	22	2	H	
+f129_L10	23	19	H	
+f129_L10	24	60	H	
+f129_L10	25	66	H	
+f129_L10	26	_11	H	
+f129_L10	27	X	M	scribal strikethrough/correction mark over next token; not a digit shape
+f129_L10	28	66	H	
+f129_L10	29	20	H	
+f129_L10	30	66	H	
+f129_L10	31	61	H	
+f129_L10	32	7	H	
+f129_L10	33	21	H	
+f129_L10	34	20	H	
+f129_L10	35	23	H	
+f129_L10	36	_12	H	
+f129_L10	37	18	H	
+f129_L10	38	32	H	
+f129_L10	39	_0	M	"overline single digit ""0"", near crop's right edge"
+f129_L11	1	7	H	
+f129_L11	2	8	H	
+f129_L11	3	67	H	
+f129_L11	4	72	H	
+f129_L11	5	20	H	
+f129_L11	6	19	H	
+f129_L11	7	_11	H	
+f129_L11	8	20	H	
+f129_L11	9	23	H	
+f129_L11	10	_12	H	
+f129_L11	11	20	H	
+f129_L11	12	_16	H	
+f129_L11	13	18	H	
+f129_L11	14	19	H	
+f129_L11	15	76	M	7/9 ambiguous
+f129_L11	16	30	H	
+f129_L11	17	4	H	
+f129_L11	18	51	H	
+f129_L11	19	24	M	small ink blot/correction touching this digit
+f129_L11	20	31	H	
+f129_L11	21	19	H	
+f129_L12	1	_21	H	
+f129_L12	2	66	H	
+f129_L12	3	20	H	
+f129_L12	4	15	H	
+f129_L12	5	18	H	
+f129_L12	6	_21	H	
+f129_L12	7	16	H	
+f129_L12	8	62	H	
+f129_L12	9	46	H	
+f129_L12	10	18	H	
+f129_L12	11	31	H	
+f129_L12	12	15	H	
+f129_L12	13	16	H	
+f129_L12	14	71	H	
+f129_L12	15	_16	H	
+f129_L12	16	_13	H	
+f129_L12	17	15	H	
+f129_L12	18	19	H	
+f129_L12	19	_0	M	"overline single digit ""0"""
+f129_L12	20	20	H	
+f129_L12	21	—	H	scribal dash ending the line
+f129_L13	1	_7	H	
+f129_L13	2	20	H	
+f129_L13	3	_17	H	
+f129_L13	4	5	H	
+f129_L13	5	61	H	
+f129_L13	6	_6	H	
+f129_L13	7	_28	H	
+f129_L13	8	7	H	
+f129_L13	9	20	H	
+f129_L13	10	71	H	
+f129_L13	11	.	M	"small dot between ""71"" and ""18"""
+f129_L13	12	18	H	
+f129_L13	13	2	H	
+f129_L13	14	7	H	
+f129_L13	15	20	H	
+f129_L13	16	_17	H	
+f129_L13	17	2	H	
+f129_L13	18	10	H	
+f129_L13	19	33	H	
+f129_L13	20	18	H	
+f129_L13	21	73	H	
+f129_L13	22	.	M	"small dot between ""73"" and ""15"""
+f129_L13	23	15	H	
+f129_L13	24	20	H	
+f129_L14	1	15	H	
+f129_L14	2	18	H	
+f129_L14	3	91	M	"could be read as ""21""; cursive ambiguous"
+f129_L14	4	,	H	scribal comma
+f129_L14	5	_7	H	
+f129_L14	6	6	H	
+f129_L14	7	_26	H	
+f129_L14	8	10	H	
+f129_L14	9	6	H	
+f129_L14	10	7	H	
+f129_L14	11	20	H	
+f129_L14	12	20	H	
+f129_L14	13	9	H	
+f129_L14	14	6	H	
+f129_L14	15	6	H	
+f129_L14	16	23	H	
+f129_L14	17	23	H	
+f129_L14	18	62	H	
+f129_L14	19	_6	H	
+f129_L14	20	21	H	
+f129_L14	21	_23	H	
+f129_L14	22	7	H	
+f129_L14	23	20	H	
+f129_L15	1	[blank]	H	crop shows only blank paper/fold, no ink; likely bottom margin over-segmented as a line
+f129_L16	1	[blank]	H	crop shows only blank paper/fold, no ink; page-edge margin
+f130a_L01	1	_28	H	
+f130a_L01	2	10	H	
+f130a_L01	3	_18	H	
+f130a_L01	4	15	H	
+f130a_L01	5	18	H	
+f130a_L01	6	20	H	
+f130a_L01	7	6	M	small stray mark beside this digit
+f130a_L01	8	_1	M	"overline single digit, could be ""_7"""
+f130a_L01	9	71	H	
+f130a_L01	10	19	H	
+f130a_L01	11	_11	H	
+f130a_L01	12	21	H	
+f130a_L01	13	_6	H	
+f130a_L01	14	16	H	
+f130a_L01	15	61	H	
+f130a_L01	16	_1	M	"overline single digit, could be ""_7"""
+f130a_L01	17	7	H	
+f130a_L01	18	19	H	
+f130a_L01	19	2	H	
+f130a_L01	20	20	M	near crop's right edge
+f130a_L02	1	62	H	
+f130a_L02	2	18	H	
+f130a_L02	3	42	H	
+f130a_L02	4	62	H	
+f130a_L02	5	70	H	
+f130a_L02	6	_22	H	
+f130a_L02	7	24	H	
+f130a_L02	8	18	H	
+f130a_L02	9	79	H	
+f130a_L02	10	80	H	
+f130a_L02	11	_3	M	overline single digit, ambiguous shape
+f130a_L02	12	7	H	
+f130a_L02	13	21	H	
+f130a_L02	14	_16	H	
+f130a_L02	15	65	H	
+f130a_L02	16	_12	H	
+f130a_L02	17	2	H	
+f130a_L02	18	21	M	cut at crop's right edge, illegible remainder possible beyond
+f130a_L03	1	7	H	
+f130a_L03	2	20	H	
+f130a_L03	3	60	H	
+f130a_L03	4	_1	H	
+f130a_L03	5	2	H	
+f130a_L03	6	_18	H	
+f130a_L03	7	18	H	
+f130a_L03	8	71	H	
+f130a_L03	9	,	H	scribal comma
+f130a_L03	10	2	H	
+f130a_L03	11	19	H	
+f130a_L03	12	_7	H	
+f130a_L03	13	7	H	
+f130a_L03	14	21	H	
+f130a_L03	15	61	H	
+f130a_L03	16	_21	H	
+f130a_L03	17	17	H	
+f130a_L03	18	23	H	
+f130a_L03	19	20	H	
+f130a_L03	20	,	H	scribal comma
+f130a_L03	21	2	M	cut at crop's right edge
+f130a_L04	1	71	H	
+f130a_L04	2	20	H	
+f130a_L04	3	19	H	
+f130a_L04	4	_70	H	
+f130a_L04	5	15	M	"written close to next digit; part of a run read as ""154"""
+f130a_L04	6	4	M	"see above, split from ""154"""
+f130a_L04	7	43	H	
+f130a_L04	8	18	H	
+f130a_L04	9	36	H	
+f130a_L04	10	66	H	
+f130a_L04	11	18	H	
+f130a_L04	12	19	H	
+f130a_L04	13	_6	H	
+f130a_L04	14	63	H	
+f130a_L04	15	18	H	
+f130a_L04	16	_4	H	
+f130a_L04	17	5	H	
+f130a_L04	18	62	M	cut at crop's right edge
+f130a_L05	1	65	H	
+f130a_L05	2	35	H	
+f130a_L05	3	68	H	
+f130a_L05	4	15	H	
+f130a_L05	5	_16	H	
+f130a_L05	6	16	H	
+f130a_L05	7	61	H	
+f130a_L05	8	6	H	
+f130a_L05	9	_11	H	
+f130a_L05	10	18	H	
+f130a_L05	11	39	H	
+f130a_L05	12	19	H	
+f130a_L05	13	_11	H	
+f130a_L05	14	20	H	
+f130a_L05	15	65	H	
+f130a_L05	16	7	H	
+f130a_L05	17	_25	H	
+f130a_L05	18	15	M	near crop's right edge
+f130a_L06	1	24	H	
+f130a_L06	2	2	H	
+f130a_L06	3	42	H	
+f130a_L06	4	31	H	
+f130a_L06	5	6	H	
+f130a_L06	6	65	H	
+f130a_L06	7	35	H	
+f130a_L06	8	68	H	
+f130a_L06	9	15	H	
+f130a_L06	10	_16	H	
+f130a_L06	11	16	H	
+f130a_L06	12	61	H	
+f130a_L06	13	78	H	
+f130a_L06	14	21	H	
+f130a_L06	15	61	H	
+f130a_L06	16	6	H	
+f130a_L06	17	18	M	near crop's right edge
+f130a_L07	1	15	H	
+f130a_L07	2	_18	H	
+f130a_L07	3	2	H	
+f130a_L07	4	7	H	
+f130a_L07	5	21	H	
+f130a_L07	6	;	H	punctuation ending the numeral run
+f130a_L07	7	[Desja ie vous ay mandé ce qui]	C	clear-text phrase; a further word begins and is cut at the crop's right edge, not transcribed
+f130b_L01	1	[presupposé]	C	clear-text word
+f130b_L01	2	_6	H	
+f130b_L01	3	31	H	
+f130b_L01	4	_7	H	
+f130b_L01	5	16	H	
+f130b_L01	6	37	H	
+f130b_L01	7	19	H	
+f130b_L01	8	36	H	
+f130b_L01	9	60	H	
+f130b_L01	10	66	H	
+f130b_L01	11	20	H	
+f130b_L01	12	15	H	
+f130b_L01	13	18	H	
+f130b_L01	14	_11	M	cut at crop's right edge
+f130b_L02	1	62	H	
+f130b_L02	2	46	H	
+f130b_L02	3	18	H	
+f130b_L02	4	31	H	
+f130b_L02	5	36	H	
+f130b_L02	6	18	H	
+f130b_L02	7	19	H	
+f130b_L02	8	_11	H	
+f130b_L02	9	61	H	
+f130b_L02	10	42	H	
+f130b_L02	11	16	H	
+f130b_L02	12	10	H	
+f130b_L02	13	2	H	
+f130b_L02	14	19	H	
+f130b_L02	15	60	H	
+f130b_L02	16	66	H	
+f130b_L02	17	_11	M	cut at crop's right edge
+f130b_L03	1	15	H	
+f130b_L03	2	19	H	
+f130b_L03	3	26	H	
+f130b_L03	4	_12	H	
+f130b_L03	5	_20	H	
+f130b_L03	6	5	H	
+f130b_L03	7	61	H	
+f130b_L03	8	_17	H	
+f130b_L03	9	61	H	
+f130b_L03	10	65	H	
+f130b_L03	11	21	H	
+f130b_L03	12	_7	H	
+f130b_L03	13	20	H	
+f130b_L03	14	36	H	
+f130b_L03	15	_2	H	
+f130b_L03	16	6	H	
+f130b_L03	17	71	H	
+f130b_L03	18	10	M	cut at crop's right edge
+f130b_L04	1	36	H	
+f130b_L04	2	66	H	
+f130b_L04	3	7	H	
+f130b_L04	4	_11	H	
+f130b_L04	5	_10	H	
+f130b_L04	6	4	H	
+f130b_L04	7	51	H	
+f130b_L04	8	2	H	
+f130b_L04	9	36	H	
+f130b_L04	10	20	H	
+f130b_L04	11	61	M	ink blot touching this digit
+f130b_L04	12	1	H	
+f130b_L04	13	40	H	
+f130b_L04	14	15	H	
+f130b_L04	15	_11	H	
+f130b_L04	16	20	H	
+f130b_L04	17	24	H	
+f130b_L04	18	7	H	
+f130b_L05	1	2	H	
+f130b_L05	2	18	H	
+f130b_L05	3	_19	H	
+f130b_L05	4	21	H	
+f130b_L05	5	_7	H	
+f130b_L05	6	61	H	
+f130b_L05	7	80	H	
+f130b_L05	8	_16	H	
+f130b_L05	9	10	H	
+f130b_L05	10	_7	H	
+f130b_L05	11	7	H	
+f130b_L05	12	21	H	
+f130b_L05	13	_16	H	
+f130b_L05	14	18	H	
+f130b_L05	15	36	H	
+f130b_L05	16	4	H	
+f130b_L05	17	50	H	
+f130b_L05	18	21	M	cut at crop's right edge
+f130b_L06	1	21	H	
+f130b_L06	2	_8	H	
+f130b_L06	3	18	H	
+f130b_L06	4	59	H	
+f130b_L06	5	46	H	
+f130b_L06	6	2	H	
+f130b_L06	7	18	H	
+f130b_L06	8	_1	H	
+f130b_L06	9	18	H	
+f130b_L06	10	_16	H	
+f130b_L06	11	2	H	
+f130b_L06	12	23	H	
+f130b_L06	13	64	H	
+f130b_L06	14	20	H	
+f130b_L06	15	_23	H	
+f130b_L06	16	20	H	
+f130b_L06	17	19	M	cut at crop's right edge
+f130b_L07	1	37	H	
+f130b_L07	2	_26	H	
+f130b_L07	3	21	H	
+f130b_L07	4	_22	H	
+f130b_L07	5	21	H	
+f130b_L07	6	_6	H	
+f130b_L07	7	36	H	
+f130b_L07	8	20	H	
+f130b_L07	9	9	H	
+f130b_L07	10	6	H	
+f130b_L07	11	23	H	
+f130b_L07	12	23	H	
+f130b_L07	13	62	H	
+f130b_L07	14	_6	H	
+f130b_L07	15	21	H	
+f130b_L07	16	,	M	followed by a cut, illegible fragment (possibly start of a clear-text word) at the crop's right edge, not transcribed

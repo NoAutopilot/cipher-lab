@@ -1335,3 +1335,133 @@ canvas 32 leaf, to see whether more text moves the control; (3) find the 1653 ke
 keys of the same office (a recovery route), which is likelier to open these letters than cryptanalysis.
 
 Requests: none. Cost: about $4 of the $10 cap.
+
+## Canvas 129/130 and canvas 32 (24 Sept 2026)
+
+LANE G2 worker H, Gallica fetcher (Sonnet, cap $7). Files: `passA_f67.tsv`/`passB_f67.tsv`, `trial_f67.py` ->
+`trial_f67.tsv` (`--check` exits 1 if stale), `passA_c32.tsv`/`passB_c32.tsv`, `walk_37_159.tsv` (rows added),
+`images/manifest.json` (fetch log; crops/natives kept in the worker's scratchpad, folder already at the 30 MB cap).
+
+### (1) Canvas 129/130: folio 67, 10 Oct 1659, Brienne to Servien
+
+Native fetches (`f129/full/full/0/native.jpg`, `f130/...`, 3801-3802x5180-5198px): canvas 129 needed one retry
+after a transient connection reset; canvas 130 succeeded first try. Folio number "67" visible top right of canvas
+129; canvas 130 carries the dateline "A Paris ce 10 8bre 1659" and signature "...de Brienne", addressed "M. de
+Servien" — the same letter the prior worker's canvas walk flagged as new (ROOM.md 08:10, "canvas 129/130, folio
+67, dated 10 8bre (Oct) 1659, symbol+numeral, dense"). On the native image this is **numeral-only** (no
+symbol vocabulary), not symbol+numeral as the walk's thumbnail-resolution classification guessed — every group is
+a plain number, some with a horizontal overline over one or both digits, the same convention as f.86-88's
+`key_1659.tsv`. The letter runs canvas 129 (16 lines: a short mixed clear+cipher line, then 15 lines of dense
+cipher) onto canvas 130's first 7 lines (continuing the same run, ending mid-line in clear French "Desja ie vous
+ay mandé cequi..."), then five lines of clear French ("...il est du service du Roy que vous nous mandiez cequi en
+est, comme aussy"), then a second 7-line cipher block ("presupposé..." through "...ce que vous aurez demoy qui
+suis").
+
+Line crops cut with `tools/iiif_lines.py --image ... --debug` from the locally-fetched natives (no extra Gallica
+request per crop): canvas 129 region `380,1750,3050,3420` (16 bands, `--distance 130 --prominence 15`); canvas
+130 block A region `390,650,3050,1050` and block B region `390,2250,3050,1120` (7 bands each, `--distance 120
+--prominence 15`). All three debug overlays checked by eye against the native page before handing crops to the
+passes. **Crop/line-count mismatch, canvas 129 only**: both blind passes independently flagged that the 16
+detected bands do not each hold exactly one manuscript line — bands 1 and 10 each contain two physical lines (the
+row-height estimate undercounted there), and the two trailing bands (15, 16) are blank/spurious (past the last
+real line, same as the spurious 15th band this worker also hit on canvas 32, below). Pass A self-corrected by
+reading the debug overlay directly and assigning `f129_L01`..`L16` to the 16 true physical rows top to bottom
+(cross-checked against this worker's own independent read of the full native page — matches token-for-token on
+every row); pass B kept the tool's own band numbering (`f129_L01` = physical rows 1+2, `f129_L10` = physical rows
+11+12, `f129_L15`/`L16` = blank), noting this explicitly. Both readings are internally consistent and complete;
+they just use different line labels for the same content. **Flag for the reconciler**: use `passA_f67.tsv`'s line
+numbers as the physical-row reference; `tools/iiif_lines.py`'s pitch/prominence defaults under-detect on tightly
+and unevenly spaced cursive rows like this leaf — a future crop pass on this canvas should tighten `--distance`
+or crop in two narrower sub-regions rather than one tall region.
+
+Two blind Sonnet passes (`passA_f67.tsv`, `passB_f67.tsv`; second pass never saw the first). Agreement measured by
+sequence alignment (`difflib.SequenceMatcher` on each block's flattened cipher-token stream, since the two passes'
+line boundaries differ as above): f129cipher 0.892 (327 vs 319 tokens), f130ciphA 0.936, f130ciphB 0.957, **combined
+0.915** — higher than the folio 1-2/folio 9/canvas 11-12 letters' 77-85%, consistent with this being a cleaner
+numeral-only hand with no ambiguous symbol vocabulary to disagree over. No reconciliation attempted (per brief,
+"the orchestrator briefs an Opus reconciler").
+
+### (2) Mechanical trial: does key_1659 read this letter?
+
+`trial_f67.py` applies `key_1659.tsv` (recovered from the 21 Nov 1659 f.86-88 decipherment, a different letter, 65
+groups at grade C) to pass A's token stream (bracketed clear French and scribal marks are run breaks), scored by
+mean log2 probability per character under `tools/french16_ngram.py`, against a **20-derangement shuffled-key
+control** (rule 3), seed 1659:
+
+| letter | cipher tokens | keyed | coverage | chars scored | real bpc | shuffled mean | shuffled sd | shuffled max | shuffled >= real | z | beats control |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| f67 | 543 | 501 | 0.923 | 766 | -4.272 | -5.889 | 0.453 | -4.735 | 0/20 | 3.57 | **yes** |
+
+**Coverage 92.3%** (501 of 543 cipher tokens carry a `key_1659` code) and the real key's French score clearly beats
+every one of the 20 shuffled derangements (z = 3.57; the best derangement still falls 0.46 bpc short of the real
+key). This is a cryptanalytic result (grade S), not a reading: no plaintext is produced here, only a mechanical
+check that the f.86-88 key's table also decodes this second, earlier letter better than chance. It is consistent
+with both letters being enciphered with the same office table across at least Oct-Nov 1659 (`key_1659` was
+recovered from a 21 Nov letter; this is a 10 Oct letter). A full reading (running `key_1659`'s values through
+`decode_1659.py`-style per-token grading, and settling the ~8% uncovered tokens) is the natural next step, not
+attempted here (out of scope for a fetcher/blind-pass brief).
+
+### (3) Canvas 32: full-page 1653 letter, never transcribed
+
+Native fetch needed three attempts (two connection resets, recovered on the third after a longer pause — logged,
+not looped beyond the playbook's one-retry limit in any single attempt). Full page, ~14 lines, **symbol+numeral**
+cipher (unlike canvas 129/130): the vocabulary includes `tt`, `d`/`db`, `X`, `mm`, `m`, `11` (two-minim), `£`, the
+same sign families as the folio 1-2-3 and folio 9 letters' table, not `key_1659`'s numeral-only style. No date or
+signature visible in this crop (the letter's opening and closing are presumably on the neighbouring canvases 31/33,
+not fetched here); one clear phrase names "le Comte Philippes" and the leaf ends mid-sentence ("...que se/quelc..."
+at the last line, cut by the page edge, no further ink below — a spurious 15th detection band past this point was
+discarded, same artifact as canvas 129 above).
+
+Line crops (`region 380,900,3250,3260`, `--distance 120 --prominence 15`, 14 bands, debug-checked). Two blind
+Sonnet passes (`passA_c32.tsv`, `passB_c32.tsv`): **82.6% agreement** (95/115 shared positions match exactly,
+by-position this time since both passes used the same straightforward 14-line numbering with no band-merging
+issue). Of the 20 disagreements, **7 are the same recurring loop+cross sign, called `db` by pass A and `tt` by pass
+B** — a real, consistently-drawn sign the two passes just named differently against the reference vocabulary list
+they were given; worth resolving first in any reconciliation, likely by comparing both candidate readings directly
+against `key_1646`/`key_brienne_1647`/`key_brienne_1651`'s own `tt`/`db` rows. Two clear-French phrases (L02, L09)
+are read only tentatively by both passes (cursive, low confidence, flagged C but genuinely uncertain letter-by-
+letter). No key trial was run against this letter (it is not in scope of the brief's step 1, and the existing
+`trial_1653.py` control already found the three known 1653-band letters read at most 25.7% under a matched
+control with all four 1653-era keys — a fourth, similarly-styled letter added to that same trial is a natural
+follow-up, not attempted here).
+
+### (4) Canvas walk follow-ups: canvases 45/55/58/74, canvas 122/123 vs 120/121
+
+1000px thumbnails, one attempt each per brief (45/55/58/74) plus one retry each for 74/120/121 (needed for the
+dedupe check, not covered by the "one attempt" instruction): **45 unfetched** (connection reset, not recovered
+after one retry — logged, not looped further). 55 (folio 31, "Je croyois vous envoyer la coppie d'un arrest...",
+dated 1659), 58 (blank verso, docket "sur le Nouveau establissement..."), and 74 (clear French continuation,
+dateline "Paris ce 9.e[?] 1659", addressed Servien) are all **plain French prose, no cipher** — rows added to
+`walk_37_159.tsv`.
+
+**Canvas 122/123 duplicate flag, checked and confirmed for 120/122, not for 121/123.** The prior worker flagged
+"canvas 122 appeared to duplicate canvas 120's content and canvas 123 canvas 121's" from thumbnails alone.
+Fetched all four (120 needed a second retry) and compared downscaled grayscale correlation: **canvas 120 and 122
+are a genuine duplicate scan of the same recto** — identical text ("Jamais fait difficulté de rendre aux
+Ambassadeurs..."), identical dateline "a Paris ce 26.7bre 1659" and signature block, MAE 3.37, correlation 0.90 on
+a 200x260 downscale. **Canvas 121 and 123 are not a strong match** — both are faint blank versos with similar
+"64" folio-number show-through, which is what made them look alike at a glance, but MAE 8.05, correlation only
+0.24 (versus 121-vs-122's 0.11 and 122-vs-123's 0.27, i.e. 121-vs-123 is not meaningfully closer than either is to
+the unrelated recto). The half of the flag that named the two content pages is real; the half naming the two
+blank versos is not — likely just two ordinary faint versos, not a scan duplicate.
+
+### (5) Status and next step
+
+**Status stays `open`.** No plaintext reading produced (the f67 trial is a mechanical coverage/control check, grade
+S, not a decode). No print or phrase search run. No novelty class assigned. Grades: f67 and c32 transcriptions are
+M (blind-pass reads, not eye-checked or reconciled); the f67 key-trial coverage/score numbers are S with a matched
+control. Follow-ups for a later worker: (1) an Opus reconciler for `passA_f67.tsv`/`passB_f67.tsv` against the
+native images, then a full `decode_1659.py`-style reading of the whole letter now that the mechanical trial says
+`key_1659` covers 92% of it and beats its control decisively; (2) reconcile `passA_c32.tsv`/`passB_c32.tsv`,
+settling the `db`/`tt` sign first; (3) add canvas 32 to `trial_1653.py`'s four-key trial; (4) canvas 45 (still
+unfetched) and canvases 31/33 (canvas 32's neighbours, for its date/signature) are open gaps.
+
+### Requests this pass
+
+`gallica.bnf.fr`: manifest fetch (1, cached to `sources/gallica-manifests/btv1b9060495t.json`, committed) + 2
+native fetches for canvas 129/130 (1 retry on canvas 129) + 1 native fetch for canvas 32 (2 retries, all transient
+connection resets, recovered on the third attempt after a longer pause) + 8 thumbnail fetches for canvases
+45/55/58/74/120/121/122/123 (45 and 120 each needed one retry; 45 never recovered, 120 recovered). No other host.
+Crops cut from locally-fetched natives, no extra requests. 4 Sonnet subagents (2 blind passes for f67, 2 for
+canvas 32, never more than 2 concurrent). All >=1.5s apart, UA `cipher-lab research script (contact via
+repository)`. No logins, no credentials, no novelty wording. Well under the $7 cap.

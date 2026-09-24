@@ -1,0 +1,118 @@
+line	pos	group	conf	note
+L01	1	m	H	
+L01	2	_11	H	
+L01	3	27	H	
+L01	4	_11	H	
+L01	5	db	M	loop with a barred/crossed ascender, read as db (tt fused to looped d) per convention
+L01	6	3	H	
+L01	7	_11	H	
+L01	8	,	H	
+L01	9	91	H	
+L01	10	_40	H	
+L01	11	9	M	digit 9 with a short stroke beneath; possibly just the digit's natural tail, possibly a separate mark
+L01	12	tt	M	sign cut off at right edge of crop, only partially visible
+L02	1	60	H	
+L02	2	4	H	
+L02	3	50	H	"5 written in a cursive form resembling ""s"""
+L02	4	20	H	
+L02	5	_6	H	
+L02	6	d	M	compact loop-with-ascender sign; could instead be the opening stroke of the French word that follows
+L02	7	[sans se ressouvenir]	C	"cursive reading uncertain throughout; ductus most consistent with ""sans se ressouvenir"" (without recalling it) but individual letters hard to confirm"
+L03	1	[des obligations desquelles on estoit redeva.]	C	"opening word could be ""des"" or ""deur""; ""redeva."" is likely a scribal abbreviation for ""redevable"", period retained as written"
+L04	1	[a sa Couronne]	C	"written ""Couvonne"" cursively; r/v hard to distinguish in this hand"
+L04	2	11	H	
+L04	3	.	H	small scribal dot
+L04	4	9	H	
+L04	5	6	H	
+L04	6	61	H	
+L04	7	_20	M	"the ""2"" is written in an unusual cursive form resembling a script ""a"""
+L04	8	tt	H	
+L04	9	_11	H	
+L04	10	?	M	faint partial mark at right edge of crop, insufficient ink visible to identify shape
+L05	1	X	H	
+L05	2	tt	M	
+L05	3	11	H	
+L05	4	_22	M	"the ""2""s written in the same unusual script-""a""-like cursive form as L04"
+L05	5	61	H	
+L05	6	66	H	
+L05	7	tt	M	
+L05	8	mm	H	
+L05	9	.	M	small dot, could be scribal punctuation or ink artifact
+L05	10	_9	M	
+L05	11	tt	M	sign cut off at right edge of crop, only partially visible
+L06	1	36	H	
+L06	2	66	H	
+L06	3	11	H	
+L06	4	_11	H	
+L06	5	_13	H	
+L06	6	X	H	
+L06	7	mm	H	
+L06	8	d	M	same compact loop-with-ascender sign as L02/L08/L10/L13
+L06	9	£	M	hook/loop flourish at line end, tentatively read as crossed looped L per convention
+L07	1	_9	H	
+L07	2	_16	H	
+L07	3	m	H	
+L07	4	_51	H	
+L07	5	97	H	
+L07	6	tt	H	
+L07	7	93	H	
+L07	8	tt	H	
+L07	9	_26	H	
+L07	10	—	H	dash at line end
+L08	1	72	H	
+L08	2	d	H	
+L08	3	tt	H	
+L08	4	20	H	
+L08	5	,	H	
+L08	6	_6	H	
+L08	7	[il ne fault point que]	C	"""qu"" cut at right edge of crop, word likely continues ""que"" or ""qu'il"""
+L09	1	[Je suppose sy nous ne nous y portrons p]	C	"cursive uncertain throughout; ""sy"" = period spelling of ""si""; ""portrons"" possibly ""porterons""; line cut off mid-word at right edge"
+L10	1	¨4	H	diaeresis (two dots) over the 4
+L10	2	m	H	
+L10	3	61	H	
+L10	4	tt	H	
+L10	5	_23	H	
+L10	6	11	H	
+L10	7	21	H	
+L10	8	37	H	
+L10	9	d	M	
+L10	10	11	H	
+L10	11	m	M	final sign cut off at right edge of crop; an overline and partial digit visible after it but not legible
+L11	1	4	H	
+L11	2	60	H	
+L11	3	,	H	
+L11	4	23	H	
+L11	5	_11	H	
+L11	6	3	H	
+L11	7	2	H	
+L11	8	_2	H	
+L11	9	_20	H	
+L11	10	_52	H	
+L11	11	_17	M	last digit(s) uncertain, near right edge of crop
+L12	1	73	H	
+L12	2	11	H	
+L12	3	tt	H	
+L12	4	,	H	
+L12	5	_50	H	
+L12	6	_13	H	
+L12	7	X	H	
+L12	8	mm	H	
+L12	9	_41	H	
+L12	10	11	H	
+L12	11	¨4	H	diaeresis over the 4
+L13	1	_19	H	
+L13	2	(4)	H	digit inside a circle/parenthesis mark
+L13	3	_d	M	overline over a looped-d sign; unusual combination, flagged
+L13	4	£	M	"shape resembles a crossed loop; could be £ or a compact ""13"""
+L13	5	d	M	
+L13	6	_11	H	
+L13	7	d	M	
+L13	8	_49	H	
+L13	9	35	H	
+L13	10	11	H	
+L13	11	—	H	dash at line end
+L14	1	mm	H	
+L14	2	_11	H	
+L14	3	20	H	
+L14	4	.	H	
+L14	5	[le Comte Philippes quelc]	C	"word cut off at right edge of crop, likely continues (e.g. ""quelque"")"

@@ -118,3 +118,7 @@ canvas	folio	date	sender_recipient	cipher_extent	cipher_kind	decipherment	note
 157	81	-	-	none	none	n	blank recto, faint ghost text
 158	-	-	-	none	none	n	blank verso
 159	82	-	Brienne/Servien	none	none	n	plain text, opens discussing "traitté de la paix avec Espagne" and "mariage avec l'Infante" - matches the previously-flagged non-cipher Peace-of-the-Pyrenees band starting here
+45	-	-	-	unfetched	-	n	connection reset, one retry not recovered (2 attempts total); not read
+55	31	1659	Brienne/Servien	none	none	n	clear French, arrest of the King's council, no cipher
+58	-	-	-	none	none	n	blank verso, docket "sur le Nouveau establissement...les Douanies de..."
+74	-	1659	Brienne/Servien	none	none	n	clear French continuation, dateline "Paris ce 9.e[?] 1659"
