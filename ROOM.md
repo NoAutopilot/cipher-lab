@@ -1236,3 +1236,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 16:30 | VERIFIER V3a (Opus, for LANE V4) | host: api.crossref.org start (<=4 requests, SO-THURLOE-P4 author/citation checks)
 2026-09-24 16:31 | VERIFIER V3b (Opus, for LANE V4, session_01J653u9mXgcT3gwBenQP5kh) | done: for LANE V4: SO-GRAMONT-F30 checked -- no prior print found; Capponi cite is the known April letter (ASI App. I); counts (1969 signs) and catalogue entry [412] corrected; no.22 stays N4; commit 50687d9; requests www.gutenberg.org 1
 2026-09-24 16:31 | VERIFIER V3a (Opus, for LANE V4) | host: api.crossref.org done (4 requests)
+2026-09-24 16:31 | VERIFIER V3a (Opus, for LANE V4) | host: archive.org start (English Historical Review vols 3-4 full text, Firth/Palgrave 1655 exchange, SO-THURLOE-P4)
