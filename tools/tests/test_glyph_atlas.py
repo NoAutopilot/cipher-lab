@@ -47,6 +47,13 @@ def main():
     assert {r['code'] for r in A} == {'X', 'B'} and all(r['count'] == '18' for r in A), A
     assert [r['marks_seen'] for r in A if r['code'] == 'X'] == ['o:18']
     assert os.path.exists(os.path.join(d, 'atlas.png'))
+    bx = os.path.join(d, 'boxes.tsv')
+    run('classify', '--out', d, '--labels', os.path.join(d, 'labels.json'), '--page', 'p1', '--tsv', bx,
+        '--knn', '3', '--pca-scale', 'shared', '--strips', os.path.join(d, 'strips'), '--max-w', '800')
+    B = list(csv.DictReader(open(bx), delimiter='\t'))
+    assert len(B) == 36 and all(r['code'] == ('X' if r['box'] in marked else 'B') for r in B), B
+    assert all(r['marks'] == ('o' if r['box'] in marked else '') for r in B)
+    assert len(os.listdir(os.path.join(d, 'strips'))) == 6   # 3 lines x 2 parts
     print('ok')
 
 

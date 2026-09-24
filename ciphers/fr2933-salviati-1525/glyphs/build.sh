@@ -9,3 +9,5 @@ python3 $T cluster --out glyphs --k 64 --k-marks 20 --split s52:3 --split s3:2 -
   --split m12:2 --split s21:2 --split s45:2
 python3 $T atlas --out glyphs --labels glyphs/labels.json --per 10 --prefer f54r
 python3 -c "from PIL import Image; im=Image.open('glyphs/atlas.png'); w,h=im.size; half=(h//72//2)*72; im.crop((0,0,w,half)).save('glyphs/atlas_part1.png'); im.crop((0,half,w,h)).save('glyphs/atlas_part2.png')"
+# LANE R4 B (24 Sept 2026): script-counted box list and numbered strips for f.54r against the revised atlas
+python3 $T classify --out glyphs --labels glyphs/labels.json --page f54r --tsv f54r_boxes.tsv --strips strips

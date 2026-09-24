@@ -4,6 +4,7 @@
   python3 tools/glyph_atlas.py segment --page NAME=IMAGE[@x0,y0,x1,y1] [--page ...] --out DIR [--debug]
   python3 tools/glyph_atlas.py cluster --out DIR [--k 60] [--k-marks 16]
   python3 tools/glyph_atlas.py atlas --out DIR --labels labels.json [--per 10] [--prefer PAGE]
+  python3 tools/glyph_atlas.py classify --out DIR --labels labels.json --page PAGE --tsv boxes.tsv [--strips DIR2]
 
 Generalises ciphers/dupuy452-carpi-1520/glyphs/ (segment.py, cluster.py, montage.py: page-specific there) for any
 page set, and adds what a mixed page needs (fr.2933 Salviati 1525): small marks written ABOVE a sign (tilde, #,
@@ -25,6 +26,13 @@ atlas    labels.json {"signs": {"<cluster>": "CODE"|"_"}, "marks": {"<cluster>":
          Writes DIR/atlas.tsv (code, desc, count, pages, exemplar sign ids, attribute marks seen) and DIR/atlas.png:
          one row per code, the code and its count, then --per exemplars cut from the grey page with context margin.
 
+classify Every box of one page against the labelled boxes of ALL pages (the atlas, labels.json incl. "override"):
+         same features as cluster, k nearest labelled boxes (--knn 5, the box itself excluded), distance-weighted vote.
+         '_' (plain script, noise) is a class like any code. Writes one row per box in reading order: line, box id, bbox,
+         script code, d1 (nearest distance), vote share, the cluster's own code, marks above (their codes, '?' for an
+         unlabelled mark, joined by '|'). --strips DIR2 renders one image per line (cut in parts under --max-w px) with
+         each box outlined and its position number printed under it, for passes that confirm or correct each box.
+         A script-counted box list removes the "one pass has a sign the other lacks" disagreements (fr.2933, 24 Sept).
 Test: python3 tools/tests/test_glyph_atlas.py (offline: a synthetic page with two sign shapes, one carrying a mark).
 """
 import argparse, collections, csv, json, os, sys
@@ -303,6 +311,85 @@ def cmd_atlas(a):
     print(f'{len(rows_out)} codes, {sum(int(r[2]) for r in rows_out)} signs labelled')
 
 
+def cmd_classify(a):
+    from sklearn.neighbors import NearestNeighbors
+    L = json.load(open(a.labels))
+    over = L.get('override', {})
+    rows = read(a.out, 'signs.tsv')
+    mrows = {r['mid']: r for r in read(a.out, 'marks.tsv')}
+    cl = {(r['kind'], r['id']): r['cluster'] for r in read(a.out, 'clusters.tsv')}
+    bm = np.load(os.path.join(a.out, 'bitmaps.npz'))['signs']
+    X = feats(bm, rows, pca_scale=a.pca_scale)
+    lab = np.array([over.get(r['sid'], L['signs'].get(cl.get(('sign', r['sid'])), '_')) for r in rows], dtype=object)
+    mlab = {m: over.get(m, L['marks'].get(cl.get(('mark', m)), '_')) for m in mrows}
+    tgt = [i for i, r in enumerate(rows) if r['page'] == a.page]
+    nn = NearestNeighbors(n_neighbors=a.knn + 1).fit(X)
+    d, ix = nn.kneighbors(X[tgt])
+    out = []
+    for n, i in enumerate(tgt):
+        dd, ii = zip(*[(x, j) for x, j in zip(d[n], ix[n]) if j != i][:a.knn])
+        votes = collections.Counter()
+        for x, j in zip(dd, ii):
+            votes[lab[j]] += 1 / (x + 1e-6)
+        best = max(votes, key=votes.get)
+        r = rows[i]
+        mk = '|'.join(('?' if mlab.get(m, '_') == '_' else mlab[m]) for m in r['marks'].split('|') if m)
+        out.append(dict(line=int(r['line']), box=r['sid'], pos=int(r['pos']), x=int(r['x']), y=int(r['y']),
+                        w=int(r['w']), h=int(r['h']), code=best, dist=f'{dd[0]:.3f}',
+                        share=f'{votes[best] / sum(votes.values()):.2f}', cluster_code=lab[i], marks=mk))
+    out.sort(key=lambda r: (r['line'], r['pos']))
+    cols = ['line', 'box', 'pos', 'x', 'y', 'w', 'h', 'code', 'dist', 'share', 'cluster_code', 'marks']
+    with open(a.tsv, 'w') as f:
+        f.write('\t'.join(cols) + '\n')
+        for r in out:
+            f.write('\t'.join(str(r[c]) for c in cols) + '\n')
+    agree = sum(r['code'] == r['cluster_code'] for r in out)
+    print(f'{a.page}: {len(out)} boxes classified; kNN code = cluster code for {agree}; '
+          f'{sum(r["code"] != "_" for r in out)} cipher codes')
+    if a.strips:
+        strips(a, out, [m for m in mrows.values() if m['page'] == a.page])
+
+
+def strips(a, out, marks):
+    os.makedirs(a.strips, exist_ok=True)
+    g = cv2.imread(os.path.join(a.out, 'crops', a.page + '.png'), cv2.IMREAD_GRAYSCALE)
+    by = collections.defaultdict(list)
+    for r in out:
+        by[r['line']].append(r)
+    mby = collections.defaultdict(list)
+    for m in marks:
+        mby[int(m['line'])].append(m)
+    made = []
+    for li, bs in sorted(by.items()):
+        ys = [b['y'] for b in bs] + [int(m['y']) for m in mby[li]]
+        y0 = max(0, min(ys) - 8)
+        y1 = min(g.shape[0], max(b['y'] + b['h'] for b in bs) + 8)
+        x0 = max(0, min(b['x'] for b in bs) - 10)
+        x1 = min(g.shape[1], max(b['x'] + b['w'] for b in bs) + 10)
+        nparts = max(1, -(-(x1 - x0) // a.max_w))
+        cuts = [x0]
+        for k in range(1, nparts):          # cut between boxes near each equal share
+            target = x0 + k * (x1 - x0) / nparts
+            gap = min(bs, key=lambda b: abs(b['x'] - target))
+            cuts.append(gap['x'] - 4)
+        cuts.append(x1)
+        for k in range(nparts):
+            cx0, cx1 = cuts[k], cuts[k + 1]
+            band = cv2.cvtColor(g[y0:y1, cx0:cx1], cv2.COLOR_GRAY2BGR)
+            lab_h = 44
+            img = np.full((band.shape[0] + lab_h, band.shape[1], 3), 255, np.uint8)
+            img[:band.shape[0]] = band
+            for j, b in enumerate(b for b in bs if cx0 <= b['x'] < cx1):
+                col = (0, 0, 220) if b['pos'] % 2 else (200, 90, 0)
+                cv2.rectangle(img, (b['x'] - cx0, b['y'] - y0), (b['x'] + b['w'] - cx0, b['y'] + b['h'] - y0), col, 2)
+                cv2.putText(img, str(b['pos']), (b['x'] - cx0, band.shape[0] + 16 + 20 * (j % 2)),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, col, 2)
+            p = os.path.join(a.strips, f'{a.page}_L{li:02d}' + (f'{"abcdefgh"[k]}' if nparts > 1 else '') + '.jpg')
+            cv2.imwrite(p, img, [cv2.IMWRITE_JPEG_QUALITY, 85])
+            made.append(p)
+    print(f'{len(made)} strips -> {a.strips}')
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest='cmd', required=True)
@@ -325,8 +412,17 @@ def main(argv=None):
     t.add_argument('--labels', required=True)
     t.add_argument('--per', type=int, default=10)
     t.add_argument('--prefer', action='append', help='take exemplars from this page first (a native-resolution page)')
+    k = sp.add_parser('classify')
+    k.add_argument('--out', required=True)
+    k.add_argument('--labels', required=True)
+    k.add_argument('--page', required=True, help='the page whose boxes are classified')
+    k.add_argument('--tsv', required=True, help='output box list')
+    k.add_argument('--knn', type=int, default=5)
+    k.add_argument('--pca-scale', choices=['unit', 'shared'], default='unit')
+    k.add_argument('--strips', help='directory for per-line strips with box numbers')
+    k.add_argument('--max-w', type=int, default=1800, help='cut a line strip into parts under this width (px)')
     a = ap.parse_args(argv)
-    {'segment': cmd_segment, 'cluster': cmd_cluster, 'atlas': cmd_atlas}[a.cmd](a)
+    {'segment': cmd_segment, 'cluster': cmd_cluster, 'atlas': cmd_atlas, 'classify': cmd_classify}[a.cmd](a)
 
 
 if __name__ == '__main__':
