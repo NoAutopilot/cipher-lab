@@ -386,3 +386,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T21:19Z	session_01GX1rck53whwtCB2EsGtkfR	LANE B orchestrator, breadth (Opus, cap 0)	first cheap test per spec at $3	PROCESS memo proposals 1 and 5; brief 2026-09-24-lane-b-breadth.md
 2026-09-24T21:19Z	session_01KEy8o8dAFWTqhW3g7Z3P9C	rfetch2: r/codes 1600s book + r/puzzles confirmation (Sonnet, cap )	ciphers/reddit-oldbook-1600s/, reddit-runaway-2021/NOTES.md	brief 2026-09-24-reddit-fetch-oldbook.md
 2026-09-24T21:19Z	session_019sZuSFzkGvLsN5xH3G1zvk	Retro-apply p: PROCESS-2026-09-24 proposals 1-4 (Sonnet, cap )	CLAUDE.md pipeline, breadth.md, solver/common/transcription/scout briefs	brief 2026-09-24-retro-apply-process.md
+2026-09-24T21:21Z	session_0125YSNMcCskE21MtmQTNAFN	LANE B bKOE: koehler-1944 periodic IC (Sonnet, cap $3)	specs/koehler-1944.json	brief 2026-09-24-lane-b-koehler-1944.md
+2026-09-24T21:21Z	session_01GKDm1YQYWkciRfv4iSAiQz	LANE B bCIG: cigaret-case-1909 German MASC (Sonnet, cap $3)	specs/cigaret-case-1909.json	brief 2026-09-24-lane-b-cigaret-case-1909.md

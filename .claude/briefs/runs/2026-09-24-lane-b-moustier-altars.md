@@ -1,0 +1,6 @@
+LANE B breadth worker: moustier-altars. Sonnet (claude-sonnet-5). Cap $3.
+Common rules: `.claude/briefs/runs/2026-09-24-lane-b-common.md` (read it first; it governs).
+
+Spec: specs/moustier-altars.json. Run `cheap_tests_in_order[0]` and its matched control, nothing else. Write both numbers into the spec's `cheap_test_done` (with date, method, cost). Judge any candidate plaintext with `tools/judge_plaintext.py` and paste its output. Cap $3. Report in five lines; do not run test 2; rule 10 wording; a negative's done line carries the target and control numbers side by side.
+
+cheap_tests_in_order[0] here is the image fetch and two-pass transcription. Fetch the altar images from Schmeh's post (image URLs in sources/schmeh/posts/18-moustier.html; at most 3 requests to the post's image host, >=1.5 s apart) into ciphers/moustier-altars/images/ with manifest.json. Pass A yourself, pass B by ONE Sonnet subagent writing its TSV to disk, reconcile with tools/reconcile_passes.py; report symbol count, lines, IC, pass agreement; control: IC of a Latin and a French text at the same N. Put ciphertext.txt and NOTES.md (status open) in ciphers/moustier-altars/, and point the spec at it. Under 60% agreement: stop, report the blocker.
