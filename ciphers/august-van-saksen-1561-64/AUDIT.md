@@ -1,6 +1,6 @@
 # AUDIT: William of Orange and Elector August of Saxony, WVO 126 (16 Sept 1564), 53 (24 Oct 1561), 57 (18 Nov 1561)
 
-Classes (rule 10): **126 N3** (V3, confirmed by second audit A2); **53 N3**, **57 N3** (A2, first verification). See section A2 below.
+Classes (rule 10): **126 N4** (no prior decipherment located; V3 and A2 at N3, raised by 'N4 decision (D1)' at the end); **53 N3**, **57 N3** (A2, first verification). See section A2 below.
 
 ## V3 audit of WVO 126 (cipher postscript)
 
@@ -324,3 +324,67 @@ witness is a 20th-century copy. 57 moderate-low: the excerpt witnesses and Deman
   38 (1988) nrs. 113-115, to replace the snippet reading.
 
 Requests this session: resources.huygens.knaw.nl 4 (3 records, PDF 00053); archive.org ~27 (metadata, djvu text, advancedsearch); be-api 14; www.googleapis.com 49; dbnl.org 2; data.htrc.illinois.edu 1; catalog.hathitrust.org 2; babel.hathitrust.org 1 (Cloudflare 403, stopped); openlibrary 1; api.openalex.org 4 (429); api.crossref.org 3; semanticscholar 1 (429); HAL 1; persee 1; reichstagsakten.de 1; web search 4. No subagents.
+
+---
+
+## N4 decision (D1): WVO 126
+
+N4-decision verifier D1 for LANE V2 (Opus), 24 Sept 2026, 09:48-10:05 UTC (`date -u` read). This session did none of
+the solving, did no part of V3's or A2's audits, and did no decoding. Question: after two audits at N3 (V3, A2), is
+N4 warranted for 126, or which principal family is still missing? 53 and 57 (one audit each) are out of scope.
+
+**Answer: N4 (no prior decipherment located) for 126.** The two gaps that blocked it are either closed below or are
+unpublished witnesses, which N4 does not exclude (rule 10). The KHA minute "met een 'Zeitung'" may still hold the
+postscript's text in clear; that would make the item N0 in substance, unprinted. The safe sentence says so.
+
+### D1.1 Principal families for 126
+
+| family | covered by | with what | result |
+|---|---|---|---|
+| Groen, Archives 1st ser. t. I, Supplément, Table | V3 + A2 | DBNL full text, by date and phrase roots | no letter of 16 Sept 1564; Spanish news absent |
+| Japikse, Correspondentie van Willem den Eerste (printed) | range | stops 1561 | not applicable to 1564 |
+| Gachard, Correspondance de Guillaume le Taciturne t. 1-2 | V3 + A2 | IA full text | none |
+| Rachfahl I (1906), II.2 (1908) | V3 + A2 | IA full text | none |
+| Rachfahl II.1 (1907), the volume for 1559-64 | A2 + **D1** | HTRC Extracted Features per-page tokens, all 574 pages, twice with different vocabularies (D1 added Fehlgeburt, Ader-, purgier-, Aderlass, Wochenbett, schwanger-, Krankheit, krank). Not on IA (D1: `bub_gb_hq9AAAAAYAAJ` is vol. I again) and not full view on Google Books (D1, 2 API queries) | the only page with "Königin" plus illness vocabulary is seq 80 (Margaret of Parma's gout, Catherine de Medici; no Spain 1564). Pages with 1564 + September + Saxony (seq 555-565, notes) carry no Königin, Zeitung, Chiffre or Zettel. A token-bag negative, not a read; accepted because a paraphrase of the postscript cannot avoid "Königin" with one of those terms |
+| Kluckhohn, Briefe Friedrich des Frommen I | V3 + A2 | IA djvu grep (weak OCR) | nothing; **not principal** (Palatine holdings) |
+| von Weber, Anna Churfürstin zu Sachsen (1865) | V3 (fts) + A2 (two full texts) | IA | none |
+| Raumer, Briefe aus Paris | V3 | IA | none |
+| Anna of Saxony studies: Böttiger (Hist. Taschenbuch 1836), Kruse, Kretzschmar | unreachable (V3, A2; D1: IA title+date search for Historisches Taschenbuch 1835-37, no item) | | **not principal for 126**: they treat the 1561 marriage and Anna's later conduct, not Orange's Spanish news of 1564 |
+| Demandt, Nassau-oranische Korrespondenzen (HessJb 38) | A2 | Google Books snippets; date query 16 Sept 1564 | no regest for 126 |
+| Holding archive of the original: Dresden HStA | V3 | catalogued by Locat file, not by letter | no item-level record expected |
+| Holding archive of the minute: **KHA inventory** | **D1 (closed here)** | koninklijkeverzamelingen.nl, 1 browser load of the A11 inventory at item `a11-xivi-04-26` | "A11-XIVi-04-26. Aan August van Saksen (Sachsen), 16 september 1564. Bestanddeel, 1 stuk", no scan, "Bereik en Inhoud: Voor het digitale exemplaar en een nadere beschrijving zie ... wvo/app/brief?nr=126". No decipherment or edition noted. (WVO's "A 11/XIV I/4 nr. 26" is this item) |
+| Huygens ING / WVO record, PDF, cipher-remarks sweep | V3 + A2 | record; 5 pages; sweep | no oplossing, no bundled print |
+| KHA minute (with 'Zeitung'); Collectie Japikse copy | unreachable, unimaged | | **unpublished witnesses**: N4 does not exclude them. The minute is the one route that could lower the class |
+| IA / Google Books phrase search | V3 + A2 | 9 + 18 queries, German, French, Dutch | none |
+| HathiTrust full text | unreachable (Cloudflare, A2) | | a route, not an edition; Rachfahl II.1 reached through HTRC instead |
+| Solver repos, Cryptiana, DECODE | V3 | fresh clones, snapshots | none |
+| Open scholarship | V3 + A2 | CrossRef, HAL, Persée covered; OpenAlex, Semantic Scholar 429 (do not block N4: Danzay precedent) | nothing relevant |
+| JSTOR | queued | JSTOR-QUEUE.tsv lines 48, 49 | does not block |
+| Ritter, Deutsche Geschichte I | not searched | | not principal (a general history; would cite, not print) |
+
+### D1.2 Spot-checks
+
+1. **A2's Rachfahl II.1 negative**: re-run from a fresh HTRC EF fetch with a wider vocabulary (above). Confirmed.
+2. **A2's "not on IA" for Rachfahl II.1**: IA creator search lists `wilhelmvonorani01rachgoog`, `...00rachgoog` and
+   `bub_gb_hq9AAAAAYAAJ`; the last was fetched and is "ERSTER BAND". Confirmed.
+3. **V3's "no item-level record" for the minute**: partly wrong. The KHA inventory has an item record (above); it
+   adds nothing beyond WVO. Corrected here, not a change of class.
+
+### D1.3 Decision and sentences
+
+**126: N4 (no prior decipherment located).** Confidence moderate: the editions are covered, Rachfahl II.1 only by
+tokens; scholarship indexes partly unreachable; the KHA minute unseen.
+
+- **Safe:** "The cipher postscript of Orange's letter to Elector August of 16 Sept 1564 (Dresden Locat 8510/5 f.139;
+  WVO 126) reads, with a key aligned from his 1563 letter WVO 98 and its contemporary decipherment, as news from Spain
+  that the Queen had been bled and purged twice and had lost the child (C 214, M 26 of 240 signs). No prior
+  decipherment was located in the principal editions (Groen, Gachard, Rachfahl, von Weber), the KHA and WVO records,
+  or a full-text phrase search (AUDIT.md, 24 Sept 2026). Orange's minute in the KHA (A11-XIVi-04-26), recorded with
+  a 'Zeitung', is unimaged and may carry the text in clear."
+- **Unsafe:** "first decipherment" without "no prior decipherment located"; "a previously unknown report"; any
+  sentence that drops the unseen minute.
+
+Outreach: gate 2 open on JSTOR lines 48-49 (ASKS row 37). CONTRIBUTIONS.md row added, held at gate 2.
+
+Requests (D1, this item): data.htrc.illinois.edu 1; archive.org 4 (advancedsearch 2, metadata 1, djvu 1);
+www.googleapis.com 2; www.koninklijkeverzamelingen.nl 1 browser load; WebSearch 1.

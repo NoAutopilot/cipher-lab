@@ -287,3 +287,64 @@ archive.org advancedsearch 9, metadata 1, download 6 (1 HTTP 500); be-api.us.arc
 books.google.com 23 (search-within); jsru.kb.nl 24; www.delpher.nl 1; www.dbnl.org 1; resources.huygens.knaw.nl 4;
 www.koninklijkeverzamelingen.nl 2 curl + 6 browser loads; api.openalex.org 3 (429); api.semanticscholar.org 1 (429);
 api.archives-ouvertes.fr 2; WebSearch 3.
+
+## N4 decision (D1)
+
+N4-decision verifier D1 for LANE V2 (Opus), 24 Sept 2026, 09:48-10:00 UTC (`date -u` read). This session did none
+of the solving, did no part of V2's or A1's audits, and did no decoding. Question: does the logged coverage of 4610,
+4611 and 4616 (N3 by V2, set to N4 by A1, commit cec1a0f) meet rule 10's N4? 4612 (N3, no reading) is out of scope.
+
+**Answer: yes. 4610, 4611 and 4616 are N4 (no prior decipherment located).** 4612 stays N3, as A1 set it.
+
+### D1.1 Principal families
+
+| family | covered by | with what | result |
+|---|---|---|---|
+| Groen, Archives 1st ser. t. III-V, Supplément, Table | V2 + A1 5 | DBNL full text; by date and every chiffr- note | none of the four; Orange's replies to 4610/4611/4616 printed (CDXXVII, CDXXXIII, CDLXXXIV) |
+| Groen 2nd series | A1 5 | range | starts 1584; not applicable |
+| Japikse, Correspondentie van Willem den Eerste | V2 | range | stops 1561; not applicable |
+| Blok, Correspondentie ... Lodewijk van Nassau (1887) | A1 2 (V2 only EF) | Google Books search-within, 23 q with controls; table of contents | none |
+| Blok, Lodewijk van Nassau (1889) | V2 + A1 3 | IA full text | none; no cipher mention |
+| Gachard, Correspondance de Guillaume le Taciturne t. III | V2 | IA full text | none |
+| Gachard, Correspondance de Philippe II t. II-III; CODOIN 102 | V2 + A1 8 | IA full text | no intercept of the four |
+| Kervyn, Huguenots et Gueux III; Relations politiques VI-VII | V2 + A1 4 | IA full text | none |
+| La Huguerye, Mémoires t. I (the sender's secretary) | A1 6 | IA full text | describes the cipher and the duplicates; prints none of the four |
+| Huygens ING / WVO records, PDFs, cipher-remarks sweep | V2 + A1 1, 8 | 4 records; 13 pages; PDF object count; 96-row sweep | manuscript only; no bundled print, gloss, copy or solution |
+| Holding archive: KHA inventory A 11/XIV d/13a | A1 9 | online inventory, item pages | points to WVO only |
+| Kluckhohn, Briefe Friedrich des Frommen II; Saxon editions | not covered | | **not principal**: they print Palatine and Saxon holdings; these four are Orange's received originals in the KHA |
+| Rachfahl, Wilhelm von Oranien | range | vols I-II end in 1569 | not applicable |
+| Poullet/Piot, Correspondance du cardinal de Granvelle t. IV-V (1572-75; Spanish-side reports, intercepts) | **not covered**; D1 tried: IA has only t. VI-XI (`correspondancedu00-05gran` are microfilm t. VI-XI; t. X and XI checked by year counts), and Google Books lists no full-view copy (2 API queries) | | unreachable. **Not principal for these items**: the letters reached Orange (he answered three), A1 covered the intercept route through Gachard, CODOIN and the WVO copy sweep, and La Huguerye says Alba never got the substance of intercepted packets. A suggestion |
+| Bor, Oorsprongk der Nederlandsche oorlogen | not covered | | not principal for private cipher letters (Bor prints public documents); a suggestion |
+| DBNL | V2 + A1 | Groen texts | covered for the edition that matters |
+| Google Books, IA, Delpher full text (phrases) | V2 + A1 10 | 16+ phrases × 3 hosts, with controls | none |
+| HathiTrust | V2 (HTRC EF for Blok 1887) | superseded by A1's search-within | route, not an edition |
+| Solver repos, Cryptiana, Cipherbrain, DECODE | check-solved, 24 Sept 2026 (NOTES.md) | | none |
+| Open scholarship | V2 + A1 11 | CrossRef, HAL covered; OpenAlex and Semantic Scholar 429 (do not block N4: Danzay precedent); Daussy 2007 unread | no cryptologic study found |
+| JSTOR | queued | JSTOR-QUEUE.tsv lines 52, 53, 54, 60 | does not block (verifier template) |
+| HHStA Wiesbaden Abt. 170/171 | not searched in-catalogue | | unpublished work, which N4 does not exclude |
+
+### D1.2 Spot-checks of the audits' claims (re-run, not re-swept)
+
+1. **A1 2, Blok 1887 search-within** (`tools/gbooks_search_within.py vfYnSGD4fpQC`, 4 queries, 3 s apart): control
+   "Lodewijk" 20 hits; "Goch", "chiffre", "Weeze" 0 each. Matches A1.
+2. **V2/A1, Groen IV replies** (DBNL `groe009arch04`, fetched once): Lettre CDLXXXIV reads "receu vostre lettre du
+   xije du présent, et veu par icelle jusques à où vous estes arrivé"; the Delft letter of 22 Jul 1573 reads "j'ay
+   receu vostre lettre du second jour de ce mois". Both as cited.
+3. **Groen IV cipher notes** (same file): the one "duplicata ... sans aulcun chiffre" passage (Nov 1573) is Orange to
+   his brothers, not one of the four. Consistent with A1 5.
+
+### D1.3 Decision
+
+The principal editions (Groen, Blok both, Gachard both series, Kervyn both works, La Huguerye), the holding archive's
+inventory and the project pages (WVO) are covered, most by full text and all with logged method. The uncovered
+families are either out of range, not principal for received originals, or unpublished. **4610, 4611, 4616: N4
+confirmed.** Confidence moderate-high for print; lower for scholarship (open indexes 429; Daussy 2007 unread).
+The readings are partial; the safe sentences say so.
+
+Safe sentences: A1.5 stands, verbatim, for each of the three. Unsafe: any "first decipherment" without "no prior
+decipherment located", "unread since 1573" (Orange read them), "read in full".
+
+Outreach: gate 2 open only on JSTOR lines 52-54, 60 (ASKS row 36). CONTRIBUTIONS.md row added, held at gate 2.
+
+Requests (this section, D1): books.google.com 4; www.dbnl.org 1; archive.org 9 (advancedsearch 3, metadata 4, djvu
+downloads of Granvelle t. X-XI 2); www.googleapis.com 2 (Granvelle).

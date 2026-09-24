@@ -1340,15 +1340,15 @@
    "date": "24 Sept 2026",
    "kind": "recovery",
    "title": "William of Orange to Elector August of Saxony, Brussels 16 Sept 1564 (WVO 126, Dresden Locat 8510/5 f.139): cipher postscript read with a key aligned from Orange's 1563 letter (WVO 98) and its decipherment",
-   "grade": "126: C 214, M 26 of 240 signs, N3. 53 (p1 only): S 163, M 119 of 282, N3. 57: C 247, M 53 of 300, N3. AUDIT.md: no prior decipherment or printed plaintext located for any of the three; minutes unseen (126 KHA, 57 Dresden with a 'Zettel')",
-   "line": "The Orange-Saxony symbol ciphers use more than one key. System A (WVO 74, 1562) also reads August's enclosure of 18 Nov 1561 (WVO 57: the Emperor asked the Electors to elect Maximilian King of the Romans). System B (98, 1563) reads 126 (1564: the Queen of Spain was bled and purged and lost the child). Orange's postscript of 24 Oct 1561 (WVO 53) was read cryptanalytically on its first page (Don Carlos marriage rumour, Vendôme and Navarre); three more cipher lines on f.266v are unread. No prior decipherment or printed plaintext was located for any of the three (AUDIT.md, N3 each).",
+   "grade": "126: C 214, M 26 of 240 signs, N4 (no prior decipherment located; AUDIT.md 'N4 decision (D1)'; KHA minute with a 'Zeitung' unimaged). 53 (p1 only): S 163, M 119 of 282, N3. 57: C 247, M 53 of 300, N3.",
+   "line": "The Orange-Saxony symbol ciphers use more than one key. System A (WVO 74, 1562) also reads August's enclosure of 18 Nov 1561 (WVO 57: the Emperor asked the Electors to elect Maximilian King of the Romans). System B (98, 1563) reads 126 (1564: the Queen of Spain was bled and purged and lost the child). Orange's postscript of 24 Oct 1561 (WVO 53) was read cryptanalytically on its first page (Don Carlos marriage rumour, Vendôme and Navarre); three more cipher lines on f.266v are unread. 126 is N4: no prior decipherment located in the principal editions (Groen, Gachard, Rachfahl, von Weber), the KHA and WVO records or a phrase search; Orange's minute in the KHA, recorded with a 'Zeitung', is unimaged and may carry the text in clear. 53 and 57 N3 (AUDIT.md).",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64"
   },
   {
    "date": "24 Sept 2026",
    "kind": "recovery",
    "title": "Lodewijk van Nassau to William of Orange, four cipher letters 1573-1574 (WVO 4610, 4611, 4612, 4616): partial reading with a key aligned from two sibling letters' decipherments",
-   "grade": "C 2512, I 267, M 658, U 575 of 4012 cipher signs; partial; novelty 4610/4611/4616 N4, 4612 N3 (AUDIT.md, second audit A1, 24 Sept 2026)",
+   "grade": "C 2512, I 267, M 658, U 575 of 4012 cipher signs; partial; novelty 4610/4611/4616 N4, 4612 N3 (AUDIT.md, second audit A1, confirmed by 'N4 decision (D1)', 24 Sept 2026)",
    "line": "System: letters, five numbers each in blocks from n; numbers above 120 are names and nulls. Key aligned from WVO 4613 and 4615 against their contemporary decipherments. 4610, 4611 and 4616 read as French in stretches; most of 4612's keyed runs do not yet read as French. No letter reads straight through. 4610, 4611, 4616 N4: no prior decipherment located in the principal editions (Groen, Blok 1887 and 1889, Gachard, Kervyn, La Huguerye), the KHA inventory or WVO; Orange's printed replies (Groen IV, Lettres CDXXVII, CDXXXIII, CDLXXXIV) answer them. 4612 N3 until it has a reading.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74"
   },
