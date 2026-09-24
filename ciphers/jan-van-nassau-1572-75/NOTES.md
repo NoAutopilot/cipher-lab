@@ -105,3 +105,59 @@ genuine cipher).
 5033's decipherments (5198's autograph is already imaged at `ciphers/orange-nassau-1572/`'s WVO record, but its
 1842 Nepveu tot Ameyde decipherment is not yet transcribed anywhere in this repo); test whether the same key
 covers 5200 and the other six.
+
+## C1: capture and inventory (LANE R2, 24 September 2026)
+
+Per `.claude/briefs/runs/2026-09-24-lane-r2-capture-huygens.md`. All seven targets (5200 rest of pages, 5207,
+5213, 5218, 5221, 5222, 5549) plus siblings 5198, 5199, 5033 fetched in full to `images/` (150dpi, JPEG q80;
+`images/manifest.json` updated, `images/inventory.tsv` written per page). First render pass used PNG and put the
+folder at 128MB; converted the whole folder to JPEG q80 in place, now 23MB, under the 30MB cap. No decoding, no
+novelty search, no transcription -- capture and eye-check only, per brief. Host: resources.huygens.knaw.nl, ~19
+PDF fetches this pass (>=1.5s apart, descriptive UA), well under the 90-request cap for this worker.
+
+**Flag for the orchestrator and any check-solved re-pass -- printed editions bundled directly in the WVO scans:**
+Two of the seven open targets have Groen van Prinsterer's own printed edition pages scanned into the *same* PDF
+file as the manuscript, immediately after the manuscript leaves:
+
+- **5218** (4 March 1575, Dordrecht): pages 5-8 of the PDF are Groen, *Archives ou correspondance inedite de la
+  Maison d'Orange-Nassau*, **Lettre DXLII, "Le Prince d'Orange au Comte Jean de Nassau"**, pp.141-143, ending
+  "Dordrecht, 4 mars[1575]. Guillaume de Nassau." -- date, place, correspondent and signature all match this
+  target exactly. The printed text discusses "l'affaire de Besançon", a salt-monopoly (salines) negotiation, and
+  names **"le Comte Günther de Schwartzenburg"** -- a direct cross-reference to `ciphers/gunther-van-schwarzburg-1561/`.
+- **5222** (29 September 1575, Dordrecht): pages 8-12 are Groen, **Lettre DLXXVII, "Le Prince d'Orange au Comte
+  Jean de Nassau. Sieges et combats en Hollande et Zelande"**, pp.280-283, ending "Dordrecht, 29 septembre 1575.
+  Guillaume de Nassau." -- again an exact date/place/signature match. Page 7 (between the manuscript and the
+  print) is a separate-leaf worksheet of eight numbered plaintext phrases ("1. quand paix affaires de celle de
+  Saxe", "...l'instruction don(n)ee au Conte Wolf d'Hohenlohe", etc.) in a different hand from the letter's own
+  secretary -- possibly a contemporary briefing note or partial decipherment, not itself verified against the
+  ciphertext this pass.
+
+**This was not caught by this same folder's own check-solved sweep above**, which searched WVO's Opmerkingen
+field (silent for both) and the solver repositories/DECODE/web, but did not open Groen's tomes IV-V
+letter-by-letter -- exactly the gap that sweep flagged as unresolved ("this worker did not achieve an exhaustive
+letter-by-letter search... DBNL's tome-level index pages... could not reliably enumerate every entry"). The
+printed pages were sitting inside the manuscript's own digitised file the whole time, not requiring the DBNL
+search at all. **Per brief, this worker did not read the printed French text closely, compare it word-for-word
+to the cipher, or classify novelty/solved status -- that is a check-solved or verifier job, not this one's.** But
+5218 and 5222 should not be treated as "open" without that comparison first; the other five targets (5200, 5207,
+5213, 5221, 5549) showed no such bundled print in this pass, though 5221's and 5549's own cipher extent looked
+lighter/sparser than expected for "partly"/"mainly" and deserve a second look at higher resolution.
+
+**Second flag -- a recoverable key for this whole circle, found on sibling 5198's own bundled print:** 5198's PDF
+pages 8-9 are a scan of a **19th-century periodical page** (an "Algemeenen Konst- en Letterbode" Haarlem reprint
+of a reader's letter to the editor) that prints a **complete key table** for this cipher: a=3, b=6, c=9, d=12,
+e=15, f=18, g=21, h=24, i/j=27, k=30, l=33, m=36, n=39, o=42, p=45, q=48, r=51, s=54, t=57, u/v=60, w=63, x=66,
+y=69, z=72 (a straight multiples-of-3 substitution over a merged ~24-letter alphabet), with the note "de overige
+cijfers zijn zoogenaamde non-valeurs, ter beveiliging" (the remaining numbers are nulls, for security) -- then
+gives the opening plaintext of GPA CCCLXXXV (=5198 itself, "Lettre du Prince d'Orange au Cte Jean de Nassau, datte
+de Malines, 21 Sept. 1572)". **Not tested this pass** against any of the seven open targets' ciphertext (out of
+brief scope: capture and inventory only, no decoding) -- but the numeral ranges seen by eye in 5200/5207/5213
+(mostly 2-digit, up into the 80s-90s) are consistent with a design using 3-72 for real letters plus higher-value
+nulls, so this key is the first thing a solver should try before any fresh cryptanalysis. Whether it is the
+*same* specific key (same numbers to same letters) across different dates in this correspondence, or just the
+same *design* with a fresh mapping each time, is untested.
+
+Per-page detail (content, cipher design, hand) for every page fetched this pass: `images/inventory.tsv`.
+5033's scan is heavily faded and this worker's contact-sheet resolution could not confirm its cipher density or
+rule out a bundled print of its own "solved elsewhere" edition text -- flagged in inventory.tsv for a closer,
+better-contrast pass. No transcription, no key application, no novelty classification this pass.

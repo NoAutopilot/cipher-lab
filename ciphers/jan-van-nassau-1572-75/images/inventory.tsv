@@ -1,0 +1,58 @@
+briefnr	page	content	cipher_design	hand	note
+5200	1	clear opening line then cipher	French numerals, 2-3 digit, seen up to ~98	secretary (Willem's clerk)	continuous body cipher after 1-line greeting
+5200	2	cipher	same design, dense columns	secretary	full page cipher, no clear breaks seen
+5200	3	cipher then clear close + signature	same design	secretary + autograph signature	closes with docket note, values up to ~99 seen
+5207	1	clear opening line then cipher	French numerals 2-3 digit, up to ~57 seen	secretary	KHAG A3,895/I printed footer on every page (WVO scan watermark)
+5207	2	cipher	same design	secretary	dense, no clear breaks
+5207	3	cipher then clear address/date line + autograph signature ("Guillaume de Nassau")	same design	secretary + autograph	docket: "A Monsieur mon frere le Comte Jan de Nassau ... Gorenchem ... 1574"
+5213	1	cipher, heavy fading	French numerals 2-digit, up to ~92 seen	secretary	poor scan contrast, dense text block
+5213	2	cipher	same design	secretary	dense, continuing
+5213	3	cipher then clear closing lines	same design	secretary	closing about "commerce", "grand Vicomte"
+5213	4	mostly blank, docket + autograph signature	n/a	autograph	address/date leaf, "26 de Decembre 1574" note visible
+5218	1	clear + cipher mixed	French numerals, up to ~91 seen	secretary	marginal notes "de Deventer", "de Duitsland"
+5218	2	cipher	same design	secretary	dense, some marginal annotations
+5218	3	cipher	same design	secretary	marginal annotations continue ("de Cologne au...", "de Cologne")
+5218	4	mostly blank, docket + autograph signature	n/a	autograph	"faict a Dordrecht ce ... Mars 1575", signed "Guillaume de Nassau"
+5218	5	PRINTED EDITION PAGE bundled in same PDF -- Groen van Prinsterer, "LETTRE DXLII. Le Prince d'Orange au Comte Jean de Nassau" (title page)	n/a (print)	print	*** see NOTES.md flag: this letter's own printed text is bundled in the WVO scan ***
+5218	6	PRINTED EDITION PAGE, p.141 (continuation of Lettre DXLII, dated Bréda / communication avecq 1575)	n/a (print)	print	full French text of the letter's substance
+5218	7	PRINTED EDITION PAGE, p.142 (continuation, mentions "affaire de Besançon", salines negotiation, and "le Comte Günther de Schwartzenburg")	n/a (print)	print	cross-reference to Günther van Schwarzburg circle
+5218	8	PRINTED EDITION PAGE, p.143 (letter's close, "Dordrecht, 4 mars", signed "Guillaume de Nassau")	n/a (print)	print	date/place/signature match target exactly -- see NOTES.md flag
+5221	1	clear French prose, light/no cipher visible at this resolution	n/a or very sparse numerals	secretary	needs a closer pass to confirm "partly" cipher extent
+5221	2	clear French prose	n/a or sparse numerals	secretary	as p1
+5221	3	cipher numeral passage embedded in clear prose	French numerals, 2-digit, up to ~90 seen	secretary	signed "de Chasteauneuf"/"Jean Commissaire" marginal note
+5221	4	cipher numeral passage embedded in clear prose	same design, up to ~137 seen	secretary	marginal notes "de Chasteauneuf", "de Orange"
+5221	5	clear French prose, closing + autograph signature	n/a	secretary + autograph	dated "1575" at bottom
+5221	6	mostly blank, docket/address leaf with seal	n/a	autograph	address to "Conte Jehan de Nassau"
+5222	1	clear French prose	n/a or sparse numerals	secretary
+5222	2	clear French prose	n/a or sparse numerals	secretary
+5222	3	clear French prose, some cipher-like passages	sparse numerals	secretary
+5222	4	cipher numeral passage	French numerals 2-3 digit, up to ~157 seen	secretary
+5222	5	cipher numeral passage	same design, up to ~180 seen	secretary
+5222	6	mostly blank, docket/address leaf with seal	n/a	autograph	"Comte Jehan de Nassau", dated "1575"
+5222	7	DECIPHERMENT WORKSHEET on separate leaf -- numbered plaintext phrases keyed to instruction points (1-8: "quand paix affaires de celle de Saxe", "ses parens sceussent pour ... entretenement", "celle demeurera ... enuoiray mille florins", "les dict 2 parens ... traictement", "l'instruction don(n)ee au Conte Wolf d'Hohenlohe", etc.)	plaintext notes, not numeral cipher	different hand (annotator, not the letter's secretary)	*** possible contemporary decipherment/briefing note -- see NOTES.md flag; not itself the ciphertext of 5222 ***
+5222	8	PRINTED EDITION PAGE bundled in same PDF -- Groen van Prinsterer, "LETTRE DLXXVII. Le Prince d'Orange au Comte Jean de Nassau. Sieges et combats en Hollande et Zelande" (title page)	n/a (print)	print	*** see NOTES.md flag ***
+5222	9	PRINTED EDITION PAGE, p.280 (siege of Schoonhoven, Woerden, etc.)	n/a (print)	print
+5222	10	PRINTED EDITION PAGE, p.281 (continues, Zierikzee)	n/a (print)	print
+5222	11	PRINTED EDITION PAGE, p.282 (Comte Wolff de Hohenlohe, marriage treaty with Saxe)	n/a (print)	print	cross-reference to the Hohenlohe/Saxe negotiation named on p7's worksheet
+5222	12	PRINTED EDITION PAGE, p.283, letter close "Dordrecht, 29 septembre 1575", signed "Guillaume de Nassau"	n/a (print)	print	date/place/signature match target exactly -- see NOTES.md flag
+5549	1	cipher numerals within German prose	German-language numerals, 2-digit, up to ~89 seen	secretary (Jan's clerk)	shelfmark "A 11/XIV A/5-18" printed footer
+5549	2	cipher numerals dense	same design, up to ~99 seen	secretary	dense block, less clear text than p1
+5549	3	cipher numerals within German prose	same design	secretary
+5549	4	clear German prose, few/no numerals visible	n/a	secretary
+5549	5	clear German prose with some numerals	sparse numerals	secretary
+5549	6	blank verso, docket/address + wax seal, "A Monseigneur, Monseigneur le Prince d'Orange"	n/a	autograph	address leaf
+5198	1	cipher (dense French numerals)	French numerals, up to ~86 seen	secretary	sibling, "solved on leaf" per QUEUE.md
+5198	2	cipher	same design	secretary
+5198	3	cipher	same design	secretary
+5198	4	cipher then clear closing passage	same design	secretary
+5198	5	cipher then clear passage	same design	secretary
+5198	6	clear French prose, address/closing	n/a	secretary + autograph
+5198	7	blank/docket verso with wax seal	n/a	autograph
+5198	8	PRINTED PERIODICAL PAGE (19th c. "Algemeenen Konst- en Letterbode", Haarlem) -- KEY TABLE for a=3,b=6,c=9,...,z=72 (mod-3 alphabet substitution, "de overige cijfers zijn zoogenaamde non-valeurs" = other numbers are nulls); introduces "CCCLXXXV, Lettre du Prince d'Orange au Cte Jean de Nassau, dat de Malines, 21 Sept. 1572"	printed key table, not cipher itself	print	*** MASTER KEY CANDIDATE for this circle -- see NOTES.md flag, worth testing against 5200/5207/5213 etc ***
+5198	9	PRINTED PERIODICAL PAGE continuation -- deciphered French opening lines of GPA CCCLXXXV, with editorial footnotes correcting misprinted cipher values	deciphered plaintext + errata	print	pairs directly with p1-2's ciphertext for key verification
+5199	1	cipher (dense French numerals) then clear autograph signature "Guillaume de Nassau"	French numerals, up to ~92 seen	secretary + autograph	sibling, "solved on leaf" per QUEUE.md
+5199	2	cipher, very faint/faded scan	same design	secretary	hardest page to read of this letter
+5199	3	PRINTED EDITION PAGE -- "Archives ou correspondance inedite de la Maison d'Orange-Nassau, Tome III p.513 et 514", full French plaintext, dated "24 de 7bre 1572" ("Escrit en mon camp a Geel"), signed "Guillaume de Nassau"	n/a (print)	print	full contemporaneous plaintext of this letter, already known per QUEUE.md
+5199	4	blank verso	n/a	n/a
+5033	1	blank/docket leaf with note	n/a	n/a	sibling, "solved elsewhere (Groen van Prinsterer)" per QUEUE.md; long item, 24 pages
+5033	2-24	manuscript, heavily faded scan (low contrast throughout); appears mostly clear/cursive secretary-hand prose with occasional short numeral groups, not a dense numeral cipher like the other letters in this circle	sparse/uncertain, not closely measured at this pass	secretary	*** needs a closer, better-contrast pass before use as a decipherment source -- this pass could not confirm cipher density or a bundled printed page at this scan quality ***
