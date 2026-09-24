@@ -1,6 +1,7 @@
 # Eckert Papers, 1864 "Ciphers Sent" ledger (Huntington mssEC 19) read with Cipher No. 1 (mssEC 41)
 
 status: partial
+novelty: E4 N4, E5 N4 (no prior decipherment located; AUDIT.md 'N4 set (LANE W2 worker E2)', 24 Sept 2026); E6 N1, E12 N1
 checked: 20 Sept 2026 (section 8 added; sections 1-7 as checked 19 Sept 2026)
 target: QUEUE.md rank 1, "Thomas T. Eckert Papers, US Military Telegraph: ledgers of telegrams sent 'still in
 code', 1862-67 (Huntington mssEC 1-76)". Second pilot, recommended in ciphers/eckert-1862/NOTES.md section 5:
@@ -98,7 +99,7 @@ pamphlet), by Nicolay and Hay (1894) and by Basler, Collected Works vol 7 p.479;
 the OR, the Navy OR, Butler's Correspondence (1917) or Fox's Confidential Correspondence, but their substance
 is in print (Butler's reply, OR I/33 p.279; Fox to Ericsson, ORN I/9 p.667) and most of their words stand in
 clear on the Huntington page transcription published in 2018. Novelty classifications (CLAUDE.md rule 10):
-E6 N1, E12 N1, E4 N3, E5 N3. **Second audit (adversarial), 24 Sept 2026 (AUDIT.md):** E4 and E5 confirmed N3, not raised to N4 (JSTOR and HathiTrust full text still to run); OR I/36 pts 1-3, I/51 pt 1, III/4, the OR Supplement pt I, Fox's Confidential Correspondence, the Lincoln Papers and Google Books were added to the search, all negative. Both telegrams also survive in a second ledger copy, mssEC 25 p.77 (E4) and p.79 (E5), still in cipher in the volunteers' transcription; it reads "Buxton" for the M token "Brenton" (residual for a solver, not yet checked against the image). "Not printed" in the earlier text of this folder meant only "not matched by the
+E6 N1, E12 N1, E4 N4, E5 N4 (no prior decipherment located; N4 set 24 Sept 2026, AUDIT.md 'N4 set (LANE W2 worker E2)', after the Zooniverse Talk search came back negative; before that, N3). **Second audit (adversarial), 24 Sept 2026 (AUDIT.md):** E4 and E5 confirmed N3, not raised to N4 (JSTOR and HathiTrust full text still to run); OR I/36 pts 1-3, I/51 pt 1, III/4, the OR Supplement pt I, Fox's Confidential Correspondence, the Lincoln Papers and Google Books were added to the search, all negative. Both telegrams also survive in a second ledger copy, mssEC 25 p.77 (E4) and p.79 (E5), still in cipher in the volunteers' transcription; it reads "Buxton" for the M token "Brenton" (residual for a solver, not yet checked against the image). "Not printed" in the earlier text of this folder meant only "not matched by the
 or_check sweep" and must not be read as "unpublished". Preference for unprinted entries could not be pushed
 further within the budget: most unmatched candidates were the Beckwith and Kimber entries, which are in the
 other cipher (section 2).
@@ -158,8 +159,10 @@ received books.
   4.0) for the route side of the Stager ciphers, consulted for the 1862 pilot on which this one builds.
 - Known plaintext: The War of the Rebellion, ser. I, vols 32-45 (Internet Archive full texts); for E12 the 1864
   pamphlet, Nicolay and Hay and Basler cited in AUDIT.md.
-- Novelty audit: AUDIT.md (verifier session, 20 Sept 2026). No entry in this folder is at N4 or N5; none may be
-  described outside the repo as a first decipherment or as unpublished plaintext.
+- Novelty audit: AUDIT.md (verifier session, 20 Sept 2026; second audit and N4 decision 24 Sept 2026). E4 and E5
+  are N4 (no prior decipherment located; AUDIT.md 'N4 set (LANE W2 worker E2)', 24 Sept 2026); nothing is at N5.
+  Outside the repo, use only the safe sentences in that section. None may be called unpublished plaintext, and
+  "first decipherment" is allowed only with the qualifier "no prior decipherment located".
 
 ## 8. The headquarters cipher is Cipher No. 2: mssEC 47 read on three Beckwith and Kimber entries (20 Sept 2026)
 

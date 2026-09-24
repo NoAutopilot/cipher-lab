@@ -95,7 +95,7 @@
    "state": "waiting",
    "holder": "Archive",
    "next": "Parked for cryptanalysis (every cipher in the ledger reads from a surviving book). An enquiry went to the Huntington curator on 20 Sept 2026 asking whether a corpus-level decoding dataset exists and whether one would be useful; their reply decides whether the mechanical corpus pass is run as an edition project.",
-   "note": "1862 (mssEC 15): ten entries aligned with their Official Records prints, all N1 (ciphers/eckert-1862/AUDIT.md, 24 Sept 2026); three of the 1862 code words (Andes, Alden, Alvord) were already published by the project blog in 2017. Twenty 1864 entries read at grade H from cipher book mssEC 41; seventeen agree word for word with the Official Records, one with the printed Lincoln works, two (E4, E5) not found in the sources listed in AUDIT.md (N3, confirmed by an adversarial second audit on 24 Sept 2026; N4 pending JSTOR and HathiTrust full text; a second ledger copy of both is in mssEC 25 pp.77, 79, still in cipher). Corpus question (AUDIT.md section 12): no one has mapped the ledger entries to cipher, key, plaintext and print; the project's decoding phase was never launched (paused Jan 2018, ended July 2019). A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve.",
+   "note": "1862 (mssEC 15): ten entries aligned with their Official Records prints, all N1 (ciphers/eckert-1862/AUDIT.md, 24 Sept 2026); three of the 1862 code words (Andes, Alden, Alvord) were already published by the project blog in 2017. Twenty 1864 entries read at grade H from cipher book mssEC 41; seventeen agree word for word with the Official Records, one with the printed Lincoln works, two (E4, E5) not found in the sources listed in AUDIT.md (N4, no prior decipherment located, set 24 Sept 2026 after two audits and a negative Zooniverse Talk search, AUDIT.md 'N4 set (LANE W2 worker E2)'; outreach gate 2 still needs the three JSTOR rows run or waived and OpenAlex/Semantic Scholar, ASKS row 41; a second ledger copy of both is in mssEC 25 pp.77, 79, still in cipher). Corpus question (AUDIT.md section 12): no one has mapped the ledger entries to cipher, key, plaintext and print; the project's decoding phase was never launched (paused Jan 2018, ended July 2019). A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve.",
    "wait": {
     "on": "The Huntington (curator reply to the 20 Sept enquiry)",
     "since": "20 Sept 2026",
@@ -958,10 +958,10 @@
    "date": "20 Sept 2026",
    "kind": "solve",
    "title": "Eckert 1864: two telegrams, Fox to Butler and Meigs to Butler, 21-22 Apr 1864",
-   "grade": "N3, two audits; N4 pending",
+   "grade": "N4 (no prior decipherment located)",
    "line": "Read at grade H from the surviving cipher book; a second ledger copy of both found in mssEC 25. Thirteen printed volumes, the Butler and Fox correspondence, the Lincoln Papers and Google Books phrase searches print neither telegram. A blind second reader agrees on 96 percent of tokens.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
-   "gap": "the Decoding the Civil War Zooniverse Talk subject comments, unreachable from here (ASKS row 27); if that search is negative, the N4 decision of 24 Sept 2026 puts both at N4. The Meigs letterbooks at the Library of Congress (229 images, no text) remain unread",
+   "gap": "Zooniverse Talk searched 24 Sept 2026 through talk.zooniverse.org, negative (N4 set). Unpublished archival copies unread: the Meigs letterbooks at the Library of Congress (229 images, no text) and NARA M504. Outreach waits on the three JSTOR rows and the OpenAlex/Semantic Scholar pass (ASKS row 41)",
    "phrases": [
     "Fox to Butler, 21 April 1864, 9.30 PM",
     "Meigs to Butler, 22 April 1864, 10.45 AM",

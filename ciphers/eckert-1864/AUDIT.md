@@ -897,3 +897,77 @@ nothing to redact there); `sources/talk/cdx/{talk_prefix,subject_2880207,subject
 
 Requests: talk.zooniverse.org 15 (6 direct comments/discussions + 9 searches), www.zooniverse.org 1 (panoptes
 project lookup), web.archive.org 4 (all HTTP 200, no resets). No subagents.
+
+## N4 set (LANE W2 worker E2, 24 Sept 2026)
+
+Verifier session (LANE W2 worker E2, session_012JuvHFkfXf9jFvxziRfhXo, for LANE W2 session_01CLm9uFwyau9hRmDcm2vALE),
+11:24-11:27 UTC. Not the solver, not an earlier auditor, not the Talk searcher. No decoding. Question: with the
+Talk gap reported closed by worker E1, does E4 and E5's coverage now meet rule 10's N4?
+
+**Answer: yes. E4 and E5 are N4 (no prior decipherment located).**
+
+### 1. Adversarial check of E1's Talk search (from sources/talk/ and one control)
+
+| check | result |
+|---|---|
+| Were the per-subject endpoints returning data, not an empty shell? | E1 logged no positive control for them. **Control run this session:** `talk.zooniverse.org/comments?focus_id=2880486&focus_type=Subject` (the subject of E1's "camels" hit) returned HTTP 200, count 2, both comments `section: project-2125`. The same endpoint E1 used does return comments when a subject has them, so E1's `count: 0` on the three subjects is a real zero. |
+| Was the search endpoint live? | Yes, its own positive control is in E1's JSON: search_queries.json holds real hits (camels 1, Tecumseh 2, Hatteras 1, cavalry horses 9) with bodies, all on subjects other than E4/E5's, and every hit is on board 429 or others in section project-2125. Stemming works ("camels" matched "Camel"). |
+| Were the subject ids right? | Yes. Panoptes `api/subjects/{id}` this session: 2880207 = mssEC_19_049 (tel080; tel081), set 4729; 2317144 = mssEC_25_077 (tel142-144), set 4705; 2317146 = mssEC_25_079 (tel147; tel148), set 4705; all `links.project` 2125. Matches 'Talk gap, second attempt'. |
+| Was the search limited to the right project? | Yes: `section=project-2125`, and project id 2125 = zooniverse/decoding-the-civil-war (E1's slug lookup; 'N4 decision' s.2). |
+| Saved JSON consistent with the table? | Yes: six files, each `count: 0`, `page_count: 0`; the E4/E5 2880207 comments file is named `talk_2880207_p1.json` rather than `_comments`, same content form. |
+| Residual | A comment that discusses these pages without any of the nine search terms and sits on a subject other than the three would be missed. The three subjects carry no comments at all, and the terms include both telegrams' distinctive words, so this residual is small. |
+
+Requests this session: talk.zooniverse.org 1 (control); www.zooniverse.org 3 (panoptes subjects); >=2 s apart.
+
+### 2. Is any other principal family open?
+
+Re-read 'N4 decision' s.1 table, the second audit's source-family log and 'Toward N4'. The second audit named
+JSTOR, HathiTrust full text and the Meigs finding aid as needed for N4. 'N4 decision' ruled that JSTOR is
+scholarship (CLAUDE.md: a queued JSTOR row never blocks N4), HathiTrust's engine is breadth over the minor books
+already covered by IA full text, Google Books and HTRC token counts, and Meigs and NARA M504 are archival
+(N4 leaves "internal or unpublished work not excluded"). I agree with all three rulings. The one row marked
+"partly" and principal, the huntington.org project pages (429 on 20 Sept), describes the project and not
+individual telegrams. Its statements were read through the NHPRC proposal and the blog, and the holding archive's
+catalogue and full text (CONTENTdm) were covered in full. I accept it as covered. The Talk was the only open
+principal family, and it is now closed negative. **No principal family is open.**
+
+### 3. Verdict
+
+| item | telegram | prior plaintext | prior decipherment | evidence quality | confidence | class |
+|---|---|---|---|---|---|---|
+| E4 | Fox to Butler, 21 Apr 1864 9.30 PM (mssEC 19 p.49; mssEC 25 p.77) | not located; substance in print (Butler's reply OR I/33 p.279; Fox to Ericsson ORN I/9 p.667); 53 of 63 words in clear on the Huntington transcription since 2018 | none located (editions, catalogue, project blog, boards, Talk) | high for print and project pages; archival copies (NARA M504, Meigs Papers) unread | moderate to high | **N4** |
+| E5 | Meigs to Butler, 22 Apr 1864 10.45 AM (mssEC 19 p.49; mssEC 25 p.79) | not located; the telegram it answers is printed (Butler Corr. IV p.112), follow-ups OR I/33 pp.938, 940; about 40 of 60 words in clear since 2018 | none located | as E4; no printed Meigs edition exists | moderate to high | **N4** |
+
+Safe sentences (the 'N4 decision' s.3 forms, now in force):
+- E4: "Fox's 9.30 p.m. telegram to Butler of 21 April 1864 (Huntington mssEC 19 p.49 and mssEC 25 p.77) was
+  read from the surviving cipher book at grade H; no prior decipherment located, and no printed text of it
+  located in the Official Records (army, navy, supplement), the Butler, Fox, Lincoln or Grant editions, the
+  Huntington catalogue or the Decoding the Civil War project pages and Talk (search log in AUDIT.md). Its
+  substance is known from Butler's reply (OR I/33 p.279) and Fox's parallel telegram to Ericsson (ORN I/9
+  p.667), and most of its words have been public in clear in the Huntington transcriptions since 2018.
+  Unpublished archival copies (NARA M504, Meigs Papers) were not searched."
+- E5: "Meigs's telegram to Butler of 22 April 1864 (Huntington mssEC 19 p.49 and mssEC 25 p.79) was read from the
+  surviving cipher book at grade H; no prior decipherment located, and no printed text of it located in the
+  Official Records (army, series III, supplement), the Butler, Lincoln or Grant editions, the Huntington catalogue
+  or the Decoding the Civil War project pages and Talk (search log in AUDIT.md). Butler's printed correspondence
+  prints the telegram it answers (vol. 4 p.112), and most of its words have been public in clear in the
+  Huntington transcriptions since 2018. Unpublished archival copies (NARA M504, Meigs Papers) were not searched."
+- Unsafe, both: "A lost telegram, deciphered for the first time and never before published"; "first
+  decipherment" or "previously unread" without "no prior decipherment located"; any sentence that omits the
+  prior print of the substance or the clear words.
+
+### 4. Outreach gate 2
+
+Still open. JSTOR-QUEUE.tsv rows at file lines 20, 21, 22 (ciphers/eckert-1864) are `queued`, neither answered
+nor waived. Open-index pass: CrossRef, HAL and Scholar done; Persée 1 of 3 (2 reset); OpenAlex and Semantic
+Scholar 429 on every attempt (OPEN-INDEX-RESULTS.tsv rows 110-133). New ASKS row 41 (run or waive) and an update
+line in outreach/gramont-jstor-waive.md. Gate 1 is met; gates 3-6 are as in 'N4 decision' s.4. No post until
+gate 2 is met.
+
+### 5. Postmortem
+
+The only failure: E1 logged no positive control for the per-subject endpoint. It is now run, and it did not change
+the result. Corrections in this commit: NOTES.md status lines (the N3 line and s.7 "No entry ... at N4"),
+status.json's eckert-1864 target note ("N4 pending JSTOR and HathiTrust full text" named the wrong blockers) and
+its results row (grade and gap), and ASKS row 41. ASKS row 27 was already marked answered. SECOND-OPINIONS-QUEUE
+(SO-ECKERT-E4E5) and second-opinions/PROMPT-chatgpt.md exist, so they are not touched.
