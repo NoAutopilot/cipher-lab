@@ -1,7 +1,9 @@
-blocked
+open
 
 
-**Held by the LANE N3 orchestrator, 24 Sept 2026 15:36 UTC:** status `blocked`, not `open`. The standard printed edition or calendar for the date was not located or read in the check-solved pass (section 2 below); under the lane rule (R8 lesson) that verdict is `blocked` until an edition check reads it. The nomination line posted 15:22-15:23 is held, not firm. Edition check: brief `.claude/briefs/runs/2026-09-24-lane-n3-csED.md`.
+**Edition check (LANE N3 csED, 24 Sept 2026 15:45 UTC):** hold lifted -- verdict `open`. CSP Spain III.2 (British
+History Online, full text) and Lanz's Correspondenz des Kaisers Karl V vol. 1 (archive.org) both read for the
+date; neither carries the letter or a decipherment (section 2 below). Brief `.claude/briefs/runs/2026-09-24-lane-n3-csED.md`.
 # Unsigned letter to Seigneur Garbino, Madrid, 11 April 1528 — BnF fr. 3022 no. 20 (ff.44r-46v)
 
 QUEUE row: CS2-01 (`sources/solver-diffs/2026-09-24-cyphersolver-site.tsv`, LANE N3 scout scCS2, 24 September
@@ -32,9 +34,24 @@ nomenclator; no. 20's is a base-letter-plus-superscript-number code, structurall
    passage on the same page for BnF fr.3022 "Most Solved" lists only the del Vasto/Gasto letters (f.16, f.26-28,
    f.40-43) as broken by Lasry in April 2026 -- no. 20/f.44 is not among them. No sentence anywhere on Tomokiyo's
    site claims a solution for no. 20.
-2. **Standard printed edition / calendar.** Not located for this specific memoire (an unsigned Venetian-agent
-   report, not part of a named ambassador's printed correspondence); CSP Spain III.2 covers only no. 19 (f.40-43,
-   the del Vasto letter) per Bourdeau's notes, not no. 20. No calendar entry found for this item.
+2. **Standard printed edition / calendar (edition check, LANE N3 csED, 24 Sept 2026).** *Calendar of State
+   Papers, Spain*, vol. 3 pt. 2, 1527-1529 (ed. Pascual de Gayangos, London 1877) -- read in full for the whole
+   of April 1528 via British History Online (free full text, not Gallica/Google Books):
+   https://www.british-history.ac.uk/cal-state-papers/spain/vol3/no2/pp641-651 (items 392-397, 1-10 April),
+   .../pp652-664 (items 398-404, 11-20 April, includes the 11 April date itself: item 398 is Juan de Miranda to
+   Lope Hurtado on French agents in Lisbon, unrelated), .../pp664-673 (items 405-413, 21-30 April). No item in
+   the month matches an unsigned memoire to "Seigneur Garbino" from Madrid, and neither "Garbino" nor "Ranzo"
+   appears anywhere on these pages -- confirms Bourdeau's note that the calendar covers no. 19 (the del Vasto
+   letter) but not no. 20. Karl Lanz, *Correspondenz des Kaisers Karl V*, vol. 1 (1513-1532; Leipzig 1844) --
+   full djvu text fetched from archive.org (id `correspondenzde00chargoog`, OCR of reasonable quality: "1528"
+   and "Madrid" both hit repeatedly) and grepped: no "Garbino", no genuine "Ranzo" hit (only false positives on
+   "Franzosen"); the entry nearest the date, no. 107 (N. Perrenot to the Emperor, 31 March/8/10 April 1528), is
+   an unrelated report from the French court, not this letter. Marino Sanudo, *I Diarii*, vol. 47 (covers March-
+   May 1528; archive.org id `idiariidimarino47sanugoog`) was also fetched (full djvu text, 1.59 MB) but its OCR
+   is too degraded to search reliably -- zero hits even for "1528" or "Madrid", terms certainly present in the
+   volume, so this is a search result of near-zero value, not a confirmed negative; flagged for a future pass
+   with page images rather than OCR text if this target is promoted. Two of the three named editions were read
+   with a genuine negative; the third (Sanudo) was fetched but not usably searched.
 3. **Lasry's publications.** Lasry's April 2026 work on fr.3022 (via Tomokiyo, GL.htm) covers only the del
    Vasto/Gasto cipher (nos. 6, 10, 19) -- a different system from no. 20's. No Lasry solution of no. 20 is
    referenced anywhere.

@@ -1,7 +1,10 @@
-blocked
+open
 
 
-**Held by the LANE N3 orchestrator, 24 Sept 2026 15:36 UTC:** status `blocked`, not `open`. The standard printed edition or calendar for the date was not located or read in the check-solved pass (section 2 below); under the lane rule (R8 lesson) that verdict is `blocked` until an edition check reads it. The nomination line posted 15:22-15:23 is held, not firm. Edition check: brief `.claude/briefs/runs/2026-09-24-lane-n3-csED.md`.
+**Edition check (LANE N3 csED, 24 Sept 2026 15:45 UTC):** hold lifted -- verdict `open`. Ribier's *Lettres et
+mémoires d'estat* (both surviving tomes, archive.org, full text) and Francisque-Michel's *Les Portugais en
+France, les Français en Portugal* (1882, archive.org, full text) both read; neither carries Seure's name in
+connection with these letters (section 2 below). Brief `.claude/briefs/runs/2026-09-24-lane-n3-csED.md`.
 # Chevalier de Seure (Lisbon) to de Fresne and to Henri II, six letters, 12-27 Dec 1558 — BnF fr. 3151 nos. 39-44
 
 QUEUE row: CS2-02 (`sources/solver-diffs/2026-09-24-cyphersolver-site.tsv`, LANE N3 scout scCS2, 24 September
@@ -24,11 +27,27 @@ Seure's.
    and by name across sources/cryptiana/web/*.htm). No live fetch was needed to reach this negative, since the
    name/shelfmark grep covers the full local mirror; not separately confirmed against the live site this pass
    (in budget, not run -- flagged for a future pass if this target is promoted).
-2. **Standard printed edition / calendar.** Not located this pass. Seure's Lisbon dispatches of 1558 were not
-   found in a quick web search; no Ribier or other printed *Lettres et memoires* collection was checked for this
-   specific correspondent (Bourdeau's own escalation log for the same volume notes the same gap: "not done --
-   only a web search; Ribier, Lettres et memoires d'estat (1666), and the Noailles ambassade edition (Vertot
-   1763) not grepped for these letters").
+2. **Standard printed edition / calendar (edition check, LANE N3 csED, 24 Sept 2026).** Guillaume Ribier,
+   *Lettres et mémoires d'estat ... sous les regnes de François premier, Henry 2. & François 2.* (Paris, 1666)
+   -- both tomes located on archive.org and read as full djvu text: `bub_gb_bOnmNv2ZLVoC` (runs to April 1559,
+   covers late 1558 -- the one entry dated December 1558, p.23988 in the OCR, is an unrelated ambassador's
+   letter from Andrinople/Constantinople, not Seure) and `bub_gb_qWTswSr32NYC` (runs only to 1557, too early).
+   Grepped both for "Seure", "Fresne" and "Lisbonne": no genuine hit in either (the one "Seure" string match in
+   `bOnmNv2ZLVoC` is the false positive "prédecejfeurseurent"; "Fresne" and "Lisbonne" do not appear at all).
+   Ribier does not print these letters. R. Francisque-Michel, *Les Portugais en France, les Français en
+   Portugal* (Paris, 1882) -- full text read from archive.org (`lesportugaisenf00michgoog`): no genuine "Seure"
+   or "Fresne" hit (only false positives on "asseure(ment)"/"seureté"). WebSearch independently confirms Seure
+   served as French ambassador resident in Portugal 1557-1559 and returned to France on the eve of
+   Cateau-Cambrésis (1559), consistent with this dispatch, but surfaces no printed edition of his letters.
+   Vertot/Villaret, *Ambassades de Messieurs de Noailles en Angleterre* (5 vols, 1763) -- not read directly this
+   pass (an England embassy edition, not Portugal; a targeted WebSearch combining "Ambassades de messieurs de
+   Noailles" with "Seure"/Lisbonne/Portugal found no connection); flagged as not fully checked if this target is
+   promoted. Jules Mathorez's writing found by WebSearch concerns the Portuguese colony at Nantes, a different
+   subject, not Seure's embassy. One modern secondary source was found but not read (Cairn.info paywalled,
+   HTTP 403 to WebFetch): a 2021 article on Franco-Portuguese relations in the Saint Petersburg manuscript
+   collections, 1557-1572 -- title gives no indication it prints or transcribes this correspondence; not
+   pursued (Cairn is not in this brief's route and the article is about manuscript collections, not a printed
+   edition of the letters).
 3. **Lasry's publications.** No Lasry solution of fr. 3151 or a Seure/Lisbon 1558 cipher found in Tomokiyo's
    pages or web search.
 4. **DECODE (sources/decode/ on disk) + both solver-repo clones (grepped by shelfmark).** No DECODE record for

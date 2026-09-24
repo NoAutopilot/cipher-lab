@@ -4568,25 +4568,35 @@ dedicated repository clones of dbourdeau/cyphersolver (each target has its own w
 than the catalogue.html summary above) plus Tomokiyo's cryptiana pages and local DECODE snapshot. Full search
 log per row in the target's own NOTES.md.
 
-- **CS2-01** -> `ciphers/fr3022-garbino-1528/` -- **blocked, held** (edition not read; LANE N3 orchestrator 15:36, csED). Bourdeau's own `vasto1527/` folder: full
-  transcription made (~3,900 code groups), non-alphabetical numbering proven, annealer validated on a matched
-  control at only ~46% token accuracy -- "not solved... needs the base key or real cribs." No source claims a
-  solution.
-- **CS2-02** -> `ciphers/fr3151-seure-1558/` -- **blocked, held** (edition not read; LANE N3 orchestrator 15:36, csED). Bourdeau's own `guiche1551/` folder: Seure
-  explicitly "not attempted... left as a multi-session job", distinct from the La Guiche/Noailles items in the
-  same recueil that were partly read.
+- **CS2-01** -> `ciphers/fr3022-garbino-1528/` -- **open** (edition check LANE N3 csED, 24 Sept 2026: CSP Spain
+  III.2 read in full for April 1528 via British History Online, Lanz *Correspondenz Karls V* vol.1 read via
+  archive.org full text, neither carries the letter or a decipherment; Sanudo *Diarii* vol.47 fetched but OCR
+  too degraded to search). Bourdeau's own `vasto1527/` folder: full transcription made (~3,900 code groups),
+  non-alphabetical numbering proven, annealer validated on a matched control at only ~46% token accuracy --
+  "not solved... needs the base key or real cribs." No source claims a solution.
+- **CS2-02** -> `ciphers/fr3151-seure-1558/` -- **open** (edition check LANE N3 csED, 24 Sept 2026: Ribier's
+  *Lettres et mémoires d'estat*, both surviving tomes, and Francisque-Michel's *Les Portugais en France, les
+  Français en Portugal* (1882) read in full via archive.org, neither names Seure or Fresne in connection with
+  these letters; Vertot/Villaret's Noailles-England edition not read, low priority). Bourdeau's own
+  `guiche1551/` folder: Seure explicitly "not attempted... left as a multi-session job", distinct from the La
+  Guiche/Noailles items in the same recueil that were partly read.
 - **CS2-04** -> `ciphers/fr3984-sega-1593/` -- **blocked**, not open. Bourdeau's own `sega1593/` folder: key
   known, ~1,100 aligned training glyphs from a deciphered sibling, but a CNN classifier peaks at 73-79% and the
   polyphonic layer makes that unreadable -- "closed as not solvable with present tools" by his own session. Held
   at `blocked` here (not promoted to `open`) because the papal nunciature series for the date (*Acta Nuntiaturae
   Gallicae*, Sega legation 1592-94) could not be located online this pass -- rule 9. No nomination posted.
-- **CS2-05** -> `ciphers/fr3789-mariedemedicis-savary-1610/` -- **blocked, held** (edition not read; LANE N3 orchestrator 15:36, csED). The Lasry 2021 key (BnF
-  fr.3642, via DECODE R2077) was directly tried against this letter in Bourdeau's `breves1610/` folder and does
-  not read it from the available partial key photo -- "closed as unreadable from available sources" by his
-  session, not found-solved. A better image of fr.3642 or Lasry's own R2077 pair would reopen it.
+  Out of scope for csED (brief covers CS2-01/-02/-05 only).
+- **CS2-05** -> `ciphers/fr3789-mariedemedicis-savary-1610/` -- **open** (edition check LANE N3 csED, 24 Sept
+  2026: no printed edition of Marie de Médicis's letters or of Brèves's Rome embassy papers exists; Lasry's 2021
+  break covers a different, sibling letter -- Henri IV to Brèves, fr.3541, 5 Jan 1610 -- not this one, and was
+  never shown to read this passage). The Lasry 2021 key (BnF fr.3642, via DECODE R2077) was directly tried
+  against this letter in Bourdeau's `breves1610/` folder and does not read it from the available partial key
+  photo -- "closed as unreadable from available sources" by his session, not found-solved. A better image of
+  fr.3642 or Lasry's own R2077 pair would reopen it.
 
-Nomination lines posted to ROOM.md for CS2-01, -02, -05 (the three stage-2 `open` verdicts); none for CS2-04
-(`blocked`, per LANE N2 addition (e) and this row's own rule-9 gate).
+Nomination lines posted to ROOM.md for CS2-01, -02, -05 (the three stage-2 `open` verdicts, hold lifted by
+LANE N3 csED 24 Sept 2026); none for CS2-04 (`blocked`, per LANE N2 addition (e) and this row's own rule-9
+gate; out of csED's scope).
 
 ### Check-solved verdicts, CS2-06/-16/-17/-26/-28 (LANE N3 csCS2b, 24 September 2026)
 
@@ -4631,4 +4641,3 @@ Full search log per row in the target's own NOTES.md.
 Nomination line posted to ROOM.md for CS2-26 (the one stage-2 `open` verdict); none for CS2-06/-16/-28
 (`blocked`, edition not read this pass) or CS2-17 (`copy-order`, poor scan), per LANE N2 addition (e) and this
 lane's R8/LANE-N3-addition rules.
-

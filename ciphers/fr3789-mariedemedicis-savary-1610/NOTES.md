@@ -1,7 +1,10 @@
-blocked
+open
 
 
-**Held by the LANE N3 orchestrator, 24 Sept 2026 15:36 UTC:** status `blocked`, not `open`. The standard printed edition or calendar for the date was not located or read in the check-solved pass (section 2 below); under the lane rule (R8 lesson) that verdict is `blocked` until an edition check reads it. The nomination line posted 15:22-15:23 is held, not firm. Edition check: brief `.claude/briefs/runs/2026-09-24-lane-n3-csED.md`.
+**Edition check (LANE N3 csED, 24 Sept 2026 15:45 UTC):** hold lifted -- verdict `open`. No printed edition of
+Marie de Médicis's letters to Savary de Brèves or of his Rome embassy papers was located; Lasry's 2021 break
+covers a different, sibling letter (Henri IV to Brèves, fr.3541, 5 Jan 1610), not this one, and was never shown
+to read this passage (section 2 below). Brief `.claude/briefs/runs/2026-09-24-lane-n3-csED.md`.
 # Marie de Médicis to Savary de Brèves, Rome, 10 November 1610 — BnF fr. 3789 no. 12
 
 QUEUE row: CS2-05 (`sources/solver-diffs/2026-09-24-cyphersolver-site.tsv`, LANE N3 scout scCS2, 24 September
@@ -29,10 +32,18 @@ unrelated Savoy letter (a trap noted explicitly in his session).
    the one below, for an earlier period, and Tomokiyo's own text says it does *not* match the 1610 passages.
    henryiv.htm also separately notes a *different* correspondent's cipher reused in fr.3789: "a letter of
    Villeroi from December 1605 in BnF fr.3789 ..., f.26" -- a different folio, not this item.
-2. **Standard printed edition / calendar.** Not located this pass for Marie de Médicis's regency correspondence
-   specifically to Savary de Brèves (no dedicated printed edition of her letters to this ambassador found;
-   flagged for a future pass, not a blocker here since points 1, 3 and 4 below independently and directly name
-   this exact letter as undeciphered).
+2. **Standard printed edition / calendar (edition check, LANE N3 csED, 24 Sept 2026).** No dedicated printed
+   edition of Marie de Médicis's regency correspondence exists (WebSearch for "lettres de Marie de Médicis"
+   editions turns up only modern narrative histories of the regency -- e.g. Zeller, *La minorité de Louis
+   XIII; Marie de Médicis et Sully (1610-1612)*, on archive.org -- not a letters edition); this is a genuine
+   search result (no such edition to read), not an unreachable one. No printed embassy papers or *Relation* of
+   Savary de Brèves's 1608-1614 Rome mission were located either (WebSearch: his Rome-embassy letters and
+   dispatches are described only as unpublished BnF manuscript holdings). Lasry's 2021 work (point 3 below) is
+   the closest thing to an edition and is addressed there in full, including the specific question this brief
+   asks -- whether Lasry printed or deciphered this very letter (no: a different, sibling letter). No HistoCrypt
+   or other formal-paper publication of the Henri IV/Brèves break was found by WebSearch either; per Tomokiyo
+   and Bourdeau's notes (point 3), the reading exists only as a DECODE record (R2077) and a photographed key,
+   not print.
 3. **Lasry's publications (fr.3642 key).** This is the crux check for this row. Tomokiyo's `louisxiii.htm`
    records that a *similar-looking but different* cipher, used in a letter from **Henri IV** to Savary de Brèves
    of 5 January 1610 (BnF fr.3541, f.4-7, DECODE R2077), *was* solved ciphertext-only by George Lasry (with
