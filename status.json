@@ -413,7 +413,7 @@
    }
   },
   {
-   "name": "Thurloe State Papers: 23 letters printed with their cipher groups unread by the 1742 editor",
+   "name": "Thurloe State Papers: 23 cipher passages printed in Birch's 1742 edition",
    "year": "1653-1660",
    "ref": "Birch, A Collection of the State Papers of John Thurloe, vols 2, 3, 5, 7 (Internet Archive full text)",
    "folder": "ciphers/thurloe-printed",
@@ -421,13 +421,13 @@
    "state": "active",
    "holder": "Worker",
    "kind": "recovery",
-   "next": "Two solvers with matched controls: Montagu 20 Apr 1656 (319 groups, Tomokiyo's partial key as crib) and the Monck pool (1,610 tokens, no key). The five keyed letters are not read on Tomokiyo's page; his tables cover about a dozen values each, so they are cribs, not readings.",
-   "note": "All 23 letters extracted from the 1742 print on 24 Sept 2026 with OCR doubt marks (ciphers/thurloe-printed/index.tsv). None is a catalogued piece; none is read by Tomokiyo or either solver repository.",
+   "next": "LANE T (24 Sept 2026): six workers. A and B align Birch's printed decipherments (Fauconberg P16-P24; Blake, Montagu, Lockhart P9 P10 P14 P15); C and D consolidate the rows printed with no decipherment (P2-P8; P4-P7 one small-numeral pool); E runs the print check on those; F benchmarks the solver on Fauconberg against the printed decipherment, the matched control for any solver on P4-P7.",
+   "note": "Heading check, 24 Sept 2026: most rows are letters Birch printed WITH the contemporary decipherment set beside the numerals (Montagu 1656 aligned: 248 key values, H 36 C 228 of 319 tokens; nine Fauconberg-to-Henry-Cromwell rows, 1658, found-solved). The rows printed with numerals and no decipherment are P2-P8 (vols 2-3, 1654-55). No class assigned; nothing here is called new.",
    "wait": {
-    "on": "Extraction and key trial",
-    "since": "24 Sep 2026, 02:27 UTC",
-    "expected": "Within the hour",
-    "unblock": "Readings for the keyed letters; a system census for the rest"
+    "on": "LANE T workers A-F",
+    "since": "24 Sep 2026, 03:08 UTC",
+    "expected": "Within two hours",
+    "unblock": "Aligned keys for the printed-decipherment letters; a one-system verdict and a solver-length benchmark for P2-P8"
    }
   },
   {
