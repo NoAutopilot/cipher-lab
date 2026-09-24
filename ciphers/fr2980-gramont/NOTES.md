@@ -406,3 +406,49 @@ where to look next).
 
 Files touched: ciphertext.txt, reading.txt, reading_tokens.tsv, this section, ASKS.md (row 25 set to done).
 AUDIT.md, key.tsv and f.30 files not touched. No novelty wording used or implied.
+
+## f.30 passes (24 Sept 2026)
+
+Image work and two blind Sonnet passes only, per brief -- no reconciliation, no key application, no decoding.
+Retries the 01:32 claim on this same job (commit 229570d), which stalled without producing any output.
+
+**Images.** Re-fetched the f.30r (canvas f32) and f.30v (canvas f33) native-resolution IIIF regions named in
+`images/manifest.json` (4004x5566 and 4050x5567, matching the byte counts already recorded there); not
+committed, per the existing convention (re-fetchable from the same URLs). Cut 110 per-line-half crops (55
+manuscript lines x a/b halves, all under 2500px wide) reusing the box coordinates already computed in
+`crops/crops.json`/`crops/splits.json`, and packed them into `atlas/sheet01.jpg`-`sheet19.jpg` (6 rows per
+sheet, last sheet 2 rows) for the pass brief `atlas/PASS-BRIEF-f30.md`. Crop list recorded in
+`images/manifest.json` under `f30_line_crops_2026-09-24`. Folder now ~17MB, under the 30MB cap.
+
+**Passes.** Two independent Sonnet subagents, each given only `atlas/PASS-BRIEF-f30.md`, the two atlas images
+(`atlas_f29.png`, `atlas_f30add.png`) and the 19 sheets; neither saw the other's file, ciphertext.txt,
+reading.txt, key.tsv or NOTES.md. `passA_f30.tsv` and `passB_f30.tsv`, 110 rows each (f30r_L01a-f30v_L20b),
+header `row<TAB>codes`. Pass A: 1987 tokens, 257 `?` (12.9%), 0 invented/NEW codes. Pass B: 1926 tokens, 734 `?`
+(38.1%, self-reported lower confidence -- it read each sheet once without re-zooming individual rows), 0
+invented/NEW codes -- both passes matched every sign to the existing atlas.
+
+**Agreement** (difflib alignment per row on base codes, trailing `?` stripped, aggregated per manuscript line;
+a comparison count, not a reconciled reading): overall 1195/2004 = **59.6%**, well below f.29r's second-reader
+91.9% (higher-quality f.29r crops, established codebook by then) but far above the 29% an earlier shape-only
+attempt got on f.30 before this atlas existed (see "For the next worker" above). Worst-agreeing lines: f30v_L19
+(39%), f30r_L26 (46%), f30r_L25 (49%), f30r_L09 (49%), f30r_L11 (50%), f30r_L13 (50%), f30v_L17 (50%). Full
+per-line table is reproducible from `passA_f30.tsv`/`passB_f30.tsv` (script not committed this pass; the next
+worker can regenerate it with difflib the same way).
+
+**Hard crops**, flagged independently by both passes: a dark ink blot/smudge affecting f30r_L02a (sheet01) and
+again across f30r_L07a-L09a (sheet03) and f30r_L23a/L25a (sheets 08-09) -- this smudge region overlaps three of
+the seven worst-agreeing lines above, so it looks like the main driver of disagreement rather than scribal
+ambiguity alone. Also flagged: f30r_L16b (bleed-through from the adjacent line), f30v_L05a-L06a (pass A could
+not decide dot vs. a small "v"/lam sign), f30v_L14a (pass B: an unfamiliar boxed/stacked glyph, marked `BOX?`),
+and the right-hand (`b`) halves on sheets 12-19 generally, where pass B reports the crop running into the page's
+gray margin and cutting off the last sign or two.
+
+No decoding attempted, no key applied, no novelty wording. Status unchanged (partial: f.29r read, f.30 still
+unread). Requests this pass: gallica.bnf.fr 2 (both IIIF region fetches, 1.5s apart, 200 on first attempt, no
+retries needed). No other hosts, no logins, no subagents beyond the two pass workers (Sonnet, at most two at
+once). Cost well under the $10 cap.
+
+**For the next worker:** reconcile passA_f30/passB_f30 against the crops (same method as `reconciliation.md`
+used for f.29r), giving weight to the higher-confidence pass on rows where one used far fewer `?` than the
+other; re-crop or re-fetch the f30r_L02/L07-L09/L23/L25 blot region at higher zoom if the reconciler still can't
+resolve it; only then map codes to key.tsv values and decode.
