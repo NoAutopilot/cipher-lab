@@ -1,0 +1,264 @@
+line	pos	group	conf	note
+L01	1	_18	H	overline
+L01	2	15	H
+L01	3	19	H
+L01	4	_7	H	overline
+L01	5	4	M
+L01	6	21	H
+L01	7	61	H
+L01	8	64	H
+L01	9	9	H
+L01	10	m	M	clear text (single lowercase letter)
+L01	11	_28	H	overline
+L01	12	15	M
+L01	13	21	H
+L01	14	2	M	small stray mark/caret above, possibly not part of numeral
+L01	15	20	H
+L01	16	_21	H	overline
+L01	17	m	M	clear text (single lowercase letter)
+L01	18	15	H
+L02	1	18	H
+L02	2	_30	M	overline, digits uncertain
+L02	3	9	H
+L02	4	_34	M	overline
+L02	5	29	M
+L02	6	_0	M	overline
+L02	7	_34	M	overline
+L02	8	M.	H	clear text, title abbreviation
+L02	9	35	H
+L02	10	17	H
+L02	11	5	M	written bolder/darker than neighboring tokens
+L02	12	_14	H	overline
+L02	13	17	H
+L02	14	_97	L	overline, digits genuinely unclear
+L02	15	7	H
+L02	16	_7	H	overline
+L02	17	7	H
+L02	18	21	H
+L03	1	60	H
+L03	2	_28	H	overline
+L03	3	15	H
+L03	4	21	H
+L03	5	33	M
+L03	6	18	H
+L03	7	19	H
+L03	8	_13	H	overline
+L03	9	7	H
+L03	10	_26	M	overline
+L03	11	_7	H	overline
+L03	12	7	H
+L03	13	21	H
+L03	14	61	H
+L03	15	_14	H	overline
+L03	16	15	H
+L03	17	71	M
+L03	18	21	H
+L04	1	35	H
+L04	2	18	H
+L04	3	20	H
+L04	4	61	H
+L04	5	20	H
+L04	6	23	H
+L04	7	_12	H	overline
+L04	8	19	H
+L04	9	36	H
+L04	10	M.	H	clear text, title abbreviation
+L04	11	_18	H	overline
+L04	12	18	H
+L04	13	42	H
+L04	14	16	M
+L04	15	10	M	small point/comma mark immediately after this token
+L04	16	96	M
+L05	1	71	M
+L05	2	20	H
+L05	3	70	M
+L05	4	7	H
+L05	5	_13	H	overline
+L05	6	15	H
+L05	7	20	H
+L05	8	40	H
+L05	9	15	H
+L05	10	_11	H	overline
+L05	11	71	M
+L05	12	_23	M	overline
+L05	13	21	H
+L05	14	19	H
+L05	15	m	M	clear text (single lowercase letter)
+L05	16	115	L	genuinely ambiguous: one 3-digit group vs "11"+"5"
+L05	17	36	H
+L05	18	60	H
+L05	19	4	H
+L05	20	_13	H	overline
+L06	1	15	H
+L06	2	_11	H	overline
+L06	3	_70	M	overline
+L06	4	_0	M	overline
+L06	5	5	H
+L06	6	61	H
+L06	7	39	M
+L06	8	71	M
+L06	9	m	M	clear text (single lowercase letter)
+L06	10	4	H
+L06	11	_22	H	overline
+L06	12	24	H
+L06	13	18	H	written bolder/darker ink than neighbors
+L06	14	_17	H	overline
+L06	15	73	M
+L06	16	15	H
+L06	17	_11	H	overline
+L07	1	6	H
+L07	2	_16	H	overline
+L07	3	_13	H	overline
+L07	4	15	H
+L07	5	19	H
+L07	6	31	M
+L07	7	16	H
+L07	8	61	H
+L07	9	60	H
+L07	10	mais	H	clear text
+L07	11	aussy	H	clear text
+L07	12	55	M	written as two long-s-like strokes for 5,5
+L07	13	9	H
+L07	14	_0	M	overline
+L07	15	9	H
+L07	16	71	M
+L07	17	96	M
+L08	1	4	H
+L08	2	_13	H	overline
+L08	3	15	H
+L08	4	_11	H	overline
+L08	5	6	H
+L08	6	M.	H	clear text, title abbreviation; small superscript caret-like mark above (possibly "r" of "M.r")
+L08	7	35	H
+L08	8	17	H
+L08	9	5	H
+L08	10	_14	H	overline
+L08	11	18	H
+L08	12	_16	H	overline
+L08	13	_18	H	overline
+L08	14	15	H
+L08	15	19	H
+L08	16	20	M
+L08	17	18	L	at right edge of crop, possibly cut off / line boundary uncertain
+L09	1	24	H
+L09	2	7	H
+L09	3	9	H
+L09	4	62	H
+L09	5	2	H
+L09	6	et	H	clear text
+L09	7	cest	H	clear text
+L09	8	cequi	H	clear text
+L09	9	donne	H	clear text
+L09	10	lieu	M	clear text; cursive flourish makes exact word slightly uncertain
+L09	11	de	H	clear text
+L09	12	76	L	overline, digits hard to read
+L09	13	17	H
+L09	14	_11	M	overline
+L09	15	21	H
+L10	1	20	H
+L10	2	70	M
+L10	3	_28	H	overline
+L10	4	15	H
+L10	5	21	H
+L10	6	18	H
+L10	7	_6	M	overline
+L10	8	16	H
+L10	9	10	H
+L10	10	_11	M	overline
+L10	11	21	H
+L10	12	66	H
+L10	13	20	H
+L10	14	115	L	genuinely ambiguous: one 3-digit group vs "11"+"5", as in L05
+L10	15	_7	H	overline
+L10	16	19	H
+L11	1	m	M	clear text (single lowercase letter)
+L11	2	_28	H	overline
+L11	3	15	H
+L11	4	21	H
+L11	5	_0	M	overline, followed by a small point/dot
+L11	6	21	H
+L11	7	61	H
+L11	8	m	M	clear text (single lowercase letter)
+L11	9	31	M
+L11	10	7	H
+L11	11	8	H
+L11	12	_7	H	overline
+L11	13	24	H
+L11	14	18	H
+L11	15	19	H
+L11	16	_0	M	overline
+L11	17	21	M
+L11	18	19	M
+L11	19	71	L
+L12	1	20	M	first digit ambiguous, could be 9
+L12	2	61	H
+L12	3	20	H
+L12	4	m	M	clear text (single lowercase letter)
+L12	5	1	H
+L12	6	40	H
+L12	7	15	H
+L12	8	_11	H	overline
+L12	9	20	H
+L12	10	m	M	clear text (single lowercase letter)
+L12	11	42	H
+L12	12	18	H
+L12	13	5	H
+L12	14	20	H
+L12	15	_16	H	overline
+L12	16	17	H
+L12	17	9	H
+L13	1	21	M	page shows two overlapping text rows (bleed-through/ghosting); reading the darker row
+L13	2	20	H
+L13	3	77	L	could be 33 or 77, ink ambiguous
+L13	4	20	H
+L13	5	33	L
+L13	6	7	H
+L13	7	21	H
+L13	8	20	H
+L13	9	_76	L	overline, digits unclear amid bleed-through
+L13	10	16	M
+L13	11	61	H
+L13	12	m	M	clear text (single lowercase letter)
+L13	13	_21	M	overline
+L14	1	8	M	page shows two overlapping text rows (bleed-through/ghosting); reading the darker row
+L14	2	20	H
+L14	3	_28	M	overline
+L14	4	21	L
+L14	5	7	H
+L14	6	18	H
+L14	7	2	H
+L14	8	1	H
+L14	9	41	M
+L14	10	4	H
+L14	11	19	H
+L14	12	76	M
+L15	1	24	M	page shows two overlapping/faint text rows (bleed-through); line boundary and reading quality poor throughout
+L15	2	18	H
+L15	3	59	L
+L15	4	40	M
+L15	5	17	H
+L15	6	70	L
+L15	7	80	L	very faint, may belong to an adjacent line
+L15	8	9	M
+L15	9	71	L
+L15	10	_7	L	overline, very faint
+L15	11	m	M	clear text (single lowercase letter)
+L15	12	9	H
+L15	13	19	H
+L15	14	_78	L	overline, very faint
+L15	15	18	M
+L16	1	59	M	page shows two overlapping/faint text rows (bleed-through); line boundary and reading quality poor throughout
+L16	2	20	H
+L16	3	_22	M	overline
+L16	4	31	L
+L16	5	24	H
+L16	6	7	H
+L16	7	76	M
+L16	8	13	L
+L16	9	8	L	very faint, may belong to an adjacent line
+L16	10	20	M
+L16	11	_21	L	overline, very faint
+L16	12	_4	L	overline, very faint
+L16	13	9	M
+L16	14	62	H
+L16	15	21	H
