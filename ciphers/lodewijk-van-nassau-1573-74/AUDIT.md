@@ -165,14 +165,16 @@ is not excluded (see A1.3, Wiesbaden).
    search-within endpoint (23 queries, no captcha). Positive controls hit: "Lodewijk" 20, "1574" 15, "Dillenburg" 6,
    "Monseigneur" 16. Zero hits: Goch, Weeze, chiffre, cijfer, duplicata, "Pour Hollande", Mook, Cartilz, xije.
    "Wees" and "Meer" hit only unrelated pages (p.184 "wees reeds", p.129 German "Meer", p.v, p.157). The table of
-   contents (pp. x-xiii, read through the snippets) lists for 1573-74 only letters with Hesse, Mainz, Saxony,
+   contents (pp. x-xiii, read through the snippets; [V3c, 24 Sept 2026: pp. XI-XIII since read from page photographs, see
+   'Second opinion SO-LODEWIJK-1573-74']) lists for 1573-74 only letters with Hesse, Mainz, Saxony,
    Hendrik and Willem van den Berghe, and Orange to his brothers (LXI, 16 Oct 1573; LXII, 10 Oct). There is no
    letter of Lodewijk to Orange of 3 June or 2 July 1573, or of 6 March or 12 April 1574. **Result: none of the four
    is in Blok 1887.** This rests on search-within plus the table of contents, not a page-by-page read.
 3. **Blok, Lodewijk van Nassau (1889)**, full djvu text (IA `lodewijkvannass00blokgoog`) grepped. It never
    mentions a cipher, and it quotes none of the four. It led to two families V2 had not listed (items 6 and 7).
 4. **Kervyn de Lettenhove, Relations politiques des Pays-Bas et de l'Angleterre t. VI (1571-73) and VII
-   (1574-75).** V2 logged these as "IA title search found no item". They are on IA as `relationspolitiq06nethuoft`
+   (1574-75).** [Correction, V3c, 24 Sept 2026, from the title pages: t. VI covers 5 Oct 1570 - 29 Nov 1573,
+   t. VII 29 Nov 1573 - 28 Oct 1575, both Brussels 1888. Both were grepped in full, so coverage of the four dates is unchanged.] V2 logged these as "IA title search found no item". They are on IA as `relationspolitiq06nethuoft`
    and `relationspolitiq07nethuoft`, and their full text was grepped. Their "(En chiffre)" pieces are all from
    Spanish agents (Guerau de Spes, Guaras, Sweveghem, Mendoza). Every "Lettres interceptées" heading (for example
    t. VI no. MMDCXIX, 17 Aug 1573; t. VII, Heton, 3 Jan 1574) concerns English or Spanish correspondence. Louis
@@ -456,3 +458,33 @@ No item found that quotes, paraphrases or decodes 4610, 4611, 4612 or 4616. No `
 Requests (G1): api.archives-ouvertes.fr 2; www.googleapis.com (books/v1 + search-within) 24; api.openalex.org 1
 (429); api.semanticscholar.org 1 (429). No archive.org, no HathiTrust (Granvelle tome identity unresolved, so
 LANE W2 was not called in). No subagents.
+
+## Second opinion SO-LODEWIJK-1573-74 (ChatGPT, pull request 8), checked 24 Sept 2026, 16:29 UTC
+
+Verifier V3c (Opus, for LANE V4, session_01HBMnLTuZ2DR2voSQ3vFQHs). Input: `second-opinions/chatgpt-2026-09-24.md` (GPT-6,
+copied from branch `second-opinion/SO-LODEWIJK-1573-74`, PR 8, unmerged). It reports no page-citable print and no surviving
+independent decipherment of 4610, 4611, 4612 or 4616, and adds cautions and leads. Each checkable claim was checked against
+the source named below. No decoding.
+
+| # | claim | source checked | verdict | correction made |
+|---|---|---|---|---|
+| 1 | Groen IV, Lettre CDLXXXIV, pp. 368-369, Orange to Louis, 15 Apr 1574, acknowledges a letter of the 12th; a reply, not a print of 4616, and not proof that a written decipherment survives | DBNL `groe009arch04_01_0107.php`: "Lettre CDLXXXIV", [pagina 368]-[369], "receu vostre lettre du xij e du présent, et veu par icelle jusques à où vous estes arrivé" | **right**; agrees with section 1 and V7 | none: section 1 already says "no surviving decipherment located" |
+| 2 | Groen IV CDXXVII pp. 156-160 and CDXXXIII p. 175ff answer 4610 and 4611 (it marked these unverified) | DBNL `_0045.php` (CDXXVII, "Vostre lettre du 3e jour de ce mois", page markers 157-160 after the letter's start, so it begins on p. 156) and `_0052.php` (CDXXXIII, pages 175-178) | **right** (our citations confirmed) | none |
+| 3 | La Huguerye, Mémoires inédits t. I (1877) pp. 175-176 describes the duplicates and the four-part cipher; context, not a print of the four and not a description of the five-number table | IA `mmoiresindit01lahuuoft` djvu text: "duplicata des dépesches" under running head "MÉMOIRES DE LA HUGUERYE. 175"; "sillabes, lettres, vocables et nulles" before head "176" | **right**; the caution matches A1.2 item 6 | none |
+| 4 | Blok, Correspondentie ..., WHG n.r. 47, Kemink & Zoon 1887; the contents claim (pp. x-xiii) rests on snippets; zero-hit searches cannot exclude a differently spelled place or a clear copy | Google Books API `vfYnSGD4fpQC` (Kemink and zoon, 1887, 210 pp.); **its scan lead, periodata.nl `BlokCorrespondentieLodewijk.pdf` (photographs by G.W. Drost, 113 slides, title slide "Nieuwe serie nr 47 ... 1887. XIII, 210 blz."), loaded here.** Contents pp. XI-XIII read from the photographs: the 1573-74 entries are LVI-LXXVII (Lodewijk to Hessen 25 May 1573, August of Saxony, Hessen to Mainz, a Schuldbekentenis, Theyllingen, de Fiennes, Orange to his brothers 16 Oct 1573 (LXI), Orange to Lodewijk 10 Oct 1573 (LXII), Lodewijk to Hessen Jan-Feb 1574, Hendrik 13 Jan 1574, Van den Berghe 3 Mar 1574, Malsburg, the Rhenish electors' councillors 31 Mar 1574, Hessen to Saxony Apr-Jun 1574, Frederik of the Palatinate, Nalatenschap); part II (I-XVIII, 1566-1579) has none either | **right** on the bibliography and on the method caution; **the gap it names is now closed at contents level**: no letter of Lodewijk to Orange of 3 Jun or 2 Jul 1573, or 6 Mar or 12 Apr 1574, is listed | A1.2 item 2 and NOTES.md (V2 section) annotated. A contents listing is still not a page-by-page read of every letter; the text pages of the scan were not read (image-only, no text layer) |
+| 5 | Kervyn, Relations politiques t. VI covers 1570-1573 and t. VII 1573-1575, not 1571-73 and 1574-75 as AUDIT.md says | IA `relationspolitiq06nethuoft` / `07nethuoft` title pages: "TOME VI ... (5 octobre 1570 - 29 novembre 1573) ... 1888"; "TOME VII ... Première partie (29 novembre 1573 - 28 octobre 1575) ... 1888" | **right** | A1.2 item 4 corrected in place. No coverage effect: both volumes were grepped in full |
+| 6 | WVO 4610, 4611, 4612, 4616, dates and KHA A 11/XIV D/13a (marked "inherited from the prompt") | section 2 and section 4 (WVO records fetched by V2) | **consistent with the repo**; not re-fetched | none |
+| 7 | No known file/folio for a counterpart in Wiesbaden, Marburg or Dresden; an Arcinsys web-index search found none, which is not a catalogue examination | not re-run | **unverifiable**, and consistent with the residual already logged (A1.3, D1) | none; the Wiesbaden residual stands |
+| 8 | 4612's keyed runs mostly fail to read French; a C numeral attests a value aligned in 4613/4615, not the target's word; test 4612 for a changed table | section 2 (4612 775 numerals, C 369; runs "mostly do not read as French") | **right**; matches our own caution | none: 4612 already N3 with no reading; the table-change test is already a logged solver suggestion |
+| 9 | Groen IV CDLXXXIII pp. 364-366 is 5811 (it marked this unverified) | DBNL `_0106.php`: "Lettre CDLXXXIII", [pagina 364]-[366]; p. 367 is Groen's commentary on Mookerheyde | **right** (our citation confirmed) | none |
+
+**Its leads, one line each.** Blok page images: done at contents level (row 4); the text pages remain unread and are a
+low-value residual, since the contents list no candidate. Kervyn: covered (A1.2 item 4, full-text grep). Item-level archival
+counterparts (HHStA 170/171, Marburg, Dresden): the logged residual, not actionable from here. Modern study of the
+five-number table: none known to it, none to us.
+
+**Class.** No check found a prior print or decipherment. **4610, 4611, 4616 stay N4** ("no prior decipherment located");
+**4612 stays N3**. The Blok 1887 contents check narrows the residual behind N4; it does not raise any item to N5.
+
+Requests (V3c, this label): www.dbnl.org 5; archive.org 3 (one full djvu text, two 6 KB ranges); www.googleapis.com 1;
+www.periodata.nl 1. No subagents.

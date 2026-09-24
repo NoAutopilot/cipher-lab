@@ -461,7 +461,9 @@ Host: resources.huygens.knaw.nl, 6 PDF fetches this pass (shared budget with the
 AUDIT.md: 4610 N3, 4611 N3, 4612 N3, 4616 N3. None of the four is printed in Groen van Prinsterer (t. III-V, Supplément,
 searched by date and full text on DBNL), Gachard (Guillaume t. III; Philippe II t. II-III), Kervyn (Huguenots et Gueux
 t. III) or Blok 1889. Blok 1887 (Werken HG n.s. 47) was checked only by HathiTrust per-page word counts: its 1573-74
-pages are German. Orange's printed replies to 4610, 4611 and 4616 (Groen IV, Lettres CDXXVII, CDXXXIII, CDLXXXIV)
+pages are German. [Superseded: A1 searched it inside Google Books, and on 24 Sept 2026 V3c read its contents pp. XI-XIII
+from page photographs (periodata.nl, G.W. Drost): no letter of Lodewijk to Orange of the four dates; AUDIT.md 'Second
+opinion SO-LODEWIJK-1573-74'.] Orange's printed replies to 4610, 4611 and 4616 (Groen IV, Lettres CDXXVII, CDXXXIII, CDLXXXIV)
 answer their content. N4 is withheld: Blok 1887 was not read, Kervyn's Relations politiques, the KHA inventory and
 the Wiesbaden papers were not searched, and OpenAlex/S2 were unreachable. Note for the solver: 4612's keyed runs
 mostly do not read as French under the 4613/4615 key, so test for a changed table in 1574.
