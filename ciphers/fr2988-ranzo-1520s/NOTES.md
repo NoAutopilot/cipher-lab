@@ -1,5 +1,7 @@
 open
 
+**LANE N3 orchestrator, 24 Sept 2026 18:03 UTC:** open, but not a separate nomination: same Ranzo corpus as ciphers/fr3022-garbino-1528 (Bourdeau pooled both); the recovery/cryptanalysis lane should treat them as one target.
+
 **Edition check (LANE N3 csED3, 24 Sept 2026 18:xx UTC):** hold lifted -- verdict `open`, but **same key/corpus as
 CS2-01 (`ciphers/fr3022-garbino-1528`), already on the board -- do not open a second board slot for this folder.**
 Calendar of State Papers Venice vols III (1520-1526) and IV (1527-1533), full text, and Marino Sanudo's *I Diarii*

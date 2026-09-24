@@ -160,7 +160,7 @@ every briefed job has a result.
   same page had agreed 4.7%.
 - Control first again settled a cryptanalysis question in five minutes (I, $2.10).
 
-## LANE N3 handoff (session_01QimvzgvoH4ALachGScXUC9), 24 September 2026, 16:36 UTC
+## LANE N3 handoff (session_01QimvzgvoH4ALachGScXUC9), 24 September 2026, 16:36 UTC, updated 18:05 UTC
 
 Lane: copy-free nominations, successor to LANE N2 (14:16). Ran 14:46-16:36 UTC under the seven-day `allowed_warning` (owner's decision
 14:50; never `rejected`). Own usage about $11.5 of $35; 8 Sonnet workers $25.59, every one ledgered and archived. Briefs:
@@ -185,6 +185,19 @@ July 1593 by eye or OCR) unblocks CS2-06 and CS2-16; (2) a verifier/image check 
 recovery pick: fetch fr.3642 at full size from Gallica and apply it; (4) the 22 copy-order CS2 rows could turn copy-free only through DECODE full images
 (ASKS 42) or the holding archives' own viewers (Saxony R5005-08, BayHStA ÄA 4591 R9319/R9424 are the likeliest); (5) the keys TSV against unread
 Gallica siblings for the recovery lane.
+**Widening, 16:58-18:05 UTC (parent relaying the owner, cap $60, 6 workers):** five more workers, $30.3. Tested negatives, closed as copy-free
+nomination sources: e-manuscripta.ch (OAI has no full-text verb) and e-codices (no letters facet); Europeana TEXT+IMAGE ('cipher' = monogram in
+images); Grotius Briefwisseling (keys only, no ciphertext), KB manuscripts (portal retired, collecties.kb.nl Cloudflare); Kalliope digital-copy
+filter (no SRU index; 26 digitised hits all excluded) and handschriftenportal.de (medieval book secret-writing). Vatican digi.vatlib not re-run
+(LANE N clean negative). From the last CS2 rows: **beinecke-mellon29-elia** (CS2-14, Elias of Cortona alchemical cipher ff.1v-2r, Yale IIIF, open
+after csED3; Witten/Pachella catalogue not digitised) is a firm copy-free nomination; **fr2988-ranzo-1520s** (CS2-15) is open but folded into
+fr3022-garbino-1528 (same Ranzo corpus); fr15564-mercoeur-1586 blocked (no edition for June 1586); sanguszkow-mniszech-dunin-1714 copy-order;
+fr.3985 no.7 found-solved (plaintext = Goujet v.5). **Retracted: fr3993-villeroy-1595** (its Gomberville t.2 search likely ran on the Première
+partie: csGOM found only Première-partie arks on Gallica, content ending before 1591); CS2-06/-16 stay blocked for the same reason.
+**Firm copy-free nominations at 18:05: 4** -- fr3022-garbino-1528 (+ fr2988 Ranzo), fr3151-seure-1558, fr3789-mariedemedicis-savary-1610 (recovery),
+beinecke-mellon29-elia. Next for Gomberville: the seconde partie in another library (BSB, ONB, Google Books via LANE V) unblocks three targets
+(villeroy, lauriere, dinteville). Retrospective trigger passed (19 LANE N3 ledger rows, ~$62 workers): flagged to the parent 17:39.
+
 **Lessons (written into lane-n3-COMMON.md where they are rules):** (1) check-solved workers call 'open' with the edition "not located this pass"
 (csCS2a, third time today); the rule now says the nomination line needs the volume and pages read in NOTES section 2, and an edition-check worker
 ($3-4) after check-solved is the cheap fix. (2) Workers misuse status words (csED2 wrote `partial` for "partly printed"): the orchestrator corrects

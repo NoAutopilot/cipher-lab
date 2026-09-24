@@ -1,4 +1,6 @@
-open
+blocked
+
+**Held by the LANE N3 orchestrator, 24 Sept 2026 18:03 UTC:** status `blocked`, not `open`. Section 2 rests on Bourdeau's Gallica full-text search of Gomberville t.2, but csGOM (17:49) found that the only Gomberville arks on Gallica (bpt6k6435941k, bpt6k8717151d) are two copies of the Première partie, whose content ends before 1591; no seconde partie ark was found, so the 1595 search most likely ran against the wrong tome. Needs the seconde partie read (another library or a print copy) before it is open again. See ciphers/fr3625-lauriere-1593/NOTES.md.
 
 # Nevers to Villeroy, Saint-Quentin, 16 August 1595 — BnF fr. 3993 no. 102 (ff. 148r–149r)
 

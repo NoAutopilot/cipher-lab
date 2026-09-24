@@ -4624,7 +4624,7 @@ Full search log per row in the target's own NOTES.md.
   target's score matches a 40%-noise control, i.e. the blocker is the B/W microfilm's legibility (~30-40%
   read), not the cryptanalysis. Gomberville 1665 (both parts) already searched by Bourdeau for
   Vieuville/Vieville/Vieuuille/Aignan near 1587: no hit. Needs a colour scan or BnF reading-room access.
-- **CS2-26** -> `ciphers/fr3993-villeroy-1595/` -- **open**, nominated (cryptanalysis). Bourdeau's own
+- **CS2-26** -> `ciphers/fr3993-villeroy-1595/` -- **blocked, retracted** (LANE N3 orchestrator 18:03: Gomberville t.2 search likely ran on the Première partie; csGOM). Was: open, nominated (cryptanalysis). Bourdeau's own
   `nevers1595/` folder is the strongest of this batch: full transcription (753 signs, 17 runs), eleven candidate
   Nevers keys from fr. 3995 ruled out, six unit-segmentation models run through a solver validated against a
   matched homophonic control that solves cleanly while every target run fails (rule 3 satisfied), and -- unlike
@@ -5035,7 +5035,7 @@ Follow-up to the 24 Sept scCS2 scout row above ("CS2-03, -14, -15, -27 are marke
   IIIF). No standard edition covering a June 1586 letter to Mercœur or from Guise located (Carné's Mercœur
   edition runs 1589-1598 only). Verdict `blocked` (edition not located, not `open`, per the LANE N3 addition).
   No nomination.
-- **CS2-15** (`ciphers/fr2988-ranzo-1520s/`): **edition check done, csED3, 24 Sept 2026** (hold lifted). CSP
+- **CS2-15** (`ciphers/fr2988-ranzo-1520s/`): **folded into CS2-01 fr3022-garbino-1528** (LANE N3 orchestrator 18:03: same Ranzo corpus, Bourdeau pooled it; one board slot, not two). **edition check done, csED3, 24 Sept 2026** (hold lifted). CSP
   Venice vols III (1520-1526) and IV (1527-1533) and Sanudo *I Diarii* vol. XLIII (Oct 1526-Jan 1527, bracketing
   the one hard date in the folder) read in full text, archive.org: no hit. DECODE R1894's hard filter (an
   attached "Transcription" document, found via Aymeloglu's public RecordsView scrape) checked and cleared -- it
