@@ -340,3 +340,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T17:54Z	session_0135A8C45WsmXm6gYxJQz5cP	LANE V4 verifier V6 (Opus, cap $10)	Ryabov 2025 vs fr20140-danzay-1557 f.35-36	OpenAlex hit with the owner key; Tomokiyo draft held
 2026-09-24T18:04Z	session_01C3rmpqmk4CZ2gUbGy3AjfV	LANE R4 Q (Sonnet, cap $4)	Mellon MS 29 pseudo-Elian capture	live
 2026-09-24T18:05Z	session_01WJSPFM5EBLw9onfZ7MNraD	Retrospective e (Sonnet, cap $10)	RETRO-2026-09-24e.md	after LANE N3 flag: 15 rows, $49 since 14:46
+2026-09-24T18:20Z	session_pending	S2 key check (Sonnet, cap $1)	CLAUDE.md playbook line	owner added a Semantic Scholar key 24 Sept 2026
