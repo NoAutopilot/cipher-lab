@@ -436,3 +436,23 @@ Corrections made in place: NOTES.md "WV2" verdict line (4503 and 5811 annotated 
 row for 5811/4503 (novelty field). NOTES.md status word stays `partial`.
 
 Requests (V7): www.dbnl.org 1; resources.huygens.knaw.nl 2. No other hosts. No subagents.
+
+## Residual families (LANE V3 G1, 24 Sept 2026)
+
+Searcher, not a verifier: LANE V3 worker G1 (Sonnet, cap $5), 24 Sept 2026, 12:05-12:15 UTC. This session did not
+solve, decode or re-read the cipher, and set no N-class. It closed named gaps against D1's table (section "N4
+decision (D1)" above) for 4610, 4611 and 4616 (N4) and 4612 (N3, out of scope for class change). Nothing here
+lowers or raises a class; the results go to the next N4-decision or retrospective session.
+
+| family | searched or unreachable | route and queries | result |
+|---|---|---|---|
+| Daussy, "Louis de Nassau et le parti huguenot" (2007), the HAL item D1/A1 left unread | **searched** | `api.archives-ouvertes.fr/search/` confirmed `openAccess_bool: false` (no attached PDF on HAL: not a reachability accident, the deposit itself carries no file). The piece is a chapter (pp. 31-43) in *Entre calvinistes et catholiques : les relations religieuses entre la France et les Pays-Bas du Nord (XVIe-XVIIIe siècles)*, ed. Krumenacker (PUR, 2007). Found on Google Books as `tjUsAQAAMAAJ` (NO_PAGES for the ordinary API, but `tools/gbooks_search_within.py` reaches it). Ran single-word search-within queries landing inside the article's own page range (31-43): "1573" hit pp. 40 and 42 (about the Schomberg embassy to the German princes, not Nassau's letters); "chiffre" returned only pp. 139 and 258, outside the article; "Orange" returned only pp. 240-262 (the town in Vaucluse, a different chapter); "Goch" and "Weeze" returned nothing in the volume at all; "Louis de Nassau" (3 words) was blocked by the endpoint | **No cipher, no Goch/Weeze, no chiffre inside Daussy's own pages.** By its title and this page-anchored sample it is party-political history (the huguenot party's dealings with Louis), not a cipher or correspondence study; nothing found that quotes or prints 4610/4611/4616. Read at the page level via search-within snippets, not a full page-by-page read: residual risk is small (the terms tried are exactly what a cipher discussion would use) but not zero |
+| Poullet/Piot, *Correspondance du cardinal de Granvelle, 1565-1586* — D1 logged "IA has only t. VI-XI... Google Books lists no full-view copy (2 API queries)" for what D1 called t. IV-V | **re-tried, still inconclusive on tome identity; content negative** | Google Books title search now lists 10 editions of this title (the multi-tome Poullet/Piot continuation series), 5 of them `ALL_PAGES`: `d7hCAQAAMAAJ`, `oNhuxIVUoNkC`, `IEXBRwjsjc4C`, `DVLp0PUCBlgC`, `kZiklb8G1Z8C`. None of the five carries a tome number in its Google Books metadata (title/subtitle/description all blank beyond the series title), so which one(s) cover 1572-75 could not be fixed from the API. Ran search-within (single words, 3 s apart) for "Nassau" (all 5: many hits, none dated 1573-74 or naming Louis's June/July 1573 or April 1574 letters), "chiffre" (3 of 5: only the ordinary sense "number", not a cipher passage), "Weeze" (all 5: zero), "Goch" (all 5: one hit, `DVLp0PUCBlgC` p. 438, "Goch uff Bleyenbeck genommen", German, in a volume whose other hits (Idiaquez, Antonio Pérez) place it in the 1580s, not 1573-74) | Inconclusive on whether the true t. IV/V (1572, 1573-74) is among these five or is one of the `NO_PAGES` copies; **content found is negative** wherever searched. D1's judgement stands unchanged: this correspondence is Spanish-side (Granvelle in Rome/Madrid after 1570), a real risk only for an intercept, and A1 already covered the intercept route (Gachard *Philippe II*, CODOIN 102) with none of the four found; La Huguerye says Alba's interceptions of this series never yielded their substance. Still logged as a gap, since tome identity was not resolved |
+| OpenAlex | **unreachable** | 1 query, `api.openalex.org/works?search=...` | HTTP 429, shared-IP daily budget ("$0 remaining; resets at midnight UTC"). Fourth 429 in this folder's log (V2, A1, D1, now G1); does not block N4 (Danzay/D1 precedent) |
+| Semantic Scholar | **unreachable** | 1 query, `api.semanticscholar.org/graph/v1/paper/search` | HTTP 429. Same precedent |
+
+No item found that quotes, paraphrases or decodes 4610, 4611, 4612 or 4616. No `flag for LANE V3` raised.
+
+Requests (G1): api.archives-ouvertes.fr 2; www.googleapis.com (books/v1 + search-within) 24; api.openalex.org 1
+(429); api.semanticscholar.org 1 (429). No archive.org, no HathiTrust (Granvelle tome identity unresolved, so
+LANE W2 was not called in). No subagents.

@@ -674,3 +674,29 @@ read the regest. G3's flag came from the bare code's legend without the date. It
 here).
 
 Requests (V8): www.googleapis.com 18 (books/v1, >=3 s apart). No other hosts, no subagents.
+
+## Residual families (LANE V3 G1, 24 Sept 2026)
+
+Searcher, not a verifier: LANE V3 worker G1 (Sonnet, cap $5), 24 Sept 2026, 12:10-12:15 UTC. This session did not
+solve, decode or re-read the cipher, and set no N-class.
+
+The brief's named gap — "Kluckhohn, *Briefe Friedrich des Frommen* I (IA `bub_gb_3N1SAAAAcAAJ`), OCR
+Fraktur-garbled, 'a negative is weak'" — is **stale**: it describes A2's state, not the folder's current state.
+D2 (section "N4 decision (D2)" above) already found that `bub_gb_3N1SAAAAcAAJ` is only vol. II.2, located the
+correct microfilm item `briefefriedrichd00frie` (all volumes, Columbia), and read the Oct 1561-Jan 1562 run
+(nrs. 140-153) at sentence level, not by OCR-garbled single-token grep: no letter from August, and no mention of
+Orange, in that run. That closed exactly the gap this brief describes. Both 53 and 57 are already **N4** (D2,
+confirmed against DNOK by V8); 126 is already N4 (D1). No re-search was done here to avoid duplicating D2's work
+under CLAUDE.md's fan-out rule (shared scripts and closed gaps before new passes); this section exists so the
+next reader of this file sees the gap named as closed and does not reopen it.
+
+| family | searched or unreachable | route and queries | result |
+|---|---|---|---|
+| Kluckhohn, *Briefe Friedrich des Frommen* I | **already closed (D2, prior session)** | not re-run here | see above: no letter from August or Orange, Oct 1561-Jan 1562 |
+| OpenAlex | **unreachable** | 1 query (shared with the Lodewijk check above, same session) | HTTP 429, same shared-IP daily budget. Fifth 429 logged in this folder (V3/A2, A3, D2, D2 again, now G1); does not block N4 |
+| Semantic Scholar | **unreachable** | 1 query (shared with the Lodewijk check above) | HTTP 429, same precedent |
+
+No item found, no class touched, no `flag for LANE V3` raised.
+
+Requests (G1, this target): 0 new (Kluckhohn not re-run); OpenAlex/Semantic Scholar counted once against both
+targets in this session's total (see lodewijk-van-nassau-1573-74/AUDIT.md). No subagents.

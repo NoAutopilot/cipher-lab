@@ -131,3 +131,7 @@ ciphers/eckert-1864	21	Meigs Butler April 1864 cavalry horses (N4-decision retry
 ciphers/eckert-1864	21	Meigs Butler 1864 cavalry depot (N4-decision retry)	api.semanticscholar.org	no hits [unreachable: 429, one pass]	2026-09-24
 ciphers/eckert-1864	22	Eckert cipher Military Telegraph 1864 (N4-decision retry)	api.openalex.org	no hits [unreachable: 429, one pass]	2026-09-24
 ciphers/eckert-1864	22	Eckert cipher Military Telegraph (N4-decision retry)	api.semanticscholar.org	no hits [unreachable: 429, one pass]	2026-09-24
+ciphers/lodewijk-van-nassau-1573-74	60	Louis de Nassau chiffre Orange 1573 (residual-family sweep, D1/A1's unread Daussy 2007 gap)	api.openalex.org	no hits [unreachable: 429, shared-IP daily budget, one pass]	2026-09-24
+ciphers/lodewijk-van-nassau-1573-74	60	Louis de Nassau cipher correspondence Orange	api.semanticscholar.org	no hits [unreachable: 429, one pass]	2026-09-24
+ciphers/august-van-saksen-1561-64	4	Louis de Nassau chiffre Orange 1573 (same query, shared session; Saxony-specific retry not separately run)	api.openalex.org	no hits [unreachable: 429, shared-IP daily budget, one pass]	2026-09-24
+ciphers/august-van-saksen-1561-64	4	Louis de Nassau cipher correspondence Orange	api.semanticscholar.org	no hits [unreachable: 429, one pass]	2026-09-24
