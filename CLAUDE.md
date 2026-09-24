@@ -60,7 +60,8 @@ session and every subagent, cloud or local.
 
 The orchestrator may post contributions to the solver repositories on GitHub (an issue, never a pull request, on
 dbourdeau/cyphersolver or aaymeloglu/unsolved-ciphers) and to DECODE once its login works, without asking, when
-every gate below is met. Emails to researchers, archives and dealers stay the person's: the orchestrator drafts
+every gate below is met. (24 Sept 2026: a cloud session's GitHub access is scoped to the owner's own repositories, so
+the issue text is drafted in `outreach/bourdeau-issues.md` and the owner posts it from their account, like an email.) Emails to researchers, archives and dealers stay the person's: the orchestrator drafts
 them in `outreach/` and the person sends them and records the date. Gates for any post: (1) the target's
 AUDIT.md carries a verifier's class; (2) for anything above N1, a second adversarial audit by a separate session
 has tried to find it in print and failed, the open-index scholarship pass (OpenAlex, Semantic Scholar, Persée, HAL, CrossRef) and the Google Books queries are done, and the target's rows in `JSTOR-QUEUE.tsv` are answered or waived by the owner;
