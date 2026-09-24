@@ -237,3 +237,13 @@ of f.54r against the atlas (as carpi classify.py) and have the passes only confi
 which removes the gap disagreements; sharpen or merge eps/e and h/bh in the atlas first.
 
 Requests: none (disk only). Subagents: 2 (Sonnet passes).
+
+## LANE R4 B stopped; partial gate measure (24 Sept 2026, 15:30 UTC, LANE R4 orchestrator)
+
+Worker B (session_01EXdQ9RrhhFBqgnb8DhByzv, Opus lead) was interrupted at 15:26 UTC at $13.56 against a $6 cap. Pushed: revised
+atlas, script classification of every f.54r box (f54r_boxes.tsv, f54r_boxlist_for_passes.tsv, strips/), pass A complete
+(passA2.tsv, 505 box rows), pass B partial (passB2.tsv, 211 rows, lines 1-8 pos 13). Both passes confirm or correct the script's
+code per box id, so they compare row by row without alignment. Orchestrator's scripted comparison on the rows both passes cover,
+boxes where both read '_' excluded: lines 1-7, **base codes 131/156 = 84.0%**, with marks 125/156 = 80.1% (with the partial line 8:
+142/169 = 84.0%, 132/169 = 78.1%). Against the 80% gate on base codes this is a pass on seven lines, not yet on the page. Next: finish
+pass B (lines 8 pos 14 to the end) blind to pass A, recompute, settle disagreements from the strips (brief lane-r4-g).
