@@ -1,0 +1,39 @@
+{
+  "fetched": "24 Sept 2026, LANE G print-check worker (Sonnet, cap $10, orchestrator session_014zWyan51u9qMn9gnHpm1Aq)",
+  "note": "Page images only (Gallica .texteBrut/ContentSearch is altcha-blocked per CLAUDE.md; not attempted). See AUDIT.md sections 'Print check through Gallica page images, 24 Sept 2026'.",
+  "champollion_figeac_captivite_1847": {
+    "ark": "bpt6k204021j",
+    "title": "Champollion-Figeac, Captivité du roi François Ier (1847)",
+    "files": {
+      "cf_title.jpg": "canvas f3, page VII (start of Introduction)",
+      "cf_toc1.jpg": "canvas f70, page LXXIV (Appendice piece no.2, 1524 Latin document)",
+      "cf_p1.jpg": "canvas f76, page 1 (start of main text, Première section, Oct 1524-Feb 1525)",
+      "cf_last.jpg": "canvas f746 (last canvas), 'TABLE GENERALE' -- confirms whole-volume scope Oct 1524-Apr 1526"
+    }
+  },
+  "camusat_meslanges_historiques": {
+    "ark": "bpt6k5039434",
+    "title": "Camusat, Meslanges historiques -- this Gallica scan is the TROYES 1644 troisiesme edition (Jacques Febure), not the 1619 first edition; scope 'depuis l'an 1390 iusques a l'an 1580' per title page",
+    "note": "Recueil of separately-foliated tracts bound together; no item-level table of contents exists, only a binder's cahier-order note (f8). The 'Lettres du Roy Francois premier & instructions a ses Ambassadeurs...avec le Roy d'Angleterre Henry 8' tract has its own foliation 1-217? (canvas 155 = its folio 1); sampled, not read in full.",
+    "files": {
+      "camusat_title.jpg": "canvas f3, title page (1644 Troyes 3e edition)",
+      "camusat_f5.jpg": "canvas f5, preface 'Au lecteur' (dispose/mettre en meilleur ordre)",
+      "camusat_f6.jpg": "canvas f6, preface continued (mentions Langey/du Bellay ambassadors)",
+      "camusat_f7.jpg": "canvas f7, preface end, signed 'N.C.T.'",
+      "camusat_f8.jpg": "canvas f8, 'INDICE AU RELIEUR POUR LA SUITTE DES CAYERS DE CE LIVRE' -- binder's gathering-order note: cayer 1 to feuillet 73; then 'Lettres du Roy Francois premier & instructions' to feuillet 217; then Sr de Taix memoirs (75 feuillets); then Sr de Mergey memoirs (26 feuillets)",
+      "camusat_f153.jpg": "canvas f153, whole-book label '73' -- end of first tract (Chancellerie/Notaires edict), confirms binder's note",
+      "camusat_f155.jpg": "canvas f155, tract's own folio 1 -- title 'LETTRES DV ROY FRANCOIS PREMIER ET INSTRUCTIONS...pour affaires traictees...avec le Roy d'Angleterre Henry 8', opening item 'Double d'une lettre escripte par le Roy a nostre... Pere le Pape touchant l'affaire du Roy d'Angleterre' (undated on this page)",
+      "camusat_f587.jpg": "canvas f587 (whole-book label '216', tract's folio 216) -- an initial attempt to locate the tract's own folio 217 (its stated end per the binder's note); running head reads 'Memoires ou meslanges' with unrelated later (Ligue-era, Troyes/Espagnol) religious content, showing the running head is a generic series title, not a tract marker -- superseded by the direct folio-155-onward sampling below, kept for the record",
+      "camusat_sample_f5.jpg": "tract folio 5 -- Cardinals mediating Emperor/Pope/Genoa league matter, 'a la fin du moys de May prochain' (undated but plausibly spring, unspecified year)",
+      "camusat_sample_f10.jpg": "tract folio 10 -- letter dated 'Escript a Avignon le 8 jour de Septembre 1533'",
+      "camusat_sample_f20.jpg": "not fetched -- gallica.bnf.fr connection reset, retried once (HTTP 500), not retried further per single-retry rule",
+      "camusat_sample_f30.jpg": "tract folio 30 -- Latin text re: Bononia (Bologna) congress, Turkish incursions into Hungary/Germany interrupting a prior congress (matches the second Bologna congress, winter 1532-33, not the 1530 one)",
+      "camusat_f60_not_fetched": "tract folio 60 -- gallica.bnf.fr connection reset twice (retried once per rule), not fetched",
+      "camusat_sample_f90.jpg": "tract folio 90 -- 'A Monseigneur...l'Evesque d'Auxerre Ambassadeur du Roy...deuers...le Pape a Rome', dated 'Paris le 7 jour de Ianvier 153[2/3]' (margin: 'Selon l'Edict, 1533'), names 'Cardinaux de Tournon & de Gramont' as advisors -- Gramont named but as third party, letter is from the King to the Bishop of Auxerre, not Gramont-authored, not to Villandry",
+      "camusat_sample_f120.jpg": "tract folio 120 -- 'Coppie de la lettre de Monsieur de Bayf' (undated), mentions Mr d'Albanie, Diete de Spire, ruines de Rome, Duc de Ferrare (~1532 context)",
+      "camusat_sample_f150.jpg": "tract folio 150 -- letter to 'Monsieur d'Auxerre' re: a cipher/decipherment matter ('Le dechiffrement porte le Conte de Lande'), undated on this page",
+      "camusat_sample_f180.jpg": "tract folio 180 -- 'A MONSIEUR DE VILLANDRE du 4 Decembre 1531' and 'A Mr. LE GRAND MAISTRE du 17 Decembre 1531' -- same correspondent name (period spelling) as our target's addressee, but dated Dec 1531, not May 1530; content is about the Auditor of the papal Chamber and Monsieur de Paris's judges, not our reading's phrases",
+      "camusat_last.jpg": "last canvas (f854) -- end of volume ('FIN'), Legation de Suede & Dannemarch epitaph; no table/index at end"
+    }
+  }
+}

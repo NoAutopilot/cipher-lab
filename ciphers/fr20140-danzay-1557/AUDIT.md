@@ -442,3 +442,66 @@ REQUEST.md/ASKS.md matter for the person, not a further worker pass with these t
 
 Requests: archive.org 9 (1 metadata, 6 be-api fts, 1 availability, 1 advancedsearch), all ≥2 s apart. WebSearch 1.
 No logins attempted (the availability check made login unnecessary), no credentials touched, no loan opened.
+
+## Print check through Gallica page images, 24 Sept 2026
+
+Worker session (Sonnet, cap $10, orchestrator session_014zWyan51u9qMn9gnHpm1Aq), 04:20-04:22 UTC (`date -u`
+read at the start of the whole session, 03:59 UTC). Not a verifier session: does not move the N3 class, does
+not decode. Brief: item 1 of "Still open for N4" above — read Delavaud, "Les Français dans le Nord", *Bulletin
+de la Société normande de géographie* XXXIII (1911), Gallica ark `bpt6k6571713p`, pp. 27-99 (sampled, not
+exhaustively), especially the pages around the fr.20140 note, for any quotation of a January 1557/58 Danzay
+letter to the Cardinal of Lorraine, against reading.txt. Page images only (`.texteBrut` is altcha-blocked per
+CLAUDE.md, not attempted). Full file list and per-page notes in `images/print_check/manifest.json`.
+
+**The fr.20140 note is on p. 74 of this Gallica copy, not p. 52 as the second audit's Google Books snippet
+metadata suggested** (that snippet gave "pp. 52/74" for the Bulletin and the offprint; on this copy it is 74,
+confirmed by directly reading the page). `tools/gallica_folio.py` shows this is a plainly paginated volume
+(canvas = page + 10), so p. 27, pp. 48-56, p. 70, pp. 74-80 and p. 85 were fetched directly. Page 52 itself
+(checked first, on the earlier snippet's steer) is mid-way through an unrelated passage on Christophe Richer's
+1541-1547 embassy; Danzay is not named there at all — he is first named on **p. 53** ("Son successeur fut
+Charles de Danzay, qui devait rester accrédité à Copenhague... pendant plus de quarante ans, de 1548 à 1589").
+
+**Page 74, footnote 3, read directly from the image, transcribes the exact sentence the second audit could
+only see as a Google Books snippet:** "Des dépêches inédites de Danzay, datant des années 1557 à 1568, se
+trouvent à la Bibliothèque nationale, dans les ms. 15967 (fo 624) et **20140 (fos 16-56)** du fonds français;
+une adressée au cardinal du Bellay dans le ms. 3921 (fo 62); deux, de 1570 dans le vol. 397 de la collection
+des Cinq-Cents Colbert (fos 135 et 139); six, de 1575 à 1583, dans le vol. 398 de la même collection; une à la
+reine-mère (23 novembre 1575) et une au roi (28 février 1578), dans le ms. 2812 du fonds français (fos 26 et
+37)." Two things this full sentence adds beyond the snippet: it is a bare finding-aid list of manuscript
+locations for a whole run of Danzay dispatches spanning three different registers (15967, 20140, and the
+letters named individually), not a description of any one letter's contents; and **Delavaud's own word for
+these dispatches is "inédites" — unpublished** — which directly corroborates NOTES.md's and this file's
+existing N3 finding, now from the primary page image rather than an API snippet.
+
+**Pages 75-79 read in sequence to check whether the discussion returns to quote the letters after this
+citation. It does not, for our target.** P. 75 opens "Les lettres de Danzay sont d'une lecture très
+attachante. Elles méritent d'être retenues parmi les plus intéressants documents diplomatiques de l'époque" —
+the sentence the second audit already had via snippet — then pivots immediately to a biographical notice
+(citing Rördam 1898 and A. Richard's 1910 monograph), not to reading the letters themselves. Pp. 76-77 give
+Danzay's biography: entry into royal service c. 1542, first Copenhagen posting from 28 Nov 1548, a second
+Copenhagen posting from 1554, and **"En 1557, il recevait de nouvelles lettres de créance; cette fois, qualifié
+d'ambassadeur et chargé de résider à titre permanent auprès du roi de Danemark"** — this places our target
+letter (27 Jan 1557, addressed as it is mid-transition) exactly at this biographical hinge, but Delavaud gives
+no letter content for 1557 itself; the one letter he does quote is a different one, to Christian III, dated
+23 May 1553. P. 78 then states plainly: **"Il serait hors de mon sujet de raconter les négociations poursuivies
+par Danzay au milieu des complications de la politique de ce temps... Je voudrais insister seulement sur...
+le développement du commerce français"** — Delavaud explicitly excludes political/diplomatic letter content
+from his own scope, in favour of the commercial history that occupies the rest of the article (confirmed by
+p. 79, which opens a new section on Baltic/Russian commerce 1569-1584 and leaves Danzay's letters behind).
+**No quotation, paraphrase or content of the 27 January 1557 letter to the Cardinal of Lorraine, or of any of
+reading.txt's clear-hand or decoded phrases, was found on any of the seventeen pages read.**
+
+**Net for step 1 of "Still open for N4": closed, as a clean negative rather than an unread snippet.** Delavaud
+1911 cites fr.20140 (including our f.35's folio range) only as an unpublished archival holding, explicitly
+declines to narrate Danzay's diplomatic correspondence, and quotes no phrase matching our reading anywhere in
+the pages checked (27, 48-56, 70, 74-80, 85). This does not by itself raise the class — Cuisiat 1998, JSTOR,
+and the open-index re-query (items 2-4 of "Still open for N4") are still outstanding — but it removes the one
+concrete, located, previously-unread source this file flagged as a residual risk for the clear-hand passages.
+
+**Requests this session.** gallica.bnf.fr: 19 (17 image fetches, 2 connection resets — pp. 27 and 54 — each
+retried once per the single-retry rule and succeeded on retry; 1 manifest fetch, clean). No other host. No
+logins, no credentials, no decoding, no subagents, no edits to reading.txt/key.tsv/ciphertext.txt. Images saved
+under `images/print_check/` (3.0 MB, well under the 30 MB cap).
+
+**Recommendation (not a class change — this worker does not move the class).** Item 1 of "Still open for N4"
+can be marked done. N3 should stay N3; items 2-4 remain for a future worker.

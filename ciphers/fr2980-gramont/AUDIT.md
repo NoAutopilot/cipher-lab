@@ -492,7 +492,96 @@ not further attempts on an already-identified block).
   possible via the API regardless of key. Three `intitle`-restricted content queries (Villandry; Gramont
   Villandry; Tarbe) returned 0 hits each, but this is a title-metadata filter, not a within-book search (same
   caveat the first audit already noted for Le Grand), and is weak evidence given the missing text layer.
-  **Located but still not full-text-searchable; status changes from "unreached" to "found, unreadable via API."**
+  **Located but still not full-text-searchable; status changes from "unreached" to "found, unreadable via API."
+  Closed below by a page-image read of the Gallica scan's own "Table générale" (24 Sept 2026): this gap no
+  longer needs closing, because the whole volume is now confirmed out of scope for a 1530 letter.**
+
+## Print check through Gallica page images, 24 Sept 2026
+
+Worker session (Sonnet, cap $10, orchestrator session_014zWyan51u9qMn9gnHpm1Aq), 03:59-04:20 UTC (`date -u`
+read at start and end). Not a verifier session: does not move the N3 class, does not decode. Brief: read
+Champollion-Figeac's *Captivité du roi François Ier* (1847, Gallica ark `bpt6k204021j`) and Camusat's
+*Meslanges historiques* (ark `bpt6k5039434`, per the "Toward N4" sections above) against reading.txt/
+reading_f30*.txt's decoded phrases, using IIIF page images only (`.texteBrut`/`ContentSearch` are altcha-
+blocked per CLAUDE.md and were not attempted). Full file list and per-image notes in
+`images/print_check/manifest.json`.
+
+**Champollion-Figeac — closed, definitively out of scope.** `tools/gallica_folio.py --list` shows the volume's
+roman-numeral front matter runs to page LXXVIII (canvas f74), then arabic pagination 1-659 (canvas f76 =
+page 1) to the last canvas (f746). The final canvas is not blank: it is the volume's own **"TABLE GÉNÉRALE"**,
+which gives the whole book's scope in the author's own words: Introduction (pp. VII-LXX); **Première section,
+Guerre du Milanais (Octobre 1524 — février 1525), p. 1; Deuxième section, Captivité en Italie (25 février —
+22 juin 1525), p. 129; Troisième section, Captivité en Espagne (22 juin — 31 décembre 1525), p. 231;
+Quatrième section, Délivrance de François Ier (Janvier — avril 1526), p. 458**; then the general document
+table (p. 569), the Appendice table (p. 618), and two alphabetical tables. Page 1 itself opens "Première
+section... (Octobre 1524. — 25 février 1525.)", matching the table exactly. **The entire volume's documents
+run from October 1524 to April 1526 — the King's captivity itself, ending at his release** — and cannot
+contain a letter of 20 May 1530, four years after the volume's own closing date. This is a stronger and
+cheaper result than the previous "not found on IA or through the Google Books API": it is not a search
+failure but a proof, from the book's own table of contents, that the target date falls entirely outside what
+this volume prints. No page-by-page phrase search was needed or attempted. Images: `cf_title.jpg` (p. VII),
+`cf_toc1.jpg` (p. LXXIV, an unrelated 1524 Appendice piece), `cf_p1.jpg` (p. 1), `cf_last.jpg` (last canvas,
+the Table générale).
+
+**Camusat, *Meslanges historiques* — not closed; this Gallica copy is a different edition, and the relevant
+section is too large to read page-by-page within this cap.** Two findings before the search itself. First,
+`bpt6k5039434`'s own title page (canvas f3) reads "TROISIESME EDITION... A TROYES, Par Iacques Febure...
+1644" — **this is the 1644 Troyes third edition, not the 1619 first edition** the earlier "Toward N4" pass
+was trying to reach via HathiTrust/Google Books identifiers (which are genuinely the 1619 edition, confirmed
+image-only). The two are different scans of the same underlying text ("depuis l'an 1390 iusques à l'an
+1580" per this title page), so this copy is still usable for a content search, but any page number found here
+will not match the 1619 pagination the earlier snippets used. Second, this is a **recueil of separately-
+foliated tracts bound together**, not a single continuously paginated book: canvas f8 carries an "INDICE AU
+RELIEUR" (binder's note) giving the physical cahier order — the first tract (marriage articles, Chancellerie/
+Notaires edicts) runs to its folio 73; then "le cayer commenceant par ces motz Lettres du Roy François premier
+& instructions... iusques au feuillet 217"; then the Sieur de Taix memoirs (75 leaves); then the Sieur de
+Mergey memoirs (26 leaves). Canvas f153 (whole-book label "73") confirmed the first tract's end (Notaires
+content); canvas f155 confirmed the second tract's own folio "1", titled **"LETTRES DV ROY FRANCOIS PREMIER ET
+INSTRUCTIONS A SES AMBASSADEURS... pour affaires traictées pour ledict Seigneur avec le Roy d'Angleterre HENRY
+8"** — i.e. this whole ~217-folio tract is French diplomacy around Henry VIII's Rome divorce case, the same
+affair Gramont's own 1530 Roman embassy served, and its second half of the title ("ensemble les memoires &
+lettres desdicts Ambassadeurs") means ambassador-authored letters (not only the King's) are included. No
+item-level table of contents exists anywhere in the volume for this or any other tract (checked the front
+matter, canvases f1-f8, and the last canvas, f854, "FIN" — a Legation de Suède & Dannemarch epitaph, not an
+index); only the binder's cahier note.
+
+Given no index, nine folios of the 217-folio tract were sampled (roughly every 15-40 folios, at 1.6 s
+intervals, one connection reset each at folios 20 and 60 that was not retried a second time per the single-
+retry rule): folio 1 (undated, "Double d'une lettre... au... Pape touchant l'affaire du Roy d'Angleterre"),
+folio 5 (undated, Cardinals mediating an Emperor/Pope/Genoa matter, "a la fin du moys de May prochain"),
+folio 10 (dated Avignon, 8 Sept **1533**), folio 30 (Latin text on a Bologna papal-imperial congress
+interrupted by Turkish incursions — matches the **second** Bologna congress of winter 1532-33, not the first
+one of Nov 1529-Mar 1530 that Gramont actually attended), folio 90 (dated Paris, 7 Jan 1532/33 per a marginal
+"Selon l'Edict" note, addressed to the **Bishop of Auxerre**, naming "Cardinaux de Tournon & de Gramont" as
+advisors still in Rome — **the only occurrence of Gramont's name found this session**, but as a third party in
+a King-to-Auxerre letter, not a Gramont-authored letter to Villandry), folio 120 (undated, "Coppie de la
+lettre de Monsieur de Bayf", mentions the Diet of Spire and the Duke of Ferrara, ~1532 context), folio 150
+(undated, a letter to "Monsieur d'Auxerre" about a cipher/decipherment matter), and **folio 180 ("A MONSIEUR
+DE VILLANDRE du 4 Decembre 1531")** — the same correspondent, in period spelling, as our target's addressee,
+but dated December 1531, eighteen months after our letter, and its content (the Auditor of the papal Chamber,
+Monsieur de Paris's judges) does not match any of reading.txt's or reading_f30's decoded phrases. The sampled
+folios run 1531-1533, not 1530, and are not in strict chronological order (folio 10 is later than folio 30 and
+90), so the May 1530 letter's absence from these nine folios is not evidence it is absent from the other
+~208. **Net: the right tract is identified and its correspondent (Villandry) does appear in it under a period
+spelling, but the specific 20 May 1530 letter was not found in the folios sampled, and a full page-by-page read
+of the remaining ~208 folios (roughly 400 pages) is outside this session's cap.** Gap (2) of "Toward N4" stays
+open; it is now better characterised (right edition confirmed present in substance, right tract identified,
+9/217 folios checked) rather than merely altcha-blocked. Images and per-folio notes: `images/print_check/
+manifest.json`.
+
+**Requests this session.** gallica.bnf.fr: about 33 (2 manifest fetches, both after one earlier reset each
+retried once and succeeded; 29 image fetches, all 200 except 2 connection resets — folios 20 and 60 of the
+Camusat tract — each retried once per the single-retry rule, the retry on folio 20 returning HTTP 500 and the
+retry on folio 60 resetting again, neither pursued further). No other host. No logins, no credentials, no
+decoding, no subagents, no edits to reading.txt/key.tsv/ciphertext.txt/reading_f30*.txt. Images saved under
+`images/print_check/` (3.1 MB, well under the 30 MB cap).
+
+**Recommendation (not a class change — this worker does not move the class).** Champollion-Figeac can be
+struck from the "still open" list entirely — it is now a closed, structural negative, not a search gap. Camusat
+remains open; the next worker on it should read the "Lettres du Roy François premier" tract's folios 1-90
+first (denser with Rome/1530-33 diplomatic material on this sampling) rather than resampling at wide
+intervals, and should expect the tract's own foliation (canvas = 155 + 2×(folio−1) on this ark) rather than
+the whole-book label. N3 should stay N3.
 - **Michon, *La Crosse et le Sceptre* (2008)**: located (`iwIMAQAAMAAJ`, and two other editions/reprints) but
   `viewability: NO_PAGES` — no snippet, no preview, nothing to search. **Confirmed unreachable**, not merely
   unsearched.

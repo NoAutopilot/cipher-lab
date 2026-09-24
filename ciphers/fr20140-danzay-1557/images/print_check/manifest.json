@@ -1,0 +1,29 @@
+{
+  "fetched": "24 Sept 2026, LANE G print-check worker (Sonnet, cap $10, orchestrator session_014zWyan51u9qMn9gnHpm1Aq)",
+  "note": "Page images only (Gallica .texteBrut is altcha-blocked per CLAUDE.md; not attempted). See AUDIT.md section 'Print check through Gallica page images, 24 Sept 2026'.",
+  "delavaud_1911": {
+    "ark": "bpt6k6571713p",
+    "title": "Delavaud, 'Les Francais dans le Nord', Bulletin de la Societe normande de geographie XXXIII (1911)",
+    "files": {
+      "delavaud_p27.jpg": "article opening page (title, unrelated content -- Ottar Jarl legend)",
+      "delavaud_p48.jpg": "section on early 16th-c. French-Scandinavian contacts",
+      "delavaud_p49.jpg": "section VI, Montjoye 1506, Pierre Cordier 1511",
+      "delavaud_p50.jpg": "Cordier's 1512 mission narrative",
+      "delavaud_p51.jpg": "1519 French troops in Scania; Christian II's French tastes",
+      "delavaud_p52.jpg": "Christophe Richer 1541-1552 embassy (NOT the fr.20140 note; that is on p.74, see below)",
+      "delavaud_p53.jpg": "Richer's mission continued; footnote 2 cites Richer's papers (Camusat 1625) and *first names Charles de Danzay* as Richer's successor, accredited at Copenhagen 1548-1589",
+      "delavaud_p54.jpg": "section VII opens (Russia/Baltic context), unrelated to Danzay",
+      "delavaud_p55.jpg": "continues Russia/Kock-Zitoma voyage narrative",
+      "delavaud_p56.jpg": "continues, unrelated to Danzay",
+      "delavaud_p70.jpg": "later Baltic/Arctic commerce narrative (Brunel, Moucheron), unrelated",
+      "delavaud_p74.jpg": "KEY PAGE: footnote 3 -- 'Des depeches inedites de Danzay, datant des annees 1557 a 1568, se trouvent a la Bibliotheque nationale, dans les ms. 15967 (fo 624) et 20140 (fos 16-56) du fonds francais; une adressee au cardinal du Bellay dans le ms. 3921 (fo 62); deux, de 1570...; six, de 1575 a 1583...; une a la reine-mere (23 novembre 1575) et une au roi (28 fevrier 1578)...' -- explicitly calls the fr.20140 dispatches (which include our f.35, dated 27 Jan 1557) UNPUBLISHED ('inedites'); gives only the archival location, no content",
+      "delavaud_p75.jpg": "body text: 'Les lettres de Danzay sont d'une lecture tres attachante...' (matches the Google Books snippet already in AUDIT.md); moves into a biographical-notice discussion (Rordam 1898), not a reading of the letters",
+      "delavaud_p76.jpg": "biography: Richard 1910, Danzay's origins, entry into royal service 1542, first Copenhagen posting 1548",
+      "delavaud_p77.jpg": "biography continued: 1554 second Copenhagen posting, '1557, il recevait de nouvelles lettres de creance; cette fois, qualifie d'ambassadeur et charge de resider a titre permanent' (matches our target's date exactly, but no letter content given); one quoted letter, 23 May 1553 to Christian III (different item, unrelated to our target); death 1589",
+      "delavaud_p78.jpg": "biography continued: explicitly states 'Il serait hors de mon sujet de raconter les negociations poursuivies par Danzay... Je voudrais insister seulement sur... le commerce francais' -- Delavaud excludes diplomatic-letter content from his scope",
+      "delavaud_p79.jpg": "section XII begins (Baltic/Russia commerce 1569-1584) -- topic has moved on from Danzay's letters/biography",
+      "delavaud_p80.jpg": "Hanseatic/Narva commerce narrative, unrelated",
+      "delavaud_p85.jpg": "1571-73 commerce narrative (Danzay named only re: trade disputes), unrelated"
+    }
+  }
+}
