@@ -66,3 +66,5 @@ Gallica stays at two fetchers regardless.
 turns on the rejection and were woken by the parent at 06:36. The corrected pacing rule above (10 live workers per lane,
 Sonnet for anything another agent checks, a warning anywhere stops spawning account-wide) dates from this same 06:34 UTC
 correction. The parent re-arms its check-in for the reset time when the status is `rejected`.
+
+**LANE N2, 24 Sept 2026 13:51 UTC:** rate_limit_info on LANE N2 (session_01DfQyAaXAgcoFZMAbBTGj4f) reads **allowed_warning on the seven_day window** (rateLimitType seven_day, resets 2026-09-26 13:00 UTC per resetsAt 1790427600), overage off. The five-hour window was not the one reporting. LANE N2 stopped spawning at 13:50 with two live Sonnet workers (csDA2, csBV, both small); no worker interrupted (not rejected). Own usage $55.8 at 13:50.
