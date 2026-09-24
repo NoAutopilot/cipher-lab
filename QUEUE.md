@@ -5074,3 +5074,26 @@ fetched live). WebSearch: 9. `github.com`: 0.
 **Raw/kept/copy-free:** 4 CS2 rows checked, 2 confirmed copy-free and open (CS2-14, CS2-15, both nominated), 1
 copy-free but blocked on the edition (CS2-03), 1 stays copy-order (CS2-27, image search negative). 1 found-solved
 split off fr.3984-sega-1593 (fr.3985 no.7). **Total: 2 nominations, 2 copy-free.**
+
+### Edition check, CS2-06/-16 (LANE N3 csGOM, 24 September 2026, Gallica-only slot)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n3-csGOM.md`. Full search log in each target's own NOTES.md.
+
+- **CS2-06** -> `ciphers/fr3625-lauriere-1593/` -- **blocked**, unchanged, now with a structural reason instead
+  of "not reached." The two Gallica arks previously cited as Gomberville's tome 1 and tome 2 (`bpt6k6435941k`,
+  `bpt6k8717151d`) are in fact two physical exemplars of the *same* "Premiere partie" (BnF shelfmarks
+  FOL-LA23-13 (1) and (A,1); confirmed by IIIF page-label sequences and a read image of the privilège page).
+  Gallica's own ContentSearch shows this digitized part's content stops before 1591 (year-count 1588->17,
+  1589->2, 1590->2, 1591/1592/1593->0) -- three years short of this letter's 9 July 1593. No genuine "seconde
+  partie" ark was found on Gallica by SRU title search this pass. No nomination posted.
+- **CS2-16** -> `ciphers/fr3621-dinteville-1592/` -- **blocked**, unchanged, same structural result (3 July 1592
+  is one year past where the digitized part's content ends). The CS2-16-specific question (does Gomberville
+  print the f.128 sibling's decipherment) is unanswerable from what is on Gallica. No nomination posted.
+- **Flag for CS2-26** (`ciphers/fr3993-villeroy-1595/`, open, nominated, not this brief's target): that row's
+  "Gomberville t. 2, Gallica full text, no hit" edition check cites no ark in Bourdeau's own notes, and this
+  pass found no second-tome ark on Gallica at all -- the search most likely ran against one of the same two
+  Premiere-partie arks under a mistaken belief it was tome 2, which would make the "no hit" true but
+  uninformative. Posted to ROOM.md; not acted on here (out of this brief's scope).
+
+No nomination lines posted (both rows stay `blocked` per the lane rule). Requests: gallica.bnf.fr ~14
+(ContentSearch, SRU, IIIF), WebSearch 3, github.com 1 shallow clone (grep only, dbourdeau/cyphersolver).

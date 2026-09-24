@@ -116,3 +116,42 @@ volume from fr.3621. Worth checking for a decipherment or a key before this row'
 
 Credit: unchanged from the check-solved pass (D. Bourdeau, cyphersolver, `dinteville1592/`). Rule 10: no novelty
 claim made.
+
+## Edition check, LANE N3 csGOM, 24 September 2026 (Gallica ContentSearch + IIIF)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n3-csGOM.md`. Same Gomberville pass as the sibling row CS2-06
+(`ciphers/fr3625-lauriere-1593/NOTES.md`, same date) -- full method and evidence there; summarized for this
+letter's date (3 July 1592) here.
+
+**Both Gallica arks (`bpt6k6435941k`, `bpt6k8717151d`) are two physical exemplars of Gomberville's "Premiere
+partie" (BnF shelfmarks FOL-LA23-13 (1) and (A,1)), not a first and second tome.** Confirmed by SRU dc:title
+match (only these two results for `dc.title all "memoires duc nevers"` on all of Gallica), continuous 1-937
+page-label sequences in both IIIF manifests (no restart consistent with a second bound part), and a read image
+of `bpt6k6435941k` f82 (the privilège du roy, dated September 1665, ending "RECVEIL" -- the single collection
+that follows).
+
+**Gallica ContentSearch OCR year-counts against `bpt6k6435941k` (1588 -> 17, 1589 -> 2, 1590 -> 2, 1591/1592/1593
+-> 0) show this digitized part's content ends before 1591**, one year short of this letter's 3 July 1592 date.
+"Dinteville" -> 0 hits in both arks (already checked by csED2 for the title terms; the year-range check is new
+this pass and gives the structural reason why). No third, genuine "seconde partie" ark was located on Gallica by
+SRU title search this pass -- see the CS2-06 section for the full search (`dc.creator "Gomberville"` 0 hits,
+catalogue-record ark 404s, WebSearch turns up Hachette BnF/POD "Partie 2" reprint listings and a second Google
+Books id `H2eV4wAmIr0C` as a lead, not opened -- Google Books is out of this lane's host grant).
+
+**CS2-16-specific question (does Gomberville print the f.128 sibling's decipherment, which would make f.130 a
+recovery): unanswerable this pass, for the same structural reason.** Neither Gallica ark reaches 1592, so
+whether Gomberville prints Dinteville's letter or f.128's interlinear plaintext cannot be checked from what is
+digitized on Gallica. This stays open as a question for whoever next gets archive.org, HathiTrust or Google
+Books access to the real seconde partie.
+
+**Verdict unchanged: `blocked`.** Same reasoning as CS2-06. No nomination line posted. Unblocks when: the
+seconde partie is located outside Gallica (archive.org, HathiTrust, Google Books -- all out of this lane's
+grant) and read or searched for "Dinteville," "Langres," 3 July 1592, or the f.128 sibling's decipherment.
+
+A flag about CS2-26 (fr3993-villeroy-1595)'s "Gomberville t.2 Gallica full-text search" claim -- which this
+pass's search suggests may actually have hit one of these same Premiere-partie arks -- is posted in the CS2-06
+section and in ROOM.md; not this row's target, not otherwise acted on here.
+
+Requests this section: 0 additional gallica.bnf.fr requests beyond the CS2-06 section (same arks, same
+ContentSearch/SRU/IIIF calls cover both rows). Credit unchanged. Rule 10: no novelty claim made; this is a
+search result.

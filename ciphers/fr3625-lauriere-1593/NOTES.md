@@ -103,3 +103,59 @@ the row.
 
 Credit: unchanged from the check-solved pass (D. Bourdeau, cyphersolver, `champagne1590/`; S. Tomokiyo). Rule 10:
 no novelty claim made.
+
+## Edition check, LANE N3 csGOM, 24 September 2026 (Gallica ContentSearch + IIIF)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n3-csGOM.md`. Gomberville's *Mémoires du duc de Nevers* (1665) both
+arks read directly this pass -- the block does not lift, but the reason is now structural rather than "not
+reached."
+
+**Both known Gallica arks are the same volume, "Premiere partie," not a first and second tome.** Gallica SRU
+`dc.title all "memoires duc nevers"` (24 Sept 2026, 6 results total for all of Gallica; 2 are this title) confirms
+`bpt6k6435941k` (BnF shelfmark FOL-LA23-13 **(1)**, 1028 canvases) is the dc:title-labelled "Partie 1"; `bpt6k8717151d`
+(shelfmark FOL-LA23-13 **(A,1)**, 1024 canvases) is a *second physical exemplar of the same Partie 1*, not
+"seconde partie" as this row's own citation of Bourdeau's working-folder ark pair implied. Confirmed two ways:
+(1) IIIF manifest page-label sequences for both arks run continuously 1-937 with no restart (`bpt6k6435941k`
+resets to "1" once, at canvas 82, immediately after the front matter/privilège -- the main text itself never
+resets; `bpt6k8717151d` has the same max label, page 937, no reset at all); (2) canvas f82 of `bpt6k6435941k`,
+read as an image, is the privilège du roy page itself, dated "dernier iour de Septembre 1665," ending "RECVEIL"
+-- the collection of documents that follows is this single physical part.
+
+**Gallica's own OCR search (`services/ContentSearch`) shows this digitized volume's content stops before 1591,
+i.e. before either target year.** Query-by-year counts against `bpt6k6435941k`: 1588 -> 17 hits, 1589 -> 2,
+1590 -> 2, **1591 -> 0, 1592 -> 0, 1593 -> 0**. "Lauriere"/"Dinteville" -> 0 in both arks (already checked by
+csED2; re-confirmed here for `bpt6k8717151d` too, 1 retry after a mid-request connection reset, good-citizen
+rule). Laurière's letter (9 July 1593) falls three years past where this digitized part's OCR-findable content
+ends.
+
+**No third ark for a genuine "seconde partie" was located on Gallica this pass.** The SRU title search above is
+exhaustive for Gallica's own `dc.title` index and returns only these two exemplars of Partie 1; `dc.creator all
+"Gomberville"` returns 0 (the record's creator field is "Nevers, Louis de Gonzague... Auteur du texte," not the
+editor); the record's linked catalogue ark (`cb31011834g`) 404s as a Gallica document. WebSearch (not fetched,
+per this brief's host grant) surfaces Hachette BnF/POD reprint listings (lessaisons.fr, actualitte.com,
+decitre.fr) explicitly titled "...Partie 2," confirming a seconde partie was printed and BnF-scanned somewhere,
+plus a second Google Books id (`H2eV4wAmIr0C`, distinct from `ztkvMWA_yO0C` already checked and found absent
+from archive.org's `bub_gb_` mirror by csED2) that is a plausible candidate for it -- Google Books is this
+lane's excluded host (LANE V's), so not opened; flagged for whoever next holds that grant.
+
+**Flag for fr3993-villeroy-1595 (CS2-26, open, nominated, not this row's target):** that row's NOTES.md and
+QUEUE.md both state Bourdeau "searched Gomberville... t. 2... via Gallica's own full-text search" with a "no
+hit" result treated as the strongest edition check of its batch. Bourdeau's own `nevers1595/NOTES.md` (checked
+this pass, github.com, 1 shallow clone, grep only) makes the same claim ("Memoires de Nevers (1665) t. 2, Gallica
+full text: ... not found") but cites no ark. Given this pass's finding that no second-tome ark is findable on
+Gallica by title, and that both findable arks are copies of the same "Premiere partie" (page-numbering and OCR
+year-range both stop before 1591, matching this row's own problem), that "t. 2" search most likely ran against
+one of the same two Premiere-partie arks under a mistaken belief it was the second tome -- which would make its
+"no hit" true but uninformative about the real seconde partie. Not this row's target to fix; posted to ROOM.md.
+
+**Verdict unchanged: `blocked`.** The volume containing July 1592/1593 (Gomberville's seconde partie) is not
+digitized under a separate Gallica ark findable by SRU title search this pass; the two arks that are on Gallica
+are structurally confirmed (page numbers, OCR year range, and one page image) to be two copies of a different
+part that does not reach these dates. No nomination line posted. Unblocks when: the seconde partie is found on
+archive.org, HathiTrust or Google Books (out of this lane's host grant) and searched or read for "Laurière" /
+9 July 1593 / "Châlons," or a BnF-catalogue-level check (catalogue.bnf.fr, data.bnf.fr) locates its own Gallica
+ark if one exists under a shelfmark this pass's SRU queries did not surface.
+
+Requests this section: gallica.bnf.fr ~14 (ContentSearch x9, SRU x4, IIIF image x2, 1 connection-reset retry),
+WebSearch 3, github.com 1 shallow clone (grep only, dbourdeau/cyphersolver). Credit unchanged. Rule 10: no
+novelty claim made; this is a search result.
