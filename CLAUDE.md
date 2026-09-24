@@ -40,6 +40,17 @@ session and every subagent, cloud or local.
 6. **Absolute dates.** "19 Sept 2026", never "recently" or "yesterday". Read the clock (`date -u`) before writing
    any date or time; never estimate it, and never tell a worker the date without checking. Lesson of 23 Sept 2026:
    an orchestrator wrote times that ran eight hours ahead of the clock and dated a whole evening's files 23 Sept.
+   `tools/room.py`'s timestamp is machine-generated (`time.gmtime()`), not typed by a model, but that only
+   guarantees it matches *that session's own container clock* -- not that two sessions' containers agree with each
+   other. Lesson of 24 Sept 2026: the parent's ROOM.md line at 18:49 said "Retro-apply e archived" seven minutes
+   before retro-apply e's own auto-stamped done line (18:56) exists; both stamps are machine-generated, so this is
+   container clock skew between two sessions, not a model estimating a time. Don't use two different sessions'
+   ROOM.md timestamps to decide which of their actions happened first; where the order matters (an audit, a
+   postmortem), use the single shared history's push order (`git log origin/main`) instead, which is one clock,
+   not many. This window's retrospective also found that isn't always available either: `tools/room.py --push`'s
+   rebase can fold several sessions' commits into one generically-titled "update" commit on whichever session
+   happens to run the merge, which erases the per-session commit trail along with any independent time check --
+   flagged here, not fixed; the retrospective ran out of budget to design the fix.
 7. **Reproducible readings.** Any claimed reading has a script that regenerates it from the transcription and
    the key, and exits non-zero if the committed reading is stale.
 8. **Credit.** Name who solved what and when. Cite the solver repositories and Tomokiyo. Aymeloglu's repository
