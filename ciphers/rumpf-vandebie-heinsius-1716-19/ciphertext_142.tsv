@@ -1,0 +1,11 @@
+# Letter 142, H.W. Rumpf to A. Heinsius, 17 Nov 1716. Printed in Veenendaal/Smit, Briefwisseling van Anthonie Heinsius Deel 18 (GS244) p.95.
+# Transcribed from images/heinsius_18_GS244_095.jpg (one careful reading, H1, 24 Sept 2026), cross-checked with the Huygens OCR html (identical token sequence; OCR renders the superscript as '*').
+# The superscript 3 on the first 70 is the editor's footnote marker (footnote 3: 'Het cijferschrift is door d'Alonne niet opgelost'), NOT a cipher mark; omitted from tokens.
+# Columns: seg (ciphertext segment, in reading order), line (printed line on p.95), clear_before (clear text preceding the segment), tokens (space separated)
+seg	line	clear_before	tokens
+1	1-3	nous n'avons encor rien appris de la part dudit ministre, ce qui nous fait croire	70 33 67 17 31 19 49 39 46 16 22 4 66 18 26 36 25 28 42 72 29 52 65 74 46 53 44 37
+2	2-3	de	68 55 46 54 49 58 52 25 1 28 51
+3	3-4	come l'on a fait	22 74 46 37 44 37 70 74 68 5 28 35 20 54 44 74 2 49 39 63 72
+4	4-5	de toutes les	67 31 65 73 37 68 60 66 11 29 74 49 19 67 2 23 8 46 17 70 74 45 60 28 9 42 74 15 46 19 51 66 34
+5	5-7	. J'avois	25 34 43 6 22 72 61 55 64 8 77 35 47 15 42 19 68 6 22 32 70 58 44 37 48 16 66 18 69 16 25 33 27 9 29 74 45 75 44 31 68 53 55 28 18 49 74 29 31 44 72 44 55 26 31 19 28 74 44 37 69 16 26 54 49 76 47 53 9 65 74 29 39
+6	7-9	d'où il semble que	65 76 47 53 26 59 28 16 63 34 47 53 22 33 48 57 70 52 49 32 47 53 54 26 54 66 3 42 74 68 67 2 25 60 44 54 48 13 65 38 42 19
