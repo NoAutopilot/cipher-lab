@@ -327,3 +327,7 @@ existing solved siblings already used by S1/R21/A2/A3/D2 above:
 
 Neither changes this folder's own N4 verdicts for 53/57/126 above. Requests this pass: resources.huygens.knaw.nl
 1 (briefnr 58 detail page, shared with the wider 9-page batch logged in `sources/wvo/NOTES.md`).
+
+## Reading suggestions from SO-SAXONY-126 (logged by verifier V3c, 24 Sept 2026; not applied)
+
+- 126: 'adesn' (l.6) and 'slagen' (l.6) print as emended 'adern', 'schlagen' in the prompt; a solver should check on f.139 whether the s/r sign and the missing 'ch' are transcription or key issues, and whether the down-arrow read 'k' (l.5 pos 11) and 'ge' (l.5 pos 17) is one sign or two forms.

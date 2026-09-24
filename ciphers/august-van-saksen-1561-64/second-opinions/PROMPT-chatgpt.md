@@ -12,7 +12,12 @@ record: Briefwisseling van Willem van Oranje, letter 126
 (https://resources.huygens.knaw.nl/wvo/app/brief?nr=126). The clear part of the letter begins "Wiewoll ich in gereumer
 zeitt von E. Churf. G. khein schreiben entpfangen".
 
-**Our reading of the cipher postscript (excerpt):** "...das wir seidhero auss Hispanien andere zeitung bekommen haben,
+**Our reading of the cipher postscript (excerpt, normalised; corrected 24 Sept 2026 after SO-SAXONY-126):** The sign-level
+output in `reading_126.txt` is: "[wir] konnen auch [E.L.] in freundtlichem uertrauen nit uerhalten [das] [wir] seidhero auss
+hispanien andere zeitung bekommen haben welche uermelden [das] [die] konnigin so heftig kranc [ge]worden sei [das] man ir
+[die] adesn zwei mahl slagen [und] auch zwei mahl purgieren mussen dermassen [das] sie irer frucht erlediget worden sei"
+(brackets = word signs; 26 of 240 signs graded M, among them the 'ge' of geworden and the 'k' of kranc). The normalised
+excerpt below emends 'kranc', 'adesn' and 'slagen'; search for both forms: "...das wir seidhero auss Hispanien andere zeitung bekommen haben,
 welche vermelden, das die Konnigin so heftig kranck geworden sei, das man ir die adern zwei mahl schlagen und auch
 zwei mahl purgieren mussen, dermassen das sie irer frucht erlediget worden sei." (News from Spain: the Queen was bled
 twice and purged twice and lost the child she was carrying. This is Elisabeth of Valois, August 1564.)

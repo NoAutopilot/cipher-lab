@@ -47,7 +47,10 @@ cijferschrift", with no "oplossing". For siblings 74, 98 and 153 the field does 
 
 ### 2.2 The event is printed, the letter is not located
 The news is the illness and miscarriage of Elisabeth of Valois, Queen of Spain, in August 1564. Histories of Philip
-II's court print it widely. That makes it a phrase hook and a check on the date, not a prior print of this letter.
+II's court print it widely [V3c, 24 Sept 2026, a page citation: Saint-Sulpice to L'Aubespine, 19 Aug 1564, in E. Cabié (ed.),
+*Ambassade en Espagne de Jean Ébrard, seigneur de Saint-Sulpice* (Albi 1903), pp. 289-290 (IA `ambassadeenespa00cabigoog`):
+fever, "une ou deux saignées", then "les purgations", and "on a opinion qu'elle s'est affolée de 2 filles"; Cabié's
+note dates the illness from 5 Aug (La Ferrière II, 218)]. That makes it a phrase hook and a check on the date, not a prior print of this letter.
 No edition located prints Orange's 16 Sept 1564 letter to August, its postscript, or a summary of the postscript.
 
 ### 2.3 The KHA minute
@@ -82,7 +85,7 @@ plaintext in clear, and it was not seen. Rule 10 allows no priority wording at N
 | Groen, Supplément (groe009arch09) and Table (groe009arch10) | searched | 16 Sept 1564; Saxe/Sachsen + 1564; phrase roots | nothing |
 | Gachard, Correspondance de Guillaume le Taciturne t.1, t.2 (IA correspondanced01willgoog, correspondancede02will) | searched | print_check phrases; grep Saxe/Auguste 1564, reine d'Espagne, fausse couche | nothing |
 | Rachfahl, Wilhelm von Oranien I (1906), II.1 (1908) (IA wilhelmvonorani01rachgoog, 00rachgoog) [A2 correction: 00rachgoog is vol. II part 2 (1908); II.1 (1907) was not searched by V3, see A2.2.2] | searched | phrases; "Locat 8510"; Sept 1564; Königin + krank/Frucht | one citation "Dr. Arch. Locat 8510" (II.1, n. to p.667): 1566 Augsburg diet context, not this letter |
-| Kluckhohn, Briefe Friedrich des Frommen I (IA bub_gb_3N1SAAAAcAAJ) | searched | phrases | nothing |
+| Kluckhohn, Briefe Friedrich des Frommen I (IA bub_gb_3N1SAAAAcAAJ) [V3c correction, 24 Sept 2026: that item is vol. II (1567-1576; its title page reads 1572-1576), not I, so this row was no control for 1564. Vol. I (1559-1566) is in IA `briefefriedrichd00frie`; its table of contents for Aug-Dec 1564 (nos. 263-291, Fraktur OCR, read by grep) lists no Orange-August letter and no Spanish news. See 'Second opinion SO-SAXONY-126'] | searched | phrases | nothing |
 | von Weber, Anna Churfürstin zu Sachsen 1865 (IA annachurfrstin00webe) | searched (fts only) | phrases through be-api (djvu 500) | nothing |
 | Raumer, Briefe aus Paris 1831 (IA bub_gb_EQ4MAAAAYAAJ) | searched | phrases | nothing |
 | Böttiger, Vermählung Oraniens mit Anna von Sachsen (Hist. Taschenbuch 1836); Kretzschmar on Anna of Saxony | unreachable | IA advancedsearch by title: no item found | not seen |
@@ -172,7 +175,7 @@ V3's gaps, attacked:
 | WVO record or image for the KHA minute A 11/XIV I/4 nr. 26 | WVO record 126 re-read (1 request); the minute is a Brongegevens row without an Afbeelding link. No other WVO record describes it (WVO keys records by letter, not by witness) | minute unimaged in WVO; still unseen |
 | Bundled print in the WVO PDFs (lesson of ROOM 09:16) | 00126 is 5 pages, all read by R9 and listed in `images/inventory.tsv`: f.138r, 138v, 140, 139 (cipher), address leaf | no printed page bundled |
 | Groen 1st ser. t.I by date | V3's DBNL full-text check re-run for the 1564 section (DBNL groe009arch01, 1 request) | no letter of 16 Sept 1564; confirmed |
-| Kluckhohn, Briefe Friedrich des Frommen I | IA djvu text re-fetched and grepped | nothing (OCR is Fraktur-garbled: a negative on this volume is weak) |
+| Kluckhohn, Briefe Friedrich des Frommen I | IA djvu text re-fetched and grepped [V3c: item not named; if it was V3's `bub_gb_3N1SAAAAcAAJ`, that is vol. II] | nothing (OCR is Fraktur-garbled: a negative on this volume is weak) |
 | von Weber, Anna Churfürstin (1865) | V3 had fts only (djvu 500). This audit read the full djvu text of two other scans, `10061398bsb` and `annachurfrstinz00webegoog` | Orange appears for gifts, hunting and a 1564 letter of Anna; no Spanish news, no postscript |
 | Böttiger, Vermählung Oraniens mit Anna (Hist. Taschenbuch 1836) | IA advancedsearch by title and by year | no item; unreachable |
 | Kruse (Anna von Sachsen literature) | IA search; CrossRef | no text; unreachable |
@@ -700,3 +703,30 @@ No item found, no class touched, no `flag for LANE V3` raised.
 
 Requests (G1, this target): 0 new (Kluckhohn not re-run); OpenAlex/Semantic Scholar counted once against both
 targets in this session's total (see lodewijk-van-nassau-1573-74/AUDIT.md). No subagents.
+
+## Second opinion SO-SAXONY-126 (ChatGPT, pull request 7), checked 24 Sept 2026, 16:33 UTC
+
+Verifier V3c (Opus, for LANE V4, session_01HBMnLTuZ2DR2voSQ3vFQHs). Input: `second-opinions/chatgpt-2026-09-24.md` (GPT-6,
+copied from branch `second-opinion/SO-SAXONY-126`, PR 7, unmerged). It reports no page-citable print or independent
+decipherment of the 16 Sept 1564 postscript, and criticises the reading's certainty and the prompt's smoothing. Each
+checkable claim was checked below. No decoding; the reading was not changed.
+
+| # | claim | source checked | verdict | correction made |
+|---|---|---|---|---|
+| 1 | WVO 126: Dresden Geheimer Rat Loc. 8510/5 f.138r-140v, cipher on f.139 (marked inherited, unverified) | section 2.1 (WVO record and PDF, fetched by R9/V3/A2); `images/inventory.tsv` | **consistent with the repo** | none |
+| 2 | Groen t. I, Lettre LXXXII, pp. 231-233, is Orange to the Elector, April 1564, answering his letter of 7 March; not the target; the DBNL witness is the 1841 second edition, not 1835; "purg" and "16 septembre" give nothing | DBNL `groe009arch01` (text.php, 1 request): colophon "de tweede druk ... uit 1841 ... De eerste druk verscheen in 1835"; table "lxxxii. Le Prince d'Orange à l'Electeur de Saxe. Réponse à la Lettre 76. 231"; "purg" hits only "répurgées" and "Walpurge"; no "16 septembre" | **right** (7 March not re-checked; the text.php dump is truncated before the letters) | none needed: section 3 already lists LXXXII (Apr 1564) and cites no edition year. Note for citers: DBNL's t. I is the 1841 2nd edition |
+| 3 | KHA minute A 11/XIV I/4 nr. 26 "with a Zeitung" and the Japikse copy are unseen; a clear minute could settle wording without being a decipherment | sections 2.3, A2.3, D1.1 (minute unimaged, the one route that could lower the class) | **right; already stated** | none |
+| 4 | output is 240 tokens, H 0, C 214, M 26; zero U is coverage, not correctness | `reading_126.txt` header; `tools/decode_key.py . --check` exits 0, "tokens 240: C 214, M 26" | **right** | none |
+| 5 | exceptions: Λ read m from context; sign 1 read i; K read "die"; the same down-arrow read k in "kranck" and ge in "geworden" | `exceptions_126.tsv`: 9 Λ->m, 2 1->i, 2 K->die, down-arrow l.5 pos 11 k and pos 17 ge, all M | **right** | logged as a solver suggestion in NOTES.md; reading unchanged |
+| 6 | the rendered text has "adesn", "slagen", "kranc", and the prompt gives a smoother version whose opening differs | `reading_126.txt` l.1-8 vs PROMPT-chatgpt.md | **right**: the prompt printed an emended German text as "our reading" without saying so, and began mid-sentence | PROMPT-chatgpt.md now gives the sign-level output verbatim and labels the excerpt as normalised |
+| 7 | key aligned from WVO 98's contemporary decipherment; 126-specific exceptions not validated by it; the four letters above l.1 are not a solution | section 1 ("e e r e", contradict the key, not a decipherment); NOTES.md (C from 98, exceptions M) | **right; already stated** | none |
+| 8 | the queen as Elisabeth of Valois and the August 1564 loss are unverified by a page-cited account | AUDIT.md 2.2 gave no page citation. Found one: Cabié (ed.), *Ambassade en Espagne de Jean Ébrard, seigneur de Saint-Sulpice* (1903), pp. 289-290, IA `ambassadeenespa00cabigoog`: Saint-Sulpice to L'Aubespine, 19 Aug 1564, "une ou deux saignées ... les purgations ... qu'elle s'est affolée de 2 filles"; illness from 5 Aug (La Ferrière II, 218) | **right that it was uncited; the identification holds** | citation added to 2.2. Context only: it prints the event from the French side, not Orange's letter |
+| 9 | the audit's own corrections show fragile coverage: Rachfahl II.1 vs II.2; "a digitized Kluckhohn II.2 covering 1572-1576 is not a control for 1564"; Gachard's two series | A2.2 item 2 and A2.10 (Rachfahl), A3/D2 row (Gachard corrected). **Kluckhohn:** V3's row "Kluckhohn ... I (IA bub_gb_3N1SAAAAcAAJ)" was never corrected, although D2 noted that item is vol. II.2; IA's first page confirms "1572-1576" | **right**, and it found an uncorrected mislabel | V3 row (section 3) and A2.3 row annotated. Gap closed at contents level: Kluckhohn I (`briefefriedrichd00frie`), table nos. 263-291 (Aug 1564 - Oct 1565), no Orange-August letter and no Spanish news (Fraktur OCR, weak). Kluckhohn prints the Palatine side, so it is not principal for 126 |
+| 10 | von Weber, Böttiger, Kretzschmar, Demandt, Blok, Kervyn, cipher studies: no page citation known; leads unverified, not negatives | D1.1 (Böttiger/Kretzschmar logged as not principal for 126; von Weber read, A2.3) | **fair**; no new source named | none |
+
+**Class.** No check found a prior print or decipherment of the letter or its postscript. **126 stays N4** ("no prior
+decipherment located"); the KHA minute with its 'Zeitung' remains the unpublished witness N4 does not exclude. 53 and
+57 were not in this prompt and are untouched.
+
+Requests (V3c, this label): www.dbnl.org 1; archive.org 5 (advancedsearch 1, metadata 1, djvu texts 3 incl. one 30 KB
+range); www.googleapis.com 2 (0 hits). No subagents.
