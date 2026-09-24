@@ -1,6 +1,8 @@
-blocked
+open
 
-**Held by the LANE N3 orchestrator, 24 Sept 2026 18:03 UTC:** status `blocked`, not `open`. Section 2 rests on Bourdeau's Gallica full-text search of Gomberville t.2, but csGOM (17:49) found that the only Gomberville arks on Gallica (bpt6k6435941k, bpt6k8717151d) are two copies of the Première partie, whose content ends before 1591; no seconde partie ark was found, so the 1595 search most likely ran against the wrong tome. Needs the seconde partie read (another library or a print copy) before it is open again. See ciphers/fr3625-lauriere-1593/NOTES.md.
+**Hold lifted, LANE N4 scGOM2, 24 Sept 2026:** the genuine seconde partie is Google Books `H2eV4wAmIr0C` (title
+page confirmed); full-text searched for this letter's own terms (Villeroy, Cambray, Doullens, Fuentes,
+S. Quentin, 16 Aoust, the cipher-explaining clear sentence) -- letter absent; see the dated section below.
 
 # Nevers to Villeroy, Saint-Quentin, 16 August 1595 — BnF fr. 3993 no. 102 (ff. 148r–149r)
 
@@ -113,3 +115,51 @@ Grade counts: H 0, C 0, S 0, M 0, I 0 (nothing read). Status stays `open`.
 Suggestions (not done, outside this brief): read the fr. 3995 keys other than nos. 60/65/66/68-76 on the image for
 the sign family `λ π θ Δ ϖ ∞` with 1x/2x figures (no. 76 is the nearest family); look for the as-sent letter in
 Villeroy's papers (fr. 15xxx / Cinq Cents de Colbert). No request was made to any host in this step.
+
+## Edition check, LANE N4 scGOM2, 24 September 2026 (Google Books, genuine seconde partie found)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n4-scGOM2.md`. Job: find Gomberville's *seconde partie* as readable
+text, since csGOM (18:02) showed both known Gallica arks are copies of the *Première partie* (content ends
+before 1591) and flagged that Bourdeau's own "t.2, no hit" search most likely ran against one of those by
+mistake.
+
+**Found: Google Books `H2eV4wAmIr0C` is the genuine seconde partie**, distinct from `ztkvMWA_yO0C` (a second
+Google Books scan of the same Première partie already ruled out on Gallica). Confirmed by title page, read via
+the `jscmd=SearchWithinVolume` snippet API (`books.google.com/books?id=<id>&q=<term>&jscmd=SearchWithinVolume`,
+per this lane's accessInfo/searchInfo-only route): `ztkvMWA_yO0C` page PP7 = "PREMIERE PARTIE... A PARIS, LES
+ARTSA LYGA Chez THOMAS IOLLY"; `H2eV4wAmIr0C` page PP5 = "SECONDE PARTIE... A PARIS, Chez THOMAS IOLLY", page
+PP6 = "TABLE GENERALE DES MATIERES CONTENVES DANS CETTE SECONDE PARTIE". Both volumes are `FULL_PUBLIC_DOMAIN`,
+`ALL_PAGES` viewable (Google Books API `volumes/<id>?country=US&key=$GOOGLE_BOOKS_KEY`).
+
+**Full-text search of `H2eV4wAmIr0C` for this letter's own terms, all via the same snippet API:**
+- "Villeroy": 10+ hits. One letter is headed to Villeroy directly, p. 391 ("VILLEROY. MONSIEVR de Villeroy. I'ay
+  veu par le contenu de vostre lettre, la sommation que vous m'auez faite de vouloir m'empescher la cheute de ce
+  ..."), grouped in the table of contents with several other short letters on consecutive pages (391-393, to
+  La Grange, Servieres, Blancmesnil) — a different, unrelated cluster, nowhere near the Cambrai/Fuentes/Doullens
+  subject matter or "16 Aoust" (no "16. Aoust" hit anywhere near p. 391; the two "16. Aoust" hits in the whole
+  volume, pp. 16 and 625, are unrelated 1572- and undated-context passages).
+- "Doullens" / "Fuentes" / "Cambray" / "Balagny": dense cluster at pp. 710-732, matching this letter's own
+  subject (relief of Cambrai, besieged by Fuentes, loss of Doullens, Cambrai's governor Balagny) almost exactly.
+  But this is a **different letter**: it closes "... comme prouenant de celuy qui est, MESSIEVRS, Vostre
+  tres-humble..." (p. 732) — addressed to a plural "Messieurs" (a council or deputies), not to Villeroy alone,
+  and searches for "S. Quentin" (this letter's own dateline place) return 10 hits, none in the 700s page range,
+  and "mesprendre" (from that same Aoust-1595 passage, "de peur de me mesprendre") independently confirms the
+  content but not the address. Not this letter.
+- The letter's own clear-text sentence explaining why cipher is used ("... ce qui est de plus pregnant seroit bon
+  d'estre en chiffre ... affin que 72 ne puissent prendre cognoissance de noz affaires"): searched as "pregnant"
+  (0 hits) and "cognoissance de noz affaires" (0 hits) verbatim. Absent.
+
+**Verdict: `open -- Gomberville 1665 seconde partie (Google Books H2eV4wAmIr0C), full-text searched (Villeroy,
+Cambray, Doullens, Fuentes, Balagny, S. Quentin, 16 Aoust, the letter's own cipher-explaining sentence), letter
+absent.`** The edition does print a different, non-cipher letter about the same Cambrai crisis (pp. ~710-732,
+addressed to "Messieurs") and a different, unrelated Villeroy letter (p. 391) — neither is this letter. Hold
+lifted; re-nominated (see ROOM.md and QUEUE.md CS2-26).
+
+Credit: unchanged (D. Bourdeau, cyphersolver; his own "t.2, no hit" search is now independently corroborated
+against the correct tome, resolving csGOM's flag that it may have run against the wrong ark). Rule 10: no
+novelty claim made; this is a search result, not a verifier's classification.
+
+Requests this section: www.googleapis.com 2 (volume metadata for both ids), books.google.com ~15
+(`jscmd=SearchWithinVolume`, >=2s apart, `cipher-lab research script (contact via repository)` User-Agent). No
+gallica.bnf.fr, HathiTrust, BSB, ONB or archive.org used (Google Books gave readable text at the first routing
+step).

@@ -1,9 +1,8 @@
-blocked
+open
 
-**Edition check (LANE N3 csED2, 24 Sept 2026 16:17 UTC):** hold not lifted -- the named edition (Gomberville's
-*Mémoires du duc de Nevers*, 1665) could not be reached via this pass's granted hosts (archive.org, Gallica SRU).
-Two substitute sources read in full, both negative for "Laurière" -- see section 2 below. Brief
-`.claude/briefs/runs/2026-09-24-lane-n3-csED2.md`.
+**Hold lifted, LANE N4 scGOM2, 24 Sept 2026:** the genuine seconde partie is Google Books `H2eV4wAmIr0C` (title
+page confirmed, distinct from the two Gallica arks which are both Première partie); full-text searched for
+"Lauriere"/"Delauriere" and the theatre's place names -- letter absent; see the dated section below.
 
 # Laurière to Nevers, Châlons, 9 July 1593 — BnF fr. 3625 no. 55 (f. 66r)
 
@@ -159,3 +158,35 @@ ark if one exists under a shelfmark this pass's SRU queries did not surface.
 Requests this section: gallica.bnf.fr ~14 (ContentSearch x9, SRU x4, IIIF image x2, 1 connection-reset retry),
 WebSearch 3, github.com 1 shallow clone (grep only, dbourdeau/cyphersolver). Credit unchanged. Rule 10: no
 novelty claim made; this is a search result.
+
+## Edition check, LANE N4 scGOM2, 24 September 2026 (Google Books, genuine seconde partie found)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n4-scGOM2.md`. Same Gomberville pass as the sibling row CS2-26
+(`ciphers/fr3993-villeroy-1595/NOTES.md`, same date, full method there) and CS2-16 (`ciphers/fr3621-dinteville-1592/NOTES.md`);
+summarized for this letter here.
+
+**Google Books `H2eV4wAmIr0C` confirmed as the genuine seconde partie** (title page read via
+`jscmd=SearchWithinVolume`: PP5 "SECONDE PARTIE", PP6 "TABLE GENERALE DES MATIERES CONTENVES DANS CETTE SECONDE
+PARTIE"), distinct from `ztkvMWA_yO0C` (Première partie, the same part as both Gallica arks csGOM already ruled
+out). Both `FULL_PUBLIC_DOMAIN`, `ALL_PAGES`.
+
+**Full-text search for this letter's correspondent and place names:**
+- "Lauriere": 0 hits. "Delauriere" (nobiliary-particle spelling variant): 0 hits.
+- "Chaalons" (period spelling): 10 hits, pp. 237-390 — a dense, genuinely on-topic cluster of Henri IV's and
+  Nevers's own 1592-93 correspondence about the Champagne theatre (e.g. p. 306 "Chaalons le 15. de Iuillet 1592.
+  Signé HENRY", p. 361 "ne pouuant d'icy aller droit à Langres... pour essayer de conserver cette ville"), i.e.
+  the right place and years are printed in this volume, in detail — but none of the ten hits names Laurière.
+
+**Verdict: `open -- Gomberville 1665 seconde partie (Google Books H2eV4wAmIr0C), full-text searched (Lauriere,
+Delauriere, Chaalons), letter absent.`** This is a stronger result than csED2's substitute-source check (which
+read Xivrey and Pérot, both negative, but never reached Gomberville itself) and than the original csCS2b/csGOM
+holds (which had only the wrong tome available): the correct tome is now searched directly, in a section of the
+book that is demonstrably about the same place and years, and still gives no hit. Hold lifted; re-nominated (see
+ROOM.md and QUEUE.md CS2-06).
+
+Credit: unchanged (D. Bourdeau, cyphersolver; S. Tomokiyo). Rule 10: no novelty claim made; this is a search
+result, not a verifier's classification.
+
+Requests this section: 0 additional www.googleapis.com/books.google.com requests beyond the CS2-26 section (same
+volume, metadata already fetched there); books.google.com search terms for this row counted in the CS2-26
+section's total (~15). No gallica.bnf.fr, HathiTrust, BSB, ONB or archive.org used.

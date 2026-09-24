@@ -5117,3 +5117,43 @@ in place, this addendum records only what changed). Both verdicts stand at `open
 **CS2-15 is not an independent target** -- Bourdeau's own repository already transcribed and pooled it into
 CS2-01/`fr3022-garbino-1528`'s corpus; recommend against a separate board slot. CS2-14 remains a standalone
 nomination. **Total this pass: 0 new nominations (2 verdicts confirmed/corrected on existing nominations).**
+
+### Edition check, CS2-06/-16/-26 (LANE N4 scGOM2, 24 September 2026, Google Books route)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n4-scGOM2.md`. Found the genuine seconde partie of Gomberville's
+*Mémoires du duc de Nevers* (1665) as full-text-searchable public-domain scan on Google Books, **`H2eV4wAmIr0C`**
+-- distinct from `ztkvMWA_yO0C`, which is a second Google Books scan of the same Première partie already ruled
+out on Gallica (both title pages read via the `jscmd=SearchWithinVolume` snippet API: `ztkvMWA_yO0C` PP7 =
+"PREMIERE PARTIE"; `H2eV4wAmIr0C` PP5/PP6 = "SECONDE PARTIE" / "TABLE GENERALE DES MATIERES CONTENVES DANS CETTE
+SECONDE PARTIE"). This resolves the flag both csGOM and csED2 left open. Full search log in each target's own
+NOTES.md.
+
+- **CS2-26** -> `ciphers/fr3993-villeroy-1595/` -- **open, hold lifted, re-nominated** (cryptanalysis). Full-text
+  search of `H2eV4wAmIr0C` for "Villeroy" (10+ hits), "Cambray"/"Doullens"/"Fuentes" (the letter's own subject
+  matter, 1595), "S. Quentin", "16. Aoust", and the letter's own clear-text sentence about using cipher
+  ("pregnant", "cognoissance de noz affaires") all checked: the letter itself is absent, and the one Villeroy
+  letter the edition does print (p. 391, addressed "MONSIEUR de Villeroy") is unrelated 1589-90 content, not this
+  one. The seconde partie does print a long, different, non-cipher letter about the same Cambrai/Fuentes/Doullens
+  crisis (pp. ~710-732) but it is addressed "MESSIEVRS" (plural, closing "Vostre tres-humble... MESSIEURS"), not
+  Villeroy, and does not carry "16 Aoust" or the target's own cipher-explaining sentence -- a different piece, not
+  this letter. Confirms (independently) csGOM's suspicion that Bourdeau's "Gomberville t.2, no hit" search
+  probably ran against the wrong ark, but the correct-tome search also gives no hit, for the same verdict.
+- **CS2-06** -> `ciphers/fr3625-lauriere-1593/` -- **open, hold lifted, re-nominated** (cryptanalysis). Full-text
+  search of `H2eV4wAmIr0C` for "Lauriere"/"Delauriere" (0 hits both spellings) plus the theatre's own place names
+  "Chaalons" (10 hits, pp. 237-390, all Henri IV's or Nevers's own 1592-93 Champagne correspondence, none naming
+  Laurière) confirms the letter is absent from the correct tome, not merely unindexed by a secondary source as
+  csED2 found for the wrong tome.
+- **CS2-16** -> `ciphers/fr3621-dinteville-1592/` -- **open, hold lifted, re-nominated** (cryptanalysis; the
+  f.128 sibling recovery question from csCS2b stands separately). Full-text search of `H2eV4wAmIr0C` for
+  "Dinteville"/"Dinteuille" (0 hits both spellings) plus "Langres" (10 hits, pp. 256-390, same 1592-93 Champagne
+  correspondence cluster as CS2-06, none naming Dinteville) and "Balagny" (used to positively locate and rule out
+  the Cambray narrative at pp. 719-732 as a different letter, same method as CS2-26) confirms absence. The
+  fr.3623 sibling-letters lead (5/13 July 1592) could not be checked for cipher content or print status --
+  needs a Gallica image, out of this brief's host grant.
+
+**Total this pass: 3 nominations (3 copy-free -- all three already have a confirmed Gallica IIIF leaf image from
+the original check-solved pass; this worker did not use gallica.bnf.fr, per host grant).** Requests:
+www.googleapis.com 2 (volume metadata), books.google.com ~26 (`jscmd=SearchWithinVolume` snippet queries, >=2s
+apart, browser-descriptive User-Agent), well under the 40-request cap for the combined host pair. No HathiTrust,
+BSB, ONB or archive.org calls needed -- Google Books gave readable, searchable text at the first step of the
+brief's routing order, so the chain stopped there.

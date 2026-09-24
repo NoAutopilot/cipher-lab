@@ -1,8 +1,9 @@
-blocked
+open
 
-**Edition check (LANE N3 csED2, 24 Sept 2026 16:17 UTC):** hold not lifted -- Gomberville not reached (same
-result as CS2-06). Substitute sources read; one flags a probable catalogue misidentification of the
-correspondent (see section 2 below). Brief `.claude/briefs/runs/2026-09-24-lane-n3-csED2.md`.
+**Hold lifted, LANE N4 scGOM2, 24 Sept 2026:** the genuine seconde partie is Google Books `H2eV4wAmIr0C` (title
+page confirmed, distinct from the two Gallica arks which are both Première partie); full-text searched for
+"Dinteville"/"Dinteuille" and "Langres" -- letter absent; see the dated section below. fr.3623 sibling letters
+(5/13 July 1592) not checked -- needs a Gallica image, out of this pass's host grant.
 
 # Dinteville (Langres) to the Duke of Nevers, 3 July 1592 — BnF Français 3621 no. 116 (f. 130), DECODE R9451
 
@@ -155,3 +156,42 @@ section and in ROOM.md; not this row's target, not otherwise acted on here.
 Requests this section: 0 additional gallica.bnf.fr requests beyond the CS2-06 section (same arks, same
 ContentSearch/SRU/IIIF calls cover both rows). Credit unchanged. Rule 10: no novelty claim made; this is a
 search result.
+
+## Edition check, LANE N4 scGOM2, 24 September 2026 (Google Books, genuine seconde partie found)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n4-scGOM2.md`. Same Gomberville pass as the sibling row CS2-06
+(`ciphers/fr3625-lauriere-1593/NOTES.md`, same date, full method there); summarized for this letter here.
+
+**Google Books `H2eV4wAmIr0C` confirmed as the genuine seconde partie**, distinct from `ztkvMWA_yO0C` (Première
+partie, the same part as both Gallica arks csGOM already ruled out). Both `FULL_PUBLIC_DOMAIN`, `ALL_PAGES`.
+
+**Full-text search for this letter's correspondent and place names:**
+- "Dinteville": 0 hits. "Dinteuille" (v/u period-spelling variant): 0 hits.
+- "Langres": 10 hits, pp. 256-390 — the same dense, on-topic 1592-93 Champagne cluster found for CS2-06's
+  "Chaalons" search (e.g. p. 302 "Langres pour les asseurer de la bonne volonté que i'ay de les secourir, & les
+  délivrer de l'oppression du Duc de Lorraine"; p. 361 "...ne pouuant d'icy aller droit à Langres..."), none
+  naming Dinteville.
+- "Balagny": used to positively locate the pp. 719-732 Cambray-crisis letter found for the sibling CS2-26 row
+  and confirm it is a different, later (Aug 1595), unrelated piece, addressed "Messieurs" — not this letter
+  either (3 July 1592, to Nevers alone).
+
+**fr.3623 sibling letters (5 and 13 July 1592, named in this row's own brief as a lead): not checked.** Whether
+they are cipher, and whether Gomberville prints them, needs the Gallica image (or catalogue note) for fr.3623,
+which is outside this pass's host grant (no gallica.bnf.fr). The 0-hit Dinteville/Dinteuille search above covers
+whether the seconde partie prints *any* Dinteville letter under that name, sibling included, but cannot rule out
+an unsigned or differently-attributed print of one.
+
+**Verdict: `open -- Gomberville 1665 seconde partie (Google Books H2eV4wAmIr0C), full-text searched (Dinteville,
+Dinteuille, Langres, Balagny), letter absent.`** Stronger than csED2's substitute-source check (Xivrey, Pérot,
+both negative, neither reaching Gomberville) and than the original csCS2b/csGOM holds (wrong tome only
+available): the correct tome, searched directly in its on-topic 1592-93 Champagne section, gives no hit. Hold
+lifted; re-nominated (see ROOM.md and QUEUE.md CS2-16). The f.128 sibling recovery question (DECODE R9450,
+Decrypted, alignment inconsistent under simple substitution) is unaffected by this edition check and stands as
+csCS2b left it.
+
+Credit: unchanged (D. Bourdeau, cyphersolver). Rule 10: no novelty claim made; this is a search result, not a
+verifier's classification.
+
+Requests this section: 0 additional www.googleapis.com/books.google.com requests beyond the CS2-26/CS2-06
+sections (same volume; all search terms counted in the CS2-26 section's total, ~15 total for all three rows). No
+gallica.bnf.fr, HathiTrust, BSB, ONB or archive.org used.
