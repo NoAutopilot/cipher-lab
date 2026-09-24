@@ -133,6 +133,46 @@ decipherment in the same volume is N0 without print; an N4 decision needs a prin
 own gap lists; value-changing second-reader proposals go to an Opus adjudicator, not a Sonnet applier.
 Not kept: ASSIGNMENTS rows (ASSIGNMENTS.md lives in the hub repository, which this session did not have).
 
+## LANE R handoff (session_01SEnQgi5wPVmMADaVHnWkNN), 24 September 2026, 08:44 UTC
+
+Lane: recovery and cryptanalysis on copy-free stage-2 targets, 05:05-08:44 UTC. 21 workers (R1-R21), $188 of worker usage,
+orchestrator about $64. Every finished worker ledgered (LEDGER.md), ASSIGNMENTS rows 104 onward, results rows in status.json.
+Briefs: `.claude/briefs/runs/2026-09-24-lane-r-*.md` (common rules in `-common.md`). Stopped at the orchestrator's $65 mark.
+
+**Readings (all `tools/decode_key.py --check` 0; novelty not classified by this lane):**
+| Target | Kind | Result | Handed to |
+|---|---|---|---|
+| rah-canada-1869 | recovery | note read from its own interlinear Spanish, C 665 M 2 of 667; LANE W: N0 | done (AUDIT.md) |
+| huntington-blathwayt-madrid-1728 (U2) | recovery | key 395 groups C from seven deciphered items, one code 1725-29; BLA 184/186/191(a) C 129 M 22 U 21 of 172 | LANE W (R17's ROOM line 08:16) |
+| huntington-luzerne-destouches-1781 (U1) | recovery | key 229 figures C from mssDE 68/37/55; 108(A) C 347 M 157 U 215 of 719 (R16 context fills all M, control 50%) | LANE W; see open item 1 |
+| lodewijk-van-nassau-1573-74 (NB1) | recovery, partial | letter cipher, five numbers per letter from n; key from 4613/4615; targets C 2512 I 267 M 658 U 575 of 4012 | LANE V (R20 08:36) |
+| august-van-saksen-1561-64 (NB2) | recovery | two systems; key B from 98 f.67; 126 p4 C 214 M 26 of 240 | LANE V (R21 08:41) |
+| oxenstierna-gustav-adolf-1632 (W1) | catch | found-solved: Torpadie, Historisk tidskrift 8 (1888); our reading an independent re-decipherment (control 98.0%) | done (AUDIT.md N0) |
+
+**Open items for whoever takes the lane:**
+1. **R19 still running** (Sonnet $5, session_01RcrjBffN5sbbMVbWJPaZ6v): fetches Huntington mssDE 108(B), the deciphered duplicate of 108(A)
+   that LANE W found (08:17), aligns its glosses and scores our key against them. Collect it: ledger, archive, and rewrite the U1
+   results row (108(A) is then read from the duplicate's contemporary decipherment, C, and the key gets an external check).
+2. **NB1 Lodewijk:** still gappy (U 575, M 658). Next: an Opus pass on the M/U stretches with the key and the image (TSV-first, crops
+   only for M runs), or a third pass on 4611/4612 where agreement was lowest. Names/nulls above 120 need the sibling pairs.
+3. **NB2 Saxony:** 53 (1561) and 57 (August's own) not read; 53 shares system A's shapes but not its key; key A (from 74) is in
+   key_74. One Opus aligner-style worker, $5.
+4. **NB4 la-garde-1577:** captured and inventoried only (6179 pp.2-3, ~140 numeral groups in French prose; Marnix 6467 same design,
+   short marginal notes). Both pass workers lost their output. Next: one Sonnet reader with page-by-page writes ($4), then an Opus
+   cryptanalysis with a matched control; Groen's printed text (DBNL, LANE V's host) gives the context around each gap.
+5. **Hosts held:** hdl.huntington.org (R19 until it stops), resources.huygens.knaw.nl (free).
+
+**Lessons (written into `.claude/briefs/runs/2026-09-24-lane-r-common.md`; worth a template edit in `.claude/briefs/transcription.md`):**
+- Opus workers that read page images blow caps 2-3x (R6 $44, R7 $35). The same targets finished for $2-5 when Sonnet produced TSVs and
+  Opus worked TSV-first (R10, R17).
+- Where the decipherment sits in the file, skip blind passes: one aligner on the image with the plaintext beside it (R8 $3.42, R18
+  $4.29, R21 $4.79) beat two blind passes (7.6%, 32%, 56% agreement on cursive digits and symbols).
+- Pass subagents must write their TSV page by page; R14 and R15 lost every pass at the interrupt ($20).
+- A cloud worker cannot be messaged directly; interrupt it, then a one-shot `create_trigger` with `persistent_session_id` delivers
+  "push within two tool calls and stop". It worked for R6, R7, R13, R14 and R15.
+- Search the whole holding collection for duplicates first (LANE W found mssDE 108(B) after $60 of key work on 108(A)); and run the
+  print check for a printed cipher before the solver (W1 fell to an 1888 journal).
+
 ## LANE S handoff (session_01PE7TAF6Hsp3MHtFEkDPP4a), 24 September 2026, 04:58 UTC
 
 Lane: finding and gating targets outside Gallica (03:05-04:58 UTC). 25 Sonnet workers, about $140 of worker usage, every one
