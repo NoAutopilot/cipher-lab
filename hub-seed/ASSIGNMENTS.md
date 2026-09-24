@@ -210,3 +210,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 165 | 24 Sep | cipher-lab | clair1108-duvergier Marine key search (AN Marine B, SHD, Tomokiyo 1690s) | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | lookup, Sonnet cap $5, lane-g2-d | running, session_01B8nDfU7hFRGXaoJ5a1oWiG |
 | 166 | 24 Sep | cipher-lab | fr2980-gramont f.30r L01 L02 L11 L12 reader with controls | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | solver, Opus cap $6, lane-g2-e | running, session_01NnaT8QV2yT8yhGRPCvAYiu |
 | 167 | 24 Sep | cipher-lab | Gallica scout round 4 (item-level archivesetmanuscrits, Arsenal/Mazarine/Institut), M22+ | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | scout, Sonnet cap $6, lane-g2-f | running, session_01Nd9wNwHWuKdBrCFixCkz3P |
+| 168 | 24 Sep | cipher-lab | U1 La Luzerne 108(A): context extension of 173 unkeyed figures with a control on mssDE 68 (TSV only) | LANE R | solver, Opus cap $8 | running, session_01Dg7wKNs3zNYD78sUeAi7j2 |
