@@ -625,3 +625,34 @@ Tomokiyo key images; a second reader on f.30r L01-L12; test v as EM or M, and B8
 Requests this pass: archive.org 4. No other host, no subagents, no logins.
 
 **Suggestions from the f.30 audit (24 Sept 2026, not done):** grep *Archivio storico italiano* Appendice II-IX and Sanuto *Diarii* 52-53 for Gramont, May-June 1530 (the two gaps between f.30 and N4); for the solver, Dupuy 452 f.48 (Gramont to Du Prat, 15 May 1530) and fr.3019 f.84 (to the grand maître, 15 May) are context letters in clear, and the printed April 1530 letter to the king (ASI App. I pp.473-481) is a period word list for the same negotiation.
+
+## Second reader f.30, 24 Sept 2026
+
+Worker: blind second reader (LANE V, Opus), 04:21-04:29 UTC by `date -u`. Disk only (images/crops_f30, atlas
+images); no Gallica. `passC_f30.tsv` (1977 signs + 54 dots; 212 marked uncertain, 4 illegible, 113 NEW shape codes)
+was made by three Opus subagents (f30r L01-18, f30r L19-35, f30v L01-20). They saw only the atlas, the pass brief and
+the crops. It was committed (936b4ef) before any f.30 transcription, pass or reading was opened. Caveat, as on f.29r:
+same atlas and same model family, so this is a second reading, not an independent sign census.
+
+**Agreement with ciphertext_f30.tsv** (`tools/reconcile_passes.py ciphertext_f30.tsv passC_f30.tsv`, NW, dots
+dropped): raw 1649/1987 columns = **83.0%**. 86 of the 338 differences are names only: pass C gave NEW codes to
+shapes the reconciler had already coded outside the atlas (nr, nq, n, v, re, B8, Sx, ev). Counting those as
+agreement gives **1735/1987 = 87.3%**. Per line (raw), the lowest are f30r L34 71%, f30v L14 73%, f30r L06 74%,
+f30v L07 74%, f30r L24 75%, f30v L16 77%; the highest are f30v L04 95%, f30v L10-L11 94%, f30r L10 and L18 92%.
+
+**Systematic classes, 88 columns, committed upheld on sample crops:** nr>2 (29) and n>2 (6): pass C merged the
+dotted r (nr) into 2, but the crops show the two apart (f30r L04a idx0, L13b idx24/32). 9>g (23, 22 of them on the
+verso) and g>9 (3): the verso subagent used the inverse of the f.29r rule, so a long descender sweeping down-left
+is 9 (f30v L05a idx9, L07b idx18/24/29). eh>c (17), with low resolution, so the least sure of the four. nq>xr (10):
+the cursive N with a hook sits next to a distinct x-with-r (f30r L12a/b).
+
+**Changes proposed: 2** (`passC_proposed_changes_f30.tsv`, 338 rows, `proposed` column): f30r L06 idx9 and idx21,
+committed `2` → `zb`. The crops show a barred 2 at both places (reconciliation class 3). Not applied. Of the other
+164 one-off differences, 14 are pass C insertions, mostly `mx x` for the committed single `mx`, which is a
+segmentation choice (f30r L02b checked). The rest were not re-checked on the crop and are proposed `no`. The
+unflagged ones are the ones worth a look: lam/lz (f30r L12 idx1), bb/br (f30r L06 idx0), 4t/d (f30v L05 idx1,
+L16, f30r L25), and 2/zb at f30r L11 idx28.
+
+**Inventory:** pass C found no shape the reconciled code set lacks. Every recurring NEW shape maps to a code that
+reconciliation_f30.md already created. Suggestion: add nr, nq, n, v, re, B8, Sx and ev to `atlas_f30add.png` so
+that a future blind pass has names for them.

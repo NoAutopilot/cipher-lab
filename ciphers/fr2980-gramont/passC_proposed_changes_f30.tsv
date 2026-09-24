@@ -1,0 +1,340 @@
+# Second reader f.30 (pass C) vs ciphertext_f30.tsv, 24 Sept 2026. One row per disagreeing alignment column (tools/reconcile_passes.py, NW). index = committed position (blank = pass C inserted a sign). class: namemap = pass C NEW code for a shape the reconciler already coded (counts as agreement); systematic = class checked on sample crops, committed upheld; other = one-off. proposed yes only where this worker saw the crop and the image supports pass C. NOT applied.
+line	index	committed	yours	class	image_evidence	proposed
+f30r_L01	5	Af	4t	other	not re-checked on the crop by this worker	no
+f30r_L01	10	rs	z3	other	not re-checked on the crop by this worker	no
+f30r_L01	15	nr	[?]	other	not re-checked on the crop by this worker	no
+f30r_L01	31	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L01	37	H	lt	other	not re-checked on the crop by this worker	no
+f30r_L02	0	[?]	INF	other	not re-checked on the crop by this worker	no
+f30r_L02	2	nq	xr	systematic	image (f30r_L12a idx6, L12b idx25): cursive N with hook = nq, distinct from x-with-r (xr) beside it	no
+f30r_L02	3	n	2	systematic	same r/2 family as nr>2; committed n kept	no
+f30r_L02	8	paren	sl	other	not re-checked on the crop by this worker	no
+f30r_L02	15	Mx	xr	other	not re-checked on the crop by this worker	no
+f30r_L02	26	re	NEW:r-joined-to-e	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L02		-	x	other-insert	pass C writes the arch+x compound as two signs (mx x); segmentation, not a reading (f30r_L02b checked)	no
+f30r_L02	36	zb	E	other	not re-checked on the crop by this worker	no
+f30r_L03		-	paren	other-insert	not re-checked on the crop by this worker	no
+f30r_L03	0	c	NEW:small-c-with-hat	other	not re-checked on the crop by this worker	no
+f30r_L03	9	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L03	11	nq	xr	systematic	image (f30r_L12a idx6, L12b idx25): cursive N with hook = nq, distinct from x-with-r (xr) beside it	no
+f30r_L03	12	n	2	systematic	same r/2 family as nr>2; committed n kept	no
+f30r_L03	17	z3	xr	other	not re-checked on the crop by this worker	no
+f30r_L03	30	CROSS	NEW:diamond-with-cross	other	not re-checked on the crop by this worker	no
+f30r_L03	36	lt	Tb	other	not re-checked on the crop by this worker	no
+f30r_L04	0	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L04	6	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L04	10	bb	D	other	not re-checked on the crop by this worker	no
+f30r_L04	16	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L04	22	nn	NEW:n-with-descender	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L04	28	HASH	4t	other	not re-checked on the crop by this worker	no
+f30r_L04	36	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L04	37	B8	5	other	not re-checked on the crop by this worker	no
+f30r_L04	38	h	lz	other	not re-checked on the crop by this worker	no
+f30r_L05	4	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L05	9	nr	NEW:small-n	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L05	11	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L05	12	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L05	21	B8	NEW:loop-over-8	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L05	24	lt	4t	other	not re-checked on the crop by this worker	no
+f30r_L05		-	x	other-insert	pass C writes the arch+x compound as two signs (mx x); segmentation, not a reading (f30r_L02b checked)	no
+f30r_L05	32	4t	aq	other	not re-checked on the crop by this worker	no
+f30r_L06	0	bb	br	other	not re-checked on the crop by this worker	no
+f30r_L06	8	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L06	9	2	zb	other	image f30r_L06a x~820: z/2 with a stroke through it (barred 2); reconciliation rule 3 gives zb	yes
+f30r_L06	14	Sx	NEW:S-with-dot	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L06	15	sl	[?]	other	not re-checked on the crop by this worker	no
+f30r_L06	20	bb	NEW:loop-over-triangle	other	not re-checked on the crop by this worker	no
+f30r_L06	21	2	zb	other	image f30r_L06b x~380: barred 2 after bb, stroke visible; zb	yes
+f30r_L06	24	HASH	NEW:asterisk-star-with-tail	other	not re-checked on the crop by this worker	no
+f30r_L06	32	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L06	33	Tb	NEW:tall-beta-shape	other	not re-checked on the crop by this worker	no
+f30r_L07	3	lt	CROSS	other	not re-checked on the crop by this worker	no
+f30r_L07		-	x	other-insert	pass C writes the arch+x compound as two signs (mx x); segmentation, not a reading (f30r_L02b checked)	no
+f30r_L07	11	HASH	4t	other	not re-checked on the crop by this worker	no
+f30r_L07	12	nq	xr	systematic	image (f30r_L12a idx6, L12b idx25): cursive N with hook = nq, distinct from x-with-r (xr) beside it	no
+f30r_L07	13	n	NEW:small-n	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L07		-	NEW:k-shape	other-insert	not re-checked on the crop by this worker	no
+f30r_L07	20	n6	-	other	not re-checked on the crop by this worker	no
+f30r_L07	24	nq	-	other	not re-checked on the crop by this worker	no
+f30r_L07	26	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L07	33	q	g2	other	not re-checked on the crop by this worker	no
+f30r_L08	0	B8	NEW:8-with-tail	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L08	8	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L08	15	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L08	20	o	9	other	not re-checked on the crop by this worker	no
+f30r_L08	25	paren	ss2	other	not re-checked on the crop by this worker	no
+f30r_L08	29	HASH	CROSS	other	not re-checked on the crop by this worker	no
+f30r_L08	34	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L08	36	yt	INF	other	not re-checked on the crop by this worker	no
+f30r_L09	2	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L09	10	HASH	NEW:asterisk-star	other	not re-checked on the crop by this worker	no
+f30r_L09	11	h	bb	other	not re-checked on the crop by this worker	no
+f30r_L09	17	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L09		-	x	other-insert	pass C writes the arch+x compound as two signs (mx x); segmentation, not a reading (f30r_L02b checked)	no
+f30r_L09	35	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L09	36	nq	xr	systematic	image (f30r_L12a idx6, L12b idx25): cursive N with hook = nq, distinct from x-with-r (xr) beside it	no
+f30r_L10	6	lt	CROSS	other	not re-checked on the crop by this worker	no
+f30r_L10	7	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L10	8	q9	QQ	other	not re-checked on the crop by this worker	no
+f30r_L11	2	Mx	CROSS	other	not re-checked on the crop by this worker	no
+f30r_L11	6	Af	4t	other	not re-checked on the crop by this worker	no
+f30r_L11	11	FL	NEW:N-shape	other	not re-checked on the crop by this worker	no
+f30r_L11	24	ev	NEW:e-joined-to-v	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L11	26	B8	NEW:loop-over-8	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L11	27	nq	xr	systematic	image (f30r_L12a idx6, L12b idx25): cursive N with hook = nq, distinct from x-with-r (xr) beside it	no
+f30r_L11	28	2	zb	other	not re-checked on the crop by this worker	no
+f30r_L12	1	lam	lz	other	not re-checked on the crop by this worker	no
+f30r_L12	6	nq	xr	systematic	image (f30r_L12a idx6, L12b idx25): cursive N with hook = nq, distinct from x-with-r (xr) beside it	no
+f30r_L12	7	n	NEW:small-n	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L12	18	Af	fh	other	not re-checked on the crop by this worker	no
+f30r_L12	19	lt	Th	other	not re-checked on the crop by this worker	no
+f30r_L12	25	nq	xr	systematic	image (f30r_L12a idx6, L12b idx25): cursive N with hook = nq, distinct from x-with-r (xr) beside it	no
+f30r_L13	7	B8	NEW:8-with-tail	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L13	8	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L13	23	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L13	24	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L13	32	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L14		-	x	other-insert	pass C writes the arch+x compound as two signs (mx x); segmentation, not a reading (f30r_L02b checked)	no
+f30r_L14	12	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L14	13	HASH	NEW:asterisk-star	other	not re-checked on the crop by this worker	no
+f30r_L14	18	nr	NEW:small-n	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L14	23	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L14	26	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L14	35	nq	xr	systematic	image (f30r_L12a idx6, L12b idx25): cursive N with hook = nq, distinct from x-with-r (xr) beside it	no
+f30r_L15		-	x	other-insert	pass C writes the arch+x compound as two signs (mx x); segmentation, not a reading (f30r_L02b checked)	no
+f30r_L15	6	Sx	NEW:S-with-bar	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L15	14	g	9	systematic	same 9/g family; committed kept	no
+f30r_L15	32	nq	xr	systematic	image (f30r_L12a idx6, L12b idx25): cursive N with hook = nq, distinct from x-with-r (xr) beside it	no
+f30r_L15	33	n	2	systematic	same r/2 family as nr>2; committed n kept	no
+f30r_L16	2	n	NEW:small-n	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L16	10	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L16	16	r3	[?]	other	not re-checked on the crop by this worker	no
+f30r_L16	18	z	2	other	not re-checked on the crop by this worker	no
+f30r_L16		-	xr	other-insert	not re-checked on the crop by this worker	no
+f30r_L16	24	nq	2	other	not re-checked on the crop by this worker	no
+f30r_L16	31	B8	NEW:loop-over-8	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L16	34	nr	c	other	not re-checked on the crop by this worker	no
+f30r_L17	11	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L17	15	lam	lz	other	not re-checked on the crop by this worker	no
+f30r_L17	18	fh	Af	other	not re-checked on the crop by this worker	no
+f30r_L17	21	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L17	23	v	yt	other	not re-checked on the crop by this worker	no
+f30r_L17	25	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L17	28	aq	NEW:a-with-loop-and-6	other	not re-checked on the crop by this worker	no
+f30r_L17	33	nq	xr	systematic	image (f30r_L12a idx6, L12b idx25): cursive N with hook = nq, distinct from x-with-r (xr) beside it	no
+f30r_L17	34	n	2	systematic	same r/2 family as nr>2; committed n kept	no
+f30r_L18	14	9	g2	other	not re-checked on the crop by this worker	no
+f30r_L18	20	Sx	NEW:S-with-bar	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L18	38	H	lt	other	not re-checked on the crop by this worker	no
+f30r_L19	2	2	p	other	not re-checked on the crop by this worker	no
+f30r_L19	12	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30r_L19	20	Tb	q	other	not re-checked on the crop by this worker	no
+f30r_L19	30	4t	d	other	not re-checked on the crop by this worker	no
+f30r_L19	31	Hb	H	other	not re-checked on the crop by this worker	no
+f30r_L20	5	Tb	QQ	other	not re-checked on the crop by this worker	no
+f30r_L20	17	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L20	29	B8	NEW:x-over-loop	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L20	34	4t	d	other	not re-checked on the crop by this worker	no
+f30r_L21	12	CROSS	4t	other	not re-checked on the crop by this worker	no
+f30r_L21	14	Sx	-	other	not re-checked on the crop by this worker	no
+f30r_L21	15	h	5	other	not re-checked on the crop by this worker	no
+f30r_L21	25	Tb	bb	other	not re-checked on the crop by this worker	no
+f30r_L21	33	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L21	36	ss2	mx	other	not re-checked on the crop by this worker	no
+f30r_L22	0	[?]	zb	other	not re-checked on the crop by this worker	no
+f30r_L22	4	rho	eh	other	not re-checked on the crop by this worker	no
+f30r_L22	5	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L22	6	n	2	systematic	same r/2 family as nr>2; committed n kept	no
+f30r_L22	9	Tb	bb	other	not re-checked on the crop by this worker	no
+f30r_L22	10	nr	NEW:n-shape	other	not re-checked on the crop by this worker	no
+f30r_L22	28	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L23		-	o	other-insert	not re-checked on the crop by this worker	no
+f30r_L23	9	HASH	NEW:asterisk	other	not re-checked on the crop by this worker	no
+f30r_L23	14	v	-	other	not re-checked on the crop by this worker	no
+f30r_L23	15	E	NEW:v-shape	other	not re-checked on the crop by this worker	no
+f30r_L23	19	Sx	5b	other	not re-checked on the crop by this worker	no
+f30r_L23	27	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L23	31	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L24	4	xr	NEW:N-hooked	other	not re-checked on the crop by this worker	no
+f30r_L24	5	n	NEW:n-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L24	9	lam	NEW:N-hooked	other	not re-checked on the crop by this worker	no
+f30r_L24	13	A2	zb	other	not re-checked on the crop by this worker	no
+f30r_L24	16	lt	4t	other	not re-checked on the crop by this worker	no
+f30r_L24	18	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L24	29	HASH	NEW:asterisk	other	not re-checked on the crop by this worker	no
+f30r_L24	32	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L24	33	n	p	other	not re-checked on the crop by this worker	no
+f30r_L25	1	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L25	2	mx	x	other	pass C writes the arch+x compound as two signs (mx x); segmentation, not a reading (f30r_L02b checked)	no
+f30r_L25	9	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L25	21	lt	Th	other	not re-checked on the crop by this worker	no
+f30r_L25	27	B8	HASH	other	not re-checked on the crop by this worker	no
+f30r_L25	31	v	NEW:v-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L25	35	4t	d	other	not re-checked on the crop by this worker	no
+f30r_L26	11	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L26	22	lam	dl	other	not re-checked on the crop by this worker	no
+f30r_L26	31	FL	-	other	not re-checked on the crop by this worker	no
+f30r_L26	32	[?]	NEW:N-hooked	other	not re-checked on the crop by this worker	no
+f30r_L26	34	eh	lt	other	not re-checked on the crop by this worker	no
+f30r_L27	10	null_o	eh	other	not re-checked on the crop by this worker	no
+f30r_L27	11	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L27	12	n	NEW:n-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L27	16	B8	NEW:x-over-loop	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L27	29	re	NEW:r-c-pair	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L27	32	Af	bb	other	not re-checked on the crop by this worker	no
+f30r_L27	33	z3	xr	other	not re-checked on the crop by this worker	no
+f30r_L28	10	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L28	11	n	NEW:n-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L28	15	h	-	other	not re-checked on the crop by this worker	no
+f30r_L28	23	lt	Th	other	not re-checked on the crop by this worker	no
+f30r_L28	26	z3	zb	other	not re-checked on the crop by this worker	no
+f30r_L28	29	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L28	34	re	NEW:r-c-pair	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L29	3	Sx	5b	other	not re-checked on the crop by this worker	no
+f30r_L29	4	n	NEW:n-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L29	10	n	NEW:n-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L29	25	bb	NEW:8-over-triangle	other	not re-checked on the crop by this worker	no
+f30r_L29	28	ll	4t	other	not re-checked on the crop by this worker	no
+f30r_L30	3	eh	NEW:r-c-pair	other	not re-checked on the crop by this worker	no
+f30r_L30	8	lz	zb	other	not re-checked on the crop by this worker	no
+f30r_L30	14	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L30	15	n	NEW:n-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L30	19	re	NEW:r-c-pair	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L30	26	lz	zb	other	not re-checked on the crop by this worker	no
+f30r_L30	28	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L31	0	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L31	1	re	NEW:r-c-pair	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L31	20	v	NEW:v-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L31	25	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30r_L31	26	ev	NEW:c-v-pair	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L31	35	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L31	36	n	p	other	not re-checked on the crop by this worker	no
+f30r_L32	16	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L32	17	re	NEW:r-c-pair	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L32	22	n	NEW:n-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L32	27	ll	-	other	not re-checked on the crop by this worker	no
+f30r_L32	28	sl	4t	other	not re-checked on the crop by this worker	no
+f30r_L32	38	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L33	15	CROSS	4t	other	not re-checked on the crop by this worker	no
+f30r_L33	17	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L33		-	sl	other-insert	not re-checked on the crop by this worker	no
+f30r_L34	1	INF	NEW:x-over-loop	other	not re-checked on the crop by this worker	no
+f30r_L34	15	n6	-	other	not re-checked on the crop by this worker	no
+f30r_L34	17	Mx	NEW:N-hooked	other	not re-checked on the crop by this worker	no
+f30r_L34	18	B8	NEW:x-over-loop	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L34	20	lz	zb	other	not re-checked on the crop by this worker	no
+f30r_L34	25	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L34	26	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L34	27	n	NEW:n-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L34	32	eh	NEW:r-c-pair	other	not re-checked on the crop by this worker	no
+f30r_L34	34	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30r_L35	1	sl	-	other	not re-checked on the crop by this worker	no
+f30r_L35	2	nr	ST	other	not re-checked on the crop by this worker	no
+f30r_L35	5	nq	NEW:N-hooked	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30r_L35	6	n	2	systematic	same r/2 family as nr>2; committed n kept	no
+f30r_L35	9	q	rho	other	not re-checked on the crop by this worker	no
+f30r_L35	26	eh	E	other	not re-checked on the crop by this worker	no
+f30r_L35	29	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30v_L01	8	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L01	12	HASH	NEW:asterisk-cross-star	other	not re-checked on the crop by this worker	no
+f30v_L01	13	nq	NEW:N-cursive-with-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L01	14	n	NEW:n-two-strokes	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L01	22	re	rs	other	not re-checked on the crop by this worker	no
+f30v_L01	23	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L02	5	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L02	15	Sx	5	other	not re-checked on the crop by this worker	no
+f30v_L02	28	eh	c	systematic	image (f30r_L13b idx25): loop/hook on the c = eh; low resolution, not re-checked each time	no
+f30v_L02	31	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L02	35	lam	n6	other	not re-checked on the crop by this worker	no
+f30v_L03	13	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L03	14	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L03	15	5b	zb	other	not re-checked on the crop by this worker	no
+f30v_L03	22	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L03	23	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L03	39	nr	NEW:n-two-strokes	other	not re-checked on the crop by this worker	no
+f30v_L04	14	n	NEW:n-two-strokes	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L04	15	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L05	1	4t	d	other	not re-checked on the crop by this worker	no
+f30v_L05	9	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L05	27	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L05	32	lz	zb	other	not re-checked on the crop by this worker	no
+f30v_L05	33	g	9	systematic	same 9/g family; committed kept	no
+f30v_L06	0	v	NEW:v-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L06	1	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L06	2	nr	2	systematic	image (f30r_L04a idx0, L13b idx24/32): r-shape with dot above = nr; the plain 2 has a flat base and no dot; pass C merged the two	no
+f30v_L06	10	v	NEW:v-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L06		-	sl	other-insert	not re-checked on the crop by this worker	no
+f30v_L06	17	B8	INF	other	not re-checked on the crop by this worker	no
+f30v_L06	31	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L06	34	g	-	other	not re-checked on the crop by this worker	no
+f30v_L06	35	c	9	other	not re-checked on the crop by this worker	no
+f30v_L07	1	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L07	9	n6	D	other	not re-checked on the crop by this worker	no
+f30v_L07	15	nq	NEW:N-cursive-with-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L07	18	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L07	22	nq	NEW:N-cursive-with-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L07	23	n	NEW:n-two-strokes	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L07	24	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L07	29	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L07	33	nq	NEW:N-cursive-with-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L08	8	xr	x	other	not re-checked on the crop by this worker	no
+f30v_L08	9	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L08	28	bb	TRI	other	not re-checked on the crop by this worker	no
+f30v_L08	29	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L09	10	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L09	23	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L09	29	Zs	zu	other	not re-checked on the crop by this worker	no
+f30v_L10	2	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L10	4	nq	NEW:N-cursive-with-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L11	13	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L11	18	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L12	5	T	Th	other	not re-checked on the crop by this worker	no
+f30v_L12	8	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L12		-	INF	other-insert	not re-checked on the crop by this worker	no
+f30v_L12	13	bb	dl	other	not re-checked on the crop by this worker	no
+f30v_L12	25	v	NEW:v-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L13	6	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L13	12	Af	fh	other	not re-checked on the crop by this worker	no
+f30v_L13	16	Hb	Th	other	not re-checked on the crop by this worker	no
+f30v_L13	25	bb	TRI	other	not re-checked on the crop by this worker	no
+f30v_L14	0	B8	NEW:crossed-loop-rho	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L14	6	v	NEW:v-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L14	13	br	bb	other	not re-checked on the crop by this worker	no
+f30v_L14	15	nq	NEW:N-cursive-with-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L14	25	T	Th	other	not re-checked on the crop by this worker	no
+f30v_L14	27	nq	NEW:N-cursive-with-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L14	28	n	NEW:n-two-strokes	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L14	29	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L15	10	Zs	H	other	not re-checked on the crop by this worker	no
+f30v_L15	17	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L15	31	sl	paren	other	not re-checked on the crop by this worker	no
+f30v_L16	0	nq	NEW:N-cursive-with-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L16	8	ff	Af	other	not re-checked on the crop by this worker	no
+f30v_L16	10	q	q9	other	not re-checked on the crop by this worker	no
+f30v_L16	16	n	NEW:n-two-strokes	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L16	19	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L16	24	4t	d	other	not re-checked on the crop by this worker	no
+f30v_L16	27	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L17	13	v	NEW:v-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L17	15	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L17	18	eh	T	other	not re-checked on the crop by this worker	no
+f30v_L17	19	v	NEW:v-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L17	29	r3	QQ	other	not re-checked on the crop by this worker	no
+f30v_L18	1	nq	NEW:N-cursive-with-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L18	10	lt	4t	other	not re-checked on the crop by this worker	no
+f30v_L18	12	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L18	15	nq	NEW:N-cursive-with-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L18	16	n	rho	other	not re-checked on the crop by this worker	no
+f30v_L18	22	v	NEW:v-shape	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L19	0	tb	zb	other	not re-checked on the crop by this worker	no
+f30v_L19	9	mx	Mx	other	pass C writes the arch+x compound as two signs (mx x); segmentation, not a reading (f30r_L02b checked)	no
+f30v_L19	12	B8	NEW:crossed-loop-rho	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L19	16	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L19		-	c	other-insert	not re-checked on the crop by this worker	no
+f30v_L19	23	Mx	NEW:N-cursive-with-hook	other	not re-checked on the crop by this worker	no
+f30v_L19	28	9	g	systematic	image (f30v_L05a idx9, f30v_L07b idx18/24/29): long descender sweeping down-left = 9 (f.29r rule); block-C subagent used the inverse rule (long left tail = g)	no
+f30v_L19	30	nr	NEW:small-r-hook	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L20	0	HASH	Tb	other	not re-checked on the crop by this worker	no
+f30v_L20	3	g	9	systematic	same 9/g family; committed kept	no
+f30v_L20	23	n	NEW:n-two-strokes	namemap	same shape, pass C had no atlas code (reconciliation_f30.md class 6)	no
+f30v_L20	25	nq	mx	other	not re-checked on the crop by this worker	no
