@@ -1,4 +1,4 @@
-LANE R5 WORKERS H1-H6 -- M35 SALVIATI: one leaf per worker with A's box-keyed method (Sonnet, cap $12 each; disk only, no fetches).
+LANE R5 WORKERS H1-H6 -- M35 SALVIATI: one leaf per worker with A's box-keyed method (Sonnet, cap $12 each for H1-H2; $16 for H3-H6 after measured costs of $9.5-13.6 a leaf; disk only, no fetches).
 Owner's decision relayed by the parent at 20:16 UTC 24 Sept 2026: buy the remaining leaves (usage, not purchase). Common rules:
 .claude/briefs/runs/2026-09-24-lane-r5-common.md. Target ciphers/fr2933-salviati-1525. Read NOTES.md "Leaves f.54v-f.57v (LANE R4 J)",
 "Code+mark control curve (LANE R4 P)" and "Leaf f.55r priced, rest not bought (LANE R5)".
@@ -14,3 +14,8 @@ Cost rule (RETRO f proposal 1): get_session on yourself after every six lines. I
 if the remaining cap covers it; otherwise push and stop with a progress section, so no pass is lost at the cap.
 NOTES.md section "Leaf <leaf> (24 Sept 2026, LANE R5 H<n>)". ROOM done: "for LANE R5: salviati <leaf> agreement <x>%, <tokens> sign
 tokens, cost $<c>". No solving.
+
+Addendum 21:35 UTC (LANE R5 orchestrator): measured cost a leaf is $9.5 (f.55r pass B + settling on a committed pass A) to $13.6+
+(f.55v, pass A plus 11 of 19 lines of pass B). get_session's cost field lags until the subagent's usage folds in, so estimate pass B at
+the same cost as pass A and apply the common stop rule to that estimate. H2b finishes f.55v: pass B lines 12-19 only (blind, never opens
+passA*), appended to passB_f55v.tsv, then recon, gate and settling.
