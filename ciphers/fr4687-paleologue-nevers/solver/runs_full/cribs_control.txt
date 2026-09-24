@@ -1,0 +1,22 @@
+CONTROL (noise 0.10, window 5.23.y.25.13.20.15.0.10): unconstrained score/unit -3.645
+  apitornoi (TRUE)	-3.120	delta +0.524	onfusioiaeusignormiabacilemanidisslleerenmdissimadamiaparichcelepaeesirallhlrico
+  cardinale	-4.349	delta -0.705	tagelrtecneiefataeecscoeonecaeurilooiiniaeuelirecucercacpeomoiinacanieaciomonrot
+  lcardinal	-4.476	delta -0.831	ingipailloialhnicallrleltoalnloaaptteeienaolpaaalolaalclmleseeuoclioalclutstiaei
+  francesco	-5.048	delta -1.403	usnedauofeeionsuaooftfioieofsolaidiiaaeasolodiaoflfoafrftoimiarerfoeioafrimieaiu
+  guglielmo	-5.284	delta -1.639	ilpragiogirioclioaogdgeosiaglongiasseeeelanoaigagngaggugroeteeaiuguiioogastsegei
+  monsignor	-4.533	delta -0.888	insecnirmieerenitermtmaroiemnranecoouugunearcenemamenmomdralauoiomiiertmoolognai
+  suamaesta	-4.354	delta -0.710	estocaeasioiafseleastsnaiiessauaiciiooeoseuaciaesuseasusgandnoriuseiialsridieane
+  ilducadis	-4.257	delta -0.613	edetedesirtusademasiliesaraidsodueaannandaoseudaioiadiliasetenorliorusmioataadee
+  monferrat	-4.595	delta -0.950	argionatmeiithralitmlmetseimrtoniossaarariotoinimominmomctedeaueomieitlmusdsrnea
+  disauoiae	-4.336	delta -0.691	tieacstedlaiemitnaedidoeiladieesiciirroriaeecisadedasdidpeonoreliduliendeiniosot
+  lacorteet	-4.163	delta -0.518	repuocrtlnuitteroatleletinaleticioiisstseaitoicalilaclaliteresanaldnitolairitcer
+  cheilrede	-4.261	delta -0.617	nepolenecaouebennsecicieoasceeteulooaaraesteluesctcsechcleimiarahciauencromorein
+  nostrofra	-4.385	delta -0.740	afgicsaaneioabfaaianmneaueinfalsocuuiioifilacosinlnisnonpaereioeonieoaanouruosea
+  ostrofrat	-4.112	delta -0.467	arpcitatoicutarailtoioetdilortetuiddaafarletiutloeoltosostemeanisoniutiondmdftea
+  strofrate	-4.212	delta -0.567	daheirdesueiegadnoesesaeauosaeiriiaallrlaoieiirosisorststeamaloutscuiensoamarrad
+  trofratel	-4.597	delta -0.952	etpomoeltaoalateseltrtilnaettluoamnniiaiteulmaoetuteotrtdliciieartaaalstencnaoie
+  rofratell	-4.465	delta -0.820	ueeosfulrcoelmeuiolrsrilecorelafeseetttteoalseforarofroralinitacoriceliraenetfiu
+  ofratello	-4.224	delta -0.579	alrinraooeiconlasioomoioneiolotrcnnneeeelitoncriotoirofosoidieuefoaecosoundneria
+  vostrofra	conflict (one unit, two letters)
+  suofratel	-4.433	delta -0.788	etrnmoelsenilhtedilsnsalueistlioimuuooaotiilmioisisiosusclaraoieusaeildsiuruaoae
+  uofratell	-4.437	delta -0.792	deainfdluciolhedoilunuileciuelafoneetttteialnofiuauifuouolisitacouecolouaesetfid

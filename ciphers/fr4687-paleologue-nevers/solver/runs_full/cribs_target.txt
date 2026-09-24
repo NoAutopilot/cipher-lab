@@ -1,0 +1,21 @@
+TARGET: unconstrained score/unit -3.549
+  cardinale	-4.058	delta -0.508	eaaroalerobcoiialtesnprscardinaleftcroitcreanetdnieu
+  lcardinal	-4.447	delta -0.898	tcnaecalapuledicaoleiraelcardinalfolaedolalnitoridle
+  francesco	-5.009	delta -1.460	drsaarcoaghfacircioneuanfrancescopifalcifaosedinecon
+  guglielmo	-5.352	delta -1.803	tulgrumoghigrinumaoceogcguglielmodaggsiaggoletaleion
+  monsignor	-5.023	delta -1.474	lonnioorndemiieooareginemonsignorcamneiamnrnglasgire
+  suamaesta	-4.361	delta -0.812	cusalutaaenslaoutiaoeraosuamaestahisaeaisaasecimeaao
+  ilducadis	-4.844	delta -1.294	rlddolisdraiocelieseandeilducadiseeideceidsdareuacso
+  monferrat	-4.606	delta -1.057	dornuoatncamueeoaitiranimonferrattimnseimntrrdifreta
+  disauoiae	-4.200	delta -0.651	niisriaeslodruriaeeaolsadisauoiaegedseuedseioneaouem
+  lacorteet	-4.385	delta -0.836	saeciaetcmgliruaeitatocalacorteetdilcorilctetsiotrto
+  cheilrede	-5.246	delta -1.697	nheeihdeepacilihdoetraetcheilredeuoceiloceeernoirlet
+  nostrofra	-4.882	delta -1.333	lofseorastenereoriauoesunostrofrahinsarinsafolitorae
+  ostrofrat	-4.997	delta -1.448	isrtnsattphononsaetlfetlostrofrateeotdoeottrfierfotu
+  strofrate	-5.064	delta -1.515	otaratternosafuttielrerlstrofratepisrifisrearoiorfee
+  trofratel	-3.945	delta -0.396	drtocrelomptcrereilianoitrofratelpitoeritoltadifarla
+  rofratell	-4.800	delta -1.251	soefiollfagriauoleldtifdrofratellierfiaerfletsertala
+  ofratello	-5.081	delta -1.532	sflrafloregoatufliocearcofratellohioratiorolesiaeton
+  vostrofra	conflict (one unit, two letters)
+  suofratel	-3.422	delta +0.128	dutocuelomiscriueilaanoasuofrateleisonrisoltadifarla
+  uofratell	-4.874	delta -1.325	noefiollfsiuiaioleldtifduofratellheufmaeufletnertala

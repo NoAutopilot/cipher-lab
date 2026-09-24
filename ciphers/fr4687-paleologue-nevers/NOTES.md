@@ -395,3 +395,93 @@ marked `med` (8's, `y`'s, a couple of clear 0/2 digits); the whole set should be
 and the known 4/9 and 1/7 confusability noted in Segmentation. No reconciliation against pass B, no decoding, no
 novelty wording. One Sonnet subagent was available per brief but not used -- the crop set was small enough for one
 session to read directly.
+
+## Full text: extras reconciled and solver rerun (24 Sept 2026)
+
+Started by session_018fT9e8dT9qbRixPBdcv5Vb, which reconciled the extra-region signs and ran the target and the
+noise controls (`solver/run_full.sh`). It went idle before the unit-null calibration solves and the crib test had
+finished. An Opus finisher (LANE G) re-ran those two steps in the foreground from the same script, seeds and
+models, with the model rebuilt from `tools/data/it16`. `calib_dump.py` reproduced the committed control ciphers
+byte for byte. The outputs were committed after the process exited (04:41-04:56 UTC). **Result: a clean negative
+with matched controls. No reading is claimed. Grade counts: H 0, C 0, S 0, M 0, I 0.**
+
+**Input.** `ciphertext.txt` and `inventory.tsv` now cover all 24 lines in the file: 16 main lines plus the 8
+extra-region lines (`f8_left_L1-L4`, `f8_right_L12`, `f9_top_L1-L3`). `reconcile.py --check` and
+`solver/make_signs_full.py --check` both pass. That gives 900 signs, H 755 and M 145 (M share 16.1 %): 18.4 % of
+the 588 main-line signs (108) and 11.9 % of the 312 extra-region signs (37). `solver/signs_full.txt` groups
+them into 7 unbroken cipher runs, split wherever a clear-text phrase interrupts the cipher. Under the 1x/2x design
+they parse into 642 units of 30 types, with 3 parse exceptions.
+
+**Matched controls at the new length (rule 3).** These use held-out Italian, the same 1x/2x inventory and the
+target's line lengths, with 540 units giving 862-961 signs. They are solved blind with the training model, 5
+seeds each (`solver/runs_full/control_*`):
+
+| control | mean letter accuracy | per seed | same control at 588 signs |
+|---|---|---|---|
+| y letter, 0 % noise | 0.998 | 1.00 0.99 1.00 1.00 1.00 | 1.000 |
+| y letter, 5 % noise | 0.936 | 0.96 0.91 0.94 0.94 0.94 | 0.917 |
+| y letter, 10 % noise | 0.864 | 0.88 0.84 0.87 0.88 0.85 | 0.754 |
+| y letter, 15 % noise | 0.700 | 0.81 0.42 0.75 0.75 0.76 | 0.244 |
+| y null (6.6 %), 5 % noise | 0.926 | 0.93 0.91 0.96 0.91 0.92 | 0.781 |
+
+The extra length did what was hoped for: the 10-15 % noise band is now readable (86 % and 70 %, against
+75 % and 24 % at 588 signs). The target's M share (16 %) is an upper bound on its misreading rate, because M
+means the readings did not all agree, not that the sign is wrong. So the target sits inside the band the solver
+now reads.
+
+**Target** (`solver/runs_full/target*`). Model score per unit, guard included, against nulls:
+
+| design | units | types | score/unit | null (kind) | z | output |
+|---|---|---|---|---|---|---|
+| 1x/2x, y letter | 642 | 30 | -3.484 | -3.982 ± 0.005 (signs) | 91.9 | not Italian |
+| 1x/2x, y letter | 642 | 30 | -3.484 | -4.052 ± 0.024 (units) | 24.0 | not Italian |
+| 1x/2x, y null | 600 | 29 | -3.640 | -4.033 ± 0.041 (signs) | 9.6 | not Italian |
+| 1x only, y letter | 750 | 20 | -3.981 | -4.242 ± 0.037 (signs) | 7.0 | not Italian |
+| 2x only, y letter | 779 | 21 | -3.909 | -4.219 ± 0.034 (signs) | 9.1 | not Italian |
+
+The best output begins `datouaelomisuriaeileanoesaofrateleisoirisoltadifarle|imitaiacetroideuaelicenuosistrs...`.
+It has scattered short strings (`fratel`, `di farle`, `stato et`, `consi`) but no run of words.
+
+**Calibration, same unit-null solve** (`solver/runs_full/ctl_unitnull_n*.txt`). These controls are matched to the
+target's length (558-568 units):
+
+| | score/unit | unit-shuffle null | z | output |
+|---|---|---|---|---|
+| control, 10 % noise | -3.059 | -3.931 ± 0.031 | 27.8 | Italian, readable (`...deceesareconieearhaentoeconosecoutoterrore...`) |
+| control, 15 % noise | -3.326 | -3.971 ± 0.035 | 18.5 | Italian, largely readable |
+| **target** | **-3.484** | -4.052 ± 0.024 | 24.0 | not Italian |
+
+At 588 signs the target's score could not be told apart from a 10 % noise control's (NOTES, "Joint-segmentation
+solver"). At 900 signs it can. The target scores 0.43 per unit below the 10 % control and 0.16 below the 15 %
+control, and its output does not read where theirs do. Its z against the unit null lies between the two
+controls', so its sign order carries structure. That structure does not decode as Italian letters under this
+design and model.
+
+**Crib test** (`solver/cribs.py`, `solver/runs_full/cribs_*.txt`, 3 restarts). The anchor is the only long repeat
+in the text: the 9-unit run `17 9 6 10 20 4 y 3 18`, found at f8_left_L1 pos 36-48 and f8_L3 pos 3-15. Each
+9-letter candidate fixes those units, the rest of the key is annealed, and the result is compared with the
+unconstrained solve.
+- *Method control* (a synthetic cipher at 10 % noise, a 9-unit window of its true plaintext as the right crib, the
+  same 20 wrong candidates). The true crib `apitornoi` scored +0.524 per unit. Every wrong crib scored between
+  -0.467 and -1.639. The method separates the right crib from wrong ones by about 1.0 per unit.
+- *Target* (unconstrained -3.549 per unit). 19 of the 20 candidates scored negative (-0.396 to -1.803), and
+  `vostrofra` conflicts with the anchor. One candidate, `suofratel`, scored +0.128. That is a quarter of the
+  control's true-crib margin, and in absolute terms (-3.422) it is only 0.06 above the 6-restart unconstrained
+  target solve in the table above. The unconstrained solve already reads the anchor as `..oesaofrat..` both
+  times, so this crib mostly confirms the solver's own optimum. With the crib fixed, the text around it still
+  does not read (`dutocuelomiscriueilaanoasuofrateleisonrisoltadifarla`). This is not a reading, and no token is
+  graded. `suo fratello` is a candidate for the next solver to test, not a result.
+
+**What the negative means.** On a matched 900-sign 1x/2x homophonic control, the solver reads 99.8 % of letters
+clean, 93.6 % at 5 % sign noise, 86.4 % at 10 % and 70.0 % at 15 %. The target does not read under any of the
+four designs. The crib test is informative on the control and gives no reading on the target. The negative now
+holds more firmly than at 588 signs: a transcription-noise explanation would need worse than 15 % noise, while at
+most 16 % of the signs are uncertain. It still holds only (a) for a pure letter-substitution design over these
+units, (b) for this transcription, and (c) in 16th-c. literary or chancery Italian as the it16 model captures it.
+The live alternatives are a nomenclator or code-word design among the 1x/2x units, a segmentation other than the
+prefix-free 1x/2x design, or a strongly Mantuan and phonetic orthography.
+
+Not run: the last block of `run_full.sh` (the Ferrato-weighted model `it16_ferr10`, NOTES next move 3). It was
+outside this brief. Suggested follow-ups: that block; a nomenclator-aware solver (units allowed to stand for
+syllables or words); crib tests anchored on `suofratel` with 6 restarts and a matched control whose true crib sits
+on a repeat. No network requests this session; compute only.
