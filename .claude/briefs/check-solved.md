@@ -8,6 +8,14 @@ names, dates and folio numbers, and treat a page that carries them as a probable
 2026 (Bowes 1583): stage 2 was set while CSP Scotland vi no. 389 calendared the very leaf with every cipher name in
 clear. Editions first, and the leaf viewed before scoring (d'Avaux 1633).
 A found-solved verdict states who did not know, as README's F0/F1/F2, and what correction or key it leaves to hand on.
+Before scoring a printed-cipher item as open, or handing it to extraction or a solver, check whether the same
+edition prints a decipherment on the facing page or between the cipher's lines (an interlinear gloss, a
+"deciphered" heading, or a translation printed immediately after). Lesson of 24 Sept 2026 (Thurloe P11-13,
+Montagu 1656): Birch's 1742 edition prints the decipherment above every cipher line for this correspondent;
+check-solved and extraction both missed it and a solver had to find it (RETRO-2026-09-24b, LEDGER row "Solver:
+Thurloe P11-13 Montagu 1656"), the same shape as Raince/Jacqueton and Dupuy 468/RTA JR II the same week. A
+series known to carry interlinear decipherments for some letters (Thurloe/Birch, any calendar that prints
+"deciphered") gets this check on every letter in it, not only the one that happened to be checked already.
 When Tomokiyo's page, a solver repository's README, or any other named source in the search log identifies
 the specific letter under review (by date, sender, recipient or shelfmark, not just the cipher family),
 quote its sentence about that letter verbatim in the verdict before writing "open". Lesson of 24 Sept 2026

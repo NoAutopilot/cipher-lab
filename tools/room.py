@@ -30,6 +30,12 @@ def start():
     r = sh("git", "status", "--porcelain")
     if r.stdout.strip():
         print("working tree has changes; not resetting. Commit or stash them first."); return 2
+    unpushed = sh("git", "log", "--oneline", "origin/main..HEAD")
+    if unpushed.stdout.strip():
+        stamp = time.strftime("%Y%m%d%H%M%S", time.gmtime())
+        branch = f"preserve/{stamp}-unpushed-local-history"
+        sh("git", "branch", branch, "HEAD")
+        print(f"local HEAD had commits not on origin/main; saved to {branch} before resetting. Push it or ask.")
     sh("git", "checkout", "-q", "-B", "main", "origin/main")
     n = sum(1 for _ in open(ROOM, encoding="utf-8"))
     if n < 50:

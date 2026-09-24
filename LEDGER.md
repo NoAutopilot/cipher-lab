@@ -5,6 +5,12 @@ One row per worker session, written by the orchestrator when the worker is archi
 weekly retrospective (`.claude/briefs/retrospective.md`) reads this table, LESSONS.md and the git log and
 proposes changes to the briefs, CLAUDE.md and the workflows.
 
+Before appending a row, grep LEDGER.md for the worker's session id (recorded in the ROOM.md claim line for that
+worker); if a row already cites it, do not append a second one -- a row a lane orchestrator did not itself
+write may already be there from another lane or the parent (RETRO-2026-09-24b: two exact-duplicate rows this
+window, from two of five concurrent orchestrators archiving the same session). Add a `Session` column after
+`Model` from 24 Sept 2026(b) rows carrying the session id, so this check is a grep, not a full-row string match.
+
 Outcome codes: **D** delivered on brief and stopped; **D-** delivered but needed a poke to push, or ran past
 the brief; **F** failed (usage limit, init error, blocked); **X** over-claimed and was corrected, written on the
 row of the session that over-claimed (a worker, or an `Orchestrator` row), never on the one that caught it;
@@ -142,8 +148,6 @@ the end of every wake.
 | 24 Sep | LANE T C: 1654 inline pool consolidation | Sonnet | 9.73 | D | Over cap by 22 percent. P4-P7 are one informant, William Stamford at Calais, not Prideaux/Creed/Bradshaw; P5-P7 carry "The same letter decypherd" in print; P4 alone open; one-system test positive. Lesson: the heading-above rule again, and look for a printed decipherment paragraph after the cipher, not only interlined
 | 24 Sep | LANE T D: P2 P3 P8 consolidation | Sonnet | 4.30 | D | All three re-attributed (Stouppe, Butler, Blake 12 June 1655); P8 aligned from its interlined decipherment (H176 C270 of 513); windows cut every letter short
 | 24 Sep | LANE T F: solver benchmark on Fauconberg | Opus | 3.44 | D | Real-data control: hillclimb and anneal read >=80 percent on all seeds at 3,024 real groups, 1,200 synthetic; 600-1,200 real 2 runs of 3; failed runs show clearly worse per-token score, so pick by score across seeds. No tool changes
-| 24 Sep | Scout: Gallica SRU third pass (Italien, Espagnol, NAF, Clairambault, Dupuy, Colbert, Baluze) | Sonnet | 3.33 | D | 158 raw records, 75 after noise filtering, 5 survivors M17-M21 after exclusion by shelfmark against both solver repositories (which caught two Bourdeau sweep-file items with no target folder yet). Lesson: exclude by shelfmark, not folder name
-| 24 Sep | Reconciler + solver: Gramont f.30r-v (item 22) | Opus | 5.89 | D | 1,973 signs reconciled from two passes at 60 percent agreement; the published key values 1,502 (M 239, U 232); French on 22 of 55 lines, 8 unread; unkeyed recurring signs listed for a later reader; decode.py --check covers both leaves. Handed to LANE V
 | 24 Sep | Transcription: Brienne f.86 cipher + f.87 decipherment passes | Sonnet | 8.07 | D | Two passes each from disk, no fetches; pairing plausible (cipher ~1.2 groups per word of the decipherment); L13-16 crop-boundary weak spot flagged for a recrop
 | 24 Sep | Solver: Paleologue joint segmentation | Opus | 4.34 | N | 1 is a prefix sign and 0 follows 2 (p<5e-5): 1x/2x plus singles, 423 units. Control reads 100/92/75 percent at 0/5/10 percent noise; target not Italian under five designs, its score where a 10 percent-noise control sits. Session went idle without a ROOM done line (NOTES written)
 | 24 Sep | Check-solved M20 Clairambault 1161, M21 NAF 14913 | Sonnet | 3.68 | D | M20 unattributed, no folio map; M21 leaf is Rousseau's own plaintext and the Montaigu corpus is edited four or more times: neither promoted

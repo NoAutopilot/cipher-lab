@@ -22,15 +22,27 @@ this wake.
 ## 3. Collect your own workers
 
 For each worker session this account started: if it finished, pull what it pushed, update the project's
-`status.json`, `STATUS.md` and board, add a `LEDGER.md` row with role, model, cost and outcome, and archive
-it. If it is idle with uncommitted work, poke it. If it has run past its cap, interrupt it. If it stalled,
-say so in the project's `ROOM.md`.
+`status.json`, `STATUS.md` and board, add a `LEDGER.md` row with role, model, cost, outcome and the worker's
+session id, and archive it. Before appending, grep `LEDGER.md` for that session id; if a row already cites it,
+do not append a second one (RETRO-2026-09-24b: two exact-duplicate rows, $9.22, from two of five concurrent
+orchestrators archiving the same worker session under a lane structure). If it is idle with uncommitted work,
+poke it. If it has run past its cap, interrupt it. If it stalled, say so in the project's `ROOM.md`.
 
 Then count the LEDGER.md rows dated after the newest `RETRO-*.md`. At 12 rows, or $60 of worker usage, whichever
 comes first, start a retrospective (`.claude/briefs/retrospective.md`, Sonnet, cap $10) before starting any
 further worker of any role, and take its lane table as the input to step 4. Check this after archiving every
 worker, not only before scout or check-solved rows (RETRO-2026-09-24 proposal 1: the window ran to 15 rows and
 $97 because the rows in between were verifier, transcription and follow-up rows the old wording did not gate).
+
+**Under a lane structure (STATUS.md "Lane structure"), a lane orchestrator counts only its own dispatches and
+will never see the aggregate cross the threshold on its own books** (RETRO-2026-09-24b: 5 sessions, 55 rows and
+~$334 before anyone checked, each lane individually still under its own $80 cap). The parent's hourly check-in
+is the one place that reads the whole board; it runs this same count against the FULL LEDGER.md, across every
+lane, at every check-in, not only when it dispatches its own worker. If the parent's own count crosses the
+threshold, it appends a ROOM.md line in the same form a swap freeze already uses ("retrospective starting:
+push what you hold and stop claiming new work"), starts the retrospective, and appends "retrospective done" (or
+the swap-resume line) when it lands, exactly as `.claude/briefs/README.md`'s common tail already tells every
+worker to watch for on a swap.
 
 ## 4. Take work
 

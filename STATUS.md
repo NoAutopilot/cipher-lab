@@ -107,6 +107,13 @@ rate-limit status `allowed_warning` and interrupts its workers at `rejected`. Th
 owner's card and the hourly check-in, and promotes to the board. Twelve workers started before the lanes keep their
 original parent until they report.
 
+Every LEDGER.md row a lane writes carries the worker's session id, and a lane greps the full LEDGER.md for that id
+before appending a row for it — a lane can see another lane's or the parent's rows in the same shared file, so this
+catches a worker archived twice (RETRO-2026-09-24b: two exact-duplicate rows, $9.22, from two of five concurrent
+lane orchestrators archiving the same session; the aggregate retrospective trigger also ran to 55 rows/~$334 before
+anyone checked because each lane counted only its own dispatches — the parent's hourly check-in now runs that count
+against the whole ledger, across every lane, at every check-in).
+
 **LANE S, 03:23 UTC: two new working hosts.** Huntington Library's CONTENTdm API (`hdl.huntington.org`) and
 Lambeth Palace Library's CalmView catalogue (`archives.lambethpalacelibrary.org.uk/CalmView`, a plain repeatable
 GET results URL found, no session needed -- see QUEUE.md's new section for the exact pattern) both answer curl
