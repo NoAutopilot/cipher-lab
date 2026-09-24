@@ -28,5 +28,42 @@
     }
   ],
   "fetch_method": "curl -A \"cipher-lab research script (contact via repository)\", 1.5s+ apart, IIIF Image API /full/900,/0/native.jpg (and one 1400px pass for the final identification)",
-  "requests_this_session": "gallica.bnf.fr: 1 manifest.json + 1 Pagination (unused, all-NP) + 1 ContentSearch (0 hits, manuscript not OCR'd) + 6 IIIF image fetches (2 connection resets, each retried once after a pause) = 9 total"
+  "requests_this_session": "gallica.bnf.fr: 1 manifest.json + 1 Pagination (unused, all-NP) + 1 ContentSearch (0 hits, manuscript not OCR'd) + 6 IIIF image fetches (2 connection resets, each retried once after a pause) = 9 total",
+  "full_resolution_2026-09-24": {
+    "note": "Full-resolution IIIF regions fetched 24 Sept 2026 by the transcription+key worker (browser UA, 2 s apart). Not committed (about 2.8 MB each); re-fetch from these URLs. crop.py and sheets.py read them from a local directory. Canvas size 7954x5566 (f32), 7956x5567 (f33).",
+    "regions": [
+      {
+        "folio": "29r",
+        "canvas": "f31",
+        "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059991d/f31/3950,0,4004,5566/full/0/native.jpg",
+        "size": [
+          4004,
+          5566
+        ],
+        "bytes": 2796951
+      },
+      {
+        "folio": "30r",
+        "canvas": "f32",
+        "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059991d/f32/3950,0,4004,5566/full/0/native.jpg",
+        "size": [
+          4004,
+          5566
+        ],
+        "bytes": 2738187
+      },
+      {
+        "folio": "30v",
+        "canvas": "f33",
+        "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059991d/f33/0,0,4050,5567/full/0/native.jpg",
+        "size": [
+          4050,
+          5567
+        ],
+        "bytes": 2801304
+      }
+    ],
+    "derived": "crops/crops.json (line bands), crops/splits.json (a/b split x), sheets/sheet01-23.jpg (pass sheets, 6 rows each)",
+    "requests": "gallica.bnf.fr: 3 info.json (1 reset, not retried) + 3 region fetches (f32: 2 resets, then a third attempt after a 20 s pause succeeded)"
+  }
 }

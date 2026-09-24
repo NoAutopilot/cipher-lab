@@ -26,3 +26,10 @@ per the good-citizen rule that host was not retried, and the paper list in `PAPE
 from `web/crypto.htm`'s own table of contents (which links out to academia.edu for papers with no htm
 counterpart) plus web search snippets of academia.edu's own listing pages. See `PAPERS.tsv` and
 `READABLE.tsv`.
+
+## Added 24 September 2026 (ciphers/fr2980-gramont, key images)
+
+| File | URL | Fetched | Bytes | For |
+|---|---|---|---|---|
+| `web/francisGramont.png` | https://cryptiana.web.fc2.com/code/francisGramont.png | 24 Sep 2026, before 00:17 UTC | 121175 | Tomokiyo's "Gramont's Cipher (1530)" table, embedded in francis.htm (ciphers/fr2980-gramont) |
+| `web/GL/BnF_fr3071_f17.png` | https://cryptiana.web.fc2.com/code/GL/BnF_fr3071_f17.png | 24 Sep 2026, before 00:17 UTC | 34169 | Lasry's key table for the same cipher (BnF fr.3071 f.17, dated 04/11/2023), embedded in francis.htm and GL.htm |
