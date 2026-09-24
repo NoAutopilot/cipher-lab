@@ -13,7 +13,8 @@
     "# mssDE 108(A) (16 Jan 1781), mechanical reading from key.tsv + ciphertext.tsv; do not edit.",
     "# key.tsv is built from mssDE 68/37/55's own contemporary interlinear decipherments (build_pairs.py), not from",
     "# a key sheet for this letter: C = known plaintext (ink gloss on a sibling), M = uncertain (pencil-only,",
-    "# doubtful/struck gloss, conflicting glosses, or an uncertain transcription), U = sign not in the key. No S:",
+    "# doubtful/struck gloss, conflicting glosses, uncertain transcription, or an R16 context fill: source 'context R16',",
+    "# fills.tsv, control on mssDE 68 below 80 percent), U = sign not in the key. No S:",
     "# no per-position plaintext vote exists for this item.",
     "# tokens {total}: {HCSMIU}"
    ]

@@ -1,43 +1,44 @@
 # mssDE 108(A) (16 Jan 1781), mechanical reading from key.tsv + ciphertext.tsv; do not edit.
 # key.tsv is built from mssDE 68/37/55's own contemporary interlinear decipherments (build_pairs.py), not from
 # a key sheet for this letter: C = known plaintext (ink gloss on a sibling), M = uncertain (pencil-only,
-# doubtful/struck gloss, conflicting glosses, or an uncertain transcription), U = sign not in the key. No S:
+# doubtful/struck gloss, conflicting glosses, uncertain transcription, or an R16 context fill: source 'context R16',
+# fills.tsv, control on mssDE 68 below 80 percent), U = sign not in the key. No S:
 # no per-position plaintext vote exists for this item.
-# tokens 719: H 0, C 347, S 0, M 110, I 0, U 262
+# tokens 719: H 0, C 347, S 0, M 157, I 0, U 215
 mssDE108A_p1_L01	vous [895] pres non mr que les anglais ont faites
-mssDE108A_p1_L02	une des [72] te en virginie [266] ils [765] y
-mssDE108A_p1_L03	[72] [932] [617] de ras vo ge . [655] les [166]
+mssDE108A_p1_L02	une des cen te en virginie ou ils [765] y
+mssDE108A_p1_L03	cen [932] [617] de ras vo ge . selon les [166]
 mssDE108A_p1_L04	nouvelle ils ont re mon te la vi vi er
 mssDE108A_p1_L05	e de [1157] [387] et de ba r que a [66]
-mssDE108A_p1_L06	[366] onze [1145] au de [521] de vi [656] mon
-mssDE108A_p1_L07	. [1032] [1195] [527] que wilm wilm ils li [175] s
+mssDE108A_p1_L06	[366] onze [1145] au de [521] de vi ch mon
+mssDE108A_p1_L07	. cette [1195] [527] que wilm wilm ils li ce s
 mssDE108A_p1_L08	[101] qui ont etc [110] si ve ment le [321] du
-mssDE108A_p1_L09	[124] de virginie sont ent [1167] ment [1123] de [1158]
-mssDE108A_p1_L10	[363] les [838] [462] [802] [909] [410] avec pres [1025] [519]
-mssDE108A_p1_L11	[1129] tion sur les [375] vi er es . [1185]
-mssDE108A_p2_L01	d [34] [1153] po ke [913] et de ba [785] ti mo
-mssDE108A_p2_L02	se se croit ent e [135] e ment en [169] [38] [363]
+mssDE108A_p1_L09	[124] de virginie sont ent iere ment [1123] de [1158]
+mssDE108A_p1_L10	hommes les [838] [462] [802] [909] [410] avec pres ci pi
+mssDE108A_p1_L11	ta tion sur les [375] vi er es . [1185]
+mssDE108A_p2_L01	d [34] [1153] po ke [913] et de ba l ti mo
+mssDE108A_p2_L02	se se croit ent e gal e ment en [169] [38] hommes
 mssDE108A_p2_L03	[386] [389] moi ns sont [38] a leurs [1158] que au [128]
 mssDE108A_p2_L04	de faire pas ser leurs [536] [169] l [264] e vi
 mssDE108A_p2_L05	[666] [1123] dela port e de [672] [645] . [1185] [983] sont
-mssDE108A_p2_L06	[655] les ras port les plus [378] et [655] [1185] du
-mssDE108A_p2_L07	[1015] au [141] [648] de [422] a [70] huit cent [363]
-mssDE108A_p2_L08	l'on assure quels ne sont [244] [367] [354] que [145] une
+mssDE108A_p2_L06	selon les ras port les plus [378] et selon [1185] du
+mssDE108A_p2_L07	[1015] au nom bre de [422] a [70] huit cent hommes
+mssDE108A_p2_L08	l'on assure quels ne sont [244] [367] [354] que par une
 mssDE108A_p2_L09	[199] [349] er te ette deux ba ti ment de [123]
-mssDE108A_p2_L10	deux ca non . [169] [1032] [487] les de le [377] des
-mssDE108A_p2_L11	etat en vo fr [442] [266] [216] [1153] [666] sont [153]
+mssDE108A_p2_L10	deux ca non . [169] cette [487] les de le [377] des
+mssDE108A_p2_L11	etat en vo fr [442] ou [216] [1153] [666] sont [153]
 mssDE108A_p2_L12	nos a moi [1082] [139] ont pris e dela [962] la
 mssDE108A_p3_L01	plus [912] se vous re presente [933] leurs [310] les [29]
 mssDE108A_p3_L02	quels y a de [232] [595] leurs [551] [333] au de vo
-mssDE108A_p3_L03	s [1129] tion d une po [500] [858] e d
+mssDE108A_p3_L03	s ta tion d une po [500] [858] e d
 mssDE108A_p3_L04	[645] [151] quels [1199] [389] les re po nos [766]
-mssDE108A_p3_L05	si les mis li [646] se [574] [816] l en [281]
-mssDE108A_p3_L06	[266] les anglais se sont etablir ils se r ten
+mssDE108A_p3_L05	si les mis li [646] se [574] ver l en [281]
+mssDE108A_p3_L06	ou les anglais se sont etablir ils se r ten
 mssDE108A_p3_L07	[1161] et wilm ont [169] une [750] avec une ce
 mssDE108A_p3_L08	le vi te et une [542] que les ma r
-mssDE108A_p3_L09	[1010] les plus pres [983] [519] te es ne peut
-mssDE108A_p3_L10	[195] e [135] er . [646] de le [858] se
-mssDE108A_p3_L11	sont [8] forces de [216] [1113] wilm [816] que [1147] ne se
+mssDE108A_p3_L09	[1010] les plus pres [983] pi te es ne peut
+mssDE108A_p3_L10	vent e gal er . [646] de le [858] se
+mssDE108A_p3_L11	sont [8] forces de [216] pro wilm ver que [1147] ne se
 mssDE108A_p3_L12	[414] [741] [542] que vos faire avec [913] de vos yache
 mssDE108A_p4_L01	et quelques fre ga le une expedi tion [521] da [452]
 mssDE108A_p4_L02	e [466] cheza d y de [1018] [185] e [256] s rendre
@@ -52,22 +53,22 @@ mssDE108A_p4_L10	de vous les tra ns [40] de nouvelle [324] [187] [1084] [216]
 mssDE108A_p4_L11	[357] [1058] te [622] avec [777] de leurs donne r
 mssDE108A_p4_L12	la moi n [105] [122] . la [727] [692] au [330]
 mssDE108A_p5_L01	faites en vi [935] [38] com [1173] ils etc peut
-mssDE108A_p5_L02	[1113] ba ble que [474] en nos [490] de la plus
-mssDE108A_p5_L03	[683] ce le vi te les yache que vous pour
-mssDE108A_p5_L04	vi es [707] ti ne r a [1032] expedi tion [1199]
-mssDE108A_p5_L05	[389] ar vi [816] [169] cheza avant trois se [544] es
-mssDE108A_p5_L06	[266] une moi [1174] [1107] lors ar no l d
-mssDE108A_p5_L07	qui [78] [551] [227] ce de [1129] [656] [733] au
+mssDE108A_p5_L02	pro ba ble que [474] en nos [490] de la plus
+mssDE108A_p5_L03	grande ce le vi te les yache que vous pour
+mssDE108A_p5_L04	vi es [707] ti ne r a cette expedi tion [1199]
+mssDE108A_p5_L05	[389] ar vi ver [169] cheza avant trois se main es
+mssDE108A_p5_L06	ou une moi [1174] [1107] lors ar no l d
+mssDE108A_p5_L07	qui [78] [551] [227] ce de ta ch ement au
 mssDE108A_p5_L09	ba ble ment r ten [324] que ce se [387]
-mssDE108A_p5_L10	[145] [570] [233] r [151] [683] [162] de [110] une
+mssDE108A_p5_L10	par [570] [233] r [151] grande [162] de [110] une
 mssDE108A_p5_L11	[969] vi [975] de [990] [665] a une se [799]
 mssDE108A_p5_L12	ras tion [1060] [479] avoient [707] [112] fa [1010] nos
 mssDE108A_p6_L01	es si comment [551] ne [479] [170] en doute r
-mssDE108A_p6_L02	[208] etc [357] vi e [145] une [141] [648] [872] pe
+mssDE108A_p6_L02	[208] etc [357] vi e par une nom bre [872] pe
 mssDE108A_p6_L03	vi [666] de yache [645] . [527] mr [347] [108] [949]
 mssDE108A_p6_L04	leurs [232] [1161] pas la [741] le ge se [122] et
 mssDE108A_p6_L05	je [357] [1173] [839] que le [651] que vous [1076] rendre se
 mssDE108A_p6_L06	ras le plus [1173] pres a [560] [993] la [262] [707]
 mssDE108A_p6_L07	[697] du roy avec les re [1072] dela [987] de n
 mssDE108A_p6_L08	ce [441] [316] [448] [224] [320] [366] [1199] [1012] etablir
-mssDE108A_p5_L08	[387] faites sont co wilm s [363] se e [387] [1113]
+mssDE108A_p5_L08	[387] faites sont co wilm s hommes se e [387] pro

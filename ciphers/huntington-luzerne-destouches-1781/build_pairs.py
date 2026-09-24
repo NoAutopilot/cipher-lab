@@ -113,6 +113,12 @@ def build():
                 agree = 'yes' if hv & yv else 'no'
                 gr = next(x[2] for x in key[1:] if x[0] == c)
                 cross.append([c, hk[c], gr, r['plaintext'], r['grade'], agree])
+    # R16 context fills for mssDE 108(A) (grade M, matched control below 80 percent; see fills.tsv, NOTES 'R16')
+    if os.path.exists(P('fills.tsv')):
+        keyed = {r[0] for r in key[1:]}
+        for r in csv.DictReader(open(P('fills.tsv')), delimiter='\t'):
+            if r['code'] not in keyed:
+                key.append([r['code'], r['value'], r['grade'], r['source'], f"x{r['occurrences']} in 108(A); fills.tsv"])
     return pairs, key, conflicts, cross, problems
 
 

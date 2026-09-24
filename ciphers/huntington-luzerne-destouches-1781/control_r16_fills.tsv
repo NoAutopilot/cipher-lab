@@ -1,0 +1,14 @@
+figure	fill	confidence	evidence
+919	je	firm	68 p1L01 'farines que [919] vous [701] a non ce' (annoncées); p3L03 '[919] ne'
+701	ai	firm	68 p1L01 'que je vous [701] annoncé'
+678	mo	firm	68 p2L04-05 'rendre a ba l ti [678] / re' = Baltimore
+1105	ho	firm	68 p2L03-04 'Mr [1105] l [585] r' = Holker (agent of the marine, the flour)
+585	ke	firm	as 1105
+594	elles	firm	68 p2L03 'que [594] se [730]'; p3L03 '[594] ne'; p2L01 'des ordres [850] [594] [300] prêtes à être'
+300	soient	firm	68 p2L01 '[594] [300] prêtes à être' = elles soient prêtes
+463	roi	firm	68 p2L02 'sur les frégates du [463]'
+850	afin qu	weak	68 p2L01 'des ordres [850] elles soient'
+1033	flotte	weak	68 p1L05 'celle de la [1033]'; p3L01 'et de la [1033] ne peu que'
+677	virginie	weak	68 p2L09-p3L01 'sur les côtes de la [677] et'
+946	doute	weak	68 p3L03 'je ne [946] [60] elles ne'
+455	embarqu	weak	68 p2L01-02 'prêtes à être [455] es sur les frégates'

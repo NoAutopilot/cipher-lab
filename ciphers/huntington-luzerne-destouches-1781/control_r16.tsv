@@ -1,0 +1,14 @@
+figure	fill	confidence	truth_68	leaked	strict	same_word
+919	je	firm	je		right	right
+701	ai	firm	ait		wrong	right
+678	mo	firm	mo	yes	right	right
+1105	ho	firm	ho		right	right
+585	ke	firm	ke	yes	right	right
+594	elles	firm	quelles/quelle		wrong	wrong
+300	soient	firm	soient		right	right
+463	roi	firm	roy		wrong	right
+850	afin qu	weak	pour		wrong	wrong
+1033	flotte	weak	delaware?		wrong	wrong
+677	virginie	weak	virginie	yes	right	right
+946	doute	weak	doute		right	right
+455	embarqu	weak	change		wrong	wrong

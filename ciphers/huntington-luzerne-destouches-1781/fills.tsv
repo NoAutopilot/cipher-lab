@@ -1,0 +1,23 @@
+code	value	grade	source	occurrences	contexts	basis
+72	cen	M	context R16	2	p1_L02: faites|fait une des CEN te en virginie | p1_L03: ils [765] y CEN [932] [617] de	p1L02 'une des[72]te en virginie' = descente (2nd occurrence p1L03 not resolved)
+655	selon	M	context R16	3	p1_L03: vo ge . SELON les [166] nouvelle | p2_L06: [1185] [983] sont|d SELON les ras port | p2_L06: plus [378] et SELON [1185] du [1015]	p1L03 '[655] les [dernières] nouvelle(s)'; p2L05-06 '[655] les rapports les plus [..] et [655] ...' (3 of 3 fit)
+656	ch	M	context R16	2	p1_L06: [521] de vi|ri CH mon . [1032] | p5_L07: ce de [1129] CH [733] au ba	p1L06 'au de[521] de ri[656]mon(d)' = Richmond; p5L07 'de ta [656] [733]' = détachement (2 of 2 fit)
+175	ce	M	context R16	1	p1_L07: wilm ils li CE s [101] qui	p1L07 'mi li[175]s' = milices
+1167	iere	M	context R16	1	p1_L09: virginie sont|d ent IERE ment [1123] de	p1L09 'sont ent[1167]ment' = entièrement
+1025	ci	M	context R16	1	p1_L10: [410] avec pres CI [519] [1129] tion	p1L10 'avec pré[1025][519][1129]tion' = précipitation
+519	pi	M	context R16	2	p1_L10: avec pres [1025] PI [1129] tion sur | p3_L09: plus pres [983] PI te es ne	p1L10 précipitation; p3L09 'les plus pré[983][519]tées' = précipitées (2 of 2 fit)
+1129	ta	M	context R16	3	p1_L11: pres [1025] [519] TA tion sur les | p3_L03: de vo s TA tion d une | p5_L07: [227] ce de TA [656] [733] au	p1L10 précipitation; p3L02-03 'dévas[1129]tion' = dévastation; p5L07 'de [1129] ch' = détachement (3 of 3 fit)
+785	l	M	context R16	1	p2_L01: et de ba L ti mo se|re	p2L01 'et de ba[785]timo(re)' = Baltimore
+135	gal	M	context R16	2	p2_L02: croit ent e GAL e ment en | p3_L10: peut [195] e GAL er|ere . [646]	p2L02 'e[135]ement' = également; p3L10 'ne peu[195] e[135]er' = égaler (2 of 2 fit)
+195	vent	M	context R16	1	p3_L10: es ne peut VENT e [135] er|ere	p3L09-10 'ne peu(t) [195] égaler' = ne peuvent égaler
+363	hommes	M	context R16	4	p1_L10: [1123] de [1158] HOMMES les [838] [462] | p2_L02: en [169] [38] HOMMES [386] [389] moi | p2_L07: [70] huit cent HOMMES l'on assure|assurer quels | p5_L08: co wilm s|p HOMMES se e [387]	p2L07 'huit cent [363]' = huit cents hommes (other 3 occurrences undetermined)
+141	nom	M	context R16	2	p2_L07: du [1015] au NOM [648] de [422] | p6_L02: e [145] une NOM [648] [872] pe	p2L07 'au [141][648] de' = au nombre de
+648	bre	M	context R16	2	p2_L07: [1015] au [141] BRE de [422] a | p6_L02: [145] une [141] BRE [872] pe vi|ri	as 141
+145	par	M	context R16	3	p2_L08: [367] [354] que PAR une [199] [349] | p5_L10: ce se [387] PAR [570] [233] r | p6_L02: [357] vi e PAR une [141] [648]	p2L08 'ne sont [..] que [145] une' = que par une
+1113	pro	M	context R16	3	p3_L11: forces de [216] PRO wilm [816] que | p5_L02: ils etc peut PRO ba ble que | p5_L08: se e [387] PRO	p5L01-02 '[1113]ba ble que' = probable; p5L08-09 '[1113] / ba ble ment' = probablement (2 of 3 fit; p3L11 undetermined)
+683	grande	M	context R16	2	p5_L03: de la plus GRANDE ce le vi|ri | p5_L10: [233] r [151] GRANDE [162] de [110]	p5L02-03 'de la plus [683] célérité' = la plus grande célérité
+1032	cette	M	context R16	3	p1_L07: [656] mon . CETTE [1195] [527] que | p2_L10: non . [169] CETTE [487] les de | p5_L04: ne r a CETTE expedi|expedition tion [1199]	p5L04 'à [1032] expédition' = cette; p1L07 '. [1032] ...' sentence-initial (2 of 3 fit)
+544	main	M	context R16	1	p5_L05: avant trois se MAIN es [266] une	p5L05 'avant trois se[544]es' = semaines
+816	ver	M	context R16	3	p3_L05: [646] se [574] VER l en [281] | p3_L11: [216] [1113] wilm VER que [1147] ne | p5_L05: [389] ar vi|ri VER [169] cheza avant	p5L04-05 'arri[816]' = arriver (other 2 occurrences undetermined)
+266	ou	M	context R16	4	p1_L02: te en virginie OU ils [765] y | p2_L11: vo fr [442] OU [216] [1153] [666] | p3_L06: l en [281] OU les anglais se | p5_L06: se [544] es OU une moi [1174]	p1L02 'en virginie [266] ils'; p3L06 '[266] les anglais se sont établis' = où (2 of 4 fit well)
+733	ement	M	context R16	1	p5_L07: de [1129] [656] EMENT au ba ble	p5L07 'de ta ch [733]' = détachement

@@ -297,3 +297,67 @@ any such pass needs a matched synthetic control of the same length/design/langua
 are a second, independent partial decipherment attempt by an unknown, undated hand -- worth comparing against this
 key once both exist, not done this pass. No subagents used; no network requests this session (all inputs already
 on disk from R1/R2/R6).
+
+## R16: context extension, 24 Sep 2026 07:54 UTC (LANE R worker R16)
+
+Status unchanged: open. Nothing below classifies novelty (rule 10). No network requests; no image opened.
+
+**Matched control first (rule 3), `control_r16.py` -> `control_r16.tsv`.** mssDE 68's own ink decipherment (177
+groups, complete) with every figure not glossed in 37/55 hidden: 88 of 177 tokens hidden (50 percent, against 108(A)'s
+48 percent C). Filled blind by the same method used on 108(A) (French context + consistency across repeats; the code
+is two-part with homophones, so no interpolation from neighbouring figures). Filler contamination declared: figures
+whose 68 value had already been seen (NOTES 'R6 progress' list, and the key values printed in reading_108A.txt
+p1 L01-p2 L04 before the control; `control_r16_leak.txt`) are not scored. **Control number: firm fills 3 of 6 right
+strictly (50 percent), 5 of 6 if spelling variants of the same word count (ai/ait, roi/roy); weak fills 1 of 4.**
+The miss that is not a spelling variant: 594 filled 'elles', truth 'quelles' (segmentation). Coverage: 6 firm fills out
+of ~80 scorable hidden tokens' figures, i.e. the method fills little and is right about half the time strictly.
+Below the brief's 80 percent threshold, so **every 108(A) fill is graded M, none S.**
+
+**108(A) fills, `fills_r16_judged.tsv` (judgement) -> `fills_r16.py` -> `fills.tsv`** (each fill with its
+occurrence count, every context from the ciphertext, and its basis). 22 figures, all grade M, source 'context R16';
+`build_pairs.py` appends them to `key.tsv` after the 68/37/55 rows (they never override a contemporary gloss).
+Examples: 72 cen (des-cen-te), 655 selon (3 of 3 fit), 1129 ta (précipi-ta-tion, dévas-ta-tion, dé-ta-chement:
+3 of 3), 519 pi, 1025 ci, 135 gal (é-gal-ement, é-gal-er), 195 vent (ne peu-vent), 1113 pro (pro-bable,
+pro-bablement), 544 main (se-main-es), 785 l (Ba-l-timore), 656 ch (Ri-ch-mond, déta-ch-ement), 363 hommes (huit cents
+hommes), 1032 cette, 683 grande (la plus grande célérité), 266 où.
+Left unfilled on purpose: 169 (x5), 983 (x4), 1199 (x4), 216 (x4), 387 (x4), 389 (x3) and every figure whose contexts
+disagree; 166 'dernières', 70 'dix', 707 'des', 1010 'ches', 646 'ce' were considered and dropped as single weak fits.
+
+**Counts, 108(A), 719 tokens:** before C 347, M 110, U 262; **after C 347, M 157, U 215** (47 tokens filled from 22
+figures). `tools/decode_key.py ciphers/huntington-luzerne-destouches-1781 --check`, `build_pairs.py --check`,
+`fills_r16.py --check` and `control_r16.py --check` all exit 0.
+
+**Plain-French rendering of 108(A)** (interpretive: syllables joined, spelling modernised; `[..]` = unkeyed or not
+understood; every word rests on C or M tokens, the R16 ones M; not a reading to quote):
+> Vous [..] que les Anglais ont faite une descente en Virginie, où ils [..] y [..] de ravages. Selon les [..]
+> nouvelles, ils ont remonté la rivière de [..] et débarqué à [..] onze [..] au-de[..] de Richmond. Cette [..] que
+> [..] [mi]lices [..] qui ont été [..]sivement le [..] du [..] de Virginie sont entièrement [..] de [..] hommes;
+> les [..] avec précipitation sur les [..] rivières. [..] d[..] Po[..]ke[..] et de Baltimore se croient également
+> en [..] hommes [..]moins sont [..] à leurs [..] que au [..] de faire passer leurs [..] l[..]e ri[..] de la portée
+> de [..]. [..] sont, selon les rapports les plus [..] et selon [..] du [..], au nombre de [..] à [..] huit cents
+> hommes. L'on assure qu'elles ne sont [..] que par une [..]ette, deux bâtiments de [..] deux canons. [..] cette [..]
+> les délé[..] des états envo[..] où [..] sont [..] nos a[..] ont pris [..] de la [..] la plus [..]se. Vous
+> représente[..] leurs [..] les [..] qu'il y a de [..] leurs [..] au dévastation d'une po[..]e d[..] qu'elles [..]
+> les repo[..] nos [..]. Si les milices [..]ver l'en[..] où les Anglais se sont établis, ils se r[..]ten[..] et
+> [..] ont [..] une [..] avec une célérité et une [..] que les mar[..] les plus précipitées ne peuvent égaler. [..]
+> de le [..] se sont [..] forces de [..] pro[..] [..]ver que [..] ne se [..] que vous faire avec [..] de vos yache[..]
+> et quelques frégates une expédition [..] da[..]e[..] Chesa[peake] d'y de[..]e[..]s rendre les bâtiments sur lesquels
+> les Anglais sont [..] nos [..] de [..]r de la [..] [..] à la [..] des [..] qui les forces [..]aisément à [..] ba
+> les [..] ils [..] se [..] de leurs secrets. Leurs [..] ont été si près [..]le et si [..] que la ont [..] de vous les
+> trans[..] de nouvelle [..] avec [..] de leurs donner la moin[..]. La [..] au [..] faites en ri[..] com[..]. Il est
+> peu probable que [..] en nos [..] de la plus grande célérité les yache[s] que vous pourriez [..]tiner à cette
+> expédition [..] arriver [..] Chesa[peake] avant trois semaines, où une moi[..] lors Arnold qui [..] ce
+> détachement au [..] faites sont co[..] hommes se [..] probablement [..] que ce se [..] par [..] r [..] grande [..] de
+> [..] une [..] ri [..] de [..] à une se [..] ras tion [..] avoient [..] fa[..] nos [..] si comment [..] ne [..] en
+> doute [..] été [..] vie par une nombre [..] ri[..] de yache[..]. [..] Mr [..] leurs [..] pas la [..] le ge se [..]
+> et je [..] que le [..] que vous [..] rendre ser[..] le plus [..] près à [..] la [..] du roy avec les re[..] de
+> la [..] de n[..] ce [..] établir.
+
+Subject as far as it reads: Arnold's descent on Virginia, the ascent of the river to Richmond, the militia, Baltimore,
+the size of the British force (huit cents hommes, a convoy of two ships of [..] two guns), and a proposal that
+Destouches send ships and frigates to the Chesapeake, with the remark that they could hardly arrive within three
+weeks. Consistent with the covering catalogue note; the rendering is too gappy to quote.
+
+**Suggested follow-ups (not started):** a second filler on the 68 control to test whether the 50 percent is the
+method or this filler; compare the R16 fills with the later pencil glosses on 108(A) itself ('R6 progress'); a
+reader of Arnold's January 1781 raid (dates, Westover, the James) may fix 1157/387/66/366/1145 from facts, not syntax.
