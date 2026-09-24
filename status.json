@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 17:30 UTC",
+ "updated": "24 Sep 2026 18:06 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -616,6 +616,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 18:05",
+   "what": "Every outreach gate met: your machine read the last three JSTOR articles (negative), the OpenAlex key ran the open-index queries, and the 2025 Ryabov article on Danzay's cipher turned out to concern his 1574 and 1578 letters, not 1557. The Tomokiyo, Huygens and Huntington notes and both Bourdeau issues are ready on your desk. Nominations lane closed on its handoff; retrospective started."
+  },
   {
    "when": "24 Sep, 17:30",
    "what": "Outreach gate: JSTOR family searched on your machine (60 rows), open-index queries done (0 hits), the Richard 1910 Danzay lead negative. Four outward drafts written: Huntington and the Thurloe issue ready; Tomokiyo and Huygens wait on three JSTOR reads. Significance memo: 0 substantive, 12 confirm or add detail, 3 form and key only."
@@ -1574,19 +1578,19 @@
  "lanes": [
   {
    "name": "Lane R4, recovery",
-   "live": 2,
-   "focus": "Salviati leaves f.54v-57v capture; the four Gallica letters from the cyphersolver re-diff next; 1519 key to close"
+   "live": 3,
+   "focus": "Salviati 1525: f.54v transcribed and gated, code-and-mark control curve run; Seure 1558 f.75 re-segmented; Marie de Medicis 1610 blocked on a key photo; the 1519 election key to close"
   },
   {
-   "name": "Lane N3, copy-free nominations",
-   "live": 5,
-   "focus": "six new copy-free scout families running; Swiss e-manuscripta and e-codices tested negative (no letter facet, harvest too large for the request cap)"
+   "name": "Lane N3, nominations",
+   "live": 0,
+   "focus": "closed 18:06: four firm copy-free nominations (Garbino 1528, Seure 1558, Marie de Medicis 1610, Beinecke Mellon 29), nine collection families tested negative, three retractions after edition checks"
   },
   {
    "name": "Lane V4, verification",
    "live": 0,
-   "focus": "all nine ChatGPT second opinions checked: no prior print or decipherment found for any reading, every class unchanged, citation and count slips corrected in every folder; next verifiers run when the JSTOR rows land"
+   "focus": "all gates met for the seven outreach targets; next verifiers run when R4 reports a reading"
   }
  ],
- "headline": "Evening of 24 Sept: fifteen readings at N4 with the JSTOR and open-index families now searched from your machine; nine ChatGPT second opinions checked, no prior print found. The significance memo rates 12 of 15 as confirming or adding detail to the printed editions, 3 as form and key only, none as substantive news. Two outward notes are ready to send (Huntington; the Thurloe issue for Bourdeau); the Tomokiyo and Huygens notes wait on three JSTOR articles your runner still has to read."
+ "headline": "Evening of 24 Sept: fifteen readings at N4, every outreach gate now met. Four notes wait on your desk: Tomokiyo (Gramont and Danzay, with his keys), the Huygens Institute (six Nassau and Saxony letters), the Huntington (Eckert and Blathwayt), and two issues for Bourdeau. Nine ChatGPT second opinions and a 2025 article on Danzay's cipher were checked today; no prior print found anywhere. The significance memo rates 12 readings as adding detail to the editions, 3 as form and key only."
 }
