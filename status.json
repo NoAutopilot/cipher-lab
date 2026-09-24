@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026, 02:57 UTC",
+ "updated": "24 Sep 2026, 03:16 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -399,17 +399,17 @@
    "year": "1557",
    "ref": "BnF Français 20140 f.35 (Gallica canvases 69-70)",
    "folder": "ciphers/fr20140-danzay-1557",
-   "stage": 8,
+   "stage": 9,
    "state": "active",
    "holder": "Worker",
    "kind": "recovery",
-   "next": "Verifier (template) on the f.35 reading; f.36 continuation imaged and passed; second reader after that.",
-   "note": "Verifier 24 Sept 2026: N3 (AUDIT.md; not N4 until Delavaud 1911, Cuisiat 1998 and JSTOR are read); the 1824 Correspondance is Handlingar XI, reached, and does not contain the letter. Read 24 Sept 2026 with Tomokiyo's published Danzay key: 638 cipher tokens, H 508 (61 null), M 61, U 69, continuous French on 23 of 37 lines (chancelier, Danoys, marchans de Lion, Augsbourg). Nothing is called new beyond the AUDIT.md safe sentence.",
+   "next": "Adversarial second audit and a blind second reader of f.35; f.36 continuation reconciled and read next.",
+   "note": "Verifier class N3 (AUDIT.md, 24 Sept 2026): no prior plaintext or decipherment located; not N4 because Delavaud 1911 and Cuisiat 1998 were read only in snippets and JSTOR was not searched. Read with Tomokiyo's published Danzay key: 638 tokens, H 508, M 61, U 69, French on 23 of 37 lines.",
    "wait": {
-    "on": "Verifier",
-    "since": "24 Sep 2026, 02:57 UTC",
+    "on": "Second audit",
+    "since": "24 Sep 2026, 03:16 UTC",
     "expected": "Within the hour",
-    "unblock": "A class in AUDIT.md"
+    "unblock": "Class confirmed or moved"
    }
   },
   {
@@ -420,9 +420,9 @@
    "stage": 8,
    "state": "active",
    "holder": "Worker",
-   "kind": "recovery",
-   "next": "LANE T (24 Sept 2026): six workers. A and B align Birch's printed decipherments (Fauconberg P16-P24; Blake, Montagu, Lockhart P9 P10 P14 P15); C and D consolidate the rows printed with no decipherment (P2-P8; P4-P7 one small-numeral pool); E runs the print check on those; F benchmarks the solver on Fauconberg against the printed decipherment, the matched control for any solver on P4-P7.",
-   "note": "Heading check, 24 Sept 2026: most rows are letters Birch printed WITH the contemporary decipherment set beside the numerals (Montagu 1656 aligned: 248 key values, H 36 C 228 of 319 tokens; nine Fauconberg-to-Henry-Cromwell rows, 1658, found-solved). The rows printed with numerals and no decipherment are P2-P8 (vols 2-3, 1654-55). No class assigned; nothing here is called new.",
+   "kind": "contribution",
+   "next": "Every Birch row is being checked for a decipherment interlined in the 1742 print before any solver runs; the Montagu and Fauconberg letters turned out to carry one (N0). What remains is a correction to the queue and a dataset: the 23 printed ciphertexts aligned with their printed decipherments where they exist.",
+   "note": "Lesson of 24 Sept 2026: the detector found printed cipher whose decipherment Birch had set interlined; the OCR separated the two, so the sweep read them as unread. Montagu 20 Apr 1656 and the four Fauconberg letters are N0. The five 'keyed' rows and the rest are being rechecked leaf by leaf.",
    "wait": {
     "on": "LANE T workers A-F",
     "since": "24 Sep 2026, 03:08 UTC",
@@ -910,7 +910,7 @@
    "kind": "solve",
    "title": "Gramont to Villandry, Rome, 20 May 1530 (BnF fr. 2980 f.29r)",
    "grade": "N3, two audits; N4 pending",
-   "line": "A 569-sign cipher passage read with the published Gramont 1530 key: 533 signs valued after a blind second reader's corrections (92 percent agreement), several lines continuous French. No printed plaintext or decipherment located after two logged searches. Partial and still being tightened.",
+   "line": "A 569-sign cipher passage read with the published Gramont 1530 key: 533 signs valued after a blind second reader's corrections, several lines continuous French. No printed plaintext or decipherment located after two logged searches. The second leaf (f.30, 1,973 signs) now reads with the same key on 22 of 55 lines and is with the verifier.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont"
   },
   {
@@ -918,7 +918,7 @@
    "kind": "solve",
    "title": "Eckert 1864: two telegrams, Fox to Butler and Meigs to Butler, 21-22 Apr 1864",
    "grade": "N3, two audits; N4 pending",
-   "line": "Read at grade H from the surviving cipher book; not located in the Official Records (army, navy, supplement), Butler's or Fox's printed correspondence or by Google Books phrase search after two logged audits (20 and 24 Sept 2026). Their substance is in print through the replies, the telegrams themselves are not.",
+   "line": "Read at grade H from the surviving cipher book; a second ledger copy of both found in mssEC 25. Thirteen printed volumes, the Butler and Fox correspondence, the Lincoln Papers and 33 Google Books queries print neither telegram. A blind second reader agrees on 96 percent of tokens.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864"
   },
   {
