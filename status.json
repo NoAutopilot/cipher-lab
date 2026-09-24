@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 18:50 UTC",
+ "updated": "24 Sep 2026 19:14 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1591,12 +1591,12 @@
   {
    "name": "Lane R5, recovery",
    "live": 1,
-   "focus": "started 18:48 (owner: keep chasing momentum): Salviati f.55r-f.57v priced at the first leaf, then the code+mark model on ~2,800 signs; Seure coarse atlas; M36 key leaves f.105-110; N4 nominations as they post"
+   "focus": "three workers at 19:12: Salviati f.55r box-keyed pass A in progress (pricing the leaf), Seure coarse-atlas pass A on three lines, Salviati key search done (not found in eight sources, Meister 1906 included)"
   },
   {
    "name": "Lane N4, nominations",
    "live": 1,
-   "focus": "started 18:48: Gomberville 1665 seconde partie as text (unblocks Villeroy, Lauriere, Dinteville), fr.3985 no.7 leaf check against Goujet v.5, published keys against unread Gallica siblings, holding-archive viewers for the CS2 copy-order rows"
+   "focus": "three scouts done by 19:01: Gomberville seconde partie found as text on Google Books and searched (letters absent), so Villeroy 1595, Lauriere 1593 and Dinteville 1592 are re-nominated copy-free; seven unread Nevers-circle letters with published keys (KS-01 to KS-07) queued as recovery rows; Fagel/Hellen 1752-53 turned copy-free at the Nationaal Archief; check-solved batches next"
   },
   {
    "name": "Lane V4, verification",
@@ -1605,8 +1605,8 @@
   },
   {
    "name": "Board",
-   "live": 1,
-   "focus": "hall of fame view (public citations of this work, from CITATIONS.md) being added by a Sonnet worker, cap $6"
+   "live": 0,
+   "focus": "hall of fame view live from CITATIONS.md: one public citation (Cryptiana, 24 Sept 2026) and the pending replies list"
   }
  ],
  "headline": "Evening of 24 Sept: fifteen readings at N4; the outreach set is sent (Tomokiyo, the Huygens Institute, the Huntington, two Bourdeau issues) and replies come to the parent. At 18:48 the owner chose momentum: LANE R5 (Salviati code+mark, Seure, the 1519 key) and LANE N4 (Gomberville t.2, fr.3985, keys against Gallica siblings) restarted under the seven-day warning, and a hall-of-fame view for public citations is being added to this board."
