@@ -284,3 +284,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 233 | 24 Sep | cipher-lab | Check-solved csWV2: WVO 5549 (Groen prints raw numbers) and 5797 (Groen: passages not deciphered) | LANE N2 (session_01DfQyAaXAgcoFZMAbBTGj4f) | check-solved, Sonnet cap $4, lane-n2-csWV2.md | running, session_01Uzhs8w4xrgeBPM8KFznJqy |
 | 227 | 24 Sep | cipher-lab | Eckert E4/E5 N4 decision after E1 closed the Talk gap | LANE W2 (session_01CLm9uFwyau9hRmDcm2vALE) | verifier, Opus cap $4, lane-w2-e2 | done 11:27, $1.44, session_012JuvHFkfXf9jFvxziRfhXo |
 | 228 | 24 Sep | cipher-lab | V8 re-check Saxony 57 N4 against Demandt NOK I nr.113 (DNOK) | LANE V2 (session_017QzVuGiZ8wFQY6HZfUxH1q) | verifier, Opus cap $4, lane-v2-common | done, 1bbe78b session_01CN8w3ijf9fnL9EFzmyGyix |
+2026-09-24T12:03Z	session_01WVnAc4cU7RQjEoBfbkuGrG	LANE G3 orchestrator (Opus, cap $60)	Gallica successor	from the G2 11:56 handoff
+2026-09-24T12:03Z	session_01VmWU2CzMFSQKBCWe8XqfTi	LANE V3 orchestrator (Opus, cap $80)	verification successor	from the V2 11:58 handoff
+2026-09-24T12:03Z	session_01GPDjihFcZasP5KTSYRS5uN	LANE R3 orchestrator (Opus, cap $60)	recovery successor	from the R2 11:25 handoff
