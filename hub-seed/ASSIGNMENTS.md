@@ -321,3 +321,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T15:28Z	session_01Uyv6LetDKFhBPYZtneJEbf	LANE R4 G (Sonnet, cap $4)	Salviati f.54r finish pass B + gate	live
 2026-09-24T15:46Z	session_0188Y3YdstbXbXdvT9TCfTxP	LANE R4 H (Sonnet, cap $3)	M36 f.104 pass B + key.tsv	live
 2026-09-24T15:52Z	session_01MLbjBCJpkGuFngnSejoCec	LANE V4 verifier V1 (Opus, cap $10; parent as V4)	ciphers/trew-posthius-1614-18 N-class	from LANE R4 worker F's 15:32 reading (H 96 M 13)
+2026-09-24T16:02Z	session_0178qzehvSNvWsP6vDrZRu7g	LANE V4 verifier V2 (Opus, cap $8; parent as V4)	SO-GRAMONT-F29R second opinion (PR 1) checks	citations, counts, attribution; queue row -> checked
