@@ -1411,6 +1411,14 @@
    "grade": "negative: 208 tokens, 64 signs; control from the same letter's French read 28.8-70.7% over three seeds, target no connected French",
    "line": "Too short for a 64-sign homophonic at this solver's strength; the originals (Nationaal Archief, H.A. 2030/2044) carry more ciphertext and are the route.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/rumpf-vandebie-heinsius-1716-19"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Hieronimo Ranzo cipher letter, BnF fr.20506 f.136 (DECODE R4450), a copy of fr.2988 f.9: transcription and two-witness comparison",
+   "grade": "dataset: 749 tokens, 320 distinct letter+number codes; agrees with Bourdeau's fr.2988 f.9 transcription at 705 of 749 positions (94.1%)",
+   "line": "Transcribed from Gallica images (fetched by LANE G2), compared with dbourdeau/cyphersolver vasto1527/n20 (ranzo_c017/c018, cited). The two copies give a second witness for the Ranzo code Bourdeau's annealer could not break; no decipherment attempted.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/decode-4450-bnf-fr20506-1525"
   }
  ],
  "lanes": [
