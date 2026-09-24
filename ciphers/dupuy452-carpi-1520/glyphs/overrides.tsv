@@ -1,0 +1,127 @@
+# By-eye settlements of disputed signs, 23 Sept 2026 (reconciliation worker). Key: page, line, x, w of the
+# segmented sign (classify.py output). type: the sign type read from the page image; 'a,b' = the box holds two
+# touching signs, split left to right; DROP = not a sign (gutter shadow, speck); ? = unresolved, kept as one
+# uncertain token. how: the evidence (image = looked at the page crop; passes = both passes' readings).
+page	line	x	w	was	type	how
+f28r	12	6538	37	R	K	image
+f28r	12	7625	34	A	six	image
+f28r	15	5913	35	l	R	image
+f28r	15	7135	26	o	n	image
+f28r	15	7399	31	S	f	image
+f28r	15	7721	57	l	rho	image
+f28r	18	7441	27	q	f	image
+f28r	19	6237	34	z	7	image
+f28r	20	5369	44	z	I	image
+f28r	22	6724	47	l	zslash	image
+f28r	22	7149	48	box	arr	image
+f28r	23	7378	38	S	three	image
+f28r	24	5362	95	pi	I,arr	image
+f28r	26	5779	35	lam	X	image
+f28r	27	7359	46	ankh	l	image
+f28r	28	7411	96	pi	z,arr	image
+f28r	29	7770	31	q	psi	image
+f28r	30	6483	65	f	plus	image
+f28r	30	7606	46	T	7	image
+f28r	31	6727	69	f	plus	image
+f28r	32	7781	20	o	?	image
+f28r	33	7016	48	T	X	image
+f28r	34	6841	34	z	E	image
+f28r	35	7275	65	db	plus	image
+f28r	35	7356	46	box	lam	image
+f28r	37	5091	94	cross4	X,f	image
+f28r	37	7763	38	th	oplus	image
+f28v	1	1787	48	box	X	image
+f28v	1	2160	41	T	lamL	image
+f28v	2	2059	48	l	rho	image
+f28v	2	2512	53	l	rho	image
+f28v	3	3942	56	l	rho	image
+f28v	6	3617	35	7	z	image
+f28v	5	4266	56	T	ankh	image (line re-keyed after the slope fit)
+f28v	7	3824	49	f	six	image
+f28v	6	4129	70	dash_o	v,rho	image (line re-keyed after the slope fit)
+f28v	6	4199	51	T	l	image (line re-keyed after the slope fit)
+f28v	6	4337	29	R	X	image (line re-keyed after the slope fit)
+f28v	8	3002	41	o	th	image
+f28v	7	4323	31	dash_o	H	image (line re-keyed after the slope fit)
+f28v	9	1885	49	f	six	image
+f28v	12	4067	67	db	f	image (line re-keyed after the slope fit)
+f28v	13	4135	60	rho	db	image
+f28v	12	4207	54	dash_o	f	image (line re-keyed after the slope fit)
+f28v	12	4277	27	T	q	image (line re-keyed after the slope fit)
+f28v	13	4252	46	T	psi	image (line re-keyed after the slope fit)
+f28v	16	3712	56	l	rho	image
+f28v	19	2460	53	l	rho	image
+f28v	20	3492	40	box	th	image
+f28v	20	4300	26	S	psi	image
+f28v	21	4124	44	T	7	image
+f28v	24	1472	108	rho	f	image
+f28v	26	4300	41	l	rho	image
+f28v	27	2959	48	box	six	image
+f28v	28	1466	103	rho	f	image
+f28v	31	2607	48	box	X	image
+f28v	32	4071	57	rho	x	image
+f28v	35	1674	55	arr	X	image
+f28v	36	1695	36	S	sq	image
+f29r	1	6655	41	arr	f	image
+f29r	1	7293	37	I	T	image
+f29r	4	5476	43	psi	l	image
+f29r	4	7030	30	o	z	image
+f29r	5	5710	37	o	th	image
+f29r	5	6716	46	T	I	image
+f29r	6	7218	42	lam	Del	image
+f29r	7	5313	27	v	?	image
+f29r	8	6359	76	f	plus	image
+f29r	8	7224	32	q	psi	image
+f29r	9	5181	68	db	plus	image
+f29r	9	6809	32	th	S	image
+f29r	10	5885	77	f	plus	image
+f29r	10	6557	40	q	psi	image
+f29r	10	7068	30	q	f	image
+f29r	10	7475	48	rho	f	image
+f29r	11	7453	47	psi	X	image
+f29r	12	6370	41	q	ankh	image
+f29r	12	7023	39	psi	o	image
+f29r	13	5971	45	rho	f	image
+f29r	13	7514	32	q	psi	image
+f29r	14	6952	47	db	T	image
+f29r	15	6707	50	f	rho	image
+f29r	16	7209	30	S	E	image
+f29r	17	7480	49	rho	f	image
+f29r	18	7503	39	th	oplus	image
+f29r	19	6203	47	rho	f	image
+f29r	19	6465	48	T	X	image
+f29r	21	6766	51	l	sq	image
+f29r	21	7722	41	T	E	image
+f29r	24	6659	28	th	o	image
+f29r	25	7480	45	f	rho	image
+f29r	26	6677	28	v	E	image
+f29r	26	7487	45	f	six	image
+f29r	26	7533	29	o	th	image
+f29r	27	6798	55	l	rho	image
+f29r	29	4967	104	rho	f	image
+f29r	29	5938	41	S	three	image
+f29r	29	5990	38	q	ankh	image
+f29r	30	5361	38	I	th	image
+f29r	30	5555	35	q	ankh	image
+f29r	31	5084	43	I	z	image
+f29r	31	6745	44	7	T	image
+f29r	31	7429	43	psi	f	image
+f29r	32	5501	22	th	v	image
+f29r	32	5916	38	7	T	image
+f29r	33	6572	39	psi	f	image
+f29r	33	7251	47	psi	l	image
+f29r	33	7636	43	l	S	image
+f29r	34	5337	33	v	o	image
+f29r	34	6703	28	th	o	image
+f29r	35	7381	38	th	th	image
+f29r	35	7748	43	arr	diamond	image
+f29r	36	7670	46	zslash	X	image
+f29v	1	3519	31	q	psi	image
+f29v	2	1463	69	rho	v,rho	image
+f29v	2	2377	32	n	X	image
+f29v	4	2350	36	v	diamond	image
+f29v	6	2392	37	psi	v	image
+f29v	6	3751	26	th	o	image
+f29v	6	3920	52	f	zslash	image
+f29v	6	4089	34	n	X	image
+f29v	7	2816	45	arr	x	image
