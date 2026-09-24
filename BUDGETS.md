@@ -17,6 +17,11 @@ the rate-limit window, which is the thing that actually stops work.
 | | | | | | | |
 | | | | | | | |
 
+**Confirmed by the owner, 24 Sept 2026:** the project runs on a Claude Max subscription only, no API key, so no
+session is billed. Every session record checked that day shows a five-hour window with overage off. The dollar
+caps in briefs are pacing for the shared window, not a budget; if any session ever shows `isUsingOverage: true`,
+stop and tell the owner.
+
 ## What to do when you see a warning
 
 - **allowed_warning**: finish the worker you are running, do not start another large one, and say so in
