@@ -1,0 +1,340 @@
+line	pos	sign	conf	note
+1614_note1	1	V	L	capital ambiguous, could read as C; "Vnde"
+1614_note1	2	n	H
+1614_note1	3	d	H
+1614_note1	4	e	H
+1614_note1	5	d	H
+1614_note1	6	e	H
+1614_note1	7	s	H
+1614_note1	8	c	H
+1614_note1	9	r	H
+1614_note1	10	i	H
+1614_note1	11	p	H
+1614_note1	12	t	H
+1614_note1	13	i	H
+1614_note1	14	o	H
+1614_note1	15	n	H
+1614_note1	16	e	H
+1614_note1	17	m	H
+1614_note1	18	o	H
+1614_note1	19	l	H
+1614_note1	20	i	H
+1614_note1	21	m	H
+1614_note2	1	c	H
+1614_note2	2	o	H
+1614_note2	3	m	H
+1614_note2	4	m	H
+1614_note2	5	u	H
+1614_note2	6	n	H
+1614_note2	7	i	H
+1614_note2	8	c	H
+1614_note2	9	a	H
+1614_note2	10	v	H
+1614_note2	11	i	H
+1614_note2	12	t	L	long ascender before space, could be superscript abbreviation stroke
+1614_note2	13	P	H
+1614_note2	14	a	H
+1614_note2	15	r	H
+1614_note2	16	e	H
+1614_note2	17	n	H
+1614_note2	18	s	H
+1614_note2	19	b	H
+1614_note2	20	.	H
+1614_note2	21	m	H
+1614_note2	22	.	H
+1614_note3	1	d	H
+1614_note3	2	n	H
+1614_note3	3	o	H
+1614_note3	4	D	H
+1614_note3	5	.	H
+1614_note3	6	C	H
+1614_note3	7	a	H
+1614_note3	8	m	H
+1614_note3	9	e	H
+1614_note3	10	r	H
+1614_note3	11	a	H
+1614_note3	12	r	H
+1614_note3	13	i	H
+1614_note3	14	o	H
+1614_note3	15	N	H
+1614_note3	16	o	H
+1614_note3	17	r	H
+1614_note3	18	i	H
+1614_note3	19	b	H
+1614_note3	20	9	L	raised abbreviation flourish resembling numeral 9 (common -us/-o suspension), not a literal digit
+1614_note3	21	.	H
+1614_c1	1	A	H
+1614_c1	2	W	L	possibly a "vv"/w ligature rather than capital W
+1614_c1	3	s	L	long-s form
+1614_c1	4	f	H
+1614_c1	5	i	H
+1614_c1	6	r	H
+1614_c1	7	u	H
+1614_c1	8	a	H
+1614_c1	9	o	H
+1614_c1	10	z	L	tall looped stroke, cf. shape at end of 1614_key_bot
+1614_c1	11	p	H
+1614_c1	12	c	H
+1614_c1	13	a	H
+1614_c1	14	h	L	could be p
+1614_c1	15	o	H
+1614_c1	16	x	H
+1614_c1	17	i	L	could be z
+1614_c1	18	h	H
+1614_c2	1	a	H
+1614_c2	2	s	L	long-s form
+1614_c2	3	b	H
+1614_c2	4	q	H
+1614_c2	5	p	H
+1614_c2	6	a	H
+1614_c2	7	u	H
+1614_c2	8	u	L	capital U/V, case/identity ambiguous
+1614_c2	9	i	H
+1614_c2	10	w	H
+1614_c2	11	s	L	long-s form
+1614_c2	12	o	H
+1614_c2	13	r	H
+1614_c2	14	i	H
+1614_c2	15	b	H
+1614_c2	16	c	H
+1614_c2	17	t	H
+1614_c2	18	h	L	could be p
+1614_c2	19	o	H
+1614_c3	1	c	H
+1614_c3	2	p	H
+1614_c3	3	b	H
+1614_c3	4	x	H
+1614_c3	5	p	H
+1614_c3	6	u	H
+1614_c3	7	r	H
+1614_c3	8	p	H
+1614_c3	9	a	H
+1614_c3	10	x	H
+1614_c3	11	p	H
+1614_c3	12	b	H
+1614_c3	13	x	H
+1614_c3	14	a	H
+1614_c3	15	s	L	long-s form
+1614_c3	16	k	H
+1614_c3	17	a	H
+1614_c3	18	u	H
+1614_c3	19	?	L	small curled pen flourish at line end, uncertain whether it is a letter or decoration
+1614_c4	1	n	H
+1614_c4	2	a	H
+1614_c4	3	p	H
+1614_c4	4	a	H
+1614_c4	5	z	H
+1614_c4	6	k	H
+1614_c4	7	n	H
+1614_c4	8	w	H
+1614_c4	9	l	H
+1614_c4	10	x	H
+1614_c4	11	i	H
+1614_c4	12	b	H
+1614_c4	13	g	H
+1614_c4	14	n	H
+1614_c4	15	.	H
+1614_key_top	1	s	H
+1614_key_top	2	a	H
+1614_key_top	3	l	H
+1614_key_top	4	u	H
+1614_key_top	5	t	H
+1614_key_top	6	e	H
+1614_key_top	7	m	H
+1614_key_top	8	b	H
+1614_key_top	9	c	H
+1614_key_top	10	d	H
+1614_key_top	11	f	L	tall looped ascender, could be long-s instead of f
+1614_key_top	12	g	H
+1614_key_bot	1	h	L	could be b; column-aligned under key_top pos1 (s)
+1614_key_bot	2	i	H
+1614_key_bot	3	k	H
+1614_key_bot	4	n	H
+1614_key_bot	5	o	H
+1614_key_bot	6	p	H
+1614_key_bot	7	q	H
+1614_key_bot	8	r	H
+1614_key_bot	9	w	H
+1614_key_bot	10	x	H
+1614_key_bot	11	y	H
+1614_key_bot	12	z	H
+1614_crib1	1	F	L	case/height uncertain
+1614_crib1	2	r	H
+1614_crib1	3	i	H
+1614_crib1	4	d	H
+1614_crib1	5	e	H
+1614_crib1	6	r	H
+1614_crib1	7	i	H
+1614_crib1	8	c	H
+1614_crib1	9	u	H
+1614_crib1	10	s	H
+1614_crib1	11	H	H
+1614_crib1	12	e	H
+1614_crib1	13	n	H
+1614_crib1	14	r	H
+1614_crib1	15	i	H
+1614_crib1	16	c	H
+1614_crib1	17	u	H
+1614_crib1	18	s	H
+1614_crib1	19	v	H
+1614_crib1	20	o	H
+1614_crib1	21	c	H
+1614_crib1	22	a	H
+1614_crib1	23	t	H
+1614_crib1	24	3	L	abbreviation flourish resembling numeral 3, likely a -ur/-us suspension, not a literal digit
+1614_crib2	1	r	H
+1614_crib2	2	e	H
+1614_crib2	3	c	H
+1614_crib2	4	e	H
+1614_crib2	5	n	H
+1614_crib2	6	s	H
+1614_crib2	7	n	H
+1614_crib2	8	a	H
+1614_crib2	9	t	H
+1614_crib2	10	u	H
+1614_crib2	11	s	H
+1614_crib2	12	P	H
+1614_crib2	13	r	H
+1614_crib2	14	i	H
+1614_crib2	15	n	H
+1614_crib2	16	c	H
+1614_crib2	17	e	H
+1614_crib2	18	p	H
+1614_crib2	19	s	H
+1614_crib2	20	?	L	small pen flourish/squiggle after final s, uncertain whether a character
+1618_left_top	1	C	H
+1618_left_top	2	o	H
+1618_left_top	3	n	H
+1618_left_top	4	r	H
+1618_left_top	5	a	H
+1618_left_top	6	d	H
+1618_left_top	7	b	H
+1618_left_top	8	G1	H	drawn glyph, atlas match
+1618_left_top	9	G2	H	drawn glyph, atlas match
+1618_left_top	11	G3	H	drawn glyph, atlas match; column-aligned with left_bot pos11 (G8)
+1618_left_top	12	G4	H	drawn glyph, atlas match; column-aligned with left_bot pos12 (G9)
+1618_left_top	13	G5	H	drawn glyph, atlas match; rightmost, no bottom-row counterpart (row ends)
+1618_left_top	14	'	L	small apostrophe-like mark near G5, per atlas note possibly an attribute mark rather than separate sign
+1618_left_bot	1	k	L	ambiguous with capital R; cf. atlas note "plaintext klmp"
+1618_left_bot	3	l	H
+1618_left_bot	5	m	L	ambiguous, could read as h
+1618_left_bot	7	p	L	ambiguous, could read as h
+1618_left_bot	8	G6	H	drawn glyph, atlas match
+1618_left_bot	9	G7	H	drawn glyph, atlas match
+1618_left_bot	10	w	H	plain letter between glyph clusters; top row has no letter in this column
+1618_left_bot	11	G8	H	drawn glyph, atlas match
+1618_left_bot	12	G9	L	very faint; atlas flags as possibly stray mark/damage rather than a sign
+1618_right_top	1	C	H
+1618_right_top	2	o	H
+1618_right_top	3	n	H
+1618_right_top	4	r	H
+1618_right_top	5	a	H
+1618_right_top	6	d	H
+1618_right_top	7	b	H
+1618_right_top	8	e	H
+1618_right_top	9	f	H
+1618_right_top	10	g	H
+1618_right_top	11	h	L	ambiguous with b
+1618_right_top	12	i	H
+1618_right_bot	1	k	L	ambiguous with capital R
+1618_right_bot	2	l	H
+1618_right_bot	3	m	H	immediately followed by a small stray ink dot/tittle before the next letter, of uncertain significance
+1618_right_bot	4	p	H
+1618_right_bot	5	q	H
+1618_right_bot	6	s	H
+1618_right_bot	7	t	H
+1618_right_bot	8	u	H
+1618_right_bot	9	w	H
+1618_right_bot	10	x	H
+1618_right_bot	11	y	H
+1618_right_bot	12	z	L	stylized descender/flourish, bird-like shape
+1618_spec1	1	O	L
+1618_spec1	2	r	L
+1618_spec1	3	.	L
+1618_spec1	4	S	L
+1618_spec1	5	.	L	dot used as separator between letters
+1618_spec1	6	c	L
+1618_spec1	7	.	L	dot separator
+1618_spec1	8	i	L
+1618_spec1	9	.	L	dot separator
+1618_spec1	10	f	L	could be t
+1618_spec1	11	i	L
+1618_spec1	12	s	L
+1618_spec1	13	t	L
+1618_spec1	14	e	L	could be c; "ein" vs "cin"
+1618_spec1	15	i	L
+1618_spec1	16	n	L
+1618_spec2	1	s	L
+1618_spec2	2	u	L
+1618_spec2	3	p	L
+1618_spec2	4	.	L
+1618_spec2	5	y	L
+1618_spec2	6	u	L
+1618_spec2	7	z	L	could be t; tall crossed stroke
+1618_spec2	8	d	L
+1618_spec2	9	i	L
+1618_spec2	10	z	L	could be t
+1618_spec2	11	d	L
+1618_spec2	12	b	L
+1618_spec2	13	u	L
+1618_spec2	14	z	L	could be t
+1618_spec2	15	m	L
+1618_spec3	1	f	L
+1618_spec3	2	l	L
+1618_spec3	3	i	L
+1618_spec3	4	n	L
+1618_spec3	5	c	L
+1618_spec3	6	r	L
+1618_spec3	7	n	L
+1618_spec3	8	a	L
+1618_spec3	9	n	L
+1618_spec4	1	W	L
+1618_spec4	2	u	L
+1618_spec4	3	t	L
+1618_spec4	4	n	L
+1618_spec4	5	u	L
+1618_spec4	6	p	L
+1618_spec4	7	n	L
+1618_spec4	8	q	L
+1618_spec4	9	m	L
+1618_spec4	10	.	L
+1618_spec4	11	.	L
+1618_spec5	1	D	L
+1618_spec5	2	e	L
+1618_spec5	3	r	L
+1618_spec5	4	a	L
+1618_spec5	5	b	L
+1618_spec5	6	r	L
+1618_spec5	7	a	L
+1618_spec5	8	s	L
+1618_spec5	9	u	L
+1618_spec5	10	m	L	word may continue further right, obscured by page damage/black area
+1618_spec6	1	s	L
+1618_spec6	2	u	L
+1618_spec6	3	p	L
+1618_spec6	4	g	L	tall ascender letter, identity uncertain
+1618_spec6	5	t	L
+1618_spec6	6	p	L
+1618_spec6	7	q	L
+1618_spec6	8	y	L
+1618_spec6	9	q	L
+1618_spec6	10	n	L
+1618_spec7	1	A	L	first letter uncertain, could be K/R
+1618_spec7	2	c	L
+1618_spec7	3	i	L
+1618_spec7	4	'	L	small mark, uncertain if diacritic or separate character
+1618_spec7	5	m	L
+1618_spec7	6	l	L
+1618_spec7	7	y	L
+1618_spec7	8	e	L
+1618_spec7	9	l	L
+1618_spec7	10	z	L	could be an abbreviation flourish rather than a letter
+1618_spec8	1	C	L
+1618_spec8	2	u	L
+1618_spec8	3	t	L
+1618_spec8	4	m	L
+1618_spec8	5	x	L
+1618_spec8	6	u	L
+1618_spec8	7	o	L
+1618_spec8	8	f	L
+1618_spec8	9	.	L
