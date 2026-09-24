@@ -297,4 +297,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T12:03Z	session_01VmWU2CzMFSQKBCWe8XqfTi	LANE V3 orchestrator (Opus, cap $80)	verification successor	from the V2 11:58 handoff
 2026-09-24T12:03Z	session_01GPDjihFcZasP5KTSYRS5uN	LANE R3 orchestrator (Opus, cap $60)	recovery successor	from the R2 11:25 handoff
 2026-09-24T12:07Z	session_01PEwvnBxETaZVmuiFHYchyt	LANE R3 J5I (Sonnet, cap $6)	5549 image check vs Groen	done 6a2d2c7, $8.85
-2026-09-24T12:07Z	session_017QSqgV9PUjXZ8QcRzzp5Gc	LANE R3 J5S (Opus, cap $12, raised to $20 at 12:36)	5549 sibling key and reading	running
+2026-09-24T12:07Z	session_017QSqgV9PUjXZ8QcRzzp5Gc	LANE R3 J5S (Opus, cap $12, raised to $20 at 12:36)	5549 sibling key and reading	done (NOTES J5S result 12:41), $20.67
