@@ -2429,7 +2429,6 @@ worth a look for any future Italian-diplomatic-cipher lane even though the volum
 (4) The Willes Papers (Add MS 45518-45523) are a key-lead resource across many other targets' correspondents,
 not themselves a single unread letter -- worth opening before scoring as its own target.
 
-<<<<<<< Updated upstream
 ## US research libraries B (LANE N scout of 24 September 2026)
 
 LANE N brief (US research libraries B, worker for session_01W4z8JhXJYHRjorPC1Qkpiy): the William L. Clements
@@ -2494,7 +2493,7 @@ digitalcollections.nypl.org 1, digitalcollections.nyhistory.org 2, curiosity.lib
 hollisarchives.lib.harvard.edu 2, dpul.princeton.edu 8 (1 reset, retried once), findingaids.princeton.edu 2,
 github.com 2 shallow clones (grepped only, deleted after). No Google Books, no TNA, no DECODE, no Gallica, no
 subagents, no novelty wording, no promotion, no solving.
-=======
+
 ## Irish archives and libraries (LANE N scout of 24 September 2026)
 
 Hosts reached: `sources.nli.ie` (an NLI-run union index of manuscript sources for Irish history, indexing
@@ -2567,4 +2566,3 @@ check (200) + 1 query attempt (Cloudflare/hCaptcha challenge). `ria.ie` / `www.r
 502). WebSearch: 7 queries. github.com: 1 shallow clone each of dbourdeau/cyphersolver and
 aaymeloglu/unsolved-ciphers, grep only, both deleted after. No credentials used, no subagents, never
 check-solved, never promoted.
->>>>>>> Stashed changes
