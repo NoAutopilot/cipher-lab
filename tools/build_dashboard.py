@@ -187,11 +187,14 @@ for i, (code, name, desc) in enumerate(LADDER):
             "4. Give your own class on the same scale (N0 already known, N1 text in print, N2 mapping new, N3 nothing found, N4 everywhere looked, N5 confirmed) and one sentence on why.\n"
             "Be skeptical. A wrong 'not found' costs us more than a wrong 'found'."
         )
+        chip = so_chip(r)
+        details = ""
+        if i >= 3 and not chip:
+            details = (f'<details class="xc"><summary>Second-opinion prompt</summary><p class="rung-meta">Paste into ChatGPT or another model. It asks for an adversarial check with exact citations.</p>'
+                       f'<button type="button" class="copy" data-for="xc-{E(slug)}">Copy prompt</button><textarea id="xc-{E(slug)}" hidden>{E(prompt)}</textarea>'
+                       f'<pre class="mail xc-text">{E(prompt)}</pre></details>')
         items += (f'<li class="{cls}"><a href="{E(r["link"])}">{E(short(r["title"]))}</a>'
-                  f'<span class="rung-meta">{E(a_txt)}' + (f' · <b>next rung needs:</b> {E(gap)}' if gap else '') + '</span>' + so_chip(r) +
-                  f'<details class="xc"><summary>Second-opinion prompt</summary><p class="rung-meta">Paste into ChatGPT or another model. It asks for an adversarial check with exact citations.</p>'
-                  f'<button type="button" class="copy" data-for="xc-{E(slug)}">Copy prompt</button><textarea id="xc-{E(slug)}" hidden>{E(prompt)}</textarea>'
-                  f'<pre class="mail xc-text">{E(prompt)}</pre></details></li>')
+                  f'<span class="rung-meta">{E(a_txt)}' + (f' · <b>next rung needs:</b> {E(gap)}' if gap else '') + '</span>' + chip + details + '</li>')
     hi = " hi" if i >= 3 else ""
     empty = '<li class="muted empty">nothing here yet</li>'
     ladder_cols += (f'<div class="rung{hi}"><div class="rung-head"><span class="rung-code">{code}</span><span class="rung-name">{E(name)}</span></div>'
@@ -328,8 +331,9 @@ header .top {{ display:flex; flex-wrap:wrap; align-items:baseline; justify-conte
 .panel {{ background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:16px 18px; }}
 .how {{ font-size:0.92rem; margin:0 0 10px; }}
 /* ladder */
-.ladder {{ display:grid; grid-template-columns:repeat(6, 1fr); gap:10px; }}
-@media (max-width:900px) {{ .ladder {{ grid-template-columns:repeat(3, 1fr); }} }} @media (max-width:560px) {{ .ladder {{ grid-template-columns:1fr; }} }}
+.ladder {{ display:grid; grid-template-columns:repeat(4, minmax(0,1fr)) minmax(0,2fr) minmax(0,1fr); gap:10px; }}
+@media (max-width:900px) {{ .ladder {{ grid-template-columns:repeat(2, minmax(0,1fr)); }} }} @media (max-width:560px) {{ .ladder {{ grid-template-columns:minmax(0,1fr); }} }}
+.rung, .rung-item, .tile, .card li, .lanes > *, .results li > * {{ min-width:0; }} .rung-item a, .r-title, .r-line, .rung-meta {{ overflow-wrap:anywhere; }}
 .rung {{ border:1px solid var(--line); border-radius:6px; padding:10px 12px; background:var(--ground); display:grid; gap:6px; align-content:start; min-height:120px; }}
 .rung.hi {{ background:var(--good-soft); border-color:var(--good); }}
 .rung-head {{ display:flex; align-items:baseline; gap:8px; }} .rung-code {{ font-family:"JetBrains Mono", monospace; font-weight:600; font-size:1.05rem; }} .rung-name {{ font-weight:600; }}
@@ -337,9 +341,10 @@ header .top {{ display:flex; flex-wrap:wrap; align-items:baseline; justify-conte
 .rung-list {{ list-style:none; margin:0; padding:0; display:grid; gap:6px; }}
 .rung-item {{ background:var(--surface); border:1px solid var(--line); border-radius:4px; padding:6px 8px; font-size:0.9rem; display:grid; gap:2px; }}
 .rung-item.unique {{ border-color:var(--good); box-shadow:0 0 0 2px var(--good-soft); }}
+.xc-text {{ white-space:pre-wrap; overflow-wrap:anywhere; font-size:0.72rem; max-height:220px; overflow:auto; }}
 .rung-meta {{ font-size:0.78rem; color:var(--muted); }} .empty {{ font-size:0.85rem; }}
 /* tiles */
-.tiles {{ display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; }}
+.tiles {{ display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; }} .wrap > * {{ min-width:0; }}
 .tile {{ background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:14px 16px; }}
 .tile .n {{ font-family:"Newsreader", Georgia, serif; font-size:2.2rem; line-height:1; font-variant-numeric:tabular-nums; }}
 .tile .l {{ color:var(--muted); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.06em; margin-top:6px; }} .tile .sub {{ font-size:0.85rem; margin-top:4px; }}
@@ -355,7 +360,7 @@ header .top {{ display:flex; flex-wrap:wrap; align-items:baseline; justify-conte
 details summary {{ cursor:pointer; color:var(--accent); font-size:0.92rem; margin-top:4px; }} .copy {{ font:inherit; font-size:0.85rem; padding:4px 10px; border:1px solid var(--line); border-radius:4px; background:var(--surface); color:var(--ink); cursor:pointer; }}
 .asks {{ list-style:none; margin:10px 0 0; padding:0; display:grid; gap:4px; font-size:0.9rem; }}
 /* funnel + lanes */
-.two {{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }} @media (max-width:760px) {{ .two {{ grid-template-columns:1fr; }} }}
+.two {{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:24px; }} @media (max-width:760px) {{ .two {{ grid-template-columns:1fr; }} }}
 .f-row {{ display:grid; grid-template-columns:200px 1fr 36px; gap:10px; align-items:center; font-size:0.9rem; padding:3px 0; }}
 .f-bar {{ height:10px; background:var(--idle-soft); border-radius:3px; overflow:hidden; }} .f-fill {{ height:100%; background:var(--accent); }}
 .k-num {{ display:inline-block; width:1.6em; color:var(--muted); font-variant-numeric:tabular-nums; }}
@@ -364,10 +369,10 @@ details summary {{ cursor:pointer; color:var(--accent); font-size:0.92rem; margi
 /* results */
 .rg summary {{ font-size:1rem; color:var(--ink); margin:6px 0; }}
 .results {{ list-style:none; margin:0; padding:0; display:grid; gap:10px; }}
-.results li {{ display:grid; grid-template-columns:150px 1fr; gap:12px; align-items:start; padding:10px 0; border-top:1px solid var(--line); }}
+.results li {{ display:grid; grid-template-columns:150px minmax(0,1fr); gap:12px; align-items:start; padding:10px 0; border-top:1px solid var(--line); }}
 .rk {{ font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; padding:3px 8px; border-radius:999px; white-space:nowrap; justify-self:start; margin-top:2px; }}
 .k-solve {{ background:var(--good-soft); color:var(--good); }} .k-reading {{ background:var(--info-soft); color:var(--info); }} .k-contrib {{ background:var(--warn-soft); color:var(--warn); }} .k-corr {{ background:var(--accent-soft); color:var(--accent); }} .k-catch {{ background:var(--idle-soft); color:var(--idle); }} .k-neg {{ background:var(--idle-soft); color:var(--idle); }} .k-data {{ background:var(--idle-soft); color:var(--idle); }}
-.so {{ display:inline-block; font-size:0.72rem; font-weight:600; padding:2px 7px; border-radius:999px; margin-left:6px; vertical-align:middle; white-space:nowrap; border:1px solid var(--line); }}
+.so {{ display:inline-block; font-size:0.72rem; font-weight:600; padding:2px 7px; border-radius:6px; margin:2px 0 0 0; vertical-align:middle; white-space:normal; line-height:1.3; border:1px solid var(--line); }}
 .so-q {{ color:#7a7a7a; }} .so-p {{ color:#1d5fa8; border-color:#1d5fa8; }} .so-c {{ color:#1b7a3d; border-color:#1b7a3d; }}
 .r-title {{ font-weight:600; }} .r-line {{ font-size:0.92rem; margin-top:2px; }} .r-meta {{ font-size:0.8rem; margin-top:4px; }}
 @media (max-width:600px) {{ .results li {{ grid-template-columns:1fr; gap:4px; }} }}
