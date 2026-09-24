@@ -112,3 +112,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 88 | 24 Sep | cipher-lab | Danzay f.36r lines 2-4 Opus reconciliation + key | LANE G | solver, Opus cap $6 | running, session_01D4ZmLsooQeFBn7bVr94261 |
 | 89 | 24 Sep | cipher-lab | Print checks via Gallica IIIF page images for LANE V: Champollion-Figeac 1847, Camusat 1619 (Gramont), Delavaud 1911 (Danzay) | LANE G | print-check, Sonnet cap $10 | running, session_01CWETeA3ST8g94R2Eb5k9m9 |
 | 90 | 24 Sep | cipher-lab | M18 Brienne to the Queen of Poland 1646: pin leaf, crops, two passes, Brienne 1647/1651 key trial | LANE G | transcription, Sonnet cap $10 | running, session_01UdF2cRPZmx5NDjcZ9dcL5p |
+| 91 | 24 Sep | cipher-lab | Brienne 1659 joint key from f.86+f.88, second reader of f.88 (disk) | LANE G | solver, Opus cap $8 | running, session_015QreDmjrRPAY6YBMwoDLG2 |
