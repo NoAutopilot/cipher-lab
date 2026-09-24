@@ -8,6 +8,8 @@ that is not in the folder's own sources, it is marked *(context)*.
 Rule 10 applies throughout. N4 means "no prior decipherment located after a logged search", with principal editions,
 catalogues and project pages covered. It does not exclude unpublished or archival work. Every reading here is partial.
 Grades: H from a key source, C from known plaintext, S cryptanalytic with a control, M uncertain, I inferred, U unkeyed.
+Each section ends with a `rating:` line and a `links:` line for the board (added 24 Sept 2026, 17:25 UTC, at the
+parent's request). The links are built from identifiers recorded in each folder and were not re-fetched for this file.
 In quotations, `·` or `[nnn]` is an unread sign, `?` marks my own uncertainty about a word division, and *italic
 glosses* are paraphrase, not reading.
 
@@ -44,7 +46,7 @@ events. None of them is a discovery.
 
 ---
 
-## 1. Gramont to Villandry, BnF fr.2980 f.29r (no.21)
+## ciphers/fr2980-gramont f.29r no.21 -- Gramont to Villandry, Rome, 20 May [1530]
 
 **Letter.** Gabriel de Gramont, bishop of Tarbes (created cardinal 8 June 1530), to Jean Breton de Villandry, the
 king's secretary. Rome, 20 May [1530]. BnF fr.2980 f.29r, no.21 (Gallica ark btv1b9059991d). No printed edition of the
@@ -81,7 +83,10 @@ Gramont was in Rome from April to June 1530 on the king's business and on Henry 
 **Significance: confirms or adds detail to what the edition gives.** It adds a detail of diplomatic practice, the
 routing of the secret article. The letter's substance lies in f.30.
 
-## 2. Gramont to Francis I, BnF fr.2980 f.30r-v (no.22)
+rating: confirms or adds detail -- the readable cipher is procedure (a secret article routed to the king under cover), no political news
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/fr2980-gramont/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/fr2980-gramont/reading.txt; image=https://gallica.bnf.fr/ark:/12148/btv1b9059991d/f31.item; edition=none
+
+## ciphers/fr2980-gramont f.30r-v no.22 -- Gramont to Francis I, Rome, 20 May 1530
 
 **Letter.** Gramont to the king (the address is inferred from "Sire" and "vostre commandement" in the cipher, grade I,
 strong). Rome, 20 May 1530 (clear dateline). BnF fr.2980 f.30r-v, no.22. Entirely in cipher. No edition. The nearest
@@ -119,7 +124,10 @@ continue the printed April letter. This is the one item likely to move up: a com
 ambassadorial dispatch on Florence, three months before the fall, would be a substantive source. That depends on the
 unread top lines, the 63 unkeyed signs and the doubtful signs (eh T/D, the L/G sign in "Avignon").
 
-## 3. Danzay to the Cardinal of Lorraine, BnF fr.20140 f.35-36r
+rating: confirms or adds detail -- readable runs continue the printed April 1530 plan for Florence; a third is unread and could move it up
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/fr2980-gramont/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/fr2980-gramont/reading_f30_extended.txt; image=https://gallica.bnf.fr/ark:/12148/btv1b9059991d/f32.item (f.30v: f33.item); edition=none for this letter; sibling April 1530 letter, Archivio storico italiano App. I pp.473-481, https://archive.org/details/archiviostoricoi01fireuoft
+
+## ciphers/fr20140-danzay-1557 f.35-36r -- Danzay to the Cardinal of Lorraine, [Copenhagen], 27 Jan 1557
 
 **Letter.** Charles de Danzay, French envoy in Denmark, to the Cardinal of Lorraine. [Copenhagen], 27 Jan 1557 (the
 year style, 1557 or 1558 n.s., is unresolved). BnF fr.20140 f.35r-v, continuing on f.36r. No edition. The only
@@ -155,7 +163,10 @@ Philip II. France was courting Christian III of Denmark. Danzay began a posting 
 **Significance: confirms or adds detail to what the edition gives.** There is no edition of this letter. Against its
 own clear text and the siblings, the cipher adds the channel and the chancellor, not a new policy.
 
-## 4. Thurloe P4: William Stamford ("W.S."), Calais, 13 March 1655 N.S.
+rating: confirms or adds detail -- adds the chancellor's role and an Augsburg-Lyon money channel to the letter's own clear frame
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr20140-danzay-1557; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/fr20140-danzay-1557/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/fr20140-danzay-1557/reading.txt; image=https://gallica.bnf.fr/ark:/12148/btv1b52521512h/f69.item (f.35v f70, f.36r f71); edition=none
+
+## ciphers/thurloe-printed P4 -- William Stamford to [Kelsey or Thurloe], Calais, 13 March 1655 N.S.
 
 **Letter.** William Stamford, a Royalist offering his services, from Calais, 13 March 1655 N.S. (endorsed "13/3 March
 1654/5"). Recipient unnamed. Macray's Rawlinson index points to Col. Thomas Kelsey. "Your friend" is the Protector.
@@ -199,7 +210,10 @@ well known. This letter is one more such source, not the first.
 Stamford's deciphered letters of 20 and 30 March cover the same rising. P4 adds the earliest warning and its
 particulars (scale, a thousand arms, imminence).
 
-## 5. Blathwayt BLA 186: the Abbé Pareti to the Earl of Marchmont, Madrid, 13 Sept 1728
+rating: confirms or adds detail -- Birch prints the letter and its endorsement, and Stamford's deciphered 20 and 30 March letters cover the same rising; P4 adds the earliest warning and its particulars
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/thurloe-printed; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/pool_1654/reading_P4.txt; image=none online (Bodleian MS Rawl. A. 24, leaf unseen); edition=Birch, Thurloe State Papers III (1742) pp.187-189, https://archive.org/details/collectionofstat03thur ; https://www.british-history.ac.uk/thurloe-papers/vol3/pp185-195
+
+## ciphers/huntington-blathwayt-madrid-1728 mssBLA 186 -- the Abbé Pareti to the Earl of Marchmont, Madrid, 13 Sept 1728
 
 **Letter.** "Letter of intelligence", Madrid, 13 Sept 1728, signed "N". The writer is identified as the Abbé Pareti
 from Rose's print. Huntington mssBLA 186 (pointer 61211). **Printed:** Rose, *Marchmont Papers* (1831) ii 414-415, as an
@@ -229,7 +243,10 @@ in 1728 took him to England and then to Morocco.
 **Significance: confirms or adds detail to what the edition gives.** Two lines against a printed letter. The one
 unkeyed group (73) that would name the ambassador is the detail that matters, and it is unread.
 
-## 6. Blathwayt BLA 191 enclosure (a), Port Ste Marie, [1729]
+rating: confirms or adds detail -- two cipher lines in a letter Rose printed; the ambassador's name code (73) is unread
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-blathwayt-madrid-1728; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-blathwayt-madrid-1728/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-blathwayt-madrid-1728/reading.txt; image=https://hdl.huntington.org/digital/collection/p15150coll7/id/61211; edition=Rose, Marchmont Papers (1831) ii 414-415, cipher omitted, https://archive.org/details/selectionfrompap02roseiala
+
+## ciphers/huntington-blathwayt-madrid-1728 mssBLA 191 enclosure (a) -- [agent] to 'milord', Port Ste Marie, [1729]
 
 **Letter.** Undated cipher enclosure from Port Ste Marie, forwarded from Cessnock to the Duke of Newcastle on 8 Aug
 1729. Huntington mssBLA 191 (pointer 61008, p5). The writer is not named. Pareti is probable for the run but not
@@ -256,7 +273,10 @@ Seville (November 1729). The court was at Seville and Port Ste Marie (El Puerto 
 **Significance: confirms or adds detail to what the edition gives.** There is no edition. BLA 192's clear text already
 carries the complaint, so the cipher adds the agent's own framing and no diplomatic news.
 
-## 7. Blathwayt BLA 184: statement re M. Rottembourg, [1727-28]
+rating: confirms or adds detail -- an agent's request for orders; BLA 192's clear text already carries the complaint about Keene
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-blathwayt-madrid-1728; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-blathwayt-madrid-1728/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-blathwayt-madrid-1728/reading.txt; image=https://hdl.huntington.org/digital/collection/p15150coll7/id/61008; edition=none
+
+## ciphers/huntington-blathwayt-madrid-1728 mssBLA 184 -- statement re M. Rottembourg, [1727-28]
 
 **Letter.** "Statement re M. Rottembourg", French, partly in cipher, [1727-1728]. Huntington mssBLA 184 (pointer
 60843). No print.
@@ -273,7 +293,10 @@ Gibraltar siege.
 **Significance: form and key only, substance already printed.** More precisely, the substance lies in the clear text
 and nothing substantive is read. The AUDIT says it is "not worth an outward note".
 
-## 8. Lodewijk van Nassau to Orange, WVO 4610, 3 June 1573
+rating: form and key only -- three syllables read, the name codes unread; the substance is in the clear prose
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-blathwayt-madrid-1728; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-blathwayt-madrid-1728/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-blathwayt-madrid-1728/reading.txt; image=https://hdl.huntington.org/digital/collection/p15150coll7/id/60843; edition=none
+
+## ciphers/lodewijk-van-nassau-1573-74 WVO 4610 -- Lodewijk van Nassau to Orange, 3 June 1573
 
 **Letter.** Louis of Nassau to his brother William of Orange. 3 June 1573, no place ("Pour Hollande", duplicate).
 KHA A 11/XIV D/13a, WVO 4610. No edition. Orange's reply of 17 June 1573 (Leiden) is printed: Groen van Prinsterer,
@@ -303,7 +326,10 @@ princely and French backing and a mediated peace. Orange held Holland and Zeelan
 **Significance: confirms or adds detail to what the edition gives.** The printed reply carries the substance. The
 fragments add Louis's proposals.
 
-## 9. Lodewijk van Nassau to Orange, WVO 4611, 2 July 1573
+rating: confirms or adds detail -- Orange's printed reply carries the substance; fragments add Louis's proposals (convocation of Electors, French contacts)
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/lodewijk-van-nassau-1573-74/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/lodewijk-van-nassau-1573-74/reading_4610.txt; image=https://resources.huygens.knaw.nl/media/wvo/images/04000-04999/04610.pdf; edition=none for this letter; Orange's reply, Groen, Archives I/IV, Lettre CDXXVII pp.156-160, https://www.dbnl.org/tekst/groe009arch04_01/
+
+## ciphers/lodewijk-van-nassau-1573-74 WVO 4611 -- Lodewijk van Nassau to Orange, 2 July 1573
 
 **Letter.** Louis to Orange, 2 July 1573, no place. KHA A 11/XIV D/13a, WVO 4611. No edition. Orange's reply of 22 July
 1573 (Delft) acknowledges it: Groen IV, Lettre CDXXXIII, p.175ff.
@@ -330,7 +356,10 @@ attempt to open a second front in the northeast.
 **Significance: confirms or adds detail to what the edition gives.** A concrete recruiting offer (Van Minnen, twenty
 companies) is the most specific item. This worker did not check whether it is known from other sources.
 
-## 10. Lodewijk van Nassau to Orange, WVO 4616, 12 April 1574
+rating: confirms or adds detail -- Orange's printed reply acknowledges it; the cipher adds a recruiting offer (Van Minnen, twenty companies for Friesland)
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/lodewijk-van-nassau-1573-74/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/lodewijk-van-nassau-1573-74/reading_4611.txt; image=https://resources.huygens.knaw.nl/media/wvo/images/04000-04999/04611.pdf; edition=none for this letter; Orange's reply, Groen IV, Lettre CDXXXIII p.175ff, https://www.dbnl.org/tekst/groe009arch04_01/
+
+## ciphers/lodewijk-van-nassau-1573-74 WVO 4616 -- Lodewijk van Nassau to Orange, camp at Weeze, 12 April 1574
 
 **Letter.** Louis to Orange, "au camp de Weess" (Weeze), near Goch, 12 April 1574. KHA A 11/XIV D/13a, WVO 4616. No
 edition. Orange's reply of 15 April 1574 (Gorinchem) is printed: Groen IV, Lettre CDLXXXIV, pp.368-369 (WVO 4503;
@@ -365,7 +394,10 @@ Orange read it.
 **Significance: confirms or adds detail to what the edition gives.** Its weight is in its date, not its content: the
 readable cipher is logistics that Orange's printed reply already implies.
 
-## 11. Orange to Elector August of Saxony, WVO 53, Breda, 24 Oct 1561
+rating: confirms or adds detail -- its weight is the date, two days before Mookerheyde; the readable cipher is lodging logistics that Orange's printed reply implies
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/lodewijk-van-nassau-1573-74/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/lodewijk-van-nassau-1573-74/reading_4616.txt; image=https://resources.huygens.knaw.nl/media/wvo/images/04000-04999/04616.pdf; edition=none for this letter; Orange's reply, Groen IV, Lettre CDLXXXIV pp.368-369, https://www.dbnl.org/tekst/groe009arch04_01/groe009arch04_01_0107.php
+
+## ciphers/august-van-saksen-1561-64 WVO 53 -- Orange to Elector August, Breda, 24 Oct 1561
 
 **Letter.** William of Orange to Elector August, Breda, 24 Oct 1561. Autograph postscript, partly in cipher. Dresden
 HStA Loc. 9941/3 f.266r-v, WVO 53. No edition (Japikse's edition ends in September 1561). WVO summary of the clear
@@ -396,7 +428,10 @@ because Orange sat on the Council of State.
 **Significance: confirms or adds detail to what the edition gives.** The news is known. What it adds is Orange's
 opinion. It is a cryptanalytic reading with 35% M, and the second page (about 90 signs) is not fully read.
 
-## 12. Elector August to Orange, WVO 57, Torgau, 18 Nov 1561
+rating: confirms or adds detail -- the Spanish and Navarre rumours are printed from other senders; the cipher adds Orange's own judgement (cryptanalytic reading, 35% M)
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/reading_53.txt; image=https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00053.pdf; edition=none
+
+## ciphers/august-van-saksen-1561-64 WVO 57 -- Elector August to Orange, Torgau, 18 Nov 1561
 
 **Letter.** Elector August of Saxony to Orange, Torgau, 18 Nov 1561. Cipher block on p3. KHA A 11/XIV B/41-6, WVO 57.
 The clear letter is summarised in Demandt's regest (*Hessisches Jahrbuch für Landesgeschichte* 38, 1988, nr. 113): the
@@ -426,7 +461,10 @@ treated the new in-law.
 **Significance: confirms or adds detail to what the edition gives.** The approach is printed. The cipher adds the
 confidence and its timing. August's Dresden minute, with a 'Zettel', is unseen and may carry the text in clear.
 
-## 13. Orange to Elector August, WVO 126, Brussels, 16 Sept 1564
+rating: confirms or adds detail -- the Emperor's approach about Maximilian's election is printed (Goetz 1891); the cipher adds that August confided it to Orange, in secret, within days
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/reading_57.txt; image=https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00057.pdf; edition=none for this letter; Demandt regest of the clear text, Hessisches Jahrbuch f. Landesgeschichte 38 (1988) nr.113 p.78 (snippet only); the approach: Goetz 1891, https://archive.org/details/WalterDieWahlMaximiliansII
+
+## ciphers/august-van-saksen-1561-64 WVO 126 -- Orange to Elector August, Brussels, 16 Sept 1564
 
 **Letter.** Orange to Elector August, Brussels, 16 Sept 1564. Cipher postscript on f.139. Dresden HStA Geheimer Rat,
 Locat 8510/5 f.138r-140v, WVO 126. No edition. The WVO summary of the clear letter says that Wilhelm of Hesse reports
@@ -453,7 +491,10 @@ Anna.
 **Significance: confirms or adds detail to what the edition gives.** The event is well printed. The cipher adds only
 the channel.
 
-## 14. Eckert E4: G. V. Fox to Butler, Washington, 21 April 1864, 9.30 PM
+rating: confirms or adds detail -- Elisabeth of Valois's miscarriage is printed (Saint-Sulpice, Cabié 1903); the cipher adds only that Orange passed it to Saxony
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/reading_126.txt; image=https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00126.pdf; edition=none for this letter; the event: Cabié, Ambassade en Espagne de Saint-Sulpice (1903) pp.289-290, https://archive.org/details/ambassadeenespa00cabigoog
+
+## ciphers/eckert-1864 E4 -- G. V. Fox to Butler, Washington, 21 April 1864, 9.30 PM
 
 **Letter.** Gustavus V. Fox, Assistant Secretary of the Navy, to Maj. Gen. B. F. Butler at Fort Monroe. Sent from
 Washington, 21 Apr 1864, 9.30 PM, operator Geo. D. Sheldon. Huntington mssEC 19 p.49 (and mssEC 25 p.77), US
@@ -477,7 +518,10 @@ known from the clear words and the printed reply.
 
 **Significance: form and key only, substance already printed.**
 
-## 15. Eckert E5: Meigs to Butler, Washington, 22 April 1864, 10.45 AM
+rating: form and key only -- substance printed in Butler's reply and Fox's telegram to Ericsson; most words in clear on the Huntington page since 2018
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/eckert-1864/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/eckert-1864/reading.md; image=https://hdl.huntington.org/digital/collection/p16003coll11/id/8941 (mssEC 19 p.49); edition=none for this telegram; Butler's reply, Official Records I/33 p.279, https://archive.org/details/warofrebellion33unit ; Fox to Ericsson, ORN I/9 p.667, https://archive.org/details/officialrecordso0009unse
+
+## ciphers/eckert-1864 E5 -- M. C. Meigs to Butler, Washington, 22 April 1864, 10.45 AM
 
 **Letter.** Quartermaster General M. C. Meigs (signed "Bender" = Qr Master Genl) to Butler at Fort Monroe. Washington,
 22 Apr 1864, 10.45 AM (the time word gives 10.30 AM; both are kept). Huntington mssEC 19 p.49 (and mssEC 25 p.79). No
@@ -498,6 +542,9 @@ print. The rest is known.
 **Moment.** *(context)* Butler was assembling the Army of the James for the Bermuda Hundred landing of early May 1864.
 
 **Significance: form and key only, substance already printed.** The 4,000 figure is a detail, not a new event.
+
+rating: form and key only -- the telegram it answers and the horses are printed; only the 4,000-men figure was not located in print
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/eckert-1864/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/eckert-1864/reading.md; image=https://hdl.huntington.org/digital/collection/p16003coll11/id/8941 (mssEC 19 p.49); edition=none for this telegram; related traffic, Official Records I/33 pp.938, 940, https://archive.org/details/warofrebellion33unit ; Butler, Private and Official Correspondence IV p.112
 
 ---
 
