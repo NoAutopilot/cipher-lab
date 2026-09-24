@@ -111,3 +111,11 @@ canvas	stamped_page	content	date	heading
 117	116	clear letter	-	continuation/close of La Trémoille letter, signed
 119	118	decipherment	-	item 41 (Fol.118) title confirmed: "Dechiffrement de Lettre Envoyé par le Chancelier Du prat au Roy francois premier touchant le voyage qu'on alloit faire secrettement en Sicille. Le duc d'Alençon, comte de Sainct-Pol..." -- one canvas after the earlier LANE G2 probe's off-by-one miss at canvas 118; clear prose decipherment text, no raw cipher symbols
 120	119	decipherment	-	continuation of item 41 decipherment (troop movements: Duc de Vendôme, d'Alençon, de Guise)
+122	120	clear letter	-	continuation, dense text, no title visible on this canvas
+123	121	clear letter	-	"Copie du pouvoir pour traictier de la paix comme deputez du Roy francois premier, dans lequel est a remarquer que Iean de Selue premier president au parlement de paris est nommé devant le Marechal de Chabannes bien qu'il n'y eust lors que deux Marechaux de France" (new title + text, an administrative "power"/mandate copy with marginal commissioner names, not a letter)
+124	123	clear letter	-	continuation of "pouvoir" document, marginal annotations
+110	109	clear letter	-	close of "pouvoir" document (Latin closing formula), rest blank
+111	110	blank	-	mostly blank, faint offset only
+121	120	clear letter	-	"Sauf Conduit pour Les Deputez du Roy Catholique pour aller a Calais traicter la paix avec le Cardinal d'York Legat du pape Leon Xme" (new title + text, a safe-conduct document, signed "Francoys")
+125	124	clear letter	-	"Ratiffication des Articles accordez Entre Les Deputez a Calais" (new title + text, a ratification document)
+126	125	blank	-	mostly blank, faint offset close of document only
