@@ -1,6 +1,6 @@
 # S1 blind pass brief: 53 p1 postscript and 57 p3 cipher block (24 Sept 2026)
 
-Crops: `images/crops_s1/53_L01.png` .. `53_L12.png` (12 lines, from images/00053_p1.png) and `57_L01.png` ..
+Crops: `images/crops_s1/53_L01.png` .. `53_L10.png` (10 lines, deskewed -3 degrees, from images/00053_p1.png) and `57_L01.png` ..
 `57_L07.png` (7 lines, from images/00057_p3.png). Each crop is one cipher line; a crop may show slivers of the
 lines above/below -- transcribe ONLY the main line running through the vertical middle. Read left to right. If a
 crop is ambiguous, you may open the full page image for context (53: y 895-1365, x 355-1090; 57: y 588-760,
@@ -26,3 +26,6 @@ comment row `#NEW1 <description>` at the end of the file):
 - Punctuation: a dot `.` -> sign `DOT`; a colon `:` -> `COL`; a closing flourish/paraph at line end is NOT a sign.
 
 Stop when both letters are done. Report one line: rows written per letter and the NEW codes used.
+
+Revision 24 Sept 2026: the first 53 crops (12 strips) were mis-cut and mixed lines; 53 has 10 cipher lines.
+They were replaced by deskewed crops and 53 re-passed into passA_53.tsv / passB_53.tsv. 57 passes: passA_57.tsv / passB_57.tsv.
