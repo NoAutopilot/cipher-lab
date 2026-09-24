@@ -1,0 +1,794 @@
+# Pass C (blind second reader), f.35r-v, 24 Sept 2026. Read from passC_crops/ (crop_passC.py, native_f69/f70 on disk) before opening ciphertext.txt or any pass/reading file. Lines R01-R08 = f.35r cipher lines, V01-V29 = f.35v; V18i = interlinear insertion above V18. Sign codes from key.tsv; own codes for shapes not in key.tsv: z2 plain small 2 (Tomokiyo null '2'), D, Pd (vertical with cross and D-bowl), pd~ (pound-t with tilde below), S (Tomokiyo 'quel?'), I (capital I), h9 (Tomokiyo h col row 1), ry (r + y-flourish), Om (lying omega/wave). {word} = clear text. Confidence H/M/L.
+line	index	sign	confidence	note
+R01	1	{que}	H	plaintext word
+R01	2	xinf	M	crossed double-loop
+R01	3	xA	M	M-shape with crossbar
+R01	4	xst	M	barred asterisk/yen shape
+R01	5	lam	H	
+R01	6	dia	M	small lozenge short stem
+R01	7	z2	M	plain small 2 (Tomokiyo null 2) not the Q-like script 2
+R02	1	xM	M	crossed R/Z with small o/e (Tomokiyo null row 4 no.5)
+R02	2	iii	H	
+R02	3	{grand}	H	plaintext word
+R02	4	LRD	M	large script L/Z with bottom loop
+R02	5	g8	L	8/&-shape top loop open tail; could be bd
+R02	6	D	L	capital D shape not in key
+R02	7	T	M	small o written above
+R02	8	del	H	
+R02	9	pi	H	
+R02	10	eps	H	
+R02	11	pd	H	
+R02	12	q4	L	4-shape crossed like f; could be fd
+R02	13	Y	L	Y with looped foot; could be ven
+R02	14	z2	M	small plain 2
+R02	15	bd	M	lozenge with tall ascender
+R02	16	eq	H	
+R02	17	lam	H	
+R02	18	dia	H	
+R02	19	et	H	
+R02	20	a1	H	
+R02	21	pd	H	
+R02	22	x	H	
+R02	23	ae	H	
+R02	24	del	L	round d; could be bd
+R02	25	dia	H	
+R03	1	x88	L	sha-like three verticals crossed by horizontal bar; not in Tomokiyo shapes exactly
+R03	2	{grand}	H	plaintext word
+R03	3	{ou}	H	plaintext word
+R03	4	iii	H	
+R03	5	z2	H	
+R03	6	{ry.}	H	plaintext word
+R03	7	{Dont}	H	plaintext word
+R03	8	{je}	H	plaintext word
+R03	9	{suys}	H	plaintext word
+R03	10	{en}	H	plaintext word
+R03	11	{peyne}	H	plaintext word
+R03	12	{de}	H	plaintext word
+R03	13	{pour}	H	plaintext word
+R03	14	{que}	H	plaintext word
+R03	15	xM	H	
+R03	16	s9	L	c-bowl on descender followed by comma; s9 or ven
+R04	1	{Par}	H	plaintext word
+R04	2	lam	H	
+R04	3	T	H	
+R04	4	r2	H	Q-like script 2
+R04	5	pib	M	plain pi without curl
+R04	6	g7	M	small o above
+R04	7	ae	H	
+R04	8	dia	H	
+R04	9	T	M	small o above
+R04	10	ae	H	
+R04	11	x	H	
+R04	12	sha	H	
+R04	13	b6	H	
+R04	14	dia	H	
+R04	15	H	H	
+R04	16	{du}	H	plaintext word
+R04	17	al	M	secretary-a shape = Tomokiyo alpha
+R04	18	hp	H	
+R04	19	ae	H	
+R04	20	iii	H	
+R04	21	S	M	S-shape with two bars (Tomokiyo quel? sign)
+R04	22	g8	L	same &-shape as R02
+R04	23	ae	H	
+R04	24	bd	L	lozenge with stem; bd or dia
+R05	1	b6	H	
+R05	2	eps	H	
+R05	3	dia	H	
+R05	4	H	H	
+R05	5	pd	H	
+R05	6	x	H	
+R05	7	{fust}	H	plaintext word
+R05	8	O	H	oval with central dot
+R05	9	loop	M	double tall stroke
+R05	10	T	H	
+R05	11	xb	H	
+R05	12	Pd	L	vertical with cross and D-shaped bowl; not matched in key
+R05	13	x88	L	three crossed verticals; same as R03 first sign?
+R05	14	s9	L	bowl on long descender, then dot; s9 or ven
+R05	15	T	M	small o above
+R05	16	ae	M	with crossing stroke
+R05	17	{sil}	H	plaintext word
+R05	18	{en}	H	plaintext word
+R05	19	{avoyt.}	H	plaintext word
+R06	1	{affaire}	H	plaintext word
+R06	2	xN	L	large N no clear crossbar
+R06	3	loop	H	
+R06	4	{ou}	H	plaintext word
+R06	5	lam	H	
+R06	6	T	H	
+R06	7	q4	H	
+R06	8	mu	L	u-shape no descender visible
+R06	9	dia	H	
+R06	10	pd~	L	pound-t with tilde BELOW
+R06	11	x	H	
+R06	12	rx	M	dot before small r
+R06	13	ae	H	
+R06	14	bd	L	lozenge with ascender
+R06	15	del	H	
+R06	16	T	H	
+R06	17	xb	H	
+R06	18	lam	H	
+R06	19	fd	H	
+R06	20	eps	H	
+R06	21	T	H	
+R06	22	x88	M	crossed sha-like
+R06	23	xM	M	R/Z with e, then period
+R07	1	a1	H	
+R07	2	g8	L	&-shape with bar through foot
+R07	3	H	H	
+R07	4	dia	H	
+R07	5	x88	M	crossed sha-like
+R07	6	H	H	
+R07	7	a1	H	
+R07	8	eq	H	
+R07	9	s9	M	bowl top-left on long straight descender
+R07	10	loop	L	tall arc drawn over the next sign
+R07	11	al	H	
+R07	12	eps	H	
+R07	13	{quand}	H	plaintext word
+R07	14	fd	H	
+R07	15	x	H	
+R07	16	al	H	
+R07	17	dia	H	
+R07	18	iii	H	
+R07	19	I	M	capital I with serifs, not in key
+R07	20	mc	L	inverted-v with lead-in stroke, m-like
+R07	21	eq	H	
+R07	22	z2	H	
+R07	23	Pd	L	vertical with cross and D-bowl
+R08	1	iii	H	
+R08	2	eps	H	
+R08	3	dia	H	
+R08	4	eps	H	
+R08	5	T	H	
+R08	6	s9	L	bowl on descender then dot
+R08	7	b6	H	
+R08	8	eps	H	
+R08	9	s9	M	q-shape
+R08	10	x	H	
+R08	11	ae	H	
+R08	12	pd	H	
+R08	13	{fust}	H	plaintext word
+R08	14	b6	H	
+R08	15	pi	H	
+R08	16	xb	H	
+R08	17	eps	H	
+R08	18	g8	H	
+R08	19	Y	H	
+R08	20	{de}	H	plaintext word
+R08	21	{ry}	H	plaintext word
+V01	1	g8	M	&-shape with bar
+V01	2	b6	H	
+V01	3	eps	H	
+V01	4	Om	L	wave/omega-like lying shape
+V01	5	z2	H	
+V01	6	pd~	L	pound-t with tilde below
+V01	7	loop	L	large double loop overlapping
+V01	8	mc	H	
+V01	9	pd	H	
+V01	10	iii	H	
+V01	11	B	H	
+V01	12	T	H	
+V01	13	eps	H	
+V01	14	pd	H	
+V01	15	eq	H	
+V01	16	al	H	
+V01	17	xb	H	
+V01	18	lam	M	large lambda with lead-in loop:L:arc over next sign
+V01	19	al	H	
+V01	20	dia	H	
+V01	21	eps	H	
+V01	22	iii	H	
+V01	23	le	M	3-shape with bar
+V01	24	g8	H	
+V01	25	loop	H	
+V02	1	al	H	
+V02	2	hp	H	
+V02	3	T	H	
+V02	4	ae	H	
+V02	5	mc	H	
+V02	6	x	H	
+V02	7	lam	M	tilde above
+V02	8	eq	H	
+V02	9	Y	H	
+V02	10	eps	H	
+V02	11	{par}	H	plaintext word
+V02	12	fd	M	heavy f-shape
+V02	13	T	H	
+V02	14	ae	H	
+V02	15	pi	H	
+V02	16	g7	M	small o above
+V02	17	H	H	
+V02	18	loop	H	
+V02	19	q4	H	
+V02	20	mu	H	
+V02	21	dia	H	
+V02	22	lam	H	
+V02	23	I	H	
+V02	24	xb	H	
+V02	25	x	H	
+V02	26	xA	H	
+V03	1	b6	H	
+V03	2	T	H	
+V03	3	eps	H	
+V03	4	pd	H	
+V03	5	eq	H	
+V03	6	a1	H	
+V03	7	lam	H	
+V03	8	loop	L	arc over next sign
+V03	9	q4	L	4/q-shape inside the arc
+V03	10	pd	H	
+V03	11	x	H	
+V03	12	{grand}	H	plaintext word
+V03	13	S	M	large S (Tomokiyo quel? sign)
+V03	14	iii	M	four strokes, not three
+V03	15	g7	M	small o above
+V03	16	a1	H	
+V03	17	ls	M	1-shape with crossbar (long s)
+V03	18	x	H	
+V03	19	{huy}	H	plaintext word
+V03	20	fd	H	
+V03	21	x	H	
+V03	22	B	H	
+V03	23	dia	H	
+V03	24	H	H	
+V03	25	al	H	
+V03	26	h9	M	g/9-shape, Tomokiyo h col row 1, not in key.tsv
+V03	27	x	H	
+V04	1	{de}	H	plaintext word
+V04	2	{tousiours}	H	plaintext word
+V04	3	pd	H	
+V04	4	Om	L	lying omega/wave
+V04	5	mu	H	
+V04	6	s9	H	
+V04	7	{quand}	H	plaintext word
+V04	8	lam	H	
+V04	9	x	H	
+V04	10	s9	H	
+V04	11	iii	H	
+V04	12	a1	H	
+V04	13	pd	L	pound-t with looped tail below
+V04	14	T	H	
+V04	15	eq	H	
+V04	16	{ry}	H	plaintext word
+V04	17	eps	H	
+V04	18	x	H	
+V04	19	H	H	
+V04	20	H	L	script H with loop
+V04	21	z2	H	
+V05	1	xA	H	
+V05	2	fd	H	
+V05	3	x	H	
+V05	4	LRD	L	small script L with crossbar
+V05	5	al	H	
+V05	6	dia	H	
+V05	7	{ou}	H	plaintext word
+V05	8	r2	H	
+V05	9	pib	H	
+V05	10	g7	M	small o above
+V05	11	a1	H	
+V05	12	mu	H	
+V05	13	x88	M	crossed sha-like
+V05	14	pp	M	two crosses
+V05	15	x	H	
+V05	16	{par}	H	plaintext word
+V05	17	loop	L	tall bracket stroke
+V05	18	Pd	L	vertical with cross and D-bowl
+V05	19	g8	L	&-shape
+V05	20	sha	H	
+V05	21	T	H	
+V05	22	B	H	
+V05	23	eps	H	
+V05	24	pib	H	
+V05	25	pp	H	
+V05	26	eq	H	
+V05	27	H	H	
+V06	1	q4	H	
+V06	2	mu	H	
+V06	3	eq	H	
+V06	4	lam	H	
+V06	5	iii	H	
+V06	6	s9	H	
+V06	7	dia	H	
+V06	8	ae	H	
+V06	9	B	H	
+V06	10	lam	H	
+V06	11	pib	H	
+V06	12	g7	M	small o above
+V06	13	dia	H	
+V06	14	eps	H	
+V06	15	pi	H	
+V06	16	ls	H	
+V06	17	pd	H	
+V06	18	iii	H	
+V06	19	x88	M	crossed sha-like
+V06	20	{volontiers}	H	plaintext word
+V06	21	z2	H	
+V06	22	g8	M	&-shape with bar
+V06	23	xst	M	heavy T with crossbar
+V07	1	dia	H	
+V07	2	ae	H	
+V07	3	al	H	
+V07	4	x	H	
+V07	5	fd	H	
+V07	6	pi	H	
+V07	7	ae	H	
+V07	8	pd	L	small c-hook form; pound-t or unkeyed
+V07	9	Pd	M	vertical with cross and D-bowl
+V07	10	iii	H	
+V07	11	xA	H	
+V07	12	{Je}	H	plaintext word
+V07	13	{lay}	H	plaintext word
+V07	14	{receue}	H	plaintext word
+V07	15	{comme}	H	plaintext word
+V07	16	{vous}	H	plaintext word
+V07	17	{verrez}	H	plaintext word
+V07	18	{par}	H	plaintext word
+V08	1	{les}	H	plaintext word
+V08	2	{lettres}	H	plaintext word
+V08	3	{du}	H	plaintext word
+V08	4	{roy}	H	plaintext word
+V08	5	et	H	
+V08	6	g8	H	
+V08	7	lam	H	
+V08	8	x	M	dot above
+V08	9	H	H	
+V08	10	mu	H	
+V08	11	B	M	with lead-in loop
+V08	12	eps	H	
+V08	13	pib	H	
+V08	14	b6	H	
+V08	15	pi	H	
+V08	16	H	H	
+V08	17	xA	H	
+V08	18	S	H	
+V08	19	ry	L	r + y-flourish as one sign, mid-cipher here
+V08	20	sha	H	
+V08	21	T	H	
+V09	1	pd	H	
+V09	2	x	H	
+V09	3	H	M	H with hooked joins
+V09	4	mu	H	
+V09	5	xA	H	
+V09	6	ae	L	ae with crossing stroke
+V09	7	{Daultre}	H	plaintext word
+V09	8	{part}	H	plaintext word
+V09	9	lam	H	
+V09	10	dia	H	
+V09	11	xA	L	large looped M without clear crossbar
+V09	12	iii	H	
+V09	13	al	H	
+V09	14	hp	H	
+V09	15	T	H	
+V09	16	ae	H	
+V09	17	al	H	
+V09	18	x	H	
+V09	19	lam	H	
+V09	20	eq	H	
+V09	21	dia	H	
+V09	22	eps	H	
+V10	1	b6	H	
+V10	2	T	H	
+V10	3	eps	H	
+V10	4	bd	H	
+V10	5	g7	M	small o above
+V10	6	{grand}	H	plaintext word
+V10	7	iii	H	
+V10	8	b6	H	
+V10	9	dia	H	
+V10	10	mu	H	
+V10	11	lam	H	
+V10	12	pd	H	
+V10	13	xM	M	Z/R with bar and small o
+V10	14	bd	H	
+V10	15	x	H	
+V10	16	T	H	
+V10	17	mu	H	
+V10	18	al	H	
+V10	19	pi	H	
+V10	20	xb	H	
+V10	21	b6	H	
+V10	22	{fust}	H	plaintext word
+V10	23	{de}	H	plaintext word
+V10	24	ry	L	then period
+V11	1	x	H	
+V11	2	ae	M	dark, re-like
+V11	3	xb	H	
+V11	4	dia	H	
+V11	5	eps	H	
+V11	6	H	H	
+V11	7	iii	H	
+V11	8	lam	H	
+V11	9	T	H	
+V11	10	{huy}	H	plaintext word
+V11	11	r2	H	
+V11	12	pib	H	
+V11	13	g7	M	small o above
+V11	14	z2	H	
+V11	15	ae	H	
+V11	16	Y	M	Y with curled foot
+V11	17	{Incontinant}	H	plaintext word
+V11	18	{quil}	H	plaintext word
+V11	19	{sera}	H	plaintext word
+V12	1	{venu}	H	plaintext word
+V12	2	{je}	H	plaintext word
+V12	3	g8	H	
+V12	4	b6	H	
+V12	5	eps	H	
+V12	6	dia	H	
+V12	7	b6	H	
+V12	8	T	H	
+V12	9	eps	H	
+V12	10	x	H	
+V12	11	r2	H	
+V12	12	a1	H	
+V12	13	g7	M	small o above
+V12	14	{ou}	H	plaintext word
+V12	15	al	H	
+V12	16	dia	H	
+V12	17	H	H	
+V12	18	pd	H	
+V12	19	xst	M	crossed x/asterisk
+V12	20	T	H	
+V12	21	fd	M	with stroke across descender
+V12	22	iii	H	
+V12	23	a1	H	
+V12	24	eq	H	
+V12	25	eps	H	
+V12	26	x	H	
+V12	27	s9	L	c-bowl on tall stroke with curl, then comma
+V13	1	{le}	H	plaintext word
+V13	2	{plus}	H	plaintext word
+V13	3	{commodement}	H	plaintext word
+V13	4	{quil}	H	plaintext word
+V13	5	{me}	H	plaintext word
+V13	6	{sera}	H	plaintext word
+V13	7	{possible}	H	plaintext word
+V13	8	{Et}	H	plaintext word
+V13	9	{scay}	H	plaintext word
+V13	10	{huy}	H	plaintext word
+V13	11	{quil}	H	plaintext word
+V13	12	{y}	H	plaintext word
+V14	1	{sera}	H	plaintext word
+V14	2	{ce}	H	plaintext word
+V14	3	{quil}	H	plaintext word
+V14	4	{pourra}	H	plaintext word
+V14	5	{Dependant}	H	plaintext word
+V14	6	{jay}	H	plaintext word
+V14	7	{huy}	H	plaintext word
+V14	8	{voulu}	H	plaintext word
+V14	9	{faire}	H	plaintext word
+V14	10	{ceste}	H	plaintext word
+V14	11	{depesche}	H	plaintext word
+V15	1	{Affin}	H	plaintext word
+V15	2	{que}	H	plaintext word
+V15	3	{vous}	H	plaintext word
+V15	4	{puissiez}	H	plaintext word
+V15	5	{congnoistre}	H	plaintext word
+V15	6	{lestat}	H	plaintext word
+V15	7	{des}	H	plaintext word
+V15	8	{affaires}	H	plaintext word
+V15	9	{de}	H	plaintext word
+V15	10	{ce}	H	plaintext word
+V15	11	{royaulme}	H	plaintext word
+V16	1	{la}	H	plaintext word
+V16	2	{promesse}	H	plaintext word
+V16	3	{qui}	H	plaintext word
+V16	4	{de}	H	plaintext word
+V16	5	{long}	H	plaintext word
+V16	6	{temps}	H	plaintext word
+V16	7	{ma}	H	plaintext word
+V16	8	{este}	H	plaintext word
+V16	9	{faicte}	H	plaintext word
+V16	10	{lesperance}	H	plaintext word
+V16	11	{que}	H	plaintext word
+V16	12	{loy}	H	plaintext word
+V17	1	{mey}	H	plaintext word
+V17	2	{donne}	H	plaintext word
+V17	3	g8	H	
+V17	4	z2	H	
+V17	5	lam	H	
+V17	6	x	H	
+V17	7	H	H	
+V17	8	iii	H	
+V17	9	b6	M	dot before
+V17	10	T	H	
+V17	11	ls	M	tall long s with stroke through foot
+V17	12	eq	H	
+V17	13	g8	H	
+V17	14	pi	H	
+V17	15	ae	H	
+V17	16	H	H	
+V17	17	{fust}	H	plaintext word
+V17	18	et	H	
+V17	19	T	H	
+V17	20	pd	M	with stroke through descender
+V17	21	dia	H	
+V17	22	mc	H	
+V17	23	pd	H	
+V17	24	eq	H	
+V17	25	pi	H	
+V17	26	ae	H	
+V17	27	H	H	
+V18i	1	g8	L	interlinear above V18 'du T..', dot pair before
+V18i	2	del	H	
+V18i	3	T	H	
+V18i	4	mu	H	
+V18i	5	lam	H	
+V18i	6	pd	H	
+V18i	7	z2	H	
+V18	1	fd	H	
+V18	2	dia	H	
+V18	3	mc	H	
+V18	4	dia	H	
+V18	5	xb	H	
+V18	6	lam	H	
+V18	7	eps	L	small epsilon, stem unclear
+V18	8	del	L	large looped round d
+V18	9	fd	H	
+V18	10	x	H	
+V18	11	H	H	
+V18	12	q4	H	
+V18	13	mu	H	
+V18	14	x	H	
+V18	15	lam	H	
+V18	16	H	H	
+V18	17	hk	L	J-shape with dot either side
+V18	18	{grand}	H	plaintext word
+V18	19	sha	H	
+V18	20	x	H	
+V18	21	{du}	H	plaintext word
+V18	22	T	H	
+V18	23	g7	M	small o above
+V18	24	fd	H	
+V18	25	dia	H	
+V18	26	eps	H	
+V18	27	z2	H	
+V19	1	et	H	
+V19	2	fd	H	
+V19	3	x	H	
+V19	4	H	H	
+V19	5	I	H	
+V19	6	mu	H	
+V19	7	dia	H	
+V19	8	lam	H	
+V19	9	H	H	
+V19	10	T	M	small o above
+V19	11	lam	H	
+V19	12	T	H	
+V19	13	eps	H	
+V19	14	x	H	
+V19	15	H	H	
+V19	16	pi	H	
+V19	17	lam	H	
+V19	18	mu	H	
+V19	19	pd	H	
+V19	20	eq	H	
+V19	21	pi	H	
+V19	22	ae	H	
+V19	23	iii	H	
+V19	24	fd	H	
+V19	25	x	H	
+V19	26	H	H	
+V20	1	a1	H	
+V20	2	fd	L	heavy f with tick/tilde below; could be pd with tilde
+V20	3	z2	H	
+V20	4	T	H	
+V20	5	eq	H	
+V20	6	iii	H	
+V20	7	eps	H	
+V20	8	x	H	
+V20	9	H	H	
+V20	10	bd	M	lozenge with tall double stem
+V20	11	Y	H	
+V20	12	b6	H	
+V20	13	x	H	
+V20	14	ae	H	
+V20	15	fd	H	
+V20	16	iii	H	
+V20	17	x88	H	
+V20	18	{Par}	H	plaintext word
+V20	19	{moyens}	H	plaintext word
+V20	20	{que}	H	plaintext word
+V20	21	{jay}	H	plaintext word
+V21	1	{suivy}	H	plaintext word
+V21	2	{et}	H	plaintext word
+V21	3	{veulx}	H	plaintext word
+V21	4	{temps}	H	plaintext word
+V21	5	{attendant}	H	plaintext word
+V21	6	{plus}	H	plaintext word
+V21	7	{certain}	H	plaintext word
+V21	8	{et}	H	plaintext word
+V21	9	{expres}	H	plaintext word
+V21	10	{commandement}	H	plaintext word
+V22	1	{de}	H	plaintext word
+V22	2	{ce}	H	plaintext word
+V22	3	{que}	H	plaintext word
+V22	4	{je}	H	plaintext word
+V22	5	{doy}	H	plaintext word
+V22	6	{entreprendre}	H	plaintext word
+V22	7	{Et}	H	plaintext word
+V22	8	{parce}	H	plaintext word
+V22	9	{que}	H	plaintext word
+V22	10	{je}	H	plaintext word
+V22	11	{ne}	H	plaintext word
+V22	12	{vous}	H	plaintext word
+V22	13	{puys}	H	plaintext word
+V22	14	{encores}	H	plaintext word
+V23	1	{asseurer}	H	plaintext word
+V23	2	T	M	small o above
+V23	3	xinf	M	crossed pi/double loop
+V23	4	s9	L	c-bowl with long hook
+V23	5	fd	H	
+V23	6	x	H	
+V23	7	lam	H	
+V23	8	x	H	
+V23	9	mu	H	
+V23	10	eps	H	
+V23	11	iii	H	
+V23	12	xb	H	
+V23	13	pi	H	
+V23	14	lam	H	
+V23	15	pib	H	
+V23	16	ae	H	
+V23	17	pd	H	
+V23	18	x	H	
+V23	19	{du}	H	plaintext word
+V23	20	et	H	
+V23	21	x	H	
+V23	22	ae	H	
+V23	23	s9	M	bowl-left on straight descender
+V23	24	mu	H	
+V23	25	eq	H	
+V23	26	H	H	
+V24	1	dia	H	
+V24	2	ae	H	
+V24	3	{grand}	H	plaintext word
+V24	4	fd	H	
+V24	5	pi	H	
+V24	6	xb	H	
+V24	7	bd	H	
+V24	8	pd	H	
+V24	9	x	H	
+V24	10	xinf	M	double loop crossed by a horizontal bar
+V24	11	loop	H	
+V24	12	x88	M	double loop with vertical bars
+V24	13	xA	H	
+V24	14	{Il}	H	plaintext word
+V24	15	{me}	H	plaintext word
+V24	16	{semble}	H	plaintext word
+V24	17	{quil}	H	plaintext word
+V24	18	{seroyt}	H	plaintext word
+V24	19	{bon}	H	plaintext word
+V25	1	{de}	H	plaintext word
+V25	2	{regarder}	H	plaintext word
+V25	3	z2	H	
+V25	4	x88	H	
+V25	5	T	H	
+V25	6	mu	H	
+V25	7	sha	H	
+V25	8	pi	M	dot before
+V25	9	g7	M	small o above
+V25	10	x	H	
+V25	11	ae	H	
+V25	12	{ou}	H	plaintext word
+V25	13	g8	H	
+V25	14	T	M	small o above
+V25	15	fd	H	
+V25	16	x	H	
+V25	17	iii	H	
+V25	18	phi	H	
+V25	19	T	H	
+V25	20	eq	H	
+V25	21	eps	H	
+V25	22	x	H	
+V26	1	T	H	
+V26	2	g8	H	
+V26	3	ls	M	tall long s crossed at foot
+V26	4	z2	H	
+V26	5	dia	H	
+V26	6	mu	H	
+V26	7	eps	H	
+V26	8	x	H	
+V26	9	r2	H	
+V26	10	q4	H	
+V26	11	mu	H	
+V26	12	dia	H	
+V26	13	lam	H	
+V26	14	I	H	
+V26	15	xb	H	
+V26	16	xst	M	crossed asterisk with descender
+V26	17	x	H	
+V26	18	O	M	heavy oval with dot
+V26	19	T	L	dot or small o above
+V26	20	T	H	
+V26	21	hk	M	check-mark/v with lead stroke
+V26	22	g8	H	
+V26	23	H	H	
+V26	24	bd	H	
+V26	25	pi	H	
+V26	26	mu	H	
+V26	27	eps	H	
+V26	28	g7	L	no o above
+V27	1	iii	H	
+V27	2	b6	H	
+V27	3	T	H	
+V27	4	eps	H	
+V27	5	ae	H	
+V27	6	lam	H	
+V27	7	dia	H	
+V27	8	H	H	
+V27	9	s9	L	q with loop
+V27	10	sha	H	
+V27	11	T	H	
+V27	12	eps	H	
+V27	13	al	H	
+V27	14	hp	H	
+V27	15	T	H	
+V27	16	ae	H	
+V27	17	H	H	
+V27	18	iii	H	
+V27	19	fd	H	
+V27	20	x	H	
+V27	21	xinf	M	double loop crossed by horizontal bar
+V27	22	lam	H	
+V27	23	eq	H	
+V27	24	pi	H	
+V27	25	ae	H	
+V28	1	g8	H	
+V28	2	al	H	
+V28	3	a1	H	
+V28	4	eps	H	
+V28	5	fd	H	
+V28	6	x	H	
+V28	7	z2	H	
+V28	8	T	H	
+V28	9	mu	H	
+V28	10	g7	L	small 7
+V28	11	s9	H	
+V28	12	b6	H	
+V28	13	pib	H	
+V28	14	xb	H	
+V28	15	r2	H	
+V28	16	g8	H	
+V28	17	g8	H	
+V28	18	pi	H	
+V28	19	ae	H	
+V28	20	le	M	3-shape with bar, dot after
+V28	21	iii	H	
+V28	22	b6	H	
+V28	23	pi	H	
+V28	24	xb	H	
+V28	25	llt	M	pound-t with tilde above
+V28	26	T	H	
+V28	27	s9	L	with comma/flourish
+V29	1	T	H	
+V29	2	eq	H	
+V29	3	s9	H	
+V29	4	rt	L	small r/c-hook with tilde above
+V29	5	T	M	small o above
+V29	6	sha	H	
+V29	7	xst	L	dark x with cross; could be ae
+V29	8	pi	L	omega-like with curl beneath
+V29	9	pd	H	
+V29	10	eps	H	
+V29	11	x	H	
+V29	12	al	H	
+V29	13	pi	H	
+V29	14	mu	M	tilde above
+V29	15	r2	H	
+V29	16	x	H	
+V29	17	eps	H	
+V29	18	xinf	H	
+V29	19	b6	H	
+V29	20	a1	H	
+V29	21	xN	M	crossed N, smudged
+V29	22	s9	H	
+V29	23	hp	H	
+V29	24	x	H	
+V29	25	al	H	
+V29	26	T	H	
+V29	27	z2	H	
+V29	28	{du}	H	plaintext word
+V29	29	LRD	L	large L/Z with e; le sign or LRD
