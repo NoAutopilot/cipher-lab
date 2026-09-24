@@ -24,6 +24,15 @@ session and every subagent, cloud or local.
    negative as conditional on it.
 3. **No negative without a matched control.** A solver's failure on a target means nothing unless the same
    solver reads a synthetic cipher of the same length, symbol count, design and language. Report both numbers.
+   The same holds for a *gain* gate (a crib loop, a model-in-the-loop step, any technique judged by how many
+   points it adds over blind): before wiring a numeric threshold to a control, check the control's own blind
+   baseline is not already near ceiling (roughly >=95%) or already matched by more restarts alone -- a control
+   that already solves blind has no headroom to show a gain regardless of the technique. Lesson of 24 Sept 2026
+   (solvEX): the brief gated the Salviati target's run on a control at "N=720, K=36 (Salviati's own N and K)"
+   but used a simple-substitution design at that N, which reads 99.7% blind on 3 seeds -- already on file before
+   the brief was written. Salviati's own cipher is code+mark (cm), which at the same N reads 22-67% blind (LANE
+   R4 P's curve): match the *design*, not only the length and symbol count, when the question is whether a
+   technique adds anything.
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
 5. **Status vocabulary** in the first lines of every NOTES.md: `open`, `partial`, `solved`, `closed-negative`,
