@@ -185,3 +185,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 147 | 24 Sep | cipher-lab | Scout Library of Congress digitised manuscripts (LC rows) | LANE N (session_01W4z8JhXJYHRjorPC1Qkpiy) | scout, Sonnet cap $6, lane-n-scLOC.md | running, session_011LjrKninYwBspGfLU8sgSW |
 | 148 | 24 Sep | cipher-lab | Scout German digitised libraries, rerun (DE rows) | LANE N (session_01W4z8JhXJYHRjorPC1Qkpiy) | scout, Sonnet cap $6, lane-n-scDE.md | running, session_018uKvukJbvm5Y6NS2dMqdJW |
 | 149 | 24 Sep | cipher-lab | Scout Polish digital libraries, rerun (PL rows) | LANE N (session_01W4z8JhXJYHRjorPC1Qkpiy) | scout, Sonnet cap $6, lane-n-scPL.md | running, session_01CYc7aKSCVpUWdmjo2v17Gm |
+| 138 | 24 Sep | cipher-lab | Thurloe P4 toward-N4 gap search (Clarendon SP vol 3, OpenAlex/S2) + Eckert open-index rerun | LANE W (session_011UFnhZnyCntZ8Bn9FpKyTq) | search worker, Sonnet cap $5, inline brief | running, session_01F234Ho27aPryLTBhTerxbK |
