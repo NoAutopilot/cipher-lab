@@ -1,0 +1,70 @@
+{
+  "_about": "Key-hunt candidates for ciphers/oxenstierna-gustav-adolf-1632 (row W1/R10), LANE S worker, 24 Sept 2026 (.claude/briefs/runs/2026-09-24-lane-s-keyW1.md). No images fetched: every candidate below is catalogued but not digitised (onlyDigitisedMaterials: false on each Riksarkivet Sök-API record checked). This file records the search, not a key.",
+  "target": {
+    "letter": "Gustav II Adolf to Axel Oxenstierna, Nürnberg 23 July 1632",
+    "numeral_profile": "91 distinct values, range 4-5152, 733 cipher tokens (ciphers/oxenstierna-gustav-adolf-1632/tokens.tsv)"
+  },
+  "candidates": [
+    {
+      "id": "SE/RA/202/1",
+      "label": "Chifferklaver, låda I, item 1 (\"Kanslichiffer 1620-1650-talen\" bundle of ~20 booklets, incl. Anders Svensson's own ciphers 1630, Camerarius, Falckenberg, Spens material)",
+      "holder": "Riksarkivet i Stockholm/Täby",
+      "fonds_id": "SE/RA/202",
+      "date_range": "1500-1640",
+      "digitised": false,
+      "image_url": null,
+      "value_range": "unknown (not digitised, cannot assess against target's 4-5152)",
+      "match_assessment": "M",
+      "note": "Adjacent to but distinct from Bourdeau's riksarkivet1628/baner1640 (DECODE Chifferklaver låda II, R4103-R4329) -- this is låda I, unsurveyed by either solver repo (grep-confirmed). Does not name Gustav II Adolf or Gustaf Horn explicitly in the catalogue note; strongest link is the right decade and the right chancery circle (Oxenstierna, Camerarius, Torstensson).",
+      "sok_html": "https://sok.riksarkivet.se/arkiv/iQuaU8YYEKomjrRYyItzUE",
+      "api_json": "https://data.riksarkivet.se/archive/iQuaU8YYEKomjrRYyItzUE.jsonld"
+    },
+    {
+      "id": "SE/RA/720095/05/01/E 2348",
+      "label": "Gustaf II Adolfs brev till Gustaf Horn (Gustav II Adolf's letters to Gustaf Horn)",
+      "holder": "Riksarkivet i Stockholm/Täby",
+      "fonds_id": "SE/RA/720095/05/01 (Riksmarsken Gustaf (Carlsson) Horns papper, in Horn-Bielkesamlingen, in Bielkesamlingen)",
+      "date_range": "1631-1632",
+      "digitised": false,
+      "image_url": null,
+      "value_range": "unknown (not digitised)",
+      "match_assessment": "M",
+      "note": "Exact date range for the King's letters to Horn; the volume covering this letter and any duplicate/triplicate the editor's footnote names to Horn. No per-letter listing in the Sok-API record.",
+      "sok_html": "https://sok.riksarkivet.se/arkiv/StBOLEcp9KgeNs25gQU7v0",
+      "api_json": "https://data.riksarkivet.se/archive/StBOLEcp9KgeNs25gQU7v0.jsonld"
+    },
+    {
+      "id": "SE/RA/720095/05/01/E 2350",
+      "label": "Kungliga skrivelser (dubletter) till Gustaf Horn (Royal letters, duplicates, to Gustaf Horn)",
+      "holder": "Riksarkivet i Stockholm/Täby",
+      "fonds_id": "SE/RA/720095/05/01",
+      "date_range": "1628-1644",
+      "digitised": false,
+      "image_url": null,
+      "value_range": "unknown (not digitised)",
+      "match_assessment": "M",
+      "note": "Title itself uses \"dubletter\" (duplicates), matching the printed footnote's \"duplett\"/\"triplett\" wording for the second/third Horn letter of 23 July 1632 the editor names but did not locate.",
+      "sok_html": "https://sok.riksarkivet.se/arkiv/1gJ5YMjkA4EONaD35A0fk3",
+      "api_json": "https://data.riksarkivet.se/archive/1gJ5YMjkA4EONaD35A0fk3.jsonld"
+    },
+    {
+      "id": "SE/RA/721502/3/1",
+      "label": "Oxenstiernaprojektets arkiv, Anteckningar om och kopior av källmaterial (QUEUE.md row R10)",
+      "holder": "Riksarkivet i Stockholm/Täby",
+      "fonds_id": "SE/RA/721502",
+      "date_range": "1998-2018 (modern project papers, not the primary material)",
+      "digitised": false,
+      "image_url": null,
+      "value_range": "n/a",
+      "match_assessment": "none",
+      "note": "Secondary/editorial working papers of the modern Oxenstierna edition project, not a primary key or letter holding. Re-confirms scout R's 24 Sept exclusion."
+    }
+  ],
+  "routes_tried": [
+    "Riksarkivet Sok-API (data.riksarkivet.se/api/records): text=chiffer year_min=1628 year_max=1634 (5 hits); text=chiffernyckel (5 hits, all already-known rows); text=Gustaf Horn chiffer (0); text=chiffer Nurnberg (0); text=Skoklostersamlingen chiffer (0); text=Kanslikollegium chiffer (1, already QUEUE row R7); text=Gustaf Horns arkiv (31 hits, surfaced the Horn-Bielkesamlingen fonds); text=Gustaf Horn year_min=1632 year_max=1632 (59 hits, surfaced E 2348/E 2350); text=Gustav II Adolfs arkiv (2979 hits, too broad, not exhausted)",
+    "sok.riksarkivet.se/oxenstierna project pages (static fetch, no cipher content found)",
+    "Bourdeau cyphersolver riksarkivet1628/baner1640 (grep, no overlap with SE/RA/202 lada I or Horn-Bielkesamlingen)",
+    "Aymeloglu unsolved-ciphers (grep, no overlap)",
+    "OpenAlex (429, network budget exhausted), Semantic Scholar (429), DiVA (connection reset x2, unreachable), WebSearch (no scholarship or archival announcement found)"
+  ]
+}

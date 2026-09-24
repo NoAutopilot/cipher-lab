@@ -158,3 +158,106 @@ brief's "do NOT apply any key" instruction — a solver's first cheap test, not 
 - The numeral range (up to ~3965) implies a large nomenclator; per LESSONS.md, the productive route for a system
   like this is a sibling letter with a contemporary decipherment or the original key in the archive, not
   ciphertext-only cryptanalysis on ~150 tokens.
+
+## Key hunt, 24 September 2026
+
+Worker brief `.claude/briefs/runs/2026-09-24-lane-s-keyW1.md` (LANE S). Job: find where the key, a decipherment,
+or the Horn "duplett"/"triplett" letters the editor's footnote names might survive, without applying any key.
+Corrected numeral profile from the extraction above: 91 distinct values, range 4-5152.
+
+**Route 1, QUEUE.md row R10 (SE/RA/721502/3/1, Oxenstiernaprojektets arkiv).** Re-confirmed via the Riksarkivet
+Sök-API (`data.riksarkivet.se/api/records?text=Oxenstiernaprojektets`, fonds id `V1QZnA23KaW0Jkn0Wrqdi0`,
+`SE/RA/721502`, "Oxenstiernaprojektet" 1998-2018, `onlyDigitisedMaterials: false`): this is the modern edition
+project's own working papers ("Anteckningar om och kopior av källmaterial", notes and copies of source material),
+not a primary holding — the row's own QUEUE.md text already carries the item's full catalogue note. Confirms
+scout R's 24 Sept exclusion of this row as secondary/duplicate-of-editorial-process territory, not a fresh lead.
+No new information beyond what QUEUE.md row R10 already states.
+
+**Route 2, Riksarkivet cipher-key holdings 1630-1633 — the productive route.** The public Sök-API
+(`data.riksarkivet.se/api/records`) is intermittently unreachable through this session's proxy
+(`SSL_ERROR_SYSCALL`, matching scout R's 24 Sept note; forcing `--tlsv1.2` and retrying up to 3x per query, ~2s
+apart, got most queries through — see request count below) but works. Broad sweeps: `text=chiffer` restricted to
+`year_min=1628&year_max=1634` (the API searches both the record's own dating and its archive creator's dating) —
+**5 hits**, one of them new and substantial:
+
+- **`SE/RA/202/1` ("Chifferklaver", box/"låda" I, item 1, dated 1500-1640, not digitised)** — the item note lists
+  the individual key booklets by hand: "I:6-17 ... 'Kanslichiffer 1620-1650-talen' [chancery cipher, 1620s-1650s],
+  a thick bundle of 20 small booklets, one fire-damaged"; "I:14, cipher for the correspondence between Axel
+  Oxenstierna and Lennart Torstensson"; "I:18 parts 1-2, Axel Oxenstierna, 'Anders Swensson Ciffrer' [Anders
+  Svensson's ciphers], 2 bound books, bound together 1630"; "I:19 A, 'Ciffrer waanliga at brukas' [ciphers
+  usually used] by Anders Svensson, plus L. Camerarius, 1 book"; "I:19 B, 3 envelopes: Wackenberg, Dietrich von
+  Falckenberg, [V] Thuru, Spens"; "I:19 C, 'Dupletter Spens Ru'"; "I:22, Chifferklaver Ludvig Camerarij + B.
+  Wolffsberg/Lennart Torstensson"; "I:22, 'Camerarius till Axel Oxenstierna'"; "I:24, bound book + duplicates."
+  Anders Svensson (SBL id 5776) was a Swedish diplomat active with Oxenstierna and Salvius in 1629-30 preparing
+  Gustav Adolf's German landing — squarely the right circle and years, though the note does not name Gustav II
+  Adolf or Gustaf Horn by title. **This is a different box from Bourdeau's territory**: `riksarkivet1628/` and
+  `baner1640/` are drawn from DECODE's Chifferklaver **låda II** (R4103-R4329, confirmed by grep of a fresh
+  shallow clone of both solver repos — "låda II:113" etc. throughout, zero hits for "SE/RA/202", "låda I",
+  "Anders Swensson"/"Svensson", "Camerarius" or "Falckenberg" in either repo), while this item is explicitly
+  **låda I** — adjacent but distinct, not already worked. Not digitised (`onlyDigitisedMaterials: false` on both
+  the fonds `SE/RA/202` and item `SE/RA/202/1`); a reading-room task, not a cryptanalysis one, and its own value
+  range cannot be assessed without an image. Flagged as the best candidate for the key itself, conditional on
+  archive access.
+  Other 4 hits in this year-restricted sweep: `SE/RA/25.3/4/II/7/B` (1676-77 full powers, wrong period),
+  `SE/RA/202` (the Chifferklaver fonds record itself, same as above), `SE/RA/1411/E/E VI/1` (Vellingk 1713-14,
+  already QUEUE.md row R7), one WWII administrative hit outside the year filter's precision (`SE/KrA/0115`, date
+  field empty, caught by a name match not a date match).
+- Direct name/place queries found nothing further: `text=Gustaf Horn chiffer` (0), `text=chiffer Nürnberg` (0),
+  `text=Skoklostersamlingen chiffer` (0), `text=Kanslikollegium chiffer` (1 hit, the same Vellingk R7 row), and
+  the unrestricted `text=chiffernyckel` (5 hits — re-confirms scout R's R1/R2/R3 rows and one WWII item and one
+  unrelated 19th-c. Falkenberg-family item; nothing new for 1630-1632).
+
+**Route 3, Gustaf Horn's papers for the "duplett"/"triplett" letters — the second strong lead.** The fonds
+search `text=Gustaf Horns arkiv` surfaced Gustaf Horn's own personal archive, held in two related fonds
+("Bielkesamlingen" > "Horn-Bielkesamlingen" > "Riksmarsken Gustaf (Carlsson) Horns papper", `SE/RA/720095/05/01`)
+plus "Gustaf Horns och Sigrid Bielkes arkiv" (`SE/RA/720900/B/i`). A `text=Gustaf Horn&year_min=1632&year_max=1632`
+sweep (59 hits) found, inside the Horn-Bielkesamlingen fonds:
+- **`SE/RA/720095/05/01/E 2348`, "Gustaf II Adolfs brev till Gustaf Horn" [Gustav II Adolf's letters to Gustaf
+  Horn], dated 1631-1632** — the volume of the King's own letters to Horn covering exactly this letter's date.
+- **`SE/RA/720095/05/01/E 2350`, "Kungliga skrivelser (dubletter) till Gustaf Horn" [Royal letters (duplicates)
+  to Gustaf Horn], dated 1628-1644** — its title uses the word "dubletter" (duplicates), matching the printed
+  footnote's own word "duplett" for the second Horn letter it names.
+Both are `Volume`-level Sök-API records with no further item-level note text returned by the API (no per-letter
+listing), not flagged `onlyDigitisedMaterials`, so not digitised — a reading-room task to open the volume and
+check for the 23 July 1632 date, and for whether a contemporary decipherment rides with either cipher original
+(the LESSONS.md "sibling letter" pattern). Not checked against Bourdeau/Aymeloglu material (below) because
+neither repository mentions this fonds at all (grep, zero hits for "720095", "Horn-Bielke", "Bielkesamlingen",
+"Riksmarsken" in either shallow clone).
+
+**Route 4, Bourdeau's `riksarkivet1628/`/`baner1640/` key-range check.** Already done in full by this target's
+24 Sept check-solved worker (see "Key-overlap check" above): this letter's range (4-5152, mostly 2-4 digit groups)
+does not overlap `riksarkivet1628`'s keys (R4306: 5-203) or `baner1640`'s (2-98 homophones + 361-783 code words)
+in any tested band — not re-run here to avoid duplicating that worker's session (ROOM.md "duplicate work ... is
+what the room prevents"). This session's own grep of both repos (route 2/3 above) additionally confirms neither
+repo has touched `SE/RA/202` (låda I) or the Horn-Bielkesamlingen fonds at all, so there is no overlap to check
+there either — those are simply un-surveyed by either solver, not tested-and-rejected.
+
+**Route 5, open-index scholarship.** OpenAlex answered "Rate limit exceeded ... $0 remaining" (network-wide daily
+budget already spent by other lanes today, confirmed by the error body, not this worker's own calls) and
+Semantic Scholar answered HTTP 429, both unreachable this session. `diva-portal.org` reset the connection twice
+(`ws_closed_mid_exchange`, one retry per the good-citizen rule, then stopped) — unreachable this session, not
+searched. WebSearch (several Swedish- and English-phrased queries for "Gustav II Adolf"/Oxenstierna/Horn +
+chiffer/chifferbrev/chiffernyckel/1632/Nürnberg, and a DiVA-scoped query) found no scholarship or archival
+announcement naming this letter, its key, or the Horn duplicates; the Riksarkivet's own modern Oxenstierna
+edition-project search pages (`sok.riksarkivet.se/oxenstierna`) were fetched directly (not through the
+captcha-walled query form) and do not mention cipher material at all.
+
+**Verdict for a solver/access worker:** no digitised key, decipherment, or Horn duplicate is public. Two
+un-surveyed, not-yet-excluded physical candidates, both needing a Riksarkivet i Stockholm/Täby reading-room
+visit or reproduction order (see `REQUEST.md`): (1) `SE/RA/202/1`, Chifferklaver låda I, for the "Kanslichiffer
+1620-1650-talen" bundle and named booklets (Anders Svensson, Camerarius, Falckenberg, Spens); (2)
+`SE/RA/720095/05/01/E 2348` and `E 2350` in the Horn-Bielkesamlingen, for the King's 1631-1632 letters to Horn
+and the "dubletter" volume that may hold the footnote's named duplicate/triplicate. Neither is confirmed to
+contain this letter's key or the Horn cipher originals — both are catalogue-level, unopened leads, not a
+confirmed match; a value-range assessment against this letter's 91 values (4-5152) is not possible without an
+image. `keys/manifest.json` records both candidates and every route tried.
+
+**Requests this session:** `data.riksarkivet.se` ~19 attempts, 11 succeeded (200), 8 hit transient
+`SSL_ERROR_SYSCALL` through the agent proxy (forcing `--tlsv1.2` improved but did not eliminate this; consistent
+with scout R's 24 Sept note that this host "needed 1-3 attempts, all eventually 200" — logged here for the next
+worker rather than retried further); `sok.riksarkivet.se`/`lbiiif.riksarkivet.se` 1 direct fetch (no captcha this
+time, static project page, no search query submitted); `api.openalex.org` 1 (429, network-wide budget spent);
+`api.semanticscholar.org` 1 (429); `www.diva-portal.org` 2 (connection reset both times, not retried further);
+`github.com` 2 shallow clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers, grepped, not committed);
+WebSearch 6; WebFetch 2 (`sok.riksarkivet.se/oxenstierna`, github wiki page). No logins, no credentials, no
+subagents, no decoding, no novelty wording, no promotion.
