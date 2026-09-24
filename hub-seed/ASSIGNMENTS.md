@@ -394,3 +394,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T21:33Z	session_01ETeZfwyk93CjzP7ygFWdF7	LANE R5 G2 (Opus, cap 8)	fr3985 f.176 key60 atlas re-run + judge	brief 2026-09-24-lane-r5-g2-key60-rerun.md
 2026-09-24T21:44Z	session_01YE11botJahNxonn9Q4knFu	LANE N4 csPP03 (Sonnet, cap $5)	check-solved ANTT CLNH/0086/11 Linhares 'Chave' key + ciphertext	brief lane-n4-csPP03
 2026-09-24T21:44Z	session_011Vfg8E4bfijwM885eKmFqF	LANE N4 csBONG (Sonnet, cap $4)	Tomokiyo's Bongars cipher paper for KT-01	brief lane-n4-csBONG
+2026-09-24T21:48Z	session_01QFM2xCSDTwmDV3ayByLVhJ	LANE B bHAR: harry-caroline-1863 MASC (Sonnet, cap $3)	specs/harry-caroline-1863.json	brief 2026-09-24-lane-b-harry-caroline-1863.md
+2026-09-24T21:48Z	session_01HAb2wwJ9oYC1rsZGCe3D7T	LANE B bLIM: lima-1916 commercial-code grep (Sonnet, cap $3)	specs/lima-1916.json	brief 2026-09-24-lane-b-lima-1916.md
+2026-09-24T21:50Z	session_0125YSNMcCskE21MtmQTNAFN	bKOE done $1.13 N, archived	specs/koehler-1944.json	
+2026-09-24T21:50Z	session_01GKDm1YQYWkciRfv4iSAiQz	bCIG done $1.44 D, archived	specs/cigaret-case-1909.json	
