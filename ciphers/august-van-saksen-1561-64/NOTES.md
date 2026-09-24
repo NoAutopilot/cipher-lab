@@ -118,3 +118,23 @@ glyph repertoires once a solver pass runs, not assumed from correspondence direc
 
 Host: resources.huygens.knaw.nl, 10 requests this pass (4 WVO record pages + 6 PDF fetches, >=2s apart).
 Folder kept at 24MB under the 30MB cap.
+
+## R14: atlas and passes (24 September 2026, stopped over cap)
+
+Done and pushed: `glyphs/atlas.md` (glyph codebook built from 74 p3-p4, 98 p2, 126 p4 by eye, no
+pixel-crop segmentation available in this container -- see atlas.md's method note; 53/57 share G1/G3/G4
+with 74/126 but also show G2 and G13 not confirmed elsewhere, so repertoire overlap is partial, not
+identical, matching R9's "six distinct cipher designs" note above); `plaintext_74.txt` (ff.19-20,
+briefnr 74's decipherment leaf) and `plaintext_98.txt` (ff.68-69, briefnr 98's decipherment leaf),
+both best-effort palaeography, German as written, [?] on uncertain words, not aligned or decoded.
+
+Left undone: the two blind passes (passA.tsv, passB.tsv) over 126 p4, 74 p3-p4, 98 p2, 53 p1 postscript,
+57 p3 block (both blocks -- 57 p3 has two separately-signed cipher blocks, not one, noted to the pass
+workers). Two Sonnet subagents were launched to do these blind from the atlas and had not written their
+output files when this worker was stopped at cap ($10.70 against a $7 cap); neither passA.tsv nor
+passB.tsv exists on disk. Their agent sessions may still be running in the orchestrator's environment
+and could still land results; if so, whoever picks this target up next should check for them before
+re-running the passes, then `tools/reconcile_passes.py passA.tsv passB.tsv` (header `line pos sign
+briefnr page lineno`, matching the tool's "long" format) into `recon/`. No sign count or agreement
+percentage is available -- the passes never completed. No H/C/S/M/I grades apply here (no decoding
+attempted this pass).
