@@ -1,0 +1,140 @@
+# passB.tsv -- blind transcription pass B, rah-canada-1869 (RAH 9/6958, Leg. XIX no 117/2-3)
+# Read from images/10137302.jpg (p302) and images/10137303.jpg (p303), cross-checked against
+# 3x-enlarged, autocontrast crops of each cipher line made from the per-line crop files in
+# images/ (p302_L##.jpg, p303_L##.jpg) via a local PIL script (not committed, scratchpad only).
+# Interpretive symbol choices made consistently through this pass, for the reconciler to check
+# against passA and the image:
+#  - a plain vertical stroke with small top/bottom serifs (looks like a capital "I") -> digit 1
+#  - the flag/gamma-shaped hook (horizontal top stroke + vertical/diagonal down-stroke, distinct
+#    from [hook] below) -> read as digit 1 (an alternate cursive form); genuinely possible this is
+#    a "7" instead -- flagged here as the single most uncertain recurring glyph in this pass.
+#  - the long horizontal stroke ending in an upward hook/flick at its right end (arrow-like "->") -> [hook]
+#  - small single-hump loop, very common as last character of a token -> [loopn]
+#  - wider two-hump loop ("m"-like) -> [loopm]
+#  - taller ascender flourish, common as first character of a token -> [bigloop]
+#  - open oval immediately inside a run of digits -> digit 0; an open oval standing on its own
+#    (not obviously part of a digit run) -> [circle], per the atlas's own caution that this pair
+#    is hard to tell apart
+#  - small closed circle with a visible interior dot/bar -> [circledot]
+#  - a curling-tailed mark resembling a handwritten "?" (seen a handful of times) -> read as digit 9;
+#    flagged as uncertain, grade M
+#  - "." "," "-" transcribed literally where they read as ordinary punctuation/separators between
+#    groups; a longer isolated horizontal stroke that looks like part of a symbol rather than a
+#    separator is labelled [dash] instead
+# No new [gNN] glyphs were needed; every non-digit mark seen matched a label already in atlas.md.
+# Many individual glyph calls in this pass are uncertain (marked informally above); this is a
+# blind pass for tools/reconcile_passes.py to compare against an independent pass B... reading.
+line	pos	token
+p302_c1	1	19[cross]
+p302_c1	2	1[loopn]
+p302_c1	3	[bigloop]957[cross]09.[cross]
+p302_c2	1	[dot][cross]+,[bigloop][loopn]
+p302_c2	2	[loopn][circle].
+p302_c2	3	-
+p302_c2	4	[hook]49.
+p302_c2	5	193
+p302_c2	6	[circledot]+7[hook]
+p302_c2	7	[loopn]93[loopm][loopn]
+p302_c3	1	[circledot]+[loopm]
+p302_c3	2	7.[loopn]79.
+p302_c3	3	1[loopn][bigloop][loopn][circledot]0+[bigloop][loopn].
+p302_c3	4	[circle][loopn]39[hook]
+p302_c3	5	1+[hook][cross][circle][loopn]
+p302_c4	1	[bigloop]+[hook]16[loopn][bigloop]
+p302_c4	2	[circledot][loopn]
+p302_c4	3	.+7[bigloop][loopn],
+p302_c4	4	[circledot][loopn]
+p302_c4	5	-[loopn].6[loopn]
+p302_c4	6	[circledot][cross]++[bigloop]=9.
+p302_c5	1	[circle][loopn],
+p302_c5	2	1+396[loopn].
+p302_c5	3	[hook]++[hook]16[loopn]0[loopn]
+p302_c5	4	[loopn]-93673[cross][loopn]-19[circle]
+p302_c6	1	+3
+p302_c6	2	09-[cross][loopn]0
+p302_c6	3	[bigloop]7[hook]19+3[hook]1.[loopn]
+p302_c6	4	+3
+p302_c6	5	4+4[loopn]0[loopn][bigloop]9
+p302_c7	1	97[hook]+0[circledot][cross]79
+p302_c7	2	[loopn][hook][cross]
+p302_c7	3	9[loopn].67-[cross]0[loopn].
+p302_c7	4	[hook]1[cross]+3[loopn]0719
+p302_c8	1	+0-93[loopn]+
+p302_c8	2	1+0[circle]-[loopn]4[loopn][loopn]
+p302_c9	1	[hook]49.[loopn]
+p302_c10	1	6+319
+p302_c10	2	+0
+p302_c10	3	[circle][loopn][hook]1
+p302_c10	4	[loopn]069
+p302_c10	5	1919.
+p302_c10	6	+3
+p302_c10	7	[equals]+07-76[loopn].
+p302_c11	1	[circledot]+[cross]
+p302_c11	2	-9.19[loopn]00+96+
+p302_c11	3	[loopn][cross]++16.[loopn]0[loopn][circle][loopn]16[loopn][loopn]
+p302_c12	1	+3+0
+p302_c12	2	1[loopn]1+-1[cross],-1[loopn]69.
+p302_c12	3	+76+.[loopn]3[loopn]9[circledot]+++0
+p302_c13	1	-+3[circledot]++[loopn]1
+p302_c13	2	1-+.09
+p302_c13	3	+3+-16+
+p302_c13	4	1[loopn]7-[loopn]1+3
+p302_c14	1	6[loopn][loopn][loopn]
+p302_c14	2	[cross]++-16.[loopn]
+p302_c14	3	0[loopn][loopn]-16[loopn][loopn]
+p302_c14	4	+3+0
+p302_c14	5	6.929[loopn]+
+p302_c15	1	-1[loopn]3
+p302_c15	2	=+.3[loopn]3[loopn]9-1+.[loopn]
+p302_c15	3	+0
+p302_c15	4	0[loopn]-1
+p302_c15	5	=+0[hook][loopm]
+p302_c15	6	[loopn]+
+p302_c15	7	07
+p302_c15	8	57[bigloop][loopn]
+p302_c16	1	+9+.0769
+p302_c16	2	73[loopn]7-[loopn].
+p302_c16	3	+[hook]19+6[cross]9-1[loopn]0+96+
+p302_c17	1	[cross]++-16.[loopn]
+p302_c17	2	0[loopn][circle]-1[cross]-16[loopn][loopn]
+p302_c17	3	[circledot]+7
+p302_c17	4	[loopn]-[loopn]-
+p302_c17	5	99.090+369-1
+p302_c18	1	0[loopn]
+p302_c18	2	1[loopn]+[loopn]
+p302_c18	3	1+0[loopn]
+p302_c18	4	2[cross]-16767 0[loopn]
+p302_c18	5	.+-16[loopn][cross].[loopn]-1979
+p302_c19	1	+1
+p302_c19	2	[circledot][cross]+
+p302_c19	3	9[loopn][loopn]7+
+p302_c19	4	0+
+p302_c19	5	-[loopn]5+96-2[loopn]
+p302_c19	6	+9
+p302_c19	7	[loopn]+-1+9-1
+p302_c19	8	[loopn]+
+p302_c20	1	-1+.+9[loopn]
+p302_c20	2	[loopn]+
+p302_c20	3	09-1
+p302_c20	4	9.10+.9-1
+p302_c20	5	[circledot]++
+p302_c20	6	-1+2[cross]+[loopn][cross]+9
+p303_c1	1	[hook]1
+p303_c1	2	57[loopn][loopn]
+p303_c1	3	99.00+[loopn].0[loopn]
+p303_c1	4	[loopn]
+p303_c1	5	=+07[loopm]
+p303_c1	6	6[loopn]+.0729
+p303_c2	1	[hook]49.[loopn]
+p303_c3	1	[loopn]09-1
+p303_c3	2	.+[loopn]0++-1
+p303_c3	3	97+-1
+p303_c3	4	1+
+p303_c3	5	5[cross]+-16.[loopn]-1
+p303_c4	1	0[loopn]1+-16[loopn]1+-1
+p303_c4	2	++.+[loopn]0
+p303_c4	3	=[loopn]0707[loopn]
+p303_c4	4	-93+0
+p303_c5	1	0[loopn]-1
+p303_c5	2	9.9=[cross]2[loopn]9.+-19+69.
+p303_c5	3	++5+2+.[loopn]-793
