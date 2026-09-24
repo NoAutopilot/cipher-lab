@@ -110,8 +110,29 @@ for i, (code, name, desc) in enumerate(LADDER):
         a_txt = {0: "no audit", 1: "one audit", 2: "two audits"}[a]
         gap = r.get("gap", "")
         cls = "rung-item" + (" unique" if (i >= 3 and a >= 2) else "")
+        slug = re.sub(r"[^a-z0-9]+", "-", r["title"].lower())[:40].strip("-")
+        audit = r["link"].rstrip("/") + "/AUDIT.md"
+        phrases = r.get("phrases", [])
+        prompt = (
+            f"I want an adversarial second opinion on a claim about a historical cipher letter. Please try to prove the claim wrong.\n\n"
+            f"CLAIM: {r['title']}. {r['line']} Our verifier's class is {code} ({name.lower()}: {desc}), after {a_txt}.\n\n"
+            f"WHAT WE ALREADY SEARCHED: the search log is in {audit} (families searched, what was found, what was unreachable). "
+            + (f"The last auditor says the next rung needs: {gap}\n\n" if gap else "\n")
+            + (("DISTINCTIVE PHRASES OR IDENTIFIERS FROM THE TEXT: " + "; ".join(phrases) + "\n\n") if phrases else "")
+            + "WHAT I WANT FROM YOU:\n"
+            "1. Try to find this letter, or its plaintext, or a decipherment of it, anywhere in print or online: documentary editions, calendars of state papers, "
+            "journal articles, theses, library catalogues, cipher databases (DECODE), the two GitHub cipher projects (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers), Cryptiana. "
+            "Give exact citations (edition, volume, page, URL). If you cannot find it, say 'not found' plainly; do not guess or invent a source.\n"
+            "2. Check the attribution: sender, recipient, place, date. Say what would make it wrong.\n"
+            "3. Name three sources we should have searched and apparently did not, with why.\n"
+            "4. Give your own class on the same scale (N0 already known, N1 text in print, N2 mapping new, N3 nothing found, N4 everywhere looked, N5 confirmed) and one sentence on why.\n"
+            "Be skeptical. A wrong 'not found' costs us more than a wrong 'found'."
+        )
         items += (f'<li class="{cls}"><a href="{E(r["link"])}">{E(short(r["title"]))}</a>'
-                  f'<span class="rung-meta">{E(a_txt)}' + (f' · <b>next rung needs:</b> {E(gap)}' if gap else '') + '</span></li>')
+                  f'<span class="rung-meta">{E(a_txt)}' + (f' · <b>next rung needs:</b> {E(gap)}' if gap else '') + '</span>'
+                  f'<details class="xc"><summary>Second-opinion prompt</summary><p class="rung-meta">Paste into ChatGPT or another model. It asks for an adversarial check with exact citations.</p>'
+                  f'<button type="button" class="copy" data-for="xc-{E(slug)}">Copy prompt</button><textarea id="xc-{E(slug)}" hidden>{E(prompt)}</textarea>'
+                  f'<pre class="mail xc-text">{E(prompt)}</pre></details></li>')
     hi = " hi" if i >= 3 else ""
     empty = '<li class="muted empty">nothing here yet</li>'
     ladder_cols += (f'<div class="rung{hi}"><div class="rung-head"><span class="rung-code">{code}</span><span class="rung-name">{E(name)}</span></div>'

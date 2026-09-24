@@ -916,7 +916,15 @@
    "grade": "N3, two audits; N4 pending",
    "line": "A 569-sign cipher passage read with the published Gramont 1530 key: 533 signs valued after a blind second reader's corrections, several lines continuous French. No printed plaintext or decipherment located after two logged searches. The second leaf (f.30, 1,973 signs) now reads with the same key on 22 of 55 lines and is with the verifier.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont",
-   "gap": "Camusat 1619 (image-only scans, behind Gallica's challenge), HathiTrust full text (Cloudflare), the JSTOR rows in the queue; then a fresh verifier sets N4"
+   "gap": "Camusat 1619 (image-only scans, behind Gallica's challenge), HathiTrust full text (Cloudflare), the JSTOR rows in the queue; then a fresh verifier sets N4",
+   "phrases": [
+    "il y baille a ce porteur",
+    "article que j'ay mis a part",
+    "l'adresse de dessus a vous combien que ce soit au roy",
+    "vous prie le luy demander car c'est le total",
+    "qui est cause que j'ay faict ledit article a part",
+    "pour vous donner cognoissance de tout"
+   ]
   },
   {
    "date": "20 Sept 2026",
@@ -925,7 +933,12 @@
    "grade": "N3, two audits; N4 pending",
    "line": "Read at grade H from the surviving cipher book; a second ledger copy of both found in mssEC 25. Thirteen printed volumes, the Butler and Fox correspondence, the Lincoln Papers and 33 Google Books queries print neither telegram. A blind second reader agrees on 96 percent of tokens.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
-   "gap": "HathiTrust full text and the JSTOR rows; the Meigs letterbooks at the Library of Congress (229 images, no text) are the one archive copy nobody has read"
+   "gap": "HathiTrust full text and the JSTOR rows; the Meigs letterbooks at the Library of Congress (229 images, no text) are the one archive copy nobody has read",
+   "phrases": [
+    "Fox to Butler, 21 April 1864, 9.30 PM",
+    "Meigs to Butler, 22 April 1864, 10.45 AM",
+    "Huntington Library mssEC 19 p.49 and mssEC 25 pp.77, 79"
+   ]
   },
   {
    "date": "24 Sept 2026",
