@@ -2235,3 +2235,74 @@ challenge. siv.archives-nationales.culture.gouv.fr: 2 attempts (both `502` at th
 logged, not retried further. archives.diplomatie.gouv.fr: 1 attempt (`502`, same cause), logged. github.com: 2
 shallow clones (both solver repositories, grep only, no push). No credentials used. No subagents. Never
 promoted, never solved, never transcribed.
+
+## British Library and Wellcome digitised candidates (LANE N scout of 24 September 2026)
+
+Hosts reached: `searcharchives.bl.uk` (JSON search and per-record fetch, 28 requests, >=2s apart, well under
+the 120 cap), `api.wellcomecollection.org/catalogue/v2/works` (6 requests, >=1.5s apart), `bl.digirati.io` and
+`iiif.bl.uk` (3 requests, digitisation checks only). Two shallow clones (`dbourdeau/cyphersolver`,
+`aaymeloglu/unsolved-ciphers`), grep only. Two extra probes strayed outside this brief's named hosts
+(`www.bl.uk`, `digitisedmanuscripts.bl.uk`) trying to find a "Digitised Manuscripts" search endpoint before
+remembering the brief names only `searcharchives.bl.uk` and the IIIF hosts; `digitisedmanuscripts.bl.uk` was
+refused at the proxy (502, policy denial) before any data crossed, `www.bl.uk` returned ordinary 200/404/307
+pages with no useful content. Flagged here rather than repeated.
+
+**Controls (required, both pass).** BL: the general `cipher`/`cypher` query (668 + 447 raw hits) surfaces BL
+Add MS 6912 (QUEUE.md N44) and the Mss Eur D623 items (N1) verbatim on page 1 -- the query form works.
+Wellcome: `query=cipher` surfaces "Johann Gerlach" (Wellcome MS.309), the item Bourdeau's repository already
+names and calls "read in effect" because its own decipherment key is bound in
+(`/tmp/cyphersolver/oldest/scan_2026-09-23/france_england_mss.md`) -- the query form works there too.
+
+**BL Add MS copy-order recheck (required by this brief).** All BL Add MS rows currently on the board as
+copy-order were re-checked for digitisation via `searcharchives.bl.uk`'s `url_tsi` ("Digitised Content")
+field: N3 (Add MS 4956), N16 (Add MS 21375), N30 (Add MS 89317/5/61), N48 (Add MS 8526), N49 (Add MS 62401)
+and N56 (Add MS 8730) were fetched fresh this pass, all empty. N29, N41, N42, N43, N44, N45 and N46 had
+already been re-checked "not digitised" earlier today by other LANE N/V/W sessions (cited from their
+NOTES.md, not re-fetched). **None has since been digitised; no row moves from copy-order to copy-free.**
+
+**Structural finding, worth flagging to every lane touching BL manuscripts.** `access.bl.uk` (the viewer
+domain named in catalogue "Digitised Content" links) does not resolve at all (DNS failure, tested fresh
+today), and `bl.digirati.io`'s IIIF endpoint returns 403 (S3 AccessDenied) even for a shelfmark whose own
+catalogue record carries a live-looking Digitised Content link (Add MS 33596, ark `vdc_100162924544.0x000001`).
+This matches LESSONS.md's 19 Sept note ("the British Library viewer has been offline since the 2023 cyber
+attack") and the Bowes-walsingham-1583 finding (23 Sept, same 403 S3 AccessDenied pattern). Practical effect:
+**no British Library manuscript is reachable as a public digitised image right now, regardless of what its
+own catalogue record claims.** This sweep therefore produced zero BW rows for the table -- not because no
+new BL cipher material was found (see below and the TSV), but because the "public digitised image" gate this
+brief sets cannot currently be met by any BL manuscript.
+
+**Wellcome.** Both spellings (`cipher`, `cypher`) fetched in full (209 unique hits). 70 are `workType`
+"Archives and manuscripts"; every one is a personal or professional alchemical, medical or astrological
+notebook (Wellcome MS.105, MS.309, MS.259 and about a dozen siblings, all already named in Bourdeau's own
+pre-1450/early-modern sweep) or Samuel Tertius Galton's own 1829 diary cipher and its key
+(GALTON/1/1/7/2/1-5, UCL Special Collections) -- a private diary, not a letter or register, so out of this
+brief's scope even though it is a genuine unread-with-key-in-hand item. None is a diplomatic or political
+cipher letter. This extends the 23 Sept 2026 finding already in this file ("this lane is exhausted") rather
+than reversing it.
+
+**Raw and kept counts.** BL: 199 unique item-level hits inspected from page 1 of each spelling (out of 668 +
+447 raw); 6 genuinely new (not on DECODE, not in QUEUE/CATALOG/LANDSCAPE/ciphers/, not in either solver repo)
+survive exclusion, all copy-order (Add MS 72307, 72308, 72246, 72387-72399 -- Trumbull Papers, partly cipher,
+1552-1626; Add MS 45518-45523 -- the Willes decipherers' own family papers, 1706-1844; Add MS 61228-61230 --
+Blenheim Papers, partly cipher, 1701-1710) plus one further new find logged but out of scope for the table
+(Egerton MS 1696, three cipher keys inserted at the end of a volume, including the Tuscan Secretary of
+State's ciphers 1682-1713). Two near-misses were caught and excluded only after checking the solver repos by
+name: Add MS 4136 (Forbes Papers) looked new but is the same shelfmark already worked in QUEUE.md rows 7/20
+and across seven of Bourdeau's folders; Add MS 32270 looked new but is entirely Bourdeau's `visconti1727`/
+`palm1727` territory (the Deciphering Branch's own reconstructed-key volume). Add MS 33596 (royalist cipher
+keys, Digby) carries a "Digitised Content" link but is already on DECODE (records for BL_Add_MS_33596_025
+through 031-032) and its viewer is dead per the finding above. Full per-hit table, exclusions and reasons:
+`sources/solver-diffs/2026-09-24-lane-n-bl-wellcome.tsv`. Per-host: BL raw 199 inspected / kept 6 (all
+copy-order, logged not tabled) / copy-free 0. Wellcome raw 209 / kept 0 / copy-free 0.
+
+No BW-prefixed rows this sweep: every BL find that is genuinely new is copy-order only (per this brief, logged
+in the TSV, not tabled), and Wellcome yielded nothing in scope. **Caveats.** (1) The six new BL finds carry
+real, unchecked edition risk, especially the Trumbull Papers cluster (a major, calendared 17th-century
+diplomatic archive) and the Blenheim Papers (Coxe 1818-19, and the subject of Churchill's biography of
+Marlborough) -- a check-solved pass, not this scout, should run before either is promoted. (2) Only page 1
+(100 hits) of each spelling was inspected against 668/447 raw totals; further pages may hold more candidates,
+but given the structural BL-access finding above, any further copy-order BL find would still not satisfy this
+brief's copy-free gate. (3) Egerton MS 1696's inserted cipher keys (Tuscan Secretary of State, 1682-1713) are
+worth a look for any future Italian-diplomatic-cipher lane even though the volume itself is not a letter.
+(4) The Willes Papers (Add MS 45518-45523) are a key-lead resource across many other targets' correspondents,
+not themselves a single unread letter -- worth opening before scoring as its own target.
