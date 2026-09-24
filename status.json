@@ -421,13 +421,13 @@
    "state": "active",
    "holder": "Worker",
    "kind": "contribution",
-   "next": "LANE T: I fetches page images for the OCR-damaged cipher in P4, P14, P9, P10; J print-checks P4 and P14 (the two letters with no decipherment in print). Then an Opus reader on P14 with the Montagu key, the P4 reading updated from the images, and a verifier on both.",
-   "note": "AUDIT.md, 24 Sept 2026: 17 letters N0 (Birch printed their decipherment; Montagu P11-13 and 14 others). Keys aligned from the print: Montagu, Blake, Stamford, Butler, Fauconberg. Two letters have no decipherment in print: Stamford 13 March 1655 (P4, keyed from his sibling letters, H 63 C 322 of 443; control 92-94 percent) and the Protector to Blake and Mountagu 9 June 1656 (P14, Montagu key). No class for those two yet; nothing here is called new.",
+   "next": "LANE W: adversarial second audit of P4 (N3), and toward N4: Tomokiyo's stamford.jpg compared with key_stamford.tsv, and Bodleian MS Rawl. A. 24 ff.73-76 (catalogue or copy request). LANE T has closed; handoff at the top of NOTES.md.",
+   "note": "AUDIT.md, 24 Sept 2026: 21 of the 22 letters are N0 (Birch printed their decipherment; aligned into keys for the Montagu, Blake, Stamford, Butler and Fauconberg ciphers). Stamford's letter of 13 March 1655 (P4) has no decipherment in print: keyed reading H 64 C 338 M 16 U 6 of 424, class N3 after one audit. Nothing here is called new.",
    "wait": {
-    "on": "LANE T workers I, J",
-    "since": "24 Sep 2026, 04:00 UTC",
-    "expected": "Within the hour",
-    "unblock": "Image transcription of P4/P14 and their print check"
+    "on": "LANE W",
+    "since": "24 Sep 2026, 05:20 UTC",
+    "expected": "Today",
+    "unblock": "Second audit of P4; Tomokiyo's key image and Rawl. A. 24 checked"
    }
   },
   {
@@ -1255,6 +1255,22 @@
    "grade": "negative with controls",
    "line": "Controls read 99.8/93.6/86.4/70.0% at 0/5/10/15% noise; the target does not read as Italian under four substitution designs. Nomenclator designs untested.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr4687-paleologue-nevers"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "reading",
+   "title": "Thurloe State Papers (Birch 1742): Blake 4 and 6 July 1655, the Protector to Blake and Mountagu 9 June 1656, Mountagu 16 Sept 1656, printed decipherments aligned to their groups",
+   "grade": "N0",
+   "line": "Birch printed these four letters with their decipherment (vol. 3 pp.611-612, 620; vol. 5 pp.101-102, 421); we aligned it to the groups, extending the Blake and Montagu keys.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "reading",
+   "title": "William Stamford to Thurloe's office, Calais, 13 March 1655 (Birch 1742 vol. 3 pp.188-189): keyed reading of a letter printed without its decipherment",
+   "grade": "N3",
+   "line": "Birch prints the cipher but no decipherment; read with a key rebuilt from Birch's printed decipherments of Stamford's letters of 20 and 30 March 1655 (control 92-94%), H 64 C 338 M 16 U 6 of 424; no prior decipherment located in Birch, BHO, CSPD 1655, Underdown, Google Books, IA full text or the open indexes; Bodleian MS Rawl. A. 24 and Tomokiyo's working key not checked.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md"
   }
  ],
  "lanes": [
