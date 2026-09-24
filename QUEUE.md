@@ -4809,3 +4809,64 @@ sweeps (now checked by full text and by metadata field, twice); e-manuscripta is
 brief only if a future worker's budget can absorb the ~16,400-request OAI harvest of its four large sets, or if
 the Cloudflare block on its HTML search is somehow cleared by a different route. No new rows in
 `QUEUE-scores.json` (nothing scored). Full detail: `sources/solver-diffs/2026-09-24-lane-n3-ch.tsv`.
+
+## Europeana round 2, image records (LANE N3 scout of 24 September 2026)
+
+LANE N3 brief scEU2 (`.claude/briefs/runs/2026-09-24-lane-n3-scEU2.md`), following the LANE S Europeana sweep
+above ("Europeana and Real Academia de la Historia digitised candidates") which covered `qf=TYPE:TEXT` across
+24 queries for a clean negative. This round: `qf=TYPE:IMAGE` (image-type records specifically -- letters, not
+books or printed editions), the same 24-Sept API (`api.europeana.eu/record/v2/search.json`, `wskey=api2demo`),
+14 base terms (cipher, cypher, chiffre, chiffré, cifra, cifrado, "in cifra", Geheimschrift, chiffriert, cijfer,
+"en chiffres", crittografia, szyfr, šifra) plus, for the four largest sets, a query narrowed with
+letter/correspondence words in every relevant language (carta, lettera, letter, Brief, lettre, correspondencia,
+correspondence, correspondentie, carta).
+
+**Clean negative, and a new noise pattern specific to the image domain.** 18 distinct queries (14 base +
+4 narrowed), 10,596 raw hits summed with heavy overlap (chiffre/chiffré are identical result sets --
+Europeana folds the accent), 846 unique records actually pulled to disk and read (every set of <=100 hits in
+full; every larger set at its top-100-by-relevance page). Every full set and every sample was noise. Round 1's
+TYPE:TEXT sweep documented "cifra"=numeral/scale-figure, "cijferschrift"=school notation, "déchiffrement"=
+decipherment of ancient scripts, and printed cipher-instruction manuals as the noise classes; TYPE:IMAGE adds
+a dominant new one across every European language tried: **"cipher/cypher/chiffre" as a royal or heraldic
+monogram or insignia**, not cryptography -- Swedish Army Museum "namnchiffer" (a monarch's or regiment's
+name-cipher badge, stamped on uniforms, flags, punches, dozens of hits), "The Royal Cypher" on British
+regalia and Portable Antiquities Scheme trade-weight/token maker's marks, V&A/Royal Museums Greenwich
+porcelain and jewellery bearing a monarch's "cypher", Mobilier National tapestry cartoons "au chiffre de
+Napoléon/Charles X". Alongside it: already-published/already-catalogued WWII-and-later cryptographic hardware
+as museum objects (Enigma, Siemens Geheimschreiber T52e, Hagelin CD-55, modern file-encryption devices --
+real cipher machines, but museum artefacts with existing catalogue descriptions, not unsolved correspondence);
+the numeral/digit sense of cifra/cijfer extended to coins, guild tokens, lead seals and Roman-numeral marks;
+and "en chiffres" as the French clock-face/route-distance idiom ("cadran... en chiffres arabes", "distances en
+chiffres"). Full per-query breakdown and every noise category: `sources/solver-diffs/2026-09-24-lane-n3-eu2.tsv`.
+
+**The brief's proxy_dc_type narrowing does not work on this endpoint.** `qf=proxy_dc_type.en:letter` returned
+0 (wrong field/value syntax); a `facet=proxy_dc_type` read on a live query shows the field holds inconsistent
+free text or opaque Getty/concept URIs (money/coin vocabulary terms dominate for "cifra") rather than a clean
+cross-language "letter" value. Free-text AND-narrowing in the `query=` parameter (e.g. `cifra AND (carta OR
+letter OR ...)`) was tried instead for the four largest term sets (cifra 487, cipher 31, chiffre 45, cijfer 44
+narrowed hits) but does not appear to be honoured as strict boolean by the endpoint's query parser -- narrowed
+result sets still surfaced unrelated Army Museum/trade-weight records with no visible match to the letter-words,
+so the narrowing filtered by relevance ranking rather than a real AND. All 607 narrowed hits across the four
+were opened; 0 correspondence.
+
+**One near-miss, out of scope, not pursued.** Rijksmuseum RP-P-OB-79-031, "Geheimschrift gebruikt door
+Margaretha van Parma, 1567" ("four examples and the translation key of the secret writing or cipher script used
+by Margaret of Parma in her correspondence, 1567") -- a real cipher-key subject, IIIF manifest confirmed present
+(`https://iiif.europeana.eu/presentation/90402/RP_P_OB_79_031/manifest`), but the object itself is a lithograph
+print made 1840-1842 (the record's own `dcType`/`dctermsCreated`), i.e. a 19th-century printed reproduction
+illustrating some historical work, not a manuscript letter -- out of this brief's "letters not books" scope and
+self-evidently already published wherever the plate appeared. Also checked and dropped: a small cluster of
+early-20th-century (c.1911) Sorolla Museum family letters (CERES/Hispana) that mention a "telegrama/cable
+cifrado" in passing (routine commercial-telegram privacy code, not a diplomatic/military cipher, and out of this
+project's period/profile) and a 1807 Wellcome Collection engraving of a comparison chart of ciphers (an
+already-published printed reference chart, not correspondence).
+
+**Per-host report:** `api.europeana.eu`: 23 requests (18 search queries + 2 record-detail fetches for the
+Rijksmuseum item, 1 failed lookup on a mistyped id, 1 facet-only probe, 1 proxy_dc_type qf test), all
+>=1.6 s apart, descriptive User-Agent, no 429/403 seen. No other host reached (no candidate survived to need an
+image tested beyond the two Rijksmuseum IIIF confirmations above). `github.com`: 0 (nothing to exclude-check --
+no candidate reached that stage). WebSearch: 0.
+
+**Raw/kept/copy-free: 0 new rows, 0 copy-free.** No rows added to `QUEUE-scores.json` (nothing to score); no
+`EU2-` prefixed nominations this pass. Full detail and every dropped item's reason:
+`sources/solver-diffs/2026-09-24-lane-n3-eu2.tsv`.
