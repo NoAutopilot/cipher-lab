@@ -1,0 +1,19 @@
+# BnF fr.2980 f.29r (item 21, Gramont to Villandry, Rome, 20 May [1530]), cipher lines 1-14 after the clear opening.
+# Transcribed by the reconciler (Opus) from the full-resolution IIIF image, line by line, with blind passes A and B
+# (passA.tsv, passB.tsv, Sonnet) as secondary evidence; see reconciliation.md. Sign codes are defined in key.tsv (shape, value, table source).
+# '.' = free-standing dot (kept, ignored by decode.py); a trailing '?' = sign identity uncertain.
+# f.30r and f.30v (item 22) are not yet reconciled: this worker stopped at its cap after f.29r (see NOTES.md).
+f29r L01 | z7? xr L2 aq q x z3 zb ll sl z 5 9 . dl lt r3 m g g br h n6 g2 lam sl r3 m z3 5 c sl ss2 zb D g sl xr x aq p xr o
+f29r L02 | lam . dl x rs m . 4t zu rho lam z3 5 m c x fh br oi T 9 eh oi fh sl T g o x h lt g 2 bb E xr g n6 nq h g 5b sl 2 lt H yt
+f29r L03 | x g r3 lt aq 4t 2 H c sl eh xr 5 m . dl lt br yt sl g r3 bb g q c xr lt z3 yt fh L2 g oi n6 eh h br 9 lam aq g h lt g o
+f29r L04 | sl lam H 2 ll 9 br H oi h lt g 2 . dl r3 H 9 c sl c h yt zu fh oi p lam n6 eh 9 rs 5 x rs 5 sl 2 m c sl m lt yt x c
+f29r L05 | yt b n6 eh 9 Tb sl yt m . 4t H lam zu 5 sl rho x H 5 m fh lam g c yt x n6 yt D g oi n6 b d 2 m rs oi 2 x H E
+f29r L06 | 5 m . dl oi rs 9 fh lam rho x H 5 m . Hb rs x E fh oi xr n6 2 m x n6 5 sl fh g2 2 5 rs z3 . dl r3 9 c oi
+f29r L07 | bb m oi n6 h lam h c oi g2 r3 x n6 eh 9 2 5 sl q9 zb g 2 fh h g H n6 g2 m xr 9 2 p 9 4t . dl lt g r3
+f29r L08 | Rt h zu 2 lam m x 2 rho lam z3 br 9 xr lam zu 5 sl rho x H 5 m . 4t c h aq lam zu p b n6 2 m rs 9 m lt g yt
+f29r L09 | r3 sl bb m oi n6 h . dl b g rs c sl bb yt oi n6 yt 9 r3 4t b g 2 m sl r3 . lz lt rs z fh 9 o h 2 . dl sl 5 lt n6
+f29r L10 | D g H oi 2 m 5 lam g 2 sl nr h oi xr lam aq rho lam H 5 m . c sl eh xr m . lam rs m xr 5 c sl lam q9 x rs yt
+f29r L11 | dl b g rs h lt d o fh lt Mx 9 rs 5 lt g2 n6 b H T lam n6 5 sl eh 9 m b g yt Af lam H o H oi h b g o
+f29r L12 | dl rs H oi lam eh h oi rs m H Th 9 Af q H oi yt n6 c sl eh H 5 m . 2 sl H g2 n6 oi g r3 4t m b g o
+f29r L13 | x h c m r3 oi o D g oi c lam 5 q9 b g 2 g oi n6 5 x 2 D g oi c sl r3 Tb zu h lt g c 2 H o m
+f29r L14 | E lam h lt rs H 2 sl rs Hb 2 b H yt p oi n6 9 sq o sl 5 rs 9 m sl p III n6 m . zb ss2 mx null_o lt? paren

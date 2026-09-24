@@ -1,0 +1,60 @@
+code	value	grade	source
+x	A	H	Lasry A (legend k39/k? column A); Tomokiyo a row 1
+lam	A	H	Lasry A λ; Tomokiyo a row 2
+z	A	H	Tomokiyo a row 3 (z-shape)
+L2	L	M	long-stroke λ/ʌ joined to a long s; read as Lasry L ʌ; one occurrence pattern, shape uncertain
+9	E	H	Tomokiyo e row 1 ('9'); Lasry has the same shape for B (k46): value B possible, context decides
+q	E	M	q-shaped 9 variant; read as 9 (reads B in L01 'baille')
+5	C	H	Lasry C; Tomokiyo c
+5b	C	M	5 with a bar above; read as 5
+c	L	H	Lasry L c; Tomokiyo l
+eh	D	H	Lasry D (e-hook); Tomokiyo d row 2
+fh	D	H	Lasry D ʄ; Tomokiyo d row 1
+oi	E	H	Lasry E (o joined to a stem); Tomokiyo e row 2
+sl	E	H	Lasry E (long s); Tomokiyo e row 3
+rho	F	H	Lasry F ρ
+g2	G	H	Lasry G; Tomokiyo g
+H	I	H	Lasry I (H); Tomokiyo i row 2 (Tomokiyo also links H to z)
+xr	I	H	Lasry I (x with r); Tomokiyo i row 1
+aq	Y	H	Tomokiyo y row 2 (a with a loop on top); Lasry lists the same shape under I (k32)
+zu	I	H	Lasry I (z/u with two dots, k17)
+z3	I	H	Tomokiyo i row 3 ('23'-shaped z)
+r3	R	H	Lasry R (tall j with strokes, k44)
+rs	R	H	Lasry R (t with a slash, k56)
+zb	NULL	M	z with a bar: Tomokiyo puts a similar shape under r, but here it stands in the closing null run (L14) and reads as a null in L01 ('baille'); value R possible in other hands
+br	R	H	Lasry R (filled round B, k10)
+E	B	M	Tomokiyo b row 2; Lasry has the same shape for R (k55): value R possible, context decides
+n6	N	H	Lasry N ∂; Tomokiyo n row 1
+nr	N	H	Lasry N (r with a dot, k01); Tomokiyo n row 2
+b	O	H	Lasry O b; Tomokiyo o row 1
+lt	O	H	Lasry O (l with a stroke, k13)
+Rt	O	H	Lasry O (R with a stroke, k22); Tomokiyo o row 3
+dl	P	H	Lasry P Δ; Tomokiyo p
+q9	P	H	Lasry P (q with a loop, k49); Tomokiyo p row 2
+Tb	P	H	Lasry P (E with a bar, k33)
+D	Q	H	Lasry Q D; Tomokiyo q row 1
+nq	Q	H	Lasry Q (N with a hook, k41); Tomokiyo q row 2
+o	S	H	Lasry S o; Tomokiyo s row 3
+2	S	H	Lasry S 2; Tomokiyo s row 1
+4t	ET	M	Tomokiyo "et?" (bottom row); Lasry's S sign (4 with r, k21) is close in shape: value S possible
+m	T	H	Lasry T m; Tomokiyo t row 3
+yt	T	H	Tomokiyo t row 1 (curled l / final hook)
+h	V	H	Lasry V h; Tomokiyo u row 1
+d	V	H	Lasry V d; Tomokiyo u row 2
+g	V	H	Lasry V g; Tomokiyo u row 3; Bourdeau: g also serves for E and B, and here it reads E in several words (portevr, combien, que): read by context, see NOTES
+sq	X	H	Lasry X (box)
+T	SS	H	Lasry SS (T with a bar); Tomokiyo s double row
+Th	SS	M	T with a hook below; read as T
+ll	LL	H	Lasry LL; Tomokiyo l double row
+bb	COM	H	Lasry COM; Tomokiyo com
+Af	M	H	Lasry M (A with f, k29)
+Mx	?	U	m with a crossing stroke; not in either table
+p	M	H	Lasry M p; Tomokiyo m row 1
+Hb	?	U	H with a long bar; not in either table
+lz	?	U	small l-z form before lt; not in either table
+III	?	U	three bars in a box; not in either table
+ss2	NULL	M	double long s; Bourdeau reads the ss-on-a-stem sign as a word-initial null; here in the closing null run
+z7	NULL	M	z over 7 at the start of the cipher; read as a null (compare Tomokiyo's first null)
+mx	NULL	H	Tomokiyo null (m-x)
+null_o	NULL	H	Tomokiyo null (circle with dot)
+paren	NULL	H	Tomokiyo null (bracket)

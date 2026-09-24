@@ -1,6 +1,6 @@
 # BnF Français 2980, ff.29-30: two cipher letters of Cardinal Gabriel de Gramont, bishop of Tarbes
 
-open
+partial
 
 Check-solved sweep, 23 September 2026 (started ~23:19 UTC, this section written ~23:40 UTC; `date -u` read before
 writing). QUEUE row M8. Worker: check-solved M8-M11 (Sonnet, cap $8 across all four targets).
@@ -209,3 +209,78 @@ books.openedition.org: 1 page fetch. archive.org/be-api: ~10 (1 djvu.txt full do
 never printed. books.google.com: 1 curl + 1 browser_fetch.js attempt, both bot-blocked, one retry each, then
 stopped (good-citizen rule). gallica.bnf.fr: 1 SRU query (irrelevant results, not pursued further). WebSearch:
 4 queries. No logins, no credentials, no subagents, no images fetched, no decoding or transcription attempted.
+
+## Transcription and key application, f.29r — 24 September 2026 (00:05-00:45 UTC, `date -u` read)
+
+Worker: transcription + key (Opus reconciler, two Sonnet passes), orchestrator session_01SepNMpYrr6L2EwqL43aTnm,
+cap $20. Stopped after f.29r; f.30r-v (item 22) not transcribed.
+
+**Credit (rule 8).** The key is S. Tomokiyo's reconstruction "Gramont's Cipher (1530)" from BnF fr.3019 f.20
+(Cryptiana, francis.htm, `sources/cryptiana/web/francisGramont.png`) and George Lasry's independent recovery of
+the same cipher from BnF fr.3071 f.17 (table dated 04/11/2023, `sources/cryptiana/web/GL/BnF_fr3071_f17.png`).
+Tomokiyo identified these two fr.2980 letters as readable with it. Bourdeau (dbourdeau/cyphersolver,
+`gramont1529/fr3071_no7_gramont.md`, MIT/CC BY 4.0) read fr.3071 no.7 with it; his notes on g serving V/E/B and
+on the ss-on-a-stem null were used. Nothing is copied from aaymeloglu/unsolved-ciphers.
+
+**Files.** `ciphertext.txt` (f.29r, 14 lines, 569 signs, descriptive codes), `key.tsv` (code, value, grade, which
+table), `decode.py` (writes `reading.txt` and `reading_tokens.tsv`; `--check` exits 1 when stale, verified both
+ways), `reconciliation.md`, `legend.py`/`legend.tsv`/`legend_sheet.png`, `tomokiyo_columns.py`/`.tsv`,
+`crop.py`, `sheets.py`, `sheets/`, `passA.tsv`, `passB.tsv`, `PASS-BRIEF.md`, `key_draft.tsv` (legend codes to
+table values, used only to test the passes).
+
+**Grades (per token, f.29r, from decode.py):** 569 tokens: H 538, C 0, S 0, M 26, I 0, U 5. The H count means
+"value taken from the Lasry or Tomokiyo table"; it does not grade my identification of each sign on the leaf,
+which rests on one reader (the blind passes failed, reconciliation.md) and on the French coming out. No
+cryptanalytic extension of the key was made, so no matched control was needed or run. This is a key-based
+reading of f.29r, with word division and the modern rendering below mine (grade I where marked).
+
+**Reading, f.29r cipher (letters as decoded, my word division; `·` = sign not in the key, `?` = I cannot yet
+divide or read the letters; `g` read E where the word needs it):**
+
+    L01 il y baille a ce porteur ...? article que j'ay mis
+    L02 a part, et i[l?] faict l'adresse de dessus a vous, combien que ce soit
+    L03 au roy, et si ledict porteur com...? ...? a vous
+    L04 ...ie (artillerie?) vous prie le luy demander, car c'est le total
+    L05 ...? et ... faict d'aultant que nous tres ...
+    L06 ...? faict ... de instance ...
+    L07 contenu ... grande ... du vingtiesme et pour
+    L08 ...? faire ... faict et luy ay monstre tout
+    L09 re[com]tenu pour le contenter et oster ... de suspecon
+    L10 qui est cause que j'ay faict ledit article a part
+    L11 pour vous do[nn]er cognoissance de tout, mais je vous
+    L12 prie advertissement(?) ... ledict seigneur et tous
+    L13 aultres que ... que le ... voulsist
+    L14 favoriser(?) soit mene ... secretement [nulls]
+
+Lines 10-11 and parts of 2, 8, 9 and 12 read as continuous French directly from the table values; the rest has
+letters I have not yet divided, and some sign identifications in L01, L03-L07 and L13 are probably wrong. The
+decoded "du vingtiesme" (L07) fits the letter's own date (20 May) or a reference to an earlier letter of the 20th.
+
+**Clear text, f.29r (draft, read by eye from the image, grade M throughout, for context only):** "Monsr, pensant
+que ce courrier pourra estre plustost a vous que le pacquet que j'ay envoye au Roy du xxi[?]e de ce moys, je vous ay
+bien voulu envoyer ung double des lettres que j'escriptz lundi ... et demeurant voz ... La venue ... et la depesche
+dudit porteur ... pour la satisfaction de nostre Sainct Pere et assez tost ... des affaires du Roy par deca ...
+Je m'escriptz pour ... messeigneurs ... d'Ancone(?) que j'ay ... par la depesche dudit xxie ... qui sera la fin,
+apres de bien bon coeur me recommande a vostre bonne grace, priant Dieu vous donner ... A Rome le xxme de may."
+Then cipher; then "Vostre ... serviteur, De Gramont E. de Tarbe". f.30v ends in clear "faict a Rome le xxme jour
+de may M D XXX" and the same signature.
+
+**Where the reading was not found (searched 24 Sept 2026, ~00:35 UTC):**
+- Internet Archive full text (be-api fts, no login): `"faict ledict article a part"` 0 hits;
+  `"pour le contenter et oster"` 0 hits; `"Gramont" "Villandry" "article a part"` (words, not a phrase) 10 hits,
+  all general (Journal des guerres / du Bellay volumes, `documents10sociuoft`, `grandsecrivainsd0000dema`), none
+  checked further.
+- Google Books API (keyed, country=US): `"ledict article a part" Gramont` 0; `"baille a ce porteur" Villandry` 0;
+  `"Tarbe" "Villandry" 1530 chiffre` 3 (Letters and Papers Henry VIII (1965 reprint) x2, Calendar of State Papers
+  1876): LP vol.4 pt.3 was already checked by the print-check pass (no item of 20 May 1530); the CSP volume was not opened.
+- Also see the print-check section above (Le Grand gap, Pocock, SP7, Ribier/Camusat, Molini unreached).
+No novelty class is given here (rule 10); the verifier follows.
+
+**Requests this pass.** gallica.bnf.fr 6 (3 info.json, 1 reset not retried; 3 full-resolution regions, f32 reset
+twice then fetched on a third attempt after a 20 s pause, one attempt beyond the single-retry rule).
+cryptiana.web.fc2.com 2 (the two key images; the key is not in the mirror as an image). github.com 1 shallow clone
+(dbourdeau/cyphersolver, read only gramont1529/). archive.org be-api 3. googleapis.com 3. No logins.
+
+**For the next worker (one line each):** transcribe f.30r and f.30v by the reconciler method (reconciliation.md),
+reusing key.tsv codes; re-read f.29r L01, L03-L07, L13 against the image with the decoded letters in hand; add
+exceptions.tsv for g-as-E and 9-as-B positions so reading.txt carries the context values with their grade.
