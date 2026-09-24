@@ -74,15 +74,26 @@ Internet Archive warofrebellionco0007vari; vol. 8, warofrebellionco08unit). key.
 (55 arbitraries and 8 time words) with grades: 31 C, 19 I, 13 M. The entries to the eastern line (Lander, Banks, Rosecrans, Fort Monroe) use
 some words with other meanings (Humboldt, Devon), so at least two keys were in use at Washington.
 
+Prior art (added by the verifier, 24 Sept 2026, AUDIT.md section 1): the Decoding the Civil War blog had already
+published Andes = McClellan, Alden = Halleck (30 Mar 2017) and Alvord = Buell (18 May 2017) from 1862 ledger
+entries, and stated the same method, comparing ledger telegrams with the Official Records to reverse-engineer the
+missing books. Its 21 Apr 2017 post gives Anthon = McDowell and Palate = bridge for an April 1862 entry, against
+this table's grade-I Anthon = Banks and Palate = Cairo (not adjudicated).
+
 ## 4. The ten readings (ciphertext.txt, reading.md, decode.py)
 
 Ten entries of 5-21 Feb 1862 (McClellan, Stanton and Lincoln to Halleck, Buell, Hunter and Lane, Scott),
 chosen because the Official Records print them. Two independent transcription passes by subagents from the
 page images, reconciled against the image with the volunteer transcription as third witness (reading.md,
 "Reconciliation": 14 disagreements, none on the sense, three on code words, all resolved). Result: all ten read
-cleanly and agree with the printed text word for word apart from clerical variants; 86 code-word tokens graded C,
+cleanly and agree with the printed text apart from clerical variants and two sense variants in T10 ("reach" for
+"make", "Railway to Clarksville" for "railroad to Nashville"; AUDIT.md section 3, corrected 24 Sept 2026); 86 code-word tokens graded C,
 3 I, 2 M, 0 H. `python3 decode.py --check` regenerates the readings from ciphertext.txt and key.md and exits 1
 if reading.md is stale. Per CLAUDE.md rule 4 this is a known-plaintext result, not an H reading.
+
+Novelty (AUDIT.md, verifier, 24 Sept 2026): all ten are **N1**; every plaintext is in the Official Records
+(1882-83) and most in the Lincoln or McClellan editions too. What the folder adds is the alignment, the graded key
+table, the hour of T7 (16 Feb, 1 PM; OR "[February 16 (?)]") and the T10 variants.
 
 ## 5. Residue and what would move it
 
@@ -121,3 +132,7 @@ if reading.md is stale. Per CLAUDE.md rule 4 this is a known-plaintext result, n
   W. R. Plum, The Military Telegraph during the Civil War (1882) as quoted there; Richard Bean's Milroy solve
   (2026); D. Bourdeau, cyphersolver/milroy (MIT, CC BY 4.0), consulted for the No. 7 route.
 - Known plaintext: The War of the Rebellion, ser. I, vols. 7 and 8 (Internet Archive full texts).
+- Prior key words and method: Decoding the Civil War blog (Huntington), "Grant's 'Former Bad Habits'"
+  (30 Mar 2017) and "Bickering Generals" (Olga Tsapina, 18 May 2017), decodingthecivilwar.wordpress.com.
+- Follow-up suggestion (verifier, 24 Sept 2026, not done): the reading.md summary sentence "the only variants are
+  clerical" should be corrected by the solver lane to name the T10 variants (AUDIT.md section 3).

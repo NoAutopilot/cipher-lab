@@ -95,7 +95,7 @@
    "state": "waiting",
    "holder": "Archive",
    "next": "Parked for cryptanalysis (every cipher in the ledger reads from a surviving book). An enquiry went to the Huntington curator on 20 Sept 2026 asking whether a corpus-level decoding dataset exists and whether one would be useful; their reply decides whether the mechanical corpus pass is run as an edition project.",
-   "note": "Twenty 1864 entries read at grade H from cipher book mssEC 41; seventeen agree word for word with the Official Records, one with the printed Lincoln works, two (E4, E5) not found in the sources listed in AUDIT.md (N3, confirmed by an adversarial second audit on 24 Sept 2026; N4 pending JSTOR and HathiTrust full text; a second ledger copy of both is in mssEC 25 pp.77, 79, still in cipher). Corpus question (AUDIT.md section 12): no one has mapped the ledger entries to cipher, key, plaintext and print; the project's decoding phase was never launched (paused Jan 2018, ended July 2019). A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve.",
+   "note": "1862 (mssEC 15): ten entries aligned with their Official Records prints, all N1 (ciphers/eckert-1862/AUDIT.md, 24 Sept 2026); three of the 1862 code words (Andes, Alden, Alvord) were already published by the project blog in 2017. Twenty 1864 entries read at grade H from cipher book mssEC 41; seventeen agree word for word with the Official Records, one with the printed Lincoln works, two (E4, E5) not found in the sources listed in AUDIT.md (N3, confirmed by an adversarial second audit on 24 Sept 2026; N4 pending JSTOR and HathiTrust full text; a second ledger copy of both is in mssEC 25 pp.77, 79, still in cipher). Corpus question (AUDIT.md section 12): no one has mapped the ledger entries to cipher, key, plaintext and print; the project's decoding phase was never launched (paused Jan 2018, ended July 2019). A mechanical corpus pass over the volunteer transcriptions is possible and cheap, but it is an edition, not a solve.",
    "wait": {
     "on": "The Huntington (curator reply to the 20 Sept enquiry)",
     "since": "20 Sept 2026",
@@ -974,7 +974,7 @@
    "kind": "contribution",
    "title": "Eckert keys, 23 checked readings and the corpus-status finding offered to the Huntington Library",
    "grade": "offered, reply pending",
-   "line": "The Zooniverse project never launched its decoding phase; the mechanical corpus pass is possible and was offered as an edition, not a solve.",
+   "line": "The Zooniverse project never launched its decoding phase; the mechanical corpus pass is possible and was offered as an edition, not a solve. The 1862 folder linked here had no AUDIT.md when this was offered (outreach gate 1 unmet); its audit of 24 Sept 2026 puts all ten 1862 readings at N1, and no CONTRIBUTIONS.md row records the offer.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1862"
   },
   {
