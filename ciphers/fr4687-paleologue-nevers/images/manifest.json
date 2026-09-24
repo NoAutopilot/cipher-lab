@@ -113,5 +113,68 @@
       "content": "six-line cipher postscript L2-L7"
     }
   ],
-  "native_fetch": "24 Sept 2026, reconciler: 3 IIIF region requests (https://gallica.bnf.fr/iiif/ark:/12148/btv1b90075058/fN/<region>/max/0/native.jpg), 2 s apart, descriptive User-Agent, all HTTP 200"
+  "native_fetch": "24 Sept 2026, reconciler: 3 IIIF region requests (https://gallica.bnf.fr/iiif/ark:/12148/btv1b90075058/fN/<region>/max/0/native.jpg), 2 s apart, descriptive User-Agent, all HTTP 200",
+  "extra_region_crops": {
+    "note": "24 Sept 2026, extra-region worker. Line crops for the ~280-300 cipher signs the reconciler flagged as never transcribed (NOTES.md 'Coverage gap'). Cut from the native-region images already on disk (f8_native_region.jpg, f9_native_region.jpg) -- no new fetch. Pixel boxes are (left,top,right,bottom) in that native-region image's own coordinates, before the resize noted per file.",
+    "fetch": "0 new requests (crops only, from images already on disk)",
+    "crops": [
+      {
+        "file": "f8_left_L1.jpg",
+        "source": "f8_native_region.jpg",
+        "box": [0, 1500, 2850, 1760],
+        "resized_from_width": 2850,
+        "content": "canvas 8, left page: 1st of 4 untranscribed dense cipher lines, directly above 'il cardinale nostro fratello nenira...'"
+      },
+      {
+        "file": "f8_left_L2.jpg",
+        "source": "f8_native_region.jpg",
+        "box": [0, 1760, 2850, 1970],
+        "resized_from_width": 2850,
+        "content": "canvas 8, left page: 2nd untranscribed line; mixed cipher with a clear tail ('et mi ...')"
+      },
+      {
+        "file": "f8_left_L3.jpg",
+        "source": "f8_native_region.jpg",
+        "box": [0, 1970, 2850, 2160],
+        "resized_from_width": 2850,
+        "content": "canvas 8, left page: 3rd untranscribed line"
+      },
+      {
+        "file": "f8_left_L4.jpg",
+        "source": "f8_native_region.jpg",
+        "box": [0, 2160, 2850, 2400],
+        "resized_from_width": 2850,
+        "content": "canvas 8, left page: 4th (last) untranscribed line, immediately followed by the clear line 'il cardinale nostro fratello nenira in qua et p qua...'"
+      },
+      {
+        "file": "f8_right_L12.jpg",
+        "source": "f8_native_region.jpg",
+        "box": [2900, 2500, 6485, 2900],
+        "resized_from_width": 3585,
+        "content": "canvas 8, right page: the line below the existing f8_L11 (the reconciler's 'twelfth cipher line'), ending in a carried '184' written below the line"
+      },
+      {
+        "file": "f9_top_L1.jpg",
+        "source": "f9_native_region.jpg",
+        "box": [0, 520, 2955, 800],
+        "resized_from_width": 2955,
+        "content": "canvas 9, left page: 1st of 3 untranscribed dense cipher lines at the top of the page, above the clear-Italian block that leads into the already-transcribed f9_L6; mixed with a clear 'et mi'"
+      },
+      {
+        "file": "f9_top_L2.jpg",
+        "source": "f9_native_region.jpg",
+        "box": [0, 800, 2955, 1080],
+        "resized_from_width": 2955,
+        "content": "canvas 9, left page: 2nd untranscribed top line"
+      },
+      {
+        "file": "f9_top_L3.jpg",
+        "source": "f9_native_region.jpg",
+        "box": [0, 1080, 2955, 1360],
+        "resized_from_width": 2955,
+        "content": "canvas 9, left page: 3rd untranscribed top line; mixed cipher with a clear tail ('mi suo... Dio facia')"
+      }
+    ],
+    "count_correction": "NOTES.md 'Coverage gap' estimated about 4 lines at canvas 9 left top; on inspection at native resolution it is 3 dense cipher lines (f9_top_L1-L3), not 4 -- the two clear lines immediately above them were miscounted in the earlier estimate. Canvas 8 left page is confirmed at 4 lines (f8_left_L1-L4) as estimated."
+  }
 }
