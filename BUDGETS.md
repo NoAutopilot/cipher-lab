@@ -96,3 +96,5 @@ still reads in the online viewer only and never downloads. Review at the end of 
 keep; the cloud still cannot reach JSTOR at all.
 
 **Owner, 24 Sept 2026 18:48 UTC (to parent 7b): "we want to keep chasing momentum."** Seven-day window still `allowed_warning` (resets Sat 26 Sept 13:00 UTC). Restarted LANE R5 (Opus, cap $60, 6 workers) and LANE N4 (Opus, cap $40, 4 Sonnet workers) plus one Sonnet board worker ($6). Same stop rule: `rejected` on any session halts every lane and the parent re-arms at the reset. Parent 7b own usage at 18:50: about $4.
+
+**Owner, 24 Sept 2026 20:14 UTC:** usage is not a concern ("I'm not using API credits"); physical copy orders stay documented for later review. Parent raised LANE R5 to $100 (Salviati f.55v-f.57v bought at about $9.4 a leaf) and LANE N4 to $60. Stop rule unchanged: `rejected` on any session halts every lane.
