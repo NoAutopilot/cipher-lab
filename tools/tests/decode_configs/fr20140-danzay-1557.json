@@ -1,0 +1,12 @@
+{"target": "ciphers/fr20140-danzay-1557",
+ "note": "Reproduces fr20140-danzay-1557/decode.py (f.35 and f.36r line 1) as of 24 Sept 2026.",
+ "jobs": [
+  {"ciphertext": "ciphertext.txt", "reading": "reading.txt", "tokens": "reading_tokens.tsv"},
+  {"ciphertext": "ciphertext_f36.tsv", "reading": "reading_f36.txt", "tokens": "reading_tokens_f36.tsv"}
+ ],
+ "defaults": {"format": "tsv", "style": "spaced", "uncertain_conf": ["M"], "unknown_values": [], "unkeyed_value": "",
+   "word_values": ["le", "et", "luy", "son?", "le Roy de Dannemarch"], "include_clear": true,
+   "header": ["# Mechanical reading of {name} with key.tsv (decode.py). Nulls dropped; [code] = unkeyed sign;",
+              "# CAPS = clear-hand words in the letter; T and hk (keyed twice by Tomokiyo) shown as a and u; <w> = his word signs."],
+   "token_columns": [["line","line"],["pos","pos"],["sign","raw"],["value","value"],["grade","grade"]]}
+}
