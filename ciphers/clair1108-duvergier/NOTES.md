@@ -1,5 +1,7 @@
 partial
 
+Novelty: **N0** for letters A (26 Mar 1696) and B (fol.261v-262r), decipherment on the leaf; nine groups of B unread. See AUDIT.md (Verifier V1, 24 Sept 2026).
+
 # "Du Vergier", several original ciphered letters, BnF Clairambault 1108
 
 QUEUE row: M19 (sources/solver-diffs — "Third pass, 24 September 2026 (M17-M21)" section of QUEUE.md).
@@ -74,6 +76,8 @@ from scratch.
 ## Verdict
 
 **Open.** No published plaintext, decipherment, or key found in six sources for "Du Vergier"/Clairambault 1108.
+[**Verifier V1, 24 Sept 2026:** the item is cited by folio in print: Boislisle, Saint-Simon III (1879) p.57 n.1; Mancel 1903 p.130 n.3;
+La Roncière VI (1909) p.216. Its deciphered text was not found in print. See AUDIT.md.]
 Unlike M17, no external published key was located either -- this is a genuine, unaddressed cryptanalysis (or,
 if the apparent interlinear marks on f251 turn out to be a real gloss, partial-recovery) candidate. Concrete
 next steps for a follow-on worker, not attempted here: (1) fetch a clean high-resolution crop of f251's left
@@ -137,6 +141,9 @@ considered ruled out by content, not just unconfirmed. Confidence: strong circum
 web search, not yet cross-checked against an archival or scholarly source naming this specific ciphered
 correspondence — **do not repeat as a settled identification** without that check.
 
+[**Verifier V1, 24 Sept 2026:** this paragraph is about the sender's own printed works, not the recipient's. Identification now rests on
+print: Depping IV p.772 n. and Mancel 1903 pp.130-134 name Vergier as Pontchartrain's observer at Calais in 1696, and
+the recipient is Jérôme de Pontchartrain, the son (letter B's gloss "M vostre Pere"; Depping IV p.773 n. "mon père et moy").]
 **Recipient's printed material, not yet checked (next step):** "Œuvres diverses de Mr Vergier, commissaire de
 la marine" (an 18th-c. printed edition of his poetic works, surfaced via web search, seen listed on a rare-book
 dealer page — not yet located on Gallica/Google Books/HathiTrust) may contain some of his verse epistles to
@@ -159,6 +166,8 @@ novelty wording, no attempt to pin the exact folio where the Du Vergier item end
 
 ## Key leads and print check (24 Sept 2026)
 
+[**Verifier V1, 24 Sept 2026:** "no printed edition found anywhere" below is too strong: Pontchartrain's side is printed (Depping IV
+pp.772-773 n., 12 Mar 1696; Mancel 1903 pp.131-134, 25 Feb-28 Mar 1696) and the item itself is cited by folio. See AUDIT.md.]
 **Verdict: open, no key lead.** No published key, decipherment, or printed edition found anywhere for the
 Marine/Pontchartrain/Dunkerque nomenclator correspondence of the 1690s, and specifically none for Vergier's
 letters. This is a cryptanalytic-only target for now: no external key to warm-start against.
@@ -198,7 +207,9 @@ search, both organized by a different axis than the Marine department's own inte
   sciences (t.4) — and by intendants and provincial governors' correspondence with the king's cabinet and
   secretaries of state. Dunkerque appears only via its admiralty lieutenant-general (Nacquart) and the
   intendant of maritime Flanders (Robert) writing to Colbert in the 1660s-70s, a generation before Vergier;
-  no volume covers Marine-department internal correspondence of the 1690s.
+  no volume covers Marine-department internal correspondence of the 1690s. [**Verifier V1, 24 Sept 2026:** wrong for this exchange: t.4
+  pp.772-773 prints in a footnote Pontchartrain (the son) to Vergier, 12 Mar 1696, from the Marine dispatch register,
+  found by grepping the IA full text for "Vergier".]
 - **Boislisle, *Correspondance des contrôleurs généraux des finances avec les intendants des provinces*** (3
   vols, 1874-97): scoped to the Contrôle général/intendants of finance, not the Marine secretariat; one
   incidental 1715 Dunkerque reference (Chamillart) turned up, two decades after and unrelated to Vergier.

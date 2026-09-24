@@ -1319,9 +1319,9 @@
   {
    "date": "24 Sept 2026",
    "kind": "recovery",
-   "title": "Du Vergier (Marine, Dunkerque) to Pontchartrain, 26 Mar 1696 and a second letter (BnF Clairambault 1108 fol.249v-250r, 262): key and reading from the interlinear decipherment",
-   "grade": "C 584, M 82, U 1 of 667 groups (no H: no key sheet); novelty not yet classified",
-   "line": "The words written above the numeral groups in a second hand are a contemporary decipherment; aligning them gives key_1696 (129 codes, name codes 700-725 for Myddleton, the Prince of Orange, the King of England; pairing 0.926 vs shuffled max 0.492) and a reading decode_key.py regenerates. fol.249r not yet transcribed.",
+   "title": "Vergier to Jérôme de Pontchartrain, Boulogne, 26 Mar 1696 and a second letter (BnF Clairambault 1108 fol.249-250, 261v-262r): key and reading from the interlinear decipherment",
+   "grade": "C 584, M 82, U 1 of 667 groups (no H: no key sheet); novelty N0 (AUDIT.md)",
+   "line": "N0: both letters carry an interlinear decipherment on the leaf, in a second hand (probably contemporary), except nine groups on fol.262r that nothing reads; aligning it gives key_1696 (129 codes, grade C) that regenerates the reading. The folios are cited in print since 1879 (Boislisle's Saint-Simon, Mancel 1903); the deciphered text was not found in print. fol.249r is show-through, no cipher.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1108-duvergier"
   },
   {
