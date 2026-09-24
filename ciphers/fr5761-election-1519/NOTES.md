@@ -190,3 +190,50 @@ atlas.png,atlas_part1.png,atlas_part2.png,sheet_signs_00..04.png,sheet_marks.png
 LANE R4 orchestrator, 24 Sept 2026 15:47 UTC: worker D (session_01KvtMK21Ab1rzhyobtgTdv7) was interrupted at 15:45 at $8.69 against a $5 cap,
 after the atlas and blind atlas pass A of f.104 (key_passA_atlas.tsv, 38 rows) were pushed; its pass B ran in a subagent and was lost.
 Next: brief lane-r4-h (pass B with the atlas, reconcile, key.tsv).
+
+## Pass B and key f.104 (24 Sept 2026, LANE R4 H)
+
+Pass B (`key_passB_atlas.tsv`, 38 rows: 23 alphabet letters a-x plus an unresolved y/z, 4 Nulle marks, 10
+correspondent-code lines), written blind (key_passA_atlas.tsv and the old key_passB.tsv were not opened until
+after this file was committed and pushed), from the f104 line crops (`images/f104_L01..L14.jpg`) plus the leaf
+overview (`images/f104_lines_debug.jpg`) and the shared atlas legend (`glyphs/atlas_part1.png`,
+`atlas_part2.png`, `glyphs/atlas.tsv`). Method differs from a from-scratch-by-eye pass: for each f104 sign
+position, `glyphs/signs.tsv` + `glyphs/clusters.tsv` + `glyphs/labels.json` (the atlas's own per-position
+cluster-to-K-code mapping, already built and verified against f104 by worker D) was read to get the mechanical
+K-code at that position, then checked by eye against the crop and the atlas legend image before being written to
+the row; a handful of positions were re-judged by eye where the mechanical code looked wrong (e.g. Nulle mark 2,
+flagged low-confidence against K1's known contamination). Correspondent names were read fresh from the crops
+without reference to the catalogue's correspondent list, except where noted as a plausibility cross-check against
+NOTES.md's Source section (Trèves, Brandebourg, Saxe -- duke of Saxony, Francisque). Two correspondent names
+(lines 10 and 12) were not confidently read and are flagged `[name unclear]`.
+
+**Reconciliation** (`recon_key/reconcile_key.py key_passA_atlas.tsv key_passB_atlas.tsv --out-dir recon_key`,
+joins by (line, plain) with a positional fallback for the four same-labelled Nulle rows and a line-number
+fallback for correspondent rows whose plain-text reading differs letter-for-letter between the two passes):
+**36 rows paired, 1 agreeing on a non-blank sign_code (2.8%). Gate (>=80%) FAILS.** `recon_key/agreement.tsv`,
+`recon_key/disagreements.tsv` committed.
+
+**Confusion pairs / what actually happened**: this was not primarily a disagreement about which sign sits at a
+position -- both passes read essentially the same line structure (23-ish alphabet letters, a 4-mark Nulle row,
+10 correspondent-code lines, "Le conte palatin" / Brandebourg / Hongrie / Trèves-Treues / Poulongne-Poulougne /
+Maguence-Mugance / a line-12 entry with three small repeated comma/loop marks that pass A reads as "&c." after
+"Catholicque" and this pass reads as two of three loops partially matching cluster-19-family K-codes). The
+disagreement is almost entirely in the **sign_code column**: pass A assigned codes from a careful per-position
+by-eye judgement against the atlas legend and very often concluded no acceptable match ("UNLISTED", used for
+about half the alphabet row and several correspondent codes, e.g. Trèves, France/Lempereur, Catholicque), while
+this pass mostly took the mechanical K-code already sitting in `glyphs/labels.json` for that sign position,
+which frequently disagreed with pass A's independent visual read even where both passes agree a sign is present
+(e.g. plain `a`: A=UNLISTED/"asymmetric cross" vs B=K25; `e`: A=K24/"thin plus" vs B=K35; `x`: A=K23 vs B=K31;
+Brandebourg: A=K19 vs B=K22; Hongrie: A=K17 vs B=K20). Where both passes independently found no atlas code at
+all the row still counts as a disagreement here (differing empty/near-empty judgements are not a confirmed
+match), which is conservative but appropriate given the gate is meant to catch exactly this kind of code-level
+uncertainty. **Lesson for a successor**: reading the K-code straight from `labels.json` at a signs.tsv position
+is not an independent check of the atlas -- it just re-states the atlas's own (admittedly imperfect, per worker
+D's "Known limitation" section above) mechanical cluster labelling, and diverges sharply from a careful
+per-position by-eye read. A real pass B/C on this leaf's alphabet row needs to judge each of the ~21-23 sign
+shapes fresh against the crop, the way pass A did, not consult signs.tsv/clusters.tsv/labels.json at all except
+as a legend of named shapes to choose among.
+
+Per brief: gate fails, so no key.tsv and no settling pass this round. Files: `key_passB_atlas.tsv`,
+`recon_key/reconcile_key.py`, `recon_key/agreement.tsv`, `recon_key/disagreements.tsv`. Requests: 0 hosts (disk
+only). Cost: see ROOM.md done line / session metadata.
