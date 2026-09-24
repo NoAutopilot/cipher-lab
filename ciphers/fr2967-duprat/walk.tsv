@@ -32,3 +32,25 @@ canvas	stamped_page	content	date	heading
 31	-	blank	-	mostly blank, faint offset text only
 32	30	clear letter	-	"Lettre Escrite au Roy francois premier par Le Marechal De Chastillon faict Mareschal de France par Le Roy Louis douziesme..." (new title + text)
 33	-	clear letter	-	continuation of Chastillon (Maréchal) letter
+34	-	clear letter	-	continuation of Chastillon (Maréchal) letter, signed
+35	-	clear letter	-	continuation of Chastillon letter
+36	26	clear letter	-	continuation of Chastillon letter
+37	-	clear letter	-	"Lettre Escrite au Roy francois premier par Ladmiral de Bonnivet" (new title + text)
+38	-	clear letter	-	continuation of Bonnivet (Admiral) letter
+39	-	clear letter	-	continuation of Bonnivet letter, signed
+40	3/39	clear letter	-	continuation of Bonnivet letter
+41	10	clear letter	-	"Lettre Escrite au Roy francois premier par Le Marechal De Chastillon" (repeat/short title + text)
+42	11	clear letter	-	"Lettre Escrite au Roy francois premier par Ladmiral de Bonnivet" (new item, title + folded address-leaf image "Au Roy nre souuerain seigneur" + text)
+43	12	clear letter	-	continuation/close of Bonnivet letter, signed
+44	-	blank	-	blank leaf, faint offset of next title only
+45	-	blank	-	mostly blank, faint offset of next title only
+46	45	clear letter	-	"Lettre Escrite au Roy francois premier par Lovis De La Fremoille qui a Este General d'armee Diverses fois en Italie" (new title + text)
+47	46	clear letter	-	continuation of La Trémoille letter, signed
+48	47	clear letter	-	"Lettre du Roy francois premier Escrite a Monsieur Ladmiral De Bonnivet" (letter FROM the king to Bonnivet; dense secretary hand, no cipher symbols)
+49	48	blank	-	mostly blank, signatures "Francoys" / "Loblet"
+50	49	blank	-	mostly blank, faint offset of next title only
+51	50	clear letter	-	"Lettre Escrite au Roy francois premier par Ladmiral de Bouniuet" (repeat item, new title + text)
+52	51	clear letter	-	continuation
+53	52	clear letter	-	continuation/close, signed "Bonnivet"
+54	53	blank	-	mostly blank, faint offset of next title; small "Au Roy nre souuerain seigneur" address note
+55	54	clear letter	-	"Lettre Escrite au Roy francois premier par Le Chancelier du prat, De Selue premier president au parlement de paris, et Gedouin secretaire d'Estat, Commissaires pour la paix qui se traittoit a Calais, Entre France et Espagne dont estoit entremetteur Thomas Wolsey Cardinal d'Yorc au nom du pape Leon dixiesme" -- QUEUE's Duprat/Selve/Gedoyn Calais item, but titled "Lettre Escrite..." not "Dechiffrement...": a DIFFERENT item from the Fol.76/canvas 77 "Dechiffrement" title seen in the prior pass; plain clear prose, no cipher symbols
