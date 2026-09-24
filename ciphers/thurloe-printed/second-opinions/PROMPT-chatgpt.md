@@ -17,7 +17,9 @@ THE ITEM
 - Key: rebuilt from Birch's printed decipherments of Stamford's later letters (vol. 3 pp.274-280 and 337-340). Tomokiyo
   (cryptiana.web.fc2.com/code/thurloe.htm, "William Stamford (1655)", image stamford.jpg) publishes the same letter table.
   Ours agrees with his on every value that occurs in this letter.
-- Our reading of the cipher runs, in the letter's spelling: "it is come to my knowledge by meere chance and without the
+- Our reading of the cipher runs, normalised (the mechanical output has defects: "a plot hath been a hatching" is
+  "apothhathaibeeneahtching", "irreconciliable with them as long as I live" is "irreconciiablk(w?)iththemaslongaailite";
+  [England] (code 67) and "the cavaliers" (code 153) are each read from one occurrence only, grade M): "it is come to my knowledge by meere chance and without the
   least iniunction of secrecy, the person I got it from taking it for granted upon his meeting mee as hee thought
   stealing out of Whitehall [England] that I was not only perticularly informed of the mater but also employed in it";
   "the absolute breaking of a plot hath been a hatching by the whole partie of [143]"; "render my selfe irreconciliable
@@ -35,8 +37,9 @@ Akkerman, Invisible Agents; Macray's Rawlinson catalogue; the Bodleian's online 
 Tomokiyo's pages; the GitHub repositories dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers; Internet Archive full text.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
-- Alan Marshall, "Cromwell's 'spymaster'? John Thurloe and rethinking early modern intelligence", The Seventeenth Century
-  35:1 (doi 10.1080/0268117X.2018.1524786), his Intelligence and Espionage in the Reign of Charles II, and his 2023 chapter on Thurloe.
+- Timothy Noel Peacock, "Cromwell's 'spymaster'? John Thurloe and rethinking early modern intelligence", The Seventeenth
+  Century 35:1 (2020) pp.3-30 (doi 10.1080/0268117X.2018.1524786); Alan Marshall, Intelligence and Espionage in the Reign of
+  Charles II, and his 2023 chapter on Thurloe.
 - Printed Clarendon State Papers vol. 3 (1786), March-April 1655; Firth, "Cromwell and the Insurrection of 1655", EHR 3 (1888)
   and 4 (1889); Woolrych, Penruddock's Rising 1655 (1955); Thurloe biographies; theses on Thurloe's intelligence network.
 - Who William Stamford was (any biography, ODNB, History of Parliament, or Kelsey's papers), and whether any study quotes this letter's plot
@@ -72,3 +75,5 @@ WHAT TO PUT IN THE FILE
    the source that shows it.
 4. Leads: archives, editions or scholars we should check, with a one-line reason each.
 5. Confidence: one sentence on how sure you are that nothing prior exists, and what would change it.
+
+<!-- Corrected 24 Sept 2026 by verifier V3a after SO-THURLOE-P4 (AUDIT.md): Peacock not Marshall; defects and M grades stated. -->

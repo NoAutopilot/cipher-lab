@@ -325,7 +325,7 @@ printed decipherments of Stamford's letters of 20 and 30 March 1655 (`pool_1654/
 | (e) IA full text (be-api fts) | searched | 10 global queries: "meere chance" (early printed books only), "injunction of secrecy" Stamford, "irreconcilable with them as long as I live" (0), "plot hath been a hatching" (0), "William Stamford" Calais (Staffordshire families, unrelated), "Stamford" Calais Thurloe 1655, "a thousand arms" Calais 1655 plot (0), "the whole party of the cavaliers" 1655 (0), "more people are engaged then in any of the former" (0), "Stamford" "col. Kelsey" Calais (CSPD 1651 index "Stamford, Wm.", unrelated). 11 in-item queries (Macray x4, Underdown x3, Smith x2, Akkerman x2) |
 | (e) HathiTrust | not searched | not a host of this brief |
 | (f) Solver repos, cipher blogs | from s.14, and Tomokiyo re-read | Tomokiyo, thurloe.htm #Stamford (local mirror), re-read: he builds his key image `stamford.jpg` from "13 March NS (Page 187 and Page 189), 30 March (Page 274), and 3 April (Page 340)". He lists codes 65, 67, 81, 82, 130, 158 and the sign. Every one of them also occurs in P5+P6/P7 (`key_stamford.tsv` has 65, 67, 81, 82, 130 and 158 from their printed decipherments), so nothing on his page shows a value read only from P4. His one P4 quotation ("if this correspondence continue ... being very imperfect") is P4's clear text, not cipher. His image was not seen: it is not on disk, and cryptiana.web.fc2.com was not a host of this brief. **A prior modern decipherment of P4 by Tomokiyo is therefore not excluded**: he used P4 as a source for his key, so he may have worked through its cipher, but no plaintext of it is printed on his page. DECODE: not searched for Stamford (login is one per session and belongs to another worker) |
-| (g) Scholarship | partly | OpenAlex 429 (x2), Semantic Scholar 429 (x2), CrossRef 1x429 and 1 answer: Penruddock (ODNB), "Colonel John Penruddock (1655)" (2024 chapter), Marshall, "John Thurloe and the Cromwellian regime" (2023 chapter) and "Cromwell's 'spymaster'?" (INS 2018), all unread. HAL 0 (x2). JSTOR: 3 rows queued in JSTOR-QUEUE.tsv |
+| (g) Scholarship | partly | OpenAlex 429 (x2), Semantic Scholar 429 (x2), CrossRef 1x429 and 1 answer: Penruddock (ODNB), "Colonel John Penruddock (1655)" (2024 chapter), Marshall, "John Thurloe and the Cromwellian regime" (2023 chapter) and "Cromwell's 'spymaster'?" (INS 2018) [corrected 24 Sept 2026, V3a: the "spymaster" article is by Timothy Noel Peacock, *The Seventeenth Century* 35:1 (2020), pp.3-30, per CrossRef], all unread. HAL 0 (x2). JSTOR: 3 rows queued in JSTOR-QUEUE.tsv |
 | tools/print_check.py | not run | the folder has no phrases.txt/sources.tsv, and building them is outside this brief's files |
 
 Requests this session: british-history.ac.uk 2, be-api.us.archive.org 21, www.googleapis.com 12, api.openalex.org 2
@@ -339,7 +339,7 @@ at least 2 s apart, with a descriptive User-Agent. No archive.org downloads, no 
 | P4 Stamford, 13 March 1655 | **N3** | Only for the clear text and the endorsement's summary (Birch 1742; BHO). No plaintext of the cipher runs was located in print or online | Not located. Not excluded for (i) a contemporary decipherment in Bodleian MS Rawl. A. 24 (the endorsement shows the office understood the cipher) or (ii) Tomokiyo's unpublished working behind `stamford.jpg`, which cites this letter as a source | Birch and BHO read directly. Phrase searches on IA and Google Books. Principal Penruddock study (Underdown) in-item | medium |
 
 **Why not N4:** the holding archive (Rawl. A. 24 ff.73-76) is unchecked, and Tomokiyo's key image is unseen. Gardiner vol. 3,
-Marshall 2018/2023 and the 2024 Penruddock chapter are unread. OpenAlex and Semantic Scholar did not answer. The first two are the
+Peacock 2018/20 [formerly given as Marshall], Marshall 2023 and the 2024 Penruddock chapter are unread. OpenAlex and Semantic Scholar did not answer. The first two are the
 likeliest places for a prior decipherment, and each is one short job: a Bodleian catalogue/digital lookup or copy
 request for MS Rawl. A. 24 fols 73-76, and one fetch of cryptiana's `stamford.jpg` compared against `key_stamford.tsv`
 for any value that occurs only in P4. **Why not N1/N2:** no print of the cipher plaintext was found anywhere.
@@ -381,7 +381,7 @@ plaintext or a decipherment in print or online. I did not decode.
 | (f) HathiTrust | **unreachable** | babel full-text search answered 403 (one request, then stopped). The Bibliographic and EF APIs cannot phrase-search, so they were not used. |
 | (f) British History Online | searched by V2; site search 302 | V2 fetched BHO vol. 3 pp.185-195 (no decipherment). My one site-search request redirected, and I did not follow it. |
 | (g) Solver repositories | searched | Fresh shallow clones: dbourdeau/cyphersolver at 9a3f326 (24 Sept 2026) and aaymeloglu/unsolved-ciphers at 2495c45 (23 Sept 2026), grepped for Stamford and Thurloe. Bourdeau's `thurloe/` uses `stamford.jpg` only as one of the period keys tried against *other* Thurloe intercepts (`apply_keys_out.txt`, all fail). There is no P4 reading. Aymeloglu has no Stamford, and its Thurloe item is the unrelated Vande Perre 1653. Cited only, no code copied. |
-| (h) Open indexes | partly | CrossRef "Thurloe Stamford Calais 1655 cipher": ODNB Thurloe, a 2024 Routledge chapter "The Examinations of Richard Moone ... (27 August 1655)" (not this letter) and unrelated items. HAL `Thurloe AND (Stamford OR chiffre OR cipher)`: 0. **OpenAlex 429 and Semantic Scholar 429** (one request each, stopped, the same as V2). WebSearch (4 queries, including `"Stamford" Calais 1655 Thurloe cipher plot Kelsey` and a site search on archives.bodleian.ox.ac.uk): no print of P4's decipherment. It surfaced Marshall, "Cromwell's 'spymaster'? John Thurloe and rethinking early modern intelligence", *The Seventeenth Century* 35:1 (2020), doi 10.1080/0268117X.2018.1524786, **unread** (paywalled). JSTOR: 2 rows added to JSTOR-QUEUE.tsv. |
+| (h) Open indexes | partly | CrossRef "Thurloe Stamford Calais 1655 cipher": ODNB Thurloe, a 2024 Routledge chapter "The Examinations of Richard Moone ... (27 August 1655)" (not this letter) and unrelated items. HAL `Thurloe AND (Stamford OR chiffre OR cipher)`: 0. **OpenAlex 429 and Semantic Scholar 429** (one request each, stopped, the same as V2). WebSearch (4 queries, including `"Stamford" Calais 1655 Thurloe cipher plot Kelsey` and a site search on archives.bodleian.ox.ac.uk): no print of P4's decipherment. It surfaced [Peacock, not Marshall: corrected 24 Sept 2026, V3a, CrossRef author field] "Cromwell's 'spymaster'? John Thurloe and rethinking early modern intelligence", *The Seventeenth Century* 35:1 (2020), doi 10.1080/0268117X.2018.1524786, **unread** (paywalled). JSTOR: 2 rows added to JSTOR-QUEUE.tsv. |
 | Google Books | not mine | Handed to LANE V in ROOM.md at 06:17 UTC with 8 phrase queries. Results pending. V2's 12 queries stand. |
 | DECODE | not searched | One login per session belongs to other workers. |
 
@@ -399,7 +399,7 @@ credentials.
 
 **Why N3 and not lower:** no print, page or repository carrying P4's cipher plaintext was found. Tomokiyo's table does not
 show P4-only values. Every edition that a Stamford letter might plausibly be calendared in gives 0 for him.
-**Why not N4 yet:** (1) Google Books is LANE V's and pending. (2) The one directly relevant modern study, Marshall 2020 (*Seventeenth
+**Why not N4 yet:** (1) Google Books is LANE V's and pending. (2) The one directly relevant modern study, Peacock [formerly given as Marshall] 2020 (*Seventeenth
 Century* 35:1), and Marshall's 2023 chapter are unread, and OpenAlex and Semantic Scholar did not answer twice now. (3) HathiTrust full
 text is unreachable. (4) The 1786 printed *Clarendon State Papers* vol. 3 has not been searched. (5) DECODE has not been searched. A contemporary
 decipherment on the Rawl. A. 24 leaf would be internal or unpublished work, which N4 does not exclude, so the MS is **not** an N4 blocker. It is the
@@ -430,7 +430,7 @@ stretch" now reads "stretch added in this pass"). No other sentence in `ciphers/
 ### Toward N4 (what remains)
 
 1. LANE V's Google Books results for the 8 queries in ROOM.md (06:17 UTC).
-2. Read Marshall 2020 (*Seventeenth Century* 35:1, doi 10.1080/0268117X.2018.1524786) and Marshall 2023 ("John Thurloe and the
+2. Read Peacock [formerly given as Marshall] 2020 (*Seventeenth Century* 35:1, doi 10.1080/0268117X.2018.1524786) and Marshall 2023 ("John Thurloe and the
    Cromwellian regime") for Stamford or Kelsey. JSTOR/T&F rows are queued.
 3. OpenAlex and Semantic Scholar, once each, after the rate limit clears. Query: `Thurloe Stamford Calais 1655`.
 4. The 1786 *Clarendon State Papers* vol. 3 (Google Books or HathiTrust): "Stamford" in March-April 1655.
@@ -534,7 +534,7 @@ with no connection to 1655. None of these four titles is a Thurloe edition, a St
 correspondence, or a cryptology reference. I read no snippet that quotes P4's plaintext or names this letter.
 
 **Effect on the class:** none from this pass. Toward N4 item 1 is now answered: Google Books gives no prior print
-of P4's cipher plaintext. N4 still waits on items 2-6 of "Toward N4 (what remains)" (Marshall 2020/2023, OpenAlex/
+of P4's cipher plaintext. N4 still waits on items 2-6 of "Toward N4 (what remains)" (Peacock 2020 [formerly given as Marshall], Marshall 2023, OpenAlex/
 Semantic Scholar, the 1786 Clarendon vol. 3, DECODE, and the Bodleian leaf image).
 
 Requests this session: www.googleapis.com 10 (8 base queries + 2 `filter=full` re-runs on the two queries with
@@ -581,7 +581,7 @@ without any other audit.
 | Google Books phrase search | yes (template family e) | yes: V2's 12 queries plus LANE V's 8; no P4 content | V2 s.2 (e); Google Books section |
 | IA full text | yes (template family e) | yes: V2's 10 global and 11 in-item queries, and the second audit's 6 global queries | V2 s.2 (e); second audit (f) |
 | HathiTrust whole-library full text | no for N4: a search engine, not an edition or catalogue; every edition above is covered by other routes (Eckert precedent) | unreachable (403) | second audit (f) |
-| Scholarship: Marshall 2020 and 2023, JSTOR, OpenAlex, Semantic Scholar | no for N4: outreach gate 2 (Eckert precedent; CLAUDE.md: a queued JSTOR row never blocks N3 or N4) | CrossRef and HAL yes; OpenAlex and S2 429 all day; Marshall unread; JSTOR rows queued | V2 s.2 (g); second audit (h); worker D item 3 |
+| Scholarship: Peacock 2020 [formerly given as Marshall], Marshall 2023, JSTOR, OpenAlex, Semantic Scholar | no for N4: outreach gate 2 (Eckert precedent; CLAUDE.md: a queued JSTOR row never blocks N3 or N4) | CrossRef and HAL yes; OpenAlex and S2 429 all day; Marshall unread; JSTOR rows queued | V2 s.2 (g); second audit (h); worker D item 3 |
 
 ### 2. This session's search log
 
@@ -682,7 +682,7 @@ LANE W worker J (Opus), a fresh verifier session, parent LANE W orchestrator ses
 1. s.3's condition: a grep of DECODE's Decrypted list (fresh crawl) and its Non-decrypted and Partially decrypted list for Bodleian, Oxford or Rawl. LANE N ran it over all 2546 rows (1360 + 1186) and got 0 hits, so no Rawl. A. 24 record exists. It also grepped for Stamford and Thurloe. That meets the rule as written.
 2. The author-field caveat is a real gap for a letter that has to be found by its sender, because a Stamford item held somewhere else (a copy, or a BL leaf) would not show up in the location fields. I closed it from the cited snapshot (github.com/aaymeloglu/unsolved-ciphers, `catalogue/decode-catalog.csv`, shallow clone of commit 2495c45 of 23 Sept 2026; 10106 rows, keys included; cited only, nothing copied). c_author gives 0 for `stamford`, `stanford`, `kelsey` and `rawl`. c_holder gives 0 for `bodleian`. The 14 `oxford` hits are royalist 1642-46 senders "at Oxford" in BL MSS. `thurloe` has one hit, id 4880 (Dublin 1657, BL Add MS 4166), which is unrelated. `calais` has one hit, id 2734 (Charost, 1673).
 3. The one near-miss is id 4899: a 3-page **Key** (status N/A), BL Add MS 4166 f.120, dated 1655-1668, author "W". It is not a decipherment of P4, and it is not the Rawlinson leaf. A key cannot hold P4's plaintext, and the safe sentence already credits the system's prior reconstruction (Tomokiyo), so it does not bear on N4. Suggestion only, for a solver, not a gate: check whether "W" is Stamford's table.
-4. What is left is not excluded, and N4 does not require excluding it: DECODE records added after the snapshot that sit outside Oxford and carry a Stamford author field, the unseen MS leaf, JSTOR rows and Marshall. All of these are unpublished or internal work, or outreach gate 2 items.
+4. What is left is not excluded, and N4 does not require excluding it: DECODE records added after the snapshot that sit outside Oxford and carry a Stamford author field, the unseen MS leaf, JSTOR rows and Peacock 2020 / Marshall 2023. All of these are unpublished or internal work, or outreach gate 2 items.
 5. Decision: **P4 is N4.** Prior plaintext: none located. Prior decipherment of this letter: none located. The system was deciphered in 1655 and has been reconstructed by Tomokiyo.
 
 **Safe sentence (s.3, verbatim):**
@@ -691,3 +691,39 @@ LANE W worker J (Opus), a fresh verifier session, parent LANE W orchestrator ses
 **Unsafe at any class (s.3):** "we broke / cracked / solved Stamford's cipher", "first decipherment" without the qualifier "no prior decipherment located", "previously unread", "unpublished", "no decipherment exists".
 
 Requests: github.com 1 shallow clone. No DECODE requests, no logins.
+
+## Second opinion SO-THURLOE-P4 (ChatGPT, pull request 5), checked 24 Sept 2026, 16:33 UTC
+
+Verifier V3a (Opus, for LANE V4, session_017iueT2nBBNcQkKp8Se8pcP). Input: `second-opinions/chatgpt-2026-09-24.md`
+("GPT-6 (Codex)", copied from branch `second-opinion/SO-THURLOE-P4`, PR 5, unmerged). It finds no prior plaintext or
+decipherment of P4's cipher runs, corrects one author, and makes eight remarks on the reading and apparatus. No decoding.
+
+| # | claim | source checked | verdict | correction made |
+|---|---|---|---|---|
+| 1 | the letter is printed, Birch III pp.187-189, clear prose and numerals, no decipherment | s.1 and s.3 of the P4 audit; index.tsv P4 row | **right, already the basis of the class** (a print of the numerals, not of the plaintext) | none |
+| 2 | "Cromwell's 'spymaster'?", *The Seventeenth Century* 35:1 (2020) pp.3-30, online 13 Nov 2018, doi 10.1080/0268117X.2018.1524786, is by **Timothy Noel Peacock**, not Alan Marshall | CrossRef work record (author Peacock, Timothy Noel, Glasgow; vol 35, issue 1, pp.3-30; online 2018-11-13); Enlighten record eprints.gla.ac.uk/169120 (author Peacock; "Full text not currently available") | **right** | AUDIT.md (8 places, marked "formerly given as Marshall"), JSTOR-QUEUE.tsv row, PROMPT-chatgpt.md. Marshall's 2023 chapter keeps his name (not checked here). The article stays unread; its abstract (ports, Royalist agents) names no letter. Outreach gate 2 item, not an N4 family |
+| 3 | Firth, "Cromwell and the Insurrection of 1655", EHR IV (XV) 525-535 (1889): located, unread | CrossRef: the exchange is Firth III.X 323-350 (1888), Palgrave III.XI 521-539 and III.XII 722-751 (1888), Firth IV.XIV 313-338 and IV.XV 525-535 (1889). IA full-text API on the five issues (`sim_english-historical-review_1888-04_3_10`, `_1888-07_3_11`, `_1888-10_3_12`, `_1889-04_4_14`, `_1889-07_4_15`), "Stamford": 0 hits, except IV.XIV (a 1190 massacre, unrelated); control "Penruddock" in III.X: hits in Firth's article | **right on the citation; family now closed at word level**: the Firth-Palgrave exchange never names Stamford | none needed; this row is the log |
+| 4 | the system's decipherment is prior (Birch pp.274-280; Tomokiyo), separate from this letter's | safe sentence (N4 set) already says so | **agrees** | none |
+| 5 | the prompt shows restored English where the mechanical text is defective ("apothhathaibeeneahtching", the irreconcilable passage) | `pool_1654/reading_P4.txt` l.26-28: `{apothhathaibeeneahtching}`, `{irreconciiablk(w?)iththemaslongaailite}` | **right** | PROMPT-chatgpt.md now shows both forms |
+| 6 | England (67) and cavaliers (153) are M, one alignment each | `key_stamford.tsv`: 67 england 1/1 M; 153 thecavaliers 1/1 M; reading prints `<england?>`, `<thecavaliers?>` | **right**; the reading marks them, the prompt did not | PROMPT-chatgpt.md states the M grades |
+| 7 | opening garble, p.188 layout, key votes as non-independent alignment evidence, entries 84 and 275 | reading header (block A image, block B dropped); key_stamford.tsv 84 "noticeofandalthough" 1/1 M, 275 "that" 1/1 M | **fair**; reading matters | logged as a solver suggestion in NOTES.md; reading unchanged |
+| 8 | recipient is not Thurloe: Macray says col. Kelsey, "your friend" is the Protector | AUDIT s.1 (Kelsey, Protector); **index.tsv P4 row said "unnamed ('your friend', i.e. Thurloe)"** | **right** (our index row contradicted our audit) | index.tsv P4 recipient corrected |
+| 9 | keep the paired date conventions distinct (13/3 March 1654/5) | prompt and AUDIT already give both N.S. day and the endorsement's double date | **agrees** | none |
+
+**Its leads.** (1) Peacock pp.3-30: unread, paywalled, queued (JSTOR row, now under his name). (2) Bodleian MS Rawl. A. 24
+ff.73, 76: already ASKS 30 (the leaf image). (3) later Stamford letters vs p.188 layout: solver suggestion. (4) Kelsey's
+papers, Stanford/Staunford variants: no edition of Kelsey is known (s.2 (b)); variants are a residual for a later phrase
+pass, non-blocking. (5) Firth's full exchange: closed above. (6) BL Add MS 4166 f.120 (DECODE 4899) vs Stamford's table:
+already a solver suggestion (N4 set, item 3).
+
+**Class.** No check found a prior print or decipherment of P4's cipher runs. **P4 stays N4** ("no prior decipherment
+located"); the N4 safe sentence stands. Other letters untouched.
+
+**Postmortem.** Two errors of ours: a scholarship lead carried under the wrong author from a search snippet through four
+sections, the JSTOR queue and the prompt (CrossRef's author field would have caught it in one request), and an index row
+that named Thurloe as recipient after the audit had established otherwise. The prompt also quoted restored English as
+the letter's spelling. Lesson: take an article's author from the DOI record, and quote a reading into a prompt in its
+mechanical form with the restoration beside it.
+
+Requests: api.crossref.org 4, archive.org 1 (advancedsearch), be-api.us.archive.org 8 (EHR full-text API, 1 control
+pair included), eprints.gla.ac.uk 1. No Google Books, no Gallica, no logins, no subagents.

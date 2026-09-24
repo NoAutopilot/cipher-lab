@@ -1828,3 +1828,7 @@ staged as changed). No edits to `align_stamford.py`, `index.tsv`, `ciphertext.tx
 any other letter's files. Requests: none -- disk only (archive.org 0, other hosts 0), reading the
 already-committed `P4/image_transcription.tsv` (worker I) and the gzipped djvu cache. No subagents,
 no logins, no anneal, no key changes. Well under the $5 cap.
+
+Suggestion (24 Sept 2026, verifier V3a, from SO-THURLOE-P4; not done): for P4, re-check p.188 line associations against the
+page image before any key change, and test the one-vote M entries 67 (england), 153 (thecavaliers), 84 and 275 against
+printed number boundaries in the later Stamford letters (AUDIT.md "Second opinion SO-THURLOE-P4").
