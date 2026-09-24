@@ -1,0 +1,28 @@
+# Mechanical reading of jan-van-nassau-1572-75 5200 p1 with key_1572.tsv (decode_key.py).
+# Nulls dropped; [code] = unkeyed sign or illegible mark; CAPS not used, w: clear-hand words kept as read.
+5200p2L01	a e r e e s QUE i l z [s:jupiter] [s:venus] OU i r [s:mark]
+5200p2L02	t u n b r u i t QUE l e [s:n]
+5200p2L03	e m y [s:jupiter] a u o i e s t e [s:venus] [s:mark] [s:saturn] u
+5200p2L04-L05	LEQUEL BRUIT QU'IL FUST FAICT FUT MAINTENU PAR LES OFFICIERS QUE PUISSENT LEURS PREMIERES ARMES ILS FURENT
+5200p2L06	MESMES M'EN PRIERENT QUI' e n l e u r
+5200p2L07	[s:jupiter] d o n a t s e u [s:venus] l e [s:mars]
+5200p2L08	k e n t QUATRE VINGT CINQ c e n t [s:jupiter] [s:jupiter]
+5200p2L09	f l o r i n s [s:mars] i e [s:jupiter] [s:saturn] s o r
+5200p2L10	t i [s:long-s] s e [s:saturn] AU RESTE
+5200p2L11	t o u [s:f] [s:mark] l e u r s [s:mars] [s:jupiter] g a
+5200p2L12	g e s DEPUIS QUE [s:jupiter] [s:mars] g u e a
+5200p2L13	d r e s [s:long-s] t r a e n ET AUTRES
+5200p2L14	u i LE e s [s:jupiter] DE NRE c o s t
+5200p2L15	d e g u e l d r e s ONT FAIT DE MESME
+5200p2L16	ET N'EUT [s:jupiter] [s:mars] l a [s:jupiter] u i LE l e
+5200p2L17	d [s:e] z u t p h e n t a r d
+5200p2L18	[s:jupiter] [s:mars] [s:jupiter] d e n s u y [s:u] r e l e u r
+5200p2L19	e x [s:e] m p l e [s:jupiter] [s:mars] [s:illegible] y
+5200p2L20	ET f u s [s:long-s] e a r [s:n] i [s:long-s] u e [s:jupiter] [s:mars] POUR
+5200p2L21	CE MESME JOUR QU'ILS AVOIENT DELIBERE DE
+5200p2L22	l a [s:jupiter] [s:saturn] q u i t e r r COM
+5200p2L23	NONOBSTANT d e [s:mars] d o t e c u m [s:jupiter] [s:saturn]
+5200p2L24	n o n t POURTANT [s:mark] [s:jupiter] [s:mars] l a i [s:long-s]
+5200p2L25	s e d e f a i r
+5200p2L26	[s:jupiter] [s:mars] l e [s:jupiter] m e [s:long-s] m ET AUSSY
+5200p2L27	[s:jupiter] c e u x [s:jupiter] [s:saturn] d [s:e] l o c h u m

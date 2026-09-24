@@ -288,3 +288,75 @@ recorded per rule 10/COMMON rule 7 honesty requirements.
    this passage.
 
 Status stays **open** (page 1 of 3 read; letter not fully read; no novelty check performed).
+
+## J3: 5200 p2, partial (LANE R2, 24 September 2026)
+
+Worker J3 (Sonnet, cap $6, no subagents, no network). Per
+`.claude/briefs/runs/2026-09-24-lane-r2-jan-5200-p23.md`, which assumed a `passA_5200.tsv` covering pages 2-3
+existed for this worker to read pass B blind against. **It does not**: `passA_5200.tsv` (836 rows) contains only
+`5200p1L*` lines (J1's page-1 pass); nobody has transcribed page 2 or 3 before this pass. Flagged in ROOM.md at
+start. Since no subagent and no second worker were available this session, this pass proceeds as a **single blind
+read**, not a reconciled pass B -- a real deviation from the brief's two-pass method, recorded here per rule 10/
+COMMON rule 7 honesty requirements. `key_1572.tsv` was not opened until after the pass was transcribed.
+
+**Structural finding: `images/05200_p2.jpg` is a two-page opening, not one page.** It is a landscape scan
+(2744x1974 px) showing two facing manuscript sides side by side -- left block (~29+ lines) and right block
+(~26 lines) -- separated by a binding gutter, unlike `05200_p1.jpg` (portrait, single side, 1r) and
+`05200_p3.jpg` (portrait, single side, 1382x1968). `images/inventory.tsv`'s one-line-per-page entries ("page 2:
+cipher, same design, dense columns, full page cipher, no clear breaks seen") describe this generically and do not
+flag the two-sides-in-one-image structure. Reading order hypothesis (not confirmed against the manuscript's own
+foliation): this is a single folded bifolium written on all four faces -- p1.jpg = 1r, p2.jpg = the opened
+interior (1v left + 2r right), p3.jpg = 2v (matches p3's own inventory note, "cipher then clear close +
+signature"). Line ids below use `5200p2L<nn>` counting through the **left block only**, top to bottom; the right
+block (2r) is not transcribed this pass.
+
+**Coverage this pass: left block of p2.jpg, lines 1-27 only** (of an estimated 29+ in that block; the block
+continues below line 27, unread -- image already on disk, `images/05200_p2.jpg`). The right block and page 3
+were not reached (cap; see below). `passes/passB_5200_p2.tsv` (single pass, PASS-BRIEF.md format) ->
+`passes/ciphertext_5200_p2.tsv` (identical content, copied in directly since there is no second pass to reconcile
+against) -> `decode_5200.json` job 2 -> `reading_5200_p2.txt` / `reading_5200_p2_tokens.tsv`. `decode_key.py
+--check` exits 0.
+
+**Counts (399 cipher-sign tokens): H 325 (81.5%), M 14 (3.5%), U 60 (15.0%), no C, no S.** Caveat on the H count:
+unlike page 1's H (which came from two independent blind passes reconciled against each other), this H reflects
+one reader's confident reading of a keyed digit -- real, but a weaker H than J1/J2's page 1, since no second
+transcriber has checked it. 60 of the U tokens are the recurring astrological/alchemical signs (jupiter, mars,
+venus, saturn -- same repertoire J1/J2 catalogued on page 1) plus a handful of crossed-letter signs (`s:e`,
+`s:n`, `s:u`, `s:f`, `s:long-s`) and two `s:mark`/`s:illegible` spots (an inkblot, a short cursive mark not
+confidently read); none of these are in `key_1572.tsv` so they grade U mechanically, not from any judgement call
+this pass made. 14 M-graded tokens are digits this pass flagged as ambiguous between two readings (e.g. 18/16,
+28/18, 30/36, 37/33) -- genuine candidates for a second pass or a closer look at the image.
+
+**The reading is real, connected French, with two independent place-name confirmations** -- the strongest
+evidence this single pass is substantially correct despite the methodology caveat above: "**DE GUELDRES**" (L14-15,
+"...de n[ost]re cost[e] **DE GUELDRES** ont fait de mesme" = "...on our side [those] of Guelders did likewise" --
+Gueldres/Guelders, a real Low Countries province) and "**DE ZUTPHEN**" (L17, "...tard" following, i.e. "...late" or
+similar) -- Zutphen, a real town in Guelders, consistent with the letter's known subject (the 1572 revolt, garrison
+withdrawals, Mons/Mechelen). Other clear stretches: "LEQUEL BRUIT QU'IL FUST FAICT FUT MAINTENU PAR LES OFFICIERS
+QUE PUISSENT LEURS PREMIERES ARMES ILS FURENT" / "MESMES M'EN PRIERENT" (L04-06, itself read directly off the page
+as clear secretary-hand French, not decoded -- lower-confidence diplomatic transcription, flagged per-row);
+"QUATRE VINGT CINQ" clear-written amid cipher (L08, a number spelled in words, not enciphered) followed by decoded
+"cent [sign][sign] florins" (L08-09) -- plausibly "quatre-vingt-cinq cents florins" (8500 florins), a sum of
+money; "AU RESTE" (L10); "DEPUIS QUE" (L12, read as clear text, low confidence); "ET AUTRES" (L13); "ONT FAIT DE
+MESME" (L15); "ET N'EUT" (L16); "exemple" (L19, lower-case since not a `w:` clear-word row -- decoded from cipher
+digits, not read as clear French); "CE MESME JOUR QU'ILS AVOIENT DELIBERE DE" (L21, whole line read as clear
+text); "NONOBSTANT" (L23); "POURTANT" (L24); "ET AUSSY" (L26). This is consistent with the same letter's page-1
+content (withdrawal of garrisons, state of the revolt) and gives real confidence in `key_1572.tsv` beyond page 1
+alone.
+
+**Not done this pass (cap; in scope per brief but not reached):** the right block of `05200_p2.jpg` (2r, ~26
+lines, unread); the rest of the left block past line 27 (unread, same image); all of `05200_p3.jpg` (2v, the
+letter's close and signature per `images/inventory.tsv`). Groen IV 2-6 nr. CCCLXXXIX, 5200's cited print, **not
+checked** this pass -- LANE V2's to search (per brief). No novelty classification made (rule 10).
+
+**Suggestion for the next worker (not done here, one line per rule 7):** a true pass A/B reconciliation of the
+right block of p2.jpg and all of p3.jpg would upgrade this page's H count the way J2's reconciliation did for
+page 1; the 14 M-graded ambiguous digits above and the two unidentified `s:mark`/`s:illegible` spots are the
+first things a second pass should re-check against the image.
+
+**Grade counts for LANE V2 / any verifier, this pass only: 399 cipher tokens, H 325 (81.5%) M 14 (3.5%) U 60
+(15.0%), 0 C, 0 S.** Combined with J2's page 1 (807 tokens: H680 M26 U101), the letter so far totals 1206 graded
+cipher tokens across pages 1 and the left block of page 2.
+
+Status stays **open** (page 1 complete, page 2 left block lines 1-27 of ~29+ read, page 2 right block and page 3
+unread; letter not fully read; no novelty check performed).
