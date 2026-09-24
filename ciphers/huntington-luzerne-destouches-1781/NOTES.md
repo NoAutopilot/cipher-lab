@@ -99,3 +99,57 @@ the scout); request count below.
 Cipher's name/shelfmark in a search engine (web); sender's printed correspondence (Doniol); calendars/state-paper
 series (n/a, US domestic collection, no CSP series); community list comment threads (Cryptiana local + live
 search); DECODE (cache only, login broken); both solver repositories (shallow clone, grep).
+
+## Key recovery, step 1-2: the Beinecke 8 Jan 1781 code passage (LANE R worker R2, 24 Sept 2026)
+
+Status unchanged: open. This section is about the sibling letter at Yale, not yet about mssDE 68/108(A).
+
+**Item.** La Luzerne to Rochambeau, Philadelphia, 8 Jan 1781, Beinecke GEN MSS 146 (Rochambeau Papers) box 2 folder
+137, Yale OID 16490985 (the brbl-dl VuFind 4528532 link now redirects to collections.library.yale.edu/catalog/16490985,
+which answers curl with a 202 challenge; the IIIF manifest and image API serve curl directly). Catalogue: "Letter
+signed. 10 1/2 pages ... Partly in code, with accompanying decode on a separate page". All 9 openings fetched at 1800 px
+to `images/yale/` with `manifest.json` (sha1 per file): code 240 groups on c6-c7 (Tomokiyo's pp.6-8), a separate
+contemporary decode sheet on c8-c9, rest clear French. Route: access playbook 1 (IIIF, curl).
+
+**Alignment.** `alignment_yale_8jan1781.tsv` (one row per group: figure, unit aligned, grade),
+`key_tomokiyo.tsv` (per figure), both regenerated and checked by `build_key_tomokiyo.py [--check]` against the
+Cryptiana snapshot plus the image correction list. Figures: Tomokiyo's transcription checked against the image at 1800
+px (all lines viewed; one crop at native resolution); one difference, group 155 is **1170** on the page (Tomokiyo 470).
+Plaintext: Tomokiyo's print checked against the decode sheet; the sheet reads "le **reste** de l'armée", "quitta",
+"je l'assurai promptement du **zèle** (interlined over a struck word) avec lequel votre **armée**", "le **soin** de ces
+mesures", "laissé **aux** général Washington", and after "les ameriquains" a struck-out phrase (the last 8 groups,
+814 532 362 305 511 372 148 334, left U).
+Grades per token (240): **C 127, M 106, U 7** (no H: there is no key sheet; the decode sheet is known plaintext).
+Per distinct figure: C 73, M 99, U 6 (178 figures seen).
+
+**What the pairs show about the code.**
+- It is a **two-part (randomised) code**: on the 72 C single-meaning pairs, Spearman rho between figure order and
+  alphabetical order is -0.13, shuffle p = 0.26 (10,000 shuffles, seed 1781). So no interpolation between known
+  figures is possible (grade S by interpolation is ruled out for this code).
+- It is **syllabic with homophones**, not a word code: dan 1173 serves dans/danger/dangereuse (4x), de-fec-ti-on
+  664 575 812|278 959 (twice, two homophones for "ti"), re-elle-ment 424 864 860, mo-ment 595 860. Homophones seen:
+  de 664/921/(842?), que 416/872, ce 892/903, la 769/391, un(e) 1096/713, et 894/337/181, vous 573/799/1185,
+  se 389/96. A code group for "de la" (32, 3x). 532 and 350 fall at sentence ends (stop or null, M).
+- Range 4-1199 in 240 groups, consistent with Bourdeau's note (destaing/NOTES.md l.13) that it runs to ~1200.
+- Bourdeau (github.com/dbourdeau/cyphersolver, shallow clone 24 Sept 2026, grep "Luzerne"): note only
+  (destaing/NOTES.md l.13, destaing/profile.json), no figure/plaintext pairs; nothing copied.
+
+**Consequence for mssDE 68/108(A).** If the Huntington letters (16 and 31 Jan 1781, eight and twenty-three days
+later, same sender) use this code, 73 C figures (the commonest function words and syllables) give partial coverage at
+best; the M rows need a second alignment pass before use. Steps 3 onward (mssDE 37/55 contemporary decipherments,
+blind passes of mssDE 68/108(A), decode_key.py, matched control) wait on LANE R worker R1's Huntington images, not
+pushed at 05:18 UTC; not started.
+
+**Search log for LANE V (prior decipherment of mssDE 68/108(A)), 24 Sept 2026.** Checked this session: Tomokiyo's
+Cryptiana post (local snapshot) and the Yale item (a different letter, to Rochambeau; its decode sheet does not
+mention Destouches); Bourdeau's repository by grep for "Luzerne" (no mssDE, no Destouches). Not found in either.
+Earlier sweep (same day, section above): Doniol vol.5 phrase search, Founders Online, OAC finding aid, Cryptiana list,
+DECODE cache in Aymeloglu's repo (BL Add MS 32263 rows only), Aymeloglu grep; not found. Not checked: Stevens's
+Facsimiles, the Huntington's own catalogue notes for mssDE 68/108(A) beyond the scout's, DECODE live search (LANE N's
+host), Google Books (LANE V's). No novelty classification made.
+
+Requests this session: collections.library.yale.edu 12 (1 record page 202, 1 manifest, 9 images, 1 crop), all >=1.5 s
+apart, descriptive UA; github.com 1 shallow clone (Bourdeau). No Huntington, Gallica, Google Books or DECODE requests.
+
+Suggestion (not done): a second, independent alignment pass over the 106 M rows by a separate session, working from
+images/yale/c6-c9 only, to promote or correct them before the key is applied to mssDE 68/108(A).
