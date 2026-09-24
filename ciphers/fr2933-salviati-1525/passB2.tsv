@@ -244,3 +244,58 @@ line	pos	code	marks	action	conf	note
 9	21	rz		confirm	H	small hook shape, matches rz atlas well
 9	22	_	5	confirm	M	two-part shape (loop over stroke), classifier confident (1.00) plain with mark 5; visual read uncertain
 9	23	S7		confirm	H	clear numeral-7 cursive shape, matches S7 atlas well
+10	1	lam		confirm	H	clean A-shape, matches lam atlas
+10	2	S7	~	confirm	M	numeral-7 shape with tilde mark above
+10	3	lam		confirm	H	clean A-shape
+10	4	g	~	confirm	M	small g loop with squiggle, share was 0.80
+10	5	psi		confirm	H	loop+tail curl, matches psi
+10	6	lam		confirm	M	doubled-peak "M"-like shape, treated as single lam per script
+10	7	lam		confirm	M	doubled-peak "M"-like shape, treated as single lam per script
+10	8	S		confirm	H	small cursive S/3 shape
+10	9	[		confirm	H	clear open bracket
+10	10	g		confirm	H	clean g loop
+10	11	Z		confirm	M	small wavy squiggle, plausible Z
+10	12	]	o	confirm	H	bracket with circle mark above
+10	13	m	5	confirm	H	three-hump m with numeral 5 mark above
+10	14	nt		confirm	H	n with cross-flag, matches nt
+10	15	rz		confirm	H	small hook, matches rz
+10	16	nt	dot	confirm	M	n with cross-flag, dot mark nearby; share was 0.82
+10	17	_	ot|?	confirm	L	word-like "ys" shape, genuinely ambiguous plain-vs-code; share was already low (0.81)
+10	18	]	o	confirm	M	squared double-bar rendering again (cf. line8 pos21), circle mark above
+10	19	g		confirm	H	clean g loop
+10	20	m	~	confirm	M	m shape, tilde mark, contiguous stroke with neighbours
+10	21	g	7	confirm	M	g loop with numeral 7 mark above
+10	22	bh		confirm	M	tall loop+hook ligature, plausible bh
+10	23	S7		confirm	M	numeral-7 shape, tight next to neighbours
+10	24	g	#|7	confirm	M	g loop with # and 7 marks above
+10	25	lam		confirm	M	small A-shape
+10	26	H	1|o	confirm	M	H-shape with 1 and o marks above, visual match better than the low share (0.40) suggested
+11	1	_		plain	H	seal impression bleeding through paper, no ink sign
+11	2	_		plain	M	minimal mark, ambiguous
+11	3	U		confirm	H	double-vertical U-shape, clean match
+11	4	g	~	confirm	H	g loop with tilde mark above
+11	5	lam		confirm	H	clean A-shape
+11	6	S7	~	confirm	M	thin numeral-7 shape with tilde
+11	7	e		confirm	M	double-bar crossed shape, matches e atlas family
+11	8	m	~	confirm	H	three-hump m with tilde
+11	9	w		confirm	H	wide w-flourish
+11	10	lam		correct	M	top of stacked box, corrected from _ (share 0.60); A-shape
+11	10.5	S		add	M	bottom of former box10, distinct s/numeral-5-like squiggle
+11	11	nt		confirm	H	n with cross-flag
+11	12	rz		confirm	M	small hook, tight next to pos13
+11	13	g	~	confirm	M	g loop, tilde mark above
+11	14	_		plain	M	tiny apostrophe-like mark
+11	15	lam		confirm	M	A-shape, edge of crop
+11	16	nt	~	confirm	M	crossed nt shape with tilde mark
+11	17	y		confirm	M	y hook, overlaps neighbour
+11	18	p		confirm	M	loop/hook shape, share was 0.79
+11	19	g	?	confirm	L	small squeezed loop between neighbours, mark uncertain per script
+11	20	y	7	confirm	M	y hook with numeral 7 mark
+11	21	Z		confirm	M	two-tier looking shape but treated as single Z per script
+11	22	]	dot|ot	confirm	M	bracket shape, dot and ot marks
+11	23	g		confirm	H	clean g loop
+11	24	y	5	confirm	M	y/g combined-looking shape with numeral 5 mark
+11	25	S		confirm	M	tiny S-shape squeezed after pos24
+11	26	]	ot	confirm	M	small rectangle bracket, ot mark
+11	27	#	~	confirm	M	cross/hash shape, tilde mark
+11	28	S7	#	confirm	M	numeral-7 shape, # mark
