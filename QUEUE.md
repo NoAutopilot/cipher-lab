@@ -438,6 +438,102 @@ Leiden and the KB were not reached this sweep (bot-challenge empty responses, JS
 reCAPTCHA wall, or a transport failure on every attempt) -- a browser-tool pass (CLAUDE.md's Access playbook)
 is the next step for those six, not a fresh curl attempt.
 
+**Third pass, 24 September 2026 (M17-M21).** Brief: sweep the BnF series the first two passes did not reach --
+Italien, Espagnol, Latin, Allemand, Nouvelles acquisitions françaises (NAF), Clairambault beyond the volumes
+already listed above, Cinq Cents de Colbert, Mélanges de Colbert, Dupuy beyond 111/155/452/468, Moreau, Baluze
+-- via the Gallica SRU API, `dc.source` scoped to each series and `dc.description` matching the brief's term
+list (chiffre, chiffré, chiffrée, chiffres, cifra, cifre, cifrato, cifrada, zifra, Ziffer, Geheimschrift, "in
+cipher", déchiffrement, contre-chiffre), restricted to the Manuscrits department by construction of `dc.source`
+(the "dc.type is unindexed" finding from the second pass still holds). One request per series (11 total, plus
+3 retries after proxy-side connection resets, all recovered -- `recentRelayFailures` in the agent-proxy status
+traced these to the tunnel, not to Gallica, per `/root/.ccr/README.md`) rather than one per series-per-term,
+using an OR clause across all fourteen terms inside the `dc.source` scope; SRU's default relevance ranking
+returned the true top hits for every series this way, confirmed by spot-probing three series' raw dc.source
+strings against a bare `dc.source all "<series>"` query first. Two series-name corrections needed before the
+real hits appeared: NAF's `dc.source` field reads "NAF nnnn", not the spelled-out "Nouvelles acquisitions
+françaises" (0 hits with the phrase, 20 with "NAF"); "Moreau" alone collides with the unrelated Moreau-Nélaton
+art-history donation, the real Département des Manuscrits Moreau collection needing `dc.source all "Manuscrits
+Moreau"` (0 hits either way once scoped correctly -- a genuine negative, not a syntax miss, confirmed by a
+direct probe that the real collection is indexed and large, 86 hits for "Moreau" and "Manuscrits" together with
+no chiffre term). 158 raw records, all unique arks. Filtered in two passes, same method as the second pass: 83
+of 158 dropped as foliation/pagination/numeral-table noise (regex on "chiffres arabes/romains", pagination,
+foliotation, numérotation, cote/cotation, microfilm -- confirmed again for Latin, where every hit was a
+liturgical, biblical or grammatical manuscript using "chiffre" for a monogram, folio numbering or arithmetic
+example, not cryptography), then 11 of the remaining 75 dropped for no correspondence-context word (lettre,
+dépêche, ambassade, secret, correspond-, roi/duc/cardinal/reine, instructions, négociat-, envoyé, ministre,
+cour) -- again poetry, liturgy and an arithmetic manual, not letters. 64 read in full.
+
+Exclusion against a fresh shallow clone of both solver repositories (grepped by shelfmark, not just by name,
+per the Pallotto lesson), Aymeloglu's cached `unsolved-ciphers/catalogue/decode-catalog.csv`, and this file,
+CATALOG.md, LANDSCAPE.md and ciphers/ removed the majority of what looked promising on first read -- worth
+recording because it is exactly the duplicate-work the exclusion step exists to catch:
+- **Espagnol 132** (Philippe II to Vargas Mexia, "en chiffre", 16 Dec 1577) is already in Bourdeau's own
+  `gallica_sweep/bnf_candidates.txt` (his repository runs the same kind of Gallica sweep; this ark is already on
+  his radar even though no target folder exists yet for it) -- dropped per the second-pass convention of
+  excluding by his sweep file, not only his solved folders.
+- **Cinq Cents de Colbert 33** (cardinal de Joyeuse, "chiffrée", f.539, 1588-94 Ligue-Espagne negotiations) is
+  Bourdeau's own already-solved `joyeuse/` target (his `gallica_siblings/src/colbert33_manifest.json` and the
+  folder's own `ct_f539.txt` match the exact folio) -- found-solved, dropped.
+- **Clairambault 325** (Jean de Calvimont to chancelier Duprat, "avec chiffre", 1525-26) already named as a
+  checked sibling key ("Calvimont, Biermann key") in Bourdeau's `bayard1526/NOTES.md` -- a published key already
+  exists for this letter, dropped.
+- **Clairambault 328** (Guillaume Bochetel to Montmorency, "avec chiffres", Montcallier 28 Jul 1528) is DECODE
+  record 2286, status Decrypted -- dropped. (The same shelfmark also carries DECODE record 2287, f.291-293,
+  Bishop of Bayonne to Montmorency, Non-decrypted, that neither our Gallica hit nor Bourdeau's repo named --
+  left unscored here as DECODE-catalogue territory, which LESSONS.md's 23 Sept entry already treats as not our
+  lane, "a catalogue a daily-active project also reads.")
+- **Clairambault 357** ("Lettre chiffrée" among 1586 Guise/Mayenne correspondence) is Bourdeau's own solved
+  `clair357/` (README: "Deciphered in 1586, bound with the letter", published to his github.io) -- the whole
+  volume is his, dropped.
+- **Clairambault 360** ("Clef du chiffre employé avec le landgrave de Hesse-Cassel", Oct 1602) is the exact key
+  sheet Bourdeau's `hesse1603/NOTES.md` already cites for his solved Hesse 1603 item -- dropped.
+- **NAF 1045** ("Recueil de chiffres de correspondances militaires", Turenne/d'Erlach/Candale keys) is DECODE
+  record 2790, a key-only entry -- key-present-no-letter-named, same pattern as M2/M5/M12, dropped.
+- **NAF 720** (a Charles-le-Mauvais cipher key) states in its own catalogue description that the key has been
+  "published several times" -- dropped on the catalogue's own word.
+- **Baluze 331** (Michel Le Tellier?, "en partie chiffrée", Paris 11 Jun 1650, f.38) is DECODE record 2771,
+  status Decrypted; the same volume's f.100 Colbert item is DECODE record 2773, also Decrypted -- dropped.
+- **Baluze 163** ("Chrysogono" to comte d'Avaux, "en partie chiffrée", 1629-33) is DECODE record 2755, status
+  Decrypted, and Tomokiyo's own `louisxiii.htm` (mirrored in Bourdeau's `esp318/lit/crypt/`) already prints a
+  tentative reconstructed key for exactly this letter -- dropped.
+- **Espagnol 318** (Frédéric III of Naples to Ferdinand/Isabelle, "en partie en chiffre", 1497) is a different
+  item in the same shelfmark as Bourdeau's active `esp318/` target (his own item 95) -- whole-volume exclusion
+  per the same convention as Espagnol 132, dropped without opening the image.
+- **Italien 2245** ("Correspondance des Sforza", with an appended 19th-c. "Chiffres et catalogue de Registres"
+  inventory of the Milan state archive's cipher registers) is a scholarly finding-aid list about ciphers, not a
+  ciphertext letter, and sits in the same Sforza-Milan material our own `ciphers/sforza-maino-1446/` (closed
+  negative) and two DECODE Sforza/Milan records already cover -- not scored, too tangential and too close to
+  worked ground to be worth a leaf view this pass.
+
+Five candidates survived, none checked against a control or check-solved, none opened at full resolution:
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Leaf viewed | Image route | Total |
+|---|---|---|---|---|---|---|---|---|---|
+| M17 | Two ciphered letters (and a reply) between Cardinal Hippolyte d'Este ("cardinal de Ferrare") and the duc de Guise | Nov-Dec 1556, Jan-Feb 1557 | fr | cryptanalysis | BnF Clairambault 349 (ark:/12148/btv1b9000668z, part of the Bossuet-Béthune-Brienne copy series) | "Lettres orig. du cardinal de Ferrare [Hippolyte d'Este], au duc de Guise et réponse (novembre-décembre 1556, janvier et février 1557), avec chiffres" -- catalogued as originals, not the 18th-c. Bossuet copies that make up most of this Clairambault sub-series (see M14/M15's caveat pattern for that distinction); no key named in this item. Not in either solver repo or the cached DECODE catalogue by this shelfmark. | No | gallica.bnf.fr IIIF manifest, public domain, no login | 33 |
+| M18 | Letter from a Loménie de Brienne to the Queen of Poland | 19 May 1646 | fr | cryptanalysis | BnF Clairambault 1067 (ark:/12148/btv1b9000856f or btv1b90008551, two digitisations, "Mélanges généalogiques... X BRUN (DE)-BUX (DU)") | "Lettre avec chiffres adressée par de Brienne à la reine de Pologne (19 mai 1646)" -- same secretarial family as M16 (fr.5160, 1653-61 Brienne-Servien correspondence) but seven years earlier and a different volume; Tomokiyo's louisxiv0.htm Brienne 1647/1651 key tables (already fetched for M16's dense-band worker) are a plausible same-office key lead, not tried this pass. Not in either solver repo or DECODE by this shelfmark. | No | gallica.bnf.fr IIIF manifest, public domain, no login | 34 |
+| M19 | "Du Vergier", several original ciphered letters | undated within a name-alphabetised miscellany | fr | cryptanalysis | BnF Clairambault 1108 (ark:/12148/btv1b90009665, "Mélanges généalogiques... L UZES-VENDOME") | "Du Vergier (Lettres orig., dont plusieurs avec chiffres)" -- sender not otherwise identified in the visible catalogue snippet; plural ciphered originals in one place is the promising part. Not in either solver repo or DECODE by this shelfmark. | No | gallica.bnf.fr IIIF manifest, public domain, no login | 33 |
+| M20 | "Avis de Flandre" (intelligence reports from Flanders), ciphered | undated within a volume catalogued "Année 1688" (Ordre du Saint-Esprit history series) | fr | cryptanalysis | BnF Clairambault 1161 (ark:/12148/btv1b90010063) | "Avis de Flandre, chiffrés" -- lowest confidence of the four Clairambault survivors: "avis" (intelligence briefs) rather than named correspondence, and the volume's own date heading may not be this item's date. Not in either solver repo or DECODE by this shelfmark. | No | gallica.bnf.fr IIIF manifest, public domain, no login | 28 |
+| M21 | Jean-Jacques Rousseau's own decipherments of diplomatic dispatches, written into the ambassador's letterbook during his Venice secretaryship | 1743-44 (volume's outer dates 18th-19th c.) | fr | recovery (decipherment already present, high edition risk) | BnF NAF 14913 (ark:/12148/btv1b525174513, "Papiers Montaigu") | "Aux f. 206, 214, 217, 250 et 274, déchiffrement de dépêches diplomatiques de la main de Jean-Jacques Rousseau" -- the decipherment is already on the leaf, in Rousseau's own hand, the M1/M3/M9/M15 pattern of a transcription-and-collation job rather than cryptanalysis. Not in either solver repo or DECODE by this shelfmark, but Rousseau's Venice secretaryship (Comte de Montaigu's embassy, the subject of a well-known Confessions chapter) is heavily studied; very likely already transcribed and discussed in Rousseau biographical scholarship (Leigh's Correspondance complète, the Pléiade edition) -- not checked this pass, flagged as the class-gate risk before any promotion. | No | gallica.bnf.fr IIIF manifest, public domain, no login | 31 |
+
+Caveats: (1) none of the five has been check-solved, viewed at full resolution, or scored against a control --
+same status as M1-M16 before their check-solved passes; every row needs that six-source sweep before the board.
+(2) Rounding out the coverage note from the second pass: the Archives et manuscrits site
+(archivesetmanuscrits.bnf.fr) answered a plain reachability probe with HTTP 200 this pass but is still the same
+JS-rendered search UI with no plain query URL found in budget -- consistent with both prior passes, not
+re-attempted with the browser tool (out of this brief's scope). (3) Coverage of the eleven named series is
+uneven by construction: Latin (68 raw hits, 0 survivors) and Italien (12 raw hits, 0 survivors after Italien
+2245 was set aside) read as thoroughly negative for this term list; Allemand and the correctly-scoped Moreau
+collection are genuine zero-hit series (confirmed reachable and populated by a bare `dc.source` probe, not a
+syntax failure); NAF, Clairambault and Baluze were the productive series, matching the pattern already
+established in LESSONS.md and the neighbour-record scan that BnF's own diplomatic-copy fonds (Clairambault,
+Baluze, the Colbert series) concentrate cipher material more than the language-named series. Requests this
+pass: gallica.bnf.fr SRU 14 (11 series queries + 3 retries after proxy-side `ws_closed_mid_exchange` resets,
+confirmed proxy-side via `/root/.ccr/README.md` and the agent-proxy status endpoint, not a Gallica block; no
+altcha/403 from Gallica itself), gallica.bnf.fr probe/dc.source-verification 6 (identifying the correct
+dc.source strings for NAF and Moreau), archivesetmanuscrits.bnf.fr 1 (reachability only). github.com 2 shallow
+clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers, grepped by shelfmark, deleted after). No logins,
+no credentials, no subagents.
+
 ## Digitised candidates outside the BnF (scout of 24 September 2026)
 
 Row 14 continuation: a browser-tool pass (CLAUDE.md Access playbook route 2) on the six hosts the 23 Sept
