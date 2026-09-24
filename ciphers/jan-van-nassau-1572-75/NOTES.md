@@ -161,3 +161,45 @@ Per-page detail (content, cipher design, hand) for every page fetched this pass:
 5033's scan is heavily faded and this worker's contact-sheet resolution could not confirm its cipher density or
 rule out a bundled print of its own "solved elsewhere" edition text -- flagged in inventory.tsv for a closer,
 better-contrast pass. No transcription, no key application, no novelty classification this pass.
+
+## J1: key and readings (LANE R2, 24 September 2026)
+
+Worker J1 (Opus, cap $9; Sonnet subagents for passes and alignment). No network use; everything from `images/`.
+
+### 1. Does Groen print the cipher passages of 5218 and 5222? Yes, both, in plain type.
+
+- **5218** (4 Mar 1575). The manuscript p1 (`images/05218_p1.jpg`, last four lines) reads in clear "Par vostre lre du
+  xxviij^e jour de janvier dernier passé j'ay veu la poursuyte" then a numeral run
+  `106.120.3.22.88.150.122.4.7.66 ...` (57 groups) then clear "a raison par vous alleguee"; margin "Touchant le
+  payement d'argent qui est deu a Hans Casimir". Groen, Lettre DXLII, p.141 (`images/05218_p6.jpg`) prints the whole
+  sentence in roman type with no italics, brackets or "en chiffre" note: "Par vostre lettre du xxviij^e jour de janvier
+  dernier passé j'ay veu la poursuyte du duc Hans-Casimir pour avoir remboursement de quelque argent à luy deu à raison
+  par vous alléguée". The Sonnet aligner (`passes/align_5218.tsv`) matched all 5 cipher runs (320 groups, pp.1-3) to
+  printed spans in DXLII pp.140-143 (Hans-Casimir; "Quant à l'affaire de Besançon"; two passages on Count Günther
+  von Schwarzburg; the Knuetel affair). None is marked as cipher in the print.
+- **5222** (29 Sep 1575). Aligner (`passes/align_5222.tsv`): all 10 cipher runs (324 groups, pp.3-5) have their text
+  in Groen, Lettre DLXXVII pp.281-282, in plain prose, e.g. "Quant aux affaires de celle de Saxe", "ses parens
+  eussent pourveu à son entreténement", "je vous envoyeray mille florins", "l'instruction donnée au Conte Wolff de
+  Hohenlohe", "du traicté de mariage passé entre moy et celle de Saxe". The separate leaf p7 (another hand) is a
+  numbered summary of the same cipher passages in order (items 2-8, header "Le conte Palatyn"): a contemporary
+  decipherment note for this letter.
+- So 5218 and 5222 are alignment pairs, and their cipher passages are known in print (Groen 1^re série t.V). Status
+  question flagged to LANE N in ROOM; not classified here.
+
+### 2. The printed 1572 table does not read 5218 or 5222; neither does the Lodewijk key
+
+`key_1572.tsv` is the table printed in the Konst- en Letterbode reprint (5198 PDF p8, p.19): a=3 b=6 ... z=72 in steps
+of 3 (i/j 27, u/v 60, w/x 66; 63 printed as '....'), "de overige cijfers zijn zoogenaamde non-valeurs". Grade H
+for every row (a printed key source); rows 1-99 not multiples of 3 are the printed "non-valeurs" (NULL, H).
+
+- 5222 under key_1572: of 324 groups, 60 fall on a table letter, 194 on a "null", 65 are above 99 (not in the table);
+  the letters give no French (`c######a.......d..#..l...i.....ir...`). Values run 1-158, codes above 100 recur (111,
+  112, 116-134), 28/29/27/26 are the commonest. A different, larger nomenclator.
+- 5218 likewise (values 1-329, e.g. 106, 120, 150, 329 in the Hans-Casimir run, and many non-multiples of 3 in letter
+  positions).
+- R18's Lodewijk table (`../lodewijk-van-nassau-1573-74/key.tsv`, 139 values) applied to the 5222 runs gives no French
+  either (run "donnée au Conte Wolff de Hohenlohe" -> `nosvzeedfqevaznrazzssnpf??`).
+- An exploratory hard-EM aligner (`align/em_align.py`) over the positional alignments found no value with >=4
+  occurrences mapping >=75% to one letter: the single positional alignment is too loose (nulls and word codes shift
+  every span) to build a key from. Recovering the 1575 key from these two printed pairs is a known-plaintext job for
+  a later brief (suggestion below), not done here.
