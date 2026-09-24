@@ -318,3 +318,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T15:13Z	session_01KvtMK21Ab1rzhyobtgTdv7	LANE R4 D (Sonnet, cap $5)	M36 fr5761 key atlas + f.104 passes	live
 2026-09-24T15:27Z	session_01WreUsMyBqdXikTKqhXRQXz	LANE R4 F (Opus, cap $6)	Posthius 1614/1618 solver	live
 2026-09-24T15:27Z	session_01PdNqoHMDbatWScPnmNWTH8	LANE R4 E (Opus, cap $5)	Bowes 1583 numerical name-codes	live
+2026-09-24T15:28Z	session_01Uyv6LetDKFhBPYZtneJEbf	LANE R4 G (Sonnet, cap $4)	Salviati f.54r finish pass B + gate	live
