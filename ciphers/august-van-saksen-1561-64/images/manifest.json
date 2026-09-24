@@ -1,0 +1,19 @@
+{
+  "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo",
+  "note": "Free PDF scans, no login. Fetched 24 September 2026 by this worker (curl, browser-contact User-Agent, >=2s apart).",
+  "files": [
+    {
+      "file": "00053.pdf",
+      "briefnr": 53,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=53",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00053.pdf",
+      "date": "24 October 1561",
+      "shelfmark": "Sachsisches Hauptstaatsarchiv Dresden, Geheimer Rat (Geheimes Archiv), Locat 9941/3, Printzen, f. 266 r-v",
+      "pages": 2,
+      "status": "target, undeciphered per WVO Opmerkingen",
+      "preview": "images/00053_p1-1.png (p.1, viewed by this worker: German secretary-hand plaintext letter, cipher postscript at the foot of the page in an arbitrary-symbol cipher, not numerals -- distinct design from the Lodewijk van Nassau numeral cipher)"
+    }
+  ],
+  "not_fetched_this_pass": ["00057.pdf (18 Nov 1561, has a Demandt excerpt citation, see NOTES.md)", "00126.pdf (16 Sep 1564)"],
+  "confirmed": "symbol cipher present on the target (53), by eye. Not transcribed."
+}

@@ -1,0 +1,18 @@
+{
+  "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo",
+  "note": "Free PDF scans, no login. Fetched 24 September 2026 by this worker (curl, browser-contact User-Agent, >=2s apart).",
+  "files": [
+    {
+      "file": "06179.pdf",
+      "briefnr": 6179,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=6179",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/06000-06999/06179.pdf",
+      "date": "28 November 1577",
+      "shelfmark": "Koninklijk Huisarchief Den Haag, A 11/XIV C/G-1",
+      "pages": 4,
+      "status": "target, partly in unsolved cipher per WVO Opmerkingen; printed by Groen van Prinsterer but the cipher passages themselves are NOT printed (see NOTES.md)",
+      "preview": "images/06179_p1-1.png (p.32 of the manuscript foliation, viewed by this worker: continuous clear French prose about troop dispositions near Namur, dated '1577 Nov. 28' in a later hand -- confirms the correct record; the cipher passage itself is elsewhere in the 4pp and was not located this pass)"
+    }
+  ],
+  "confirmed": "correct record and date confirmed by eye. Cipher-bearing page not specifically located this pass (not required to confirm the record; Groen's edition and the WVO Opmerkingen field both independently confirm cipher passages are present and unsolved -- see NOTES.md). Not transcribed."
+}

@@ -1,0 +1,30 @@
+{
+  "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo",
+  "note": "Free PDF scans, no login. Fetched 24 September 2026 by this worker (curl, browser-contact User-Agent, >=2s apart).",
+  "files": [
+    {
+      "file": "04610.pdf",
+      "briefnr": 4610,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=4610",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/04000-04999/04610.pdf",
+      "date": "3 June 1573",
+      "shelfmark": "Koninklijk Huisarchief Den Haag, A 11/XIV D/13a",
+      "pages": 4,
+      "status": "target, undeciphered per WVO Opmerkingen",
+      "preview": "images/04610_p1-1.png (p.1, viewed by this worker: numeral cipher figures interspersed word-by-word with French plaintext, headed 'Du 3me jour de juing 1573. Duplicata.')"
+    },
+    {
+      "file": "04613.pdf",
+      "briefnr": 4613,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=4613",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/04000-04999/04613.pdf",
+      "date": "25 March 1574",
+      "shelfmark": "Koninklijk Huisarchief Den Haag, A 11/XIV D/13a",
+      "pages": 3,
+      "status": "sibling, contemporary decipherment present and imaged per WVO Opmerkingen",
+      "preview": "images/04613_p1-1.png (p.1, numeral ciphertext) and images/04613_p2-2.png (p.2, viewed by this worker: continuous running French plaintext, same closing date '25 de Mars l'an 1574' -- confirms the period decipherment is on the leaf, not transcribed)"
+    }
+  ],
+  "not_fetched_this_pass": ["04611.pdf (2 Jul 1573)", "04612.pdf (6 Mar 1574)", "04616.pdf (12 Apr 1574)", "04615.pdf (sibling, 7 Apr 1574)"],
+  "confirmed": "cipher present on the target (4610) and a contemporary decipherment present and imaged on the sibling (4613), by eye, per this worker's brief. Not transcribed."
+}

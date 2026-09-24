@@ -1,0 +1,19 @@
+{
+  "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo",
+  "note": "Free PDF scans, no login. Fetched 24 September 2026 by this worker (curl, browser-contact User-Agent, >=2s apart).",
+  "files": [
+    {
+      "file": "01127.pdf",
+      "briefnr": 1127,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=1127",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01127.pdf",
+      "date": "28 January 1567",
+      "shelfmark": "Hessisches Staatsarchiv Marburg, Bestand 3II, Nassau-Niederlande, Korr. 1567, f. 151 r-152 v",
+      "pages": 4,
+      "status": "the draft (minuut), which per WVO's own note 'geeft de complete tekst' (gives the complete text) -- this is the crib for the original's unsolved cipher passage",
+      "preview": "images/01127_p1-1.png (p.1, viewed by this worker: this is the outer address leaf, docketed 'An Printzen zu Uranien' [To the Prince of Orange] with a receipt note '28 Januarij ... 1567' -- confirms the correct record and date; the draft's running text is on the leaf's other pages, not opened further this pass)"
+    }
+  ],
+  "not_fetched_this_pass": ["the original at KHAG A 11/XIV B/15-43 -- no PDF listed in the WVO database this pass (see REQUEST.md)"],
+  "confirmed": "correct record and date confirmed by eye on the address leaf. Draft's cipher-relevant running text not opened further this pass (not required to confirm the record; budget). Not transcribed."
+}
