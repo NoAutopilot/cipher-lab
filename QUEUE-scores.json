@@ -7661,5 +7661,40 @@
     "total": 18
    }
   ]
+ },
+ "lane_n_loc": {
+  "_about": "LANE N scout of 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-n-scLOC.md, worker for session_01W4z8JhXJYHRjorPC1Qkpiy): Library of Congress digitised manuscripts, copy-free only (www.loc.gov JSON search/item API, tile.loc.gov IIIF images, crowd.loc.gov By the People). Control passed (q=cipher+jefferson surfaces mcc.036, a known genuine LoC cipher item). Zero candidates kept of roughly 40 items examined: Rose Greenhow's cipher letter (2021667572) is found-solved (Tomokiyo civilwar7.htm quotes his own decipherment matching Fishel 2014 Appendix 4); the Madison-Randolph/Jefferson-Short-Carmichael cipher correspondence found is inside Founders Online/Papers-of- editorial coverage, same pattern as the prior LANE N US scout; the McClellan Papers cipher telegram letterbooks (mss318980174/175) are route-transposition with plaintext words already legible on the page, flagged blocked (not checked against OR/Sears) rather than scored open. crowd.loc.gov 403 to curl both UAs, one retry, blocked. Full log: sources/solver-diffs/2026-09-24-lane-n-loc.tsv; narrative: QUEUE.md 'Library of Congress digitised manuscripts (LANE N scout of 24 September 2026)'.",
+  "date": "24 September 2026",
+  "control": {
+   "host": "www.loc.gov",
+   "result": "passed",
+   "evidence": "q=cipher+jefferson surfaces mcc.036, 'Letter, James Madison to Thomas Jefferson, partially written in cipher with translation by Jefferson, 23 May 1789' -- a known genuine LoC cipher item (unread=0, edition, translation already on the document); confirms the search API returns real manuscript cipher hits"
+  },
+  "raw": 40,
+  "kept": 0,
+  "dropped": [
+   {
+    "name": "Letter Written in Cipher on Mourning Paper by Rose Greenhow (2021667572)",
+    "reason": "found-solved -- Tomokiyo civilwar7.htm: deciphered by the author, already done before by Fishel 2014 (plaintext printed, Appendix 4) and 'The Rosenblog'"
+   },
+   {
+    "name": "James Madison to Edmund Randolph 1782 series (mjm012235 etc.), Jefferson-Short-Carmichael-Monroe-Lewis cipher correspondence 1791-1803 (mtjbib005656 etc.)",
+    "reason": "editorial-project coverage -- Papers of James Madison / Papers of Thomas Jefferson (Founders Online) territory, same pattern as the prior LANE N US scout"
+   },
+   {
+    "name": "George Brinton McClellan Papers, cipher telegram letterbooks (mss318980174, mss318980175)",
+    "reason": "blocked, not dropped as solved -- route-transposition cipher with plaintext words already legible on the page (frame 0541 viewed); not checked against OR/Sears McClellan Papers edition this pass, so not scored open"
+   }
+  ],
+  "hosts_blocked": [
+   "crowd.loc.gov (403 to curl, descriptive UA and browser UA, one retry each; By the People transcription text unread this pass)"
+  ],
+  "requests_per_host": {
+   "www.loc.gov": 24,
+   "tile.loc.gov": 4,
+   "crowd.loc.gov": 2,
+   "WebSearch": 6
+  },
+  "rows": []
  }
 }
