@@ -1580,3 +1580,60 @@ look on the image. Suggested phrases for a print check: "retirer du maniement de
 d'entre le filz et la mere", "leurs principaux ministres", with "Servien" and "10 octobre 1659".
 
 Requests: gallica.bnf.fr 2 (canvas 129 and 130 natives, 200 first try). No other host. No subagents.
+
+### f.68r and f.66r checked (24 Sept 2026, for LANE V2 verifier V5's 09:55 ask)
+
+LANE G2 worker P (Sonnet, cap $4). Canvas 131 (f.68r) and canvas 127 (f.66r) fetched from
+`https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f{131,127}/full/2000,/0/default.jpg` (200 both, one try
+each), plus a full-resolution f.68r for a closer read. Not committed (scratchpad only; folder is at its 30 MB cap
+per the Canvas 129/130 section above).
+
+**f.66r (canvas 127) is blank**, confirmed by eye -- matches V5's walk note. Only a page-number "66" and the tail
+of the facing leaf's writing bleeding through from the left margin. No content, no cipher.
+
+**f.68r (canvas 131) is plaintext, not cipher, and it is the same letter as f.67 written out in clear.** It is not
+a duplicate transcription of f.67's ciphertext and not a separate letter on a different subject: sentence for
+sentence it is the unenciphered French that key_1659's reading of f.67 recovers only patchily, including the
+passages f.67 left as U or I tokens. Opening lines (diplomatic, my transcription):
+
+> "...voudrez [manque] le [vous] die qu'on publie des nouvelles de [la/luy] verité desquelles il importeroit fort
+> d'estre esclairay [= esclaircy], scavoir que la affection du fils a l'endroit de la mere n'est plus si grande
+> qu'au passé, et que Madame seroit en quelque pensée de se retirer du maniement des affaires parceque s'il
+> pouvoit estre craint qu'il arrivast un semblable changement nous aurions des mesures a prendre avec le duc..."
+
+and further down: "...quelle peut estre l'inclination du duc pour se marier, [pour la personne et] pour le temps,
+et si c'est avec quelque fondement que l'on publie que mademoiselle a rendu tres mauvais office a mademoiselle
+d'Orleans sa soeur, que ce qui se dit de la mesintelligence d'entre le fils et la mere soit veritable, si le
+marquis de Pianese demeurera [chef] des affaires ou bien sur qui le duc se [pourvoira de charge], qu'on juge en
+pensée plustost de se divertir que de s'y appliquer. C'est ce que vous avez [à savoir? -- last line partly under
+the gutter]."
+
+This matches reading_f67's gist word for word where f.67 was legible (maniement des affaires, mesintelligence
+entre le filz et la mere, principaux ministres, inclination du duc pour se marier, mademoiselle...tres [mauvais
+office]) and **resolves two of f.67's open points**: the U group at f129 L08/`_25` etc. sits where f.68r has "le
+duc" (confirming "le fils" = the Duke of Savoy, not a named prince), and the unresolved "le marquis de [_2]" at
+f130b L03 is **"le marquis de Pianese"** (Filippo San Martino d'Aglié, marquis di Pianezza, chief minister to
+Christine of France) -- f.67's key gave no token for this name; f.68r spells it in clear. f.68r also completes
+the truncated "Mademoiselle d'Or[l]..." as **"mademoiselle d'Orleans sa soeur"**, i.e. two Mademoiselles are
+distinguished: an unnamed one whose marriage prospects are discussed, and Mademoiselle d'Orléans (presumably
+Marguerite-Louise or another daughter of Gaston d'Orléans) to whom she is said to have done ill office. Not
+established from these two leaves alone which is which; canvas order suggests f.68 sits after f.67 in the same
+gathering, both loose in this recueil, so its exact relation (fair copy the cipher was made from, or a decoded
+transcript added later) is not settled by handwriting comparison here -- same secretary hand as f.67/f.86-88 by
+eye, no distinguishing ink or later annotation seen. **This bears directly on the f.67 N-class**: the plaintext of
+the passage f.67 enciphers is present in this very volume, two leaves away, in clear -- a verifier should treat
+that as the first thing to check against AUDIT.md's N3 (V5, 24 Sept 2026), not a published source found elsewhere.
+
+**Full-text search.** Gallica's in-document ContentSearch (OCR-based) on btv1b9060495t returns 0 hits for both
+"maniement des affaires" and "mesintelligence" -- expected and not informative, since this is a manuscript with no
+OCR layer (handwritten leaves return no ContentSearch text at all; checked by the zero-hit response having no
+error, just empty `<items/>`). Global Gallica SRU (`gallica all "phrase" and gallica all "phrase2"`) for
+'"maniement des affaires" Servien 1659' returned 6,048 records and for '"mesintelligence" "Altesses Royalles"'
+5,022 records -- the CQL `all` relation matches on the individual words, not the exact phrase (top hits are
+unrelated: Avaux-Servien 1644 letters, Fouquet biographies, a Trente ans war history), so this is **not a phrase
+match and not informative** as run; a real phrase search needs Gallica's `adj`/exact-phrase CQL or a different
+index, which this worker did not reach. Logged as attempted, inconclusive, 24 Sept 2026.
+
+For LANE V2 / V5: f.68r's plaintext of the same letter, in the same volume, is the material fact for the N-class
+decision, not the SRU non-result above. Requests: gallica.bnf.fr 5 (2 images at 2000px, 1 at full res, 2
+ContentSearch) + 2 SRU (7 total this section, all 200 first try, >=1.5s apart).
