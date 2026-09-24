@@ -7017,5 +7017,191 @@
    "catalogo.beniculturali.it": 1
   },
   "rows": []
+ },
+ "lane_n_italy-c": {
+  "_about": "LANE N scout of 24 September 2026: Italian regional state archives, Mantua/Modena/Turin/Genoa/Naples, beyond QUEUE.md's DECODE-sourced G7/G8/G12 (Modena) and G3 (Naples). Hosts: archiviodistatomantova.cultura.gov.it (box-level only, 0 hits), asmo.cultura.gov.it (Este Cancelleria Carteggio ambasciatori, one OCR'd PDF per court), archiviodistatotorino.beniculturali.it (Lettere Ministri Vol I/II), archiviodistatogenova.cultura.gov.it (Materie politiche PDFs). patrimonio.archiviodistatonapoli.it and archivi.ibc.regione.emilia-romagna.it egress-blocked/502, one retry each. Method: fetch each PDF once, pdftotext -layout, grep cifra|cifrat|zifra|chiave, read context by hand. Control: real hits found in 6 of 11 PDFs grepped, confirming zeros elsewhere are genuine. Raw hits and exclusions: sources/solver-diffs/2026-09-24-lane-n-italy-c.tsv. Never promoted, never solved; every row still needs check-solved before the board. 0 of 9 rows copy-free (no digitised-image route found this sweep).",
+  "date": "24 September 2026",
+  "requests_per_host": {
+   "archiviodistatomantova.cultura.gov.it": 3,
+   "banchedatigonzaga.centropalazzote.it": 3,
+   "asmo.cultura.gov.it": 10,
+   "archiviodistatotorino.beniculturali.it": 3,
+   "archiviodistatogenova.cultura.gov.it": 5,
+   "archivi.ibc.regione.emilia-romagna.it": 2,
+   "patrimonio.archiviodistatonapoli.it": 3
+  },
+  "rows": [
+   {
+    "rank": "IR1",
+    "target": "Cipher-book with the correspondence of Savoy envoy extraordinary Conte e Presidente Della Torre at The Hague",
+    "year": "1690-1700",
+    "lang": "it/fr",
+    "kind": "recovery",
+    "reference": "Archivio di Stato di Torino, Lettere Ministri -- Carteggio diplomatico (Inv. 151/B), Lettere Ministri Olanda, mazzo 2",
+    "holder": "Archivio di Stato di Torino",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 3,
+     "size": 3,
+     "competition": 3,
+     "weight": 2,
+     "unread": 2
+    },
+    "total": 34
+   },
+   {
+    "rank": "IR2",
+    "target": "Cipher and code-names given to Genoese envoy abate Gio. Battista Viganego at Turin, with sibling dispatches from the same weeks in the same box",
+    "year": "1717",
+    "lang": "it",
+    "kind": "recovery",
+    "reference": "Archivio segreto, Materie politiche (Inv. 31), item 249 (with items 246, 254)",
+    "holder": "Archivio di Stato di Genova",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 3,
+     "size": 2,
+     "competition": 3,
+     "weight": 2,
+     "unread": 2
+    },
+    "total": 32
+   },
+   {
+    "rank": "IR3",
+    "target": "Cipher attached to Este envoy Angelo Belmesseri's Naples dispatches on the Stigliano marriage negotiation",
+    "year": "1627-1628",
+    "lang": "it",
+    "kind": "recovery",
+    "reference": "Cancelleria, Carteggio ambasciatori -- Napoli, b.20 fasc.1",
+    "holder": "Archivio Segreto Estense (Archivio di Stato di Modena)",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 3,
+     "size": 2,
+     "competition": 3,
+     "weight": 2,
+     "unread": 2
+    },
+    "total": 32
+   },
+   {
+    "rank": "IR4",
+    "target": "Cipher issued to Genoese secretary Salvago for his 1691 mission to Imperial Count Caraffa",
+    "year": "1691",
+    "lang": "it",
+    "kind": "recovery",
+    "reference": "Archivio segreto, Materie politiche (Inv. 31), item 294 (run 288-299)",
+    "holder": "Archivio di Stato di Genova",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 3,
+     "size": 2,
+     "competition": 3,
+     "weight": 2,
+     "unread": 2
+    },
+    "total": 32
+   },
+   {
+    "rank": "IR5",
+    "target": "Este-France dispatch filed with the cipher-table sheet used to write it",
+    "year": "1648",
+    "lang": "fr/it",
+    "kind": "recovery",
+    "reference": "Cancelleria, Carteggio ambasciatori -- Francia, envoy Clerville cav., appendice",
+    "holder": "Archivio Segreto Estense (Archivio di Stato di Modena)",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 3,
+     "size": 1,
+     "competition": 3,
+     "weight": 2,
+     "unread": 2
+    },
+    "total": 30
+   },
+   {
+    "rank": "IR6",
+    "target": "Two undated cipher items (secretary Ricci's cipher; an unattributed cifrario) in the same Genoa series as IR2/IR4",
+    "year": "s.d.",
+    "lang": "it",
+    "kind": "recovery (tentative)",
+    "reference": "Archivio segreto, Materie politiche (Inv. 31), items 229, 237",
+    "holder": "Archivio di Stato di Genova",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 3,
+     "size": 1,
+     "competition": 3,
+     "weight": 1,
+     "unread": 2
+    },
+    "total": 29
+   },
+   {
+    "rank": "IR7",
+    "target": "Fascicle of imperfect letters and decipherments from Este envoy Alfonso Rossetti's Spanish embassy",
+    "year": "1533-1539",
+    "lang": "it/es",
+    "kind": "recovery (tentative, edition risk)",
+    "reference": "Cancelleria, Carteggio ambasciatori -- Spagna, b.4",
+    "holder": "Archivio Segreto Estense (Archivio di Stato di Modena)",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 2,
+     "size": 1,
+     "competition": 3,
+     "weight": 1,
+     "unread": 1
+    },
+    "total": 26
+   },
+   {
+    "rank": "IR8",
+    "target": "Single Este-Rome dispatch entirely in cipher, from Petr'Antonio Taurello's mission to Filiberto di Chalons, Prince of Orange",
+    "year": "1527",
+    "lang": "it",
+    "kind": "cryptanalysis",
+    "reference": "Cancelleria, Carteggio ambasciatori -- Roma, piece no. \"32\" (printed, not a full shelfmark)",
+    "holder": "Archivio Segreto Estense (Archivio di Stato di Modena)",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 3,
+     "weight": 3,
+     "unread": 3
+    },
+    "total": 22
+   },
+   {
+    "rank": "IR9",
+    "target": "Plural ciphered letters from an Este envoy in France, name uncertain in the OCR",
+    "year": "1720",
+    "lang": "it/fr",
+    "kind": "cryptanalysis",
+    "reference": "Cancelleria, Carteggio ambasciatori -- Francia, appendice",
+    "holder": "Archivio Segreto Estense (Archivio di Stato di Modena)",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 0,
+     "size": 2,
+     "competition": 3,
+     "weight": 1,
+     "unread": 3
+    },
+    "total": 22
+   }
+  ]
  }
 }

@@ -1947,3 +1947,77 @@ Interno PDF inventories (`archiviodistatomilano.cultura.gov.it/fileadmin/.../Car
 by hand/script for filza-level notes naming cipher content, which a script can grep without a model reading the
 whole PDF (Usage rule 2). (3) No score here claims a reading or a novelty class; nothing was promoted, nothing
 was solved.
+
+## Italian regional state archives, Mantua Modena Turin Genoa Naples (LANE N scout of 24 September 2026)
+
+LANE N brief: ciphered despatches 1450-1800 in the Gonzaga archive at Mantua, the Este archive at Modena
+(beyond QUEUE.md rows G7/G8/G12, its Ambasciatori Ungheria DECODE run), the Savoy archives at Turin, Genoa and
+Naples, excluding SAN and SIAS (reserved for the Florence/Milan scout) and anything Lasry, Tomokiyo or DECODE
+already decoded. Hosts reached: `archiviodistatomantova.cultura.gov.it` (box-level Archivio Gonzaga finding
+aid, Torelli/Luzio; a separate art-history correspondence database at `banchedatigonzaga.centropalazzote.it`),
+`asmo.cultura.gov.it` (Este Cancelleria, "Carteggio ambasciatori" -- one downloadable, OCR'd PDF inventory per
+foreign court), `archiviodistatotorino.beniculturali.it` (the two "Lettere Ministri" PDF inventories named in
+the brief), `archiviodistatogenova.cultura.gov.it` (three "Materie politiche" / Archivio segreto PDF
+inventories). `patrimonio.archiviodistatonapoli.it` is egress-blocked (DNS failure on http, `CONNECT tunnel
+failed 502` on https, one retry) -- no Naples-native row this sweep; the only Naples material found is filed at
+Modena (Este correspondence with the Naples court, IR3 below). `archivi.ibc.regione.emilia-romagna.it` (Modena's
+EAD finding aids via IBC) 502'd twice, also blocked. Method: fetch each PDF once, `pdftotext -layout`, grep for
+`cifra|cifrat|zifra|chiave` (Italian for cipher/ciphered/key), read the surrounding entry by hand. **Control**:
+the same grep found real, dated hits in five of the eight Este-court PDFs (Francia, Roma, Napoli, Spagna,
+Venezia) and in one of three Genoa PDFs, and the Genoa "chiave" hits that were noise (harbour-gate and
+treasury-door keys, not cipher keys) were individually read and excluded rather than counted -- so the zeros
+recorded for the other PDFs (Genova/Inghilterra/Levante at Modena; 32_BustePaesi and 58_Politicorum at Genoa)
+are genuine zeros, not a broken query. Raw hits and exclusions (26 rows, including every dropped/noise/blocked
+entry): `sources/solver-diffs/2026-09-24-lane-n-italy-c.tsv`. Counts: Mantua 0 kept (2 hosts reached, 0 raw
+cipher hits -- box-level inventory has no content notes; Gonzaga art-database search form not reproduced,
+logged `query_form_unverified`); Modena 5 kept of 11 raw hits across 8 PDFs (3 excluded as editions/general
+remarks, 3 logged as leads not scored); Turin 1 kept of 2 raw hits (1 out-of-period at ~30 further 19th-century
+hits, 1 lead not scored); Genoa 3 kept of 5 raw hits in the one PDF with content (2 excluded/lead). Copy-free
+count: **0 of 9** -- none of these finding aids links a digitised image of the item itself, only a text
+description; every row below needs a copy order or an on-site visit, logged accordingly, not scored as
+copy-free. No candidate here overlaps QUEUE.md, CATALOG.md, LANDSCAPE.md, `ciphers/`, `sources/cryptiana/`, or
+fresh shallow clones of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` (checked by envoy name and
+by the specific 1530 Rangone item that could have been confused with IR9's 1720 Rangoni before the mismatch was
+ruled out on inspection).
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | What the finding aid says | Material | Total |
+|---|---|---|---|---|---|---|---|---|
+| IR1 | Cipher-book with the correspondence of Savoy envoy extraordinary Conte e Presidente Della Torre at The Hague | 1690-1700 | it/fr | recovery | Archivio di Stato di Torino, "Lettere Ministri -- Carteggio diplomatico" (Inv. 151/B), Lettere Ministri Olanda, mazzo 2 | "CIFRARIO al Conte e Presidente Della Torre" filed in the same mazzo as his own decade of correspondence (1690-1700): letters to/from Lord Nottingham, Milord Monquille, Cav. Giuseppe Terne (London), Conte Caraffa, Prelà Doria and the Marchese di Prié (Vienna) -- the embassy negotiated Dutch subsidies for the League of Augsburg war against France. | Copy-order (PDF inventory only, no digitised images found) | 34 |
+| IR2 | Cipher and code-names given to Genoese envoy abate Gio. Battista Viganego at Turin, with dispatches from the same correspondent the same weeks in the same box | Apr 1717 | it | recovery | Archivio di Stato di Genova, Archivio segreto, Materie politiche (Trattati e negoziazioni, Inv. 31), item 249, alongside items 246 and 254 | Item 249: "Cifrario e nomi dati a Gio. Batta Viganego, inviato a Torino, per servirsene nella corrispondenza da inviare a Genova" (7 Apr 1717). Items 246 and 254 in the same series, same month: "Notizie trasmesse da Torino dall'abate Gio. Battista Viganego" (7 and 14 Apr 1717) -- plausible sibling ciphertext from the very correspondent the key was issued to, in the same box. | Copy-order | 32 |
+| IR3 | Cipher attached to Este envoy Angelo Belmesseri's Naples dispatches on the Stigliano marriage negotiation | 16 May 1627 - Jan 1628 | it | recovery | Archivio Segreto Estense, Cancelleria, Carteggio ambasciatori -- Napoli, b.20 fasc.1 (precise shelfmark given by the finding aid itself) | "Evvi congiunta una cifra" ("there is attached a cipher") on a nine-month run of dispatches about negotiating a marriage between the prince and princess of Stigliano; the same run's earlier fascicle (b.19) carries an unciphered mission by the same envoy, so the cipher use is localised to this specific box. | Copy-order | 32 |
+| IR4 | Cipher issued to Genoese secretary Salvago for his 1691 mission to Imperial Count Caraffa, in a run of items about the same Caraffa subsidy affair | 1691 | it | recovery | Archivio di Stato di Genova, Archivio segreto, Materie politiche (Inv. 31), item 294, in the run items 288-299 | Item 294: "Cifra per il segretario Salvago data nel tempo che si portò in Alessandria dal conte Caraffa." The surrounding items (288-298, same year) cover payments to Caraffa's imperial troops then present in Italy during the Nine Years' War and a councillor's justification of Genoa's wartime conduct -- a coherent affair the cipher was issued for. | Copy-order | 32 |
+| IR5 | Single Este-France dispatch filed together with the cipher-table sheet used to write it | 27 Apr 1648 | fr/it | recovery | Archivio Segreto Estense, Cancelleria, Carteggio ambasciatori -- Francia, envoy Clerville cav., appendice (precise busta/fasc not resolved from the PDF's table layout this pass) | "1648, aprile 27. con il foglio del cifrario impiegata nel dispaccio" -- the strongest form of LESSONS.md's "the key was in the archive beside the letter" pattern: key and ciphertext catalogued as one physical unit. Small item (one dispatch). | Copy-order | 30 |
+| IR6 | Two undated cipher items (a cipher issued to secretary Ricci, and an unattributed cifrario) in the same Genoa political-papers series as IR2 and IR4 | s.d. (within a run otherwise dated 1620s-1630s) | it | recovery (tentative) | Archivio di Stato di Genova, Archivio segreto, Materie politiche (Inv. 31), items 229 and 237 | Item 229: "Cifra data al segretario Ricci." Item 237: "Cifrario." Both undated, no surrounding content description in the finding aid to anchor a specific affair or correspondent, unlike IR2/IR4 in the same series. | Copy-order | 29 |
+| IR7 | Fascicle of "imperfect letters and decipherments" from Este envoy Alfonso Rossetti's Spanish embassy | 1533-1539 | it/es | recovery (tentative, edition risk) | Archivio Segreto Estense, Cancelleria, Carteggio ambasciatori -- Spagna, b.4 | "Vi è infine un fascicolo di lettere imperfette e decifrature senza data spettanti al carteggio del detto Rossetti" -- decipherments (decifrature) are catalogued in the same fascicle as the letters, which may mean the letters here are already part-read; not resolved from the finding-aid text alone, flagged rather than dropped since "imperfette" (imperfect/incomplete) suggests the decipherment coverage may not be total. | Copy-order | 26 |
+| IR8 | Single Este-Rome dispatch entirely in cipher, from the mission of Petr'Antonio Taurello to Filiberto di Chalons, Prince of Orange | 24 Jun 1527 | it | cryptanalysis | Archivio Segreto Estense, Cancelleria, Carteggio ambasciatori -- Roma, piece no. "32" as printed in the finding aid (not a full modern shelfmark) | "Questa lettera è tutta in cifra" -- sent from Vetralla near Rome, where Taurello had been dispatched with a special commission to the future Habsburg commander of the Sack of Rome, five weeks before it happened. No key or sibling decipherment noted in the finding aid. | Copy-order | 22 |
+| IR9 | Plural ciphered letters from an Este envoy in France, name uncertain in the OCR ("Rangoni(?) Giovanni") | 1720 | it/fr | cryptanalysis | Archivio Segreto Estense, Cancelleria, Carteggio ambasciatori -- Francia, appendice | "1720, lettere cifrate" -- plural, no key or content note in the finding aid. Distinct from `cyphersolver`'s already-read `rangone1530` (Guido Rangone, Venice, 1529-30 letters to Anne de Montmorency) -- different person, 190 years apart, checked by name to rule out a collision before keeping this row. | Copy-order | 22 |
+
+Caveats: (1) none of IR1-IR9 has been check-solved; "not found in QUEUE.md/CATALOG.md/LANDSCAPE.md/`ciphers/`
+or the two solver repos by envoy name" is a catalogue-matching result under rule 10, not a verified-unsolved
+verdict -- all nine need the six-source sweep before the board. (2) No page image has been opened for any of
+the nine; every "recovery" framing rests on the finding aid's own prose (a cipher/cifrario catalogued with or
+beside a correspondence run), not on having seen a ciphertext leaf, so IR1-IR6's "the key is right there"
+claims are inventory-level, not folio-level. (3) IR2 and IR4's sibling-evidence claims (a key and, in the same
+box, dispatches from or about the same person/affair) are the strongest form found this sweep, but "in the same
+box" is not "on the same key system" -- unconfirmed until someone opens both items. (4) IR5's precise
+busta/fascicolo could not be pulled from the France PDF: its "Carteggio diplomatico restituito" table has a
+"Segnatura attuale" column that `pdftotext -layout` scrambles against a repeating "APPENDICE" watermark column;
+a worker with a PDF-table-aware tool (or the browser reader) should re-extract page 67 before ordering a copy.
+(5) IR8's "32" and other Roma-fondo piece numbers read from `pdftotext` are very likely early Appendice-I piece
+numbers (busta numbers), not final ASMo shelfmarks; cross-check against the finding aid's own key before
+requesting. (6) Two whole hosts (Naples' own archive, and Modena's EAD mirror on the IBC Emilia-Romagna site)
+were unreachable this sweep (blocked/502, one retry each, logged in the TSV) -- absence of a Naples-native row
+is an access failure, not evidence Naples holds nothing; a later worker with different egress or a browser
+fallback should retry both. (7) The Gonzaga art-history database at Mantua (`banchedatigonzaga.centropalazzote.it/collezionismo`)
+has a real search form over 1563-1630 correspondence but its PRADO WebForms postback (full PAGESTATE + hidden
+fields) was not reproduced this pass; Torelli's full 1920 volume (25.7MB, linked from the ASMn site) was also
+not fetched -- both are follow-up leads, not searched to a verifiable zero, so Mantua is NOT confirmed empty,
+only not reached this sweep with the budget available. (8) All nine rows are copy-order, not copy-free: this
+sweep found no digitised-image route into any of the five archives' relevant series (unlike Gallica or the
+Huntington CONTENTdm routes other LANE N sweeps have used), so the LANE N "at least half copy-free" nomination
+goal is not met by this batch on its own. Requests: `archiviodistatomantova.cultura.gov.it` 3,
+`banchedatigonzaga.centropalazzote.it` 3, `asmo.cultura.gov.it` 10 (1 page, 1 subpage, 8 PDFs), `archiviodistatotorino.beniculturali.it`
+3 (2 PDFs, 1 reachability check), `archiviodistatogenova.cultura.gov.it` 5 (1 listing page, 4 PDF
+head/get requests), `archivi.ibc.regione.emilia-romagna.it` 2 (both 502), `patrimonio.archiviodistatonapoli.it`
+3 (all unreachable). All hosts one request at a time, >=1.5s apart, descriptive UA. No SAN, no SIAS, no Google
+Books, no logins, no subagents, no credentials.
