@@ -1,4 +1,4 @@
-open
+found-solved
 
 # Nine (per QUEUE)/two-to-three (per finding aid) "en chiffres" letters, BnF Dupuy 452
 
@@ -378,6 +378,15 @@ used above or should be used elsewhere in this file until a verifier session run
 
 **Gate: best case N3; transcription may proceed.**
 
+**Correction (verifier, 24 Sept 2026, AUDIT.md):** this gate searched Champollion-Figeac (1847),
+Desenclos (2018)/Tomokiyo's `francis.htm`, and both solver repositories, but not Jacqueton, *La
+politique extérieure de Louise de Savoie* (1892) — the standard modern documentary edition of
+exactly this correspondent and window (Louise de Savoie's diplomacy during the 1525-26 captivity).
+The solver's 24 Sept phrase search found it: P.J. XXXIII (pp.366-370) prints this letter's plaintext
+from a contemporary decipherment already in the manuscript at f.31. The class is **N0** (plaintext
+and decipherment of this very item already known), not N3. See AUDIT.md for the full search log and
+classification.
+
 ## Crops for f.28 and f.24 (23 September 2026)
 
 Worker: image-prep (Sonnet, cap ~$4, no subagents). Read `date -u` first (21:24 UTC). Job:
@@ -487,7 +496,9 @@ luy"). Same alphabet, same homophones, same nulls (λ, "ny", K), same word signs
 Nothing was merged by hand; every code of inventory.tsv keeps its own row in key.tsv.
 
 **The plaintext is in print.** Phrase search (24 Sept 2026; Google Books API keyed, 6 queries) for
-"Raince" "Madame" 1525 returned P. Jacqueton, *La politique extérieure de Louise de Savoie* (Paris 1892),
+"Raince" "Madame" 1525 returned Gilbert Jacqueton [corrected by verifier, 24 Sept 2026, from "P.
+Jacqueton": archive.org metadata gives the author as "Jacqueton, Gilbert, 1864-"], *La politique
+extérieure de Louise de Savoie* (Paris 1892),
 archive.org `lapolitiqueext00jacquoft` (full text fetched once). Its Pièces justificatives print all three
 Oct 1525 cipher letters of this volume, each from a contemporary decipherment in Dupuy 452 itself:
 - **XXXIII, Raince à Madame, 25 Oct 1525, pp. 366-370: "Original chiffré au f° 28 et déchiffrement au f° 31"**,
