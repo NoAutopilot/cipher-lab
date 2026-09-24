@@ -39,16 +39,33 @@ if [ -z "$CSRF_NAME" ] || [ -z "$CSRF_VALUE" ]; then
   exit 3
 fi
 
+# Post every field the form itself would post (24 Sept 2026): the hidden inputs besides the CSRF pair (e.g. "login")
+# and the submit button ("btn-submit"), plus Origin/Referer, so the server treats it as the form's own submission.
+# Earlier attempts posted only the four named fields; the page came back re-rendered with IS_LOGGEDIN:false and no
+# "Incorrect user name or password" message, which is what an unrecognised submission looks like, not a bad password.
+EXTRA_ARGS=()
+while IFS= read -r tag; do
+  n=$(printf '%s' "$tag" | grep -o 'name="[^"]*"' | head -1 | sed 's/name="//;s/"$//')
+  v=$(printf '%s' "$tag" | grep -o 'value="[^"]*"' | head -1 | sed 's/value="//;s/"$//')
+  case "$n" in csrf_name|csrf_value|username|password|"") continue;; esac
+  EXTRA_ARGS+=(--data-urlencode "$n=$v")
+done < <(grep -o '<input[^>]*type="hidden"[^>]*>\|<button[^>]*type="submit"[^>]*>' "$LOGIN_PAGE")
 LOGIN_RESULT="$(mktemp)"
 curl -sS -A "$UA" -b "$COOKIE_JAR" -c "$COOKIE_JAR" -o "$LOGIN_RESULT" \
+  -H "Origin: https://de-crypt.org" -H "Referer: $BASE/login" -H "Accept: text/html,application/xhtml+xml" \
   --data-urlencode "csrf_name=$CSRF_NAME" \
   --data-urlencode "csrf_value=$CSRF_VALUE" \
   --data-urlencode "username=$DECODE_USER" \
   --data-urlencode "password=$DECODE_PASS" \
+  "${EXTRA_ARGS[@]}" \
   "$BASE/login"
 
 if ! grep -q '"IS_LOGGEDIN":true' "$LOGIN_RESULT"; then
-  echo "login rejected (server says IS_LOGGEDIN:false -- check DECODE_USER/DECODE_PASS, do not retry blindly, repeated failures can lock the account)" >&2
+  if grep -qi 'incorrect user name or password' "$LOGIN_RESULT"; then
+    echo "login rejected: the server showed 'Incorrect user name or password' (the values in DECODE_USER/DECODE_PASS are wrong for this site; do not retry blindly, repeated failures can lock the account)" >&2
+  else
+    echo "login not accepted: page re-rendered with IS_LOGGEDIN:false and NO 'incorrect' message (the submission itself was not recognised; extra fields posted: ${#EXTRA_ARGS[@]}/2). Check the form markup before retrying." >&2
+  fi
   rm -f "$LOGIN_RESULT"
   exit 4
 fi
