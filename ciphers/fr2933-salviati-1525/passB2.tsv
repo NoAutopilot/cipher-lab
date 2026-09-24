@@ -403,3 +403,58 @@ line	pos	code	marks	action	conf	note
 15	20	_		plain	M	small tail shape, share was 0.81
 15	21	v		confirm	M	hook-with-dot shape, share was low (0.58)
 15	22	S		confirm	H	clean small S-shape
+16	1	_		correct	M	part of apparent plain word ("ricordo"-like), share already below threshold (0.81)
+16	2	_		plain	H	continues plain-word stretch
+16	3	_	dot	plain	M	continues plain-word stretch, share was 0.81
+16	4	_		plain	H	continues plain-word stretch
+16	5	_		plain	M	continues plain-word stretch, share was 0.72
+16	6	N		confirm	M	sits within apparent plain-word stretch but classifier fully confident (1.00); kept as coded per script
+16	7	_		correct	M	whole word ("quello") captured in one box, not a single sign; share was very low (0.40)
+16	8	_		plain	M	small mark
+16	9	_		plain	M	small mark
+16	10	ch		confirm	M	loop-cross ligature, standalone
+16	11	_	dot	plain	M	tall shape, letter unclear, dot mark present
+16	12	p		confirm	M	possible plain-word start but classifier fully confident (1.00)
+16	13	_		plain	M	continues word-like shape from pos12, share was 0.82
+16	14	N		confirm	M	similar tension to pos6, classifier fully confident (1.00)
+16	15	_		plain	M	small colon-like mark
+16	16	eps	1|1	confirm	M	clean E-shape, matches eps atlas
+16	17	_		correct	M	start of legible word "Piaciuto", share was low (0.56)
+16	18	a	dot	confirm	M	tiny mark within word context but classifier fully confident (1.00)
+16	19	_	dot	plain	H	continues legible word "Piaciuto"
+16	20	_		plain	M	two-tier stacked shape, standalone between words but no confident split possible; share was 0.81
+16	21	S		confirm	M	tiny standalone mark
+16	22	Lx		confirm	M	double-peak shape, standalone; share was low (0.66)
+16	23	v		confirm	M	standalone shape, closest atlas match; share was low (0.53)
+16	24	eps		confirm	H	clean E-shape
+16	25	_		plain	H	start of legible word ("riconvo"/"ricordo")
+16	26	m		confirm	M	tiny mark within word context but classifier fully confident (1.00)
+16	27	_	dot	plain	H	continues legible word
+16	28	_		plain	H	continues/ends legible word
+16	29	_	dot	plain	M	trailing tail shape
+17	1	S		confirm	H	small clean S-shape
+17	2	_		confirm	L	tw-like shape, no clear word context; share was very low (0.43), kept as script's plain call but genuinely uncertain
+17	3	_		confirm	M	hook/squiggle shape, visual has some tension with coded look but classifier confident (1.00)
+17	4	K		confirm	H	clean K-shape with numeral mark above
+17	5	a	1	confirm	H	tiny a-shape, numeral 1 mark
+17	6	S7		confirm	H	clean numeral-7 shape
+17	7	eps	1	confirm	M	small E/bracket shape, numeral 1 mark
+17	8	nt		confirm	H	crossed n shape
+17	9	Z		confirm	L	tall two-tier-looking shape, classifier itself low-confidence (0.42)
+17	10	phi		confirm	M	circle-with-vertical-stroke shape, clean match despite share 0.80
+17	11	]	o	confirm	H	bracket shape with circle mark
+17	12	U		confirm	H	clean double-vertical U-shape
+17	13	w		confirm	M	wide w-flourish, cut off at edge of crop
+17	14	bh		confirm	M	tall hook shape
+17	15	m	5	confirm	M	small hump shape, numeral 5 mark
+17	16	psi		confirm	M	y-hook loop shape
+17	17	lam		confirm	M	small A-shape
+17	18	e	#	confirm	M	loop shape, # mark above
+17	19	wd		confirm	M	wide w-with-loop shape
+17	20	o.		confirm	H	small circle, clean match
+17	21	e	dot|+	confirm	M	loop shape, cross marks above
+17	22	y	dot	confirm	M	y-hook shape
+17	23	S4		confirm	H	tall stroke with crossbar
+17	24	dl		confirm	M	small hook shape before word "Con"
+17	25	_		plain	H	legible plain word "Con"
+17	26	_		plain	M	tiny trailing mark at edge of crop
