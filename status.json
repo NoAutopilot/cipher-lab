@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 04:43 UTC",
+ "updated": "24 Sep 2026 05:01 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -113,10 +113,10 @@
    "stage": 4,
    "state": "blocked",
    "holder": "Archive",
-   "next": "British Library viewer offline since 2023. When it returns, order f. 11 and check Bodleian Tanner 59-60 for the contemporary decipher.",
+   "next": "f.9 and f.10 stay the target (DECODE records 8623, 8624, the only Non-decrypted cipher records in Add MS 72438). f.104 is off the table: DECODE record 8725 holds a key titled 'Cipher between Charles I and Prince Rupert (1647)' and a document 'Decipher of the beginning', both blocked to our account ('Insufficient permissions'). Ask DECODE for document-download rights or the file, then a verifier reads it. BL viewer still offline.",
    "note": "Aymeloglu identified the cipher as Digby's captured key no. 129 and fixed about 45 values. Scout 20 Sept: the volume is Weckherlin's cipher-keys and intercepted royalist correspondence; f.104 (\"almost wholly in undecoded cipher\") has DECODE record 8725 marked Decrypted, which needs the DECODE login to read before f.104 goes on any order. Blind sweep 20 Sept 2026: still open; no decipherment of f.9 or f.10 located anywhere.",
    "wait": {
-    "on": "The British Library's manuscript viewer, offline since the October 2023 cyber attack",
+    "on": "The British Library's manuscript viewer (offline since 2023) for f.9-10; DECODE document permission for f.104's decipherment (on your card)",
     "since": "2023",
     "expected": "Unknown. BL has restored services piecemeal",
     "unblock": "BL copying resumes for Add MS 72438; a DECODE login the server accepts, to read record 8725 for f.104 (the first attempt was rejected as wrong credentials)."
@@ -615,6 +615,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 05:02",
+   "what": "DECODE record 8725 (BL Add MS 72438 f.104) fetched: DECODE holds a key 'Cipher between Charles I and Prince Rupert (1647)' and a document 'Decipher of the beginning', both permission-blocked to our account; f.104 is not a fresh target, f.9-10 remain the only undeciphered cipher records in the volume (81 sibling records listed). Gramont f.30: N3 after two audits, two second-reader corrections applied. Eckert E4/E5 and Danzay f.35-36r: N4 decisions say stay N3 (Zooniverse Talk; Daussy 2015 open-access study). Paleologue-Nevers: 900-sign rerun, not Italian under four designs, controls hold. LANE S winding down at $31 on context, successor due."
+  },
   {
    "when": "24 Sept 2026 04:40 UTC",
    "what": "DECODE login works through a real browser (tools/decode_browser_login.js); the user name is the plain site user name. Record 8725 (BL Add MS 72438 f.104) is marked Decrypted on DECODE; a worker is fetching its documents. ASKS row 1 closed."
@@ -1150,9 +1154,9 @@
   },
   {
    "date": "24 Sept 2026",
-   "kind": "reading",
+   "kind": "solve",
    "title": "Gramont 1530, fr.2980 f.30r-v: published key applied, 11 more signs at grade S with a matched control",
-   "grade": "N3, two audits; H 1500 / S 158 / M 256 / U 59 of 1973",
+   "grade": "N3, two audits (second audit 24 Sept 2026 04:44 UTC); N4 pending",
    "line": "Continuous French on 32 of 55 lines; N3 after two audits; below N4 while Camusat is not read.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont"
   },
@@ -1267,5 +1271,5 @@
    "focus": "check-solved on the 26 new catalogue rows, German, Dutch, Nordic, UK and US catalogues, detector round 3"
   }
  ],
- "headline": "Three unique solves stand at N3 after two audits (Gramont 1530 f.29r, Eckert 1864 E4/E5, Danzay 1557 f.35-36); Gramont f.30 and Brienne 1659 readings are under audit; DECODE login works as of 04:40 UTC 24 Sept; outside second opinions arrive as [SO-...] pull requests."
+ "headline": "Three unique solves at N3 after two audits (Gramont f.29r, Eckert E4/E5, Danzay f.35-36r), and Gramont f.30 joined them at 04:44 UTC; N4 decisions on Eckert and Danzay say 'stay N3', each with one or two named gaps. DECODE is open: record 8725 (f.104) already carries a decipherment our account cannot download. ChatGPT second opinions arrive as [SO-...] pull requests."
 }
