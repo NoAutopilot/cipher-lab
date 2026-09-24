@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 20:54 UTC",
+ "updated": "24 Sep 2026 21:19 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1649,6 +1649,14 @@
    "grade": "16 free choices across 13 characters, five different per-letter operations, only three letters produced sequentially; the same rule family yields a 7-letter name on 968 of 1,000 random strings of Z13's shape, and 13 other given names on Z13 itself",
    "line": "Answer to the poster's own question: the mechanism fails at the choice of a different operation for each letter, not in the chain. Conditional on the widely reproduced transcription (Wikipedia refused the fetch). Says nothing about who wrote Z13.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/zodiac-z13-stress"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "The public unsolved-cryptogram lists as one ranked list: Schmeh's Top 50 with status, holder, cheap test, control and cost per item; ten machine-readable specs and a mechanical plaintext judge",
+   "grade": "9 of the 50 already solved or explained (Ferdinand III, Thouless B, Rilke, LCS35, the silk dress, Urquhart, Roosevelt, ADFGVX) and one April Fools post; three first tests run with controls: Koehler 1944 not a transposition (IC 0.040 against 0.072 German), Somerton host-text initials 0 of 1,000 on the control, Lima 1916 anneal reads salad against controls at 61 to 75 percent",
+   "line": "Rank one is the Koehler 1944 Abwehr cryptograms (924 letters, transcription on disk), next test periodic IC then the TNA KV 2 route. The process memo proposes a breadth lane: first cheap test per spec at $3 before any campaign, which the mathematics results of 2025-26 justify (9 of 353 problems fell to trying everything cheaply).",
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/UNSOLVED-SURVEY.md"
   }
  ],
  "lanes": [
@@ -1663,9 +1671,14 @@
    "focus": "eleven firm copy-free nominations; scTOMO done (Tomokiyo's other key tables swept: two new copy-free rows, the rest already worked by Bourdeau or us); scDIGI on the Torre do Tombo codices running"
   },
   {
+   "name": "Lane B, breadth",
+   "live": 1,
+   "focus": "first cheap test per spec at $3 with a matched control, two Sonnet workers at a time, from the survey's ten specs; nothing promoted to a campaign without a first test"
+  },
+  {
    "name": "Parent workers",
    "live": 1,
-   "focus": "survey on Fable: the public unsolved lists as one ranked list with an approach and spec per item and a mechanical judge; lessons ingest (Urquhart host-text method); retro-apply f; Z13 stress test closed (mechanism fails its control); Reddit fetch waits on a client id and secret"
+   "focus": "survey done ($14: the ranked list, specs, judge, process memo); LANE B breadth lane starting on the specs; retro-apply p applying the memo's rules; rfetch2 on the r/codes 1600s book plus the r/puzzles confirmation"
   },
   {
    "name": "Lane V4, verification",
@@ -1719,18 +1732,18 @@
   {
    "title": "Gold-target survey on Fable",
    "asked": "24 Sept 2026 20:43 UTC",
-   "state": "running",
-   "result": "Ranking the owner's gold-target lists (Schmeh Top 50, Dunin, codebreaking-guide) as one list with a genuine approach and machine-readable spec per item, a mechanical plaintext judge, and a process memo from the 2025-26 AI-mathematics results; no attack campaign.",
-   "next": "Reports UNSOLVED-SURVEY.md, specs/, tools/judge_plaintext.py and PROCESS-2026-09-24.md when done.",
+   "state": "done",
+   "result": "50 items ranked, 10 specs, a mechanical judge, a process memo; rank one is Koehler 1944.",
+   "next": "LANE B (breadth) runs the first cheap test per spec at $3; the memo's rule changes go through retro-apply p.",
    "link": "UNSOLVED-SURVEY.md",
    "session": "session_013GkMQP9y84gHGG4pSSwaQj"
   },
   {
    "title": "Reddit thread, 1600s book",
    "asked": "24 Sept 2026 20:38 UTC",
-   "state": "queued",
+   "state": "running",
    "result": "Queued behind the runaway-note fetch, which is now done.",
-   "next": "Parent spawns rfetch2 (brief 2026-09-24-reddit-fetch-oldbook.md) to fetch thread 18lz1b5 via the same Reddit API credential.",
+   "next": "Fetch running (same worker as the confirmation), then check-solved if the book is identified.",
    "link": "ciphers/reddit-oldbook-1600s/",
    "session": ""
   },
@@ -1792,8 +1805,8 @@
    "title": "Reddit thread, runaway note 2021",
    "asked": "24 Sept 2026 20:36 UTC",
    "state": "done",
-   "result": "Fetched on the second attempt using REDDIT_CLIENT_ID/REDDIT_CLIENT_SECRET (the first attempt's single 'Reddit' variable got HTTP 401). Thread and both gallery images saved with every username and place name redacted; two comments flagged as claiming a reading.",
-   "next": "A cipher worker picks up ciphers/reddit-runaway-2021/ now that the note is on disk (not yet spawned).",
+   "result": "Thread and images fetched through your Reddit app and saved with every identifier redacted; the poster reported in May 2021 that r/puzzles solved it and the police were given the findings.",
+   "next": "A Sonnet worker confirms the r/puzzles solve and marks the folder found-solved; no reading is reproduced here (a minor and a police case).",
    "link": "ciphers/reddit-runaway-2021/",
    "session": ""
   },
