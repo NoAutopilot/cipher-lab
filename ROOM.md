@@ -1104,3 +1104,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 12:58 | LANE R3 worker J6 (Opus, cap $10, for LANE R3): jan-van-nassau-1572-75 | claim: 5549 body new-key fit test on Willem 1574 letters (5204/5205/5207/5208/5209/5213) -- files: ciphers/jan-van-nassau-1572-75/{j6/,key_new.tsv,decode_5549.json,NOTES.md}
 2026-09-24 13:05 | LANE N2 check-solved csN3 | nomination: ciphers/sp99-wotton-1622 | copy-order | kind cryptanalysis | no edition/DECODE/repo hit; f.159 sibling lead
 2026-09-24 13:05 | LANE N2 check-solved csN3 | nomination: ciphers/sp81-stanning-1631 | copy-order | kind cryptanalysis | no calendar/DECODE/repo hit; ff.93/169/216 decipher-siblings in piece
+2026-09-24 13:05 | LANE N2 check-solved csN3 | nomination: ciphers/sp8-ehrenstein-1689 | copy-order | kind cryptanalysis | CSP Dom William+Mary vol1 searched, no hit; no DECODE/repo hit
