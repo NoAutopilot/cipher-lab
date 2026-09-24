@@ -390,3 +390,50 @@ needs to write that leaf's two pass files and run it with `--migrate-header` omi
 Files: `key_passA2_atlas.tsv`, `key_passC2_atlas.tsv`, `recon_key/majority_key_leaf.py`, `key.tsv` (migrated
 to add a `leaf` column + 38 new f110 rows). Requests: 0 hosts (disk only, per brief). No subagents. Cost: see
 ROOM.md done line / session metadata.
+
+### Candidate companion-letter search (disk only, no fetches)
+
+Grepped `QUEUE.md`, `CATALOG.md`, `sources/solver-diffs/*.tsv` and `sources/` directory listings for the
+embassy's named correspondents (Bonnivet/Gouffier, Jean d'Albret d'Orval, président Guillart/Guillard, Louise
+de Savoie, Joachim de Moltzau, François Ier to the electors) and fr.5761's neighbouring shelfmarks
+(Français 2994, 3005, 3060; Dupuy; Clairambault volumes dated 1519-20). No captures, listing only.
+
+**Real candidate: `ciphers/dupuy468-anhalt/` (QUEUE row M7, already on the board, not a new find).** BnF Dupuy
+468, item 28 (canvas 64), a Latin letter to François Ier catalogued "orig., en latin, presque entièrement en
+chiffres," dated 1515 or 1516 by the catalogue but re-attributed by a 23 Sept 2026 verifier pass to "more
+probably Ernest of Brunswick-Lüneburg and **Joachim von Moltzan**, 1518/19" -- Moltzau/Moltzan is named
+verbatim in M36's own key list ("Joachin de Moltzau, devers le marquis de Brandebourg," per the Source
+section above and `sources/solver-diffs/2026-09-24-lane-g3-gallica6.tsv`). QUEUE.md already flags this cross-
+reference (line ~452, M7's row) but as a lead for dupuy468-anhalt's own workers, not yet checked against M36's
+key. A worker on that target could try M36's f104 or f110 K-codes against Dupuy 468 f.28's ciphertext once
+enough of the key is coded. Status per QUEUE.md: `dupuy468-anhalt` is **partial**, not open -- a later hand
+already glossed ~15-20 tokens interlinearly with Latin plaintext, so this is a transcription/collation job, not
+blind cryptanalysis.
+
+**Corroborating, not a fresh target:** `QUEUE.md`'s "Dropped this sweep" table (Archives Nationales pass) and
+`sources/solver-diffs/2026-09-24-lane-n-fr-an.tsv` (row 27) both record "27 février 1519, Lettre en partie
+chiffrée (et déchiffrée) de Joachim de Moltzan au chancelier de France Antoine Duprat..." (AN, Pièce n57) --
+same correspondent, three days before the earliest king's-letter date in this volume's own Fol. 54 span (7 Feb
+1519), catalogued as **already deciphered** ("et déchiffrée" in the finding aid itself), so not a solving
+target, but real corroboration that Moltzau was actively sending ciphered correspondence in exactly this
+embassy's window.
+
+**Checked, no hit on disk:** Français 3005 (and the whole Français 3005-3993 "Recueil de lettres et pièces
+originales" cluster) is on the board only as a wholesale-excluded noise cluster (`bourdeau-named:fr.3xxx`,
+`sources/solver-diffs/2026-09-23-digitised-excluded.tsv`), not date- or correspondent-matched to this embassy.
+Français 2994 and Français 3060 do not appear anywhere in `QUEUE.md`, `CATALOG.md`, `sources/solver-diffs/` or
+any other cached file on disk -- nothing to report for either without a fresh catalogue fetch (out of this
+brief's scope). No Dupuy or Clairambault volume on disk is dated or titled for 1519-20 specifically (Dupuy
+452/468 are the two 1519-era Dupuy items already on the board, both covered above or already scored M6/M7;
+no Clairambault volume in QUEUE.md carries an 1519-20 heading). Bonnivet/Gouffier, Jean d'Albret d'Orval,
+président Guillart and Louise de Savoie produced no shelfmark hits anywhere searched -- the one "Gouffier" hit
+on disk (`sources/solver-diffs/2026-09-23-non-decode-hits-excluded.tsv`, `2026-09-24-lane-g2-gallica5.tsv`) is
+Claude Gouffier's own psalter (Ms-5095), an unrelated 16th-c. Gouffier, already dropped as a false positive by
+the pass that found it.
+
+**Tangential, same year, different embassy:** `ciphers/nla-heinrich-braunschweig-1519/` (QUEUE row DA7,
+Niedersächsisches Landesarchiv L1 Nr.548/562, Duke Heinrich the Younger of Brunswick-Lüneburg, 1519 and 1522,
+German) shares only the year, not a correspondent or the imperial-election context -- flagged for
+completeness, not a real candidate.
+
+No new QUEUE rows added (per brief: list only, do not capture or promote).
