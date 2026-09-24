@@ -1,0 +1,22 @@
+{
+ "target": "ciphers/huntington-luzerne-destouches-1781",
+ "note": "mssDE 108(A) (16 Jan 1781), key.tsv built by build_pairs.py from mssDE 68/37/55's own contemporary decipherments.",
+ "jobs": [
+  {
+   "ciphertext": "ciphertext.tsv",
+   "key": "key.tsv",
+   "format": "tsv",
+   "style": "spaced",
+   "reading": "reading_108A.txt",
+   "tokens": "reading_108A_tokens.tsv",
+   "header": [
+    "# mssDE 108(A) (16 Jan 1781), mechanical reading from key.tsv + ciphertext.tsv; do not edit.",
+    "# key.tsv is built from mssDE 68/37/55's own contemporary interlinear decipherments (build_pairs.py), not from",
+    "# a key sheet for this letter: C = known plaintext (ink gloss on a sibling), M = uncertain (pencil-only,",
+    "# doubtful/struck gloss, conflicting glosses, or an uncertain transcription), U = sign not in the key. No S:",
+    "# no per-position plaintext vote exists for this item.",
+    "# tokens {total}: {HCSMIU}"
+   ]
+  }
+ ]
+}
