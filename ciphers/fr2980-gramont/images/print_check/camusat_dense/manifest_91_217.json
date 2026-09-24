@@ -1,0 +1,968 @@
+{
+ "ark": "bpt6k5039434",
+ "edition": "Camusat, Meslanges historiques, 1644 Troyes 3rd ed.",
+ "tract": "Lettres du Roy Francois premier & instructions a ses Ambassadeurs...avec le Roy d'Angleterre Henry 8 (own foliation 1-217; canvas = 155+2*(folio-1) recto, 156+2*(folio-1) verso)",
+ "pass": "print-check worker for LANE V, folios 91-217 recto (excl. 120/150/180 already read in prior sampling pass) plus requested versos f.2v-3v/f.34v/f.64v/f.82v-84v and the discovered England-affair dossier versos f.171v-177v (24 Sept 2026)",
+ "note": "No 20 May 1530 letter from Gramont to Villandry or the King found. The tract's text itself ends 'FIN' at f.211r (signed du Prat, 28 Dec 1532); f.212r-217r are unrelated filler (Dinteville family deeds, 1429/1594 Troyes municipal documents). A genuine dossier of Gramont-authored letters to the Pope on the Henry VIII divorce affair was found at f.171v-178r ('Fin des lettres de l'affaire d'Angleterre'), all dated 1531-1534 -- not 20 May 1530, not addressed to Villandry or the King. Most folios were fetched to disk, read this session, then deleted (not committed) to stay under the 30MB/folder cap; 4 representative images are committed (dossier start/Gramont-header/dossier-end/tract-FIN); re-fetch any other folio from its url above (one request, 1.5s+ apart).",
+ "entries": [
+  {
+   "folio": "f91",
+   "side": "r",
+   "canvas": 335,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f335/full/,1000/0/native.jpg",
+   "content": "A Monsieur d'Auxerre (letter continues, undated on this page)"
+  },
+  {
+   "folio": "f92",
+   "side": "r",
+   "canvas": 337,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f337/full/,1000/0/native.jpg",
+   "content": "dated Chasteau-Briant 16 May 1531 (letter ends); new letter to Auxerre dated 26/18 (month not stated on page)"
+  },
+  {
+   "folio": "f93",
+   "side": "r",
+   "canvas": 339,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f339/full/,1000/0/native.jpg",
+   "content": "dated Chasteau-Briant 17 June 1531 (letter ends); new letter 'A Monsieur d'Auxerre ... a Rome' undated on this page"
+  },
+  {
+   "folio": "f94",
+   "side": "r",
+   "canvas": 341,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f341/full/,1000/0/native.jpg",
+   "content": "dated Londres 21 Juin [1532]; new letter to Euesque d'Auxerre mentions 'Commandeur de Villiers' -- NOT Villandry, a different name/title"
+  },
+  {
+   "folio": "f95",
+   "side": "r",
+   "canvas": 343,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f343/full/,1000/0/native.jpg",
+   "content": "dated Villancher 26 Juin; Mommorency letter; Coppie de lettre de Boyssygauet & Migret to Pomponio Trevolce, Suysse"
+  },
+  {
+   "folio": "f96",
+   "side": "r",
+   "canvas": 345,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f345/full/,1000/0/native.jpg",
+   "content": "continuation, Schanerach fire narrative (Ferdinand/Bohemia)"
+  },
+  {
+   "folio": "f97",
+   "side": "r",
+   "canvas": 347,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f347/full/,1000/0/native.jpg",
+   "content": "continuation, Ambassadeurs Duc de Milan; Monseigneur Mr de Vely"
+  },
+  {
+   "folio": "f98",
+   "side": "r",
+   "canvas": 349,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f349/full/,1000/0/native.jpg",
+   "content": "dated Malte 7 Juillet 1532, Ph. de Villiers L'Isle Adam; new 'Coppie des lettres de Mons. le grand Maistre a Mons. d'Auxerre du 21 Iuillet 1532' -- mentions 'Cardinal de Grammont' as third party (letter sent to him, not from him)"
+  },
+  {
+   "folio": "f99",
+   "side": "r",
+   "canvas": 351,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f351/full/,1000/0/native.jpg",
+   "content": "continuation Mommorency; Lettres des Ambassadeurs de Suysse au Seigneur Pomponyo"
+  },
+  {
+   "folio": "f100",
+   "side": "r",
+   "canvas": 353,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f353/full/,1000/0/native.jpg",
+   "content": "continuation; A Monsieur Monsieur d'Auxerre, dated by reply to letters of 7/28 Avril & 1 Iuin"
+  },
+  {
+   "folio": "f101",
+   "side": "r",
+   "canvas": 355,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f355/full/,1000/0/native.jpg",
+   "content": "continuation Malte 14 Aoust; Coppie d'une lettre de Ratisbonne du 14 iour d'Aoust 1532"
+  },
+  {
+   "folio": "f102",
+   "side": "r",
+   "canvas": 357,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f357/full/,1000/0/native.jpg",
+   "content": "continuation Ratisbonne news; A Monsieur d'Auxerre reply to 19 Juillet"
+  },
+  {
+   "folio": "f103",
+   "side": "r",
+   "canvas": 359,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f359/full/,1000/0/native.jpg",
+   "content": "dated Nantes 24 Aoust 1532 (Breton); A Mon Cousin Monsieur l'Euesque d'Auxerre Conseiller & Ambassadeur a Rome"
+  },
+  {
+   "folio": "f104",
+   "side": "r",
+   "canvas": 361,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f361/full/,1000/0/native.jpg",
+   "content": "dated Nantes 26 Aoust 1531 (Mommorency); Copie extraicte de plusieurs lettres, Vienne/Nuremberg/Auspurg 4-16 Septembre 1532"
+  },
+  {
+   "folio": "f105",
+   "side": "r",
+   "canvas": 363,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f363/full/,1000/0/native.jpg",
+   "content": "continuation; Double d'articles de lettres d'Allemagne du 2/9 Septembre"
+  },
+  {
+   "folio": "f106",
+   "side": "r",
+   "canvas": 365,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f365/full/,1000/0/native.jpg",
+   "content": "continuation, Latin diplomatic treaty terms (England, undated on page)"
+  },
+  {
+   "folio": "f107",
+   "side": "r",
+   "canvas": 367,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f367/full/,1000/0/native.jpg",
+   "content": "continuation, Anglo-French royal interview narrative (Field of Cloth of Gold-style meeting, undated on page)"
+  },
+  {
+   "folio": "f108",
+   "side": "r",
+   "canvas": 369,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f369/full/,1000/0/native.jpg",
+   "content": "continuation, dinner scene naming 'Cardinaux de Tournon & de Gramont' among guests, dated 29 Octobre [1532]"
+  },
+  {
+   "folio": "f109",
+   "side": "r",
+   "canvas": 371,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f371/full/,1000/0/native.jpg",
+   "content": "continuation Boulogne interview narrative"
+  },
+  {
+   "folio": "f110",
+   "side": "r",
+   "canvas": 373,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f373/full/,1000/0/native.jpg",
+   "content": "continuation, Turk/Chrestiente assembly letter, Calais 28 Octobre"
+  },
+  {
+   "folio": "f111",
+   "side": "r",
+   "canvas": 375,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f375/full/,1000/0/native.jpg",
+   "content": "dated Calais 28 Octobre 1532 (treaty signed Henry/Francois); new 'Traicte touchant la contribution' heading"
+  },
+  {
+   "folio": "f112",
+   "side": "r",
+   "canvas": 377,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f377/full/,1000/0/native.jpg",
+   "content": "continuation treaty; new 'Coppie des memoires pour Messeigneurs ... Cardinaux de Tournon & de Gramont' (instructions document, not a Gramont-authored letter)"
+  },
+  {
+   "folio": "f113",
+   "side": "r",
+   "canvas": 379,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f379/full/,1000/0/native.jpg",
+   "content": "continuation memoires (annates/benefices)"
+  },
+  {
+   "folio": "f114",
+   "side": "r",
+   "canvas": 381,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f381/full/,1000/0/native.jpg",
+   "content": "continuation memoires re Rome ambassadors, Roy Iean de Hongrie"
+  },
+  {
+   "folio": "f115",
+   "side": "r",
+   "canvas": 383,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f383/full/,1000/0/native.jpg",
+   "content": "continuation; A Monsieur Monsieur d'Auxerre, dated Amyens 13 Novembre 1532"
+  },
+  {
+   "folio": "f116",
+   "side": "r",
+   "canvas": 385,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f385/full/,1000/0/native.jpg",
+   "content": "continuation; dated De Sollerre 9 Ianuier 1533 (Meigret/Dangerant); A Monsieur d'Auxerre re 'cinq Quentons'"
+  },
+  {
+   "folio": "f117",
+   "side": "r",
+   "canvas": 387,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f387/full/,1000/0/native.jpg",
+   "content": "continuation; mentions 'Cardinaux de Tournon & de Grantmont' arrived at Rome; dated Paris 26 Decembre 1532"
+  },
+  {
+   "folio": "f118",
+   "side": "r",
+   "canvas": 389,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f389/full/,1000/0/native.jpg",
+   "content": "continuation; A Monseigneur le grand Maistre, mentions 'Cardinaux de Tournon & de Grantmont', dated Bolongne 7 Ianuier 1533"
+  },
+  {
+   "folio": "f119",
+   "side": "r",
+   "canvas": 391,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f391/full/,1000/0/native.jpg",
+   "content": "continuation; A Monsieur d'Auxerre 9 Ianuier 1533; new 'A Monsieur, Monsieur d'Auxerre Ambassadeur pour le Roy tres-Chrestien vers nostre Sainct Pere' heading"
+  },
+  {
+   "folio": "f121",
+   "side": "r",
+   "canvas": 395,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f395/full/,1000/0/native.jpg",
+   "content": "continuation A Monseigneur Monseigneur le grand Maistre de France; mentions Cardinaux Tournon/Gramont arrived"
+  },
+  {
+   "folio": "f122",
+   "side": "r",
+   "canvas": 397,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f397/full/,1000/0/native.jpg",
+   "content": "dated Carmagnole dernier iour de Ianvier 1533 (Marquis de Saluces); new 'AV ROY' (Norfolk/Sire letter)"
+  },
+  {
+   "folio": "f123",
+   "side": "r",
+   "canvas": 399,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f399/full/,1000/0/native.jpg",
+   "content": "continuation Norfolk/Gregoire de Casal; A Monseigneur le grand Maistre, mentions 'Cardinaux de Tournon & de Grantmont'"
+  },
+  {
+   "folio": "f124",
+   "side": "r",
+   "canvas": 401,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f401/full/,1000/0/native.jpg",
+   "content": "continuation Emperor/France alliance; new 'AV ROY, NOSTRE SOVVERAIN Seigneur' (Dinteville)"
+  },
+  {
+   "folio": "f125",
+   "side": "r",
+   "canvas": 403,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f403/full/,1000/0/native.jpg",
+   "content": "continuation Dinteville, dated Londres 26 Feburier; new 'A Mon cousin Monsieur le Bailly de Troyes'"
+  },
+  {
+   "folio": "f126",
+   "side": "r",
+   "canvas": 405,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f405/full/,1000/0/native.jpg",
+   "content": "continuation Bailly de Troyes letters; various diplomatic news"
+  },
+  {
+   "folio": "f127",
+   "side": "r",
+   "canvas": 407,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f407/full/,1000/0/native.jpg",
+   "content": "continuation; new 'A Mon Cousin Monsieur le Cardinal de Tournon' letter mentioning 'mon cousin le Cardinal de Gramont' (both en route to Rome)"
+  },
+  {
+   "folio": "f128",
+   "side": "r",
+   "canvas": 409,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f409/full/,1000/0/native.jpg",
+   "content": "continuation Cardinal de Tournon letter, dated 9 Iuin 1531 (marginal date); new 'A Monsieur le Bailly de Troyes ... perpetuel allie' dated 29 May"
+  },
+  {
+   "folio": "f129",
+   "side": "r",
+   "canvas": 411,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f411/full/,1000/0/native.jpg",
+   "content": "continuation, mentions Cardinaux de Tournon & de Gramont letters of 18th; dated Lyon 16 Iuin 1533"
+  },
+  {
+   "folio": "f130",
+   "side": "r",
+   "canvas": 413,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f413/full/,1000/0/native.jpg",
+   "content": "continuation Mascon/Tournuz travel; A Monsieur du Bellay Euesque de Paris"
+  },
+  {
+   "folio": "f131",
+   "side": "r",
+   "canvas": 415,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f415/full/,1000/0/native.jpg",
+   "content": "continuation Anglo-French diplomacy; dated 9 Iuin 1531/1533 context"
+  },
+  {
+   "folio": "f132",
+   "side": "r",
+   "canvas": 417,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f417/full/,1000/0/native.jpg",
+   "content": "continuation, mentions Cardinaux de Tournon et de Gramont; dated Lyon 16 Iuin 1533"
+  },
+  {
+   "folio": "f133",
+   "side": "r",
+   "canvas": 419,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f419/full/,1000/0/native.jpg",
+   "content": "continuation Neufcastel truce/Venise; Roy d'Escosse; dated Lyon 16 Iuin 1533"
+  },
+  {
+   "folio": "f134",
+   "side": "r",
+   "canvas": 421,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f421/full/,1000/0/native.jpg",
+   "content": "continuation, mort de la Royne Marie Duchesse de Suffolk, dated 30 Iuin 1533"
+  },
+  {
+   "folio": "f135",
+   "side": "r",
+   "canvas": 423,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f423/full/,1000/0/native.jpg",
+   "content": "continuation Merveilles/Milan escuyer beheaded narrative"
+  },
+  {
+   "folio": "f136",
+   "side": "r",
+   "canvas": 425,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f425/full/,1000/0/native.jpg",
+   "content": "continuation Merveilles narrative, sentence against Roi d'Angleterre from Rome mentioned"
+  },
+  {
+   "folio": "f137",
+   "side": "r",
+   "canvas": 427,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f427/full/,1000/0/native.jpg",
+   "content": "dated Narbonne 12 Aoust 1533; A Monsieur le Bailly de Troyes (trefue Escosse/Angleterre)"
+  },
+  {
+   "folio": "f138",
+   "side": "r",
+   "canvas": 429,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f429/full/,1000/0/native.jpg",
+   "content": "continuation trefue Escosse; A Monsieur le Bailly de Troyes, Rochefort/Norsfolk"
+  },
+  {
+   "folio": "f139",
+   "side": "r",
+   "canvas": 431,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f431/full/,1000/0/native.jpg",
+   "content": "continuation Norsfolk; dated Lyon 29 Iuillet/Arles 17 Septembre 1533 (naissance Elizabeth mentioned nearby)"
+  },
+  {
+   "folio": "f140",
+   "side": "r",
+   "canvas": 433,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f433/full/,1000/0/native.jpg",
+   "content": "continuation, dated Londres 3 Septembre 1533; A Monsieur le Bailly de Troyes"
+  },
+  {
+   "folio": "f141",
+   "side": "r",
+   "canvas": 435,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f435/full/,1000/0/native.jpg",
+   "content": "dated Arles 17 Septembre 1533; AV ROY -- naissance d'Elyzabeth (fille de la Royne d'Angleterre) announced"
+  },
+  {
+   "folio": "f142",
+   "side": "r",
+   "canvas": 437,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f437/full/,1000/0/native.jpg",
+   "content": "A Monsieur Monsieur le Bailly de Troyes ... en Angleterre, dated Marseilles 15 Octobre [1533]"
+  },
+  {
+   "folio": "f143",
+   "side": "r",
+   "canvas": 439,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f439/full/,1000/0/native.jpg",
+   "content": "continuation, dated Grenvviche 2 Nouembre 1533; new 'LETTRES DVDICT SIEVR LE Bailly a Mr le grand Maistre'"
+  },
+  {
+   "folio": "f144",
+   "side": "r",
+   "canvas": 441,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f441/full/,1000/0/native.jpg",
+   "content": "continuation; dated Londres 7 Nouembre 1533 (Dinteville); new section 'LETTRES ESCRIPTES A Mr. d'Auxerre par Mr. de Baif ... Ambassadeur ... a Venise'"
+  },
+  {
+   "folio": "f145",
+   "side": "r",
+   "canvas": 443,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f443/full/,1000/0/native.jpg",
+   "content": "continuation Baif letters (Venise), Turc/Hongrie news"
+  },
+  {
+   "folio": "f146",
+   "side": "r",
+   "canvas": 445,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f445/full/,1000/0/native.jpg",
+   "content": "continuation Baif; dated Venise 3 Feburier and 24 Auril (years not on page)"
+  },
+  {
+   "folio": "f147",
+   "side": "r",
+   "canvas": 447,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f447/full/,1000/0/native.jpg",
+   "content": "continuation Baif, dated Venise 24 May [1532]"
+  },
+  {
+   "folio": "f148",
+   "side": "r",
+   "canvas": 449,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f449/full/,1000/0/native.jpg",
+   "content": "continuation Baif, dated Venise dernier Iuin [1532]"
+  },
+  {
+   "folio": "f149",
+   "side": "r",
+   "canvas": 451,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f451/full/,1000/0/native.jpg",
+   "content": "continuation Baif, dated Venise 5 Aoust 1532, then 1 Octobre 1532"
+  },
+  {
+   "folio": "f151",
+   "side": "r",
+   "canvas": 455,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f455/full/,1000/0/native.jpg",
+   "content": "continuation, dated Venise 18 [month cut]; new letter re chiffre"
+  },
+  {
+   "folio": "f152",
+   "side": "r",
+   "canvas": 457,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f457/full/,1000/0/native.jpg",
+   "content": "explicit reference to correspondence 'en chiffre' (in cipher) between Baif/Auxerre and the Pape; dated Venise 18 Nouembre -- birth of a Ferrare ducal daughter mentioned, NOT Gramont/Villandry"
+  },
+  {
+   "folio": "f153",
+   "side": "r",
+   "canvas": 459,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f459/full/,1000/0/native.jpg",
+   "content": "continuation; dated Venise 15 Ianuier 1533; new section 'LETTRES DE Mr DE VELY Ambassadeur pres de l'Empereur'"
+  },
+  {
+   "folio": "f154",
+   "side": "r",
+   "canvas": 461,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f461/full/,1000/0/native.jpg",
+   "content": "continuation Vely letters (Emperor's court)"
+  },
+  {
+   "folio": "f155",
+   "side": "r",
+   "canvas": 463,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f463/full/,1000/0/native.jpg",
+   "content": "continuation Dodieu letter, dated Regensbruch 15 Aoust 1532; new 'A Mr D'AVXERRE MON CONSEILLER & Ambassadeur en Cour de Rome' -- retrospective letter re King's 1525 Spanish captivity, mentions commissioning 'le Cardinal de Grantmont & le President des Enquestes' as legal commissioners (NOT a Gramont-authored letter, NOT dated 1530)"
+  },
+  {
+   "folio": "f156",
+   "side": "r",
+   "canvas": 465,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f465/full/,1000/0/native.jpg",
+   "content": "continuation captivity-era letter; Rochefort/Emperor 5-article letter"
+  },
+  {
+   "folio": "f157",
+   "side": "r",
+   "canvas": 467,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f467/full/,1000/0/native.jpg",
+   "content": "continuation Emperor/Savoie/Piemont diplomacy"
+  },
+  {
+   "folio": "f158",
+   "side": "r",
+   "canvas": 469,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f469/full/,1000/0/native.jpg",
+   "content": "continuation, funeral narrative of Charles VI (1422) -- unrelated historical digression"
+  },
+  {
+   "folio": "f159",
+   "side": "r",
+   "canvas": 471,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f471/full/,1000/0/native.jpg",
+   "content": "continuation Charles VI funeral procession detail"
+  },
+  {
+   "folio": "f160",
+   "side": "r",
+   "canvas": 473,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f473/full/,1000/0/native.jpg",
+   "content": "continuation funeral procession; accession of Charles VII"
+  },
+  {
+   "folio": "f161",
+   "side": "r",
+   "canvas": 475,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f475/full/,1000/0/native.jpg",
+   "content": "continuation, funeral conclusion; new geographic treatise on roads into Italy via Charlemagne narrative"
+  },
+  {
+   "folio": "f162",
+   "side": "r",
+   "canvas": 477,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f477/full/,1000/0/native.jpg",
+   "content": "continuation, roads into Italy (Grenoble/Montgeneure passage description)"
+  },
+  {
+   "folio": "f163",
+   "side": "r",
+   "canvas": 479,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f479/full/,1000/0/native.jpg",
+   "content": "continuation, roads into Italy (further passes)"
+  },
+  {
+   "folio": "f164",
+   "side": "r",
+   "canvas": 481,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f481/full/,1000/0/native.jpg",
+   "content": "continuation, Col de l'Argentiere / Provence passes"
+  },
+  {
+   "folio": "f165",
+   "side": "r",
+   "canvas": 483,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f483/full/,1000/0/native.jpg",
+   "content": "continuation, Vintimille/Genes/Nice geography; Iulius Caesar note"
+  },
+  {
+   "folio": "f166",
+   "side": "r",
+   "canvas": 485,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f485/full/,1000/0/native.jpg",
+   "content": "continuation, description of Italy's regions/length; division into nine parts begins"
+  },
+  {
+   "folio": "f167",
+   "side": "r",
+   "canvas": 487,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f487/full/,1000/0/native.jpg",
+   "content": "continuation, description of Venice territory"
+  },
+  {
+   "folio": "f168",
+   "side": "r",
+   "canvas": 489,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f489/full/,1000/0/native.jpg",
+   "content": "continuation Italy regional description"
+  },
+  {
+   "folio": "f169",
+   "side": "r",
+   "canvas": 491,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f491/full/,1000/0/native.jpg",
+   "content": "continuation Italy; Romaigne region, Sforza/Visconti/Orleans genealogy"
+  },
+  {
+   "folio": "f170",
+   "side": "r",
+   "canvas": 493,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f493/full/,1000/0/native.jpg",
+   "content": "continuation Italy geography; new 'SOMMAIRE DE CE QVE LES SEIGNEVRS ET COMMVNAVLTEZ D'ITALIE TIRENT ...' (revenue table)"
+  },
+  {
+   "folio": "f171",
+   "side": "r",
+   "canvas": 495,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f495/full/,1000/0/native.jpg",
+   "content": "BLANK LEAF (recto) -- verified by two independent fetches (thumbnail and native resolution); a genuine blank page between the Italy geography section and the next dossier"
+  },
+  {
+   "folio": "f172",
+   "side": "r",
+   "canvas": 497,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f497/full/,1000/0/native.jpg",
+   "content": "'LETTRES DE MONSIEVR LE CARDINAL DE GRAMONT a nostre S. Pere pour l'affaire du Roy d'Angleterre' -- Gramont's own Latin letter to the Pope begins here (see f171v); sub-letters 'A Monsieur le Legat du 7 Feburier 1532' and 'A Monsieur le grand Maistre du 13 Iuillet 1532' follow on this page"
+  },
+  {
+   "folio": "f173",
+   "side": "r",
+   "canvas": 499,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f499/full/,1000/0/native.jpg",
+   "content": "continuation of the England-affair dossier; A Monsieur le Legat du 7 Feburier 1532 (continues)"
+  },
+  {
+   "folio": "f174",
+   "side": "r",
+   "canvas": 501,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f501/full/,1000/0/native.jpg",
+   "content": "continuation; England-affair correspondence continues, Norfolk/consistoire detail"
+  },
+  {
+   "folio": "f175",
+   "side": "r",
+   "canvas": 503,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f503/full/,1000/0/native.jpg",
+   "content": "continuation England-affair dossier"
+  },
+  {
+   "folio": "f176",
+   "side": "r",
+   "canvas": 505,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f505/full/,1000/0/native.jpg",
+   "content": "continuation England-affair dossier"
+  },
+  {
+   "folio": "f177",
+   "side": "r",
+   "canvas": 507,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f507/full/,1000/0/native.jpg",
+   "content": "continuation England-affair dossier, papal sentence against Henry VIII discussed"
+  },
+  {
+   "folio": "f178",
+   "side": "r",
+   "canvas": 509,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f509/full/,1000/0/native.jpg",
+   "content": "'Fin des lettres de l'affaire d'Angleterre' -- dossier ends here, last letter signed Pomponio Trivultio, Lyon 16 Auril 1534; new unrelated letter begins immediately after (Rainse/Imperial threats)"
+  },
+  {
+   "folio": "f179",
+   "side": "r",
+   "canvas": 511,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f511/full/,1000/0/native.jpg",
+   "content": "continuation of the new (post-England-affair) letter -- unrelated diplomatic matter, later 1530s context"
+  },
+  {
+   "folio": "f181",
+   "side": "r",
+   "canvas": 515,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f515/full/,1000/0/native.jpg",
+   "content": "continuation; A Mr. LE GRAND MAISTRE du 17 Feburier 1532"
+  },
+  {
+   "folio": "f182",
+   "side": "r",
+   "canvas": 517,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f517/full/,1000/0/native.jpg",
+   "content": "continuation Hongrie/Roy Iean diplomacy"
+  },
+  {
+   "folio": "f183",
+   "side": "r",
+   "canvas": 519,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f519/full/,1000/0/native.jpg",
+   "content": "continuation; Cardinaux de Monsieur de Tholose; Casal/Angleterre"
+  },
+  {
+   "folio": "f184",
+   "side": "r",
+   "canvas": 521,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f521/full/,1000/0/native.jpg",
+   "content": "continuation; A Mr. LE GRAND MAISTRE du 8 Feburier 1532, mentions 'Le Card. de Medicis'"
+  },
+  {
+   "folio": "f185",
+   "side": "r",
+   "canvas": 523,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f523/full/,1000/0/native.jpg",
+   "content": "continuation; A Mr. LE GRAND MAISTRE du 22 Feburier 1532"
+  },
+  {
+   "folio": "f186",
+   "side": "r",
+   "canvas": 525,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f525/full/,1000/0/native.jpg",
+   "content": "continuation; A Mr. LE GRAND MAISTRE du 7 Mars 1532"
+  },
+  {
+   "folio": "f187",
+   "side": "r",
+   "canvas": 527,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f527/full/,1000/0/native.jpg",
+   "content": "continuation grand Maistre letters (Florence/Siena/Tuscany)"
+  },
+  {
+   "folio": "f188",
+   "side": "r",
+   "canvas": 529,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f529/full/,1000/0/native.jpg",
+   "content": "continuation; A Mr. LE GRAND MAISTRE du 7 Mars 1532 (second)"
+  },
+  {
+   "folio": "f189",
+   "side": "r",
+   "canvas": 531,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f531/full/,1000/0/native.jpg",
+   "content": "continuation, mentions 'Monsieur le Cardinal de Gramont & par Monsieur d'Albanie' as third parties (Hongrie affair); A Mr. LE GRAND MAISTRE du 20 Mars 1532"
+  },
+  {
+   "folio": "f190",
+   "side": "r",
+   "canvas": 533,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f533/full/,1000/0/native.jpg",
+   "content": "continuation; A Mr. LE GRAND MAISTRE du 20 Mars 1532 (Cardinal de Medicis, Florence)"
+  },
+  {
+   "folio": "f191",
+   "side": "r",
+   "canvas": 535,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f535/full/,1000/0/native.jpg",
+   "content": "continuation grand Maistre correspondence"
+  },
+  {
+   "folio": "f192",
+   "side": "r",
+   "canvas": 537,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f537/full/,1000/0/native.jpg",
+   "content": "continuation, Duc Alexandre/Empereur alliance intrigue"
+  },
+  {
+   "folio": "f193",
+   "side": "r",
+   "canvas": 539,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f539/full/,1000/0/native.jpg",
+   "content": "continuation Italy defence discussion"
+  },
+  {
+   "folio": "f194",
+   "side": "r",
+   "canvas": 541,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f541/full/,1000/0/native.jpg",
+   "content": "continuation, Empereur venue en Italie"
+  },
+  {
+   "folio": "f195",
+   "side": "r",
+   "canvas": 543,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f543/full/,1000/0/native.jpg",
+   "content": "continuation, Empereur/Pape chapitres discussion"
+  },
+  {
+   "folio": "f196",
+   "side": "r",
+   "canvas": 545,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f545/full/,1000/0/native.jpg",
+   "content": "continuation; A Mr. LE GRAND MAISTRE du 28 Mars 1532"
+  },
+  {
+   "folio": "f197",
+   "side": "r",
+   "canvas": 547,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f547/full/,1000/0/native.jpg",
+   "content": "continuation; AV ROY du 29 Auril 1532; A M. LE GRAND MAISTRE du 13 May 1532"
+  },
+  {
+   "folio": "f198",
+   "side": "r",
+   "canvas": 549,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f549/full/,1000/0/native.jpg",
+   "content": "continuation grand Maistre letter (Caigny/Cardinal Iean Paule)"
+  },
+  {
+   "folio": "f199",
+   "side": "r",
+   "canvas": 551,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f551/full/,1000/0/native.jpg",
+   "content": "continuation (Espagnols/Iean Paule/Cardinal Dofme)"
+  },
+  {
+   "folio": "f200",
+   "side": "r",
+   "canvas": 553,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f553/full/,1000/0/native.jpg",
+   "content": "letter correspondence, 1531-1533 (no Gramont/Villandry/May-1530 hit; not individually annotated)"
+  },
+  {
+   "folio": "f201",
+   "side": "r",
+   "canvas": 555,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f555/full/,1000/0/native.jpg",
+   "content": "continuation Iean Paule/Pape"
+  },
+  {
+   "folio": "f202",
+   "side": "r",
+   "canvas": 557,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f557/full/,1000/0/native.jpg",
+   "content": "continuation; A MONSIEVR D'ALBANIE du 27 Iuin 1532"
+  },
+  {
+   "folio": "f203",
+   "side": "r",
+   "canvas": 559,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f559/full/,1000/0/native.jpg",
+   "content": "continuation; A Mr. LE GRAND MAISTRE du 13 Iuillet 1532 (mort du Cardinal Colomne)"
+  },
+  {
+   "folio": "f204",
+   "side": "r",
+   "canvas": 561,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f561/full/,1000/0/native.jpg",
+   "content": "continuation; A Mr. LE GRAND MAISTRE du 5 Aoust 1532 (Colonna poisoning investigation)"
+  },
+  {
+   "folio": "f205",
+   "side": "r",
+   "canvas": 563,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f563/full/,1000/0/native.jpg",
+   "content": "continuation, Napoleon Vrsin/Vycovare affair"
+  },
+  {
+   "folio": "f206",
+   "side": "r",
+   "canvas": 565,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f565/full/,1000/0/native.jpg",
+   "content": "continuation Turc/Empereur news, Vicovaro siege"
+  },
+  {
+   "folio": "f207",
+   "side": "r",
+   "canvas": 567,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f567/full/,1000/0/native.jpg",
+   "content": "continuation; mentions 'Cardinaux de Tournon et de Gramont' arriving; AVTRE LETTRE section"
+  },
+  {
+   "folio": "f208",
+   "side": "r",
+   "canvas": 569,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f569/full/,1000/0/native.jpg",
+   "content": "continuation, Souysses/Milan payments, Concile discussion"
+  },
+  {
+   "folio": "f209",
+   "side": "r",
+   "canvas": 571,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f571/full/,1000/0/native.jpg",
+   "content": "continuation, Cardinal's justification speech"
+  },
+  {
+   "folio": "f210",
+   "side": "r",
+   "canvas": 573,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f573/full/,1000/0/native.jpg",
+   "content": "new 'SVYVENT DEVX LETTRES de Mr. le Chancelier du Prat', A Mr. D'AVXERRE; mentions 'memoires de messieurs de Gramont & duc d'Albanie' re Concordat revocation (not a Gramont-authored letter)"
+  },
+  {
+   "folio": "f211",
+   "side": "r",
+   "canvas": 575,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f575/full/,1000/0/native.jpg",
+   "content": "continuation Chancelier du Prat letter, mentions 'le Reuerend de Grantmont' as a councillor name-check; dated Abbeuille 28 Decembre [1532]; signed 'FIN.' -- END of the 'Lettres du Roy Francois premier' tract text itself"
+  },
+  {
+   "folio": "f212",
+   "side": "r",
+   "canvas": 577,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f577/full/,1000/0/native.jpg",
+   "content": "post-FIN filler content: genealogical/biographical notes on the Deschenetz/Dinteville family (spanning 1531-1619), unrelated to Gramont/1530"
+  },
+  {
+   "folio": "f213",
+   "side": "r",
+   "canvas": 579,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f579/full/,1000/0/native.jpg",
+   "content": "continuation Dinteville genealogy; new 'ACTE FAICT PAR LE PREVOST de Chaulmont pour ledict Iean de Dinteville en l'an 1438' (a 1438 legal deed)"
+  },
+  {
+   "folio": "f214",
+   "side": "r",
+   "canvas": 581,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f581/full/,1000/0/native.jpg",
+   "content": "continuation 1438 deed narrative (Deschenetz seizure)"
+  },
+  {
+   "folio": "f215",
+   "side": "r",
+   "canvas": 583,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f583/full/,1000/0/native.jpg",
+   "content": "continuation deed; new 'LETTRES DV ROY CHARLES 7 sur la reduction de la Ville de Troyes' (1429 municipal submission)"
+  },
+  {
+   "folio": "f216",
+   "side": "r",
+   "canvas": 585,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f585/full/,1000/0/native.jpg",
+   "content": "continuation Charles VII charter (dated 1429); new 'EXTRAICT DV PROCES VERBAL de l'assemblee tenue ... a Troyes le Mardy 5 Auril 1594' -- confirms the volume's tail end is unrelated later Troyes civic history"
+  },
+  {
+   "folio": "f217",
+   "side": "r",
+   "canvas": 587,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f587/full/,1000/0/native.jpg",
+   "content": "continuation of the 1594 Troyes assembly minutes -- last folio of the requested range"
+  },
+  {
+   "folio": "f2",
+   "side": "v",
+   "canvas": 158,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f158/full/,1000/0/native.jpg",
+   "content": "continuation of the Jan 1532 Tournon/Gramont letter to the king (co-signed letter begun at f.2r/f.3r in the earlier dense pass)"
+  },
+  {
+   "folio": "f3",
+   "side": "v",
+   "canvas": 160,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f160/full/,1000/0/native.jpg",
+   "content": "continuation of same letter; mentions Cardinal de Mantoue, Andre Dorie/Boulongne"
+  },
+  {
+   "folio": "f34",
+   "side": "v",
+   "canvas": 222,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f222/full/,1000/0/native.jpg",
+   "content": "dated Fontainebleau 20 Iuillet 1531; signed Francois/Breton; 'A Mr le Cardinal de Cesis' note -- not the target letter"
+  },
+  {
+   "folio": "f64",
+   "side": "v",
+   "canvas": 282,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f282/full/,1000/0/native.jpg",
+   "content": "dated Chantilly 29 Septembre 1531 (Francois/Bayard); new 'A MON COVSIN MONSIEVR d'Auxerre Conseiller & Ambassadeur du Roy a Rome'"
+  },
+  {
+   "folio": "f82",
+   "side": "v",
+   "canvas": 318,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f318/full/,1000/0/native.jpg",
+   "content": "mentions 'Mr. le Cardinal de Gramont' remained behind ill at Boulogne (third party), dated Ribemont 24 [Mars]; new letter 'A Monsieur d'Auxerre Ambassadeur ... tres-Chrestien'"
+  },
+  {
+   "folio": "f83",
+   "side": "v",
+   "canvas": 320,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f320/full/,1000/0/native.jpg",
+   "content": "continuation; dated de Coussy 16 Mars [1532] (Mommorency)"
+  },
+  {
+   "folio": "f84",
+   "side": "v",
+   "canvas": 322,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f322/full/,1000/0/native.jpg",
+   "content": "continuation, mentions 'Mr le Cardinal de Gramont' as courier reference point; dated Sainct Marcou 28 Mars 1532"
+  },
+  {
+   "folio": "f172",
+   "side": "v",
+   "canvas": 498,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f498/full/,1000/0/native.jpg",
+   "content": "continuation du Prat Latin letter to Clement VII, dated 'Valle Abbatis 8 Ianuarii 1531' (i.e. Jan 1532 modern); new 'A Mr l'Euesque d'Auxerre mon Conseiller' letter"
+  },
+  {
+   "folio": "f173",
+   "side": "v",
+   "canvas": 500,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f500/full/,1000/0/native.jpg",
+   "content": "continuation Auxerre letter (Concile/Germanye)"
+  },
+  {
+   "folio": "f174",
+   "side": "v",
+   "canvas": 502,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f502/full/,1000/0/native.jpg",
+   "content": "running header now 'Historiques' (page 174); new heading 'SVIVENT PLVSIEVRS LETTRES traictans dudict affaire d'Angleterre dont les minutes originales sont escriptes de la main de Mr. l'Euesque d'Auxerre, ou de son Secretaire'; sub-letters 'A Monsieur le Legat du 17 Ianuier 1532', 'A Mr le Cardinal de Gramont du 7 Feburier [1532]' (letter TO Gramont, not by him), 'A Mr le Cardinal de Tournon du 7 Feburier'"
+  },
+  {
+   "folio": "f175",
+   "side": "v",
+   "canvas": 504,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f504/full/,1000/0/native.jpg",
+   "content": "continuation; 'A Monsieur le grand Maistre du 7 Feburier 1532' (mentions the King's and Cardinals' letters for the England affair)"
+  },
+  {
+   "folio": "f176",
+   "side": "v",
+   "canvas": 506,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f506/full/,1000/0/native.jpg",
+   "content": "continuation; 'A Monsieur le grand Maistre du 8 Feburier 1532'; 'A Monsieur le Legat du Vingt-deuxiesme Feburier 1532'"
+  },
+  {
+   "folio": "f177",
+   "side": "v",
+   "canvas": 508,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k5039434/f508/full/,1000/0/native.jpg",
+   "content": "continuation England-affair dossier; papal sentence discussion; new 'A MONSEIGNEVR MONSIEVR L'Euesque d'Auxerre' letter (Original)"
+  }
+ ]
+}

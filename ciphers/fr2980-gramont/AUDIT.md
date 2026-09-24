@@ -1342,3 +1342,98 @@ main. Bourdeau's forks (arya1515) reach it only as PRs, and none of the earlier 
 Requests this session: api.openalex.org 3 (429), api.semanticscholar.org 2 (429), api.crossref.org 4, github.com 2
 shallow clones plus 1 PR-ref fetch (deleted after), WebSearch 4. No Gallica, no de-crypt.org, no Google Books, no
 archive.org, no logins, no decoding, no subagents.
+
+## Camusat tract, folios 91-217
+
+LANE G print-check worker (Sonnet, for LANE V, orchestrator session_014zWyan51u9qMn9gnHpm1Aq), 05:18-05:34 UTC
+(`date -u` read at start and end). Not a verifier session: does not move the N3 class, does not decode. Job:
+continue the "Camusat tract, dense read" pass (which covered folios 1-90 recto) through the rest of the tract,
+folios 91-217 recto, plus versos f.2v-3v/f.34v/f.64v/f.82v-84v (the brief's original list, near the five known
+Gramont mentions in 1-90) — read against `reading.txt`'s and `reading_f30*.txt`'s decoded phrases and the target
+items' particulars (Gramont, cipher letters to Villandry, Rome, 20 May 1530).
+
+**Method.** Same calibration as the prior pass: canvas = 155+2×(folio−1) for folio N's recto, verso = recto+1;
+this was re-verified against the printed folio numbers visible on the page images themselves (e.g. canvas 496
+prints "171" in the running head) — no offset drift found across the whole range. 124 recto folios were fetched
+(91-217 minus 120/150/180, already read and logged with content in the earlier sampling pass and in "N4 decision,
+24 Sept 2026" §1), plus the 7 requested versos, all at `,1000`-width thumbnails, one request at a time, ≥1.6-1.8 s
+apart, UA `cipher-lab research script (contact via repository)`, `--max-time 30`. **131/131 succeeded** (one
+connection reset on f.174v retried once successfully per the single-retry rule; no altcha/403/429 seen).
+
+**Mid-pass extension (not in the original brief, added because it bore directly on the question).** A recto page
+came back visibly blank (canvas 495, f.171r — confirmed genuinely blank by two independent fetches, thumbnail and
+native resolution, not a fetch failure). Checking its verso (canvas 496, printed folio "171") turned up an
+editorial note announcing a **late-added dossier of Henry VIII divorce-affair documents**, followed immediately by
+a real "LETTRES DE MONSIEVR LE CARDINAL DE GRAMONT à nostre S. Pere pour l'affaire du Roy d'Angleterre" heading —
+i.e. genuine Gramont-authored letters to the Pope, in this very tract, on the right general subject. This was
+worth chasing past the brief's original verso list: 6 further versos (f.172v-177v) were fetched (all succeeded,
+1 retry on f.174v) to read the dossier in full rather than recto-only, since a letter opening on a verso in this
+specific span would otherwise be missed. Total Gallica requests this session: **141** (131 in the main recto+brief-
+verso batch + 2 for the blank-page recheck + 6 dossier-verso extension + 2 earlier isolated re-fetches), under the
+brief's ~160 cap and shared with the other LANE G Gallica fetcher per the two-fetcher/1.5s+/UA courtesy rule.
+
+**Net result: no hit.** Across all 131 folio-sides read this session:
+
+- **No date of May 1530 appears anywhere.** The tract's dated items in this range run continuously from Chasteau-
+  Briant 16 May 1531 (f.92r) through Arles 5 Octobre 1533 (f.141r) and on to Lyon/Venise items into 1534 (f.178r,
+  Trivulzio, 16 Avril 1534), with a retrospective letter at f.155r referring back to the King's 1525 Spanish
+  captivity (still not 1530), plus a run of undated Rome-affair letters at f.181r-211r independently dated by
+  their own headers to Feburier-Aoust 1532. No 1530 material at all was found in 91-217, matching the "not in date
+  order" pattern already established for 1-90.
+- **"Villandry"/"Villandre" does not appear in folios 91-217 recto or in the 13 versos read** (the one earlier hit,
+  f.180, "A Monsieur de Villandre du 4 Decembre 1531", was already logged in the prior sampling pass and is dated
+  18 months after the target, addressing an unrelated Auditor-of-the-Chamber matter).
+- **"Tarbes" does not appear anywhere in this range.**
+- **Gramont is named repeatedly, always as a third party or joint addressee, never alone as a letter's author to
+  Villandry or the King, with one partial exception (see next point).** He appears paired with Tournon as royal
+  agents/cardinals travelling to and residing at Rome (f.98r, f.108r, f.112r [a memoire addressed to both
+  jointly, not authored by either], f.117r, f.118r, f.121r, f.123r, f.126r-f.127r, f.129r, f.132r, f.189r, f.207r,
+  f.210r-f.211r), always dated 1531-1533, never 1530, never Villandry-addressed.
+- **The one real exception: f.171v-178r, "Lettres de Monsieur le Cardinal de Gramont à nostre S. Pere pour
+  l'affaire du Roy d'Angleterre".** This is a distinct, late-added dossier (its own editorial preface at f.171v
+  says the pieces "sont venues en mes mains" after the main tract was already printed) of genuine Gramont-authored
+  Latin/French letters to Pope Clement VII and to the Legate/grand Maistre about Henry VIII's divorce — the
+  closest thing to the target's subject matter found anywhere in this tract. Every dated item inside it, however,
+  is Janvier-Iuillet 1532 through the closing letter (Pomponio Trivulzio, Lyon, 16 Avril 1534, "Fin des lettres de
+  l'affaire d'Angleterre"): **no 20 May 1530 letter, and every letter in the dossier is addressed to the Pope, the
+  Legate or the grand Maistre — none to Villandry or to the King.** This does not match no.21 (f.29r, to Villandry)
+  or no.22 (f.30, to Francis I) on date, addressee or the pattern of both letters being from Gramont directly.
+- **No overlap** between any of these 131 folio-sides' visible text and reading.txt's/reading_f30's distinctive
+  decoded phrases ("le porteur", "l'adresse de dessus", "du vingtiesme", "pour vous donner cognoissance de tout",
+  "la declaration de la liberté de Florence", "la ville et la force entre vos mains") — same non-rigorous visual-
+  scan caveat as the first two passes (Gallica's OCR route is altcha-walled for this ark).
+- **Structural finding: the tract's own text ends "FIN" at f.211r**, signed by Chancelier du Prat, dated Abbeuille
+  28 Decembre [1532] — not at f.217 as the binder's cahier note implied. Folios 212r-217r are printer's filler
+  inside the same gathering: Deschenetz/Dinteville family genealogical notes (spanning 1531-1619), a 1438 legal
+  deed, and Troyes municipal documents from 1429 and (an extract) 1594. None of this is diplomatic correspondence
+  and none of it was searched for anything beyond a visual read for names/dates — no Gramont/Villandry/1530
+  content, as expected for its subject matter.
+
+**Recommendation (not a class change — this worker does not move the class).** Camusat's *Meslanges historiques*
+tract can now be struck from "still open" in its entirety: folios 1-217 recto have been read (dense pass 1-90,
+this pass 91-217), plus 13 versos targeted at every known Gramont mention and at the one verso-side dossier this
+pass turned up. No 20 May 1530 letter from Gramont to Villandry or the King was found. The remaining gap is the
+same one both prior passes flagged: verso sides outside the 13 read here were not fetched, so a letter heading
+landing on one of the other ~200 unread versos in 91-217 is not ruled out — judged the same "minor residual risk"
+as for 1-90, not a reason to keep the family open pending exhaustive verso coverage, given the dense recto pattern
+(letters open at the top of a fresh recto in this edition) held everywhere it was checked in this pass too.
+AUDIT.md "N4 decision, 24 Sept 2026" §1 row for Camusat should be updated by the next verifier session to "covered
+(91-217 recto + 13 targeted versos read, no hit; see 'Camusat tract, folios 91-217')" — this worker does not edit
+that table itself, per its brief. The other principal-family gap (DECODE search, LANE N) is unaffected by this
+session.
+
+### Images
+
+`images/print_check/camusat_dense/manifest_91_217.json` logs all 137 folio-sides read this session (folio, canvas,
+url, one-line content note; every one of the 131 fetched images was viewed). 4 representative images are
+committed (`camusat_f171v_dossier_start.jpg`, `camusat_f172r_gramont_header.jpg`, `camusat_f178r_dossier_end.jpg`,
+`camusat_f211r_fin.jpg`); the other 127 fetched images were read from disk this session and then deleted (not
+committed) to stay under the 30 MB/folder cap — re-fetch any of them from the manifest's per-folio url, one
+request, in seconds.
+
+### Requests this session
+
+gallica.bnf.fr: 141 (see Method above for the breakdown), all ≥1.5-1.8 s apart, one request at a time, UA
+`cipher-lab research script (contact via repository)`, shared with the other LANE G Gallica fetcher per the
+two-fetcher courtesy cap — no other host. No logins, no credentials, no decoding, no subagents, no edits to
+reading.txt/key.tsv/ciphertext.txt/reading_f30*.txt.
