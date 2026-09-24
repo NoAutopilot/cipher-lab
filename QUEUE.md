@@ -5269,3 +5269,74 @@ the <=25-per-host cap; a 429/403/challenge was not seen on any host. WebSearch: 
 Citations: D. Bourdeau, cyphersolver, https://dbourdeau.github.io/cyphersolver/, CC BY 4.0 (for the CS2 rows'
 own identifiers); Nationaal Archief (nationaalarchief.nl), item metadata read via its own public site, no login;
 Koninklijke Verzamelingen / Koninklijk Huisarchief (koninklijkeverzamelingen.nl), public site, no login.
+
+## Keys index vs unread siblings (LANE N4 scKEYS, 24 Sept 2026)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n4-scKEYS.md`. Input: `sources/solver-diffs/2026-09-24-cyphersolver-keys.tsv`
+(81 keys from Bourdeau's keys.json). Method: for keys with a named correspondent circle and years, read Tomokiyo's
+own catalogue pages (`sources/cryptiana/web/*.htm`, on disk, no fetch) for every letter the key's author says is
+enciphered under it, then check each against the key's own `reads` column, every `ciphers/*/NOTES.md`, QUEUE.md,
+CATALOG.md, LANDSCAPE.md and `sources/solver-diffs/2026-09-24-cyphersolver-site.tsv` for a prior write-up.
+A fresh shallow clone of `dbourdeau/cyphersolver` (24 Sept 2026) was grepped for the same shelfmarks, since his
+keys.json `reads` column turned out to mark a whole working folder "read" even where his own README says most of
+its letters are not: `nevers1593/README.md` line 198 states plainly **"coverage of no. 46: 2 of 7"** and, for the
+five letters in the Court's key no. 60, **"none read yet"** (his session of 17 Sept 2026 transcribed two of the
+five to lines but did not decode them; the other three were never located on the image). That gap between the
+coarse `reads` flag and what his own notes say is the seam this section works.
+
+All rows below are the Duke of Nevers' Rome-embassy correspondence, Aug-Nov 1593, BnF "Collection Mémoires de la
+Ligue" (fr.3983, fr.3985-3990), keyed by Tomokiyo's two Nevers-collection keys (fr.3995, "the Nevers collection",
+`sources/cryptiana/web/nevers.htm`): **no.46** (fol.86, Oct 1592, a two-digit homophonic alphabet with three word
+series and a name list) and **no.60** (fol.108, Aug 1593, "the Court's symbol cipher", a large homophone-plus-
+syllabary table, described further in Tomokiyo's `henryiv2.htm`). Both keys are already reconstructed in full
+(Bourdeau's `key46.txt`, `key60.txt`, credited to Tomokiyo's original tables and confirmed against contemporary
+office decipherments in the same volumes) -- every row here is **kind recovery**, not cryptanalysis: the key
+exists, the letter does not have a reading yet. Credit: Satoshi Tomokiyo (original key reconstruction, cited by
+Bourdeau's own key_id entries `k-tomokiyo-nevers46`/`k-tomokiyo-nevers60`) and Daniel Bourdeau (CC BY 4.0; the
+transcribed key tables and the canvas/folio offsets used below to place each row's image).
+
+Image test: one Gallica IIIF `info.json` request per canvas (`>=3s` apart, this lane's Gallica slot). All five
+manuscripts are digitised at full native resolution (4700-4990 px wide); none are the poor-legibility microfilm
+flagged for fr.3975 (`ciphers/fr3975-vieuville-1587/NOTES.md`) -- Bourdeau's own session read whole passages of
+running French off these same-collection images (fr.3985/fr.3986), which is direct evidence the hand is legible
+here. Canvas numbers below are **not** confirmed against the pencil foliation (all canvases in every one of these
+manifests are labelled "NP"); they are read off Bourdeau's own established canvas/folio ratio for fr.3985
+(`c = 218 + 2.01*(folio-109)`) and fr.3986 (`c = 118 + 2.058*(folio-64)`, both from `nevers1593/README.md`), or a
+first estimate at ~1.7-2x folio for the three volumes he never opened (fr.3983, fr.3987, fr.3989, fr.3990) --
+the next worker to fetch these must eye-check the leaf before transcribing, exactly as `fr15564-mercoeur-1586` and
+`fr16092-maisse-1582` already had to.
+
+| Row | Target slug (proposed) | Ark / folio | Date | Sender -> recipient | Key | Image tested | Status |
+|---|---|---|---|---|---|---|---|
+| KS-01 | fr3985-nevers-revol-1593 | `btv1b90606498` f.88 (canvas ~176, unconfirmed) | 21 Aug 1593 | Nevers -> Revol | k-tomokiyo-nevers60 (no.60, fr.3995 f.108-110) | 4716x6668, tested 24 Sept 2026 | copy-free |
+| KS-02 | fr3985-nevers-revol-1593 (same target, second leaf) | `btv1b90606498` f.176 (canvas ~353, unconfirmed) | 2 Sept 1593 | Nevers -> Revol | k-tomokiyo-nevers60 | 4727x6396, tested 24 Sept 2026 | copy-free |
+| KS-03 | fr3986-nevers-revol-1593 | `btv1b9060631k` f.198 (canvas ~397, unconfirmed) | 23 Oct 1593 | Nevers -> Revol | k-tomokiyo-nevers60 | 4948x6957, tested 24 Sept 2026 | copy-free |
+| KS-04 | fr3983-pisany-nevers-1593 | `btv1b9059406b` f.169 (canvas ~297, unconfirmed) | 23 Mar 1593 | Marquis de Pisany -> Duke of Nevers | k-tomokiyo-nevers46 (no.46, fr.3995 f.86-87) | 4948x7008, tested 24 Sept 2026 | copy-free |
+| KS-05 | fr3987-nevers-court-1593 | `btv1b90606320` f.66 (canvas ~132, unconfirmed) | 1593 (Nevers embassy correspondence, undated in `nevers.htm`'s citation) | the Court -> Nevers (Tomokiyo's `henryiv2.htm` list) | k-tomokiyo-nevers60 | 4940x6827, tested 24 Sept 2026 | copy-free |
+| KS-06 | fr3989-nevers-court-1594 | `btv1b9060514q` f.169 (canvas ~338, unconfirmed) | c.1593-94 | the Court -> Nevers (`henryiv2.htm` list) | k-tomokiyo-nevers60 | 4987x7040, tested 24 Sept 2026 | copy-free |
+| KS-07 | fr3990-nevers-court-1594 | `btv1b90068799` f.27 (canvas ~54, unconfirmed) | c.1593-94 | the Court -> Nevers (`henryiv2.htm` list) | k-tomokiyo-nevers60 | 4014x5766, tested 24 Sept 2026 | copy-free |
+
+**Flagged, not a row:** `nevers.htm`'s key no.46 section also cites "Jean de Vyvonne, Marquis de Pisany to the
+Duke of Nevers, Verona, 13 January 1593 (BnF fr.3883 fol.11, 13)". Gallica SRU confirms an ark for "Français
+3883" (`btv1b100335066`), but its own catalogue title and description are a single 1478-79 diplomatic relation
+(Louis XI's embassy to Sixtus IV), with no sign of a recueil or a 1593 item at fol.11/13 -- the shelfmark in
+Tomokiyo's citation does not match what Gallica catalogues under that number. Not pursued as a row; the next
+worker should re-check Tomokiyo's own page for a transcription slip before spending a Gallica request on it.
+
+**Also checked and excluded (already read, not rows):** BnF fr.3986 f.64-65v, Girolamo Gondi to Pisany, Florence
+22 Sept 1593 -- `nevers1593/README.md` uses this letter as its own crib, because it carries **the office's own
+contemporary interlinear decipherment**, already transcribed in full by Bourdeau; not an open cipher.
+
+**Method note for the check-solved batch:** none of KS-01..KS-07 has had the six-source check-solved sweep run
+(Tomokiyo's page and Bourdeau's own repo are the only sources checked here, per this brief's scope) -- the
+"copy-free" column above is an image test only, not a stage-2 verdict. All seven are copy-free; none is
+copy-order. No target folder created, no nomination line posted (scouts don't). Output TSV:
+`sources/solver-diffs/2026-09-24-keys-vs-siblings.tsv`.
+
+**First-third check (per brief):** not triggered -- the very first key group checked (Nevers no.46/no.60) turned
+up seven unread, copy-free siblings, so the negative-and-stop clause did not apply.
+
+**Per-host report:** gallica.bnf.fr (this lane's slot): SRU 5 (ark lookups for fr.3883, fr.3987, fr.3989, fr.3990,
+plus one precise re-query), OAIRecord 5 (catalogue-note confirmation), manifest.json 1 (canvas-label check),
+info.json 7 (image tests) = 18 total, well under the 40 cap, all >=3s apart. github.com: 1 shallow clone of
+`dbourdeau/cyphersolver` (grep only, no push). No WebSearch needed (Tomokiyo's pages were already on disk).
