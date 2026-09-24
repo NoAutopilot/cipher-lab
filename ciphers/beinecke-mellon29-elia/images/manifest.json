@@ -1,0 +1,382 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f1v_L16.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388797/full/full/0/default.jpg",
+   "source_file": "src_2_17388797_full.jpg",
+   "box": [
+    0,
+    1784,
+    2266,
+    1888
+   ],
+   "lines_in_crop": 1,
+   "band": 16,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 309,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f1v_L17.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388797/full/full/0/default.jpg",
+   "source_file": "src_2_17388797_full.jpg",
+   "box": [
+    0,
+    1888,
+    2266,
+    1991
+   ],
+   "lines_in_crop": 1,
+   "band": 17,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 309,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f1v_L18.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388797/full/full/0/default.jpg",
+   "source_file": "src_2_17388797_full.jpg",
+   "box": [
+    0,
+    1991,
+    2266,
+    2091
+   ],
+   "lines_in_crop": 1,
+   "band": 18,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 309,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2r_L08.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388798/full/full/0/default.jpg",
+   "source_file": "src_2_17388798_full.jpg",
+   "box": [
+    0,
+    1076,
+    2174,
+    1177
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 310,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2r_L09.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388798/full/full/0/default.jpg",
+   "source_file": "src_2_17388798_full.jpg",
+   "box": [
+    0,
+    1177,
+    2174,
+    1279
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 310,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2r_L10.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388798/full/full/0/default.jpg",
+   "source_file": "src_2_17388798_full.jpg",
+   "box": [
+    0,
+    1279,
+    2174,
+    1381
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 310,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2v_L01.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388799/full/full/0/default.jpg",
+   "source_file": "src_2_17388799_full.jpg",
+   "box": [
+    0,
+    365,
+    2266,
+    468
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 412,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2v_L02.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388799/full/full/0/default.jpg",
+   "source_file": "src_2_17388799_full.jpg",
+   "box": [
+    0,
+    468,
+    2266,
+    572
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 412,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2v_L03.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388799/full/full/0/default.jpg",
+   "source_file": "src_2_17388799_full.jpg",
+   "box": [
+    0,
+    572,
+    2266,
+    675
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 412,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2v_L04.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388799/full/full/0/default.jpg",
+   "source_file": "src_2_17388799_full.jpg",
+   "box": [
+    0,
+    675,
+    2266,
+    776
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 412,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2v_L05.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388799/full/full/0/default.jpg",
+   "source_file": "src_2_17388799_full.jpg",
+   "box": [
+    0,
+    776,
+    2266,
+    879
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 412,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2v_L06.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388799/full/full/0/default.jpg",
+   "source_file": "src_2_17388799_full.jpg",
+   "box": [
+    0,
+    879,
+    2266,
+    984
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 412,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2v_L07.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388799/full/full/0/default.jpg",
+   "source_file": "src_2_17388799_full.jpg",
+   "box": [
+    0,
+    984,
+    2266,
+    1089
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 412,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2v_L08.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388799/full/full/0/default.jpg",
+   "source_file": "src_2_17388799_full.jpg",
+   "box": [
+    0,
+    1089,
+    2266,
+    1192
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 412,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2v_L09.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388799/full/full/0/default.jpg",
+   "source_file": "src_2_17388799_full.jpg",
+   "box": [
+    0,
+    1192,
+    2266,
+    1293
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 412,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2v_L10.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388799/full/full/0/default.jpg",
+   "source_file": "src_2_17388799_full.jpg",
+   "box": [
+    0,
+    1293,
+    2266,
+    1396
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 412,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2v_L11.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388799/full/full/0/default.jpg",
+   "source_file": "src_2_17388799_full.jpg",
+   "box": [
+    0,
+    1396,
+    2266,
+    1499
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 412,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f2v_L12.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/17388799/full/full/0/default.jpg",
+   "source_file": "src_2_17388799_full.jpg",
+   "box": [
+    0,
+    1499,
+    2266,
+    1618
+   ],
+   "lines_in_crop": 1,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 412,
+    "distance": 90,
+    "prominence": 40.0
+   },
+   "date": "24 Sep 2026"
+  }
+ ]
+}
