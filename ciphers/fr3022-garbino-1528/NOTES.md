@@ -1,5 +1,7 @@
-open
+blocked
 
+
+**Held by the LANE N3 orchestrator, 24 Sept 2026 15:36 UTC:** status `blocked`, not `open`. The standard printed edition or calendar for the date was not located or read in the check-solved pass (section 2 below); under the lane rule (R8 lesson) that verdict is `blocked` until an edition check reads it. The nomination line posted 15:22-15:23 is held, not firm. Edition check: brief `.claude/briefs/runs/2026-09-24-lane-n3-csED.md`.
 # Unsigned letter to Seigneur Garbino, Madrid, 11 April 1528 — BnF fr. 3022 no. 20 (ff.44r-46v)
 
 QUEUE row: CS2-01 (`sources/solver-diffs/2026-09-24-cyphersolver-site.tsv`, LANE N3 scout scCS2, 24 September
