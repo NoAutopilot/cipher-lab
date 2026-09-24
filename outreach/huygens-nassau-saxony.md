@@ -69,4 +69,10 @@ Key: aligned from the contemporary decipherments of WVO 4613 and 4615.
 None of these readings changes the history the editions tell; they add detail and the fact of the secret channel. If
 your editors know a decipherment of any of them, in the KHA or Dresden minutes or elsewhere, we would be glad to cite it.
 
+If it would be useful to the database, we can hand over two things in whatever format suits it: a table of every WVO
+letter we found with a cipher passage (73 letters, with which ones an edition prints in clear and which stand unread,
+sources/wvo/cipher-letters-2026-09-24.tsv in the repository) and the keys as machine-readable tables (the 1574 table,
+the 1562 key of WVO 74, the 1561 postscript key). We would also be glad to try the unread passages you would most like
+read, if you name them; the method is the same as above and every result comes with its search log.
+
 ______ (sign-off left blank for the person)
