@@ -146,7 +146,8 @@ prior plaintext or decipherment located after the logged search below) for each.
   page. One retry each, per the good-citizen rule; stopped, not retried further. **Gap**: Le Grand's actual
   page content for May 1530 (as opposed to the Feb. 1530 letter LP already locates there) was not directly
   verified; a future pass should try a library proxy, a different Google Books mirror, or read the physical
-  volume via HathiTrust/IA if a copy surfaces.
+  volume via HathiTrust/IA if a copy surfaces. *[Second audit, 24 Sept 2026: closed. Le Grand III pp.394-542 read page by page from the
+  MDZ scan bsb10280117 OCR; no Rome letter between 28 March and 20 October 1530. See AUDIT.md, second audit.]*
 - **English 1690 translation** of Le Grand (IA `bim_early-english-books-1641-1700_...le-grand-joachim_1690`)
   located but not searched this pass (English translations of this work are known to abridge the "Preuves"
   documents; lower priority than the French original, not reached under the cap).
@@ -187,7 +188,9 @@ prior plaintext or decipherment located after the logged search below) for each.
   `"Gabriel de Gramont" cardinal Rome mai 1530 lettre chiffrée Villandry`) returned only the BnF finding aid
   itself, Wikipedia biographical pages, and a cardinals-of-the-Church consistory list (confirms Gramont was
   created cardinal 9 March 1530, promoted 8 June 1530 — so as of 20 May 1530 he already held the cardinal's
-  hat, though the manuscript signs him "E. de Tarbe"); no independent hit on the letters' content.
+  hat, though the manuscript signs him "E. de Tarbe"); no independent hit on the letters' content. *[Second-audit correction, 24 Sept 2026: over-claim. He was created cardinal in the consistory of
+  8 June 1530 (LP iv.3 6441-6443); a March reservation is not established by the sources read, and on 20 May 1530
+  he signs as bishop. See AUDIT.md, second audit.]*
 - **Solver repositories**: not re-cloned this pass (the check-solved M8-M11 worker cloned both fresh the same
   day, 23 Sept 2026, and grepped for "2980"/"gramont" with no hits in either — reused rather than repeated per
   the usage rule against duplicate fetches; see that worker's ROOM.md/NOTES.md entry above).
