@@ -46,4 +46,19 @@ def main():
             b, k = sc[0]
             print('  sample at best k:', ' '.join(''.join(ALPHA[((x-1-k) % 120)//5] for x in r) for r in rs[:6])[:300])
             print('  sample at k=0   :', ' '.join(''.join(ALPHA[((x-1) % 120)//5] for x in r) for r in rs[:6])[:300])
-main()
+def french_share(path, k=0, win=12, thr=4.0):
+    """Share of numerals (<=120) lying in at least one window of `win` consecutive numerals that scores under `thr`
+    bits/char under offset k: the per-letter 'reads as French' figure reported in NOTES.md 'W1'."""
+    m = load(); rs = runs(path); ok = tot = 0
+    for r in rs:
+        t = ''.join(ALPHA[((x - 1 - k) % 120) // 5] for x in r); good = [False] * len(t)
+        for i in range(0, max(1, len(t) - win + 1)):
+            if -m.logp(t[i:i + win]) / len(t[i:i + win]) < thr:
+                for j in range(i, min(len(t), i + win)): good[j] = True
+        ok += sum(good); tot += len(t)
+    return ok, tot
+
+if __name__ == "__main__" and "--share" not in sys.argv: main()
+if "--share" in sys.argv:
+    for p in sys.argv[1:]:
+        if p != "--share": ok, tot = french_share(p); print(f"{p}: {ok}/{tot} numerals in French-scoring windows ({100*ok/max(tot,1):.1f}%)")
