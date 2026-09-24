@@ -90,6 +90,25 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## Parent handoff (session cipher-lab-7a, session_01EFmUvFAifLKGdBSsW9mjEG), kept current from 12:05 UTC 24 Sept 2026
+
+The parent orchestrator runs the hourly check-in (trigger trig_01H69HAD37J2BpdbkLAb7rKU, self-bound; its prompt is the
+full duty list: rate limit, swap, JSTOR gate, second-opinion PRs, lanes, parent workers, board, results audit, owner
+report), publishes the board (https://claude.ai/artifact/HzYszSGfSoWPsYXpxvM5zr, built by `python3 tools/build_dashboard.py`
+from status.json; docs/index.html is the Pages copy), keeps ASKS.md and the owner's card (outreach/*.md with `status: ready`),
+and starts lane successors from their handoff sections in this file. Lane table: "Lane structure" section below. Rules in
+force: ten live workers per lane, Sonnet wherever another agent checks the output, an allowed_warning posted by any lane
+stops spawning in every lane (BUDGETS.md); a lane past $100 or 600k context writes its handoff and stops, the parent
+starts the successor with the 08:47-12:05 brief pattern (LANE V3, R3, G3 briefs are the latest templates), ledgers the old
+lane with its cost, archives it; solve = N3 or better after two audits, N4 only from an AUDIT.md N4 decision; outreach for
+an N4 target waits on its JSTOR-QUEUE.tsv rows being run or waived by the owner (ASKS 32, 36, 37, 40, 41), then the
+verification lane drafts, the owner sends; outside second opinions arrive as [SO-<label>] pull requests writing one file
+under ciphers/<t>/second-opinions/ and are routed to the verification lane (SECOND-OPINIONS-QUEUE.tsv); DECODE login works
+only through tools/decode_browser_login.js (one login per session; full-size images and documents are permission-blocked,
+ASKS 42 and the card). Backups: refs/backup/old-main-snapshot 9866425 in the parent's clone, origin/purged-main-2 for the
+history swap (owner's four clicks, ASKS 24). If this parent stops, a successor parent reads this section, the lane table,
+the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
+
 ## LANE V2 handoff (session_017QzVuGiZ8wFQY6HZfUxH1q), 24 September 2026, 11:58 UTC
 
 Verification lane for French/Dutch/German/Spanish/Italian readings and Google Books, 08:47-11:58 UTC, successor to
@@ -391,11 +410,11 @@ cap of $80 (raised to $120 and 16 workers at 05:12 UTC 24 Sept 2026 when the own
 | G, Gallica digitised manuscripts (handed over 06:39 UTC; LANE G2 live from 07:43) | session_015NqJ9uu5Ef3Bo6QaRiGcGp (G2; was session_014zWyan51u9qMn9gnHpm1Aq) | every M row, crops, passes, reconcilers, same-office key trials | the only lane on gallica.bnf.fr and archivesetmanuscrits (at most two fetchers at a time) |
 | V, verification (closed 07:50 UTC on handoff; succeeded by V2) | session_01B5x2Dshzz71xBzbJqFnXYQ | verifiers, adversarial second audits, blind second readers, toward-N4, the results-list audit, outreach drafts at N4 | Google Books, HTRC, IA full text, loc.gov, Delpher, DBNL |
 | S, scouts and detectors (closed 04:58 UTC, succeeded by LANE N) | session_01PE7TAF6Hsp3MHtFEkDPP4a | check-solved on N20+ and Q rows, extraction of printed cipher, further detector rounds, non-Gallica catalogues | IA advancedsearch, TNA Discovery API, BL, NRS, Wellcome, LOC, BSB, Europeana |
-| G2, Gallica manuscripts (successor to G, 07:42 UTC, from the 06:39 handoff) | session_015NqJ9uu5Ef3Bo6QaRiGcGp | Brienne-Poland 1646 key to LANE V, fr.5160 1653-band key trials and canvas walk, Du Vergier 1696 reconciliation, Gramont f.30r top lines, Gallica scout round 4 | the only lane on gallica.bnf.fr and archivesetmanuscrits, two fetchers at most |
-| V2, verification of French, Dutch, German, Spanish and Italian readings (successor to V, 08:47 UTC) | session_017QzVuGiZ8wFQY6HZfUxH1q | Du Vergier 1696, Lodewijk van Nassau, August of Saxony, the DECODE-BnF items; Google Books for every lane; Gramont and Danzay outreach held at gate 2 | Google Books, HTRC, IA full text by claim, DBNL, Huygens, WVO |
+| G2, Gallica manuscripts (07:42-11:56 UTC, closed on handoff; succeeded by G3) | session_015NqJ9uu5Ef3Bo6QaRiGcGp | Brienne-Poland 1646 key to LANE V, fr.5160 1653-band key trials and canvas walk, Du Vergier 1696 reconciliation, Gramont f.30r top lines, Gallica scout round 4 | the only lane on gallica.bnf.fr and archivesetmanuscrits, two fetchers at most |
+| V2, verification FR/NL/DE/ES/IT (08:47-11:57 UTC, closed on handoff; succeeded by V3) | session_017QzVuGiZ8wFQY6HZfUxH1q | Du Vergier 1696, Lodewijk van Nassau, August of Saxony, the DECODE-BnF items; Google Books for every lane; Gramont and Danzay outreach held at gate 2 | Google Books, HTRC, IA full text by claim, DBNL, Huygens, WVO |
 | W2, verification of English-language readings (successor to W, 10:57 UTC) | session_01CLm9uFwyau9hRmDcm2vALE | Eckert E4/E5 Zooniverse gap, Blathwayt N4 families, Huntington and Riksarkivet readings, the LANE W owner asks to the card | HathiTrust APIs, HTRC, loc.gov, Founders Online, NARA, Wayback, Huntington catalogue, Scandinavian editions, BHO |
 | N2, nominations (successor to N, 09:52 UTC) | session_01DfQyAaXAgcoFZMAbBTGj4f | copy-free first: DECODE census beyond DC20, Nassau circle and Huygens editions, RAH OAI, Vatican, Simancas, Florence; four firm nominations an hour | IA advancedsearch, TNA Discovery API, BL, Wellcome, loc.gov, PARES, Italian and Vatican sites, Huntington CONTENTdm catalogue, Lambeth CalmView, Riksarkivet, HTRC, de-crypt.org (one worker at a time), Huygens and WVO |
-| R2, recovery and cryptanalysis on copy-free targets (successor to R, 08:47 UTC) | session_0169D5ZhVf9y378dTq1bHp41 | Jan van Nassau 1572-75, Günther of Schwarzburg 1561, the four DECODE records with images, Lodewijk additions, La Luzerne 108(B) key | hdl.huntington.org, RAH, Riksarkivet IIIF, Nationaal Archief and Huygens images, NARA, loc.gov |
+| R2, recovery on copy-free targets (08:47-11:25 UTC, closed on handoff; succeeded by R3) | session_0169D5ZhVf9y378dTq1bHp41 | Jan van Nassau 1572-75, Günther of Schwarzburg 1561, the four DECODE records with images, Lodewijk additions, La Luzerne 108(B) key | hdl.huntington.org, RAH, Riksarkivet IIIF, Nationaal Archief and Huygens images, NARA, loc.gov |
 | N, nominations (successor to S, 05:04 UTC; asked to hand off 09:53 at $128) | session_01W4z8JhXJYHRjorPC1Qkpiy | check-solved N48-N66 and R rows, new catalogue families (Italian and Vatican archives, PARES, LoC, NARA, Dutch), HTRC detector, the DECODE Non-decrypted census; target four stage-2 nominations an hour, posted as ROOM `nomination:` lines | IA advancedsearch, TNA Discovery API, BL, Wellcome, loc.gov, NARA, PARES, Italian and Vatican sites, Huntington CONTENTdm, Lambeth CalmView, Riksarkivet, HTRC, de-crypt.org (one worker at a time) |
 | R, recovery and cryptanalysis on copy-free targets (05:04-08:44 UTC, closed on handoff; succeeded by R2) | session_01SEnQgi5wPVmMADaVHnWkNN | U2 Blathwayt alignment, U1 Luzerne, W1 Oxenstierna solver with control, rah-canada-1869, then LANE N's copy-free nominations; readings to LANE V | hdl.huntington.org, RAH, Riksarkivet IIIF, NARA and loc.gov images, US library image servers |
 | W, verification of English-language readings (05:06-10:09 UTC, closed on handoff; succeeded by W2) | session_011UFnhZnyCntZ8Bn9FpKyTq | Eckert E4/E5 toward N4 (Zooniverse Talk gap), Thurloe P4 audit, every reading from LANE T and LANE R, English results-list audit; LANE V keeps the French BnF targets and Google Books | HathiTrust APIs, HTRC, loc.gov, Founders Online, NARA, Wayback, Huntington catalogue, Riksarkivet and Scandinavian editions, BHO |
