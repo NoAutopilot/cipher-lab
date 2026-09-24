@@ -1,0 +1,22 @@
+{
+  "shelfmark": "BnF Clairambault 1161",
+  "ark": "ark:/12148/btv1b90010063",
+  "gallica_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90010063/manifest.json",
+  "volume_title": "Volumes consacrés à l'histoire de l'Ordre du Saint-Esprit. I-CXX « Minutes du Recueil pour servir à l'histoire de l'Ordre et des commandeurs, chevaliers et officiers de l'Ordre du Saint-Esprit, par Clairambault, » classées dans l'ordre chronologique. LI Année 1688.",
+  "canvas_count": 342,
+  "canvas_labels": "all 'NP' (no foliation encoded in the IIIF manifest, same defect as fr.3019 on 24 Sept 2026)",
+  "fetched": [
+    {
+      "file": "f106_full.png",
+      "date": "2026-09-24",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90010063/f106/full/full/0/native.jpg",
+      "canvas_index_0based": 105,
+      "note": "Screenshot of native.jpg rendered by Chromium (browser_fetch.js) — direct binary fetch of this IIIF image endpoint returned 'upstream request failed' twice; the full/full native URL rendered on the 3rd attempt (after a thumbnail-size URL also failed twice). Naive guess canvas_index+1 = folio number, UNVERIFIED: the leaf shown is a printed engraved portrait of François de Neufville de Villeroy (archevêque et comte de Lyon) with printed page numbers '137'/'83' in the margin, not a manuscript folio '106' — confirms this volume interleaves unrelated printed and manuscript material and that the naive canvas-to-folio mapping used for fr.3019/fr2980 does not hold here. The true location of the 'Avis de Flandre, chiffrés' item (catalogued at Fol. 106 et suiv. in the finding aid, not the IIIF manifest) was not located this pass."
+    }
+  ],
+  "finding_aid": {
+    "url": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc137837/cd0e35310",
+    "record_id": "FRBNFEAD000013783_d0e14140 (volume), FRBNFEAD000013783_d0e14521 (composite item note)",
+    "fetched": "2026-09-24"
+  }
+}

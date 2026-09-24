@@ -1,0 +1,24 @@
+{
+  "shelfmark": "BnF NAF 14913 (Papiers Montaigu)",
+  "ark": "ark:/12148/btv1b525174513",
+  "gallica_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/manifest.json",
+  "volume_title": "BnF. Département des Manuscrits. NAF 14913",
+  "canvas_count": 816,
+  "canvas_labels": "proper foliation present (e.g. '94r','94v', ... '206r','206v') — unlike Clairambault 1161",
+  "target_folios": {
+    "206r": {"canvas_index_0based": 424, "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f425/full/full/0/native.jpg"},
+    "206v": {"canvas_index_0based": 425, "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f426/full/full/0/native.jpg"},
+    "214r": {"canvas_index_0based": 440, "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f441/full/full/0/native.jpg"},
+    "217r": {"canvas_index_0based": 446, "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f447/full/full/0/native.jpg"},
+    "250r": {"canvas_index_0based": 512, "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f513/full/full/0/native.jpg"},
+    "274r": {"canvas_index_0based": 560, "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f561/full/full/0/native.jpg"}
+  },
+  "fetched": [
+    {
+      "file": "f206r_full.png",
+      "date": "2026-09-24",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525174513/f425/full/full/0/native.jpg",
+      "note": "Screenshot of native.jpg (4718x6557) rendered by Chromium (browser_fetch.js), first attempt succeeded. Corner marked '206' in the ms., confirming the canvas mapping. Shows a pasted-in fragment of running French prose in an 18th-c. hand, clean and legible, NOT ciphertext: 'venitiens en faveur de la Reine de Hongrie et particulièrement de ceux les plus attachés aux intérêts de cette princesse et qu'ils auroient tout au plus continué de donner sous main des provisions a l'armée de M. le Prince de Lobkowitz.' This is consistent with the finding aid's description: this leaf carries Rousseau's own decipherment (the readable plaintext), not the original ciphertext, which is presumably in the ambassador's incoming correspondence elsewhere (not in this letterbook) or not preserved at all."
+    }
+  ]
+}
