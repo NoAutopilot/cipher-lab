@@ -651,3 +651,33 @@ Jan and Lodewijk, Sept 1573 - July 1574). PDFs fetched from resources.huygens.kn
 - Suggestions: (1) test 5797's runs and Willem's letters to Jan after Nov 1573 (5204, 5205, 5207-5209, Groen in
   clear) for the new key, since a letter FROM Willem in his own new cipher with Groen's clear text is the natural
   known-plaintext pair; (2) only then job 2 (crib cryptanalysis of runs 1-61 with a matched control).
+
+## J6 new key (24 Sept 2026) -- fit test, no candidate fits
+
+LANE R3 worker J6 (brief `.claude/briefs/runs/2026-09-24-lane-r3-jan5549-newkey.md`). One page per candidate of Willem's
+1574 letters to Jan, numerals only, by Sonnet passes (`j6/fit_<briefnr>.tsv`; 5204/5208/5213 stopped part-way to hold the
+cap, row counts below), compared with the 5549 body (runs 1-61) by `python3 j6/fit.py` -> `j6/fit.tsv`:
+
+| cand | page | groups | max | share >99 | top-10 shared with 5549 body | cosine |
+|---|---|---|---|---|---|---|
+| 5549 body | -- | 539 | 345 | 0.24 | 10 | 1.00 |
+| 5204 (22 Apr 1574) | p2 (partial) | 132 | 340 | 0.23 | 0 | 0.21 |
+| 5207 (23 May 1574) | p1 (complete) | 568 | 140 | 0.00 | 2 | 0.43 |
+| 5208 (7 Jun 1574) | partial | 229 | 99 | 0.00 | 2 | 0.38 |
+| 5213 (26 Nov 1574) | partial | 79 | 90 | 0.00 | 1 | 0.39 |
+
+- **5204 is Lodewijk's 1574 five-per-letter table** (`key_5549.tsv`): its p2 runs read as French at once ("...lettre...
+  pourroit faire quelque...", "...semble que..."), so it is the same table as 5549's postscript, 5550 and 5557, not the
+  body's key.
+- **5207, 5208, 5213 use a small numeral system with values below 100** (one '140' on 5207 flagged as possibly 1+40);
+  5207 and 5208 share most top values (same system). key_1572 does not read them (mostly nulls). None has the body's
+  24% of values above 99 or its top values (14, 9, 19, 69, 59, 74), so none is the body's key.
+- Result: **no candidate fits; no key, no reading of the body; no H/C/S token.** Not tested: 5205 (28 Apr 1574; PDF
+  fetched, likely the 5204 table) and 5209 (24 Jun 1574; likely the 5207/5208 system). Groen clear texts of these
+  letters were not on disk; no alignment was attempted. No crib cryptanalysis was attempted, so no negative and no control.
+- Side result for whoever takes 5207/5208/5213: their <100 system is not key_1572 and not Lodewijk's table; Groen V prints
+  them in clear, so each is a known-plaintext pair for that system.
+- Suggestions: (1) one-page fit of 5205 and 5209 to close the family; (2) look for the body key among Jan's own letters
+  of Nov 1573 - Mar 1574 (the body is Jan writing in the "verendertte" cipher), or letters to Jan from other senders;
+  (3) otherwise crib cryptanalysis of runs 1-61 under a separate brief with a matched control.
+- Requests: resources.huygens.knaw.nl 4 (PDFs 5204, 5205, 5208, 5209, 2 s apart; kept in scratch, re-fetchable from WVO).
