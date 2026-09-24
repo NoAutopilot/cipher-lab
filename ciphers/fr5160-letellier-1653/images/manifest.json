@@ -112,6 +112,18 @@
       "content": "date/extent/decipherment report for all 8, see NOTES.md 'canvas 11/12/24/25/30/31/32/33' table -- finds canvas 11-12 is the dated (10 Jan 1653, signed Brienne) tail of the folio 1-2 letter with an untranscribed second cipher block, and two clear-French phrases inside canvas 30 and canvas 32's cipher blocks that the stride-4 census missed.",
       "disposition": "all 8 native files fetched to scratchpad only, never written into this folder; folder size unchanged from the prior pass (still 30MB). Re-fetch with the same URL pattern (https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f{N}/full/full/0/native.jpg) if needed again.",
       "read_by": "worker directly (Read tool), no subagent, for all 8 canvases; one Sonnet subagent (blind, image-only, no network) for passB_f9.tsv from the existing folio-9 crops"
+    },
+    {
+      "date": "24 Sept 2026 (this pass)",
+      "canvas": 11,
+      "file": "NOT COMMITTED (folder at 30MB cap) -- kept in worker scratchpad only, re-fetchable at https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+      "content": "bottom of the folio 1-2-3 letter (canvas 8-12): 2 lines clear French, then a second, previously-untranscribed cipher block (6 lines, symbol+numeral), then 1 line mixed cipher+clear, then clear French continues onto canvas 12"
+    },
+    {
+      "date": "24 Sept 2026 (this pass)",
+      "canvas": 12,
+      "file": "NOT COMMITTED (folder at 30MB cap) -- kept in worker scratchpad only, re-fetchable at https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+      "content": "folio 3r (folio number '3' visible top right): continuation of the same cipher block from canvas 11 (6 more lines, symbol+numeral, mixed cipher+clear on the last line), then clear French to the letter's close, signed Brienne, dated 'Paris le x janvier 1653' (bleed-through from facing canvas 11 verso, mirrored, visible bottom left)"
     }
   ],
   "requests_this_pass": {
@@ -999,6 +1011,258 @@
         "pitch_autocorr": 207,
         "distance": 144,
         "prominence": 111.1
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f11cipher_L03.jpg (as f11_L1)",
+      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+      "source_file": "NOT COMMITTED, scratchpad only",
+      "box": [
+        1250,
+        2700,
+        2150,
+        1450
+      ],
+      "lines_in_crop": 1,
+      "band": 3,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile, --distance 90 --prominence 25 on the full 9-band region",
+      "params": {
+        "pitch_autocorr": 174,
+        "distance": 90,
+        "prominence": 25
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f11cipher_L04.jpg (as f11_L2)",
+      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+      "source_file": "NOT COMMITTED, scratchpad only",
+      "box": [
+        1250,
+        2700,
+        2150,
+        1450
+      ],
+      "lines_in_crop": 1,
+      "band": 4,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 174,
+        "distance": 90,
+        "prominence": 25
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f11cipher_L05.jpg (as f11_L3)",
+      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+      "source_file": "NOT COMMITTED, scratchpad only",
+      "box": [
+        1250,
+        2700,
+        2150,
+        1450
+      ],
+      "lines_in_crop": 1,
+      "band": 5,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 174,
+        "distance": 90,
+        "prominence": 25
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f11cipher_L06.jpg (as f11_L4)",
+      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+      "source_file": "NOT COMMITTED, scratchpad only",
+      "box": [
+        1250,
+        2700,
+        2150,
+        1450
+      ],
+      "lines_in_crop": 1,
+      "band": 6,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 174,
+        "distance": 90,
+        "prominence": 25
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f11cipher_L07.jpg (as f11_L5)",
+      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+      "source_file": "NOT COMMITTED, scratchpad only",
+      "box": [
+        1250,
+        2700,
+        2150,
+        1450
+      ],
+      "lines_in_crop": 1,
+      "band": 7,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 174,
+        "distance": 90,
+        "prominence": 25
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f11cipher_L08.jpg (as f11_L6)",
+      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f11/full/full/0/native.jpg",
+      "source_file": "NOT COMMITTED, scratchpad only",
+      "box": [
+        1250,
+        2700,
+        2150,
+        1450
+      ],
+      "lines_in_crop": 1,
+      "band": 8,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 174,
+        "distance": 90,
+        "prominence": 25
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f12cipher_L01.jpg (as f12_L1)",
+      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+      "source_file": "NOT COMMITTED, scratchpad only",
+      "box": [
+        1100,
+        950,
+        2150,
+        1250
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile, --distance 90 --prominence 25",
+      "params": {
+        "pitch_autocorr": 172,
+        "distance": 90,
+        "prominence": 25
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f12cipher_L02.jpg (as f12_L2)",
+      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+      "source_file": "NOT COMMITTED, scratchpad only",
+      "box": [
+        1100,
+        950,
+        2150,
+        1250
+      ],
+      "lines_in_crop": 1,
+      "band": 2,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 172,
+        "distance": 90,
+        "prominence": 25
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f12cipher_L03.jpg (as f12_L3)",
+      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+      "source_file": "NOT COMMITTED, scratchpad only",
+      "box": [
+        1100,
+        950,
+        2150,
+        1250
+      ],
+      "lines_in_crop": 1,
+      "band": 3,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 172,
+        "distance": 90,
+        "prominence": 25
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f12cipher_L04.jpg (as f12_L4)",
+      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+      "source_file": "NOT COMMITTED, scratchpad only",
+      "box": [
+        1100,
+        950,
+        2150,
+        1250
+      ],
+      "lines_in_crop": 1,
+      "band": 4,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 172,
+        "distance": 90,
+        "prominence": 25
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f12cipher_L05.jpg (as f12_L5)",
+      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+      "source_file": "NOT COMMITTED, scratchpad only",
+      "box": [
+        1100,
+        950,
+        2150,
+        1250
+      ],
+      "lines_in_crop": 1,
+      "band": 5,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 172,
+        "distance": 90,
+        "prominence": 25
+      },
+      "date": "24 Sep 2026"
+    },
+    {
+      "crop": "f12cipher_L06.jpg (as f12_L6)",
+      "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f12/full/full/0/native.jpg",
+      "source_file": "NOT COMMITTED, scratchpad only",
+      "box": [
+        1100,
+        950,
+        2150,
+        1250
+      ],
+      "lines_in_crop": 1,
+      "band": 6,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 172,
+        "distance": 90,
+        "prominence": 25
       },
       "date": "24 Sep 2026"
     }

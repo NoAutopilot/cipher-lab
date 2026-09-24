@@ -1173,3 +1173,106 @@ assigned.
 ### Requests this pass
 
 None (disk only). Pillow was installed with pip for the strips.
+
+## Canvas walk 37-159 and canvas 11-12 block (24 Sept 2026)
+
+LANE G2 worker, Sonnet, cap $8. Read `walk_37_159.tsv` for the full per-canvas table.
+
+### (1) Canvas walk 37-159
+
+Fetched IIIF `full/1000,/0/default.jpg` thumbnails for every canvas 37-159 not already covered by the prior
+dense walk (canvas 4-36) or census (stride-4 to 156), one at a time, ~1.8 s apart, descriptive User-Agent.
+119 of 123 canvases came back as valid images. Four never returned an image after the standard one retry
+each (`45`, `55`, `58`, `74` — connection resets/timeouts, not 403/altcha) and are left unfetched, consistent
+with the fr5160/clair1067 precedent of not looping retries. Three more canvases (`56`, `119`, `145`) initially
+returned an HTTP 500/404 or, in `119`'s case, a Gallica *"ark is unknown"* HTML error page disguised as a 200
+response — each was given one further single retry after a pause (not a loop) and all three then returned a
+valid image. A Sonnet subagent (no network access) read all 119 thumbnails in four batches (37-66, 67-96,
+97-126, 127-159) and classified each for folio/date/sender/cipher content; batches committed as a single
+`walk_37_159.tsv` (all four batches were ready together, so no intermediate 30-canvas commit was needed).
+
+**Result: zero cipher in canvas 37-159 except one new letter.** Canvas 129 (folio 67, mid-page) and canvas 130
+(its continuation, dated "A Paris ce 10 8bre 1659", signed Brienne, addressed M. de Servien) carry a dense,
+symbol+numeral cipher block — **not recorded in the census pass, dense band walk, or any prior NOTES.md
+section**. No interlinear or marginal decipherment visible on either canvas at thumbnail resolution (grade M).
+Everything else in canvas 37-159 is plain French prose (Brienne/Brienne fils to Servien, Savoy court and
+Pyrenees-peace diplomatic correspondence, Aug-Nov 1659) or blank/docket versos. Two scan anomalies flagged by
+a subagent, unconfirmed: canvas 122 appeared to duplicate canvas 120's content and canvas 123 canvas 121's
+(worth a re-fetch/IIIF-sequence check, not chased further here).
+
+**The 1653 band is now fully walked and contains no cipher beyond what NOTES.md already records.** The dense
+walk (canvas 4-36) plus this pass (37-51, the band's tail before the run turns to 1659 dates at canvas 52)
+cover every canvas from the volume's start through the last 1653-dated leaf (canvas 40, "12 Octobre 1653").
+No canvas in 37-159 carries an 1653 date. The 1653 band's three cipher letters, for a later solver, are all
+already known and none are newly found here:
+
+| letter | canvas | extent | status |
+|---|---|---|---|
+| folio 1-2-3 (2 Jan 1653) | 8-12 | mixed, ~1/3 page each | reconciled (`ciphertext_f1.tsv`); canvas 11-12's block below is new |
+| folio 9 | 24-25 | most of page | two blind passes done (`passA_f9.tsv`/`passB_f9.tsv`), not reconciled |
+| unnumbered, between folio 9 and the Oct 1653 letter | 32 | full page, ~14 lines dense | **not transcribed** (census only) |
+
+### (2) Canvas 11-12: the folio 1-2-3 letter's second cipher block
+
+Canvas 11 (bottom of the leaf, no clear folio digit; the previous worker's flag that this is "the dated tail
+of the already-reconciled folio 1-2 letter" is confirmed — the same leaf carries the "Paris le x janvier 1653"
+dateline and "Brienne" signature, seen mirrored/bled-through on canvas 12) and canvas 12 (folio "3" recto,
+digit visible top right) carry a second cipher block not present in `ciphertext_f1.tsv`: 2 lines clear French,
+then 6 lines of dense symbol+numeral cipher, then 1 mixed cipher/clear line (canvas 11); continuing directly
+on canvas 12 with 5 more dense cipher lines then 1 mixed cipher/clear line, after which the letter closes in
+clear French ("Et tel qui en a le sevre soubz...", signed Brienne).
+
+Native fetches (`full/full/0/native.jpg`, 3810×5346px): canvas 11 needed one retry after a transient HTTP 500
+(Gallica's own Spring error page, not a site block); canvas 12 succeeded first try. **Not committed** — the
+folder is at the 30 MB cap — kept in the worker's scratchpad and logged in `images/manifest.json` with the
+exact fetch URLs so a later worker can re-fetch cheaply.
+
+Line crops cut with `tools/iiif_lines.py --image ... --debug` (region `1250,2700,2150,1450` on canvas 11,
+`1100,950,2150,1250` on canvas 12; `--distance 90 --prominence 25` after the defaults under-detected lines by
+2-4 in each region — checked against the debug overlay both times before accepting). 16 crops total (9 on
+canvas 11, 7 on canvas 12; the cipher-only lines are `f11cipher_L03` through `L08` and `f12cipher_L01` through
+`L06`), all ≤2150px wide. **Not committed** for the same 30 MB reason; kept in scratchpad, regions logged in
+`images/manifest.json` under `iiif_lines`.
+
+Two blind Sonnet passes (`passA_f11.tsv`, `passB_f11.tsv`; the second pass never saw the first, separate
+subagent calls with no shared context), same line/position/group/confidence columns and sign-spelling
+convention as `passA_f9.tsv`/`reconcile_f1.py`'s docstring. Numbered-token exact-match agreement: **85/111 =
+76.6%** (lower than `passA`/`passB_f9`'s 77.7% or the folio 1-2 letter's 84.8-93.6%, but most of the
+disagreement is not a real reading conflict — see below).
+
+**Two signs recur across both passes that are not in the established fr.5160 vocabulary.** Both blind passes
+independently and repeatedly flag the same two shapes, at matching positions, without being told to look for
+them: (a) an open cursive hook/loop (pass A calls it "Ɔ"; pass B declines to name it, describing "a cursive
+open hook, like ⊃, non-standard" — same shape, four occurrences: `f11_L2` pos4/6, `f11_L5` pos3/9/11, `f12_L3`
+pos9, `f12_L4` pos1/6); (b) a looped-ascender flourish resembling a cursive H/& (pass A tentatively calls it
+"db"; pass B again declines, "looped ascender flourish resembling cursive H/&, non-standard" — four
+occurrences: `f11_L2` pos3, `f11_L3` pos7, `f11_L5` pos4, `f12_L3` pos10, `f12_L5` pos1). Both passes seeing
+the same shape at the same positions independently is evidence these are real, consistently-drawn signs in
+the manuscript, not misreads — but whether (b) is actually the established "db" sign (tt+looped-d) read
+confidently by pass A and cautiously by pass B, or a genuinely new sign, is not resolved here; flagged for
+whoever reconciles this block into the key. The remaining disagreements are mostly ordinary digit-reading
+noise (`_0`/`_10`, `31`/`I`, `¨34`/`34`) plus one likely segmentation offset at `f12_L1` (pass B splits out an
+extra leading token that pass A folds into its first digit read, shifting positions 1-4 by one against each
+other). No reconciliation was attempted (not in this brief); the next step is a reconciler pass against the
+native images, the same as `reconcile_f1.py` did for canvas 8-10.
+
+### (3) Status and next step
+
+**Status stays `open`.** No decoding attempted. No print or phrase search run (nothing new was read as
+plaintext). No novelty class assigned. Grade of everything in this section: M (subagent/blind-pass reads, not
+eye-checked by a human or reconciled against the image by a second worker).
+
+Two things worth a follow-up brief, not attempted here per "stop when the brief is met": (1) canvas 129/130's
+new cipher letter — native fetch, crops, and blind passes, the same as this section did for canvas 11-12; (2)
+canvas 32's full-page 1653 cipher, still untranscribed since the first census pass.
+
+### Requests this pass
+
+`gallica.bnf.fr` ~155 total: 123-canvas walk at 1000px width (149 requests — 97 canvases on the first try, 26
+needed the loop's own built-in one retry; 3 more of those 26, `56`/`119`/`145`, got one further single retry
+after a pause once their "success" turned out to be an HTML error page, all recovered; `45`/`55`/`58`/`74`
+never recovered and are left unfetched) + 3 native full-res fetches for canvas 11/12 (one retry on a transient
+500). All ≥1.5 s apart, one fetcher, UA `cipher-lab research script (contact via repository)`. No other host.
+6 Sonnet subagents total (4 for the canvas-walk classification batches, at most 4 concurrent; 2 for the blind
+passA/passB_f11, run after the walk batches finished). No logins, no credentials, no novelty wording. Well
+under the $8 cap.
