@@ -27,3 +27,22 @@ NoAutopilot/cipher-lab:
    repository's verifier checks every citation." Do not edit SECOND-OPINIONS-QUEUE.tsv, do not touch any other
    file, never commit to main, never merge.
 5. One row per run. Finish with a one-line summary naming the label and the PR number.
+
+## Our side of the loop (24 Sept 2026, owner's request: show the state on the board)
+
+The queue's `status` column drives a chip on the board next to each reading (`tools/build_dashboard.py`, matched by
+folder and the label's folio or item token):
+
+- `queued` (grey circle): the prompt is written, no pull request yet.
+- `posted` (blue envelope), `pr` = the pull request number: the runner's file arrived. The parent check-in sets this when
+  it sees an open `[SO-<label>]` pull request, and hands the file to a verifier in ROOM.md ("for LANE V4: second opinion
+  <label> to check, PR #n").
+- `checked` (green tick), `outcome` = one short phrase the verifier writes after checking every citation in the file
+  against the source, e.g. "no prior print found; two citation errors corrected in AUDIT.md" or "prior print found,
+  reclassed N1". The verifier appends its findings to the target's AUDIT.md ("Second opinion <label>, checked <date>")
+  and corrects the folder; only AUDIT.md changes a class. The pull request is then closed without merging (the file is
+  kept on its branch, and the verifier copies it into the folder under second-opinions/ with the label in the header).
+- `withdrawn (<reason>)`: the reading was reclassed below N3 before the runner reached it.
+
+The wording is "second opinion checked", never "verified" or "confirmed": rule 10 keeps verdicts with the verifier, and
+an outside model's "not found" is a search result, like ours.

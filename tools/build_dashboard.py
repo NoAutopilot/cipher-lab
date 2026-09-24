@@ -69,8 +69,59 @@ def load_jstor_queue():
         elif st.startswith("done"): done += 1
     return q, done
 
+def load_second_opinions():
+    """SECOND-OPINIONS-QUEUE.tsv rows keyed by folder: label, status (queued/posted/checked/withdrawn), pr, outcome."""
+    out = {}
+    if not os.path.exists("SECOND-OPINIONS-QUEUE.tsv"):
+        return out
+    for i, line in enumerate(open("SECOND-OPINIONS-QUEUE.tsv", encoding="utf-8")):
+        if i == 0 or not line.strip():
+            continue
+        c = line.rstrip("\n").split("\t")
+        c += [""] * (7 - len(c))
+        row = {"label": c[0].strip(), "folder": c[1].strip(), "status": c[4].strip(), "pr": c[5].strip(), "outcome": c[6].strip()}
+        out.setdefault(row["folder"], []).append(row)
+    return out
+
+def so_rows_for(r):
+    """Second-opinion rows for a result: by folder, narrowed by a label token (F29R, F30, 126, 53) found in the title.
+    Only readings carry the chip (kinds solve and reading); corrections, datasets and catches do not."""
+    if r.get("kind") not in ("solve", "reading"):
+        return []
+    folder = r["link"].replace(REPO, "").strip("/")
+    rows = [x for x in second_opinions.get(folder, []) if not x["status"].startswith("withdrawn")]
+    if len(rows) > 1:
+        t = r["title"].lower()
+        narrowed = []
+        for x in rows:
+            toks = [k.lower() for k in x["label"].split("-")[2:] if re.search(r"\d", k)]
+            ok = False
+            for k in toks:
+                if k[0] == "f" and k[1:2].isdigit():
+                    ok = ok or re.search(r"f\.?\s?" + re.escape(k[1:]) + r"(?![0-9])", t) is not None
+                else:
+                    ok = ok or re.search(r"(?<![0-9])" + re.escape(k) + r"(?![0-9])", t) is not None
+            if ok:
+                narrowed.append(x)
+        rows = narrowed or rows
+    return rows
+
+SO_STATE = {"queued": ("so-q", "second opinion queued"), "posted": ("so-p", "second opinion posted"), "checked": ("so-c", "second opinion checked")}
+def so_chip(r):
+    out = ""
+    for x in so_rows_for(r):
+        st = x["status"].split()[0] if x["status"] else ""
+        if st not in SO_STATE:
+            continue
+        cls, txt = SO_STATE[st]
+        tip = x["label"] + (f", PR #{x['pr']}" if x["pr"] else "") + (f": {x['outcome']}" if x["outcome"] else "")
+        icon = {"queued": "&#9711;", "posted": "&#9993;", "checked": "&#10003;"}[st]
+        out += f' <span class="so {cls}" title="{E(tip)}">{icon} {E(txt)}' + (f' <span class="muted">({E(x["outcome"])})</span>' if st == "checked" and x["outcome"] else "") + '</span>'
+    return out
+
 asks = load_asks()
 emails = load_emails()
+second_opinions = load_second_opinions()
 jq, jdone = load_jstor_queue()
 stages = d["stages"]
 NS = len(stages)
@@ -137,7 +188,7 @@ for i, (code, name, desc) in enumerate(LADDER):
             "Be skeptical. A wrong 'not found' costs us more than a wrong 'found'."
         )
         items += (f'<li class="{cls}"><a href="{E(r["link"])}">{E(short(r["title"]))}</a>'
-                  f'<span class="rung-meta">{E(a_txt)}' + (f' · <b>next rung needs:</b> {E(gap)}' if gap else '') + '</span>'
+                  f'<span class="rung-meta">{E(a_txt)}' + (f' · <b>next rung needs:</b> {E(gap)}' if gap else '') + '</span>' + so_chip(r) +
                   f'<details class="xc"><summary>Second-opinion prompt</summary><p class="rung-meta">Paste into ChatGPT or another model. It asks for an adversarial check with exact citations.</p>'
                   f'<button type="button" class="copy" data-for="xc-{E(slug)}">Copy prompt</button><textarea id="xc-{E(slug)}" hidden>{E(prompt)}</textarea>'
                   f'<pre class="mail xc-text">{E(prompt)}</pre></details></li>')
@@ -199,7 +250,7 @@ KIND = {"solve": ("Unique solves", "k-solve"), "reading": ("Readings with a clas
         "correction": ("Corrections", "k-corr"), "catch": ("Caught before spending", "k-catch"), "negative": ("Negatives with a control", "k-neg"), "dataset": ("Datasets and tools", "k-data")}
 def result_li(x):
     return (f'<li><span class="rk {KIND[x["kind"]][1]}">{E(KIND[x["kind"]][0].rstrip("s") if x["kind"] in ("solve","correction","dataset") else KIND[x["kind"]][0])}</span>'
-            f'<div><div class="r-title">{E(x["title"])} <span class="muted">{E(x["grade"])}</span></div><div class="r-line">{E(x["line"])}</div>'
+            f'<div><div class="r-title">{E(x["title"])} <span class="muted">{E(x["grade"])}</span>{so_chip(x)}</div><div class="r-line">{E(x["line"])}</div>'
             f'<div class="r-meta"><span class="mono muted">{E(x["date"])}</span> · <a href="{E(x["link"])}">{E(x["link"].replace(REPO, ""))}</a></div></div></li>')
 result_groups = ""
 for k in ("solve", "reading", "contribution", "correction", "catch", "negative", "dataset"):
@@ -316,6 +367,8 @@ details summary {{ cursor:pointer; color:var(--accent); font-size:0.92rem; margi
 .results li {{ display:grid; grid-template-columns:150px 1fr; gap:12px; align-items:start; padding:10px 0; border-top:1px solid var(--line); }}
 .rk {{ font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; padding:3px 8px; border-radius:999px; white-space:nowrap; justify-self:start; margin-top:2px; }}
 .k-solve {{ background:var(--good-soft); color:var(--good); }} .k-reading {{ background:var(--info-soft); color:var(--info); }} .k-contrib {{ background:var(--warn-soft); color:var(--warn); }} .k-corr {{ background:var(--accent-soft); color:var(--accent); }} .k-catch {{ background:var(--idle-soft); color:var(--idle); }} .k-neg {{ background:var(--idle-soft); color:var(--idle); }} .k-data {{ background:var(--idle-soft); color:var(--idle); }}
+.so {{ display:inline-block; font-size:0.72rem; font-weight:600; padding:2px 7px; border-radius:999px; margin-left:6px; vertical-align:middle; white-space:nowrap; border:1px solid var(--line); }}
+.so-q {{ color:#7a7a7a; }} .so-p {{ color:#1d5fa8; border-color:#1d5fa8; }} .so-c {{ color:#1b7a3d; border-color:#1b7a3d; }}
 .r-title {{ font-weight:600; }} .r-line {{ font-size:0.92rem; margin-top:2px; }} .r-meta {{ font-size:0.8rem; margin-top:4px; }}
 @media (max-width:600px) {{ .results li {{ grid-template-columns:1fr; gap:4px; }} }}
 /* targets */
