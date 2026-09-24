@@ -4474,3 +4474,75 @@ plus the 4 zero-hit-term reruns under wildcards), 1 new row kept (TR-1), 1 copy-
 row kept (TR-1), 1 copy-free.**
 
 No check-solved run on TR-1 (scout brief only); not promoted, not decoded, no novelty claim (rule 10).
+
+## cyphersolver site re-diff (LANE N3 scout of 24 September 2026)
+
+LANE N3 brief scCS2: a fresh look at dbourdeau.github.io/cyphersolver (writeups.html, catalogue.html, keys.html
++ keys.json), parsed by script (`writeups.tsv`, `catalogue.tsv`, `published-keys.tsv` in scratch; the site's
+own data-attributes and JSON, not scraped prose) and diffed against `sources/solver-diffs/2026-09-23-queue-vs-
+solver-repos.tsv`, QUEUE.md, CATALOG.md, LANDSCAPE.md and the `ciphers/` folder names. Full row-per-item detail
+in `sources/solver-diffs/2026-09-24-cyphersolver-site.tsv` (32 rows, section a/b/c tagged) and the key-web
+extract in `sources/solver-diffs/2026-09-24-cyphersolver-keys.tsv` (81 published/external keys, for the recovery
+lane). Site itself: 236 write-ups + 39 notes-only rows (up from 99 targets at the 19 Sept snapshot cited in
+LANDSCAPE.md), updated 24 Sept 2026 per its own `<meta name="last-modified">`.
+
+**(a) New-since-23-Sept check.** Extracted every shelfmark/DECODE-record identifier from the 162 write-ups
+posted 20-24 Sept 2026 and intersected them against identifiers already in QUEUE.md/CATALOG.md/LANDSCAPE.md:
+28 write-ups share an identifier with something we already track. Checked each by hand against the citing
+QUEUE.md row: **all 28 are already reconciled** -- most inside QUEUE row 7's own "Queue-hygiene sweep 23 Sept
+2026" paragraph (smith1562, norreys1567, percy1559, alessandrino/r102-r115), or already logged as found-solved
+(randolph1570 at QUEUE.md:1348, rupert1645/R929 at QUEUE.md:1357, michell1751/R1957 at QUEUE.md:1392, ottobon/
+R1789 at QUEUE.md:1361, perwich/SP78-129 at QUEUE.md:1347), or already named in LANDSCAPE.md (birago-nevers-1571,
+sp53-16/sp53-22). No new QUEUE row needed for section (a); zero over-claims found in the other direction either
+(nothing in QUEUE.md calls one of these 28 items open when his site now reads it). The remaining 134 recent
+posts have no shelfmark overlap with anything we track -- not our targets, not reported further (rule 7,
+quality over quantity).
+
+**(b) Recovery candidates ("not solved"/partial with an online image beyond a DECODE thumbnail).** Filtered
+236 write-ups to extent=partial or kind=notsolved with an image-source keyword in the summary (9 hits), read
+the 6 most promising individually. Two are already ~50-96% read by Bourdeau himself with the key already named
+(CS2-31 Estrada 1503, 50%, PARES low-res; CS2-32 Affry 1757-58, 86%, DECODE-imaged Lyonet decipherments) --
+listed for completeness, not worth pursuing further here. Four are genuine unread-remainder candidates, all
+cross-referenced to the same items in the catalogue (c) below: **CS2-17** (Nevers-La Vieuville 1587, Gallica ark
+btv1b90605473, but a black-and-white microfilm scan -- Bourdeau's own note says a colour scan or the original
+is needed for the 3 undeciphered runs); **CS2-18** (Hellen to Frederick II, 8 records, DECODE-thumbnail only,
+needs KHA Fagel inv. 5206); **CS2-19** (Fagel to William V 1804, DECODE-thumbnail only, needs KHA A31-902);
+**CS2-30** (Rohan/Louis XIII Franco-Dutch 1635-36 -- BnF fr.3758 is fully on Gallica and read for its clear
+text, but the actual cipher folios are in fr.5190 nos.171-172/214-215, beyond where the supplied Gallica scan
+stops at manuscript p.80).
+
+**(c) Catalogue "attempted, open" rows not in QUEUE.md.** 53 of catalogue.html's 75 rows carry the plain
+"attempted, open" tag (10 more carry a qualifying note, e.g. "rule-scored" -- scored by script from DECODE
+metadata, not reviewed by Bourdeau; excluded from this sweep). Identifier cross-check against QUEUE.md/
+CATALOG.md/LANDSCAPE.md: 22 already tracked there (Percy/Cecil cluster, Harley MS 260/287 letter-books, Riksarkivet,
+Castelcicala, Dedem, Toulon 1803, Bavarian/Italian items already logged), leaving **30 rows not yet in QUEUE.md**
+(CS2-01 to -16, -20 to -29; CS2-17/-18/-19/-30 already listed under (b) above). Of these 30: **8 are copy-free**
+(CS2-01, -02, -04, -05, -06, -16, -26, -28 -- all BnF items with a Gallica ark cited directly on the catalogue
+page or in-page); the remaining 22 are **copy-order**, almost all because the only image route Bourdeau names is
+a DECODE record (thumbnail, does not count per this lane's brief) and no separate library/archive scan was
+checked this pass -- CS2-03, -14, -15, -27 are marked "unconfirmed" (a Gallica or institutional viewer may exist
+but was not checked this sweep; a next scout should check before ordering a copy). None of the 30 rows' own
+"attempted, open" notes claim a key was found or a decipherment exists elsewhere; each states plainly what was
+tried and why it stalled (see the TSV's `his_status` column for the verbatim summary). No check-solved run on
+any of them (scout brief only); none promoted, none decoded, no novelty claim (rule 10).
+
+**(d) Published keys for the recovery lane.** `sources/solver-diffs/2026-09-24-cyphersolver-keys.tsv`: 81 keys
+of kind scholar's-key / DECODE-key-record / contemporary-key / published-table / archive-key / printed /
+partial-table (i.e. keys that exist independent of Bourdeau's own reconstruction), each with the correspondence
+it read (target id, title, year, how -- "read unchanged"/"read in part"/"rebuilt from"), its citation (George
+Lasry, Satoshi Tomokiyo, DECODE database, or the other named scholars in keys.json's `sources`), and his note.
+Facts and citations only, taken from the site's own `keys.json` (not his prose); the recovery lane can grep this
+for a correspondent/date match before assuming no key exists.
+
+**Per-host report:** `dbourdeau.github.io`: 10 requests total (writeups.html, catalogue.html, keys.html,
+keys.json, plus 6 individual write-up pages -- estrada1503, vieuville1587, rohan1636, hellen1752, affry1757,
+fagel1804), all >=2s apart, descriptive User-Agent, no challenge/403/429 seen, well under the 18-request cap.
+`github.com`: 0 (not needed this pass; identifier cross-check used files already on disk). WebSearch: 0.
+
+**Raw/kept/copy-free:** 275 write-up+notes rows and 75 catalogue rows parsed; 32 CS2 rows written (30 from the
+catalogue, cross-referenced with 4 from the write-ups list, plus 2 write-up-only low-priority completeness
+rows); 10 copy-free (CS2-01, -02, -04, -05, -06, -16, -17, -26, -28, -31 -- two of these, -17 and -31, with an
+image-quality caveat), 22 copy-order. **Total: 32 rows (30 catalogue + 2 write-up-only), 10 copy-free.**
+
+Citations for all CS2- rows: D. Bourdeau, cyphersolver, https://dbourdeau.github.io/cyphersolver/, CC BY 4.0
+(catalogue.html for the catalogue rows, the named write-up page for CS2-17/-18/-19/-30/-31/-32).
