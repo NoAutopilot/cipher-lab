@@ -268,6 +268,26 @@ Orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq, cap $80. Spawning paused at rate_
 - Gustav II Adolf to Oxenstierna 1632 (W1): N0, found-solved (Torpadie, Historisk tidskrift 8, 1888). Lesson added to
   .claude/briefs/check-solved.md.
 
+## LANE W handoff, 24 Sep 2026, 10:09 UTC
+
+LANE W orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq stopping at about $62 of $80 (handoff rule: stop before $70). Workers A-K
+(11 LEDGER rows, about $27 of worker usage), all archived; no LANE W worker is live. Classes are in each AUDIT.md.
+- **Thurloe P4** (Stamford, Calais, 13 Mar 1655): **N4 (no prior decipherment located)**, two audits + N4 decision + DECODE.
+  Outreach gate 2 open only on ASKS 34 (JSTOR rows 35-37/39/40; OpenAlex/S2 from the owner's machine). ASKS 30: Bodleian leaf.
+  SO-THURLOE-P4 queued. No outreach draft yet; next LANE W: draft only after ASKS 34 is answered or waived.
+- **Blathwayt BLA 186/191(a)/184** (Huntington, 1728-29): N3 x3, two audits, partial. BLA 186's clear part printed by Rose
+  (Marchmont Papers 1831 ii 414-15). N4 decision (worker K): only DECODE's Decrypted list is open, posted for LANE N at 09:51;
+  negative => N4 for all three with the sentences in AUDIT.md 'N4 decision' s.4, set by a small verifier (worker J pattern, $3).
+- **Eckert E4/E5**: N3, two audits; N4 waits only on ASKS 27 (Zooniverse Talk, browser; no Wayback copies exist).
+- **N0 / found-solved** this shift: Gustav II Adolf to Oxenstierna 1632 (Torpadie 1888), rah-canada-1869 (clear text on the
+  item), Luzerne 108(A) and 68 (duplicate 108(B) deciphered by Destouches).
+- **Results rows** for all of the above match AUDIT.md (worker A audited 16 English rows at 05:17; rows edited since by LANE W).
+- **Briefs changed:** check-solved (national journal after an 'unsolved' edition; whole-collection duplicate search);
+  verifier (recipient's printed family papers in translation).
+- **Retrospective:** LANE W has 11 ledger rows; the next lane's 12th row triggers one (.claude/briefs/retrospective.md).
+- **Watch for:** LANE N's two DECODE results (Blathwayt); 'for LANE W' lines from LANE R2 (English/Huntington readings);
+  ASKS 27, 30 and 34 answers.
+
 ## Lane structure, 24 Sep 2026, 03:05 UTC (owner: scale to about fifty live sessions)
 
 The parent orchestrator (session_01EFmUvFAifLKGdBSsW9mjEG, "cipher-lab-7a") runs four lane orchestrators, each Opus with a
