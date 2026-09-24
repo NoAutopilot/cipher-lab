@@ -1795,7 +1795,7 @@ was never garbled, so nothing changed there. Everything from "tha{t} by {the} it
 in the wrong order (block A's own tail, wrongly split from block B). "This plott is foe infalible
 ... naturall aversion" is not new -- it is the real paragraph worker G's original code already
 tokenized correctly between the blocks; this worker's first (buggy) attempt dropped it and this
-version restores it unchanged. Several short chunks in the newly-read stretch resist a confident
+version restores it unchanged. Several short chunks in the stretch added in this pass resist a confident
 word reading even with the image -- {eis}, {ca}, {seat}, {eco}, {siderable} (probably
 "considerable", missing a leading letter or two), {read it to bee mac[e]us[e]}, {f[w?]hen theire
 busines}, {e shal be ripe for it}, {dehashas} -- these are graded per the individual letters' own

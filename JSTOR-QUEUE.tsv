@@ -36,3 +36,5 @@ ciphers/thurloe-printed	"Stamford" AND Thurloe AND (Calais OR cipher OR cypher) 
 ciphers/thurloe-printed	"Penruddock" AND (Calais OR Stamford OR "W. S.") AND (intelligence OR spy OR informer)	2026-09-24	queued	
 ciphers/thurloe-printed	"Rawlinson" AND "A. 24" AND (Stamford OR Kelsey)	2026-09-24	queued	
 ciphers/oxenstierna-gustav-adolf-1632	"Torpadie" AND (chiffer OR chifferskrift OR Oxenstierna)	2026-09-24	queued	
+ciphers/thurloe-printed	"Stamford" AND ("Kelsey" OR Thurloe) AND 1655 AND (spy OR intelligence OR informer OR Calais)	2026-09-24	queued	
+ciphers/thurloe-printed	Marshall "Cromwell's spymaster" Thurloe intelligence -- read for Stamford / Calais / Kelsey (doi 10.1080/0268117X.2018.1524786)	2026-09-24	queued	
