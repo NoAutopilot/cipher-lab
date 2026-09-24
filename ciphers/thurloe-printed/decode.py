@@ -2,7 +2,7 @@
 """Mechanically apply Tomokiyo's PARTIAL reconstructed keys (thurloe.htm) to the
 Thurloe letters whose cipher system he has identified from OTHER correspondence
 (Blake, Montagu, Downing), and, where the 1742 print itself sets a contemporary
-decipherment above the cipher (P11-13, P15 for Montagu's system; P9, P10 for
+decipherment above the cipher (P11-13, P14, P15 for Montagu's system; P9, P10 for
 Blake's), align that printed decipherment to the groups with
 tools/interlinear_align.py and fold newly-confirmed values into an extended key.
 Nothing here is cryptanalysis: every C/H value comes from Tomokiyo's page or from
@@ -10,18 +10,22 @@ Birch's own printed decipherment, never guessed or repaired beyond one-candidate
 OCR-doubtful repairs already used for P11-13.
 
 Reproducible per CLAUDE.md rule 7: regenerates reading_<letter>.txt (and, for the
-aligned letters, key_*_extended.tsv / align_*.tsv) from ciphertext.txt / *_pairs.tsv
-and the relevant key_*.tsv. --check recomputes in memory and exits non-zero if a
+aligned letters, key_*_extended.tsv / align_*.tsv / P9_pairs.tsv / P10_pairs.tsv /
+P14_pairs.tsv, built from the page-image transcriptions by build_p9_p10_pairs()/
+build_p14_pairs()) from ciphertext.txt / *_pairs.tsv / image_transcription.tsv and
+the relevant key_*.tsv. --check recomputes in memory and exits non-zero if a
 committed output file is stale.
 
-Grading (mechanical-only letter: P14):
+Grading (mechanical-only letters: none currently -- LETTERS is kept for any future
+letter with no printed decipherment of its own):
   H  the CLEANED token (after thurloe_extract.py's own l/i->1, o->0 normalisation)
      parses as a bare integer that is a key in the relevant key_*.tsv.
   M  thurloe_extract.py itself marked the token doubtful (trailing '?' in CLEANED --
      not a clean 1-4 digit run even after normalisation).
   U  a clean integer that is simply not one of the few values the key covers.
 
-Grading (aligned letters: P9, P10, P11-13, P15 -- see extended_from_pairs()):
+Grading (aligned letters: P9, P10, P11-13, P14, P15 -- see extended_p11_13() /
+extended_p15() / extended_blake() / extended_p14()):
   H  value in the system's Tomokiyo key -- meaning from the key source.
   C  meaning from the printed decipherment, the group aligned to the same chunk
      at two or more places across the letter(s) run together (control on P11-13,
@@ -45,16 +49,21 @@ sys.path.insert(0, str(HERE.parent.parent / "tools"))
 import interlinear_align as ia  # noqa: E402
 
 # (letter id, [row ciphertext.txt files in reading order], key file, reading-output file)
-# P9, P11, P12, P13, P15 are handled by extended_from_pairs() instead (the print
-# carries a decipherment for them); P10 likewise (extended_from_pairs, Blake system).
+# P9, P10, P11, P12, P13, P14, P15 are all handled by extended_p11_13()/extended_p15()/
+# extended_blake()/extended_p14() instead (the print carries a decipherment for each of
+# them). LETTERS is left empty, kept for any future letter with no decipherment of its
+# own to align.
 LETTERS = [
-    ("P14", ["P14/ciphertext.txt"], "key_montagu_extended.tsv", "reading_P14.txt"),
+    # P14 removed 24 Sept 2026 (LANE T worker K): the page-image transcription
+    # (NOTES.md s.18) shows it has its own printed decipherment after all, so it now
+    # goes through extended_p14() like P15, not this mechanical-key-only path.
     # P17 removed 24 Sept 2026 (LANE T): it is Fauconberg to H. Cromwell, not Downing;
     # its reading is reading_fauconberg_P17.txt from decode_fauconberg.py. key_downing.tsv
     # (Tomokiyo's Downing values) is kept as a source transcription but no row uses it.
 ]
 
 CLEANED_LINE_RE = re.compile(r"CLEANED: (.*)$")
+ITALICS_RE = re.compile(r'"([^"]*)"')
 
 
 def load_key(path):
@@ -121,6 +130,84 @@ def tsv(header, rows):
 def load_pairs_file(name):
     with open(HERE / name, encoding="utf-8") as f:
         return list(csv.DictReader(f, delimiter="\t"))
+
+
+def parse_transcription(path):
+    """Rows of an images/image_transcription.tsv (columns printed_page, image_line,
+    kind, text, doubt), skipping the file's leading '#' commentary. Split by hand,
+    not csv.DictReader: several doubt fields open with a quoted word (e.g. P14
+    101L55 '"the" and "and" are printed...') which csv's quoting rules corrupt when
+    a field starts with '"' but keeps going past the matching close-quote."""
+    with open(path, encoding="utf-8") as f:
+        lines = [ln for ln in f.read().split("\n") if ln and not ln.startswith("#")]
+    header = lines[0].split("\t")
+    rows = []
+    for ln in lines[1:]:
+        fields = ln.split("\t")
+        fields += [""] * (len(header) - len(fields))
+        rows.append(dict(zip(header, fields)))
+    return rows
+
+
+def pairs_rows_tsv(pairs):
+    return tsv(
+        ["plain_line", "plain_raw", "cipher_line", "cipher_raw"],
+        [[p["plain_line"], p["plain_raw"], p["cipher_line"], p["cipher_raw"]] for p in pairs],
+    )
+
+
+def build_p9_p10_pairs():
+    """(plain, cipher) pairs for P9 and P10 from their page-image transcriptions
+    (P9/P10 image_transcription.tsv, LANE T worker I, 24 Sept 2026): an 'interlinear'
+    row (the letter-spelled decipherment) is followed directly by a 'cipher' row (the
+    matching numeral line); 'plain' rows (surrounding prose, the p.611/p.612
+    catchword) do not pair with anything and are skipped."""
+
+    def build_one(path):
+        pairs = []
+        pending = None
+        for r in parse_transcription(path):
+            tag = "%sL%s" % (r["printed_page"], r["image_line"])
+            if r["kind"] == "interlinear":
+                pending = (tag, r["text"])
+            elif r["kind"] == "cipher" and pending is not None:
+                pairs.append({"plain_line": pending[0], "plain_raw": pending[1], "cipher_line": tag, "cipher_raw": r["text"]})
+                pending = None
+        return pairs
+
+    return build_one(HERE / "P9" / "image_transcription.tsv"), build_one(HERE / "P10" / "image_transcription.tsv")
+
+
+def build_p14_pairs():
+    """(plain, cipher) pairs for P14 from its page-image transcription (P14/
+    image_transcription.tsv, LANE T worker I, 24 Sept 2026). Here the numeral line
+    is tagged 'interlinear' and precedes the plain running-text line that carries its
+    gloss as an italicised phrase, recorded in the transcription's doubt column as
+    '(italics: "phrase")' (one or more, semicolon-separated, for a cipher line the
+    print splits into several groups) or '(italics: whole line)' when the entire
+    plain line is the gloss. A 'plain' row with no italics note (ordinary prose
+    before the cipher starts, or the p.101/p.102 catchword) is skipped."""
+    pairs = []
+    pending = None
+    for r in parse_transcription(HERE / "P14" / "image_transcription.tsv"):
+        tag = "%sL%s" % (r["printed_page"], r["image_line"])
+        if r["kind"] == "interlinear":
+            pending = (tag, r["text"])
+        elif r["kind"] == "plain":
+            if pending is None:
+                continue
+            doubt = r.get("doubt") or ""
+            if "whole line" in doubt:
+                phrase = r["text"].strip()
+            else:
+                phrases = ITALICS_RE.findall(doubt)
+                if not phrases:
+                    pending = None
+                    continue
+                phrase = " ".join(phrases)
+            pairs.append({"plain_line": tag, "plain_raw": phrase, "cipher_line": pending[0], "cipher_raw": pending[1]})
+            pending = None
+    return pairs
 
 
 def build_key_rows(tomo, counts, shown, label):
@@ -296,26 +383,31 @@ def extended_p15():
 
 
 def extended_blake():
-    """P9 (Blake to the Protector, 4 July 1655, p.611-613) and P10 (Blake to the
+    """P9 (Blake to the Protector, 4 July 1655, p.611-612) and P10 (Blake to the
     Protector, 6 July 1655, p.620): both carry a printed letter-by-letter
-    decipherment, heavily fragmented by OCR into short mini-lines; only the
-    cleanly-recoverable fragments are in P9_pairs.tsv/P10_pairs.tsv (LANE T worker
-    B, 24 Sept 2026). Run together in one alignment so shared homophones (e, t, r,
-    n, o, u -- already in Tomokiyo's key_blake.tsv from a different letter) get
-    pooled votes rather than each letter's noise standing alone."""
+    decipherment. Built by build_p9_p10_pairs() from the page-image transcriptions
+    (P9/P10 image_transcription.tsv, LANE T worker I, 24 Sept 2026), superseding the
+    old djvu-OCR-derived P9_pairs.tsv/P10_pairs.tsv (LANE T worker B, 24 Sept 2026,
+    5 fragment pairs per letter recovered from dozens of OCR-shattered mini-lines);
+    the image gives the full line-by-line decipherment instead. Run together in one
+    alignment so shared homophones (e, t, r, n, o, u -- already in Tomokiyo's
+    key_blake.tsv from a different letter) get pooled votes rather than each
+    letter's sample standing alone."""
     tomo = load_key(HERE / "key_blake.tsv")
-    p9 = load_pairs_file("P9_pairs.tsv")
-    p10 = load_pairs_file("P10_pairs.tsv")
+    p9, p10 = build_p9_p10_pairs()
     prepared, results, counts, shown = ia.run_align(p9 + p10)
     rows = ia.token_rows(prepared, results, counts, shown)
     align = {(r[0], str(r[1])): r for r in rows}
     key_rows = build_key_rows(tomo, counts, shown, "P9+P10")
 
-    out = {}
+    out = {
+        "P9_pairs.tsv": pairs_rows_tsv(p9),
+        "P10_pairs.tsv": pairs_rows_tsv(p10),
+    }
     all_grades = Counter()
     for label, pairs, fname, note in [
-        ("P9", p9, "reading_P9.txt", "IA collectionofstat03thur pp.611-613 (4 July 1655), djvu 51500-51610"),
-        ("P10", p10, "reading_P10.txt", "IA collectionofstat03thur p.620 (6 July 1655), djvu 52290-52320"),
+        ("P9", p9, "reading_P9.txt", "IA collectionofstat03thur pp.611-612 (4 July 1655), page-image transcription"),
+        ("P10", p10, "reading_P10.txt", "IA collectionofstat03thur p.620 (6 July 1655), page-image transcription"),
     ]:
         grades, out_lines = grade_pairs_tokens(pairs, align, tomo, counts, shown)
         out[fname] = render_extended("%s (Gen. Blake to the Protector)" % label, note, grades, out_lines)
@@ -323,6 +415,33 @@ def extended_blake():
             all_grades[k] += v
     out["align_blake.tsv"] = tsv(["cipher_line", "idx", "raw", "kind", "value", "repair", "plain_chunk", "status"], rows)
     return key_rows, out, all_grades
+
+
+def extended_p14():
+    """P14 (the Protector to Blake and Mountagu, generals at fea, Whitehall 9 June
+    1656): the page-image transcription (P14/image_transcription.tsv, LANE T worker
+    I, 24 Sept 2026) shows Birch prints a genuine word-level decipherment for this
+    letter -- an italicised English phrase glossing each interlinear cipher-number
+    line -- correcting NOTES.md s.11's OCR-only conclusion that no decipherment is
+    printed here (NOTES.md s.18). Same Montagu system and alignment method as P15;
+    pairs built by build_p14_pairs()."""
+    tomo = load_key(HERE / "key_montagu.tsv")
+    pairs = build_p14_pairs()
+    prepared, results, counts, shown = ia.run_align(pairs)
+    rows = ia.token_rows(prepared, results, counts, shown)
+    align = {(r[0], str(r[1])): r for r in rows}
+    key_rows = build_key_rows(tomo, counts, shown, "P14")
+    grades, out_lines = grade_pairs_tokens(pairs, align, tomo, counts, shown)
+    reading_text = render_extended(
+        "P14 (the Protector to Blake and Mountagu, generals at fea, Whitehall 9 June 1656)",
+        "IA collectionofstat05thur pp.101-102, page-image transcription",
+        grades, out_lines,
+    )
+    return key_rows, {
+        "P14_pairs.tsv": pairs_rows_tsv(pairs),
+        "align_P14.tsv": tsv(["cipher_line", "idx", "raw", "kind", "value", "repair", "plain_chunk", "status"], rows),
+        "reading_P14.txt": reading_text,
+    }, grades
 
 
 def merge_key_rows(base_rows, extra_rows):
@@ -342,21 +461,23 @@ def main():
     stale = False
     outputs = {}  # filename -> text, checked/written together at the end
 
-    # Montagu system: P11-13 (unchanged computation) + P15 (new), merged key.
+    # Montagu system: P11-13 (unchanged computation) + P15 + P14 (both new), merged key.
+    # p11_13's own row wins on any value more than one letter touches (its grades are
+    # control-checked, CLAUDE.md rule 3), then p15's, then p14's contributes only what
+    # neither of the other two already has.
     p11_13_files, p11_13_grades, p11_13_key_rows = extended_p11_13()
     p15_key_rows, p15_files, p15_grades = extended_p15()
+    p14_key_rows, p14_files, p14_grades = extended_p14()
     merged_montagu_rows = merge_key_rows(p11_13_key_rows, p15_key_rows)
+    merged_montagu_rows = merge_key_rows(merged_montagu_rows, p14_key_rows)
     merged_montagu_text = tsv(
         ["value", "meaning", "grade", "n_in_letter", "n_agree", "other_alignments", "source"],
         merged_montagu_rows,
     )
     outputs.update(p11_13_files)
-    outputs["key_montagu_extended.tsv"] = merged_montagu_text  # overrides p11_13_files' own copy
+    outputs["key_montagu_extended.tsv"] = merged_montagu_text  # overrides p11_13_files'/p15_files'/p14_files' own copies
     outputs.update(p15_files)
-    # H or C grade only: an M-graded (single, unconfirmed) value from one letter's
-    # own alignment must not be mechanically stamped "H" (read from a key source)
-    # when applied to a different letter that has no decipherment of its own.
-    montagu_key_dict = {r[0]: r[1] for r in merged_montagu_rows if r[2] in ("H", "C")}
+    outputs.update(p14_files)
 
     # Blake system: P9 + P10, jointly aligned.
     blake_key_rows, blake_files, blake_grades = extended_blake()
@@ -366,24 +487,15 @@ def main():
     )
     outputs.update(blake_files)
 
-    # Mechanical-only letters (P14: no printed decipherment found; P17: not this
-    # worker's row, key/behaviour unchanged).
+    # Mechanical-only letters: none currently (LETTERS is empty; kept for any future
+    # letter with no printed decipherment of its own).
     report = []
     for letter_id, files, keyfile, outfile in LETTERS:
-        if letter_id == "P14":
-            key = montagu_key_dict
-            key_note_lines = [
-                "# Mechanical reading of Thurloe letter %s against the extended Montagu-system" % letter_id,
-                "# key (Tomokiyo thurloe.htm plus this project's P11-13/P15 print-confirmed H/C",
-                "# values; M-graded single-occurrence guesses excluded), applied unchanged.",
-                "# Regenerate: python3 decode.py",
-            ]
-        else:
-            key = load_key(HERE / keyfile)
-            key_note_lines = [
-                "# Mechanical reading of Thurloe letter %s against Tomokiyo's partial key" % letter_id,
-                "# (thurloe.htm), applied unchanged. Regenerate: python3 decode.py",
-            ]
+        key = load_key(HERE / keyfile)
+        key_note_lines = [
+            "# Mechanical reading of Thurloe letter %s against Tomokiyo's partial key" % letter_id,
+            "# (thurloe.htm), applied unchanged. Regenerate: python3 decode.py",
+        ]
         grades, out_lines = decode_letter(letter_id, files, key)
         outputs[outfile] = render(letter_id, grades, out_lines, key_note_lines)
         total = sum(grades.values())
@@ -400,6 +512,7 @@ def main():
 
     print("P11-13: H=%d C=%d I=%d M=%d U=%d not-cipher=%d" % (p11_13_grades["H"], p11_13_grades["C"], p11_13_grades["I"], p11_13_grades["M"], p11_13_grades["U"], p11_13_grades["-"]))
     print("P15:    H=%d C=%d I=%d M=%d U=%d not-cipher=%d" % (p15_grades["H"], p15_grades["C"], p15_grades["I"], p15_grades["M"], p15_grades["U"], p15_grades["-"]))
+    print("P14:    H=%d C=%d I=%d M=%d U=%d not-cipher=%d" % (p14_grades["H"], p14_grades["C"], p14_grades["I"], p14_grades["M"], p14_grades["U"], p14_grades["-"]))
     print("P9+P10: H=%d C=%d I=%d M=%d U=%d not-cipher=%d" % (blake_grades["H"], blake_grades["C"], blake_grades["I"], blake_grades["M"], blake_grades["U"], blake_grades["-"]))
 
     print("letter\tH\tM\tU\ttotal")

@@ -1,51 +1,57 @@
 value	meaning	grade	n_in_letter	n_agree	other_alignments	source
-6	r	M	1	1		printed interlinear, one place (P9+P10)
-10	a	M	2	1	d:1	printed interlinear, one place (P9+P10)
-20	a	C	6	6		printed interlinear, 6 agreeing places (P9+P10)
-22	c	M	3	1	e:1,t:1	printed interlinear, one place (P9+P10)
-23	d	C	5	4	o:1	printed interlinear, 4 agreeing places (P9+P10)
-24	e	H	10	9	o:1	Tomokiyo thurloe.htm; print agrees
-25	f	C	5	3	n:2	printed interlinear, 3 agreeing places (P9+P10)
-26	g	H	2	1	f:1	Tomokiyo thurloe.htm; print differs
-27	h	C	6	4	i:1,n:1	printed interlinear, 4 agreeing places (P9+P10)
-28	i	C	6	4	e:1,n:1	printed interlinear, 4 agreeing places (P9+P10)
+10	d	C	2	2		printed interlinear, 2 agreeing places (P9+P10)
+14	e	M	1	1		printed interlinear, one place (P9+P10)
+20	a	C	9	8	t:1	printed interlinear, 8 agreeing places (P9+P10)
+21	b	C	2	2		printed interlinear, 2 agreeing places (P9+P10)
+22	c	C	5	4	t:1	printed interlinear, 4 agreeing places (P9+P10)
+23	d	C	8	7	m:1	printed interlinear, 7 agreeing places (P9+P10)
+24	e	H	15	14	o:1	Tomokiyo thurloe.htm; print agrees
+25	f	C	5	5		printed interlinear, 5 agreeing places (P9+P10)
+26	g	H	3	3		Tomokiyo thurloe.htm; print agrees
+27	h	C	8	6	a:1,n:1	printed interlinear, 6 agreeing places (P9+P10)
+28	i	C	6	4	e:2	printed interlinear, 4 agreeing places (P9+P10)
 29	k	M	1	1		printed interlinear, one place (P9+P10)
-30	l	C	4	3	i:1	printed interlinear, 3 agreeing places (P9+P10)
+30	l	C	5	5		printed interlinear, 5 agreeing places (P9+P10)
 31	m	H	0	0		Tomokiyo thurloe.htm; not in these letters
-32	n	H	4	3	r:1	Tomokiyo thurloe.htm; print agrees
-33	o	H	6	6		Tomokiyo thurloe.htm; print agrees
-34	p	C	6	5	n:1	printed interlinear, 5 agreeing places (P9+P10)
-36	r	H	5	2	d:1,j:1,o:1	Tomokiyo thurloe.htm; print agrees
-37	s	C	4	3	i:1	printed interlinear, 3 agreeing places (P9+P10)
-38	t	H	9	8	a:1	Tomokiyo thurloe.htm; print agrees
-39	u	H	8	8		Tomokiyo thurloe.htm; print agrees
+32	n	H	5	5		Tomokiyo thurloe.htm; print agrees
+33	o	H	9	9		Tomokiyo thurloe.htm; print agrees
+34	p	C	6	6		printed interlinear, 6 agreeing places (P9+P10)
+36	r	H	8	8		Tomokiyo thurloe.htm; print agrees
+37	f	C	7	7		printed interlinear, 7 agreeing places (P9+P10)
+38	t	H	11	11		Tomokiyo thurloe.htm; print agrees
+39	u	H	9	8	i:1	Tomokiyo thurloe.htm; print agrees
 41	x	M	1	1		printed interlinear, one place (P9+P10)
-42	y	M	1	1		printed interlinear, one place (P9+P10)
+42	y	C	2	2		printed interlinear, 2 agreeing places (P9+P10)
 43	z	M	1	1		printed interlinear, one place (P9+P10)
-50	a	C	3	2	m:1	printed interlinear, 2 agreeing places (P9+P10)
+50	a	C	4	4		printed interlinear, 4 agreeing places (P9+P10)
 52	c	M	1	1		printed interlinear, one place (P9+P10)
-54	e	H	8	5	a:1,r:1,f:1	Tomokiyo thurloe.htm; print agrees
+54	e	H	8	8		Tomokiyo thurloe.htm; print agrees
 57	h	M	1	1		printed interlinear, one place (P9+P10)
 58	i	M	1	1		printed interlinear, one place (P9+P10)
+60	l	C	3	3		printed interlinear, 3 agreeing places (P9+P10)
 61	m	M	1	1		printed interlinear, one place (P9+P10)
 62	n	C	2	2		printed interlinear, 2 agreeing places (P9+P10)
-63	o	M	1	1		printed interlinear, one place (P9+P10)
-64	p	M	2	1	t:1	printed interlinear, one place (P9+P10)
-66	r	C	3	2	i:1	printed interlinear, 2 agreeing places (P9+P10)
+63	o	C	4	4		printed interlinear, 4 agreeing places (P9+P10)
+64	p	C	2	2		printed interlinear, 2 agreeing places (P9+P10)
+66	r	C	3	3		printed interlinear, 3 agreeing places (P9+P10)
+67	s	M	1	1		printed interlinear, one place (P9+P10)
 68	t	C	3	3		printed interlinear, 3 agreeing places (P9+P10)
 79	b	M	1	1		printed interlinear, one place (P9+P10)
 81	d	M	1	1		printed interlinear, one place (P9+P10)
 82	e	H	1	1		Tomokiyo thurloe.htm; print agrees
 90	n	M	1	1		printed interlinear, one place (P9+P10)
 91	o	M	1	1		printed interlinear, one place (P9+P10)
-96	t	C	2	2		printed interlinear, 2 agreeing places (P9+P10)
+94	r	M	1	1		printed interlinear, one place (P9+P10)
+96	t	C	5	4	r:1	printed interlinear, 4 agreeing places (P9+P10)
 104	[the States General]	H	0	0		Tomokiyo thurloe.htm; not in these letters
 105	[the States of Holland / Hollanders / Holland]	H	0	0		Tomokiyo thurloe.htm; not in these letters
-121	chfhips	M	1	1		printed interlinear, one place (P9+P10)
+113	america	M	1	1		printed interlinear, one place (P9+P10)
+121	fhips	C	2	2		printed interlinear, 2 agreeing places (P9+P10)
 124	[ambassador]	H	0	0		Tomokiyo thurloe.htm; not in these letters
 128	fleet	M	1	1		printed interlinear, one place (P9+P10)
 130	[the Protector / Cromwell / England]	H	0	0		Tomokiyo thurloe.htm; not in these letters
 135	[money]	H	0	0		Tomokiyo thurloe.htm; not in these letters
+142	inftructions	M	1	1		printed interlinear, one place (P9+P10)
 145	[the Orange party]	H	0	0		Tomokiyo thurloe.htm; not in these letters
 171	[peace]	H	0	0		Tomokiyo thurloe.htm; not in these letters
 179	[commerce, trade]	H	0	0		Tomokiyo thurloe.htm; not in these letters

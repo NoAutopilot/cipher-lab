@@ -1553,3 +1553,128 @@ and `&key=$GOOGLE_BOOKS_KEY` on every call, key never printed). No archive.org d
 host, per the brief), no other host, no logins, no credentials, no subagents, no decoding. Per rule
 10: nothing above is described as new, unpublished, unread, first or never printed; no N-class is
 given (a verifier's job).
+
+## 20. P9, P10, P14 aligned from the page image (LANE T worker K)
+
+Brief: build `P14_pairs.tsv` and rebuild `P9_pairs.tsv`/`P10_pairs.tsv` from worker I's page-image
+transcriptions (NOTES s.18), extend `decode.py` so all three go through the aligned path already
+used for P15, regenerate the readings and keys, report grade counts before/after. No network, no
+anneal, no control, no cryptanalysis.
+
+**Method.** `decode.py` gained `parse_transcription()` (hand-split, not `csv.DictReader` -- several
+P14 doubt fields open with a quoted word, e.g. `101L55`'s `"the" and "and" are printed as plain
+words...`, which `csv`'s quoting rules silently corrupt when a field starts with `"` but keeps
+going past the matching close-quote; checked directly before writing the parser), `build_p9_p10_pairs()`
+and `build_p14_pairs()`. P9/P10's `image_transcription.tsv` already tags rows `plain`/`interlinear`/
+`cipher`: each `interlinear` row (the letter-spelled decipherment) is followed directly by its
+`cipher` row (the numeral line) -- the same convention `P15_pairs.tsv` already used, so pairing is a
+straight walk down the file. **P14's `image_transcription.tsv` uses `interlinear` for the numeral
+row itself** (it sits interlineated between two ordinary prose lines) and `plain` for the running
+text, with the decipherment recorded as an italicised phrase in that plain row's `doubt` column
+(`(italics: "phrase")`, one or more semicolon-separated phrases for a cipher line the print splits
+into several groups by a wide gap, or `(italics: whole line)`); `build_p14_pairs()` pairs each
+`interlinear` row with the phrase(s) from the plain row that follows it. Checked against every one
+of the 9 gap-marked cipher lines on p.101/p.102 (`"two/three/four groups"` in the doubt column, or a
+literal multi-space gap in the transcribed cipher text with no groups note, e.g. `101L51`): the
+count of quoted phrases in the following plain row's doubt field matches the group count in every
+case (worked example: `101L61` "two separate groups" pairs with `101L62`'s two quotes "now with
+you" / "to give orders to ten"). Both cipher clusters of a multi-group line are fed to
+`tools/interlinear_align.py` as **one** pair (its DP already treats a run of letters against a run
+of numeral tokens; splitting into separate rows per cluster was not attempted -- not needed for the
+DP to place letters, and this is a $6-capped alignment pass, not a hand check against the image).
+20 pairs recovered for P14 (one per interlinear/cipher row on the letter's full extent, p.101 lines
+44-65 and p.102 lines 1-22, none dropped); 5 pairs each for P9 and P10 (same row count as the old
+OCR-derived files, now carrying the full line instead of 1-3 recoverable fragments).
+
+**Grades, before (committed 24 Sept 2026 by workers B and the P14 mechanical pass) and after this
+pass, both from `python3 decode.py`:**
+
+| Letter | Method | H | C | I | M | U | not-cipher | cipher tokens |
+|---|---|---|---|---|---|---|---|---|
+| P9 before | OCR fragments (worker B) | 21 | 14 | 0 | 10 | 6 | 4 | 51 |
+| P9 after | image, full lines | **33** | **43** | 0 | 11 | **0** | 8 | 87 |
+| P10 before | OCR fragments (worker B) | 38 | 29 | 0 | 25 | 14 | 3 | 106 |
+| P10 after | image, full lines | **39** | **42** | 0 | 14 | 11 | 1 | 106 |
+| P14 before | mechanical, extended Montagu key, H/C rows only | 66 | -- | -- | 8 | 13 | 0 | 87 (narrow window) |
+| P14 after | image, own printed decipherment, aligned | **54** | **82** | 0 | **296** | 14 | 4 | 446 (full extent) |
+
+P9/P10: U tokens fell to near zero (0 and 11, from 6 and 14) and C rose sharply -- the image gives
+whole lines instead of the 1-3 fragments per letter the OCR left readable. P14's own H+C (136) is
+already higher than the old mechanical pass's H (66), from a decipherment the mechanical pass didn't
+know existed; M dominates (296 of 446) because most of P14's ~200 distinct nomenclature values in
+this short letter appear only once in this one letter's alignment (grade M by `build_key_rows()`'s
+"single-occurrence" rule, CLAUDE.md rule 4/brief's own grading spec) -- not read as a bulk key the
+way P11-13's larger, repeat-heavy sample was. `key_montagu_extended.tsv` gained 22 new rows from
+P14 (all M, none overriding an existing P11-13/P15 value -- `merge_key_rows()`'s base-wins rule,
+checked in the diff); P11-13's own computation, `reading_P11-13.txt`, `align_montagu.tsv` and
+`key_montagu.tsv` are untouched (confirmed: not in `git status` after this pass) and `reading_P15.txt`/
+`align_P15.tsv`/`P15_pairs.tsv` likewise untouched -- both per the brief's constraint.
+`python3 decode.py --check` passes (exit 0).
+
+**Groups the print leaves without a gloss (not read, not a transcription gap -- checked as
+`null-or-unaligned` tokens in the regenerated readings):**
+
+- **P10 p.620 line 10** (`620L10`): 14 of 22 tokens, already flagged by worker I (NOTES s.18) --
+  the gloss `e t u r e t h e` is 8 letters against 22 numerals, a genuine gap in Birch's own
+  typesetting.
+- **P14 `101L57`**: 7 of 14 tokens. Gloss is `a body` (6 letters) against a 14-token cipher line;
+  the plain row's doubt field marks only "a body" as italicised, so the rest of that cipher line's
+  content is either not glossed in the print or belongs to context this pass did not resolve.
+- **P14 `102L19`**: 3 of 24 tokens unaligned outright (most of the rest got thin, low-confidence
+  slivers -- gloss `not difappoint which may` is short against 24 numerals).
+- **P14 `102L21`** (the extent's last cipher line, ending "in your eye or defigne to be done there
+  by the fleet."): 7 of 16 tokens. Only "in your eye" is italicised in the print; "or defigne to be
+  done there by the fleet" is ordinary type, per worker I's own transcription -- consistent with
+  the extent genuinely ending here (NOTES s.11), but leaves this line's remaining tokens unglossed
+  by any phrase this pass could find.
+
+**Lockhart letter (Chauni, 19 June 1656 [N.S.]), immediately above P14 on p.101:** worker I saw and
+described its own coded numerals and interlinear glosses (NOTES s.18) but did not transcribe it, and
+this brief said not to. Flagging again for whoever picks it up: possible uncatalogued cipher target
+on the same leaf, image already on disk
+(`images/collectionofstat05thur_leaf0109_p101.jpg`), not checked against `index.tsv` or the solver
+repositories.
+
+**Proposed `index.tsv` corrections (for LANE T to apply; not edited directly here):**
+
+```
+row	field	old	new
+P9	window_lines	51599-51611	image p.611 L45-50, p.612 L1-6 (full extent, not a djvu line range)
+P9	n_cipher_lines	2	5
+P9	n_numeral_tokens_raw	29	87
+P9	status	printed-decipherment, OCR-fragmented (NOTES s.11); class pending	printed decipherment, aligned from page image: H33 C43 M11 U0 of 87 (NOTES s.20); class pending
+P9	corrected_by	NOTES s.11/s.16	NOTES s.11/s.16/s.18/s.20
+P10	window_lines	52304-52316	image p.620 L5-14 (full extent, not a djvu line range)
+P10	n_cipher_lines	3	5
+P10	n_numeral_tokens_raw	66	106
+P10	status	printed-decipherment, OCR-fragmented (NOTES s.11); class pending	printed decipherment, aligned from page image: H39 C42 M14 U11 of 106 (NOTES s.20); one line (p.620 L10) 14 tokens unglossed in the print itself; class pending
+P10	corrected_by	NOTES s.11/s.16	NOTES s.11/s.16/s.18/s.20
+P14	window_lines	8876-8888	image p.101 L44-65, p.102 L1-22 (full extent, not a djvu line range; djvu-equivalent ~8871-8935 per NOTES s.11)
+P14	cipher_system	Montagu's cipher (same as P11-13)	Montagu's cipher (same as P11-13), own printed decipherment (not a mechanical application)
+P14	n_cipher_lines	4	20
+P14	n_numeral_tokens_raw	87	450 (446 cipher groups + 4 inline clear words)
+P14	keyed	Montagu key (Tomokiyo + P11-13/P15 alignments)	printed decipherment (key_montagu_extended.tsv), aligned from page image
+P14	status	NO printed decipherment; mechanical Montagu key H66 M8 U13 of 87 in window (NOTES s.11); full extent and print check pending	own printed decipherment found in the page image (NOTES s.18); aligned: H54 C82 M296 U14 of 446 (NOTES s.20); Lockhart letter immediately above on p.101 has its own uncatalogued cipher, not transcribed; class pending
+P14	corrected_by	NOTES s.11/s.16	NOTES s.11/s.16/s.18/s.20
+```
+
+**Files:** `P9_pairs.tsv`, `P10_pairs.tsv`, `P14_pairs.tsv` (regenerated by `decode.py` from
+`P9/P10/P14/image_transcription.tsv`, plain_line/cipher_line tags now `<page>L<line>` from the
+image, not djvu line numbers -- the old djvu references no longer apply since these three letters'
+pairs no longer come from the djvu OCR); `key_blake_extended.tsv`, `key_montagu_extended.tsv`
+(regenerated); `align_blake.tsv`, `align_P14.tsv` (new); `reading_P9.txt`, `reading_P10.txt`,
+`reading_P14.txt` (regenerated, all in the aligned-reading format); `decode.py` (added
+`parse_transcription()`, `build_p9_p10_pairs()`, `build_p14_pairs()`, `extended_p14()`; `extended_blake()`
+now builds from the image transcription instead of loading the old `P9_pairs.tsv`/`P10_pairs.tsv`
+off disk; `LETTERS` no longer carries P14, so the mechanical-only path currently has no rows).
+`reading_P15.txt`, `align_P15.tsv`, `P15_pairs.tsv`, `reading_P11-13.txt`, `align_montagu.tsv`,
+`key_montagu.tsv`, `key_blake.tsv` untouched. `python3 decode.py --check` passes.
+
+**Requests this pass:** none -- everything came from the already-committed `images/manifest.json`
+and `P9/P10/P14/image_transcription.tsv` (worker I, NOTES s.18); no network host touched, no
+subagents. Well under the $6 cap.
+
+Per rule 10: nothing above is described as new, unpublished, unread, first or never printed; no
+N-class is assigned (a verifier's job). This is an alignment pass, not cryptanalysis -- every
+meaning comes from Tomokiyo's key or from Birch's own printed decipherment via `tools/interlinear_align.py`'s
+DP letter-to-number matching, never guessed.

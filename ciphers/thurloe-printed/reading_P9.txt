@@ -1,64 +1,104 @@
 # Reading of Thurloe letter P9 (Gen. Blake to the Protector) from the decipherment printed above the cipher
-# in the 1742 edition (IA collectionofstat03thur pp.611-613 (4 July 1655), djvu 51500-51610),
+# in the 1742 edition (IA collectionofstat03thur pp.611-612 (4 July 1655), page-image transcription),
 # aligned by tools/interlinear_align.py; Tomokiyo's key values kept at H. Regenerate:
 # python3 decode.py
-# Grades over the 55 cipher tokens: 4 not cipher groups (-); of 51 cipher groups
-# H=21 C=14 I=0 M=10 U=6
+# Grades over the 95 cipher tokens: 8 not cipher groups (-); of 87 cipher groups
+# H=33 C=43 I=0 M=11 U=0
 #
 # Columns: djvu-line-tag  raw-token  grade  reading  alignment-status
 #==========================================================================
-51509	34.	C	p	agrees
-51509	30.	C	l	agrees
-51509	20.	C	a	agrees
-51509	96.	C	t	agrees
-51509	54.	H	e	agrees
-51509	128.	M	fleet	single-segment
-51509	24.	H	e	agrees
-51509	41.	M	x	single
-51509	34.	C	p	agrees
-51509	24.	H	e	agrees
-51509	22.	M	c	single
-51509	96.	C	t	agrees
-51509	54.	H	e	agrees
-51509	23.	C	d	agrees
-51509	25.	C	f	agrees
-51509	66.	C	r	agrees
-51509	33.	H	o	agrees
-51509	61.	M	m	single
-51509	as	-		clear
-51509	alfo	-		clear
-51538	68.	C	t	agrees
-51538	57.	M	h	single
-51538	54.	H	e	agrees
-51546	24.	H	e	null-or-unaligned
-51546	25.	C	f	agrees
-51546	39.	H	u	agrees
-51605	20	U		null-or-unaligned
-51605	3&.	U		doubtful
-51605	24.	H	e	null-or-unaligned
-51605	25.	U		null-or-unaligned
-51605	39.	H	u	null-or-unaligned
-51605	DO.	-		clear
-51605	00.	U		null-or-unaligned
-51605	42.	U		null-or-unaligned
-51605	91.	M	o	single
-51605	79.	M	b	single
-51605	37.	M	i	conflict:s
-51605	54.	H	e	agrees
-51605	36.	H	r	agrees
-51605	39	H	u	agrees
-51608	28.	C	i	agrees
-51608	39.	H	u	agrees
-51608	24.	H	e	agrees
-51608	6-/.	-		clear
-51608	33.	H	o	agrees
-51608	34.	C	p	agrees
-51608	64.	M	p	single
-51608	6^.	U	o	doubtful
-51608	36.	H	r	agrees
-51608	38.	H	t	agrees
-51608	39.	H	u	agrees
-51608	32.	H	n	agrees
-51608	28.	C	i	agrees
-51608	38.	H	t	agrees
-51608	42.	M	y	single
+611L48	monday	-		clear
+611L48	laft	-		clear
+611L48	about	-		clear
+611L48	midnight.	-		clear
+611L48	The	-		clear
+611L48	37.	C	f	agrees
+611L48	24.	H	e	agrees
+611L48	22.	C	c	agrees
+611L48	36.	H	r	agrees
+611L48	14.	M	e	single-segment
+611L48	96.	C	t	agrees
+611L48	142.	M	inftructions	single-segment
+611L48	concerning	-		clear
+611L48	38.	H	t	agrees
+611L48	27.	C	h	agrees
+611L48	24.	H	e	agrees
+611L50	34.	C	p	agrees
+611L50	30.	C	l	agrees
+611L50	20.	C	a	agrees
+611L50	96.	C	t	agrees
+611L50	54.	H	e	agrees
+611L50	128.	M	fleet	single-segment
+611L50	24.	H	e	agrees
+611L50	41.	M	x	single-segment
+611L50	34.	C	p	agrees
+611L50	24.	H	e	agrees
+611L50	22.	C	c	agrees
+611L50	96.	C	t	agrees
+611L50	54.	H	e	agrees
+611L50	23.	C	d	agrees
+611L50	25.	C	f	agrees
+611L50	66.	C	r	agrees
+611L50	33.	H	o	agrees
+611L50	61.	M	m	single-segment
+611L50	as	-		clear
+611L50	alfo	-		clear
+612L2	63.	C	o	agrees
+612L2	68.	C	t	agrees
+612L2	57.	M	h	single-segment
+612L2	54.	H	e	agrees
+612L2	94.	M	r	single-segment
+612L2	121.	C	fhips	agrees
+612L2	21.	C	b	agrees
+612L2	33.	H	o	agrees
+612L2	39.	H	u	agrees
+612L2	32.	H	n	agrees
+612L2	23.	C	d	agrees
+612L2	38.	H	t	agrees
+612L2	63.	C	o	agrees
+612L2	113.	M	america	single-segment
+612L2	37.	C	f	agrees
+612L2	27.	C	h	agrees
+612L2	50.	C	a	agrees
+612L2	30.	C	l	agrees
+612L2	60.	C	l	agrees
+612L2	21.	C	b	agrees
+612L2	24.	H	e	agrees
+612L4	22.	C	c	agrees
+612L4	20.	C	a	agrees
+612L4	36.	H	r	agrees
+612L4	24.	H	e	agrees
+612L4	25.	C	f	agrees
+612L4	39.	H	u	agrees
+612L4	60.	C	l	agrees
+612L4	60.	C	l	agrees
+612L4	42.	C	y	agrees
+612L4	91.	M	o	single-segment
+612L4	79.	M	b	single-segment
+612L4	37.	C	f	agrees
+612L4	54.	H	e	agrees
+612L4	36.	H	r	agrees
+612L4	39.	H	u	agrees
+612L4	24.	H	e	agrees
+612L4	23.	C	d	agrees
+612L4	20.	C	a	agrees
+612L4	37.	C	f	agrees
+612L4	26.	H	g	agrees
+612L4	33.	H	o	agrees
+612L4	23.	C	d	agrees
+612L6	26.	H	g	agrees
+612L6	28.	C	i	agrees
+612L6	39.	H	u	agrees
+612L6	24.	H	e	agrees
+612L6	67.	M	s	single-segment
+612L6	33.	H	o	agrees
+612L6	34.	C	p	agrees
+612L6	64.	C	p	agrees
+612L6	63.	C	o	agrees
+612L6	36.	H	r	agrees
+612L6	38.	H	t	agrees
+612L6	39.	H	u	agrees
+612L6	32.	H	n	agrees
+612L6	28.	C	i	agrees
+612L6	38.	H	t	agrees
+612L6	42.	C	y	agrees
