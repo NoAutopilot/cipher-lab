@@ -403,8 +403,8 @@
    "state": "active",
    "holder": "Worker",
    "kind": "recovery",
-   "next": "f.35 N3 single audit (LANE V second audit running). f.36r line 1 read 24 Sept 2026 (25 signs, H 15 M 8 U 2); lines 2-4 also cipher, passes running (LANE G).",
-   "note": "Verifier class N3 (AUDIT.md, 24 Sept 2026): no prior plaintext or decipherment located; not N4 because Delavaud 1911 and Cuisiat 1998 were read only in snippets and JSTOR was not searched. Read with Tomokiyo's published Danzay key: 638 tokens, H 508, M 61, U 69, French on 23 of 37 lines.",
+   "next": "f.35 N3, two audits (second audit confirmed 24 Sept 2026; N4 waits on Delavaud 1911 via Gallica/LANE G, Daussy 2001, JSTOR rows). f.36r line 1 read 24 Sept 2026 (25 signs, H 15 M 8 U 2); lines 2-4 also cipher, passes running (LANE G).",
+   "note": "Verifier class N3, confirmed by an adversarial second audit (AUDIT.md, 24 Sept 2026; Ribier II, Cuisiat, Danish chancery 1556-60, Guise memoirs, Forsten, solver repos incl. PR branches searched). First audit: no prior plaintext or decipherment located; not N4 because Delavaud 1911 and Cuisiat 1998 were read only in snippets and JSTOR was not searched. Read with Tomokiyo's published Danzay key: 638 tokens, H 508, M 61, U 69, French on 23 of 37 lines.",
    "wait": {
     "on": "Second audit",
     "since": "24 Sep 2026, 03:16 UTC",
@@ -931,7 +931,7 @@
    "date": "24 Sept 2026",
    "kind": "reading",
    "title": "Danzay to the Cardinal of Lorraine, dated 27 Jan 1557 (BnF fr. 20140 f.35)",
-   "grade": "N3, single audit; adversarial second audit and blind second reader running",
+   "grade": "N3, two audits (second audit 24 Sept 2026 confirmed N3); N4 pending; blind second reader running",
    "line": "Read with the key Tomokiyo published: 508 of 638 cipher tokens at grade H, about 23 of 37 lines continuous French, 69 signs unkeyed; no contemporary decipherment. No prior decipherment or printed plaintext located in the Danzay editions, the Scottish and English state-paper series or the Danish regesta (AUDIT.md). Partial; the letter continues on f.36.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr20140-danzay-1557"
   },

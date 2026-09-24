@@ -20,3 +20,7 @@ ciphers/fr20140-danzay-1557	"Charles de Danzay" AND Danemark AND 1557	2026-09-24
 ciphers/eckert-1864	"Fox to Butler" AND 1864 AND cipher	2026-09-24	queued	
 ciphers/eckert-1864	"Meigs" AND "Butler" AND "April 22, 1864"	2026-09-24	queued	
 ciphers/eckert-1864	"Eckert" AND "cipher" AND "Military Telegraph" AND 1864	2026-09-24	queued	
+ciphers/fr20140-danzay-1557	"Danzay" AND "Christian III" AND (1557 OR 1558)	2026-09-24	queued	
+ciphers/fr20140-danzay-1557	"Quissarme" AND Danzay	2026-09-24	queued	
+ciphers/fr20140-danzay-1557	Daussy AND Danzay AND (lettres OR épistolaire)	2026-09-24	queued	
+ciphers/fr20140-danzay-1557	"Danzay" AND ("marchands de Lyon" OR Augsbourg) AND 1557	2026-09-24	queued	

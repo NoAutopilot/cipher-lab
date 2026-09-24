@@ -232,3 +232,156 @@ Requests: api.openalex.org 8 (all 429, shared budget). api.semanticscholar.org 6
 (200 each). api.archives-ouvertes.fr 8 (4 combined-query 0-hit attempts, 4 narrower follow-ups, one of which —
 "Danzay Danemark" — returns the Daussy 2004 hit). www.persee.fr 4 (200 each). gallica.bnf.fr 1 (`.texteBrut`,
 302 to altcha, not retried). WebSearch 4 queries. No logins, no credentials, no decoding.
+
+## Second audit (adversarial), 24 Sept 2026
+
+LANE V worker, 03:34-03:55 UTC, orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ. This session took no part in the
+solver, transcription, check-solved or first-verifier sessions and did no decoding. Brief: find this letter, its
+plaintext or a decipherment of it in print, and so prove N3 wrong. The audit covers only f.35; f.36 was out of scope.
+
+### Verdict
+
+| item | first audit | this audit | reason |
+|---|---|---|---|
+| fr.20140 f.35r-v, Danzay to the Cardinal of Lorraine, dated 27 Jan 1557 (possibly 1558 n.s.) | N3 | **N3 confirmed** (two audits) | No printed decipherment, plaintext or quotation of the letter was found in any source family below. Not raised to N4 for three reasons. Delavaud 1911, the only study known to describe fr.20140 fos 16-56, is full-view only on Gallica, which is another lane's host, so it has been searched only through Google Books' full-text index (snippets). OpenAlex, CrossRef and Semantic Scholar rate-limited this session. The JSTOR rows are still queued. |
+
+**Safe sentence** (unchanged in substance from the first audit): "BnF fr.20140 f.35 (Danzay to the Cardinal of
+Lorraine, dated 27 Jan 1557) has no contemporary decipherment. Read with the key Tomokiyo published in 2026, about 23 of
+its 37 lines give continuous French (508 of 638 cipher tokens at grade H). Two independent audits found no prior
+decipherment or printed plaintext in the Danzay editions and studies, the French, Scottish, English, Danish and Swedish
+documentary series, Ribier's *Lettres et mémoires d'estat*, the Cardinal's edited letters, or the solver repositories
+(search log in AUDIT.md). The reading is partial, and the letter continues on f.36."
+
+**Unsafe sentence:** "No one has ever read or published this letter." That needs N4 at least, and the Delavaud and
+journal gaps below are still open. "First decipherment" is also still barred.
+
+### Source-family log (this audit)
+
+Requests: archive.org 50 (advancedsearch 13, djvu text 38, including 2 errors, and metadata 3, be-api fts 8; the
+counts overlap by kind), googleapis.com 33 (key and `country=US`, key never printed, at least 3.2 s apart),
+api.openalex.org 1 (answered "daily budget used up for this IP"; stopped), api.crossref.org 4 (1 answered; 3 returned
+429 or empty; stopped after one retry), api.archives-ouvertes.fr 2, api.semanticscholar.org 3 (429 twice, one
+retry, stopped), persee.fr 3, cryptiana.web.fc2.com 1, github.com 2 anonymous bare clones (deleted), WebSearch 4.
+Gallica was not touched.
+
+1. **Delavaud, "Les Français dans le Nord"**, *Bulletin de la Société normande de géographie* XXXIII (1911), pp. 27-99.
+   There is also an offprint (Rouen, 1911) with its own pagination: the fr.20140 note is at p. 52 in the Bulletin and
+   p. 74 in the offprint. It is not on IA (the series there holds only vols 5, 7 and 12), and no HathiTrust record was
+   located through two WebSearch queries restricted to catalog.hathitrust.org. It is on Gallica, series ark
+   `cb328704148` (year 1911): **pending, handed to LANE G** (ROOM.md line of this date).
+   The Google Books full-text index was searched, since it covers NO_PAGES volumes: 12 queries against both
+   printings, `g7MGAAAAMAAJ` (offprint) and `ltSfAAAAMAAJ` (Bulletin 1911). What the snippets show:
+   - The fr.20140 reference is a finding-aid sentence: Danzay's letters "datant des années 1557 à 1568, se trouvent à
+     la Bibliothèque nationale, dans les ms. 15967 (fo 624) et 20140 (fos 16-56) ...; une adressée au cardinal du
+     Bellay dans le ms. 3921 (f° 62) ...". Then comes the Drottningholm copy-book, and the remark that the letters
+     "sont d'une lecture très attachante".
+   - Every Danzay quotation that surfaces is about commerce, from 1571, 1582, 1583 and 1584.
+   - One passage has Danzay reporting words of Henri II to Christian III ("Si je savais que mon ..."). That is not
+     this letter, which is addressed to the Cardinal.
+   - Zero hits for "janvier 1557", "cardinal de Lorraine" or "Lyon" with Danzay, or for the clear-hand phrases of f.35.
+   The Bulletin de la Société des antiquaires de l'Ouest (1919), *Annales de géographie* (1912) and Brunot, *Histoire
+   de la langue française* all cite Delavaud for the 1570s-80s commercial material. Delavaud could not have printed a
+   reading of the cipher runs, since the manuscript carries no decipherment and Tomokiyo's key dates from 2026. The
+   residual risk is that he paraphrases the clear-hand part. The snippet index gives no sign of it.
+2. **Cuisiat (ed.), *Lettres du cardinal Charles de Lorraine (1525-1574)*** (Geneva 1998), Google Books
+   `o3lbuj7PnuoC` (PARTIAL), 10 queries. The edition is of the Cardinal's **outgoing** letters and calendars no letter
+   written to him. The Danzay hit is the summary of **no. 486** (just before no. 487 of 20 June 1558), a letter of the
+   Cardinal's that says he "a reçu les lettres du sr. de Danzay et de Sturmius auquel il écrit une réponse ...".
+   Note 2 identifies Danzay as "agent diplomatique résidant à Copenhague. Gentilhomme servant du roi sous François
+   II". The index entry "Danzay: v. Quissarme" follows Danzay's family name, Quissarme. The "roi de Danemark" entries
+   are at letters 631 and 774, and there are 0 hits for "20140". Cuisiat thus attests that Danzay letters reached the
+   Cardinal in the first half of 1558, but prints and quotes none. **Searched (snippet level); no print of f.35.**
+3. **Ribier, *Lettres et mémoires d'estat*** (Paris 1666), **tome II** (1547-1559): IA `bub_gb_qWTswSr32NYC`,
+   identified by its title page ("TOME SECOND"), full djvu text (3.3 MB) grepped. Hits: Danzay, Dançay, Dantzai and
+   OCR variants 0; "Dannemarc*" in any spelling 1 (the Magdeburg affair, not 1557); "Augsbourg" 0; "marchans de
+   Lyon" 0. Tome I (`bub_gb_Tbs9UbObcPUC` and `bub_gb_bOnmNv2ZLVoC`) was also grepped: Danzay 0. **Does not contain
+   the letter.**
+4. **Guise papers.** The *Mémoires-journaux* of François de Lorraine, duc de Guise, in the Michaud-Poujoulat
+   *Nouvelle collection*, IA `nouvellecollecti06michuoft` (vol. 6), full text: Danzay in any spelling 0.
+   "Dannemarc*" appears 15 times, all in news of the Empire, Holstein and Lübeck; none is a despatch from Danzay.
+   **Does not contain the letter.**
+5. **Danish series**, full djvu text of 30 IA volumes grepped for Danzay, Dancay, Dantzeus, Dantzai and OCR variants.
+   `danskemagazin02unkngoog` returned a server error and one Aarsberetninger item a 404.
+   - *Kancelliets Brevbøger 1556-1560* (`kancellietsbrevb02denm`): the index's single entry "Dancay, Charles, fransk
+     Gesandt" leads to **3 Apr 1559** (Aarhus). There "Carolus Dantzeus, Kongen af Franckeriiges Legat" asks for an
+     inheritance grant to a lackey. Nothing for 1557-58. The 1551-55 volume, the other Brevbøger volumes, and Danske
+     Magazin 1st-3rd series with Nye danske Magazin (16 vols) give only index or modern references (Bricka,
+     Rørdam). The Aarsberetninger fra Geheimearchivet (6 vols) give 0.
+   - **Nothing prints a 1557 or 1558 Danzay despatch.**
+6. **Swedish, Russian and German print.**
+   - Handlingar XI was reached by the first audit and holds no 1557 material.
+   - New here: Forsten, *Akty i pis'ma k istorii baltiiskago voprosa* (1889, IA `aktyipismakisto00forsgoog`). It
+     prints original French Danzay material from **22 Oct 1563** on (Charles IX to the Elector August) and Danzay
+     despatches of the 1560s-70s, none of 1557-58.
+   - Forsten, *Baltiiskii vopros* (1893, Google Books full view) quotes Danzay from 24 Nov 1567 on.
+   - Sugenheim, *Frankreichs Einfluss* (1845, IA `frankreichseinfl01suge`) cites Danzay for the 1570s-80s from
+     Handlingar.
+   - None prints f.35.
+7. **Tomokiyo**, live page (cryptiana.web.fc2.com/code/danzay.htm, "Last modified on 22 February 2026"), fetched
+   today. It still lists f.35 as "27 January 1557 (to Cardinal of Lorraine, not deciphered)" and gives no reading. The
+   local mirror agrees.
+8. **Solver repositories.** Fresh bare clones of dbourdeau/cyphersolver took all 16 refs, including every PR head
+   (`refs/pull/*`), which covers the arya1515 and aryasn2026 forks' PR branches. aaymeloglu/unsolved-ciphers took all
+   30 refs. Every ref was grepped for Danzay, Dançay, Dantzai and 20140. Hits: only the 1574 fr.4736 letter (marked
+   "Solved" after Ryabov), the fr.2812 1575-1588 calendar, and numeric noise for "20140". **No f.35, no fr.20140
+   folio, no 1557.** Clones deleted.
+9. **Scholarship, open indexes.**
+   - HAL: 2 hits, both by Daussy (2004): "Un diplomate protestant ..." (= Pitou ed., *Élites et notables de l'Ouest*,
+     pp. 277-294, OpenEdition 10.4000/154oe, read by the first audit) and "En débattant la religion ... Duplessis-
+     Mornay, Languet et Danzay" (1570s-80s).
+   - CrossRef: one answered query, which returned Daussy 2004 and Ryabov 2025 (the 1574/1578 cipher); nothing else
+     relevant.
+   - Persée: 29 results for "Danzay"; the first 10 were read (Mervaud 1986, Vianey 2012/2013 on Jean Sauvage 1586,
+     Lesure 1971 review, *Revue d'histoire moderne* 1911 review of Richard, *MEFR* 2006, and others). None concerns 1557
+     or the Cardinal. The paging parameter did not work, so 19 were not read.
+   - **Unreachable:** OpenAlex (IP daily budget spent), Semantic Scholar (429), and CrossRef after its first answer (429).
+   - Google Books adds Daussy in *L'épistolaire au XVIe siècle* (Cahiers V.L. Saulnier 18, 2001, pp. 211-226; Danzay
+     at pp. 217, 220), a study of Danzay's letter-writing. It is snippet-only, and the IA copy
+     `lpistolaireauxvi0000unse` is lending-only (401). Snippet queries show no 1557 or Cardinal of Lorraine context.
+     **Unread in full**: a toward-N4 item.
+   - JSTOR: 4 more rows appended to `JSTOR-QUEUE.tsv` (below); no probe was run.
+10. **Phrase search on the decoded and clear-hand French.**
+    - Google Books, 14 queries: "veulx tenyr", "je ne vous puys encores asseurer", "il me semble qu'il seroyt bon de
+      regarder", "comme vous verrez par les lettres du roy" + Danemark, "ce que je doy entreprendre", "l'estat des
+      affaires de ce royaulme" + Dannemarch, "marchans de Lion" + Dannemarch, "le Roy de Dannemarch" 1557 Danzay,
+      "expres commandement" Danzay, "marchands de Lyon" Danzay, Danzay Augsbourg 1557, Danzay chancelier 1557
+      Danemark, and two Delavaud-scoped queries. The only exact hits are Coligny to Gordes (Delaborde 1881) and a 1896
+      review, both unrelated. The "exprès commandement" hits are Danzay letters of 1567 and the 1570s-80s.
+    - IA be-api fts, 6 queries: "veulx tenyr" gave 3 hits, all the same Coligny-period sentence and unrelated. "ce que
+      je doy entreprendre" and "le plus commodement qu il me sera possible" gave 0. "Dannemarch" "marchans de Lion"
+      gave 0. "cardinal de Lorraine" Danzay 1557 gave 184 loose hits; the 20 read were followed up. The one Danzay
+      lot in the 1835 Techener sale catalogue (`manuscritsetdocu00meco`, lot 279) is a **1575** dossier. Dançay 1557
+      "cardinal de Lorraine" gave 15 loose hits, all Richard or Rørdam biography.
+11. WebSearch: "Danzay" "20140" 1557 chiffre and one Tomokiyo query. Nothing beyond Wikipedia, Commons, fr.2812, and
+    the solver sites already covered.
+
+### What this audit found that the first did not
+
+- **Delavaud is located.** It appeared in the *Bulletin de la Société normande de géographie* XXXIII (1911), with
+  two paginations. A copy is on Gallica (`cb328704148`) and on neither IA nor, as far as could be found, HathiTrust.
+  Its fr.20140 reference is a finding-aid sentence, and its quotations are 1570s-80s commerce.
+- **Cuisiat no. 486** (June 1558) shows the Cardinal acknowledging "les lettres du sr. de Danzay". That is contextual
+  support that letters like f.35 reached him. The edition prints no Danzay letter, and its index gives Danzay under
+  his family name Quissarme.
+- **Ribier tome II was read in full text.** It has no Danzay and no 1557 Danish despatch.
+- The Danish chancery registers for 1556-60 hold one Danzay entry, of 1559, and it is unrelated.
+- Two Forsten editions print original French Danzay documents, but only from 1563.
+- The fork PR branches of the solver repository were grepped too.
+- No finding moves the class down.
+
+### Postmortem and corrections
+
+The first audit holds up. Its class, its gaps and its safe sentence were accurate. Its one weak point was describing
+Delavaud's "fos 16-56" note in a way that implied he might have studied the 1557 letters. The snippets show a
+finding-aid sentence inside a commerce-focused survey. That lowers, but does not remove, the chance that he paraphrased
+the clear passages. No over-claiming sentence was found in NOTES.md, reading.txt, reconciliation.md or status.json.
+status.json's results row changes from "N3, single audit; second audit pending" to "N3, two audits; N4 pending", and
+the card's `next` line is updated to match.
+
+**Still open for N4:**
+1. LANE G reads Delavaud 1911 on Gallica, Bulletin pp. 27-99, around pp. 49-55, for any quotation of a 1557 or 1558
+   letter to the Cardinal.
+2. Daussy 2001 (*L'épistolaire au XVIe siècle*, pp. 211-226), through an IA loan or a library copy.
+3. The JSTOR rows.
+4. OpenAlex, Semantic Scholar and CrossRef re-queried on another day.
+5. Optionally, ask Daussy (the route to N5).

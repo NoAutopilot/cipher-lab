@@ -452,3 +452,4 @@ Open questions (no change proposed):
 - The clear word read "bien" (4×) looks like "huy" in the image.
 
 Suggestion (not done): a Sonnet worker applies the accepted rows and reruns `decode.py --check`.
+- Suggestion (second audit, 24 Sept 2026): for N4 on f.35, read Delavaud 1911 (Bull. Soc. normande de géogr. XXXIII, Gallica cb328704148, pp. 49-55) and Daussy 2001 (L'épistolaire au XVIe siècle, pp. 211-226).
