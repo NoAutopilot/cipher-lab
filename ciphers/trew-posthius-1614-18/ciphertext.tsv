@@ -1,0 +1,325 @@
+line	position	sign	confidence	alt	why
+1614_note1	1	E	M	B:- draft:C	"settled: crop: cursive E of ""Eande[m]"""
+1614_note1	2	a	M	B:V draft:a	settled: crop
+1614_note1	3	n	H		agree
+1614_note1	4	d	H		agree
+1614_note1	5	e	H		agree
+1614_note1	6	d	H		agree
+1614_note1	7	e	H		agree
+1614_note1	8	s	H		agree
+1614_note1	9	c	H		agree
+1614_note1	10	r	H		agree
+1614_note1	11	i	H		agree
+1614_note1	12	p	H		agree
+1614_note1	13	t	H		agree
+1614_note1	14	i	H		agree
+1614_note1	15	o	H		agree
+1614_note1	16	n	H		agree
+1614_note1	17	e	H		agree
+1614_note1	18	m	H		agree
+1614_note1	19	o	H		agree
+1614_note1	20	l	H		agree
+1614_note1	21	i	H		agree
+1614_note1	22	m	H		agree
+1614_note1	23	:	M	B:- draft::	settled: crop
+1614_note2	1	c	H		agree
+1614_note2	2	o	M		agree-flagged
+1614_note2	3	m	H		agree
+1614_note2	4	u	H		agree
+1614_note2	5	n	H		agree
+1614_note2	6	i	H		agree
+1614_note2	7	c	H		agree
+1614_note2	8	a	H		agree
+1614_note2	9	v	H		agree
+1614_note2	10	i	H		agree
+1614_note2	11	t	M		agree-flagged
+1614_note2	12	P	H		agree
+1614_note2	13	a	H		agree
+1614_note2	14	r	H		agree
+1614_note2	15	e	H		agree
+1614_note2	16	n	H		agree
+1614_note2	17	s	H		agree
+1614_note2	18	b	H		agree
+1614_note2	19	m	H		agree
+1614_note3	1	d	H		agree
+1614_note3	2	n	M		agree-flagged
+1614_note3	3	o	H		agree
+1614_note3	4	D	H		agree
+1614_note3	5	C	H		agree
+1614_note3	6	a	H		agree
+1614_note3	7	m	H		agree
+1614_note3	8	e	H		agree
+1614_note3	9	r	H		agree
+1614_note3	10	a	H		agree
+1614_note3	11	r	H		agree
+1614_note3	12	i	H		agree
+1614_note3	13	o	H		agree
+1614_note3	14	N	H		agree
+1614_note3	15	o	H		agree
+1614_note3	16	r	H		agree
+1614_note3	17	i	H		agree
+1614_note3	18	b	H		agree
+1614_note3	19	g	M	B:9 draft:g	"settled: crop: ""Noribg."""
+1614_c1	1	A	H		agree
+1614_c1	2	w	M	B:W draft:w	settled: crop; case only
+1614_c1	3	s	M		agree-flagged
+1614_c1	4	s	M	draft:f	settled: crop: long s (ſ), both passes read f
+1614_c1	5	i	H		agree
+1614_c1	6	r	H		agree
+1614_c1	7	u	H		agree
+1614_c1	8	a	H		agree
+1614_c1	9	o	H		agree
+1614_c1	10	z	M		agree-flagged
+1614_c1	11	p	H		agree
+1614_c1	12	c	H		agree
+1614_c1	13	a	H		agree
+1614_c1	14	h	M		agree-flagged
+1614_c1	15	o	H		agree
+1614_c1	16	x	H		agree
+1614_c1	17	i	M	B:i draft:z	"settled: crop ""xih""; B"
+1614_c1	18	h	H		agree
+1614_c2	1	a	H		agree
+1614_c2	2	s	M		agree-flagged
+1614_c2	3	b	H		agree
+1614_c2	4	q	H		agree
+1614_c2	5	p	H		agree
+1614_c2	6	a	H		agree
+1614_c2	7	u	H		agree
+1614_c2	8	U	M	B:u draft:U	settled: crop; case only
+1614_c2	9	i	H		agree
+1614_c2	10	w	H		agree
+1614_c2	11	s	M		agree-flagged
+1614_c2	12	o	H		agree
+1614_c2	13	r	H		agree
+1614_c2	14	i	H		agree
+1614_c2	15	b	H		agree
+1614_c2	16	c	H		agree
+1614_c2	17	t	H		agree
+1614_c2	18	k	M	B:h draft:k	"settled: crop ""ctko""; A"
+1614_c2	19	o	H		agree
+1614_c3	1	c	H		agree
+1614_c3	2	p	H		agree
+1614_c3	3	b	H		agree
+1614_c3	4	x	H		agree
+1614_c3	5	p	H		agree
+1614_c3	6	u	H		agree
+1614_c3	7	r	H		agree
+1614_c3	8	p	H		agree
+1614_c3	9	a	H		agree
+1614_c3	10	x	H		agree
+1614_c3	11	p	H		agree
+1614_c3	12	b	H		agree
+1614_c3	13	x	H		agree
+1614_c3	14	a	H		agree
+1614_c3	15	s	M		agree-flagged
+1614_c3	16	k	M		agree-flagged
+1614_c3	17	a	H		agree
+1614_c3	18	u	M		agree-flagged
+1614_c4	1	n	H		agree
+1614_c4	2	a	H		agree
+1614_c4	3	p	H		agree
+1614_c4	4	a	H		agree
+1614_c4	5	z	M		agree-flagged
+1614_c4	6	k	H		agree
+1614_c4	7	n	H		agree
+1614_c4	8	w	H		agree
+1614_c4	9	l	H		agree
+1614_c4	10	x	H		agree
+1614_c4	11	i	H		agree
+1614_c4	12	b	H		agree
+1614_c4	13	g	H		agree
+1614_c4	14	n	H		agree
+1614_key_top	1	s	H		agree
+1614_key_top	2	a	H		agree
+1614_key_top	3	l	H		agree
+1614_key_top	4	u	H		agree
+1614_key_top	5	t	H		agree
+1614_key_top	6	e	M		agree-flagged
+1614_key_top	7	m	H		agree
+1614_key_top	8	b	H		agree
+1614_key_top	9	c	H		agree
+1614_key_top	10	d	H		agree
+1614_key_top	11	f	M		agree-flagged
+1614_key_top	12	g	H		agree
+1614_key_bot	1	h	M		agree-flagged
+1614_key_bot	2	i	H		agree
+1614_key_bot	3	k	H		agree
+1614_key_bot	4	n	H		agree
+1614_key_bot	5	o	H		agree
+1614_key_bot	6	p	H		agree
+1614_key_bot	7	q	H		agree
+1614_key_bot	8	r	H		agree
+1614_key_bot	9	w	H		agree
+1614_key_bot	10	x	H		agree
+1614_key_bot	11	y	H		agree
+1614_key_bot	12	z	H		agree
+1614_crib1	1	F	M	B:F draft:f	settled: crop
+1614_crib1	2	r	H		agree
+1614_crib1	3	i	H		agree
+1614_crib1	4	d	H		agree
+1614_crib1	5	e	H		agree
+1614_crib1	6	r	H		agree
+1614_crib1	7	i	H		agree
+1614_crib1	8	c	H		agree
+1614_crib1	9	u	H		agree
+1614_crib1	10	s	H		agree
+1614_crib1	11	H	H		agree
+1614_crib1	12	e	H		agree
+1614_crib1	13	n	H		agree
+1614_crib1	14	r	H		agree
+1614_crib1	15	i	H		agree
+1614_crib1	16	c	H		agree
+1614_crib1	17	u	H		agree
+1614_crib1	18	s	H		agree
+1614_crib1	19	v	H		agree
+1614_crib1	20	o	H		agree
+1614_crib1	21	c	H		agree
+1614_crib1	22	a	H		agree
+1614_crib1	23	t	H		agree
+1614_crib1	24	z	M	B:3 draft:z	"settled: crop: ʒ abbreviation for -ur, ""vocat[ur]"""
+1614_crib2	1	r	H		agree
+1614_crib2	2	e	H		agree
+1614_crib2	3	c	H		agree
+1614_crib2	4	e	H		agree
+1614_crib2	5	n	H		agree
+1614_crib2	6	s	H		agree
+1614_crib2	7	n	H		agree
+1614_crib2	8	a	H		agree
+1614_crib2	9	t	H		agree
+1614_crib2	10	u	H		agree
+1614_crib2	11	s	H		agree
+1614_crib2	12	P	H		agree
+1614_crib2	13	r	H		agree
+1614_crib2	14	i	H		agree
+1614_crib2	15	n	H		agree
+1614_crib2	16	c	H		agree
+1614_crib2	17	e	H		agree
+1614_crib2	18	p	H		agree
+1614_crib2	19	s	H		agree
+1618_left_top	1	C	H		agree
+1618_left_top	2	o	H		agree
+1618_left_top	3	n	H		agree
+1618_left_top	4	r	H		agree
+1618_left_top	5	a	H		agree
+1618_left_top	6	d	H		agree
+1618_left_top	7	b	M		agree-flagged
+1618_left_top	8	G1	H		agree
+1618_left_top	9	G2	H		agree
+1618_left_top	10	G3	H		agree
+1618_left_top	11	G4	H		agree
+1618_left_top	12	G5	H		agree
+1618_left_top	13	'	M	A:- draft:'	settled: mark after G5 (see atlas G5 note)
+1618_left_bot	1	k	M		agree-flagged
+1618_left_bot	2	l	M		agree-flagged
+1618_left_bot	3	m	M		agree-flagged
+1618_left_bot	4	p	M		agree-flagged
+1618_left_bot	5	G6	H		agree
+1618_left_bot	6	G7	H		agree
+1618_left_bot	7	w	H		agree
+1618_left_bot	8	G8	H		agree
+1618_left_bot	9	G9	M		agree-flagged
+1618_right_top	1	C	H		agree
+1618_right_top	2	o	H		agree
+1618_right_top	3	n	M		agree-flagged
+1618_right_top	4	r	H		agree
+1618_right_top	5	a	H		agree
+1618_right_top	6	d	H		agree
+1618_right_top	7	b	H		agree
+1618_right_top	8	e	H		agree
+1618_right_top	9	f	H		agree
+1618_right_top	10	g	H		agree
+1618_right_top	11	h	M	B:h draft:b	"settled: crop ""befghi""; B"
+1618_right_top	12	i	H		agree
+1618_right_bot	1	k	M		agree-flagged
+1618_right_bot	2	l	H		agree
+1618_right_bot	3	m	H		agree
+1618_right_bot	4	p	H		agree
+1618_right_bot	5	q	H		agree
+1618_right_bot	6	s	H		agree
+1618_right_bot	7	t	H		agree
+1618_right_bot	8	u	H		agree
+1618_right_bot	9	w	H		agree
+1618_right_bot	10	x	H		agree
+1618_right_bot	11	y	H		agree
+1618_right_bot	12	z	M		agree-flagged
+1618_spec1	1	D	M	B:O draft:	"settled: crop ""De"""
+1618_spec1	2	e	M	B:r draft:	settled: crop
+1618_spec1	3	S	M		agree-flagged
+1618_spec1	4	e	M	B:c draft:e	settled: crop
+1618_spec1	5	i	M		agree-flagged
+1618_spec1	6	d	M	B:f draft:d	settled: crop
+1618_spec1	7	i	M		agree-flagged
+1618_spec1	8	s	M		agree-flagged
+1618_spec1	9	t	M		agree-flagged
+1618_spec1	10	e	M		agree-flagged
+1618_spec1	11	i	M		agree-flagged
+1618_spec1	12	n	M		agree-flagged
+1618_spec2	1	s	M		agree-flagged
+1618_spec2	2	u	M		agree-flagged
+1618_spec2	3	p	M		agree-flagged
+1618_spec2	4	y	M		agree-flagged
+1618_spec2	5	u	M		agree-flagged
+1618_spec2	6	z	M	B:z draft:t	"settled: crop: ʒ as in ""zdb""; B"
+1618_spec2	7	d	M		agree-flagged
+1618_spec2	8	z	M		agree-flagged
+1618_spec2	9	d	M		agree-flagged
+1618_spec2	10	b	M		agree-flagged
+1618_spec2	11	u	M		agree-flagged
+1618_spec2	12	z	M		agree-flagged
+1618_spec2	13	m	M		agree-flagged
+1618_spec3	1	k	M	draft:f	"settled: crop ""kleiner"""
+1618_spec3	2	l	M		agree-flagged
+1618_spec3	3	i	M		agree-flagged
+1618_spec3	4	n	M		agree-flagged
+1618_spec3	5	c	M		agree-flagged
+1618_spec3	6	r	M		agree-flagged
+1618_spec3	7	n	M		agree-flagged
+1618_spec3	8	a	M		agree-flagged
+1618_spec3	9	n	M	A:- draft:n	settled: crop
+1618_spec4	1	W	M		agree-flagged
+1618_spec4	2	u	M		agree-flagged
+1618_spec4	3	z	M	draft:t	"settled: crop: ʒ, same form as spec2 ""zdb"""
+1618_spec4	4	m	M	B:n draft:m	"settled: crop ""Wuzmup""; A"
+1618_spec4	5	u	M		agree-flagged
+1618_spec4	6	p	M		agree-flagged
+1618_spec4	7	n	M		agree-flagged
+1618_spec4	8	q	M		agree-flagged
+1618_spec4	9	m	M		agree-flagged
+1618_spec5	1	D	M		agree-flagged
+1618_spec5	2	e	M		agree-flagged
+1618_spec5	3	r	M		agree-flagged
+1618_spec5	4	a	M		agree-flagged
+1618_spec5	5	b	M		agree-flagged
+1618_spec5	6	r	M		agree-flagged
+1618_spec5	7	a	M		agree-flagged
+1618_spec5	8	s	M		agree-flagged
+1618_spec5	9	u	M		agree-flagged
+1618_spec5	10	m	M		agree-flagged
+1618_spec6	1	s	M		agree-flagged
+1618_spec6	2	u	M		agree-flagged
+1618_spec6	3	p	M		agree-flagged
+1618_spec6	4	q	M	B:g draft:	settled: crop: q with heavy blot; neither pass
+1618_spec6	5	t	M		agree-flagged
+1618_spec6	6	p	M		agree-flagged
+1618_spec6	7	q	M		agree-flagged
+1618_spec6	8	y	M		agree-flagged
+1618_spec6	9	q	M	B:q draft:g	"settled: crop ""yqn""; B"
+1618_spec6	10	n	M		agree-flagged
+1618_spec7	1	K	M	B:A draft:K	settled: crop
+1618_spec7	2	e	M	B:c draft:e	settled: crop
+1618_spec7	3	i	M		agree-flagged
+1618_spec7	4	'	M		agree-flagged
+1618_spec7	5	m	M		agree-flagged
+1618_spec7	6	l	M		agree-flagged
+1618_spec7	7	g	M	B:y draft:g	"settled: crop ""gelt"""
+1618_spec7	8	e	M	B:e draft:c	settled: crop
+1618_spec7	9	l	M		agree-flagged
+1618_spec7	10	z	M		agree-flagged
+1618_spec8	1	C	M		agree-flagged
+1618_spec8	2	u	M		agree-flagged
+1618_spec8	3	z	M	draft:t	settled: crop: ʒ
+1618_spec8	4	m	M		agree-flagged
+1618_spec8	5	x	M		agree-flagged
+1618_spec8	6	u	M		agree-flagged
+1618_spec8	7	o	M		agree-flagged
+1618_spec8	8	b	M	draft:f	"settled: crop ""xuob."""
