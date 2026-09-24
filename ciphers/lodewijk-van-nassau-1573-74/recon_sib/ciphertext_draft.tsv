@@ -1,0 +1,1285 @@
+line	position	sign	confidence	alt	why
+4613_p1_L01	1	=Mon	M	B:-	gap
+4613_p1_L01	2	=signieur	M	B:-	gap
+4613_p1_L01	3	=de	M	B:=Monsigneur	differ
+4613_p1_L01	4	=puis	M	B:=depuis	differ
+4613_p1_L01	5	=nostre	H		agree
+4613_p1_L01	6	=dernier	M		agree-flagged
+4613_p1_L01	7	=lettre	M		agree-flagged
+4613_p1_L01	8	=par	H		agree
+4613_p1_L01	9	=ce	M	B:=du	differ
+4613_p1_L01	10	=quel	M		agree-flagged
+4613_p1_L01	11	=nous	H		agree
+4613_p1_L01	12	=vous	M	A:-	gap
+4613_p1_L01	13	=auons	M	A:-	gap
+4613_p1_L01	14	§	M	A:-	gap
+4613_p1_L02	1	81	H		agree
+4613_p1_L02	2	1	H		agree
+4613_p1_L02	3	19	H		agree
+4613_p1_L02	4	36	H		agree
+4613_p1_L02	5	82	H		agree
+4613_p1_L02	6	iii	H		agree
+4613_p1_L02	7	112	H		agree
+4613_p1_L02	8	88	H		agree
+4613_p1_L02	9	31	H		agree
+4613_p1_L02	10	21	H		agree
+4613_p1_L02	11	61	H		agree
+4613_p1_L02	12	71	H		agree
+4613_p1_L02	13	72	H		agree
+4613_p1_L02	14	84	H		agree
+4613_p1_L02	15	2	H		agree
+4613_p1_L02	16	61	H		agree
+4613_p1_L02	17	37	H		agree
+4613_p1_L02	18	26	H		agree
+4613_p1_L02	19	88	M		agree-flagged
+4613_p1_L02	20	27	M		agree-flagged
+4613_p1_L02	21	92	M	A:-	gap
+4613_p1_L03	1	62	M	B:64	differ
+4613_p1_L03	2	30	M		agree-flagged
+4613_p1_L03	3	62	M	A:-	gap
+4613_p1_L03	4	72	H		agree
+4613_p1_L03	5	9	M	B:4	differ
+4613_p1_L03	6	8	H		agree
+4613_p1_L03	7	39	H		agree
+4613_p1_L03	8	29	H		agree
+4613_p1_L03	9	22	H		agree
+4613_p1_L03	10	83	H		agree
+4613_p1_L03	11	36	H		agree
+4613_p1_L03	12	27	H		agree
+4613_p1_L03	13	32	H		agree
+4613_p1_L03	14	23	H		agree
+4613_p1_L03	15	84	H		agree
+4613_p1_L03	16	28	H		agree
+4613_p1_L03	17	113	H		agree
+4613_p1_L03	18	85	H		agree
+4613_p1_L03	19	17	M		agree-flagged
+4613_p1_L03	20	90	M	A:-	gap
+4613_p1_L04	1	7	H		agree
+4613_p1_L04	2	6	M	B:7	differ
+4613_p1_L04	3	38	H		agree
+4613_p1_L04	4	29	H		agree
+4613_p1_L04	5	10	H		agree
+4613_p1_L04	6	5	H		agree
+4613_p1_L04	7	31	H		agree
+4613_p1_L04	8	62	H		agree
+4613_p1_L04	9	113	H		agree
+4613_p1_L04	10	63	H		agree
+4613_p1_L04	11	85	H		agree
+4613_p1_L04	12	102	H		agree
+4613_p1_L04	13	7	H		agree
+4613_p1_L04	14	63	H		agree
+4613_p1_L04	15	72	H		agree
+4613_p1_L04	16	74	H		agree
+4613_p1_L04	17	10	H		agree
+4613_p1_L04	18	24	H		agree
+4613_p1_L04	19	77	H		agree
+4613_p1_L04	20	81	H		agree
+4613_p1_L04	21	136	M		agree-flagged
+4613_p1_L04	22	1	M	B:-	gap
+4613_p1_L04	23	35	M	B:135	differ
+4613_p1_L04	24	92	M		agree-flagged
+4613_p1_L04	25	108	M	B:-	gap
+4613_p1_L04	26	107	M	B:-	gap
+4613_p1_L04	27	116	M	B:-	gap
+4613_p1_L04	28	7	M	B:-	gap
+4613_p1_L04	29	104	M	B:-	gap
+4613_p1_L04	30	20	M	B:-	gap
+4613_p1_L04	31	67	M	B:-	gap
+4613_p1_L04	32	77	M	B:-	gap
+4613_p1_L04	33	88	M	B:-	gap
+4613_p1_L04	34	72	M	B:-	gap
+4613_p1_L05	1	92	M	B:-	gap
+4613_p1_L05	2	2	M	B:-	gap
+4613_p1_L05	3	84	M	B:108	differ
+4613_p1_L05	4	3	M	B:107	differ
+4613_p1_L05	5	76	M	B:116	differ
+4613_p1_L05	6	82	M	B:7	differ
+4613_p1_L05	7	12	M	B:104	differ
+4613_p1_L05	8	83	M	B:20	differ
+4613_p1_L05	9	101	M	B:67	differ
+4613_p1_L05	10	9	M	B:77	differ
+4613_p1_L05	11	81/112	M	B:88	differ
+4613_p1_L05	12	81	M	B:72	differ
+4613_p1_L05	13	18	H		agree
+4613_p1_L05	14	37	H		agree
+4613_p1_L05	15	81	H		agree
+4613_p1_L05	16	115	H		agree
+4613_p1_L05	17	73	H		agree
+4613_p1_L05	18	84	H		agree
+4613_p1_L05	19	73	H		agree
+4613_p1_L05	20	6	H		agree
+4613_p1_L05	21	117	H		agree
+4613_p1_L05	22	118	H		agree
+4613_p1_L05	23	92	H		agree
+4613_p1_L05	24	2	H		agree
+4613_p1_L05	25	75	H		agree
+4613_p1_L05	26	84	H		agree
+4613_p1_L05	27	114	H		agree
+4613_p1_L05	28	81	H		agree
+4613_p1_L05	29	§	M	A:-	gap
+4613_p1_L05	30	77	M	A:-	gap
+4613_p1_L05	31	77	M		agree-flagged
+4613_p1_L06	1	82	H		agree
+4613_p1_L06	2	3	H		agree
+4613_p1_L06	3	33	H		agree
+4613_p1_L06	4	76	H		agree
+4613_p1_L06	5	92	H		agree
+4613_p1_L06	6	12	H		agree
+4613_p1_L06	7	36	H		agree
+4613_p1_L06	8	113	H		agree
+4613_p1_L06	9	27	H		agree
+4613_p1_L06	10	2	H		agree
+4613_p1_L06	11	7	H		agree
+4613_p1_L06	12	40	H		agree
+4613_p1_L06	13	30	H		agree
+4613_p1_L06	14	65	H		agree
+4613_p1_L06	15	37	H		agree
+4613_p1_L06	16	10	H		agree
+4613_p1_L06	17	5	H		agree
+4613_p1_L06	18	20	H		agree
+4613_p1_L06	19	17	H		agree
+4613_p1_L06	20	61	H		agree
+4613_p1_L06	21	26	M		agree-flagged
+4613_p1_L07	1	79	H		agree
+4613_p1_L07	2	82	H		agree
+4613_p1_L07	3	30	M	B:70	differ
+4613_p1_L07	4	6	H		agree
+4613_p1_L07	5	40	H		agree
+4613_p1_L07	6	26	H		agree
+4613_p1_L07	7	2	H		agree
+4613_p1_L07	8	7	H		agree
+4613_p1_L07	9	38	H		agree
+4613_p1_L07	10	83	H		agree
+4613_p1_L07	11	112	H		agree
+4613_p1_L07	12	84	H		agree
+4613_p1_L07	13	28	H		agree
+4613_p1_L07	14	15	H		agree
+4613_p1_L07	15	37	H		agree
+4613_p1_L07	16	81	H		agree
+4613_p1_L07	17	115	H		agree
+4613_p1_L07	18	82	M	B:92	differ
+4613_p1_L07	19	76	H		agree
+4613_p1_L07	20	83	H		agree
+4613_p1_L07	21	22	H		agree
+4613_p1_L07	22	1	H		agree
+4613_p1_L07	23	102	M		agree-flagged
+4613_p1_L07	24	21	M	B:-	gap
+4613_p1_L07	25	85	M	B:-	gap
+4613_p1_L07	26	30	M	B:-	gap
+4613_p1_L07	27	17	M	B:-	gap
+4613_p1_L07	28	36	M	B:-	gap
+4613_p1_L07	29	61	M	B:-	gap
+4613_p1_L07	30	37	M	B:-	gap
+4613_p1_L07	31	8	M	B:-	gap
+4613_p1_L07	32	2	M	B:-	gap
+4613_p1_L07	33	29	M	B:-	gap
+4613_p1_L07	34	21	M	B:-	gap
+4613_p1_L07	35	82	M	B:-	gap
+4613_p1_L07	36	71	M	B:-	gap
+4613_p1_L07	37	83	M	B:-	gap
+4613_p1_L07	38	79	M	B:-	gap
+4613_p1_L07	39	ii	M	B:-	gap
+4613_p1_L07	40	63	M	B:-	gap
+4613_p1_L07	41	26	M	B:-	gap
+4613_p1_L08	1	96	M	B:-	gap
+4613_p1_L08	2	9	M	B:-	gap
+4613_p1_L08	3	118	M	B:21	differ
+4613_p1_L08	4	85	H		agree
+4613_p1_L08	5	30	M	A:-	gap
+4613_p1_L08	6	113	M	B:17	differ
+4613_p1_L08	7	84	M	B:36	differ
+4613_p1_L08	8	19	M	B:61	differ
+4613_p1_L08	9	37	H		agree
+4613_p1_L08	10	82	M	B:-	gap
+4613_p1_L08	11	112	M	B:-	gap
+4613_p1_L08	12	62	M	B:-	gap
+4613_p1_L08	13	85	M	B:-	gap
+4613_p1_L08	14	40	M	B:-	gap
+4613_p1_L08	15	iii	M	B:-	gap
+4613_p1_L08	16	64	M	B:-	gap
+4613_p1_L08	17	28	M	B:-	gap
+4613_p1_L08	18	72	M	B:8	differ
+4613_p1_L08	19	96	M	B:2	differ
+4613_p1_L08	20	65	M	B:29	differ
+4613_p1_L08	21	21	H		agree
+4613_p1_L08	22	9	M	B:-	gap
+4613_p1_L08	23	76	M	B:-	gap
+4613_p1_L08	24	82	H		agree
+4613_p1_L08	25	112	M	B:-	gap
+4613_p1_L08	26	65	M	B:-	gap
+4613_p1_L08	27	312	M	B:-	gap
+4613_p1_L08	28	218	M	B:-	gap
+4613_p1_L08	29	=pour	M	B:-	gap
+4613_p1_L08	30	=autant	M	B:-	gap
+4613_p1_L08	31	=nous	M	B:-	gap
+4613_p1_L08	32	=Nous	M	B:-	gap
+4613_p1_L08	33	=faisions	M	B:71	differ
+4613_p1_L08	34	=dun	M	B:83	differ
+4613_p1_L08	35	=bon	M	B:79	differ
+4613_p1_L08	36	=Clement	M	B:ii	differ
+4613_p1_L08	37	6	M	B:63	differ
+4613_p1_L08	38	92	M	B:26	differ
+4613_p1_L09	1	2	M	B:-	gap
+4613_p1_L09	2	6	M	B:-	gap
+4613_p1_L09	3	37	M	B:96	differ
+4613_p1_L09	4	26	M	B:9	differ
+4613_p1_L09	5	118	H		agree
+4613_p1_L09	6	85	M	A:-	gap
+4613_p1_L09	7	62	M	B:113	differ
+4613_p1_L09	8	2	M	B:84	differ
+4613_p1_L09	9	78	M	B:18	differ
+4613_p1_L09	10	81	M	B:37	differ
+4613_p1_L09	11	22/79	M	B:82	differ
+4613_p1_L09	12	8	M	B:112	differ
+4613_p1_L09	13	27	M	B:62	differ
+4613_p1_L09	14	31	M	B:85	differ
+4613_p1_L09	15	23	M	B:40	differ
+4613_p1_L09	16	82	M	B:iii	differ
+4613_p1_L09	17	55	M	B:64	differ
+4613_p1_L09	18	80	M	B:28	differ
+4613_p1_L09	19	36	M	B:72	differ
+4613_p1_L09	20	107	M	B:96	differ
+4613_p1_L09	21	20	M	B:65	differ
+4613_p1_L09	22	82	M	B:21	differ
+4613_p1_L09	23	22	M	B:9	differ
+4613_p1_L10	1	21	M	B:-	gap
+4613_p1_L10	2	81	M	B:-	gap
+4613_p1_L10	3	70	M	B:-	gap
+4613_p1_L10	4	19	M	B:-	gap
+4613_p1_L10	5	111	M	B:-	gap
+4613_p1_L10	6	36	M	B:-	gap
+4613_p1_L10	7	32	M	B:-	gap
+4613_p1_L10	8	105	M	B:-	gap
+4613_p1_L10	9	9	M	B:-	gap
+4613_p1_L10	10	5/29	M	B:76	differ
+4613_p1_L10	11	38	M	B:82	differ
+4613_p1_L10	12	24	M	B:112	differ
+4613_p1_L10	13	34	M	B:65	differ
+4613_p1_L10	14	10	M	B:312	differ
+4613_p1_L10	15	40	M	B:218	differ
+4613_p1_L10	16	35	M	B:=pour	differ
+4613_p1_L10	17	61	M	B:=auoir	differ
+4613_p1_L10	18	79	M	B:=nous	differ
+4613_p1_L10	19	12	M	B:=vous	differ
+4613_p1_L10	20	112	M	B:=puissiez	differ
+4613_p1_L10	21	36	M	B:=escripre	differ
+4613_p1_L10	22	26	M	B:=ben	differ
+4613_p1_L11	1	31	M	B:2	differ
+4613_p1_L11	2	6	H		agree
+4613_p1_L11	3	37	M	A:-	gap
+4613_p1_L11	4	26	H		agree
+4613_p1_L11	5	118	M	A:-	gap
+4613_p1_L11	6	62	M	A:-	gap
+4613_p1_L11	7	2	M	A:-	gap
+4613_p1_L11	8	32	M	B:76	differ
+4613_p1_L11	9	16	M	B:81	differ
+4613_p1_L11	10	40	M	B:22	differ
+4613_p1_L11	11	102	M	B:79	differ
+4613_p1_L11	12	96	M	B:8	differ
+4613_p1_L11	13	62	M	B:27	differ
+4613_p1_L11	14	103	M	B:31	differ
+4613_p1_L11	15	28	M	B:23	differ
+4613_p1_L11	16	82	H		agree
+4613_p1_L11	17	71	M	B:55	differ
+4613_p1_L11	18	83	M	B:80	differ
+4613_p1_L11	19	15	M	B:36	differ
+4613_p1_L11	20	9	M	B:107	differ
+4613_p1_L11	21	38	M	B:20	differ
+4613_p1_L11	22	112	M	B:82	differ
+4613_p1_L11	23	22	M		agree-flagged
+4613_p1_L11	24	62	M	B:-	gap
+4613_p1_L11	25	=refuign	M	B:-	gap
+4613_p1_L12	1	21	M	A:-	gap
+4613_p1_L12	2	=nous	M	B:81	differ
+4613_p1_L12	3	2	M	B:30	differ
+4613_p1_L12	4	83	M	B:19	differ
+4613_p1_L12	5	14	M	B:111	differ
+4613_p1_L12	6	65	M	B:36	differ
+4613_p1_L12	7	24	M	B:32	differ
+4613_p1_L12	8	76	M	B:105	differ
+4613_p1_L12	9	8	M	B:9	differ
+4613_p1_L12	10	4	M	B:5	differ
+4613_p1_L12	11	27	M	B:29	differ
+4613_p1_L12	12	13	M	B:38	differ
+4613_p1_L12	13	62	M	B:24	differ
+4613_p1_L12	14	28	M	B:34	differ
+4613_p1_L12	15	113	M	B:10	differ
+4613_p1_L12	16	85	M	B:40	differ
+4613_p1_L12	17	31	M	B:35	differ
+4613_p1_L12	18	84	M	B:61	differ
+4613_p1_L12	19	119	M	B:79	differ
+4613_p1_L12	20	12	H		agree
+4613_p1_L12	21	112	M	A:-	gap
+4613_p1_L12	22	36	M	A:-	gap
+4613_p1_L12	23	28	M	B:26	differ
+4613_p1_L13	1	iii	M	B:31	differ
+4613_p1_L13	2	83	M	B:6	differ
+4613_p1_L13	3	20	M	B:26	differ
+4613_p1_L13	4	40	M	B:32	differ
+4613_p1_L13	5	82	M	B:16	differ
+4613_p1_L13	6	112	M	B:40	differ
+4613_p1_L13	7	8	M	B:102	differ
+4613_p1_L13	8	26	M	B:86	differ
+4613_p1_L13	9	31	M	B:62	differ
+4613_p1_L13	10	66	M	B:103	differ
+4613_p1_L13	11	101	M	B:28	differ
+4613_p1_L13	12	85	M	B:82	differ
+4613_p1_L13	13	5	M	B:71	differ
+4613_p1_L13	14	72	M	B:83	differ
+4613_p1_L13	15	6	M	B:15	differ
+4613_p1_L13	16	40	M	B:9	differ
+4613_p1_L13	17	25	M	B:38	differ
+4613_p1_L13	18	34	M	B:112	differ
+4613_p1_L13	19	=quant	M	B:22	differ
+4613_p1_L13	20	=nous	M	B:62	differ
+4613_p1_L14	1	90	M	B:-	gap
+4613_p1_L14	2	21	M	B:-	gap
+4613_p1_L14	3	61	M	B:-	gap
+4613_p1_L14	4	1	M	B:-	gap
+4613_p1_L14	5	71	M	B:-	gap
+4613_p1_L14	6	6	M	B:-	gap
+4613_p1_L14	7	101	M	B:-	gap
+4613_p1_L14	8	35	M	B:=nous	differ
+4613_p1_L14	9	2	H		agree
+4613_p1_L14	10	7	M	B:-	gap
+4613_p1_L14	11	37	M	B:-	gap
+4613_p1_L14	12	26	M	B:-	gap
+4613_p1_L14	13	62	M	B:-	gap
+4613_p1_L14	14	29	M	B:83	differ
+4613_p1_L14	15	8	M	B:14	differ
+4613_p1_L14	16	7	M	B:65	differ
+4613_p1_L14	17	30	M	B:24	differ
+4613_p1_L14	18	76	H		agree
+4613_p1_L14	19	81	M	B:8	differ
+4613_p1_L14	20	4	H		agree
+4613_p1_L14	21	9	M	B:-	gap
+4613_p1_L14	22	39	M	B:27	differ
+4613_p1_L14	23	83	M	B:13	differ
+4613_p1_L14	24	111	M	B:62	differ
+4613_p1_L14	25	114	M	B:28	differ
+4613_p1_L14	26	34	M	B:113	differ
+4613_p1_L14	27	16	M	B:85	differ
+4613_p1_L14	28	35	M	B:31	differ
+4613_p1_L14	29	102	M	B:84	differ
+4613_p1_L14	30	123	M	B:119	differ
+4613_p1_L14	31	57	M	B:12	differ
+4613_p1_L14	32	28	M		agree-flagged
+4613_p1_L14	33	82	M	B:-	gap
+4613_p1_L14	34	21	M	B:-	gap
+4613_p1_L14	35	22	M	B:-	gap
+4613_p1_L14	36	6	M	B:-	gap
+4613_p1_L14	37	1	M	B:-	gap
+4613_p1_L14	38	31	M	B:-	gap
+4613_p1_L15	1	iii	M	A:-	gap
+4613_p1_L15	2	60	M	B:83	differ
+4613_p1_L15	3	102	M	B:20	differ
+4613_p1_L15	4	81	M	B:40	differ
+4613_p1_L15	5	2	M	B:82	differ
+4613_p1_L15	6	36	M	B:112	differ
+4613_p1_L15	7	7	M	B:8	differ
+4613_p1_L15	8	26	H		agree
+4613_p1_L15	9	32/30	M	B:-	gap
+4613_p1_L15	10	40	M	B:31	differ
+4613_p1_L15	11	25	M	B:66	differ
+4613_p1_L15	12	111	M	B:101	differ
+4613_p1_L15	13	61	M	B:85	differ
+4613_p1_L15	14	120	M	B:5	differ
+4613_p1_L15	15	85	M	B:72	differ
+4613_p1_L15	16	30	M	B:6	differ
+4613_p1_L15	17	27	M	B:40	differ
+4613_p1_L15	18	82	M	B:25	differ
+4613_p1_L15	19	111	M	B:=quant	differ
+4613_p1_L15	20	112	M	B:=a	differ
+4613_p1_L15	21	84	M	B:=nous	differ
+4613_p1_L16	1	81	M	B:90	differ
+4613_p1_L16	2	33	M	B:21	differ
+4613_p1_L16	3	104	M	B:61	differ
+4613_p1_L16	4	112	M	B:1	differ
+4613_p1_L16	5	81	M	B:71	differ
+4613_p1_L16	6	62	M	B:6	differ
+4613_p1_L16	7	16	M	B:101	differ
+4613_p1_L16	8	36	H		agree
+4613_p1_L16	9	101	M	B:-	gap
+4613_p1_L16	10	2	H		agree
+4613_p1_L16	11	56	M	B:-	gap
+4613_p1_L16	12	82	M	B:-	gap
+4613_p1_L16	13	73	M	B:-	gap
+4613_p1_L16	14	83	M	B:-	gap
+4613_p1_L16	15	5	M	B:7	differ
+4613_p1_L16	16	32	M	B:37	differ
+4613_p1_L16	17	339	M	B:26	differ
+4613_p1_L16	18	81	M	B:62	differ
+4613_p1_L16	19	32	M	B:39	differ
+4613_p1_L16	20	33	M	B:8	differ
+4613_p1_L16	21	21	M	B:7	differ
+4613_p1_L16	22	6	M	B:30	differ
+4613_p1_L17	1	76	M	A:-	gap
+4613_p1_L17	2	81	M	A:-	gap
+4613_p1_L17	3	4	M	A:-	gap
+4613_p1_L17	4	105	M	B:9	differ
+4613_p1_L17	5	26	M	B:39	differ
+4613_p1_L17	6	72	M	B:83	differ
+4613_p1_L17	7	82	M	B:111	differ
+4613_p1_L17	8	5	M	B:114	differ
+4613_p1_L17	9	34	H		agree
+4613_p1_L17	10	338	M	B:-	gap
+4613_p1_L17	11	2	M	B:27	differ
+4613_p1_L17	12	6	M	B:16	differ
+4613_p1_L17	13	30	M	B:35	differ
+4613_p1_L17	14	20	M	B:102	differ
+4613_p1_L17	15	81	M	B:123	differ
+4613_p1_L17	16	27	M	B:57	differ
+4613_p1_L17	17	12	M	B:28	differ
+4613_p1_L17	18	83	M	B:82	differ
+4613_p1_L17	19	21	H		agree
+4613_p1_L17	20	22	M	A:-	gap
+4613_p1_L17	21	6	H		agree
+4613_p1_L17	22	1	H		agree
+4613_p1_L17	23	28	M	B:-	gap
+4613_p1_L17	24	60	M	B:31	differ
+4613_p1_L18	1	60	M	A:-	gap
+4613_p1_L18	2	102	M	A:-	gap
+4613_p1_L18	3	26	M	B:81	differ
+4613_p1_L18	4	82	M	B:2	differ
+4613_p1_L18	5	22	M	B:21	differ
+4613_p1_L18	6	10	M	B:7	differ
+4613_p1_L18	7	5	M	B:26	differ
+4613_p1_L18	8	61	M	B:32	differ
+4613_p1_L18	9	86	M	B:30	differ
+4613_p1_L18	10	62	M	B:40	differ
+4613_p1_L18	11	101	M	B:25	differ
+4613_p1_L18	12	112	M	B:111	differ
+4613_p1_L18	13	103	M	B:61	differ
+4613_p1_L18	14	92	M	B:120	differ
+4613_p1_L18	15	21	M	B:85	differ
+4613_p1_L18	16	92	M	B:30	differ
+4613_p1_L18	17	31	M	B:27	differ
+4613_p1_L18	18	102	M	B:82	differ
+4613_p1_L18	19	23	M	B:111	differ
+4613_p1_L18	20	83	M	B:112	differ
+4613_p1_L18	21	23	M	B:84	differ
+4613_p1_L19	1	81	M	A:-	gap
+4613_p1_L19	2	73	M	A:-	gap
+4613_p1_L19	3	104	M	A:-	gap
+4613_p1_L19	4	112	M	A:-	gap
+4613_p1_L19	5	81	M	A:-	gap
+4613_p1_L19	6	=autrement	M	B:62	differ
+4613_p1_L19	7	=et	M	B:16	differ
+4613_p1_L19	8	82	M	B:36	differ
+4613_p1_L19	9	3	M	B:101	differ
+4613_p1_L19	10	261	M	B:2	differ
+4613_p1_L19	11	76	M	B:56	differ
+4613_p1_L19	12	63	M	B:82	differ
+4613_p1_L19	13	33	M	B:73	differ
+4613_p1_L19	14	15	M	B:83	differ
+4613_p1_L19	15	21	M	B:5	differ
+4613_p1_L19	16	81	M	B:32	differ
+4613_p1_L19	17	77	M	B:339	differ
+4613_p1_L19	18	85	M	B:81	differ
+4613_p1_L19	19	112	M	B:32	differ
+4613_p1_L19	20	61	M	B:33	differ
+4613_p1_L19	21	312	M	B:21	differ
+4613_p1_L19	22	273/62	M	B:6	differ
+4613_p1_L20	1	105	M	A:-	gap
+4613_p1_L20	2	40	M	B:26	differ
+4613_p1_L20	3	30	M	B:72	differ
+4613_p1_L20	4	82	H		agree
+4613_p1_L20	5	16	M	B:-	gap
+4613_p1_L20	6	36	M	B:-	gap
+4613_p1_L20	7	81	M	B:-	gap
+4613_p1_L20	8	112	M	B:5	differ
+4613_p1_L20	9	81	M	B:34	differ
+4613_p1_L20	10	26	M	B:338	differ
+4613_p1_L20	11	96	M	B:2	differ
+4613_p1_L20	12	6	H		agree
+4613_p1_L20	13	30	M	A:-	gap
+4613_p1_L20	14	39	M	B:20	differ
+4613_p1_L20	15	21	M	B:81	differ
+4613_p1_L20	16	62	M	B:27	differ
+4613_p1_L20	17	92	M	B:12	differ
+4613_p1_L20	18	83	H		agree
+4613_p1_L20	19	27	M	B:21	differ
+4613_p1_L20	20	cc	M	B:6	differ
+4613_p1_L20	21	347	M	B:1	differ
+4613_p1_L20	22	=nous	M	B:28	differ
+4613_p1_L21	1	71	M	B:-	gap
+4613_p1_L21	2	62	M	B:-	gap
+4613_p1_L21	3	39	M	B:-	gap
+4613_p1_L21	4	26	M		agree-flagged
+4613_p1_L21	5	6	M	B:-	gap
+4613_p1_L21	6	2	M	B:-	gap
+4613_p1_L21	7	32	M	B:82	differ
+4613_p1_L21	8	71	M	B:22	differ
+4613_p1_L21	9	71	M	B:10	differ
+4613_p1_L21	10	118	M	B:5	differ
+4613_p1_L21	11	119	M	B:61	differ
+4613_p1_L21	12	81	M	B:86	differ
+4613_p1_L21	13	3	M	B:62	differ
+4613_p1_L21	14	72	M	B:101	differ
+4613_p1_L21	15	83	M	B:112	differ
+4613_p1_L21	16	90	M	B:103	differ
+4613_p1_L21	17	6	M	B:92	differ
+4613_p1_L21	18	21	H		agree
+4613_p1_L21	19	30	M	B:-	gap
+4613_p1_L21	20	51	M	B:-	gap
+4613_p1_L21	21	88	M	B:92	differ
+4613_p1_L21	22	62	M	B:31	differ
+4613_p1_L21	23	101	M	B:102	differ
+4613_p1_L21	24	111	M	B:23	differ
+4613_p1_L21	25	101	M	B:83	differ
+4613_p1_L21	26	81	M	B:23	differ
+4613_p1_L22	1	21	M	B:-	gap
+4613_p1_L22	2	=et	M	B:-	gap
+4613_p1_L22	3	62	M	B:=autrement	differ
+4613_p1_L22	4	26	M	B:92	differ
+4613_p1_L22	5	6	M	B:82	differ
+4613_p1_L22	6	2	M	B:3	differ
+4613_p1_L22	7	26	H		agree
+4613_p1_L22	8	112	M	B:-	gap
+4613_p1_L22	9	7	M	B:-	gap
+4613_p1_L22	10	91	M	B:-	gap
+4613_p1_L22	11	82	M	B:76	differ
+4613_p1_L22	12	2	M	B:63	differ
+4613_p1_L22	13	8	M	B:33	differ
+4613_p1_L22	14	40	M	B:15	differ
+4613_p1_L22	15	30	M	B:21	differ
+4613_p1_L22	16	94	M	B:31	differ
+4613_p1_L22	17	81	M	B:77	differ
+4613_p1_L22	18	3	M	B:85	differ
+4613_p1_L22	19	27	M	B:112	differ
+4613_p1_L22	20	101	M	B:61	differ
+4613_p1_L22	21	71	M	B:312	differ
+4613_p1_L22	22	51	M	B:275	differ
+4613_p1_L22	23	62	M		agree-flagged
+4613_p1_L23	1	71	M	A:-	gap
+4613_p1_L23	2	62	M	A:-	gap
+4613_p1_L23	3	39	M	A:-	gap
+4613_p1_L23	4	26	M	A:-	gap
+4613_p1_L23	5	90	M	A:-	gap
+4613_p1_L23	6	102	M	B:108	differ
+4613_p1_L23	7	83	H		agree
+4613_p1_L23	8	4	H		agree
+4613_p1_L23	9	32	H		agree
+4613_p1_L23	10	8	H		agree
+4613_p1_L23	11	39	H		agree
+4613_p1_L23	12	24	H		agree
+4613_p1_L23	13	76	H		agree
+4613_p1_L23	14	81	M	A:-	gap
+4613_p1_L23	15	81/41	M	B:41	differ
+4613_p1_L23	16	82	H		agree
+4613_p1_L23	17	31	H		agree
+4613_p1_L23	18	96	H		agree
+4613_p1_L23	19	83	H		agree
+4613_p1_L23	20	128	M	A:-	gap
+4613_p1_L23	21	128/82	M	B:82	differ
+4613_p1_L23	22	33	H		agree
+4613_p1_L23	23	73	H		agree
+4613_p1_L23	24	61	H		agree
+4613_p1_L23	25	21	H		agree
+4613_p1_L23	26	31	M		agree-flagged
+4613_p1_L24	1	ii	M	A:-	gap
+4613_p1_L24	2	113	H		agree
+4613_p1_L24	3	50	H		agree
+4613_p1_L24	4	=tt	M	A:-	gap
+4613_p1_L24	5	84	H		agree
+4613_p1_L24	6	33	H		agree
+4613_p1_L24	7	115	H		agree
+4613_p1_L24	8	61	H		agree
+4613_p1_L24	9	65	H		agree
+4613_p1_L24	10	36	H		agree
+4613_p1_L24	11	12	H		agree
+4613_p1_L24	12	21	H		agree
+4613_p1_L24	13	81	H		agree
+4613_p1_L24	14	27	H		agree
+4613_p1_L24	15	=Nous	M		agree-flagged
+4613_p1_L24	16	=Nous	M		agree-flagged
+4613_p1_L24	17	=pourrions	M	B:=poincherons	differ
+4613_p1_L24	18	=aussi	M	B:=afin	differ
+4613_p1_L25	1	=que	H		agree
+4613_p1_L25	2	=nous	H		agree
+4613_p1_L25	3	=puissions	H		agree
+4613_p1_L25	4	=avoir	M	B:=auoir	differ
+4613_p1_L25	5	=de	H		agree
+4613_p1_L25	6	=vous	H		agree
+4613_p1_L25	7	=nouvelles	M	B:=nouuelles	differ
+4613_p1_L25	8	=ou	H		agree
+4613_p1_L25	9	=si	H		agree
+4613_p1_L25	10	=tost	H		agree
+4613_p1_L25	11	=que	H		agree
+4613_p1_L25	12	=faire	H		agree
+4613_p1_L25	13	=se	H		agree
+4613_p1_L25	14	=pourra	H		agree
+4613_p1_L25	15	=ferons	M	B:-	gap
+4613_p1_L25	16	=à	M	B:=feront	differ
+4613_p1_L25	17	=la	H		agree
+4613_p1_L25	18	=fin	H		agree
+4613_p1_L25	19	=priant	H		agree
+4613_p1_L25	20	=le	H		agree
+4613_p1_L25	21	=Createur	H		agree
+4613_p1_L25	22	=vous	M	B:=nous	differ
+4613_p1_L25	23	=Donner	M	B:=donner	differ
+4613_p1_L26	1	=Mon	M	B:-	gap
+4613_p1_L26	2	=signieur	M	B:=Monsigneur	differ
+4613_p1_L26	3	=Sa	M	B:=sa	differ
+4613_p1_L26	4	=Saincte	M	B:=saincte	differ
+4613_p1_L26	5	=grace	H		agree
+4613_p1_L26	6	=se	H		agree
+4613_p1_L26	7	=fera	M	B:=faict	differ
+4613_p1_L26	8	=mi	M	B:=au	differ
+4613_p1_L26	9	=Camp	H		agree
+4613_p1_L26	10	=de	H		agree
+4613_p1_L26	11	=Carbes	M	B:=Carleh	differ
+4613_p1_L26	12	=ce	H		agree
+4613_p1_L26	13	=25	H		agree
+4613_p1_L26	14	=de	H		agree
+4613_p1_L26	15	=Mars	H		agree
+4613_p1_L26	16	=l'an	H		agree
+4613_p1_L26	17	=1574	H		agree
+4615_p1_L04	1	=Mon	M	B:-	gap
+4615_p1_L04	2	=signieur	M	B:-	gap
+4615_p1_L04	3	=de	M	B:=Monsieur	differ
+4615_p1_L04	4	=puis	M	B:=depuis	differ
+4615_p1_L04	5	=nostre	H		agree
+4615_p1_L04	6	=Dermier	M	B:=dernier	differ
+4615_p1_L04	7	=nous	H		agree
+4615_p1_L04	8	=auons	M		agree-flagged
+4615_p1_L04	9	121	H		agree
+4615_p1_L04	10	132	H		agree
+4615_p1_L04	11	31	H		agree
+4615_p1_L04	12	22	H		agree
+4615_p1_L04	13	61	H		agree
+4615_p1_L04	14	71	H		agree
+4615_p1_L04	15	32	H		agree
+4615_p1_L04	16	81	H		agree
+4615_p1_L04	17	121	M		agree-flagged
+4615_p1_L05	1	62	H		agree
+4615_p1_L05	2	36	H		agree
+4615_p1_L05	3	82	M	B:92	differ
+4615_p1_L05	4	72	H		agree
+4615_p1_L05	5	1	H		agree
+4615_p1_L05	6	6	H		agree
+4615_p1_L05	7	37	H		agree
+4615_p1_L05	8	26	H		agree
+4615_p1_L05	9	337	H		agree
+4615_p1_L05	10	121	H		agree
+4615_p1_L05	11	141	H		agree
+4615_p1_L05	12	116	H		agree
+4615_p1_L05	13	62	H		agree
+4615_p1_L05	14	101	H		agree
+4615_p1_L05	15	22	M	B:27	differ
+4615_p1_L05	16	107	H		agree
+4615_p1_L05	17	93	H		agree
+4615_p1_L05	18	78	H		agree
+4615_p1_L05	19	7	H		agree
+4615_p1_L05	20	51	H		agree
+4615_p1_L05	21	85	M	B:90	differ
+4615_p1_L06	1	16	H		agree
+4615_p1_L06	2	40	H		agree
+4615_p1_L06	3	85	H		agree
+4615_p1_L06	4	111	H		agree
+4615_p1_L06	5	63	H		agree
+4615_p1_L06	6	12	H		agree
+4615_p1_L06	7	112	H		agree
+4615_p1_L06	8	39	H		agree
+4615_p1_L06	9	23	H		agree
+4615_p1_L06	10	91	H		agree
+4615_p1_L06	11	21	H		agree
+4615_p1_L06	12	64	H		agree
+4615_p1_L06	13	3	H		agree
+4615_p1_L06	14	76	H		agree
+4615_p1_L06	15	81	H		agree
+4615_p1_L06	16	13	H		agree
+4615_p1_L06	17	64	H		agree
+4615_p1_L06	18	22	H		agree
+4615_p1_L06	19	73	H		agree
+4615_p1_L06	20	107	H		agree
+4615_p1_L06	21	93	M	B:99	differ
+4615_p1_L06	22	71	M	B:91	differ
+4615_p1_L07	1	82	H		agree
+4615_p1_L07	2	4	H		agree
+4615_p1_L07	3	21	H		agree
+4615_p1_L07	4	85	H		agree
+4615_p1_L07	5	31	H		agree
+4615_p1_L07	6	8	H		agree
+4615_p1_L07	7	37	H		agree
+4615_p1_L07	8	24	H		agree
+4615_p1_L07	9	5	H		agree
+4615_p1_L07	10	81	H		agree
+4615_p1_L07	11	77	H		agree
+4615_p1_L07	12	83	H		agree
+4615_p1_L07	13	87	H		agree
+4615_p1_L07	14	61	H		agree
+4615_p1_L07	15	72	H		agree
+4615_p1_L07	16	9	H		agree
+4615_p1_L07	17	4	H		agree
+4615_p1_L07	18	11	M	B:13	differ
+4615_p1_L07	19	78	H		agree
+4615_p1_L07	20	81	H		agree
+4615_p1_L07	21	2	H		agree
+4615_p1_L07	22	6	M	B:5	differ
+4615_p1_L07	23	40	H		agree
+4615_p1_L07	24	27	M		agree-flagged
+4615_p1_L08	1	84	H		agree
+4615_p1_L08	2	28	H		agree
+4615_p1_L08	3	37	H		agree
+4615_p1_L08	4	13	H		agree
+4615_p1_L08	5	8	H		agree
+4615_p1_L08	6	27	H		agree
+4615_p1_L08	7	30	H		agree
+4615_p1_L08	8	102	H		agree
+4615_p1_L08	9	66	H		agree
+4615_p1_L08	10	113	H		agree
+4615_p1_L08	11	82	H		agree
+4615_p1_L08	12	79	H		agree
+4615_p1_L08	13	81	H		agree
+4615_p1_L08	14	76	H		agree
+4615_p1_L08	15	83	H		agree
+4615_p1_L08	16	117	H		agree
+4615_p1_L08	17	8	H		agree
+4615_p1_L08	18	25	H		agree
+4615_p1_L08	19	82	H		agree
+4615_p1_L08	20	21	H		agree
+4615_p1_L08	21	121	H		agree
+4615_p1_L08	22	132	M		agree-flagged
+4615_p1_L08	23	12	M	B:-	gap
+4615_p1_L09	1	15	H		agree
+4615_p1_L09	2	114	H		agree
+4615_p1_L09	3	36	H		agree
+4615_p1_L09	4	28	H		agree
+4615_p1_L09	5	115	H		agree
+4615_p1_L09	6	10	H		agree
+4615_p1_L09	7	5	H		agree
+4615_p1_L09	8	94	H		agree
+4615_p1_L09	9	31	H		agree
+4615_p1_L09	10	81	H		agree
+4615_p1_L09	11	120	H		agree
+4615_p1_L09	12	19	H		agree
+4615_p1_L09	13	26	H		agree
+4615_p1_L09	14	82	M	B:92	differ
+4615_p1_L09	15	3	H		agree
+4615_p1_L09	16	74	H		agree
+4615_p1_L09	17	83	H		agree
+4615_p1_L09	18	28	H		agree
+4615_p1_L09	19	34	H		agree
+4615_p1_L09	20	71	H		agree
+4615_p1_L09	21	62	H		agree
+4615_p1_L09	22	27	M		agree-flagged
+4615_p1_L10	1	33	H		agree
+4615_p1_L10	2	102	H		agree
+4615_p1_L10	3	82	H		agree
+4615_p1_L10	4	26	H		agree
+4615_p1_L10	5	4	H		agree
+4615_p1_L10	6	8	H		agree
+4615_p1_L10	7	40	H		agree
+4615_p1_L10	8	30	H		agree
+4615_p1_L10	9	61	H		agree
+4615_p1_L10	10	31	H		agree
+4615_p1_L10	11	35	H		agree
+4615_p1_L10	12	62	H		agree
+4615_p1_L10	13	2	H		agree
+4615_p1_L10	14	77	H		agree
+4615_p1_L10	15	83	H		agree
+4615_p1_L10	16	28	H		agree
+4615_p1_L10	17	10	H		agree
+4615_p1_L10	18	1	H		agree
+4615_p1_L10	19	29	H		agree
+4615_p1_L10	20	84	M	B:89	differ
+4615_p1_L10	21	2	H		agree
+4615_p1_L10	22	71	M		agree-flagged
+4615_p1_L10	23	6	M	B:90	differ
+4615_p1_L11	1	83	H		agree
+4615_p1_L11	2	77	H		agree
+4615_p1_L11	3	61	H		agree
+4615_p1_L11	4	40	H		agree
+4615_p1_L11	5	12	H		agree
+4615_p1_L11	6	113	H		agree
+4615_p1_L11	7	36	H		agree
+4615_p1_L11	8	27	H		agree
+4615_p1_L11	9	114	H		agree
+4615_p1_L11	10	6	H		agree
+4615_p1_L11	11	2	H		agree
+4615_p1_L11	12	93	H		agree
+4615_p1_L11	13	76	H		agree
+4615_p1_L11	14	81	H		agree
+4615_p1_L11	15	78	H		agree
+4615_p1_L11	16	40	H		agree
+4615_p1_L11	17	85	H		agree
+4615_p1_L11	18	27	H		agree
+4615_p1_L11	19	101	H		agree
+4615_p1_L11	20	1	H		agree
+4615_p1_L11	21	39	H		agree
+4615_p1_L11	22	21	H		agree
+4615_p1_L11	23	27	M		agree-flagged
+4615_p1_L12	1	62	H		agree
+4615_p1_L12	2	13	H		agree
+4615_p1_L12	3	21	H		agree
+4615_p1_L12	4	82	H		agree
+4615_p1_L12	5	26	H		agree
+4615_p1_L12	6	2	H		agree
+4615_p1_L12	7	9	H		agree
+4615_p1_L12	8	40	H		agree
+4615_p1_L12	9	27	H		agree
+4615_p1_L12	10	87	H		agree
+4615_p1_L12	11	21	H		agree
+4615_p1_L12	12	61	H		agree
+4615_p1_L12	13	3	H		agree
+4615_p1_L12	14	71	H		agree
+4615_p1_L12	15	6	H		agree
+4615_p1_L12	16	=Dis	M	B:=dit	differ
+4615_p1_L12	17	=en	H		agree
+4615_p1_L12	18	=vos	M	B:=res	differ
+4615_p1_L12	19	=quit	M	B:=quil	differ
+4615_p1_L12	20	2	H		agree
+4615_p1_L12	21	81	H		agree
+4615_p1_L13	1	40	H		agree
+4615_p1_L13	2	101	H		agree
+4615_p1_L13	3	82	H		agree
+4615_p1_L13	4	2	H		agree
+4615_p1_L13	5	91	H		agree
+4615_p1_L13	6	3	H		agree
+4615_p1_L13	7	33	H		agree
+4615_p1_L13	8	12	H		agree
+4615_p1_L13	9	62	H		agree
+4615_p1_L13	10	26	H		agree
+4615_p1_L13	11	85	H		agree
+4615_p1_L13	12	3	H		agree
+4615_p1_L13	13	72	H		agree
+4615_p1_L13	14	84	H		agree
+4615_p1_L13	15	31	H		agree
+4615_p1_L13	16	83	H		agree
+4615_p1_L13	17	117	H		agree
+4615_p1_L13	18	12	H		agree
+4615_p1_L13	19	26	H		agree
+4615_p1_L13	20	5	H		agree
+4615_p1_L13	21	6	H		agree
+4615_p1_L13	22	39	H		agree
+4615_p1_L13	23	28	M		agree-flagged
+4615_p1_L14	1	14	H		agree
+4615_p1_L14	2	25	H		agree
+4615_p1_L14	3	63	H		agree
+4615_p1_L14	4	4	H		agree
+4615_p1_L14	5	76	H		agree
+4615_p1_L14	6	81	H		agree
+4615_p1_L14	7	22	H		agree
+4615_p1_L14	8	7	H		agree
+4615_p1_L14	9	3	H		agree
+4615_p1_L14	10	27	H		agree
+4615_p1_L14	11	1	H		agree
+4615_p1_L14	12	6	H		agree
+4615_p1_L14	13	26	H		agree
+4615_p1_L14	14	31	H		agree
+4615_p1_L14	15	81	H		agree
+4615_p1_L14	16	81	H		agree
+4615_p1_L14	17	26	H		agree
+4615_p1_L14	18	71	H		agree
+4615_p1_L14	19	96	H		agree
+4615_p1_L14	20	81	H		agree
+4615_p1_L14	21	118	H		agree
+4615_p1_L14	22	101	H		agree
+4615_p1_L14	23	2	H		agree
+4615_p1_L14	24	121	M		agree-flagged
+4615_p1_L15	1	83	H		agree
+4615_p1_L15	2	4	H		agree
+4615_p1_L15	3	31	H		agree
+4615_p1_L15	4	21	H		agree
+4615_p1_L15	5	82	H		agree
+4615_p1_L15	6	92	H		agree
+4615_p1_L15	7	27	H		agree
+4615_p1_L15	8	61	H		agree
+4615_p1_L15	9	40	H		agree
+4615_p1_L15	10	84	H		agree
+4615_p1_L15	11	81	H		agree
+4615_p1_L15	12	38	H		agree
+4615_p1_L15	13	272	H		agree
+4615_p1_L15	14	78	H		agree
+4615_p1_L15	15	6	H		agree
+4615_p1_L15	16	39	H		agree
+4615_p1_L15	17	31	H		agree
+4615_p1_L15	18	78	H		agree
+4615_p1_L15	19	21	H		agree
+4615_p1_L15	20	7	H		agree
+4615_p1_L15	21	102	H		agree
+4615_p1_L15	22	73	H		agree
+4615_p1_L15	23	34	H		agree
+4615_p1_L15	24	122	M		agree-flagged
+4615_p1_L16	1	39	H		agree
+4615_p1_L16	2	81	H		agree
+4615_p1_L16	3	22	H		agree
+4615_p1_L16	4	26	H		agree
+4615_p1_L16	5	270	H		agree
+4615_p1_L16	6	121	H		agree
+4615_p1_L16	7	132	H		agree
+4615_p1_L16	8	=pour	M		agree-flagged
+4615_p1_L16	9	=autant	M	B:=auoir	differ
+4615_p1_L16	10	=Je	M	B:=de	differ
+4615_p1_L16	11	=Nous	M	B:=vous	differ
+4615_p1_L16	12	=souhaite	M	B:=escript	differ
+4615_p1_L16	13	=de	M		agree-flagged
+4615_p1_L16	14	=il	H		agree
+4615_p1_L16	15	=arriuera	M	B:=arriuer	differ
+4615_p1_L16	16	123	H		agree
+4615_p1_L16	17	132	H		agree
+4615_p1_L17	1	12	H		agree
+4615_p1_L17	2	6	H		agree
+4615_p1_L17	3	37	H		agree
+4615_p1_L17	4	21	H		agree
+4615_p1_L17	5	2	H		agree
+4615_p1_L17	6	7	H		agree
+4615_p1_L17	7	36	H		agree
+4615_p1_L17	8	27	H		agree
+4615_p1_L17	9	33	H		agree
+4615_p1_L17	10	61	H		agree
+4615_p1_L17	11	2	H		agree
+4615_p1_L17	12	76	H		agree
+4615_p1_L17	13	21	H		agree
+4615_p1_L17	14	82	H		agree
+4615_p1_L17	15	112	H		agree
+4615_p1_L17	16	61	H		agree
+4615_p1_L17	17	117	H		agree
+4615_p1_L17	18	62	H		agree
+4615_p1_L17	19	102	H		agree
+4615_p1_L17	20	4	H		agree
+4615_p1_L17	21	132	M		agree-flagged
+4615_p1_L18	1	65	H		agree
+4615_p1_L18	2	86	M	B:85	differ
+4615_p1_L18	3	90	H		agree
+4615_p1_L18	4	101	H		agree
+4615_p1_L18	5	2	H		agree
+4615_p1_L18	6	15	M	B:18	differ
+4615_p1_L18	7	40	H		agree
+4615_p1_L18	8	82	H		agree
+4615_p1_L18	9	4	H		agree
+4615_p1_L18	10	8	H		agree
+4615_p1_L18	11	2	M	A:-	gap
+4615_p1_L18	12	28	H		agree
+4615_p1_L18	13	40	H		agree
+4615_p1_L18	14	7	H		agree
+4615_p1_L18	15	36	H		agree
+4615_p1_L18	16	27	H		agree
+4615_p1_L18	17	14	H		agree
+4615_p1_L18	18	32	M	B:37	differ
+4615_p1_L18	19	26	H		agree
+4615_p1_L18	20	30	H		agree
+4615_p1_L18	21	101	H		agree
+4615_p1_L18	22	9	H		agree
+4615_p1_L18	23	2	H		agree
+4615_p1_L18	24	26	M		agree-flagged
+4615_p1_L19	1	105	H		agree
+4615_p1_L19	2	7	H		agree
+4615_p1_L19	3	102	H		agree
+4615_p1_L19	4	2	H		agree
+4615_p1_L19	5	76	H		agree
+4615_p1_L19	6	21	H		agree
+4615_p1_L19	7	82	H		agree
+4615_p1_L19	8	30	H		agree
+4615_p1_L19	9	61	H		agree
+4615_p1_L19	10	1	H		agree
+4615_p1_L19	11	29	H		agree
+4615_p1_L19	12	12	H		agree
+4615_p1_L19	13	81	H		agree
+4615_p1_L19	14	22	H		agree
+4615_p1_L19	15	73	H		agree
+4615_p1_L19	16	84	H		agree
+4615_p1_L19	17	77	H		agree
+4615_p1_L19	18	81	H		agree
+4615_p1_L19	19	92	H		agree
+4615_p1_L19	20	83	H		agree
+4615_p1_L19	21	9	H		agree
+4615_p1_L19	22	29	M		agree-flagged
+4615_p1_L20	1	7	H		agree
+4615_p1_L20	2	2	H		agree
+4615_p1_L20	3	4	H		agree
+4615_p1_L20	4	8	H		agree
+4615_p1_L20	5	36	H		agree
+4615_p1_L20	6	27	H		agree
+4615_p1_L20	7	76	H		agree
+4615_p1_L20	8	7	H		agree
+4615_p1_L20	9	3	H		agree
+4615_p1_L20	10	81	H		agree
+4615_p1_L20	11	4	H		agree
+4615_p1_L20	12	31	H		agree
+4615_p1_L20	13	91	H		agree
+4615_p1_L20	14	22	H		agree
+4615_p1_L20	15	61	H		agree
+4615_p1_L20	16	2	H		agree
+4615_p1_L20	17	76	H		agree
+4615_p1_L20	18	84	H		agree
+4615_p1_L20	19	121	H		agree
+4615_p1_L20	20	82	H		agree
+4615_p1_L20	21	26	M	B:28	differ
+4615_p1_L20	22	12	H		agree
+4615_p1_L20	23	83	H		agree
+4615_p1_L20	24	21	H		agree
+4615_p1_L20	25	61	M		agree-flagged
+4615_p1_L20	26	7	M	B:-	gap
+4615_p1_L20	27	71	M	B:-	gap
+4615_p1_L20	28	82	M	B:-	gap
+4615_p1_L20	29	18	M	B:-	gap
+4615_p1_L20	30	37	M	B:-	gap
+4615_p1_L20	31	81	M	B:-	gap
+4615_p1_L20	32	27	M	B:-	gap
+4615_p1_L20	33	101	M	B:-	gap
+4615_p1_L20	34	5	M	B:-	gap
+4615_p1_L20	35	6	M	B:-	gap
+4615_p1_L20	36	62	M	B:-	gap
+4615_p1_L20	37	31	M	B:-	gap
+4615_p1_L20	38	102	M	B:-	gap
+4615_p1_L20	39	9	M	B:-	gap
+4615_p1_L20	40	4	M	B:-	gap
+4615_p1_L20	41	28	M	B:-	gap
+4615_p1_L20	42	76	M	B:-	gap
+4615_p1_L20	43	37	M	B:-	gap
+4615_p1_L20	44	81	M	B:-	gap
+4615_p1_L20	45	26	M	B:-	gap
+4615_p1_L20	46	7	M		agree-flagged
+4615_p1_L20	47	39	M	B:-	gap
+4615_p1_L21	1	31	M	B:71	differ
+4615_p1_L21	2	22	M	B:82	differ
+4615_p1_L21	3	8	M	B:18	differ
+4615_p1_L21	4	102	M	B:57	differ
+4615_p1_L21	5	29	M	B:81	differ
+4615_p1_L21	6	13	M	B:27	differ
+4615_p1_L21	7	105	M	B:101	differ
+4615_p1_L21	8	82	M	B:5	differ
+4615_p1_L21	9	72	M	B:6	differ
+4615_p1_L21	10	94	M	B:90	differ
+4615_p1_L21	11	26	M	B:102	differ
+4615_p1_L21	12	77	M	B:9	differ
+4615_p1_L21	13	83	M	B:4	differ
+4615_p1_L21	14	326	M	B:28	differ
+4615_p1_L21	15	16	M	B:76	differ
+4615_p1_L21	16	37	H		agree
+4615_p1_L21	17	81	H		agree
+4615_p1_L21	18	83	M	B:-	gap
+4615_p1_L21	19	3	M	B:-	gap
+4615_p1_L21	20	12	M	B:-	gap
+4615_p1_L21	21	61	M	B:-	gap
+4615_p1_L21	22	26	H		agree
+4615_p1_L21	23	7	M	A:-	gap
+4615_p1_L21	24	29	M	B:39	differ
+4615_p1_L22	1	61	M	B:-	gap
+4615_p1_L22	2	2	M	B:-	gap
+4615_p1_L22	3	31	H		agree
+4615_p1_L22	4	3	M	B:-	gap
+4615_p1_L22	5	6	M	B:-	gap
+4615_p1_L22	6	40	M	B:-	gap
+4615_p1_L22	7	29	M	B:-	gap
+4615_p1_L22	8	14	M	B:-	gap
+4615_p1_L22	9	7	M	B:-	gap
+4615_p1_L22	10	39	M	B:-	gap
+4615_p1_L22	11	111	M	B:22	differ
+4615_p1_L22	12	21	M	B:8	differ
+4615_p1_L22	13	102	H		agree
+4615_p1_L22	14	8	M	B:29	differ
+4615_p1_L22	15	2	M	B:13	differ
+4615_p1_L22	16	27	M	B:105	differ
+4615_p1_L22	17	82	H		agree
+4615_p1_L22	18	117	M	B:72	differ
+4615_p1_L22	19	13	M	B:94	differ
+4615_p1_L22	20	6	M	B:25	differ
+4615_p1_L22	21	21	M	B:77	differ
+4615_p1_L22	22	31	M	B:83	differ
+4615_p1_L22	23	84	M	B:326	differ
+4615_p1_L22	24	121	M	B:16	differ
+4615_p1_L22	25	272	M	B:37	differ
+4615_p1_L22	26	12	M	B:81	differ
+4615_p1_L22	27	7	M	B:83	differ
+4615_p1_L22	28	35	M	B:3	differ
+4615_p1_L22	29	21	M	B:12	differ
+4615_p1_L22	30	61	H		agree
+4615_p1_L22	31	78	M	B:-	gap
+4615_p1_L22	32	73	M	B:-	gap
+4615_p1_L22	33	33	M	B:-	gap
+4615_p1_L22	34	26	H		agree
+4615_p1_L22	35	102	M	B:-	gap
+4615_p1_L22	36	82	M	B:-	gap
+4615_p1_L22	37	40	M	B:-	gap
+4615_p1_L22	38	8	M	B:-	gap
+4615_p1_L22	39	39	M	B:-	gap
+4615_p1_L22	40	28	M	B:-	gap
+4615_p1_L22	41	33	M	B:-	gap
+4615_p1_L22	42	24	M	B:-	gap
+4615_p1_L22	43	7	M	B:29	differ
+4615_p1_L23	1	40	M	B:-	gap
+4615_p1_L23	2	36	M	B:-	gap
+4615_p1_L23	3	81	M	B:-	gap
+4615_p1_L23	4	27	M	B:-	gap
+4615_p1_L23	5	112	M	B:-	gap
+4615_p1_L23	6	61	H		agree
+4615_p1_L23	7	2	M	A:-	gap
+4615_p1_L23	8	28	M	B:31	differ
+4615_p1_L23	9	71	M	B:3	differ
+4615_p1_L23	10	96	M	B:6	differ
+4615_p1_L23	11	9	M	B:40	differ
+4615_p1_L23	12	26	M	B:29	differ
+4615_p1_L23	13	82	M	B:14	differ
+4615_p1_L23	14	85	M	B:7	differ
+4615_p1_L23	15	61	M	B:39	differ
+4615_p1_L23	16	101	H		agree
+4615_p1_L23	17	25	M	B:102	differ
+4615_p1_L23	18	62	M	B:8	differ
+4615_p1_L23	19	66	M	B:2	differ
+4615_p1_L23	20	112	M	B:27	differ
+4615_p1_L23	21	82	H		agree
+4615_p1_L23	22	117	M	A:-	gap
+4615_p1_L23	23	13	M	A:-	gap
+4615_p1_L23	24	6	M	A:-	gap
+4615_p1_L23	25	21	M	A:-	gap
+4615_p1_L23	26	122	M	B:31	differ
+4615_p1_L23	27	81	M	B:84	differ
+4615_p1_L24	1	35	M	B:-	gap
+4615_p1_L24	2	6	M	B:-	gap
+4615_p1_L24	3	39	M	B:-	gap
+4615_p1_L24	4	28	M	B:-	gap
+4615_p1_L24	5	3	M	B:-	gap
+4615_p1_L24	6	7	M	B:-	gap
+4615_p1_L24	7	40	M	B:121	differ
+4615_p1_L24	8	30	M	B:272	differ
+4615_p1_L24	9	12	H		agree
+4615_p1_L24	10	6	M	B:-	gap
+4615_p1_L24	11	37	M	B:7	differ
+4615_p1_L24	12	113	M	B:35	differ
+4615_p1_L24	13	21	H		agree
+4615_p1_L24	14	102	M	B:-	gap
+4615_p1_L24	15	82	M	B:-	gap
+4615_p1_L24	16	27	M	B:-	gap
+4615_p1_L24	17	61	H		agree
+4615_p1_L24	18	26	M	B:-	gap
+4615_p1_L24	19	30	M	B:-	gap
+4615_p1_L24	20	104	M	B:-	gap
+4615_p1_L24	21	27	M	B:-	gap
+4615_p1_L24	22	31	M	B:-	gap
+4615_p1_L24	23	81	M	B:-	gap
+4615_p1_L24	24	22	M	B:-	gap
+4615_p1_L24	25	=et	M	B:-	gap
+4615_p1_L24	26	76	M	B:-	gap
+4615_p1_L24	27	81	M	B:-	gap
+4615_p1_L24	28	13	M	B:-	gap
+4615_p1_L24	29	101	M	B:-	gap
+4615_p1_L24	30	82	M	B:-	gap
+4615_p1_L24	31	72	M	B:-	gap
+4615_p1_L24	32	83	M	B:-	gap
+4615_p1_L24	33	26	M	B:-	gap
+4615_p1_L24	34	=et	M	B:78	differ
+4615_p1_L24	35	77	H		agree
+4615_p1_L24	36	82	M	B:-	gap
+4615_p1_L24	37	71	M	B:-	gap
+4615_p1_L24	38	6	M	B:66	differ
+4615_p1_L24	39	37	M	B:33	differ
+4615_p1_L24	40	26	M	B:20	differ
+4615_p1_L24	41	91	M	B:103	differ
+4615_p1_L24	42	82	H		agree
+4615_p1_L24	43	40	M	A:-	gap
+4615_p1_L24	44	2	M	B:8	differ
+4615_p1_L24	45	27	M	B:39	differ
+4615_p1_L24	46	121	M	B:28	differ
+4615_p1_L24	47	78	M	B:33	differ
+4615_p1_L24	48	89	M	B:247	differ
+4615_p1_L25	1	79	M	B:-	gap
+4615_p1_L25	2	82	M	B:-	gap
+4615_p1_L25	3	112	M	B:38	differ
+4615_p1_L25	4	65	M	B:6	differ
+4615_p1_L25	5	=nous	M	B:39	differ
+4615_p1_L25	6	=avons	M	B:28	differ
+4615_p1_L25	7	=eu	M	B:3	differ
+4615_p1_L25	8	=le	M	B:7	differ
+4615_p1_L25	9	=nouvelles	M	B:40	differ
+4615_p1_L25	10	=que	M	B:30	differ
+4615_p1_L25	11	=Ruttmeister	M	B:12	differ
+4615_p1_L25	12	=Esperndt	M	B:6	differ
+4615_p1_L25	13	=et	M	B:37	differ
+4615_p1_L25	14	=encores	M	B:113	differ
+4615_p1_L25	15	=par	M	B:20	differ
+4615_p1_L25	16	=sela	M	B:102	differ
+4615_p1_L25	17	=en	M	B:82	differ
+4615_p1_L25	18	=Nous	M	B:27	differ
+4615_p1_L25	19	=Combre	M	B:61	differ
+4615_p1_L25	20	=ce	M	B:26	differ
+4615_p1_L25	21	=nous	M	B:30	differ
+4615_p1_L25	22	=souple	M	B:104	differ
+4615_p1_L25	23	=de	M	B:27	differ
+4615_p1_L25	24	=nous	M	B:31	differ
+4615_p1_L25	25	=mander	M	B:81	differ
+4615_p1_L25	26	=quel	M	B:22	differ
+4615_p1_L26	1	et	M	A:-	gap
+4615_p1_L26	2	76	M	A:-	gap
+4615_p1_L26	3	81	M	A:-	gap
+4615_p1_L26	4	13	M	A:-	gap
+4615_p1_L26	5	101	M	A:-	gap
+4615_p1_L26	6	82	M	A:-	gap
+4615_p1_L26	7	72	M	A:-	gap
+4615_p1_L26	8	83	M	A:-	gap
+4615_p1_L26	9	26	M	A:-	gap
+4615_p1_L26	10	et	M	A:-	gap
+4615_p1_L26	11	77	M	A:-	gap
+4615_p1_L26	12	82	M	A:-	gap
+4615_p1_L26	13	=sur	M	B:71	differ
+4615_p1_L26	14	=ce	M	B:6	differ
+4615_p1_L26	15	=feron	M	B:37	differ
+4615_p1_L26	16	=la	M	B:26	differ
+4615_p1_L26	17	=fin	M	B:91	differ
+4615_p1_L26	18	=priant	M	B:82	differ
+4615_p1_L26	19	=le	M	B:2	differ
+4615_p1_L26	20	=dieu	M	B:27	differ
+4615_p1_L26	21	=puissant	M	B:121	differ
+4615_p1_L26	22	=vous	M	B:78	differ
+4615_p1_L26	23	=donner	M	B:88	differ
+4615_p1_L27	1	=Mon	M	B:-	gap
+4615_p1_L27	2	=signieur	M	B:-	gap
+4615_p1_L27	3	=La	M	B:-	gap
+4615_p1_L27	4	=Saincte	M	B:-	gap
+4615_p1_L27	5	=grace	M	B:79	differ
+4615_p1_L27	6	=vis	M	B:82	differ
+4615_p1_L27	7	=longue	M	B:112	differ
+4615_p1_L27	8	=se	M	B:65	differ
+4615_p1_L27	9	=fait	M	B:=nous	differ
+4615_p1_L27	10	=au	M	B:=auons	differ
+4615_p1_L27	11	=camp	M	B:=eu	differ
+4615_p1_L27	12	=de	H		agree
+4615_p1_L27	13	=Carlch	M	B:-	gap
+4615_p1_L27	14	=ce	M	B:=nouuelles	differ
+4615_p1_L27	15	=7	M	B:=que	differ
+4615_p1_L27	16	=de	M	B:=Ruttmester	differ
+4615_p1_L27	17	=auril	M	B:=Schenck	differ
+4615_p1_L27	18	=l'an	M	B:=et	differ
+4615_p1_L27	19	=1574	M	B:=encors	differ
+4615_p1_L28	1	=partiela	M	A:-	gap
+4615_p1_L28	2	=en	M	A:-	gap
+4615_p1_L28	3	=Vous	M	A:-	gap
+4615_p1_L28	4	=escript	M	A:-	gap
+4615_p1_L28	5	=Je	M	A:-	gap
+4615_p1_L28	6	=vous	M	A:-	gap
+4615_p1_L28	7	=souplie	M	A:-	gap
+4615_p1_L28	8	=de	M	A:-	gap
+4615_p1_L28	9	=nous	M	A:-	gap
+4615_p1_L28	10	=mander	M	A:-	gap
+4615_p1_L28	11	=le	M	A:-	gap
+4615_p1_L28	12	=fait	M	A:-	gap
+4615_p1_L29	1	=sur	M	A:-	gap
+4615_p1_L29	2	=ce	M	A:-	gap
+4615_p1_L29	3	=feray	M	A:-	gap
+4615_p1_L29	4	=la	M	A:-	gap
+4615_p1_L29	5	=fin	M	A:-	gap
+4615_p1_L29	6	=priant	M	A:-	gap
+4615_p1_L29	7	=le	M	A:-	gap
+4615_p1_L29	8	=Createur	M	A:-	gap
+4615_p1_L29	9	=Vous	M	A:-	gap
+4615_p1_L29	10	=donner	M	A:-	gap
+4615_p1_L31	1	=Monsieur	M	A:-	gap
+4615_p1_L31	2	=de	M	A:-	gap
+4615_p1_L31	3	=sainte	M	A:-	gap
+4615_p1_L31	4	=grace	M	A:-	gap
+4615_p1_L31	5	=vre	M	A:-	gap
+4615_p1_L31	6	=longue	M	A:-	gap
+4615_p1_L31	7	=et	M	A:-	gap
+4615_p1_L31	8	=faict	M	A:-	gap
+4615_p1_L31	9	=au	M	A:-	gap
+4615_p1_L31	10	=camp	M	A:-	gap
+4615_p1_L31	11	=de	M	A:-	gap
+4615_p1_L31	12	=Carleh	M	A:-	gap
+4615_p1_L32	1	=ce	M	A:-	gap
+4615_p1_L32	2	=7	M	A:-	gap
+4615_p1_L32	3	=de	M	A:-	gap
+4615_p1_L32	4	=auril	M	A:-	gap
+4615_p1_L32	5	=l'an	M	A:-	gap
+4615_p1_L32	6	=1574	M	A:-	gap

@@ -152,3 +152,57 @@ Do not settle disagreements.tsv from this brief; do not decode; do not classify 
 | briefnr | pages | lines | tokens A | tokens B | agreement (aligned cols) |
 |---|---|---|---|---|---|
 | 4610 | p1-p3 | 109 | 1934 | 1899 | 1558/1981 = 78.6% |
+
+## R12: sibling passes, 24 September 2026 (LANE R worker R12)
+
+Transcription only, per brief (`.claude/briefs/runs/2026-09-24-lane-r-nb1-passes.md`): two blind passes of the
+sibling cipher pages (4613 p1, 4615 p1), a careful transcription of each contemporary decipherment sheet (4613
+p2, 4615 p3), and exact-as-measured cipher token counts. No alignment, no key, per brief.
+
+**Line crops.** `tools/iiif_lines.py --image images/04613_p1.png --out images --prefix 4613_p1 --debug --distance
+30 --prominence 60` and the same for `04615_p1.png` (the script's existing `--image` option already reads a
+local file with no network fetch, so no addition was needed). Default `--distance`/`--prominence` under-detected
+(13 lines on 4613 p1 against ~26 real manuscript lines); `--distance 30 --prominence 60` gave 32 bands on 4613
+p1 and 29 on 4615 p1, checked against `images/4613_p1_lines_debug.jpg` / `4615_p1_lines_debug.jpg` (per LESSONS.md
+"check the debug overlay before handing crops to a pass") -- each red centre line falls on a real manuscript
+line; a few bands are doubled where a marginal annotation or slanted ascender briefly raised the ink profile,
+harmless since crops overlap into their neighbour rather than losing text. Both target letters' body text runs
+at a slight upward slant across the page width, which the debug overlay shows the horizontal band cuts tolerate
+without clipping (crops carry margin at top/bottom of the pitch).
+
+**Two blind passes.** Two Sonnet subagents (parallel, `general-purpose`), each given only a labelled montage of
+the line crops for both sibling pages (`4613_p1_montage.jpg`, `4615_p1_montage.jpg`, built by this worker with a
+short PIL script stacking the crops with their L-number label -- not a private copy of iiif_lines.py, just a
+read-time convenience so each pass could be given both pages in two Read calls instead of 61), never shown the
+other's output, never shown the decipherment sheets. Output format `line briefnr page index token`, clear French
+words prefixed `=`, doubtful tokens suffixed `?`, per brief. Written to `passA_sib.tsv` (596 tokens on 4613 p1,
+588 on 4615 p1) and `passB_sib.tsv` (527 on 4613 p1, 560 on 4615 p1).
+
+**Reconciliation.** `tools/reconcile_passes.py passA_sib.tsv passB_sib.tsv --out-dir recon_sib --crops images
+--keep-plain` (the header `line briefnr page index token` already satisfies the tool's "long" format --
+`line` first, `index`/`token` matched by name -- so `briefnr`/`page` ride along as extra, ignored columns; no
+tool change needed). **Agreement: 4613 p1 32.5% (207/636 aligned columns), 4615 p1 56.3% (365/648), combined
+44.5% (572/1284)** -- see `recon_sib/agreement.tsv` per-line and `recon_sib/disagreements.tsv` per-token. This is
+a low agreement rate and this worker reports it as such, not as a settled reading: both subagents independently
+flagged the same difficulty (dense, small, tightly packed 1-3 digit numerals; a `/`-joined pair of groups in
+several places, read as one token by both but not always the same pair; two roman-numeral-style cipher glyphs
+"ii"/"iii" inline; marginal annotations in a different, later hand on several 4613 lines, deliberately excluded
+by both passes as instructed). 4613 p1 lines L08-L09 disagree almost completely (10.5%, 4.3% line agreement) --
+flagged for whoever reconciles next as the worst two lines on either page, worth a dedicated close look at
+`images/4613_p1_L08.jpg` / `_L09.jpg`. Per brief, this worker did not settle disagreements or build a key from
+them.
+
+**Decipherment sheets.** `plaintext_4613.txt` and `plaintext_4615.txt`: line-by-line transcription from
+`images/04613_p2.png` and `images/04615_p3.png` (cropped/upscaled regions read directly, not a blind pass -- one
+careful read each, per brief), abbreviations kept as written (nre, voz, l're), doubtful words and one illegible
+struck-through correction marked `[?]` / `[struck: ...]`. Both close with the same place ("Camp de Cartel[z?]")
+and date as their cipher letter's own closing line, consistent with R9's capture-stage finding that these are
+each letter's own decipherment, not an unrelated enclosure.
+
+**Token counts** (`images/inventory.tsv`, replacing the earlier `~250`/`~450` placeholders): 4613 p1 numeral
+groups passA 525 / passB 461, clear words 71/66; 4615 p1 numeral groups passA 514 / passB 492, clear words
+74/68. Given the reconciliation agreement above, these two passes are the honest range, not a single exact
+count; no third pass was run (out of budget/brief scope) to settle which is closer.
+
+No host requests (images already on disk from R9's capture). No key, no alignment, no novelty wording. Cost:
+under the $6 cap (2 Sonnet subagents for the blind passes, no Opus).
