@@ -533,3 +533,42 @@ groups.
 
 WebSearch 1 (Cipherbrain, three variants inside the tool). No other network requests: de-crypt.org 0,
 www.huntington.org 0, Google Books 0.
+
+## Second opinion SO-BLATHWAYT-1728 (ChatGPT, pull request 6), checked 24 Sept 2026, 16:35 UTC
+
+Verifier V3a (Opus, for LANE V4, session_017iueT2nBBNcQkKp8Se8pcP). Input: `second-opinions/chatgpt-2026-09-24.md`
+("GPT-6 (Codex)", copied from branch `second-opinion/SO-BLATHWAYT-1728`, PR 6, unmerged). It finds no prior print or
+decipherment of the cipher passages, points out that our prompt left out the Rose 1831 print, and makes eight remarks on
+the reading. Its own access failed on Rose, Storrs, OAC and the Huntington. No decoding.
+
+| # | claim | source checked | verdict | correction made |
+|---|---|---|---|---|
+| 1 | the prompt omits the known print: Rose, *Marchmont Papers* (1831) ii 414-15, English extract, "Paretti" to Marchmont, dated 3 Sept 1728, cipher shown as "(Cypher.)" | PROMPT-chatgpt.md (no Rose, no Paretti); AUDIT "The Rose 1831 match" (line-by-line comparison with the p1 image, IA `selectionfrompap02roseiala`) | **right**: our prompt was stale; the print is ours and page-verified | PROMPT-chatgpt.md now states the Rose print and that only the cipher lines are in question |
+| 2 | Storrs (2016) and Lodge, TRHS 1933: located, unverified for these items | AUDIT search log (g) (Storrs; Lodge doi 10.2307/3678662) and N4 decision table (scholarship, outreach gate 2) | **agrees**; no new family | none |
+| 3 | Rose's 3 Sept vs the MS's 13 Sept is 10 days, not the 11-day style difference, so not a routine conversion; "misprint" needs evidence | AUDIT "The Rose 1831 match": the letter says the news reached Madrid "le 10e", so it was written after the 10th; Rose's own text (translated) carries "not received here until the 10th" | **right on the arithmetic; our inference already rests on internal evidence**, not on style conversion | none |
+| 4 | BLA186 p3 mechanical output "m'en a monsieur ce soir": 849 = monsieur from one BLA188 gloss | reading.txt BLA186_p3_L01; key.tsv 849 monsieur C, n=1, BLA188; NOTES already: "849 needs its BLA188 gloss re-checked on the image" | **right, already recorded** | solver suggestion restated in NOTES.md |
+| 5 | BLA191 paraphrase overstates: milord, m'aime, serai, ignorance rest on joins and repairs; 585 = ig inferred | reading.txt BLA191_p5 L01 "mi co r d", L06 "m' ame", L12 "je sec ai in utile dans l' [585] no ra n ce"; NOTES: 585 "I, not in the key" | **right** for the prompt (NOTES marks 585) | PROMPT-chatgpt.md marks the French as interpretation; NOTES.md suggestion |
+| 6 | BLA184 not established by three syllables | NOTES and N4 set: "3 syllable groups read, name codes unread"; safe sentence says so | **agrees** | none |
+| 7 | shared 7/3 transcription error could propagate through training glosses | NOTES (both transcribers misread the same form of 7) | **fair**, reading matter | NOTES.md suggestion |
+| 8 | the Keene sentence says only that he has no orders for the writer | reading.txt L06-07 "il n a aucun ordre des [1019] [711] s pour moi"; NOTES said "complaining that Keene ... gives him no orders" | **right** (NOTES gloss too broad) | NOTES.md gloss narrowed |
+| 9 | Pareti attribution holds for BLA 186 (Rose), not automatically for the Port Ste Marie enclosure | safe sentences: BLA 186 names Pareti (Rose); BLA 191(a) names no writer; NOTES l.315 "very probably" Pareti for 186 only | **agrees**; no over-claim found | none |
+| 10 | Storrs's folder slip is handling, not decipherment | AUDIT per-item BLA 186 | **agrees** | none |
+
+Also corrected: NOTES.md's novelty line still read "BLA 186 N3, BLA 191(a) N3, BLA 184 N3" after the N4 set; it now
+gives the N4 set's classes.
+
+**Its leads.** (1) Rose vs BLA 186: done (Rose match). (2) Newcastle's receiving copy, SP 36/13/129, SP 36/14/184,
+SP 54/19/98A-B: already the stated residual in the BLA 191(a) safe sentence (archival). (3) group 849 and 7/3: solver
+suggestion. (4) Storrs's notes: scholarship, outreach gate 2 (ASKS 40). (5) British key collections: solver resource,
+not a novelty family. (6) enclosure date vs forwarding date: the safe sentence says "undated ... forwarded 8 Aug 1729".
+
+**Class.** No check found a prior print or decipherment of the cipher passages. **BLA 186 cipher lines N4 (clear text
+N1), BLA 191(a) N4, BLA 184 N4**, all unchanged; the N4 set's safe sentences stand.
+
+**Postmortem.** The prompt was written from the first audit, before the second audit found Rose, and was never
+refreshed; an outside reader was asked to find a print we already had. NOTES.md's novelty line lagged two audits.
+Lesson: regenerate a prompt's "where we have looked" and known prints from the latest AUDIT section, and update the
+NOTES novelty line in the same commit as a class change.
+
+Requests: api.crossref.org 1 (Lodge; answer unreadable, not retried; Lodge was already in the log). No archive.org, no
+Google Books, no Huntington, no logins, no subagents.

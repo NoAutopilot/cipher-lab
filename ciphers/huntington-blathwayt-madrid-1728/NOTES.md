@@ -2,7 +2,8 @@
 
 Status: partial
 
-Novelty (AUDIT.md, verifier, 24 Sept 2026): BLA 186 N3, BLA 191(a) N3, BLA 184 N3; readings partial.
+Novelty (AUDIT.md "N4 set", LANE W2 worker B1, 24 Sept 2026): BLA 186 cipher lines N4 (clear text N1, Rose 1831), BLA 191(a) N4,
+BLA 184 N4, each "no prior decipherment located"; readings partial. (Line corrected 24 Sept 2026 by verifier V3a; it still said N3.)
 Second audit (AUDIT.md, 24 Sept 2026, worker I): classes confirmed, but BLA 186's clear text is PRINTED (Rose, *Marchmont
 Papers* 1831, ii 414-15, English extract dated there 3 Sept 1728, writer the Abbé Paretti, cipher line omitted as
 "(Cypher.)"); the class covers only its two cipher lines.
@@ -275,7 +276,8 @@ context fill was attempted and so no control was needed):
   moi, quoyque dans l'affaire passée je lui ai fait [1118] bon [1052]ce, sans qu'il m'ait jamais dit ce que je pouvois
   fournir pour le mieux à l'accommodement, et par [585=ig]norance [1152] intentions, et je serai inutile dans
   l'ignorance. Mandez-moi donc quelque ordre pour ma [222].* The writer asks his correspondent ("milord") for
-  instructions, complaining that Keene (the British minister at Madrid) gives him no orders. 585 = "ig" is inferred
+  instructions, saying that Keene (the British minister) has no orders from [1019][711] concerning him (narrowed
+  24 Sept 2026, V3a: the text does not say who failed to send orders). 585 = "ig" is inferred
   from "[585]no ra n ce" twice (I, not in the key).
 - **BLA184 p1**: 1150 1259 / 1240 1243 / 1243 1240 / 1250 sit in clear prose as names or place-holders ("et Monsieur
   1240 de 1243 la Paz", "1243.1240. Si Monsieur Rotembourg..."); the glosses of this range elsewhere (1250 hier|c'est,
@@ -318,3 +320,8 @@ an unpublished letter. Only its two cipher lines are read here, and no prior dec
 Follow-ups (suggestions, not done): HMC *Polwarth* V (1961); TNA SP 36/13/129, SP 36/14/184 (Marchmont's covering
 letters from Cessnock, July/Aug 1729, "enclosures not forthcoming"), SP 54/19/98A-B (a deciphered Seville letter
 of 20 Oct 1729 from the same channel), SP 94/100; the Huntington ArchivesSpace Pareti record (429 on 24 Sept 2026).
+
+Suggestion (24 Sept 2026, verifier V3a, from SO-BLATHWAYT-1728; not done): re-check group 849 ("monsieur", one gloss,
+BLA188) on the BLA188 image, and the 7/3 distinctions in the glossed training letters, before extending the key; keep the
+BLA 191(a) interpretive French ("milord" from "mi co r d", "m'aime" from "m' ame", "serai" from "sec ai", 585 = ig) marked
+separately from the mechanical reading.txt layer.

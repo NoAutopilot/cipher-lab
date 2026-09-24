@@ -11,12 +11,17 @@ THE ITEMS
   The key was set out from contemporary French decipherments of other letters in the same box (mssBLA 179, 185,
   187-190, 194): one numeric code (groups numbered up to about 1,300; syllables, words, names), used 1725-1729; 395 groups are keyed.
 - mssBLA 186, "Letter of intelligence", Madrid, 13 Sept 1728, in French, signed "N", describing Ripperda's escape
-  from the castle of Segovia, with two lines in cipher. Our partial reading: p.1 "l'ambassadeur [?] a été fort [?]
+  from the castle of Segovia, with two lines in cipher. Its clear text is already printed in English extract:
+  George Henry Rose (ed.), A Selection from the Papers of the Earls of Marchmont (1831), vol. 2 pp.414-415
+  (archive.org/details/selectionfrompap02roseiala), as "The Abbe Paretti to Alexander Earl of Marchmont", dated there
+  3 Sept 1728, with the p.1 cipher line shown only as "(Cypher.)"; the p.3 cipher line is outside the extract. The
+  question is only the two cipher lines. Our partial reading: p.1 "l'ambassadeur [?] a été fort [?]
   [?] [?]te affaire"; p.3 "Monsieur de Patigno m'en a [?] ce soir" (Patiño). A slip in the folder by Christopher
   Storrs (26 Apr 2006) corrects the date from 1708 to 1728.
 - mssBLA 191, enclosure (a): undated cipher letter from Port Ste Marie (El Puerto de Santa María), forwarded to
   the Duke of Newcastle from "Cesnok" (Cessnock, Ayrshire) on 8 Aug 1729. Partial reading (106 of 141 groups
-  certain): the writer thanks "milord" for his letter, says that Monsieur Keene likes him but has no orders from
+  at grade C; the French below is our interpretation: "milord", "m'aime", "serai" and "ignorance" rest on joins,
+  repairs and one inferred value, 585 = ig; the mechanical layer is reading.txt): the writer thanks "milord" for his letter, says that Monsieur Keene likes him but has no orders from
   [?] for him, that in "l'affaire passée" he did [?] service without being told what he could offer "pour le mieux
   à l'accommodement", "je serai inutile dans l'ignorance", "mandez-moi donc quelque ordre pour ma [?]".
 - mssBLA 184, "Statement re M. Rottembourg", [1727-1728], French with seven code groups; only three syllables read.
@@ -74,3 +79,5 @@ WHAT TO PUT IN THE FILE
    the source that shows it.
 4. Leads: archives, editions or scholars we should check, with a one-line reason each.
 5. Confidence: one sentence on how sure you are that nothing prior exists, and what would change it.
+
+<!-- Corrected 24 Sept 2026 by verifier V3a after SO-BLATHWAYT-1728 (AUDIT.md): Rose 1831 print stated; interpretive French marked. -->
