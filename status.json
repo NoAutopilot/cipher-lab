@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 06:34 UTC",
+ "updated": "24 Sep 2026 07:43 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -615,6 +615,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 07:45",
+   "what": "Gramont f.29r and f.30: N4, no prior decipherment located (final-families verifier, 07:03 UTC; Camusat 1619 negative page by page, DECODE none, Cryptiana forum none); outreach gate 2 open only on the 11 Gramont JSTOR rows (ASKS 32, card). Danzay stays N3 with one family left. Thurloe P4 (Stamford, Calais, 13 March 1655): N3 after two audits; N4 decision running. RAH Cañada 1869: read from its own interlinear plaintext (C 665, M 2), N0. Brienne to the Queen of Poland 1646 (Clairambault 1067): interlinear decipherment on all 30 lines, key of 84 codes recovered; verifier next. Nominations: three copy-free from the Nassau papers (Lodewijk van Nassau 1573-74, August of Saxony 1561-64, La Garde 1577) with the recovery lane; 20 DECODE records with images not in any solver list under check-solved. LANE G handed over to G2; retrospective c applied."
+  },
   {
    "when": "24 Sep, 06:35",
    "what": "Rate-limit window exhausted at 05:50 UTC under the doubled load, reset 06:10; lanes G, N, R woken and re-paced to ten workers each (BUDGETS.md). LANE T closed with scope exhausted (23 Thurloe letters classed; P4 N3 after one audit, second audit running in LANE W). LANE N's first hour: 17 stage-2 nominations, all copy-order (Riksarkivet, Este and Savoy archives, TNA SP); copy-free ones are now the priority, starting with the DECODE Non-decrypted census. Oxenstierna 1632: N0, Torpadie 1888. La Luzerne 1781: the Huntington leaf carries its own interlinear decipherment. Camusat 1619 read page by page for Gramont: negative. Retrospective c started (58 rows, $107)."
@@ -1287,30 +1291,30 @@
  ],
  "lanes": [
   {
-   "name": "Lane G, Gallica manuscripts",
-   "live": 7,
-   "focus": "Brienne 1653 band, M18 Brienne-Poland, M19, Camusat page reads for the Gramont N4 (negative 05:37); woken 06:36 after the window reset"
+   "name": "Lane G2, Gallica manuscripts",
+   "live": 3,
+   "focus": "Brienne-Poland 1646 key (84 codes) to the verifier; key trials on the fr.5160 1653 band; Du Vergier 1696 reconciliation; Gramont f.30r top lines"
   },
   {
    "name": "Lane V, French verification",
-   "live": 2,
-   "focus": "Gramont f.29r/f.30 and Danzay N4 wait only on the DECODE search; f.36r adjudicator; second-opinion PRs"
+   "live": 3,
+   "focus": "Gramont N4 done; Danzay N3, one family left; Brienne-Poland 1646 next"
   },
   {
    "name": "Lane N, nominations",
-   "live": 10,
-   "focus": "DECODE Non-decrypted census, the DECODE searches for Gramont and Danzay, digitised sources first; 17 copy-order nominations in hour one"
+   "live": 8,
+   "focus": "DECODE census: 20 records with images not in any list (DC1-DC20) under check-solved; Nassau papers; German, Polish, EMLO, LoC sweeps done"
   },
   {
    "name": "Lane R, recovery",
-   "live": 5,
-   "focus": "Blathwayt 1728 alignment (images in), La Luzerne 1781 (leaf carries its own interlinear decipherment), RAH Cañada 1869 (interlinear Spanish)"
+   "live": 6,
+   "focus": "Blathwayt 1728 and La Luzerne 1781 alignment (over cap, pushing what they have); Nassau 1573-74 letters captured with sibling decipherments"
   },
   {
    "name": "Lane W, English verification",
    "live": 2,
-   "focus": "Thurloe P4 adversarial second audit; Oxenstierna 1632 caught as N0; Eckert E4/E5 Zooniverse Talk gap"
+   "focus": "Thurloe P4 N4 decision; Eckert E4/E5 Zooniverse Talk gap; RAH Cañada N0"
   }
  ],
- "headline": "Four readings at N3 after two audits (Gramont f.29r and f.30, Eckert E4/E5, Danzay f.35-36r); their N4 now waits on one DECODE search each. The 2x push exhausted the five-hour window at 05:50 UTC; reset 06:10, lanes re-paced to ten workers. Seventeen nominations in the first hour, all needing copy orders; the Gustav Adolf 1632 print was caught as already deciphered in 1888."
+ "headline": "Gramont to Villandry and Gramont to Francis I, Rome, 20 May 1530 (BnF fr. 2980 ff.29-30), reached N4 at 07:03 UTC: no prior decipherment located after the final-families audit; outreach waits only on 11 JSTOR rows, on your card. Six readings stand at N3 or better after two audits (Gramont x2, Eckert E4/E5, Danzay f.35-36r, Thurloe P4 Stamford 1655). Lanes re-paced to ten workers after the 05:50 window event; three copy-free nominations from the Dutch Nassau papers went to the recovery lane."
 }

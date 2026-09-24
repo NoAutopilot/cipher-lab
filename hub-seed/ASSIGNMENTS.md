@@ -202,3 +202,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 159 | 24 Sep | cipher-lab | Check-solved DC1-DC5 (DECODE records with images, copy-free) | LANE N (session_01W4z8JhXJYHRjorPC1Qkpiy) | check-solved, Sonnet cap $6, lane-n-csDC1.md | running, session_01QGjK8f6QSLqq5pf6pJkNg1 |
 | 160 | 24 Sep | cipher-lab | Check-solved DC6-DC10 (DECODE records with images, copy-free) | LANE N (session_01W4z8JhXJYHRjorPC1Qkpiy) | check-solved, Sonnet cap $6, lane-n-csDC2.md | running, session_01Jd4Qsq1Sx7KFGPYn53h8b2 |
 | 161 | 24 Sep | cipher-lab | Harvest WVO database: every letter recorded as unsolved cipher (WV rows) | LANE N (session_01W4z8JhXJYHRjorPC1Qkpiy) | harvest, Sonnet cap $6, lane-n-hvWVO.md | running, session_01RQGa4br1C1rD94RL6kG1hZ |
+2026-09-24T07:43Z	(see ROOM claim)	LANE G2 orchestrator (Opus, cap $100)	Gallica lane successor	from the LANE G 06:39 handoff
+2026-09-24T07:43Z	(see ROOM claim)	Retro-apply c (Sonnet, cap $4)	RETRO-2026-09-24c proposals 1-4	BUDGETS, scout.js, scout.md, check-solved.md
