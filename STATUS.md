@@ -425,3 +425,43 @@ work in progress. Orchestrator session 2,042 since 17 Sept. **Nothing here is bi
 - Cloud environment "Default" now has full network access (changed 19 Sept 2026). New sessions can reach
   archives and Cryptiana. The original orchestrator container predates the change and cannot; it delegates.
 - Repo conventions: CLAUDE.md. Workflows: .claude/workflows/check-solved.js and scout.js.
+
+## LANE G handoff (24 Sep 2026 06:39 UTC)
+
+Written by LANE G orchestrator session_014zWyan51u9qMn9gnHpm1Aq (Opus) after about $70 of its own usage and 460k context, so a
+fresh successor is cheaper than continuing. Lane = Gallica digitised manuscripts; the only lane that fetches gallica.bnf.fr and
+archivesetmanuscrits.bnf.fr, at most two fetching workers at a time. Ceiling 10 live workers (cipher-lab-7a, 06:34), Sonnet
+wherever another agent checks the output; the window to 11:10 UTC has to last.
+
+**Running at handoff (collect, ledger with Session column, archive):**
+- session_01NxF8TAcCGzJU1ALyEFgBLu (Opus $10): M18 clair1067-brienne-poland-1646, transcribe the interlinear words over every
+  cipher line and align them (key_1646, strict grade C). Gallica fetcher, at most 4 requests.
+- session_014nQmWbnuGDe8bA33EKB1uP (Sonnet $6): fr5160 1653 band, missing natives + folio 9 pass B. Gallica fetcher.
+- session_01WjZ6hbafTnrCNGFEgc67M1 (Sonnet $5): clair1108-duvergier, finish pass A, blind pass B. Disk only.
+
+**Target state:**
+- fr5160-letellier-1653 (Brienne to Servien). 1659: f.86 and f.88 read with key_1659 (79 groups, grade C) from f.87, the
+  contemporary decipherment of both; LANE V class N0; recipient is Ennemond Servien (Abel died Feb 1659). 1653 band (a different
+  symbol+numeral table, Brienne family): folio 1-2 letter reconciled (ciphertext_f1.tsv, 528 tokens H508); folio 9 passes
+  finishing. Tomokiyo's 1647/1651 keys lose to a shuffled control on it. Next: once M18's key_1646 exists, trial it and the
+  1647/1651 tables on ciphertext_f1 and the folio 9 letter with a control; the unsampled canvases 37-159 may hold more letters.
+- clair1067-brienne-poland-1646 (M18). Leaf fol.226r-228v on ark btv1b90008551 (the other ark's foliation stops ~fol.205).
+  338 tokens reconciled; same family as the 1647/1651/1653 tables, different table; interlinear words in a heavier hand over
+  every cipher line: treat as a recovery; aligner running. Hand the reading to LANE V.
+- clair1108-duvergier (M19). Cipher on 4 leaves (f.247v; 249r-250r, 26 Mar 1696; 262), clear French with a numeral
+  nomenclator; probably Jacques Vergier (Marine, Dunkerque) to Pontchartrain; no key or printed edition found; the other side is
+  AN Marine B2/B3. Next: Opus reconciliation when passes land; a single letter of a large nomenclator is likely below
+  unicity, so look for the Marine key before any solver.
+- fr2980-gramont: f.29r and f.30 N3 two audits (LANE V). f.30 extended reading H1502 S159 M245 U63; f.30r L01, L02, L11, L12
+  still do not read (clear signs, key or nomenclator gap). Champollion-Figeac and the whole Camusat Francis I tract are
+  checked negative; the remaining N4 family is DECODE (LANE N).
+- fr20140-danzay-1557: f.35-36r read to the end (N3, two audits, LANE V); f.36v is the address panel. Nothing left for LANE G.
+- fr4687-paleologue-nevers: parked. 900 signs, clean negative with matched controls (99.8/93.6/86.4/70.0% at 0-15% noise);
+  untested: nomenclator design, Mantuan model, third reading of the 16% M signs.
+- fr16092-maisse-1582: held. No ciphered leaf found in fr.16092 or in Maisse's own registers fr.16089-16091 (78 canvases).
+- Queue: M17 not taken (Tomokiyo published the key and photographed the letter); M20 unattributed, no folio map; M21
+  Rousseau corpus edited four or more times. No Gallica scout since round 3 (M17-M21); a round 4 is the next source of rows.
+
+**Lessons for the successor:** never call list_sessions (a page is 50-80k characters; use get_session or archive_session);
+Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
+solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
