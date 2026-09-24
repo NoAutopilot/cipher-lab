@@ -1,0 +1,64 @@
+# key_sabran_1631.tsv -- George Lasry's reconstruction of the cipher used in BnF fr.4134 (Sabran's own outgoing/
+# incoming correspondence) and confirmed by him also in BnF Baluze 155 f.79 (Louis XIII to Sabran, 28 Mar 1631).
+# Source: sources/cryptiana/web/GL.htm, section "Melchior de Sabran (1631)" (S. Tomokiyo's page, crediting
+# George Lasry, dated by Lasry 25/05/2022 on the key image); image fetched 24 Sept 2026 from
+# cryptiana.web.fc2.com/code/GL/BnF_fr4134.jpg (624x261px, the only resolution published -- several cells are
+# genuinely hard to read at this size and some are marked "?" by Lasry himself, kept below).
+# This is the "Sabran (1631)" key named in this worker's brief, NOT the separate Farnese-to-Sabran key at
+# Baluze 156 f.40 (GL.htm's next section, "?Odoardo Farnese, Duke of Parma (1637)", a different cipher).
+# grade H (read directly from Lasry's published key image); kind: letter (symbol alphabet) | nomenclator (2-digit
+# code for a word/syllable). Symbol shapes are given as short descriptions (sign column), since the glyphs are
+# hand-drawn secretary-hand marks with no ASCII equivalent -- matching convention to fr20140-danzay-1557/key.tsv.
+kind	code_or_sign	value	grade	note
+letter	A-sym1	a	H	first (top) symbol under column A
+letter	A-sym2	a	H	second symbol under column A (homophone)
+letter	C-sym1	c	H
+letter	D-sym1	d	H
+letter	D-sym2	d	H
+letter	D-sym3	d	M	third stacked symbol, faint
+letter	D-sym4	d	M	fourth stacked symbol, faint
+letter	E-sym1	e	H
+letter	F-sym1	f	H
+letter	G-sym1	g	H
+letter	H-sym1	h	H
+letter	I-sym1	i	H
+letter	I-sym2	i	M	second symbol, faint
+letter	L-sym1	l	H
+letter	M-sym1	m	H
+letter	M-sym2	m	M
+letter	N-sym1	n	H
+letter	O-sym1	o	H
+letter	O-sym2	o	M
+letter	P-sym1	p	H
+letter	Q-sym1	q	H
+letter	R-sym1	r	H
+letter	S-sym1	s	H
+letter	S-sym2	s	M
+letter	T-sym1	t	H
+letter	T-sym2	t	M
+letter	V-sym1	v	H
+letter	X-sym1	x	M
+letter	Y-sym1	y	M
+letter	Z-sym1	z	M
+letter	d2-sym1	d	M	Lasry's separate second "d" column (distinct from D, possibly a doubled letter or digraph sign)
+letter	p2-sym1	p	M	Lasry's separate second "p" column
+nomenclator	17	bon	H
+nomenclator	0	[null or word-break mark]	M	Lasry's own gloss is just "--" (a dash), meaning unclear/no word assigned
+nomenclator	34	[unglossed]	M	no word given in Lasry's table
+nomenclator	29	et	H
+nomenclator	56	par	M	Lasry marks this with "?" in his own table
+nomenclator	66	tion	H
+nomenclator	24	ce	H
+nomenclator	44	la	H
+nomenclator	58	qui	H
+nomenclator	68	vous	H
+nomenclator	26	de	H
+nomenclator	48	ment	H
+nomenclator	59	que	H
+nomenclator	2	[x2, repeat-previous-sign mark]	H
+nomenclator	27	[title, e.g. Monsieur/Monseigneur]	M	Lasry glosses this cell "(title)"
+nomenclator	52	ont	H
+nomenclator	62	re	H
+nomenclator	28	en	H
+nomenclator	55	prince?	M	Lasry marks this "PRINCE? DUC?", i.e. uncertain between two readings
+nomenclator	64	si	H

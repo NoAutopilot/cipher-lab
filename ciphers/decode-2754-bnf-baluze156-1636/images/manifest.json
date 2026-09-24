@@ -1,0 +1,39 @@
+{
+  "ark": "btv1b9001409q",
+  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b9001409q",
+  "volume": "BnF Baluze 156",
+  "found_via": "archivesetmanuscrits.bnf.fr free-text search 'Baluze 156' -> notice ark:/12148/cc340913 (Baluze 155-156) -> ajaxGetCompDisplay eadCompId=FRBNFEAD000034091_a19857858 (Baluze 156 sub-unit) -> dao-class link to gallica.bnf.fr/ark:/12148/btv1b9001409q, 24 Sept 2026",
+  "manifest_fetch_status": "gallica.bnf.fr/iiif/.../manifest.json and /services/Pagination both failed repeatedly this session (curl 35 Recv failure: Connection reset by peer / ws_closed_mid_exchange per /__agentproxy/status, proxy-side not a Gallica denial -- gallica.bnf.fr base host, .thumbnail and the direct /iiif/.../fN/... image endpoint all answered 200 throughout). Folio-to-canvas mapping done by eye instead: fetched candidate canvases directly and read the handwritten folio-number stamp in each corner crop.",
+  "offset_note": "canvas fN = manuscript folio (N-4)r for this run of the volume (f157 canvas -> folio 153r, confirmed by corner crop; f161 canvas -> folio 157r; f162 canvas -> folio 158r). Not verified outside f153/f157/f158 -- do not assume it holds elsewhere in the volume.",
+  "leaves": [
+    {
+      "file": "dc8_f157r.jpg",
+      "canvas": "f161",
+      "region": "right half (recto) of the canvas, pct:50,0,50,100",
+      "folio": "157r",
+      "folio_stamp_confirmed": true,
+      "content": "letter opening 'Copie du 9e febvrier 1636 ... Monseigneur', mixed plain French with inline cipher (digit/symbol groups) -- matches DC8's dated 9 Feb 1636 item",
+      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001409q/f161/pct:50,0,50,100/2000,/0/native.jpg"
+    },
+    {
+      "file": "dc8_f157v.jpg",
+      "canvas": "f162",
+      "region": "left half (verso) of the canvas, pct:0,0,50,100",
+      "folio": "157v",
+      "folio_stamp_confirmed": false,
+      "content": "continuation of the same letter in plain French, no cipher groups seen",
+      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001409q/f162/pct:0,0,50,100/2000,/0/native.jpg"
+    },
+    {
+      "file": "dc8_f158r.jpg",
+      "canvas": "f162",
+      "region": "right half (recto) of the canvas, pct:50,0,50,100",
+      "folio": "158r",
+      "folio_stamp_confirmed": true,
+      "content": "blank (address/outer-fold leaf of the folded letter)",
+      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001409q/f162/pct:50,0,50,100/2000,/0/native.jpg"
+    }
+  ],
+  "fetched_utc": "2026-09-24T08:50:00Z",
+  "requests_this_session": "gallica.bnf.fr: ~20 (several failed connection resets on manifest/services/full-page endpoints, retried once each per good-citizen rule then routed around via smaller direct image fetches; archivesetmanuscrits.bnf.fr: ~10 search+notice+ajax fetches, >=1.5s apart, UA 'cipher-lab research script (contact via repository)'"
+}
