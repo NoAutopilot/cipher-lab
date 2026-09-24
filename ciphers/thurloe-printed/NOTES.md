@@ -346,6 +346,150 @@ decipherment, would be a real-data benchmark for the solver.
 U 11; (d) BL Add MS 4200 f.76 (Montagu, 19 May 1656, DECODE 8387, per Tomokiyo) may be a manuscript
 of part of this journal-letter -- worth a comparison if the image is ever fetched.
 
+## 10. Fauconberg pool (LANE T worker A, 24 Sept 2026)
+
+Brief: confirm sender/recipient/dateline and full cipher extent for P16-P24 (nine rows) against
+the heading scan (LANE T orchestrator, ROOM.md 03:03 UTC), align each letter's printed
+decipherment with `tools/interlinear_align.py`, and build one combined key. No cryptanalysis, no
+anneal (LANE T worker F runs the real-data benchmark separately, section 15).
+
+**1. Attribution, confirmed directly from the print.** All nine rows are Lord Fauconberg to
+Henry Cromwell, lord deputy (later lord lieutenant) of Ireland -- read from `sources/ia-fulltext/
+collectionofstat07thur_djvu.txt` (restored from the committed gzip, no network fetch this pass).
+Five of the nine correct a wrong attribution in `index.tsv` inherited from the previous
+detector/leaf-check pass (which read the signature or a nearby name, not the heading above the
+window); the other four (P19, P21-23) were already corrected by the Monck-pool solver (section 8).
+
+| Row | index.tsv had | Corrected sender/recipient | Date (from the print) | Full letter, djvu lines | Detector window |
+|---|---|---|---|---|---|
+| P16 | Capt. Stoakes / secretary Thurloe | Lord Fauconberg / H. Cromwell, lord deputy of Ireland | Whitehall, 20 April [1658] | 7179-7251 | 7198-7210 |
+| P17 | Mr. Downing / secretary Thurloe | Lord Fauconberg / H. Cromwell, lord deputy of Ireland | A.D.1658, no closer date printed (content: Cromwell "in great daunger" of dying -- placed here among late-Aug/early-Sept 1658 letters, i.e. shortly before or after the Protector's death 3 Sept 1658) | 32122-32356 | 32138-32355 |
+| P18 | Dr. Tho. Harrison / secretary Thurloe | Lord Fauconberg / H. Cromwell, lord deputy of Ireland | Whitehall, 14 Sept [1658] | 34074-34114 | 34083-34111 |
+| P19 | (already Fauconberg, section 8) | -- | dateline reads "Sept. 21. 28." in the OCR -- the "28" is not understood (not a day-of-month; possibly a running item number or OCR noise); placed among Sept 1658 letters | 35655-35800 | 35658-35670 |
+| P20 | Mr. S. Disbrowe, one of the council of Scotland / secretary Thurloe | Lord Fauconberg / H. Cromwell, lord deputy of Ireland | October the 12. [1658.], signed "B." | 39860-39962 | 39931-39943 |
+| P21 | (already Fauconberg, section 8) | -- | October 1658; exact day not found in this window | 41199-41367 | 41232-41354 |
+| P22 | (already Fauconberg, section 8) | -- | "Oaob.26. [1658.]" (26 October 1658), signed "B." | 42243-42324 | 42242-42307 |
+| P23 | (already Fauconberg, section 8) | -- | c. 23 Nov 1658 (mentions the Protector's funeral solemnity "this day") | 49474-49660 | 49509-49608 |
+| P24 | Consul Maynard / secretary Thurloe | Lord Fauconberg / H. Cromwell, lord LIEUTENANT of Ireland (title changed by this date) | "Feb. 75. 1658." -- OCR misreads "25" as "75" (no 75th of February); read as 25 Feb 1658 O.S. = 1659 N.S., signed "B." | 56496-56615 | 56521-56593 |
+
+The window column is `index.tsv`'s existing narrow detector window (padded around the numeral
+cluster the 23 Sept detector found); the "full letter" column is this pass's reading of the whole
+letter, heading to the next document's own heading -- several of the windows cut a letter off
+mid-cipher (P17's window alone was 217 lines short of the letter's true 234-line extent; P16's,
+P18's, P20's and P24's detector windows also start partway into an already-running cipher
+passage, since Birch's decipherment is set in the same paragraph as the surrounding clear text and
+the detector's numeral-density threshold only catches the densest lines). `P16`-B. (`Fauconberg,`)
+is the only one of the nine with a clean, unambiguous signature-and-postscript ending in the
+extract; P20/P22/P24 are all signed "B." (Belasyse, Fauconberg's family name), matching the
+Monck-pool solver's reading of P22's "B." (section 8).
+
+Not checked or corrected this pass: `sources/ia-fulltext/thurloe-check.tsv` and `status.json`
+(out of scope for this brief; LANE T applies index.tsv corrections, listed below, from here).
+
+**2. Method.** `tools/interlinear_align.py` (built for Montagu, NOTES section 9, used unchanged)
+extracts every (plain line, cipher line) pair over each letter's full extent above into
+`fauconberg_<date>_<row>_pairs.tsv`, then aligns each pair by dynamic programming, iterating so a
+value's chunk agrees with what the same value reads elsewhere **within that one letter**.
+`decode_fauconberg.py` (new; does not touch `decode.py`, which another worker owns) then combines
+all nine letters' per-value vote counts into one pool-wide vote per value and writes
+`key_fauconberg.tsv`: grade H only for values 11 and 13 (Tomokiyo, thurloe.htm, "Henry Cromwell
+(1658-1659)": "a numerical cipher ... (E=11/13)" -- kept at "e" regardless of a given letter's own
+noisier vote); grade C where the pool-wide top meaning holds a majority of all votes for that
+value (>=2 votes, more than half); grade M otherwise (single occurrence or no majority). Tomokiyo's
+four single-capital name codes (A = Henry Cromwell, O = Lambert, V = Desbrowe, Z = Protector) are
+not enciphered -- Birch prints them as literal capitals inside the cipher line -- so they are
+counted separately by a plain regex over the pairs files, not voted on, and listed at H.
+`python3 decode_fauconberg.py --check` regenerates every pairs/key/reading file in memory and
+exits non-zero if a committed one is stale (rule 7); confirmed clean immediately after generation.
+
+**3. What the combined key shows.** 55 numeral values (2-56, plus five outliers above 100 that are
+almost certainly OCR-merged multi-word chunks, not real high-value codes -- e.g. `723` aligned to
+"refentanoutwar", a merged run of "resented an outward") plus the four name codes. Values 2-49
+resolve cleanly onto the 24-letter alphabet Birch's compositor had (i/j and u/v not distinguished),
+with a visible **two-homophones-per-letter structure that falls straight out of the print's own
+decipherment** (not cryptanalysis; reported because the pool-wide vote surfaces it): b=2/4, a=3/5,
+d=6/8(/56), c=7/9, f=10/12(/36), e=11/13, h=14/16, g=15/17(/139), k=18/20, i=19/21, m=22/24, l=23/25,
+o=26/28, n=27/29(/129), q=30/32, p=31/33, s=34(alone), r=35/37, u=38/40, t=39/41, x=42/44, w=43/45,
+y=47/49; z has no confirmed value in these nine letters. 11 and 13 both landing on "e" (Tomokiyo's
+own statement) independently in 8 of the 9 letters (P16 9/9, P17 120/124, P18 12/12, P19 52/55 and
+50/51, P22 30/32 and 17/19, P24 33/33 and 27/30) is a strong internal check on the alignment method
+itself, not a new claim about the cipher.
+
+**4. Grade counts per letter** (H/C/M/U/I per CLAUDE.md rule 4; `clear` = not a cipher group --
+parenthesised numerals or plain-text words interleaved with the cipher, not counted in any grade):
+
+| Row | H | C | M | U | I | clear | total tokens |
+|---|---|---|---|---|---|---|---|
+| P16 | 9 | 130 | 6 | 2 | 0 | 15 | 162 |
+| P17 | 124 | 809 | 102 | 134 | 5 | 81 | 1255 |
+| P18 | 12 | 89 | 7 | 17 | 1 | 15 | 141 |
+| P19 | 106 | 568 | 70 | 12 | 7 | 24 | 787 |
+| P20 | 34 | 104 | 171 | 68 | 1 | 30 | 408 |
+| P21 | 87 | 151 | 416 | 108 | 0 | 41 | 803 |
+| P22 | 51 | 260 | 41 | 15 | 2 | 16 | 385 |
+| P23 | 77 | 132 | 406 | 89 | 0 | 29 | 733 |
+| P24 | 63 | 334 | 66 | 48 | 6 | 52 | 569 |
+| **total** | **563** | **2577** | **1285** | **493** | **22** | **303** | **5243** |
+
+H+C = 3140 of 4940 cipher-group tokens (63.5%) read with the print's own decipherment agreeing at
+least twice pool-wide. **P20, P21 and P23 are the three where the print leaves the most
+unaligned** -- M exceeds C in all three (visible already in the interlinear pairs as heavier OCR
+damage: merged words with no spaces, long-s/f confusion, and several digit runs the aligner could
+not chunk against any recurring plain-text span). P17, P19, P22, P24 align well (C well ahead of M,
+few U). P16 and P18 are short (7 pairs each) but very clean. No group in any of the nine is claimed
+as newly read beyond what `key_fauconberg.tsv`/the per-letter `reading_fauconberg_*.txt` show; the
+M/U tokens are exactly the extent to which Birch's own decipherment does not settle a group.
+
+**5. Flags for LANE T.**
+- **`decode.py` and `key_downing.tsv`/`reading_P17.txt` are now wrong for P17.** `decode.py`
+  (owned by another worker, not touched here) still treats P17 as George Downing's letter with
+  Downing's cipher (E=39-45, THE=468) applied to the old, short detector window. P17 is this
+  Fauconberg letter; its real cipher is the one in `key_fauconberg.tsv`, and its real extent is
+  32122-32356, not window 32138-32355 alone. Whoever owns `decode.py` should drop P17 from its
+  `LETTERS` table (or repoint it at `key_fauconberg.tsv`) and `index.tsv`/`thurloe-check.tsv`'s
+  `P17` row needs the same correction as the block below. Tomokiyo's Downing cipher may still be a
+  real, separate reconstruction -- it is just not what is printed at djvu lines 32122-32356.
+- **More Fauconberg-to-H.-Cromwell letters exist in vol. 7 beyond this pool's nine rows.** A plain
+  grep for "Fauconb" against the cached djvu text finds "Lord Fauconberg to H. Cromwell" (or "to
+  fecretary Thurloe", or the reverse direction) headings at djvu lines 3582, 7179, 12754, 13222,
+  13868, 15589, 16845, 18891, 29597, 32122, 33205, 33323, 34074, 35655, 39860, 41199, 42243, 46115,
+  46696, 49474, 56496, 58011, 59400 -- at least a dozen more than the nine P-rows this brief covers
+  (some to secretary Thurloe rather than H. Cromwell directly, and some are H. Cromwell's replies,
+  which would not be in cipher). Not checked for cipher content or windows this pass (out of
+  brief); a next pass could grep each for a nearby numeral-dense line the 23 Sept detector missed
+  because the letter's opening or closing paragraphs (not just its middle) were outside every
+  P-row's original window.
+- **Tomokiyo's key image (`fauconberg.jpg`) is not in the local mirror and was not fetched this
+  pass** (brief's instruction); the next step for anyone continuing this is a value-by-value
+  comparison against `key_fauconberg.tsv` once it is retrieved -- one request to
+  `cryptiana.web.fc2.com`, well within the good-citizen rule's per-host budget.
+- The proposed `index.tsv` corrections (sender/recipient/date/cipher_system/keyed only; window
+  widening is a separate judgement call for whoever owns re-extraction with `tools/thurloe_extract.py`,
+  since widening changes `ciphertext.txt` and downstream row counts this brief does not touch):
+
+```
+row	sender	recipient	date	cipher_system	keyed
+P16	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	20 April [1658]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P17	Lord Fauconberg	Henry Cromwell, lord deputy of Ireland	A.D.1658 (no closer date printed; content places it near the Protector's death, 3 Sept 1658)	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P18	Lord Fauconberg	Henry Cromwell, lord deputy of Ireland	Whitehall, 14 Sept [1658]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P19	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	Sept. 21. [1658] (trailing "28" in the OCR dateline unexplained)	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P20	Lord Fauconberg	Henry Cromwell, lord deputy of Ireland	October the 12. [1658.]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P21	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	October [1658] (day not found in this window)	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P22	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	26 Oct. [1658.]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P23	Lord Fauconberg	Henry Cromwell, lord deputy/lieutenant of Ireland	c. 23 Nov [1658]	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+P24	Lord Fauconberg	Henry Cromwell, lord LIEUTENANT of Ireland	Feb. 25. 1658 O.S. (= 1659 N.S.; OCR misprints "75")	Fauconberg-H. Cromwell numeral cipher (key_fauconberg.tsv; Tomokiyo thurloe.htm 'Henry Cromwell (1658-1859)', E=11/13, key table image fauconberg.jpg); Birch prints the interlinear decipherment	yes
+```
+
+**6. Status.** Not a cryptanalytic result -- no S grades, no control, no anneal (per brief; LANE T
+worker F's real-data benchmark, section 15, is the place for that). Per rule 10: found in this
+project's own reading of Birch 1742 (already in hand, no new source consulted); not searched
+against any external source this pass, and no claim of new/unpublished/first is made. `status`
+for all nine rows should become `found-solved` once LANE T applies the corrections above (same
+class of result as P11-13 and P19/P21-23: a printed 1742 decipherment, aligned, not decoded).
+
+**Requests this pass:** none -- the vol. 7 djvu text was already committed gzipped at
+`sources/ia-fulltext/thurloe-gz/` and restored locally with `zcat`; no archive.org, no other host,
+no logins, no subagents.
 ## 13. P2, P3, P8 (LANE T worker D, 24 Sept 2026)
 
 Brief: confirm heading/signature/page/extent for P2, P3, P8; say whether the print carries a

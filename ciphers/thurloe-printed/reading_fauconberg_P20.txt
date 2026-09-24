@@ -1,0 +1,418 @@
+# Reading of Thurloe letter P20 (Lord Fauconberg to H. Cromwell, 1658-10-12) from the
+# decipherment Birch prints beside the cipher (1742), aligned by
+# tools/interlinear_align.py; combined-pool values from key_fauconberg.tsv kept at H.
+# Regenerate: python3 decode_fauconberg.py
+# 408 cipher/clear tokens, alignment status: {'conflict': 170, 'clear': 30, 'agrees': 127, 'single-segment': 2, 'repaired': 1, 'single': 10, 'doubtful': 11, 'null-or-unaligned': 57}
+# Matched control: none run -- nothing cryptanalytic is claimed (CLAUDE.md rule 3
+# applies only to a cryptanalytic negative; this is an alignment of a printed plaintext).
+#
+# Columns: cipher_line  idx  raw  kind  value  repair  plain_chunk  status
+#==========================================================================
+39868	0	21	num	21		d	conflict:i
+39868	1	qc	clear				clear
+39868	2	26	num	26		i	conflict:o
+39868	3	7	num	7		t	conflict:i
+39868	4	13	num	13		r	conflict:e
+39868	5	11	num	11		h	conflict:e
+39868	6	8	num	8		s	conflict:d
+39868	7	5	num	5		r	conflict:a
+39868	8	41	num	41		a	agrees
+39868	9	39	num	39		r	conflict:t
+39868	10	16	num	16		e	conflict:h
+39868	11	21	num	21		e	conflict:i
+39868	12	34	num	34		a	conflict:s
+39868	13	37	num	37		r	agrees
+39868	14	3	num	3		l	conflict:a
+39868	15	41	num	41		o	conflict:a
+39868	16	11,	num	11		f	conflict:e
+39868	17	into	clear				clear
+39868	18	the	clear				clear
+39868	19	north,	clear				clear
+39868	20	from	clear				clear
+39868	21	whence	clear				clear
+39868	22	burn>	clear				clear
+39876	0	39	num	39		a	conflict:t
+39876	1	41	num	41		c	conflict:a
+39876	2	47	num	47		a	conflict:y
+39876	3	5	num	5		r	conflict:a
+39876	4	23	num	23		g	conflict:l
+39876	5	25	num	25		e	conflict:l
+39876	6	3	num	3		h	conflict:a
+39876	7	39	num	39		h	conflict:t
+39876	8	255	num	255		hadafinegame	single-segment
+39876	9	35	num	35		t	conflict:r
+39876	10	17	num	17		o	conflict:g
+39876	11	11.	num	11		p	conflict:e
+39876	12	Z	clear				clear
+39876	13	14	num	14		l	conflict:t
+39876	14	5	num	5		a	agrees
+39876	15	6	num	6		y	conflict:d
+39876	16	3	num	3		a	agrees
+39876	17	10	num	10		w	conflict:f
+39876	18	19	num	19		e	conflict:i
+39876	19	29	num	29		e	agrees
+39876	20	13	num	13		k	conflict:e
+39876	21	17	num	17		f	conflict:g
+39876	22	5	num	5		i	conflict:a
+39876	23	24	num	24		n	conflict:e
+39876	24	11	num	11		e	agrees
+39880	0	39	num	39		i	conflict:t
+39880	1	26	num	26		t	conflict:o
+39880	2	33	num	33		h	conflict:a
+39880	3	24	num	24		e	agrees
+39880	4	3	num	3		n	conflict:a
+39880	5	49	num	49		a	conflict:y
+39880	6	5	num	5		i	conflict:a
+39880	7	45	num	45		h	conflict:w
+39880	8	*3	doubtful		3	a	repaired
+39880	9	IJ	clear				clear
+39880	10	2°	num	20		d	single
+39880	11	°6	num	6		t	conflict:d
+39880	12	J9	doubtful			a	doubtful
+39880	13	29	num	29		i	conflict:e
+39880	14	9	num	9		t	conflict:r
+39880	15	JI	clear				clear
+39880	16	2I	num	21		h	conflict:i
+39880	17	I2	num	12		r	agrees
+39880	18	*4	doubtful			ui	doubtful
+39880	19	13	num	13		c	conflict:e
+39880	20	16	num	16		o	conflict:h
+39880	21	3	num	3		u	conflict:a
+39880	22	6	num	6		n	conflict:d
+39880	23	14	num	14		c	conflict:t
+39880	24	5	num	5		e	conflict:a
+39880	25	8	num	8		i	conflict:d
+39884	0	10	num	10		a	conflict:f
+39884	1	3	num	3		n	conflict:a
+39884	2	21	num	21		d	conflict:i
+39884	3	41	num	41		i	conflict:a
+39884	4	14	num	14		t	agrees
+39884	5	2	num	2		h	single
+39884	6	38	num	38		i	conflict:u
+39884	7	23	num	23		n	conflict:l
+39884	8	7	num	7		k	conflict:i
+39884	9	26	num	26		t	conflict:o
+39884	10	40	num	40		h	conflict:u
+39884	11	29	num	29		e	agrees
+39884	12	9	num	9		r	agrees
+39884	13	11	num	11		e	agrees
+39884	14	25	num	25		i	conflict:l
+39884	15	5	num	5		s	conflict:a
+39884	16	29	num	29		y	conflict:e
+39884	17	6	num	6		e	conflict:d
+39884	18	21	num	21		t	conflict:i
+39884	19	29	num	29		f	conflict:e
+39884	20	l6	num	16		o	conflict:h
+39884	21	19	num	19		m	conflict:i
+39884	22	27	num	27		e	conflict:n
+39884	23	2°4*	doubtful			r	doubtful
+39884	24	J4	doubtful			emedy	doubtful
+39888	0	13	num	13			null-or-unaligned
+39888	1	35	num	35			null-or-unaligned
+39888	2	11	num	11			null-or-unaligned
+39888	3	21	num	21			null-or-unaligned
+39888	4	34	num	34			null-or-unaligned
+39888	5	49	num	49			null-or-unaligned
+39888	6	11	num	11			null-or-unaligned
+39888	7	41	num	41			null-or-unaligned
+39888	8	36	num	36			null-or-unaligned
+39888	9	26	num	26			null-or-unaligned
+39888	10	24	num	24			null-or-unaligned
+39888	11	II	num	11			null-or-unaligned
+39888	12	37	num	37			null-or-unaligned
+39888	13	"	clear				clear
+39888	14	22	num	22			null-or-unaligned
+39888	15	l3	num	13			null-or-unaligned
+39888	16	8	num	8			null-or-unaligned
+39888	17	47	num	47			null-or-unaligned
+39888	18	J	clear				clear
+39888	19	4	num	4		b	agrees
+39888	20	38	num	38		u	agrees
+39888	21	4*	doubtful				doubtful
+39888	22	5	num	5		t	conflict:a
+39888	23	23	num	23		a	conflict:l
+39888	24	3	num	3		u	conflict:a
+39888	25	36	num	36		s	agrees
+39892	0	43	num	43		w	agrees
+39892	1	13	num	13		e	agrees
+39892	2	"	clear				clear
+39892	3	45	num	45		v	conflict:w
+39892	4	3	num	3		a	agrees
+39892	5	29	num	29		n	conflict:e
+39892	6	39	num	39		t	agrees
+39892	7	22	num	22		n	agrees
+39892	8	5	num	5		m	conflict:a
+39892	9	27	num	27		n	agrees
+39892	10	49	num	49		y	agrees
+39892	11	26	num	26		o	agrees
+39892	12	I2	num	12		r	agrees
+39892	13	38	num	38		u	agrees
+39892	14	36	num	36		s	agrees
+39892	15	ll	num	11		e	agrees
+39892	16	49	num	49		y	agrees
+39892	17	39	num	39		t	agrees
+39892	18	l6	num	16		h	agrees
+39892	19	l3	num	13		e	agrees
+39892	20	35	num	35		r	agrees
+39892	21	AS	clear				clear
+39892	22	19	num	19		w	conflict:i
+39892	23	41	num	41		i	conflict:a
+39898	0	28	num	28			null-or-unaligned
+39898	1	35	num	35			null-or-unaligned
+39898	2	28	num	28		o	agrees
+39898	3	35	num	35			null-or-unaligned
+39898	4	9	num	9		r	agrees
+39898	5	26	num	26		c	conflict:o
+39898	6	38	num	38		o	conflict:u
+39898	7	37	num	37		a	conflict:r
+39898	8	5	num	5		i	conflict:a
+39898	9	i5	num	15		e	single-segment
+39898	10	i3-	doubtful				doubtful
+39898	11	..	clear				clear
+39898	12	.	clear				clear
+39898	13	.	clear				clear
+39902	0	A	clear				clear
+39902	1	21	num	21		i	agrees
+39902	2	34	num	34		s	agrees
+39902	3	17	num	17		g	agrees
+39902	4	11	num	11		e	agrees
+39902	5	29	num	29		n	conflict:e
+39902	6	13	num	13		e	agrees
+39902	7	35	num	35		r	agrees
+39902	8	5	num	5		a	agrees
+39902	9	23	num	23		l	agrees
+39902	10	25	num	25		l	agrees
+39902	11	47	num	47		y	agrees
+39902	12	37	num	37		r	agrees
+39902	13	ii	num	11		e	agrees
+39902	14	40	num	40		v	agrees
+39902	15	19	num	19		i	agrees
+39902	16	23	num	23		l	agrees
+39902	17	8,	num	8		d	single
+39902	18	3	num	3		a	agrees
+39902	19	36	num	36		s	agrees
+39902	20	22	num	22		n	agrees
+39902	21	26	num	26		o	agrees
+39902	22	36	num	36		f	agrees
+39902	23	41	num	41		t	conflict:a
+39906	0	38	num	38			null-or-unaligned
+39906	1	29	num	29			null-or-unaligned
+39906	2	17	num	17			null-or-unaligned
+39906	3	26	num	26			null-or-unaligned
+39906	4	6	num	6			null-or-unaligned
+39906	5	25	num	25			null-or-unaligned
+39906	6	49	num	49			null-or-unaligned
+39906	7	5	num	5			null-or-unaligned
+39906	8	27	num	27			null-or-unaligned
+39906	9	6	num	6			null-or-unaligned
+39906	10	5	num	5		r	conflict:a
+39906	11	29	num	29			null-or-unaligned
+39906	12	39	num	39			null-or-unaligned
+39906	13	19	num	19			null-or-unaligned
+39906	14	7	num	7			null-or-unaligned
+39906	15	16	num	16		h	agrees
+39906	16	35	num	35		r	agrees
+39906	17	21	num	21		i	agrees
+39906	18	34	num	34		f	agrees
+39906	19	39	num	39		t	agrees
+39906	20	19	num	19		i	agrees
+39906	21	5	num	5		a	agrees
+39906	22	29	num	29			null-or-unaligned
+39906	23	j	clear				clear
+39906	24	2	num	2		n	conflict:h
+39906	25	40	num	40		u	agrees
+39910	0	I39	num	139		g	single
+39910	1	15	num	15			null-or-unaligned
+39910	2	28	num	28		o	agrees
+39910	3	6	num	6		d	single
+39910	4	4	num	4		b	agrees
+39910	5	11	num	11		e	agrees
+39910	6	39	num	39		t	agrees
+39910	7	16	num	16		h	agrees
+39910	8	3	num	3			null-or-unaligned
+39910	9	29	num	29			null-or-unaligned
+39910	10	18	num	18		a	single
+39910	11	39	num	39		n	conflict:t
+39910	12	49	num	49		k	conflict:y
+39910	13	26	num	26		v	conflict:o
+39910	14	40	num	40		o	conflict:u
+39910	15	5	num	5		n	conflict:a
+39910	16	35	num	35		a	conflict:r
+39910	17	13	num	13		r	conflict:e
+39910	18	33	num	33		e	conflict:a
+39910	19	35	num	35		p	conflict:r
+39910	20	11	num	11		r	conflict:e
+39910	21	41	num	41		e	conflict:a
+39910	22	39	num	39		i	conflict:t
+39910	23	49	num	49		y	agrees
+39921	0	iJs-y>sL>	clear				clear
+39921	1	B'	clear				clear
+39921	2	45	num	45		a	conflict:w
+39921	3	x9	doubtful			d	doubtful
+39921	4	25	num	25		l	agrees
+39921	5	2	num	2		r	conflict:h
+39921	6	*3	doubtful			r	doubtful
+39921	7	4i	num	41		w	conflict:a
+39921	8	14	num	14		i	conflict:t
+39921	9	37	num	37		l	conflict:r
+39921	10	26	num	26		l	conflict:o
+39921	11	45	num	45		b	conflict:w
+39921	12	27	num	27		e	conflict:n
+39921	13	T3	doubtful			throwne	doubtful
+39921	14	28	num	28		o	agrees
+39921	15	40	num	40		u	agrees
+39921	16	39	num	39		t	agrees
+39921	17	28	num	28		o	agrees
+39921	18	I0	num	10		f	agrees
+39921	19	4*	doubtful			thewindo	doubtful
+39921	20	H	clear				clear
+39921	21	IJ	clear				clear
+39921	22	45	num	45		w	agrees
+39921	23	19	num	19		e	conflict:i
+39925	0	29	num	29		i	conflict:e
+39925	1	6	num	6			null-or-unaligned
+39925	2	28	num	28		f	conflict:o
+39925	3	43	num	43			null-or-unaligned
+39925	4	13	num	13			null-or-unaligned
+39925	5	21	num	21			null-or-unaligned
+39925	6	12	num	12		h	conflict:r
+39925	7	16	num	16		e	conflict:h
+39925	8	11	num	11		f	conflict:e
+39925	9	34	num	34		l	conflict:s
+39925	10	41	num	41		a	agrees
+39925	11	3	num	3		y	conflict:a
+39925	12	49	num	49		j	conflict:y
+39925	13	•,	clear				clear
+39925	14	47	num	47		y	agrees
+39925	15	13	num	13		e	agrees
+39925	16	39	num	39		n	conflict:t
+39925	17	10	num	10		f	agrees
+39925	18	25	num	25		l	agrees
+39925	19	47	num	47		y	agrees
+39925	20	13	num	13		c	conflict:e
+39925	21	34	num	34		s	agrees
+39925	22	27	num	27		n	agrees
+39925	23	26	num	26		o	agrees
+39925	24	41	num	41		t	conflict:a
+39929	0	40	num	40		o	conflict:u
+39929	1	33	num	33		n	conflict:a
+39929	2	31	num	31		t	single
+39929	3	26	num	26		h	conflict:o
+39929	4	29	num	29		a	conflict:e
+39929	5	39	num	39		t	agrees
+39929	6	16	num	16		a	conflict:h
+39929	7	5	num	5		c	conflict:a
+39929	8	41	num	41		c	conflict:a
+39929	9	3	num	3		o	conflict:a
+39929	10	9	num	9		u	conflict:r
+39929	11	7	num	7		n	conflict:i
+39929	12	26	num	26		t	conflict:o
+39929	13	38	num	38		f	conflict:u
+39929	14	27	num	27		o	conflict:n
+39929	15	29	num	29		r	conflict:e
+39929	16	>	clear				clear
+39929	17	IO	num	10		i	conflict:f
+39929	18	28	num	28		f	conflict:o
+39929	19	35	num	35		h	conflict:r
+39929	20	21	num	21		e	conflict:i
+39929	21	10	num	10		h	conflict:f
+39929	22	16	num	16		a	conflict:h
+39929	23	13	num	13		d	conflict:e
+39929	24	14	num	14		o	conflict:t
+39929	25	5	num	5		r	conflict:a
+39933	0	8	num	8			null-or-unaligned
+39933	1	26	num	26			null-or-unaligned
+39933	2	37	num	37			null-or-unaligned
+39933	3	6	num	6			null-or-unaligned
+39933	4	13	num	13			null-or-unaligned
+39933	5	35	num	35		h	conflict:r
+39933	6	34,	num	34			null-or-unaligned
+39933	7	14	num	14			null-or-unaligned
+39933	8	13	num	13		e	agrees
+39933	9	16	num	16		h	agrees
+39933	10	3	num	3		a	agrees
+39933	11	36	num	36		s	agrees
+39933	12	5	num	5		a	agrees
+39933	13	1	num	1			null-or-unaligned
+39933	14	37	num	37		r	agrees
+39933	15	11	num	11		e	agrees
+39933	16	17	num	17		g	agrees
+39933	17	19	num	19		i	agrees
+39933	18	24	num	24		m	conflict:e
+39933	19	13	num	13		e	agrees
+39933	20	27	num	27		n	agrees
+39933	21	39	num	39		t	agrees
+39933	22	28	num	28		o	agrees
+39933	23	10	num	10		f	agrees
+39933	24	14	num	14			null-or-unaligned
+39937	0	28	num	28		o	agrees
+39937	1	27	num	27		n	agrees
+39937	2	13	num	13		e	agrees
+39937	3	36	num	36		f	agrees
+39937	4	41	num	41		t	conflict:a
+39937	5	12	num	12		r	agrees
+39937	6	13	num	13		e	agrees
+39937	7	25	num	25		l	agrees
+39937	8	23	num	23		l	agrees
+39937	9	28	num	28		o	agrees
+39937	10	43	num	43		w	agrees
+39937	11	11	num	11		e	agrees
+39937	12	36	num	36		s	agrees
+39937	13	21	num	21		i	agrees
+39937	14	27	num	27		n	agrees
+39937	15	3^	doubtful			t	doubtful
+39937	16	28	num	28		o	agrees
+39937	17	43	num	43		w	agrees
+39937	18	27	num	27		n	agrees
+39937	19	13,	num	13		e	agrees
+39937	20	45	num	45		w	agrees
+39937	21	26	num	26		o	agrees
+39937	22	38	num	38		u	agrees
+39941	0	25	num	25			null-or-unaligned
+39941	1	6	num	6			null-or-unaligned
+39941	2	15	num	15		t	conflict:e
+39941	3	40	num	40		h	conflict:u
+39941	4	3	num	3		e	conflict:a
+39941	5	37	num	37		b	conflict:r
+39941	6	8	num	8		e	conflict:d
+39941	7	41	num	41		l	conflict:a
+39941	8	13	num	13		t	conflict:e
+39941	9	11	num	11		o	conflict:e
+39941	10	4	num	4		f	conflict:b
+39941	11	13	num	13		t	conflict:e
+39941	12	34	num	34		h	conflict:s
+39941	13	41	num	41		e	conflict:a
+39941	14	28	num	28		m	conflict:o
+39941	15	10	num	10		t	conflict:f
+39941	16	41	num	41		o	conflict:a
+39941	17	14	num	14		t	agrees
+39941	18	13	num	13		h	conflict:e
+39941	19	24	num	24		e	agrees
+39941	20	39	num	39		t	agrees
+39941	21	26	num	26		o	agrees
+39941	22	41	num	41		w	conflict:a
+39941	23	14	num	14		e	conflict:t
+39941	24	13	num	13		r	conflict:e
+39945	0	39	num	39		t	agrees
+39945	1	26	num	26			null-or-unaligned
+39945	2	43	num	43			null-or-unaligned
+39945	3	13	num	13			null-or-unaligned
+39945	4	35.	num	35			null-or-unaligned
+39945	5	But	clear				clear
+39945	6	I	num	1		h	single
+39945	7	feare,	clear				clear
+39945	8	the	clear				clear
+39945	9	matter	clear				clear
+39945	10	of	clear				clear
+39945	11	41	num	41		a	agrees
+39945	12	14	num	14		t	agrees
+39945	13	3	num	3		p	conflict:a
+39945	14	39	num	39		l	conflict:t
+39945	15	33	num	33		a	single
+39945	16	23	num	23		c	conflict:l
+39945	17	5	num	5		e	conflict:a
+39945	18	7	num	7		i	single
+39945	19	13	num	13		s	conflict:e
+39945	20	19	num	19		n	conflict:i
+39945	21	36	num	36		o	conflict:s
+39945	22	29	num	29		t	conflict:e

@@ -1,0 +1,61 @@
+value	meaning	votes	grade	source
+0	i	2	M	printed interlinear, no majority (1/2 for top reading)
+1	e	7	M	printed interlinear, no majority (3/7 for top reading)
+2	b	49	C	printed interlinear, 33/49 agreeing places across the pool
+3	a	189	C	printed interlinear, 143/189 agreeing places across the pool
+4	b	26	C	printed interlinear, 18/26 agreeing places across the pool
+5	a	154	C	printed interlinear, 85/154 agreeing places across the pool
+6	d	115	C	printed interlinear, 82/115 agreeing places across the pool
+7	c	73	C	printed interlinear, 51/73 agreeing places across the pool
+8	d	52	C	printed interlinear, 28/52 agreeing places across the pool
+9	c	43	C	printed interlinear, 25/43 agreeing places across the pool
+10	f	79	C	printed interlinear, 52/79 agreeing places across the pool
+11	e	367	H	Tomokiyo thurloe.htm, Henry Cromwell (1658-1859), E=11/13
+12	f	42	M	printed interlinear, no majority (16/42 for top reading)
+13	e	196	H	Tomokiyo thurloe.htm, Henry Cromwell (1658-1859), E=11/13
+14	h	165	C	printed interlinear, 112/165 agreeing places across the pool
+15	g	52	C	printed interlinear, 39/52 agreeing places across the pool
+16	h	94	C	printed interlinear, 50/94 agreeing places across the pool
+17	g	30	C	printed interlinear, 16/30 agreeing places across the pool
+18	k	22	C	printed interlinear, 13/22 agreeing places across the pool
+19	i	184	C	printed interlinear, 139/184 agreeing places across the pool
+20	k	11	M	printed interlinear, no majority (5/11 for top reading)
+21	i	97	C	printed interlinear, 54/97 agreeing places across the pool
+22	m	76	C	printed interlinear, 58/76 agreeing places across the pool
+23	l	115	C	printed interlinear, 81/115 agreeing places across the pool
+24	m	37	C	printed interlinear, 22/37 agreeing places across the pool
+25	l	65	M	printed interlinear, no majority (29/65 for top reading)
+26	o	250	C	printed interlinear, 196/250 agreeing places across the pool
+27	n	208	C	printed interlinear, 155/208 agreeing places across the pool
+28	o	112	C	printed interlinear, 66/112 agreeing places across the pool
+29	n	115	C	printed interlinear, 58/115 agreeing places across the pool
+30	q	5	C	printed interlinear, 3/5 agreeing places across the pool
+31	p	53	C	printed interlinear, 36/53 agreeing places across the pool
+32	q	3	M	printed interlinear, no majority (1/3 for top reading)
+33	p	28	M	printed interlinear, no majority (14/28 for top reading)
+34	s	202	C	printed interlinear, 122/202 agreeing places across the pool
+35	r	177	C	printed interlinear, 140/177 agreeing places across the pool
+36	f	87	C	printed interlinear, 44/87 agreeing places across the pool
+37	r	76	C	printed interlinear, 43/76 agreeing places across the pool
+38	u	122	C	printed interlinear, 87/122 agreeing places across the pool
+39	t	246	C	printed interlinear, 173/246 agreeing places across the pool
+40	u	51	C	printed interlinear, 29/51 agreeing places across the pool
+41	t	149	C	printed interlinear, 94/149 agreeing places across the pool
+42	x	3	C	printed interlinear, 2/3 agreeing places across the pool
+43	w	56	C	printed interlinear, 54/56 agreeing places across the pool
+44	x	1	M	printed interlinear, no majority (1/1 for top reading)
+45	w	38	C	printed interlinear, 21/38 agreeing places across the pool
+47	y	57	C	printed interlinear, 42/57 agreeing places across the pool
+49	y	36	C	printed interlinear, 20/36 agreeing places across the pool
+56	d	2	C	printed interlinear, 2/2 agreeing places across the pool
+129	n	1	M	printed interlinear, no majority (1/1 for top reading)
+139	g	1	M	printed interlinear, no majority (1/1 for top reading)
+228	loft	1	M	printed interlinear, no majority (1/1 for top reading)
+255	hadafinegame	1	M	printed interlinear, no majority (1/1 for top reading)
+527	refentanoutwar	1	M	printed interlinear, no majority (1/1 for top reading)
+723	c	1	M	printed interlinear, no majority (1/1 for top reading)
+# single-capital name codes (not enciphered numerals; occurrence count from a plain regex, not a vote)
+A	Henry Cromwell	10	H	Tomokiyo thurloe.htm, Henry Cromwell (1658-1859); literal capital, not enciphered
+O	Lambert	1	H	Tomokiyo thurloe.htm, Henry Cromwell (1658-1859); literal capital, not enciphered
+V	Desbrowe	3	H	Tomokiyo thurloe.htm, Henry Cromwell (1658-1859); literal capital, not enciphered
+Z	Protector	7	H	Tomokiyo thurloe.htm, Henry Cromwell (1658-1859); literal capital, not enciphered

@@ -1,0 +1,743 @@
+# Reading of Thurloe letter P23 (Lord Fauconberg to H. Cromwell, 1658-11-23) from the
+# decipherment Birch prints beside the cipher (1742), aligned by
+# tools/interlinear_align.py; combined-pool values from key_fauconberg.tsv kept at H.
+# Regenerate: python3 decode_fauconberg.py
+# 733 cipher/clear tokens, alignment status: {'clear': 29, 'conflict': 456, 'doubtful': 17, 'agrees': 155, 'null-or-unaligned': 72, 'single': 4}
+# Matched control: none run -- nothing cryptanalytic is claimed (CLAUDE.md rule 3
+# applies only to a cryptanalytic negative; this is an alignment of a printed plaintext).
+#
+# Columns: cipher_line  idx  raw  kind  value  repair  plain_chunk  status
+#==========================================================================
+49483	0	Shdburn	clear				clear
+49483	1	fltion	clear				clear
+49483	2	from	clear				clear
+49483	3	aI1	clear				clear
+49483	4	Parties-	clear				clear
+49483	5	39	num	39		h	conflict:i
+49483	6	16	num	16		o	conflict:a
+49483	7	11	num	11		n	conflict:t
+49483	8	47.41	doubtful			they	doubtful
+49483	9	i4.5	doubtful			thathateyou	doubtful
+49483	10	39	num	39		f	conflict:i
+49483	11	l6	num	16		e	conflict:a
+49483	12	3	num	3		a	agrees
+49483	13	4i	num	41		r	conflict:t
+49483	14	11	num	11		e	conflict:t
+49483	15	49	num	49		y	conflict:a
+49483	16	26	num	26		o	conflict:i
+49483	17	38	num	38		u	agrees
+49483	18	12	num	12		t	conflict:c
+49483	19	n	clear				clear
+49483	20	5	num	5		o	conflict:a
+49487	0	3j	doubtful				doubtful
+49487	1	13	num	13			null-or-unaligned
+49487	2	47	num	47			null-or-unaligned
+49487	3	28	num	28		a	agrees
+49487	4	40	num	40		n	agrees
+49487	5	39	num	39		d	conflict:i
+49487	6	28	num	28		t	conflict:a
+49487	7	26,	num	26		h	conflict:i
+49487	8	5	num	5		e	conflict:a
+49487	9	27	num	27		r	conflict:n
+49487	10	6	num	6		e	conflict:d
+49487	11	39	num	39		f	conflict:i
+49487	12	14	num	14		o	conflict:e
+49487	13	13	num	13		r	conflict:e
+49487	14	3J	doubtful				doubtful
+49487	15	10	num	10		e	agrees
+49487	16	26	num	26		o	conflict:i
+49487	17	35	num	35		p	conflict:d
+49487	18	II	num	11		p	conflict:t
+49487	19	28	num	28		o	conflict:a
+49487	20	33	num	33		i	conflict:p
+49487	21	31	num	31		e	agrees
+49487	22	26	num	26		i	agrees
+49487	23	36	num	36		t	conflict:e
+49491	0	II	num	11		t	agrees
+49491	1	19	num	19		h	conflict:t
+49491	2	41.	num	41		e	conflict:t
+49491	3	41	num	41		y	conflict:t
+49491	4	14	num	14		t	conflict:e
+49491	5	13	num	13		h	conflict:e
+49491	6	49	num	49		a	agrees
+49491	7	39	num	39		t	conflict:i
+49491	8	16	num	16		l	conflict:a
+49491	9	3	num	3		o	conflict:a
+49491	10	41	num	41		v	conflict:t
+49491	11	25	num	25		e	conflict:h
+49491	12	26	num	26		y	conflict:i
+49491	13	40	num	40		o	conflict:n
+49491	14	13	num	13		u	conflict:e
+49491	15	49	num	49		h	conflict:a
+49491	16	28	num	28		a	agrees
+49491	17	38	num	38		v	agrees
+49491	18	l6	num	16		e	conflict:a
+49491	19	5	num	5		a	agrees
+49491	20	38	num	38		p	conflict:u
+49491	21	II	num	11		p	conflict:t
+49491	22	$	clear				clear
+49491	23	33	num	33		r	conflict:p
+49495	0	31	num	31		n	conflict:e
+49495	1	35	num	35		d	agrees
+49495	2	11	num	11		n	conflict:t
+49495	3	16	num	16		o	conflict:a
+49495	4	13	num	13		r	conflict:e
+49495	5	29	num	29		h	agrees
+49495	6	34	num	34		e	agrees
+49495	7	19	num	19		n	conflict:t
+49495	8	28	num	28		r	conflict:a
+49495	9	27	num	27		y	conflict:n
+49495	10	36,	num	36		c	conflict:e
+49495	11	27	num	27		r	conflict:n
+49495	12	11	num	11		o	conflict:t
+49495	13	49	num	49		m	conflict:a
+49495	14	39	num	39		w	conflict:i
+49495	15	14	num	14		e	agrees
+49495	16	13	num	13		l	conflict:e
+49495	17	37	num	37		l	conflict:r
+49495	18	21	num	21		a	conflict:i
+49495	19	35	num	35		r	conflict:d
+49495	20	13	num	13		e	agrees
+49495	21	23	num	23		s	conflict:e
+49495	22	5	num	5		e	conflict:a
+49495	23	27	num	27		c	conflict:n
+49499	0	8	num	8		i	agrees
+49499	1	27	num	27			null-or-unaligned
+49499	2	28	num	28			null-or-unaligned
+49499	3	37	num	37			null-or-unaligned
+49499	4	A.	clear				clear
+49499	5	5	num	5			null-or-unaligned
+49499	6	3J	doubtful				doubtful
+49499	7	11	num	11			null-or-unaligned
+49499	8	34	num	34			null-or-unaligned
+49499	9	13	num	13			null-or-unaligned
+49499	10	7	num	7		f	conflict:o
+49499	11	38	num	38			null-or-unaligned
+49499	12	37	num	37			null-or-unaligned
+49499	13	13	num	13			null-or-unaligned
+49499	14	21	num	21		i	agrees
+49499	15	10	num	10		e	agrees
+49499	16	34	num	34			null-or-unaligned
+49499	17	13	num	13		p	conflict:e
+49499	18	33	num	33		a	conflict:p
+49499	19	3	num	3		r	conflict:a
+49499	20	37	num	37		a	conflict:r
+49499	21	5	num	5		t	conflict:a
+49499	22	39	num	39		e	conflict:i
+49499	23	JI	clear				clear
+49499	24	6.	num	6		d	agrees
+49503	0	39	num	39		i	agrees
+49503	1	lS	clear				clear
+49503	2	l9	num	19		s	conflict:t
+49503	3	34	num	34		t	conflict:e
+49503	4	B.	clear				clear
+49503	5	5	num	5		h	conflict:a
+49503	6	36	num	36		e	agrees
+49503	7	34	num	34		o	conflict:e
+49503	8	38	num	38		n	conflict:u
+49503	9	37	num	37		l	conflict:r
+49503	10	34	num	34		y	conflict:e
+49503	11	A.	clear				clear
+49503	12	19	num	19		r	conflict:t
+49503	13	36	num	36		c	conflict:e
+49503	14	39	num	39		a	conflict:i
+49503	15	16	num	16		f	conflict:a
+49503	16	11	num	11		o	conflict:t
+49503	17	28	num	28		n	conflict:a
+49503	18	27	num	27		h	conflict:n
+49503	19	13	num	13		e	agrees
+49503	20	25	num	25		c	conflict:h
+49503	21	47	num	47		a	conflict:l
+49503	22	35	num	35		n	conflict:d
+49503	23	13	num	13		l	conflict:e
+49507	0	_	clear				clear
+49507	1	5	num	5		t	conflict:a
+49507	2	34	num	34			null-or-unaligned
+49507	3	2-8	doubtful				doubtful
+49507	4	27	num	27		h	conflict:n
+49507	5	16	num	16		a	agrees
+49507	6	11	num	11		t	agrees
+49507	7	13	num	13			null-or-unaligned
+49507	8	9	num	9		m	conflict:c
+49507	9	3	num	3		a	agrees
+49507	10	29	num	29			null-or-unaligned
+49507	11	25	num	25			null-or-unaligned
+49507	12	n	clear				clear
+49507	13	5	num	5			null-or-unaligned
+49507	14	35	num	35		k	conflict:d
+49507	15	27	num	27		e	conflict:n
+49507	16	13	num	13		s	conflict:e
+49507	17	41	num	41		p	conflict:t
+49507	18	14	num	14		r	conflict:e
+49507	19	5	num	5		o	conflict:a
+49507	20	39	num	39		t	conflict:i
+49507	21	24	num	24		e	agrees
+49507	22	3	num	3		s	conflict:a
+49507	23	18	num	18		t	conflict:o
+49507	24	13	num	13		o	conflict:e
+49507	25	34	num	34		r	conflict:e
+49511	0	Z.	clear				clear
+49511	1	4	num	4		b	conflict:a
+49511	2	3	num	3		a	agrees
+49511	3	9	num	9		c	agrees
+49511	4	20	num	20		k	conflict:a
+49511	5	43	num	43		w	agrees
+49511	6	5	num	5		a	agrees
+49511	7	37	num	37		r	agrees
+49511	8	6	num	6		d	agrees
+49511	9	21	num	21		i	agrees
+49511	10	27	num	27		n	agrees
+49511	11	19	num	19		i	conflict:t
+49511	12	41.	num	41		t	agrees
+49515	0	5	num	5		s	conflict:a
+49515	1	34	num	34		t	conflict:e
+49515	2	39	num	39		o	conflict:i
+49515	3	2^	doubtful			ouraffaires	doubtful
+49515	4	26	num	26		t	conflict:i
+49515	5	40	num	40		h	conflict:n
+49515	6	34	num	34		e	agrees
+49515	7	5	num	5		f	conflict:a
+49515	8	20	num	20		a	single
+49515	9	12	num	12		c	agrees
+49515	10	3	num	3		t	conflict:a
+49515	11	21	num	21		i	agrees
+49515	12	35	num	35		o	conflict:d
+49515	13	13	num	13		u	conflict:e
+49515	14	34,	num	34		s	conflict:e
+49515	15	39	num	39		p	conflict:i
+49515	16	16	num	16		a	agrees
+49515	17	11	num	11		r	conflict:t
+49515	18	12	num	12		t	conflict:c
+49515	19	3	num	3		y	conflict:a
+49515	20	9	num	9		d	conflict:c
+49515	21	39	num	39		i	agrees
+49515	22	21	num	21		s	conflict:i
+49515	23	26	num	26		c	conflict:i
+49515	24	40'	num	40		o	conflict:n
+49519	0	34	num	34		e	agrees
+49519	1	31	num	31		m	conflict:e
+49519	2	3	num	3		i	conflict:a
+49519	3	37	num	37		e	conflict:r
+49519	4	39	num	39		l	conflict:i
+49519	5	49	num	49		v	conflict:a
+49519	6	6	num	6		e	conflict:d
+49519	7	19	num	19		s	conflict:t
+49519	8	34	num	34		n	conflict:e
+49519	9	9	num	9		o	conflict:c
+49519	10	26	num	26		t	conflict:i
+49519	11	40	num	40		s	conflict:n
+49519	12	11	num	11		t	agrees
+49519	13	35	num	35		r	conflict:d
+49519	14	21	num	21		o	conflict:i
+49519	15	27	num	27		n	agrees
+49519	16	17	num	17		g	conflict:a
+49519	17	41	num	41		e	conflict:t
+49519	18	16	num	16		n	conflict:a
+49519	19	n	clear				clear
+49519	20	24	num	24		o	conflict:e
+49519	21	34	num	34		u	conflict:e
+49519	22	13	num	13		g	conflict:e
+49519	23	23	num	23		h	conflict:e
+49523	0	40	num	40			null-or-unaligned
+49523	1	II	num	11		t	agrees
+49523	2	36	num	36		o	conflict:e
+49523	3	27	num	27		c	conflict:n
+49523	4	28	num	28		a	agrees
+49523	5	41	num	41		r	conflict:t
+49523	6	26	num	26		r	conflict:i
+49523	7	39	num	39		y	conflict:i
+49523	8	35	num	35		o	conflict:d
+49523	9	28	num	28		n	conflict:a
+49523	10	29	num	29		d	conflict:h
+49523	11	15	num	15		e	conflict:n
+49523	12	II	num	11		l	conflict:t
+49523	13	29	num	29		i	conflict:h
+49523	14	26	num	26		g	conflict:i
+49523	15	40	num	40		n	agrees
+49523	16	17	num	17		e	conflict:a
+49523	17	14	num	14		s	conflict:e
+49523	18	41	num	41		a	conflict:t
+49523	19	26	num	26		i	agrees
+49523	20	7	num	7		o	agrees
+49523	21	5	num	5		n	conflict:a
+49523	22	36	num	36		e	agrees
+49523	23	3449	doubtful				doubtful
+49527	0	26	num	26			null-or-unaligned
+49527	1	9	num	9			null-or-unaligned
+49527	2	6	num	6			null-or-unaligned
+49527	3	13	num	13			null-or-unaligned
+49527	4	34	num	34			null-or-unaligned
+49527	5	19	num	19			null-or-unaligned
+49527	6	17	num	17		a	agrees
+49527	7	29	num	29		r	conflict:h
+49527	8	11	num	11		e	conflict:t
+49527	9	34	num	34		t	conflict:e
+49527	10	5	num	5		r	conflict:a
+49527	11	23	num	23		e	agrees
+49527	12	26	num	26			null-or-unaligned
+49527	13	29	num	29		a	conflict:h
+49527	14	11	num	11		t	agrees
+49527	15	3	num	3		i	conflict:a
+49527	16	15	num	15		n	agrees
+49527	17	13	num	13		g	conflict:e
+49527	18	39	num	39		w	conflict:i
+49527	19	35	num	35		i	conflict:d
+49527	20	13	num	13		t	conflict:e
+49527	21	5	num	5		h	conflict:a
+49527	22	41	num	41		t	agrees
+49527	23	19	num	19		h	conflict:t
+49527	24	27	num	27		e	conflict:n
+49531	0	l7	num	17			null-or-unaligned
+49531	1	45	num	45			null-or-unaligned
+49531	2	*9	doubtful				doubtful
+49531	3	41	num	41		m	conflict:t
+49531	4	14	num	14		e	agrees
+49531	5	41	num	41			null-or-unaligned
+49531	6	16	num	16		n	conflict:a
+49531	7	11	num	11		t	agrees
+49531	8	I.	num	1		h	single
+49531	9	22	num	22		e	agrees
+49531	10	13	num	13		a	conflict:e
+49531	11	29	num	29		n	conflict:h
+49531	12	39	num	39		d	conflict:i
+49531	13	14	num	14		t	conflict:e
+49531	14	13	num	13		h	conflict:e
+49531	15	D.	clear				clear
+49531	16	3	num	3		a	agrees
+49531	17	27	num	27		t	conflict:n
+49531	18	8	num	8		r	conflict:i
+49531	19	41	num	41		a	conflict:t
+49531	20	14	num	14		b	conflict:e
+49531	21	3	num	3		b	conflict:a
+49531	22	3^	doubtful				doubtful
+49531	23	35	num	35		l	conflict:d
+49531	24	3	num	3		e	conflict:a
+49535	0	4	num	4		a	agrees
+49535	1	2	num	2		n	agrees
+49535	2	25	num	25			null-or-unaligned
+49535	3	11,	num	11			null-or-unaligned
+49535	4	3	num	3			null-or-unaligned
+49535	5	29	num	29			null-or-unaligned
+49535	6	6	num	6		d	agrees
+49535	7	43	num	43		w	agrees
+49535	8	13	num	13		e	agrees
+49535	9	11	num	11		e	conflict:t
+49535	10	14	num	14		h	conflict:e
+49535	11	13	num	13		e	agrees
+49535	12	3	num	3		a	agrees
+49535	13	37	num	37		r	agrees
+49535	14	11	num	11		e	conflict:t
+49535	15	43	num	43		w	agrees
+49535	16	19	num	19		i	conflict:t
+49535	17	25	num	25		l	conflict:h
+49535	18	33	num	33		p	agrees
+49535	19	38	num	38		u	agrees
+49535	20	41	num	41		t	agrees
+49535	21	21	num	21		i	agrees
+49535	22	39	num	39		t	conflict:i
+49535	23	41	num	41		t	agrees
+49535	24	26	num	26		o	conflict:i
+49539	0	5	num	5		a	agrees
+49539	1	33	num	33		p	agrees
+49539	2	40	num	40		u	conflict:n
+49539	3	34	num	34		f	conflict:e
+49539	4	14	num	14		h	conflict:e
+49539	5	39	num	39		t	conflict:i
+49539	6	^	clear				clear
+49539	7	5	num	5		h	conflict:a
+49539	8	4	num	4		a	agrees
+49539	9	45	num	45		t	conflict:c
+49539	10	5	num	5		w	conflict:a
+49539	11	47-	doubtful			ay	doubtful
+49543	0	O.	num	0		i	single
+49543	1	5	num	5		a	agrees
+49543	2	27	num	27		r	conflict:n
+49543	3	6	num	6		e	conflict:d
+49543	4	V.	clear				clear
+49543	5	5	num	5		t	conflict:a
+49543	6	35	num	35		h	conflict:d
+49543	7	13	num	13		e	agrees
+49543	8	41	num	41		n	conflict:t
+49543	9	14	num	14		e	agrees
+49543	10	XI	clear				clear
+49543	11	16	num	16		a	agrees
+49543	12	11	num	11		d	conflict:t
+49543	13	5	num	5		s	conflict:a
+49543	14	6	num	6		k	conflict:d
+49543	15	36.	num	36		e	agrees
+49543	16	Z.	clear				clear
+49543	17	18	num	18		e	conflict:o
+49543	18	11	num	11		p	conflict:t
+49543	19	13	num	13		s	conflict:e
+49543	20	31	num	31		h	conflict:e
+49543	21	36	num	36		i	conflict:e
+49543	22	14	num	14		s	conflict:e
+49543	23	21	num	21		g	conflict:i
+49547	0	34	num	34			null-or-unaligned
+49547	1	!7	doubtful				doubtful
+49547	2	35	num	35		b	conflict:d
+49547	3	28	num	28		u	conflict:a
+49547	4	38	num	38		t	conflict:u
+49547	5	27	num	27		t	conflict:n
+49547	6	8,	num	8		r	conflict:i
+49547	7	2	num	2		u	conflict:n
+49547	8	40	num	40		l	conflict:n
+49547	9	39	num	39		y	conflict:i
+49547	10	39	num	39		g	conflict:i
+49547	11	3J	doubtful				doubtful
+49547	12	38	num	38		e	conflict:u
+49547	13	23	num	23		t	conflict:e
+49547	14	49	num	49		s	conflict:a
+49547	15	15	num	15		n	agrees
+49547	16	13	num	13		o	conflict:e
+49547	17	39	num	39		n	conflict:i
+49547	18	36	num	36		e	agrees
+49547	19	29	num	29		o	conflict:h
+49547	20	26	num	26		f	conflict:i
+49547	21	27	num	27		t	conflict:n
+49547	22	13	num	13		h	conflict:e
+49547	23	28	num	28		e	conflict:a
+49547	24	10	num	10		m	conflict:e
+49556	0	39	num	39		r	conflict:i
+49556	1	\6	doubtful			things	doubtful
+49556	2	13	num	13		r	conflict:e
+49556	3	22,	num	22		u	conflict:e
+49556	4	12	num	12		n	conflict:c
+49556	5	26	num	26		i	agrees
+49556	6	35	num	35		n	conflict:d
+49556	7	41	num	41		t	agrees
+49556	8	14	num	14		h	conflict:e
+49556	9	19	num	19		e	conflict:t
+49556	10	29	num	29		f	conflict:h
+49556	11	17	num	17		a	agrees
+49556	12	34	num	34		m	conflict:e
+49556	13	37	num	37		e	conflict:r
+49556	14	28	num	28		c	conflict:a
+49556	15	29	num	29		h	agrees
+49556	16	21	num	21		a	conflict:i
+49556	17	27	num	27		n	agrees
+49556	18	39	num	39		n	conflict:i
+49556	19	14	num	14		e	agrees
+49556	20	13	num	13		l	conflict:e
+49556	21	36	num	36		a	conflict:e
+49556	22	3	num	3		t	conflict:a
+49556	23	22<J-v^W*	clear				clear
+49560	0	13	num	13		e	agrees
+49560	1	9	num	9		d	conflict:c
+49560	2	14	num	14		b	conflict:e
+49560	3	5	num	5		y	conflict:a
+49560	4	29	num	29		t	conflict:h
+49560	5	27	num	27		h	conflict:n
+49560	6	11	num	11		e	conflict:t
+49560	7	25	num	25		f	conflict:h
+49560	8	22	num	22		e	agrees
+49560	9	5	num	5		m	conflict:a
+49560	10	27	num	27		e	conflict:n
+49560	11	3	num	3		h	conflict:a
+49560	12	15	num	15		a	conflict:n
+49560	13	13	num	13		n	conflict:e
+49560	14	6	num	6		d	agrees
+49560	15	2	num	2		s	conflict:n
+49560	16	49	num	49		a	agrees
+49560	17	39	num	39		s	conflict:i
+49560	18	16	num	16		f	conflict:a
+49560	19	11	num	11		o	conflict:t
+49560	20	34	num	34		r	conflict:e
+49560	21	5	num	5		m	conflict:a
+49560	22	22	num	22		e	agrees
+49560	23	13	num	13		r	conflict:e
+49560	24	16	num	16		l	conflict:a
+49560	25	3	num	3		y	conflict:a
+49564	0	29	num	29			null-or-unaligned
+49564	1	6	num	6			null-or-unaligned
+49564	2	36	num	36			null-or-unaligned
+49564	3	5	num	5		a	agrees
+49564	4	34	num	34		n	conflict:e
+49564	5	J2	doubtful				doubtful
+49564	6	26	num	26			null-or-unaligned
+49564	7	35	num	35		d	agrees
+49564	8	24	num	24			null-or-unaligned
+49564	9	11	num	11		t	agrees
+49564	10	37	num	37		r	agrees
+49564	11	25	num	25		u	conflict:h
+49564	12	47;	num	47		l	agrees
+49564	13	3	num	3		y	conflict:a
+49564	14	29	num	29			null-or-unaligned
+49564	15	6	num	6			null-or-unaligned
+49564	16	41	num	41		t	agrees
+49564	17	35	num	35			null-or-unaligned
+49564	18	38	num	38			null-or-unaligned
+49564	19	25	num	25		h	agrees
+49564	20	47	num	47		i	conflict:l
+49564	21	B.	clear				clear
+49564	22	39	num	39		n	conflict:i
+49564	23	16	num	16		k	conflict:a
+49564	24	21	num	21		s	conflict:i
+49568	0	27	num	27		g	conflict:n
+49568	1	18	num	18		w	conflict:o
+49568	2	36	num	36		o	conflict:e
+49568	3	29	num	29		u	conflict:h
+49568	4	26	num	26		l	conflict:i
+49568	5	39	num	39		d	conflict:i
+49568	6	14	num	14		c	conflict:e
+49568	7	21	num	21		o	conflict:i
+49568	8	27	num	27		n	agrees
+49568	9	17	num	17		d	conflict:a
+49568	10	45	num	45		u	conflict:c
+49568	11	26	num	26		c	conflict:i
+49568	12	38	num	38		e	conflict:u
+49568	13	25	num	25		t	conflict:h
+49568	14	6	num	6		o	conflict:d
+49568	15	9	num	9		p	conflict:c
+49568	16	28	num	28		u	conflict:a
+49568	17	27	num	27		b	conflict:n
+49568	18	6	num	6		h	conflict:d
+49568	19	40	num	40		e	conflict:n
+49568	20	7	num	7		k	conflict:o
+49568	21	13	num	13		g	conflict:e
+49568	22	39	num	39		o	conflict:i
+49568	23	28	num	28		o	conflict:a
+49568	24	31	num	31		d	conflict:e
+49571	0	98	num	98			null-or-unaligned
+49571	1	4	num	4			null-or-unaligned
+49571	2	25	num	25			null-or-unaligned
+49571	3	19	num	19			null-or-unaligned
+49571	4	9	num	9		m	conflict:c
+49571	5	18	num	18		o	agrees
+49571	6	15	num	15		r	conflict:n
+49571	7	28	num	28		e	conflict:a
+49571	8	26	num	26		t	conflict:i
+49571	9	6	num	6		h	conflict:d
+49571	10	24	num	24		e	agrees
+49571	11	26	num	26		n	conflict:i
+49571	12	27	num	27		f	conflict:n
+49571	13	II	num	11		o	conflict:t
+49571	14	39	num	39		m	conflict:i
+49571	15	16	num	16		e	conflict:a
+49571	16	II	num	11		a	conflict:t
+49571	17	29	num	29		t	conflict:h
+49571	18	34	num	34		t	conflict:e
+49571	19	26	num	26		e	conflict:i
+49571	20	24	num	24		m	conflict:e
+49571	21	13	num	13		p	conflict:e
+49571	22	5	num	5		t	conflict:a
+49571	23	41	num	41		o	conflict:t
+49571	24	39	num	39		f	conflict:i
+49575	0	11	num	11		t	agrees
+49575	1	24	num	24			null-or-unaligned
+49575	2	31	num	31		h	conflict:e
+49575	3	41	num	41			null-or-unaligned
+49575	4	28	num	28			null-or-unaligned
+49575	5	10	num	10		e	agrees
+49575	6	39	num	39		i	agrees
+49575	7	16	num	16		r	conflict:a
+49575	8	11	num	11			null-or-unaligned
+49575	9	21	num	21		s	conflict:i
+49575	10	35	num	35			null-or-unaligned
+49575	11	36,	num	36		i	conflict:e
+49575	12	21	num	21		f	conflict:i
+49575	13	10	num	10		i	conflict:e
+49575	14	19	num	19		t	agrees
+49575	15	41	num	41		p	conflict:t
+49575	16	33	num	33		l	conflict:p
+49575	17	23	num	23		e	agrees
+49575	18	13	num	13		a	conflict:e
+49575	19	5	num	5		f	conflict:a
+49575	20	34	num	34		e	agrees
+49575	21	11	num	11		g	conflict:t
+49575	22	17	num	17		o	conflict:a
+49575	23	26	num	26		d	conflict:i
+49579	0	8	num	8		t	conflict:i
+49579	1	41	num	41		o	conflict:t
+49579	2	26	num	26		m	conflict:i
+49579	3	22	num	22		a	conflict:e
+49579	4	5	num	5		k	conflict:a
+49579	5	20	num	20		e	conflict:a
+49579	6	11	num	11		i	conflict:t
+49579	7	19	num	19		t	agrees
+49579	8	41	num	41		u	conflict:t
+49579	9	38	num	38		n	conflict:u
+49579	10	29	num	29		f	conflict:h
+49579	11	34	num	34		u	conflict:e
+49579	12	40	num	40		c	conflict:n
+49579	13	9	num	9		c	agrees
+49579	14	7	num	7		e	conflict:o
+49579	15	11	num	11		l	conflict:t
+49579	16	36	num	36		s	conflict:e
+49579	17	10	num	10		f	conflict:e
+49579	18	38	num	38		u	agrees
+49579	19	23.	num	23		l	conflict:e
+49583	0	Z.	clear				clear
+49583	1	24	num	24		e	agrees
+49583	2	3	num	3		a	agrees
+49583	3	8	num	8		i	agrees
+49583	4	11	num	11		p	conflict:t
+49583	5	5	num	5		e	conflict:a
+49583	6	36	num	36		e	agrees
+49583	7	31	num	31		c	conflict:e
+49583	8	13	num	13		h	conflict:e
+49583	9	11	num	11		t	agrees
+49583	10	7	num	7		o	agrees
+49583	11	16	num	16		a	agrees
+49583	12	39	num	39		l	conflict:i
+49583	13	28	num	28		l	conflict:a
+49583	14	5	num	5		t	conflict:a
+49583	15	25	num	25		h	agrees
+49583	16	23	num	23		e	agrees
+49583	17	39	num	39		o	conflict:i
+49583	18	16	num	16		f	conflict:a
+49583	19	11	num	11		f	conflict:t
+49583	20	26	num	26		i	agrees
+49583	21	12	num	12		c	agrees
+49583	22	10	num	10		e	agrees
+49583	23	21	num	21		r	conflict:i
+49583	24	7	num	7		s	conflict:o
+49587	0	n	clear				clear
+49587	1	37	num	37		t	conflict:r
+49587	2	36	num	36		w	conflict:e
+49587	3	23	num	23		i	conflict:e
+49587	4	5	num	5		t	conflict:a
+49587	5	34	num	34		h	conflict:e
+49587	6	4'	num	4		v	conflict:a
+49587	7	i°	num	10		e	agrees
+49587	8	37	num	37		r	agrees
+49587	9	47	num	47		y	conflict:l
+49587	10	8	num	8		g	conflict:i
+49587	11	5	num	5		r	conflict:a
+49587	12	49,	num	49		e	conflict:a
+49587	13	2	num	2		a	conflict:n
+49587	14	38	num	38		t	conflict:u
+49587	15	41	num	41		m	conflict:t
+49587	16	45	num	45		o	conflict:c
+49587	17	19	num	19		d	conflict:t
+49587	18	39	num	39		e	conflict:i
+49587	19	16	num	16		r	conflict:a
+49587	20	40	num	40		a	conflict:n
+49587	21	11	num	11		t	agrees
+49587	22	37	num	37		i	conflict:r
+49587	23	47	num	47		o	conflict:l
+49587	24	17	num	17		n	conflict:a
+49591	0	35	num	35			null-or-unaligned
+49591	1	l3	num	13			null-or-unaligned
+49591	2	3	num	3		a	agrees
+49591	3	4i	num	41		n	conflict:t
+49591	4	22	num	22		d	conflict:e
+49591	5	28	num	28		k	conflict:a
+49591	6	6	num	6		i	conflict:d
+49591	7	13	num	13		n	conflict:e
+49591	8	35	num	35		d	agrees
+49591	9	3	num	3		n	conflict:a
+49591	10	39	num	39		e	conflict:i
+49591	11	21	num	21		f	conflict:i
+49591	12	26	num	26		s	conflict:i
+49591	13	29	num	29		h	agrees
+49591	14	5	num	5		a	agrees
+49591	15	27	num	27		s	conflict:n
+49591	16	6	num	6		c	conflict:d
+49591	17	18	num	18		o	agrees
+49591	18	21	num	21		m	conflict:i
+49591	19	27	num	27		m	conflict:n
+49591	20	8	num	8		a	conflict:i
+49591	21	29	num	29		n	conflict:h
+49591	22	n	clear				clear
+49591	23	36,	num	36		d	conflict:e
+49591	24	14	num	14		e	agrees
+49591	25	5	num	5		d	conflict:a
+49594	0	34	num	34		n	conflict:e
+49594	1	7	num	7		o	agrees
+49594	2	28	num	28		t	conflict:a
+49594	3	24	num	24		t	conflict:e
+49594	4	22	num	22		o	conflict:e
+49594	5	5	num	5		g	conflict:a
+49594	6	27	num	27		o	conflict:n
+49594	7	6	num	6		y	conflict:d
+49594	8	11	num	11		e	conflict:t
+49594	9	8	num	8		t	conflict:i
+49594	10	B.	clear				clear
+49594	11	27	num	27		i	conflict:n
+49594	12	26	num	26		n	conflict:i
+49594	13	41	num	41		t	agrees
+49594	14	39	num	39		o	conflict:i
+49594	15	26	num	26		t	conflict:i
+49594	16	15	num	15		h	conflict:n
+49594	17	28	num	28		e	conflict:a
+49594	18	II	num	11		c	conflict:t
+49594	19	47	num	47		o	conflict:l
+49594	20	13	num	13		u	conflict:e
+49594	21	39	num	39		n	conflict:i
+49594	22	19	num	19		t	agrees
+49594	23	29	num	29		r	conflict:h
+49594	24	41	num	41		y	conflict:t
+49598	0	26	num	26			null-or-unaligned
+49598	1	39	num	39		w	conflict:i
+49598	2	16	num	16			null-or-unaligned
+49598	3	11	num	11			null-or-unaligned
+49598	4	7	num	7			null-or-unaligned
+49598	5	28	num	28			null-or-unaligned
+49598	6	38	num	38			null-or-unaligned
+49598	7	29	num	29		h	agrees
+49598	8	39	num	39			null-or-unaligned
+49598	9	3J	doubtful				doubtful
+49598	10	47	num	47		i	conflict:l
+49598	11	45	num	45		c	single
+49598	12	14	num	14		h	conflict:e
+49598	13	21	num	21		i	agrees
+49598	14	716215	doubtful				doubtful
+49598	15	36	num	36		a	conflict:e
+49598	16	34	num	34		f	conflict:e
+49598	17	38	num	38		l	conflict:u
+49598	18	38	num	38		u	agrees
+49598	19	35	num	35		r	conflict:d
+49598	20	11	num	11		e	conflict:t
+49598	21	A	clear				clear
+49602	0	B	clear				clear
+49602	1	28	num	28		i	conflict:a
+49602	2	2	num	2		n	agrees
+49602	3	13	num	13		g	conflict:e
+49602	4	47	num	47		l	agrees
+49602	5	36	num	36		y	conflict:e
+49602	6	38	num	38		u	agrees
+49602	7	27	num	27		n	agrees
+49602	8	45	num	45		l	conflict:c
+49602	9	19	num	19		e	conflict:t
+49602	10	25	num	25		s	conflict:h
+49602	11	23	num	23		h	conflict:e
+49602	12	31	num	31		e	agrees
+49602	13	29	num	29		c	conflict:h
+49602	14	15	num	15		o	conflict:n
+49602	15	25	num	25		u	conflict:h
+49602	16	47	num	47		l	agrees
+49602	17	38	num	38		d	conflict:u
+49602	18	27	num	27		b	conflict:n
+49602	19	23	num	23		e	agrees
+49602	20	13	num	13		m	conflict:e
+49602	21	36	num	36		o	conflict:e
+49602	22	14	num	14		r	conflict:e
+49602	23	13	num	13		e	agrees
+49606	0	11	num	11		i	conflict:t
+49606	1	7	num	7		e	conflict:o
+49606	2	28	num	28		r	conflict:a
+49606	3	38	num	38		v	agrees
+49606	4	25	num	25			null-or-unaligned
+49606	5	6	num	6		i	conflict:d
+49606	6	4	num	4			null-or-unaligned
+49606	7	11	num	11		c	conflict:t
+49606	8	22	num	22		e	agrees
+49606	9	28	num	28		a	agrees
+49606	10	35	num	35		b	conflict:d
+49606	11	13	num	13		l	conflict:e
+49606	12	34	num	34		e	agrees
+49606	13	13	num	13			null-or-unaligned
+49606	14	35	num	35			null-or-unaligned
+49606	15	38	num	38			null-or-unaligned
+49606	16	19	num	19		t	agrees
+49606	17	9	num	9			null-or-unaligned
+49606	18	11	num	11		o	conflict:t
+49606	19	5	num	5			null-or-unaligned
+49606	20	4	num	4			null-or-unaligned
+49606	21	23	num	23		h	conflict:e
+49606	22	13	num	13			null-or-unaligned
+49606	23	39	num	39		i	agrees
+49606	24	28	num	28			null-or-unaligned
+49606	25	14	num	14			null-or-unaligned
+49606	26	21	num	21		m	conflict:i
