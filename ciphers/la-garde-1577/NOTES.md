@@ -257,3 +257,72 @@ this is the same lesson R15 already logged (crop-first workflow needed) recurrin
 `iiif_lines.py`-style local crop cutter (offline, no IIIF fetch needed since the pages are already on disk) run
 once by the orchestrating worker before dispatching passes, handing each subagent only the relevant line-crops
 instead of full pages, is the fix to actually adopt next time, not just note again.
+
+## L4: reconciled transcription and rerun (24 September 2026, LANE R2 worker L4, Sonnet, $4 cap, no subagents, no network)
+
+**Line-id mismatch found before reconciling.** `tools/reconcile_passes.py` aligns witnesses by matching line
+id, but L1's own line numbers did not match pass A's: on 6179 p3, L1 numbered the same five physical lines one
+lower throughout (`p3L5`-`p3L8` vs pass A's `p3L6`-`p3L9`); on 6467, L1 used its own running sub-index
+(`p2L1`-`p2L5`) instead of the manuscript's real line numbers pass A used (`p2L6`-`p2L8`, `p2L10`-`p2L11`,
+with `p2L9` a plain-text line neither cipher run touches). Both are cosmetic (the token *sequence* and every
+page/run's total count match pass A's once re-segmented -- 113/80 for 6179 p2/p3, 27/19 for 6467's two runs),
+not a content disagreement, so this pass wrote `build_v2.py` to reconcile per page (6179) or per cipher run
+(6467) rather than per raw line id: it re-derives each witness's sign sequence for a page/run, aligns it to
+pass A's with `tools/reconcile_passes.py`'s own imported Needleman-Wunsch (`rp.nw`) and `norm_sign`, and adds
+one refinement that tool does not have -- a base-digit majority pass for cells whose literal strings (which
+include the `^`/`~` marks) have no 2-of-3 (or 2-of-2) match but the underlying numeral does (e.g. 6179 p2
+col34: A=`24^`, B=`29^`, L1=`24` -- no literal majority, but A and L1 agree the numeral is 24, so the cell
+writes `24` at conf M with the mark left disputed, instead of standing as an unresolved 3-way split). Also
+handles 6179 pass B, which per L3 never reached p3 or 6467 (stopped over cap): 6179 p2 reconciles 3-way (pass
+A, pass B, L1), 6179 p3 and both 6467 runs reconcile 2-way (pass A, L1).
+
+**Counts** (`python3 build_v2.py`): 6179 p2 113 rows, H 83, M 30 (1 unresolved); 6179 p3 80 rows, H 61, M 19 (6
+unresolved); 6467 run 1 (p2 lines 6-8) 27 rows, H 20, M 7 (1 unresolved); 6467 run 2 (p2 lines 10-11) 19 rows,
+H 14, M 5 (1 unresolved, down from 2 -- see below). 239 rows total, 178 H (74.5%), 61 M, 9 genuinely
+unresolved (no majority at the digit level either): `ciphertext_6179_v2.tsv` p2L28 pos12; p3L6 pos7,8,16;
+p3L7 pos5,6,17; `ciphertext_6467_v2.tsv` p2L7 pos12 (run1), p2L11 pos12 (run2) -- each keeps pass A's own
+reading with the other witness's in `alt` and `note` says `unresolved`, not silently dropped. Also: 4
+witness-only insertions on 6179 (tokens pass B or L1 has that align to no position in pass A -- e.g. a mark
+one pass attached to a neighbour and another gave its own row) and 0 on 6467, appended at the end of each v2
+file with no line/pos (not counted in the totals above; rule 2, nothing repaired silently).
+
+**Image settling.** No PIL/ImageMagick and no network in this brief (the crop tooling used by L1 and L3
+needs one or the other), so the only recourse for the 9 unresolved cells was reading the already-fetched full
+page PNGs directly (`images/06179_p2.png`, `06179_p3.png`, `06467_p2.png`) at their saved resolution, no crop.
+That was legible enough to confirm one cell outright: 6467 run 2 position 8 (pass A's `07` then a
+free-standing `[mark]`, vs L1's merged `07~~`) -- the image shows a small mark distinct from the digit
+following the second `07` on that line, matching pass A's split; `ciphertext_6467_v2.tsv` p2L11 pos8 now
+reads `note=confirmed on images/06467_p2.png (L4): ...` instead of `unresolved`. The other 8 could not be
+called safely at this resolution without a crop/zoom tool -- guessing at exactly the digit pairs (8/18, 9/1,
+2/12, 4/24, 5/3, etc.) both trained passes already flagged as uncertain risked introducing a wrong "reading"
+rather than reporting an honest gap, so they stand as pass A's reading, conf M, `unresolved`, with L1's
+alternative preserved in `alt` for whoever next has a crop tool or zoom capability on this target.
+
+**Solver rerun** (`solve_l2.py --ciphertext-6179 ciphertext_6179_v2.tsv --ciphertext-6467
+ciphertext_6467_v2.tsv`, same fr16-corpus/Marguerite-de-Valois-control setup as L2, both trained on text
+disjoint from the target and control alike):
+
+| Mode | Test A control clean | Test A control 8% noise | Test A target 6179 | Test B control (period 5) | Test B target 6179 | Test C crib (both spellings) |
+|---|---|---|---|---|---|---|
+| overlined numbers folded to base digit (default, N=189, K=25) | 73.5% read, score/tok -2.157 | 48.7% read, -2.329 | no reading, -2.503 (worse than noisy control) | 100% read | no reading, best -3.549 (a23, period 14), gibberish | no consistent sign->letter map |
+| overlined/marked numbers as distinct signs (`--mark-signs`, N=199, K=41) | 73.4% read, -2.082 | 29.6% read, -2.177 | no reading, -2.304 (worse than noisy control) | 100% read | no reading, best -3.371 (a23, period 14), gibberish | no consistent sign->letter map |
+
+**Result: negative for both designs in both modes, each against a matched control of the same length and
+sign count, on the reconciled transcription (L2's transcription gap -- more overlines on 6467 than L1
+recorded, flagged as untested there -- is now addressed: this rerun used the properly-marked v2 file and the
+`--mark-signs` distinct-sign mode L2 could not run).** The target never outperforms its own noisy (8%
+misreading-rate) control in test A under either mode, and test B's target never approaches the control's 100%
+read under any period/alphabet/direction tried. Test C (the 6467 margin note as a crib) still finds no
+consistent many-to-one sign-to-letter map in either spelling, at up to 6 nulls, in 27 signs -- consistent with
+L2's read that the note is a short gloss rather than a word-for-word decipherment, or that the system is not a
+fixed monoalphabetic/periodic-polyalphabetic one over a 23-25-letter alphabet. This strengthens L2's original
+negative (which ran without the overline data and without the reconciled transcription) rather than reversing
+it.
+
+**Not settled by this pass, for whoever picks this up next:** the 9 unresolved cells above need either a crop
+tool run offline against the images already on disk (`tools/iiif_lines.py` needs IIIF/network; a local
+PIL/ImageMagick crop script like L1's would work if that dependency is available) or a third blind pass on
+just those lines; none of the 9 changes the negative result's shape (they are single-digit disputes within
+lines that already read no better than gibberish either way). Novelty not classified (not this brief's job).
+
+Requests: none (offline, no network, per brief). Cost: well under $4 cap.
