@@ -1235,6 +1235,14 @@
    "grade": "scout",
    "line": "Key-in-folder rows are recovery candidates; check-solved queued.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/QUEUE.md"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Printed-cipher detector round 4: 152 Nordic, Thirty Years' War and Stuart editions, no undeciphered passage",
+   "grade": "negative with controls",
+   "line": "Christian IV's printed cipher letters are deciphered in the same volume; method now greps the whole volume for a decipherment indicator.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/sources/ia-fulltext/NOTES.md"
   }
  ],
  "lanes": [

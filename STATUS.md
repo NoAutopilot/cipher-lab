@@ -90,6 +90,32 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE S handoff (session_01PE7TAF6Hsp3MHtFEkDPP4a), 24 September 2026, 04:58 UTC
+
+Lane: finding and gating targets outside Gallica (03:05-04:58 UTC). 25 Sonnet workers, about $140 of worker usage, every one
+ledgered (LEDGER.md), ASSIGNMENTS rows 61-83, results rows in status.json. Briefs: `.claude/briefs/runs/2026-09-24-lane-s-*.md`.
+
+**For the parent to promote (stage 2, copy-free):** rah-canada-1869 (RAH digital library); huntington-luzerne-destouches-1781 (U1;
+Tomokiyo decoded a sibling 8 Jan 1781 Luzerne letter, Yale, same code, key unidentified); huntington-blathwayt-madrid-1728 (U2;
+recovery by alignment: six sibling items carry French decipherments); oxenstierna-gustav-adolf-1632 (W1; printed cipher
+extracted, 733 tokens / 91 values; key not public: two undigitised Riksarkivet candidates in its REQUEST.md, SE/RA/202/1 and the
+Horn-Bielke E 2348/E 2350 duplicates). A solver for W1 or U2 is the parent's to assign.
+**Stage 2, copy order (REQUEST.md drafted, nothing on the owner's card):** N20, N22, N27, N28, N29, N34, N36, N37, N41, N43, N44,
+N45, N46, N47, E1, U3, U5, K1, K2, K4. Held by the parent's instruction, not checked: N23-N26, N31-N33, N35, N38, N39; N48-N66
+not yet checked.
+**Found-solved catches:** N21 Palavicino 1590 (Stone 1956); K3 Ulrich-Zwingli 1531 (Zwingli SW 11 no. 1193); N40 Cotton cluster 6 of
+14 volumes (Tomokiyo keys, a 1759 print, Brewer L&P ii for Galba B IV), 4 unresolved; N42 Wallis letter-book (a key resource,
+not a target); RAH Morillo item 1 (Rodríguez Villa 1908).
+**Sweeps and negatives with controls:** detector rounds 2-4 (276 + 212 + 152 editions; 1 survivor, W1); scouts K (Kalliope: K1-K4),
+U (Huntington, Lambeth: U1-U5; two access routes in CLAUDE.md), E (Europeana negative; RAH E1), R (Riksarkivet R1-R10), Z (Polish,
+Czech, Hungarian, Slovenian libraries: zero). Blocked or keyless: NRS (egress), BSB/MDZ, ONB, DDB, Archivportal-D, Polona API.
+**Still running / open:** check-solved I (R1, R2, R3 with keys in folder; R7) session_01Wxt9yrhshAu6m7cRw5qya9 -- parent to collect
+and archive; then check-solved J (R5, R6, R8, R9), brief ready, one worker at a time on the Riksarkivet.
+**Next if the lane reopens:** check-solved N48-N66 (copy-order, lower value); Polona with the browser tool; a CRO sweep via TNA
+Discovery 'held by other archives'; QUEUE-scores.json non_decode rows 41-66 still to re-apply from 9aafdef (my policy refused it).
+**Lessons written into templates:** .claude/briefs/detector-test.md (index pre-filter, whole-volume decipherment grep, no rebase
+during a background fetch). ROOM.md: a claim commit stages ROOM.md only (5573927 deleted N41-N66; restored).
+
 ## Lane structure, 24 Sep 2026, 03:05 UTC (owner: scale to about fifty live sessions)
 
 The parent orchestrator (session_01EFmUvFAifLKGdBSsW9mjEG, "cipher-lab-7a") runs four lane orchestrators, each Opus with a
