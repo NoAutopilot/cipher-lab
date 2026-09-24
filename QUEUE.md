@@ -1485,3 +1485,86 @@ controls plus the 212 new identifiers, reproducible by re-running
 against freshly-fetched `_djvu.txt` files, gitignored), `editions3_passages.tsv` (the 27 merged candidate
 passages with interlinear-test scores) and `editions3_dropped_examples.tsv` (the 6 pre-filter drops used in the
 spot-check), both committed for reproducibility.
+
+## Central and Eastern European digital-library candidates (LANE S scout of 24 September 2026)
+
+Brief: Polona, Kramerius instances (Czech National Library ndk.cz/kramerius5.nkp.cz and the Moravian Library),
+Hungaricana, Slovenian dLib.si, Monasterium.net (charters only), querying cipher/chiffre/cifra/Chiffre/cijfer
+/kryptografi in each catalogue's own language plus Latin. Read first: LESSONS.md, QUEUE.md "Candidates not on
+DECODE" and "Digitised candidates outside the BnF" (the noise patterns already found there: "cipher" as
+zero/foliation, Pepys, WWII, Voynich, Founders Online). Every candidate class below was checked against fresh
+shallow clones of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` and against QUEUE.md/CATALOG.md/
+LANDSCAPE.md/`ciphers/`; none of the reported hits are correspondence, so no exclusion check was needed beyond
+this. Raw hits and exclusion reasons: `sources/solver-diffs/2026-09-24-lane-s-cee.tsv`.
+
+**Zero rows this sweep.** Every host reached returned either no working search route, or a working route whose
+top hits (checked by opening the record) are not cipher correspondence. The row-id prefix **Z** stays reserved
+for this lane; a future pass with better queries or hosts should continue from Z1.
+
+**Polona (polona.pl), blocked -- API not found.** The SPA's `env.js` gives the gateway base
+(`https://polona.pl/api`); `/api/search-service/search/advanced-form` (the field-schema config) and
+`/api/search-service/search/suggest?query=...` (autocomplete) both answer, confirming the route family and that
+GET is the right verb, but the actual results endpoint was not found this budget: `/simple`, `/basic`,
+`/results`, `/advanced`, `/query` and `/search` itself all return `400 Bad Request` (the route exists, the
+parameter shape does not match a bare `?query=`), and no OpenAPI/swagger listing was found. A Playwright session
+(`NODE_PATH=$(npm root -g) node`, `/opt/pw-browsers/chromium`) filled the visible search box and clicked the
+navbar search button (`aria-label="Szukaj"`) and the modal's "Wyszukaj" button in turn; neither produced a
+capturable results fetch inside the wait budget -- the site opens an advanced-search modal by default and the
+click sequence needed to reach a real results page was not identified. Worth a second attempt with more time on
+the browser-automation side, or a request to the person for Polona's documented API if one exists outside the
+SPA. 0 raw, 0 kept, 0 digitised.
+
+**Kramerius (Czech), clean negative -- the wrong kind of library.** `kramerius5.nkp.cz` (NDK, the National
+Digital Library) has a working, undocumented-but-discoverable REST/Solr API at
+`https://kramerius5.nkp.cz/search/api/v5.0/search?q=...&wt=json` (found by reading `main.js` for the
+`getApiUrlForBaseUrl`/`k5Compat()` logic; CORS-open, no auth). "šifra" alone returns 26,322 hits because Czech
+"šifra" is as ambiguous as French "chiffre" (also means a plain numeral/code, e.g. a page or call number); the
+phrases "šifrovaný dopis" (ciphered letter), "psáno šifrou" (written in cipher) and "tajné písmo" (secret
+writing), restricted to `datum_begin:[1450 TO 1900]`, still return only 71 hits, every one `model_path
+monograph/page` -- OCR word-matches inside printed 19th-c. books (memoirs, popular science, poetry, a foreign-
+words dictionary), not manuscripts. A direct query for `fedora.model:manuscript` or `document_type:manuscript`
+combined with any cipher term returns **zero** results: this instance holds essentially no digitised manuscript
+correspondence under these terms -- NDK is a books-and-periodicals library, not an archive. The Moravian
+Library's own instance has been merged into a national portal, `digitalniknihovna.cz` (and
+`kramerius.mzk.cz` now redirects there); that portal serves the same Angular SPA shell at every path tried,
+including the plausible namespaced guess `/mzk/search/api/v5.0/search`, so its backend API location was not
+found this budget. Raw 71 (Czech, dated) + 26,322 (unfiltered, not swept further), kept 0, digitised n/a.
+
+**Hungaricana (hungaricana.hu), reached, noise-dominated but with a working filter.** Server-rendered (works
+directly with a browser User-Agent after one redirect; a plain descriptive UA gets refused). The site's facet
+API was reverse-engineered: `GET /hu/search/filter/DATABASE/?list=<base64 JSON>` returns each content
+database's hit count, and re-encoding `{"query": "...", "filters": {"DATABASE": ["LI"]}}` as the `list` param
+restricts results to "Könyvtár (Levéltári iratok)" -- digitised archival records, the closest facet to what
+this brief wants. "rejtjeles levél" (ciphered letter) restricted to that facet gives 3 hits, all 1951-1981
+Hungarian Communist Party (MSZMP) committee records; "titkosírás" (cipher/secret writing) restricted the same
+way gives 8, all archival-science training manuals and more 1950s-60s party minutes referencing the topic in
+passing. Nothing pre-1900 surfaced in the archival-records facet for either term. The unrestricted "rejtjel"
+query (2,796 hits) is dominated by an actual 1930s cipher-machine patent and modern press usage; not swept
+further given the archival-facet negative. Raw 2,796 + 3 + 8, kept 0, digitised n/a (nothing scored).
+
+**Slovenian dLib.si, clean negative.** Server-rendered, answers curl directly with no UA requirement, and has a
+working field-search form: `GET /results/?query='keywords=TERM'&pageSize=N`; the bare/default `text=` field
+returns nothing for the same terms, so the `keywords=` field is the one that works. "cifer" and "šifra" both
+resolve to modern content only: a 1985 poem, two items literally titled "Šifra"/"Šifra 2.0" and one titled "Da
+Vincijeva šifra" (the Slovenian edition of *The Da Vinci Code*), a comics-studies article and a pseudo-random-
+bit-generator statistics paper. No archival correspondence. Raw ~32 (6 titled, rest uncounted past the
+confirming query), kept 0, digitised n/a.
+
+**Monasterium.net, not reached.** Out of budget this pass; the brief scopes it to charter cipher notes only,
+the lowest-yield of the five hosts named, and was not attempted.
+
+Caveats: (1) all four reached hosts have real, working query mechanisms now documented above and in the TSV --
+the negative is a language/term problem (period Latin/German/Hungarian diplomatic phrasing was not tried beyond
+the brief's word list) and a collection problem (NDK and dLib.si are books/periodicals libraries; Hungaricana's
+useful archival facet turned out to be a 20th-century party-records collection, not the early-modern
+diplomatic and ecclesiastical archives these catalogues also host under names not yet searched, e.g. Magyar
+Nemzeti Levéltár finding aids proper, distinct from the OCR'd "Levéltári iratok" text corpus hit here). (2) No
+image was opened at full resolution for any hit; every exclusion above rests on the record's own title, date
+and collection metadata, not the ciphertext. (3) Polona's API remains unsolved and is worth a dedicated
+follow-up given the site's likely 17th-18th c. diplomatic-letter holdings named in the brief. (4) Requests per
+host, all ≥1.5s apart, single UA `cipher-lab research script (contact via repository)` except Hungaricana
+(needs a browser UA per its redirect behaviour) and the Playwright sessions (browser UA, per playbook route 2):
+polona.pl ~30 (curl) + 3 Playwright page loads; kramerius5.nkp.cz ~8; digitalniknihovna.cz/kramerius.mzk.cz ~4;
+hungaricana.hu ~12 (curl) + 2 Playwright page loads; dlib.si ~10. No 429/403/Cloudflare challenge hit on any
+host; nothing to log as blocked-by-the-site, only blocked-by-not-finding-the-route (Polona) or blocked-by-
+merger (MZK).

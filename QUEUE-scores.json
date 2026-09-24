@@ -6917,5 +6917,53 @@
     "total": 32
    }
   ]
+ },
+ "lane_s_cee": {
+  "_about": "LANE S scout of Central and Eastern European digital libraries, 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-s-scP.md). Polona (search API not found: field schema and autocomplete routes confirmed, results route returns 400 for every guessed path, a Playwright session could not trigger a capturable results fetch), Kramerius/NDK (kramerius5.nkp.cz, working Solr API found at /search/api/v5.0/search, clean negative -- books/periodicals library, zero manuscript-model hits for any cipher term), Moravian Library/digitalniknihovna.cz (merged into a national portal whose backend API path was not found), Hungaricana (working DATABASE facet filter reverse-engineered, restricted to its archival-records facet the only hits are 1951-1981 Communist-party records, nothing pre-1900), dLib.si (working keywords= field search found, clean negative -- hits are modern poetry/fiction/scholarship, including the Slovenian edition of The Da Vinci Code). Monasterium.net not reached this pass (budget). Raw hits and exclusions: sources/solver-diffs/2026-09-24-lane-s-cee.tsv. Zero rows kept; the Z row-id prefix stays reserved for a future pass with better period-specific queries or a resolved Polona API.",
+  "date": "24 September 2026",
+  "requests_per_host": {
+   "polona.pl": 33,
+   "kramerius5.nkp.cz": 8,
+   "digitalniknihovna.cz": 4,
+   "hungaricana.hu": 14,
+   "dlib.si": 10
+  },
+  "blocked": [
+   {
+    "host": "polona.pl",
+    "reason": "search results API route not found (400 Bad Request on every guessed path; advanced-form/suggest routes confirmed reachable); one Playwright automation attempt did not trigger a capturable results fetch"
+   },
+   {
+    "host": "digitalniknihovna.cz (Moravian Library / kramerius.mzk.cz)",
+    "reason": "SPA catch-all served at every API path guess, including the namespaced /mzk/... form; backend API location not found this budget"
+   },
+   {
+    "host": "monasterium.net",
+    "reason": "not attempted this pass, out of budget"
+   }
+  ],
+  "clean_negatives": [
+   {
+    "host": "kramerius5.nkp.cz",
+    "query": "fedora.model:manuscript OR document_type:manuscript, AND any cipher term",
+    "result": "0 hits; NDK holds essentially no digitised manuscript correspondence under these terms"
+   },
+   {
+    "host": "kramerius5.nkp.cz",
+    "query": "šifrovaný dopis / psáno šifrou / tajné písmo, dated 1450-1900",
+    "result": "71 hits, all printed-book OCR (monograph/page), not manuscripts"
+   },
+   {
+    "host": "hungaricana.hu",
+    "query": "rejtjeles levél / titkosírás, filters.DATABASE=LI (archival records)",
+    "result": "11 hits total, all 1951-2001 Communist-party administrative records, none pre-1900 or correspondence"
+   },
+   {
+    "host": "dlib.si",
+    "query": "keywords=cifer / keywords=šifra",
+    "result": "hits are modern literature and scholarship (poems, fiction incl. Da Vincijeva šifra, a PRNG paper, a comics-studies article); no archival correspondence"
+   }
+  ],
+  "rows": []
  }
 }
