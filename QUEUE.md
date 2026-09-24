@@ -5580,14 +5580,14 @@ NOTES.md; state changes below.
   not a solve. nomination: hellen-frederick-1752 | copy-free | kind recovery | NA 1.10.29 invnr 5206 (target
   archive; the 8 ciphertexts themselves are at KHA Prins Willem V inv.196, not yet re-checked for a separate
   viewer).
-- **CS2-21** (Van Spaen to Van der Goes, 14-15 Jan 1808) -> **verified unsolved, stage 2, `open`.** New folder
+- **CS2-21** (Van Spaen to Van der Goes, 14-15 Jan 1808) -> **`blocked` (held by the LANE N4 orchestrator 20:03 UTC: Colenbrander Gedenkstukken V not read; was: open).** New folder
   `ciphers/vanspaen-vandergoes-1808/`. DECODE's "Partially decrypted" status resolved: it covers only the 15 Jan
   annex (per Bourdeau's direct inspection of the record, quoted in NOTES.md), not the 14 Jan letter this row
   targets. Colenbrander's Gedenkstukken vol. V (1806-1810) checked by Bourdeau, "does not print the letters";
   this worker could not independently re-read the volume (no full-text search reachable at huygens.knaw.nl's
   Dojo viewer or delpher.nl within this brief's host grant -- flagged, not closed as a gap). nomination:
   vanspaen-vandergoes-1808 | copy-free | kind cryptanalysis | NA 2.01.08 invnr 281.
-- **CS2-22** (Röell (attrib.) to Van Dedem, 9 Feb 1809) -> **verified unsolved, stage 2, `open`.** New folder
+- **CS2-22** (Röell (attrib.) to Van Dedem, 9 Feb 1809) -> **`blocked` (held by the LANE N4 orchestrator 20:03 UTC: Colenbrander Gedenkstukken V not read; was: open).** New folder
   `ciphers/roell-vandedem-1809/`. Same Gedenkstukken vol. V check by Bourdeau, "gave nothing by web search";
   same independent-re-read gap as CS2-21. No key, decipherment or clear copy found in six sources. nomination:
   roell-vandedem-1809 | copy-free | kind cryptanalysis | NA 1.02.20 invnr 804 (DECODE's cached toegang 1.02.04 is
