@@ -1533,7 +1533,7 @@ both items without repeating anything else"). This worker does not assign N4 (no
 ## N4 decision (final families), 24 Sept 2026
 
 LANE V N4-decision verifier (Opus, session_01FwWKsqwM57oancfisEiVEE, orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ),
-06:54-07:10 UTC (`date -u` read). This session took no part in any solving, auditing, transcription or gap work above.
+06:54-07:03 UTC (`date -u` read). This session took no part in any solving, auditing, transcription or gap work above.
 It did not decode. It re-checked the 05:08 table against the whole file, looked for principal families that table
 missed, and closed the small reachable ones in one logged pass.
 
