@@ -422,3 +422,98 @@ all 200; 1 manifest). data.htrc.illinois.edu: 2. archive.org (advancedsearch and
 about 45, 1.6 s apart. www.googleapis.com (Books, keyed, country=US, key never printed): 23. books.google.com: 1
 (403 `/sorry/`, host stopped). www.google.com: 1 (Books feed, 200, unused). github.com: 2 shallow clones.
 WebSearch: 3. gallica.bnf.fr: 0. No logins, no credentials printed, no decoding, no subagents.
+
+## Toward N4 (24 Sept 2026)
+
+Verifier follow-up session (Sonnet, cap $8, orchestrator session_01EFmUvFAifLKGdBSsW9mjEG), 24 September 2026,
+02:04-02:20 UTC (`date -u` read). Brief: close as many of the second audit's four remaining gaps as reachable —
+Camusat, HathiTrust full-text search, the rate-limited Google Books queries, and the fr.3019 no.31 companion
+letter. Not a solver session: reading.txt, key.tsv and ciphertext.txt were not touched. Reports what was found
+and where it was not; does not move the class.
+
+**Gap (2), Camusat — still not closed.** Three routes tried on `bpt6k5039434`, one worker's worth of traffic on
+`gallica.bnf.fr` this session (other workers were concurrently using the same host for f.30/fr.16092/fr.4687
+work per ROOM.md, which likely explains some of the resets below; not all failures here are Camusat-specific):
+- `.texteBrut` (full-book OCR download): HTTP 302 to `/services/engine/search/altcha?...`, i.e. Gallica's own
+  bot-verification interstitial ("Vérification de sécurité"), not a network failure. **Stop and log on altcha**,
+  per brief — not retried.
+- `/services/ContentSearch?ark=...&query=Villandry`: connection reset twice (`Recv failure: Connection reset by
+  peer`), the second after a 5 s pause per the single-retry rule. Not retried further.
+- IIIF `manifest.json` for the same ark: fetched cleanly (200, 875 KB) on the first attempt, but the manifest
+  carries no OCR/ALTO text service or `rendering` link (`seeAlso` is only the OAI-DC metadata record) — Gallica's
+  IIIF Presentation API does not expose page text for this item; there is no "OCR via the IIIF/document API"
+  route to fall back to here, contrary to what the brief supposed. The full text exists only behind `.texteBrut`
+  / `ContentSearch`, both blocked above.
+- **Net: Camusat's content for 1530-1533 remains unverified beyond the first audit's Google Books snippets**
+  (Gramont material there dated 1532-33). Not closed. Next attempt should hold `gallica.bnf.fr` alone (no other
+  worker concurrent) and retry `.texteBrut` once cold, since an altcha challenge can be session/traffic-dependent
+  rather than a permanent block.
+
+**Gap (3), HathiTrust full-text search — still unreachable, as documented.** One attempt via
+`tools/browser_fetch.js` at `babel.hathitrust.org/cgi/ls?...;a=srchls;lmt=ft` timed out (60 s) after the egress
+proxy reported `brunhild.challenges.cloudflare.com:443 — connect_rejected (organization policy)` — the Cloudflare
+challenge itself, not a transient error. Direct curl to `babel.hathitrust.org` and `catalog.hathitrust.org` both
+403. This matches CLAUDE.md's existing note that HathiTrust Cloudflare-challenges this environment. The HTRC
+Extracted-Features token-count route (`data.htrc.illinois.edu`, reachable, 200) is a substitute only for
+volumes already identified by id (used for Le Grand in the first/second audit); it is not a general full-text
+search and cannot substitute for one across all of HathiTrust. **Not closed; no new route found.**
+
+**Gap (4), fr.3019 no.31 — located precisely, not read.** The BnF finding aid for fr.3019 (ark `cc49477m`, found
+via the manuscript's own IIIF manifest `Relation` field, not previously in this file) lists item 31 verbatim:
+"Lettre de « G[ABRIEL] DE GRAMONT, evesque de Tarbe... à monseigneur le grant maistre... A Rome, le XVe jour de
+may ». Fol. 86." Gallica ark `btv1b9059994n` (290 canvases; also cited in `sources/cryptiana/web/venetian.htm`
+for a different folio of the same volume). Two facts fix its relation to our target before any reading: **it is
+addressed to the grand maître (Montmorency), not to Villandry** — a different recipient from f.29r/f.30 — and
+**the finding-aid entry carries no "avec chiffre"/"en chiffre" flag**, unlike items 21-22 of fr.2980, consistent
+with the second audit's "in clear by its description." Both reduce, without excluding, the chance of verbatim
+phrase overlap. The folio itself was not read this session: canvas-to-folio correspondence for this manuscript
+is not the fr.2980 pattern (double-page-per-canvas, offset +2) and was not established in budget — canvas f86
+shows an unrelated military-campaign passage (chevaux légiers, artillerie) with a faint corner numeral read as
+"84", canvas f87 shows a mostly blank verso with a small pasted salutation fragment ("Monsi[eu]r, mon..."), and
+canvas f88 shows a blank leaf with a corner numeral read as "88" or possibly "86" (the pencil digit style is
+ambiguous at this resolution) — the three probes did not converge on a folio reading "86" with Gramont/Rome/May
+content. **Left open for a dedicated calibration pass** (three IIIF image fetches spent on this, all 200; no
+further probing attempted under this session's cap). Recorded here so the next worker does not repeat the
+finding-aid lookup.
+
+**Google Books, re-run keyed (`&key=$GOOGLE_BOOKS_KEY&country=US`, key never printed).** The 429/403 `/sorry/`
+failures logged earlier in this file are all on `books.google.com` (the inside-book page-view and PDF routes),
+not on the `www.googleapis.com/books/v1/volumes` API itself — the API calls in section 4(e) were already keyed
+and their zero-hit results stand; the key does not reach the page-view route, which is a separate
+bot-challenge and was not re-attempted (a single attempt was already logged; the good-citizen rule caps retries,
+not further attempts on an already-identified block).
+- **Champollion-Figeac, *Captivité du roi François Ier* (1847)**: now located precisely — `DR5h-3UB_bQC`
+  (Rutgers scan, `viewability: ALL_PAGES`, `publicDomain: true`) — but `readingModes.text` is `false`: this is an
+  image-only scan with no OCR text layer in Google's own metadata, so no true within-book phrase search is
+  possible via the API regardless of key. Three `intitle`-restricted content queries (Villandry; Gramont
+  Villandry; Tarbe) returned 0 hits each, but this is a title-metadata filter, not a within-book search (same
+  caveat the first audit already noted for Le Grand), and is weak evidence given the missing text layer.
+  **Located but still not full-text-searchable; status changes from "unreached" to "found, unreadable via API."**
+- **Michon, *La Crosse et le Sceptre* (2008)**: located (`iwIMAQAAMAAJ`, and two other editions/reprints) but
+  `viewability: NO_PAGES` — no snippet, no preview, nothing to search. **Confirmed unreachable**, not merely
+  unsearched.
+- **Wirtz-Daviau**: query for "Wirtz-Daviau Gramont" returns only bibliography/membership-listing hits (as the
+  first audit found), nothing new.
+
+**Recommendation (not a class change — the verifier does not move the class).** Two of the second audit's four
+gaps are still open after this pass (Camusat, HathiTrust), one is now precisely characterised rather than closed
+(Champollion-Figeac: a real book with no searchable text, not an unreached one), and the fr.3019 companion
+letter is identified but unread. On the rule-10 test in section 1 ("If the owner runs the JSTOR queries... and a
+second adversarial session closes (1) and (2), N4 is within reach"), condition (2) is not met and JSTOR is still
+pending (ASKS.md row 17, now carrying this target's six queries verbatim). **N3 should stay N3** until Camusat
+is read (a Gallica-only session, uncontended, retrying `.texteBrut` cold) or the person supplies a JSTOR/HathiTrust
+result. The safe sentence of section 1 (as amended by the second audit) is unchanged.
+
+### Requests this session
+
+gallica.bnf.fr: 13 (1 root reachability check, reset, retried once, reset; 1 `.texteBrut`, 302→altcha; 1
+manifest.json for `bpt6k5039434`, 200; 2 `ContentSearch`, both reset, one a same-rule retry; 2 SRU catalogue
+queries, first reset then a retried success; 2 IIIF manifest.json for `btv1b9059994n`, first reset then a
+retried success; 3 IIIF image fetches for `btv1b9059994n` canvases f86-f88, all 200 first try). Other workers
+held this host concurrently per ROOM.md; the resets above are not all attributable to this session's own
+traffic. archivesetmanuscrits.bnf.fr: 2 (1 wrong-path 404 while locating the fr.3019 search endpoint, then the
+`cc49477m` notice, 200). www.googleapis.com (Books, keyed except one bare reachability check, country=US, key
+never printed): 7. babel.hathitrust.org: 1 direct (403) + 1 via `tools/browser_fetch.js` (timed out, Cloudflare
+`connect_rejected`). catalog.hathitrust.org: 1 (403). data.htrc.illinois.edu: 1 (reachability only, 200).
+WebSearch: 1. No logins, no credentials printed, no decoding, no subagents, no edits to reading.txt/key.tsv/
+ciphertext.txt.
