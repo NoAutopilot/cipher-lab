@@ -290,3 +290,73 @@ P10	620	printed-decipherment, interlinear (AUDIT N0, V2); 14 groups of p.620 L10
 P14	101-102	printed-decipherment, italic running text with groups above (AUDIT N0, V2)
 P15	421 (clear close p.422)	printed-decipherment, interlinear (AUDIT N0, V2)
 ```
+
+## P4 -- William Stamford ("W.S."), Calais, 13 March 1655 N.S. -- novelty audit (LANE T verifier V2, 24 Sept 2026)
+
+Same verifier and session as the section above. I did not produce the reading and do not defend it.
+**Claim under audit** (NOTES s.16 and s.21): Birch prints no decipherment of this letter. A key rebuilt from Birch's
+printed decipherments of Stamford's letters of 20 and 30 March 1655 (`pool_1654/key_stamford.tsv`; cross-letter control
+92.3% and 93.7%) reads its cipher as English (`pool_1654/reading_P4.txt`). Section 21 (worker L, pushed 05:09 UTC, read here before classifying) replaced the OCR-disordered blocks with the page image (p.188 L50-61): grades H 64, C 338, S 0, M 16, U 6 of 424 tokens; `pool_1654/decode_stamford.py --check` exits 0 per s.21 (this verifier's re-run did not finish within two minutes and was not waited for); key and control unchanged.
+
+**Quality note (not novelty).** Outside p.188 L51-61 the reading is coherent English. Inside that stretch, even from the image, much of it is not: {eis}, {ca}, {seat}, {eco}, {siderable}, {la}, {surp}, {alds}, {rt}, {dehashas}, {ritinto} (s.21 lists them). A grade C on each letter there does not make the words read. Either the key is wrong for some values, or the image transcription splits or orders groups badly on those lines. So "reads its cipher as English" holds for the letter outside those eleven lines, and those lines stay partly unread
+
+### 1. Extract
+
+| Field | Value |
+|---|---|
+| Date | Calais, 13 March 1655 N.S. (Birch "Callais, March 13, [1654. N.S.]"; the endorsement reads "13/3 March 1654/5" on BHO) |
+| Sender | "W.S." = William Stamford (he signs P5+P6 "WILLIAM STAMFORD"; Tomokiyo #Stamford) |
+| Recipient | unnamed ("your friend" is the Protector). Macray's Rawlinson index (below) has "Stamford, W., Calais. Letters to col. Kelsey; Mar. 1654/5, A. 24. 73". So the addressee may be Col. Thomas Kelsey, not Thurloe. This is an index line, not checked against the MS |
+| Print | Birch 1742 vol. 3 pp.187-189 (heading p.187, djvu 15467; cipher p.188; signature, a short covering letter of the same date, and the endorsement on p.189, djvu 15602-15671). MS: Birch's margin "Vol. xxiv. p.76" (covering letter p.73) = Bodleian MS Rawl. A. 24 |
+| Ciphertext | inline numeral runs 1-43 (letters) and 62-171 plus the sign (codes), about 440 tokens. Clear text around them |
+| Printed apparatus | **no decipherment**. After the signature Birch prints the covering letter and then "This letter is endorsed as follows: W.S. Calais ... His desire of a correspondence, and promise of performing some emminent service (in case my lord protector will engage to reward him) namely in discovering of the plott, &c." |
+| Distinctive decoded phrases | "meere chance", "without the least iniunction of secrecy", "the person I got it from", "stealing out of Whitehall" (clear) + "England", "a plot hath been a hatching", "the whole partie of [143]", "irreconciliable with them as long as I live", "the qualitie I am of", "a more general rising", "a thousand armes" |
+| Solver's search | NOTES s.14 (Birch, CSPD 1654, both solver repositories, Tomokiyo), s.16 (disk only), s.19 (`printcheck_P4_P14.tsv`: CSPD 1655 on be-api; Underdown in Google Books, NO_PAGES; seven phrases in Google Books, 0 genuine hits) |
+
+### 2. Independent search (this session, 24 Sept 2026)
+
+| Family | Status | What was searched, result |
+|---|---|---|
+| (a) Canonical series | searched | Birch vol. 3 djvu 15460-15700 read in full here: the letter, the covering letter, the endorsement and the next item (Manning, p.190). No "decypher'd" paragraph anywhere between P4 and P5+P6. **BHO** transcription of vol. 3 pp.185-195 (www.british-history.ac.uk/thurloe-papers/vol3/pp185-195, fetched once): it gives the same numerals and no decipherment, no editorial note, and the endorsement dated "13/3 March 1654/5" |
+| (b) Sender/recipient correspondence | searched, nothing exists | No edition of Stamford's or Kelsey's letters is known. Thurloe's letters are only Birch |
+| (c) Documentary editions, histories | partly | CSPD 1655 (s.19). Underdown, *Royalist Conspiracy* (IA `royalistconspira0000unde`, be-api in-item): "Calais" hits concern Whitley, Mordaunt and others, and "W. S." and "Kelsey" give 0. G. Smith, *Cavaliers in Exile*: "Stamford" is Col. Edward Stamford, a different man. Akkerman, *Invisible Agents*: no Stamford of Calais. Gardiner, *Commonwealth and Protectorate* vol. 3 not searched in-item |
+| (d) Holding archive | **not reachable under this brief** | Bodleian MS Rawl. A. 24: Macray's printed index (IA `catalogicodicumm52bodl`, `CatalogiCodicumManuscriptorumBibliothP5F2`) lists Stamford's March 1654/5 letters at A. 24. 73 (and 76 per Birch), plus "Letters to Cromwell; 1655-6, A. 33. 143". Whether the MS carries a contemporary decipherment (interlined or on a separate leaf) is **not known**. The endorsement's "discovering of the plott" paraphrases matter that stands only in cipher, so Thurloe's office understood the cipher in 1655. That makes a contemporary decipherment likely, whether or not it survives. Birch printed one for P5+P6 and P7 and none here, which fits the MS having none, but this is not proof. Bodleian Archives & Manuscripts was not a host of this brief |
+| (e) Google Books | searched | 12 queries, key, country=US, 2 s apart: "Stamford" Calais Thurloe 1655 cipher (only Birch), "William Stamford" Thurloe (irrelevant), "Stamford" "Kelsey" Calais 1655, "W. S." Calais Thurloe plot 1655 Penruddock (0), "general rising" Stamford Calais Thurloe (0), "irreconciliable with them" (unrelated), "stealing out of Whitehall" (only Birch, whose print shows the numerals), "Stamford" Kelsey Thurloe, Stamford Calais spy 1655 royalist plot Thurloe (0), "Rawlinson" "A. 24" Stamford (Macray, no snippet); s.21 phrases "more people are engaged" rising 1655 (0) and "time appointed for it is not farre off" (only Birch, clear text) |
+| (e) IA full text (be-api fts) | searched | 10 global queries: "meere chance" (early printed books only), "injunction of secrecy" Stamford, "irreconcilable with them as long as I live" (0), "plot hath been a hatching" (0), "William Stamford" Calais (Staffordshire families, unrelated), "Stamford" Calais Thurloe 1655, "a thousand arms" Calais 1655 plot (0), "the whole party of the cavaliers" 1655 (0), "more people are engaged then in any of the former" (0), "Stamford" "col. Kelsey" Calais (CSPD 1651 index "Stamford, Wm.", unrelated). 11 in-item queries (Macray x4, Underdown x3, Smith x2, Akkerman x2) |
+| (e) HathiTrust | not searched | not a host of this brief |
+| (f) Solver repos, cipher blogs | from s.14, and Tomokiyo re-read | Tomokiyo, thurloe.htm #Stamford (local mirror), re-read: he builds his key image `stamford.jpg` from "13 March NS (Page 187 and Page 189), 30 March (Page 274), and 3 April (Page 340)". He lists codes 65, 67, 81, 82, 130, 158 and the sign. Every one of them also occurs in P5+P6/P7 (`key_stamford.tsv` has 65, 67, 81, 82, 130 and 158 from their printed decipherments), so nothing on his page shows a value read only from P4. His one P4 quotation ("if this correspondence continue ... being very imperfect") is P4's clear text, not cipher. His image was not seen: it is not on disk, and cryptiana.web.fc2.com was not a host of this brief. **A prior modern decipherment of P4 by Tomokiyo is therefore not excluded**: he used P4 as a source for his key, so he may have worked through its cipher, but no plaintext of it is printed on his page. DECODE: not searched for Stamford (login is one per session and belongs to another worker) |
+| (g) Scholarship | partly | OpenAlex 429 (x2), Semantic Scholar 429 (x2), CrossRef 1x429 and 1 answer: Penruddock (ODNB), "Colonel John Penruddock (1655)" (2024 chapter), Marshall, "John Thurloe and the Cromwellian regime" (2023 chapter) and "Cromwell's 'spymaster'?" (INS 2018), all unread. HAL 0 (x2). JSTOR: 3 rows queued in JSTOR-QUEUE.tsv |
+| tools/print_check.py | not run | the folder has no phrases.txt/sources.tsv, and building them is outside this brief's files |
+
+Requests this session: british-history.ac.uk 2, be-api.us.archive.org 21, www.googleapis.com 12, api.openalex.org 2
+(429), api.semanticscholar.org 2 (429), api.crossref.org 2 (1 x 429), api.archives-ouvertes.fr 2. All were one at a time,
+at least 2 s apart, with a descriptive User-Agent. No archive.org downloads, no logins, no credentials printed.
+
+### 3. Classification
+
+| Item | Class | Prior plaintext | Prior decipherment | Evidence | Confidence |
+|---|---|---|---|---|---|
+| P4 Stamford, 13 March 1655 | **N3** | Only for the clear text and the endorsement's summary (Birch 1742; BHO). No plaintext of the cipher runs was located in print or online | Not located. Not excluded for (i) a contemporary decipherment in Bodleian MS Rawl. A. 24 (the endorsement shows the office understood the cipher) or (ii) Tomokiyo's unpublished working behind `stamford.jpg`, which cites this letter as a source | Birch and BHO read directly. Phrase searches on IA and Google Books. Principal Penruddock study (Underdown) in-item | medium |
+
+**Why not N4:** the holding archive (Rawl. A. 24 ff.73-76) is unchecked, and Tomokiyo's key image is unseen. Gardiner vol. 3,
+Marshall 2018/2023 and the 2024 Penruddock chapter are unread. OpenAlex and Semantic Scholar did not answer. The first two are the
+likeliest places for a prior decipherment, and each is one short job: a Bodleian catalogue/digital lookup or copy
+request for MS Rawl. A. 24 fols 73-76, and one fetch of cryptiana's `stamford.jpg` compared against `key_stamford.tsv`
+for any value that occurs only in P4. **Why not N1/N2:** no print of the cipher plaintext was found anywhere.
+
+**Safe sentence.** "Birch (1742) prints William Stamford's letter from Calais of 13 March 1655 with its cipher numerals but
+no decipherment. We read the cipher with a key rebuilt from Birch's printed decipherments of Stamford's letters of 20 and
+30 March 1655 (cross-letter control 92-94%); by token, H 64 (Tomokiyo E=12/25), C 338, M 16, U 6 of 424, with eleven lines of p.188 still partly incoherent. No prior decipherment was located in Birch, British History
+Online, CSPD 1655, Underdown's *Royalist Conspiracy*, Google Books, Internet Archive full text or the open indexes
+(searched 24 Sept 2026, AUDIT.md). Bodleian MS Rawl. A. 24 and Tomokiyo's working key have not been checked."
+**Unsafe sentence.** "First decipherment of", "previously unread", "unpublished" or "never deciphered", and "a cryptanalytic
+solution" (every value is keyed from printed plaintext, so this is a keyed reading). So is quoting the letter-level grade
+as if Tomokiyo's H values (E = 12/25, a modern reconstruction) were a contemporary key.
+
+### 4. Postmortem
+
+No novelty over-claim was found in s.16 or s.19. s.21 said the added stretch "is new" (meaning: not read by worker G). That breaks rule 10's word list even though the sense is internal, so it now reads "is added in this pass" (corrected in NOTES s.21). One sentence outside my
+write list over-claims: `printcheck_P4_P14.tsv` (P4 phrase row) says "No print anywhere carries this letter's plaintext
+content". That turns a search result into a fact. Proposed wording for LANE T: "No print of this letter's cipher plaintext
+located in the sources searched". Gaps the solver log did not name: the holding archive, the recipient (Macray's index
+says col. Kelsey), and Tomokiyo's key image as a possible prior decipherment. For LANE V, as the second audit: P4 N3.

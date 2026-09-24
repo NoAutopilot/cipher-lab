@@ -1766,7 +1766,7 @@ gives it, word division and anything in [ ] is this worker's inference, grade I)
 The stretch from "i know it is a more general rising" through "...army" reproduces worker G's own
 partial reading of block A's undisordered opening (section 16 item 4) letter-for-letter -- that part
 was never garbled, so nothing changed there. Everything from "tha{t} by {the} it {eis}" through
-"{ritinto}" is new: worker G could not read it at all (block B's own garbled fragments) or read it
+"{ritinto}" is added in this pass [verifier V2 wording fix, rule 10]: worker G could not read it at all (block B's own garbled fragments) or read it
 in the wrong order (block A's own tail, wrongly split from block B). "This plott is foe infalible
 ... naturall aversion" is not new -- it is the real paragraph worker G's original code already
 tokenized correctly between the blocks; this worker's first (buggy) attempt dropped it and this
