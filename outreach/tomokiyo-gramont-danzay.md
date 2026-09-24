@@ -7,74 +7,31 @@ drafted: 24 Sept 2026, verifier V5 (LANE V4). Nothing sent. The person sends it 
 
 ---
 
-Dear ______,
+Dear Mr Tomokiyo,
 
-Thank you again for your note on the Bowes table. Three more items in our repository rest on keys you published, and
-one on a key you published whose letter turns out to be in print already. I set out each with what we found in print
-and where we looked, so you can check them from your desk.
+Following the Bowes fragments, three items read with keys you published, and one correction for your list.
 
-**1. Gabriel de Gramont to Villandry, Rome, 20 May 1530 (BnF fr.2980 f.29r, no.21)**
+- BnF fr.2980 f.29r (no.21) and f.30r-v (no.22), Gramont to Villandry and to Francis I, Rome, 20 May 1530, read with
+  the Gramont 1530 key you and George Lasry published. f.29r: 533 of 568 signs at grade H, a secret article routed to
+  the king under cover; f.30: the runs continue the April plan for Florence, one run still unread. Neither letter's
+  plaintext was located in Camusat, Le Grand, the Catalogue des actes de François Ier (IX [412] records the letter),
+  Bourdeau's project or full-text search.
+- BnF fr.20140 f.35r-36r, Danzay to the Cardinal of Lorraine, Copenhagen, 27 Jan 1557, read with your 2026 key
+  reconstruction. No prior decipherment located in Ribier, Richard's 1910 monograph, the Danish editions, or Ryabov's
+  2025 article on Danzay's later cipher (Quaestio Rossica 13/4), which concerns his 1574 and 1578 letters.
+- Correction: Raince to Madame, Rome, 25 Oct 1525 (Dupuy 452 ff.28-29), which your 1526 key opens, has its plaintext
+  and a contemporary decipherment printed by Jacqueton (La politique extérieure de Louise de Savoie, 1892, pièce XXXIII,
+  pp.366-370). If your list carries it as unsolved, that is the citation.
 
-"No prior decipherment located of Gabriel de Gramont's cipher letter to Jean Breton de Villandry, Rome, 20 May 1530
-(BnF fr.2980 f.29r, no.21). Tomokiyo identified it as readable, and Bourdeau catalogued it (no.328). We read its
-568-sign cipher passage in part with the Gramont 1530 key published by Tomokiyo and Lasry (2023): 533 signs at grade
-H, 30 uncertain, 5 unkeyed. The search log is in AUDIT.md."
+Keys, readings, per-token grades and the search logs:
+https://github.com/noautopilot/cipher-lab/tree/main/ciphers/fr2980-gramont,
+https://github.com/noautopilot/cipher-lab/tree/main/ciphers/fr20140-danzay-1557 and
+https://github.com/noautopilot/cipher-lab/tree/main/ciphers/dupuy452-carpi-1520 (AUDIT.md in each). Please use any of it
+with whatever credit you think right; corrections are welcome, especially where the key and the image disagree.
 
-- Prior print it rests on: the key only (your "Gramont's Cipher (1530)", from fr.3019 f.20, and Lasry's 2023
-  confirmation from fr.3071 f.17, https://cryptiana.web.fc2.com/code/GL.htm). The letter's existence and date are in
-  print (BnF *Catalogue des manuscrits français*, 1868; *Catalogue des actes de François Ier* IX, entry [412], p.61,
-  https://archive.org/details/collectiondesord09acad); its text is not, as far as we found.
-- Image: https://gallica.bnf.fr/ark:/12148/btv1b9059991d/f31.item (canvas f31 = f.29r).
+We hold an index of the published keys (yours, Lasry's and the two open solver projects') with the letters each has
+read, and can run them against Gallica volumes not yet checked. If there are items on your unsolved list you would most
+like attempted, we would be glad to take those first.
 
-**2. Gabriel de Gramont to Francis I, Rome, 20 May 1530 (BnF fr.2980 f.30r-v, no.22)**
-
-"No prior decipherment located of Gabriel de Gramont's all-cipher letter to Francis I, Rome, 20 May 1530 (BnF fr.2980
-f.30r-v, no.22). Tomokiyo identified it as readable, and Bourdeau catalogued it (no.328). We read it in part with the
-Gramont 1530 key published by Tomokiyo and Lasry (2023): of 1,973 signs, 1,500 are at grade H and 158 at grade S with
-a matched control. Its closest print is the sibling letter of April 1530 (Archivio storico italiano, Appendice I,
-pp.473-481), which is a different letter. The search log is in AUDIT.md."
-
-- Image: https://gallica.bnf.fr/ark:/12148/btv1b9059991d/f32.item (canvas f32 = f.30r).
-- Folder, key, reading and search log for both: https://github.com/noautopilot/cipher-lab/tree/main/ciphers/fr2980-gramont
-  and https://github.com/noautopilot/cipher-lab/blob/main/ciphers/fr2980-gramont/AUDIT.md
-
-**3. Charles de Danzay to the Cardinal of Lorraine, Copenhagen, 27 Jan 1557 (BnF fr.20140 f.35-36)**
-
-"No prior decipherment located of Charles de Danzay's letter to the Cardinal of Lorraine, Copenhagen, 27 Jan 1557
-(BnF fr.20140 f.35-36), which carries no contemporary decipherment. It was read here by applying the key S. Tomokiyo
-reconstructed and published in 2026 (Cryptiana, 'Danzay's Ciphers') from the sibling decipherments of f.16, f.24 and
-f.30, so the result is a key application (a recovery), credited to his reconstruction: on f.35, 509 of 638 cipher
-tokens are at grade H, and on f.36r, 37 of 67. The reading is partial. Search log in AUDIT.md."
-
-- Prior print it rests on: your reconstruction, https://cryptiana.blogspot.com/2026/02/reconstruction-of-cipher-used-by.html
-  and https://cryptiana.web.fc2.com/code/danzay.htm. Richard's biography (*Un diplomate poitevin du XVIe siècle:
-  Charles de Danzay*, Poitiers 1910, https://archive.org/details/undiplomatepoite00richuoft) was read for it: its
-  appendix (p.238) prints only the letter of 25 Dec 1566, and it does not cite fr.20140. Ryabov, 'The Diplomatic
-  Cipher of Charles de Danzay', *Quaestio Rossica* 13/4 (2025), pp.1487-1508, https://doi.org/10.15826/qr.2025.4.1034,
-  was read for it: it reconstructs the table of the later cipher from the letters of 14 Oct 1574 and 28 Feb 1578 (BnF
-  fr.4736 ff.86-88, fr.2812 ff.44-46) and does not treat fr.20140 or the 1557 letter.
-- Image: https://gallica.bnf.fr/ark:/12148/btv1b52521512h/f69.item (canvases f69-f72 = f.35r-f.36v).
-- Folder and search log: https://github.com/noautopilot/cipher-lab/tree/main/ciphers/fr20140-danzay-1557 and
-  https://github.com/noautopilot/cipher-lab/blob/main/ciphers/fr20140-danzay-1557/AUDIT.md
-
-**4. A note for your list: Raince to Madame, 25 Oct 1525 (BnF Dupuy 452, the Carpi embassy)**
-
-Your 1526 Raince key opens Raince's cipher letter to Louise of Savoy of 25 Oct 1525. That letter is not open in the
-sense of unread: a contemporary decipherment sits in the same volume at f.31, and Gilbert Jacqueton printed its
-plaintext in 1892 (*La politique extérieure de Louise de Savoie*, pièce justificative XXXIII, pp.366-370,
-https://archive.org/details/lapolitiqueext00jacquoft/page/366). Our reading agrees with that text on 87% of letters.
-"The plaintext and a contemporary decipherment of this specific letter were already known and in print before this
-project began." If your list carries it as unsolved, Jacqueton 1892 is the citation.
-
-- Image: https://gallica.bnf.fr/ark:/12148/btv1b10036146c ; folder:
-  https://github.com/noautopilot/cipher-lab/tree/main/ciphers/dupuy452-carpi-1520 (AUDIT.md, class N0).
-
-Every reading is regenerated by a script from the transcription and the key, and every token is graded (H from a key
-source, C from known plaintext, S cryptanalytic with a control, M uncertain). Corrections to any reading are welcome.
-
-If it would be useful for your list, we hold an index of the published keys (yours, Lasry's, and those recovered by
-the two open solver projects) with the letters each has read, and we can try any of them against volumes on Gallica
-that have not yet been checked. If there are items on your unsolved list you would most like attempted, or
-manuscripts you know to carry unread cipher with a key already published, we would be glad to take those first.
-
-______ (sign-off left blank for the person)
+With thanks,
+______
