@@ -353,7 +353,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T18:50Z	session_01AM1QY9fyfJjhREPeKiD3Yq	LANE R5 A (Sonnet, cap 8)	fr2933-salviati-1525 f.55r box-keyed passes	brief 2026-09-24-lane-r5-a-salviati-f55r.md
 2026-09-24T18:50Z	session_01AoYeGhfEGDkwnDewSZpGFi	LANE R5 B (Sonnet, cap 4)	fr2933-salviati-1525 key search	brief 2026-09-24-lane-r5-b-salviati-keysearch.md
 2026-09-24T18:50Z	session_01QMyFVUE8JCLdUA84ejLHKE	LANE R5 C (Sonnet, cap 5)	fr3151-seure-1558 coarse buckets gate	brief 2026-09-24-lane-r5-c-seure-buckets.md
-2026-09-24T19:28Z	session_014h8NBTYn6n4zEJj4WKug2H	detIMG image cipher-page detector (Sonnet, cap 0)	tools/cipher_page_detector.py + controls + first Nevers sweep	done 19:40, $3.99, N, gate failed (recall 0.69, fpr 0.21), no sweep; archived 19:49
+2026-09-24T19:28Z	session_014h8NBTYn6n4zEJj4WKug2H	detIMG image cipher-page detector (Sonnet, cap 0)	tools/cipher_page_detector.py + controls + first Nevers sweep	done 19:40, $3.99, N, gate failed (recall 0.69, fpr 0.21), no sweep; archived 19:48
 2026-09-24T19:30Z	session_01LkLwkoH7BJ35HRShmiPC7z	LANE N4 csKSa (Sonnet, cap $5)	check-solved KS-01..04 (Nevers/Revol/Pisany 1593, keys 60/46)	brief lane-n4-csKSa
 2026-09-24T19:30Z	session_01TYVoWNCXu2PdkUd7euTUd9	LANE N4 csKSb (Sonnet, cap $5)	check-solved KS-05..07 (Court to Nevers 1593-94, key 60)	brief lane-n4-csKSb
 2026-09-24T19:30Z	session_01PKTy3iKiH3LzJpQauLb8Wu	LANE N4 csNA (Sonnet, cap $5)	check-solved CS2-18/-21/-22 at the Nationaal Archief	brief lane-n4-csNA
