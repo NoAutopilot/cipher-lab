@@ -284,3 +284,14 @@ Demandt is closed; 57's Dresden witness is August's minute "met een 'Zettel'", u
 plaintext in clear; V3's "Rachfahl II.1" was vol. II part 2, and II.1 (1907) was checked only through HTRC token counts.
 Suggestions: a solver pass on f.266v with key_53; Dresden inquiry for Loc. 9941/3 f.268-269; KHA inquiry for A 11/XIV
 I/4 nr. 26.
+
+## A3: second audit of 53 and 57 (24 Sept 2026, Second Auditor A3 for LANE V2)
+
+Classes in AUDIT.md "Second audit 53/57 (A3)": 53 N3, 57 N3 (A2's classes stand; neither raised nor lowered).
+Findings: Japikse, *Correspondentie van Willem den Eerste* I (1934) ends with letters of September 1561 (chronological
+list pp.386-389, read on the Huygens retroboeken viewer), so it prints neither 53 (24 Oct) nor 57 (18 Nov); the KHA
+"Collectie Japikse" copies are preparation for an unpublished continuation. Goetz 1891 (the 1562 election), Weiss VI-VII,
+Ritter I (weak OCR) and Kruse 1934 (search-inside counts only) print neither cipher passage. Phrase searches on the
+f.266v sentence (F1's reading) returned nothing. 53's reading is S grade only (M 126 of 364), so its class covers the
+text as read. Gaps for an N4 decision: Kluckhohn I clean read, Rachfahl II.1 as text, OpenAlex and Semantic Scholar
+(429 twice), Kervyn II.

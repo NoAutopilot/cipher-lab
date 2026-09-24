@@ -388,3 +388,130 @@ Outreach: gate 2 open on JSTOR lines 48-49 (ASKS row 37). CONTRIBUTIONS.md row a
 
 Requests (D1, this item): data.htrc.illinois.edu 1; archive.org 4 (advancedsearch 2, metadata 1, djvu 1);
 www.googleapis.com 2; www.koninklijkeverzamelingen.nl 1 browser load; WebSearch 1.
+
+---
+
+# Second audit 53/57 (A3) (Second Auditor A3 for LANE V2, 24 Sept 2026, 10:17-10:35 UTC)
+
+This session solved neither letter and did not decode or re-read any cipher. It read A2's log first and did not repeat
+A2's searches. Claims under audit: A2's N3 for 53 and for 57; the 53 reading as extended by LANE R2 F1 to f.266v.
+
+## A3.1 Verdict
+
+| item | class | prior plaintext | prior decipherment | evidence quality of our reading | confidence |
+|---|---|---|---|---|---|
+| WVO 53, cipher postscript f.266r-v (Dresden Loc. 9941/3), Orange to August, Breda 24 Oct 1561 | **N3** (A2's class stands) | none located | none located; the leaf carries none | **S only**: 364 tokens, S 238, M 126 (35% M), H 0, C 0; key_53 recovered cryptanalytically, matched control 99.3%. The class covers the text as read, not a letter-perfect text | moderate |
+| WVO 57, cipher enclosure on p3 (KHA A 11/XIV B/41-6), August to Orange, Torgau 18 Nov 1561 | **N3** (A2's class stands) | none located | none located; the leaf carries none | C 247, M 53 of 300 (key of WVO 74, a sibling letter's decipherment) | moderate |
+
+Neither item is raised to N4 by this audit: a separate D-verifier decides N4. What the principal-families table still
+lacks is in A3.5. Neither item is lowered: no source prints either cipher passage or a paraphrase of it.
+
+## A3.2 The finding that matters: Japikse I stops before both letters
+
+The 20th-century "Collectie Japikse" copy of 53 in the KHA looked like a route to a printed decipherment, since
+Japikse's *Correspondentie van Willem den Eerste* I (1934) prints the Prince's cipher passages deciphered in spaced type
+(V4, `ciphers/gunther-van-schwarzburg-1561/AUDIT.md`, no.316, solved by H. Koot). Checked in the edition itself (Huygens
+retroboeken viewer `willem_den_eerste`, its own full-text search and its page OCR, 24 Sept 2026):
+
+- **Chronologische lijst, pp.386-389:** the last dated letters are "1561 Sept. ... 19 Aan [August], 286; 29 [Aan
+  August], 287; 9 Aan de Landvoogdes Margaretha, 288" with a note "7 Oct., de Landvoogdes aan de Prinses van Oranje".
+  p.390 begins the list of archives. **No letter of 24 Oct or 18 Nov 1561 is in the volume.** No later volume was
+  published, so the Japikse copies of 53 (and of 126) are preparatory work for an unpublished continuation.
+- Edition-wide search: "Navarre" hits pp.127 and 325 (other letters) and the index only; "Navarra" 0; "Maximilian" 0;
+  "Torgau" last in the text at p.285 (10 Sept 1561).
+- D1's line "Japikse ... stops 1561; not applicable to 1564" is right for 126 and now holds for 53 and 57 as well:
+  the volume stops at the end of September 1561.
+
+## A3.3 Families attacked (A3's own searches, 24 Sept 2026)
+
+| family | status | what | result |
+|---|---|---|---|
+| Japikse, Correspondentie Willem den Eerste I (1934) | searched | retroboeken search x4 (Navarra, Maximilian, navarre, Torgau); pages.json; index pp.386-390 page text (resources.huygens.knaw.nl, 8 requests) | ends Sept 1561; 53 and 57 not in it |
+| Goetz, *Maximilians II. Wahl zum römischen Könige 1562* (1891) (IA `WalterDieWahlMaximiliansII`, full djvu text) | searched | grep Oranien, Navarra, Breda, Oct-Nov 1561, Sachsen, Dresd | the standard monograph on the 1561-62 approach to the Electors (from Moser, Sickel, Kluckhohn, Bucholtz, Venetian reports). Orange appears only for the Leipzig wedding and a Paris rumour of Oct 1561 (Languet to Mordeisen, *Arcana* 2, 154). August's letter to Orange is not cited or quoted |
+| Ritter, *Deutsche Geschichte im Zeitalter der Gegenreformation* I (IA `deutschegeschich01rittuoft`) | searched (weak) | grep Oranien, Vendôme, Navarra | Oranien in the 1560s narrative only; nothing on these letters. Fraktur OCR is garbled: a weak negative |
+| Weiss, *Papiers d'État du cardinal de Granvelle* VI (1560-62) and VII (IA `papiersdtatduca00grangoog`, `papiersdtatduc07gran`) | searched | grep Saxe, roi des Romains, Vendosme, prince d'Espagne + tante, Saxe + chiffre | VI carries Chantonnay's and Granvelle's rumours that the Protestants or the Duke of Saxony might aim at the Roman crown, and the Orange-Saxony marriage. No Orange-August letter, no cipher from them |
+| Kruse, "Wilhelm von Oranien und Anna von Sachsen", *Nassauische Annalen* 54 (1934) (Google Books `TCsjAQAAIAAJ`, search inside, no text view) | searched (weak) | Vendome, Vendosme, "römischen König", Juana, Chiffre, Ziffern, Geheimschrift, Zettel: 0 pages each. Navarra 2 pages (one is the index, p.180), Maximilian 5, "Karl von Spanien" 3 | no page carries the vocabulary of either cipher passage together. Snippets were not shown; page counts only |
+| *Nassauische Annalen* 2007 (article on Breda 1561 and the Orange-Wettin marriage) (Google Books `bBFoAAAAMAAJ`, search inside) | searched (weak) | Chiffre 0; Navarra 1 page; Oktober 1561 2 pages | page counts only; no text view |
+| Reichstagsakten, Reichsversammlungen 1556-1662 | searched | Google Books API volume list | published volumes returned are Regensburg 1556/57, Frankfurt 1558 / Augsburg 1559 and later diets. No volume for the 1562 Frankfurt election was found (confirms A2) |
+| Gachard, *Don Carlos et Philippe II* (IA, 5 scans) | searched, as a control | IA full text, "prince d'Espagne" "sa tante" 1561 mariage | the Don Carlos-Juana marriage rumour **is** in print and the phrase search finds it. It is the event, reported by others. Not Orange's letter |
+| Phrase search on the new f.266v text (53) and on 57 | searched | Google Books API 18 queries + 5 to surface Kruse; IA be-api 9 queries | see A3.4 |
+| books.google.com page text (Goetz pp.64, 86, 114) | unreachable | "Sorry ... automated queries" on 3 requests, after 16 search-inside requests at 3.5 s. Stopped, logged in ROOM 10:25 | Goetz read on IA instead |
+| OpenAlex, Semantic Scholar | unreachable | HTTP 429, 1 request each, stopped (as for A2) | not searched |
+| Kluckhohn, Briefe Friedrichs des Frommen I | not repeated | A2 grepped it (weak OCR). Goetz cites Kluckhohn I 246 ff. and 303 n.1 for the Palatine side only | gap unchanged (weak) |
+| Kervyn de Lettenhove, *Relations politiques* II | not reached | IA title search: 0 items | gap |
+| Wartenberg (Politische Korrespondenz Moritz, to 1553); Bezold (Johann Casimir, from 1576) | not applicable | out of range | logged |
+| Kretzschmar | unreachable | as A2 | gap |
+| Dresden minute of 57 (Loc. 9941/3 f.268-269, "met een 'Zettel'") | unreachable | not imaged by WVO | unseen. It could lower 57 (N0-in-substance), never raise it |
+
+## A3.4 Phrase search (A3)
+
+| item | phrase | Google Books | IA full text |
+|---|---|---|---|
+| 53 f.266v | "König zu Frankreich noch so jung" / "konig zu franckreich noch so jung" | 0 / 0 | 0 / 0 |
+| 53 f.266v | "dieweil der König zu Frankreich noch" | n/a | 0 |
+| 53 f.266v | "keinen furgang gewinnen" / "werde keinen furgang gewinnen" | n/a / 0 | 9, all other texts (Ludwig of Bavaria, city chronicles) |
+| 53 f.266v | "keinen Fortgang gewinnen" Navarra | 300, all the Ersch-Gruber *Encyclopädie* on a medieval Navarre siege | n/a |
+| 53 | "seines vaters schwester" "printzen zu hispanien"; "diese Lande zu regieren" Hispanien 1561; "Prinz von Hispanien" "seines Herrn Vaters Schwester" | 0 each | n/a |
+| 53 | "hertzog von Vendosme" Navarra 1561 Oranien | 1, an 1855 atlas (genealogy) | n/a |
+| 53 | "24 Octobris" 1561 Breda Oranien Kurfürst | 0 | n/a |
+| 53 control | "prince d'Espagne" "sa tante" 1561 mariage | n/a | Gachard, *Don Carlos et Philippe II* (the rumour, from Spanish and French dispatches) |
+| 57 | "bei seinem Leben zu einem römischen König" | 0 | n/a |
+| 57 | "Maximilianum" "römischen König" 1561 Torgau; "seinen Sohn König Maximilian" Kurfürsten 1561 | n/a | unrelated hits |
+| 57 | "zu einem Römischen König" "bei seinem Leben" Maximilian 1561 | n/a | 7, unrelated (Strasbourg chronicle; an Oct 1561 letter to Maximilian on another matter) |
+| 57 | keyword queries (Kaiser Ferdinand, Gesandte, Kurfürst August, Wahl Maximilian, 1561; Zasius) | Goetz 1891; Holtzmann 1903; Laubach 1977 (*Protestantisches Kaisertum*); Westphal 1975 (*Freistellung*) | n/a |
+
+The four keyword hits for 57 are histories of the election approach. The event of 57 (the Emperor's envoys to the
+Electors in late 1561) is printed there. That is the event, not the letter. No hit prints or paraphrases August's
+enclosure to Orange or Orange's f.266v sentence.
+
+## A3.5 N4: what the principal-families table still lacks (for the D-verifier)
+
+| family | state after A2 + A3 | what would close it |
+|---|---|---|
+| Groen t.I and Supplément; Gachard *Correspondance de Philippe II* t.1-2; Weiss VI-VII; Japikse I; Rachfahl I and II.2 (text), II.1 (HTRC tokens); von Weber; Goetz 1891 | covered | nothing |
+| Demandt, HessJb 38 (1988) nrs. 113, 115 | snippet text only (A2) | a page image, or accept the chained snippets |
+| Rachfahl II.1 (1907) | HTRC token bags only, not read as text | a text or page read of the 1561 chapter and its notes (HathiTrust is Cloudflare-blocked here) |
+| Kluckhohn I; Ritter I | Fraktur OCR, weak | a clean text or page read of Kluckhohn I for Nov 1561 |
+| Kruse 1934; *Nassauische Annalen* 2007 | page counts from search inside only | a text read of the pages with Navarra / Maximilian |
+| Kervyn, *Relations politiques* II | not reached | IA or HathiTrust grep |
+| OpenAlex, Semantic Scholar | 429 twice (A2, A3) | one run from another host or a later session |
+| JSTOR | rows 55-56 queued (A2), rows added by A3 | owner's runner; does not block |
+| Dresden minute of 57 with 'Zettel'; KHA Japikse copy of 53 | unpublished, unimaged | N4 does not exclude unpublished work; they can only lower the class |
+
+For **57**, the D-verifier needs Kluckhohn I read clean (Palatine letters of Nov 1561, where August may pass the same
+news to Friedrich III in similar words) and the open indexes. For **53**, it needs the open indexes and Rachfahl II.1 read
+as text. **53 carries a further caution:** 35% of its tokens are M, so a phrase search on its text may miss a print
+that words the passage differently. The D-verifier should search on the gist (Don Carlos + aunt + "these lands";
+Vendôme + Navarre "by good or by war"; the King of France too young) as well as on phrases.
+
+## A3.6 Did we first-decipher?
+Not established. No prior decipherment of either item was located. For 57, August's minute with its 'Zettel' may hold
+the plaintext in clear. Rule 10 allows no priority wording at N3.
+
+## A3.7 Sentences
+- **53 safe:** "The cipher postscript of Orange's letter to Elector August, Breda 24 Oct 1561 (Dresden Loc. 9941/3
+  f.266r-v; WVO 53), reads with a cryptanalytically recovered key (S 238, M 126 of 364 signs; matched control 99.3%)
+  as news that the Prince of Spain would marry his father's sister and come to govern the Netherlands, that the Duke
+  of Vendôme would recover Navarre by agreement or by war, and Orange's view that, the King of France being so young,
+  it would come to nothing. No prior decipherment or printed plaintext was located in the sources listed in AUDIT.md
+  (24 Sept 2026); Japikse's edition ends in September 1561."
+- **53 unsafe:** "Orange's 1561 cipher read for the first time" (N3, cryptanalytic, 35% M).
+- **57 safe:** A2's 57 sentence stands, with "Japikse's edition ends in September 1561" added to the sources.
+- **57 unsafe:** "an unpublished Saxon report of the 1561 election approach" (N3; the minute and its 'Zettel' are
+  unseen, and the approach itself is printed in Goetz 1891).
+
+## A3.8 Postmortem and corrections
+- **Failure (verifier coverage, not an over-claim):** A2 and D1 logged Japikse only as "stops 1561", without the month.
+  For 1561 letters the month decides. It ends in September, so the result stands, but the log did not show why. Lesson:
+  log an edition's range to the month when the item falls in its last year.
+- **Stale sentences corrected in place:** status.json's line "three more cipher lines on f.266v are unread" and its
+  grade "53 (p1 only): S 163, M 119 of 282" now read both pages (S 238, M 126 of 364). The SO prompt for 53/57 now
+  carries the f.266v text and the Japikse range. NOTES.md gets an A3 section.
+- **Over-claims:** none found in the folder for 53 or 57. F1's report used "read with key_53", no priority wording.
+- **Suggestions (not done):** (1) Kluckhohn I clean read for Nov 1561; (2) OpenAlex and Semantic Scholar from a session
+  whose IP is not rate-limited; (3) the Dresden inquiry for Loc. 9941/3 f.268-269 (A2's suggestion 3) remains the one
+  route that could lower 57.
+
+Requests this session: resources.huygens.knaw.nl 8; www.googleapis.com 23; books.google.com 16 search-inside + 3 page
+text (blocked, stopped); www.google.com 1; archive.org ~16 (advancedsearch, metadata, djvu text); be-api.us.archive.org 9;
+api.openalex.org 1 (429); api.semanticscholar.org 1 (429). No subagents.
