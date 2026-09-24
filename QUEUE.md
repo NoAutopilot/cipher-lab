@@ -5734,6 +5734,65 @@ Per-host report this pass: `digitarq.arquivos.pt` ~126 requests (API discovery/e
 WebSearch. Files: `tools/digitarq_fetch.py`, `tools/tests/test_digitarq_fetch.py`,
 `tools/tests/fixtures/fake_digitarq_curl.py`, `sources/solver-diffs/2026-09-24-pares-digitarq.tsv`.
 
+### By unit description, not the detector (LANE N4 scDIGI2, 24 Sept 2026)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n4-scDIGI2.md`. Method: `GET /api/docs/search?query=TERM` (top-10 +
+`total`, pagination still broken -- every `fromIndex`/`page`/`max` combination tried against `/api/docs/search`
+is ignored, same first 10 rows every time) run for `cifra`, `contra-cifra`, `chave de cifra`, `chave para cifra`,
+`chave de uma cifra`, `cifra e decifra`, `cifra secreta`, `em cifra`, `cifra de Francia`, `conde de Miranda cifra`,
+plus the bare `chave`/`cifrada`/`decifrada` controls (the last two match scPARES's own counts exactly: `cifrada`
+39, `decifrada` 2, same rows, both already reviewed as 20th-c. administrative and not carried forward again).
+**The children-walk half of the brief did not work**: `GET /api/docs/details/{id}` gives a `children.total` for a
+parent unit (e.g. `PT/TT/MMCG/3L` UI-level `total=25`) but `children.results` is an empty array on every variant
+tried (`?fromIndex=0&max=30`, `?childrenFromIndex=...&childrenMax=...`, a `POST` to the same path -- 401
+Unauthorized). No `/api/docs/{id}/children` or `/api/docs/details/{id}/children` route exists (falls through to
+the Next.js HTML shell, not JSON). `parentId=`/`rootParent=` on `/api/docs/search` is silently ignored the same
+way `query` is on `advancedSearch` (returns the whole ~7.5M-record unfiltered count). So the hierarchy was walked
+the other way instead: each search hit's own `details` response carries a `parent`/`rootParent` object with the
+containing fonds/maço's title and reference code for free, and searching a *narrower* phrase surfaces siblings a
+broader one buries past position 10 (e.g. `conde de Miranda cifra` alone pulled 8 more `PT/TT/MMCG/3L/0000NN`
+siblings than `contra-cifra` or `em cifra` had shown). Drop-check: none of the reference codes or correspondent
+names below are in `oldest/scan_2026-09-23/iberia.md` (out of its pre-1449 scope in any case) or in a fresh grep
+of a `dbourdeau/cyphersolver` shallow clone's text files (`aaymeloglu/unsolved-ciphers` not cloned this pass, the
+brief named only Bourdeau's repo), or elsewhere in this repo's QUEUE.md/CATALOG.md/LANDSCAPE.md.
+
+Two copy-free finds, both digitized (`hasImages:true`), both eye-checked at full working resolution:
+
+| Row | Archive / signatura | Date | Description (archive's own note, cipher content bolded) | Image URL tested | Copy-free | Kind |
+|---|---|---|---|---|---|---|
+| PP-03 | ANTT `PT/TT/CLNH/0086/11` (fonds **Condes de Linhares**, maço 86, 1780-1827) | undated within 1780-1827 | Catalogue title "Chave de uma cifra"; 6-image item bundling loose papers under one archival unit: m0001 an unrelated French billet-doux ("brûlez ceci"), **m0002 a page of live numeric ciphertext** (`328923 336227 328511/2 ...`), **m0003-m0004 a titled "Chave" explaining the system in full** (a book/dictionary cipher: 1st digit = how many digits give the dictionary page, next digit = column 1/2/3, remainder = word position counted from front or back of the column; groups starting 4-9 are null-padding signalling a switch to the *English* dictionary; worked example decodes to "a guerra de Franca com a Russia parece inevitavel" -- fits the maço's 1780-1827 span, plausibly the 1807-08 or 1812 crisis), m0005-m0006 an unrelated Hope & Co. Amsterdam exchange-rate note | `https://digitarq.arquivos.pt/fileViewer/a03cef08d3c04758aa148f5be56d3401` (6/6 images pulled full-res, CC BY-SA 4.0, no login) | copy-free | recovery (key is on the same catalogued unit as a ciphertext page; neither transcribed nor applied this pass) |
+| PP-04 | ANTT `PT/TT/FCC/001/0021/00026` (fonds **Familia Costa Cabral**, sub-fonds "Documentacao pertencente a Antonio Bernardo da Costa Cabral -- correspondencia de varias pessoas sobre assuntos politicos") | 8 July 1865 | Catalogue note: "Inclui um rascunho de uma copia de carta cifrada: (...) pa-pa (419-419), di-ga-mo (926-923-1212) [...]". 3-image item: m0112 a plaintext "Reservadissimo" cover letter, signed "Caetano de Magalhães", Secretaria, 8 Julho 1865, to "Meu caro Conde", about routing a confidential copy of a letter from "Sua Santidade" (the Pope) to the Minister without the Pontifical government suspecting -- Conde d'Ávila named as the (ill) minister, a Padroado-era Rome negotiation; **m0113-m0114 the cipher draft itself, a 4-digit nomenclator, with the plaintext syllable written directly above almost every number** ("Con-fi-dev-ci-ar" / "99-629-737-20-428", "Rei" / "342", etc.) -- a self-glossed encoding worksheet, not an independent later decipherment, but it hands over roughly 50 syllable/word-to-number pairs of this 1865 Secretaria cipher for free | `https://digitarq.arquivos.pt/fileViewer/b482fac086d54e2bae791264bb78b79f` (3/3 images pulled full-res, CC BY-SA 4.0, no login) | copy-free | recovery (plaintext syllables interlined on the cipher draft itself; not yet transcribed into a key file) |
+
+Six more units carry an explicit cifra/chave hit in their own catalogue description but `hasImages:false`
+(`hasPublishedRepresentations:false`) -- not digitized, so not eye-confirmable and not copy-free; logged here as
+copy-order leads rather than pursued (LANE N4's copy-free-only goal), not nominated:
+
+| Row | Archive / signatura | Date | Description (archive's own note) | Copy-free | Kind |
+|---|---|---|---|---|---|
+| PP-05 | ANTT `PT/TT/MSLIV/1017/00223` | 28 Apr 1645 | "Carta do rei D. João IV ao marquês de Nisa Vasco Luís da Gama, embaixador em França, remetendo carta em cifra de Francisco Taquet" (Taquet = Fernando de la Houe, secret agent, the infante D. Duarte's channel to European politics before his 1640-49 captivity in Milan) | copy-order | cryptanalysis (letter forwarded, not itself catalogued) |
+| PP-06 | ANTT `PT/TT/CLNH/0020/14` (Condes de Linhares) | undated | "Chave de uma cifra" | copy-order | recovery (key only) |
+| PP-07 | ANTT `PT/TT/CLNH/0078/80` (Condes de Linhares, maço 78) | undated | "Chave de uma cifra" | copy-order | recovery (key only) |
+| PP-08 | ANTT `PT/TT/MMIP/23` | undated | "Chave para a leitura de uma cifra"; description transcribes the key's own heading: "Chave para decifrar da cifra que chamamos de Franca. Esta cifra tem D. Luis da Cunha, Sebastiao Jose de Carvalho [Pombal]. Fica para mandar-se brevemente a Antonio Freire de Andrade." -- an 18th-c. diplomatic cipher named "de Franca" | copy-order | recovery (key only) |
+| PP-09 | ANTT `PT/TT/CPN/000210` | 24 Apr 1658 | "Carta ao embaixador do Rei de Portugal em Roma" -- "Parcialmente em cifra." | copy-order | cryptanalysis |
+| PP-10 | ANTT `PT/TT/MMCG/3L` (parent title: *"Cartas do conde de Miranda, que escreveu sendo embaixador extraordinario em Holanda a Francisco de Melo sendo embaixador extraordinario em Inglaterra"*, 1658-1660; `children.total`=25, walked by narrowing the search query, not the broken children endpoint) -- individually catalogued D-level letters, at least 8 distinct ones confirmed by id: `000009` (26 Dec 1659), `000011` (undated), `000034` (26 Mar 1660), `000050` (27 May 1660), `000058` (25 Jun 1660), `000059` (28 Jun 1660), `000062` (23 Jul 1660), `000063` (30 Jul 1660), `000072` (17 Sep 1660), `000076` (5 Oct 1660, "Toda a carta esta em cifra"), `000080` (15 Oct 1660) | 1658-1660 | Each item's own description: "Parte da carta esta em cifra" (most) or "Toda a carta esta em cifra" (000076) | copy-order | cryptanalysis (~25-letter series, one correspondent pair, one embassy) |
+
+**Flag, not a row -- cross-reference for the orchestrator:** PP-10 (Conde de Miranda, ambassador extraordinary in
+Holland, to Francisco de Melo [Torres], ambassador extraordinary in England, 1658-1660) is the same Anglo-Dutch-
+Portuguese diplomatic circle as PP-01 (`PT/TT/LMP/0001`, Francisco de Melo/marques de Sande's own embassy
+archive) and QUEUE row N45 (BL Add MS 38038, the English-side despatches for the same embassy) already flagged
+by scPARES -- three archives, one correspondence network, none yet leaf-confirmed or cross-checked for
+duplicates/decipherments across them.
+
+No ciphers/ folder created, no nomination posted (scouts don't). Output also in
+`sources/solver-diffs/2026-09-24-pares-digitarq.tsv` (rows PP-03..PP-10 appended, same columns as the scPARES/
+scDIGI rows).
+
+Per-host report: `digitarq.arquivos.pt` ~47 requests (13 search-term queries, ~21 `details` calls including the
+children-pagination probes above, 2 `--list` + 9 image pulls via `tools/digitarq_fetch.py` for PP-03/PP-04), all
+>=3s apart, well under the brief's <=150 cap. `github.com` 1 shallow clone (`dbourdeau/cyphersolver`, grep only).
+WebSearch: 0 (not needed; scope was the DigitArq catalogue itself). Files: `QUEUE.md`,
+`sources/solver-diffs/2026-09-24-pares-digitarq.tsv`.
+
 ## CS2 copy-order rows: item-level viewer checks (LANE N4 scARCH2, 24 September 2026 20:17 UTC)
 
 Brief `.claude/briefs/runs/2026-09-24-lane-n4-scARCH2.md`. Item-level lookups for the three CS2 copy-order
