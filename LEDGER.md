@@ -10,6 +10,11 @@ worker); if a row already cites it, do not append a second one -- a row a lane o
 write may already be there from another lane or the parent (RETRO-2026-09-24b: two exact-duplicate rows this
 window, from two of five concurrent orchestrators archiving the same session). Add a `Session` column after
 `Model` from 24 Sept 2026(b) rows carrying the session id, so this check is a grep, not a full-row string match.
+RETRO-2026-09-24e: the grep-first instruction and the five-code-only instruction below were both restated in this
+header once already (RETRO-24b, RETRO-24d) and both kept failing at a higher rate in the very next window (a
+second exact-duplicate session id; 64% of rows using a non-standard code, up from 32%). Run `python3
+tools/ledger_check.py` before every `tools/room.py --push` that touches LEDGER.md; a worker whose own row it flags
+fixes that row before pushing, not after.
 
 Outcome codes: **D** delivered on brief and stopped; **D-** delivered but needed a poke to push, or ran past
 the brief; **F** failed (usage limit, init error, blocked); **X** over-claimed and was corrected, written on the
