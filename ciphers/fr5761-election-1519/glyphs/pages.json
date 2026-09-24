@@ -1,0 +1,72 @@
+{
+ "f104": {
+  "image": "images/canvas104_folio50v.jpg",
+  "box": [
+   20,
+   650,
+   1480,
+   2200
+  ],
+  "median_h": 22.0
+ },
+ "f105": {
+  "image": "images/canvas105_folio51r.jpg",
+  "box": [
+   20,
+   20,
+   1480,
+   2180
+  ],
+  "median_h": 23.0
+ },
+ "f106": {
+  "image": "images/canvas106_folio51v.jpg",
+  "box": [
+   20,
+   230,
+   1480,
+   2210
+  ],
+  "median_h": 24.0
+ },
+ "f107": {
+  "image": "images/canvas107_folio52r.jpg",
+  "box": [
+   20,
+   220,
+   1480,
+   2190
+  ],
+  "median_h": 20.5
+ },
+ "f108": {
+  "image": "images/canvas108_folio52v.jpg",
+  "box": [
+   20,
+   20,
+   1480,
+   2240
+  ],
+  "median_h": 20.5
+ },
+ "f109": {
+  "image": "images/canvas109_folio53r.jpg",
+  "box": [
+   20,
+   220,
+   1480,
+   2180
+  ],
+  "median_h": 14.0
+ },
+ "f110": {
+  "image": "images/canvas110_folio53v.jpg",
+  "box": [
+   20,
+   260,
+   1480,
+   2180
+  ],
+  "median_h": 22.0
+ }
+}
