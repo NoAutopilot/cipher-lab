@@ -832,3 +832,68 @@ above rather than closing them.** No titles or DOIs to report. This does not cha
 Requests this session (shared with the thurloe-printed pass): api.openalex.org 2 for these two queries (429,
 no retry, per the IP-wide exhaustion message already confirmed once this session); api.semanticscholar.org 2
 for these two queries (429). One at a time, >=2s apart, no logins.
+
+## Talk gap closed via talk.zooniverse.org (LANE W2 worker E1, 24 Sept 2026)
+
+LANE W2 worker E1 (Sonnet, cap $5, for LANE W2 session_01CLm9uFwyau9hRmDcm2vALE), 11:00-11:05 UTC. No decoding,
+no reclassification (per brief). The blocker in 'N4 decision' and 'Talk gap, second attempt' above was that
+`talk.zooniverse.io` is refused by the egress proxy. `talk.zooniverse.org` (the same API on the plain `.org`
+domain, not `.io`) answers plain curl with HTTP 200 JSON and is not blocked; this closes the gap without a
+person in a browser (ASKS row 27).
+
+**Method.** Comments and discussions endpoints direct on the three subjects, then a project-wide keyword search
+via `/searches?section=project-<id>&query=<term>`. Project id 2125 confirmed via
+`www.zooniverse.org/api/projects?slug=zooniverse/decoding-the-civil-war` (matches the id already recorded in
+this file's 'N4 decision' search log). One request at a time, >=1.5 s apart.
+
+**Per-subject direct check** (`/comments?focus_id=<id>&focus_type=Subject` and `/discussions?focus_id=<id>&focus_type=Subject`):
+
+| subject | telegram(s) | comments | discussions |
+|---|---|---|---|
+| 2880207 (mssEC_19_049) | E4 tel080, E5 tel081 | 0 | 0 |
+| 2317144 (mssEC_25_077) | E4 (second ledger copy) | 0 | 0 |
+| 2317146 (mssEC_25_079) | E5 (second ledger copy) | 0 | 0 |
+
+No volunteer or staff ever commented on, or opened a discussion thread on, any of the three subject pages that
+carry E4 or E5.
+
+**Project-wide keyword search** (`/searches?section=project-2125&query=<term>`), camels/Tecumseh/Pamlico/cavalry
+depot/Elizabeth harsh from ASKS row 27, plus four more distinctive phrases from the E4/E5 readings (reading.md):
+
+| query | hits | any on subject 2880207/2317144/2317146? | what the hits actually are |
+|---|---|---|---|
+| camels | 1 | no (subject 2880486) | an unrelated April 1865 Lincoln-Weitzel telegram where "Camel" is a misreading of "Campbell" (Judge Campbell) |
+| Tecumseh | 2 | no (subjects 2323008, 2317286) | Sherman's own name (William Tecumseh Sherman) and a hashtag `#uss_tecumseh` on an unrelated ironclad-roster subject |
+| Pamlico | 0 | -- | -- |
+| cavalry depot | 0 | -- | -- |
+| Elizabeth harsh | 0 | -- | -- |
+| brave youths | 0 | -- | -- |
+| Hatteras | 1 | no (subject 2316177) | an unrelated telegram about a bottle picked up off Hatteras |
+| block the channel | 0 | -- | -- |
+| cavalry horses | 9 | no (subjects 2313957, 2314422, 2314473, 2322487, 1959475, 2315656, 2315589, 2316617, 2881579) | nine unrelated telegrams about cavalry remounts (Rosecrans, Grant, Longstreet, Canby, etc.), none Meigs-to-Butler and none is E5's "1000 Cavalry Horses now at the Cavalry Depot" |
+
+Every hit lands on a different subject from the three that carry E4 or E5, and every hit's content is a
+different telegram. **No Talk comment anywhere in the project discusses, quotes, or offers a decipherment of
+either E4 or E5.**
+
+**Wayback CDX**, one request at a time, >=3 s apart (the three lost to resets in 'Talk gap, second attempt'
+above): the zooniverse.org Talk prefix now has captures (it did not on 20 Sept per that section) --
+`cdx/search/cdx?url=zooniverse.org/projects/zooniverse/decoding-the-civil-war/talk*` returns 7 rows, but every
+captured discussion path (429/436984, 429/65061, 433/110335) is a different discussion id from the ones behind
+subjects 2880207, 2317144, 2317146. The three subject-specific URLs
+(`.../talk/subjects/{2880207,2317144,2317146}`) each still return `[]`, no captures at all -- consistent with
+the live API's own 0 comments/0 discussions for all three: there is nothing on those pages for Wayback to have
+captured. No resets this pass (4/4 CDX requests HTTP 200).
+
+**Result: gap closed, negative.** Zooniverse Talk (comments, discussions, and a project-wide keyword search
+across camels/Tecumseh/Pamlico/cavalry depot/Elizabeth harsh/brave youths/Hatteras/block the channel/cavalry
+horses) carries no comment on subjects 2880207, 2317144 or 2317146, and no comment anywhere in the project that
+discusses or decodes E4 or E5. Per 'N4 decision' above, this was the one uncovered principal family; not
+reclassifying here (that is the verifier's call), but nothing found by this search stands in the way of N4 for
+E4 and E5. Files: `sources/talk/{talk_2880207_p1,talk_2880207_disc,talk_2317144_comments,talk_2317144_disc,
+talk_2317146_comments,talk_2317146_disc,search_queries.json}` (comment bodies, ids, created_at, discussion/board
+ids only; no user names or ids kept, and the three subject/comment endpoints returned 0 rows so there was
+nothing to redact there); `sources/talk/cdx/{talk_prefix,subject_2880207,subject_2317144,subject_2317146}.json`.
+
+Requests: talk.zooniverse.org 15 (6 direct comments/discussions + 9 searches), www.zooniverse.org 1 (panoptes
+project lookup), web.archive.org 4 (all HTTP 200, no resets). No subagents.
