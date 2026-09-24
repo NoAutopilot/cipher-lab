@@ -2,6 +2,13 @@ open
 
 (Per letter, 24 Sept 2026: 5218, 5222 and 5200 found-solved, all printed in clear in Groen; 5200 is N1 per AUDIT.md V6. 5207, 5213, 5221 and 5549 open; 5213 and 5221 have Groen prints to compare first, see AUDIT.md.)
 
+(5549, 24 Sept 2026, J5I image check: Groen's print agrees with the leaf for runs 1-61 (590/593, 2 real
+disagreements, 1 unresolved) EXCEPT that a large stretch after Groen's last printed cipher group -- most of
+image page p4's second half plus nearly all of p5, ~226 more numerals -- is cipher on the leaf that Groen
+prints as ordinary clear German with no mark of having been enciphered. This matches the letter's own
+postscript ("hab ich die alte Ciffer... bisz zu ende gebraucht"); key_1572 is the natural first test against it
+(not attempted here, decode out of scope for this pass). See "J5I" section below.)
+
 # Jan van Nassau to/from Willem van Oranje, seven cipher letters, 1572-1575
 
 QUEUE row: WV1 (`QUEUE.md`, "Willem van Oranje correspondence: unsolved cipher letters (LANE N harvest of 24
@@ -458,3 +465,106 @@ cipher marking. J2's decoded letters agree with the print at 454 of 460 (98.7%);
 no fresh reading: Groen pp.4-6 gives their text, and a C-graded alignment is the only useful further step.
 Lead: 5213 = Groen V DXXIII (Delft, 26 Nov 1574) and 5221 = Groen V DLXXIII (Dordrecht, 30 Jul 1575). Compare them
 before any passes. 5207 was not located in IV/V; 5549 is in GPAS, not checked.
+
+## J5I: image check of 5549 against Groen Suppl., and a new cipher stretch Groen never printed (24 September 2026)
+
+Worker J5I (Sonnet, cap $6), LANE R3. Per brief `.claude/briefs/runs/2026-09-24-lane-r3-jan5549-image.md`: pass
+the six leaf images (`images/05549_p1.jpg`..`p6.jpg`, 150dpi) against `groen/groen_5549.tsv` (Groen's Suppl.
+Lettre 45, 61 runs / 537 numerals, extracted by `groen/extract_5549.py`) run by run, settle the postscript
+question, and write the image-checked reading. **Does not decode, does not classify novelty.**
+
+**1. Agreement with Groen, pp.140-146 (runs 1-61).** Read every run against the image at 3-10x crop zoom
+(`crop.py --band`/`--yfrac`/`--xfrac`). Calibration: this hand's "4" is an open angular flag-top stroke, its "9"
+a closed round loop with a short descender tail -- the two are easy to swap below about 4x zoom and several
+early misreads (this pass's own) were corrected by re-cropping tighter. Of 537 numerals + 52 clear fragments
+(589 Groen tokens, minus a few page-split duplicate rows = 593 rows in `ciphertext_5549.tsv`'s Groen-matched
+section): **590 agree (grade "both"), 2 disagree (grade "image"), 1 unresolved (grade "M")**:
+- Run 3 pos 3: image reads **109** (closed-loop 9, confirmed against clean 9/4 exemplars elsewhere on p1:
+  "14.9." and "93" both read unambiguously), Groen prints **101**. A plausible 9-misread-as-1 on Groen's part,
+  or a genuine second value; not decided here.
+- Between run 9 pos 5 ("335") and run 10 pos 1 ("291"): the image has **an extra numeral, "340."**, that is
+  absent from Groen's own dbnl page text entirely (checked directly against `groen/gpas_lettre45.txt`, not just
+  the TSV extraction: "...335. für dz 340. zu 291..." on the leaf vs Groen's printed "...335. für dasz zu
+  291..."). This is a genuine Groen omission, not a TSV-extraction artifact (see next point for those).
+- Run 52 pos 3: image ambiguous between 69 and 89 at the zoom level read this pass; not resolved, flagged "M".
+- Two more values are present on the leaf and in Groen's own printed text but were never captured as numeral
+  rows by `extract_5549.py`'s regex, because the source prints them without a trailing period: **"126"**
+  (between run 28 pos 9 and run 29, "22.126 gantz 19.") and a **roman numeral "xlviii"** (=48, between run 7 pos
+  5 and run 8, "andere ahn xlviii. 124."). Both confirmed present on the leaf exactly as Groen's page text has
+  them (image and Groen agree; this is an extraction-tooling gap in the TSV, not a Groen-vs-image disagreement).
+  A third instance, **"iiij cl."** (roman "1111 cl.", =4 [something] 150, before run 16 pos 1 "138"), is also on
+  the leaf and in Groen's page text but likewise regex-missed; read at 14x zoom, moderate confidence on the "cl."
+  abbreviation specifically (a large looped flourish that could be "Ct" or a scribal mark rather than "cl.").
+  Per the brief: these roman-numeral groups stand on the leaf as roman numerals, not converted here.
+- Runs 55-61 (page144-146, image pages p3/p4) were checked at the same standard and agree with Groen throughout
+  (`passes/5549_image.tsv` runs 55-61).
+- Coverage note: runs 1-25 (p1, Groen page141) got full-zoom, mostly per-token verification. Runs 26-61 (p2-p4,
+  Groen pages142-146) got a fluent 3-4x read per line with targeted zoom only on the spots noted above; this is
+  a real reading, not a rubber-stamp, but it is a single pass, not the double-blind standard this repo uses for
+  a solver reading -- a second independent image pass would be needed before treating any single "both" token
+  here as a settled transcription for cryptanalysis.
+
+**2. The postscript question -- resolved, and it changes the letter's status.** csWV2's flag (above) asked
+whether the leaf carries cipher after the postscript ("hab ich die alte Ciffer... bisz zu ende gebraucht") that
+Groen silently decoded into the clear German he printed on pp.146-148. **Yes: extensively.** Groen's last printed
+cipher group anywhere in the letter is run 61 (121. 133. 192., page146, right context "begert hefftig von E.G.
+allezeit zeittung..."), which sits on image page **p4**, a little past its midpoint. The image shows clear German
+continuing for a few lines after that group -- **then a fresh, dense run of cipher numerals starts** ("...dasz
+wir 127. 133. sollt mich..." then "1. 101. 31. 121. 131. 41. 102. 30. 29. 81. 2. 136. 14. 61. 26. 191. 56. 10.
+91. 82. 33. 23. 63. 79. en 195." and more) that **has no counterpart anywhere in Groen's print** -- Groen's text
+at the equivalent point is ordinary clear narrative. This new cipher continues, interleaved with clear-text
+stretches, through the rest of p4 and **almost the entire length of p5** (roughly ten more numeral clusters,
+~226 numerals total, transcribed as a single fluent pass into `ciphertext_5549.tsv`'s `PS1`-`PS26` rows, kind
+`image`, no Groen row to grade against). It stops before the letter's closing paragraph, which is clear
+("...E.G. will ich nun mehr schreiben..." through "kein zweifel... sein worden solle"), and the letter closes
+in clear with **"Datum Dillenburg [...] Anno 73"** and the signature **"E.G. dienstwilliger Bruder alzeit,
+Johann Graf zu Nassaw etc."** on p5. **p6 is not a seventh page of text: it is the address leaf** ("A Monseigneur
+/ Monseigneur le Prince D'Oranges", with a wax-seal remnant), confirming the letter is fully contained on p1-p5
+and there is no further, unphotographed content.
+- In the left margin of p4, beside the point where this new cipher run begins, is a marginal note in a smaller
+  hand ending **"...minor est ad singula sensus"** -- the closing words of the postscript's own Latin tag as
+  Groen prints it ("pluribus intentus minor est ad singula sensus"). Read at 8-14x zoom; the German words before
+  it are only partly legible this pass ("...schreibt in eintrag: minor est ad singula sensus" or similar) and
+  are not resolved to Groen's exact postscript wording. Given the specificity of the Latin match this is very
+  unlikely to be coincidence, but its exact relationship to the printed postscript sentence (marginal insertion
+  mark for text that didn't fit the line? a later archival note quoting it?) is not settled here.
+- **Conclusion for the open question in csWV2's section above: reading (a).** The writer's own claim to have
+  reverted to "the old cipher... to the end" is true of the leaf -- a large final stretch (p4 tail + almost all
+  of p5, ending before the clear closing/signature) really is enciphered on the manuscript, matching the
+  letter's own postscript. Groen's edition prints this entire stretch as ordinary readable German with **no
+  indication anywhere that it was enciphered on the leaf** -- no italics, brackets, or editorial note. Groen (or
+  his source) therefore had a decipherment of this stretch, unremarked in the print. Since "die alte Ciffer" is
+  most naturally the key the writer had used *before* the "changed instruction or cipher" mentioned at the
+  letter's own opening (i.e. plausibly `key_1572`, already H-graded and recovered in this repo for other
+  letters in this circle), **this new stretch is the natural next thing to test key_1572 against, before any
+  fresh cryptanalysis** -- if it decodes to readable German, that pins down "die alte Ciffer" and gives a large
+  known-plaintext crib (Groen's clear print) for free, the same alignment-not-attack shape LESSONS.md describes
+  for this whole circle. This was **not attempted** here (out of the image-check brief's scope: "do not decode,
+  do not attempt the cipher").
+- The pre-postscript body (runs1-61, page141-146, image p1-p4) is a separate, still-fully-raw cryptanalytic
+  target as before (24% of its values, and now also the p4/p5 "PS" stretch, sit outside `key_1572`'s numeric
+  range); the two should not be conflated.
+
+**3. Other leaf features, as they stand (brief job 1).** A scribal strikethrough (one word crossed out, illegible
+under the deletion stroke) appears on p5 just before the "38.87.148..." cipher run. Roman numerals "Ⅶ odder Ⅷ"
+("7 or 8", i.e. the writer offering the recipient a choice of two values) appear inline in a cipher run on p5,
+recorded literally as `vii`/`viii` in the PS10 rows of `ciphertext_5549.tsv`, not resolved to a single value.
+
+**4. WVO record, second/deciphered copy (brief job 3).** `resources.huygens.knaw.nl/wvo/app/brief?nr=5549`
+(1 request) lists exactly two sources for this letter: the KHAG original (A11/XIV A/5-18, our images) and
+Groen's Suppl. edition (pp.140-148 nr.45, "onv." = onvolledig/incomplete). **No second copy, no separately
+deciphered copy, no minute is named.** Opmerkingen: "Gedeeltelijk in cijferschrift" (partly in cipher -- the
+WVO's own cataloguer clearly did not know about the p4/p5 stretch either, or "gedeeltelijk" undersells it
+badly). Inhoud: "Bevestiging van ontvangst van een nieuwe sleutel voor het cijferschrift, waarvan hij nu ook
+gebruik maakt" (confirmation of receipt of a new key for the cipher, which he now also uses) -- matches the
+letter's own opening already noted by csWV2.
+
+**Files:** `passes/5549_image.tsv` (per-run agree/disagree vs Groen, runs1-25 full detail, 26-61 fluent-pass
+detail), `ciphertext_5549.tsv` (image-checked token list, `grade_transcription` = both/image/M, plus the new
+`PS1`-`PS26` rows for the p4/p5 stretch Groen has no counterpart for). Reproducible from the committed images;
+no key applied, no decoding done.
+
+**Status stays open.** Kind stays recovery. Agreement with Groen where Groen has a reading: 590/593 (99.5%).
+New image-only cipher found beyond Groen's print: ~226 numerals across p4-p5, not yet graded against any key.
+Requests this pass: resources.huygens.knaw.nl 1 (the WVO record page above; the six PDF-derived page images were
+already on disk from C1's capture, per the brief, not refetched). No subagents.
