@@ -1,5 +1,5 @@
 {
-  "updated": "23 September 2026, 23:43 UTC",
+  "updated": "24 September 2026, 00:03 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -329,7 +329,7 @@
       "stage": 3,
       "state": "active",
       "holder": "Worker",
-      "next": "Gate passed (best case N3). Crops of f.28 and f.24 being cut; then two independent transcription passes, a reconciler, and Raince's 1526 key (fr. 2984, Desenclos 2018) tried first, with a control.",
+      "next": "Reconciled 5,725 signs in 50 types, not clean by the gate (<40 types, passes within 5%). Third pass on the half-lines pass A skipped and the gutter signs; the owner decides whether the solver may start with 50 types (ASKS row).",
       "note": "Corrected 23 Sept 2026: invented-symbol alphabet, ~1,500 tokens across three letters in one cipher; f.20 recto tail transcribed once (86 tokens, grade M). Images free on Gallica.",
       "kind": "recovery",
       "wait": {
@@ -343,18 +343,18 @@
   "workers": [
     {
       "title": "Tomokiyo bibliography + 'readable with key' list (row 26)",
-      "job": "PAPERS.tsv and READABLE.tsv from Cryptiana. Sonnet, cap $5",
-      "state": "running"
+      "job": "Halted itself on the swap flag before starting; to be re-run. $0.54",
+      "state": "stopped, archived"
     },
     {
       "title": "Print check (class gate): Gramont 1530, fr.2980 (M8)",
-      "job": "Is either 20 May 1530 letter printed (Le Grand 1688, L&P Henry VIII, Pocock...)? Sonnet, cap $5",
-      "state": "running"
+      "job": "Best case N3 for both letters: not in L&P Henry VIII iv.3 (which calendars two other Gramont cipher letters of Feb 1530), Decrue, PUR chapter, Tomokiyo; Le Grand's May 1530 pages unreached. $3.51",
+      "state": "done, archived"
     },
     {
       "title": "Dupuy 468 check.py exceptions (row 25)",
-      "job": "Exception table for gloss readings (r04 dux). First worker stalled on a stale clone ($0.72), retried. Sonnet, cap $2.50",
-      "state": "running"
+      "job": "10 gloss exceptions (r04 dux), grades H 640 S 24 M 17, check.py --check passes and fails when stale. $4.49 (over its $2.50 cap)",
+      "state": "done, archived"
     },
     {
       "title": "Check-solved: M8-M11 (BnF fr. 2980, 2996, 4137, 4102)",
@@ -363,8 +363,8 @@
     },
     {
       "title": "Raince reconciliation: Dupuy 452 ff.28-29",
-      "job": "Glyph segmentation and clustering of 160 crops; maps passes A and B onto the clusters. Opus, cap $40",
-      "state": "running"
+      "job": "Not clean: 5,725 signs (+19% on pass A, -3% on pass B), 50 sign types (22 rare), 365 marked uncertain; gutter signs missed by the crops. Solver held. $11.41",
+      "state": "done, archived"
     },
     {
       "title": "Scout: Bourdeau offline-only items (row 21)",
@@ -466,6 +466,10 @@
     }
   ],
   "log": [
+    {
+      "when": "24 Sept, 00:03",
+      "what": "Raince letter reconciled from the images: 5,725 signs in 50 types, so the clean-inventory gate fails and the solver is held. Gramont 1530 (fr. 2980) passes the print gate at best case N3; transcription and Tomokiyo's key next. Dupuy 468 check.py exception table done."
+    },
     {
       "when": "23 Sept, 23:43",
       "what": "M8-M11 swept: M10 and M11 survive only as plain copies (dropped); M9 Morvillier was read by Lasry in 2023 (found-solved; the worker's 'open' corrected from Tomokiyo's page); M8, two Gramont letters of 20 May 1530, open, and Tomokiyo's published key should read them. Print check before any transcription."
