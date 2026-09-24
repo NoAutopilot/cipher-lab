@@ -83,3 +83,76 @@ letter count and total cipher extent across the ~20-folio item; (3) confirm "Ver
 is an unconfirmed hypothesis only) before any edition search of his printed correspondence.
 
 Not touched: no key work, no decoding, no novelty wording.
+
+## Du Vergier leaves, extent and gloss check (24 Sept 2026)
+
+**Offset correction.** The prior sweep's "+6" canvas offset was a lucky near-miss. Fetching native images at
+canvas252, canvas253 and canvas265 and reading the manuscript's own printed folio stamps top-right gives
+**canvas = folio + 3**, exactly (252→"249", 253→"250" (faint, "2[5]0"), 265→"262"), consistent with canvas251's
+already-known stamp "248". One canvas is one opening (verso of folio N on the left page, recto of folio N+1 on
+the right), not one canvas per leaf. Folio245 (the finding aid's item start) is therefore **canvas248**, and
+folio264 (last folio before the next catalogued item, "Vendôme..." at folio265) is **canvas267**.
+
+**Method.** Surveyed canvas248 through canvas268 (folio245-265ish) with the IIIF `.thumbnail` endpoint (low-res,
+cheap) to spot cipher by its distinctive dense numeral-group texture, then fetched full native resolution
+(`/full/full/0/native.jpg`) for f251 (already on disk from the prior sweep) plus three more: f252, f253, f265 —
+the "up to 3 other cipher leaves" this brief allowed. No leaf between canvas254 and canvas264 (folio251-261) or
+at canvas266-267 (folio263-264) showed the numeral-group texture at thumbnail scale; ordinary flowing cursive
+French throughout. A faint or short cipher passage on one of these cannot be fully excluded at thumbnail
+resolution, but nothing was missed for the leaves actually fetched natively.
+
+| Canvas | Folio (stamped) | Content | Cipher? | Rough extent | Symbol type |
+|---|---|---|---|---|---|
+| f251 (prior sweep) | 247v (left) / 248r (right) | Tail of a letter: cipher body on 247v, closing + signature "Vergier" on 248r | Yes, 247v | ~9 lines mixed clear/cipher, ~60-70 numeral groups, plus a short clear paragraph (Dunkerque troop-ship news) at the foot | Numeral groups, 1-3 digits, values seen from 2 to ~730 |
+| f252 (native, this session) | 248v (left, docket/address only) / 249r (right) | New letter opens "Monseigneur", dated by docket "26e mars 1696"; dense cipher | Yes, 249r | ~15+ lines, dense mixed clear/cipher | Same numeral scheme |
+| f253 (native, this session) | 249v (left) / 250r (right) | Continues the 26 March 1696 letter; names "Milord Myddleton" in clear; closes "Vergier" at foot of 250r | Yes, both pages | ~30+ lines across the two pages, roughly 150-250 numeral groups (rough count, not a transcription) | Same numeral scheme |
+| f265 (native, this session) | 262 (stamped; both pages read as one opening) | A separate letter, not a continuation of the 26 March one; opens naming "Mde Pontchartrain" in clear, discusses Dunkerque armament, "M. de Chasteaurenault", "Milord Myddleton"; closes "Vergier" | Yes, both pages | ~20 lines, roughly 60-90 numeral groups | Same numeral scheme |
+
+No date is legible on f251 or f265 beyond the one docket on f252 ("26e mars 1696"); the f252/253 letter is dated,
+the f251 and f265 letters are not (their own datelines, if any, are on canvases not fetched this pass).
+
+**Gloss verdict: this is not an interlinear decipherment, a later note, or bleed-through.** It is the letters'
+own original composition: a **mixed clear/cipher (nomenclator) format**, where ordinary connective French words
+and some proper nouns are written in clear and only sensitive nouns/names/facts are replaced by 2-3 digit
+numeral codes, all in the same ink, same hand, same continuous line of writing as the surrounding clear text —
+not a second, lighter hand added between the lines. At thumbnail resolution the alternating rhythm of a short
+clear phrase followed by a run of numerals reads as if it were two layers; at native resolution it is plainly
+one layer, one scribe, one sitting. This corrects the prior sweep's "partial interlinear gloss in a second,
+lighter hand" wording, which was a thumbnail-resolution misreading, not a survives-at-full-res finding.
+
+**Who "Du Vergier" is, from the clear text plus a web search (not from any printed edition of his own
+correspondence, which was not checked this pass; grade: cryptanalytic identification, not H).** The clear
+portions plus dockets give: sender signs "**Vergier**" (no "Du"), writing from **Boulogne** and **Calais**,
+dated **26 March 1696** on one letter; content across all three fetched leaves concerns Dunkerque's naval
+armament, troop embarkations "for the West"/"for York", Milord Middleton, the Prince of Orange, the King of
+England, M. de Chasteaurenault, M. de Louvigny, and (on f265) explicitly names "M. de Pontchartrain". A web
+search (WebSearch, 3 queries, 24 Sept 2026) turns up **Jacques Vergier (1657-1720)**, poet and *commissaire
+ordonnateur de la marine*, posted to Dunkerque from 11 April 1695 and president of its *conseil de commerce*,
+who is recorded as having addressed at least six epistles to **Jérôme Phélypeaux, comte de Pontchartrain**
+(1674-1747, secretary of state for the navy) from that post, including a piece dated 1696 referencing a
+campaign with Jean Bart. Place (Dunkerque/Boulogne/Calais), date (1696), correspondent's surname, and subject
+matter (Dunkerque armament, addressed "Monseigneur", Pontchartrain named in the body) all line up. This
+supersedes the prior sweep's Saint-Cyran hypothesis, which has nothing in the leaves to support it and is now
+considered ruled out by content, not just unconfirmed. Confidence: strong circumstantial match from a general
+web search, not yet cross-checked against an archival or scholarly source naming this specific ciphered
+correspondence — **do not repeat as a settled identification** without that check.
+
+**Recipient's printed material, not yet checked (next step):** "Œuvres diverses de Mr Vergier, commissaire de
+la marine" (an 18th-c. printed edition of his poetic works, surfaced via web search, seen listed on a rare-book
+dealer page — not yet located on Gallica/Google Books/HathiTrust) may contain some of his verse epistles to
+Pontchartrain but is a different genre from these administrative cipher dispatches and is not expected to
+contain them. The concrete edition-check lead is the **Pontchartrain naval correspondence** (Archives
+Nationales, Marine B/2 and B/7 series per the finding aid PDFs surfaced by the same searches; a published
+calendar/edition was not located this pass) and any Dunkerque-focused local history of the 1695-97 war period
+(the FranceArchives finding aid "1695-1697" surfaced by the same search may be relevant and was not opened).
+
+Requests this session: gallica.bnf.fr 26 (1 manifest reachability check, 1 manifest fetch via `gallica_folio.py`
+[0 folio labels — this manifest gives every canvas label "NP", so the folio map above comes from the leaves'
+own printed stamps at native resolution, not the manifest], 21 `.thumbnail` fetches canvas f248-f268 [1 failure
+at f263, recovered on the single allowed retry after a pause], 3 native `/full/full/0/native.jpg` fetches
+f252/f253/f265), all ≥1.5s apart, single fetcher, UA `cipher-lab research script (contact via repository)`,
+`--max-time 30`. WebSearch 3. No other host, no logins, no subagents.
+
+Not touched: no key work, no decoding beyond reading the clear-French portions directly off the images, no
+novelty wording, no attempt to pin the exact folio where the Du Vergier item ends and the next item begins
+(somewhere canvas265-268; canvas268 is a printed "FACTUM" title leaf, an odd insertion worth a follow-on look).

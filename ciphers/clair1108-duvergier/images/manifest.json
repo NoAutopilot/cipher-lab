@@ -2,17 +2,39 @@
   "ark": "ark:/12148/btv1b90009665",
   "source": "Gallica IIIF, BnF Clairambault 1108",
   "target_folio": "Fol. 245-264ish (per archivesetmanuscrits.bnf.fr finding aid, item 'Du Vergier')",
-  "note": "No folio labels in the manifest. Canvas f251 (folio+6 offset, same offset confirmed for M17) hit successfully; its own printed folio stamp reads '248', within the item. Canvas f248 (folio 245, the item's true start) and a high-res crop of f251 both failed on repeated tunnel-side connection resets and were not retried further this pass.",
+  "offset_confirmed_24_sept_2026": "canvas = folio + 3 (one canvas per opening, verso of folio N on the left page, recto of folio N+1 on the right page), confirmed against the manuscript's own printed folio stamps visible at native resolution on canvas252 ('249'), canvas253 ('250') and canvas265 ('262'); supersedes the earlier +6 guess in the 24 Sept sweep, which happened to land close by luck (predicted canvas251 for folio245, actual leaf at canvas251 stamped '248').",
+  "item_span_confirmed": "canvas248 (folio245, finding aid's stated start) through canvas267 (folio264); canvas268 is a PRINTED 'FACTUM' title leaf, not a Du Vergier or Vendome manuscript letter -- the Du Vergier item's true end and the next catalogued item's start were not pinned down more precisely than 'somewhere in canvas265-268' this pass (thumbnail-only inspection there, see NOTES.md).",
   "files": [
     {
       "file": "probe_f251.jpg",
       "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90009665/canvas/f251",
-      "manuscript_folio": "248 (per the leaf's own stamp)",
-      "content": "Left page: numeral-group ciphertext with possible partial interlinear gloss (not confirmed at this resolution). Right page: clear French letter, signed 'Vergier'."
+      "manuscript_folio": "248r (stamped; left page of this opening is 247v)",
+      "fetched": "thumbnail-derived crop, prior sweep (24 Sept 2026, earlier session)",
+      "content": "Left page (247v): cipher letter, numeral-group nomenclator, mixed with clear French connective words in the same hand/line -- NOT a separate interlinear gloss (see NOTES.md gloss verdict). Right page (248r): closing only, 'Monseigneur' / 'Vostre tres humble et tres obeissant serviteur' / signed 'Vergier'."
+    },
+    {
+      "file": "folio249_canvas252.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90009665/f252/full/full/0/native.jpg",
+      "manuscript_folio": "249r (stamped '249'); left page is 248v, blank/docket only",
+      "fetched": "native, this session, 24 Sept 2026",
+      "content": "Left page (248v): archival docket 'Mr. Vergier a Boulogne ce 26e mars 1696' at the head, and a second docket on the folded address strip 'Mr. Vergier a Calais ce 20 mars 96 / [Angleterre?]'. Right page (249r): opens 'Monseigneur', dense numeral-group cipher mixed with clear French, continues onto canvas253."
+    },
+    {
+      "file": "folio250_canvas253.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90009665/f253/full/full/0/native.jpg",
+      "manuscript_folio": "250r (stamped '250' faintly, read as '2[5]0'); left page 249v",
+      "fetched": "native, this session, 24 Sept 2026",
+      "content": "Continuation of the 26 March 1696 letter from canvas252. Both pages dense mixed clear/cipher; names 'Milord Myddleton' (in clear) among cipher groups. Closes 'Je suis avec un profond respect / Monseigneur / Vostre tres humble et tres obeissant serviteur' signed 'Vergier' at the foot of the right page."
+    },
+    {
+      "file": "folio262_canvas265.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90009665/f265/full/full/0/native.jpg",
+      "manuscript_folio": "262 (stamped)",
+      "fetched": "native, this session, 24 Sept 2026",
+      "content": "A separate cipher letter (not a continuation of the 26 March letter). Right page opens naming 'Mde Pontchartrain' in clear within the running text, mixes cipher groups with clear French discussing Dunkerque armament, M. de Chasteaurenault, Milord Myddleton; closes 'Je suis avec un profond respect / Monteigneur / ... obeissant seruiteur' signed 'Vergier'. Left page continues the same letter (cipher + clear), opening clause references 'M. de Pontchartrain le d[uc?]' and naval postings."
     }
   ],
-  "not_fetched": [
-    {"canvas": "f248", "target": "folio 245, item start", "status": "3 failed attempts, tunnel resets, not retried"},
-    {"note": "high-res crop of f251 left page", "status": "2 failed attempts, tunnel resets, not retried"}
-  ]
+  "thumbs_dir": "thumbs/ (low-res IIIF .thumbnail fetches, canvas f248-f268, used only to survey the item for cipher content; not evidentiary quality, kept for reference)",
+  "not_cipher_by_thumbnail_survey": "canvas248-250 (folio245-247), canvas254-264 (folio251-261), canvas266-267 (folio263-264) show ordinary flowing cursive French with no numeral-group texture at thumbnail scale; not fetched natively, so a faint or small cipher passage on any of these cannot be fully excluded.",
+  "not_fetched_natively": "canvas248-250, 254-264, 266-268 (thumbnail only); a full native pass of the whole ~20-folio item was out of scope for this brief (cap of 3 additional cipher leaves beyond f251)."
 }
