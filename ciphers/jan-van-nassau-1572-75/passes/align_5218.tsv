@@ -1,0 +1,327 @@
+page	line	idx	group	doubt	plain	note
+1	29	1	RUN	0	clear before: 'jay veu la' | print p.141: 'j'ay veu la poursuyte du duc Hans-Casimir pour avoir remboursement de quelque argent a luy deu a raison par vous alleguee' | clear after: 'a raison par vous alleguee'	anchor example from brief; 57 groups read for 60-letter span
+1	30	1	106	0	d	
+1	30	2	120	0	u	
+1	30	3	3	0	d	
+1	30	4	22	0	u	
+1	30	5	88	0	c	
+1	30	6	150	0	h	
+1	30	7	122	0	a	
+1	30	8	4	0	n	
+1	30	9	7	0	s	
+1	30	10	66	0	c	
+1	30	11	63	0	a	
+1	30	12	89	0	s	
+1	30	13	77	0	i	
+1	30	14	129	0	m	
+1	31	1	10	0	i	
+1	31	2	80	0	r	
+1	31	3	64	0	p	
+1	31	4	44	0	o	
+1	31	5	75	0	u	
+1	31	6	7	0	r	
+1	31	7	75	0	a	
+1	31	8	27	0	v	
+1	31	9	56	0	o	
+1	31	10	15	0	i	
+1	31	11	68	0	r	
+1	31	12	86	0	r	
+1	31	13	77	0	e	
+1	31	14	80	0	m	
+1	31	15	26	0	b	
+1	31	16	55	0	o	
+1	31	17	27	0	u	
+1	31	18	00	0	r	
+1	31	19	85	1	s	digit shapes worn/faint at line end, best reading
+1	31	20	1	1	e	digit shapes worn/faint at line end, best reading
+1	31	21	9	1	m	digit shapes worn/faint at line end, best reading
+1	32	1	126	0	e	
+1	32	2	24	0	n	
+1	32	3	29	0	t	
+1	32	4	79	0	d	
+1	32	5	88	0	e	
+1	32	6	26	0	q	
+1	32	7	51	0	u	
+1	32	8	71	0	e	
+1	32	9	86	0	l	
+1	32	10	29	0	q	
+1	32	11	329	0	u	
+1	32	12	130	0	e	
+1	32	13	121	0	a	
+1	32	14	12	0	r	
+1	32	15	2	0	g	
+1	32	16	50	0	e	
+1	32	17	88	0	n	
+1	32	18	100	0	t	
+1	33	1	25	0	a	
+1	33	2	26	0	l	
+1	33	3	80	0	u	
+1	33	4	8	0	y	last group of run (matches brief's example, immediately followed by clear 'a raison par vous alleguee'); count: 57 groups read vs 60 letters in print span, positional 1:1 mapping breaks down near the end (word 'deu' not individually resolved) -- treat idx 50-57 as low-confidence position only
+2	14	1	RUN	0	clear before: '...tournera au grand bien et honneur de mon maison.' | print p.142: 'Quant a l'affaire de Besancon, j'attendray ce que vous y aurez davantaige besoingne' | clear after: 'jattendray ce que vous y aurez davantaige besoingne'	39 groups read for a 24-letter span (Besancon); marginal note reads (abbreviated) 'quant a l'affaire de Besancon'
+2	15	1	70	0	q	
+2	15	2	89	0	u	
+2	15	3	13	0	a	
+2	15	4	61	0	n	
+2	15	5	82	0	t	
+2	15	6	1	0	a	
+2	15	7	122	0	l	
+2	15	8	116	0	a	
+2	15	9	3	0	f	
+2	15	10	12	0	f	
+2	15	11	7	0	a	
+2	15	12	51	0	i	
+2	15	13	13	0	r	
+2	15	14	30	0	e	
+2	15	15	33	0	d	
+2	15	16	11	0	e	
+2	15	17	43	0	b	
+2	15	18	74	0	e	
+2	15	19	26	0	s	
+2	15	20	118	0	a	count matches 20 (line15) + first 4 of line16 = 24 letters of 'Quant a l'affaire de Besancon' exactly
+2	16	1	6	0	n	
+2	16	2	127	0	c	
+2	16	3	22	0	o	
+2	16	4	28	0	n	count matches 20 (line15) + first 4 of line16 = 24 letters of 'Quant a l'affaire de Besancon' exactly
+2	16	5	8	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	6	14	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	7	29	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	8	80	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	9	13	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	10	38	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	11	19	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	12	38	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	13	64	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	14	61	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	15	1	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	16	4	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	17	130	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	18	112	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+2	16	19	127	0	?	excess group, no more print letters in this short span before clear 'jattendray' resumes; probable null-padding around the place-name Besancon, or ms carries more than print's paraphrase
+3	2	1	RUN	0	clear before: '...que vous portez a nos bien. Mais du Conte de Schwartzbourg:' | print pp.142: 'je n'ay jusques icy peu apercevoir en luy que une sincere intention, et qu'il desire de veoir les' | clear after (mid-run insert): 'choses reduictes de bonne paix et union'	margin gloss 'le dit conte desire paix et union'; 94 groups read for this 78-letter span
+3	3	1	3	0	j	
+3	3	2	124	0	e	
+3	3	3	113	0	n	
+3	3	4	155	0	a	
+3	3	5	1	0	y	
+3	3	6	9	0	j	
+3	3	7	121	0	u	
+3	3	8	130	0	s	
+3	3	9	129	0	q	
+3	3	10	43	0	u	
+3	3	11	26	0	e	
+3	3	12	2	0	s	
+3	3	13	58	0	i	
+3	3	14	12	0	c	
+3	3	15	100	0	y	
+3	4	1	42	0	p	
+3	4	2	89	0	e	
+3	4	3	80	0	u	
+3	4	4	73	0	a	
+3	4	5	86	0	p	
+3	4	6	29	0	e	
+3	4	7	78	0	r	
+3	4	8	45	0	c	
+3	4	9	18	0	e	
+3	4	10	99	1	v	99 or 88, ink blot
+3	4	11	3	0	o	
+3	4	12	66	0	i	
+3	4	13	28	0	r	
+3	4	14	86	0	e	
+3	4	15	10	0	n	
+3	4	16	68	0	l	
+3	4	17	29	0	u	
+3	4	18	74	0	y	
+3	4	19	20	0	q	
+3	4	20	27	0	u	
+3	4	21	88	0	e	
+3	5	1	62	0	u	
+3	5	2	44	0	n	
+3	5	3	77	0	e	
+3	5	4	1	0	s	
+3	5	5	26	0	i	
+3	5	6	99	1	n	99 or 88, ink blot
+3	5	7	51	0	c	
+3	5	8	88	0	e	
+3	5	9	98	0	r	
+3	5	10	121	0	e	
+3	5	11	70	0	i	
+3	5	12	86	0	n	
+3	5	13	29	0	t	
+3	5	14	4	0	e	
+3	5	15	87	0	n	
+3	5	16	58	0	t	
+3	5	17	28	0	i	
+3	5	18	9	0	o	
+3	5	19	114	0	n	
+3	5	20	128	0	e	
+3	5	21	7	0	t	
+3	6	1	80	0	q	
+3	6	2	45	0	u	
+3	6	3	58	0	i	
+3	6	4	18	0	l	
+3	6	5	26	0	d	
+3	6	6	74	0	e	
+3	6	7	29	0	s	
+3	6	8	5	0	i	
+3	6	9	44	0	r	
+3	6	10	58	0	e	
+3	6	11	83	0	d	
+3	6	12	29	0	e	
+3	6	13	59	0	v	
+3	6	14	82	0	e	
+3	6	15	45	0	o	
+3	6	16	63	0	i	
+3	6	17	60	0	r	
+3	6	18	119	0	l	
+3	6	19	27	0	e	
+3	6	20	84	0	s	
+3	6	21	6	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	1	71	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	2	87	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	3	43	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	4	52	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	5	23	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	6	27	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	7	79	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	8	42	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	9	77	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	10	29	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	11	2	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	12	115	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	13	127	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	14	23	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	15	28	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	16	4	0	?	excess group (tail of line 6 and all 16 of line 7 before the clear insert 'choses reduictes de bonne paix et union'); print span exhausted at 77 letters -- probable nulls or un-printed detail
+3	7	17	RUN	0	CLEAR INSERT (not enciphered): ms 'choses reduictes de bonne paix et union' = print p.142 'les choses reduictes en bonne paix et union' -- separates run A (above) from run B (below)	
+3	7	18	RUN	0	clear before: 'choses reduictes de bonne paix et union.' | print p.142-143: 'Le Conte Gunther de Schwartzbourg est esmerveille de veoir' | clear after: 'noz affaires icy en si bon estat'	35 groups read for this 50-letter span (deficit, opposite of run A -- consistent with 'Gunther'/'Schwartzbourg' as name-level codes)
+3	7	17	4	0	l	
+3	7	18	128	0	e	
+3	7	19	155	0	c	
+3	7	20	7	0	o	
+3	7	21	119	0	n	
+3	7	22	130	0	t	
+3	8	1	28	0	e	
+3	8	2	79	0	g	
+3	8	3	85	0	u	
+3	8	4	107	0	n	
+3	8	5	29	0	t	
+3	8	6	81	0	h	
+3	8	7	56	0	e	
+3	8	8	57	0	r	
+3	8	9	29	0	d	
+3	8	10	77	0	e	
+3	8	11	99	1	s	88 or 99, ink blot
+3	8	12	28	0	c	
+3	8	13	44	0	h	
+3	8	14	52	0	w	
+3	8	15	51	0	a	
+3	8	16	28	0	r	
+3	8	17	8	0	t	
+3	8	18	109	0	z	
+3	8	19	25	0	b	
+3	8	20	29	0	o	
+3	8	21	10	0	u	
+3	9	1	86	0	r	
+3	9	2	29	0	g	
+3	9	3	62	0	e	
+3	9	4	44	0	s	
+3	9	5	74	0	t	
+3	9	6	4	0	e	
+3	9	7	109	0	s	
+3	9	8	120	0	m	
+3	16	6	RUN	0	clear before: '...la chose se pourroit faire' | print p.143: 'a raisonable prix, et que je pourrois avoir certains termes de payement, comme de demy-an en demy-an,' | clear after: 'vous me ferez plaisir de vous enquester'	margin '4' = 'quant a l'affaire du Culembourg...' (topic gloss); 95 groups read for this 80-letter span
+3	16	6	125	0	a	
+3	16	7	3	0	r	
+3	16	8	10	0	a	
+3	16	9	7	0	i	
+3	16	10	130	0	s	
+3	17	1	75	0	o	
+3	17	2	12	0	n	
+3	17	3	44	0	a	
+3	17	4	80	0	b	
+3	17	5	64	0	l	
+3	17	6	61	0	e	
+3	17	7	59	0	p	
+3	17	8	11	0	r	
+3	17	9	14	0	i	
+3	17	10	52	0	x	
+3	17	11	27	0	e	
+3	17	12	120	0	t	
+3	17	13	69	0	q	
+3	17	14	77	0	u	
+3	17	15	45	0	e	
+3	17	16	81	0	j	
+3	17	17	1	0	e	
+3	17	18	28	0	p	
+3	17	19	83	0	o	
+3	17	20	70	0	u	
+3	17	21	87	0	r	
+3	17	22	26	0	r	
+3	18	1	44	0	o	
+3	18	2	29	0	i	
+3	18	3	66	0	s	
+3	18	4	64	0	a	
+3	18	5	86	0	v	
+3	18	6	75	0	o	
+3	18	7	74	0	i	
+3	18	8	68	0	r	
+3	18	9	43	0	c	
+3	18	10	80	0	e	
+3	18	11	2	0	r	
+3	18	12	13	0	t	
+3	18	13	88	0	a	
+3	18	14	64	0	i	
+3	18	15	42	0	n	
+3	18	16	75	0	s	
+3	18	17	3	0	t	
+3	18	18	21	0	e	
+3	18	19	28	0	r	
+3	18	20	74	0	m	
+3	18	21	82	0	e	
+3	19	1	10	0	s	
+3	19	2	44	0	d	
+3	19	3	60	0	e	
+3	19	4	81	0	p	
+3	19	5	84	0	a	
+3	19	6	29	0	y	
+3	19	7	77	0	e	
+3	19	8	57	0	m	
+3	19	9	29	0	e	
+3	19	10	79	0	n	
+3	19	11	22	0	t	
+3	19	12	29	0	c	
+3	19	13	69	0	o	
+3	19	14	12	0	m	
+3	19	15	101	0	m	
+3	19	16	26	0	e	
+3	19	17	57	0	d	
+3	19	18	28	0	e	
+3	19	19	60	0	d	
+3	19	20	82	0	e	
+3	20	1	7	0	m	
+3	20	2	124	0	y	
+3	20	3	129	0	a	
+3	20	4	18	0	n	
+3	20	5	63	0	e	
+3	20	6	54	0	n	
+3	20	7	55	0	d	
+3	20	8	26	0	e	
+3	20	9	24	0	m	
+3	20	10	28	0	y	
+3	20	11	4	0	a	
+3	20	12	23	0	n	
+3	20	13	26	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	20	14	54	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	20	15	98	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	20	16	10	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	20	17	88	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	20	18	1	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	20	19	29	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	20	20	61	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	21	1	25	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	21	2	28	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	21	3	55	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	21	4	100	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	21	5	6	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	21	6	10	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
+3	21	7	59	0	?	excess group after 80-letter print span exhausted -- probable nulls or un-printed detail before clear 'vous me ferez plaisir' resumes
