@@ -165,7 +165,7 @@ briefnr 57 (DNOK, HHSAWB, KHAG, SAD), 10260 (GPA, GSME, HUA, LMSAC, MBWI, NA, SA
 - **SAG** = Stadsarchief Gent (archive; on 10260, Reeks 94 bis, 29-1, marked (onv) at that repository).
 - **NA** = Nationaal Archief Den Haag (archive; on 10260, Staten-Generaal 1576-1796, 11099).
 
-flag for LANE V2: **DNOK is a printed edition** (Demandt 1962, *Nassau-oranische Korrespondenzen*), and briefnr
+flag for LANE V2: **DNOK is a printed edition** (Demandt, *Nassau-oranische Korrespondenzen 1553-1570* [Regesten], HessJb 38 (1988) 49-102 and 39 (1989) 87-150; "1962" corrected by V8, 24 Sept 2026), and briefnr
 57 -- one of the two N4 items D2 set this session (57 and 53) -- carries it as an "excerpt" source alongside
 KHAG/SAD/HHSAWB. This was not in D2's AUDIT.md search log. Whether Demandt's excerpt prints 57's cipher
 passage (in clear or not) is unresolved and should be checked, by a verifier with book access, before 57's

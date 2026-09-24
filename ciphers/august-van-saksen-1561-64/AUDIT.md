@@ -644,3 +644,33 @@ Outreach: gate 2 open on JSTOR lines 55, 56, 63, 64 (ASKS row 39). CONTRIBUTIONS
 Requests (D2): archive.org 14 (advancedsearch 8, metadata 2, djvu text 4), be-api.us.archive.org 1;
 data.htrc.illinois.edu 1; www.googleapis.com 24; web.archive.org 1 (504); api.openalex.org 1 (429);
 api.semanticscholar.org 1 (429). No subagents.
+
+## Re-check 57 against DNOK (V8)
+
+Verifier V8 (LANE V2), 24 Sept 2026, 11:36-11:40 UTC. Trigger: G3 (commit f3c4213, `sources/wvo/NOTES.md`) resolved WVO's
+bronnen code DNOK on letter 57 as "Demandt, Nassau-oranische Korrespondenzen I, 78 nr. 113, excerpt", a printed work
+that G3 thought D2's search log had missed. Scope: letter 57 only. Nothing was decoded.
+
+**Verdict: 57 stays N4 (no prior decipherment located).** DNOK is the Demandt regest already read in A2.4. It
+summarises the clear letter only.
+
+| question | answer | evidence |
+|---|---|---|
+| (1) Is DNOK the publication and number A2 read? | **Yes.** "Nassau-oranische Korrespondenzen I" is part (I) of Demandt's *Nassau-oranische Korrespondenzen 1553-1570, in Gestalt der ... Regesten*, *Hessisches Jahrbuch für Landesgeschichte* 38 (1988) pp. 49-102. Part (II) is HessJb 39 (1989) pp. 87-150. WVO's "78" falls inside part I's page range, and nr. 113 is the "Torgau 1561 November 18" regest A2 read. It is not a separate monograph. G3's "1962" is not supported: the Google Books title search returns no Demandt edition of that title from 1962. The only other item of the title, `1YALtwAACAAJ` (1989, 100 pp., no preview), is an offprint of the same regests. The older *Nassau-Oranische Correspondenzen* (Meinardus, 1899) ends in 1559 and is out of range | Google Books API: title search (16 items); page ranges from *Repertorium van boeken en tijdschriftartikelen* 1993 ("dl 38, p. 49-102; 89, dl 39, p. 87-150"); *Archiv für Reformationsgeschichte* 1990 ("HessJb 38, 1988, S. 49"); *Hessisches Jahrbuch* 1991 ("Regesten (II) 87") |
+| (2) Does nr. 113 print, paraphrase or summarise the cipher passage? | **No.** WVO's "excerpt" is the witness type: the Dillenburg archivists' 18th-century extracts (Wiesbaden 171 M fol. 4, 40), which Demandt printed as regests. Nr. 113 summarises the clear letter (the arrival at Breda, the Swedish king's English suit, the Öttingen-Schertlin feud). Nr. 115 summarises the 23 Nov postscript (Spain and the Inquisition; Lorraine and Guise) | Google Books full-text queries against the volume `OU4FAQAAIAAJ` (snippet view), all phrased `"Torgau 1561 November" + term`. Controls: "Schweden" (nr. 113) and "Inquisition" (nr. 115) both return the volume with the regest snippet. Test terms: Maximilian, Maximilians, "römischen König", römischen, Kaiser, Wahl, Kurfürsten, Zettel and Chiffre each return **0 volumes**. A snippet-view negative across the whole volume, not a page image |
+
+**Residual risk.** Demandt abbreviates heavily ("Kf.", "Kg.", "Hgg."). "Ks." or "Kff." could evade the Kaiser and
+Kurfürsten probes. "Maximilian" and "römisch" cannot be abbreviated that way, and both are absent from the volume. A page image
+of p. 78 would still settle it (as D2's suggestion (4) says). It would not change the class unless it contradicts
+the snippet text.
+
+**Class unchanged: 57 N4**, confidence moderate. The D2.4 safe sentence stands. It already names "Demandt's regest of
+the letter (HessJb 38, nr. 113) covers only the clear text". The unseen Dresden minute with its 'Zettel' remains the
+one route that could lower it.
+
+**Postmortem.** No miss by A2 or D2: WVO's own witness list (A2.2.3 (d)) already named the DNOK citation, and A2
+read the regest. G3's flag came from the bare code's legend without the date. Its "1962" year is corrected in
+`sources/wvo/NOTES.md`. No over-claiming sentence found. JSTOR: no new query (HessJb is not a JSTOR title in any row
+here).
+
+Requests (V8): www.googleapis.com 18 (books/v1, >=3 s apart). No other hosts, no subagents.
