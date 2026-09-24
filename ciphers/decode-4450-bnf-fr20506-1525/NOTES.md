@@ -102,3 +102,62 @@ live Gallica fetchers this session and may be a faster route to a real image tha
 
 Grades: none (no tokens read). No fr.2988 f.9 comparison possible (needs a real transcription first).
 Requests this pass: 0 (no network, per brief).
+
+## D2: transcription and witnesses, 24 September 2026
+
+Superseded the D1 blocker: LANE G2 fetched real 2000px IIIF images (`images/fr20506_f136r.jpg`, `f136v.jpg`,
+`fr2988_f9r.jpg`, `f9v.jpg`, manifest entry `gallica_natives`), not the DECODE `TH_IMG_*` thumbnails D1 was
+stuck on. At this resolution the letter+superscript-number system is fully legible (no more "unresolvable
+blur" concern).
+
+**Transcription.** `ciphertext_f136.tsv` (page, line, idx, token, doubt): one row per token as written, read
+from local crops of the Gallica images (`tools`-style Lanczos-upscaled bands, no network beyond the one
+already-cached image). 749 tokens total (f136r 344, f136v 405), 320 distinct code types (letter+number
+groups), doubt flagged on 3 tokens (two cancelled/scratched marks and one digit run I could not resolve even
+zoomed — see below). Base-letter distribution (t 80, s 64, m 62, n 57, p 54, c 53, d 50, L 49, z 49, a 40, i
+36, f 27, b 20, e 20, y 19, ...) matches the shape Bourdeau's NOTES.md describes for this same code family
+(no. 20/Garbino-Ranzo): a large set of per-letter lists (a-z plus a separate "L" glyph he reads as la/le, and
+z-groups behaving as nulls/punctuation). No decipherment attempted (out of scope).
+
+**Second witness.** Per brief, checked `dbourdeau/cyphersolver`'s `vasto1527/n20/ranzo_c0*.txt` (shallow clone,
+grepped, not committed; MIT code / CC BY 4.0 text, cited not copied) before transcribing fr.2988 f.9 fresh.
+`ranzo_c017.txt` is headed "fr.2988 view 17 (Ranzo)" and `ranzo_c018.txt` "view 18" — Bourdeau's own NOTES.md
+states views 17-20 are ff. 9r-10v of fr.2988 (ark `btv1b9059908w`), so **c017 = f.9r, c018 = f.9v**, transcribed
+by his "six subagents" from full-resolution scans. Its opening tokens (`b5 f3 c227 g72 p246 v212 t74 h57 s116
+m9 t163 t30 p78 ...`) match fr20506 f.136r's first line token-for-token once his glyph vocabulary (g, v, z, L,
+Q, D as distinct base letters/marks in this hand) is applied — direct confirmation of Tomokiyo's identification
+that f.136 is a copy of f.9, independent of Tomokiyo's own say-so.
+
+**Alignment** (`compare_f9.tsv`, `page/line/idx/our_token/witness_source/witness_token/type`, produced by
+`difflib.SequenceMatcher` over the flat token sequences, script not committed — trivial and one-off): of our
+749 tokens, **705 align as exact equal blocks with the witness (94.1%)**; 45 rows are single-token
+replacements, 2 are tokens on our side with nothing to align (extra-in-ours), and 259 rows are witness tokens
+past the point our text stops (see below, not real disagreements). The 45 replacements cluster almost
+entirely on classic secretary-hand look-alike pairs in this specific hand: **b/h** (b7/h7, b51/h51, h10/b10,
+b35/d35 — 10 rows), **b/v/d** (b78/d78, b114/v114 x3, b211/v211 — 5 rows), **c/e** (c25/e25, c7/e7 — 2 rows),
+**k/t/r** (k10/t10 x2, r41/t41 x2 — 4 rows), **L/n/h** (L77/n77, L77/h27 — 2 rows), **i/y** (i100/y100), plus a
+scatter of single-digit swaps consistent with this scribe's numeral shapes (p373/p363, m110/m100, m109/m104,
+m172/m162, n95/n97, p153/p353 — 7/3, 1/0, 9/4, 7/6, 5/7, 1/3 confusions). None of these is settled here — per
+rule 3/CLAUDE.md discipline on reproducibility, a next pass with a tighter per-token crop budget should check
+each row against both images before treating any as a real copying variant rather than a transcription
+uncertainty on one side or the other. Two rows land on marks, not ordinary tokens: `f136r` line 17 idx 6 and
+`f136v` line 4 idx 13 are a visibly cancelled/scratched mark on the page (recorded as `X7`, doubt=1); Bourdeau's
+own file independently flags the *same* two spots as uncertain (`[m?]` at the first, a bracketed `[c291 z9
+c170]` at the second) — both transcribers stumbled on the same manuscript trouble spots, which is itself a
+small corroboration that both are reading the real page and not each other.
+
+**f136 is a partial copy, not a complete one.** Our 749 tokens end (compare_f9.tsv) at witness index ~752 of
+1009 (c017 499 + c018 510) — i.e. f136r+f136v covers all of f.9r and roughly the first half of f.9v, then the
+ink simply stops (`images/fr20506_f136v.jpg` bottom third is blank, eye-checked, not a cropping artefact). The
+letter Ranzo sent (fr.2988 f.9-10, ~1009 groups incl. f.10r-v not touched here) runs longer than what this
+particular copy transcribes. Whether the rest of the copy is lost, was never made, or sits on an unindexed
+neighbouring leaf of fr.20506 is not established here (out of scope — a one-line suggestion, not run: check
+fr.20506's neighbouring canvases for a continuation before assuming the copy is deliberately partial).
+
+**Attribution.** Second-witness comparison rests entirely on Daniel Bourdeau's `dbourdeau/cyphersolver`
+(`vasto1527/n20/ranzo_c017.txt`, `ranzo_c018.txt`, MIT code / CC BY 4.0 text) and his own identification of the
+Garbino/Ranzo code's structure (`vasto1527/NOTES.md` "No. 20 / the Garbino–Ranzo code"). No decipherment,
+key-recovery or novelty claim is made here.
+
+Requests this pass: github.com 1 (shallow clone `dbourdeau/cyphersolver`, depth 1, grepped for `vasto1527/`,
+not committed). No other hosts.

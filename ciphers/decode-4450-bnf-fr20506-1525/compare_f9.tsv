@@ -1,0 +1,307 @@
+page	line	idx	our_token	witness_source	witness_token	type
+f136r	4	12	p373	f9r	p363	replace
+f136r	5	5	m110	f9r	m100	replace
+f136r	6	11	m109	f9r	m104	replace
+f136r	17	6	X7	f9r	[m?]	replace
+				f9r	z7	replace
+f136r	18	3	c25	f9r	e25	replace
+f136r	18	10	b7	f9r	h7	replace
+f136r	19	1	n95	f9r	n97	replace
+f136r	19	3	b51	f9r	h51	replace
+f136r	19	5	b35	f9r	d35	replace
+f136r	24	5	k10	f9r	t10	replace
+f136r	24	11	m172	f9r	m162	replace
+f136r	25	1	h10	f9r	b10	replace
+f136r	26	1	m171	f9r	m172	replace
+f136v	1	10	L77	f9r	n77	replace
+f136v	2	2	r41	f9r	t41	replace
+f136v	2	4	b78	f9r	d78	replace
+f136v	3	5	b114	f9r	v114	replace
+f136v	4	13	X7	f9r	[c291	replace
+				f9r	z9	replace
+				f9r	c170]	replace
+f136v	6	5	p153	f9r	p353	replace
+f136v	7	2	L77	f9r	h27	replace
+f136v	7	4	c7	f9r	e7	replace
+f136v	8	7	m170	f9r	m160	replace
+f136v	8	11	X10			extra-in-ours
+				f9r	z8	missing-in-ours
+f136v	14	3	e67	f9v	p67	replace
+f136v	14	9	b7			extra-in-ours
+				f9v	q6	missing-in-ours
+f136v	17	5	o152	f9v	d152	replace
+f136v	18	1	i100	f9v	y100	replace
+f136v	18	6	L10	f9v	b10	replace
+f136v	18	7	p7	f9v	f7	replace
+f136v	19	1	b211	f9v	v211	replace
+f136v	19	2	s138	f9v	g138	replace
+f136v	19	13	b114	f9v	v114	replace
+f136v	20	6	s10	f9v	g10	replace
+f136v	21	2	f2	f9v	f?	replace
+f136v	21	5	b13	f9v	v13	replace
+f136v	21	8	b191	f9v	v191	replace
+f136v	23	10	c320	f9v	c3?0	replace
+f136v	24	3	o18	f9v	Q18	replace
+f136v	25	11	m6	f9v	m8	replace
+f136v	26	8	e133	f9v	t133	replace
+f136v	27	11	s113	f9v	g113	replace
+f136v	27	12	s138	f9v	g138	replace
+f136v	28	5	s116	f9v	g116	replace
+f136v	28	6	s8	f9v	g8	replace
+				f9v	p34	missing-in-ours
+				f9v	z6	missing-in-ours
+				f9v	m47	missing-in-ours
+				f9v	d36	missing-in-ours
+				f9v	g127	missing-in-ours
+				f9v	h8	missing-in-ours
+				f9v	t74	missing-in-ours
+				f9v	g1	missing-in-ours
+				f9v	c170	missing-in-ours
+				f9v	q44	missing-in-ours
+				f9v	c170	missing-in-ours
+				f9v	t163	missing-in-ours
+				f9v	s113	missing-in-ours
+				f9v	t10	missing-in-ours
+				f9v	n8	missing-in-ours
+				f9v	s299	missing-in-ours
+				f9v	i29	missing-in-ours
+				f9v	m212	missing-in-ours
+				f9v	a204	missing-in-ours
+				f9v	d156	missing-in-ours
+				f9v	y17	missing-in-ours
+				f9v	p153	missing-in-ours
+				f9v	i286	missing-in-ours
+				f9v	n90	missing-in-ours
+				f9v	t74	missing-in-ours
+				f9v	s113	missing-in-ours
+				f9v	t296	missing-in-ours
+				f9v	i100	missing-in-ours
+				f9v	z15	missing-in-ours
+				f9v	s191	missing-in-ours
+				f9v	g140	missing-in-ours
+				f9v	n40	missing-in-ours
+				f9v	y13	missing-in-ours
+				f9v	m212	missing-in-ours
+				f9v	c125	missing-in-ours
+				f9v	m8	missing-in-ours
+				f9v	y18	missing-in-ours
+				f9v	a137	missing-in-ours
+				f9v	v211	missing-in-ours
+				f9v	m170	missing-in-ours
+				f9v	v13	missing-in-ours
+				f9v	t296	missing-in-ours
+				f9v	d78	missing-in-ours
+				f9v	L10	missing-in-ours
+				f9v	v7	missing-in-ours
+				f9v	t30	missing-in-ours
+				f9v	y15	missing-in-ours
+				f9v	q21	missing-in-ours
+				f9v	L107	missing-in-ours
+				f9v	f10	missing-in-ours
+				f9v	t296	missing-in-ours
+				f9v	t30	missing-in-ours
+				f9v	n38	missing-in-ours
+				f9v	z9	missing-in-ours
+				f9v	c208	missing-in-ours
+				f9v	f8	missing-in-ours
+				f9v	g44	missing-in-ours
+				f9v	t10	missing-in-ours
+				f9v	n7	missing-in-ours
+				f9v	n60	missing-in-ours
+				f9v	p313	missing-in-ours
+				f9v	i286	missing-in-ours
+				f9v	p5	missing-in-ours
+				f9v	q2	missing-in-ours
+				f9v	d36	missing-in-ours
+				f9v	L47	missing-in-ours
+				f9v	L99	missing-in-ours
+				f9v	q12	missing-in-ours
+				f9v	c242	missing-in-ours
+				f9v	t10	missing-in-ours
+				f9v	n85	missing-in-ours
+				f9v	f75	missing-in-ours
+				f9v	L77	missing-in-ours
+				f9v	d201	missing-in-ours
+				f9v	n8	missing-in-ours
+				f9v	s233	missing-in-ours
+				f9v	m107	missing-in-ours
+				f9v	g233	missing-in-ours
+				f9v	c227	missing-in-ours
+				f9v	g267	missing-in-ours
+				f9v	g106	missing-in-ours
+				f9v	m9	missing-in-ours
+				f9v	f10	missing-in-ours
+				f9v	t41	missing-in-ours
+				f9v	z6	missing-in-ours
+				f9v	m46	missing-in-ours
+				f9v	t74	missing-in-ours
+				f9v	s233	missing-in-ours
+				f9v	m107	missing-in-ours
+				f9v	f75	missing-in-ours
+				f9v	L77	missing-in-ours
+				f9v	y8	missing-in-ours
+				f9v	m170	missing-in-ours
+				f9v	v13	missing-in-ours
+				f9v	t296	missing-in-ours
+				f9v	s346	missing-in-ours
+				f9v	h9	missing-in-ours
+				f9v	L10	missing-in-ours
+				f9v	v116	missing-in-ours
+				f9v	d34	missing-in-ours
+				f9v	L97	missing-in-ours
+				f9v	d78	missing-in-ours
+				f9v	m168	missing-in-ours
+				f9v	d35	missing-in-ours
+				f9v	p255	missing-in-ours
+				f9v	L108	missing-in-ours
+				f9v	s316	missing-in-ours
+				f9v	z6	missing-in-ours
+				f9v	t89	missing-in-ours
+				f9v	c3	missing-in-ours
+				f9v	Q6	missing-in-ours
+				f9v	p10	missing-in-ours
+				f9v	q7	missing-in-ours
+				f9v	n86	missing-in-ours
+				f9v	g3	missing-in-ours
+				f9v	n5	missing-in-ours
+				f9v	p4	missing-in-ours
+				f9v	a84	missing-in-ours
+				f9v	n6	missing-in-ours
+				f9v	t10	missing-in-ours
+				f9v	n9	missing-in-ours
+				f9v	e82	missing-in-ours
+				f9v	z9	missing-in-ours
+				f9v	t49	missing-in-ours
+				f9v	t41	missing-in-ours
+				f9v	s177	missing-in-ours
+				f9v	L77	missing-in-ours
+				f9v	z15	missing-in-ours
+				f9v	y20	missing-in-ours
+				f9v	L47	missing-in-ours
+				f9v	L99	missing-in-ours
+				f9v	m173	missing-in-ours
+				f9v	i100	missing-in-ours
+				f9v	z15	missing-in-ours
+				f9v	s116	missing-in-ours
+				f9v	s9	missing-in-ours
+				f9v	y18	missing-in-ours
+				f9v	L47	missing-in-ours
+				f9v	c208	missing-in-ours
+				f9v	p228	missing-in-ours
+				f9v	g8	missing-in-ours
+				f9v	d36	missing-in-ours
+				f9v	q44	missing-in-ours
+				f9v	c170	missing-in-ours
+				f9v	t163	missing-in-ours
+				f9v	e82	missing-in-ours
+				f9v	i100	missing-in-ours
+				f9v	z15	missing-in-ours
+				f9v	g113	missing-in-ours
+				f9v	t19	missing-in-ours
+				f9v	c125	missing-in-ours
+				f9v	z6	missing-in-ours
+				f9v	m136	missing-in-ours
+				f9v	z8	missing-in-ours
+				f9v	e7	missing-in-ours
+				f9v	c208	missing-in-ours
+				f9v	g139	missing-in-ours
+				f9v	c170	missing-in-ours
+				f9v	q21	missing-in-ours
+				f9v	L47	missing-in-ours
+				f9v	t92	missing-in-ours
+				f9v	s117	missing-in-ours
+				f9v	s8	missing-in-ours
+				f9v	f213	missing-in-ours
+				f9v	n85	missing-in-ours
+				f9v	c153	missing-in-ours
+				f9v	t30	missing-in-ours
+				f9v	n90	missing-in-ours
+				f9v	g235	missing-in-ours
+				f9v	m29	missing-in-ours
+				f9v	e72	missing-in-ours
+				f9v	t152	missing-in-ours
+				f9v	t30	missing-in-ours
+				f9v	y8	missing-in-ours
+				f9v	Q13	missing-in-ours
+				f9v	L77	missing-in-ours
+				f9v	d158	missing-in-ours
+				f9v	m213	missing-in-ours
+				f9v	t163	missing-in-ours
+				f9v	p282	missing-in-ours
+				f9v	n9	missing-in-ours
+				f9v	Q21	missing-in-ours
+				f9v	b114	missing-in-ours
+				f9v	a314	missing-in-ours
+				f9v	i10	missing-in-ours
+				f9v	y15	missing-in-ours
+				f9v	f57	missing-in-ours
+				f9v	n57	missing-in-ours
+				f9v	t41	missing-in-ours
+				f9v	i29	missing-in-ours
+				f9v	t164	missing-in-ours
+				f9v	f4	missing-in-ours
+				f9v	p3	missing-in-ours
+				f9v	h57	missing-in-ours
+				f9v	i249	missing-in-ours
+				f9v	m7	missing-in-ours
+				f9v	q18	missing-in-ours
+				f9v	h32	missing-in-ours
+				f9v	s116	missing-in-ours
+				f9v	m6	missing-in-ours
+				f9v	h29	missing-in-ours
+				f9v	p76	missing-in-ours
+				f9v	t89	missing-in-ours
+				f9v	t30	missing-in-ours
+				f9v	c208	missing-in-ours
+				f9v	n84	missing-in-ours
+				f9v	s292	missing-in-ours
+				f9v	e25	missing-in-ours
+				f9v	f15	missing-in-ours
+				f9v	d35	missing-in-ours
+				f9v	L10	missing-in-ours
+				f9v	v192	missing-in-ours
+				f9v	y15	missing-in-ours
+				f9v	p150	missing-in-ours
+				f9v	p149	missing-in-ours
+				f9v	m107	missing-in-ours
+				f9v	n90	missing-in-ours
+				f9v	f10	missing-in-ours
+				f9v	a127	missing-in-ours
+				f9v	p308	missing-in-ours
+				f9v	g9	missing-in-ours
+				f9v	e75	missing-in-ours
+				f9v	i100	missing-in-ours
+				f9v	t157	missing-in-ours
+				f9v	m170	missing-in-ours
+				f9v	s267	missing-in-ours
+				f9v	i100	missing-in-ours
+				f9v	q49	missing-in-ours
+				f9v	n38	missing-in-ours
+				f9v	a152	missing-in-ours
+				f9v	d10	missing-in-ours
+				f9v	L10	missing-in-ours
+				f9v	c235	missing-in-ours
+				f9v	d270	missing-in-ours
+				f9v	h8	missing-in-ours
+				f9v	d246	missing-in-ours
+				f9v	o72	missing-in-ours
+				f9v	f6	missing-in-ours
+				f9v	m170	missing-in-ours
+				f9v	i100	missing-in-ours
+				f9v	g217	missing-in-ours
+				f9v	d78	missing-in-ours
+				f9v	i58	missing-in-ours
+				f9v	v15	missing-in-ours
+				f9v	g80	missing-in-ours
+				f9v	c136	missing-in-ours
+				f9v	h7	missing-in-ours
+				f9v	d245	missing-in-ours
+				f9v	m170	missing-in-ours
+				f9v	p246	missing-in-ours
+				f9v	e143	missing-in-ours
+				f9v	m107	missing-in-ours
+				f9v	i100	missing-in-ours
+				f9v	o106	missing-in-ours
+				f9v	p149	missing-in-ours
+				f9v	p102	missing-in-ours
+				f9v	t163	missing-in-ours
