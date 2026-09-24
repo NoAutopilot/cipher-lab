@@ -1465,3 +1465,114 @@ connection resets, recovered on the third attempt after a longer pause) + 8 thum
 Crops cut from locally-fetched natives, no extra requests. 4 Sonnet subagents (2 blind passes for f67, 2 for
 canvas 32, never more than 2 concurrent). All >=1.5s apart, UA `cipher-lab research script (contact via
 repository)`. No logins, no credentials, no novelty wording. Well under the $7 cap.
+
+## Folio 67: reconciled and read (24 Sept 2026)
+
+LANE G2 worker M (Opus, cap $8). Files: `reconcile_f67.py` -> `ciphertext_f67.tsv` (`--check`); `read_f67.py` ->
+`exceptions_f67.tsv` (per-token grades), `control_f67.tsv` (`--check`); `decode_f67.json` -> `tools/decode_key.py . --config
+decode_f67.json [--check]` -> `reading_f67.txt`, `reading_f67.tsv`. All three `--check`s exit 0 as committed.
+
+### (1) Reconciliation
+
+Canvas 129/130 natives fetched once each to the scratchpad (not committed; folder at its cap). Base is pass A, whose
+labels are the 16 physical rows of canvas 129. Pass B merged rows 1+2 and 11+12 into single bands and **dropped 10
+groups of row 11** (`_11 70 61 80 , 2 19 6 16 _18 15 18`, present on the image). Each pass B band was mapped onto pass
+A's rows and aligned with difflib. Every disagreement was settled by eye on zoomed native crops (reason per position
+in `SET`/`INS` in the script):
+- **Curly 3** (the f.86/f.88 convention): both passes wrote this hand's rounded, descending 3 as 9, 7 or 2. On the
+  image it is the curly form at 20 positions: 96/76/26 -> `36` (de), 99 -> `39` (du), 91 -> `31` (ce), 77 -> `33`,
+  72 -> `32`. Kept where the first stroke is a flat-topped 7: f129 L02/3 `_76`, f130a L02/9 `79` (39 not excluded).
+- Overlines settled: `_6` (f129 L07/11, L11/21, L15/6, L16/19), `_16` (L07/13, L07/22, L08/2: a small 1 under the
+  bar; the passes wrote `_6`), `_11` (L12/11), `_26` (f130b L03/3); `_5` at f129 L07/3 (long-s 5, both passes `_6`);
+  `_3` at f130a L02/11 (`_3 7 21` = pour, as in f.86).
+- Segmentation: `154` kept as one group twice (f129 L07/19, f130a L04/5; pass B split `15 4`); `61` kept at f129
+  L08/16 (B `6 1`); gutter groups added from pass B or the image at f130a L02 (`2 21`), L03 (`2`), L04 (`2`).
+- Clear French, row 1: "en diburez [= devrez] parler a leurs Altesses Royalles;" (diplomatic).
+Result: 546 cipher groups, conf H 483 (both passes agree, unchanged), M 63.
+
+### (2) Reading with key_1659
+
+key_1659 (79 codes, grade C on the f.86/f.88 letter) keys **523/546 groups (95.8%)**. Grades per token (rules in
+`read_f67.py`): **S 107, M 416, I 9, U 14; H 0, C 0.** S = keyed, key row not `conflict`, conf H, and the letters fall
+inside a French word of the best lexicon segmentation; M = conflict row (the table's homophone-level rows `7` ou/u,
+`15` oi/i, `18` n/on, `16`, `2`, `21`, `9`, `10`... carry most of the text, hence M dominates), conf M, or outside
+every French word. I = six unkeyed codes proposed from context only: `72` ni and `67` mi ("maniement", "ministres"),
+`32` ci ("principaux"), `43` fo ("fort", "fondement"), `68` mo ("Mademoiselle" twice), `63` lo ("que lon publie").
+U: `_76 _24 154 25 80 51 79 _70 _25 _2` (14 tokens). `65` (key value ar, one f.88 attestation) reads **ma** four
+times here (maniement, marier, Mademoiselle x2); `10` (key je, conflict) reads **z** in "filz" three times. Both
+stay M; a key revision is for the next solver.
+
+Reading, modal key values, as regenerated (`reading_f67.txt`; brackets = unkeyed):
+```
+f129 L01  [clear] ... a leurs Altesses Royalles; | ou i ou e r
+f129 L02  e je [_76] ques n v ou s di e qu n pu b i e de s n ou
+f129 L03  ve l le s de [_24] i n de la ve i te de s ques l le s
+f129 L04  oi l oi m q r te r oi t fo r t de s t re e s c la
+f129 L05  oi s c y s a v oi r ques la f e c t i n du fi l je
+f129 L06  qu le n e si oi t de la me re n e s t pr lu s si gn st
+f129 L07  n de estr ou pa s se e t ques M. se r oi t e n [154] pe n se e
+f129 L08  de se re t re r du ar ni e me n t de s le fa oi re s
+f129 L09  [parceque sil pouvoit estre] c st oi n t q l qu r i [25] s t
+f129 L10  ou n l m b la b le c ha n ge me n t n ou s qu ou i i
+f129 L11  n s de s me su re s qu pr re n e re a le [80] e t ques l s oi n
+f129 L12  ques le fi l je e t la me re me s me le ou r s pr i n ci pa
+f129 L13  ou x mi ni s t re s pr i s se n t de ca c [51] r ce t
+f129 L14  te me s oi n te l i ge n ce oi l ne se r oi t pa s
+f129 L15  q s si b le ques v ou s ne n e ou s si e je c n n oi s
+f129 L16  oi n ce q qu ve je qu ou s s y qu qu pr pr i ques r o ou s
+f130a L01 v je s oi n s qu pe ne t re r ques l le pe ou t e s
+f130a L02 i n fi i a t i n [79] [80] p ou r se ar i e r
+f130a L03 ou s la pe e s n ne e t q ou r le te m pr s e
+f130a L04 ce s t [_70] [154] fo n de me n t ques lo n pu b i e
+f130a L05 ar da mo oi se l le qu re n du t re s ar ou [_25] oi
+f130a L06 i f fi ce qu ar da mo oi se l le d r le qu n
+f130a L07 oi s e ou r [Desja ie vous ay mandé ce qui s'est]
+f130b L01 [presupposé] ques ce q l di t de la me s oi n re
+f130b L02 i ge n ce de n t re le fi l je e t la me re
+f130b L03 oi t ve i ta b le si le ar r q s de [_2] qu ne je
+f130b L04 de me ou re st c [51] e de s le f fa oi re s i ou
+f130b L05 e n su r q le [80] se je q ou r se n de c ha r
+f130b L06 r qu n ju ge e n pe n se e pr lu s o s t
+f130b L07 di ve r t r ques de s y qu pr pr i ques r
+```
+
+**What it is about** (reader's gloss, grade M as a whole; words in square brackets supplied). The clear opening
+says the peace terms and the King's marriage with the Infanta are settled, for Servien's information only, and the
+court will tell him when he may speak of them to "leurs Altesses Royalles" (the Savoy court, Turin). The cipher then
+runs, roughly: "...[que] l'on publie des nouvelles ... de la verité desquelles il importeroit fort d'estre esclaircy,
+sçavoir quelle affection du filz ... de la mere ... que M. seroit en [?] pensée de se retirer du maniement des
+affaires; [parceque s'il pouvoit estre] ... un semblable changement, nous ... des mesures qu'on prendra ... et que
+le soin que le filz et la mere mesme, leurs principaux ministres, presentement ... de concert, ... une mesme
+intelligence, il ne seroit pas possible que vous ne nous [en donnassiez] connoissance ... vos soins [à] penetrer
+quelle peut estre l'inclination ... pour se marier, ou [à] la personne, et pour le temps; c'est [?] fondement que
+l'on publie ... Mademoiselle ... tres ... Mademoiselle d'Or[l]... [Desja je vous ay mandé ce qui s'est ...]" and,
+in the second block, "[presupposé] que ce qu'on dit de la mesintelligence d'entre le filz et la mere soit
+veritable, si le mar[quis] de [?] ... demeure ... des affaires ... pour se descharger ... qu'on juge en pensée plus
+... divertir ...". So: Brienne asks Servien to find out whether the reported rift between the Duke of Savoy and his
+mother is real, whether she means to withdraw from government, and the Duke's marriage inclinations, a
+"Mademoiselle" being named. Identities (which Mademoiselle, which marquis) are not established here.
+
+### (3) Control
+
+`control_f67.tsv`. Statistic: share of keyed letters covered by the best segmentation into lexicon words (3+
+letters, count >= 5 in tools/data/fr16, 9,498 words), runs between clear words/punctuation; I values not used.
+- key_1659 true: **584/810 = 0.721**.
+- 200 derangements of key_1659's values over its codes (seed 1659): mean **0.488**, sd 0.060, max 0.647; **0/200**
+  reach the true value; z = 3.85. (worker H's n-gram trial on pass A: z 3.57, 0/20.)
+- Holdout, key_1659_f86only.tsv (65 codes, f.86 alone): keys 489 groups, rate 0.668 (518/776); 66 tokens take a
+  different value from the joint key (the sub-part splits `16` `18` `24` `71`), so the f.88 alignment improves the
+  reading of this letter but is not needed for it.
+Word-level baseline is high (short French words cover random text), so the margin, not the absolute rate, is the
+result.
+
+### (4) Report
+
+Found: folio 67 (10 Oct 1659) is enciphered in the same table as the 21 Nov 1659 f.86-88 letter, and key_1659 reads
+it as French over most of its length: S 107, M 416, I 9, U 14 (cryptanalytic result; no H or C on this letter).
+Not found / not done: no printed text or decipherment of this letter was searched for (no print check, no phrase
+search; novelty is not classified here). The 14 U tokens and the thin/conflict rows (`65` ma, `10` z, `7`/`15`/`18`)
+need a key revision with f.67 as a third aligned text; f130a L02/9 `79` vs `39` and the two `154` groups need a second
+look on the image. Suggested phrases for a print check: "retirer du maniement des affaires", "mesintelligence
+d'entre le filz et la mere", "leurs principaux ministres", with "Servien" and "10 octobre 1659".
+
+Requests: gallica.bnf.fr 2 (canvas 129 and 130 natives, 200 first try). No other host. No subagents.
