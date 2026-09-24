@@ -8,20 +8,22 @@ than claim it wrongly later.
 THE ITEMS
 - Source: Thomas T. Eckert's telegraph ledgers, Huntington Library, San Marino, mssEC 19 p.49, with a
   second ledger copy in mssEC 25 pp.77 and 79. Read with War Department Cipher No. 1 (the key is in the
-  same collection, mssEC 41). Both entries are dated at Fort Monroe, addressed to Maj. Gen. Benjamin F.
-  Butler, telegraph operator Geo. D. Sheldon.
+  same collection, mssEC 41). Both entries are headed "Washn" (sent from Washington), addressed to Maj. Gen.
+  Benjamin F. Butler at Fort Monroe, telegraph operator Geo. D. Sheldon.
 - E4, 21 April 1864, 9.30 PM, from Gustavus V. Fox, Assistant Secretary of the Navy, to Butler:
   "If you can block the channel Roanoke Island so she can not get in to Pamlico Sound we will have some
   camels made in a few days to lighten the Tecumseh iron clad so she can cross the bar at Hatteras 8 feet
-  and protect all south of Roanoke Island." (the "she" is the Confederate ram Albemarle).
-- E5, 22 April 1864, 10.45 AM, from Quartermaster General M. C. Meigs to Butler: "Dispatch of last night
+  and protect all south of Roanoke Island." (the first "she" is the Confederate ram Albemarle, a contextual
+  identification; the second "she" is the Tecumseh). "Roanoke Island" is an editorial correction: the book
+  word's meaning reads "Inland" (mssEC 41 p.21 l.17).
+- E5, 22 April 1864, 10.45 AM by the operator's header (the cipher's own time word reads 10.30 AM), from Quartermaster General M. C. Meigs to Butler: "Dispatch of last night
   received. I learn that there are 4000 men here for Monroe instead of 3 regiments. You have all the
   transportation and should send it up for them. Send also for a 1000 cavalry horses now at the cavalry
   depot here and ready to go to you."
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md, key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, notes
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/NOTES.md, our search log https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md.
-- Eighteen other entries in the same ledger matched the Official Records word for word, so the ledger is
-  the kind of source the editors used. That makes it more likely, not less, that these two are printed
+- Seventeen other entries in the same ledger matched the Official Records word for word, and one more (a
+  Lincoln telegram) is printed in his collected works, so the ledger is the kind of source the editors used. That makes it more likely, not less, that these two are printed
   somewhere we have not looked.
 
 WHERE WE HAVE LOOKED: Official Records series I vols 32-45 and series III vol 4; Official Records of the
@@ -68,3 +70,5 @@ WHAT TO PUT IN THE FILE
    the source that shows it.
 4. Leads: archives, editions or scholars we should check, with a one-line reason each.
 5. Confidence: one sentence on how sure you are that nothing prior exists, and what would change it.
+
+<!-- Corrected 24 Sept 2026 by verifier V3a after SO-ECKERT-E4E5 (AUDIT.md): place of origin, the two "she", Inland/Island, E5 time word, 17 OR + 1 Lincoln. -->

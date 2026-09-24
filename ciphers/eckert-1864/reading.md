@@ -15,8 +15,8 @@ the clerk's slips ("Prss", "mangled", "For rest").
 | E1 | Stanton to Lockwood, Baltimore, 5 Mar 1864 3 PM | OR I/33 p.643 | reads word for word; "Cherry Stone Point" left in clear; addressee word "Prss" (C) |
 | E2 | Stanton to Lockwood, 5 Mar 7.40 PM | OR I/33 p.644 (7.20 p.m.) | reads word for word; "Plank Counties of the nick" = two counties of the Neck |
 | E3 | Halleck to Grant, Louisville, 6 Mar 11.30 AM | OR I/32 pt 3 p.26 | reads word for word: "your commission as Lieut General is signed" |
-| E4 | G. V. Fox (Asst. Sec. Navy) to Butler, Fort Monroe, 21 Apr 9.30 PM | not found in OR ser. I vols 32-45, ORN I/9-10, Butler Corr. IV (AUDIT.md: N3; Butler's reply OR I/33 p.279, ORN I/9 p.650) | reads cleanly: block the channel at Roanoke Island against the ram, camels for the Tecumseh; signer word "Brenton" (M) |
-| E5 | Meigs (Bender) to Butler, 22 Apr 10.45 AM | not found in OR ser. I vols 32-45, OR III/4, Butler Corr. IV (AUDIT.md: N3; antecedent Butler to Meigs 21 Apr, Butler Corr. IV p.112) | reads cleanly: 4,000 men here for Fort Monroe instead of 3 regiments; 1,000 cavalry horses at the cavalry depot |
+| E4 | G. V. Fox (Asst. Sec. Navy) to Butler, Fort Monroe, 21 Apr 9.30 PM | not found in OR ser. I vols 32-45, ORN I/9-10, Butler Corr. IV (AUDIT.md: N4, no prior decipherment located; Butler's reply OR I/33 p.279, ORN I/9 p.650) | reads cleanly: block the channel at Roanoke Island against the ram, camels for the Tecumseh; signer word "Buxton" = Secretary of Navy (H; was "Brenton[?]" (M) until the mssEC 25 collation of 24 Sept 2026, NOTES.md) |
+| E5 | Meigs (Bender) to Butler, 22 Apr 10.45 AM | not found in OR ser. I vols 32-45, OR III/4, Butler Corr. IV (AUDIT.md: N4, no prior decipherment located; antecedent Butler to Meigs 21 Apr, Butler Corr. IV p.112) | reads cleanly: 4,000 men here for Fort Monroe instead of 3 regiments; 1,000 cavalry horses at the cavalry depot; header 10.45 AM, time word Elizabeth = 10.30 AM (both kept, NOTES.md) |
 | E6 | Halleck to Sherman, Nashville, 26 Apr 3 PM | OR I/32 pt 3 p.498 (missed by the sweep; AUDIT.md: N1) | reads word for word: the 3rd Iowa Cavalry can be mounted at St Louis, its last orders were for Vicksburg |
 | E7 | Meigs to Col. Biggs, Fort Monroe, 9 May 9.30 PM | OR I/36 pt 2 p.587 | reads word for word; the ledger fixes the numerals (2,500 to 3,000 men) the scan's OCR loses |
 | E8 | Halleck to Wallace, Baltimore, 11 May 3.30 PM | OR I/37 pt 1 p.435 | reads word for word; addressee word "Submit" (C) |
@@ -76,7 +76,7 @@ them word by word (difflib), took the volunteer transcription as third witness, 
   image reads "Counties ... are attached". Kept B.
 - E3 last words: A "Sure[?]", B "Lim[?]", volunteers "same here"; image "same here". Kept "same here".
 - E4 line 2: A "Brandon[?]", B "Burden", volunteers "Baden"; the image reads "Baden" (a book word, Roanoke).
-  Last line: A "Brenton[?]" (also the volunteers), B "Burden"; kept "Brenton[?]".
+  Last line: A "Brenton[?]" (also the volunteers), B "Burden"; kept "Brenton[?]". (Superseded 24 Sept 2026: mssEC 25 p.77 reads "Buxton", applied to ciphertext.txt, H; NOTES.md.)
 - E5: A "Pension[?]" / "Quarterly[?]" / "Amber[?]", B "Pensun[?]" / "Guernsey" / "Pender", volunteers "Pension" /
   "queenly" / "Bender"; image: "Pension", "queenly", "Bender". Kept the volunteers' readings ("queenly[?]").
 - E7: A "Waymon[?]" / "Bender", B "Wayworn[?]" / "Pender", volunteers "wayworn" / "Bender"; image "wayworn",

@@ -96,6 +96,8 @@ decoded from the ledger; E12 hits are the printed Lincoln works and LoC).
   can not get into Pamlico Sound we will have some camels made in a few days to lighten the Tecumseh iron clad
   so she can cross the bar at Hatteras 8 feet and protect all navy of Roanoke Island. [signed] Asst [Secretary
   of the Navy] Fox". Code tokens H 11, M 0; 10 of about 63 words.
+  [Note 24 Sept 2026, V3a: superseded by the mssEC 25 collation (NOTES.md): "navy" is now "Waxy" = [South] (H) and
+  the tail "Asst Buxton Fox" = Asst [Secretary of Navy] Fox (H); reading.md is the current text.]
 - Prior plaintext of this telegram: **not located** in OR I/33 (pp.278-279, 938-942), ORN I/9 (pp.647-690),
   Butler Corr. IV (pp.112-120), Fox Confidential Correspondence, Butler's Book, IA full-text search on
   "lighten the Tecumseh", "camels made", "cross the bar at Hatteras", "get into Pamlico Sound", "block the
@@ -389,7 +391,8 @@ applied to Dupuy 468 and Gramont f.29r. Not lowered either: nothing in print car
    unresolved in the volunteers' transcription. So this is not a prior decipherment and does not change the
    class. It does mean the plain words of both telegrams have been public twice on the Huntington site, not
    once. The same search also found the other ends of the exchange, in clear: Fox to Ericsson 21 Apr 9.40 PM
-   (mssEC 18 p.50, pointer 9716, printed ORN I/9 p.667), and Butler's midnight reply as received (mssEC 10
+   (mssEC 18 p.50, pointer 9716, printed ORN I/9 p.667) [note 24 Sept 2026, V3a: ORN I/9 p.667 prints "9:20 p. m." (IA
+   officialrecordso0009unse text); 9.40 is the ledger time as transcribed here, not rechecked against the image], and Butler's midnight reply as received (mssEC 10
    p.118, pointer 10260; mssEC 25 p.79 top, printed OR I/33 p.279).
    *Residual for the solver, not for this audit:* mssEC 25 is a second witness for the transcription. It reads
    "Buxton" where ciphertext.txt has "Brenton[?]", the one M token in E4 (applied 24 Sept 2026: ciphertext.txt now
@@ -971,3 +974,50 @@ the result. Corrections in this commit: NOTES.md status lines (the N3 line and s
 status.json's eckert-1864 target note ("N4 pending JSTOR and HathiTrust full text" named the wrong blockers) and
 its results row (grade and gap), and ASKS row 41. ASKS row 27 was already marked answered. SECOND-OPINIONS-QUEUE
 (SO-ECKERT-E4E5) and second-opinions/PROMPT-chatgpt.md exist, so they are not touched.
+
+## Second opinion SO-ECKERT-E4E5 (ChatGPT, pull request 2), checked 24 Sept 2026, 16:30 UTC
+
+Verifier V3a (Opus, for LANE V4, session_017iueT2nBBNcQkKp8Se8pcP). Input: `second-opinions/chatgpt-2026-09-24.md`
+("GPT-6 (Codex)", copied from branch `second-opinion/SO-ECKERT-E4E5`, PR 2, unmerged). It reports no prior print and
+no prior decipherment of E4 or E5, low confidence because its own access failed (IA, Butler IV scan), and seven remarks
+on our apparatus. Each checkable claim was checked below. No decoding.
+
+| # | claim | source checked | verdict | correction made |
+|---|---|---|---|---|
+| 1 | no page-verified print of either telegram; the surrounding traffic is Fox to Ericsson ORN I/9 p.667 (21 Apr, 9:20 p.m.) and p.683, Butler's reply OR I/33 p.279 and ORN I/9 pp.650-651 | IA `officialrecordso0009unse` djvu text, fetched once: "Navy Department, April 21, [1864]—9:20 p. m. A rebel ram has got into the sounds ... Can you have camels made to lift the Tecumseh ... G. V. Fox" to Ericsson; "April 22, 1864 ... before we can get our camels ready" to Ericsson; index "Ericsson, J. 667, 683"; no "camels made in a few days", "lighten the Tecumseh" or Fox-to-Butler telegram of 21 Apr in the volume | **right** (agrees with s.5 and the N4 set) | "Second audit" item listing "Fox to Ericsson 21 Apr 9.40 PM" now carries a note that ORN prints 9:20 p.m. (the 9.40 is the mssEC 18 ledger time as transcribed, not rechecked) |
+| 2 | Butler Corr. IV p.114 holds Butler's 21 Apr reports to Fox and Halleck; Butler to Meigs IV p.112 | s.4 row 3 (vol 4 pp.112-120 read in full, three Butler-to-Fox telegrams pp.113-115) | **right**, already recorded | none |
+| 3 | Fox, *Confidential Correspondence* I-II: not excluded by the second opinion (OCR failed) | second audit (c): both volumes searched on IA, every "April 21/22, 1864", "camels" = Mobile | **its gap, not ours**: covered | none |
+| 4 | *Civil War Naval Chronology* (mirror): the "camels" hit is the Tennessee at Mobile | IA full-text API on `civilwarnavalchr0000vari_e2h9` (1971, lending-only): the only "camels" snippet is "over the Mobile bar using watertight caissons or 'camels'" | **right**; family now logged as searched (snippet level) | none |
+| 5 | Tsapina, "Now, Jesse", 26 June 2017: Cipher No. 1 read on a mssEC 19 entry (Grant to Sherman, 31 Mar 1864), not E4/E5 | NOTES.md l.20-21 and s.12 already cite it the same way | **right**, already recorded | none |
+| 6 | E5 header 10.45 AM vs derived 10.30 AM | reading.md block (`{time: 10.30 AM}`), key.md Elizabeth = 10.30 AM (TIME page, 315); NOTES.md already records the observation | **right**, already recorded in NOTES; the prompt did not say it | PROMPT-chatgpt.md now gives both times; reading.md E5 summary row states both |
+| 7 | E4 signer: summary still says "Brenton" (M) while the derived reading renders Asst [Secretary of Navy] Fox, H 11 | reading.md summary table row E4 said `signer word "Brenton" (M)`; ciphertext.txt l.50 reads "Asst Buxton Fox" since the mssEC 25 collation; `decode.py --check` exit 0 | **right** | reading.md summary row and reconciliation note updated (Buxton, H); AUDIT s.5 plaintext line annotated (also its "navy" -> Waxy = [South]); the two E4/E5 summary rows now say N4, not N3 |
+| 8 | the prompt's "eighteen other entries matched the Official Records" is wrong: 17 OR + E12 elsewhere | reading.md l.36-40, AUDIT s.8 (E12 in Lincoln's works, not the OR) | **right** | PROMPT-chatgpt.md corrected |
+| 9 | the prompt's "dated at Fort Monroe" is wrong: the entries are headed Washington, addressed to Butler at Fort Monroe | ciphertext.txt headers "Washn Apr 21st 1864", "Washn D.C. Apr. 22nd 1864" | **right** | PROMPT-chatgpt.md corrected |
+| 10 | "Roanoke Island" rests on "Inland [sic: Island]"; the correction is editorial | reading.md block and l.54 | **right**, already marked in the reading | prompt now says so |
+| 11 | the two "she" have different antecedents (ram, then Tecumseh); Albemarle is contextual | the plaintext itself | **right** | prompt corrected |
+| 12 | H grades cover code words, not clear words or identifications | key.md and decode.py grade only code tokens | **agrees**; no change | none |
+
+**Families it named that no audit had logged, closed this session.** Plum, *The Military Telegraph during the Civil
+War* (1882), vols 1-2 (IA `cu31924092908742`, `cu31924092908759`, full djvu text) and Bates, *Lincoln in the
+Telegraph Office* (1907, IA `lincolnintelegra00bates`): no "camels", "Tecumseh", "cavalry depot", "instead of three"
+or April 21/22 1864 hit; Plum names Geo. D. Sheldon only as an operator (Newport News). Elliott, *Ironclad of the
+Roanoke* (1994, `_jt3AAAAMAAJ`) and Miller, *Second Only to Grant* (2000, `QtB2AAAAMAAJ`) are snippet-only on Google
+Books and were located but not searched within: the host was held by a sibling verifier. **Residual, non-blocking**
+(biographies, not editions).
+
+**Its leads, one line each.** (1) NYHS Naval History Society collection MS 439, series 17 (Fox): archival; rule 10 N4
+leaves unpublished work open; pointer for the person, not a class matter. (2) Meigs Papers, LoC: already a pointer
+(Toward N4 s.2). (3) NARA RG 107 M504: already pointers (rolls 237-238, 281). (4) ORN as enclosures: vol 9 read in
+context (pp.647-690). (5) mssEC 19 p.49 vs mssEC 25 pp.77, 79: done (NOTES.md collation, 24 Sept 2026).
+
+**Class.** No check found a prior print or decipherment. **E4 and E5 stay N4** ("no prior decipherment located").
+E6 and E12 untouched (N1).
+
+**Postmortem.** The second opinion's reading remarks were right and all concern our apparatus, not the reading: a
+summary row and a first-audit plaintext line not refreshed after the mssEC 25 collation changed two tokens, and a
+prompt that turned the destination into the place of origin, counted the Lincoln print as an OR match and glossed
+both "she" as the ram. Lesson (same as SO-GRAMONT-F29R): regenerate prompt facts and summary rows from the current
+reading, not from earlier sections.
+
+Requests: archive.org 11 (3 advancedsearch, 4 metadata, 4 djvu downloads), be-api.us.archive.org 4 (full-text
+API), www.googleapis.com 2 (title lookups). No Gallica, no logins, no subagents.
