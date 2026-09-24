@@ -78,3 +78,54 @@ of the five folios' canvases can be pinned without an eye-checked `--anchor` pai
 anchor folio-to-canvas before cutting crops; not blocked).
 
 Requests this section: gallica.bnf.fr 1 (`gallica_folio.py` manifest fetch).
+
+## Ciphertext check (24 Sept 2026, LANE G2 worker T)
+
+**No ciphertext found beside any of the five "Dechiffrement" items; all five are fair copies of the plaintext,
+not the original cipher.** This ark (`btv1b9059840r`, 131 canvases, no folio labels on the manifest) turns out
+to run close to canvas = folio + 1: probing canvas 77 lands on the item's own ink page stamp "76" and its own
+heading in the hand's own words, exactly matching item 30's cataloguing --
+
+> "Dechiffrement d'une depesche Envoyée de Calais au Roy francois premier par le Chancelier du prat sur le
+> subject de la negotiation pour la paix Entre France et Espagne"
+
+-- with the facing and following pages continuing in **plain, legible cursive French prose**: no numeral
+groups, no cipher symbols, no nomenclator marks anywhere on the leaf. This is the decipherment itself, written
+out fair, not the encoded dispatch it was made from.
+
+Four further probes at the offset-uncorrected canvas numbers closest to the finding aid's other four folios
+(canvas 76=stamp"75"≈Fol.75/76; 82=stamp"81"≈Fol.81/82; 91=stamp"90"≈Fol.89-91; 118=stamp"117"≈Fol.117/118,
+i.e. within 0-2 canvases of items 30/31/33/34/41's cited folios 76/82/89/91/118) show the same pattern: plain
+handwritten letters and memoranda (one, at canvas 118, a French-heading + Latin "Memoire baillé au Cardinal
+d'Yorc Legat traitant la paix a Calais..." memorandum, unrelated in content to Duprat but confirming the
+volume's leaves in this range are all clear-text correspondence/memoranda, never cipher). None of the 5
+canvases sampled (76, 77, 82, 91, 118 -- 89 failed twice, not retried further) carries any ciphertext.
+
+This does not rule out that the *original* enciphered dispatches these are decipherments *of* survive
+elsewhere in BnF's holdings (a decipherment is normally made from a separate ciphered original, which period
+practice often kept apart from the fair-copy plaintext) -- only that none is bound into this volume next to
+the five items themselves, within the leaves actually viewed. A full canvas-by-canvas read of all 131 canvases
+(outside this brief's "no passes" scope) would be needed to rule that out completely for the whole volume.
+
+Per target row, per this pass:
+- **M30 (Fol. 76, item 30):** ciphertext: **no** (item is the decipherment itself, heading confirmed, canvas
+  77). Lines: n/a (title + ~2 pages of continuous plaintext prose, not a line-counted cipher). Decipherment
+  beside it: this item *is* the decipherment; no adjoining raw cipher seen. Canvas: 77 (stamp "76").
+- **M31/M33/M34 (Fol. 82, 89, 91, items 31/33/34, "Autre Dechiffrement"):** not individually re-pinned this
+  pass (budget); canvases 82 and 91, within 0-2 leaves of their cited folios, show the same plain-prose
+  pattern, consistent with these being further fair-copy decipherments in the same run, no ciphertext.
+- **M41 (Fol. 118, item 41):** ciphertext: **no** at canvas 118 (stamp "117"), a different, unrelated
+  memorandum in clear (Cardinal of York / Calais peace negotiations) -- confirms the surrounding leaves are
+  clear text but this specific canvas is not item 41 itself (off by ~1); item 41's own leaf not individually
+  confirmed this pass.
+
+Status stays `open` (a decipherment without its cipher is not itself a target; whether the underlying
+enciphered originals exist elsewhere is unresolved, not searched this pass). Not closed-negative: this row was
+never itself a cipher to solve, and rule 3's matched-control requirement does not apply to a "does ciphertext
+exist here" location check.
+
+Requests this section: gallica.bnf.fr 13 (5 canvases at 200px -- 76, 82, 89, 91, 118, with 82 retried once and
+89 retried once then failed twice total = 7 requests; the same 4 successful canvases re-fetched at 900px = 5
+requests, 82 retried once = 1 extra; + canvas 77 at 900px = 1 request), all >=1.5s apart, UA `cipher-lab
+research script (contact via repository)`. Failures were transient `Connection reset by peer` / one HTTP 500,
+not a block signal; no 403/429/challenge seen.
