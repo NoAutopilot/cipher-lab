@@ -215,3 +215,73 @@ boundary noted above before trusting it. Write `ciphertext.tsv`. Everything else
 (key.tsv, decode.json + decode_key.py reading, matched control, phrases.txt + print_check.py) is still open.
 
 Requests: 0 network (images already on disk; band crops regenerated locally, no fetch).
+
+## R17: key and reading, 24 Sept 2026 08:30 UTC (LANE R worker R17, Opus, session_011yvU8fdYtfhhpuMK1C9nvJ)
+
+**Settling (`settle.py`, `--check` 0).** Pass A split BLA188 p3 line 9 in two, so its L10-L19 sat one line ahead of
+pass B; `settle.py` joins A L09+L10 and renumbers before aligning (this accounted for most of the 109 BLA188 p3 rows in
+`recon/disagreements.tsv`). Then rule 'key-consistent' (the gloss over the disputed column is attested for one group
+elsewhere in the run and not for the other): 33 disagreements and 32 agree-flagged columns settled to H without an
+image. Image, 10 crops from the 1200 px disk copies (no fetch): every M column in BLA186 p1/p3 and BLA191 p5, 57 columns
+(`settle_image.tsv`, by eye). Result `ciphertext.tsv`: 1532 columns, H 1393, M 139 (68 disagreements left undecided
+with the alternative kept, 57 agree-flagged, 3 gaps, 5 null-like groups without gloss). `settle_log.tsv` shows each
+decision with the gloss evidence.
+
+**Finding for anyone re-reading these pages: the hand of BLA186 and BLA191 writes 7 as '>' or ')'.** Both blind passes
+agreed on a wrong reading at five places the image settles: 186 p3 pos 1 is 737 (monsieur), not 733; 191 p5 L02 pos 1
+137 not 135; L05 pos 8 278 (de) not 258; L07 pos 9 probably 937 not 933 (M); L01 pos 9 probably 941 not 947 (M). The
+glossed pages (other hands) were not re-checked for this; 'agree' there means two passes agreed, nothing more.
+
+**Key (`build_key.py`, `--check` 0).** `key.tsv`: 395 groups, all grade C (contemporary gloss on the leaf, or on BLA189
+p3 / BLA190 p5-p6 the letter's own bracketed clear phrase), value = majority gloss over H columns; 90 groups carry a
+second gloss (mostly syllable fragments of the same word, e.g. 385 et/es), 29 are ties 'a|b' and decode as M.
+`key_conflicts.tsv`, glossed columns that differ from the key value, per item: BLA179 2/24, 185 2/103, 187 11/72,
+188 57/405, 189 7/151, 190 34/347, 194 22/103.
+
+**One system for 1725-29: yes, on this evidence.** Leave-one-item-out (`key_items.tsv`): the share of an item's
+glossed columns whose gloss equals the value the other items give the same group is BLA179 (Paris, 1725) 16/18 =
+0.89, 185 0.91, 187 0.70, 188 0.73, 189 0.86, 190 0.77, 194 0.68. Under two unrelated systems the expected share
+would be near zero; the shortfall from 1.0 is gloss fragments and pass noise, not a second table. BLA186 (Madrid 1728)
+and BLA191 (1729) carry no gloss and are tested only by whether the key reads them as French, which it does.
+
+**Reading (`decode.json`, `tools/decode_key.py . --check` 0), `reading.txt` / `reading_tokens.tsv`.** 172 tokens: C 129,
+S 0, M 22, U 21, H 0.
+
+| Item | tokens | C | M | U |
+|---|---|---|---|---|
+| BLA184 p1 | 7 | 3 | 3 | 1 |
+| BLA186 p1+p3 | 24 | 20 | 0 | 4 |
+| BLA191 p5 | 141 | 106 | 19 | 16 |
+
+French rendering (key values joined into words; [..] = unkeyed group; nothing filled from context; no S, since no
+context fill was attempted and so no control was needed):
+
+- **BLA186 p1** (after "...s'il se trouve sur leurs estats.", Ripperda's escape): *l'ambassadeur [73] a été fort [470]
+  [778] [190]te affaire.* ("[190]te affaire" is likely "cette affaire", an inference, not graded.)
+- **BLA186 p3** (after "...pour empescher les gallions de passer en Europe."): *Monsieur de Patigno m'en a [849 =
+  'monsieur', one gloss in BLA188, doubtful] ce soir.* Patiño, by the key's syllables pa-ti-g-no.
+- **BLA191 p5** (enclosure (a), 1729): *L'[805] que je vous ai, milord, est bien grande pour votre lettre du [6] [j'y|
+  parle] ai ... quand ce [1210] de [689]ars à la première ad[..]ri... hier quand vous me [460]ri(?) sçavoi[r], comme je
+  [285]is agit après le départ du [214], car Monsieur Keene m'a[i]me, mais il n'a aucun ordre des [1019][711]s pour
+  moi, quoyque dans l'affaire passée je lui ai fait [1118] bon [1052]ce, sans qu'il m'ait jamais dit ce que je pouvois
+  fournir pour le mieux à l'accommodement, et par [585=ig]norance [1152] intentions, et je serai inutile dans
+  l'ignorance. Mandez-moi donc quelque ordre pour ma [222].* The writer asks his correspondent ("milord") for
+  instructions, complaining that Keene (the British minister at Madrid) gives him no orders. 585 = "ig" is inferred
+  from "[585]no ra n ce" twice (I, not in the key).
+- **BLA184 p1**: 1150 1259 / 1240 1243 / 1243 1240 / 1250 sit in clear prose as names or place-holders ("et Monsieur
+  1240 de 1243 la Paz", "1243.1240. Si Monsieur Rotembourg..."); the glosses of this range elsewhere (1250 hier|c'est,
+  1150 vo) do not fit, and R7 saw 1240/1243/1250 used as nulls in 189. Not read: this range is probably a names section
+  the glossed items never use.
+
+**What is left.** 21 unkeyed groups (805, 6, 1210, 689, 460, 285, 214, 1019, 711, 1118, 1052, 836, 1152, 222, 73, 470,
+778, 190, 1259, 1240, 1243); a context-fill pass with a matched control (blank the same share of a glossed item, e.g.
+BLA185, and score) could move some to S; 849 needs its BLA188 gloss re-checked on the image. BLA190 p7 date anomaly
+(R1) untouched. The 68 undecided columns are all in glossed items, not in the targets.
+
+**Search log (prior print of these letters), 24 Sept 2026.** `tools/print_check.py . --only ia,ia-global,openalex,crossref`
+with `phrases.txt` (5 decoded joins, 2 clear-text phrases from BLA186) against `sources.tsv` (Coxe, Walpole 1798
+vols 1-3; Coxe, Horatio Walpole 1802; Coxe, Kings of Spain vols 2-3; HMC Townshend 1887; Armstrong, Elisabeth Farnese
+1892): 63 phrase x source searches, no hits, including IA full text across all items (ia-global). OpenAlex answered
+HTTP 429 on the first call and was not retried (8 rows 'not searched'). CrossRef keyword searches returned only
+unrelated records. Not searched: Google Books (LANE V's host), HathiTrust, TNA SP 94 calendars, the BL Newcastle papers.
+Requests: archive.org 8, be-api.us.archive.org 7, api.openalex.org 1 (429), api.crossref.org 2. No novelty classified.
