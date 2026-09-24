@@ -1,0 +1,28 @@
+query	publisher	facomponent_id	title	date	cote	fonds	status	reason
+Viete (control)	34633 (AN)	-	Papiers Francois Viete	XVIe-XIXe s	-	Papiers Francois Viete (106 AP)	control	38 hits confirmed against sources/cryptiana/web/viete.htm; query form verified working
+en chiffre	34633 (AN)	-	-	-	-	-	excluded-noise	102 hits, first two "exportation du livre francais en chiffre" (statistics) and "orientation en chiffre" (statistics) -- LESSONS.md foliation/statistics noise pattern
+ecrite en chiffre	34633 (AN)	2bb791b2801506f942e98b5dbe3c98ddb35b1b6c	Saint-Petersbourg. De Henry Lavie au Conseil de Marine	1720	Fol. 92-94v	Correspondance des consuls de France a Saint-Petersbourg (1713-1792)	lead-only	covering letter about a separate 22 Nov 1720 ciphered dispatch, not itself ciphertext; not located
+ecrite en chiffre	34633 (AN)	9c7417135a07a5d544bef0cb8b557e606010ac6b	Seine [police letter]	1825	F/7/6751	Interieur; Police. Affaires politiques (1815-1841)	dropped-out-of-range	"Lettre ecrite en chiffre... Saint-Brieuc (janvier 1825)" -- 1825, outside 1450-1815 brief window
+lettre chiffree	34633 (AN)	f941e398d3b196aa788e7f4f0075987da2804e6a	Bouille to Fersen	1791-04-21	440AP/3 piece 3	Papiers Marie-Antoinette	kept	AN5; digitised, image host egress-blocked, high print risk (Klinckowstrom)
+lettre chiffree	34633 (AN)	3fbb39e1a43412140de55816491140468eed0268	Lettre chiffree ecrite en 1816 au general Jacquemard	1816	Dossier 209	-	dropped-out-of-range	1816, outside window
+lettre chiffree	34633 (AN)	b0121bf758a5787c0462db58a093bbe33d72f57d	Lironcourt to the Minister, Amsterdam	1778	Fol. 150	Correspondance recue du consulat d'Amsterdam (1775-1784)	kept	AN4
+lettre chiffree	34633 (AN)	437ec086f504a010077fbf3bcc8640a94ec9bc98	Zwanziger to Clarke	1796-11 (4 brumaire an V)	Piece 66	AF/III/169-201, Directoire executif Guerre vol.4	dropped-edition	adjacent Pieces 67-69 "Dechiffrement de la piece precedente" -- decipherment already in the box
+lettre chiffree	34633 (AN)	e635abab9a3f30de1c5e82bc48c1c3484895b872	Dechiffrement de la piece precedente	1796-97	Pieces 67-69	AF/III/169-201, same box as Piece 66	context	confirms Piece 66 has a contemporary decipherment in the same folder
+lettre chiffree	34633 (AN)	c7953c192703c6129c549a418c4f1236f5b82ee9	Lettre chiffree et dechiffree, au duc d'Albanye?	1527-04-27	Piece n47 (1)	-	dropped-deciphered	catalogue says "et dechiffree" outright
+lettre chiffree	34633 (AN)	e3b39af24af915f8e470388cb0c8b32d18622741	Alger, war preparations vs Oran siege	1750-03-06	F13	Correspondance recue du consulat d'Alger (1642-1792)	kept	AN3 cluster
+lettre chiffree	34633 (AN)	a0a6fc6eb8cf9033aaf2d758f979d1377e31f155	Alger, exclusion of Sardinia peace possibility	1750-03-03	F11	Correspondance recue du consulat d'Alger	kept	AN3 cluster
+lettre chiffree	34633 (AN)	9de4f24568c39785c36f50fb64e5af652cff3aa1	Alger, Tuscan flag abuses at Livorno	1750-03-05	F12	Correspondance recue du consulat d'Alger	kept	AN3 cluster
+lettre chiffree	34633 (AN)	3b21eca3f834a9df96d897fe1869e7d39e99fdd2	Alger, Hamburg peace treaty instructions awaited	1750-09-16	F95	Correspondance recue du consulat d'Alger	kept	AN3 cluster
+lettre chiffree	34633 (AN)	7fa06029789258fc05d5fccf2120fad17d5b401c	Alger, Khaznadar manoeuvres	1750-12-08	F133	Correspondance recue du consulat d'Alger	kept	AN3 cluster
+lettre chiffree	34633 (AN)	57fabeb2c3f112df061abae4e105f98cc680f9d7	Alger, peace treaty with Hamburg concluded (chiffree et en clair)	1751-03-02	F165-167	Correspondance recue du consulat d'Alger	kept	AN3 cluster
+lettre chiffree	34633 (AN)	1f947b67e9748333ae3eb3ef9a53ec81e1b7523c	Precis des depeches du s. Valliere, consul a Alger	1750	F22-23	Correspondance recue du consulat d'Alger	context	summary piece naming Vallieres as the consul; not itself scored
+lettre chiffree	34633 (AN)	efa17d6260e732ac4ee2821f088259788d4b8e00	Vaulgrenant to Partyet, Madrid	1737	Fol. 202-202v	consular correspondence, Cadix	kept	AN6
+lettre chiffree	34633 (AN)	bee123557020d0b8a8d7be885f0de188c52fdd8e	Poirel to Sartine, Cadix, Cordoba squadron armament	1779	Fol. 71-71v	consular correspondence, Cadix (inferred)	kept	AN7
+lettre chiffree	34633 (AN)	-	Guilleragues to Duquesne / La Haye to Colbert, Constantinople cluster	1670-1682	various F folios	Ottoman/consular diplomatic correspondence	lead-only	snippet does not show "en partie chiffree" in the visible extract; dossier-level match not confirmed per-piece
+lettre chiffree	34566 (AAE)	-	-	-	-	-	no-hits	0 results
+dechiffrement	34633 (AN)	-	-	-	-	-	excluded-noise	68 hits, dominated by 20th-c. cryptology-policy and judicial (Malek B. QPC) records
+dechiffrement	34566 (AAE)	14069e564401d1472e6f1d042ddf80cf1f8cddf4	Correspondance secrete de Berlin: Mirabeau to Goltz, Dechiffrement de cinq lettres	1786-1787	53MD/1884	Memoires et Documents / France	dropped-deciphered	catalogue states a decipherment of five letters already exists; Mirabeau's own 1789 print likely covers it
+en partie chiffree	34633 (AN)	2f27ba2e061839210236a6a0bfb09fb9b0f14542	Hoche to Clarke, re Morard de Galles	1796-11-09 (19 brumaire an V)	Piece 84	AF/III/169-201, same box as Piece 66	kept	AN1
+en partie chiffree	34633 (AN)	7b5caf5270cc1b711363d0dac9ff0f5fffcd476d	Hoche to Clarke, re arrival of [Wolfe Tone]	an V (1796-97)	Piece 108	AF/III/169-201, same box	kept	AN2
+en partie chiffree	34633 (AN)	1e04ee8911569679db3ebfa7439fde199ba2a699	Moltzan to Chancellor Duprat (et dechiffree)	1519-02-27	Piece n57	-	dropped-deciphered	catalogue says "et dechiffree"; likely cross-reference to ciphers/dupuy468-anhalt (M7)
+en partie chiffree	34566 (AAE)	-	-	-	-	-	unreachable	first attempt returned "Page not found" (token-redirect fault); one-attempt rule, not retried

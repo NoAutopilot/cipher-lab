@@ -7219,5 +7219,154 @@
   "kept": 0,
   "copy_free": 0,
   "rows": []
+ },
+ "lane_n_fr-an": {
+  "date": "24 September 2026",
+  "_about": "LANE N scout of 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-n-scAN.md): francearchives.gouv.fr (the only reachable host; siv.archives-nationales.culture.gouv.fr and archives.diplomatie.gouv.fr both egress-blocked, 502 at the proxy, logged). Five phrase queries restricted to Archives nationales (publisher 34633) and Archives diplomatiques (34566): 'en chiffre' (102/foliation noise per LESSONS.md), 'ecrite en chiffre' (2/0), 'lettre chiffree' (260/0, two pages of 26 read), 'dechiffrement' (68/3, mostly modern cryptology-policy noise), 'en partie chiffree' (47/unreachable at AAE, one attempt). Control: 'Viete' at AN returns 38 hits under the known Papiers Francois Viete fonds (sources/cryptiana/web/viete.htm), confirming the query form works. Producteur facets show the consular-correspondence series (Secretariat d'Etat de la marine, Administration/Bureau des consulats, 1669-1790) as the dominant source of kept rows -- filed at AN, not AAE, despite being foreign correspondence. Seven rows kept (AN1-AN7); two leads not scored (Henry Lavie Saint-Petersbourg 1720 covering letter, Guilleragues-Duquesne Constantinople cluster); five dropped (two already-deciphered in the same box/fonds -- Zwanziger Piece 66 an edition, Moltzan-Duprat 1519 likely the ciphers/dupuy468-anhalt cross-reference, Mirabeau-Goltz Berlin secret correspondence -- plus two outside the 1450-1815 window, Jacquemard 1816 and a Saint-Brieuc police intercept 1825). Zero rows copy-free-confirmed: the one digitised row (AN5, Bouille-Fersen) sits on the egress-blocked AN image host. Never promoted, never solved.",
+  "digitised_copy_free": 0,
+  "excluded": 5,
+  "kept": 7,
+  "raw_unique_records": 479,
+  "requests_per_host": {
+   "francearchives.gouv.fr": 22,
+   "siv.archives-nationales.culture.gouv.fr": 2,
+   "archives.diplomatie.gouv.fr": 1,
+   "github.com": 2
+  },
+  "rows": [
+   {
+    "rank": "AN1",
+    "target": "Hoche to Clarke, re Admiral Morard de Galles",
+    "year": "1796-11-09 (19 brumaire an V)",
+    "lang": "fr",
+    "kind": "recovery",
+    "holder": "Archives nationales",
+    "reference": "AF/III/169-AF/III/201, Piece 84 (Armee d'Angleterre > Correspondance secrete)",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 2,
+     "size": 2,
+     "competition": 3,
+     "weight": 3,
+     "unread": 2
+    },
+    "total": 36
+   },
+   {
+    "rank": "AN2",
+    "target": "Hoche to Clarke, announcing the arrival of [Wolfe Tone]",
+    "year": "an V (1796-97)",
+    "lang": "fr",
+    "kind": "recovery",
+    "holder": "Archives nationales",
+    "reference": "AF/III/169-AF/III/201, Piece 108, same box as AN1",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 2,
+     "size": 2,
+     "competition": 3,
+     "weight": 3,
+     "unread": 2
+    },
+    "total": 36
+   },
+   {
+    "rank": "AN3",
+    "target": "Consul Valliere at Algiers, six war-preparation dispatches",
+    "year": "1750-1751",
+    "lang": "fr",
+    "kind": "cryptanalysis",
+    "holder": "Archives nationales",
+    "reference": "Correspondance recue du consulat d'Alger (1642-1792), ff.11-13,95,133,165-167",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 0,
+     "size": 2,
+     "competition": 1,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 28
+   },
+   {
+    "rank": "AN4",
+    "target": "Chevalier de Lironcourt, consul at Amsterdam, to the Minister",
+    "year": "1778",
+    "lang": "fr",
+    "kind": "cryptanalysis",
+    "holder": "Archives nationales",
+    "reference": "Correspondance recue du consulat d'Amsterdam (1775-1784), Fol. 150",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 2,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 28
+   },
+   {
+    "rank": "AN5",
+    "target": "Marquis de Bouille to Comte de Fersen",
+    "year": "1791-04-21",
+    "lang": "fr",
+    "kind": "cryptanalysis",
+    "holder": "Archives nationales",
+    "reference": "440AP/3 piece 3, Papiers Marie-Antoinette",
+    "axes": {
+     "language_fit": 3,
+     "material": 3,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 1,
+     "weight": 3,
+     "unread": 1
+    },
+    "total": 25
+   },
+   {
+    "rank": "AN6",
+    "target": "Comte de Vaulgrenant to Jean Partyet, consul at Cadiz",
+    "year": "1737",
+    "lang": "fr",
+    "kind": "cryptanalysis",
+    "holder": "Archives nationales",
+    "reference": "consular correspondence, Cadix, Fol. 202-202v",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 2,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 28
+   },
+   {
+    "rank": "AN7",
+    "target": "Jean-Baptiste Poirel, vice-consul at Cadiz, to Sartine",
+    "year": "1779",
+    "lang": "fr",
+    "kind": "cryptanalysis",
+    "holder": "Archives nationales",
+    "reference": "consular correspondence, Cadix (fonds title inferred), Fol. 71-71v",
+    "axes": {
+     "language_fit": 3,
+     "material": 1,
+     "key_lead": 0,
+     "size": 1,
+     "competition": 2,
+     "weight": 2,
+     "unread": 3
+    },
+    "total": 28
+   }
+  ]
  }
 }

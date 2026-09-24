@@ -2134,3 +2134,104 @@ internetculturale.it curl 2; www.archiviodistatovenezia.it curl 5 (2 succeeded o
 subpaths); www.archivioapostolicovaticano.va curl 2; github.com 2 shallow clones (dbourdeau/cyphersolver,
 aaymeloglu/unsolved-ciphers, grepped only); WebSearch 2. No DECODE, no Google Books, no logins, no subagents,
 no novelty wording, no promotion.
+## French national and diplomatic archives (LANE N scout of 24 September 2026)
+
+Brief row AN: French national and diplomatic archives outside the BnF -- Archives nationales K/KK/AP series, the
+Trésor des chartes, and the Archives diplomatiques (Correspondance politique, Mémoires et documents), 1450-1815,
+via francearchives.gouv.fr. LANE G owns gallica.bnf.fr and archivesetmanuscrits.bnf.fr; neither touched here.
+
+**Hosts reached.** `siv.archives-nationales.culture.gouv.fr` (the AN's own Salle des inventaires virtuelle) and
+`archives.diplomatie.gouv.fr` both answered every CONNECT with a proxy-level `502` (`gateway answered 502 to
+CONNECT (policy denial or upstream failure)`, confirmed via `$HTTPS_PROXY/__agentproxy/status`'s
+`recentRelayFailures` -- an egress-policy denial, not a site-side block) -- both logged unreachable, one attempt
+each, no route in the playbook helps (rule: "000 means the egress policy blocks it"). `francearchives.gouv.fr`
+(the interministerial portal that indexes AN, the Archives diplomatiques and every departmental/regional service)
+answered but needs a browser: the search form is a WebForms-style token redirect that 404s on a bare GET, and a
+Tarteaucitron cookie panel intercepts pointer events on some pages; `--type "#norql=..."` on the homepage search
+box (id `norql`, submits to `/fr/search?q=...`) reliably reaches results, `es_publisher=34633` restricts to
+Archives nationales and `es_publisher=34566` to Archives diplomatiques. All queries went through this one host,
+>=1.6s apart, browser tool only.
+
+**Control.** Before trusting a low count, ran `q=Viète&es_publisher=34633`, which returned 38 records under the
+finding aid "Papiers François Viète (XVIe-XIXe siècles)" (106 AP, cited in `sources/cryptiana/web/viete.htm` as
+holding "many letters deciphered by Viète") -- confirms the query form and publisher facet genuinely surface a
+known AN-held cipher-adjacent fonds, not a broken search returning zero for everything.
+
+**Queries run** (phrase-quoted, both publishers unless noted): `en chiffre` (102 AN / not re-run AAE, term itself
+is foliation/statistics noise per LESSONS.md's Gallica/Kalliope precedent -- confirmed here too, first hits were
+"exportation du livre... en chiffre" and "orientation en chiffre: statistiques"), `écrite en chiffre` (2 AN / 0
+AAE), `lettre chiffrée` (260 AN / 0 AAE), `déchiffrement` (68 AN, almost all 20th-century cryptology-policy and
+judicial noise / 3 AAE), `en partie chiffrée` (47 AN / page 404'd on first attempt, not retried -- one attempt
+limit, logged unreachable this budget, not "0"). `lettre chiffrée` and `en partie chiffrée` at AN were the
+productive queries; two pages of `lettre chiffrée` (of 26 total, sorted by relevance) and one page of `en partie
+chiffrée` were read in full, not the whole 260+47. Producteur facets confirm two dominant series: "France.
+Secrétariat d'État de la marine. Administration des consulats (1669-1790)" (91 of the 260) and "...Bureau des
+consulats" (44) -- the Navy Ministry's consular correspondence, filed at AN, not AAE, despite being foreign
+correspondence (Marine handled consular affairs under the Ancien Régime). AAE's own La Courneuve holdings
+(Correspondance politique proper) are thin on francearchives -- only 340PO and 53MD series surfaced at all --
+consistent with AAE's main series not being indexed on the portal; `archives.diplomatie.gouv.fr` itself, which
+would carry it, is the egress-blocked host above.
+
+Every kept row below was read on its own record page (fonds, cote, date, "Où consulter" block); none has a
+"Consulter le document numérisé" link except AN1, so material=1 (described, not imaged) for the rest. No leaf
+image was opened for AN1 either: its image sits on `siv.archives-nationales.culture.gouv.fr`, egress-blocked
+from this account, so "digitised" here means the portal record links an image this session could not view --
+flagged, not scored as copy-free-confirmed. Checked against QUEUE.md, CATALOG.md, LANDSCAPE.md, `ciphers/`, and
+fresh shallow clones of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` (grep by holder/shelfmark and
+correspondent name): no match for any kept row. "Vaulgrenant" alone (a different context, a DECODE-cached note
+in `unsolved-ciphers/starhemberg-1758/key-audit-continuation.json`) is a coincidental name hit, not the same
+item. d'Estaing 1779 (already in LANDSCAPE.md, AAE Correspondance politique) did not resurface as new.
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Total |
+|---|---|---|---|---|---|---|---|
+| AN1 | Hoche (general commanding the Armée d'Angleterre) to Clarke, on Admiral Morard de Galles | 19 brumaire an V (9 Nov 1796) | fr | recovery | AN, AF/III/169-AF/III/201, "Archives du Directoire exécutif. Guerre. Volume 4 (an IV-an VIII)" > Armée d'Angleterre > Correspondance secrète > Brumaire an V, Pièce 84 | Catalogue title verbatim: "Lettre en partie chiffrée du général Hoche au général Clarke au sujet de l'amiral Morard de Galles." Same box, 18 pieces earlier (Pièce 66, 4 brumaire an V): "Lettre chiffrée de de Zwanziger à Clarke au sujet du projet de négociation de paix séparée avec l'empereur d'Autriche," immediately followed in the same inventory by Pièces 67-69, "Déchiffrement de la pièce précédente" -- a contemporary decipherment filed beside its cipher letter, in this same folder. That specific decipherment is Zwanziger's alone (an edition once obtained, dropped from this table, see Caveats); nothing this sweep confirms an adjacent decipherment for Pièce 84 itself, but the folder's own filing habit (a cipher piece followed by its clear-text key) is a genuine key lead for the rest of the folder, unconfirmed beyond Piece 66. Not digitised; "Voir sur le site d'origine" points at the egress-blocked AN viewer. Hoche's Expédition d'Irlande (the planned invasion with Wolfe Tone, autumn 1796) is one of the best-studied Directory-era military plans. | 36 |
+| AN2 | Hoche to Clarke, announcing the arrival of [Wolfe Tone] | An V (1796-97) | fr | recovery | Same fonds/box as AN1, Pièce 108 | Catalogue title verbatim (truncated by the search snippet): "Lettre, en partie chiffrée, du général Hoche au général Clarke annonçant l'arrivée de [Wolfe Tone]. Il déplore l'aventure arrivée au général..." Same folder, same key-lead reasoning as AN1 (untested beyond Pièce 66/67-69). Wolfe Tone's own role in the Irish expedition is independently well documented (his journals are printed), raising both weight and the risk that this specific letter's content is already summarised or quoted in Tone/Hoche biographical literature even if the cipher itself was never applied -- not checked this sweep. | 36 |
+| AN3 | "Idem" [Vallière], French consul at Algiers, six dispatches on Algiers war preparations and peace-treaty news (Spain, Sardinia, Hamburg, Tuscany) | 3 Mar-16 Sept 1750, 2 Mar 1751 | fr | cryptanalysis | AN, "Affaires étrangères. Correspondance reçue du consulat d'Alger (1642-1792)", ff.11-13, 95, 133, 165-167 | Six separate "Lettre chiffrée" (one "Lettre chiffrée et en clair", mixed) items from one run of consular dispatches, titles naming Oran siege preparations, an Algiers-Hamburg peace treaty, Tuscan-flag abuses at Livorno, and manoeuvres over the Kaznadar. Not digitised. High print risk flagged, not checked: Eugène Plantet's 1889 "Correspondance des Deys d'Alger avec la Cour de France" specifically covers this consulate and era; a same-edition check is the obvious next step before any campaign. | 28 |
+| AN4 | Chevalier de Lironcourt, French consul at Amsterdam, to the Minister, on a conference with the Prince of Nassau | 1778 | fr | cryptanalysis | AN, "Affaires étrangères. Correspondance reçue du consulat d'Amsterdam (1775-1784)", Fol. 150 | "Copie de la lettre chiffrée du Chevalier de Lironcourt, Consul à Amsterdam au Ministre, sur une conférence avec le Prince de Nassau." A copy, not the original send. 1778 sits inside French preparations for the American War (the Franco-American treaties were signed Feb 1778); Dutch neutrality/the Prince of Nassau's position was a live diplomatic question that year. Not digitised. | 28 |
+| AN5 | Marquis de Bouillé to Comte de Fersen | 21 April 1791 | fr | cryptanalysis | AN, 440AP/3 pièce 3, "Papiers Marie-Antoinette (XVIIIe-XIXe siècle)" | "Lettre chiffrée du 21 avril 1791 du marquis de Bouillé au comte de Fersen." 2 pages. **Digitised** -- the only copy-free row this sweep (`Consulter le document numérisé` links to the AN's own viewer) -- but the image sits on the egress-blocked `siv.archives-nationales...` host, so it was not opened or confirmed to show ciphertext (rule 2 not fully met). Six weeks before the royal family's flight to Varennes (20-21 June 1791), which Bouillé helped plan and to which Fersen was central: this is very likely covered by Fersen's own published correspondence (Klinckowström's 1877-78 "Le Comte de Fersen et la cour de France" is the standard edition and is known to print ciphered Fersen letters with their decipherments) -- flagged as the single highest print risk in this table, not checked this sweep. | 25 |
+| AN6 | Comte de Vaulgrenant (French diplomat at the Spanish court) to Jean Partyet, French consul at Cadiz | 1737 | fr | cryptanalysis | AN, same consular-correspondence class as AN3/AN4/AN7 (Cadix), Fol. 202-202v | "[Lettre chiffrée] - Extraits; indult de la flotte et des fruits; remboursement à faire aux esclaves français." Ransom/redemption of French captives and a fleet/fruit-trade licence. Finding aid title and full fonds citation not captured this sweep (time-boxed); date and cote confirmed from the record page. | 28 |
+| AN7 | Jean-Baptiste Poirel, French vice-consul at Cadiz, to Sartine (Secretary of State for the Navy) | 1779 | fr | cryptanalysis | AN, "Affaires étrangères. Correspondance reçue du consulat de Cadix" (title inferred from AN3/AN4 pattern, not independently confirmed), Fol. 71-71v | "[Lettre chiffrée] - N° 110. Il donne l'état d'armement des différents bâtiments de l'escadre Córdoba; salutations." Naval intelligence on the Spanish fleet under Córdoba, 1779 -- the year Spain entered the American war against Britain and began the Great Siege of Gibraltar; Sartine was Navy Secretary 1774-1780, consistent with the date. | 28 |
+
+**Leads, not scored** (found in the same sweep, worth a follow-up read, not verified enough to rank):
+
+- Henry Lavie, French consul at Saint-Pétersbourg, to the Conseil de Marine, 1720 (AN, "Correspondance des consuls
+  de France à Saint-Pétersbourg (1713-1792)", Fol. 92-94v°): this record's own text says a courier "a bien voulu
+  se charger du duplicata de ma dépêche du 22 novembre dernier laquelle étant écrite en chiffre" (was carrying a
+  duplicate of my 22 November dispatch, which was written in cipher) -- so the record matched here is a covering
+  letter *about* a ciphered dispatch, not the cipher itself. The 22 Nov 1720 dispatch it names was not located
+  separately this sweep; next step is a dated search in the same fonds.
+- Guilleragues (French ambassador to the Porte) to Duquesne (naval commander), Péra/Constantinople, four letters
+  Aug-Sept 1681-Jan 1682 (AN fonds not re-confirmed, ff.163/182/225/292), all matched `en partie chiffrée` but the
+  visible search snippet for each does not itself show the phrase -- it may sit in a dossier-level note covering
+  the whole run rather than each individual piece. Not opened to check which.
+
+**Dropped this sweep** (already deciphered in the same box, or outside the brief's 1450-1815 window):
+
+| Name | Reason |
+|---|---|
+| Zwanziger to Clarke, 4 brumaire an V (AN, same box as AN1/AN2, Pièce 66) | Edition, not a target: immediately followed by Pièces 67-69, "Déchiffrement de la pièce précédente," a contemporary decipherment in the same folder (unread=0 per scout.js's own definition). Left out of the table; its existence is the key lead cited under AN1. |
+| "27 février 1519. Lettre en partie chiffrée (et déchiffrée) de Joachim de Moltzan au chancelier de France Antoine Duprat..." (AN) | Catalogue says "et déchiffrée" outright. Also a likely direct hit for this repository's own `ciphers/dupuy468-anhalt/` target (M7 in QUEUE.md): the verifier's 23 Sept 2026 re-attribution of that Gallica item names "Joachim von Moltzan" as a correspondent -- worth checking by the target's own workers, not pursued further here (out of this brief's scope). |
+| Correspondance secrète de Berlin: Mirabeau to Comte de Goltz, "Déchiffrement de cinq lettres de l'abb[é]..." 1786-87 (AAE, 53MD/1884) | Catalogue says a decipherment of five letters already exists. Mirabeau's Berlin mission correspondence was printed by Mirabeau himself in 1789 ("Histoire secrète de la Cour de Berlin"); high likelihood of found-solved rather than open, not checked further. |
+| "Lettre chiffrée écrite en 1816 au général Jacquemard..." (AN) | 1816, one year outside this brief's 1450-1815 window. |
+| "Lettre écrite en chiffre, paraissant provenir de la région de Saint-Brieuc (janvier 1825)" (AN, F/7/6751, Police politique) | 1825, outside the window. Genuinely striking as a real, undescribed ciphered intercept (domestic political police file) -- worth a QUEUE row for whichever lane covers 19th-century French police/political material, not this brief's period. |
+
+**Caveats.** (1) None of the seven scored rows has been check-solved; this is a catalogue-title match, read on the
+record page, not a verified reading. (2) AN1/AN2's key lead (a decipherment habit in the same folder) is
+confirmed only for Pièce 66, not for Pièces 84 or 108 themselves -- a worker with AN viewer access should check
+every piece between 66 and, say, 120 in this folder for a similar "Déchiffrement de la pièce précédente" entry.
+(3) AN3's Plantet-edition risk and AN5's Klinckowström-edition risk are both real and unchecked -- a print check
+before any campaign is not optional for either. (4) AN6/AN7 (Cadix cluster) were time-boxed: cote and date are
+confirmed from the record page, the parent finding aid was not independently reopened for AN7. (5) `en partie
+chiffrée` restricted to Archives diplomatiques 404'd once and was not retried (one-attempt rule); AAE's index
+coverage on francearchives looks thin generally (see Hosts reached), so a true AAE sweep needs
+`archives.diplomatie.gouv.fr` itself, which is egress-blocked from this account -- ASKS-worthy if the lane wants
+it reopened, not filed here (out of this brief's scope). (6) Zero rows are copy-free-confirmed: AN5 is digitised
+but the image host is blocked; every other row needs a copy order or a reading-room visit -- below the "at
+least half copy-free" lane goal stated in the COMMON brief, reported honestly rather than stretched.
+
+**Per-host report:** francearchives.gouv.fr: about 22 browser-tool page loads (homepage + control query + 5
+phrase queries x2 publishers + 2 result pages + 9 record-detail pages), all >=1.6s apart, no login, no
+challenge. siv.archives-nationales.culture.gouv.fr: 2 attempts (both `502` at the proxy, egress-policy denial),
+logged, not retried further. archives.diplomatie.gouv.fr: 1 attempt (`502`, same cause), logged. github.com: 2
+shallow clones (both solver repositories, grep only, no push). No credentials used. No subagents. Never
+promoted, never solved, never transcribed.
