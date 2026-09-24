@@ -1298,6 +1298,21 @@ Chifferklaver, in named family/embassy/chancery archives.
 | R9 | "Handlingar ang. chiffer" — 18th/19th-c. cipher-system descriptions, incl. a 1786 proposal for a cipher machine by F. Gripenstierna | 1700s-1800s | sv | contribution (caution) | SE/RA/221/2210.01.1/F/F 5/F 5 C/7 (Utrikesdepartementet med föregångare, "Samlingsserie") / Riksarkivet i Stockholm/Täby | "Handlingar ang. chiffer, med bl.a. skrivelser från F. Gripenstierna 1786 ang. en chiffermaskin, beskrivningar av chiffersystem under 1700- och 1800-tal, kvitton på mottagna chiffernycklar. Jfr. vidare samlingen Chifferklaver..." — about cipher *systems and machines*, not a specific enciphered text to read; the note's own cross-reference to Chifferklaver puts this adjacent to Bourdeau's territory. Interesting as a history-of-technology contribution (an 18th-c. Swedish cipher-machine proposal), not a solve target. | Not a cryptanalysis/recovery candidate; flagged for the contribution lane only if someone wants the Gripenstierna machine description specifically. Not digitised. | 22 |
 | R10 | "Chiffer och chiffernycklar avseende Axel Oxenstiernas korrespondens" — a modern research project's notes and copies, not primary material | undated (project active) | sv | caution, not scored | SE/RA/721502/3/1 (Oxenstiernaprojektets arkiv, "Anteckningar om och kopior av källmaterial") / Riksarkivet i Stockholm/Täby | This is the Oxenstierna edition project's own working notes/copies about ciphers in Axel Oxenstierna's correspondence, not an unread original — secondary material, and Bourdeau already has Oxenstierna-adjacent Riksarkivet targets (`riksarkivet1628`) via DECODE's Chifferklaver. Excluded as likely-duplicate research territory, not a fresh lead. | None. | — |
 
+check-solved 24 Sept 2026 (LANE N batch J, six sources + Riksarkivet digitisation check, full logs in each target's NOTES.md):
+- **R5** (`ciphers/ra-morner-welin/`): open. Nothing found in web, print (no correspondent to check against), lists,
+  DECODE cache, Bourdeau or Aymeloglu. Not digitised.
+- **R6** (`ciphers/ra-crusenstolpe-1809/`): open, with an unclosed edition-search gap flagged — Crusenstolpe's own
+  printed "Portefeuille" (1837-44, full text at runeberg.org/portef/) and the standard Swedish 1809-coup
+  historiography were not searched this pass (out of this pass's budget), only judged as a next step. Not digitised.
+- **R8** (`ciphers/ra-karlxi-fullmakt-1677/`): open, but with real print risk left unresolved — Sverges traktater med
+  främmande magter's volume covering 1672-1697 ("vol. 7") could not be located or confirmed to exist in this
+  bibliographic record (HathiTrust's OCLC 11777373 record jumps from v.6 pt.1 to v.8, omitting v.7 and v.9); do not
+  score this stage 2 until that is resolved. Not digitised.
+- **R9** (`ciphers/ra-ud-chiffer-handlingar/`): closed-negative, confirmed. Gripenstierna's 1786 cipher machine is
+  already published twice over (Beckman, FRA report 1999; Beckman, *Cryptologia* 26(2), 2002) — QUEUE's own
+  "contribution (caution), not a solve target" call stands verified. No key-sharing link to R5/R6/R8 established.
+  Not nominated.
+
 Caveats: (1) every row above rests on a catalogue note or item title, never a page image — none of this material is
 digitised (`onlyDigitisedMaterials: false` on every hit, confirmed also by a dedicated `only_digitised_materials=true`
 query returning only two unrelated WWII administrative volumes), so every row is a copy-order/reading-room target,
