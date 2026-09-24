@@ -118,7 +118,15 @@ published keys to try on unread Gallica siblings). Checked 24 Sept 14:45 UTC by 
 the fifteen N4 items appears there; Thurloe P4 is on his 'not solved' list (a contribution once the JSTOR gate passes). Evening state, 24 Sept 18:06 UTC: the board was rebuilt from the ground up at 17:55 (three views: Readings with in-row dossiers fed by
 N4-READINGS.md and the outreach drafts' targets:/links: headers, Your desk, The machine); the OpenAlex key (OPENALEX_KEY, api_key
 parameter) runs the open-index pass from the cloud; every outreach gate for the seven N4 targets is met and four notes are ready on the
-owner's desk; LANE N3 closed 18:06 (four copy-free nominations for R4); R4 runs at cap $80; retrospective e running. If this parent
+owner's desk; LANE N3 closed 18:06 (four copy-free nominations for R4); R4 runs at cap $80; retrospective e running. Handover, 24 Sept 18:45 UTC (parent cipher-lab-7a at 750k context): the 24 Sept outreach set is complete (Huygens, Huntington and
+Tomokiyo emailed by the owner; dbourdeau/cyphersolver issues 11 (Gramont) and one more (Thurloe, number to confirm) posted); replies
+come to the owner, who pastes them to the parent, which logs outcome and class without names. No lane is live: R4 closed 18:25 (handoff
+below: Salviati three more leaves for the code-and-mark test, Seure needs an image-reading reconciler, 1519 key stalled, Marie de
+Medicis waits on the fr.3642 key leaf via ASKS 42/43), N3 closed 18:06 (four copy-free nominations, Mellon MS 29 since a controlled
+negative). Retro-apply e (session_0119AEp7E59uvwSMs2Eboq9F, Sonnet) is applying RETRO-2026-09-24e.md. Keys: OPENALEX_KEY and S2_KEY
+reach fresh containers (CLAUDE.md playbook). Owner items still open: mailbox variables, history swap, grant applications (private
+repo), the Thurloe issue number. Restart order when the seven-day window resets Sat 26 Sept 13:00 UTC or the owner says go: R5 on
+Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free rows, Vatican, Europeana), V5 on any reading. If this parent
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
