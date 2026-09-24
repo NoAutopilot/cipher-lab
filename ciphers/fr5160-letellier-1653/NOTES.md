@@ -280,3 +280,127 @@ clones (cyphersolver, unsolved-ciphers; both cited above, nothing copied, delete
 (direct API/catalogue checks covered this pass's print-check). One Sonnet subagent (image reading only, no
 network access, 56 tool uses, ~100k tokens) for the 54-thumbnail classification. Folder size: 2.3 MB, well
 under the 30 MB cap.
+
+## Dense band walk, native crops, passes, key trial — 24 September 2026 (Sonnet, cap $12, orchestrator wake)
+
+Cheapest-next-step from the prior pass, executed: every-canvas (not stride-4) coverage of the two cipher bands
+identified by the census (canvas 4-36 and 160-180), then native-resolution fetches and two blind transcription
+passes on the most fully ciphered letter, plus a mechanical trial of Tomokiyo's two published same-office
+Brienne key tables against it.
+
+### (1) Dense walk, canvas 4-36 and 160-180
+
+40 canvases were still missing after the stride-4 census (14 of the 54 in-range values were already on disk).
+Fetched with `--max-time 30` (the default curl timeout intermittently failed under this session's concurrent
+multi-worker load on gallica.bnf.fr — two connection resets on canvas 4 at the default timeout, both recovered
+once `--max-time 30` was used; see Requests below). 39/40 succeeded; canvas 29 failed twice (connection reset
+both times) and was left unfetched, logged rather than retried a third time (good-citizen rule). Band coverage
+is now canvas 4-36 minus 29 (32/33) and canvas 160-180 (21/21), i.e. every canvas in both bands except one. A
+Sonnet subagent (image-only, no network) classified all 53 on-disk canvases in the two bands; full table:
+
+```
+canvas	folio	date	content_type	decipherment	rough_sign_count	note
+4	-	-	blank	n	-	Blank flyleaf recto; faint mirrored ghost bleed-through of title-page text (f6) only
+5	-	-	blank	n	-	Blank leaf; faint mirrored ghost bleed-through, no independent ink
+6	1	-	clear	n	-	Volume title page: "Lettres Originalles Escrittes a M.r Servien par M.r de Brienne"; archival ink note top right, inventory letter "A"
+7	-	-	blank	n	-	Blank flyleaf verso; mirrored ghost of title page; partial red/circular archive stamp bleeding from facing recto
+8	1	-	mixed	n	~50	Opens "Monsieur" with prose paragraph, then ~5-line cipher block (symbol+numeral hybrid); wax/lead seal impression bottom left
+9	-	-	cipher	n	~90	Continuous dense cipher text, no prose; partial round seal visible mid-right
+10	2	-	mixed	n	~80	Cipher block occupies most of page; two plaintext closing lines at bottom
+11	-	10 [mois] 1653	mixed	n	~40	Prose before and after a short cipher block; date possibly a docket note
+12	3	2 janvier 1653	mixed	n	~35	Short cipher block (~4 lines) then prose closing; dated 2 January 1653
+13	-	-	blank	n	-	Blank leaf, mirrored ghost bleed-through only
+14	4	-	blank	n	-	Blank leaf faintly numbered "4"; ghost bleed-through only
+15	-	-	docket	n	-	Blank/verso leaf with marginal endorsement note naming sender/addressee
+16	5	-	clear	n	-	New letter "Monsieur"; marechal departing to lead an army, Bordeaux/Flanders affairs; entirely plaintext
+17	-	1653	clear	n	-	Continuation; Spain/England, Dunkerque; date "1653" faint bottom right
+18	6	20 juin 1653	clear	n	-	Short closing paragraph and signature block, dated 20 June 1653
+19	-	9e[?] 1653	docket	n	-	Verso with marginal docket noting sender/date
+20	7	-	clear	n	-	New letter "l'ordinaire d'Italie n'estant pas arrive..."; Italy post, Dutch/English naval affairs
+21	-	27 juin 1653	clear	n	-	Continuation and closing, dated 27 June 1653
+22	8	-	blank	n	-	Blank leaf numbered 8
+23	-	27 [mois] 1653	docket	n	-	Verso with marginal docket, date 27 [mois] 1653
+24	9	-	mixed	n	~70	Prose opening then dense cipher block; no interlinear gloss
+25	-	-	mixed	n	~80	Cipher block continues (~8 lines); ends with brief plaintext phrase
+26	10	-	clear	n	-	Full prose letter; opening phrase echoes f24's ciphered letter but this copy is uncoded (possibly a plain duplicate/related letter)
+27	-	-	clear	n	-	New letter re: "un marechal nomme Jean Guscar/Ducar"; entirely plaintext
+28	-	-	clear	n	-	Continuation of f27; draft-like hand with cross-outs
+29	-	-	-	-	-	NOT FETCHED — two connection resets, logged not retried further
+30	-	-	cipher	n	~90	Dense cipher block (~9 lines), no plaintext
+31	19	-	mixed	n	~60	Cipher lines, then prose re: Mantua, then cipher resumes; no gloss
+32	-	-	cipher	n	~90	Dense cipher block (~9 lines); final line breaks into plaintext "le Comte Philippes" continuing onto next leaf
+33	20	-	mixed	n	~60	Prose re: duc de Savoye/Montferrat, then cipher block (~6 lines); no gloss
+34	-	-	clear	n	-	Prose continuation, siege of Bordeaux, Spanish troops
+35	21	1 aoust 1653	clear	n	-	Closing of letter dated 1 August 1653
+36	22	-	clear	n	-	Prose continuation; page ends mid-sentence
+160	82	-	clear	n	-	Letter re: peace treaty with Spain and the Infanta's marriage
+161	-	3 [mois] 1659(?)	clear	n	-	Short closing note and signature "Brienne"
+162	83	-	blank	n	-	Blank leaf numbered 83
+163	-	-	blank	n	-	Blank leaf; faint ghost of facing page only
+164	84	4 [mois] 1659(?)	clear	n	-	Full prose letter re: peace treaty and royal marriage negotiations
+165	-	-	blank	n	-	Blank leaf, strong mirrored ink offset plus pen-trial strokes
+166	85	-	clear	n	-	Full letter, ink noticeably faint throughout; no cipher
+167	-	-	blank	n	-	Blank leaf; ghost bleed-through only
+168	86	-	mixed	n	~110	Prose re: Mme de Savoye, then dense NUMERAL-ONLY cipher block (~9 lines) — distinct style from band 1's symbol+numeral hybrid
+169	-	-	mixed	n	~80	Numeral cipher block (~7 lines) continues, then breaks into prose
+170	87	21 [mois] 1659	clear	n	-	Headed "Dechiffre de la lettre de M.r le Comte de Brienne du 21 9.bre 1659" — a full PLAINTEXT DECIPHERMENT TRANSCRIPT, on its own leaf, no cipher of its own (see flag below)
+171	-	-	blank	n	-	Blank/very faint leaf; ghost bleed-through only
+172	88	-	mixed	n	~110	Prose re: transport of horses/habits out of the kingdom, then dense numeral cipher block (~9 lines)
+173	-	27 [mois] 1659	mixed	n	~45	Short numeral cipher block continuing, then plaintext closing and date
+174	89	-	clear	n	-	Full prose letter, Madame Royale, Marquis d'Ombrun; no cipher
+175	-	24 [mois] 1659	clear	n	-	Short closing paragraph, dated 24 [mois] 1659
+176	90	-	blank	n	-	Blank leaf numbered 90
+177	-	-	blank	n	-	Blank leaf, faint mirrored ink offset
+178	91	Nouembre 1659	clear	n	-	Short letter re: ratification/marriage negotiations, dated November 1659, signed "Brienne"
+179	-	-	blank	n	-	Blank leaf with faint bleed-through and pen-trial flourish marks
+180	92	-	blank	n	-	Blank leaf numbered 92, last leaf of band 2; small ink dot only
+```
+
+Grade M throughout (model-read from images, not a transcription; content-type/decipherment calls can be wrong).
+
+**Cipher/mixed canvases in dense coverage (18 of 53, canvas 29 unread):** band 1 — 8, 9, 10, 11, 12 (folios
+1-3, a five-leaf cluster, dated 2 Jan 1653 on one leaf); 24, 25 (folio 9); 30, 31, 32, 33 (folios 19-20). Band
+2 — 168, 169 (folio 86); 172, 173 (folio 88). **No interlinear or marginal decipherment sits on any of these
+18 leaves themselves.**
+
+**Flag — a decipherment DOES exist in this dossier, on a separate leaf, not interlined:** canvas 170 (folio 87)
+is headed, in clear French in a contemporary hand, "Dechiffre de la lettre de M.r le Comte de Brienne du 21
+9.bre [septembre] 1659" (Deciphered from the letter of the Comte de Brienne of 21 September 1659) and carries a
+full plaintext transcript — but as a standalone leaf, not written over or beside the cipher. The adjacent
+ciphered letter (folio 86, canvas 168-169) opens "Monsieur, La lettre qu'il vous a pleu de m'escrire du 8e ce
+mois..." and is dated by its neighbours to the same autumn 1659 run; the date match (21 September) between the
+decipherment's heading and the letter's likely date is suggestive but **not confirmed** this pass — the two
+were not cross-read token by token, and folio 86's own leaf carries no explicit date in the portion read. This
+is exactly the Dupuy-468-style pattern the catalogue's "souvent accompagnee du dechiffrement" describes, just
+realised as a companion leaf rather than an interlinear gloss. **Not pursued further this pass** (out of scope:
+the brief asked for a mechanical trial of Tomokiyo's published tables against a blind pass, not reconciliation
+against this in-dossier crib) — flagged as the single highest-value next step for whoever works this target
+next: align folio 86's cipher against folio 87's clear French token by token, which would very likely recover
+fr.5160's own key directly (grade C, known-plaintext) rather than guessing from a different, same-office cipher.
+
+### (2) Native fetches and crops
+
+Two most-fully-ciphered letters by the dense-walk table: the folio 1-3 cluster (canvas 8-10, five leaves of
+cipher/mixed content, symbol+numeral hybrid, dated 2 Jan 1653 — the densest single run) and the folio 86-88
+letter (canvas 168-170, numeral-only cipher, with the companion decipherment leaf at canvas 170). Fetched
+native-resolution images for 6 leaves (canvas 8, 9, 10, 168, 169, 170; `full/full/0/native.jpg`, ~3810x5342px,
+2.3-2.5MB each) — at the cap named in the brief. Cut 5 crops from these (folio 1-2 body text for the passes;
+the folio 86 cipher block and folio 87 decipherment heading for documentation, not transcribed this pass), all
+resized to <=2400px on the long side. `images/manifest.json` updated. Folder now 21MB, under the 30MB cap.
+
+### (3) Two blind Sonnet passes, folio 1-2 letter (canvas 8-10)
+
+Designated the folio 1-2 letter (canvas 8, 9, 10 — the "first" of the two chosen letters, and the one with
+richest interspersed clear-French camouflage phrases matching Tomokiyo's description of this cipher family's
+style) as the transcription target. Two independent Sonnet subagents transcribed it blind from the crops
+(`passA.tsv`, `passB.tsv`; line/position/group/confidence, overline/macron on a code recorded with a leading
+"_"). See "Agreement" below.
+
+### (4) Mechanical key trial
+
+`key_brienne_1647.tsv` (Tomokiyo's "Brienne's Cipher 1", DE=46, Clairambault 411, reconstructed by George
+Lasry) and `key_brienne_1651.tsv` (his "Brienne's Cipher 2", DE=47, Clairambault 579, same reconstructor) were
+transcribed mechanically from `sources/cryptiana/web/louisxiv0_Brienne{1,2}.png` (fetched fresh this pass, not
+previously mirrored) by two Sonnet subagents, code+plaintext columns only. `decode.py` applies a key to a pass
+TSV and scores the output against a small embedded French word list, with a shuffled-key control at the same
+seed (rule 3). See "Key trial results" below.
