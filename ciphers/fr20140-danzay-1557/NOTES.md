@@ -296,3 +296,61 @@ No print search was run in this session (verifier's job). Novelty is not classif
 - Fetch f.36r, where the letter continues.
 - Have a second reader check the 61 M rows and the unkeyed codes on the same strips.
 - Test suggestions 1-5 against the contemporary decipherments on f.16, f.24 and f.30.
+
+## f.36 images and passes (24 Sept 2026)
+
+Follow-up to the solver's note above that f.35v stops at "du [xk]" and the letter continues on f.36, which
+was not then on disk.
+
+**Images.** Canvas index read straight from the primary ark's own IIIF manifest labels (`../manifest.json`),
+same calibration already established for f.35 (recto canvas index = 2×folio−1): folio 36 recto = canvas `f71`
+(label "36r"), verso = canvas `f72` (label "36v") — confirmed by eye, no probing needed. Fetched
+(gallica.bnf.fr, descriptive User-Agent, 1.5 s apart, 4 requests: 2 previews + 2 native): a 1200px preview of
+each canvas first (confirmed by eye: leaf headed "36" top right, marginal date reading "...vingt sept jour de
+Janvier 1557" — the same 27 Jan 1557 despatch — signed "Dantzay" at the foot), then the native-resolution
+image for each (`native_f71.jpg` 4800×7062, `native_f72.jpg` 4791×7091, same dimensions class as `f69`/`f70`).
+
+**f.36 recto carries only one line of cipher.** The top line is cipher; clear French resumes immediately on
+line 2 ("Iy m'a...") and continues without interruption to the signature "Dantzay" at the foot of the page —
+the letter's cipher does not run for multiple lines on this leaf, it is one more line and then the despatch
+finishes in the clear. **f.36 verso carries no cipher at all**: it is the address/docket panel of the folded
+sheet (bleed-through of the recto text read in mirror, an address line, a wax seal), consistent with how such
+letters were folded and addressed on the outside — not a continuation leaf. No crop was cut from it.
+
+Cut one crop (local, from the native image, no extra network fetch): `f71_cipher.jpg` (2400 wide), the single
+cipher line at the top of f.36r, with the start of line 2's clear French bleeding in at the bottom for
+context. Full provenance and the pixel box are in `images/manifest.json`. Folder now 14 MB (adds
+`preview_f71/f72.jpg`, `native_f71/f72.jpg`, `f71_cipher.jpg` to the existing f.35 set), well under the 30 MB
+cap.
+
+**Passes.** Two independent Sonnet subagents (`passA_f36.tsv`, `passB_f36.tsv`), neither shown the other's
+output, this file, or any reading/key, transcribed the one cipher line (`R1`) against Tomokiyo's sign legend
+(`danzay_1557.png`), same format as the f.35 passes (`line position sign confidence`, H/M/L), naming each sign
+by its legend letter, "null", a "word:" gloss, or a per-pass "unkN" label for shapes matching nothing in the
+legend.
+
+- **Segmentation is close, not ~2x apart.** Pass A found 26 signs, pass B found 25 — a one-sign difference,
+  much narrower than the roughly 2x segmentation gap seen on f.35's longer, denser cipher blocks. Consistent
+  with a short, single, clearly-inked line rather than a dense multi-line block.
+- **Position-exact agreement is low despite the close counts.** Comparing the two passes position by position,
+  8 of the first 25 positions match exactly on sign label — `a`, `u`, `c`, `unk1`, `s`, `word:le`, `g`,
+  `word:dict` at positions 1, 2, 4, 5, 8, 9, 10, 11 — roughly a third. Both passes agree through position 11
+  (the line's first "word:dict") and then run out of position alignment for the rest of the line. Pass A's own
+  report flags splitting two originally-auto-detected blobs into two signs each, at its positions 11-12 and
+  22-23; this reads as a one-sign segmentation offset somewhere in that stretch, not a resolved disagreement —
+  no reconciliation was attempted, per brief.
+- **Both passes independently report the same word-sign occurring twice in this one line.** Pass A finds
+  `word:dict` at positions 11 and 23; pass B finds it at positions 11 and 22 — offset by exactly one position
+  on the second occurrence, matching the segmentation gap noted above. This is the strongest cross-pass
+  corroboration in the line: both readers agree "dict" appears twice, close together, independent of the
+  exact position count between the two occurrences.
+- Both passes separately invented an identical placeholder label `unk1` for the same unmatched shape at
+  position 5. This is a naming coincidence, not a shared code book (each pass invents its own labels blind,
+  per brief, and the two are not otherwise comparable) — but it means both readers independently agree that
+  shape is real, distinct, and absent from Tomokiyo's legend.
+- Both passes flag the legend's own built-in ambiguity — cursive homophone shapes shared across several
+  letters (a/luy, c/d/h, s/t and others) — as the main source of M-grade uncertainty, not image quality. Pass
+  B judged the image itself sharp enough that no sign needed an L grade; pass A used L once, for a single
+  ambiguous ink fleck.
+
+No reconciliation, key application, decode, or novelty wording, per brief.
