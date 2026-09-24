@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results ResultsGenerationSearchTime="0:00:00.012" countResults="1" resultType="CVOAIRecordSearchService" searchTime="">
+<visibility_rights>all</visibility_rights>
+<notice>
+<record>
+<header>
+<identifier>oai:bnf.fr:gallica/ark:/12148/btv1b90075058</identifier>
+<datestamp>2022-11-25</datestamp>
+<setSpec>gallica:typedoc:manuscrits</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:identifier>https://gallica.bnf.fr/ark:/12148/btv1b90075058</dc:identifier>
+<dc:title>Recueil de pièces originales et de copies concernant l'histoire de la maison de Nevers. De 1562 à 1625.</dc:title>
+<dc:description>Contient : 1-3 Lettres, en italien, avec chiffres, de MARGUERITE PALEOLOGUE, duchesse DE MANTOUE, au duc de Nevers, Louis de Gonzague, son fils. De 1562 à 1564 ; 4-8 Lettres, en italien, de « FRANCESCO PUGIELLA » audit duc de Nevers. 1577 et 1578 ; 9 Lettre, en italien, d' « ASCANIO ANDREASI » audit duc de Nevers. « Di Casale, li 25 luglio 1589 » ; 10 Lettre, en italien, de « FRANCESCO PUGIELLA » audit duc de Nevers. « Di Roma, il 2e di marzo 1578 » ; 11 « Copia di 2 lettere scritte al Sor Lodovico Birago ». Paris, 23 et 25 décembre 1570. En italien ; 12 Billet, en italien, où l'on recommande d'annoncer au duc de Nevers que « la serma prencipessa di Mantova e sicuramente gravida » ; 13 « Copia del capo dell' instruttione del sermo Sr duca DI MANTOVA, fatta allo Stanghelino, per trattar coll' illmo et eccmo Sr duca di Nivers ». 1570. En italien ; 14 « Assegni fatti all' illma et eccma Sa duchessa di Mantova ». En italien. Copie ; 15 « Avisi di Genova, per lo eccmo Sr duca di Nevers ». Relatifs surtout à la Corse. En italien ; 16 Lettre de « PASQUALINO RASPOLLICHIO » au duc de Nevers, Charles de Gonzague. 1621. En italien ; 17 « Memoria di cose che ha da far fare il Sr duca di Nevers », Louis de Gonzague, concernant des recherches à faire pour établir ses droits à l'héritage laissé par sa mère, la duchesse de Mantoue, au Montferrat. En italien ; 18 Fragment d'une lettre, en italien, écrite au duc de Nevers par un de ses agents, le Sr GUAZZO ; 19 Obligation de 1,000 écus, souscrite au profit du comte Thomas Galeazzi par Claude Angier, marquis de Crapado. Mantoue, 28 mars 1622. En italien. Copie ; 20 Lettre du Sr « BARCHINO » à « Cesare » Ceppo, concernant les recherches à faire au nom de Louis de Gonzague, duc de Nevers, pour établir contre le duc de Mantoue, son frère, le compte de tutelle de Marguerite Paléologue, leur mère, décédée. En italien ; 21 Fragment de lettre écrite, en partie, en faveur d'Octave Landi, par le duc DE NEVERS à l'évêque de Cujavie. 1577. En latin. Minute ; 22 Autre fragment de lettre écrite par le duc DE NEVERS audit évêque de Cujavie, sur la fuite du roi de Pologne, Henri de Valois, et les conséquences de cet acte pour les Polonais. 1574. En latin. Minute ; 23-24 Documents concernant la recherche des textes destinés à établir les droits du duc de Nevers sur la succession de sa mère, Marguerite Paléologue, duchesse de Mantoue, et les empêchements mis par le duc de Mantoue à ces recherches. En italien ; 25 Mémoire concernant les éléments dont se compose la rente de 13,806 ducats 42 sous, attribuée à la duchesse de Mantoue, comme tutrice de son fils, le duc de Mantoue. En italien ; 26 Lettre d' « OTTAVIO LANDI » au duc de Nevers. Vienne, 31 juillet 1577. En italien ; 27 Nouvelles de Milan, 7 juin 1572, concernant les agissements du duc d'Albe, du côté de Valenciennes et de Cambrai. En italien ; 28 Fragment de lettre adressée par le Sr CEPPO au Sr Guazzo, agent du duc de Nevers à Milan. « 28 aprile 1572 ». En italien ; 29 Lettre de « FRANCESCO PUGIELLA,... al Sr cavalier Guazzo,... Di Casale, il 27 d'ottobre 1577 ». En italien ; 30 Lettre de « CAMILLO VOLTA,... al Sr Gio. Paolo Medici,... Di Casa, il di XXX di luglio del [15]70 ». En italien ; 31 Lettre d' « HIPPOLITO CAPILUPI,... al Sr duca di Nevers,... Di Malaca, il 20 di maggio 1593 ». En italien ; 32 Lettre de « FILIPPO PERSEI » à la duchesse de Nevers. Mantoue, 23 décembre 1591. En italien ; 33-34 Lettres de « FRANCESCO GONZAGA, vescovo di Mantova », à la duchesse de Nevers. Vervins, 18 et 17 mai 1598. En italien ; 35 Lettre de « FILIPPO PERSEI » à la duchesse de Nevers. « Della Cassina, li 12 di maggio 1598 ». En italien ; 36 Lettre de « VICENZO CALINO » au duc de Nevers. « Da Brescia, il di 4 d'ottobre 1594 ». En italien ; 37 Lettre de « PIETR' ANTONIO DE' BENEDETTI » au duc de Nevers. « Di Mantova, alli 29 giugno 1590 ». En italien ; 38 Lettre d' « HIPPOLITO CAPILUPI » au duc de Nevers. « Di Malaca, il 20 d'aprile 1593 ». En italien ; 39-40 Lettres de « TOMASO BOZZI » au duc de Nevers. Rome, 20 février 1593. En italien ; 41 Chiffre. Quelques lignes non chiffrées sont en italien ; 42 Lettre de CAMILLO « VOLTA,... Di Cona, a il 30 aprile 1589 ». En italien ; 43 « Memoriale del Sr BARCHINO al Sr cavalier Guazzo, per l'illmo et eccmo Sr duca di Nevers,... Li 29 giugno 1570 ». En italien ; 44 Avis de Gênes et de Milan. Juillet 1572. En italien ; 45 « Copia della risposta del Sr duca eccmo di Mantova, data li 14 di luglio, sopra il memoriale sporto dal cavaliere Guazzo per l'eccmo Sr duca di Nevers, li 28 di maggio 1572. P. M. CORNACCHIA ». En italien ; 46 Avis de Milan. 16 août 1572. En italien ; 47 Ordonnance du duc DE MANTOUE, adressée aux sénateurs du Montferrat. Il les charge de faire inscrire le duc de Nevers, son frère, sur les livres de la chambre des comptes du Montferrat, pour un revenu annuel de 2,000 écus, et pour le paiement immédiat de 9,000 écus dus audit duc de Nevers, le tout en exécution d'un article du testament de la duchesse de Mantoue, Marguerite Paléologue, mère desdits ducs de Mantoue et de Nevers. 1571. En italien. Copie ; 48 Acte par lequel le duc DE NEVERS déclare reprendre à son service le chevalier Guazzo. « In Parigi, febraio 1576 ». En italien. Copie ; 49 « Instruttione del Sr BARCHINO al Guissano, alli 12 di marzo del [15]70, per andar a Mantova ». En italien. Copie ; 50 « Copia d'una lettera scritta alli 22 di febraio dal Sr BARCHINO al Guissano,... 1570 ». En italien ; 51 Lettre adressée au duc de Nevers par un de ses agents, le Sr GUAZZO ? « Di Grana, li 14 di feb° 1577 ». En italien ; 52 Avis, en italien, daté de Milan, 4 juin 1572 ; 53 « Scritura chel' Sr duca » Guillaume de Gonzague, duc de Mantoue, « fece dare al' Volta in Mantova, il 30 de luglio, et quella che fu risposta, tutte due sopra uno foglio, l'una apresso l'altra, il 4 agosto, et mandata per il Basco à Mantova. Bagni, agosto 1571 ». En italien ; 54 « Sommario di quanto contiene la lettera del Sr duca di Mantova, scritta al Salvato, a di 29 di novembre del 1572 ». En italien ; 55 Lettre, en italien, du Sr « BARCHINO » au Sr « Guazzo,... Da Verale, alli X de giugno 1570 ». En italien ; 56 Avis de Milan. Juin 1572. En italien ; 57 « Instruttione per le cose necessarie a prodursi per le prove nelle cause allodiali ». En italien ; 58 Mémoire, en italien et sans date, contenant des nouvelles de Rome, sur la nomination de plusieurs évêques, sur les départements assignés à des cardinaux pour le gouvernement de l'état ecclésiastique, sur des visites et conférences des cardinaux avec le pape Urbain VIII, etc. Ces nouvelles paraissent être de l'année 1625, y étant question de la naissance de Marie, princesse d'Espagne, fille de Philippe IV</dc:description>
+<dc:relation>Notice du catalogue : http://archivesetmanuscrits.bnf.fr/ark:/12148/cc577374</dc:relation>
+<dc:description>Numérisation effectuée à partir d'un document de substitution.</dc:description>
+<dc:format>Papier</dc:format>
+<dc:subject>Bozzi, Tommaso.</dc:subject>
+<dc:subject>Lettres.</dc:subject>
+<dc:subject>Ceppo, Cesare.</dc:subject>
+<dc:subject>Lettres.</dc:subject>
+<dc:subject>Gonzague, Famille de.</dc:subject>
+<dc:subject>Gonzague, François de, cardinal de Saint-Pierre-ès-Liens.</dc:subject>
+<dc:subject>Lettres.</dc:subject>
+<dc:subject>Gonzague, Guillaume de, duc de Mantoue.</dc:subject>
+<dc:subject>Succession, de la duchesse de Mantoue.</dc:subject>
+<dc:subject>Mantoue, Marguerite Paléologue, duchesse de.</dc:subject>
+<dc:subject>Lettres.</dc:subject>
+<dc:subject>Mantoue, Marguerite Paléologue, duchesse de.</dc:subject>
+<dc:subject>Succession.</dc:subject>
+<dc:subject>Montferrat, Marquisat, puis duché de.</dc:subject>
+<dc:subject>Succession.</dc:subject>
+<dc:subject>Nevers, Louis de Gonzague, duc de.</dc:subject>
+<dc:subject>Succession, du marquis de Montferrat.</dc:subject>
+<dc:subject>Nevers, Maison de.</dc:subject>
+<dc:subject>Pièces et recueils divers.</dc:subject>
+<dc:subject>Persei, Filippo.</dc:subject>
+<dc:subject>Lettres (1590-1598).</dc:subject>
+<dc:subject>Pugiella, Francesco.</dc:subject>
+<dc:subject>Lettres.</dc:subject>
+<dc:subject>Volta, Camillo.</dc:subject>
+<dc:subject>Lettres.</dc:subject>
+<dc:source>Bibliothèque nationale de France. Département des manuscrits. Français 4687</dc:source>
+<dc:rights xml:lang="fre">domaine public</dc:rights>
+<dc:rights xml:lang="eng">public domain</dc:rights>
+<dc:date>1501-1700</dc:date>
+<dc:language>fre</dc:language>
+<dc:type xml:lang="eng">manuscript</dc:type>
+<dc:type xml:lang="fre">manuscrit</dc:type>
+</oai_dc:dc>
+</metadata>
+</record>
+</notice>
+<provenance>bnf.fr</provenance>
+<source>Bibliothèque nationale de France. Département des manuscrits. Français 4687</source>
+<typedoc>manuscrit</typedoc>
+<nqamoyen>0.0</nqamoyen>
+<title>Recueil de pièces originales et de copies concernant l'histoire de la maison de Nevers. De 1562 à 1625.</title>
+<date nbIssue="1">1501-1700</date>
+<first_indexation_date>28/11/2011</first_indexation_date>
+<streamable>false</streamable>
+<listBibVirt>
+<label>gallica</label>
+</listBibVirt>
+</results>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results ResultsGenerationSearchTime="0:00:00.322" countResults="1" resultType="CVOAIRecordSearchService" searchTime="">
+<visibility_rights>all</visibility_rights>
+<notice>
+<record>
+<header>
+<identifier>oai:bnf.fr:gallica/ark:/12148/btv1b90612993</identifier>
+<datestamp>2025-12-19</datestamp>
+<setSpec>gallica:corpus:MAEDI002</setSpec>
+<setSpec>gallica:corpus:MAEDI008</setSpec>
+<setSpec>gallica:corpus:MAEDI009</setSpec>
+<setSpec>gallica:corpus:MAEDIGen0</setSpec>
+<setSpec>gallica:typedoc:manuscrits</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:identifier>https://gallica.bnf.fr/ark:/12148/btv1b90612993</dc:identifier>
+<dc:title>Dépêches originales de la Cour à André Hurault de Maisse, ambassadeur à Venise (1581-1588 et 1592-1596), et à Mr de Vignay [Philippe Hurault de L'Hospital], son neveu, résident à Venise (1588-1589) ; lettres originales à eux adressées par diverses personnes ; pièces diverses, relatives à l'ambassade de Mr de Maisse, etc. (1581-1596 et 1605). I Août 1582-décembre 1585.</dc:title>
+<dc:relation>Notice du catalogue : http://archivesetmanuscrits.bnf.fr/ark:/12148/cc462243/cd0e62</dc:relation>
+<dc:description>Numérisation effectuée à partir d'un document de substitution.</dc:description>
+<dc:description>Appartient à l'ensemble documentaire : MAEDIGen0</dc:description>
+<dc:description>Appartient à l'ensemble documentaire : MAEDI002</dc:description>
+<dc:description>Appartient à l'ensemble documentaire : MAEDI008</dc:description>
+<dc:description>Appartient à l'ensemble documentaire : MAEDI009</dc:description>
+<dc:description>Très nombreuses lettres orig. de Henri III, 1582-1585 (f. 12, etc.), — et de Nicolas de Neufville [Villeroy], 1582-1585 (f. 7, etc.) ; — Nombreuses lettres orig . de Catherine de Médicis, 1582-1585 (f. 15, etc.) ; — Quelques lettres orig. de Mr de Sève, 1583 (f. 106, 136, etc.), et 1585 (f. 113, etc.), — et de Pierre Brulart, 1583-1585 (f. 132, etc.) ; — Lettre orig. de Claude Pinart, 1583 (f. 141) ; — Copies de lettres de Henri III à la République de Venise, 1584 (f. 179, etc.), — et de divers personnages, notamment : Louis de Gonzague, duc de Nevers, 1582 (f. 133), — Guillaume, duc de Mantoue, 1583 (f. 135), — et Hugues de Loubenx, grand-maitre de Malte, 1584 (f. 183) ; — Pièces diverses, concernant l'ambassade de Mr de Maisse (f. 6, 49, etc.) ; — Instructions orig. données à Mr de Maisse, août 1582 (f. 1), — et février 1583 (f. 54): — Chiffre de la correspondance de Mr de Maisse (f.5).</dc:description>
+<dc:format>459 feuillets</dc:format>
+<dc:subject>Ambassades. Venise.</dc:subject>
+<dc:subject>France à Venise (1582-1595), Hurault de Maisse.</dc:subject>
+<dc:subject>Gonzague, Guillaume de, duc de Mantoue.</dc:subject>
+<dc:subject>Lettres.</dc:subject>
+<dc:subject>Henri III, roi de France.</dc:subject>
+<dc:subject>Actes et lettres.</dc:subject>
+<dc:subject>Hurault de l'Hospital, Philippe.</dc:subject>
+<dc:subject>Correspondance.</dc:subject>
+<dc:subject>Hurault de Maisse, Paul.</dc:subject>
+<dc:subject>Ambassades à Venise (1582-1589).</dc:subject>
+<dc:subject>Loubens, Hugues de, grand-maître de Malte.</dc:subject>
+<dc:subject>Lettres.</dc:subject>
+<dc:subject>Nevers, Louis de Gonzague, duc de.</dc:subject>
+<dc:subject>Actes et lettres.</dc:subject>
+<dc:subject>Pinart, Claude, sr de Cramailles, secrétaire d'État.</dc:subject>
+<dc:subject>Actes et lettres.</dc:subject>
+<dc:subject>Puysieux, Pierre Brûlart, marquis de Sillery, vicomte de, secrétaire d'État.</dc:subject>
+<dc:subject>Lettres et actes.</dc:subject>
+<dc:subject>Sève, Guillaume de, sr de Saint-Julien.</dc:subject>
+<dc:subject>Lettres.</dc:subject>
+<dc:subject>Villeroy, Nicolas de Neufville, seigneur de, secrétaire d'État.</dc:subject>
+<dc:subject>Lettres et actes.</dc:subject>
+<dc:description>Catherine de Médicis (1519-1589 ; reine de France). </dc:description>
+<dc:source>Bibliothèque nationale de France. Département des Manuscrits. Français 16092</dc:source>
+<dc:rights xml:lang="fre">domaine public</dc:rights>
+<dc:rights xml:lang="eng">public domain</dc:rights>
+<dc:date>1501-1700</dc:date>
+<dc:language>fre</dc:language>
+<dc:type xml:lang="eng">manuscript</dc:type>
+<dc:type xml:lang="fre">manuscrit</dc:type>
+<dc:creator>Catherine de Médicis (1519-1589 ; reine de France). Auteur de lettres</dc:creator>
+</oai_dc:dc>
+</metadata>
+</record>
+</notice>
+<provenance>bnf.fr</provenance>
+<source>Bibliothèque nationale de France. Département des Manuscrits. Français 16092</source>
+<typedoc>manuscrit</typedoc>
+<nqamoyen>0.0</nqamoyen>
+<title>Dépêches originales de la Cour à André Hurault de Maisse, ambassadeur à Venise (1581-1588 et 1592-1596), et à Mr de Vignay [Philippe Hurault de L'Hospital], son neveu, résident à Venise (1588-1589) ; lettres originales à eux adressées par diverses personnes ; pièces diverses, relatives à l'ambassade de Mr de Maisse, etc. (1581-1596 et 1605). I Août 1582-décembre 1585.</title>
+<date nbIssue="1">1501-1700</date>
+<first_indexation_date>23/01/2012</first_indexation_date>
+<streamable>false</streamable>
+<listBibVirt>
+<label>gallica</label>
+<label>MEAE</label>
+</listBibVirt>
+</results>

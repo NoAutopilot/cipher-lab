@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results ResultsGenerationSearchTime="0:00:00.167" countResults="1" resultType="CVOAIRecordSearchService" searchTime="">
+<visibility_rights>all</visibility_rights>
+<notice>
+<record>
+<header>
+<identifier>oai:bnf.fr:gallica/ark:/12148/btv1b9060495t</identifier>
+<datestamp>2022-11-25</datestamp>
+<setSpec>gallica:typedoc:manuscrits</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:identifier>https://gallica.bnf.fr/ark:/12148/btv1b9060495t</dc:identifier>
+<dc:title>Français 5160</dc:title>
+<dc:description>Contient : 1 Lettres originales adressées à Abel Servien par HENRI-AUGUSTE « DE LOMENIE », comte de « BRIENNE », et par son fils HENRI-LOUIS DE LOMENIE DE « BRIENNE », du 10 janvier 1653 au 21 décembre 1661. Ces lettres, dont plusieurs sont en partie chiffrées, et souvent accompagnées du déchiffrement, sont au nombre de 47 ; 2 Lettres originales de MICHEL « LE TELLIER », adressées au même, entre le 22 mars 1652 et le 27 août 1658 ; a « Estat des troupes qui doivent aller en Piémont ceste année 1653 » ; b « Coppie de lettre escritte à Mr Le Tellier par M. SERVIENT, le 11e octobre 1653, envoyée à S. E. » ; c « Ordre de Mr LE TELLIER à Mr Longuet, pour faire voiturer à Pinerol soixante dix mil livres. Du 1er janvier 1658 »</dc:description>
+<dc:relation>Notice du catalogue : http://archivesetmanuscrits.bnf.fr/ark:/12148/cc58150z</dc:relation>
+<dc:description>Numérisation effectuée à partir d'un document de substitution.</dc:description>
+<dc:format>Papier. - 182 feuillets, plus le feuillet A préliminaire. Le feuillet 127 est blanc</dc:format>
+<dc:subject>Brienne, Henri-Auguste de Loménie, comte de.</dc:subject>
+<dc:subject>Actes et pièces.</dc:subject>
+<dc:subject>Brienne, Henri-Auguste de Loménie, comte de.</dc:subject>
+<dc:subject>Lettres.</dc:subject>
+<dc:subject>Brienne, Henri-Louis de Loménie, comte de.</dc:subject>
+<dc:subject>Lettres.</dc:subject>
+<dc:subject>Le Tellier, Michel, chancelier de France.</dc:subject>
+<dc:subject>Actes et lettres.</dc:subject>
+<dc:subject>Louis XIV, roi de France.</dc:subject>
+<dc:subject>Recueils et pièces diverses.</dc:subject>
+<dc:subject>Servien, Abel, secrétaire d'État.</dc:subject>
+<dc:subject>Lettres.</dc:subject>
+<dc:source>Bibliothèque nationale de France. Département des manuscrits. Français 5160</dc:source>
+<dc:rights xml:lang="fre">domaine public</dc:rights>
+<dc:rights xml:lang="eng">public domain</dc:rights>
+<dc:date>1601-1700</dc:date>
+<dc:language>fre</dc:language>
+<dc:type xml:lang="eng">manuscript</dc:type>
+<dc:type xml:lang="fre">manuscrit</dc:type>
+</oai_dc:dc>
+</metadata>
+</record>
+</notice>
+<provenance>bnf.fr</provenance>
+<source>Bibliothèque nationale de France. Département des manuscrits. Français 5160</source>
+<typedoc>manuscrit</typedoc>
+<nqamoyen>0.0</nqamoyen>
+<title>Français 5160</title>
+<date nbIssue="1">1601-1700</date>
+<first_indexation_date>28/11/2011</first_indexation_date>
+<streamable>false</streamable>
+<listBibVirt>
+<label>gallica</label>
+</listBibVirt>
+</results>

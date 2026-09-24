@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results ResultsGenerationSearchTime="0:00:00.222" countResults="1" resultType="CVOAIRecordSearchService" searchTime="">
+<visibility_rights>all</visibility_rights>
+<notice>
+<record>
+<header>
+<identifier>oai:bnf.fr:gallica/ark:/12148/btv1b52521512h</identifier>
+<datestamp>2024-02-09</datestamp>
+<setSpec>gallica:typedoc:manuscrits</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:identifier>https://gallica.bnf.fr/ark:/12148/btv1b52521512h</dc:identifier>
+<dc:title>Recueil de pièces relatives à la Suède et au Danemark. (1557-1706).</dc:title>
+<dc:relation>Notice du catalogue : http://archivesetmanuscrits.bnf.fr/ark:/12148/cc51725m</dc:relation>
+<dc:description>Numérisation effectuée à partir d'un document original : Français 20140.</dc:description>
+<dc:description>Trève entre les Suédois et les Polonais conclue par l'intervention de Claude de Mesmes, comte d'Avaux, 1635, in-4°, impr. (fol. 1). — « Estat présent de la Suède », 1695 (fol. 10). — Notes sur Charles XII, roi de Suède (fol. 12). — Correspondance, originale et en partie chiffrée, de Charles de Danzay, ambassadeur en Danemark, 1557-1567 (fol. 16).</dc:description>
+<dc:format>Papier. - 56 feuillets. - 400 × 270 mm. - Demi-reliure</dc:format>
+<dc:subject>Ambassades. Danemark.</dc:subject>
+<dc:subject>France en Danemark (1557-1567), Ch. de Danzay.</dc:subject>
+<dc:subject>Avaux, Claude de Mesmes, comte d'.</dc:subject>
+<dc:subject>Charles XIII, roi de Suède.</dc:subject>
+<dc:subject>Danzay, Charles de, ambassadeur en Danemark.</dc:subject>
+<dc:subject>Correspondance.</dc:subject>
+<dc:subject>Pologne.</dc:subject>
+<dc:subject>Traité avec, la Suède.</dc:subject>
+<dc:subject>Suède.</dc:subject>
+<dc:subject>Recueils (1557-1706).</dc:subject>
+<dc:source>Bibliothèque nationale de France. Département des Manuscrits. Français 20140</dc:source>
+<dc:rights xml:lang="fre">domaine public</dc:rights>
+<dc:rights xml:lang="eng">public domain</dc:rights>
+<dc:date>1501-1700</dc:date>
+<dc:language>fre</dc:language>
+<dc:type xml:lang="eng">manuscript</dc:type>
+<dc:type xml:lang="fre">manuscrit</dc:type>
+</oai_dc:dc>
+</metadata>
+</record>
+</notice>
+<provenance>bnf.fr</provenance>
+<source>Bibliothèque nationale de France. Département des Manuscrits. Français 20140</source>
+<typedoc>manuscrit</typedoc>
+<nqamoyen>0.0</nqamoyen>
+<title>Recueil de pièces relatives à la Suède et au Danemark. (1557-1706).</title>
+<date nbIssue="1">1501-1700</date>
+<first_indexation_date>11/02/2024</first_indexation_date>
+<streamable>false</streamable>
+<listBibVirt>
+<label>gallica</label>
+</listBibVirt>
+</results>
