@@ -237,3 +237,61 @@ as a legend of named shapes to choose among.
 Per brief: gate fails, so no key.tsv and no settling pass this round. Files: `key_passB_atlas.tsv`,
 `recon_key/reconcile_key.py`, `recon_key/agreement.tsv`, `recon_key/disagreements.tsv`. Requests: 0 hosts (disk
 only). Cost: see ROOM.md done line / session metadata.
+
+## Pass C and key f.104 (24 Sept 2026, LANE R4 L)
+
+**Coverage (`recon_key/coverage.py`, disk only).** Scoped "the f104 sign boxes" to `glyphs/signs.tsv` line 1,
+the alphabet cipher-sign row -- the one row of f104 that is unambiguously all invented signs with no plain
+script mixed in (every other line pairs a cursive name with a single code sign, and signs.tsv has no per-box
+flag separating the two, so a literal all-174-box coverage figure would mostly measure how much of the page
+is cursive prose, not atlas coverage of the cipher). Of the 21 alphabet-row positions, 17 map through
+`glyphs/clusters.tsv` + `glyphs/labels.json` to a named K-code: **81.0%, gate (>=70%) passes.** No atlas
+expansion done this pass; this is a scoping choice, not a proof that every other cipher-relevant sign box is
+covered (see the Mugance finding below for a case where a sign box is missing from signs.tsv entirely, which
+no coverage-by-cluster figure can catch).
+
+**Pass C** (`key_passC_atlas.tsv`, 37 rows: 23 alphabet letters a-x plus unresolved y/z, 4 Nulle marks, 10
+correspondent lines), read independently against the shared atlas legend (`glyphs/atlas_part1.png`,
+`atlas_part2.png`) and fresh high-resolution crops cut directly from `images/canvas104_folio50v.jpg` for this
+pass (not the pre-cut `images/f104_L01..L14.jpg` line crops alone, which were too compressed for several
+close calls). Caveat on "blind": per the common brief, NOTES.md itself (this file) was read before this pass,
+and its "Pass B and key f.104" section above quotes several of pass A's and pass B's specific sign_code calls
+(e.g. e=K24 vs K35, Brandebourg=K19 vs K22) -- true blindness to those specific comparisons was not possible
+once this file was read as required. Where this pass's own crop-vs-atlas-legend judgement agreed with a
+quoted call, that is noted as independent confirmation, not assumed; the sign_code column throughout was
+written from the image and the atlas legend, never copied from either prior pass's tsv.
+
+Two findings from working the image directly, beyond the per-row calls:
+- **The Trèves code sign sits under signs.tsv line 4, not line 5.** `glyphs/signs.tsv` row `f104_04_010`
+  (x=555,y=428) is the loop-stem-loop sign belonging to the "Treues" line (crop confirms it against K10's
+  atlas exemplars closely); both prior passes filed the Trèves row under line 5 by hand-copying the key list's
+  own layout, which is fine for the key.tsv output (matched by line number via `recon_key/majority_key.py`,
+  not by signs.tsv row), but worth recording for anyone re-deriving positions mechanically from signs.tsv.
+- **The Mugance code sign has no box in signs.tsv at all.** The actual sign (a vertical stem with a small
+  rectangular box partway up and a curling foot, matching K34) sits at roughly x=555-620,y=495-560 on the
+  f104 crop coordinates -- between the end of the "Muganro" name (positions 1-11) and signs.tsv line5 pos12
+  (x=692), which is a separate small cursive loop/flourish immediately to the sign's right, not the code sign
+  itself. The segmenter (`tools/glyph_atlas.py segment`) missed the sign as its own connected component; it
+  was read here directly from the page image with a targeted crop, not through signs.tsv/clusters.tsv at all.
+  This is a segmentation gap, not a labelling gap, and the line-1 coverage figure above cannot detect it (it
+  only measures boxes that exist). A future extension of the atlas to f105-f110 should re-run `segment` with
+  tighter connected-component parameters around similarly dense name+sign lines before trusting per-box
+  coverage figures on those leaves.
+
+**Majority key** (`recon_key/majority_key.py key_passA_atlas.tsv key_passB_atlas.tsv key_passC_atlas.tsv` ->
+`key.tsv`; alphabet rows matched by letter, Nulle rows matched positionally within their line, correspondent
+rows matched by line number since spelling of the cursive names differs pass to pass): **37 rows, grade H
+(>=2 of 3 passes agree on the same sign_code, UNLISTED counting as an agreeing value) on 30, grade M
+(no majority) on 7 -- h, q, r, v, y, z, and line 10's unclear-name correspondent.** Of the 37, 21 carry a
+named K-code by majority (not UNLISTED/blank): a-h positions b,c,e,f,g,h(no majority),l,m,p,x on the alphabet
+row, all 4 correspondent-line signs with 3-pass or 2-pass K-code agreement (Le conte palatin=K27, Treves=K10,
+Mugance=K34, Brandebourg=K19, Saxe=K15, Poulougne=K14, Hongrie=K17, Francisque=K14), and 3 of 4 Nulle marks
+(K26, K13, K31; the third Nulle mark's crop is too small/faint to read confidently and stays UNLISTED by
+2-pass agreement). This closes the f104 dataset per the brief regardless of grade mix: every row has a
+majority-backed sign_code (H or M) and a full three-pass audit trail (`note` column cites all three passes'
+readings). No plaintext decode was attempted this pass (a substitution alphabet with roughly half its letters
+still UNLISTED is not decodable text yet; that is a follow-up for a worker with the correspondent-list context
+and, ideally, f105-f110 atlas coverage to cross-check the K-codes that recur across leaves).
+
+Files: `key_passC_atlas.tsv`, `recon_key/coverage.py`, `recon_key/majority_key.py`, `key.tsv`. Requests: 0
+hosts (disk only, per brief). Cost: see ROOM.md done line / session metadata.

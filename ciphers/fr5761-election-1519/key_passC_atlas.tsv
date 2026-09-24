@@ -1,0 +1,38 @@
+line	section	plain	sign_code	note
+1	alphabet	a	UNLISTED	asymmetric cross: vertical stem crossed by a short horizontal near top, with a small foot-hook at bottom left of the crossbar; no atlas family matches this specific asymmetric shape
+1	alphabet	b	K13	two close-set vertical strokes crossed by one diagonal stroke; matches K13's tilted W/ladder family (exemplars show similar diagonal-crossed uprights)
+1	alphabet	c	K1	plain double vertical bar, no diagonal slash; matches K1's common double-bar family (by far the largest bucket, consistent with a simple recurring mark)
+1	alphabet	d	UNLISTED	two short horizontal strokes stacked vertically, equals-sign shape; no atlas family shows this flat double-bar shape
+1	alphabet	e	K24	simple thin plus/cross with no extra strokes; matches K24's plain-plus family cleanly (12 very similar exemplars)
+1	alphabet	f	K5	curled hook resembling a numeral 2 or a backward c; matches K5's consistent curled-hook family (7 near-identical exemplars)
+1	alphabet	g	K34	cross with a small loop attached on the right side; tentative match to K34's varied box/cross-with-extra-element family
+1	alphabet	h	K3	short approach stroke leading into a small closed loop, P-like; matches K3's very consistent "P" family (10 near-identical exemplars) better than any other bucket
+1	alphabet	i	UNLISTED	figure-eight or S-shaped double loop; no atlas family shows a clean stacked figure-8
+1	alphabet	k	UNLISTED	tall narrow double vertical bar, similar in kind to c but narrower/taller; not confident it is the same cluster as c (K1), left unlisted rather than reusing that code speculatively
+1	alphabet	l	K16	double vertical bar with a curling tail/loop at the bottom right; matches K16's pi/ladder-with-curl family
+1	alphabet	m	K29	small circle/loop sitting atop a vertical connecting stroke, phi-like; matches K29's squiggly-loop family (the same family as the small loop flourish sitting beside the Mugance code sign on line 5)
+1	alphabet	n	UNLISTED	vertical stroke with a small serif foot, capital-I-like; too generic/simple to place confidently in one family over another
+1	alphabet	o	UNLISTED	cross with an extra short bar partway up the stem, F-like; no single family matched with confidence
+1	alphabet	p	K19	zigzag resembling a backward 3 or Z, with an extra vertical stroke; matches K19's Z-family cleanly
+1	alphabet	q	K17	small loop atop a short vertical stroke; tentative match to K17's hook-with-loop family
+1	alphabet	r	K26	small cross with a circle/loop sitting at the top, theta-like; matches K26's loop/theta exemplar
+1	alphabet	s	UNLISTED	open trapezoid / number-4-like shape with no crossbar; no atlas family matches a plain, uncrossed trapezoid
+1	alphabet	t	UNLISTED	small comma-like hook stroke; too generic/simple to place confidently in one family
+1	alphabet	v	K14	T/pi-shaped cross with a small dot above it; matches K14's flat-top family (one exemplar carries the same dot)
+1	alphabet	x	K23	small 4-armed cross/star shape; matches K23's star-cross family cleanly
+1	alphabet	y		row has only 21 sign boxes in glyphs/signs.tsv for 23 letters (a-x plus y,z, skipping j/u/w); unresolved by this pass whether y/z simply lack signs or an earlier position was misread -- same open question passA and passB both flagged, not settled here (would need the plain-letter row and sign row re-measured side by side at native resolution)
+1	alphabet	z		see note for y; no candidate sign position identified for z either
+5	nulls	NULLE	K26	first Nulle mark: a pointed triangular/wedge stroke on a short stem; matches K26's triangle/lambda exemplar well
+5	nulls	NULLE	K13	second Nulle mark: two overlapping diagonal strokes forming an M/W shape; closest match is K13's W-family, though the fit is loose
+5	nulls	NULLE	UNLISTED	third Nulle mark: the crop at this position (glyphs sid f104_05_018, 6x13px) shows only a faint diagonal scratch, not a legible sign; too small/unclear to match any atlas family with confidence
+5	nulls	NULLE	K31	fourth Nulle mark: an angled V/checkmark shape opening downward; matches K31's chevron family (mirrored orientation from the atlas's upward-pointing exemplars, same family of simple angle strokes)
+3	correspondent	Le conte palatin	K27	clean 2x2 grid/lattice shape (two verticals crossed by two horizontals); matches K27's grid/box family closely, confirmed by direct high-resolution crop against the atlas legend
+4	correspondent	Treves	K10	vertical stem with a small loop at the top and a second small loop at the bottom; matches K10's loop-stem-loop family closely, confirmed by direct high-resolution crop -- the segmenter placed this sign under signs.tsv line 4 pos 10 (f104_04_010), not line 5 where key_passA/B filed the Treves row
+5	correspondent	Mugance	K34	vertical stem with a small rectangular box attached partway up and a curling foot at the bottom; matches K34's box-on-stem family, confirmed by a direct high-resolution crop -- note this sign box (roughly x=555-620,y=495-560 on the f104 crop coordinates) was NOT captured as its own row in glyphs/signs.tsv; the signs.tsv row at line5 pos12 (x=692) is instead a separate small cursive loop/flourish immediately to its right, not the code sign itself (see coverage note in NOTES.md)
+6	correspondent	Brandebourg	K19	stylised Z/3 shape with an extra vertical stroke; matches K19's Z-family, consistent with the alphabet row's p=K19 sign shape-family
+7	correspondent	Saxe	K15	curled loop joined to a plus/cross; matches K15's exemplar closely, high confidence (both prior passes independently agreed K15 here)
+8	correspondent	Poulougne	K14	flat-topped horizontal bar with two vertical descenders (pi/TT shape); matches K14's flat-top family, not K4 (K4's exemplars are small cursive loops, a poor match to this angular pi shape)
+9	correspondent	Hongrie	K17	small loop connected by a short stroke to a right-angle hook; matches K17's hook-with-loop exemplar (the same family used for alphabet q)
+10	correspondent	[name unclear]	K34	name not confidently read (short cursive word, possibly "l'archiduc" per the volume's catalogue context); code sign is a compound cross-and-loop shape, closest overall match K34's box/cross family though the fit is only tentative and the shape may be two elements rather than one
+11	correspondent	Francisque	K14	name read as "Francisque"; code sign is a flat-topped cross/table shape with two small dots above it, matching K14's flat-top family (same family independently assigned to alphabet v, which also carries a dot)
+12	correspondent	Catholicque	UNLISTED	name read as "Catholicque"; no cipher sign follows, instead three small identical comma/loop marks in a row -- as both prior passes noted, this does not read as a single invented sign from any atlas family and is left unlisted rather than guessed
