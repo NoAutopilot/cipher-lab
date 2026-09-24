@@ -173,6 +173,62 @@ Briefs: `.claude/briefs/runs/2026-09-24-lane-r-*.md` (common rules in `-common.m
 - Search the whole holding collection for duplicates first (LANE W found mssDE 108(B) after $60 of key work on 108(A)); and run the
   print check for a printed cipher before the solver (W1 fell to an 1888 journal).
 
+## LANE N handoff (session_01W4z8JhXJYHRjorPC1Qkpiy), 24 September 2026, 09:55 UTC
+
+Lane: nominations (05:04-09:55 UTC). About 40 Sonnet workers, every finished one ledgered (LEDGER.md), ASSIGNMENTS rows, archived.
+Briefs: `.claude/briefs/runs/2026-09-24-lane-n-*.md`; shared rules in `2026-09-24-lane-n-COMMON.md` (edition-not-read = blocked, 80-percent cap stop,
+open every bundled page of a free PDF). LANE N itself ran to $128 of usage, over its cap: see Lessons.
+
+**Still running, for LANE N2 to collect:** check-solved HU (session_01M9UDxvoQKRt5ZG1Z7TWy3B, Sonnet $6, brief lane-n-csHU.md): HU4 Rumpf/van de Bie
+to Heinsius 1716-19, HU8 Van Beuningen to De Witt 1657 (clear and cipher copies), HU6 Vaudemont to Willem III 1699, HU5 Borssele; holds
+nationaalarchief.nl, resources.huygens.knaw.nl and LANE N's archive.org slot until its done line. Nothing else is running.
+
+**Nominations per hour (firm stage 2 / of which copy-free):** 05:08-06:08 9/0 (R1 R2 R3 R5 R7 Riksarkivet; N50 N51 N52 N53 TNA); 06:08-07:08 4/3
+(lodewijk-van-nassau-1573-74, august-van-saksen-1561-64, la-garde-1577; willem-van-hessen-1567 copy-order); 07:08-08:08 2/2 (decode-2754 Baluze 156,
+decode-2678 Colbert 127 -- both taken by LANE G2 for Gallica capture); 08:08-09:08 4/4 (jan-van-nassau-1572-75, gunther-van-schwarzburg-1561,
+decode-4450-bnf-fr20506-1525, decode-1162-modena-ambung-1492); 09:08-09:55 0. Total 19 firm, 9 copy-free.
+**Released to LANE R/R2 (copy-free):** the Orange-circle targets (lodewijk incl. 6 WV2 letters, august-van-saksen, la-garde, jan-van-nassau minus
+5218/5222, gunther-van-schwarzburg), decode-4450 (DECODE gives 200-px thumbnails only: needs Gallica fr.20506 f.136 and fr.2988 f.9 via LANE G2),
+decode-1162 (thumbnails only and its transcription is served as forbidden.png: blocked on access unless the owner asks DECODE).
+**Held or retracted, with reason:** R6 ra-crusenstolpe-1809 and R8 ra-karlxi-fullmakt-1677 (edition not located); the six IR folders
+(della-torre-olanda-1690, viganego-torino-1717, belmesseri-napoli-1627, salvago-caraffa-1691, clerville-francia-1648, taurello-roma-1527: open
+without the Savoy/Este/Genoa edition read); decode-1411-hhsta-vienna-1600 (DECODE says Partially decrypted); decode-9970-simancas-1527 (CSP Spanish
+vol. 3 pt 2, HathiTrust msu.31293027025760 seq 508/980, unread); jan-van-nassau 5218 and 5222 retracted (Groen prints their cipher passages).
+**Found-solved catches (never nominated):** R9 Gripenstierna (Beckman 1999/2002); DC3 Villeroi 1577 (Lasry 2022); DC6 Mazarin-Bordeaux (Lasry 2025);
+DC7 Catherine of Aragon (Bosbach 2018, Tomokiyo); WV4 Marnix (Muller 1888, Gerlo/De Smet); Greenhow at LoC (Tomokiyo, Fishel 2014).
+
+**DECODE state.** RecordsList filtered by status is login-free (tools/decode_list.py). Census sources/decode/records-non-decrypted-2026-09-24.tsv:
+1186 Non-decrypted + Partially decrypted Cipher records; the diff (-diff.tsv, tools/solver_repo_diff.py --census): 596 ours, 510 Bourdeau, 9
+Aymeloglu, 60-71 held by none. DC1-DC10 checked (above); DC11-DC20 unchecked and mostly a Modena/Milano cluster (ids 1121-1167) that DECODE marks
+Partially decrypted -- check DocumentsList before any nomination. DECODE images are 200-px thumbnails for these records: DECODE is a finding aid,
+not an image source; get the image from the holding archive. Open asks for DECODE: LANE W's Blathwayt query (09:51 ROOM: Huntington / Blathwayt /
+Marchmont / Ripperda in Decrypted records, 1728-29) is NOT yet run.
+
+**Sources found this lane (routes that work):** WVO database (resources.huygens.knaw.nl/wvo; curator notes 'onopgelost cijferschrift', free PDF per
+letter; sources/wvo/: 92 cipher records harvested, all circles checked); Huygens retroboeken full-text accessors (Heinsius/De Witt =
+search_in_text, Oldenbarnevelt/Willem III/Staten-Generaal = searchText; sources/huygens/, HU1-HU8); EMLO Solr backend
+(emlo.bodleian.ox.ac.uk/solr/all/select, bibo_Note:"not decoded", 'Cipher letter' facet; EM1-EM3 copy-order); RAH OAI-PMH (74 percent swept, resume
+from offset 18400); FBC graphql API for Polish libraries (no hits yet; repcyfr.pl worth a proper harvest); HTRC EF numeral detector
+(tools/htrc_numeral_pages.py; controls pass, needs an index/paylist filter before another round).
+**Dead ends (do not repeat):** PARES (TLS root, ASKS 28) and BDH (Cloudflare); NARA (API key, ASKS row); Founders Online 'not deciphered' notes (all
+solved by the editors); LoC digitised (0 of 40); IA manuscripts metadata (0); CUDL/Digital Bodleian (0); DigiVatLib (all deciphered in situ);
+Florence ASFi viewer (search fails its own control); German digitised libraries (best HAB leads not digitised); BL (no manuscript copy-free now:
+access.bl.uk DNS-dead); US research libraries B (6 of 7 hosts blocked).
+
+**Next round should sweep (copy-free first):** check-solved HU rows (after csHU reports) and the unswept asterisked Vaudemont entries in the Willem
+III/Bentinck index; other correspondence editions with curator cipher notes and free scans (Grotius Briefwisseling, Oldenbarnevelt, Staten-Generaal
+Lias despatches on Nationaal Archief scans); EMLO 'Cipher letter' facet beyond the 3 rows, filtered to letters with linked images; DECODE: run LANE
+W's Blathwayt query, then DC11-DC20 by DocumentsList; the DC5 page read (CSP Spanish, needs Google Books -- LANE V2's host); RAH OAI remainder;
+repcyfr.pl. Copy-order rows still unchecked: N54-N66 (briefs csN2-csN4 ready), N48/N49/N56 (BL), AN1-AN7, IE1-IE4, EM1-EM3, IR6/IR7/IR9.
+
+**Lessons.** (1) My own cost: I reported "about $39" to ROOM while get_session said far more; the orchestrator's context re-read at every check-in
+is the spend. Read cost_usd at every check-in and hand off at 550k context. (2) Parallel scouts at 2x load burnt the shared window in 40 minutes
+(05:10-05:50); seven workers were cut off. (3) tools/room.py matched conflict markers anywhere in a line and spliced ROOM.md when a line quoted
+marker text; fixed by a worker (844b58b, anchored at line start). Two workers committed conflict markers into QUEUE.md/QUEUE-scores.json via
+stash pops; both fixed. (4) The census diff pooled 'Partially decrypted' with 'Non-decrypted' and missed Bourdeau holdings; check-solved caught it
+before LANE R spent anything -- keep status as a hard filter. (5) Scouts do not nominate; several wrote 'nominations: N' for queue rows.
+(6) Free PDFs can bundle the printed edition: open every page before 'open'.
+
 ## LANE S handoff (session_01PE7TAF6Hsp3MHtFEkDPP4a), 24 September 2026, 04:58 UTC
 
 Lane: finding and gating targets outside Gallica (03:05-04:58 UTC). 25 Sonnet workers, about $140 of worker usage, every one
