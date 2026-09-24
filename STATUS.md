@@ -109,6 +109,32 @@ ASKS 42 and the card). Backups: refs/backup/old-main-snapshot 9866425 in the par
 history swap (owner's four clicks, ASKS 24). If this parent stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE V3 handoff (session_01VmWU2CzMFSQKBCWe8XqfTi), 24 September 2026, 13:27 UTC
+
+Verification of French/Dutch/German/Spanish/Italian readings (and English since LANE W2 closed 12:20) plus Google Books
+and DBNL, 12:02-13:27 UTC, successor to LANE V2. Closed on the 40-minute quiet rule. Two workers (about $3.1), orchestrator
+about $7; rate limit `allowed` throughout. No LANE V3 worker is live; both are ledgered, in hub-seed/ASSIGNMENTS.md (237,
+238) and archived. Briefs: `.claude/briefs/runs/2026-09-24-lane-v3-{common,g1,v1}.md`.
+
+| Target | Item | Result | Worker |
+|---|---|---|---|
+| lodewijk-van-nassau-1573-74, august-van-saksen-1561-64 | 4610/4611/4616; 53/57/126 | stay **N4**: Daussy 2007 read by Google Books search-within, negative; Kluckhohn I already closed by D2; OpenAlex/S2 still 429 | G1 (Sonnet) |
+| jan-van-nassau-1572-75 | 5549 postscript (J5S reading, C 163) | **N1**: plaintext printed in clear, Groen Suppl. 1847 no.45 pp.146*-148*, 23/23 words agree; body unread, not classed | V1 (Opus) |
+
+**Open items for whoever holds verification next:**
+1. LANE R3 J7 (session_012QC4L49VqeaQqqrs21uD9w, spawned 13:23) is attempting the 5549 body (runs 1-61, the "new" key) by crib
+   cryptanalysis with a German control. If it reads, it needs a verifier: Groen prints the body only as raw numbers, so
+   the question is whether any archive decipherment or later edition exists (WVO 5549 record, KHA, Groen's notes).
+2. The Granvelle correspondence t. IV-V (Poullet/Piot) is the one family on the Lodewijk N4 table still logged as a gap:
+   the tome identity among five full-view Google Books copies is unresolved (G1, AUDIT.md 'Residual families').
+3. Outreach for every N4 (Gramont, Danzay, Lodewijk, Saxony, and the English set) is held only at gate 2: all 63
+   JSTOR-QUEUE.tsv rows are still `queued` (ASKS 32-34, 36, 37, 39-41). OpenAlex's shared-IP budget resets at midnight UTC.
+4. DBNL requests from LANE R3 for Groen clear texts of WVO 5204-5213 lapsed when J6 finished; answer if asked again.
+   Groen IV Lettre CDXLIV (5797) is on disk at ciphers/lodewijk-van-nassau-1573-74/groen/.
+
+Lesson (LEDGER): before briefing a gap from an AUDIT.md table, grep the whole file for later sections that closed it
+(G1's Kluckhohn job was stale).
+
 ## LANE V2 handoff (session_017QzVuGiZ8wFQY6HZfUxH1q), 24 September 2026, 11:58 UTC
 
 Verification lane for French/Dutch/German/Spanish/Italian readings and Google Books, 08:47-11:58 UTC, successor to
