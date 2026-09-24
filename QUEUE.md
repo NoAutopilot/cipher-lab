@@ -3325,6 +3325,65 @@ GETs — the search backend for the named `ckcc.huygens.knaw.nl` host, see above
 curl hosts ≥1.5s apart, one request at a time. No logins, no credentials, no subagents, no image opened or
 transcribed, no novelty wording, nothing promoted or check-solved.
 
+### EMLO beyond EM1-EM3 (LANE N2 harvest of 24 September 2026)
+
+Row of `.claude/briefs/runs/2026-09-24-lane-n2-scEM2.md`. Widened the productive EMLO Solr route above beyond
+the exact phrase `bibo_Note:"not decoded"` and the `ox_keywords:"Cipher letter"` facet: `bibo_Note:cipher OR
+bibo_Note:cypher OR bibo_Note:chiffre OR bibo_Note:cijfer OR bibo_Note:zifra` (332 hits, `wt=json`). Every hit's
+note was scripted-triaged (regex for `decoded|deciphered|decrypted|solved|broken` vs. a negation of the same),
+the boilerplate/duplicate/false-positive clusters resolved by batching Solr `id:(uuid_a OR uuid_b OR ...)`
+lookups (one request per 50-100 ids, not per letter — scripts read, models judge), and every remaining
+candidate's work record (sender, recipient, date, shelfmark, abstract) read by hand. Full raw/kept/excluded
+detail in `sources/emlo/cipher-letters-2026-09-24.tsv`; the raw Solr JSON is kept alongside it in
+`sources/emlo/*.json` for anyone re-running this without refetching.
+
+**Excluded against `ciphers/`, CATALOG.md, LANDSCAPE.md, QUEUE.md and fresh shallow clones of
+`dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers`** (grepped for every new sender/recipient surname
+below: Brasset, Bordeaux-Neufville, Townesend, Villiers, Williams — no genuine match; `Bordeaux-Neufville` does
+appear in Bourdeau's `docs/bordeaux1653.html`, but that write-up is a **different** 30 May 1653 Bordeaux→Brienne
+despatch, Add MS 4200, solved via the Brienne-office cipher design — see the EM4 caveat below for why this is a
+lead, not an exclusion).
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Leaf viewed | Image URL (tested) | Copy-free y/n | Total |
+|---|---|---|---|---|---|---|---|---|---|---|
+| EM4 | Four letters in John Wallis's own 1653 deciphering collection explicitly marked **not** deciphered, unlike the ~48 other letters in the same volume: Henri Brasset to Antoine de Bordeaux-Neufville, 4 Apr 1653 (`"[Abstract is unavailable because the letter is not deciphered and is in French.]"`); Unknown, Scotland, 16 Jan 1651 (`"The letter is not deciphered; however, the cipher appears to be based on the substitution of numeric and symbolic values."`); George Villiers, 2nd Duke of Buckingham, undated (same wording); Peter Townesend, Flanders, 5 May 1658 (same wording; one manifestation adds `"Enclosed in this record is the ciphered letter and a blank page titled 'A Key to the Cipher foregoing'"` — the key page is blank) | 1651-1658 | fr/en | recovery | Bodleian **MS. e. Musaeo 203** (also catalogued redundantly as MS. Eng. misc. e. 475 and as "MS. 19336" in EMLO — same physical volume, pp. 203/212/215/219 ff.) | Source of data: "Emma Grummitt, with Philip Beeley, 13 June 2025" — Beeley is the general editor of *The Correspondence of John Wallis* (OUP), an active, ongoing modern edition. **This is a live scholarly project, not a closed historical record**: it may already have (unpublished) working notes on exactly these 4 letters. The collection itself is titled, per its Bodleian ArchivesSpace description (WebSearch, not fetched from `archives.bodleian.ox.ac.uk` — out of this brief's host list), *"A Collection of Letters and other Papers, which were at severall times intercepted, written in cipher. Deciphered by John Wallis..."*, given to the Bodleian in 1653, with "fifty-two Royalist letters from 1640-53...deciphered." QUEUE.md row N42 / `ciphers/bl-wallis-letterbook/NOTES.md` (found-solved, F0) audited a **different** Wallis manuscript, British Library **Add MS 32499** (1689-1701 Jacobite/William III material) — not this one — but its search log is directly reusable: it quotes Davys 1737 citing "the collection of deciphered papers that Wallis deposited in a public library in 1653" as a *separate, earlier* deposit from Add MS 32499, which is almost certainly this same MS. e Mus. 203. Davys 1737's own introduction to that 1653 collection (`sources/cryptiana/web/davys_e.htm`) was not reread against these 4 letters this pass — do that before any nomination. | No | none found this pass (Digital Bodleian not queried — a separate LANE N scout's host, per the EM1-EM3 caveat above; the EMLO manifestation records carry no image field) | unconfirmed | 26 |
+| EM5 | 30 Jun 1690, unknown male (London) to John Williams: "Two simple substitution ciphers used interchangeably where plain text letters of the alphabet have been substituted for other letters of the alphabet, removed a certain number of places. The cipher is used intermittently throughout the letter." Abstract present ("A letter concerning Scottish affairs. The author advises the recipient on acquaintances to trust and how to deal with money issues.") — the abstract itself may describe only the clear portions, or may mean the whole letter (including cipher) was already read; not established which this pass | 1690 | en | cryptanalysis | Bodleian MS. Eng. misc. c. 382, p. 223, ff. | The 8th and last item from the same freshly-indexed "Bodleian early modern letter collections" source (Emma Grummitt, 18 June 2025) as EM2 (4 items, Carte 213/Ormond) and EM3 (3 items, same c. 382 volume, pp. 221/224-225) — this completes that source's full count. Same caveat as EM3: no calendar equivalent to HMC Ormonde known for this specific volume, lower duplication risk than EM2, not checked against a specific edition this pass. | No | none found this pass (Digital Bodleian caveat as EM2/EM3) | unconfirmed | 27 |
+
+**Leads, not candidates (with reasons in the TSV):** (1) **111+6 = 117** letters carrying the boilerplate note
+"This letter is written partly in cipher" (or a near-identical wording) are almost entirely the Thomas
+Roe–Elizabeth Stuart, Queen of Bohemia correspondence, 1621-1641 (`ox_sourceOfData: "Nadine Akkerman, 4 April
+2017"`) — Akkerman is the editor of *The Correspondence of Elizabeth Stuart, Queen of Bohemia* (OUP, 5 vols.,
+an active modern edition with its own translations and annotations of exactly this correspondent's cipher
+passages). One of the 7 non-boilerplate Elizabeth Stuart notes checked by hand is already explicitly printed
+("Summary by Girolamo Lando, in cipher... Printed source: CSP Venice xvii, no. 40."). High risk this whole
+cluster is found-solved or already in print in Akkerman's edition; needs checking against it, letter by letter,
+before any of the 117 is scored — not attempted this pass (same shape as the Grotius lead in the EM1-EM3
+section above, one level larger). (2) The Wallis 1653 collection's other **48** letters (of the same MS. e Mus.
+203 as EM4) were checked systematically, not by sampling: every one of the 52 "Wallis cipher books" work
+records has a populated `dcterms_abstract` (a real summary, meaning Wallis's 17th-century decipherment was
+used to write it) **except** the same 4 that EM4 lists, whose abstract field is literally the placeholder
+`"[Abstract is unavailable because the letter is not deciphered..."`. Consistent with EM1-EM3's original
+blanket exclusion for the 53-work Wallis facet, the 48 stay excluded; only the 4 EM4 letters differ. (3) **5** Henry Cromwell items (Thomas Harrison and William Jephson, 1656-57) repeat
+EM1-EM3's Thurloe/Birch overlap risk verbatim ("attempts at decoding have been made in the footnotes") — same
+exclusion, not re-litigated. (4) A handful of Robert Boyle, Elias Ashmole and John Wallis (as correspondent,
+not the 1653 collection) items mention "cipher" but resolve to: enclosures now lost (2 Boyle items per Hunter's
+edition, 1 Wallis-Jenkins item), a marginal "in cipher" receipt-note or personal shorthand already covered by
+Josten's 1966 Ashmole edition (4 items), or "chiffre" meaning a torn date-digit, not a cryptographic cipher, in
+a French manuscript (1 Bayle item, false positive from the broadened query). None kept.
+
+**Requests this row:** `emlo.bodleian.ox.ac.uk` ~33 (1 reachability check that 500'd on a malformed query; 4
+broad/phrase Solr searches; the rest individual work/manifestation lookups plus, once the record-linking pattern
+was clear, 4 batched `id:(uuid OR uuid ...)` lookups covering 8-99 related records in a single request each
+rather than one-by-one; well under the 120 cap). `github.com` 2 (shallow clones of both solver repos, grepped,
+not committed). WebSearch 1 (the Bodleian ArchivesSpace collection title for MS. e Mus. 203, since
+`archives.bodleian.ox.ac.uk` is not in this brief's host list). **Pacing correction:** this brief's host line
+sets ≥2s between `emlo.bodleian.ox.ac.uk` requests; roughly the first 29 of the ~33 used `sleep 1.5` (copied
+from the common-rules default) before this was caught against the brief's own stricter figure — no 429/403 was
+hit, but the last ~4 batched requests were paced at ≥2s and this is flagged here rather than silently claimed
+compliant. No logins, no credentials, no subagents (none named in the brief), no image opened or transcribed
+beyond reading EMLO's own catalogue notes and abstracts, no novelty wording, nothing promoted, nothing
+check-solved. Cost well under the $4 cap.
+
 ## Real Academia de la Historia digital library, OAI harvest (LANE N scout of 24 September 2026)
 
 LANE N worker (`.claude/briefs/runs/2026-09-24-lane-n-scRAH.md`). Host: `bibliotecadigital.rah.es/oai/oai.do`
