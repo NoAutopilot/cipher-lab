@@ -703,3 +703,55 @@ system and are untouched by this key. No novelty wording, no novelty class; that
 
 gallica.bnf.fr: 4 (canvas 172 native: 1 reset, 1 success on retry; canvas 173 native: 2 resets, stopped at the
 one-retry limit and logged). No other host. No subagents.
+
+## Joint key from f.86 + f.88 (24 Sept 2026)
+
+Opus solver, LANE G, disk only (no network; canvas 173 still unfetched). Files: `passC_f88.tsv` (blind second
+reader), `ciphertext_f88.tsv` (settled), `joint_key.py` -> `key_1659.tsv` (joint), `align_f88.tsv`,
+`holdout_f86.tsv`; `key_1659_f86only.tsv` is the previous f.86-only key, now written by `align_f86.py` (which no
+longer overwrites `key_1659.tsv`) and used by `holdout_f88.py`; `decode_1659.py` unchanged, `--check` exits 0.
+
+### (1) Second reading of f.88
+
+One Sonnet subagent read the cipher from `images/crops/f88_cipher_{top,bottom}.jpg` without access to any
+transcription, key or note. Same segmentation on all 8 lines (153 groups each, plus [mais]); **141/153 groups
+agree (92.2%)**. The 12 disagreements were settled by eye on zoomed crops (conf column; note says which reader):
+- second reader adopted at 3: L02 pos 8 `_6` and L04 pos 12 `_16` (overline plain on zoom), L06 pos 10 `27`
+  (straight 7, like L05 pos 12; first reader had 23, now M);
+- first reader kept at 9: six `36`/`31`/`_13` where the second reader wrote 26/71/_17 for the descending
+  3-shaped glyph (kept as 3 under the f.86 convention: 2 in this hand is z-shaped without a descender, 7 has a
+  flat top), now M; L01 pos 20 `13` (no overline; the bar to its left belongs to `_0`).
+Conf after settlement: H 125, M 28.
+
+### (2) Joint key and the mirror hold-out
+
+Same hard-EM/Viterbi as `align_f86.py`, same hand seeds, f.86 segments S1-S6 plus f.88 split at [mais] (T1 "de
+Savoye ... beaucoup de bien", T2 "lalliance ... celle la"). `key_1659.tsv` now has **74 groups** (was 65), all
+grade C, with `ev_f86`/`ev_f88` columns (modal value count / occurrences in each folio).
+- **Values changed (4)**: `16` el -> l (4/13; f86 1/4, f88 3/9), `18` on -> n (11/25; f86 5/14, f88 6/11),
+  `24` ui -> i (3/9; f86 1/6, f88 2/3), `71` e -> ne (4/11; f86 3/7, f88 1/4). All four are sub-part splits
+  (on/n, el/l, ui/i, e/ne) of the kind the aligner cannot settle; all four stay `conflict`.
+- **Conflicts resolved (3)**: `_16` se 3/4, `37` di 4/5, `62` i 3/4. **Newly conflict (6)**, each from one or two
+  f.88 occurrences: `_13` r 6/9, `23` pr 4/6, `_28` v 3/5, `40` fa 2/3, `41` e 1/2, `64` lu 1/2. Conflicts 19 -> 23.
+- **New groups (9)**, one f.88 attestation each: `3` e, `_6` ques, `_10` st, `13` gn, `_19` su, `26` be, `27` b
+  (1/2), `65` ar, `70` a. Single attestations 20 -> 22.
+- **Hold-out, mirror of check (b)**: key from f.88 only, f.86 aligned to f.87 paragraph 1 under it; control =
+  paragraph 1 letters shuffled per segment, seeds 0-4 (`joint_key.py --holdout`, `holdout_f86.tsv`):
+  - unseeded EM (no f.86 information): 50 groups, 227/268 f.86 occurrences keyed, **47/227** match vs control
+    **32-40**. Weak: 153 groups are too few for the unseeded EM to converge on the table.
+  - seeded EM (the 20 seeds were read by hand from f.86, so this leaks and is supporting only): **168/227** vs
+    control 48-63; on the 77 occurrences of non-seed groups, **41/77** vs control 9-18.
+  - Check (b) re-run on the settled transcription (`holdout_f88.py`, f.86-only key): 114/143 vs control 28-35.
+
+### (3) Readings
+
+- **f.86**: C 72, M 196, U 0, P 12 (was C 81, M 187): `18` is now a conflict group (on 5 / n 5 in f.86), so its
+  C tokens drop to M.
+- **f.88**: C 65, M 88, U 0, P 5 (was C 67, M 78, U 8): every group is now keyed. Reading, as regenerated: "de sa v
+  y e a l la n t a c c m pa gn ne r M. sa s e ou r ju s ques a pa r me p ou r r oi t pr re n e re re s lu t i n
+  ... de s pr i n ne s se s ... be a ou c ou pr de b e n [mais] la l i a n ne e s t si di s b r p r t i n ne e
+  ... ce l le la". It is f.87 paragraph 2 read back through a key partly estimated from it; not new text.
+
+Not done: canvas 173 (the rest of the f.88 cipher and its date); a hand-seeded f.88-only key (seeds from f.88's
+own repeats) would give a cleaner mirror than the unseeded run. No novelty wording, no class; that is for a
+verifier. Requests: none (no network). One Sonnet subagent.

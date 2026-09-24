@@ -1,17 +1,17 @@
-# grades: C=81 M=187 P=12  (P = clear in the manuscript; ? = unkeyed)
+# grades: C=72 M=196 P=12  (P = clear in the manuscript; ? = unkeyed)
 L01  s oi t p ou r le lu y a v oi r e s te a oi
-L02  on si y di t pa r [M.] da m b ru m n ou p ou r
-L03  la v oi r c on t r ou ve p ou r le ru oi e r
-L04  da on s le s pr i t de [M.] s on fi el je n
-L05  e s ca ou r oi s fa oi re e o r t a M. de la c r
-L06  oi re ca pa b le du e a c t ui on si n oi re
-L07  qu se r oi t ce el le la [mais] [aussy] ja y pa y e de
-L08  c r oi re qu [M.] da m b ru on se s oi t ta on
-L09  ui ou y i e [et] [c'est] [ce] [qui] [donne] [lieu] [de] de si re r
-L10  s ca v oi r on qu el je re r me s M. pe ou t
-L11  a v oi r pa r le a ce ou x q ui on t pa r t e
-L12  s le s a f fa oi re s a fi on b s se m y la
-L13  le s di ve r s di s c ou r s qu el le a te
-L14  ui on ju ge si ca e s te ou on e f e c t de
-L15  ju s t ce ui ou de sa ha y e q a y t d on
-L16  i e ou a ce ou x q ui on t e s r pu y i r
+L02  n si y di t pa r [M.] da m b ru m n ou p ou r
+L03  la v oi r c n t r ou ve p ou r le ru oi ne r
+L04  da n s le s pr i t de [M.] s n fi l je n
+L05  ne s ca ou r oi s fa oi re ne o r t a M. de la c r
+L06  oi re ca pa b le du ne a c t i n si n oi re
+L07  qu se r oi t ce l le la [mais] [aussy] ja y pa y ne de
+L08  c r oi re qu [M.] da m b ru n se s oi t ta n
+L09  i ou y i e [et] [c'est] [ce] [qui] [donne] [lieu] [de] de si re r
+L10  s ca v oi r n qu l je re r me s M. pe ou t
+L11  a v oi r pa r le a ce ou x q i n t pa r t ne
+L12  s le s a f fa oi re s a fi n b s se m y la
+L13  le s di ve r s di s c ou r s qu l le a te
+L14  i n ju ge si ca e s te ou n e f e c t de
+L15  ju s t ce i ou de sa ha y ne q a y t d n
+L16  i e ou a ce ou x q i n t e s r pu y i r

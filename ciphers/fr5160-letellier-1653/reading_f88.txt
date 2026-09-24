@@ -1,9 +1,9 @@
-# grades: C=67 M=78 P=5 U=8  (P = clear in the manuscript; ? = unkeyed)
-L01  [peut] [estre] [que] [M.r] de sa v y e a el la on t a c c m pa ? e r M.
-L02  sa s e ou r ju s qu a pa r me p ou r r oi t pr
-L03  re on ? re re s lu t ui on de s y ? i e r y a
-L04  y a on t de s pr i on e s el s de s qu el le s
-L05  ui on di t ? a ou c ou pr de ? e on [mais] la el i
-L06  a on e e s t si di s pr r p r t ui on e e a ce el
-L07  le s q el p ou r r oi t fa oi re e on t q el el r oi
-L08  t ? r pr re ? on t q el pr re e ? ce el le la
+# grades: C=65 M=88 P=5  (P = clear in the manuscript; ? = unkeyed)
+L01  [peut] [estre] [que] [M.r] de sa v y e a l la n t a c c m pa gn ne r M.
+L02  sa s e ou r ju s ques a pa r me p ou r r oi t pr
+L03  re n e re re s lu t i n de s y ar i e r y a
+L04  y a n t de s pr i n ne s se s de s qu l le s
+L05  i n di t be a ou c ou pr de b e n [mais] la l i
+L06  a n ne e s t si di s b r p r t i n ne e a ce l
+L07  le s q l p ou r r oi t fa oi re e n t q l l r oi
+L08  t su r pr re a n t q l pr re e st ce l le la

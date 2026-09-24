@@ -133,11 +133,11 @@ def em(segs, iters=40, seeded=True):
 
 
 def write_key(counts):
-    """key_1659.tsv: modal value per group, grade C (known plaintext), evidence = occurrences aligned to that value."""
+    """key_1659_f86only.tsv: modal value per group, grade C (known plaintext), evidence = occurrences aligned to that value."""
     def num(g):
         b = g.lstrip('_')
         return (int(b) if b.isdigit() else 999, g.startswith('_'), g)
-    with open('key_1659.tsv', 'w') as f:
+    with open('key_1659_f86only.tsv', 'w') as f:  # the joint key_1659.tsv is written by joint_key.py
         f.write('code\tvalue\tgrade\tevidence\toccurrences\tother_values\tnote\n')
         for g in sorted(counts, key=num):
             c = counts[g]

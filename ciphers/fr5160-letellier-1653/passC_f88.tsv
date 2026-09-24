@@ -1,0 +1,155 @@
+line	pos	group	conf	note
+L01	1	26	H
+L01	2	_15	H
+L01	3	_28	H
+L01	4	9	H
+L01	5	2	H
+L01	6	m	H
+L01	7	16	H
+L01	8	60	H
+L01	9	18	H
+L01	10	19	H
+L01	11	m	H
+L01	12	4	H
+L01	13	33	M	curly 3 shape; alt 38
+L01	14	17	H
+L01	15	_0	H
+L01	16	_13	H
+L01	17	71	M	alt 21
+L01	18	21	H
+L01	19	115	M	three-digit group, alt 15 with stray mark
+L02	1	_15	H
+L02	2	_18	H
+L02	3	2	H	comma punctuation follows before next group
+L02	4	7	H
+L02	5	21	H
+L02	6	59	H
+L02	7	20	H
+L02	8	_6	M	overline faint; alt plain 6
+L02	9	m	H
+L02	10	_0	H
+L02	11	21	H
+L02	12	66	H
+L02	13	_3	M	curly 3 shape; alt _7
+L02	14	7	H
+L02	15	21	H
+L02	16	_13	H
+L02	17	15	H
+L02	18	19	H
+L02	19	23	H	line ends with dash/flourish after this group, not a group
+L03	1	_11	H
+L03	2	18	H
+L03	3	3	M	curly 3 shape; alt 7
+L03	4	_11	H
+L03	5	_11	H
+L03	6	_18	H
+L03	7	64	H
+L03	8	_22	H
+L03	9	24	H
+L03	10	18	H
+L03	11	26	H
+L03	12	20	H
+L03	13	9	H
+L03	14	65	H
+L03	15	_12	H
+L03	16	2	H
+L03	17	21	H
+L03	18	9	H
+L03	19	m	H
+L04	1	9	H	line cut off at bottom in top crop; full form seen at top of bottom crop
+L04	2	m	H
+L04	3	18	H
+L04	4	19	H
+L04	5	26	H
+L04	6	20	H
+L04	7	23	H
+L04	8	_12	H
+L04	9	18	H
+L04	10	71	M	alt 21
+L04	11	20	H
+L04	12	_16	M	overline uncertain; alt plain 16
+L04	13	20	H
+L04	14	26	H
+L04	15	20	H
+L04	16	6	M	overline uncertain; alt _6
+L04	17	16	H
+L04	18	61	H
+L04	19	20	H
+L05	1	24	H	dot punctuation follows before next group
+L05	2	18	H
+L05	3	37	H
+L05	4	19	H
+L05	5	26	H	comma punctuation follows before next group
+L05	6	m	H
+L05	7	7	H
+L05	8	33	M	curly 3 shape; alt 38
+L05	9	7	H
+L05	10	23	H
+L05	11	26	H
+L05	12	27	H
+L05	13	2	H
+L05	14	18	H
+L05	15	[mais]	H	clear French word
+L05	16	60	H
+L05	17	16	H
+L05	18	62	H
+L06	1	m	H
+L06	2	18	H
+L06	3	71	M	alt 21
+L06	4	2	H
+L06	5	20	H
+L06	6	19	H
+L06	7	_17	H
+L06	8	37	H
+L06	9	20	H
+L06	10	27	H
+L06	11	_13	H
+L06	12	_3	M	curly 3 shape; alt _7
+L06	13	21	H
+L06	14	_22	H
+L06	15	24	H
+L06	16	18	H
+L06	17	71	M	alt 21
+L06	18	2	H
+L06	19	m	H
+L06	20	71	M	alt 21
+L06	21	16	H
+L07	1	61	H
+L07	2	20	H
+L07	3	_7	H
+L07	4	16	H
+L07	5	_3	M	curly 3 shape; alt _7
+L07	6	7	H
+L07	7	21	H
+L07	8	_13	H
+L07	9	15	H
+L07	10	19	H
+L07	11	40	H
+L07	12	15	H
+L07	13	_11	H
+L07	14	2	H
+L07	15	18	H
+L07	16	19	H
+L07	17	_7	H
+L07	18	16	H
+L07	19	16	H
+L07	20	_17	H
+L07	21	15	H
+L08	1	19	H
+L08	2	_19	H
+L08	3	21	H
+L08	4	23	H
+L08	5	_11	H
+L08	6	70	H
+L08	7	18	H
+L08	8	19	H
+L08	9	_7	H
+L08	10	16	H
+L08	11	23	H
+L08	12	_11	H
+L08	13	41	H
+L08	14	_10	H
+L08	15	71	M	alt 21
+L08	16	16	H
+L08	17	61	H
+L08	18	60	H	line ends with dash/flourish after this group, not a group
