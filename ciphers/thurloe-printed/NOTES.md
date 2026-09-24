@@ -646,3 +646,75 @@ Files this pass: `P2/tokens.tsv`, `P3/tokens.tsv`, `P8/tokens.tsv`, `P8_pairs.ts
 `key_steele.tsv`, `decode_steele.py`, `reading_P8.txt`. `ciphertext.txt`, `index.tsv` and every
 other row untouched. Requests: archive.org 0 (djvu text restored from the committed
 `sources/ia-fulltext/thurloe-gz/` cache, per this brief); no other host; no subagents; no logins.
+
+## 15. Solver benchmark on Fauconberg (LANE T worker F, 24 Sept 2026)
+
+**Answer.** On the real Fauconberg groups, both solvers read at least 80 percent of tokens on all three
+seeds only at the full 3,024 groups. The anneal also managed it on all three 600-group subsets, but not
+at 1,200 (one seed fails at 0.35). At 600 to 1,200 groups, two runs in three succeed. At 300 groups,
+one run in three succeeds. On the synthetic control, both solvers pass on every seed from 1,200 groups.
+The 1654 inline pool (P4-P7) has about 1,040 clean groups by the same filter (P4 149, P5 290, P6 135,
+P7 465). That puts it in the range where a single run is unreliable but several seeds usually find the
+key. Solver-ready, then, only with many seeds and a choice by score, and every reading still needs a
+matched control.
+
+**Inputs.**
+- *Groups:* `benchmark/data.py`, the CLEANED cipher lines of P16-P24 only. A token that is not a clean
+  integer 1-60 ends the fragment (OCR merges, name capitals).
+- *Scoring key:* Birch's printed decipherment, taken from the lines check_interlinear.py matches exactly
+  (35 pairs, 16 kept after an agreement filter, 29 groups). It was then extended with the +-3-letter
+  neighbour lines, each placed at the offset that best agrees with that key (46 lines, 39 groups, 2,773
+  of 3,024 tokens scored).
+- *Agreement:* the exact key and the extended key agree on every shared group. All 39 groups also
+  agree with worker A's `key_fauconberg.tsv`, which landed during this run and was not used for
+  scoring. Unscored groups: 34 (s, votes split by long-s OCR as f/l), 36, 25, 1, 12 partly.
+- *Language model:* Gutenberg texts (tools/data) plus English lines of Thurloe vols 2, 3, 5, with a
+  long-s repair.
+- *Control:* vol. 7 clear English, djvu lines 2002-2119, with the cipher windows excluded. It was
+  enciphered with the same homophone sets, each group drawn at its real frequency, and cut into the
+  same fragment lengths.
+
+**Runs.**
+- *Solver settings:* no crib, no fixed values, each tool at its defaults. hillclimb: 40x6000, at most
+  2 homophones. anneal: 8x100000, homophone cap 4, with syllables, words and nulls off.
+- *Anneal alphabet:* the anneal's model alphabet folds y/i, w/u and k/c, so it is scored on folded
+  letters.
+- *Seeds:* seeds 1-3 choose both the subset (contiguous fragments) and the solver seed.
+
+Token accuracy, three seeds (all rows in `benchmark/results.tsv`):
+
+| groups | hillclimb real | hillclimb synth | anneal real | anneal synth |
+|---|---|---|---|---|
+| 300 | 0.95 0.31 0.16 | 0.59 0.52 0.54 | 0.99 0.12 0.26 | 0.18 0.38 0.28 |
+| 600 | 0.94 1.00 0.76 | 0.41 0.69 0.97 | 0.83 0.98 0.99 | 0.16 0.99 0.98 |
+| 1,200 | 0.92 0.71 0.95 | 1.00 0.96 1.00 | 0.99 0.35 0.99 | 0.99 0.99 0.99 |
+| 3,024 | 0.93 0.93 0.91 | 1.00 1.00 1.00 | 0.99 0.99 0.97 | 0.99 0.99 0.99 |
+
+Smallest length with >= 80 percent tokens on all three seeds and at every larger length:
+
+| | real | synthetic |
+|---|---|---|
+| hillclimb | 3,024 | 1,200 |
+| anneal | 3,024 | 1,200 |
+
+**Reading the table.**
+- *Why the real text caps lower:* the hillclimb tops out at about 0.93 on the real text.
+  `truth_score_per_tok` is above the found score in nearly every real run, so this is a search
+  failure: the true key scores better and the solver does not reach it. The cause is probably OCR
+  noise plus the two-homophone cap.
+- *Why the real text beats the control at 300-600 groups:* the real letters repeat set phrases
+  ("my lord", names), and two real subsets (300/1, 600/2) use only 22 distinct groups.
+- *Anneal accuracy on distinct groups:* 0.92-0.95 at full length.
+- *Picking a run by score:* a failed anneal run shows a clearly worse per-token score (about -4.0 to
+  -4.6) than a successful one (-2.3 to -3.3). Choosing by score across restarts or seeds is therefore
+  a usable guard.
+
+**Tool changes:** none. Both tools ran unchanged. The anneal was given an English 5-gram model built
+with `tools/italian_ngram.build()`.
+
+**Regenerate:** `python3 benchmark/bench.py --check`.
+
+**Requests:** none (disk only).
+
+Report on what was found: benchmark numbers only. No reading of any letter is claimed and no novelty
+class is given.
