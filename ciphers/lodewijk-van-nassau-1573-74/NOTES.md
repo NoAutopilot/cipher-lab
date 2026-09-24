@@ -39,8 +39,8 @@ decipherment on a separate sheet in the same file, not a transcription made by t
 "key beside the letter" / sibling pattern (LESSONS.md §2): if 4613/4615's key (i.e. the figure-to-letter
 mapping recoverable by aligning ciphertext to the imaged plaintext) also covers 4610/4611/4612/4616 -- plausible
 since Lodewijk's correspondence with his brother in this narrow eight-month window is likely to share one
-cipher -- this is a recovery-by-alignment target, not a cryptanalysis-from-scratch one. **Nobody has yet
-attempted that alignment**; this pass only confirms the material exists and is reachable, per the brief.
+cipher -- this is a recovery-by-alignment target, not a cryptanalysis-from-scratch one. **No prior alignment was found
+in the sources checked** (corrected by verifier V2, 24 Sept 2026); this pass only confirms the material exists and is reachable, per the brief.
 
 Three further letters *to* Lodewijk/Jan/Hendrik van Nassau from the same 1574 exchange (briefnrs 7205, 7206,
 7208, held at the Algemeen Rijksarchief van België per the scout's row) also carry a contemporary solution,
@@ -97,7 +97,8 @@ Run directly by this worker (Sonnet, no Workflow tool, no subagents), per `.clau
 ## Verdict
 
 **Status: open** (all four: 4610, 4611, 4612, 4616). No solution, key, plaintext or documented attempt found in
-six sources. **Caveat, per this worker's own gap above:** the standard printed edition (Groen van Prinsterer,
+six sources. (Verifier V2, 24 Sept 2026: Groen IV prints Orange's replies to 4610, 4611 and 4616 -- Lettres
+CDXXVII, CDXXXIII, CDLXXXIV -- so the letters were read on receipt; see AUDIT.md.) **Caveat, per this worker's own gap above:** the standard printed edition (Groen van Prinsterer,
 located and confirmed readable) was not exhaustively searched letter-by-letter for these four dates; the
 verdict rests on the WVO database's curatorial silence plus the six-source sweep, not on a page-by-page reading
 of Groen's tomes IV-V. A future worker should either parse the DBNL table of contents directly (not through a
@@ -454,3 +455,13 @@ first if a similar shortcut is wanted for these six.
 
 Host: resources.huygens.knaw.nl, 6 PDF fetches this pass (shared budget with the other two C1 targets, all
 >=1.5s apart, descriptive UA).
+
+## Verifier V2: novelty audit (24 September 2026)
+
+AUDIT.md: 4610 N3, 4611 N3, 4612 N3, 4616 N3. None of the four is printed in Groen van Prinsterer (t. III-V, Supplément,
+searched by date and full text on DBNL), Gachard (Guillaume t. III; Philippe II t. II-III), Kervyn (Huguenots et Gueux
+t. III) or Blok 1889. Blok 1887 (Werken HG n.s. 47) was checked only by HathiTrust per-page word counts: its 1573-74
+pages are German. Orange's printed replies to 4610, 4611 and 4616 (Groen IV, Lettres CDXXVII, CDXXXIII, CDLXXXIV)
+answer their content. N4 is withheld: Blok 1887 was not read, Kervyn's Relations politiques, the KHA inventory and
+the Wiesbaden papers were not searched, and OpenAlex/S2 were unreachable. Note for the solver: 4612's keyed runs
+mostly do not read as French under the 4613/4615 key, so test for a changed table in 1574.

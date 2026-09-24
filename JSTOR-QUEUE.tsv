@@ -49,3 +49,6 @@ ciphers/august-van-saksen-1561-64	"Oranien" AND "August" AND Sachsen AND 1564 AN
 ciphers/august-van-saksen-1561-64	"Anna von Sachsen" AND Oranien AND Kurfürst AND Briefwechsel	2026-09-24	queued	
 ciphers/clair1108-duvergier	"Vergier" AND (Pontchartrain OR Middleton) AND 1696	2026-09-24	queued	
 ciphers/clair1108-duvergier	"Clairambault 1108"	2026-09-24	queued	
+ciphers/lodewijk-van-nassau-1573-74	"Lodewijk van Nassau" OR "Louis de Nassau" AND (chiffre OR cipher OR cijfer OR geheimschrift) AND 1574	2026-09-24	queued	
+ciphers/lodewijk-van-nassau-1573-74	"Louis of Nassau" AND Mookerheyde AND letters AND 1574	2026-09-24	queued	
+ciphers/lodewijk-van-nassau-1573-74	("Willem van Oranje" OR "William of Orange") AND (cryptografie OR geheimschrift OR cipher) AND Nassau AND 1573	2026-09-24	queued	
