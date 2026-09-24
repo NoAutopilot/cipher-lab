@@ -1,0 +1,82 @@
+{
+ "f54r": {
+  "image": "images/src_ark_12148_btv1b90600674_f55_4085_0_4086_5513.jpg",
+  "box": [
+   250,
+   650,
+   3450,
+   5100
+  ],
+  "median_h": 85.0
+ },
+ "f54v": {
+  "image": "images/f54v_ref1600.jpg",
+  "box": [
+   80,
+   80,
+   1540,
+   2100
+  ],
+  "median_h": 34.0
+ },
+ "f55r": {
+  "image": "images/f55r_ref1600.jpg",
+  "box": [
+   80,
+   80,
+   1540,
+   2100
+  ],
+  "median_h": 33.0
+ },
+ "f55v": {
+  "image": "images/f55v_ref1600.jpg",
+  "box": [
+   80,
+   80,
+   1540,
+   2100
+  ],
+  "median_h": 33.0
+ },
+ "f56r": {
+  "image": "images/f56r_ref1600.jpg",
+  "box": [
+   80,
+   80,
+   1540,
+   2100
+  ],
+  "median_h": 33.0
+ },
+ "f56v": {
+  "image": "images/f56v_ref1600.jpg",
+  "box": [
+   80,
+   80,
+   1540,
+   2100
+  ],
+  "median_h": 32.0
+ },
+ "f57r": {
+  "image": "images/f57r_ref1600.jpg",
+  "box": [
+   80,
+   80,
+   1540,
+   2100
+  ],
+  "median_h": 36.0
+ },
+ "f57v": {
+  "image": "images/f57v_ref1600.jpg",
+  "box": [
+   80,
+   80,
+   1540,
+   2100
+  ],
+  "median_h": 33.0
+ }
+}
