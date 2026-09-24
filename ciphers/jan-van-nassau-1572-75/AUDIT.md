@@ -102,3 +102,93 @@ clear. With 5200, 5218 and 5222 all printed in clear, that is the likely outcome
 - Corrections made: NOTES.md status line and a V6 section; status.json row for 5200 (grade, line, novelty). The J2
   section's "This is the first graded, reconciled reading under key_1572" is internal to this repository; it is left
   with a pointer here.
+
+## V1 (LANE V3), 24 September 2026, 12:49-12:55 UTC: WVO 5549, postscript stretch (PS1-PS26)
+
+Verifier V1 (Opus, cap $3, for LANE V3). I did not solve this item and did not decode it again. 5200's classes above
+are unchanged.
+
+**Claim under audit** (NOTES.md "J5S result", LANE R3 worker J5S, 24 Sept 2026 12:41 UTC): the postscript stretch
+(PS1-PS26, 226 tokens, leaf pp.4-5) reads under Lodewijk's 1574 five-per-letter table, C 163, I 13, M 6, U 44, and
+"agrees with Groen's clear print of the postscript (Suppl. pp.146-148)". The question was N0 against N1.
+
+### Verdict
+
+| item | class | prior plaintext | prior decipherment | evidence | confidence |
+|---|---|---|---|---|---|
+| WVO 5549, Jan van Nassau to William of Orange, Dillenburg, 21 Nov 1573, PS1-PS26 (leaf p.4 second half, p.5) | **N1** | yes: Groen van Prinsterer, *Archives ou correspondance inédite de la maison d'Orange-Nassau*, 1re série, Supplément (Leiden 1847), no. 45, pp.146*-148*, roman type, no cipher marking | Groen does not say it for this letter, and the leaf has no interlinear decipherment. The printed text can only come from a decipherment, but that link is inferred, not stated. | Groen's page (DBNL, on disk as `groen/gpas_lettre45.txt`) read in full for pp.145*-148*, with its footnotes; 23 decoded words and phrases compared, all in Groen's order (table below); leaf pp.4-5 viewed; WVO record (J5I) lists no deciphered copy | high |
+| WVO 5549 body, runs 1-61 (Groen pp.141*-146*) | not classed | Groen prints these 537 groups as raw numerals, undeciphered | none located | no reading exists in this repository | -- |
+
+N1 rather than N0 follows the test used for 5200 above (V6): N0 needs Groen, the archive or the leaf to say that
+this text was deciphered, or a contemporary decipherment to survive. None does (details below). The body is unread:
+it is in a second, unrecovered key, and Groen prints it as raw numbers.
+
+### Evidence
+
+1. **The cited Groen pages print the stretch in clear.** Groen Suppl. no. 45 ("Le Comte Jean de Nassau au Prince
+   d'Orange (* ms.). Nouvelles."). The last raw group is "121. 133. 192." on p.146*. Everything after it, through the
+   postscript and the close "Datum Dillenburgk, dem 21 Novembris Ao 1573. ... Johann Graff zu Nassaw" on p.148*, is
+   ordinary roman German. There is no numeral, italic or "chiffre" note in it. Its footnotes are "Nom propre
+   sous-entendu" (p.147*, at "[fussvolck] des") and "gefangenschaft (T. IV. p. 232)" (at "verstrickung"). Groen's own
+   square brackets, "[er jener nug]", "[de]", "[fussvolck]" and "[in]", fall where the committed reading has U tokens
+   or gaps. That fits an editor working from a decipherment with holes, but he does not say so.
+2. **Word comparison, reading_5549_ps.txt against Groen pp.146*-147*.** All of these appear in the same order in both.
+   PS2 nit / "nit"; vissen / "wissen"; zogetrad{en} / "zu getrauen"; PS3 grosser die gefa(r) / "grösser die gefar";
+   PS5 den remediis / "den remediis"; PS6 hulf / "hülf"; PS7 monsieur de la noue / "Monsieur de la Noue"; PS8 strossi /
+   "Strossi"; PS9 uf del. vasser / "uf dem wasser"; PS10 vii oder viii / "vii odder viiic"; PS11 gutter / "gutter";
+   PS12 de / "[de]"; PS13 ahn .. der hant (haot) / "ahn der hant"; PS14 gr(en)tzen / "grentzen"; PS16 des / "des";
+   PS17 gedanckt / "abgedanckt"; PS19 ligen / "ligen"; PS21 in .. zihe / "[in] zihen"; PS22 uolck / "volck"; PS23 de
+   lumbres / "de Lumbres"; PS24 bey / "bey"; PS25 zuleger / "Zuleger". That makes 23 of 23. The first five PS rows sit
+   *before* Groen's "PS." line (from "Die menge der geschefft und das wir nit wissen was zu getrauen"). The stretch
+   therefore starts in the last paragraph of the body, as the writer's "alhie ... bisz zu ende" says, and is not
+   limited to the postscript. The label "postscript stretch" is kept for continuity.
+3. **No decipherment on the leaf.** I viewed images p4 (lower half) and p5. None of the cipher runs has an interlinear
+   gloss. The marginal note beside the start of the stretch on p4, which J5I left unresolved, is the author's own
+   postscript written in the margin: "PS. Nachdem ich mich geeilet hab ich die alte Ziffer ausz vergesz alhie widder
+   angefangen und bisz zu ende gebraucht, pluribus intentus minor est ad singula sensus". It matches Groen's "PS." line
+   word for word, so it is not a later archival note and not a decipherment. On p.5, between the "139.127..." and
+   "67.84.51..." lines, there is faint grey writing. At 150 dpi it looks like show-through from the reverse, not a gloss
+   over a run. A higher-resolution image could confirm that; it would not change the class unless it is a gloss.
+4. **No deciphered copy in the archive record.** WVO `brief?nr=5549` (fetched by J5I, 24 Sept 2026) names only the
+   KHA original, A 11/XIV A/5-18, and GPAS pp.140-148 no. 45 "onv.". Opmerkingen: "Gedeeltelijk in cijferschrift".
+   There is no second copy, deciphered copy or minute.
+5. **Groen's Supplément front matter.** The Préface (`groe009arch09_01_0001.php`) mentions ciphers only for persons
+   "indiquées par des chiffres" in the Granvelle extracts. It says nothing about deciphering no. 45. The Errata page
+   (`_0003.php`) has no entry for no. 45. The "Additions" page was not read.
+
+### Principal families
+
+| family | status | what | result |
+|---|---|---|---|
+| cited edition (WVO Brongegevens GPAS) | searched | Groen Suppl. no. 45 pp.140*-148* in full (on disk), Préface, Errata; DBNL, 3 requests this session | plaintext of the stretch printed in clear, 1847; no statement that it was deciphered |
+| leaf | searched | images/05549_p4.jpg, p5.jpg (C1 capture) | no interlinear decipherment; marginal PS is the author's |
+| holding archive / WVO record | searched (by J5I, same day, reused) | resources.huygens.knaw.nl/wvo/app/brief?nr=5549 | no deciphered copy listed |
+| post-edition literature | searched (by csWV2, same day, reused) | 7 WebSearch queries, solver repositories (check-solved) | nothing on this letter's cipher; WVO literature list PDF, Kronijk and BMHG not read (a gap, irrelevant to N0/N1 because the plaintext is already printed) |
+| scholarship, JSTOR | queued | one row in JSTOR-QUEUE.tsv | does not affect N1 |
+| Google Books, HathiTrust, IA full text, OpenAlex | not searched | not needed: prior print is established at the cited page, and only a statement of decipherment could move the class to N0 | -- |
+
+### Did we first-decipher?
+
+No. The plaintext of this stretch has been in print since 1847. What this repository adds is a mapping: the leaf
+ciphertext of the stretch (J5I's image pass), identified as Lodewijk's 1574 table, and a C-graded reading that agrees
+with the print. Groen does not mark the stretch as cipher. Whether this repository is the first to show that it was
+cipher on the leaf was not searched as a claim, so it may not be stated as a first.
+
+### Safe and unsafe sentences
+
+- Safe: "WVO 5549 (Jan van Nassau to Orange, Dillenburg, 21 Nov 1573): the enciphered closing stretch (leaf pp.4-5,
+  226 tokens) reads under Lodewijk's 1574 five-per-letter table at C 163, I 13, M 6, U 44. Its plaintext is printed
+  in clear in Groen van Prinsterer, Archives 1re série, Supplément (1847), no. 45, pp.146*-148*, and the reading agrees
+  with that print (N1). The body, runs 1-61, is in another key, is unread, and is printed by Groen as raw numbers."
+- Unsafe: "Groen never printed this stretch", "new cipher stretch", "postscript deciphered for the first time", or any
+  wording that the stretch's text was unknown.
+
+### Postmortem
+
+- Nothing was over-claimed about novelty: J5S reported the prior print itself. The J5I section heading, "a new cipher
+  stretch Groen never printed", is wrong at the plaintext level. Groen printed the text and did not print the
+  numerals. It is corrected in place.
+- J5I read the p.4 marginal note as possibly "a later archival note quoting" the postscript. It is the author's own
+  marginal PS. Corrected in NOTES.md with a pointer here.
+- Upgrade path to N0: a statement by Groen elsewhere (the Supplément "Additions", t.IV introduction) or a KHA
+  decipherment sheet that names this letter.

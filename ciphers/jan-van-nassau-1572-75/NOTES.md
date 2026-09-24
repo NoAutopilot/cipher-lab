@@ -5,7 +5,8 @@ open
 (5549, 24 Sept 2026, J5I image check: Groen's print agrees with the leaf for runs 1-61 (590/593, 2 real
 disagreements, 1 unresolved) EXCEPT that a large stretch after Groen's last printed cipher group -- most of
 image page p4's second half plus nearly all of p5, ~226 more numerals -- is cipher on the leaf that Groen
-prints as ordinary clear German with no mark of having been enciphered. This matches the letter's own
+prints as ordinary clear German with no mark of having been enciphered (its plaintext is therefore in print: N1, AUDIT.md V1,
+which reads under Lodewijk's 1574 table per J5S). This matches the letter's own
 postscript ("hab ich die alte Ciffer... bisz zu ende gebraucht"); key_1572 is the natural first test against it
 (not attempted here, decode out of scope for this pass). See "J5I" section below.)
 
@@ -466,7 +467,9 @@ no fresh reading: Groen pp.4-6 gives their text, and a C-graded alignment is the
 Lead: 5213 = Groen V DXXIII (Delft, 26 Nov 1574) and 5221 = Groen V DLXXIII (Dordrecht, 30 Jul 1575). Compare them
 before any passes. 5207 was not located in IV/V; 5549 is in GPAS, not checked.
 
-## J5I: image check of 5549 against Groen Suppl., and a new cipher stretch Groen never printed (24 September 2026)
+## J5I: image check of 5549 against Groen Suppl., and a cipher stretch Groen printed only in clear (24 September 2026)
+
+(Heading corrected 24 Sept 2026 by LANE V3 V1: Groen prints this stretch's plaintext, pp.146*-148*, and not its numerals. The p.4 marginal note is the author's own PS; see AUDIT.md V1. Stretch class N1.)
 
 Worker J5I (Sonnet, cap $6), LANE R3. Per brief `.claude/briefs/runs/2026-09-24-lane-r3-jan5549-image.md`: pass
 the six leaf images (`images/05549_p1.jpg`..`p6.jpg`, 150dpi) against `groen/groen_5549.tsv` (Groen's Suppl.

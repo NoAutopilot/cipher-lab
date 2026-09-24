@@ -1431,6 +1431,14 @@
    "grade": "negative with matched controls: numeral half 0/31 key hits vs shuffled-key control mean 19.1%; letter-symbol half 5.65 bits/char vs shuffle median 6.19 (6.8% of shuffles as good) and positive control 3.07",
    "line": "Both halves of George Lasry's published Sabran (1631) key (Cryptiana GL.htm, cited) tested against the Gallica/DECODE images with controls; the letter is not in that key. Untested: the Farnese f.40 key, the fr.4135-4138 keys, a fresh solve.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/decode-2754-bnf-baluze156-1636"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "catch",
+   "title": "Jan van Nassau to William of Orange, Dillenburg, 21 Nov 1573 (WVO 5549): enciphered closing stretch read under Lodewijk's 1574 table; its plaintext is printed in clear in Groen van Prinsterer, Archives 1re série, Supplément (1847), no. 45",
+   "grade": "closing stretch (leaf pp.4-5, 226 tokens): C 163, I 13, M 6, U 44; agrees with Groen pp.146*-148*; novelty N1 (AUDIT.md V1). Body runs 1-61: other key, unread, printed by Groen as raw numbers",
+   "line": "WVO 5549: the enciphered closing stretch reads under Lodewijk's 1574 five-per-letter table and agrees with Groen's clear print, Suppl. no. 45, pp.146*-148* (N1). This is an independent re-decipherment. The body, runs 1-61, is in another key and is unread.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75"
   }
  ],
  "lanes": [
