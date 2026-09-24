@@ -56,6 +56,10 @@ search terms, not a hit on this item.
 
 ## Verdict
 
+> **Correction, 24 Sept 2026 (LANE W verifier, AUDIT.md):** this verdict was written from the catalogue title without the
+> image. The note carries its own clear Spanish text above every cipher line, so it was never unsolved and is not a
+> cryptanalysis candidate. Novelty class **N0** (plaintext on the item itself). See AUDIT.md.
+
 **open**, stage 2 verified unsolved (conditional: the RAE letters catalogue and the two Historia
 Contemporánea articles found by search are unread, and Google Books is outstanding). No source in this
 sweep identifies, quotes, or describes the content of this note. Single item, no key lead identified in the
@@ -167,7 +171,7 @@ blind transcription passes), within the $8 cap.
 
 ## Reading from the interlinear plaintext (24 September 2026, LANE R worker R8, aligner)
 
-**Result: every cipher line of 117/2-3 read, 667 cipher signs: H 665, M 2 (C 0, S 0, I 0, U 0).** The status is
+**Result: every cipher line of 117/2-3 read, 667 cipher signs: H 665, M 2 (C 0, S 0, I 0, U 0).** [Verifier note, 24 Sept 2026: under rule 4 the interlinear clear text is known plaintext, grade C, not H (key source); R4 and clair1067 use C. Regrade suggested to LANE R; see AUDIT.md s.5.] The status is
 `solved` because the note carries its own plaintext. H here means read from the document's own interlinear
 plaintext; the R4 section above called that grade C. This is a recovery from the document, not a cryptanalytic result.
 Novelty is not classified here (rule 10; LANE V verifier).
