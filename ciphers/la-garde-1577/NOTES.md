@@ -183,3 +183,27 @@ re-verify the `doubt=M` rows against the images directly (this worker's crops ar
 this container's /tmp scratch, so a fresh set of crops is needed); resolve whether the 6467 margin note reads
 "N.c.f." or "N.d.f." (both letters are visually possible at this resolution); confirm whether 6179 p2's "16 over 12"
 stack (line 27) is two groups or a correction.
+
+## L2: cryptanalysis (24 September 2026, LANE R2 worker L2, Opus, no network)
+
+**Result: negative for two designs, each with a matched control. Conditional on L1's single-pass transcription (rule 2), whose M rows were not settled on the image this pass.**
+
+Script: `solve_l2.py` (`python3 ciphers/la-garde-1577/solve_l2.py --corpus <fr16 Catherine de Médicis letters, both vols, gunzipped> --control-plain <Marguerite de Valois, Lettres inédites, lines 1006-1030 of lettresindites00marg_djvu.txt: the 1580 letter to the Queen Mother>`; about 20 s). Training corpus and control prose are disjoint. Signs are L1's numbers with `^`/`~`/`[mark]` stripped (`07` kept distinct). Target 6179: 185 tokens, 24 distinct signs. Groen's clear text (DBNL, LANE V2's host) is not on disk, so the control prose is contemporary French letter prose (1580) and not this letter's own clear text; ROOM line posted asking LANE V2 for it.
+
+| Test | Control (same N=185, same sign count) | Target 6179 |
+|---|---|---|
+| A. Homophonic / simple substitution, tools/homophonic_anneal.py, trigram, 8 restarts x 30k | clean 73.5% of letters read (score/token -2.17); with 8% of tokens randomised to mimic misreadings, 38.9% (-2.29) | no reading: restarts disagree, best -2.52/token, worse than the noisy control, output not French |
+| B. Periodic Vigenère/Beaufort, periods 1-14, alphabets a24 (a-z less j,v,w, plus &), reversed, a23; number n = n-th letter | enciphered with a random period-5 key: 100% read | no reading: best -3.64/token (a23, period 14), gibberish |
+| C. Crib, 6467 run 1 (27 signs) vs its margin note "Justifier le faict du grand" (with and without "iustiffier") | n/a (exact search) | no consistent many-to-one sign-to-letter map even with up to 6 nulls |
+
+Observations:
+- Index of coincidence of 6179 is 0.043 (flat, 1/24 = 0.042), no repeated trigram in 185 tokens, periodic IC shows no period 1-26. A homophonic control of this size is also flat (0.042), so IC does not decide between designs by itself.
+- The 6467 margin note sits beside run 1 and completes the clear syntax ("on pourra [run 1] Ce seroit un grand poinct"), so it may be a decipherment of the opening words, but it is not a monoalphabetic one: the first ten signs 7 8 2 11 10 19 14 12 9 3 would make "iustiffier" with two homophones each for i (10, 12) and f (19, 14), and then sign 8 must be both u and the i of "faict". Either the note is a gloss rather than a decipherment, or the system is polyalphabetic / uses the overlines as part of the sign. Test B found no periodic key that makes the crib consistent under the fixed alphabets tried.
+- **Transcription gap found on the image:** 6467 p2 carries overlines on many more numerals than L1 recorded (checked on a crop of run 2: 8̄, 5̄, 7̄, 1̄0, 3̄ and 2̄, 1̄7 on the run 1 continuation line; L1 marked only some). If the overline distinguishes signs (e.g. 4 vs 4̄ as different letters), the sign count rises well above 24 and test A must be rerun with the overline as part of the sign. The same should be checked on 6179 pp.2-3.
+- What the overline and the loop mark do: not established.
+
+Not done (cost): step 1 of the brief, settling L1's M rows (25 rows in 6179, 1 in 6467) on the image. The noisy control shows misreadings at that rate would roughly halve what a monoalphabetic solver reads, so they do not by themselves explain a target that reads nothing, but a settled transcription with the overlines recorded is the prerequisite for any further attempt.
+
+Suggestions (one line each): (1) a Sonnet transcription pass recording every overline and loop mark on 6179 pp.2-3 and 6467 p2, then rerun `solve_l2.py` with overlined numerals as distinct signs; (2) obtain Groen VI 249-251 clear text for crib context around each gap (LANE V2); (3) check the 1577 Orange-circle cipher literature (Marnix's own systems, 6467's printed editions GSME/LMSAC per R9) for a numeral table of this design.
+
+Search log (print): Groen VI 249-251 (Lettre DCCLXXXIX) is recorded above by the check-solved sweep as omitting the cipher passages ("Les lacunes sont occasionnées par des passages chiffrés"); not re-read by L2 (no network). Novelty not classified.
