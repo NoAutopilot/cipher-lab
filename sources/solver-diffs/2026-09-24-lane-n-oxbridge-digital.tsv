@@ -1,0 +1,12 @@
+host	query	raw_count	kept	exclusion_reason
+cudl.lib.cam.ac.uk	cipher	58	0	all 58 sampled: alchemical/medical recipe miscellanies (Trinity College O.1.65, O.2.5, O.2.13, R.14.30, R.14.32, R.14.44), Cairo Genizah Hebrew Bible/Targum fragments (MS-TS-*), Newton's dispute-over-fluxions papers (MS-ADD-03968), Darwin correspondence indexes (MS-DAR-*), Rawley's miscellany (Lambeth 2086), Album Amicorum (MS-LC-00002-00113), Equatorie of the Planetis (Peterhouse 75.1) -- OCR/metadata hits on the word "cipher" (numeral/recipe-code/foliation sense), no diplomatic or political correspondence
+cudl.lib.cam.ac.uk	cypher	39	0	same pattern: alchemical recipes, Persian/Muhammadan MS catalogues (PR-A-00233-*), astronomy papers (MS-RGO-00014-00052), Trinity Wallis-Collins correspondence catalogue entry (MS-ADD-03977/71) inspected, no cipher text present -- foliation/incidental hit
+cudl.lib.cam.ac.uk	deciphered	12	0	Darwin correspondence catalogue notes, Newton fluxions papers, Needham diary, gospel book, Vipakasutravrtti -- none is a ciphered letter
+cudl.lib.cam.ac.uk	Cholmondeley	2	0	Cholmondeley (Houghton)/Walpole papers not found in CUDL's own index at all -- collection confirmed not digitised on this host; the 2 hits (Darwin letters index, an alchemical-works collection) are unrelated OCR matches on the word "Cholmondeley" elsewhere
+cudl.lib.cam.ac.uk	"Walpole cipher"	0	0	no hits
+cudl.lib.cam.ac.uk	"Sandwich cipher"	0	0	no hits
+digital.bodleian.ox.ac.uk	cipher	4	0	Shakespeare First Folio (Arch. G c.7, "cipher"=zero/nought in the play text), MS. Huntington 202 (11th-c. Arabic medical treatise, Fihrist catalogue noise), MS. Abinger e.32 (Godwin-Shelley papers, not inspected further, pattern matches known noise), MS. Hatton 113 (Old English homilies)
+digital.bodleian.ox.ac.uk	cypher	1	0	Arch. G c.7 (Shakespeare First Folio) only, same as above
+digital.bodleian.ox.ac.uk	deciphered	5	0	Dep. Hughenden 24/2 (Disraeli, 1856 -- "deciphering her handwriting", not a cipher), 2 Christ Church music MSS (Mus. 490/492, notation not cryptography), Douce Portfolio 142(92), Arch. G c.7 again
+digital.bodleian.ox.ac.uk	"in cipher" (exact phrase)	0	0	no hits
+digital.bodleian.ox.ac.uk	zzznonsensequery12345 (control)	0	0	control query, confirms search form is responsive (not a fixed-listing bug)

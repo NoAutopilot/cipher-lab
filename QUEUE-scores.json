@@ -8221,5 +8221,25 @@
    "archive.org": 15
   },
   "rows": []
+ },
+ "lane_n_oxbridge-digital": {
+  "date": "24 September 2026",
+  "_about": "LANE N scout of Cambridge Digital Library and Digital Bodleian, digitised only, 24 September 2026 (brief .claude/briefs/runs/2026-09-24-lane-n-scOX2.md, worker for session_01W4z8JhXJYHRjorPC1Qkpiy; rerun of the cut-off .claude/briefs/runs/2026-09-24-lane-n-scOX.md worker, which pushed nothing). cudl.lib.cam.ac.uk control: five query terms on the same form returned five distinct, internally consistent result counts and object sets, ruling out a fixed-listing bug of the Huntington CONTENTdm kind -- passed (substitute check; no named-item control available, neither host is attributed to any known cipher item in QUEUE.md/CATALOG.md/Tomokiyo/either solver repo). digital.bodleian.ox.ac.uk control: nonsense query 0 hits vs real query cipher 4 hits on the identical form -- passed (substitute check). Zero candidates kept of 121 raw hits across 10 queries: every sampled hit is alchemical/medical-recipe miscellanies, Cairo Genizah Hebrew fragments, Newton fluxions-dispute papers, or Darwin correspondence indexes (CUDL), or Shakespeare First Folio (cipher=zero/nought), an 11th-c. Arabic medical treatise, Disraeli Hughenden-papers handwriting-decipherment correspondence, and music manuscripts (Digital Bodleian) -- cipher/cypher/deciphered read in a numeral, recipe-code, palaeographic or musical-notation sense, never cryptography. Cholmondeley/Walpole papers (this brief's own example) are not in CUDL's index at all -- confirmed not digitised there. Independently corroborated: Bourdeau's hyde/NOTES.md records Digital Bodleian has no Clarendon State Papers volumes digitised (searched 'Clarendon cipher'); Aymeloglu's vande-perre-1653/further-review/manuscript-search-aside.md found only 16 digitised Rawl. A. items on Digital Bodleian, none matching their Thurloe-adjacent target. An honest negative per rule 3, not a search failure.",
+  "raw": {
+   "cudl.lib.cam.ac.uk": 111,
+   "digital.bodleian.ox.ac.uk": 10
+  },
+  "kept": 0,
+  "digitised_copy_free": 0,
+  "query_form_status": {
+   "cudl.lib.cam.ac.uk": "passed (substitute check: 5 distinct query terms, 5 distinct result counts/sets)",
+   "digital.bodleian.ox.ac.uk": "passed (substitute check: nonsense query 0 vs real query 4)"
+  },
+  "requests_per_host": {
+   "cudl.lib.cam.ac.uk": 12,
+   "digital.bodleian.ox.ac.uk": 10,
+   "github.com": 2
+  },
+  "rows": []
  }
 }

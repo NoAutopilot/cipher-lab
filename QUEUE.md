@@ -2718,6 +2718,8 @@ or notarial footnote appendices, detailed in NOTES.md, and are not listed as row
 |---|---|---|---|---|---|---|
 | HT1 | *Recueil des instructions données aux ambassadeurs et ministres de France ... Suède*, vol. 2 (1884) | `njp.32101076191640` (seq 24), `hvd.hl237b` (seq 26) -- two independent library scans agreeing | 24 / 26 (table of contents, near front matter) | Header `TABLE DES CHAPITRES`; body token `Chiffre` (capitalised) x2 -- consistent with a chapter/appendix titled "Chiffre" (cipher table) for the Sweden embassy, which this series includes in some volumes | "Chiffre" itself is the signal; not a decipherment-word coincidence in calendar prose (see NOTES.md's discussion of why that check is unreliable for calendar-style editions) | Not found by name in `dbourdeau/cyphersolver` or `aaymeloglu/unsolved-ciphers` (grepped for Suède/Sweden/Recueil des instructions this session). EF gives no word order, so the printed page number for the "Chiffre" chapter could not be read from the token counts -- next worker needs the table-of-contents page image (babel.hathitrust.org or a library copy; out of this brief's hosts) to find that page number, then check it |
 
+Requests and per-series false-positive breakdown: `sources/htrc/NOTES.md`.
+
 ## Polish digital libraries (LANE N scout of 24 September 2026)
 
 Brief: `.claude/briefs/runs/2026-09-24-lane-n-scPL.md`, continuing the Z-sweep's unfinished Polona attempt
@@ -2832,7 +2834,87 @@ fallback is untested for those two named institutions specifically (repcyfr.pl w
 central search actually surfaced, not either of the two named in the brief). (5) No copy-order or archive
 request was needed; nothing here reached "open" status requiring one.
 
-Requests and per-series false-positive breakdown: `sources/htrc/NOTES.md`.
+## Cambridge Digital Library and Digital Bodleian, digitised (LANE N scout of 24 September 2026)
+
+Rerun of `.claude/briefs/runs/2026-09-24-lane-n-scOX2.md` (the first Bodleian/Cambridge worker,
+`.claude/briefs/runs/2026-09-24-lane-n-scOX.md`, was cut off by the rate limit at 05:39 UTC before pushing
+anything -- see ROOM.md 05:23/05:39). This rerun is scoped to digitised material only: `cudl.lib.cam.ac.uk`
+(Cambridge Digital Library) and `digital.bodleian.ox.ac.uk` (Digital Bodleian), never `archives.bodleian.ox.ac.uk`
+or `archivesearch.lib.cam.ac.uk` (catalogue-only, copy-order, out of this brief's host list). Thurloe items and
+`ciphers/thurloe-printed` are excluded per brief.
+
+**Hosts reached.** Both egress-tested first: `digital.bodleian.ox.ac.uk` 200 direct; `cudl.lib.cam.ac.uk` 403
+to a plain curl with the project's descriptive User-Agent, 200 with a browser-style UA or through the browser
+tool (site blocks non-browser UAs on this endpoint specifically -- noted for future CUDL work, since the
+Access playbook's default is the descriptive UA). Both then reached routinely through `tools/browser_fetch.js`
+(server-rendered facet HTML but a client-side JS results list on both sites; plain curl gets the facet
+sidebar and a result *count* but never the result *items* -- confirmed by diffing curl vs rendered output
+before trusting either "0 results" line as real).
+
+**Queries run.** CUDL: `cipher` (58), `cypher` (39), `deciphered` (12), `Cholmondeley` (2, i.e. the Houghton/
+Walpole papers this brief names as a candidate are not in CUDL's own index at all), `"Walpole cipher"` (0),
+`"Sandwich cipher"` (0). Digital Bodleian: `cipher` (4), `cypher` (1), `deciphered` (5), the exact phrase
+`"in cipher"` (0). All CUDL result pages (up to 3 pages of 20) were fully paged through by clicking the
+site's own pagination control (`browser_fetch.js --click`), not just the first page, for the two largest
+queries (`cipher`, `cypher`); the smaller Bodleian/CUDL result sets were read whole.
+
+**Control.** No item from QUEUE.md, CATALOG.md, LANDSCAPE.md, Tomokiyo or either solver repository is
+attributed to `cudl.lib.cam.ac.uk` or `digital.bodleian.ox.ac.uk` by URL (grepped both fresh shallow clones
+for `cudl\.lib\.cam|digital\.bodleian|Cambridge Digital Library`; the two text hits found,
+`cyphersolver/hyde/NOTES.md` and `unsolved-ciphers/vande-perre-1653/further-review/manuscript-search-aside.md`,
+are both *negative* search notes, not attributions of a solved item to either host -- see Caveats), so no
+named-item control could be run for either host. **Substitute check, logged per the rule that a host without a
+named-item control gets a substitute, not a skip.** For CUDL: five different query terms on the same form
+returned five different, internally consistent result counts (58/39/12/2/0/0) and different result sets each
+time (verified by comparing the object lists), ruling out a fixed-listing bug of the kind CLAUDE.md documents
+for Huntington CONTENTdm -- **passed**. For Digital Bodleian: the query `cipher` returns 4 real, on-topic-
+looking manuscript records while a nonsense control query (`zzznonsensequery12345`) on the identical form
+returns 0 -- **passed**.
+
+**Raw/kept/copy-free.** CUDL: 111 raw hits across 6 queries (58+39+12+2+0+0), every sampled hit read (title
+and, for the ambiguous ones, the catalogue description) -- 0 kept. The pattern, consistent across all three
+queries with volume: alchemical and medical recipe miscellanies (where "cipher"/"cypher" names a recipe code
+or numeral notation, not cryptography), Cairo Genizah Hebrew Bible/Targum fragments (OCR noise), Newton's
+"Papers Relating to the dispute Respecting the Invention of Fluxions" (mathematical notation), Darwin
+correspondence catalogue indexes, and one Trinity College Wallis-Collins correspondence entry (inspected,
+no cipher text). Digital Bodleian: 10 raw hits across 4 queries -- 0 kept. Shakespeare's First Folio (Arch. G
+c.7, "cipher" = zero/nought, e.g. Henry V's "cyphers to this great account") answers three of the four
+queries by itself; the rest are an 11th-century Arabic medical treatise (Fihrist catalogue noise), Disraeli's
+Hughenden papers ("Corry ... had difficulty deciphering her handwriting" -- palaeography, not cryptography),
+two Christ Church music manuscripts (musical cipher/shorthand notation), and a Douce print portfolio item not
+further inspected (same noise family, not opened given the pattern already established). **Kept: 0. Copy-free
+candidates: 0.** No OX rows filed; the OX1-OX20 prefix reserved by the brief is unused.
+
+**Why zero.** This matches, independently, both the LANE N 24 Sept "Digitised candidates outside the BnF"
+scout's prior note on these same two hosts (English "cipher"/"cypher" hits are foliation/rhetorical-figure/
+OCR noise, the same pattern as Gallica's "chiffré") and a solver's own dead end: Aymeloglu's
+`vande-perre-1653/further-review/manuscript-search-aside.md` (19 Sept 2026) searched Digital Bodleian's
+Rawlinson collection directly for the Thurloe-adjacent Van de Perre cipher and found only 16 digitised
+Rawl. A. items, none matching; and Bourdeau's `hyde/NOTES.md` records that Digital Bodleian "has no Clarendon
+State Papers volumes digitised" at all when searched for "Clarendon cipher". Between these three independent
+findings, the political/diplomatic cipher holdings this brief is looking for (Clarendon SP, Carte, Tanner,
+Rawlinson on the Bodleian side; Cholmondeley/Walpole on the Cambridge side) appear to not be digitised on
+either public viewer, as distinct from being digitised-but-unfound.
+
+**Caveats.** (1) This is a negative result conditional on the query terms tried; neither site's search is
+known to be lemma-aware, so a search restricted to a specific *collection* facet (e.g. CUDL's "Newton Papers"
+or "Darwin Manuscripts" facets, already excluded here as off-topic; or Digital Bodleian's `/collections/
+clarendon-papers/` or `/collections/carte-papers/` if such facets exist) rather than the free-text `cipher`/
+`cypher`/`deciphered` terms might surface items whose catalogue description uses a different word (French
+`chiffre`, Italian `cifra`, or simply "in secret characters" -- none of these three was tried on either host
+this session; budget). (2) CUDL blocking the project's own descriptive User-Agent on this one endpoint while
+accepting a browser UA is worth flagging for any future non-browser-tool CUDL work. (3) No image was opened
+at full resolution on either host and no group was counted, per brief; "kept: 0" rests on catalogue titles and
+descriptions only, read from the rendered result list and, for the two most ambiguous Bodleian hits, the
+object record page. (4) Not check-solved, never promoted, no novelty wording.
+
+**Per-host report.** `cudl.lib.cam.ac.uk`: 3 curl (1 UA test, 1 UA confirm, 1 static GET) + 9
+`tools/browser_fetch.js` renders (6 queries, 3 of them paginated with `--click` for a second/third page) = 12
+requests, all ≥1.5s apart. `digital.bodleian.ox.ac.uk`: 2 curl (egress test, redirect confirm) + 8
+`tools/browser_fetch.js` renders (4 queries + 1 nonsense-query control + 3 object-record pages) = 10 requests,
+all ≥1.5s apart. `github.com`: 2 shallow clones (`dbourdeau/cyphersolver`, `aaymeloglu/unsolved-ciphers`),
+grep only, both deleted after. No WebSearch, no archive.org, no credentials, no subagents.
+
 ## DECODE non-decrypted records with images (LANE N diff of 24 September 2026)
 
 Ranking of the census-diff `none` rows (`sources/decode/records-non-decrypted-2026-09-24-diff.tsv`, held_by
