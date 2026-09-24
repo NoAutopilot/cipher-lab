@@ -91,3 +91,40 @@ hits total, 6179 plus two candidates, both fetched and rendered (at most three, 
 `images/manifest.json` and `images/inventory.tsv` (per-page content, cipher type, approx tokens, decipherment
 location) written. Host: resources.huygens.knaw.nl, 10 requests this pass (8 WVO record/search pages + 2 PDF
 fetches, >=2s apart). Folder kept at 24MB under the 30MB cap (PDFs deleted after rendering).
+
+## R15 progress (24 Sept 2026, stopped over cap by orchestrator)
+
+Brief: two blind passes of 6179 pp.2-3 and 6467's two cipher passages (passA.tsv/passB.tsv), reconcile, transcribe
+the 6467 marginal note, write an "R15: passes" NOTES section with counts/overlap. Stopped by the orchestrator at
+~$8 against a $4 cap before any of that landed.
+
+Done: claimed the target in ROOM.md; re-read the images by eye (06179_p2.png, 06179_p3.png, 06467_p2.png) and
+confirmed both cipher passages are on 6467 p2 (not p1/p3 as the earlier inventory guess left open): the first run
+("on pourra 7.8.2.11.10.19.14.12.9. 3.07.4.14.4.8.11.2.4.07.11.24.3.9. 2.17.5.11", ending "Ce seroit un grand
+poinct") has a two-word-plus-abbreviation marginal note beside it reading, as best transcribed at 3x crop,
+"Justiffier le faict du grand" over "grand" on a second line -- far shorter than the ~15-group cipher run beside
+it, so this reads as a short marginal gloss/label, not a word-for-word decipherment (category (c) in the brief's
+terms; a full solution would need to run to something like fifteen words). The second run ("que 10.8.2.10.5.7
+9.07.4.10.8.9.07*.4.7.1.3.12") has a short abbreviation-like note beside it, tentatively "N.s.c.f." or similar
+(low confidence at this resolution) -- also far shorter than its ~12-group run, same "gloss, not decipherment"
+read. Neither note was logged to marginal_6467.tsv (not written) since the brief called for both blind passes
+first, and those had not returned before the cap hit.
+
+Launched two independent Sonnet subagents (blind pass A, blind pass B) on 06179_p2/p3 + 06467_p2, with the
+line/position/token/confidence TSV format and `w:`-prefixed clear-word context tokens (chosen over the brief's
+literal `=word` so the files reconcile with tools/reconcile_passes.py's existing `w:`/`[PLAIN:...]` convention
+unmodified -- same intent, existing syntax). Both were still running when the cap notice arrived; per the
+orchestrator's instruction this worker did not wait for them and did not read any more images. Their output was
+never captured to disk (they were told to return the TSV as reply text, not write files), so nothing from them
+is recoverable by a later worker except by re-running the same two prompts.
+
+Not done: passA.tsv, passB.tsv, recon/, marginal_6467.tsv, the "R15: passes" counts/overlap section, decode --
+none of it exists on disk. No host requests were made (all reading was from the already-fetched images).
+
+Left for whoever picks this up: re-launch the two blind-pass subagents (or do the passes directly) on the three
+images above; the margin-note reading in this section is a starting point but should be re-checked independently
+rather than trusted, since it was read by the same eyes that then briefed the subagents. Cost overrun cause, for
+the retrospective: reading three full manuscript-page images at native resolution by eye (twice, once directly
+and once implicitly through two subagent dispatches with embedded task context) is expensive on Sonnet; a
+narrower crop-first workflow (tools/iiif_lines.py-style line crops passed to the subagents instead of full pages)
+would likely have kept this under cap.
