@@ -4560,3 +4560,30 @@ image-quality caveat), 22 copy-order. **Total: 32 rows (30 catalogue + 2 write-u
 
 Citations for all CS2- rows: D. Bourdeau, cyphersolver, https://dbourdeau.github.io/cyphersolver/, CC BY 4.0
 (catalogue.html for the catalogue rows, the named write-up page for CS2-17/-18/-19/-30/-31/-32).
+
+### Check-solved verdicts, CS2-01/-02/-04/-05 (LANE N3 csCS2a, 24 September 2026)
+
+Six-source blind check-solved run per `.claude/briefs/runs/2026-09-24-lane-n3-csCS2a.md`, folded in this
+dedicated repository clones of dbourdeau/cyphersolver (each target has its own working folder there, deeper
+than the catalogue.html summary above) plus Tomokiyo's cryptiana pages and local DECODE snapshot. Full search
+log per row in the target's own NOTES.md.
+
+- **CS2-01** -> `ciphers/fr3022-garbino-1528/` -- **open** (stage 2). Bourdeau's own `vasto1527/` folder: full
+  transcription made (~3,900 code groups), non-alphabetical numbering proven, annealer validated on a matched
+  control at only ~46% token accuracy -- "not solved... needs the base key or real cribs." No source claims a
+  solution.
+- **CS2-02** -> `ciphers/fr3151-seure-1558/` -- **open** (stage 2). Bourdeau's own `guiche1551/` folder: Seure
+  explicitly "not attempted... left as a multi-session job", distinct from the La Guiche/Noailles items in the
+  same recueil that were partly read.
+- **CS2-04** -> `ciphers/fr3984-sega-1593/` -- **blocked**, not open. Bourdeau's own `sega1593/` folder: key
+  known, ~1,100 aligned training glyphs from a deciphered sibling, but a CNN classifier peaks at 73-79% and the
+  polyphonic layer makes that unreadable -- "closed as not solvable with present tools" by his own session. Held
+  at `blocked` here (not promoted to `open`) because the papal nunciature series for the date (*Acta Nuntiaturae
+  Gallicae*, Sega legation 1592-94) could not be located online this pass -- rule 9. No nomination posted.
+- **CS2-05** -> `ciphers/fr3789-mariedemedicis-savary-1610/` -- **open** (stage 2). The Lasry 2021 key (BnF
+  fr.3642, via DECODE R2077) was directly tried against this letter in Bourdeau's `breves1610/` folder and does
+  not read it from the available partial key photo -- "closed as unreadable from available sources" by his
+  session, not found-solved. A better image of fr.3642 or Lasry's own R2077 pair would reopen it.
+
+Nomination lines posted to ROOM.md for CS2-01, -02, -05 (the three stage-2 `open` verdicts); none for CS2-04
+(`blocked`, per LANE N2 addition (e) and this row's own rule-9 gate).
