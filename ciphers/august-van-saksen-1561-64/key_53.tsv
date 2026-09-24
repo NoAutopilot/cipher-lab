@@ -1,0 +1,21 @@
+sign	value	grade	source	note
+0	g	S	solve_53	n=8; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+1	e	S	solve_53	n=48; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+2	d	S	solve_53	n=14; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+3	a	S	solve_53	n=13; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+4	c	S	solve_53	n=9; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+5	n	S	solve_53	n=28; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+7	u	S	solve_53	n=25; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json; w written 77 (uu), as XX in System A
+8	b	S	solve_53	n=4; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+F	m	S	solve_53	n=8; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+G1	s	S	solve_53	n=8; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json; G1 and G7 both s (homophones, or one sign the passes split)
+G2	o	S	solve_53	n=9; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+G3	h	S	solve_53	n=17; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+G4	p	S	solve_53	n=2; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+G6	k	S	solve_53	n=3; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json; annealer gave f, all 3 occurrences read k (khomen, konigreich, krieg): set by context
+G7	s	S	solve_53	n=9; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json; G1 and G7 both s (homophones, or one sign the passes split)
+SG	l	S	solve_53	n=9; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+V	r	S	solve_53	n=24; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+X	i	S	solve_53	n=23; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+Xk	t	S	solve_53	n=14; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json
+Z	z	S	solve_53	n=7; homophonic_anneal best of 6 restarts (4 converge), solve_53_target.json

@@ -1,0 +1,43 @@
+{
+ "mode": "target",
+ "N": 282,
+ "K": 20,
+ "score": -655.6054264149608,
+ "key": {
+  "0": "g",
+  "1": "e",
+  "2": "d",
+  "3": "a",
+  "4": "c",
+  "5": "n",
+  "7": "u",
+  "8": "b",
+  "F": "m",
+  "G1": "s",
+  "G2": "o",
+  "G3": "h",
+  "G4": "p",
+  "G6": "f",
+  "G7": "s",
+  "SG": "l",
+  "V": "r",
+  "X": "i",
+  "Xk": "t",
+  "Z": "z"
+ },
+ "decoded": "neiuuerzeittunghabichitcmalsnichtzuberzuschreibendandasdemprintzenzuhispanienseineshernuattersschuuesterehlichuermahletuuerdenundhieruberdiesselandezuuregierenfhomensollenunddaneingemeingeschretistesuuollederhertzoguonuandosmenseinfonigreichnauarramitderguteoderfriguuiederholenmrch",
+ "restart_scores": [
+  -655.6,
+  -655.6,
+  -655.6,
+  -655.6,
+  -781.0,
+  -795.2
+ ],
+ "restart_decodes": [
+  "neiuuerzeittunghabichitcmalsnichtzuberzuschreibendandasdemprintzenzuhispanienseineshernuattersschuuesterehlichuermahletu",
+  "neiuuerzeittunghabichitcmalsnichtzuberzuschreibendandasdemprintzenzuhispanienseineshernuattersschuuesterehlichuermahletu",
+  "neiuuerzeittunghabichitcmalsnichtzuberzuschreibendandasdemprintzenzuhispanienseineshernuattersschuuesterehlichuermahletu",
+  "neiuuerzeittunghabichitcmalsnichtzuberzuschreibendandasdemprintzenzuhispanienseineshernuattersschuuesterehlichuermahletu"
+ ]
+}

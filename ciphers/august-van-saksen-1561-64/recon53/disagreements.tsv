@@ -1,0 +1,29 @@
+line	col	A	B	flagged	crop
+53_L01	28	4	Z	AB	images/crops_s1/53_L01.png
+53_L02	11	DOT	-	A	images/crops_s1/53_L02.png
+53_L03	19	S	5		images/crops_s1/53_L03.png
+53_L04	18	G7	G1	AB	images/crops_s1/53_L04.png
+53_L05	3	SG	6	A	images/crops_s1/53_L05.png
+53_L05	13	SG	6	A	images/crops_s1/53_L05.png
+53_L05	26	5	S	B	images/crops_s1/53_L05.png
+53_L06	4	G7	G1	AB	images/crops_s1/53_L06.png
+53_L06	5	G7	G1	AB	images/crops_s1/53_L06.png
+53_L06	14	-	DOT	B	images/crops_s1/53_L06.png
+53_L06	26	E	G6	B	images/crops_s1/53_L06.png
+53_L08	4	SG	6	AB	images/crops_s1/53_L08.png
+53_L08	21	5	S	B	images/crops_s1/53_L08.png
+53_L08	25	5	S	B	images/crops_s1/53_L08.png
+53_L08	28	-	OQ	B	images/crops_s1/53_L08.png
+53_L08	30	F	-	A	images/crops_s1/53_L08.png
+53_L08	32	5	S	B	images/crops_s1/53_L08.png
+53_L09	1	G1	G7	B	images/crops_s1/53_L09.png
+53_L09	4	5	S	B	images/crops_s1/53_L09.png
+53_L09	7	5	S	B	images/crops_s1/53_L09.png
+53_L09	16	5	S	B	images/crops_s1/53_L09.png
+53_L09	20	1	V	B	images/crops_s1/53_L09.png
+53_L09	23	NEW1	RAD	AB	images/crops_s1/53_L09.png
+53_L09	25	X	-		images/crops_s1/53_L09.png
+53_L10	20	NEW1	G3	AB	images/crops_s1/53_L10.png
+53_L10	22	SG	6	AB	images/crops_s1/53_L10.png
+53_L10	24	5	S	B	images/crops_s1/53_L10.png
+53_L10	26	V	G7	B	images/crops_s1/53_L10.png
