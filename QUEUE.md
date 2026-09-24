@@ -5607,3 +5607,96 @@ one toc read, 9 searchText queries, all >=2 s apart, shared across both rows), `
 
 Per-host report (prior, held pass, csNA): `nationaalarchief.nl` 1, `service.archief.nl` 1, `resources.huygens.knaw.nl` 2, `archive.org`/
 `be-api.us.archive.org` 5, `github.com` 2 shallow clones (grep only), WebSearch 5, WebFetch 2. No DECODE login.
+
+## PARES / DigitArq cipher letters (LANE N4 scPARES, 24 Sept 2026)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n4-scPARES.md`. Reachability (step 1, `date -u` 20:05-20:14 UTC):
+`pares.mcu.es` -> HTTP 302 to `pares.cultura.gob.es/inicio.html` (same target, so the two are one host for this
+purpose); `pares.cultura.gob.es` itself fails TLS on every route tried -- curl (`--cacert
+/root/.ccr/ca-bundle.crt`, `bundleCoversEveryHost:true` per the proxy status check): "SSL certificate problem:
+unable to get local issuer certificate", verbose trace shows the *origin* server's own certificate chain is
+incomplete (TLS alert "unknown CA" after the real server's Certificate message, not a proxy-side failure); one
+`tools/browser_fetch.js` attempt plus the one permitted retry both returned `upstream request failed` (Chromium
+could not complete the connection either). **PARES is a tested dead host this pass** (server-side TLS chain
+fault, not an egress-policy block or a missing local trust step) -- logged, not retried further.
+`digitarq.arquivos.pt` -> HTTP 200, alive.
+
+**DigitArq is a Next.js SPA with an undocumented but working public JSON API**, reverse-engineered from its
+`_next/static/chunks/pages/_app-*.js` bundle (no auth needed for search/details/the public viewer):
+- `GET /api/docs/search?query=TERM` -- real full-text search (title, description, reference code), returns
+  `{results: [...top 10...], total: N}`. **Pagination is broken for this endpoint**: every parameter name tried
+  (`page`, `from`, `offset`, `start`, `skip`, `pageIndex`, `fromIndex`, `max`) is silently ignored, always
+  returns the same first 10 rows; POST to the same path is 405. A query with `total` over ~50 cannot be fully
+  read this way in one pass.
+- `POST /api/docs/advancedSearch` (`{"query":...,"archiveCode":...,"hasImages":...,"max":...,"fromIndex":...}`)
+  returns 200 but **its `query` key is not applied as a filter** -- confirmed by sending different query strings
+  and getting back the same unfiltered ~7.5M-record count and the same generic top-level fonds regardless of
+  text. The real parameter name for full-text in this endpoint was not found in the time budgeted; a future
+  worker with more budget should read the minified `search:`/`advancedSearch:` helper in `_app-*.js` properly
+  (or capture the real request with a browser network trace) rather than guessing param names.
+- `GET /api/docs/details/{id}` -- full catalogue note (`description`), `hasImages`, `filesCount`,
+  `relatedRepresentations` (gives the numeric representation id used by the viewer), `children` (itself a
+  paginated `{results,total}`, empty for the two candidates below -- these codices are not catalogued down to
+  individual letters).
+- Public viewer: `https://digitarq.arquivos.pt/fileViewer/{docId}` -- full IIIF-style pan/zoom viewer, one
+  thumbnail strip per page, works with no login when `hasPublishedRepresentations:true`; images are licensed
+  **CC BY-SA 4.0** (stated on the viewer page itself). `GET /rdigital/thumb?docId={docId}` is public (no 401)
+  but returns only a 141x128 px thumbnail of the *first* page, not full size and not page-selectable -- not a
+  substitute for the viewer. `/api/rdigital/info/{repId}` and `/api/rdigital/files/{repId}` (the admin endpoints
+  that would give a page list / direct image URLs) both 401 without login. No direct full-resolution image URL
+  or IIIF `info.json`/image-API endpoint was found in budget -- "image URL tested" below means the `fileViewer`
+  page URL, opened and read at full pan-zoom resolution, not a raw JPEG URL.
+
+**Search, step 2:** bare `cifra` is 1,603 hits (confirmed identical to Bourdeau's own count below) and far too
+broad to review (false positives, no era filter, only 10 readable per the broken-pagination endpoint). Narrower
+phrases, each fully returned (total <= 10 shown, or all of a total <=11/2 checked): `carta cifrada` (11),
+`cifrada` (39, first 10 read), `decifrada` (2, both read), `carta em cifra` (113, first 10 read), `cifrado`
+(500, first 10 read, all AHU colonial-era Spanish-titled railway/arbitration papers or reversed to be checked
+by dropping the language filter, not pursued this pass). All `archiveCode: ANTT` hits reviewed this pass are
+20th-century (1897-1972) Estado Novo-era ministry/military telegraph material ("Telegrama cifrado" x5 from
+`PT/TT/MI-GM` 1930-31, `PT/TT/MI-DGAPC/002/0699/001544` "Charada decifrada" 1926, `PT/TT/SGPCM-PCOSMC/006/
+0001/000180` 1961) -- out of the brief's Estado/Guerra early-modern scope, not the kind of nomenclator-cipher
+target this project pursues, not carried forward.
+
+**Drop-check (step 4):** neither candidate below is in QUEUE.md, CATALOG.md or LANDSCAPE.md (grepped by
+shelfmark and by subject terms). Fresh shallow clones of `dbourdeau/cyphersolver` and `aaymeloglu/
+unsolved-ciphers` grepped (text files only, `Catarina de Bragan`, `Marqu[eê]s de Sande`, `LMP/000[12]`,
+`digitarq`, `arquivos.pt`): the only hit is Bourdeau's own `oldest/scan_2026-09-23/iberia.md`, which ran the
+identical `cifra`/`cifras` ANTT digitarq sweep (1,603 / 267 hits, same totals) -- but that scan's stated scope
+is **pre-1449 Iberian ciphertext** and it explicitly stops at "nothing before 1532" (earliest items CC/1/49/20
+1532 etc.); it never evaluates or excludes 1650s-60s material, so it does not cover the two rows below. No
+Luzerne-rule decipherment-on-the-same-unit found for either.
+
+Two candidates, both ANTT, both composite bound volumes ("códices factícios") whose own archival catalogue
+note names "cartas cifradas" (ciphered letters) explicitly among the bound contents -- neither has been paged
+through leaf by leaf to isolate the specific cipher folio(s) inside the 592/864-image volume, so **these are
+volume-sweep leads, not leaf-confirmed candidates** (the method LESSONS.md section 2 credits for real finds:
+Bourdeau's Ségur 440-canvas sweep, fr.16127's 20 Mondoucet letters). A follow-on worker with viewer-browsing
+budget should page the two volumes (start at the representation ids below) looking for the dense
+digit/symbol-group leaf(ves) the catalogue note promises.
+
+| Row | Archive / signatura | Date | Description (archive's own note, cipher content bolded) | Image URL tested | Copy-free | Kind |
+|---|---|---|---|---|---|---|
+| PP-01 | ANTT `PT/TT/LMP/0001` (Livraria/Miscelânea, "Documentos relativos ao casamento da infanta D. Catarina de Bragança...") | 1657-1667 | Composite codex, 592 images, langs por/ita/lat/eng/fre: "cartas assinadas pelo rei/rainha e ministros, cópias... **cartas cifradas** e cópias de cartas" to/from Francisco de Melo, conde da Ponte e marquês de Sande (ambassador extraordinary in England for the Catarina de Bragança-Charles II marriage), also letters from the King of Tetouan/governor of Morocco, D. Diogo Lopes de Ulhoa (The Hague), conde de Clarendon, conde de Sandwich, cardinal Orsini, Duarte da Silva -- diplomatic archive around the 1661 Anglo-Portuguese treaty and marriage | `https://digitarq.arquivos.pt/fileViewer/7d037cd7783448dfb5fa761cf9301aa5` (repId 395688; p.1/592 tested, full native pan-zoom resolution, CC BY-SA 4.0) | copy-free | cryptanalysis (no published key found this pass) |
+| PP-02 | ANTT `PT/TT/LMP/0002` ("Cartas régias dirigidas ao conde de Vila Flor... e a D. Sancho Manuel, governador das armas da província da Beira") | 1660-1663 | Composite codex, 864 images, Portuguese: "cartas assinadas pelo Rei e pela Rainha, **cartas cifradas** e cópias de cartas" -- Conselho de Guerra correspondence on troop pay, the Real de Água levy, army financing, a prisoner's release from the Seville jail | `https://digitarq.arquivos.pt/fileViewer/8e069ec117cb4177a02c2f8f79fee294` (p.1/864 tested, full native pan-zoom resolution, CC BY-SA 4.0) | copy-free | cryptanalysis (no published key found this pass) |
+
+**Flag, not a row -- cross-reference for the orchestrator:** QUEUE.md row **N45** (BL Add MS 38038) is the
+Marquez de Sande's own English-side embassy archive for the *same* 1661-1666 Anglo-Portuguese marriage
+negotiation and cession of Bombay, named there as carrying a "Cyphers: Portuguese despatches In cypher:
+1662-1666" section. PP-01 (ANTT, the Portuguese side, same ambassador, same years) is almost certainly the
+counterpart correspondence to N45's English-held despatches -- worth working the two together: either archive's
+ciphered letters may turn out to be duplicates with a decipherment on one side and not the other (the Luzerne
+pattern, different archive this time), or a single key recovered from one may open both.
+
+No ciphers/ folder created, no nomination posted (scouts don't). Output TSV:
+`sources/solver-diffs/2026-09-24-pares-digitarq.tsv`.
+
+**Per-host report:** `pares.mcu.es`/`pares.cultura.gob.es` 2 curl + 2 browser_fetch (both dead, logged, not
+retried beyond the one permitted retry); `digitarq.arquivos.pt` ~30 requests (home page, 2 JS bundles, ~10
+search queries at various phrases, 2 `docs/details`, 1 `documentDetails` browser render, 1 `fileViewer` browser
+render, 1 `rdigital/thumb` probe, a handful of pagination-param probes) -- **spacing note:** this lane's own
+brief sets a stricter `>=3s` floor for this host than the common tail's `1.5s`; most of these requests ran at
+1.5-2s apart before this was re-checked against the brief text partway through the pass -- flagged in ROOM.md,
+no further digitarq requests made after noticing it. `github.com` 2 shallow clones (grep only, `dbourdeau/
+cyphersolver`, `aaymeloglu/unsolved-ciphers`). No WebSearch used (browser_fetch and curl covered reachability;
+the JSON API covered search). No DECODE login, no Gallica, no Google Books.
