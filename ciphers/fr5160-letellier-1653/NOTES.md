@@ -1049,10 +1049,23 @@ report, nothing decoded.
 Existing crops (`images/f9r_L01_s1.jpg`..`f9r_L15_s2.jpg`, `images/f9v_L01.jpg`..`f9v_L12.jpg`, 42 files, cut
 by the prior pass) were reused, no re-fetch needed. A single Sonnet subagent, blind to `passA_f9.tsv` and to
 any other file in the target (not given that path, instructed not to open it), transcribed all 27 manuscript
-lines (15 recto + 12 verso) into `passB_f9.tsv` (same `line`/`position`/`group`/`confidence` columns as
-`passA_f9.tsv`, overline as leading `_`). No reconciliation run this pass (out of scope per brief) — left for
-whoever next picks up this target, alongside the folio 1-2 letter's own unresolved f9-line-count divergence
-precedent.
+lines (15 recto + 12 verso) into `passB_f9.tsv` (231 tokens; same `line`/`position`/`group`/`confidence`
+columns as `passA_f9.tsv`, overline as leading `_`). The subagent flagged its own weak spots: f9r_L01's
+"Monsieur" read only from bleed-through off the next line; a compound cross/cancel mark over "121" at f9r_L09
+and f9r_L13 it could not decompose (recorded `#121`, low confidence); a cut-off double-dot at f9r_L14; an
+unidentified slashed-circle sign at f9v_L06; and the recurring two-minim-vs-"n" ambiguity already known from
+the folio 1-2 letter's passes.
+
+**Agreement** (`agreement_f9.py`, same method as `agreement.py`): of 27 lines, 23 have matching cipher-group
+counts between the two passes (4 do not: f9r_L13, f9v_L05, f9v_L06, f9v_L10). **Token-level agreement on the
+23 count-matched lines: 143/184 = 77.7%** — between the folio 1-2 letter's own first-pass figure (65.8%) and
+the folio 86 numeral-only letter's (91.5%), consistent with this being a symbol+numeral hybrid like folio 1-2
+rather than the plainer numeral-only folio 86-88 hand. The 7 clear-French line pairs read closely but not
+identically (1/7 verbatim-identical; the rest differ by a word choice or a cut-off, e.g. A "en sorte que vos
+paroles" vs B "ensorte toutes parolles" at f9v_L12, the letter's last legible clear phrase) — both readable as
+the same underlying sentence, not a contradiction. No reconciliation run this pass (out of scope per brief) —
+left for whoever next picks up this target, alongside the folio 1-2 letter's own unresolved f9-line-count
+divergence precedent (a different f9, canvas 9, not to be confused with this folio 9, canvas 24-25).
 
 ### (4) Status and next step
 
