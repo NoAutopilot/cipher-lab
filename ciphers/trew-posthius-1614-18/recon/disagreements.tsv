@@ -1,0 +1,32 @@
+line	col	A	B	flagged	crop
+1614_note1	1	C	-		
+1614_note1	2	a	V	B	
+1614_note1	23	:	-	A	
+1614_note2	3	-	m		
+1614_note3	19	g	9	AB	
+1614_c1	2	w	W	B	
+1614_c1	17	z	i	B	
+1614_c2	8	U	u	B	
+1614_c2	18	k	h	AB	
+1614_c3	19	-		B	
+1614_crib1	1	f	F	B	
+1614_crib1	24	z	3	AB	
+1614_crib2	20	-		B	
+1618_left_top	13	-	'	B	
+1618_right_top	11	b	h	AB	
+1618_right_top	13	'	-	A	
+1618_spec1	1		O	AB	
+1618_spec1	2		r	AB	
+1618_spec1	4	e	c	AB	
+1618_spec1	6	d	f	AB	
+1618_spec2	6	t	z	AB	
+1618_spec2	8	'	i	AB	
+1618_spec3	8	d	-		
+1618_spec3	10	-	n	B	
+1618_spec4	4	m	n	AB	
+1618_spec6	4		g	AB	
+1618_spec6	9	g	q	AB	
+1618_spec7	1	K	A	AB	
+1618_spec7	2	e	c	AB	
+1618_spec7	7	g	y	AB	
+1618_spec7	8	c	e	AB	
