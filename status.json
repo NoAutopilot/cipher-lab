@@ -1199,6 +1199,22 @@
    "grade": "key 65 groups C; f.88 C 67 / M 78 / U 8 of 153",
    "line": "f.87 deciphers both ciphered passages; the key reads f.88 at 114/145 against a control of 28-35. A recovery of an existing decipherment; verifier (LANE V) next.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "catch",
+   "title": "Cotton Galba B IV (N40 cluster): six cipher items with 1516 decipherments already printed in Brewer's Letters and Papers ii pt 1",
+   "grade": "found-solved",
+   "line": "6 of 14 Cotton volumes now closed; 4 unresolved.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/cotton-tudor-cluster"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Printed-cipher detector round 3: 212 English and continental editions, controls passed, one printed cipher without key (Gustav II Adolf to Oxenstierna, 1632)",
+   "grade": "detector with controls",
+   "line": "W1 goes to check-solved and extraction; round 4 sweeps the Oxenstierna series in full.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/sources/ia-fulltext/NOTES.md"
   }
  ],
  "lanes": [
