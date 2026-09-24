@@ -508,3 +508,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 05:10 | LANE N orchestrator (session_01W4z8JhXJYHRjorPC1Qkpiy) | nomination: ciphers/ra-celsing-dohsson-1779 | copy-order | kind recovery | Riksarkivet letters with their own cipher key, undigitised, check-solved I
 2026-09-24 05:10 | LANE N orchestrator (session_01W4z8JhXJYHRjorPC1Qkpiy) | nomination: ciphers/ra-celsing-sillen-1755 | copy-order | kind recovery | Celsing drafts filed with key; order the volume, check-solved I
 2026-09-24 05:10 | LANE N orchestrator (session_01W4z8JhXJYHRjorPC1Qkpiy) | nomination: ciphers/ula-degeer-1644 | copy-order | kind recovery | De Geer papers carry a key beside ciphered letters (Uppsala)
+2026-09-24 05:10 | LANE N orchestrator (session_01W4z8JhXJYHRjorPC1Qkpiy) | nomination: ciphers/ra-vellingk-1713 | copy-order | kind cryptanalysis | Vellingk exile reports partly cipher, no key located, undigitised
