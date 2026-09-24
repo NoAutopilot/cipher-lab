@@ -1423,6 +1423,107 @@ check-solved 24 Sept 2026 (LANE S batch G): E1 (`ciphers/rah-xiquena-1868/`) ope
 1008499, are outstanding). No edition of Isabel II's 1868 correspondence with the Conde de Xiquena found; the
 item's own catalogue record still carries no "Publicado por..." note. Not on DECODE (cached), not in Bourdeau's
 or Aymeloglu's repositories, no Cryptiana mention.
+## Dutch and Belgian archives (LANE N scout of 24 September 2026)
+
+Row NB of the lane brief (`.claude/briefs/runs/2026-09-24-lane-n-scNL.md`). Hosts: Nationaal Archief open data,
+Huygens resources (`resources.huygens.knaw.nl` and its editions), KB catalogue (SRU, not Delpher), Archives
+Portal Europe, Belgian State Archives search, KBR. Read first: CLAUDE.md rule 1, LESSONS.md §§1-2,
+`.claude/briefs/check-solved.md`, the "Dutch and Nordic archive candidates" section above (its rows are all
+Swedish — Riksarkivet/Uppsala landsarkiv; **it names no NL/Belgian item**, so nothing there needed excluding)
+and its Nationaal Archief/KB caveats (both re-confirmed stale this pass, see below). Excluded against fresh
+shallow clones of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` (grepped for Nassau/Oranje/Hessen/
+Saksen/Huisarchief/KHAG/the specific briefnrs below — no match beyond incidental name collisions in unrelated
+targets), `sources/cryptiana/`, CATALOG.md, LANDSCAPE.md and `ciphers/` (only `orange-nassau-1572` mentions
+"Oranje"/"Nassau" there, a different letter, already found-solved — not one of the rows below).
+
+**Hosts blocked or exhausted, one attempt logged, not pursued further.** `www.nationaalarchief.nl` still serves
+"Site in onderhoud" at HTTP 503 on every path (`/`, `/onderzoeken/archieven`), the same outage LANE S logged a
+few hours earlier the same day; one retry, stopped. `service.archief.nl/gaf/api/` 404 (wrong path, not
+resolved this pass); `data.nationaalarchief.nl` does not resolve through the proxy (CONNECT tunnel failed,
+000). `jsru.kb.nl` not re-queried: LANE S exhausted the one reachable collection (GGC, printed books) as noise
+this same day and no manuscripts-specific SRU collection has been found; repeating it would be duplicate work
+(rule against re-doing what the room already logged). `search.arch.be`, the host named in this lane's brief,
+was decommissioned 23 December 2024 (confirmed by web search and by curl: it now redirects to an "end of life
+notice" serving an unrelated login-only genealogy tool, DEMOGEN VISU) — its confirmed successor, run by the
+same institution, is `agatha.arch.be`, used instead below. `opac.kbr.be`/`www.kbr.be` were reachability-tested
+only (HTTP 200 both) — no query run, budget spent on the three hosts below instead.
+
+**Huygens resources — the productive route, via the Willem van Oranje correspondence database (WVO).** The
+1626-1651 Staten-Generaal resolutions have a working full-text search (`silva/sg/resoluties/index_html?text=`)
+but it only indexes the editors' modern-Dutch summaries, not manuscript detail: `cijfer` returns one hit ("het
+laatste cijfer van de datum", a false positive — the control that the query form works); `cijferbrief`,
+`gecijferd`, `cijferschrift`, `geheimschrift`, `ontcijfer` all return zero — a "no ontcijfering" verdict from
+this search is conditional on the summaries (rule 2), not a finding. The 1576-1625 resolutions, Bescheiden
+Oldenbarnevelt, Brieven van Johan de Witt, Heinsius and Willem III/Bentinck editions are served only as
+page-image "retroboeken" viewers with no full-text search endpoint found this pass — not searched (flagged for
+a future sweep). The productive database is `resources.huygens.knaw.nl/wvo` (Briefwisseling van Willem van
+Oranje, a proper record database with an advanced-search GET API, `wvo/app/brieven?opmerkingen=&opmerkingenBool=
+AND&geavanceerd=1`, and a free PDF scan of every letter). `opmerkingen=cijfer` returns 96 letters (raw dump:
+`sources/solver-diffs/2026-09-24-lane-n-wvo-cijfer-96.tsv`, every letter's date/correspondent/remarks/sources
+fetched and read). **Control:** the search surfaces true positives — 14 of the 96 carry their own editorial
+"oplossing"/"ontcijferd"/"ontcijfering" note or a Groen van Prinsterer print citation (e.g. nos. 74, 98, 153,
+175, 4613, 4615, 7205, 7206, 7208, 6238, 6178, 5033, 5575, 1069), confirming the field genuinely records cipher
+status rather than being noise; those 14 (and similar) are excluded below as already deciphered/printed. Six
+rows below have neither marker. Every row's image is a free PDF, no login (`resources.huygens.knaw.nl/media/
+wvo/images/...`), so material scores 3 (copy-free) throughout.
+
+Scored per `.claude/workflows/scout.js` (language_fit×3 + material×2 + key_lead×3 + size×2 + competition×2 +
+weight + unread×3, max 48), ranked best first:
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Leaf viewed | Image route | Total |
+|---|---|---|---|---|---|---|---|---|---|
+| NB1 | Lodewijk van Nassau (brother of Willem van Oranje) to Willem van Oranje, four letters "hoofdzakelijk in cijferschrift" (mainly in cipher) with no solution recorded — briefnrs 4610 (3 Jun 1573, "Pour Hollande"), 4611 (2 Jul 1573), 4612 (6 Mar 1574), 4616 (12 Apr 1574) — plus two sibling letters in the *same* shelfmark and correspondence run **with a contemporary solution present and imaged**: 4613 (25 Mar 1574) and 4615 (7 Apr 1574), both "Tevens aanwezig de oplossing daarvan, die ook is afgebeeld" | 1573-1574 | fr | recovery | Koninklijk Huisarchief Den Haag, A 11/XIV D/13a (WVO briefnrs 4610-4616) | All six identified only by secretary's hand and seal, not signature (Lodewijk did not sign); 4613/4615 carry a period decipherment depicted on the same leaf — exactly the "key beside the letter" pattern (LESSONS.md §2, "look for the sibling"). Three further letters *to* Lodewijk/Jan/Hendrik van Nassau from the same 1574 exchange (7205, 7206, 7208, held at the Algemeen Rijksarchief van België) also carry a contemporary solution, confirming this correspondence circle's cipher was broken at the time on both sides. | Yes (PDF) | Free PDF per letter, `resources.huygens.knaw.nl/media/wvo/images/04000-04999/0461{0,1,2,6}.pdf`, `.../0461{3,5}.pdf` for the two solved siblings | 45 |
+| NB2 | August van Saksen (Sachsen) ↔ Willem van Oranje/his secretaries, three letters or postscripts "in cijferschrift" with no solution recorded — briefnrs 53 (24 Oct 1561, postscript), 57 (18 Nov 1561, "bijvoegsel" enclosure) and 126 (16 Sep 1564, postscript) — in a correspondence run where four other letters from the same years (74, 98, 153, 175, all excluded above) **do** carry a contemporary solution or decipherment on the same or an adjoining folio | 1561-1564 | de | recovery | Sächsisches Hauptstaatsarchiv Dresden (Geheimer Rat, Locat 8510/5 and 9941/3); Koninklijk Huisarchief Den Haag holds duplicates/minutes of some | Same "sibling with contemporary decipherment" pattern as NB1, one correspondence circle earlier: the cipher system between Willem van Oranje and August van Saksen in the early 1560s appears to have been broken at the time for some letters and not transcribed for others in the same run. | Yes (PDF) | Free PDFs, `resources.huygens.knaw.nl/media/wvo/images/00000-00999/000{53,57,126}.pdf` | 42 |
+| NB3 | Willem van Hessen to Willem van Oranje: news of a birth and a succession dispute, "Een gedeelte van het origineel is in onopgelost cijferschrift" (explicitly unsolved); "De minuut geeft de complete tekst" (the draft gives the complete text) | 28 Jan 1567 | de | cryptanalysis (crib available) | Original: Koninklijk Huisarchief Den Haag, A 11/XIV B/15-43 (no image online this pass); draft: Hessisches Staatsarchiv Marburg, Bestand 3II (WVO briefnr 1127) | The draft is a plain-text crib for (part of) the same letter, if the draft and the enciphered passage cover the same content — worth checking directly rather than assuming, since a "minuut" can also just be an earlier compositional stage. The KHAG original (which is where the cipher sits) has no PDF listed in the WVO database this pass — a copy-order or further look-up target, not copy-free for the cipher passage itself, even though the draft is free. | Partial — draft only | Free PDF for the draft only, `resources.huygens.knaw.nl/media/wvo/images/01000-01999/01127.pdf` | 39 |
+| NB4 | La Garde, superintendent of Schoonhoven, to Willem van Oranje: report on troop strength near Namur, "Gedeeltelijk in onopgelost cijferschrift" (partly in unsolved cipher — the WVO database's own curators use "onopgelost", not just absence of a marker) | 28 Nov 1577 | fr | cryptanalysis | Koninklijk Huisarchief Den Haag, A 11/XIV C/G-1 (WVO briefnr 6179) | Printed by Groen van Prinsterer, *Archives... Maison d'Orange-Nassau* 1e série VI, 249-251, no. DCCLXXXIX, but flagged "(onv)" = onvolledig/incomplete in the WVO citation — the same "(onv.)" tag that marked the already-known orange-nassau-1572 letter's partial 1842 print; consistent with Groen's edition skipping the still-unbroken cipher portion. Not checked this pass whether Groen's own footnotes discuss the gap (next step). | Yes (PDF) | Free PDF, `resources.huygens.knaw.nl/media/wvo/images/06000-06999/06179.pdf` | 36 |
+| NB5 | Willem van Hessen to Willem van Oranje: enclosure "eigenhandig ondertekende in cijferschrift geschreven bijlage" (a hand-signed attachment written in cipher), cross-referenced by the database to briefnr 1107 | 18 Sep 1564 | de | cryptanalysis | Hessisches Staatsarchiv Marburg, Bestand 3II, Nassau-Niederlande, Korr. 1564-1565 (WVO briefnr 1109) | No solution recorded; not checked this pass against the cross-referenced 1107 for a decipherment there. | Yes (PDF) | Free PDF, `resources.huygens.knaw.nl/media/wvo/images/01000-01999/01109.pdf` | 33 |
+| NB6 | Jan van Nassau to Willem van Hessen: report on the accident that killed/probably killed Lodewijk van Nassau, Hendrik van Nassau and Christoph von Württemberg at Mookerheyde — "Twee regels in cijferschrift" (two lines in cipher) | 17 Apr 1574 | de | cryptanalysis (marginal) | Koninklijk Huisarchief Den Haag, A 11/XIV A/5-20 (WVO briefnr 5551) | Two lines is well below unicity distance without a key; listed for completeness (rule 10, "report what was found") rather than as a serious cryptanalysis target on its own — a candidate only if NB1's or NB2's key turns out to cover the same period/correspondents. | Yes (PDF) | Free PDF, `resources.huygens.knaw.nl/media/wvo/images/05000-05999/05551.pdf` | 32 |
+
+**Archives Portal Europe** (`archivesportaleurope.net`, now a JS app; the old static `?query=` URL 301-redirects
+to it, driven via `tools/browser_fetch.js --type`). Control: `cijfer` returns real NL-HaNA/NL-LwHCL fonds
+records (repositoryCode + recordId pairs), so the query form works — but 10,589 raw hits is far too broad for
+this budget (two sample records opened were 19th-20th century administrative noise, e.g. a 1920 "Geheimschrift"
+Defence-ministry fonds); not triaged past two sample queries. `gecijferde brieven` (0, not a literal-phrase
+index) and `geheimschrift` (10 sampled, all 19th-20th c. or unopened) did not narrow it usefully this pass.
+Since APE mirrors Nationaal Archief finding aids (`repositoryCode=NL-HaNA`), it is also a possible workaround
+for the NA site's own outage — worth a properly time-boxed pass with the `heading`/date-range filters (not the
+free-text box) next time.
+
+**Belgian State Archives, via AGATHA** (`agatha.arch.be/en/search/ead/`, JS app, driven the same way). Control:
+`cijfer` returns 35 real archival-inventory titles with genuine shelfmarks and date ranges, so the query form
+works. Page 1 of 10 is entirely 19th-20th century administrative fonds (commercial courts, provincial finance)
+— "cijfer" as ordinary Dutch for "figure/number", the same noise class KB and the 1626-1651 SG resolutions gave.
+Not triaged past page 1 (25 more rows unread) within this budget. Flagged for the next sweep: filter by Heading
+= A1-A4 ("Central administrations, Ancien régime": Spanish/Austrian Netherlands, Prince-Bishopric Liège,
+Stavelot-Malmedy, Bouillon) specifically, where a genuine cipher-correspondence hit is far more likely to sit
+than in the unfiltered 20th-century-heavy full-text index.
+
+Caveats: (1) NB1-NB6 all rest on the WVO database's own curatorial description (Opmerkingen field, written by
+J.G. Smit and collaborators), not on this worker's own reading of the image — the PDFs were located and their
+existence confirmed (HTTP 200, correct byte sizes shown by the database) but not opened and read; "leaf viewed"
+in the table means the PDF was confirmed reachable, not that this worker verified the cipher's extent or
+transcribed anything, per the brief ("never transcribe"). (2) None of NB1-NB6 has been check-solved; the WVO
+database's own field only rules out a solution reaching that specific field, not a decipherment published
+elsewhere (e.g. in Groen van Prinsterer's own footnotes for NB4, in Demandt's *Nassau-oranische Korrespondenzen*
+for the August-van-Saksen circle of NB2, or in Rachfahl's or Japikse's biographical literature on Willem van
+Oranje and his brothers, none checked this pass) — the next step for any of these is check-solved's six-source
+sweep plus a look at the cited "excerpt" editions (Demandt, DNOK) in the Bron table of each letter. (3) NB1 and
+NB2 are recovery candidates on the strength of a sibling-letter pattern, not a confirmed key: nobody this pass
+has actually tried aligning 4613/4615's imaged solution against 4610/4611/4612/4616, or the four solved
+August-van-Saksen letters against 53/57/126 — that alignment is the first real step, not a search-hit. (4) The
+"Dutch and Belgian" brief's own preference for VOC secret correspondence and Staten-Generaal/Gecommitteerde
+Raden material was not satisfied this pass: the only Staten-Generaal source with full-text search (1626-1651)
+returned nothing, VOC editions on the Huygens site were not searched (no obvious full-text route found in this
+budget — flagged for next time), and Archives Portal Europe's one VOC-era hit sampled (a National Archives fonds
+code in the 1.02.x range, "cijfer") was not opened before the budget ran out. Requests:
+resources.huygens.knaw.nl ~130 (1 root page, ~15 Besluiten-SG search/browse, ~14 WVO search-form/help pages, 96
+WVO letter-detail fetches, 4 WVO result-list pages), www.nationaalarchief.nl 2, data.nationaalarchief.nl 1 (000,
+proxy-blocked), service.archief.nl 1, jsru.kb.nl 0 (not re-queried), www.archivesportaleurope.net ~6 (1 curl +
+`tools/browser_fetch.js` x2 + a handful of record-detail curls), search.arch.be 1, agatha.arch.be ~4
+(`tools/browser_fetch.js` x2 + form-page fetches), opac.kbr.be 1, www.kbr.be 1, github.com 2 (shallow clones of
+both solver repos, grepped, deleted after). All ≥1.5s apart on curl hosts; the browser-tool hosts ran single
+requests at a time. No logins, no credentials, no subagents, no image opened/transcribed, no novelty wording.
+
 ## Printed ciphertext (detector round 3, LANE S, 24 September 2026)
 
 Detector-test worker, round 3 (`.claude/briefs/runs/2026-09-24-lane-s-det3.md`): same method as rounds 1-2
