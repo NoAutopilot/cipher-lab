@@ -745,6 +745,77 @@ clones), oesta.gv.at 1, archiviodistatofirenze.beniculturali.it 1 (CONNECT tunne
 1, nationaalarchief.nl 2 (503 both times, one retry), gallica.bnf.fr 1 (altcha challenge, stopped). No images
 fetched, no logins used, no subagents.
 
+## German and Austrian catalogue candidates (LANE S scout of 24 September 2026)
+
+LANE S brief row K: German-language union catalogues and digitised libraries, per CLAUDE.md rule 1 and
+LESSONS.md's "a catalogue a daily-active project also reads is not a lane" — DECODE (Vienna ÖStA above all)
+is worked daily by both solver projects, so this sweep targets material neither scrapes: the German union
+catalogue of letters and Nachlässe (Kalliope-Verbund) plus BSB/MDZ, ONB, the Deutsche Digitale Bibliothek and
+Archivportal-D. Hessen/Rommel and Starhemberg/Windischgrätz are already solver territory (excluded per brief,
+confirmed still true against fresh shallow clones of both solver repositories, `LANDSCAPE.md` and `CATALOG.md`).
+
+**Hosts reached.** Kalliope-Verbund (`kalliope-verbund.info/sru`, SRU 1.2/MODS, no key needed): the main target
+and the only productive host this sweep. Fifteen queries in German and Latin (`Chiffre` alone confirmed the same
+"chiffré"/"chiffré" noise LESSONS.md already names for Gallica — 224 hits, almost all a Swiss "Association Le
+chiffre de la Parole" literary correspondent, zero kept; `notis arcanis`, `litteris occultis`, `Chiffreschlüssel`,
+`Ziffernschrift`, `Kanzleichiffre`, `Chiffrenschlüssel Brief` all returned 0; `in Ziffern geschrieben` returned 30,
+all medieval/early-modern manuscripts where "Ziffern" means numerals/foliation, the same noise pattern as
+Gallica's "chiffré" and Bodleian's "cipher" = zero — see LESSONS.md and QUEUE.md's BnF/outside-BnF sections):
+`Geheimschrift` (113), `chiffriert` (17), `verschlüsselte Briefe` (43), `Chiffrierter Brief` (14, a targeted
+phrase query used to pull the Konstanz cluster's full title text), `Geheimzeichen` (4), `verschlüsselter Brief`
+(43, near-duplicate of the "verschlüsselte Briefe" set, run to catch singular/plural variants — no new hits).
+112 unique records surfaced across every query; 108 are noise (modern literary Nachlässe and postcards where
+a correspondent's or archive's name happens to contain "chiffr-", "Geheim-" or "Ziffer-" — Dürrenmatt's
+Swiss "chiffre de la Parole" society, Goethe's own 1815 poem titled "Geheimschrift", a 1984 book title, a
+1960s "secret sign: white handkerchief" note, and the medieval-manuscript "Ziffern"-as-numerals sense — full
+list with per-row exclusion reasons in `sources/solver-diffs/2026-09-24-lane-s-de-at.tsv`). Four unique letters
+in two clusters survive, all confirmed against fresh shallow clones of `dbourdeau/cyphersolver` (no shelfmark,
+holder or correspondent-name hit) and `aaymeloglu/unsolved-ciphers`' cached DECODE catalogue (no matching
+holder; the catalogue's own Busbecq/"Busbeck" entries, DECODE R1220/R1221, are a *different* item — see K1) and
+against QUEUE.md, CATALOG.md, LANDSCAPE.md and `ciphers/`. Every record page was read (MODS via SRU, then the
+underlying `swisscollections.ch` catalogue record for the ZB Zürich items, whose `500 |a` note field gives the
+cataloguer's own description of the cipher); no image was opened — none of the four is public online (see below).
+
+**Hosts not productive or not reachable.** BSB/MDZ: `opacplus.bsb-muenchen.de` and a guessed
+`api.digitale-sammlungen.de/search` endpoint both 404; the IIIF/OCR APIs are documented but no plain-text
+search API was found this budget (same unresolved finding as the 24 Sept BnF-outside sweep above — needs a
+correctly-guessed `opacplus` query URL or the browser tool against the JS search UI, not tried again here).
+ONB: `search.onb.ac.at` is a Primo Explore Angular shell (`<primo-explore>` root, no server-rendered results)
+to curl; a guessed `primaws/rest/pub/pnxs` REST path 404'd (wrong path, not retried). Deutsche Digitale
+Bibliothek: `api.deutsche-digitale-bibliothek.de/search` answers `403 NotAuthorizedException` unauthenticated —
+needs an API key this environment does not have (ASKS-worthy if the person wants this lane reopened; not
+requested here, per brief). Archivportal-D: `www.archivportal-d.de/search` serves an Anubis proof-of-work bot
+challenge (not a JS-only shell, a PoW gate), one attempt, stood down per the good-citizen rule. None of these
+four hosts contributed a row this sweep.
+
+| Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Total |
+|---|---|---|---|---|---|---|---|
+| K1 | Augerius Ghislen de Busbecke (Ogier Ghiselin de Busbecq, imperial diplomat) to Emperor Rudolf II | 6 June 1587 | la | cryptanalysis | ZB Zürich, Ms F 42.5 (swisscollections `ZBC73e7677281a24c689e4d1c1e2a9dd36d`) / Zentralbibliothek Zürich, Handschriftenabteilung | Catalogue note field (`500 |a`): "Verschlüsselter Brief eines Gesandten an den Kaiser" (an envoy's enciphered letter to the Emperor) — the cataloguer's own word, not a query-term coincidence. 10 pages. `506 |a gesuchspflichtig`: viewing requires an application, not open-shelf. Possible key lead, unconfirmed: `aaymeloglu/unsolved-ciphers`' cached DECODE catalogue carries two *different* Busbecq items, R1220/R1221 (Vienna ÖStA HHStA Staatskanzlei Interiora, "Chiffrenschlüssel", Kt.13 Fasc.20 ff.50-55, dated 1559, French plaintext, status "Key") — 28 years earlier, a different court archive and a different working language (French vs this letter's Latin), so not assumed to be the same system; worth a check once either item is in hand. | 36 |
+| K2 | Talleyrand (French Foreign Minister) to Sieyès (French envoy to Berlin) and the reverse, on Prussian neutrality, the Repnin mission and Rhine troop movements around the Congress of Rastatt | Jul-Dec 1798 (P 1839/5, /21, /28, /41 read; P 1828/4 is 1804, same shelfmark family, not read) | fr | cryptanalysis | Stadtarchiv Konstanz, "Korrespondenz Ignaz Heinrich von Wessenberg – N-Q" (fonds `DE-611-BF-42689`), items P 1839/5, /21, /28, /41 (+ P 1828/4 unread) | Titles are the cataloguer's own ("Ansetzungssachtitel von Bearbeiter/in"), not originals. P 1839/5 (17 Jul 1798, Berlin, Sieyès probably to Talleyrand): "im Nachtrag chiffrierte und nicht chiffrierte Tagesnachrichten" (enciphered and plain daily news in a postscript), 4pp. P 1839/21 (26 Oct 1798, Paris, Talleyrand to Sieyès): "Chiffrierter Brief" outright, asking about Berlin's reaction to French troop movements on the Rhine, 1p. P 1839/28, /41 (Dec 1798, Feb 1799): further items in the same run, titles suggest continuing plain-plus-cipher traffic, not reopened to the note-field level this sweep. Filed inside a Wessenberg correspondence fonds at a diocesan city archive — an odd home for Directory-era Foreign Ministry traffic, not explained by anything read this sweep; worth resolving before any campaign (possibly Wessenberg-family provenance, not Wessenberg as correspondent). No image online; no key or sibling decipherment found. | 33 |
+| K3 | Duke Ulrich of Württemberg to Ulrich Zwingli(?) [cataloguer's own "?"] | 11 Apr 1531 | de | cryptanalysis | ZB Zürich, Ms F 46.186 (swisscollections `ZBCb0983abd4cda4e25b2ec4c18a151b83a`), in "Briefe und Aufzeichnungen von Persönlichkeiten des Reformationszeitalters" | `500 |a`: "Der Brief ist in der Anrede sehr vage und stellenweise verschlüsselt" (the letter's salutation is very vague and it is enciphered in places) — a partial, in-line cipher inside an otherwise plaintext German letter, not a full ciphertext; likely well below unicity distance for the enciphered spans alone with no key lead. `gesuchspflichtig`. Reformation-era (Duke Ulrich's 1531-34 restoration campaign), addressee attribution uncertain. | 28 |
+| K4 | Duke Ulrich of Württemberg to Ulrich Zwingli(?) [cataloguer's own "?"], undated, possibly an enclosure to another letter | 16th c. (undated) | de | cryptanalysis | ZB Zürich, Ms F 46.202 (swisscollections `ZBC63cf86b536d443f3b00b57ccd32ad325`), same fonds as K3 | `500 |a`: "Der Brief ist unadressiert, in der Anrede sehr vage und stellenweise verschlüsselt. Möglicherweise handelt es sich um eine Beilage zu einem anderen Brief." Same partial-cipher-in-plaintext pattern as K3, lower confidence (undated, unaddressed, cataloguer's own "possibly an enclosure" hedge). `gesuchspflichtig`. | 27 |
+
+Caveats: (1) none of the four has been check-solved; this is a catalogue-metadata match (title plus the
+cataloguer's own `500 |a` note field, read for all four), not a verified reading of an actual enciphered
+text. (2) All four are `gesuchspflichtig` at ZB Zürich or held at a municipal archive with no digitisation
+found — copy-order/access-request targets, not the copy-free preference the brief asked for; this sweep's
+one copy-free lead (Kalliope itself never links to page images; it is a finding-aid aggregator, not a
+digitised-library search) did not materialise this budget. (3) K3 and K4 are partial in-line ciphers inside
+otherwise-plaintext letters, not full ciphertexts — closer to the SP 53/22-style "below unicity, no key lead"
+blocker LESSONS.md already names than to a fresh cryptanalysis campaign; flagged low-confidence rather than
+dropped, since the letters themselves (plaintext portions) have not been read for content that might justify
+a copy order anyway. (4) K2's Wessenberg-fonds provenance question is unresolved and should be checked before
+any request is drafted. (5) BSB, ONB, Deutsche Digitale Bibliothek and Archivportal-D are not exhausted, only
+blocked at the routes tried this budget (see "Hosts not productive or not reachable" above); a session with
+the browser tool or a DDB API key could reopen them.
+
+**Per-host report:** Kalliope-Verbund: 15 queries, ~112 raw unique records, 4 kept (K1-K4), 108 excluded
+(full list in `sources/solver-diffs/2026-09-24-lane-s-de-at.tsv`); 0 digitised/copy-free. BSB/MDZ: 2 requests
+(both 404, no search API found). ONB: 2 requests (Primo JS shell, then a guessed REST path 404). Deutsche
+Digitale Bibliothek: 1 request (403, needs an API key). Archivportal-D: 1 request (Anubis PoW challenge, one
+attempt, stood down). github.com: 2 shallow clones (both solver repositories, grepped by shelfmark/holder,
+deleted after). No logins, no credentials, no subagents. Never promoted, never solved.
+
 ## Kept, not scored this sweep
 
 163 further kept candidates were left unscored by the 40-candidate cap (by plaintext language: fr 57, es 34, unknown 19, it 17, de 14, la 10). They are listed with the harvesters' evidence under `unscored_kept` in `QUEUE-scores.json`, in the filter's order, so the next run scores them first if the top forty move. Those with a working folder already, all closed-negative or blocked in LANDSCAPE.md: [Anonymous letters to Mr Tempest (Paris) and Dr Barret (Rheims), c. Dec 1585, endorsed by Phelippes (TNA SP 53/16 nos. 78-79)](ciphers/sp53-16-78/); ['Cifer with Spanish Spye', short ciphertext c.1586 (TNA SP 53/22 f.52, and the verso of f.40)](ciphers/sp53-22-f52/); [Lodovico Birago to the Duke of Nevers, Saluzzo, 13 Nov 1571, paragraph in numerical cipher (BnF fr. 3251 f.119)](ciphers/birago-nevers-1571/); [Admiral d'Estaing to Gerard, French minister in Philadelphia, 30 April 1779, intercepted (Clements Library, Clinton Papers 64:14)](ciphers/destaing-gerard-1779/); [Berthier to Napoleon, Koenigsberg, 22 Dec 1812 (AN AF/IV/1643) and the encoded letter to Marshal Marmont, 1807 (Vilcoq 1969)](ciphers/berthier-napoleon-1812/).
