@@ -306,3 +306,24 @@ HTRC tokens were scanned for co-occurrence of the gist (nothing; the "chiffriert
 Semantic Scholar 429 a third time (do not block). 24 Google Books API gist queries: nothing. Unpublished witnesses
 remain: the Dresden minute of 57 with its 'Zettel' (could lower 57), the KHA Japikse copy of 53. Outreach held at gate 2
 (ASKS row 39). Follow-ups: Dresden inquiry f.268-269; Namèche 1884 wedding pages; von Weber, Archiv f. sächs. Gesch. 3.
+
+## csWV3: two further circle letters, not candidates (LANE N2, 24 September 2026)
+
+Print-status pass across all 73 un-nominated WVO cipher letters (`.claude/briefs/runs/2026-09-24-lane-n2-csWV3.md`;
+full table `sources/wvo/print-status-2026-09-24.tsv`). Two August van Saksen letters in `sources/wvo/cipher-letters-
+2026-09-24.tsv` were never in this folder's original seven-letter table (53/57/74/98/126/153/175) and are not
+existing solved siblings already used by S1/R21/A2/A3/D2 above:
+
+- **Briefnr 58** (31 Dec 1561, "to August van Saksen", Breda, KHAG;SAD, no edition code). WVO Opmerkingen
+  (fetched 24 Sept 2026, https://resources.huygens.knaw.nl/wvo/app/brief?nr=58): "Met een ontcijferd gedeelte in
+  geheimschrift" (with a deciphered portion in cipher) -- a decipherment is attached to/accompanies the document
+  itself, not via a printed edition. Not fetched or imaged this pass. **Flag for LANE R3**: a possible further
+  key source for this circle, alongside 74/98 (already used by R21's aligner) -- worth a capture pass if the
+  circle's key work continues.
+- **Briefnr 124** (16 Apr 1564, "to August van Saksen", Brussel, DNOK;GPA;HHSAWB;KHAG). WVO's own remark:
+  "solved elsewhere (Groen van Prinsterer, Archives (GPA))". Not individually page-checked this pass (budget);
+  classified Class A by pattern only, consistent with the rest of this same GPA-cited correspondence. Not a
+  candidate either way.
+
+Neither changes this folder's own N4 verdicts for 53/57/126 above. Requests this pass: resources.huygens.knaw.nl
+1 (briefnr 58 detail page, shared with the wider 9-page batch logged in `sources/wvo/NOTES.md`).

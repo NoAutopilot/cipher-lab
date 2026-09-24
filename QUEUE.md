@@ -2026,6 +2026,22 @@ beyond Groen (Muller 1888, Gerlo & De Smet 1990-96) print the full plaintext, an
 is itself a contemporary decipherment. Firm nominations this hour: WV1, WV2, WV3 (3 open, 3 copy-free); WV4
 struck. Full search logs, edition citations and images in each target's own NOTES.md/images/.
 
+**csWV3 update, 24 September 2026** (`.claude/briefs/runs/2026-09-24-lane-n2-csWV3.md`, print-status pass across
+all 73 un-nominated WVO letters, full table `sources/wvo/print-status-2026-09-24.tsv`): **WV1 narrows to 5549
+only** -- 5207, 5213 and 5221 are corrected from open to Class A (Groen V prints all three silently in complete
+plain French, per G3's groen-check pass, not previously cross-referenced into this row); 5200/5218/5222 were
+already found-solved above; 5549 (claimed by LANE R3, ROOM.md 12:04) is the sole remaining open candidate in
+this row. **WV2 unchanged as open** (4503/5811 already N0 above; 5194/5799/5810 confirmed printed in clear too,
+leaving no open letters in WV2's own six -- 5797's residual gaps handled separately by csWV2, no nomination).
+**No new WV rows added**: the remaining 57 of the 73 un-nominated briefnrs all resolve to an already-owned
+folder, a contemporary on-leaf decipherment (several newly identified: 58, 1069, 7630 [a reconstructed key
+plus full decipherment physically attached], 11250 [attached to 5801's own decipherment], 12630/12631
+[contemporary Spanish decipherments at Simancas]), or a Class A printed-elsewhere edition (confirmed by page or,
+for about 25 rows, inferred by pattern from the same correspondence and not yet individually opened -- see the
+TSV). Two rows (6178, 6238) carry an unlocated "opgelost" claim and are `blocked`, not nominated. Zero copy-free
+nominations posted this pass; the harvest's original candidate pool turns out to be almost entirely already
+solved once each letter's own Bron/Opmerkingen field is read past the "cijfer" keyword match.
+
 Ranked by ciphertext weight (mainly/whole > partly > lines, summed across each circle's new candidate
 letters), recovery clusters first (all four are recovery this pass). Not promoted; the orchestrator picks
 among these plus other live LANE N sections per its usual "at most a handful, mixing kinds" rule. Follow-up

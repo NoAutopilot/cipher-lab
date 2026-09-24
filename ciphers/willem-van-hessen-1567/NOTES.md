@@ -74,3 +74,23 @@ REQUEST.md for a copy-order ask to the Koninklijk Huisarchief Den Haag (A 11/XIV
 
 **Kind: cryptanalysis (crib available)**, pending confirmation that the draft and the enciphered original
 passage cover the same content once the original is imaged.
+
+## csWV3: two further circle letters, not candidates (LANE N2, 24 September 2026)
+
+Print-status pass across all 73 un-nominated WVO cipher letters (`.claude/briefs/runs/2026-09-24-lane-n2-csWV3.md`;
+full table `sources/wvo/print-status-2026-09-24.tsv`). Two more Willem van Hessen letters, not in this folder's
+existing table (which covers 1127 above):
+
+- **Briefnr 174** (9 Apr 1567, "to Willem van Hessen", Antwerpen, GPA;HHSAWB;HSAM;KHAG). WVO's own remark:
+  "solved on leaf" -- a contemporary decipherment accompanies the manuscript. Not fetched or imaged this pass.
+  Flag for LANE R3 as a possible key source for the circle's cipher design (same correspondent as 1127, the
+  cryptanalysis target above).
+- **Briefnr 1069** (23 Mar 1563, "from Willem van Hessen", Marburg, HSAM;KHAG, no edition code). WVO Opmerkingen
+  (fetched 24 Sept 2026, https://resources.huygens.knaw.nl/wvo/app/brief?nr=1069): "bij het origineel een
+  exemplaar in cijferschrift en met ontcijfering" (beside the original, a copy in cipher AND WITH a
+  decipherment). Not fetched or imaged this pass. Flag for LANE R3 as a second, earlier (1563 vs 1567) key
+  source in the same correspondent circle.
+
+Neither is a candidate; neither changes 1127's own cryptanalysis status above. Requests this pass:
+resources.huygens.knaw.nl 1 (briefnr 1069 detail page, shared with the wider 9-page batch logged in
+`sources/wvo/NOTES.md`); 174 read from `sources/wvo/cipher-letters-2026-09-24.tsv` only, no fresh fetch.

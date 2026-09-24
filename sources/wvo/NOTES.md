@@ -179,3 +179,46 @@ refetches once the URL pattern -- `/tekst/<textid>/<textid>_<page>.php`, directo
 the WVO-supplied 5549 dbnl link), all >=2s apart, descriptive User-Agent. No PDFs fetched, no images opened
 (text-only per this job's scope). No novelty classification made -- this is a print-location check, not a
 verifier pass.
+
+## Print status, all 73 un-nominated letters (csWV3, LANE N2, 24 September 2026)
+
+Worker for `.claude/briefs/runs/2026-09-24-lane-n2-csWV3.md`. Full per-letter table:
+`print-status-2026-09-24.tsv` (briefnr, class A/B/C, edition page, gloss-on-leaf y/n, verdict).
+
+**Result: zero new nominations.** Every one of the 73 rows resolves to one of: already owned by a folder (19
+rows, skipped per brief); already claimed by LANE R3 in ROOM.md (5549); a genuine but small residual already
+handled by csWV2 with no nomination warranted (5797, 7 gaps only); a contemporary on-leaf decipherment (a "key
+source", not a target -- 174, 424, 1069, 4496, 4614, 5575, 5808, 6131, 6136, 7205, 7206, 7208, 7466, plus three
+newly identified this pass: 58, 1069 [see below], 7630 [carries an attached *reconstructed key* and full
+decipherment], 11250 [attached to the decipherment of 5801], 12630/12631 [contemporary Spanish decipherments at
+Simancas]); or Class A, an edition prints it in clear, either confirmed by page (5194, 5207, 5213, 5221, 5799,
+5810 via G3's groen-check; 4503, 5811 via Verifier V7; 5200, 5218, 5222 via LANE R2's bundled-print find; 8246,
+5109 via Japikse "de editie met oplossing") or inferred by pattern from the same correspondence/edition without
+opening the specific page (~25 rows, all "to Jan/Lodewijk van Nassau" GPA-cited letters plus a handful of
+standalone-correspondent GPA/GCGT rows -- see the TSV's "verdict" column for which). Two rows (6178, 6238) carry
+WVO's own "hetgeen is opgelost" (which has been solved) with no edition or on-leaf marker at all -- classified
+`blocked`, not nominated, per COMMON RULES item 9 (never open without a locatable solution or a confirmed-absent
+one). 10260 stays `blocked` (four of its five named editions still unchecked).
+
+**Corrections applied to existing folders:** jan-van-nassau-1572-75/NOTES.md's "5207, 5213, 5221... open" line
+(dating from before G3's groen-check pass was cross-referenced into that folder) corrected to Class A/not open,
+citing G3's own page reads. **New key-source finding, flag for LANE R3:** briefnr 11250's own WVO record states
+it is "gehecht aan de ontcijfering van nr. 5801" (attached to the decipherment of no. 5801) -- 5801 (a "to
+Lodewijk" GPA letter, not previously flagged beyond the generic heuristic) therefore carries a genuine
+contemporary decipherment, not yet imaged. Full detail in `ciphers/lodewijk-van-nassau-1573-74/NOTES.md`.
+
+**Unfinished this pass (write-up only, not fetched/imaged):** the ~25 "A (inferred)" rows classified by pattern
+rather than by an opened page -- 124, 4494, 4495, 4497, 4498, 4499, 4502, 5201, 5204, 5205, 5208, 5209, 5210,
+5214, 5219, 5224, 5227, 5228, 5798, 5800, 5802, 5803, 5804, 5805, 5812 -- would benefit from the same DBNL
+page-check G3 already ran on their six siblings, before any of them is treated as a settled N-class; none is a
+nomination candidate either way, so this is a confidence upgrade, not an urgent gap. 6178 and 6238's "opgelost,
+location unknown" status could be resolved with a fuller search (a named journal, a local Guelders/Aachen-area
+edition) if either correspondent's circle is ever revisited. 174, 4496, 4614, 6136, 7205, 7206, 7208, 7466 (all
+"solved on leaf") were not fetched/imaged this pass -- a genuine opportunity for LANE R3's cross-letter key
+alignment work, listed in the relevant circle folders above.
+
+**Requests this pass:** resources.huygens.knaw.nl 9 (detail-page fetches for 58, 1069, 5109, 6178, 6238, 7630,
+11250, 12630, 12631; >=2s apart, descriptive UA; spaced around LANE R3 worker J5S's concurrent use of the same
+host for 5575/5550/5557/5808, no overlap). www.dbnl.org 0 (G3's existing page reads reused, per "scripts read,
+fetch once" and to stay well under the 20-request cap). archive.org 0 (not needed -- WVO's own remarks and the
+reused G3/folder page-checks were sufficient). No subagents (none named in the brief). Well under the $8 cap.

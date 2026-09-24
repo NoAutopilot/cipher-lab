@@ -650,3 +650,35 @@ nomination line posted for 5797** -- the extent does not support a fresh solver 
 available in Groen's print; flagging this for the orchestrator and for LANE V2's own earlier "5797... likely
 printed too, unchecked" note (WV2 verdict table above) to resolve, rather than nominating a copy order. QUEUE.md
 WV2 row updated to reflect this.
+
+## csWV3: print-status sweep, new key-source finding on 5801 (LANE N2, 24 September 2026)
+
+Worker for `.claude/briefs/runs/2026-09-24-lane-n2-csWV3.md` (all 73 un-nominated WVO cipher letters, print
+status A/B/C). Full per-letter table: `sources/wvo/print-status-2026-09-24.tsv`.
+
+**New finding, flag for LANE R3.** Briefnr **5801** (28 May 1573, "to Lodewijk", Delft, GPA;KHAG, "mainly" in
+cipher, WVO's own remark heuristically read as "solved elsewhere (Groen van Prinsterer, Archives (GPA))" only)
+in fact carries a **contemporary decipherment physically attached to the file**, stronger evidence than a
+later-edition citation: briefnr **11250**'s own WVO record (fetched 24 Sept
+2026, https://resources.huygens.knaw.nl/wvo/app/brief?nr=11250) reads "De brief is een kleine strook papier,
+thans gehecht aan de ontcijfering van nr. 5801" (the letter [11250] is a small strip of paper, now attached to
+THE DECIPHERMENT of no. 5801). 11250 is a short cryptic note ("Mon frere" / addressed "A mes freres") that is
+not itself a solvable target -- it is a fragment now bound with 5801's plaintext. Neither 5801 nor 11250 was in
+this folder's WV1/WV2 tables before this pass. Not fetched or imaged this pass (out of this brief's scope); a
+future capture worker should pull 5801's PDF (`resources.huygens.knaw.nl/media/wvo/images/05000-05999/05801.pdf`)
+and 11250's (small, 0.07 Mb, `resources.huygens.knaw.nl/media/wvo/images/11000-11999/11250.pdf`) expecting to
+find the attached decipherment leaf.
+
+**Also newly identified as on-leaf (not previously in this folder's tables), no fresh fetch this pass:** 4496
+("to Lodewijk", "solved on leaf"), 4614 ("from Lodewijk", "solved on leaf"), 7205/7206/7208 ("to Lodewijk",
+Vlissingen 1574, ARAB;KHAG, all "solved on leaf" per WVO's own remark). These join 4613/4615 (already imaged,
+NB1 section above) as further contemporary-decipherment leads in this same correspondence circle -- a longer
+list for whichever worker next attempts the cross-letter key alignment this folder's "Next step" already calls
+for.
+
+**Remaining "to/from Lodewijk" GPA rows not individually page-checked this pass** (4494, 4495, 4497, 4498, 4499,
+4502, 5201, 5798, 5800, 5802, 5803, 5804, 5805, 5812): classified Class A by pattern only (same correspondence,
+same edition citation as the confirmed-in-clear 4503/5194/5799/5810/5811), not opened this pass -- budget did not
+allow it (dbnl cap 20 requests this session, spent on the G3-reused pages above; huygens.knaw.nl spent on
+edition-unresolved letters elsewhere in the 73-row set). Listed as the unfinished briefnrs in
+`sources/wvo/NOTES.md`. No nomination changes to WV1/WV2 beyond the 5801/11250 flag above.

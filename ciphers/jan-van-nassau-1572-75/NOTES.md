@@ -1,6 +1,6 @@
 open
 
-(Per letter, 24 Sept 2026: 5218, 5222 and 5200 found-solved, all printed in clear in Groen; 5200 is N1 per AUDIT.md V6. 5207, 5213, 5221 and 5549 open; 5213 and 5221 have Groen prints to compare first, see AUDIT.md.)
+(Per letter, 24 Sept 2026: 5218, 5222 and 5200 found-solved, all printed in clear in Groen; 5200 is N1 per AUDIT.md V6. 5549 claimed by LANE R3 (Groen Suppl. prints raw undeciphered numbers). 5207, 5213, 5221 CORRECTED 24 Sept 2026, LANE N2 csWV3, from "open" to printed-in-clear: see "csWV3: correction of 5207/5213/5221" section below -- these three are no longer open candidates.)
 
 (5549, 24 Sept 2026, J5I image check: Groen's print agrees with the leaf for runs 1-61 (590/593, 2 real
 disagreements, 1 unresolved) EXCEPT that a large stretch after Groen's last printed cipher group -- most of
@@ -568,3 +568,34 @@ no key applied, no decoding done.
 New image-only cipher found beyond Groen's print: ~226 numerals across p4-p5, not yet graded against any key.
 Requests this pass: resources.huygens.knaw.nl 1 (the WVO record page above; the six PDF-derived page images were
 already on disk from C1's capture, per the brief, not refetched). No subagents.
+
+## csWV3: correction of 5207/5213/5221 (LANE N2, 24 September 2026)
+
+This worker (print-status pass across all 73 un-nominated WVO cipher letters, brief
+`.claude/briefs/runs/2026-09-24-lane-n2-csWV3.md`) closes the gap the previous section left open ("5207 was not
+located in IV/V"), by re-using a page-check already sitting in the repo and not yet propagated here:
+`sources/wvo/groen-check-2026-09-24.tsv` (worker G3, LANE V2, 24 Sept 2026) opened the DBNL pages for all three
+and found:
+
+- **5207** = Groen V, 6-8, nr. CDXCV (https://www.dbnl.org/tekst/groe009arch05_01/groe009arch05_01_0006.php):
+  "whole letter printed in clear plain French; no editorial cipher/dechiffrement note on this letter itself
+  (WVO extent 'mainly' not visibly reflected)."
+- **5213** = Groen V, 95-99, nr. DXXIII (groen009arch05_01_0036.php): "whole letter printed in clear plain
+  French, footnote only 'Autographe', no cipher/dechiffrement note found."
+- **5221** = Groen V, 262-268, nr. DLXXIII (groen009arch05_01_0091.php): "whole letter printed in clear plain
+  French, no cipher marker; dated 'Escript a Dordrecht, ce penultiesme jour de juillet 1575'."
+
+This is the same "silent full decipherment" pattern already confirmed for 4503, 5194, 5799, 5810 and 5811 in
+this same correspondence, and the same pattern that made 5218/5222 found-solved above (a bundled print, not a
+silent one, but the same underlying fact: Groen already has the plaintext). **5207, 5213 and 5221 are no longer
+open candidates** -- Class A (edition prints in clear), not checked for novelty class (rule 10; that is a
+verifier's job, not re-run here). No page image was opened by this worker; the classification rests on G3's
+DBNL read plus the pattern established across the rest of this correspondence's Groen citations. Requests this
+pass: none against dbnl or archive.org for these three specifically (G3's read reused, per "scripts read, fetch
+once"). Full per-letter table, all 73 WVO un-nominated letters: `sources/wvo/print-status-2026-09-24.tsv`.
+
+**Remaining open in this folder: 5549 only** (claimed by LANE R3, ROOM.md 12:04, 24 Sept 2026 -- Groen Suppl.
+prints raw undeciphered cipher numbers, a genuine Class B target; see J5I's section directly above for the
+current state of that reading, including a further ~226-numeral cipher stretch on p4-p5 that Groen's own print
+omits entirely). 5797 (Lodewijk van Nassau circle, separate folder) stays open only for 7 localized gaps, not a
+fresh target, per csWV2.

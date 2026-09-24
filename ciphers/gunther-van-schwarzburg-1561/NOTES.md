@@ -238,3 +238,16 @@ the clear opening, no cipher passage or solution (NOTES "Source").
 
 > **Correction (Verifier V4, 24 Sept 2026, AUDIT.md): wrong.** Japikse pp.343-344 print the cipher passage deciphered, in spaced type, from "nemlich den heuradt" to "vertraulich mitzutheilem guttwillig". Spaced type is the edition's marking for the Prince's cipher insertions, solved by H. Koot (no.236, p.232 n.5). Only "Und wust ich E.L. ... wünschen" is the clear close. 8246 is N0. No other source searched this pass (no network).
 Requests this pass: 0 (all work from images on disk; crops rendered locally with headless Chromium).
+
+## csWV3: a second Japikse-solved letter in this circle (LANE N2, 24 September 2026)
+
+Print-status pass across all 73 un-nominated WVO cipher letters (`.claude/briefs/runs/2026-09-24-lane-n2-csWV3.md`;
+full table `sources/wvo/print-status-2026-09-24.tsv`). **Briefnr 5109** (24 Mar 1561, "to Günther van
+Schwarzburg", Brussel, JC;KHAG;SAR) is in the same correspondence and the same edition (Japikse) as 8246 above.
+WVO Opmerkingen (fetched 24 Sept 2026, https://resources.huygens.knaw.nl/wvo/app/brief?nr=5109): "Gedeeltelijk
+in cijferschrift, **de editie met oplossing**" (partly in cipher, THE EDITION WITH THE SOLUTION) -- Bron:
+Japikse, *Correspondentie Willem den Eerste*, **230-233, nr. 236**. This is an even more explicit statement than
+8246's own WVO remark, and directly consistent with V4's correction above (Japikse marks the Prince's cipher
+insertions in spaced type, per H. Koot's earlier identification). Not fetched or imaged this pass. Not a
+candidate. Confirms this whole two-letter Günther van Schwarzburg circle is fully print-solved by the same 1934
+edition; no further WVO rows for this correspondent appear in the 73-row set.

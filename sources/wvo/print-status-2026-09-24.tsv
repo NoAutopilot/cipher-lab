@@ -1,0 +1,91 @@
+briefnr	class	edition_page	gloss_on_leaf	verdict
+53	skip	n/a (already_nominated, august-van-saksen-1561-64)	n	folder-owned, not re-run
+57	skip	n/a (already_nominated, august-van-saksen-1561-64)	n	folder-owned, not re-run
+58	on-leaf	none (no edition code; KHAG/SAD archive holdings only)	y	Opmerkingen: "Met een ontcijferd gedeelte in geheimschrift" (with a deciphered portion in cipher) -- a decipherment is attached to the document itself. Key source for august-van-saksen-1561-64, not previously in that folder's table; not a candidate. WVO detail page fetched 24 Sept 2026.
+74	skip	n/a (already_nominated, august-van-saksen-1561-64)	n	folder-owned, not re-run
+98	skip	n/a (already_nominated, august-van-saksen-1561-64)	n	folder-owned, not re-run
+124	A (inferred)	GPA (Groen, tome/page not opened this pass)	n	WVO's own remark: "solved elsewhere (Groen van Prinsterer, Archives (GPA))"; same correspondent/date-range circle as 53/57/74/98/126 (august-van-saksen-1561-64), pattern-consistent with that folder's already-confirmed silent-clear-print rows; not individually page-checked this pass (budget). Not a candidate.
+126	skip	n/a (already_nominated, august-van-saksen-1561-64)	n	folder-owned, not re-run
+153	skip	n/a (already_nominated, august-van-saksen-1561-64)	n	folder-owned, not re-run
+174	on-leaf	none named	y	WVO: "solved on leaf" heuristic (afgebeeld/bijgevoegd-class marker). Willem van Hessen circle. Key source for willem-van-hessen-1567; not a candidate.
+175	skip	n/a (already_nominated, august-van-saksen-1561-64)	n	folder-owned, not re-run
+424	A + on-leaf	Gachard, GCGT (per TSV printed_edition_named)	y	WVO: "solved on leaf Gachard" -- both a named edition and an on-leaf decipherment. Not a candidate.
+1069	on-leaf	none (HSAM/KHAG archive holdings only)	y	Opmerkingen (fetched 24 Sept 2026): "bij het origineel een exemplaar in cijferschrift en met ontcijfering" (beside the original a copy in cipher and WITH a decipherment). Key source for willem-van-hessen-1567; not a candidate.
+1109	skip	n/a (already_nominated)	n	folder-owned, not re-run
+1127	skip	n/a (already_nominated, willem-van-hessen-1567)	n	folder-owned, not re-run
+4494	A (inferred)	GPA (Groen, page not opened this pass)	n	Same "to Lodewijk" GPA circle as 4503/5194/5799/5810/5811 (all confirmed silent-clear or N0 this batch); pattern-consistent, not individually checked. Not a candidate.
+4495	A (inferred)	GPA (not opened)	n	as 4494.
+4496	on-leaf	none named	y	WVO: "solved on leaf". To-Lodewijk circle. Key source for lodewijk-van-nassau-1573-74; not a candidate.
+4497	A (inferred)	GPA (not opened)	n	as 4494.
+4498	A (inferred)	GPA (Groen van Prinsterer, per TSV printed_edition_named)	n	as 4494.
+4499	A (inferred)	GPA (not opened)	n	as 4494.
+4502	A (inferred)	GPA (not opened)	n	as 4494.
+4503	A	Groen IV, Lettre CDLXXXIV	n	Verified N0 by Verifier V7 (lodewijk-van-nassau-1573-74/NOTES.md, WV2 section). Not a candidate.
+4610	skip	n/a (already_nominated)	n	folder-owned, not re-run
+4611	skip	n/a (already_nominated)	n	folder-owned, not re-run
+4612	skip	n/a (already_nominated)	n	folder-owned, not re-run
+4613	skip	n/a (already_nominated)	n	folder-owned, not re-run
+4614	on-leaf	none named	y	WVO: "solved on leaf". Key source for lodewijk-van-nassau-1573-74; not a candidate.
+4615	skip	n/a (already_nominated)	n	folder-owned, not re-run
+4616	skip	n/a (already_nominated)	n	folder-owned, not re-run
+5033	A	Groen van Prinsterer (per TSV printed_edition_named)	n	WVO: "solved elsewhere (Groen van Prinsterer)". Jan van Nassau circle. Not a candidate.
+5109	A	Japikse, Correspondentie Willem den Eerste, 230-233 nr. 236, "de editie met oplossing" (the edition WITH the solution)	n	Opmerkingen fetched 24 Sept 2026 explicitly states the cited edition prints the solution. Same edition (Japikse) already confirmed at gunther-van-schwarzburg-1561 (8246, corrected N0 by Verifier V4: spaced type marks the Prince's cipher insertions, solved by H. Koot). Günther van Schwarzburg circle; not a candidate. Key source for that folder (a second Japikse-solved letter in the same correspondence).
+5194	A	Groen III, 448-449 nr. CCCLXIX	n	G3 groen-check 2026-09-24 (sources/wvo/groen-check-2026-09-24.tsv): editorial note "d'ordinaire le dechiffrement y est joint" (the decipherment usually accompanies it). lodewijk-van-nassau-1573-74/NOTES.md WV2 section, "likely printed too, unchecked" -- this pass confirms it explicitly via G3's read. Not a candidate.
+5198	skip	n/a (already_nominated / = orange-nassau-1572 autograph)	n	folder-owned, not re-run
+5199	skip	n/a (already_nominated)	n	folder-owned, not re-run
+5200	A	Groen IV, 2-6 nr. CCCLXXXIX	n	found-solved per jan-van-nassau-1572-75/NOTES.md status line and Verifier V6 (N1, AUDIT.md). Not a candidate.
+5201	A (inferred)	GPA (not opened)	n	Same "to Lodewijk" GPA circle, pattern-consistent with confirmed siblings. Not a candidate.
+5204	A (inferred)	GPA (not opened)	n	Same "to Jan" GPA circle as 5200/5207/5213/5218/5221/5222 (all confirmed this batch). Not a candidate.
+5205	A (inferred)	GPA (not opened)	n	as 5204.
+5207	A (CORRECTED this pass)	Groen V, 6-8 nr. CDXCV	n	G3 groen-check: "whole letter printed in clear plain French; no editorial cipher/dechiffrement note" (dbnl groen009arch05_01_0006.php). jan-van-nassau-1572-75/NOTES.md's "Verdict: open (all seven)" section (line 92) still lists 5207 as open -- that verdict predates G3's read and needs correcting; see this worker's note appended to that file. Not a candidate.
+5208	A (inferred)	GPA (not opened)	n	as 5204.
+5209	A (inferred)	GPA (not opened)	n	as 5204.
+5210	A (inferred)	GPA (not opened)	n	as 5204.
+5213	A (CORRECTED this pass)	Groen V, 95-99 nr. DXXIII	n	G3 groen-check: "whole letter printed in clear plain French, footnote only 'Autographe', no cipher/dechiffrement note found" (groen009arch05_01_0036.php). Same correction as 5207. Not a candidate.
+5214	A (inferred)	GPA (not opened)	n	as 5204.
+5218	A	Groen V, 141-143, Lettre DXLII, bundled directly into the WVO PDF (pp.5-8 of the scan)	n	found-solved per jan-van-nassau-1572-75/NOTES.md C1 section (LANE R2). Not a candidate.
+5219	A (inferred)	GPA (not opened)	n	as 5204.
+5221	A (CORRECTED this pass)	Groen V, 262-268 nr. DLXXIII	n	G3 groen-check: "whole letter printed in clear plain French, no cipher marker" (groen009arch05_01_0091.php). Same correction as 5207/5213. Not a candidate.
+5222	A	Groen V, 280-283, Lettre DLXXVII, bundled directly into the WVO PDF (pp.8-12 of the scan)	n	found-solved per jan-van-nassau-1572-75/NOTES.md C1 section. Page 7 of that PDF also carries a separate contemporary worksheet of plaintext phrases, unverified against the cipher -- flagged there, not re-run here. Not a candidate.
+5224	A (inferred)	GPA (not opened)	n	as 5204.
+5227	A (inferred)	GPA (not opened)	n	as 5204.
+5228	A (inferred)	GPA (not opened)	n	as 5204.
+5549	open (LANE R3)	GPAS, Groen Suppl. 140-148 nr. 45 (raw cipher numbers printed, not deciphered)	no gloss found on p1 by LANE R3 (J5I/J5S, 24 Sept)	Class B (edition prints raw undeciphered numbers). Claimed by LANE R3 (ROOM.md 12:04); this worker does not touch it. csWV2 nomination stands.
+5550	on-leaf (LANE R3 key source)	GPAS, Groen (aanvullende reeks)	y	LANE R3 worker J5S (ROOM.md 12:12): "5550 (Jan to Willem, Dillenburg 25 Dec 1573) has 5549-style runs (values to ~350, clear endings) WITH a contemporary interlinear decipherment." Key source, not a target; not this worker's to nominate.
+5552	on-leaf (LANE R3 key source)	none resolved this pass	y	LANE R3 J5S: "5552 (21 Apr 1574)... also carr[ies] glossed runs." Key source, not a target.
+5557	on-leaf (LANE R3 key source)	GPAS, Groen (aanvullende reeks)	y	LANE R3 J5S: "5557 (31 May 1574)... also carr[ies] glossed runs." Key source, not a target.
+5561	A	Groen van Prinsterer, GPA (per TSV printed_edition_named)	n	WVO: "solved elsewhere (Groen van Prinsterer, Archives (GPA))". Jan van Nassau circle. Not a candidate.
+5564	skip	n/a (already_nominated, la-garde-1577 image-capture section per jan-van-nassau NOTES.md)	n	folder-owned, not re-run
+5575	on-leaf (LANE R3 in progress)	none named	y (pending R3 confirmation)	LANE R3 J5S holds resources.huygens.knaw.nl for 5575/5550/5557/5808 (ROOM.md 12:10); this worker did not re-fetch. WVO's own remark: "solved on leaf". Not a candidate; leave to R3.
+5797	open, but mostly printed	Groen IV, 217-226 nr. CDXLIV	n (7 localized gaps, not a full gloss)	csWV2 (24 Sept 2026): "almost entirely already in clear German...7 localized gaps (mostly missing coded names), not a solver target." No nomination. Needs a verifier read against WVO's own (onv) flag, not a fresh check-solved pass.
+5798	A (inferred)	GPA (not opened)	n	Same "to Lodewijk" GPA circle. Not a candidate.
+5799	A	Groen IV, 79 nr. CDIX	n	G3 groen-check: "whole letter printed in clear plain French, footnote only 'Autographe'" (groen009arch04_01_0025.php). Not a candidate.
+5800	A (inferred)	GPA (not opened)	n	as 5798.
+5801	on-leaf (NEW finding this pass)	GPA (Groen, page not opened) + attached decipherment	y	briefnr 11250's own Opmerkingen (fetched 24 Sept 2026): "De brief [11250] is een kleine strook papier, thans gehecht aan de ontcijfering van nr. 5801" (11250 is a small strip of paper, now attached to THE DECIPHERMENT OF NO. 5801). 5801 therefore carries a contemporary decipherment physically with the file, stronger evidence than the GPA heuristic alone. Flag for LANE R3: a genuine key source for the lodewijk-van-nassau-1573-74 circle, not previously in that folder's tables. Not a candidate.
+5802	A (inferred)	GPA (not opened)	n	as 5798.
+5803	A (inferred)	GPA (not opened)	n	as 5798.
+5804	A (inferred)	GPA (not opened)	n	as 5798.
+5805	A (inferred)	GPA (not opened)	n	as 5798.
+5808	on-leaf (LANE R3 in progress)	none named	y (pending R3 confirmation)	LANE R3 J5S holds huygens for 5808 (see 5575 row). WVO's own remark: "solved on leaf". Not a candidate.
+5810	A	Groen IV, 320-324 nr. CDLXVIII	n	G3 groen-check: "whole letter printed in clear plain French, footnote only 'Autographe'" (groen009arch04_01_0088.php). Not a candidate.
+5811	A	Groen IV, Lettre CDLXXXIII	n	Verified N0 by Verifier V7 (lodewijk-van-nassau-1573-74/NOTES.md, WV2 section). Not a candidate.
+5812	A (inferred)	GPA (not opened)	n	as 5798.
+5922	A	Groen van Prinsterer (per TSV printed_edition_named)	n	WVO: "solved elsewhere (Groen van Prinsterer)". Willem van Hessen circle. Not a candidate.
+6131	skip	n/a (already_nominated per NOTES.md cross-reference)	n	WVO: "solved on leaf Groen van Prinsterer" (both edition and on-leaf); already appears in a solved-elsewhere role, not a fresh candidate either way.
+6136	on-leaf	none named	n/a not opened	WVO: "solved on leaf". Reinier Cant, standalone correspondent, no existing folder. Not a candidate; a future recovery worker could open this as a small key-source lead if a companion unsolved letter from the same correspondent ever surfaces (none in this harvest).
+6178	solved, location unresolved	none (Bron: KHAG only)	unknown	Opmerkingen fetched 24 Sept 2026: "Een deel in cijferschrift, hetgeen is opgelost" (a part in cipher, WHICH HAS BEEN SOLVED) -- no edition or on-leaf marker given. Per COMMON RULES item 9 (blocked, never open, when the location of a claimed solution can't be confirmed): do not nominate. Guislain de Fiennes, standalone correspondent.
+6221	A (inferred)	GPA (not opened)	n	WVO: "solved elsewhere (Groen van Prinsterer, Archives (GPA))". Guillaume David, standalone correspondent. Not a candidate.
+6238	solved, location unresolved	none (Bron: KHAG only)	unknown	Opmerkingen fetched 24 Sept 2026: "gedeelte in cijferschrift, hetgeen is opgelost" (a portion in cipher, WHICH HAS BEEN SOLVED) -- same phrasing and same treatment as 6178. Do not nominate.
+6467	skip	n/a (already_nominated, la-garde-1577)	n	folder-owned, not re-run
+7205	on-leaf	none named	y	WVO: "solved on leaf". To-Lodewijk circle (ARAB/KHAG). Key source for lodewijk-van-nassau-1573-74; not a candidate.
+7206	on-leaf	none named	y	as 7205.
+7208	on-leaf	none named	y	as 7205 (ARAB only, no KHAG).
+7466	on-leaf	none named	y	WVO: "solved on leaf". Michel La Huguerye, standalone correspondent (GPAS/KHAG). Not a candidate.
+7630	on-leaf, KEY ATTACHED	none printed; a reconstructed typewritten key + full decipherment held with the file	y	Opmerkingen fetched 24 Sept 2026: "Het stuk is geheel in cijfer. Een sleutel, uit dit stuk gereconstrueerd en in machineschrift geschreven, is toegevoegd, alsmede de ontcijfering van de brief" (a KEY, reconstructed from this piece and typewritten, is attached, as well as the decipherment). Willem van Gulik-Kleef, standalone correspondent -- no sibling unsolved letter from this correspondent in the harvest, so the key has no immediate second target, but flag for LANE R3/scout in case one surfaces. Not a candidate.
+8246	skip	n/a (already_nominated, gunther-van-schwarzburg-1561, found-solved N0)	n	folder-owned, not re-run
+10260	blocked	Groen VII, 461-463 nr. MXIII checked (ambiguous, no visible chiffre marker); GSME/LMSAC/MBWI/HUA/NA/SAG editions/archives not checked this pass	unknown	G3 groen-check: Groen VII prints as continuous plain French with no visible cipher marker, but WVO marks (onv) and the letter has 4 further editions not cross-checked (Lacroix/LMSAC 1860, Muller/MBWI 1888, Gerlo-de Smet/GSME 1990-96). Per COMMON RULES item 9, the verdict is blocked (not open) until at least one of those editions is checked; not nominated.
+10700	A	Gachard, Correspondance de Guillaume le Taciturne (GCGT) (per TSV printed_edition_named)	n	Also historically deciphered: reply to 12630 (Terranova to Filips II, "Ontcijferd en in het Spaans vertaald", Simancas). Not a candidate.
+10725	A	Gachard, GCGT (per TSV printed_edition_named)	n	WVO: "solved elsewhere (Gachard, Correspondance de Guillaume le Taciturne (GCGT))". Not a candidate.
+11250	on-leaf, ATTACHED TO 5801's decipherment	none printed (Bron: KHAG only)	y (attached, not interlinear)	Opmerkingen fetched 24 Sept 2026: physically "gehecht aan de ontcijferung van nr. 5801" (attached to the decipherment of no. 5801). See 5801 row above. Key source, not a candidate in its own right (it is a strip of paper, not itself a full cipher letter).
+12630	on-leaf, contemporary Spanish decipherment	none printed (Archivo General de Simancas contemporary copy)	y	Opmerkingen fetched 24 Sept 2026: "Ontcijferd en in het Spaans vertaald. Door de hertog van Terranova op 28 juli 1579 naar Filips II gezonden." (Deciphered and translated into Spanish, sent by the Duke of Terranova to Philip II, 28 July 1579.) A contemporary (16th-century) decipherment, held at Simancas -- not a modern edition, but plaintext known from the time. Not a candidate.
+12631	A + on-leaf	Van Durme, Archives générales de Simancas, III, 516 nr. 107 (excerpt)	y	Opmerkingen fetched 24 Sept 2026: same "Ontcijferd en in het Spaans vertaald" as 12630 (its companion, both sent by Terranova 28 July 1579), plus a named modern edition excerpt. Not a candidate.
