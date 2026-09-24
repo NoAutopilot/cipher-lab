@@ -134,7 +134,7 @@ clones (grep only, deleted); WebSearch 3. No Gallica, no logins, no credentials 
 
 # f.67: BnF fr.5160 f.67 (canvas 129/130), Brienne to Servien, "A Paris ce 10 8bre 1659": novelty class
 
-Verifier V5 (LANE V2, Opus), 24 Sept 2026, 09:48-10:05 UTC (`date -u` read at start and before writing). Audits
+Verifier V5 (LANE V2, Opus), 24 Sept 2026, 09:48-10:01 UTC (`date -u` read at start and before writing). Audits
 LANE G2 worker M's claim (ROOM 09:27; NOTES.md "Folio 67: reconciled and read"; `reading_f67.{txt,tsv}`,
 `exceptions_f67.tsv`, `control_f67.tsv`, `decode_f67.json`; the f.67 results row in status.json). No decoding was
 done here and no reading, key or grade was changed. The 1653 letters (f.1-3, f.9) are a separate negative and are not
