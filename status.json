@@ -1372,8 +1372,8 @@
    "date": "24 Sept 2026",
    "kind": "contribution",
    "title": "La Garde to William of Orange, 28 Nov 1577 (WVO 6179) and Marnix's marginal notes (WVO 6467): numeral cipher, values 1-24, not read (negative with matched controls)",
-   "grade": "negative, conditional on one transcription: homophonic control 73.5% read, target none; periodic Vigenère/Beaufort control 100%, target none",
-   "line": "228 numeral tokens transcribed. The overline marks were under-recorded in the transcription, so the negative is conditional on it; the next step is a retranscription with overlines as signs.",
+   "grade": "negative on a reconciled transcription (3 witnesses on 6179, 2 on 6467; 239 rows, H 178 M 61): homophonic control 73.5% read (48.7% at 8% noise), target none; periodic control 100%, target none; both with overlines folded and kept distinct",
+   "line": "228 numeral tokens, values 1-24. Neither a homophonic nor a periodic polyalphabetic solver reads it where both read matched controls; the design may be a code or nomenclator in number form. 9 rows unresolved on the image.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/la-garde-1577"
   },
   {
