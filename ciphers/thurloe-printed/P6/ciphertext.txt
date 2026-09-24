@@ -1,0 +1,51 @@
+# Thurloe State Papers, collectionofstat03thur, printed p.~275
+# Sender: Major Creed
+# Recipient: secretary Thurloe
+# Date: not read
+# Cipher system: unidentified
+# Prior work: as P5
+# Notes: second cipher cluster of the same Creed letter (no new heading between P5 and P6)
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat03thur, cached djvu text sources/ia-fulltext/collectionofstat03thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 23009-23035 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 7 cipher-tagged lines, 167 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L23009	[PLAIN:"17-"]
+L23011	[PLAIN:"25."]
+L23013	[PLAIN:"J  O  N  H     T  H  U  R  L  O  E    E  S  Q.  &c,  275"]
+L23015	CIPHER	RAW: 28.  7.  30.  16.  18.  12.  25.  42-  6.  41-  67.  19.  18.  40.  33.  35.  35.  7.  12.  36.  25.  158.  81.  6.  A.  D.   1654;
+L23015	CIPHER	CLEANED: 28. 7. 30. 16. 18. 12. 25. 42-? 6. 41-? 67. 19. 18. 40. 33. 35. 35. 7. 12. 36. 25. 158. 81. 6. A.? D.? 1654;
+L23016	CIPHER	RAW: Perceiving  by  the  38.  33.  25.  36.  55.  6.  40.  42.  ^6.  23.  12.  35.  2.  30.  29.  25,43.  25.  12.    <»/VNj
+L23016	CIPHER	CLEANED: Perce1v1ng? by? the? 38. 33. 25. 36. 55. 6. 40. 42. ^6.? 23. 12. 35. 2. 30. 29. 25,43.? 25. 12. <»/VNj?
+L23018	CIPHER	RAW: 33.  19.  36.  10.  3.  30.  16.  to  continue  35.  23.  19.  35.  2.  6.  36.  35.  19.  5.  25.  in  7.  28.  43.
+L23018	CIPHER	CLEANED: 33. 19. 36. 10. 3. 30. 16. t0? c0nt1nue? 35. 23. 19. 35. 2. 6. 36. 35. 19. 5. 25. 1n? 7. 28. 43.
+L23019	CIPHER	RAW: 18.  31.  81.  2.  25.  19.  41.  12.  36.  28.  gott  out  30.  3.  3.  23.  25.  12.  21.  42.  12.  37.  7.  25.
+L23019	CIPHER	CLEANED: 18. 31. 81. 2. 25. 19. 41. 12. 36. 28. g0tt? 0ut? 30. 3. 3. 23. 25. 12. 21. 42. 12. 37. 7. 25.
+L23020	[PLAIN:"being  40.  41.  12.  35-  7-  30-  35-  3-  30-  3i-  23-  i2-  25.  37.  12.  employ  25.  16.  19.  18."]
+L23021	[PLAIN:"40.  33.  35.  Overton,  this  bufinefs  I  have  here  fett  downe,  the  fubftance  of  my  former"]
+L23022	[PLAIN:"letters,  humbly  afking  your  pardon  for  fending  it  you  in  fo  blotted  a  Iheete  of  paper  j  all"]
+L23023	[PLAIN:"I  fliall  bege  of  you  is,  that  you  will  be  pleafed  to  lett  me  knowe  your  friend's  anfwer  in"]
+L23024	[PLAIN:"it,  as  foon  as  poffibly  you  can  ;  if  he  approves  of  this  I  propofe  to  him,  I  fhall  then  only"]
+L23025	[PLAIN:"defire  thefe  two  things  of  him,  which  are  both  in  order  to  his  fervice,  the  firft,  that  no"]
+L23026	[PLAIN:"body  may  knowe  of  any  defigne  in  this  jorney,  but  he,  yourfelfe,   and  65.   10,  40.   11."]
+L23028	[PLAIN:"26.  12.  and  the  next,  that  I  may  be  30.  39.  27.  28,  36.  40.  42.  25.  37.  36.  40.  2.  33.  7."]
+L23029	CIPHER	RAW: 12.  sy.  25.  6.  41.  3.  40.  42.  16.  43.  41.  both  to  be  able  to  25.  43.  39.  3.  40.  31.  36.  34.
+L23029	CIPHER	CLEANED: 12. sy.? 25. 6. 41. 3. 40. 42. 16. 43. 41. b0th? t0? be? ab1e? t0? 25. 43. 39. 3. 40. 31. 36. 34.
+L23031	CIPHER	RAW: 27.  23.  28.  42.  36.  35.  37.  34.  2.  12.  41.  35.  36.  as  will  be  ufefuU  towards  the  37,  19.
+L23031	CIPHER	CLEANED: 27. 23. 28. 42. 36. 35. 37. 34. 2. 12. 41. 35. 36. as? w111? be? ufefuU? t0wards? the? 37, 19.
+L23033	CIPHER	RAW: 34.  12.  3.  3.  6.  41.  22.  40.  33.  35.  40.  II.  35.  23.  28.  36.  18.  34.  36.  6.  42.  25.  36.  30.  41.
+L23033	CIPHER	CLEANED: 34. 12. 3. 3. 6. 41. 22. 40. 33. 35. 40. 11. 35. 23. 28. 36. 18. 34. 36. 6. 42. 25. 36. 30. 41.
+L23035	[PLAIN:"29.  the  better  to  communicate  to  your  friend  all  that  fhall  come  to  my  knowledge.  I  con-"]

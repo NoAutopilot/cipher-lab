@@ -1,0 +1,73 @@
+# Thurloe State Papers, collectionofstat03thur, printed p.289
+# Sender: Lord chief baron Steele
+# Recipient: secretary Thurloe
+# Date: not read (opening excerpt only)
+# Cipher system: unidentified
+# Prior work: none found ("Steele" grepped, no hit)
+# Notes: MS Vol. xxvii; re: death of "mr. Southerne"
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat03thur, cached djvu text sources/ia-fulltext/collectionofstat03thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 45228-45278 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 15 cipher-tagged lines, 316 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L45229	[PLAIN:"General  Blake  to  the  prote&or."]
+L45231	[PLAIN:"May  it   please  your  highnes,"]
+L45233	[PLAIN:"f     e       ere       t    inftruftions      fentbyybu      r"]
+L45234	CIPHER	RAW: The  37.  24.  80.  36.  54.  38.        142.         6j.  82.  32.  68.  21.  42.  72.  33.  6<).  36.  A.  D.  loj;.
+L45234	CIPHER	CLEANED: The? 37. 24. 80. 36. 54. 38. 142. 6j.? 82. 32. 68. 21. 42. 72. 33. 6<).? 36. A.? D.? 10j;.?
+L45236	[PLAIN:"highnesrefe       rr       ingmeeto     L/~V>J"]
+L45237	CIPHER	RAW: 27.  28.  s^'  57-  62.  24.  37.  36.  24.  25.  54.  66.  36.  28.  32.  26.  31.  24.  24-  38.  33.  ^°'  o^'""
+L45237	CIPHER	CLEANED: 27. 28. s^'? 57-? 62. 24. 37. 36. 24. 25. 54. 66. 36. 28. 32. 26. 31. 24. 24-? 38. 33. ^°'? 0^'""?
+L45239	[PLAIN:"a      f      o      r     m     e      r       inftr.      t       ouchhingthe^"]
+L45240	CIPHER	RAW: 20.  25.  63.  94.  31.  24.  66.     142.     38.    63.  69.  22.  27.  27.  28.  32.  26.  38.  S7-  24.
+L45240	CIPHER	CLEANED: 20. 25. 63. 94. 31. 24. 66. 142. 38. 63. 69. 22. 27. 27. 28. 32. 26. 38. S7-? 24.
+L45242	[PLAIN:"f      i      1      V      e     r      fleet     o      f    Spay,   co,    mingfrom"]
+L45243	CIPHER	RAW: 37.  28.  30.  39.  24.  66.    128.    33.  S5-  105-  22.  33.  31.  28.  62.^26.  25.  36.  33.  6r.'
+L45243	CIPHER	CLEANED: 37. 28. 30. 39. 24. 66. 128. 33. S5-? 105-? 22. 33. 31. 28. 62.^26.? 25. 36. 33. 6r.'?
+L45244	[PLAIN:"America  Ihave       received    and   f     h      a       I      1"]
+L45245	CIPHER	RAW: 113.       28.  27.  50.  39.  24.  36.  24.  22.  24.  28.  39.  54.  s2-  lo-  37-  27.  50.  30.  30.
+L45245	CIPHER	CLEANED: 113. 28. 27. 50. 39. 24. 36. 24. 22. 24. 28. 39. 54. s2-? 10-? 37-? 27. 50. 30. 30.
+L45247	[PLAIN:"ca      refuliyobfe      rvethefame"]
+L45248	CIPHER	RAW: 22.  50.  36.  24.  25.  39.  60.  60.  42.  33.21.  37.  24.  2^-  39-  24.  (^6.  85.  82.  6y.  78.  31.  24.
+L45248	CIPHER	CLEANED: 22. 50. 36. 24. 25. 39. 60. 60. 42. 33.21.? 37. 24. 2^-? 39-? 24. (^6.? 85. 82. 6y.? 78. 31. 24.
+L45249	[PLAIN:"inform,  at      Cadi      zthatthe    fleet  was"]
+L45250	CIPHER	RAW: "Wee  had  127.  20.  38.  22.  20.  23.  28.  43.  38.  27.  20.  38.  68.  27.  24.  128.  40;  20.  37;
+L45250	CIPHER	CLEANED: "Wee? had? 127. 20. 38. 22. 20. 23. 28. 43. 38. 27. 20. 38. 68. 27. 24. 128. 40; 20. 37;
+L45252	[PLAIN:"expec       t'edabouta'monethor"]
+L45254	CIPHER	RAW: 24.  41.  34.  24.  52.  68.  54.  53.  20.  21.  33.  39.  38.  20.  89.  91.  90.  24.  38.  27.  6^.  66,
+L45254	CIPHER	CLEANED: 24. 41. 34. 24. 52. 68. 54. 53. 20. 21. 33. 39. 38. 20. 89. 91. 90. 24. 38. 27. 6^.? 66,
+L45255	[PLAIN:"fiveweekeshence  arenow"]
+L45257	CIPHER	RAW: 25.  28.  39,  54.  40.  24.  54.  29.  24.  37,  27.  24.  32.  22.  24.  Wee  20.  36.  54.  32.  33.  40i
+L45257	CIPHER	CLEANED: 25. 28. 39, 54. 40. 24. 54. 29. 24. 37, 27. 24. 32. 22. 24. Wee? 20. 36. 54. 32. 33. 401
+L45258	[PLAIN:"ofCapeMaries  fpread"]
+L45260	CIPHER	RAW: 33.  25.  22.  20.  34,  24.  61.  50.  66.  28.  54.  67.  intending  to  37.  93.  94.  24.  50.  23.
+L45260	CIPHER	CLEANED: 33. 25. 22. 20. 34, 24. 61. 50. 66. 28. 54. 67. 1ntend1ng? t0? 37. 93. 94. 24. 50. 23.
+L45262	[PLAIN:"w     i      t      h     t      h      e     fleet  what      wee      ca'n     and    t     o"]
+L45264	CIPHER	RAW: 40.  58.  38.  85.  68.  27.  54.  128.  ']o.  ^y.  20.  38.  40.  24.  54.  ^2.  20.  32.  10,  38.  63.
+L45264	CIPHER	CLEANED: 40. 58. 38. 85. 68. 27. 54. 128. ']0.? ^y.? 20. 38. 40. 24. 54. ^2.? 20. 32. 10, 38. 63.
+L45266	[PLAIN:"rangethisfea  thewind    and"]
+L45268	CIPHER	RAW: 36.50.  32.  s^-  ^2.  38.  27.  28.  37.  126.  according  to  68.  57.  24.  40.  28.  90.  23.  10,
+L45268	CIPHER	CLEANED: 36.50.? 32. s^-? ^2.? 38. 27. 28. 37. 126. acc0rd1ng? t0? 68. 57. 24. 40. 28. 90. 23. 10,
+L45270	[PLAIN:"the    inform,  w      e      c      a      nge      tpl      y      i      ngover"]
+L45272	CIPHER	RAW: 38.27.54.    127.    40.  24.  52.  50.  90.  26.  24.  38.  34.  60.  42.  28.  32.  26.33.  39'  24-  z6.
+L45272	CIPHER	CLEANED: 38.27.54.? 127. 40. 24. 52. 50. 90. 26. 24. 38. 34. 60. 42. 28. 32. 26.33.? 39'? 24-? z6.?
+L45274	[PLAIN:"1      ik     ewif     e     toward     sCapeSpr      at"]
+L45275	CIPHER	RAW: 30.  58.  29.  54. 40.  86.  37.  82.  38.  33.  40.  50.  66.  23.  37.  22.  20.  34.  24.  37.  34.  66.  20.  38.
+L45275	CIPHER	CLEANED: 30. 58. 29. 54. 40. 86. 37. 82. 38. 33. 40. 50. 66. 23. 37. 22. 20. 34. 24. 37. 34. 66. 20. 38.
+L45276	[PLAIN:"i      tbe      i      ngth      e      iremoft      1      i      ke      1      y"]
+L45277	CIPHER	RAW: 28.  38.  21.  24.  58.  62.  ^6.  38.  27.  24,  28.  36.  54.  31.  33.  6^.  ^8.  30.  28.  S9-  24.  88.  42.
+L45277	CIPHER	CLEANED: 28. 38. 21. 24. 58. 62. ^6.? 38. 27. 24, 28. 36. 54. 31. 33. 6^.? ^8.? 30. 28. S9-? 24. 88. 42.
+L45278	[PLAIN:"and  u      fua     1      Ic     our     feTheyofCad      iz"]

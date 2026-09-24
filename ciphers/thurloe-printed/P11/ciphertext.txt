@@ -1,0 +1,37 @@
+# Thurloe State Papers, collectionofstat05thur, printed p.67
+# Sender: General Montagu
+# Recipient: secretary Thurloe
+# Date: 20 April 1656 (aboard fleet off Cadiz)
+# Cipher system: Montagu's cipher, E=18/42/56/93 THE=407
+# Prior work: Tomokiyo cryptiana/web/thurloe.htm "Edward Montagu (Mountagu)..." section: full key reconstruction published there; confirmed directly -- "407" recurs at every "the" in this passage's plaintext/cipher alignment
+# Notes: MS Vol. xxxviii; NOT identical to any of the 4 catalogued STUCK Thurloe items (TSP i.435, v.78, v.267, v.337), which are all in vol.1/vol.5 and use different, smaller ciphers; same letter as P12/P13
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat05thur, cached djvu text sources/ia-fulltext/collectionofstat05thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 5724-5736 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 4 cipher-tagged lines, 88 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L5724	[PLAIN:"msafhoa         re         to  oppofe  a      nat       tempt"]
+L5726	CIPHER	RAW: 48  23  31  59  37  l9  55   I03  42  4°4  363  3l  27  55   6  5°  42  16  1  6.
+L5726	CIPHER	CLEANED: 48 23 31 59 37 19 55 103 42 4°4? 363 31 27 55 6 5°? 42 16 1 6.
+L5728	[PLAIN:"Wee  have      a     1      f      o      e     examined    the  march  ants      and  other    s       and     they  a    1      1"]
+L5730	CIPHER	RAW: 452  234  31  33  ^9  30  56  I93*11  407  3°6  3l   27  6  9°   105  350  23  105  410  7  5  33
+L5730	CIPHER	CLEANED: 452 234 31 33 ^9? 30 56 193*11? 407 3°6? 31 27 6 9°? 105 350 23 105 410 7 5 33
+L5732	[PLAIN:"make  the  work  very  hard  and  be  fid  e  s  this  the  paff  a  g  e  in  to  the  C"]
+L5733	CIPHER	RAW: 3GO  437  456  439  244  105  442  25  49  p  56  90  412  407  368  7  20  18  251  404  407  9
+L5733	CIPHER	CLEANED: 3G0? 437 456 439 244 105 442 25 49 p? 56 90 412 407 368 7 20 18 251 404 407 9
+L5734	[PLAIN:"arraccaes        isawindingchan.nell      very"]
+L5736	CIPHER	RAW: 7  12  54  31  28  66  83  93  90  259  7218  27  80  49  52  75  28  2  s5   76  95  *8.5  33  439
+L5736	CIPHER	CLEANED: 7 12 54 31 28 66 83 93 90 259 7218 27 80 49 52 75 28 2 s5? 76 95 *8.5? 33 439

@@ -1,0 +1,24 @@
+row	identifier	window_lines	printed_page	sender	recipient	date	cipher_system	n_cipher_lines	n_numeral_tokens_raw	keyed
+P2	collectionofstat02thur	46981-46993	368	General Fleetwood	secretary Thurloe	not read (opening excerpt only)	unidentified	2	39	no
+P3	collectionofstat02thur	47994-48006	402	Mr. Bradshaw, resident at Hamburgh	secretary Thurloe	not read (opening excerpt only)	unidentified	3	57	no
+P4	collectionofstat03thur	15485-15537	56	Mr. W. Prideaux	secretary Thurloe	not read (opening excerpt only)	unidentified	10	184	no
+P5	collectionofstat03thur	22886-22949	273	Major Creed	secretary Thurloe	not read (opening excerpt only)	unidentified	17	337	no
+P6	collectionofstat03thur	23009-23035	~275	Major Creed	secretary Thurloe	not read	unidentified	7	167	no
+P7	collectionofstat03thur	23235-23346	277	Mr. Bradshaw, resident at Hamburgh (2nd letter)	secretary Thurloe	A.D. 1654 (margin)	unidentified	26	574	no
+P8	collectionofstat03thur	45228-45278	289	Lord chief baron Steele	secretary Thurloe	not read (opening excerpt only)	unidentified	15	316	no
+P9	collectionofstat03thur	51599-51611	~611	General Blake	secretary Thurloe	14 June [1655]	Blake's cipher (numerals ~1-120, some 3-digit)	2	29	yes
+P10	collectionofstat03thur	52304-52316	~615	Dr. Ralph Cudworth	secretary Thurloe	not read (opening excerpt only)	unidentified	3	66	no
+P11	collectionofstat05thur	5724-5736	67	General Montagu	secretary Thurloe	20 April 1656 (aboard fleet off Cadiz)	Montagu's cipher, E=18/42/56/93 THE=407	4	88	yes
+P12	collectionofstat05thur	5868-5880	~68	General Montagu	secretary Thurloe	20 April 1656	as P11	4	87	yes
+P13	collectionofstat05thur	5956-5981	~68-69	General Montagu	secretary Thurloe	20 April 1656	as P11	7	144	yes
+P14	collectionofstat05thur	8876-8888	101	The Protector [Cromwell]	Blake and Montagu, generals at sea	9 June 1656	Montagu's cipher (same as P11-13)	4	87	yes
+P15	collectionofstat05thur	35699-35711	~420-421	General Mountagu	secretary Thurloe	16 Sept 1656 (aboard the Naseby)	Montagu's cipher (same family, not individually verified for THE=407 in this passage)	4	84	yes
+P16	collectionofstat07thur	7198-7210	83	Capt. Stoakes	secretary Thurloe	not read (opening excerpt only)	unidentified	2	48	no
+P17	collectionofstat07thur	32138-32355	365	Mr. Downing	secretary Thurloe	not read (opening excerpt only; page ~365 implies 1658-60)	Downing's cipher, ~600 elements, E=39/40/41/42/43/44/45 THE=468	46	1064	yes
+P18	collectionofstat07thur	34083-34111	~585	Dr. Tho. Harrison	secretary Thurloe	not read (opening excerpt only)	unidentified	5	119	no
+P19	collectionofstat07thur	35658-35670	~403	General Monck	secretary Thurloe	not read (opening excerpt only)	unidentified (small-alphabet numerals ~1-50, unlike Montagu/Downing's larger code sets)	2	51	no
+P20	collectionofstat07thur	39931-39943	437	Mr. S. Disbrowe, one of the council of Scotland	secretary Thurloe	not read (opening excerpt only)	unidentified	3	73	no
+P21	collectionofstat07thur	41232-41354	449	[Richard Cromwell's speech to army officers, in Thurloe's hand, corrected by him]	--	not dated in excerpt (context: A.D. 1658/59, Richard Cromwell's protectorate)	unidentified (small-alphabet numerals ~1-50, resembles P19/P22/P23 style)	29	623	no
+P22	collectionofstat07thur	42242-42307	461	General Monck	secretary Thurloe	not read (opening excerpt only)	unidentified (same style as P19)	17	371	no
+P23	collectionofstat07thur	49509-49608	527	General Monck	secretary Thurloe	not read (opening excerpt only)	unidentified (same style as P19/P22)	24	565	no
+P24	collectionofstat07thur	56521-56593	611	Consul Maynard	secretary Thurloe	not read (opening excerpt only)	unidentified	15	350	no

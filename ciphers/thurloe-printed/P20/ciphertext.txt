@@ -1,0 +1,35 @@
+# Thurloe State Papers, collectionofstat07thur, printed p.437
+# Sender: Mr. S. Disbrowe, one of the council of Scotland
+# Recipient: secretary Thurloe
+# Date: not read (opening excerpt only)
+# Cipher system: unidentified
+# Prior work: none found ("Disbrowe" grepped, no hit)
+# Notes: MS Vol. lxi p.155(?, OCR-garbled)
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat07thur, cached djvu text sources/ia-fulltext/collectionofstat07thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 39931-39943 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 3 cipher-tagged lines, 73 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L39931	[PLAIN:"he  has  a  regiment  of"]
+L39933	CIPHER	RAW: 8  26  37  6  13  35  34,  14  13  16  3  36  5  1  37  11  17  19  24  13  27  39  28  10  14
+L39933	CIPHER	CLEANED: 8 26 37 6 13 35 34, 14 13 16 3 36 5 1 37 11 17 19 24 13 27 39 28 10 14
+L39935	[PLAIN:"honeeft  rellowes  in  towne,  would  guard"]
+L39937	CIPHER	RAW: 28  27  13  36   41  12  13  25  23  28  43  11  36   21  27  3^   28  43  27  13,  45  26  38
+L39937	CIPHER	CLEANED: 28 27 13 36 41 12 13 25 23 28 43 11 36 21 27 3^? 28 43 27 13, 45 26 38
+L39939	[PLAIN:"the  belt  of  them  to  the  tower."]
+L39941	CIPHER	RAW: 25  6  15  40  3  37  8  41  13  11  4  13  34  41  28  10  41  14  13  24  39  26  41  14  13
+L39941	CIPHER	CLEANED: 25 6 15 40 3 37 8 41 13 11 4 13 34 41 28 10 41 14 13 24 39 26 41 14 13
+L39943	[PLAIN:"that  place  is  not"]

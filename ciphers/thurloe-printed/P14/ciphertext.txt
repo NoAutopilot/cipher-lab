@@ -1,0 +1,38 @@
+# Thurloe State Papers, collectionofstat05thur, printed p.101
+# Sender: The Protector [Cromwell]
+# Recipient: Blake and Montagu, generals at sea
+# Date: 9 June 1656
+# Cipher system: Montagu's cipher (same as P11-13)
+# Prior work: Tomokiyo names this EXACT letter by page: "Cromwell wrote to Blake and Montague (9 June 1656, Thurloe State Papers, p.101)" using the reconstructed Montagu cipher; also DECODE f.90-91 (R4885) per thurloe.htm
+# Notes: Heading correction: an earlier pass mis-attributed this line to the preceding Lockhart letter (which ends just above it); the letter actually enclosing this cipher is "The protector to Blake and Mountagu, generals at sea", not Lockhart
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat05thur, cached djvu text sources/ia-fulltext/collectionofstat05thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 8876-8888 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 4 cipher-tagged lines, 87 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L8876	CIPHER	RAW: 500  251  501  401  343  480  494  3093618  23  257129311  251  404  407  28  2  31  2742  33
+L8876	CIPHER	CLEANED: 500 251 501 401 343 480 494 3093618? 23 257129311? 251 404 407 28 2 31 2742 33
+L8878	[PLAIN:"Cadiz  ;  and  thereupon  apprehending,  that  fome  of  your  fhips  may  be  fpared  into  the  chanel  for"]
+L8879	[PLAIN:"343  5°  54  3.1  '  4Z  io5  4°7  87  33  '9  91  z5  82720  18  16  47  343  170  45  2725  96  54ZS  l8  I05  3°"]
+L8880	[PLAIN:"the  better  fecureinge  of  trade,  and  the  blockeinge   up  of  Dunkirk  and  OJlend,   where  the"]
+L8882	CIPHER	RAW: 23  50  180  53  3742  103  18  the  47  24  54  5  6  18  23  and  494  343  449  20  12  19  21  90  3042  27  26  16  18  54  30  26
+L8882	CIPHER	CLEANED: 23 50 180 53 3742 103 18 the? 47 24 54 5 6 18 23 and? 494 343 449 20 12 19 21 90 3042 27 26 16 18 54 30 26
+L8884	[PLAIN:"pirates  and  fhips  of  warre  grow  fo  numerous,  that  lately  eighteen  or  nineteen   of  them  in"]
+L8885	CIPHER	RAW: 59406279  6  42  281  1 10  or  19  343  409  251  a  495
+L8885	CIPHER	CLEANED: 59406279? 6 42 281 1 10 0r? 19 343 409 251 a? 495
+L8887	[PLAIN:"a  body  tooke  twenty  of  our  merchant  fhips  in  two  fleets,  being  under  a  convoy  of  a  Dutch"]
+L8888	CIPHER	RAW: 413  196  18 452  234 394  1 1  4049  7  5  33  251  404  420  23  18  7  2547  31  54  50  343407  495
+L8888	CIPHER	CLEANED: 413 196 18 452 234 394 1 1 4049 7 5 33 251 404 420 23 18 7 2547 31 54 50 343407? 495

@@ -1,0 +1,82 @@
+# Thurloe State Papers, collectionofstat03thur, printed p.56
+# Sender: Mr. W. Prideaux
+# Recipient: secretary Thurloe
+# Date: not read (opening excerpt only)
+# Cipher system: unidentified
+# Prior work: none found ("Prideaux" grepped, no hit)
+# Notes: MS Vol. xxiv; re: trade via Riga/Russia company
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat03thur, cached djvu text sources/ia-fulltext/collectionofstat03thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 15485-15537 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 10 cipher-tagged lines, 184 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L15485	[PLAIN:"which  is,  that  before  I  enter  any  further  into  any  matters^  I  fhould  bee  glad  to  receive  from"]
+L15486	[PLAIN:"your  frind  fome  affurance  at  leaft  of  his  kindneffe  and  favour^  that  I  may  not  bee  abfolutely"]
+L15487	[PLAIN:"throwne  off  to  the  wide  world,  without  friends  or  fupport,  and  that  I  may  expeft  to  bee"]
+L15488	[PLAIN:"provided  for  by  him,  after  that  I  fhall  have  loft  my  felfe  every  where  elfe  for  his  fake  ;  for"]
+L15489	[PLAIN:"though  I  cannot  18.  12.  25.  19.  17.  34.  3^;  \^-  40.  n-  31.  37.  25.  30.  17,  23,  4a"]
+L15490	[PLAIN:"26.  35.  37.  34.  36.  35.  36.  6.  41.  17.  12.  it  is  come  to  my  knowledge  by  2.  25.  12."]
+L15491	CIPHER	RAW: 37.  25.  17.  7.  30.  41.  17.  25.  and  33.  28.  35.  23.  40.  34.  35.  35.  7.  12.  3.  25.  19.
+L15491	CIPHER	CLEANED: 37. 25. 17. 7. 30. 41. 17. 25. and? 33. 28. 35. 23. 40. 34. 35. 35. 7. 12. 3. 25. 19.
+L15492	CIPHER	RAW: 36.  35.  28.  41.  6.  34.  41-   17-  35-  28.  40.  41.  40-  II-  fecrecy  35.  7.  25.  39.  12.  37,
+L15492	CIPHER	CLEANED: 36. 35. 28. 41. 6. 34. 41-? 17-? 35-? 28. 40. 41. 40-? 11-? fecrecy? 35. 7. 25. 39. 12. 37,
+L15494	CIPHER	RAW: 36.  40.  41.  6.  10.  40.  35.  28.  38.  40.  33.  35.  II.  37.  40.  43.  taking  it  26.  40.  37.
+L15494	CIPHER	CLEANED: 36. 40. 41. 6. 10. 40. 35. 28. 38. 40. 33. 35. 11. 37. 40. 43. tak1ng? 1t? 26. 40. 37.
+L15495	CIPHER	RAW: 10.  37.  30.  41.  35.  12.  16.  upon  his  meeting  2.  12.  25.  19,  36.  7.  25.  12.  35.  7,
+L15495	CIPHER	CLEANED: 10. 37. 30. 41. 35. 12. 16. up0n? h1s? meet1ng? 2. 12. 25. 19, 36. 7. 25. 12. 35. 7,
+L15496	[PLAIN:"40.  34.  10.  32.  35.  ftealing  out  of  Whitehall  67.  that  I  was  not  only  perticularly  inform-"]
+L15497	[PLAIN:"ed of  35.  7.  12.  43.  19.  35.  25.  37-  18.  34.  35.  30.  3.  36.  40.  employed  in  it,  yet"]
+L15498	[PLAIN:"fince  it  is  the  abfolute  breaking  of  30.  39.  40.  35.  23.  7.  19.  35.  23.  19.  ^6.  18.  12."]
+L15499	CIPHER	RAW: 25.  41.  12.  30.  7.  35.  17.  23.  28.  41.  10.   by   35.  23.  12.  33.  7.  40.  3.  12.  39.  19,
+L15499	CIPHER	CLEANED: 25. 41. 12. 30. 7. 35. 17. 23. 28. 41. 10. by? 35. 23. 12. 33. 7. 40. 3. 12. 39. 19,
+L15501	CIPHER	RAW: 37.  35.  6.  25.  40.  II.  143.  there  is  noe  queftion  18.  34.  35.  28.  36.  7.  19.  3.  by
+L15501	CIPHER	CLEANED: 37. 35. 6. 25. 40. 11. 143. there? 1s? n0e? queft10n? 18. 34. 35. 28. 36. 7. 19. 3. by?
+L15502	[PLAIN:"this  one  aflion  render  my  felfe  6.  37.  37.  12.  17.  40,  41.  17.  28.  6.  19.  18.  3.  ^5."]
+L15503	CIPHER	RAW: 33-  6-  35-  7-  35-  23.  12.  2.  30.  36.  3.  40.  41.  10.  19.  30.  6.  3.  28.  35.  25.  and
+L15503	CIPHER	CLEANED: 33-? 6-? 35-? 7-? 35-? 23. 12. 2. 30. 36. 3. 40. 41. 10. 19. 30. 6. 3. 28. 35. 25. and?
+L15504	[PLAIN:"therfore  certaynly,  when  your  friend  fhall  ferioufly  confider  the  nature  of  this  matter,  hee"]
+L15505	[PLAIN:"cannot  thinke  it  ftrange  in  me  to  expeft  to  bee  afTured  of  his  proteftion,  before  I  fhall  doe"]
+L15506	[PLAIN:"a  thinge,  that  will  render  it  impofTible  for  mee  to  receive  it  any  where  elfe.  I  am  very"]
+L15507	[PLAIN:"farr  from  having  the  leaft  imagination  in  this  of  engaging  your  friend  to  a  promife  of"]
+L15508	[PLAIN:"doing  mee  good,  upon  the  pretence  of  a  fervice,  which  afterwards  I  fhould  not  bee  able  to"]
+L15509	[PLAIN:"doe.  I  defire  nothing  from  him  till  I  have  fhewne  him  by  the  efFe<5ls,  that  the  fervice"]
+L15510	[PLAIN:"1  intend  to  doe  him  is  not  inconfiderable  ;  and  then  hee  will  bee  able  to  judge,  whether  the"]
+L15511	[PLAIN:"fervice  I  doe  him  bee  worthy  his  thankes  or  noe.  Sir,  I  am  in  fuch  haft  to  make  an  end"]
+L15512	[PLAIN:"for  feare  of  loofing  this  pofte,  that  I  feare  you  will  fcarce  be  able  to  reade  the  hand,  much"]
+L15513	[PLAIN:"lefTe  that  which  is  written  in  cipher,  fince  I  doe  not  verry  well  know  my  felfe,  whether  it"]
+L15514	[PLAIN:"bee  true  written  or  hoe.  And  if  this  correfpondence  continue  betweene  us,  I  fhould  defire"]
+L15515	[PLAIN:"you  to  fende  me  another  cipher,  this  which  you  have  fent  mee  already  being  very  im-"]
+L15516	[PLAIN:"perfedt.  Though  it  is  more  then  tyme  I  fhould  make  an  end,  I  cannot  hinder  myfelfe"]
+L15517	[PLAIN:"from  reprefenting  this  to  your  confideration  ;  firft  what  defigne  I  can  have  in  this  that"]
+L15518	[PLAIN:"I  doe,  if  it  be  not  to  linke  myfelfe  intirely  to  your  friend's  intereft  and  fortune  ;  the"]
+L15519	[PLAIN:"part  I  have  a  mind  to  aft,  if  hee  would  give  mee  leave,  being  fuch,  that  it  would  bee"]
+L15520	[PLAIN:"impofTible  for  mee  to  have  dependance  afterwards  upon  any  body  but  himfelfe,  thouo-h"]
+L15521	[PLAIN:"I  fhould  intend  it  never  foe  much.  Next,  whether  or  noe  I  have  not  reafbn  to  beleeve"]
+L15522	[PLAIN:"that  your  friend  muft  needs  think  (how  fmall  a  proportion  of  parts  foever  God  hath  given"]
+L15523	[PLAIN:"mee)  I  may  bee  ufefull  to  him  in  this  perticular  bufineffe,  confidering  the  38.  34.  30.  3.."]
+L15524	[PLAIN:"28.  35.  6.  12.  I  am  of,  the  famihar  acquaintance  1  have  amongft-  all  the  153,  and  the"]
+L15525	[PLAIN:"Ihare  I  have  hitherto  had  of  theire  bufinefTe.  And  laft,  whither  or  noe  I  ought  in  reafon"]
+L15526	[PLAIN:"to  expeft,  hee  will  admitt  of  mee,  if  in  this  foe  prelTing  a  conjundure,  and  wherein  Icaa"]
+L15527	[PLAIN:"without  vanity  pretend  to  bee  in  fome  kinde  ufefull  to  him,  hee  do's  abfolutely  rejedl  the"]
+L15528	[PLAIN:"fervice  I  offer  him  j  for  how  flight  foever  you  may  make  of  thes  bufineffe,  I  know  it  is  a"]
+L15529	[PLAIN:"more  130  troope,  and  in  which  more  39.  25.  40.  39.  3.  12.  19,  3y.  25.  12.  41.  10."]
+L15531	CIPHER	RAW: .  19.  41.  6,  40.  41.  12.  40.  II.  the  26.  40.  37,
+L15531	CIPHER	CLEANED: .? 19. 41. 6, 40. 41. 12. 40. 11. the? 26. 40. 37,
+L15533	CIPHER	RAW: 35'  36.  40-  12.   34.  35.  37.  army.  35.  23.  19.
+L15533	CIPHER	CLEANED: 35'? 36. 40-? 12. 34. 35. 37. army.? 35. 23. 19.
+L15535	[PLAIN:"it  36.  12.  19.  35.    and  at  the  25.  17.  40.  the"]
+L15537	CIPHER	RAW: the   6y.  81.  35.  7.  12.  am  85.  41.  40.  35.  3.
+L15537	CIPHER	CLEANED: the? 6y.? 81. 35. 7. 12. am? 85. 41. 40. 35. 3.

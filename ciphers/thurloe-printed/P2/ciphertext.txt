@@ -1,0 +1,34 @@
+# Thurloe State Papers, collectionofstat02thur, printed p.368
+# Sender: General Fleetwood
+# Recipient: secretary Thurloe
+# Date: not read (opening excerpt only)
+# Cipher system: unidentified
+# Prior work: none found (cryptiana, cyphersolver, unsolved-ciphers grepped for "Fleetwood": no hit)
+# Notes: MS Vol. xvii; cipher tokens embedded in otherwise-clear prose, no decipherment on page
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat02thur, cached djvu text sources/ia-fulltext/collectionofstat02thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 46981-46993 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 2 cipher-tagged lines, 39 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L46981	[PLAIN:"41.  ce  qui  me  confirme  dans  cette  penfeee'eft,  que  je  fcay  que  61.  61.  s'eftoit  73.  3y."]
+L46983	[PLAIN:"des  60.  92.  37.  4.  71.  22.  8y.  82.   10.  1.  36.  74.  que  44.  demandoit  a  fcavoir  70."]
+L46985	[PLAIN:"66.    37.    4-o.    10.    94.  50.    60.  On  donnat  48.  66.  6y.   4.  37.  40.  a  63.  de  tout  ce"]
+L46987	CIPHER	RAW: qu'on  33.    42.    93.    7.   84  aura  70.  93.   13.  29.  33.  59.   ly.   84.   70.  93.  3.  29.  33.
+L46987	CIPHER	CLEANED: qu'0n? 33. 42. 93. 7. 84 aura? 70. 93. 13. 29. 33. 59. 1y.? 84. 70. 93. 3. 29. 33.
+L46989	CIPHER	RAW: 59.   ly.  84.  70.  44.  journe  aufli  qui  on  62.  83.    61.  46.  20.    41.    83.  61.    63.  62.
+L46989	CIPHER	CLEANED: 59. 1y.? 84. 70. 44. j0urne? auf11? qu1? 0n? 62. 83. 61. 46. 20. 41. 83. 61. 63. 62.
+L46991	[PLAIN:"-tousles  53.  61.  22.  9.  84.  qu'ils  ont  fait  pour  32.  38.  11.  87.  plufieurs  gy  dont  ils"]
+L46993	[PLAIN:"ont   eu  beibin  pour   51.  40.  65.  3y.  44.  39.  93.  leurs  9y.  70.  93.   10.  27.  33.  40."]

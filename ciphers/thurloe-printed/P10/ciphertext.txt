@@ -1,0 +1,39 @@
+# Thurloe State Papers, collectionofstat03thur, printed p.~615
+# Sender: Dr. Ralph Cudworth
+# Recipient: secretary Thurloe
+# Date: not read (opening excerpt only)
+# Cipher system: unidentified
+# Prior work: none found ("Cudworth" grepped, no hit)
+# Notes: page marker OCR-garbled ("8cc. 6i^"), read as ~615
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat03thur, cached djvu text sources/ia-fulltext/collectionofstat03thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 52304-52316 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 3 cipher-tagged lines, 66 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L52305	CIPHER	RAW: 36.  50.  22.  58.  33.  32.  37.  28.  62.  52.  20.  23.  28.  43.  38.  33.  37.  24.  38.  25.  33.  66,
+L52305	CIPHER	CLEANED: 36. 50. 22. 58. 33. 32. 37. 28. 62. 52. 20. 23. 28. 43. 38. 33. 37. 24. 38. 25. 33. 66,
+L52307	[PLAIN:"e  ture  the"]
+L52308	[PLAIN:"68  S7'  78-  55'  63-  36-  22,  24.  33.  83.  121.  68.  6^.  ^5.  24.  22.  39.  06.  54.  38,  27.  24."]
+L52309	[PLAIN:"pi  a  t  e  fleet  and  tothatenddivers"]
+L52310	CIPHER	RAW: 34.  30.  20.  ^6.  54.  28.  10.  38.  33.  68.  27.  20.  38.  24.  32.  23.  23.  28.  39.  24.  26.  37.
+L52310	CIPHER	CLEANED: 34. 30. 20. ^6.? 54. 28. 10. 38. 33. 68. 27. 20. 38. 24. 32. 23. 23. 28. 39. 24. 26. 37.
+L52311	[PLAIN:"Ho  1  1  a  n  d  and  French  fhips  t  a  k  e  n  u  p"]
+L52312	CIPHER	RAW: 27.  63.  30,  30.  20.  62.  81.  10.  25.  36.  54.  32.  22.  27.  121.  38.  50.  29.  82.  90.  39.  34.
+L52312	CIPHER	CLEANED: 27. 63. 30, 30. 20. 62. 81. 10. 25. 36. 54. 32. 22. 27. 121. 38. 50. 29. 82. 90. 39. 34.
+L52313	[PLAIN:"In  purfuance  of  your  highnes  order,  I  have  at  prefent  fent  home  the  Pearle  and"]
+L52314	[PLAIN:"Mermaid,  to  give  the  more  fpeedy  account.  The  reft  of  the  Ihips  appointed  to  returne,"]
+L52315	[PLAIN:"I  forbear  to  fend  with  them  now,  for  a  more  full  and  frequent  intelligence.  I  hope  your"]
+L52316	[PLAIN:"highnes  will  pardon  my  boldnes  in  troubling  you  with  thefe  immediate  addreffes  in  a"]

@@ -1,0 +1,46 @@
+# Thurloe State Papers, collectionofstat07thur, printed p.~585
+# Sender: Dr. Tho. Harrison
+# Recipient: secretary Thurloe
+# Date: not read (opening excerpt only)
+# Cipher system: unidentified
+# Prior work: none found (a different "Jo Harrison" is mentioned on thurloe.htm re: the Blanck Marshall alias, not this Dr. Tho. Harrison correspondence)
+# Notes: MS Vol. lxi p.62; re: proclamation of the new protector (i.e. Sept 1658)
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat07thur, cached djvu text sources/ia-fulltext/collectionofstat07thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 34083-34111 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 5 cipher-tagged lines, 119 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L34083	[PLAIN:"But  certainly  fbmwhat"]
+L34085	[PLAIN:"All  feemingly  weares  the  face  of  2  3%  39  7  ll  35  39  3  *9  27  23  47  34"]
+L34087	[PLAIN:"is  brewing  under  hand.  A"]
+L34089	CIPHER	RAW: 16   22    43    14    3     39    19    34    2     35    II    43    19    27    15    38    27    6    II    35    14   3    27    6.     3
+L34089	CIPHER	CLEANED: 16 22 43 14 3 39 19 34 2 35 11 43 19 27 15 38 27 6 11 35 14 3 27 6. 3
+L34091	[PLAIN:"caball  there  is  of  perfons,  and"]
+L34093	CIPHER	RAW: 7  3  2   3  23  23  39   M  ir  35   "  19  34  26  10  31  11  35   34  26  27  34,  3  27  6
+L34093	CIPHER	CLEANED: 7 3 2 3 23 23 39 M? 1r? 35 "? 19 34 26 10 31 11 35 34 26 27 34, 3 27 6
+L34095	[PLAIN:"great  ones,  held  very  clofely,"]
+L34097	CIPHER	RAW: 15  35  "  3  39  26   27  "  34,  H   n  23  6  38  11  35   47  723  2634  11  23  47,
+L34097	CIPHER	CLEANED: 15 35 "? 3 39 26 27 "? 34, H? n? 23 6 38 11 35 47 723 2634 11 23 47,
+L34099	[PLAIN:"reiblved,  it's  feared,  to  rule  themfelves,"]
+L34101	CIPHER	RAW: 35  11  34  26  23  38  6,  19  39  34  10  11  3  35   11  6,  30  26  35  38  23  11  39  14
+L34101	CIPHER	CLEANED: 35 11 34 26 23 38 6, 19 39 34 10 11 3 35 11 6, 30 26 35 38 23 11 39 14
+L34103	[PLAIN:"or  fet  all  on  fire."]
+L34105	CIPHER	RAW: 11  23  34  11  23  38  11  34,  26  35  34  11  39  3  23  23  26  27  10  19  35  11.  What-
+L34105	CIPHER	CLEANED: 11 23 34 11 23 38 11 34, 26 35 34 11 39 3 23 23 26 27 10 19 35 11. What-?
+L34106	[PLAIN:"ever God  fees  good  for  us,  hee  I  truft  will  fie  us  to  it,  but  in  mercy  rather  avert  us  from"]
+L34107	[PLAIN:"confufions.     Come  what  will,  I  am"]
+L34109	[PLAIN:"Your  Lordshipp's  moft  faithfull"]
+L34111	[PLAIN:"Whitehall,  Sept.  the  and  obedient  brother  and  fervant,"]

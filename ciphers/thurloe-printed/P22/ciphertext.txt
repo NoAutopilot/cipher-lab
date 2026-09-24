@@ -1,0 +1,78 @@
+# Thurloe State Papers, collectionofstat07thur, printed p.461
+# Sender: General Monck
+# Recipient: secretary Thurloe
+# Date: not read (opening excerpt only)
+# Cipher system: unidentified (same style as P19)
+# Prior work: none found
+# Notes: distinct letter from P19 (different page)
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat07thur, cached djvu text sources/ia-fulltext/collectionofstat07thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 42242-42307 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 17 cipher-tagged lines, 371 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L42243	[PLAIN:"Lord  Fauconberg  to  H.  Cromwell,  lord  deputy  of  Ireland."]
+L42244	[PLAIN:"My  Lord,"]
+L42246	[PLAIN:"Inthepoflef-  Things  are  ftiU  at  a  ftanrl,  haw"]
+L42248	CIPHER	RAW: fionofthe  41    H   21    27    15  36   5   35    1 3   34  39  21    25   5   39   3  36   39   3   27   8    14   5   38   13
+L42248	CIPHER	CLEANED: f10n0fthe? 41 H? 21 27 15 36 5 35 1 3 34 39 21 25 5 39 3 36 39 3 27 8 14 5 38 13
+L42250	[PLAIN:"right  hon.  the  a  mew  °*  clu'ec »  '  *DUC  'n  cruth  any"]
+L42252	CIPHER	RAW: earl  ofShel-   |   34    16    II   45   28    10   30   38    21  13  39  5   2  40  39   21    7   41  35  40  39  14  5   27  49
+L42252	CIPHER	CLEANED: ear1? 0fShe1-? |? 34 16 11 45 28 10 30 38 21 13 39 5 2 40 39 21 7 41 35 40 39 14 5 27 49
+L42254	[PLAIN:"born.  .  thing  rather."]
+L42256	CIPHER	RAW: 41  14  21  27  15  35  5  39  14  13  37.
+L42256	CIPHER	CLEANED: 41 14 21 27 15 35 5 39 14 13 37.
+L42258	[PLAIN:"The  coancel  doe  juit  nothing,"]
+L42260	CIPHER	RAW: 39  16  11  7  28  38  29  9  11  23  6  28  11  21  38  34  41  27  26  41  16  21  29  15,
+L42260	CIPHER	CLEANED: 39 16 11 7 28 38 29 9 11 23 6 28 11 21 38 34 41 27 26 41 16 21 29 15,
+L42262	[PLAIN:"think  not  eyther  how  to  recon-"]
+L42264	CIPHER	RAW: 39  14  21  29  20  29  26  41  II  49  39  l6  II  37  l6  26  45  41  26  35  13  7  28  27
+L42264	CIPHER	CLEANED: 39 14 21 29 20 29 26 41 11 49 39 16 11 37 16 26 45 41 26 35 13 7 28 27
+L42266	[PLAIN:"cue  things,  or  quell  the  height"]
+L42268	CIPHER	RAW: 9  21  23  11  41  16  19  29  15  34,  26  37  32  38  11  25  39  16  11  14  13  19  17  16
+L42268	CIPHER	CLEANED: 9 21 23 11 41 16 19 29 15 34, 26 37 32 38 11 25 39 16 11 14 13 19 17 16
+L42270	[PLAIN:"of  fticklers  in  time,  whome"]
+L42272	CIPHER	RAW: 39  26  12  34  41  21  7  18  25  II  35  34  21  29  41  19  24  II,  43  l6   26  22  13  28
+L42272	CIPHER	CLEANED: 39 26 12 34 41 21 7 18 25 11 35 34 21 29 41 19 24 11, 43 16 26 22 13 28
+L42274	[PLAIN:"onely  our  negligence  makes"]
+L42276	CIPHER	RAW: 27  II  25  47  26  40  35  29  II  17  23  21  15  13  27  9  II  22  5  l8  II  36    7  28
+L42276	CIPHER	CLEANED: 27 11 25 47 26 40 35 29 11 17 23 21 15 13 27 9 11 22 5 18 11 36 7 28
+L42278	[PLAIN:"confiderable."]
+L42280	CIPHER	RAW: 27  36  21  6  11  35  5  4  23  13.
+L42280	CIPHER	CLEANED: 27 36 21 6 11 35 5 4 23 13.
+L42282	[PLAIN:"If  thefe  be  let  alone,  wel  di£"]
+L42284	CIPHER	RAW: 21    IO   39    l6    13    34    II    2    13    25    II    41    5    23    28    27    II,   43    13    25   6    19   3633
+L42284	CIPHER	CLEANED: 21 10 39 16 13 34 11 2 13 25 11 41 5 23 28 27 11, 43 13 25 6 19 3633
+L42285	[PLAIN:"poled  people  will  at  length  ga-"]
+L42287	CIPHER	RAW: 26  34  11  8  31  11  28  33  23  13  45  21  23  5  41  23  13  27  17  3^  16   17  5  39
+L42287	CIPHER	CLEANED: 26 34 11 8 31 11 28 33 23 13 45 21 23 5 41 23 13 27 17 3^? 16 17 5 39
+L42289	[PLAIN:"ther  to  them,  it  tor  nothing"]
+L42291	CIPHER	RAW: 14    II     37    41     28    41     14    II    22,    21    12    IO    26   37    27    26   41     l6    19     29    15    II    23
+L42291	CIPHER	CLEANED: 14 11 37 41 28 41 14 11 22, 21 12 10 26 37 27 26 41 16 19 29 15 11 23
+L42292	[PLAIN:"«lie,  yet  to  make  their  owne  peace  ;"]
+L42294	CIPHER	RAW: 36    13,    47    13    41    39     28     24   5    18    II    41    14    13     21    34   28   43    29    II    31    13   3  9
+L42294	CIPHER	CLEANED: 36 13, 47 13 41 39 28 24 5 18 11 41 14 13 21 34 28 43 29 11 31 13 3 9
+L42295	[PLAIN:"and  when  once  in,  not  to  be  reco-"]
+L42297	CIPHER	RAW: 11  ;  5  27  6  43  16  11  27  26  29  7  11  21  27,  29  26  41  39  28  4  11  37   II  7  26
+L42297	CIPHER	CLEANED: 11 ;? 5 27 6 43 16 11 27 26 29 7 11 21 27, 29 26 41 39 28 4 11 37 11 7 26
+L42299	[PLAIN:"ver'd  againe."]
+L42301	CIPHER	RAW: 38  *3  35  8  5  15  3  21  27  13.
+L42301	CIPHER	CLEANED: 38 *3? 35 8 5 15 3 21 27 13.
+L42303	[PLAIN:"I  am  abfolutciy  ot  opinion,"]
+L42304	CIPHER	RAW: 19     5    22    3    4    34    26     23    40     39    II    25   49     26    12     28    31    21     27    21    26    29,    A
+L42304	CIPHER	CLEANED: 19 5 22 3 4 34 26 23 40 39 11 25 49 26 12 28 31 21 27 21 26 29, A?
+L42305	[PLAIN:"muft  not  venture  over,"]
+L42307	CIPHER	RAW: 2.2  38  36  41  27  26  41  38  13  27  3<)   40  37  11  16   40  11  35,   and  fo  is  Mr,
+L42307	CIPHER	CLEANED: 2.2? 38 36 41 27 26 41 38 13 27 3<)? 40 37 11 16 40 11 35, and? f0? 1s? Mr,?

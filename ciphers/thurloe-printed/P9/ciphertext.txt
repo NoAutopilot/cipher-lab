@@ -1,0 +1,36 @@
+# Thurloe State Papers, collectionofstat03thur, printed p.~611
+# Sender: General Blake
+# Recipient: secretary Thurloe
+# Date: 14 June [1655]
+# Cipher system: Blake's cipher (numerals ~1-120, some 3-digit)
+# Prior work: Tomokiyo cryptiana/web/thurloe.htm "General Blake (1655)" section reconstructs this correspondent's cipher (worked example there: "26 33 39 24 36 31 24 32 38" = "gouerment"); this specific letter/date not named on that page, but same cipher family
+# Notes: West Indies/Caribbean fleet report ("...to America...gives opportunity...sent your highness an account of our affaires by capt. Peck in the Amity")
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat03thur, cached djvu text sources/ia-fulltext/collectionofstat03thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 51599-51611 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 2 cipher-tagged lines, 29 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L51601	[PLAIN:"d      t     o    America"]
+L51602	[PLAIN:"32.23.38.63.      113."]
+L51603	[PLAIN:"obi      e     r     V"]
+L51605	CIPHER	RAW: 20    3&.  24.  25.  39.  DO.  00.  42.  91.  79.  37.  54.  36.  39
+L51605	CIPHER	CLEANED: 20 3&.? 24. 25. 39. D0.? 00. 42. 91. 79. 37. 54. 36. 39
+L51606	[PLAIN:"ivesopport      unity"]
+L51608	CIPHER	RAW: 28.  39.  24.  6-/.  33.  34.  64.  6^.  36.  38.  39.  32.  28.  38.  42.
+L51608	CIPHER	CLEANED: 28. 39. 24. 6-/.? 33. 34. 64. 6^.? 36. 38. 39. 32. 28. 38. 42.
+L51609	[PLAIN:"month  I  lent  your  highnes  an  account  of  our  affaires  by  capt.  Peck  in  the  Amity,  as  alfo"]
+L51610	[PLAIN:"twoduphcates  by  theFameandKetch,  which  I  hope  are  or  will  fhortly  come  to  your  highnes"]
+L51611	[PLAIN:"hands  i  fince  which  time  there  is  not  any  thing.  I'hat  your  highnes  may  have  fpcedy  notice"]

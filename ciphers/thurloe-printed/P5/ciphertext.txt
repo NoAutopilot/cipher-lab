@@ -1,0 +1,95 @@
+# Thurloe State Papers, collectionofstat03thur, printed p.273
+# Sender: Major Creed
+# Recipient: secretary Thurloe
+# Date: not read (opening excerpt only)
+# Cipher system: unidentified
+# Prior work: none found ("Creed" grepped, only unrelated hit in napoleon2.htm)
+# Notes: MS Vol. xxi?; re: forces raised in Worcestershire/Gloucestershire; same letter as P6
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat03thur, cached djvu text sources/ia-fulltext/collectionofstat03thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 22886-22949 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 17 cipher-tagged lines, 337 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L22887	[PLAIN:"Vol.  xxiv.      'TpHIS  is  the  5th  letter  I  have  written  to  you,  without  receiving  any  anfwer,  which  gives  me"]
+L22888	[PLAIN:"P-  3 '9-  ■■■     greater  trouble  then  it  is  poffible  for  mee  to  expreffe,  not  being  able  to  imagine  the"]
+L22890	[PLAIN:"reafon,  why  you  fhould  not  thinke  fit  at  leaft  to  lett  me  know  your  fence  of  what  I  ofi^erred"]
+L22891	[PLAIN:"to  you.  The  propofition  I  made  laft  was  to  17.  40,  2.  12.  19.  41.  29.  43.  19.  5,  25,"]
+L22892	CIPHER	RAW: 2.  31.  36.  12.  3.  II.  25.  ©5.  39.  37.  28.  36.  40.  42.  12.  37.  it  being  impoffible  for
+L22892	CIPHER	CLEANED: 2. 31. 36. 12. 3. 11. 25. ©5.? 39. 37. 28. 36. 40. 42. 12. 37. 1t? be1ng? 1mp0ff1b1e? f0r?
+L22893	[PLAIN:"me  to  ferve  your  friend  foe  well  at  this  diftance,  as  I  am  fure  I  fhould  doe,  if  I  were  in  3,"]
+L22894	[PLAIN:"40.  42.  16.  40.  41.  which  you  may  eafily  conceive,  if  you  confider,  that  in  158.  40.  2  5."]
+L22895	CIPHER	RAW: 35.  7.  28.  36.  41.  19.  35,  34.  12.  the  37.  25.  36.  40.  3.  34.  35,  6.  40.  42.  '3,6.  17.
+L22895	CIPHER	CLEANED: 35. 7. 28. 36. 41. 19. 35, 34. 12. the? 37. 25. 36. 40. 3. 34. 35, 6. 40. 42. '3,6.? 17.
+L22896	[PLAIN:"23.  30.  41.  10.  25.  every  day,  and  confequently  that  nothing  can  be  of  greater  advantage"]
+L22897	[PLAIN:"thean  to  be  duly  advertifed  of  every  thinge  that  pafles,  I  fuppofe,  there  can  be  but  two"]
+L22898	CIPHER	RAW: objedtions  againfl:  2.  31.  30.  16.  43.  6.  35    35.  19.  41.  17.  25.  42.  40.  '3,'^.  6.41.  35.
+L22898	CIPHER	CLEANED: 0bjedt10ns? aga1nf1:? 2. 31. 30. 16. 43. 6. 35 35. 19. 41. 17. 25. 42. 40. '3,'^.? 6.41.? 35.
+L22900	[PLAIN:"40.  6'].  the  one  an  apprehenfion  of  43.  31.  25.  41.  22.  19.  10.  28,  42.  in  this  fixe"]
+L22901	[PLAIN:"130.  and  the  other  efeared  of  difatisfying  fome  of  your  friend's  owne  party  by  34.  36,"]
+L22902	[PLAIN:"35.  both  v/hich,  without  doubt,  this  propofition  dos  fufficiently  anfv/er.  I  confeffe,  the"]
+L22903	[PLAIN:"more  1  examine  it,  the  more  I  wonder  what  reafon  your  friend  can  poflibly  have,  not  to"]
+L22904	[PLAIN:"confent  to  it,  fince  it  dos  not  admitt  of  the  leaft  fhaddow  of  danger  or  inconvenience"]
+L22905	[PLAIN:"to  him  j  and  methinkes  too,  he  fhowld  not  looke  upon  me  as  a  man  foe  abfo-"]
+L22906	[PLAIN:"lutely  run  out  of  my  witts,  as  that  I  fiiould  voluntarily  35.  7.  o,'].  40.  7,2.  2.  31.  35."]
+L22907	CIPHER	RAW: 12.  3.  26.  25._  6.  41.  35.  40.  '3,6.  34.  17.  23.  19.  17.  40.  42.  16.  28.  '^c,.  6.  40.
+L22907	CIPHER	CLEANED: 12. 3. 26. 25._? 6. 41. 35. 40. '3,6.? 34. 17. 23. 19. 17. 40. 42. 16. 28. '^c,.? 6. 40.
+L22908	[PLAIN:"42.  without  being  confident,  or  at  leaft  to  be  able  to  22.  12.  25.  40.  11.  2.6.  19.  10,"]
+L22909	[PLAIN:"30.  31.  41.  12.  which  I  cannot  expeft  to  doe  but  18.  31.  16.  40.  6.  41.  22.  ©  ^6."]
+L22910	[PLAIN:"12.  37.  34.  28.  17.  25.  Soe  that  in  my  judgement  this  propofition  ought  to  make"]
+L22911	[PLAIN:"him  conclude,  I  finde  myfelfe  able  to  do  him  fervice  as  well  as  that  I  have  or  deferve"]
+L22912	[PLAIN:"to  do  it.  'Tis  true,  if  cardinal  Mazarin  ©  were  already  thoroughly  informed  of  the"]
+L22913	CIPHER	RAW: 18.  40.  ^5.  35.  40.  2.  25.  40.  26.  35.  23.  6.  36.   130.     I  confeffe  then  43.  31.  28.
+L22913	CIPHER	CLEANED: 18. 40. ^5.? 35. 40. 2. 25. 40. 26. 35. 23. 6. 36. 130. 1 c0nfeffe? then? 43. 31. 28.
+L22915	[PLAIN:"41.  35.  25.  3.  3.  6.  22.  12.  42.  17.  25.  would  be  of  noe  ufe   to  him,  but  I  am  fure"]
+L22917	CIPHER	RAW: 40.  36.  25.  17.  40.  42.  36.  16.  25.  37.  30.  18.  3.
+L22917	CIPHER	CLEANED: 40. 36. 25. 17. 40. 42. 36. 16. 25. 37. 30. 18. 3.
+L22918	CIPHER	RAW: and  35.  23.  40.  36.  12.  33.  7.  40.  ^6.  25.  19.  39.
+L22918	CIPHER	CLEANED: and? 35. 23. 40. 36. 12. 33. 7. 40. ^6.? 25. 19. 39.
+L22919	CIPHER	RAW: This  bufinefle  33.  40.  34.  3.  16.  18.  25.  12.  43.
+L22919	CIPHER	CLEANED: Th1s? buf1nef1e? 33. 40. 34. 3. 16. 18. 25. 12. 43.
+L22920	[PLAIN:"upon  my  certayne  knowledge  41.  30.  35.  35.  30.  21."]
+L22921	CIPHER	RAW: 40.   26.    and    84,    19.   3.  3.  35.  28.  6.  41.  10.  36.
+L22921	CIPHER	CLEANED: 40. 26. and? 84, 19. 3. 3. 35. 28. 6. 41. 10. 36.
+L22923	[PLAIN:"Sume  7.  34.  36.  23.  12.  29.'  II.  40.  sy.  30.  SB-  6-  2.  25.  yet  by  25.  32.  25.  3^.  3^.  thofe"]
+L22925	CIPHER	RAW: 39.  12.  37.  36.  40.  42.  s^-  iB.  25.  12.  36.  25.  17.  34.  37.  12.  29.  it  will  17.  25.  37,  35.
+L22925	CIPHER	CLEANED: 39. 12. 37. 36. 40. 42. s^-? 1B.? 25. 12. 36. 25. 17. 34. 37. 12. 29. 1t? w111? 17. 25. 37, 35.
+L22926	CIPHER	RAW: 30.  6.  41.  3.  31.  18.  37.  12.  19.  5.  25.  40.  33.  35.  19.  22.  30.  28.  42.  12.  there  is  a
+L22926	CIPHER	CLEANED: 30. 6. 41. 3. 31. 18. 37. 12. 19. 5. 25. 40. 33. 35. 19. 22. 30. 28. 42. 12. there? 1s? a?
+L22927	[PLAIN:"flying  report  at  Paris,  that  O  intends  to  make  30.  39.  47.  40.  10.  37.  12.  36.  c^S.  25,  19."]
+L22928	[PLAIN:"3.  40.  34.  25.  37.  6y.  if  that  be  I  am  afrayed  he  is  not  well  advifed,  at  leaft  before  3."]
+L22930	CIPHER	RAW: 40.  41.  16.  40.  42.  18.  12.  25.  29.  6.  36.  30.  37.  2.  12.  16.  then  fuch  19.  28.  40.  34.  '^y.
+L22930	CIPHER	CLEANED: 40. 41. 16. 40. 42. 18. 12. 25. 29. 6. 36. 30. 37. 2. 12. 16. then? fuch? 19. 28. 40. 34. '^y.?
+L22932	[PLAIN:"41.  31.  Party  might  be  ufefull  18.  34.  35.  i8.  25.  26.  40.  ^ly.  12.  Overton  35.  7.  30.  35."]
+L22933	[PLAIN:"troope  very  deftrudivej  you  knowe  that  17.  6.  35.  31.  parliament  will  ever  give  lawe  to"]
+L22934	[PLAIN:"the  whole  kingdome,  as  long  as  you  are  mafter  of  it,  you  will  eafily  quell  all  other  oppo-"]
+L22935	[PLAIN:"fition  is  but  a  little  \6.  6.  36.  40.  37.  29.  25.  37.  35.  7.  12.  37.  25.  army  muft  prove"]
+L22936	[PLAIN:"verry  ruinous.  Sir,  give  me  leave  to  be  a  little  poffitive  in  this  bufinefs,  becaufe  I  know"]
+L22937	[PLAIN:"more  of  it,  than  I  am  confident  either  you  or  your  friends  doe,  or  perhaps  than  any  body"]
+L22938	CIPHER	RAW: whatfoever,  that  is  not  16.  25.  12.  39,  3.  31.  25.  41.  10.  30.  22.  12.  29.  6.  42,  28.  35.
+L22938	CIPHER	CLEANED: whatf0ever,? that? 1s? n0t? 16. 25. 12. 39, 3. 31. 25. 41. 10. 30. 22. 12. 29. 6. 42, 28. 35.
+L22939	[PLAIN:"and  if  you  looke  upon  it  as  30.  35.  23.  60.  41.  22.  28.  34.  28.  35.  12.  18.  3,  40.  33.  42."]
+L22940	[PLAIN:"25.  40.  34.  12.  37.  you  are  infinitely  miftaken."]
+L22942	[PLAIN:"I  knowe  too  that  what  I  have  to  propofe  to  you  is  the  only  28.  41.  11.  30.  3.  3.  6.  18,"]
+L22943	CIPHER	RAW: 3.  12.  33.  19.  31.  35.  40.  39.  37.  25.  34.  12.  41.  35.  28.  35.  6.  17.  30.  2.  25.  25-  40.  30-
+L22943	CIPHER	CLEANED: 3. 12. 33. 19. 31. 35. 40. 39. 37. 25. 34. 12. 41. 35. 28. 35. 6. 17. 30. 2. 25. 25-? 40. 30-?
+L22944	CIPHER	RAW: 7.  12.  5.  41.  33.  3.  25.  29.  22.  12.  40.  26.  6.  35.  35.  23.  34.  36.  30.  35.  33.  31.  3.  19.  42.
+L22944	CIPHER	CLEANED: 7. 12. 5. 41. 33. 3. 25. 29. 22. 12. 40. 26. 6. 35. 35. 23. 34. 36. 30. 35. 33. 31. 3. 19. 42.
+L22945	CIPHER	RAW: 16.  28.  42.  10.  7.  25.  12.  87.  25.  aS.  mett  with  one  34.  39.  40.  42.  '35.  7.  25.  5.  12.  31.
+L22945	CIPHER	CLEANED: 16. 28. 42. 10. 7. 25. 12. 87. 25. aS.? mett? w1th? 0ne? 34. 39. 40. 42. '35.? 7. 25. 5. 12. 31.
+L22946	CIPHER	RAW: that  21.  41.  12.  33.  43.  25.  12.  33.  23.  40.  26.  28.  42.  16.  6.  41.  22.  2.  25.  12.  19.  36.
+L22946	CIPHER	CLEANED: that? 21. 41. 12. 33. 43. 25. 12. 33. 23. 40. 26. 28. 42. 16. 6. 41. 22. 2. 25. 12. 19. 36.
+L22947	[PLAIN:"He  thought  36.  35.  25.  30.  3.  28.  42.  10.  82.  6y.  tooke  it  imediately  for  granted  in"]
+L22949	[PLAIN:"28."]

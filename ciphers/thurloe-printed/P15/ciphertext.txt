@@ -1,0 +1,37 @@
+# Thurloe State Papers, collectionofstat05thur, printed p.~420-421
+# Sender: General Mountagu
+# Recipient: secretary Thurloe
+# Date: 16 Sept 1656 (aboard the Naseby)
+# Cipher system: Montagu's cipher (same family, not individually verified for THE=407 in this passage)
+# Prior work: same reconstructed cipher system as P11-14 (Tomokiyo); this specific date not named on that page
+# Notes: MS Vol. xli p.474; not the catalogued items
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat05thur, cached djvu text sources/ia-fulltext/collectionofstat05thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 35699-35711 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 4 cipher-tagged lines, 84 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L35699	[PLAIN:"d     for      fhe      1      ter        and    pro       vi      fions.     Wee  now  heare,  that  Spayn  hath"]
+L35701	CIPHER	RAW: 71  19690  2  93  33  6  18  103  105  i  73  19  94-77  59  8  3°27  23  452  321  236406500233
+L35701	CIPHER	CLEANED: 71 19690? 2 93 33 6 18 103 105 1 73 19 94-77? 59 8 3°27? 23 452 321 236406500233?
+L35703	[PLAIN:"or      d     e       red      to      fitt  galloons    and  other  fhipps,  which  wee  judge    will     bee"]
+L35705	CIPHER	RAW: 74  12   II    18  54  3  39  404  205  (18  499)    105    (12  350    494)   458    452    260  460  36  18  42
+L35705	CIPHER	CLEANED: 74 12 11 18 54 3 39 404 205 (18? 499)? 105 (12? 350 494)? 458 452 260 460 36 18 42
+L35707	[PLAIN:"0  u    t  neare    the       la     t     t       e    r      end    of      Janu      a      ry  and      if    ever     there.  ."]
+L35708	CIPHER	RAW: 19  266  329  407  275  650  11  12  180  343  8  7  2745  31  5443  10  99   105  254  185  413
+L35708	CIPHER	CLEANED: 19 266 329 407 275 650 11 12 180 343 8 7 2745 31 5443 10 99 105 254 185 413
+L35709	[PLAIN:"bee             hopes        to    fight  Spayne,  that  is      like     to        bee       the    tyme."]
+L35711	CIPHER	RAW: 36  56  93   IO  2    19  8  18  25  404  200  5OO  406  259  287  4O4  87  18  93  407  408.
+L35711	CIPHER	CLEANED: 36 56 93 10 2 19 8 18 25 404 200 500 406 259 287 404 87 18 93 407 408.

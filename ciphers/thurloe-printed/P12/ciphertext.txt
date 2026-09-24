@@ -1,0 +1,37 @@
+# Thurloe State Papers, collectionofstat05thur, printed p.~68
+# Sender: General Montagu
+# Recipient: secretary Thurloe
+# Date: 20 April 1656
+# Cipher system: as P11
+# Prior work: as P11
+# Notes: second cipher cluster of the same Montagu letter as P11
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat05thur, cached djvu text sources/ia-fulltext/collectionofstat05thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 5868-5880 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 4 cipher-tagged lines, 87 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L5868	[PLAIN:"i     t     t       i       t      until     the  prote&or  saccep       tance    was     obteyned"]
+L5870	CIPHER	RAW: 77  6  50  49  97  437  407  600  59  7  9  28  18  47  50  31  27  28  93  457  358,39.
+L5870	CIPHER	CLEANED: 77 6 50 49 97 437 407 600 59 7 9 28 18 47 50 31 27 28 93 457 358,39.?
+L5872	[PLAIN:"That  hee     had     fixt      his      w      o      r      d     for  thinge  s  to       w      r        i      t      e         to"]
+L5874	CIPHER	RAW: 406  239  240  375  231    21     19  12   II    196  (2)   415  90.      (I.)   404  21    73    49   50    18    404
+L5874	CIPHER	CLEANED: 406 239 240 375 231 21 19 12 11 196 (2)? 415 90. (1.)? 404 21 73 49 50 18 404
+L5875	[PLAIN:"the  protector  for       his     c     o       ri     f     e      n    t  to  obteyne  lett    er       s     for     us       to     give     a"]
+L5877	CIPHER	RAW: 407  600  196  231  28  19  27  90  18  52  6.  (II.)  404  358  286  183  90  19  435  404  219  7
+L5877	CIPHER	CLEANED: 407 600 196 231 28 19 27 90 18 52 6. (11.)? 404 358 286 183 90 19 435 404 219 7
+L5879	[PLAIN:"ffurance  not  to  oppofe  a  n  y  of  his  fleet  s  and  that  wee  fhall  f"]
+L5880	CIPHER	RAW: 23  25  26  12  31  52  28    18  320  404  363  55  37  58  343    231  495  90  105  406  452  402   59
+L5880	CIPHER	CLEANED: 23 25 26 12 31 52 28 18 320 404 363 55 37 58 343 231 495 90 105 406 452 402 59

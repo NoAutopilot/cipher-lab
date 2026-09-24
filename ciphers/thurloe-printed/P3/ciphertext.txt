@@ -1,0 +1,35 @@
+# Thurloe State Papers, collectionofstat02thur, printed p.402
+# Sender: Mr. Bradshaw, resident at Hamburgh
+# Recipient: secretary Thurloe
+# Date: not read (opening excerpt only)
+# Cipher system: unidentified
+# Prior work: none found ("Bradshaw" grepped, no hit)
+# Notes: MS Vol. xvii
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat02thur, cached djvu text sources/ia-fulltext/collectionofstat02thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 47994-48006 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 3 cipher-tagged lines, 57 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L47994	[PLAIN:"in  all  your  403  2   18  413  403   405  49  411   542  910.     I  remaine"]
+L47996	[PLAIN:"Your  very  affectionate  friend  to  ferve  you,"]
+L47998	[PLAIN:"John  Butler."]
+L48000	CIPHER	RAW: 412  60  40  411  405  401   2   417  19  50  546  60  19   910   11  405  49  400   413.
+L48000	CIPHER	CLEANED: 412 60 40 411 405 401 2 417 19 50 546 60 19 910 11 405 49 400 413.
+L48002	CIPHER	RAW: 406  541  26  13  405  413  419  409  405  530  419  421  414  48  405  24  419  405  39
+L48002	CIPHER	CLEANED: 406 541 26 13 405 413 419 409 405 530 419 421 414 48 405 24 419 405 39
+L48003	CIPHER	RAW: 401  405  44  912  2  49  401  48  419  409  411  546  for  my  faid  48  405  400  411,
+L48003	CIPHER	CLEANED: 401 405 44 912 2 49 401 48 419 409 411 546 f0r? my? fa1d? 48 405 400 411,
+L48004	[PLAIN:"I  fhall  ufe  this  or  one  31    19  403   44  405,  with  a  cable  about  it."]

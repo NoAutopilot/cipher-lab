@@ -1,0 +1,100 @@
+# Thurloe State Papers, collectionofstat07thur, printed p.527
+# Sender: General Monck
+# Recipient: secretary Thurloe
+# Date: not read (opening excerpt only)
+# Cipher system: unidentified (same style as P19/P22)
+# Prior work: none found
+# Notes: distinct letter from P19/P22 (different page)
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat07thur, cached djvu text sources/ia-fulltext/collectionofstat07thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 49509-49608 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 24 cipher-tagged lines, 565 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L49509	[PLAIN:"backward  in  it."]
+L49511	CIPHER	RAW: Z.  4  3  9  20  43  5  37  6  21  27   19  41.
+L49511	CIPHER	CLEANED: Z.? 4 3 9 20 43 5 37 6 21 27 19 41.
+L49513	[PLAIN:"As  to  our  affaires  the  factious  party,  discovering"]
+L49515	CIPHER	RAW: 5  34  39  2^  26  40  34  5  20  12  3  21  35  13  34,  39  16  11  12  3  9  39  21  26  40'
+L49515	CIPHER	CLEANED: 5 34 39 2^? 26 40 34 5 20 12 3 21 35 13 34, 39 16 11 12 3 9 39 21 26 40'?
+L49517	[PLAIN:"themielves  not  strong  enough"]
+L49519	CIPHER	RAW: 34  31  3  37  39   49  6  19   34  9  26  40  11  35   21  27  17  41  16  n  24  34  13  23
+L49519	CIPHER	CLEANED: 34 31 3 37 39 49 6 19 34 9 26 40 11 35 21 27 17 41 16 n? 24 34 13 23
+L49521	[PLAIN:"to  carry  on  delignes  aione,"]
+L49523	CIPHER	RAW: 40  II  36  27  28  41  26  39  35    28  29  15  II  29  26  40  17  14  41  26  7  5  36   3449
+L49523	CIPHER	CLEANED: 40 11 36 27 28 41 26 39 35 28 29 15 11 29 26 40 17 14 41 26 7 5 36 3449
+L49525	[PLAIN:"are  treating  with  the"]
+L49527	CIPHER	RAW: 26  9  6  13  34  19  17  29  11  34  5  23  26  29  11  3  15   13  39  35  13   5   41  19  27
+L49527	CIPHER	CLEANED: 26 9 6 13 34 19 17 29 11 34 5 23 26 29 11 3 15 13 39 35 13 5 41 19 27
+L49529	[PLAIN:"men  the  and  that  rabble,"]
+L49531	CIPHER	RAW: l7   45  *9  41  14  41  16  11  I.  22  13  29  39   14  13  D.  3  27  8  41  14  3  3^  35   3
+L49531	CIPHER	CLEANED: 17 45 *9? 41 14 41 16 11 1. 22 13 29 39 14 13 D.? 3 27 8 41 14 3 3^? 35 3
+L49533	[PLAIN:"and,  wee  heare,  wil  put  it  to"]
+L49535	CIPHER	RAW: 4  2  25  11,  3  29  6  43  13  11  14  13  3  37  11  43  19  25  33  38  41  21  39   41  26
+L49535	CIPHER	CLEANED: 4 2 25 11, 3 29 6 43 13 11 14 13 3 37 11 43 19 25 33 38 41 21 39 41 26
+L49537	[PLAIN:"a  pufh  that  way."]
+L49539	CIPHER	RAW: 5  33  40  34  14  39  ^  5  4  45  5  47-
+L49539	CIPHER	CLEANED: 5 33 40 34 14 39 ^? 5 4 45 5 47-?
+L49541	[PLAIN:"ant'  Desbrowi;  are  the  neads,  keeps  his  ground  ;"]
+L49543	CIPHER	RAW: O.  5   27  6  V.  5  35  13  41  14  XI  16  11  5  6  36.     Z.  18  11  13  31  36  14  21
+L49543	CIPHER	CLEANED: 0. 5 27 6 V.? 5 35 13 41 14 X1? 16 11 5 6 36. Z.? 18 11 13 31 36 14 21
+L49545	[PLAIN:"but  truly  gets  none  of  them  ;"]
+L49547	CIPHER	RAW: 34  !7  35   28  38  27  8,  2  40  39   39  3J   38  23  49  15  13  39  36  29  26  27  13  28  10
+L49547	CIPHER	CLEANED: 34 !7? 35 28 38 27 8, 2 40 39 39 3J? 38 23 49 15 13 39 36 29 26 27 13 28 10
+L49549	[PLAIN:"39"]
+L49552	[PLAIN:"JOHN   THURLOE   ESQ.    &c,  529"]
+L49554	[PLAIN:"for  things  run  in  the  fame  channel,  AT)     6   8"]
+L49556	CIPHER	RAW: 39    \6    13    22,    12    26    35    41    14    19    29    17    34   37    28    29    21    27    39    14    13    36   3    22<J-v^W*
+L49556	CIPHER	CLEANED: 39 \6? 13 22, 12 26 35 41 14 19 29 17 34 37 28 29 21 27 39 14 13 36 3 22<J-v^W*?
+L49558	[PLAIN:"managed  by  the  feme  hands  as  formerly ;"]
+L49560	CIPHER	RAW: 13  9  14  5  29  27  11  25  22  5  27  3  15  13  6  2  49  39  16  11  34  5  22  13  16  3
+L49560	CIPHER	CLEANED: 13 9 14 5 29 27 11 25 22 5 27 3 15 13 6 2 49 39 16 11 34 5 22 13 16 3
+L49562	[PLAIN:"and  truly  thinks"]
+L49564	CIPHER	RAW: 29  6  36  5  34  J2  26  35  24  11  37  25  47;  3  29  6  41  35  38  25  47  B.  39  16   21
+L49564	CIPHER	CLEANED: 29 6 36 5 34 J2? 26 35 24 11 37 25 47; 3 29 6 41 35 38 25 47 B.? 39 16 21
+L49566	[PLAIN:"nothing  would  conduce  to  pubhek  good"]
+L49568	CIPHER	RAW: 27  18  36  29  26  39  14  21  27  17    45  26  38  25  6  9  28  27  6  40  7  13  39  28  31
+L49568	CIPHER	CLEANED: 27 18 36 29 26 39 14 21 27 17 45 26 38 25 6 9 28 27 6 40 7 13 39 28 31
+L49570	[PLAIN:"more  then  fome attempt  of"]
+L49571	CIPHER	RAW: 98  4  25   19  9   18   15  28  26  6  24  26  27   II   39   16  II  29  34   26    24  13  5  41  39
+L49571	CIPHER	CLEANED: 98 4 25 19 9 18 15 28 26 6 24 26 27 11 39 16 11 29 34 26 24 13 5 41 39
+L49573	[PLAIN:"theirs,  if  it  pleafe  God"]
+L49575	CIPHER	RAW: 11  24  31  41  28  10  39  16   11  21  35   36,  21  10  19  41  33   23  13  5  34  11  17  26
+L49575	CIPHER	CLEANED: 11 24 31 41 28 10 39 16 11 21 35 36, 21 10 19 41 33 23 13 5 34 11 17 26
+L49577	[PLAIN:"to  make  it  unfuccelsful."]
+L49579	CIPHER	RAW: 8  41  26  22  5  20  11  19  41  38  29  34  40  9  7  11  36  10  38  23.
+L49579	CIPHER	CLEANED: 8 41 26 22 5 20 11 19 41 38 29 34 40 9 7 11 36 10 38 23.
+L49581	[PLAIN:"made  a  i'peech  to  all  the  officers  lafl:  h'iday,"]
+L49583	CIPHER	RAW: Z.  24  3  8  11  5  36  31   13   11  7  16  39   28  5  25  23  39  16  11  26  12  10  21  7
+L49583	CIPHER	CLEANED: Z.? 24 3 8 11 5 36 31 13 11 7 16 39 28 5 25 23 39 16 11 26 12 10 21 7
+L49585	[PLAIN:"but  with  very  great  moderation"]
+L49587	CIPHER	RAW: n  37  36  23  5   34  4'  i°  37  47  8  5  49,  2  38  41  45  19  39  16  40  11  37  47  17
+L49587	CIPHER	CLEANED: n? 37 36 23 5 34 4'? 1°? 37 47 8 5 49, 2 38 41 45 19 39 16 40 11 37 47 17
+L49589	[PLAIN:"and  kindnefs,  has  commanded"]
+L49591	CIPHER	RAW: 35  l3  3  4i   22  28  6  13  35  3  39  21  26  29  5  27  6  18  21  27  8  29  n  36,  14  5
+L49591	CIPHER	CLEANED: 35 13 3 41 22 28 6 13 35 3 39 21 26 29 5 27 6 18 21 27 8 29 n? 36, 14 5
+L49593	[PLAIN:"not  to  go  yet  into  the  country,"]
+L49594	CIPHER	RAW: 34  7  28  24  22   5  27  6  11   8    B.    27   26  41   39  26  15  28   II   47   13  39   19  29  41
+L49594	CIPHER	CLEANED: 34 7 28 24 22 5 27 6 11 8 B.? 27 26 41 39 26 15 28 11 47 13 39 19 29 41
+L49596	[PLAIN:"which  I  aflure"]
+L49598	CIPHER	RAW: 26  39  16  11  7  28  38  29  39  3J   47  45  14  21  716215  36  34  38  38  35  11  A
+L49598	CIPHER	CLEANED: 26 39 16 11 7 28 38 29 39 3J? 47 45 14 21 716215? 36 34 38 38 35 11 A?
+L49600	[PLAIN:"obeys  unwillingly,  unles  he  could  be  more"]
+L49602	CIPHER	RAW: B  28  2  13  47  36  38  27  45  19  25  23  31  29  15  25  47  38  27  23  13  36   14  13
+L49602	CIPHER	CLEANED: B? 28 2 13 47 36 38 27 45 19 25 23 31 29 15 25 47 38 27 23 13 36 14 13
+L49604	[PLAIN:"ierviceable  to  him  '"]
+L49606	CIPHER	RAW: 11  7  28  38  25  6  4  11  22  28  35   13  34  13  35  38  19  9  11  5  4  23  13  39  28  14  21
+L49606	CIPHER	CLEANED: 11 7 28 38 25 6 4 11 22 28 35 13 34 13 35 38 19 9 11 5 4 23 13 39 28 14 21
+L49608	[PLAIN:"here."]

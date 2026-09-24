@@ -1,0 +1,48 @@
+# Thurloe State Papers, collectionofstat05thur, printed p.~68-69
+# Sender: General Montagu
+# Recipient: secretary Thurloe
+# Date: 20 April 1656
+# Cipher system: as P11
+# Prior work: as P11
+# Notes: third cipher cluster of the same Montagu letter as P11; not the catalogued items
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat05thur, cached djvu text sources/ia-fulltext/collectionofstat05thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 5956-5981 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 7 cipher-tagged lines, 144 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L5956	[PLAIN:"On     thofe  thoughts  wee    are    under  faile     witha      1      1      o      u      r    better  mips    for"]
+L5958	[PLAIN:"May  20th.  345  420  428,23  452  114  438  400  21862313369192612  127  494  196"]
+L5960	[PLAIN:"Lifbon  haveinge     left      the    rear  ad.  w     i    t     h  faile     of        frigots    before  Cadiz  and     have"]
+L5962	CIPHER	RAW: 508  234,253  33  18  14  50  407  610  21  8  6  37  (16)  400  343  211,25  133  501  105  234
+L5962	CIPHER	CLEANED: 508 234,253? 33 18 14 50 407 610 21 8 6 37 (16)? 400 343 211,25? 133 501 105 234
+L5964	[PLAIN:"f      e      ntthePhe      nix    before    to     Lifbon     to      get     the      a      g     e       n       t      on       bo"]
+L5965	CIPHER	RAW: 59  18  27  6407  I  2   18   52  8   13   133  404    508    404  212  407  31   20  93    52    50  345    36  19
+L5965	CIPHER	CLEANED: 59 18 27 6407 1 2 18 52 8 13 133 404 508 404 212 407 31 20 93 52 50 345 36 19
+L5966	[PLAIN:"a     r      d      us       to    confult  h      o      w       to    manage  our  bufineffe  God   guide     us      for      the     b       e"]
+L5967	CIPHER	RAW: 7    12  II   4-35  404  156   37   19  21    404    308   30  45    12     129     (227  228   435  196  407  36  18
+L5967	CIPHER	CLEANED: 7 12 11 4-35? 404 156 37 19 21 404 308 30 45 12 129 (227? 228 435 196 407 36 18
+L5969	[PLAIN:"f      t       Wee    have     about  faile      of    fhips     with      us      fire     fhips    and      v    i    c  t"]
+L5971	CIPHER	RAW: 25  5°)  452  234  55  36  l9  45  5°  (27)  4°°  343  494  21  8  62  435  210  494  105  26  8  9  6
+L5971	CIPHER	CLEANED: 25 5°)? 452 234 55 36 19 45 5°? (27)? 4°°? 343 494 21 8 62 435 210 494 105 26 8 9 6
+L5973	[PLAIN:"uall       e       r       s       i       nc      1       uded     Wee  hope      to      meet    your  c    o     m     m"]
+L5975	CIPHER	RAW: 26  7  5  33  18  12  23  49  27  28  33  79  39  93  11  452  2  19  1  93  404  317  4So  9  30  48  65
+L5975	CIPHER	CLEANED: 26 7 5 33 18 12 23 49 27 28 33 79 39 93 11 452 2 19 1 93 404 317 4S0? 9 30 48 65
+L5977	[PLAIN:"an       d      s       by      the    way  which  would     bee    well    come       to       us        in      this      i'"]
+L5978	CIPHER	RAW: 7  27     II    25    I36407   21    55   24458     453    36  42   93  459  9    19    16   l8    4O443I    251   412  25
+L5978	CIPHER	CLEANED: 7 27 11 25 136407? 21 55 24458? 453 36 42 93 459 9 19 16 18 404431? 251 412 25
+L5979	[PLAIN:"1      e      i      g    h    t"]
+L5981	CIPHER	RAW: 54  59  77  46  2  6.
+L5981	CIPHER	CLEANED: 54 59 77 46 2 6.

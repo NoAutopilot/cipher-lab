@@ -1,0 +1,77 @@
+# Thurloe State Papers, collectionofstat07thur, printed p.611
+# Sender: Consul Maynard
+# Recipient: secretary Thurloe
+# Date: not read (opening excerpt only)
+# Cipher system: unidentified
+# Prior work: none found ("Maynard" grepped, only unrelated hit in cyphersolver/civilwar1.htm mirror)
+# Notes: re: siege of Elvas
+#
+# As transcribed (OCR), never silently repaired. Source: Internet Archive
+# identifier collectionofstat07thur, cached djvu text sources/ia-fulltext/collectionofstat07thur_djvu.txt
+# (gitignored; re-fetch with tools/ia_numeral_runs.py), djvu-text line numbers
+# 56521-56593 (NOT printed page numbers -- OCR running heads are unreliable at these
+# positions; printed_page above is from thurloe-check.tsv's own leaf check).
+# Regenerate this file with: python3 tools/thurloe_extract.py
+#
+# Format: one line per OCR source line, tagged with its djvu-text line number.
+# [PLAIN:"..."] = surrounding clear text, kept verbatim for orientation, not a
+# cipher group. A CIPHER pair (RAW / CLEANED) = a line the detector (>=4 tokens,
+# >=70% look like 1-4 digit numerals) judged to be cipher-group text: RAW is the
+# OCR verbatim, CLEANED applies only the l/i->1, o->0 OCR-digit-misread
+# normalisation (ciphers/orange-nassau-1572/decode.py's convention); a token still
+# not a clean 1-4 digit run after that gets a trailing '?' -- doubtful, not fixed.
+# 15 cipher-tagged lines, 350 numeral tokens (raw count, before dedup) in this window.
+#
+# ==========================================================================
+L56521	[PLAIN:"refuits  ilow,  wee  lee  noe"]
+L56523	CIPHER	RAW: 11  J9  37  35  I3   34  40  23  41  36   36  25  28  43  45  11  13  34  13  11  29  26  13  17
+L56523	CIPHER	CLEANED: 11 J9? 37 35 13 34 40 23 41 36 36 25 28 43 45 11 13 34 13 11 29 26 13 17
+L56525	[PLAIN:"great  cauie  as  yet  reaie  that"]
+L56527	CIPHER	RAW: 37  ll   5  4i  9  3  4o  34  13  5  34  4-7  13   4*  to  12  11  3  27   13  of  39  16  5  41  16
+L56527	CIPHER	CLEANED: 37 11 5 41 9 3 40 34 13 5 34 4-7? 13 4*? t0? 12 11 3 27 13 0f? 39 16 5 41 16
+L56529	[PLAIN:"hand."]
+L56531	[PLAIN:"5  27  6."]
+L56533	[PLAIN:"worfr.  factious  part  or  the"]
+L56535	CIPHER	RAW: I  The  45  26  27   34  41  is,  the  10  5  7  39  21  26  40  34  31  5  37  39  28  10  29   14
+L56535	CIPHER	CLEANED: 1 The? 45 26 27 34 41 1s,? the? 10 5 7 39 21 26 40 34 31 5 37 39 28 10 29 14
+L56537	[PLAIN:"officers  here  renew  their  old"]
+L56539	CIPHER	RAW: 13  28  12  10  21  7  13  35  34  16  11  37  13  25   11  29  13  45  39  16   11  19  27   28
+L56539	CIPHER	CLEANED: 13 28 12 10 21 7 13 35 34 16 11 37 13 25 11 29 13 45 39 16 11 19 27 28
+L56541	[PLAIN:"practice  remonftratmg ;"]
+L56543	CIPHER	RAW: 23  8  33  35  5  7  41  9  ll   of  35   ?3  24  26  27  36  39  27  5   41  19  29  l5  >   and  a
+L56543	CIPHER	CLEANED: 23 8 33 35 5 7 41 9 11 0f? 35 ?3? 24 26 27 36 39 27 5 41 19 29 15 >? and? a?
+L56545	[PLAIN:"few  dayes  ltnce  had  certainly"]
+L56547	CIPHER	RAW: 12  11  45  6  3  47  11  34  34  21  27  9  13  14  5  8  7  13  35  41  5  19  27  25  47  5
+L56547	CIPHER	CLEANED: 12 11 45 6 3 47 11 34 34 21 27 9 13 14 5 8 7 13 35 41 5 19 27 25 47 5
+L56549	[PLAIN:"alarmed  Whitehal  Weitmintter,"]
+L56551	CIPHER	RAW: 23   3  37   24  6  both  43  16  19  41  n  16  5  23  and  45  11  34  41  22  19  29  34  39
+L56551	CIPHER	CLEANED: 23 3 37 24 6 b0th? 43 16 19 41 n? 16 5 23 and? 45 11 34 41 22 19 29 34 39
+L56553	[PLAIN:"had  they  not  difagreed  about"]
+L56555	[PLAIN:"*3  35  14  5  8  39  l6  ll   49  27  l6  Afi  6   2I  34  5  *7  34  13  '  8  5  2  26  38  41"]
+L56557	[PLAIN:"wording  their  declaration."]
+L56559	CIPHER	RAW: 43  28  35  8  19  29  17  39  16  13  21  25   8  11  7  25  5  35  3  41  19  26  29.
+L56559	CIPHER	CLEANED: 43 28 35 8 19 29 17 39 16 13 21 25 8 11 7 25 5 35 3 41 19 26 29.
+L56561	[PLAIN:"Thofe  that  bandied  things  were"]
+L56563	CIPHER	RAW: 39  16  26  36  11  41  14  5  39  2  3  27  8  19  13  6  39  14  21  29  17  34  43  11  25
+L56563	CIPHER	CLEANED: 39 16 26 36 11 41 14 5 39 2 3 27 8 19 13 6 39 14 21 29 17 34 43 11 25
+L56565	[PLAIN:"parties  of  iJesborough     LamDert  ;       the  laft  appearing"]
+L56567	CIPHER	RAW: 13  the  31  5  35  41  19  11  36  28  10  V  and,  O ;  39  16   13  23  5  34  41  5  33   31
+L56567	CIPHER	CLEANED: 13 the? 31 5 35 41 19 11 36 28 10 V? and,? 0 ;? 39 16 13 23 5 34 41 5 33 31
+L56569	[PLAIN:"only  under  covert,  nines"]
+L56571	CIPHER	RAW: 11    3    15   21   29  J5  26  29  23  49  38  27  8   13  37  9  26  40  11  25  4i>    the  26  39
+L56571	CIPHER	CLEANED: 11 3 15 21 29 J5? 26 29 23 49 38 27 8 13 37 9 26 40 11 25 41>? the? 26 39
+L56573	[PLAIN:"ojrenly."]
+L56575	CIPHER	RAW: 16  13  37  28  31       129  25  47.
+L56575	CIPHER	CLEANED: 16 13 37 28 31 129 25 47.
+L56577	[PLAIN:",        They  broke  off  fome  heat,"]
+L56579	CIPHER	RAW: '     41  14  13  49  2  37  26  20  11  28  12  10  in  36  26  22  13  16  11  5  29->    which
+L56579	CIPHER	CLEANED: '? 41 14 13 49 2 37 26 20 11 28 12 10 1n? 36 26 22 13 16 11 5 29->? wh1ch?
+L56581	[PLAIN:"has  given  little  refpit ;  but  hold"]
+L56583	[PLAIN:"16  5  34  15. *9  4°  IJ  29  a  23  *9  41  39  25  Ir  37  x*  36  31  19  41 *  2  38  41  J4"]
+L56585	[PLAIN:"their  meetings,  unconrroukd."]
+L56587	CIPHER	RAW: 26  23  8  39  16   11  19  37  24  13  11  29   2I  27  J7  34>  and  40  27  9  26  29  29  37
+L56587	CIPHER	CLEANED: 26 23 8 39 16 11 19 37 24 13 11 29 21 27 J7? 34>? and? 40 27 9 26 29 29 37
+L56589	[PLAIN:"they  feem  more  calme."]
+L56591	CIPHER	RAW: 28  38  25  6.     Ac  prefent  41   14  13  49  34  13   n   24  a  little  22  28  37  n  7  5  23
+L56591	CIPHER	CLEANED: 28 38 25 6. Ac? prefent? 41 14 13 49 34 13 n? 24 a? 11tt1e? 22 28 37 n? 7 5 23
+L56593	[PLAIN:"F.  Desb.     have  appointed  committee"]
