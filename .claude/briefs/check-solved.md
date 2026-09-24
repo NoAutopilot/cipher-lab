@@ -2,12 +2,16 @@
 Six blind searchers (web, print, community lists, DECODE, Bourdeau, Aymeloglu) and a reconciler. Each
 searcher lists every query and URL; found=true only for a real solution, key, plaintext or documented
 attempt with a status. Verdict appended to NOTES.md with the date. + common tail.
-A verdict of `open` is written only in the same sentence as the edition (or calendar) read and the page(s)
-checked, e.g. "open -- Ribier 1666 vol.2 pp.140-145 read, letter absent." A verdict with no edition named in
-it defaults to `blocked`, never `open` (RETRO-2026-09-24e: csCS2a and csCS2c both posted "open" rows with the
-edition unread despite the same rule already stated in the LANE N COMMON tail -- a rule read once at claim
-time does not survive a five-row batch; putting it in the verdict sentence itself makes the gap visible to
-whoever reads the row).
+The bare status word stays alone on NOTES.md's first line (CLAUDE.md rule 5) -- do not fold a citation into that
+line. Instead, the line immediately below the status word (before anything else, including "QUEUE row:") is one
+sentence naming the edition or calendar actually read by *this worker* and the page(s) checked, e.g. "Ribier 1666
+vol.2 pp.140-145 read by this worker, letter absent." Quoting another source's summary of what it read ("Bourdeau:
+Gedenkstukken V gives nothing") does not satisfy this -- if you could not independently open the edition, the
+verdict is `blocked`, not `open`, and the blocked line says what you tried and what blocked it (RETRO-2026-09-24f:
+csNA wrote a bare, rule-5-compliant `open` for two rows, cited Bourdeau's read three paragraphs down instead of its
+own, and was corrected by the lane orchestrator -- it ran a full 45+ minutes after this rule was already pushed,
+so the rule's placement, not its absence, was the failure. RETRO-2026-09-24e's original wording assumed a
+sentence-form verdict this repo doesn't use.)
 For a target from the Trew Briefsammlung, a physician's correspondence, or any German/Latin medical-humanist
 collection, add aerztebriefe.de (Schlagwort "Geheimschrift") as a seventh search before scoring. Lesson of 24
 Sept 2026 (Posthius to Eysenmenger 1614/1618): the six standard sources missed a listed decipherment there;
