@@ -1,4 +1,4 @@
-status: drafted (gate 2: open-index rows owed, ASKS 44; JSTOR READ rows owed for Gramont and Danzay, JSTOR-QUEUE.tsv)
+status: drafted (Danzay HOLD of 24 Sept 2026 17:54 lifted: verifier V6 read Ryabov 2025, Quaestio Rossica 13/4, in full at 17:57 UTC -- a different cipher, letters of 14 Oct 1574 and 28 Feb 1578, BnF fr.4736 and fr.2812; no fr.20140, no 1557 letter; Danzay stays N4 and the paragraph stands. Open-index queries done from the cloud with the OpenAlex key, ASKS 44(a); still owed: JSTOR READ rows for Gramont and Danzay, JSTOR-QUEUE.tsv)
 subject: Gramont 1530 (fr.2980 ff.29-30) and Danzay 1557 (fr.20140 ff.35-36) read with your keys
 to: S. Tomokiyo, Cryptiana (address held by the person, not in this repository)
 targets: ciphers/fr2980-gramont, ciphers/fr20140-danzay-1557, ciphers/dupuy452-carpi-1520
@@ -49,7 +49,10 @@ tokens are at grade H, and on f.36r, 37 of 67. The reading is partial. Search lo
 - Prior print it rests on: your reconstruction, https://cryptiana.blogspot.com/2026/02/reconstruction-of-cipher-used-by.html
   and https://cryptiana.web.fc2.com/code/danzay.htm. Richard's biography (*Un diplomate poitevin du XVIe siècle:
   Charles de Danzay*, Poitiers 1910, https://archive.org/details/undiplomatepoite00richuoft) was read for it: its
-  appendix (p.238) prints only the letter of 25 Dec 1566, and it does not cite fr.20140.
+  appendix (p.238) prints only the letter of 25 Dec 1566, and it does not cite fr.20140. Ryabov, 'The Diplomatic
+  Cipher of Charles de Danzay', *Quaestio Rossica* 13/4 (2025), pp.1487-1508, https://doi.org/10.15826/qr.2025.4.1034,
+  was read for it: it reconstructs the table of the later cipher from the letters of 14 Oct 1574 and 28 Feb 1578 (BnF
+  fr.4736 ff.86-88, fr.2812 ff.44-46) and does not treat fr.20140 or the 1557 letter.
 - Image: https://gallica.bnf.fr/ark:/12148/btv1b52521512h/f69.item (canvases f69-f72 = f.35r-f.36v).
 - Folder and search log: https://github.com/noautopilot/cipher-lab/tree/main/ciphers/fr20140-danzay-1557 and
   https://github.com/noautopilot/cipher-lab/blob/main/ciphers/fr20140-danzay-1557/AUDIT.md

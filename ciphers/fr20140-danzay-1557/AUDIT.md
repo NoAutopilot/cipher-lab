@@ -125,7 +125,7 @@ text): 0 hits for Danzay, Dansay or Dantzai. The January 1557 and January 1558 e
   nulls. **It prints no reading or plaintext of f.35**, nor of the other three.
 - Ryabov 2025 (*Quaestio Rossica* 13/4, pp. 1487-1508). The abstract, via the journal page and WebSearch, says
   it reconstructs the cipher from letters of 14 Oct 1574 and 28 Feb 1578. That is a different cipher and a
-  different volume.
+  different volume. [Confirmed from the full text, 24 Sept 2026: see "Ryabov 2025" at the end.]
 
 **(e) Full-text engines**
 - IA be-api fts: "la promesse qui de long temps" 0; "attendant plus certain et expres commandement" 0.
@@ -1216,3 +1216,57 @@ JSTOR family: searched on the owner's machine 24 Sept 2026, 9 rows, 2 candidates
 Open indexes: OpenAlex (`api.openalex.org/works?search=...`) and Semantic Scholar (`/graph/v1/paper/search`) retried once each from the cloud at about 17:21 UTC: both HTTP 429 (shared free daily budget used up). The owner's run of 24 Sept 2026 (ASKS 34) covered Thurloe, Eckert and Blathwayt only; this target's queries are owed (ASKS row 44, `outreach/openalex-s2-owner-queries-2.md`).
 
 Outward drafts written this session (status drafted, nothing sent): see `outreach/` and CONTRIBUTIONS.md.
+
+## Ryabov 2025, read in full (verifier V6, 24 Sept 2026)
+
+Verifier V6 (Opus, for LANE V4, session_0135A8C45WsmXm6gYxJQz5cP), 24 Sept 2026 17:57 UTC. The parent put the Tomokiyo
+draft on hold at 17:54 after OpenAlex returned this article. Sections 3(d) and 3(e) had judged it from its abstract only.
+No decoding was done.
+
+**Item.** Sergey M. Ryabov, "Secrets of the Foreign Policy of the Last Valois in Northern Europe: The Diplomatic Cipher of
+Charles de Danzay", *Quaestio Rossica* 13/4 (2025), pp. 1487-1508, doi 10.15826/qr.2025.4.1034, open access. The article
+page at qr.urfu.ru/ojs/index.php/qr/article/view/qr.1034 and the PDF galley (22 pp., 530 kB) were fetched once to scratch,
+not to the repository. The text was extracted and grepped for 20140, 1557, Lorraine, cardinal, Tomokiyo and every "BnF",
+"fol." and 155x/156x date, and the body (pp. 1487-1496), the table (Appendix 1, pp. 1496-1498) and the headers of Appendices
+2-3 were read. The article is in English, not Russian as the brief expected; only the reference list is transliterated.
+Host: qr.urfu.ru, 4 requests (doi.org 1 redirect). elar.urfu.ru was not needed.
+
+| Question | Answer (page) |
+|---|---|
+| Which Danzay letters | Two only, to Henri III: Copenhagen **14 Oct 1574**, BnF fr.4736 ff.86-88, and Copenhagen **28 Feb 1578**, BnF fr.2812 ff.44-46 (pp. 1489-1490, 1492). It also mentions a plaintext dispatch of 26 Jan 1576 (Cinq cents de Colbert 398 f.123; n.5). |
+| Key or table printed | Yes. Appendix 1 is a reconstructed homophonic table: 5 signs for a, 3 for e, 3 for l, 4 for m, 4 for q; cc, ée, nn, rr; la, il, qui, que, pour; two nomenclators (Roy de Dannemarch, Roy de Suède); three signs for "space or null" (pp. 1493, 1496-1498). It is built from the contemporary marginal decipherment on the 1578 letter and checked against the 1574 letter (p. 1492). |
+| Decipherment printed | Yes, for those two letters: an English translation of the 1574 cipher passage (p. 1494) and the full Middle French texts of both letters (Appendices 2-3). |
+| fr.20140, f.35-36, 27 Jan 1557, the Cardinal of Lorraine | **None.** No hit for 20140, 1557 or Lorraine/cardinal anywhere in the text. The only 1550s dates are Danzay's career span (1548-1589) and the fall of Narva in 1558. |
+| Cites Tomokiyo | Yes, for the 1574 letter only: Cryptiana's "French Ciphers during the Reigns of Charles IX and Henry III", where that letter's cipher is noted as unsolved (p. 1492). It does not cite "Danzay's Ciphers" or the 1557 key, which Tomokiyo posted in Feb 2026, after this issue. |
+| Own sources | BnF fr.4736, fr.2812, Cinq cents de Colbert 398; Rigsarkivet TKUA; the printed *Correspondance de Charles Dantzai* (1824) and Bricka (1901), which the article says cover 1567-1575 with gaps (n.5); Richard 1910; Hauser 1931; Lublinskaya 1963 (DIVPF); Desenclos 2018. |
+
+**Same key?** No. The table is a different cipher. The glyph values differ at first sight: Ryabov's first a-sign is a
+"9" shape, and in Tomokiyo's 1557 table (`sources/cryptiana/web/danzay_1557.png`) the 9-like sign stands in the d column.
+Ryabov's h is an "a"-shaped sign, and his 1578 nomenclator set (Roy de Dannemarch, Roy de Suède) has no Suède counterpart in
+the 1557 table. This check was by eye on two images and was not a sign-by-sign comparison; it is enough to say the two
+tables are not the same. **Same letter?** No. **Overlapping plaintext?** No: the 1574 and 1578 letters concern Poland after
+Henri's flight, Reval and the Stettin indemnity, and an English Protestant league. The 1557 letter is not among them.
+
+**Credit question (for outreach, not the class).** Ryabov's key is his own reconstruction of the 1574/1578 cipher.
+Tomokiyo's key is his reconstruction of the 1557 cipher, from fr.20140 ff.16, 24 and 30. The two reconstructions are
+independent and do not compete. Our f.35-36 reading uses Tomokiyo's 1557 key only. Tomokiyo's own Danzay page already
+cites Ryabov for the later cipher (NOTES.md, "Check-solved").
+
+**Class: N4 unchanged** (no prior decipherment located). The article is the specific study of Danzay's cipher, and it does
+not print, calendar or decipher the 27 Jan 1557 letter. Nothing in it lowers the class. The family is now "searched" at the
+full-text level, where before it rested on the abstract.
+
+- Safe sentence (unchanged): "No prior decipherment located of Charles de Danzay's letter to the Cardinal of Lorraine,
+  Copenhagen, 27 Jan 1557 (BnF fr.20140 f.35-36), read with the key S. Tomokiyo published in 2026; Ryabov's 2025 study of
+  Danzay's cipher treats the later letters of 1574 and 1578."
+- Unsafe sentence: "The first decipherment of any Danzay cipher" or "Danzay's cipher was unknown until now". Ryabov 2025
+  reconstructed and published the 1574/1578 table, and Tomokiyo published the 1557 table in 2026.
+
+**Open-index family.** The parent ran six OpenAlex queries with the owner's key, 24 Sept 2026 about 17:50 UTC. There was one
+relevant hit, this article, now read. ASKS row 44(a) is marked done. The remaining gate-2 item for this target is the JSTOR
+READ row (Hauser 1923, stable/40944190).
+
+**Changes made.** The outreach draft's status line was updated and one sentence citing Ryabov 2025 was added to its Danzay
+bullet; the paragraph otherwise stands. The CONTRIBUTIONS.md row, ASKS.md row 44(a) and the NOTES.md sources were updated.
+status.json is untouched because the class did not change. No over-claiming sentence was found in the folder about Ryabov:
+sections 3(d)/3(e) and NOTES.md already said "different cipher, different volume", and this read confirms it.

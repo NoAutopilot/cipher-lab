@@ -206,6 +206,11 @@ coherent French; no image-hunting beyond that single leaf is needed.
   mirrored locally at `sources/cryptiana/web/danzay.htm` — credit Tomokiyo for the key reconstruction and the
   identification of the three contemporary decipherments; this worker did no cryptanalysis.
 - github.com/dbourdeau/cyphersolver, github.com/aaymeloglu/unsolved-ciphers (both checked, no relevant content).
+- S. M. Ryabov, "Secrets of the Foreign Policy of the Last Valois in Northern Europe: The Diplomatic Cipher of Charles
+  de Danzay", *Quaestio Rossica* 13/4 (2025), pp. 1487-1508, https://doi.org/10.15826/qr.2025.4.1034 (open access).
+  It reconstructs the table of Danzay's later cipher from his letters of 14 Oct 1574 (BnF fr.4736 ff.86-88) and
+  28 Feb 1578 (fr.2812 ff.44-46) and prints both letters. Read in full 24 Sept 2026 (verifier V6): no fr.20140, no 1557
+  letter, different table. See AUDIT.md "Ryabov 2025".
 
 ## Requests this pass
 
