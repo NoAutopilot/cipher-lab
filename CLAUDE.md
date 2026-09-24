@@ -70,7 +70,9 @@ recipient can check the search log; (4) rule 10 wording only; (5) the post is lo
 date, recipient, class and link, before it is sent; (6) every outward note carries the links a recipient can verify
 from their desk without asking us: the repository folder (AUDIT.md, key, reading), the primary source image (the
 Gallica or IIIF ark at the leaf), and the printed edition it rests on, at the page cited, on archive.org or HathiTrust.
-A subject line, a recipient line and a sign-off left blank for the person are part of every draft. A negative with a matched control is a contribution too.
+A subject line, a recipient line and a sign-off left blank for the person are part of every draft. The recipient line
+carries the institution's public contact address (read from its own contact page, with the date) so the person can send
+without looking it up; a private individual's address never goes in the file (24 Sept 2026, owner: "I gotta have an email address"). A negative with a matched control is a contribution too.
 
 ## Pipeline (who hands what to whom)
 
