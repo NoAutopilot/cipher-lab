@@ -1,0 +1,396 @@
+code	value	grade	source	note
+8	vingt	C	gloss	n=1 items=BLA190
+12	a	C	gloss	n=1 items=BLA188
+16	cent	C	gloss	n=3 items=BLA190,BLA194 other=a:1
+17	mille	C	gloss	n=1 items=BLA190
+18	a	C	bracket+gloss	n=34 items=BLA179,BLA185,BLA187,BLA188,BLA189,BLA190,BLA194 other=aussitot:1;quoy:1
+19	ab	C	gloss	n=1 items=BLA188
+21	ad	C	gloss	n=1 items=BLA188
+26	ai	C	bracket+gloss	n=8 items=BLA185,BLA188,BLA190 other=avec:1
+28	ne|au	C	bracket	n=2 items=BLA189,BLA190 other=au:1
+30	au	C	gloss	n=3 items=BLA185,BLA188 other=an:1
+32	app	C	gloss	n=1 items=BLA185
+34	ar	C	bracket+gloss	n=2 items=BLA188,BLA190
+36	at	C	gloss	n=1 items=BLA188
+38	au	C	bracket+gloss	n=5 items=BLA187,BLA188,BLA190 other=so:1;av:1
+40	abandonne	C	gloss	n=1 items=BLA185
+42	accepte	C	gloss	n=1 items=BLA190
+43	acces	C	bracket	n=1 items=BLA190
+46	accommodeme|acomodement	C	gloss	n=2 items=BLA187,BLA188 other=acomodement:1
+53	affaire	C	bracket+gloss	n=4 items=BLA188,BLA190,BLA194
+54	affection	C	bracket+gloss	n=7 items=BLA185,BLA188,BLA189,BLA190
+58	agit	C	bracket	n=1 items=BLA189
+59	agit|action	C	bracket+gloss	n=2 items=BLA188,BLA189 other=action:1
+60	agreable	C	gloss	n=1 items=BLA194
+65	ame	C	gloss	n=1 items=BLA194
+67	avoir	C	bracket+gloss	n=3 items=BLA185,BLA190
+68	avoit	C	gloss	n=2 items=BLA179,BLA188
+78	ambassadeur	C	bracket	n=1 items=BLA189
+84	apres	C	gloss	n=1 items=BLA185
+92	assure	C	bracket	n=1 items=BLA189
+96	attire	C	gloss	n=1 items=BLA188
+97	avance	C	gloss	n=1 items=BLA185
+98	avantage	C	gloss	n=1 items=BLA194
+100	aucun	C	bracket+gloss	n=4 items=BLA185,BLA188,BLA189,BLA194
+101	avec	C	bracket+gloss	n=13 items=BLA179,BLA187,BLA188,BLA189,BLA190,BLA194 other=pa:1;avoit:1
+103	aujourd'huy	C	gloss	n=1 items=BLA188
+106	auprez	C	bracket+gloss	n=3 items=BLA185,BLA187,BLA190 other=aupres:1
+109	aussitot	C	bracket+gloss	n=3 items=BLA189,BLA190,BLA194 other=re:1
+111	autre	C	bracket+gloss	n=4 items=BLA185,BLA188,BLA190
+113	ayant	C	bracket+gloss	n=4 items=BLA190
+119	bi	C	gloss	n=1 items=BLA190
+122	bon	C	gloss	n=1 items=BLA187
+123	be|br	C	bracket+gloss	n=3 items=BLA188,BLA189,BLA190 other=br:1;ter:1
+130	ble	C	bracket	n=1 items=BLA190
+132	si	C	gloss	n=1 items=BLA188
+133	cas	C	bracket	n=1 items=BLA190
+134	ar|esprit	C	gloss	n=2 items=BLA188 other=esprit:1
+135	remarque	C	gloss	n=1 items=BLA194
+136	besoin	C	bracket+gloss	n=2 items=BLA185,BLA190
+137	bien	C	bracket+gloss	n=2 items=BLA187,BLA190
+140	bonne	C	bracket+gloss	n=8 items=BLA187,BLA188,BLA189,BLA190 other=de:1
+152	cr	C	gloss	n=1 items=BLA188
+157	c'	C	bracket	n=1 items=BLA190
+162	car	C	bracket+gloss	n=4 items=BLA188,BLA189,BLA190
+163	ce	C	bracket+gloss	n=8 items=BLA185,BLA188,BLA190,BLA194 other=cen:1
+164	ch	C	gloss	n=3 items=BLA188
+169	com	C	bracket+gloss	n=3 items=BLA188,BLA190 other=cl:1
+174	au	C	bracket	n=1 items=BLA190
+184	catholique	C	gloss	n=3 items=BLA187,BLA188
+188	cell	C	gloss	n=1 items=BLA185
+191	c'est	C	gloss	n=2 items=BLA185,BLA188
+192	certain	C	bracket+gloss	n=4 items=BLA188,BLA190
+193	chacun	C	bracket	n=1 items=BLA189
+197	change	C	gloss	n=2 items=BLA187,BLA190
+205	comme	C	gloss	n=1 items=BLA194
+208	comme	C	bracket+gloss	n=4 items=BLA188,BLA189,BLA194
+210	commence	C	gloss	n=1 items=BLA179
+217	concert	C	bracket	n=1 items=BLA189
+218	conclurre	C	gloss	n=1 items=BLA188
+219	conclu	C	gloss	n=1 items=BLA185
+224	confidence	C	bracket	n=1 items=BLA189
+238	consideration	C	gloss	n=1 items=BLA190
+241	conteu	C	gloss	n=1 items=BLA188
+242	continuation	C	bracket	n=1 items=BLA189
+250	d	C	gloss	n=2 items=BLA187,BLA188
+251	d	C	gloss	n=1 items=BLA188
+255	dans	C	gloss	n=1 items=BLA188
+256	correspondance	C	bracket	n=2 items=BLA189,BLA190
+258	de	C	gloss	n=6 items=BLA187,BLA188,BLA194 other=afait:1;cotes:1
+259	cour	C	bracket+gloss	n=3 items=BLA188,BLA190
+263	credit	C	gloss	n=1 items=BLA188
+270	d	C	gloss	n=2 items=BLA185,BLA190
+271	d'	C	bracket+gloss	n=3 items=BLA185,BLA190
+275	dans	C	gloss	n=1 items=BLA185
+278	de	C	bracket+gloss	n=29 items=BLA179,BLA185,BLA188,BLA189,BLA190,BLA194
+279	dem	C	bracket	n=1 items=BLA190
+281	der	C	bracket	n=1 items=BLA190
+282	des	C	bracket+gloss	n=5 items=BLA185,BLA188,BLA190,BLA194
+289	du	C	bracket+gloss	n=10 items=BLA187,BLA188,BLA189,BLA194 other=porte:1;non:1
+290	dur	C	gloss	n=1 items=BLA188
+291	d'	C	gloss	n=1 items=BLA187
+295	dans	C	gloss	n=1 items=BLA194
+307	decouvrir	C	bracket	n=1 items=BLA190
+320	demarche	C	bracket	n=1 items=BLA189
+321	depourvu	C	gloss	n=1 items=BLA190
+322	dernier	C	bracket	n=1 items=BLA190
+323	par	C	bracket	n=1 items=BLA190
+325	desavantage	C	gloss	n=1 items=BLA188
+331	dessein	C	bracket	n=1 items=BLA190
+338	determine	C	gloss	n=1 items=BLA187
+339	detourne	C	gloss	n=1 items=BLA187
+342	difficulte	C	gloss	n=1 items=BLA188
+344	dixe|dire	C	bracket+gloss	n=2 items=BLA189,BLA190 other=dire:1
+345	dit	C	gloss	n=3 items=BLA187,BLA188 other=doit:1
+346	quant	C	bracket	n=1 items=BLA190
+351	dispose'	C	gloss	n=1 items=BLA194
+356	donne	C	gloss	n=2 items=BLA188,BLA190
+357	donc	C	gloss	n=1 items=BLA190
+358	dont	C	gloss	n=1 items=BLA190
+360	e	C	gloss	n=1 items=BLA190
+369	e	C	bracket+gloss	n=13 items=BLA188,BLA189,BLA190,BLA194
+379	el	C	gloss	n=2 items=BLA188
+381	en	C	bracket+gloss	n=19 items=BLA185,BLA187,BLA188,BLA189,BLA190,BLA194 other=on:1;ier:1;perfectioner:1
+384	er	C	bracket+gloss	n=4 items=BLA187,BLA188,BLA190 other=en:1
+385	et	C	bracket+gloss	n=15 items=BLA187,BLA188,BLA190,BLA194 other=es:5;ce:1;envoyes:1
+386	est	C	bracket+gloss	n=10 items=BLA188,BLA189,BLA190,BLA194 other=oit:1;c'est:1
+387	et	C	bracket+gloss	n=8 items=BLA185,BLA187,BLA189,BLA190,BLA194
+388	en	C	gloss	n=1 items=BLA190
+389	eu	C	bracket	n=1 items=BLA189
+390	ex	C	bracket	n=1 items=BLA190
+395	dit	C	gloss	n=1 items=BLA194
+396	on	C	gloss	n=1 items=BLA194
+399	ecrire	C	bracket	n=4 items=BLA189,BLA190 other=einre:1
+402	effect	C	bracket	n=1 items=BLA189
+404	egar	C	gloss	n=1 items=BLA188
+406	employ	C	bracket	n=1 items=BLA190
+415	ensuite	C	gloss	n=1 items=BLA188
+425	envie	C	bracket	n=1 items=BLA190
+426	m	C	gloss	n=1 items=BLA188
+427	envoye	C	gloss	n=1 items=BLA190
+429	espous	C	gloss	n=1 items=BLA188
+432	esperance	C	gloss	n=2 items=BLA188
+433	espere|espera	C	gloss	n=2 items=BLA185,BLA194 other=espera:1
+435	etat	C	bracket	n=1 items=BLA190
+438	ete	C	gloss	n=1 items=BLA188
+439	oftre	C	gloss	n=1 items=BLA187
+441	execute	C	gloss	n=1 items=BLA188
+446	extraordinaire	C	gloss	n=1 items=BLA188
+451	empereur	C	gloss	n=1 items=BLA187
+453	une	C	gloss	n=1 items=BLA188
+455	falloit	C	gloss	n=1 items=BLA188
+456	mettre	C	gloss	n=1 items=BLA188
+459	fais	C	gloss	n=1 items=BLA188
+461	fait	C	bracket+gloss	n=6 items=BLA185,BLA188,BLA189,BLA194
+465	fin	C	bracket	n=1 items=BLA189
+468	fort	C	gloss	n=1 items=BLA190
+473	faire	C	bracket+gloss	n=4 items=BLA185,BLA189,BLA190
+474	fais	C	bracket	n=1 items=BLA190
+475	faire	C	gloss	n=1 items=BLA194
+476	faut	C	gloss	n=1 items=BLA188
+477	faute	C	bracket	n=1 items=BLA190
+482	jet	C	gloss	n=1 items=BLA194
+488	foy	C	gloss	n=1 items=BLA188
+491	r|tire	C	gloss	n=2 items=BLA190,BLA194 other=tire:1
+493	fournir	C	gloss	n=1 items=BLA188
+495	it	C	gloss	n=3 items=BLA187,BLA188,BLA194 other=favorable:1
+500	gi	C	gloss	n=1 items=BLA188
+502	moi|france	C	bracket+gloss	n=2 items=BLA188,BLA189 other=france:1
+506	g	C	bracket+gloss	n=7 items=BLA185,BLA187,BLA188,BLA189,BLA190 other=gn:1
+508	ge	C	bracket+gloss	n=6 items=BLA188,BLA189,BLA190,BLA194
+510	al	C	bracket	n=1 items=BLA189
+515	gagne	C	bracket	n=1 items=BLA189
+518	garantie	C	bracket	n=1 items=BLA189
+520	garde	C	bracket+gloss	n=2 items=BLA188,BLA190
+521	garnison	C	bracket+gloss	n=3 items=BLA185,BLA189,BLA194
+525	general	C	gloss	n=1 items=BLA188
+530	je	C	bracket	n=1 items=BLA190
+532	gouvernement	C	bracket	n=1 items=BLA190
+533	grand	C	bracket	n=1 items=BLA190
+535	moins	C	gloss	n=1 items=BLA188
+538	moque	C	gloss	n=1 items=BLA188
+542	moyen	C	gloss	n=1 items=BLA188
+551	mettre	C	gloss	n=2 items=BLA187,BLA188
+555	heureux	C	gloss	n=1 items=BLA194
+558	au	C	gloss	n=1 items=BLA187
+560	fais	C	bracket	n=1 items=BLA190
+561	ie	C	gloss	n=1 items=BLA190
+563	humeur	C	bracket	n=1 items=BLA190
+575	parle|j'	C	bracket+gloss	n=3 items=BLA188,BLA190 other=j':1;il:1
+576	i	C	bracket+gloss	n=4 items=BLA185,BLA188,BLA189 other=il:1
+580	je	C	bracket+gloss	n=14 items=BLA185,BLA188,BLA189,BLA190,BLA194 other=le:3;fu:1;ge:1
+581	ie	C	gloss	n=4 items=BLA187,BLA188 other=te:1
+584	if	C	gloss	n=1 items=BLA188
+588	il	C	bracket+gloss	n=18 items=BLA185,BLA187,BLA188,BLA189,BLA190,BLA194 other=a:1
+591	in	C	bracket+gloss	n=3 items=BLA185,BLA188,BLA189
+592	jor|jo	C	bracket+gloss	n=4 items=BLA188,BLA190,BLA194 other=jo:1;so:1;oit:1
+593	ir	C	bracket+gloss	n=2 items=BLA187,BLA189
+594	is	C	bracket+gloss	n=6 items=BLA188,BLA190,BLA194 other=surpris:1;oit:1
+595	it	C	bracket+gloss	n=5 items=BLA185,BLA188,BLA190,BLA194 other=il:1;j':1
+596	on	C	gloss	n=6 items=BLA188
+597	jalouse	C	bracket	n=1 items=BLA190
+599	jamais	C	bracket	n=1 items=BLA189
+600	icy	C	bracket+gloss	n=3 items=BLA188,BLA189,BLA190 other=ici:1
+605	me|immancable	C	gloss	n=2 items=BLA188,BLA190 other=immancable:1
+607	mi	C	gloss	n=1 items=BLA190
+609	impression	C	gloss	n=1 items=BLA188
+613	inclination	C	bracket	n=1 items=BLA190
+620	interest	C	gloss	n=1 items=BLA190
+623	intention	C	gloss	n=1 items=BLA188
+638	italie	C	bracket+gloss	n=2 items=BLA189,BLA194
+647	ken	C	bracket+gloss	n=3 items=BLA185,BLA189,BLA190
+658	l	C	bracket+gloss	n=3 items=BLA187,BLA188,BLA189
+659	l'	C	bracket+gloss	n=18 items=BLA185,BLA187,BLA188,BLA189,BLA190,BLA194 other=l:2;p'econte:1;l'alliance:1
+660	la	C	bracket+gloss	n=12 items=BLA179,BLA187,BLA188,BLA189,BLA194
+661	le	C	bracket+gloss	n=16 items=BLA179,BLA185,BLA188,BLA189,BLA190
+662	les	C	gloss	n=6 items=BLA185,BLA187,BLA188,BLA190
+663	li	C	gloss	n=3 items=BLA185,BLA190
+665	co|lo	C	gloss	n=2 items=BLA188,BLA190 other=lo:1
+666	lu	C	gloss	n=1 items=BLA185
+668	l	C	gloss	n=1 items=BLA188
+672	lettre	C	gloss	n=2 items=BLA188,BLA190
+674	lieu	C	bracket	n=1 items=BLA190
+690	m'	C	bracket+gloss	n=4 items=BLA190 other=m:1
+691	ma	C	bracket+gloss	n=11 items=BLA188,BLA189,BLA190,BLA194 other=faute:1
+692	mais	C	bracket+gloss	n=6 items=BLA187,BLA188,BLA189,BLA194
+693	main	C	gloss	n=1 items=BLA188
+694	man	C	bracket	n=1 items=BLA190
+695	me	C	bracket+gloss	n=21 items=BLA185,BLA187,BLA188,BLA189,BLA190,BLA194 other=ne:1
+696	ment	C	bracket+gloss	n=3 items=BLA187,BLA189,BLA194
+697	mi	C	gloss	n=2 items=BLA188
+698	mis	C	gloss	n=1 items=BLA185
+701	mo	C	bracket	n=1 items=BLA190
+702	moi	C	bracket+gloss	n=5 items=BLA185,BLA189,BLA190
+703	mois	C	gloss	n=1 items=BLA190
+704	mon	C	gloss	n=4 items=BLA188,BLA190,BLA194
+709	majeste	C	gloss	n=2 items=BLA188
+713	malheur	C	gloss	n=1 items=BLA185
+719	marque	C	bracket	n=1 items=BLA190
+731	mettr	C	gloss	n=1 items=BLA187
+732	mieux	C	bracket+gloss	n=2 items=BLA188,BLA190
+733	monsieur	C	gloss	n=2 items=BLA187,BLA188
+734	min	C	gloss	n=1 items=BLA188
+735	monsieur	C	bracket+gloss	n=3 items=BLA189,BLA194
+737	monsieur	C	bracket+gloss	n=6 items=BLA179,BLA185,BLA190
+742	moyen	C	gloss	n=1 items=BLA190
+743	moyennant	C	gloss	n=1 items=BLA185
+753	ne'est	C	bracket	n=1 items=BLA190
+754	n	C	bracket+gloss	n=6 items=BLA185,BLA189,BLA190,BLA194 other=n':1
+755	ni	C	gloss	n=1 items=BLA188
+756	ne	C	bracket+gloss	n=19 items=BLA185,BLA187,BLA188,BLA189,BLA190,BLA194 other=no:1;ra:1
+757	ni	C	bracket	n=2 items=BLA189,BLA190
+758	no	C	bracket+gloss	n=7 items=BLA185,BLA187,BLA188,BLA189,BLA190
+759	non	C	bracket	n=2 items=BLA189,BLA190
+764	necessaire	C	gloss	n=1 items=BLA188
+765	necessite	C	gloss	n=1 items=BLA185
+766	negocie	C	gloss	n=1 items=BLA179
+770	nonobstant	C	bracket	n=2 items=BLA189
+792	oit	C	bracket+gloss	n=8 items=BLA187,BLA188,BLA190 other=davantage:1
+795	vient	C	gloss	n=1 items=BLA188
+796	on	C	bracket+gloss	n=10 items=BLA185,BLA187,BLA188,BLA189,BLA190
+797	ont	C	bracket	n=1 items=BLA189
+802	ou	C	bracket+gloss	n=4 items=BLA188,BLA189,BLA190 other=on:1
+807	obstin	C	bracket	n=1 items=BLA189
+816	ordre	C	gloss	n=1 items=BLA179
+821	p	C	bracket	n=1 items=BLA190
+822	pa	C	bracket+gloss	n=6 items=BLA185,BLA187,BLA188,BLA189,BLA190,BLA194 other=ra:2;raligno:1
+823	par	C	bracket+gloss	n=9 items=BLA185,BLA188,BLA189,BLA190
+824	pas	C	bracket+gloss	n=4 items=BLA185,BLA187,BLA190,BLA194 other=ma:1
+825	ne	C	gloss	n=1 items=BLA187
+828	pe|par	C	gloss	n=2 items=BLA188,BLA190 other=par:1
+829	je|peu	C	bracket+gloss	n=2 items=BLA190,BLA194 other=peu:1
+830	plus	C	gloss	n=2 items=BLA188
+831	po	C	gloss	n=1 items=BLA188
+833	point	C	bracket+gloss	n=5 items=BLA188,BLA190
+834	personne	C	gloss	n=1 items=BLA190
+835	pour	C	bracket+gloss	n=15 items=BLA185,BLA187,BLA188,BLA189,BLA190,BLA194 other=pourr:2;par:1
+838	pre	C	gloss	n=1 items=BLA188
+839	pri	C	gloss	n=1 items=BLA190
+841	pu	C	gloss	n=1 items=BLA185
+842	puis	C	bracket	n=3 items=BLA189,BLA190
+843	paix	C	gloss	n=5 items=BLA188,BLA194 other=pain:1;ferme:1
+849	monsieur	C	gloss	n=1 items=BLA188
+850	perte|parole	C	bracket+gloss	n=2 items=BLA188,BLA189 other=parole:1
+851	part	C	bracket+gloss	n=4 items=BLA188,BLA189,BLA190
+853	parti	C	gloss	n=1 items=BLA190
+854	particulier	C	gloss	n=2 items=BLA188,BLA190
+857	passe	C	gloss	n=1 items=BLA185
+867	pense	C	bracket	n=1 items=BLA190
+869	perdu	C	bracket+gloss	n=2 items=BLA190,BLA194
+870	perte	C	gloss	n=1 items=BLA188
+880	plustot	C	bracket	n=1 items=BLA190
+888	pouvoir	C	gloss	n=1 items=BLA179
+890	pro	C	gloss	n=1 items=BLA188
+891	preliminaire|perfection	C	gloss	n=2 items=BLA188,BLA194 other=perfection:1
+892	premier	C	gloss	n=4 items=BLA188,BLA190,BLA194 other=menier:1
+899	princesse	C	gloss	n=1 items=BLA188
+900	pris	C	bracket+gloss	n=5 items=BLA188,BLA189,BLA190 other=ecrit:1;que:1
+904	promis	C	gloss	n=1 items=BLA188
+907	proposition	C	gloss	n=1 items=BLA194
+909	public	C	bracket	n=1 items=BLA190
+910	puisque|quisque	C	bracket+gloss	n=2 items=BLA188,BLA190 other=quisque:1
+918	ro	C	gloss	n=1 items=BLA194
+919	marqua	C	gloss	n=1 items=BLA188
+922	qu	C	bracket+gloss	n=11 items=BLA188,BLA189,BLA190 other=qu':2;qu'ecrire:1;que:1
+924	quand	C	gloss	n=2 items=BLA185,BLA188
+926	que	C	bracket+gloss	n=24 items=BLA179,BLA185,BLA187,BLA188,BLA189,BLA190,BLA194 other=je:2;qui:1;qua:1
+928	qui	C	bracket+gloss	n=8 items=BLA188,BLA190,BLA194 other=que:1
+929	quil	C	bracket+gloss	n=7 items=BLA187,BLA188,BLA189,BLA190 other=qu'il:2;faut:1
+930	qu'ils|quils	C	bracket+gloss	n=2 items=BLA185,BLA189 other=quils:1
+932	quelque	C	bracket+gloss	n=4 items=BLA185,BLA188,BLA190
+937	quoyque	C	gloss	n=1 items=BLA185
+941	r	C	bracket+gloss	n=19 items=BLA185,BLA187,BLA188,BLA189,BLA190 other=v:2
+942	ra	C	bracket+gloss	n=8 items=BLA185,BLA188,BLA190,BLA194 other=va:1;ri:1;ve:1
+943	re	C	bracket+gloss	n=7 items=BLA185,BLA188,BLA190,BLA194 other=ve:2;pris:1;vi:1
+944	ren	C	bracket	n=1 items=BLA189
+945	ri	C	gloss	n=4 items=BLA188 other=ra:1
+947	ri	C	bracket+gloss	n=2 items=BLA179,BLA189
+948	ro|re	C	gloss	n=2 items=BLA187,BLA188 other=re:1
+951	rendre	C	gloss	n=1 items=BLA188
+958	recommence	C	bracket+gloss	n=2 items=BLA185,BLA189
+959	reconnoi	C	gloss	n=1 items=BLA190
+963	regle	C	gloss	n=1 items=BLA190
+968	religion	C	gloss	n=1 items=BLA188
+970	rencontre	C	bracket	n=1 items=BLA190
+971	rendre	C	bracket	n=1 items=BLA190
+972	rendu	C	gloss	n=1 items=BLA190
+974	repondu	C	bracket	n=1 items=BLA190
+981	en	C	bracket	n=1 items=BLA190
+984	resolu	C	bracket	n=1 items=BLA189
+991	faite|s'execute	C	gloss	n=3 items=BLA194 other=s'execute:1;reponse:1
+993	retranche	C	gloss	n=1 items=BLA188
+998	rien	C	bracket+gloss	n=3 items=BLA185,BLA189
+1006	roy	C	bracket+gloss	n=5 items=BLA179,BLA188,BLA189 other=roi:1
+1007	reine	C	bracket+gloss	n=2 items=BLA179,BLA189
+1013	s	C	bracket+gloss	n=27 items=BLA185,BLA187,BLA188,BLA190,BLA194 other=se:4;s'entendre:2;f:1
+1014	sa	C	bracket+gloss	n=5 items=BLA187,BLA188,BLA190 other=la:2
+1016	sans	C	gloss	n=3 items=BLA179,BLA185,BLA190
+1017	se	C	bracket+gloss	n=3 items=BLA185,BLA189,BLA190 other=ra:1
+1018	sec|ser	C	bracket+gloss	n=3 items=BLA189,BLA190,BLA194 other=ser:1;s:1
+1020	si	C	bracket+gloss	n=9 items=BLA187,BLA188,BLA189,BLA190,BLA194 other=on:1
+1022	so	C	bracket+gloss	n=2 items=BLA185,BLA190
+1024	son	C	bracket+gloss	n=5 items=BLA185,BLA188,BLA190
+1028	ha	C	gloss	n=1 items=BLA190
+1029	ste	C	gloss	n=1 items=BLA190
+1032	fu	C	gloss	n=4 items=BLA188,BLA190,BLA194 other=su:1;is:1
+1033	sur	C	bracket+gloss	n=14 items=BLA185,BLA188,BLA189,BLA190
+1038	scavoi	C	bracket	n=1 items=BLA190
+1039	sceu	C	gloss	n=1 items=BLA179
+1041	secours	C	gloss	n=2 items=BLA185,BLA188
+1042	secret	C	gloss	n=1 items=BLA179
+1045	semblable	C	gloss	n=1 items=BLA188
+1049	semble	C	gloss	n=1 items=BLA194
+1063	soupcon	C	bracket	n=1 items=BLA189
+1065	souhaitoit|souhaite	C	bracket+gloss	n=2 items=BLA188,BLA189 other=souhaite:1
+1069	soutenir	C	gloss	n=2 items=BLA190,BLA194
+1081	suite|fuite	C	gloss	n=2 items=BLA188,BLA194 other=fuite:1
+1085	que	C	gloss	n=1 items=BLA188
+1097	succede	C	gloss	n=1 items=BLA188
+1099	t	C	bracket+gloss	n=10 items=BLA179,BLA185,BLA188,BLA189,BLA190,BLA194 other=sceu:1;a:1;faire:1
+1100	ta	C	gloss	n=1 items=BLA188
+1102	te	C	gloss	n=4 items=BLA188 other=se:1
+1105	ter	C	gloss	n=1 items=BLA188
+1107	ser	C	bracket	n=1 items=BLA189
+1109	ti	C	bracket+gloss	n=12 items=BLA185,BLA187,BLA188,BLA189,BLA190 other=li:3;tar:1
+1112	tou	C	gloss	n=1 items=BLA190
+1113	tous	C	bracket+gloss	n=2 items=BLA188,BLA189
+1114	tout	C	bracket+gloss	n=4 items=BLA188,BLA190
+1119	tout	C	gloss	n=2 items=BLA187,BLA188
+1120	su	C	gloss	n=1 items=BLA194
+1121	tache	C	bracket	n=2 items=BLA190
+1123	garde	C	gloss	n=1 items=BLA187
+1125	temoigne	C	gloss	n=2 items=BLA188,BLA194
+1129	temps	C	gloss	n=2 items=BLA185
+1131	tout	C	gloss	n=1 items=BLA187
+1135	travaille	C	gloss	n=2 items=BLA187,BLA194
+1137	trouve	C	gloss	n=1 items=BLA185
+1142	u	C	gloss	n=2 items=BLA188,BLA190
+1143	v	C	bracket+gloss	n=3 items=BLA188,BLA190 other=u:1
+1145	ve	C	bracket+gloss	n=2 items=BLA189,BLA190
+1147	vi	C	bracket	n=1 items=BLA189
+1148	un	C	gloss	n=6 items=BLA185,BLA187,BLA188,BLA190
+1149	une	C	bracket+gloss	n=9 items=BLA187,BLA188,BLA189,BLA190 other=vi:1;paix:1
+1150	vo	C	bracket+gloss	n=3 items=BLA188,BLA190
+1153	vou|vous	C	gloss	n=2 items=BLA185,BLA187 other=vous:1
+1154	vous	C	bracket+gloss	n=16 items=BLA187,BLA188,BLA189,BLA190,BLA194
+1155	ut	C	bracket	n=1 items=BLA189
+1158	valoir	C	bracket	n=1 items=BLA190
+1176	votre	C	bracket+gloss	n=4 items=BLA189,BLA190,BLA194
+1182	traite|vray	C	bracket+gloss	n=2 items=BLA187,BLA190 other=vray:1
+1185	utile	C	gloss	n=2 items=BLA185,BLA188
+1198	un	C	gloss	n=1 items=BLA188
+1200	ze|x	C	bracket+gloss	n=2 items=BLA188,BLA189 other=x:1
+1201	y	C	gloss	n=5 items=BLA185,BLA188,BLA190
+1206	deux	C	gloss	n=1 items=BLA190
+1207	trois	C	gloss	n=2 items=BLA190
+1209	cinq	C	gloss	n=1 items=BLA188
+1211	sept	C	gloss	n=1 items=BLA190
+1212	huit	C	gloss	n=1 items=BLA188
+1213	neuf	C	gloss	n=2 items=BLA179,BLA190
+1240	s|que	C	bracket+gloss	n=2 items=BLA187,BLA189 other=que:1
+1243	il	C	bracket	n=1 items=BLA190
+1250	hier|c'est	C	gloss	n=2 items=BLA187,BLA188 other=c'est:1
+1255	j'ai	C	gloss	n=1 items=BLA188
+1290	il	C	gloss	n=1 items=BLA188
+1324	gi	C	bracket	n=1 items=BLA189
+1350	le	C	gloss	n=1 items=BLA188
