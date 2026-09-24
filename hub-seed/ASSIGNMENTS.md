@@ -332,3 +332,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T17:00Z	session_01TYYHUF4Wp6aehGDRQF6Qrv	LANE R4 L (Sonnet, cap $3)	M36 f.104 pass C + dataset	live
 2026-09-24T17:00Z	session_01TUCsu5jvT9abcbErymiSk3	LANE R4 M (Sonnet, cap $5)	Marie de Medicis 1610 key capture + apply	live
 2026-09-24T17:00Z	session_018cVYFykz1TpBPHHHgWqHuN	LANE R4 N (Opus, cap $7)	Villeroy 1595 + Garbino 1528 control-first	live
+2026-09-24T17:10Z	session_0162BqYqTNF2sZPq4qELMPKu	N4 significance memo (Opus, cap $8)	N4-READINGS.md	what each N4 passage says and why it matters, rule 10 wording
+2026-09-24T17:08Z	session_01GmsYdQh3aQqRj6zP9TPgkw	close PR 9 (Sonnet, cap $1)	pull request 9	unmerged close
