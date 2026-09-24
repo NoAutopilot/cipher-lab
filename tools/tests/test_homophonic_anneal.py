@@ -21,3 +21,11 @@ with tempfile.TemporaryDirectory() as t:
     share = json.load(open(o))['share']
     assert share >= 0.9, share
     print('ok', share)
+
+# allowed= restricts a sign's letters (vowel-indicator marks): the restricted sign never leaves its set
+sys.path.insert(0, os.path.join(R, 'tools'))
+import random, homophonic_anneal as ha
+m = ha.Model([open(os.path.join(R, 'tools', 'data', 'de16', 'composed_enhg.txt'), encoding='utf-8').read()[:20000]])
+_, k = ha.anneal(list('abcabcxyzxyz'), m, 2000, random.Random(1), 1.0, allowed={'x': 'aeiou', 'y': 'e'})
+assert k['x'] in 'aeiou' and k['y'] == 'e', k
+print('ok allowed')

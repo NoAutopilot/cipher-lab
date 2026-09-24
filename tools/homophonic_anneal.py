@@ -67,8 +67,9 @@ def score(model, plain, uni_w):
     return s + uni_w * u
 
 
-def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None):
-    """Incremental annealing: a move re-scores only the n-grams touching the changed sign's positions."""
+def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None):
+    """Incremental annealing: a move re-scores only the n-grams touching the changed sign's positions.
+    allowed: optional {sign: "letters"} restricting what a sign may decode to (e.g. vowel-indicator marks to "aeiou")."""
     o = model.order
     signs = sorted(set(seq))
     letters = list(ALPHA)
@@ -78,7 +79,9 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None):
     n = len(seq)
     starts = {s: sorted({j for i in pos[s] for j in range(max(0, i - o + 1), min(i, n - o) + 1)}) for s in signs}
     fixed = fixed or {}
-    key = {s: fixed.get(s) or rng.choices(letters, weights)[0] for s in signs}
+    allowed = {s: list(v) for s, v in (allowed or {}).items()}
+    key = {s: fixed.get(s) or (rng.choice(allowed[s]) if s in allowed else rng.choices(letters, weights)[0])
+           for s in signs}
     signs = [s for s in signs if s not in fixed]  # crib-fixed signs never move
     pl = [key[x] for x in seq]
     lp = model.logp
@@ -94,7 +97,7 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None):
         T = t0 * (1 - it / iters) + 0.02
         s = rng.choice(signs)
         old = key[s]
-        new = rng.choice(letters)
+        new = rng.choice(allowed.get(s, letters))
         if new == old:
             continue
         js = starts[s]
@@ -117,11 +120,11 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None):
     return score(model, "".join(bestkey[x] for x in seq), uni_w), bestkey
 
 
-def solve(seq, model, restarts, iters, seed, uni_w, fixed=None):
+def solve(seq, model, restarts, iters, seed, uni_w, fixed=None, allowed=None):
     rng = random.Random(seed)
     results = []
     for r in range(restarts):
-        results.append(anneal(seq, model, iters, rng, uni_w, fixed=fixed))
+        results.append(anneal(seq, model, iters, rng, uni_w, fixed=fixed, allowed=allowed))
     results.sort(key=lambda x: -x[0])
     return results
 
