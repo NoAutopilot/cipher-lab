@@ -40,3 +40,5 @@ stop and tell the owner.
 
 Sonnet for searches, sweeps, harvesting and transcription passes. The strongest model only for reconciling
 passes against an image, verifier verdicts and orchestration. `CLAUDE.md`'s Usage section is binding.
+
+**Scaling rule, 24 Sept 2026 05:12 UTC (owner: "2x our efforts overall keeping our rate limit approach in mind").** Seven lanes (T, G, V, S winding down, N, R, W), each capped at $120 and 16 live workers; the parent adds a lane on an unowned host family whenever every lane is at capacity and its own rate-limit status is still `allowed`. `allowed_warning` anywhere: that lane stops spawning and says so in ROOM.md; `rejected`: every lane interrupts its workers, notes the reset time here, and re-arms for it. Gallica stays at two fetchers regardless.

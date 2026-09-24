@@ -129,3 +129,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 103 | 24 Sep | cipher-lab | M19 Du Vergier (Clairambault 1108): leaves, extent, interlinear-mark check, who/to whom | LANE G | access, Sonnet cap $6 | running, session_01PAx7T3Lgc5brsc2SKf1Yvf |
 2026-09-24T05:05Z	session_01W4z8JhXJYHRjorPC1Qkpiy	LANE N orchestrator (Opus, cap $80)	nominations lane	steady stream of stage-2 copy-free nominations; DECODE census; successor to LANE S
 2026-09-24T05:05Z	session_01SEnQgi5wPVmMADaVHnWkNN	LANE R orchestrator (Opus, cap $80)	recovery lane	U2, U1, W1, rah-canada-1869, then LANE N nominations
+2026-09-24T05:07Z	session_011UFnhZnyCntZ8Bn9FpKyTq	LANE W orchestrator (Opus, cap $120)	English verification lane	Eckert E4/E5 N4 gap, Thurloe P4 audit, LANE R readings

@@ -119,7 +119,7 @@ during a background fetch). ROOM.md: a claim commit stages ROOM.md only (5573927
 ## Lane structure, 24 Sep 2026, 03:05 UTC (owner: scale to about fifty live sessions)
 
 The parent orchestrator (session_01EFmUvFAifLKGdBSsW9mjEG, "cipher-lab-7a") runs four lane orchestrators, each Opus with a
-cap of $80 and up to about ten workers, each owning its hosts so no two lanes hit the same host in parallel:
+cap of $80 (raised to $120 and 16 workers at 05:12 UTC 24 Sept 2026, when the owner authorised doubling the effort within the rate limit) and up to about ten workers, each owning its hosts so no two lanes hit the same host in parallel:
 
 | Lane | Session | Owns | Hosts |
 |---|---|---|---|
@@ -129,6 +129,7 @@ cap of $80 and up to about ten workers, each owning its hosts so no two lanes hi
 | S, scouts and detectors | session_01PE7TAF6Hsp3MHtFEkDPP4a | check-solved on N20+ and Q rows, extraction of printed cipher, further detector rounds, non-Gallica catalogues | IA advancedsearch, TNA Discovery API, BL, NRS, Wellcome, LOC, BSB, Europeana |
 | N, nominations (successor to S, 05:04 UTC) | session_01W4z8JhXJYHRjorPC1Qkpiy | check-solved N48-N66 and R rows, new catalogue families (Italian and Vatican archives, PARES, LoC, NARA, Dutch), HTRC detector, the DECODE Non-decrypted census; target four stage-2 nominations an hour, posted as ROOM `nomination:` lines | IA advancedsearch, TNA Discovery API, BL, Wellcome, loc.gov, NARA, PARES, Italian and Vatican sites, Huntington CONTENTdm, Lambeth CalmView, Riksarkivet, HTRC, de-crypt.org (one worker at a time) |
 | R, recovery and cryptanalysis on copy-free targets (05:04 UTC) | session_01SEnQgi5wPVmMADaVHnWkNN | U2 Blathwayt alignment, U1 Luzerne, W1 Oxenstierna solver with control, rah-canada-1869, then LANE N's copy-free nominations; readings to LANE V | hdl.huntington.org, RAH, Riksarkivet IIIF, NARA and loc.gov images, US library image servers |
+| W, verification of English-language readings (05:06 UTC) | session_011UFnhZnyCntZ8Bn9FpKyTq | Eckert E4/E5 toward N4 (Zooniverse Talk gap), Thurloe P4 audit, every reading from LANE T and LANE R, English results-list audit; LANE V keeps the French BnF targets and Google Books | HathiTrust APIs, HTRC, loc.gov, Founders Online, NARA, Wayback, Huntington catalogue, Riksarkivet and Scandinavian editions, BHO |
 
 Every lane writes its own LEDGER, ASSIGNMENTS and results rows, hands readings to LANE V by a ROOM line, stops spawning at
 rate-limit status `allowed_warning` and interrupts its workers at `rejected`. The parent keeps the board, ASKS, the
