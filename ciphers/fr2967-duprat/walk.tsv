@@ -103,3 +103,11 @@ canvas	stamped_page	content	date	heading
 107	106	clear letter	-	continuation of Latin treaty
 108	107	clear letter	-	continuation of Latin treaty (articles)
 109	108	clear letter	-	continuation/close of Latin treaty (articles)
+112	111	clear letter	-	"Lettre Escrite au Roy francois premier par Ladmiral de Bouniuet" (repeat item, new title + text)
+113	112	clear letter	-	continuation, ink-blot damage on facing page, text unaffected
+114	113	clear letter	-	continuation
+115	114	clear letter	-	continuation
+116	115	clear letter	-	close of prior item + "Lettre Escrite au Roy Francois 1er par Louis de la Tremoille qui a este bien souvent Diverses fois en Italie" (repeat title + text)
+117	116	clear letter	-	continuation/close of La Trémoille letter, signed
+119	118	decipherment	-	item 41 (Fol.118) title confirmed: "Dechiffrement de Lettre Envoyé par le Chancelier Du prat au Roy francois premier touchant le voyage qu'on alloit faire secrettement en Sicille. Le duc d'Alençon, comte de Sainct-Pol..." -- one canvas after the earlier LANE G2 probe's off-by-one miss at canvas 118; clear prose decipherment text, no raw cipher symbols
+120	119	decipherment	-	continuation of item 41 decipherment (troop movements: Duc de Vendôme, d'Alençon, de Guise)
