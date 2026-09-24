@@ -475,3 +475,32 @@ no printed page. La Huguerye, Mémoires t. I pp. 175-176, describes this cipher 
 the practice of sending two or three duplicates to Orange, and Alba's failure to read intercepted packets: useful
 context for the solver. Suggestions, not done: HHStA Wiesbaden Abt. 170/171 in Arcinsys for Dillenburg file copies;
 Daussy 2007 (JSTOR row); OpenAlex and Semantic Scholar when their budgets reset.
+## W1: WV2 readings (LANE R2 worker W1, Opus, 24 September 2026) -- progress, stopped at cap
+
+Stopped by the LANE R2 orchestrator at 09:43 UTC (over the $9 cap). Two blind Sonnet passes (wv2/passA, wv2/passB, one
+TSV per page); `wv2/build.py` reconciles per page (tools/reconcile_passes.py; `wv2/linemap.tsv` fixes pass B's one-line
+slip on 5811 p5), joins pages into `ciphertext_<nr>.tsv`, writes `decode_wv2.json`
+(`python3 tools/decode_key.py ciphers/lodewijk-van-nassau-1573-74 --config decode_wv2.json [--check]`; decode.json and
+the four earlier readings untouched). `wv2/table_test.py` scores numeral runs (<=120) as French 5-gram bits/char under
+R18's table and every cyclic shift of its origin; `--share` gives the share of numerals in 12-sign windows under 4.0 b/c.
+Controls: siblings 3.14 b/c, 96.1%; 4610 80.2%. Matched synthetic control (`wv2/control.py`, 146 numerals, R18 design,
+period French): 8% transcription error -> origin found (k=0 or k=37), 81.5%; 30% error -> 43.8%.
+
+| letter | date | pages passed | table test (k=0) | French share | reading tokens |
+|---|---|---|---|---|---|
+| 5799 | 3 Apr 1573 | p1 A+B (92.6% agree) | 8.93 b/c, no shift reads (best k=16 6.44) | 0/146 (0.0%) | none: table fails; control 81.5% |
+| 5811 | 13 Apr 1574 | p1,p2,p5 A+B (90.6/66.0/80.8%) | 4.65 b/c | 1076/1460 (73.7%) | 1542: C 582, I 81, M 825, U 54 |
+| 5810 | 6 Jan 1574 | p1,p2,p3,p5,p6,p7 B only | 4.09-4.31 (p1,p2) | 65.1-98.6% per page | 3096: I 103, M 2771, U 222 (single pass, all M) |
+| 4503 | 15 Apr 1574 | p1 B only (not built) | 2.74 b/c | 226/226 (100%) | not built |
+| 5194, 5797 | 1572, 1573 | none | -- | -- | -- |
+
+Findings: 5810, 5811 and 4503 (1574) read under R18's table at its own origin, so 4612's failure (4.3% share, no shift
+reads) is not a general 1574 table change. 5799 (3 Apr 1573) uses another table (not a cyclic shift); 4610 (June 1573)
+reads under R18's, so the change falls between April and June 1573 or 5799 is a separate key. Sample 5811 p1: "vostre
+deliberation ... avec voz troupes par deca ... vostre chemyn entre Grave et ... partie de mes capitaines ... es environs
+de Tiel"; 4503: "... pour vostre escorte; pour demain aurons quelque trente cinq ou trente six compaignies ensamble ...
+passer la riviere pour vous aller recepvoir". Pass A notes 5811 p5 is a parallel copy of p1+p2. Search log: none (no
+print checked). Novelty not classified.
+Left: settle 5811 disagreements (318 rows in wv2/recon/05811/*/disagreements.tsv) on the image; pass A for 5810 and 4503
+(then `wv2/build.py`, add 04503 to KEYED); 5194 and 5797 untranscribed (band crops can be regenerated with a playwright
+screenshot of the page scaled 2x); 5799 and 4612 need a table recovery (cryptanalysis, a separate brief).
