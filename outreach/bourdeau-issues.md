@@ -1,4 +1,4 @@
-status: ready 24 Sept 2026 (two issues, post from your account)
+status: superseded 24 Sept 2026 by outreach/bourdeau-issue-gramont.md and outreach/bourdeau-issue-thurloe.md (pre-filled new-issue links)
 subject: see each issue title below
 to: github.com/dbourdeau/cyphersolver/issues/new
 targets: ciphers/thurloe-printed, ciphers/fr2980-gramont

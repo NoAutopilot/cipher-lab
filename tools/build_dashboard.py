@@ -257,7 +257,12 @@ def reflow(text):
 
 def copy_field(uid, label, value, pre=False):
     """One labelled value with its own copy button (address, subject or body)."""
-    shown = f'<pre class="mail">{E(value)}</pre>' if pre else f'<code class="val">{E(value)}</code>'
+    if pre:
+        shown = f'<pre class="mail">{E(value)}</pre>'
+    elif re.match(r"^https?://\S+$", value.strip()):
+        shown = f'<a class="val" href="{E(value.strip())}">{E(short(value.strip(), 80))}</a> <span class="muted small">(opens with title and body filled in; press Submit)</span>'
+    else:
+        shown = f'<code class="val">{E(value)}</code>'
     return (f'<div class="cf"><div class="cf-head"><span class="cf-label">{E(label)}</span>'
             f'<button type="button" class="copy" data-for="{uid}">Copy</button></div>{shown}<textarea id="{uid}" hidden>{E(value)}</textarea></div>')
 
