@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 17:00 UTC",
+ "updated": "24 Sep 2026 17:08 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -616,6 +616,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 17:08",
+   "what": "Ninth second opinion checked (Saxony 53/57): no prior print. Score for the day: nine outside checks, zero prior prints found, nine folders corrected. Checked pull requests closed unmerged."
+  },
   {
    "when": "24 Sep, 17:00",
    "what": "All eight checked ChatGPT second opinions: no prior print or decipherment found for any reading; classes unchanged; each one caught a citation, count or attribution slip in our files, now corrected. The ninth is being checked. Lanes widened on your call."
@@ -1542,18 +1546,18 @@
  "lanes": [
   {
    "name": "Lane R4, recovery",
-   "live": 5,
-   "focus": "reopened 16:58 on the owner's 16:53 decision (cap $80, 8 workers): Salviati other leaves for the code+mark model, Seure 1558 capture, Marie de Medicis 1610 key capture, Villeroy/Garbino control-first, 1519 key pass C; Posthius read (for V4)"
+   "live": 2,
+   "focus": "Salviati leaves f.54v-57v capture; the four Gallica letters from the cyphersolver re-diff next; 1519 key to close"
   },
   {
    "name": "Lane N3, copy-free nominations",
-   "live": 0,
-   "focus": "closed 16:36 with four copy-free nominations and re-woken 16:57 with six new digitised-collection scout families (Swiss, German, Dutch, Europeana, Vatican, Bourdeau's copy-free rows)"
+   "live": 5,
+   "focus": "six new copy-free scout families running; Swiss e-manuscripta and e-codices tested negative (no letter facet, harvest too large for the request cap)"
   },
   {
    "name": "Lane V4, verification",
-   "live": 1,
-   "focus": "eight of nine ChatGPT second opinions checked: no prior print in any, every one yielded citation or count corrections to our files, all classes unchanged; the ninth (Saxony 53/57) being checked"
+   "live": 0,
+   "focus": "all nine ChatGPT second opinions checked: no prior print or decipherment found for any reading, every class unchanged, citation and count slips corrected in every folder; next verifiers run when the JSTOR rows land"
   }
  ],
  "headline": "Afternoon of 24 Sept: fifteen readings at N4, one cryptanalytic. Cryptiana accepted the Bowes 1583 sign table. ChatGPT's second opinions are flowing: eight posted, the first checked with no prior print found and four small errors in our files fixed. Posthius 1614/18 turned out already deciphered on the leaf (N0). The seven-day usage window is at its warning; two focused lanes run on your call. Ready for you: the JSTOR searches from your PC, the mailbox variables, the DECODE message, the history swap; six grant drafts wait in cipher-lab-private."
