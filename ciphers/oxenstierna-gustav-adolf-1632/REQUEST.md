@@ -1,5 +1,7 @@
 # Request: oxenstierna-gustav-adolf-1632 (row W1/R10, key hunt + original-letter hunt)
 
+> **Verifier note, 24 Sept 2026:** letter 602 was deciphered and printed in 1888 (R. Torpadie, *Historisk tidskrift* 8, pp. 376-383; AUDIT.md, class N0). These requests no longer serve a decipherment of the letter. E 614 and the Horn letters could still settle Torpadie's hedged codes (3927, 2162, 1814) and the Chifferklaver låda I booklets could still identify the key. The owner decides whether any request stays.
+
 No personal data below; log the person's own archive request separately, by date and archive only, per
 CLAUDE.md rule 9.
 

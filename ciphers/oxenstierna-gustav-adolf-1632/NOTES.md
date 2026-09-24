@@ -1,13 +1,15 @@
 # Oxenstierna, Gustav II Adolf to Axel Oxenstierna, Nürnberg 23 July 1632
 
-**Status: partial** (letter layer read cryptanalytically, grade S/M, 24 Sept 2026; 39 nomenclator codes and 38 printed letter-signs unread)
+**Status: found-solved** (verifier audit, 24 Sept 2026: letter 602 was deciphered and printed by R. Torpadie, "Några ord om chifferskrift", *Historisk tidskrift* 8 (1888), pp. 376-383, key table p. 382; class N0, see AUDIT.md. LANE R R3's reading below is an independent re-decipherment of the letter layer.)
+
+> **Correction by the verifier, 24 Sept 2026.** (1) The letter is not unsolved: Torpadie solved it in 1888 from the printed ciphertext and printed the plaintext, the key of the letter layer and part of the codes (AUDIT.md). Every "open", "unsolved" or "partial" below describes what the searches found, not the state of the letter. (2) The edition volume (ser. II vol. 1, 1888) was edited by **Per Sondén**, not C. G. Styffe; "Styffe" below means Styffe's *Konung Gustaf II Adolfs skrifter* (1861) only where that book is named. (3) The editor's footnote gloss "[unsolved]" was true when the volume was printed.
 
 ## Item
 
 Letter from King Gustav II Adolf (Gustavus Adolphus) to Rikskansler (Chancellor) Axel Oxenstierna, dated
 "Nürnberg den 23 Julij" [1632] (printed "Anno 1682" is an OCR digit slip; Gustav Adolf died November 1632 and
 the letter discusses the Nürnberg campaign and Banér). Printed in *Rikskansleren Axel Oxenstiernas skrifter och
-brefvexling* (C.G. Styffe's second series), letter no. 602, pp. 821-822. Internet Archive identifier
+brefvexling* (senare afdelningen, första bandet, ed. Per Sondén, 1888 [corrected from "C.G. Styffe's second series" by the verifier, 24 Sept 2026]), letter no. 602, pp. 821-822. Internet Archive identifier
 `rikskanslerenax00styfgoog`, OCR (djvu text) lines 39880-39942. Found by the detector round 3, LANE S worker
 (`.claude/briefs/runs/2026-09-24-lane-s-det3.md`), logged as QUEUE.md row W1 (section "Printed ciphertext
 (detector round 3, LANE S, 24 September 2026)").
@@ -93,7 +95,7 @@ this specific letter.
    and possibly a different correspondent apart) but not a match to this letter itself. `catalogue/decode-ranked.md`
    and `pares-ranked.md` grepped: same R3816/R4332 rows as above, nothing else.
 
-**Verdict: open.** No solution, key, or documented prior attempt found on this specific letter in six sources
+**Verdict: open.** [Wrong: corrected by the verifier, 24 Sept 2026. Torpadie, *Historisk tidskrift* 8 (1888) pp. 376-383, prints the solution; see AUDIT.md.] No solution, key, or documented prior attempt found on this specific letter in six sources
 plus the editions named in the brief. Stage 2 (verified unsolved) reached, conditional on: the unreachable
 Waldispühl blog/paper (may or may not cover this letter — logged, not resolved), the two Horn "duplett"/
 "triplett" letters (not located), and the R4332 (1637) key's untested fit (a solver's task, not this worker's).
@@ -160,7 +162,7 @@ Inkomna brev och ansökningar > Furstars, ämbetsmäns och enskilda personer bre
 Oxenstierna's own **incoming**-letters series -- the recipient's copy, i.e. the actual manuscript the King's
 letter of 23 July 1632 would be bound into. Its catalogue note reads verbatim: "Breven finns tryckta i Axel
 Oxenstiernas skrifter, Avd. II, Band 1." (the letters are printed in Axel Oxenstiernas skrifter, Section II,
-Volume 1) -- confirming this bound volume, not some other copy, is Styffe's own source for letter no. 602.
+Volume 1) -- confirming this bound volume, not some other copy, is the edition's (Sondén's, not Styffe's) own source for letter no. 602.
 `onlyDigitisedMaterials: false` on the record; confirmed at the RDF/JSON-LD level
 (`data.riksarkivet.se/archive/cigYyX8462FTV8KInbNGj6.jsonld`, fetched directly): its only `rico:hasInstantiation`
 is typed `Analog`, no IIIF/image link in `_links` (contrast `SE/RA/1112.1/B/176` below, which does carry one).

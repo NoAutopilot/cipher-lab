@@ -35,3 +35,4 @@ ciphers/fr2980-gramont	"Berthault" AND "Gramont" AND (secrétaire OR chiffre)	20
 ciphers/thurloe-printed	"Stamford" AND Thurloe AND (Calais OR cipher OR cypher) AND 1655	2026-09-24	queued	
 ciphers/thurloe-printed	"Penruddock" AND (Calais OR Stamford OR "W. S.") AND (intelligence OR spy OR informer)	2026-09-24	queued	
 ciphers/thurloe-printed	"Rawlinson" AND "A. 24" AND (Stamford OR Kelsey)	2026-09-24	queued	
+ciphers/oxenstierna-gustav-adolf-1632	"Torpadie" AND (chiffer OR chifferskrift OR Oxenstierna)	2026-09-24	queued	
