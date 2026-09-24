@@ -8313,5 +8313,30 @@
         "total": 31
       }
     ]
+  },
+  "lane_n_rah-oai": {
+    "_about": "LANE N scout of 24 September 2026 (worker for session_01W4z8JhXJYHRjorPC1Qkpiy, .claude/briefs/runs/2026-09-24-lane-n-scRAH.md): OAI-PMH harvest of bibliotecadigital.rah.es/oai/oai.do, ListRecords/oai_dc paginated by resumptionToken (no usable sets -- ListSets only returns the 6-record driver set). Control PASS: keyword sweep recovers all 5 already-known RAH cipher items in its swept range (N1 x3, N2, E1 -- E1 record id newly identified as 15711). Coverage 18400/24739 records (74.4%), one continuous chain from the start; the 250-request cap was consumed partly by a session-proxy relay fault (tunnel drops ~every 7-11 requests, 0-byte body, fixed with a retry-after-pause) discovered and patched mid-harvest -- see QUEUE.md technical finding. 193 unique keyword matches in the swept range; 0 new candidates cleared the bar (ciphertext confirmed present on a viewed leaf): all high-precision hits were already-known items or already-printed exclusions (1 new: id 1759, Rodriguez Villa III.655); a 9-record clave-only residue after excluding cartographic/map-legend and musical noise is entirely the same already-known Morillo 1817-1820 correspondence (N1), of which 7 unpublished letters discuss cipher-key logistics without ciphertext on the pages sampled (2 of 2 candidate key-bearing letters opened 2-3 pages each, all plain prose) -- logged as a lead for ciphers/rah-morillo-1817, not tabled. Full classification of all 193 in sources/solver-diffs/2026-09-24-lane-n-rah-oai.tsv.",
+    "date": "24 September 2026",
+    "requests_per_host": {
+      "bibliotecadigital.rah.es (OAI-PMH, curl)": 240,
+      "bibliotecadigital.rah.es (tools/browser_fetch.js, image fetch)": 5
+    },
+    "coverage": {
+      "records_swept": 18400,
+      "records_total": 24739,
+      "fraction": 0.744,
+      "continuous_from_start": true
+    },
+    "control": {
+      "result": "PASS",
+      "known_items_recovered": [
+        "2242",
+        "1957",
+        "5186",
+        "14495",
+        "15711"
+      ]
+    },
+    "rows": []
   }
 }

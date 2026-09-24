@@ -3193,3 +3193,97 @@ GETs — the search backend for the named `ckcc.huygens.knaw.nl` host, see above
 `github.com` 2 (shallow clones of both solver repos, grepped, kept on disk). WebSearch 3, WebFetch 3. All
 curl hosts ≥1.5s apart, one request at a time. No logins, no credentials, no subagents, no image opened or
 transcribed, no novelty wording, nothing promoted or check-solved.
+
+## Real Academia de la Historia digital library, OAI harvest (LANE N scout of 24 September 2026)
+
+LANE N worker (`.claude/briefs/runs/2026-09-24-lane-n-scRAH.md`). Host: `bibliotecadigital.rah.es/oai/oai.do`
+(OAI-PMH, `verb=ListRecords&metadataPrefix=oai_dc`, paginated by `resumptionToken`, 100 records/page). No
+usable sets exist for filtering: `ListSets` returns only `driver`, which is a 6-record curated subset, not the
+24,739-record full collection (confirmed by fetching it directly) — so every record had to be paged through
+and grepped locally (scripts read, models judge), per the brief.
+
+**Technical finding for the next worker who paginates this host.** The resumptionToken chain reliably dies
+after roughly 7-11 sequential requests, returning a **0-byte response body** (not an OAI end-of-list marker,
+not a 429/403) — confirmed by capturing the raw response and cross-checking `$HTTPS_PROXY/__agentproxy/status`,
+whose `recentRelayFailures` logged `ws_closed_mid_exchange ... tunnel closed (code 1006, Connection ended)
+after 11s` against this exact host at the same timestamps. This is this session's agent-proxy tunnel dropping,
+not a server-side pagination limit, a cookie/session problem (a `JSESSIONID` cookie jar was tried first and
+did not fix it — the same JSESSIONID persisted across the failure) or bot-blocking (OAI-PMH is not behind the
+site's Anubis challenge, per the existing playbook note). **Fix:** retry the identical request once or twice
+after a ~4s pause; the tunnel comes back and the same resumptionToken is still valid. `tools/harvest scripts`
+in this session's scratchpad implement this (not yet promoted to `tools/`, since a shared harvester wasn't
+named in the brief — a future worker who paginates this host again should turn it into a `tools/` script per
+the "shared scripts before new ones" rule rather than re-discovering this).
+
+**Control (required by the brief): PASS.** Four already-known cipher items on this host — the three Morillo
+cluster letters already on this file as N1 (ids 2242, 1957, 5186) and the Cañada note (N2, id 14495) — were
+fetched individually by `GetRecord` first and confirmed to carry the harvest's own keywords in `dc:title`
+("cifrada", "cifrado", "clave en cifra") before the full sweep started. All four, plus a fifth already-known
+item this session had not previously had a record id for (E1, the Xiquena telegram copy, Sig. 9/6963 — its OAI
+id is **15711**, `dc:title` "Copia del telegrama cifrado al Ministro de la Reina en Munich"), were recovered
+correctly by the keyword sweep once it reached their positions in the collection. The query form is verified
+to surface known cipher items; a low or zero count elsewhere in the sweep is a real result, not a broken form.
+
+**Coverage: 18,400 of 24,739 records (74.4%), one continuous unbroken chain from the start of the collection,
+not a sample.** At 100 records/request with the retry fix above, completing the whole 24,739-record collection
+would need about 248 requests; between the retry overhead from the relay fault (each retry burns a request
+against the cap) and the earlier diagnostic requests spent finding the fault in the first place, the 250-request
+budget ran out at record 18,400. The remaining ~6,339 records (the last 25.6% of the collection, by whatever
+order the OAI server serves them in, which is not the numeric id order) are unswept. This should be finished by
+a future worker with a clean run of the retry-patched harvester and a fresh 250-request budget, continuing from
+record offset 18,400 rather than restarting.
+
+**Keyword sweep results.** Search terms per the brief: `cifra`, `cifrado`, `cifrada`, `cifrar`, `en cifra`,
+`descifrado`, `contracifra`, `clave`, `carta cifrada`, `despacho cifrado`, matched with word boundaries
+(accent-insensitive) against `dc:title`/`dc:description`/`dc:subject` in the harvested `oai_dc` records, after
+an initial bare-substring pass wrongly matched "cifra" inside "cifra**s**" and was corrected. 193 unique
+records matched some form of the terms across the swept range.
+
+- **High-precision terms** (`cifrada`, `cifrado`, `cifrar`, `descifrado`, `contracifra`, `carta cifrada`,
+  `despacho cifrado`, `clave en cifra`): **7 hits, all already known or already excluded.** The three N1
+  Morillo letters, N2 (Cañada), E1 (Xiquena, id 15711 — see above), and the two despatches already flagged
+  excluded in this file's Europeana/RAH section (Alós's and Eguía's, both "Publicado por Rodríguez Villa") —
+  plus **one new exclusion of the same kind**: id 1759, "Morillo... propone en su consecuencia una clave de
+  cifras para comunicar los asuntos reservados" (Calabozo, 19 Nov 1817, a different letter from the same day as
+  N1's 1957, referencing a different order date, 28 vs 25 June) — its own `dc:description` reads "Publicado por
+  Rodríguez Villa, t.° III, doc. n.° 655, pp. 462-463." No new candidate survives this tier.
+- **Bare `cifra`/`en cifra`** (word-boundary, no `-do`/`-da` suffix): 1 hit after excluding the "en cifras
+  arábigas" (foliation-numbering) noise pattern that dominates this host's manuscript catalogue (see below) —
+  id 12459, a 1813 map of the port of Cienfuegos, Cuba, whose only "cifra" hit is a cartographic scale legend.
+  Excluded as noise, consistent with the established "cifra = numeral/scale-figure on a map" pattern.
+- **`clave`** (bare, the brief's required but known-broad term): 178 raw hits. The great majority are two
+  noise patterns specific to this host, confirmed by opening full records: (a) map legends, "relación de
+  edificios localizados en el plano por clave numérica y alfabética" (a map's alphanumeric index key, nothing
+  to do with cryptography) — dozens of hits across the RAH cartography collection; (b) "carta" colliding on
+  its other Spanish sense, nautical/geographic chart, not letter. After excluding both patterns and every
+  `Material cartográfico`/`Mapas`/`Atlas`-typed record, **9 records remain, all in the same already-known
+  Morillo (1817-1820) military-intelligence correspondence as N1** (same `dc:subject`, "Morillo, Pablo. Conde
+  de Cartagena"): id 1759 (excluded above, already printed), id 4936 ("lugares clave: Chita, Payá, Zapatosa" —
+  a different sense of *clave*, key *locations*, not a cipher key; excluded), and **7 unpublished letters
+  discussing cipher-key logistics for this same correspondence** — ids 2845, 3886, 3893, 4332, 4537, 5195,
+  5935 (Sept 1819-Oct 1820; two report a *lack* of a key exposing letters to interception if seized; two report
+  *receiving* a key; two say a key is *enclosed* or *indicated* for future use; one just says a key exists "for
+  confidential matters"). **Not tabled as new candidates**, per the brief's requirement that a candidate's
+  ciphertext be confirmed present by viewing a leaf: the two most promising ("adjunta una nota con la clave",
+  id 4332; "indicándole la clave que debe utilizar", id 4537) were each opened at 2-3 of their 6 and 3 images
+  respectively (`tools/browser_fetch.js --binary`, `imagen_id.do` URLs from the OAI `didl` metadata) and every
+  page opened is plain Spanish prose — no cipher table or ciphertext on any page viewed. This does not rule out
+  a key table on an unopened page of either item (id 4332 has 4 images not opened; id 4537's "adjunta clave" is
+  not visibly among its 3 images, so may be a lost or separately-catalogued enclosure), so this is logged as a
+  **lead for whoever next works `ciphers/rah-morillo-1817`** (flagged in ROOM.md), not a QUEUE row: it extends
+  N1's own "the key was in the archive beside the letter" evidence with seven more data points from the same
+  small correspondence circle, and is worth a full image pass of both items' remaining pages before assuming
+  the key itself is lost.
+
+**No RA rows this pass.** Zero candidates cleared the brief's bar (cipher terminology in the OAI metadata,
+page images present, ciphertext confirmed by viewing a leaf, not already known/excluded/printed) within the
+74.4% of the collection swept. This is a clean negative for the portion covered, not a broken search: the
+control above shows the same method recovers every known item in its path. The unswept 25.6% (~6,339 records)
+may still contain something; a future worker should finish the sweep from offset 18,400 rather than restart.
+
+Raw hits, exclusion reasons, and the full 193-row keyword-match dump (with per-item classification into
+high-precision / noise / Morillo-cluster-lead) are in
+`sources/solver-diffs/2026-09-24-lane-n-rah-oai.tsv`. Requests: `bibliotecadigital.rah.es` OAI-PMH ~240 of the
+250 cap (see the technical finding above for why the effective per-page cost was higher than 248 requests would
+suggest); `tools/browser_fetch.js` against the same host 5 of the 10-image allowance (id 4537 pages 1-3, id
+4332 pages 1 and 6; all `imagen_id.do` binary JPEG fetches, no transcription). No other host touched.
