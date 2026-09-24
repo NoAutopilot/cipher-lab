@@ -127,6 +127,10 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 101 | 24 Sep | cipher-lab | LANE T V2: N-class for Stamford P4; N0 check P9 P10 P14 P15 | LANE T (cipher-lab-7a child) | ciphers/thurloe-printed/briefs/lane-T-V2.md, verifier, Opus cap $10 | running, session_01JjjEErSwxrXpw27oi8tcZf |
 | 102 | 24 Sep | cipher-lab | Brienne 1659: canvas 173 reconciled, joint key through f.88 tail, LANE V regrade applied | LANE G | solver, Opus cap $8 | running, session_014HFYRQGqTQKpWQEnhkqHyg |
 | 103 | 24 Sep | cipher-lab | M19 Du Vergier (Clairambault 1108): leaves, extent, interlinear-mark check, who/to whom | LANE G | access, Sonnet cap $6 | running, session_01PAx7T3Lgc5brsc2SKf1Yvf |
+| 104 | 24 Sep | cipher-lab | U2 Blathwayt + U1 Luzerne: Huntington images, inventory, U2 blind passes | LANE R | access+passes, Sonnet cap $9 | running, session_01CVF6mjon5FLeHjR8vPRUuH |
+| 105 | 24 Sep | cipher-lab | U1 La Luzerne 1781 code: Tomokiyo pairs, Yale images, key and reading of mssDE 68/108(A) | LANE R | key recovery, Opus cap $12 | running, session_01FXR2GAyQxRaqaW17RMtXtW |
+| 106 | 24 Sep | cipher-lab | W1 Oxenstierna 1632: OCR checked on page image, design, solver with matched control | LANE R | solver, Opus cap $15 | running, session_01My28Sj2WBPDNdakzKkGXEB |
+| 107 | 24 Sep | cipher-lab | rah-canada-1869: RAH images, inventory, blind passes | LANE R | access+passes, Sonnet cap $8 | running, session_01SeErdv6XUsPNGirMDfnkMn |
 2026-09-24T05:05Z	session_01W4z8JhXJYHRjorPC1Qkpiy	LANE N orchestrator (Opus, cap $80)	nominations lane	steady stream of stage-2 copy-free nominations; DECODE census; successor to LANE S
 2026-09-24T05:05Z	session_01SEnQgi5wPVmMADaVHnWkNN	LANE R orchestrator (Opus, cap $80)	recovery lane	U2, U1, W1, rah-canada-1869, then LANE N nominations
 2026-09-24T05:07Z	session_011UFnhZnyCntZ8Bn9FpKyTq	LANE W orchestrator (Opus, cap $120)	English verification lane	Eckert E4/E5 N4 gap, Thurloe P4 audit, LANE R readings
