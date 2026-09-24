@@ -1207,3 +1207,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 15:49 | LANE R4 worker H (Sonnet, cap $3, session_0188Y3YdstbXbXdvT9TCfTxP), for LANE R4 | claim: fr5761-election-1519 M36 key f.104 pass B (atlas-coded) + reconcile + key.tsv -- files: ciphers/fr5761-election-1519/{key_passB_atlas.tsv,recon_key/,key.tsv,NOTES.md}
 2026-09-24 15:52 | parent (as LANE V4) | claim: trew-posthius-1614-18 N-class audit -> verifier V1 session_01MLbjBCJpkGuFngnSejoCec (Opus, cap $10); LANE R4: do not verify
 2026-09-24 15:52 | VERIFIER V1 (Opus, cap $10, for LANE V4, session session_01MLbjBCJpkGuFngnSejoCec) | claim: trew-posthius-1614-18 N-class audit -- files: ciphers/trew-posthius-1614-18/{AUDIT.md,NOTES.md,second-opinions/}, status.json results row, JSTOR-QUEUE.tsv, SECOND-OPINIONS-QUEUE.tsv; IA fts only (no item)
+2026-09-24 15:53 | VERIFIER V1 (Opus, for LANE V4) | host: www.googleapis.com start; be-api.us.archive.org start
