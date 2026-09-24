@@ -1,6 +1,6 @@
 # fr.3985 (Nevers -> Revol, 21 Aug and 2 Sept 1593) — Louis de Gonzague, duc de Nevers, to Louis Revol
 
-Status: **open**
+Status: **partial**
 
 Checked by LANE N4 csKSa (check-solved), 24 Sept 2026, following `.claude/briefs/check-solved.md` and
 `.claude/briefs/runs/2026-09-24-lane-n4-csKSa.md`. Two rows, same target (two leaves of the same
@@ -104,3 +104,40 @@ Key no.60: Satoshi Tomokiyo (original reconstruction, `nevers.htm`), Daniel Bour
 
 Transcribe both leaves against `key60.txt` (LANE R5); cross-check any unclear symbol against the interlined
 crib pages Bourdeau already identified (fr.3986 f.151-152, fr.3985 f.126-130).
+
+## Key no.60 applied (24 Sept 2026, LANE R5 F1)
+
+Status word set to **partial**: the key has been applied mechanically to both leaves, but nothing reads
+continuously. Worker: LANE R5 F1 (Opus, session_019BqK12YeUXwrP5nNtCMiLi).
+
+- **Key**: `key.tsv` (366 signs) converted from Daniel Bourdeau's `nevers1593/key60.txt` + `decode60.py`
+  (github.com/dbourdeau/cyphersolver, commit a0d5a07349e98cfc47d41608cd88722a219c44a3; text CC BY 4.0, code MIT),
+  itself a transcription of Satoshi Tomokiyo's no.60 (fr.3995 f.109-111). Where the enciphering sheet and the
+  deciphering table disagree (ſ = s or m; 7 = p or s; c = s, a or y; 3 = ri or z; x = a or d; o = a or b; 4 = x
+  or 4+ bien) the value is kept as `a|b` and graded M. Copyist forms from Bourdeau's atlas60.md added as such.
+- **Images**: Gallica IIIF, 4 requests (2 info.json, 2 native regions), 24 Sept 2026 20:14-20:15 UTC:
+  f.88 = canvas 176 region 550,4450,3800,950; f.176 = canvas 353 region 900,550,3400,4200
+  (`images/src_*`). `tools/iiif_lines.py` line detection misfit this slanted hand (half-pitch at default, merged lines at
+  --distance 150; overlays checked), so bands were cut by eye around every cipher run: `images/crops/` (30 crops,
+  `crops.json` gives boxes). Leaf check: f.88 carries two letters, the cipher is in the second ("Monsr de Revol...",
+  lower half); f.176 carries 12 short cipher runs inside clear text. No interlinear or marginal decipherment on
+  either leaf (checked on the native crops).
+- **Transcription**: pass A (Opus, against the key60 sign inventory) `passA.tsv`/`passA_lines.tsv`, 269 signs in
+  16 runs; blind pass B (Sonnet) `passB.tsv` per crop, mapped to the same runs in `passB_lines.tsv` (211 signs; B
+  marked nearly every sign uncertain and read f176.1 as clear). `tools/reconcile_passes.py`: **agreement
+  104/277 columns = 37.5%** (`recon/agreement.tsv`). Disagreements were NOT settled one by one on the image (99
+  differ + 66 gap columns; budget): `ciphertext.tsv` keeps pass A's sign everywhere, conf H only where both passes
+  read the same sign, M elsewhere. B-only signs dropped (listed in recon/).
+- **Reading**: `decode.json` + `tools/decode_key.py` -> `reading.txt`, `reading_tokens.tsv`; `--check` exits 0.
+  **Tokens 269: H 73, M 162, U 34, C 0, S 0, I 0 in the reading.** No H or C run reads as French; this is a
+  mechanical application, not a reading.
+- **Anchors** (`anchors_I.tsv`, grade I, kept out of ciphertext.tsv): f.176 run 3 `ſ 14 1 ſ y x = 9 20 ///` =
+  [l'a]mbassadeur (seven single-valued key signs b s s a d e u r in sequence; ſ taken as m, 1 as a copyist a); f.176
+  run 1 after clear "touchant" possibly "[l'ab]s[olu]cion" (a guess). These show the key does fit the leaf; they are
+  not a reading.
+- **Blocker** (same as Bourdeau's, 17 Sept 2026): palaeographic, not cryptographic. The copyist's cursive forms of
+  the symbols map to two or three table entries; two passes agree on barely a third of the signs.
+- **Not done / suggestion**: settle recon/disagreements.tsv on the native crops with a glyph atlas built from the
+  interlined Instruction of 31 Aug (fr.3985 c.264-268, same copyist, clear print in Memoires de Nevers ii
+  492-499, Gallica bpt6k64451005) -- Bourdeau's route; a third pass is pointless before that atlas exists.
+- Hosts: gallica.bnf.fr 4; github.com 1 shallow clone. No print search for the plaintext (verifier's job).

@@ -1,0 +1,270 @@
+line	pos	sign	conf	alt	why
+f88.1	1	to	M	B:o	differ
+f88.1	2	g	H		agree-flagged
+f88.1	3	ı	M	B:i	differ
+f88.1	4	L	M	B:l	differ
+f88.1	5	x	H		agree-flagged
+f88.1	6	‡	H		agree-flagged
+f88.1	7	q	H		agree-flagged
+f88.1	8	λ	H		agree-flagged
+f88.1	9	q	H		agree-flagged
+f88.1	10	π	H		agree-flagged
+f88.1	11	⊥	M	B:L	differ
+f88.1	12	y	H		agree-flagged
+f88.1	13	v	H		agree-flagged
+f88.1	14	E	M	B:-	gap
+f88.1	15	2	M	B:-	gap
+f88.1	16	4	M	B:9	differ
+f88.1	17	4	H		agree-flagged
+f88.1	18	T	H		agree-flagged
+f88.1	19	n	M	B:-	gap
+f88.1	20	∂	M	B:9	differ
+f88.1	21	o-	M	B:2	differ
+f88.1	22	L	H		agree-flagged
+f88.1	23	∂	M	B:d	differ
+f88.1	24	##	M	B:‡	differ
+f88.1	25	,,	M	B://	differ
+f88.2	1	T	H		agree-flagged
+f88.2	2	ɔ	M	B:2z	differ
+f88.2	3	p	H		agree-flagged
+f88.2	4	L	M	B:-	gap
+f88.2	5	o	M	B:-	gap
+f88.2	6	f	H		agree-flagged
+f88.2	7	E	M	B:3	differ
+f88.2	8	y	M	B:9	differ
+f88.2	9	L	M	B:2	differ
+f88.2	10	T	H		agree-flagged
+f88.3	1	to	M	B:-	gap
+f88.3	2	o	M	B:-	gap
+f88.3	3	g	H		agree-flagged
+f88.3	4	∂	M	B:alpha	differ
+f88.3	5	o	M	B:Y	differ
+f88.3	6	y	M	B:#	differ
+f88.3	7	4	M	B:2	differ
+f88.3	8	20	M	B:0	differ
+f88.3	9	8	H		agree
+f88.3	10	##	M	B:‡	differ
+f88.3	11	π	H		agree-flagged
+f88.3	12	⊥	M	B:-	gap
+f88.4	1	12	H		agree
+f88.4	2	Δ	M	B:λ	differ
+f88.4	3	C	M	B:ↄ	differ
+f88.4	4	m	H		agree-flagged
+f88.4	5	7	H		agree
+f88.4	6	c	H		agree-flagged
+f88.4	7	12	H		agree
+f88.4	8	ı	M	B:l	differ
+f88.4	9	b	M	B:6	differ
+f88.4	10	F	H		agree-flagged
+f88.4	11	oo	H		agree-flagged
+f88.4	12	+	M	B:-	gap
+f88.4	13	40	M	B:-	gap
+f88.4	14	w	M	B:4	differ
+f88.4	15	L	M	B:o	differ
+f88.4	16	x	M	B:oo	differ
+f88.4	17	o-	M	B:X-	differ
+f88.4	18	e	H		agree-flagged
+f88.4	19	y	H		agree-flagged
+f88.4	20	4	M	B:-	gap
+f88.4	21	x	M	B:7~	differ
+f88.4	22	‡	M	B:φ	differ
+f88.4	23	q	H		agree-flagged
+f88.4	24	ı	M	B:-	gap
+f88.4	25	o	M	B:10	differ
+f88.4	26	E	M	B:3	differ
+f88.4	27	q	H		agree-flagged
+f88.4	28	4	H		agree
+f88.4	29	xx	M	B:x	differ
+f88.4	30	ur	M	B:m	differ
+f88.4	31	f	H		agree-flagged
+f88.4	32	##	M	B:H	differ
+f88.4	33	ɤ	M	B:θ	differ
+f88.4	34	π	H		agree-flagged
+f88.4	35	C	M	B:c	differ
+f88.4	36	L	M	B:l	differ
+f88.4	37	x	H		agree
+f88.4	38	q	H		agree-flagged
+f88.4	39	3	M	B:-	gap
+f88.4	40	0	M	B:30	differ
+f88.4	41	11	M	B://	differ
+f88.4	42	Δ	H		agree-flagged
+f88.4	43	ſ	H		agree-flagged
+f88.4	44	ll	M	B:iii	differ
+f176.1	1	∂	M	B:-	gap
+f176.1	2	o	M	B:-	gap
+f176.1	3	y	M	B:-	gap
+f176.1	4	c	M	B:-	gap
+f176.1	5	t3	M	B:-	gap
+f176.1	6	π	M	B:-	gap
+f176.1	7	⊥	M	B:-	gap
+f176.2	1	ſ	M	B:-	gap
+f176.2	2	·	M	B:L	differ
+f176.2	3	V	H		agree-flagged
+f176.2	4	T	H		agree-flagged
+f176.2	5	v	M	B:-	gap
+f176.2	6	∂	M	B:-	gap
+f176.2	7	ß	M	B:β	differ
+f176.2	8	m	H		agree-flagged
+f176.2	9	o	M	B:-	gap
+f176.2	10	⊥	M	B:σ	differ
+f176.2	11	Δ	H		agree-flagged
+f176.2	12	T	H		agree-flagged
+f176.2	13	X	M	B:-	gap
+f176.2	14	X	M	B:xx	differ
+f176.2	15	o	H		agree-flagged
+f176.2	16	tt	M	B:-	gap
+f176.3	1	·	M	B:-	gap
+f176.3	2	ſ	M	B:f	differ
+f176.3	3	14	H		agree
+f176.3	4	1	H		agree-flagged
+f176.3	5	ſ	M	B:f	differ
+f176.3	6	y	H		agree-flagged
+f176.3	7	x	H		agree-flagged
+f176.3	8	=	M	B:‡	differ
+f176.3	9	9	M	B:q	differ
+f176.3	10	20	H		agree
+f176.3	11	///	H		agree-flagged
+f176.3	12	0	M	B:o	differ
+f176.3	13	3	M	B:ϛ	differ
+f176.4	1	oo	H		agree-flagged
+f176.4	2	+	M	B:c	differ
+f176.4	3	∂	M	B:t	differ
+f176.4	4	h	H		agree-flagged
+f176.4	5	4	M	B:⊥	differ
+f176.4	6	#	M	B:‡	differ
+f176.4	7	L	M	B:E	differ
+f176.4	8	x	H		agree-flagged
+f176.4	9	‡	H		agree-flagged
+f176.4	10	#	M	B:-	gap
+f176.4	11	T	H		agree-flagged
+f176.4	12	δ	H		agree-flagged
+f176.4	13	E	H		agree-flagged
+f176.4	14	r	M	B:R	differ
+f176.4	15	o	H		agree-flagged
+f176.4	16	λ	H		agree-flagged
+f176.4	17	g	H		agree-flagged
+f176.5	1	4	M	B:L	differ
+f176.5	2	0	M	B:o	differ
+f176.5	3	L	H		agree-flagged
+f176.5	4	p	H		agree-flagged
+f176.5	5	r	M	B:-	gap
+f176.5	6	r'	M	B:R	differ
+f176.5	7	e	H		agree-flagged
+f176.6	1	g+	M	B:-	gap
+f176.6	2	p	M	B:-	gap
+f176.6	3	r	M	B:-	gap
+f176.6	4	o	M	B:-	gap
+f176.6	5	n	M	B:-	gap
+f176.6	6	ı	M	B:-	gap
+f176.6	7	y	M	B:g	differ
+f176.6	8	h	H		agree-flagged
+f176.6	9	o	M	B:-	gap
+f176.6	10	t	M	B:-	gap
+f176.6	11	o	M	B:oro	differ
+f176.6	12	8	H		agree
+f176.6	13	π	H		agree-flagged
+f176.6	14	4	H		agree
+f176.6	15	c	H		agree-flagged
+f176.6	16	t	M	B:-	gap
+f176.6	17	o	M	B:-	gap
+f176.6	18	ı	M	B:-	gap
+f176.6	19	o	M	B:10	differ
+f176.6	20	X	H		agree-flagged
+f176.6	21	ur	M	B:-	gap
+f176.6	22	p	M	B:-	gap
+f176.6	23	v	M	B:u	differ
+f176.6	24	f	M	B:x	differ
+f176.7	1	///	M	B:iii	differ
+f176.7	2	4	M	B:P	differ
+f176.7	3	#	M	B:2	differ
+f176.7	4	9	M	B:4	differ
+f176.7	5	ı	M	B:q	differ
+f176.7	6	y	H		agree-flagged
+f176.7	7	L	H		agree-flagged
+f176.7	8	xxx	M	B:x	differ
+f176.7	9	π	H		agree-flagged
+f176.7	10	+	M	B:-	gap
+f176.7	11	oo	H		agree-flagged
+f176.7	12	p	H		agree-flagged
+f176.7	13	m	H		agree-flagged
+f176.7	14	∂	M	B:d	differ
+f176.7	15	p	H		agree-flagged
+f176.7	16	o	H		agree-flagged
+f176.7	17	g	H		agree-flagged
+f176.7	18	‡	M	B:-	gap
+f176.7	19	f	H		agree-flagged
+f176.7	20	x	H		agree-flagged
+f176.7	21	c	H		agree-flagged
+f176.7	22	b	M	B:ↄ	differ
+f176.7	23	ſ	M	B:f	differ
+f176.7	24	n	H		agree-flagged
+f176.7	25	T	H		agree-flagged
+f176.7	26	o	M	B:-	gap
+f176.7	27	o	M	B:oo	differ
+f176.7	28	m	H		agree-flagged
+f176.7	29	‡	M	B:-	gap
+f176.7	30	q	M	B:g	differ
+f176.7	31	E	M	B:e	differ
+f176.8	1	‡	M	B:Δ	differ
+f176.8	2	V	M	B:v	differ
+f176.8	3	v	H		agree-flagged
+f176.8	4	y	H		agree-flagged
+f176.8	5	pi	M	B:π	differ
+f176.8	6	oo	H		agree-flagged
+f176.8	7	+	M	B:-	gap
+f176.8	8	4	M	B:-	gap
+f176.8	9	#	M	B:L	differ
+f176.8	10	φ	H		agree-flagged
+f176.8	11	f	H		agree-flagged
+f176.8	12	#	M	B:-	gap
+f176.8	13	Δ	H		agree-flagged
+f176.8	14	oto	H		agree-flagged
+f176.8	15	q	H		agree-flagged
+f176.8	16	ʒ	M	B:-	gap
+f176.8	17	·	M	B:-	gap
+f176.8	18	+	M	B:-	gap
+f176.8	19	o	M	B:-	gap
+f176.8	20	7	H		agree-flagged
+f176.8	21	///	M	B:-	gap
+f176.8	22	p	M	B:-	gap
+f176.8	23	//	M	B:iii	differ
+f176.8	24	x	M	B:y	differ
+f176.8	25	ur	H		agree-flagged
+f176.8	26	p	M	B:-	gap
+f176.8	27	ı	M	B:-	gap
+f176.8	28	v	M	B:-	gap
+f176.8	29	m	M	B:π	differ
+f176.9	1	68	H		agree-flagged
+f176.9	2	X	H		agree-flagged
+f176.9	3	o	M	B:2	differ
+f176.10	1	o-	M	B:θ	differ
+f176.10	2	##	M	B:‡	differ
+f176.10	3	T	H		agree-flagged
+f176.10	4	4	M	B:2	differ
+f176.10	5	4	H		agree-flagged
+f176.10	6	v	H		agree-flagged
+f176.10	7	p	M	B:δ	differ
+f176.10	8	y	H		agree-flagged
+f176.11	1	.:.	M	B:-	gap
+f176.11	2	~	M	B:v	differ
+f176.11	3	Δ	M	B:A	differ
+f176.11	4	10	H		agree
+f176.11	5	C	M	B:-	gap
+f176.11	6	o	M	B:-	gap
+f176.11	7	t	M	B:c	differ
+f176.11	8	o	M	B:oto	differ
+f176.11	9	29	H		agree
+f176.12	1	7	M	B:-	gap
+f176.12	2	8	M	B:‡	differ
+f176.12	3	0	M	B:80	differ
+f176.12	4	4	H		agree-flagged
+f176.12	5	ʃ	M	B:-	gap
+f176.12	6	+	M	B:-	gap
+f176.12	7	to	H		agree-flagged
+f176.12	8	///	M	B:-	gap
+f176.12	9	E	M	B:iii	differ
+f176.12	10	r	M	B:w	differ
+f176.12	11	9	M	B:q	differ
+f176.12	12	#	M	B:‡	differ
+f176.12	13	3	H		agree-flagged
+f176.12	14	0	M	B:-	gap

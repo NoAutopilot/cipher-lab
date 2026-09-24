@@ -1,0 +1,19 @@
+# Mechanical application of key no.60 (key.tsv) to ciphertext.tsv (pass A reconciled against blind pass B).
+# Grades: H sign read the same by both passes and single-valued in key60; M uncertain sign or two-valued key entry; U sign not in key60 as read.
+# tokens 269: H 73, M 162, U 34
+f88.1	i de [ı] f a i te la te o n s li re sa x x n et a tu f a [##] [,,]
+f88.2	n [ɔ] da f a e re s f n
+f88.3	i a de a a s x u t [##] o n
+f88.4	du o y m p s du [ı] s Armes b nostre [40] fu f a tu to s x a i te [ı] a re te x t e e [##] t o y f a te ri [0] [11] o s bon
+f176.1	a a s s ci o n
+f176.2	s [·] lo n li a n m a n o n o o a po
+f176.3	[·] s b n s s a d e u r [0] ri
+f176.4	b nostre a [h] x [#] f a i [#] n rencontre re s a la de
+f176.5	x [0] f da s [r'] to
+f176.6	gu da s a et [ı] s [h] a ru a t o x s ru a [ı] a o e da li e
+f176.7	r x [#] e [ı] s f Italiens o nostre b da m a da a de i e a s s s et n a a m i te re
+f176.8	i lo li s que b nostre x [#] ca e [#] o y te z [·] nostre a p r da c a e da [ı] li m
+f176.9	[68] o a
+f176.10	tu [##] n x x li da s
+f176.11	Je [~] o p y a ru a x
+f176.12	p t [0] x m nostre i r re s e [#] ri [0]
