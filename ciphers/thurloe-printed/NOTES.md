@@ -1,5 +1,30 @@
 # Thurloe printed cipher letters (23 items, Birch 1742, vols 2/3/5/7)
 
+## Handoff (LANE T orchestrator, closed 24 Sept 2026 05:20 UTC)
+
+**Answer.** The 23 numeral passages are 22 letters (P5 and P6 are one Stamford letter; P11, P12 and P13 are one Montagu letter). Twenty-one of those letters were printed by Birch in 1742 *with* their
+contemporary decipherment (interlined, or as "The same letter decypherd" after the cipher); the verifiers class them all
+N0 (AUDIT.md). They were aligned into group-level keys: `key_montagu_extended.tsv` (P11-15), `key_blake_extended.tsv`
+(P8-P10; `key_steele.tsv` is P8's, misnamed), `pool_1654/key_stamford.tsv` (P4-P7), `key_butler.tsv` (P3),
+`key_fauconberg.tsv` (P16-P24). Every script has `--check` (decode.py, decode_fauconberg.py, decode_steele.py,
+decode_butler.py, pool_1654/decode_stamford.py; the last takes a couple of minutes). Real-data solver benchmark in
+`benchmark/` (s.15). **One letter has no decipherment in print: P4, William Stamford at Calais, 13 March 1655**,
+read with the key rebuilt from his two sibling letters (control 92-94%), H 64 C 338 M 16 U 6 of 424 (s.16, s.21),
+class **N3** after one audit (AUDIT.md). Safe sentence: AUDIT.md's P4 section. Nothing here is new, first or unread.
+
+**Open, for the next owner (LANE W per the parent's 05:12 note):** (1) the adversarial second audit of P4 (the outreach gate
+for anything above N1); (2) toward N4: one fetch of Tomokiyo's `stamford.jpg` from cryptiana compared with
+`pool_1654/key_stamford.tsv` for values that occur only in P4, and Bodleian MS Rawl. A. 24 ff.73-76 (catalogue lookup or a
+copy request via ASKS.md) for a contemporary decipherment; (3) P3's three-line postscript (keyed, mostly M, s.17) and the
+14 unglossed groups on P10 p.620 line 10. **Outside this lane, not started (suggestions for a scout):** the Lockhart letter
+from Chauny, 19 June 1656, on vol. 5 p.101 above P14 (coded numerals with short printed glosses, image on disk,
+s.18), and three glossed large-number letters found by s.12.6 (Nutley, Attorney General Prideaux, Sir Benjamin Wright,
+vol. 3); all appear to carry printed glosses, so they are likely N0 too.
+
+**Lessons (in LEDGER):** attribute a Birch letter by the heading above it, never the signature before it (moved 15 of
+23 rows); look beside and after the numerals for a printed decipherment before briefing a solver; "no printed
+decipherment" needs the page image (P14's was hidden by the OCR). Lane cost: 17 workers, about $101 of worker usage, orchestrator about $30.
+
 **found-solved** for P9, P10, P14, P15 (verifier LANE T V2, 24 Sept 2026, AUDIT.md: class N0 -- Birch 1742 prints each
 with its decipherment above or beside the cipher, vol. 3 pp.611-612 and 620, vol. 5 pp.101-102 and 421; 14 groups of
 P10's p.620 line 10 carry no gloss in the print; formerly `partial`/`open` here; P17, formerly listed here, is Fauconberg, see below);
@@ -12,7 +37,7 @@ decipherment and whose cipher Tomokiyo has reconstructed -- see "Monck pool solv
 AUDIT.md: class N0 -- Birch 1742 prints each letter's contemporary decipherment, interlined or
 following the cipher; P2's is an English translation of the deciphered French; P3's three-line
 postscript, djvu vol.2 47999-48004, has no printed decipherment and stays **open**);
-**open** for the remaining rows not named above (P4, P3's postscript, and P10's 14 unglossed groups on p.620 L10). No item here is `solved`;
+**partial** for P4 (Stamford, Calais, 13 March 1655: no decipherment printed; keyed reading H 64 C 338 M 16 U 6 of 424, AUDIT.md N3 after one audit); **open** for P3's postscript and P10's 14 unglossed groups on p.620 L10. No item here is `solved`;
 rule 10 applies throughout -- nothing below is described as new, unpublished, unread, first
 or never printed, and no N-class is assigned (that is a verifier's job).
 
