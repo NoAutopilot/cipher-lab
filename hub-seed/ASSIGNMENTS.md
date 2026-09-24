@@ -353,4 +353,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T18:50Z	session_01AM1QY9fyfJjhREPeKiD3Yq	LANE R5 A (Sonnet, cap 8)	fr2933-salviati-1525 f.55r box-keyed passes	brief 2026-09-24-lane-r5-a-salviati-f55r.md
 2026-09-24T18:50Z	session_01AoYeGhfEGDkwnDewSZpGFi	LANE R5 B (Sonnet, cap 4)	fr2933-salviati-1525 key search	brief 2026-09-24-lane-r5-b-salviati-keysearch.md
 2026-09-24T18:50Z	session_01QMyFVUE8JCLdUA84ejLHKE	LANE R5 C (Sonnet, cap 5)	fr3151-seure-1558 coarse buckets gate	brief 2026-09-24-lane-r5-c-seure-buckets.md
-2026-09-24T19:28Z	session_pending_detimg	detIMG image cipher-page detector (Sonnet, cap 0)	tools/cipher_page_detector.py + controls + first Nevers sweep	parent's pick 19:27 (STATUS Parent handoff); brief 2026-09-24-detimg-cipher-page-detector.md
+2026-09-24T19:28Z	session_014h8NBTYn6n4zEJj4WKug2H	detIMG image cipher-page detector (Sonnet, cap 0)	tools/cipher_page_detector.py + controls + first Nevers sweep	parent's pick 19:27 (STATUS Parent handoff); brief 2026-09-24-detimg-cipher-page-detector.md
