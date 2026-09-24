@@ -33,3 +33,20 @@ counterpart) plus web search snippets of academia.edu's own listing pages. See `
 |---|---|---|---|---|
 | `web/francisGramont.png` | https://cryptiana.web.fc2.com/code/francisGramont.png | 24 Sep 2026, before 00:17 UTC | 121175 | Tomokiyo's "Gramont's Cipher (1530)" table, embedded in francis.htm (ciphers/fr2980-gramont) |
 | `web/GL/BnF_fr3071_f17.png` | https://cryptiana.web.fc2.com/code/GL/BnF_fr3071_f17.png | 24 Sep 2026, before 00:17 UTC | 34169 | Lasry's key table for the same cipher (BnF fr.3071 f.17, dated 04/11/2023), embedded in francis.htm and GL.htm |
+
+## Added 24 September 2026 (ciphers/fr20140-danzay-1557, Cryptiana Discussion Forum gap)
+
+The AUDIT.md "N4 decision (final families)" of 24 Sept 2026 named one family never searched: the Cryptiana
+Discussion Forum post announcing Tomokiyo's Danzay article, and its comments. Blogger's JSON feed
+(`/feeds/posts/default?alt=json&q=Danzay`, and `&q=20140`, both `sources/cryptiana/blog/`-adjacent, not saved,
+one-shot API calls) found exactly one matching post; a WebSearch `site:cryptiana.blogspot.com Danzay` cross-check
+agreed and additionally surfaced `.../2025/09/`, a monthly archive index page, fetched and checked (below) and
+found not to mention Danzay at all -- a search-snippet false positive, not a second post.
+
+| File | URL | Fetched | Bytes | For |
+|---|---|---|---|---|
+| `blog/2026_02_reconstruction-of-cipher-used-by.html` | https://cryptiana.blogspot.com/2026/02/reconstruction-of-cipher-used-by.html | 24 Sep 2026, ~07:2x UTC | 85129 | The post itself ("Reconstruction of a Cipher used by Charles de Danzay, French Ambassador to Denmark", posted 22/02/2026), the only post matching "Danzay" or "20140" on this blog |
+| `blog/2026_02_reconstruction-of-cipher-used-by.comments.json` | https://cryptiana.blogspot.com/feeds/2892705715433739646/comments/default?alt=json | 24 Sep 2026, ~07:2x UTC | 1299 | Blogger comment feed for the same post: `openSearch$totalResults` = 0. The rendered page independently shows "No comments:" |
+
+`2025/09/` (the monthly archive page WebSearch also listed) was fetched and grepped for `danz` (case-insensitive):
+no hits. Not saved, since it is a generic archive index with no Danzay content -- not part of this family.

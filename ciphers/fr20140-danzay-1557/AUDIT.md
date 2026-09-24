@@ -985,3 +985,60 @@ then add the target-specific editions.
 
 Requests this session: www.googleapis.com 6 (key and country=US, key never printed, 3.5 s apart); WebSearch 5. No
 other host. No Gallica, no de-crypt.org, no logins, no decoding, no subagents.
+
+## Toward N4: Cryptiana forum thread, 24 Sept 2026
+
+LANE V gap worker (Sonnet), ~07:22-07:30 UTC, orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ. Closes the one gap
+the "N4 decision (final families)" section above named: the Cryptiana Discussion Forum post and its comments. Did
+not decode, did not touch any other target, does not assign a class (that is a fresh verifier's task).
+
+**Finding the post.** Blogger's own JSON search feed (`https://cryptiana.blogspot.com/feeds/posts/default?alt=json&q=Danzay`)
+returns exactly one entry, `openSearch$totalResults` = 1: "Reconstruction of a Cipher used by Charles de Danzay,
+French Ambassador to Denmark", posted 22/02/2026, at
+`https://cryptiana.blogspot.com/2026/02/reconstruction-of-cipher-used-by.html` (post id 2892705715433739646, blog
+id 5107039156280592857). A second feed query for `q=20140` returns zero results. An independent WebSearch
+`site:cryptiana.blogspot.com Danzay` agreed on the same post and additionally listed
+`https://cryptiana.blogspot.com/2025/09/` (a monthly archive index page); fetched and grepped case-insensitively
+for `danz`, it has no hits at all -- a search-snippet false positive (most likely matched on an unrelated word
+elsewhere on that month's archive), not a second Danzay post. No other candidate post exists on this blog.
+
+**Reading the post.** Fetched once (`sources/cryptiana/blog/2026_02_reconstruction-of-cipher-used-by.html`, 85129
+bytes). Full text of the post, quoted in full since it is short:
+
+> "A letter from Danzay, French ambassador to Denmark, to Henry III (1574) includes a undeciphered paragraph,
+> which has been on my list of unsolved ciphers here. It may have been too short to solve analytically, but Sergey
+> Ryabov succeeded in reconstructing the cipher by finding another letter (1578) with decipherment in the margin.
+> Now I updated the record.
+>
+> To me, Danzay is interesting because of his unparallelled long tenure from 1548 to 1589. Comparison of ciphers
+> used during his career may shed light on practices of French cryptography at the time. For the time, I found one
+> from 1557.
+>
+> I uploaded a new article "Danzay's Ciphers: Ciphers of a French Diplomat with a Long Tenure" to report Danzay's
+> ciphers from 1574-1578 and 1557."
+> -- posted by cryptiana, 2/22/2026
+
+Nothing in the post itself names f.35, f.36, 27 January 1557, Copenhagen, or the Cardinal of Lorraine, and nothing
+in it states or implies that the 1557 letter (as opposed to the 1557 cipher table) was read. The post's only
+function is to announce the danzay.htm article -- the very page the 24 Sept 2026 "N4 decision" table already
+logged as "covered, live... f.35 'not deciphered'" (section 1 of that decision, row "Tomokiyo, 'Danzay's Ciphers'
+(web page)"). The "letter... 1574... Sergey Ryabov... 1578" passage concerns the separate, already-solved 1574/1578
+Danzay cipher (Cryptiana's unsolved-ciphers list entry, closed by Ryabov's find), not the 1557 correspondence at
+all -- it is not a second unresolved claim about f.35.
+
+**Comments.** The post's own rendered page reads "No comments:" beneath the post body. The Blogger comment feed
+(`https://cryptiana.blogspot.com/feeds/2892705715433739646/comments/default?alt=json`, saved as
+`sources/cryptiana/blog/2026_02_reconstruction-of-cipher-used-by.comments.json`) confirms this independently:
+`openSearch$totalResults` = 0, zero `entry` elements. There is no comment thread to read.
+
+**Verdict: gap closed negative.** The post exists, was read in full, and has zero comments. It contains nothing
+beyond a pointer to the key page already logged (which itself still says f.35 is "not deciphered") and an
+unrelated note about the separate 1574/1578 letter pair. No reading, partial decipherment, or key application of
+the 27 Jan 1557 letter (fr.20140 f.35-36) by Tomokiyo or any commenter was found. This does not raise the class by
+itself; it closes the one family the 24 Sept 2026 "N4 decision" table left open. A fresh verifier session should
+now be able to re-run the section-4 outreach-gate table (JSTOR rows still outstanding) and, if satisfied, move the
+target to N4 using the sentence already drafted in that section.
+
+Requests this session: cryptiana.blogspot.com 5 (Blogger JSON feed x2 -- `q=Danzay`, `q=20140` -- the post page,
+the comments feed, and the archive page, all >=1.5 s apart), WebSearch 1. No other host, no login, no decoding,
+no subagents.
