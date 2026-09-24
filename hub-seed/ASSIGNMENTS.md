@@ -125,8 +125,8 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 100 | 24 Sep | cipher-lab | Paleologue finisher: write up full-text rerun, finish calibration/crib runs | LANE G | solver, Opus cap $8 | done, archived: 900 signs; controls 99.8/93.6/86.4/70.0% at 0/5/10/15% noise; target not Italian under 4 designs; $4.39 |
 2026-09-24T04:43Z	session_01Xb8nxPKKD8dbiDPR21usby	DECODE fetch worker (Sonnet, cap $8)	intercepted-royalist-1646 / DECODE 8725	extend decode_browser_login.js --fetch; documents, images, siblings; NOTES
 | 101 | 24 Sep | cipher-lab | LANE T V2: N-class for Stamford P4; N0 check P9 P10 P14 P15 | LANE T (cipher-lab-7a child) | ciphers/thurloe-printed/briefs/lane-T-V2.md, verifier, Opus cap $10 | done (session_01JjjEErSwxrXpw27oi8tcZf): P4 N3; P9 P10 P14 P15 N0 |
-| 102 | 24 Sep | cipher-lab | Brienne 1659: canvas 173 reconciled, joint key through f.88 tail, LANE V regrade applied | LANE G | solver, Opus cap $8 | running, session_014HFYRQGqTQKpWQEnhkqHyg |
-| 103 | 24 Sep | cipher-lab | M19 Du Vergier (Clairambault 1108): leaves, extent, interlinear-mark check, who/to whom | LANE G | access, Sonnet cap $6 | running, session_01PAx7T3Lgc5brsc2SKf1Yvf |
+| 102 | 24 Sep | cipher-lab | Brienne 1659: canvas 173 reconciled, joint key through f.88 tail, LANE V regrade applied | LANE G | solver, Opus cap $8 | done, archived: c173 reconciled 87%; key 79 groups; 6 over-graded C tokens now M; f.86 C69 M199, f.88 C103 M165 U3; $2.97 |
+| 103 | 24 Sep | cipher-lab | M19 Du Vergier (Clairambault 1108): leaves, extent, interlinear-mark check, who/to whom | LANE G | access, Sonnet cap $6 | done, archived: cipher on 4 leaves (f.247v, 249r-250r 26 Mar 1696, 262), mixed clear+numeral nomenclator, no gloss; Vergier to Pontchartrain likely; $1.86 |
 | 104 | 24 Sep | cipher-lab | U2 Blathwayt + U1 Luzerne: Huntington images, inventory, U2 blind passes | LANE R | access+passes, Sonnet cap $9 | running, session_01CVF6mjon5FLeHjR8vPRUuH |
 | 105 | 24 Sep | cipher-lab | U1 La Luzerne 1781 code: Tomokiyo pairs, Yale images, key and reading of mssDE 68/108(A) | LANE R | key recovery, Opus cap $12 | running, session_01FXR2GAyQxRaqaW17RMtXtW |
 | 106 | 24 Sep | cipher-lab | W1 Oxenstierna 1632: OCR checked on page image, design, solver with matched control | LANE R | solver, Opus cap $15 | running, session_01My28Sj2WBPDNdakzKkGXEB |
@@ -145,3 +145,10 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 116 | 24 Sep | cipher-lab | Scout Italian regional archives: Mantua, Modena, Turin, Genoa, Naples (IR rows) | LANE N (session_01W4z8JhXJYHRjorPC1Qkpiy) | scout, Sonnet cap $8, lane-n-scIT3.md | running, session_01L1jknWRHWqteJunNRKbwEC |
 | 117 | 24 Sep | cipher-lab | Scout Archives nationales and Archives diplomatiques (AN rows) | LANE N (session_01W4z8JhXJYHRjorPC1Qkpiy) | scout, Sonnet cap $8, lane-n-scAN.md | running, session_016AY58oYcxzu4K71JF2pyqw |
 | 118 | 24 Sep | cipher-lab | Scout Portugal (Torre do Tombo, BNP) and Austria (AIS) (PA rows) | LANE N (session_01W4z8JhXJYHRjorPC1Qkpiy) | scout, Sonnet cap $8, lane-n-scPT.md | running, session_01LArZ4MTGYdxMBsJepGRUrw |
+| 119 | 24 Sep | cipher-lab | Camusat tract ff.91-217 + versos for LANE V (Gramont N4) | LANE G | print-check, Sonnet cap $10 | running, session_01YXJBNQva6yvtQ8tRnsqnR1 |
+| 120 | 24 Sep | cipher-lab | Brienne 1653 band natives (canvas 11-12, 24-25, 30-33) + folio 9 passes | LANE G | transcription, Sonnet cap $10 | running, session_0154Dbcnx8eFzGW4G6AAjgur |
+| 121 | 24 Sep | cipher-lab | M18 Brienne-Poland 1646 reconciliation + structure vs 1653 and 1647/1651 | LANE G | reconciler, Opus cap $8 | running, session_01TehXGhhppi86ziFJHLQzzz |
+| 122 | 24 Sep | cipher-lab | Brienne 1653 folio 1-2 letter reconciliation | LANE G | reconciler, Opus cap $8 | running, session_01D5iEH57ev2tHhG8L4UtQcQ |
+| 123 | 24 Sep | cipher-lab | M19 Du Vergier passes on 3 native leaves | LANE G | transcription, Sonnet cap $6 | running, session_01JK39bZoixdss9gzKuPRH8Z |
+| 124 | 24 Sep | cipher-lab | M19 Du Vergier key leads and edition check (non-Gallica hosts) | LANE G | print-check, Sonnet cap $5 | running, session_01KzqHTZS7T25886C4agJC7W |
+| 125 | 24 Sep | cipher-lab | Gramont f.30r unread top lines re-read from native crops | LANE G | solver, Opus cap $8 | running, session_014Tt8yJTXduJiSSEuoq8g9d |
