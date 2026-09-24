@@ -74,3 +74,46 @@ correct the shelfmark in any future capture/read files, before crops are cut. St
 
 Requests this section: gallica.bnf.fr 3 (1 `gallica all` SRU query, 1 `dc.source all` SRU query, 1
 `gallica_folio.py` manifest fetch).
+
+## Folio 22 pin attempt, addressee identified (24 Sept 2026, LANE G2 worker T)
+
+**"L'abbé de Mercy" is a real historical figure, resolving the check-solved sweep's identification gap.**
+Canvas 30 of this ark (`btv1b10035717h`, 605 canvases, no manifest folio labels) carries, in its own ink page
+number top right, "**8**", and is headed:
+
+> "Instruction pour l'abbé de Mercy et ordre de ce qu'il aura affaire alant trouver sa Ma.té Imperiale de la
+> part du Duc de Guise" -- dated **1641**.
+
+This is a *different*, earlier, unciphered instruction to the same "abbé de Mercy" -- an envoy the **Duc de
+Guise** sent to treat with the Holy Roman Emperor, active from at least 1641 (this item) through 1648 (our
+target, whose own title "**Autre** instruction chiffrée pour l'abbé de Mercy" -- "**another/further**
+instruction" -- now reads as one of a run of instructions to this same agent, not an isolated item). This
+identifies the addressee role (envoy/agent, not a beneficed cleric of note) but not yet his surname or a
+biographical entry; a further search for "abbé de Mercy" tied to the Duc de Guise (rather than alone, as
+tried in the check-solved sweep) is the next step for the addressee's identity.
+
+**Folio 22 (item 11) itself: still not pinned.** The page numbers found on-leaf (canvas 20 "~4", canvas 30 "8")
+do **not** track the finding aid's own foliation in any simple linear way against canvas count (10 canvases
+advance the on-leaf number by only ~4), which most likely means these ink numbers are each **item's own
+original pagination** (carried over from the source document when bound into this recueil), not a continuous
+archival foliation for the whole volume -- the same trap worker P already flagged for clairambault296. The
+finding aid's "F.22" is probably a separate, volume-wide (often pencil) foliation not visible in these ink
+page-corner numbers at this resolution. Given the abbé de Mercy items cluster together (canvas 30 = one such
+item), item 11 (the 1648 one, presumably later in the binding order than the 1641 one since items in this run
+look chronological) is likely within a canvas span of roughly 30-60, but this is not narrowed further this
+pass -- out of budget.
+
+**Content note (not yet the target item):** canvas 25, a few canvases before the 1641 Mercy item, is a
+different, undated French instruction/dispatch discussing the "Duc de Richelieu" and a naval action
+("quoi combattu 20 contre 120"), also in clear, no cipher -- unrelated to Mercy by name but confirms the
+neighbourhood of canvases 20-30 holds a run of 1640s French diplomatic instructions in clear French, the same
+genre as our target.
+
+**Not pinned; status stays `open`.** A worker with budget for ~15-20 more canvas probes in the 30-70 range,
+watching for the on-leaf date "1648" or the words "abbé de Mercy"/"Barneton" (the place the finding aid names
+for the 6 June 1648 item), should be able to narrow it from here.
+
+Requests this section: gallica.bnf.fr 8 (canvases 1, 20, 25, 30 at 200px -- canvas 1 retried once = 5
+requests; canvases 20, 25, 30 re-fetched at ~1100px = 3 requests), >=1.5s apart, UA `cipher-lab research
+script (contact via repository)`. No 403/429/challenge; one transient `Connection reset by peer` on the first
+attempt at canvas 1, resolved on retry.
