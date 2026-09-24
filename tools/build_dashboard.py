@@ -209,7 +209,7 @@ details summary {{ cursor:pointer; color:var(--accent); font-size:0.92rem; margi
   </section>
 
   <section class="panel" id="your-card">
-    <h2>Emails to send</h2>
+    <h2>Your card: emails to send, boxes to tick</h2>
     <ul class="card">{card_items}</ul>
     <p class="card-note">Each one has been checked by the orchestrator against the gates (class assigned, rule-10 wording, no personal data, links public). Tick the box once sent; the tick is saved on this page and the orchestrator logs the date in CONTRIBUTIONS.md. <span id="card-status"></span></p>
   </section>
