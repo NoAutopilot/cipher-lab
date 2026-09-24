@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # One-time history purge for the public repository (owner's decision, 23 Sept 2026; CLAUDE.md, Git section).
 # Rewrites a fresh clone of origin/main so that no commit carries: any Gmail address, the owner's first name
-# (except the "Ryan et al." editor citation), the per-variable credential-length line of 21 Sept 2026, or the
+# (except an "et al." editor citation that happens to share it), the per-variable credential-length line of 21 Sept 2026, or the
 # restricted images removed on 23 Sept 2026 (BL Randolph 1569 leaf and crops, Spink 1812 photographs, KHA 1572 leaves).
 # It never touches origin: it writes the rewritten history to a scratch clone and pushes it to the branch named in
 # $2 (default purged-main). Swapping that branch in for main is a separate, deliberate step (see the usage note).
@@ -18,11 +18,14 @@ rm -rf "$SC"; git clone -q --no-local "$SRC" "$SC"
 git -C "$SC" remote set-url origin "$REMOTE"
 git -C "$SC" fetch -q origin main && git -C "$SC" reset -q --hard origin/main
 
+TREE_BEFORE=$(git -C "$SC" rev-parse 'origin/main^{tree}')
+
 # Replacement rules, built at run time so no address is written into the repository.
 S=$(git -C "$SC" rev-list --all | tr '\n' ' ')
+N="R"; N="${N}yan"   # the first name, assembled so this file never carries it and is not rewritten itself
 { git -C "$SC" grep -o -h -i -E '[a-z0-9._+-]+@gmail\.com' $S 2>/dev/null | sort -u | sed 's/$/==>[address removed 23 Sept 2026]/'
-  printf '%s\n' "regex:\bRyan's\b==>the owner's" \
-                "regex:\bRyan\b(?! et al)==>the owner" \
+  printf '%s\n' "regex:\b${N}'s\b==>the owner's" \
+                "regex:\b${N}\b(?! et al)==>the owner" \
                 "regex:DECODE_USER\|[0-9]+\|[^\n]*==>[per-variable lengths redacted 23 Sept 2026 when the repository went public]"
 } > "$R"
 
@@ -36,13 +39,14 @@ S=$(git -C "$SC" rev-list --all | tr '\n' ' ')
 
 # Verification: nothing sensitive in any revision, and the rewritten tip has the same tree as origin/main.
 S2=$(git -C "$SC" rev-list --all | tr '\n' ' ')
+X=':!tools/purge_history.sh'   # this script names the patterns it removes
 fail=0
-[ "$(git -C "$SC" grep -c -i '@gmail.com' $S2 2>/dev/null | wc -l)" = 0 ] || { echo "FAIL: address survives"; fail=1; }
-[ "$(git -C "$SC" grep -h -w 'the owner' $S2 2>/dev/null | grep -v 'Ryan et al' | wc -l)" = 0 ] || { echo "FAIL: name survives"; fail=1; }
-[ "$(git -C "$SC" grep -c 'DECODE_USER|' $S2 2>/dev/null | wc -l)" = 0 ] || { echo "FAIL: length line survives"; fail=1; }
-diff <(git -C "$SC" ls-tree -r HEAD) <(git -C "$SRC" ls-tree -r origin/main) > /dev/null || { echo "FAIL: tree differs from origin/main"; fail=1; }
+[ "$(git -C "$SC" grep -c -i '@gmail.com' $S2 -- "$X" 2>/dev/null | wc -l)" = 0 ] || { echo "FAIL: address survives"; fail=1; }
+[ "$(git -C "$SC" grep -h -w "$N" $S2 -- "$X" 2>/dev/null | grep -v "$N et al" | wc -l)" = 0 ] || { echo "FAIL: name survives"; fail=1; }
+[ "$(git -C "$SC" grep -c 'DECODE_USER|' $S2 -- "$X" 2>/dev/null | wc -l)" = 0 ] || { echo "FAIL: length line survives"; fail=1; }
+[ "$(git -C "$SC" rev-parse 'HEAD^{tree}')" = "$TREE_BEFORE" ] || { echo "FAIL: tree differs from origin/main as fetched"; fail=1; }
 [ $fail = 0 ] || exit 1
-echo "rewritten: $(git -C "$SC" rev-list --all | wc -l) commits, tip $(git -C "$SC" rev-parse --short HEAD), tree identical to origin/main"
+echo "rewritten: $(git -C "$SC" rev-list --all | wc -l) commits, tip $(git -C "$SC" rev-parse --short HEAD), tree identical to origin/main as fetched"
 
 git -C "$SC" remote add origin "$REMOTE"
 git -C "$SC" push -q -u origin "HEAD:refs/heads/$BR"
