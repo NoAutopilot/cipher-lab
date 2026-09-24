@@ -1,0 +1,161 @@
+line	pos	code	marks	action	conf	note
+1	1	_		confirm	H	plain cursive, joined word start ("Tru...")
+1	2	_		confirm	H	plain cursive continuing word
+1	3	_		confirm	H	plain cursive, share was 0.80 but clearly ordinary script
+1	4	_		confirm	H	plain cursive word "ancora"
+1	5	_		confirm	H	plain cursive word (caufa/lauua-like)
+1	6	S4		confirm	H	clear slash crossing a vertical+bar, matches S4 exactly
+1	7	dl		confirm	H	small loop with rising curved tail, matches dl
+1	8	phi		correct	M	slashed circle on a short stem (phi), not plain; classifier called this box "_" but box actually contains two merged signs, phi + g(see 8.5)
+1	8.5	g	+	split	M	9/g-shaped loop with a + cross mark above it, merged into the same wide box as pos8's phi by the segmenter
+1	9	v		confirm	H	curved v with hooked left arm, clean match
+1	10	_		delete	L	tiny ~7x14px fragment, just a stray ink speck/pen-lift mark, not a legible sign on its own
+1	11	y		confirm	H	cursive y with looped tail, share was only 0.61 but shape is unambiguous
+1	12	nt		confirm	H	n joined to crossed stroke, matches nt despite share 0.80
+1	13	bh		confirm	H	tall stem with hooked loop at upper right, clean bh
+1	14	w	dot	confirm	M	plain cursive w shape; small dot mark plausible but faint in crop
+1	15	e	+	confirm	H	looped e with clear + mark above it (boxlist listed no mark; + is visible)
+1	16	eps	5	confirm	M	two-bowl epsilon shape confirmed; the "5" mark itself sits at edge of crop, trusting boxlist
+1	17	S7	dot	confirm	M	clear 7-shape; small dot below visible, adding to marks (boxlist had none)
+1	18	p		confirm	H	p with loop and crossed stem, clean match
+1	19	g		confirm	M	closed figure-8 form rather than typical open-tailed 9-shape; low share (0.43) reflects genuine ambiguity but g is still the closest atlas code
+1	20	v	1|1	confirm	H	curved v, clean match
+1	21	m	1	confirm	H	three-hump cursive m, clean match
+1	22	bh		confirm	H	tall stem with hooked loop, clean bh
+1	23	Z		confirm	H	swirl Z shape with small dot below, matches Z
+2	1	S7	+	confirm	H	clear 7-shape with + mark
+2	2	g	dot	confirm	H	9/g-shape with dot mark, clean match
+2	3	S4	~	confirm	H	clear slash-cross S4 with tilde mark
+2	4	dl		confirm	H	loop with rising tail, clean dl
+2	5	_		confirm	H	plain cursive "Jo" (start of word/name)
+2	6	_		correct	H	tall looped ascender letter, part of the same plain word as "Jo"; classifier's own cluster_code for this box was already "_" though its top pick was bh (share 0.80)
+2	7	_		correct	H	first of two crossed strokes ("tt"), plain cursive within the word; share was only 0.41
+2	8	_		correct	H	second crossed stroke of "tt", plain cursive; share only 0.39
+2	9	_		correct	H	plain single-letter word "a", not sign N; wider context reads "a . S . M^tu ." = "a S.M.ta" (a Sua Maestà), a standard chancery abbreviation, all plain text
+2	10	_		correct	H	plain letter "S" with abbreviation dots, part of "a S.M.ta"; not sign S despite share 1.00
+2	11	_		correct	H	plain letter "M" with abbreviation dot, part of "S.M.ta"; not sign Lx
+2	12	_		correct	M	small superscript ligature "tu/ta" completing "M.ta" abbreviation; not sign v (share was only 0.58)
+2	13	S4		confirm	H	clean S4, slash crossing vertical+bar
+2	14	dl		confirm	H	looped tail shape, clean dl
+2	15	rz		confirm	H	low hook-then-wave shape on the line, clean rz
+2	16	+		correct	H	single cross only (not double-barred), matches + not # (share was 0.58)
+2	17	w		confirm	H	clean w shape
+2	18	o.		correct	H	clear ring with a dot inside, matches o. exactly; classifier called this box "_" (share 1.00) but shape is unambiguous
+2	19	rz		confirm	H	low hook-then-wave shape, clean rz
+2	20	Z	~	confirm	H	clean Z shape
+2	21	e	#	confirm	H	looped e with a clear # mark above (boxlist listed no mark)
+2	22	wd		confirm	M	w-shape joined to tall right stroke, matches wd despite share 0.63
+2	23	y		confirm	H	cursive y with looped tail, clean match
+2	24	e	+|dot	confirm	H	looped e with both a + and a dot mark visible above
+2	25	psi		confirm	H	forked y/psi shape with tail, clean match
+2	26	m	~	confirm	H	three-hump m with tilde mark above
+3	1	L		confirm	M	angle shape with a small "7" written inside it, matches L description exactly despite low share (0.20)
+3	2	bh	3	confirm	H	small hooked loop at top with long descending stem, matches bh; "3"-shaped mark above
+3	3	phi		confirm	H	circle with a diagonal stroke crossing it and a descending tail, matches phi
+3	4	y		confirm	H	cursive y with looped tail
+3	5	+		correct	H	single cross only (one stroke), matches + not #; classifier's own cluster_code already said + (share 0.59)
+3	6	g	2	confirm	H	9/g loop with tail; small "2"-like mark above
+3	7	]	o	confirm	H	square box open to the left with a small o mark, clean match
+3	8	lam		confirm	H	two strokes meeting at a point, clean lam
+3	9	bh		confirm	H	hooked loop at top of tall stem, clean bh
+3	10	S7	#	confirm	H	clear 7-shape sign
+3	11	_		confirm	M	unusual composite mark (tilde + "1" + small raised circle) before "Cosi"; not a legible cursive letter but doesn't match any of the 40 atlas sign shapes either, so left as plain/other per scheme
+3	12	_		correct	H	single "+"-shaped scribal mark directly before "Cosi", most likely sentence-opening punctuation rather than a cipher sign; classifier's own cluster_code already read this as "_" (share 1.00 on the S4 top-pick was misleading)
+3	13	_		confirm	H	plain cursive, part of "Cosi volsi"
+3	14	_		confirm	H	plain cursive, part of "volsi"
+3	15	_		confirm	H	plain cursive, part of "volsi"
+3	16	_		confirm	H	plain cursive, part of "volsi mr"
+3	17	_		confirm	H	plain cursive, "mr" abbreviation
+3	18	_		confirm	H	plain cursive, "si"
+3	19	_		confirm	H	plain cursive, "si contento"
+3	20	_		confirm	H	plain cursive, "contento"
+3	21	_		confirm	H	plain cursive, "contento restassino"
+3	22	_		confirm	H	plain cursive, "restassino"
+3	23	_		confirm	H	plain cursive, "restassino"
+3	24	_		confirm	H	plain cursive, "restassino" (classifier's cluster_code guessed w, but this is ordinary cursive within the word)
+3	25	_		correct	H	plain cursive, start of word "ap..." running off the line edge; not sign f
+3	26	_		delete	L	tiny ~6x10px fragment, stray ink not a legible sign
+4	1	_		confirm	M	plain cursive, start of "presso"
+4	2	_		confirm	H	plain cursive, "presso"
+4	3	_		correct	H	plain cursive letter "s" in "presso", not sign S despite share 1.00 (classic plain-s/sign-S confusion)
+4	4	_		confirm	H	plain cursive, "presso"
+4	5	_		confirm	H	plain cursive, "di"
+4	6	_		confirm	M	plain cursive, "di" (share only 0.41)
+4	7	_		confirm	H	plain cursive, "di mr"
+4	8	_		correct	H	plain capital "P" of the word "Purz...", not sign p despite share 1.00
+4	9	_		confirm	H	plain cursive, "Purz..."
+4	10	_		confirm	M	plain cursive, continuing "Purz..." (share 0.81)
+4	11	bh		confirm	H	hooked loop on tall stem, clean bh; start of a run of clear sign shapes
+4	12	S4		confirm	H	clear slash-cross S4
+4	13	Lx		confirm	H	Λ with bar crossing right leg, clean Lx despite share 0.84
+4	14	+		confirm	H	single clean cross
+4	15	lam		confirm	H	Λ two strokes meeting at a point
+4	16	nt	~	confirm	H	n joined to crossed stroke, tilde mark above
+4	17	y		confirm	H	cursive y with looped tail
+4	18	g		confirm	H	9/g loop with tail
+4	19	_		confirm	M	small narrow (18px) mark between two signs, not enough ink for a full sign; classifier very confident it is plain (share 1.00)
+4	20	rz		correct	M	low hook-then-wave shape, closer to rz than Z; share was only 0.38 and the stroke has no angular Z corner
+4	21	rz		confirm	H	low hook-then-wave shape, clean rz
+4	22	lam	7	confirm	H	Λ shape with a small "7" numeral written above it (boxlist listed mark "#", but the mark itself looks like "7")
+4	23	_		confirm	M	plain cursive, "B" of "Bisognr" (share 0.62)
+4	24	_		correct	M	plain cursive, "i" of "Bisognr", not sign S (share 0.78)
+4	25	_		correct	M	plain cursive, "so" of "Bisognr", not sign Lx (share 0.41)
+4	26	_		confirm	M	plain cursive, "g" of "Bisognr" (share 0.80)
+4	27	_		correct	M	plain cursive flourish, "nr" ending of "Bisognr", not sign Z (share 0.80)
+4	28	ch		confirm	M	c followed by tall looped h, matches ch despite low share (0.26)
+4	29	sq		correct	M	fully closed square/parallelogram (all four sides closed), matches sq not ] (share was only 0.45)
+4	30	tee		confirm	M	vertical stroke with bar to the right, matches tee
+5	1	e	#	confirm	H	looped e with # mark
+5	2	wd		confirm	H	w joined to tall right stroke
+5	3	y		confirm	H	cursive y with looped tail
+5	4	e	dot|+	confirm	H	looped e with dot and + marks
+5	5	psi		confirm	H	forked y/psi shape
+5	6	m	~	confirm	H	three-hump m with tilde
+5	7	S7		confirm	H	clear 7-shape
+5	8	g	3	confirm	H	9/g loop with tail; small "3" mark above (boxlist listed no mark)
+5	9	S7	#	confirm	H	clear 7-shape with # mark
+5	10	a		confirm	H	clean plain-looking "a" shape used as the sign a here (isolated, flanked by other signs)
+5	11	S7	+	correct	H	a "7"-shaped stroke with a + mark above it; classifier called this box "_" (share 0.81) but the shape is a clear S7, sitting between S7(pos9)/a(pos10) and ](pos12) in an unbroken sign-cluster
+5	12	]	o	confirm	H	square box open to the left with o mark
+5	13	g		confirm	H	9/g loop with tail
+5	14	[	~	correct	M	square box open to the RIGHT (three sides, opening right), matches [ not sq; classifier's own cluster_code already read this as [ (share 0.54)
+5	15	S7	1	correct	M	single hooked "7"-stroke with a small "1" stroke below, not a forked two-arm psi; share was only 0.61
+5	16	S4		confirm	H	clear slash-cross S4
+5	17	_		confirm	M	plain cursive "f" of "fo" (share 0.82)
+5	18	_		confirm	H	plain cursive "o" of "fo"
+5	19	_		correct	H	plain cursive letter "v" (of "v.s."), not sign N despite share 0.63; clean v with a following dot
+5	20	_		confirm	H	plain abbreviation dot after "v"
+5	21	_		confirm	H	plain cursive "s" of "v.s."
+5	22	_		confirm	H	plain cursive ". lo" (dot + start of next word)
+5	23	_		correct	H	plain cursive dotted "j"/"y" ending of "faccj", not sign g; part of "farò v.s. lo faccj rifarz..."
+5	24	_		correct	M	plain cursive, part of "rifarz", not sign S7 (share 0.78)
+5	25	_		confirm	H	plain cursive, "rifarz"
+5	26	_		confirm	H	plain cursive, "rifarz" continuing
+5	27	_		confirm	H	plain cursive
+5	28	_		confirm	H	plain cursive
+5	29	_		confirm	M	plain cursive "&"/"et" ligature at line end; share was only 0.20 but shape is an ordinary connective, not sign N
+6	1	_		confirm	H	plain cursive "mt"
+6	2	_		confirm	H	plain cursive "Co" of "Comandj"
+6	3	_		confirm	H	plain cursive "mandj"
+6	4	_		correct	M	tiny single diagonal tick/punctuation mark right after "Comandj", not sign S7 (share only 0.41)
+6	5	S4		confirm	H	clear slash-cross S4
+6	6	rz		confirm	H	low hook-then-wave rz
+6	7	tee		confirm	H	vertical with bar, clean tee
+6	8	m	1	confirm	H	three-hump m with "1" mark
+6	9	g		confirm	H	9/g loop with tail
+6	10	S7	~	confirm	H	clear 7-shape with tilde mark
+6	11	lam		confirm	H	Λ shape
+6	12	e	#	confirm	H	looped e with # mark
+6	13	g		confirm	H	9/g loop with tail (tall variant)
+6	14	lam		confirm	H	Λ shape
+6	15	rz		confirm	H	low hook-then-wave rz
+6	16	S7	#	correct	H	clean "7"-shaped stroke; classifier had called this box "_" (with mark #) despite share 1.00, but the shape is unambiguously S7
+6	17	m	~	confirm	H	three-hump m with tilde
+6	18	w		confirm	H	clean w shape
+6	19	L		confirm	H	angle shape, clean L
+6	20	o.		correct	M	small filled loop with a dot on a descending stem, closer to o. than plain; classifier called this box "_" despite share 1.00
+6	21	bh		confirm	H	hooked loop on tall stem
+6	22	phi		confirm	H	slashed circle on a stem
+6	23	]	o	confirm	H	square open left with o mark
+6	24	e		confirm	H	looped e
+6	25	lam	dot|dot	confirm	H	Λ shape with two dot marks
