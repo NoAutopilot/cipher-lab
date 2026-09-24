@@ -5701,6 +5701,39 @@ no further digitarq requests made after noticing it. `github.com` 2 shallow clon
 cyphersolver`, `aaymeloglu/unsolved-ciphers`). No WebSearch used (browser_fetch and curl covered reachability;
 the JSON API covered search). No DECODE login, no Gallica, no Google Books.
 
+**Correction and leaf-isolation pass (LANE N4 scDIGI, 24 Sept 2026):** the line above ("No direct full-resolution
+image URL ... found in budget") is superseded -- a real Chromium network capture of an anonymous `fileViewer`
+load (curl alone never finds this; it is built client-side from a different id than the admin endpoints use)
+found the endpoint the viewer itself calls: `GET /api/rdigital/{docId}?fromIndex=N&max=M`, keyed by the
+**document** id (not the representation id `/rdigital/{repId}` tried above, which 200s but silently returns
+`total:0`), paginated, giving every page's `{id, name, type}`. Each file `id` then feeds two more anonymous
+endpoints with no login: `/api/rdigital/thumb?fileId=ID` (141x128 JPEG) and `/api/rdigital/dissemination?fileId=ID`
+(full working resolution, ~2000px wide on this codex, despite a misleading `image/tiff` Content-Type header --
+the same derivative the pan-zoom viewer itself serves). This is now `tools/digitarq_fetch.py` (`--list`,
+`--thumbs --stride N`, `--full --names`, `--montage` to batch many thumbnails into a few contact-sheet reads),
+with an offline test.
+
+Applied to both codices: PP-01 confirmed 592 images / no `children` sub-units, 50 stride-12 thumbnails read (via
+5 contact-sheet montages) plus 5 `cipher_page_detector.py` top-scored candidates (score 0.60-0.93) pulled at full
+resolution -- **all 5 are false positives**: ordinary dense Latin (m0205, about Anglo-Portuguese/English affairs
+but plain prose, no cipher symbols) and ordinary Portuguese cursive (m0181/m0229, m0001 cover). PP-02: 864 images
+confirmed, 48 stride-18 thumbnails read plus 2 detector top hits (0.65-0.86) pulled full-res, also both false
+positives (a royal letter to D. Sancho Manuel signed "Raynha", an ordinary signed letter). No cipher-leaf texture
+(dense isolated digit/symbol groups) found in either codex at this coverage (PP-01 ~8.4%, PP-02 ~5.6% of images
+sampled). **Both rows stay unconfirmed volume-sweep leads, not promoted to nominations** -- 542 PP-01 images and
+816 PP-02 images remain unseen; a future worker with more budget can resume with
+`tools/digitarq_fetch.py --thumbs DOC_ID --out DIR --stride N --offset K` at a different offset to fill the gaps
+without re-fetching the file list. Detector note: on this codex's 141x128 thumbnails the detector's already-known
+holdout FPR (~17-21% at its native 400px) appears at least as high -- treat every "cipher" score as a prioritized
+look, never a standalone verdict. Part (2) of the scDIGI brief (other ANTT cifra/cifrada-hit units iberia.md did
+not cover) was not reached this pass; brief cap was $6 and the API discovery took most of it.
+Per-host report this pass: `digitarq.arquivos.pt` ~126 requests (API discovery/exploration ~21, PP-01 list+thumbs
+51, PP-02 list+thumbs 49, 5 full-res candidate pulls), all >=3s apart except the one Chromium page-load burst
+(html+JS chunks+3 XHR, unavoidable single navigation) noted in ROOM.md; under the brief's <=150 cap. `github.com`
+0 (not needed, iberia.md's scope already established by scPARES). No DECODE, no Gallica, no Google Books, no
+WebSearch. Files: `tools/digitarq_fetch.py`, `tools/tests/test_digitarq_fetch.py`,
+`tools/tests/fixtures/fake_digitarq_curl.py`, `sources/solver-diffs/2026-09-24-pares-digitarq.tsv`.
+
 ## CS2 copy-order rows: item-level viewer checks (LANE N4 scARCH2, 24 September 2026 20:17 UTC)
 
 Brief `.claude/briefs/runs/2026-09-24-lane-n4-scARCH2.md`. Item-level lookups for the three CS2 copy-order
