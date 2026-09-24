@@ -108,6 +108,15 @@ targets, Eckert and Thurloe. 29 workers collected (LEDGER rows carry session ids
 - Eckert 1862 T1-T10: N1. Thurloe P11-13: N0. fr5160 Brienne f.86/f.88: N0 (f.87 is the contemporary decipherment).
   Eckert E4/E5: N3, two audits, N4 blocked only by Zooniverse Talk (ASKS 27); now LANE W's.
 
+**Final, 07:50 UTC: LANE V closed (own usage about $95 of the $120 cap).** Two LANE V workers are still running and are
+handed to cipher-lab-7a to collect (LEDGER row with Session column, status.json, archive): Danzay N4 decision after the
+Cryptiana thread closed negative (session_01MoWhkX7KpTtDeEZ8YAWg6z, Opus, $8) and the verifier for Brienne to the Queen of
+Poland 1646, ciphers/clair1067-brienne-poland-1646 (session_01Udgi32LVQHdPhEgPKEf6fe, Opus, $10); both end with a ROOM.md
+line 'for cipher-lab-7a'. Gramont f.29r and f.30: N4 (no prior decipherment located); the outreach drafts (Tomokiyo/Lasry
+email, Bourdeau issue text) wait only on ASKS row 32 (11 JSTOR rows run or waived). Whoever takes verification next
+should watch ROOM.md for 'for LANE V' lines at every check-in: the French BnF targets, and Google Books queries posted by
+LANE W.
+
 **07:21 UTC update:** Gramont f.29r and f.30 are **N4 (no prior decipherment located)**; outreach gate 2 is open only on 11
 JSTOR rows (ASKS row for the owner); draft the outreach once they are answered or waived. Danzay stays N3 until the Cryptiana
 forum thread is read (worker session_01L1CNm9KdabuHxwMAGjocEr), then a fresh N4-decision verifier. Google Books runner for
