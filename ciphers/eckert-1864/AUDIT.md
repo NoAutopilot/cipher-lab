@@ -485,3 +485,140 @@ witnesses of the plain words, and it gives the solver a second witness for the o
 commit: the board's results entry ("N3, single audit" becomes "N3, two audits; N4 pending"), NOTES.md section 4
 (adds the second copy and the second audit), and status.json's eckert-1864 target note. STATUS.md carries no
 sentence about E4 or E5 that over-claims; the orchestrator adds the result line when it republishes the board.
+
+## Toward N4, 24 Sept 2026 (gap worker)
+
+A gap-closing worker, not a verifier (brief from LANE V orchestrator session_01B5x2Dshzz71xBzbJqFnXYQ), working
+03:09-03:22 UTC. Its job was to close, or log as unreachable, the three items the second audit named as remaining
+for N4. It assigns no class and did not decode. Claim under audit unchanged: E4 and E5, N3.
+
+### 1. HathiTrust whole-library full-text search
+
+Unreachable, confirmed again. `curl` to `babel.hathitrust.org/cgi/ls?q1=...&anyall1=phrase&field1=ocr&a=srchls&ft=ft`
+(the phrase "camels made in a few days") returns HTTP 403. `tools/browser_fetch.js` against the same URL was
+tried once: the headless Chromium session ran to its 60-second timeout without rendering a result, and the
+agent-proxy log for that command shows a rejected CONNECT to `brunhild.challenges.cloudflare.com:443`
+("organization policy" / could not reach the destination) — the same Cloudflare challenge the 20 and 23 Sept
+sessions hit on `babel.hathitrust.org` and `manuscripts.nls.uk`. Not retried, per the one-retry-after-a-pause
+limit and because the failure mode (a proxy-level block on the challenge host, not a transient timeout) would not
+change on a second try. A Wayback Machine capture was not attempted: `web.archive.org` mirrors pages that were
+crawled, and a dynamically-generated full-text-search results page for this exact multi-word phrase query was
+never going to have been crawled and cached — there is nothing to look up in the CDX index for a URL no one else
+has ever requested, so this route was ruled out on reasoning rather than tried and logged as a further failure.
+**Status: unreachable (proxy-level Cloudflare block, consistent with three prior sessions on two different
+HathiTrust-adjacent hosts).**
+
+### 2. Meigs Papers (Library of Congress) and NARA RG 92 / RG 107, by finding aid and catalogue API
+
+**Meigs Papers (LoC).** The Library of Congress's Montgomery C. Meigs Papers collection (`hdl.loc.gov/loc.mss/eadmss.ms006021`,
+digitised at `loc.gov/collections/montgomery-c-meigs-papers/`) is searchable through the `loc.gov` JSON API
+(`?fo=json`) scoped with `fa=partof:montgomery c. meigs papers`. A query for `letterbooks` (21 hits) surfaces a
+digitised item exactly matching the month in question:
+
+- **"Montgomery C. Meigs Papers: Correspondence, Military Orders, and Related Matter, 1853-1892; Letterbooks;
+  1864, Apr."** — item id `mss325400076` (`loc.gov/item/mss325400076/`), digitised, 229 page images
+  (`tile.loc.gov/image-services/iiif/service:mss:mss32540:mss32540-020:0127/...`), `online_format: ["image"]`,
+  **no OCR or transcription layer** (the item JSON's `resources[0]` carries only `image`/`files`/`caption`, no
+  text field). This is Meigs's own outgoing letterbook covering 22 April 1864, the date of E5; if a retained
+  copy of his telegram to Butler survives anywhere in his own papers, page-by-page image review of this item
+  (not attempted here — 229 unindexed images is a transcription-scale job, outside this brief) is where to look.
+  A direct query for "Butler" against the whole Meigs Papers collection returns **zero** hits (the collection's
+  finding-aid metadata does not index correspondent names within letterbooks), so the collection cannot be
+  narrowed further by API search alone.
+- No Meigs item titled or dated to suggest a separate "letters received" or "telegrams" series distinct from
+  the chronological letterbooks was found; the finding aid groups his outgoing correspondence by date only.
+- **Status: archival pointer only, not searched to text.** `loc.gov` requests: 13, sequential, ≥1.5 s apart, UA
+  `cipher-lab research script (contact via repository)`.
+
+**NARA catalog (catalog.archives.gov).** The v2 REST API (`/api/v2/records/search`) requires an API key (free
+registration at archives.gov/developer; not in this environment's credential set, and registering one is the
+person's decision, not logged as a blocker here since the brief asks for pointers, not the key itself). The
+public search UI is a client-rendered SPA that returns the same HTML shell to `curl` regardless of query
+(confirmed: identical ~in an HTTP 200 response with no result data). `tools/browser_fetch.js` renders it
+correctly (no Cloudflare challenge on this host). Six browser fetches, ≥2 s apart:
+
+1. `q=Quartermaster General telegrams sent 1864` (unfiltered) returns 4,023 hits, all Confederate QMG (RG 64/109)
+   letter-and-telegram-book reels — wrong service, filtered out by record group in the next query.
+2. `q=Meigs telegrams sent 1864&f.recordGroupNo=92` (RG 92, Records of the Office of the Quartermaster General)
+   surfaces, at rank 1-2, two file units in a *different* record group that the search still returns as top hits:
+   **"1864: Meigs (1 of 2)"** (NAID 295511864) and **"1864: Meigs (2 of 2)"** (NAID 295513365), both container
+   "Roll 281" of **Record Group 107 (Records of the Office of the Secretary of War), series "Telegrams Sent by
+   the Field Office of the Military Telegraph and Collected by the Office of the Secretary of War"** — this is
+   the National Archives' own microfilm edition (M504) of the Secretary of War's copy of the Military Telegraph
+   office's traffic, i.e. the institutional twin of the Huntington's Eckert Papers, filed by the *recipient's*
+   surname rather than chronologically by ledger page. NAID 295513365's item page: 332 images, digitised from
+   microfilm, downloadable as `M504-281A.pdf` / `M504-281B.pdf` (300 MB), **0/334 pages transcribed, no
+   extracted text** — image only, exactly like the Huntington ledgers.
+3. A phrase query `"1864: Butler"` scoped to RG 107 (130 hits) finds the corresponding file units for the
+   *recipient* side of E4/E5: **"1864: Butler, B. F. (1 of 2)"** (NAID 295441024, Roll 237) and **"(2 of 2)"**
+   (NAID 295442525, Roll 237), plus **"1864: Butler, B. F. THRU By (1 of 2)"** (NAID 295442927, Roll 238) and
+   **"(2 of 2)"** (NAID 295444428, Roll 238) — same series, same record group. NAID 295441024's item page: **1,500
+   images**, 0/1,500 transcribed. If a War Department telegraph copy of Fox's or Meigs's telegram to Butler was
+   filed under the addressee's name (the normal practice for this series, per its own title), it is somewhere in
+   these roughly 3,000+ un-indexed page images across rolls 237-238 and 281 — a transcription-scale search, not
+   attempted here.
+4. An unscoped `q=Butler telegrams&f.recordGroupNo=107` (23,243 hits) was tried first and returned an unrelated
+   RG 92 personnel-index series ("Butler, Thomas A" etc., WWI-era burial records keyed on the surname "Butler");
+   ruled out by inspection, not counted as informative.
+- **Status: archival pointer only, not searched to text.** These are the concrete "NARA RG 92/RG 107 telegrams
+  sent April 1864" identifiers the second audit named as unsearched; they now have NAIDs, roll numbers, and PDF
+  download URLs on record, but no one has opened the images. Flag for whichever session next works this target:
+  reading roll 281 ("1864: Meigs") around image ~150-200 (April, alphabetically-then-chronologically filed
+  within the year, exact position not established) and the corresponding stretch of rolls 237-238 ("1864:
+  Butler, B. F.") is the single most promising untried route to N4, more so than JSTOR or HathiTrust, because it
+  is the other institution's copy of the same message traffic, not a printed edition — a match there would be
+  N4 evidence of prior transcription-readiness, not proof of prior *publication*, so would still need framing
+  carefully under rule 10 if pursued.
+
+### 3. Secondary literature (Google Scholar / WebSearch)
+
+Four WebSearch queries for the Fox-Butler-Ericsson "camels" exchange of 21-22 April 1864 and its Albemarle/Tecumseh
+context: `Fox Ericsson "camels" Tecumseh Butler April 1864 monitor Albemarle`; `"Gustavus Fox" Butler Ericsson
+camels ironclad dissertation Albemarle 1864`; `"Tecumseh" "camels" ironclad "Hatteras" 1864 telegram Butler
+quartermaster`; `"Meigs" "Butler" "cavalry depot" April 1864 quartermaster transportation regiments Bermuda
+Hundred`. No dissertation, article, or secondary source discussing this specific telegram exchange (Fox's "camels"
+proposal to lift the Tecumseh over the Hatteras bar, or Meigs's 22 April transportation telegram) was found; hits
+were general ship-history and campaign pages (Battlefield Trust, Wikipedia, NHHC, USNI Proceedings) that do not
+mention Butler, Fox, or Meigs in this exchange. Consistent with the second audit's book-level search-within
+results (Hoogenboom, Browning, Newsome: no hit on this exchange). No new source found; this negative adds
+web-search coverage to the book-level negative already on record, not a new family.
+
+### 4. JSTOR
+
+One reachability probe, as the second audit and Gramont/Bowes/Courten audits already established for this
+account: `curl` to `jstor.org/action/doBasicSearch?Query=...` returns HTTP 200 but the body is JSTOR's "Client
+Challenge" interstitial (3,038 bytes), not search results — the same block recorded in ASKS.md row 17. Not
+retried. **Status: unreachable from this environment, as before.**
+
+Per the brief, the exact queries a person (or a session with a working JSTOR login) should run are recorded here
+as a suggestion, not written into ASKS.md directly: `"Fox" AND "Butler" AND "Ericsson" AND camels AND 1864`;
+`"Tecumseh" AND "camels" AND Hatteras`; `Meigs AND Butler AND "cavalry depot" AND 1864`; `"Army of the James" AND
+Butler AND telegram AND April 1864`; `Eckert AND "Military Telegraph" AND cipher`. A corresponding suggestion line
+is added to NOTES.md for whoever next edits ASKS.md row 17.
+
+### Source-family log addendum (24 Sept 2026, gap worker)
+
+| # | family | reachable | searched | result |
+|---|---|---|---|---|
+| 9 | HathiTrust whole-library full-text search | no (Cloudflare `brunhild.challenges.cloudflare.com` rejected by agent proxy policy) | one browser_fetch.js attempt, one curl 403 | not searched |
+| 4 | LoC Meigs Papers (loc.gov JSON API) | yes | `letterbooks`, `Butler`, `letters sent`, `official correspondence`, `War Department correspondence`, item detail for mss325400076 | 1864 Apr. letterbook located (229 images, no OCR); no "Butler" hit; not read page-by-page |
+| 6 | NARA catalog (catalog.archives.gov), browser | yes (no Cloudflare on this host) | `Meigs telegrams sent 1864` + RG92 filter; `"1864: Butler"` + RG107 filter; item pages for NAIDs 295513365, 295441024 | four "1864: Butler, B.F." file units (rolls 237-238) and two "1864: Meigs" file units (roll 281), all RG 107 series "Telegrams Sent by the Field Office of the Military Telegraph and Collected by the Office of the Secretary of War" (M504); ~3,000+ page images total, none transcribed; not read |
+| 5, 11 | Secondary literature (WebSearch) | yes | four phrase queries on the Fox-Ericsson-Butler exchange and its ships | no source found discussing this exchange |
+| 11 | JSTOR | no (Client Challenge, one probe) | `doBasicSearch` | not searched; suggested queries logged in NOTES.md for ASKS.md row 17 |
+
+Request counts, per host: babel.hathitrust.org 1 curl + 1 browser attempt; loc.gov 13; catalog.archives.gov 6
+(browser); jstor.org 2 (curl); WebSearch 4 (not host-limited). No logins, no credentials used or printed, no
+decoding, no subagents, no changes to ciphertext.txt/reading.md/key material.
+
+### Conclusion
+
+None of the three named gaps closes N3 to N4 this pass. HathiTrust and JSTOR remain unreachable from this
+environment by the routes available (same conclusion as 20-24 Sept prior sessions on other targets). The Meigs
+Papers and, especially, the NARA RG 107 M504 series are now **concrete, citable archival pointers** rather than
+the vague "archival, not printed" of the second audit — real NAIDs, rolls, and download URLs for the recipient-
+and sender-side institutional copies of this exact message traffic — but they are unread; opening them is a
+transcription-scale task for a future worker, not something this brief covers. E4 and E5 stay **N3**. No sentence
+in this folder may use "first decipherment," "previously unread," "unpublished," or "never printed" for E4 or E5
+until one of: (a) HathiTrust or JSTOR access is restored and searched, (b) the NARA M504 rolls named above are
+read and either found empty of these telegrams (moving toward N4) or found to hold a prior transcription (moving
+toward N0/N1), or (c) the Meigs 1864 April letterbook is read page-by-page for the 21-22 April dates.

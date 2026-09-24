@@ -268,3 +268,9 @@ would settle the remaining [?] tokens the same way.
 
 Requests: hdl.huntington.org 5 (2 info.json, 2 full-size IIIF images, 1 CONTENTdm item API for the volunteers'
 text), 3 s apart, all HTTP 200.
+
+Suggestion for ASKS.md row 17 (JSTOR, not added there directly, per brief): add these E4/E5 queries to the row's
+list if a person or a working JSTOR login runs it: `"Fox" AND "Butler" AND "Ericsson" AND camels AND 1864`;
+`"Tecumseh" AND "camels" AND Hatteras`; `Meigs AND Butler AND "cavalry depot" AND 1864`; `"Army of the James" AND
+Butler AND telegram AND April 1864`; `Eckert AND "Military Telegraph" AND cipher` (AUDIT.md "Toward N4, 24 Sept
+2026 (gap worker)" section 4).
