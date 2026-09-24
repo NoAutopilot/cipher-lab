@@ -75,3 +75,52 @@ scope ("no crops, no passes"). Status stays open (a capture worker can now proce
 
 Requests this section: gallica.bnf.fr 2 (1 SRU query "gallica all Clairambault 296", 1
 `gallica_folio.py` manifest fetch).
+
+## Canvas pin attempted, not found (24 Sept 2026)
+
+LANE G2 worker P (Sonnet, cap $4). Confirmed manifest independently (`https://gallica.bnf.fr/iiif/ark:/12148/
+btv1b9000759b/manifest.json`, shelfmark "Clairambault 296", title matches the sub-unit above, 316 canvases, all
+labelled `NP` -- no page/folio metadata, as worker O already found). ContentSearch (`?ark=btv1b9000759b&query=...`)
+returns 0 hits for "Paget" **and** for a control word known to be on a printed page in this volume ("THERESE",
+see below) -- this ark carries **no OCR layer at all**, so Gallica full-text search cannot locate the item; only
+eye-checking images works.
+
+**Physical page stamps found, but they mislead.** Most openings in this recueil carry an ink page number in the
+top outer corner (distinct from the mount's own item numbering and from any printed pamphlet's own internal
+page numbers). Three probes calibrate it as continuous and linear: canvas f130 -> corner "235"; f137 -> corner
+"249" (predicted by interpolating the other two, then confirmed by fetching and reading it); f144 -> "263";
+f250 -> "503". Rate ~2.24 pages/canvas, matching the finding aid's own max cited page (P. 709) divided by the
+316 digitised canvases (709/316 = 2.244) almost exactly -- so this stamp is very likely the same running
+pagination the finding aid's "P. xxx" citations refer to, and the calibration itself is reliable.
+
+**But the content at the predicted canvas does not match.** Canvas f137 (stamped "249", exactly where the
+finding aid places "P. 249 - Lettre en partie chiffrée de Paget") shows the opening leaf of a wholly unrelated
+**printed** pamphlet, "Panégyrique de Ste Thérèse" (devotional oratory, not diplomatic correspondence, no cipher,
+no handwriting). Canvas f250 (stamped "503") is likewise a different printed pamphlet, an "Oraison funèbre de
+Monseigneur le Dauphin" / "de M. de Harlay Archevêque de Paris". Canvas f130 (stamped "235", next to the finding
+aid's "P.235 Proposition au sujet du port des armes") shows yet another mismatch: two mounted printed leaves
+about a poisoning affair ("Saint Laurens", "Officier de Cour Souveraine"). Every stamped-number prediction tried
+lands on print, never on the political 1712-13 manuscript correspondence the finding aid describes at those
+same numbers. Most likely explanation: this recueil is "Pièces historiques diverses, dont plusieurs imprimées
+(1572-1742)" (manifest title) -- printed items were pasted in among manuscripts in whatever order the volume was
+bound, not the finding aid's item order, and the finding aid's "P. xxx" is probably a page reference into a
+separate printed catalogue description of this volume (an Omont-type inventory), not the physical page stamped
+on these images. **This means the canvas-from-page-number method does not work for this ark and should not be
+retried without new evidence for what "P. xxx" actually indexes.**
+
+**Not pinned.** Two thumbnail probes near the finding aid's predicted position (f130, f137, f144) and one
+further out (f250) plus a check at f300 (also print, "Oraison Funèbre de Monseigneur le Dauphin") found no
+handwritten political letter of any kind in the ~120-canvas span sampled; the actual "Lettre en partie chiffrée
+de Paget" was not seen this pass. A full sweep of all 316 canvases (or of whatever block turns out to hold the
+Pontchartrain 1713 diplomatic correspondence specifically, which the manifest title calls out as if a distinct
+component of the volume) is outside this brief's scope ("no passes"; this was a location check only) and is
+the next step. Status stays `open`; not blocked, just unpinned -- a worker with more budget should browse in
+wider strides (every 20-30 canvases) looking for handwriting rather than print, since prose type alone
+(handwritten vs. printed) distinguishes the diplomatic letters from the pamphlets at a glance.
+
+**Hand/cipher comparison with clairambault1225-paget-1714 (M4): not possible this pass.** The brief asked
+whether the two Paget items' hands and ciphers look alike; without a located image of this item's actual letter,
+no comparison can be made. Deferred to whoever pins the canvas.
+
+Requests this section: gallica.bnf.fr 8 (1 manifest re-fetch, 2 ContentSearch, 5 image previews at 1000px:
+f130, f137, f144, f250, f300, all 200 on first try, >=1.5s apart). No other host.
