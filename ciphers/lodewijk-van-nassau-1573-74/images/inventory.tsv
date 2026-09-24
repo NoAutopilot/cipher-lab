@@ -1,0 +1,20 @@
+briefnr	page	content	cipher_type	approx_tokens	decipherment_location
+4610	p1	cipher (numeral groups interspersed with a few French words, e.g. "Il faut que me pardonn[i]ez...")	numerals (2-3 digit, comma-separated, values up to ~150)	~400	none -- target, unsolved
+4610	p2	cipher continues	numerals	~400	none -- target, unsolved
+4610	p3	cipher continues, ends with signature flourish	numerals	~400	none -- target, unsolved
+4610	p4	clear/address leaf ("Pour Hollande, Duplicata", wax seal)	n/a	0	n/a
+4611	p1	cipher (numeral groups, occasional plain French words/names)	numerals	~350	none -- target, unsolved
+4611	p2	cipher continues	numerals	~350	none -- target, unsolved
+4611	p3	mixed: cipher (top third) then clear French closing + date "2e jour de juillet 1573"	numerals + clear French	~100 cipher tokens	none -- target, unsolved
+4611	p4	clear/address leaf (show-through from p3 only, no cipher on this leaf itself)	n/a	0	n/a
+4612	p1	clear French header/incipit then dense cipher	numerals	~350	none -- target, unsolved
+4612	p2	cipher continues, then clear French closing + date "6e jour de mars 1574"	numerals	~250	none -- target, unsolved
+4612	p3	clear/address leaf	n/a	0	n/a
+4613	p1	cipher (numeral groups, some plain French words interspersed) -- SIBLING	numerals	~250 (not counted exactly by this worker)	see p2 (separate sheet, not interlinear)
+4613	p2	continuous running French plaintext, ends "25 de Mars l'an 1574" -- contemporary decipherment, same closing date as p1's cipher letter	clear French prose	n/a	this page (separate sheet in the same file, not interlinear with p1)
+4613	p3	clear/address leaf	n/a	0	n/a
+4615	p1	cipher (numeral groups, dot-separated, values up to ~330), dated "7 Apr[il] [15]74" -- SIBLING	numerals	~450	see p3 (separate sheet, not interlinear)
+4615	p2	clear/address leaf (address + wax seal)	n/a	0	n/a
+4615	p3	continuous running French plaintext, dated "7 Avril l'an 1574" (matches p1's cipher letter date) -- contemporary decipherment	clear French prose	n/a	this page (separate sheet in the same file, not interlinear with p1)
+4616	p1	cipher (numeral groups) then clear French closing + date "12 Avril l'an 1574"	numerals	~200 cipher tokens	none -- target, unsolved
+4616	p2	clear/address leaf	n/a	0	n/a

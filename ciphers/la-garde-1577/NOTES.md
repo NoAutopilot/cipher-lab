@@ -63,3 +63,31 @@ it rests on a direct reading of the edition itself rather than an inference from
 
 **Kind: cryptanalysis** (no contemporary decipherment or sibling-with-key identified this pass; the cipher
 passages' extent within the 4pp was not mapped, a task for a future solver pass, not this check-solved sweep).
+
+## Image capture, 24 September 2026 (LANE R worker R9)
+
+6179 fetched in full (4pp) and rendered to PNG at 150dpi. Cipher passages located: p2-p3 (foliation 32v-33r),
+numeral groups (dot-separated, mostly 1-2 digits) embedded word-by-word within continuous clear French prose,
+~140 cipher tokens total across the two pages -- the cipher is a minority of the letter's text, consistent
+with WVO's "gedeeltelijk" (partly) and with Groen's edition omitting only those clauses.
+
+Searched WVO for other La Garde letters (11 found via the correspondent index; a combined
+correspondent+opmerkingen query confirms only 6179 itself carries "cijferschrift") and for any other 1577
+letter to Orange noted as deciphered (opmerkingen="oplossing"/"ontcijferd"/"cijferschrift" + year=1577): three
+hits total, 6179 plus two candidates, both fetched and rendered (at most three, per the brief):
+- **6467** (Filips van Marnix van St. Aldegonde, 2 Nov 1577, Brussels): same numeral-cipher design as 6179
+  (dot-separated 1-2 digit groups). WVO Opmerkingen: "Twee passages in cijferschrift, waarvan de eerste met
+  oplossing in de marge" (two cipher passages, the first with a solution in the margin) -- marginal annotations
+  are visible near the first cipher run on p2 but this worker could not confirm by eye that they constitute a
+  full decipherment (flagged for a solver pass). **Note for a future novelty check, not acted on here**: this
+  record's Brongegevens already lists two printed-edition PDFs (edities/GSME and edities/LMSAC) -- this letter
+  has been printed somewhere, unlike 6179.
+- **5564** (Jan van Nassau, 11 Jan 1577, Siegen): a different cipher design from 6179 -- German text, numeral
+  groups mixed with roman-letter labels (e.g. "a.32.b"), not pure numerals. WVO Opmerkingen: "Met opgelost
+  cijferschrift" (with solved cipher), but no separate decipherment sheet is present in this 3pp file (the
+  letter is only 3pp: 2pp text + 1pp address leaf) -- the "opgelost" status is not confirmed imaged by this
+  worker, flagged for a solver pass or a further WVO/archive check.
+
+`images/manifest.json` and `images/inventory.tsv` (per-page content, cipher type, approx tokens, decipherment
+location) written. Host: resources.huygens.knaw.nl, 10 requests this pass (8 WVO record/search pages + 2 PDF
+fetches, >=2s apart). Folder kept at 24MB under the 30MB cap (PDFs deleted after rendering).

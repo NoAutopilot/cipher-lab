@@ -106,8 +106,8 @@ summarising fetch tool) or pin down the correct Internet Archive OCR identifiers
 febvrier..."; 4616: "Nous sommes cest soer icy arivé aupres de Goch et sommes...").
 
 **Copy status: copy-free.** Free PDF scans confirmed reachable (HTTP 200) and viewed by eye (this pass):
-cipher present on 4610 (`images/04610_p1-1.png`); the sibling 4613's contemporary decipherment confirmed
-present and imaged (`images/04613_p2-2.png`). No REQUEST.md needed.
+cipher present on 4610 (`images/04610_p1.png`); the sibling 4613's contemporary decipherment confirmed
+present and imaged (`images/04613_p2.png`). No REQUEST.md needed.
 
 **Kind: recovery** (via the sibling's imaged decipherment, an alignment problem per LESSONS.md §2 -- key
 recovery from 4613/4615, applied to 4610/4611/4612/4616 -- not cryptanalysis from scratch).
@@ -115,3 +115,16 @@ recovery from 4613/4615, applied to 4610/4611/4612/4616 -- not cryptanalysis fro
 **Next step (not this brief's scope):** fetch 4611, 4612, 4616, 4615 and attempt the alignment: recover the
 figure-to-letter/word mapping from 4613 and 4615's ciphertext-plaintext pairs, then test it against the four
 open letters.
+
+## Image capture, 24 September 2026 (LANE R worker R9)
+
+All six letters (4610, 4611, 4612, 4616 targets; 4613, 4615 siblings) now fetched in full and rendered to PNG
+at 150dpi in `images/`, with `images/manifest.json` and `images/inventory.tsv` (per-page content, cipher type,
+approx tokens, decipherment location). Confirms by eye: all four targets carry a numeral cipher throughout most
+of their body (values up to ~350); both siblings' contemporary decipherments (4613 p2, 4615 p3) are each on a
+separate sheet in the same file, not interlinear, and each closes with the same date as its cipher letter's
+closing date (25 March 1574 and 7 April 1574 respectively) -- strong confirmation these are the plaintext of
+those specific cipher letters, not unrelated enclosures. No alignment attempted (out of this brief's scope, per
+the "next step" above). Host: resources.huygens.knaw.nl, 4 requests this pass (>=2s apart), well under the
+shared LANE R budget. Folder kept at 25MB (PDFs deleted after rendering; re-fetch pdf_url in manifest.json if
+needed) under the 30MB cap.

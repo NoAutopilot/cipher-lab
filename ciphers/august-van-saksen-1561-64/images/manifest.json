@@ -1,19 +1,68 @@
 {
   "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo",
-  "note": "Free PDF scans, no login. Fetched 24 September 2026 by this worker (curl, browser-contact User-Agent, >=2s apart).",
+  "note": "00053 p1 first fetched 24 September 2026 by LANE N check-solved worker (csNB). This pass (57, 126 full; 74, 98, 153, 175 full -- all four siblings named in the brief) fetched/rendered 24 September 2026 by LANE R worker R9 (curl, browser-contact User-Agent, >=2s apart). Rendered at 100dpi (not 150dpi like NB1/NB4) to fit the 41-page total under the 30MB folder cap; re-fetch pdf_url at higher resolution for a solver pass. PDFs deleted after rendering.",
+  "search_log": "Opened each sibling's WVO record (74, 98, 153, 175) before fetching, per the brief: all four are 'Aan August van Saksen' (Willem -> August, same direction and correspondence run as targets 53/126), each with an explicit cipher+solution note in Opmerkingen (74: 'postscriptum in geheimschrift, waarvan op f. 19 de ontcijfering'; 98: 'postscriptum in cijfer met de oplossing'; 153: 'twee post data, waarvan de laatste in cijferschrift, waarvan 2 oplossingen'; 175: 'enige gedeelten in (opgelost) cijferschrift'). All four fetched in full (no sibling excluded) since all four record notes already promised a solution before fetching, unlike NB4 where candidates had to be found by a blind site search first.",
   "files": [
     {
-      "file": "00053.pdf",
       "briefnr": 53,
       "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=53",
       "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00053.pdf",
-      "date": "24 October 1561",
-      "shelfmark": "Sachsisches Hauptstaatsarchiv Dresden, Geheimer Rat (Geheimes Archiv), Locat 9941/3, Printzen, f. 266 r-v",
-      "pages": 2,
+      "date": "24 October 1561", "direction": "Willem -> August",
       "status": "target, undeciphered per WVO Opmerkingen",
-      "preview": "images/00053_p1-1.png (p.1, viewed by this worker: German secretary-hand plaintext letter, cipher postscript at the foot of the page in an arbitrary-symbol cipher, not numerals -- distinct design from the Lodewijk van Nassau numeral cipher)"
+      "images": ["00053_p1.png"], "note": "p2 not fetched this pass (budget, per prior worker)"
+    },
+    {
+      "briefnr": 57,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=57",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00057.pdf",
+      "date": "18 November 1561", "direction": "August -> Willem",
+      "pages": 4, "status": "target, undeciphered per WVO Opmerkingen",
+      "images": ["00057_p1.png", "00057_p2.png", "00057_p3.png", "00057_p4.png"]
+    },
+    {
+      "briefnr": 126,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=126",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00126.pdf",
+      "date": "16 September 1564", "direction": "Willem -> August",
+      "pages": 5, "status": "target, undeciphered per WVO Opmerkingen",
+      "images": ["00126_p1.png", "00126_p2.png", "00126_p3.png", "00126_p4.png", "00126_p5.png"]
+    },
+    {
+      "briefnr": 74,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=74",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00074.pdf",
+      "date": "13 August 1562", "direction": "Willem -> August",
+      "pages": 7,
+      "status": "sibling -- cipher (f.18) AND its contemporary decipherment (f.19-20) both imaged, confirmed by eye this pass",
+      "images": ["00074_p1.png", "00074_p2.png", "00074_p3.png", "00074_p4.png", "00074_p5.png", "00074_p6.png", "00074_p7.png"]
+    },
+    {
+      "briefnr": 98,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=98",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00098.pdf",
+      "date": "13 March 1563", "direction": "Willem -> August",
+      "pages": 6,
+      "status": "sibling -- cipher (f.66) and a probable contemporary decipherment (f.68-69, headed 'Zeittunge auss Franckreich') imaged, confirmed by eye this pass",
+      "images": ["00098_p1.png", "00098_p2.png", "00098_p3.png", "00098_p4.png", "00098_p5.png", "00098_p6.png"]
+    },
+    {
+      "briefnr": 153,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=153",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00153.pdf",
+      "date": "1 September 1566", "direction": "Willem -> August",
+      "pages": 9,
+      "status": "sibling -- cipher (f.4) AND TWO independent contemporary decipherments (f.5, f.6) imaged, confirmed by eye this pass",
+      "images": ["00153_p1.png", "00153_p2.png", "00153_p3.png", "00153_p4.png", "00153_p5.png", "00153_p6.png", "00153_p7.png", "00153_p8.png", "00153_p9.png"]
+    },
+    {
+      "briefnr": 175,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=175",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00175.pdf",
+      "date": "9 April 1567", "direction": "Willem -> August",
+      "pages": 10,
+      "status": "sibling -- cipher runs embedded inline in clear German prose throughout, several with small interlinear marginal glosses visible in a different hand/ink directly above (possible in-place decipherment, WVO Opmerkingen '(opgelost)'); design differs from the other five siblings (interlinear rather than block cipher)",
+      "images": ["00175_p1.png", "00175_p2.png", "00175_p3.png", "00175_p4.png", "00175_p5.png", "00175_p6.png", "00175_p7.png", "00175_p8.png", "00175_p9.png", "00175_p10.png"]
     }
   ],
-  "not_fetched_this_pass": ["00057.pdf (18 Nov 1561, has a Demandt excerpt citation, see NOTES.md)", "00126.pdf (16 Sep 1564)"],
-  "confirmed": "symbol cipher present on the target (53), by eye. Not transcribed."
+  "confirmed": "Six cipher designs observed across this correspondence circle, none identical: 53/57 use letters+arbitrary symbols (Λ, Δ); 74/126 use different arbitrary-symbol repertoires; 98/153 use pure numerals (153's design, overlined, differs from 98's numeral+symbol mix); 175 is interlinear rather than block cipher. A solver pass should not assume one key covers all six letters even though all are Willem<->August in the same 1561-67 window. See inventory.tsv for full per-page detail. Not transcribed."
 }

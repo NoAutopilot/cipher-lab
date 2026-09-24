@@ -1,0 +1,12 @@
+briefnr	page	content	cipher_type	approx_tokens	decipherment_location
+6179	p1	clear French prose (troop dispositions near Namur), manuscript foliation "32"	n/a	0	n/a
+6179	p2	mixed: clear French prose with several runs of numeral cipher groups embedded word-by-word (dot-separated, mostly 1-2 digits, some overlined)	numerals	~90 cipher tokens across several runs	none -- target, unsolved
+6179	p3	mixed: clear French prose continuing, with more numeral cipher runs; ends with signature "Lagarde" and date "2e jour de novembre 1577" [sic, matches letter body date 28 Nov per WVO record]	numerals	~50 cipher tokens	none -- target, unsolved
+6179	p4	address leaf ("A Monseigneur... Monseigneur Le Prince d'Orange, Conte de Nassau")	n/a	0	n/a
+6467	p1	clear French prose (news from Brussels), dated "2 Nov 1577" in a later archival hand	n/a	0	n/a
+6467	p2	mixed: clear French prose with several numeral cipher runs (dot-separated, same design as 6179: 1-2 digit groups), plus marginal annotations ("Justifier le faict duc grand", "N.d.f.") that may be the marginal solution WVO's Opmerkingen field describes for the first passage	numerals	~60 cipher tokens	possibly in the margin of this page (marginal notes present but not confirmed as a full decipherment by this worker; flagged for a solver pass)
+6467	p3	clear French prose continuing, no cipher visible; ends with closing formula and signature	n/a	0	n/a
+6467	p4	address leaf ("A monseigneur... Monseigneur le Prince d'Orange") with wax seal	n/a	0	n/a
+5564	p1	German secretary-hand plaintext letter (courtesy/political news, Reichstag matters) with numeral+letter cipher groups appearing mid-page (e.g. "0.77.h.83.a.32.b...")	numerals mixed with roman-letter labels	~60 cipher tokens on this page	none visible on this leaf
+5564	p2	cipher groups continue at the top (numerals+letters), then clear German closing, signed "Johann Graf zu Nassau" and dated "den 11. Januarij Anno 1577"	numerals mixed with roman-letter labels	~50 cipher tokens	none visible on this leaf (WVO Opmerkingen calls the letter's cipher solved, but no separate decipherment sheet is present in this 3pp file)
+5564	p3	address leaf ("A Monseigneur... Monseigneur le Prince d'Orange") with wax seal	n/a	0	n/a

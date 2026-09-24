@@ -85,3 +85,36 @@ instead as it needs a library/journal-access route, not a manuscript copy order)
 
 **Kind: cryptanalysis** (no sibling decipherment identified for this specific trio this pass, unlike NB1;
 the four already-solved circle-mates 74/98/153/175 are a possible future alignment lead, not chased here).
+
+## Image capture, 24 September 2026 (LANE R worker R9)
+
+Targets 57 (4pp) and 126 (5pp) fetched in full. All four siblings named in the brief -- 74, 98, 153, 175 --
+opened as WVO records first (all "Willem -> August", same correspondence run and direction as 53/126, each
+already flagged with an explicit cipher+solution note in Opmerkingen before fetching) then fetched in full (7,
+6, 9 and 10 pages respectively) and rendered to PNG at 100dpi (lower than NB1/NB4's 150dpi, to fit 44 pages
+under the 30MB folder cap -- re-fetch pdf_url at higher resolution for a solver pass). `images/manifest.json`
+and `images/inventory.tsv` (per-page content, cipher type, approx tokens, decipherment location) written.
+
+**Kind should be revisited: this is now also a recovery target, at least for a subset.** Confirmed by eye:
+- **74**: cipher (f.18-18v) AND its contemporary decipherment (f.19-20, clear German, headed with the
+  cipher's evident subject) are both imaged -- exactly the sibling pattern WVO's Opmerkingen promised.
+- **98**: cipher (f.66) and a probable decipherment (f.68-69, headed "Zeittunge auss Franckreich") imaged;
+  not confirmed word-for-word against the cipher's length, flagged for the solver.
+- **153**: cipher (f.4) AND **two independent** contemporary decipherments (f.5, f.6 -- near-duplicate but not
+  identical opening sentences) imaged. WVO's "waarvan 2 oplossingen" note is confirmed literally.
+- **175**: cipher is not block-form but interlinear, run inline within clear German prose at several points in
+  the letter, several with small marginal glosses in a different hand/ink directly above -- consistent with
+  WVO's "(opgelost)" note but not confirmed as a full decipherment by this worker (flagged for a solver pass;
+  see inventory.tsv per-page notes).
+
+**Six distinct cipher designs observed across this one correspondence circle** (53/57: letters + arbitrary
+symbols incl. Λ, Δ; 74/126: different arbitrary-symbol repertoires from 53/57 and from each other; 98: numerals
++ a few symbols; 153: pure overlined numerals, no symbols; 175: interlinear). **A solver should not assume one
+key covers 53/57/126 just because 74/98/153 share a recoverable key with their own decipherments** -- the
+designs differ letter to letter even within "Willem -> August" in this eight-year window. The alignment lead
+is strongest for 153 (cipher + 2 decipherments) and 74 (cipher + 1 decipherment); 53/57/126 (the actual
+targets) do not yet have a confirmed matching design to any deciphered sibling -- this needs eye comparison of
+glyph repertoires once a solver pass runs, not assumed from correspondence direction alone.
+
+Host: resources.huygens.knaw.nl, 10 requests this pass (4 WVO record pages + 6 PDF fetches, >=2s apart).
+Folder kept at 24MB under the 30MB cap.

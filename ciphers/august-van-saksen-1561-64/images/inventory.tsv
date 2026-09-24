@@ -1,0 +1,43 @@
+briefnr	page	content	cipher_type	approx_tokens	decipherment_location
+53	p1	German secretary-hand plaintext letter (courtesy/family news) with a cipher postscript at the foot of the page	arbitrary symbols (X, V, Λ, ϖ, Δ) mixed with digits	~30 (postscript only)	none -- target, unsolved (p2 not fetched this pass, per prior worker)
+57	p1	clear German prose	n/a	0	n/a
+57	p2	clear German prose continues, ends mid-letter	n/a	0	n/a
+57	p3	clear German prose (postscript intro) then, lower half, a cipher block signed "Augustus Churfurst"	letters + arbitrary symbols (Λ, Δ and others) mixed, alphabetic-looking substitution, not pure numerals	~90	none -- target, unsolved
+57	p4	address leaf ("Dem hochgebornen unserm freundtlichen lieben Vetter und Schwager...")	n/a	0	n/a
+126	p1	clear German prose (f.138r)	n/a	0	n/a
+126	p2	clear German prose continues (f.138v)	n/a	0	n/a
+126	p3	clear German prose, closing + signature + date "16 September[is] 1564" (f.140 -- note out-of-order foliation, f.140 precedes f.139 in this scan)	n/a	0	n/a
+126	p4	dense cipher block, foliated 139, signed "Wilhelm printz zu Uranien"	arbitrary symbols (Λ, θ, τ, ѵ-like glyphs) mixed with digits, different repertoire from 53/57 but same genre	~110	none -- target, unsolved
+126	p5	address leaf	n/a	0	n/a
+74	p1	clear German prose (f.17), Willem to August	n/a	0	background: SIBLING (to August, not from him, but same correspondence run)
+74	p2	clear German prose continues, closing + signature + date "13 Augusti anno [15]62" (f.17v-18r boundary)	n/a	0	n/a
+74	p3	dense cipher block, foliated 18	arbitrary symbols (Z, X, λ, π, τ, ε and others) mixed with digits	~180	see p5-p6 (separate leaf, clear German plaintext -- WVO Opmerkingen: "waarvan op f. 19 de ontcijfering")
+74	p4	cipher continues briefly (torn/half leaf) then signed "Wilhelm printz zu Uranien" (f.18v)	arbitrary symbols	~15	see p5-p6
+74	p5	CONTEMPORARY DECIPHERMENT: continuous clear German plaintext, foliated 19, begins "Die dreyhundert Spanier welche unser Konig dem Frantzosen zu hilf schickt..." -- matches the postscript's likely military-news content	clear German prose	n/a	this page (separate leaf, not interlinear with p3-p4)
+74	p6	clear German plaintext continues, foliated 20, ends signed "Wilhelm printz zu Uranien" again	clear German prose	n/a	this page (continuation of p5's decipherment)
+74	p7	address leaf, dated "29. Augusti anno [15]62"	n/a	0	n/a
+98	p1	clear German cover letter (f.65), closing + signature + date "13. Marty [15]63"	n/a	0	background: SIBLING (to August)
+98	p2	dense cipher block, foliated 66, signed "Wilhelm printz zu Uranien"	numerals + a few symbol glyphs	~90	see p4-p5 (WVO: "een postscriptum in cijfer met de oplossing")
+98	p3	short clear German paragraph (f.67), possible transition/cover text for the cipher's solution	clear German	n/a	n/a
+98	p4	CONTEMPORARY DECIPHERMENT (probable): clear German news text, foliated 68, headed "Zeittunge auss Franckreich" (news from France) -- content (Paris, Normandy campaigns) plausibly matches the cipher postscript's likely subject	clear German prose	n/a	this page + p5
+98	p5	clear German news text continues, foliated 69, address block dated "den 25 Marty a[nn]o [15]63"	clear German prose	n/a	continuation of p4
+98	p6	address leaf verso, docketed "Bericht von Franckreich" (report from France)	n/a	0	n/a
+153	p1	clear German prose (f.1), main letter body	n/a	0	background: SIBLING (to August)
+153	p2	clear German prose continues	n/a	0	n/a
+153	p3	clear German prose continues (f.2)	n/a	0	n/a
+153	p4	clear German prose, closing + signature + date "1. Septembris anno [15]66" (f.3 top: "post data" heading)	n/a	0	n/a
+153	p5	clear German prose, first "post data" ("Der Tol", customs/toll matter), signed again	n/a	0	n/a
+153	p6	dense cipher block, foliated 4, signed "Wilhelm printz zu Uranien" -- second "post data"	numerals (2-3 digit, overlined), no symbol glyphs -- different design from 53/57/74/98/126	~200	see p7 AND p8 (WVO: "waarvan 2 oplossingen" -- TWO decipherments of this same cipher)
+153	p7	CONTEMPORARY DECIPHERMENT #1: clear German prose, foliated 5, begins "Es ist aber zu erbarmen, das Calvinismus so weit einreisset..." (religious/political content, Calvinism vs. Augsburg Confession)	clear German prose	n/a	this page (decipherment copy 1 of 2)
+153	p8	CONTEMPORARY DECIPHERMENT #2: clear German prose, foliated 6, near-duplicate opening ("Es ist aber zu erbarmen dass Calvinismus so weit einreisset und die Augspurgische Confession begunstiget...") -- a second, independently worded decipherment of the same cipher (p6)	clear German prose	n/a	this page (decipherment copy 2 of 2)
+153	p9	address leaf, docketed "17. Septembris a[nn]o 66. Zeitung"	n/a	0	n/a
+175	p1	clear German prose (f.348r) with SEVERAL cipher runs embedded inline mid-sentence, some with small interlinear marginal glosses in a different hand/ink directly above	arbitrary symbols + digits, interlinear design (different again from the other five siblings)	~120 across several runs	possibly interlinear on this and the following pages (marginal glosses observed, not confirmed as full decipherment by this worker -- WVO Opmerkingen: "enige gedeelten in (opgelost) cijferschrift")
+175	p2	clear German prose continues, one short cipher run at top	arbitrary symbols + digits	~15	n/a
+175	p3	clear German prose (f.349) with two cipher runs, interlinear glosses visible above at least one	arbitrary symbols + digits	~50	possibly interlinear (see p1 note)
+175	p4	clear German prose continues	n/a	0	n/a
+175	p5	clear German prose (f.350) with one cipher run near the foot, small interlinear gloss visible above it	arbitrary symbols + digits	~30	possibly interlinear (see p1 note)
+175	p6	clear German prose (f.350v?) with one substantial cipher run, several short interlinear glosses in smaller hand above individual words	arbitrary symbols + digits	~60	possibly interlinear (see p1 note) -- clearest candidate for a marginal solution on this letter
+175	p7	clear German prose (f.351), no cipher visible	n/a	0	n/a
+175	p8	clear German prose with one cipher run, interlinear glosses again visible above part of it	arbitrary symbols + digits	~50	possibly interlinear (see p1 note)
+175	p9	clear German prose, closing + signature + date "9. Aprilis anno [15]67" (f.352)	n/a	0	n/a
+175	p10	address leaf, docketed "9. Aprilis 1567"	n/a	0	n/a
