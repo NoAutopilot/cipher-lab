@@ -1,34 +1,90 @@
 #!/usr/bin/env python3
 """Joint key from f.86 + f.88, 24 Sept 2026.
 
-f.86 is aligned to f.87 paragraph 1 (align_f86.segments), f.88 to f.87 paragraph 2 from "de Savoye" to "celle la"
-(split at the clear "mais"), with the same hard-EM/Viterbi aligner (align_f86.em).
+f.86 is aligned to f.87 paragraph 1 (align_f86.segments), f.88 and its canvas 173 tail to f.87 paragraph 2 from
+"de Savoye" to "quoy y pense" (split at the clear "mais" and "car ce ne peut"), with the same hard-EM/Viterbi aligner (align_f86.em).
 
   python3 joint_key.py              joint EM on f.86+f.88; write key_1659.tsv (grade C) and align_f88.tsv; print the
                                     changes against the committed f.86-only key (key_1659_f86only.tsv)
   python3 joint_key.py --holdout    mirror of holdout_f88.py: key from f.88 only, f.86 aligned under it, compared
                                     with a letter-shuffled f.87 paragraph 1 control (seeds 0-4); writes holdout_f86.tsv
 """
-import csv, random, sys
+import csv, math, random, sys
 from collections import Counter, defaultdict
 import align_f86 as A
 
 
 def f88_segments():
+    """f.88 (L01-L08) and its tail on canvas 173 (L09-L16), cut at the clear words: T1 "de Savoye ... beaucoup de
+    bien" | [mais] | T2 "lalliance ... celle la, et il seroit bon ... la fantesie" | [car ce ne peut] | T3 "estre
+    quauoir ... quoy y pense" | [je suis,]. Unread groups ('?') and clear punctuation are left out without a cut."""
     rows = list(csv.DictReader(open('ciphertext_f88.tsv'), delimiter='\t'))
     lines = open('dechiffre_f87.txt').read().split('\n')[14:]
     p2 = ' '.join(lines)
-    p2 = p2[p2.index('de Savoye'):p2.index('celle la, et') + len('celle la')]
+    p2 = p2[p2.index('de Savoye'):p2.index('quoy y pense') + len('quoy y pense')]
     before, after = p2.split('mais', 1)
-    parts, cur = [], []
+    mid, tail = after.split('car ce ne peut', 1)
+    parts, cur, prev_clear = [], [], False
     for r in rows:
         g = r['group']
-        if g == '[mais]':
-            parts.append(cur); cur = []
-        elif not g.startswith('[') and g != 'M.r':
+        if g == '[je]':
+            break
+        if g in ('[.]', '[,]') or (g == '?' and 'gutter' not in r['note']):
+            continue   # punctuation; a struck-through group
+        if g.startswith('['):
+            if cur and not prev_clear:
+                parts.append(cur); cur = []
+            prev_clear = True
+            continue
+        prev_clear = False
+        if g != 'M.r':
             cur.append((r['line'], int(r['pos']), g))
     parts.append(cur)
-    return [('T1', parts[0], A.norm(before)), ('T2', parts[1], A.norm(after))]
+    assert len(parts) == 3, len(parts)
+    return [('T1', parts[0], A.norm(before)), ('T2', parts[1], A.norm(mid)), ('T3', parts[2], A.norm(tail))]
+
+
+# A group hidden in the binding ('?' with a gutter note) is a wildcard: it may carry 0-4 plaintext letters at half the
+# cost of leaving them uncarried, and it never enters the key.
+_make_score = A.make_score
+
+
+def make_score(counts, tot, alpha=0.05):
+    s = _make_score(counts, tot, alpha)
+    return lambda g, chunk: A.SKIP * len(chunk) / 2 if g == '?' else s(g, chunk)
+
+
+A.make_score = make_score
+
+
+def first_part(s88):
+    """f.88 L01-L08 only (T1 and the head of T2 to "celle la"), as aligned in the previous joint key."""
+    t1, t2, _ = s88
+    head = [t for t in t2[1] if t[0] <= 'L08']
+    text = t2[2][:t2[2].index('cellela') + len('cellela')]
+    return [t1, ('T2', head, text)]
+
+
+def em_warm(segs, first, iters=40):
+    """Warm start: EM on the segments restricted to the groups of `first` (f.86 + f.88 L01-L08, the previous joint key),
+    then continue on the full segments from those counts. A cold hard-EM lets a new tail group's first, arbitrary
+    assignment reinforce itself (e.g. 4 'c' in "chose" pushed onto 53)."""
+    counts, _ = A.em(first, iters=iters)
+    counts.pop('?', None)
+    tot = Counter({g: sum(c.values()) for g, c in counts.items()})
+    res = []
+    for it in range(iters):
+        score = A.make_score(counts, tot)
+        newc, newt, res = defaultdict(Counter), Counter(), []
+        for name, toks, text in segs:
+            al, _ = A.viterbi([t[2] for t in toks], text, score)
+            res.append((name, toks, al))
+            for t, a in zip(toks, al):
+                newc[t[2]][a] += 1; newt[t[2]] += 1
+        if newc == counts:
+            break
+        counts, tot = newc, newt
+    return counts, res
 
 
 def em_unseeded(segs, iters=40):
@@ -66,13 +122,24 @@ def write_key(counts, per_folio):
 def joint():
     s86, s88 = A.segments(), f88_segments()
     old = {r['code']: r for r in csv.DictReader(open('key_1659_f86only.tsv'), delimiter='\t')}
-    counts, res = A.em(s86 + s88)
+    if '--cold' in sys.argv:
+        counts, res = A.em(s86 + s88)
+    else:
+        counts, res = em_warm(s86 + s88, s86 + first_part(s88))
+    counts.pop('?', None)
     per = {'f86': defaultdict(Counter), 'f88': defaultdict(Counter)}
     for name, toks, al in res:
         folio = 'f88' if name.startswith('T') else 'f86'
         for t, a in zip(toks, al):
-            per[folio][t[2]][a] += 1
+            if t[2] != '?':
+                per[folio][t[2]][a] += 1
     write_key(counts, per)
+    with open('align_f86_joint.tsv', 'w') as f:   # f.86 as aligned in the joint EM (the key the readings use)
+        f.write('seg\tline\tpos\tgroup\tplain\n')
+        for name, toks, al in res:
+            if not name.startswith('T'):
+                for t, a in zip(toks, al):
+                    f.write(f'{name}\t{t[0]}\t{t[1]}\t{t[2]}\t{a}\n')
     with open('align_f88.tsv', 'w') as f:
         f.write('seg\tline\tpos\tgroup\tplain\n')
         for name, toks, al in res:
@@ -100,6 +167,7 @@ def holdout():
     s86, s88 = A.segments(), f88_segments()
     out = []
     for label, counts in (('unseeded', em_unseeded(s88)[0]), ('seeded (seeds read from f.86: leaks, supporting only)', A.em(s88)[0])):
+        counts.pop('?', None)
         key = {g: c.most_common(1)[0][0] for g, c in counts.items()}
         tot = Counter({g: sum(c.values()) for g, c in counts.items()})
         score = A.make_score(counts, tot)

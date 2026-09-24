@@ -15,7 +15,7 @@ p2 = ' '.join(lines)
 p2 = p2[p2.index('de Savoye'):p2.index('celle la, et') + len('celle la')]
 before, after = p2.split('mais', 1)
 segs = []
-allt = [r for r in csv.DictReader(open('ciphertext_f88.tsv'), delimiter='\t')]
+allt = [r for r in csv.DictReader(open('ciphertext_f88.tsv'), delimiter='\t') if r['line'] <= 'L08']   # f.88 proper; L09+ is the canvas 173 tail
 cur, parts = [], []
 for r in allt:
     if r['group'] == '[mais]':

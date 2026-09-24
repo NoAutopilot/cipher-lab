@@ -1,159 +1,285 @@
-line	pos	group	value	grade
-L01	1	[peut]	peut	P
-L01	2	[estre]	estre	P
-L01	3	[que]	que	P
-L01	4	M.r	M.r	P
-L01	5	36	de	M
-L01	6	_15	sa	C
-L01	7	_28	v	M
-L01	8	9	y	M
-L01	9	2	e	C
-L01	10	m	a	C
-L01	11	16	l	M
-L01	12	60	la	M
-L01	13	18	n	M
-L01	14	19	t	C
-L01	15	m	a	C
-L01	16	4	c	C
-L01	17	33	c	M
-L01	18	17	m	M
-L01	19	_0	pa	C
-L01	20	13	gn	M
-L01	21	71	ne	M
-L01	22	21	r	C
-L01	23	115	M.	C
-L02	1	_15	sa	C
-L02	2	_18	s	C
-L02	3	2	e	M
-L02	4	7	ou	M
-L02	5	21	r	C
-L02	6	59	ju	M
-L02	7	20	s	C
-L02	8	_6	ques	C
-L02	9	m	a	C
-L02	10	_0	pa	C
-L02	11	21	r	C
-L02	12	66	me	C
-L02	13	_3	p	M
-L02	14	7	ou	M
-L02	15	21	r	C
-L02	16	_13	r	M
-L02	17	15	oi	M
-L02	18	19	t	C
-L02	19	23	pr	M
-L03	1	_11	re	M
-L03	2	18	n	M
-L03	3	3	e	M
-L03	4	_11	re	M
-L03	5	_11	re	M
-L03	6	_18	s	C
-L03	7	64	lu	M
-L03	8	_22	t	M
-L03	9	24	i	M
-L03	10	18	n	M
-L03	11	36	de	M
-L03	12	20	s	C
-L03	13	9	y	M
-L03	14	65	ar	C
-L03	15	_12	i	C
-L03	16	2	e	C
-L03	17	21	r	C
-L03	18	9	y	M
-L03	19	m	a	C
-L04	1	9	y	M
-L04	2	m	a	C
-L04	3	18	n	M
-L04	4	19	t	C
-L04	5	36	de	M
-L04	6	20	s	C
-L04	7	23	pr	M
-L04	8	_12	i	C
-L04	9	18	n	M
-L04	10	71	ne	M
-L04	11	20	s	C
-L04	12	_16	se	C
-L04	13	20	s	C
-L04	14	36	de	M
-L04	15	20	s	C
-L04	16	6	qu	C
-L04	17	16	l	M
-L04	18	61	le	C
-L04	19	20	s	C
-L05	1	24	i	M
-L05	2	18	n	M
-L05	3	37	di	M
-L05	4	19	t	C
-L05	5	26	be	M
-L05	6	m	a	C
-L05	7	7	ou	M
-L05	8	33	c	M
-L05	9	7	ou	M
-L05	10	23	pr	M
-L05	11	36	de	M
-L05	12	27	b	M
-L05	13	2	e	C
-L05	14	18	n	M
-L05	15	[mais]	mais	P
-L05	16	60	la	M
-L05	17	16	l	M
-L05	18	62	i	C
-L06	1	m	a	C
-L06	2	18	n	M
-L06	3	71	ne	M
-L06	4	2	e	C
-L06	5	20	s	C
-L06	6	19	t	C
-L06	7	_17	si	C
-L06	8	37	di	M
-L06	9	20	s	C
-L06	10	27	b	M
-L06	11	_13	r	M
-L06	12	_3	p	M
-L06	13	21	r	C
-L06	14	_22	t	M
-L06	15	24	i	M
-L06	16	18	n	M
-L06	17	71	ne	M
-L06	18	2	e	C
-L06	19	m	a	C
-L06	20	31	ce	M
-L06	21	16	l	M
-L07	1	61	le	C
-L07	2	20	s	C
-L07	3	_7	q	C
-L07	4	16	l	M
-L07	5	_3	p	M
-L07	6	7	ou	M
-L07	7	21	r	C
-L07	8	_13	r	M
-L07	9	15	oi	M
-L07	10	19	t	C
-L07	11	40	fa	M
-L07	12	15	oi	M
-L07	13	_11	re	M
-L07	14	2	e	C
-L07	15	18	n	M
-L07	16	19	t	M
-L07	17	_7	q	C
-L07	18	16	l	M
-L07	19	16	l	M
-L07	20	_13	r	M
-L07	21	15	oi	M
-L08	1	19	t	C
-L08	2	_19	su	C
-L08	3	21	r	C
-L08	4	23	pr	M
-L08	5	_11	re	M
-L08	6	70	a	C
-L08	7	18	n	M
-L08	8	19	t	C
-L08	9	_7	q	M
-L08	10	16	l	M
-L08	11	23	pr	M
-L08	12	_11	re	M
-L08	13	41	e	M
-L08	14	_10	st	C
-L08	15	31	ce	M
-L08	16	16	l	M
-L08	17	61	le	C
-L08	18	60	la	M
+line	pos	group	value	grade	f87_aligned
+L01	1	[peut]	peut	P	
+L01	2	[estre]	estre	P	
+L01	3	[que]	que	P	
+L01	4	M.r	M.r	P	
+L01	5	36	de	M	de
+L01	6	_15	sa	C	sa
+L01	7	_28	v	M	vo
+L01	8	9	y	M	y
+L01	9	2	e	M	e
+L01	10	m	a	C	a
+L01	11	16	l	M	l
+L01	12	60	la	C	la
+L01	13	18	n	M	n
+L01	14	19	t	C	t
+L01	15	m	a	C	a
+L01	16	4	c	M	cc
+L01	17	33	c	M	o
+L01	18	17	m	M	m
+L01	19	_0	pa	C	pa
+L01	20	13	gn	M	gn
+L01	21	71	ne	M	e
+L01	22	21	r	C	r
+L01	23	115	M.	C	M.
+L02	1	_15	sa	C	sa
+L02	2	_18	s	C	s
+L02	3	2	e	M	oe
+L02	4	7	ou	M	u
+L02	5	21	r	C	r
+L02	6	59	ju	M	ju
+L02	7	20	s	C	s
+L02	8	_6	ques	M	ques
+L02	9	m	a	C	a
+L02	10	_0	pa	C	pa
+L02	11	21	r	C	r
+L02	12	66	me	C	me
+L02	13	_3	p	M	p
+L02	14	7	ou	M	ou
+L02	15	21	r	C	r
+L02	16	_13	r	M	r
+L02	17	15	oi	M	oi
+L02	18	19	t	C	t
+L02	19	23	pr	M	pr
+L03	1	_11	re	M	en
+L03	2	18	n	M	dr
+L03	3	3	e	M	e
+L03	4	_11	re	M	r
+L03	5	_11	re	M	e
+L03	6	_18	s	C	s
+L03	7	64	lu	M	ol
+L03	8	_22	t	M	ut
+L03	9	24	i	M	i
+L03	10	18	n	M	on
+L03	11	36	de	M	de
+L03	12	20	s	C	s
+L03	13	9	y	M	ym
+L03	14	65	ar	C	ar
+L03	15	_12	i	C	i
+L03	16	2	e	M	e
+L03	17	21	r	C	r
+L03	18	9	y	M	y
+L03	19	m	a	C	a
+L04	1	9	y	M	y
+L04	2	m	a	C	a
+L04	3	18	n	M	n
+L04	4	19	t	C	t
+L04	5	36	de	M	de
+L04	6	20	s	C	s
+L04	7	23	pr	M	pr
+L04	8	_12	i	C	i
+L04	9	18	n	M	n
+L04	10	71	ne	M	ce
+L04	11	20	s	C	s
+L04	12	_16	se	C	se
+L04	13	20	s	C	s
+L04	14	36	de	M	de
+L04	15	20	s	C	s
+L04	16	6	qu	C	qu
+L04	17	16	l	M	el
+L04	18	61	le	C	le
+L04	19	20	s	C	s
+L05	1	24	i	M	0
+L05	2	18	n	M	on
+L05	3	37	di	M	di
+L05	4	19	t	C	t
+L05	5	26	be	M	be
+L05	6	m	a	C	a
+L05	7	7	ou	M	u
+L05	8	33	c	M	c
+L05	9	7	ou	M	ou
+L05	10	23	pr	M	p
+L05	11	36	de	M	de
+L05	12	27	b	M	b
+L05	13	2	e	M	e
+L05	14	18	n	M	n
+L05	15	[mais]	mais	P	
+L05	16	60	la	C	la
+L05	17	16	l	M	ll
+L05	18	62	i	C	i
+L06	1	m	a	C	a
+L06	2	18	n	M	n
+L06	3	71	ne	M	ce
+L06	4	2	e	M	e
+L06	5	20	s	C	s
+L06	6	19	t	C	t
+L06	7	_17	si	C	si
+L06	8	37	di	M	di
+L06	9	20	s	C	s
+L06	10	27	b	M	pr
+L06	11	_13	r	M	o
+L06	12	_3	p	M	p
+L06	13	21	r	C	r
+L06	14	_22	t	M	t
+L06	15	24	i	M	i
+L06	16	18	n	M	on
+L06	17	71	ne	M	ne
+L06	18	2	e	M	e
+L06	19	m	a	C	a
+L06	20	31	ce	M	ce
+L06	21	16	l	M	l
+L07	1	61	le	C	le
+L07	2	20	s	C	s
+L07	3	_7	q	C	q
+L07	4	16	l	M	uil
+L07	5	_3	p	M	p
+L07	6	7	ou	M	ou
+L07	7	21	r	C	r
+L07	8	_13	r	M	r
+L07	9	15	oi	M	oi
+L07	10	19	t	C	t
+L07	11	40	fa	M	fai
+L07	12	15	oi	M	re
+L07	13	_11	re	M	en
+L07	14	2	e	M	fr
+L07	15	18	n	M	an
+L07	16	19	t	M	ce
+L07	17	_7	q	C	q
+L07	18	16	l	M	ui
+L07	19	16	l	M	ls
+L07	20	_13	r	M	er
+L07	21	15	oi	M	oi
+L08	1	19	t	C	t
+L08	2	_19	su	C	su
+L08	3	21	r	C	r
+L08	4	23	pr	M	pr
+L08	5	_11	re	M	en
+L08	6	70	a	C	a
+L08	7	18	n	M	n
+L08	8	19	t	C	t
+L08	9	_7	q	M	q
+L08	10	16	l	M	uil
+L08	11	23	pr	M	pre
+L08	12	_11	re	M	fe
+L08	13	41	e	M	ra
+L08	14	_10	st	C	st
+L08	15	31	ce	M	ce
+L08	16	16	l	M	l
+L08	17	61	le	C	le
+L08	18	60	la	C	la
+L09	1	2	e	M	e
+L09	2	19	t	C	t
+L09	3	15	oi	M	i
+L09	4	16	l	M	l
+L09	5	_16	se	M	se
+L09	6	_13	r	M	r
+L09	7	15	oi	M	oi
+L09	8	19	t	C	t
+L09	9	28	b	C	b
+L09	10	18	n	M	on
+L09	11	[.]	.	P	
+L09	12	_6	ques	M	qu
+L09	13	_28	v	M	en
+L09	14	7	ou	M	ou
+L09	15	20	s	C	s
+L09	16	2	e	M	e
+L09	17	?	?	U	
+L09	18	20	s	C	s
+L09	19	15	oi	M	saya
+L10	1	20	s	M	s
+L10	2	_17	si	C	si
+L10	3	2	e	M	on
+L10	4	10	je	M	s
+L10	5	36	de	M	de
+L10	6	_1	pe	M	pe
+L10	7	71	ne	M	ne
+L10	8	19	t	C	t
+L10	9	_11	re	M	re
+L10	10	21	r	M	r
+L10	11	_7	q	C	q
+L10	12	64	lu	M	lu
+L10	13	9	y	M	y
+L10	14	2	e	M	e
+L10	15	18	n	M	n
+L10	16	m	a	M	a
+L10	17	40	fa	C	fa
+L10	18	15	oi	M	i
+L11	1	70	a	C	a
+L11	2	15	oi	M	i
+L11	3	20	s	C	s
+L11	4	19	t	C	t
+L11	5	_11	re	M	re
+L11	6	60	la	C	la
+L11	7	40	fa	C	fa
+L11	8	18	n	M	n
+L11	9	_20	ta	M	t
+L11	10	15	oi	M	e
+L11	11	_17	si	C	si
+L11	12	2	e	M	e
+L11	13	[car]	car	P	
+L11	14	[ce]	ce	P	
+L11	15	[ne]	ne	P	
+L11	16	[peut]	peut	P	
+L12	1	_5	estr	C	estr
+L12	2	_26	ve	M	equa
+L12	3	4	c	M	uoir
+L12	4	36	de	M	de
+L12	5	20	s	C	s
+L12	6	_16	se	C	se
+L12	7	15	oi	M	i
+L12	8	18	n	M	n
+L12	9	36	de	M	de
+L12	10	60	la	C	la
+L12	11	62	i	C	i
+L12	12	2	e	M	ch
+L12	13	71	ne	M	e
+L12	14	21	r	C	r
+L12	15	36	de	M	de
+L12	16	60	la	C	la
+L12	17	?	?	U	ance
+L13	1	31	ce	M	ce
+L13	2	20	s	C	s
+L13	3	19	t	C	t
+L13	4	7	ou	M	u
+L13	5	71	ne	M	ne
+L13	6	4	c	M	c
+L13	7	53	ho	C	ho
+L13	8	_16	se	C	se
+L13	9	_7	q	M	q
+L13	10	16	l	M	uil
+L13	11	40	fa	C	fa
+L13	12	7	ou	M	u
+L13	13	19	t	C	t
+L13	14	_26	ve	C	ve
+L13	15	15	oi	M	i
+L13	16	16	l	M	l
+L13	17	61	le	C	le
+L13	18	?	?	U	r
+L14	1	36	de	M	de
+L14	2	23	pr	M	pr
+L14	3	_11	re	M	e
+L14	4	10	je	M	z
+L14	5	_16	se	C	se
+L14	6	45	ga	C	ga
+L14	7	21	r	C	r
+L14	8	35	da	C	da
+L14	9	18	n	M	n
+L14	10	19	t	C	t
+L14	11	_3	p	M	p
+L14	12	7	ou	M	ou
+L14	13	21	r	C	r
+L14	14	_20	ta	M	ta
+L14	15	18	n	M	n
+L14	16	19	t	C	t
+L14	17	27	b	M	b
+L15	1	36	de	M	de
+L15	2	78	d	C	d
+L15	3	18	n	M	on
+L15	4	71	ne	M	ne
+L15	5	21	r	C	r
+L15	6	m	a	M	a
+L15	7	33	c	M	c
+L15	8	18	n	M	on
+L15	9	73	n	C	n
+L15	10	15	oi	M	oi
+L15	11	20	s	C	s
+L15	12	19	t	C	t
+L15	13	_11	re	M	re
+L15	14	_8	qu	C	qu
+L15	15	18	n	M	oy
+L15	16	9	y	M	y
+L15	17	_1	pe	M	pe
+L15	18	18	n	M	n
+L16	1	[je]	je	P	
+L16	2	[suis]	suis	P	
+L16	3	[,]	,	P	

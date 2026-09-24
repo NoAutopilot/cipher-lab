@@ -1,75 +1,80 @@
 code	value	grade	evidence	occurrences	other_values	note	ev_f86	ev_f88
 _0	pa	C	6	7	ei:1	minor conflict	4/5	2/2
 1	f	C	1	2	ff:1	conflict	1/2	0/0
-_1	pe	C	1	1		single attestation	1/1	0/0
-2	e	C	10	13	li:1,oe:1,fr:1	minor conflict	5/6	5/7
+_1	pe	C	3	3			1/1	2/2
+2	e	C	14	19	li:1,oe:1,fr:1,on:1,ch:1	conflict	5/6	9/13
 3	e	C	1	1		single attestation	0/0	1/1
-_3	p	C	6	6			3/3	3/3
-4	c	C	4	5	cc:1	minor conflict	4/4	0/1
+_3	p	C	7	7			3/3	4/4
+4	c	C	5	7	cc:1,uoir:1	conflict	4/4	1/3
 _4	pu	C	1	1		single attestation	1/1	0/0
 5	b	C	3	4	ua:1	minor conflict	3/4	0/0
+_5	estr	C	1	1		single attestation	0/0	1/1
 6	qu	C	5	5			4/4	1/1
-_6	ques	C	1	1		single attestation	0/0	1/1
-7	ou	C	11	19	u:7,eu:1	conflict	8/14	3/5
-_7	q	C	6	6			3/3	3/3
+_6	ques	C	1	2	qu:1	conflict	0/0	1/2
+7	ou	C	13	23	u:9,eu:1	conflict	8/14	5/9
+_7	q	C	8	8			3/3	5/5
 8	x	C	2	2			2/2	0/0
-9	y	C	6	13	bl:2,d:1,yp:1,n:1,la:1,ym:1	conflict	3/9	3/4
-10	je	C	1	2	st:1	conflict	1/2	0/0
+_8	qu	C	1	1		single attestation	0/0	1/1
+9	y	C	8	15	bl:2,d:1,yp:1,n:1,la:1,ym:1	conflict	3/9	5/6
+10	je	C	1	4	st:1,s:1,z:1	conflict	1/2	0/2
 _10	st	C	1	1		single attestation	0/0	1/1
-_11	re	C	5	13	en:3,e:2,ec:1,r:1,fe:1	conflict	5/7	0/6
+_11	re	C	9	17	e:3,en:3,r:1,fe:1	conflict	6/7	3/10
 _12	i	C	3	3			1/1	2/2
 13	gn	C	1	1		single attestation	0/0	1/1
-_13	r	C	6	9	er:2,o:1	conflict	4/5	2/4
+_13	r	C	7	10	er:2,o:1	conflict	4/5	3/5
 _14	ru	C	2	3	r:1	conflict	2/3	0/0
-15	oi	C	14	19	i:3,ir:1,re:1	conflict	11/15	3/4
+15	oi	C	16	28	i:9,re:1,saya:1,e:1	conflict	11/15	5/13
 _15	sa	C	3	3			1/1	2/2
-16	l	C	4	13	el:3,ls:2,uil:2,ll:1,ui:1	conflict	1/4	3/9
-_16	se	C	3	4	es:1	minor conflict	2/3	1/1
+16	l	C	6	16	el:3,uil:3,ls:2,ll:1,ui:1	conflict	1/4	5/12
+_16	se	C	7	8	es:1	minor conflict	2/3	5/5
 17	m	C	3	5	u:1,mb:1	conflict	2/4	1/1
-_17	si	C	4	4			3/3	1/1
-18	n	C	11	25	on:10,en:1,nq:1,dr:1,an:1	conflict	5/14	6/11
+_17	si	C	6	6			3/3	3/3
+18	n	C	17	35	on:13,en:1,nq:1,dr:1,an:1,oy:1	conflict	5/14	12/21
 _18	s	C	5	5			3/3	2/2
-19	t	C	21	22	ce:1	minor conflict	13/13	8/9
+19	t	C	30	31	ce:1	minor conflict	13/13	17/18
 _19	su	C	1	1		single attestation	0/0	1/1
-20	s	C	28	28			18/18	10/10
-_20	ta	C	1	1		single attestation	1/1	0/0
-21	r	C	23	25	te:1,ez:1	minor conflict	15/17	8/8
+20	s	C	35	35			18/18	17/17
+_20	ta	C	2	3	t:1	conflict	1/1	1/2
+21	r	C	28	30	te:1,ez:1	minor conflict	15/17	13/13
 _21	te	C	2	3	ten:1	conflict	2/3	0/0
 _22	t	C	2	4	ti:1,ut:1	conflict	1/2	1/2
-23	pr	C	4	6	p:1,pre:1	conflict	1/1	3/5
+23	pr	C	5	7	p:1,pre:1	conflict	1/1	4/6
 _23	o	C	1	1		single attestation	1/1	0/0
 24	i	C	3	9	ui:2,0:2,t:1,us:1	conflict	1/6	2/3
 26	be	C	1	1		single attestation	0/0	1/1
-_26	ve	C	2	2			2/2	0/0
-27	b	C	1	2	pr:1	conflict	0/0	1/2
-_28	v	C	3	5	au:1,vo:1	conflict	3/4	0/1
+_26	ve	C	3	4	equa:1	minor conflict	2/2	1/2
+27	b	C	2	3	pr:1	conflict	0/0	2/3
+28	b	C	1	1		single attestation	0/0	1/1
+_28	v	C	3	6	au:1,vo:1,en:1	conflict	3/4	0/2
 30	ca	C	4	4			4/4	0/0
 _30	si	C	1	1		single attestation	1/1	0/0
-31	ce	C	6	6			4/4	2/2
-33	c	C	3	4	o:1	minor conflict	2/2	1/2
+31	ce	C	7	7			4/4	3/3
+33	c	C	4	5	o:1	minor conflict	2/2	2/3
 _34	r	C	1	1		single attestation	1/1	0/0
-35	da	C	3	3			3/3	0/0
-36	de	C	11	11			6/6	5/5
+35	da	C	4	4			3/3	1/1
+36	de	C	17	17			6/6	11/11
 37	di	C	4	5	i:1	minor conflict	2/3	2/2
 _37	n	C	1	1		single attestation	1/1	0/0
 39	du	C	1	1		single attestation	1/1	0/0
-40	fa	C	2	3	fai:1	conflict	2/2	0/1
+40	fa	C	5	6	fai:1	minor conflict	2/2	3/4
 41	e	C	1	2	ra:1	conflict	1/1	0/1
 42	fi	C	2	2			2/2	0/0
+45	ga	C	1	1		single attestation	0/0	1/1
 46	ge	C	1	1		single attestation	1/1	0/0
 50	ha	C	1	1		single attestation	1/1	0/0
+53	ho	C	1	1		single attestation	0/0	1/1
 55	ja	C	1	1		single attestation	1/1	0/0
 56	n	C	1	1		single attestation	1/1	0/0
 59	ju	C	2	3	saju:1	conflict	1/2	1/1
-60	la	C	5	7	l:1,nt:1	conflict	2/4	3/3
-61	le	C	12	12			9/9	3/3
-62	i	C	3	4	ne:1	minor conflict	2/3	1/1
-64	lu	C	1	2	ol:1	conflict	1/1	0/1
+60	la	C	8	10	l:1,nt:1	minor conflict	2/4	6/6
+61	le	C	13	13			9/9	4/4
+62	i	C	4	5	ne:1	minor conflict	2/3	2/2
+64	lu	C	2	3	ol:1	conflict	1/1	1/2
 65	ar	C	1	1		single attestation	0/0	1/1
 66	me	C	2	2			1/1	1/1
-70	a	C	1	1		single attestation	0/0	1/1
-71	ne	C	4	11	e:3,ce:2,et:1,dan:1	conflict	3/7	1/4
-73	n	C	1	1		single attestation	1/1	0/0
-78	d	C	1	1		single attestation	1/1	0/0
+70	a	C	2	2			0/0	2/2
+71	ne	C	7	15	e:4,ce:3,dan:1	conflict	3/7	4/8
+73	n	C	2	2			1/1	1/1
+78	d	C	2	2			1/1	1/1
 115	M.	C	3	3			2/2	1/1
-m	a	C	19	19			11/11	8/8
+m	a	C	21	21			11/11	10/10

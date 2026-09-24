@@ -823,3 +823,91 @@ pattern). No novelty wording, no class.
 
 gallica.bnf.fr: 1 (canvas 173 native, 200 on first try). No other host. Two Sonnet subagents (the two blind
 passes only).
+
+## f.88 tail and regrade (24 Sept 2026)
+
+Opus reconciler+solver, LANE G, disk only (no network). Files: `reconcile_f88b.py` (new; `--check`) writes canvas 173
+into `ciphertext_f88.tsv` as L09-L16; `joint_key.py` (tail segments, warm start, gutter wildcard) -> `key_1659.tsv`,
+`align_f88.tsv`, `align_f86_joint.tsv` (new), `holdout_f86.tsv`; `decode_1659.py` (new C rule) -> `reading_f8{6,8}.*`;
+`holdout_f88.py` now reads f.88 L01-L08 only (its output is unchanged). `decode_1659.py --check` exits 0.
+
+### (1) Reconciliation of canvas 173
+
+Pass A vs pass B 107/123 (87.0%). All 16 disagreements, plus 7 places where both passes agreed on the wrong glyph,
+were settled by eye on zoomed crops of `images/crops/f173_cipher_{top,bottom}.jpg`. Each is listed with its reason
+in `reconcile_f88b.py` SETTLE and in the note column:
+- Overlines: `_16` `_13` (L01/5-6), `_26` (L04/2), `_7` (L05/9) present; L02/1 `20` and L02/10 `21` have none (the
+  curl and the wavy stroke belong to other groups).
+- The 3-shaped descending glyph (f.86 convention): the passes' 96/76/26 at L02/5, L04/4, L04/9, L04/15, L06/1, L07/1
+  are `36`; their 71 at L05/1 is `31`; their 77 at L07/7 is `33`; their `_7` at L06/11 is `_3`.
+- The "3"/"111" dispute (L02/16, L07/6) is the table's lowercase `m`, as in f.86.
+- L02/6 `_1`; L07/17 is `_1` followed by a separate `18` at the gutter (added as L07/18).
+- L01/17 is a 7 struck through by the scribe: written `?`, not read, left out of the alignment.
+- Gutter: a further, hidden group after L04/16 (pass A's faint stroke) and after L05/17 (starts with 2): `?`, conf L.
+Tail after settlement: 125 tokens: 115 cipher groups plus 3 `?`, and 7 clear (`[.]`, "car ce ne peut", "je suis,");
+conf H 94, M 21, L 3 across the 118 cipher tokens.
+
+### (2) Alignment and joint key
+
+The tail continues f.87 paragraph 2 from "et il seroit bon" with no clear word at the page turn, so T2 now runs
+"lalliance ... la fantesie" to the clear "car ce ne peut", and T3 is "estre quauoir ... quoy y pense" up to the
+clear "je suis,". Two changes to the aligner, both in `joint_key.py`: (a) a group hidden at the gutter is a
+wildcard (0-4 letters at half the skip cost, never keyed), which lets "[Fr]ance" in "de la France" fall on the
+hidden group after L04/16; (b) warm start: EM first on f.86 + f.88 L01-L08 (which gives the previous joint key), then
+on everything. A cold start (`--cold`, kept for comparison) let first guesses on new tail groups lock in, e.g.
+"chose" as `4`=ho `53`=s `_16`=e. With the warm start it reads `4`=c `53`=ho `_16`=se.
+
+`key_1659.tsv`: **79 groups** (was 74), all grade C (known plaintext), evidence as before (`ev_f86`, `ev_f88`,
+with f.88 now covering the tail too).
+- **New groups (5), one tail attestation each:** `_5` estr, `_8` qu, `28` b, `45` ga, `53` ho. `_5`=estr looks like
+  an alignment artefact: "estre quauoir" is spread over `_5 _26 4` under the four-letter cap. It is C by the rule
+  below (single attestation, conf H, value = aligned text), so treat it as the thinnest C in the table.
+- **Values changed: none** against the previous joint key. (`python3 joint_key.py` prints the diff against the
+  f.86-only key instead: the same four sub-part changes as before, `16` `18` `24` `71`.)
+- **Conflicts 23 -> 25.** Resolved: `40` fa (5/6), `60` la (8/10). Newly conflict: `2` e 14/19, `4` c 5/7, `_6`
+  ques 1/2, `_20` ta 2/3. Single attestations 22 -> 21. Most tail conflicts sit where the f.87 text and the cipher
+  part company (next point).
+- **Where the cipher and f.87 part company (M at those tokens, reported, not repaired):** f.87 "lallicher[?]"
+  (our transcriber's [?]) against the cipher `60 62 2 71 21` = la i e ne r under the key; f.87 "fantesie" against
+  `40 18 _20 15 _17 2` = fa n ta i si e; f.87 "quoy y pense" (our transcription notes the fourth letter is
+  doubtful) against `_8 18 9 _1 18` = qu on y pe n (+ a hidden group); "essayassions" where the struck group sits.
+  These are readings of the cipher under a key estimated from f.87 itself: grade M, not corrections to f.87.
+- Mirror hold-out (`joint_key.py --holdout`, key from the whole of f.88 only, f.86 aligned under it): unseeded
+  32/238 vs control 29-39, **null** (the unseeded EM does not find the table from 268 groups alone); seeded
+  (seeds read from f.86, so this leaks and is supporting only) 180/238 vs control 43-58, non-seed groups 54/85 vs 7-13.
+  Check (b) (`holdout_f88.py`, f.86-only key on f.88 L01-L08) unchanged: 114/143 vs control 28-35.
+
+### (3) Regrade (AUDIT.md s.4)
+
+New rule in `decode_1659.py`: a token is C only if its key value is the f.87 text that the joint alignment puts at
+**that position** (column `f87_aligned` in `reading_f8x.tsv`), besides conf H and a non-conflict key row. f.86 is
+graded against `align_f86_joint.tsv` (the alignment that made the key), not the f.86-only `align_f86.tsv`. The
+two differ at 7 of 268 positions, none of them a C.
+- The verifier's four: f.86 L07/2 `_16` se/es and L07/14 `_0` pa/ei, now **M** by the new rule; f.88 L01/16 `4`
+  c/cc and L07/14 `2` e/fr, now **M** (the rule applies, and rows `4` and `2` are also conflicts now).
+- Same fault elsewhere: two more C tokens failed the rule and are now M: f.86 L03/1 `60` la/l and f.88 L07/11
+  `40` fa/fai. After the regrade, 0 C tokens anywhere have a value different from the aligned f.87 text.
+- Still C and thin: 13 C tokens on single-attestation rows (f.86 5, f.88 8). The verifier allowed these;
+  they are listed by `key_1659.tsv` note `single attestation`.
+
+**Grades (tokens):**
+
+| folio | C | M | U | P | total |
+|---|---|---|---|---|---|
+| f.86 | 69 | 199 | 0 | 12 | 280 |
+| f.88 L01-L08 | 60 | 93 | 0 | 5 | 158 |
+| f.88 tail (canvas 173, L09-L16) | 43 | 72 | 3 | 8 | 126 |
+| f.88 whole | 103 | 165 | 3 | 13 | 284 |
+
+Before: f.86 C 72 M 196; f.88 C 65 M 88. No H anywhere (no key source). The tail reading is f.87 paragraph 2 read
+back through a key estimated partly from it; it is not new text. `reading_f88.txt` L09-L16: "e t oi l se r oi t b n
+[.] ques v ou s e ? s oi / s si e je de pe ne t re r q lu y e n a fa oi / a oi s t re la fa n ta oi si e [car ce ne
+peut] / estr ve c de s se oi n de la i e ne r de la ? / ce s t ou ne c ho se q l fa ou t ve oi l le ? / de pr re je se
+ga r da n t p ou r ta n t b / de d n ne r a c n n oi s t re qu n y pe n / [je suis ,]" (modal key values, so the
+homophone-level letters `15` oi/i, `18` n/on, `7` ou/u show their modal form).
+
+Not done: the hidden gutter groups (L12/17, L13/18, and possibly L11 after [peut], L14 after `27`) need the
+volume opened flat or a better image; the four-letter cap and the f.87 differences above are aligner limits,
+not settled. No novelty wording, no class.
+
+Requests: none (no network). No subagents.

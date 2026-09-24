@@ -1,4 +1,4 @@
-# grades: C=65 M=88 P=5  (P = clear in the manuscript; ? = unkeyed)
+# grades: C=103 M=165 P=13 U=3  (P = clear in the manuscript; ? = unkeyed)
 L01  [peut] [estre] [que] [M.r] de sa v y e a l la n t a c c m pa gn ne r M.
 L02  sa s e ou r ju s ques a pa r me p ou r r oi t pr
 L03  re n e re re s lu t i n de s y ar i e r y a
@@ -7,3 +7,11 @@ L05  i n di t be a ou c ou pr de b e n [mais] la l i
 L06  a n ne e s t si di s b r p r t i n ne e a ce l
 L07  le s q l p ou r r oi t fa oi re e n t q l l r oi
 L08  t su r pr re a n t q l pr re e st ce l le la
+L09  e t oi l se r oi t b n [.] ques v ou s e ? s oi
+L10  s si e je de pe ne t re r q lu y e n a fa oi
+L11  a oi s t re la fa n ta oi si e [car] [ce] [ne] [peut]
+L12  estr ve c de s se oi n de la i e ne r de la ?
+L13  ce s t ou ne c ho se q l fa ou t ve oi l le ?
+L14  de pr re je se ga r da n t p ou r ta n t b
+L15  de d n ne r a c n n oi s t re qu n y pe n
+L16  [je] [suis] [,]

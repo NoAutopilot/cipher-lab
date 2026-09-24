@@ -157,3 +157,129 @@ L08	15	31	M	readers differed (C 71); kept 31 on the image: descending 3-shaped g
 L08	16	16	H	two blind readers agree
 L08	17	61	H	two blind readers agree
 L08	18	60	H	two blind readers agree
+L09	1	2	H	canvas 173 L01: two blind passes agree
+L09	2	19	H	canvas 173 L01: two blind passes agree
+L09	3	15	H	canvas 173 L01: two blind passes agree
+L09	4	16	H	canvas 173 L01: two blind passes agree
+L09	5	_16	M	canvas 173 L01: passes 16/_16; overline visible on zoom (pass B)
+L09	6	_13	M	canvas 173 L01: passes 13/_13; overline visible on zoom (pass B)
+L09	7	15	H	canvas 173 L01: two blind passes agree
+L09	8	19	H	canvas 173 L01: two blind passes agree
+L09	9	28	H	canvas 173 L01: two blind passes agree
+L09	10	18	H	canvas 173 L01: two blind passes agree
+L09	11	[.]	H	canvas 173 L01: clear French
+L09	12	_6	H	canvas 173 L01: two blind passes agree
+L09	13	_28	H	canvas 173 L01: two blind passes agree
+L09	14	7	H	canvas 173 L01: two blind passes agree
+L09	15	20	H	canvas 173 L01: two blind passes agree
+L09	16	2	H	canvas 173 L01: two blind passes agree
+L09	17	?	L	canvas 173 L01: passes ?/7; a 7 struck through with a heavy stroke: cancelled by the scribe, not read
+L09	18	20	H	canvas 173 L01: two blind passes agree
+L09	19	15	H	canvas 173 L01: two blind passes agree
+L10	1	20	M	canvas 173 L02: passes _20/20; the curl above belongs to the line above (pass B)
+L10	2	_17	H	canvas 173 L02: two blind passes agree
+L10	3	2	H	canvas 173 L02: two blind passes agree
+L10	4	10	H	canvas 173 L02: two blind passes agree
+L10	5	36	M	canvas 173 L02: passes 96/_96; first digit is the descending 3-shaped glyph (f.86 convention), no overline
+L10	6	_1	M	canvas 173 L02: passes _7/_1; a straight 1 under a short bar (pass B)
+L10	7	71	H	canvas 173 L02: two blind passes agree
+L10	8	19	H	canvas 173 L02: two blind passes agree
+L10	9	_11	H	canvas 173 L02: two blind passes agree
+L10	10	21	M	canvas 173 L02: passes _21/21; the wavy stroke sits between 21 and _7, not over 21 (pass B)
+L10	11	_7	H	canvas 173 L02: two blind passes agree
+L10	12	64	H	canvas 173 L02: two blind passes agree
+L10	13	9	H	canvas 173 L02: two blind passes agree
+L10	14	2	H	canvas 173 L02: two blind passes agree
+L10	15	18	H	canvas 173 L02: two blind passes agree
+L10	16	m	M	canvas 173 L02: passes 3/111; the lowercase 'm' of this table, as in f.86
+L10	17	40	H	canvas 173 L02: two blind passes agree
+L10	18	15	H	canvas 173 L02: two blind passes agree
+L11	1	70	H	canvas 173 L03: two blind passes agree
+L11	2	15	H	canvas 173 L03: two blind passes agree
+L11	3	20	H	canvas 173 L03: two blind passes agree
+L11	4	19	H	canvas 173 L03: two blind passes agree
+L11	5	_11	H	canvas 173 L03: two blind passes agree
+L11	6	60	H	canvas 173 L03: two blind passes agree
+L11	7	40	H	canvas 173 L03: two blind passes agree
+L11	8	18	H	canvas 173 L03: two blind passes agree
+L11	9	_20	H	canvas 173 L03: two blind passes agree
+L11	10	15	H	canvas 173 L03: two blind passes agree
+L11	11	_17	H	canvas 173 L03: two blind passes agree
+L11	12	2	H	canvas 173 L03: two blind passes agree
+L11	13	[car]	H	canvas 173 L03: clear French
+L11	14	[ce]	H	canvas 173 L03: clear French
+L11	15	[ne]	H	canvas 173 L03: clear French
+L11	16	[peut]	H	canvas 173 L03: clear French
+L12	1	_5	H	canvas 173 L04: two blind passes agree
+L12	2	_26	M	canvas 173 L04: passes _26/26; overline visible on zoom (pass A)
+L12	3	4	H	canvas 173 L04: two blind passes agree
+L12	4	36	M	canvas 173 L04: passes 96/96; descending 3-shaped first digit (f.86 convention)
+L12	5	20	H	canvas 173 L04: two blind passes agree
+L12	6	_16	H	canvas 173 L04: two blind passes agree
+L12	7	15	H	canvas 173 L04: two blind passes agree
+L12	8	18	H	canvas 173 L04: two blind passes agree
+L12	9	36	M	canvas 173 L04: passes 96/26; descending 3-shaped first digit (f.86 convention)
+L12	10	60	H	canvas 173 L04: two blind passes agree
+L12	11	62	H	canvas 173 L04: two blind passes agree
+L12	12	2	H	canvas 173 L04: two blind passes agree
+L12	13	71	H	canvas 173 L04: two blind passes agree
+L12	14	21	H	canvas 173 L04: two blind passes agree
+L12	15	36	M	canvas 173 L04: passes 96/96; descending 3-shaped first digit (f.86 convention)
+L12	16	60	H	canvas 173 L04: two blind passes agree
+L12	17	?	L	canvas 173 L04: gutter: faint top stroke of a further group after 60 (pass A note), hidden in the binding
+L13	1	31	M	canvas 173 L05: passes 71/71; descending 3-shaped first digit (f.86 convention)
+L13	2	20	H	canvas 173 L05: two blind passes agree
+L13	3	19	H	canvas 173 L05: two blind passes agree
+L13	4	7	H	canvas 173 L05: two blind passes agree
+L13	5	71	H	canvas 173 L05: two blind passes agree
+L13	6	4	H	canvas 173 L05: two blind passes agree
+L13	7	53	H	canvas 173 L05: two blind passes agree
+L13	8	_16	H	canvas 173 L05: two blind passes agree
+L13	9	_7	M	canvas 173 L05: passes 7/_7; bar visible above the 7 (pass B)
+L13	10	16	H	canvas 173 L05: two blind passes agree
+L13	11	40	H	canvas 173 L05: two blind passes agree
+L13	12	7	H	canvas 173 L05: two blind passes agree
+L13	13	19	H	canvas 173 L05: two blind passes agree
+L13	14	_26	H	canvas 173 L05: two blind passes agree
+L13	15	15	H	canvas 173 L05: two blind passes agree
+L13	16	16	H	canvas 173 L05: two blind passes agree
+L13	17	61	H	canvas 173 L05: two blind passes agree
+L13	18	?	L	canvas 173 L05: gutter: a further group begins with 2, rest hidden in the binding
+L14	1	36	M	canvas 173 L06: passes 96/76; descending 3-shaped first digit (f.86 convention)
+L14	2	23	H	canvas 173 L06: two blind passes agree
+L14	3	_11	H	canvas 173 L06: two blind passes agree
+L14	4	10	H	canvas 173 L06: two blind passes agree
+L14	5	_16	H	canvas 173 L06: two blind passes agree
+L14	6	45	H	canvas 173 L06: two blind passes agree
+L14	7	21	H	canvas 173 L06: two blind passes agree
+L14	8	35	H	canvas 173 L06: two blind passes agree
+L14	9	18	H	canvas 173 L06: two blind passes agree
+L14	10	19	H	canvas 173 L06: two blind passes agree
+L14	11	_3	M	canvas 173 L06: passes _7/_3; descending 3-shaped glyph under a bar (pass B)
+L14	12	7	H	canvas 173 L06: two blind passes agree
+L14	13	21	H	canvas 173 L06: two blind passes agree
+L14	14	_20	H	canvas 173 L06: two blind passes agree
+L14	15	18	H	canvas 173 L06: two blind passes agree
+L14	16	19	H	canvas 173 L06: two blind passes agree
+L14	17	27	M	canvas 173 L06: passes 27/27; at the gutter, second digit partly cut (pass B conf L)
+L15	1	36	M	canvas 173 L07: passes 96/76; descending 3-shaped first digit (f.86 convention)
+L15	2	78	H	canvas 173 L07: two blind passes agree
+L15	3	18	H	canvas 173 L07: two blind passes agree
+L15	4	71	H	canvas 173 L07: two blind passes agree
+L15	5	21	H	canvas 173 L07: two blind passes agree
+L15	6	m	M	canvas 173 L07: passes 3/111; the lowercase 'm' of this table
+L15	7	33	M	canvas 173 L07: passes 77/77; both digits the descending 3-shaped glyph (f.86 convention)
+L15	8	18	H	canvas 173 L07: two blind passes agree
+L15	9	73	H	canvas 173 L07: two blind passes agree
+L15	10	15	H	canvas 173 L07: two blind passes agree
+L15	11	20	H	canvas 173 L07: two blind passes agree
+L15	12	19	H	canvas 173 L07: two blind passes agree
+L15	13	_11	H	canvas 173 L07: two blind passes agree
+L15	14	_8	H	canvas 173 L07: two blind passes agree
+L15	15	18	H	canvas 173 L07: two blind passes agree
+L15	16	9	H	canvas 173 L07: two blind passes agree
+L15	17	_1	M	canvas 173 L07: passes _18/_1; a 1 under a bar, then a separate 18 at the gutter (pass B plus one group)
+L15	18	18	M	canvas 173 L07: gutter: 18 after _1, partly in the binding shadow
+L16	1	[je]	H	canvas 173 L08: clear French
+L16	2	[suis]	H	canvas 173 L08: clear French
+L16	3	[,]	M	canvas 173 L08: clear French
