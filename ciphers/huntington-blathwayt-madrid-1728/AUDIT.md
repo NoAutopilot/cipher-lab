@@ -13,6 +13,9 @@ C 129, S 0, M 22, U 21, H 0. The verifier did not decode and did not re-grade to
 | mssBLA 191, enclosure (a), p5 | Port Ste Marie, undated (forwarded from "Cesnok" to Newcastle 8 Aug 1729) | 141 (106/19/16) | not located | not located in the Huntington; the copy forwarded to Newcastle not traced | **N3** | medium-low |
 | mssBLA 184 p1, 7 code groups | [1727-28], statement re M. Rottembourg | 7 (3/3/1) | not located | not located | **N3** (reading is 3 syllable groups; the names are unread) | medium |
 
+**Second audit (below) corrects this table for BLA 186: the letter's clear text is printed (Rose 1831, ii 414-15), cipher
+lines omitted; the classes stand.**
+
 Why not N4: the principal editions are not all covered. Not reached: Google Books (LANE V's host, queries
 posted), HMC *Polwarth* vols IV (1940) and V (1961) (Marchmont papers; not on Internet Archive; vols I-III are and
 were searched), Christopher Storrs, *The Spanish Resurgence 1713-1748* (Yale 2016) (Storrs handled BLA 186 in
@@ -126,3 +129,137 @@ Aug 1729 Port St Mary enclosure and its decipherment. Second opinion requested: 
 hdl.huntington.org 19 (9 dmQuery, 6 dmGetItemInfo, 1 dmGetCompoundObjectInfo, 3 IIIF, >=2.5 s apart); oac.cdlib.org 2 (1 curl, 1 browser); archive.org 13 (advancedsearch 6, metadata 7);
 be-api.us.archive.org 40; discovery.nationalarchives.gov.uk 14; api.crossref.org 6; api.openalex.org 1 (429);
 api.semanticscholar.org 1; api.archives-ouvertes.fr 2; persee.fr 1; github.com 2 shallow clones.
+
+## Second audit (adversarial), 24 Sept 2026
+
+Auditor: LANE W worker I (Opus), 09:03-09:40 UTC, a session other than the solver's (R17) and the first
+verifier's (worker H). Did not decode or re-grade tokens. Brief: try to find these texts, or a decipherment of
+them, in print or catalogued elsewhere.
+
+### Result in one line
+
+**BLA 186's clear text is in print.** George Henry Rose, *A Selection from the Papers of the Earls of Marchmont*
+(London 1831), vol. 2, pp. 414-415, "From the Abbé Paretti to Alexander Earl of Marchmont. [A translated
+Extract.] September 3d, 1728", is an English translation of BLA 186 p1. The cipher line is not given. The
+first audit's "prior plaintext: not located" for BLA 186 is wrong for the letter and right only for its cipher
+lines. The three N3 classes stand, but only for the cipher passages.
+
+### The Rose 1831 match (BLA 186)
+
+- Source: IA `selectionfrompap02roseiala` (Rose, vol. 2, 1831), contents list "The Abbe Paretti to Alexander Earl
+  of Marchmont . 414"; text pp. 414-415 (OCR `_djvu.txt`, downloaded once 24 Sept 2026). Found by be-api
+  in-item search for "Paretti".
+- Compared line by line with `images/BLA186_p1.jpg`: "Quoique je continue a estre privé de vos lettres ...
+  la fuite de M. de Ripperda qui s'est sauvé du chateau de Segovie le 2e de ce mois, et qu'on n'a sçu icy que le
+  10e ... Le Gouverneur ... fort bornés ... La Cour a depesché en Portugal ... à tous les ministres etrangers qui
+  sont à Madrid ... s'il se trouve sur leurs estats. [cipher: 659.78.73.18.438.468.470.778.190.1102.53] Le
+  Gouverneur du chateau estant proche parent de M. le Marquis de la Paix ... un coup de hazard, comme on en a
+  veu mille autres." Rose: "Although I do not hear from you ... the flight of M. de Ripperda, who escaped from the
+  Castle of Segovia, on the 2d instant, intelligence of which was not received here until the 10th ... letters
+  have been written to all the foreign ministers, who are at Madrid ... if he is found in their states. . . .
+  (Cypher.) . . . The governor of the castle being a near relation of the Marquis de la Paix ... as has happened
+  in a thousand other cases." Every sentence matches, in order. It is the same letter.
+- Date: Rose prints "September 3d, 1728"; the manuscript's dateline is "ce 13e Septembre 1728", and the text itself
+  says the news came on the 10th, so Rose's "3d" is a slip or a dropped "1". This is why a date search on
+  13 Sept 1728 missed it.
+- The cipher line is shown as ". . . (Cypher.) . . ." and left out. Neither cipher line is given in any form.
+  The p3 cipher line falls outside Rose's extract. Rose's source was the Marchmont papers, which is where the
+  Huntington's Blathwayt Addenda BLA 179-194 run seems to come from (the finding aid says "formerly at Marchmont
+  House"). This suggests Rose had the manuscript and did not decipher the line (inference, not established).
+- Attribution: Rose names the writer as the Abbé Paretti (Pareti), "who communicated intelligence regularly to
+  Alexander Earl of Marchmont during the Congress of Cambray, and who afterwards continued so to do from Spain for
+  the benefit of the British government, and in consideration of a stipend from it" (p. 414 n.). The Huntington's
+  own ArchivesSpace catalogue lists Pareti letters in this run. A web-search snippet of that catalogue on
+  24 Sept 2026 read "Pareti, Giovanni Battista, Abbé ... Genoa ... resident of the duca di Modena in Madrid and
+  London 1727-46", plus letters sent 19 July 1729 enclosing a cipher of 23 June 1729. I could not open the record:
+  www.huntington.org returned 429, and I made no retry. BLA 186's "N" signature and the Port Ste Marie run
+  (187-192) are therefore probably Pareti's (inference; the solver's files do not name him).
+- Why earlier searches missed it: R17's print check and worker H's IA global full-text search used the French
+  phrases, and Rose prints an English translation under a wrong date. Rose's *Marchmont Papers* was not on either
+  source list. Lesson: for a letter to a British minister, search the English translation and the recipient's
+  family papers, not only the original-language phrases.
+
+### Search log (this session)
+
+| Family | What was searched | Result |
+|---|---|---|
+| (a) HMC *Polwarth* | IA advancedsearch (3): only vols I (1911), I-II, II (1916), III, and two unnumbered scans (`reportonmanuscri0000unse_j5t0`, `reportonmanuscri0000grea_g6z8`) are on IA. From its be-api snippets (Pareti to Polwarth 1723-24, Cambrai; Rottembourg with St Contest), `g6z8` is a Cambrai-period volume (III or IV; the metadata has no volume number). be-api in-item on all six: "Port St. Mary", "Port St Mary", "Port Ste Marie", "Port Sainte Marie", "St. Mary's", Ripperda, Riperda, Keene, Cessnock, Pareti, Paretti | Cessnock only in the family history. Ripperda only 1725 (Vienna negotiation). Pareti/Paretti letters to Polwarth 1723-24 (Cambrai), some "in cipher", in `d2n9` (vol III) and `g6z8`. **Nothing from 1728-29. Vol V (1961, 1725-80) is not on IA and was not reached; vol IV (1940) could not be identified with certainty on IA** |
+| (a) Rose, *Marchmont Papers* (1831) 3 vols | be-api in-item vols 1-3 (`selectionfrompap01roseuoft`, `02roseiala`, `03roseuoft`), the same terms, then the three `_djvu.txt` files downloaded once and grepped locally for port st, ste marie, sainte marie, keene, kenne, seville, cessnock, 1729, patino, patigno, cypher, cipher | **vol 2 pp. 414-415 = BLA 186 p1 (above)**; nothing on BLA 191(a), BLA 184, or any 1729 Port Ste Marie letter |
+| (a) Warrender, *Marchmont and the Humes of Polwarth* (1894) | `marchmonthumesof00warr` in-item, the same terms | Riperda only for 1725, Cessnock only for the family; "Port Ste Marie" 502 twice (retried once) |
+| (a) HMC Townshend (1887) | `manuscriptsofmar00greauoft` in-item | Ripperda project of 1726; Keene 1727 (H. Walpole to Keene); nothing from 1728-29 Port St Mary |
+| (a) HMC Portland V-VIII | `manuscriptsofhis56greauoft` (V-VI), `manudukeportland07greauoft` (VII-VIII) in-item | "Port St. Mary" once, for someone's "services at Port St. Mary" (a 1702-era context); Ripperda only for Wharton's 1726 negotiations; nothing relevant |
+| (a) HMC Carlisle (1897) | `earlcarlislehow00greauoft` in-item | Keene only in the 1770s (a different Keene); nothing |
+| (a) HMC Egmont diary I (1920) | `manuegmontvisc01greauoft` in-item | nothing (the diary starts in 1730) |
+| (a) HMC Stuart Papers | not searched: the Windsor calendar (vols I-VII) ends in 1718, before these items | out of range |
+| (d) Ripperda narratives | in-item Campbell, *Memoirs of the Duke de Ripperda* (1740; `bim_eighteenth-century_memoirs-of-the-duke-de-r_campbell-john_1740`, `memoirsofdukeder00mass_0`), Moore, *Lives* (1806 `livescardinalal01moorgoog`, 1814 `livesofcardinala00mooruoft`), Syveton 1896 (`unecouretunavent00syve`): Patigno, galions, gallions, "Port St. Mary", Pareti | galleon context only (Moore 1806, Syveton); no Pareti, no letter of 13 Sept 1728 |
+| (b) TNA Discovery API, 31 queries | "Port St Mary", "Port St. Mary", "Port Sainte Marie", "Port St Maries", Keene in SP 94 1727-30, Spain in SP 100 1727-30, SP 54 June-Dec 1729 (all), Seville in SP 54, Marchmont (1728-30; Jul-Sep 1729; SP 54), "Marchmont Spain", Ripperda 1728-29, Patino 1728-29, Segovia Aug-Dec 1728, Madrid 1-15 Sept 1728, cipher/decipher 1728-29, "intelligence Spain", Paret/Pareti, Cadiz. SP 89 query failed (URL encoding) and was re-run inside the SP 36/54 sweep only, not as SP 89 | SP 94/99 (1728) and 94/100 (1729 Apr-Aug, "Seville, Port St Maries") are described at piece level only. **SP 36/13/129** (19 July 1729) and **SP 36/14/184** (30 Aug 1729): Marchmont "from Cosnocke/Cesnock to [Newcastle]", "[Letter] to be laid before the Queen", "**The enclosures not forthcoming**". **SP 54/19/98A-B**: Marchmont 11 Nov 1729 enclosing a letter from Seville of 20 Oct 1729, "partially in cipher ... with de-cipher". Cholmondeley (Houghton) Ch(H) Corr. 1/1522: "Abbe Paret ? to Comte de Marchmont", 10 Apr 1728. No Discovery entry for Marchmont's covering letter of 8 Aug 1729 (BLA 191) or its enclosures. No item for BLA 186 or 184 |
+| (b) BL Newcastle papers (Add MSS 32,686-33,201) | BL catalogue not tried (no API in the playbook; searcharchives.bl.uk is a JS app). Discovery lists "Add MSS 24321, 32253-309" (a family deposit) only | **unreachable / not searched** |
+| (c) Scholarship | CrossRef, 7 queries (Abbé Pareti Marchmont; Ripperda escape Segovia 1728; Keene Seville 1729 Patiño; Storrs *Spanish Resurgence* Ripperda; British secret service Spain 1720s deciphering; Hume Campbell Marchmont Spain Cambrai; one 429, not retried). OpenAlex 429 (1 attempt). Semantic Scholar 429 (1 attempt). WebSearch 6 (Pareti Marchmont spy; Storrs Huntington Blathwayt Ripperda; HMC Polwarth V contents; Huntington mssBLA Pareti; Pareti Modena Madrid Ripperda; Campbell *Memoirs* 1740) | Storrs 2016 chapter DOIs only, no full text. ODNB entries for the 2nd and 3rd Earls. Nothing cites these items' cipher. Polwarth V's scope (1725-80) confirmed by the search summary |
+| (c) JSTOR | 3 rows appended to `JSTOR-QUEUE.tsv` (Pareti AND Marchmont 1728/1729; Polwarth vol. V review; Storrs AND Blathwayt/Huntington/Pareti) | queued |
+| (e) Google Books | not this worker's host; the 8 queries posted "for LANE V2" in ROOM.md at 09:03 | pending |
+| (f) Phrase search | R17's `print-check.tsv` already ran the 7 French phrases through IA global full text (no hits). This session added in-item English/name searches (above), which found Rose | Rose 1831 (English translation) |
+| (d) Holding archive | www.huntington.org ArchivesSpace record for Pareti: 1 request, 429, not retried. hdl.huntington.org excluded (covered by H) | seen as a search snippet only |
+
+### Class per item (second audit)
+
+| Item | Prior print of the letter | Prior plaintext of the cipher passage | Prior decipherment | Class | Change |
+|---|---|---|---|---|---|
+| BLA 186 (Pareti?, Madrid, 13 Sept 1728) | **yes**: Rose 1831, vol. 2, pp. 414-415, English translated extract of p1, misdated 3 Sept, with the cipher shown only as "(Cypher.)" | no (p1 omitted; p3 outside the extract) | none located | **N3, for the two cipher lines only**; the letter itself is printed (N1 for its clear text) | confirmed with a correction: the letter is not unpublished, only its cipher lines are unread in print |
+| BLA 191(a) (Port Ste Marie, undated, forwarded 8 Aug 1729) | not located | not located | not located, but the sent copy's fate is open (see gap) | **N3** | confirmed; the N4 gap is narrowed to named places |
+| BLA 184 (statement re Rottembourg, [1727-28]) | not located | not located | not located | **N3** (3 syllables read, names unread) | confirmed |
+
+No item is raised. Nothing I found justifies N4. BLA 186 is not lowered below N3, because its cipher lines were
+left out of the only print found. It is re-described: the letter is known and printed, and only the cipher lines
+are new readings.
+
+### What blocks N4 (toward-N4 list)
+
+1. **HMC *Polwarth* vol. V (1961, 1725-80) and the vol. IV scope.** These calendar the Marchmont papers for exactly
+   these years and would list Pareti's 1728-29 letters and any decipherments. Not on IA. Google Books snippet
+   search (LANE V2 queries, plus "Pareti" OR "Paretti" 1728 1729 Polwarth) or a library read.
+2. **TNA SP 36/13/129, SP 36/14/184, SP 54/19/98A-B, SP 94/99-100.** Marchmont's covering letters of 19 July and
+   30 Aug 1729 survive with their enclosures "not forthcoming". The 8 Aug 1729 letter (BLA 191) is itself the
+   covering letter, and it is at the Huntington, not TNA. SP 54/19/98B shows that the Secretary's office
+   deciphered a later Pareti-type Seville letter. Whether a deciphered copy of 191(a) sits in SP 36/14, SP 54/19
+   or SP 94/100 needs someone to read the images (State Papers Online, or the person / TNA copy order).
+3. **BL Newcastle papers** (Add MSS 32,686 ff., diplomatic correspondence 1729): not reached.
+4. **Cambridge UL Cholmondeley (Houghton) papers**, Ch(H) Corr. 1/1522 (Pareti? to Marchmont, 10 Apr 1728): Pareti
+   copies reached Walpole. Check the Ch(H) calendar for Sept 1728 and Aug 1729 Pareti copies.
+5. **Storrs 2016** full text (he dated BLA 186 in 2006): Google Books or JSTOR (queued).
+6. **The Huntington ArchivesSpace Pareti record** (www.huntington.org, 429 today): read it once on another day for the
+   letter list and any "deciphered" note.
+7. **Rose's 1831 source manuscripts.** If the Huntington's BLA 186 is the very sheet Rose used, the "(Cypher.)"
+   omission shows the cipher was unread in 1831. That is evidence for, not proof of, no contemporary
+   decipherment.
+
+### Safe and unsafe sentences (supersede the first audit's BLA 186 pair)
+
+- **Safe (BLA 186):** "The Abbé Pareti's letter of 13 Sept 1728 to the Earl of Marchmont (Huntington mssBLA 186),
+  on Ripperda's escape, was printed in English extract by Rose in 1831 (*Marchmont Papers* ii, 414-15, dated there
+  3 Sept), with its cipher line omitted. Its two cipher lines read in part (20 of 24 groups) with a key set out
+  from contemporary decipherments in the same collection. No prior decipherment of those lines was located in the
+  sources listed in AUDIT.md (N3)."
+- **Unsafe (BLA 186):** "an unpublished letter", "the first reading of the Ripperda-escape letter", "previously
+  unread letter", and any sentence that does not cite Rose 1831.
+- **BLA 191(a) and BLA 184:** the first audit's safe and unsafe sentences stand. For 191(a), add: "a decipherment
+  of the copy sent to Newcastle may survive in TNA SP 36/54/94 or the BL Newcastle papers; not checked."
+- All three readings are **partial**. Every outward sentence says so.
+
+### Postmortem
+
+Failure named: **a translated print under a wrong date.** The first audit and R17's print check searched the
+French phrases, the date 13 Sept 1728 and the canonical diplomatic prints, but not the recipient's own printed
+family papers (Rose 1831, which exists on IA in several copies). Rose prints the letter in English and misdates it
+by ten days. The first audit's "Found: ... None of these is this letter" and its verdict row "Prior plaintext: not
+located" for BLA 186 were over-broad. They are corrected here and in NOTES.md, and the class is unchanged because
+the cipher lines were omitted. Brief lesson for `.claude/briefs/verifier.md` (a suggestion to the orchestrator; not
+applied here): "search the recipient's printed family papers, in the language of the edition (often English
+translation), by the writer's name and the event, not only by the original-language phrase and the date".
+
+### Requests (this session)
+
+archive.org 15 (advancedsearch 9, metadata 3, `_djvu.txt` download 3); be-api.us.archive.org 185 (in-item fts,
+>=1.6 s apart and sequential, except about 7 minutes at 09:10 when a manual check overlapped the background run;
+this may have caused 10 x 502, and the 6 failed queries were retried once); discovery.nationalarchives.gov.uk 31;
+api.crossref.org 7 (one 429); api.openalex.org 1 (429); api.semanticscholar.org 1 (429); openlibrary.org 1;
+www.huntington.org 1 (429, stopped); WebSearch 6.

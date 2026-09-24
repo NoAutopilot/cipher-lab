@@ -3,6 +3,9 @@
 Status: open
 
 Novelty (AUDIT.md, verifier, 24 Sept 2026): BLA 186 N3, BLA 191(a) N3, BLA 184 N3; readings partial.
+Second audit (AUDIT.md, 24 Sept 2026, worker I): classes confirmed, but BLA 186's clear text is PRINTED (Rose, *Marchmont
+Papers* 1831, ii 414-15, English extract dated there 3 Sept 1728, writer the Abbé Paretti, cipher line omitted as
+"(Cypher.)"); N3 covers only its two cipher lines.
 
 ## Description
 
@@ -298,3 +301,16 @@ contemporary decipherment in SP 94 or the Newcastle papers is not excluded. The 
 a paraphrase joining M tokens into words ("milord", "serai"); `reading_tokens.tsv` is the graded reading. Leads for a
 later worker: HMC *Polwarth* IV-V (Marchmont papers; BLA 191 was sent from Cessnock, the Hume-Campbell seat), Storrs,
 *The Spanish Resurgence* (2016) (Storrs handled BLA 186 in 2006, slip in the folder), TNA SP 94/100.
+
+## Second audit, 24 Sept 2026 09:40 UTC (LANE W worker I)
+
+Correction to the print-check log and the first audit: BLA 186 p1 is printed in English translation in G. H. Rose,
+*A Selection from the Papers of the Earls of Marchmont* (1831), vol. 2, pp. 414-415 (IA `selectionfrompap02roseiala`),
+as "From the Abbé Paretti to Alexander Earl of Marchmont ... September 3d, 1728" (the manuscript reads 13e). The cipher
+line appears there only as "(Cypher.)". The French phrase searches could not find an English translation under a wrong
+date. The writer of BLA 186 (signed "N") is therefore very probably the Abbé G. B. Pareti, Marchmont's paid informant
+from Cambrai onwards, and he probably wrote the Port Ste Marie run too (inference). No sentence here may call BLA 186
+an unpublished letter. Only its two cipher lines are read here, and no prior decipherment of them was located.
+Follow-ups (suggestions, not done): HMC *Polwarth* V (1961); TNA SP 36/13/129, SP 36/14/184 (Marchmont's covering
+letters from Cessnock, July/Aug 1729, "enclosures not forthcoming"), SP 54/19/98A-B (a deciphered Seville letter
+of 20 Oct 1729 from the same channel), SP 94/100; the Huntington ArchivesSpace Pareti record (429 on 24 Sept 2026).

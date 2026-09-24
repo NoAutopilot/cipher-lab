@@ -54,3 +54,6 @@ ciphers/lodewijk-van-nassau-1573-74	"Louis of Nassau" AND Mookerheyde AND letter
 ciphers/lodewijk-van-nassau-1573-74	("Willem van Oranje" OR "William of Orange") AND (cryptografie OR geheimschrift OR cipher) AND Nassau AND 1573	2026-09-24	queued	
 ciphers/august-van-saksen-1561-64	"Kurfürst August" AND Oranien AND 1561 AND (Maximilian OR "römischen König") AND (Chiffre OR Ziffer)	2026-09-24	queued	
 ciphers/august-van-saksen-1561-64	"Don Carlos" AND Oranien AND Sachsen AND 1561 AND (Vendôme OR Navarra)	2026-09-24	queued	
+ciphers/huntington-blathwayt-madrid-1728	"Pareti" AND (Marchmont OR Polwarth) AND (1728 OR 1729)	2026-09-24	queued	
+ciphers/huntington-blathwayt-madrid-1728	"Polwarth" AND "Historical Manuscripts" AND (1961 OR "vol. V") AND review	2026-09-24	queued	
+ciphers/huntington-blathwayt-madrid-1728	Storrs AND "Spanish Resurgence" AND (Blathwayt OR Huntington OR Pareti)	2026-09-24	queued	
