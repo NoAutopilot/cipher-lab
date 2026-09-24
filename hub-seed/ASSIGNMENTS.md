@@ -336,5 +336,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T17:08Z	session_01GmsYdQh3aQqRj6zP9TPgkw	close PR 9 (Sonnet, cap $1)	pull request 9	unmerged close
 2026-09-24T17:19Z	session_01UBQ2tN51FBuKTx41RqnGAK	LANE V4 verifier V5 (Opus, cap $12)	JSTOR triage, Danzay lead, outreach gate 2, drafts (a)-(d)	after the owner-machine JSTOR run 49921dd
 2026-09-24T17:23Z	session_01MgepRzyak6uX3P245fPjsa	LANE R4 O (Sonnet, cap $8)	Seure f75L re-segmentation + passes	done, $4.55, N, gate 38.5%
-2026-09-24T17:46Z	session_012iPigthLUviMQnUiE8MDaC	LANE R4 P (Opus, cap $4)	Salviati code+mark control curve	live
+2026-09-24T17:46Z	session_012iPigthLUviMQnUiE8MDaC	LANE R4 P (Opus, cap $4)	Salviati code+mark control curve	done, $1.60, N, vi excluded; cm needs 2800
 2026-09-24T17:54Z	session_0135A8C45WsmXm6gYxJQz5cP	LANE V4 verifier V6 (Opus, cap $10)	Ryabov 2025 vs fr20140-danzay-1557 f.35-36	OpenAlex hit with the owner key; Tomokiyo draft held
+2026-09-24T18:04Z	session_01C3rmpqmk4CZ2gUbGy3AjfV	LANE R4 Q (Sonnet, cap $4)	Mellon MS 29 pseudo-Elian capture	live

@@ -1561,6 +1561,14 @@
    "grade": "no reading: H0 C0 S0 M0 I0. Villeroy letters+syllables+codes control 2.0-5.9% (homophonic control of the same size 61%); Garbino: no control reads at 1,315 groups",
    "line": "Conditional on D. Bourdeau's transcriptions (copied with attribution). Neither letter can be tested by cryptanalysis at its own length; both need a key source or more ciphertext in the same key.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr3993-villeroy-1595"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "cryptanalysis",
+   "title": "Salviati 1525 (fr.2933) f.54r-f.54v: marks-as-vowel syllabary excluded with a matched control; code+mark model priced",
+   "grade": "no reading: H0 C0 S0 M0 I0. Pool 719 signs (two leaves, 83.5% and 83.6% pass agreement). Vowel-mark control 93-96% at N 720, target none; code+mark control 89-94% at N 2,800, unreliable at 1,400",
+   "line": "Two designs out (simple homophonic over base signs; consonant sign + vowel mark). The code+mark homophonic model needs the whole letter (~2,800 signs, f.55r-f.57v, about $40 of box-keyed passes) before it can be tested.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2933-salviati-1525"
   }
  ],
  "lanes": [
