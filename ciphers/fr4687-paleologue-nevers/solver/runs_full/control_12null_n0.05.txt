@@ -1,0 +1,16 @@
+seed 0: signs=864 units=499 types=29 exc=1 acc=0.929
+  truth forfnataadciocheepsisubditiuostrietnostrihabianoadbenuicinaresenzaaltratumultuationeetlitt
+  read  iorinataadciocheepsisubditiuostrietnetrihibainoadbenuicinarelseneaaltratumuluationeoslitte
+seed 1: signs=854 units=499 types=28 exc=0 acc=0.913
+  truth ripresupponendocheellanonsiamenoamoreuoledelpublicochedelpriuatoeperolidirizzamolidoiprese
+  read  ripresuppnendouheellanonsiamenoamoreuoledelpublicochedelpriuatoeperolidirispegmoulidoipret
+seed 2: signs=905 units=506 types=29 exc=1 acc=0.960
+  truth etaquestoeffettohofattoprocurasecondocheuoiditeinpersonadimgiuliospiritiaritornarloneleman
+  read  etaquestoeffettohofattoprocurasecfondeacheuoiditeinpeeisonadimgiuliospiritiaritpornarlonel
+seed 3: signs=874 units=510 types=29 exc=2 acc=0.907
+  truth giuglianouifosseetperquestolhannomolteuolteminacciatoetminaccianotuttauiapurlaueritastache
+  read  giuglianouifosseetperquestolhannooultluolteminacciatoretminaccianstuttauiapurlaueritahotac
+seed 4: signs=944 units=504 types=30 exc=2 acc=0.919
+  truth ebbeelapresenziasuasitorrebbeardireetoccasioneadognunodimacchinarlicontroetuttoquestolefli
+  read  eiieelapresentiapseasitorreiieardireetocomsioneadognunodemacchiomrlicontrometuttoquestolef
+CONTROL design=12:null solved_as=12:null noise=0.05 units=495: mean acc 0.926, per seed 0.93 0.91 0.96 0.91 0.92
