@@ -1,0 +1,18 @@
+measure	value
+cipher_groups	546
+keyed_key_1659	523
+coverage	0.958
+lexicon_words	9498
+true_covered_letters	584/810
+true_rate	0.721
+control_derangements	200
+control_mean	0.488
+control_sd	0.060
+control_max	0.647
+control_ge_true	0
+z	3.85
+holdout_f86only_keyed	489
+holdout_f86only_covered_letters	518/776
+holdout_f86only_rate	0.668
+holdout_tokens_value_differs	66
+grades	S 107 M 416 U 14 I 9

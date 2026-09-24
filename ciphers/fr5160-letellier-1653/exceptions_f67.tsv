@@ -1,0 +1,533 @@
+folio	line	pos	value	grade	reason
+f129	L01	2	ou	M	key row conflict
+f129	L01	3	i	M	key row conflict
+f129	L01	4	ou	M	key row conflict
+f129	L01	6	e	S	inside a French word
+f129	L01	7	r	M	key row conflict
+f129	L02	1	e	M	key row conflict
+f129	L02	2	je	M	key row conflict
+f129	L02	4	ques	M	key row conflict
+f129	L02	5	n	M	group read at conf M
+f129	L02	6	v	M	key row conflict
+f129	L02	7	ou	M	key row conflict
+f129	L02	8	s	S	inside a French word
+f129	L02	9	di	M	key row conflict
+f129	L02	10	e	M	key row conflict
+f129	L02	11	qu	M	outside every French word
+f129	L02	12	n	M	key row conflict
+f129	L02	13	pu	M	outside every French word
+f129	L02	14	b	M	key row conflict
+f129	L02	15	i	M	key row conflict
+f129	L02	16	e	M	key row conflict
+f129	L02	17	de	M	group read at conf M
+f129	L02	18	s	S	inside a French word
+f129	L02	19	n	S	inside a French word
+f129	L02	20	ou	M	key row conflict
+f129	L03	1	ve	M	key row conflict
+f129	L03	2	l	M	key row conflict
+f129	L03	3	le	S	inside a French word
+f129	L03	4	s	S	inside a French word
+f129	L03	5	de	M	group read at conf M
+f129	L03	7	i	M	outside every French word
+f129	L03	8	n	M	key row conflict
+f129	L03	9	de	M	group read at conf M
+f129	L03	10	la	M	key row conflict
+f129	L03	11	ve	M	key row conflict
+f129	L03	12	i	S	inside a French word
+f129	L03	13	te	M	key row conflict
+f129	L03	14	de	M	group read at conf M
+f129	L03	16	s	M	outside every French word
+f129	L03	17	ques	M	key row conflict
+f129	L03	18	l	M	key row conflict
+f129	L03	19	le	S	inside a French word
+f129	L03	20	s	M	outside every French word
+f129	L04	1	oi	M	key row conflict
+f129	L04	2	l	M	key row conflict
+f129	L04	3	oi	M	key row conflict
+f129	L04	4	m	M	key row conflict
+f129	L04	5	q	M	outside every French word
+f129	L04	6	r	M	key row conflict
+f129	L04	7	te	M	key row conflict
+f129	L04	8	r	M	key row conflict
+f129	L04	9	oi	M	key row conflict
+f129	L04	10	t	M	key row conflict
+f129	L04	11	fo	I	proposed from context: f129 L04 "[fo]rt d'estre"; f130a L04 "[fo]ndement"
+f129	L04	12	r	M	key row conflict
+f129	L04	13	t	M	key row conflict
+f129	L04	14	de	M	group read at conf M
+f129	L04	15	s	S	inside a French word
+f129	L04	16	t	M	key row conflict
+f129	L04	17	re	M	key row conflict
+f129	L04	18	e	M	key row conflict
+f129	L04	19	s	M	outside every French word
+f129	L04	20	c	M	key row conflict
+f129	L04	21	la	M	key row conflict
+f129	L05	1	oi	M	key row conflict
+f129	L05	2	s	M	outside every French word
+f129	L05	3	c	M	key row conflict
+f129	L05	4	y	M	key row conflict
+f129	L05	5	s	S	inside a French word
+f129	L05	6	a	S	inside a French word
+f129	L05	7	v	M	key row conflict
+f129	L05	8	oi	M	key row conflict
+f129	L05	9	r	M	key row conflict
+f129	L05	10	ques	M	key row conflict
+f129	L05	11	la	M	key row conflict
+f129	L05	12	f	M	key row conflict
+f129	L05	13	e	M	key row conflict
+f129	L05	14	c	M	key row conflict
+f129	L05	15	t	M	key row conflict
+f129	L05	16	i	M	key row conflict
+f129	L05	17	n	M	key row conflict
+f129	L05	18	du	M	outside every French word
+f129	L05	19	fi	S	inside a French word
+f129	L05	20	l	M	key row conflict
+f129	L05	21	je	M	key row conflict
+f129	L06	1	qu	M	outside every French word
+f129	L06	2	le	M	outside every French word
+f129	L06	3	n	M	key row conflict
+f129	L06	4	e	M	group read at conf M
+f129	L06	5	si	S	inside a French word
+f129	L06	6	oi	M	key row conflict
+f129	L06	7	t	M	key row conflict
+f129	L06	8	de	M	group read at conf M
+f129	L06	9	la	M	key row conflict
+f129	L06	10	me	S	inside a French word
+f129	L06	11	re	M	key row conflict
+f129	L06	12	n	M	key row conflict
+f129	L06	13	e	M	key row conflict
+f129	L06	14	s	S	inside a French word
+f129	L06	15	t	M	key row conflict
+f129	L06	16	pr	M	key row conflict
+f129	L06	17	lu	M	key row conflict
+f129	L06	18	s	S	inside a French word
+f129	L06	19	si	S	inside a French word
+f129	L06	20	gn	M	outside every French word
+f129	L06	21	st	M	outside every French word
+f129	L07	1	n	M	key row conflict
+f129	L07	2	de	M	group read at conf M
+f129	L07	3	estr	M	group read at conf M
+f129	L07	4	ou	M	key row conflict
+f129	L07	5	pa	M	key row conflict
+f129	L07	6	s	S	inside a French word
+f129	L07	7	se	M	key row conflict
+f129	L07	9	e	M	key row conflict
+f129	L07	10	t	M	key row conflict
+f129	L07	11	ques	M	key row conflict
+f129	L07	12	M.	M	group read at conf M
+f129	L07	13	se	M	key row conflict
+f129	L07	14	r	M	key row conflict
+f129	L07	15	oi	M	key row conflict
+f129	L07	16	t	M	key row conflict
+f129	L07	17	e	M	key row conflict
+f129	L07	18	n	M	key row conflict
+f129	L07	20	pe	S	inside a French word
+f129	L07	21	n	M	key row conflict
+f129	L07	22	se	M	key row conflict
+f129	L07	23	e	M	key row conflict
+f129	L08	1	de	M	group read at conf M
+f129	L08	2	se	M	key row conflict
+f129	L08	3	re	M	key row conflict
+f129	L08	4	t	M	key row conflict
+f129	L08	5	re	M	key row conflict
+f129	L08	6	r	M	key row conflict
+f129	L08	7	du	M	group read at conf M
+f129	L08	8	ar	M	outside every French word
+f129	L08	9	ni	I	proposed from context: f129 L08 "du ma[ni]ement des affaires"; L13 "mi[ni]stres" (with 67)
+f129	L08	10	e	M	key row conflict
+f129	L08	11	me	S	inside a French word
+f129	L08	12	n	M	key row conflict
+f129	L08	13	t	M	key row conflict
+f129	L08	14	de	M	group read at conf M
+f129	L08	15	s	S	inside a French word
+f129	L08	16	le	M	group read at conf M
+f129	L08	17	fa	M	key row conflict
+f129	L08	18	oi	M	key row conflict
+f129	L08	19	re	M	key row conflict
+f129	L08	20	s	S	inside a French word
+f129	L09	2	c	M	key row conflict
+f129	L09	3	st	M	outside every French word
+f129	L09	4	oi	M	key row conflict
+f129	L09	5	n	M	key row conflict
+f129	L09	6	t	M	key row conflict
+f129	L09	7	q	M	outside every French word
+f129	L09	8	l	M	key row conflict
+f129	L09	9	qu	S	inside a French word
+f129	L09	10	r	M	key row conflict
+f129	L09	11	i	M	outside every French word
+f129	L09	13	s	M	outside every French word
+f129	L09	14	t	M	key row conflict
+f129	L10	1	ou	M	key row conflict
+f129	L10	2	n	M	key row conflict
+f129	L10	3	l	M	key row conflict
+f129	L10	4	m	M	key row conflict
+f129	L10	5	b	M	key row conflict
+f129	L10	6	la	M	key row conflict
+f129	L10	7	b	M	key row conflict
+f129	L10	8	le	S	inside a French word
+f129	L10	9	c	M	key row conflict
+f129	L10	11	ha	M	outside every French word
+f129	L10	12	n	M	key row conflict
+f129	L10	13	ge	S	inside a French word
+f129	L10	14	me	S	inside a French word
+f129	L10	15	n	M	key row conflict
+f129	L10	16	t	M	key row conflict
+f129	L10	17	n	S	inside a French word
+f129	L10	18	ou	M	key row conflict
+f129	L10	19	s	S	inside a French word
+f129	L10	20	qu	S	inside a French word
+f129	L10	21	ou	M	key row conflict
+f129	L10	22	i	S	inside a French word
+f129	L10	23	i	M	key row conflict
+f129	L11	1	n	M	key row conflict
+f129	L11	2	s	M	outside every French word
+f129	L11	3	de	M	group read at conf M
+f129	L11	4	s	S	inside a French word
+f129	L11	5	me	S	inside a French word
+f129	L11	6	su	S	inside a French word
+f129	L11	7	re	M	key row conflict
+f129	L11	8	s	S	inside a French word
+f129	L11	9	qu	M	outside every French word
+f129	L11	10	pr	M	key row conflict
+f129	L11	11	re	M	key row conflict
+f129	L11	12	n	M	key row conflict
+f129	L11	13	e	S	inside a French word
+f129	L11	14	re	M	key row conflict
+f129	L11	15	a	M	group read at conf M
+f129	L11	16	le	M	group read at conf M
+f129	L11	19	e	M	key row conflict
+f129	L11	20	t	M	key row conflict
+f129	L11	21	ques	M	key row conflict
+f129	L11	22	l	M	key row conflict
+f129	L11	23	s	M	group read at conf M
+f129	L11	24	oi	M	key row conflict
+f129	L11	25	n	M	key row conflict
+f129	L12	1	ques	M	key row conflict
+f129	L12	2	le	S	inside a French word
+f129	L12	3	fi	S	inside a French word
+f129	L12	4	l	M	key row conflict
+f129	L12	5	je	M	key row conflict
+f129	L12	7	e	M	key row conflict
+f129	L12	8	t	M	key row conflict
+f129	L12	9	la	M	key row conflict
+f129	L12	10	me	S	inside a French word
+f129	L12	11	re	M	key row conflict
+f129	L12	13	me	S	inside a French word
+f129	L12	14	s	S	inside a French word
+f129	L12	15	me	S	inside a French word
+f129	L12	16	le	S	inside a French word
+f129	L12	17	ou	M	key row conflict
+f129	L12	18	r	M	key row conflict
+f129	L12	19	s	M	outside every French word
+f129	L12	20	pr	M	key row conflict
+f129	L12	21	i	S	inside a French word
+f129	L12	22	n	M	key row conflict
+f129	L12	23	ci	I	proposed from context: f129 L12 "prin[ci]paux"
+f129	L12	24	pa	M	key row conflict
+f129	L13	1	ou	M	key row conflict
+f129	L13	2	x	M	outside every French word
+f129	L13	3	mi	I	proposed from context: f129 L13 "[mi]nistres" (with 72)
+f129	L13	4	ni	I	proposed from context: f129 L08 "du ma[ni]ement des affaires"; L13 "mi[ni]stres" (with 67)
+f129	L13	5	s	S	inside a French word
+f129	L13	6	t	M	key row conflict
+f129	L13	7	re	M	key row conflict
+f129	L13	8	s	S	inside a French word
+f129	L13	9	pr	M	key row conflict
+f129	L13	10	i	S	inside a French word
+f129	L13	11	s	S	inside a French word
+f129	L13	12	se	M	key row conflict
+f129	L13	13	n	M	key row conflict
+f129	L13	14	t	M	key row conflict
+f129	L13	15	de	M	group read at conf M
+f129	L13	16	ca	S	inside a French word
+f129	L13	17	c	M	key row conflict
+f129	L13	19	r	M	key row conflict
+f129	L13	20	ce	M	group read at conf M
+f129	L13	21	t	M	key row conflict
+f129	L14	1	te	M	key row conflict
+f129	L14	2	me	S	inside a French word
+f129	L14	3	s	S	inside a French word
+f129	L14	4	oi	M	key row conflict
+f129	L14	5	n	M	key row conflict
+f129	L14	6	te	M	key row conflict
+f129	L14	7	l	M	key row conflict
+f129	L14	8	i	M	key row conflict
+f129	L14	9	ge	M	outside every French word
+f129	L14	10	n	M	key row conflict
+f129	L14	11	ce	S	inside a French word
+f129	L14	12	oi	M	key row conflict
+f129	L14	13	l	M	key row conflict
+f129	L14	14	ne	M	key row conflict
+f129	L14	15	se	M	key row conflict
+f129	L14	16	r	M	key row conflict
+f129	L14	17	oi	M	key row conflict
+f129	L14	18	t	M	key row conflict
+f129	L14	19	pa	M	key row conflict
+f129	L14	20	s	S	inside a French word
+f129	L15	1	q	M	outside every French word
+f129	L15	2	s	S	inside a French word
+f129	L15	3	si	S	inside a French word
+f129	L15	4	b	M	key row conflict
+f129	L15	5	le	S	inside a French word
+f129	L15	6	ques	M	key row conflict
+f129	L15	7	v	M	key row conflict
+f129	L15	8	ou	M	key row conflict
+f129	L15	9	s	S	inside a French word
+f129	L15	10	ne	M	key row conflict
+f129	L15	11	n	M	key row conflict
+f129	L15	12	e	M	key row conflict
+f129	L15	13	ou	M	key row conflict
+f129	L15	14	s	S	inside a French word
+f129	L15	15	si	S	inside a French word
+f129	L15	16	e	M	key row conflict
+f129	L15	17	je	M	key row conflict
+f129	L15	18	c	M	key row conflict
+f129	L15	19	n	M	key row conflict
+f129	L15	20	n	S	inside a French word
+f129	L15	21	oi	M	key row conflict
+f129	L15	22	s	S	inside a French word
+f129	L16	1	oi	M	key row conflict
+f129	L16	2	n	M	key row conflict
+f129	L16	3	ce	M	group read at conf M
+f129	L16	5	q	M	outside every French word
+f129	L16	6	qu	S	inside a French word
+f129	L16	7	ve	M	key row conflict
+f129	L16	8	je	M	key row conflict
+f129	L16	9	qu	S	inside a French word
+f129	L16	10	ou	M	key row conflict
+f129	L16	11	s	M	outside every French word
+f129	L16	12	s	M	outside every French word
+f129	L16	13	y	M	key row conflict
+f129	L16	14	qu	M	outside every French word
+f129	L16	15	qu	M	outside every French word
+f129	L16	16	pr	M	key row conflict
+f129	L16	17	pr	M	key row conflict
+f129	L16	18	i	M	key row conflict
+f129	L16	19	ques	M	key row conflict
+f129	L16	20	r	M	key row conflict
+f129	L16	21	o	M	outside every French word
+f129	L16	22	ou	M	key row conflict
+f129	L16	23	s	S	inside a French word
+f130a	L01	1	v	M	key row conflict
+f130a	L01	2	je	M	key row conflict
+f130a	L01	3	s	S	inside a French word
+f130a	L01	4	oi	M	key row conflict
+f130a	L01	5	n	M	key row conflict
+f130a	L01	6	s	S	inside a French word
+f130a	L01	7	qu	M	outside every French word
+f130a	L01	8	pe	S	inside a French word
+f130a	L01	9	ne	M	key row conflict
+f130a	L01	10	t	M	key row conflict
+f130a	L01	11	re	M	key row conflict
+f130a	L01	12	r	M	key row conflict
+f130a	L01	13	ques	M	key row conflict
+f130a	L01	14	l	M	key row conflict
+f130a	L01	15	le	S	inside a French word
+f130a	L01	16	pe	M	outside every French word
+f130a	L01	17	ou	M	key row conflict
+f130a	L01	18	t	M	key row conflict
+f130a	L01	19	e	M	key row conflict
+f130a	L01	20	s	S	inside a French word
+f130a	L02	1	i	M	key row conflict
+f130a	L02	2	n	M	key row conflict
+f130a	L02	3	fi	S	inside a French word
+f130a	L02	4	i	M	key row conflict
+f130a	L02	5	a	S	inside a French word
+f130a	L02	6	t	M	key row conflict
+f130a	L02	7	i	M	key row conflict
+f130a	L02	8	n	M	key row conflict
+f130a	L02	11	p	M	group read at conf M
+f130a	L02	12	ou	M	key row conflict
+f130a	L02	13	r	M	key row conflict
+f130a	L02	14	se	M	key row conflict
+f130a	L02	15	ar	M	outside every French word
+f130a	L02	16	i	S	inside a French word
+f130a	L02	17	e	M	key row conflict
+f130a	L02	18	r	M	key row conflict
+f130a	L03	1	ou	M	key row conflict
+f130a	L03	2	s	S	inside a French word
+f130a	L03	3	la	M	key row conflict
+f130a	L03	4	pe	S	inside a French word
+f130a	L03	5	e	M	key row conflict
+f130a	L03	6	s	M	outside every French word
+f130a	L03	7	n	M	key row conflict
+f130a	L03	8	ne	M	key row conflict
+f130a	L03	10	e	M	key row conflict
+f130a	L03	11	t	M	key row conflict
+f130a	L03	12	q	M	outside every French word
+f130a	L03	13	ou	M	key row conflict
+f130a	L03	14	r	M	key row conflict
+f130a	L03	15	le	S	inside a French word
+f130a	L03	16	te	M	key row conflict
+f130a	L03	17	m	M	key row conflict
+f130a	L03	18	pr	M	key row conflict
+f130a	L03	19	s	M	outside every French word
+f130a	L03	21	e	M	key row conflict
+f130a	L04	1	ce	M	group read at conf M
+f130a	L04	2	s	S	inside a French word
+f130a	L04	3	t	M	key row conflict
+f130a	L04	6	fo	I	proposed from context: f129 L04 "[fo]rt d'estre"; f130a L04 "[fo]ndement"
+f130a	L04	7	n	M	key row conflict
+f130a	L04	8	de	S	inside a French word
+f130a	L04	9	me	S	inside a French word
+f130a	L04	10	n	M	key row conflict
+f130a	L04	11	t	M	key row conflict
+f130a	L04	12	ques	M	key row conflict
+f130a	L04	13	lo	I	proposed from context: f130a L04 "que [lo]n publie"
+f130a	L04	14	n	M	key row conflict
+f130a	L04	15	pu	M	outside every French word
+f130a	L04	16	b	M	key row conflict
+f130a	L04	17	i	M	key row conflict
+f130a	L04	18	e	M	key row conflict
+f130a	L05	1	ar	M	outside every French word
+f130a	L05	2	da	S	inside a French word
+f130a	L05	3	mo	I	proposed from context: f130a L05, L06 "Ma de[mo]iselle" twice
+f130a	L05	4	oi	M	key row conflict
+f130a	L05	5	se	M	key row conflict
+f130a	L05	6	l	M	key row conflict
+f130a	L05	7	le	S	inside a French word
+f130a	L05	8	qu	M	outside every French word
+f130a	L05	9	re	M	key row conflict
+f130a	L05	10	n	M	key row conflict
+f130a	L05	11	du	S	inside a French word
+f130a	L05	12	t	M	key row conflict
+f130a	L05	13	re	M	key row conflict
+f130a	L05	14	s	S	inside a French word
+f130a	L05	15	ar	M	outside every French word
+f130a	L05	16	ou	M	key row conflict
+f130a	L05	18	oi	M	key row conflict
+f130a	L06	1	i	M	key row conflict
+f130a	L06	2	f	M	key row conflict
+f130a	L06	3	fi	M	outside every French word
+f130a	L06	4	ce	S	inside a French word
+f130a	L06	5	qu	S	inside a French word
+f130a	L06	6	ar	M	outside every French word
+f130a	L06	7	da	S	inside a French word
+f130a	L06	8	mo	I	proposed from context: f130a L05, L06 "Ma de[mo]iselle" twice
+f130a	L06	9	oi	M	key row conflict
+f130a	L06	10	se	M	key row conflict
+f130a	L06	11	l	M	key row conflict
+f130a	L06	12	le	S	inside a French word
+f130a	L06	13	d	M	outside every French word
+f130a	L06	14	r	M	key row conflict
+f130a	L06	15	le	S	inside a French word
+f130a	L06	16	qu	M	outside every French word
+f130a	L06	17	n	M	key row conflict
+f130a	L07	1	oi	M	key row conflict
+f130a	L07	2	s	S	inside a French word
+f130a	L07	3	e	M	key row conflict
+f130a	L07	4	ou	M	key row conflict
+f130a	L07	5	r	M	key row conflict
+f130b	L01	2	ques	M	key row conflict
+f130b	L01	3	ce	M	outside every French word
+f130b	L01	4	q	M	outside every French word
+f130b	L01	5	l	M	key row conflict
+f130b	L01	6	di	M	key row conflict
+f130b	L01	7	t	M	key row conflict
+f130b	L01	8	de	M	group read at conf M
+f130b	L01	9	la	M	key row conflict
+f130b	L01	10	me	S	inside a French word
+f130b	L01	11	s	S	inside a French word
+f130b	L01	12	oi	M	key row conflict
+f130b	L01	13	n	M	key row conflict
+f130b	L01	14	re	M	key row conflict
+f130b	L02	1	i	M	key row conflict
+f130b	L02	2	ge	M	outside every French word
+f130b	L02	3	n	M	key row conflict
+f130b	L02	4	ce	S	inside a French word
+f130b	L02	5	de	M	group read at conf M
+f130b	L02	6	n	M	key row conflict
+f130b	L02	7	t	M	key row conflict
+f130b	L02	8	re	M	key row conflict
+f130b	L02	9	le	S	inside a French word
+f130b	L02	10	fi	S	inside a French word
+f130b	L02	11	l	M	key row conflict
+f130b	L02	12	je	M	key row conflict
+f130b	L02	13	e	M	key row conflict
+f130b	L02	14	t	M	key row conflict
+f130b	L02	15	la	M	key row conflict
+f130b	L02	16	me	S	inside a French word
+f130b	L02	17	re	M	key row conflict
+f130b	L03	1	oi	M	key row conflict
+f130b	L03	2	t	M	key row conflict
+f130b	L03	3	ve	M	key row conflict
+f130b	L03	4	i	S	inside a French word
+f130b	L03	5	ta	M	key row conflict
+f130b	L03	6	b	M	key row conflict
+f130b	L03	7	le	S	inside a French word
+f130b	L03	8	si	M	outside every French word
+f130b	L03	9	le	S	inside a French word
+f130b	L03	10	ar	M	outside every French word
+f130b	L03	11	r	M	key row conflict
+f130b	L03	12	q	M	outside every French word
+f130b	L03	13	s	M	outside every French word
+f130b	L03	14	de	M	outside every French word
+f130b	L03	16	qu	M	outside every French word
+f130b	L03	17	ne	M	key row conflict
+f130b	L03	18	je	M	key row conflict
+f130b	L04	1	de	M	outside every French word
+f130b	L04	2	me	M	outside every French word
+f130b	L04	3	ou	M	key row conflict
+f130b	L04	4	re	M	key row conflict
+f130b	L04	5	st	S	inside a French word
+f130b	L04	6	c	M	key row conflict
+f130b	L04	8	e	M	key row conflict
+f130b	L04	9	de	M	group read at conf M
+f130b	L04	10	s	S	inside a French word
+f130b	L04	11	le	S	inside a French word
+f130b	L04	12	f	M	key row conflict
+f130b	L04	13	fa	M	key row conflict
+f130b	L04	14	oi	M	key row conflict
+f130b	L04	15	re	M	key row conflict
+f130b	L04	16	s	S	inside a French word
+f130b	L04	17	i	M	key row conflict
+f130b	L04	18	ou	M	key row conflict
+f130b	L05	1	e	M	key row conflict
+f130b	L05	2	n	M	key row conflict
+f130b	L05	3	su	S	inside a French word
+f130b	L05	4	r	M	key row conflict
+f130b	L05	5	q	M	outside every French word
+f130b	L05	6	le	M	outside every French word
+f130b	L05	8	se	M	key row conflict
+f130b	L05	9	je	M	key row conflict
+f130b	L05	10	q	M	outside every French word
+f130b	L05	11	ou	M	key row conflict
+f130b	L05	12	r	M	key row conflict
+f130b	L05	13	se	M	key row conflict
+f130b	L05	14	n	M	key row conflict
+f130b	L05	15	de	M	group read at conf M
+f130b	L05	16	c	M	key row conflict
+f130b	L05	17	ha	S	inside a French word
+f130b	L05	18	r	M	key row conflict
+f130b	L06	1	r	M	key row conflict
+f130b	L06	2	qu	M	outside every French word
+f130b	L06	3	n	M	key row conflict
+f130b	L06	4	ju	M	key row conflict
+f130b	L06	5	ge	S	inside a French word
+f130b	L06	6	e	M	key row conflict
+f130b	L06	7	n	M	key row conflict
+f130b	L06	8	pe	S	inside a French word
+f130b	L06	9	n	M	key row conflict
+f130b	L06	10	se	M	key row conflict
+f130b	L06	11	e	M	key row conflict
+f130b	L06	12	pr	M	key row conflict
+f130b	L06	13	lu	M	key row conflict
+f130b	L06	14	s	S	inside a French word
+f130b	L06	15	o	M	outside every French word
+f130b	L06	16	s	M	outside every French word
+f130b	L06	17	t	M	key row conflict
+f130b	L07	1	di	M	key row conflict
+f130b	L07	2	ve	M	key row conflict
+f130b	L07	3	r	M	key row conflict
+f130b	L07	4	t	M	key row conflict
+f130b	L07	5	r	M	key row conflict
+f130b	L07	6	ques	M	key row conflict
+f130b	L07	7	de	S	inside a French word
+f130b	L07	8	s	S	inside a French word
+f130b	L07	9	y	M	key row conflict
+f130b	L07	10	qu	M	outside every French word
+f130b	L07	11	pr	M	key row conflict
+f130b	L07	12	pr	M	key row conflict
+f130b	L07	13	i	M	key row conflict
+f130b	L07	14	ques	M	key row conflict
+f130b	L07	15	r	M	key row conflict

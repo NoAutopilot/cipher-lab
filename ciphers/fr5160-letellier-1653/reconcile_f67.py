@@ -55,6 +55,7 @@ SET = {
     ('f129_L13', 20): ('31', 'curly 3 (A 91, B 31)'),
     ('f129_L15', 6): ('_6', 'bar over the 6 (A 6, B _6)'),
     ('f129_L15', 18): ('33', 'curly 3 twice (A 77, B 33)'),
+    ('f129_L16', 3): ('31', 'curly 3 (both 91); "connoissance" runs over the line end'),
     ('f129_L16', 19): ('_6', 'bar over the 6 (A 6, B _6)'),
     ('f130a_L02', 9): ('79', 'flat-topped first stroke (A 99, B 79); 39 not excluded'),
     ('f130a_L02', 11): ('_3', 'curly 3 under the bar (A _7, B _3); "_3 7 21" = pour, as in f.86'),
