@@ -1,0 +1,29 @@
+line	pos	sign	conf	note
+9	1	_	H	binding-gutter margin noise
+9	2	_	H	binding-gutter margin noise
+9	3	_	H	binding-gutter margin noise
+9	4	_	H	binding-gutter margin noise
+9	5	_	H	tiny ink speck
+9	6	_	H	tiny ink speck
+9	7	flag	M	faint, low confidence
+9	8	_	H	tiny ink speck
+9	9	circ	H	round loop, clear
+9	10	_	H	tiny dot
+9	11	inf	H	large rounded loop
+9	12	plus	H	clear + cross
+9	13	tcross	H	T-topped cross shape
+9	14	_	H	tiny dot
+9	15	circ	H	round loop
+9	16	inf	M	corrected from classifier's hash: horizontal figure-8/loop shape, not a cross-hatch
+9	17	_	H	tiny dot
+9	18	hash	H	clear double cross-hatch
+9	19	bar?	M	narrow vertical stroke, ambiguous vs noise
+9	20	bar?	M	narrow vertical stroke, ambiguous vs noise
+9	21	bar?	M	tall vertical stroke, ambiguous
+9	22	_	H	tiny dot
+9	23	bar	H	vertical stroke
+9	24	hash	M	double cross-bar shape
+9	25	hook2	M	small blob, weak match
+9	26	star	M	complex multi-point shape, weak match
+9	27	W?	M	distinct double-loop 'W' shape, not matched by any atlas code -- possible new sign
+9	28	bar	H	thin vertical stroke before plain-script word boundary
