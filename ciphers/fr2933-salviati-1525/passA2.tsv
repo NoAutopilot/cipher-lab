@@ -1,1 +1,506 @@
 line	pos	code	marks	action	conf	note
+1	1	_		confirm	M	docket-like "R" with cross through it (possibly recipe/paraph mark); heading begins
+1	2	_		confirm	H	"Dnt" plain abbreviation (Dño?)
+1	3	_		plain	L	stroke, part of plain word spanning pos3-11, illegible cursive
+1	4	_		confirm	M	continues plain word, illegible
+1	5	_		plain	L	loop/tail, part of plain word
+1	6	_		plain	M	P-like letter, part of plain word (heading)
+1	7	_		confirm	L	part of same plain word
+1	8	_		plain	L	part of plain word
+1	9	_		confirm	M	part of plain word
+1	10	_		plain	L	loop shape, plain letter ending word
+1	11	_		plain	L	crossbar, part of plain letter
+1	12	_		confirm	H	plain, continues heading, illegible
+1	13	[		confirm	H	bracket open-right, clean match
+1	14	bh		confirm	H	tall stem with hook top-right
+1	15	m		correct	H	three-hump cursive "m", not rz (rz is a hook+wave shape, does not match)
+1	16	U		confirm	H	cup shape open at top
+1	17	y		confirm	H	looped tail
+1	18	nt		confirm	M	n+crossbar ligature, zigzag+bar, matches nt over Z
+1	19	[		confirm	M	small bracket
+1	20	bh		confirm	H	tall stem with hook
+1	21	sq	ot	confirm	H	small closed square, mark ot plausible
+1	22	psi		confirm	H	forked tail shape
+1	23	lam	o	confirm	H	triangle Λ, ring mark above
+1	24	eps	5	confirm	H	two open bowls, mark 5
+1	25	dl		correct	M	loop with long curling tail, matches dl (delta+tilde) better than nt
+1	26	[		confirm	H	bracket open-right
+2	1	rz		confirm	H	hook+wave shape, matches rz
+2	2	g	~	confirm	H
+2	3	m	~	confirm	H	three-hump m, confirms rz vs m distinction seen in line1
+2	4	w		confirm	H
+2	5	_		confirm	H	tiny stray vertical stroke
+2	6	L		confirm	H	angle with digit inside
+2	7	g	~	confirm	H
+2	8	o.		confirm	H
+2	9	S7		confirm	H
+2	10	lam	dot	confirm	H
+2	11	S7	~	confirm	H
+2	12	e	#	confirm	H
+2	13	g	~	confirm	H
+2	14	_		confirm	L	tall fork/hook shape, could be cipher y not confidently matched; kept plain per script
+2	15	K		correct	M	clean K-letter shape, matches cipher K exemplar (cf. line2 pos27); script had called it plain at low share
+2	16	_		confirm	L	blocky rectangle+stem shape, uncertain (possibly H or tee not matched); kept plain per script
+2	17	]	o	confirm	H
+2	18	_		confirm	H	vertical stroke with loop, high-confidence plain
+2	19	bh	dot	confirm	H
+2	20	S7	+	confirm	H
+2	21	a	~	confirm	H	bold cursive a
+2	22	S7	~	confirm	H
+2	23	lam	~	confirm	H
+2	24	e	#	confirm	H
+2	25	wd		confirm	H	omega joined to tall right stroke
+2	26	bh		confirm	H
+2	27	K		confirm	H
+2	28	Lx	#	confirm	H
+3	1	phi		correct	H	circle-on-stem shape matches phi, not bh (no hooked-loop stem seen)
+3	2	]	o	confirm	H
+3	3	Z		confirm	M	stacked zigzag shape
+3	4	]	dot|o	confirm	H
+3	5	S7	dot	confirm	L	thin fragment, low visual certainty
+3	6	f		confirm	M
+3	7	e	dot	confirm	M
+3	8	y		confirm	H
+3	9	e	#	correct	M	script omitted the # mark clearly visible above the loop
+3	10	_		confirm	L	tiny fragment
+3	11	_		confirm	M	small fragment
+3	12	lam	7	confirm	L	small squiggle, low confidence
+3	13	g		confirm	M
+3	14	Z		confirm	M
+3	15	S4		confirm	M
+3	16	_		plain	M	"d" plain letter (part of "di"), precedes plain phrase "Tutto quello che..."
+3	17	_		confirm	H	legible plain word "Tutto"
+3	18	_		confirm	H	legible plain word "quello"
+3	19	_		confirm	H	flourish on final o of "quello"
+3	20	_		plain	H	"che" abbreviated, part of plain phrase "di Tutto quello che S.S. desidera"
+3	21	_		plain	H	"S." abbreviation (S.S. = Sua Santita)
+3	22	_		plain	H	"S." abbreviation, second of pair
+3	23	_		confirm	H	"d" of desidera
+3	24	_		confirm	M	"e" of desidera
+3	25	_		plain	H	"s" of desidera
+3	26	_		confirm	M	"i" of desidera
+3	27	_		confirm	H	"d" of desidera
+3	28	_		confirm	H	"er" of desidera, tail flourish below is a stray paraph
+3	29	_		plain	M	"a" (final letter of desidera / ra ligature)
+3	30	S4		correct	M	cipher resumes after plain clause, matches S4 shape (numeral-4-like), not y
+3	31	S4		confirm	M	cipher continues
+4	1	phi		correct	H	circle-on-stem shape matches phi, not bh
+4	2	y		confirm	M	curl/hook between phi and lam
+4	3	lam	1	confirm	H
+4	4	_	dot	confirm	H
+4	5	]	o	confirm	H
+4	6	g	~	confirm	H
+4	7	nt		confirm	H
+4	8	S7		confirm	H
+4	9	#		confirm	H	standalone cross sign on the line
+4	10	y	dot	confirm	H
+4	11	nt		confirm	M
+4	12	bh		confirm	H
+4	13	w		confirm	H
+4	14	e	dot	confirm	M
+4	15	Z		confirm	M
+4	16	nt		confirm	H
+4	17	f		correct	M	tall stroke with crossbar matches f, not Z
+4	18	bh	dot	confirm	H
+4	19	S7	#	confirm	H
+4	20	m	~	confirm	H
+4	21	w		confirm	H
+4	22	m	~	confirm	H
+4	23	lam		confirm	H
+4	24	y		confirm	H
+4	25	f		confirm	H
+4	26	w		confirm	H
+5	1	y		confirm	H
+5	2	]	dot|o	confirm	H
+5	3	S7	dot	confirm	H
+5	4	Z	dot|#	confirm	M
+5	5	]	o	confirm	H
+5	6	tee		confirm	M
+5	7	f		confirm	H
+5	8	w		confirm	H
+5	9	bh		confirm	H
+5	10	Z		confirm	M
+5	11	H	1	confirm	H
+5	12	_		confirm	H	plain numeral/flourish "3"-like, stray
+5	13	S4		confirm	H
+5	14	_		plain	H	"Piu" (plain word, piu = more), script's cipher p guess wrong
+5	15	_	dot	confirm	H	completes "iu" of Piu
+5	16	_		plain	H	part of plain word "molto"
+5	17	_		confirm	H	completes "molto"
+5	18	_		plain	M	"mi" (me), very low script confidence (0.36) confirms plain
+5	19	_		confirm	H	"ha" plain word
+5	20	_		confirm	H	tall ascender, part of "detto"
+5	21	_		confirm	M	part of "detto"
+5	22	_		plain	H	"tto" ending detto; doubled-crossed tt resembles # shape but is plain
+5	23	_		plain	H	"E" of "Et" (and); resembles eps but is plain letter
+5	24	_		plain	H	"t" of Et, crossbar resembles + but is plain
+5	25	_		confirm	H	tall ascender, "d" of "dicono"
+5	26	_	dot	confirm	M	"icono" ending, completes "dicono"
+6	1	S4		confirm	M
+6	2	nt		confirm	H
+6	3	Z		confirm	L	ambiguous "+7"-like shape, low confidence, kept per script
+6	4	L		confirm	H
+6	5	e	#	correct	M	script omitted clearly visible # mark above
+6	6	[		confirm	H
+6	7	S7		confirm	H
+6	8	e	dot	confirm	H
+6	9	nt		confirm	H
+6	10	bh		confirm	H
+6	11	]	o	confirm	H
+6	12	_	dot|dot	confirm	H
+6	13	]	ot	confirm	H
+6	14	H	1	confirm	H
+6	15	_		confirm	M	tall ascender/stray stroke, plain
+6	16	w		confirm	H
+6	17	y		confirm	H
+6	18	m	1	confirm	H
+6	19	tee		confirm	L	tiny fragment, low confidence, kept per script
+6	20	lam		confirm	H
+6	21	rz		confirm	H
+6	22	Z		confirm	M
+6	23	L		confirm	H
+6	24	w		confirm	H
+6	25	tee		confirm	H
+6	26	[		confirm	H
+6	27	nt		confirm	H
+6	28	bh		confirm	H
+7	1	]	dot|ot	confirm	H
+7	2	phi		correct	H	circle-on-stem shape matches phi, not bh
+7	3	U		confirm	H
+7	4	w		confirm	H
+7	5	bh		confirm	H	tall stem with hook, genuine bh here
+7	6	a	~	confirm	H
+7	7	_		confirm	H	plain/stray letter
+7	8	bh		confirm	H
+7	9	S7	#	confirm	H
+7	10	]	dot|o	confirm	H
+7	11	g	~	confirm	H
+7	12	psi		confirm	H
+7	13	lam	7	confirm	H
+7	14	_		confirm	L	ambiguous L/4-like fragment, low confidence
+7	15	S4		confirm	H
+7	16	dl		confirm	H
+7	17	lam		confirm	H
+7	18	bh		confirm	H
+7	19	S7	#	confirm	H
+7	20	e	+	confirm	H
+7	21	g	dot|~	confirm	H
+7	22	_		confirm	L	looks like stray floating ## marks above the line, possibly belonging to a neighbouring sign; kept plain per script, unresolved
+7	23	[		confirm	M
+7	24	bh		confirm	H
+7	25	S7	#	confirm	H
+7	26	wd		confirm	H
+7	27	y		confirm	H
+7	28	sq	?	confirm	M	small square, mark unclear as script noted
+7	29	Z		confirm	M	uncertain visual match but kept per script
+7	30	_		confirm	L	possible "m" with flourish, uncertain
+8	1	g		confirm	H
+8	2	rz		confirm	H
+8	3	tee		confirm	H
+8	4	S4		confirm	H
+8	5	dl		confirm	H
+8	6	Z	dot|~	confirm	H
+8	7	eps	~	confirm	H
+8	8	g	~	confirm	H
+8	9	Z		confirm	H
+8	10	]		confirm	H
+8	11	nt		confirm	M
+8	12	Z	7	confirm	H
+8	13	a	~	confirm	H
+8	14	_		confirm	H	plain stray letter shape
+8	15	g	~	confirm	H
+8	16	psi		confirm	H
+8	17	eps		confirm	H
+8	18	w		confirm	H
+8	19	nt		confirm	H
+8	20	m	5	confirm	H
+8	21	]	ot	confirm	H
+8	22	S4		confirm	H
+8	23	dl		confirm	H
+8	24	_		confirm	H	legible plain word "Con"
+9	1	_		confirm	H	start of plain marginal word "(au)enuta"
+9	2	_		confirm	H	legible plain word "auenuta" (avvenuta?)
+9	3	_	1	confirm	M	flourish/numeral-like mark, part of marginal text
+9	4	_		plain	M	part of same marginal cluster, not cipher S7
+9	5	_		confirm	H	"D" of "Duca"
+9	6	_		plain	H	part of "Duca", not cipher S
+9	7	_		confirm	H	completes "Duca" (legible plain word, Duke)
+9	8	_		confirm	H	"S" of "Secondo"
+9	9	_		confirm	H	completes "Secondo" (legible plain word)
+9	10	_		plain	H	"P" of "Poco" (legible plain word), not cipher p
+9	11	_		confirm	H	completes "Poco"
+9	12	_		confirm	L	illegible cursive continuation
+9	13	_		plain	L	part of illegible cursive word, not cipher tee
+9	14	_		plain	L	part of illegible cursive word, not cipher tee
+9	15	_		confirm	L
+9	16	_		confirm	L
+9	17	_	dot	confirm	L
+9	18	Lx		confirm	M	possible genuine cipher resuming, or part of numeral jumble; kept per script
+9	19	_	1	plain	M	looks like archival pencil numeral "13" with dots, not cipher g
+9	20	_		confirm	H	stray numeral-like mark
+9	21	rz		confirm	M	kept as possible genuine cipher amid numeral clutter
+9	22	_	5	confirm	H	numeral-like marks (epsilon+1 stacked), likely archival clutter
+9	23	S7		confirm	M	kept as possible genuine cipher amid numeral clutter
+10	1	lam		confirm	H
+10	2	S7	~	confirm	H
+10	3	lam		confirm	H
+10	4	g	~	confirm	H
+10	5	psi		confirm	H
+10	6	lam		confirm	H
+10	7	lam		confirm	H
+10	8	S		confirm	M	bracket-like S shape
+10	9	[		confirm	M	small squiggle, atypical for [ but kept per script
+10	10	g		confirm	H
+10	11	Z		confirm	H
+10	12	]	o	confirm	H
+10	13	m	5	confirm	H
+10	14	nt		confirm	H
+10	15	rz		confirm	H
+10	16	nt	dot	confirm	H
+10	17	_	ot|?	confirm	L	cursive fragment "ys"-like, plain
+10	18	]	o	confirm	H
+10	19	g		confirm	H	numerals visible above (3, o) are archival pencil marks, not cipher marks
+10	20	m	~	confirm	H
+10	21	g	7	confirm	H
+10	22	bh		confirm	H
+10	23	S7		confirm	H
+10	24	g	#|7	confirm	H
+10	25	lam		confirm	H
+10	26	H	1|o	confirm	H
+11	1	_		confirm	H	archival stamp overlaps here; box is paper/ink artifact
+11	2	_		confirm	H
+11	3	U		confirm	M
+11	4	g	~	confirm	H
+11	5	lam		confirm	H
+11	6	S7	~	confirm	H
+11	7	e	#	correct	M	script omitted clearly visible # mark above
+11	8	m	~	confirm	H
+11	9	w		confirm	H
+11	10	_		confirm	M	lam/numeral-like combo, ambiguous
+11	11	nt		confirm	H
+11	12	rz		confirm	H
+11	13	g	~	confirm	H
+11	14	_		confirm	H
+11	15	lam		confirm	H
+11	16	nt	~	confirm	H
+11	17	y		confirm	H
+11	18	p		confirm	M
+11	19	g	?	confirm	H
+11	20	y	7	confirm	H
+11	21	Z		confirm	M	complex marks above not fully resolved
+11	22	]	dot|ot	confirm	H
+11	23	g		confirm	H
+11	24	y	5	confirm	H
+11	25	S		confirm	H
+11	26	]	ot	confirm	H
+11	27	#	~	confirm	M
+11	28	S7	#	confirm	H
+12	1	_	~	confirm	L	archival stamp overlaps; edge sliver
+12	2	_	1|1|?|dot|o|?|dot	confirm	L	archival stamp covers most of this box
+12	3	_	~	confirm	L	resembles tee/F shape but kept plain per script, low confidence
+12	4	Z	dot	confirm	M	visual resembles a looped/q-like shape more than classic zigzag, kept per script
+12	5	nt		confirm	H
+12	6	g	1	confirm	H
+12	7	a	~	confirm	H
+12	8	S7		confirm	H
+12	9	lam		confirm	H
+12	10	e	#	confirm	H
+12	11	wd		confirm	H
+12	12	bh		confirm	H
+12	13	K		confirm	H
+12	14	_	#	confirm	H	shape resembles a plain e-like letter, kept plain per script
+12	15	tee		confirm	M
+12	16	v	1	confirm	H
+12	17	y	5	confirm	H
+12	18	]	o	confirm	H
+12	19	rz		confirm	H
+12	20	S7	+	confirm	H
+12	21	g	~	confirm	H
+12	22	lam		confirm	H
+12	23	nt	~	confirm	M
+12	24	y		confirm	H
+12	25	e		confirm	M
+12	26	_	dot	confirm	M
+12	27	m	~	confirm	H
+12	28	g	7	confirm	H
+12	29	bh		confirm	H
+13	1	rz	?|?|1	confirm	H
+13	2	_		confirm	M	complex tall shape, kept plain per script
+13	3	g	dot	confirm	H
+13	4	w		confirm	H
+13	5	S7		confirm	H
+13	6	o.		confirm	H
+13	7	rz		confirm	H
+13	8	g	1	confirm	H
+13	9	_		confirm	H	plain tall ascender
+13	10	w		confirm	H
+13	11	bh		confirm	H
+13	12	Z	?	confirm	H	numerals above likely archival clutter
+13	13	g	~	confirm	H
+13	14	sq	~	confirm	H
+13	15	H	1|o	confirm	H
+13	16	a	5	confirm	H
+13	17	e	dot|+	confirm	H
+13	18	S4		confirm	H
+13	19	dl		confirm	H
+13	20	p		confirm	H
+13	21	_		confirm	H	legible plain word "Pur"
+13	22	_		confirm	H	completes "Pur", continues plain phrase "ame"
+13	23	_		confirm	H	part of plain phrase
+13	24	_		confirm	H	"ame" legible plain word fragment
+13	25	_		plain	M	"p" of "par(te)", part of plain phrase not cipher
+13	26	_		confirm	H	completes "par(te)"-like plain word
+14	1	_		confirm	M	stray vertical sliver, plain
+14	2	H	o|1	confirm	H
+14	3	]	ot	confirm	H
+14	4	nt		confirm	H
+14	5	rz		confirm	H
+14	6	g	~	confirm	H
+14	7	g	~	confirm	H
+14	8	psi		confirm	H
+14	9	Lx		confirm	M
+14	10	_		confirm	M	numeral-like, possibly archival
+14	11	lam	1	confirm	H
+14	12	]	o	confirm	H
+14	13	m	5	confirm	H
+14	14	nt		confirm	H
+14	15	rz		confirm	H
+14	16	nt		confirm	H
+14	17	phi		confirm	H
+14	18	S7	#	confirm	M
+14	19	_		confirm	H
+14	20	y		confirm	H
+14	21	y		confirm	H
+14	22	lam		confirm	H
+14	23	S4		confirm	H
+14	24	m		confirm	H
+14	25	a		confirm	M
+14	26	#		confirm	M
+14	27	_	dot	confirm	L	illegible cursive ending
+15	1	_		confirm	H	legible-ish plain word, reads roughly "sfando"
+15	2	_		confirm	H	completes/starts plain word
+15	3	_		confirm	H	plain word, plausibly "ancora"
+15	4	_		plain	M	flourish ending the plain word, resembles N but likely just a tail stroke
+15	5	_		confirm	M	ambiguous tall stroke, kept plain
+15	6	_		confirm	H	legible plain word "Cosi"
+15	7	_		confirm	H	completes "Cosi"
+15	8	S4		confirm	H	embedded cipher token between plain words Cosi/Come
+15	9	e	dot|+	confirm	H
+15	10	a	5	confirm	H
+15	11	e	#	confirm	H
+15	12	S7	dot|+	confirm	H
+15	13	dl		confirm	H
+15	14	_		confirm	H	legible plain word "Come"
+15	15	_		confirm	H	tiny stray mark ending Come
+15	16	_		confirm	H	legible plain word "hanno"
+15	17	_		confirm	M	tiny stray mark
+15	18	_		plain	M	"p", part of plain word continuing after hanno (e.g. puro/puri), not cipher
+15	19	_		confirm	H
+15	20	_		confirm	M
+15	21	_		plain	M	"V." abbreviation, likely V.S. = Vostra Signoria, not cipher v
+15	22	_		plain	M	"S." completing V.S. = Vostra Signoria, not cipher S
+16	1	_		plain	M	part of plain word (ricordano?), not cipher S7
+16	2	_		confirm	H
+16	3	_	dot	confirm	H
+16	4	_		confirm	H
+16	5	_		confirm	M
+16	6	_		plain	M	completes plain word (ricordano?), not cipher N
+16	7	_		plain	H	legible plain word "quello", not cipher w
+16	8	_		confirm	H
+16	9	_		confirm	H
+16	10	_		plain	H	"che" abbreviated, plain, not cipher ch
+16	11	_	dot	confirm	H
+16	12	_		plain	H	"P" of "Parlo" plain word, not cipher p
+16	13	_		confirm	M	completes "Parlo"
+16	14	_		plain	M	part of plain word, not cipher N
+16	15	_		confirm	H
+16	16	eps	1|1	confirm	H	isolated cipher token after punctuation break
+16	17	_		confirm	M	start of "Piaciuto"
+16	18	_		plain	H	"a" of "Piaciuto", plain, not cipher a
+16	19	_	dot	confirm	H	completes "Piaciuto"
+16	20	_		confirm	M	numeral below likely archival clutter
+16	21	_		plain	H	"S." of S.M. (Sua Maesta) abbreviation, plain not cipher S
+16	22	_		plain	M	"M" of S.M. abbreviation, plain not cipher Lx
+16	23	_		plain	L	continuation after S.M., plain not cipher v
+16	24	eps		confirm	M	isolated cipher token
+16	25	_		confirm	H
+16	26	_		plain	M	part of plain word, not cipher m
+16	27	_	dot	confirm	H
+16	28	_		confirm	H
+16	29	_	dot	confirm	H
+17	1	S		confirm	H
+17	2	_		confirm	L	ambiguous shape
+17	3	_		confirm	H
+17	4	K		confirm	H	numeral above likely archival clutter
+17	5	a	1	confirm	H
+17	6	S7		confirm	H
+17	7	eps	1	confirm	H
+17	8	nt		confirm	H
+17	9	Z		confirm	L	ambiguous, low confidence
+17	10	phi		confirm	H
+17	11	]	o	confirm	H
+17	12	U		confirm	H
+17	13	w		confirm	H
+17	14	bh		confirm	H
+17	15	m	5	confirm	H
+17	16	psi		confirm	H
+17	17	lam		confirm	H
+17	18	e	#	confirm	H
+17	19	wd		confirm	H
+17	20	o.		confirm	H
+17	21	e	dot|+	confirm	H
+17	22	y	dot	confirm	H
+17	23	S4		confirm	H
+17	24	dl		confirm	H
+17	25	_		confirm	H	legible plain word "Con"
+17	26	_		confirm	H	tiny stray sliver
+18	1	_		confirm	H	legible plain word "tentasi" (tried)
+18	2	v	dot	confirm	L	ambiguous small shape
+18	3	p		confirm	H
+18	4	w		confirm	H
+18	5	S4		confirm	H
+18	6	e	dot|+	confirm	H
+18	7	K		confirm	H
+18	8	_	dot	confirm	H
+18	9	w		confirm	H
+18	10	_	dot	confirm	M
+18	11	S7	#	confirm	H
+18	12	eps	5	confirm	H
+18	13	S7		confirm	H
+18	14	L		confirm	H
+18	15	w		confirm	H
+18	16	a	~	confirm	H
+18	17	y		confirm	H
+18	18	S		confirm	H
+18	19	_		confirm	H	ambiguous plain shape/clutter
+18	20	_		confirm	H	part of plain phrase "l(a) oppinjoni"
+18	21	_		plain	M	"p" of "oppinjoni", plain not cipher p
+18	22	_		confirm	H	legible plain word "oppinjoni" (opinion)
+19	1	_		confirm	H	stray plain mark
+19	2	_		plain	H	"S." abbreviation (S.S.), plain not cipher S
+19	3	_		plain	H	"S." completing S.S., plain not cipher S
+19	4	_		plain	H	"E" of "Et" (and), plain not cipher eps
+19	5	_		plain	H	"t" of Et, crossbar resembles + but plain
+19	6	_		confirm	H	part of plain word "desiderano"
+19	7	_		plain	M	part of "desiderano", not cipher tee
+19	8	_		confirm	H	part of "desiderano"
+19	9	_		confirm	H	part of "desiderano"
+19	10	_		confirm	M	part of "desiderano"
+19	11	_		plain	M	completes "desiderano", not cipher N
+19	12	_		plain	M	"in" plain word, not cipher m
+19	13	_		confirm	H	"T" of "Tal"
+19	14	_		confirm	H	completes "Tal"
+19	15	_		confirm	H	legible plain word "Caso"
+19	16	_		confirm	M	completes "Caso"
+19	17	_		plain	H	"che" abbreviated, plain not cipher ch
+19	18	_		plain	L	part of plain word after che, not cipher Z
+19	19	_		plain	L	possibly "sua" (his/her), plain not cipher Z
+19	20	Lx		confirm	M	possible start of embedded cipher word
+19	21	U		confirm	H
+19	22	w		confirm	H
+19	23	bh		confirm	H
+19	24	a	~	confirm	H
+19	25	_		confirm	H	ambiguous plain shape
+19	26	]	o	confirm	H
+19	27	e	ot	confirm	H
+19	28	_		confirm	H	tiny stray sliver

@@ -1,0 +1,212 @@
+line	pos	code	marks	action	conf	note
+1	1	_		plain	H	large "R" with superscript flourish (abbreviation, e.g. R.do)
+1	2	_		plain	H	"Dnt" plain abbreviation
+1	3	_		delete	M	stray ink fragment/hook, part of ascender near pos2/4 boundary, not a separate sign
+1	4	_		plain	M	plain cursive continuing word (looks like "lan...")
+1	5	g		correct	L	beta/figure-8 shape, ambiguous with plain -us/9 ligature ending the word; no clear mark above, dropped erroneous "1" mark
+1	6	p		confirm	M	capital P-like loop with stem, matches p reasonably
+1	7	_		delete	M	tail stroke continuing from pos6, not a separate sign
+1	8	_		delete	L	isolated short stroke above baseline, likely abbreviation tilde, not lam
+1	9	_		plain	M	small loop, plain letter (e/c-like)
+1	10	psi		confirm	M	forked loop + tail, matches psi
+1	11	+		confirm	M	cross shape, matches +
+1	12	_		plain	M	round "o" with flourish tail, plain letter
+1	13	[		confirm	H	clean [ shape
+1	14	bh		confirm	H	tall stem with hooked loop, matches bh
+1	15	rz		confirm	M	low wave shape, matches rz
+1	16	U		confirm	M	matches U reasonably
+1	17	y		confirm	M	looped tail matches y
+1	18	nt		confirm	M	crossed stroke, matches nt
+1	19	[		confirm	H	clean [ shape
+1	20	bh		confirm	H	tall stem with hooked loop, matches bh
+1	21	sq	ot	confirm	M	square box with ot mark
+1	22	psi		confirm	H	forked y with tail
+1	23	lam	o	confirm	H	Lambda shape with ring mark
+1	24	eps	5	confirm	H	clean epsilon two-bowl shape with numeral mark
+1	25	nt		confirm	M	loop with crossing diagonal stroke, extended tail
+1	26	[		confirm	H	clean [ shape
+2	1	rz		confirm	H	low hook-then-wave shape, matches rz
+2	2	g	~	confirm	H	loop shape with tilde mark, matches g
+2	3	m	~	confirm	H	three-hump cursive m with tilde mark
+2	4	w		confirm	H	cursive w with lead-in stroke
+2	5	_		delete	M	isolated short vertical stroke, stray fragment
+2	6	L		confirm	H	L shape with internal stroke
+2	7	g	~	confirm	H	loop shape with tilde mark, matches g
+2	8	o.		confirm	H	ring with dot inside, clean match
+2	9	S7		confirm	H	7-shape, matches S7
+2	10	lam	dot	confirm	M	two-stroke shape, matches lam
+2	11	S7	~	confirm	H	7-shape with tilde mark
+2	12	e	#	confirm	H	looped e with clear double-cross mark above
+2	13	g	~	confirm	H	loop shape with tilde mark, matches g
+2	14	y		correct	H	looped-tail y; box originally merged with a following tee sign, split off as pos14.5
+2	14.5	tee		add	H	vertical stroke with right bar, was merged into pos14's box
+2	15	K		correct	H	clean K letterform, clearly matches atlas K despite low script confidence
+2	16	sq		correct	L	two joined closed-box cells with a descender tail; closest single atlas match is sq, possibly two merged signs - flag for reconciler
+2	17	]	o	confirm	H	open-left square bracket, clean match
+2	18	_		plain	M	hook with small v-loop, plain cursive; two dots above likely belong to neighbouring bh
+2	19	bh	dot	confirm	H	tall stem hooked loop with dot marks above
+2	20	S7	+	confirm	H	7-shape with clear + mark to the right
+2	21	a		confirm	H	bold cursive a, clean match
+2	22	S7	~	confirm	H	7-shape with tilde mark
+2	23	lam	~	confirm	H	lambda shape with tilde mark
+2	24	e	#	confirm	H	looped e with clear double-cross mark
+2	25	wd		confirm	M	omega joined to tall right stroke
+2	26	bh		confirm	H	tall stem hooked loop
+2	27	K		confirm	H	clean K, matches atlas
+2	28	Lx	#	confirm	H	lambda with crossing bar on right leg, # mark visible upper right
+3	1	phi		correct	H	slashed-o on a long stem, matches phi not bh
+3	2	]	o	confirm	H	open-left bracket with ring mark
+3	3	nt		correct	M	box holds two stacked signs (n+ over Z); corrected to top sign nt, bottom split off as pos3.5
+3	3.5	Z		add	M	bottom half of former pos3 box, a separate Z sign
+3	4	]	dot|o	confirm	H	open-left bracket with dot and ring marks
+3	5	S7	dot	confirm	M	7-shape with dot mark
+3	6	lam		correct	M	two-legged peak shape, matches lam not f (no crossbar seen)
+3	7	e	dot	confirm	M	looped e with mark above
+3	8	y		confirm	H	cursive y with looped tail
+3	9	e	#	correct	H	looped e; added visible # mark above (script gave none)
+3	10	o.		correct	M	round ring shape, closer to o. than plain; dot not fully clear
+3	11	m		correct	M	three-hump m; box was split in two, merged with pos12
+3	12	_		delete	M	second half of the same m sign as pos11, not separate
+3	13	g	7	correct	H	g loop with descender; numeral 7 mark above belongs here (script had it on pos12)
+3	14	Z		confirm	H	zigzag shape, matches Z
+3	15	S4		confirm	H	tall stroke with crossbar and foot, matches S4
+3	16	_		plain	M	looks like plain letter d, not f (no crossbar, low script confidence)
+3	17	_		plain	H	plain word "Tutto"
+3	18	_		plain	H	plain word "quello"
+3	19	_		delete	M	fragment/tail of the final o in "quello", not separate
+3	20	ch		confirm	H	c with tall looped h, matches ch
+3	21	S		confirm	M	small S/s shape, flanked by dots (punctuation?); ambiguous plain vs cipher
+3	22	S	#	confirm	M	small S/s shape, similar to pos21
+3	23	_		plain	M	plain cursive, start of a word (looks like "d...")
+3	24	_		plain	M	plain cursive, part of same word
+3	25	_		correct	M	plain cursive "s", part of same word as pos23-24, not cipher S
+3	26	_		plain	M	plain cursive "i", part of same word
+3	27	_	dot	plain	M	plain cursive "d", part of same word
+3	28	_		plain	M	plain cursive "er", part of same word
+3	29	_		correct	M	plain cursive "a", part of same word ("...desidera..."), not cipher N
+3	30	_		correct	L	plain cursive, continues the same word, not cipher y
+3	31	S4		confirm	M	4-shape with foot, separated by a gap, resumes cipher
+4	1	phi		correct	M	slashed-o on stem, matches phi not bh
+4	2	y		confirm	L	loop/tail continuing from pos1, tentative y
+4	3	lam	1	confirm	H	lambda with numeral 1 mark
+4	4	_	dot	confirm	M	plain cursive shape
+4	5	]	o	confirm	H	flat open bracket with ring mark
+4	6	g	~	confirm	H	loop with tilde mark
+4	7	nt		confirm	H	n joined to crossed stroke
+4	8	S7		confirm	H	7-shape
+4	9	#		confirm	H	double-barred cross, clean match
+4	10	y	dot	confirm	H	cursive y with dot mark
+4	11	nt		confirm	M	wide crossed shape, matches nt
+4	12	bh		confirm	H	tall stem hooked loop
+4	13	w		confirm	H	flat w/omega shape
+4	14	e	#	correct	H	looped e; mark is clearly # not dot
+4	15	Z		confirm	M	matches Z reasonably
+4	16	nt		confirm	H	n joined to crossed stroke
+4	17	S4		correct	M	slash crossing a crossbar+stem, matches S4 not Z
+4	18	bh	dot	confirm	H	tall stem hooked loop with dot mark
+4	19	S7	#	confirm	H	7-shape with # mark
+4	20	m	~	confirm	H	cursive m with tilde mark
+4	21	w		confirm	H	flat w/omega shape
+4	22	m	~	confirm	H	cursive m with tilde mark
+4	23	lam		confirm	H	lambda shape
+4	24	y		confirm	H	cursive y with looped tail
+4	25	f		confirm	H	tall f with crossbar
+4	26	w		confirm	H	flat w/omega shape
+5	1	y		confirm	H	cursive y with looped tail
+5	2	]	dot|o	confirm	H	flat bracket with dot and ring marks
+5	3	S7	dot	confirm	H	7-shape with dot mark
+5	4	L		correct	M	simple L-hook shape, matches L not Z
+5	5	]	o	confirm	H	flat bracket with ring mark
+5	6	tee		confirm	M	vertical stroke with right bar (partial view)
+5	7	f		confirm	H	tall f with crossbar
+5	8	w		confirm	H	flat w/omega shape
+5	9	bh		confirm	M	tall stem hooked loop
+5	10	L		correct	M	simple L-hook shape, matches L not Z
+5	11	H	1|o	correct	H	H shape; compound digit-like mark above reads as 1+o (looks like "8"/"10")
+5	12	_		plain	M	numeral-like "3" plus curved tail, uncertain plain mark/flourish
+5	13	S4		confirm	M	isolated cross/foot shape before the plain stretch below, kept as cipher
+5	14	_		correct	H	plain script, start of legible phrase "Piu molto mi ha detto Et sua..."; not cipher nt
+5	15	_		correct	H	plain script, continues "Piu"; not cipher Z
+5	16	_		correct	H	plain script "molt(o)"; not cipher L
+5	17	_		correct	H	plain script, end of "molto"; not cipher e
+5	18	_		correct	H	plain script "mi"/"my"; not cipher [
+5	19	_		correct	H	plain script "ha"; not cipher S7
+5	20	_		correct	H	plain script "d" of "detto"; not cipher e
+5	21	_		correct	H	plain script "e" of "detto"; not cipher nt
+5	22	_		correct	H	plain script "tto" of "detto"; not cipher bh
+5	23	_		correct	H	plain script "E" of "Et"; not cipher [
+5	24	_		correct	H	plain script "t" of "Et"; not cipher H
+5	25	_		correct	H	plain script "su" of "sua"; not cipher _(default)
+5	26	_		correct	H	plain script "a" of "sua"; not cipher w
+6	1	S4		confirm	H	slash-crossed 4 shape
+6	2	nt		confirm	H	n joined to crossed stroke
+6	3	S7	+	correct	M	7-shape with + mark above; not Z
+6	4	L		confirm	M	L-hook shape
+6	5	e	#	confirm	H	looped e with # mark
+6	6	[		confirm	H	open-right bracket
+6	7	S7		confirm	H	7-shape
+6	8	e	+	correct	H	looped e; mark is clearly + not dot
+6	9	nt		confirm	M	crossed loop shape, matches nt
+6	10	bh		confirm	H	tall stem hooked loop
+6	11	]	o	confirm	H	flat bracket with ring mark
+6	12	_	dot|dot	confirm	M	plain-looking cursive shape with double dot mark above
+6	13	]	ot	confirm	H	flat bracket with ot mark
+6	14	H	1	confirm	H	H shape (partial at edge) with numeral mark
+6	15	_		confirm	M	tall stroke, plain script (ambiguous, possibly bleed from line above)
+6	16	w		confirm	H	flat w/omega shape
+6	17	y		confirm	H	cursive y with looped tail
+6	18	m		confirm	M	cursive m shape
+6	19	tee		confirm	L	small unclear fragment, tentative tee
+6	20	lam		confirm	M	triangular peak shape, matches lam
+6	21	rz		confirm	H	low hook-then-wave shape
+6	22	L		correct	M	L-hook shape with dot, matches L not Z
+6	23	L		confirm	H	L with small 7 inside the angle, clean match
+6	24	w		confirm	H	flat w/omega shape
+6	25	tee		confirm	H	vertical stroke with right bar
+6	26	[		confirm	H	open-right bracket
+6	27	nt		confirm	H	wide n+crossed stroke shape
+6	28	bh		confirm	H	tall stem hooked loop
+7	1	]	dot|ot	confirm	H	flat bracket with dot and ot marks
+7	2	phi		correct	H	slashed-o on stem, matches phi not bh
+7	3	U		confirm	H	cup shape open at top
+7	4	w		confirm	H	flat w/omega shape
+7	5	bh		confirm	H	tall stem hooked loop
+7	6	a	~	confirm	H	bold cursive a with tilde mark
+7	7	_		confirm	M	loop+ascender shape, plain per script
+7	8	bh		confirm	M	tall stem hooked loop, similar to pos7 but classed cipher
+7	9	S7	#	confirm	H	7-shape with # mark
+7	10	]	dot|o	confirm	H	flat bracket with dot and ring marks
+7	11	g	~	confirm	H	loop with tilde mark
+7	12	psi		confirm	H	forked y with tail
+7	13	lam	7	confirm	H	lambda shape with numeral mark
+7	14	lam		correct	M	two-legged peak shape, matches lam not plain; compound mark above unclear
+7	15	S4		confirm	M	foot+slash shape, matches S4
+7	16	dl		confirm	H	delta with long tail
+7	17	lam		confirm	H	lambda peak shape
+7	18	bh		confirm	H	tall stem hooked loop
+7	19	S7	#	confirm	H	7-shape with # mark
+7	20	e	+	confirm	H	looped e with + mark
+7	21	g	dot|~	confirm	H	loop with dot and tilde marks
+7	22	#		correct	M	tall double-barred cross, matches # sign itself, not plain
+7	23	[		confirm	H	open-right bracket
+7	24	bh		confirm	H	tall stem hooked loop
+7	25	S7	#	confirm	H	7-shape with # mark
+7	26	wd		confirm	M	flat omega with tail, matches wd
+7	27	y		confirm	H	cursive y with looped tail below
+7	28	sq	?	confirm	M	closed square with unclear mark above
+7	29	Z		confirm	M	loop+cross+flat base, matches Z
+7	30	m	~	correct	H	three-hump m with tilde mark, not plain
+8	1	g		confirm	H	loop shape, matches g
+8	2	rz	~	confirm	H	low hook-then-wave with tilde mark
+8	3	tee		confirm	H	vertical stroke with right bar
+8	4	S4		confirm	H	foot+slash shape
+8	5	dl	dot|~	confirm	H	delta with long tail, dot and tilde marks
+8	6	Z		confirm	H	Z-shape, clean
+8	7	eps	~	confirm	H	epsilon two-bowl shape with tilde mark
+8	8	g	~	confirm	H	loop with tilde mark
+8	9	nt		correct	M	box holds two stacked signs (n+ over Z); corrected to top sign nt, bottom split off as pos9.5
+8	9.5	Z		add	M	bottom half of former pos9 box, a separate Z sign
+8	10	]		confirm	H	flat open bracket
+8	11	_		delete	M	small "ot"-shaped mark, belongs above pos12's Z sign, not its own sign
+8	12	Z	7|ot	correct	H	Z shape; added ot mark from pos11 alongside existing 7 mark
+8	13	a	~	confirm	H	bold cursive a with tilde mark
