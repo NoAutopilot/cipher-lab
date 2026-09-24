@@ -208,3 +208,57 @@ WVO lists two more witnesses for 126 beyond the Dresden original. They are the *
 recorded "met een 'Zeitung'"**, and a 20th-century copy in the Collectie Japikse. The minute may hold the
 postscript's text in clear. Neither has been seen. Status word moved from open to partial because 126 is read
 (C 214 of 240) and 53/57 are not.
+
+## S1: 53 and 57 (24 September 2026, LANE R2 worker S1, Opus, two Sonnet passes per letter)
+
+**57 p3 (August -> Willem, Torgau 18 Nov 1561; the scan is the KHA copy A 11/XIV B/41-6) is System A: it reads
+with key_74.** `ciphertext_57.tsv` (reconciled from passA_57/passB_57, 84.8% column agreement; settlements
+decided on the crops and logged row by row in `settle_57.py`), `exceptions_57.tsv` (5 unkeyed word signs, by
+context), `reading_57.txt`. **Tokens 300: H 0, C 247, S 0, M 53, I 0, U 0** (C = key_74 from the 74 decipherment).
+57 p3 has one cipher block, not two. The "two blocks" in R14 were the plaintext postscript and the cipher, each
+signed. New System A signs seen here: OQ (circle with a tail, "wir" by context), THE (circle under a cross,
+"Keiser", twice), BOX (square, "Churfurs[ten]"), G1h (hooked tent, x in "Maximilianum"), all M. VmV (König)
+occurs twice, once abbreviated before a colon ("König: Ma x imilianum"). A colon stands for a nasal
+abbreviation ("zu ei:em" = einem).
+> auff freundtlich hoch vertrawen wollen [wir] E.L. nitt bergen, das der [Keiser] fur wenig tagen durch seine
+> stadtliche gesanndten hen bei uns suchen lasen, seinen sohn König Maximilianum noch bei seinem, des Keisers,
+> leben zu einem römischen Könige zu erwelen, konnen erachten, solchs werde bei den andern [Churfürs]ten gleicher
+> gestalt auch gesucht werden, welchs E.L. bei sich inn geheim werden zu halten wisenn.
+
+In short: the Emperor had envoys ask August to elect his son Maximilian King of the Romans in the Emperor's
+lifetime, and the same was probably being asked of the other Electors. This is this worker's gloss, not a search result.
+
+**53 p1 postscript (Willem -> August, Breda 24 Oct 1561; Dresden Loc. 9941/3 f.266) is a third key, read
+cryptanalytically.** 10 lines, not 12. The first crop set mixed lines and was replaced by deskewed crops. Two
+blind passes (passA_53/passB_53, 90.9% agreement), `settle_53.py` → `ciphertext_53.tsv`: 282 letters, 20
+distinct signs, dots as word separators. Solver: `tools/homophonic_anneal.py` (new, pure Python, trigram +
+KL letter term, w folded to uu), LM = `tools/data/de16/composed_enhg.txt` (composed text, see its README) +
+plaintext_98.txt. The 74 text is kept out of the LM because it is the control.
+- **Matched control (rule 3):** the cipher's own 1562 German (align_74.txt), first 282 letters, homophonic key
+  with 20 signs, same settings: **280/282 letters (99.3%)** (`solve_53_control.json`; `tools/tests/test_homophonic_anneal.py` reruns it).
+- **Target:** 4 of 6 restarts converge on the same key (score -655.6), and it gives connected German (`solve_53_target.json`).
+  One correction by context: G6 = k (the annealer gave f; its 3 occurrences read khomen, konigreich, krieg).
+  `key_53.tsv` (20 signs, grade S). G1 and G7 both = s. 77 = w (uu). **Tokens 282: H 0, C 0, S 163, M 119,
+  I 0, U 0.** The M tokens are signs that a pass flagged as doubtful. `decode_key.py . --check` exits 0.
+- Reading (`reading_53.txt`, no repairs):
+> neiuuer zeittung hab ich itcmals nicht zu bergen zu schreiben, dan das dem printzen zu hispanien seines hern
+> vatters schwester ehlich vermahlet werden und hieruber diese lande zu regieren khomen sollen, und dan ein
+> gemein geschret ist, es wolle der hertzog von Vandosmen sein konigreich Navarra mit der gute oder krieg
+> wiederholen mrch
+  Doubtful spots: "itc(mals)" (4 = c where z/itzmals is expected), "geschret" (geschrey?), "mrch" at the end
+  (mich?). Read with the image, not repaired. In short: news that the Prince of Spain would marry his father's sister and
+  come to govern these lands, and that the Duke of Vendôme would recover his kingdom of Navarre by agreement or
+  war. This is this worker's gloss.
+- This is a cryptanalytic result: no H or C tokens. 53 shares System A's sign shapes but has its own
+  alphabet, e.g. 1 = e (e in 74 too), 5 = n, 7 = u, X = i, V = r, Xk = t, G3 = h.
+
+**Search log (on disk only, no network):** the committed sources (`sources/`, Cryptiana pages, IA full-text run
+tables, WVO notes) were grepped on 24 Sept 2026 for vandosme/vendosme, nauarra/navarra, maximilian, "vatters
+schwester", hispanien and "romischen konig". No hit concerns these letters: Cryptiana german/habsburg/nevers
+only name the persons in unrelated contexts, and the IA run tables hold index lines of other books. Not searched: the printed
+Groen van Prinsterer *Archives*, Kluckhohn, and Demandt's regest of 57 (Hess. Jb. Landesgesch. 38, p.78 nr.113),
+which the check-solved sweep names as open gaps. None is on disk. No novelty is classified here (rule 10).
+Suggestions: a verifier should read Demandt nr.113 and the Groen/Kluckhohn volumes for 53 and 57, and
+phrase-search "Vandosme" / "Maximilianum" / "vatters schwester". A native-resolution re-read of 53 (Huygens PDF 00053)
+would settle the 119 M tokens.
+Requests: none (no network). Subagents: 4 Sonnet passes (2 for 57, 2 for 53), plus 2 discarded passes over the mis-cut 53 crops.
