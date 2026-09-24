@@ -279,8 +279,7 @@ Getting the material is most of the work. Try routes in this order and record wh
    Send it as a header, never in the URL: `curl -H "Authorization: Bearer $OPENALEX_KEY" "https://api.openalex.org/works?search=..."`;
    check what is left with `curl "https://api.openalex.org/rate-limit?api_key=$OPENALEX_KEY"` (resets at midnight UTC;
    429 also on more than 100 requests/s). Semantic Scholar: unauthenticated traffic shares one pool and 429s; the person
-   has requested a key (form at semanticscholar.org/product/api, delivered by email, backlog as of 24 Sept 2026) which will
-   be `S2_KEY`, sent as `-H "x-api-key: $S2_KEY"`, 1 request per second, no Retry-After on 429, so sleep 1.1 s between
+   has set `S2_KEY` (24 Sept 2026, a free key from the form at semanticscholar.org/product/api), sent as `-H "x-api-key: $S2_KEY"`, 1 request per second, no Retry-After on 429, so sleep 1.1 s between
    calls and back off. `tools/print_check.py` reads both variables and adds the headers itself (and runs its `s2`
    check only when the key is present). With the keys, a session runs the open-index pass itself; no owner-machine row
    is needed for OpenAlex or Semantic Scholar. Test presence with `test -n`; never print or commit either key.
