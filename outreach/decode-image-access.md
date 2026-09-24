@@ -1,4 +1,4 @@
-status: ready
+status: sent 24 Sept 2026 (one email covering both DECODE asks; reply pending)
 subject: DECODE: full-size page image access for this account
 to: DECODE maintainers via https://de-crypt.org (contact form or the address on the site), or the account's Personal Data page if a role upgrade is self-service
 
