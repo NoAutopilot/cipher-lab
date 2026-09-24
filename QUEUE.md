@@ -5308,10 +5308,10 @@ the next worker to fetch these must eye-check the leaf before transcribing, exac
 
 | Row | Target slug (proposed) | Ark / folio | Date | Sender -> recipient | Key | Image tested | Status |
 |---|---|---|---|---|---|---|---|
-| KS-01 | fr3985-nevers-revol-1593 | `btv1b90606498` f.88 (canvas ~176, unconfirmed) | 21 Aug 1593 | Nevers -> Revol | k-tomokiyo-nevers60 (no.60, fr.3995 f.108-110) | 4716x6668, tested 24 Sept 2026 | copy-free |
-| KS-02 | fr3985-nevers-revol-1593 (same target, second leaf) | `btv1b90606498` f.176 (canvas ~353, unconfirmed) | 2 Sept 1593 | Nevers -> Revol | k-tomokiyo-nevers60 | 4727x6396, tested 24 Sept 2026 | copy-free |
-| KS-03 | fr3986-nevers-revol-1593 | `btv1b9060631k` f.198 (canvas ~397, unconfirmed) | 23 Oct 1593 | Nevers -> Revol | k-tomokiyo-nevers60 | 4948x6957, tested 24 Sept 2026 | copy-free |
-| KS-04 | fr3983-pisany-nevers-1593 | `btv1b9059406b` f.169 (canvas ~297, unconfirmed) | 23 Mar 1593 | Marquis de Pisany -> Duke of Nevers | k-tomokiyo-nevers46 (no.46, fr.3995 f.86-87) | 4948x7008, tested 24 Sept 2026 | copy-free |
+| KS-01 | fr3985-nevers-revol-1593 | `btv1b90606498` f.88 (canvas 176, **confirmed** by leaf's own folio stamp + date "21 d'aoust 1593") | 21 Aug 1593 | Nevers -> Revol | k-tomokiyo-nevers60 (no.60, fr.3995 f.108-110) | 4716x6668, tested 24 Sept 2026 | **check-solved: open** (nominated; ciphers/fr3985-nevers-revol-1593/NOTES.md) |
+| KS-02 | fr3985-nevers-revol-1593 (same target, second leaf) | `btv1b90606498` f.176 (canvas 353, **confirmed** by leaf's own folio stamp + date "2 de Sept 1593") | 2 Sept 1593 | Nevers -> Revol | k-tomokiyo-nevers60 | 4727x6396, tested 24 Sept 2026 | **check-solved: open** (nominated; ciphers/fr3985-nevers-revol-1593/NOTES.md) |
+| KS-03 | fr3986-nevers-revol-1593 | `btv1b9060631k` f.198 (canvas 397, **confirmed** via facing verso canvas 398 stamped "199") | 23 Oct 1593 | Nevers -> Revol | k-tomokiyo-nevers60 | 4948x6957, tested 24 Sept 2026 | **check-solved: open** (nominated; ciphers/fr3986-nevers-revol-1593/NOTES.md) |
+| KS-04 | fr3983-pisany-nevers-1593 | `btv1b9059406b` f.169 (canvas 297, **confirmed** by leaf's own folio stamp + date "23 de Mars 1593") | 23 Mar 1593 | Marquis de Pisany -> Duke of Nevers | k-tomokiyo-nevers46 (no.46, fr.3995 f.86-87) | 4948x7008, tested 24 Sept 2026 | **check-solved: found-solved** -- leaf carries a contemporary interlinear decipherment (not nominated; ciphers/fr3983-pisany-nevers-1593/NOTES.md) |
 | KS-05 | fr3987-nevers-court-1593 | `btv1b90606320` f.66 (canvas ~132, unconfirmed) | 1593 (Nevers embassy correspondence, undated in `nevers.htm`'s citation) | the Court -> Nevers (Tomokiyo's `henryiv2.htm` list) | k-tomokiyo-nevers60 | 4940x6827, tested 24 Sept 2026 | copy-free |
 | KS-06 | fr3989-nevers-court-1594 | `btv1b9060514q` f.169 (canvas ~338, unconfirmed) | c.1593-94 | the Court -> Nevers (`henryiv2.htm` list) | k-tomokiyo-nevers60 | 4987x7040, tested 24 Sept 2026 | copy-free |
 | KS-07 | fr3990-nevers-court-1594 | `btv1b90068799` f.27 (canvas ~54, unconfirmed) | c.1593-94 | the Court -> Nevers (`henryiv2.htm` list) | k-tomokiyo-nevers60 | 4014x5766, tested 24 Sept 2026 | copy-free |
@@ -5332,6 +5332,19 @@ contemporary interlinear decipherment**, already transcribed in full by Bourdeau
 "copy-free" column above is an image test only, not a stage-2 verdict. All seven are copy-free; none is
 copy-order. No target folder created, no nomination line posted (scouts don't). Output TSV:
 `sources/solver-diffs/2026-09-24-keys-vs-siblings.tsv`.
+
+**Update, LANE N4 csKSa, 24 Sept 2026:** KS-01..KS-04 have now had the six-source check-solved sweep (web,
+print editions named in the brief, Cryptiana, DECODE-on-disk, Bourdeau shallow clone, Aymeloglu shallow clone)
+plus a leaf confirmation of each canvas against the leaf's own handwritten folio number and date (all four
+canvas estimates confirmed correct). KS-01, KS-02, KS-03 verdict **open**, nominated, target folders and
+NOTES.md written. **KS-04 verdict is found-solved, not open**: the leaf (fr.3983 f.169) itself carries a
+contemporary interlinear decipherment over most of the cipher text (same pattern as the already-excluded
+fr.3986 f.64-65v Gondi letter, and consistent with Tomokiyo tagging two *other* letters in the same key-46 list
+"undeciphered" but not this one) -- not nominated. Details and image URLs in
+`ciphers/fr3983-pisany-nevers-1593/NOTES.md`, `ciphers/fr3985-nevers-revol-1593/NOTES.md`,
+`ciphers/fr3986-nevers-revol-1593/NOTES.md`. KS-05..KS-07 (fr.3987 f.66, fr.3989 f.169, fr.3990 f.27, all
+key no.60, all Court->Nevers) remain unswept -- next check-solved worker on this slug family, and the same
+found-solved interlinear-gloss check should be run on each before nominating.
 
 **First-third check (per brief):** not triggered -- the very first key group checked (Nevers no.46/no.60) turned
 up seven unread, copy-free siblings, so the negative-and-stop clause did not apply.
