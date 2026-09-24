@@ -1,0 +1,529 @@
+## Skiplinks
+ 
+ 
+Tekst [#content]
+ 
+Verantwoording en downloads [#subnav]
+ 
+Doorverwijzing en noten [#tekst_en_noten]
+ 
+  
+  
+ 
+   Ga naar de homepage  [/] 
+ 
+ 
+ 
+    [/] 
+ 
+ 
+
+## Hoofdmenu
+Menu 
+
+ 
+Literatuur & taal [#Literatuur_&_taal]
+ 
+Auteurs [/auteurs/index.php]
+ 
+Beschikbare titels [/titels/index.php]
+ 
+Literatuur [/letterkunde/index.php]
+ 
+Taalkunde [/taalkunde/index.php]
+ 
+Collectie Limburg [/letterkunde/limburg/index.php]
+ 
+Collectie Friesland [/letterkunde/fries/index.php]
+ 
+Collectie Suriname [/letterkunde/suriname/index.php]
+ 
+Collectie Zuid-Afrika [/letterkunde/zuidafrika/index.php]
+ 
+
+ 
+Selecties [#Selecties]
+ 
+Collectie jeugdliteratuur [/onzekinderboeken/index.php]
+ 
+Basisbibliotheek [/basisbibliotheek/index.php]
+ 
+Tijdschriften/jaarboeken [/titels/tijdschriften/titels_tijdschriften.php]
+ 
+Naslagwerken [/titels/titels_naslagwerken.php]
+ 
+Collectie e-books [/letterkunde/ebooks/index.php]
+ 
+Collectie publiek domein [/letterkunde/pd/index.php]
+ 
+Calendarium [/calendarium/index.php]
+ 
+Atlas [/atlas/index.php]
+ 
+
+ 
+Periode [#Periode]
+ 
+Middeleeuwen [/titels/index.php?c=15]
+ 
+Periode 1550-1700 [/titels/index.php?c=17]
+ 
+Achttiende eeuw [/titels/index.php?c=18]
+ 
+Negentiende eeuw [/titels/index.php?c=19]
+ 
+Twintigste eeuw [/titels/index.php?c=20]
+ 
+Eenentwintigste eeuw [/titels/index.php?c=21]
+ 
+
+ 
+ 
+    
+Archives ou correspondance inédite de la maison d'Orange-Nassau (première série). Tome IV 1572-1574 (1837)
+sluit verantwoording en downloads
+
+    
+
+## Informatie terzijde
+  
+ 
+  [index.php] 
+ Toon afbeelding van titelpagina van Archives ou correspondance inédite de la maison d'Orange-Nassau (première série). Tome IV 1572-1574 [groe009arch04_01_tpg.gif] 
+ 
+
+Verantwoording [colofon.php]
+
+Inhoudsopgave [index.php] 
+
+### Downloads
+
+ PDF van tekst (2.65 MB) [/tekst/groe009arch04_01/groe009arch04_01.pdf] 
+ 
+ XML (1.14 MB) [/nieuws/xml.php?id=groe009arch04] 
+
+ tekstbestand [/nieuws/text.php?id=groe009arch04] 
+
+Vul zoekterm(en) inDoorzoek de hele tekst
+
+### Genre
+non-fictie
+
+### Subgenre
+non-fictie/brieven
+
+non-fictie/geschiedenis/Opstand
+
+© zie Auteursrecht en gebruiksvoorwaarden [/titels/gebruiksvoorwaarden.php?id=groe009arch04].
+ 
+   
+ 
+ 
+ 
+ Selecteer waarin je wilt zoeken  Zoek alles Zoeken naar auteurs Zoeken naar titels Zoeken in teksten   
+ Zoek naar auteurs, titels en in teksten Zoeken 
+   
+ 
+   
+  
+  
+
+# Archives ou correspondance inédite de la maison d'Orange-Nassau (première série). Tome IV 1572-1574 [index.php]
+(1837)–G. Groen van Prinsterer [/auteurs/auteur.php?id=groe009]– Auteursrechtvrij [/titels/gebruiksvoorwaarden.php?id=groe009arch04]
+
+  
+Vorige [groe009arch04_01_0062.php] Volgende [groe009arch04_01_0064.php]
+ 
+ 
+ 	 
+	
+
+	
+   
+
+### † Lettre CDXLIV. 
+ Les Comtes Jean, Louis, et Henri de Nassau au Prince d'Orange. Affaires d'Allemagne en rapport avec celles des Pars-Bas.
+ 
+*** Cette Lettre, dont malheureusement plusieurs passages n'ont pu être déchiffrés, est relative à des affaires très importantes; d'abord à des entreprises sur Bergen op Zoom et Groningue; puis à une Ligue (Graveneinigung) qui, surtout aussi par les soins des Comtes de Nassau, s'étoit formée; à ce qu'il paroit, moins exclusivement en faveur des Pays-Bas, que contre la Maison d'Autriche en général. Non seulement des Electeurs, Princes, et Villes d'Allemagne, mais aussi les Rois de France et de Pologne, et surtout les Dissidents Polonois sembloient y vouloir prendre part. 
+ Dathenus venoit d'arriver auprès du Prince. Ce prédicateur réformé, en s'élevant plus tard avec impétuosité contre toute tolérance envers le Papisme, et en s'opposant à toute négociation avec le Duc d'Anjou, traversa les desseins du Prince d'Orange, excita le mécontentement des Catholiques, dont il semble avoir méconnu les droits, hâta la défection des Provinces Wallonnes, et mérita, sous quelques rapports, plusieurs des reproches qu'on lui a prodigués. Néanmoins on n'auroit pas dû parler de lui, 
+
+	
+
+	
+ [pagina 218]  
+[p. 218]
+
+	
+
+	
+
+ Ga naar margenoot+ [#487]comme on l'a souvent fait, avec dédain et mépris. Son véritable nom étoit probablement Pierre de Bergen (Petrus Montanus); il fut nommé P. d' Athènes, à cause de ses connoissances philologiques. Moine d'un couvent à Poperinghe en Flandres, où sans doute il auroit par ses talents pu acquérir une grande influence, il embrassa de boune heure les doctrines Evangéliques, et dut se réfugier dans le Palatinat. En 1555 Pasteur de la communauté réformée des Pays-Bas à Francfort, l'influence croissante du Luthéranisme le détermina à se retirer à Frankenthal. L'année 1566 le rappela dans la Belgique, où il prècha, surtout en Flandre, devant des milliers d'auditeurs. Après la dispersion des Calvinistes, l'Electeur Palatin l'accueillit à Heidelberg, et le consultoit souvent dans les affaires Ecclésiastiques. Il avoit été deputé au Colloque de Maulbron en 1564; Struvens Pfältzische Kirchenhistorie, p. 149. En 1570 il étoit chapelain de l'Electeur (Hoffprediger, l.l. 217). En 1571 il assista au Colloque de Frankenthal: l.l. 242. Il présidoit le Synode à Wésel en 1568. Voulant maintenir sévèrement la discipline Ecclésiastique, il eut des disputes très violentes avec Erastus, Conseiller de l'Electeur, homme, à ce qu'il paroît, de beaucoup de mérite, mais qui désiroit peut-être trop d'indulgence à cet égard. Dathenus jouissoit de l'estime et de la confiance des Comtes de Nassau et du Prince d'Orange. Th. de Bèze, écrivant en 1572, à Tilius, l'appelle notre Dathenus: ‘de Datheno nostro valde miror me nihil audire.’ Epist. sel. Belg. p. 609. L'Eglise Réformée des Pays-Bas lui a de grandes obligations, moins pour sa version des Pseaumes, faite à la hâte et d'après celle de Marot et de Bèze, très défectueuse et surtout fort peu poétique, que pour la part qu'il eut à l'introduction de l'excellent Catéchisme de Heidelberg et de plusieurs écrits liturgiques. Les dernières années de sa vie font aussi son éloge. Réduit à s'expatrier de nouveau en 1584, il vécut à Elbing en Pologne, tranquille, aimé, et persévérant dans la Foi. Il y mourut en 1590. ‘Hy is te Elbing van de Magistraet seer eerlyk en wel ontfangen en voor Doctor in de Medecynen aengenomen, en heeft aldaer de reste syns levens in ruste en stilheid, wel bemint zynde, overgebracht. Hy is aldaer seer eerlyk begra-
+
+	
+
+	
+ [pagina 219]  
+[p. 219]
+
+	
+
+	
+
+ Ga naar margenoot+ [#488]ven in de Peerle Kerke, het lyk gevolgt zynde van alle de Magistraten en menigte van volke, so burgers als Nederlanders aldaer wonende, en heeft hem de Magistraet aldaer doen maken een eerlyk graf, daer op zyn figure, so lange hy was, in steen gehouden is .. Doch gelyk hem de nyd in zyn leven heeft vervolgt, so bebben hem zyne wederpartyen noch na zynen dood beschuldigt dat hy een Arriaen was geworden; maer de Magistraten aldaer hen daerop geinformeerd hebbende,.... gaven dese getuigenisse van hem, als dat hy in de leere die hy so lange jaren in de Paltz en elders gepredikt en de gemeente geleert hadde, stantvastig gebleven en gestorven is.’ Bor, II. 519a. Touchant ses relations avec le Prince, voici sa réponse dans un interrogatoire qu'il subit en 1584 et lequel semble porter des marques évidentes de franchise et de sincérité. ‘Hy betuycht dat hy Syn Excellentie noyt gehaetet, maer deselve op zyn eygen Borse, zonder eenige recompensie, met duysent peryckelen syns levens veel jaren getrouwelick gedient heeft, en dat hy Godt van herten voor syn Excellenties welvaert altyts gebeden heeft.’ 's Gravezande, tweehonderdjarige Gedachtenis van het Synode te Wesel, p. 154. Tel est l'homme que Hooft, souvent trop peu circonspect dans ses invectives comme dans ses panégyriques, ne craint pas d'appeler den verloopen monnik uit Poperingen, et que beaucoup de personnes ne connoissent que par quelques expressions de ses Pseaumes dont on s'amuse, parcequ'elles sont, ou effectivement moins bien choisies, ou surannées, ou mal comprises de nos jours par ignorance du dialecte Flamand. Il y eut en lui moins violence de caractère qu'un zêle quelquefois mal dirigé.
+ 
+Gnediger Herr. E.G. schreiben de dato Delfft den 2ten Junius haben meine Bruedere und ich alhie entpfangen, und daraus E.G. und der gantzen sachen zustandt mit freuden vernommen; können Gott dem Almechtigen für die biszhero über menschliche zuversicht vielfältige erzeigte grosze gnad und wunder, nimmer gnucksam volndancken.
+ 
+	
+
+	
+ [pagina 220]  
+[p. 220]
+
+	
+
+	
+ 
+ Ga naar margenoot+ [#489]Wie es dieser ortt mitt unsz und allen sachen geschaffen, das werden E.G., unsers verhoffens, seithero ausz unsern schreiben von dem Bottelierer und Dateno, haben verstanden.
+ 
+Das E.G. wir so langsam schreiben, geschicht fürwahr nicht ausz vergesz oder unachtsamkeit, sondern von wegen vieles verreysens und manchfältiger geschefft, der zuversicht und hofnung E.G. und die beträngten armen Niederlände sollen desz mit der zeit nicht allein gemäsz befinden, sondern solche mühe solle, geliebt's Gott, dem algemeinen Vatterlandt zu nützs und frommen gereichen, darzu der Almechtige Seine gnade und segen wolle verleyhen.
+ 
+Die schwere last, sorg, mühe, arbeit, und gefahr, so E.G. biszhero auf sich liegen gehatt und noch haben, können wir und diejenige so von den sachen etwas wiszen, etlicher maszen erachten, ist aber sonsten gewiszlich ungläublich; dieweil aber dieser handel nicht menschen, sondern Gottes werck und sach ist, darzu E.G. sich nicht gedrungen, sondern Gott der Almechtige darzu beruffen und als mit den haren herbey gezogen hat, E.G. auch im werck und mit der that Gottes hilf, gnade, und wander scheinbarlich befinden, so haben E.G. und wir alle Ime erstlich höchlich zu dancken, und volgents Seiner vetterlichen hülffe, beystandts, schütz, und schirms zu erfrewen und getrösten, unangesehen wie beschwerlich und geferlich sich auch die sachenn ahnlaszenn.
+ 
+Den verlust mit Seras haben wir gantz ungern vernommen; dieweil aber ohne den willen Gottes nichts, ja alles den Seinen zum besten geschicht, mueszen und 
+
+	
+
+	
+ [pagina 221]  
+[p. 221]
+
+	
+
+	
+
+ Ga naar margenoot+ [#490]sollen wir in deme und anderm auch damit zufriden sein. Gott der Herr kan balt andere erwecken, oder sonst mittel schicken darauf wir nicht gedencken, wie wir dan biszhero, Gott lob, vielfältig erfaren.
+ 
+Was seithero E.G. schreibens sich zugetragen, wie es in Sanct-Gertrudenbergk geschaffen, ob des Herzogen von Alba volck vor Alckmar abgezogen, item, ob er ahn seinen schieffen abermals schaden gelietten, und denen von Ambsterdam soviel fruchtt genommen wie hierauszen gesagt wirdt, hoffen wir in kurtzen von E.G. berichtet zu werden; dan obwol wir teglichs hien und wieder umb zeittung und particulariteten von hohen- und niedern standts personen, so E.G. und der gantzen sachen wol gewogen, und sowol von den Bäpstischen als Evangelischen seint, ahngelangt worden, so schreiben meine brueder und ich doch keine zeittunge von uns, es sey dan das die von E.G. oder derselben dhiener kommen; derwegen dan, vieler uhrsachen halben, nütz und gutt were, wie da E.L. die verordnung thun könten, das uns allerhandt particulariteten zugeschrieben würden.
+ 
+E.G. mögen's gewiszlich glauben und haben wir alle dem Almechtigen darumb zu dancken, das E.G. und die gantze sach je lenger je mehr gönder und beyfals bekommen und mehr dan sie glauben können; hoffe sie sollen's in kurtzen, geliebt's Gott, mit der thatt befinden; dan den leuthen beginnen nhunmehr die augen und hertzen etlicher maszen aufzugehen, und des gegentheils anschlege und untrew bekant zu werden, davon ich aber dismals, kürtze der zeitt halben, nicht schreiben kan.
+ 
+Soviel den secours und bewuste entreprinse betrift, 
+
+	
+
+	
+ [pagina 222]  
+[p. 222]
+
+	
+
+	
+
+ Ga naar margenoot+ [#491]werden E.G. nhumehr von der bekannten persohn allen bericht haben entfangen, nemlich Dateno.
+ 
+Wir seint resolvirt alsbalt das geld, daruf man alle stundt alhie hoffen und demselbigen albereit auch leut und wagen entgegen geschickt, nhur ahnkumpt, das so balt zur sachen mit Grönningen soll gethan, gewisser tag und walstadt bestimmt, und das geld gespielt werden, und wirdt mit bruder der nach solchen ahn die örtte ein zeitlangk sich begeben, und zuvor nothwendige versehung und bestellung thun, wie E.G. hiervon, ob Gott will, die obgemelte persohn nhumehr genucksam wirdt berichtet haben. begert das uff dert mögen. [Phit] so E.G. hierzwischen und nach der ahngezeigten ahnkunft sobalt vol ssen gemacht werden, verschafft, und darzu 11 haupter, damit eins das ander im fall der noth versehen könnte, geordnet, und denen die ziffer so wir brauchen auch mit mitgeteilt würden, damit man, wan's vonnöthen, zuschreiben könne meinung ist, die schlachtordnung soll man uff Bergen op Zoom leichtlich können von ScholbichGa naar voetnoot1 [#492], welches ein insel ist, bringen.
+ 
+Wir haben aus Französischen schreibenGa naar voetnoot(1) [#493], das das bewust geld auf diszmal alles mit einander ahn eiteln dicken pfenningen oder [testguGa naar voetnoot2 [#494]] erlegt werden, seint derhalben alle stunde ferner zeitung gewertig. Wir wollen nachdenckens haben, ob irgents auff fr.Ga naar voetnoot3 [#495] müntz noch daran etwas weiters zu erhalten und zu gewinnen. E.G. wollen hierinnen auch berathen sein.
+ 
+	
+
+	
+ [pagina 223]  
+[p. 223]
+
+	
+
+	
+ 
+ Ga naar margenoot+ [#496]Von zeittungen weisz E.G. ich nichts sonderlichs zu schreiben, dan das dem Herzogen von Alba, den 6 und 7 hujus, fünftzehen wagen, so mit pulver geladen, nicht weith von Speyr im rauch ghen himmel geschicket wordenGa naar voetnoot(1) [#497]. Es seint vorgestern noch etliche und dreisig thonnen zu Franckfurt ankommen, seint zwischen wegen etlich mahl ahngesprengt worden, ist aber nicht gelungen; hoffe es solle denselben nicht beszer als den andern ergehen. Wer es gethan und warumb es geschehen, haben E.G. hierneben zu sehen. ist gestern zue ghen gezogen lest ihme die sach, Gott lob, nhumehr ernstlich ahngelegen sein, wiewol es fürwahr, bis man's so fern bracht, viele mühe genommen. Der Almechtige wolle ferner gnade verleihen.
+ 
+Bey dem Herzog von Sachsen und ist [w]illens, nicht allein E.G. und sachen zu sollicitiren, sondern auch die election eines Römischen Königs, welche der Keyser gern auf seiner söhne einen bringen wollte, zu hindern. Es ist derenthalben ein zeit-
+
+	
+
+	
+ [pagina 224]  
+[p. 224]
+
+	
+
+	
+
+ Ga naar margenoot+ [#498]langk hefftig practiciret und derhalben auch hart auff ein Reichstag gedrungen worden. Wir haben aber, Gott lob, dermaszen, mit hülf des Almechtigen, darinnen gearbeitet und hien und wieder underbauung gethan, das verhoffentlich deren keines so balt ein vortgangk gewinnen soll. zeuget diesen morgen Kölln der hofnung die sachen, vermittelst Götlicher gnaden, dahien zu handlen das er sich nicht allein vom Herzog von Alba absondern, sondern auch in ehestand begeben, Churfürst bleiben, und zu unserer religion thun wolleGa naar voetnoot(1) [#499]; wie dan davon E.G. von der oft ahngeregten persohn verhoffentlich werden haben vernommen. Es laszen sich die sachen gleichwol seltzam ahnsehen, wan man aber die umbstende und gelegenheit ahnsihet, seint sie sogar unmöglich nicht zu achten. Der Almechtige ist zu bitten das Er gnade und segen wolle verleihen.
+ 
+Es lest sich, Gott lob, unsere Graveneinigung gar wohl ahn; dan nachdem wir in den vorigen durchzügen unsz alhie nicht haben laszen abschrecken, hat es hien und wieder nicht gering nachdencken verursacht, und der sachen ein solch ahnsehen bracht das seithero nicht allein etliche Gräffen, sondern auch Chur- und Fürsten, beneben etlichen Städten und Edeleuthen, ja auch der König in Franckreich und der Bruder, König von Polenn, und sonderlich die religionsverwante in Pollen derwegen mit unsz in handlung seint. In summa, wo wir das glück nicht selber muthwillig ausschlagen und gar blindt sein 
+
+	
+
+	
+ [pagina 225]  
+[p. 225]
+
+	
+
+	
+
+ Ga naar margenoot+ [#500]wollen, so können wir, wie man zu sagen pflegt, über Gott nicht klagen. Der Almechtige gebe das wir unsz deszelben nhur recht gebrauchen. helt sich wol und thut in warheit viel; wir haben aber biszweilen den schaumhedt abthun, und gar Teutsch reden, und hien und wieder grob seyn mueszen, wie es dan noch nicht lang das mit Kayserlichen gesandten von E.G. und der algemeinen sachen rundt ist geredt worden.
+ 
+Nach und [an]kunft, werden E.G., geliebt's Gott, allerley vernehmen. Eile halben, kan E.G. ich diszmals ferner nicht schreiben.
+ 
+Wir seindt nhun etlichmal gewarnet worden aus das man sich für Otto Plato soll hueten; wiewol ich's nhun nicht wol glauben kan, so ist's doch auch nicht zu verachten. ist willig und urbietig, ja hat ein verlangens und lusten dazu dasz er mit bruder möge mit vortziehen, und sonderlich den handel in Friszland treiben helffen, wan nhur das urlaub von seinem meister zu erhalten; und ist man deszhalben in handlung.
+ 
+Wan E.G. reysiger knechte bedürffen, begert Erich wiederumb zu E.G. Es kommen teglichs viel guter leuthe von hauptleuthen und allerley bevelchsleuthen, auch sonsten Deutschen und Welschen Kriegsleuthen, begeren vorschrifften ahn E.G. Bitt derhalben E.G. wollen uns wes wir hierinnen zu erhalten, laszen wiszen. begert meiner, kan aber nicht wiszen warumb, halte es aber mehr vor ein gutt dan ein bösz zeichen.
+ 
+Nachdem wir auch oftmals ahngelangt werden was 
+
+	
+
+	
+ [pagina 226]  
+[p. 226]
+
+	
+
+	
+
+ Ga naar margenoot+ [#501]für conditiones pacis fürzuschlagen, so könten E.G., da derselben hierinnen irgend etwas bedenklichs vorfallen würde, unsz desselben verstendigen, uns darnach haben zu richten.
+ 
+E.G. haben als derselbigen gehorsame thiener uns mit allen trewen altzeit bereitt und willig, und thu hiemit demselben in Seinen gnedigen schütz und schirm, mit wünschung aller glückseligen wolfarth, bevelen. Datum Dillenbergk, am 22sten Octobris Ao 1573.
+
+	 
+ 
+ 
+
+### 
+
+ 
+  
+ margenoot+ [#487T] 
+ 
+1573. Octobre.
+  
+ 
+
+ 
+  
+ margenoot+ [#488T] 
+ 
+1573. Octobre.
+  
+ 
+
+ 
+  
+ margenoot+ [#489T] 
+ 
+1573. Octobre.
+  
+ 
+
+ 
+  
+ margenoot+ [#490T] 
+ 
+1573. Octobre.
+  
+ 
+
+ 
+  
+ margenoot+ [#491T] 
+ 
+1573. Octobre.
+  
+ 
+ 
+ 
+  
+ voetnoot1 [#492T] 
+ 
+Schonwen (?).
+  
+ 
+ 
+ 
+  
+ voetnoot(1) [#493T] 
+ 
+ Fr. schreiben. Voyez la Lettre 441.
+  
+ 
+ 
+ 
+  
+ voetnoot2 [#494T] 
+ 
+escus (?).
+  
+ 
+ 
+ 
+  
+ voetnoot3 [#495T] 
+ 
+französische.
+  
+ 
+
+ 
+  
+ margenoot+ [#496T] 
+ 
+1573. Octobre.
+  
+ 
+ 
+ 
+  
+ voetnoot(1) [#497T] 
+ 
+ geschicket worden. ‘De Hertog van Alba heeft eenige wagens met 50000 pond buspoeder geladen uit Duytsland ontboden, dewelke gekomen synde door des Palsgraven land, so heeft Hertog Hans Casimirus die metten Prince van Orangien en Grave Lodewyk in verbond was) 't selve buskruit op een heide doen ontladen, en met een lopende vyer met eigender hand verbrand ... Hy heeft bekent 't selve syn werk te wesen door een geschrift gegeven binnen Heidelberg, den 12 oct.... om te beletten meerder bloedstortinge van vele onnoesle menschen.’ Bor, 472b. C'étoit apparemment l'Empereur qui avoit fait au Duc cet envoi: ‘Imperator mittit Albano magnam vim pulveris tormentarii.’ Languet, Epist. secr. I. 196.
+  
+ 
+
+ 
+  
+ margenoot+ [#498T] 
+ 
+1573. Octobre.
+  
+ 
+ 
+ 
+  
+ voetnoot(1) [#499T] 
+ 
+ thun wolle. L'Electeur de Cologne, qui en 1577 épousa une Comtesse d'Aremberg (Tom. III. p. 443), n'accomplit pas les autres parties de ce triple projet.
+  
+ 
+
+ 
+  
+ margenoot+ [#500T] 
+ 
+1573. Octobre.
+  
+ 
+
+ 
+  
+ margenoot+ [#501T] 
+ 
+1573. Octobre.
+  
+ 
+ 
+ 
+ 
+
+  
+ 
+ 
+
+ 
+Vorige [groe009arch04_01_0062.php] Volgende [groe009arch04_01_0064.php]
+
+  
+    
+
+## Footer navigatie
+ 
+ 
+     
+  
+ 
+
+### Over DBNL
+ 
+ 
+ Wat is DBNL? [/overdbnl/index.php] 
+ 
+ Over ons [/overdbnl/organisatie.php] 
+ 
+ Selectie- en editieverantwoording [/overdbnl/selectie.php] 
+ 
+ 
+ 
+ 
+
+### Voor gebruikers
+ 
+ 
+ Gebruiksvoorwaarden/Terms of Use [/overdbnl/copyright.php] 
+ 
+ Informatie voor rechthebbenden [/overdbnl/rechthebbenden.php] 
+ 
+ Disclaimer [/overdbnl/disclaimer.php] 
+ 
+ Privacy [/overdbnl/privacyverklaring.php] 
+ 
+ Toegankelijkheid [/toegankelijkheid/index.php] 
+ 
+ Responsible disclosure [/overdbnl/responsible-disclosure.php] 
+ 
+ 
+ 
+ 
+
+### Contact
+ 
+ 
+ Contactformulier [/overdbnl/vragen.php] 
+ 
+ Veelgestelde vragen [/overdbnl/faq.php] 
+ 
+ Vacatures [/overdbnl/stages.php] 
+ 
+  
+  
+ 
+ 
+ 
+
+### Partners
+ 
+ 
+   Ga naar kb.nl   [https://www.kb.nl]  
+ 
+   Ga naar taalunie.org   [https://www.taalunie.org]  
+ 
+   Ga naar Bibliothecair Erfgoed.be   [https://bibliothecairerfgoed.be]  
+ 
+  
+
+ 
+ 
+
+### Over het gehele werk
+
+#### titels
+
+ Archives ou correspondance inédite de la maison d'Orange-Nassau (première série) [/titels/titel.php?id=groe009arch00]
+
+#### auteurs
+
+over  Willem van Oranje [/auteurs/auteur.php?id=will019]
+
+over Philips van Marnix van Sint Aldegonde [/auteurs/auteur.php?id=marn001]
+
+#### plaatsen
+
+over Haarlem [/atlas/plaats.php?id=haarl001]
+
+over Alkmaar [/atlas/plaats.php?id=alkma001]
+
+#### landen
+
+over Frankrijk [/buitengaats/land.php?id=frank01]
+
+over Duitsland [/buitengaats/land.php?id=duits01]
+
+over Groot-Brittannië (en Noord-Ierland) [/buitengaats/land.php?id=groot01]
+
+over Spanje [/buitengaats/land.php?id=spanj01]
+
+### Over dit hoofdstuk/artikel
+
+#### datums
+
+22 oktober 1573 [/calendarium/?d=15731022]
