@@ -144,6 +144,67 @@ the 1000s-5000s this letter uses, so none is a plausible fit by range alone. Aym
 published key for DECODE R4332 (1637, Oxenstierna circle) whose value range was not checked here (out of this
 brief's "do NOT apply any key" instruction — a solver's first cheap test, not decoding).
 
+## Original letter hunt, 24 September 2026
+
+Worker brief `.claude/briefs/runs/2026-09-24-lane-r-w1-original.md` (LANE R worker R5). Job: is the manuscript
+of Gustav II Adolf's letter to Axel Oxenstierna, Nürnberg 23 July 1632 -- or a contemporary copy -- digitised at
+Riksarkivet, and does it carry a decipherment written over or beside the cipher? Not a key hunt (that is the
+"Key hunt, 24 September 2026" section above, a separate worker); this worker looked for the letter itself.
+Host: `data.riksarkivet.se` Sök-API only, per brief. **Verdict: not digitised anywhere found; no route to a
+decipherment on the leaf this session.**
+
+**The received copy, identified.** `data.riksarkivet.se/api/records?text=Gustaf+Adolf&year_min=1632&year_max=1632`
+surfaced `SE/RA/720701/II/01/B/I/E 614`, caption "Gustaf II Adolf", dated 1630-1632, inside the **Oxenstiernska
+samlingen** (`SE/RA/720701`) hierarchy: Oxenstiernska samlingen > Oxenstierna af Södermöre > Axel Oxenstierna >
+Inkomna brev och ansökningar > Furstars, ämbetsmäns och enskilda personer brev och ansökningar. This is Axel
+Oxenstierna's own **incoming**-letters series -- the recipient's copy, i.e. the actual manuscript the King's
+letter of 23 July 1632 would be bound into. Its catalogue note reads verbatim: "Breven finns tryckta i Axel
+Oxenstiernas skrifter, Avd. II, Band 1." (the letters are printed in Axel Oxenstiernas skrifter, Section II,
+Volume 1) -- confirming this bound volume, not some other copy, is Styffe's own source for letter no. 602.
+`onlyDigitisedMaterials: false` on the record; confirmed at the RDF/JSON-LD level
+(`data.riksarkivet.se/archive/cigYyX8462FTV8KInbNGj6.jsonld`, fetched directly): its only `rico:hasInstantiation`
+is typed `Analog`, no IIIF/image link in `_links` (contrast `SE/RA/1112.1/B/176` below, which does carry one).
+No item-level (per-letter) breakdown is exposed by the API -- E 614 is catalogued as one bound volume spanning
+1630-1632, not indexed letter by letter, so its 23 July 1632 leaf cannot be located or previewed without opening
+the physical volume. **Not digitised. This is the strongest candidate for where an interlinear or marginal
+decipherment, if Oxenstierna's own chancery made one on receipt, would actually be -- and it cannot be checked
+this session.**
+
+**Rikskansliets koncept/registratur, checked and ruled a different channel.** `text=Rikskansliets+koncept`: 0
+hits, that exact series name does not exist in the catalogue. The broader `Riksregistraturet` fonds
+(`SE/RA/1112.1`, 1523-1718) does exist and *is* digitised (`onlyDigitisedMaterials: true`); its 1632 volume is
+`SE/RA/1112.1/B/176` (`text=1632` restricted to `facet=PartOfArchive:Riksregistraturet`, single hit), with a IIIF
+manifest already resolvable (`https://lbiiif.riksarkivet.se/arkis!A0038671/manifest`, not fetched -- see below).
+But its catalogue note is "rådets reg." (the Council's own register) and its provenance is "Kunglig Majestäts
+kansli" -- this is the **domestic** chancery/Council's register of outgoing correspondence issued from Stockholm
+while the King campaigned in Germany, not a record of the King's own field letters to Oxenstierna in the German
+theatre. No text search (`text=Fältkansliet`, `text=Faltkansliet`) turned up a separate digitised field-chancery
+or foreign-correspondence register for 1632 that could plausibly carry this specific letter. **Judged not a
+match by provenance and content, not fetched** -- fetching ~300+ folio images of an unrelated administrative
+register to search for one letter that would not be there is not what this brief's "<=120 requests" budget is
+for; flagged here rather than pursued, per the "stop when the brief is met" usage rule.
+
+**Horn duplicates, re-confirmed.** `SE/RA/720095/05/01/E 2348` ("Gustaf II Adolfs brev till Gustaf Horn",
+1631-1632) reappears in the `text=Gustaf+II+Adolf&year_min=1632&year_max=1632` sweep above, still
+`onlyDigitisedMaterials: false` -- same as the 24 Sept key-hunt worker already found for both E 2348 and E 2350.
+No new information; not re-queried further to avoid duplicating that worker's session.
+
+**Verdict for the brief's question: no.** Neither the manuscript this letter would be bound in (E 614), nor
+either Horn duplicate (E 2348/E 2350), nor a plausible field-chancery register is digitised. The one digitised
+volume found in this circle (`SE/RA/1112.1/B/176`, the Council's 1632 Stockholm registratur) is real and
+IIIF-served but is the wrong archival channel for this specific royal field letter -- its images were not
+fetched. **No interlinear or marginal decipherment could be checked this session; nothing was seen, because
+nothing digitised was found to look at.** REQUEST.md item 3 below adds E 614 as a physical-access target.
+
+**Requests this session:** `data.riksarkivet.se` about 37 attempts (roughly 25 succeeded 200 on first or retry;
+the rest hit the session's known intermittent `SSL_ERROR_SYSCALL` through the agent proxy -- confirmed
+transient, not a block: a plain reachability probe alternated 200/000 on requests seconds apart with no relay
+failure logged by the proxy status endpoint; every failed query was eventually retried to a 200 except the two
+noted below, each after >=2 s, forcing `--tlsv1.2` per the existing NOTES.md guidance); `sok.riksarkivet.se` 1
+request (`/arkiv/<id>` for E 614's html link, 302 to the captcha gate, not pursued further -- API/JSON-LD already
+gave the needed metadata). No image fetches (nothing digitised matched). No credentials, no subagents, no
+decoding, no novelty wording.
+
 ## Next steps (for a later solver/access worker, not this brief)
 
 - Locate the "duplett"/"triplett" Horn letters the footnote names, in case one is transcribed elsewhere.
