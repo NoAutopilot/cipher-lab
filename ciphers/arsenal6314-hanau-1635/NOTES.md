@@ -1,4 +1,6 @@
-open
+blocked
+
+Status set to blocked by LANE G2, 24 Sept 2026 09:42 UTC: not digitised; REQUEST.md and ASKS row.
 
 # Instruction to the comte Jacob de Hanau, 28 October 1635 -- Bibliothèque de l'Arsenal, Ms-6314
 

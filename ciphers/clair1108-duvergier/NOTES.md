@@ -1,4 +1,6 @@
-partial
+solved
+
+Status set to solved by LANE G2, 24 Sept 2026 09:42 UTC (N0, decipherment on the leaf; clair1067 precedent). Nine groups of letter B and fol.247v are still unread; see the follow-ups.
 
 Novelty: **N0** for letters A (26 Mar 1696) and B (fol.261v-262r), decipherment on the leaf; nine groups of B unread. See AUDIT.md (Verifier V1, 24 Sept 2026).
 

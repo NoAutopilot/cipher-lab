@@ -1347,6 +1347,14 @@
    "grade": "C 2512, I 267, M 658, U 575 of 4012 cipher signs; partial; novelty N3 (AUDIT.md, 24 Sept 2026)",
    "line": "System: letters, five numbers each in blocks from n; numbers above 120 are names and nulls. Key aligned from WVO 4613 and 4615 against their contemporary decipherments. 4610, 4611 and 4616 read as French in stretches; most of 4612's keyed runs do not yet read as French. No letter reads straight through. N3: no prior plaintext or decipherment of these four letters was located in the sources listed in AUDIT.md; Orange's printed replies (Groen IV, Lettres CDXXVII, CDXXXIII, CDLXXXIV) answer 4610, 4611 and 4616.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "recovery",
+   "title": "Brienne to Servien, Paris 10 Oct 1659 (BnF fr.5160 folio 67): read with the 1659 key recovered from the office's November letters",
+   "grade": "S 107, M 416, I 9, U 14 of 546 groups (no H or C on this letter); novelty not yet classified",
+   "line": "A cipher letter not recorded in earlier passes over fr.5160, found by the canvas walk. key_1659 (from the contemporary decipherment of f.86-88) keys 95.8% of its groups and beats 200 shuffled keys at word level (0.721 vs max 0.647). Subject: Savoy, Madame Royale withdrawing from affairs, the Duke's marriage.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653"
   }
  ],
  "lanes": [
