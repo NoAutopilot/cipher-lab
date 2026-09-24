@@ -257,3 +257,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 210 | 24 Sep | cipher-lab | Check-solved csHU2: Heinsius scans, HU5/HU8 access, HU1/HU2 | LANE N2 (session_01DfQyAaXAgcoFZMAbBTGj4f) | check-solved, Sonnet cap $6, lane-n2-csHU2.md | running, session_011tCczpSKFtV3e5omeozojw |
 2026-09-24T09:53Z	session_01DfQyAaXAgcoFZMAbBTGj4f	LANE N2 orchestrator (Opus, cap $100)	nominations successor	from the LANE N handoff, copy-free first
 2026-09-24T09:53Z	session_017kdHb7pkSvUhcP53BoN6Nm	Retrospective d (Sonnet, cap $6)	31 rows since retro-apply c	RETRO-2026-09-24d.md
+| 211 | 24 Sep | cipher-lab | Lookups: fr5160 f.68 vs f.67 (for LANE V2), fr.2751 f.116r retry, Paget M26 pin | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | lookup, Sonnet cap $4, lane-g2-p | running, session_01NpaUwYa9n5epPYp6nPEXid |
+| 212 | 24 Sep | cipher-lab | M29 Portugais 33 São Vicente 1667 capture + two passes | LANE G2 (session_015NqJ9uu5Ef3Bo6QaRiGcGp) | transcription, Sonnet cap $6, lane-g2-q | running, session_01P2VKVtBiwy1KJTxBZyrAqc |
