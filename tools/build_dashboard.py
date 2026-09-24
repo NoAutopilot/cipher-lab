@@ -69,8 +69,9 @@ def load_drafts():
             continue
         head, body = parse_headers(open(os.path.join("outreach", fn), encoding="utf-8").read())
         st = head.get("status", "")
-        kind = "ready" if st.startswith("ready") else "drafted" if st.startswith("drafted") else "done" if re.match(r"^(sent|done|answered|posted)", st) else "other"
-        if kind == "other":
+        kind = ("ready" if st.startswith("ready") else "drafted" if st.startswith("drafted") else "sent" if re.match(r"^(sent|posted)", st)
+                else "done" if re.match(r"^(done|answered|superseded)", st) else "other")
+        if kind in ("other", "done"):
             continue
         links = {}
         for part in head.get("links", "").split(";"):
@@ -163,7 +164,8 @@ def audits(r):
 
 
 def folder_of(r):
-    return r["link"].replace(REPO, "").strip("/")
+    m = re.search(r"(ciphers/[\w.-]+)", r.get("link", ""))
+    return m.group(1) if m else r["link"].replace(REPO, "").strip("/")
 
 
 def item_tokens(s):
@@ -201,7 +203,7 @@ def so_for(r):
 
 def drafts_for(r):
     f = folder_of(r)
-    return [x for x in drafts if f in x["targets"] and x["kind"] != "done"]
+    return [x for x in drafts if f in x["targets"]]
 
 
 def rating_kind(rating):
@@ -302,7 +304,7 @@ def reading_row(r, idx):
             chips += f'<span class="chip so-{st}" title="{E(so[0]["label"] + ((": " + so[0]["outcome"]) if so[0]["outcome"] else ""))}">{lab}</span>'
     if dr:
         k = dr[0]["kind"]
-        chips += f'<span class="chip out-{k}">{"ready to send" if k == "ready" else "note drafted"}</span>'
+        chips += f'<span class="chip out-{k}">{ {"ready": "ready to send", "drafted": "note drafted", "sent": "sent, awaiting reply"}[k] }</span>'
     unique = ' unique' if (n >= 3 and a >= 2) else ''
     # detail
     parts = [f'<div class="dz"><h4>What it is</h4><p>{E(r.get("line", ""))}</p><p class="mono muted">{E(r.get("grade", ""))}</p></div>']
@@ -316,7 +318,7 @@ def reading_row(r, idx):
         if len(x["targets"]) > 1:
             names = [t.split("/")[-1] for t in x["targets"]]
             covers = f'<p class="muted small">One note covers {len(names)} readings ({E(", ".join(names))}); send it once and tick it once.</p>'
-        parts.append(f'<div class="dz"><h4>Who to tell</h4><p><b>{E(x["to"])}</b> <span class="chip out-{x["kind"]}">{"ready to send" if x["kind"] == "ready" else "drafted"}</span></p>' + covers +
+        parts.append(f'<div class="dz"><h4>Who to tell</h4><p><b>{E(x["to"])}</b> <span class="chip out-{x["kind"]}">{ {"ready": "ready to send", "drafted": "drafted", "sent": "sent, awaiting reply"}[x["kind"]] }</span></p>' + covers +
                      f'<p class="muted small">{E(x["status"])}</p>'
                      + copy_block(f"cp-{rid}-{slug(x['slug'])}", x["to"], x["subject"], x["text"]) + sent_box + '</div>')
     links = {"folder": r["link"], "audit": r["link"].rstrip("/") + "/AUDIT.md"}
@@ -342,6 +344,7 @@ other_rows = "".join(f'<li><span class="chip k">{E(KIND.get(r["kind"], r["kind"]
 
 ready = [x for x in drafts if x["kind"] == "ready"]
 drafted = [x for x in drafts if x["kind"] == "drafted"]
+sent = [x for x in drafts if x["kind"] == "sent"]
 you_targets = [t for t in targets_all if t.get("state") == "you"]
 
 
@@ -357,6 +360,7 @@ def desk_item(x):
 
 desk_ready = "".join(desk_item(x) for x in ready) or '<li class="muted">nothing waiting on you right now</li>'
 desk_waiting = "".join(desk_item(x) for x in drafted)
+desk_sent = "".join(f'<li class="task sentrow"><span class="dot on"></span><div><div class="tsubj">{E(x["subject"])}</div><div class="tto">To: {E(x["to"])}</div><div class="tmeta">{E(x["status"])}</div></div></li>' for x in sent)
 desk_targets = "".join(f'<li class="task"><input type="checkbox" disabled><div><div class="tsubj">{E(t["name"])} <span class="mono muted">{E(t.get("ref", ""))}</span></div><div class="tto">{E(t.get("next", ""))}</div></div></li>' for t in you_targets)
 asks_rows = "".join(f'<li><span class="mono muted">row {a["row"]}</span> {E(short(a["what"], 140))} <span class="muted small">· {E(a["status"][:70])}</span></li>' for a in asks)
 
@@ -418,7 +422,7 @@ section[hidden]{display:none}
 .chip{display:inline-block;font-size:0.74rem;font-weight:600;padding:2px 7px;border-radius:3px;background:var(--line);color:var(--ink);letter-spacing:0.01em}
 .chip.r-sub{background:var(--good-soft);color:var(--good)} .chip.r-conf{background:var(--accent-soft);color:var(--accent)} .chip.r-form,.chip.c-aud{background:transparent;border:1px solid var(--line);color:var(--muted)}
 .chip.so-queued{color:var(--muted);border:1px dashed var(--line);background:transparent} .chip.so-posted{background:var(--warn-soft);color:var(--warn)} .chip.so-checked{background:var(--good-soft);color:var(--good)}
-.chip.out-ready{background:var(--good);color:#fff} .chip.out-drafted{background:var(--warn-soft);color:var(--warn)} .chip.k{background:var(--accent-soft);color:var(--accent)}
+.chip.out-ready{background:var(--good);color:#fff} .chip.out-sent{background:var(--accent-soft);color:var(--accent)} .task.sentrow{grid-template-columns:12px minmax(0,1fr);opacity:0.85} .chip.out-drafted{background:var(--warn-soft);color:var(--warn)} .chip.k{background:var(--accent-soft);color:var(--accent)}
 .rbody{padding:4px 4px 18px 56px;display:grid;gap:14px;font-size:0.95rem}
 @media (max-width:600px){.rbody{padding-left:4px}}
 .dz p{max-width:70ch} .memo p{max-width:70ch} .rating{font-weight:600} .rating.r-sub{color:var(--good)} .rating.r-conf{color:var(--accent)} .rating.r-form{color:var(--muted)}
@@ -556,6 +560,7 @@ page = f'''<title>Cipher Lab Board</title>
   <h3>Send now</h3>
   <ul class="tasks">{desk_ready}</ul>
   {('<h3>Waiting on one more step</h3><ul class="tasks">' + desk_waiting + '</ul>') if desk_waiting else ''}
+  {('<h3>Sent, awaiting reply</h3><ul class="tasks">' + desk_sent + '</ul>') if desk_sent else ''}
   {('<details><summary><b>' + str(len(you_targets)) + ' copy orders parked until funding</b> <span class="muted small">(each a decision and a payment; open to see them)</span></summary><ul class="tasks" style="margin-top:10px">' + desk_targets + '</ul></details>') if desk_targets else ''}
   <p class="note" id="tick-status"></p>
   <p class="note"><b>{jq}</b> JSTOR rows queued for the runner on your machine{(", " + str(jdone) + " answered") if jdone else ""} (<a href="{REPO}tools/jstor_runner_brief.md">runner brief</a>).</p>
