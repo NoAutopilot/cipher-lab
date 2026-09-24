@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 16:40 UTC",
+ "updated": "24 Sep 2026 17:00 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -616,6 +616,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 17:00",
+   "what": "All eight checked ChatGPT second opinions: no prior print or decipherment found for any reading; classes unchanged; each one caught a citation, count or attribution slip in our files, now corrected. The ninth is being checked. Lanes widened on your call."
+  },
   {
    "when": "24 Sep, 16:27",
    "what": "Posthius 1614/18 came back N0: a contemporary decipherment sits above the 1614 cipher and the 1618 key is transcribed online. Lesson logged (search Aerztebriefe first for physician letters). ChatGPT posted all eight remaining second opinions; the Gramont f.29r one is checked: no prior print, four small errors in our files corrected."
@@ -1539,17 +1543,17 @@
   {
    "name": "Lane R4, recovery",
    "live": 0,
-   "focus": "closed 16:30 on its handoff: Posthius read (H96 M13, for V4); Bowes codes C1 M9; Salviati f.54r transcribed 83.5% and simple-homophonic excluded with control; 1519 key atlas coverage open; 5549 sources 5205/5209 negative"
+   "focus": "closed 16:30 and re-woken 16:57 with a higher cap: the four Gallica letters from the cyphersolver re-diff (Marie de Medicis to Breves 1610 as recovery), Salviati code-and-mark model, the 1519 key"
   },
   {
    "name": "Lane N3, copy-free nominations",
-   "live": 1,
-   "focus": "edition checks on the cyphersolver rows: fr.3985 Mauclerc to Creil 1593 may be printed in Memoires de la Ligue (flagged, leaf not yet compared); four Nevers-circle letters at stage 2"
+   "live": 0,
+   "focus": "closed 16:36 with four copy-free nominations and re-woken 16:57 with six new digitised-collection scout families (Swiss, German, Dutch, Europeana, Vatican, Bourdeau's copy-free rows)"
   },
   {
    "name": "Lane V4, verification",
-   "live": 3,
-   "focus": "ChatGPT second opinions: Gramont f.29r checked (no prior print; four citation and count errors in our files corrected, class unchanged); seven more posted as PRs 2-8, three verifiers checking them"
+   "live": 1,
+   "focus": "eight of nine ChatGPT second opinions checked: no prior print in any, every one yielded citation or count corrections to our files, all classes unchanged; the ninth (Saxony 53/57) being checked"
   }
  ],
  "headline": "Afternoon of 24 Sept: fifteen readings at N4, one cryptanalytic. Cryptiana accepted the Bowes 1583 sign table. ChatGPT's second opinions are flowing: eight posted, the first checked with no prior print found and four small errors in our files fixed. Posthius 1614/18 turned out already deciphered on the leaf (N0). The seven-day usage window is at its warning; two focused lanes run on your call. Ready for you: the JSTOR searches from your PC, the mailbox variables, the DECODE message, the history swap; six grant drafts wait in cipher-lab-private."
