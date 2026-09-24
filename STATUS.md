@@ -90,6 +90,36 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE V handoff (session_01B5x2Dshzz71xBzbJqFnXYQ), 24 September 2026, 05:30 UTC
+
+Verification lane, 03:04-05:30 UTC. Stopped spawning at rate_limit `allowed_warning` (05:30). No LANE V worker is live.
+Since 05:16 LANE V owns only the French BnF targets and Google Books queries posted for it; LANE W owns English
+targets, Eckert and Thurloe. 29 workers collected (LEDGER rows carry session ids), about $80 of worker usage.
+
+**Classes (all in the targets' AUDIT.md; status.json results rows match):**
+- Gramont f.29r (Villandry) and f.30 (Francis I), Rome, 20 May 1530: N3, two audits each; blind second readers done and
+  applied (f.30 H 1500 / M 241 / U 232). N4 decision (05:14): stays N3 until two families come back negative: Camusat
+  tract ff.91-217 plus versos (LANE G worker running) and a DECODE search (LANE N, queued). Then a fresh N4-decision
+  verifier; nothing else to search. SO-GRAMONT-F29R and SO-GRAMONT-F30 prompts queued.
+- Danzay to the Cardinal of Lorraine, Copenhagen, 27 Jan 1557 (fr.20140 f.35r-36r): N3, two audits plus the f.36r
+  verifier; f.35 second-reader changes applied (H 509 / M 59 / U 70). Delavaud 1911 and Daussy 2015 read, negative;
+  Daussy 2001 is on Duplessis-Mornay, not Danzay (ASKS 26 no longer blocks N4). N4 waits only on LANE N's DECODE search.
+  f.36r pass C proposed one change (36R1 pos 9 le -> r2), not yet adjudicated.
+- Eckert 1862 T1-T10: N1. Thurloe P11-13: N0. fr5160 Brienne f.86/f.88: N0 (f.87 is the contemporary decipherment).
+  Eckert E4/E5: N3, two audits, N4 blocked only by Zooniverse Talk (ASKS 27); now LANE W's.
+
+**Next, in order (for whoever runs verification):** (1) when LANE N writes 'DECODE search' into the Danzay AUDIT.md,
+start a fresh N4-decision verifier for Danzay; (2) when LANE G's Camusat ff.91-217 read and the DECODE search are both
+in the Gramont AUDIT.md, the same for Gramont; (3) a small Opus adjudicator for the one f.36r proposal; (4) second-opinion
+PRs [SO-*]: check every citation as a lead, log unconfirmed ones in AUDIT.md; (5) at N4, outreach gate 2 still needs the
+JSTOR-QUEUE.tsv rows for the target answered or waived by the owner before any draft goes out.
+
+**Lessons written into briefs or the ledger:** verifiers search the holding archive's full text across the collection
+(verifier brief); IA loans give a person, not a worker, a readable page (CLAUDE.md playbook); a contemporary
+decipherment in the same volume is N0 without print; an N4 decision needs a principal-families table, not the audits'
+own gap lists; value-changing second-reader proposals go to an Opus adjudicator, not a Sonnet applier.
+Not kept: ASSIGNMENTS rows (ASSIGNMENTS.md lives in the hub repository, which this session did not have).
+
 ## LANE S handoff (session_01PE7TAF6Hsp3MHtFEkDPP4a), 24 September 2026, 04:58 UTC
 
 Lane: finding and gating targets outside Gallica (03:05-04:58 UTC). 25 Sonnet workers, about $140 of worker usage, every one
