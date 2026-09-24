@@ -1,0 +1,62 @@
+line	pos	code_a	marks_a	code_b	marks_b	note
+1	7	_		S7		DIFFER
+1	8	_		w		DIFFER
+1	9	_		y		DIFFER
+1	10	_		lam		DIFFER
+1	11	_	~	wd	~	DIFFER
+1	20	_		psi		DIFFER
+1	21	_	dot	e	+	DIFFER
+2	11	_		e	#	DIFFER
+2	12	bh		g	7	DIFFER
+2	22	_		w		DIFFER
+3	23	_		o.		DIFFER
+3	24	_		g	3	DIFFER
+3	27	g		e		DIFFER
+4	4	y		p		DIFFER
+4	5	w		_		DIFFER
+4	11	y		p		DIFFER
+4	12	_		g		DIFFER
+4	20	_		N		DIFFER
+5	6	_	dot	S	dot	DIFFER
+5	10	lam		_		DIFFER
+5	12	_		S	dot	DIFFER
+5	18	_	dot|+	e	dot|+	DIFFER
+5	19	_		L		DIFFER
+6	1	Z		sq		DIFFER
+6	28	y		_		DIFFER
+7	8	_		S4		DIFFER
+7	10	L		_		DIFFER
+7	19	_		#		DIFFER
+7	22	g		y		DIFFER
+7	26	]	?	sq		DIFFER
+9	16	H		U		DIFFER
+10	1	y		a	7	DIFFER
+10	16	lam	dot	S		DIFFER
+10	22	H		tee		DIFFER
+11	3	_		S		DIFFER
+11	11	m		_		DIFFER
+12	11	_		a		DIFFER
+12	13	#	dot	_		DIFFER
+12	20	g	dot	_		DIFFER
+12	24	tee	dot	_		DIFFER
+13	1	e	#	_		DIFFER
+13	2	eps		_		DIFFER
+13	12	tee		S		DIFFER
+13	33	y		m		DIFFER
+14	5	U	ot	sq		DIFFER
+14	13	y		_		DIFFER
+15	4	_		a		DIFFER
+15	7	_		p		DIFFER
+15	9	Lx		_		DIFFER
+15	26	p		_		DIFFER
+16	1	_		S7		DIFFER
+16	27	_		+		DIFFER
+16	30	S7		_		DIFFER
+17	1	_		a		DIFFER
+17	4	_		p		DIFFER
+17	14	g		sq		DIFFER
+18	2	_		N		DIFFER
+18	6	bh		_		DIFFER
+18	11	_		a		DIFFER
+18	24	S7		_		DIFFER
+19	10	bh		g		DIFFER

@@ -621,3 +621,80 @@ code for 451/495, 359 cipher codes (script_code != `_`), 19 line strips written
 script_code, script_marks, share), same column set as `f54v_boxlist_for_passes.tsv`.
 
 Progress continues below as pass A / pass B / reconciliation land.
+
+## Leaf f.55r (24 Sept 2026, LANE R5 H1)
+
+Worker H1 (Sonnet, cap $12, session_01DjYdTGsK72PjN4TpqA35fE), 20:51-21:2x UTC. Disk only, no fetches.
+Boxes, strips and pass A (`f55r_boxes.tsv`, `f55r_boxlist_for_passes.tsv`, `strips/f55r_L01..L19.jpg`,
+`passA_f55r.tsv`, 553 boxes) were already committed by worker A (interrupted at $9.37 before pass B, see
+"Leaf f.55r priced" above); this session picked up from pass B.
+
+**Setup.** `glyphs/crops/` (the regenerated, not-committed working-copy pages `tools/glyph_atlas.py`'s
+`classify`/strip-cutter reads pixel content from) was absent; `pip install numpy opencv-python-headless
+scikit-image scikit-learn pillow` (none pre-installed in this container) then `sh glyphs/build.sh`. The
+rebuild's `clusters.tsv`/`atlas.tsv`/`signs.tsv`/`marks.tsv` (and their derived PNGs) were **not**
+byte-identical to the committed ones (opencv/scikit-learn version drift in this container vs. whatever built
+the committed atlas -- H2's f.55v section above independently hit and diagnosed the same drift concurrently
+this session). Per the brief: did **not** commit the regenerated atlas files, `git checkout --` restored the
+committed versions (including `glyphs/crops/` is not among them -- untracked working copy, kept), and also
+reverted `build.sh`'s own trailing `classify --page f54r` step, which had overwritten `f54r_boxes.tsv` and
+five `strips/f54r_*.jpg` files with drifted output even though f54r is not this worker's leaf.
+
+**Pass B.** One blind Sonnet subagent (`Agent` tool, continued across five turns via `SendMessage` rather
+than five fresh spawns, so it stayed "at most one Sonnet subagent" while still letting this worker checkpoint
+and commit between batches -- lines 1-4, 5-8, 9-12, 13-19), briefed with the boxlist, the line strips, the
+atlas plates, and the known confusable-code pairs from the f54r confusion table (eps/e, h/bh, tee/S4, psi/y,
+w/e, o./dl/h/tee/S7/#/+, Z/L); never opened `passA_f55r.tsv`. It re-cropped ambiguous/low-share/confusable-pair
+boxes from `glyphs/crops/f55r.png` at 5x zoom with a scratch script (`recrop_f55r.py`, not committed, matches
+J's f54v method). First batch (116 boxes, all boxes individually re-checked against the atlas) cost about
+$3 and used 150 tool calls; told to economise, the remaining four batches (437 boxes) used the same
+one-strip-read-plus-only-flagged-boxes approach as J's method and cost about $3.3 total (33-114 tool calls
+each) -- get_session checked after every batch (RETRO-2026-09-24f's cost-stop rule), each commit+push
+landing before the next batch was requested, so no work was at risk of being lost at the cap the way worker
+A's was. `passB_f55r.tsv`, 553 rows (matches `f55r_boxlist_for_passes.tsv` 1:1, verified by set comparison,
+no dups/omissions): 492 confirm, 60 correct, 1 split-flagged (line3 pos27, no extra half-position row).
+
+**Gate.** `recon_box.py passA_f55r.tsv passB_f55r.tsv recon_box_f55r`: 401 non-both-plain positions
+compared. **Base code agreement: 340/401 = 84.8%. Gate (>=80%) PASSES.** With marks also required to match:
+329/401 = 82.0%. Files: `recon_box_f55r/agreement.tsv` (340 rows), `recon_box_f55r/disagreements.tsv` (61
+rows).
+
+**Settling.** All 61 disagreements resolved by this worker (not a subagent) from 5x-zoom recrops of every
+disputed box, montaged one image per line with each box labelled with both passes' calls
+(`recon_box_f55r/settled.tsv`, one reason per row). Two patterns did most of the work, both recurring from
+f.54v's settling: (a) several stretches where the classifier/pass-A read letter-shaped cipher codes but the
+boxes are visually continuous, legible plain Italian ("ratio", "coferisca", "questo", "ogni", "al" three
+times, "utt'", "po", among others) -- settled plain; (b) an "e"-bowl-with-unrecorded-+/#-mark pattern (pos
+L1P21, L2P11, L5P18 -- three of the eight the pass-B subagent flagged as systematic) and a
+numeral-mark-over-g-loop pattern (L2P12, L3P24, L19P10) settled to pass B's fuller mark/code. One
+disagreement (line1 pos7-11) settled the other way: pass A's own note that this is one continuous plain
+cursive word outweighed pass B's five individual per-box code guesses across the same span, so all five
+settled to pass A's plain `_`. Two positions (L2P22, L5P10, L16P1, L18P24 -- 4 of the 61) stayed genuinely
+ambiguous after the recrop and were settled at low confidence to whichever call was the less contrived shape
+match, flagged as such in `settled.tsv`; none of the 61 were re-classified through the strips alone without
+a 5x recrop.
+
+**Reading.** `ciphertext_f55r.tsv` (line, pos, code, marks, grade): 553 rows -- `AB` 492 (340 base-code
+agreements + 152 both-plain positions), `settled` 61. **370 sign tokens across 36 distinct types** (#, +, H,
+K, L, Lx, N, S, S4, S7, U, Z, [, ], a, bh, ch, dl, e, eps, f, g, lam, m, nt, o., p, phi, psi, rz, sq, tee, v,
+w, wd, y -- commonest: g 36, S7 22, w 21, bh 19, e 19, lam 18, a 16, y 15, nt 15; singleton ch), of which
+about a fifth carry a mark. **183 boxes plain.** Same code book as f.54r/f.54v (36/34 types respectively);
+sq (closed box/parallelogram) appears here as it did on f.54r but was not in f.54v's list. Grades mark
+provenance (both passes agreed / this session's settled arbitration), not rule 4's H/C/S/M/I -- no key
+exists to test this reading against and no plaintext is claimed; this is a **transcription**, not a
+decipherment. No solving attempted (out of this brief's scope).
+
+Cost: `get_session` on this worker's own session id, checked after every pass-B batch and again after
+settling: pass B (all five batches) ran the cost from about $0.5 (setup: pip installs, room claim, atlas
+rebuild/revert, verification) to $6.99; the gate script and the settling montage/recrop work (disk-only
+Python, no further LLM subagent calls) added comparatively little on top since it was this worker's own
+tool use, not a spawned session. Well under the $12 cap.
+
+Requests: none (disk only). Subagents: 1 (Sonnet, pass B, blind to pass A, resumed via SendMessage across
+five turns rather than five separate spawns).
+
+Suggested follow-up (not attempted, out of this brief's scope): with f.55r's 370 tokens added to f54r's 370
+and f54v's 349 (1,089 total across three leaves), and four more leaves (f.55v-f.57v) at a similar ~350-370
+tokens each, the pooled ciphertext is close to the ~2,800-token threshold LANE R4 P's control curve set for
+testing the code+mark (cm) homophonic model -- worth re-running `codemark_curve.py target cm` once f.56v or
+f.57r lands, without waiting for all six.

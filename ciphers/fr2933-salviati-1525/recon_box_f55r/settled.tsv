@@ -1,0 +1,62 @@
+line	pos	code	marks	source	reason
+1	7	_		A	plain cursive capital T, part of a continuous plain-cursive word spanning pos7-11
+1	8	_		A	plain cursive stroke, same word as pos7
+1	9	_		A	plain cursive stroke, same word as pos7
+1	10	_		A	plain cursive stroke, same word as pos7
+1	11	_	~	A	plain cursive stroke, same word as pos7 (mark ~ agreed by both passes)
+1	20	psi		B	hooked shape closer to psi than plain script; genuinely low-share, kept at conf M
+1	21	e	+	B	e-bowl with a clearly visible + cross stroke above; script under-recorded the mark
+2	11	e	#	B	e-bowl with a clearly visible # cross mark above
+2	12	g	7	B	numeral-7-like mark over a g-loop, not bh's hooked stem
+2	22	_		A	simple hump shape, no clean cipher-code match; conf L
+3	23	o.		B	unambiguous ring-with-central-dot, matches the o. atlas plate exactly
+3	24	g	3	B	numeral-3 mark over a g/e loop
+3	27	e		B	box holds two components (e-bowl + a tee/S4-like hook); best single code for the primary component; conf L
+4	4	p		B	loop sits at the TOP of the stem (crossed below), matching p, not y (whose loop is a bottom tail)
+4	5	_		B	legible fragment of "questo"
+4	11	p		B	same p-vs-y pattern as pos4
+4	12	_		A	part of the legible word "ogni"
+4	20	_		A	part of legible plain text (comandar context)
+5	6	_	dot	A	plain lowercase s completing the legible word "coferisca" (pass A's own note)
+5	10	_		B	simple minimal stroke, no clean cipher-code match; conf L
+5	12	_		A	part of legible plain text ("tutto" context)
+5	18	e	dot|+	B	e-bowl with dot+cross marks clearly visible
+5	19	L		B	unmistakable angle-bracket shape, high classifier share was wrong
+6	1	sq		B	clean closed box shape, no zigzag (not Z)
+6	28	_		B	legible plain fragment "Av"
+7	8	S4		B	complex crossed-stem shape matching S4, not plain script
+7	10	_		B	rounded hump, not the angular L
+7	19	#		B	clear double-cross-bar shape
+7	22	y		B	clear loop tail at the bottom, not a 9-loop g
+7	26	sq		B	clean closed parallelogram; script's own marks field held a literal "?" flag
+9	16	U		B	clean cup shape (flat/curved base), not an H ladder (crossbar)
+10	1	a	7	B	plain a-shape with a numeral-7 mark above
+10	16	S		B	wavy S-curve, no lam angle
+10	22	tee		B	crossed-stroke shape closer to tee than H; genuinely low-share, conf L
+11	3	_		A	legible plain fragment "ist"
+11	11	m		A	unmistakable three-hump m shape, matches the atlas m code
+12	11	a		B	clean cursive a shape
+12	13	_		B	legible plain word fragment "utt'"
+12	20	_		B	legible plain fragment "ny"
+12	24	_		B	legible plain fragment "ch"
+13	1	_		B	plain cursive ligature on closer look, not e+#
+13	2	_		B	plain cursive f/t ligature on closer look, not eps
+13	12	S		B	clean S curve, not tee
+13	33	m		B	clear three-hump m shape with a numeral mark above
+14	5	sq		B	clean closed square, not a U-cup
+14	13	_		B	legible plain fragment "phra"
+15	4	_		A	legible plain "al"
+15	7	p		B	loop-at-top-of-stem p shape (same pattern as line 4)
+15	9	_		B	legible plain fragment "ratio"
+15	26	_		B	legible plain fragment "po"
+16	1	_		A	ordinary cursive shape, no clean S7 match; conf L
+16	27	+		B	clear cross/plus mark with a trailing flourish
+16	30	S7		A	numeral-like shape matching the S7 atlas plate; conf M
+17	1	_		A	legible plain "al"
+17	4	_		A	legible plain "Po"
+17	14	sq		B	clean closed box shape
+18	2	_		A	legible plain fragment, no clean N shape
+18	6	_		B	legible plain fragment (sopra-like)
+18	11	_		A	legible plain "al"
+18	24	_		B	minimal ambiguous stroke, no clean S7 match; conf L
+19	10	g		B	numeral-marked loop shape matching g, not bh
