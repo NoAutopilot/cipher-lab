@@ -2987,6 +2987,30 @@ step: de-crypt.org ~28 (volume-sibling check, no login, >=1.7s apart) + 1 login 
 step; combined with the ~24 DECODE requests in the Gramont/Danzay search above, this worker's de-crypt.org
 total is about 104, under the 150-request cap.
 
+**Check-solved, batch DC1 (24 Sept 2026, `.claude/briefs/runs/2026-09-24-lane-n-csDC1.md`).** Six-source
+verdicts for DC1, DC2, DC3, DC4, DC5, each in its own `ciphers/decode-<id>-...` folder:
+- **DC3 (R2787, Villeroi to Henry III 1577) is found-solved**, not a nomination candidate: George Lasry
+  solved it in 2022, published with three decipherment images on Tomokiyo's site
+  (`sources/cryptiana/web/henryiii.htm`, `GL.htm`). See `ciphers/decode-2787-villeroi-henryiii-1577/NOTES.md`.
+  The `[key] "Preliminary Assignment"` document this row cites is consistent with DECODE's own catalogue
+  having a start on the same item.
+- **DC1 (R4450, BnF fr.20506 f.136)**: still open, but the "finish-existing-key" rationale above is weaker
+  than stated -- Tomokiyo (`venetian.htm`) identifies f.136 as a copy of a specific undeciphered Hieronimo
+  Ranzo letter (BnF fr.2988 f.9), and Bourdeau's own `CATALOGUE.md` entry 1.6 records an already-stalled
+  attempt on that same Ranzo cipher system (function words only, no base key). The volume's 18 Decrypted
+  siblings have not been shown to share Ranzo's system. See `ciphers/decode-4450-bnf-fr20506-1525/NOTES.md`.
+- **DC2 (R1411, Vienna HHStA Kt.14)**: record_type is confirmed `Cipher` (not `Key`), resolving this row's open
+  question; still open. See `ciphers/decode-1411-hhsta-vienna-1600/NOTES.md`.
+- **DC4 (R1162, Modena Amb. Ung. b.2/20 no.6)**: still open; a PPKE (Pázmány Péter Catholic University) thesis
+  and article on the Beltrame Costabili/Eleonora d'Aragona Hungary correspondence were found but not yet read.
+  See `ciphers/decode-1162-modena-ambung-1492/NOTES.md`.
+- **DC5 (R9970, Simancas leg.1563 fol.572)**: still open; already catalogued but explicitly "not viewed" in
+  Bourdeau's `CATALOGUE.md` entry 2.5. CSP Spanish vol. 3 (Gayangos 1877) was located on archive.org but not
+  read page-by-page. See `ciphers/decode-9970-simancas-1527/NOTES.md`.
+
+DC1, DC2, DC4, DC5 nominated to ROOM.md for stage-2 promotion; DC3 is not (found-solved). DC6-DC20 remain
+unchecked scout-style rankings, not check-solved verdicts.
+
 ## Digitised manuscripts on the Internet Archive (LANE N scout of 24 September 2026)
 
 Brief: `.claude/briefs/runs/2026-09-24-lane-n-scIA.md`, copy-free only. Host: `archive.org` `advancedsearch.php`
