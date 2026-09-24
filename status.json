@@ -367,7 +367,7 @@
    "state": "active",
    "holder": "Worker",
    "kind": "cryptanalysis",
-   "next": "First solver run 24 Sept 2026: design looks like 1x/2x units plus single signs (1 is a prefix sign, p<5e-5); a matched control reads at 100/92% (0/5% noise) but the 588-sign target does not read, a clean negative conditional on the transcription. Extras (312 signs) being reconciled and the solver rerun on ~880 signs (LANE G).",
+   "next": "Parked 24 Sept 2026 after a clean negative with matched controls on the full 900 signs (controls 99.8/93.6/86.4/70.0% at 0/5/10/15% noise; target not Italian under four pure-substitution designs). Untested: a nomenclator (word-code) design, a Mantuan dialect model, a third reading of the 16% M signs.",
    "note": "Reconciled 24 Sept 2026: 588 signs, 11 distinct, every boundary uncertain; the cipher is a digit-string system without separators, so segmentation and solving must be done together.",
    "wait": {
     "on": "Reconciliation from the image",
@@ -1247,6 +1247,14 @@
    "grade": "negative with controls",
    "line": "Christian IV's printed cipher letters are deciphered in the same volume; method now greps the whole volume for a decipherment indicator.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/sources/ia-fulltext/NOTES.md"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Paleologue to Nevers 1562-64 (fr.4687), full 900 signs: negative with matched controls",
+   "grade": "negative with controls",
+   "line": "Controls read 99.8/93.6/86.4/70.0% at 0/5/10/15% noise; the target does not read as Italian under four substitution designs. Nomenclator designs untested.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr4687-paleologue-nevers"
   }
  ],
  "lanes": [
