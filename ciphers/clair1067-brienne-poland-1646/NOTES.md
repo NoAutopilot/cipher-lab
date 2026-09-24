@@ -85,3 +85,72 @@ stage 2 with confidence on the image side; the finding-aid text itself (precise 
 correct alphabetical neighbours) is solid.
 
 Not touched: no key application, no decoding, no novelty wording.
+
+## (1) Leaf pinned, 24 September 2026
+
+**The leaf is on Gallica, but not on the ark used by the prior sweep.** `btv1b9000856f` (the ark checked so
+far) is a different/incomplete digitisation of this shelfmark: its own foliation (read directly off the
+pencil/ink stamps visible on the leaves, not assumed) only reaches roughly fol.205-211 by its last real
+canvas, confirmed by three probes (canvas280 stamped fol.134, canvas372 stamped fol.180, canvas400 stamped
+fol.194 — a consistent 2-canvases-per-folio rate that extrapolates to canvas ~460-465 for fol.226, beyond that
+ark's 422-canvas extent). Its earlier probes (canvas232/246, from the check-solved pass) and this pass's own
+(canvas280/372/400/415) all land in the SAME two large printed-factum clusters bound early in the volume (the
+Roland/Mège/Caille Grenoble lawsuit series, fol.95-195ish, and the Buray/Mahieu/Santeuil succession treatise
+starting fol.253) — internally consistent, just short of the target.
+
+The correct ark is **`btv1b90008551`** (flagged by the scout as an "unconfirmed second digitisation" — now
+confirmed as the real one for anything past ~fol.205). Its own IIIF manifest metadata states "381 feuillets",
+exactly matching the finding aid's own maximum folio citation (Fol.381, "Ginot du Bux", the volume's last
+item). Calibration: canvas5 stamped fol.205 (content matches the finding aid's "Fol.205 Abbé Brunier de
+Larnage, lettres autogr."), canvas226 stamped fol.313 (content matches "Fol.253 dame Buray" treatise, still
+running at fol.313), giving a fitted rate of (313-205)/(226-5) ≈ 0.489 folio/canvas. That predicted canvas 48
+for fol.226, and canvas 48 is confirmed by direct read of its own stamp ("226", clearly legible top-right) and
+by content: the leaf opens "Madame" and the letter closes (canvas 53) "A Compiegne ce XIXe May 1646" signed
+"Brienne" — an exact match to the finding aid's "Lettre avec chiffres adressée par de Brienne à la reine de
+Pologne (19 mai 1646)".
+
+Full item-list extraction from the finding aid's own HTML (`archivesetmanuscrits.bnf.fr/ark:/12148/cc137820/
+FRBNFEAD000013782_info`, one fetch, cached at `/tmp` this session only — not yet mirrored to the repo) gives
+every "Fol. N" citation for Clairambault 1067 end to end (Fol.1 "Isaac de Brun de Castellanne" through Fol.381
+"Ginot du Bux"), which is what let this pass identify the two printed-factum clusters by content and rule out
+the first ark with confidence rather than guessing offsets blind. Worth mirroring to `sources/` for the next
+worker who needs another folio in this shelfmark.
+
+Gallica requests this pass: ~19 to gallica.bnf.fr (1 manifest fetch each ark; probes at canvas 280/372/400/415/
+422 on btv1b9000856f, canvas 5/48/49/50/51/52/53/139/226/227 native+thumbnail fetches on btv1b90008551, plus
+line-crop native fetches for canvas 48/49/50 already counted in the crop tool's own one-request-per-region
+design), one at a time, ≥1.5s apart, UA `cipher-lab research script (contact via repository)`. Two proxy-side
+`ws_closed_mid_exchange`/connection-reset failures (canvas400 first attempt, canvas52), both recovered on the
+single allowed retry (confirmed proxy-side per `/root/.ccr` status, not a Gallica block, matching the
+established precedent). 1 request to archivesetmanuscrits.bnf.fr (the finding-aid info page).
+
+## (2) What the leaf shows
+
+**Extent:** canvas 48-53 on `btv1b90008551` = fol.226r, 226v, 227r, 227v, 228r, 228v. Six sides, three folios.
+No fol.229 content found before the next finding-aid item (fol.230, Bouvery) — canvas 54 not checked this pass
+(out of scope once the extent needed was established).
+
+**How much is cipher:** fol.226r (canvas48) is mostly clear French (8 text lines) with cipher confined to its
+last two lines only (e.g. "35 18 84 35" and "40 54 [overline]65 64 88 48 [overline]d 13 no 27"). fol.226v
+(canvas49) and fol.227r (canvas50) are dense throughout: short clear-French captions ("aux Minisitres", "de
+gouvernement", "Voſtre Maté", etc., mostly 1-3 words) followed immediately by a line of cipher groups, some
+with an overline/macron. fol.227v (canvas51), fol.228r (canvas52) and fol.228v (canvas53, the closing +
+signature + dateline) are **pure clear French, no cipher** — matter-of-fact military/diplomatic news (Monsieur
+le Duc d'Anguien's army, the Prince Thomas's fleet at Vigo, Compiègne). So: cipher is concentrated in the
+first three of six sides (226r sparse, 226v and 227r dense), then the letter turns to plain French for its
+back half. This matches the finding aid's own description, "Lettre avec chiffres" (a letter *with* ciphers,
+not entirely in cipher), and the same hybrid clear/cipher style already characterised for this office in
+`ciphers/fr5160-letellier-1653/NOTES.md`.
+
+**No interlined or facing decipherment.** fol.226r shows faint, differently-oriented handwriting bleeding
+through from the verso in the left margin (checked at 3x crop: it runs in a different flow/orientation than
+the recto's bold cursive and does not line up with the recto's own lines) — this is ordinary paper bleed-
+through, not a contemporary decipherment beside the cipher. No decipherment was found on any of the six sides
+or on the two probed neighbouring canvases (canvas47, blank/stained; canvas53, closing text only). This
+target proceeds as a blind transcription + mechanical key trial, per the brief; it is not a recovery-by-
+alignment case like fr5160-letellier-1653's fol.87.
+
+Images: `images/src_ark_12148_btv1b90008551_f48_full_ref1600.jpg` (and f49/f50, downscaled to 1600px wide to
+keep the folder under 30MB; native fetched fresh on demand), plus line crops `f226r_body_L*`, `f226v_L*`,
+`f227r_L*` and their `*_lines_debug.jpg` overlays. Calibration-only probes (`probe_f*.jpg`, `probe2_f*.jpg`)
+kept for the reproducibility trail.
