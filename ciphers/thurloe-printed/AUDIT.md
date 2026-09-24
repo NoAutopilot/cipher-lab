@@ -674,3 +674,20 @@ good-citizen cap).
 Requests this section: de-crypt.org 28 (`decode_list.py`, all ≥1.6s apart, no login). Combined with the shared
 login used for the DC1-DC9 audit above (26 requests, logged in each `ciphers/decode-*/NOTES.md`), this worker's
 total de-crypt.org requests for the whole session: 54, under the brief's 80-request cap.
+
+## N4 set, P4, 24 Sept 2026
+
+LANE W worker J (Opus), a fresh verifier session, parent LANE W orchestrator session_011UFnhZnyCntZ8Bn9FpKyTq, 09:03-09:05 UTC. I did not solve or audit P4 before, and I searched nothing except the one snapshot below.
+
+1. s.3's condition: a grep of DECODE's Decrypted list (fresh crawl) and its Non-decrypted and Partially decrypted list for Bodleian, Oxford or Rawl. LANE N ran it over all 2546 rows (1360 + 1186) and got 0 hits, so no Rawl. A. 24 record exists. It also grepped for Stamford and Thurloe. That meets the rule as written.
+2. The author-field caveat is a real gap for a letter that has to be found by its sender, because a Stamford item held somewhere else (a copy, or a BL leaf) would not show up in the location fields. I closed it from the cited snapshot (github.com/aaymeloglu/unsolved-ciphers, `catalogue/decode-catalog.csv`, shallow clone of commit 2495c45 of 23 Sept 2026; 10106 rows, keys included; cited only, nothing copied). c_author gives 0 for `stamford`, `stanford`, `kelsey` and `rawl`. c_holder gives 0 for `bodleian`. The 14 `oxford` hits are royalist 1642-46 senders "at Oxford" in BL MSS. `thurloe` has one hit, id 4880 (Dublin 1657, BL Add MS 4166), which is unrelated. `calais` has one hit, id 2734 (Charost, 1673).
+3. The one near-miss is id 4899: a 3-page **Key** (status N/A), BL Add MS 4166 f.120, dated 1655-1668, author "W". It is not a decipherment of P4, and it is not the Rawlinson leaf. A key cannot hold P4's plaintext, and the safe sentence already credits the system's prior reconstruction (Tomokiyo), so it does not bear on N4. Suggestion only, for a solver, not a gate: check whether "W" is Stamford's table.
+4. What is left is not excluded, and N4 does not require excluding it: DECODE records added after the snapshot that sit outside Oxford and carry a Stamford author field, the unseen MS leaf, JSTOR rows and Marshall. All of these are unpublished or internal work, or outreach gate 2 items.
+5. Decision: **P4 is N4.** Prior plaintext: none located. Prior decipherment of this letter: none located. The system was deciphered in 1655 and has been reconstructed by Tomokiyo.
+
+**Safe sentence (s.3, verbatim):**
+"Birch (1742) prints William Stamford's letter from Calais of 13 March 1655 with its cipher numerals and no decipherment. We read its cipher with the key given by Birch's printed decipherments of Stamford's letters of 20 and 30 March 1655. Thurloe's office deciphered this system in 1655, and Tomokiyo has since reconstructed and published it (Cryptiana, 'William Stamford (1655)'). Our table agrees with his on every value that occurs in this letter. By token: H 64, C 338, M 16, U 6 of 424, and eleven lines of p.188 are still partly incoherent. No prior decipherment of this letter located in Birch and its indexes, British History Online, CSPD 1655, the Clarendon calendar vol. 3, the Nicholas Papers, Abbott, the Clarke Papers, Gardiner, Underdown, the Bodleian's catalogues, Tomokiyo's pages, the solver repositories, DECODE, Google Books or Internet Archive full text (searched 24 Sept 2026, AUDIT.md). The original leaf, Bodleian MS Rawl. A. 24, has not been seen."
+
+**Unsafe at any class (s.3):** "we broke / cracked / solved Stamford's cipher", "first decipherment" without the qualifier "no prior decipherment located", "previously unread", "unpublished", "no decipherment exists".
+
+Requests: github.com 1 shallow clone. No DECODE requests, no logins.
