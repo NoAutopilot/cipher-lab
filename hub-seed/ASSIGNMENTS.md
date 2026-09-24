@@ -250,3 +250,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 | 203 | 24 Sep | cipher-lab | D1 N4 decision Lodewijk 4610/4611/4616 + Saxony 126 | LANE V2 (session_017QzVuGiZ8wFQY6HZfUxH1q) | verifier N4-decision, Opus cap $7, lane-v2-common | running, session_01QJUn1Wfpd8db3zy2XwofsP |
 | 204 | 24 Sep | cipher-lab | V4 verifier gunther-van-schwarzburg-1561 (8246 pp.1-2) | LANE V2 (session_017QzVuGiZ8wFQY6HZfUxH1q) | verifier, Opus cap $8, lane-v2-common | running, session_01V9fZ2V7mhis1tQZgZU1tFA |
 | 205 | 24 Sep | cipher-lab | V5 verifier fr5160-letellier-1653 f.67 (10 Oct 1659) | LANE V2 (session_017QzVuGiZ8wFQY6HZfUxH1q) | verifier, Opus cap $8, lane-v2-common | running, session_018sPDewqfiagBv4d9CwjtZ9 |
+2026-09-24T09:53Z	session_01DfQyAaXAgcoFZMAbBTGj4f	LANE N2 orchestrator (Opus, cap $100)	nominations successor	from the LANE N handoff, copy-free first
+2026-09-24T09:53Z	session_017kdHb7pkSvUhcP53BoN6Nm	Retrospective d (Sonnet, cap $6)	31 rows since retro-apply c	RETRO-2026-09-24d.md
