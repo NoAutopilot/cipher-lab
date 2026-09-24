@@ -453,3 +453,59 @@ Open questions (no change proposed):
 
 Suggestion (not done): a Sonnet worker applies the accepted rows and reruns `decode.py --check`.
 - Suggestion (second audit, 24 Sept 2026): for N4 on f.35, read Delavaud 1911 (Bull. Soc. normande de géogr. XXXIII, Gallica cb328704148, pp. 49-55) and Daussy 2001 (L'épistolaire au XVIe siècle, pp. 211-226).
+
+## f.36r lines 2-4, passes (24 Sept 2026)
+
+Follow-up named at the end of "f.36 reading" above: lines 2-4 of f.36r (labels R2, R3, R4) mix cipher signs with
+clear French words. Six line crops cut with `tools/iiif_lines.py` (ink-profile line detection) from
+`images/native_f71.jpg` already on disk, no network fetch: each line is 3400 px wide at native resolution, over
+the 2500 px reading limit, so each is two overlapping segments (`_L01_s1.jpg`/`_L01_s2.jpg`, ~1400 px shared in
+the middle) rather than one downscaled crop as line 1 was — `images/manifest.json` records the boxes and the
+`f36_lines2-4_pass_24_sept_2026` note. Two independent Sonnet subagents (`passA_f36b.tsv`, `passB_f36b.tsv`),
+neither shown the other's file, `ciphertext_f36.tsv`, any reading file, `key.tsv`, or this file, transcribed all
+three lines against Tomokiyo's sign legend (`danzay_1557.png`), same format as the earlier passes plus one new
+column: `line position sign confidence note`, where a plaintext French word (as opposed to a cipher sign) is
+written as the word itself with `clear` in the note column. No reconciliation, key application, or decode was
+attempted, per brief.
+
+**Sign counts.**
+
+| line | pass A tokens (sign / clear) | pass B tokens (sign / clear) |
+| --- | --- | --- |
+| R2 | 19 (14 / 5) | 15 (10 / 5) |
+| R3 | 18 (11 / 7) | 16 (12 / 4) |
+| R4 | 24 (23 / 1) | 24 (23 / 1) |
+| total | 61 (48 / 13) | 55 (45 / 10) |
+
+Confidence: pass A H 19 / M 35 / L 7; pass B H 8 / M 29 / L 18. Pass A is more confident line for line, and pass
+B reads more shapes as unmatched (`unkN`, see below) or as low-confidence plaintext.
+
+**Agreement.**
+
+- **Position-exact match is low, as with the f.36 line-1 pass** (line 1: 8/25, ~third): R2 5/15, R3 4/16, R4
+  3/24 matching positions out of the shorter pass's length — a segmentation-count gap (R2 19 vs 15, R3 18 vs 16)
+  throws off position alignment quickly, the same effect noted for f.35's ~2x segmentation gap and f.36 line 1's
+  one-position drift, not a sign-for-sign disagreement.
+- **R4's one clear word lands at the same position in both passes.** Both A and B read line 4 as 23 cipher-sign
+  tokens with exactly one plaintext word, "fust", and both place it at position 20 out of 24 — the strongest
+  cross-pass agreement in this pass, on both the count and the position.
+- **Both passes independently find "fust" as a clear word early in R2** (A position 9, B position 9 — also
+  position-exact) and **"fixuy" as the last clear word of R2** (A position 19, B position 15 — last token in
+  both passes' own line, different absolute position because of the segmentation gap). Both also read "de" as a
+  clear word partway through R3, though at different positions (A twice, at 3 and 17; B once, at 2).
+- **Pass B recognises word-signs that pass A does not use at all in these three lines.** B labels four tokens
+  `word:luy` (R2 pos 5, R3 pos 12, R4 pos 12 and 18), one `word:dict` (R4 pos 11), and one
+  `word:leRoyDeDannemarch` (R4 pos 9); A has no `word:` label anywhere in R2-R4, resolving the same stretches to
+  single a-z letters or `unk` shapes instead. This is a real reading disagreement (not a naming-scheme artifact
+  like the two passes' `unk` labels below) and is left open — no attempt made here to judge which pass is right.
+- **The two passes' `unk` labels are not comparable, as before, and by a different convention.** Pass A restarts
+  its numbering each line (three different shapes are each called `unk1` in R2/R3/R4); pass B reuses a number
+  for a recurring shape across all three lines (`unk2` at R2 pos 6, R3 pos 8, R4 pos 8; `unk7` three times in
+  R4; `unk8` three times in R4). Neither convention was specified in the brief beyond "reused if the same shape
+  recurs" — A did not do this, B did. A sign-for-sign `unk`-label match between the two passes is not reported,
+  same reasoning as the earlier passes.
+- **Nulls.** A reads 2 nulls, both in R4 (positions 4 and 24 — the last token of the line). B reads 5 nulls (one
+  in R3 at position 4, four in R4 at positions 3, 4, 21, 24) — B's R4 position 24 null matches A's.
+
+No reconciliation, sign inventory, key application, or decode attempt follows from this, and no novelty wording
+applies. Cost note: two Sonnet subagents, well under the $5 cap for this worker.
