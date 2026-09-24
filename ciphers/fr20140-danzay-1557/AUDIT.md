@@ -808,3 +808,74 @@ search for Danzay/fr.20140, assigned to LANE N) is untouched here.
 
 Requests: doi.org 1, rcs-almanac.ru 3 (page HTML, cover-sheet PDF, full-text PDF; all ≥1.5 s apart), cyberleninka.ru
 0 (found via WebSearch snippet, not fetched), WebSearch 1. No Gallica, no logins, no decoding, no class change.
+
+## DECODE search, 24 Sept 2026
+
+LANE N DECODE worker B (Sonnet), 06:51-07:20 UTC (`date -u` read). Closes the "DECODE" row of the N4 decision
+table above (04:45 UTC). This session did no decoding, no class change, no promotion. Same session as the
+Gramont DECODE search (`ciphers/fr2980-gramont/AUDIT.md`, "DECODE search, 24 Sept 2026" — see there for the
+method note on the RecordsSearch → RecordsList GET pattern and the "No records found" boilerplate-text bug
+found and fixed in this session's own search script).
+
+### Queries and results
+
+All `LIKE` (substring) searches on `RecordsList`, no login, no `x_status`/`x_record_type` restriction (all
+statuses and record types included by default).
+
+| field | term | hits (ids) |
+|---|---|---|
+| sender | Danzay | 0 |
+| sender | Dantzay | 0 |
+| receiver | Danzay | 0 |
+| receiver | Dantzay | 0 |
+| c_holder | Danzay | 0 |
+| c_holder | 20140 | 0 |
+| additional_information | Danzay | 0 |
+| additional_information | Dantzay | 0 |
+| additional_information | 20140 | 0 |
+| origin_city | Copenha(gen) | 2: 8858, 8869 |
+| receiver | Lorraine | 2: 7952, 9444 |
+| sender | Lorraine | 4: 3733, 4194, 4218, 9449 |
+| origin_city | Denmark | 0 |
+| origin_region | Denmark | 2: 5139, 7854 |
+
+`20140` also covers "fr. 20140" and "Français 20140" as LIKE substrings, so those spellings were not queried
+separately. "Copenhagen" was queried as the substring "Copenha" to also catch "Coppenhagen" (the letter's own
+spelling, "De Coppenhagen ce vingt sept jo de Janvier 1557") and "Copenhague"; the grid returned 2 rows either
+way.
+
+### What the hits are
+
+- **ids 8858, 8869** (origin_city contains "Copenha"): both London, British Library, Add MS 32284 (f.89-92 and
+  f.113-116), a 19th-century Key/Cipher record — id 8869's own date field reads "1837 -", plaintext language
+  "Danish?", region "Paris, Copenhagen". Three centuries too late and the wrong archive (BL Add MS 32284, not
+  BnF fr.20140); not Danzay.
+- **ids 7952, 9444, 9449** (Lorraine as sender or receiver): BnF Lorraine 377 f.95 (shelfmark literally named
+  "Lorraine", unrelated house), and BnF Français 3621 nos.22/97 (1591-92, "François II, Count of Vaudémont" /
+  "France Nancy") — the Lorraine ducal house at the end of the century, not the Cardinal of Lorraine (Charles
+  de Guise, d. 1574) that Danzay wrote to in 1557. Wrong Lorraine, wrong decade.
+- **ids 3733, 4194, 4218** (sender contains "Lorraine"): BnF Français 3995 f.32 (1587) and Français 3980
+  f.10/f.61 (1591, "Soissons") — again the later Lorraine-Guise-Soissons correspondence of the Wars of
+  Religion, not 1557.
+- **ids 5139, 7854** (origin_region "Denmark"): both Dresden, Saxon State Archive, Jakob Heinrich von Flemming's
+  keys with the Danish court (1700-1728, 1715-1716) — 150+ years too late, different archive, different
+  diplomat.
+
+**No record for BnF Français 20140, and no record for Charles de Danzay (any spelling) as sender or receiver,
+in any field searched.** This matches the search log already on file: Tomokiyo's "Danzay's Ciphers" page (first
+audit 3(d)) calls f.35 "not deciphered" with no DECODE record cited, and neither the Aymeloglu cache (grepped
+this session, zero rows for danzay/dantzay/20140) nor Bourdeau's repository (fresh shallow clone this session,
+zero file or catalogue hits for the same terms; one unrelated 1574 "Danzay to Henry III (1574) Solved" line in
+`napoleon/unsolved.txt`, a different, later Danzay letter, not fr.20140) carries this shelfmark either.
+
+### Requests this session (de-crypt.org)
+
+~14 `RecordsList` GET queries for this target (table above), sharing the session's RecordsSearch page fetch and
+browser-submission check already logged under the Gramont search. All ≥1.6 s apart, one request at a time, UA
+`cipher-lab research script (contact via repository)`. No login, no credentials touched, no images or documents
+fetched.
+
+**DECODE family in the N4 table above: now covered, no hit.** Daussy 2015 was already closed negative (05:11
+UTC, "Toward N4: Daussy 2015" below). Both principal families the 04:45 N4 decision named are now closed; a
+fresh N4-decision verifier can act on this without further search. This worker does not assign N4 (not its
+brief).
