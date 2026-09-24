@@ -5761,3 +5761,65 @@ confirmed against sibling nodes in the same tree pull that do carry counts (e.g.
 Requests: archiv.sachsen.de ~12 (curl, browser UA, >=2s apart), gda.bayern.de ~4 (browser_fetch.js, one session,
 no login), koninklijkeverzamelingen.nl ~10 (1 curl + 9 browser_fetch.js navigations, >=2s apart), WebSearch 0.
 No DECODE login (grepped `sources/decode/` on disk only, per brief).
+
+## Tomokiyo key lists vs unread siblings (LANE N4 scTOMO, 24 Sept 2026)
+
+Brief `.claude/briefs/runs/2026-09-24-lane-n4-scTOMO.md`. Method: read Tomokiyo's own catalogue pages
+(`sources/cryptiana/web/{henryiii,louisxiii,louisxiv,louisxiv0,louisxiv2,catherine,guise,habsburg,bongars,
+danzay,dutch,frederick,charlesi,charlesi2,elizabeth}.htm`, on disk, converted with `tools/html2text.py`, no
+fetch) for every letter each page's author tags "undeciphered"/"not deciphered" under a key whose table Tomokiyo
+publishes (an `<img>` table on the live page, confirmed present in each raw `.htm`), then checked each against
+`sources/solver-diffs/2026-09-24-cyphersolver-keys.tsv`'s `reads` column, every `ciphers/*/NOTES.md`, QUEUE.md,
+CATALOG.md, a fresh shallow clone of `dbourdeau/cyphersolver` (24 Sept 2026, grep only, ~260 target folders),
+and QUEUE.md rows KS-01..07. Credit: Satoshi Tomokiyo (cryptiana.web.fc2.com, original transcriptions and key
+reconstructions, cited by name in every row) and Daniel Bourdeau (cyphersolver, CC BY 4.0, cross-checked as the
+"already worked" filter).
+
+**Most of what looked promising on a first pass turned out already covered.** The largest single vein --
+Tomokiyo's `henryiii.htm` "Mayenne-Forget's Cipher-1/-2" and "Matignon's Cipher-3" group (BnF fr.15571-15573,
+ten undeciphered leaves he names explicitly: ff.110, 123-124, 143, 150, 154, 173, 196, 201, f.276, fr.15571
+f.179) -- is Bourdeau's own `matignon1586/` target (28% read as of his 22 Sept measurement, key for Cipher-1
+recovered, Cipher-3 untouched; his NOTES.md quotes the identical Tomokiyo list). `danzay.htm`'s one genuinely
+undeciphered item (fr.20140 f.35, Danzay to Cardinal of Lorraine, 27 Jan 1557) is already `ciphers/
+fr20140-danzay-1557/` here, status partial, Tomokiyo's key read 24 Sept 2026, AUDIT N4. `guise.htm`'s three
+named "undeciphered" ciphers (no.1, no.7, no.8) were each solved by Biermann/Lasry/Tomokiyo himself in 2021;
+its remaining `BnF fr.20974` "Undeciphered Ciphertexts" section names no key at all (fails requirement 1).
+`catherine.htm`, `frederick.htm`, `dutch.htm`, `louisxiv2.htm` name no undeciphered item under a published key.
+`habsburg.htm`'s one candidate (Emperor Charles VI, 3 Feb 1720, "can be read with a key found in the archives")
+gives no shelfmark and is an Austrian-archive item, outside this lane's Gallica-only host list -- not pursued.
+
+**Two rows survive, both outside the family scKEYS/csKSa/csKSb already mined (Nevers, BnF fr.3995) and outside
+Bourdeau's ~260 target folders:**
+
+| Row | Target slug (proposed) | Ark / folio | Date | Sender -> recipient | Tomokiyo key + page | Tomokiyo's tag (quoted) | Image tested | kind |
+|---|---|---|---|---|---|---|---|---|
+| KT-01 | fr7129-villeroy-bongars-1604 | `btv1b8555834s` f.268 (canvas f541 r / f542 v, **confirmed** by the leaf's own "268" foliation and "1604" dateline) | 2 Nov 1604 | Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars | Bongars' Cipher no.3 (BnF fr.7129 f.275, table image `BnFfr7129f275.jpg` on `bongars.htm`) | *"This cipher can solve an undeciphered letter, dated 2 November 1604 and signed by Villeroy, in BnF fr.7129, f.268 (see below [#unsolved])."* -- listed again in `bongars.htm`'s own "Unsolved Ciphertext" section with no reading offered (contrast BnF fr.7131 f.256 two entries below it, where Tomokiyo already quotes a deciphered fragment -- excluded here for that reason) | 4864x... native (3721x5914 recto / 3726x5767 verso), tested 24 Sept 2026, both sides eye-checked: cipher runs to the foot of 268r and the top of 268v with no interlinear or marginal decipherment anywhere on the leaf | recovery |
+| KT-02 | baluze103-letellier-marca-1644 | `btv1b9001389d` f.50 (canvas f111 r / f112 v, **confirmed** by the leaf's own "avril 1644 ... 50" dateline+foliation, eye-read at high zoom) | [April] 1644 | Michel Le Tellier, Secretary of War -> Pierre de Marca, governor of Catalonia | Le Tellier-Marca Cipher (`louisxiv0.htm`, table image `louisxiv_0marca1644.png`, "not using syllable representations") | *"Le Tellier's letters use the following cipher in April to October 1644 (f.50 (undeciphered), f.171, f.189, f.200, f.230 (deciphered on separate pages))."* -- f.50 is the one leaf in this five-leaf group with no decipherment; the other four are explicitly "deciphered on separate pages" | 4864x6996 native both sides, tested 24 Sept 2026, both sides eye-checked: recto and verso entirely in cipher, no interlinear or marginal gloss | recovery |
+
+Both keys are single-letter groups (`n_targets` would be 1 each), not pools -- Tomokiyo's own text names the other
+leaves under each key as already deciphered on the manuscript itself (Mayenne-Forget/Matignon precedent: presence
+of a name elsewhere in a "deciphered" list is not itself grounds for exclusion, but here it is Tomokiyo's own
+explicit sentence that does the work, not an absence of a tag). Neither row's leaf carries an interlinear or facing
+decipherment (KS-04/csKSa lesson applied to both before listing).
+
+**First-third check (per brief):** not triggered -- two copy-free rows were found before a third of the budget
+was spent scanning the fifteen named pages plus `guise.htm`, `catherine.htm`, `frederick.htm`, `dutch.htm`,
+`louisxiv2.htm` and `habsburg.htm`.
+
+**Not pursued, logged as checked:** `charlesi.htm`/`charlesi2.htm` (Charles I's Isle of Wight cipher: solved by
+Biermann and Brown 2021; the one other "undeciphered" mention, Harley MS 6988 f.208, cites a *different* article
+[unsolved.htm] not on disk this pass and has no key table on this page -- flagged, not fetched, out of brief
+scope); `elizabeth.htm` (every undeciphered item with a key already carries a partial reading by Tomokiyo himself
+on the page, e.g. Add MS 33531 f.27, Add MS 4136 ff.173/175 -- already public, not "unread"; Add MS 32091 Moray
+letter has no published key table); `louisxiii.htm` (Sabran letters already solved by Lasry per the page's own
+text; BnF fr.3829 Richelieu-Rancé items name no key); `louisxiv.htm` (the 1690 Rome code table's entries "up to
+at least 535" undeciphered is a partial code reconstruction, not a letter-level target); `louisxiv0.htm` beyond
+KT-02 (most other undeciphered items there are already partially quoted/read by Tomokiyo in the article text, the
+same exclusion rule as the Bongars f.7131/f.256 item above).
+
+Output TSV: `sources/solver-diffs/2026-09-24-tomokiyo-vs-siblings.tsv` (2 rows).
+
+**Per-host report:** gallica.bnf.fr (this lane's slot 1): manifest.json 2, info.json/image fetches 8 (2 hit a
+transient connection reset, each retried once per the good-citizen rule and both succeeded on retry) = 10 total,
+well under the 50 cap, all >=3s apart. github.com: 1 shallow clone of `dbourdeau/cyphersolver` (grep only, no
+push). WebSearch: 0 (not needed; Tomokiyo's pages and the shallow clone answered every check).
