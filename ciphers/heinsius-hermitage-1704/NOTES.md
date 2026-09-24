@@ -98,3 +98,80 @@ books, l'Hermitage source=3, cijferschrift source=3, onopgelost source=3, sleute
 source=3, 3 html_url OCR fetches [p.59, p.64, p.169] + 1 more [p.92, letter 251], 1 image fetch), `www.
 nationaalarchief.nl` ~5 (invnr 946, 2315, 2316, 2317, plus the shared batch with HU1/HU4/HU5, see sources/
 huygens/NOTES.md), `github.com` 0 (reused this pass's HU1 clones). WebSearch 4. No subagents.
+
+## Addendum, 24 September 2026 (LANE N2 check-solved worker csHU3): HU10, Sauniere de l'Hermitage, 4 Dec 1705
+
+QUEUE row: HU10 (`QUEUE.md` Huygens round-2 sub-heading; `sources/huygens/cipher-letters-round2-2026-09-24.tsv`).
+Brief `.claude/briefs/runs/2026-09-24-lane-n2-csHU3.md`. A **second, later instance** of the same correspondent's
+cipher, a different H.A. number (1034, not 946) and a different edition volume (Deel 4/GS177, not Deel 3/GS169).
+
+### Source
+
+Nationaal Archief 3.01.19, inv.nr. 1034 (H.A. 1034). Printed in Veenendaal's edition, Deel 4 (GS177), p.446,
+letter no. 1231, via `retroboeken/heinsius`. Image `images/heinsius_04_GS177_446.jpg` (printed edition's own
+page scan; rule 2 applies).
+
+### Check-solved sweep
+
+1. **Edition read directly this pass**, `pages.json?source=4` mapped printed p.446/447 to `page_index`
+   453/454, fetched and read in full. Unlike letters 166/177/477 in Deel 3 (Dutch paraphrase regests only, no
+   ciphertext printed -- see above), **Deel 4 prints letter 1231 as a full verbatim French transcription**
+   ("Eigenh. orig. H.A. 1034"), with the actual cipher numerals inline. Quoted:
+   > "...Elles me paroissent, monsieur, présentement aussi grandes que jamais par la fureur où sont les **14**.
+   > Ce sont des gens dont les principes iroient constament à destruire la Hollande..."
+   > "...peut-estre ne faudroit-il par cela que la mort de **33** (qui est le véritable bien du reste)..."
+   > "...et je tâche mesme souvent de luy rendre de bons offices envers les **15** dont par je ne sçai quelle
+   > raison il a perdu la confiance le croyant attaché aus **14**..."
+   > "...un seigneur me mena chez **50** et c'estoit d'une affaire dont on ne pouvoit escrire."
+   Four distinct numeric codes across the letter: **14** (repeated twice), **33**, **15**, **50** -- a
+   political/personal name-code embedded in otherwise plain French, the same design class as HU1 (Dopff) and
+   HU9 (Van Haersolte). Footnote, quoted verbatim: **"1231. 1. De code is onbekend, een sleutel is niet
+   aanwezig. Voor 14 zou Tories gelezen kunnen worden, de lezing van de andere cijfers blijft een gissing."**
+   (The code is unknown, no key is present. For 14, "Tories" might tentatively be read; the reading of the
+   other numbers remains a guess.) The very next letter in the volume, **no. 1232** (also l'Hermitage, also 4
+   Dec 1705, p.447), is a Dutch regest that discusses "Tories" in the Hogerhuis openly in clear -- consistent
+   with, but not confirming, the editor's guess that 14 = Tories.
+2. **Does HU10's numbers overlap HU2's code? Cannot be determined from the print.** HU2's three letters (166,
+   177, 477, all H.A. 946, Deel 3) are printed **only as Dutch paraphrase regests** -- verified directly this
+   pass by re-fetching and reading pp.59, 64 and 169 of Deel 3 in full (not just trusting HU2's NOTES.md,
+   rule 2): none of the three shows a single cipher numeral in the printed edition, only the editor's footnote
+   that a passage was "gedeeltelijk in onopgelost cijferschrift/cijfer". **The actual ciphertext for HU2's
+   letters exists only in the NA 3.01.19 original (H.A. 946)**, not in print anywhere found this pass, so
+   HU10's numbers (14, 33, 15, 50) cannot be checked against HU2's numbers until someone reads H.A. 946
+   directly. This is worth flagging strongly for whoever visits the archive for `ciphers/heinsius-hermitage-
+   1704/REQUEST.md`'s H.A. 946 order: photographing 946 would let a future worker test directly whether the
+   same code numbers recur across the two H.A. numbers (946, 1034), which — given the same sender, the same
+   general shape of code, and only 19 months apart — is the single most useful comparison available for this
+   whole l'Hermitage cipher problem.
+3. **Candidate key NA 3.01.19 invnr 2317**: not independently re-checked this pass (already established as
+   PHYSICAL/no scans by csHU2, see above); its own description ("waarschijnlijk voor correspondentie met
+   Engeland", c.1705) matches H.A. 1034's own date (Dec 1705) as well as it matches H.A. 946 (1704) -- if
+   anything, 2317's *date* sits closer to 1034 than to 946, which is new context this pass adds in 2317's
+   favour as a candidate for either or both H.A. numbers, not resolved further.
+4. **Post-edition literature search.** `WebSearch "Sauniere de l'Hermitage Heinsius cijfer 1705 code sleutel
+   Tories"`: confirms l'Hermitage's biography (Huguenot exile, States-General/Heinsius agent in London from
+   1693, per English Wikipedia) but no article reporting a solved cipher. Search result, not proof of absence.
+5. **Community lists.** `sources/cryptiana/web/dutch.htm`, `unsolved.htm`: no "Hermitage"/"Sauniere"/"1034" hit.
+6. **DECODE.** All three local TSVs grepped for "hermitage", "sauniere", "1034": zero hits.
+7. **Solver repositories.** Fresh clones grepped for "hermitage", "sauniere", "1034": no hit in either
+   repository (reused this pass's shallow clones, same as HU9/HU11).
+
+### Verdict (HU10)
+
+**Status: open.** Full ciphertext (four numeric codes) printed with the editor's explicit "code is onbekend"
+statement; no later print, list, DECODE record or solver repository names a solution. Grouped with HU2 as the
+same broader l'Hermitage cipher problem (same sender, two H.A. numbers 19 months apart), not a fully separate
+target -- kept as a section of this same folder per the brief's instruction, rather than a new folder.
+
+**Copy status: NOT copy-free.** `www.nationaalarchief.nl/onderzoeken/archief/3.01.19/invnr/1034`: embedded
+JSON gives `"unittitle":"Saunière, René de-, sieur de l'Hermitage-, uit Londen.","availability":"PHYSICAL",
+"scans":[]` -- confirmed matching sender, not digitised.
+
+**Kind: recovery (candidate key, unconfirmed)**, same reasoning and same caveat as HU2 above (invnr 2317's
+"waarschijnlijk" is the editor's own uncertainty, and now arguably a slightly better date match to 1034 than
+to 946, but not confirmed to either).
+
+Search log (rule 10): reported above. Not classified for novelty (verifier's job, rule 10). Requests this pass
+for HU10 specifically: `resources.huygens.knaw.nl` 5 (pages.json source=4, pp.445/446/447, one search-pane
+fetch to locate the letter's page_index), `www.nationaalarchief.nl` 1 (invnr 1034). WebSearch 1. See `ciphers/
+breda-statengeneraal-1624-25/NOTES.md` for this session's full request accounting across all three rows.

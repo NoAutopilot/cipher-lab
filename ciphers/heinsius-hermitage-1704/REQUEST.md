@@ -29,3 +29,13 @@ none is digitised online. Same method as heinsius-dopff-1702/REQUEST.md; see tha
 2317 is entirely in comparing it against 946.
 
 **Status:** waiting on you. Stage 2 (verified unsolved) -- see NOTES.md's check-solved sweep.
+
+## Addendum, 24 September 2026 (HU10, same sender, different invnr)
+
+**Also needed: inv.nr. 1034** -- Sauniere de l'Hermitage's letter to Heinsius no. 1231 (4 Dec 1705, printed in
+full in Veenendaal's Deel 4/GS177 p.446, unlike H.A. 946's letters which are only Dutch paraphrases), whose
+four numeric codes ("14", "33", "15", "50") the editor calls unknown, with "14" tentatively guessed as "Tories".
+Confirmed PHYSICAL/no scans, same method as 946/2317. Requesting 946, 1034 and 2317 together in one order
+remains the single most useful combination: 946 and 1034 are the same correspondent's two cipher instances 19
+months apart (comparing their numbers directly is not possible from print -- see NOTES.md's HU10 addendum), and
+2317 is the one candidate key in the archive that might open either or both.

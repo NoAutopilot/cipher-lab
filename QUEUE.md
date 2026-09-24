@@ -3736,9 +3736,9 @@ hit/truncation count, and the two follow-up jobs below are in `sources/huygens/N
 
 | Rank | Target | Year | Lang | Kind | Reference / Holder | Catalogue note | Leaf viewed | Image route |
 |---|---|---|---|---|---|---|---|---|
-| HU9 | Heinsius correspondence: Van Haersolte (writing from Warsaw) to Heinsius, letter no. 341, a numeric name-code (178, 198) in running French text | 30 Mar 1703 | fr | cryptanalysis | Nationaal Archief 3.01.19, inv.nr. 841 (H.A. 841) | "Niet aangetroffen; de sleutel tot het gebruikte geheimschrift is niet bekend" (original not found; the key to the cipher used is not known) -- same numeric-name-code shape as HU1, different sender/H.A. | No (printed-edition page image read, not the manuscript) | Not copy-free by pattern (NA 3.01.19; invnr 841 itself not individually checked against the archive's per-item JSON this pass) |
-| HU10 | Heinsius correspondence: Sauniere de l'Hermitage (London) to Heinsius, letter no. 1231, a numeric code (14, 33, more) in running French text | 4 Dec 1705 | fr | recovery (same correspondent as HU2's candidate-key lead, different instance) | Nationaal Archief 3.01.19, inv.nr. 1034 (H.A. 1034) | "De code is onbekend, een sleutel is niet aanwezig. Voor 14 zou Tories gelezen kunnen worden, de lezing van de andere cijfers blijft een gissing." (the code is unknown, no key is present; 14 might tentatively read 'Tories', the rest is a guess) -- same sender as HU2 (H.A. 946, Feb-May 1704) but 19 months later and a different H.A. number, so probably the same broader numeric-code system extended across archival years | No | Not copy-free by pattern (NA 3.01.19; invnr 1034 not individually checked) |
-| HU11 | Staten-Generaal resolutions: an unnamed magistrate of Breda to the States-General, resolution no. 573 sub-note "d" | 18 Sept [1624 or 1625 -- the day itself is enciphered, per the editor] | nl | cryptanalysis | S.G. 4945 I, orig. (Nationaal Archief 1.01.02, a *different* NA series from Heinsius's 3.01.19) | "De brief is vrijwel geheel in cijferschrift, inclusief de dag in de datum, hetgeen de identificatie onzeker maakt" (the letter is almost entirely in cipher, including the day in the date, which makes identification uncertain) -- resolves round 1's flagged-but-unresolved "Deel 7 p.100" item to source_id `7` (NR = nieuwe reeks, juli 1624-1625, GS223), not `7OR` | No -- and the resolution register does not reproduce ciphertext at all (it summarizes incoming letters), so this edition's own page carries no ciphertext to check | Copy status not checked this pass (different series/inventory than the na_scan_check.py sweep covered) |
+| HU9 | Heinsius correspondence: Van Haersolte (writing from Warsaw) to Heinsius, letter no. 341, a numeric name-code (178, 198) in running French text | 30 Mar 1703 | fr | cryptanalysis | Nationaal Archief 3.01.19, inv.nr. 841 (H.A. 841) | CHECK-SOLVED 24 Sept 2026 (csHU3): open, confirmed. Full letter re-read verbatim (only two codes, 178/198, in an otherwise plain letter); footnote "Niet aangetroffen; de sleutel tot het gebruikte geheimschrift is niet bekend." Neighbours 338-343 clean. `ciphers/heinsius-vanhaersolte-1703/`. | No (printed-edition page image read, not the manuscript) | **NOT copy-free**: invnr 841 `availability:PHYSICAL, scans:[]`. REQUEST.md written. |
+| HU10 | Heinsius correspondence: Sauniere de l'Hermitage (London) to Heinsius, letter no. 1231, a numeric code (14, 33, more) in running French text | 4 Dec 1705 | fr | recovery (same correspondent as HU2's candidate-key lead, different instance) | Nationaal Archief 3.01.19, inv.nr. 1034 (H.A. 1034) | CHECK-SOLVED 24 Sept 2026 (csHU3): open, confirmed. Full letter re-read verbatim: **Deel 4 prints the actual ciphertext** (14, 33, 15, 50; 14 guessed "Tories"), unlike HU2's Deel 3 regests, which carry no ciphertext at all in print (re-verified this pass) -- so HU10's numbers cannot be checked against HU2's from the edition alone; only the NA originals (946, 1034) could settle it. `ciphers/heinsius-hermitage-1704/` (HU10 addendum). | No | **NOT copy-free**: invnr 1034 `availability:PHYSICAL, scans:[]`. REQUEST.md updated (946+1034+2317 together). |
+| HU11 | Staten-Generaal resolutions: an unnamed magistrate of Breda to the States-General, resolution no. 573 sub-note "d" | 18 Sept 1624 (date resolved this pass: invnr 4945's own catalogue unittitle is "1624 juli - december") | nl | cryptanalysis | S.G. 4945 I, orig. (Nationaal Archief 1.01.02, a *different* NA series from Heinsius's 3.01.19) | CHECK-SOLVED 24 Sept 2026 (csHU3): open, confirmed, with one open caveat. Full resolution 573 and footnotes a-d re-read verbatim; all four cite bundle S.G. 4945 I. Footnote b: the *same resolution's* Maurits item is printed in "Van der Kemp IV p.391" -- that volume was **not located/opened this pass** (not on DBNL; Google Books/archive.org out of scope) and is flagged for the next worker/verifier before this row clears outreach gate 2. Breda's own siege literature (De Oranjeboom 64/2011) checked in full: only cipher mentioned there is a different letter (Frederik Hendrik to Justinus, May 1625, broken by Spinola at the time). `ciphers/breda-statengeneraal-1624-25/`. | No -- the resolution register never reproduces ciphertext | **NOT copy-free**: invnr 4945 `availability:PHYSICAL, scans:[]` ("1624 juli - december"). REQUEST.md written. |
 
 **Rejected after opening the page (6 of 9), not carried to rows:** heinsius/`in 't cijfer` (Deel 10 p.213) describes
 a *third party's* intercepted cipher letters (from Commachio, reported via one Venzati) that were themselves
@@ -3783,6 +3783,29 @@ under the brief's 150-request cap. `github.com` 2 shallow clones (`dbourdeau/cyp
 `aaymeloglu/unsolved-ciphers`), grepped for Haersolte/Sauniere/Hermitage/Breda/Vaudemont (no matches; not
 committed). No other hosts, no subagents. No check-solved run on HU9-HU11 (scout brief; next worker runs
 check-solved before any nomination). No novelty wording.
+
+**Check-solved outcome, 24 September 2026** (LANE N2 worker csHU3, brief `.claude/briefs/runs/2026-09-24-
+lane-n2-csHU3.md`): all three rows run to the full brief -- editions read directly and in full (not just
+trusted from the harvest's snippet), neighbouring letters/resolutions checked, post-edition WebSearch, Breda's
+own siege literature (De Oranjeboom 64/2011) read in full via local PDF text extraction, community lists,
+DECODE, and both solver repositories, all negative. **HU9** -> `ciphers/heinsius-vanhaersolte-1703/` (new
+folder) -- open, cryptanalysis, only two ciphertext tokens (178, 198), likely below unicity distance alone.
+**HU10** -> added as a dated addendum section to `ciphers/heinsius-hermitage-1704/` (same folder as HU2, per
+brief) -- open, recovery (candidate key, unconfirmed, same invnr 2317 lead as HU2); the brief's specific
+question (do HU10's numbers overlap HU2's code) could not be answered from print -- HU2's own ciphertext isn't
+printed anywhere, only HU10's is, flagged strongly in REQUEST.md so a future H.A. 946 photograph can settle it.
+**HU11** -> `ciphers/breda-statengeneraal-1624-25/` (new folder) -- open with one caveat: the same resolution's
+own footnote apparatus names a printed edition (C.M. van der Kemp, *Maurits van Nassau* IV, p.391) for a
+*different* item in the same source bundle, and that volume could not be located/opened this pass (DBNL: no;
+Google Books/archive.org: out of scope for this brief) -- flagged as the row's open lead, not treated as
+clearing check-solved's own Thurloe/Montagu lesson. Also resolved the harvest's date uncertainty (18 Sept 1624,
+not 1625) from invnr 4945's own catalogue `unittitle`. Full search logs, verbatim edition quotes and images in
+each target's own NOTES.md/images/.
+Nominations this pass: HU9, HU10, HU11 (3 open, all stage-2 verified unsolved, none copy-free -- copy-order
+routes in each REQUEST.md; HU11 additionally carries the Van der Kemp IV caveat above, so hold it back from any
+outreach gate 2 step until that volume is checked). Requests: `resources.huygens.knaw.nl` 18, `www.
+nationaalarchief.nl` 4, `github.com` 2 shallow clones (grepped, not committed), WebSearch 3, WebFetch 3. No
+subagents. Well under the brief's $5 cap.
 
 ## Florence, Dieci di Balìa Responsive (LANE N2 probe of 24 September 2026)
 
