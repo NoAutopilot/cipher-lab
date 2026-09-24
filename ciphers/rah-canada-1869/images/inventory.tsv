@@ -1,0 +1,6 @@
+page	content	cipher_type	approx_tokens
+10137299	clear	n/a	n/a
+10137300	clear	n/a	n/a
+10137301	clear	n/a	n/a
+10137302	interlinear (clear line then its own cipher line, alternating, same hand)	mixed: Arabic digits (0-9) plus a fixed set of pen-drawn symbols (dot, cross/dagger, plus, circle-with-dot, plain circle, equals, dash, cursive loop marks resembling n/m, small accent tick) used as a nomenclator alphabet	~95 (13 cipher lines, most 6-10 space-separated groups; exact count pending passA/passB)
+10137303	interlinear (clear line then its own cipher line, alternating, same hand)	same mixed digit+symbol set as 10137302	~30 (4 cipher lines; exact count pending passA/passB)

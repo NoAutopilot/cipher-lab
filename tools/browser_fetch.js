@@ -3,11 +3,19 @@
 // (JavaScript challenges, Cloudflare checks, HathiTrust, PARES, Spink, TNA Discovery pages).
 //
 //   NODE_PATH=$(npm root -g) node tools/browser_fetch.js URL OUT.html [--shot OUT.png] [--pdf OUT.pdf]
-//        [--wait 3000] [--selector "css"] [--click "css"] [--type "css=text"] [--ua "..."]
+//        [--wait 3000] [--selector "css"] [--click "css"] [--type "css=text"] [--ua "..."] [--profile DIR]
+//        [--binary] [--retries 3]
 //
 // Saves the rendered HTML after network idle plus the optional wait. --selector waits for that element.
 // --type fills a field and presses Enter (for search boxes); --click clicks before saving.
-// Exit code 0 on success; the final URL and title are printed to stdout.
+// --binary saves the navigation response's raw body to OUT instead of page.content() -- for a site whose
+// bot-challenge (e.g. Anubis) must be cleared by a real browser before an image or other binary resource
+// will serve (bibliotecadigital.rah.es's imagen_id.do, confirmed 24 Sept 2026: curl always hits the
+// challenge's 307, and the challenge itself is intermittent even in headless Chromium -- "Anubis could not
+// load its JavaScript" on some loads, a real page other times -- so --binary retries the navigation up to
+// --retries times (default 3) until the response's content-type is not text/html. Use --profile so a
+// passed challenge's cookies carry to the next fetch. Exit code 0 on success; the final URL and title (or
+// byte count for --binary) are printed to stdout.
 const { chromium } = require('playwright');
 const fs = require('fs');
 
@@ -37,6 +45,28 @@ const has = (k) => args.includes(k);
   }
   const page = await ctx.newPage();
   try {
+    if (has('--binary')) {
+      const retries = parseInt(opt('--retries', '3'), 10);
+      const wait = parseInt(opt('--wait', '4000'), 10);
+      let saved = false;
+      for (let attempt = 1; attempt <= retries && !saved; attempt++) {
+        const resp = await page.goto(url, { waitUntil: 'load', timeout: 60000 });
+        if (wait > 0) await page.waitForTimeout(wait);
+        const ct = resp ? resp.headers()['content-type'] || '' : '';
+        if (resp && resp.ok() && !ct.startsWith('text/html')) {
+          const buf = await resp.body();
+          fs.writeFileSync(out, buf);
+          console.log(JSON.stringify({ url: page.url(), contentType: ct, bytes: buf.length, attempt }));
+          saved = true;
+        } else {
+          console.error(`attempt ${attempt}/${retries} not binary (content-type=${ct}, status=${resp && resp.status()})`);
+          if (attempt < retries) await page.waitForTimeout(3000);
+        }
+      }
+      if (!saved) { console.error('browser_fetch --binary failed: no binary response after retries'); process.exitCode = 1; }
+      await browser.close();
+      return;
+    }
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
     await page.waitForLoadState('networkidle', { timeout: 60000 }).catch(() => {});
     const typeArg = opt('--type', null);
