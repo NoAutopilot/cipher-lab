@@ -1,28 +1,28 @@
 row	codes
-f30r_L01a	HASH ss2 FL xr zb Af r3 BOX ss2 zb rs? 9 lam? 9 III nr?
+f30r_L01a	HASH ss2 FL xr zb Af r3 BOX ss2 zb z3 9 lam? 9 III nr?
 f30r_L01b	ss2 FL sl zb xr h BOX ss2 g fh h 2 9 ss2 FL eh xr Af? III br 9 H?
-f30r_L02a	[?] null_o nq? n BOX TRI? III n6 paren zb 2 h z3? FL zb Mx?
-f30r_L02b	o? FL xr 2 fh m . QQ 9 ss2 re? lt g 2 zb mx BOX FL 5 br zb? . dl r3 9
+f30r_L02a	INF null_o nq? n BOX TRI? III n6 paren zb 2 h z3? FL zb B8?
+f30r_L02b	FL xr 2 fh m . QQ 9 ss2 re? lt g 2 zb mx BOX FL 5 br zb? . dl r3 9
 f30r_L03a	c? BOX c x 2 Rt br zb ss2 eh 9 nq? n BOX INF? rho
-f30r_L03b	z z3 5 m 2 dl dl? br 5 9 2 ST A2 . CROSS? r3 9 2 FL xr lt? 9
-f30r_L04a	nr III FL m lt z3 eh dl Rt h bb? Af? T m A2 n6 eh
-f30r_L04b	9 r3 zb ss2 z nn? c m r3 h aq? HASH 9 FL dl III D? z n6 eh B8? h 9
+f30r_L03b	z z3 5 m 2 dl dl? br 5 9 2 ST A2 . CROSS? r3 9 2 FL xr CROSS 9
+f30r_L04a	nr III FL m lt z3 eh dl Rt h br Af? T m A2 n6 eh
+f30r_L04b	9 r3 zb ss2 z nn? c m r3 h aq? HASH 9 FL dl III br z n6 eh B8? h 9
 f30r_L05a	E z3? ss2 9 nr BOX n6 lam fh nr? xr nr eh dl lt g r3 ST
 f30r_L05b	z bb? fh B8? h xr lt? m 9 fh III mx h Rt 4t? lam Mx z z3
 f30r_L06a	bb? 9 2 xr c ss2 9 FL eh zb h br lam aq Sx sl?
 f30r_L06b	h BOX c sl bb zb Af z HASH? rho? lam xr 5 m . ss2 eh Tb? 2 2 5 sl FL
-f30r_L07a	fh z3 2 lt? Rt . h br 2 zb mx HASH nq? n BOX n6 lt
-f30r_L07b	ss2 g 2 n6? lam h A2 nq? Rt nr 2 9 g ST III 2 q z r3 lt ll? 9 2
-f30r_L08a	B8? m 9 n6 g BOX 2 sl nr Af? III 2 fh xr 5? eh sl 2 sl?
-f30r_L08b	[?] o? oi br BOX 2 paren n6 r3 z HASH? 2 lt Mx lam nr m yt? dl z br
+f30r_L07a	fh z3 2 CROSS Rt . h br 2 zb mx HASH nq? n BOX n6 lt
+f30r_L07b	ss2 g 2 n6? lam h A2 Rt nr 2 9 g ST III 2 q z r3 lt ll? 9 2
+f30r_L08a	B8? m 9 n6 g BOX 2 sl nr Af? III 2 fh xr 5? eh sl 2 ST?
+f30r_L08b	9 oi br BOX 2 paren n6 r3 z CROSS 2 lt Mx lam nr m B8 dl z br
 f30r_L09a	ss2 9 nr 2 BOX Af E A2 9 zb HASH? h? Af? sl Rt aq z nr
 f30r_L09b	m ST dl g2 r3 lam n6 fh 9 z Mx mx 9 5 m xr lt nr nq? h E?
 f30r_L10a	z lam g rho A2 xr lt? eh q9? 9 xr? c Tb r3 9
 f30r_L10b	n6 5 sl zb ss2 xr BOX n6 z aq g lt 2 c h rho z xr ll z3 br fh 9
-f30r_L11a	ST 9 Mx? E lam xr Af? 9 br c sl FL? lt h 2
-f30r_L11b	m . QQ? 9 c z n6 lt xr ev? ss2 B8? nq? 2 h 9 ST bb g BOX
-f30r_L12a	CROSS lam Tb? g 2 9 nq? n xr c ST 2 aq? ss2 mx?
-f30r_L12b	x FL III Af? lt? c z 2 m . nq? h 9 n6 fh BOX g T xr 9 H
+f30r_L11a	ST 9 CROSS E lam xr Af? 9 br c sl FL? lt h 2
+f30r_L11b	m . QQ? 9 c z n6 lt xr ev? ss2 B8? nq? zb h 9 ST bb g BOX
+f30r_L12a	CROSS lz Tb? g 2 9 nq? n xr c ST 2 aq? ss2 mx
+f30r_L12b	FL III Af? lt? c z 2 m . nq? h 9 n6 fh BOX g T xr 9 H
 f30r_L13a	rho? z xr r3 9 lam h B8? eh? r3 z z3 br sl Tb r3 9
 f30r_L13b	9 yt? III 5 m z nr eh 5 sl c lam . ss2 9 nr h lt g 2 zb bb Af 9
 f30r_L14a	mx xr c sl 2 m . br z aq 2 lt nr HASH? c 9 n6 m

@@ -1,0 +1,22 @@
+line	pos	old	new	applied	reason	crop
+f30r_L01	10	rs	z3	yes	stacked '2 over 3' form as atlas z3; no tall slashed t of rs (A 5, B rs, C z3)	crops/f30r_top/L01_z3.jpg
+f30r_L02	0	[?]	INF	yes	blot lies left of the sign; the sign is a clear figure-8 with loops and descender, as atlas INF (C INF)	crops/f30r_top/L02_INF.jpg
+f30r_L02	15-16	Mx o	B8	yes	one sign cut by the a/b seam (a ends page x 1868, b starts 1852), counted twice; whole it is a crossed stroke with a loop at upper right, same shape as L11 pos26 B8; identity l	crops/f30r_top/L02_seam_B8.jpg
+f30r_L03	36	lt	CROSS	yes	symmetric cross pattee, not the tall stem-with-foot of lt (L04 pos4, L07 pos16)	crops/f30r_top/L03_CROSS.jpg
+f30r_L04	10	bb	br	yes	oval with two inner bars and flat left side, as br at L03 pos6 and legend k10; the stroke above is L03's descender	crops/f30r_top/L04_br10.jpg
+f30r_L04	33	D	br	yes	same br shape (inner bars, foot at lower left); not atlas D (a 2 inside a D with a tail) (B br)	crops/f30r_top/L04_br33.jpg
+f30r_L07	3	lt	CROSS	yes	double-barred cross with serifs, as L08 pos29 and L11 pos2; no lt stem (C CROSS)	crops/f30r_top/L07_CROSS.jpg
+f30r_L07	24	nq	(deleted)	yes	the hairline is the exit stroke of A2, continuous from its foot; no separate sign (B, C no sign)	crops/f30r_top/L07_A2_tail.jpg
+f30r_L07	33	q	q9	no	spiral loop on top and curved descender, not atlas q (closed bowl, straight stem); q9 (legend k49) vs g2 vs 9 not decided at this resolution. Sense LES PAROLLES wants P (grade I)	crops/f30r_top/L07_q.jpg
+f30r_L07	20	n6	(deleted?)	no	faint small loop at the foot of lam, lighter ink; may be part of lam or a separate sign; not decided	crops/f30r_top/L07_lam.jpg
+f30r_L08	18-20	sl [?] o	ST 9	yes	under the blot the run holds two signs, not three: a long s with foot curl joined to a t with crossbar (ST, identity l; FL possible) and a 9 with long tail	crops/f30r_top/L08_seam.jpg
+f30r_L08	29	HASH	CROSS	yes	one stem with two bars (double-barred cross); HASH has two stems	crops/f30r_top/L08_b.jpg
+f30r_L08	36	yt	B8	yes	crossed stroke with loops, same shape as L11 pos26 and the L02 seam sign; not yt (hooked stem over a bar)	crops/f30r_top/L08_b.jpg
+f30r_L11	2	Mx	CROSS	yes	stem with two bars and a knob on top (double-barred cross); no m (C CROSS)	crops/f30r_top/L11_CROSS.jpg
+f30r_L11	28	2	zb	yes	second horizontal bar under the 2, as zb at L06 idx9/21 (C zb)	crops/f30r_top/L11_zb.jpg
+f30r_L12	1	lam	lz	yes	small curl joined to a z, as atlas lz; no lambda diagonal (C lz)	crops/f30r_top/L12_lz.jpg
+f30r_L12	14-15	mx x	mx	yes	one cursive m-x ligature (legend k59) cut by the a/b seam; the x is its second half	crops/f30r_top/L12_seam_mx.jpg
+f30r_L01	31	eh	c	no	c with a tick above; eh and c not separable here (C c)	-
+f30r_L04	11	Af	Tb	no	stem with loop at top right and low crossbar; Af and Tb both possible	crops/f30r_top/L04_br10.jpg
+f30r_L11	6	Af	4t	no	heavy stem with two bars and a right loop, near 4t; not decided (C 4t)	-
+f30r_L12	19	lt	T/Th	no	I-beam with serifs top and bottom, not lt; T or Th not decided	-

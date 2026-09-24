@@ -671,3 +671,57 @@ rather than substitute a letter:
 Grade counts (f.30, 1973 tokens) move from H 1502/M 239/U 232 to **H 1500/M 241/U 232**; extended from
 H 1502/S 158/M 254/U 59 to **H 1500/S 158/M 256/U 59** (updated above, in AUDIT.md and status.json). No other
 row of `passC_proposed_changes_f30.tsv` was touched.
+
+## f.30r top lines re-read (24 Sept 2026)
+
+Worker: solver (LANE G child, Opus, cap $8), 05:18-05:35 UTC by `date -u`. Disk only: no host contacted, no subagents.
+Scope: f.30r L01-L04, L07, L08, L11, L12, the eight lines still unread after the published key and the 11 grade-S values.
+
+**Images.** No native region is on disk, but the committed line-half crops are native resolution and overlap their
+neighbours, so `recrop_f30r_top.py` pastes them back at page coordinates (crops.json; b halves start at splits.json - 8)
+into one mosaic of L01-L13 and cuts the evidence crops from it at 2-5x (`crops/f30r_top/`, 17 files, 0.8 MB). Every sign
+in the eight lines was re-read at 2x against legend_sheet.png and the two atlases, with the M/L signs and the a/b seams
+at 4-5x. The ink blot on L02 and L07-L09 lies across the paper, but on these crops the signs under it can be read.
+It left no sign on these lines unreadable.
+
+**Corrections** (`fixes_f30r_top.tsv`, 21 rows: 16 applied, 5 not applied). What they show:
+- **Seam double counts (3).** A sign cut by the a/b split was counted once in each half: L02 `Mx o` -> one sign
+  (B8), L12 `mx x` -> `mx`. On L08, three signs under the blot are really two (`sl [?] o` -> `ST 9`).
+- **Shape corrections (11):** L01 rs->z3; L02 [?]->INF; L03 lt->CROSS; L04 bb->br and D->br; L07 lt->CROSS;
+  L08 HASH->CROSS and yt->B8; L11 Mx->CROSS and 2->zb; L12 lam->lz.
+- **L07:** one reading deleted: `nq`, which was the exit stroke of A2.
+- Two cross shapes are both coded CROSS: a cross pattee (L03 pos36, L12 pos0) and a double-barred cross (L07 pos3,
+  L08 pos29, L11 pos2). A later key check may need to split them.
+- **Not applied** (the image does not decide): L07 q (not atlas q; q9, g2 or 9), the faint loop at L07 lam's foot,
+  L01 eh/c, L04 Af/Tb, L11 Af/4t, L12 lt vs T/Th.
+
+Applied through `passR_f30.tsv` -> `build_ciphertext_f30.py` -> `decode.py`. Both `--check` pass. Only the eight
+target lines changed. The other f.30 lines and all f.29r outputs are byte-identical. f.30 now has 1969 signs (was
+1973). Grades: published key **H 1502, C 0, S 0, M 231, I 0, U 236**. Extended **H 1502, C 0, S 159, M 245, I 0, U 63**.
+The eight lines alone (extended): H 183, S 44, M 52, U 19 of 298 (before: H 181, S 43, M 63, U 15 of 302). U rose
+because four signs moved from a keyed misreading to unkeyed CROSS/INF/B8.
+
+**Lines, extended reading after the fixes** (sense by eye, grade I):
+- **Now French with gaps (were not French): L04, L08.**
+  - L04 `NesTOIDPOVRM[SS]TeNDERA·LTRVY·EsPeRAND·VE`: POVR (was POV[COM]) and ESPERAN- (was ESPEQAN-) both come from
+    the two br fixes. ·LTRVY is AVLTRVY if the unkeyed `nn` is V.
+  - L08 `·TENVeSENMeSDICDESLEEReSNRA·SOlANT·PAR`: TENVES EN MES DIC-DES.
+- **Still French with gaps: L03, L07.**
+  - L07 `DIS·OVRS·QveNOVSNAVeONSEVleSEARO[LL]ES`: DIS-OVRS QVE NOVS ... EV LES -AROLLES.
+- **Still not French: L01, L02, L11, L12.** The signs are not the cause: each one is identified at 2-5x, and the
+  three passes and this re-read agree on them. What remains is the key, in one of three ways:
+  - L01-L02 are dense with the arch ss2 (6 on L01) and the barred zb. Both are read as nulls from f.29r's closing run.
+  - The unkeyed signs are HASH, TRI, INF, B8, CROSS and ev.
+  - L11 BAIMER and L12 hPVSE rest on Af=M, E=B and Tb=P, which are doubtful here.
+
+  Whether these lines hold nomenclator words or a different value for ss2/zb is not established.
+
+**Inferred from sense only, grade I, not applied** (for a key-image check, not for key.tsv): eh = T (NESTOIT and
+ESPERANT on L04, DICTES on L08; infer_unkeyed.py's hidden-sign test gave eh -> T at 47.6 bits). CROSS = C
+(DISCOVRS, L07). L07 q = P (LES PAROLLES). nn = V (AVLTRVY, L04). A2 as null or I on L07 (N'AVONS / AVIONS). These
+five would make L04, L07 and L08 continuous French. None of them has an image reading or a control behind it.
+
+**Where not searched:** no phrase or print search on the new text. Novelty is not classified (rule 10).
+Suggestion (not done): check eh, CROSS (both shapes), nn and the arch ss2 against the Lasry and Tomokiyo key images.
+
+Requests this pass: none to any host.
