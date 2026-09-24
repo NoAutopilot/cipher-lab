@@ -639,7 +639,7 @@ is not established priority. For 57, the Dresden minute may already carry the pl
   updated to the N4 classes and these safe sentences.
 - **Suggestions (not done):** (1) Dresden inquiry for Loc. 9941/3 f.268-269, the one route that could lower 57; (2)
   Namèche 1884 pages on the Leipzig wedding, once books.google.com page text is usable again; (3) von Weber, *Archiv f.
-  sächs. Gesch.* 3 (1865) 309 ff., for 57's context; (4) OpenAlex and Semantic Scholar from a session with a key or
+  sächs. Gesch.* 3 (1865) 309 ff., for 57's context [closed by V3d, SO-SAXONY-53-57: pp. 309-339, no 1561 item, does not print 57]; (4) OpenAlex and Semantic Scholar from a session with a key or
   another IP.
 
 Outreach: gate 2 open on JSTOR lines 55, 56, 63, 64 (ASKS row 39). CONTRIBUTIONS.md row added, held at gate 2, no draft.
@@ -730,3 +730,33 @@ decipherment located"); the KHA minute with its 'Zeitung' remains the unpublishe
 
 Requests (V3c, this label): www.dbnl.org 1; archive.org 5 (advancedsearch 1, metadata 1, djvu texts 3 incl. one 30 KB
 range); www.googleapis.com 2 (0 hits). No subagents.
+
+## Second opinion SO-SAXONY-53-57 (ChatGPT, pull request 9), checked 24 Sept 2026, 17:03 UTC
+
+Verifier V3d (Opus, for LANE V4, session_01Ly3mwAF7mCgYnLZxpd5ENK). Input: `second-opinions/chatgpt-2026-09-24-SO-SAXONY-53-57.md`
+(GPT-6, copied from branch `second-opinion/SO-SAXONY-53-57`, PR 9, unmerged; suffixed because SO-SAXONY-126's file has the
+bare name). It reports no page-verified print or independent decipherment of either cipher passage, marks most inherited
+citations unverified, and criticises the prompt's smoothing of 53. Each checkable claim was checked below. No decoding; the
+readings were not changed.
+
+| # | claim | source checked | verdict | correction made |
+|---|---|---|---|---|
+| 1 | Demandt, HessJb 38 (1988) pp. 49-102, p. 78 nr. 113 (18 Nov), nr. 115 (23 Nov); part II in HessJb 39 (1989) p. 87; contents of nr. 113 unverified, the negative rests on snippets, a page image is decisive | V8 table (page ranges from three bibliographies; snippet controls "Schweden"/"Inquisition" positive, Maximilian/römisch/Kaiser/Wahl/Zettel/Chiffre 0 in the volume) | **right, and already stated** (V8 "Residual risk": snippet-view negative, page image would settle it) | none |
+| 2 | WVO 57 witnesses: KHA A 11/XIV B/41-6; Dresden Loc. 9941/3 f.268r-269v with Zettel and 23 Nov postscript; Wiesbaden 171 M 319-321 fol. 4, 40; a Zettel may differ from the enclosure; keep 18 and 23 Nov apart | A2.4 / A2.2.3 (WVO record fetched 24 Sept 2026) | **consistent with the repo**; the caution matches D2.3 ("could lower 57 to N0 in substance"; only if its text matches the enclosure) | none |
+| 3 | WVO 53: Dresden Loc. 9941/3 f.266r-v original; Collectie Japikse copy, foliation unknown; reading is rumour, not settled policy | A2.4 (WVO record) | **consistent**; D2's safe sentence already says "news that ... would" and "the rumours themselves are in print" | none |
+| 4 | Japikse I (1934), index pp. 386-390, ends Sept 1561; cannot alone exclude quotation in notes | A3.2 | **fair**: A3 read the chronological index, not every note. The later-dated letters could only appear in a note to an earlier letter; logged as residual, not a gap in a principal family | none |
+| 5 | Kluckhohn I nr. 148 = Palatine audience 30-31 Dec 1561; `bub_gb_3N1SAAAAcAAJ` is II.2 | D2.1 row 1; V3c row 9 | **right; already stated** | none |
+| 6 | Goetz 1891, Becker's Universitäts-Buchdruckerei, single volume, Google `e9VhQlFNBzAC`, IA `WalterDieWahlMaximiliansII` | Google Books API volume record (1 request): title, subtitle, Goetz, Becker's Universitäts-Buchdruckerei, 1891, 207 pp.; A3.3 read the IA text | **right** | none |
+| 7 | Karl von Weber, "Des Kurfürsten August zu Sachsen Verhandlungen mit ... Maximilian II. über dessen Glaubensbekenntnis", *Archiv für sächsische Geschichte* 3 (1865) pp. 309-339; not claimed to print 57 | IA `bub_gb_lFwAAAAAcAAJ` (Archiv für die sächsische Geschichte **Bd. III**, IA dates it 1864; "Register zum dritten Bande"; signature "Archiv f. d. sächs. Gesch. III. 21"), djvu text, 1 fetch. Running head "...Kurfürsten August zu Sachsen Verhandlungen" to p. **339**, article opens c. p. 309. Grep of the article: no "1561" date at all; its narrative runs from Seebottendorf's Vienna report of 9 Apr 1560 to Zasius 1563, the 1566 Reichstag and 1568-77. Oranien occurs once, August to Duke Albrecht, 27 Mar 1577 (a leak at the Frankfurt fair five years earlier). No Wahl/römischer König passage (Fraktur OCR, read at sentence level round the hits) | **right on the citation**; the article does not print or cite August's letter of 18 Nov 1561 | D2 suggestion (3) closed here; NOTES.md follow-up annotated |
+| 8 | Paul John Regan, Southampton PhD 1995, note 197 cites Demandt p. 78 nr. 115 for the 23 Nov postscript | eprints.soton.ac.uk record and PDF: **unreachable** (401 Anubis challenge on both, 2 requests, stopped). Web search (1): the record's title, author and Sept 1995 date confirmed; note 197 not seen | **existence right; note unverified**. Even as described it cites nr. 115, which V8 showed regests the clear 23 Nov postscript (Spain, Inquisition; Lorraine, Guise), not the cipher | none; logged as a lead, no class effect |
+| 9 | 53: 364 signs, S 238 M 126; 57: 300 signs, C 247 M 53; 57 uses the key of WVO 74 | `tools/decode_key.py . --check` exits 0: "tokens 364: M 126, S 238"; "tokens 300: C 247, M 53"; `reading_57.txt` header "key_74.tsv" | **right** | none |
+| 10 | mechanical output of 53 has "zuberzuschreiben", "geschret", "mrch"; the prompt's "zu bergen zu schreiben" and "mich" are interpretations | `reading_53.txt` l.2 "zuberzuschreiben", l.7 "geschret", l.10 "...uuiederholenmrch" vs PROMPT-chatgpt-53-57.md | **right**: the prompt gave a normalised, partly emended text as "our reading" ("zu bergen" unmarked; "[mich]" and "[itzmals?]" marked). Same fault V3c found in the 126 prompt | PROMPT-chatgpt-53-57.md now labels both excerpts as normalised and gives 53's sign-level output verbatim; solver suggestion logged in NOTES.md; reading unchanged |
+| 11 | the 99.3% control figure is inherited; zero U is coverage, not correctness | D2.4 safe sentence cites the control; `solve_53_control.json` in folder | **fair**; not re-run (verifier does not decode) | none |
+| 12 | no exact citation in Groen, Gachard, Rachfahl II.1, Böttiger, Kruse, Blok, Ritter, Reichstagsakten or a cipher study | D2.3 table | **no new source named**; Böttiger, Ritter and Rachfahl II.1 text remain logged as unreachable/weak there | none |
+
+**Class.** No check found a prior print or decipherment of either cipher passage. **53 stays N4** (no prior decipherment
+located; for a cryptanalytic reading) and **57 stays N4** (no prior decipherment located). The Dresden minute of 57 with
+its 'Zettel' remains the unpublished witness that could lower 57.
+
+Requests (V3d): archive.org 4 (advancedsearch 1, djvu texts 3); eprints.soton.ac.uk 2 (401 Anubis, stopped);
+www.googleapis.com 1; WebSearch 1. No subagents.

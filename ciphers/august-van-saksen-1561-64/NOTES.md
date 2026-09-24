@@ -305,7 +305,7 @@ Kervyn *Relations politiques* II (IA, nothing); Rachfahl II.1 text unreachable (
 HTRC tokens were scanned for co-occurrence of the gist (nothing; the "chiffrierter Zettel" pages are 1562). OpenAlex and
 Semantic Scholar 429 a third time (do not block). 24 Google Books API gist queries: nothing. Unpublished witnesses
 remain: the Dresden minute of 57 with its 'Zettel' (could lower 57), the KHA Japikse copy of 53. Outreach held at gate 2
-(ASKS row 39). Follow-ups: Dresden inquiry f.268-269; Namèche 1884 wedding pages; von Weber, Archiv f. sächs. Gesch. 3.
+(ASKS row 39). Follow-ups: Dresden inquiry f.268-269; Namèche 1884 wedding pages; von Weber, Archiv f. sächs. Gesch. 3 [done 24 Sept 2026, V3d: pp. 309-339, IA bub_gb_lFwAAAAAcAAJ, nothing for 1561].
 
 ## csWV3: two further circle letters, not candidates (LANE N2, 24 September 2026)
 
@@ -331,3 +331,10 @@ Neither changes this folder's own N4 verdicts for 53/57/126 above. Requests this
 ## Reading suggestions from SO-SAXONY-126 (logged by verifier V3c, 24 Sept 2026; not applied)
 
 - 126: 'adesn' (l.6) and 'slagen' (l.6) print as emended 'adern', 'schlagen' in the prompt; a solver should check on f.139 whether the s/r sign and the missing 'ch' are transcription or key issues, and whether the down-arrow read 'k' (l.5 pos 11) and 'ge' (l.5 pos 17) is one sign or two forms.
+
+## Second opinion SO-SAXONY-53-57 (24 Sept 2026, V3d for LANE V4)
+
+Checked in AUDIT.md: no prior print found; 53 and 57 stay N4. Prompt excerpt for 53 relabelled as normalised with the
+sign-level output verbatim. Solver suggestion (not done): settle 53's M tokens behind "zuberzuschreiben" (l.2),
+"geschret" (l.7) and "mrch" (l.10) from the image before any quotation; the normalised "zu bergen zu schreiben",
+"geschrey" and "mich" are emendations, not readings.

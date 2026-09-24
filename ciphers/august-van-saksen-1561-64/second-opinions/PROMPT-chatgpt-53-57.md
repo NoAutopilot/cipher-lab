@@ -10,7 +10,12 @@ Hauptstaatsarchiv Dresden, Geheimer Rat (Geheimes Archiv), Locat 9941/3 "Printze
 Willem van Oranje, letter 53 (https://resources.huygens.knaw.nl/wvo/app/brief?nr=53). The clear letter begins
 "Wiewoll ich E. Churf. G. diesmals nichtz sonders zu schrieben gehebt" and mentions dogs and ferrets sent as gifts. Part
 of it is in a symbol cipher.
-Our partial reading of the cipher (excerpt): "neiuuer zeittung hab ich itcmals [itzmals?] nicht zu bergen zu schreiben, dan das
+Our partial reading of the cipher, **normalised** (word division, u/uu to v/w, and the emendations "zu bergen", "[mich]"
+are ours; checked 24 Sept 2026, SO-SAXONY-53-57). Sign-level output verbatim (`reading_53.txt`, S 238 M 126 of 364, no key
+source): "neiuuer zeittung hab ich itc malsn icht zuberzuschreiben danCOLdas demprintzenzuhispanien ... und danein
+gemeingeCOLschretCOListes uuolle der hertzoguon uandosmen seinkonigreich nauarramitder guteoderkriguuiederholenmrch |
+dunck aber dieuueilderkonnigzufranck reich nochsoiungistesuuerdekeinen furganggeuuinnen".
+Normalised excerpt: "neiuuer zeittung hab ich itcmals [itzmals?] nicht zu bergen zu schreiben, dan das
 dem printzen zu hispanien seines hern vatters schwester ehlich vermahlet werden und hieruber diese lande zu regieren
 khomen sollen, und dan ein gemein geschret [geschrey?] ist, es wolle der hertzog von Vandosmen sein konigreich Navarra mit der
 gute oder krieg wiederholen..." (News: the Prince of Spain, Don Carlos, is to marry his father's sister and come to
@@ -26,7 +31,8 @@ recorded "with a 'Zettel' and a second postscript of 23 November". Excerpts: Hes
 Abt. 171 M nr. 319-321, fol. 4 and 40; regest in K. E. Demandt, "Nassau-oranische Korrespondenzen 1553-1570 (I)",
 Hessisches Jahrbuch für Landesgeschichte 38 (1988), p. 78, nr. 113. Record:
 https://resources.huygens.knaw.nl/wvo/app/brief?nr=57.
-Our reading of the cipher (excerpt): "auff freundtlich hoch vertrawen wollen wir E.L. nitt bergen, das der Keiser fur
+Our reading of the cipher, normalised (brackets = sign groups read as abbreviations, e.g. [wir], [E.L.], [Keiser]; `reading_57.txt`,
+C 247 M 53 of 300, key of WVO 74) (excerpt): "auff freundtlich hoch vertrawen wollen wir E.L. nitt bergen, das der Keiser fur
 wenig tagen durch seine stadtliche gesanndten bei uns suchen lasen, seinen sohn König Maximilianum noch bei seinem,
 des Keisers, leben zu einem römischen Könige zu erwelen..." (The Emperor's envoys asked August to elect Maximilian
 King of the Romans in the Emperor's lifetime; the other Electors would be asked too; keep it secret.)
