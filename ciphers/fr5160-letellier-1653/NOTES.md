@@ -1468,9 +1468,9 @@ repository)`. No logins, no credentials, no novelty wording. Well under the $7 c
 
 ## Folio 67: reconciled and read (24 Sept 2026)
 
-> **Verifier V5, 24 Sept 2026 (AUDIT.md, section "f.67"):** N3 for the partial reading (gist; S 107 / M 416, no H or C).
-> No prior decipherment or print located in the editions listed there; f.68r (canvas 131) and the AE ministry minute not seen.
-> Quote the gist, not M words, as the letter.
+> **Verifier V5b, 24 Sept 2026 (AUDIT.md, "f.67 re-class (V5b)"):** N0. f.68r (canvas 131) of this volume carries the
+> letter's text in clear (worker P, "f.68r and f.66r checked"); our partial reading (S 107 / M 416, no H or C) is a
+> re-decipherment. Supersedes V5's N3. f.68r is known plaintext for C-grading f.67 (a LANE G2 job).
 
 LANE G2 worker M (Opus, cap $8). Files: `reconcile_f67.py` -> `ciphertext_f67.tsv` (`--check`); `read_f67.py` ->
 `exceptions_f67.tsv` (per-token grades), `control_f67.tsv` (`--check`); `decode_f67.json` -> `tools/decode_key.py . --config

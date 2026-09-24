@@ -1356,8 +1356,8 @@
    "date": "24 Sept 2026",
    "kind": "recovery",
    "title": "Brienne to Servien, Paris 10 Oct 1659 (BnF fr.5160 folio 67): partly read with the 1659 key recovered from the office's November letters",
-   "grade": "S 107, M 416, I 9, U 14 of 546 groups (no H or C on this letter); N3 (verifier, AUDIT.md f.67): no prior decipherment or printed text located",
-   "line": "A cipher letter not flagged by earlier passes over fr.5160, found by the canvas walk. key_1659 (from the contemporary decipherment of f.86-88) keys 95.8% of its groups and beats 200 shuffled keys at word level (0.721 vs max 0.647). With most tokens M, what is established is the gist: Savoy, the reported rift between the Duke and Madame Royale, whether she withdraws from affairs, the Duke's marriage. No prior decipherment or print located in Cheruel IX, Recueil XIV, Cosnac, Claretta, Saint-Genis, IA or Google Books (24 Sept 2026); f.68 and the AE minute not seen.",
+   "grade": "S 107, M 416, I 9, U 14 of 546 groups (no H or C yet); N0 (verifier, AUDIT.md f.67 V5b): clear text of this letter on f.68r of the same volume",
+   "line": "A cipher letter not flagged by earlier passes over fr.5160, found by the canvas walk. key_1659 (from the contemporary decipherment of f.86-88) keys 95.8% of its groups and beats 200 shuffled keys at word level (0.721 vs max 0.647). Its clear text survives on f.68r of the same volume (N0), which our partial reading matches and which resolves 'le duc' and 'le marquis de Pianese'; f.68r is known plaintext for C-grading the M tokens.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653"
   },
   {

@@ -142,6 +142,8 @@ covered.
 
 ## F67.1 Verdict
 
+> **Superseded 24 Sept 2026 by 'f.67 re-class (V5b)' below: f.67 is N0 (clear text on f.68r of the same volume).**
+
 | item | what is actually read | prior plaintext | prior decipherment of this item | class |
 |---|---|---|---|---|
 | f.67 cipher (546 groups, canvas 129 L01 to canvas 130 block B) | a **partial cryptanalytic reading**: S 107, M 416, I 9, U 14 of 546 groups, **no H or C** on this letter. The words are M-grade as a whole; what is established is the **gist** (Savoy; is the reported rift between the Duke and his mother real; is Madame Royale withdrawing from the "maniement des affaires"; the Duke's marriage, a "Mademoiselle" named), not a verbatim text | none located (F67.3) | none located: no interlinear or facing decipherment on f.67 (cipher numeral-only, no gloss, per two passes and the reconciler); f.66 is blank; f.68r is unseen at full resolution (F67.2) | **N3** |
@@ -242,3 +244,71 @@ be-api.us.archive.org 26 (print_check), www.googleapis.com 19 (13 print_check + 
 country=US, key never printed; D1 held the host at 09:49 for ~4 q, overlap small), api.archives-ouvertes.fr 1,
 api.crossref.org 1, api.openalex.org 1 (429, stopped), github.com 2 anonymous clones (grep, deleted). No Gallica, no
 logins, no subagents.
+
+## f.67 re-class (V5b)
+
+Verifier V5b (LANE V2, Opus), 24 Sept 2026, 10:17-10:25 UTC (`date -u` read before writing). Checks LANE G2 worker P's
+finding (commit 93db371, NOTES.md "f.68r and f.66r checked") against `reading_f67.txt`, from the committed files only.
+The canvas 131 image is **not on disk** (P kept it in a scratchpad; the folder is at its 30 MB cap), so this check rests
+on P's diplomatic transcription of f.68r, a single Sonnet reading. No decoding, no network.
+
+**Verdict: f.67 moves from N3 to N0.** Superseded: F67.1's N3, and the F67.5 safe sentence.
+
+| item | prior plaintext | prior decipherment of this item | class |
+|---|---|---|---|
+| f.67 cipher (546 groups) | **yes, in manuscript:** f.68r of the same volume (canvas 131) carries the letter's text in clear, in what P judged the same secretary hand | **yes, in substance:** f.68r gives the clear text of exactly the passages f.67 enciphers. Whether it is a contemporary decipherment or the clear minute that was enciphered is not settled (no "Dechiffré" heading seen). Either way the plaintext of this very item sits beside it in the holding volume | **N0** |
+
+**Why the match counts as the same letter, not the same subject.** P's f.68r text follows `reading_f67.txt` in order
+through a run of distinctive clauses, not only its topic words:
+
+| f.67 reading (line) | f.68r (P) |
+|---|---|
+| "qu[e je] v ou s di e qu n pu b i e de s n ou ve l le s de ... la ve i te de s ques l le s oi l ... m q r te r oi t fo r t de s t re e s c la oi s c y" (f129 L02-L05) | "le vous die qu'on publie des nouvelles de la verité desquelles il importeroit fort d'estre esclairay" |
+| "s c a v oi r ques la f e c t i n du fi l je ... de la me re n e s t pr lu s si gn ... de ... pa s se" (L05-L07) | "scavoir que la affection du fils a l'endroit de la mere n'est plus si grande qu'au passé" |
+| "e t ques M. se r oi t e n [154] pe n se e de se re t re r du ar ni e me n t de s le fa oi re s PARCEQUE SIL POUVOIT ESTRE c st oi n t ... l m b la b le c ha n ge me n t n ou s ... de s me su re s qu pr re n e re a le [80]" (L07-L11) | "et que Madame seroit en quelque pensée de se retirer du maniement des affaires parceque s'il pouvoit estre craint qu'il arrivast un semblable changement nous aurions des mesures a prendre avec le duc" |
+| "i n fi i a t i n [79] [80] p ou r se ar i e r ... la pe e s n ne e t q ou r le te m pr s ... fo n de me n t ques lo n pu b i e ar da mo oi se l le qu re n du t re s ar ou [_25] ... ar da mo oi se l le d r le" (f130a L02-L06) | "l'inclination du duc pour se marier, pour la personne et pour le temps, et si c'est avec quelque fondement que l'on publie que mademoiselle a rendu tres mauvais office a mademoiselle d'Orleans sa soeur" |
+| "ce q l di t de la me s oi n re i ge n ce de n t re le fi l je e t la me re oi t ve i ta b le si le ar r q s de [_2] qu ne je de me ou re st c [51] e de s le f fa oi re s ... su r q le [80] se ... c ha r ... qu n ju ge e n pe n se e pr lu s ... di ve r t r ques de s y qu pr pr i ques r" (f130b L01-L07) | "que ce qui se dit de la mesintelligence d'entre le fils et la mere soit veritable, si le marquis de Pianese demeurera [chef] des affaires ou bien sur qui le duc se [pourvoira de charge], qu'on juge en pensée plustost de se divertir que de s'y appliquer" |
+
+Five consecutive stretches agree in order and in wording (not only in subject), including the plain-text words
+f.67 carries in clear ("parceque s'il pouvoit estre"). f.68r also fills slots our key left open: `[80]` = "le duc",
+`[_2]` = "Pianese", and "d r le" = "d'Orleans sa soeur". It is not a different letter on a similar subject. The walk's
+"duc de Parme marriage prospects" for canvas 131 was a thumbnail misreading: P's text has "l'inclination du duc
+pour se marier" and no Parma.
+
+**Precedents.** The f.86/f.88 N0 above (decipherment on f.87 of the same volume, manuscript only, section 2 ruling:
+N0 does not need print) and `ciphers/clair1067-brienne-poland-1646/AUDIT.md` (decipherment on the leaf = N0). f.68r is
+the same case: the plaintext of this very item is in the holding volume beside it, and the BnF describes the item-1
+letters as "souvent accompagnées du déchiffrement". The one difference: f.68r carries no "Dechiffré" heading, so it may
+be the clear minute rather than a decipherment. That does not change the class. Either way the ciphertext-to-plaintext
+mapping was known to the office and survives in the volume.
+
+**Did we first-decipher?** No. Our partial reading is a re-decipherment of a letter whose clear text lies two leaves on.
+
+**Confidence:** high that f.68r is the same letter (five ordered stretches of wording). Medium on how exactly the leaf
+relates to f.67, since no heading was seen and the relation is P's single reading. It rests on one transcription. A second eye
+on canvas 131 at native resolution (LANE G2) should confirm the text and look for a heading. That could refine the
+wording. It would change the class only if f.68r proved to be a different letter, and the table above makes that unlikely.
+
+**Safe (f.67):** "BnF fr.5160 f.67 (Brienne to [Ennemond] Servien, Paris, 10 Oct 1659) is enciphered in the table
+recovered from the f.87 decipherment; its clear text survives on f.68r of the same volume (N0, manuscript, 24 Sept 2026).
+Our partial reading (S 107 / M 416 of 546 groups) agrees with it and is a re-decipherment, useful as a check on the key."
+
+**Unsafe (f.67):** "we deciphered a previously unread letter"; "no prior decipherment located" (superseded); anything
+presenting the f.67 reading as the only source of the text; "letter to Abel Servien".
+
+**For LANE G2 (not done here):** f.68r gives known plaintext for f.67. Aligning P's (or a second) transcription of
+f.68r to `ciphertext_f67.tsv` would turn many of the 416 M tokens and the 14 U into C-grade checks (as f.87 did for
+f.86/f.88), and would test key_1659's homophone rows on a second letter. That needs `dechiffre_f68.txt` committed with
+a second pass.
+
+**Corrections made (24 Sept 2026):**
+- F67.1 and F67.5 above: superseded by this section (a pointer line added under F67.1). The text is kept for the record.
+- NOTES.md, "Folio 67" verifier blockquote: N3 -> N0 with pointer here.
+- status.json, f.67 results row: grade "N3 ... no prior decipherment ... located" -> "N0 (verifier, AUDIT.md f.67 V5b):
+  clear text on f.68r of the same volume"; line's "No prior decipherment or print located ... f.68 ... not seen"
+  replaced with the f.68r fact.
+- SECOND-OPINIONS-QUEUE.tsv: SO-FR5160-F67 marked `withdrawn` (N0; a second opinion on print is moot). The prompt
+  file is left in place for the record. JSTOR rows 32, 61 and 62 are left as they are. They cannot change an N0.
+- NOTES.md status line: stays `open`. The folder's 1653 letters are unresolved, so no change is within the vocabulary.
+
+Requests: none (no network beyond git).
