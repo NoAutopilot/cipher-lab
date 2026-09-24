@@ -1,0 +1,16 @@
+seed 0: signs=888 units=540 types=29 exc=0 acc=1.000
+  truth tramaleinforfnataadciocheepsisubditiuostrietnostrihabianoadbenuicinaresenzaaltratumultuati
+  read  tramaleinforfnataadciocheepsisubditiuostrietnostrihabianoadbenuicinaresenzaaltratumultuati
+seed 1: signs=908 units=540 types=29 exc=0 acc=0.989
+  truth ziacontinuodiinonstrataalinostriparticolaripresupponendocheellanonsiamenoamoreuoledelpubli
+  read  tiacontinuodiinonstrataalinostriparticolaripresupponendocheellanonsiamenoamoreuoledelpubli
+seed 2: signs=950 units=540 types=29 exc=0 acc=1.000
+  truth itrocederoiluostrobeneficioetaquestoeffettohofattoprocurasecondocheuoiditeinpersonadimgiul
+  read  itrocederoiluostrobeneficioetaquestoeffettohofattoprocurasecondocheuoiditeinpersonadimgiul
+seed 3: signs=877 units=540 types=29 exc=0 acc=1.000
+  truth dicachequestogiuglianouifosseetperquestolhannomolteuolteminacciatoetminaccianotuttauiapurl
+  read  dicachequestogiuglianouifosseetperquestolhannomolteuolteminacciatoetminaccianotuttauiapurl
+seed 4: signs=961 units=540 types=29 exc=0 acc=1.000
+  truth ndoquidouefraifauorichelasslefarebbeelapresenziasuasitorrebbeardireetoccasioneadognunodima
+  read  ndoquidouefraifauorichelasslefarebbeelapresenziasuasitorrebbeardireetoccasioneadognunodima
+CONTROL design=12:letter solved_as=12:letter noise=0.0 units=540: mean acc 0.998, per seed 1.00 0.99 1.00 1.00 1.00
