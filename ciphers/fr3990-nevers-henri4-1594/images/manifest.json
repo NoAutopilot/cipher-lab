@@ -462,5 +462,249 @@
    },
    "date": "24 Sep 2026"
   }
+ ],
+ "tall_recut": [
+  {
+   "crop": "f27_L01_s1t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    0,
+    37,
+    1720,
+    202
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L01_s2t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    1540,
+    0,
+    3260,
+    177
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L02_s1t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    0,
+    163,
+    1720,
+    328
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L02_s2t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    1540,
+    123,
+    3260,
+    303
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L03_s1t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    0,
+    282,
+    1720,
+    447
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L03_s2t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    1540,
+    242,
+    3260,
+    422
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L04_s1t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    0,
+    410,
+    1720,
+    575
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L04_s2t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    1540,
+    370,
+    3260,
+    550
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L05_s1t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    0,
+    529,
+    1720,
+    694
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L05_s2t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    1540,
+    489,
+    3260,
+    669
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L06_s1t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    0,
+    631,
+    1720,
+    796
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L06_s2t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    1540,
+    591,
+    3260,
+    771
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L07_s1t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    0,
+    758,
+    1720,
+    923
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L07_s2t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    1540,
+    718,
+    3260,
+    898
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L08_s1t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    0,
+    843,
+    1720,
+    1008
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L08_s2t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    1540,
+    803,
+    3260,
+    983
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L09_s1t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    0,
+    994,
+    1720,
+    1159
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L09_s2t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    1540,
+    954,
+    3260,
+    1134
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L10_s1t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    0,
+    1111,
+    1720,
+    1276
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L10_s2t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    1540,
+    1071,
+    3260,
+    1251
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L11_s1t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    0,
+    1215,
+    1720,
+    1380
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  },
+  {
+   "crop": "f27_L11_s2t.jpg",
+   "source_file": "src_ark_12148_btv1b90068799_f55_640_3050_3260_1750.jpg",
+   "box_in_region": [
+    1540,
+    1175,
+    3260,
+    1355
+   ],
+   "note": "taller recut for the rising line ends, LANE R5 F3"
+  }
  ]
 }
