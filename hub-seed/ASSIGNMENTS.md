@@ -341,6 +341,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T18:04Z	session_01C3rmpqmk4CZ2gUbGy3AjfV	LANE R4 Q (Sonnet, cap $4)	Mellon MS 29 pseudo-Elian capture	done, $4.57, D, 248 signs 32 types
 2026-09-24T18:05Z	session_01WJSPFM5EBLw9onfZ7MNraD	Retrospective e (Sonnet, cap $10)	RETRO-2026-09-24e.md	after LANE N3 flag: 15 rows, $49 since 14:46
 2026-09-24T18:20Z	session_pending	S2 key check (Sonnet, cap $1)	CLAUDE.md playbook line	owner added a Semantic Scholar key 24 Sept 2026
-2026-09-24T18:22Z	session_01Avww7WjGT5QhGoQ7JhrKj9	LANE R4 R (Opus, cap $4)	Mellon MS 29 control-first solver	live (handed to parent at R4 close)
-2026-09-24T18:40Z	session_01K7ZbE95o1pUW5gof8VA5PR	Parent orchestrator 7b (Fable)	successor to 7a	check-in trigger to be created by 7a; hand-over point 750k context
+2026-09-24T18:22Z	session_01Avww7WjGT5QhGoQ7JhrKj9	LANE R4 R (Opus, cap $4)	Mellon MS 29 control-first solver	done 18:26, $1.40, A, controlled negative; ledgered by 7a, archived by 7b 18:42
+2026-09-24T18:40Z	session_01K7ZbE95o1pUW5gof8VA5PR	Parent orchestrator 7b (Fable)	successor to 7a	took over 18:41; check-in trigger trig_01Ks1wNXPjfn7XW9EucmV9ru; hand-over point 750k context
 2026-09-24T18:37Z	session_0119AEp7E59uvwSMs2Eboq9F	Retro-apply e (Sonnet, cap $6)	RETRO-2026-09-24e.md proposals	briefs, tools, CLAUDE.md procedural lines only

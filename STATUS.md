@@ -149,7 +149,7 @@ brief lane-r4-r-mellon-solver) -- for the parent to ledger, archive and route ('
 | jan-van-nassau 5549 | 5205 and 5209 fitted, negative (C) | -- |
 | fr3789-mariedemedicis-savary-1610 | both passages transcribed; key (BnF fr.3642) not on Gallica, DECODE photo blocked: status blocked, ASKS 43 (M) | -- |
 | fr3151-seure-1558 | six items surveyed (cipher in 40=41, 43=44), f75L captured and re-segmented (noise 56% -> 9%), passes still 38.5%: the hand's signs do not separate by shape (K, O) | -- |
-| beinecke-mellon29-elia | ff.1v-2v captured from Yale IIIF, two passes reconciled: 248 signs, 32 types, 58 words (Q); solver R live | -- |
+| beinecke-mellon29-elia | ff.1v-2v captured from Yale IIIF, two passes reconciled: 248 signs, 32 types, 58 words (Q); solver R: no reading, controlled negative (Italian, German mono and homophonic controls 88-97%, target below every control), closed-negative 18:43 by the parent | -- |
 
 **Open items (priority):**
 1. Posthius (LANE V4): read the faint interlinear letters over 1614 cipher lines 2-4 at native resolution before classing.

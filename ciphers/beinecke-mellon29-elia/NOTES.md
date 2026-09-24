@@ -1,4 +1,6 @@
-open
+closed-negative
+
+**Status set closed-negative by the parent orchestrator, 24 Sept 2026 18:43 UTC**, from the LANE R4 R solver section below: simple and homophonic substitution of continuous Italian, German or Latin excluded with matched controls (rule 3); the item is more likely a list of disguised names than a text. Capture, atlas and controls stay in the folder. Reopen only with a key source or a different cipher model.
 
 **Edition check (LANE N3 csED3, 24 Sept 2026 18:xx UTC):** hold lifted -- verdict `open`. The standard printed
 catalogue (Witten & Pachella, *Alchemy and the Occult*, Yale 1977, vols 3-4) is not reachable in full (HathiTrust
