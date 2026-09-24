@@ -302,6 +302,14 @@ Getting the material is most of the work. Try routes in this order and record wh
    Update, 21 Sept 2026: the person rotated the password and reset `DECODE_USER`/`DECODE_PASS`; a single test
    login with the new pair was also rejected (same `IS_LOGGEDIN:false` signal). One attempt only, per the
    handling rule below — do not retry further without the person confirming the account again (ASKS.md row 1).
+   **Resolved 24 Sept 2026, 04:40 UTC:** DECODE_USER is the site's plain user name, not an email (the owner logs in
+   with user name and password). The curl form POST is never evaluated by the server, even with every hidden field,
+   the submit button and Origin/Referer posted (`tools/decode_fetch.sh` repaired 7401f94, run once: re-rendered,
+   IS_LOGGEDIN:false, no 'incorrect' message). A real browser submission works first time:
+   `NODE_PATH=$(npm root -g) node tools/decode_browser_login.js RECORD_ID OUT_DIR` logs in headless, lands on
+   RecordsList and saves RecordsView/RECORD_ID; cookies stay in the in-memory context. Use it, one login per
+   session, fetch everything in that session, and scrub the account name from any saved page before committing.
+   Record 8725 (BL Add MS 72438 f.104) carries Status: Decrypted with two documents and two images (fetch pending).
    Handling rule (20 Sept 2026, after two workers echoed a password into their own transcripts): never run
    `env`, `printenv`, `set`, `export -p` or `cat /proc/*/environ` unfiltered; never `curl -v`, `--trace` or
    `set -x` on a command that carries a credential; pass credentials only through `--netrc-file` (mode 600,

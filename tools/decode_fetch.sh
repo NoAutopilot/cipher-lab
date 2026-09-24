@@ -45,8 +45,10 @@ fi
 # "Incorrect user name or password" message, which is what an unrecognised submission looks like, not a bad password.
 EXTRA_ARGS=()
 while IFS= read -r tag; do
-  n=$(printf '%s' "$tag" | grep -o 'name="[^"]*"' | head -1 | sed 's/name="//;s/"$//')
-  v=$(printf '%s' "$tag" | grep -o 'value="[^"]*"' | head -1 | sed 's/value="//;s/"$//')
+  # `|| true`: a <button> without a value attribute made grep exit 1 inside $(...), and set -e then killed the script
+  # silently before any POST (24 Sept 2026 04:39 UTC, the first run of the repaired form).
+  n=$(printf '%s' "$tag" | { grep -o 'name="[^"]*"' || true; } | head -1 | sed 's/name="//;s/"$//')
+  v=$(printf '%s' "$tag" | { grep -o 'value="[^"]*"' || true; } | head -1 | sed 's/value="//;s/"$//')
   case "$n" in csrf_name|csrf_value|username|password|"") continue;; esac
   EXTRA_ARGS+=(--data-urlencode "$n=$v")
 done < <(grep -o '<input[^>]*type="hidden"[^>]*>\|<button[^>]*type="submit"[^>]*>' "$LOGIN_PAGE")
