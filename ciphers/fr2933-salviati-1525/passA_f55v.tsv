@@ -159,10 +159,10 @@ line	pos	code	marks	action	conf	note
 6	24	e		confirm	H	
 6	25	lam	dot|dot	confirm	H	
 7	1	e	+	confirm	H	
-7	2	eps	5	confirm	H	
+7	2	eps	5	confirm	M	
 7	3	S7	#	confirm	H	
 7	4	S7	#	confirm	H	
-7	5	S7	dot|ot	confirm	H	
+7	5	Z	dot|ot	correct	M	clear Z zigzag shape, not S7
 7	6	eps		confirm	H	
 7	7	S7	~	confirm	H	
 7	8	lam		confirm	H	
@@ -170,9 +170,9 @@ line	pos	code	marks	action	conf	note
 7	10	]	o	confirm	H	
 7	11	e	dot	confirm	H	
 7	12	eps	1	confirm	H	
-7	13	_	7	plain	H	
+7	13	lam	7	correct	M	clear lam shape with a superscript '15'-looking mark above, not plain; classifier's own attached mark tag was '7', kept as recorded pending settling
 7	14	_		plain	H	
-7	15	_	#	plain	H	
+7	15	m	3	correct	M	m shape with mark 3 above, not plain
 7	16	lam		confirm	H	
 7	17	S7	1	confirm	H	
 7	18	e		confirm	H	
@@ -187,10 +187,10 @@ line	pos	code	marks	action	conf	note
 7	27	tee		confirm	H	
 7	28	K	1	confirm	H	
 7	29	m	1|5	confirm	H	
-7	30	Z		confirm	H	
+7	30	Z		confirm	L	cut off at line edge, ambiguous rounded shape, kept classifier Z
 8	1	lam	5	confirm	H	
 8	2	#	o	confirm	H	
-8	3	wd		confirm	H	
+8	3	wd		confirm	M	
 8	4	bh		confirm	H	
 8	5	y		confirm	H	
 8	6	y		confirm	H	
@@ -208,26 +208,26 @@ line	pos	code	marks	action	conf	note
 8	18	S7		confirm	H	
 8	19	e	+	confirm	H	
 8	20	S4		confirm	H	
-8	21	_		plain	H	
-8	22	S		confirm	H	
+8	21	_		plain	L	plausible plain word start 'As', kept classifier plain call
+8	22	S		confirm	H	letter-like code S in a tightly-kerned stretch (pos21-28) that may be one continuous plain word; kept classifier call, flag for pass B
 8	23	_		plain	H	
-8	24	H	dot	confirm	H	
-8	25	L		confirm	H	
+8	24	H	dot	confirm	H	letter-like code H in same stretch as pos22 note; kept classifier call
+8	25	_		correct	M	clearly the recurring plain word 'Così', not sign L (same pattern as line3 pos13)
 8	26	S		confirm	H	
-8	27	_		plain	H	
-8	28	N		confirm	H	
+8	27	_		plain	M	small box in the pos21-28 stretch, kept classifier plain call
+8	28	N		confirm	H	letter-like code N in same stretch as pos22/24 note; kept classifier call
 8	29	_		plain	H	
 9	1	S7		confirm	H	
 9	2	tee		confirm	H	
 9	3	g	dot	confirm	H	
-9	4	nt	dot	confirm	H	
+9	4	_		correct	M	plain cursive 'my', not nt sign
 9	5	_	1|1	plain	H	
-9	6	_		plain	H	
-9	7	_		plain	H	
+9	6	_		plain	M	small stroke with dots, plausible plain punctuation/letter
+9	7	_		plain	L	compound cursive shape, plausible plain letters, kept classifier plain call
 9	8	ch		confirm	H	
-9	9	S4		confirm	H	
+9	9	S4		confirm	M	crossed vertical strokes, matches S4
 9	10	dl		confirm	H	
-9	11	_		plain	H	
+9	11	tee		correct	M	upright+crossbar shape with marks above/below, not plain
 9	12	Lx		confirm	H	
 9	13	g		confirm	H	
 9	14	_		plain	H	
@@ -240,7 +240,7 @@ line	pos	code	marks	action	conf	note
 9	21	e	#	confirm	H	
 9	22	wd		confirm	H	
 9	23	y		confirm	H	
-9	24	_	dot	plain	H	
+9	24	_	dot	plain	M	hrf-like cursive shape with dot, kept classifier plain call, moderate share
 9	25	w		confirm	H	
 9	26	#	#	confirm	H	
 9	27	w		confirm	H	
