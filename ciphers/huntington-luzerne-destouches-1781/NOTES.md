@@ -2,6 +2,8 @@
 
 Status: open
 
+**Verifier correction, 24 Sept 2026 08:16 UTC (LANE W verifier G, AUDIT.md):** mssDE 108(A) is NOT undeciphered in the archive. Its duplicate, **mssDE 108(B)** (same date, headed "Duplicata", pointers 10574-10579, compound 10580), is catalogued "written in numerical code, and is decoded, by Destouches, in French", and p.1 was seen to carry an ink French gloss under every group, with the same figures as 108(A). A copy is also in AAE, CP États-Unis vol. 15 (Idzerda, Lafayette Papers 3:319, cited by Papers of George Washington, Rev. War ser. 30, Destouches to GW 7 Feb 1781 n.1). Class **N0** for 108(A) and for mssDE 68. Recommended status `found-solved` (the lane orchestrator sets it). Sentences below saying 108(A) has no decipherment in the archive are marked [superseded, AUDIT.md].
+
 ## Description
 
 Two ciphered letters from Anne-César, Chevalier de la Luzerne (French minister to the United States) to
@@ -22,7 +24,7 @@ only the two dates were transposed. Also, and more consequentially: mssDE 68 is 
 its own catalogue note (full text below) says the numerical code is "translated into French in another hand",
 and direct examination confirms an interlinear contemporary French decipherment runs beside the cipher on all
 three of its written pages (p1-p3). Of the two "undeciphered" items in this row, only mssDE 108(A) (Jan 16, 8pp,
-entirely in code except three lines of French conclusion on p6) in fact lacks any decipherment in the archive.
+entirely in code except three lines of French conclusion on p6) in fact lacks any decipherment in the archive. [superseded, AUDIT.md: its duplicate mssDE 108(B) is deciphered by Destouches]
 
 ## Check-solved sweep, 24 September 2026
 
@@ -200,14 +202,14 @@ cipher line followed immediately by its own interlinear French decipherment on t
 from mssDE 55's decipherment); p4 blank. mssDE 108(A): pure numeric cipher on p1-p6 (p3-p5 not individually
 re-opened this pass, inferred from the uniform pattern on p1/p2/p6 and the catalogue note — flagged so the next
 worker treats this as inferred, not directly checked, per rule 4/grade I), three lines of French conclusion plus
-signature at the top of p6, p7-p8 blank; genuinely undeciphered in the archive. mssDE 37: cipher on p1-p2 with
+signature at the top of p6, p7-p8 blank; genuinely undeciphered in the archive. [superseded, AUDIT.md: its duplicate mssDE 108(B) is deciphered by Destouches] mssDE 37: cipher on p1-p2 with
 interlinear decipherment in an amber/orange ink, closing signed "Le Ch[evalie]r de la Luzerne". mssDE 55: cipher
 on p1-p2 with interlinear decipherment in pencil (visibly a different decipherer's hand from mssDE 37's), same
 closing signature. Approximate token counts and per-page detail in `images/inventory.tsv`.
 
 **Net effect on this item's status:** three of the four Huntington items in this small correspondence (mssDE 68,
 37, 55) already carry a contemporary French decipherment on the page; only mssDE 108(A) (8pp, ~570 numeric tokens
-by rough count) is undeciphered in the archive itself. Combined with the Tomokiyo/Cryptiana lead already in this
+by rough count) is undeciphered in the archive itself. [superseded, AUDIT.md: its duplicate mssDE 108(B) is deciphered by Destouches] Combined with the Tomokiyo/Cryptiana lead already in this
 file (a sibling ~1200-element code at Yale, same window, key not identified there either), mssDE 108(A) is now a
 much better-defined key-recovery target: three in-collection decipherments (68, 37, 55) from the same clerk's
 network, all close in date (Jan-Mar 1781), are strong candidates for reconstructing the figure table that
@@ -270,7 +272,7 @@ counts and silently dropped the (now renamed) C bucket. `python3 build_pairs.py 
 - mssDE 68's own ink decipherment: **not a solve, a transcription** of the archive's own contemporary reading
   (every one of its 177 groups already glossed, per R1/R6). Written to `reading_68.txt` by `build_reading_68.py`
   (struck glosses kept as `[x:...]`, the decipherer's own null marks kept as `nul`); C 158, M 19, U 0.
-- mssDE 108(A) (16 Jan 1781, the one item in this small correspondence with no decipherment in the archive):
+- mssDE 108(A) (16 Jan 1781, the one item in this small correspondence with no decipherment in the archive) [superseded, AUDIT.md: its duplicate mssDE 108(B) is deciphered by Destouches]:
   `decode.json` + `tools/decode_key.py` apply `key.tsv` (built from 68/37/55's known plaintext, not a key sheet for
   108(A) itself) to `ciphertext.tsv`. **719 tokens: C 347, M 110, U 262** (173 distinct unkeyed figures). No S grade
   assigned or possible: 108(A) carries no per-position plaintext vote (its only marks are the sparse later pencil
