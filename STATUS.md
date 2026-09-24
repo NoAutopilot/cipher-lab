@@ -617,6 +617,44 @@ work in progress. Orchestrator session 2,042 since 17 Sept. **Nothing here is bi
   archives and Cryptiana. The original orchestrator container predates the change and cannot; it delegates.
 - Repo conventions: CLAUDE.md. Workflows: .claude/workflows/check-solved.js and scout.js.
 
+## LANE G2 handoff (24 Sep 2026 11:58 UTC)
+
+Written by LANE G2 orchestrator session_015NqJ9uu5Ef3Bo6QaRiGcGp (Opus) at about $72 of its own usage and 440k context, from 07:43 UTC.
+Lane = Gallica digitised manuscripts; the only lane on gallica.bnf.fr and archivesetmanuscrits.bnf.fr, at most two fetching workers at a time.
+**Live workers: none.** 29 workers collected, ledgered (Session column), ASSIGNMENTS rows done, archived.
+
+**Results this lane produced (status.json rows; classes are the verifiers'):**
+- clair1067-brienne-poland-1646: key_1646 from the interlinear decipherment, C307 M31 of 338; N0 (LANE V); status solved.
+- clair1108-duvergier: interlinear decipherment found by the reconciler, key_1696 129 codes, C584 M82 U1 of 667; N0 (LANE V2); status solved.
+  fol.249r is show-through of 249v, no cipher. Open: 9 groups of letter B; fol.247v (canvas 251) native is only in a dead worker's
+  scratchpad (re-fetch command in images/manifest.json).
+- fr5160-letellier-1653: folio 67 (10 Oct 1659), a letter found by the canvas walk, read with key_1659 and then aligned to its own clear
+  text on f.68r: C454 M92 of 546; N0 (LANE V2). key_1659_ext +16 codes; code 65 = ma everywhere; code 6 is qu on f.86/f.88 and a on f.67
+  (compare the canvas 129 native with crops/f86_cipher_L08.jpg to settle table change vs misread); _12 = ri is a new conflict row.
+  1653 band: negative with controls (1646/1647/1651 keys lose to 200 derangements; constrained anneal reads 25.7% of a same-size synthetic).
+  Canvas 32 and the canvas 11-12 block have two passes each, not reconciled (low value while the 1653 table is unreadable). The whole
+  volume (367 canvases) is walked; no further cipher. No sibling volume in 1653-61 carries a cipher note (sources/solver-diffs/...-servien.tsv).
+- fr2980-gramont: Tb=O and q=B at S in the extended f.30 reading (H1486 S181 M239 U63); L12 French with gaps; L01, L02, L11 still not.
+  f.29r not extended with Tb=O (+18 bits there; would need a note, the leaf is at N4).
+
+**Queue rows (Gallica round 4, M22-M34) and their state:** M23, M22, M24, M25, M28 not digitised -> blocked, REQUEST.md, ASKS 35 and 36
+(one BnF reproduction order). M31 found-solved (Tomokiyo/Ryabov 2025). M32 fr.2751 and M33: decipherment only, no ciphertext (found-solved /
+dropped). M29 Portugais 33: register copy in clear, closed-negative. M30 Duprat: decipherments without ciphertext in the leaves viewed
+(~120 canvases unviewed). M26 Paget 1713 not found in 316 canvases of Clairambault 296 (M4 Paget 1714 is the same correspondent). M27 open,
+held for duplicate risk (Estrades keys 1647-53). M34 is Espagnol 144, 1648 item unpinned. Round 5: zero new rows; archivesetmanuscrits
+pagination past page 1 fails for curl (a browser_fetch.js worker could page the capped terms 'chiffre', 'en chiffre', 'avec chiffres').
+DC8 Baluze 156: passes 87.6%, Sabran-1631 key negative with control on the numeral half, letter-symbol half untested. DC9: agrees with Bourdeau.
+DC1 (LANE R2): Gallica images of fr.20506 f.136 and fr.2988 f.9 delivered.
+
+**Lessons (ledgered):** capture briefs one target, strict cap, stop a Gallica endpoint after one retry (manifest/services endpoints reset
+all day; the direct image endpoint works); check digitisation and actual ciphertext at scout time ('déchiffrement' items, register copies and
+Arsenal manuscripts mostly fail); ask every reconciler whether clear text over the groups is a contemporary decipherment (it turned
+clair1108 from cryptanalysis into recovery); a cheap lookup worker answering a verifier's question moved f.67 from N3 to N0 in 12 minutes.
+
+**Next for a successor (priority):** (1) the fr5160 code 6 image compare (one native); (2) a browser-tool scout for the capped
+archivesetmanuscrits terms; (3) M30 Duprat remaining canvases for ciphertext; (4) M4+M26 Paget if M26 is found; (5) DC8 letter-symbol half
+from Lasry's Sabran key (fr.4134/4135).
+
 ## LANE G handoff (24 Sep 2026 06:39 UTC)
 
 Written by LANE G orchestrator session_014zWyan51u9qMn9gnHpm1Aq (Opus) after about $70 of its own usage and 460k context, so a
