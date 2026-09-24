@@ -1,0 +1,298 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f17r_cipher_L01_s1.jpg",
+   "source_url": "",
+   "source_file": "f32_native.jpg",
+   "box": [
+    0,
+    3881,
+    2400,
+    4016
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 138,
+    "distance": 96,
+    "prominence": 114.9
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f17r_cipher_L01_s2.jpg",
+   "source_url": "",
+   "source_file": "f32_native.jpg",
+   "box": [
+    1529,
+    3881,
+    3929,
+    4016
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 138,
+    "distance": 96,
+    "prominence": 114.9
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f17r_cipher_L02_s1.jpg",
+   "source_url": "",
+   "source_file": "f32_native.jpg",
+   "box": [
+    0,
+    4016,
+    2400,
+    4151
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 138,
+    "distance": 96,
+    "prominence": 114.9
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f17r_cipher_L02_s2.jpg",
+   "source_url": "",
+   "source_file": "f32_native.jpg",
+   "box": [
+    1529,
+    4016,
+    3929,
+    4151
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 138,
+    "distance": 96,
+    "prominence": 114.9
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f17r_cipher_L03_s1.jpg",
+   "source_url": "",
+   "source_file": "f32_native.jpg",
+   "box": [
+    0,
+    4151,
+    2400,
+    4290
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 138,
+    "distance": 96,
+    "prominence": 114.9
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f17r_cipher_L03_s2.jpg",
+   "source_url": "",
+   "source_file": "f32_native.jpg",
+   "box": [
+    1529,
+    4151,
+    3929,
+    4290
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 138,
+    "distance": 96,
+    "prominence": 114.9
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f17r_cipher_L04_s1.jpg",
+   "source_url": "",
+   "source_file": "f32_native.jpg",
+   "box": [
+    0,
+    4290,
+    2400,
+    4428
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 138,
+    "distance": 96,
+    "prominence": 114.9
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f17r_cipher_L04_s2.jpg",
+   "source_url": "",
+   "source_file": "f32_native.jpg",
+   "box": [
+    1529,
+    4290,
+    3929,
+    4428
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 138,
+    "distance": 96,
+    "prominence": 114.9
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f19r_cipher_L01_s1.jpg",
+   "source_url": "",
+   "source_file": "f36_native.jpg",
+   "box": [
+    0,
+    1419,
+    2400,
+    1583
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 163,
+    "distance": 114,
+    "prominence": 181.7
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f19r_cipher_L01_s2.jpg",
+   "source_url": "",
+   "source_file": "f36_native.jpg",
+   "box": [
+    1532,
+    1419,
+    3932,
+    1583
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 163,
+    "distance": 114,
+    "prominence": 181.7
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f19r_cipher_L02_s1.jpg",
+   "source_url": "",
+   "source_file": "f36_native.jpg",
+   "box": [
+    0,
+    1583,
+    2400,
+    1752
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 163,
+    "distance": 114,
+    "prominence": 181.7
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f19r_cipher_L02_s2.jpg",
+   "source_url": "",
+   "source_file": "f36_native.jpg",
+   "box": [
+    1532,
+    1583,
+    3932,
+    1752
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 163,
+    "distance": 114,
+    "prominence": 181.7
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f19r_cipher_L03_s1.jpg",
+   "source_url": "",
+   "source_file": "f36_native.jpg",
+   "box": [
+    0,
+    1752,
+    2400,
+    1850
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 163,
+    "distance": 114,
+    "prominence": 181.7
+   },
+   "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f19r_cipher_L03_s2.jpg",
+   "source_url": "",
+   "source_file": "f36_native.jpg",
+   "box": [
+    1532,
+    1752,
+    3932,
+    1850
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 163,
+    "distance": 114,
+    "prominence": 181.7
+   },
+   "date": "24 Sep 2026"
+  }
+ ]
+}
