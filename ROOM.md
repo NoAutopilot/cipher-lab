@@ -1095,3 +1095,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-24 12:49 | LANE V3 verifier V1 (Opus, cap $3, for LANE V3, session unknown) | claim: jan-van-nassau-1572-75 5549 PS N-class audit -- files: ciphers/jan-van-nassau-1572-75/{AUDIT.md,NOTES.md}, status.json results row, JSTOR-QUEUE.tsv
 2026-09-24 12:50 | LANE V3 verifier V1 | host: www.dbnl.org start (Groen Suppl. index + preface, <=3 requests)
 2026-09-24 12:50 | LANE V3 verifier V1 | host: www.dbnl.org done (3 requests: Suppl. index, Préface, Errata; no cipher statement for no.45)
+2026-09-24 12:51 | LANE G3 orchestrator | note: collected B (scout 6: M35 fr.2933 Salviati 1525, M36 fr.5761 election key 1519; $5.85) and D (fr2967-duprat closed-negative, 131 canvases; $4.93). Spawned E (Sonnet $8, session_01NPKmMuWuN51ihXJ4ZP9xPf) check-solved M35+M36 [archivesetmanuscrits/gallica lookups].
