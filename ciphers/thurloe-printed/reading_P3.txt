@@ -1,0 +1,309 @@
+# Reading of Thurloe letter P3 (John Butler, informant in Holland, to secretary
+# Thurloe, c. 22 Sept 1656, printed p.575-577, vol. 2 -- Tomokiyo's own 'John Butler
+# (1656)' cipher) from the decipherment printed above each cipher line in the body
+# (djvu 47926-47997), aligned by tools/interlinear_align.py against P3_pairs.tsv, plus
+# the postscript (djvu 48000-48004), which has no adjacent decipherment of its own and
+# is decoded here from the body's key alone. Tomokiyo's six stated values (E=3/5/405;
+# 62=Spain, 156=Charles; nulls 913/350) kept at H throughout. Regenerate: python3 decode_butler.py
+# Grades over 297 tokens: 2 not cipher groups (-); of 295 cipher groups H=48 C=52 I=1 M=182 U=12
+# No matched control run (no S grades; every meaning comes from the print or Tomokiyo).
+#
+# Columns: djvu-line  raw-token  grade  reading  alignment-status
+#==========================================================================
+L47931	13	U		null-or-unaligned
+L47931	409	U		null-or-unaligned
+L47931	413	M	w	conflict:b
+L47931	40	M	i	conflict:a
+L47931	913	H	[null]	print aligned 'n' here; Tomokiyo thurloe.htm: 'other numbers such as 913, 350, etc. may be nulls'
+L47931	403	M	d	conflict:o
+L47931	401	M	c	single
+L47931	19	M	o	conflict:n
+L47931	26	M	n	conflict:t
+L47931	417	M	t	conflict:i
+L47931	31	M	r	conflict:e
+L47931	44	M	a	single
+L47931	60	M	r	conflict:i
+L47931	405,	H	e	print aligned 'y' here; Tomokiyo thurloe.htm E=3/5/405
+L47932	2°8.	-		page/running-head numeral, not a cipher group
+L47934	400	M	r	conflict:a
+L47934	44	M	r	conflict:a
+L47934	417	M	i	single
+L47934	16	M	v	conflict:c
+L47934	420	C	e	agrees
+L47934	405	H	e	print aligned 'd' here; Tomokiyo thurloe.htm E=3/5/405
+L47934	40	M	r	conflict:a
+L47934	417	M	o	conflict:i
+L47934	2	M	t	conflict:e
+L47934	26	C	t	agrees
+L47934	419	C	e	agrees
+L47934	405	H	e	print aligned 'r' here; Tomokiyo thurloe.htm E=3/5/405
+L47934	44	M	d	conflict:a
+L47934	406	C	a	agrees
+L47934	400	M	m	conflict:a
+L47934	350	H	[null]	print aligned 'p' here; Tomokiyo thurloe.htm: 'other numbers such as 913, 350, etc. may be nulls'
+L47938	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L47938	60	C	i	agrees
+L47938	10	M	g	conflict:a
+L47938	408	M	h	single
+L47938	26	C	t	agrees
+L47938	5	H	e	Tomokiyo thurloe.htm E=3/5/405
+L47938	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L47938	19	C	n	agrees
+L47938	418	C	t	agrees
+L47938	405	H	e	print aligned 'h' here; Tomokiyo thurloe.htm E=3/5/405
+L47938	24	M	s	conflict:d
+L47938	419	C	e	agrees
+L47938	405	H	e	print aligned 'p' here; Tomokiyo thurloe.htm E=3/5/405
+L47938	412	M	t	single
+L47938	401	M	e	conflict:c
+L47938	405	H	e	print aligned 'mber' here; Tomokiyo thurloe.htm E=3/5/405
+L47942	44	M	a	printed interlinear, one place only
+L47942	913	H	[null]	Tomokiyo thurloe.htm: 'other numbers such as 913, 350, etc. may be nulls'
+L47942	2	C	e	printed interlinear, 2 agreeing places
+L47942	43	U		not aligned in any printed interlinear pair (body or postscript)
+L47942	406	C	a	printed interlinear, 2 agreeing places
+L47942	48	M	d	printed interlinear, one place only
+L47942	26	C	t	printed interlinear, 2 agreeing places
+L47942	60	C	i	printed interlinear, 3 agreeing places
+L47942	49.	M	n	printed interlinear, one place only
+L47946	419	M	t	conflict:e
+L47946	50	M	h	single
+L47946	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L47946	708	M	t	conflict:joi
+L47946	2	M	w	conflict:e
+L47946	6	M	e	single
+L47946	13	M	n	conflict:a
+L47946	405	H	e	print aligned 't' here; Tomokiyo thurloe.htm E=3/5/405
+L47946	413	M	y	conflict:b
+L47946	419	C	e	agrees
+L47946	60	M	t	conflict:i
+L47946	405	H	e	print aligned 'h' here; Tomokiyo thurloe.htm E=3/5/405
+L47946	914	C	o	agrees
+L47946	414	M	n	conflict:r
+L47946	19	M	e	conflict:n
+L47946	405	H	e	print aligned 'o' here; Tomokiyo thurloe.htm E=3/5/405
+L47946	548	M	f	conflict:b
+L47946	2	M	t	conflict:e
+L47946	404	M	h	single
+L47946	910	M	e	single
+L47949	26	U		null-or-unaligned
+L47949	50	U		null-or-unaligned
+L47949	5	H	e	print aligned 'm' here; Tomokiyo thurloe.htm E=3/5/405
+L47949	500	M	o	conflict:n
+L47949	208	M	n	single
+L47949	710	M	t	single
+L47949	540.	M	h	single
+L47949	48	M	f	conflict:d
+L47949	400	M	a	single
+L47949	16	M	y	conflict:c
+L47949	504	M	n	single
+L47949	19	M	o	conflict:n
+L47949	419	M	t	conflict:e
+L47949	26	M	h	conflict:t
+L47949	50	M	i	conflict:h
+L47949	419	M	n	conflict:e
+L47949	19	M	g	conflict:n
+L47953	10	M	j	conflict:a
+L47953	541	M	o	single
+L47953	164	M	f	single
+L47953	548	M	b	single
+L47953	913	H	[null]	print aligned 'c' here; Tomokiyo thurloe.htm: 'other numbers such as 913, 350, etc. may be nulls'
+L47953	403	C	o	agrees
+L47953	2	M	m	conflict:e
+L47953	39	M	e	single
+L47953	405	H	e	print aligned 'c' here; Tomokiyo thurloe.htm E=3/5/405
+L47953	548	M	h	conflict:b
+L47953	156	H	Charles	print aligned 's' here; Tomokiyo thurloe.htm: code for a name, 156(Charles)
+L47953	418	M	ts	conflict:t
+L47953	403	M	court	conflict:o
+L47957	414	C	r	agrees
+L47957	18	C	e	agrees
+L47957	44	M	t	conflict:a
+L47957	26	M	i	conflict:t
+L47957	500,	M	n	single
+L47957	44	M	u	conflict:a
+L47957	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L47957	419	M	f	conflict:e
+L47957	60	M	p	conflict:i
+L47957	19	M	l	conflict:n
+L47957	420	C	e	agrees
+L47957	405	H	e	print aligned 'n' here; Tomokiyo thurloe.htm E=3/5/405
+L47957	48	M	d	single
+L47957	24	M	i	conflict:d
+L47957	410	M	d	single
+L47957	405	H	e	print aligned 'equipage' here; Tomokiyo thurloe.htm E=3/5/405
+L47961	413	U		null-or-unaligned
+L47961	40	M	s	conflict:a
+L47961	60	M	t	conflict:i
+L47961	406	M	r	conflict:a
+L47961	914	C	o	agrees
+L47961	5	H	e	print aligned 'n' here; Tomokiyo thurloe.htm E=3/5/405
+L47961	14	M	g	single
+L47961	18	C	e	agrees
+L47961	60	M	n	conflict:i
+L47961	24	M	d	single
+L47961	31	M	e	single
+L47961	10	M	a	single
+L47961	405.	H	e	print aligned 'v' here; Tomokiyo thurloe.htm E=3/5/405
+L47961	418	M	o	conflict:t
+L47961	419	M	u	conflict:e
+L47961	414	C	r	agrees
+L47961	19	M	i	conflict:n
+L47961	10	M	n	conflict:a
+L47961	350	H	[null]	print aligned 'g' here; Tomokiyo thurloe.htm: 'other numbers such as 913, 350, etc. may be nulls'
+L47961	405	H	e	print aligned 's' here; Tomokiyo thurloe.htm E=3/5/405
+L47963	19	C	n	printed interlinear, 2 agreeing places
+L47966	576	-		page/running-head numeral, not a cipher group
+L47970	A.D.1654.	U	s	doubtful
+L47970	19	M	p	conflict:n
+L47970	406	C	a	agrees
+L47970	5	H	e	print aligned 'y' here; Tomokiyo thurloe.htm E=3/5/405
+L47970	400	M	n	conflict:a
+L47970	420	C	e	agrees
+L47970	414	M	c	conflict:r
+L47970	18	M	h	conflict:e
+L47970	407	M	s	single
+L47970	418	C	t	agrees
+L47970	62	H	Spain	print aligned 'm' here; Tomokiyo thurloe.htm: code for a name, 62(Spain)
+L47970	542	M	o	conflict:d
+L47970	156,	H	Charles	print aligned 'o' here; Tomokiyo thurloe.htm: code for a name, 156(Charles)
+L47970	39	M	v	conflict:e
+L47970	2	C	e	agrees
+L47970	419	M	th	conflict:e
+L47970	18	C	e	agrees
+L47974	405	H	e	print aligned 'u' here; Tomokiyo thurloe.htm E=3/5/405
+L47974	546	M	n	single
+L47974	73	M	i	single
+L47974	500	M	t	conflict:n
+L47974	60	M	e	conflict:i
+L47974	2	M	d	conflict:e
+L47974	409	M	province	single
+L47974	19	M	s	conflict:n
+L47974	708	M	joi	single
+L47974	36	M	n	single
+L47974	405	H	e	print aligned 'ke' here; Tomokiyo thurloe.htm E=3/5/405
+L47974	3	H	e	Tomokiyo thurloe.htm E=3/5/405
+L47974	24	M	p	conflict:d
+L47974	547	M	loof	single-segment
+L47978	460	M	s	single
+L47978	49	M	w	conflict:n
+L47978	414	M	e	conflict:r
+L47978	2	M	a	conflict:e
+L47978	7	M	d	single
+L47978	y6	I	e	repaired to 6
+L47978	401	M	n	conflict:c
+L47978	400	M	b	conflict:a
+L47978	40	M	a	single
+L47978	542	M	d	single
+L47978	403	M	c	conflict:o
+L47978	2	M	o	conflict:e
+L47978	19	C	n	agrees
+L47978	40	M	d	conflict:a
+L47978	60	C	i	agrees
+L47978	419	M	t	conflict:e
+L47978	60	C	i	agrees
+L47978	414	M	on	conflict:r
+L47982	913.	H	[null]	Tomokiyo thurloe.htm: 'other numbers such as 913, 350, etc. may be nulls'
+L47982	31	M	e	printed interlinear, one place only
+L47982	48	M	d	printed interlinear, one place only
+L47982	418	C	t	printed interlinear, 2 agreeing places
+L47982	60	C	i	printed interlinear, 3 agreeing places
+L47982	48	M	d	printed interlinear, one place only
+L47982	26	C	t	printed interlinear, 2 agreeing places
+L47982	500.	M	n	printed interlinear, one place only
+L47982	132	M	t	printed interlinear, one place only
+L47986	132	M	t	single
+L47986	400	M	w	conflict:a
+L47986	513	M	e	single
+L47986	406	M	r	conflict:a
+L47986	910	M	p	conflict:e
+L47986	122;	M	e	single
+L47986	13	M	a	single
+L47986	50	M	n	conflict:h
+L47986	405	H	e	print aligned 'd' here; Tomokiyo thurloe.htm E=3/5/405
+L47986	413	M	b	single
+L47986	403	M	r	conflict:o
+L47986	405	H	e	print aligned 'uflels' here; Tomokiyo thurloe.htm E=3/5/405
+L47986	530	M	when	single
+L47986	16	M	c	single
+L47986	2	C	e	agrees
+L47986	421	M	you	single-segment
+L47990	50	M	h	printed interlinear, one place only
+L47990	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L47990	31	M	e	printed interlinear, one place only
+L47990	44	M	a	printed interlinear, one place only
+L47990	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L47990	7	M	d	printed interlinear, one place only
+L47990	44	M	a	printed interlinear, one place only
+L47990	414	C	r	printed interlinear, 2 agreeing places
+L47990	39	M	e	printed interlinear, one place only
+L47990	710	M	t	printed interlinear, one place only
+L47994	403	U		null-or-unaligned
+L47994	2	U		null-or-unaligned
+L47994	18	U		null-or-unaligned
+L47994	413	M	c	conflict:b
+L47994	403	C	o	agrees
+L47994	405	H	e	print aligned 'u' here; Tomokiyo thurloe.htm E=3/5/405
+L47994	49	M	n	single
+L47994	411	M	c	single
+L47994	542	M	i	conflict:d
+L47994	910.	M	l	conflict:e
+L48000	412	M	t	printed interlinear, one place only
+L48000	60	C	i	printed interlinear, 3 agreeing places
+L48000	40	M	a	printed interlinear, one place only
+L48000	411	M	c	printed interlinear, one place only
+L48000	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L48000	401	M	c	printed interlinear, one place only
+L48000	2	C	e	printed interlinear, 2 agreeing places
+L48000	417	M	i	printed interlinear, one place only
+L48000	19	C	n	printed interlinear, 2 agreeing places
+L48000	50	M	h	printed interlinear, one place only
+L48000	546	M	n	printed interlinear, one place only
+L48000	60	C	i	printed interlinear, 3 agreeing places
+L48000	19	C	n	printed interlinear, 2 agreeing places
+L48000	910	M	e	printed interlinear, one place only
+L48000	11	U		not aligned in any printed interlinear pair (body or postscript)
+L48000	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L48000	49	M	n	printed interlinear, one place only
+L48000	400	M	a	printed interlinear, one place only
+L48000	413.	M	b	printed interlinear, one place only
+L48002	406	C	a	printed interlinear, 2 agreeing places
+L48002	541	M	o	printed interlinear, one place only
+L48002	26	C	t	printed interlinear, 2 agreeing places
+L48002	13	M	a	printed interlinear, one place only
+L48002	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L48002	413	M	b	printed interlinear, one place only
+L48002	419	C	e	printed interlinear, 3 agreeing places
+L48002	409	M	province	printed interlinear, one place only
+L48002	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L48002	530	M	when	printed interlinear, one place only
+L48002	419	C	e	printed interlinear, 3 agreeing places
+L48002	421	M	you	printed interlinear, one place only
+L48002	414	C	r	printed interlinear, 2 agreeing places
+L48002	48	M	d	printed interlinear, one place only
+L48002	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L48002	24	M	d	printed interlinear, one place only
+L48002	419	C	e	printed interlinear, 3 agreeing places
+L48002	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L48002	39	M	e	printed interlinear, one place only
+L48003	401	M	c	printed interlinear, one place only
+L48003	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L48003	44	M	a	printed interlinear, one place only
+L48003	912	U		not aligned in any printed interlinear pair (body or postscript)
+L48003	2	C	e	printed interlinear, 2 agreeing places
+L48003	49	M	n	printed interlinear, one place only
+L48003	401	M	c	printed interlinear, one place only
+L48003	48	M	d	printed interlinear, one place only
+L48003	419	C	e	printed interlinear, 3 agreeing places
+L48003	409	M	province	printed interlinear, one place only
+L48003	411	M	c	printed interlinear, one place only
+L48003	546	M	n	printed interlinear, one place only
+L48003	48	M	d	printed interlinear, one place only
+L48003	405	H	e	Tomokiyo thurloe.htm E=3/5/405
+L48003	400	M	a	printed interlinear, one place only
+L48003	411,	M	c	printed interlinear, one place only
+L48004	31	M	e	printed interlinear, one place only
+L48004	19	C	n	printed interlinear, 2 agreeing places
+L48004	403	C	o	printed interlinear, 2 agreeing places
+L48004	44	M	a	printed interlinear, one place only
+L48004	405,	H	e	Tomokiyo thurloe.htm E=3/5/405

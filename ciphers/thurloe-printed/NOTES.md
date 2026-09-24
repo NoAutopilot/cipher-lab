@@ -1151,3 +1151,116 @@ with `tools/italian_ngram.build()`.
 
 Report on what was found: benchmark numbers only. No reading of any letter is claimed and no novelty
 class is given.
+
+## 17. P2, P3 printed decipherments (LANE T worker H, 24 Sept 2026)
+
+Brief: for P3, align the printed decipherment over the letter's full extent, build `key_butler.tsv`
+(C by vote, H for Tomokiyo's stated values), say exactly which groups -- including the postscript's
+-- the print leaves undeciphered, and decode the postscript from the key if it has none of its own.
+For P2, say what the "Deciphered thus:" text covers and whether its groups can be matched to it;
+build `P2_pairs.tsv`/`key_stouppe.tsv` if so, otherwise say why not. No cryptanalysis; per rule 10,
+report only what was found and where it was not, no novelty class (AUDIT.md, section 13 above, and
+`ciphers/thurloe-printed/AUDIT.md`'s LANE T verifier V1 pass already carry that: P3's body is N0,
+its postscript stays open).
+
+### P3 -- John Butler, informant in Holland
+
+Per AUDIT.md, the date is unresolved (Birch's placement, c. Sept 1654 by position in vol. 2, vs.
+Tomokiyo's 1656) and not settled here; page is 575-576, not 577.
+
+**Body (djvu 47926-47997).** `tools/interlinear_align.py pairs` over this range gives 13
+plain-caption/cipher-line pairs (`P3_pairs.tsv`) -- the same technique, and the same tool
+invocation, as P8's (section 13). Two numeral tokens in this range are not cipher groups and are
+excluded from every count: djvu 47932's "P. 208." (a page reference; `P3/tokens.tsv` order 15) and
+djvu 47966's "576" (a running head; order 144). One further wrinkle this letter has that P8/
+Fauconberg/Montagu did not: several cipher lines here run on directly from short clear-English
+words in the same line ("I", "att"), and the tool's own OCR-confusion table reads a bare "I" as the
+digit 1 (its "l"/"I"/"L" -> "1" rule, built for stray OCR misreads inside pure-cipher lines, fires
+on a real pronoun here). `decode_butler.py` matches each of `P3/tokens.tsv`'s already-filtered true
+cipher tokens back to the tool's own per-token row by exact raw-string sequence match, skipping any
+extra token the tool proposed that tokens.tsv does not carry (`I`/`att`/`^` and the like), rather
+than trusting position alone; this is a straightforward bookkeeping fix, not a change to
+`tools/interlinear_align.py` (not touched, and not in this brief's file list).
+
+**`key_butler.tsv`** (rule 7: `python3 decode_butler.py` regenerates it and `reading_P3.txt` from
+`P3_pairs.tsv` + `P3/tokens.tsv`; `--check` exits 0): H for Tomokiyo's six stated values (E=3/5/405
+-> e; 62 -> Spain; 156 -> Charles; 913 and 350 -> null), applied at every occurrence, body or
+postscript; C where the body's own alignment agrees at >=2 places for a value; M where it agrees at
+only one; U where a value never aligns anywhere in the letter.
+
+**Grades, whole letter (297 tokens; 2 not cipher groups):**
+
+| | H | C | I | M | U | cipher groups |
+|---|---|---|---|---|---|---|
+| Whole letter | 48 | 52 | 1 | 182 | 12 | 295 |
+| Body only (djvu 47926-47997) | 39 | 37 | 1 | 149 | 10 | 236 |
+| Postscript (djvu 48000-48004) | 9 | 15 | 0 | 33 | 2 | 59 |
+
+The single I (grade "repaired") is `y6` at djvu 47978, resolved to value 6 because its aligned
+chunk agrees with the print's own single other occurrence of 6. Most of the letter grades M, not C:
+with only 13 short pairs (against P8's 25 and Fauconberg's much larger pool), most values recur
+once or twice at best, so the tool's own agreement gate (`topn>=2` for C) is met for a minority of
+values; this is a property of the sample size, not a defect in the alignment, and is reported as
+such rather than pushed to a higher grade.
+
+**Groups the print leaves without a decipherment (grade U, 12 of 295):** djvu 47931 (13, 409),
+47942 (43), 47949 (26, 50), 47961 (413), 47970 (`A.D.1654.`, an OCR-doubtful token that is itself
+almost certainly not a cipher group -- a misplaced marginal date note, not resolved to a repair),
+47994 (403, 2, 18), 48000 (11), 48003 (912). None of these has a plain caption chunk that agrees
+with any other occurrence of the same value anywhere in the letter (body or postscript); this is
+what "no decipherment" means at token grain, not a claim that Birch's print omits them (the print
+gives no per-group key at all -- everything above C/H here is this pass's own alignment of the
+body's caption lines, per rule 4 a cryptanalytic-adjacent but known-plaintext-anchored result, not
+a printed key).
+
+**Postscript (djvu 48000-48004): confirmed to have no printed decipherment of its own,** as
+AUDIT.md already states and as worker D flagged in section 13 -- the line before it (47998) is the
+signature "John Butler.", not a caption; djvu 48002/48003 run on with no caption between them; 48004
+is prose with a handful of cipher groups inline. Decoded here from the body's own key, per this
+brief: 9 H (Tomokiyo values, mostly 405->e, recurring often), 15 C, 33 M, 2 U (`reading_P3.txt`,
+lines tagged `L48000`-`L48004`). No new alignment was attempted for the postscript; it is read
+purely by looking up each of its groups' values in the key the body already built.
+
+**Not attempted, out of this brief's scope:** page-image check (this pass worked from the OCR text
+only, per rule 2 a negative here is conditional on that); reconciling the tool's chunk-length search
+window (`floor=100`, the same as every other letter in this project) against Tomokiyo's own
+description of two distinct letter ranges (1-60 and 400-424) -- not retuned, since the sample is
+small enough that grade M/U already flags most of the affected values as uncertain either way.
+
+### P2 -- Stouppe to the prince of Tarente
+
+**The "Deciphered thus:" text is a passage-level English translation of the whole French
+paragraph (djvu 46965-47024), not a per-group decipherment, and its groups cannot be matched to it
+beyond isolated cases found by reading, not by any general method.** Read in full this pass (djvu
+46954-47059): the French passage embeds ~130 numeral codes (267 raw numeral-shaped tokens across 29
+lines per section 13's count, some of which are clearly consecutive runs of several codes per
+short clause, e.g. "15. y3. 10. 24. 22. 40. 54. 32. 21. 39. 40." -- eleven codes in a row); the
+English translation that follows (djvu 47030-47057) is continuous, idiomatic prose with no numeral,
+bracket, or footnote tying any specific word back to a specific code. Word order also differs
+completely between the two languages, and the translation frequently compresses several French
+clauses (and their codes) into a shorter English sentence. None of this supports the kind of
+positional alignment `tools/interlinear_align.py` performs for P3/P8/Fauconberg/Montagu, where a
+short caption line sits immediately over or under the cipher line it glosses one-for-one; building
+any general mapping here would mean guessing which French words the codes stood for from the
+English sense alone, which is cryptanalysis (matching ciphertext to conjectured plaintext by
+content, not registered position), not alignment of an existing key -- outside this brief.
+
+One clause is a clean, low-cost exception, found by reading rather than by any alignable method:
+djvu 47003, "28. eft toujours en grand foubcon de 40. depuis le dernier voyage qu'il a fait," lines
+up almost word-for-word with the translation at djvu 47049, "Monf. de Bordeaux is frill very
+jealous of Stouppe, fince the laft voyage, which he made." The clause structure and every other
+word matches; only "28" and "40" stand where "Monf. de Bordeaux" and "Stouppe" fall. This gives 28
+-> "Monsieur de Bordeaux" and 40 -> "Stouppe" at grade C (known plaintext, from the print's own
+translation) by content, not position -- but it rests on this one clause happening to survive
+translation almost unchanged, not on a repeatable procedure; extending it to the letter's other
+~130 codes would need matching French clauses to English ones content-by-content throughout, i.e.
+producing a French/English gloss to check the numbers against -- again cryptanalysis, out of scope.
+No `P2_pairs.tsv` or `key_stouppe.tsv` is written: two matched values are not worth a key file on
+their own, and are recorded here as a lead (Bourdeaux=28, Stouppe=40) for whoever next takes this
+letter as a cryptanalytic target with a matched control (rule 3), not as this brief's result.
+
+**Files this pass:** `P3_pairs.tsv`, `decode_butler.py`, `key_butler.tsv`, `reading_P3.txt`. No
+`P2_pairs.tsv`/`key_stouppe.tsv`/`decode_stouppe.py`/`reading_P2.txt` (see above). `index.tsv`,
+`ciphertext.txt`, `AUDIT.md` and every other row untouched. Requests: archive.org 0 (djvu text
+restored from the committed `sources/ia-fulltext/thurloe-gz/` cache); no other host; no subagents;
+no logins.

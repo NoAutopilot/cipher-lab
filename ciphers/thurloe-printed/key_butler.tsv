@@ -1,0 +1,69 @@
+value	meaning	grade	n_in_letter	n_agree	other_alignments	source
+2	e	C	9	2	t:2,a:1,d:1,m:1,o:1,w:1	printed interlinear, 2 agreeing places
+3	e	H	1	1		Tomokiyo thurloe.htm E=3/5/405
+5	e	H	4	1	m:1,n:1,y:1	Tomokiyo thurloe.htm E=3/5/405
+6	e	M	1	1		printed interlinear, one place only
+7	d	M	1	1		printed interlinear, one place only
+10	a	M	4	1	g:1,j:1,n:1	printed interlinear, one place only
+11		U	0	0		not aligned in any printed interlinear pair (body or postscript)
+13	a	M	2	1	n:1	printed interlinear, one place only
+14	g	M	1	1		printed interlinear, one place only
+16	c	M	3	1	v:1,y:1	printed interlinear, one place only
+18	e	C	4	3	h:1	printed interlinear, 3 agreeing places
+19	n	C	10	2	o:2,e:1,g:1,i:1,l:1,p:1,s:1	printed interlinear, 2 agreeing places
+24	d	M	4	1	i:1,p:1,s:1	printed interlinear, one place only
+26	t	C	5	2	h:1,i:1,n:1	printed interlinear, 2 agreeing places
+31	e	M	2	1	r:1	printed interlinear, one place only
+36	n	M	1	1		printed interlinear, one place only
+39	e	M	2	1	v:1	printed interlinear, one place only
+40	a	M	5	1	d:1,i:1,r:1,s:1	printed interlinear, one place only
+43		U	0	0		not aligned in any printed interlinear pair (body or postscript)
+44	a	M	5	1	d:1,r:1,t:1,u:1	printed interlinear, one place only
+48	d	M	2	1	f:1	printed interlinear, one place only
+49	n	M	2	1	w:1	printed interlinear, one place only
+50	h	M	3	1	i:1,n:1	printed interlinear, one place only
+60	i	C	9	3	t:2,e:1,n:1,p:1,r:1	printed interlinear, 3 agreeing places
+62	Spain	H	1	1		Tomokiyo thurloe.htm: code for a name, 62(Spain)
+73	i	M	1	1		printed interlinear, one place only
+122	e	M	1	1		printed interlinear, one place only
+132	t	M	1	1		printed interlinear, one place only
+156	Charles	H	2	1	s:1	Tomokiyo thurloe.htm: code for a name, 156(Charles)
+164	f	M	1	1		printed interlinear, one place only
+208	n	M	1	1		printed interlinear, one place only
+350	[null]	H	2	1	p:1	Tomokiyo thurloe.htm: 'other numbers such as 913, 350, etc. may be nulls'
+400	a	M	6	1	b:1,m:1,n:1,r:1,w:1	printed interlinear, one place only
+401	c	M	3	1	e:1,n:1	printed interlinear, one place only
+403	o	C	6	2	c:1,court:1,d:1,r:1	printed interlinear, 2 agreeing places
+404	h	M	1	1		printed interlinear, one place only
+405	e	H	23	4	u:3,d:2,h:2,c:1,equipage:1,ke:1,mber:1,n:1,o:1,p:1,r:1,s:1,t:1,uflels:1,y:1	Tomokiyo thurloe.htm E=3/5/405
+406	a	C	4	2	r:2	printed interlinear, 2 agreeing places
+407	s	M	1	1		printed interlinear, one place only
+408	h	M	1	1		printed interlinear, one place only
+409	province	M	1	1		printed interlinear, one place only
+410	d	M	1	1		printed interlinear, one place only
+411	c	M	1	1		printed interlinear, one place only
+412	t	M	1	1		printed interlinear, one place only
+413	b	M	4	1	c:1,w:1,y:1	printed interlinear, one place only
+414	r	C	6	2	c:1,e:1,n:1,on:1	printed interlinear, 2 agreeing places
+417	i	M	3	1	o:1,t:1	printed interlinear, one place only
+418	t	C	4	2	o:1,ts:1	printed interlinear, 2 agreeing places
+419	e	C	10	3	t:3,n:1,f:1,th:1,u:1	printed interlinear, 3 agreeing places
+420	e	C	3	3		printed interlinear, 3 agreeing places
+421	you	M	1	1		printed interlinear, one place only
+460	s	M	1	1		printed interlinear, one place only
+500	n	M	3	1	o:1,t:1	printed interlinear, one place only
+504	n	M	1	1		printed interlinear, one place only
+513	e	M	1	1		printed interlinear, one place only
+530	when	M	1	1		printed interlinear, one place only
+540	h	M	1	1		printed interlinear, one place only
+541	o	M	1	1		printed interlinear, one place only
+542	d	M	3	1	i:1,o:1	printed interlinear, one place only
+546	n	M	1	1		printed interlinear, one place only
+547	loof	M	1	1		printed interlinear, one place only
+548	b	M	3	1	h:1,f:1	printed interlinear, one place only
+708	joi	M	2	1	t:1	printed interlinear, one place only
+710	t	M	1	1		printed interlinear, one place only
+910	e	M	3	1	l:1,p:1	printed interlinear, one place only
+912		U	0	0		not aligned in any printed interlinear pair (body or postscript)
+913	[null]	H	2	1	n:1	Tomokiyo thurloe.htm: 'other numbers such as 913, 350, etc. may be nulls'
+914	o	C	2	2		printed interlinear, 2 agreeing places
