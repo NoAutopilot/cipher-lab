@@ -630,3 +630,90 @@ p5	L12	7	112	suites?	new reading, not in key.tsv; low-moderate confidence
 p5	L12	8	1066	fa?	new reading, not in key.tsv; low confidence
 p5	L12	9	1010	ches?	agrees with p3_L09/1 tentative reading ('che?') for the same figure
 p5	L12	10	486	us?	key.tsv has 486=nos; second occurrence reading closer to 'us' (cf. L02/7) -- possible real disagreement, flagged for review
+p6	L01	1	460	es	agrees with key.tsv
+p6	L01	2	1125	si	agrees with key.tsv
+p6	L01	3	1043	comment?	new reading, not in key.tsv; low-moderate confidence
+p6	L01	4	551	on?	new reading, not in key.tsv; disagrees with p5_L07/3 tentative 'ou?' for the same figure -- low confidence both places
+p6	L01	5	941	ne	agrees with key.tsv
+p6	L01	6	479	pouvoit	agrees with p5_L12/4 tentative reading ('pourroit') for the same figure -- consistent theme, moderate confidence
+p6	L01	7	170	guere?	new reading, not in key.tsv; low confidence
+p6	L01	8	1022	en	agrees with key.tsv
+p6	L01	9	946	douter?	new reading, not in key.tsv; low-moderate confidence
+p6	L01	10	626	r	agrees with key.tsv
+p6	L02	1	208	elle?	new reading, not in key.tsv; low confidence
+p6	L02	2	579	etoit	agrees with key.tsv (etc, close reading)
+p6	L02	3	357	puis	agrees with p4_L11/1 tentative reading for the same figure (revised at L05/2 this page to 'suis', see note there -- likely 'suis' is the better reading)
+p6	L02	4	832	vis	agrees with key.tsv
+p6	L02	5	80	e	agrees with key.tsv
+p6	L02	6	145	par	agrees with key.tsv/fills.tsv (R16 fill 'par', confirmed again)
+p6	L02	7	878	une	agrees with key.tsv
+p6	L02	8	141	nom	agrees with key.tsv/fills.tsv (R16 fill 'nom', confirmed a second time)
+p6	L02	9	648	bre	agrees with key.tsv/fills.tsv (R16 fill 'bre', confirmed a second time)
+p6	L02	10	872	?	illegible, unkeyed in key.tsv
+p6	L02	11	787	pe?	new reading, not in key.tsv; low confidence
+p6	L03	1	480	ri	agrees with key.tsv
+p6	L03	2	666	eur?	new reading, not in key.tsv; low confidence
+p6	L03	3	10	de	agrees with key.tsv
+p6	L03	4	267	yache	agrees with key.tsv, though context here ('yaux'?) is less clear than the p5 occurrences
+p6	L03	5	645	ennemi	agrees with p3_L04/1 tentative reading for the same figure
+p6	L03	6	940	.	agrees with key.tsv
+p6	L03	7	527	ainsi	agrees with p1_L07/4 tentative reading for the same figure
+p6	L03	8	1184	mr?	new reading, not in key.tsv; NOTE -- this figure (1184) is close to but distinct from 1188, which key.tsv grades C='mr' from siblings and which this worker's own p1_L01/6 read as 'prets'/'non prets'; possible that the sibling ink source and/or this worker's p1 reading confused 1184/1188, flagged for a dedicated re-check
+p6	L03	9	347	mes?	new reading, not in key.tsv; low confidence
+p6	L03	10	108	repons?	new reading, not in key.tsv; low confidence
+p6	L03	11	949	or?	new reading, not in key.tsv; low confidence
+p6	L04	1	888	leurs	agrees with key.tsv
+p6	L04	2	232	laisse?	new reading, not in key.tsv; disagrees with this worker's own earlier 'les?' tentative for the same figure (p3_L02/5, p4_L04/5) -- flagged, low confidence
+p6	L04	3	1161	nt	agrees with p3_L07/1 tentative reading for the same figure
+p6	L04	4	60	pas	agrees with key.tsv
+p6	L04	5	890	plus?	key.tsv has 890=la; this occurrence looked more like 'plus' -- low confidence, flagged (word appears to repeat at idx6, possibly a scribal correction/duplication)
+p6	L04	6	741	plus?	agrees with p3_L12/2 tentative reading (there illegible) for the same figure; the two adjacent 'plus'-looking words at idx5-6 may reflect a struck-and-rewritten correction on the leaf
+p6	L04	7	381	le	agrees with key.tsv
+p6	L04	8	915	ge	agrees with key.tsv
+p6	L04	9	149	re	key.tsv has 149=se|re (struck/blank on p1, p2); this occurrence supports the 're' half of that alternation
+p6	L04	10	132	expresen?	new reading, not in key.tsv; low confidence
+p6	L04	11	824	et	agrees with key.tsv
+p6	L05	1	919	je?	new reading, not in key.tsv; low-moderate confidence
+p6	L05	2	357	suis	revises this worker's own L02/3 reading of the same figure from 'puis' to 'suis' -- 'je suis bien persuade' reads better; moderate confidence
+p6	L05	3	1173	bien	revises this worker's own p5_L01/7 tentative 'rien?' for the same figure to 'bien' -- fits 'je suis bien persuade que'; moderate confidence
+p6	L05	4	839	persuade?	new reading, not in key.tsv; moderate confidence, clear cursive
+p6	L05	5	6	que	agrees with key.tsv
+p6	L05	6	381	le	agrees with key.tsv
+p6	L05	7	651	parti?	new reading, not in key.tsv; low-moderate confidence
+p6	L05	8	884	que	agrees with key.tsv
+p6	L05	9	32	vous	agrees with key.tsv
+p6	L05	10	1076	prendre?	new reading, not in key.tsv; low-moderate confidence
+p6	L05	11	415	rend?	agrees with p3_L03/1 tentative reading ('rend?') for the same figure -- moderate confidence as a set; line reads roughly 'je suis bien persuade que le parti que vous [pre/rei]ndre[z]', a closing sentiment
+p6	L06	1	1181	se	agrees with key.tsv
+p6	L06	2	355	ra	agrees with key.tsv (ras, close reading; 'sera')
+p6	L06	3	381	le	agrees with key.tsv
+p6	L06	4	830	plus	agrees with key.tsv
+p6	L06	5	1113	pro	agrees with key.tsv/fills.tsv (R16 fill 'pro', confirmed a third time)
+p6	L06	6	880	pre	agrees with key.tsv (pres, close reading; propre)
+p6	L06	7	202	a	agrees with key.tsv
+p6	L06	8	540	considerer?	new reading, not in key.tsv; low-moderate confidence
+p6	L06	9	993	la?	new reading, not in key.tsv; low confidence
+p6	L06	10	890	la	agrees with key.tsv
+p6	L06	11	262	gloire?	new reading, not in key.tsv; low-moderate confidence
+p6	L06	12	707	des	agrees with p5_L04/3 and L12/6 tentative readings for the same figure; line reads roughly 'sera le plus propre a considerer la gloire des ...'
+p6	L07	1	697	armes	agrees with p4_L06/10 tentative reading for the same figure
+p6	L07	2	109	du	agrees with key.tsv
+p6	L07	3	463	auguste?	new reading, not in key.tsv; low confidence
+p6	L07	4	402	avec	agrees with key.tsv
+p6	L07	5	947	les	agrees with key.tsv
+p6	L07	6	555	re	agrees with key.tsv
+p6	L07	7	1072	gle?	new reading, not in key.tsv; low confidence
+p6	L07	8	337	dela	key.tsv has 337=dela; this occurrence's gloss looked closer to a short 'de' -- low confidence
+p6	L07	9	987	?	illegible, unkeyed in key.tsv
+p6	L07	10	16	plus?	new reading, not in key.tsv; low confidence
+p6	L07	11	686	de?	new reading, not in key.tsv; low confidence
+p6	L08	1	1028	ce	agrees with the reading established above for this figure
+p6	L08	2	441	nul?	new reading, not in key.tsv; possibly another null marker distinct from 1185/1187/394/848 -- low-moderate confidence, flagged for review
+p6	L08	3	316	unis?	new reading, not in key.tsv; fills a previously-illegible gap (p3_L11/5, also illegible there) -- low-moderate confidence
+p6	L08	4	448	?	illegible, unkeyed in key.tsv
+p6	L08	5	224	mordi?	new reading, not in key.tsv; low confidence, unclear word
+p6	L08	6	320	?	illegible, unkeyed in key.tsv
+p6	L08	7	366	ne?	new reading, not in key.tsv; fills a previously-illegible gap (p1_L06/1, also illegible there) -- low confidence
+p6	L08	8	1199	puis	agrees with the established reading for this figure (p3, p5)
+p6	L08	9	1012	plus?	new reading, not in key.tsv; low confidence
+p6	L08	10	425	vant?	key.tsv has 425=etablir; this occurrence's context is unclear and may not be the same word -- low confidence, flagged
