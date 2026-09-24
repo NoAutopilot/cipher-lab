@@ -469,7 +469,7 @@ and the f.29r outputs are byte-identical. `contexts_f30.py` writes `unkeyed_f30.
 reconciled signs agree with blind pass A on 63.5% and with pass B on 55.3%, and the passes agree with each
 other on 60.8%. As on f.29r, the transcription rests mainly on one reader.
 
-**Grades (per token, from decode.py):** 1973 tokens: **H 1502, C 0, S 0, M 239, I 0, U 232.** H means "value
+**Grades (per token, from decode.py):** 1973 tokens: **H 1500, C 0, S 0, M 241, I 0, U 232.** H means "value
 taken from the Lasry/Tomokiyo table" (key.tsv). It does not grade the identification of the sign, which rests
 on the reconciler. M means a sign read with doubt. U means a sign key.tsv does not cover. No value was added to
 key.tsv and no cryptanalytic extension was made, so this is a key-based reading with unread signs, not a
@@ -604,8 +604,8 @@ key-image check should settle it.
 plus key_extension_f30.tsv, which fills only the signs key.tsv leaves unvalued. S values are printed in lower
 case. `--check` covers all six outputs, and `--extended` prints the extended reading. The published-key reading is
 unchanged. Grades, f.30, 1973 tokens:
-- published key: H 1502, C 0, S 0, M 239, I 0, U 232
-- extended: **H 1502, C 0, S 158, M 254, I 0, U 59**. The 15 extra M are S values on signs read with doubt (l).
+- published key: H 1500, C 0, S 0, M 241, I 0, U 232
+- extended: **H 1500, C 0, S 158, M 256, I 0, U 59**. The 15 extra M are S values on signs read with doubt (l).
 There is no C, so the extension is a cryptanalytic result resting on a key-based reading.
 
 **Lines that read as continuous French**, by eye on the extended reading, in the reconciler's classes (sense
@@ -647,12 +647,27 @@ is 9 (f30v L05a idx9, L07b idx18/24/29). eh>c (17), with low resolution, so the 
 the cursive N with a hook sits next to a distinct x-with-r (f30r L12a/b).
 
 **Changes proposed: 2** (`passC_proposed_changes_f30.tsv`, 338 rows, `proposed` column): f30r L06 idx9 and idx21,
-committed `2` → `zb`. The crops show a barred 2 at both places (reconciliation class 3). Not applied. Of the other
-164 one-off differences, 14 are pass C insertions, mostly `mx x` for the committed single `mx`, which is a
-segmentation choice (f30r L02b checked). The rest were not re-checked on the crop and are proposed `no`. The
-unflagged ones are the ones worth a look: lam/lz (f30r L12 idx1), bb/br (f30r L06 idx0), 4t/d (f30v L05 idx1,
-L16, f30r L25), and 2/zb at f30r L11 idx28.
+committed `2` → `zb`. The crops show a barred 2 at both places (reconciliation class 3). Applied, 24 Sept 2026
+(below). Of the other 164 one-off differences, 14 are pass C insertions, mostly `mx x` for the committed single
+`mx`, which is a segmentation choice (f30r L02b checked). The rest were not re-checked on the crop and are
+proposed `no`. The unflagged ones are the ones worth a look: lam/lz (f30r L12 idx1), bb/br (f30r L06 idx0), 4t/d
+(f30v L05 idx1, L16, f30r L25), and 2/zb at f30r L11 idx28.
 
 **Inventory:** pass C found no shape the reconciled code set lacks. Every recurring NEW shape maps to a code that
 reconciliation_f30.md already created. Suggestion: add nr, nq, n, v, re, B8, Sx and ev to `atlas_f30add.png` so
 that a future blind pass has names for them.
+
+**Applied, 24 Sept 2026.** Apply worker (LANE V, Sonnet), checked both crops itself before applying
+(`images/crops_f30/f30r_L06a.jpg` idx9, `f30r_L06b.jpg` idx21): both show the curl-with-horizontal-stroke shape
+described in `reconciliation_f30.md` class 3 (barred 2, distinct from the plain 2's tick-above at e.g. L06 idx2,
+and from the separate `z` letterform at L06 idx23). `ciphertext_f30.tsv` L06 idx9 and idx21 changed `2` → `zb`;
+`passR_f30.tsv` L06a/L06b updated to match and `build_ciphertext_f30.py` rerun, which also dropped both positions'
+confidence from `h` to `m` (neither blind pass wrote `zb` there). `decode.py` rerun; `decode.py --check` and
+`build_ciphertext_f30.py --check` both exit 0. `zb` keys to NULL (M), so both positions drop from the reading
+rather than substitute a letter:
+- L06 before: `[COM]ESILE·DSVRAY·EV·LE[COM]SMA·FAICTDPSSCE·`
+- L06 after: `[COM]ESILE·DVRAY·EV·LE[COM]MA·FAICTDPSSCE·`
+
+Grade counts (f.30, 1973 tokens) move from H 1502/M 239/U 232 to **H 1500/M 241/U 232**; extended from
+H 1502/S 158/M 254/U 59 to **H 1500/S 158/M 256/U 59** (updated above, in AUDIT.md and status.json). No other
+row of `passC_proposed_changes_f30.tsv` was touched.

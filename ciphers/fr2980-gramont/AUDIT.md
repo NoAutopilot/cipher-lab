@@ -825,7 +825,7 @@ output and the Italian series.
 bishop of Tarbes, Rome, 20 May 1530. The formulas 'Sire' and 'vostre commandement' show that it is addressed to
 Francis I. Tomokiyo had identified it as readable with the published Gramont 1530 key (Tomokiyo; Lasry 2023), and
 Bourdeau catalogued it (328). We transcribed it from the Gallica image (one reconciled reading of two blind passes)
-and applied that key: the table gives values for 1502 of 1973 signs (H), 239 are uncertain and 232 unkeyed. A
+and applied that key: the table gives values for 1500 of 1973 signs (H), 241 are uncertain and 232 unkeyed. A
 further 11 signs were given values cryptanalytically (grade S, matched control 96/103), leaving 59 unread. Parts of
 32 of 55 lines read as continuous French, on the declaration of the liberty of Florence. No prior printed plaintext
 or decipherment of the letter was located in the editions listed in AUDIT.md (N3). A clear-text letter of April 1530
@@ -882,7 +882,7 @@ April text was found.
 ### Reading quality (rule 4, rule 7)
 
 - **decode.py --check passes** (exit 0, this session, after e8567d0). It prints f.29r 568: H 533/M 30/U 5; f.30
-  1973: H 1502/M 239/U 232; f.30 extended: H 1502/S 158/M 254/U 59. These match NOTES.md and status.json.
+  1973: H 1500/M 241/U 232; f.30 extended: H 1500/S 158/M 256/U 59. These match NOTES.md and status.json.
 - **H is from a key source.** Every key.tsv row graded H cites Lasry and/or Tomokiyo (checked by script: no H row
   without one of the two). Grade H is correct under rule 4 as "value from the published table".
 - **What H does not say, and NOTES.md understated.** NOTES.md says "M means a sign read with doubt". In fact only
@@ -1101,7 +1101,7 @@ phrase fts 0 hits; it is not known to be the 1907 volume); Simancas and Vienna i
 "BnF fr.2980 f.30r-v (no.22) is a letter written entirely in cipher by Gabriel de Gramont, bishop of Tarbes, to Francis I,
 Rome, 20 May 1530. Tomokiyo had identified it as readable with the published Gramont 1530 key (Tomokiyo; Lasry 2023), and
 Bourdeau catalogued it (328). We transcribed it from the Gallica image (one reconciled reading of two blind passes, since
-compared with a third blind reader) and applied that key: the table gives values for 1502 of 1973 signs (H), and 158 more
+compared with a third blind reader) and applied that key: the table gives values for 1500 of 1973 signs (H), and 158 more
 are cryptanalytic (S, matched control), leaving 59 unread. The reading is partial. No prior printed plaintext, extract,
 summary or decipherment of the letter was located after two independent audits of the editions and indexes listed in
 AUDIT.md (N3). A clear-text letter of April 1530 from Gramont to the king on the same negotiation is printed in *Archivio

@@ -98,11 +98,12 @@ f30r_L05	36	z3	bb	bb	image: both passes differ
 f30r_L06	2	2	nr	-	image: both passes differ
 f30r_L06	3	xr	x	-	image: both passes differ
 f30r_L06	7	FL	H	fh	image: both passes differ
-f30r_L06	9	2	2	z	image: agrees with pass A
+f30r_L06	9	zb	2	z	image: both passes differ
 f30r_L06	11	br	D	br	image: agrees with pass B
 f30r_L06	13	aq	A2	aq	image: agrees with pass B
 f30r_L06	14	Sx	5	-	image: both passes differ
 f30r_L06	19	sl	paren	paren	image: both passes differ
+f30r_L06	21	zb	2	2	image: both passes differ
 f30r_L06	22	Af	fh	fh	image: both passes differ
 f30r_L06	23	z	z	z3	image: agrees with pass A
 f30r_L06	24	HASH?	Mx	HASH	image: agrees with pass B

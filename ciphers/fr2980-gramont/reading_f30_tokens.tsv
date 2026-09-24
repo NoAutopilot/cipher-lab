@@ -199,7 +199,7 @@ f30r	L06	5	ss2	h	NULL	M
 f30r	L06	6	9	h	E	H
 f30r	L06	7	FL	m	?	U
 f30r	L06	8	eh	h	D	H
-f30r	L06	9	2	h	S	H
+f30r	L06	9	zb	m	NULL	M
 f30r	L06	10	h	h	V	H
 f30r	L06	11	br	h	R	H
 f30r	L06	12	lam	h	A	H
@@ -211,7 +211,7 @@ f30r	L06	17	BOX	h	?	U
 f30r	L06	18	c	h	L	H
 f30r	L06	19	sl	m	E	H
 f30r	L06	20	bb	h	COM	H
-f30r	L06	21	2	h	S	H
+f30r	L06	21	zb	m	NULL	M
 f30r	L06	22	Af	m	M	H
 f30r	L06	23	z	h	A	H
 f30r	L06	24	HASH	l	?	U
