@@ -1525,13 +1525,21 @@
    "grade": "transcription, not a reading: 509 boxes, 370 sign tokens in 36 atlas types with superscript marks, 139 plain Italian boxes; passes agree 83.5% on base codes (80.3% with marks), 62 disagreements settled from the image",
    "line": "A shared glyph atlas plus script classification of every box, then two confirm/correct passes, lifted agreement from 4.7% (free text) and 62.8% (free alignment) to 83.5%. The page is ready for a key trial (LANE R4 I running).",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2933-salviati-1525"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "cryptanalysis",
+   "title": "Salviati 1525 (BnF fr.2933 no.11) f.54r: no key on file fits; simple homophonic model excluded with a matched control",
+   "grade": "no reading: H0 C0 S0 M0 I0. Matched interleaved Italian control (N 370, 36 types, the page's own plain/cipher pattern) recovers 75.4-92.4% of tokens; the target gives no Italian in 3 seeds",
+   "line": "Shape trial against the Raince 1526, Gramont 1530 and Ranzo keys on file: 9/36, 8/36, 0 generic matches, no Italian. f.54r is not simple homophonic substitution over the 36 base signs with marks ignored; marks-as-vowels, syllabic or nomenclator models remain open and need the other seven leaves transcribed (~2000 tokens) for a working control.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2933-salviati-1525"
   }
  ],
  "lanes": [
   {
    "name": "Lane R4, recovery",
-   "live": 1,
-   "focus": "Posthius 1614/18 verified N0 (decipherment on the leaf; 1618 key printed in Aerztebriefe), a catch after the reading; Salviati 1525: no key fits, control reads, target does not (code+mark model untested); 1519 election key passes disagree, gate failed; Bowes codes tabled"
+   "live": 0,
+   "focus": "closed 16:30 on its handoff: Posthius read (H96 M13, for V4); Bowes codes C1 M9; Salviati f.54r transcribed 83.5% and simple-homophonic excluded with control; 1519 key atlas coverage open; 5549 sources 5205/5209 negative"
   },
   {
    "name": "Lane N3, copy-free nominations",

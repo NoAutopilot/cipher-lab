@@ -118,6 +118,46 @@ published keys to try on unread Gallica siblings). Checked 24 Sept 14:45 UTC by 
 the fifteen N4 items appears there; Thurloe P4 is on his 'not solved' list (a contribution once the JSTOR gate passes). If this parent stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE R4 handoff (session_01LrTggxL1PyxmJd6eygqaGY), 24 September 2026, 16:30 UTC
+
+Lane: recovery, 14:46-16:30 UTC, successor to LANE R3 (13:52) and heir to LANE G3's Salviati/M36 items; run on the owner's 14:45
+decision under the seven-day `allowed_warning` (resets Sat 26 Sept 13:00 UTC; status read at every check-in, never `rejected`).
+Nine workers (A-I), $49.41 of worker usage, orchestrator about $19. All ledgered (LEDGER.md with session ids), in
+hub-seed/ASSIGNMENTS.md, archived. Briefs `.claude/briefs/runs/2026-09-24-lane-r4-*.md`. **Live workers: none.** Closed because
+every briefed job has a result.
+
+**Results (novelty from the verifiers, not this lane):**
+| Target | Result | Class |
+|---|---|---|
+| trew-posthius-1614-18 | 1614 cipher block and 1618 specimen read with the leaves' own keys (both 12-pair reciprocal two-row tables, not keyword alphabets); 1614 German "ich hab nit gewist das ihr mein nachtbar wolt werden bei der dihlin ..."; 109 tokens H 96 M 13, `decode_key.py --check` 0 (F) | for LANE V4 |
+| bowes-walsingham-1583 | numerical name-codes collated, codes.tsv: 12 codes, 33 uses; C 1 (189 Montrose), M 9, unread 2 (E) | -- |
+| fr2933-salviati-1525 f.54r | transcription dataset: 509 boxes, 370 signs in 36 types, passes agree 83.5% (B, G); no key on file fits by shape; simple homophonic over base codes excluded with a matched interleaved control at 75-92% (I) | -- |
+| jan-van-nassau 5549 | key source: 5205 and 5209 fitted, both negative (cos 0.33, 0.39) (C) | -- |
+| fr5761-election-1519 (M36) | atlas of 35 codes over f104-f110 and two f104 passes; gate failed 2.8% because the atlas does not cover the key's alphabet signs (D, H) | -- |
+
+**Open items:**
+1. Posthius (for V4): faint small-hand letters above 1614 cipher lines 2-4 may be a contemporary decipherment; read at native
+   resolution (api.digitale-sammlungen.de, id bav80016364_00001) before classing. trew-letters.com, Karrer's catalogue and
+   Schmidt-Herrling 1940 not searched.
+2. Salviati: transcribe f.54v-f.57v with the same box-keyed passes (script classification + two confirm/correct Sonnet passes,
+   about $1/page) to reach ~2000 tokens, where the code+mark model has a working control; then test marks-as-vowel-indicators with a
+   control of that design. Key source: a Salviati nunciature key (ASV Segreteria di Stato; Strozziane). Promote G's recon_box
+   script to tools/ (reconcile by box id).
+3. M36 1519 key: rebuild the atlas for the alphabet row of f104 (check atlas coverage of the leaf first: share of boxes with a
+   confident code), then one more pair of passes. It is a key without ciphertext; the catalogue shows no "chiffre" letter in fr.5761.
+4. Bowes: a C for the other codes needs CSP Scotland vi as text (not on archive.org; HathiTrust EF keeps numbers only).
+5. 5549: the key source lies outside Willem's 1574 letters (5204-5213 all tested); next are letters to or from Jan Nov 1573-Mar 1574
+   in other archives, and csWV3's 5801/11250 leads.
+
+**Lessons:**
+- Workers that supervise subagents overran 1.7-2.7x (A $10.72/$4, B $13.56/$6, D $8.69/$5) and lost in-flight passes when
+  stopped; workers that did the job themselves on script output finished at 26-73% of cap (C, E, F, I). Brief small passes as
+  "do it yourself, no subagents".
+- The orchestrator's scripted reconcile of a stopped worker's two passes (Posthius, 90.6%) made the solver's job 30 minutes and $1.79.
+- Box-keyed confirm/correct passes over a script's classification lifted Salviati from 62.8% to 83.5%; free-text passes on the
+  same page had agreed 4.7%.
+- Control first again settled a cryptanalysis question in five minutes (I, $2.10).
+
 ## LANE N2 handoff (session_01DfQyAaXAgcoFZMAbBTGj4f), 24 September 2026, 14:16 UTC
 
 Lane: nominations, successor to LANE N (09:53-14:16 UTC). Stopped on the **seven-day** rate-limit `allowed_warning` (first seen 13:50,
