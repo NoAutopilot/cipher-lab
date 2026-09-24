@@ -166,7 +166,7 @@ capture worker fetching these six PDFs (`pdf_url` pattern: `resources.huygens.kn
 05999/*.pdf` for 5194/5797/5799/5810/5811, `04000-04999/04503.pdf`) should still view each once before solving,
 since 5194 in particular uses a merchant-letter cover format that may format its cipher differently.
 
-**Verdict: open** (all six), copy-free, **kind: recovery** (same circle as NB1's siblings 4613/4615 with imaged
+**Verdict: open** (all six), copy-free, [correction, verifier V7, 24 Sept 2026: 4503 and 5811 are printed in Groen IV, Lettres CDLXXXIV and CDLXXXIII, cited in their own WVO Brongegevens as GPA; both N0 in AUDIT.md 'WV2 letters (V7)'; the other GPA rows here (5194, 5797, 5799, 5810) likely printed too, unchecked] **kind: recovery** (same circle as NB1's siblings 4613/4615 with imaged
 contemporary decipherments, plus 7205/7206/7208 solved on leaf and 8+ more "solved elsewhere" letters
 1573-1574 per the QUEUE.md WV2 row -- an alignment problem, not cryptanalysis from scratch).
 

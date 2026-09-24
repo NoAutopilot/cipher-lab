@@ -1380,8 +1380,8 @@
    "date": "24 Sept 2026",
    "kind": "recovery",
    "title": "William of Orange to Louis of Nassau, 1574 (WVO 5811, 5810, 4503): partial readings under the letter table aligned from the 1573 sibling decipherments",
-   "grade": "5811: C 616, I 81, M 792, U 53 of 1542; 4503: 237 tokens, I 7 M 219 U 11 (single settled reading); 5810 single pass (M 2771 of 3096); novelty not audited",
-   "line": "Three 1574 letters read under the same table as 4610-4616, so 4612's failure is not a general 1574 change. 5799 (3 Apr 1573) fails the table (0 of 146 numerals give French, matched control 81.5%): a different key. 5194 and 5797 not transcribed.",
+   "grade": "5811: C 616, I 81, M 792, U 53 of 1542; 4503: 237 tokens, I 7 M 219 U 11 (single settled reading); 5810 single pass (M 2771 of 3096); novelty: 5811 N0, 4503 N0 (AUDIT.md 'WV2 letters (V7)', 24 Sept 2026), 5810 not audited",
+   "line": "Three 1574 letters read under the same table as 4610-4616, so 4612's failure is not a general 1574 change. 5799 (3 Apr 1573) fails the table (0 of 146 numerals give French, matched control 81.5%): a different key. 5194 and 5797 not transcribed. 5811 and 4503 are printed in Groen van Prinsterer, Archives IV, Lettres CDLXXXIII (pp. 364-366) and CDLXXXIV (pp. 368-369, with omissions), cited in their own WVO records; our readings are re-decipherments that agree with those prints (N0).",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74"
   },
   {

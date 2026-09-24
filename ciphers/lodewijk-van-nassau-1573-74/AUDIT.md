@@ -348,3 +348,91 @@ Outreach: gate 2 open only on JSTOR lines 52-54, 60 (ASKS row 36). CONTRIBUTIONS
 
 Requests (this section, D1): books.google.com 4; www.dbnl.org 1; archive.org 9 (advancedsearch 3, metadata 4, djvu
 downloads of Granvelle t. X-XI 2); www.googleapis.com 2 (Granvelle).
+
+## WV2 letters (V7): WVO 5811 and 4503, novelty audit (24 Sept 2026)
+
+Verifier V7 for LANE V2, 24 Sept 2026, 10:45-10:55 UTC. This session did not solve these letters and does not defend
+the solver's conclusions. No decoding; the cipher was not re-read. The four classes above (4610, 4611, 4616 N4;
+4612 N3) are not touched.
+
+Claim under audit (status.json results row "William of Orange to Louis of Nassau, 1574"; NOTES.md W1/W2): 5811 and
+4503 read under R18's key (`decode_wv2.json`), 5811 C 616 I 81 M 792 U 53 of 1542, 4503 I 7 M 219 U 11 of 237,
+"novelty not audited"; NOTES.md "WV2" section: "None carries a solution word in WVO's Opmerkingen ... Verdict: open".
+
+### V7.1 Verdict
+
+| item | date, place | prior plaintext | prior decipherment | class |
+|---|---|---|---|---|
+| 5811 | 13 Apr 1574, Dordrecht; Orange (signed for him by Nicolaas Brunynck) to Counts Jan, Lodewijk and Hendrik | **yes**: Groen van Prinsterer, Archives 1st ser. IV (1837), Lettre CDLXXXIII, pp. 364-366, the letter's full text including the postscript "Quant à Eyndhoven" and Brunynck's covering note | the print is this letter's plaintext, and WVO's own record of the cipher original (KHA A 3, 895/I) cites that print as the same letter; no separate decipherment sheet located | **N0** |
+| 4503 | 15 Apr 1574, Gorinchem; Orange to Lodewijk, answering 4615 and 4616 | **yes**: Groen IV, Lettre CDLXXXIV, pp. 368-369, printed with omissions (WVO: "(onv)", onvolledig; Groen's "...." marks) | as for 5811: WVO's record of the original (KHA A 2, 723 A/I) cites the print | **N0** |
+
+Why N0 and not N1: rule 10 separates "plaintext and decipherment of this very item already known" (N0) from
+"plaintext already published anywhere" (N1). Here the printed text is not a parallel or clear copy of a different
+document: it is the text of these two letters, and the holding catalogue links the cipher originals to the print
+entry by entry. Groen does not say how he obtained the plain text (no "chiffre" note at either letter); if a clear
+minute rather than a decipherment was his source, the class would read N1. Either way our readings are
+re-decipherments of printed letters. N0 is the conservative choice; nothing would move either item above N1.
+
+### V7.2 Evidence
+
+| source | where | what it shows |
+|---|---|---|
+| WVO record 5811 | resources.huygens.knaw.nl/wvo/app/brief?nr=5811, fetched 10:47 UTC | Brongegevens: KHAG A 3, 895/I origineel; **GPA IV, 364-366 nr. CDLXXXIII**. Opmerkingen: "Grotendeels in cijferschrift. Met postscriptum. Antwoord op de nrs. 4614 en 4615. De brief is bij afwezigheid van de prins ondertekend door Nicolaas Brunynck. Met duplicaatschrijven." |
+| WVO record 4503 | .../brief?nr=4503, fetched 10:47 UTC | Brongegevens: KHAG A 2, 723 A/I origineel; **GPA IV, 368-369 nr. CDLXXXIV (onv)**. Opmerkingen: "Gedeeltelijk in cijferschrift. Met een postscriptum. Antwoord op de nrs. 4615 en 4616." |
+| Groen IV, CDLXXXIII | DBNL `groe009arch04` (fetched once), pp. 364-366 | "j'ay veu vostre délibération de venir avec voz trouppes pardeçà et à cest effect prendre vostre chemyn entre Grave et Thiel ... une bonne partie de mes Capitaines qu'ilz ayent au plus tost à se trouver ès environs de Tiel ... Escript à Dordrecht, ce xiij jour d'apvril 1574." Addressed "A Messieurs les Contes Jean, Louys et Henry de Nassau" |
+| Groen IV, CDLXXXIV | same file, pp. 368-369 | "pour estre bien mal possible d'assambler en telle haste les gens que je désire de envoyer pour vostre escorte. Et toutesfois j'espère que pour demain aurons quelques trente-cinc ou trente-sis Compaignies ensemble ... me mander au plustost où vous avez délibéré de passer la rivière, pour vous y aller recepvoir ... Escript à Gorichum, ce xve jour d'Apvril 1574" |
+| Script comparison (V7, letters only, v/u j/i y/i folded, difflib) | readings vs Groen text | 4503: 90.4% of the reading's 375 letters align to CDLXXXIV (79.2% in runs of 8+); 5811 p1+p2: 87.9% of 958 (62.8%); 5811 p5 (the duplicate): 78.9% of 796 (32.4%). Control, the same readings against an unrelated Groen letter of the same week (CDLXXXVI, same length): 4503 45.6% (13.6%), 5811 p1+p2 24.6% (5.3%). The readings are these printed letters |
+
+### V7.3 Principal families
+
+| family | status | what | result |
+|---|---|---|---|
+| Holding catalogue (WVO, Huygens) | searched | brief records 4503, 5811 (2 requests) | both cite Groen IV by page and number |
+| Groen, Archives 1st ser. t. IV | searched | DBNL full text, read by date (13 and 15 Apr 1574), Lettres CDLXXXIII-CDLXXXVI | both printed; no cipher note at either |
+| Groen t. V, Supplément; Japikse; Gachard (Guillaume t. III; Philippe II t. III); Kervyn; Blok 1889; Google Books API; IA full text; DBNL phrase search | not searched | not needed: the canonical edition and the holding catalogue already give the floor class N0; a further print could not change it | -- |
+| JSTOR, second opinions | not queued | an N0 item needs neither (brief: second opinion only at N3+) | -- |
+
+### V7.4 Did we first-decipher?
+
+No. Both letters were printed in full (5811) or nearly in full (4503) in 1837, and WVO cites those prints on the
+records of the very originals the solver worked from. What the readings do show is that R18's key, aligned on
+4613/4615, reads the 1574 letters of Orange's chancery: a key validation, not a new text.
+
+What the all-M grade of 4503 means for the class: M is the solver's transcription grade (both blind passes marked
+their digits uncertain, so no token reached H or C). It limits what the reading can support on its own; it does
+not bear on novelty. Had nothing been printed, a reading made only of M tokens could have supported "read in
+continuous French, uncertain per sign", not a text for anyone to cite. Because the text is printed, the grade question
+reverses: Groen's text is now known plaintext, and the solver can align it to regrade 4503's and 5811's tokens as C
+(rule 4) and to test the M and U signs. The word-level differences worth that test (image, not print, decides):
+5811 "[uingt][cheuaulxlegiers]" where Groen prints "pour la cavallerie"; "Quant au S'r Eschange" where Groen prints
+"Quant au Rittmaistre Schenk"; 4503 "je crois que" where Groen prints "j'espère que". Groen also omits part of 4503;
+no stretch of our 4503 reading was found outside the printed text.
+
+Confidence: high. Both identifications rest on the holding catalogue's own citation, on dates, places and
+correspondents, and on a script alignment against a control.
+
+### V7.5 Safe and unsafe sentences
+
+- **5811** safe: "Orange's letter of 13 April 1574 from Dordrecht to his brothers (WVO 5811) is printed in Groen van
+  Prinsterer, Archives IV, Lettre CDLXXXIII; our reading under the 4613/4615 key is a re-decipherment that agrees with
+  that print." Unsafe: "a newly read letter from the eve of Mookerheyde".
+- **4503** safe: "Orange's letter of 15 April 1574 from Gorinchem to Lodewijk (WVO 4503) is printed, with omissions, in
+  Groen IV, Lettre CDLXXXIV; our reading re-deciphers the cipher body and agrees with the print." Unsafe: "the
+  unread letter that never reached Lodewijk".
+
+### V7.6 Postmortem
+
+Failure: the WV2 check-solved row (NOTES.md "WV2") read WVO's Opmerkingen for a solution word and its archive codes
+column, but treated the code **GPA** as "inferred" (sources/wvo/NOTES.md) and never read the Brongegevens line, which
+names Groen by volume, page and letter number. The two letters then went through capture, two passes, a build and
+a settle attempt (W1, W2) before anyone opened Groen IV at 13-15 April 1574, where V2 had already cited Lettre
+CDLXXXIV as "Orange's reply to 4616" earlier the same day without connecting it to WVO 4503. Lesson for the
+check-solved and scout briefs: on a WVO row, the Brongegevens field is part of the status check; **GPA means printed
+in Groen's Archives**, and every WVO cipher row carrying GPA (in `sources/wvo/cipher-letters-2026-09-24.tsv`: 5194,
+5200, 5207, 5213, 5218, 5221, 5222, 5549 [GPAS], 5797, 5799, 5810, 10260 besides these two) should be looked up in
+Groen by the cited page before any reading effort. Not done here (other items, outside this brief).
+
+Corrections made in place: NOTES.md "WV2" verdict line (4503 and 5811 annotated as printed); status.json results
+row for 5811/4503 (novelty field). NOTES.md status word stays `partial`.
+
+Requests (V7): www.dbnl.org 1; resources.huygens.knaw.nl 2. No other hosts. No subagents.
