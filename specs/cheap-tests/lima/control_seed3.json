@@ -1,0 +1,18 @@
+{
+ "mode": "control",
+ "N": 71,
+ "K": 21,
+ "letters_correct": 53,
+ "share": 0.746,
+ "score": -146.3931990105302,
+ "plain": "theproiectgutenbergebookofmobydickorthewhalethisebookisfortheuseofanyon",
+ "decoded": "theproiesthatenlerheloomofcoldhismorthewhauethiseloomisfortheaseofandon",
+ "restart_scores": [
+  -146.4,
+  -148.6,
+  -148.6,
+  -157.6,
+  -166.1,
+  -169.2
+ ]
+}

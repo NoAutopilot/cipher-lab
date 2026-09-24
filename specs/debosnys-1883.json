@@ -1,0 +1,41 @@
+{
+ "slug": "debosnys-1883",
+ "rank": 2,
+ "schmeh_top50": 3,
+ "name": "Henry Debosnys's four cryptograms, Essex County jail, New York, 1882-83",
+ "date": "1882-83",
+ "language_candidates": [
+  "fr",
+  "en",
+  "pt",
+  "la",
+  "el"
+ ],
+ "ciphertext": null,
+ "ciphertext_pending": "Cryptogram 1 (six lines in a simple-symbol alphabet) and three more; images in Cheri Farnsworth, The Adirondack Enigma (2010) and on Cipherbrain post 3 (2020; image URLs in sources/schmeh/posts/03-debosnys.html, not fetched); partial transcriptions on Cipher Mysteries and in Bauer, Unsolved! (2017). Originals at the Adirondack History Center Museum, Elizabethtown NY (which also holds his skull and his clear-text poems and drawings).",
+ "alphabet": "simple invented symbols; count per cryptogram to be established",
+ "constraints": {
+  "author": "French-speaking, claimed Portuguese birth, wrote poems in French and English in the same papers, educated (Latin, Greek)",
+  "host_text": "his clear poems from the same jail papers are the natural crib and form source: line counts and lengths of the cryptograms vs his clear verse",
+  "attempts": "few (Schmeh 2020: 'only few crypto experts have occupied themselves')"
+ },
+ "cheap_tests_in_order": [
+  "1. Fetch the four images once (Schmeh's post, 4 requests, or Farnsworth's scans as cited) and transcribe in two passes; symbol counts, IC, line structure. Cost $4, Sonnet.",
+  "2. Form test (Urquhart lesson b): compare the cryptograms' line and syllable counts with his clear poems; if a cryptogram has the shape of a poem he also wrote in clear, the clear poem is a full crib. Cost $1.",
+  "3. Homophonic/MASC anneal in fr, en, pt, la with a control at each cryptogram's N and K (tools/homophonic_anneal.py, corpora fr16/it16/en on disk; Portuguese to be fetched). Cost $4, Sonnet; strongest model to read the result against his biography.",
+  "4. Archive: the museum's holdings list for a key sheet among his papers (an ASKS row; a cheap email)."
+ ],
+ "matched_control": "same N and K, French plaintext (fr16), same solver",
+ "judge": {
+  "language": "fr",
+  "letters_min": 60,
+  "min_word_cover": 0.4,
+  "control_samples": 100,
+  "note": "fr16 is 16th-century French; a 19th-century French corpus should be added before judging"
+ },
+ "value": "high: Schmeh's no. 3, a documented author with clear-text siblings, few prior attempts",
+ "model": "Sonnet for 1-3, strongest model for the reading",
+ "status_24_Sept_2026": "open; no solution found 24 Sept 2026 (web search, Wikipedia list of ciphertexts, Bourdeau's excluded list)",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+ "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
+}

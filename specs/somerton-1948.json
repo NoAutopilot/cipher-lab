@@ -1,0 +1,44 @@
+{
+ "slug": "somerton-1948",
+ "rank": 3,
+ "schmeh_top50": 5,
+ "name": "Somerton Man (Tamam Shud) code, Adelaide, 1948",
+ "date": "found 1949 (body 1 Dec 1948)",
+ "language_candidates": [
+  "en"
+ ],
+ "ciphertext": [
+  "MRGOABABD",
+  "MLIAOI (struck through)",
+  "MTBIMPANETP",
+  "MLIABOAIAQC",
+  "ITTMTSAMSTGAB"
+ ],
+ "ciphertext_source": "Cipherbrain post 5 (Schmeh 2018, sources/schmeh/posts/05-somerton.txt) and Wikipedia 'Somerton Man' (fetched 24 Sept 2026); Wikipedia reads the first letters of lines 1 and 3 as W, Schmeh as M; an 'x' sits above line 4. Faint pencil indentations on the back cover of a 1941 Whitcombe & Tombs (NZ) FitzGerald Rubaiyat; the book itself is lost, only police photographs survive.",
+ "alphabet": "Latin capitals, 12 distinct letters over 50 characters",
+ "constraints": {
+  "letters": 50,
+  "identification": "Carl 'Charles' Webb (1905-1948), Abbott and Fitzpatrick, 26 July 2022, DNA; coroner's formal finding still pending July 2026",
+  "prior_analysis": "Turnbull and Bihari 2009, Abbott's group 2009-14: letter statistics fit English word initials, not a substitution cipher",
+  "not_a_cipher": "treated as an initialism; the plaintext, if any, is a sentence whose word initials are these letters"
+ },
+ "cheap_test_done": "Cheap test 3, 24 Sept 2026 (specs/cheap-tests/somerton_rubaiyat.py, .out): the five lines and every substring of 5+ letters searched against the word-initial sequence of FitzGerald's Rubaiyat (Gutenberg #246, first and fifth editions with FitzGerald's preface and notes, 12,180 words). Line 5 contains a 7-letter run TSAMSTG that equals the initials of 'the Son, and Malik Shah the Grandson' in FitzGerald's preface (line 34 of the Gutenberg body); the flanking letters (ITTM before, AB after) do not continue the match (the host reads TAA...OTB). Control: 1000 random five-line sets drawn from the English initial-letter distribution, same search: longest run 5 in 335 sets, 6 in 25, 7 or more in 0 of 1000. This is a search result, not a reading: a 7-of-13 partial match in a preface, and the 1941 NZ edition may not print that preface.",
+ "cheap_tests_in_order": [
+  "1. Establish what the 1941 Whitcombe & Tombs edition contains (preface or not; which FitzGerald edition) from a library catalogue or a scan on Trove/IA; if it carries the preface, rerun test 3 on that exact text and on each quatrain separately. Cost $2, Sonnet.",
+  "2. Webb's own texts: Abbott's group reported poetry in Webb's possession and his known letters; run the initials search over any published text of his. Cost $2 once a text exists; otherwise an ASKS row.",
+  "3. Initialism generation is not a cheap test (the space is open-ended): do not run a solver. A candidate sentence is judged only by initials_regex plus the English gate."
+ ],
+ "matched_control": "random initial strings from English prose, as in cheap test 3",
+ "judge": {
+  "initials_regex": "^[MW]RGOABABD[MW]LIAOI[MW]TBIMPANETP[MW]LIABOAIAQCITTMTSAMSTGAB$",
+  "language": "en",
+  "language_pass": "null_only",
+  "letters_min": 100,
+  "control_samples": 100
+ },
+ "value": "very high in fame, low in verifiability: no key source can grade any sentence above M",
+ "model": "Sonnet",
+ "status_24_Sept_2026": "open; not a cipher by consensus; identification of the man does not read the letters",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+ "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
+}

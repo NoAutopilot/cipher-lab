@@ -1,0 +1,36 @@
+{
+ "slug": "moustier-altars",
+ "rank": 4,
+ "schmeh_top50": 18,
+ "name": "Encrypted altar inscriptions, St Martin's church, Moustier (Frasnes-lez-Anvaing), Belgium",
+ "date": "19th century (altars; Schmeh: 'puzzling for 170 years')",
+ "language_candidates": [
+  "la",
+  "fr",
+  "nl"
+ ],
+ "ciphertext": null,
+ "ciphertext_pending": "No transcription on disk. Sources: Schmeh's own photographs on Cipherbrain post 18 (2017; image URLs in sources/schmeh/posts/18-moustier.html, not fetched, request budget), Pelling's post (Cipher Mysteries, 2 Apr 2013) and the NSA Cryptolog article that first described them; Prof. Jean Connart's work since 1961.",
+ "alphabet": "unknown symbol set on two side altars (St Mary's, St Martin's); to be counted",
+ "constraints": {
+  "genre": "altar inscriptions are formulaic: dedication (D.O.M., sanctae Mariae, sancto Martino), donor and date (MDCCC..), invocation (ora pro nobis); a Latin or French crib list is the key resource",
+  "images": "two altars, several photographs per Schmeh"
+ },
+ "cheap_tests_in_order": [
+  "1. Fetch the two altar images once (Schmeh's post, 2 requests) and transcribe in two passes (Sonnet), reconcile with tools/reconcile_passes.py; count symbols and lines. Cost $3.",
+  "2. Crib-driven MASC in Latin then French (tools/homophonic_anneal.py with --fix on dedication cribs; Latin corpus via tools/latin_ngram.py); judge in la/fr. Control: a Latin dedication text of the same length and symbol count. Cost $2, Sonnet.",
+  "3. If the symbol count is far above 26: treat as a code or a Masonic/pigpen-family script and compare the symbol shapes with 19th-century Belgian lodge alphabets. Cost $2, strongest model for the shape comparison."
+ ],
+ "matched_control": "Latin dedication text, same N and K",
+ "judge": {
+  "language": "fr",
+  "letters_min": 20,
+  "control_samples": 100,
+  "note": "switch to a Latin corpus (tools/latin_ngram.py corpus) once built; fr16 is 16th-century French"
+ },
+ "value": "moderate: a public monument, a formulaic genre, few attempts on record (Connart, Pelling)",
+ "model": "Sonnet, strongest model only for the shape question",
+ "status_24_Sept_2026": "open; nothing later than Schmeh 2017 and Pelling 2013 found 24 Sept 2026",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+ "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
+}

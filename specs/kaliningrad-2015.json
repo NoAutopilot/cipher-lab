@@ -1,0 +1,39 @@
+{
+ "slug": "kaliningrad-2015",
+ "rank": 5,
+ "schmeh_top50": 19,
+ "name": "Kaliningrad (Baltiysk) bottle-post cryptogram, found 2015",
+ "date": "Soviet era, found 2015",
+ "language_candidates": [
+  "ru-latin",
+  "pl",
+  "lt",
+  "de",
+  "ru-cyrillic-transposed"
+ ],
+ "ciphertext": null,
+ "ciphertext_pending": "Two sheets, photographed in the Kaliningrad press and on Cipherbrain post 19 (2017); a reader's transcription exists on the Russian blog thread linked from the post and in reader Thomas's comments (alphabet: abcdefghiklmnorstuvwz plus d' f' h' l' m' n' n\" ö r' s' t' ü z', e-circumflex, e-underlined: 37 signs; index of coincidence about 0.054). Not on disk; the comment thread of the saved post carries the alphabet but not the full text.",
+ "alphabet": "Latin letters with apostrophes and diacritics, 37 signs",
+ "constraints": {
+  "ic": 0.054,
+  "apostrophes": "after 11 letters, inside words: consistent with Russian soft/hard signs transliterated (Ernst in comments) or with Czech/Polish diacritics",
+  "provenance": "Baltiysk (Pillau) street excavation, Soviet-era bottle"
+ },
+ "cheap_tests_in_order": [
+  "1. Get the full transcription from the Russian thread (one fetch) and the two images (two fetches); two-pass check of the transcription. Cost $2, Sonnet.",
+  "2. MASC anneal with the apostrophe as a modifier (letter+') vs as a separate sign, in transliterated Russian (fetch one Russian Gutenberg text and transliterate), Polish, Lithuanian and German; judge with the matching corpus; control per language at the same N and K. The IC of 0.054 already argues against a single-alphabet substitution of plain text in most of these (Russian ~0.055 is the closest, so Russian first). Cost $4, Sonnet.",
+  "3. If flat after 2: periodic IC for a short key. Cost under $1."
+ ],
+ "matched_control": "same N and K in each candidate language",
+ "judge": {
+  "language": "de",
+  "letters_min": 100,
+  "control_samples": 100,
+  "note": "Russian/Polish corpora are not on disk; add them as 'corpora' when fetched"
+ },
+ "value": "moderate; 58 reader comments without a solution, but no machine run across the candidate languages is on record",
+ "model": "Sonnet",
+ "status_24_Sept_2026": "open per Schmeh 2017; nothing later found 24 Sept 2026",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+ "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
+}

@@ -1,0 +1,68 @@
+{
+ "slug": "koehler-1944",
+ "rank": 1,
+ "schmeh_top50": 47,
+ "name": "The five Koehler (Köhler) cryptograms, Abwehr Paris, February 1944",
+ "date": "February 1944",
+ "language_candidates": [
+  "de",
+  "nl",
+  "en"
+ ],
+ "ciphertext": [
+  {
+   "kahn_length_header": 237,
+   "groups": "ybtat mqfvo dvbis prito kecqg kokik kyiwm zuarj alyia qtxvi vxzya szgou skiqn rbqjq nogex ezdnf vusda zurop ixklo cmnbl grdhz swmch kupef pzlej hbord wkkhu vthjk sfwda jepmu izvig kzlau rdrxx mdecs spozv eeeod dlmdz nqmia pidwg xdcyy mvkso hmmii impwq nkipa mljvm sqsbb glevn sktlq tn",
+   "letters": 237
+  },
+  {
+   "kahn_length_header": 178,
+   "groups": "eekao parwo xiavy pejux lhnjh pbqdd vdvxb mdiia gwymn zbivm abuws dwoug djozl ylaug loaea ilihj swjft oetad tjisn avaqn sodwb wzaxe zvoxg xpgzv adurm shvxx xfmuq pdpvq dqwtu fryok xfvcp ydzwm ofwfl uzfne qsslo avl",
+   "letters": 178
+  },
+  {
+   "kahn_length_header": 137,
+   "groups": "tziqb lqqxs kinod mbvil sukms syarh mhzvp tvswm ayddg rixyy omfzm ugfzz aznqe ljuyi ygwuo qmdbi vcxgz rmzno pessh gpoyx qqlei xmaoj buugz czfdl yzmkp gsmfm dteze oxmos",
+   "letters": 140
+  },
+  {
+   "kahn_length_header": 140,
+   "groups": "dmxkb kqnvh zzeek beoop ygcca yvepv tykmt iykfl zkacv uxiyd kruwy vnjvp xyeqp jpmfo abzpt mjtdy zvzky bjgze vdtyd zeejw zumjp ivsna gsmzq dltxb qjqqj fnpta mqted skijj",
+   "letters": 140
+  },
+  {
+   "kahn_length_header": 229,
+   "groups": "fpoxa tijyp qrerq znqst zasnk zarvq hhsmw vlhfg pyhqc yuirf fsgoi twgdg sbphc fkfza bpegh jzujn wtsxp ijamg tzdto hxzdn uivww tizoc axkye lhmdn sfzjo omrhb zpith hkisf anvdr ynhqk syrgi ltxos wabom dzwlb byava sjomn qqszs adddu greao albon lxzgi iwpnf uzgui jgmya ksqfw zsjl",
+   "letters": 229
+  }
+ ],
+ "ciphertext_source": "Klaus Schmeh, Cipherbrain, 'Update: Five encrypted radio transmissions from a New York Nazi spy' (2021), fetched 24 Sept 2026 (sources/schmeh/posts/47b-koehler-update-2021.txt), reproducing David Kahn, Cryptologia 5:2 (April 1981); transcription, not an image. Message three is headed 137 by Kahn but has 140 letters as printed; message four is headed 140 and has 140.",
+ "alphabet": "a-z, 26 letters all present, five-letter groups",
+ "constraints": {
+  "total_letters": 924,
+  "sender": "Walter Koehler, Dutch, Abwehr agent, FBI double agent in New York from 1942; these five went to Abwehrleitstelle Frankreich, Paris Funkstelle, outside FBI control (Schmeh 2021 after Johnson, Warfare History Network)",
+  "known": "the FBI-run channel used a book cipher on a Dutch prayer book (Johnson); these messages were not on that channel",
+  "ic_pooled": 0.0399,
+  "ic_note": "flat IC (cheap test 1, specs/cheap-tests/koehler_ic.out): not a transposition of German or English (controls 0.072 / 0.065); chi-square vs uniform 58.7 on 25 df, so weakly non-uniform (z frequent, c rare)"
+ },
+ "cheap_tests_in_order": [
+  "1. Periodic IC / Kasiski on the pooled 924 letters for a period 2-30 (a Vigenère-family or running-key would show one; a one-time pad or a book cipher with word sums would not). Cost under $1, Sonnet.",
+  "2. Archive lookup (recovery route): TNA Discovery API for KV 2 files on Walter Koehler / Köhler (the Security Service's double-agent files) and HW 19 (ISOS/ISK decrypts of Abwehr traffic, where a Paris-Funkstelle message of Feb 1944 would have been read by GC&CS); Kahn 1981 cites the TNA letter that quotes the five messages, so start from his footnote. A file that holds the Abwehr's own decrypt ends the item as found-solved. Cost $3-5, Sonnet, one host at a time.",
+  "3. FBI Vault / NARA RG 65 'Walter Koehler' for the FBI's later reconstruction (the 1970s journalist's source). Cost $2.",
+  "4. If test 1 shows a period: Vigenère/Beaufort hill-climb in de, nl, en judged by tools/judge_plaintext.py; matched control = a German (and a Dutch) plaintext of 924 letters under a random key of the found period, same solver, same restarts (rule 3). Cost $3, Sonnet.",
+  "5. If flat: book cipher with letter arithmetic (Thouless-style word sums; Bean's 2019 method ranks candidate key texts by the letter frequencies of the decrypt) over Dutch and German Gutenberg texts. Cost $10-20, strongest model to design, Sonnet to run. Only after 2 and 3 fail."
+ ],
+ "matched_control": "same length and alphabet, German plaintext (tools/data/de16) under the hypothesised system, run before any negative is written",
+ "judge": {
+  "language": "de",
+  "letters_min": 100,
+  "letters_max": 1000,
+  "min_word_cover": 0.5,
+  "control_samples": 200
+ },
+ "value": "high: Kahn's own unsolved item, a real 1944 espionage text with a documented sender; a reading would be a contribution to the Koehler/Hoover story",
+ "model": "Sonnet for tests 1-3; strongest model only for 5",
+ "status_24_Sept_2026": "open; not on DECODE, not in either solver repository (LANDSCAPE), Schmeh 2021 'solution remains unknown'",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+ "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
+}

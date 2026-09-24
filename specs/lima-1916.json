@@ -1,0 +1,55 @@
+{
+ "slug": "lima-1916",
+ "rank": 9,
+ "schmeh_top50": 16,
+ "name": "Lima, Ohio ticket-office robbery cryptogram, June 1916",
+ "date": "27 June 1916",
+ "language_candidates": [
+  "en",
+  "commercial code"
+ ],
+ "ciphertext": [
+  "Lima Times Democrat: Was nvlvaft by aakat txpxsck upbk txphn ohay ybtx cpt mxhg wae sxfp zavfz ack there first txlk week wayx za with thx",
+  "Enigma (NPL): WAS NVKVAFT BY AAKAT TXPXSCK UPBK TXPHN OHAY YBTX CPT MXHG WAE SXFP ZAVFZ ACK THERE FIRST TXLK WEEK WAYX ZA WITH THX"
+ ],
+ "ciphertext_source": "Cipherbrain post 16 (Schmeh 2017, sources/schmeh/posts/16-lima-robbery.txt), after Pelling (Cipher Mysteries 2013) and Oranchak; two newspaper transcriptions differ in one letter (nvlvaft / nvkvaft). No manuscript survives; transcription only (rule 2).",
+ "alphabet": "a-z; 71 letters in 17 cipher words, 6 words in clear (was, by, there, first, week, with)",
+ "constraints": {
+  "cipher_letters": 71,
+  "distinct": 21,
+  "clear_words": [
+   "was",
+   "by",
+   "there",
+   "first",
+   "week",
+   "with"
+  ],
+  "shape": "vowelless groups (txpxsck, mxhg) rule out a vowel-preserving substitution; word lengths 7 5 7 4 5 4 4 3 4 3 4 5 3 4 4 2 3"
+ },
+ "cheap_test_done": "Cheap test 2, 24 Sept 2026 (specs/cheap-tests/lima/): monoalphabetic annealing (tools/homophonic_anneal.py, English 3-gram, 6 restarts x 30k iterations, seeds 1-3) on the 71 cipher letters: best decodes are letter-salad with fragments only (e.g. '...esandrinterhishollitearthe...'), scores -159 to -162. Matched controls (English plaintext, N=71, K=21, same solver, seeds 1-3): 60.6, 70.4 and 74.6 percent of letters right, readable in parts. Read: the target does not behave like a monoalphabetic substitution of English at a size where the same solver reads English controls two-thirds right; consistent with a code-book, a non-English or a garbled text; conditional on a newspaper transcription.",
+ "cheap_tests_in_order": [
+  "1. Commercial-code lookup: the ABC Code 5th ed. (1901), Western Union (1900), Lieber's and Bentley's are on the Internet Archive with full text; grep the 17 words. Code words of that era are pronounceable and these are not, so expect a negative in one pass. Cost $1, Sonnet.",
+  "2. Keyboard/typewriter shift and Vigenère with keys of length 2-6 on the cipher words only, judged in English; control: an English 71-letter text under the same family. Cost $1.",
+  "3. Anagram/transposition within words (ohay -> ahoy, ack) against a word list. Cost under $1.",
+  "Bourdeau's odds are low; the variant transcription caps any reading at grade M."
+ ],
+ "matched_control": "English plaintext, N=71, K=21, same solver (done, 60-75 percent)",
+ "judge": {
+  "language": "en",
+  "letters_min": 60,
+  "letters_max": 120,
+  "min_word_cover": 0.6,
+  "cribs": [
+   "THERE",
+   "FIRST",
+   "WEEK"
+  ],
+  "control_samples": 200
+ },
+ "value": "low",
+ "model": "Sonnet",
+ "status_24_Sept_2026": "open; Bourdeau 'odds low, variant transcriptions'; Schmeh 2017",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+ "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
+}

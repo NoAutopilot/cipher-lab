@@ -1,0 +1,11 @@
+msg	len	distinct	IC	IC_de_ctrl	IC_en_ctrl	IC_random
+237	237	26	0.0388	0.0725	0.0644	0.0385
+178	178	26	0.0406	0.0734	0.0645	0.0383
+137	140	26	0.0423	0.0724	0.0648	0.0388
+140	140	26	0.0432	0.0717	0.0647	0.0395
+229	229	26	0.0389	0.0738	0.0656	0.0385
+pooled	924	26	0.0399	(German plain ~0.076, English ~0.066, uniform 0.0385)
+pooled unigram, most common: [('z', 55), ('a', 47), ('m', 47), ('d', 47), ('i', 46), ('s', 46), ('o', 44), ('v', 40)]
+pooled unigram, least common: [('w', 29), ('b', 28), ('f', 28), ('h', 26), ('r', 23), ('c', 14)]
+chi-square vs uniform (25 df; 37.7 at p=0.05, 44.3 at p=0.01): 58.7
+WARNING: parsed lengths differ from Kahn's headers: {'237': 237, '178': 178, '137': 140, '140': 140, '229': 229}

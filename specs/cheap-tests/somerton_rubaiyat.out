@@ -1,0 +1,10 @@
+host: 12180 words in Gutenberg #246 (both editions + notes); initial string length 12180
+L1 MRGOABABD: longest match <5 []
+L1 WRGOABABD: longest match <5 []
+L2 MLIAOI: longest match <5 []
+L3 MTBIMPANETP: longest match <5 []
+L3 WTBIMPANETP: longest match 5 ['WTBIM']
+L4 MLIABOAIAQC: longest match <5 []
+L5 ITTMTSAMSTGAB: longest match 7 ['TSAMSTG', 'SAMSTG', 'TSAMST']
+control: 1000 random 5-line sets from English initial-letter distribution; longest match per set: {0: 640, 5: 335, 6: 25}
+target longest match 7; fraction of control sets reaching >= that: 0.000

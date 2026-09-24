@@ -1,0 +1,45 @@
+{
+ "slug": "cigaret-case-1909",
+ "rank": 6,
+ "schmeh_top50": 7,
+ "name": "Cigarette-case dedication, 24 December 1909, Thuringian family",
+ "date": "24.12.1909",
+ "language_candidates": [
+  "de",
+  "de-thuringian",
+  "la"
+ ],
+ "ciphertext": [
+  "s h w s h l . / t | ~ w /.",
+  "h 4 w o + . h ~ / 3 3 = ~",
+  "= h ~ 4 h n . + h 8 ~",
+  "h h /. % 0 . 4 n = s 3 | ."
+ ],
+ "ciphertext_source": "The owner's transcription as printed by Schmeh, Cipherbrain post 7 (2018, sources/schmeh/posts/07-cigaret-case.txt); the engraving photos are on that post. Dots are probably word separators; lines 2 and 3 may run on (Schmeh).",
+ "alphabet": "about 18 distinct engraved signs (letters, digits, punctuation-like marks), 47 signs excluding dots",
+ "constraints": {
+  "letters": 47,
+  "initials_on_case": "AS",
+  "date": "24.12.1909, German order",
+  "silver_stamp": "800, Reichssilberstempel",
+  "genre": "Christmas dedication; possibly a verse or quotation (readers Wenmeckers, von Auer)"
+ },
+ "cheap_tests_in_order": [
+  "1. German MASC anneal (tools/homophonic_anneal.py, corpus de16 plus a modern German Gutenberg text fetched once) with the dedication crib list (weihnachten, erinnerung, liebe, dein, deine, gewidmet, treue, glueck) tried as --fix hypotheses; judge in de. Matched control: German plaintext, N=47, K=18, same solver, 3 seeds; report both (at N=47 the control will show a low ceiling, which bounds what the negative means). Cost $2, Sonnet.",
+  "2. Word-pattern search (host-text variant): the word lengths and the repeated sign 'h' (11 of 47) fit a short verse; search German Christmas verse and Bible verses for the same word-length pattern with the same repeated-letter skeleton. Cost $1, Sonnet.",
+  "3. Latin and Greek as the language under test 1 if German fails (an educated owner). Cost $1."
+ ],
+ "matched_control": "German plaintext of 47 letters, 18 signs, same solver",
+ "judge": {
+  "language": "de",
+  "letters_min": 40,
+  "letters_max": 60,
+  "min_word_cover": 0.5,
+  "control_samples": 200
+ },
+ "value": "low historical weight, but a clean short MASC-shaped target the veteran readers failed on; a good breadth-lane item",
+ "model": "Sonnet",
+ "status_24_Sept_2026": "open (Schmeh 2018; no later solution found in the search of 24 Sept 2026)",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+ "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
+}

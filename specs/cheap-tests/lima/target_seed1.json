@@ -1,0 +1,44 @@
+{
+ "mode": "target",
+ "N": 71,
+ "K": 21,
+ "score": -159.33116325814507,
+ "key": {
+  "a": "o",
+  "b": "i",
+  "c": "a",
+  "e": "u",
+  "f": "a",
+  "g": "e",
+  "h": "h",
+  "k": "n",
+  "l": "a",
+  "m": "h",
+  "n": "i",
+  "o": "s",
+  "p": "r",
+  "s": "s",
+  "t": "t",
+  "u": "d",
+  "v": "b",
+  "w": "c",
+  "x": "e",
+  "y": "l",
+  "z": "t"
+ },
+ "decoded": "ibaboatoonotteresandrinterhishollitearthehecouseartobatoanteancoletothe",
+ "restart_scores": [
+  -159.3,
+  -162.7,
+  -165.3,
+  -168.5,
+  -170.3,
+  -172.0
+ ],
+ "restart_decodes": [
+  "ibaboatoonotteresandrinterhishollitearthehecouseartobatoanteancoletothe",
+  "iuiuortoonottesetandsanteshichollateasthehegoftersbourboanteingolebothe",
+  "airiontoosottedecasidestedhatholleteadthehuponcendtointoasterspoletothe",
+  "rawaslesshseeninotheitheniergesootentiedneuisconliesalesthenwhisoneseen"
+ ]
+}

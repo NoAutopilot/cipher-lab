@@ -1,0 +1,43 @@
+{
+ "slug": "powers-1991",
+ "rank": 7,
+ "schmeh_top50": 22,
+ "name": "Encrypted dedication, Richard Powers, The Gold Bug Variations (1991)",
+ "date": "1991",
+ "language_candidates": [
+  "en",
+  "initials",
+  "structural"
+ ],
+ "ciphertext": [
+  "RLS CMW DJP RFP J?O CEP JJN PRG ZTS MCJ",
+  "JEH BLM CRR PLC JCM MEP JNH JDM RBS J?H",
+  "BJP PJP SCB TLC KES REP RCP DTH I?H CRB",
+  "JSB SDG"
+ ],
+ "ciphertext_source": "Cipherbrain post 22 (Schmeh 2017, sources/schmeh/posts/22-powers.txt), from the printed dedication page; 32 triplets, three with a '?' as middle letter.",
+ "alphabet": "capital letters in 32 triplets (96 positions, 3 unknown)",
+ "constraints": {
+  "count": 32,
+  "structure_hint": "the Goldberg Variations are aria + 30 variations + aria da capo = 32 movements; the novel is built on them and on the 64 DNA codons; J appears 19 times, mostly first or middle",
+  "not_amino_acids": "J, O and B occur, which are not amino-acid one-letter codes",
+  "hypothesis_on_record": "Stefan Wagner (Cipherbrain 2015): initials of 32 people; JSB = Johann Sebastian Bach"
+ },
+ "cheap_tests_in_order": [
+  "1. Print check first (rule 1): J. T. Thomas, 'Deciphering the code in Richard Powers's The Gold Bug Variations' (thefreelibrary id a0159331538; the article's own title claims a decipherment; the cloud gets 403, so an owner-machine row) and Powers scholarship in the open indexes. Cost $1.",
+  "2. Structural test: align the 32 triplets with the 32 movements and with the novel's chapter list (30 chapters plus frame); test whether each triplet is the initials of a chapter title, a Goldberg canon interval, or a dedicatee named in the acknowledgements. Cost $2, Sonnet, needs the chapter list (Wikipedia/Google Books preview).",
+  "3. Initials test: the 32 triplets against the people in Powers's acknowledgements and biography; 'J?O', 'J?H' suggest middle names unknown to the dedicator. Cost $1."
+ ],
+ "matched_control": "32 random triplets from the initial-letter distribution of English names, same alignment tests",
+ "judge": {
+  "letters_min": 32,
+  "language": "en",
+  "language_pass": "null_only",
+  "control_samples": 100
+ },
+ "value": "moderate; the author is alive and the answer is presumably known to him; a print check may close it at N0/N1",
+ "model": "Sonnet",
+ "status_24_Sept_2026": "open per Schmeh 2017; Bourdeau: 'not settleable by cryptanalysis'; print check pending",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+ "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
+}
