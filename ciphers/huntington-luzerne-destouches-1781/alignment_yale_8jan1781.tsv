@@ -1,0 +1,241 @@
+idx	line	figure	mark	unit	grade
+0	1	445		quelques	M
+1	1	538		mem	M
+2	1	819		bres	M
+3	1	177		du	C
+4	1	960		con|congres	C
+5	1	60		gres|fu	M
+6	1	315		fu|rent	M
+7	1	854		rent|d'	M
+8	1	442		d'|a	M
+9	2	971		a|bord	M
+10	2	202		bord	M
+11	2	919		al	M
+12	2	391		lar	M
+13	2	610		me	M
+14	2	133		s	M
+15	2	177		du	C
+16	2	1173		dan	C
+17	2	555		ger	C
+18	2	1183		d'	C
+19	2	1096		une	C
+20	3	118		pareille	C
+21	3	664		de	C
+22	3	575		fec	C
+23	3	812		ti	C
+24	3	959		on	C
+25	3	1173		dan(s)	C
+26	3	874		le	C
+27	3	992		tes(te)	M
+28	3	739		te	M
+29	3	32		de la	C
+30	4	736		armee	C
+31	4	894		et	C
+32	4	1173		dan(s)	C
+33	4	486		le	M
+34	4	1198		premier	M
+35	4	595		mo	M
+36	4	860		ment	C
+37	4	921		de	C
+38	4	937		pou	C
+39	4	309		v	M
+40	5	1171		an	M
+41	5	239		te	C
+42	5	68		l'	C
+43	5	1096		un	C
+44	5	1183		d'	C
+45	5	967		eux	C
+46	5	612		qui	M
+47	5	1050		t	M
+48	5	622		ta	M
+49	5	769		la	C
+50	6	216		se	M
+51	6	159		ance	C
+52	6	700		pour	M
+53	6	361		venir	M
+54	6	646		me	C
+55	6	740		propos	M
+56	6	329		er	M
+57	6	664		de	C
+58	6	1185		vous	M
+59	6	215		expe	M
+60	6	804		dier	M
+61	7	713		un	C
+62	7	803		courier	M
+63	7	100		pour	M
+64	7	416		que	C
+65	7	799		vous	M
+66	7	573		vous	C
+67	7	139		ap	M
+68	7	34		pro	M
+69	7	1117		che	M
+70	7	814		z	M
+71	7	921		de	C
+72	8	309		v	M
+73	8	1098		est	M
+74	8	226		poin	M
+75	8	680		te	M
+76	8	181		et	M
+77	8	573		vous	C
+78	8	1052		char	M
+79	8	324		giez	M
+80	8	193		s'	M
+81	8	761		il	M
+82	9	195		e	M
+83	9	745		toit	M
+84	9	835		ne	M
+85	9	297		cessaire	C
+86	9	32		de la	C
+87	9	766		deffense	C
+88	9	921		de	C
+89	9	892	▽	ce	C
+90	9	937		po	C
+91	9	547		s	M
+92	9	239		te	C
+93	10	532		[stop]	M
+94	10	161		je	C
+95	10	185		l'	M
+96	10	881		assure	M
+97	10	179		promptement	M
+98	10	177		du	C
+99	10	199		zele	M
+100	10	797		avec	C
+101	10	874		le	C
+102	10	642		quel	C
+103	10	828		votre	C
+104	11	736		armee	I
+105	11	1062		con	M
+106	11	4		cou	M
+107	11	957		roit	M
+108	11	896		a	C
+109	11	769		la	C
+110	11	766		deffense	C
+111	11	834		des	C
+112	11	1002		treze	C
+113	11	709		etats	C
+114	11	1177		mais	C
+115	12	161		je	C
+116	12	909		lui	C
+117	12	456		dis	C
+118	12	913		qu'	M
+119	12	438		il	M
+120	12	710		ne	M
+121	12	1094		paroissoit	M
+122	12	872		que	C
+123	12	874		le	C
+124	12	472		soin	C
+125	13	664		de	C
+126	13	1012		ces	C
+127	13	1077		mesures	C
+128	13	613	〇	devoit	C
+129	13	1199		etre	C
+130	13	1123		laisse	C
+131	13	1010		avec	C
+132	13	45		general	C
+133	13	482		Washington	C
+134	13	50		a	M
+135	14	874		le	C
+136	14	960		con|congres	C
+137	14	485		gres|pouvoit	M
+138	14	1023		don|pouvoit	M
+139	14	329		er|donner	M
+140	14	616		les	C
+141	14	756		direc	M
+142	14	959		tions	C
+143	14	297		necessaires	C
+144	14	350		[stop]	M
+145	15	965		j'	M
+146	15	38		ai|cru	M
+147	15	613	〇	devoir	C
+148	15	664		de	C
+149	15	975		cli	M
+150	15	842		ner	M
+151	15	32		de la	C
+152	15	999		sorte	C
+153	15	953		cette	C
+154	15	328		demarche	C
+155	15	470		parceque	C
+156	16	711	★	si	C
+157	16	1022		l'	C
+158	16	736		armee	C
+159	16	1019	□	ameri	C
+160	16	264	■	quai	C
+161	16	886		n	M
+162	16	1163		e	M
+163	16	905	◇	est	C
+164	16	424		re	C
+165	16	864		elle	C
+166	17	860		ment	C
+167	17	134		dis	M
+168	17	531		po	M
+169	17	535		see|a	M
+170	17	391	△	la	C
+171	17	664		de	C
+172	17	575		fec	C
+173	17	278		ti	C
+174	17	959		on	C
+175	17	903	◆	ce	C
+176	17	416		que	C
+177	18	250		rien	C
+178	18	256		n'	M
+179	18	717		an	M
+180	18	78		non	M
+181	18	903	◆	ce	C
+182	18	983		jusques	M
+183	18	383		ici	M
+184	18	892	▽	ce	C
+185	18	912		parti	M
+186	18	56		ne	M
+187	18	389	▲	se	M
+188	19	986	●	roit	C
+189	19	872		que	C
+190	19	391	△	la	C
+191	19	880		pre	M
+192	19	676		ci	M
+193	19	430		pi	M
+194	19	444		ter	M
+195	19	337	◎	et	C
+196	19	711	★	si	C
+197	19	864		elle	C
+198	20	135		n'y	C
+199	20	905	◇	est	C
+200	20	806		pas	C
+201	20	660		por	M
+202	20	1092		tee	M
+203	20	892	▽	ce	C
+204	20	96		se	M
+205	20	986	●	roit	C
+206	20	1023		don	M
+207	20	610		nez	M
+208	21	292		lieu	M
+209	21	896		a	C
+210	21	713		une	C
+211	21	646		me	C
+212	21	638		fi	M
+213	21	159		ance	C
+214	21	337	◎	et	C
+215	21	1096		une	C
+216	21	12		ja	M
+217	21	785		lou	M
+218	21	606		sie	M
+219	22	1032		e	M
+220	22	1173		dan	C
+221	22	555		ger	C
+222	22	389	▲	euse	M
+223	22	577		entre	M
+224	22	616		les	C
+225	22	516		fran	M
+226	22	558		cois	M
+227	22	337	◎	et	C
+228	22	117		les	C
+229	23	1019	□	ameri	C
+230	23	264	■	quain	C
+231	23	28		s	M
+232	23	814		?	U
+233	23	532		[stop]	M
+234	23	362		?	U
+235	23	305		?	U
+236	23	511		?	U
+237	23	372		?	U
+238	23	148		?	U
+239	23	334		?	U
