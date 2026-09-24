@@ -2978,7 +2978,87 @@ fallback is untested for those two named institutions specifically (repcyfr.pl w
 central search actually surfaced, not either of the two named in the brief). (5) No copy-order or archive
 request was needed; nothing here reached "open" status requiring one.
 
-## Cambridge Digital Library and Digital Bodleian, digitised (LANE N scout of 24 September 2026)
+## repcyfr.pl and FBC manuscripts (LANE N2 scout of 24 September 2026)
+
+Brief: `.claude/briefs/runs/2026-09-24-lane-n2-scPL2.md`, following on directly from `## Polish digital libraries`
+above (session scPL, same day). Job: find the repcyfr.pl search/API and search manuscripts 1450-1800 for
+cipher-root terms, plus FBC's manuscript-type filter with the same terms. Raw: 46 repcyfr.pl neighbour-page
+fetches + 22 FBC-graphql-surfaced items + 8 more + ~12 introspection/facet calls. Kept: **0**. Copy-free: n/a
+(nothing kept). Full log: `sources/solver-diffs/2026-09-24-lane-n2-pl.tsv`.
+
+**repcyfr.pl's own search, still not found.** The classic-dlibra `/dlibra/results` query mechanism the prior
+session left open was not solved this session either (not reattempted; budget went to the two routes below).
+Instead, walked the known cipher item's neighbourhood directly: `doccontent?id=15343` (Aleksander Trzebiński's
+1634 "cyframi pisanego" letter to Koniecpolski, already found and excluded as a decipherment fair copy, not
+ciphertext) carries Previous/Next links to a consecutive publication-id range; fetched ids 15320-15365 (46
+pages, offset publication=edition+38 confirmed from three sampled links) and grepped every page for
+szyfr/cyfr(a|ą|owan)*/chiffr, excluding the "cyfrowe/cyfrowa" (=digital) boilerplate every page carries. This
+whole run of ids is one bound volume of 17th-c. Polish diplomatic/chancery copies (sejmik relations,
+instructions, envoy reports to and from the Ottoman Porte, internal dates 1581-1637) -- only 15343 itself
+mentions a cipher term anywhere in title or page text. No new candidate.
+
+**FBC's real query shape, fully recovered by introspection.** The 24 Sept scPL session found the `POST
+https://fbc.pionier.net.pl/graphql` endpoint answers plain curl but did not save a working request body, and
+its guesses at field-restricted search syntax (`att5:`, `ti:`, `wid:`, `op:`, `opis:`) all failed silently.
+GraphQL introspection is open on this endpoint (`{"query":"query{__schema{...}}"}`), and walking
+`Query -> components(requestInput: RequestInput) -> Components.searchResults/searchFilter` gave the exact
+shape:
+```
+{"query":"query($ri: RequestInput){ components(requestInput:$ri){ searchResults { totalResultsCount
+searchResults { elementId extra { fbc_url } } } searchFilter { facetItems { fieldName values { value label
+count } } } } }",
+"variables":{"ri":{"page":"results","language":"pl","params":[
+  {"name":"action","value":"AdvancedSearchAction"},
+  {"name":"type","value":"-3"},
+  {"name":"val1","value":"q:TERM"},
+  {"name":"ipp","value":"25"}]}}}
+```
+`page` and `language` are both required (their absence is what made the first attempt return `null`). Facet
+restriction chains as further `val2`, `val3`... params of the form `"FieldName:Value"` -- confirmed by
+`val2:"DataProvider:Repozytorium Cyfrowe Instytutów Naukowych"` narrowing a 301-hit query to exactly 22, matching
+that facet's own reported count. This is the field-query syntax the prior session could not find.
+
+**No manuscript-type filter exists on FBC.** The full facet inventory on any query (checked on q:szyfr, 301
+hits, and q:szyfrowa, 76 hits) is exactly six dimensions: `Type` (content *format* -- teksty/obrazy/pozostałe/
+audio/muzykalia/wideo, not physical form), `Language`, `recordAvailability`, `canIUseIt`, `Date` (empty on both
+queries tried), `DataProvider` (per-library breakdown). There is no "Rodzaj"/"Genre"/document-type facet that
+distinguishes rękopis (manuscript) from druk (print) anywhere in FBC's schema. The only available lever for
+"manuscripts" is `DataProvider`, i.e. restricting to a specific library/repository.
+
+**repcyfr.pl queried through FBC's own full-text index -- a stronger negative than the OAI harvest.** Using the
+recovered `val2` syntax with `DataProvider:"Repozytorium Cyfrowe Poloników"` (repcyfr.pl's exact FBC-facing
+name -- not to be confused with `Repozytorium Cyfrowe Instytutów Naukowych`, which is a different platform,
+`rcin.org.pl`, see caveat below) against `cyfr`, `szyfr`, `chiffre`, `cifra`, `zaszyfrowany`, `szyfrem`, `cyfrą`:
+3 hits total, all the same already-known-and-excluded item 15343 (matched by `cyfr`/`cyfrą`/`cyfra`), zero for
+every other spelling. This supersedes the prior session's OAI-based negative (conditional on a harvest shown to
+be stale/incomplete, only 387 of the collection's records) with one built on FBC's live full-text index of the
+same collection. `val1=q:klucz` (8 hits) was also checked by hand: every one is "klucz" in the Polish
+estate-administration sense (klucz dóbr/chrośliński/łowicki/poleski = a manorial estate complex), not a cipher
+key.
+
+**Caveat -- a name collision cost part of this budget.** `Repozytorium Cyfrowe Instytutów Naukowych` ("Digital
+Repository of Scientific Institutes", PAN institutes, hosted at `rcin.org.pl`) is NOT `repcyfr.pl`
+("Repozytorium Cyfrowe Poloników" / Digital Repository of Polonica, the Riksarkivet Extranea IX Polen lead).
+The two names are similar enough in Polish that the first DataProvider filter attempted (22 hits under `q:
+szyfr`) was aimed at the wrong platform; 20 of the 22 rcin.org.pl pages returned that site's own "High Load -
+Verifying Browser" PoW challenge to curl (stopped after this batch, not retried, per the good-citizen rule),
+and the 2 that loaded are both modern scholarly articles, not manuscripts (id 45489, a history-of-cryptography
+paper on breaking the Enigma cipher; id 63692, an unrelated literary-criticism review where "szyfr" is used
+metaphorically). rcin.org.pl was not otherwise explored and is a plausible institutional-history digital
+library worth a dedicated, separate scout brief if the lane wants one, but it is out of scope for "1450-1800
+manuscripts" as searched here.
+
+**Per-host report.** `repcyfr.pl`: 54 requests (46 neighbour-walk pages + 8 klucz-hit title checks), all
+descriptive UA, >=1.6s apart, no 429/403/challenge. `fbc.pionier.net.pl`: ~24 requests (introspection queries
+plus the term sweeps), browser UA (required, per the prior session's finding), >=2s apart, no challenge.
+`rcin.org.pl`: 22 requests as one batch (image-host test per the brief), 20/22 hit a PoW challenge, stopped
+after this batch and not retried. WebSearch: not used this session (budget went to the two API routes). No
+subagents. Well under the $4 cap.
+
+**Zero rows this sweep.** Row prefix **PL** stays reserved, per the prior sweep, with no rows posted from either
+session to date.
+
+
 
 Rerun of `.claude/briefs/runs/2026-09-24-lane-n-scOX2.md` (the first Bodleian/Cambridge worker,
 `.claude/briefs/runs/2026-09-24-lane-n-scOX.md`, was cut off by the rate limit at 05:39 UTC before pushing
