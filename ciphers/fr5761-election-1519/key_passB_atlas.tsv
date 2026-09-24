@@ -1,0 +1,38 @@
+line	section	plain	sign_code	note
+1	alphabet	a	K25
+1	alphabet	b	K13
+1	alphabet	c	K16
+1	alphabet	d		no atlas K-code on f104 line1 pos4 (cluster 55 unlabeled); sign is a short stroke, singleton, not split into an atlas cluster
+1	alphabet	e	K35
+1	alphabet	f		no atlas K-code on f104 line1 pos6 (cluster 52 unlabeled)
+1	alphabet	g	K1	low confidence: K1 is flagged in NOTES.md as contaminated with plain-script word-blob exemplars on other leaves; f104 exemplar itself (f104_01_007) looked like a genuine invented sign on the crop
+1	alphabet	h	K34
+1	alphabet	i		no atlas K-code on f104 line1 pos9 (cluster 14 unlabeled)
+1	alphabet	k	K9
+1	alphabet	l	K21
+1	alphabet	m	K29
+1	alphabet	n	K8
+1	alphabet	o	K18
+1	alphabet	p	K33
+1	alphabet	q	K31
+1	alphabet	r	K17
+1	alphabet	s	K35	repeats the code given for e (pos5); either two visually similar but distinct signs were merged into one atlas cluster, or this reading is misaligned -- needs a crop-level check of positions 5 and 18 side by side
+1	alphabet	t		no atlas K-code on f104 line1 pos19 (cluster 17 unlabeled) -- note cluster17 elsewhere maps to K31 (used for q and x below); this specific pos19 sign was not matched to that cluster by the atlas, unclear why
+1	alphabet	v	K32
+1	alphabet	x	K31	repeats the code given for q (pos16); same caveat as s/e above -- needs a crop-level check of positions 16 and 21
+1	alphabet	y		row ends at 21 signs for 23 plain letters; no corresponding sign found for this letter at all. Straight positional (rank-order) mapping of line1 pos1-21 to letters a..x (positions 1-21 of a,b,c,d,e,f,g,h,i,k,l,m,n,o,p,q,r,s,t,v,x) leaves y and z with no sign. An x-coordinate nearest-neighbour check suggests the shortfall may instead sit mid-row (i/k/l and m/n cluster close together in x), not at the row end, in which case y and z could have signs and an earlier letter is the one that goes uncoded -- genuinely unresolved by this pass, needs the two rows viewed side by side at native res
+1	alphabet	z		see note for y -- same unresolved end-of-row/mid-row ambiguity
+5	nulle	Null1		first of four marks after "Nulle:" on line5 (f104_05_016, cluster 28, unlabeled); shape: a tall pointed/triangular stroke on a stem
+5	nulle	Null2	K1	low confidence, K1 flagged as contaminated (see alphabet g note); shape: a doubled vertical bar, roughly "H"-like
+5	nulle	Null3		third mark (f104_05_018, cluster 5, unlabeled); shape: a crossed doubled stroke, "++"-like
+5	nulle	Null4		fourth mark (f104_05_019, cluster 17, unlabeled); shape: an angled stroke opening downward, "\/"-like
+3	correspondent	Le conte palatin		compound grid sign (two crossed pairs of strokes, a lattice/fence shape); no f104 exemplar listed for the visually closest atlas family (K27, cluster 48, a grid shape seen on f105-f110 only). The K28/K3 codes the atlas assigns to positions within this line fall inside the cursive name text itself ("palatin"), not the code sign -- likely mis-clustered name letters. Needs crop-level re-segmentation of the grid sign as its own unit
+4	correspondent	Trèves	K10
+5	correspondent	Maguence	NEW?	name read tentatively (Mayence/Mainz); code sign is a single vertical stroke with two horizontal crossbars near the top, resembling a serifed "I" or ladder shape; no atlas K-code matched any position on this line (all unlabeled clusters)
+6	correspondent	Brandebourg	K22	matches the correspondent named in NOTES.md's catalogue description ("Joachin de Moltzau ... marquis de Brandebourg", "François de Bordeaux ... marquis de Brandebourg")
+7	correspondent	Saxe	K15	name reading tentative (abbreviated/flourished, could be "Sanxe"); plausibly the duchy of Saxony, matching NOTES.md's "Tavannes and de Surie (to the duke of Saxony)"
+8	correspondent	Poulongne	K4	Pologne/Poland; position 1 of this line also clusters to K3, but that is the cursive capital "P" of the name itself, not a second code
+9	correspondent	Hongrie	K20
+10	correspondent	[name unclear]		cursive name not confidently read (roughly resembles "medovr" or similar); code sign is a vertical stroke with a small loop at the top and two crossbars below; no atlas K-code matched any position on this line (all unlabeled). Needs a fresh higher-zoom crop and possibly correlation with the catalogue's remaining correspondent list (grand archdeacon of Sens / legate in Germany, per NOTES.md Source section)
+11	correspondent	Francisque	K14	matches NOTES.md's "captaine Francisque" from the volume's later correspondence (fol.173-179 heading)
+12	correspondent	[name unclear]	NEW?	cursive name not confidently read (roughly resembles "Catspelaigne"/"Cattespaligne"); code is three small loop/circle strokes ("ooo") -- two of the three loops partially match atlas codes K6 and K7 (both members of the small-loop cluster-19 family used elsewhere only for other correspondents' codes, e.g. Poulongne=K4 is also cluster 19), the third loop is unlabeled. Possibly three separate marks (more nulls, or a null continuation) rather than one compound code for a single correspondent -- needs settling from the image
