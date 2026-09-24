@@ -13,3 +13,8 @@ COMMON RULES (LANE R4 worker; parent LANE R4 orchestrator session_01LrTggxL1Pyxm
 - Where the plaintext of a sibling or the same letter sits in the file, do not run two blind passes: an aligner transcribes the cipher against the plaintext on the image (rah-canada-1869, R8, $3.42 for 667 signs).
 - (LANE R2, 24 Sept 2026) Run long jobs in the foreground and commit per pass/page. Claim with `python3 tools/room.py "<you>" "claim: ..."`; `python3 tools/room.py --push <paths>` pushes with the rebase-retry loop. Final ROOM line starts `done:`.
 - (LANE R3, 24 Sept 2026) Page-scaled caps (.claude/briefs/, RETRO d): about $1 a page for Sonnet image work (floor $4), $2 a page for Opus. ASSIGNMENTS/LEDGER rows are the orchestrator's; do not write them.
+- (LANE R4, 24 Sept 2026 16:58, after three workers ran 1.7-2.7x their caps supervising pass subagents) Do the job yourself. At most ONE
+  Sonnet subagent, only for the second blind pass, and it writes its TSV to disk and the worker commits it page by page. Check your own
+  cost (get_session on yourself, usage.cost_usd) after every page or step; at 80% push a progress section; at the cap stop.
+- gallica.bnf.fr: at most two fetchers account-wide; LANE R4 workers K and M are this lane's two. IIIF image API only, >= 2 s apart,
+  native region crops rather than whole pages where the leaf is known.
