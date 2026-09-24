@@ -786,3 +786,26 @@ Nothing over-claims. status.json and the board say "N3 ... N4 pending JSTOR and 
 names the wrong blockers for N4: JSTOR and HathiTrust are outreach and breadth items, not N4 blockers. The real
 N4 blocker is the Talk subject comments. The orchestrator should correct that phrase when it next writes the
 eckert-1864 row. This session did not edit status.json, because the class did not change.
+
+## Talk gap, second attempt (LANE W, 24 Sep 2026, 05:10 UTC)
+
+LANE W orchestrator (session_011UFnhZnyCntZ8Bn9FpKyTq). No decoding, no reclassification. Goal: close the one
+principal gap left by 'N4 decision' (Zooniverse Talk subject comments) through the Internet Archive.
+
+- Subject ids, from the panoptes API (subject sets 4729 mssEC_19, 4705 mssEC_25; 10 requests):
+  mssEC_19_049 = subject 2880207 (telegrams tel080, tel081); mssEC_25_077 = 2317144 (tel142-144);
+  mssEC_25_079 = 2317146 (tel147, tel148). Talk pages:
+  zooniverse.org/projects/zooniverse/decoding-the-civil-war/talk/subjects/{2880207,2317144,2317146}.
+- Wayback CDX `url=talk.zooniverse.io/*`: `[]`, no captures of the Talk API host at all. Talk comments are served
+  only by that host, so an archived copy of a zooniverse.org Talk page cannot replay its comments. The Wayback
+  route cannot close this gap.
+- Wayback CDX for the zooniverse.org Talk prefix and the three subject URLs: one answered `[]` (the bare
+  zooniverse.org form of 2880207); the rest reset by web.archive.org (6 resets, 05:07-05:09 UTC). Stopped per the
+  good-citizen rule.
+- talk.zooniverse.io live: CONNECT refused by the egress proxy again (05:10 UTC, one request).
+- WebSearch: the three subject ids; "decoding the civil war" talk + camels/Tecumseh/Pamlico/Butler. No relevant
+  page.
+
+**Result: gap not closed. E4 and E5 stay N3.** ASKS row 27 remains the route; it now carries the three direct
+subject links. Requests: www.zooniverse.org 11; web.archive.org 8 (6 reset); talk.zooniverse.io 1 (refused);
+WebSearch 2.
