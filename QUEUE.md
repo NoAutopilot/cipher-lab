@@ -4955,3 +4955,73 @@ reuse before the fresh-session fix, 14 correct + 1 results-list refetch], all �
 2 (1 reachability 200, 1 search 403 Cloudflare, not retried), `github.com` 2 shallow clones (grepped for
 alva/alba, deleted after), WebSearch 3. No logins, no credentials, no subagents, no image opened, no novelty
 wording, nothing promoted, no check-solved run.
+
+## German letters with digital copies (LANE N3 scout of 24 September 2026)
+
+Brief: `.claude/briefs/runs/2026-09-24-lane-n3-scKAL.md` (row scKAL). Two hosts: Kalliope-Verbund (testing the
+prior LANE S sweep's claim that "Kalliope never links to page images"), and handschriftenportal.de (not yet
+swept). **Result: the claim was wrong but the fix does not add a nomination — 0 new copy-free rows kept.**
+
+**Kalliope-Verbund.** The claim tested false: MODS records *can* carry `<location><url note="Digitalisat">`
+(and sometimes a second `<url note="Edition">` pointing to a scanned printed edition of the same letter), but
+there is no SRU index to filter on it — checked two ways: an out-of-band CQL index probe returned `Unsupported
+index: ead.digital`, and the documented index list at `kalliope-verbund.info/de/support/cql.html` (fetched and
+parsed) lists only `ead.*`/`eac.*` metadata indexes, none digital-object-related. The only way to find a
+digitised hit is to fetch every candidate record's MODS and grep for the `Digitalisat` url — a per-record
+check, not a query filter. Also found and worth keeping for future sweeps: an unquoted multi-word CQL query
+(`chiffrierter Brief`) is an implicit AND of the two words; the same phrase in quotes is an exact-phrase match
+and can return zero where the AND form returns dozens — LANE S's prior counts (e.g. "in Ziffern geschrieben",
+30) only reproduce with the unquoted form. Terms run (unquoted, matching LANE S's own method): the six terms
+LANE S already fully triaged by title (Geheimschrift 113, chiffriert 17, verschlüsselte Briefe 43, Chiffrierter
+Brief 14, Geheimzeichen 4, verschlüsselter Brief 43 — same counts reproduced, confirming the catalogue hasn't
+moved) were re-fetched and checked per-record for a Digitalisat link; five new terms from this brief (Chiffren,
+dechiffriert, Zifferbrief, cifra, en chiffre, Geheimalphabet, in Ziffern) were run fresh. 26 digitised hits
+found across all terms (full list with per-record exclusion reasons: `sources/solver-diffs/2026-09-24-lane-n3-
+kal.tsv`); every one excluded on inspection of its abstract/note text:
+- 7 are letters in the Vadianische Briefsammlung (Bd. 7-8, St. Gallen KB Vadiana, Blaurer-circle correspondence
+  1549-59) — all part of the Arbenz/Wartmann printed edition (7 vols, *Mitteilungen zur vaterländischen
+  Geschichte* 24-30a, 1884-1913, confirmed by WebSearch), several with their own `<url note="Edition">` PDF
+  link to the exact printed page. One (Musculus to Blarer, 12 Feb 1554, VadSlg Ms 36:295) explicitly abstracts
+  "Eine Geheimschrift" as a letter topic — but that abstract phrasing is the archive's own regest of an
+  already-published letter, not evidence of unread ciphertext, and its Digitalisat/Edition images could not be
+  opened this pass (`han.stadtarchiv.ch` reset the connection twice; one retry taken per the good-citizen rule,
+  then stopped — flagged for a session with different routing, not nominated without a tested image per the
+  LANE N3 widening rule).
+- 7 more (Ilten Nachlass, GWLB Hannover, 1697-1743, digitised at `digitale-sammlungen.gwlb.de`) turned out to
+  already be a tracked item in `dbourdeau/cyphersolver`'s own `CATALOGUE.md` (#5.0, "Letters to Jobst Hermann
+  von Ilten... catalogued as not deciphered... Images not confirmed online") — checked by shallow-cloning both
+  solver repositories and grepping for the correspondents, per rule 1. Their note that images aren't online is
+  now stale (Kalliope does carry a Digitalisat link), worth relaying to them, but per LESSONS.md "a catalogue a
+  daily-active project also reads is not a lane" this isn't pursued as our nomination.
+- The rest (12 hits) are false positives on the search terms once the abstract is read: a covering letter
+  about ciphered enclosures with no image at all (Louis XV to "Touche de la M.", 1752, Veste Coburg); a 19th-c.
+  copy in the Ranke Nachlass with the cipher already solved for Ranke; Francke explicitly *refusing* to use a
+  cipher (1726); a pseudonymous newspaper byline and a pseudonymous critic's name both called "Chiffre" in
+  German usage (Bamberg/E.T.A. Hoffmann 1808, Leipzig museum 1864); a private commercial shorthand in an organ-
+  builder's trade notebook (Silbermann-Archiv, 1753); an alchemical recipe book; a Mozart family letter; a
+  mathematics manuscript (Gauss); a Masonic lodge paper; art-history lecture notes and a stenography-journal
+  article where "Ziffer" means numeral, not cipher. Two Leipzig museum items (`D0059341` "Geheimschrift in
+  fünf Figuren", `Z0055053` "Manuskript betr. Geheimschriften") are digitised, undated, and carry no
+  sender/recipient in their MODS — read as single specimen/key items rather than two-party letters, not opened
+  individually this pass; left `unresolved` in the TSV for a follow-up.
+
+**handschriftenportal.de.** No documented plain HTTP search API: `curl`-only probes of every path guessed from
+the site's own JS bundle (`/api/search`, `/hspobjects/search`, `/search/api`, GET and POST) either fall through
+to the SPA's catch-all redirect or 404 at the Express router — the real backend is not exposed at those paths
+client-side (its bundle even ships an unreplaced `http://example.com/api/...` placeholder, so the true base URL
+is injected at a layer this fetch never reached). `tools/browser_fetch.js` against `/search?q=Geheimschrift`
+does render the results (213 objects; the page is server-rendered, not JS-only despite the SPA shell) — the
+first page (10 records, `tools/html2text`-equivalent extraction) is entirely medieval-manuscript "secret
+writing": recipe books, interlinear glosses, alchemical marginalia, a fragment "nicht entzifferte
+Geheimschrift" of ornamental script — not one is correspondence between two named, dated parties. This matches
+the portal's actual scope (medieval/early-modern book manuscripts, successor to Manuscripta Mediaevalia), which
+is a different genre from the archival Nachlass letters this project targets. Sampled, not exhaustive (1 of 22
+pages of 213 hits for one term); logged as a tested negative for this term rather than pursued further, per the
+LANE N3 widening rule ("a short negative is a result").
+
+**No QUEUE.md nomination rows, no QUEUE-scores.json rows this sweep** (nothing cleared both "genuine cipher
+correspondence" and "tested image"). Requests: kalliope-verbund.info ~36 (>=2s apart; includes the failed
+`operation=explain` probes), handschriftenportal.de ~9 direct + 1 browser-rendered page load, han.stadtarchiv.ch
+2 (connection reset both times, one retry, then stopped per the good-citizen rule), github.com 2 (shallow
+clones of both solver repositories, grep only), WebSearch 5, WebFetch 2. No logins, no subagents, no images
+fetched besides the one failed han.stadtarchiv.ch test.
