@@ -72,11 +72,11 @@ details summary { cursor:pointer; color:var(--accent); font-size:0.92rem; margin
 <div class="wrap">
   <header>
     <div><h1>Cipher Lab Board</h1><div class="muted">Where every target stands, who holds it, and what happens next.</div></div>
-    <div class="upd">Updated 24 September 2026, 01:19 UTC</div>
+    <div class="upd">Updated 24 Sep 2026, 01:30 UTC</div>
   </header>
 
   <section class="tiles" aria-label="Summary">
-    <div class="tile"><div class="n">6</div><div class="l">Targets in motion</div><div class="sub muted">5 with archive, 1 with worker; 3 blocked</div></div>
+    <div class="tile"><div class="n">6</div><div class="l">Targets in motion</div><div class="sub muted">5 with archive, 1 with worker; 4 blocked</div></div>
     <div class="tile"><div class="n">4</div><div class="l">Archive requests out</div></div>
     <div class="tile"><div class="n">7</div><div class="l">Waiting on you</div></div>
     <div class="tile"><div class="n">0</div><div class="l">Solved</div></div>
@@ -451,25 +451,45 @@ details summary { cursor:pointer; color:var(--accent); font-size:0.92rem; margin
       <p class="next"><b>Next:</b> Contribution only: tell the BnF that Dupuy 468 f.28 is the Latin cipher original of the letter printed in French in RTA JR II p.122 from fr. 3897 f.146, with the corrected date and senders. Draft in outreach/ when the person wants it.</p>
       <p class="note muted">Found-solved 23 Sept 2026 (AUDIT.md, second audit): printed in full in French translation, Deutsche Reichstagsakten JR II (1896) p.122, from BnF fr. 3897 f.146. Class N1. Our reading matches sentence by sentence. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy468-anhalt">ciphers/dupuy468-anhalt</a></p>
     </article>
-    <article class="target state-active">
+    <article class="target state-blocked">
       <div class="t-head">
         <h3>Rome embassy cipher of October 1525: Carpi to Louise de Savoie, Raince to Madame, Raince to Robertet <span class="year">1525</span></h3>
-        <span class="chips"><span class="chip chip-kind-recovery" title="What kind of result this target can give">Recovery</span> <span class="chip chip-active">Worker on it</span></span>
+        <span class="chips"><span class="chip chip-kind-contribution" title="What kind of result this target can give">Contribution</span> <span class="chip chip-blocked">Blocked</span></span>
       </div>
       <div class="t-ref mono">BnF Dupuy 452 ff.20-21, 24, 28 (Gallica ark:/12148/btv1b10036146c)</div>
-      <div class="pipe" role="img" aria-label="Stage 3 of 10: Ciphertext in hand">
-        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on cur" title="Ciphertext in hand"></span><span class="seg  " title="Key source located"></span><span class="seg  " title="Request sent"></span><span class="seg  " title="Copies received"></span><span class="seg  " title="Transcribed"></span><span class="seg  " title="Reading attempted"></span><span class="seg  " title="Novelty verified"></span><span class="seg  " title="Solved"></span></div>
-        <div class="stage-label"><b>Stage 3 of 10</b> Ciphertext in hand <span class="muted">· held by Worker</span></div>
+      <div class="pipe" role="img" aria-label="Stage 9 of 10: Novelty verified">
+        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on " title="Request sent"></span><span class="seg on " title="Copies received"></span><span class="seg on " title="Transcribed"></span><span class="seg on " title="Reading attempted"></span><span class="seg on cur" title="Novelty verified"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 9 of 10</b> Novelty verified <span class="muted">· held by Nobody</span></div>
       </div>
       <dl class="wait">
-        <div><dt>Waiting on</dt><dd>Image prep, then two transcription passes</dd></div>
-        <div><dt>Since</dt><dd>23 Sept 2026, 21:23 UTC</dd></div>
-        <div><dt>Expected</dt><dd>Tonight for the crops; passes next</dd></div>
-        <div><dt>What unblocks it</dt><dd>Reconciled ciphertext of ~1,500 tokens; key fit</dd></div>
+        <div><dt>Waiting on</dt><dd>Nothing</dd></div>
+        <div><dt>Since</dt><dd>24 Sep 2026, 01:30 UTC</dd></div>
+        <div><dt>Expected</dt><dd>n/a</dd></div>
+        <div><dt>What unblocks it</dt><dd>n/a</dd></div>
       </dl>
       
-      <p class="next"><b>Next:</b> Read with Raince&#x27;s 1526 key (H 5,281 of 5,725), but the letter is printed in Jacqueton 1892 from the decipherment at f.31 of the same volume; a verifier is confirming the class (expected N0/N1). A contribution, not a unique solve.</p>
-      <p class="note muted">Corrected 23 Sept 2026: invented-symbol alphabet, ~1,500 tokens across three letters in one cipher; f.20 recto tail transcribed once (86 tokens, grade M). Images free on Gallica. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy452-carpi-1520">ciphers/dupuy452-carpi-1520</a></p>
+      <p class="next"><b>Next:</b> Nothing to hand on: Jacqueton 1892 already links the cipher leaf (f.28) to its decipherment (f.31) and prints the text (P.J. XXXIII); f.20 and f.24 are printed there too (P.J. XXXI, XXXII). Closed as found-solved.</p>
+      <p class="note muted">Read with Tomokiyo&#x27;s 1526 key, H 5,281 of 5,725, on 24 Sept 2026; verifier class N0 (AUDIT.md): plaintext and decipherment of this very item already in print. The f.24 transcription was stopped at once. Lesson: the recipient&#x27;s standard edition (Jacqueton for Louise de Savoie) is searched before any transcription. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy452-carpi-1520">ciphers/dupuy452-carpi-1520</a></p>
+    </article>
+    <article class="target state-active">
+      <div class="t-head">
+        <h3>Gramont to Villandry, Rome, 20 May 1530, two letters in cipher <span class="year">1530</span></h3>
+        <span class="chips"><span class="chip chip-kind-recovery" title="What kind of result this target can give">Recovery</span> <span class="chip chip-active">Worker on it</span></span>
+      </div>
+      <div class="t-ref mono">BnF Français 2980 ff.29-30 (Gallica ark:/12148/btv1b9059991d)</div>
+      <div class="pipe" role="img" aria-label="Stage 9 of 10: Novelty verified">
+        <div class="segs"><span class="seg on " title="Identified"></span><span class="seg on " title="Verified unsolved"></span><span class="seg on " title="Ciphertext in hand"></span><span class="seg on " title="Key source located"></span><span class="seg on " title="Request sent"></span><span class="seg on " title="Copies received"></span><span class="seg on " title="Transcribed"></span><span class="seg on " title="Reading attempted"></span><span class="seg on cur" title="Novelty verified"></span><span class="seg  " title="Solved"></span></div>
+        <div class="stage-label"><b>Stage 9 of 10</b> Novelty verified <span class="muted">· held by Worker</span></div>
+      </div>
+      <dl class="wait">
+        <div><dt>Waiting on</dt><dd>Adversarial second audit (Opus) and the f.30 passes</dd></div>
+        <div><dt>Since</dt><dd>24 Sep 2026, 01:30 UTC</dd></div>
+        <div><dt>Expected</dt><dd>Within the hour</dd></div>
+        <div><dt>What unblocks it</dt><dd>Second audit reports; f.30 reconciled and read</dd></div>
+      </dl>
+      
+      <p class="next"><b>Next:</b> f.29r: verifier class N3 (no printed plaintext or decipherment located); an adversarial second audit is trying to find it in print before anything is said outside the repo. f.30r-v: Sonnet crops and two blind passes running, then an Opus reconciler applies the same key.</p>
+      <p class="note muted">Read on 24 Sept 2026 with the Gramont 1530 key published by Tomokiyo and Lasry: 569 signs on f.29r, H 538, M 26, unread 5, continuous French; partial and single-reader. Safe sentence: an unread cipher letter read with a published key; no prior plaintext located after the logged search. Not a unique solve until the second audit and the JSTOR/Google Books queries in AUDIT.md are done. <a class="mono" href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont">ciphers/fr2980-gramont</a></p>
     </article></div>
   </section>
 
@@ -517,7 +537,7 @@ details summary { cursor:pointer; color:var(--accent); font-size:0.92rem; margin
   items.forEach(function (li) {
     li.querySelector('input').addEventListener('change', function (ev) {
       var r = li.dataset.row; var done = ev.target.checked; var when = new Date().toISOString().slice(0, 10);
-      var v = { row: Number(r), done: done, when: done ? when : '' };
+      var v = { row: r, done: done, when: done ? when : '' };
       paint(r, done, v.when); local(r, v);
       if (db) db.doc('emails/' + r).set(v).catch(function () { if (status) status.textContent = 'Saved on this device only.'; });
     });

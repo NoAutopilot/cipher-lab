@@ -263,7 +263,7 @@ details summary {{ cursor:pointer; color:var(--accent); font-size:0.92rem; margi
   items.forEach(function (li) {{
     li.querySelector('input').addEventListener('change', function (ev) {{
       var r = li.dataset.row; var done = ev.target.checked; var when = new Date().toISOString().slice(0, 10);
-      var v = {{ row: Number(r), done: done, when: done ? when : '' }};
+      var v = {{ row: r, done: done, when: done ? when : '' }};
       paint(r, done, v.when); local(r, v);
       if (db) db.doc('emails/' + r).set(v).catch(function () {{ if (status) status.textContent = 'Saved on this device only.'; }});
     }});
