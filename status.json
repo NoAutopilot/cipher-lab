@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 13:24 UTC",
+ "updated": "24 Sep 2026 13:28 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -165,17 +165,18 @@
    "ref": "National Library of Scotland MS.20769: \"Unidentified text, apparently 18th century, written in cipher\"; 57 leaves, oblong quarto and octavo; genre \"Ciphers. Codes.\"",
    "folder": "ciphers/nls-20769",
    "stage": 2,
-   "state": "you",
-   "holder": "You",
-   "next": "Blind six-source sweep done 15:12 UTC: open, no discussion, attempt or DECODE record found anywhere (the printed 1949-50 Antiquaries Proceedings and DECODE's logged-in content remain unchecked). The order is back on your card: ask NLS for a quote and a five-leaf sample of MS 20769 (REQUEST.md).",
-   "note": "Size is the point: 57 leaves of a genuine cipher is far above unicity for a homophonic system. Risk, still open: the cataloguer's genre tag is not proof it is a cipher rather than a private notation. A sample of five leaves would settle that before the full order.",
+   "state": "closed",
+   "holder": "Nobody",
+   "next": "Closed 24 Sept 2026: NLS replied that MS.20769 is a Mi'kmaw hieroglyphic prayer book, not a cipher. No order.",
+   "note": "NLS Access Team, 24 Sept 2026: re-identified by a recent researcher as a prayer book in Mi'kmaw hieroglyphs (Maillard's mission script, a writing system, not a cipher), with a fragment of Mylne's copy of Urquhart's 1652 genealogy enclosed. The 'in cipher' catalogue line was a cataloguer's guess. Retired before any copy order.",
    "wait": {
-    "on": "You: ask NLS for a quote and a five-leaf sample (REQUEST.md)",
-    "since": "20 Sept 2026, 15:12 UTC",
-    "expected": "NLS reprographics answer in one to two weeks",
-    "unblock": "Sample images; a worker classifies the symbol system and decides whether to order the rest."
+    "on": "Nothing",
+    "since": "24 Sept 2026",
+    "expected": "n/a",
+    "unblock": "n/a"
    },
-   "kind": "cryptanalysis"
+   "kind": "cryptanalysis",
+   "result": "Not a cipher; one enquiry settled it, saving a copy order and a transcription campaign."
   },
   {
    "name": "Gelett Burgess, The Master of Mysteries (1912), third hidden message",
@@ -616,6 +617,10 @@
  ],
  "log": [
   {
+   "when": "24 Sep, 13:45",
+   "what": "NLS answered the MS 20769 enquiry: not a cipher, a Mi'kmaw hieroglyphic prayer book (re-identified by a recent researcher). Target closed-negative, no order; a catch for the catalogue."
+  },
+  {
    "when": "24 Sep, 13:10",
    "what": "Quiet hour. Jan van Nassau 5549: the postscript reads under Lodewijk's 1574 table (C 163 of 226) but its plaintext is printed in Groen's Supplément, N1; the body is in a second key, unread, solver running. Jan 5207/5213/5221 retracted (printed in clear in Groen V). DC8 Baluze 156 does not read with Lasry's Sabran 1631 key. fr.2967 Duprat: no ciphertext in 131 canvases. LANE W2 closed at $10 with every English item at N4. Four new TNA State Papers nominations, all copy-order."
   },
@@ -945,6 +950,14 @@
   }
  ],
  "results": [
+  {
+   "date": "24 Sept 2026",
+   "kind": "catch",
+   "title": "NLS MS 20769 is not a cipher: a Mi'kmaw hieroglyphic prayer book, per the National Library of Scotland",
+   "grade": "closed-negative",
+   "line": "Our enquiry of 23 Sept prompted the library to send its revised description: the item Cryptiana listed as an 'unidentified 18th-century cipher' was re-identified by a recent researcher as a prayer book in Mi'kmaw hieroglyphs, Maillard's mission script. Retired before any copy order; the queue row and CATALOG entry are corrected.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/nls-20769"
+  },
   {
    "date": "24 Sept 2026",
    "kind": "solve",

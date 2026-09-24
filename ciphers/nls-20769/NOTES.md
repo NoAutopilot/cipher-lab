@@ -1,6 +1,6 @@
 # Unidentified 18th-century cipher/symbol manuscript (National Library of Scotland, MS 20769)
 
-- **Status:** open. **Extent confirmed:** the catalogue record (read 20 Sept 2026, see dated section below;
+- **Status:** closed-negative (not a cipher; NLS reply of 24 Sept 2026, below). **Extent confirmed:** the catalogue record (read 20 Sept 2026, see dated section below;
   a verbatim first-hand read, via an Internet Archive Wayback Machine capture of the live page dated 19 May
   2024, since manuscripts.nls.uk itself still refuses this environment's headless browser — see below) gives
   **Extent: 57 Leaves ; Oblong quarto and octavo**, confirming the proposer's figure. The record's own title
@@ -279,3 +279,23 @@ NLS MS.20769 was found by any of the six sweeps, across every source family CLAU
 brief name except the printed 1949-50 PSAS Proceedings and DECODE's authenticated content, which remain
 unchecked (not negative) — the target stays **open**, and the scout's original "no relevant hit" finding is
 confirmed and substantially strengthened.
+
+## NLS reply, 24 Sept 2026 (closes the target)
+
+The National Library of Scotland's Access Team answered the enquiry of 23 Sept 2026 (outreach/nls-20769-enquiry.md) on
+24 Sept 2026: MS.20769 is not a cipher. A researcher recently examined it and identified the text as Mi'kmaw
+hieroglyphs. Revised catalogue description, as sent by NLS: "A prayer book written in Mi'kmaw hieroglyphs, used by the
+Mi'kmaq, an indigenous people of Nova Scotia. The text appears to be divided into sections by horizontal lines. The name
+Baptiste Romain is added in pencil on folios 27 and 28 (inverted). Romain served the missionary Pierre Maillard. Loosely
+enclosed is a fragment of a copy by Robert Mylne of Sir Thomas Urquhart's Pantochronochanon (London, 1652). This
+bifolium, paginated 33-36, contains numbers 98-113 of the 'genealogy' of the Urquharts." Creation: 1652, 18th century;
+57 leaves, oblong quarto and octavo; 27 + blank + 28 (inverted) + ii folios; deposited 1949 by the Society of
+Antiquaries of Scotland. Copies could be ordered through the copy enquiry form (minimum charge eight scans) or taken
+by phone in the reading room, but none is needed.
+
+Outcome: closed-negative. The old "Unidentified text, apparently 18th century, written in cipher" description that
+put the item on Cryptiana's list and in our queue is superseded by the library's own re-identification. Maillard's
+Mi'kmaw hieroglyphic prayer books are a known genre (the script is a writing system, not a cipher); nothing here is
+ours to read. Credit for the identification belongs to the researcher NLS names and to the library. No copy order,
+no further work. Lesson for check-solved: a catalogue "in cipher" on an undigitised item is a cataloguer's guess
+until someone has seen the leaf; an enquiry to the holding library costs one email and settled this in a day.
