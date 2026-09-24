@@ -1215,6 +1215,22 @@
    "grade": "detector with controls",
    "line": "W1 goes to check-solved and extraction; round 4 sweeps the Oxenstierna series in full.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/sources/ia-fulltext/NOTES.md"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Gustav II Adolf to Oxenstierna, 23 July 1632: printed cipher extracted (733 tokens, 91 values), key reported lost by the 1890s editor",
+   "grade": "stage 2, extracted",
+   "line": "Copy-free printed ciphertext ready for a solver; Riksarkivet key hunt running.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/oxenstierna-gustav-adolf-1632"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "dataset",
+   "title": "Riksarkivet sweep: 10 rows, three with a cipher key in the same folder (Celsing 1755-64 and 1779-82, de Geer 1644-46)",
+   "grade": "scout",
+   "line": "Key-in-folder rows are recovery candidates; check-solved queued.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/QUEUE.md"
   }
  ],
  "lanes": [
