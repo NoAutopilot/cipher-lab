@@ -1680,3 +1680,126 @@ Per rule 10: nothing above is described as new, unpublished, unread, first or ne
 N-class is assigned (a verifier's job). This is an alignment pass, not cryptanalysis -- every
 meaning comes from Tomokiyo's key or from Birch's own printed decipherment via `tools/interlinear_align.py`'s
 DP letter-to-number matching, never guessed.
+
+## 21. P4 reading from the page image (LANE T worker L, 24 Sept 2026)
+
+Brief: read section 16's (worker G) OCR-disordered "block A" and "block B" from worker I's
+page-image transcription (section 18, `P4/image_transcription.tsv`) instead of the djvu OCR, keep
+the key and the P5-P7 alignment untouched, regenerate `reading_P4.txt`, and give old vs new grade
+counts.
+
+**Checking worker I's finding against the raw djvu before changing anything.** Section 18 says
+block B (djvu 15563-15600) "is not separate content" and is the OCR's own displaced left half of
+block A's own lines 51-59. Reading the raw djvu directly (not just the two workers' notes) to place
+the exact boundary: block A's own djvu stream (15529-15551) already runs, uninterrupted, all the way
+to the same "70." the image transcription ends on (djvu line 15551: "43- and 41. 29. is in 67. 7.
+am. 16. 12,23. 19.36.23. 30. 36. at 37. 6. 35.6.41. 35. 40. 70."), which matches the image's line 61
+exactly. Djvu 15552-15562 is a real, different, undisordered paragraph -- "This plott is foe
+infalible ... to [the lord protector, sign], and the naturall aversion" -- that has nothing to do
+with either block and was never garbled. Only then does block B (15563-15600) start, and its own
+fragments (e.g. djvu 15566+15568 "30. 22. 12. 29. 35. 7. 12. 41. 28." + "41") are the missing heads
+of block A's own lines when read alone (block A's line 15531 picks up mid-line at ". 19. 41. 6, 40.
+..."), exactly as section 18 describes for image line 51. So the image (which gives each line whole)
+supersedes block A's djvu range *and* block B's djvu range together, but **not** the real paragraph
+sitting between them at djvu 15552-15562.
+
+**First attempt was wrong.** This worker's first version of `decode_p4()` replaced the single
+contiguous djvu span 15529-15600 with the image, which silently dropped the "This plott is foe
+infalible ... naturall aversion" paragraph (about 90 real words, one coded sign) -- caught before
+committing by grepping the regenerated `reading_P4.txt` for "infalible" and getting no hit.
+
+**What changed (`pool_1654/decode_stamford.py`), corrected version.** `decode_p4()` now tokenizes
+P4 in four pieces: djvu 15469-15528, djvu 15552-15562 (the real paragraph between the blocks) and
+djvu 15601-15645 still come from the committed gzipped OCR, unchanged from worker G's method and
+worker G's tokenizer settings; the page image (`P4/image_transcription.tsv`'s 12 lines, printed
+p.188 lines 50-61) replaces djvu 15529-15551 (block A) entirely, tokenized with the ordinary
+(non-strict) tokenizer since it is already a clean, correctly-ordered transcription; djvu 15563-15600
+(block B) is dropped -- not tokenized at all, by either method -- since it contributes no content
+the image does not already give. Nothing else in `align_stamford.py` or the key-building code was
+touched; `key_stamford.tsv` and `control_stamford.tsv` are byte-identical to worker G's committed
+versions (`git diff` empty), so the control numbers are unchanged: **P5+P6 -> P7 92.3%, P7 -> P5+P6
+93.7%**. `python3 pool_1654/decode_stamford.py --check` exits 0.
+
+**Grades, whole letter, old vs new (rule 4):**
+
+| | H | C | S | M | U | total |
+|---|---|---|---|---|---|---|
+| Old (worker G, djvu blocks A/B) | 63 | 322 | 0 | 15 | 43 | 443 |
+| New (this pass, image for block A, block B dropped) | 64 | 338 | 0 | 16 | 6 | 424 |
+
+The paragraph at djvu 15552-15562 tokenizes identically in both versions (it was never part of
+blocks A/B), so the whole difference above is the swap of worker G's blocks A+B for the image.
+Isolating just that swap (back-computed from the identical unaffected-token counts either side, and
+directly from the image tokens' own grades against `key_stamford.tsv`):
+
+| | H | C | M | U | total |
+|---|---|---|---|---|---|
+| Old (djvu blocks A+B, strict tokenizer) | 34 | 141 | 4 | 38 | 217 |
+| New (image, ordinary tokenizer) | 35 | 157 | 5 | 1 | 198 |
+
+The total drops by 19 (217 -> 198): the old strict tokenizer, tuned to catch the djvu column
+disorder, misread several short clear words ("the", "it", "in", "am", "and", "by", "at") inside the
+dense numeral runs as unreadable numeral-like tokens; the image transcription reads them as the
+ordinary clear words they are, so they stop counting as numeral/sign tokens at all -- that alone
+would only shrink the count, and a couple of split/merged digit tokens on top of it net out to -19.
+Of the old 38 U tokens in blocks A/B, 37 resolve to a real grade (C, H or M) in the image reading;
+the one that does not is value 70 (still the very last token, now at the end of `reading_P4.txt`'s
+image-sourced run), which is not in `key_stamford.tsv` under either worker's reading -- per section
+18, no cipher digit differs between the reassembled OCR and the image, so this is the same gap
+worker G already flagged ("2 values not in key: 143, 70"), not a new one. The five U tokens outside
+blocks A/B (`[n-]`, `[4a]`, value 143, `[efFe<5ls,]`, `[en-]`) are byte-identical to worker G's
+reading in both position and grade.
+
+**Blocks A and B as now read** (`pool_1654/reading_P4.txt` lines 50-56; spelling as the cipher key
+gives it, word division and anything in [ ] is this worker's inference, grade I):
+
+> i know it is a more {general rising} troope, and in which more {people are engag[ed] then in
+> [a]nione of} the {former ones what[so]eu[v]r} army {tha[t]} by {the} it {eis} in {ca} it {seat}
+> and at the {eco} the {siderable} the {england} {which} the am {have} not{la} am {de} {designs}
+> to{surp} it {i} in {e} that by {he} am {have giuen} [i?] {alds} by {off} and {rt} am thousand
+> armes {which} {l} am {read it to bee mac[e]us[e]} and {f[w?]hen theire busines} in {e shal be
+> ripe for it} and which makes mee beleeve the time appointed for it is not farre off, I have been
+> affured this day that {orm} and {nd} is in {england} {h} am {dehashas} at {ritinto} [value 70, not
+> in the key] this plott is foe infalible that noe difcovery can prevent it ... to [the lord
+> protector] and the naturall aversion.
+
+The stretch from "i know it is a more general rising" through "...army" reproduces worker G's own
+partial reading of block A's undisordered opening (section 16 item 4) letter-for-letter -- that part
+was never garbled, so nothing changed there. Everything from "tha{t} by {the} it {eis}" through
+"{ritinto}" is new: worker G could not read it at all (block B's own garbled fragments) or read it
+in the wrong order (block A's own tail, wrongly split from block B). "This plott is foe infalible
+... naturall aversion" is not new -- it is the real paragraph worker G's original code already
+tokenized correctly between the blocks; this worker's first (buggy) attempt dropped it and this
+version restores it unchanged. Several short chunks in the newly-read stretch resist a confident
+word reading even with the image -- {eis}, {ca}, {seat}, {eco}, {siderable} (probably
+"considerable", missing a leading letter or two), {read it to bee mac[e]us[e]}, {f[w?]hen theire
+busines}, {e shal be ripe for it}, {dehashas} -- these are graded per the individual letters' own
+C/H/M/U as listed above, not repaired to a guessed word; no cryptanalysis (letter-by-word guessing)
+was done per the brief.
+
+**What the image changed, precisely.** Per section 18, no cipher digit value differs between the
+reassembled OCR and the image anywhere in block A's stretch; the image's whole contribution is (a)
+the correct line/word order -- worker G's block A and block B djvu ranges were the OCR's own
+right-hand and displaced left-hand halves of the same printed lines, split apart and printed out of
+sequence -- and (b) correct segmentation and spacing, recovering short clear words the strict
+OCR-disorder tokenizer had swallowed as unreadable numeral-like tokens. This resolves 37 of the 38
+tokens worker G graded U in blocks A/B (section 16 item 4) to a real C/H/M grade; the 38th (value
+70) is still ungraded because it is not in the key, not because it is unreadable.
+
+**Distinctive phrases for a verifier** (in addition to section 16's list): "a more general[l]
+rising", "people are engaged", "the former ones whatsoever army", "designs to surprize" (tentative
+-- {designs} is C-graded per-letter but "to surp" is not resolved past those five letters), "a
+thousand armes which", "the time appointed for it is not farre off", "I have been assured this day
+that", "is in England".
+
+**Per rule 10:** no new search was run this pass; section 14's print check and section 19's print
+check of P4 stand for what was already searched (nothing found in Birch, CSPD Interregnum, the two
+solver repositories, or Tomokiyo's page). Nothing here is described as new, unpublished, unread,
+first or never printed; no N-class is given (a verifier's job).
+
+**Files this pass:** `pool_1654/decode_stamford.py`, `pool_1654/reading_P4.txt`, this section.
+`pool_1654/key_stamford.tsv` and `pool_1654/control_stamford.tsv` regenerated byte-identical (not
+staged as changed). No edits to `align_stamford.py`, `index.tsv`, `ciphertext.txt`, `AUDIT.md`, or
+any other letter's files. Requests: none -- disk only (archive.org 0, other hosts 0), reading the
+already-committed `P4/image_transcription.tsv` (worker I) and the gzipped djvu cache. No subagents,
+no logins, no anneal, no key changes. Well under the $5 cap.
