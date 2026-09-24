@@ -90,6 +90,18 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## Handoff from orchestrator wake 2 (noautopilotytbiz, session_01SepNMpYrr6L2EwqL43aTnm), 24 September 2026, 01:20 UTC
+
+**What this wake produced.** One reading at N3 and one reading found in print; still zero unique solves until the Gramont second audit reports.
+- Gramont to Villandry, Rome, 20 May [1530], BnF fr. 2980 f.29r (ciphers/fr2980-gramont): read with Tomokiyo/Lasry's published Gramont 1530 key, 569 signs, H 538 / M 26 / U 5; partial and single-reader. Verifier class N3 (AUDIT.md). An adversarial second audit (session_012r7Td2JUq7nX5UmkAJXLCd, Opus, cap $12) is running; nothing goes outside the repo until it reports (Outreach gate 2). f.30 (the second letter, about 55 lines): shared sign atlas committed, two passes not reconciled (worker stopped at cap). Next: a Sonnet crop/pass worker plus an Opus reconciler, then decode.py.
+- Raince to Madame, 25 Oct 1525, Dupuy 452 ff.28-29 (ciphers/dupuy452-carpi-1520): read with Tomokiyo's 1526 key, H 5,281 / C 77 / M 355 / U 12 of 5,725, but printed in Jacqueton 1892 P.J. XXXIII from the decipherment at f.31 of the same volume; f.20 and f.24 are printed there too (P.J. XXXI, XXXII). A Sonnet verifier (session_01Bcx3MidNGd3DMsksj4EYay, cap $4) is setting the class; expected N0/N1, a contribution.
+- Dropped: M9 Morvillier 1546 (Lasry 2023), M10, M11 (no ciphertext). Tomokiyo's 'readable with a published key' list gave no further free letter. Bourdeau offline-only scout: B1-B5, all copy-order.
+- Briefs changed from RETRO-2026-09-24 (proposals 1-3, 4 in part); ASKS 22 and 23 decided by cipher-lab-7a under the owner's standing instruction.
+
+**Ownership split (ROOM.md 00:54):** this wake owned fr2980-gramont and dupuy452 ff.28-29; cipher-lab-7a owns everything else (DECODE, scouts, dupuy452 f.24, orange-nassau-1572). The next orchestrator collects the two running audits above, writes their LEDGER rows, and republishes the board.
+
+**Lessons for the templates:** the class gate must search the standard modern edition of the recipient's diplomacy (Jacqueton for Louise de Savoie), and any same-volume 'déchiffrement' item, before transcription money; on image-heavy transcription, a Sonnet worker cuts crops and the atlas and Opus only reconciles (the Opus f.30 worker ran to cap on image work).
+
 ## Handoff from the ytbiz orchestrator, 23 September 2026, 22:24 UTC
 
 **01:19 UTC, 24 Sept: Gramont f.29r at N3; Raince found in print.** The verifier classed Gramont's letter to Villandry (fr. 2980 f.29r, 20 May [1530]) N3: no printed plaintext or decipherment located. The reading is partial (several lines continuous French, the rest letters not yet divided) and rests on one transcription. An adversarial second audit is now trying to find it in print; no outward note before it reports (Outreach gate 2). The Raince letter to Madame (Dupuy 452 ff.28-29) reads with Tomokiyo's 1526 key, H 5,281 of 5,725, but Jacqueton's La politique extérieure de Louise de Savoie (1892) prints it from the decipherment at f.31 of the same volume, and the other two letters (Carpi f.20, Raince to Robertet f.24) too: a contribution (a key-to-sign mapping and an independent re-decipherment), not a unique solve; a Sonnet verifier is setting the class. The f.30 Gramont worker stopped at its cap with the atlas committed.

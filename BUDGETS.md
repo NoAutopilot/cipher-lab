@@ -14,6 +14,7 @@ the rate-limit window, which is the thing that actually stops work.
 |---|---|---|---|---|---|---|
 | the owner | Max | seven-day | see session | allowed_warning | orchestrator 2,042 since 17 Sept; workers about 330 | 21 Sept 2026 |
 | noautopilotytbiz (same person, second account) | Max | five-hour | rolling | allowed | 235.5 for the session 23 Sept 15:12-23:16 UTC (orchestrator plus about 35 workers; the long conversation was the largest single cost); five-hour window allowed at close, no overage | 23 Sept 2026 23:16 UTC |
+| noautopilotytbiz, orchestrator wake 2 (session_01SepNMpYrr6L2EwqL43aTnm) | Max | five-hour | rolling | allowed | about 40 for the orchestrator session 23 Sept 23:16 to 24 Sept 01:20 UTC, plus about 120 across its 20 workers (LEDGER rows of 24 Sept); cap $60 for the session itself | 24 Sept 2026 01:20 UTC |
 | | | | | | | |
 | | | | | | | |
 
