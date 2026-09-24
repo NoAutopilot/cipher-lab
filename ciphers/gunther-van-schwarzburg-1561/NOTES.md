@@ -212,6 +212,21 @@ This agrees with WVO's content summary (progress of the marriage plan between Fr
 of Lorraine). Suggestion (not done): transcribe p.3's ~31 cipher lines the same way (one reading, ~$1.5), and
 settle the 11 U sign types from context as M in an exceptions file.
 
+**F1 extension, p.3 (LANE R2 worker F1, Opus, 24 Sept 2026, one careful reading, no network).** p.3 carries **25**
+cipher lines (not ~31) above the clear close "und wunscht dich E.L. ...". Code shapes were calibrated on p.1 against
+G1's rows, then p.3 was read in the same codes (`ciphertext_8246.txt` p3L01-L25, `ciphertext.tsv`; `?` = doubtful, M)
+and decoded with key.tsv unchanged; `decode_key.py --check` exits 0. **p.3 tokens 400: C 326, M 29, U 45. Whole
+cipher pp.1-3 tokens 953: H 0, C 817, S 0, M 53, I 0, U 83.** New codes on p.3 (all U): Fx, dia, t+, Del, iDel, Cm,
+f_, Fs, HH, 62/68 (sigma plus a digit, may be two signs), 24, xx. The closing sequence "98 (3) bbb ro/th ..." recurs
+from p.1 L10 (a formula, perhaps a name or signature).
+German rendering, p.3, word division mine (· = unkeyed sign):
+> [.]eschriben wurde, wes [..] ie [.]andt u[.]rtten haben ... selbst ... ssen zu halten ... derselden vertraut ...
+> nicht kunden erhalt[en] ... ich ... oder König ... gemudt ... der nicht will der ... dies ... sachen nicht mehr
+> s[.]hrei[ben] ... ferner s[.]hreid[en] werden bin i[.]h derselben ... wislich ider zeit vertrauli[.]h mit zu theilen ...
+Context suggests the unkeyed looped `b` (10 on p.3) is c ("s[b]hrei", "i[b]h", "vertrauli[b]h", 4 places); not
+applied, left U (no guessing). Suggestion: an exceptions file settling `b` = c and the other U types as M from
+context, and an image re-check of p3L01 `ob` / p3L16 `Ib` (the barred-o and barred-I shapes are close at this resolution).
+
 **Search log for the verifier:** Japikse (1934) no.316, pp.343-344, read by C1/earlier worker: prints 8246 only to
 the clear opening, no cipher passage or solution (NOTES "Source"). No other source searched this pass (no network).
 Requests this pass: 0 (all work from images on disk; crops rendered locally with headless Chromium).

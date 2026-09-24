@@ -37,3 +37,30 @@ p2L22	34 60 th m of q f BLOT 88 x+ d6 aab 7 f ps
 p2L23	th x+ f zz 60 60 x+ ps th f 88 ] f m q f ps
 p2L24	34 33 sq xn g 88 hs xr 101 zz th Ib f ] L g 8?
 p2L25	aaa x+ xr 101 f ps 60 phi oo aab hs ps th x+ cc
+# p.3 (08246_p3.jpg), F1 one careful reading, 24 Sept 2026, same codes. New codes on p.3: Fx (f with two crossbars), dia (diamond on a cross),
+# t+ (t with two bars), Del (closed triangle), iDel (inverted triangle), Cm (C-curl with m inside), f_ (f over a hook), Fs (small F-like sign), HH (H lying, |-|), 62/68 (sigma + 2/8, may be two signs), 24.
+p3L01	b f aaa xr aab 88x ob? sq f ps 34 48 60 8 th r
+p3L02	34 34 f L iDel ] hs f 58 34 01 or th zz 44
+p3L03	60 Fx 88 7 zz g? cc x_ x vi f ps lx 87 dia 3
+p3L04	34 60 rp r 60 34 m t+ ] g? d6 aab cc 60 x_ or
+p3L05	Ol ] f m vi aaa zz 60 48 od m of 60 44 Ib?
+p3L06	L aaa f ps 77 48 aab 01 m zz f ps ] od x_ x+ sq
+p3L07	hs xr aa sqt th od a aa d f 88 L f m xm f ps
+p3L08	60 f 88x zz 8 x+ 48 z v 88 34 60 vt m 3 01
+p3L09	62? oo 60 ps b oo rp xr 101 6 dd 34 ps tau f oo
+p3L10	60 f 88x aab 01 m 7 f_ or 34 ps 01 oo b f aaa
+p3L11	f aab f cc th x+ sqt rp xr 101 ps hs d6 x_ zz 34
+p3L12	34 ii hs aaa iDel g? phi? th f 88 4000 Cm ps Fx b
+p3L13	101 tau v ] sqt rr f rf 34 th zz 53 L f 68? vt
+p3L14	th f 88 oo rp xr 101 6 60 60 hs m m th f 88
+p3L15	34 34 f b g oo Ol 34 p xx d hs f L 33 01
+p3L16	m Del 44 Fx cc th Ib? f ] L f 88x aaa ii xr aab f ps
+p3L17	oo rp? a xb zz rf ss x_ 8 aaa b 101 88x f ob?
+p3L18	xm g cc th x rf hs 88 x+ phi f 88x Ol aab hs f
+p3L19	8 34 rf sq p f 8 ps f 88 L b aab 8 f hs xm
+p3L20	f oo 34 34 f 88x th f oo sq hs cc hs b aab
+p3L21	th f 8 L f m vi g cc 34 34 f ] sqt Fs hs 8
+p3L22	60 60 hs ] m hs xr 101 hs th f 8 zz 53 f hs
+p3L23	7 34 f 8 z 88x x+ 60 m hs b 101 rf hs zz 77
+p3L24	44 6 x_ f hs m g ps b 34 6 7 60 60 g? m m
+p3L25	hs rr 24 HH L? tb L 98 3 bbb th ro phi? Cm?
