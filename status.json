@@ -1,5 +1,5 @@
 {
-  "updated": "24 September 2026, 00:32 UTC",
+  "updated": "24 September 2026, 00:51 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -329,7 +329,7 @@
       "stage": 3,
       "state": "active",
       "holder": "Worker",
-      "next": "Reconciled 5,725 signs in 50 types, not clean by the gate (<40 types, passes within 5%). Third pass on the half-lines pass A skipped and the gutter signs; the owner decides whether the solver may start with 50 types (ASKS row).",
+      "next": "Solver running on the 5,725-sign, 50-type text: Raince's 1526 key first, then the annealer with a matched control (ASKS 22, option a).",
       "note": "Corrected 23 Sept 2026: invented-symbol alphabet, ~1,500 tokens across three letters in one cipher; f.20 recto tail transcribed once (86 tokens, grade M). Images free on Gallica.",
       "kind": "recovery",
       "wait": {
@@ -342,14 +342,29 @@
   ],
   "workers": [
     {
+      "title": "VERIFIER: Gramont f.29r",
+      "job": "Novelty audit of the f.29r reading per the CLAUDE.md template. Opus, cap $15",
+      "state": "running"
+    },
+    {
+      "title": "Gramont f.30r-v transcription + key",
+      "job": "Item 22, shared atlas from f.29r, two passes, key applied. Opus, cap $15",
+      "state": "running"
+    },
+    {
+      "title": "SOLVER: Raince to Madame 1525",
+      "job": "1526 key first (Tomokiyo, Bourdeau), then annealer with a matched 50-sign control. Opus, cap $30",
+      "state": "running"
+    },
+    {
       "title": "Raince third pass (pass C)",
-      "job": "Skipped half-lines and gutter; stopped at its $6 cap",
-      "state": "interrupted at cap"
+      "job": "Interrupted at its $6 cap ($6.49) waiting on a subagent; nothing committed. Superseded by the solver decision (ASKS 22)",
+      "state": "stopped, archived"
     },
     {
       "title": "Gramont 1530 transcription + Tomokiyo key (M8)",
-      "job": "Two blind passes, reconciliation, key applied with per-token grades. Opus, cap $20",
-      "state": "running"
+      "job": "f.29r read with Tomokiyo/Lasry's Gramont 1530 key: 569 signs, H 538, M 26, U 5; f.30 not reached; blind passes agreed 29%, the reconciler's own transcription carries the reading. $11.63",
+      "state": "done, archived"
     },
     {
       "title": "Retrospective (RETRO-2026-09-24)",
@@ -481,6 +496,10 @@
     }
   ],
   "log": [
+    {
+      "when": "24 Sept, 00:51",
+      "what": "Gramont to Villandry, Rome, 20 May 1530 (fr. 2980 f.29r): the cipher passage reads with Tomokiyo and Lasry's published Gramont key, 569 signs, 538 at grade H. A verifier is now searching for it in print; nothing is called new before AUDIT.md. Raince solver started on the 50-type text (ASKS 22 decided under the owner's standing instruction)."
+    },
     {
       "when": "24 Sept, 00:32",
       "what": "Tomokiyo's 'readable with a published key' list: 14 letters, none free (Bourdeau holds the Bayonne and Birago clusters; one already solved); Gramont fr. 2980 remains the only one in hand. Retrospective run; four brief fixes applied."
