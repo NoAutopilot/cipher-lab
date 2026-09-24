@@ -1311,6 +1311,22 @@
    "grade": "C 129, M 22, U 21 of 172 groups; novelty not yet audited",
    "line": "Key of 395 groups (grade C) from the contemporary decipherments of BLA 179, 185, 187, 188, 189, 190 and 194; one code for 1725-29 by leave-one-item-out (0.68-0.91). Reads the undeciphered BLA 186 (Madrid, 13 Sept 1728, Ripperda's escape: 20 of 24 groups), BLA 191 enclosure (a) (106 of 141) and the code words in BLA 184.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-blathwayt-madrid-1728"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "recovery",
+   "title": "Du Vergier (Marine, Dunkerque) to Pontchartrain, 26 Mar 1696 and a second letter (BnF Clairambault 1108 fol.249v-250r, 262): key and reading from the interlinear decipherment",
+   "grade": "C 584, M 82, U 1 of 667 groups (no H: no key sheet); novelty not yet classified",
+   "line": "The words written above the numeral groups in a second hand are a contemporary decipherment; aligning them gives key_1696 (129 codes, name codes 700-725 for Myddleton, the Prince of Orange, the King of England; pairing 0.926 vs shuffled max 0.492) and a reading decode_key.py regenerates. fol.249r not yet transcribed.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1108-duvergier"
+  },
+  {
+   "date": "24 Sept 2026",
+   "kind": "contribution",
+   "title": "Brienne to Servien, 1653 cipher letters (BnF fr.5160 folios 1-3 and 9): negative with matched controls",
+   "grade": "negative; 754 tokens reconciled (f1 H508 M20, f9 H202 M24)",
+   "line": "Brienne's 1646, 1647 and 1651 tables lose to 200 shuffled derangements on both letters; the 1659 table beats its character-level control (z 3.4/3.7) but reads no words, so the 1653 table is a different one sharing a few syllable codes. A constrained anneal reads only 25.7% of a synthetic control of the same size, so the letters are below what that method can solve without more text or a key.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653"
   }
  ],
  "lanes": [
