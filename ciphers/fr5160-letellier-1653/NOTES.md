@@ -1637,3 +1637,50 @@ index, which this worker did not reach. Logged as attempted, inconclusive, 24 Se
 For LANE V2 / V5: f.68r's plaintext of the same letter, in the same volume, is the material fact for the N-class
 decision, not the SRU non-result above. Requests: gallica.bnf.fr 5 (2 images at 2000px, 1 at full res, 2
 ContentSearch) + 2 SRU (7 total this section, all 200 first try, >=1.5s apart).
+
+## f.67 aligned to f.68r (24 Sept 2026)
+
+LANE G2 worker R (Opus, cap $7). Files: `dechiffre_f68.txt` (pass A, this worker) and `dechiffre_f68_B.txt` (blind pass B,
+Sonnet subagent), `align_f67.py` -> `align_f67.tsv`, `align_f67_conflicts.tsv`, `key_1659_ext.tsv`, `exceptions_f67_C.tsv`
+(`--check`); `decode_f67.json` job 2 -> `reading_f67_C.txt` / `reading_f67_C.tsv` (`tools/decode_key.py . --config
+decode_f67.json --check` exits 0; job 1, worker M's S/M reading, unchanged).
+
+**f.68r.** Canvas 131 fetched once at 2000 px (the native `full/full` request failed twice at the proxy, ws_closed_mid_exchange
+after 11 s; the 2000 px render worked first time; scratchpad only, not committed). No heading, no docket; leaf number "68"
+top right; 20 lines, lower half blank. It begins mid-sentence ("voudrez bien que je vous die quon publie des nouvells de
+turin") and ends "de sy appliquer Cest ce que vous aurez de moy". It carries neither f.67's clear opening nor its clear
+"Desja ie vous ay mandé ce qui s'est presupposé": it is the enciphered passages only, written out (a paragraph break
+stands where f.67 has that clear sentence). Two passes agree on 179 of 199 words; the rest are u/v or word division
+except five settled on the image (header of dechiffre_f68.txt). New from f.68r beyond worker P's reading: "des nouvelles
+de **Turin**" (f.67 `_24` = tur).
+
+**Alignment.** f.67's three cipher stretches (cut at its clear words) aligned to the matching f.68r text with the
+align_f86 Viterbi/EM, groups carrying 0-8 letters, key_1659's own f.86/f.88 counts kept as fixed pseudo-counts, and start
+seeds for 154/_70/79/80 and worker M's six context proposals (all re-estimated). Grading rules in the script docstring.
+
+| grades (546 cipher groups) | H | C | S | M | I | U |
+|---|---|---|---|---|---|---|
+| before (read_f67.py, key_1659 cryptanalytic) | 0 | 0 | 107 | 416 | 9 | 14 |
+| after (align_f67.py, f.68r known plaintext) | 0 | 435 | 0 | 111 | 0 | 0 |
+
+Of the 111 M: 58 are groups transcribed at conf M (f.68r agrees with the key at most of them, but the group itself is
+uncertain; decode_key.py downgrades them and align_f67 does the same), the rest are key conflicts or inconsistent codes.
+C includes tokens where f.68r gives an alternate value key_1659 already attests from f.86/f.88 (7 u, 15 i, 18 on, 10 z/s,
+_6 qu, 23 p, 24 null): the table is syllabic and these codes carry both values on f.86/f.88 too.
+
+**Codes added (key_1659_ext.tsv, 16 rows, evidence per row):** `_2` pi (Pianese, spelled pi-a-ne-se), `_24` tur, `25` va,
+`_25` va, `32` ci, `43` fo (x2), `63` lo, `67` mi, `68` mo (x2), `_70` avec, `72` ni (x2), `_76` bien, `79` du, `80` duc
+(x3), `154` quelque (x2): C, consistent at every occurrence (most single attestations). `51` he/h: M (inconsistent).
+Worker M's six I proposals (72 ni, 67 mi, 32 ci, 43 fo, 68 mo, 63 lo) are all confirmed by f.68r.
+None of the added codes occurs in f.86 or f.88, so their readings are unchanged and were not rerun.
+
+**Conflicts with key_1659 (align_f67_conflicts.tsv, 51 tokens):** `6` key qu (5/5 on f.86/f.88) reads **a** at 11 of 14
+f.67 occurrences ("madamoiselle a rendu", "a prendre"); `65` key ar (one f.88 attestation) reads **ma** 5 times (maniement,
+marier, madamoiselle x2) -- worker M saw this; `3` key e (one attestation) reads d 3 times (voudrez); `_7` key q (8/8)
+reads po/o 4 times (possible, pour); `_10` key st reads ra/a. A revision of 6 and 65 is for the next key worker: key_1659
+rows are left as they are and the f.67 evidence is in the `ev_f67`/`f67_evidence` columns. The rest are single
+misalignments at spelling differences (e.g. 16 "el" in quelles, 61 "af").
+
+**Report.** f.67 read against its own clear text at C 435 / M 111 of 546; 16 codes added; key_1659 contradicted at 6 and 65.
+Not searched for print (not this brief's job); novelty stays AUDIT.md's (V5b). Requests: gallica.bnf.fr 3 (2 failed at the
+proxy, 1 x 200). One Sonnet subagent (pass B).
