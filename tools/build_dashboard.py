@@ -311,7 +311,7 @@ def reading_row(r, idx):
         if len(x["targets"]) > 1:
             names = [t.split("/")[-1] for t in x["targets"]]
             covers = f'<p class="muted small">One note covers {len(names)} readings ({E(", ".join(names))}); send it once and tick it once.</p>'
-        parts.append(f'<div class="dz"><h4>Who to tell</h4><p><b>{E(x["to"])}</b> <span class="chip out-{x["kind"]}">{"ready to send" if x["kind"] == "ready" else "drafted"}</span></p>' + covers
+        parts.append(f'<div class="dz"><h4>Who to tell</h4><p><b>{E(x["to"])}</b> <span class="chip out-{x["kind"]}">{"ready to send" if x["kind"] == "ready" else "drafted"}</span></p>' + covers +
                      f'<p class="muted small">{E(x["status"])}</p>'
                      + copy_block(f"cp-{rid}-{slug(x['slug'])}", x["to"], x["subject"], x["text"]) + sent_box + '</div>')
     links = {"folder": r["link"], "audit": r["link"].rstrip("/") + "/AUDIT.md"}
