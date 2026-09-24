@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 09:52 UTC",
+ "updated": "24 Sep 2026 10:57 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -615,6 +615,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 11:00",
+   "what": "August of Saxony 1561-64: WVO 126 N4 (10:16), and 53 and 57 N4 (10:56); 53 was read cryptanalytically (tools/homophonic_anneal.py, S 238, control 99.3 percent) and is the first solver reading to pass a novelty audit. fr.5160 folio 67 (10 Oct 1659): N0, its clear text is on f.68r. Jan van Nassau 5200: N1, found-solved (printed table, Groen IV). Lodewijk WV2 letters 5811 and 4503: N0 (Groen IV). Blathwayt stays N3 x3. LANE N closed at $168 on handoff, N2 running (two copy-order nominations in its first hour; Florence Dieci di Balia probe, Heinsius editions); LANE W closed at $72 on handoff, W2 starting. Retrospective d: five proposals, applying."
+  },
   {
    "when": "24 Sep, 09:55",
    "what": "Thurloe P4 (Stamford, Calais, 13 March 1655): N4 after the DECODE search came back empty (09:25). Lodewijk van Nassau 4610, 4611, 4616: N4 (second audit 09:41), 4612 N3. August of Saxony 126: N3 two audits; 53 and 57 read (one by a new homophonic annealer with a 99.3% control) at N3 one audit. Blathwayt 1728 BLA 186, 191(a), 184: N3 two audits; the clear text of 186 was printed by Rose in 1831 with the cipher omitted. Günther of Schwarzburg 1561: N0 (Japikse 1934 prints it deciphered). Du Vergier 1696: N0 (interlinear gloss). fr.5160 folio 67 (10 Oct 1659): read with the 1659 key, verifier running. La Garde 1577: negative with controls. Gallica: Hanau 1635 not digitised; two DECODE-BnF items captured. LANE N asked to hand off at $128; N2 starting; retrospective d started (31 rows, $300)."
@@ -1413,28 +1417,28 @@
   {
    "name": "Lane G2, Gallica manuscripts",
    "live": 6,
-   "focus": "fr.5160 folio 67 read (key 1659), de Diou-Mayenne capture, Duprat-Selve, DECODE-BnF DC8/DC9 passes, digitisation check on eight M rows"
+   "focus": "fr.5160 f.67 aligned to its own clear text (N0); de Diou-Mayenne is a decipherment only; fr.5160 canvases 160-367 survey; catalogue searches for keys"
   },
   {
    "name": "Lane V2, French/Dutch/German verification",
-   "live": 4,
-   "focus": "Lodewijk 4610/4611/4616 N4; Saxony N3; Günther N0; N4 decisions and audits queued for Saxony 53/57, fr.5160 f.67"
+   "live": 3,
+   "focus": "Saxony 53/57/126 N4; Lodewijk 4610/4611/4616 N4; Jan van Nassau 5200 N1; WV2 letters N0; CONTRIBUTIONS rows held at gate 2"
   },
   {
-   "name": "Lane N, nominations (handing off to N2)",
-   "live": 4,
-   "focus": "four copy-free nominations 08-09 UTC; Huygens editions harvest; DECODE thumbnails-only finding; N2 takes over"
+   "name": "Lane N2, nominations",
+   "live": 6,
+   "focus": "Heinsius editions (two copy-order nominations), Florence Dieci di Balia probe, EMLO EM4+, DECODE DC11-20, Polish libraries negative"
   },
   {
    "name": "Lane R2, recovery",
-   "live": 5,
-   "focus": "Jan van Nassau (key from the printed 5198 table), Lodewijk WV2 letters, Saxony 53 by annealer, La Garde negative, DECODE 1162/4450 wait on Gallica natives"
+   "live": 4,
+   "focus": "Ranzo cipher fr.20506 f.136 passes, Jan van Nassau 5200 p2-3, La Garde negative (three witnesses), Lodewijk WV2"
   },
   {
-   "name": "Lane W, English verification",
-   "live": 2,
-   "focus": "Blathwayt N3 x3 two audits, N4 decision running; Thurloe P4 N4; Eckert Zooniverse gap"
+   "name": "Lane W2, English verification",
+   "live": 0,
+   "focus": "starting from the LANE W handoff: Eckert Zooniverse gap, Blathwayt N4 families, owner asks to the card"
   }
  ],
- "headline": "Seven readings now carry 'no prior decipherment located' (N4): Gramont to Villandry and to Francis I (1530), Danzay (1557), Stamford to Thurloe's office (1655), and three Lodewijk van Nassau letters of 1573-74; five more stand at N3 after two audits (Eckert E4/E5, Blathwayt 1728 x3, August of Saxony 1564). Every one of them was read from a published key or a sibling decipherment; the solvers with controls stay negative. Outreach for the N4 set waits only on your JSTOR rows."
+ "headline": "Ten readings at N4 ('no prior decipherment located'): Gramont x2 (1530), Danzay (1557), Stamford to Thurloe's office (1655), Lodewijk van Nassau x3 (1573-74), and August of Saxony 126, 53 and 57 (1561-64). Saxony 53 is the first cryptanalytic reading to reach N4: read by the new homophonic annealer with a 99.3 percent control, no key or sibling decipherment. Every other N4 was read from a published key or an aligned sibling. Outreach for the whole set waits only on your JSTOR rows."
 }
