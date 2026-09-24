@@ -1,23 +1,34 @@
 #!/usr/bin/env python3
-"""Render status.json into dashboard.html, the one-page project board.
+"""Build dashboard.html (and docs/index.html) from status.json and the repository's own files.
 
-Usage: python3 tools/build_dashboard.py   (from the repo root)
-Then publish dashboard.html. The board and STATUS.md must say the same thing; status.json is the source.
+Rewritten 24 Sept 2026 on the owner's request ("rethink from the ground up"). The board is a research desk with three
+views, one question each:
+  Readings    what did we find, does it matter, who do we tell (one row per classed reading, opening into its dossier)
+  Your desk   what only the owner can do (send, click, decide), with the text ready to copy
+  The machine lanes, funnel, targets, workers, log
 
-Layout (redesigned 24 Sept 2026 for the owner): where we stand in one line; the novelty ladder N0-N5 with every
-classed reading on its rung and what the next rung needs; the scoreboard by kind of result; the owner's card
-(emails and clicks, tick boxes, JSTOR queue); the pipeline funnel by stage; the lanes; results by kind; targets
-grouped by who holds them; change log; queue.
+Inputs: status.json (headline, targets, workers, lanes, results, log, stages), N4-READINGS.md (what each reading says,
+rating, links), outreach/*.md (drafts with status/subject/to/targets/links headers), SECOND-OPINIONS-QUEUE.tsv,
+JSTOR-QUEUE.tsv, ASKS.md. Nothing personal is read or written. Ticks on the desk are saved to the artifact's own store
+(db capability) with a localStorage fallback.
 """
 import html
-import re
 import json
 import os
+import re
 from collections import Counter
 
-d = json.load(open("status.json", encoding="utf-8"))
 E = html.escape
 REPO = "https://github.com/NoAutopilot/cipher-lab/tree/main/"
+d = json.load(open("status.json", encoding="utf-8"))
+results = d.get("results", [])
+targets_all = d["targets"]
+workers_all = d["workers"]
+lanes = d.get("lanes", [])
+stages = d["stages"]
+headline = d.get("headline", "")
+
+# ---------------------------------------------------------------- loaders
 
 def load_asks():
     rows = []
@@ -31,103 +42,79 @@ def load_asks():
             continue
         row, raised, _proj, what, action, who, status = cells[:7]
         st = status.split(":")[0].split("(")[0].strip().lower()
-        if st in ("done", "dropped", "lapsed"):
+        if st in ("done", "dropped", "lapsed", "sent", "answered", "closed"):
             continue
         rows.append({"row": int(row), "raised": raised, "what": what, "action": action, "who": who, "status": status})
     return rows
 
-def load_emails():
+
+def parse_headers(txt):
+    head, lines, k = {}, txt.split("\n"), 0
+    while k < len(lines) and re.match(r"^[a-z]+:\s", lines[k]):
+        m = re.match(r"^([a-z]+):\s*(.*)$", lines[k])
+        head[m.group(1)] = m.group(2).strip()
+        k += 1
+    body = "\n".join(lines[k:]).strip()
+    if body.startswith("---"):
+        body = body.split("\n", 1)[1].strip() if "\n" in body else ""
+    return head, body
+
+
+def load_drafts():
     out = []
     if not os.path.isdir("outreach"):
         return out
     for fn in sorted(os.listdir("outreach")):
         if not fn.endswith(".md"):
             continue
-        txt = open(os.path.join("outreach", fn), encoding="utf-8").read()
-        head = {}
-        for line in txt.split("\n")[:8]:
-            m = re.match(r"^(to|subject|checked|status):\s*(.*)$", line)
-            if m:
-                head[m.group(1)] = m.group(2).strip()
+        head, body = parse_headers(open(os.path.join("outreach", fn), encoding="utf-8").read())
         st = head.get("status", "")
-        if not (st == "ready" or st.startswith("drafted")):
+        kind = "ready" if st.startswith("ready") else "drafted" if st.startswith("drafted") else "done" if re.match(r"^(sent|done|answered|posted)", st) else "other"
+        if kind == "other":
             continue
-        if "## Text" in txt:
-            body = txt.split("## Text", 1)[1].split("\n## ", 1)[0].strip()
-        else:
-            lines = txt.split("\n")
-            k = 0
-            while k < len(lines) and re.match(r"^[a-z]+:\s", lines[k]):
-                k += 1
-            body = "\n".join(lines[k:]).strip()
-        out.append({"slug": fn[:-3], "to": head.get("to", ""), "subject": head.get("subject", ""), "checked": head.get("checked", ""), "text": body, "status": st})
+        links = {}
+        for part in head.get("links", "").split(";"):
+            if "=" in part:
+                k, v = part.split("=", 1)
+                links[k.strip()] = v.strip()
+        targets = [t.strip().strip("`") for t in re.split(r"[,;]\s*", head.get("targets", "")) if t.strip()]
+        out.append({"slug": fn[:-3], "status": st, "kind": kind, "subject": head.get("subject", ""), "to": head.get("to", ""),
+                    "text": body, "targets": targets, "links": links, "checked": head.get("checked", "")})
     return out
 
-def load_jstor_queue():
-    if not os.path.exists("JSTOR-QUEUE.tsv"):
-        return 0, 0
+
+def load_jstor():
     q = done = 0
+    if not os.path.exists("JSTOR-QUEUE.tsv"):
+        return q, done
     for i, line in enumerate(open("JSTOR-QUEUE.tsv", encoding="utf-8")):
         if i == 0 or not line.strip():
             continue
-        cells = line.rstrip("\n").split("\t")
-        st = cells[3].strip() if len(cells) > 3 else ""
-        if st == "queued": q += 1
-        elif st.startswith("done"): done += 1
+        c = line.rstrip("\n").split("\t")
+        st = c[3].strip() if len(c) > 3 else ""
+        if st == "queued":
+            q += 1
+        elif st.startswith("done"):
+            done += 1
     return q, done
 
+
 def load_second_opinions():
-    """SECOND-OPINIONS-QUEUE.tsv rows keyed by folder: label, status (queued/posted/checked/withdrawn), pr, outcome."""
     out = {}
     if not os.path.exists("SECOND-OPINIONS-QUEUE.tsv"):
         return out
     for i, line in enumerate(open("SECOND-OPINIONS-QUEUE.tsv", encoding="utf-8")):
         if i == 0 or not line.strip():
             continue
-        c = line.rstrip("\n").split("\t")
-        c += [""] * (7 - len(c))
+        c = line.rstrip("\n").split("\t") + [""] * 7
         row = {"label": c[0].strip(), "folder": c[1].strip(), "status": c[4].strip(), "pr": c[5].strip(), "outcome": c[6].strip()}
+        if row["status"].startswith("withdrawn"):
+            continue
         out.setdefault(row["folder"], []).append(row)
     return out
 
-def so_rows_for(r):
-    """Second-opinion rows for a result: by folder, narrowed by a label token (F29R, F30, 126, 53) found in the title.
-    Only readings carry the chip (kinds solve and reading); corrections, datasets and catches do not."""
-    if r.get("kind") in ("contribution", "correction", "dataset", "negative", "catch"):
-        return []
-    folder = r["link"].replace(REPO, "").strip("/")
-    rows = [x for x in second_opinions.get(folder, []) if not x["status"].startswith("withdrawn")]
-    if len(rows) > 1:
-        t = r["title"].lower()
-        narrowed = []
-        for x in rows:
-            toks = [k.lower() for k in x["label"].split("-")[2:] if re.search(r"\d", k)]
-            ok = False
-            for k in toks:
-                if k[0] == "f" and k[1:2].isdigit():
-                    ok = ok or re.search(r"f\.?\s?" + re.escape(k[1:]) + r"(?![0-9])", t) is not None
-                else:
-                    ok = ok or re.search(r"(?<![0-9])" + re.escape(k) + r"(?![0-9])", t) is not None
-            if ok:
-                narrowed.append(x)
-        rows = narrowed or rows
-    return rows
 
-SO_STATE = {"queued": ("so-q", "second opinion queued"), "posted": ("so-p", "second opinion posted"), "checked": ("so-c", "second opinion checked")}
-def so_chip(r):
-    out = ""
-    for x in so_rows_for(r):
-        st = x["status"].split()[0] if x["status"] else ""
-        if st not in SO_STATE:
-            continue
-        cls, txt = SO_STATE[st]
-        tip = x["label"] + (f", PR #{x['pr']}" if x["pr"] else "") + (f": {x['outcome']}" if x["outcome"] else "")
-        icon = {"queued": "&#9711;", "posted": "&#9993;", "checked": "&#10003;"}[st]
-        out += f' <span class="so {cls}" title="{E(tip)}">{icon} {E(txt)}' + (f' <span class="muted">({E(x["outcome"])})</span>' if st == "checked" and x["outcome"] else "") + '</span>'
-    return out
-
-def load_n4_readings():
-    """N4-READINGS.md sections keyed by '## <folder> <item id> ...' headings; each holds text, rating and links."""
+def load_memo():
     out = []
     if not os.path.exists("N4-READINGS.md"):
         return out
@@ -137,456 +124,410 @@ def load_n4_readings():
         if not m:
             continue
         body = sec.split("\n", 1)[1] if "\n" in sec else ""
-        rating = ""; links = {}
+        rating = ""
         mr = re.search(r"^rating:\s*(.+)$", body, re.M)
-        if mr: rating = mr.group(1).strip()
+        if mr:
+            rating = mr.group(1).strip()
+        links = {}
         ml = re.search(r"^links:\s*(.+)$", body, re.M)
         if ml:
             for part in ml.group(1).split(";"):
                 if "=" in part:
-                    k, v = part.split("=", 1); links[k.strip()] = v.strip()
+                    k, v = part.split("=", 1)
+                    links[k.strip()] = v.strip()
         text = re.sub(r"^(rating|links):.*$", "", body, flags=re.M).strip()
         out.append({"folder": m.group(1), "head": m.group(2).strip(), "text": text, "rating": rating, "links": links})
     return out
 
-def load_drafts_by_target():
-    """outreach/*.md with a targets: header, any status except done/sent, keyed by folder."""
-    out = {}
-    if not os.path.isdir("outreach"):
-        return out
-    for fn in sorted(os.listdir("outreach")):
-        if not fn.endswith(".md"): continue
-        txt = open(os.path.join("outreach", fn), encoding="utf-8").read()
-        head = {}
-        lines = txt.split("\n"); k = 0
-        while k < len(lines) and re.match(r"^[a-z]+:\s", lines[k]):
-            mm = re.match(r"^([a-z]+):\s*(.*)$", lines[k]); head[mm.group(1)] = mm.group(2).strip(); k += 1
-        if "targets" not in head: continue
-        body = "\n".join(lines[k:]).strip()
-        d = {"slug": fn[:-3], "to": head.get("to", ""), "subject": head.get("subject", ""), "status": head.get("status", ""), "text": body, "links": head.get("links", "")}
-        for f in re.split(r"[,;]\s*", head["targets"]):
-            f = f.strip().strip("`")
-            if f: out.setdefault(f, []).append(d)
-    return out
 
-def safe_sentences(folder):
-    p = os.path.join(folder, "AUDIT.md")
-    if not os.path.exists(p): return []
-    out = []
-    for line in open(p, encoding="utf-8"):
-        if "safe sentence" in line.lower():
-            m = re.search(r'"([^"]{20,})"', line)
-            if m: out.append(m.group(1))
-    seen = []; [seen.append(x) for x in out if x not in seen]
-    return seen[:3]
-
-def item_tokens(title):
-    """ids that identify one item inside a folder: WVO 53, f.29r, E4, P4, BLA 186, 4610."""
-    return set(re.findall(r"\b(?:wvo\s*\d+|f\.\s*\d+[rv]?|e\d|p\d|bla\s*\d+|\d{4})\b", title.lower()))
-
-def dossier(r):
-    folder = r["link"].replace(REPO, "").strip("/")
-    parts = []
-    parts.append(f'<div class="dz"><b>What it is.</b> {E(r.get("line", ""))} <span class="muted">{E(r.get("grade", ""))}</span></div>')
-    toks = item_tokens(r["title"])
-    secs = [x for x in n4_readings if x["folder"] == folder]
-    if len(secs) > 1 and toks:
-        narrowed = [x for x in secs if item_tokens(x["head"]) & toks]
-        secs = narrowed or secs
-    for x in secs[:2]:
-        parts.append(f'<div class="dz"><b>Why it matters.</b>' + (f' <span class="rating">{E(x["rating"])}</span>' if x["rating"] else "") + f'<div class="dz-text">{E(x["text"][:1400])}{"…" if len(x["text"]) > 1400 else ""}</div></div>')
-    for dft in drafts_by_target.get(folder, [])[:2]:
-        did = re.sub(r"[^a-z0-9]+", "-", (dft["slug"] + "-" + folder).lower())
-        parts.append(f'<div class="dz"><b>Who to tell.</b> {E(dft["to"])} <span class="muted">({E(dft["status"])})</span><br><b>Subject.</b> {E(dft["subject"])}'
-                     f'<details><summary>Text to send</summary><pre class="mail">Subject: {E(dft["subject"])}{NL}{NL}{E(dft["text"])}</pre>'
-                     f'<button type="button" class="copy" data-for="dz-{E(did)}">Copy subject and text</button><textarea id="dz-{E(did)}" hidden>Subject: {E(dft["subject"])}{NL}{NL}{E(dft["text"])}</textarea></details></div>')
-    links = {"folder": r["link"], "audit": r["link"].rstrip("/") + "/AUDIT.md"}
-    for x in secs[:1]:
-        links.update({k: v for k, v in x["links"].items() if v and not v.startswith("none")})
-    parts.append('<div class="dz"><b>Links.</b> ' + " · ".join(f'<a href="{E(v)}">{E(k)}</a>' for k, v in links.items()) + '</div>')
-    if not secs and not drafts_by_target.get(folder):
-        parts.append('<div class="dz muted">Significance memo and outreach draft are being written; this dossier fills in when they land.</div>')
-    return '<details class="dossier"><summary>Open the dossier</summary>' + "".join(parts) + '</details>'
-
-NL = chr(10)
 asks = load_asks()
-emails = load_emails()
-n4_readings = load_n4_readings()
-drafts_by_target = load_drafts_by_target()
+drafts = load_drafts()
+jq, jdone = load_jstor()
 second_opinions = load_second_opinions()
-jq, jdone = load_jstor_queue()
-stages = d["stages"]
-NS = len(stages)
-results = d.get("results", [])
-targets_all = d["targets"]
-workers_all = d["workers"]
-lanes = d.get("lanes", [])
+memo = load_memo()
 
-# ---------- the ladder ----------
-LADDER = [
-    ("N0", "Already known", "plaintext and decipherment of this item were in print"),
-    ("N1", "Text in print", "plaintext published; ours is an independent re-decipherment"),
-    ("N2", "Mapping new", "plaintext known elsewhere, no prior mapping of this cipher"),
-    ("N3", "Nothing found", "no prior plaintext or decipherment after the logged search"),
-    ("N4", "Everywhere looked", "the principal editions, catalogues and project pages all covered"),
-    ("N5", "Confirmed", "by the holding archive or a specialist"),
-]
+# ---------------------------------------------------------------- helpers
+
 def nclass(r):
     m = re.search(r"\bN([0-5])\b", r.get("grade", ""))
     return int(m.group(1)) if m else None
+
+
 def audits(r):
     g = r.get("grade", "")
+    if "two audits" in g or (nclass(r) or 0) >= 4 or r.get("kind") == "solve":
+        return 2
+    if "audit" in g:
+        return 1
+    return 0
+
+
+def folder_of(r):
+    return r["link"].replace(REPO, "").strip("/")
+
+
+def item_tokens(s):
+    return set(re.findall(r"\b(?:wvo\s*\d+|f\.\s*\d+[rv]?|e\d|p\d|bla\s*\d+|\d{4})\b", s.lower()))
+
+
+def memo_for(r):
+    f = folder_of(r)
+    secs = [x for x in memo if x["folder"] == f]
+    toks = item_tokens(r["title"])
+    if len(secs) > 1 and toks:
+        narrowed = [x for x in secs if item_tokens(x["head"]) & toks]
+        secs = narrowed or secs
+    return secs[:1]
+
+
+def so_for(r):
+    f = folder_of(r)
+    rows = second_opinions.get(f, [])
+    if len(rows) > 1:
+        t = r["title"].lower()
+        narrowed = []
+        for x in rows:
+            ok = False
+            for k in [k.lower() for k in x["label"].split("-")[2:] if re.search(r"\d", k)]:
+                if k[0] == "f" and k[1:2].isdigit():
+                    ok = ok or re.search(r"f\.?\s?" + re.escape(k[1:]) + r"(?![0-9])", t) is not None
+                else:
+                    ok = ok or re.search(r"(?<![0-9])" + re.escape(k) + r"(?![0-9])", t) is not None
+            if ok:
+                narrowed.append(x)
+        rows = narrowed or rows
+    return rows[:1]
+
+
+def drafts_for(r):
+    f = folder_of(r)
+    return [x for x in drafts if f in x["targets"] and x["kind"] != "done"]
+
+
+def rating_kind(rating):
+    if rating.startswith("adds substantive"):
+        return "r-sub", "adds substantive information"
+    if rating.startswith("confirms"):
+        return "r-conf", "confirms or adds detail"
+    if rating.startswith("form"):
+        return "r-form", "form and key only"
+    return "", ""
+
+
+def short(t, n=90):
+    return t if len(t) <= n else t[:n - 1].rstrip(" ,;:") + "…"
+
+
+def slug(s):
+    return re.sub(r"[^a-z0-9]+", "-", s.lower())[:48].strip("-")
+
+
+def md_light(text):
+    """The memo is markdown; keep it readable as text: bold markers become emphasis, list markers stay."""
+    t = E(text)
+    t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
+    t = re.sub(r"(?m)^### (.+)$", r"<h5>\1</h5>", t)
+    t = re.sub(r"\n{2,}", "</p><p>", t)
+    return "<p>" + t.replace("\n", "<br>") + "</p>"
+
+
+def copy_block(uid, subject, text):
+    full = f"Subject: {subject}\n\n{text}"
+    return (f'<details class="txt"><summary>Text to send</summary><pre class="mail">{E(full)}</pre>'
+            f'<button type="button" class="copy" data-for="{uid}">Copy subject and text</button>'
+            f'<textarea id="{uid}" hidden>{E(full)}</textarea></details>')
+
+# ---------------------------------------------------------------- readings
+
+LADDER = [("N0", "already known"), ("N1", "text in print"), ("N2", "mapping new"),
+          ("N3", "nothing found"), ("N4", "everywhere looked"), ("N5", "confirmed")]
+classed = [r for r in results if nclass(r) is not None and r["kind"] not in ("dataset", "correction", "negative")]
+classed.sort(key=lambda r: (-(nclass(r)), -audits(r), r["title"]))
+counts = Counter(nclass(r) for r in classed)
+n_unique = sum(1 for r in classed if nclass(r) >= 3 and audits(r) >= 2)
+
+
+def reading_row(r, idx):
     n = nclass(r)
-    # An N4 or N5 is set only after the adversarial second audit (CLAUDE.md rule 10 and the Outreach gates), so it
-    # always counts as two audits even when the verifier's grade text no longer says so (fix of 24 Sept 2026 13:25 UTC,
-    # when nine N4 rows showed as one unique solve). A row of kind "solve" is by policy N3 or better after two audits.
-    if n is not None and n >= 4: return 2
-    if r.get("kind") == "solve": return 2
-    if "two audits" in g: return 2
-    if "single audit" in g or "one audit" in g: return 1
-    return 1 if n is not None else 0
-rungs = {i: [] for i in range(6)}
-for r in results:
-    # Any classed reading sits on the ladder, whatever its kind label (a recovery by alignment that reached N4 is a
-    # unique solve by the policy; fix of 24 Sept 2026 13:28 UTC). Catches (N0/N1 found-solved) stay on their rung too.
-    if nclass(r) is not None and r["kind"] not in ("dataset", "correction", "negative"):
-        rungs[nclass(r)].append(r)
-def short(t, n=70):
-    return t if len(t) <= n else t[:n-1].rstrip(" ,;:") + "…"
-ladder_cols = ""
-for i, (code, name, desc) in reversed(list(enumerate(LADDER))):
-    items = ""
-    for r in rungs[i]:
-        a = audits(r)
-        a_txt = {0: "no audit", 1: "one audit", 2: "two audits"}[a]
-        gap = r.get("gap", "")
-        cls = "rung-item" + (" unique" if (i >= 3 and a >= 2) else "")
-        slug = re.sub(r"[^a-z0-9]+", "-", r["title"].lower())[:40].strip("-")
-        audit = r["link"].rstrip("/") + "/AUDIT.md"
-        chip = so_chip(r)
-        items += (f'<li class="{cls}"><a href="{E(r["link"])}">{E(short(r["title"], 96))}</a>'
-                  f'<span class="rung-meta">{E(a_txt)}' + (f' · <b>next rung needs:</b> {E(short(gap, 140))}' if gap else '') + '</span>' + chip
-                  + (dossier(r) if i >= 3 else "") + '</li>')
-    hi = " hi" if i >= 3 else ""
-    empty = '<li class="muted empty">nothing here yet</li>'
-    ladder_cols += (f'<div class="rung{hi}"><div class="rung-head"><div><span class="rung-code">{code}</span> <span class="rung-name">{E(name)}</span></div>'
-                    f'<div class="rung-desc muted">{E(desc)}</div><div class="rung-count muted">{len(rungs[i])} reading{"s" if len(rungs[i]) != 1 else ""}</div></div>'
-                    f'<ul class="rung-list">{items or empty}</ul></div>')
-n_unique = sum(1 for i in (3, 4, 5) for r in rungs[i] if audits(r) >= 2)
-n_climbing = sum(len(rungs[i]) for i in range(6)) - n_unique
-n_pending = sum(1 for t in targets_all if t["stage"] == 8)
+    a = audits(r)
+    m = memo_for(r)
+    so = so_for(r)
+    dr = drafts_for(r)
+    rid = f"rd-{idx}-{slug(r['title'])}"
+    rating = m[0]["rating"] if m else ""
+    rk, rlabel = rating_kind(rating)
+    chips = ""
+    if rlabel:
+        chips += f'<span class="chip {rk}">{E(rlabel)}</span>'
+    chips += f'<span class="chip c-aud">{["no audit", "one audit", "two audits"][a]}</span>'
+    if so:
+        st = so[0]["status"].split()[0]
+        lab = {"queued": "second opinion queued", "posted": "second opinion posted", "checked": "second opinion checked"}.get(st, "")
+        if lab:
+            chips += f'<span class="chip so-{st}" title="{E(so[0]["label"] + ((": " + so[0]["outcome"]) if so[0]["outcome"] else ""))}">{lab}</span>'
+    if dr:
+        k = dr[0]["kind"]
+        chips += f'<span class="chip out-{k}">{"ready to send" if k == "ready" else "note drafted"}</span>'
+    unique = ' unique' if (n >= 3 and a >= 2) else ''
+    # detail
+    parts = [f'<div class="dz"><h4>What it is</h4><p>{E(r.get("line", ""))}</p><p class="mono muted">{E(r.get("grade", ""))}</p></div>']
+    if m:
+        parts.append(f'<div class="dz"><h4>What the passage says, and why it matters</h4>'
+                     + (f'<p class="rating {rk}">{E(rating)}</p>' if rating else "")
+                     + f'<div class="memo">{md_light(m[0]["text"])}</div></div>')
+    for x in dr[:2]:
+        parts.append(f'<div class="dz"><h4>Who to tell</h4><p><b>{E(x["to"])}</b> <span class="chip out-{x["kind"]}">{"ready to send" if x["kind"] == "ready" else "drafted"}</span></p>'
+                     f'<p class="muted small">{E(x["status"])}</p><p><b>Subject.</b> {E(x["subject"])}</p>'
+                     + copy_block(f"cp-{rid}-{slug(x['slug'])}", x["subject"], x["text"]) + '</div>')
+    links = {"folder": r["link"], "audit": r["link"].rstrip("/") + "/AUDIT.md"}
+    if m:
+        links.update({k: v for k, v in m[0]["links"].items() if v and not v.lower().startswith("none")})
+    parts.append('<div class="dz"><h4>Links a recipient can check</h4><p class="links">' + " ".join(f'<a href="{E(v)}">{E(k)}</a>' for k, v in links.items()) + '</p></div>')
+    if not m and not dr and n >= 3:
+        parts.append('<p class="muted small">The significance memo and the outreach note for this reading are not written yet.</p>')
+    return (f'<li class="rrow{unique}" data-n="{n}"><button type="button" class="rhead" aria-expanded="false" aria-controls="{rid}">'
+            f'<span class="ncls n{n}">N{n}</span><span class="rtitle">{E(r["title"])}</span><span class="rchips">{chips}</span></button>'
+            f'<div class="rbody" id="{rid}" hidden>{"".join(parts)}</div></li>')
 
-# ---------- scoreboard ----------
-rc = Counter(x["kind"] for x in results)
-n_handed = rc.get("contribution", 0)
-n_corr = rc.get("correction", 0) + rc.get("catch", 0)
-n_neg = rc.get("negative", 0)
-n_data = rc.get("dataset", 0)
+
+reading_rows = "".join(reading_row(r, i) for i, r in enumerate(classed))
+legend = "".join(f'<button type="button" class="lg" data-n="{i}" aria-pressed="false"><span class="ncls n{i}">{code}</span><span>{name}</span><span class="num">{counts.get(i, 0)}</span></button>'
+                 for i, (code, name) in reversed(list(enumerate(LADDER))))
+others = [r for r in results if r not in classed]
+KIND = {"contribution": "handed on", "correction": "correction", "catch": "caught before spending", "negative": "negative with a control",
+        "dataset": "dataset or tool", "reading": "reading", "recovery": "recovery", "cryptanalysis": "cryptanalysis", "solve": "solve"}
+other_rows = "".join(f'<li><span class="chip k">{E(KIND.get(r["kind"], r["kind"]))}</span> <a href="{E(r["link"])}">{E(short(r["title"], 110))}</a> <span class="muted small">{E(r["date"])}</span></li>' for r in others)
+
+# ---------------------------------------------------------------- your desk
+
+ready = [x for x in drafts if x["kind"] == "ready"]
+drafted = [x for x in drafts if x["kind"] == "drafted"]
+you_targets = [t for t in targets_all if t.get("state") == "you"]
+
+
+def desk_item(x):
+    uid = f"desk-{slug(x['slug'])}"
+    waiting = x["kind"] != "ready"
+    return (f'<li class="task{" waiting" if waiting else ""}" data-row="{E(x["slug"])}" id="ask-{E(x["slug"])}">'
+            f'<input type="checkbox" id="tick-{E(x["slug"])}" aria-label="done"{" disabled" if waiting else ""}>'
+            f'<div><div class="tsubj">{E(x["subject"])}</div><div class="tto">To: {E(x["to"])}</div>'
+            + (f'<div class="tmeta warn">{E(x["status"])}</div>' if waiting else (f'<div class="tmeta ask-meta">{E(x["status"])}</div>'))
+            + copy_block(uid, x["subject"], x["text"]) + '</div></li>')
+
+
+desk_ready = "".join(desk_item(x) for x in ready) or '<li class="muted">nothing waiting on you right now</li>'
+desk_waiting = "".join(desk_item(x) for x in drafted)
+desk_targets = "".join(f'<li class="task"><input type="checkbox" disabled><div><div class="tsubj">{E(t["name"])} <span class="mono muted">{E(t.get("ref", ""))}</span></div><div class="tto">{E(t.get("next", ""))}</div></div></li>' for t in you_targets)
+asks_rows = "".join(f'<li><span class="mono muted">row {a["row"]}</span> {E(short(a["what"], 140))} <span class="muted small">· {E(a["status"][:70])}</span></li>' for a in asks)
+
+# ---------------------------------------------------------------- the machine
+
 live_workers = sum(1 for w in workers_all if w["state"] == "running") + sum(int(l.get("live", 0)) for l in lanes)
-n_you = sum(1 for t in targets_all if t["state"] == "you")
-n_asks_you = sum(1 for a in asks if "owner" in a["who"].lower() or "you" in a["who"].lower())
-headline = d.get("headline") or (
-    f"{n_unique} unique solve{'s' if n_unique != 1 else ''} at N3 or better after two audits, {n_climbing} more reading{'s' if n_climbing != 1 else ''} on the ladder, "
-    f"{n_handed} finding{'s' if n_handed != 1 else ''} handed on, {n_corr} corrections and catches. {live_workers} workers live."
-)
-
-# ---------- your card ----------
-def card_li(m):
-    drafted = m["status"] != "ready"
-    licls = ' class="drafted"' if drafted else ""
-    dis = " disabled" if drafted else ""
-    return (f'<li data-row="{E(m["slug"])}" id="ask-{E(m["slug"])}"{licls}><input type="checkbox" aria-labelledby="ask-what-{E(m["slug"])}"{dis}><div>'
-            + (f'<div class="ask-meta warn">{E(m["status"])}</div>' if drafted else "")
-            + f'<div class="ask-what" id="ask-what-{E(m["slug"])}"><span class="muted">Subject:</span> {E(m["subject"])}</div>'
-            f'<div class="ask-action"><b>To:</b> {E(m["to"])}</div>'
-            + (f'<div class="ask-meta"><span class="ok">&#10003; checked</span> {E(m["checked"])}</div>' if m["checked"] else "")
-            + f'<details><summary>Text to send</summary><pre class="mail">Subject: {E(m["subject"])}{NL}{NL}{E(m["text"])}</pre><button type="button" class="copy" data-for="mail-{E(m["slug"])}">Copy subject and text</button><textarea id="mail-{E(m["slug"])}" hidden>Subject: {E(m["subject"])}{NL}{NL}{E(m["text"])}</textarea></details>'
-            f'</div></li>')
-card_items = "".join(card_li(m) for m in emails)
-jstor_line = (f'<b>{jq}</b> JSTOR quer{"y" if jq == 1 else "ies"} waiting for your runner' + (f', {jdone} answered' if jdone else '') +
-              ' (<a href="' + REPO + 'JSTOR-QUEUE.tsv">JSTOR-QUEUE.tsv</a>, runner brief in <a href="' + REPO + 'tools/jstor_runner_brief.md">tools/jstor_runner_brief.md</a>).') if jq or jdone else ''
-other_asks = [a for a in asks if not any(k in a["what"].lower() for k in ("history purge", "decode login"))]
-asks_items = "".join(f'<li><span class="mono muted">row {a["row"]}</span> {E(short(a["what"], 110))} <span class="muted">· {E(a["status"][:60])}</span></li>' for a in other_asks)
-
-# ---------- funnel ----------
-stage_counts = Counter(t["stage"] for t in targets_all)
+lane_rows = "".join(f'<li><div class="lname">{E(l["name"])} <span class="num">{int(l.get("live", 0))} live</span></div><div class="lfocus">{E(l.get("focus", ""))}</div></li>' for l in lanes)
+stage_counts = Counter(int(t["stage"]) for t in targets_all)
 maxc = max(stage_counts.values()) if stage_counts else 1
-funnel = "".join(
-    f'<div class="f-row"><div class="f-lab"><span class="k-num">{i+1}</span>{E(s)}</div><div class="f-bar"><div class="f-fill" style="width:{int(100*stage_counts.get(i+1,0)/maxc)}%"></div></div><div class="f-n num">{stage_counts.get(i+1,0)}</div></div>'
-    for i, s in enumerate(stages)
-)
-holders = Counter(t["holder"] for t in targets_all)
-holder_line = ", ".join(f"{v} with {('you' if k == 'You' else k.lower())}" for k, v in holders.most_common())
+funnel = "".join(f'<div class="frow"><div class="flab"><span class="mono muted">{i+1}</span> {E(s)}</div><div class="fbar"><div class="ffill" style="width:{int(100*stage_counts.get(i+1,0)/maxc)}%"></div></div><div class="fn num">{stage_counts.get(i+1,0)}</div></div>' for i, s in enumerate(stages))
+targets_sorted = sorted(targets_all, key=lambda t: (-int(t["stage"]), t["name"]))
+target_rows = "".join(f'<tr><td><a href="{E(REPO + t["folder"])}">{E(t["name"])}</a><div class="muted small mono">{E(t.get("ref", ""))}</div></td><td class="num">{int(t["stage"])}</td><td>{E(stages[int(t["stage"])-1])}</td><td>{E(t.get("holder", ""))}</td><td>{E(short(t.get("next", ""), 120))}</td></tr>' for t in targets_sorted)
+worker_rows = "".join(f'<li><span class="dot {"on" if w["state"] == "running" else "off"}"></span><span>{E(w["title"])}</span><span class="muted small">{E(w["state"])}</span></li>' for w in workers_all if w["state"] == "running") or '<li class="muted">no parent workers running</li>'
+log_rows = "".join(f'<li><span class="when mono muted">{E(x["when"])}</span><span>{E(x["what"])}</span></li>' for x in d.get("log", [])[:12])
 
-# ---------- lanes ----------
-lane_cards = "".join(
-    f'<div class="lane"><div class="lane-name">{E(l["name"])}</div><div class="lane-live"><span class="num">{E(str(l.get("live", "")))}</span> live</div><div class="lane-focus muted">{E(l.get("focus", ""))}</div></div>'
-    for l in lanes
-)
+# ---------------------------------------------------------------- page
 
-# ---------- results by kind ----------
-KIND = {"solve": ("Unique solves", "k-solve"), "reading": ("Readings with a class", "k-reading"), "contribution": ("Handed on", "k-contrib"),
-        "correction": ("Corrections", "k-corr"), "catch": ("Caught before spending", "k-catch"), "negative": ("Negatives with a control", "k-neg"), "dataset": ("Datasets and tools", "k-data")}
-def result_li(x):
-    return (f'<li><span class="rk {KIND[x["kind"]][1]}">{E(KIND[x["kind"]][0].rstrip("s") if x["kind"] in ("solve","correction","dataset") else KIND[x["kind"]][0])}</span>'
-            f'<div><div class="r-title">{E(x["title"])} <span class="muted">{E(x["grade"])}</span>{so_chip(x)}</div><div class="r-line">{E(x["line"])}</div>'
-            f'<div class="r-meta"><span class="mono muted">{E(x["date"])}</span> · <a href="{E(x["link"])}">{E(x["link"].replace(REPO, ""))}</a></div></div></li>')
-result_groups = ""
-for k in ("solve", "reading", "contribution", "correction", "catch", "negative", "dataset"):
-    xs = [x for x in results if x["kind"] == k]
-    if not xs: continue
-    opened = " open" if k in ("solve", "reading", "contribution") else ""
-    result_groups += f'<details class="rg"{opened}><summary><span class="rk {KIND[k][1]}">{E(KIND[k][0])}</span> <span class="num">{len(xs)}</span></summary><ul class="results">{"".join(result_li(x) for x in xs)}</ul></details>'
+CSS = """
+:root{
+  --ground:#F6F5F1; --surface:#FFFFFF; --ink:#1F2328; --muted:#6A7178; --line:#DCDFE3; --accent:#2E6F6A; --accent-soft:#E3EFEE;
+  --good:#2F7D4F; --good-soft:#E4F1E8; --warn:#B4741A; --warn-soft:#F7ECD9; --focus:#2E6F6A;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --ground:#15181C; --surface:#1C2127; --ink:#E6E8EB; --muted:#98A0A8; --line:#2C333B; --accent:#5FB3AB; --accent-soft:#1F3634;
+  --good:#6ABF85; --good-soft:#1E3327; --warn:#D9A24A; --warn-soft:#3A2E17; --focus:#5FB3AB; color-scheme:dark; } }
+:root[data-theme="dark"]{
+  --ground:#15181C; --surface:#1C2127; --ink:#E6E8EB; --muted:#98A0A8; --line:#2C333B; --accent:#5FB3AB; --accent-soft:#1F3634;
+  --good:#6ABF85; --good-soft:#1E3327; --warn:#D9A24A; --warn-soft:#3A2E17; --focus:#5FB3AB; color-scheme:dark; }
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:"Public Sans","Segoe UI",system-ui,sans-serif;font-size:16px;line-height:1.5;padding-block:20px 60px;padding-inline:clamp(16px,4vw,40px)}
+.wrap{max-width:960px;margin-inline:auto;min-width:0}
+h1,h2,h3,h4{font-family:"Literata",Georgia,serif;font-weight:500;text-wrap:balance;margin:0}
+h1{font-size:1.9rem;line-height:1.15} h2{font-size:1.35rem;margin-bottom:10px} h3{font-size:1.05rem;margin:22px 0 8px} h4{font-size:0.95rem;margin-bottom:4px}
+h5{font-size:0.9rem;margin:10px 0 2px;font-family:inherit;font-weight:600}
+p{margin:0 0 8px} a{color:var(--accent);text-underline-offset:2px}
+.mono{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:0.85em} .muted{color:var(--muted)} .small{font-size:0.85rem}
+.num{font-variant-numeric:tabular-nums}
+header{display:grid;gap:8px;margin-bottom:14px}
+.headline{font-size:1.02rem;max-width:68ch}
+.strip{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:0.85rem;color:var(--muted);align-items:baseline}
+.strip b{color:var(--ink);font-weight:600}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ground);display:flex;gap:4px;border-bottom:1px solid var(--line);margin:8px 0 18px;padding-top:6px}
+nav.tabs button{appearance:none;background:none;border:0;border-bottom:2px solid transparent;color:var(--muted);font:inherit;font-weight:600;padding:8px 12px;cursor:pointer;margin-bottom:-1px}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+nav.tabs button:focus-visible,.rhead:focus-visible,.copy:focus-visible,.lg:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+section[hidden]{display:none}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 14px}
+.lg{appearance:none;font:inherit;font-size:0.82rem;display:inline-flex;gap:6px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:4px 8px;color:var(--ink);cursor:pointer}
+.lg[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.lg .num{color:var(--muted)}
+.ncls{font-family:"JetBrains Mono",ui-monospace,monospace;font-weight:600;font-size:0.8rem;padding:1px 6px;border-radius:3px;background:var(--line);color:var(--ink)}
+.ncls.n4,.ncls.n5{background:var(--good-soft);color:var(--good)} .ncls.n3{background:var(--accent-soft);color:var(--accent)}
+.readings{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.rrow{border-bottom:1px solid var(--line)}
+.rrow.unique .rtitle{font-weight:600}
+.rhead{appearance:none;width:100%;background:none;border:0;color:inherit;font:inherit;text-align:left;display:grid;grid-template-columns:44px minmax(0,1fr);gap:6px 12px;align-items:start;padding:12px 4px;cursor:pointer}
+.rhead:hover{background:var(--surface)}
+.rtitle{text-wrap:pretty} .rchips{grid-column:2;display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-block;font-size:0.74rem;font-weight:600;padding:2px 7px;border-radius:3px;background:var(--line);color:var(--ink);letter-spacing:0.01em}
+.chip.r-sub{background:var(--good-soft);color:var(--good)} .chip.r-conf{background:var(--accent-soft);color:var(--accent)} .chip.r-form,.chip.c-aud{background:transparent;border:1px solid var(--line);color:var(--muted)}
+.chip.so-queued{color:var(--muted);border:1px dashed var(--line);background:transparent} .chip.so-posted{background:var(--warn-soft);color:var(--warn)} .chip.so-checked{background:var(--good-soft);color:var(--good)}
+.chip.out-ready{background:var(--good);color:#fff} .chip.out-drafted{background:var(--warn-soft);color:var(--warn)} .chip.k{background:var(--accent-soft);color:var(--accent)}
+.rbody{padding:4px 4px 18px 56px;display:grid;gap:14px;font-size:0.95rem}
+@media (max-width:600px){.rbody{padding-left:4px}}
+.dz p{max-width:70ch} .memo p{max-width:70ch} .rating{font-weight:600} .rating.r-sub{color:var(--good)} .rating.r-conf{color:var(--accent)} .rating.r-form{color:var(--muted)}
+.links a{margin-right:12px}
+details.txt{margin-top:6px} details.txt summary{cursor:pointer;color:var(--accent);font-weight:600}
+.mail{white-space:pre-wrap;overflow-wrap:anywhere;font-family:inherit;font-size:0.9rem;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:12px 14px;margin:8px 0;max-height:420px;overflow:auto}
+.copy{appearance:none;font:inherit;font-size:0.85rem;font-weight:600;background:var(--accent);color:#fff;border:0;border-radius:4px;padding:7px 12px;cursor:pointer}
+.others{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:0.92rem}
+.tasks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.task{display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.task.waiting{border-style:dashed} .task.done{opacity:0.55} .task.done .tsubj{text-decoration:line-through}
+.task input{width:20px;height:20px;margin-top:3px;accent-color:var(--good);cursor:pointer}
+.tsubj{font-weight:600} .tto{font-size:0.9rem} .tmeta{font-size:0.82rem;color:var(--muted);margin-top:2px} .warn{color:var(--warn)}
+.asks{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:4px;font-size:0.88rem}
+.lanes{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.lanes li{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px} .lname{font-weight:600;display:flex;justify-content:space-between;gap:10px} .lfocus{font-size:0.9rem;margin-top:2px}
+.funnel{display:grid;gap:4px;margin-top:8px}
+.frow{display:grid;grid-template-columns:220px minmax(0,1fr) 36px;gap:10px;align-items:center;font-size:0.9rem}
+@media (max-width:600px){.frow{grid-template-columns:150px minmax(0,1fr) 30px}}
+.fbar{height:10px;background:var(--line);border-radius:3px;overflow:hidden} .ffill{height:100%;background:var(--accent)}
+.tablewrap{overflow-x:auto;margin-top:8px} table{border-collapse:collapse;width:100%;font-size:0.9rem;min-width:640px}
+th,td{text-align:left;vertical-align:top;padding:8px 8px;border-bottom:1px solid var(--line)} th{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted)}
+.workers,.log{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:0.92rem}
+.workers li{display:grid;grid-template-columns:10px minmax(0,1fr) auto;gap:10px;align-items:baseline}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block} .dot.on{background:var(--good)} .dot.off{background:var(--line)}
+.log li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px} .when{white-space:nowrap}
+.note{font-size:0.85rem;color:var(--muted);margin-top:10px}
+@media (prefers-reduced-motion:no-preference){.ffill{transition:width .3s}}
+"""
 
-# ---------- targets ----------
-def chip(state):
-    label = {"waiting": "Waiting on archive", "active": "Worker on it", "queued": "Queued", "blocked": "Blocked", "you": "Needs you", "solved": "Solved"}[state]
-    return f'<span class="chip chip-{state}">{label}</span>'
-KINDT = {"recovery": "Recovery", "cryptanalysis": "Cryptanalysis", "contribution": "Contribution", "undecided": "Kind undecided"}
-def kind_chip(t):
-    k = t.get("kind", "undecided")
-    return f'<span class="chip chip-kind-{k}">{KINDT[k]}</span>'
-def target_row(t):
-    segs = "".join(f'<span class="seg {"on" if i < t["stage"] else ""} {"cur" if i == t["stage"] - 1 else ""}" title="{E(s)}"></span>' for i, s in enumerate(stages))
-    folder = f'<a class="mono" href="{REPO}{E(t["folder"])}">{E(t["folder"])}</a>' if t["folder"] else ''
-    return f'''
-    <article class="target state-{t["state"]}">
-      <div class="t-head"><h3>{E(t["name"])} <span class="year">{E(t["year"])}</span></h3><span class="chips">{kind_chip(t)} {chip(t["state"])}</span></div>
-      <div class="t-ref mono">{E(t["ref"])}</div>
-      <div class="segs">{segs}</div>
-      <div class="stage-label"><b>Stage {t["stage"]} of {NS}</b> {E(stages[t["stage"]-1])} <span class="muted">· held by {E(t["holder"])} · waiting on {E(t["wait"]["on"])}</span></div>
-      {('<p class="result"><b>Result so far:</b> ' + E(t["result"]) + '</p>') if t.get("result") else ''}
-      <p class="next"><b>Next:</b> {E(t["next"])}</p>
-      <details><summary>Note and unblock</summary><p class="note muted">{E(t["note"])}</p><p class="note muted"><b>What unblocks it:</b> {E(t["wait"]["unblock"])} · since {E(t["wait"]["since"])} · expected {E(t["wait"]["expected"])} {folder}</p></details>
-    </article>'''
-groups = [("Live now", [t for t in targets_all if t["state"] == "active"]),
-          ("Needs you", [t for t in targets_all if t["state"] == "you"]),
-          ("Waiting on an archive", [t for t in targets_all if t["state"] == "waiting"]),
-          ("Queued", [t for t in targets_all if t["state"] == "queued"]),
-          ("Blocked or closed", [t for t in targets_all if t["state"] in ("blocked", "solved")])]
-target_groups = "".join(
-    f'<details class="tg"{" open" if name in ("Live now", "Needs you") else ""}><summary>{E(name)} <span class="num">{len(ts)}</span></summary><div class="targets">{"".join(target_row(t) for t in ts)}</div></details>'
-    for name, ts in groups if ts
-)
-
-workers = "".join(
-    f'<li class="w-{E(w["state"].split(",")[0].split(" ")[0])}"><span class="dot"></span><div><div class="w-title">{E(w["title"])}</div><div class="muted">{E(w["job"])}</div></div><span class="w-state">{E(w["state"])}</span></li>'
-    for w in workers_all
-)
-queue = "".join(
-    f'<tr><td class="num">{q["rank"]}</td><td>{E(q["name"])}</td><td class="num">{E(q["year"])}</td><td class="num"><b>{q["total"]}</b><span class="muted">/39</span></td><td>{E(q["next"])}</td></tr>'
-    for q in d["queue"]
-)
-log = "".join(f'<li><span class="mono muted when">{E(l["when"])}</span><span>{E(l["what"])}</span></li>' for l in d["log"])
-
-page = f'''<title>Cipher Lab Board</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
-<style>
-:root {{
-  --ground:#F4F5F7; --surface:#FFFFFF; --ink:#1B2230; --muted:#5F6978; --line:#D9DEE6; --accent:#2F4BC7; --accent-soft:#E4E9FA;
-  --good:#1F8A4C; --good-soft:#E3F3E8; --warn:#A8690F; --warn-soft:#FBF0DC; --bad:#B42318; --bad-soft:#FCE4E1; --info:#2F4BC7; --info-soft:#E4E9FA; --idle:#6B7482; --idle-soft:#E9ECF0;
-}}
-@media (prefers-color-scheme: dark) {{ :root:not([data-theme="light"]) {{
-  --ground:#11151C; --surface:#1A2029; --ink:#E7EAF0; --muted:#98A2B1; --line:#2A3240; --accent:#8EA2F5; --accent-soft:#232C48;
-  --good:#5CC98A; --good-soft:#173324; --warn:#E0A64A; --warn-soft:#3A2B10; --bad:#F08578; --bad-soft:#3F1B18; --info:#8EA2F5; --info-soft:#232C48; --idle:#98A2B1; --idle-soft:#242B36;
-}} }}
-:root[data-theme="dark"] {{
-  --ground:#11151C; --surface:#1A2029; --ink:#E7EAF0; --muted:#98A2B1; --line:#2A3240; --accent:#8EA2F5; --accent-soft:#232C48;
-  --good:#5CC98A; --good-soft:#173324; --warn:#E0A64A; --warn-soft:#3A2B10; --bad:#F08578; --bad-soft:#3F1B18; --info:#8EA2F5; --info-soft:#232C48; --idle:#98A2B1; --idle-soft:#242B36;
-}}
-body {{ background:var(--ground); color:var(--ink); font-family:"Source Sans 3", "Segoe UI", system-ui, sans-serif; font-size:16px; line-height:1.45; padding-block:24px 48px; padding-inline:clamp(16px, 4vw, 40px); }}
-.wrap {{ max-width:1120px; margin-inline:auto; display:grid; gap:26px; }}
-h1,h2,h3 {{ font-family:"Newsreader", Georgia, serif; font-weight:600; margin:0; text-wrap:balance; }}
-h1 {{ font-size:2rem; }} h2 {{ font-size:1.35rem; margin-bottom:10px; }} h3 {{ font-size:1.15rem; }}
-.mono {{ font-family:"JetBrains Mono", ui-monospace, Menlo, monospace; font-size:0.85em; }}
-.muted {{ color:var(--muted); }} .num {{ font-variant-numeric:tabular-nums; white-space:nowrap; }}
-a {{ color:var(--accent); text-decoration:none; }} a:hover, a:focus-visible {{ text-decoration:underline; outline:none; }}
-header {{ display:grid; gap:6px; border-bottom:1px solid var(--line); padding-bottom:12px; }}
-header .top {{ display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px 24px; }}
-.headline {{ font-family:"Newsreader", Georgia, serif; font-size:1.2rem; }}
-.panel {{ background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:16px 18px; }}
-.how {{ font-size:0.92rem; margin:0 0 10px; }}
-/* ladder */
-.ladder {{ display:grid; gap:10px; }}
-@media (max-width:760px) {{ .rung {{ grid-template-columns:minmax(0,1fr); }} }}
-.rung, .rung-item, .tile, .card li, .lanes > *, .results li > * {{ min-width:0; }} .rung-item a, .r-title, .r-line, .rung-meta {{ overflow-wrap:anywhere; }}
-.rung {{ border:1px solid var(--line); border-radius:6px; padding:12px 14px; background:var(--ground); display:grid; grid-template-columns:190px minmax(0,1fr); gap:14px; align-items:start; }}
-.rung-count {{ font-size:0.78rem; margin-top:6px; }}
-.dossier {{ margin-top:6px; font-size:0.86rem; }} .dossier summary {{ cursor:pointer; color:var(--accent); font-weight:600; }} .dz {{ margin-top:8px; }} .dz-text {{ white-space:pre-wrap; margin-top:4px; }} .rating {{ font-weight:600; color:var(--good); }}
-.rung.hi {{ background:var(--good-soft); border-color:var(--good); }}
-.rung-head {{ display:grid; gap:2px; }} .rung-code {{ font-family:"JetBrains Mono", monospace; font-weight:600; font-size:1.05rem; }} .rung-name {{ font-weight:600; }}
-.rung-desc {{ font-size:0.8rem; line-height:1.3; }}
-.rung-list {{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:8px; }}
-.rung-item {{ background:var(--surface); border:1px solid var(--line); border-radius:4px; padding:6px 8px; font-size:0.9rem; display:grid; gap:2px; }}
-.rung-item.unique {{ border-color:var(--good); box-shadow:0 0 0 2px var(--good-soft); }}
-.xc-text {{ white-space:pre-wrap; overflow-wrap:anywhere; font-size:0.72rem; max-height:220px; overflow:auto; }}
-.rung-meta {{ font-size:0.78rem; color:var(--muted); }} .empty {{ font-size:0.85rem; }}
-/* tiles */
-.tiles {{ display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; }} .wrap > * {{ min-width:0; }}
-.tile {{ background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:14px 16px; }}
-.tile .n {{ font-family:"Newsreader", Georgia, serif; font-size:2.2rem; line-height:1; font-variant-numeric:tabular-nums; }}
-.tile .l {{ color:var(--muted); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.06em; margin-top:6px; }} .tile .sub {{ font-size:0.85rem; margin-top:4px; }}
-.tile.good .n {{ color:var(--good); }}
-/* card */
-.card {{ list-style:none; margin:0; padding:0; display:grid; gap:8px; }}
-.card li {{ display:grid; grid-template-columns:22px 1fr; gap:12px; align-items:start; padding:10px 12px; border:1px solid var(--line); border-radius:6px; background:var(--surface); }}
-.card li.done {{ opacity:0.55; }} .card li.drafted {{ opacity:0.8; border-style:dashed; }} .warn {{ color:#b26a00; font-weight:600; }} .card li.done .ask-what {{ text-decoration:line-through; }}
-.card input[type=checkbox] {{ width:20px; height:20px; margin-top:2px; accent-color:var(--good); cursor:pointer; }}
-.ask-what {{ font-weight:600; }} .ask-action {{ font-size:0.92rem; margin-top:2px; }} .ask-meta {{ font-size:0.8rem; color:var(--muted); margin-top:4px; }}
-.card-note {{ font-size:0.85rem; color:var(--muted); margin:8px 0 0; }}
-.ok {{ color:var(--good); font-weight:600; }} .mail {{ white-space:pre-wrap; font-family:inherit; font-size:0.92rem; background:var(--ground); padding:10px 12px; border-radius:4px; margin:8px 0; }}
-details summary {{ cursor:pointer; color:var(--accent); font-size:0.92rem; margin-top:4px; }} .copy {{ font:inherit; font-size:0.85rem; padding:4px 10px; border:1px solid var(--line); border-radius:4px; background:var(--surface); color:var(--ink); cursor:pointer; }}
-.asks {{ list-style:none; margin:10px 0 0; padding:0; display:grid; gap:4px; font-size:0.9rem; }}
-/* funnel + lanes */
-.two {{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:24px; }} @media (max-width:760px) {{ .two {{ grid-template-columns:1fr; }} }}
-.f-row {{ display:grid; grid-template-columns:200px 1fr 36px; gap:10px; align-items:center; font-size:0.9rem; padding:3px 0; }}
-.f-bar {{ height:10px; background:var(--idle-soft); border-radius:3px; overflow:hidden; }} .f-fill {{ height:100%; background:var(--accent); }}
-.k-num {{ display:inline-block; width:1.6em; color:var(--muted); font-variant-numeric:tabular-nums; }}
-.lanes {{ display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:10px; }}
-.lane {{ border:1px solid var(--line); border-radius:6px; padding:10px 12px; background:var(--ground); }} .lane-name {{ font-weight:600; }} .lane-live {{ font-size:1.4rem; font-family:"Newsreader", Georgia, serif; }} .lane-focus {{ font-size:0.85rem; }}
-/* results */
-.rg summary {{ font-size:1rem; color:var(--ink); margin:6px 0; }}
-.results {{ list-style:none; margin:0; padding:0; display:grid; gap:10px; }}
-.results li {{ display:grid; grid-template-columns:150px minmax(0,1fr); gap:12px; align-items:start; padding:10px 0; border-top:1px solid var(--line); }}
-.rk {{ font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; padding:3px 8px; border-radius:999px; white-space:nowrap; justify-self:start; margin-top:2px; }}
-.k-solve {{ background:var(--good-soft); color:var(--good); }} .k-reading {{ background:var(--info-soft); color:var(--info); }} .k-contrib {{ background:var(--warn-soft); color:var(--warn); }} .k-corr {{ background:var(--accent-soft); color:var(--accent); }} .k-catch {{ background:var(--idle-soft); color:var(--idle); }} .k-neg {{ background:var(--idle-soft); color:var(--idle); }} .k-data {{ background:var(--idle-soft); color:var(--idle); }}
-.so {{ display:inline-block; font-size:0.72rem; font-weight:600; padding:2px 7px; border-radius:6px; margin:2px 0 0 0; vertical-align:middle; white-space:normal; line-height:1.3; border:1px solid var(--line); }}
-.so-q {{ color:#7a7a7a; }} .so-p {{ color:#1d5fa8; border-color:#1d5fa8; }} .so-c {{ color:#1b7a3d; border-color:#1b7a3d; }}
-.r-title {{ font-weight:600; }} .r-line {{ font-size:0.92rem; margin-top:2px; }} .r-meta {{ font-size:0.8rem; margin-top:4px; }}
-@media (max-width:600px) {{ .results li {{ grid-template-columns:1fr; gap:4px; }} }}
-/* targets */
-.tg summary {{ font-size:1.1rem; color:var(--ink); margin:8px 0; font-family:"Newsreader", Georgia, serif; }}
-.targets {{ display:grid; gap:12px; margin:8px 0 16px; }}
-.target {{ background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--idle); border-radius:6px; padding:14px 16px; display:grid; gap:6px; }}
-.target.state-waiting {{ border-left-color:var(--warn); }} .target.state-active {{ border-left-color:var(--info); }} .target.state-blocked {{ border-left-color:var(--bad); }} .target.state-solved {{ border-left-color:var(--good); }} .target.state-you {{ border-left-color:var(--accent); }}
-.t-head {{ display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px; }}
-.year {{ color:var(--muted); font-weight:500; font-size:0.9em; margin-left:6px; }}
-.chip {{ font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; padding:3px 9px; border-radius:999px; white-space:nowrap; }}
-.chips {{ display:flex; gap:6px; flex-wrap:wrap; }}
-.chip-kind-recovery {{ background:var(--good-soft); color:var(--good); }} .chip-kind-cryptanalysis {{ background:var(--accent-soft); color:var(--accent); }} .chip-kind-contribution {{ background:var(--warn-soft); color:var(--warn); }} .chip-kind-undecided {{ background:var(--idle-soft); color:var(--idle); }}
-.chip-waiting {{ background:var(--warn-soft); color:var(--warn); }} .chip-active {{ background:var(--info-soft); color:var(--info); }} .chip-queued {{ background:var(--idle-soft); color:var(--idle); }} .chip-blocked {{ background:var(--bad-soft); color:var(--bad); }} .chip-you {{ background:var(--accent-soft); color:var(--accent); }} .chip-solved {{ background:var(--good-soft); color:var(--good); }}
-.result {{ margin:0; padding:8px 12px; border-left:3px solid var(--good); background:var(--good-soft); border-radius:3px; }}
-.segs {{ display:grid; grid-template-columns:repeat({NS}, 1fr); gap:3px; margin-top:4px; }}
-.seg {{ height:8px; border-radius:2px; background:var(--idle-soft); }} .seg.on {{ background:var(--accent); }} .seg.cur {{ outline:2px solid var(--accent); outline-offset:1px; }}
-.state-waiting .seg.on {{ background:var(--warn); }} .state-waiting .seg.cur {{ outline-color:var(--warn); }} .state-blocked .seg.on {{ background:var(--bad); }} .state-blocked .seg.cur {{ outline-color:var(--bad); }} .state-solved .seg.on {{ background:var(--good); }}
-.stage-label {{ font-size:0.9rem; }} .next {{ margin:0; }} .note {{ margin:4px 0 0; font-size:0.9rem; }}
-/* workers, log, queue */
-.workers, .log {{ list-style:none; margin:0; padding:0; display:grid; gap:10px; }}
-.workers li {{ display:grid; grid-template-columns:10px 1fr auto; gap:10px; align-items:start; }}
-.dot {{ width:10px; height:10px; border-radius:50%; margin-top:6px; background:var(--idle); }} .w-running .dot {{ background:var(--info); }} .w-done .dot {{ background:var(--good); }}
-.w-title {{ font-weight:600; }} .w-state {{ font-size:0.78rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted); }}
-.log li {{ display:grid; grid-template-columns:110px 1fr; gap:10px; }} .when {{ white-space:nowrap; }}
-.tablewrap {{ overflow-x:auto; }} table {{ border-collapse:collapse; width:100%; font-size:0.95rem; }}
-th, td {{ text-align:left; padding:7px 10px; border-bottom:1px solid var(--line); vertical-align:top; }} th {{ color:var(--muted); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.05em; font-weight:600; }}
-@media (prefers-reduced-motion: no-preference) {{ .seg, .f-fill {{ transition:background .2s, width .3s; }} }}
-</style>
-<div class="wrap">
-  <header>
-    <div class="top"><h1>Cipher Lab Board</h1><div class="muted">Updated {E(d["updated"])}</div></div>
-    <div class="headline">{E(headline)}</div>
-  </header>
-
-  <section class="panel" id="ladder">
-    <h2>The novelty ladder</h2>
-    <p class="how muted">Every reading a separate verifier has classed, on its rung. Only a verifier moves a card, from its AUDIT.md, and only after trying to find the text in print. A unique solve is N3 or better after two audits (outlined). "Next rung needs" is what the last auditor said still stands between the reading and the rung above.</p>
-    <div class="ladder">{ladder_cols}</div>
-    {('<p class="how muted" style="margin-top:10px">Plus ' + str(n_pending) + ' target' + ('s' if n_pending != 1 else '') + ' at stage 8, read but not yet classed.</p>') if n_pending else ''}
-  </section>
-
-  <section class="tiles" aria-label="Scoreboard">
-    <div class="tile good"><div class="n">{n_unique}</div><div class="l">Unique solves</div><div class="sub muted">N3 or better, two audits</div></div>
-    <div class="tile"><div class="n">{n_climbing}</div><div class="l">Climbing the ladder</div><div class="sub muted">readings with a class below the bar</div></div>
-    <div class="tile"><div class="n">{n_handed}</div><div class="l">Handed on</div><div class="sub muted">to a list keeper, a library or an archive</div></div>
-    <div class="tile"><div class="n">{n_corr}</div><div class="l">Corrections and catches</div><div class="sub muted">catalogue fixes; solved items caught before money was spent</div></div>
-    <div class="tile"><div class="n">{n_neg + n_data}</div><div class="l">Negatives and datasets</div><div class="sub muted">controlled negatives, tools, sweeps</div></div>
-    <div class="tile"><div class="n">{live_workers}</div><div class="l">Workers live</div><div class="sub muted">{len(lanes)} lanes</div></div>
-    <div class="tile"><div class="n">{n_you + len(emails)}</div><div class="l">On your card</div><div class="sub muted">{len(emails)} to tick, {n_you} targets need a decision</div></div>
-  </section>
-
-  <section class="panel" id="your-card">
-    <h2>Your card</h2>
-    <ul class="card">{card_items or '<li class="muted">nothing to send or click right now</li>'}</ul>
-    <p class="card-note">Each item was checked against the gates (class assigned, rule-10 wording, no personal data, links public). Tick it once done; the tick is saved on this page and the orchestrator logs the date. <span id="card-status"></span></p>
-    {('<p class="card-note">' + jstor_line + '</p>') if jstor_line else ''}
-    {('<details><summary>Other open asks, no rush (' + str(len(other_asks)) + ')</summary><ul class="asks">' + asks_items + '</ul></details>') if other_asks else ''}
-  </section>
-
-  <div class="two">
-    <section class="panel">
-      <h2>Pipeline</h2>
-      <p class="how muted">Targets by stage. {E(holder_line)}.</p>
-      {funnel}
-    </section>
-    <section class="panel">
-      <h2>Lanes</h2>
-      <p class="how muted">Each lane owns its hosts and its targets; readings flow to the verification lane.</p>
-      <div class="lanes">{lane_cards or '<div class="muted">no lanes recorded</div>'}</div>
-    </section>
-  </div>
-
-  <section class="panel" id="results">
-    <h2>Results so far</h2>
-    <p class="how muted">Every kind the README counts. A reading below N3 is still a checked text; a correction or a catch is a contribution to whoever keeps the catalogue; a negative with a matched control and a dataset handed on count too.</p>
-    {result_groups}
-  </section>
-
-  <section>
-    <h2>Targets</h2>
-    {target_groups}
-  </section>
-
-  <div class="two">
-    <section class="panel">
-      <h2>Change log</h2>
-      <ul class="log">{log}</ul>
-    </section>
-    <section class="panel">
-      <h2>Workers</h2>
-      <ul class="workers">{workers}</ul>
-      <p class="how muted">Sessions started for one job each. They push to the repo, report, and stop.</p>
-    </section>
-  </div>
-
-  <section class="panel">
-    <h2>Queue, top of the ranking</h2>
-    <div class="tablewrap"><table><thead><tr><th>Rank</th><th>Target</th><th>Year</th><th>Score</th><th>Next step</th></tr></thead><tbody>{queue}</tbody></table></div>
-    <p class="how muted">Score out of 39. Full list with rationale in <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/QUEUE.md">QUEUE.md</a>.</p>
-  </section>
-</div>
-<script>
-(function () {{
-  var list = document.querySelector('.card'); var status = document.getElementById('card-status');
-  if (!list) return;
-  var items = Array.prototype.slice.call(list.querySelectorAll('li[data-row]'));
-  function paint(row, done, when) {{
+JS = """
+(function () {
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('nav.tabs button'));
+  var secs = Array.prototype.slice.call(document.querySelectorAll('section.view'));
+  function show(id) {
+    tabs.forEach(function (b) { b.setAttribute('aria-selected', b.dataset.view === id ? 'true' : 'false'); });
+    secs.forEach(function (s) { s.hidden = s.id !== id; });
+    try { localStorage.setItem('view', id); } catch (e) {}
+  }
+  tabs.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.view); history.replaceState(null, '', '#' + b.dataset.view); }); });
+  var start = 'readings';
+  try { var h = (location.hash || '').replace('#', ''); if (h && document.getElementById(h)) start = h; else { var v = localStorage.getItem('view'); if (v && document.getElementById(v)) start = v; } } catch (e) {}
+  show(start);
+  Array.prototype.forEach.call(document.querySelectorAll('.rhead'), function (b) {
+    b.addEventListener('click', function () {
+      var open = b.getAttribute('aria-expanded') === 'true';
+      b.setAttribute('aria-expanded', open ? 'false' : 'true');
+      document.getElementById(b.getAttribute('aria-controls')).hidden = open;
+    });
+  });
+  var active = null;
+  Array.prototype.forEach.call(document.querySelectorAll('.lg'), function (b) {
+    b.addEventListener('click', function () {
+      var n = b.dataset.n; active = (active === n) ? null : n;
+      Array.prototype.forEach.call(document.querySelectorAll('.lg'), function (x) { x.setAttribute('aria-pressed', x.dataset.n === active ? 'true' : 'false'); });
+      Array.prototype.forEach.call(document.querySelectorAll('.rrow'), function (r) { r.hidden = active !== null && r.dataset.n !== active; });
+    });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.copy'), function (b) {
+    b.addEventListener('click', function () {
+      var t = document.getElementById(b.dataset.for); if (!t) return;
+      var done = function () { var o = b.textContent; b.textContent = 'Copied'; setTimeout(function () { b.textContent = o; }, 1500); };
+      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(t.value).then(done, function () { t.hidden = false; t.select(); }); }
+      else { t.hidden = false; t.select(); }
+    });
+  });
+  var status = document.getElementById('tick-status');
+  var items = Array.prototype.slice.call(document.querySelectorAll('li.task[data-row]'));
+  function paint(row, done, when) {
     var li = document.getElementById('ask-' + row); if (!li) return;
-    li.querySelector('input').checked = !!done; li.classList.toggle('done', !!done);
+    var inp = li.querySelector('input'); if (inp) inp.checked = !!done; li.classList.toggle('done', !!done);
     var meta = li.querySelector('.ask-meta');
     if (done && when && meta && meta.textContent.indexOf('ticked') < 0) meta.textContent += ' · ticked ' + when;
-  }}
-  function local(row, v) {{ try {{ if (v === undefined) return JSON.parse(localStorage.getItem('ask-' + row) || 'null'); localStorage.setItem('ask-' + row, JSON.stringify(v)); }} catch (e) {{ return null; }} }}
-  items.forEach(function (li) {{ var r = li.dataset.row; var v = local(r); if (v) paint(r, v.done, v.when); }});
+  }
+  function local(row, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem('ask-' + row) || 'null'); localStorage.setItem('ask-' + row, JSON.stringify(v)); } catch (e) { return null; } }
+  items.forEach(function (li) { var r = li.dataset.row; var v = local(r); if (v) paint(r, v.done, v.when); });
   var db = null;
-  items.forEach(function (li) {{
-    li.querySelector('input').addEventListener('change', function (ev) {{
+  items.forEach(function (li) {
+    var inp = li.querySelector('input'); if (!inp || inp.disabled) return;
+    inp.addEventListener('change', function (ev) {
       var r = li.dataset.row; var done = ev.target.checked; var when = new Date().toISOString().slice(0, 10);
-      var v = {{ row: r, done: done, when: done ? when : '' }};
+      var v = { row: r, done: done, when: done ? when : '' };
       paint(r, done, v.when); local(r, v);
-      if (db) db.doc('emails/' + r).set(v).catch(function () {{ if (status) status.textContent = 'Saved on this device only.'; }});
-    }});
-  }});
-  Array.prototype.forEach.call(document.querySelectorAll('.copy'), function (b) {{ b.addEventListener('click', function () {{ var t = document.getElementById(b.dataset.for); if (t && navigator.clipboard) navigator.clipboard.writeText(t.value).then(function () {{ b.textContent = 'Copied'; }}); }}); }});
-  if (!window.claude || !window.claude.use) {{ if (status) status.textContent = 'Saved on this device only.'; return; }}
-  window.claude.use('db').then(function (ns) {{
-    if (!ns) {{ if (status) status.textContent = 'Saved on this device only.'; return; }}
+      if (db) db.doc('emails/' + r).set(v).catch(function () { if (status) status.textContent = 'Ticks are saved on this device only.'; });
+    });
+  });
+  if (!window.claude || !window.claude.use) { if (status) status.textContent = 'Ticks are saved on this device only.'; return; }
+  window.claude.use('db').then(function (ns) {
+    if (!ns) { if (status) status.textContent = 'Ticks are saved on this device only.'; return; }
     db = ns;
-    db.collection('emails').onSnapshot(function (snap) {{
-      snap.docs.forEach(function (doc) {{ if (!doc.exists) return; var v = doc.data(); paint(v.row, v.done, v.when); local(v.row, v); }});
-      if (status) status.textContent = 'Saved on this page.';
-    }}, function () {{ if (status) status.textContent = 'Saved on this device only.'; }});
-  }});
-}})();
-</script>
+    db.collection('emails').onSnapshot(function (snap) {
+      snap.docs.forEach(function (doc) { if (!doc.exists) return; var v = doc.data(); paint(v.row, v.done, v.when); local(v.row, v); });
+      if (status) status.textContent = 'Ticks are saved on this page; the orchestrator reads them.';
+    }, function () { if (status) status.textContent = 'Ticks are saved on this device only.'; });
+  });
+})();
+"""
+
+page = f'''<title>Cipher Lab Board</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>{CSS}</style>
+<div class="wrap">
+<header>
+  <h1>Cipher Lab Board</h1>
+  <p class="headline">{E(headline)}</p>
+  <div class="strip"><span>Updated <b>{E(d["updated"])}</b></span><span><b>{n_unique}</b> readings at N3 or better after two audits</span><span><b>{len(lanes)}</b> lanes, <b>{live_workers}</b> workers live</span><span><b>{len(ready)}</b> to send</span><span><b>{jq}</b> JSTOR rows queued</span></div>
+</header>
+<nav class="tabs" aria-label="Views">
+  <button type="button" data-view="readings" aria-selected="true">Readings</button>
+  <button type="button" data-view="desk" aria-selected="false">Your desk</button>
+  <button type="button" data-view="machine" aria-selected="false">The machine</button>
+</nav>
+
+<section class="view" id="readings">
+  <h2>Readings, by how far the verifier could take them</h2>
+  <p class="muted small" style="max-width:70ch">One row per reading a separate verifier has classed. N4 means the principal editions, catalogues and project pages were searched and no prior decipherment was located; it is not a claim that the letter was never read. Open a row for the passage, the rating, who to tell and the text to send.</p>
+  <div class="legend">{legend}</div>
+  <ul class="readings">{reading_rows}</ul>
+  <h3>Also this week</h3>
+  <ul class="others">{other_rows}</ul>
+</section>
+
+<section class="view" id="desk" hidden>
+  <h2>Your desk</h2>
+  <p class="muted small">Only what a cloud session cannot do: send, post, pay, decide. Tick when done; the tick is the record.</p>
+  <h3>Send now</h3>
+  <ul class="tasks">{desk_ready}</ul>
+  {('<h3>Waiting on one more step</h3><ul class="tasks">' + desk_waiting + '</ul>') if desk_waiting else ''}
+  {('<details><summary><b>' + str(len(you_targets)) + ' copy orders parked until funding</b> <span class="muted small">(each a decision and a payment; open to see them)</span></summary><ul class="tasks" style="margin-top:10px">' + desk_targets + '</ul></details>') if desk_targets else ''}
+  <p class="note" id="tick-status"></p>
+  <p class="note"><b>{jq}</b> JSTOR rows queued for the runner on your machine{(", " + str(jdone) + " answered") if jdone else ""} (<a href="{REPO}tools/jstor_runner_brief.md">runner brief</a>).</p>
+  {('<details><summary>Other open asks, no rush (' + str(len(asks)) + ')</summary><ul class="asks">' + asks_rows + '</ul></details>') if asks else ''}
+</section>
+
+<section class="view" id="machine" hidden>
+  <h2>The machine</h2>
+  <h3>Lanes</h3>
+  <ul class="lanes">{lane_rows or '<li class="muted">no lane running</li>'}</ul>
+  <h3>Pipeline, targets per stage</h3>
+  <div class="funnel">{funnel}</div>
+  <h3>Targets</h3>
+  <div class="tablewrap"><table><thead><tr><th>Target</th><th>Stage</th><th></th><th>Holder</th><th>Next</th></tr></thead><tbody>{target_rows}</tbody></table></div>
+  <h3>Parent workers</h3>
+  <ul class="workers">{worker_rows}</ul>
+  <h3>Log</h3>
+  <ul class="log">{log_rows}</ul>
+</section>
+</div>
+<script>{JS}</script>
 '''
 open("dashboard.html", "w", encoding="utf-8").write(page)
 os.makedirs("docs", exist_ok=True)
