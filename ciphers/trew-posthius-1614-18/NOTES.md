@@ -1,4 +1,4 @@
-partial
+found-solved
 
 # Two letters, Erasmus Posthius to Johann Christoph Eysenmenger — UB Erlangen, Trew Briefsammlung
 
@@ -129,6 +129,11 @@ visibly different hands**, plus a short worked specimen that mixes plain German 
 **No found-solved anywhere.** No key, plaintext, or documented attempt for either letter located in any of the
 six families searched.
 
+> **Correction (verifier V1, LANE V4, 24 Sept 2026, AUDIT.md):** this sweep missed the Ärztebriefe database
+> (www.aerztebriefe.de). Record 00001955 (Trew, E. Posthius Nr. 8, 4 Feb 1618) already transcribes the 1618 key and
+> the whole clear/cipher specimen. Record 00001880 (Nr. 2, 13 March 1614) describes the 1614 cipher lines and the key.
+> The 1614 leaf also carries an interlinear decipherment. Both items are N0; see AUDIT.md.
+
 ## Verdict
 
 **open, stage 2 verified unsolved.** Kind: **recovery** (each letter carries its own cipher-key material on
@@ -218,6 +223,11 @@ archive.org full text (be-api fts, 24 Sept 2026, 4 requests >= 3 s apart): `"nac
 `"Posthius" "Eysenmenger"` 20 items (e.g. dieregierungdesh0000reus, iteritalicum0000paul, bwb_W9-CZY-094; not opened,
 co-occurrence of names only). Not searched: Google Books, trew-letters.com transcriptions, Karrer's Posthius catalogue,
 Schmidt-Herrling 1940 text. No novelty class claimed (rule 10).
+
+**Verifier result (24 Sept 2026, AUDIT.md): both items N0.** The 1614 interlinear marks are a decipherment on the leaf
+("ich", "ihr", "nach", "tbar", "wol" legible over the matching cipher groups; crop `images/crops/1614_interlinear_gloss.jpg`).
+The 1618 specimen and key are transcribed in Ärztebriefe 00001955 (Tilmann Walter). Our readings apply the leaf keys
+reproducibly; they are not first decipherments.
 
 Suggestions (not done): verifier to read the interlinear marks on 1614 at native resolution; a Trew-project transcription
 of either letter on trew-letters.com would decide whether the reading is already printed.

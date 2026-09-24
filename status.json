@@ -1500,10 +1500,10 @@
   },
   {
    "date": "24 Sept 2026",
-   "kind": "recovery",
+   "kind": "contribution",
    "title": "Erasmus Posthius to J. C. Eysenmenger, Heidelberg, 13 March 1614 and February 1618 (UB Erlangen, Trew Briefsammlung): the cipher passages read with the keys on the leaves",
-   "grade": "109 tokens: H 96, M 13, C 0, S 0, I 0 (decode_key.py --check 0). Novelty not yet classed (LANE V4)",
-   "line": "Both keys are 12-pair reciprocal two-row tables written on the leaf (SALUTEMBCDFG/HIKNOPQRWXYZ in 1614; CONRADBEFGHI/KLMPQSTUWXYZ in 1618), not keyword-mixed alphabets. 1614 reads German: 'ich hab nit gewist das ihr mein nachtbar wolt werden bei der dihlin ...'; 1618's address-side specimen alternates clear and cipher lines ('der heis ist ein feiner man der abraham kein gelt'). Faint interlinear letters over the 1614 lines may be a contemporary decipherment: for the verifier.",
+   "grade": "109 tokens: H 96, M 13 (decode_key.py --check 0). Novelty: N0 both items (AUDIT.md)",
+   "line": "The 1618 specimen pairs each cipher line with its clear text on the leaf, and the Ärztebriefe database (aerztebriefe.de/id/00001955) already transcribes key, cipher and clear lines. The 1614 German cipher lines carry a contemporary interlinear decipherment on the leaf beside their key. Our reading applies the leaf keys and agrees with the legible gloss. No print of the 1614 plaintext was found.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/trew-posthius-1614-18"
   },
   {
