@@ -1,0 +1,60 @@
+{
+  "note": "Manifest for the fr.16089-16091 outgoing-register series (Maisse's own letters to the Court), a DIFFERENT physical unit from fr.16092/93 (the Court's letters to Maisse) that this folder is named for. Kept here because it is the same correspondence and the same worker session; see NOTES.md section 'Maisse outgoing registers (fr.16089-16091 series), 24 Sept 2026'.",
+  "series": {
+    "cote": "Français 16089-16091",
+    "ancienne_cote": "Harlay 265 (10-12)",
+    "title": "Registre des lettres et dépêches adressées par André Hurault de Maisse à la Cour et à diverses personnes, pendant son ambassade à Venise. (Novembre 1582-août 1588).",
+    "archivesetmanuscrits_parent": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc46222m (FRBNFEAD000046222)",
+    "extent": "3 volumes, in-folio, papier, reliure veau raciné"
+  },
+  "volumes": [
+    {
+      "cote": "Français 16089",
+      "ancienne_cote": "Harlay 265 (10)",
+      "label": "I Novembre 1582-décembre 1583",
+      "feuillets": 609,
+      "microfilm": "MF 33935",
+      "matrice": "R 16095",
+      "ark": "btv1b9061233b",
+      "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9061233b/manifest.json",
+      "canvas_count": 624,
+      "archivesetmanuscrits_component": "https://archivesetmanuscrits.bnf.fr eadCompId=FRBNFEAD000046222_d0e57",
+      "chiffre_flag_in_notice": false,
+      "sample": {"dir": "reg16089/", "canvases_sampled": 26, "stride_canvases": "~24", "contact_sheet": "reg16089/contact_sheet.jpg", "all_fetched": true, "verdict": "all 26 leaves clear cursive French copybook text (headers e.g. 'Lettre a Monsieur...', 'Lettre au Roy', 'Response par lettre du Roy...'); no numeral/cipher groups seen"}
+    },
+    {
+      "cote": "Français 16090",
+      "ancienne_cote": "Harlay 265 (11)",
+      "label": "II Janvier 1584-décembre 1586",
+      "feuillets": 678,
+      "microfilm": "MF 33936",
+      "matrice": "R 16096",
+      "ark": "btv1b9061232x",
+      "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9061232x/manifest.json",
+      "canvas_count": 690,
+      "archivesetmanuscrits_component": "https://archivesetmanuscrits.bnf.fr eadCompId=FRBNFEAD000046222_d0e78",
+      "chiffre_flag_in_notice": false,
+      "sample": {"dir": "reg16090/", "canvases_sampled": 25, "canvases_attempted_not_fetched": [384, 410], "fetch_note": "both gave HTTP 500 on first attempt and again on the single allowed retry; not a challenge/altcha, treated as unreachable at that canvas number and skipped, not retried further", "stride_canvases": "~26", "contact_sheet": "reg16090/contact_sheet.jpg", "verdict": "all 25 fetched leaves clear cursive French copybook text (headers e.g. 'Au Roy', 'Response par...', 'Depesche envoyee...', addressed to Cardinal d'Este etc.); no numeral/cipher groups seen"}
+    },
+    {
+      "cote": "Français 16091",
+      "ancienne_cote": "Harlay 265 (12)",
+      "label": "III Janvier 1587-août 1588",
+      "feuillets": 884,
+      "microfilm": "MF 33937",
+      "matrice": "R 16097",
+      "ark": "btv1b90613009",
+      "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90613009/manifest.json",
+      "canvas_count": 790,
+      "archivesetmanuscrits_component": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc46222m/cd0e99 (eadCompId=FRBNFEAD000046222_d0e99)",
+      "chiffre_flag_in_notice": false,
+      "sample": {"dir": "reg16091/", "canvases_sampled": 27, "stride_canvases": "~29", "contact_sheet": "reg16091/contact_sheet.jpg", "all_fetched": true, "verdict": "all 27 leaves clear cursive French copybook text (headers e.g. 'A Monsieur de Villeroy', 'Au Roy', dated e.g. 'Aoust 1587', 'Mars 1587'); no numeral/cipher groups seen"}
+    }
+  ],
+  "thumbnail_url_pattern": "https://gallica.bnf.fr/iiif/ark:/12148/{ark}/f{canvas}/full/,500/0/native.jpg",
+  "requests_this_pass": {
+    "archivesetmanuscrits.bnf.fr": "8 (reachability probe; the candidate-but-wrong Français 17834 notice cc473324; the vol III notice cc46222m/cd0e99; the parent notice cc46222m; the parent's ajaxGetCompDisplay tree listing its 3 children d0e57/d0e78/d0e99; the two sibling ajaxGetCompDisplay component fetches d0e57 and d0e78; one static JS file to find the ajax endpoint pattern), one at a time, >=1.5s apart, no 403/altcha",
+    "gallica.bnf.fr": "~97 (1 reachability probe with 1 transient reset+retry; 1 OAIRecord; 3 manifest.json fetches with 2 transient resets+retries; ~89 IIIF thumbnail fetches for the 78-canvas sample across the 3 volumes, including 2 permanently-failed-with-500 canvases each retried once and then left unfetched, one long-hanging request killed and not counted as a host hit since it never completed a TLS handshake in the retry), one at a time, >=1.5s apart, no 403/altcha; one connection hung for >60s mid-session and was killed locally (not a server response) after which curl was run with --connect-timeout 10 --max-time 25 for the remainder",
+    "WebSearch": "2"
+  }
+}

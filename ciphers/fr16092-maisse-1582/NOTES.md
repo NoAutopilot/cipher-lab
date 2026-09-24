@@ -209,3 +209,102 @@ two transient connection resets, both recovered on the single allowed retry; no 
 googleapis.com/books: 2 (with `&key=$GOOGLE_BOOKS_KEY&country=US`, key never printed). archive.org: 2
 (advancedsearch + be-api.us.archive.org full-text search, both inconclusive/negative). catalog.hathitrust.org:
 1 (guessed OCLC, empty). WebSearch: 4. No subagents, no logins, no credentials printed.
+
+## Maisse outgoing registers (fr.16089-16091 series), 24 September 2026
+
+Access-worker pass (Sonnet, LANE G, cap $10). Job: chase the previous pass's "fr.17834" lead -- the register of
+Maisse's own outgoing letters, the mirror-image collection to this folder's fr.16092/93 (Court-to-Maisse). Two
+findings: the series exists and is fully digitised, but **it is not fr.17834** -- that shelfmark was a
+misattribution in the earlier pass's WebSearch, corrected here before any fetching against it.
+
+### Correction: fr.17834 is not the register series
+
+`archivesetmanuscrits.bnf.fr/ark:/12148/cc473324` (FRBNFEAD000047332) confirms Français 17834 (ancienne cote
+Saint-Germain français 7161) is *"Instructions à divers ambassadeurs français, et autres pièces historiques, de
+la fin du XVIe siècle et du commencement du XVIIe"* -- a compilation of instructions to various named
+ambassadors (Rambouillet, Turenne, La Fin, Nevers, La Clyelle, La Borde, Lambert, Baradat), of which one item is
+"Instruction ... à monsieur de Maisse [Italie], s. d. (f. 169)". This is a single instruction among eleven to
+different people, not Maisse's outgoing register, and it is a different Gallica item (ark `btv1b9061239t`) from
+either register series. The earlier pass's WebSearch snippet had matched on the word "Maisse" without checking
+the returned cote against the notice text -- exactly the mistake this folder's own NOTES.md flagged as a risk
+after the fr.16092/93 canvas-node mixup. **This item was not investigated further and nothing was fetched from
+it beyond its own catalogue notice.**
+
+### The real series: Français 16089-16091 (Harlay 265 (10-12))
+
+Found by re-deriving the register's own title's shelfmark rather than trusting the earlier WebSearch: the OAI
+record for the Gallica item titled "Registre des lettres et dépêches adressées par André Hurault de Maisse à la
+Cour... III Janvier 1587-août 1588" (`services/OAIRecord?ark=btv1b90613009`) gives `dc:source` = "Bibliothèque
+nationale de France. Département des Manuscrits. Français 16091", not 17834, and points to the catalogue notice
+`archivesetmanuscrits.bnf.fr/ark:/12148/cc46222m/cd0e99`. That notice's parent (`cc46222m`, EAD id
+`FRBNFEAD000046222`) is the 3-volume series **Français 16089-16091**, and its own AJAX tree endpoint
+(`ajaxGetCompDisplay.html?eadCompId=FRBNFEAD000046222`) lists all three children directly (component ids
+`_d0e57`, `_d0e78`, `_d0e99`), fetched individually below. So the register series sits immediately *before*
+fr.16092 in the shelfmark sequence (16089-91 outgoing, 16092-93 incoming) -- both halves of the same
+correspondence, catalogued as neighbouring but separate multi-volume units under "Département des Manuscrits >
+Français > Français 15370-17058 [Saint-Germain] > Français 15912-16669".
+
+| Cote | Ancienne cote | Volume | Feuillets | Ark | Canvases | Substitute |
+|---|---|---|---|---|---|---|
+| Français 16089 | Harlay 265 (10) | I, Nov 1582-Dec 1583 | 609 | `btv1b9061233b` | 624 | MF 33935 / R 16095 |
+| Français 16090 | Harlay 265 (11) | II, Jan 1584-Dec 1586 | 678 | `btv1b9061232x` | 690 | MF 33936 / R 16096 |
+| Français 16091 | Harlay 265 (12) | III, Jan 1587-Aug 1588 | 884 | `btv1b90613009` | 790 | MF 33937 / R 16097 |
+
+All three are digitised (Gallica, from the substitute microfilm). **None of the three archivesetmanuscrits
+notices flags "chiffre" anywhere** -- each notice is just cote/ancienne cote/date-range/extent/subject headings
+(Ambassades. Venise.; France à Venise (1582-1595), Hurault de Maisse.; Hurault de Maisse, Paul.; Ambassades à
+Venise (1582-1589).), with no item-level content list at all (unlike fr.16092's notice, which does list
+individual correspondents by folio and explicitly names the cipher key at f.5). This is a fact about the
+catalogue's granularity for this series, not evidence either way about whether cipher appears inside it.
+
+### Contact-sheet sample: 78 of 2,104 canvases, no ciphertext
+
+Sampled each volume's canvases at a roughly even stride (IIIF thumbnails, `,500` width, one request at a time,
+>=1.5s apart, UA `cipher-lab research script (contact via repository)`), reviewed as one labelled contact sheet
+per volume (`images/reg16089/contact_sheet.jpg`, `reg16090/contact_sheet.jpg`, `reg16091/contact_sheet.jpg`):
+
+- **Français 16089** (I): 26 of 624 canvases (stride ~24), all fetched. Every leaf is clear cursive French
+  secretarial-hand copybook text -- headers such as "Lettre a Monsieur de [...]", "Lettre au Roy", "Response par
+  lettre du Roy au sieur..." -- exactly the register-copy format expected. No numeral or symbol groups on any
+  sampled leaf.
+- **Français 16090** (II): 27 of 690 canvases targeted (stride ~26); 25 fetched, canvases 384 and 410 gave
+  HTTP 500 on both the first attempt and the single allowed retry (not a 403/altcha/challenge -- treated as a
+  server-side fault at that specific canvas number, logged and left unfetched rather than retried further). All
+  25 fetched leaves are clear cursive French, same copybook format ("Au Roy", "Response par...", "Depesche
+  envoyee...", one leaf addressed to "Monsieur le Cardinal d'Este"). No numeral/symbol groups.
+- **Français 16091** (III): 27 of 790 canvases (stride ~29), all fetched. Same pattern -- clear cursive French,
+  dated headers ("Aoust 1587", "Mars 1587"), addressed e.g. "A Monsieur de Villeroy", "Au Roy". No numeral/symbol
+  groups.
+
+**Across all three volumes, 78 of 2,104 canvases sampled (~3.7%), none ciphered.** This is a sample, not a
+census, and (as with fr.16092's own probe) does not rule out an enciphered passage in the ~96% unchecked, but it
+is consistent with what would be expected of a register: a clerk's fair copy of outgoing letters *as sent*,
+which for a cipher despatch would ordinarily record the plaintext draft rather than the enciphered text that
+actually went out (the encryption happens at the point of dispatch, not in the office copy retained). No native
+fetches were made (step 3 of the brief is conditional on finding a ciphered leaf; none was found).
+
+### Verdict
+
+Status for fr.16092 itself is unchanged (`open`, still no ciphertext located in it either). This pass adds: the
+fr.17834 lead was a misidentification, now corrected; the real Maisse-outgoing register series (fr.16089-16091)
+exists, is fully digitised, and a 78-leaf sample across all three volumes found no enciphered passage and no
+catalogue "chiffre" flag. It does not settle whether Maisse's side of the correspondence was ever enciphered
+(registers by their nature would likely carry the plaintext draft even for despatches sent in cipher); the
+Boucher print-check gap (previous pass, still open) remains the cheapest way to close that question, since a
+modern edition's apparatus is more likely than a register copy to note a lost decipherment.
+
+### Requests this pass
+
+archivesetmanuscrits.bnf.fr: 8 (reachability probe; the candidate-but-wrong Français 17834 notice `cc473324`;
+the vol III notice `cc46222m/cd0e99`; the parent notice `cc46222m`; the parent's `ajaxGetCompDisplay` tree
+listing (3 children); the two sibling `ajaxGetCompDisplay` fetches for vols I and II; one static JS file to
+confirm the AJAX endpoint pattern), one at a time, >=1.5s apart, no 403/altcha. gallica.bnf.fr: ~97 (1
+reachability probe with 1 transient reset+retry; 1 OAIRecord; 3 manifest.json fetches with 2 transient
+resets+retries; ~89 IIIF thumbnail fetches for the 78-canvas sample, including 2 permanently-failed-with-500
+canvases each retried once per the single-retry rule and then left unfetched), one at a time, >=1.5s apart, no
+403/altcha seen. One local issue, not a site block: a single thumbnail request hung for over a minute with no
+response (neither an error nor a completion) after several genuine transient resets on the same run; it was
+killed locally after being judged a stalled connection rather than waited out further, and the remaining
+fetches were run with `--connect-timeout 10 --max-time 25` to avoid a repeat. WebSearch: 2. No subagents, no
+logins, no credentials. Images: `images/reg16089/`, `images/reg16090/`, `images/reg16091/` (78 thumbnails +
+3 contact sheets, ~1MB total); manifest at `images/registers_manifest.json`.
