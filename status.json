@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 12:03 UTC",
+ "updated": "24 Sep 2026 13:07 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -615,6 +615,10 @@
   }
  ],
  "log": [
+  {
+   "when": "24 Sep, 13:10",
+   "what": "Quiet hour. Jan van Nassau 5549: the postscript reads under Lodewijk's 1574 table (C 163 of 226) but its plaintext is printed in Groen's Supplément, N1; the body is in a second key, unread, solver running. Jan 5207/5213/5221 retracted (printed in clear in Groen V). DC8 Baluze 156 does not read with Lasry's Sabran 1631 key. fr.2967 Duprat: no ciphertext in 131 canvases. LANE W2 closed at $10 with every English item at N4. Four new TNA State Papers nominations, all copy-order."
+  },
   {
    "when": "24 Sep, 12:05",
    "what": "Eckert E4/E5: N4 (11:27) after the Zooniverse Talk gap closed through the talk.zooniverse.org JSON API. Blathwayt 1728 BLA 186 (cipher lines), 191(a), 184: N4 (11:03). Saxony 57 re-checked against Demandt's regest nr.113 and stays N4. fr.5160 canvases 160-367: no new cipher; the 1659 key reads 454 of 546 groups of f.67 at grade C. Ranzo cipher fr.20506 f.136 transcribed (749 tokens, 94 percent pass agreement). DECODE full-size images: blocked by account permission (ASKS 42, card). LANE G2, V2 and R2 closed on handoffs (G2 $95, V2 $37, R2 $33); G3, V3, R3 started; N2 and W2 continue. Nominations 11-12 UTC: Jan van Nassau 5549 copy-free; Heinsius, SP 36, SP 81 and PRO 30 items copy-order."
@@ -1444,29 +1448,24 @@
  "lanes": [
   {
    "name": "Lane G3, Gallica manuscripts",
-   "live": 0,
-   "focus": "starting from the G2 handoff: DC8/DC9 passes, fr.20506 and fr.2988 natives for the recovery lane, one more scout family; five BnF reproductions are the owner's to order"
+   "live": 2,
+   "focus": "check-solved on M35/M36; DC8 negative against the Sabran key; Duprat volume has no cipher; pausing when the G2 priorities are done"
   },
   {
    "name": "Lane V3, French/Dutch/German verification",
-   "live": 0,
-   "focus": "starting from the V2 handoff: Jan van Nassau 5549 when read, second-opinion prompts for Saxony and Lodewijk, outreach drafts once the JSTOR rows are waived"
+   "live": 1,
+   "focus": "Jan van Nassau 5549 postscript N1; residual families closed on Lodewijk and Saxony; outreach drafts wait on your JSTOR rows"
   },
   {
    "name": "Lane N2, nominations",
-   "live": 5,
-   "focus": "Heinsius editions HU9-HU11, SP and PRO items (copy-order), Jan van Nassau 5549 (copy-free), Florence blocked on an edition, DECODE image access blocked"
+   "live": 4,
+   "focus": "73 WVO letters sorted by print status; TNA SP nominations (copy-order); DECODE and Florence blocked"
   },
   {
    "name": "Lane R3, recovery",
-   "live": 0,
-   "focus": "starting: Jan van Nassau 5549, Ranzo f.136 solver with control, new copy-free nominations"
-  },
-  {
-   "name": "Lane W2, English verification",
    "live": 1,
-   "focus": "Eckert E4/E5 and Blathwayt x3 at N4; gate 2 open on JSTOR rows (ASKS 40, 41)"
+   "focus": "Jan van Nassau 5549 body (second key) solver with control"
   }
  ],
- "headline": "Fifteen readings at N4, 'no prior decipherment located': Gramont x2 (1530), Danzay (1557), Stamford to Thurloe's office (1655), Lodewijk van Nassau x3 and August of Saxony x3 (1561-74), Eckert's two telegrams of April 1864, and three Blathwayt letters of 1728. Saxony 53 is the one cryptanalytic reading among them. Every outreach waits on your JSTOR rows; DECODE full-size images need a permission you must ask for. The night's lanes are handing over to successors as they exhaust their scopes."
+ "headline": "Morning of 24 Sept: fifteen readings at N4 ('no prior decipherment located'), one of them cryptanalytic (August of Saxony 53). Fifty-seven nominations posted overnight, twenty-five copy-free, nine caught as already deciphered before any solver time. Every outreach waits on your JSTOR rows; the Gallica and English lanes are paused on owner orders and asks. Four lanes live at pace."
 }
