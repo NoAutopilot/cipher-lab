@@ -181,3 +181,54 @@ in Paris during 1557 and back in Denmark on 22 April 1558. Any later print searc
 3. Run a JSTOR search for "Danzay" OR "Dançay" and 1557/1558.
 4. Optionally, ask a Danzay specialist (Daussy) whether the fr.20140 letters have been edited. That would be
    the route to N5.
+
+## Open-index scholarship pass (24 Sept 2026)
+
+Worker session (Sonnet, cap $8, orchestrator session_01EFmUvFAifLKGdBSsW9mjEG), replacing JSTOR as the
+scholarship-coverage gate (CLAUDE.md, JSTOR-QUEUE.tsv rows 16-19; this is step 3 above, run through the open
+indexes rather than JSTOR itself, per the owner's 24 Sept note). Not a verifier session: does not move the N3
+class, does not decode. Full per-host results in `OPEN-INDEX-RESULTS.tsv` rows 16-19.
+
+**OpenAlex and Semantic Scholar unreachable** for this whole pass (shared-IP daily anonymous budget exhausted /
+429 on repeated attempts; identical failure across all five targets this pass covered, exact error text in
+fr2980-gramont/AUDIT.md's equivalent section of this date). Logged as unreachable, not as a negative.
+
+**CrossRef and HAL both independently re-surface Daussy 2004** ("Un diplomate protestant au service d'un roi
+catholique: Charles de Danzay, ambassadeur de France au Danemark (1515-1589)", in *Élites et notables de l'Ouest
+XVIe-XXe s.*, PUR, pp.277-294) — cross-confirming it is the same article already reached via OpenEdition in
+section 3(g), not a second one. **CrossRef also independently re-surfaces Ryabov 2025** (*Quaestio Rossica*
+13/4, "The Diplomatic Cipher of Charles de Danzay") — already known per section 3(d): reconstructs a different
+cipher, from letters of 14 Oct 1574 and 28 Feb 1578, not fr.20140 f.35 or the 1557 letter. Neither is new.
+Persée returns no relevant hit for any of the four queries (results dominated by an unrelated pair of articles
+on the Norman navigator Jean Sauvage's 1586 Russia voyage, matched on "voyage"/16th-c-diplomacy keywords, and
+three OECD "Danemark" economic-survey entries matched on the country name alone).
+
+**Row 17, one minor new biographical fact:** WebSearch surfaces that Danzay was made "panetier" (a bread-officer
+post at court) on 20 May 1557 — not previously in NOTES.md or this file. It bears on his career, not on a letter
+to the Cardinal of Lorraine or its cipher; no correspondence between Danzay and the Cardinal was located by any
+host.
+
+**Row 18, Delavaud 1911 located on Gallica, still not read — this is new.** Google Books' snippet (section
+3(e)) placed the fr.20140 mention on pp.52/74 of Delavaud's *Les Français dans le Nord* (Rouen, 1911) but the
+scan there is `NO_PAGES` (no preview at all). This pass located a full page-image copy on **Gallica**, ark
+`bpt6k6571713p` (`https://gallica.bnf.fr/ark:/12148/bpt6k6571713p.texteImage`) — a route step 1 above did not
+yet have. One `.texteBrut` OCR-download request was made: it 302-redirected to
+`/services/engine/search/altcha?altchaNotVerified=false`, the **same Gallica bot-verification wall** documented
+in `ciphers/fr2980-gramont/AUDIT.md` for the Camusat and Champollion-Figeac gaps. Not retried (single-attempt
+rule). This confirms, for the first time, that the altcha wall is not specific to manuscript-image arks — it
+also blocks a public-domain **printed book's** OCR download on Gallica. The book is now precisely located but
+its text remains unread; a cold, uncontended Gallica session (no concurrent worker on the host, as
+fr2980-gramont/AUDIT.md already recommends for its own two gaps) is the one remaining route, and could close
+this target's step 1 in the same pass as fr2980-gramont's Camusat/Champollion-Figeac gaps, since all three are
+now the same kind of block on the same host.
+
+**Verdict for this pass:** no hit on any of the six hosts locates a new print or decipherment of fr.20140 f.35.
+Step 3 above (JSTOR) is substituted, not closed, by this pass, per the owner's directive; step 1 (Delavaud) is
+now a precisely-located, still-unread Gallica scan rather than an unreached Google Books snippet; step 2
+(Cuisiat) and step 4 (asking Daussy) are untouched. **N3 unchanged; the verifier does not move the class from a
+scholarship-pass worker's report.**
+
+Requests: api.openalex.org 8 (all 429, shared budget). api.semanticscholar.org 6 (all 429). api.crossref.org 4
+(200 each). api.archives-ouvertes.fr 8 (4 combined-query 0-hit attempts, 4 narrower follow-ups, one of which —
+"Danzay Danemark" — returns the Daussy 2004 hit). www.persee.fr 4 (200 each). gallica.bnf.fr 1 (`.texteBrut`,
+302 to altcha, not retried). WebSearch 4 queries. No logins, no credentials, no decoding.

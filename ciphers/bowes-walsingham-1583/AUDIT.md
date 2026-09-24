@@ -315,3 +315,40 @@ class stays the verifier's call; nothing in this section is a decipherment or a 
 
 Requests this session: www.googleapis.com/books 22, books.google.com 41 (1.5 s apart), one session, no login.
 HathiTrust `babel` and `catalog` both still 403 to curl from this container (checked once each, not retried).
+
+## Open-index scholarship pass (24 Sept 2026)
+
+Worker session (Sonnet, cap $8, orchestrator session_01EFmUvFAifLKGdBSsW9mjEG), replacing JSTOR as the
+scholarship-coverage gate (CLAUDE.md, JSTOR-QUEUE.tsv rows 8-11). Not a verifier session: does not move the N1
+class, does not decode. Full per-host results in `OPEN-INDEX-RESULTS.tsv` rows 8-11.
+
+**OpenAlex and Semantic Scholar unreachable** for this whole pass (shared-IP daily budget exhausted / 429 on
+repeated attempts; see the fr2980-gramont AUDIT.md section of the same date for the exact error text, identical
+across all five targets this pass covered). Logged as unreachable, not as a negative.
+
+**CrossRef, Persée, HAL:** no hit on either fragment (F1-F7 of 7 April, F8-F11 of 31 July) or on a sign-to-letter
+key for them. Genuine but irrelevant hits surfaced and set aside: Tomokiyo's own peer-reviewed piece ("How I
+reconstructed a Spanish cipher from 1591", Cryptologia 2018) is not about Bowes; the Lasry/Biermann/Tomokiyo 2023
+Mary Stuart paper (already known) quotes a *different* Bowes-to-Walsingham letter of 28 March, about ciphers
+found with one "Holte" — not the 7 April or 31 July letters this target reads. Everything else (a Hakluyt-society
+reprint of Walsingham's 1583 letters, a board-game-studies chapter titled "The Walsingham Gambit", surname
+collisions on "Bowes"/"Caligula"/"decipherment") is noise, logged in full in the TSV. HAL returned 0 hits for
+every query on this target; a single true positive turned up only by accident (a 2026 cancer-biology conference
+paper by "Simon Mallet", a coincidental near-match to the code-name "Smallet", not the target).
+
+**Row 9 ("Smallet"/"Maineville"):** WebSearch confirms François de Rocherolles, sieur de Mainville, as the French
+agent sent to Scotland in Dec 1582 — the identification NOTES.md already uses for the cipher's "Maineville" — and
+adds one piece of adjacent context (a March 1583 report that Castelnau sent him letters via a courier from
+Gravesend, and that Bowes reported the agent believed them unread). No source on any host uses the code-name
+"Smallet" anywhere; this remains a name recovered only by the solver's alignment with the 1842 letter-book, as
+section 5 already says.
+
+**Verdict for this pass:** no hit on any of the six hosts adds a print or decipherment of either fragment, or of
+a sign-to-letter key, beyond what sections 1-10 above already establish. This does not close family (g)'s
+JSTOR/Google-Scholar gap named in section 8's search log; it substitutes for it, per the owner's 24 Sept
+directive. **N1 unchanged; the verifier does not move the class from a scholarship-pass worker's report.**
+
+Requests: api.openalex.org 8 (all 429, shared budget). api.semanticscholar.org 6 (all 429). api.crossref.org 4
+(one per row, 200 each). api.archives-ouvertes.fr 8 (4 combined-query attempts at 0 hits, 4 narrower follow-ups).
+www.persee.fr 4 (200 each). WebSearch 4 queries. No logins, no credentials, no decoding, no edits to
+reading.tsv/key.tsv/ciphertext.txt.

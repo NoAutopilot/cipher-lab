@@ -637,3 +637,58 @@ two mistargeted/retargeted signature crops). archivesetmanuscrits.bnf.fr: 2 (1 r
 WebSearch: 2. No logins, no credentials printed, no decoding, no subagents, no edits to reading.txt/key.tsv/
 ciphertext.txt. Images saved under `images/fr3019_check/` (not the target's own `images/manifest.json`, since
 these are a companion manuscript's canvases, not fr.2980's).
+
+## Open-index scholarship pass (24 Sept 2026)
+
+Worker session (Sonnet, cap $8, orchestrator session_01EFmUvFAifLKGdBSsW9mjEG), replacing JSTOR as the
+scholarship-coverage gate per the owner's 24 Sept note (CLAUDE.md, JSTOR-QUEUE.tsv). Not a verifier session: does
+not move the N3 class, does not decode. Job: translate JSTOR-QUEUE.tsv rows 2-7 (this target) into phrase/keyword
+queries and run them against OpenAlex, Semantic Scholar, CrossRef, Persée, HAL and Google Scholar (via WebSearch).
+Full per-host results in `OPEN-INDEX-RESULTS.tsv` rows 2-7.
+
+**Hosts unreachable for the whole pass, all six targets:** `api.openalex.org` (this container's shared egress IP
+had exhausted its anonymous daily budget before this session started -- `{"error":"Rate limit exceeded",
+"message":"Insufficient budget ... $0 remaining; resets at midnight UTC"}`, confirmed on 8 attempts with pauses;
+no `OPENALEX` API key is set in this environment) and `api.semanticscholar.org` (429 "Too Many Requests" on 6
+attempts with pauses, no key set). Neither could be made to answer even a one-word test query. Logged as
+unreachable, not as a negative.
+
+**CrossRef, Persée, HAL:** no hit on this letter. The one topically-adjacent Persée result (J. Fraikin, "La
+nonciature de France de la délivrance de Clément VII à sa mort", MEFR 1906) was fetched (page only carries
+metadata, no embedded full text) and set aside: it covers the *papal nuncio's* mission to France, the opposite
+diplomatic direction from Gramont's French embassy to Rome, so it is unlikely to hold this letter and was not
+read further. Everything else returned is keyword-collision noise (a modern IMF economist named Végh Gramont;
+the château de Villandry; the Roman emperor Caligula-adjacent and Voynich/Linear-B "decipherment" hits on other
+rows' generic terms) — logged in full in the TSV, not repeated here. HAL returned 0 hits for every combined
+query on this target (a bare "Gramont" alone returns 469 hits, almost all the unrelated modern philosopher
+Jérôme de Gramont).
+
+**Lasry/Cryptologia (row 7):** CrossRef and WebSearch both confirm Lasry's actual Cryptologia bibliography (the
+2023 Major Josse cipher paper, the 2016 columnar-transposition paper, the 2023 Mary Stuart paper with Tomokiyo
+and Biermann) contains no article on Gramont or Francis I's 1530 ciphers. This corroborates, independently of
+Tomokiyo's own pages, that Lasry's Gramont-1530 key work has not been published as a Cryptologia article — it
+exists only via cryptiana's web pages, as section 4(g) already said.
+
+**Row 6 (Google Scholar via WebSearch):** confirms, independently of this session's own re-clone, what the
+second audit's clone of `dbourdeau/cyphersolver` (head `5dcd5c3`) already found: his `gramont1529/` folder reads
+fr.3091 no.23 (11 Oct 1529) and fr.3071 no.7 (21 July 1530, "read ~85%"), using Lasry's 2023 key — both are
+different items from fr.2980 f.29-30, not a reading of this target. Not new; flagged only so a future
+check-solved sweep knows to re-check whether fr.2980 itself has since been solved there.
+
+**Rows 2-3 (Google Scholar via WebSearch):** the search engine's own summaries surfaced only the BnF catalogue
+description of fr.2980 (matches section 2 verbatim) and Gramont's other, already-known ciphered letters (27 Aug
+and 5 Oct 1529, 28 March 1530 Boulogne) — all already covered by the Le Grand page-by-page reading in the second
+audit. No new source for the 20 May 1530 letter to Villandry itself.
+
+**Verdict for this pass:** no hit, on any of the six hosts, adds a new candidate print or decipherment of fr.2980
+f.29r-30. Two of OpenAlex/Semantic Scholar/CrossRef/Persée/HAL/Google Scholar were unreachable (not searched);
+the other four returned only noise, already-known facts, or one unread topically-adjacent lead (Fraikin 1906,
+not fetched in full). This does not close any of the four gaps named in the "Toward N4, second pass" section
+above (Camusat, Champollion-Figeac, HathiTrust whole-library search, Michon). **N3 unchanged; the verifier does
+not move the class from a scholarship-pass worker's report.**
+
+Requests this session: api.openalex.org 8 (all 429, one shared-budget message, no data returned).
+api.semanticscholar.org 6 (all 429). api.crossref.org 6 (one per row, `query.bibliographic`, 200 each).
+api.archives-ouvertes.fr 12 (6 combined-query attempts at 0 hits, 6 narrower single/double-term follow-ups,
+200 each). www.persee.fr 6 (`ta=article&q=...`, 200 each) plus 1 article-page fetch (Fraikin 1906, 200). WebSearch
+7 queries. No logins, no credentials, no decoding, no edits to reading.txt/key.tsv/ciphertext.txt/key_extension_f30.tsv.

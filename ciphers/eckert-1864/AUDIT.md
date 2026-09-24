@@ -624,3 +624,51 @@ in this folder may use "first decipherment," "previously unread," "unpublished,"
 until one of: (a) HathiTrust or JSTOR access is restored and searched, (b) the NARA M504 rolls named above are
 read and either found empty of these telegrams (moving toward N4) or found to hold a prior transcription (moving
 toward N0/N1), or (c) the Meigs 1864 April letterbook is read page-by-page for the 21-22 April dates.
+
+## Open-index scholarship pass (24 Sept 2026)
+
+Worker session (Sonnet, cap $8, orchestrator session_01EFmUvFAifLKGdBSsW9mjEG), replacing JSTOR as the
+scholarship-coverage gate (CLAUDE.md, JSTOR-QUEUE.tsv rows 20-22; this covers the same JSTOR gap the gap worker
+above named, run through the open indexes rather than JSTOR itself, per the owner's 24 Sept note). Not a
+verifier session: does not move the N3 class for E4/E5, does not decode. Full per-host results in
+`OPEN-INDEX-RESULTS.tsv` rows 20-22.
+
+**OpenAlex and Semantic Scholar unreachable** for this whole pass (shared-IP daily anonymous budget exhausted /
+429 on repeated attempts; identical failure across all five targets this pass covered, exact error text in
+fr2980-gramont/AUDIT.md's equivalent section of this date). Logged as unreachable, not as a negative.
+
+**CrossRef, Persée and HAL: no hit on E4, E5 or the Eckert ledgers.** CrossRef returns only keyword-collision
+noise: several unrelated "Who Was Who"/ODNB entries whose subjects happen to have a birth or death date of "22
+April" in some year (matched on the date string, not the 1864 telegram); Vernam's real but much-later and
+unrelated 1926 AIEE paper "Cipher printing telegraph systems" (a one-time-pad paper, matched on "cipher
+telegraph"); 1864-dated Scientific American telegraph-patent notices. Persée returns unrelated telegraph-history
+articles (Chappe semaphore, transpacific and Indo-British submarine cables, the Ottoman sultan's telegraph) —
+none on Eckert, the Military Telegraph office, or Cipher No. 1. HAL returns 0 hits for all three queries.
+
+**`www.persee.fr` unreachable for rows 20-21 specifically** (its own two queries, "Fox Butler 1864" and "Meigs
+Butler 1864"): both the scheduled request and the one allowed retry failed with `Recv failure: Connection reset
+by peer`, no HTTP response either time. Row 22's Persée query succeeded normally in the same run, so this looks
+like a transient per-request failure on those two specific queries rather than a host-wide block; not retried
+further per the good-citizen rule. Logged as unreachable for those two rows only.
+
+**Google Scholar (via WebSearch):** no source located for either E4 (Fox to Butler, 21 Apr 1864) or E5 (Meigs to
+Butler, 22 Apr 1864) beyond what the first and second audits above already found — OR I/33 p.279 prints only
+Butler's reply to E4, and ORN I/9 p.667 prints Fox's parallel telegram to Ericsson; Halleck's cavalry-to-Giesboro
+instruction (already cited as OR I/33 p.938) is the only adjacent hit for E5. Row 22's query confirms only facts
+already extensively documented in section 12 above (the Huntington's own collection description: 35 volumes,
+~16,000 telegrams, roughly one-third enciphered) — no scholarly article on the ledgers' decoding was found on
+any host, consistent with section 12's own finding that Decoding the Civil War's Phase 3 was never launched and
+no paper or dataset followed it.
+
+**Verdict for this pass:** no hit on any of the six hosts adds a print or decipherment of E4 or E5, or narrows
+the JSTOR/HathiTrust gap named in the "Toward N4" sections above. This substitutes for, but does not close,
+family (11)'s JSTOR gap and the second audit's "N4 requires: JSTOR queries... HathiTrust whole-library search...
+Meigs Papers finding aid" list — the Meigs Papers and NARA RG 107 M504 pointers already located by the prior gap
+worker remain the most concrete untried route. **E4 and E5 stay N3; the verifier does not move the class from a
+scholarship-pass worker's report.**
+
+Requests: api.openalex.org 8 (all 429, shared budget). api.semanticscholar.org 6 (all 429). api.crossref.org 3
+(200 each). api.archives-ouvertes.fr 6 (3 combined-query 0-hit attempts, 3 narrower follow-ups). www.persee.fr 3
+scheduled (1 succeeded 200; 2 failed with connection reset, each retried once per the single-retry rule, both
+retries also reset). WebSearch 3 queries. No logins, no credentials, no decoding, no subagents, no changes to
+ciphertext.txt/reading.md/key material.

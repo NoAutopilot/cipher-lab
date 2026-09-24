@@ -166,3 +166,57 @@ the headless Chromium in `tools/browser_fetch.js` renders for both the login URL
 good-citizen rule that was the one retry; the host was not hit again. No login was attempted, so the
 credentials themselves are untested. JSTOR stays unchecked for Courten; the stage-2 conditional is
 unchanged. Logged in ASKS.md (JSTOR row). Requests: www.jstor.org 2.
+
+## Open-index scholarship pass (24 Sept 2026)
+
+Worker session (Sonnet, cap $8, orchestrator session_01EFmUvFAifLKGdBSsW9mjEG), replacing JSTOR as the
+scholarship-coverage gate (CLAUDE.md, JSTOR-QUEUE.tsv rows 12-15). This target has no AUDIT.md (not yet at the
+verifier stage), so this section goes in NOTES.md per the brief. Not a verifier session: assigns no class, does
+not decode. Full per-host results in `OPEN-INDEX-RESULTS.tsv` rows 12-15.
+
+**OpenAlex and Semantic Scholar unreachable** for this whole pass (shared-IP daily anonymous budget exhausted /
+429 on repeated attempts, identical failure logged across all five targets this pass covered — see
+fr2980-gramont/AUDIT.md's "Open-index scholarship pass" section for the exact error text). Logged as
+unreachable, not as a negative.
+
+**CrossRef, Persée, HAL:** no hit on the Add MS 4956 diary or its cipher passages. CrossRef returns mostly ODNB
+biographical entries for several different men named Courten/Charleton (William Courten 1642-1702 the
+naturalist; an earlier William Courten/Curteene 1572-1636, merchant; Robert Charleton 1809-1872 and Walter
+Charleton 1619-1707, both unrelated namesakes) — reference entries, not scholarship on this manuscript. Persée
+and HAL return 0 relevant hits (Persée's results are dominated by unrelated 18th-century Convention-nationale
+procedural records that happen to match on "Courten"/"Charleton" substrings).
+
+**Row 13 (herbarium-label cipher), confirmed not new:** WebSearch reconfirms, independently of the check-solved
+pass's own finding, that William Courten/Charleton used a *separate*, much shorter numeric cipher on tiny paper
+labels in the Sloane Herbarium (Natural History Museum) to record specimen provenance, and that a modern
+researcher named Scott has decoded many of them. This is the herbarium-label corpus, distinct from the Add MS
+4956 diary's own cipher passages, exactly as the edition-risk section above already distinguishes. No source
+connects that work to Madden's f.66 key or to the diary text.
+
+**Row 14, one genuine lead located and fetched, not about the cipher:** Journal of the History of Collections
+29/1 (2018) pp.1-24, "William Courten's lists of 'Things Bought' from the late seventeenth century" — the item
+flagged as an unfetched PDF in the first check-solved pass. The accepted-manuscript copy at
+`api.repository.cam.ac.uk` (bitstream id `c4128d91-4445-4e58-ab48-452ca9e90632`) was fetched this pass (200 OK,
+287 KB, 8 pages). It is about Courten's *purchase lists* (naturalia/artificialia acquisitions, prices, sellers),
+a different manuscript from the Add MS 4956 diary, and confirms the already-noted fact that his collection was
+viewable at Middle Temple from about 1685. Not read for a cipher mention (out of this pass's scope; a future
+worker with budget could grep the 8 pages for "cipher"/"Madden"/"4956").
+
+**Row 12, one claim flagged unconfirmed:** the search engine's own AI summary asserted "Medical advice given to
+William Courten in 1698, mostly recorded in cipher, can be found in ... Add. MS 4956." This could **not** be
+independently verified this pass: the cited source (The Digital Ark, drc.usask.ca, person id 21) lists Add MS
+4956 only as a manuscript linked to Courten "as Author", with no content description, and a follow-up targeted
+search found no independent source repeating the "medical advice" characterisation. **Do not repeat this claim**
+without a direct look at the manuscript image or a source that actually states it — it may be the search
+summariser's own inference or conflation, not a fact drawn from a citable page.
+
+**Verdict for this pass:** no hit on any of the six hosts locates a transcript, decipherment, or scholarly
+discussion of the Add MS 4956 diary's cipher passages. This substitutes for the JSTOR queries logged in the
+prior pass (per the owner's 24 Sept directive) without closing them; the stage-2 conditional (Sloane MS 4019
+f.79 now resolved; the Cipherbrain post's JS-rendering caveat; JSTOR/HathiTrust/Google Books full text still not
+searched by phrase) is otherwise unchanged.
+
+Requests: api.openalex.org 8 (all 429, shared budget). api.semanticscholar.org 6 (all 429). api.crossref.org 4
+(200 each). api.archives-ouvertes.fr 8 (4 combined-query 0-hit attempts, 4 narrower follow-ups). www.persee.fr 4
+(200 each). api.repository.cam.ac.uk 1 (the JHC "Things Bought" PDF, 200). WebSearch 4 queries. No logins, no
+credentials.
