@@ -517,3 +517,123 @@ never printed): 7. babel.hathitrust.org: 1 direct (403) + 1 via `tools/browser_f
 `connect_rejected`). catalog.hathitrust.org: 1 (403). data.htrc.illinois.edu: 1 (reachability only, 200).
 WebSearch: 1. No logins, no credentials printed, no decoding, no subagents, no edits to reading.txt/key.tsv/
 ciphertext.txt.
+
+## Toward N4, second pass (24 Sept 2026)
+
+Verifier follow-up session (Sonnet, cap $8, orchestrator session_01EFmUvFAifLKGdBSsW9mjEG), 24 September 2026,
+02:55-03:06 UTC (`date -u` read). Brief: the three gaps of the "Toward N4" section above by the routes it had
+not yet tried -- Camusat via the HathiTrust Bibliographic API and HTRC EF headwords rather than Gallica; the
+Champollion-Figeac *Captivité* via Internet Archive/Gallica rather than Google Books; the fr.3019 no.31
+canvas-to-folio calibration from the manifest's own labelled leaves. Not a solver session: reading.txt, key.tsv
+and ciphertext.txt were not touched. Reports what was found and where it was not; does not move the class.
+
+**Gap (2), Camusat -- still not closed; the HathiTrust route is now exhausted, not merely untried.** Two
+identifiers were obtained and tried against `catalog.hathitrust.org/api/volumes/brief/{oclc,lccn}/N.json` (both
+endpoints reachable and returning valid empty JSON, not blocked): OCLC **78432468**, the only OCLC Open Library
+lists for this work, attached to its "3e éd." (Troyes, J. Febure, 1644) rather than the 1619 first edition; and
+LCCN **75403742**, from the Library of Congress's own MARCXML record for the true 1619 first edition (Troyes,
+N. Moreau, "Pre-1801 Imprint Collection", confirmed by `lccn.loc.gov/75403742/marcxml`: dateline 1619, no
+`(OCoLC)` control number in that record at all -- LC's copy is an uncatalogued-for-OCLC rare-book holding).
+Both API calls returned `{"records": {}, "items": []}`: **no HathiTrust volume is linked to either identifier.**
+A search-by-title fallback was also tried and is now confirmed blocked, not just for the mobile OCR/search
+routes already logged: `catalog.hathitrust.org/Search/Home?lookfor=...` returns Cloudflare's "Just a moment..."
+interstitial (HTTP 403, `cRay` challenge page saved), the same wall as `babel.hathitrust.org`. `search.worldcat.org`
+was also tried (reachable, 200) but its results are rendered client-side from a JSON API this session did not
+find; the page's embedded `__NEXT_DATA__` blob carries only UI strings, no result data, so no OCLC could be
+recovered that way either. **Net: with the identifiers this session could locate, Camusat is not held by
+HathiTrust under either, and the catalog cannot be searched by title from this environment. The HTRC
+Extracted-Features route (`tools/htrc_ef_headwords.py`) was never reached because no HTID exists to feed it.**
+This is a firmer negative than "unreached": it is "sought by two independent identifiers and not found."
+- **Google Books, re-checked for a text layer rather than snippets.** Both scan ids in section 4(b) were
+  fetched fresh via the metadata API (keyed, `country=US`, key never printed): `MKpSAAAAcAAJ` and `1d19ZkCU0v8C`
+  both report `publishedDate: "1619"` -- **these are copies of the actual first edition**, not the 1644
+  reprint -- `viewability: ALL_PAGES`, `publicDomain: true`, but **`readingModes.text` is `false`** for both:
+  image-only scans, no OCR text layer, exactly the Champollion-Figeac situation in the first "Toward N4"
+  section. No `industryIdentifiers` (expected for a pre-ISBN imprint) -- confirms the Google identifier cannot
+  substitute for an OCLC/LCCN to try against HathiTrust either.
+- **Status change:** from "Google Books page view blocked, MDZ copy is a different book, Gallica copy exists but
+  altcha-blocked" (first pass) to that plus "confirmed absent from HathiTrust by both available identifiers, and
+  confirmed image-only on both known Google Books scans of the actual 1619 edition." Still not closed. The one
+  remaining route neither pass has tried is a cold, uncontended Gallica `.texteBrut` retry (per the first pass's
+  own recommendation) or a manual page-by-page read of the Gallica images, both outside a Sonnet verifier's
+  scope/cap.
+
+**Champollion-Figeac, *Captivité du roi François Ier* (1847) -- located on Gallica; blocked by the same altcha
+wall as Camusat, not a new route.** Not on Internet Archive: one `advancedsearch` for
+`title:(Captivité) AND title:(François)` returns 4 hits, none this work (a 1892 Louise-de-Savoie diplomatic
+history, an unrelated 1731 devotional title, an 1844 Paris municipal register, an unrelated 1792 report); a
+narrower query adding "Champollion" to the text search returns 0. **Confirmed absent from IA**, as the first
+pass already found by a different route. **Found on Gallica**: `dc.title`-anchored SRU query (`(dc.title all
+"captivité roi François Champollion")`) returns exactly 1 hit, **ark:/12148/bpt6k204021j** (NUMM-204021,
+"Captivité du roi François Ier / par M. Aimé Champollion-Figeac") -- not in AUDIT.md before this session. Its
+`.texteBrut` OCR download 302-redirects to `/services/engine/search/altcha?altchaNotVerified=false`, the
+identical Gallica bot-verification interstitial that blocked Camusat's `bpt6k5039434` in the first pass, not a
+network failure. **Stopped and logged, not retried, per the access playbook.** A follow-up IIIF `manifest.json`
+check (to see whether this item, unlike Camusat's, exposes an OCR/text `seeAlso` service) failed twice on
+`gallica.bnf.fr` -- a connection reset, then, after the single allowed retry, a full timeout -- and was not
+attempted a third time; other workers were concurrently active on `gallica.bnf.fr` this session per ROOM.md, so
+these failures are not necessarily specific to this ark. **Status change: from "not found on IA or through the
+Google Books API" (first pass, incomplete -- Gallica was not checked) to "not on IA; on Gallica but altcha-blocked
+like Camusat, manifest OCR-service check inconclusive (host failures, not re-attempted)."** Still not closed, and
+now grouped with Camusat as the same kind of gap: a real, located Gallica copy behind the same challenge.
+
+**Gap (4), fr.3019 no.31 -- resolved: the calibration is canvas = folio + 2, correcting the first pass's
+uncertain "88 or possibly 86."** The brief supposed the manifest carries two labelled leaves to fit an offset
+from; it does not -- **all 290 canvases of `btv1b9059994n` are labelled "NP"** (checked programmatically, not by
+eye), so no manifest-label calibration is possible for this manuscript at all, unlike (apparently) other targets
+in this project. The finding aid gives the calibration instead: `archivesetmanuscrits.bnf.fr/ark:/12148/cc49477m`
+(re-fetched, one reset then one retried success), read as plain text, pairs each item with a printed folio number
+directly: item 3 "Fol. 6", **item 31 "Fol. 84"** (not "Fol. 86" as the first pass's paraphrase had it -- the
+finding aid's own text says 84), item 47 "Fol. 131". Canvas f86 (`btv1b9059994n/f86`, the same canvas the first
+pass already probed) was fetched again at 1600px width: **its top-right corner numeral reads "84" clearly** at
+this resolution, not the "faint... read as '84'" of the first pass. **canvas 86 = folio 84, offset = canvas −
+folio = 2**, consistent with the first pass's own leftover note that canvas 88's corner numeral was "88 or
+possibly 86" -- 86 is correct under this offset (88 − 2). The +2 offset was not treated as a coincidence to
+confirm further, since the finding aid and the image now independently agree on this one point, which is enough
+to fix it (a single check, not a two-point line fit, because the finding aid supplies the second point that the
+manifest cannot).
+- **Content, read from a further crop of the same canvas (signature/closing region, no additional canvases
+  fetched): not a diplomatic-protocol letter in the register of the f.29r/f.30 reading.** The visible text is a
+  military/campaign report -- troops "de pied" and "de cheval", a camp, artillery pieces ("faulcons"), a named
+  captain, movements near a marquis's territory -- ending in an ornate signature, below which a further short
+  paragraph begins "J'ay escript au roy pour..." and names "Paule Camille" and "le marquis de [name partly
+  illegible]", with a dateline that appears to read "Rome, le xv[e] jour de may", consistent with the finding
+  aid's date for item 31. **This transcription is a rough visual scan by a non-specialist reader, not a
+  paleographic reading** (1530 French secretary hand was not attempted line-by-line) -- it is offered as
+  description, "context, not plaintext," per the brief, and should not be relied on for wording. **No exact
+  match was spotted** for any of the ciphered letter's distinctive phrases (porteur, article, adresse,
+  contenter, oster, suspecon, cognoissance, pacquet, courrier, plustost) in what could be made out, but this is
+  not a rigorous phrase search and the hand defeats confident reading of most of the page. The subject matter
+  (troop movements, artillery, a marquis) does not obviously overlap the ciphered letter's apparent subject
+  (a courier, an article set apart, an address to the king via his secretary) -- consistent with the second
+  audit's observation that item 31 is addressed to a different recipient (the grand maître, not Villandry) and
+  carries no "avec chiffre" flag. **This remains context, not a decipherment or a source of new plaintext for
+  item 21/22**, and it does not move the class.
+- Two more canvas fetches (a mis-targeted crop, then a corrected one, both of the same already-fetched f86) were
+  used to read the closing/signature region; no other canvases of `btv1b9059994n` were fetched this session.
+
+**Recommendation (not a class change -- the verifier does not move the class).** Camusat and Champollion-Figeac
+are now the same kind of gap -- a located copy, blocked by Gallica's altcha challenge -- rather than two
+different problems; Camusat is additionally confirmed absent from HathiTrust by every identifier this session
+could find. The fr.3019 calibration gap is closed (canvas 86 = folio 84), and its content, on a non-expert
+reading, looks like unrelated context rather than a lead. **N3 should stay N3.** The single concrete next step
+across both remaining gaps is the same one the first pass already named: a Gallica-only session (no concurrent
+host traffic from other workers) retrying `.texteBrut` cold on both arks, since an altcha challenge can be
+traffic-dependent rather than a permanent block; short of that, only a manual page-by-page read of either
+Gallica scan, or the person's JSTOR/HathiTrust access (ASKS.md row 17), would close them. The safe sentence of
+section 1 is unchanged.
+
+### Requests this session
+
+catalog.hathitrust.org: 4 (2 Bibliographic API calls by oclc/lccn, both 200 with empty results; 1 reachability
+check; 1 `Search/Home` title search, 403 Cloudflare challenge, not retried). openlibrary.org: 4 (2 search.json,
+1 work editions.json, 1 book record). lccn.loc.gov: 2 (redirect check, MARCXML). www.googleapis.com (Books,
+keyed, country=US, key never printed): 2. archive.org (advancedsearch): 2. search.worldcat.org: 1 (reachable,
+200, but client-rendered with no usable data in the static fetch). gallica.bnf.fr: about 11 (2 SRU queries, the
+first mistargeted; 1 `.texteBrut` + 1 header-only recheck, both altcha; 2 manifest.json attempts for
+`bpt6k204021j`, 1 reset + 1 timeout, not retried a third time; 1 manifest.json for `btv1b9059994n`, 200 after an
+earlier unrelated reset/timeout episode on the other ark; 4 image fetches for canvas f86, all 200 -- full page,
+two mistargeted/retargeted signature crops). archivesetmanuscrits.bnf.fr: 2 (1 reset, 1 retried success).
+WebSearch: 2. No logins, no credentials printed, no decoding, no subagents, no edits to reading.txt/key.tsv/
+ciphertext.txt. Images saved under `images/fr3019_check/` (not the target's own `images/manifest.json`, since
+these are a companion manuscript's canvases, not fr.2980's).
