@@ -1,0 +1,164 @@
+run	page	line	pos	token	gloss	left	right	conf
+p1-1	1	1	1	61	Auß Franckreich	vnd guttes zugeschrieben werden,		ok
+p1-1	1	1	2	40	^			ok
+p1-1	1	1	3	26	^			ok
+p1-1	1	1	4	121	^			ok
+p1-1	1	1	5	202	^			ok
+p1-1	1	1	6	122	^			ok
+p1-1	1	1	7	102	^			ok
+p1-1	1	1	8	27	fol.			? gloss abbrev (superscript), may be archival/folio mark not decipherment; span 27-31 by x-position, uncertain
+p1-1	1	1	9	31	^		des mehrer theil vnd grosser hauff	ok
+p1-2	1	2	1	80		in handlung gestanden, das ich		? gloss row above 80..124 has only faint illegible smudges (checked at high contrast, several attempts)
+p1-2	1	2	2	82				ok
+p1-2	1	2	3	4				ok
+p1-2	1	2	4	123				ok
+p1-2	1	2	5	39				ok
+p1-2	1	2	6	9				ok
+p1-2	1	2	7	5				ok
+p1-2	1	2	8	124				ok
+p1-2	1	2	9	St				? faint illegible smudge above St.61 region, could not read despite contrast stretch
+p1-2	1	2	10	61				ok
+p1-2	1	2	11	iii				ok
+p1-2	1	2	12	79				ok
+p1-2	1	2	13	81				ok
+p1-2	1	2	14	gis			nde greifen wollten	"ok; run ends at paper's right deckle edge (not torn/lost text); MS word-wraps continuation ""nde"" begins next line as plain prose, not part of run"
+p1-3	1	3	1	112		nde greifen wollten		? checked closely for gloss above 112-63, found only a stray ink dot, no legible letters
+p1-3	1	3	2	82				ok
+p1-3	1	3	3	78				ok
+p1-3	1	3	4	102				ok
+p1-3	1	3	5	92				ok
+p1-3	1	3	6	126				ok
+p1-3	1	3	7	120				ok
+p1-3	1	3	8	63			rsten, habe auch die	ok
+p2-1	2	1	1	77		van sult nichts gefunden, dan		ok
+p2-1	2	1	2	85				ok
+p2-1	2	1	3	25	der			ok
+p2-1	2	1	4	126	^			ok
+p2-1	2	1	5	36				ok
+p2-1	2	1	6	84				ok
+p2-1	2	1	7	24	vorrath			? gloss span approx by x-position, could cover 84 instead/also
+p2-1	2	1	8	60				ok
+p2-1	2	1	9	38				ok
+p2-1	2	1	10	95			mit	ok
+p2-2	2	2	1	144	gute	Ihm		ok
+p2-2	2	2	2	132	^			ok
+p2-2	2	2	3	350			hofft er gelts soll	ok
+p2-3	2	3	1	64		Ich hab bey den Leuten		ok
+p2-3	2	3	2	37	aus Franckrych			? span approx: covers 37-202 by x-position, 64 appears just before gloss starts
+p2-3	2	3	3	30	^			ok
+p2-3	2	3	4	127	^			ok
+p2-3	2	3	5	202	^		viel bekommen in ihr	ok
+p2-4	2	4	1	83		viel bekommen in ihr		ok; run begins here, ends line at paper's right deckle edge (not lost text)
+p2-4	2	4	2	23				ok
+p2-4	2	5	3	113	verlegung			ok; continues on next MS line, no prose break, so kept as one run with p2-4 pos1-2
+p2-4	2	5	4	82	^			ok
+p2-4	2	5	5	93				ok
+p2-4	2	5	6	36				ok
+p2-4	2	5	7	5				ok
+p2-4	2	5	8	94				ok
+p2-4	2	5	9	128				ok
+p2-4	2	5	10	78				ok
+p2-4	2	5	11	81				ok
+p2-4	2	5	12	29				ok
+p2-4	2	5	13	129	des gelts			ok
+p2-4	2	5	14	350	^		van hab mit ernst eingelassen	ok
+p2-5	2	6	1	153	Erlsgeduc von graf	dafür gewiss sein, dass sie		? gloss badly formed/hard to parse, transcribed as best-effort reading
+p2-5	2	6	2	130	^			ok
+p2-5	2	6	3	90				ok
+p2-5	2	6	4	1				ok
+p2-5	2	6	5	79				ok
+p2-5	2	6	6	173			gehen in andere Sach	ok
+p2-6	2	7	1	67		suchen oder durch		ok
+p2-6	2	7	2	37	bundnus			ok
+p2-6	2	7	3	9	^			ok
+p2-6	2	7	4	77	^			ok
+p2-6	2	7	5	3				ok
+p2-6	2	7	6	115				ok
+p2-6	2	7	7	131			die	ok
+p2-7	2	7	8	8		die		ok
+p2-7	2	7	9	8				ok
+p2-7	2	7	10	81			auszufinden,	"ok; MS hyphenates ""auszu-/finden"" across line break right after this run; not part of run"
+p2-8	2	8	1	66		auszufinden, alsdann		ok
+p2-8	2	8	2	107				ok
+p2-8	2	8	3	2				ok
+p2-8	2	8	4	76				ok
+p2-8	2	8	5	en	finden			ok
+p2-8	2	8	6	132	^			ok
+p2-8	2	8	7	131			wollen, damit sie denen	ok
+p2-9	2	8	8	135	in Franckreich	wollen, damit sie denen		ok
+p2-9	2	8	9	104	^			ok
+p2-9	2	8	10	n	^			ok
+p2-9	2	8	11	134	^			ok
+p2-9	2	8	12	202			so	ok
+p2-10	2	9	1	68	bundnus	und sie geben in der		ok
+p2-10	2	9	2	36	^			ok
+p2-10	2	9	3	9				ok
+p2-10	2	9	4	76				ok
+p2-10	2	9	5	3				ok
+p2-10	2	9	6	37				ok
+p2-10	2	9	7	26				ok
+p2-10	2	9	8	135			darinnen sie bey	ok
+p2-11	2	9	9	153	in Franckreich Lothringen	darinnen sie bey		ok
+p2-11	2	9	10	161	^		und andere so zu lang	ok
+p2-12	2	10	1	104	in	abschafft, man soll zufrieden sein Ihrer Fürsten, so man		"? tiny superscript gloss, may read ""in"" only"
+p2-12	2	10	2	9				ok
+p2-12	2	10	3	136				ok
+p2-12	2	10	4	21				ok
+p2-12	2	10	5	81				ok
+p2-12	2	10	6	iii				ok
+p2-12	2	10	7	101			sein	ok
+p2-13	2	11	1	91	religions sachen			? gloss above 91-18 assigned by x-position; conceivably belongs to line above instead
+p2-13	2	11	2	102	^			ok
+p2-13	2	11	3	18	^			ok
+p2-13	2	11	4	1				ok
+p2-13	2	11	5	30				ok
+p2-13	2	11	6	29				ok
+p2-13	2	11	7	61			sein Ihre	ok
+p2-14	2	11	8	38	Underthanen	sein Ihre		ok
+p2-14	2	11	9	3	^			ok
+p2-14	2	11	10	80	^			ok
+p2-14	2	11	11	83				ok
+p2-14	2	11	12	23				ok
+p2-14	2	11	13	33				ok
+p2-14	2	11	14	63				ok
+p2-14	2	11	15	3				ok
+p2-14	2	11	16	en			ab moge aufhalten	ok
+p2-15	2	12	1	105	in Franckreich	als da man etwan		ok
+p2-15	2	12	2	5	^			ok
+p2-15	2	12	3	136				ok
+p2-15	2	12	4	202			(line ends)	ok
+p2-16	2	13	1	9		sich gegen dieselb, [struck word]		ok; preceded by one word struck through in MS, illegible, not transcribed (no dots, not a cipher run)
+p2-16	2	13	2	69	obligieren			? gloss position approx, may belong to 69 or 104
+p2-16	2	13	3	114				ok
+p2-16	2	13	4	104				ok
+p2-16	2	13	5	94				ok
+p2-16	2	13	6	105				ok
+p2-16	2	13	7	24				ok
+p2-16	2	13	8	84				ok
+p2-16	2	13	9	4				ok
+p2-16	2	13	10	137			solle,	ok
+p2-17	2	14	1	9	die bundnus	werben, so lieb		ok
+p2-17	2	14	2	101	^			ok
+p2-17	2	14	3	138				ok
+p2-17	2	14	4	70				ok
+p2-17	2	14	5	90				ok
+p2-17	2	14	6	1				ok
+p2-17	2	14	7	80				ok
+p2-17	2	14	8	2				ok
+p2-17	2	14	9	39				ok
+p2-17	2	14	10	30			wieder der	ok
+p2-18	2	14	1	103	Ihr	wieder der		ok
+p2-18	2	14	2	100	eur			? small gloss, uncertain reading
+p2-18	2	14	3	21				ok
+p2-18	2	14	4	140				ok
+p2-18	2	14	5	115				ok
+p2-18	2	14	6	85				ok
+p2-18	2	14	7	36				ok
+p2-18	2	14	8	4			und	ok
+p2-19	2	15	1	171	der Frantzosen zu ihrem	das man [struck word]		? gloss hard to parse fully, best-effort reading; one word struck through in MS just before this run, illegible, not transcribed (no dots)
+p2-19	2	15	2	141	^			ok
+p2-19	2	15	3	99	^			ok
+p2-19	2	15	4	81				ok
+p2-19	2	15	5	114				ok
+p2-19	2	15	6	90				ok
+p2-19	2	15	7	82			Ich hoffe kein wollen mit	ok

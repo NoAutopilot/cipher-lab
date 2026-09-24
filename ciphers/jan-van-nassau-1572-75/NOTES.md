@@ -599,3 +599,28 @@ prints raw undeciphered cipher numbers, a genuine Class B target; see J5I's sect
 current state of that reading, including a further ~226-numeral cipher stretch on p4-p5 that Groen's own print
 omits entirely). 5797 (Lodewijk van Nassau circle, separate folder) stays open only for 7 localized gaps, not a
 fresh target, per csWV2.
+
+## J5S key and reading of 5549 (24 Sept 2026) -- progress
+
+LANE R3 worker J5S (brief `.claude/briefs/runs/2026-09-24-lane-r3-jan5549-solve.md`). Working files in `j5s/`.
+
+**Job 1, key search.** Candidates taken from `sources/wvo/cipher-letters-2026-09-24.tsv` (cipher letters between Willem,
+Jan and Lodewijk, Sept 1573 - July 1574). PDFs fetched from resources.huygens.knaw.nl and viewed for system and gloss
+(kept local, `j5s/pdf/` gitignored, re-fetchable from the WVO pdf_url):
+- **5550** (Jan to Willem, Dillenburg 25 Dec 1573, KHA A 11/XIV A/5-19): runs in the 5549 style (values 1-350, clear
+  endings inside runs) with a contemporary interlinear decipherment over many runs. Sonnet pass
+  `j5s/ciphertext_5550.tsv` (163 tokens, 22 runs, 54 tokens under a gloss, 12 flagged '?'). Its runs read under
+  **Lodewijk's 1574 five-per-letter table** (`ciphers/lodewijk-van-nassau-1573-74/key.tsv`, unrotated): glossed
+  "Underthanen" = 38.3.80.83.23.33.63.3.en -> undertan(en); "obligieren" -> obligiren; "bundnus" (twice) -> b-u-?-d-n-u-s;
+  "verlegung des gelts" -> erlegung des ...; 202 = Franckreich (glossed 4x). Output `j5s/5550_under_lodewijk_key.txt`.
+  So the "verendertte Instruction oder Ciffer" that Willem sent in autumn 1573 is the table Lodewijk used in 1574.
+- **5549 under that table does not read** (`python3 j5s/try_lod.py groen/groen_5549.tsv`: no German in any run), which
+  agrees with 5549's own postscript: the writer "die alte Ciffer ... widder ahngefangen undt bisz zu ende gebraucht".
+  5549 is therefore (all or nearly all) in the OLD key, which is neither key_1572 nor Lodewijk's table.
+- 5549 has no arithmetic structure: raw IC of values <=120 is 0.019; IC of (code div w) for w=3..6 and of code mod k for
+  k=2..40 is at the random level (e.g. div 5: 0.050-0.052 against 0.052 for a random code-to-block map). `j5s/stats.py`.
+- 5575 (Jan, 31 Jul 1574, A 3, 895/I) is a clear "Copia" whose note says the underlined words were in cipher: no numerals.
+- 5552 (21 Apr 1574) and 5557 (31 May 1574) carry glossed runs but postdate the switch (new table); not pursued.
+- **5797** (Lodewijk, Dillenburg 22 Oct 1573, A 3, 895/I; before the new cipher arrived): many runs in the same style on
+  pp.3-8; the likeliest old-key sibling. Groen IV Lettre CDXLIV prints it in clear; that text is not on disk (dbnl.org is
+  LANE V3's host; requested in ROOM 24 Sept 2026). Sonnet pass on its numerals running (`j5s/ciphertext_5797.tsv`).
