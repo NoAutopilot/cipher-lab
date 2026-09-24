@@ -1,0 +1,432 @@
+line	position	group	confidence
+f226r_L1	clear		low
+f226r_L2	clear	La lettre dont Vre Mate m'a honorée en	high
+f226r_L3	clear	Datte du xe du passé, ne me fust rendue que le	high
+f226r_L4	clear	Jour d'hier xbme du present. Je tiens a grace le	high
+f226r_L5	clear	reproche et le Commandement que Vre Mate me	high
+f226r_L6	clear	fait la raison de ma retenue n'a pas peu luy desplaire	high
+f226r_L7	clear	puis que c'est par respect. V: Mate Je trouve	high
+f226r_L8	clear	aussy obeye par la prompte responce que je	high
+f226r_L9	clear	fais a sa lettre mais peut estre n'ay je pas suivy	high
+f226r_L10	clear	son sens, qui pouvoit estre	high
+f226r_L10	clear	que le communicasse	medium
+f226r_L10	1	35	high
+f226r_L10	2	18	high
+f226r_L10	3	_84	high
+f226r_L10	4	>	low
+f226r_L10	5	35	high
+f226r_L10	clear	sa deffesche a la Reyne	high
+f226r_L10	6	40	high
+f226r_L10	7	54	high
+f226r_L10	8	Z	medium
+f226r_L10	9	65	high
+f226r_L10	10	64	high
+f226r_L10	11	_88	high
+f226r_L10	12	48	high
+f226r_L10	13	Z	medium
+f226r_L10	14	d	medium
+f226r_L10	15	13	high
+f226r_L10	16	w	medium
+f226r_L10	17	_27	high
+f226v_L1	clear		low
+f226v_L2	clear		low
+f226v_L3	clear		low
+f226v_L4	clear	et en suitte	high
+f226v_L4	clear	que il luy fisse	high
+f226v_L5	1	94	high
+f226v_L5	2	9	high
+f226v_L5	3	y	medium
+f226v_L5	4	68	high
+f226v_L5	5	v	low
+f226v_L5	6	c	low
+f226v_L5	7	70	high
+f226v_L5	8	55	low
+f226v_L5	9	18	high
+f226v_L5	10	28	high
+f226v_L5	11	99	high
+f226v_L5	12	Z	medium
+f226v_L5	13	63	high
+f226v_L5	clear	sceux	medium
+f226v_L5	clear	les intentions	high
+f226v_L5	14	2#	medium
+f226v_L5	15	81	high
+f226v_L5	16	77	high
+f226v_L5	17	c	low
+f226v_L5	18	X	medium
+f226v_L5	19	65	high
+f226v_L5	20	Z	medium
+f226v_L5	21	c	low
+f226v_L5	22	y	medium
+f226v_L5	23	70	high
+f226v_L5	24	p	medium
+f226v_L5	25	82	high
+f226v_L5	26	Z	medium
+f226v_L6	clear	le mien a esté qu'en la plus part des affaires du	high
+f226v_L7	clear	monde le souverain Conseil est de gaigner temps	high
+f226v_L7	1	Z	medium
+f226v_L8	clear	affez	medium
+f226v_L8	clear	soft	low
+f226v_L8	clear	respondre	medium
+f226v_L8	clear	et que ce seroit	high
+f226v_L8	1	un	medium
+f226v_L8	2	Z	medium
+f226v_L8	3	63	medium
+f226v_L8	4	9	high
+f226v_L8	5	72	high
+f226v_L8	6	Z	medium
+f226v_L8	7	v	low
+f226v_L8	8	60	high
+f226v_L8	9	Z	medium
+f226v_L8	10	50	high
+f226v_L8	11	y	medium
+f226v_L9	clear	aux	medium
+f226v_L9	clear	Ministres	high
+f226v_L9	clear	des	low
+f226v_L9	clear	de	low
+f226v_L9	1	L	low
+f226v_L9	2	60	high
+f226v_L9	3	71	high
+f226v_L9	4	gt	medium
+f226v_L9	5	33	high
+f226v_L9	6	40	high
+f226v_L9	7	Z	medium
+f226v_L9	8	v	low
+f226v_L9	9	60	high
+f226v_L9	10	Z	medium
+f226v_L9	11	88	high
+f226v_L9	12	36	medium
+f226v_L9	13	88	high
+f226v_L10	clear	Mantoue	high
+f226v_L10	clear	quand	high
+f226v_L10	1	31	high
+f226v_L10	2	y	medium
+f226v_L10	3	72	high
+f226v_L10	4	rr	medium
+f226v_L10	5	9	high
+f226v_L10	6	54	high
+f226v_L10	7	y	medium
+f226v_L10	8	L	low
+f226v_L10	9	22	high
+f226v_L10	10	9	high
+f226v_L10	11	60	high
+f226v_L10	12	41	high
+f226v_L10	13	rr	medium
+f226v_L10	14	75	medium
+f226v_L11	clear	renouuelleroient	high
+f226v_L11	clear	leurs	medium
+f226v_L11	1	ff	medium
+f226v_L11	2	24	high
+f226v_L11	3	62	high
+f226v_L11	4	c	low
+f226v_L11	5	9	high
+f226v_L11	6	y	medium
+f226v_L11	7	v	low
+f226v_L11	8	29	high
+f226v_L11	9	Z	medium
+f226v_L11	10	c	low
+f226v_L11	11	y	medium
+f226v_L11	12	Z	medium
+f226v_L12	clear	instances	medium
+f226v_L12	1	69	high
+f226v_L12	2	y	medium
+f226v_L12	3	82	high
+f226v_L12	4	Z	medium
+f226v_L12	clear	et peut estre quarante	high
+f226v_L13	clear	presentement diverses choses a poursuivre ilz	high
+f226v_L14	clear	pourront	high
+f226v_L14	clear	soubliez	medium
+f226v_L14	clear	de celle la	medium
+f226v_L14	1	69	high
+f226v_L14	2	rr	medium
+f226v_L14	3	y	medium
+f226v_L14	4	23	high
+f226v_L14	5	9	high
+f226v_L14	6	X	medium
+f226v_L14	7	88	high
+f226v_L14	8	82	high
+f226v_L14	9	ff	medium
+f226v_L14	10	24	high
+f226v_L15	clear	et	medium
+f226v_L15	clear	ainsy	medium
+f226v_L15	clear	le titre	medium
+f226v_L15	1	23	high
+f226v_L15	2	94	high
+f226v_L15	3	w	medium
+f226v_L15	4	c	low
+f226v_L15	5	y	medium
+f226v_L15	6	66	high
+f226v_L15	7	24	high
+f226v_L15	8	71	high
+f226v_L15	9	v	low
+f226v_L15	10	60	high
+f226v_L15	11	103	high
+f226v_L16	clear	Du gouvernement	high
+f226v_L16	clear	de Nivernois	medium
+f226v_L16	1	91	high
+f226v_L16	2	9	high
+f226v_L16	3	rr	medium
+f226v_L16	4	75	low
+f226v_L16	5	X	medium
+f226v_L16	6	39	high
+f226v_L16	7	81	high
+f226v_L16	8	88	high
+f226v_L16	9	40	high
+f226v_L16	10	73	high
+f226v_L16	11	X	medium
+f226v_L16	12	41	high
+f226v_L17	clear	Le trouvera	medium
+f226v_L17	clear	fortifié	medium
+f226v_L17	1	Z	medium
+f226v_L17	2	65	medium
+f226v_L17	3	v	low
+f226v_L17	4	62	high
+f226v_L17	5	rr	medium
+f226v_L17	6	75	low
+f226v_L17	7	59	low
+f226v_L17	8	100	high
+f226v_L17	9	X	medium
+f226v_L17	10	71	high
+f226v_L17	11	m	medium
+f226v_L18	clear	d'une possession	low
+f226v_L18	1	99	high
+f226v_L18	2	9	high
+f226v_L18	3	91	high
+f226v_L18	4	39	high
+f226v_L18	5	50	high
+f226v_L18	6	Z	medium
+f226v_L18	7	65	high
+f226v_L18	8	2#	medium
+f226v_L18	9	66	high
+f226v_L18	10	q	low
+f226v_L18	11	y	medium
+f226v_L18	12	102	high
+f226v_L19	clear	maintenue	medium
+f226v_L19	clear	depuis	medium
+f226v_L19	1	31	high
+f226v_L19	2	v	low
+f226v_L19	3	y	medium
+f226v_L19	4	70	high
+f226v_L19	5	42	medium
+f226v_L19	6	9	high
+f226v_L19	7	88	high
+f226v_L19	8	51	high
+f226v_L19	9	v	low
+f226v_L19	10	Z	medium
+f226v_L20	clear	son absence	medium
+f226v_L20	clear	du Royaume	medium
+f226v_L20	1	67	high
+f226v_L20	2	y	medium
+f226v_L20	3	n	medium
+f226v_L20	4	y	medium
+f226v_L20	5	65	high
+f226v_L20	6	y	medium
+f226v_L20	7	82	high
+f226v_L20	8	91	high
+f226v_L20	9	62	high
+f226v_L20	10	h	medium
+f226v_L20	11	71	high
+f226v_L20	12	32	high
+f226v_L21	clear		low
+f226v_L22	clear		low
+f226v_L23	clear		low
+f227r_L1	clear		low
+f227r_L2	clear		low
+f227r_L3	clear		low
+f227r_L4	clear		low
+f227r_L5	clear	au droict	medium
+f227r_L6	clear	quant	low
+f227r_L6	1	54	high
+f227r_L6	2	y	medium
+f227r_L6	3	v	low
+f227r_L6	4	71	high
+f227r_L6	5	b	medium
+f227r_L6	6	62	high
+f227r_L6	clear	de Vre Mate	high
+f227r_L7	clear	me permettra de luy dire, qu'il est si puissamment	high
+f227r_L7	clear	en faveur	medium
+f227r_L7	clear	des Ducs de	high
+f227r_L7	clear	estably	high
+f227r_L7	1	9	high
+f227r_L7	2	y	medium
+f227r_L7	3	91	high
+f227r_L7	4	73	high
+f227r_L7	5	rr	medium
+f227r_L7	6	X	medium
+f227r_L7	7	92	high
+f227r_L7	8	91	high
+f227r_L7	9	d	medium
+f227r_L7	10	9	high
+f227r_L7	11	88	high
+f227r_L8	clear	Nivernois	high
+f227r_L8	clear	quil servit	high
+f227r_L8	1	40	high
+f227r_L8	2	73	high
+f227r_L8	3	X	medium
+f227r_L8	4	41	high
+f227r_L8	5	v	low
+f227r_L8	6	Z	medium
+f227r_L8	7	56	high
+f227r_L8	8	ff	medium
+f227r_L8	9	63	high
+f227r_L8	10	62	high
+f227r_L9	clear	impossible	high
+f227r_L9	clear	de le mettre	high
+f227r_L9	1	v	low
+f227r_L9	2	y	medium
+f227r_L9	3	50	high
+f227r_L9	4	Z	medium
+f227r_L9	5	66	high
+f227r_L9	6	y	medium
+f227r_L9	7	24	high
+f227r_L9	8	88	high
+f227r_L9	9	24	high
+f227r_L9	10	32	high
+f227r_L9	11	v	low
+f227r_L9	12	x	low
+f227r_L9	13	60	high
+f227r_L10	clear	en	medium
+f227r_L10	clear	doubte	high
+f227r_L10	clear	ainsy	high
+f227r_L10	clear	en	medium
+f227r_L10	1	9	high
+f227r_L10	2	y	medium
+f227r_L10	3	90	high
+f227r_L10	4	rr	medium
+f227r_L10	5	y	medium
+f227r_L10	6	70	high
+f227r_L10	7	94	high
+f227r_L10	8	w	medium
+f227r_L10	9	v	low
+f227r_L10	10	y	medium
+f227r_L10	11	66	high
+f227r_L10	12	9	high
+f227r_L10	13	y	medium
+f227r_L11	clear	la pensée	high
+f227r_L11	clear	de le vendre	high
+f227r_L11	1	23	high
+f227r_L11	2	48	high
+f227r_L11	3	y	medium
+f227r_L11	4	63	high
+f227r_L11	5	9	high
+f227r_L11	6	88	high
+f227r_L11	7	24	high
+f227r_L11	8	73	high
+f227r_L11	9	y	medium
+f227r_L11	10	b	medium
+f227r_L11	11	60	high
+f227r_L12	clear	Vostre Mate	high
+f227r_L12	clear	trouuerez	low
+f227r_L12	1	80	high
+f227r_L12	2	31	high
+f227r_L12	3	18	high
+f227r_L12	4	Z	medium
+f227r_L12	5	70	medium
+f227r_L12	6	v	low
+f227r_L12	7	62	medium
+f227r_L12	8	rr	medium
+f227r_L12	9	73	low
+f227r_L12	10	62	medium
+f227r_L12	11	v	low
+f227r_L12	12	v	low
+f227r_L13	clear	de la	high
+f227r_L13	clear	difficulté	high
+f227r_L13	clear	mais	high
+f227r_L13	1	88	high
+f227r_L13	2	23	high
+f227r_L13	3	89	high
+f227r_L13	4	w	medium
+f227r_L13	5	99	high
+f227r_L13	6	85	medium
+f227r_L13	7	ff	medium
+f227r_L13	8	70	high
+f227r_L13	9	31	high
+f227r_L13	10	v	low
+f227r_L13	11	Z	medium
+f227r_L14	clear	il y a	high
+f227r_L14	clear	pour	high
+f227r_L14	clear	le	medium
+f227r_L14	clear	le conserver	high
+f227r_L15	1	52	high
+f227r_L15	2	63	high
+f227r_L15	3	24	high
+f227r_L15	4	86	high
+f227r_L15	5	63	high
+f227r_L15	6	X	medium
+f227r_L15	7	75	medium
+f227r_L15	8	X	medium
+f227r_L15	9	22	high
+f227r_L15	10	h	medium
+f227r_L15	11	w	medium
+f227r_L15	clear	un exemple	high
+f227r_L15	clear	qui fait pour	medium
+f227r_L16	clear	elle	high
+f227r_L16	clear	en ce que le Roy	high
+f227r_L16	1	rr	low
+f227r_L16	2	y	medium
+f227r_L16	3	9	high
+f227r_L16	4	m	medium
+f227r_L16	5	9	high
+f227r_L16	6	v	low
+f227r_L16	7	60	medium
+f227r_L16	8	24	high
+f227r_L16	9	38	low
+f227r_L16	10	3	low
+f227r_L16	11	32	low
+f227r_L16	12	103	high
+f227r_L17	clear	[strikethrough, illegible]	low
+f227r_L17	clear	fais poursuivi	medium
+f227r_L17	1	9	high
+f227r_L17	2	ff	medium
+f227r_L17	3	24	high
+f227r_L17	4	9	high
+f227r_L17	5	y	medium
+f227r_L17	6	82	high
+f227r_L17	7	33	medium
+f227r_L17	8	26	medium
+f227r_L17	9	h	medium
+f227r_L17	10	w	medium
+f227r_L17	11	7	low
+f227r_L17	12	0	low
+f227r_L17	13	y	medium
+f227r_L17	14	v	low
+f227r_L17	15	71	high
+f227r_L17	16	v	low
+f227r_L17	17	60	high
+f227r_L17	18	100	high
+f227r_L17	19	v	low
+f227r_L17	20	Z	medium
+f227r_L17	21	52	high
+f227r_L17	22	73	high
+f227r_L17	23	rr	medium
+f227r_L18	clear	l'on se contenta pour reparer le tort qui estoit	high
+f227r_L19	clear	au Duc de Nevers	high
+f227r_L19	clear	fait	high
+f227r_L19	1	71	high
+f227r_L19	2	91	high
+f227r_L19	3	d	medium
+f227r_L19	4	88	high
+f227r_L19	5	39	high
+f227r_L19	6	75	high
+f227r_L19	7	X	medium
+f227r_L19	8	Z	medium
+f227r_L19	9	103	high
+f227r_L19	10	102	high
+f227r_L20	clear	de luy promettre	high
+f227r_L20	clear	le regres	high
+f227r_L20	1	88	high
+f227r_L20	2	28	high
+f227r_L20	3	00	medium
+f227r_L20	4	62	high
+f227r_L20	5	32	high
+f227r_L20	6	v	low
+f227r_L20	7	x	low
+f227r_L20	8	60	high
+f227r_L20	9	24	high
+f227r_L20	10	60	high
+f227r_L20	11	00	medium
+f227r_L20	12	60	high
+f227r_L20	13	Z	medium
+f227r_L21	clear		low
+f227r_L22	clear		low
+f227r_L23	clear		low
+f227r_L24	clear		low
