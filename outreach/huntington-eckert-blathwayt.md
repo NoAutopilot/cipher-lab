@@ -1,6 +1,7 @@
 status: ready (gate 2 met 24 Sept 2026: JSTOR family clean for both targets; open-index pass run by the owner, no relevant hit, ASKS 34; AUDIT.md 'Outreach gate 2' sections)
-subject: ______ (suggested: Two Civil War telegrams in mssEC 19 and two Blathwayt cipher passages (mssBLA 186, 191) read from your collections)
+subject: Two Civil War telegrams in mssEC 19 and two Blathwayt cipher passages (mssBLA 186, 191) read from your collections
 to: The Huntington Library, Manuscripts Department (curators of the Eckert and Blathwayt papers); the Decoding the Civil War project team (role, not an address)
+targets: ciphers/eckert-1864, ciphers/huntington-blathwayt-madrid-1728
 drafted: 24 Sept 2026, verifier V5 (LANE V4). Nothing sent. The person sends it and records the date in CONTRIBUTIONS.md.
 
 ---

@@ -1,6 +1,7 @@
 status: drafted (gate 2: open-index rows owed, ASKS 44; JSTOR READ rows owed for Gramont and Danzay, JSTOR-QUEUE.tsv)
-subject: ______ (suggested: Gramont 1530 (fr.2980 ff.29-30) and Danzay 1557 (fr.20140 ff.35-36) read with your keys)
+subject: Gramont 1530 (fr.2980 ff.29-30) and Danzay 1557 (fr.20140 ff.35-36) read with your keys
 to: S. Tomokiyo, Cryptiana (address held by the person, not in this repository)
+targets: ciphers/fr2980-gramont, ciphers/fr20140-danzay-1557, ciphers/dupuy452-carpi-1520
 drafted: 24 Sept 2026, verifier V5 (LANE V4). Nothing sent. The person sends it and records the date in CONTRIBUTIONS.md.
 
 ---

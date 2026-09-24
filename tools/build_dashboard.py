@@ -57,7 +57,7 @@ def load_emails():
         else:
             lines = txt.split("\n")
             k = 0
-            while k < len(lines) and re.match(r"^(to|subject|checked|status):", lines[k]):
+            while k < len(lines) and re.match(r"^[a-z]+:\s", lines[k]):
                 k += 1
             body = "\n".join(lines[k:]).strip()
         out.append({"slug": fn[:-3], "to": head.get("to", ""), "subject": head.get("subject", ""), "checked": head.get("checked", ""), "text": body, "status": st})
@@ -159,8 +159,8 @@ def load_drafts_by_target():
         txt = open(os.path.join("outreach", fn), encoding="utf-8").read()
         head = {}
         lines = txt.split("\n"); k = 0
-        while k < len(lines) and re.match(r"^(to|subject|checked|status|targets|links):", lines[k]):
-            mm = re.match(r"^(\w+):\s*(.*)$", lines[k]); head[mm.group(1)] = mm.group(2).strip(); k += 1
+        while k < len(lines) and re.match(r"^[a-z]+:\s", lines[k]):
+            mm = re.match(r"^([a-z]+):\s*(.*)$", lines[k]); head[mm.group(1)] = mm.group(2).strip(); k += 1
         if "targets" not in head: continue
         body = "\n".join(lines[k:]).strip()
         d = {"slug": fn[:-3], "to": head.get("to", ""), "subject": head.get("subject", ""), "status": head.get("status", ""), "text": body, "links": head.get("links", "")}

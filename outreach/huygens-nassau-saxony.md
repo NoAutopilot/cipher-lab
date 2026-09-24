@@ -1,6 +1,7 @@
 status: drafted (gate 2: open-index rows owed, ASKS 44; JSTOR READ row owed for Saxony, JSTOR-QUEUE.tsv; Lodewijk JSTOR family clean)
-subject: ______ (suggested: Cipher passages in six WVO letters (4610, 4611, 4616; 53, 57, 126) read with contemporary keys)
+subject: Cipher passages in six WVO letters (4610, 4611, 4616; 53, 57, 126) read with contemporary keys
 to: Huygens Instituut, editors of the Correspondence of William of Orange (WVO) (role, not an address)
+targets: ciphers/lodewijk-van-nassau-1573-74, ciphers/august-van-saksen-1561-64
 drafted: 24 Sept 2026, verifier V5 (LANE V4). Nothing sent. The person sends it and records the date in CONTRIBUTIONS.md.
 
 ---

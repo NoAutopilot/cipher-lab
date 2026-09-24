@@ -1,6 +1,7 @@
 status: issue 2 (Thurloe P4) ready: gate 2 met 24 Sept 2026 (JSTOR clean; open-index pass run by the owner, no relevant hit, ASKS 34). Issue 1 (Gramont) drafted: open-index rows and one JSTOR READ row owed (ASKS 44)
 subject: see each issue title below
 to: GitHub issues on dbourdeau/cyphersolver (the parent orchestrator posts them once gate 2 is met; never a pull request)
+targets: ciphers/thurloe-printed, ciphers/fr2980-gramont
 drafted: 24 Sept 2026, verifier V5 (LANE V4). Nothing posted.
 
 Checked against his catalogue text on 24 Sept 2026: `sources/solver-diffs/2026-09-24-cyphersolver-site.tsv` has no row
