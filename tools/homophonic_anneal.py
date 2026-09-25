@@ -5,6 +5,8 @@
           [--restarts 8] [--iters 40000] [--skip DOT,COL] [--seed 1] [--out result.json] [--fix 70=q,33=u]
           [--noise 0.1]   error-tolerant solve: see anneal_noisy (LANE R6 CM2, 25 Sept 2026)
           [--robust 0.1]  bounded-loss n-gram scoring: see RobustModel (LANE R6 CM2)
+          [--backoff]     interpolated absolute-discount n-gram of --order with recursive backoff: see BackoffModel
+                          (LANE R7 CM3, 25 Sept 2026); lets --order 4 or 5 run on a 2 MB corpus without add-k sparsity
   python3 tools/homophonic_anneal.py --control PLAIN.txt --signs K --length N --corpus ... (matched control)
 
 CIPHER.tsv: long format, header with a `sign` column (and optional `line`); rows whose sign is in --skip are
@@ -70,6 +72,48 @@ class RobustModel:
         v = self.cache.get(g)
         if v is None:
             v = math.log((1 - self.q) * math.exp(self.m.logp(g)) + self.floor)
+            self.cache[g] = v
+        return v
+
+
+class BackoffModel:
+    """Interpolated absolute-discount n-gram with recursive backoff (LANE R7 CM3, 25 Sept 2026). Same interface as
+    Model (order, freq, V, logp), so anneal(), anneal_noisy(), score() and RobustModel take it unchanged.
+    P_k(g) = max(c(g) - D, 0) / c(ctx) + D * n1plus(ctx) / c(ctx) * P_{k-1}(g[1:]), falling to P_{k-1} when the context
+    is unseen; P_1 is the add-half unigram. Why: the plain add-k Model at order 4 or 5 on a 2 MB corpus assigns most
+    unseen 4-grams the same floor, so its optimum drifts; interpolation keeps the longer context where the corpus has it
+    and the trigram elsewhere. CM2 (25 Sept 2026) measured that the trigram objective's optimum is no longer the true
+    key at 10 percent transcription noise; a longer context per letter is the one lever that changes that, and a
+    5-gram spans most Italian morphemes, which is what a word-aware model would add."""
+    def __init__(self, texts, order=5, D=0.75):
+        s = "".join(fold(t) for t in texts)
+        self.order, self.D, self.V = order, D, len(ALPHA)
+        self.n = [None] + [Counter(s[i:i + k] for i in range(len(s) - k + 1)) for k in range(1, order + 1)]
+        self.ctx = [None, None] + [Counter() for _ in range(2, order + 1)]   # context counts and distinct continuations
+        self.n1p = [None, None] + [Counter() for _ in range(2, order + 1)]
+        for k in range(2, order + 1):
+            for g, c in self.n[k].items():
+                self.ctx[k][g[:-1]] += c
+                self.n1p[k][g[:-1]] += 1
+        self.uni = self.n[1]
+        tot = sum(self.uni.values())
+        self.freq = {a: (self.uni[a] + 0.5) / (tot + 0.5 * self.V) for a in ALPHA}
+        self.cache = {}
+
+    def prob(self, g):
+        k = len(g)
+        if k == 1:
+            return self.freq.get(g, 0.5 / self.V)
+        c = self.ctx[k][g[:-1]]
+        lower = self.prob(g[1:])
+        if c == 0:
+            return lower
+        return max(self.n[k][g] - self.D, 0) / c + self.D * self.n1p[k][g[:-1]] / c * lower
+
+    def logp(self, g):
+        v = self.cache.get(g)
+        if v is None:
+            v = math.log(self.prob(g))
             self.cache[g] = v
         return v
 
@@ -295,6 +339,9 @@ def main():
                          "the positions the solver corrected (free) and the corrected decode")
     ap.add_argument("--robust", type=float, default=0.0,
                     help="bounded-loss scoring (RobustModel): mixture weight q of a uniform n-gram floor")
+    ap.add_argument("--backoff", action="store_true",
+                    help="BackoffModel: interpolated absolute-discount n-gram of --order with recursive backoff "
+                         "(use with --order 4 or 5); default stays the add-k Model")
     ap.add_argument("--fix", help="crib: sign=letter pairs held fixed, e.g. 70=q,33=u,67=e (target mode)")
     ap.add_argument("--fix-first", type=int, default=0,
                     help="control mode: hold the signs of the first N positions at their true letters (the matched "
@@ -302,7 +349,8 @@ def main():
     a = ap.parse_args()
     global W_AS_UU
     W_AS_UU = a.w_as_uu
-    model = Model([open(f, encoding="utf-8").read() for f in a.corpus], a.order)
+    texts = [open(f, encoding="utf-8").read() for f in a.corpus]
+    model = BackoffModel(texts, a.order) if a.backoff else Model(texts, a.order)
     if a.robust:
         model = RobustModel(model, a.robust)
     if a.control:

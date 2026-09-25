@@ -28,6 +28,17 @@ N counts sign tokens. Token accuracy: a token is right when every letter it stan
   to_type on every leaf's stream, before stats/control/target build anything -- a crop-verified merge decision
   (ciphers/fr2933-salviati-1525/merges_f55v.tsv) applies codebook-wide, not just on the leaf it was found on. Rows
   of other kinds (keep_distinct, insufficient_n) are read and ignored. Chained merges resolve to a fixed point.
+  CM_ERR=e (LANE R7 CM3, 25 Sept 2026; cm and cmc): the MEASURED transcription-error mix instead of CM_NOISE's type
+      substitution. e is the total error per sign token, split by CM_MIX="del:ins:code" (default 0.465:0.331:0.204,
+      from CM2's disagreement classes 70.9% sign<->plain, 8.7% missing box, 20.4% base code, 0% marks-only, and the
+      settled direction of the sign<->plain rows, 59.5% plain : 40.5% sign): a share e*del of true signs is DELETED from
+      the stream, a spurious sign drawn at the target's type frequencies is INSERTED after e*ins of positions, and e*code
+      of signs have their base code swapped for a confusable partner (#/+, g/y, bh/g, #/Z, f/y, bh/phi; a code with no
+      partner draws a base code at the target's frequencies), marks kept. Token accuracy counts a deleted token as wrong
+      and an inserted one in neither numerator nor denominator. Row info carries err, mix, del/ins/code counts;
+      suffix _err<e>. CM_ORDER=n (default 3) and CM_BACKOFF=1 (tools/homophonic_anneal.py BackoffModel) choose the
+      language model; suffix _o<n>b.  python3 codemark_curve.py --help prints this text.
+  Test: python3 tools/tests/test_codemark_measured_noise.py
 """
 import csv, json, os, random, sys, time
 from collections import Counter
@@ -47,6 +58,13 @@ NOISE = float(os.environ.get("CM_NOISE", 0))
 TOL = float(os.environ.get("CM_TOL", 0))
 # CM_ROBUST=q (LANE R6 CM2): bounded-loss scoring, tools/homophonic_anneal.py RobustModel; suffix _rob<q>.
 ROBUST = float(os.environ.get("CM_ROBUST", 0))
+# CM_ERR / CM_MIX (LANE R7 CM3): measured error mix, see module docstring. CM_ORDER / CM_BACKOFF: language model.
+ERR = float(os.environ.get("CM_ERR", 0))
+MIX = tuple(float(x) for x in os.environ.get("CM_MIX", "0.465:0.331:0.204").split(":"))
+CONFUSE = [("#", "+"), ("g", "y"), ("bh", "g"), ("#", "Z"), ("f", "y"), ("bh", "phi")]
+ORDER = int(os.environ.get("CM_ORDER", 3))
+BACKOFF = os.environ.get("CM_BACKOFF", "") not in ("", "0")
+TRUTH_INDEX = None  # set by build() under CM_ERR: stream position -> index into toks, or None for an inserted sign
 VOW = "aeiou"
 
 
@@ -89,7 +107,7 @@ def resolve_merge(t):
     return t
 
 
-RSUF = ("" if RESTARTS == 6 else f"_r{RESTARTS}") + (f"_tol{TOL:g}" if TOL else "") + (f"_rob{ROBUST:g}" if ROBUST else "") + ("_merged" if MERGE_MAP else "")
+RSUF = ("" if RESTARTS == 6 else f"_r{RESTARTS}") + (f"_tol{TOL:g}" if TOL else "") + (f"_rob{ROBUST:g}" if ROBUST else "") + ("_merged" if MERGE_MAP else "") + (f"_err{ERR:g}" if ERR else "") + (f"_o{ORDER}{'b' if BACKOFF else ''}" if (ORDER != 3 or BACKOFF) else "")
 SUFFIX = "" if LEAVES == ("f54r", "f54v") else "_all" if LEAVES == LEAVES_ALL else "_" + "-".join(LEAVES)
 
 
@@ -176,9 +194,12 @@ def build(design, n_sign, seed):
         if NOISE:
             un, uw = zip(*units); nrng = random.Random(seed + 9000)
             seq = [nrng.choices(un, uw)[0] if nrng.random() < NOISE else s for s in seq]
+        errinfo = {}
+        if ERR:
+            seq, errinfo = measured_noise(seq, units, Counter(x["code"] for x in sg), random.Random(seed + 9500))
         if design == "cmc":
             seq = [merge_type(s) for s in seq]
-        return seq, toks, {"K": len({s for s in seq}), "key_K": len(units), **({"noise": NOISE} if NOISE else {})}
+        return seq, toks, {"K": len({s for s in seq}), "key_K": len(units), **({"noise": NOISE} if NOISE else {}), **errinfo}
     # vi: base codes over token-initial letters, marks over the vowels carried
     codes = Counter(x["code"] for x in sg).most_common()
     marks = Counter(x["marks"] for x in sg if x["marks"]).most_common(10)
@@ -194,6 +215,34 @@ def build(design, n_sign, seed):
     return seq, toks, {"marked": sum(1 for s in seq if s[1]) / len(seq)}
 
 
+def measured_noise(seq, units, code_freq, nrng):
+    """CM_ERR: apply the measured error mix to a clean cm stream (module docstring). Sets TRUTH_INDEX."""
+    global TRUTH_INDEX
+    pdel, pins, pcode = [ERR * m / sum(MIX) for m in MIX]
+    partners = {}
+    for a, b in CONFUSE:
+        partners.setdefault(a, []).append(b); partners.setdefault(b, []).append(a)
+    un, uw = zip(*units)
+    cn, cw = zip(*code_freq.most_common())
+    out, tix, ndel, nins, ncode = [], [], 0, 0, 0
+    for i, s in enumerate(seq):
+        r = nrng.random()
+        if r < pdel:
+            ndel += 1; continue
+        if r < pdel + pcode:
+            code, mark = s.split("^", 1)
+            p = partners.get(code)
+            newcode = nrng.choice(p) if p else nrng.choices(cn, cw)[0]
+            if newcode != code:
+                ncode += 1
+            s = f"{newcode}^{mark}"
+        out.append(s); tix.append(i)
+        if nrng.random() < pins:
+            out.append(nrng.choices(un, uw)[0]); tix.append(None); nins += 1
+    TRUTH_INDEX = tix
+    return out, {"err": ERR, "mix": ":".join(f"{m:g}" for m in MIX), "del": ndel, "ins": nins, "code": ncode}
+
+
 def expand(seq):
     """vi tokens -> symbol stream (code, then mark if any) and the token boundaries."""
     out, spans = [], []
@@ -207,8 +256,9 @@ def expand(seq):
 
 def run(stream, seed):
     # vi: a mark symbol stands for a vowel by hypothesis (without this the solver swaps the roles of codes and marks)
-    model = ha.Model([open(c, encoding="utf-8", errors="ignore").read() for c in
-                      [os.path.join(D, "..", c) if not os.path.isabs(c) else c for c in CORPUS]], order=3)
+    texts = [open(c, encoding="utf-8", errors="ignore").read() for c in
+             [os.path.join(D, "..", c) if not os.path.isabs(c) else c for c in CORPUS]]
+    model = ha.BackoffModel(texts, order=ORDER) if BACKOFF else ha.Model(texts, order=ORDER)
     if ROBUST:
         model = ha.RobustModel(model, ROBUST)
     allowed = {s: VOW for s in stream if s.startswith("M")}
@@ -228,8 +278,14 @@ def control(design, n, seed):
     truth = "".join(toks)
     sc, key, dec, model, free = run(stream, seed)
     true_sc = ha.score(model, truth, 1.0)
-    let = sum(a == b for a, b in zip(dec, truth)) / len(truth)
-    tok = sum(dec[a:b] == truth[a:b] for a, b in spans) / len(spans)
+    if ERR:  # indels: score each surviving stream position against the token it came from; deleted tokens count wrong
+        ok = sum(dec[i] == toks[j] for i, j in enumerate(TRUTH_INDEX) if j is not None)
+        let = tok = ok / len(toks)
+    else:
+        let = sum(a == b for a, b in zip(dec, truth)) / len(truth)
+        tok = sum(dec[a:b] == truth[a:b] for a, b in spans) / len(spans)
+    if ORDER != 3 or BACKOFF:
+        info = dict(info, order=ORDER, **({"backoff": 1} if BACKOFF else {}))
     if ROBUST:
         info = dict(info, robust=ROBUST)
     if TOL:  # key-only accuracy (no per-position corrections) and how many corrections the solver made
@@ -262,6 +318,8 @@ def target(design, seed):
 
 
 if __name__ == "__main__":
+    if len(sys.argv) < 2 or sys.argv[1] in ("--help", "-h"):
+        print(__doc__); sys.exit(0)
     if sys.argv[1] == "stats":
         stats()
     elif sys.argv[1] == "control":

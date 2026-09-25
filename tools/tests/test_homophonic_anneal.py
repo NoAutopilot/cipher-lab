@@ -59,3 +59,18 @@ assert rm.order == m2.order and rm.freq is m2.freq
 for g in ('der', 'qxz', 'ung'):
     assert rm.logp(g) >= math.log(0.1 / m2.V) - 1e-9 and rm.logp(g) >= m2.logp(g) + math.log(0.9) - 1e-9, g
 print('ok robust')
+
+# --backoff (BackoffModel, LANE R7 CM3, 25 Sept 2026): a proper distribution at every order (the continuations of a
+# seen, an unseen and a short context sum to one), the same interface as Model, and the first block's control (N=282,
+# K=20, w as uu) read at >= 85 percent with order 4 under backoff, so a longer context is not a loss on a short text.
+bm = ha.BackoffModel([open(os.path.join(R, 'tools', 'data', 'de16', 'composed_enhg.txt'), encoding='utf-8').read(),
+                      open(os.path.join(D, 'plaintext_98.txt'), encoding='utf-8').read()], 4)
+assert bm.order == 4 and bm.V == m2.V and set(bm.freq) == set(m2.freq)
+for ctx in ('und', 'qxz', 'e', 'ge'):
+    tot = sum(bm.prob(ctx + a) for a in ha.ALPHA)
+    assert abs(tot - 1.0) < 1e-9, (ctx, tot)
+seq4, p4, _ = ha.make_control(' '.join(words), 20, 282, bm, 1)
+sc4, key4 = ha.solve(seq4, bm, 3, 200000, 1, 1.0)[0]
+acc4 = sum(a == b for a, b in zip(''.join(key4[x] for x in seq4), p4)) / len(p4)
+print(f'ok backoff: order-4 backoff control {acc4:.1%}')
+assert acc4 >= 0.85, acc4
