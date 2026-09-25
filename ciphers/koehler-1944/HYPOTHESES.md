@@ -64,7 +64,7 @@ interviews with three Abwehr officers who remembered him -- also not opened in t
 
 | Family | Test | Control (same N, design, language) | Target | Read |
 |---|---|---|---|---|
-| B running key (book key) | `tools/running_key.py` two-stream beam decode, order-8 KN letter models with latent word boundaries, beam 1000 | German plaintext under a held-out Dutch novel key, vig: 72.7 / 60.4 / 68.3% plaintext letters recovered (seeds 1-3); under a held-out German novel key, vig: 73.7 / 79.1 / 77.1% either-stream (strict 48.6 / 36.6 / 35.3%, the two streams are exchangeable under vig); beau and varbeau, Dutch key, seed 1: 76.0% | pooled joint log-likelihood per letter -3.57 to -3.62 on every run so far, inside the one-time-key noise band (-3.57 to -3.64); controls read -3.12 to -3.17 | control-backed negative for a running key on a modern German or Dutch novel-like text, conditional on the Kahn/Schmeh transcription and on letter models of 1880s-1920s fiction |
+| B running key (book key) | `tools/running_key.py` two-stream beam decode, order-8 KN letter models with latent word boundaries, beam 1000 | German plaintext under a held-out Dutch novel key, vig: 72.7 / 60.4 / 68.3% plaintext letters recovered (seeds 1-3); under a held-out German novel key, vig: 73.7 / 79.1 / 77.1% either-stream (strict 48.6 / 36.6 / 35.3%, the two streams are exchangeable under vig); beau and varbeau, Dutch key, seed 1: 76.0% | pooled joint log-likelihood per letter -3.57 to -3.62 on every configuration run (7; varbeau de/nl on 3 of 5 messages), inside the one-time-key noise band (-3.57 to -3.64); controls read -3.12 to -3.17 | control-backed negative for a running key on a modern German or Dutch novel-like text, conditional on the Kahn/Schmeh transcription and on letter models of 1880s-1920s fiction |
 | long period | per-message coset IC, periods 31-120 | period-40/85/120 Vigenère on German, same lengths: IC 0.069-0.087 at the true period (or a multiple), seeds 1-3 | max 0.0664 at P=85; P(max over 31-120 >= 0.0664) = 0.10 on 2000 uniform texts of the same lengths | not distinguishable from a one-time key |
 | B crib-drag | 67 German military/Abwehr words, all tabulae, key scored under de20 and nl20 letter models | top hit on uniform random text of the same lengths: -1.60 to -1.99 per letter (3 seeds x 2 key languages) | top hit -1.82 (de key, "werden" -> "citire"), -1.82 (nl key, "amerika" -> "jeaando") | inside the noise band |
 
@@ -127,7 +127,9 @@ per-message joint -3.55 to -3.66). Control decodes of real running-key cipher: -
 | de plain, de key, vig | -1.752 | -1.857 | -3.609 | -3.636 | -3.12 to -3.17 |
 | de plain, de key, beau (= varbeau with streams swapped) | -1.723 | -1.845 | -3.568 | -3.636 | (not run for beau de/de) |
 | nl plain, nl key, vig | -1.704 | -1.912 | -3.616 | -3.600 | -3.163 |
-| de plain, nl key, vig / beau / varbeau | see the appended block below | | | -3.571 | -3.155 to -3.161 |
+| de plain, nl key, vig | -1.841 | -1.748 | -3.589 | -3.571 | -3.155 to -3.162 |
+| de plain, nl key, beau | -1.707 | -1.900 | -3.607 | -3.571 | -3.158 |
+| de plain, nl key, varbeau (msgs 1-3 only: the process was killed for memory after msg 3) | msg joint -3.601 / -3.576 / -3.653 | | | per-message noise -3.55 to -3.66 | -3.158 |
 
 Every target configuration run sits in the noise band and about 0.4-0.5 nats per letter below every control. No
 stretch in any target decode stands above noise; none was sent to ROOM as a flag, and no reading is claimed.
