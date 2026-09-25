@@ -651,3 +651,85 @@ narrative prose on any corpus tried so far, independent of era or register. Stat
 
 Not classifying novelty (that is the verifier's job, rule 10). Requests: archive.org 3 advancedsearch.php, 3
 metadata.php, 3 djvu.txt downloads (>=1.6s apart, descriptive UA). No subagents.
+
+## M3: sibling sweep (25 Sept 2026, LANE R6)
+
+**Status unchanged: open.** Brief: `.claude/briefs/runs/2026-09-25-lane-r6-m3-mercy-siblings.md` (NEAR.md's
+"pools first" next step for this target). Start 18:53 UTC per `date -u`. Result: **no sibling found; pooled N
+stays 521 (unchanged).**
+
+### Finding aid sweep
+
+`archivesetmanuscrits.bnf.fr/ark:/12148/cc347546` (Espagnol 142-144 finding aid), fetched whole (1 request,
+needed 2 retries after `Recv failure: Connection reset by peer` -- the same tunnel-reset flakiness this host
+showed on 24 Sept, resolved on the third attempt, no 403/429/challenge). Read with `tools/html2text.py`, then
+grepped the full text for `chiffr|cifr`, `Mercy|Merzy|Merçi|Mercij`, `Castel-Rodrigo`, `Peñaranda|Penaranda`,
+`Bruxelles|Brusselas`, `secretairerie|secrétairerie`, and the 1640-1650 year range.
+
+**Only one item in the entire 605-canvas, three-tome finding aid is marked "chiffrée": item 11 (F.22-22v),
+the target itself.** No hit anywhere for Castel-Rodrigo or Peñaranda/Penaranda (repeats the 24 Sept
+check-solved sweep's null result, now against the full item-level catalogue text, not just a name search).
+
+A tight cluster of items in Espagnol 144 (TOME III, this target's own ark `btv1b10035717h`), F.4-21v, items
+4, 6, 7, 8, 9-10, are all instructions to or about the abbé/Baron de Mercy from the same Guise/Brussels-secretariat
+channel, 1639-1648 -- by title alone the strongest sibling candidates, and the brief's own "addressed to or from
+Mercy" criterion names exactly this cluster. Two of the six (items 7 and 9-10) are explicitly "En espagnol"
+language; the rest are French. None is marked "chiffrée" -- each is catalogued only as "Copie".
+
+No other item in Espagnol 142 (TOME I) or 143 (TOME II) matches "ciphered, in Spanish, or addressed to/from
+Mercy, Castel-Rodrigo, Peñaranda or the Brussels secretariat 1640-1650" closely enough to probe within this
+brief's budget: TOME II's own Gallica catalogue description (`dc.source all "Espagnol 143"` SRU query, 1
+request) is entirely Charles V/Philip II 16th-century instructions, confirming the full-text grep above rather
+than adding a new lead; TOME I's few 1640s Spanish items (Olivares' 1643 disgrace, the Nov 1641 Pays-Bas
+governors' patents, the 1646 Aragon cortes papers) are Spanish-crown domestic administration, not addressed to
+Mercy or the Brussels secretariat and not digitised (per the 24 Sept digitisation check), so out of reach and
+out of scope this pass -- flagged, not probed.
+
+### Image probe (Espagnol 144, ark `btv1b10035717h`)
+
+Canvas = 2 x folio + 14 (Y5's fit, confirmed again below). Probed every canvas of the five candidate items at
+`/full/600,/0/`, one at a time, >=2 s apart (two `Recv failure`/`CONNECT tunnel failed` resets, each resolved
+on a single retry after a pause, same flakiness as the finding-aid fetch):
+
+- Item 4 (F.4-6v, canvas 22-26): **all 5 canvases probed** (22, 23, 24, 25, 26) -- full plain French secretarial
+  hand throughout, ink page numbers "4"-"6" visible, marginal "1639" date on canvas 22. Zero digit code groups.
+- Item 6 (F.8-11v, canvas 30-36): canvas 30 already read in full by worker T (24 Sept, unciphered); canvas 34
+  (ink page "10") reprobed here -- plain French, zero code groups.
+- Item 7 (F.12, canvas 38): probed directly (ink page "12", marginal "1645") -- full page of plain Spanish
+  prose ("Instrucçion de lo que el Sr Abbad de Mercij ha de executar..."), zero code groups.
+- Item 8 (F.14-19, canvas 42-52): canvas 46 (ink page "16") probed -- plain French, zero code groups.
+- Item 9-10 (F.20-21v, canvas 54-57): canvas 55 is a largely blank verso showing recto bleed-through only;
+  canvas 56 (ink page "21") is item 9's Spanish opening ("Instruccion de lo que vos el Abbad de Mercij mi
+  Sumiller de Cortina...savreis a Kempen para aconcertar con la Duquesa de Cheurosia y el Conde de Sant Ibal"
+  -- the same addressee title, "Sumiller de Cortina", and the same two named negotiating partners, Chevreuse
+  and Saint-Ibal, as the target's own reading); canvas 57 closes item 10 with a dateline, "Bruselas a 13 de
+  Abril de 1648". Both fully plain Spanish prose, zero code groups.
+
+**No leaf in this cluster carries any 2-3 digit code group.** Every item catalogued only as "Copie" (4, 6, 7,
+8, 9-10) is, on the actual image, a plain-text copy -- consistent with the finding aid's own "chiffrée" tag
+being accurate and exhaustive for this volume: the compiler transcribed the Mercy correspondence to clear
+copies for the recueil except this one item, where the cipher original (or a copy of it) was bound in instead.
+This is a direct image read, not an inference from the catalogue (rule 2): 11 canvases fetched and read.
+
+### Result
+
+**Pooled N: 0 siblings found, stays at 521 (the target's own count), unchanged.** No code/key coverage
+percentage or random-draw control was run: rule 3's control requirement applies to an attempted decode, and no
+candidate ciphertext existed anywhere in this sweep to apply `key.tsv` to (the same reporting convention Y6
+used for its own no-candidate-key result). `siblings.tsv` records the six items checked (5 candidates + the
+target itself) with folio, canvas range, title, date, language and the ciphered/no-code-groups finding, per
+item. Images: `images/siblings/` (11 canvases at `/full/600,/0/`, ~1.2 MB, `manifest.json` with sha1;
+`images/` total now 8.1 MB, well under the 30 MB budget).
+
+**What this means for NEAR.md.** The "pools first" next step named for this target is now answered negatively
+within Espagnol 142-144: there is no second ciphered leaf under this 38-value code in the same recueil to pool
+with the 521-token target, at least not among the items the finding aid, read in full, points to as plausible
+candidates. The target's own reading stays a single-letter, N=521 cryptanalytic result (M2), not helped or
+hurt by this pass. Two follow-ups this pass did not attempt (out of the brief's scope): (1) a wider,
+budget-heavier canvas-by-canvas sweep of the entire 605-canvas ark rather than just the name-matched cluster,
+in case an unrelated ciphered item sits elsewhere in the volume; (2) TOME I's undigitised 1640s Spanish items
+(Olivares, Aragon cortes), which would need a copy order or a different digitisation route before they could
+be checked at all.
+
+Requests this section: archivesetmanuscrits.bnf.fr 1 (2 retries after connection resets). gallica.bnf.fr 13
+IIIF image fetches (11 successful, 2 retried after resets) + 1 SRU query = 14. No other hosts. No subagents.

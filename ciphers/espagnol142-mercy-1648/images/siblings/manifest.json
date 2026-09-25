@@ -1,0 +1,103 @@
+{
+ "entries": [
+  {
+   "canvas": 22,
+   "label": "F.4 (ink '4', 1639) -- item 4 start, 'Instruction pour l'abb\u00e9 de Merzy et le secretaire Cesar de Chambley...' Bruxelles 20 nov 1639",
+   "size": 111176,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f22/full/600,/0/native.jpg",
+   "file": "canvas22.jpg",
+   "bytes": 111176,
+   "sha1": "ff032b8334b7e9ccec2ee96e6dd1f54fcd3a8908"
+  },
+  {
+   "canvas": 23,
+   "label": "F.4v-5 -- item 4 continued",
+   "size": 98323,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f23/full/600,/0/native.jpg",
+   "file": "canvas23.jpg",
+   "bytes": 98323,
+   "sha1": "ed286d4c5b6971f950419a719e13ad29cf3c91d0"
+  },
+  {
+   "canvas": 24,
+   "label": "F.5v -- item 4 continued",
+   "size": 114226,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f24/full/600,/0/native.jpg",
+   "file": "canvas24.jpg",
+   "bytes": 114226,
+   "sha1": "9168de6bf117ec4ba2e431e8ab7532bb020e28c7"
+  },
+  {
+   "canvas": 25,
+   "label": "F.6 (ink '5' area) -- item 4 continued",
+   "size": 93132,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f25/full/600,/0/native.jpg",
+   "file": "canvas25.jpg",
+   "bytes": 93132,
+   "sha1": "98f4b86971abde2814c87c6608c01d5fe1d5410a"
+  },
+  {
+   "canvas": 26,
+   "label": "F.6v (ink '6') -- item 4 continued/end",
+   "size": 114271,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f26/full/600,/0/native.jpg",
+   "file": "canvas26.jpg",
+   "bytes": 114271,
+   "sha1": "44c3af718299e6ff6a241313d9b5f717d5178f7a"
+  },
+  {
+   "canvas": 34,
+   "label": "F.8v-9 (ink '10') -- item 6, 'Instruction pour l'abb\u00e9 de Mercy...de la part du duc de Guise' Courtray 20 sept 1641",
+   "size": 148351,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f34/full/600,/0/native.jpg",
+   "file": "canvas34.jpg",
+   "bytes": 148351,
+   "sha1": "faf53cb9cc11c2bed6a25d5df135e41ffe1c4db5"
+  },
+  {
+   "canvas": 38,
+   "label": "F.12 (ink '12', '1645') -- item 7, 'Instruc\u00e7ion de lo que el sr abbad de Mer\u00e7i ha de executar...' Bruxelles 1 feb 1645, in Spanish",
+   "size": 133139,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f38/full/600,/0/native.jpg",
+   "file": "canvas38.jpg",
+   "bytes": 133139,
+   "sha1": "af561d48db7c1b5b9a0a0e713afe5f139e4ec37d"
+  },
+  {
+   "canvas": 46,
+   "label": "F.16 (ink '16') -- item 8, 'Memoire...voyage de l'abb\u00e9 de Mercy en Olande...Chevreuse' 27 sept 1647",
+   "size": 130213,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f46/full/600,/0/native.jpg",
+   "file": "canvas46.jpg",
+   "bytes": 130213,
+   "sha1": "df1042454d1fe0bd5cd0da77130a7c23d05c8d65"
+  },
+  {
+   "canvas": 55,
+   "label": "F.20v (bleed-through of recto text, largely blank verso) -- item 9 start",
+   "size": 71818,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f55/full/600,/0/native.jpg",
+   "file": "canvas55.jpg",
+   "bytes": 71818,
+   "sha1": "da930642f4498082cf4e37b096fb74083d0aa1bb"
+  },
+  {
+   "canvas": 56,
+   "label": "F.21 (ink '21') -- item 9, 'Instruccion de lo que vos el Abbad de Mercij mi Sumiller de Cortina...' Kempen mission, Duquesa de Cheurosia y Conde de Sant Ibal, Spanish",
+   "size": 136044,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f56/full/600,/0/native.jpg",
+   "file": "canvas56.jpg",
+   "bytes": 136044,
+   "sha1": "bb19da2b1ebb3a85bd8c4672fdd640655cae74db"
+  },
+  {
+   "canvas": 57,
+   "label": "F.21v (ink '21v', dated Bruselas 13 abril 1648) -- item 10 close",
+   "size": 75618,
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f57/full/600,/0/native.jpg",
+   "file": "canvas57.jpg",
+   "bytes": 75618,
+   "sha1": "e5a70bd831f99ee2986eb9b409183c161e17bba4"
+  }
+ ]
+}
