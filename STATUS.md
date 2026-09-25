@@ -130,6 +130,104 @@ Check-in 25 Sept 05:56 UTC: PX live. PX-01 Brochado letterbook (antt-msliv0638-b
 
 15:55 UTC: owner 15:45 'keep going', window allowed again on this session. The other account's parent 7b came back 15:38 and opened LANE R6 (Salviati + the 13 gate-passing CX targets), LANE V6 (Portuguese 1780-1830 corpus + Linhares re-run, Digby verifier, verifiers, rolling QA every two hours) and LANE B2 (breadth); a closer ledgers its 24 Sept sessions. It took this handoff's three post-reset items, so the owner account does not duplicate them: my rolling QA is suspended while V6's runs. Opened LANE ZX (session_01MxueEQJUGF9PWJiYcVyvBM: YX's own partials antt-msliv0638-brochado-1712, clair349-este-guise-1556, thurloe-barriere-1654; readings go to V6 for verification), LANE CX2 (session_018cUWVBDyZzw2sgLAmZKL75: check-solved round 2 on the section D campaigns; passes go to R6) and parent worker TOOLS-GATE (session_015aESJVn3gguVTXN7sLtNJC: intake_gate_check.py found-solved and open-over-unread-edition). Owner: the ChatGPT second-opinion runner is live (three rows queued: SO-LINHARES-M0002, SO-VANBEUNINGEN-1657, SO-NASSAU-5551); no [SO- pull request open yet at 15:50. Board lanes list now carries both accounts' lanes. Linhares' qa_flag clears only on V6's reported PASS with its control.
 
+## LANE R5 handoff (written by the closer, 25 Sept 2026)
+
+LANE R5 orchestrator (Opus, session_01LcgYWtnKYzBkdEwVU1ae1t) died on the seven-day usage limit 24 Sept 2026
+22:16 UTC with workers H2b, H3 and H4 still running and no handoff written. This section is reconstructed by
+closer 7b (session_01MRsU1QGjSKNQ5oCejANVXg) from disk state, 25 Sept 2026, per CLAUDE.md rule 6: every number
+below is read from a committed file, not from memory or from the dead orchestrator's own ROOM lines.
+
+**Results table:**
+
+| Item | State | Source |
+|---|---|---|
+| Salviati f.55r | gate PASSED 84.8% (340/401 base codes), 370 sign tokens, 36 types | `ciphers/fr2933-salviati-1525/NOTES.md` "Leaf f.55r (24 Sept 2026, LANE R5 H1)" |
+| Salviati f.55v | pass A complete (495/496 boxes); pass B partial, 396/496 rows in `passB_f55v.tsv` (H2 got lines 1-11, H2b died 21:54 UTC before finishing lines 12-19); no `recon_box_f55v/`, no `ciphertext_f55v.tsv`, no gate run | `ciphers/fr2933-salviati-1525/{passA_f55v.tsv,passB_f55v.tsv,f55v_boxlist_for_passes.tsv}` |
+| Salviati f.56r | boxes, strips and pass A complete (513/513 boxes in `passA_f56r.tsv`); no pass B (H3 died 21:55 UTC before starting it); no gate | `ciphers/fr2933-salviati-1525/{f56r_boxes.tsv,f56r_boxlist_for_passes.tsv,passA_f56r.tsv}` |
+| Salviati f.56v | boxes, strips and pass A complete (505/505 boxes in `passA_f56v.tsv`); no pass B (H4 died 21:54 UTC); no gate | `ciphers/fr2933-salviati-1525/{f56v_boxes.tsv,f56v_boxlist_for_passes.tsv,passA_f56v.tsv}` |
+| Salviati f.57r, f.57v | not started | -- |
+| Nevers key no.60 set (fr.3985-3990) | blocked on the hand: G2's calibrated re-run (key60 atlas from interlined leaves) gave 39.8% pass agreement (78/196; F1's own raw pass was 37.5%), judge FAIL against both the target's own shuffled null (-1.64..-1.78) and a matched key60 control at 60% noise (-1.14..-1.30, itself also FAIL). No more spend recommended on this key without a fresh calibration source | `ciphers/fr2933-salviati-1525/NOTES.md` "f.176 atlas re-run" (ROOM.md 2026-09-24 21:51, LANE R5 G2) |
+| Seure 1558 (f75L) | blocked: coarse-bucket gate 42.9% (27/63; lines 9/5/15 at 38.1/52.4/38.1%), still fails the 80% gate after merging nine loop/hook codes to three; not box-keyable at this image quality -- needs a different capture or a key | `ciphers/fr3151-seure-1558/NOTES.md` (LANE R5 C, session_01QMyFVUE8JCLdUA84ejLHKE) |
+| M36 key (fr.5761 f.104-f.110) | 38 rows appended to `key.tsv` from f.110 (folio 53v), all grade H, deterministic from `recon_key/majority_key_leaf.py f110`; box coverage on f105-f109 remains 11.6-19.2%, not yet keyed | `ciphers/fr5761-election-1519/NOTES.md` "Key f.105-f.110 and letters to try (24 Sept 2026, LANE R5 D)" |
+
+**Open items, with costs:**
+1. Finish Salviati f.55v pass B (resume at line ~12 of 19), then run the box-keyed method on f.56r/f.56v (pass B only, boxes and pass A already on disk) and on f.57r/f.57v from scratch. Priced at about $9.4 a leaf (worker A's actual cost on f.55r, higher than J's earlier $6.5/leaf estimate); roughly $28-38 more in transcription for the four remaining leaves.
+2. Once the pooled sign count reaches about 2,800 (currently f.54r+f.54v+f.55r = 1,089; f.55v/f.56r/f.56v add roughly 350 more each when finished), run `codemark_curve.py target cm` (LANE R4 P's control curve: cm needs ~2,800 tokens, all three seeds read 89-94% on a matched synthetic at that length; vi is already excluded, negative with control at N=720).
+3. No key search route is open for Salviati (LANE R5 B searched eight sources, 24 Sept: no 1525-26 Giovanni Salviati/Giberti key found; two later Salviati-linked keys in Meister 1906 are not a design match).
+4. Seure and the Nevers key-60 set are both blocked, not open campaigns: Seure needs a better scan or a key; Nevers needs a different hand-calibration source than the interlined leaves already tried.
+5. M36: five more key leaves (f.105-f.109) at roughly $4 each disk-only would extend the atlas, but no unread letter is currently waiting on it (the one candidate, Dupuy 468 f.28, belongs to that target's own workers, untested against M36's codes).
+
+Requests: 0 (disk only, this section). No fetches by the closer.
+
+## LANE N4 handoff (closer)
+
+LANE N4 orchestrator (Opus, session_01Nrrp9gDcF8aHUgcMSXxU7q) died on the seven-day usage limit 24 Sept 2026
+22:17 UTC; csPP03 had finished and pushed at 21:53 UTC but was never archived, and no handoff was written.
+Reconstructed by closer 7b, 25 Sept 2026, from QUEUE.md and each target's own NOTES.md.
+
+**Firm nominations (all verified `open` at stage 2, standard edition read and searched negative):**
+- fr3993-villeroy-1595, fr3625-lauriere-1593, fr3621-dinteville-1592 -- Gomberville's *Mémoires de Nevers* seconde
+  partie located and read (Google Books `H2eV4wAmIr0C`, LANE N4 scGOM2); all three letters searched by name/place/date
+  in the correct volume, all absent, holds lifted, verdict `open`.
+- fr3985-nevers-revol-1593, fr3986-nevers-revol-1593, fr3987-nevers-revol-1593, fr3989-nevers-revol-1594,
+  fr3990-nevers-henri4-1594 -- the five Nevers key-no.60 KS rows, now `blocked` (edition read negative but held per
+  the 25 Sept intake-gate rule pending the R5 key-application result above, which is itself now blocked on the
+  hand, not open for a campaign). fr3983-pisany-nevers-1593 (KS-04) is `found-solved` (contemporary interlinear
+  decipherment on the leaf) and was never nominated.
+- hellen-frederick-1752 -- `open`; Fagel inv.5206 decipherments image-checked for 1752-53 only, Politische
+  Correspondenz 9-10 full-text searched negative.
+- vanspaen-vandergoes-1808, roell-vandedem-1809 -- both `open`; Colenbrander's *Gedenkstukken* V independently
+  full-text read via `resources.huygens.knaw.nl`'s own OCR search (both stukken, register included), letters
+  absent, hold lifted (LANE N4 csCOL).
+- KT-01 fr7129-villeroy-bongars-1604 -- held `blocked`, not nominated: Tomokiyo names this exact letter as
+  solvable with his Bongars cipher paper, which was not read before csKT nominated it open (corrected by the N4
+  orchestrator 21:27 UTC); csBONG was fetching that paper (Tomokiyo's paper, academia.edu 403 per the Access
+  playbook) when the lane died -- state of that fetch not confirmed by this closer, out of the eleven-session
+  scope.
+- KT-02 baluze103-letellier-marca-1644 -- `blocked`: `sources/decode/records-decrypted-2026-09-24.tsv` lists the
+  DECODE record for this leaf as status Decrypted; needs one DECODE-login look (the DECODE-look worker in this
+  batch never ran, see LEDGER.md).
+- PP-03 antt-linhares-chave (Linhares "Chave de uma cifra") -- csPP03 read the key system in full (book/dictionary
+  cipher, page/column/word-position digits, English-dictionary null-padding switch) but the book itself is
+  unnamed on the leaf; check-solved verdict `open`, six sources swept, no prior hit. **Status has since moved**:
+  LANE LX (owner account, 25 Sept 2026) identified the dictionary and produced a partial decode; the target's own
+  `ciphers/antt-linhares-chave/NOTES.md` currently reads `partial`, held `blocked` pending a local-runner edition
+  check (LOCAL-QUEUE L10). Treat PP-03 as superseded by LX, not as N4's open item.
+- PP-04 antt-msliv... Costa Cabral 1865 (fonds Familia Costa Cabral) -- `recovery` kind: the 1865 cipher draft has
+  the plaintext syllable interlined over almost every number (~50 syllable/word-to-number pairs, self-glossed),
+  not yet transcribed into a key file. No target folder created yet.
+
+**Sources closed this window:** Gomberville *Mémoires de Nevers* seconde partie (Google Books `H2eV4wAmIr0C`, full
+search-within route, 26 requests, scGOM2); Colenbrander *Gedenkstukken* V (Huygens retroboeken text-search
+accessor, both stukken, csCOL); Xivrey *Recueil des lettres missives de Henri IV* t.3 and Pérot *Les luttes
+religieuses en Champagne* (both read in full for Lauriere/Dinteville, csED2); DigitArq's undocumented full-resolution
+image API reverse-engineered and documented (`tools/digitarq_fetch.py`).
+**Next sources, not yet read:** Tomokiyo's Bongars cipher paper (KT-01, blocked on academia.edu access --
+csBONG's outcome not confirmed by this closer); a DECODE login look at R2742/R2077 (KT-02, fr3789 -- never ran,
+see LEDGER.md); Textos Políticos 1993 for Linhares (LOCAL-QUEUE L10, owner's machine); the standard edition for
+PP-04 Costa Cabral (not yet identified).
+
+## LANE B handoff (closer)
+
+LANE B orchestrator, breadth (Opus, session_01GX1rck53whwtCB2EsGtkfR) died on the seven-day usage limit 24 Sept
+2026 22:11 UTC with bHAR and bLIM still running and no handoff written. Reconstructed by closer 7b, 25 Sept 2026,
+from `specs/*.json` and LEDGER.md.
+
+**Spec table:**
+
+| Spec | Cheap test state | Verdict |
+|---|---|---|
+| koehler-1944 | test 1 (periodic IC/Kasiski, period 2-30) done | control-backed negative: target coset IC 0.0468 vs periodic-key control 0.065-0.081 (true period) / one-time-key control 0.044-0.047 (matches the target); not a short-period Vigenère family for period 2-30. Next test: archive route (TNA KV 2/HW 19, FBI Vault), est. $3-5 |
+| cigaret-case-1909 | test 1 (German MASC anneal) done | judge FAIL, but uninformative: the matched control itself only recovers 4.4-22.2% of letters blind at N=45,K=18, so a MASC anneal has almost no power at this length -- not scored as a negative. Test 2 (word-pattern search) not run |
+| harry-caroline-1863 | `cheap_test_done` unset; no `specs/cheap-tests/harry-caroline-1863/` directory | bHC/bHAR died 23:14 UTC (longest-running of the six dead workers) before producing any output. Cheap test 1 per the spec (MASC with word boundaries, joint 71/74 letters) is unrun |
+| lima-1916 | `cheap_test_done` holds a completed monoalphabetic-anneal result | target reads as letter-salad (best decodes only fragments) vs matched English plaintext controls at 60.6%/70.4%/74.6% (N=71, K=21, same solver, 3 seeds) -- real negative: the target does not behave like a monoalphabetic substitution of English at a size where this solver reads English two-thirds right. This result does not match bLIM's own claimed task (`cheap_tests_in_order[0]`, commercial-code lookup); it predates or is independent of bLIM's $0.76, which produced no output of its own before dying 21:54 UTC |
+| somerton-1948 | test 3 (Rubaiyat word-initial search) done | one coincidental 7-letter match (TSAMSTG) against FitzGerald's preface initials, flanking letters do not continue; control (1000 random five-line draws) not yet compared in this table -- see `specs/somerton-1948.json` for the full control result |
+| powers-1991, dorabella-1897, debosnys-1883, moustier-altars, kaliningrad-2015 | `cheap_test_done` unset | not yet tested |
+
+Six specs remain untested by this count: harry-caroline-1863 (died with no output) plus the five above with
+`cheap_test_done` unset. koehler-1944 and cigaret-case-1909 both had their first cheap test completed and
+ledgered by the orchestrator before it died (LEDGER.md, LANE B breadth bKOE $1.13 N, bCIG $1.44 D).
+
 ## Parent handoff (cipher-lab-7b, session_01K7ZbE95o1pUW5gof8VA5PR, from 18:45 UTC 24 Sept 2026; 7a was session_01EFmUvFAifLKGdBSsW9mjEG, 23 Sept 15:12 to 24 Sept 18:45), kept current
 
 The parent orchestrator runs the hourly check-in (trigger trig_01Ks1wNXPjfn7XW9EucmV9ru (parent 7b, 30-minute cadence while a worker runs, 90 otherwise), self-bound, re-armed by send_later at every firing; its prompt is the

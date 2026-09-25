@@ -406,3 +406,14 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T15:39Z	session_01NS12APP1R55K6TGZrBbP97	LANE B2 orchestrator (Opus, cap 25)	breadth: first cheap tests, next tests, ten more specs	brief 2026-09-25-lane-b2-orchestrator.md
 2026-09-25T15:43Z	session_01VpqAcYQpYgyJQ5FGmP3wBp	LANE B2 bHAR2 (Sonnet, cap 3)	harry-caroline-1863 cheap test 1 MASC + control	brief 2026-09-25-lane-b2-harry-caroline-1863.md
 2026-09-25T15:43Z	session_013mFADMi7WyV1rEVzUMNnir	LANE B2 bLIM2 (Sonnet, cap 3)	lima-1916 cheap test 1 commercial-code grep + control	brief 2026-09-25-lane-b2-lima-1916.md
+2026-09-25T15:42Z	session_01LcgYWtnKYzBkdEwVU1ae1t	LANE R5 orchestrator done $5.45 F, archived	ledgered LEDGER.md; handoff STATUS.md "LANE R5 handoff (closer)"	died 22:16 UTC 24 Sept, no handoff; closed by closer 7b 25 Sept
+2026-09-25T15:42Z	session_01Nrrp9gDcF8aHUgcMSXxU7q	LANE N4 orchestrator done $9.62 F, archived	ledgered LEDGER.md; handoff STATUS.md "LANE N4 handoff (closer)"	died 22:17 UTC 24 Sept, no handoff; closed by closer 7b 25 Sept
+2026-09-25T15:42Z	session_01GX1rck53whwtCB2EsGtkfR	LANE B orchestrator done $2.00 F, archived	ledgered LEDGER.md; handoff STATUS.md "LANE B handoff (closer)"	died 22:11 UTC 24 Sept, no handoff; closed by closer 7b 25 Sept
+2026-09-25T15:42Z	session_01FT3SPFGhdmV61nbGjXfGeE	Retrospective g done $0.00 F, archived	ledgered LEDGER.md	rejected at start, never ran
+2026-09-25T15:42Z	session_01QHZ9CQVu8g4gfi6QP4K5Xb	DECODE look R2742/R2077 done $0.00 F, archived	ledgered LEDGER.md	never ran, seven-day limit
+2026-09-25T15:42Z	session_01PUEBwxdjmxZ5MNas5Dt39z	LANE R5 H2b done $5.67 F, archived	ledgered LEDGER.md	died 21:54 UTC, passB_f55v.tsv 396/496 rows, no gate
+2026-09-25T15:42Z	session_01AoHBau4eRJRtWzKvx3ZwCs	LANE R5 H3 done $5.41 F, archived	ledgered LEDGER.md	died 21:55 UTC, f.56r boxes + pass A only, no passB
+2026-09-25T15:42Z	session_01QhRqqfe3iErdK1TZR51ygR	LANE R5 H4 done $5.25 F, archived	ledgered LEDGER.md	died 21:54 UTC, f.56v boxes + pass A only, no passB
+2026-09-25T15:42Z	session_01YE11botJahNxonn9Q4knFu	LANE N4 csPP03 done $1.94 D, archived	ledgered LEDGER.md	completed 21:53 UTC with its own ROOM done line; antt-linhares-chave verdict open->blocked, superseded by LANE LX
+2026-09-25T15:42Z	session_01QFM2xCSDTwmDV3ayByLVhJ	LANE B bHAR done $0.98 F, archived	ledgered LEDGER.md	died 23:14 UTC, no output; harry-caroline-1863.json cheap_test_done unset
+2026-09-25T15:42Z	session_01HAb2wwJ9oYC1rsZGCe3D7T	LANE B bLIM done $0.76 F, archived	ledgered LEDGER.md	died 21:54 UTC; lima-1916.json cheap_test_done holds an unrelated pre-existing result

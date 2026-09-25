@@ -1965,8 +1965,8 @@
    "title": "Momentum restart: LANE R5 and LANE N4",
    "asked": "24 Sept 2026 18:48 UTC",
    "state": "blocked",
-   "result": "R5 (recovery): key no.60 applied mechanically to five Nevers letters, no reading (37-55% pass agreement), blocked on sign identification, not the key. N4 (nominations): 11 firm copy-free nominations; scTOMO done (2 new copy-free rows), scDIGI done (DigitArq API reverse-engineered; both Torre do Tombo codex sweeps came back false positives).",
-   "next": "R5: worker G's key no.60 sign atlas from interlined leaves, then an 80% pass-agreement re-run; Salviati leaves f.55v-f.57v being bought two at a time. N4: keeps nominating copy-free targets for check-solved.",
+   "result": "R5 (recovery): key no.60 applied mechanically to five Nevers letters, no reading (37-55% pass agreement), blocked on sign identification, not the key. N4 (nominations): 11 firm copy-free nominations; scTOMO done (2 new copy-free rows), scDIGI done (DigitArq API reverse-engineered; both Torre do Tombo codex sweeps came back false positives). Both lanes ran until the seven-day usage limit (R5 died 22:16 UTC, N4 died 22:17 UTC 24 Sept) with no handoff written by either; the closer (25 Sept) reconstructed final state from disk -- see STATUS.md LANE R5/N4 handoffs. Successor lanes R6/V6/B2 (7b) opened 25 Sept 15:39 UTC.",
+   "next": "none -- both lanes closed, successors R6/V6/B2 (7b) opened 25 Sept; see STATUS.md handoffs for open items",
    "link": "STATUS.md",
    "session": "R5 session_01LcgYWtnKYzBkdEwVU1ae1t; N4 session_01Nrrp9gDcF8aHUgcMSXxU7q"
   },
@@ -1974,8 +1974,8 @@
    "title": "Salviati purchase f.55v-f.57v",
    "asked": "24 Sept 2026 20:16 UTC",
    "state": "blocked",
-   "result": "Owner authorized buying the remaining Salviati leaves two at a time (Sonnet $12/leaf, box-keyed method, 80% gate). H1 (f.55r pass B) and H2 (f.55v) started 20:51-20:52; f.55r pass A and boxes already committed by worker A.",
-   "next": "H1/H2 finish their passes and report a reading or a blocker; H3-H6 (f.56r, f.56v, f.57r, f.57v) follow, then the pooled code+mark run once all leaves are captured.",
+   "result": "Owner authorized buying the remaining Salviati leaves two at a time (Sonnet $12/leaf, box-keyed method, 80% gate). H1 (f.55r pass B) and H2 (f.55v) started 20:51-20:52; f.55r pass A and boxes already committed by worker A. H2/H2b got f.55v to pass A complete, pass B partial (396/496 rows), no gate; H3/H4 got f.56r/f.56v to boxes + pass A only (513/513, 505/505), no pass B; f.57r/f.57v never started. All three workers (H2b, H3, H4) died on the seven-day limit 21:54-21:55 UTC 24 Sept with no gate reached on any of the three leaves.",
+   "next": "blocked on the rate-limit window (resets 26 Sept 13:00 UTC); resume f.55v pass B at line ~12+, then f.56r/f.56v pass B, then f.57r/f.57v from scratch, at about $9.4 a leaf; now taken up by successor LANE R6 (7b, opened 25 Sept 15:39 UTC)",
    "link": "ciphers/fr2933-salviati-1525/",
    "session": "H1 session_01DjYdTGsK72PjN4TpqA35fE; H2 session_01QKxu7fUbqYfthJc5gXcZ5m"
   },
@@ -1983,8 +1983,8 @@
    "title": "Nevers key no.60 application, six letters",
    "asked": "24 Sept 2026 19:46 UTC",
    "state": "blocked",
-   "result": "Key no.60 applied mechanically to five Nevers letters (fr.3985 f.88+f.176, fr.3986 f.198, fr.3987 f.66, fr.3989 f.169, fr.3990 f.27): no reading on any, pass agreement 37-55%. Blocked on sign identification (this hand vs Bourdeau's tags), not the key.",
-   "next": "Worker G is building a key no.60 sign atlas from the copyist's own interlined leaves (fr.3985 c.264-268, fr.3986 f.151/152) and will re-run F1's leaves against an 80% pass-agreement gate before any more leaves are bought.",
+   "result": "Key no.60 applied mechanically to five Nevers letters (fr.3985 f.88+f.176, fr.3986 f.198, fr.3987 f.66, fr.3989 f.169, fr.3990 f.27): no reading on any, pass agreement 37-55%. Blocked on sign identification (this hand vs Bourdeau's tags), not the key. G2's calibrated re-run (fr.3985 f.176, key60 atlas from interlined leaves) gave 39.8% pass agreement (78/196), judge FAIL against both the target's own shuffled null and a matched key60 control -- the Nevers key no.60 set is blocked on the hand, not the key; no further spend recommended on fr.3985-3990.",
+   "next": "blocked on sign identification; a fresh interlined-leaf atlas or a different hand-calibration source would be needed to revisit",
    "link": "ciphers/fr3985-nevers-revol-1593/",
    "session": "session_01Jr8vChfUMF2NEofCVZWVSs"
   },
