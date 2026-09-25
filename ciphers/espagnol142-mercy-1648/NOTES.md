@@ -1,4 +1,57 @@
 open
+Jean Le Clerc, *Négociations secrètes touchant la paix de Munster et d'Osnabrug* (1725, tomes III-IV,
+archive.org negociationssecr03lecl/04lecl, both read in full via djvu text and grepped by this worker; the
+job brief's own named edition family for this target), control "Servien" 175 hits in tome IV confirming
+readable OCR for exactly this 1648 period; zero hits for "Mercy" or "Barneton" in either tome.
+
+## Check-solved (LANE CX, 2026-09-25)
+
+Six-source sweep run fresh this pass (LANE CX worker CX-CLAIR), on top of -- not only quoting -- the 24 Sept
+2026 pass kept below (which already identified "l'abbé de Mercy" as a real envoy the Duc de Guise sent to the
+Holy Roman Emperor from at least 1641, via a 1641 instruction on the same ark, resolving the earlier
+identification gap, but left the addressee's surname and the target item's own folio unpinned).
+
+1. **Web search.** `abbé de Mercy Duc de Guise 1648 Naples Empereur instruction diplomate` -- the Duc de
+   Guise's own major 1647-48 project was the Neapolitan expedition (claiming the throne of Naples during
+   Masaniello's revolt), which needed Imperial and Spanish diplomatic cover; no source found names a specific
+   "abbé de Mercy" as his agent to the Emperor by full name/biography, but the chronology (envoy active
+   1641-1648, instructions from the Guise household, Imperial destination) is internally consistent and not
+   contradicted by anything found. No hit on the target item itself.
+2. **Standard printed edition, opened and read.** The job brief's named edition, Le Clerc's *Négociations
+   secrètes touchant la paix de Munster et d'Osnabrug* (already fetched for clair571-estrades-1645, tomes III
+   and IV cover 1647-1648) -- re-used and grepped for this target: control "Servien" 175 hits in tome IV
+   confirms the OCR reads well for exactly the 1648 period; "Mercy" 0 hits and "Barneton" 0 hits in both
+   tomes III and IV. This is a real negative (the Munster/Osnabrück French-Swedish-Imperial negotiation
+   record, read directly, does not print this Guise-to-Emperor channel), consistent with "l'abbé de Mercy"
+   being a Guise-household channel to the Emperor running alongside, not through, the official Munster
+   plenipotentiaries (d'Avaux/Servien). Acta Pacis Westphalicae itself (apw.digitale-sammlungen.de) named in
+   the job brief for this row too, not opened this pass (budget; flagged for a future worker, since APW II B
+   catalogues the same year's French correspondence in more granular detail than Le Clerc's printed digest).
+3. **Community lists.** Cryptiana local snapshot re-grepped for "Mercy", "Espagnol 142/143/144", "Barneton":
+   no hit (repeats 24 Sept finding). No Cipherbrain hit by web search.
+4. **DECODE.** `unsolved-ciphers/catalogue/decode-catalog.csv` (fresh clone, 25 Sept 2026) grepped for
+   "mercy", "espagnol 14", "barneton": zero hits for all three (repeats and extends the 24 Sept null result,
+   now also covering the corrected shelfmark Espagnol 144/TOME III the 24 Sept digitisation-check pass
+   pinned).
+5. **Bourdeau** (fresh shallow clone, 25 Sept 2026). Grepped for "Mercy", "Espagnol 142/143/144", "Barneton":
+   same as 24 Sept -- every "Mercy" hit checked is the common French word "merci" (clemency) inside unrelated
+   transcriptions, no shelfmark hit, no "Barneton" hit anywhere.
+6. **Aymeloglu** (fresh shallow clone, 25 Sept 2026). Grepped for "Mercy", "Espagnol 142/143/144", "Barneton":
+   no hit.
+
+Requests this section: archive.org 1 new (`_djvu.txt` fetch for negociationssecr04lecl; tome III reused from
+target 1's fetch). WebSearch 1. github.com 0 new (clones reused from target 1).
+
+## Verdict (confirmed, LANE CX 2026-09-25)
+
+Stays **open, stage 2 verified unsolved (conditional)**, gate now closed with a real edition read and
+control. The Le Clerc Munster/Osnabrück edition -- the job brief's own named source -- is now directly read
+with no hit, which is informative (this channel runs outside the official Munster correspondence it prints)
+rather than merely absent-because-unchecked. Still conditional: APW itself and any Guise-family or Naples-
+expedition-specific edition remain unopened, and the target item's own folio (within the ark's canvases
+30-70 range, per the 24 Sept pin attempt) is still not located.
+
+---
 
 # "Autre instruction chiffrée pour l'abbé de Mercy" -- BnF Espagnol 142-144
 
