@@ -547,3 +547,51 @@ against marks.tsv's mark classes; a matched synthetic homophonic control at N=12
 `tools/family_run.py` before any IC-based claim.
 
 Requests this job: none (disk and CPU only). Subagents: none.
+
+## GOLD-4E, cryptogram 1 pass B (25 Sept 2026, session GOLD-4E, Sonnet)
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-gold-debosnys-c1passB.md`. Cap $3 / 25 min, started 19:05 UTC
+(GOLD-4D, the same job on all four cryptograms through one subagent, was interrupted at 3.3x its cap with
+nothing pushed; this job is c1 only, done directly, no subagent). Intake gate at launch: `debosnys-1883: open
+(line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Blind pass B** (`passB_c1.tsv`, 136 rows): each of c1's six line strips (`glyphs/strips/c1_L01.jpg`
+.. `c1_L06.jpg`, upscaled 4x with Pillow for legibility, `/tmp` scratch only) read sign-by-sign against
+`glyphs/inventory.tsv` (the 160-id atlas) and `glyphs/inventory.png`; `passA.tsv`, `box_labels.tsv`,
+`ciphertext_draft.tsv` and `ciphertext.txt` were not opened before this pass. Box segmentation matched pass A's
+exactly (136 boxes each line-by-line) since both come from the same pre-cut strip crops -- this pass supplies
+only the sign id per box, not new segmentation.
+
+**Reconciliation** (`tools/reconcile_passes.py`, pass A = `passA_c1.tsv` extracted from GOLD-4C's `passA.tsv`):
+full-id agreement **86/138 aligned columns = 62.3%**; family/base-level (both passes' sign ids folded through
+`glyphs/inventory.tsv`'s own `family` column, which folds PCT-SLASH->PCT and BAR-SOLID->BLOB but not the
+broader eye-merges GOLD-4C's prose describes) **91/137 = 66.4%**. Both well under the 80% gate.
+
+**Disagreement classes, 52 columns** (`disagreements_c1_passB.tsv`, `disagreements_c1_passB_classes.tsv`):
+classified **mechanically**, not settled on the image -- the 25-minute/\$3 cap did not leave time to re-open
+each of 52 columns against the crop, which the brief asked for and this job did not do. The mechanical proxy
+(gap or MULTI/`_` on either side -> segmentation; same `family` on both sides -> inventory confusion; otherwise
+reading error) gives: **segmentation 7, inventory confusion 5, reading error 40 (of 52)**. This undercounts
+inventory confusion relative to GOLD-4C's c4 finding (76%) because the family column folds only two declared
+variant pairs, not the eye-level "one id for several shapes" merges that pass required looking at the page;
+most of the 40 "reading error" columns are unverified and likely include further inventory confusion once
+someone opens the crops. Flagged column count: of the 52, 8 were flagged low-confidence by pass A only, 30 by
+pass B only, 9 by both, 5 by neither (`flagged` field in the classes file).
+
+**Step 3 (gate):** full-id agreement 62.3% is under the 80% threshold, so per the brief `ciphertext.txt` is left
+untouched; `ciphertext_c1_draft.tsv` (136 aligned rows, agreed signs at H, disputed columns at M with A's/B's
+value in `alt`) is written instead.
+
+**Honest limits.** (a) This pass was one session, one read, under a hard 25-minute wall-clock stop; 62.3% is
+what a rushed second eye gets on this inventory, not a ceiling -- GOLD-4C's own reasoning (three-quarters of
+c4's disagreement was inventory confusion, not legibility) was reached only after settling columns on the
+image, which this job's budget did not include. (b) The `base` column pass B wrote per-row was an ad hoc
+simplification (e.g. O-TILDE -> O) that does not match `inventory.tsv`'s own `family` grouping and was not used
+for the reported base-level number; the family-column fold above is the one reported. (c) No decoding attempted.
+Grade: S/M throughout (cryptanalytic inventory work), 0 H, 0 C. Rule 10: nothing here is a novelty claim.
+
+Suggested next (one line, not started): a reconciler session opens `disagreements_c1_passB.tsv` against
+`glyphs/strips/c1_L0*.jpg` and settles the 52 columns by eye, which is what would move this from 62% toward
+GOLD-4C's c4 ceiling (91%) if the same inventory-confusion pattern holds for c1.
+
+Requests this job: none (disk and CPU only, one `pip install pillow` for local image upscaling). Subagents: none.

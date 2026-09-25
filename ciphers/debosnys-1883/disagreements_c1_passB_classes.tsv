@@ -1,0 +1,53 @@
+line	col	A	B	flagged	class
+c1_L01	3	TRIDENT	OX-TILDE	B	reading error
+c1_L01	6	DASH-H	Y-CURL	B	reading error
+c1_L01	7	CC-O	Y-CURL	B	reading error
+c1_L01	9	II-DASH	ARCH-DASH	B	reading error
+c1_L01	11	PCT-SLASH	X-CURL	AB	reading error
+c1_L01	14	X	PCT-SLASH	AB	reading error
+c1_L01	19	-	X-CURL	B	segmentation
+c1_L01	20	X	Y-CURL	AB	reading error
+c1_L01	22	BLOB	-	A	segmentation
+c1_L02	4	PCT	HOOK-L	AB	reading error
+c1_L02	7	A-LOOP	DAGGER-O	B	reading error
+c1_L02	8	X	PCT	AB	reading error
+c1_L02	9	X	X-CURL	B	reading error
+c1_L02	10	OO-TILDE	MULTI	B	segmentation
+c1_L02	15	Y-CURL	C-DOT	B	reading error
+c1_L02	18	PCT	PCT-SLASH	B	inventory confusion
+c1_L03	2	X	Y-CURL	AB	reading error
+c1_L03	5	O-TILDE	C-BAR-X	AB	reading error
+c1_L03	7	X	X-CURL	AB	reading error
+c1_L03	10	X	ARC-LOOPS	AB	reading error
+c1_L03	11	CC-DASH	X-CURL	AB	reading error
+c1_L03	12	PCT	DIAMOND	AB	reading error
+c1_L03	18	CIRC-O	C-DOT	AB	reading error
+c1_L03	20	PCT	PCT-SLASH	B	inventory confusion
+c1_L03	28	PCT	O-SLASH	B	reading error
+c1_L04	3	DAGGER-O	PCT-SLASH	B	reading error
+c1_L04	13	PCT	PCT-SLASH	B	inventory confusion
+c1_L04	14	O-TILDE	Y-CURL	AB	reading error
+c1_L04	18	X	PCT-SLASH	AB	reading error
+c1_L05	1	PCT	Y-CURL	B	reading error
+c1_L05	3	BAR-THIN	BAR-SOLID	AB	reading error
+c1_L05	4	Y-CURL	C-DOT	AB	reading error
+c1_L05	6	MULTI	X-BAR	AB	segmentation
+c1_L05	7	X	X-CURL	B	reading error
+c1_L05	13	X	-	A	segmentation
+c1_L05	14	Y-CURL	C-DOT	B	reading error
+c1_L05	15	X	PCT-SLASH	B	reading error
+c1_L05	17	-	T-LETTER		segmentation
+c1_L05	19	BLOB	PCT	AB	reading error
+c1_L05	20	BAR-SOLID	ARCH-DASH	AB	reading error
+c1_L05	21	II-SLASH	O-DASH2	AB	reading error
+c1_L05	22	Y-CURL	VEE	B	reading error
+c1_L06	1	PCT	PCT-SLASH	B	inventory confusion
+c1_L06	4	O-TILDE	_	AB	segmentation
+c1_L06	5	X	X-CURL	AB	reading error
+c1_L06	6	A-LOOP	DAGGER-O	AB	reading error
+c1_L06	7	O-DASH2	C-DOT	AB	reading error
+c1_L06	8	PCT	PCT-SLASH	AB	inventory confusion
+c1_L06	9	X	BAR-SOLID	AB	reading error
+c1_L06	12	CIRC-O	DASH-H	AB	reading error
+c1_L06	13	Y-CURL	PCT-SLASH	AB	reading error
+c1_L06	14	CIRC-O	BAR-SOLID	AB	reading error

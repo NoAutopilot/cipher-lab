@@ -1,0 +1,139 @@
+line	position	sign	confidence	alt	why
+c1_L01	1	O-TILDE	M		agree-flagged
+c1_L01	2	PCT-SLASH	M		agree-flagged
+c1_L01	3	TRIDENT	M	B:OX-TILDE	differ
+c1_L01	4	X	H		agree
+c1_L01	5	LAMBDA	M		agree-flagged
+c1_L01	6	DASH-H	M	B:Y-CURL	differ
+c1_L01	7	CC-O	M	B:Y-CURL	differ
+c1_L01	8	Y-CURL	H		agree
+c1_L01	9	II-DASH	M	B:ARCH-DASH	differ
+c1_L01	10	OX-TILDE	H		agree
+c1_L01	11	PCT-SLASH	M	B:X-CURL	differ
+c1_L01	12	O-SLASH	M		agree-flagged
+c1_L01	13	C-BAR-X	M		agree-flagged
+c1_L01	14	X	M	B:PCT-SLASH	differ
+c1_L01	15	XX-TILDE	M		agree-flagged
+c1_L01	16	O-TILDE	M		agree-flagged
+c1_L01	17	PICT-HORSE	H		agree
+c1_L01	18	X	H		agree
+c1_L01	19	X-CURL	M	A:-	gap
+c1_L01	20	X	M	B:Y-CURL	differ
+c1_L01	21	BAR-SOLID	M		agree-flagged
+c1_L01	22	BLOB	M	B:-	gap
+c1_L01	23	X	M		agree-flagged
+c1_L02	1	SUN	H		agree
+c1_L02	2	VENUS	H		agree
+c1_L02	3	PCT	H		agree
+c1_L02	4	PCT	M	B:HOOK-L	differ
+c1_L02	5	O-TILDE	M		agree-flagged
+c1_L02	6	SIX-CURL	M		agree-flagged
+c1_L02	7	A-LOOP	M	B:DAGGER-O	differ
+c1_L02	8	X	M	B:PCT	differ
+c1_L02	9	X	M	B:X-CURL	differ
+c1_L02	10	OO-TILDE	M	B:MULTI	differ
+c1_L02	11	O-PLUS	M		agree-flagged
+c1_L02	12	X	M		agree-flagged
+c1_L02	13	PCT-SLASH	H		agree
+c1_L02	14	CC-O	H		agree
+c1_L02	15	Y-CURL	M	B:C-DOT	differ
+c1_L02	16	_	M		agree-flagged
+c1_L02	17	X	M		agree-flagged
+c1_L02	18	PCT	M	B:PCT-SLASH	differ
+c1_L02	19	VENUS	M		agree-flagged
+c1_L02	20	PICT-FACE	M		agree-flagged
+c1_L02	21	O-DASH2	M		agree-flagged
+c1_L03	1	BAR-THIN	M		agree-flagged
+c1_L03	2	X	M	B:Y-CURL	differ
+c1_L03	3	BLOB	M		agree-flagged
+c1_L03	4	DAGGER-O	H		agree
+c1_L03	5	O-TILDE	M	B:C-BAR-X	differ
+c1_L03	6	O-SLASH	M		agree-flagged
+c1_L03	7	X	M	B:X-CURL	differ
+c1_L03	8	_	M		agree-flagged
+c1_L03	9	C-DOT	M		agree-flagged
+c1_L03	10	X	M	B:ARC-LOOPS	differ
+c1_L03	11	CC-DASH	M	B:X-CURL	differ
+c1_L03	12	PCT	M	B:DIAMOND	differ
+c1_L03	13	BAR-SOLID	M		agree-flagged
+c1_L03	14	TRIDENT	M		agree-flagged
+c1_L03	15	PCT	M		agree-flagged
+c1_L03	16	LAMBDA-DASH	H		agree
+c1_L03	17	DOLLAR	M		agree-flagged
+c1_L03	18	CIRC-O	M	B:C-DOT	differ
+c1_L03	19	OX-TILDE	M		agree-flagged
+c1_L03	20	PCT	M	B:PCT-SLASH	differ
+c1_L03	21	DASH-H	H		agree
+c1_L03	22	ARCH-DASH	M		agree-flagged
+c1_L03	23	PICT-RUNNER	H		agree
+c1_L03	24	HASH	H		agree
+c1_L03	25	NOTE	M		agree-flagged
+c1_L03	26	MULTI	M		agree-flagged
+c1_L03	27	BAR-SOLID	M		agree-flagged
+c1_L03	28	PCT	M	B:O-SLASH	differ
+c1_L03	29	XX-TILDE	H		agree
+c1_L04	1	CC-DOT	M		agree-flagged
+c1_L04	2	DBL-SLASH	M		agree-flagged
+c1_L04	3	DAGGER-O	M	B:PCT-SLASH	differ
+c1_L04	4	HOOK-L	M		agree-flagged
+c1_L04	5	O-DASHBELOW	M		agree-flagged
+c1_L04	6	BAR-THIN	M		agree-flagged
+c1_L04	7	LOOP-STEM	H		agree
+c1_L04	8	VEE	H		agree
+c1_L04	9	PICT-TREE	H		agree
+c1_L04	10	DBL-SLASH	M		agree-flagged
+c1_L04	11	DASH-H	H		agree
+c1_L04	12	O-DASHBELOW	M		agree-flagged
+c1_L04	13	PCT	M	B:PCT-SLASH	differ
+c1_L04	14	O-TILDE	M	B:Y-CURL	differ
+c1_L04	15	ARC-LOOPS	H		agree
+c1_L04	16	X-BAR	M		agree-flagged
+c1_L04	17	X-CURL	M		agree-flagged
+c1_L04	18	X	M	B:PCT-SLASH	differ
+c1_L04	19	AMP	M		agree-flagged
+c1_L04	20	VENUS	M		agree-flagged
+c1_L04	21	F-LETTER	M		agree-flagged
+c1_L04	22	A-LOOP	M		agree-flagged
+c1_L04	23	DOTS-TILDE	H		agree
+c1_L05	1	PCT	M	B:Y-CURL	differ
+c1_L05	2	BAR-THIN	M		agree-flagged
+c1_L05	3	BAR-THIN	M	B:BAR-SOLID	differ
+c1_L05	4	Y-CURL	M	B:C-DOT	differ
+c1_L05	5	A-LOOP	H		agree
+c1_L05	6	MULTI	M	B:X-BAR	differ
+c1_L05	7	X	M	B:X-CURL	differ
+c1_L05	8	CROSS-T	H		agree
+c1_L05	9	Y-CURL	H		agree
+c1_L05	10	O-BRACKET	M		agree-flagged
+c1_L05	11	DIAMOND	M		agree-flagged
+c1_L05	12	O-SLASH	M		agree-flagged
+c1_L05	13	X	M	B:-	gap
+c1_L05	14	Y-CURL	M	B:C-DOT	differ
+c1_L05	15	X	M	B:PCT-SLASH	differ
+c1_L05	16	PCT	M		agree-flagged
+c1_L05	17	T-LETTER	M	A:-	gap
+c1_L05	18	DOLLAR	M		agree-flagged
+c1_L05	19	BLOB	M	B:PCT	differ
+c1_L05	20	BAR-SOLID	M	B:ARCH-DASH	differ
+c1_L05	21	II-SLASH	M	B:O-DASH2	differ
+c1_L05	22	Y-CURL	M	B:VEE	differ
+c1_L05	23	X	M		agree-flagged
+c1_L05	24	DAGGER-O	M		agree-flagged
+c1_L06	1	PCT	M	B:PCT-SLASH	differ
+c1_L06	2	O-SLASH	M		agree-flagged
+c1_L06	3	X	H		agree
+c1_L06	4	O-TILDE	M	B:_	differ
+c1_L06	5	X	M	B:X-CURL	differ
+c1_L06	6	A-LOOP	M	B:DAGGER-O	differ
+c1_L06	7	O-DASH2	M	B:C-DOT	differ
+c1_L06	8	PCT	M	B:PCT-SLASH	differ
+c1_L06	9	X	M	B:BAR-SOLID	differ
+c1_L06	10	Y-LOOPS	M		agree-flagged
+c1_L06	11	X-BAR	M		agree-flagged
+c1_L06	12	CIRC-O	M	B:DASH-H	differ
+c1_L06	13	Y-CURL	M	B:PCT-SLASH	differ
+c1_L06	14	CIRC-O	M	B:BAR-SOLID	differ
+c1_L06	15	S-CURL	M		agree-flagged
+c1_L06	16	SLASH-BAR	M		agree-flagged
+c1_L06	17	PHI	H		agree
+c1_L06	18	T-LETTER	M		agree-flagged
