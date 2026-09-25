@@ -175,3 +175,12 @@ rules transfer to our pipeline:
 (c) Persistence over simple hypotheses beat 370 years of frequency analysis on this target: the printed-ciphertext
    detector's candidates (the 23 unswept Thurloe passages, STATUS lane table) should get a host-text-as-key pass
    before a solver run, not after.
+
+## Lead-class order (25 Sept 2026, from LANE OX's day and the 7b lanes' COMMON item 4; ported by LEARN-2026-09-25-1718)
+
+Before any cryptanalysis on a catalogued cipher letter, try the cheap routes in this order and stop at the first that
+reads: (1) the same letter already in print (the sender's or recipient's edition, the calendar, the documentary series);
+(2) a sibling letter's decipherment in the same volume or series; (3) an interlinear or marginal gloss on the leaf
+itself; (4) a published key of the same office and years (Tomokiyo, Bourdeau's key web, our own key tables); (5)
+cryptanalysis with a matched control. Every reading on the board on 25 Sept 2026 came from routes 1-4; route 5 has
+produced none at single-letter lengths. The order is a rule for the first worker on a target, not a description.

@@ -471,3 +471,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T17:17Z	session_01UP2nZhnHzDiGi7HR29obCr	LANE R6 Y9 (Sonnet, cap 6)	berthier-napoleon-1812 plate + crib	brief 2026-09-25-lane-r6-y9-berthier.md
 2026-09-25T17:31Z	session_012H13Lr87WvKvzsuhmyM6GD	done	bBUL bullet-tuscany-1944 test 1	pushed
 2026-09-25T17:31Z	session_01WZHcenYMEBmsycwsAeFDeF	done	bMCC mccormick-1999 test 1	pushed 8d4cedb
+2026-09-25T17:29Z	session_01Ngn3y84Z3NdpyGnFDjF9Kz	SO-CLOSE done $1.15 D, archived	PRs 10-12 closed, files landed 502f64a	
