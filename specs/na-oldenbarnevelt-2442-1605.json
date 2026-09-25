@@ -1,0 +1,18 @@
+{
+ "slug": "na-oldenbarnevelt-2442-1605",
+ "name": "Missive van Don Juan Gara de Senisteros aan Juan de la Pena, 23 december 1605 (afschrift)",
+ "language_candidates": ["es"],
+ "ciphertext": "ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv (VX-CT03, 25 Sept 2026, two independent blind passes reconciled)",
+ "ciphertext_source": "Nationaal Archief 3.01.14 (Archief van Johan van Oldenbarnevelt), invnr 2442, folios 54-55-56 (images/001, 002, 006), fetched by VX-CS03/VX-SCEU 25 Sept 2026",
+ "alphabet": "running Spanish prose with word-internal cipher tokens mixing plain lowercase Roman letters and handwritten digits 0-9; hypothesis (not yet confirmed): the digits mostly stand for vowels, possibly with some consonants and/or homophones -- untested at spec-writing time",
+ "constraints": [
+  "not a full-alphabet substitution: most characters in each cipher token are already plaintext Spanish letters written in clear; only the digit positions are unknown and must map consistently (same digit -> same letter throughout the letter) to a plaintext letter",
+  "check-solved (VX-CS03, 25 Sept 2026): open. No key, interlinear gloss, marginal decipherment or separate key table found on any of 8/11 fetched leaves of invnr 2442, its 16 catalogued neighbours (2435-2450), Lonchay & Cuvelier vol. I, or all 3 volumes of Bescheiden Oldenbarnevelt (Huygens retroboeken). Intake gate passed.",
+  "kind: cryptanalysis (no key beside the letter; fails the recovery-lane gate per VX-SCEU/VX-CS03)"
+ ],
+ "cheap_tests_in_order": [
+  "1. Constraint/hill-climb solve of the digit->letter mapping (tools/homophonic_anneal.py's existing crib-fix mechanism: every already-clear letter fixed to itself as a crib sign, every digit a free sign), scored against a period (1605) Spanish character n-gram model, with a matched control of the same design (same N total sign-stream characters, same K distinct free digit signs, redacting the K most frequent letters of a held-out period-Spanish passage), 3 seeds."
+ ],
+ "judge": {"corpora": ["ciphers/na-oldenbarnevelt-2442-1605/corpus/es16-donquijote/donquijote1605_pg2000_body.txt"], "min_word_cover": 0.5},
+ "written": "25 Sept 2026, LANE VX worker VX-CT03 (session_01C5yhxPrfyNsD8dzMY3aMKh), for .claude/briefs/runs/2026-09-25-lane-vx-ct03.md"
+}
