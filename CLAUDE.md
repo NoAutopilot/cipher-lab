@@ -169,7 +169,7 @@ Two things make that safe, and they are not optional.
 
 **Claim before you start.** Append a line to `ROOM.md` naming you, the role and the target before any work
 begins, and a `done` line when you stop. If a live claim already covers what you wanted, take the next
-thing. Nothing else stops two agents transcribing the same folio.
+thing. Nothing else stops two agents transcribing the same folio. Write ROOM lines with `tools/room.py` or inside single quotes / a quoted heredoc: inside double quotes a figure like `$8` is a shell variable and vanishes (QA 25 Sept 2026 08:30 found four done lines reading "well under  stall alarm"). A cost figure comes from the orchestrator's `get_session`, never from the worker's own sense of it.
 
 **A claim goes stale after six hours.** If a claim in `ROOM.md` has no `done` line and no further activity from that agent for six hours, anyone may take the target after appending a line saying so. Otherwise one idle agent parks a target indefinitely and nobody can tell, because no account can see another account's sessions.
 

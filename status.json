@@ -1,5 +1,5 @@
 {
- "updated": "25 Sept 2026, 08:25 UTC",
+ "updated": "25 Sept 2026, 09:35 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1026,6 +1026,16 @@
   }
  ],
  "results": [
+  {
+   "date": "25 Sept 2026",
+   "kind": "recovery",
+   "title": "Jan van Nassau to William of Orange, Cologne, 17 Apr 1574 (WVO 5551): the two cipher lines read under Lodewijk's 1574 table",
+   "grade": "N3 (no prior plaintext or decipherment of the cipher lines located; AUDIT.md V-TX and V-TX2); C 23, I 2, M 1, U 6 of 32 codes; two audits; Glawischnig 1973 cites the letter, and a second copy at Staatsarchiv Marburg (4f Nld. 165) is unchecked",
+   "line": "Three days after Mookerheyde, Jan van Nassau's report of the defeat to his brother ends in two cipher lines. They read under the letter table this repository rebuilt from the period decipherments of WVO 4613 and 4615: 'der konig ... van polen ... will' and 'offentli[ch] ... es', 26 of 32 codes; two blind passes agree on every numeral and a fresh re-derivation reproduces the reading. The clear part of the letter is summarised in WVO; no print of the cipher lines was found. Partial: six codes are not in the table and two line-end words are lost at a torn edge.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75",
+   "key": "ours",
+   "text": "new"
+  },
   {
    "date": "25 Sept 2026",
    "kind": "recovery",
