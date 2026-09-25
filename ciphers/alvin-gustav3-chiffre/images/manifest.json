@@ -1,0 +1,24 @@
+{
+  "note": "Alvin (alvin-portal.org, Uppsala University Library). Images fetched via the documented full-size route (curl, no login) confirmed working in tools/tests/../cyphersolver r4349 notes and re-confirmed here: https://www.alvin-portal.org/alvin/attachment/document/alvin-record:<id>/ATTACHMENT-NNNN gives the full-size TIFF; attachment/record/... gives a small (300px-wide) JPEG only; /alvin/imageViewer.jsf and /iipsrv/ are robots.txt-disallowed -- flagged in NOTES.md, not used again after one accidental browser_fetch.js hit on imageViewer.jsf.",
+  "items": [
+    {
+      "record": "alvin-record:499198",
+      "title": "171. Chiffre fran Konungens ungdom. (detailed/digitised record; alvin-record:499197 is the brief/catalogue stub for the same item, no image)",
+      "host_record": "alvin-record:163862 (Gustav III:s egenhandiga skrifter, vol 6 T.II 1778-1792, F 415)",
+      "shelfmark": "F 415, foliation 423-424",
+      "pages": [
+        {"attachment": "ATTACHMENT-0001", "local": "images/f415_171_p1.jpg", "url": "https://www.alvin-portal.org/alvin/attachment/document/alvin-record:499198/ATTACHMENT-0001", "native_size": "not recorded (TIFF, ~20.9MB)"},
+        {"attachment": "ATTACHMENT-0002", "local": "images/f415_171_p2.jpg", "url": "https://www.alvin-portal.org/alvin/attachment/document/alvin-record:499198/ATTACHMENT-0002", "native_size": "not recorded (TIFF, ~30.3MB)"},
+        {"attachment": "ATTACHMENT-0003", "local": "images/f415_171_p3.jpg", "url": "https://www.alvin-portal.org/alvin/attachment/document/alvin-record:499198/ATTACHMENT-0003", "native_size": "1678x3802 (TIFF, 11.4MB)"}
+      ],
+      "pdf_fulltext": "https://www.alvin-portal.org/alvin/attachment/document/alvin-record:499198/ATTACHMENT-0004.pdf (not fetched -- appendix PDF, not opened this pass)"
+    },
+    {
+      "record": "alvin-record:164482",
+      "title": "F 474 key portfolio -- 'Chiffres Francois' folder, item N:1 person/phrase nomenclator (fetched for comparison only)",
+      "pages": [
+        {"attachment": "ATTACHMENT-0013", "local": "images/f474_att0013_N1list.jpg", "url": "https://www.alvin-portal.org/alvin/attachment/document/alvin-record:164482/ATTACHMENT-0013", "native_size": "3142x3696 (TIFF, 22.1MB)"}
+      ]
+    }
+  ]
+}
