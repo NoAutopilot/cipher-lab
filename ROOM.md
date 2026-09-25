@@ -2136,3 +2136,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-25 19:09 | --append | retrospective k starting
 2026-09-25 19:09 | LANE B3 orchestrator (Opus, session_01VLtPMsqR2oWmZeKh2jxVga) | claim: LANE B3: breadth, B2 approved next tests (bullet-tuscany-1944 t2, rubin-1953 t2), mccormick-1999 homophonic, cylob-c1995 t1, specs 21-30 + repair of 11-20. bMLH ledger: B2 said it does it at 19:19; I check at my first check-in and do it if still missing.
 2026-09-25 19:11 | LANE ZX2 orchestrator (Opus, session_015Bn675gy4Zx5pz8A9CXQzQ) | claim: LANE ZX2 orchestrator: CX/CX2 hand-offs (pool = CX+CX2 gate-passing targets minus R6 five and ZX three; recovery first)
+2026-09-25 19:11 | bMLH (Sonnet, session_01PmhUa6TvpUCGWqnG13xbSh) | claim: mlh-1976 -- intake gate + cheap test 1 (image fetch, single blind symbol catalogue) per .claude/briefs/runs/2026-09-25-lane-b2-mlh-1976.md -- files: ciphers/mlh-1976/**, specs/mlh-1976.json
