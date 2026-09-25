@@ -105,6 +105,58 @@ Search log (rule 10): reported above, per source. Not classified for novelty. Re
 (Academia.edu, blocked 403; vriendenvandewitt.nl PDF, fetched and locally OCR'd with `pdftotext`, not a network
 re-fetch), WebSearch 2, `github.com` 0 (reused clones already on disk this session). No subagents.
 
+## Archive location pinned, 25 September 2026 (LANE OX worker OX-VB, session_017rmJ1jFJvbnXj6nrcb223x)
+
+**NA 3.01.17, inv.nr 1538** (the yearly bundle "Missiven van Coenraed van Beuningen, extraordinaris gedeputeerde
+naar Denemarken", 1657) is the exact inventory number. Found by fetching the archive's own full EAD inventory
+(`www.nationaalarchief.nl/onderzoeken/archief/3.01.17/download/xml`, 3.1 MB, 41k lines, one curl request) and
+grepping for "Beuningen" -- the subseries A.2.7.1.2 "Bijzondere gezantschappen" lists yearly bundles 1536-1541
+for 1656-1658, with 1538 dated exactly "1657" (cover leaf confirms: "Denemarken / Ambassadeur Van Beuningen aan
+den Raadpensionaris / 1657", image order 1 of the bundle). Its METS (`service.archief.nl/gaf/api/mets/v1/
+dfa4b121-2476-41cf-8a1c-d784ec6f2050`, resolved from the EAD's own `<dao>` handle) shows the bundle is digitised
+end to end: 289 leaf-images (two-page spreads), rightsMD `RIGHTSCATEGORY="PUBLIC DOMAIN"`, no login, served at
+`service.archief.nl/api/file/v1/default/<uuid>` (no IIIF; full-resolution JPEG only, ~1-6 MB each).
+
+Calibrated the bundle's chronological order by sampling images at roughly every 30th position and reading
+datelines (p.1 cover "1657"; p.30 "27 January 1657"; p.60 "25 martij 1657"; p.180 "Coppenhagen 15en Julij
+1657"), then narrowed in around the September/October area. Both copies of the 19/29 September 1657 letter
+are in this same bundle, four leaf-images apart:
+
+- **Plain copy: ff.208-209** (`NL-HaNA_3.01.17_1538_0208.jpg`, `_0209.jpg`). f.208's docket reads (abbreviated,
+  another hand, top left) "...de 19en Octob. 1657" -- matching the printed edition's footnote quote of De
+  Witt's own endorsement, "beantwoort den 19en October 1657", verbatim. The body opens "Mijn Heer, Hier wert
+  van dag tot dag met groot impatientie verlangt na [...] Rosewinge..." which matches Brieven aan Johan de Witt
+  I p.405's printed text from its first line, word for word (checked directly against `images/dewitt_01_405.jpg`).
+  f.209 ends with the signature "UEd: ootmoedigen [en] verplichten dienaer, [signed] Van Beuningen" over the
+  dateline "Coppenhagen de 19/29 [Septem]bris 1657" -- the same double Julian/Gregorian date the printed
+  edition cites as "(19/29 September 1657)".
+- **Cipher copy, "van een andere hand": ff.210-211** (`NL-HaNA_3.01.17_1538_0210.jpg`, `_0211.jpg`). Visibly a
+  different, more cramped hand than ff.208-209, matching the footnote's own description. Opens "Hier voort van
+  dag tot dag met groot impatientie verlangt na U [cipher numbers]..." -- the identical opening, with content
+  words replaced by comma-separated two-digit numeric groups and colons apparently marking word boundaries;
+  plain Dutch function words (mijn, heer, met, over, onder, daer, ...) are left uncoded. Ends with the same
+  closing formula and the identical double date, "Coppenhaghen den 19/29 [Septem]bris 1657", confirming this
+  is the cipher copy of *this* letter and not of the other same-day dispatch below.
+
+**Not the target, kept for context:** ff.206-207 carry the end of one Van Beuningen dispatch and the whole of
+another, both also dated 19/29 September 1657 but on different subject matter (a Brandenburg/Poland/Sweden
+report) -- Van Beuningen evidently sent more than one letter to De Witt on the same courier date. Recorded here
+so a later worker does not confuse it with the target or re-spend a pass identifying it.
+
+Images fetched and committed: `images/NL-HaNA_3.01.17_1538_020{6,7,8,9}.jpg`, `_021{0,1}.jpg`, plus single-page
+crops of the two cipher leaves at `images/cipher_crops/0210_right.jpg` and `0211_left.jpg` for the transcription
+pass. `images/manifest.json` records the inventory/METS URLs and per-image content. Folder size 9.5 MB, well
+under the 30 MB budget. Requests this pass: `www.nationaalarchief.nl` 2 (archive landing page, EAD XML download),
+`service.archief.nl` 1 (inv.nr 1538 METS) + 15 leaf-image fetches (calibration samples + the four target leaves
++ two context leaves), all >=1.5s apart, single host, well under the good-citizen per-session cap. No EMLO fetch
+was needed this pass (the EAD route alone resolved the inv.nr; EMLO's advanced-search API remains unresolved,
+see below, but is now moot for this target).
+
+**Kind confirmed: recovery by known plaintext.** Both copies of the same letter are now in hand as images, not
+merely inferred from the printed edition's footnote. Key/alignment recovery is explicitly NOT attempted this
+pass (out of this worker's brief); a two-pass blind transcription of the cipher leaves follows below for the
+next solver.
+
 ## HU8: archive location, 24 September 2026 (LANE N2 worker csHU2)
 
 Confirmed NA 3.01.17 (see Copy status above, revised). Requests this pass: `www.nationaalarchief.nl` ~3
