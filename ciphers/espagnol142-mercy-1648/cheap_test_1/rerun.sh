@@ -22,3 +22,7 @@ done
 
 rm -rf "$tmp"
 # Expect: target best score ~-1154 (reproducible across seeds 2,3,5,7); control scores ~-1322 to -1357.
+
+# LANE R7 MSHUF (25 Sept 2026): shuffle control -- is the target-vs-control gap sequence or profile?
+# python3 ciphers/espagnol142-mercy-1648/cheap_test_1/shuffle_control.py ciphers/espagnol142-mercy-1648/cipher_codes.tsv --seed 1 --out /tmp/shuffled_s1.tsv && python3 tools/homophonic_anneal.py /tmp/shuffled_s1.tsv --corpus donquijote.txt --corpus buscon.txt --skip NONE --seed 1 --restarts 8 --iters 40000
+# Result: full-shuffle mean -1488.5, line-shuffle mean -1484.4, both below the matched-control band (-1321.7..-1356.6) -- verdict: sequence. See ../shuffle_control.md.
