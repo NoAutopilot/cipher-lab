@@ -31,6 +31,6 @@ column names one account only is a key the other account still lacks. No worker 
 | CLOUDSDK_AUTH_ACCESS_TOKEN | undocumented (document before use): Google Cloud SDK access token, ASKS 62 | none yet | found by probe, 25 Sept 2026 | set | ytbiz@2026-09-25T22:44 |
 | DDB_API_KEY | Deutsche Digitale Bibliothek API | scouts | CLAUDE.md optional keys, 25 Sept 2026 | requested | |
 | APE_API_KEY | Archives Portal Europe API | scouts | CLAUDE.md optional keys, 25 Sept 2026 | requested | |
-| CORE_API_KEY | CORE open-access full text (Bearer) | verifiers | CLAUDE.md optional keys, 25 Sept 2026 | requested | |
+| CORE_API_KEY | CORE open-access full text (Bearer) | verifiers | CLAUDE.md optional keys, 25 Sept 2026 | set |  |
 | NARA_API_KEY | NARA catalog API (x-api-key; by email per NARA's README) | scouts (koehler-1944 RG 65 file) | QUEUE.md free-key gap, 24 Sept 2026 | requested | |
 | CIPHERLAB_ACCOUNT | account label for this register (`ytbiz` or `owner`), not a secret | tools/key_probe.py | parent 7d, 25 Sept 2026, ASKS 63 | requested | |
