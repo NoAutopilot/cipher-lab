@@ -539,3 +539,9 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T20:00Z	session_01AryRjUHSbfKHxAubLziZcz	RETRO-APPLY-K (Sonnet, cap 6)	apply RETRO-2026-09-25k.md brief/tool-only diffs	prompt inline
 2026-09-25T20:00Z	session_01744aLgcLnadR1XQckyHwcu	parent 7d (Fable, live)	took over from 7c; hub-seed/SUCCESSOR-PROMPT.md	arms its own first check-in
 2026-09-25T20:00Z	session_01H4AdRiu9g44F1oCBVNzbpx	parent 7c done ~$35, handed over to 7d	16:20-20:01 UTC	
+2026-09-25T20:02Z	session_01VtGthWarHGf6sw5SDYNxrV	R7-MSIB (Sonnet, cap 5, 50 min)	espagnol142-mercy-1648 Brussels 15 Apr 1648 sibling (Lonchay p.445, AGR SEE t.LXIV f.16)	brief 2026-09-25-lane-r7-msib-mercy-brussels.md
+2026-09-25T20:02Z	session_01HTz31npY9f76JCtchH3v7d	R7-AT55V (Sonnet, cap 6, 60 min)	fr2933-salviati-1525 glyph-atlas re-pass f55v + codemark_curve.py --merge	brief 2026-09-25-lane-r7-atf55v-salviati-atlas.md
+2026-09-25T20:02Z	session_01Joi7KiFjCreo3Cg2S2pdXK	R7-AT57V (Sonnet, cap 6, 60 min)	fr2933-salviati-1525 glyph-atlas re-pass f57v	brief 2026-09-25-lane-r7-atf57v-salviati-atlas.md
+2026-09-25T20:03Z	session_01PQRjX2RegcgmW4GnzVZdNc	R7-BBER (Sonnet, cap 3, 40 min)	berthier-napoleon-1812 spec + test 0 (letter XXIX vs 34-letter control)	brief 2026-09-25-lane-r7-bber-berthier-spec.md
+2026-09-25T20:04Z	session_01FdpVvM9Vd8rPWH1wMmgvkT	R7-MSHUF (Sonnet, cap 3, 40 min)	espagnol142-mercy-1648 shuffled-stream anneal control	brief 2026-09-25-lane-r7-mshuf-mercy-shuffle.md
+2026-09-25T20:04Z	session_01AASLLgdnFnbD8RH25QASyr	R7-MEYE (Sonnet, cap 2.50, 35 min)	espagnol142-mercy-1648 blind re-transcription of six rows	brief 2026-09-25-lane-r7-meye-mercy-blind.md

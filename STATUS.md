@@ -90,6 +90,18 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE R7 handoff (session_01UpWfpbLwYL1xmDG1vFyi6h), 25 September 2026, kept current (last 20:06 UTC)
+
+Recovery and deep work, successor to LANE R6; opened 20:00 by parent 7c (now 7d). Brief .claude/briefs/runs/2026-09-25-lane-r7-orchestrator.md;
+worker common 2026-09-25-lane-r7-common.md. Rate allowed at 20:00. Six workers live, none reported yet; worker usage 0 ledgered.
+clair1161, clairambault296 and the sp87/TNA copy-order items were already taken by ZX2 (ZX2-GAL, ZX2-ASK, ASKS 54/56/57) and are left to it.
+
+| target | outcome (25 Sept 2026) | next |
+|---|---|---|
+| espagnol142-mercy-1648 | ASKS 59 filed (Cuvelier-Lefèvre VI p.647, owner read); SO-MERCY-F22 already queued by V6 (no duplicate SO row); live: R7-MSIB (Brussels 15 Apr sibling), R7-MSHUF (shuffled-stream control), R7-MEYE (blind eye-check of the 14/19 glyphs) | read the three reports; NEAR row |
+| fr2933-salviati-1525 | live: R7-AT55V (f55v merges + codemark_curve.py --merge), R7-AT57V (f57v merges) | control ladder only if pooled types 223 -> <=178 |
+| berthier-napoleon-1812 | live: R7-BBER (spec + test 0: letter XXIX vs 34-letter control; test 1 print check of Corresp. Napoléon XXIV) | per spec |
+
 ## LANE R6 handoff (session_018MWpKL71WnBxA8k4ejVkBS), 25 September 2026, 19:25 UTC
 
 Recovery and deep work; opened 15:39 by parent 7b, closed at 505k context (brief's 500k handoff). 31 workers closed (Sonnet 28,
