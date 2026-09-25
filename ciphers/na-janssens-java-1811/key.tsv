@@ -25,20 +25,21 @@ code	value	n	pages	grade	note
 146	mer	1	200	C	
 152	Sud	1	200	C	
 158	pointes	1	191	M	only a corrected/crossed-out cell seen
-168	;	1	191	C	
+168	;	1	191,208(Vanteau)	M	VX-RD02C: re-applying VX-RD02's fix (lost when VX-RD02B's build_key.py rerun on combined_passA/B.tsv rebuilt key.tsv from scratch with no memory of it): leaf 191 clean ';' (n=1) vs leaves 199/200 pass A ';' / pass B 'j' (2 more occurrences, a genuine disagreement pass_disagreements.tsv logs but build_key.py drops silently whenever a code already has a clean reading elsewhere -- confirmed again by this worker's leaf-208 (Vanteau) cross-correspondent read, itself ';' on that leaf too). Also confirmed (';' reading) on leaf 208 (Vanteau).
 172	Nord	1	200	C	
 186	ni	1	191	M	only a corrected/crossed-out cell seen
 190	en	5	190,191,199,no5(210-212)	M	ambiguous: en (n=3, pages=199,no5(210-212)); est (n=2, pages=190,191)
 191	une	1	no5(210-212)	M	single-pass only, other pass skipped this code
 195	y	2	199,200	C	
 196	il	1	200	C	
-204	Batavia	4	190,191,no5(210-212)	C	
+204	Batavia	4	190,191,no5(210-212),208(Vanteau)	C	VX-RD02C: also confirmed on leaf 208 (Vanteau).
 219	ce	2	199,200	C	
 221	l'	2	191	C	
-225	De	2	191,no5(210-212)	C	
+225	De	2	191,no5(210-212),208(Vanteau)	C	VX-RD02C: also confirmed on leaf 208 (Vanteau).
 227	sans	1	191	C	
 235	tra	1	no5(210-212)	C	
 241	7	1	no5(210-212)	M	only a corrected/crossed-out cell seen
+244	ci	1	no5(210-212)	C	VX-RD02C: added -- pass A 'à' vs pass B 'ci' (order 85), dropped by the merge as a disagreement; no5_plaintext.txt's 'décisive' (de[841]-ci[244]-si[1041]-vé[363]) confirms pass B's 'ci', not pass A's 'à'.
 264	la	2	200,no5(210-212)	C	
 299	ra	2	191,no5(210-212)	M	only a corrected/crossed-out cell seen
 303	zi	1	no5(210-212)	M	only a corrected/crossed-out cell seen
@@ -70,6 +71,7 @@ code	value	n	pages	grade	note
 447	Je	2	191,199	C	
 448	la	1	191	C	
 454	et	1	no5(210-212)	C	
+456	re	1	no5(210-212)	C	VX-RD02C: added -- pass A 'rc' vs pass B 're' (order 61, pass B's own note already guessed 'retranché'), dropped by the merge as a disagreement; no5_plaintext.txt's 'retranché' (le camp re[456]-tra[235]-n[99]-ché[1137]) confirms pass B's 're', not pass A's 'rc'.
 469	ces	1	200	C	
 472	e	1	191	C	
 494	terminé	1	191	M	only a corrected/crossed-out cell seen
@@ -77,7 +79,7 @@ code	value	n	pages	grade	note
 508	Destiné	1	no5(210-212)	C	
 511	le	2	191,200	C	
 516	et	2	200,no5(210-212)	C	
-527	;	1	200	C	
+527	;	1	200	M	VX-RD02C: re-applying VX-RD02's fix (same loss/same bug as 168 above): leaf 200 clean ';' (n=1) vs leaf 199 both passes 'j' (pass A flagged uncertain, which the script's shaky-bucket logic hid from the clean/disagree comparison) -- see VX-RD02's fresh-instance re-derivation section in NOTES.md.
 529	nous	1	200	C	
 534	vent	1	200	M	only a corrected/crossed-out cell seen
 545	pour	2	200,no5(210-212)	C	
@@ -93,6 +95,7 @@ code	value	n	pages	grade	note
 587	où	3	190,191,199	M	ambiguous: où (n=2, pages=190,191); ou (n=1, pages=199)
 590	Troupes	1	no5(210-212)	C	
 594	reçu	1	199	C	
+597	expédition	2	no5(210-212)	C	VX-RD02C: dropped by build_key.py's merge (glossnorm doesn't fold accents, so pass A 'expedition' vs pass B 'expédition' -- same word -- was wrongly routed to pass_disagreements.tsv and never entered key.tsv); both passes agree on the code and word (order 2, keysource_no5_passA/B.tsv); confirmed independently by no5_plaintext.txt's opening line 'Une expédition forte de 71 voiles...'
 605	état	1	191	C	
 607	mal	1	200	M	only a corrected/crossed-out cell seen
 609	Dépêches	1	199	C	
@@ -108,7 +111,7 @@ code	value	n	pages	grade	note
 692	;	1	191	C	
 694	crainte	1	200	C	
 696	van	1	199	M	only a corrected/crossed-out cell seen
-697	ble	1	no5(210-212)	M	only a corrected/crossed-out cell seen
+697	ble	1	no5(210-212),208(Vanteau)	M	only a corrected/crossed-out cell seen VX-RD02C: also confirmed on leaf 208 (signed Vanteau, not Janssens -- a different correspondent reusing the same code book), 2-pass agreed.
 700	Ville	1	no5(210-212)	C	
 706	gi	1	199	M	only a corrected/crossed-out cell seen
 713	Se	1	200	M	only a corrected/crossed-out cell seen
@@ -121,6 +124,7 @@ code	value	n	pages	grade	note
 741	tenir	1	200	C	
 743	trois	1	191	C	
 744	ra	1	200	M	only a corrected/crossed-out cell seen
+748	ns	1	no5(210-212)	C	VX-RD02C: added -- pass A 'ns' vs pass B 'ins' (bold/dark ink, order 41), a genuine disagreement dropped by the merge; no5_plaintext.txt's 'magasins' (ma[835]-ga[1001]-zi[303]-ns[748]) confirms pass A's 'ns'.
 760	er	1	200	M	only a corrected/crossed-out cell seen
 762	jours	2	200,no5(210-212)	C	
 766	Du	3	191	C	
@@ -148,9 +152,11 @@ code	value	n	pages	grade	note
 889	expose	1	191	M	only a corrected/crossed-out cell seen
 893	puis	1	191	C	
 900	ils	1	no5(210-212)	C	
+904	i	1	no5(210-212)	C	VX-RD02C: added -- pass A 'ï' vs pass B 'î' (dotted-i, ambiguous accent, order 49), dropped by the merge; no5_plaintext.txt's 'poivre' (po[1074]-i[904]-vr[304]-e[1190]) confirms the letter is i.
 905	cre	1	no5(210-212)	M	only a corrected/crossed-out cell seen
 930	et	1	no5(210-212)	C	
 938	it	1	no5(210-212)	M	only a corrected/crossed-out cell seen
+960	près	1	208(Vanteau)	M	VX-RD02C: new code, from leaf 208 (signed Vanteau, not Janssens -- different correspondent, same nomenclator). Value uncertain between 'près' and 'très' (bracketed with code 195 on the same leaf, gloss possibly spanning both -- table structure not fully resolved, see NOTES.md); 2-pass agreed (this worker + one blind Sonnet subagent) on the digit reading, not on the gloss choice.
 965	port	3	190,191,199	M	ambiguous: port (n=2, pages=190,191); porte (n=1, pages=199)
 966	le	4	190,191,199,no5(210-212)	C	
 976	ri	1	199	C	

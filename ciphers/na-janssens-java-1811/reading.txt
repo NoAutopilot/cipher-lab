@@ -5,16 +5,16 @@
 # 'no5' in key.tsv's pages column) -- a period decipherment of OTHER text in the same
 # bundle, so every keyed token grades C (rule 4); M where key.tsv itself flags the code
 # ambiguous or single-pass-only; [?] = code never seen in the key source.
-# tokens 163: H 0, C 49, S 0, M 22, I 0, U 92
+# tokens 163: H 0, C 52, S 0, M 24, I 0, U 87
 1	[79] [441] [497] [853] [1121] l' état [130] [1173] [573] [1027]
-2	de [1024] [403] en . [364] [456] [551] Sont e puis
-3	[1014] ; l' [984] n' [1021] [1039] [456] que peu de
-4	[176] . [156] les [585] [748] [125] A [206] ché [899]
+2	de [1024] [403] en . [364] re [551] Sont e puis
+3	[1014] ; l' [984] n' [1021] [1039] re que peu de
+4	[176] . [156] les [585] ns [125] A [206] ché [899]
 5	la De [1126] [882] le [50] [270] [708] de l' [987] r
 6	[627] [493] [403] [550] reçu ; il [333] [628] [306] que [364]
 7	[453] [901] qu'il [719] [1136] le débarquer [443] [3] [270] Le seules
-8	[535] [449] de leur mal . si [904] [110] ai le [929]
-9	[904] [824] [1121] [449] [467] les [375] [757] les a [206]
+8	[535] [449] de leur mal . si i [110] ai le [929]
+9	i [824] [1121] [449] [467] les [375] [757] les a [206]
 10	C. [462] [23] ât [983] . [1160] [79] [441] [497] part chargent
 11	de [125] [1065] et de la mal [236] [72] [1169] [1095]
 12	[442] . [156] [443] [62] [645] [335] tous [881] [476] l' ennemie
