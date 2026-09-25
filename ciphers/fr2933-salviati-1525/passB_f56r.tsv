@@ -485,3 +485,33 @@ line	pos	code	marks	action	conf	note
 18	25	a	7	confirm	H
 18	26	H	1	confirm	H
 18	27	g		confirm	H
+19	1	_		confirm	H	blank spacer
+19	2	S7		confirm	H
+19	3	_	dot	confirm	H
+19	4	_		confirm	M	small dot mark, low share (.81) already flagged this
+19	5	o.		confirm	H
+19	6	g	~	confirm	M	low share (.80) already flagged this, tilde-topped loop
+19	7	H	1|o	confirm	H
+19	8	_	1	confirm	H
+19	9	y		confirm	H
+19	10	y		confirm	H
+19	11	y		confirm	M	low share (.81) already flagged this
+19	12	S7		confirm	H
+19	13	#		confirm	H
+19	14	]	o	confirm	H
+19	15	y		confirm	H
+19	16	y		confirm	H
+19	17	psi		confirm	H
+19	18	eps		confirm	H
+19	19	w		confirm	H
+19	20	_		confirm	M	blank/mark between signs
+19	21	U		confirm	H	clear circle shape
+19	22	lam		confirm	H
+19	23	phi		confirm	H
+19	24	Lx		confirm	H	last cipher sign before the line ends in plain text
+19	25	_		plain	H	"Io" ("I"), capital I written with a loop resembling J
+19	26	_		plain	H	"lo" ("it")
+19	27	_		plain	H	"cr" of "credo" ("[I] believe"), misread as sign despite very low share (.40) already flagged this
+19	28	_		plain	M	"e" of "credo", low share (.60) already flagged this
+19	29	_		plain	H	"d" of "credo"
+19	30	_		plain	H	"o" ending "credo" -- line ends "Io lo credo" ("I believe it/so")
