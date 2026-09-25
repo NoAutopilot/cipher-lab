@@ -2269,3 +2269,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-25 21:32 | LANE B4 orchestrator (Opus, session_01V2WMavWGMeAUYELUpmyEcX) | claim: LANE B4: breadth, B3's successor queue (scienceblogs.de serial sufi then censorship; blitz test 2; NEAR steps untersberg/bullet/mccormick; goldbar line 1; specs 21-30 first tests)
 2026-09-25 21:34 | LEARN-3 (Sonnet) | claim: cross-account read, window since 17:18
 2026-09-25 21:34 | LEARN-3 (Sonnet) | done: LEARN: 2 practices, 0 overlaps, file LEARN-2026-09-25-2133.md
+2026-09-25 21:35 | LANE B4 orchestrator (Opus, session_01V2WMavWGMeAUYELUpmyEcX) | spawned 4 Sonnet workers (cap 3 each, briefs 2026-09-25-lane-b4-*.md): bSUF sufi-fiddle test 1 (scienceblogs.de holder until its done line), bBLZ2 blitz masc, bUNT2 untersberg expansion, bBUL3 bullet indicator lookup (IA fts + Google Books). goldbar-1933 NOTES line 1 now open (Bourdeau 15 Sept cited). LANE B4 handoff section started in STATUS.md. Context about 60k.
