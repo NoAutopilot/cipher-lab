@@ -1,7 +1,7 @@
-JOB GOLD-4C: Debosnys sign inventory, split by eye, and a tool fix. Fable (claude-fable-5-1). Stop and push at $10 or 60 minutes, whichever first. Lane: LANE GOLD orchestrator session_01DKDynpdEwZK5EokxtjCM3P. Written 25 Sept 2026 18:02 UTC.
+JOB GOLD-4C: Debosnys sign inventory, split by eye, and a tool fix. Fable (claude-fable-5-1). Stop and push at $10 or 60 minutes, whichever first. Lane: LANE GOLD orchestrator session_01DKDynpdEwZK5EokxtjCM3P. Written 25 Sept 2026 17:58 UTC (corrected from an unread-clock 18:02).
 
 Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md`, `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), `ciphers/debosnys-1883/NOTES.md` (the GOLD-4A section in full), `glyphs/merge.tsv`, `tools/glyph_atlas.py --help`. Claim in ROOM. GOLD-4B (Sonnet) works on clear_poems/sektu/form-test files at the same time; do not edit those.
-Intake gate (live, 18:02 UTC): debosnys-1883: open (line 1) -- edition/page or full-text-search citation found within 6 lines  (exit 0)
+Intake gate (live, 17:58 UTC (corrected from an unread-clock 18:02)): debosnys-1883: open (line 1) -- edition/page or full-text-search citation found within 6 lines  (exit 0)
 
 Why: GOLD-4A merged 90 k-means clusters into 68 ids but left 39 heterogeneous "junk-drawer" clusters (MISC-*) and the SUN cluster mixed; a blind second pass on cryptogram 4 agreed with the machine pass on only 22.4 percent of signs. No cryptanalysis is worth running until the sign inventory is right.
 Do:

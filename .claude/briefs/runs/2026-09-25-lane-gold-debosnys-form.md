@@ -1,7 +1,7 @@
-JOB GOLD-4B: Debosnys test 2, the form test, plus the Sektu 2017 reading. Sonnet (claude-sonnet-5). Stop and push at $4 or 40 minutes, whichever first. Lane: LANE GOLD orchestrator session_01DKDynpdEwZK5EokxtjCM3P. Written 25 Sept 2026 18:02 UTC.
+JOB GOLD-4B: Debosnys test 2, the form test, plus the Sektu 2017 reading. Sonnet (claude-sonnet-5). Stop and push at $4 or 40 minutes, whichever first. Lane: LANE GOLD orchestrator session_01DKDynpdEwZK5EokxtjCM3P. Written 25 Sept 2026 17:58 UTC (corrected from an unread-clock 18:02).
 
 Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md`, `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), `ciphers/debosnys-1883/NOTES.md` in full (B2 test 1, GOLD-0D check-solved incl. item 8 on the Sektu blog, GOLD-4A), `ciphers/debosnys-1883/lines.tsv`. Claim in ROOM. A Fable worker (GOLD-4C) is splitting the sign inventory in glyphs/ at the same time: do not edit glyphs/, passA/passB or ciphertext files.
-Intake gate (live, 18:02 UTC): debosnys-1883: open (line 1) -- edition/page or full-text-search citation found within 6 lines  (exit 0)
+Intake gate (live, 17:58 UTC (corrected from an unread-clock 18:02)): debosnys-1883: open (line 1) -- edition/page or full-text-search citation found within 6 lines  (exit 0)
 
 Question: does any cryptogram have the shape of verse -- and specifically of a clear poem by Debosnys -- so that the clear poem is a crib?
 1. Clear poems: transcribe (from the page images already on disk, images/, no new fetch) the clear French poem in the lower two-thirds of the cryptogram 3 page and the clear title/verse text on the c4 page ("monographe. verse." etc.), line by line, into `clear_poems.tsv` (page, line, text as written, syllable count by French prosody rules with elision noted, letters count). Mark unreadable words [?]; never guess silently.
