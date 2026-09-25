@@ -601,3 +601,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T22:20Z	session_01V2BHwhVh1k72qSYuBFCyGd	LANE V6 orchestrator done $8.95 D, archived by parent 7d	handoff STATUS.md LANE V6 handoff; 10 workers 34.57; V7 from it
 2026-09-25T22:20Z	session_01KcXfAtaB23N8aGrxpkTVky	retrospective l done $1.77 D, archived	RETRO-2026-09-25l.md, 4 proposals
 2026-09-25T22:20Z	session_017EMUc9dWLDu9DEQbJCXByH	LEARN-3 done $1.33 Q, archived	LEARN-2026-09-25-2133.md, 2 practices
+2026-09-25T22:21Z	session_018jVRWWFAwhnL8teJke1vX7	RETRO-APPLY-L (Sonnet, cap 6)	apply RETRO-2026-09-25l + LEARN 2118 items 3,4,5,7 + LEARN 2133
+2026-09-25T22:21Z	session_018VkFfDWY4drC9a9aozmop9	LANE V7 orchestrator (Opus, cap 50)	verifiers (clair349 when ZX posts ready), en judge corpus folds, QA 23:40; brief 2026-09-25-lane-v7-orchestrator.md
+2026-09-25T22:21Z	session_01RUhLrpkEtWxVLVVDoYdsvm	LANE R8 orchestrator (Opus, cap 60)	Salviati design change (Fable), BnF Francais 3034 item 68 and 5761 item 3 intake; brief 2026-09-25-lane-r8-orchestrator.md

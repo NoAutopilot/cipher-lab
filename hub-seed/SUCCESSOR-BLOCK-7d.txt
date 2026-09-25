@@ -26,16 +26,15 @@ said in rule-10 words. The board is https://claude.ai/artifact/HzYszSGfSoWPsYXpx
 reads the live page then publishes dashboard.html to that url (the host refuses a publish until the live page has been
 read; the subagent keeps that out of your context). the last confirmed publish is version 108 (7d, 20:08); republish once per check-in when status.json changed.
 
-Live on 25 Sept 2026 at about 20:05 UTC (this account): LANE R7 session_01UpWfpbLwYL1xmDG1vFyi6h (Opus, cap $80, brief
-.claude/briefs/runs/2026-09-25-lane-r7-orchestrator.md: Mercy 1648 leads, Salviati glyph-atlas re-pass, R6's claimed
-targets); LANE V6 session_01V2BHwhVh1k72qSYuBFCyGd (Opus, cap $50, $5.93 own at 19:56: verifiers and rolling QA; it was
-asked at 20:03 to spawn the second adversarial audit of Mercy 1648 -- Mercy counts on the board and the breakthrough
-alert routine fires only when that audit also reaches N3); LANE B4 (Opus, cap $25, opened by 7d at 21:3x from the LANE B3 handoff; B3 closed 20:55, ledgered; brief
+Live on 25 Sept 2026 at 22:21 UTC (this account): LANE R8 session_01RUhLrpkEtWxVLVVDoYdsvm (Opus, cap $60, brief
+.claude/briefs/runs/2026-09-25-lane-r8-orchestrator.md: Salviati design change, BnF scout leads; R7 closed 22:08, ledgered);
+LANE V7 session_018VkFfDWY4drC9a9aozmop9 (Opus, cap $50, brief 2026-09-25-lane-v7-orchestrator.md: verifiers, en corpus
+folds, rolling QA; V6 closed 22:05, ledgered; Mercy 1648 is N3 after two audits, key ours, outreach gate 2 waits on the
+owner's JSTOR rows 80-83; the breakthrough-alert routine is on the owner account, asked by ROOM line 21:31); LANE B4 (Opus, cap $25, opened by 7d at 21:3x from the LANE B3 handoff; B3 closed 20:55, ledgered; brief
 .claude/briefs/runs/2026-09-25-lane-b4-orchestrator.md); LANE GOLD2 session_013JXDgLDkW2y5Ldi2gWzTkY (Fable, cap
 $120, standing lane on Koehler 1944 and Debosnys 1883, opened by 7d at 20:05 from the "LANE GOLD handoff" with the brief
-.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md; GOLD closed 19:57, ledgered); parent workers LEARN-3 session_017EMUc9dWLDu9DEQbJCXByH (Sonnet, cap $5, window since 17:18) and retrospective l
-session_01KcXfAtaB23N8aGrxpkTVky (Sonnet, cap $10); when done: ledger (Q / D) with get_session cost, ASSIGNMENTS done line, archive,
-apply brief- and tool-only diffs (RETRO-APPLY-L for the retro). Spawn every session with source_url and source_revision set
+.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md; GOLD closed 19:57, ledgered); parent worker RETRO-APPLY-L session_018jVRWWFAwhnL8teJke1vX7 (Sonnet, cap $6, applying RETRO-2026-09-25l.md and the LEARN
+diffs; when done: ledger D, ASSIGNMENTS done line, archive; LEARN-3 and retro l are done and ledgered). Spawn every session with source_url and source_revision set
 explicitly: three workers created without them on 25 Sept stopped at their first turn with no repository in their context. The other account's
 parent is session_01FXDfYR3CvGk7tcid1Aav1n with lanes ZX and ZX2 (it took the CX/CX2 targets R6 had not claimed by
 19:00); it takes none of your targets and you take none of its; coordinate only through ROOM.md, STATUS.md and UPDATES.md.
@@ -65,7 +64,7 @@ merging); when status.json changed, rebuild and republish the board (once per ch
 STATUS.md "Parent handoff" (one dated line per check-in) and this file current; read the clock before writing any time
 and never write a time you have not just read. Post a ROOM.md line "parent 7d (session id): took over from 7c at <time>"
 with tools/room.py first. Your own hand-over point is 600k context (get_session on yourself, context_usage.used_tokens):
-update this file (the successor is 7e) and the parent handoff, create the successor with model claude-fable-5-1 and this
+update this file (the successor is 7e) and the parent handoff, create the successor with model claude-fable-5-1, title it "Orchestrator <your number + 1>" (7d is Orchestrator 5, so its successor is Orchestrator 6), give it this
 file's block as its prompt, post the ROOM line, and stop.
 ```
 
