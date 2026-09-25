@@ -1,9 +1,12 @@
 found-solved
-Wheatstone's 1862 published decipherment (Philobiblon Society *Miscellanies*, read in full by this worker via
-*The Scientific Papers of Sir Charles Wheatstone*, archive.org id `the-scientific-papers-of-sir-charles-wheatstone`,
-pp.321-330) matches BL Add MS 6912's own catalogue record (`searcharchives.bl.uk/catalog/032-003442981`, read in
-full) on physical description, date range and acquisition mode — a strong circumstantial identification (the
-pamphlet itself states no shelfmark), not a documentary certainty.
+**Verifier (V6-DIGBY, 25 Sept 2026): N0, key `published` (Wheatstone 1862), identification confirmed -- see AUDIT.md.**
+BL Add MS 6912 is Charles I's cipher instructions to Stephen Goffe for the Prince of Orange, May 1644, countersigned
+George Digby, deciphered and printed by Wheatstone (Philobiblon Society 1862; *Scientific Papers of Sir Charles
+Wheatstone* 1879 pp.321-330, archive.org `the-scientific-papers-of-sir-charles-wheatstone`). The BM's own *Index to the
+Additional Manuscripts ... acquired 1783-1835* (1849, archive.org `indextoadditiona00brituoft`) lists "Paper, in cypher,
+signed by Charles I., and countersigned by Lord Digby . . . 6912" as the only such item, acquired before 1829, as Ellis's
+1858 letter requires. The plaintext was already in print in clear: Groen van Prinsterer, *Archives de la maison
+d'Orange-Nassau* 2e sér. IV (1859) no. DCCCXXa pp.101-104 (archive.org `archivesoucorres04unse`).
 
 ## Check-solved (LANE CX, 25 Sept 2026) — Wheatstone match resolved: found-solved
 
@@ -21,8 +24,9 @@ truncated quote) and compared them point by point:
    the British Museum purchased, at a large price, what appeared, and no doubt must be, a very important document
    in cipher; occupying seven folio pages closely filled with numerals; every page signed at top by King Charles
    the First, and countersigned below by Lord Digbye." The deciphered text itself is headed "INSTRUCTIONS POUR LE
-   SIEUR DE GOFFE" and concerns "le marriage du prince et la princesse" — i.e. the 1641 marriage of Prince William
-   of Orange to Princess Mary, Charles I's daughter — addressed to the agent Stephen Goffe for delivery to the
+   SIEUR DE GOFFE" and concerns "le marriage du prince et la princesse" — [corrected by V6-DIGBY, 25 Sept 2026: not
+   the 1641 William-Mary marriage but the 1644 proposal to marry the Prince of Wales to Mademoiselle d'Orange; Groen
+   dates the clear copy May 1644; see AUDIT.md] — addressed to the agent Stephen Goffe for delivery to the
    Prince of Orange.
 2. **BL's individual catalogue record, read in full** (not just QUEUE's truncated quote): fetched
    `searcharchives.bl.uk/?q=Add+MS+6912&search_field=all_fields&format=json` then
@@ -36,8 +40,8 @@ truncated quote) and compared them point by point:
      countersigned below by Lord Digbye" (Ellis, 1858) vs "signed by King Charles I, and countersigned by George,
      Lord Digby, on every page" (BL catalogue). A page-by-page Charles-I-signs/Digby-countersigns pattern is an
      unusual, specific detail unlikely to recur by chance across two different manuscripts.
-   - Date range: BL's 1640-1649 bracket squarely contains 1641, the year of the Orange marriage the deciphered
-     text is about.
+   - Date range: BL's 1640-1649 bracket contains 1644, the year of the Orange marriage proposal the deciphered
+     text is about [year corrected by V6-DIGBY, 25 Sept 2026].
    - Acquisition mode: BL's "Purchased in 18--" matches Ellis's account of a Trustees' purchase "at a large
      price", rather than a gift, bequest or transfer — a distinguishing, not generic, provenance fact.
    - Extent: BL's "5 folios" is compatible with Ellis's "seven folio pages" (a folio has two sides; five folios
@@ -57,7 +61,8 @@ truncated quote) and compared them point by point:
    of instructions elsewhere), not as a countersigning party to any cipher discussed. Ruled out as the relevant
    edition for this item.
 
-**Verdict: found-solved, README class F1** (the plaintext is in print — Wheatstone's 1862 decipherment — but BL's
+**Verdict: found-solved, README class F1** [V6-DIGBY, 25 Sept 2026: rule-10 class N0, see AUDIT.md; the plaintext was
+first in print in clear in Groen van Prinsterer 1859, the decipherment is Wheatstone's 1862] (the plaintext is in print — Wheatstone's 1862 decipherment — but BL's
 own catalogue record for Add MS 6912 does not cite it, so the specialist catalogue does not link this manuscript
 to its published reading). Not "new"; not "first" (rule 10) — Wheatstone read and published this 164 years before
 this sweep, if the identification holds. **What this leaves to hand on:** (a) Wheatstone's full translation and
