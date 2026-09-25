@@ -6320,3 +6320,122 @@ DECODE, no credentials, no subagents. Well under both this brief's 80/40 host ca
 
 Kind: scout (this section files leads only; it does not promote to the board or classify novelty, per rule 10 and
 the lane brief).
+
+---
+
+Worker VX-SCDE (Sonnet), host family (b) only: `searcharchives.bl.uk`, e-codices, e-manuscripta, Bavarikon/BSB,
+ONB. Row prefix VX-B (unused this pass -- no copy-free survivor). Brief: same target pattern as VX-G above
+(undeciphered cipher letters beside a key, a sibling's decipherment, or an interlinear gloss), copy-free only.
+
+**Zero numbered rows.** Every genuine "key beside the letter" hit found this pass sits on a host confirmed dead
+for images (BL, per the structural finding already on file: "no British Library manuscript is reachable as a
+public digitised image right now" -- `searcharchives.bl.uk`'s own `url_tsi` field and `bl.digirati.io`'s IIIF
+both checked again below, same result). Leads only, not rows, per this lane's own copy-free gate.
+
+**BL (`searcharchives.bl.uk`, JSON search, the working `?q=<term>&search_field=all_fields&format=json&per_page=N`
+form).** Ran `cipher key` (53 raw), `cipher and key` (dupes of the above), `deciphered enclosed` (14, all noise
+-- routine "enclosed" phrasing, no cipher-key co-occurrence), `key to the cipher` (15, subset of the first).
+Read all 53 unique `cipher key` hits' `scope_and_content_tsi`/`title_tsi` fields. Most are already on file:
+Mss Eur D623/41 (mornington-1798), Add MS 21483 (bl-james-1669), Add MS 33596 (bl-charles-digby, on DECODE),
+Add MS 45518-45520 (Willes Papers, already flagged as a key-lead resource, 24 Sept BL-Wellcome sweep), Cotton
+Caligula B VIII / C II (bowes-walsingham-1583 / randolph-sussex-1569), Add MS 4166 (Thurloe correspondence --
+very high edition risk, printed Thurloe State Papers cover most of it, not pursued), Add MS 40677 (a cypher-keys
+collection with no accompanying letter named in the same item, key-lead resource only, same class as the
+already-known Willes/Egerton 2550 key volumes). **Add MS 61567-61568** (Jaupain intercepts with cipher key
+ff.26-27b and Blencowe deciphers) matches the pattern exactly but is already in `LANDSCAPE.md`'s declined list
+("Blenheim Papers series (Add MSS 61567-61574) -- Mostly non-English; BL offline; too large"); not re-nominated.
+
+Two survivors are genuinely new (not in `ciphers/`, `QUEUE.md`, `CATALOG.md`, `LANDSCAPE.md`, `sources/wvo`,
+`sources/huygens`; `sources/solver-diffs/2026-09-23-non-decode-hits.tsv` lists Add MS 18777-18780's title as a
+raw catalogue hit from the 23 Sept scoring backlog but it was never opened or scored into a row -- confirmed by
+grepping every `QUEUE-scores.json` and `QUEUE.md` row for the shelfmark, no hit):
+
+- **Add MS 18777-18780** -- Walter Yonge's journal of proceedings in the House of Commons and public events,
+  19 Sept 1642-10 Dec 1645. Catalogue: "The entries are partly in cipher; a key to which, with an index of
+  contents, is prefixed to each volume." Four volumes, key prefixed to each -- an unusually clean match to the
+  lane's pattern (parliamentary diary, not diplomatic correspondence, so outside every existing Nevers/Gualterio/
+  Blathwayt cluster already worked). No digitisation (`url_tsi` empty, checked).
+- **Add MS 28728** -- correspondence of John Locke and Nicolas Thoynard, 1678-1700 (mostly Latin/French, literary
+  and scientific subjects), item 3: "Key to a cipher; by John Locke. Autograph. f. 65." High edition risk flagged,
+  not checked further this pass: Locke's correspondence is comprehensively printed (De Beer's edition, Oxford),
+  so a solver should check that edition before any cryptanalysis.
+- **Egerton MS 1696** (already logged, not previously framed for this pattern): "At the end of Vol. i. are
+  inserted three keys to ciphers, the last of which is inscribed 'Spagna, col Sigre Comme...'" -- Vol. i itself
+  runs 2 Feb 1700-15 Sept 1702; whether the volume's own correspondence includes the matching enciphered letters
+  is unresolved (title field empty, scope-and-content truncated by the API at 150 chars in this sweep), worth a
+  full-record fetch before anything else.
+
+None of the three is Gallica/DECODE-mirrored (not checked exhaustively this pass -- out of this brief's host
+list -- but none appears on DECODE's public listing by shelfmark, spot-checked). All three are BL-only and
+therefore copy-order leads, not rows, under the current dead-image finding.
+
+**e-codices.unifr.ch.** Per the brief's cap (0 yield in two prior sweeps, "at most 10 requests, key wording
+only"): tried `Chiffrenschlüssel`, `Schlüssel Geheimschrift`, `Auflösung Chiffre`, `Dechiffrierung` against
+`sSearchField=basic_metadata&sPhrase=<term>`. The response for at least the last term came back as an
+unfiltered "All Libraries and Collections" listing (Aarau's holdings in shelfmark order), not a filtered result
+set -- the query parameter this pass constructed does not reproduce the working form the 24 Sept sweep used, and
+budget was not spent debugging it given the host's already-documented 0-yield history. No new evidence either
+way; the standing recommendation (drop e-codices from future sweeps) stands. 4 requests.
+
+**e-manuscripta.ch.** Not re-queried. The 24 Sept sweep already spent both of its tries (one plain curl, one
+`browser_fetch.js`) on the HTML search and got the site's Cloudflare challenge both times; the brief caps this
+pass at one try total, already spent. OAI-PMH harvest remains the only working route and remains infeasible at
+any scout-level request budget (documented: ~16,400 requests for the four correspondence-likely sets). 0
+requests this pass.
+
+**Bavarikon/BSB.** Did not re-query `bavarikon.de` itself -- two prior sweeps (LANE N2 round 1, LANE N3 round 2,
+~75 requests total) already exhausted its aggregator across 21 term variants including wildcards, and its own
+finding stands (the aggregated corpus does not meaningfully index Bavarian state/city-archive material for any
+cipher-vocabulary term). Instead tried the separate route the job brief named: the BSB's own digitale-sammlungen
+catalogue restricted to the manuscript collections (Cod.germ./Cod.gall./Cod.ital./Cod.hisp.), reverse-engineered
+since `www.digitale-sammlungen.de/search` is a client-rendered SPA with no server-rendered results: its bundled
+JS (`api-GMRnckp_.js`) exposes a plain JSON endpoint, `GET /api/search?query=<term>&handler=simple-all&filter=
+type_manufact:"handmade"&pageSize=N&startPage=0` (facet counts via `/api/search/facet?...&field=<name>`),
+undocumented anywhere in the repo before this pass -- worth keeping for any future BSB-manuscript sweep. A plain
+`query=Chiffre` returns 190,207 raw hits (dominated by the BSB's printed-book OCR corpus, same finding Bavarikon
+round 1 already made about this same underlying corpus); combining the query with a shelfmark prefix
+(`Cod.gall. Chiffre` etc.) does not AND-filter -- confirmed by `numTotal` staying in the same ~190k range for
+all four prefixes, so the site's search is OR-only and shelfmark-prefix "filtering" this way is unreliable. The
+working narrow is the `type_manufact:handmade` facet (manuscripts only, no book/print), which drops `Chiffre`'s
+190,207 to 61: every one read (title, shelfmark, notes; OCR snippet with 2-line context for the 8 correspondence-
+looking candidates). None matches the target pattern -- every "Chiffre" mention in a BSB manuscript is either the
+ordinary French "figure/number/amount" sense in running prose (Cod.gall. 645/646, the Nointel embassy-to-
+Constantinople registre, 1676-79: "n'ayant pas de chiffre", "le chiffre de l'indemnité"; Cod.gall. 986(1-2, a
+19th c. Scutari consular letter-book), a 16th/17th c. musical figured-bass score, or a heraldic/genealogical
+"Chiffre" (monogram) in the already-known Prey collection (Cgm 2290, same noise class Bavarikon round 1 logged).
+No manuscript in the `handmade` facet carries actual cipher digit-groups or a key table for this term. Two
+"Originalbriefe"/"Copia epistolarum" letter-collection shelfmarks that ranked high under the (unreliable) OR
+search were checked directly via `/api/metadata/<id>` and are unrelated (Orlando di Lasso's own letters, Cod.gall.
+942; copied Olivares-to-Cardinal-Infante despatches with no cipher note, Cod.hisp. 22). 46 requests to
+`www.digitale-sammlungen.de` (1.5-1.6s apart, no challenge/429/403 seen, plain curl throughout).
+
+**ONB (search.onb.ac.at).** The host table says no usable route was found and Primo Explore's search was
+"not yet tried with the browser tool" -- **tried this pass, and it works**: `NODE_PATH=$(npm root -g) node
+tools/browser_fetch.js "https://search.onb.ac.at/primo-explore/search?query=any,contains,Chiffre&tab=default_tab&
+vid=ONB&search_scope=ONB_gesamtbestand&mode=basic" out.html --shot out.png --wait 8000` (no `--selector`, which
+timed out against this Angular app's result-item classes; a flat wait works) renders a real, populated result
+list -- 1,915 raw hits for "Chiffre", overwhelmingly noise (a common surname "De Chiffre", musical "chiffré",
+the ordinary word "Ziffer/Chiffre"). The results page carries real facets worth narrowing on next time:
+"Medium: Handschrift (33)" and "Form: Briefsammlung (24)". A second, same-session attempt to click the
+Handschrift facet checkbox (`--click "text=Handschrift (33)"`) timed out (30s, selector never matched -- Primo's
+facet labels are likely not plain text nodes, or the count differs from the summary panel's rendering by the
+time of the click); not retried further, per the brief's one-attempt cap for this host. **This changes the host
+table's "no usable route found" line to "route found, not yet narrowed" -- flagged in ROOM.md for whoever
+maintains CLAUDE.md's host table.** 2 requests to `search.onb.ac.at` (both via the browser tool; no plain curl
+attempted beyond the earlier reachability probe already logged above).
+
+**Per-host request counts:** `searcharchives.bl.uk` 4 (well under the 120 cap). `www.e-codices.unifr.ch` 4 (well
+under the 10 cap). `www.e-manuscripta.ch` 0. `www.digitale-sammlungen.de` 46 (not `bavarikon.de` itself, 0
+requests there this pass; well under the Bavarikon-image-API-style 80 cap by analogy, though this host isn't
+named in the brief's numeric caps). `search.onb.ac.at` 2 (within the "one attempt" instruction, counting the
+narrow-attempt as part of the same attempt rather than a retry). `github.com` 0 (solver-repo exclusion check
+deferred to check-solved per this lane's scout-stage scope). No WebSearch, no DECODE, no credentials, no
+subagents (both allowed, neither needed).
+
+**Non-copy-free leads (not numbered rows), for REQUEST.md or a future copy-order/local-runner pass:** Add MS
+18777-18780 (Yonge journals, key prefixed to each volume), Add MS 28728 (Locke's own key to a cipher, f.65,
+check De Beer's edition first), Egerton MS 1696 (three keys inserted at end of Vol. i, whether the volume's own
+letters carry the matching cipher unresolved -- worth a full-record fetch before anything else).
+
+Kind: scout (this subsection files leads only; it does not promote to the board or classify novelty, per rule 10
+and the lane brief).
