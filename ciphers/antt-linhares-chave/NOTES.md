@@ -1,4 +1,4 @@
-open
+partial
 
 open -- web search (queries: `"Condes de Linhares" "Chave de uma cifra"`, `"CLNH/0086" OR "maço 86" cifra`, `Rodrigo de Sousa Coutinho cifra/dicionário/chave`, `Cryptiana OR Cipherbrain Linhares cipher`, and a phrase search of the key's own worked-example plaintext `"a guerra de Franca com a Russia"`), Cryptiana and Cipherbrain (checked via search, no hit naming this unit or any Linhares cipher), the DECODE records already on disk at `sources/decode/*.tsv` (no login used, per COMMON rule 4; no Linhares/CLNH row), and shallow greps of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` (depth-1 clones, 24 Sept 2026, `grep -rIl -i "linhares\|sousa coutinho\|CLNH"` outside `.git`, zero genuine text hits -- the only matches were binary image filenames that happen to contain the substring) all read, not deciphered; key on the same unit. The item's likely correspondence edition, D. Rodrigo de Souza Coutinho, *Textos Políticos, Económicos e Financeiros (1783-1811)*, ed. Andrée Mansuy-Diniz Silva, Banco de Portugal, 1993 (2 vols.), could not be opened this pass: its only located copy online, `https://www.bportugal.pt/sites/default/files/ocpep-7_t1.pdf`, returned HTTP 403 to both WebFetch and `curl -A "Mozilla/5.0"` -- one retry, then stopped per the good-citizen rule; not logged as unreachable-and-abandoned, but as a named next step (see below). The 1908 family biography *O Conde de Linhares* (Agostinho de Sousa Coutinho, Marquês do Funchal; archive.org id `ocondedelinhares00func`) gave zero hits for "cifra" on Internet Archive's full-text search API (`be-api.us.archive.org/fts/v1/search`), a search result, not a read of the book. No calendar/state-paper series applies (Portuguese noble-house archive, not a calendared series); the item itself carries no date or named correspondent from the archive's own catalogue metadata, so no single-letter calendar check is possible -- the check-solved sweep here is over the *key document and cipher system*, not a datable individual letter. Searched and logged 24 Sept 2026.
 
@@ -34,17 +34,19 @@ Viewer: `https://digitarq.arquivos.pt/fileViewer/a03cef08d3c04758aa148f5be56d340
   Worked example on the page (H grade, quoted verbatim with the plaintext gloss the key itself writes under each number):
 
   ```
-  1131/2   322212.  313312.  321118(1)  23312(3)  311021.  1412(5)
+  1131/2   322212.  313312.  321118(1)  23812(3)  311021.  1412(5)
   a        guerra   de       Franc[a]   a         com      a
   3344325(4)  335422(5)  1811(4)  3290219(1)  3234124.
   Rus[sia]    si         a        parece       inevitavel.
   ```
 
+  (25 Sept 2026, LX-BOOK: the fifth group was misread as `23312` when this section was first written; the image reads `23812` -- confirmed by comparing its middle digit's figure-eight shape against the unambiguous `8` in `321118` two groups earlier, and against the open-loop `3`s in the same line. `23312` decodes against no candidate; `23812` decodes exactly. See `BOOK.md`.)
+
   Read together: "a guerra de Franca com a Russia parece inevitavel" ("the war of France with Russia seems inevitable"). Note (M grade, my inference, not stated by the key text): "Franca" and "Russia" are not looked up whole -- the key trims a dictionary headword down to a fragment ("Franc", "Rus") and, for Russia, stitches three separate lookups together ("Rus" + "si" + "a"). So a proper noun or inflected form missing from the dictionary is spelled by concatenating trimmed fragments of several dictionary words, the way a syllabary or nomenclator code pads out a fixed vocabulary. This is a real mechanical detail of the system, worth knowing before any decode attempt, but it is read off one example, not asserted by the key's own prose.
 
 ## The book
 
-**Not identified.** The key names only "o Diccionario" and, for the null-padding case, "o Diccionario Inglez" -- no title, author, edition or year anywhere on m0003-m0004. A page range of 1-999 (pages of 1 to 3 digits) with 3 columns per page is compatible with a great many dictionaries of the period (a "Diccionario" without qualifier, for a Portuguese diplomatic household of this date, is most likely a Portuguese-language dictionary -- plausibly Rafael Bluteau's *Vocabulario Portuguez e Latino* or a later single-volume abridgement, or a bilingual Portuguese-English dictionary such as Anthony Vieyra Transtagano's, which would also explain how the same physical work could double as "the English dictionary" the key describes switching to -- but nothing on the leaf supports picking one of these over another, so this stays a guess, not a finding). No specific edition is therefore online to check against. **Kind: blocked on the book** (not "recovery" -- the system is fully known, but the concrete lookup table it points to is not).
+**Identified, 25 Sept 2026 (LX-BOOK, H grade, image-verified).** [Antonio Vieyra, abridger], *A New Pocket Dictionary of the Portuguese and English Languages, in Two Parts; Portuguese and English — English and Portuguese, Abridged from the Dictionary of Mr. Vieyra; with Additions and Improvements from Other Works.* Part I. Portuguese and English. London: printed for F. Wingrave, J. Johnson, and 17 other London booksellers, **1809**. Public-domain scan: archive.org `newpocketdiction00viey` (also Google Books `0mESAAAAIAAJ`, `ALL_PAGES`). All **twelve** groups of the key's own worked example decode correctly against this edition's Part I (page, column, rank and, where present, an end-trim of the stated count) -- see `BOOK.md` for the full table, the parse rule, and the page images in `images/book/`. "o Diccionario" and "o Diccionario Inglez" are almost certainly this one bipartite volume's two halves (Part I Portuguese-English used directly; Part II English-Portuguese, separately paginated in the same binding, for the null-padded English stretches), not two different books -- Part II itself has not yet been fetched or tested, since the worked example contains no null-padded group to test it against. 1809 sits inside the maço's 1780-1827 span and fits the already-inferred 1811-12 dating with two years to spare. **Kind: recovery** (the key text was already fully read; the book that closes the system is now also read, from the image, not guessed).
 
 ## Who it likely served (M grade, inferred, not established)
 
@@ -61,15 +63,16 @@ The fonds is Condes de Linhares. The 1st Conde de Linhares, D. Rodrigo de Sousa 
 
 ## Grades
 
-H (read from the image): the ciphertext's presence and rough extent on m0002; the key's full text and worked example on m0003-m0004.
-M (inferred, not stated by the source): the fragment-concatenation mechanic for proper nouns; the family-member/date attribution above.
-No book, key application, or decode was attempted -- the book is unidentified, so no group was decoded, per this brief's instruction to decode only if the book is online.
+H (read from the image): the ciphertext's presence and rough extent on m0002; the key's full text and worked example on m0003-m0004; the book identification and all twelve worked-example decodes (25 Sept 2026, LX-BOOK, see `BOOK.md`).
+M (inferred, not stated by the source): the fragment-concatenation mechanic for proper nouns; the family-member/date attribution above; the "Diccionario"/"Diccionario Inglez" = Part I/Part II of the same 1809 volume identification (strongly supported by the volume's own bipartite structure, but not stated anywhere on the key leaf).
+No decode of the live ciphertext (m0002) was attempted this pass -- no transcription (`ciphertext.tsv`) existed yet when this worker stopped; see `BOOK.md` for what is left.
 
 ## Next steps (not run this pass, budget)
 
-- Try to identify the specific "Diccionario" (candidates above are guesses); a period Portuguese-household dictionary bibliography search, or an ANTT archivist's note, might narrow it.
+- Book identified this pass (see above, `BOOK.md`); once `ciphertext.tsv` (LX-TR's transcription of m0002) exists, decode it against this edition's Part I/Part II using the parse rule in `BOOK.md`, grade every token, and put the Portuguese reading in `reading.txt`.
 - Re-try `bportugal.pt`'s Textos Políticos PDF from a different route (it may simply block the proxy's egress IP; a direct browser fetch was not tried).
-- Decode `ciphertext.tsv` once the dictionary is identified (LX-BOOK).
+- Fetch and spot-check Part II (English-Portuguese) of the same 1809 volume once a null-padded (4-9-leading) group turns up in the live ciphertext (`ciphertext.tsv` now has one: page 2, line 2, pos 6, `829011`) -- untested this pass.
+- `ciphertext.tsv` now exists (LX-TR, below) and the book is identified (LX-BOOK, above) -- decoding it is the next worker's job; see `BOOK.md`'s "Not done this pass" for the parse rule to reuse.
 
 ## Transcription of m0002 (LX-TR, 25 Sept 2026)
 
@@ -107,6 +110,13 @@ not a new derivation of the rule.
 
 Grades: all 26 `ciphertext.tsv` rows and all 12 `key_example.tsv` rows are H (read directly off the image,
 confirmed by re-crop where the two blind passes disagreed). No group was left at grade M.
+
+(25 Sept 2026, LX-BOOK: `key_example.tsv`'s group 5 needs a second look against this note's correction above --
+this worker's independent digit check found `23812`, not `23312`, for that group, by comparing its middle
+digit's shape against the unambiguous `8` in group 4 (`321118`) and the open-loop `3`s elsewhere on the same
+line. `23312` parses validly under the key's structural rule but does not resolve to any dictionary entry;
+`23812` resolves exactly to page 38, col 1, rank 2, trim 3 -> "A". If `key_example.tsv` also has `23312`,
+its transcription and this worker's should be reconciled before anyone treats that group as settled at grade H.)
 
 `m0005`-`m0006` fetched full-resolution and read (previously only thumbnail-checked by scDIGI2): confirmed
 unrelated, a Hope & Co. (Amsterdam) exchange-rate note in French ("Original que me foi mandado enviar pela

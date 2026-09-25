@@ -1,0 +1,23 @@
+{
+  "source": "archive.org, item newpocketdiction00viey (also Google Books id 0mESAAAAIAAJ, full view, ALL_PAGES public domain)",
+  "title": "A New Pocket Dictionary of the Portuguese and English Languages, in Two Parts; Portuguese and English — English and Portuguese, Abridged from the Dictionary of Mr. Vieyra; with Additions and Improvements from Other Works. Part I. Portuguese and English.",
+  "author_on_title": "Antonio Vieyra (abridgement, unattributed on title page beyond \"Mr. Vieyra\")",
+  "imprint": "London: Printed for F. Wingrave; J. Johnson; J. Walker; Scatcherd and Letterman; Vernor, Hood and Sharpe; Wilkie and Robinson; Cuthell and Martin; Longman, Hurst, Rees and Orme; Cadell and Davies; Lackington, Allen and Co.; T. Boosey; Black, Parry and Kingsbury; J. Mawman; J. Murray; J. Richardson; J. M. Richardson; J. Faulder; J. Asperne; Payne and Mackinlay; and Dulau and Co., 1809.",
+  "identifier": "newpocketdiction00viey",
+  "download_note": "fetched with tools/browser_fetch.js-independent curl (User-Agent: cipher-lab research script (contact via repository)); page images via https://ia800806.us.archive.org/BookReader/BookReaderImages.php?zip=/28/items/newpocketdiction00viey/newpocketdiction00viey_jp2.zip&file=newpocketdiction00viey_jp2/newpocketdiction00viey_LEAF.jp2&id=newpocketdiction00viey&scale=2",
+  "leaf_to_printed_page_offset": "not constant: leaf-print=10 near printed p.4-38, =14 near p.110-234, =16-18 near p.288-354 (checked by reading the printed page number in each fetched image directly, never assumed)",
+  "files": [
+    {"file": "newpocketdiction00viey_leaf0005_titlepage.jpg", "leaf": 5, "printed_page": "title page", "content": "full title page, imprint, 1809"},
+    {"file": "newpocketdiction00viey_leaf0014_p004.jpg", "leaf": 14, "printed_page": 4, "content": "col.1 rank2 = Abicar (test: 1412 trim5 -> A)"},
+    {"file": "newpocketdiction00viey_leaf0018_p008.jpg", "leaf": 18, "printed_page": 8, "content": "col.1 rank1 = Acaso (test: 1811 trim4 -> A)"},
+    {"file": "newpocketdiction00viey_leaf0048_p038.jpg", "leaf": 48, "printed_page": 38, "content": "col.1 rank2 = Anao/Anaõ (test: 23812 trim3 -> A)"},
+    {"file": "newpocketdiction00viey_leaf0124_p110.jpg", "leaf": 124, "printed_page": 110, "content": "col.2 rank1 = Com (test: 311021, no trim)"},
+    {"file": "newpocketdiction00viey_leaf0147_p133.jpg", "leaf": 147, "printed_page": 133, "content": "col.1 rank2 = De (test: 313312, no trim)"},
+    {"file": "newpocketdiction00viey_leaf0225_p211.jpg", "leaf": 225, "printed_page": 211, "content": "col.1 rank8 = Franco (test: 321118 trim1 -> Franc)"},
+    {"file": "newpocketdiction00viey_leaf0236_p222.jpg", "leaf": 236, "printed_page": 222, "content": "col.1 rank2 = Guerra (test: 322212, no trim; also confirmed by the key's own prose)"},
+    {"file": "newpocketdiction00viey_leaf0248_p234.jpg", "leaf": 248, "printed_page": 234, "content": "col.1 rank24 = Inevitavel (test: 3234124, no trim)"},
+    {"file": "newpocketdiction00viey_leaf0306_p290.jpg", "leaf": 306, "printed_page": 290, "content": "col.2 rank19 = Parecer (test: 3290219, no trim)"},
+    {"file": "newpocketdiction00viey_leaf0362_p344.jpg", "leaf": 362, "printed_page": 344, "content": "col.3 rank25 = Rustico (test: 3344325 trim4 -> Rus)"},
+    {"file": "newpocketdiction00viey_leaf0372_p354.jpg", "leaf": 372, "printed_page": 354, "content": "col.2 rank2 = Sillaba (test: 335422 trim5 -> Si)"}
+  ]
+}
