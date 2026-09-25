@@ -1,3 +1,6 @@
+open
+Check-solved intake sweep (LANE B2 bINT, 25 Sept 2026): sources/schmeh/posts/18-moustier.{html,txt} (Cipherbrain post 18, 7 Nov 2017, 5 comments) read in full, no solve claim; ciphermysteries.com/2013/04/02/the-moustier-church-cryptograms (Pelling, 2 Apr 2013) read in full including a Dec 2017 "solution" claim by Alex Ulyanenkov that Pelling did not accept ("still very far from sure that you've nailed anything") and a further unconfirmed structural note by the same commenter dated 9 Jul 2026 ("may be it is a link to Decalog (not sure)"); dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers shallow-cloned, grepped for moustier, deleted -- both list it as still open/medium-low, no solve, no plaintext; one OpenAlex and one Semantic Scholar query for "Moustier altar inscriptions cipher" returned no relevant results. See "Check-solved sweep, 25 Sept 2026" section below for the full log.
+
 # Moustier altar inscriptions — St Martin's church, Frasnes-lez-Anvaing (Moustier), Belgium
 
 Status: **open**
@@ -132,3 +135,59 @@ follow-ups (one line each, not run):
 
 - `scienceblogs.de`: 1 (post-page refetch, avoidable — already cached, discarded) + 3 (image fetches:
   Moustier-130.jpg, Moustier-212.jpg, Moustier-220.jpg), all >=1.5s apart, browser User-Agent. No 429/403.
+
+## Check-solved sweep, 25 Sept 2026 (LANE B2 bINT, intake gap after QA/2026-09-25-1740.md failure 3)
+
+Ran the minimal check-solved sweep this brief names (not a full six-source rule-1 sweep) to close the gap
+flagged in QA: this target had two cheap tests (transcription, IC control) run with no check-solved verdict
+on file.
+
+1. **Cipherbrain post 18 and its comment thread** — `sources/schmeh/posts/18-moustier.{html,txt}`, already on
+   disk, not re-fetched. Read in full: 5 comments (7 Nov 2017 – later), none claim a solution; the post itself
+   says "Both inscriptions have never been deciphered."
+2. **Pelling, ciphermysteries.com, 2 Apr 2013** — not on disk before this pass; fetched this session (see
+   Requests below) and saved to `sources/ciphermysteries/posts/2013-04-02-moustier-church-cryptograms.{html,txt}`.
+   Read in full (1479 lines rendered). Two things worth recording:
+   - A commenter, **Alex Ulyanenkov** (Moscow — the same name active on the Kaliningrad-2015 thread), claimed
+     on 11 Dec 2017 to have "sent the solution" to Pelling and Schmeh by email; Pelling's reply the same day
+     does not accept it ("you have put forward some interesting options for future study, I'm still very far
+     from sure that you've nailed anything like the solution of this particular inscription"). No plaintext was
+     ever posted publicly. Not a confirmed solve.
+   - The same commenter posted again on **9 Jul 2026** (the most recent activity found on the post), still
+     speculative ("SXV" as a Latin abbreviation, Greek-letter numerals, "may be it is a link to Decalog (not
+     sure)") — confirms the item was still being discussed as unsolved as of mid-2026, not resolved since.
+3. **Solver repositories** — `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` shallow-cloned to
+   `/tmp`, grepped case-insensitively for `moustier`, deleted immediately after. cyphersolver's own
+   `top50/NOTES.md`/`top50.json`/`TARGETS.md` list item 18 as still open, "medium-low" priority, citing
+   Huylebrouck's 2022 Trithemius *Ave Maria* hypothesis as untested and Ernst's caution about conflated
+   L-shapes; no solve recorded. aaymeloglu's `SHORTLIST.md` line: "Moustier | Cipher Foundation page dated 2026
+   still lists it; on Schmeh's current unsolved page | open." The one other hit (`forster-1644/lex_old.txt`)
+   is a French word-list entry ("moustier 4"), an unrelated dictionary word, not a reference to this cipher.
+4. **OpenAlex** (`api.openalex.org/works`, `Authorization: Bearer $OPENALEX_KEY` header) — query
+   `"Moustier altar inscriptions cipher"`: 3 results (Ivories ancient and mediæval 1875; Marie-Antoinette and
+   the Image of Moral Instruction 2023; Rough notes on pottery 1896), none relevant.
+5. **Semantic Scholar** (`api.semanticscholar.org/graph/v1/paper/search`, `x-api-key: $S2_KEY` header) — same
+   query: `{"total": 0}`.
+
+**Verdict: open.** No solution found in any of the five sources; the two informal claims of a private
+solution (Ulyanenkov, 2017 and again 2026) were never substantiated with a published plaintext and the first
+was explicitly not accepted by the post's author. Per rule 10 this is a search result, not a novelty
+classification.
+
+### Requests (this section)
+
+- `ciphermysteries.com`: 3 (root `/` to resolve the `www.`→bare-domain redirect and confirm reachability,
+  `/?s=moustier` search to locate the post URL without guessing it, then the post itself), all >=1.5s apart,
+  full-browser User-Agent (plain `curl -A "Mozilla/5.0"` alone got HTTP 406 from this host; a fuller Chrome UA
+  string worked). No 429/403.
+- `api.openalex.org`: 1.
+- `api.semanticscholar.org`: 2 (first attempt 429'd despite the key; one retry after a ~3s pause per the
+  good-citizen single-retry rule succeeded with 0 results).
+- GitHub: 2 shallow clones (`dbourdeau/cyphersolver`, `aaymeloglu/unsolved-ciphers`), deleted after grep.
+
+### Intake gate output, 25 Sept 2026 18:19 UTC
+
+```
+moustier-altars: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+```
+Exit code: 0.

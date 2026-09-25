@@ -1,3 +1,6 @@
+open
+Check-solved intake sweep (LANE B2 bINT, 25 Sept 2026): sources/schmeh/posts/19-kaliningrad.{html,txt} (Cipherbrain post 19, 17 Oct 2017, 58 comments) read in full -- two unconfirmed self-reported "solved" claims found (Thomas Ernst, Oct/Nov 2017; "Frank", 19 Feb 2021), neither ever published a plaintext or method, and they contradict each other on content; dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers shallow-cloned, grepped for kaliningrad/baltiysk, deleted -- cyphersolver carries a dedicated `kaliningrad/` target folder recording its own attempt: transcription abandoned as too error-prone, no cryptanalysis attempted, outcome "not solved"; one OpenAlex and one Semantic Scholar query for "Kaliningrad Baltiysk bottle cipher cryptogram" returned no relevant results. See "Check-solved sweep, 25 Sept 2026" section below for the full log.
+
 # kaliningrad-2015
 
 status: open
@@ -118,3 +121,63 @@ No reading claimed this session -- transcription and counts only. Not applicable
 
 No novelty claim made. This is open per Schmeh 2017 and this session's read of the comment
 thread found no solution posted there.
+
+## Check-solved sweep, 25 Sept 2026 (LANE B2 bINT, intake gap after QA/2026-09-25-1740.md failure 3)
+
+Ran the minimal check-solved sweep this brief names (not a full six-source rule-1 sweep) to close the gap
+flagged in QA: this target had a cheap test (transcription/images) run with no check-solved verdict on file.
+
+1. **Cipherbrain post 19 and its comment thread** — `sources/schmeh/posts/19-kaliningrad.{html,txt}`, already
+   on disk, not re-fetched. Read in full (58 comments). Two unconfirmed self-reported solve claims, from two
+   different commenters, that contradict each other and neither of which was ever substantiated with a
+   published plaintext:
+   - **Thomas Ernst** (Latrobe), 31 Oct 2017 (#50/#51): "I have the cipher text. I have the plaintext... as of
+     this Halloween, October 31, 2017, consider the contents of the cipher solved." Follow-up comments (7 Nov
+     2017, #52) describe the plaintext as "political in nature" but say working out the *cipher mechanism*
+     (a cross-language polyalphabetic scheme) is still in progress. Three later commenters (Harald, Alex
+     Ulyanenkov, Hans) ask him to post the plaintext; he never does on this thread.
+   - **"Frank"**, 19 Feb 2021 (#58, the thread's last comment): "I got the plaintext. It is from a chapter of
+     the first Orthodox bible translation which was edited by the Metropolitan of Moscow Filaret and released
+     in 1876. I hope to be able to publish the encryption method... here soon." No follow-up comment exists on
+     this thread after this one.
+   Neither claim is corroborated by the other (Ernst: a "political" text via a cross-language polyalphabetic
+   cipher; Frank: a chapter of the 1876 Russian Synodal Bible), no plaintext was ever posted publicly by
+   either, and the blog itself later stopped taking comments — this is two unresolved leads, not a solve.
+2. **Solver repositories** — `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` shallow-cloned to
+   `/tmp`, grepped case-insensitively for `kaliningrad`, `baltiysk`, `kalinigrad`, deleted immediately after.
+   cyphersolver carries a dedicated `kaliningrad/` target (`NOTES.md`, `profile.json`) recording its own
+   attempt: transcription from the two published photographs was tried and abandoned as too error-prone
+   ("faint cursive, bleed-through... cursive n/u/v/w barely separable"), so no cryptanalysis was run;
+   `profile.json`'s `outcome` is `"method": "not solved"`, `"class": "not read"`, and it explicitly notes the
+   Frank/2021 Synodal-Bible claim as "never published" the method. cyphersolver's `top50/NOTES.md`/`TARGETS.md`
+   both list item 19 as still "high" priority/open, citing the same outstanding, unpublished crib claim.
+   aaymeloglu's repo had no hits for this item under any of the three search terms.
+3. **OpenAlex** (`api.openalex.org/works`, `Authorization: Bearer $OPENALEX_KEY` header) — query
+   `"Kaliningrad Baltiysk bottle cipher cryptogram"`: 0 results.
+4. **Semantic Scholar** (`api.semanticscholar.org/graph/v1/paper/search`, `x-api-key: $S2_KEY` header) — same
+   query: first attempt 429 despite the key; one retry after a ~3s pause (good-citizen single-retry rule)
+   returned `{"total": 0}`.
+
+**Verdict: open.** No published plaintext or decipherment found in any of the four sources; two informal,
+mutually contradictory claims of a private solution (Ernst 2017, Frank 2021) were never substantiated, and a
+prior independent solver attempt (cyphersolver, 15 Sept 2026) reached the same "not solved" conclusion working
+from the same two source photographs. Per rule 10 this is a search result, not a novelty classification — a
+future worker running a full check-solved or campaign on this target should try to reach "Frank" or search for
+a match against the 1876 Filaret Synodal Bible directly, since that lead is specific and testable even though
+unconfirmed.
+
+### Requests (this section)
+
+- `scienceblogs.de`/`ciphermysteries.com`: 0 (this target's brief does not name either for fresh fetching; the
+  Cipherbrain post was already on disk).
+- `api.openalex.org`: 1.
+- `api.semanticscholar.org`: 2 (first attempt 429'd despite the key; one retry after a ~3s pause succeeded
+  with 0 results).
+- GitHub: 2 shallow clones (`dbourdeau/cyphersolver`, `aaymeloglu/unsolved-ciphers`), deleted after grep.
+
+### Intake gate output, 25 Sept 2026 18:19 UTC
+
+```
+kaliningrad-2015: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+```
+Exit code: 0.
