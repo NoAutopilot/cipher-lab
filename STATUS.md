@@ -90,6 +90,37 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE R6 handoff (session_018MWpKL71WnBxA8k4ejVkBS), 25 September 2026, 19:30 UTC
+
+Recovery and deep work; opened 15:39 by parent 7b, closed at 505k context (brief's 500k handoff). 31 workers closed (Sonnet 28,
+Opus 1, Fable 2), USD 140.41 of worker usage read from get_session, all ledgered, in hub-seed/ASSIGNMENTS.md and archived;
+orchestrator USD 11.78. Rate allowed throughout. **One worker live at close: CM2 (Fable, cap 15, session_01AtRe8LEF72DEuye52Rg7Pi,
+brief 2026-09-25-lane-r6-cm2-salviati-tolerant.md; USD 7.75 at 19:24) -- for the parent to read, ledger, archive and route.**
+Common: .claude/briefs/runs/2026-09-25-lane-r6-common.md; job briefs 2026-09-25-lane-r6-*.md.
+
+| target | outcome (25 Sept 2026) | next |
+|---|---|---|
+| espagnol142-mercy-1648 | pinned f.22r-v (canvases 58-59); transcribed 521 codes (38 values) + 174 plain words, 95.3%; es17 corpus built; homophonic anneal -1154.3 on 4 seeds vs matched control best -1321.7; Fable reading S 494 M 27, --check 0, fresh re-derivation byte-identical; judge cannot decide (es17 and es17c FAIL the letter's own clear words too; es17c false-negatives 23.5%); **V6-MERCY N3, key ours** (AUDIT.md); no sibling under the code in Espagnol 142 | NEAR.md row: shuffled-stream control and blind eye-check (V6's list), SO-MERCY-F22, Brussels SEE t.LXIV sibling (Lonchay p.445), DECODE R958-R965 |
+| fr2933-salviati-1525 | intake gate fixed (Desjardins Toscane I-III etc. read); all eight leaves transcribed, 2,820 signs (f55v and f57v by a pass C majority); cm at the real N: control 94% clean, target unreadable, **not a negative** -- control falls to 27-43% at 10% type noise and the target sits between the 10% and 20% noise controls | CM2 (live): error-tolerant model on the noise controls first; else NEAR step 2 (atlas re-pass on the two weakest leaves) |
+| antt-fcc-costacabral-1865 (PP-04) | folder, check-solved, 3 DigitArq images; self-glossed draft read as a key: C 63 M 19 U 2, --check 0; V6: N0, key period | none |
+| berthier-napoleon-1812 | full 325-group ciphertext from Vilcoq 1969's plate (95.1%, 10 corrections to ciphertext.txt); Chuquet's 22 Dec letters do not fit (rank 3rd-30th of 34 controls); no petit-chiffre key found | a key of the office, or a spec + first cheap test |
+| la-garde-1577 | WVO 6467 margin: glosses/insertions, not a solution (N) | none cheap |
+| clairambault296-paget-1713 | 129/316 canvases checked, not found (canvas_sweep.tsv) | ASKS 51 (owner pages the Gallica thumbnails) |
+| clair1161-avis-flandre-1688 | image on disk was a portrait; f.106 = canvas 128, ff.106-192 printed only | ASKS 54 (BnF, with 49) |
+| rah-xiquena-1868 | all 8 leaves: a certified plaintext copy, no cipher on file; status found-solved; V6-XIQ classing | none |
+| fr7129-villeroy-bongars-1604 (KT-01) | held: Tomokiyo's Bongars paper not in OpenAlex/S2, academia 403 | LOCAL-QUEUE L8 |
+
+Not worked (no copy-free cheap step, or handed to ZX2 at 19:00 per parent 7c): ormond-arran (Tomokiyo tried Cipher 1 in full), birago,
+sp53-22-f52, decode-4450, the BL four, courten, clair571, and the CX2 TNA SP copy-order items, destaing-gerard-1779 (217 tokens of a
+600-entry code, key in AAE), hellen, maurice-rupert, harley-287, clairambault1225, wellington-maitland, decode-2754.
+
+**Lessons (LEDGER rows carry each):** a pass-B subagent resumed over batches cost 9.6-16.5 USD a leaf against 3-5 USD for the worker
+doing the blind pass itself -- brief passes without subagents; a leaf failing the gate at 77% is repaired by a pass C on the disagreement
+rows for 2-3 USD; gate a model test on the transcription's measured error as well as on N (noise-injected controls); calibrate a language
+judge on the target's own clear text before reading a FAIL; open an on-disk image before briefing a disk-only job; RAH "telegrama cifrado"
+titles describe the transmission (twice now); five of 31 workers overran (P5 2.0x, Y4b 1.8x, L2 1.37x interrupted, L3 1.33x, L4 1.07x),
+all with subagents or image bisection. Retrospective trigger met (31 rows, USD 140).
+
 ## LANE ZX2 handoff (session_015Bn675gy4Zx5pz8A9CXQzQ), 25 September 2026, kept current (last 19:16 UTC)
 
 Opened 19:09 by the owner-account parent: the CX/CX2 gate-passing hand-offs R6 does not hold (R6 keeps Mercy, Salviati,
