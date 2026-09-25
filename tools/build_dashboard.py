@@ -486,6 +486,49 @@ sq_cards = "".join(sq_card(s) for s in sidequests_sorted) or '<li class="muted">
 sq_waiting = [s for s in sidequests if s.get("state") == "waiting on you"]
 desk_sq_waiting = "".join(f'<li>{E(s.get("title", ""))} <span class="muted small">&mdash; {E(short(s.get("next", ""), 100))}</span></li>' for s in sq_waiting)
 
+# ---------------------------------------------------------------- near solves
+
+near = d.get("near", [])
+_MONTHS = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6, "jul": 7, "aug": 8,
+           "sep": 9, "sept": 9, "oct": 10, "nov": 11, "dec": 12}
+_DATE_RE = re.compile(r"(\d{1,2})\s+([A-Za-z]+)\.?\s*(\d{4})[, ]+(\d{1,2}):(\d{2})")
+
+
+def _parse_dt(s):
+    m = _DATE_RE.search(s or "")
+    if not m:
+        return None
+    mon = _MONTHS.get(m.group(2)[:4].lower()) or _MONTHS.get(m.group(2)[:3].lower())
+    if not mon:
+        return None
+    import datetime
+    return datetime.datetime(int(m.group(3)), mon, int(m.group(1)), int(m.group(4)), int(m.group(5)))
+
+
+_updated_dt = _parse_dt(d.get("updated", ""))
+
+
+def near_is_stale(touched):
+    """A row's touched date more than 48h older than status.json's own `updated` (NEAR.md's review rule)."""
+    touched_dt = _parse_dt(touched)
+    if not _updated_dt or not touched_dt:
+        return False
+    import datetime
+    return (_updated_dt - touched_dt) > datetime.timedelta(hours=48)
+
+
+def near_card(n):
+    target = n.get("target", "")
+    stale = ' <span class="chip near-stale">stale</span>' if near_is_stale(n.get("touched", "")) else ""
+    return (f'<li class="nearcard"><div class="nearhead"><a href="{E(REPO + "ciphers/" + target)}">{E(target)}</a>'
+            f'<span class="muted small">{E(n.get("lane", ""))}</span>{stale}</div>'
+            f'<p class="neartitle">{E(n.get("title", ""))}</p>'
+            f'<p class="muted small"><b>Next:</b> {E(n.get("next", ""))}</p>'
+            f'<p class="muted small">Last touched {E(n.get("touched", ""))}</p></li>')
+
+
+near_cards = "".join(near_card(n) for n in near) or '<li class="muted">no near solves open</li>'
+
 # ---------------------------------------------------------------- page
 
 CSS = """
@@ -582,6 +625,12 @@ th,td{text-align:left;vertical-align:top;padding:8px 8px;border-bottom:1px solid
 .chip.sq-waiting-on-you{background:var(--warn-soft);color:var(--warn)} .chip.sq-blocked{background:var(--warn-soft);color:var(--warn)}
 .chip.sq-queued{background:transparent;border:1px dashed var(--line);color:var(--muted)}
 .sqdesk{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:4px;font-size:0.9rem}
+.near{margin-bottom:18px}
+.nearcards{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:10px}
+.nearcard{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.nearhead{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between}
+.neartitle{font-weight:600;margin-top:6px}
+.chip.near-stale{background:var(--warn-soft);color:var(--warn)}
 @media (prefers-reduced-motion:no-preference){.ffill{transition:width .3s}}
 """
 
@@ -665,6 +714,13 @@ page = f'''<title>Cipher Lab Board</title>
   <p class="headline">{E(headline)}</p>
   <div class="strip"><span>Updated <b>{E(d["updated"])}</b></span><span><b>{n_unique}</b> readings at N3 or better after two audits</span><span><b>{n_first}</b> with our own key and no earlier decipherment found</span><span><b>{len(lanes)}</b> lanes, <b>{live_workers}</b> workers live</span><span><b>{len(ready)}</b> to send</span><span><b>{jq}</b> JSTOR rows queued</span></div>
 </header>
+
+<section class="near" id="near-solves">
+  <h2><a href="{E(REPO + "NEAR.md")}">Near solves</a></h2>
+  <p class="muted small" style="max-width:70ch">A target where a solver beat its matched control by a reproducible margin, or a control showed a negative was not a real test, stays here until its named next step has run or a verifier has classed it in AUDIT.md (CLAUDE.md rule 5). A row untouched for 48 hours is marked stale, a flag for the parent, not a reason to drop it.</p>
+  <ul class="nearcards">{near_cards}</ul>
+</section>
+
 <nav class="tabs" aria-label="Views">
   <button type="button" data-view="readings" aria-selected="true">Readings</button>
   <button type="button" data-view="desk" aria-selected="false">Your desk</button>

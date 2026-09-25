@@ -280,7 +280,8 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    tools/ with an offline test, and its prose shrinks to one line naming the tool. Precedents: `tools/intake_gate_check.py`
    (the intake gate), `tools/room.py` (ROOM.md hygiene), `tools/ledger_check.py` (outcome codes), `tools/family_run.py`
    (rule 3: a hypothesis family runs on a target only after its matched control has run and read; both numbers are written
-   side by side to `ciphers/<t>/HYPOTHESES.md`).
+   side by side to `ciphers/<t>/HYPOTHESES.md`), `tools/near_check.py` (rule 5's near-solve amendment: a NEAR.md/status.json
+   `near` target must never read `closed-negative`, the two registers must agree, and a row stale past 48 hours is flagged).
 8. **Shared scripts before new ones (24 Sept 2026).** Each has `--help` and an offline test in `tools/tests/`; a
    target that needs something they lack gets an option added to the tool, not a private copy.
    `tools/gallica_folio.py ARK --folio 35` reads the manifest's canvas labels once, gives the canvas and native image
