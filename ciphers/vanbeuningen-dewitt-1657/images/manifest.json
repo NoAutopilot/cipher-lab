@@ -9,7 +9,16 @@
           "file": "dewitt_01_405.jpg",
           "edition": "Brieven aan Johan de Witt, Japikse ed., Deel 1",
           "printed_page": 405,
-          "content": "Van Beuningen circle letter, 19/29 Sep 1657 (a copy not in Van Beuningen's own hand); footnote states the same letter also survives as a separate unsolved cipher copy, in another hand"
+          "content": "Van Beuningen circle letter, 19/29 Sep 1657 (a copy not in Van Beuningen's own hand); footnote states the same letter also survives as a separate unsolved cipher copy, in another hand",
+          "url": "https://resources.huygens.knaw.nl/retroapp/service_dewitt/aandewitt_01/images/AAN_DEWITT_01_405.jpg"
+        },
+        {
+          "file": "dewitt_01_406.jpg",
+          "edition": "Brieven aan Johan de Witt, Japikse ed., Deel 1",
+          "printed_page": 406,
+          "content": "continuation and end of the same letter; footnote 1 there cites a further, separate 19/29 Sept 1657 letter on Swedish/Danish military plans held as R.A. S.G. 7271 (Staten-Generaal fonds, not 3.01.17) -- plausibly the ff.206-207 dispatch, not chased down, not the cipher target",
+          "url": "https://resources.huygens.knaw.nl/retroapp/service_dewitt/aandewitt_01/images/AAN_DEWITT_01_406.jpg",
+          "fetched": "2026-09-25"
         }
       ]
     },
