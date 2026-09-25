@@ -340,11 +340,12 @@ LADDER = [("N0", "already known"), ("N1", "text in print"), ("N2", "mapping new"
 classed = [r for r in results if nclass(r) is not None and r["kind"] not in ("dataset", "correction", "negative")]
 classed.sort(key=lambda r: (-(nclass(r)), -audits(r), r["title"]))
 counts = Counter(nclass(r) for r in classed)
-n_unique = sum(1 for r in classed if nclass(r) >= 3 and audits(r) >= 2)
+counted = lambda r: nclass(r) >= 3 and audits(r) >= 2 and not r.get("qa_flag")  # a QA flag holds a result out until its lane clears it
+n_unique = sum(1 for r in classed if counted(r))
 KEYSRC = {"ours": ("k-ours", "our key", "We recovered the key ourselves: by cryptanalysis, by aligning a plain copy, or by identifying the codebook."),
           "period": ("k-period", "period key, rebuilt by us", "The key comes from a decipherment, key sheet or cipher book of the time, which we turned into a working key."),
           "published": ("k-pub", "published key", "The key was published by someone else (credited in AUDIT.md); we applied it.")}
-n_first = sum(1 for r in classed if r.get("key") == "ours" and nclass(r) >= 3)
+n_first = sum(1 for r in classed if r.get("key") == "ours" and counted(r))
 
 
 def reading_row(r, idx):
@@ -365,6 +366,8 @@ def reading_row(r, idx):
     if rlabel:
         chips += f'<span class="chip {rk}">{E(rlabel)}</span>'
     chips += f'<span class="chip c-aud">{["no audit", "one audit", "two audits"][a]}</span>'
+    if r.get("qa_flag"):
+        chips += f'<span class="chip qa-flag" title="{E(r["qa_flag"])}">QA flag open: not counted</span>'
     if so:
         st = so[0]["status"].split()[0]
         lab = {"queued": "second opinion queued", "posted": "second opinion posted", "checked": "second opinion checked"}.get(st, "")
@@ -372,7 +375,7 @@ def reading_row(r, idx):
             chips += f'<span class="chip so-{st}" title="{E(so[0]["label"] + ((": " + so[0]["outcome"]) if so[0]["outcome"] else ""))}">{lab}</span>'
     for x in dr:
         chips += f'<span class="chip out-{x["kind"]}">{E(who(x))}: {STATE[x["kind"]]}</span>'
-    unique = ' unique' if (n >= 3 and a >= 2) else ''
+    unique = ' unique' if counted(r) else ''
     # detail
     parts = [f'<div class="dz"><h4>What it is</h4><p>{E(r.get("line", ""))}</p><p class="mono muted">{E(r.get("grade", ""))}</p></div>']
     if m:
@@ -527,7 +530,7 @@ section[hidden]{display:none}
 .rhead:hover{background:var(--surface)}
 .rtitle{text-wrap:pretty} .rchips{grid-column:2;display:flex;flex-wrap:wrap;gap:6px}
 .chip{display:inline-block;font-size:0.74rem;font-weight:600;padding:2px 7px;border-radius:3px;background:var(--line);color:var(--ink);letter-spacing:0.01em}
-.chip.r-sub{background:var(--good-soft);color:var(--good)} .chip.r-conf{background:var(--accent-soft);color:var(--accent)} .chip.r-form,.chip.c-aud{background:transparent;border:1px solid var(--line);color:var(--muted)}
+.chip.r-sub{background:var(--good-soft);color:var(--good)} .chip.r-conf{background:var(--accent-soft);color:var(--accent)} .chip.r-form,.chip.c-aud{background:transparent;border:1px solid var(--line);color:var(--muted)} .chip.qa-flag{background:transparent;border:1px solid var(--warn,#b45309);color:var(--warn,#b45309)}
 .chip.k-ours{background:var(--good);color:#fff} .chip.k-period{background:var(--accent-soft);color:var(--accent)} .chip.k-pub{background:transparent;border:1px solid var(--line);color:var(--muted)} .chip.k-known{background:transparent;border:1px dashed var(--line);color:var(--muted)}
 .chip.so-queued{color:var(--muted);border:1px dashed var(--line);background:transparent} .chip.so-posted{background:var(--warn-soft);color:var(--warn)} .chip.so-checked{background:var(--good-soft);color:var(--good)}
 .chip.out-ready{background:var(--good);color:#fff} .chip.out-sent{background:var(--accent-soft);color:var(--accent)} .task.sentrow{grid-template-columns:12px minmax(0,1fr);opacity:0.85} .chip.out-drafted{background:var(--warn-soft);color:var(--warn)} .chip.k{background:var(--accent-soft);color:var(--accent)}
