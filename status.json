@@ -1,5 +1,5 @@
 {
- "updated": "25 Sep 2026, 19:08 UTC",
+ "updated": "25 Sept 2026, 19:20 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -616,6 +616,10 @@
   }
  ],
  "log": [
+  {
+   "when": "25 Sep, 19:20",
+   "what": "Owner account opens LANE ZX2 on the gate-passing hand-offs the other account's R6 will not reach. Clair 349 transcription passes the 60 percent gate (70.7). Mercy 1648 reading (other account, key by cryptanalysis) is with a verifier."
+  },
   {
    "when": "25 Sep, 18:05",
    "what": "ChatGPT second opinions on Linhares, van Beuningen and WVO 5551 checked: every claim traced to its page, no prior print found; PRs 10-12 closed with the files landed. CX2 closed: 33 targets now pass the intake gate. Clair 349's key sheet was written sideways; turned, 52 of 62 alphabet cells read."
@@ -1890,9 +1894,14 @@
  ],
  "lanes": [
   {
+   "name": "Lane ZX2, CX/CX2 hand-offs (owner account)",
+   "live": 0,
+   "focus": "opened 19:15 by agreement with the other account: deep work on the gate-passing targets R6 does not hold (Clair 1161, Ormond, La Garde, Paget 1713, d'Estaing, Hellen and the rest); cryptanalysis only through the new family_run.py with a control first; readings go to V6"
+  },
+  {
    "name": "Lane ZX, three partial targets (owner account)",
    "live": 2,
-   "focus": "Brochado at a named stop (letter 134 fails the whole-bucket judge control; thin codes need more attestation); Barriere 1654 closed as a control-backed negative (marks resolve 8 of 13 conflicts vs 8.3 by chance); Clair 349: the key sheet reads once turned 90 degrees (52 H / 10 M), ciphertext being re-passed with the gloss margin"
+   "focus": "Clair 349 Este-Guise 1556: key sheet read once turned 90 degrees (52 H / 10 M); Opus transcription passes agree 70.7 percent (gate 60), being settled, decode next. Brochado letter 134 on the near-solve register (thin codes). Barriere 1654 negative with a control"
   },
   {
    "name": "Lane CX2, check-solved round 2 (owner account)",
