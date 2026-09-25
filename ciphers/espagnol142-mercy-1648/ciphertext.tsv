@@ -570,8 +570,9 @@ v07	11	7	H		agree
 v07	12	17	H		agree
 v07	13	16	H		agree
 v07	14	10	H		agree
-v07	15	7	H		agree
-v07	16	22	H		agree
+v07	15	3	M	7	split (corrections.tsv step 11): MEYE blind zoom, distinct 3 and 17 strokes where the settled pass read one 7
+v07	16	17	M	(none, was part of the same '7')	split (corrections.tsv step 11): MEYE blind zoom, distinct 3 and 17 strokes where the settled pass read one 7
+v07	17	22	H		agree (renumbered from pos 16 after the pos15 split)
 v08	1	16	H		agree
 v08	2	29	H		agree
 v08	3	28	H		agree

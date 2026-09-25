@@ -745,3 +745,59 @@ Léopold-Guillaume", and Lonchay 1896 p.445 makes Mercy Archduke Leopold Wilhelm
 inferred as Leopold Wilhelm's secretariat (inference: the leaf is unsigned). The five 19->14 exceptions that produce
 "Cheureuse"/"Cleues" were made by the reader; a blind eye-check is owed before they go to S (AUDIT.md section 3).
 Status word unchanged: open.
+
+## MREV: blind split applied (25 Sept 2026, LANE R7)
+
+R7-MEYE's independent blind re-transcription (`meye/`) agreed with the reader's `exceptions.tsv` 19->14 correction
+at r06:14 and r17:5, but read `19` (not the exception's `14`) at r14:7, r16:3 and r16:6 -- 3 of 3 blind passes now
+say `19` at those three positions, against only the non-blind M2 re-read saying `14`. Per the brief, the reading now
+follows the blind majority: `exceptions.tsv` keeps only r06:14 and r17:5 (both graded M, reason updated to note the
+blind agreement), and the other three revert to the key's plain `19`->`e`.
+
+**(1) Word changes, 19-vs-14 split (`exceptions.tsv` 5 -> 2 rows):**
+
+| line | pos | code before | code after | word before | word after |
+|---|---|---|---|---|---|
+| r14 | 7 | 14 (exception) | 19 (key) | CLEUES | ELEUES |
+| r16 | 3 | 14 (exception) | 19 (key) | CON | EON |
+| r16 | 6 | 14 (exception) | 19 (key) | CO | EO |
+
+r06:14 (CHEUREUSE) and r17:5 unchanged, kept at `14` with the exception now citing "blind re-read R7-MEYE agrees".
+`python3 tools/decode_key.py ciphers/espagnol142-mercy-1648` regenerated cleanly; `--check` exits 0.
+
+**(2) v07 pos15-16 token-count mismatch, settled two tokens.** Zoomed to 4x on `images/f22v_canvas59.jpg`
+(canvas x~2650-3300, y~1390-1630, the segment after the settled "...10" at v07 pos14): the image shows a closed-loop
+digit ("3") and a separate two-stroke digit ("1" then "7") as two distinct, clearly space-separated glyphs, not one
+"7" -- confirms R7-MEYE's blind read (`meye/compare.tsv` COUNT MISMATCH row) over the settled single-token `7`.
+Both original blind passes (`passA.tsv`, `passB.tsv`) had already flagged this exact spot `m`/"ambiguous mark or
+digit... read as 7 per convention", i.e. neither pass was confident in the single-token reading either. Recorded in
+`corrections.tsv` step 11 (never silently edited `ciphertext.tsv`): `ciphertext.tsv` v07 pos15 changed from one `H`
+token (`7`) to two `M` tokens (`3`, `17`), and the old pos16 (`22`) renumbered to pos17. Word change:
+
+| line | pos | before | after |
+|---|---|---|---|
+| v07 | 15-17 (was 15-16) | TG | PAG |
+
+Regenerated; `--check` exits 0.
+
+**(3) Judge (rule 7, pasted), after both changes:**
+
+```
+$ python3 tools/judge_plaintext.py specs/espagnol142-mercy-1648.json --file ciphers/espagnol142-mercy-1648/reading.txt
+ok   length: got=1342, min=200, max=1000000000
+FAIL language: score=-1.031, null_p99=-1.911, real_p05=-0.873, real_median=-0.811, mode=both, N=1342
+FAIL - espagnol142-mercy-1648 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+Essentially unchanged from the pre-MREV FAIL (-1.034 at N=1341, this file's own earlier "Judge" section above):
+four letter changes and one added token do not move a 1342-letter score. Not re-run against the crib-loop control
+(out of this job's scope) or a register-matched corpus (still not built for this letter, per the earlier section).
+
+**New grade counts (rule 4).** Before this job (LANE R6 M2, committed): tokens 521, H 0 C 0 S 494 M 27 I 0 U 0.
+After both changes: **tokens 522, H 0 C 0 S 496 M 26 I 0 U 0** (net: 3 exceptions removed drop 3 M -> S at their
+positions; the v07 split adds 1 token and turns 1 S into 2 M). `reading.txt`, `reading_tokens.tsv` regenerated;
+`tools/decode_key.py ciphers/espagnol142-mercy-1648 --check` exits 0.
+
+Grade: cryptanalytic (S/M per rule 4, no H or C). Not classifying novelty (rule 10) -- AUDIT.md is LANE V6's file
+and was not touched here. Search log: nothing searched this pass (disk-only edit of an existing transcription
+against images already on disk); no hosts, no subagents.

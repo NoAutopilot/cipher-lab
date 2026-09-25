@@ -111,7 +111,7 @@ r14	3	19	H	e	S
 r14	4	21	H	i	S
 r14	5	6	H	s	S
 r14	6	34	H	a	S
-r14	7	19	H	c	M
+r14	7	19	H	e	S
 r14	8	28	H	l	S
 r14	9	33	H	e	S
 r14	10	27	H	u	S
@@ -149,10 +149,10 @@ r15	19	27	H	u	S
 r15	20	5	H	r	S
 r16	1	22	H	g	S
 r16	2	13	H	y	S
-r16	3	19	H	c	M
+r16	3	19	H	e	S
 r16	4	2	H	o	S
 r16	5	32	H	n	S
-r16	6	19	H	c	M
+r16	6	19	H	e	S
 r16	7	2	H	o	S
 r16	8	3	H	p	S
 r16	9	25	H	u	M
@@ -461,8 +461,9 @@ v07	11	7	H	t	S
 v07	12	17	H	a	S
 v07	13	16	H	d	S
 v07	14	10	H	a	S
-v07	15	7	H	t	S
-v07	16	22	H	g	S
+v07	15	3	M	p	M
+v07	16	17	M	a	M
+v07	17	22	H	g	S
 v08	1	16	H	d	S
 v08	2	29	H	o	S
 v08	3	28	H	l	S
