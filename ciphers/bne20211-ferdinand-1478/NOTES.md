@@ -1,4 +1,5 @@
-open
+blocked
+Corrected by the LANE DX orchestrator, 25 Sept 2026 01:35 UTC (check-solved.md: an edition this worker could not open makes the verdict `blocked`, not `open`): Tomokiyo 2018 and Galende Díaz 1993-94 both located, neither read. Next: a fresh worker reads them (cryptiana.web.fc2.com, other mirrors), and the DX login worker fetches R1172/R1180.
 This worker's own DECODE catalogue mirror read directly (`sources/decode/records-decrypted-2026-09-24.tsv`, `sources/decode/records-non-decrypted-2026-09-24.tsv`); no print edition opened this pass -- Tomokiyo's 2018 paper (academia.edu) and Galende Díaz 1993-94 (digibug.ugr.es) were both located but blocked, see search log.
 
 # Ferdinand (the future Ferdinand II of Aragon) to his father John II of Aragon, BNE MSS/20211, 1478 — QUEUE.md row D5
