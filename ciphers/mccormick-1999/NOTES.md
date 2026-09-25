@@ -151,3 +151,11 @@ hypothesis remains the only untested account, but turning it into a scoreable, t
 hand-built sign inventory checked against a period shorthand system such as Gregg) is a campaign-scale
 task, not a further breadth-lane cheap test -- out of this brief's scope; left as a one-line suggestion
 for the orchestrator, not started here.
+
+**Fold-count backfill (parent worker EN-FOLDS, 25 Sept 2026 22:17 UTC, CLAUDE.md rule 3 amendment):** cheap
+test 4's language model reuses `tools/judge_plaintext.py`'s own `en` corpus (pg1661_holmes.txt +
+pg2701_mobydick.txt), which had no per-fold spread on file at the time; it now does --
+leave-one-file-out false-negative spread 0.44 (N=200)/0.11 (N=500) on those 2 files, worse (0.64/0.75) after
+adding 3 more sources, per `tools/data/en/README.md`. This does not change the verdict above (test 4's own
+result turns on the control's near-zero recovery, not on the language-check PASS, which the note above
+already calls not meaningful) -- the verdict stands as written, with that caveat on record.

@@ -188,4 +188,12 @@ step is unchanged from test 1: the spec's own `cheap_tests_in_order` item 2, fet
 blind-transcribing the six untranscribed pages, which would let this same masc test run at much
 higher N.
 
+**Fold-count backfill (parent worker EN-FOLDS, 25 Sept 2026 22:17 UTC, CLAUDE.md rule 3 amendment):** the
+`en` judge corpus this FAIL cites had no per-fold spread on file at the time; it now does --
+leave-one-file-out false-negative spread 0.44 (N=200)/0.11 (N=500) on the original 2 files, worse (0.64/0.75)
+after adding 3 more sources, per `tools/data/en/README.md`. Every fold's false-negative rate is far above the
+amendment's 0.10 gate at both N, so this FAIL is of unknown reliability by that rule alone. The verdict above
+stands as written (this lane owns it, and the masc control's own near-ceiling recovery is independent of the
+language-corpus question) but should be read with that caveat, not as a clean language-check exclusion.
+
 **Requests**: 0 hosts this stage (disk-only, no fetch).

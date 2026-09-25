@@ -59,7 +59,12 @@ session and every subagent, cloud or local.
    corpus as a whole. Report the per-fold spread alongside the blended rate, and treat a corpus with under
    ~5 source files and a wide per-fold spread as a FAIL/PASS of unknown reliability rather than trusting the
    single number, the same way a control below its own gate cannot license a target reading (rule 3's
-   headline paragraph).
+   headline paragraph). Lesson of 25 Sept 2026 (EN-FOLDS): `LANG_CORPORA["en"]` (the default English judge
+   corpus, `pg1661_holmes.txt` + `pg2701_mobydick.txt`) had never had this check run at all; run at N=200/500
+   it spreads 0.44-0.64 even after adding three more gutenberg.org sources (Huck Finn, Gatsby, Pride and
+   Prejudice) in `tools/data/en/` -- more sources made the spread *worse*, because Moby-Dick's own register
+   is the outlier, not the file count. A FAIL/PASS against `en` is of unknown reliability; see
+   `tools/data/en/README.md`.
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
 5. **Status vocabulary** in the first lines of every NOTES.md: `open`, `partial`, `solved`, `closed-negative`,

@@ -34,6 +34,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 LANG_CORPORA = {
+    # en (rule 3 fold-count amendment, parent worker EN-FOLDS, 25 Sept 2026 22:17 UTC): leave-one-file-out
+    # false-negative spread is 0.635 at N=200 / 0.745 at N=500 across these 2 files plus 3 more tried in
+    # tools/data/en/ (Huck Finn, Gatsby, Pride and Prejudice) -- adding sources made the spread WORSE, not
+    # better, driven by Moby-Dick reading as a bigger outlier against a more homogeneous 4-book "standard
+    # prose" model. Unresolved: a FAIL/PASS against "en" is of unknown reliability by the amendment's own
+    # rule. See tools/data/en/README.md before trusting a FAIL/PASS that cites this corpus.
     "en": [DATA / "pg1661_holmes.txt", DATA / "pg2701_mobydick.txt"],
     "de": [DATA / "de16" / "composed_enhg.txt"],
     "fr": [DATA / "fr16" / "lettresdecatheri01cathuoft_djvu.txt.gz"],
