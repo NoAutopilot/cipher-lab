@@ -1027,3 +1027,87 @@ already in this section).
 1, be-api.us.archive.org (full-text search) 9 (>=1.5s apart), resources.huygens.knaw.nl 1 (05551.pdf re-fetch).
 2 Sonnet subagents (blind transcription pass; fresh-instance re-derivation), within the 2-subagent cap. No
 DECODE login, no WebSearch, no other host.
+
+## Marburg copy (TX-KEYS), 25 Sept 2026, 09:20-09:55 UTC
+
+Job: per AUDIT.md's "V-TX2 second audit", Glawischnig 1973 cites a second copy of the WVO 5551 letter cluster at
+Staatsarchiv Marburg, "4f Nld. 165". Look it up in Arcinsys Hessen: what it holds, dates, whether digitised,
+whether a period decipherment of the 17 April 1574 letter could be there. **Not resolved this pass** -- the
+fonds is confirmed online and partly digitised, but the specific old-numbered item was not located, and the
+request has been written up for the person (`REQUEST.md`) rather than guessed at further.
+
+### What Arcinsys Hessen is and how it works (reverse-engineered this pass, useful for any future worker)
+
+`arcinsys.hessen.de` is a Struts2/jQuery web app (not a plain page -- curl alone gets an empty shell). A cookie
+jar plus the right endpoint gets JSON/HTML fragments without a browser:
+- `GET /arcinsys/list.action?nodeid=gNNNNNN` -- a node's own page (sets the session cookie).
+- `GET /arcinsys/ajaxlist.action?page=N&nodeid=gNNNNNN` (same cookie jar) -- that node's item table for page N,
+  each row's exact catalogue Signatur, title, date range, and (for digitised items) a `dao`/preview marker.
+  Each node showed "Seite 1 von 3" (etc.) directly in the fetched HTML.
+- The **identifier search** (`/arcinsys/identifierSearch.action` -> `identifierSearch_search.action`) and the
+  **simple search** (`/arcinsys/simpleSearch.action` -> `simpleSearch_search.action`) both need a real browser:
+  the identifier search's three fields (Archiv/Bestand/Stück) are typeahead widgets that reject a typed value
+  which was never chosen from their own dropdown (confirmed: curl POSTs of plausible strings like "HStAM" and
+  "4 f Staaten N in Niederlande" both come back "Bitte geben Sie ein gültiges ... an", even though "HStAM" is
+  exactly the abbreviation the catalogue itself prints); `tools/browser_fetch.js`'s single `--type` only fills
+  one field then submits, so a custom short Playwright script (typing character-by-character into each field,
+  `ArrowDown`+`Enter` to accept the one suggestion) is what actually got a valid Archiv value accepted. The
+  simple search's result panel is itself a second AJAX call
+  (`/arcinsys/ajax_search_showSearchResultList.action?executionId=...`) that a plain curl fetch of the results
+  page HTML does not trigger -- use the browser tool and read the rendered page/screenshot, not the raw HTML.
+- The tree in the left "Navigator" panel is server-rendered in the node's own `list.action` HTML (a nested
+  `<li data-aid="gNNNNNN">` tree), so a browser screenshot or a saved-HTML grep of that tree is the fastest way
+  to find a specific node's id without fighting the lazy-loaded `navigatorjson.action` AJAX call (which 404'd/
+  errored for both curl and a bare fetch in this pass, likely needing an XHR-specific header neither sent).
+
+### The fonds: HStAM 4 f Staaten N (Nassau-Nürnberg), the Nassau-Dillenburg branch
+
+Glawischnig's own book (*Nassau-Dillenburg unter Graf Johann VI*) matches: Jan/Johann VI van Nassau's family
+papers sit under **HStAM > 4 f Staaten N > 5 Nassau-Dillenburg, Fürsten**, itself split into 20 subject nodes
+(5.1 Persönliche Angelegenheiten ... 5.20 Zoll; full id map for all 20 in this pass's browser fetch, not
+committed as a separate file -- ids are stable `gNNNNNN` strings visible in any `list.action?nodeid=g144044`
+fetch's left-tree HTML). The two nodes most likely to hold a war/diplomatic letter like WVO 5551 were checked:
+- **5.12 "Krieg; Militär"** (node `g144014`): page 1 of several, items titled e.g. "HStAM, 4 f Staaten N,
+  Nassau-Dillenburg 228" ("Gerüchte von dem Anrücken des Herzogs Alba...", 1568) and "HStAM, 4 f Staaten N in
+  Pfalz 780"/"778" (Alba's/Ludwig's 1568 battles). One item's own "(Vor-) Provenienzen" field reads **"Landgraf
+  Wilhelm IV., aus 4 f Niederlande, Paket 1"** -- direct confirmation that the *old* fonds really was named
+  "4 f Niederlande" with its own "Paket" numbers (matching Glawischnig's "4f Nld." shorthand exactly), and that
+  it has since been broken up and redistributed into the current "4 f Staaten N in <country> <new-number>"
+  scheme. **The old Paket/item number is not preserved as a visible field or literal substring in the new
+  catalogue entry**, so a plain-text search for the old citation does not find the new one.
+- **5.14 "Politik"** (node `g144044`, the node this pass sampled first, 3 pages): items include "HStAM, 4 f
+  Staaten N in Niederlande 819/141/254" and "... in Frankreich 24/200/280/285/327/340" and "... in Polen 56",
+  spanning 1567-1583 Nassau-Dillenburg foreign correspondence -- exactly the right subject and date range, but
+  **no item numbered 165 appears on any of the 3 pages** (numbers seen: 141, 254, 364, 819, 1574, 1579, 1651).
+
+### What was NOT found
+
+- **Item "165" specifically was not located** in either node sampled. It may be catalogued under one of the
+  other 18 Nassau-Dillenburg subject nodes not checked this pass (5.1 Persönliche Angelegenheiten is a plausible
+  next guess, since WVO 5551 is a private letter between brothers, not a state paper), or its "in Niederlande"
+  number in the new scheme may simply not be "165" (only the *old* Paket number is "165"; the new number for the
+  same physical item is unrelated and was never going to be findable by searching for "165").
+- A free-text simple search for the exact old citation, `"4 f Niederlande" 165` (quoted phrase AND number),
+  returned **zero results** site-wide -- the old fonds name and the old item number are never printed together
+  in the same modern catalogue record.
+- No digitisation status could be confirmed either way for the specific item. Several neighbouring items in the
+  same branch do carry preview thumbnails (confirmed by screenshot -- e.g. one 1704 map item showed a thumbnail;
+  most text items in the Nassau-Dillenburg branch showed a generic document icon, not a preview, meaning "not yet
+  digitised" is the more likely default for a plain text item in this fonds, but this is an inference from the
+  icon, not a confirmed field).
+
+### What this means for the target
+
+Per the job brief, this is written up as an archive request rather than guessed at further: `REQUEST.md` asks
+HStAM directly to resolve "4f Nld. 165" (old fonds "4 f Niederlande") to its current Arcinsys signature, say
+whether it is digitised, and if so provide the leaf image or say what a reading-room photograph would cost. This
+is the fastest real route -- state archives that have redone their internal numbering keep a concordance table
+that this repository has no way to reconstruct by search alone. ASKS.md row added.
+
+### Requests this pass
+
+`arcinsys.hessen.de`: ~25 (curl: root, several `list.action`/`ajaxlist.action`/`navigatorjson.action`/
+`identifierSearch*`/`simpleSearch*` fetches, one cookie-jar session reused throughout, all >=1.5s apart; browser
+tool: 4 page loads, one of them a custom short Playwright script doing 2 typeahead field-fills in one page visit).
+`landesarchiv.hessen.de`: 1 (the archive's own contact page, for REQUEST.md's address). WebSearch: 3 (locating
+the fonds name/node, and the archive's contact details as a cross-check). No logins, no credentials.
