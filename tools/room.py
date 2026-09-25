@@ -6,6 +6,7 @@ Usage:
   tools/room.py --start                             worker start: fetch, checkout -B main origin/main, sanity check
   tools/room.py --push [paths...]                   commit the named paths (already staged or listed) and push with the
                                                     same rebase-and-retry loop, keeping both sides of a ROOM.md conflict
+                                                    and refusing to push if the rebase dropped a STATUS.md/QUEUE.md section
   tools/room.py --digest "YYYY-MM-DD HH:MM"         print only ROOM.md lines at or after SINCE whose signal starts
                                                     with nomination:, for LANE, flag:, done:, handoff, or retract,
                                                     or contains allowed_warning, rejected, or a bare N0-N5 class
@@ -17,6 +18,10 @@ four-line stub from a stale clone. This script appends with >>, never rewrites, 
 keeping both sides, refuses to push a ROOM.md that shrank, and retries the fetch-rebase-push loop up to five times.
 Warnings (25 Sept 2026, UPDATES.md): a done line naming a test, negative or FAIL without the word control, or any
 line carrying a dollar figure, is still appended but prints a WARNING first (rule 3; COMMON item 1).
+Section guard (25 Sept 2026, LEDGER.md:810, LANE B3): unlike ROOM.md, a non-conflicting 3-way merge on STATUS.md or
+QUEUE.md can silently drop a whole '## ' section neither side's diff touched. --push now snapshots both files'
+headings before the rebase and refuses to push if one vanished, naming the lost section, same shape as the
+ROOM.md shrink guard.
 --digest was added from RETRO-2026-09-24d (subject 3): an orchestrator checking in across several live lanes had no
 way to read ROOM.md short of the full, growing file, unlike a worker's own "last 30 lines" rule.
 """
@@ -91,6 +96,30 @@ def room_ok():
         return f"ROOM.md would shrink ({len(cur.splitlines())} < {len(o.splitlines())} lines on origin)"
     return None
 
+def headings(path):
+    """'## ' section headings of path, or None if the file does not exist."""
+    if not os.path.exists(path):
+        return None
+    return set(re.findall(r"^## .*$", open(path, encoding="utf-8").read(), re.M))
+
+def headings_ok(before):
+    """Refuse to push if a rebase silently dropped a '## ' section from STATUS.md or QUEUE.md.
+
+    room_ok() protects ROOM.md by name; a non-conflicting 3-way merge on any other shared file has no
+    equivalent guard (LEDGER.md:810, LANE B3, 25 Sept 2026: "STATUS.md sections can be dropped by another
+    session's room.py --push merge"). `before` maps path -> its heading set snapshotted before the rebase.
+    """
+    for path, before_headings in before.items():
+        if not before_headings:
+            continue
+        after_headings = headings(path)
+        if after_headings is None:
+            return f"{os.path.basename(path)} disappeared"
+        lost = before_headings - after_headings
+        if lost:
+            return f"{os.path.basename(path)} lost section(s): " + "; ".join(sorted(lost))
+    return None
+
 def push(message, paths):
     if paths:
         sh("git", "add", "--", *paths)
@@ -98,6 +127,7 @@ def push(message, paths):
         print("nothing staged"); return 0
     c = sh("git", "commit", "-q", "-m", message)
     if c.returncode: sys.stderr.write(c.stderr); return 1
+    watched = {p: headings(p) for p in (os.path.join(ROOT, "STATUS.md"), os.path.join(ROOT, "QUEUE.md"))}
     for i in range(5):
         sh("git", "fetch", "-q", "origin", "main")
         rb = sh("git", "rebase", "--autostash", "FETCH_HEAD")
@@ -114,6 +144,9 @@ def push(message, paths):
         bad = room_ok()
         if bad:
             print("refusing to push: " + bad); return 5
+        bad = headings_ok(watched)
+        if bad:
+            print("refusing to push: " + bad); return 7
         p = sh("git", "push", "-q", "-u", "origin", "main")
         if p.returncode == 0:
             print("pushed " + sh("git", "rev-parse", "--short", "HEAD").stdout.strip()); return 0

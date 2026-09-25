@@ -21,6 +21,12 @@ Steps:
      between centres, so a cut falls in whitespace; the first and last bands get half a pitch of margin.
   4. Each band (--lines-per-crop lines) is cut at native resolution into segments no wider than --max-width (default
      2400, under the 2500 px reading limit) with --overlap px shared between neighbours: OUT/<prefix>_L01_s1.jpg ...
+     Keep segments under this width and never re-stitch them back into one wider image, even to give a pass full
+     line context: re-stitching measurably lowers blind-transcription agreement (clair349-este-guise-1556, 25 Sept
+     2026: ZX-TR349C hand-stitched two --max-width 2400 segments into a single 3895 px line image and two Sonnet
+     blind-pass pairs agreed only 39.3% and 42.0% pooled against a 60% gate; ZX-TR349D re-cut the same leaf as the
+     tool's own two native segments, kept apart, boundary marked with a corner tick, and pooled agreement on the
+     same 33 lines jumped to 70.7%). Pass segments separately and tell the worker where the tick-marked boundary is.
   5. OUT/manifest.json gains one entry per crop under the key "iiif_lines" (source URL, source file, box in native
      page coordinates, crop path, date); entries for the same crop path are replaced, other keys are left alone.
   6. If OUT is over 30 MB afterwards, the reference copies this script fetched (src_*.jpg) are downscaled to 1600 px

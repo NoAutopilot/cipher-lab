@@ -65,8 +65,10 @@ Intake gate (25 Sept 2026): before any deep work (transcription, key application
 
 Spawning (25 Sept 2026, UPDATES.md): every `create_session` passes `source_url` https://github.com/NoAutopilot/cipher-lab and
 `source_revision` main explicitly (inheritance from the parent's environment is not reliable: three workers on 25 Sept got no
-repository and stopped at their first turn on an injection suspicion), and its prompt opens by naming the brief file and
-the rule that authorises the job, not with a wall of caps and rules.
+repository and stopped at their first turn on an injection suspicion), and its prompt leads with the brief file path and a
+plain one-line job description, not a wall of caps and rules -- a dense, rule-heavy inline prompt can read like an
+injected instruction set and trip a fresh session's own safety check before it reads the brief (LEDGER.md rows
+799/818/819, 25 Sept 2026). Rule text stays in the brief itself.
 
 File the lane orchestrator brief and a COMMON for its workers under .claude/briefs/runs/<date>-lane-<x>-*.md (the
 2026-09-25 LX, DX and OX files are the latest pattern), commit, post a ROOM claim line, then spawn the lane

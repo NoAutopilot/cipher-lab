@@ -23,3 +23,13 @@ Common tail (paste into every brief):
 > Wall-clock box (every worker brief): "stop and push at $<cap> or at <minutes> minutes, whichever first." The box is also a minimum: a worker does not stop early with the job undone while budget and minutes remain; it stops at the cap, at the minutes, or at the brief being met, and says which (LEARN-2026-09-25-1718 item 2, from the R6 common brief).
 
 > Before the first action, also read the last 20 lines of UPDATES.md (changes instituted across both accounts since your brief was written; they override an older brief where they conflict).
+
+## The consolidator pattern, for standing campaigns
+
+A target that has run more than two `tools/family_run.py` families is a standing campaign, not a one-shot job, and
+gets a periodic strongest-model "consolidator" check-in: it reads the last cycle's workers' control and target
+numbers side by side, rewrites the target's HYPOTHESES.md summary block, and decides continue / pivot / park per
+family against a pre-written decision rule (written the cycle before, not moved after seeing the new numbers), then
+writes the next cycle's job briefs. Worked example: `.claude/briefs/runs/2026-09-25-lane-gold-consolidator-c2.md`
+(LANE GOLD cycle 2, Fable) -- three Sonnet workers' family_run.py rows read together, the cycle-1 decision rule
+applied unchanged, and three named cycle-3 briefs written from it.

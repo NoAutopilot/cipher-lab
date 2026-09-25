@@ -56,6 +56,20 @@ Exit codes: 0 run complete (gate met, or --control-only); 3 CONTROL BELOW GATE (
 The row never carries a decode; the decode is in the families/ file. The tool never writes the words solved,
 new, first or unpublished (rule 10).
 
+Wall-clock box (GOLD-K1, 25 Sept 2026): the tool has no --timeout of its own -- the process runs the control
+seeds and, if gated, the target in one call, in that order. If you wrap this call in an external timeout (a
+worker's own wall-clock box, `timeout N python3 tools/family_run.py ...`), size N to cover the control battery
+plus the target run combined, not a single-stage estimate: a 1500 s box that only budgeted the control killed
+the target mid-run, and the worker had to notice and rerun the target alone by hand to keep rule 3's control+target
+pairing intact. When in doubt, run `--control-only` first to see how long the control battery actually takes,
+then size the target call's own box on top of that.
+
+A newly added control option (a new `--param profile=...`, a new corpus flag, anything that changes what the
+control plaintext looks like) is worth a single-seed sanity comparison against the target -- run one seed of each
+side and eyeball the profile/L1 numbers -- before the full `--seeds` battery runs. A wrong first implementation
+still burns a complete run either way (GOLD-D1, 25 Sept 2026: a wrong first `profile=target` implementation was
+only caught after the full seeded control had already run).
+
 Test: python3 tools/tests/test_family_run.py  (offline, under two minutes)
 """
 import argparse, json, os, re, statistics, subprocess, sys, time

@@ -184,3 +184,12 @@ reads: (1) the same letter already in print (the sender's or recipient's edition
 itself; (4) a published key of the same office and years (Tomokiyo, Bourdeau's key web, our own key tables); (5)
 cryptanalysis with a matched control. Every reading on the board on 25 Sept 2026 came from routes 1-4; route 5 has
 produced none at single-letter lengths. The order is a rule for the first worker on a target, not a description.
+
+## A blind brief has to name manifest.json's iiif_lines block, not just the plaintext and key (25 Sept 2026)
+
+R7-MEYE (espagnol142-mercy-1648) was briefed for a blind re-transcription, withheld the ciphertext transcription
+and key, and still self-disclosed a partial breach: a plain Python dump of `images/manifest.json` to find its crop
+files also printed the `iiif_lines` block's pixel boxes (the prior line y-ranges), so the worker knew a line's
+box before eye-checking it, though no glyph content was exposed. A blind-transcription or blind-re-read brief
+names `images/manifest.json`'s `iiif_lines` block as off-limits alongside the plaintext and key, or hands the
+worker a manifest stripped of that block -- line-box geometry alone can bias a supposedly blind re-transcription.

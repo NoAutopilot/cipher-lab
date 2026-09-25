@@ -65,6 +65,17 @@ session and every subagent, cloud or local.
    Prejudice) in `tools/data/en/` -- more sources made the spread *worse*, because Moby-Dick's own register
    is the outlier, not the file count. A FAIL/PASS against `en` is of unknown reliability; see
    `tools/data/en/README.md`.
+   When a judge FAILs a candidate reading close to the gate and the document itself carries an independent
+   period gloss or annotation (a marginal or interlinear note, known-genuine and not the candidate), score that
+   text through the same judge alongside the candidate and the shuffled-null controls. Lesson of 25 Sept 2026
+   (ZX-DEC349, clair349-este-guise-1556): the fr16 judge FAILed the decode (-1.109 vs real_p05 -0.882), a clean
+   negative on its own -- but the leaf's own contemporary interlinear gloss scored -1.545 through the identical
+   judge, *worse* than the candidate and only marginally above the shuffled-null controls (-1.62 to -1.65). That
+   places the candidate much closer to genuine prose than to noise despite missing the p05 gate: a gloss score
+   near the shuffled controls, not near real_p05, means a FAIL close to the gate reflects the corpus/threshold at
+   this document's length and register, not necessarily the key -- "judge cannot decide," not a negative. This is
+   conditional (few documents carry their own period gloss) and distinct from the pt18/es17c lessons above, which
+   calibrate the corpus in general; this calibrates against a real text from the same leaf.
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
 5. **Status vocabulary** in the first lines of every NOTES.md: `open`, `partial`, `solved`, `closed-negative`,
@@ -123,6 +134,11 @@ session and every subagent, cloud or local.
    searched and no phrase search was run after decoding.
    Precedent and worked example: ciphers/eckert-1864/AUDIT.md.
    Key source (25 Sept 2026, owner's request): every AUDIT.md verdict also records whose key read the item -- `ours` (recovered by us: cryptanalysis, a plain-copy alignment, or identifying the codebook), `period` (rebuilt by us from a decipherment, key sheet or cipher book of the time) or `published` (someone else's modern key, credited) -- and the parent copies it to the result's `key` field in status.json, with `text: known` when the plaintext was already in print. An `ours` key at N3 or better is the nearest honest equivalent of a first; say it in those words, never 'first'.
+   A reading revised after AUDIT.md is written (a blind-pass correction, a re-derivation fix under rule 7) is
+   propagated into AUDIT.md and into any row already filed for that target in `SECOND-OPINIONS-QUEUE.tsv` before
+   either is treated as current, not left for the next session to notice. Lesson of 25 Sept 2026 (V6-MERCY2):
+   a downstream reading change (R7-MREV: "Cleues" -> "Eleues") was not carried back into AUDIT.md or the already-
+   queued SO prompt, so an outward-facing sentence kept a word the blind read had dropped.
 
 
 ## Outreach (owner's directive, 23 September 2026)
@@ -264,7 +280,10 @@ VERIFIER: <target folder>. Claim under audit: <the sentence as the repo states i
    as searched or unreachable, with what was searched.
 3. Classify each item N0-N5 (rule 10) with: prior plaintext (yes/no, where, earliest citation), prior
    decipherment (yes/no), evidence quality, confidence, one safe sentence, one unsafe sentence.
-4. Postmortem: name the failure, the files and sentences that over-claim, and correct them.
+4. Postmortem: name the failure, the files and sentences that over-claim, and correct them. If the reading itself
+   was revised after this AUDIT.md (or an earlier one) was written, carry the revision into AUDIT.md and into any
+   `SECOND-OPINIONS-QUEUE.tsv` row already filed for this target before writing the safe sentence (25 Sept 2026,
+   V6-MERCY2).
 5. Write <folder>/AUDIT.md; commit and push; report the classifications and the one-line postmortem.
 Do not decode, do not touch other targets, do not print or commit credentials.
 ```
