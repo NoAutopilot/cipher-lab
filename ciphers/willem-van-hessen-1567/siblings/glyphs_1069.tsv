@@ -1,0 +1,17 @@
+glyph_id	sign_desc	decoded_letter	grade	crop_ref	notes
+# Atlas of distinct invented cipher-sign shapes seen in briefnr 1069's interlinear cipher (KHAG B12,6, p2-p4).
+# 'sign_desc' is a plain-language description (not Unicode -- these are invented signs with no Unicode equivalent);
+# see crop_ref for the true shape. 'decoded_letter' comes from key_1069.tsv (the contemporary interlinear gloss),
+# grade H/M as there. This pass (OX-WV69, 25 Sept 2026) only covers p2 line 1 (10 signs, from OX-WVH) plus what
+# the two blind-pass subagents below could add from the same line; p2's remaining ~23 lines and all of p3-p4 are
+# NOT yet atlassed -- see NOTES.md for the explicit handoff.
+g01	capital-H-with-crossbar	t	H	siblings/crop_grumbachs.png (glyph 1, leftmost)	= key_1069.tsv row 1
+g02	backward-C-loop	g	H	siblings/crop_grumbachs.png (glyph 2)	= key_1069.tsv row 2
+g03	bold-dagger-crossbar	r	M	siblings/crop_grumbachs.png (glyph 3)	= key_1069.tsv row 3
+g04	double-hump-w-shape	u	M	siblings/crop_grumbachs.png (glyph 4)	= key_1069.tsv row 4
+g05	small-o-with-hooked-tail	n	M	siblings/crop_grumbachs.png (glyph 5)	= key_1069.tsv row 5
+g06	yogh-3-shape	p	M	siblings/crop_grumbachs.png (glyph 6)	= key_1069.tsv row 6
+g07	capital-X-cross	a	H	siblings/crop_grumbachs.png (glyph 7)	= key_1069.tsv row 7; SAME SHAPE as 174's alphabet 'a' homophone (key_174_nomenclator.tsv row 12, "X" of 3 homophones) -- one confirmed cross-system match
+g08	h-with-horizontal-bar	c	H	siblings/crop_grumbachs.png (glyph 8)	= key_1069.tsv row 8; SAME SHAPE as 174's alphabet 'c' ("h-with-crossbar", key_174_nomenclator.tsv row 14) -- second confirmed cross-system match
+g09	pi-like-capital-Pi	h	H	siblings/crop_grumbachs.png (glyph 9)	= key_1069.tsv row 9; NOTE: the same Pi shape decodes to 'f' in 174's alphabet (key_174_nomenclator.tsv row 17) -- same glyph, different assigned letter, so NOT the same key even where the sign inventory overlaps
+g10	capital-R	s	H	siblings/crop_grumbachs.png (glyph 10, rightmost)	= key_1069.tsv row 10
