@@ -1,11 +1,31 @@
 #!/usr/bin/env python3
 """Matched control for the first cheap test (CLAUDE.md rule 3): same design as thurloe-barriere-1654 -- a
 word-per-code nomenclature with homophones, sparse partial interlinear gloss, run structure copied token-for-
-token from the real letter's passA.tsv (same N per run, same number of gloss-revealed words per run, taken as a
+token from the real letter's ciphertext (same N per run, same number of gloss-revealed words per run, taken as a
 prefix) -- built over a fresh, unrelated chunk of real period French (tools/data/fr16) instead of the target's
 own words. Ground truth is known here, so this reports coverage AND sense rate (rule 3: report both numbers).
 
-Usage: python3 matched_control.py [--seed N]
+Usage: python3 matched_control.py [--seed N] [--ctpath passA.tsv|ciphertext.tsv]
+Default --ctpath is passA.tsv (the original single-pass transcription), which reproduces TX-BARRT's 25 Sept 2026
+numbers exactly (checked: 33.4% avg coverage over 10 seeds, unchanged). YX-BARB, 25 Sept 2026, added --ctpath so
+the same control design can be rebuilt against ciphertext.tsv, the pass-A/pass-B reconciled transcription
+(tools/reconcile_passes.py plus this worker's own image check -- see NOTES.md).
+
+For ctpath != passA.tsv, k_gloss per run is NOT taken from that run's raw gloss_as_printed word count -- an
+earlier version of this edit tried that and it roughly doubled the control's average key size (30 -> ~81-87),
+because ciphertext.tsv's gloss field, unlike key_gloss.tsv, includes gloss text passA's own notes explicitly
+flagged as NOT confidently mapped per token ("sparse/mismatched, no confident per-token mapping attempted") --
+counting it as revealed gave the control a bigger, better key than the real pass actually built, exactly the
+un-matched-design failure CLAUDE.md rule 3 warns against. Instead: the set of ciphertext.tsv token positions
+counted as "glossed" is the ORIGINAL passA.tsv glossed-position set (first k tokens of each passA.tsv run, k from
+key_gloss.tsv's source_run counts -- the same method the passA.tsv branch below uses) projected onto ciphertext.tsv
+via the same Needleman-Wunsch alignment used to build ciphertext.tsv itself (see build script referenced in
+NOTES.md), after stripping marks and normalizing symbol labels (Th/Ph -> [circle-dot]/[phi-symbol]) on both sides.
+A ciphertext.tsv token that aligns 1:1 to a "glossed" passA.tsv token inherits that status; every token that is
+NEW relative to passA.tsv (the recovered missing line, the "17", the end-of-page "Ph"+"47" -- i.e. every position
+pass A simply never transcribed) is counted as UNGLOSSED for this purpose. This deliberately does not credit the
+control with any gloss the reconciliation itself uncovered, so the reported control number is, if anything,
+conservative (a lower bound on how much a correctly-sized gloss-reveal profile could achieve by chance).
 """
 import argparse, gzip, random, re, sys, os, collections
 
@@ -20,11 +40,13 @@ def strip_mark(tok):
     return re.sub(r'[\*\^`\'´ˇ¨=]+$', '', tok)
 
 
-def real_run_profile():
-    """(run_id, n_tokens) for every run in passA.tsv, and k_gloss (count of key_gloss.tsv rows whose
-    source_run is this run or a run merged into the same gloss group) for each."""
+def norm_sym(tok):
+    return {'Th': '[circle-dot]', 'Ph': '[phi-symbol]'}.get(tok, tok)
+
+
+def load_tsv_runs(path):
     runs = []
-    with open(PASSA) as f:
+    with open(path) as f:
         header = None
         for line in f:
             if line.startswith('#') or not line.strip():
@@ -34,23 +56,79 @@ def real_run_profile():
                 header = row
                 continue
             d = dict(zip(header, row))
-            runs.append((d['run_id'], len(d['tokens'].split())))
+            if d.get('run_id') == 'run_id':
+                continue
+            runs.append(d)
+    return runs
+
+
+def nw(x, y):
+    """Needleman-Wunsch alignment, identical to tools/reconcile_passes.py's nw(): list of (i, j) pairs, None
+    for a gap on that side."""
+    n, m = len(x), len(y)
+    S = [[0] * (m + 1) for _ in range(n + 1)]
+    for i in range(1, n + 1):
+        S[i][0] = -i
+    for j in range(1, m + 1):
+        S[0][j] = -j
+    for i in range(1, n + 1):
+        for j in range(1, m + 1):
+            S[i][j] = max(S[i - 1][j - 1] + (1 if x[i - 1] == y[j - 1] else -1), S[i - 1][j] - 1, S[i][j - 1] - 1)
+    i, j, path = n, m, []
+    while i or j:
+        if i and j and S[i][j] == S[i - 1][j - 1] + (1 if x[i - 1] == y[j - 1] else -1):
+            path.append((i - 1, j - 1)); i -= 1; j -= 1
+        elif i and S[i][j] == S[i - 1][j] - 1:
+            path.append((i - 1, None)); i -= 1
+        else:
+            path.append((None, j - 1)); j -= 1
+    return path[::-1]
+
+
+def passA_glossed_positions():
+    """Boolean list, one per passA.tsv token in reading order: True if that position is among the first k_gloss
+    tokens of its run (k_gloss from key_gloss.tsv's source_run counts -- the original TX-BARRT method)."""
+    runs = load_tsv_runs(PASSA)
     counts = collections.Counter()
-    with open(KEYGLOSS) as f:
-        header = None
-        for line in f:
-            if line.startswith('#') or not line.strip():
-                continue
-            row = line.rstrip('\n').split('\t')
-            if header is None:
-                header = row
-                continue
-            d = dict(zip(header, row))
+    for d in load_tsv_runs(KEYGLOSS):
+        counts[d['source_run']] += 1
+    flags = []
+    for d in runs:
+        toks = d['tokens'].split()
+        k = min(counts.get(d['run_id'], 0), len(toks))
+        flags += [True] * k + [False] * (len(toks) - k)
+    return flags
+
+
+def real_run_profile(ctpath=PASSA):
+    """(run_id, n_tokens, k_gloss) for every run in ctpath. For ctpath == passA.tsv: k_gloss from key_gloss.tsv's
+    source_run counts (original TX-BARRT method, reproduces its numbers exactly). For any other ctpath (e.g.
+    ciphertext.tsv): k_gloss is the count of that run's tokens that align (NW, marks/symbol-labels stripped) to a
+    passA.tsv token flagged glossed by the method above -- see module docstring for why raw gloss-word-counting
+    was rejected."""
+    runs = load_tsv_runs(ctpath)
+    if os.path.abspath(ctpath) == os.path.abspath(PASSA):
+        counts = collections.Counter()
+        for d in load_tsv_runs(KEYGLOSS):
             counts[d['source_run']] += 1
+        return [(d['run_id'], len(d['tokens'].split()), min(counts.get(d['run_id'], 0), len(d['tokens'].split())))
+                for d in runs]
+
+    streamA = [norm_sym(strip_mark(t)) for d in load_tsv_runs(PASSA) for t in d['tokens'].split()]
+    glossedA = passA_glossed_positions()
+    streamB = [norm_sym(strip_mark(t)) for d in runs for t in d['tokens'].split()]
+    glossedB = [False] * len(streamB)
+    for i, j in nw(streamA, streamB):
+        if i is not None and j is not None and glossedA[i]:
+            glossedB[j] = True
+
     profile = []
-    for run_id, n in runs:
-        k = min(counts.get(run_id, 0), n)
-        profile.append((run_id, n, k))
+    pos = 0
+    for d in runs:
+        n = len(d['tokens'].split())
+        k = sum(1 for x in glossedB[pos:pos + n] if x)
+        profile.append((d['run_id'], n, k))
+        pos += n
     return profile
 
 
@@ -64,9 +142,9 @@ def load_words(n_needed):
     return words[:n_needed]
 
 
-def build_control(seed):
+def build_control(seed, ctpath=PASSA):
     rng = random.Random(seed)
-    profile = real_run_profile()
+    profile = real_run_profile(ctpath)
     total_n = sum(n for _, n, _ in profile)
     words = load_words(total_n)
 
@@ -144,8 +222,9 @@ def build_control(seed):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--seeds', type=int, default=5)
+    ap.add_argument('--ctpath', default=PASSA, help='passA.tsv (default) or a reconciled file such as ciphertext.tsv')
     args = ap.parse_args()
-    results = [build_control(seed) for seed in range(args.seeds)]
+    results = [build_control(seed, args.ctpath) for seed in range(args.seeds)]
     for i, r in enumerate(results):
         cov = 100 * r['read'] / r['total_tokens']
         sense = 100 * r['correct_new'] / r['new_covered'] if r['new_covered'] else float('nan')
