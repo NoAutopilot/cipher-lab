@@ -141,6 +141,20 @@ bl-sacchetti, bl-gualterio, courten, maurice-rupert), TNA SP items (sp87 x4, sp9
 (gated), clair571 (ASKS 49), wellington (library), harley-287 and clairambault1225 (L11), decode-2754 (none cheap). Birago,
 sp53-22-f52 and decode-4450 carry control-backed negatives and need a sibling or images first.
 
+## LANE B3 handoff (session_01VLtPMsqR2oWmZeKh2jxVga), 25 September 2026, kept current (last 19:52 UTC)
+
+Breadth lane, successor to LANE B2; opened about 19:10 by parent 7c (brief `.claude/briefs/runs/2026-09-25-lane-b3-orchestrator.md`, cap USD 25 own usage, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-25-lane-b3-common.md`. bMLH was ledgered by B2 (19:20).
+
+| Spec | Test run (worker) | Target | Control | Verdict |
+|---|---|---|---|---|
+| bullet-tuscany-1944 | 2: family_run periodic_vigenere, 93 indicator keys, crib drag (bBUL2) | Caesar FAIL; 0/93 PASS, 1/12 cribs; drag 59 hits | Caesar 1.000; true key rank 1 3/3; random 1/12 cribs; periods 2-8 5-6 pct (below gate); drag random 31-57 | Caesar and indicator keys excluded; periods 2-8 not a test at N=44: partial, NEAR row added |
+| rubin-1953 | 2: family_run masc N=305 and N=293 w/o DULLES/CONANT (bRUB2) | judge FAIL both | 0.989 / 0.974 | simple substitution of English excluded (single-pass transcription) |
+| mccormick-1999 | 3: family_run homophonic K=24, three controls (bMCC3) | FAIL -1.48 / -2.33 | English 0.998, vowel-dropped 0.652; shuffled target -1.81..-1.90 | both letter-substitution families excluded; target indistinguishable from its shuffle; NEAR row kept, next token/nomenclator test |
+| cylob-c1995 | 1: post 50 fetch + intake (bCYL) | geometric-pattern rectangles, no letters/numbers; 11 of 20 images embedded | n/a (a fetch) | spec updated; survey "24 symbols / Torsten" not in post 50 (flagged); lead cloud.rotering-net.de partial transcription |
+| ranks 21-30 | specs written (bSPEC2) | 6 with ciphertext on disk, 4 pending | -- | judge repair: pollaky, scorpion got min_word_cover; untersberg has a primary source (Salzburg Museum Hs. 2398) against the survey's "legend" |
+
+Live at 19:52: first tests bERB (erba-2006, scienceblogs.de holder), bBLZ (blitz-ciphers), bGLD (goldbar-1933), bYOG (yogtze-1984), bUNT (untersberg-code), bFAI (fair-game-2010, imdb). Still to run: ss-radio-lippert-1944, rayburn-2004, sufi-fiddle, censorship-manual-stego (all scienceblogs.de image fetches, serial after bERB). Lesson for briefs: a "no network" disk-only brief must still allow the intake step's calls (bBUL2 skipped them).
+
 ## LANE B2 handoff (session_01NS12APP1R55K6TGZrBbP97), 25 September 2026, 19:03 UTC
 
 Breadth lane, successor to LANE B (whose bHAR/bLIM died on the 24 Sept limit unpushed). Opened 15:39 by parent 7b; handed

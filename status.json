@@ -2171,10 +2171,10 @@
   },
   {
    "target": "mccormick-1999",
-   "title": "McCormick notes: masc excluded (test 2, controls 0.994/0.985, target FAIL on English and vowel-dropped English); still above every control on IC and n-gram cover",
-   "next": "homophonic family through family_run.py with the same controls (B3, $3)",
-   "lane": "B2",
-   "touched": "25 Sept 2026 19:08"
+   "title": "McCormick notes: masc and homophonic both excluded with passing controls (0.994/0.985; 0.998/0.652), but the target scores in the same band as its own shuffle",
+   "next": "token/nomenclator test (NCBE, -RSE family as code words) with a matched synthetic control (B3, 3 dollars)",
+   "lane": "B3",
+   "touched": "25 Sept 2026 19:50"
   },
   {
    "target": "antt-msliv0638-brochado-1712",
@@ -2182,6 +2182,13 @@
    "next": "more observations of the sparse codes from sibling letters under the same key",
    "lane": "ZX (owner account)",
    "touched": "25 Sept 2026 18:30"
+  },
+  {
+   "target": "bullet-tuscany-1944",
+   "title": "Bullet 1944: Caesar and 93 indicator-derived keys excluded with controls; periodic keys 2-8 untested (control 5-6 pct at N=44, below gate)",
+   "next": "identify the QM / 605YZ/FF indicator system from WW2 signals manuals, then test that system",
+   "lane": "B3",
+   "touched": "25 Sept 2026 19:50"
   }
  ]
 }
