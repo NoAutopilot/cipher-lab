@@ -33,8 +33,10 @@ folds, rolling QA; V6 closed 22:05, ledgered; Mercy 1648 is N3 after two audits,
 owner's JSTOR rows 80-83; the breakthrough-alert routine is on the owner account, asked by ROOM line 21:31); LANE B4 (Opus, cap $25, opened by 7d at 21:3x from the LANE B3 handoff; B3 closed 20:55, ledgered; brief
 .claude/briefs/runs/2026-09-25-lane-b4-orchestrator.md); LANE GOLD2 session_013JXDgLDkW2y5Ldi2gWzTkY (Fable, cap
 $120, standing lane on Koehler 1944 and Debosnys 1883, opened by 7d at 20:05 from the "LANE GOLD handoff" with the brief
-.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md; GOLD closed 19:57, ledgered); parent worker RETRO-APPLY-L session_018jVRWWFAwhnL8teJke1vX7 (Sonnet, cap $6, applying RETRO-2026-09-25l.md and the LEARN
-diffs; when done: ledger D, ASSIGNMENTS done line, archive; LEARN-3 and retro l are done and ledgered). Spawn every session with source_url and source_revision set
+.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md; GOLD closed 19:57, ledgered); parent worker PR-LAND session_01Ejqu6thJi7yhQfwsvet3ms (Sonnet, cap $3, landing the owner's local-runner PRs 13-15 and closing
+them; when done: ledger D, ASSIGNMENTS done line, archive). LANE B4 session_01V2WMavWGMeAUYELUpmyEcX (Opus, cap $25, at 250k:
+three last tests approved, then its handoff; no B5 until a scout re-rank). RETRO-APPLY-L, LEARN-3 and retro l are done and ledgered.
+KEYS.md is the credential register (tools/key_request.py, key_probe.py --sync in room.py --start); ASKS 62 and 63 are the owner's. Spawn every session with source_url and source_revision set
 explicitly: three workers created without them on 25 Sept stopped at their first turn with no repository in their context. The other account's
 parent is session_01FXDfYR3CvGk7tcid1Aav1n with lanes ZX and ZX2 (it took the CX/CX2 targets R6 had not claimed by
 19:00); it takes none of your targets and you take none of its; coordinate only through ROOM.md, STATUS.md and UPDATES.md.

@@ -1891,6 +1891,16 @@
       "line": "Partly legible Spanish under our key (the Elector of Brandenburg, three thousand infantry in two or three regiments, the Duchess of Chevreuse; the place name read as Cleves earlier rests on a glyph three blind passes read otherwise, R7-MREV 20:51). V6-MERCY 25 Sept 19:19 UTC: N3, key ours (AUDIT.md); second audit V6-MERCY2 20:39 kept N3; shuffled-stream control and blind eye-check done (R7); SO-MERCY-F22 queued.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/espagnol142-mercy-1648",
       "novelty": "N3"
+    },
+    {
+      "date": "25 Sept 2026",
+      "kind": "contribution",
+      "title": "BnF Clairambault 349 f.3, the Cardinal of Ferrara to Guise, 3/4 January 1557: cipher body aligned to its interlinear period decipherment and to the printed text",
+      "grade": "N0 (AUDIT.md, verifier V7-CL349, 25 Sept 2026 22:38 UTC); key period (BnF fr.20974 no.15, identified by Tomokiyo); text known (Guise, Memoires-journaux, Michaud-Poujoulat 1e ser. t.6 pp.238-239). Reading 1020 tokens H 29, C 260, M 611, I 98, U 22 (LANE ZX); rule-7 re-derivation PASS (ZX-RD349); judge FAIL -1.085 with the leaf's own gloss scoring -1.545 through the same judge, so the judge cannot decide here",
+      "line": "The ciphered part of the Cardinal of Ferrara's letter to Guise of 3/4 January 1557 was deciphered on the leaf itself by an interlinear contemporary hand, and the whole letter is printed in clear in Guise's Memoires-journaux (Michaud-Poujoulat 1e ser. t.6, pp.238-239), in the same volume an earlier check-solved sweep read at pp.316-320 and called not printed. Applying the period key of BnF fr.20974 no.15 regenerates it: a key-and-leaf alignment, not a decipherment. Class N0. The contribution is the machine-checkable transcription, key table and alignment in the folder (LANE ZX, owner account), and the correction to the check-solved verdict.",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair349-este-guise-1556",
+      "key": "period",
+      "text": "known"
     }
   ],
   "lanes": [

@@ -614,3 +614,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T23:00Z	session_01K4n8VHbDXGiaAwDk12dgrP	GOLD-K3 done $7.37 D-, archived by LANE GOLD2	B-prime-c cipher-side: vig control 76.9 vs target -3.498, beau 75.2 vs -3.518, both inside the ten-text band (-3.548/-3.531/-3.494), judge FAIL; variant c owed
 2026-09-25T23:01Z	session_01UBBcnhMmQEpPpdNQgDfsTE	GOLD-CONS3 consolidator cycle 3 (Fable, cap 15, 60 min)	koehler-1944 + debosnys-1883 top blocks, reserve decision (kaliningrad-2015), cycle-4 briefs	brief 2026-09-25-lane-gold-consolidator-c3.md
 2026-09-25T23:10Z	session_016mix2braGhxmwG75H3Sg5p	R8-DSN2 (Fable, cap 10)	Salviati non-vowel marks + run-edge word boundary (syllabary --param); brief 2026-09-25-lane-r8-dsn2-salviati-marks.md
+2026-09-25T23:10Z	session_018jVRWWFAwhnL8teJke1vX7	RETRO-APPLY-L done $2.32 D, archived	proposals 1,3,4 applied; 2 and LEARN items already applied by the other account
+2026-09-25T23:10Z	session_01Ejqu6thJi7yhQfwsvet3ms	PR-LAND (Sonnet, cap 3)	land local-runner PRs 13-15 (L10, L12, L3 reports), update LOCAL-QUEUE rows, close PRs
