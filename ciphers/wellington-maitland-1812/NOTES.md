@@ -214,6 +214,19 @@ Wesley 1764. **All fail**; best is Jones 1805 with a maximum residual of 54 page
 edition. Details, corrections and what remains in `DICTIONARY.md` section 8; raw output in
 `dictionary_tests_2026-09-20-hathitrust.txt`. Status unchanged: open; dictionary edition still unidentified.
 
+## Dictionary search, round 3, 25 Sept 2026
+
+Worker session (LANE YX YX-WMDICT). Tested every untested edition reachable from this environment: 2 new Fulton
+and Knight copies (1826, 1833) and 2 new Perry London settings (1777, and a second 1788 pagination) found via
+Open Library/Google Books and tested against `codebook.tsv` -- **all fail**, no constant offset. Confirmed by
+holding record (Open Library) that Scott's three printings (1786 Toronto, 1797 Harvard OCLC 82324728, 1799
+Dublin), Fulton and Knight's actual 1802 first edition, and any Dublin Entick reprint have **no digital copy
+anywhere searched** (HathiTrust Bibliographic API checked by OCLC and LCCN for the Scott 1797 copy: not held).
+Status unchanged: partial, dictionary edition still unidentified; the remaining candidates now need a library
+copy, not a further cloud search (Access playbook item 4). Fixed `tools/gbooks_search_within.py`'s per-word
+sleep (0.5s -> 1.5s) to meet the good-citizen host rule; it had been non-compliant since 19 Sept. Full detail,
+counts and request tallies in `DICTIONARY.md` "Round 3, 25 Sept 2026".
+
 ## Check-solved sweep, 20 Sept 2026
 
 Six independent search passes (check-solved skill), run before continuing the campaign, per CLAUDE.md rule 1.

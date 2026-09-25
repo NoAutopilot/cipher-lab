@@ -302,3 +302,73 @@ formats and the Entick 1782 page-image check of section 6 are unchanged.
 
 **Counts for this pass:** 19 volumes analysed, 2 unreadable through the API, 0 passes, 0 near misses (best: Jones 1805,
 max residual 54). Readings produced: none.
+
+## Round 3, 25 Sept 2026 (LANE YX worker YX-WMDICT)
+
+One round on the editions section 6/8 left untested, cheapest route first (Google Books search-within with
+`GOOGLE_BOOKS_KEY`, Internet Archive advancedsearch/djvu OCR, Open Library search for OCLC/holding records, then
+HathiTrust Bibliographic API by OCLC/LCCN). **Result: not found**; every new copy located this pass fails, and the
+Scott, Fulton and Knight 1802, and Jones 1800 editions the brief named remain undigitized anywhere found.
+
+### New copies located and tested (all fail)
+
+| edition | source | scans/pp | discriminators (scan/page; target in brackets) | verdict |
+|---|---|---|---|---|
+| Fulton and Knight, *A Dictionary of the English Language*, [Edinburgh?], 1833 | IA `adictionaryengl00kniggoog` | 497 scans | alphabet 66 [14], cipher 109 [79], morrow 256 [272], occupy 266 [288], south 341 [388], supply 354 [400], will 396 [434] | fail, no constant offset (differences run +52 to -38) |
+| Fulton and Knight, *A General Pronouncing and Explanatory Dictionary*, Edinburgh, Peter Hill, 1826 | IA `ageneralpronoun00kniggoog` | 454 scans | cipher 101 [79], can 91 [66], morrow 258 [272], occupy 269 [288], period 284 [308], quarter 308 [336], sea 334 [365], south 349 [388] | fail; same setting family as the 1814 printing already excluded (section 8, htid `hvd.hxihve`) |
+| Perry, *Royal Standard English Dictionary*, London, 1788 (a second, 520-page setting distinct from the 606-page octavo already tested, section 4) | Google Books `OpkRAAAAIAAJ` | 520 pp | theft 513 [405], youth 559 [438] | fail |
+| Perry, *Royal Standard English Dictionary*, London, 1777 | Google Books `PKQRAAAAIAAJ` | 506 pp | cipher 123 [79], theft 408 [405], youth 455 [438] | fail; theft/youth land close but cipher is 44 pages off, no constant offset |
+
+`tools/gbooks_search_within.py` and `tools/ia_djvu_headwords.py` used unmodified (no new option needed this round);
+`gbooks_search_within.py`'s per-word sleep was raised from 0.5s to 1.5s to meet the good-citizen rule (it had been
+querying books.google.com at 0.5s intervals, non-compliant; flagged and fixed, see NOTES.md).
+
+### Editions the brief named that still have no located digital copy
+
+- **Scott**, *A New Spelling, Pronouncing, and Explanatory Dictionary*, three editions found by holding record this
+  pass via Open Library (not found in the 19 Sept/20 Sept passes): 1786 (438 pp, Edinburgh/London, C. Elliot / G.G.J.
+  and J. Robinson, University of Toronto copy, `OL19659468M`), 1797 (440 pp, Edinburgh, W. Creech, OCLC 82324728,
+  Harvard copy, `OL62336566M`), 1799 (443 pp, Dublin, P. Wogan, Google catalogue record `gEBCnQEACAAJ`, already on
+  file). Checked this pass: HathiTrust Bibliographic API by OCLC 82324728 and by LCCN 10025951 both return
+  `{"records":{},"items":[]}` (not held); Internet Archive by creator and by the distinctive subtitle phrase
+  "spelling, pronouncing, and explanatory" (one hit, an unrelated 1818 children's theological dictionary); Google
+  Books by the same phrase (300 total results, the only editions in `ALL_PAGES` view are unrelated works from 1830
+  onward). No digital copy of any Scott printing exists in Google Books, Internet Archive or HathiTrust; a library
+  copy (Harvard or the University of Toronto for 1786/1797, Dublin holdings for 1799) is still the only route.
+- **Fulton and Knight**, 1802 first edition (420 pp, Edinburgh, Peter Hill; sold in London by Longman and Rees;
+  University of Toronto copy, Open Library `OL18902006M`) — the edition the brief names — has no digital copy
+  found: Internet Archive under this author holds only 1814, 1826 and 1833 (tested above, all fail), and none of
+  those three carries the 1802 pagination. Not in HathiTrust (section 8, unchanged).
+- **Jones**, *Sheridan Improved*, 1800 — no Open Library holding record found this pass (0 results); the only
+  trace anywhere remains the Google catalogue-only id `67V2tAEACAAJ` (840 pp octavo, already assessed section 8 as
+  an unlikely format, not a pocket book) with no page view.
+- **Dublin Entick reprints** — no Dublin-printed Entick located: Internet Archive title search for "entick dublin
+  / wogan / byrne" returns zero; a broad Open Library search for "Entick Spelling Dictionary" (17 editions) carries
+  no `publish_places` naming Dublin.
+- **London Entick, 1801-1811** — reconfirmed catalogue-only: 14 Google Books records for these years (`filter=full`
+  finds none of them; plain search finds all 14 as `NO_PAGES`), consistent with the 19 Sept finding of "about 90
+  records ... without page view"; no Internet Archive copy in this date range (the IA title search for "entick
+  spelling dictionary" returns only the five pre-1801 settings already tested).
+- **London Perry, other settings** — a broad Google Books sweep for "Royal Standard English Dictionary" (300 total
+  results reviewed) found only the two new 1777/1788 copies above beyond what section 4 already lists; no other
+  `ALL_PAGES` London Perry edition in the 1780-1812 range.
+
+### Counts for this pass
+
+| | |
+|---|---|
+| new digital copies located and tested | 4 (all fail) |
+| editions confirmed to have no located digital copy | Scott (3 printings), Fulton and Knight 1802, Jones 1800, Dublin Entick (any), London Entick 1801-1811 (14 catalogue records, none full-view) |
+| requests: books.google.com | 34 (Google Books search + search-within), 1.5s apart |
+| requests: archive.org | 11 (advancedsearch + djvu OCR), 1.5s apart |
+| requests: catalog.hathitrust.org (Bibliographic API) | 2, 1.5s apart |
+| requests: openlibrary.org | 8, 1.5s apart (not in the playbook's host table; treated at the same courtesy rate) |
+| passes | 0 |
+| readings produced | none |
+
+**Next step**, unchanged in kind from section 6: every edition still worth testing (Scott x3, Fulton and Knight
+1802, Dublin Entick, the 90-odd catalogue-only London Entick 1801-1811 records) needs a physical or HathiTrust-only
+copy this environment cannot reach; this is now a library/person task (Access playbook item 4), not a further cloud
+search. The miniature-format question (observation 3, section 1: about 24 entries per column, smaller than any
+12mo tested) is also unresolved and would narrow the search if pursued from a library catalogue by format rather
+than by title.

@@ -36,7 +36,7 @@ def main():
         for w in words:
             r = search_within(vid, w)
             print(f"  {w:12s}", r if r is not None else "ERR/blocked")
-            time.sleep(0.5)
+            time.sleep(1.5)
 
 
 if __name__ == "__main__":
