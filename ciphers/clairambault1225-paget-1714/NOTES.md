@@ -249,6 +249,29 @@ identified) is a second, single-instance crib from the same direct check. Both a
 internal crib the "align known plaintext to key" pattern in LESSONS.md wants; not decoded this pass (out of
 scope).
 
+## Content summary (from both passes' context notes; full detail in passA_context.md / passB_context.md)
+
+**Letter 1** (8 Apr 1714): Paget answers a letter of the 19th of the previous month; an "abbé Lomeliny/
+Lomellini" writing from Venice; negotiations over a share ("une portion") and an island's sale ("la vente
+de cette isle"); then, in plain French with no cipher at all (f62L-f64L), a long digression on Genoa/Italy
+politics (the France-Empire peace and whether it covers the King of Sicily) and the death and succession
+dispute of a rich Genoese banker, "le marquis Pallavicin[o]" (bastard son of Carlo Pallavicino); Paget's own
+request to be sent his "expeditions" so he can take up the Sardinia consulate (referencing an April 1712
+memoir on a consul's duties); closes naming the new vice-consul "Laugier de Toulon" (successor to "le Sr
+Aubert[i]", 5 months in post).
+
+**Letter 2** (28 Aug 1714): answers three letters of the 13th; the bulk of the letter (f65R-f66R, almost
+solid cipher) is a formal physical and character portrait of "la Princesse de Parme et ses 2 oncles" --
+both passes independently identify this as Elisabeth Farnese (matching birth year given in the text, "mil
+six cens quatre vingt douze" = 1692; explicitly glossed "pour Reyne d'Espagne"/"reconnoit déjà pour Reyne
+d'Espagne") -- consistent with her actual Sept 1714 proxy marriage to Philip V of Spain, about a month after
+this letter. Covers her height, complexion, temperament, total submission to her mother the reigning
+Duchess of Parma, the Farnese succession after the Duke's remarriage, and her uncles "le Prince Antoine [and
+François] de Parme". Useful as a crib: the birth year and the "Reyne d'Espagne" phrase are exact, checkable
+strings if a key is ever proposed.
+
+Not verified against any printed source this pass (rule 10 -- report only, no novelty classification).
+
 ## Next
 
 1. **Decode/key-recovery pass** (a solver session, not this worker): start from the confirmed cribs above --
@@ -261,3 +284,11 @@ scope).
 3. Old-series page-number identification (register search) from the earlier OX-PAG note is still open and
    unrelated to this pass's work.
 4. A verifier has not looked at this target; nothing here is claimed as new/unpublished/first (rule 10).
+5. Pass A flagged (passA_context.md) that several f66L cipher-group endings were recovered by reading a
+   sliver of the same truncated line bleeding into f66R.jpg's own left margin (page-scan overlap) rather
+   than from f66L directly -- worth a second look before trusting those specific digits. Also open: one
+   uncertain word on f66L ("Rousse", conf M, clashes with "blonde" two words earlier -- may be misread);
+   a likely scan-overlap duplicate between f61R's and f62R's opening lines (both transcribed literally,
+   not deduplicated, per rule 2); and the old crossed-out pagination sequence (739/741/743/745/747 on the
+   R images, then two readings on f65R/f66R that don't fit the expected +2 step -- at least one is
+   probably misread).
