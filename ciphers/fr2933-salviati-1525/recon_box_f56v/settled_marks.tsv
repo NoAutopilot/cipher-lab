@@ -1,0 +1,7 @@
+line	pos	code	marks	reason
+1	22	rz	~	recrop: faint rising flourish at stroke start matches A's ~ mark, not blank (B under-called it)
+2	9	e	#	recrop: clear double cross-hatch mark above the e-bowl matches B's # (per B)
+2	24	e	#	recrop: clear double cross-hatch mark above the e-bowl matches B's # (per B)
+3	16	e	+	recrop: single + cross visible, not a round dot (per B)
+5	22	bh	7	recrop: numeral 7 visible beside the stem, matches B (per B)
+7	21	e	#	recrop: clear double cross-hatch mark above the e-bowl matches B's # (per B)

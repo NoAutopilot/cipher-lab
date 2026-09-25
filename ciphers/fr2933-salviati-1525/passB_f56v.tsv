@@ -289,3 +289,224 @@ line	pos	code	marks	action	conf	note
 10	20	S7		confirm	H	clean 7-shaped sign, share 1.00
 10	21	#		confirm	H	clean double-barred cross, share 1.00
 10	22	Z	dot	confirm	H	clean Z shape with dot, share 1.00
+11	1	nt	dot|1	confirm	H	clean n+cross
+11	2	o.		confirm	H	clean ring-dot
+11	3	rz		confirm	H	clean lying-z
+11	4	_		confirm	M	blank/faint smudge, share 1.00
+11	5	tee		confirm	M	share 0.79 checked, small vertical+bar stem
+11	6	S7	#	confirm	H	clean 7-shape, # mark
+11	7	o.	dot	confirm	H	clean ring-dot
+11	8	y		correct	M	recrop shows a clean y right after o.; classifier's own guess was low-share _ (0.81)
+11	9	w		confirm	H	clean w
+11	10	a	1	confirm	H	clean bold a, 1 mark
+11	11	lam	1	confirm	H	clean lam, 1 mark
+11	12	dl		confirm	H	clean dl
+11	13	+		confirm	M	raw guess already +, cluster(f) disagreed; recrop confirms clean +
+11	14	y		confirm	M	share 0.84, clean y before plain stretch begins
+11	15	_		correct	M	recrop: plain cursive 'far[e]...' begins; classifier's own guess was low-share f (0.65)
+11	16	_		confirm	H	plain-cursive stretch continues ('fare quales')
+11	17	_		confirm	M	plain-cursive stretch continues, share 0.63
+11	18	_		correct	M	recrop: plain cursive 'quale[s]' continues; classifier's own guess was w (0.83)
+11	19	_		confirm	H	plain-cursive stretch continues
+11	20	_		correct	M	recrop: plain cursive word-ending; classifier's own guess was ch (0.62)
+12	1	_		confirm	H	recrop: clean plain cursive 'impresa con...'; classifier's own guess was w(0.84)
+12	2	_		correct	M	plain-cursive stretch continues; classifier's two signals disagreed (raw f 0.24 vs cluster Z), neither right
+12	3	_		confirm	H	plain-cursive stretch continues ('impresa'); classifier's own guess was tee(1.00) but this reads clearly as a plain letter in a legible word
+12	4	_		confirm	H	plain-cursive stretch continues, share 1.00
+12	5	_		confirm	H	plain-cursive stretch continues ('con'); classifier's own guess was N(1.00) but sits mid-word in 'impresa con'
+12	6	_		confirm	H	plain-cursive stretch continues, share 1.00
+12	7	_		confirm	M	plain-cursive stretch continues, share 0.42
+12	8	_		correct	M	recrop: plain cursive 'confederat[i]' continues (the loop resembles dl but is this word's cursive 'd'); classifier's own guess was dl(0.61)
+12	9	_		correct	M	plain-cursive stretch continues; classifier's own guess was lam(0.80) but sits mid-word
+12	10	_	1	confirm	H	plain-cursive stretch continues, share 1.00
+12	11	_		correct	M	plain-cursive stretch continues (word-final 't'-like letter); classifier's own guess was tee(1.00)
+12	12	_	1	confirm	M	plain-cursive stretch ends here, share 0.61, matches cluster _
+12	13	+	dot	confirm	M	cipher resumes: raw guess already + (0.80), recrop confirms clean +
+12	14	Lx		confirm	H	clean Lx
+12	15	bh		confirm	H	clean bh, dist 1.722
+12	16	o.		confirm	H	clean ring-dot
+12	17	S7		confirm	H	clean 7-shape
+12	18	y		confirm	H	clean y
+12	19	_		confirm	M	share 0.84, plain
+12	20	w		confirm	H	clean w
+12	21	o.		confirm	H	clean ring-dot
+12	22	eps		correct	M	recrop shows a clean two-bowl epsilon; classifier's own guess was plain _ (share 1.00), clearly wrong
+12	23	bh		confirm	H	clean bh, dist 2.067
+12	24	tee		confirm	H	clean tee
+12	25	f		confirm	H	clean f
+12	26	w		confirm	H	clean w
+12	27	bh		confirm	H	clean bh, dist 1.911
+13	1	_		confirm	H	plain, share 1.00
+13	2	phi		confirm	H	clean phi
+13	3	H	1|o	correct	M	split: box f56v_13_003 holds two signs stacked, H (marks 1|o, this row) above g (mark 7, see split row 3.5); classifier's whole-box guess was plain _ (share 0.61)
+13	3.5	g	7	correct	M	split: second (lower) sign in box f56v_13_003, a 9-loop g with a numeral-like flourish read as mark 7
+13	4	m	~	confirm	H	clean m, ~ mark
+13	5	S7		correct	M	split: box f56v_13_005 holds two signs stacked, S7 (this row) above g (see split row 5.5); classifier's guess was low-share y (0.43)
+13	5.5	g		correct	M	split: second (lower) sign in box f56v_13_005, a 9-loop g
+13	6	S		confirm	M	recrop confirms clean S, matching the raw guess despite cluster(g) disagreement, share 0.43
+13	7	nt		confirm	H	clean n+cross
+13	8	o.		confirm	H	clean ring-dot
+13	9	e	dot|#	confirm	H	clean looped-e, dot|# marks
+13	10	sq	?	confirm	M	share 0.61 checked, clean closed square box
+13	11	tee		confirm	H	clean tee
+13	12	H	1	confirm	H	clean H, 1 mark
+13	13	a	o	confirm	H	clean bold a, o mark
+13	14	S		confirm	H	clean S
+13	15	e	dot	confirm	H	clean looped-e, dot mark
+13	16	e		confirm	H	clean looped-e
+13	17	S7	dot	confirm	H	clean 7-shape, dot mark
+13	18	f		confirm	H	clean f
+13	19	w		confirm	H	clean w
+13	20	y		confirm	H	clean y
+13	21	y	~	correct	M	split: box f56v_13_021 (unusually tall, extends well above the line) holds two signs stacked, y (this row) above o. with a ~ mark (see split row 21.5); classifier's whole-box guess was plain _ (share 1.00)
+13	21.5	o.	~	correct	M	split: second (lower) sign in box f56v_13_021, a ring shape with a ~ tail/mark
+13	22	S7		confirm	H	clean 7-shape
+13	23	#		confirm	H	clean double-barred cross
+13	24	w		confirm	H	clean w
+14	1	]	o|o	confirm	H	clean square-open-left, o|o marks
+14	2	Lx		confirm	M	share 0.77, small Lx-like mark right after the ']' sign
+14	3	_		correct	M	recrop: plain cursive 'Puri' begins; classifier's own guess was p(1.00) but this starts a legible word
+14	4	_		confirm	H	plain-cursive stretch continues, share 1.00
+14	5	_		correct	M	plain-cursive stretch continues ('questo'); classifier's two signals disagreed (raw # 0.61 vs cluster Z)
+14	6	_		correct	M	plain-cursive stretch continues; classifier's own guess was w(0.84)
+14	7	_		confirm	H	recrop: clearly readable 'questo hanno detto...'
+14	8	_		correct	M	plain-cursive stretch continues ('hanno'); classifier's own guess was low-share L(0.41)
+14	9	_		confirm	H	plain-cursive stretch continues
+14	10	_		confirm	H	plain-cursive stretch continues
+14	11	_		confirm	M	plain-cursive stretch continues, share 0.65
+14	12	_		correct	M	plain-cursive stretch continues ('per'); classifier's own guess was S4(0.61)
+14	13	_		correct	M	recrop: clearly readable '...per ricordo et...'; classifier's own guess was m(1.00)
+14	14	_	dot	confirm	H	plain-cursive stretch continues
+14	15	_		confirm	H	plain-cursive stretch continues
+14	16	_		correct	M	'et' abbreviation ligature within plain text (resembles eps but is the plain-Italian 'et' mark here); classifier's own guess was eps(1.00)
+14	17	_		correct	M	second half of the 'et' ligature (resembles +); classifier's own guess was +(1.00)
+14	18	_		confirm	M	plain-cursive stretch continues, share 0.82
+14	19	_		confirm	M	plain-cursive stretch continues to end of line, share 0.61
+14	20	_		confirm	H	plain-cursive stretch continues
+14	21	_		correct	M	plain-cursive stretch continues; classifier's own guess was ch(0.61)
+14	22	_		correct	M	plain-cursive stretch continues, line-final; classifier's own guess was w(0.83)
+15	1	_		confirm	M	recrop: plain cursive '[g]lino metterlo...' begins, share 0.79
+15	2	_		correct	M	plain-cursive stretch continues; classifier's own guess was psi(1.00) but sits mid-word in 'glino'
+15	3	_		confirm	H	plain-cursive stretch continues ('metterlo')
+15	4	_		confirm	H	plain-cursive stretch continues, share 1.00
+15	5	_		confirm	H	plain-cursive stretch ends here, share 1.00
+15	6	Lx		confirm	M	cipher resumes: share 0.79, clean Lx
+15	7	+		confirm	M	share 0.60, clean +
+15	8	S7		confirm	H	clean 7-shape
+15	9	wd	#	confirm	H	clean wd, # mark
+15	10	bh		confirm	H	clean bh, dist 1.867
+15	11	y		confirm	H	clean y
+15	12	nt		confirm	M	share 0.82, clean n+cross
+15	13	bh		confirm	H	clean bh, dist 1.867
+15	14	w		confirm	H	clean w
+15	15	e	dot	confirm	H	clean looped-e, dot mark
+15	16	Lx		confirm	M	share 0.83, clean Lx
+15	17	dl		confirm	H	clean dl
+15	18	rz		confirm	M	share 0.58 checked, low wavy shape matches rz
+15	19	_		confirm	H	tiny stray stroke, share 1.00
+15	20	S		confirm	H	clean S
+15	21	_		confirm	M	share 0.62 checked, plain cursive letter shape (m/ni-like), line-final
+16	1	_		correct	M	whole line reads as plain cursive 'risponda la oppenione...'; classifier's own guess was S7(0.79)
+16	2	_		confirm	H	plain-cursive stretch continues
+16	3	_	dot	confirm	H	plain-cursive stretch continues
+16	4	_		correct	M	plain-cursive stretch continues; classifier's cluster guessed g (0.61)
+16	5	_		confirm	M	plain-cursive stretch continues, share 0.82
+16	6	_		confirm	M	plain-cursive stretch continues, share 0.82
+16	7	_		correct	M	plain-cursive stretch continues; classifier's own guess was N(1.00)
+16	8	_		confirm	H	plain-cursive stretch continues
+16	9	_		correct	M	plain-cursive stretch continues; classifier's own guess was p(1.00)
+16	10	_	dot	confirm	H	recrop: clearly readable 'f.s.s. La pri[ma]...', wide box spans several plain words
+16	11	_		correct	M	plain-cursive stretch continues; classifier's cluster guessed p (0.38)
+16	12	_		correct	M	plain-cursive stretch continues; classifier's own guess was S(1.00)
+16	13	_		confirm	H	plain-cursive stretch continues
+16	14	_		correct	M	plain-cursive stretch continues; classifier's own guess was v(0.40)
+16	15	_		correct	M	plain-cursive stretch continues; classifier's own guess was L(0.64)
+16	16	_		correct	M	plain-cursive stretch continues; classifier's own guess was N(1.00)
+16	17	_		confirm	H	plain-cursive stretch continues ('parte')
+16	18	_	dot	confirm	H	plain-cursive stretch continues
+16	19	_		correct	M	plain-cursive stretch continues; classifier's own guess was p(0.61)
+16	20	_		confirm	H	plain-cursive stretch continues
+16	21	_		correct	M	plain-cursive stretch continues; classifier's own guess was Z(0.57)
+16	22	_		confirm	M	plain-cursive stretch continues, share 0.60
+16	23	_		correct	M	plain-cursive stretch continues, line-final; classifier's own guess was g(0.56)
+16	24	_		confirm	H	plain-cursive stretch continues
+16	25	_		confirm	M	plain-cursive stretch ends line, share 0.59
+17	1	_		correct	M	whole line reads as plain cursive 'a questo secondo... bisognerà pensar il modo co[me]...'; classifier's own guess was N(1.00)
+17	2	_		correct	M	plain-cursive stretch continues; classifier's own guess was w(1.00)
+17	3	_		confirm	H	plain-cursive stretch continues
+17	4	_		confirm	H	plain-cursive stretch continues (wide box, several letters)
+17	5	_		correct	M	plain-cursive stretch continues; classifier's own guess was N(1.00)
+17	6	_		confirm	H	plain-cursive stretch continues
+17	7	_		confirm	M	plain-cursive stretch continues, share 0.55
+17	8	_		confirm	H	plain-cursive stretch continues
+17	9	_		correct	M	plain-cursive stretch continues; classifier's own guess was g(0.63)
+17	10	_		confirm	M	plain-cursive stretch continues, share 0.80
+17	11	_		correct	M	plain-cursive stretch continues; classifier's own guess was N(1.00)
+17	12	_		correct	M	plain-cursive stretch continues ('bisognerà'); classifier's own guess was p(1.00)
+17	13	_		confirm	M	plain-cursive stretch continues, share 0.59
+17	14	_		confirm	H	plain-cursive stretch continues
+17	15	_		confirm	H	plain-cursive stretch continues
+17	16	_		correct	M	plain-cursive stretch continues ('pensar'); classifier's cluster guessed p disagreeing with its own share 0.60
+17	17	_		correct	M	plain-cursive stretch continues; classifier's cluster guessed ch disagreeing with raw guess y (0.42)
+17	18	_	1	confirm	H	plain-cursive stretch continues ('il modo')
+17	19	_		confirm	M	plain-cursive stretch continues, share 0.79
+17	20	_		confirm	H	plain-cursive stretch continues
+17	21	_		confirm	H	plain-cursive stretch continues (wide box)
+17	22	_	dot	correct	M	plain-cursive stretch continues, line-final; classifier's two signals disagreed (raw lam 0.41 vs cluster y)
+17	23	_		correct	M	plain-cursive stretch ends line; classifier's cluster guessed p (0.58)
+18	1	_		correct	L	recrop: plain cursive 'habbj ad accociarsi Alt[re]...' begins; classifier's own guess was low-share _ (0.40), consistent
+18	2	_		confirm	H	plain-cursive stretch continues
+18	3	_	dot	confirm	H	plain-cursive stretch continues
+18	4	_	dot	confirm	M	plain-cursive stretch continues, share 0.41
+18	5	_		correct	M	plain-cursive stretch continues ('ad'); classifier's own guess was a(1.00) but sits mid-word
+18	6	_		confirm	H	plain-cursive stretch continues
+18	7	_		confirm	H	plain-cursive stretch continues
+18	8	_		confirm	M	plain-cursive stretch continues, share 0.82
+18	9	_		confirm	M	plain-cursive stretch continues, share 0.80
+18	10	_	dot	correct	M	plain-cursive stretch continues ('accociarsi'); classifier's own guess was m(0.82)
+18	11	_	dot	confirm	H	plain-cursive stretch continues
+18	12	_		confirm	H	plain-cursive stretch continues
+18	13	_		confirm	M	plain-cursive stretch continues ('Alt[re]'), share 0.38
+18	14	_		confirm	H	plain-cursive stretch ends here, share 1.00
+18	15	_		correct	M	recrop: still plain cursive continuing; classifier's own guess was S(0.62)
+18	16	_	dot	confirm	M	plain-cursive stretch continues, share 0.80
+18	17	_		correct	M	plain-cursive stretch continues; classifier's own guess was low-share m(0.40)
+18	18	_		correct	M	plain-cursive stretch ends; classifier's own guess was f(0.79)
+18	19	_	dot	correct	M	transition zone; classifier's own guess was low-share lam(0.60)
+18	20	S4		confirm	H	cipher resumes: clean '4'-with-foot shape, share 1.00
+18	21	sq		confirm	H	clean closed square box, share 0.82
+18	22	Lx		confirm	M	share 0.60, Lx-like mark between sq(21) and plain 'questa'(23)
+18	23	_	#	confirm	M	recrop: plain cursive 'questa' begins; tall box (h=98) with a # mark noted but the dominant content is the plain word
+18	24	_		correct	M	plain-cursive stretch continues ('questa'); classifier's two signals disagreed (raw lam 0.74 vs cluster dl)
+18	25	_		confirm	M	plain-cursive stretch continues ('mattina'), share 0.81
+18	26	_		confirm	H	plain-cursive stretch continues
+18	27	_		correct	M	recrop: clearly readable 'mattin[a]'; classifier's own guess was m(1.00)
+18	28	_		correct	M	plain-cursive stretch continues; classifier's two signals disagreed (raw _ 0.81 vs cluster Lx)
+18	29	_	dot	confirm	H	plain-cursive stretch ends line, share 1.00
+18	30	_		confirm	H	plain-cursive stretch ends line, share 1.00
+19	1	_		confirm	H	whole line reads as plain cursive 'è stato Come molto ad lungo... el gran Cancelliero et... habbiamo'
+19	2	_		correct	M	plain-cursive stretch continues; classifier's cluster guessed g (0.24)
+19	3	_		confirm	H	plain-cursive stretch continues
+19	4	_		confirm	M	plain-cursive stretch continues, share 0.43
+19	5	_		confirm	H	plain-cursive stretch continues
+19	6	_		correct	M	plain-cursive stretch continues; classifier's own guess was low-share Lx(0.42)
+19	7	_		confirm	H	plain-cursive stretch continues
+19	8	_		confirm	M	plain-cursive stretch continues, share 0.83
+19	9	_		confirm	H	plain-cursive stretch continues
+19	10	_		correct	M	plain-cursive stretch continues; classifier's own guess was g(0.62)
+19	11	_		confirm	M	plain-cursive stretch continues, share 0.82
+19	12	_		correct	M	plain-cursive stretch continues ('el gra[n]'); classifier's own guess was eps(1.00)
+19	13	_		confirm	M	plain-cursive stretch continues ('Cancelliero'), share 0.80
+19	14	_		correct	M	plain-cursive stretch continues; classifier's own guess was a(1.00)
+19	15	_	1	confirm	M	plain-cursive stretch continues, share 0.80
+19	16	_	1	correct	M	plain-cursive stretch continues; classifier's own guess was m(0.75)
+19	17	_		correct	M	plain-cursive stretch continues; classifier's cluster guessed w (0.41)
+19	18	_		confirm	M	plain-cursive stretch continues ('et'), share 0.41
+19	19	_		confirm	H	plain-cursive stretch continues
+19	20	_		confirm	M	plain-cursive stretch continues, share 0.45
+19	21	_		correct	M	plain-cursive stretch continues; classifier's own guess was eps(1.00)
+19	22	_		correct	M	plain-cursive stretch continues; classifier's own guess was +(1.00)
+19	23	_		confirm	H	recrop: clearly readable 'habbiamo'
+19	24	_		confirm	H	plain-cursive stretch continues
+19	25	_		confirm	H	plain-cursive stretch continues
+19	26	_	dot	confirm	H	plain-cursive stretch ends line
