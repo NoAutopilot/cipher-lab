@@ -265,3 +265,58 @@ the token at p3l1pos4 or the word "unresolved" -- all 8 phrases sit on other tok
 `pela memoria do`, `supprir/suprir o seu lugar`, `seu lugar junto com`), so section 5's search log and section 5(f)/
 (c)/(e)'s "no hits" results stand unchanged. Every class (N3/N3), safe sentence, unsafe sentence and search-log
 entry in sections 1-8 is otherwise left as LX-VER wrote it.
+
+## 10. Re-check: Textos Políticos (LX-ED, 25 Sept 2026)
+
+Intake-gate re-run (CLAUDE.md Pipeline note, 25 Sept 2026): the 24 Sept `open` verdict never read the sender-family
+edition (section 8 above), which `.claude/briefs/check-solved.md` makes `blocked`, not `open`. This session tried
+every route in the parent's brief, in order, to read *D. Rodrigo de Souza Coutinho, Textos Políticos, Económicos e
+Financeiros (1783-1811)* (ed. Mansuy-Diniz Silva, Banco de Portugal, 1993, 2 vols). **Result: still not read; every
+route failed.**
+
+1. **`tools/browser_fetch.js --binary` on the known copy, both volumes.** `ocpep-7_t1.pdf`: 3 attempts (the tool's
+   own retry loop, one call), all HTTP 403 with `content-type: text/html` (a Cloudflare/WAF challenge page, not a
+   PDF) -- a *real* headless Chromium, not curl, so this rules out a JS-challenge explanation; the proxy status log
+   (`__agentproxy/status`) recorded the same request as `connect_rejected`/"gateway answered 502 to CONNECT (policy
+   denial or upstream failure)" to a Cloudflare challenge host at 03:57:04 UTC, consistent with the block sitting in
+   front of the origin, not solvable by a browser. `ocpep-7_t2.pdf`: 1 attempt (`--retries 1`, after the volume-1
+   result made further retries pointless), same 403/text-html. Two requests total to `bportugal.pt`, spaced.
+2. **Banco de Portugal's own publications page** (`bportugal.pt/publications/banco-de-portugal/all/224`, the OCPEP
+   series listing) for an alternate link: HTTP 403 to curl, same host, not retried with the browser (host already
+   ruled unreachable by step 1's browser result on the same domain).
+3. **Wayback Machine CDX index** for the same PDF URL (the gap section 8 already named as the next step): failed
+   twice at the transport level, not a 403 -- `curl: (35) Recv failure: Connection reset by peer`, proxy log
+   `ws_closed_mid_exchange` on `web.archive.org:443` -- reproduced independently this session (the 24 Sept failure
+   was a different worker; this is a fresh confirmation the same host is unreachable through this session's proxy
+   too, not a one-off). One retry taken, per the good-citizen rule; not retried further.
+4. **Google Books.** The exact edition is indexed (`8lfDjgEACAAJ`, "Textos políticos, económicos e financeiros",
+   1993) but `NO_PAGES` viewability -- no snippet or full-text search inside it is possible. A corpus-wide phrase
+   search for `"supprir o seu lugar"` returned 300 unrelated hits (the API does not enforce the quoted phrase, or
+   the exact string -- garbled by the M-grade token at that position -- simply is not printed anywhere Google
+   indexes); a second query, `"Sousa Coutinho" cifra chave segredo`, returned 0 items. Neither is a read of the
+   edition.
+5. **HathiTrust full-text search** (`babel.hathitrust.org/cgi/ls`): 403 to curl; one `browser_fetch.js` attempt
+   served Cloudflare's "Just a moment..." interstitial (title captured, 29 KB of challenge JS, no results page) --
+   matches CLAUDE.md's already-documented finding that the certificate fix does not clear this site's own
+   Cloudflare bot check. Not retried.
+6. **Internet Archive advancedsearch** for the title: `numFound: 0`. The edition is not on IA under this title.
+7. **WorldCat** (`search.worldcat.org/search?q=...`): loaded via the browser (200, real search-results title in
+   the page), and one facet row is visible, `Coutinho, Rodrigo De Sousa (1)`, confirming a WorldCat record exists
+   -- but the results themselves render client-side after the saved snapshot and no record/OCLC link was captured;
+   in any case a holding-library listing would only confirm existence, not let this session read or full-text
+   search the letter, so this route was not pursued further once the true blocker (need eyes on the actual pages)
+   was clear.
+
+Every route in the brief, plus the Wayback fallback section 8 flagged, is now exhausted from this cloud session.
+**Appended `LOCAL-QUEUE.tsv` row L10** (kind `edition-read`) asking the owner's local runner to open both PDFs
+from a home IP and search for the m0002 letter's distinctive decoded phrases and "cifra"/"chiffre"/"Diccionario"/
+"Vieyra"/the maço 86 shelfmark. No N-class changed by this session; AUDIT.md's existing N3/N3 verdicts (sections 1
+and 3) stand until L10 comes back or a new route is found. The verdict word in NOTES.md line 1 (`partial`) is
+unaffected -- this was a check-solved/novelty gap-closing pass, not a solve.
+
+Request counts, this pass (25 Sept 2026): `bportugal.pt` 3 (2 PDF fetches via browser_fetch.js, 1 publications-page
+curl, all 403), `web.archive.org` 1 (proxy-level failure, connection reset), `www.googleapis.com` 3 (1 volume
+lookup, 2 phrase searches), `babel.hathitrust.org` 2 (1 curl 403, 1 browser attempt served Cloudflare interstitial),
+`archive.org` 1 (advancedsearch), `search.worldcat.org` 1 (browser_fetch.js), WebSearch 3 queries. All sequential,
+>=1.5 s apart, no host hit more than 3 times, no 429 seen (403/Cloudflare/proxy-reject seen and logged per host,
+never retried past the one-retry limit).
