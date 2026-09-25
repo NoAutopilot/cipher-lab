@@ -455,3 +455,8 @@ keyed_running_key --corpus tools/data/de20 --param kcorpus=tools/data/nl_dev --p
 
 -- GOLD-K1 (Sonnet, session_01WDJiUb1ijocbB3N3LtsLWk), 25 Sept 2026
 
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 25 Sept 2026 20:47 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/de20,arith=vig,top=30,beam=300,order=6,spaces=1 | 1-3 | 0.078 (0.064-0.085) | not run (CONTROL BELOW GATE) | - | no (gate 0.5) | GOLD-K2 B' vig, German key |
