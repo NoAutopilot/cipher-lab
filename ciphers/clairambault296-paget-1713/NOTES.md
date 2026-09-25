@@ -409,3 +409,55 @@ point. No native-resolution leaf fetched (nothing pinned); probe images kept in 
 committed. `canvas_sweep.tsv` updated with all 133 new rows (plus 6 rows recording the unresolved canvases).
 Combined lane total this session: 53 (clair1161) + 161 (this target) = 214 of the 220-request cap -- the
 reason this pass stopped at 261/316 rather than continuing to a full sweep.
+
+## ZX2-GAL2 (25 Sept 2026, LANE ZX2)
+
+Worker ZX2-GAL2 (Sonnet), separate job brief and fresh 220-request Gallica budget from ZX2-GAL above (that
+budget was for the combined clair1161 + this-target session; this is a new lane worker with its own cap of
+120 requests total across both of its two targets). `date -u` at start: 2026-09-25 20:28 UTC.
+
+Read exactly the 55 canvases ZX2-GAL left unresolved (49 never attempted, plus 17/64/126/170/246/249, six
+that had failed twice on connection resets) at 300px, one at a time, >=2s apart, UA `cipher-lab research
+script (contact via repository)`. **53 of 55 resolved** (52 on first attempt, 3 -- 98, 100, 120 -- recovered
+on the single permitted retry); **2 failed twice and were not retried further per the one-retry rule: canvas
+28 and canvas 36** (both `Connection reset by peer`, the same proxy-side transient already logged by
+worker ZX2-GAL and Y4b, not a Gallica 403/429/challenge -- none seen at any point this pass).
+
+**Eye-checked all 53: every one is printed matter, no manuscript, no cipher, no letter of any kind.** Canvas
+26/30 continue the Ordre du Saint-Esprit heraldic table (c22-39 run); 38/40 the "La Gloire du Valdegrace"
+pamphlet; 46/48/50 further verse/pamphlet leaves; 56-126 (17, 56, 58, 60, 64, 66, 68, 70, 76, 78, 80, 86, 88,
+90, 96, 98, 100, 106, 108, 110, 116, 118, 120, 126) all continue the "Dame de Sainte Laurence" legal-factum
+dossier already established by earlier passes (titled leaves seen: "PREMIER EXPLOIT", "TERMES DE REPLIQUE",
+"TERMES DU PROCEZ VERBAL", "REQUESTE DE PROVOST GENERAL", "FACTUM. POUR...", "PASSY-TROISVILLE"); 147 adjoins
+the St Fiacre pamphlet run; 154/164 continue pamphlet text; **170 is a second, earlier title page for
+"ORAISON FUNEBRE DE MARIE THERESE D'AUTRICHE...REYNE DE FRANCE ET DE NAVARRE"**, distinct from the c223-229
+occurrence of the same oration already logged -- this volume evidently binds more than one copy/edition of at
+least one of its pamphlets; 174/184/194/197/204/207/214/224/228/230 continue pamphlet text; 238 is a further
+title-style leaf; 240 is the title page "ORAISON FUNEBRE DE...FRANCOIS DE HARLAY, ARCHEVESQUE DE PARIS";
+246/249/258/268/270 continue pamphlet text; 260 is the title page "PROJET POUR LA CORRECTION DU DICTIONNAIRE
+HISTORIQUE DE M. MORERY" (Louis Moreri's dictionary), with 268 likely the same pamphlet continuing. Full
+per-canvas rows appended to `canvas_sweep.tsv` (the four stale "FAILED TWICE" rows for 17/64/126/170, now
+resolved, were removed and replaced with their real classification; 28/36 kept as `FAILED TWICE, not
+retried`).
+
+**Result: `canvas_sweep.tsv` now covers all 316 canvases of this ark exactly once** (verified: `seq 1 316`
+diffs clean against the sorted canvas column), of which **314 have been eye-checked and 2 (28, 36) remain
+unread** after one connection-reset retry each. The target letter, "Lettre en partie chiffrée de Paget" (14
+January 1713), was **not found in any of the 314 canvases checked, by this or any prior pass**. The only
+manuscript content anywhere in the volume remains the three short blocks already logged (f5 archivist's
+note, f282-283 a 1706 Forez nobility case, f306-313 provincial/naval correspondence dated April-August
+1713) -- none diplomatic, none dated January, none carrying a cipher. Canvases 28 and 36 sit inside the
+Ordre du Saint-Esprit heraldic-table run (flanked by confirmed-print 26/30 on one side and the rest of that
+same run on the other, per earlier passes' c22-39 finding), the same kind of well-established print zone as
+every other gap closed this pass, so they are low-probability but not eye-checked and should not be assumed
+clear.
+
+**Not pinned. This is effectively the whole digitised volume read** (314/316, the remaining 2 blocked only
+by a transient host reset, not a content gap): appended one sentence to ASKS.md row 51 saying so and that the
+Gallica copy does not appear to carry this letter.
+
+No leaf fetched at native resolution and no `images/` written for this target this pass (nothing pinned to
+capture). Requests this section: gallica.bnf.fr 61 (55 canvases attempted at 300px = 55 first-attempt
+requests; 5 needed a retry -- 98/100/120 recovered, 28/36 did not -- = 5 more; plus 1 canvas, 26, fetched as
+an initial connectivity check before the scripted run, 1 first attempt + 1 retry = 2 more), all >=2s apart,
+one retry per failed URL, no 403/429/altcha seen at any point. No other host. No subagents.

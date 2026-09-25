@@ -137,7 +137,6 @@ canvas	class	note
 12	print	printed pamphlet text continues
 14	print	printed pamphlet text
 16	print	printed pamphlet text
-17	FAILED TWICE, not retried (connection reset)	not read
 18	blank	near-blank leaf
 19	blank	blank leaves
 20	blank	blank leaf, faint printed impression showing through from facing leaf
@@ -158,7 +157,6 @@ canvas	class	note
 57	print	printed pamphlet text continues
 59	print	printed pamphlet text continues
 62	print	printed pamphlet text continues
-64	FAILED TWICE, not retried (connection reset)	not read
 67	print	printed pamphlet text continues
 69	print	printed pamphlet text continues
 72	print	printed pamphlet text continues
@@ -183,7 +181,6 @@ canvas	class	note
 119	print	printed pamphlet text continues
 122	print	printed pamphlet "OBJECTIONS OU REPONSES du Sieur Fabricant"
 124	print	printed pamphlet text continues
-126	FAILED TWICE, not retried (connection reset)	not read
 127	print	printed pamphlet text continues
 128	print	printed pamphlet text continues
 129	print	printed pamphlet text continues
@@ -208,7 +205,6 @@ canvas	class	note
 166	print	printed pamphlet "EXTRAIT DU PARLEMENT" / engraved plate
 167	blank	near-blank/faint leaves
 169	print	printed "DECLARATION DU ROY" text
-170	FAILED TWICE, not retried (connection reset)	not read
 172	print	printed pamphlet text continues
 173	print	printed pamphlet text continues
 176	print	printed pamphlet "REQUESTE" text
@@ -264,3 +260,58 @@ canvas	class	note
 272	print	printed "DISCOURS AU PARLEMENT / A LA REPUBLIQUE DE VENISE" text
 274	print	printed pamphlet "TRAICTIER" text continues
 285	print	printed verse text (Latin/French)
+26	print	heraldic table of Ordre du Saint-Esprit chapter members continues (c22-39 run)
+28	FAILED TWICE, not retried (connection reset)	not read
+30	print	heraldic table continues, engraved blazon/seal
+36	FAILED TWICE, not retried (connection reset)	not read
+38	print	near-blank pamphlet leaves, transition before "La Gloire du Valdegrace"
+40	print	printed title page "LA GLOIRE DU VALDEGRACE" (A Paris imprint)
+46	print	printed verse pamphlet text continues
+48	print	printed verse pamphlet text continues
+50	print	printed title page "OBSERVATIONS POUR MESSIRE..." pamphlet
+56	print	printed factum/legal text continues (Dame de Sainte Laurence dossier)
+58	print	printed legal text continues
+60	print	printed legal text continues
+66	print	printed legal text continues
+68	print	printed legal text continues
+70	print	printed legal text continues
+76	print	printed legal text continues
+78	print	printed legal text continues, water-stained margin
+80	print	printed legal text continues
+86	print	printed legal text continues
+88	print	printed legal text continues
+90	print	printed legal text, "PREMIER EXPLOIT" heading visible
+96	print	printed legal text continues
+98	print	printed legal text, "TERMES DE REPLIQUE" heading visible
+100	print	printed legal text, "TERMES DU PROCEZ VERBAL"/"TERMES DES EXPLOITS" headings visible
+106	print	printed legal text continues
+108	print	printed legal text, "REQUESTE DE PROVOST GENERAL" heading visible
+110	print	printed legal text, "REQUESTE" heading visible
+116	print	printed legal text continues
+118	print	printed title page "FACTUM. POUR..." (A Paris imprint)
+120	print	printed legal text continues
+126	print	printed legal text continues ("PASSY-TROISVILLE" heading visible)
+147	print	printed pamphlet, "PANEGYRIQUE" heading visible (adjoins the St Fiacre run c150-163)
+154	print	printed pamphlet text continues
+164	print	printed pamphlet text continues
+170	print	printed title page "ORAISON FUNEBRE DE MARIE THERESE D'AUTRICHE...REYNE DE FRANCE ET DE NAVARRE" -- a separate, earlier occurrence of this oration title from the c223-229 block already logged (this volume evidently binds more than one edition/copy)
+174	print	printed oration text continues
+184	print	printed oration text continues
+194	print	printed pamphlet text continues
+197	print	printed pamphlet text continues
+204	print	printed pamphlet text continues
+207	print	printed pamphlet text continues
+214	print	printed pamphlet text continues
+224	print	printed pamphlet text continues
+228	print	printed pamphlet text continues
+230	print	printed pamphlet text continues
+238	print	printed title page, "EXTRAIT DU REGISTRE DU..." facing leaf
+240	print	printed title page "ORAISON FUNEBRE DE...FRANCOIS DE HARLAY, ARCHEVESQUE DE PARIS" (A Paris imprint)
+246	print	printed pamphlet text continues
+249	print	printed pamphlet text continues
+258	print	printed pamphlet text continues
+260	print	printed title page "PROJET POUR LA CORRECTION DU DICTIONNAIRE HISTORIQUE DE M. MORERY" (Louis Moreri's dictionary)
+268	print	printed pamphlet text continues, likely the same "Projet...Dictionnaire Historique" pamphlet as c260
+270	print	printed pamphlet text continues
+17	print	printed pamphlet text continues
+64	print	printed legal text continues
