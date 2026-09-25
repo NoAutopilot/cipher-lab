@@ -575,3 +575,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T21:28Z	session_01ANaWjhm3ix6shRysby4hXb	bRAY done $2.72 D, archived	rayburn-2004 test 1: IC below both controls
 2026-09-25T21:28Z	session_01M9XHYBXkupfXbhK1kVhZLW	retrospective l done $0.08 X, archived	stopped on injection suspicion, no repo source; respawned
 2026-09-25T21:28Z	session_015aWAEGAyRXSR3wi3znjRd8	LEARN-2 done $0.13 X, archived	stopped, repo not present; respawned as LEARN-3
+2026-09-25T21:31Z	session_01V2WMavWGMeAUYELUpmyEcX	LANE B4 orchestrator (Opus, cap 25)	breadth: B3 successor queue; brief 2026-09-25-lane-b4-orchestrator.md
+2026-09-25T21:31Z	session_01KcXfAtaB23N8aGrxpkTVky	retrospective l, second attempt (Sonnet, cap 10)	source_url set; rows since retro k
+2026-09-25T21:31Z	session_017EMUc9dWLDu9DEQbJCXByH	LEARN-3 (Sonnet, cap 5)	source_url set; window since 17:18
