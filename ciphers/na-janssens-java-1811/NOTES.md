@@ -488,3 +488,186 @@ it is still the reading target, not a control, per the brief's own framing.
   -- a different correspondent/decipherer, out of this job's scope, flagged as a lead.
 - Leaves 1-179 and 218-233 remain only sparsely sampled; a further densified or exhaustive pass could still
   find a "Numero Un" decipherment or more key material.
+
+## VX-RD02C (final worker on this target, 25 Sept 2026)
+
+Job: `.claude/briefs/runs/2026-09-25-lane-vx-rd02c.md` + `-COMMON.md`. (1) decode the No.5 raw-cipher slip and
+cross-check word-for-word against `no5_plaintext.txt`, adding/correcting `key.tsv`; (2) fresh-instance
+re-derivation of the codes this added; (3) check whether leaf 208's "Vanteau" tail uses the same code, and if so
+transcribe it; (4) re-decode leaf 188, report coverage, judge, per-token counts, a French+English reading.
+
+### (1) No.5 raw-cipher slip vs the plain fair copy -- a genuine independent control
+
+`no5_cleancopy_passA.tsv`/`no5_cleancopy_passB.tsv` (the pasted clean-copy slip, leaves 210-211) agree on all 95
+codes with zero disagreements (`diff` on the code column: empty). Decoding that 95-code sequence against
+`key.tsv` **found 5 codes with no entry at all** -- `597, 748, 904, 456, 244` -- even though all five are read,
+clearly and in most cases by both independent human transcribers, in the very interlinear decipherment
+(`keysource_no5_passA/B.tsv`) that built `key.tsv`. Tracing why found a real bug in `scripts/build_key.py`'s
+merge, not a transcription gap:
+
+- **Code 597**: both passes read it as "expedition"/"expédition" (order 2) -- the *same word*, differing only by
+  an accent `build_key.py`'s `glossnorm()` doesn't fold. Because the strings differ, the merge scores this as a
+  disagreement (`pass_disagreements.tsv` line 22) and drops the code from `key.tsv` entirely, rather than
+  treating it as agreement or even flagging it M.
+- **Codes 748, 904, 456, 244**: the two interlinear passes gave genuinely different individual readings at
+  these four cells (`ns`/`ins`, `ï`/`î`, `rc`/`re`, `à`/`ci`) -- real reading disagreements, correctly logged to
+  `pass_disagreements.tsv`, but then **silently dropped from `key.tsv` rather than surfacing as grade M**,
+  because `build_key.py` only falls back to a shaky/uncertain bucket when a code has *no* clean occurrence
+  anywhere -- a disagreement with no fallback path at all is simply lost. (This is the same root cause, one
+  bug wider, as the 168/527 case below.)
+
+Aligning the decoded sequence word-by-word against `no5_plaintext.txt` (leaf 214's independent plain French fair
+copy of the same dispatch) resolves all five, using the words they complete:
+
+| code | resolved value | plaintext word it completes | evidence |
+|---|---|---|---|
+| 597 | expédition | "**Une expédition** forte de 71 voiles..." | both passes already agree; only the accent-fold dropped it |
+| 748 | ns | "nos **magasins**" (ma-ga-zi-**ns**) | pass A's "ns" (not pass B's "ins") gives the correct 8 letters |
+| 904 | i | "et **poivre**" (po-**i**-vr-e) | resolves the ï/î accent ambiguity to plain i |
+| 456 | re | "le Camp **retranché**" (**re**-tra-n-ché) | pass B's "re" (not pass A's "rc") -- pass B's own note had already guessed this |
+| 244 | ci | "une affaire **décisive**" (de-**ci**-si-vé) | pass B's "ci" (not pass A's "à"); "affaire" already has its own whole-word code (819), so 244 cannot also be part of "affaire" |
+
+All five added to `key.tsv` as grade **C** (per the brief: the plain-copy control corrects or adds, not merely
+"confirms" -- these five had no prior key.tsv entry at all). Decoding the full 95-code sequence against the
+corrected key now covers **95/95 codes (was 90/95)**, reading as continuous French that matches
+`no5_plaintext.txt` closely, with a handful of genuine **wording divergences** (not decode errors -- the fair
+copy is a paraphrase, not a verbatim transcript, and NOTES.md says so nowhere before this pass):
+
+- the cipher's "**une expédition ennemie** forte de..." vs the fair copy's "une expédition forte de..." -- the
+  fair copy drops "ennemie" (hostile/enemy), read cleanly and identically by both passes;
+- the cipher's "...les Troupes **à l'est** de la Ville" (code 190, the already-logged est/en homophone, reading
+  "est" here per both interlinear passes' own note "same code 190 as order 10 ('en'); reused for different
+  word") vs the fair copy's "**à l'Isle** de la Ville" -- "east of the town" vs "at/to the Isle of the town" is
+  a real wording difference, not a spelling one; flagged, not resolved, since key.tsv already carries both
+  variants of code 190 as a known homophone and this pass adds no new evidence either way;
+- "**nous avons** détruit" (fair copy) vs the coded "nous avoir" (code 1150, already logged
+  avoir/avons homophone) -- already-flagged conjugation homophone, this occurrence favours "avons";
+- "**ils** en probable..." (both interlinear passes, clean, code 900) vs the fair copy's singular "**Il** en
+  probable..." -- a real number disagreement (they/it), not resolved.
+
+No other position among the 95 contradicts `key.tsv`; every other already-M/homophone code that recurs in this
+sequence (190, 997, 738, 1150, 875, 1090) lands on the variant the plaintext favours at that spot, which is
+exactly what a homophone should do and adds no new fix.
+
+**Also re-applied a regression**: `key.tsv` codes 168 and 527 were still grade C (";" only), even though VX-RD02's
+own fresh-instance re-derivation section above already found and fixed this -- both codes have a clean ";"
+occurrence on one leaf *and* a genuine pass A ";" / pass B "j" disagreement on other leaves
+(`pass_disagreements.tsv` lines 9, 17), which the same `build_key.py` bug drops instead of surfacing. VX-RD02B's
+later rerun of `build_key.py` on the merged passes rebuilt `key.tsv` from scratch and silently lost the manual
+fix (the script has no memory of a hand edit). Re-applied here as grade M with the disagreement spelled out in
+`note`; flagging the underlying `build_key.py` bug (glossnorm doesn't fold accents; a disagreement is dropped
+outright rather than downgraded to M whenever the code has *any* clean occurrence elsewhere) for whoever next
+touches key-building, since it has now cost two separate fixes to two separate merges.
+
+### (2) Fresh-instance check of the five added codes
+
+A fresh Sonnet subagent was given only `no5_cleancopy_passA.tsv` (the bare order/code sequence, no gloss) and
+`no5_plaintext.txt` -- deliberately *not* the interlinear passes -- and asked to derive a word-by-word syllable
+segmentation from scratch. It built a 62-word/95-code budget that lines up end to end and independently landed
+code 547 on "Aoust" at both its occurrences (orders 17 and 95), a genuine structural cross-check that the overall
+segmentation scheme is sound. At the syllable level, though, it placed the five flagged codes differently
+(597="Ex-" not a whole word; 748="it" of "détruit", not "ns" of "magasins"; 904="Caf" of "Caffé", not "i" of
+"poivre"; 456="le", not "re" of "retranché"; 244="af" of "affaire", not "ci" of "décisive") -- **this worker
+does not adopt those values**: the subagent worked from word-counting alone, with no access to the actual
+period decipherment, whereas the values used above come directly from two independent human readings of the
+primary source (`keysource_no5_passA/B.tsv`) cross-checked against the plaintext, which is materially stronger
+evidence. Two of its five guesses (748, 244) are additionally impossible given the real order-indexed code
+sequence already on file (e.g. "affaire" at order 85 would double-code a word that already has its own single
+code, 819, at order 83) -- a check this worker made by hand against `no5_cleancopy_passA.tsv`'s real order
+column, which the subagent's word-budget approach did not use position-by-position. Recorded here as the
+required fresh-instance check, not as a reason to revert the five fixes.
+
+### (3) Leaf 208 ("Vanteau" tail): same code, cross-correspondent confirmation
+
+Leaf 208's left page (thumbnail/medium-res on disk; fetched hi-res this pass, `images/208_hi.jpg`,
+2 `service.archief.nl` requests) carries a 5-column numeric-code table, code above gloss, matching the same
+tabular layout NOTES.md already describes for leaf 199-200. Its top (clearest) row: codes 697, 168, 960, 225,
+204 gloss "ble/blé", ";", "(près" [bracketed with the row-2 code 195], "De", "Batavia". **Four of five are
+already in `key.tsv` from the Janssens dispatches and read the same way here**: 697="ble" (already M,
+corrected-cell-only), 168=";" (the homophone above), 225="De" (C), 204="Batavia" (C) -- confirmed by this
+worker's own read and independently by one blind Sonnet subagent given only the cropped image. **This settles
+the brief's question: yes, the same nomenclator is shared across correspondents in this archive series** (leaf
+208 ends "Signé Vanteau", not Janssens). `key.tsv`'s `pages` column for these four codes now also lists
+`208(Vanteau)`. One new code, **960 = "près"**, added at grade M (the row-2 code 195 is bracketed with it in the
+source, suggesting the gloss may span both cells; not resolved).
+
+**Not transcribed further**: everything below this top row is markedly fainter in the source -- confirmed
+genuinely faint (not a JPEG artefact) at full IIIF resolution by this worker and independently by the blind
+subagent, which called it "likely bleed-through or badly faded ink" and could not read it with confidence
+either. Whether the table is more decipherment text or (given codes 697/168/960/225/204 don't obviously read as
+a connected sentence in either row-major or column-major order, per the blind subagent's own phrase test) a
+nomenclator reference listing is **not established** by this pass -- flagged as a lead needing either a better
+scan (raking light, a conservator's read) or simply more visible rows than these ten cells give.
+
+### (4) Leaf 188 ("Numero Un") redecode
+
+`tools/decode_key.py ciphers/na-janssens-java-1811` (--check exits 0, reading is current):
+
+```
+tokens 163: H 0, C 52, S 0, M 24, I 0, U 87
+```
+
+Coverage: **76/163 tokens (46.6%)**, up from 71/163 (43.6%) before this pass -- a modest gain (+5 tokens: the
+five No.5 fixes above intersect leaf 188 at codes 456 x2, 748 x1, 904 x2; codes 597 and 244 do not occur on this
+leaf). The 168/527 M-downgrade (part of undoing the regression in (1)) moved 2 tokens from C to M without
+changing total coverage.
+
+`tools/judge_plaintext.py specs/na-janssens-java-1811.json --file reading.txt`:
+```
+FAIL language: score=-1.472, null_p99=-1.84, real_p05=-0.912, real_median=-0.785, mode=both, N=563
+ok   words: cover=0.78, min=0.3, real_text_median_cover=0.945
+FAIL - na-janssens-java-1811 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Reported as a **FAIL** per rule 7, same verdict as before this pass (53.4% of tokens are still `[?]` gaps,
+which is what the language check is sensitive to) -- word coverage moves 0.791 (VX-RD02) -> 0.803 (VX-RD02B) ->
+**0.78** this pass: a real drop, not a typo. `tools/judge_plaintext.py`'s `cover` metric is a greedy
+word-segmentation of the reading's raw letters, not grade-weighted, so the mechanism isn't the 168/527
+M-downgrade as such -- most likely the 5 newly-filled tokens sit next to `[?]` gaps in a way that locally
+breaks the greedy segmentation rather than extending a real word; not chased further this pass (small effect,
+well above the 0.3 floor either way, and not evidence the fixes in (1) are wrong -- they are grounded in the
+primary source, not in this metric). This remains a **partial cryptanalytic-adjacent decode, not a solved
+reading**: it stands or falls with `key.tsv`, itself grade C throughout (a period decipherment of other text
+in the same bundle).
+
+No new legible connected run emerged from this pass's five fixes (they land in already-gap-broken lines).
+Reading, [?] for unkeyed codes, French as decoded / English gloss of the clearest runs (unchanged from
+VX-RD02B's reading except the five newly-filled codes, none of which joins an existing run into a longer one):
+
+- Line 1: "...l'état..." -- the state/condition...
+- Line 2: "de [?] [?] en . [?] re [?] Sont e puis" -- ...is/are... then... (fragment, code 456="re" now filled
+  but isolated between gaps)
+- Line 6: "...reçu ; il..." -- ...received; he/it...
+- Line 7: "...qu'il [?] [?] le débarquer [?] [?] [?] de seules" -- ...that he/it [?] to disembark it [?] [?] [?]
+  of [alone/only]...
+- Line 12: "...tous [?] [?] l'ennemie" -- ...all [?] [?] the enemy [fem.]...
+- **Line 14: "[?] [?] ar ri vé a [929] peu vent [514] er"** = "...arrivé a [?] peu vent...er" -- ...arrived at
+  [?], little wind... -- still the clearest run on the leaf, echoing the arrival/wind theme common to No.2,
+  No.3 and No.5.
+
+Everything else remains too gap-broken (53.4% `[?]`) to paraphrase honestly as connected prose.
+
+### Hosts this pass
+
+`service.archief.nl`: 2 (invnr 12 item page for leaf 208's file id + the leaf 208 hi-res image fetch), both
+>=1.5s apart, both HTTP 200 -- 2 of the 6-request hard cap for this leaf. No other hosts. 2 Sonnet subagents
+(No.5 fresh-instance re-derivation; leaf 208 blind pass B), run in parallel, within the 2-at-once cap.
+
+## State at close (final worker, VX-RD02C, 25 Sept 2026)
+
+**Status: partial.** What is established: a 208-code (now 214) nomenclator, grade C throughout (a period
+decipherment of other text in the bundle, not a fair key table), built from four contemporary decipherment
+leaves (No.2, No.3, No.5) and now confirmed shared with a fifth correspondent's dispatch (leaf 208, signed
+Vanteau) via four cross-matching codes. Grade counts on the target leaf (188, "Numero Un"): of 163 tokens,
+**C 52, M 24, U 87** -- 46.6% coverage, up from 39.9% at the start of this lane's work on this target. The
+No.5 dispatch's independent plain-language fair copy (leaf 214) gave this target's first genuine
+cryptanalytic-independent control (as opposed to a same-decipherment self-check) and resolved 5 codes plus a
+2-code regression that a `build_key.py` bug had dropped twice. `tools/judge_plaintext.py` still FAILs language
+on leaf 188 (score -1.472 vs real_p05 -0.912) at this coverage -- expected with 53% gaps, not a claim this
+reading is right or wrong, per rule 7.
+
+**Single best next step for a future lane**: a full page-by-page read of the ~185 still-sparsely-sampled leaves
+of this 233-leaf bundle (1-179, 218-233) for a "Numero Un" decipherment -- leaf 188 is pure digits with zero
+gloss on the page itself, so it can only ever be read from outside key material (this bundle's own, or the
+leaf-208 Vanteau cluster's fuller table if a better scan resolves it), never from the leaf alone. A second-best,
+cheaper step: leaf 192 (the unread continuation of the No.2 gloss, flagged since VX-RD02) would likely add a
+handful more codes for free, no network needed.
