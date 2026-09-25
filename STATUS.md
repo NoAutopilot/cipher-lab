@@ -280,6 +280,33 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE CX2 handoff (session_018cUWVBDyZzw2sgLAmZKL75), 25 September 2026, 17:05 UTC
+
+Check-solved sweep, round 2. Pool: the YX triage's section D print-check campaigns (sp35, sp54, sp87 x4, sp90 x2,
+ra-karlxi) plus every copy-free triage target still failing tools/intake_gate_check.py. 21 targets, 10 Sonnet workers
+(briefs .claude/briefs/runs/2026-09-25-lane-cx2-{sp87a,sp87b,sp90,jac,nord,frawi,brit2,misc2,fix,bert}.md), USD 32.96,
+7-19 min each, none past its box; orchestrator about USD 3.60. Rate allowed throughout. Every target below now exits 0.
+
+| verdict | targets |
+|---|---|
+| open, handed to LANE R6 (ROOM 16:26 and 17:05) | sp87-chesterfield-1747, sp87-newcastle-1743, sp87-further-1712, sp87-brunswick-1759, sp90-raby-1704, sp90-raby-whitworth-1705, sp35-townshend-key-1719, sp54-maclean-1745, ra-karlxi-fullmakt-1677 (REQUEST stays Gated), destaing-gerard-1779, hellen-frederick-1752, berthier-napoleon-1812, maurice-rupert-1645, rah-xiquena-1868, decode-2754-bnf-baluze156-1636 |
+| partial, line-2 citation, handed to R6 | harley-287-1587, clairambault1225-paget-1714 (L11), wellington-maitland-1812 |
+| partial with intake blocked (LOCAL row) | pro3055-clinton-1779 (Saberton, Cornwallis Papers pt.11, L16), catokwacopa-1875 (newspaper issue, L13) |
+| found-solved | none. berthier tested: Chuquet's clear 22 Dec letters are not marked as sent in cipher, so the pairing is unconfirmed |
+
+Leads worth a worker: berthier (Vilcoq 1969 p.24 on Persee reproduces the whole cryptogram as a plate: transcription is
+copy-free, and Chuquet p.440's two clear letters of the same date are candidate cribs); maurice-rupert (BL Add MS 18982
+ff.95-96, same volume, 'partially ciphered (with deciphering)', BL offline); sp90-raby-1704 (BL Add MS 61137 f.41,
+Blenheim duplicate, catalogue only); sp87-brunswick (HMC 3rd Report, non-TNA Ferdinand-Holdernesse holding). The
+TNA SP items are digitised=false: their next step is a copy order, which is now allowed (stage 2 reached).
+Left in the triage and failing the gate: three DECODE-gated items (decode-1162, -1168, -2678) and thurloe-barriere
+(ZX). Open for the parent: (1) the 38 REQUEST.md targets in triage section D have never had a check-solved verdict,
+yet their copy orders are on the owner's card (Pipeline step 2); a CX3 sweep of them at about USD 3 per target
+would clear or kill those asks (asked 15:48, no answer); (2) tools/intake_gate_check.py passes an edition line saying
+"was not opened" (pro3055); (3) check-solved.md should say a worker who finds the clear text of a same-date letter
+runs the found-solved test itself (FRAWI did not). Running count passing the gate: 15 (YX+CX) + 20 (CX2) = 35.
+No live workers, no pending check-in.
+
 ## LANE YX handoff (session_01PHaEdHeQY2FtMHLo9yGeoe), 25 September 2026, 13:34 UTC
 
 Left-open copy-free targets. Opened 10:30 by the parent; closed at 13:34 because every session now reads `allowed_warning` on the seven-day window (BUDGETS.md scaling rule: no new workers anywhere). 16 Sonnet workers, USD 75.80 of worker usage, all ledgered and archived; orchestrator about USD 7.7. No live workers, no pending check-in. **No reading passed its judge; no AUDIT.md, no N-class, no second opinion this lane.**
