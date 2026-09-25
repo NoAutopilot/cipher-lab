@@ -1,0 +1,80 @@
+line	pos	code	marks	source	reason
+1	2	_		B	a of "ha", plain Italian cursive misread as N
+1	9	_		B	ama of "Callama", plain cursive misread as w
+1	16	Lx		B	X-cross-with-crossbar matches Lx (Λ with bar across right leg), not Z; low share (.43) already flagged this
+1	19	Z		B	bold curling "3"-like stroke matches Z, not nt; the real nt sign is the next box (20)
+1	22	#		B	double-barred cross mark sitting between S7(21) and e(23), read as blank ink; box is unusually tall (h=65), likely a mis-split fragment of the neighboring e's own # mark
+1	26	_		B	isolated bold flourished loop, doesn't match any atlas sign well (nearest classifier guess was Z at share .21); reads as an ordinary decorative capital letter, not a cipher glyph
+2	8	o.		B	clear ring-with-dot sign, misread as blank ink
+2	15	e	+	B	clear looped-e bowl with a + mark above it, not a w shape; low share (.41) already flagged this
+3	1	_		B	faint smudge/stain (paper damage, no ink), classifier's low-share (.60) "g" call was on noise, not a glyph
+3	9	a		B	box merges two stacked signs (h=58, unusually tall): this is the upper one, a bold cursive "a" (bowl+flourish), not Z
+3	9.5	sq		B	lower stacked sign in the same merged box: a clear closed square, matches sq atlas
+3	11	_		B	small hook with no crossbar; reads as the continuation/second arm of psi(10)'s tail, over-segmented into its own box, not a genuine f
+3	18	S7		B	clear 7-shape, misread as blank ink
+3	22	f		B	clear tall ascender with crossbar (f), misread as blank ink; sits right after psi(21)'s trailing arm
+4	1	S7	+	B	box is unusually tall (h=86) and holds two stacked S7 signs, not blank ink; this is the upper one, with a + mark above it
+4	1.5	S7		B	lower S7 sign in the same merged box
+4	3	_		B	small ring+diagonal ("ot"-mark-shaped) ink, likely spillover from box 2's ] mark; no n-hump visible, so not a genuine nt sign
+4	8	o.		B	unusually wide box (w=62) merges two signs: this is the first, a clear ring-with-dot (o.)
+4	8.5	nt		B	second sign in the same merged box: a clear n+crossbar
+4	11	v		B	single rounded hook, not a 3-humped m; closer to v. Low share (.40, cluster suggested Z) already flagged this box
+4	14	nt		B	clear n+crossbar shape, not the wavy w atlas pattern; low share (.63) already flagged this
+4	17	]		B	rounded, open-to-the-left bracket shape, not a 7; low share (.41) already flagged this
+4	18	S7		B	tall merged box (h=74): upper sign is a clear S7, not blank ink
+4	18.5	m		B	lower sign in the same merged box; reads as m with a trailing curl (possibly a y-like tail), kept as m
+5	8	o.		B	clear ring-with-dot sign, misread as blank ink
+5	17	dl		B	large box (w=59,h=55) holds a loop with a long curling tail, matching dl's own "long tilde tail" description as one sign; misread as blank ink
+5	24	_		B	part of legible plain word "stretto", misread as N
+7	2	_		B	archive-stamp texture (stippled rubber-stamp pattern), no pen ink
+7	4	_	dot	B	archive-stamp texture (printed stamp text, reads like "...TON..."), no pen ink
+7	16	U	1	B	rounded open loop with a rightward curling tail and a digit-like mark above (reads as "1", may be two digits "14"); doesn't cleanly match any exemplar -- closest family is U; share was low (.40), flagged uncertain
+7	30	e	#	B	clear looped-e with a # mark above, misread as L
+7	32	U		B	clean U-bracket shape, misread as N despite low share (.41)
+9	6	e	+	B	clear looped-e with a + mark above, misread as plain -- same e+mark pattern as line2 pos15
+9	14	nt		B	matches nt's cursive n-plus-cross shape; misread as plain (share .48)
+9	16	o.		B	clear ring-with-dot, misread as plain despite decent share (.79)
+9	17	bh		B	clear tall stem with hooked top, misread as plain despite share 1.00
+9	18	psi		B	matches psi's compound epsilon+y-tail shape closely (one box, not two glyphs); misread as plain (share .42) -- the psi/y confusable family named in the brief
+9	28	lam		B	thin diagonal stroke matches lam better than g; small box (w=18) makes this uncertain, share was .61
+11	8	_		B	flourish/abbreviation stroke after "besognu"; does not match an established sign shape well (low share .46), likely still the same plain phrase
+11	10	_		B	raised "n" suspension mark over a stroke, plain-cursive abbreviation misread as sign Z
+11	11	_		B	scribal "9"/con- suspension loop misread as sign g
+13	1	_		B	paragraph/initial mark before the flag crosses and colon, not a clean y
+13	2	_		B	first of two cross-shaped marginal flag marks ("+ +")
+13	3	_		B	second flag-mark cross
+13	7	_		B	in of "inteso"
+13	11	_		B	ello of "quello"
+13	12	_		B	ch of "che"
+13	14	_		B	qu of "qua[ndo/le]"
+13	21	_		B	mark/flourish after "scripto"
+13	24	_		B	q-like initial of a final short word, low share (.63) already flagged this
+13	25	_		B	flourish ending the line
+14	10	phi		B	clear circle-threaded-on-stem shape, matches the phi cluster (seen elsewhere on this leaf's lines), not bh; low share (.58) already flagged this
+14	23	dl		B	clear rounded "a"-like letter shape, not blank; closest established cluster is dl, low share (.61 on _) already flagged this as uncertain
+14	26	_		B	second flag-mark cross, followed by a colon
+14	27	_		B	A capital, start of a short annotation word
+14	29	_		B	loop/descender continuing the word, reads roughly "Adi" or "Adij" -- possible dateline-style annotation ("a di", "on the day")
+15	1	_		B	s of "sonr/sono" ("I am"), plain Italian cursive opening the line
+15	3	_		B	n of "sonr/sono", low share (.62) already flagged this
+15	4	_		B	final flourish/"r" of the same word
+15	5	_		B	v. abbreviation (v.s. = "vostra signoria", Your Lordship)
+15	6	_		B	. dot after v, low share (.60) already flagged this
+15	8	_		B	descender "p" of "per", low share (.62) already flagged this
+15	11	_		B	s of "sappia" ("[may] know"), low share (.60) already flagged this
+15	14	_		B	Tironian "et" ligature ("and")
+15	15	_		B	continuation of the "et" mark
+15	16	_		B	P capital of "Pensi" ("think")
+15	17	_		B	ensi body of "Pensi", low share (.62) already flagged this
+15	18	_		B	quello ("that"), q-loop start
+15	25	_		B	final "p[?]" word start at line end
+16	5	_		B	C of "Certo" ("certain"), misread as sign Lx despite high share
+16	6	_		B	er/"rt" tall ligature of "Certo", misread as sign H
+16	7	_		B	to ending of "Certo", misread as sign tee
+17	12	_		B	S of "Sopra" ("about/concerning"), misread as sign N
+17	18	_		B	m of "medesima" ("same"), coincides with cipher code m
+17	21	_		B	im continuing "medesima", low share (.60) already flagged this
+17	23	_		B	m of "materia" ("matter/subject"), coincides with cipher code S
+17	25	_		B	er of "materia", misread as sign N
+17	27	_		B	mi ("to me"), low share (.59) already flagged this
+19	27	_		B	cr of "credo" ("[I] believe"), misread as sign despite very low share (.40) already flagged this
