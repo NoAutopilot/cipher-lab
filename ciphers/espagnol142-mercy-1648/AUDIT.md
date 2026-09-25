@@ -302,3 +302,7 @@ archive.org ~19 (advancedsearch 9, metadata 5, djvu download 5); be-api.us.archi
 (keyed, >=3.2 s apart, no 429); data.htrc.illinois.edu 12; catalog.hathitrust.org 3; openlibrary.org 2;
 apw.digitale-sammlungen.de 2 (both 505); api.openalex.org 17; api.semanticscholar.org 6; api.crossref.org 5;
 api.archives-ouvertes.fr 5; persee.fr 3; richelieuletters.hypotheses.org 1. gallica.bnf.fr 0.
+
+## Post-audit reading change (logged by LANE V6 orchestrator, 25 Sept 2026 21:08 UTC)
+
+After both audits, LANE R7 ran two of the checks section 3 named as owed. (a) Shuffled-stream control: target -1154.3 vs full-shuffle mean -1488.5 (5 shuffles, -1474.3..-1505.6), line-shuffle -1484.4, matched control -1336.2 -- the sequence, not the letter frequencies, carries the gap (shuffle_control.md). (b) Blind re-transcription: 116/122 agree; three of the five 14-for-19 exceptions read 19 on every blind pass, including r14.7, so R7-MREV (5b08322) moved "Cleues" to "Eleues" (grades now S 496, M 26 of 522; judge FAIL -1.031, essentially unchanged). The Cleves name is therefore no longer part of the reading; read every mention of Cleves/Cleues above as the pre-correction text. The N3 class, key `ours`, is unchanged: novelty does not depend on that word. The safe sentence stands; do not name Cleves in any outward sentence.

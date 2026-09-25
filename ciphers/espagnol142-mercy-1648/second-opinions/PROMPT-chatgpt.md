@@ -1,3 +1,5 @@
+> **Correction before use (LANE V6, 25 Sept 2026 21:08 UTC):** after this prompt was written, a blind re-transcription (LANE R7, meye/README.md; R7-MREV 5b08322) read the glyph behind "CLEUES" as 19, not 14, on every blind pass, so the committed reading now has "ELEUES" there and the Cleves (Kleve) name is not supported. Treat every mention of Cleves below as an unconfirmed guess; Brandenburg, the three thousand infantry and Chevreuse stand as before.
+
 SECOND OPINION REQUEST, label SO-MERCY-F22
 
 We are an open cipher-research repository (github.com/NoAutopilot/cipher-lab). We have read, by our own cryptanalysis,
