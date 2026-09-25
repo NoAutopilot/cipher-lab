@@ -1895,3 +1895,69 @@ Grades: unchanged, since no ciphertext changed (f.67 on f.68r C 454 M 92; f.67 c
 `align_f67.py --check`, `read_f67.py --check` and `tools/decode_key.py . --config decode_f67.json --check` exit 0.
 Not checked: canvas 130's six 6s (suggestion: one region request on canvas 130 if a later worker needs 14/14).
 Requests: gallica.bnf.fr 3 (2 resets, 1 success). No subagents.
+
+## KX-COLB26: Mélanges de Colbert 26 part III (25 Sept 2026)
+
+LANE KX worker KX-COLB26, QUEUE row KX-01. Job: eye-check BnF Mélanges de Colbert 26 part III (Brienne's outgoing
+despatches, juillet-décembre 1661, "Hollande, Angleterre, Espagne, Italie, Turquie") for cipher, then check-solved
+any leaf found. No key applied (out of scope for this brief).
+
+**Ark correction.** QUEUE row KX-01 and this file's own "Sibling volumes" section (line ~1708) both give the ark as
+`btv1b955062`. That ark 400/500s on both the IIIF manifest and the item page (retried once each, per the good-citizen
+rule) — it is not a valid Gallica document ark. `cc955062` is the BnF finding-aid record id (`archivesetmanuscrits.
+bnf.fr/ark:/12148/cc955062`, `FRBNFEAD000095506`), not a Gallica ark either. The finding-aid page itself embeds the
+real Gallica ark: **`btv1b10035069t`** (confirmed: manifest fetches 200, 779 canvases, all labelled 'NP'). Whoever
+updates QUEUE.md/KEY-CROSSMATCH should correct the ark there.
+
+**Volume structure**, read off the finding aid (`archivesetmanuscrits.bnf.fr/ark:/12148/cc955062`) and confirmed by
+eye: "Papier. 66, 332 et 366 feuillets." — Part I = Coignet de la Thuillerie/Servien correspondence, 1644-1648, 66
+feuillets (canvas ~4-69 by eye); Part II = Brienne's own despatches "Tom. I", France/marine/Lorraine/Allemagne/
+Nord/Suisse, 332 feuillets, its own alphabetical index at canvas ~70-74 (table entries "R" through "V" seen at
+canvas 70, referencing the part's own internal pagination, e.g. "p.325"), content canvas ~75-404; **Part III**
+begins at **canvas 405** with its own title leaf, "Depesches de M. de Brienne, Tom. II, Concernant les affaires de
+Hollande, Angleterre, Espagne, Italie, Turquie. Depuis le commencement de juillet jusqu'à la fin de dec. 1661"
+(canvas 405-406, two near-identical drafts of the same title), followed by its own "Table des lettres contenus en
+ce Volume" (canvas 407-408), then the despatches proper from canvas ~409 (folio numbering restarts inside Part III;
+letters seen are addressed to Monsieur de Thou — the French resident at The Hague, matching the "Hollande" heading
+— dated 29 July and 13 Aug 1661 at canvas 415/425) through to the end of the volume at canvas 779 (back cover;
+last dated letter seen, canvas 770, is to "Roboly Marchand" at Constantinople, matching the volume's own
+"Turquie"/end-Dec-1661 close). Part III's own span is canvas 405-779 (375 canvases for a stated 366 feuillets,
+consistent with the title/table/cover overhead).
+
+**Eye-check.** IIIF `full/450,/0/native.jpg` thumbnails (below the brief's suggested ~1000px, chosen to keep the
+image-request and review cost down over ~100+ leaves; digit clusters remained visually distinguishable from cursive
+prose at this size in the one confirmed case found elsewhere in this volume, see below). Per the brief's sampling
+rule (366 feuillets > 250): every leaf of the first 40 canvases of part III (405-444) and every 5th canvas from 445
+to 779. **104 of 375 canvases checked** (39/40 of the first block — canvas 441 unfetched, two connection resets,
+one retry each per the good-citizen rule, not retried further; 65/68 of the every-5th sample — canvases 465, 470,
+485 unfetched, same reason).
+
+**Negative.** No leaf checked shows cipher — no numeral groups, no interlinear decipherment, no "en chiffre" or
+"déchiffré" marginal note. Every leaf sampled is plain French chancery cursive prose. This matches the brief's own
+honest prior ("outgoing despatch registers are usually minutes in clear"). Not exhaustive: 271 of 375 canvases in
+Part III were not opened (the un-sampled 4-in-5 leaves plus 4 connection failures), so a cipher passage on an
+unsampled leaf cannot be ruled out, only made unlikely by the sampling density used.
+
+Since no cipher was found, per the brief this stops here — no check-solved is run (step 3, applying only if cipher
+turns up). Kind: n/a (negative eye-check, not a reading).
+
+**Flag — cipher found in Part I, outside this brief's scope.** While resolving the ark (probing canvases 1, 4, 20,
+40, 60, 70, 75 on the corrected ark to locate the part boundaries before finding the finding-aid's own title pages),
+**canvas 20 (folio ~17 of Part I, the Coignet de la Thuillerie/Servien correspondence, 1644-1648, addressed from
+"Coppenhaghen"/Copenhagen, in the middle of a plain-French letter about the Westphalia plenipotentiaries)** shows a
+genuine cipher passage: numeral groups run inline with plain-text connective words, e.g. "...la Suede... 6 25 zz 11
+83 c 21 90 y 34 14 n° 65 f g... injurera par cette fortune quide 42 z gr m d 96 d 83 to 43 21 q q 21 49 21 32 c...
+o ne connoit de raison qui..." — the same nomenclator shape (numeral groups substituting for content words, syntax
+left in clear) as fr5160-letellier-1653's own key_1659 cipher. This is a **different correspondence** (La
+Thuillerie/Servien, Dutch Republic and Scandinavia, 1644-48) from KX-01's Brienne 1661 despatches, and outside this
+brief's scope (Part III only, no key work authorised); not eye-checked further, not check-solved, no novelty claim.
+Image kept: `colb26/f20_source.jpg` (900px). Flagged in ROOM.md for the lane orchestrator to route as a new
+candidate (own QUEUE row, own key-crossmatch check — key_1659/key_brienne_1647/key_brienden_1651 are Brienne's
+1650s-60s Secretary-of-State cipher and not necessarily the same nomenclator as this 1644-48 La Thuillerie/Servien
+one, so this needs its own key search, not an assumed match).
+
+Requests: gallica.bnf.fr ~150 (manifest fetches incl. the wrong-ark 500s, `archivesetmanuscrits.bnf.fr` finding-aid
+page, Gallica SRU queries used only to try to relocate the ark before the finding aid gave it directly, and ~146
+IIIF image fetches at 1.8s apart, one retry each on ~10 connection resets, all recovered except the 4 canvases named
+above); archivesetmanuscrits.bnf.fr 1. No DECODE, no credentials, no subagents (fetch/eye-check split across
+foreground calls and this worker's own background shell jobs, not subagents). Well under the $4 stall-alarm cap.

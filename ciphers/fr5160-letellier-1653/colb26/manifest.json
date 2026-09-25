@@ -1,0 +1,15 @@
+{
+  "ark": "btv1b10035069t",
+  "source": "Gallica IIIF manifest, corrected from the archivesetmanuscrits.bnf.fr finding aid cc955062 (FRBNFEAD000095506); QUEUE.md/NOTES.md previously gave the wrong ark btv1b955062 (400/500, not a valid document ark)",
+  "canvases_total": 779,
+  "part_boundaries": {
+    "part_I": "Coignet de la Thuillerie / Abel Servien, 1644-1648, ~66 feuillets, canvas ~4-69",
+    "part_II": "Brienne despatches Tom.I (France/marine/Lorraine/Allemagne/Nord/Suisse), 1661, 332 feuillets, canvas ~70-404",
+    "part_III": "Brienne despatches Tom.II (Hollande/Angleterre/Espagne/Italie/Turquie), juillet-decembre 1661, 366 feuillets, canvas 405-779"
+  },
+  "this_job": "eye-check part III only (QUEUE row KX-01); part I/II not swept beyond the boundary probes",
+  "checked_canvases_part3": 104,
+  "total_canvases_part3": 375,
+  "cipher_found_in_part3": false,
+  "flag": "cipher found on canvas 20 (Part I, La Thuillerie/Servien 1644-48), outside this brief's scope -- see NOTES.md flag section and f20_source.jpg"
+}
