@@ -1,0 +1,42 @@
+{
+ "slug": "blitz-ciphers",
+ "rank": 24,
+ "schmeh_top50": 41,
+ "name": "Blitz ciphers (encrypted book pages allegedly found in a bombed East London cellar)",
+ "date": "book allegedly predates the 1940s; papers first shown to Nick Pelling 2011, five more pages 2014",
+ "language_candidates": [
+  "en?",
+  "unknown -- see authenticity dispute"
+ ],
+ "ciphertext": [
+  "page 7: CAV~MrMmEewmDFT / BedaDeBCMmazMCTfr*TRE / rBe.qREmdp*&Y&bzMDEw; / jes.q&pCM.Ydfejqz / IgRD.JWqEED.aECMqul / *YdqeMBC.epRBmLTT / CeMEDBjEYAeNFLQXXqf%REqA / DkC.eEBRAYrlTjJEYWFvI / Mf.XaKQjeCy*zjMLQd / D.eDEQjlJa.IMdT / Tgj.DdQl.GzHu.wAdzY / Dp.z*kECEzEkCwmedYT / CMETCzDkCzrYDE&RgdVX / CMExLRpde&TrYjDEweedDC / CTMEDkEk&wMjqEArVSSdK / DCTkEISABeDdylbIdRMEDY / gQl@AeqEM*jRSMYwrdeDl / *eeqElYeSME*uVKk.elKLm. / eEDELCYLNTgRm:Jd..zaDtdM / VVDdgEDIRCgjm..erzd / DEDedgLCvkEMjD.z*kEjMLglE / REdf*EDRJBBDba.KIZEZpH / Cj.fDnzjE.aET.lE / jeeSq.zAE",
+  "page 8: nedXYjEDbzqYaFIUS / tLpTQkEZBWJMHDAZE / KgRiBjGSbTJUCW / HIEnXciSgJIlaiA / kTQZYjYBjdDZl / HfsMCFHIcWTEDR / XYZqEGCpZ.QDJE / FIGqJbElDtUjS / MgHeEFjCHafXElb / dMEDSjFIDcjEj / eMDFZlpVnHeECe"
+ ],
+ "ciphertext_source": "Cipherbrain post 41 (Schmeh 2017, sources/schmeh/posts/41-blitz.txt), quoting Nick Pelling's own published partial transcription of pages 7 and 8 (ciphermysteries.com/2014/10/24/blitz-cipher-partial-transcription); only these two of the eight known page-images have ever been transcribed to text anywhere Schmeh or this pass found. Pages 1-6 remain image-only (files/2014/10/Blitz-Cipher-0{1..6}.jpg, not fetched this pass). Two-page post (Seite 1 von 2); fetched without the ?all=1 combined view, so a second page of comments may exist unread -- flagged, not followed up this pass.",
+ "alphabet": "mixed-case Latin letters plus punctuation/symbols (., ~, *, &, %, @, ;, :, -) within the ciphertext lines themselves -- not a clean letters-only cryptogram; case appears meaningful (both upper and lower forms of the same letter occur, e.g. 'C' and 'c', 'E' and 'e')",
+ "constraints": {
+  "num_known_pages": 8,
+  "num_transcribed_pages": 2,
+  "provenance": "an unknown finder allegedly discovered wooden boxes in an East London cellar wall exposed by WW2 bombing (the Blitz), containing encrypted sheets 'appearing to predate the 1940s'; a descendant of the finder showed 3 scans to Nick Pelling in 2011, 5 more in 2014",
+  "authenticity_dispute": "Nick Pelling himself, in the transcription post Schmeh quotes: the ciphertext 'seem[s] to combine the instance frequency counts of monoalphabetic ciphers with the disorder of polyalphabetic ciphers and the inscrutability of homophonic ciphers... having all three in play at the same time leaves me a bit suspicious'; reader Richard SantaColoma (quoted in full): 'Everything about this looks fake to me: the style of writing, the look of the ink and line, the aging of the paper... and the background story, all look like a modern attempt to fool'; provenance is unverifiable by Joe Nickell's own stated forgery-assessment criterion (current owner unknown, finder unknown, no proof the papers existed before 2011, exact finding location unknown) -- UNSOLVED-SURVEY.md row 24's 'suspected modern hoax' is well supported by this thread",
+  "structure_hint": "Pelling's own read (mixed monoalphabetic/polyalphabetic/homophonic character) suggests testing each hypothesis separately rather than assuming one classical family"
+ },
+ "cheap_tests_in_order": [
+  "1. Letter-frequency and index-of-coincidence profile of the two transcribed pages (folded to letters-only, case-sensitive and case-folded versions both) against English monoalphabetic, polyalphabetic (periodic IC scan p=2..20) and homophonic-substitution matched controls of the same N and K, following Pelling's own three-hypothesis framing rather than picking one family blind. Cost $1-2, Sonnet, disk-only (ciphertext already on file above, no fetch needed for this test).",
+  "2. Fetch the six untranscribed page images (Blitz-Cipher-0{1..6}.jpg, scienceblogs.de) and transcribe pages 1-6 blind, to check whether the same symbol/punctuation inventory and case pattern recurs across all eight pages (a real book cipher should be internally consistent; an ad hoc forgery might not be). Cost $2-3.",
+  "3. Compare the punctuation-character positions (., ~, *, &, %, @, ;, :, -) across lines for a positional pattern (e.g. marking word or sentence boundaries, or homophone-group boundaries) before assuming they are cipher content rather than structural markers. Cost $1."
+ ],
+ "matched_control": "not yet run; test 1 above specifies three matched-control designs (monoalphabetic, periodic-polyalphabetic, homophonic English, same N/K as the two transcribed pages)",
+ "cheap_test_done": [],
+ "judge": {
+  "letters_min": 130,
+  "letters_max": 340,
+  "control_samples": 200,
+  "note": "letters_min/max is a rough range across the two transcribed pages combined (page 7 approx 400 raw characters including punctuation, page 8 approx 150 -- letters-only count not yet computed, narrow once test 1 folds it); 'language' deliberately omitted"
+ },
+ "value": "low: a strong, multi-source authenticity dispute (Pelling's own structural suspicion, SantaColoma's direct forgery claim, Nickell-criterion provenance failure on every count) makes this more a forensic-authenticity question than a pure cryptanalytic one -- a fluent decode would be notable regardless, but absence of one proves little given only 2 of 8 pages are even transcribed",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open; suspected modern hoax per UNSOLVED-SURVEY.md row 24, strongly corroborated by this pass's full read of the post (Pelling's own hedged assessment, SantaColoma's direct claim, and the provenance gaps Schmeh himself lists)",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block omits 'language': Pelling's own read (a mix of monoalphabetic/polyalphabetic/homophonic character) means no single classical-cipher assumption is safe to bake into a judge yet -- test 1 should determine which family (if any) fits before a language-scored PASS/FAIL would mean anything, and even then the punctuation-heavy alphabet (constraints.alphabet) needs a folding convention decided first (are '.', '*', '&' etc. nulls, word breaks, or ciphertext content?).",
+ "written": "25 Sept 2026 by LANE B3 worker bSPEC2 (session_01Ni3jyRn6oo4AbfkpdbSNsd), claude-sonnet-5"
+}

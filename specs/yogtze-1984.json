@@ -1,0 +1,40 @@
+{
+ "slug": "yogtze-1984",
+ "rank": 26,
+ "schmeh_top50": 21,
+ "name": "YOG'TZE case (word written by Guenther Stoll shortly before his death)",
+ "date": "25-26 October 1984",
+ "language_candidates": [
+  "unknown -- 'there seems to be no language in the world that knows this word' per Schmeh"
+ ],
+ "ciphertext": [
+  "YOG'TZE"
+ ],
+ "ciphertext_source": "Cipherbrain post 21 (Schmeh 2017, sources/schmeh/posts/21-yogtze.txt), fetched 25 Sept 2026, read in full. The word itself, not an image of it, is the primary datum here: Stoll wrote it on paper, shouted 'Jetzt geht mir ein Licht auf!' ('Now I've got it!'), then immediately crossed it out. An image exists (files/2015/09/YOGTZE-Lego-1.png, a LEGO reconstruction of the scene from the 1985 TV show, not a photograph of the original paper) but is not the ciphertext itself.",
+ "alphabet": "6 Latin letters (Y O G T Z E) plus one apostrophe, no repeats among the 6 letters",
+ "constraints": {
+  "letters": 6,
+  "unicity_note": "per UNSOLVED-SURVEY.md row 26, 'below any unicity' -- at N=6 no statistical cryptanalysis of any kind can meaningfully distinguish a real key from chance; this item is a crib-search / lexical-association problem, not a cryptanalytic one",
+  "context": "Stoll, a German food engineer, had spoken of paranoid fears about unnamed people ('them') the evening before; hours later he was found severely injured near a crashed car about 100km from home, told witnesses of 'four men' with him, and died en route to hospital; police concluded he had been run over elsewhere while naked and then placed in the car -- a probable murder made to look like an accident, per the case's fame, though Schmeh's own stated view is 'an accident a lot more likely'",
+  "hypotheses_in_source": "(1) read with G as '6': 'YO6'TZE', a Romanian radio call sign (unverified); (2) the apostrophe matches Dutch licence-plate formatting; (3) read upside-down/mirrored: roughly '3ZL,90X' (no meaning proposed); (4) 'TZE' as an artificial-flavouring abbreviation used in yoghurt production ('YOG'), tying it to Stoll's own profession (food engineering); (5) an acrostic, the initials of six words. None confirmed; Schmeh lists these as 'many more possible explanations' without endorsing any.",
+  "no_known_language": "Schmeh's own summary line: no language is known to contain this word as written"
+ },
+ "cheap_tests_in_order": [
+  "1. Acrostic/initialism search: treat Y-O-G-T-Z-E as the initials of a 6-word German (and, as a control comparison, English) phrase Stoll might have blurted after 'now I've got it' -- search common German idioms/warning phrases with this initial pattern via a wordlist-based initials search (tools/judge_plaintext.py's initials_regex mechanism is built for exactly this). Cost $1, Sonnet.",
+  "2. Direct lexical/abbreviation search (grep, not cryptanalysis) for 'YOGTZE'/'YOG TZE'/'YOG'TZE' as a period (pre-1984) call sign, product code, chemical/flavouring abbreviation, or file/serial number, across the food-engineering and radio-callsign leads named in the source (hypotheses 1 and 4 above) using open bibliographic search (OpenAlex, Google Books) rather than assuming either is right. Cost $1.",
+  "3. Anagram enumeration of the 6 letters (720 permutations, small enough to brute-force) against German and English short-word/phrase lists, since an anagram is at least as plausible a priori as a substitution cipher at N=6. Cost under $1."
+ ],
+ "matched_control": "not applicable at this N -- CLAUDE.md rule 3's matched-control requirement is for cryptanalytic negatives; at N=6 ('below any unicity' per the survey row) no solver-vs-control comparison is meaningful, so none of the three tests above are cryptanalytic in that sense (they are lexical/crib searches, reported as hit/no-hit, not scored against a control)",
+ "cheap_test_done": [],
+ "judge": {
+  "letters_min": 6,
+  "letters_max": 6,
+  "control_samples": 200,
+  "note": "language deliberately omitted (schema_note): N=6 is far below any n-gram language model's useful floor, and the source states no known language contains this word as written -- a judge PASS/FAIL on language here would be noise, not signal"
+ },
+ "value": "low: extensively investigated for four decades by amateurs and at least one TV crime show with no result; N=6 puts this below what any of this repository's cryptanalytic tools can usefully test, so value here is entirely in the cheap lexical/crib searches (test 1-3), not a cryptanalytic campaign",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open; below any unicity per UNSOLVED-SURVEY.md row 26, consistent with this pass's read of the source (Schmeh: 'the meaning of YOG'TZE... remain[s] a mystery')",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done, reported hit/no-hit (no control applies at this N, see matched_control). judge block's language is deliberately left out: N=6 is uninformative for any n-gram-based check, and letters_min=letters_max=6 makes the length check trivially true for any 6-letter candidate -- this judge block mainly documents that a language gate cannot do useful work here, not that one has been wired.",
+ "written": "25 Sept 2026 by LANE B3 worker bSPEC2 (session_01Ni3jyRn6oo4AbfkpdbSNsd), claude-sonnet-5"
+}

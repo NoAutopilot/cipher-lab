@@ -1,0 +1,47 @@
+{
+ "slug": "censorship-manual-stego",
+ "rank": 30,
+ "schmeh_top50": 33,
+ "name": "Censorship manual steganograms (two known-plaintext hidden messages in a British WW2 censorship training manual)",
+ "date": "WW2 (manual's examples are training-era, exact date not given beyond WW2 in the source)",
+ "language_candidates": [
+  "en",
+  "de"
+ ],
+ "ciphertext_pending": "There is no letter/symbol ciphertext for this target at all -- it is image steganography with KNOWN plaintext and an UNKNOWN encoding location within two pictures. The manual itself (British National Archives KV-2-2424) is a downloadable PDF already linked from the post (files/2016/05/Censor-Manual-WW2.pdf, not fetched this pass -- a PDF, not one of the seven HTML posts this brief's host budget covered). Mystery 1's image (a fashion drawing, files/2015/05/Modezeichnung-1.png, plus a signature close-up files/2017/05/Fashion-Signature.png and a high-resolution photograph Schmeh took at the archive himself, files/2016/10/Fashion-Drawing-hires.jpg) and Mystery 2's image (a map, files/2015/05/Modezeichnung-3.png) are the actual artifacts to search; none fetched this pass. This is a picture case (CLAUDE.md rule 4): the first test is the fetch, not a solve.",
+ "alphabet": "not applicable -- the hidden channel is graphical (morse-code-like dot/dash patterns disguised in a drawing; a French-shorthand signature), not a letter cryptogram",
+ "constraints": {
+  "primary_source": "British National Archives, series KV-2-2424 (a WW2-era censorship training manual), scanned in full as a PDF and linked by Schmeh -- an unusually solid primary-source citation for this batch (an actual archive reference number, not a secondhand description)",
+  "mystery_1_fashion_drawing": {
+   "location": "page 14 of the manual",
+   "known_plaintext_part_a": "'Heavy reinforcements for the enemy expected hourly' (English) / 'Massive Feindverstärkungen werden stündlich erwartet' (German original, per the manual's own caption)",
+   "encoding_hypothesis_a": "the manual states this is encoded in Morse code, with the dots and dashes 'somehow hidden in the three ladies' depicted at the top of the drawing -- the specific graphical encoding (which visual feature = dot, which = dash) is what is unsolved",
+   "known_plaintext_part_b": "'Before Arras' (English) / German original not given by the manual, but 'Vor Arras' is Schmeh's own plausible reconstruction (Arras = a town in northern France)",
+   "encoding_hypothesis_b": "per the manual, hidden in the drawing's signature, written in French shorthand -- the specific shorthand system and how it renders 'Vor Arras'/'Before Arras' is unsolved",
+   "prior_attempts": "Schmeh personally visited the British National Archives in London and took high-resolution photographs of the original document specifically to attempt this; 'It didn't help' -- neither message has been located by him despite direct access to the primary artifact"
+  },
+  "mystery_2_map": {
+   "location": "page 17 of the manual",
+   "known_plaintext": "'Oil has arrived, everything is ready. Gustav available for the appointed day.' (English, per the manual's own translation); German original not given, Schmeh's own plausible reconstruction: 'Öl ist angekommen, alles ist fertig. Gustav hält sich am vereinbarten Tag bereit.'",
+   "encoding_hypothesis": "not detailed in the portion of the post fetched this pass (page 2 of a paginated post, ?all=1 not used) -- a map is described as containing the message; the specific graphical mechanism is presumably analogous to mystery 1's approach but not confirmed"
+  }
+ },
+ "cheap_tests_in_order": [
+  "1. Fetch the manual PDF (KV-2-2424, files/2016/05/Censor-Manual-WW2.pdf) and both mystery images at their best available resolution (the hi-res photo Schmeh took himself, files/2016/10/Fashion-Drawing-hires.jpg, for mystery 1) -- since KNOWN plaintext already exists for both mysteries, this is unusually tractable: the task is finding where in a specific, bounded image a specific, known short message is encoded, not blind cryptanalysis. Cost $2, Sonnet.",
+  "2. For mystery 1's Morse-code hypothesis: systematically test candidate visual features of the three ladies (hemlines, hair strands, dress-pattern dots/dashes, finger positions, eyelash counts -- any binary-countable feature) against the known 5-character-group Morse encoding of 'Heavy reinforcements for the enemy expected hourly' / 'Massive Feindverstärkungen werden stündlich erwartet', checking for a length/count match before attempting a full alignment. Cost $2-3.",
+  "3. For mystery 1's signature/French-shorthand hypothesis: since 'Before Arras'/'Vor Arras' is a short, specific known plaintext, compare the signature's stroke shapes against a reference French shorthand system (e.g. Duploye, Prevost-Delaunay, the systems in period use) rather than starting from an unidentified-script assumption. Cost $1-2. Test the Gustav map (mystery 2) analogously once its own encoding hypothesis is confirmed from the fetched manual text (test 1)."
+ ],
+ "matched_control": "not applicable in the usual cryptanalytic sense -- both mysteries have KNOWN plaintext (rule 3's 'matched control' machinery is for judging an unknown candidate plaintext against chance; here the plaintext is given and the open question is the visual encoding location/mechanism, a different kind of problem)",
+ "cheap_test_done": [],
+ "judge": {
+  "letters_min": 1,
+  "letters_max": 1,
+  "control_samples": 1,
+  "note": "judge block is a placeholder only, present so tools/judge_plaintext.py loads without a Python error; it does no real work here (schema_note)"
+ },
+ "value": "medium-high relative to this batch: both mysteries have known plaintext AND a genuine primary-source archive citation (TNA KV-2-2424) AND a specific stated encoding mechanism (Morse-in-drawing, French-shorthand-in-signature) to test against -- this is a locate-the-encoding problem with strong constraints, not a blind cryptanalysis problem, which makes it unusually well-suited to a systematic image-feature search once the images are fetched",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open per UNSOLVED-SURVEY.md row 30 and this pass's read of the source; Schmeh's own direct archive visit and high-resolution photography did not resolve either mystery",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done. This target does not fit tools/judge_plaintext.py's model at all (it judges a candidate PLAINTEXT against a corpus; here the plaintext is already known and given, and the open question is a visual/graphical encoding location within an image) -- the judge block is a placeholder for schema compliance, not a meaningful gate for this target's actual problem. Post fetched without ?all=1 (single-page view); mystery 2's own encoding hypothesis and any further comment-thread detail may be on the unfetched second page -- flagged, not followed up this pass (host budget).",
+ "written": "25 Sept 2026 by LANE B3 worker bSPEC2 (session_01Ni3jyRn6oo4AbfkpdbSNsd), claude-sonnet-5"
+}

@@ -1,0 +1,47 @@
+{
+ "slug": "fair-game-2010",
+ "rank": 29,
+ "schmeh_top50": 36,
+ "name": "Fair Game end-credits code (yellow-marked letters in the 2010 film's end credits)",
+ "date": "film released 2010; mystery first reported to Schmeh by a reader in 2014",
+ "language_candidates": [
+  "en"
+ ],
+ "ciphertext": [
+  "CES?OAPCHFHTEOPISFMNADAMECAOREDATN",
+  "RAYUURNQWKNUFRCOJRWRMDGSEHUWTOAKRA"
+]
+,
+ "ciphertext_source": "Cipherbrain post 36 (Schmeh 2017, sources/schmeh/posts/36-fair-game.txt), fetched 25 Sept 2026, quoting the sequence as reported by the web forum AboveTopSecret (abovetopsecret.com/forum/thread833418/pg1) from the film's own end-credits screenshots (files/2014/10/Fair-Game.png, files/2014/10/Fair-Game-2.png -- not fetched this pass). The '?' at position 4 of line 1 marks a letter Schmeh/AboveTopSecret could not read because the surname it belongs to was itself redacted in the credits for a real person's privacy (see constraints.redaction_overlap) -- this is a genuine unknown, not a placeholder to be silently filled in (rule 2).",
+ "alphabet": "A-Z only, two lines of 34 characters each (line 1 has one unreadable position, so 33 known + 1 unknown)",
+ "constraints": {
+  "num_lines": 2,
+  "line_length": 34,
+  "source_film": "Fair Game (2010), directed by Doug Liman, starring Naomi Watts and Sean Penn, based on the Valerie Plame affair",
+  "marking_mechanism": "in the printed end credits, certain individual letters (not whole words) are highlighted in yellow; AboveTopSecret's sequence is the concatenation of those marked letters in credit-roll order",
+  "redaction_overlap": "some surnames in the credits are themselves blacked out/unreadable for legal reasons (the film depicts real people); the marked letter at line 1 position 4 falls inside one such redacted surname (belonging to a person named 'Hammad' per the post), so it is unknown which letter was actually marked there -- an unresolvable gap unless a clean, unredacted print or the original credit list can be found",
+  "frequency_analysis": "Schmeh publishes a letter-frequency chart of the 67 known marked letters (files/2015/07/Fair-Game-Frequencies.png, not fetched) and states 'the letter frequencies are consistent with a letter substitution' -- his own reading, not independently re-verified this pass",
+  "commenter_lead": "a commenter using the pseudonym 'Martin Halpin' (itself a fictional-character name from James Joyce's Finnegans Wake -- possibly a planted or joke identity) suggested: 'don't focus on the yellow letters, better take them as markers for the following letters' -- i.e. read the letter immediately AFTER each marked one, not the marked letter itself. Schmeh notes stylistic signs (word choices like 'kaprizieren') suggesting the commenter is not a native German speaker, and flags the possibility the film's own production company is behind the comment. Untested by Schmeh as of the post.",
+  "authenticity_note": "unlike several other items in this batch, there is no active forgery dispute here -- the marking is a real, photographable feature of the actual film credits; the open question is purely whether it encodes anything and if so what, not whether the artifact itself is genuine"
+ },
+ "cheap_tests_in_order": [
+  "1. Test the 'Martin Halpin' hypothesis directly and cheaply: this needs the ORIGINAL, unmarked credits text (which letter in the credits directly follows each marked one) rather than just the marked-letter sequence given here -- flag as needing the film's actual credit text (names/roles), not obtainable from this spec's ciphertext alone; try first against any published full credits list (IMDb full cast & crew) cross-referenced by position. Cost $1-2, Sonnet.",
+  "2. Simple substitution anneal of the 67-68 known letters (both lines pooled, and separately) against English, judged with a matched control (synthetic English monoalphabetic-substitution ciphertext at the same N/K, same solver) -- Schmeh's own frequency-chart claim ('consistent with a letter substitution') is a lead worth testing directly rather than taking at face value. Cost $2.",
+  "3. Treat the two 34-character lines as two independent short messages (rather than one 68-character message) in case they are unrelated per-line codes (e.g. two separate initials/acrostics), and re-run test 2's judge separately per line. Cost under $1 (reuses test 2's output)."
+ ],
+ "matched_control": "not yet run; test 2 above specifies the design (synthetic English monoalphabetic-substitution ciphertext, same N/K, same solver)",
+ "cheap_test_done": [],
+ "judge": {
+  "language": "en",
+  "letters_min": 65,
+  "letters_max": 69,
+  "min_word_cover": 0.6,
+  "control_samples": 200,
+  "note": "letters_min/max spans the redacted position (67 known + 1 unknown = 68, or 67 if that position is dropped entirely); a candidate decode should either treat the unknown position as a wildcard or be tested on the 67 known positions only"
+ },
+ "value": "medium: this is one of the few items in this batch with an actual letter-frequency claim already made by the source ('consistent with a letter substitution') and a specific, testable alternative-reading hypothesis (the Halpin comment) rather than pure speculation -- both are cheap to test and neither has been tried by Schmeh or (as far as this pass's search found) anyone else",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open; may not be a code per UNSOLVED-SURVEY.md row 29, but this pass's read of the source found two concrete, untested leads (frequency-substitution claim, Halpin's off-by-one hypothesis) that raise this above a pure 'may not exist' assessment",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. This is NOT one of CLAUDE.md rule 4's 'no ciphertext at all (film...)' cases despite being sourced from a film: unlike Untersberg's legend or the Sufi fiddle's unphotographed inscription, an actual letter sequence (AboveTopSecret's reading of the credits) is already transcribed and citable, so the first test is cryptanalytic, not a fetch/provenance check.",
+ "written": "25 Sept 2026 by LANE B3 worker bSPEC2 (session_01Ni3jyRn6oo4AbfkpdbSNsd), claude-sonnet-5"
+}

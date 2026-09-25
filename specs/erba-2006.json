@@ -1,0 +1,40 @@
+{
+ "slug": "erba-2006",
+ "rank": 21,
+ "schmeh_top50": 24,
+ "name": "Erba murder bible cryptogram (2013 encrypted message hidden in a bible by Olindo Romano)",
+ "date": "message content dated by Schmeh to '2013 press reports'; the murders themselves were December 2006",
+ "language_candidates": [
+  "it"
+ ],
+ "ciphertext": "No image was fetched this pass (scienceblogs.de host budget spent on the seven post fetches this brief named; the image itself -- files/2017/08/Erba-Bible.png and files/2014/10/Erba-Cryptogram.png -- is a follow-up fetch, not yet done). A community transcription exists in the Cipherbrain post's own comment thread (comment #3, reader 'Marc', 16 Aug 2017), reproduced below AS POSTED (rule 2: a reader's transcription of an image neither of us has re-checked, not Schmeh's own, and not yet checked against the image ourselves): '(Pochi ... - Poi) cu Mi / xs fi un ro fi cu ne un xs Pi cu Ro ne cu / mi xs mi (Bild) NE un cu Ro / fi Ro un (Bild) fi Mi xs ne / xs ne cu fi (Bild) un cu mi Ro / ne Mi un (Bild) ne mi xs Pi / Ro mi Pi (Bild) un mi Ro cu / cu ne Ro-(Bild) xs cu ne cu Pi / Cu mi fi un Ro ne cu xs Pi Ne un Mi fi NE / ne un xs fi cu ne un mi fi cu Ro fi xs / Ne Ro fi cu xs fi Ro mi' plus two side blocks: 'Block rechts: cu xs fi mi cu / un Ro ne xs / mi fi cu -' and 'Block links: un cu xs / Ro ne fi ne -'. '(Bild)' marks a picture/illustration break in the bible page, not a ciphertext token.",
+ "ciphertext_source": "Cipherbrain post 24 (Schmeh 2017, sources/schmeh/posts/24-erba.txt), fetched 25 Sept 2026, read in full including its 10-comment thread; the transcription above is comment #3 by reader 'Marc' (16 Aug 2017), which itself corrects an initial 8-digraph count from comment #2 to 14 (case-sensitive: cu/Cu, mi/Mi, xs, fi, un, ro/Ro, ne/NE/Ne, pi/Pi). Image over transcription (rule 2): this is a third-hand reading (commenter, from a photograph of a bible page, itself photographed by a third party) -- any negative here is conditional on this chain, not the primary source.",
+ "alphabet": "digraphs, not single letters: 8 base tokens (cu, mi, xs, fi, un, ro, ne, pi) each appearing in up to 3 case variants (lowercase, capitalized, all-caps) per the commenter's count -- 14 distinct case-sensitive tokens total. Reader 'Dario' (quoted in the post body) hypothesises a syllable-substitution cipher ('alfabeto farfallino') where the ciphertext is designed to be pronounceable, and specifically guesses the unpronounceable digraph 'xs' marks word spacing.",
+ "constraints": {
+  "context": "Olindo Romano and his wife Rosa Bazzi murdered four neighbours in Erba, Italy, Dec 2006; a DIFFERENT, already-solved cryptogram (a pigpen-style MASC with nulls, deciphered without difficulty by police and used as trial evidence) is not this target -- Schmeh: 'I wish I could describe Orlindo Romano's encrypted messages here, but I have no access to them... Police had no trouble breaking it.' This spec is about the SECOND, still-unsolved 2013 message, found hidden in the Exodus chapter of an Italian bible Olindo sent his imprisoned wife.",
+  "hypothesised_cipher": "reader Dario: probably a substitution cipher mapping single letters to syllables so the ciphertext reads as pronounceable (a variant of the historical 'alfabeto farfallino'); this is a source hypothesis, not established",
+  "content_hypothesis": "Dario: the message likely concerns Romano's declared love for his wife, consistent with 2008 court statements that bible/paper notes ('pizzini') found on Romano contained love declarations, poems and insults against the victims and witnesses",
+  "possible_book_code_clue": "commenter 'KunstundKetschup' (17 Aug 2017) speculates the opening digraph pair 'cu Mi' may encode a page number (81, via Exodus, since 'Poi' is read as referencing the book of Exodus) and a line 'NE.Micu.' between bible-text lines may encode a chapter:verse reference (21:18) -- explicitly speculative, offered with a shrug emoji, not a proposed decipherment",
+  "unencrypted_lead_in": "the first words up to '- Poi' ('Pochi [giorni] ... - Poi', per reader Esme's later gloss 'a few days ago... and then') appear to be plaintext Italian, not part of the digraph cipher -- a plausible crib if confirmed against the image"
+ },
+ "cheap_tests_in_order": [
+  "1. Fetch Erba-Bible.png and Erba-Cryptogram.png (scienceblogs.de) and independently re-transcribe the digraph sequence from the image, checking it against comment #3's reading above (case, digraph boundaries, and the '(Bild)'-marked picture breaks) before trusting a third-hand transcription for any test. Cost $2, Sonnet.",
+  "2. Once confirmed, test the 'xs = word space' hypothesis (reader Dario) by re-segmenting the sequence on xs and checking whether the resulting word-length profile (7 remaining digraphs -> Italian short-word plausibility) is more Italian-word-shaped than an unsegmented or randomly-segmented control of the same length. Cost $1.",
+  "3. With or without confirmed word breaks, a small-alphabet (8 base tokens, up to 14 with case) homophonic/syllable-substitution anneal against Italian, judged with a matched control (synthetic Italian syllable-substitution ciphertext at the same N and K, same solver); K=8-14 at this N is a favourable ratio compared to most items in this batch (CLAUDE.md rule 3: report both numbers). Cost $2-3."
+ ],
+ "matched_control": "not yet run; test 3 above specifies the design (synthetic Italian syllable-substitution plaintext, same N/K, same solver)",
+ "cheap_test_done": [],
+ "judge": {
+  "language": "it",
+  "letters_min": 60,
+  "letters_max": 110,
+  "min_word_cover": 0.5,
+  "control_samples": 200,
+  "note": "letters_min/max estimated by counting comment #3's digraph tokens (roughly 75-90 depending on how the two side blocks and repeated capital-letter variants are counted) pending image re-transcription (test 1); narrow once confirmed. min_word_cover set lower than the en/it defaults used elsewhere (0.5, matching catokwacopa-1875) since a syllable/digraph cipher's word-segmentability under a plain-letter word list is untested territory."
+ },
+ "value": "medium: unlike most items in this batch, a specific cipher-family hypothesis (syllable substitution, 8-14 token alphabet) and a specific crib candidate ('xs' = word space) already exist from the source's own comment thread, and the alphabet is unusually small relative to typical message length -- but everything here rests on a third-hand community transcription not yet checked against the image (test 1 is a precondition, not optional)",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open per Schmeh 2017 ('I don't know if police has deciphered this message. If so, they have never published the solution.'); UNSOLVED-SURVEY.md row 21's 'one letter' / 'not fetched' undersells what is actually on disk in the post's own comment thread -- worth a UNSOLVED-SURVEY.md correction (not made here, out of this brief's scope: only the Working-on-it column is touched)",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. This spec is about the 2013 bible message specifically, not the earlier trial-evidence cryptogram (already solved by police, out of scope as a target). ciphertext above is a commenter's reading, not a primary-source transcription (rule 2): the image itself has not been fetched or checked this pass.",
+ "written": "25 Sept 2026 by LANE B3 worker bSPEC2 (session_01Ni3jyRn6oo4AbfkpdbSNsd), claude-sonnet-5"
+}

@@ -1,0 +1,38 @@
+{
+ "slug": "sufi-fiddle",
+ "rank": 27,
+ "schmeh_top50": 38,
+ "name": "Sufi fiddle inscription (unidentified script inside a violin, allegedly found Boston 1968)",
+ "date": "allegedly found 1968; the inscription became public via Richard Bulliet's 1990/91 novel 'The Sufi Fiddle' and Louis Kruh's Cryptologia 3/1991 review",
+ "language_candidates": [
+  "unidentified script (Arabic-looking per description; author's own later hypothesis is Philippine, Spanish-colonial-period)"
+ ],
+ "ciphertext_pending": "No transcription of the inscription exists anywhere: not in Schmeh's post, not in Kruh's review, and (per Schmeh's direct correspondence with the author, quoted in the post) not published by Bulliet himself beyond the two images embedded in the post -- files/2017/04/Sufi-Fiddle.png (the novel's cover/Kruh's review) and files/2014/10/Suffi-Fiddle-614.png (the inscription image, source and resolution unknown, 'the violin is real and my description of it is accurate' per Bulliet's email to Schmeh). Neither image was fetched this pass (scienceblogs.de host budget spent on the seven post-text fetches this brief named). This is a picture case (CLAUDE.md rule 4's 'a picture' example): the first test is the fetch/provenance check, not a solve.",
+ "alphabet": "unidentified script, described only as 'Arabic-looking'; seven lines per the novel's own description (Kruh's review, relayed by Schmeh)",
+ "constraints": {
+  "num_lines": 7,
+  "described_as": "an unknown Arabic-looking script on the inside panel of a violin",
+  "provenance_chain": "allegedly found in a violin in Boston 1968; taken to Harvard, shown to unnamed 'distinguished professors' who could not read it; Bulliet (a Columbia professor of Middle Eastern history) spent 'two decades... presenting the problem to myriad scholars' before writing a 182-page novel about it in/around 1990-91; the novel's afterword claims the inscription is real",
+  "authenticity_caveat": "Schmeh's own stated view after direct investigation: 'I had serious doubts about the authenticity of this story. In spite of the myriad scholars that had allegedly occupied themselves with the message, I couldn't find a single reference to it that was not related to Bulliet's book. To me it looked like a hoax.' He then emailed Bulliet directly; Bulliet's only substantive reply was 'My novel did not find many readers, and none who had anything helpful to say about the message in the violin' and a bare assertion the violin and description are real -- no corroborating scholar, photograph provenance, or museum/collection record is named anywhere in the source",
+  "authors_own_later_hypothesis": "years after the novel, Bulliet developed an unpublished hypothesis (relayed to Schmeh by email) that the script resembles handwriting on Spanish-colonial-period pamphlets he found in a Boston store, suggesting a Philippine origin during or after Spanish colonial rule -- his own hypothesis, not corroborated by any named expert",
+  "no_independent_source": "Schmeh, after a dedicated search: every reference to the Sufi Fiddle inscription traces back to Bulliet's own novel and its afterword; no independent sighting, museum record, or scholarly citation was found"
+ },
+ "cheap_tests_in_order": [
+  "1. Fetch Suffi-Fiddle-614.png (scienceblogs.de) and assess script identification directly: is it consistent with any documented script (Arabic abjad variants, a Philippine pre-colonial script such as Baybayin, an invented/pseudo-script) at the level a non-specialist pass can judge, before any cryptanalytic assumption. Cost $1, Sonnet.",
+  "2. A provenance search independent of Bulliet's own account: search OpenAlex/Semantic Scholar/Google Books for any pre-1990 (i.e. before the novel) reference to a Boston/Harvard violin inscription mystery, since Schmeh's own search (pre-2017) found none -- confirm or update that null result with the open-index tools now available (CLAUDE.md Access playbook item 3) that were not necessarily available to Schmeh's original search. Cost $1.",
+  "3. If test 1 supports the Philippine/Baybayin-family hypothesis specifically, compare the transcribed strokes against a reference Baybayin character set (a small, well-documented abugida of ~17 base characters) as a first script-identification pass -- not a decipherment, a script match. Not costed until test 1 narrows the candidate script."
+ ],
+ "matched_control": "not applicable yet -- no ciphertext transcription exists to test; tests 1-3 are provenance and script-identification steps, not cryptanalysis",
+ "cheap_test_done": [],
+ "judge": {
+  "letters_min": 1,
+  "letters_max": 1,
+  "control_samples": 1,
+  "note": "judge block is a placeholder only: no transcription exists in any alphabet, so no letters/language check can be constructed yet. Left present (not omitted) only because the brief asks every spec to carry a judge block that loads without a Python error; see schema_note for why it does no real work."
+ },
+ "value": "low: this is fundamentally an unresolved authenticity question before it is a cryptanalytic one -- Schmeh's own direct investigation (an email to the sole source) found no independent corroboration of the story at all, and no primary-source image or transcription exists outside images sourced from the novel itself",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open; provenance rests on a novel's afterword (Bourdeau) per UNSOLVED-SURVEY.md row 27, strongly corroborated by this pass's full read of the source (Schmeh's own hoax suspicion and failed independent-corroboration search)",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done. judge block is intentionally near-content-free (letters_min=letters_max=1, no language, no cribs): tools/judge_plaintext.py needs SOME numeric bound to run at all, and 1/1 is the most honest 'this cannot gate anything yet' value available without inventing a fake letter count for a target that has no confirmed alphabet, let alone a confirmed script identity.",
+ "written": "25 Sept 2026 by LANE B3 worker bSPEC2 (session_01Ni3jyRn6oo4AbfkpdbSNsd), claude-sonnet-5"
+}

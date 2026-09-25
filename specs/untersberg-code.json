@@ -1,0 +1,48 @@
+{
+ "slug": "untersberg-code",
+ "rank": 28,
+ "schmeh_top50": 11,
+ "name": "Untersberg code (encrypted text in the Lazarus chronicle, Salzburg Museum Hs. 2398)",
+ "date": "chronicle attributed to a 16th-century figure named Lazarus (per legend); the cave inscription it depicts is undated",
+ "language_candidates": [
+  "de",
+  "la"
+ ],
+ "ciphertext": [
+  "S. d. d. occo. x.",
+  "Satrnrop, 5. a. f. 5. l. d.",
+  "P. 6. m. 6. a. t. 5. q. o. t. m. 5. r. u. a t.",
+  "m. 519. r. l. v. e. p. 55. a. tt. tt. l. x. missm",
+  "ariu. a. o. u st g c x 5. l. 19. alto mvraco",
+  "mic r l y. pymi. l o p m i. v m l t. t g"
+ ],
+ "ciphertext_source": "Cipherbrain post 11 (Schmeh 2018, sources/schmeh/posts/11-untersberg.txt), fetched 25 Sept 2026 -- IMPORTANT CORRECTION to UNSOLVED-SURVEY.md row 28, which currently reads 'no primary source' / 'legend, no primary source' / ciphertext 'none': the post in fact reproduces a transcription of a genuine manuscript illustration (Salzburg Museum, archive number Hs. 2398, a chronicle of 21 illustrations attributed to one 'Lazarus', assistant to the town clerk of Bad Reichenhall in the 16th century) at files/2014/05/Untersberg-Code.png, which Schmeh transcribed himself ('Here's a transcription:'). This is a real primary-source image with a real transcription, not merely a legend -- the survey row's wording should be corrected (not done here, out of this brief's scope: only the Working-on-it column is touched; flagged for the orchestrator). Some readers of Schmeh's original 2014 German post noted possible transcription errors in hard-to-read letters (per this post's own text), so treat this as a secondary transcription pending an independent re-check against the image (rule 2).",
+ "alphabet": "Latin letters, digits (5, 6, 19, 55, 519 etc.), and periods used throughout as separators between short tokens -- reads as an abbreviation-heavy text (periods after nearly every token, like a chancery-abbreviated Latin/German document) rather than a letter-substitution cryptogram in the usual sense",
+ "constraints": {
+  "num_lines": 6,
+  "legend": "per a popular local legend (Lazarus's own chronicle, per Schmeh, relaying reader Gert Brantner's tip), Lazarus found this text engraved in a rock inside a cave of the Untersberg massif (Salzburg/Berchtesgaden border region) and recorded it in his manuscript alongside 20 other illustrations",
+  "related_artifact": "a metal plate bearing a very similar inscription is mentioned (linked image, not fetched, copyright-restricted per Schmeh) -- provenance of that plate is unknown to Schmeh",
+  "no_expert_examination": "Schmeh, as of the post date: 'As far as I know, there is no examination of the Untersberg code made by an encryption expert'",
+  "form_hypothesis": "Schmeh's own assessment: '16th century encryption systems were not especially secure... Some knowledge of ancient German or Latin might be more helpful than codebreaking skills'; he also flags the alternative that this is not an encryption at all but 'an abbreviated text, a meaningless letter sequence, or something else' -- the heavy periods-after-tokens pattern (constraints.alphabet) is exactly what a real 16th-century Latin/German abbreviation convention (not a cipher) looks like, and should be tested against that reading before assuming substitution",
+  "second_source": "a reader (comment #1, 'Katrin') points to a higher-quality image reproduction at archivmedes.blogspot.de/2015/08/der-untersberg-code.html, sourced from the Salzburg Museum -- not fetched this pass (out of the seven named hosts for this brief)"
+ },
+ "cheap_tests_in_order": [
+  "1. Test the abbreviation hypothesis first, cheaply and without cryptanalysis: compare the token-and-period pattern (short Latin/German-looking fragments each closed with a period, occasional digits) against known 16th-century German/Latin scribal abbreviation conventions (e.g. standard Tironian-note-derived and suspension abbreviations) rather than assuming a substitution cipher -- Schmeh's own text already leans this way ('some knowledge of ancient German or Latin might be more helpful than codebreaking skills'). Cost $1, Sonnet.",
+  "2. Fetch Untersberg-Code.png (scienceblogs.de) and the higher-quality archivmedes.blogspot.de reproduction (a different host, not yet used this pass, still subject to the good-citizen one-request-at-a-time rule) to independently re-transcribe the six lines and check for the hard-to-read-letter errors the source itself flags; this is a precondition for trusting any downstream test, per rule 2. Cost $2.",
+  "3. If the abbreviation hypothesis (test 1) is rejected, run a monoalphabetic/homophonic substitution anneal against German and Latin separately (both plausible for a 16th-century Salzburg-region text), judged with matched controls at the same N and K, same solver. Cost $2-3."
+ ],
+ "matched_control": "not yet run; test 3 above specifies the design if needed (synthetic German and Latin plaintext, same N/K, same solver) -- but test 1 (abbreviation hypothesis) should run first since a scribal-abbreviation reading would make a substitution-cipher control comparison the wrong test entirely (CLAUDE.md rule 3: match the design)",
+ "cheap_test_done": [],
+ "judge": {
+  "language": "de",
+  "letters_min": 90,
+  "letters_max": 130,
+  "control_samples": 200,
+  "note": "language set to 'de' (German, wired) as the nearest honest default; 'la' (Latin) is NOT wired in tools/judge_plaintext.py's LANG_CORPORA and cannot be used until a real period Latin corpus is added (CLAUDE.md's existing la_repo note: only circular per-target files exist). letters_min/max is a rough count of the six lines' Latin-letter tokens (periods, digits and spaces excluded) pending a fresh transcription (test 2); this judge is unlikely to be the right check at all if test 1 supports the abbreviation (not substitution-cipher) reading."
+ },
+ "value": "medium: unlike UNSOLVED-SURVEY.md row 28's description ('legend, no primary source'), this pass found a real manuscript source (Salzburg Museum Hs. 2398) with an existing transcription and a second, higher-quality image lead -- the corrected picture makes this a more tractable target than the survey currently ranks it, pending the survey correction",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open per Schmeh 2018; UNSOLVED-SURVEY.md row 28's 'legend, no primary source' / ciphertext 'none' does not match this pass's read of the source and should be corrected (flagged for the orchestrator, not corrected here -- out of this brief's scope)",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. Survey-row discrepancy flagged above under ciphertext_source and status; this spec's own fields (ciphertext, constraints) reflect what this pass actually found in the primary post, not the survey row's summary.",
+ "written": "25 Sept 2026 by LANE B3 worker bSPEC2 (session_01Ni3jyRn6oo4AbfkpdbSNsd), claude-sonnet-5"
+}
