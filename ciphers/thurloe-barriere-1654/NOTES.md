@@ -1,4 +1,8 @@
-open
+closed-negative
+Closed 25 Sept 2026 (ZX-BAR): a permutation z-test on the letter's real gloss positions gives z=-0.46 (key-shuffle
+null) / z=-0.33 (token-shuffle null), both near zero and far below a matched control's z range (14.6-25.0 /
+5.7-12.4 over 10 seeds) -- the gloss's own repeated code occurrences do not even predict each other above chance,
+let alone the unglossed tokens; see the "ZX-BAR" section at the end of this file.
 No longer provisional (25 Sept 2026, YX-BARB): the QA/YX-FIX note below flagged that section 8's matched-control
 negative rested on one unreconciled pass; pass B has now landed and been reconciled against the image
 (see the "YX-BARB" section at the end of this file). The negative stands on the reconciled transcription too
@@ -441,3 +445,108 @@ or never printed -- a verifier classifies novelty, and none is claimed here.
 
 **Hosts:** none (all work this pass was against images and files already on disk from TX-BARR/TX-BARRT; no
 network requests made).
+
+## ZX-BAR (25 Sept 2026)
+
+Intake gate checked first (per the lane orchestrator's run at 15:44 UTC, brief-cited): `open` verdict (top of
+file, section 4) names the standard edition and the pages/full-text searches actually read -- passes
+`.claude/briefs/check-solved.md`'s bar, exit 0. The named next test from s.8/the spec: "a permutation z-test on
+the letter's real gloss positions" -- does the gloss-derived key carry information about the UNglossed tokens
+beyond what any assignment of the same code frequencies would? Answered through a sharper proxy first: is a
+held-out gloss occurrence of a code predictable from that code's OTHER gloss occurrences, more than chance?
+
+**Statistic (stated before running, per the brief):** leave-one-out over every row of `key_gloss.tsv` (64 rows,
+every row grade C, one row per glossed code occurrence -- see s.2/s.3 above and `key_gloss.tsv`'s own header
+comment). Hold out row *i*; rebuild a key from every OTHER row (group remaining rows by code; a code gets a
+key value only if every remaining observation of that code agrees on one value after `normalize()` -- lowercase,
+then fold long-s/f, u/v, i/j, since two gloss occurrences of the same word can be OCR'd/printed with different
+old-spelling variants -- otherwise the code has no key entry; this is `key_gloss.tsv`'s own primary/conflict
+rule, recomputed fresh each time since removing one observation can change which codes conflict). Predict row
+*i*'s value from that key; correct if the code is in the key and the predicted value normalizes equal to row
+*i*'s true value. The statistic is the count of held-out rows predicted correctly, out of 64.
+
+**Null A (key shuffle):** permute the VALUE column among all 64 observations, codes and their run/position
+fixed -- keeps every word's total occurrence count fixed across the letter ("each word's code count" read as
+how many times each word's code appears) while destroying any real code<->word correspondence.
+
+**Null B (token shuffle):** within each `source_run`, permute the CODE column among that run's own rows only,
+gloss words fixed in their printed order -- tests whether the target's sequential code-to-gloss-word alignment
+(NOTES.md s.2's method, since typesetting does not column-align a gloss word under its source token) is itself
+informative, independent of which codes exist where.
+
+`permutation_test.py` implements both (`--help`, fixed seeds 0/1, 1000 permutations each, reproducible from
+`key_gloss.tsv` alone, no network):
+
+```
+N observations (key_gloss.tsv): 64
+real leave-one-out statistic: 0/64 (0.0%)
+Null A (key shuffle, n=1000): mean=0.409 sd=0.891 z=-0.459 p=1.0000
+Null B (token shuffle, n=1000): mean=0.256 sd=0.768 z=-0.333 p=1.0000
+```
+
+The real statistic is 0/64: not one held-out gloss occurrence of any code is correctly predicted from that
+code's other occurrences. This follows mechanically from the conflict structure already documented in s.8/s.3 --
+every code in `key_gloss.tsv` that has more than one observation has ALL DIFFERENT values (that is exactly why
+those rows are marked `conflict`), and every code with exactly one observation loses its only observation when
+held out, leaving no key entry to predict from. Both null z-scores are *negative* (real is at or slightly below
+the null means of ~0.3-0.4), i.e. the real data is not even as internally consistent as a random relabelling of
+the same 64 (code, value, run) triples.
+
+**Same test on a matched control (breadth rule step 2), 10 seeds:** `matched_control.py` gained
+`build_control_observations(seed, ctpath)` (ZX-BAR addition, same rng call sequence as the existing
+`build_control()` for a given seed -- checked: seed 0's derived primary-key size, 43, matches
+`build_control(0)`'s own reported `key_size` exactly), which returns the control's per-token (code, value,
+source_run) observations instead of aggregate coverage counts, matched to `ciphertext.tsv`'s 33-run/400-token
+profile (same construction TX-BARRT/YX-BARB used: fr16 period French, ~9 heavily-reused function words each
+given 2-4 homophone codes, same per-run gloss-reveal counts). `permutation_control.py` (new script, imports
+`permutation_test.py` and `matched_control.py` directly -- identical statistic/null code, not a reimplementation)
+runs the same leave-one-out statistic and both nulls, same seeds (0/1), same n=1000, on each of 10 control draws:
+
+```
+control seed 0: N=50 real=6 (12.0%) zA=14.577 pA=0.0000 zB=6.381 pB=0.0000
+control seed 1: N=50 real=7 (14.0%) zA=23.711 pA=0.0000 zB=10.249 pB=0.0000
+control seed 2: N=50 real=8 (16.0%) zA=19.289 pA=0.0000 zB=8.021 pB=0.0000
+control seed 3: N=50 real=7 (14.0%) zA=17.878 pA=0.0000 zB=10.874 pB=0.0000
+control seed 4: N=50 real=8 (16.0%) zA=24.972 pA=0.0000 zB=12.371 pB=0.0000
+control seed 5: N=50 real=8 (16.0%) zA=24.512 pA=0.0000 zB=8.021 pB=0.0000
+control seed 6: N=50 real=6 (12.0%) zA=17.705 pA=0.0000 zB=5.727 pB=0.0000
+control seed 7: N=50 real=7 (14.0%) zA=22.258 pA=0.0000 zB=7.792 pB=0.0000
+control seed 8: N=50 real=6 (12.0%) zA=18.342 pA=0.0000 zB=9.104 pB=0.0000
+control seed 9: N=50 real=8 (16.0%) zA=20.722 pA=0.0000 zB=6.706 pB=0.0000
+
+zA range over 10 seeds: 14.577 to 24.972, mean 20.397
+zB range over 10 seeds: 5.727 to 12.371, mean 8.525
+```
+
+A real word-per-code nomenclature of this design -- fewer glossed positions per run than the control (50 vs. the
+target's 64, since the control's `k_gloss` is deliberately the conservative NW-projected passA glossed-position
+count, see `matched_control.py`'s docstring), same homophone/conflict-generating structure -- gives this test a
+strongly positive z every time: 12-16% of held-out control occurrences are predicted correctly (vs. 0% for the
+target), because a genuine nomenclature's repeated code occurrences DO agree with each other far more than a
+random relabelling would, even with 2-4 homophone codes competing for the same top words.
+
+**Verdict, both numbers (CLAUDE.md rule 3):** target zA=-0.459, zB=-0.333 vs. control range zA 14.577-24.972,
+zB 5.727-12.371 (10 seeds). The target's z sits nowhere near the control range and is near zero (in fact
+slightly negative) rather than merely lower -- this is the brief's "clean negative" case, not the "behaves like
+a real nomenclature" case: **the gloss positions in this letter carry no transferable key.** The permutation
+test cannot extract more from the gloss than the earlier coverage test did (s.8: 30.0% vs. control avg 31.1%,
+already indistinguishable from chance) -- if anything it sharpens that result, since a genuine nomenclature of
+this exact design (same homophone/conflict structure) is trivially internally consistent under leave-one-out
+(control z well over 10), while this letter's gloss-derived code assignments are not consistent with themselves
+at all. This closes the cryptanalytic route on this letter alone (status set to `closed-negative` above),
+pending a key (the solver-repositories' noted "1655 cipher" for this same correspondence, or DECODE's Add MS
+4200 records 8395/8398, both still unopened -- s.5 above, not this job's scope) or a sibling in the same key.
+
+**Files:** `permutation_test.py` (statistic + both nulls, operates on `key_gloss.tsv` or any same-shaped TSV),
+`permutation_control.py` (runs the same test on `matched_control.py`'s control draws), `matched_control.py`
+(gained `build_control_observations()`, existing `build_control()`/coverage numbers unchanged and re-verified
+reproducible). Spec's `cheap_tests_in_order` and a second `cheap_test_done` entry updated below this section's
+numbers (kept the first entry, per the brief).
+
+Grades: unchanged from s.8 -- every `key_gloss.tsv` row is grade C (from the gloss, known plaintext for that
+span); nothing here is graded H or S; no candidate plaintext is reported, so `judge_plaintext.py` was not run
+(rule 7 n/a, no reading claimed). Rule 10: nothing in this section is new, unpublished, unread, first or never
+printed -- a verifier classifies novelty, and none is claimed here.
+
+**Hosts:** none (disk-only, per the brief -- `ciphertext.tsv`, `key_gloss.tsv`, `coverage_test.py`,
+`matched_control.py`, `tools/data/fr16`; no network requests made).

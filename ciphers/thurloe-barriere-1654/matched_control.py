@@ -219,6 +219,50 @@ def build_control(seed, ctpath=PASSA):
                 new_covered=new_covered, correct_new=correct_new)
 
 
+def build_control_observations(seed, ctpath=PASSA):
+    """Same construction as build_control() above (identical rng call sequence for a given seed, so seed N
+    here is the same control realization as build_control(N)), but returns the per-token (code, value,
+    source_run) observations -- one per glossed position -- instead of aggregate coverage/sense counts.
+    Added ZX-BAR, 25 Sept 2026, for permutation_test.py's leave-one-out statistic, so the same test that runs
+    on key_gloss.tsv can run on a control of the identical design (CLAUDE.md rule 3)."""
+    rng = random.Random(seed)
+    profile = real_run_profile(ctpath)
+    total_n = sum(n for _, n, _ in profile)
+    words = load_words(total_n)
+
+    freq = collections.Counter(words)
+    top_words = [w for w, _ in freq.most_common(9)]
+
+    code_pool = list(range(10, 99))
+    rng.shuffle(code_pool)
+    next_code = iter(code_pool)
+    word_to_codes = {}
+    for w in top_words:
+        n_hom = rng.choice([2, 3, 3, 4])
+        word_to_codes[w] = [next(next_code) for _ in range(n_hom)]
+    used_word_code = {}
+
+    codes_at_pos = []
+    for w in words:
+        if w in word_to_codes:
+            c = rng.choice(word_to_codes[w])
+        else:
+            if w not in used_word_code:
+                used_word_code[w] = next(next_code, None) or rng.randint(100, 199)
+            c = used_word_code[w]
+        codes_at_pos.append(str(c))
+
+    pos = 0
+    observations = []
+    for run_id, n, k in profile:
+        toks = codes_at_pos[pos:pos + n]
+        truth = words[pos:pos + n]
+        for i in range(k):
+            observations.append({'code': toks[i], 'value': truth[i], 'source_run': run_id})
+        pos += n
+    return observations
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--seeds', type=int, default=5)
