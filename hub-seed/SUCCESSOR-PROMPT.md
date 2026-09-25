@@ -30,11 +30,13 @@ Live on 25 Sept 2026 at about 20:05 UTC (this account): LANE R7 session_01UpWfpb
 .claude/briefs/runs/2026-09-25-lane-r7-orchestrator.md: Mercy 1648 leads, Salviati glyph-atlas re-pass, R6's claimed
 targets); LANE V6 session_01V2BHwhVh1k72qSYuBFCyGd (Opus, cap $50, $5.93 own at 19:56: verifiers and rolling QA; it was
 asked at 20:03 to spawn the second adversarial audit of Mercy 1648 -- Mercy counts on the board and the breakthrough
-alert routine fires only when that audit also reaches N3); LANE B3 session_01VLtPMsqR2oWmZeKh2jxVga (Opus, cap $25:
-breadth first tests on specs 11-30, McCormick homophonic, cylob); LANE GOLD2 session_013JXDgLDkW2y5Ldi2gWzTkY (Fable, cap
+alert routine fires only when that audit also reaches N3); LANE B4 (Opus, cap $25, opened by 7d at 21:3x from the LANE B3 handoff; B3 closed 20:55, ledgered; brief
+.claude/briefs/runs/2026-09-25-lane-b4-orchestrator.md); LANE GOLD2 session_013JXDgLDkW2y5Ldi2gWzTkY (Fable, cap
 $120, standing lane on Koehler 1944 and Debosnys 1883, opened by 7d at 20:05 from the "LANE GOLD handoff" with the brief
-.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md; GOLD closed 19:57, ledgered); parent worker LEARN session_01Fe2ED9BVfMXVgB728sJ9Kr (Sonnet, cap $5, window since 17:18; when done:
-ledger Q with get_session cost, ASSIGNMENTS done line, archive, apply its brief- and tool-only diffs; RETRO-APPLY-K done and archived 20:04). The other account's
+.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md; GOLD closed 19:57, ledgered); parent workers LEARN-3 session_017EMUc9dWLDu9DEQbJCXByH (Sonnet, cap $5, window since 17:18) and retrospective l
+session_01KcXfAtaB23N8aGrxpkTVky (Sonnet, cap $10); when done: ledger (Q / D) with get_session cost, ASSIGNMENTS done line, archive,
+apply brief- and tool-only diffs (RETRO-APPLY-L for the retro). Spawn every session with source_url and source_revision set
+explicitly: three workers created without them on 25 Sept stopped at their first turn with no repository in their context. The other account's
 parent is session_01FXDfYR3CvGk7tcid1Aav1n with lanes ZX and ZX2 (it took the CX/CX2 targets R6 had not claimed by
 19:00); it takes none of your targets and you take none of its; coordinate only through ROOM.md, STATUS.md and UPDATES.md.
 
