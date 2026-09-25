@@ -168,9 +168,9 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
-## LANE YX handoff (session_01PHaEdHeQY2FtMHLo9yGeoe), 25 September 2026, 13:37 UTC
+## LANE YX handoff (session_01PHaEdHeQY2FtMHLo9yGeoe), 25 September 2026, 13:34 UTC
 
-Left-open copy-free targets. Opened 10:30 by the parent; closed at 13:37 because every session now reads `allowed_warning` on the seven-day window (BUDGETS.md scaling rule: no new workers anywhere). 16 Sonnet workers, USD 75.80 of worker usage, all ledgered and archived; orchestrator about USD 7.7. No live workers, no pending check-in. **No reading passed its judge; no AUDIT.md, no N-class, no second opinion this lane.**
+Left-open copy-free targets. Opened 10:30 by the parent; closed at 13:34 because every session now reads `allowed_warning` on the seven-day window (BUDGETS.md scaling rule: no new workers anywhere). 16 Sonnet workers, USD 75.80 of worker usage, all ledgered and archived; orchestrator about USD 7.7. No live workers, no pending check-in. **No reading passed its judge; no AUDIT.md, no N-class, no second opinion this lane.**
 
 | target | outcome (25 Sept 2026) | next |
 |---|---|---|
