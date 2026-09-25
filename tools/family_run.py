@@ -25,7 +25,9 @@ on it and records the verdict line.
 
 Families (tools/families/<name>.py, each wraps an existing tool, see the package docstring for the interface):
   masc               simple substitution: homophonic_anneal.py with one sign per letter; control has the target's K
-  homophonic         homophonic substitution: homophonic_anneal.py with the spec's K
+  homophonic         homophonic substitution: homophonic_anneal.py with the spec's K (--param profile=target
+                     matches the target's own sign-count profile; --param noise=p redraws a share p of control
+                     tokens at the target's own type frequencies, GOLD-D1 25 Sept 2026)
   periodic_vigenere  Vigenere/Beaufort/variant-Beaufort, short repeating key (own solver; --param tabula=beau period=7)
   running_key        book-key Vigenere: running_key.py two-stream beam decoder (needs >= 3 corpus texts; slow)
   keyed_running_key  book key through a keyword-mixed tableau (family B', 25 Sept 2026): stage 1 ranks keywords by the
