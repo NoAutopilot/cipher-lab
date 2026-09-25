@@ -3,7 +3,66 @@ Négociations secrètes touchant la paix de Munster et d'Osnabrug (Le Clerc, 172
 negociationssecr02lecl) read by this worker: printed extract of a D'Estrades letter to Mazarin, 23 Sept 1645
 (djvu line ~71269, within the target's own Jul-Dec 1645 window), control words "Servien" (329 hits) and
 "plénipotentiaire" (81 hits) confirm the OCR text is searchable for this period; the target's own ciphered
-letter "adressée à l'un des plénipotentiaires" not found printed there or in tome III.
+letter "adressée à l'un des plénipotentiaires" not found printed there or in tome III. Acta Pacis Westphalicae
+II B 2 (1645), the job brief's named APW volume, now directly read by this worker (see follow-up section
+below): the target's own manuscript series, Collection Clairambault, does not appear among APW's own cited
+sources for 1645 at all (first appears from 1646), and a full-text "chiffre" sweep of the volume finds no
+mention of the target letter -- but does find, in Servien's own hand (21 Oct 1645), a direct statement that no
+cipher yet existed between the Münster plenipotentiaries and d'Estrades.
+
+### Standard-edition follow-up (LANE CX, 25 Sept 2026)
+
+Job brief's named source, **Acta Pacis Westphalicae, Serie II Abteilung B (Die französischen
+Korrespondenzen)**, opened and searched directly by this worker at `apw.digitale-sammlungen.de`. curl hits the
+site's Anubis bot-challenge (`Oh noes!` page, same shape as bibliotecadigital.rah.es in the access playbook);
+the browser tool (`tools/browser_fetch.js`, real headless Chromium) clears it on the first try, no retry
+needed. The site's search form fills via a CSS-class selector (`.searchInput=<term>`, since the tool's
+`--type` argument splits on the first `=` and an attribute selector like `input[name="q"]` breaks that split);
+results facet by volume (`titleAPW_str=APW+II+B+<n>`) and by year (`whenYear_int`).
+
+1. **"Estrades" site-wide (Abteilung B):** 142 documents. Confirms APW II B 2 (1645) is exactly the volume
+   covering d'Estrades's Münster mission (e.g. doc. 8, "Ludwig XIV. an d'Avaux und Servien," Paris 1645 Jan
+   11, discusses "Mission d'Estrades' in Den Haag"). No result names Clairambault 571-582 or a ciphered letter
+   from d'Estrades to a plenipotentiary.
+2. **"Chiffre" restricted to APW II B 2 only** (facet `titleAPW_str=APW+II+B+2`): 8 documents, all read.
+   Doc. 244, **Servien an Lionne, Münster 1645 Oktober 21** (AE CP All. 53 fol. 121-124), states in Servien's
+   own hand: *"Nous en eussions aultant escript à monsieur d'Estrades sy nous eussions eu un chiffre avec
+   luy"* -- "We would have written as much to Monsieur d'Estrades, had we had a cipher with him." This is a
+   direct, dated, first-hand statement from inside the target's own Jul-Dec 1645 window that **no cipher
+   existed yet between the Münster plenipotentiaries (d'Avaux/Servien) and d'Estrades as of 21 October 1645**.
+   It does not rule out a ciphered channel opening later in the window (21 Oct-31 Dec), or one set up directly
+   with Mazarin/Brienne in Paris rather than with the plenipotentiaries at Münster, so it narrows but does not
+   close the target's own question. The other 7 "chiffre" hits in APW II B 2 (docs 66, 142, 167, 220, 239, 250)
+   are all routine "mettre en chiffre" (put into cipher) references by Servien or Mazarin about their own
+   correspondence, none naming d'Estrades or Clairambault.
+3. **Control.** Doc. 220, **Mazarin an Longueville, Fontainebleau 1645 September 23** (within the target's own
+   window), reads "il n'y a pas eu assez de temps à le faire mettre en chiffre" -- confirms the volume's
+   full-text search surfaces ordinary cipher-related correspondence for this exact month, i.e. the search
+   itself is not blind to this period (the matched-control the job brief asked for: "a letter you know is in
+   that volume... of the same month").
+4. **"Clairambault" site-wide** (all of APW, Series I-III): 14 documents total. Facets: by volume, only APW
+   II B 3,1 / 3,2 / 4 / 5,1 / 5,2 (i.e. **never APW II B 1 or 2**); by year, only **1646 (5)** and **1647 (3)**
+   -- **zero hits for 1645**. APW II B 3,1's own source-list appendix ("ARCHIVALIEN UND HANDSCHRIFTEN") gives
+   Collection Clairambault volumes 405 ("La Barde, Brasset 1646") and 576 ("d'Estrades 1646") as sources it
+   draws on, both dated **1646**, one year after the target's window. Read together, this means APW's edition
+   of the French correspondence does not cite the Collection Clairambault as a manuscript source at all until
+   1646 -- its 1645 volume (APW II B 2) is built from the AE (Affaires Étrangères) Correspondance politique
+   series instead. This is not proof the target letter is absent from Clairambault 571-582 (APW simply did not
+   use that collection for 1645), but it does mean **APW II B 2 is very unlikely to print or calendar anything
+   from Clairambault 571-582**, since that shelfmark run is outside APW's own 1645 source base.
+5. No printed occurrence of the target's specific letter ("adressée à l'un des plénipotentiaires," Clair.
+   571-582, Jul-Dec 1645) found anywhere in APW II B 2 or in the site-wide Clairambault sweep.
+
+Requests this section: apw.digitale-sammlungen.de -- 1 curl reachability probe (200; Anubis blocks the page
+itself, not the TCP connection), then browser-tool fetches only: 1 homepage, 2 facet-navigation pages, 4
+search submissions (Estrades, Chiffre unrestricted, Chiffre restricted to B2, Clairambault unrestricted +
+1 pagination), 1 full document read (doc. 244), all via headless Chromium, >=1.6s apart, no login.
+
+`python3 tools/intake_gate_check.py ciphers/clair571-estrades-1645` output: see done line.
+
+**Verdict: unchanged, stays open.** The gap the job brief named (APW itself unopened) is now closed with a
+real, cited read; no source found the target's specific letter in print, and the Collection Clairambault
+finding narrows (does not close) why it might not be findable there at all.
 
 ## Access (LANE YX worker YX-LOC571, 25 Sept 2026)
 
