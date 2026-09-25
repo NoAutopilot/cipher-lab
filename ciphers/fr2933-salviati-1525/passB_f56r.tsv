@@ -400,3 +400,32 @@ line	pos	code	marks	action	conf	note
 15	23	_		plain	M	"viso" body, low share (.60) already flagged this
 15	24	_		plain	M	trailing stroke, low share (.60) already flagged this
 15	25	_		plain	H	final "p[?]" word start at line end
+16	1	_		plain	H	"S" of "Sono" ("I am"), plain Italian cursive opening the line
+16	2	_		plain	H	"o" of "Sono"
+16	3	_		plain	H	"n" of "Sono"
+16	4	_		plain	M	"o" ending "Sono", misread as sign S7 (low share .41 already flagged this)
+16	5	_		plain	M	"C" of "Certo" ("certain"), misread as sign Lx despite high share
+16	6	_		plain	M	"er"/"rt" tall ligature of "Certo", misread as sign H
+16	7	_		plain	M	"to" ending of "Certo", misread as sign tee
+16	8	eps	1	confirm	H
+16	9	w		confirm	H
+16	10	e	dot	confirm	H
+16	11	S7	+	confirm	H
+16	12	]	ot	confirm	H
+16	13	y		confirm	H
+16	14	y		confirm	H
+16	15	g	1	confirm	H
+16	16	o.		confirm	H
+16	17	S7		confirm	H
+16	18	lam		confirm	H
+16	19	g	~	confirm	H
+16	20	bh		confirm	H
+16	21	_		confirm	M	small mark between two signs, low share (.80) already flagged this
+16	22	S7		confirm	H
+16	23	o.		confirm	H
+16	24	eps	5	confirm	H
+16	25	g		confirm	M	low share (.82) already flagged this, shape not contradicted
+16	26	phi		confirm	H	clear circle-on-stem shape
+16	27	g		confirm	H
+16	28	S7		confirm	H
+16	29	#		confirm	H
