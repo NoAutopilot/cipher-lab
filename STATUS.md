@@ -184,6 +184,11 @@ Breadth lane, successor to LANE B3, opened by parent 7d (brief `.claude/briefs/r
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
+| sufi-fiddle | 1: intake, image, one blind pass, script checklist (bSUF) | N=165 K=21; RTL, cursive joining, dot diacritics | Arabic-script and Baybayin reference lines (from memory) | Arabic-script family, not Baybayin; image is a hand copy from the novel |
+| blitz-ciphers | 2: en judge wired, family_run masc N=581 (bBLZ2) | judge FAIL -1.685 | 0.994 (0.985-1.000) | masc of English excluded; letter chi2 6270 vs English, not transposition; NEAR row, next homophonic K=48 / German (parent's yes) |
+| untersberg-code | NEAR step 1: abbreviation expander (bUNT2) | 44 M / 17 I, judge FAIL (circular) | 0.321 vs gate 0.30, shuffled floor 0.289 | weak control, no reading; next the Hs. 2398 image |
+| bullet-tuscany-1944 | NEAR step: indicator lookup in print (bBUL3) | M-209 in form only | 2/2 known headers classified | no test licensed at N=44; parked |
+| ranks 31-41 | triage (bSPEC3) | 0 spec / 11 no spec | n/a | survey list exhausted for breadth |
 
 Live (21:34): bSUF session_01ANHG2mfxvjqcBsjKg8f2cc (sufi-fiddle test 1, scienceblogs.de holder); bBLZ2 session_01UisPBpVaihgNd4cSyvYVoc (blitz test 2 masc); bUNT2 session_01AFmS8KELthEFN3kSBYw4qM (untersberg expansion); bBUL3 session_01GpZDqE883ZSyLrPTUFm2sJ (bullet indicator lookup); bSPEC3 session_01QoNRugzSd25fspP8nwNNbN (ranks 31-41 triage + specs, 21:36). McCormick: no code-word model with a passing control can be named at 132 tokens, row left as it stands (brief item 3). Next: censorship-manual-stego after bSUF frees scienceblogs.de; mccormick only with a code-word model whose control passes; then specs 21-30 unrun first tests.
 

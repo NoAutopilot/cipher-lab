@@ -2186,17 +2186,24 @@
     },
     {
       "target": "bullet-tuscany-1944",
-      "title": "Bullet 1944: Caesar and 93 indicator-derived keys excluded with controls; periodic keys 2-8 untested (control 5-6 pct at N=44, below gate)",
-      "next": "identify the QM / 605YZ/FF indicator system from WW2 signals manuals, then test that system",
-      "lane": "B3",
-      "touched": "25 Sept 2026 19:46"
+      "title": "Bullet 1944: Caesar and 93 indicator-derived keys excluded with controls; header best fits M-209 in form only (digits break it); no solver test licensed at N=44",
+      "next": "parked until new material: a second message or a re-read of the original photograph",
+      "lane": "B4",
+      "touched": "25 Sept 2026 22:10"
     },
     {
       "target": "untersberg-code",
-      "title": "Untersberg code: 36 period-closed short tokens vs 12 (5-20) in its own-unigram controls -- shaped like scribal abbreviation",
-      "next": "expand against 16th-c. German/Latin abbreviation lists with a synthetic-abbreviation control; the Hs. 2398 image",
-      "lane": "B3",
-      "touched": "25 Sept 2026 20:21"
+      "title": "Untersberg code: shaped like scribal abbreviation (36 vs 12); an expander's control passes only weakly (0.321 vs gate 0.30, shuffled floor 0.289); no reading",
+      "next": "the Salzburg Museum Hs. 2398 image or catalogue entry, then a stronger-context expander",
+      "lane": "B4",
+      "touched": "25 Sept 2026 22:10"
+    },
+    {
+      "target": "blitz-ciphers",
+      "title": "Blitz ciphers: IC with the English controls (0.0628), but simple substitution of English excluded (control 0.994 vs judge FAIL) and not a transposition (chi2 6270)",
+      "next": "homophonic at case-sensitive K=48 and masc on German, controls first; then the six-page fetch",
+      "lane": "B4",
+      "touched": "25 Sept 2026 22:10"
     }
   ]
 }

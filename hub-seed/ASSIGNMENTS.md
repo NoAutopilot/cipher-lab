@@ -588,3 +588,8 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T21:39Z	session_01GvGAepME5fvmUDuaJuc9cA	GOLD-B2D koehler B-double-prime-c permuted-tableau design (Fable, cap 12, 90 min)	brief 2026-09-25-lane-gold-c3-koehler-bprime2-design.md
 2026-09-25T21:39Z	session_019a43vGLshPA8EZvcuNjGCG	GOLD-D2 debosnys base-level noise curve, controls only (Sonnet, cap 3, 30 min)	brief 2026-09-25-lane-gold-c3-debosnys-base-curve.md
 2026-09-25T22:07Z	R7-CM3 7.71 N archived; LANE R7 orchestrator closed 6.16	session_01UpWfpbLwYL1xmDG1vFyi6h	STATUS.md LANE R7 handoff	
+2026-09-25T22:10Z	session_01ANHG2mfxvjqcBsjKg8f2cc	bSUF done $2.05 D, archived	sufi-fiddle test 1: Arabic-script family, not Baybayin
+2026-09-25T22:10Z	session_01UisPBpVaihgNd4cSyvYVoc	bBLZ2 done $1.52 D, archived	blitz masc control 0.994 vs FAIL
+2026-09-25T22:10Z	session_01AFmS8KELthEFN3kSBYw4qM	bUNT2 done $1.56 D, archived	untersberg expander weak control, no reading
+2026-09-25T22:10Z	session_01GpZDqE883ZSyLrPTUFm2sJ	bBUL3 done $2.87 N, archived	bullet indicator: M-209 form only, parked
+2026-09-25T22:10Z	session_01QoNRugzSd25fspP8nwNNbN	bSPEC3 done $1.25 N, archived	ranks 31-41: 0 specs / 11 no spec
