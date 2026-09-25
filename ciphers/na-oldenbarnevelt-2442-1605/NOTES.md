@@ -165,3 +165,95 @@ Hosts and request counts, this job:
   no login was needed for this negative check).
 
 No 429/403/challenge on any host this pass.
+
+## 4. VX-CT03, 25 Sept 2026: breadth-lane cheap test 1 (digit-substitution constraint solve), FAIL
+
+Status stays **open**. Full test record and numbers: `specs/na-oldenbarnevelt-2442-1605.json` (`cheap_test_done`).
+Files: `ciphertext.tsv` (block A only, reconciled), `transcription/{passA.tsv,passB.tsv,reconcile.py,
+reconcile_dict.py,reconciled_A.tsv,reconciled_ABC1.tsv}`, `scripts/solve_digit_subst.py`,
+`corpus/es16-donquijote/` (period Spanish corpus, Don Quijote I 1605, Gutenberg #2000; kept in this target
+folder pending promotion to `tools/data/es16` by a worker whose brief covers `tools/`), `reading_target.json`,
+`control_seed{1,2,3}.json`, `control_noisy_seed{1,2,3}.json`.
+
+**Design confirmed.** No key was found (section 1-3), so this is cryptanalysis, not recovery. The cipher
+tokens embed a digit-for-vowel homophonic substitution directly in otherwise-clear running Spanish: with the
+already-clear letters of each token fixed as crib and only the digits solved, block A alone yields four clean
+dictionary confirmations of the same key (a=4, e=8, i=3, o=7, u=2): SECRETARIO, [Fran]CISCO, PALABRAS,
+PARTICULARES, SON, DIOS. Method: `tools/homophonic_anneal.py`'s existing crib-fix mechanism (every clear
+letter fixed to itself, every digit a free sign), not a new annealer -- this is exactly the "constraint/hill-climb
+solve ... over the letters left in clear" the job brief asked for, run via `scripts/solve_digit_subst.py`
+(a thin wrapper: builds the sign stream from ciphertext.tsv, calls `ha.Model`/`ha.solve`).
+
+**Transcription.** Two independent blind Sonnet-subagent passes (never shown each other's output, never shown
+this file) read the three cipher-bearing passages from the images directly (folio 54 = block A, folio 55 = block
+B, folio 56 = blocks C1 and C2). One pass's background task later reported an `invalid_request`/`general_harms`
+API error partway through, but its final hand-back message already contained a complete, well-formed TSV
+matching the task -- used as pass B; flagged here as a genuine anomaly, not fully explained, on a purely
+palaeographic transcription task with nothing that should trip a harms filter.
+
+(block,line,token_index) does not align the two passes -- they split lines and tokens differently from very
+early on (spot check: of 199 nominally-matching keys, most held two entirely different words, not a variant
+reading of the same word). Reconciliation instead sequence-aligns each block's flat token list
+(`transcription/reconcile.py` for the raw agreement numbers, `reconcile_dict.py` for the actual merge) and,
+on a mismatch, decodes both candidates under the a=4/e=8/i=3/o=7/u=2 key and prefers whichever is a real word
+in the Don Quijote wordlist.
+
+Character-level pass agreement (transcription brief's 60% gate, PROCESS-2026-09-24 proposal 4):
+block A (folio 54) 80.9%, block B (folio 55) 72.7%, block C1 (folio 56, first passage) 70.3%, **block C2
+(folio 56, second passage) 49.7%** -- below gate, and its token count also disagrees sharply between passes
+(42 vs 72), pointing to a segmentation problem, not just hard glyphs. Per the gate, C2 is not reconciled here
+and needs a fresh pass/crops, not a third blind pass at the same zoom. After dictionary-informed reconciliation,
+the *resolved* (high+medium confidence) token share was A 66% (45/68), B 44% (38/86 aligned slots), C1 43%
+(23/53) -- only block A cleared a level I'd trust for a cheap test, so **only block A (68 tokens, N=325
+sign-stream characters, 156 digits, K=7 distinct digit symbols) was carried into the solve**; B and C1 are
+reconciled in `transcription/reconciled_ABC1.tsv` for whoever does the next pass but not used below.
+
+**Target result: FAIL.** `python3 tools/judge_plaintext.py specs/na-oldenbarnevelt-2442-1605.json --text "..."`:
+```
+{
+ "checks": {
+  "language": {"pass": false, "score": -1.26, "null_p99": -1.944, "real_p05": -0.855, "real_median": -0.781, "mode": "both", "N": 325},
+  "words": {"pass": true, "cover": 0.729, "min": 0.5, "real_text_median_cover": 0.905}
+ },
+ "pass": false
+}
+```
+Word-cover PASSES; the 4-gram language check FAILS (clears the null/gibberish bound at -1.944 but falls short
+of the real-text 5th percentile -0.855). This is a **candidate that failed the language check, not a reading**
+(rule 7) -- reported as a FAIL. Qualitatively the best restart (all 8 restarts converged to the same key,
+score -827.3) reads: "secretario cisco gon calez halado ... no he podido allar para enuiar mismas palabras que
+son particulares [a] mas para su condicion que por ... dios gguie como sea ..." -- unforced, recognisable
+Spanish clauses ("I have not been able to find ... to send the same particular words that are ... God guide
+however it may be") sit next to garbled stretches that map onto exactly the tokens flagged low-confidence in
+transcription.
+
+**Matched control (rule 3): two runs, same N=325, K=7, same solver, 3 seeds each.**
+1. Clean crib (letters taken from a real, uncorrupted held-out Don Quijote passage): **100% digit-position
+   recovery, all 3 seeds.** This is a ceiling effect -- CLAUDE.md's own rule-3 caveat ("a control that already
+   solves blind has no headroom to show a gain") applies directly: this control alone cannot explain the
+   target's FAIL, because the method has full power at this N,K when the crib is accurate.
+2. Noise-matched crib (same N,K, same seeds, but 37.3% of the crib LETTER positions corrupted to a wrong
+   letter before solving -- matching block A's own low-confidence-token letter share exactly): **still 100%
+   digit-position recovery, all 3 seeds.** So ordinary single-character letter-substitution noise at the rate
+   block A's transcription actually has does *not* explain a solver failure at this N,K either.
+
+**Reading (target vs. both controls), side by side, per rule 3:**
+| run | N | K | seeds | digit-position recovery | judge |
+|---|---|---|---|---|---|
+| target (block A) | 325 | 7 | 1 (8 restarts) | n/a (no ground truth) | FAIL (language); PASS (word-cover) |
+| control, clean crib | 325 | 7 | 3 | 100% / 100% / 100% | n/a |
+| control, 37.3%-noisy crib | 325 | 7 | 3 | 100% / 100% / 100% | n/a |
+
+**Conclusion.** The digit-substitution design and the a/e/i/o/u=4/8/3/7/2 key are real (four independent
+dictionary confirmations, self-consistent). The target's FAIL is most likely a transcription-quality result,
+not a design-level negative: the solver has full power at this N,K even under noise matching block A's own
+confidence loss, so the residual garbling is more likely concentrated in a handful of tokens that are wrong in
+a *structural* way (wrong character count/segmentation, not just a wrong letter value -- e.g. token 20's two
+readings differ in length, 'A=8n234r' 6 chars vs 'B=4a25.' 5 chars), which the noise-matched control does not
+simulate. Suggested next step for a successor (not run here -- one test, then stop, per this job's brief):
+a glyph-crop-level third pass on block A's 23 remaining low-confidence tokens (not a repeat of the same blind
+read), and a fresh crop-and-transcribe of block C2 from scratch given its token-count mismatch. Not promoted;
+no key or reading claimed; do not classify novelty (rule 10 N/A, no reading).
+
+Search/host log for this job: no new fetches (images already on disk from VX-CS03); one new host used,
+`www.gutenberg.org` (1 request, corpus fetch, >=1.5s n/a since a single request).

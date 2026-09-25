@@ -1,0 +1,32 @@
+{
+ "mode": "control",
+ "seed": 1,
+ "crib_noise": 0.373,
+ "N_total_chars": 325,
+ "K_distinct_digits": 7,
+ "digit_positions": 207,
+ "correct_digit_positions": 207,
+ "digit_share": 1.0,
+ "correct_all_positions": 281,
+ "overall_share": 0.865,
+ "true_key": {
+  "0": "e",
+  "1": "a",
+  "2": "o",
+  "3": "s",
+  "4": "n",
+  "5": "i",
+  "6": "u"
+ },
+ "solved_key": {
+  "0": "e",
+  "1": "a",
+  "2": "o",
+  "3": "s",
+  "4": "n",
+  "5": "i",
+  "6": "u"
+ },
+ "plain": "aunmalpormalmeioressercaballeroandantequepastormiresenortomemiconseioquenoseledoysobreestarhartadepanyuinosinoenayunasysobrecincuentaanosquetengodeedadesteseensucasaatiendaasuhaciendaconfieseamenudofauorezcaalospobresysobremianimasimallefuerecalladhiiaslesrespondiodonquiiotequeyosebienloquemecumplelleuadmeallechoquemeparece",
+ "decoded": "aunmalformageeiokessepcamazleroandantequexastowoiwesenortomemiconseioquenoseledoysocieestarhartanepanyuinosinoenayunasysobrehinmuentaanosouetengodeedayesteseensuaasaaliendaasuhatiennaeonfieseamenudofauorezcaalospobiesysobteqianifasimactefuepedanlayhiiaslessespondiodonsuiiotetueyosebienloauepecufylelneuadleallecroquemebarece"
+}

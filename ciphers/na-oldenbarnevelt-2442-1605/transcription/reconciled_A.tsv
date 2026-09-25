@@ -1,0 +1,69 @@
+block	token_index	raw_token	confidence	note
+A	1	s8cr8t4r37	medium	dict-pick-B(vs 's8crd4r37')
+A	2	c3sc7	high	agree
+A	3	g7n	high	agree
+A	4	c4l8z	low	unresolved(A='c4l8z' B='cal8z')
+A	5	h4l4d7	low	unresolved(A='h4l4d7' B='h4d4d7')
+A	6	m236v8nqs	low	unresolved(A='m236v8nqs' B='m236u8nqs')
+A	7	85p8	low	unresolved(A='85p8' B='8598')
+A	8	v4nc4s	low	unresolved(A='v4nc4s' B='r4nc4s')
+A	9	d8sf7.	low	unresolved(A='d8sf7.' B='d4st7.')
+A	10	d8sp2vs	low	unresolved(A='d8sp2vs' B='dosp2ds')
+A	11	q28	medium	dict-pick-B(vs 'qv8')
+A	12	s4l37	high	agree
+A	13	d8s3g28nc4	high	agree
+A	14	3	high	agree
+A	15	n7	high	agree
+A	16	h8	high	agree
+A	17	p7d3d7	medium	dict-pick-B(vs 'g7d3d7')
+A	18	4ll4r	high	agree
+A	19	p4r4	medium	dict-pick-A(vs '8n234v')
+A	20	8n234r	low	unresolved(A='8n234r' B='4a25.')
+A	21	m3smas	medium	dict-pick-B(vs '425.')
+A	22	p4l4br4s	high	agree
+A	23	q28	medium	dict-pick-B(vs 'qv8')
+A	24	s7n	high	agree
+A	25	p4rt3c2l4r8s	medium	dict-pick-A(vs 'p4rt3c2l4r7s')
+A	26	3mas	high	agree
+A	27	p4r4	medium	dict-pick-A(vs 'p4v4')
+A	28	s2c7nd3c37n	high	agree
+A	29	q28	medium	dict-pick-B(vs 'qv8')
+A	30	p7r	medium	dict-pick-B(vs 'g7v')
+A	31	st6l7	low	unresolved(A='st6l7' B='sd8l7')
+A	32	4883	high	agree
+A	33	c8dd23	low	unresolved(A='c8dd23' B='l4dd823')
+A	34	d8	high	agree
+A	35	v7mgdr,	low	unresolved(A='v7mgdr,' B='v7mp8v,')
+A	36	d8	high	agree
+A	37	d7nd8	medium	dict-pick-B(vs 'd7ndd')
+A	38	h8	high	agree
+A	39	c7l8g3d7	medium	dict-pick-A(vs 'c7ll3g3d7')
+A	40	q28	medium	dict-pick-B(vs 'qv8')
+A	41	c24nd7	high	agree
+A	42	s8	high	agree
+A	43	prv2837	low	unresolved(A='prv2837' B='pv7v837')
+A	44	8l	medium	dict-pick-B(vs '8c')
+A	45	d8s3g28nc4	high	agree
+A	46	8l	high	agree
+A	47	d2q28	high	agree
+A	48	g23c4	high	agree
+A	49	c833	low	unresolved(A='c833' B='l8d3')
+A	50	r34	low	unresolved(A='r34' B='v34')
+A	51	4lg7	medium	dict-pick-A(vs '4l97')
+A	52	8n	high	agree
+A	53	7rd8n	medium	dict-pick-B(vs '7rd7n')
+A	54	4	high	agree
+A	55	8l4y	low	A-only
+A	56	h4l4nd7	high	agree
+A	57	d8'25,	low	unresolved(A="d8'25," B='d8l25,')
+A	58	3l4s	high	agree
+A	59	c7ns2clqs,	low	unresolved(A='c7ns2clqs,' B='c7ns2ct4s,')
+A	60	d37s.	low	unresolved(A='d37s.' B='d37s')
+A	61	gg238	low	unresolved(A='gg238' B='g2z8')
+A	62	c7m7	high	agree
+A	63	s8a	medium	dict-pick-B(vs 'p8q')
+A	64	s8v	high	agree
+A	65	233r	low	A-only
+A	66	3	low	A-only
+A	67	n7s	low	A-only
+A	68	c7n23nc8	low	A-only

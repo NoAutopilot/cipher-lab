@@ -128,6 +128,17 @@ def run_control(args):
     top_k_letters = [a for a, _ in freq.most_common(args.k)]
     digit_of = {a: str(i) for i, a in enumerate(top_k_letters)}
     seq = [digit_of.get(ch, ch) for ch in passage]
+    if args.crib_noise:
+        # Matches the target's own transcription uncertainty: a --crib-noise share of the FIXED (letter)
+        # sign positions are corrupted to a wrong letter, simulating a mis-transcribed crib rather than a
+        # wrong digit (the failure mode a low-confidence token actually risks: rule 3, same design).
+        alpha = sorted(ha.ALPHA)
+        letter_positions = [i for i, s in enumerate(seq) if s.isalpha()]
+        n_corrupt = int(round(len(letter_positions) * args.crib_noise))
+        corrupt_idx = set(rng.sample(letter_positions, min(n_corrupt, len(letter_positions))))
+        for i in corrupt_idx:
+            true = seq[i]
+            seq[i] = rng.choice([c for c in alpha if c != true])
     fixed = {s: s for s in set(seq) if s.isalpha()}
     model = ha.Model([train_text], args.order)
     res = ha.solve(seq, model, args.restarts, args.iters, args.seed, args.uni_weight, fixed)
@@ -139,6 +150,7 @@ def run_control(args):
     out = {
         "mode": "control",
         "seed": args.seed,
+        "crib_noise": args.crib_noise,
         "N_total_chars": len(seq),
         "K_distinct_digits": args.k,
         "digit_positions": digit_positions,
@@ -180,6 +192,7 @@ def main():
     c.add_argument("--iters", type=int, default=40000)
     c.add_argument("--seed", type=int, default=1)
     c.add_argument("--uni-weight", type=float, default=1.0)
+    c.add_argument("--crib-noise", type=float, default=0.0, help="fraction of fixed letter positions corrupted to a wrong letter (matches the target's own low-confidence-token rate)")
     c.add_argument("--out")
     a = ap.parse_args()
     if a.cmd == "target":

@@ -1,0 +1,38 @@
+{
+ "mode": "target",
+ "N_total_chars": 325,
+ "N_digit_chars": 156,
+ "N_letter_chars_fixed": 169,
+ "K_distinct_digits": 7,
+ "digits_used": [
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8"
+ ],
+ "best_score": -827.2899203319165,
+ "digit_key": {
+  "2": "u",
+  "3": "i",
+  "4": "a",
+  "5": "m",
+  "6": "e",
+  "7": "o",
+  "8": "e"
+ },
+ "decoded": "secretariociscogoncalezhaladomuieuenqsempeuancasdesfodespuusquesaliodesiguencainohepodidoallarparaenuiarmismaspalabrasquesonparticularesimasparasucondicionqueporsteloaeeicedduideuomgdrdedondehecolegidoquecuandosepruueioeldesiguencaelduqueguicaceiiriaalgoenordenaelayhalandodeumilasconsuclqsdiosgguiecomoseaseuuiirinosconuince",
+ "decoded_spaced": "secretario cisco gon calez halado muieuenqs empe uancas desfo despuus que salio desiguenca i no he podido allar para enuiar mismas palabras que son particulares imas para sucondicion que por stelo aeei ceddui de uomgdr de donde he colegido que cuando se pruueio el desiguenca el duque guica ceii ria algo en orden a elay halando deum ilas consuclqs dios gguie como sea seu uiir i nos conuince",
+ "restart_scores": [
+  -827.3,
+  -827.3,
+  -827.3,
+  -827.3,
+  -827.3,
+  -827.3,
+  -827.3,
+  -827.3
+ ]
+}

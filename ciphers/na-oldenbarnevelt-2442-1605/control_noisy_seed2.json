@@ -1,0 +1,32 @@
+{
+ "mode": "control",
+ "seed": 2,
+ "crib_noise": 0.373,
+ "N_total_chars": 325,
+ "K_distinct_digits": 7,
+ "digit_positions": 215,
+ "correct_digit_positions": 215,
+ "digit_share": 1.0,
+ "correct_all_positions": 284,
+ "overall_share": 0.874,
+ "true_key": {
+  "0": "o",
+  "1": "a",
+  "2": "e",
+  "3": "s",
+  "4": "l",
+  "5": "r",
+  "6": "i"
+ },
+ "solved_key": {
+  "0": "o",
+  "1": "a",
+  "2": "e",
+  "3": "s",
+  "4": "l",
+  "5": "r",
+  "6": "i"
+ },
+ "plain": "eunafrescaarboledahallaronenelmargendelacualdeiandolibressiniaquimayfrenoalrucioyarocinantelosdosasendereadosamoymozosesentaronacudiosanchoalareposteriadesualforiasydellassacodeloqueelsoliallamarcondumioeniuagoselabocalauosedonquiioteelrostroconcuyorefrigeriocobraronalientolosespiritusdesalentadosnocomiadonquiiotedepuropesa",
+ "decoded": "elmawresbaarbolelazallaronenelpargendelaccaldeiandolibressiniaquiyayfrenoalrucioyarocinanyelosdosaseidereadosahoybozosesehtaroxaunkiosanchoalaredosteriadesualforiasypellassacoheloqseelsoliallamarconwkeioenifagoselaiocalasosexonqliioaeelrostroconccyoresrigeriocoqraronalientolosesniritusdesalenqadosnosoeiagonsbiiotedepuropesa"
+}
