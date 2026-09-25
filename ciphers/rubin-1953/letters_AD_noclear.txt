@@ -1,0 +1,13 @@
+# rubin-1953 Blocks A+D pooled, same as letters_AD.txt but with the clear words DULLES and
+# CONANT removed (both sit inside Blocks A+D: DULLES in line 1's "mathUlley-Dulles", CONANT in
+# line 5's "driEk Conant"), to test whether the family reads only because of the two known-plain
+# fragments already in the pool. For tools/family_run.py --cipher (test 2, bRUB2, 25 Sept 2026).
+digIs 'sawthn'g mathUlley- crancklavn' meteore iElli
+zheaopfvamn greA'Lltenmn
+kKiqtu albawmnabs dzhjellEiE matel ungdreabozvmie oie
+sprekln meIktrene fodroscolmn oier
+*driEk astereantol Iyvondiolon
+desceth megleagna mAlzbourgnion grele
+newtdo sfoatzdexklagh 2pont ly asgestaltverbensdi
+Want: datum Tywood Janossey Ketelle
+R-QR6                              aliacaui PER

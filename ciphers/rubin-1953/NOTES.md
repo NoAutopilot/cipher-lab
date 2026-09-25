@@ -64,3 +64,63 @@ Block C 0/1/./x lines.
 Hosts: scienceblogs.de, 1 request (the 2018 image fetch; the reachability probe before it does not count per
 the good-citizen rule's "test reachability" step). Subagents: 0.
 
+## Test 2: masc family via family_run.py at N=305 (25 Sept 2026, LANE B3 worker bRUB2)
+
+Intake step re-checked: `python3 tools/intake_gate_check.py rubin-1953` -> `rubin-1953: open (line 1) --
+edition/page or full-text-search citation found within 6 lines` (exit 0, no change needed).
+
+**Judge block repair** (specs/rubin-1953.json): the placeholder `letters_min`/`letters_max` (20/400, a wide
+placeholder written before any transcription existed) is now 280/330, matching the real letter-passage size
+(N=305, scripts/stats.py). Added `min_word_cover: 0.5`. `language: "en"` was already set. Checked against a
+dummy: a real 305-letter English window from `tools/data/pg1661_holmes.txt` (random offset, seed 42) scores
+PASS on all three checks (length, language score=-0.761 vs null_p99=-1.98/real_p05=-0.882, words cover=0.905
+vs min 0.5) -- confirms the repaired judge block is not failing closed on genuine English at this N.
+
+**Letters_AD.txt**: Blocks A+D pooled, written to `ciphers/rubin-1953/letters_AD.txt` as the same 9 lines as
+`scripts/stats.py`'s `LETTER_LINES` (SYM1 marker and the digit `2` excluded, matching the existing N=305 K=26
+IC stats already on file); `tools/family_run.py`'s own letter-fold (`--tokens letters`) strips the remaining
+punctuation and the stray digits in `R-QR6`/`2pont` per line. `--tokens auto` was tried first and mis-detects
+this text as "space" mode (word-tokens), because `R-QR6` and `2pont` still carry a digit after auto_mode's own
+punctuation-stripping regex -- `--tokens letters` was passed explicitly to get N=305 signs, not the word-token
+N=39 that auto mode produced on the first attempt (kept as the first HYPOTHESES.md row, labelled accordingly,
+so the mode mistake is on the record rather than silently discarded).
+
+**Run 1** (`python3 tools/family_run.py specs/rubin-1953.json --family masc --seeds 3 --gate 0.6 --cipher
+ciphers/rubin-1953/letters_AD.txt --tokens letters`): N=305 K=26. CONTROL mean **0.989** (range 0.974-0.997,
+English `pg1661_holmes.txt`+`pg2701_mobydick.txt`, 3 seeds) -- **near-ceiling per rule 3's own warning**
+(>=95%), so this run has little headroom to show any *gain* from a technique, though it is a plain blind
+solve-vs-control comparison, not a gain-gate. TARGET best score -844.061; judge **FAIL** (language:
+score=-1.475, null_p99=-1.98, real_p05=-0.882, real_median=-0.809, N=305) -- decode reads as letter salad
+(`ciphers/rubin-1953/families/masc-1.txt`... see naming note below).
+
+**Run 2, DULLES/CONANT removed** (`--cipher ciphers/rubin-1953/letters_AD_noclear.txt`): both clear words sit
+inside Blocks A+D (DULLES in line 1's "mathUlley-Dulles", CONANT in line 5's "driEk Conant"), so this checks
+whether the two known-plain fragments were propping up the first run's result either way. N=293 K=26. CONTROL
+mean **0.974** (range 0.928-0.997, same corpora, 3 seeds) -- also near-ceiling. TARGET best score -815.390;
+judge **FAIL** (language: score=-1.618, null_p99=-2.0, real_p05=-0.879, real_median=-0.815, N=293) -- same
+outcome, decode is letter salad (`ciphers/rubin-1953/families/masc-1-noclear.txt`, preserved by renaming
+before it could be overwritten by a same-seed run -- see below).
+
+**File-naming note**: `family_run.py`'s decode file is `families/<family>-<seed>.txt`, fixed by family+seed,
+not by `--label` or `--cipher`; both runs used the same default `--seed 1`, so run 2's decode overwrote run 1's
+file in place before it could be copied. Run 2's decode was preserved by renaming to `masc-1-noclear.txt`
+immediately after; run 1's raw decode text is lost, but its score, control numbers and judge line are on
+record in `HYPOTHESES.md` and `cheap_test_done.2`, which is what the brief asks for. A future worker re-running
+this family on this target should pass distinct `--seed` values per run to keep both decode files.
+
+**Verdict** (rule 3/brief step d): the target decode is judge FAIL while the control passes (in both the
+with- and without-clear-words runs) -- a control-backed negative for simple substitution of English on this
+transcription (Blocks A+D pooled, N=305/293). Per rule 5 as amended (LANE B3, 25 Sept 2026): a control above
+gate with a target FAIL is a genuine negative, not a "control below gate" case, so this does not by itself
+require a NEAR.md `partial` row -- flagged for the orchestrator anyway because both controls are near-ceiling
+(0.989 and 0.974 mean), which rule 3 calls out as leaving little headroom; nothing here suggests the masc
+exclusion itself is wrong (a near-ceiling control that still finds a language-scoring FAIL on the target is a
+sharper negative than a marginal control would be, not a weaker one -- the caveat matters for *gain* gates,
+which this is not).
+
+Rows in `ciphers/rubin-1953/HYPOTHESES.md` (both runs, control and target numbers side by side, per rule 3).
+`cheap_test_done.2` written in `specs/rubin-1953.json`. Neither NEAR.md, LEDGER.md, ASSIGNMENTS nor status.json
+touched (orchestrator's, per LANE B3 common rules).
+
+Hosts: none (no network this test). Subagents: 0.
+

@@ -1,0 +1,13 @@
+# rubin-1953 Blocks A+D pooled, letters only extracted the same way as scripts/stats.py's
+# LETTER_LINES (SYM1 marker and the digit '2' dropped; family_run's own letter-fold strips
+# remaining punctuation/digits per line). N=305, distinct K=26 (matches scripts/stats.py).
+# For tools/family_run.py --cipher (test 2, bRUB2, 25 Sept 2026).
+digIs 'sawthn'g mathUlley-Dulles crancklavn' meteore iElli
+zheaopfvamn greA'Lltenmn
+kKiqtu albawmnabs dzhjellEiE matel ungdreabozvmie oie
+sprekln meIktrene fodroscolmn oier
+*driEk Conant astereantol Iyvondiolon
+desceth megleagna mAlzbourgnion grele
+newtdo sfoatzdexklagh 2pont ly asgestaltverbensdi
+Want: datum Tywood Janossey Ketelle
+R-QR6                              aliacaui PER
