@@ -1,0 +1,111 @@
+kind	cluster	sign_id	desc	confidence
+sign	0	MISC-00	small mixed junk (arrow/slash/dot/dbl-dash), n=4, not one shape	L
+sign	1	BAR-SERIF	tall thin vertical stroke with small foot/serif	H
+sign	2	HOOK-L	small left-opening hook/curl (comma-like)	H
+sign	3	MISC-03	mixed small squiggles (numeral-like), n=5, not one shape	L
+sign	4	X	plain X cross (St Andrew's cross)	H
+sign	5	MISC-05	heterogeneous bucket (pct/square/triangle/circle-x/arrow), n=32 -- needs by-eye split, not one sign	L
+sign	6	MISC-06	mixed loopy shapes (ampersand/Venus/tally/z-curl), n=11 -- not one shape	L
+sign	7	MISC-07	mixed complex glyphs (house-like/varied), n=11 -- not one shape	L
+sign	8	BAR-SOLID	fully-inked solid vertical bar/wedge	M
+sign	9	PCT	double-loop percent-like sign	H
+sign	10	BAR-SOLID	solid vertical block, wider/rounder top -- same family as c8, heavier ink	M
+sign	11	MISC-11	mixed pictogram-like (sunburst-small/circle-P/figure), n=8 -- not one shape	L
+sign	12	BAR-THIN	thin vertical stroke, some slightly curved like ( or l	M
+sign	13	MISC-13	mixed complex (figure-8/pct/key-like), n=21 -- not one shape	L
+sign	14	X	bold/doubled-stroke X variant	M
+sign	15	DASH-V	short vertical dash/tick (possibly punctuation)	M
+sign	16	SUN	sunburst pictogram (majority of cluster); a few rare pictograms (anchor/runner/wheel) also fell in here, not split out -- see exemplars	M
+sign	17	MISC-17	mixed diagonal strokes/arrows, n=16 -- not one shape	L
+sign	18	GEAR-DOT	small round sign with internal dot/spokes	M
+sign	19	Y-CURL	Y/chi-like forked stroke with curl	H
+sign	20	MISC-20	mixed hook/circle shapes, n=10 -- not one shape	L
+sign	21	MISC-21	mixed complex glyphs (E-bar/omega/P/tally), n=13 -- not one shape	L
+sign	22	X	bold X variant	M
+sign	23	LOOP-TAIL	small loop with descending tail (a/d-like)	H
+sign	24	MISC-24	mixed pictogram-ish squiggles, n=13 -- not one shape	L
+sign	25	X	clean X, larger	H
+sign	26	X	X-dominant but noisy cluster (arrow/dot/hourglass outliers present), n=21	M
+sign	27	WAVE	horizontal wave/S-curve stroke	H
+sign	28	X	bold/doubled X variants	M
+sign	29	MISC-29	mixed pictogram squiggles (spider-like/circle-pct/infinity), n=18 -- not one shape	L
+sign	30	MISC-30	mixed (staff/flag/A/tally), n=13 -- not one shape	L
+sign	31	MISC-31	mixed swirl/hook variants ("ox" pairs, spiral), n=22 -- not one shape	L
+sign	32	MISC-32	mixed solid blocks (square/triangle/arrow), n=11 -- not one shape	L
+sign	33	MISC-33	mixed hook/circle-tailed shapes, n=18 -- not one shape	L
+sign	34	PHI	phi-like: loop crossed by a vertical stroke	H
+sign	35	MISC-35	mixed thin marks (line/small figure/X), n=6 -- not one shape	L
+sign	36	MISC-36	mixed complex squiggles, n=14 -- not one shape	L
+sign	37	MISC-37	mixed complex squiggles (bird-like/hook), n=12 -- not one shape	L
+sign	38	CIRC-TAIL	circle or loop with a small tail/hook	M
+sign	39	TRIDENT	trident/psi-like fork (V with extra prong)	H
+sign	40	MISC-40	mixed small glyphs (bird-track/staff/circle-crossbar), n=9 -- not one shape	L
+sign	41	MISC-41	mixed ornate scissor-like shapes, n=14 -- not one shape	L
+sign	42	CIRC-O	plain circle/donut (letter O / zero-like)	H
+sign	43	MISC-43	mixed ornate (V-loop/box/staff/hook), n=12 -- not one shape	L
+sign	44	CRESCENT	crescent/C-shape, moon-like	H
+sign	45	BAR-SOLID	solid vertical bar, clean, same family as c8/c10	M
+sign	46	MISC-46	mixed pct-ish plus rare letters (A, T), n=14 -- not one shape	L
+sign	47	X	clean X, tall	H
+sign	48	CROSS-T	Latin cross / dagger (cross with horizontal bar near top)	H
+sign	49	VENUS	loop over a small cross/tail (Venus-symbol-like)	H
+sign	50	MISC-50	small mixed marks (short vertical + dot), n=5 -- possibly attribute marks misclassified as signs	L
+sign	51	BAR-THIN	thin vertical bar/dashed variant, same family as c12	M
+sign	52	X	X with a small loop/tail at the base (variant)	M
+sign	53	X	bold doubled X / starburst variants	M
+sign	54	MISC-54	mixed ornate loop-with-descender (bird-head-like), n=10 -- not one shape	L
+sign	55	MISC-55	mixed solid filled rounded/blocky shapes, n=18 -- several distinct solid pictograms, not one shape	L
+sign	56	X	clean X	H
+sign	57	PCT	percent-like variants (a few outliers: T, ?)	M
+sign	58	WAVE	small wave/zigzag, same family as c27	M
+sign	59	VEE	V or checkmark stroke	H
+sign	60	MISC-60	rare pictograms (animal/bird silhouettes), n=6 -- likely several distinct pictograms, not one sign	L
+sign	61	DASH-H	short horizontal dash/bar	H
+sign	62	X	X with curl/dot variant	M
+sign	63	NOTE	loop with descending tail (musical-note/letter-b-like)	H
+sign	64	MISC-64	mixed boxy pictograms (bucket/boxed-M/hook/U/star), n=7 -- not one shape	L
+sign	65	TRIPOD	triangular/tripod-like shape with legs	M
+sign	66	PCT	percent-like, heavy confirming cluster, same family as c9/c57	H
+sign	67	MISC-67	mixed ornate loop pictograms (M-shape/asterisk/spiral), n=17 -- not one shape	L
+sign	68	CROSS-T	Latin cross / dagger, bold variant, same family as c48	M
+sign	69	AMP	ampersand-like ligature (loop + crossbar)	H
+sign	70	WAVE	larger/ornate wave/S-curve, same family as c27/c58	M
+sign	71	MISC-71	mixed pictograms (crown-like/winged-T/moon+circle), n=7 -- not one shape	L
+sign	72	RHO	loop with descending tail (rho/P-like)	H
+sign	73	EYE-DOT	solid round shape with a white gap/dot (eye-like)	M
+sign	74	MISC-74	mixed small hook/check shapes, n=5 -- not one shape	L
+sign	75	MISC-75	bold X/dagger-like variants, ambiguous between X and CROSS-T families	L
+sign	76	MISC-76	mixed ornate (H-ladder/bottle/pct/spiral), n=11 -- not one shape	L
+sign	77	DELTA-TAIL	circle/loop with a tail, cursive-delta-like	M
+sign	78	MISC-78	mixed bird-head/hook shapes, n=3, small sample	L
+sign	79	MISC-79	mixed small squiggle/hook, n=5, small sample	L
+sign	80	MISC-80	bold X/star with cross-hatching, uncertain X-family variant	L
+sign	81	MISC-81	mixed small (arrow-circle/star/X), n=3, small sample	L
+sign	82	MISC-82	mixed circle/loop varieties (tally/tadpole/teardrop), n=11 -- not one shape	L
+sign	83	MISC-83	mixed pictogram (bird/scepter/checkmark), n=5, small sample	L
+sign	84	X	clean bold X	H
+sign	85	V-DOT	V/vee with a dot above	M
+sign	86	PHI	phi-like loop-with-vertical-stroke, same family as c34	H
+sign	87	MISC-87	mixed ornate (staff/loop/pct/Venus-like), n=10 -- not one shape	L
+sign	88	Y-CURL	Y/chi-fork/dagger-tail, same family as c19 (or possibly a key pictogram)	M
+sign	89	LOOP-TAIL	small loop-tail variant, same family as c23	M
+mark	0	M-TILDE	short horizontal wave/tilde above the sign	H
+mark	1	M-DOT-FLAG	small flag-like blob mark	M
+mark	2	M-RING	small ring/donut mark	H
+mark	3	M-DOT	solid small dot/block mark (most common mark)	H
+mark	4	M-TICK-V	short vertical tick mark	H
+mark	5	M-DASH-H	short horizontal dash mark (very common)	H
+mark	6	M-LOOP-SM	small loop/circle variant mark	M
+mark	7	M-DOT	solid block variant, same family as m3	M
+mark	8	M-RING	donut/circle small, same family as m2	M
+mark	9	M-TICK-V	thin vertical tick, same family as m4	M
+mark	10	M-TILDE	wavy squiggle, same family as m0	M
+mark	11	M-TICK-V	tick/curl mix, same family as m4 -- heterogeneous, lower confidence	L
+mark	12	MISC-M12	mixed tick/flag shapes, n=21 -- not one mark	L
+mark	13	M-SLASH-SM	short diagonal tick	M
+mark	14	MISC-M14	single caret/chevron mark, n=1	L
+mark	15	M-RING	mixed round blobs, same family as m2, n=13	L
+mark	16	MISC-M16	single distinct blob, n=1	L
+mark	17	M-DASH-H	horizontal dash variant, same family as m5	M
+mark	18	MISC-M18	single hook mark, n=1	L
+mark	19	MISC-M19	single hook mark, n=1	L

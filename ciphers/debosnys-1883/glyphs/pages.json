@@ -38,5 +38,25 @@
    430
   ],
   "median_h": 22.0
+ },
+ "c4a": {
+  "image": "images/Debosnys-Cryptogram-4a.png",
+  "box": [
+   0,
+   425,
+   1107,
+   1493
+  ],
+  "median_h": 29.0
+ },
+ "c4b": {
+  "image": "images/Debosnys-Cryptogram-4b.png",
+  "box": [
+   0,
+   0,
+   1105,
+   410
+  ],
+  "median_h": 32.0
  }
 }
