@@ -1,0 +1,19 @@
+{
+ "slug": "na-janssens-java-1811",
+ "name": "NA 2.01.27.05 invnr 12, leaf 188 ('Numero Un. Triplicata'), Gouverneur-General J.W. Janssens (Java) to the Minister, Hollandse Divisie, Paris, dispatch No.1, 1811",
+ "language_candidates": ["fr"],
+ "ciphertext": "ciphers/na-janssens-java-1811/ciphertext.tsv (VX-RD02, 25 Sept 2026, single careful crop-assisted read; not a two-pass reconciliation like the key-source leaves)",
+ "ciphertext_source": "Nationaal Archief 2.01.27.05 invnr 12, leaf 188, service.archief.nl IIIF full/2561 (images/188_hi.jpg)",
+ "alphabet": "2-4 digit numeric groups, period-separated, no other punctuation in the ciphertext",
+ "constraints": [
+  "key known: a numeric nomenclator, mostly one code per French word, some codes spelling rare/proper words letter-by-syllable, recovered from the SAME bundle's own contemporary decipherment of dispatches No.2 (leaves 190-192, interlinear gloss) and No.3 (leaves 199-200, 5-column table gloss) -- key source is 'period' (a decipherment of other text in the archive), not a separate key table, so decoded tokens grade C per rule 4, never H",
+  "key coverage is partial: only 65 of 163 target tokens (39.9%) are codes also seen in the No.2/No.3 key-source leaves, since dispatch No.1 covers different subject matter and vocabulary (see ciphers/na-janssens-java-1811/key.tsv); the remaining 98 tokens are [?] (unkeyed, grade U)",
+  "13 codes are ambiguous in the key source itself (key.tsv grade M, logged in conflicts.tsv) -- mostly minor spelling/accent variants (a/à, ou/où, port/porte) but two are semantically live: code 689 = 'de' or 'Le', codes 190/1195 = 'est' or 'en', most likely genuine homophones in the nomenclator (the same code assigned to more than one very common function word to flatten frequency)",
+  "no raw-cipher-only counterpart to leaf 188 (a 'Numero Un' decipherment) was found in the sampled 180-210 leaf range, so this reading cannot be cross-checked against a period plaintext of this exact dispatch the way the No.2/No.3 material could be (see AUDIT.md once written)"
+ ],
+ "cheap_tests_in_order": [
+  "decode all keyed tokens against the derived key and judge the (necessarily fragmentary, ~40%-covered) result as French prose (VX-RD02, 25 Sept 2026) -- expected to fail a language-model gate given the coverage gap and the bracketed [?] gaps breaking word runs; reported as a FAIL per rule 7 if so, not suppressed"
+ ],
+ "judge": {"language": "fr", "min_word_cover": 0.3},
+ "written": "25 Sept 2026, VX-RD02 (LANE VX), for .claude/briefs/runs/2026-09-25-lane-vx-rd02.md"
+}

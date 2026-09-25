@@ -1,0 +1,168 @@
+code	value	n	pages	grade	note
+12	encore	1	199	C	
+13	aux	1	191	C	
+21	bre	1	200	M	only a corrected/crossed-out cell seen
+25	a	4	191,200	M	ambiguous: a (n=3, pages=191,200); à (n=1, pages=191)
+36	heureux	1	200	C	
+43	mars	1	199	C	
+53	fi	1	191	M	single-pass only, other pass skipped this code
+60	tous	1	191	C	
+76	on	1	200	C	
+87	venir	2	200	C	
+89	tard	1	200	C	
+91	Dre	1	191	M	only a corrected/crossed-out cell seen
+95	grand	1	200	C	
+99	n'	1	199	C	
+102	peu	3	200	M	ambiguous: peu (n=2, pages=200); peut (n=1, pages=200)
+104	l'	1	191	C	
+120	Fin.	1	200	M	only a corrected/crossed-out cell seen
+131	un	4	191,200	C	
+140	de	4	191,200	M	ambiguous: de (n=3, pages=191,200); Dé (n=1, pages=191)
+142	les	1	191	C	
+146	mer	1	200	C	
+152	Sud	1	200	C	
+158	pointes	1	191	M	only a corrected/crossed-out cell seen
+168	;	1	191	C	
+172	Nord	1	200	C	
+186	ni	1	191	M	only a corrected/crossed-out cell seen
+190	est	4	190,191,199	M	ambiguous: est (n=2, pages=190,191); en (n=2, pages=199)
+195	y	2	199,200	C	
+196	il	1	200	C	
+204	Batavia	3	190,191	C	
+219	ce	2	199,200	C	
+221	l'	2	191	C	
+225	De	1	191	C	
+227	sans	1	191	C	
+264	la	1	200	C	
+299	ra	1	191	M	only a corrected/crossed-out cell seen
+304	vr	1	200	M	only a corrected/crossed-out cell seen
+331	Li	1	200	C	
+353	C.	1	199	M	only a corrected/crossed-out cell seen
+354	Je	1	199	C	
+355	car	1	200	M	only a corrected/crossed-out cell seen
+363	vé	1	200	C	
+371	eur	1	191	M	only a corrected/crossed-out cell seen
+380	ad	1	191	M	only a corrected/crossed-out cell seen
+381	chargent	1	191	C	
+393	r	2	191	C	
+404	croisières	1	191	C	
+411	ca	1	191	M	single-pass only, other pass skipped this code
+424	que	1	199	C	
+427	onze	2	199	C	
+434	par	1	200	C	
+437	s	1	199	M	only a corrected/crossed-out cell seen
+439	article	1	191	C	
+444	l'	1	200	M	only a corrected/crossed-out cell seen
+447	Je	2	191,199	C	
+448	la	1	191	C	
+454	et	1	200	M	only a corrected/crossed-out cell seen
+469	ces	1	200	C	
+472	e	1	191	C	
+494	terminé	1	191	M	only a corrected/crossed-out cell seen
+496	navire	1	191	C	
+511	le	2	191,200	C	
+516	et	1	200	C	
+527	;	1	200	C	
+529	nous	1	200	C	
+534	vent	1	200	M	only a corrected/crossed-out cell seen
+545	pour	1	200	C	
+558	cer	1	191	M	only a corrected/crossed-out cell seen
+564	de	3	191,199,200	C	
+568	ar	1	199	C	
+570	débarquer	1	200	C	
+571	ti	1	199	M	only a corrected/crossed-out cell seen
+574	Deux	4	190,191,199,200	C	
+581	Sur	2	191	C	
+587	où	3	190,191,199	M	ambiguous: où (n=2, pages=190,191); ou (n=1, pages=199)
+594	reçu	1	199	C	
+605	état	1	191	C	
+607	mal	1	200	M	only a corrected/crossed-out cell seen
+609	Dépêches	1	199	C	
+624	fe	1	191	M	only a corrected/crossed-out cell seen
+625	frigate	2	200	M	ambiguous: frigate (n=1, pages=200); frigates (n=1, pages=200)
+647	que	1	200	C	
+656	ne	3	191,199,200	C	
+659	a	3	191,199	M	ambiguous: a (n=2, pages=191); à (n=1, pages=199)
+663	ai	1	199	C	
+667	au	1	200	C	
+682	de	2	200	C	
+689	de	4	190,191,199	M	ambiguous: de (n=2, pages=190,191); Le (n=2, pages=199)
+692	;	1	191	C	
+694	crainte	1	200	C	
+696	van	1	199	M	only a corrected/crossed-out cell seen
+706	gi	1	199	M	only a corrected/crossed-out cell seen
+713	Se	1	200	M	only a corrected/crossed-out cell seen
+721	mi	1	191	M	only a corrected/crossed-out cell seen
+728	.	2	191,199	C	
+736	cent	2	190,191	C	
+738	lieues	3	190,191	M	ambiguous: lieues (n=2, pages=190,191); lieu (n=1, pages=191)
+739	la	1	191	C	
+740	is	1	199	M	only a corrected/crossed-out cell seen
+741	tenir	1	200	C	
+743	trois	1	191	C	
+744	ra	1	200	M	only a corrected/crossed-out cell seen
+760	er	1	200	M	only a corrected/crossed-out cell seen
+762	jours	1	200	C	
+766	Du	3	191	C	
+771	t	3	191	C	
+780	roient	1	200	M	only a corrected/crossed-out cell seen
+791	celle	1	200	C	
+796	pas	1	199	C	
+808	Sont	1	200	C	
+810	demandé	1	191	M	single-pass only, other pass skipped this code
+814	Treize	1	200	C	
+820	L'	1	191	C	
+822	Donne	1	191	M	only a corrected/crossed-out cell seen
+823	té	1	191	C	
+831	gno	1	199	M	only a corrected/crossed-out cell seen
+841	de	2	200	C	
+851	prét	1	191	M	only a corrected/crossed-out cell seen
+862	lors	1	191	C	
+875	ât	1	191	M	only a corrected/crossed-out cell seen
+883	Capitaine	2	191	M	ambiguous: Capitaine (n=1, pages=191); Capitaines (n=1, pages=191)
+889	expose	1	191	M	only a corrected/crossed-out cell seen
+893	puis	1	191	C	
+965	port	3	190,191,199	M	ambiguous: port (n=2, pages=190,191); porte (n=1, pages=199)
+966	le	3	190,191,199	C	
+976	ri	1	199	C	
+980	Ba	3	199,200	C	
+989	re	2	200	M	only a corrected/crossed-out cell seen
+990	.	1	200	C	
+994	Sur	1	191	C	
+997	4	1	199	C	
+998	des	2	191,200	C	
+1000	qu'il	1	199	C	
+1008	leur	1	200	C	
+1018	nos	1	200	C	
+1023	N°.	1	199	C	
+1049	événement	1	200	M	only a corrected/crossed-out cell seen
+1052	la	1	199	C	
+1077	on	1	199	C	
+1079	fait	1	200	M	only a corrected/crossed-out cell seen
+1082	avec	1	200	C	
+1089	Juillet	4	190,191,199	C	
+1090	A	3	190,191,200	C	
+1091	neuf	2	190,191	C	
+1092	batimens	2	190,191	C	
+1096	part	3	191,199,200	M	ambiguous: part (n=2, pages=191,199); par (n=1, pages=200)
+1098	ront	1	191	M	only a corrected/crossed-out cell seen
+1104	les	1	199	C	
+1106	elles	1	200	C	
+1113	licence	1	191	C	
+1116	st	1	191	M	only a corrected/crossed-out cell seen
+1119	qui	1	200	C	
+1122	le	1	200	C	
+1128	ennemie	1	200	C	
+1132	Su	1	200	M	only a corrected/crossed-out cell seen
+1134	seules	1	200	C	
+1142	même	1	191	C	
+1150	avoir	1	191	C	
+1174	intérêts	1	191	C	
+1179	oblige	1	191	C	
+1187	va	1	199	M	only a corrected/crossed-out cell seen
+1190	e	1	200	M	only a corrected/crossed-out cell seen
+1192	et	2	191	C	
+1193	détail	1	191	C	
+1194	ages	1	200	M	only a corrected/crossed-out cell seen
+1195	est	3	190,191,200	M	ambiguous: est (n=2, pages=190,191); en (n=1, pages=200)
+1197	.	4	190,191,200	C	
