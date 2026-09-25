@@ -391,3 +391,171 @@ exists, so `tools/judge_plaintext.py` was not run, and none was written (brief: 
 
 115 of 122 distinct codes (94.3%), 487 of 500 coded tokens (97.4%) in both letters. No novelty wording (rule
 10) -- report only. A verifier has not looked at this target.
+
+## Sibling and key search (25 September 2026, OX-PAGK)
+
+**Result: Paget identified with two independent printed sources; recipient inferred, not confirmed; no
+copy-free deciphered sibling or nomenclator table found; the one live archival lead (AN Marine B7) is not
+reachable from this environment -- written up as a REQUEST.md-class next step, not attempted further.**
+Cryptanalysis is still not the recommended next step (OX-PAGS's negative with control stands); this session
+did not decode anything and reports identification/search results only (rule 10: no novelty wording below).
+
+### Who Paget is (grade C -- printed sources, not yet checked against the manuscript itself)
+
+**Pierre Paget.** Two independent printed sources agree and cross-confirm:
+
+1. Anne Mézin, *Les consuls de France au siecle des lumieres (1715-1792)* (Peter Lang, 1998), entry "PAGET
+   (Pierre)" (found via Google Books full-text search, snippet only, page number not visible in the snippet):
+   "chevalier de l'ordre de Saint-Lazare et de Notre-Dame du Mont-Carmel avant 1731... [a] Genes jusqu'en 1714.
+   Il est charge de l'interim du consulat pendant une absence du consul Aubert (voir notice)." -- i.e. Paget
+   held no consular title of his own at Genoa; he stood in for the sitting consul, Aubert, during an absence,
+   until 1714.
+2. Jorg Ulbert, "L'origine geographique des consuls francais sous Louis XIV," *Cahiers de la Mediterranee* 98
+   (2019) (read via WebFetch, journals.openedition.org/cdlm/11218), the article's consul-by-post table:
+   - *Genes (consulat)*: "...1681-1699 Jean-Baptiste Aubert (Prov.); 1699-1723 Joseph-Marie Aubert (Prov.)."
+     -- confirms "Aubert," the sitting consul at Genoa across our letters' whole date range, and matches
+     Letter 1's own "le Sr Aubert[i], 5 months in post" mention (NOTES.md, Content summary, above) as almost
+     certainly the same Joseph-Marie Aubert, consul 1699-1723 (a vice-consul's separate, shorter posting, not
+     the consulship itself -- the letter's own "5 months in post" cannot be Aubert's 24-year consulship;
+     re-read that passage as being about a different, junior vice-consular post at Genoa that changed hands
+     twice in 1714, first to a "Sr Aubert[i]" then to "Laugier de Toulon," not about the consul Aubert
+     himself).
+   - *Cagliari (consulat)*: "...1692-1708 Henry Meritan (o.i.); 1714-1749 Pierre Paget (a.F.)." -- Paget
+     becomes consul at Cagliari (Sardaigne) in exactly 1714, the year of both our letters, matching Letter 1's
+     own request that Monseigneur send his "expeditions" so he can take up "le consulat de la nation en
+     Sardaigne... destine" (a request he had apparently been pursuing since an April 1712 memoire, per this
+     folder's existing Content summary section).
+
+3. Corroborating archival citations, from Google Books full-text search over the Archives nationales' own
+   printed series *Inventaire des archives de la marine* (Impr. nationale, 1964-1980; sous-serie **Marine
+   B7**, the Secretary of State for the Navy's received/sent correspondence register -- see "Recipient"
+   below) and one secondary history, all via `googleapis.com/books` with `GOOGLE_BOOKS_KEY` and `country=US`,
+   snippets only (no page opened in full view):
+   - *Inventaire des archives de la marine: Articles 1 a 20* (1964), an entry dated "2 decembre 1713. Le s.
+     Paget... (Genes)" -- Paget already writing from Genoa by December 1713, register B7 20 (this volume's
+     last "article").
+   - *Inventaire des archives de la marine: Articles 21 a 47* (1964): one entry (date read from the snippet as
+     "27 mars 1714", see caveat below) "Le s. Paget (Genes): reaction en Italie apres la paix de Rastadt; il
+     demande le consulat de Sardaigne" -- content matching Letter 1 (8 Apr 1714)'s own Rastatt-peace
+     discussion and Sardaigne-consulate request almost word for word; and a later entry, in an April-August
+     1716 run keyed to "(B7 29)", "...Paget (Cagliari): il a achete quatre esclaves pour les galeres..." --
+     Paget already installed and acting as consul at Cagliari by mid-1716, consistent with the 1714 start
+     date above.
+   - *Inventaire des archives de la marine: Articles 64 a 75* (1966), an entry keyed to "(B7 70)": "...Paget,
+     vice-consul a Genes: nouvelles a transmettre en l'absence du s[r. Aubert]..." -- explicitly gives Paget's
+     own title as **vice-consul** at Genoa, standing in during Aubert's absence, matching Mezin's "interim"
+     note above word for word. (B7 70 is chronologically much later than our two letters -- this volume's
+     range was not established this session -- so this is evidence of Paget's standing role over a run of
+     years, not a register entry for either of our two specific letters.)
+   - Georges Coulon [uncredited in the snippet; title only] / *Histoire des etablissements et du commerce
+     francais dans l'Afrique barbaresque (1560-1793)* (1903): lists "Paget, agent a Cagliari" alongside
+     "David, agent a Genes pour l'entrepot et la vente du corail," citing "Arch. nat. marine, B7" as the
+     source -- a third, independent secondary-literature confirmation of Paget's post at Cagliari, with the
+     same archival series.
+
+   **Caveat on the "27 mars 1714" date.** Read only from a Google Books search-result snippet (no page image
+   opened), so the date itself is not independently confirmed and could be a snippet-boundary misread; it
+   precedes Letter 1's own "8e Avril 1714" dateline by about a fortnight, so this register entry is either (a)
+   the same letter, registered/logged under an earlier date than its own dateline (transit-time or clerical
+   date could differ), (b) an earlier, closely related letter on the same topic that is not one of our two
+   Gallica items, or (c) a misread. Not resolved this session -- flagged for whoever can open the actual page
+   (Google Books preview, or the volume in a library).
+
+**Conclusion on identity: established beyond reasonable doubt that "Paget" is Pierre Paget, vice-consul (not
+consul) at Genoa under consul Joseph-Marie Aubert until 1714, then consul at Cagliari (Sardaigne) 1714-1749** --
+three independent printed sources (Mezin's dictionary, Ulbert's article, and the Archives nationales' own
+printed *Inventaire* of the Marine B7 register) converge on the same person, post, dates and even the specific
+"consulat de Sardaigne" request that Letter 1 itself makes in clear French. Grade C (from named printed
+sources, not yet checked against the manuscript or against each other's primary citations) rather than H;
+none of this required opening the ciphertext.
+
+### Recipient ("Monseigneur") -- inferred, not confirmed
+
+**Most likely Jerome Phelypeaux, comte de Pontchartrain, Secretaire d'Etat de la Marine (in office
+1699-1715).** Consular correspondence for the Mediterranean/Levant network ran through the Secretary of
+State for the Navy in this period (the "systeme Pontchartrain," Ulbert's own term for it, surfaced in a
+WebSearch snippet on Pontchartrain's consular administration), and -- decisively -- Paget's letters are
+indexed in the Marine ministry's own correspondence register (*Inventaire des archives de la marine*, sous-serie
+B7, above), which only holds correspondence received by or sent from that Secretary of State's office. No
+document naming Pontchartrain (or any other named recipient) for these two specific letters was read this
+session; this is an inference from the holding series and the period's known administrative structure, not a
+read of an address or a signature. Grade I. A fresh check of the letters' own salutation/address (if any
+survives beyond "Monseigneur") against Pontchartrain's known hand or seal would upgrade this; not attempted
+(would need the manuscript image, already on disk in `images/`, not re-examined this session -- out of this
+session's brief, which was archival/printed search, not image re-inspection).
+
+### Sibling / decipherment / nomenclator search -- negative this session, one live lead not reachable
+
+- **Gallica** (`gallica.bnf.fr`): one SRU query, `"Paget" "Genes" "chiffre"` -- Gallica's `all` operator does
+  an OR-style relevance search, not an AND of exact phrases (373,295 "hits," the top one an unrelated 1926
+  press photograph of a different Paget, a golfer). Not a useful search as written; a future worker should
+  use `gallica adj "chiffre de Paget"`-style adjacency/phrase clauses or the ContentSearch API scoped to a
+  specific ark, not a bare cross-corpus SRU query. Combined with OX-PAGT's collection-wide check ("no second
+  Paget item found" in the BnF finding aid's own name index, 25 Sept, cited above in this file) and the 23
+  Sept check-solved sweep (DECODE, Bourdeau, Aymeloglu, cryptiana: no hit for "Paget" or "Clairambault 1225"),
+  no second cipher exemplar or decipherment copy is known on Gallica or in the collections already swept.
+- **BnF Archives et manuscrits** (`archivesetmanuscrits.bnf.fr`): not re-queried this session (OX-PAGT's pass
+  already covered the Clairambault fonds' own name index).
+- **FranceArchives** (`francearchives.gouv.fr`): the one finding-aid page fetched ("Affaires etrangeres.
+  Correspondance consulaire; consulats") returned empty content to WebFetch (client-rendered page, not
+  fetchable this way); not retried with the browser tool (out of scope for a plain-fetch/search pass at this
+  cap).
+- **Archives nationales / archivesdiplomatiques.diplomatie.gouv.fr**: `archivesnationales.culture.gouv.fr` --
+  the host serving the AE/B/I and AE/B/III printed inventory PDFs (`AE_BI.pdf`, `AEBIII.pdf`) -- is
+  **unreachable from this environment**: `curl` returns `Could not resolve host` on plain HTTP and the agent
+  proxy returns `CONNECT tunnel failed, response 502` / "connect_rejected (organization policy)" on HTTPS,
+  confirmed by the reachability test this session (`000`-equivalent, per CLAUDE.md's "Access playbook" test).
+  Logged here and not retried, per the good-citizen rule. One PDF from `archivesdiplomatiques.diplomatie.gouv.fr`
+  (a different, reachable host) was fetched but WebFetch could not extract text from it (raw PDF stream, not
+  OCR'd for this tool); not pursued further with a local PDF-text extractor (no `pdftotext` installed, out of
+  proportion for this cap).
+- **No printed edition, nomenclator table, or "chiffre de M. Paget"/"chiffre pour Genes" was found** in any
+  source searched this session (Google Books queries above, WebSearch queries on Pontchartrain/consuls/Genoa
+  cipher terms). The 1903 Afrique-barbaresque history and the *Inventaire* volumes cite AN Marine B7 as an
+  archival source, never reproduce or transcribe Paget's letters.
+
+### The one live lead: AN Marine, sous-serie B7
+
+Paget's original letters to the Secretariat of State for the Navy are catalogued within **Archives
+nationales, Marine, sous-serie B7** (Correspondance recue par le secretaire d'Etat de la Marine), somewhere in
+the volumes ("articles") the printed *Inventaire* numbers in the low-to-mid 20s for the 1713-1716 span (B7 20
+still in December 1713; an April-1714-dated entry sits within "Articles 21 a 47"; B7 29 reaches August 1716) --
+the exact article number for April and August 1714 specifically is **not pinned down this session** (would
+need the actual volume, not just Google Books' snippet-level search, to see the full run of dates within each
+article). If the Secretariat's cabinet du chiffre decoded Paget's coded passages on receipt in 1714 (as the
+BnF Clairambault 1225 copy's own interlinear glosses in Letter 1 suggest someone did, at least partially, for
+some passages -- see the "Interlinear glosses" table above), the AN Marine B7 original could carry either (a)
+more/different interlinear decipherment than survives on the Clairambault copy, or (b) a separate loose
+"dechiffrement" sheet filed with it -- either of which is exactly the "sibling with a contemporary
+decipherment" LESSONS.md recommends looking for, and would settle far more of the 115 still-unread codes than
+another cryptanalysis attempt. This is not digitised or online anywhere found this session (no Gallica IIIF,
+no francearchives item-level record, no other digitisation project hit) and the AN's own online description
+of the series is unreachable from this environment (above). **This is a REQUEST.md-class next step**: a
+future access worker or the person would need to identify the exact article number (from the physical
+inventory volumes, or from the AN's own online catalogue reached from an unrestricted network) and request or
+photograph AN Marine B7, article ~21-29 (Genes/Paget correspondence, 1714), at Pierrefitte-sur-Seine. Not
+written as a formal REQUEST.md entry yet (the article number is not narrow enough to make a useful request;
+narrowing it needs one more search pass with the actual AN catalogue, not blocked on the person).
+
+### What was not attempted this session
+
+- Re-inspecting the manuscript images for the letters' own address/salutation beyond "Monseigneur" (would
+  support or rule out the Pontchartrain inference) -- out of this session's brief (archival/printed search).
+- Opening any Google Books result beyond the search snippet (would need a full-view/public-domain volume and
+  a specific page number, neither established this session for the *Inventaire de la marine* volumes, which
+  are library-search-only previews).
+- A browser-tool fetch of the FranceArchives finding aid (its content is JS-rendered; plain WebFetch returned
+  nothing).
+- OpenAlex/Persee/HAL scholarship search specifically for "Paget" + "Genes"/"Cagliari" consul (the two
+  sources found, Ulbert 2019 and Mezin 1998, came from ordinary web search and Google Books, not the
+  open-index APIs); a next pass could check whether either is discussed further or corrected in later
+  scholarship.
+
+### Requests (this session)
+
+`journals.openedition.org` 1 (WebFetch); `archivesdiplomatiques.diplomatie.gouv.fr` 1 (WebFetch, PDF,
+unreadable by the tool); `francearchives.gouv.fr` 1 (WebFetch, empty/JS-rendered); `gallica.bnf.fr` 1 (one SRU
+query, unhelpful as written -- logged above); `googleapis.com/books` 9 (search + volume-metadata calls,
+`GOOGLE_BOOKS_KEY`+`country=US`, all sequential, well over 1.5s apart); `archivesnationales.culture.gouv.fr`
+1 reachability test (blocked, not retried, logged above). WebSearch: 6 queries (no host/rate rules apply to
+this tool). No Gallica image/IIIF fetches this session (no "Gallica slot" claim needed).
