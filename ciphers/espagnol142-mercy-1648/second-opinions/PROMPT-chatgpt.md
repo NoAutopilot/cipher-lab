@@ -30,7 +30,7 @@ WHAT TO LOOK FOR
    Brandenburg Rhineland lands in 1648. Candidate places: Lonchay, Cuvelier and Lefèvre, Correspondance de la Cour
    d'Espagne sur les affaires des Pays-Bas au XVIIe siècle, vol. IV (1933); Urkunden und Actenstücke zur Geschichte des
    Kurfürsten Friedrich Wilhelm von Brandenburg (any volume); Acta Pacis Westphalicae; CODOIN vols 82-84; Victor Cousin,
-   Madame de Chevreuse; Lonchay, La rivalité de la France et de l'Espagne aux Pays-Bas (1896); studies of Leopold
+   Madame de Chevreuse (1856, appendix pp. 425 ff.); Cuvelier and Lefèvre, Correspondance ... tome VI (1937), p.647 (a summary that says Leopold Wilhelm sent the abbé de Mercy to negotiate and mentions a cipher: what exactly does it say?); Lonchay, La rivalité de la France et de l'Espagne aux Pays-Bas (1896); studies of Leopold
    Wilhelm's government of the Netherlands; Dutch or German studies of Brandenburg-Spanish relations 1648.
 2. Any clear copy of the instruction: Archives générales du Royaume, Brussels, Secrétairerie d'État et de Guerre
    (Lonchay's "S.E.E." registers t. LXIV-LXV, 1648), Simancas Estado (Flandes, 1648), Vienna HHStA.

@@ -47,8 +47,8 @@ transcription changes made by the reader, graded M; and roughly two fifths of th
   instructions to Mercy (a plain sibling) and a Leopold-to-king dispatch of 30 Aug 1648, and prints neither text.
 - **Not N4:** principal families are only partly covered. Acta Pacis Westphalicae's full-text search was down
   (HTTP 505 on every query, including a control term) and so is unreachable, not negative; Lonchay-Cuvelier IV
-  (the calendar of Philip IV's letters 1647-1665) is in copyright and was covered only at token level (HTRC EF) and
-  by Google Books snippet; Urkunden und Actenstücke Bd. 1 only at token level; Simancas Estado and the Brussels SEE
+  (the calendar of Philip IV's letters 1647-1665) is not on IA and is in copyright on HathiTrust and was covered only at token level (HTRC EF) and
+  by Google Books snippet; CODOIN 82-84 are not on IA; Cuvelier-Lefèvre VI p.647 (a calendar summary naming Mercy, Leopold Wilhelm and a cipher) is lending-only and was seen only as a snippet; Simancas Estado and the Brussels SEE
   registers (where Leopold's dispatches with enclosed instructions are filed, per Lonchay's own footnotes) are
   unprinted archives, not searched.
 
@@ -102,17 +102,19 @@ drop it to N2; (d) a blind re-transcription of the five 14/19 glyphs and of r16-
 |---|---|---|---|
 | (a) Le Clerc, Négociations secrètes III-IV (1725) | searched (LANE CX, re-used) | full djvu text grepped: Mercy, Barneton | 0 hits |
 | (a) Acta Pacis Westphalicae (apw.digitale-sammlungen.de) | **unreachable** | search form found (`/search/query.html?q=`), Anubis cleared with browser tool; backend returned "Error 505 Internal Server Error" for every query incl. control "Munster"; queued: Mercy, Merci, Barneton, Warneton, "Abt von Mercy", "abbé de Mercy", Sumiller. (CX earlier: APW II B ends 1647/19 May 1648, so the French series cannot hold a 6 June 1648 item.) Google Books snippet shows APW volumes (Neerfeld/Heuser 1979) name "l'abbé de Mercy" in the Spa/Chevreuse episode -- a different episode | not searched; retry owed |
-| (a/c) CODOIN vols 82-84 (Münster plenipotentiaries 1643-48) | see IA sweep below | | |
+| (a/c) CODOIN vols 82-84 (Münster plenipotentiaries 1643-48) | **unreachable** | IA advancedsearch, 3 query variants over the CODOIN run on IA: tomos 2, 4-8, 13 ... 74 present, 82-84 absent under every title form | not searched; owner/HathiTrust full text owed |
 | (a/c) Lonchay, Cuvelier, Lefèvre, Correspondance de la Cour d'Espagne ... IV, Précis de la correspondance de Philippe IV (1647-1665), 1933 (HathiTrust mdp.39015014126620, search-only) | searched at token level + snippet | HTRC EF: "mercy" on 27 pages, "brandebourg" 22, "chevreuse" 12, "clèves" 1 (seq 536, with brandebourg, not with mercy); no "barneton"/"warneton"/"cleves"/"brandenburg". Google Books snippets: "abbé de Mercy (fol. 85)", "(fol. 249)", "Quam flaco medio es el Abbad de Mercy" | no page reads as this instruction; pages not readable from the cloud -> LOCAL/JSTOR-style owner check |
+| (a/c) Lonchay-Cuvelier III (IA `correspondancede0003unse`, fts) and V (`correspondancede0005unse`, fts) | searched | Mercy, Barneton, Sumiller | III: one Mercy hit, 1642 (Melo dispatches; a mémoire from the abbé Mercy for the duchesse de Chevreuse -- the Guise-era channel); V: 0 |
+| (a/c) Cuvelier-Lefèvre, Correspondance ... tome VI (1937), IA `correspondancede0006jose` (lending only, fts snippets) | searched, snippets only | Mercy, Clèves, Brandebourg | index: "Mercy (L'abbé de), 647, 15, 20"; text: "... chiffre a cet effet. Il en est de même de l'abbé de Mercy qui a été envoyé par Léopold-Guillaume pour traiter ..." and "... paraissent émaner de ces négociations de Mercy avec Chevreuse". A calendar summary on one page (647) that ties Mercy, Leopold Wilhelm and a cipher together; not a print of this instruction as far as the snippets show (its Clèves/Brandebourg hits are the 1609-14 succession). **Owner read of p.647 owed** (lending-only; the page may name the cipher Mercy was given) |
 | (a/c) Lonchay-Cuvelier III (mdp.39015014126638) | token level | clèves+brandebourg seq 114; mercy+chevreuse seq 488; no co-location of Mercy with Cleves | no hit |
 | (b/c) Lonchay, La rivalité de la France et de l'Espagne aux Pays-Bas (1635-1700), 1896 (IA `la-rivalite-de-la-france-et-d-espagne-aux-pays-bas-1635-1700`) | searched, full text | Mercy, Clèves, Brandebourg, Barneton, Warneton | pp. 406, 445: Mercy as Leopold's chaplain, Holland 1647, talks with Chevreuse/Saint-Ibal at Kerpen and Spa; n.2 p.445 cites "Instructions à Mercy, du 15 avril 1648, jointes à la dépêche de Léopold au roi du 18 (S.E.E., t. LXIV, f.16)" and Léopold au roi 30 août 1648 (t. LXV f.181). Nothing on a Cleves/Brandenburg mission or the 6 June instruction |
-| (b) Cousin, Madame de Chevreuse (appendix pp. 425 ff. prints P. Ernest de Mercy's 27 Sept 1647 memoir = sibling item 8) | see IA sweep below | | |
-| (b) Urkunden und Actenstücke ... Friedrich Wilhelm, Bd. 1 (mdp.39015039387538) | token level | "mercy" seq 485, 868; cleve tokens not co-located | no hit; other volumes see IA sweep |
+| (b) Cousin, Madame de Chevreuse (Lonchay 1896 p.445 n.1: its appendix pp. 425 ff. prints P. Ernest de Mercy's 27 Sept 1647 memoir = sibling item 8) | searched in part | IA `madamedechevreus02cous` (Madame de Chevreuse et Madame de Hautefort t.II) full djvu grepped: Mercy, Kempen, Saint-Ibal, Barneton | no 1648 Mercy mission text; the 1856 *Madame de Chevreuse* appendix itself not located on IA this pass -- a lead: it prints a sibling from the same channel, so check it for the 6 June instruction |
+| (b) Urkunden und Actenstücke ... Friedrich Wilhelm | searched | IA full djvu grepped Bd. 1, 2, 4, 5; be-api fts Bd. 6-13, 15, 17, 19 (Mercy, Merci, Barneton, Warneton, Sumiller); HTRC EF Bd. 1 (1930 ed.) | 0 hits for this Mercy (every Mercy/Merci is remercier, commercia or the general Franz von Mercy); Bd. 3, 14, 16, 18 not checked |
 | (b) Aumale, Histoire des princes de Condé; Mazarin, Lettres (1883); Goulas (1879); Retz (1872); Herrero Sánchez (2000); Gayangos, Catalogue of Spanish MSS in the British Museum | Google Books snippets | same Mercy ("sommelier de cour", brother of the general killed at Allerheim), other missions; Gayangos lists a different BM instruction to "el abbad de Mercy" with "cartas de creencia" | no hit on this instruction; Gayangos BM item is a lead for a sibling (section 6) |
 | (d) BnF finding aid cc347546, all three tomes | searched (M3) | only item marked "chiffrée" is the target | no decipherment noted |
 | (e) Google Books API | searched, 19 queries | period and modern spellings: "abad/abbad de Mercy", "abbé de Mercy" 1648, "baron de Mercy" Cleves, "sumiller de cortina" Mercy, Barneton+Leopoldo, "pasareis a Cleves", "pasaréis a Cleves", "tres mil hombres de infanteria" Cleves, "cartas de creencia que van con esta", "elector de Brandemburg" Mercy, Chevreuse, Saint-Ibal, Kempen, "dilacion que aya es summamente", Abt von Mercy, Friedrich Wilhelm Cleve Werbung | no hit on this letter; formula phrases occur generically in unrelated books |
 | (e) HathiTrust | bibliographic + EF API reached; full text/page images unreachable from the cloud (Cloudflare) | as above | |
-| (e) Internet Archive | searched | see IA sweep | |
+| (e) Internet Archive | searched | advancedsearch + djvu/fts as in the rows above; global fts "Barneton" (486 hits) and "Sumiller de Cortina" (term-split) dominated by unrelated items, not pursued | no hit on this letter |
 | (f) Cryptiana (snapshot + 2 live fetches) | searched | Mercy, Barneton, Warneton, Espagnol 14x, Leopold | only Leopold Wilhelm's own Ferdinand III cipher correspondence (Pecho); no hit |
 | (f) dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers (fresh shallow clones) | searched | barneton, warneton, espagnol 142-144, cc347546, btv1b10035717h, abad/abbé de Merc*, baron de mercy, sumiller, Leopold Wilhelm | no hit (one "leopold" hit is Conti to Noirmoutier 1649, unrelated) |
 | (f) DECODE listing (repo harvest 24 Sept + Aymeloglu's decode-catalog.csv, 10,107 rows) | searched | mercy, barneton, espagnol 14, leopold | no record of this item; R958-R965 Brussels SEE keys 1647-98 exist (key family lead) |
@@ -129,6 +131,9 @@ of a first", said in those words only, with the caveat that the reading itself i
 
 ## 6. Leads for the next worker (one line each)
 
+- Owner/local: read Cuvelier-Lefèvre tome VI (1937) p.647 (IA `correspondancede0006jose`, lending only): the calendar summary that ties Mercy, Leopold Wilhelm and a cipher together. If it quotes the 6 June instruction, reclassify (N2 or N1); if it names the cipher sheet, that is the period-key route.
+- Find and read the appendix of Cousin, *Madame de Chevreuse* (1856; pp. 425 ff. per Lonchay 1896), which prints a sibling from the same channel.
+- CODOIN vols 82-84: not on IA; HathiTrust full text from the owner's machine.
 - Retry APW full-text search (Mercy, Barneton, Warneton, Sumiller) when the site's backend recovers.
 - Owner/local: read Lonchay-Cuvelier IV (HathiTrust mdp.39015014126620) at the "Mercy" pages for June-Sept 1648
   (the king's replies to Leopold) -- a calendar entry on a Cleves levy through Mercy would be context, and would name
@@ -152,7 +157,7 @@ brief's touch list); flagged in NOTES.md.
 
 ## 8. Requests (this session and its three Sonnet subagents)
 
-archive.org 4 (advancedsearch 2, metadata 1, djvu 1) plus the IA sweep's count below; api.openalex.org 7;
+archive.org about 34 (this session 6, IA sweep about 28); be-api.us.archive.org about 36; api.openalex.org 7;
 api.semanticscholar.org 7 (5 + 2 retries); github.com 2 shallow clones; Google Books ~19; openlibrary.org 4;
 catalog.hathitrust.org 4; data.htrc.illinois.edu ~6; apw.digitale-sammlungen.de ~7; HAL 5; CrossRef 5; Persée 6;
 cryptiana.web.fc2.com 2. gallica.bnf.fr 0 (images on disk).
