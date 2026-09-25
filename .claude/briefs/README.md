@@ -52,3 +52,6 @@ family against a pre-written decision rule (written the cycle before, not moved 
 writes the next cycle's job briefs. Worked example: `.claude/briefs/runs/2026-09-25-lane-gold-consolidator-c2.md`
 (LANE GOLD cycle 2, Fable) -- three Sonnet workers' family_run.py rows read together, the cycle-1 decision rule
 applied unchanged, and three named cycle-3 briefs written from it.
+- A credential you need and the container lacks: `python3 tools/key_request.py NAME --purpose "..." --tool tools/x.py --by "<you>"`
+  files it (KEYS.md, ASKS.md, ROOM.md); the owner adds it on both accounts; a later fresh session announces it in ROOM.md. Do the
+  part of the job that does not need it and stop; never ask for a value in chat, never print one.

@@ -76,8 +76,22 @@ def start():
     # Key probe (25 Sept 2026, UPDATES.md): names only, so a session sees at once which credentials its container
     # carries and which the repo has not documented yet (a key added on one account was missed by the other).
     try:
-        import subprocess as _sp
-        print(_sp.run([sys.executable, "tools/key_probe.py", "--quiet"], capture_output=True, text=True, timeout=10).stdout.strip())
+        out = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "key_probe.py"), "--sync"], capture_output=True, text=True, timeout=20, cwd=ROOT).stdout
+        print(out.strip())
+        # Announce (25 Sept 2026, owner's ask): a requested key that has appeared, or an undocumented one, is posted to
+        # ROOM.md by the first fresh session that sees it, so both parents learn of it without the owner writing anything.
+        acct = os.environ.get("CIPHERLAB_ACCOUNT") or "unlabelled"
+        news = [l.split(": ", 1)[1] for l in out.splitlines() if l.startswith("KEY NOW SET: ")]
+        undoc = [l.split(": ", 1)[1] for l in out.splitlines() if l.startswith("KEY UNDOCUMENTED: ")]
+        if news or undoc:
+            sig = []
+            if news: sig.append("key now set on account " + acct + ": " + ", ".join(news) + " (KEYS.md row flipped to set; for both parents)")
+            if undoc: sig.append("flag: undocumented key present on account " + acct + ": " + ", ".join(undoc) + " (KEYS.md row added; document before use)")
+            with open(ROOM, "a", encoding="utf-8") as f:
+                f.write(f"{utc()} | key probe (tools/room.py --start, account {acct}) | " + "; ".join(sig) + "\n")
+            push("KEYS.md: key probe on account " + acct, ["KEYS.md", "ROOM.md"])
+        elif sh("git", "diff", "--quiet", "--", "KEYS.md").returncode:
+            push("KEYS.md: seen column, account " + acct, ["KEYS.md"])
     except Exception as e:  # never block a start on the probe
         print(f"key probe skipped: {e}")
     return 0

@@ -641,6 +641,18 @@ search is reachable but functionally unusable, drowned in unfiltered noise).
    `CORE_API_KEY` (set 25 Sept 2026, probe 22:58 UTC: HTTP 200 with `Authorization: Bearer`, path `v3/search/works/` with the trailing slash -- without it the API answers 301 to an HTML redirect; keyless calls get 429) (CORE open-access full text, `Authorization: Bearer`; for verifiers' scholarship searches). Where a key
    is absent, fall back to the keyless route and say so in NOTES.md; a missing key never blocks a job.
 
+   **Keys are a register, a request tool and an announcement (owner's ask, 25 Sept 2026, about 22:45 UTC).** `KEYS.md` is the
+   one list of credential names, their purpose, the tool that reads them and which account has seen them. An agent that needs a
+   key runs `tools/key_request.py NAME --purpose "..." --tool tools/x.py --by "<lane/worker>"` (writes the KEYS.md row as
+   `requested`, the ASKS.md row for the owner's desk and a ROOM.md flag); the owner adds the variable in the environment
+   settings of BOTH accounts (a session started before the change never sees it); the next fresh session on each account
+   runs `tools/key_probe.py --sync` inside `tools/room.py --start`, which flips the row to `set`, records the account and
+   time in `seen`, and appends "key NAME now set on account X" to ROOM.md, so both parents learn of it at their next
+   check-in with no message from the owner. A `set` row seen by one account only is a key the other still lacks; a row
+   whose purpose reads "undocumented" is not used until a brief names the service. Accounts label themselves with
+   `CIPHERLAB_ACCOUNT` (`ytbiz`, `owner`; ASKS row 63). The prose lists above stay as the how-to per host; KEYS.md is
+   the presence record.
+
    **Key probe, 25 Sept 2026, 22:44 UTC (parent 7d, after the owner reported that keys added on one account for a worker there were
    missed by the other).** `python3 tools/key_probe.py` lists, by name only, every credential variable this container carries
    against the list documented here, and `tools/room.py --start` prints its one-line summary at every session start; a name it

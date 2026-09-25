@@ -19,6 +19,11 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    target reads `closed-negative` is a rule-5 breach to reverse. Nothing leaves the register without the named next
    step's numbers or a verifier class.
 
+0a. **Keys.** `python3 tools/key_probe.py --sync` (room.py --start ran it at your start; run it again here only in a fresh
+   container). KEYS.md rows still `requested` are on the owner's desk (ASKS); a "key now set" ROOM line from either account
+   means the briefs that waited on it can run; a `set` row seen by the other account only means this account's environment
+   still lacks it (say so in the parent handoff line, once). Never pass a value anywhere.
+
 1. **Rate limit.** `rate_limit_info` on yourself and on each lane orchestrator. BUDGETS.md scaling rule: `allowed`
    spawn freely; `allowed_warning` on any session means no new workers anywhere (running ones finish); `rejected`
    means every lane writes its handoff and stops. Post the state in ROOM.md when it changes.
