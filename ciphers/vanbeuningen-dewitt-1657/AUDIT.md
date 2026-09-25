@@ -182,3 +182,121 @@ silently skipped.
 `studenttheses.uu.nl` 2, `books.google.com` 1 (browser_fetch, not used further once search-within-volume
 worked), `github.com` 2 (fresh shallow clones). No subagents used. All single-host, >=1.5s apart, no 429 except
 the two noted (each retried once, not chased further).
+
+## Second audit (AUD2, 25 Sept 2026)
+
+Separate session (parent worker AUD2, Sonnet, session_01NTKxpfXJHgtJsE3FsX7cKB), adversarial, per
+`.claude/briefs/runs/2026-09-25-parent-second-audits.md`; not the OX-VBV session above, did not protect its
+conclusions, did not touch key.tsv/reading.txt/ciphertext.tsv. Read the first audit (sections above), NOTES.md,
+plaintext_print.txt, reading.txt and phrases.txt first, then searched independently by different routes, per the
+brief's instruction to try any further route to Postma 2006.
+
+**Key source (rule 10, 25 Sept 2026 addition -- missing from the verdict table above, added now):** item 1 (the
+letter's plaintext) is **`published`** with `text: known` -- Fruin/Japikse's 1919 printed edition, credited above.
+Item 2 (the key/decipherment of the cipher copy ff.210-211 itself) is **`ours`** -- recovered by this repo's own
+cryptanalysis (OX-VBS/OX-VBS2); no period key sheet or published key for this specific item was found by either
+audit.
+
+**New routes tried, not run by the first audit:**
+
+1. **Postma 2006/2007, five additional distinct routes -- all now confirmed dead, blocked, or bibliography-only,**
+   closing this off as genuinely exhausted rather than merely untried:
+   - NARCIS.nl: fully decommissioned (301 redirect to dans.knaw.nl), not merely down.
+   - `igitur-archive.library.uu.nl` (the pre-DSpace-7 Utrecht repository): direct fetch proxy-rejected; a Wayback
+     CDX sweep of the whole domain for "postma|beuningen|8472" found zero genuine hits (weak negative -- CDX
+     indexes URLs, not full text).
+   - A direct title search surfaced new bibliographic facts the first audit did not have: the author's full name
+     is **Mirte Postma**, and the work was **published as a printed pocket book in 2007 by Uitgeverij Scriptio,
+     Deventer, ISBN 978-90-8773-007-9, 160 pp.** -- not merely an unpublished doctoraalscriptie as both audits had
+     assumed until now.
+   - WorldCat, queried directly by this ISBN: **"No results"** -- a clean negative; no library holding recorded
+     anywhere WorldCat indexes.
+   - Google Books API (working this pass with `country=US`): one bibliography-only record for this ISBN
+     (`readingModes: {text:false, image:false}`) -- no snippet or full-text search possible.
+   - `ethesis.net/beuningen/beuningen.htm` (an abstract/landing page for this exact work) and the publisher's own
+     `scriptio.nl` page (live site now parked/dead, but a 2019 Wayback snapshot of the actual product page was
+     fetched) -- both are landing-page/marketing text only, zero cijfer/geheimschrift/sleutel keyword hits.
+   - Academia.edu, a different document id than the first audit tried (`academia.edu/30782917`): still HTTP 403,
+     same wall as before.
+   - **Net effect:** the book itself remains fully unreached, but is now identified precisely enough (real author,
+     real publisher, real ISBN, confirmed 160pp, no WorldCat holding) that the concrete next step is a request to
+     a Dutch public library or the KB/Picarta system for a physical copy, not further web routes -- NARCIS,
+     Igitur and scriptio.nl are confirmed dead ends now, not merely untried.
+2. **A previously-unflagged adjacent primary source, found via an alternate-spelling IA search (item 6 below):
+   Robert Fruin (ed.), *Brieven van Johan de Witt*, Deel I, 1650-1657(1658)*** (completed by G.W. Kernkamp,
+   Amsterdam 1906; IA `werken28nethgoog`) -- the outgoing-letters companion to the *Brieven aan Johan de Witt*
+   edition (Fruin/Japikse 1919) the first audit already used; same editor and correspondence circle, not
+   previously checked. Read in full (36,789-line OCR). Findings, adjacent but negative for item 2:
+   - **p.71-72 prints a genuine period cipher key**: De Witt's own numeral-to-letter table for HIS outgoing
+     cipher letters TO Van Beuningen, dated February 1653 (four years earlier, opposite direction). Compared
+     directly against `key.tsv`, value by value: **does not match** (e.g. Fruin's 50-51=s vs our 50-52=e;
+     Fruin's 24-25=h vs our 25-26=t; Fruin's 44-45=p vs our 44=b) -- same general system type (small-number
+     homophonic substitution, more codes for frequent letters) and a similar numeric ceiling, but a different,
+     period/direction-specific key, not our target's key. Confirms 17th-century Dutch diplomatic practice used
+     multiple distinct keys even within one correspondence pair, rather than evidencing a shared key.
+   - The same volume's calendar entry for De Witt's own reply of 19 October 1657 corroborates the letter pair
+     our target belongs to (matches the "beantwoort den 19en October 1657" docket already read off the
+     manuscript) but carries **no footnote about a cipher** for the 19/29 Sept incoming letter -- soft negative
+     evidence, since this is exactly where an editor who knew of one would have flagged it.
+   - **pp.440-441, a Kernkamp footnote**: the editor deciphered three separate Van Beuningen cipher letters to
+     the Burgomasters of Amsterdam, dated Copenhagen **28 October 1657** (nine days later, different recipient,
+     different archive -- Amsterdam city archive, not NA 3.01.17) "omdat de sleutel van het geheimschrift voor in
+     de portefeuille ligt". The deciphered plaintext is quoted but the numeral key table itself is not printed,
+     so no direct comparison against `key.tsv` was possible. A different specific letter/date/recipient/archive
+     from our target -- not a prior decipherment of ff.210-211 -- but strong corroborating evidence that Van
+     Beuningen's autumn-1657 Copenhagen cipher traffic was, in at least one adjacent case, already keyed and
+     solved before 1906. This footnote's plaintext again uses "Rijcxhofmeester ende Reets" as a generic Danish
+     court title, a third independent confirmation of the title-word-coincidence pattern already flagged for
+     "Rijcxhoffmeester" in the first audit's section (e).
+   - Front matter dates Fruin's working excerpts of this correspondence to 1863-1868; nothing references
+     NA 3.01.17, inv.1538, "onopgelost", or a cipher for the 19/29 Sept 1657 letter specifically.
+3. **vriendenvandewitt.nl, searched more broadly** than the one citing scriptie the first audit checked: found
+   and read a De Witt-prize contest PDF (`jacobbaxterdewittentry.pdf`, on 17th-century newspaper-advertisement
+   crowdsourcing) -- unrelated, zero relevant hits. A Postma-authored presentation file (`.ppt`) linked from the
+   same site could not be rendered as text -- logged unreachable-format, not a negative.
+4. **Danish-side scholarship**: WebSearch sweeps for Corfitz Ulfeldt/Rigsarkivet/Rosenvinge/Historisk Tidsskrift
+   connections to this letter or its cipher -- only generic historical-background pages and one surname
+   collision (a pottery scholar also named "van Beuningen"). A Historisk Tidsskrift article found on tidsskrift.dk
+   could not be read past its navigation shell (JS-rendered); Rigsarkivet's own search app is likewise JS-only.
+   Both logged as unreachable by curl, not retried with `tools/browser_fetch.js` this pass (time budget) -- a
+   named gap for a future pass, not a closed negative.
+5. **Persée and HAL, run directly** (the first audit named these as unreached): verified the Persée query
+   mechanism actually discriminates (a quoted "Coenraad van Beuningen" search returns a real 5-result set, not
+   the 157,551 "hits" an unquoted query returns) -- of the 3 distinct underlying documents, a 1967 Revue du Nord
+   review of Franken's work on Van Beuningen's later (1667-1684) embassies and a 1996 plots-against-Louis-XIV
+   article, neither relevant. Quoted searches for "Rijcxhoffmeester" and "onopgelost cijfer" both returned
+   confirmed genuine zero-result pages. HAL: `numFound: 0`, clean negative.
+6. **Alternate OCR spellings of "Rosewinge"/"Rijcxhoffmeester"**, a fresh IA sweep beyond the first audit's exact
+   spellings: "Rijxhofmeester" surfaced the Fruin 1906 volume (item 2 above) plus two unrelated Vondel-drama
+   hits; "Rijcks-Hofmeester" surfaced two "Bibliotheca Danica" (C. Bruun) bibliography volumes, not read in full
+   (a catalogue genre, low prior; flagged unchecked, not confirmed negative) plus two unrelated period items;
+   bare "Rosewinge" (10 hits) all resolved to known OCR-noise surname coincidences already documented, or the
+   werken28nethgoog hit chased above. Google Books confirmed "onopgelost cijfer" is a **stock editorial phrase**
+   reused across multiple Dutch archival editions (e.g. also for Heinsius's correspondence, a different Grand
+   Pensionary) -- useful context that this phrase alone would never uniquely identify our letter, not evidence
+   either way.
+
+**Verdict: agree with the first audit.** Item 1 stays N1 (unaffected; the Fruin 1906 companion volume's silence
+on a cipher for the 19/29 Sept letter is mild corroboration, not new evidence). Item 2 stays N3: nothing found in
+this second, differently-routed sweep discloses a prior key or decipherment of NA 3.01.17 inv.1538 ff.210-211
+specifically. The sweep is additive: it closes NARCIS/Igitur/scriptio.nl as confirmed dead ends for Postma
+(rather than merely untried), identifies Postma's book precisely enough to route a physical-copy request through
+a Dutch library rather than more web searching, and surfaces one adjacent primary source (Fruin 1906) with a
+genuine period cipher key from the same correspondence pair that a direct value-by-value comparison rules out as
+a match -- the kind of check rule 3's "no negative without a matched control" logic calls for before treating a
+similar-looking key as evidence either way. Two named gaps remain open, not closed this pass: Postma's book
+itself (now specific enough for a library request), and the JS-rendered Danish-side sources (Rigsarkivet,
+tidsskrift.dk) that would need `tools/browser_fetch.js`.
+
+Process note: the searching session's early scratch fetches were briefly written into the repository working
+directory rather than a scratchpad, in violation of its read-only brief; none were ever staged or committed, and
+this session confirmed `git status --short` was clean before and after. No repo file was created, edited, or left
+behind by that work; a system package (`poppler-utils`) was installed via apt for one PDF extraction, a
+container-state change, not a repo change.
+
+Request counts, this pass (25 Sept 2026): `narcis.nl` 1, `dspace.library.uu.nl` 1, `igitur-archive.library.uu.nl`
+2, `web.archive.org` ~6, `search.worldcat.org` 2, `www.googleapis.com` (Books) ~7, `scriptio.nl` 1, `ethesis.net`
+2, `vriendenvandewitt.nl` 2, `academia.edu` 1 (403), `archive.org` 2, `be-api.us.archive.org` ~9, `persee.fr` 4,
+`api.archives-ouvertes.fr` (HAL) 1, `tidsskrift.dk` 1, `sa.dk` (Rigsarkivet) 1 (redirect, abandoned), WebSearch
+~13, WebFetch ~6. All sequential, well under any per-host cap; no 429 seen. 1 Explore subagent used for this
+search pass (within the brief's 2-subagent cap).
