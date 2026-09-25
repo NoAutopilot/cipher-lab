@@ -1,5 +1,58 @@
 partial
 
+Cipherbrain's three original posts (scienceblogs.de/klausis-krypto-kolumne, 2015/2018x2 — now reachable,
+was `EGRESS_BLOCKED` on 23 Sept 2026), Bourdeau's `catokwacopa/NOTES.md` (fresh clone, commit 24 Sept 2026
+21:06 UTC) and Aymeloglu's `SHORTLIST.md` (fresh clone, commit 23 Sept 2026) all read directly by this
+worker: no unique-plaintext solve exists anywhere, status unchanged from the 23 September sweep below; no
+model-solve announcement found (web search for "Catokwacopa" + "solves"/Claude/GPT, and the Vals AI blog).
+
+## Check-solved (LANE CX, 25 Sept 2026)
+
+Repeats the community-lists, Bourdeau and Aymeloglu legs of the six-source sweep the 23 September pass
+below already ran, plus the model-solve-announcement addition named in this session's job brief; web
+search, print/DECODE legs not re-run (already logged below, nothing in this class of source changes day
+to day for a 150-year-old newspaper item).
+
+1. **Web search (model-solve announcements).** `"Catokwacopa cipher solved Claude GPT 2026"`,
+   `"Catokwacopa" solves`, `Vals AI blog Catokwacopa` (WebSearch, 3 queries): no hit connecting this item to
+   any AI-model solve announcement (Vals AI, Schneier, or any lab/eval-company post); the only Catokwacopa
+   hits returned are the same three Cipherbrain posts and the solver-repository pages already known.
+2. **Community lists — Cipherbrain direct read (was blocked 23 Sept).** `scienceblogs.de/klausis-krypto-kolumne`
+   now answers curl 200 (no longer `EGRESS_BLOCKED`, confirmed both root and a search query). Fetched the
+   site's own search (`?s=catokwacopa`, page 1 and 2, 3 requests total): the same three posts found 23 Sept
+   (17 Aug 2015 original ask; 26 Jan 2018 "Revisited"; 17 Jun 2018 "Top 50" #8) and no fourth/2026 post —
+   the "14 August 2026" repost cited in the 23 Sept section below was not independently found by this
+   worker's search of the blog itself (a direct URL guess for `2026/08/14/` 404s); it may exist under a
+   different date/slug, or the earlier citation may be to a different site (klausschmeh.net, checked
+   reachable, 301, not fetched further this pass — budget). Not read: the full comment threads themselves
+   (this worker read only the WordPress search-result stubs, not each post's `#comments` section) — this is
+   the same gap the 23 Sept pass flagged as "full-page fetch blocked", now only partly closed (index page
+   reachable, individual post pages not fetched this pass).
+3. **Bourdeau, fresh clone (`github.com/dbourdeau/cyphersolver`, 25 Sept 2026, `catokwacopa/NOTES.md` last
+   committed 24 Sept 2026 21:06 UTC, one day newer than the 23 Sept citation below).** Continued audit work
+   since 15 Sept: an open-vocabulary exact-fit name search over 1,645 period proper nouns confirms the
+   Oxford-classics frame reading is uniquely forced for five lines (CONINGTON, JOWETT, SHIRLEY, HERTFORD each
+   the only name that fits its frame with no more omissions than the published reading), and a Latin-vocabulary
+   exact-interleaving search on line 29 (control: line 17 correctly returns Horace's QUI FIT) finds no
+   two-word reading in Latin either — line 29 stays undetermined in both languages. "Remaining gaps" table
+   unchanged in kind: lines 9, 12, 23, 26, 29 still unread; no unique full plaintext claimed anywhere in the
+   file.
+4. **Aymeloglu, fresh clone (`github.com/aaymeloglu/unsolved-ciphers`, 25 Sept 2026, commit 23 Sept 2026
+   14:27 UTC, unchanged from the citation below).** `SHORTLIST.md` line 81 and line 148 re-read verbatim,
+   identical wording to the 23 Sept citation ("effectively cracked, remove" — Schmeh's Facebook comment that
+   the mechanism is solved but the unique plaintext cannot be mathematically reconstructed).
+
+No new fact changes the line-1 status word, which stays `partial` per the 23 Sept section below (not
+`found-solved`: no source claims a complete, forced, unique plaintext). Added `LOCAL-QUEUE.tsv` row L13 for
+the one gap this sweep confirms is still unclosed: the working transcription (Ernst's BNA-checked text,
+used in Bourdeau's `ads.py`) has never been independently re-verified against the British Newspaper Archive
+scans directly by anyone in this repo.
+
+Intake verdict: open.
+
+Requests this pass: `scienceblogs.de` 4 (root reachability, `?s=catokwacopa` pages 1-2, a direct 2026/08/14
+URL probe), `klausschmeh.net` 1 (reachability only), `github.com` 2 (fresh shallow clones), WebSearch 4.
+
 # Catokwacopa advertisements, Evening Standard (*The Standard*), 8 and 20 May 1875
 
 - Source: QUEUE.md rank 18 (score 32), scored 20 September 2026; catalogued from Bourdeau's `catokwacopa/`
