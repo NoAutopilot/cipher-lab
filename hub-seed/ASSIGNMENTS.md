@@ -423,4 +423,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T16:07Z	session_01KzVEiyHEQPwFhTVMUytLzq	LANE B2 bMOU (Sonnet, cap 3)	moustier-altars test 1 image fetch + two passes	brief 2026-09-25-lane-b2-moustier-altars.md
 2026-09-25T16:07Z	session_01XY737yPNqrjbduLQ7cCZNi	LANE B2 bPOW (Sonnet, cap 3)	powers-1991 test 1 print check	brief 2026-09-25-lane-b2-powers-1991.md
 2026-09-25T16:17Z	session_01MRsU1QGjSKNQ5oCejANVXg	closer 7b done $6.03 D, archived	LEDGER.md, STATUS.md lane handoffs	pushed 5e811b1
-2026-09-25T16:17Z	session_018yitT9qWtNoEK3VkP1Q4gK	KEYPROBE done $0.58 D	CLAUDE.md key probe paragraph	Europeana and DPLA keys work; DDB/APE/CORE unset
+2026-09-25T16:17Z	session_01GrL9XmdQLit5wSGNeSqH96	KEYPROBE done $0.58 D	CLAUDE.md key probe paragraph	Europeana and DPLA keys work; DDB/APE/CORE unset
