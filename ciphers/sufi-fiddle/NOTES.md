@@ -101,3 +101,27 @@ meaningless letter-strings arranged to look like one is outside this test's scop
 
 Status stays `open`. Next test in the spec's order (test 2, an independent pre-1990 provenance
 search) and test 3 (not triggered, see above) are not run this pass, per the brief.
+
+## Cheap test 3: read the hand copy as Arabic script (25 Sept 2026, worker bSUF3)
+
+Note: this is a different test 3 from the spec's original `cheap_tests_in_order` item 3 (a
+Baybayin character-set comparison, not triggered since test 1 ruled out Baybayin specifically).
+Parent 7d approved this replacement test 3 in ROOM.md at 23:10 UTC 25 Sept 2026: attempt an actual
+transliteration and reading of the hand copy as Arabic-family script, now that test 1 established
+the script family.
+
+Full transliteration table (letter-by-letter, sure/probable/guess), the (weak, stated-why) control
+discussion, and the segmentation attempt across Arabic/Persian/Ottoman Turkish/Malay-Jawi/Maranao
+are in `ciphers/sufi-fiddle/reading-attempt.md`. Summary: no coherent line reading in any of the
+five languages tried; no primary Sufi formula (Allah, Hu, ya, bismillah, la ilaha illa llah, named
+tariqa order) matches any word-group. Three isolated M-graded word-level guesses only: L1 g4
+standalone waw ("and", weak); L6 g4 "برکت", one letter from "بركة/بركت" (baraka(t), "blessing" --
+a loanword common to Arabic/Persian/Ottoman/Malay/Maranao, the best candidate of the pass but
+resting on three guess-or-probable letters); L6 g7/g9 "عل", possibly "على" ("on/upon") with a
+dropped final alif, weaker still. No ar/fa/ota/ms/mrw judge corpus exists in `tools/data`, so
+`tools/judge_plaintext.py` was not run -- reported as "no judge" per the brief, not omitted.
+Every letter graded I (inferred from visual resemblance in a hand copy); counts: sure ~39,
+probable ~60, guess ~60, excluded (obscured/uncertain, unchanged from bSUF's own marks) 4
+spans/signs. Not a solve; not closed-negative either (no matched synthetic control exists to
+license that verdict -- rule 3's own headline paragraph: a negative means nothing without one).
+Status stays `open`.
