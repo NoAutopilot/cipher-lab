@@ -1022,3 +1022,96 @@ either way.
 No network access; this pass worked entirely from the TSVs and key already on disk (`_pairs.json`,
 `key.tsv`, `ciphertext_appendix.tsv`, `plaintext_appendix.tsv`, `reading_body_tokens.tsv`). No subagents.
 Cost: not visible to me.
+
+## PX-BRODEC3 (25 Sept 2026): measurement bug fixed, noise-matched control -- gate still fails, stopped
+
+Worker PX-BRODEC3 (Sonnet, session_01PjmgUo1rm2M81joNthbWZ2), job: the last gate attempt on the period key
+this lane will make -- fix PX-BRODEC2's flagged measurement bug, build a noise-matched synthetic control
+(rule 3: match the design, including the target's own measured noise, not a clean shuffle), rerun the
+gate; decode letter 134 only if it passes. No network access used.
+
+### Step 1: `06_decode_agreement.py` measurement bug fixed
+
+PX-BRODEC2 found that comparing expected-vs-decoded letter sequences with `difflib.SequenceMatcher` even
+when the two are the SAME LENGTH (no real insertion/deletion) lets the LCS-style alignment slide true
+mismatches onto a same-letter coincidence a few positions away, or drop them as an unindexed `delete`
+opcode the tally never counted -- verified on Carta 80 (true 10/17 = 58.8% positional agreement, reported
+as 13/15 = 86.7%). Fixed: `scripts/06_decode_agreement.py` now compares position by position with no
+difflib at all when `len(expected) == len(decoded_known)`; `difflib` is used only when the two sequences
+genuinely differ in length (an unresolved/dropped token), and that entry's `conflicts.tsv` row says so
+explicitly (`[difflib-aligned, length gap: ...]`). Regenerated `conflicts.tsv`: **338/390 = 86.7%** pooled
+positional agreement (was 340/384 = 88.5%, corrected in the "PX-BROKEY2, step 3" and "PX-BROGLYPH"
+sections above, struck through with the new figure). 16 of 19 resolved entries are non-100% (was also
+16/19, count unchanged; the per-entry range widened to 59-94%, was reported as 75-93%) -- Carta 80 itself
+now correctly shows 17/10 = 58.8% (rounded 59%), matching PX-BRODEC2's own hand-check exactly. This is a
+measurement fix only, not a re-transcription: `ciphertext_appendix.tsv`, `plaintext_appendix.tsv` and
+`key.tsv` are all unchanged; `_pairs.json` (the basis for `key.tsv` and the LOO control in step 2) does
+not use `06_decode_agreement.py` or `difflib` at all, so the real LOO figure below is unaffected by this
+fix (confirmed: still 80.2%, see step 2).
+
+### Step 2: noise-matched synthetic control (`scripts/11_loo_control.py`)
+
+PX-BRODEC2's own gate used a *clean* shuffled-key synthetic control (same 40 codes/frequencies, real
+plaintext, only the code<->letter assignment randomised) -- 96.7%, with zero transcription noise or
+abbreviation loss. The lane orchestrator flagged this as not design-matched (CLAUDE.md rule 3): a control
+with no noise at all is not comparable to a hand-transcribed 300-year-old cipher letterbook. Added a
+noise-matched mode on top of the same shuffled key, injecting the two noise sources actually measured on
+this target (full method in the script's own docstring):
+
+- **(a) Transcription substitution noise, at the measured M rate.** `ciphertext_appendix.tsv`'s own
+  `grade` column (PX-BROGLYPH's crop-settlement pass) grades 114 of 1702 tokens M -- **6.7%**. With that
+  per-token probability, a synthetic pair's drawn code is replaced by one drawn from the 183 observed
+  `replace`-kind confusion pairs in `disagreements.tsv` (kept with their natural duplication, so a more
+  frequently confused shape is drawn more often), rather than an invented noise model.
+- **(b) The gloss-side mismatch rate.** Of the appendix's 38 entries, only 7 have every one of their code
+  tokens land in a resolved pair (`code_count == pairs_count` for that entry); 19 contribute zero pairs
+  and 12 contribute some but not all -- **31/38 = 81.6%** of entries lose at least one span to a
+  code-count/gloss-letter-count mismatch (abbreviation or paraphrase inside the coded span). This is
+  already exactly reflected in both the real and synthetic 391-pair basis, since both are built from the
+  identical 391 pairs `03_align_pairs.py` resolved from those same 19 entries -- reported as a number
+  (not re-applied as a fresh random cut) precisely because the job brief asks it be applied "exactly as
+  the real run drops them," which rules out resampling a new set of dropped entries.
+
+Five seeds (20260925-20260929; both the key shuffle and the noise draw are now stochastic), none
+cherry-picked:
+
+```
+real pooled agreement:            80.2%  (unkeyed share 3.1%)          -- unchanged by step 1's fix
+clean synthetic (for reference):  96.7%  (gap -16.4)                    -- PX-BRODEC2's original control
+noise-matched synthetic, 5 seeds: mean=91.0%  range=[89.8, 92.8]
+  per-seed: 20260925:90.6%  20260926:90.6%  20260927:91.1%  20260928:92.8%  20260929:89.8%
+gap (real - noise-matched mean): -10.8 points
+gate (real >=80% AND within 10 points of noise-matched synthetic mean): FAIL
+```
+
+### Step 3: gate fails -- letter 134 not decoded
+
+**The real target clears the 80% floor (80.2%, unchanged) but sits 10.8 points below the noise-matched
+synthetic mean (91.0%), 0.8 points outside the brief's +/-10-point band.** Injecting the target's own
+measured noise closed most of the gap from PX-BRODEC2's clean-control comparison (-16.4 -> -10.8) but not
+all of it -- the real appendix is still measurably less self-consistent than a homophonic substitution of
+the same shape carrying the same M rate and the same span-dropping pattern would be. Per the brief ("If it
+fails: stop..."), **steps 3-5 of PX-BRODEC's original brief (letter 134's reading, spec, judge, fresh
+re-derivation) are NOT run this pass.** Status stays `partial`.
+
+Per-entry, the gap is not diffuse: `m0287/Carta 79` alone (real 26.7% vs a noise-matched 93.3% on the
+last seed) accounts for most of the pooled shortfall, with `Carta 15`, `Carta 80`, `Passage 2a` (m0284),
+`Carta 101` and `Passage 2a` (m0294) also dragging by >=20 points each even against a heavily-noised
+control -- i.e. a handful of specific entries look wrong in a way generic transcription/abbreviation noise
+does not explain, rather than the whole appendix being uniformly noisier than the control models.
+
+**The single next test:** re-check `Carta 79` (m0287, 15 aligned positions, real 26.7% even against a
+noise-matched control that reads it at 93%) against the full-resolution image by hand -- if that one
+entry's anchoring or transcription is specifically wrong (not generic homophone/scribal noise), fixing it
+alone would close roughly a third of the remaining gap, and would be worth doing before another synthetic
+control redesign.
+
+**Not done this pass, per this job's brief:** anything past step 3 (letter 134, spec, judge, re-derivation)
+since the gate failed; a targeted fix of Carta 79 (named above, next worker's job); LANE PX handoff (this
+worker's brief does not name STATUS.md or the lane handoff among its touchable files).
+
+### Host report
+
+No network access; this pass worked entirely from the TSVs already on disk (`ciphertext_appendix.tsv`,
+`plaintext_appendix.tsv`, `disagreements.tsv`, `key.tsv`, `scripts/_pairs.json`). No subagents (the gate
+failed before step 3, which would have used one). Cost: not visible to me.

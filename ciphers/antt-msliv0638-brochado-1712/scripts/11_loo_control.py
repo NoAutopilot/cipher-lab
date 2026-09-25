@@ -29,7 +29,33 @@ n_occurrences (so a code that was globally frequent in the real key stays freque
 cipher, approximating 'the same code-frequency profile' in aggregate rather than position-by-position).
 The synthetic pairs then carry the SAME true letters (the real plaintext, unchanged) and the SAME entry
 membership/span sizes as the real data -- only the code drawn to represent each letter is randomised.
-Fixed seed for reproducibility (printed below); one run, not cherry-picked.
+
+PX-BRODEC3 (25 Sept 2026): the clean synthetic control above (a shuffled key, no other noise) reads
+96.7% -- as PX-BRODEC2 itself flagged, and the lane orchestrator confirmed ("the synthetic had no
+transcription noise or abbreviations, so it was not design-matched", CLAUDE.md rule 3: match the design,
+not only the length/symbol count). This adds a NOISE-MATCHED synthetic mode on top of the same shuffled
+key, injecting the two noise sources actually measured on this target:
+
+(a) Token substitution at the transcription M rate. `ciphertext_appendix.tsv`'s own `grade` column
+    (PX-BROGLYPH) grades 114 of 1702 tokens M (not crop-confirmed) -- 6.7%. With that per-token
+    probability, a synthetic pair's drawn code is replaced by one drawn from the observed confusion
+    pairs in `disagreements.tsv` (183 `replace`-kind (a_token, b_token) rows from the pass-A/pass-B
+    disagreement, kept with their natural duplication so a frequently-confused shape is drawn more
+    often) -- the other member of a randomly-drawn confusion pair, or, if that pair's two tokens are
+    the same as the code being corrupted, the pair's first element regardless.
+(b) The gloss-side mismatch rate: of the appendix's 38 entries, only 7 have every one of their code
+    tokens land in a resolved pair (`code_count == pairs_count`); 19 contribute zero pairs and 12
+    contribute some but not all -- 31/38 = 81.6% of entries lose at least one span to a code-count/
+    gloss-letter-count mismatch (abbreviation or paraphrase inside the coded span, PX-BROKEY2/
+    PX-BROKEY's own diagnosis). The clean control above already inherits this exactly, because its
+    391 synthetic pairs are drawn 1:1 from the SAME 391 real pairs `03_align_pairs.py` resolved from
+    those same 19 entries -- the entries and spans this run drops are, by construction, the identical
+    ones the real alignment dropped, not a resampled or invented set. Reported here as a number (not
+    a second, independent random cut) precisely because "exactly as the real run drops them" rules out
+    resampling it.
+
+Five seeds (not one, since (a)'s noise draw and the shuffle/weighted-draw are now both stochastic);
+mean and range reported, none cherry-picked.
 """
 
 SEED = 20260925
@@ -84,7 +110,28 @@ def loo(pairs_list, label):
 
 real_pct, real_unkeyed_pct, real_rows = loo(pairs, "REAL target (appendix aligned pairs)")
 
-# ---- matched synthetic control ----
+# ---- measured noise inputs (PX-BRODEC3) ----
+tok_grades = [row['grade'] for row in csv.DictReader(open(f'{ROOT}/ciphertext_appendix.tsv'), delimiter='\t')]
+m_rate = tok_grades.count('M') / len(tok_grades)
+print(f"measured transcription M rate: {tok_grades.count('M')}/{len(tok_grades)} = {100*m_rate:.1f}%")
+
+disagreement_rows = list(csv.DictReader(open(f'{ROOT}/disagreements.tsv'), delimiter='\t'))
+confusion_pairs = [(r['a_token'], r['b_token']) for r in disagreement_rows if r['kind'] == 'replace']
+print(f"confusion pairs from disagreements.tsv (kind=replace): {len(confusion_pairs)}")
+
+code_count_by_entry = defaultdict(int)
+for tr in csv.DictReader(open(f'{ROOT}/ciphertext_appendix.tsv'), delimiter='\t'):
+    code_count_by_entry[(tr['leaf'], tr['entry_label'])] += 1
+pair_count_by_entry = Counter(tuple(key) for _, _, key, _ in pairs)
+n_clean = sum(1 for e in code_count_by_entry if pair_count_by_entry.get(e, 0) == code_count_by_entry[e])
+gloss_mismatch_rate = 1.0 - n_clean / len(code_count_by_entry)
+print(f"gloss-side mismatch rate: {len(code_count_by_entry) - n_clean}/{len(code_count_by_entry)} entries "
+      f"lose >=1 span to a code-count/gloss-letter-count mismatch = {100*gloss_mismatch_rate:.1f}% "
+      f"(already reflected in the 391 real/synthetic pairs above -- same entries/spans the real run drops,"
+      f" not resampled)")
+print()
+
+# ---- matched synthetic control: shuffled key (clean), then noise-matched, 5 seeds ----
 key_header, key_rows = None, []
 with open(f'{ROOT}/key.tsv') as f:
     r = csv.reader(f, delimiter='\t')
@@ -95,49 +142,76 @@ codes = [row[0] for row in key_rows]
 real_values = [base(row[1]) for row in key_rows]
 n_occ = {row[0]: int(row[2]) for row in key_rows}
 
-shuffled_values = real_values[:]
-random.shuffle(shuffled_values)
-synthetic_key = dict(zip(codes, shuffled_values))  # code -> synthetic letter
-
-group = defaultdict(list)  # letter -> [codes assigned to it under synthetic_key]
-for c, v in synthetic_key.items():
-    group[v].append(c)
-
-def weighted_choice(cands):
-    weights = [n_occ.get(c, 1) for c in cands]
+def weighted_choice(cands, weights_map):
+    weights = [weights_map.get(c, 1) for c in cands]
     return random.choices(cands, weights=weights, k=1)[0]
 
-synthetic_pairs = []
-missing_letter_group = 0
-for tok, let, key, span in pairs:
-    cands = group.get(let)
-    if not cands:
-        # the real letter has no code assigned to it at all under the shuffle (can happen if no
-        # code's real value was ever 'let'); fall back to a uniformly random code from the whole pool
-        # rather than silently dropping the pair -- flagged so this rare edge case is visible.
-        missing_letter_group += 1
-        cands = codes
-    synth_tok = weighted_choice(cands)
-    synthetic_pairs.append((synth_tok, let, key, span))
+def build_shuffled_key():
+    shuffled_values = real_values[:]
+    random.shuffle(shuffled_values)
+    synthetic_key = dict(zip(codes, shuffled_values))
+    group = defaultdict(list)
+    for c, v in synthetic_key.items():
+        group[v].append(c)
+    return group
 
+def draw_synthetic_pairs(group, inject_noise):
+    """One shuffled-key draw over the 391 real (code, true_letter, entry, span) pairs. When
+    inject_noise, each drawn code is independently replaced (probability m_rate) by one member of a
+    randomly-drawn observed confusion pair -- the same per-token M rate and the same confusion pairs
+    measured on the real transcription, not a fresh assumption."""
+    out = []
+    missing = 0
+    for tok, let, key, span in pairs:
+        cands = group.get(let)
+        if not cands:
+            missing += 1
+            cands = codes
+        synth_tok = weighted_choice(cands, n_occ)
+        if inject_noise and random.random() < m_rate:
+            a, b = confusion_pairs[random.randrange(len(confusion_pairs))]
+            synth_tok = b if a == synth_tok else a
+        out.append((synth_tok, let, key, span))
+    return out, missing
+
+random.seed(SEED)
+clean_group = build_shuffled_key()
+clean_pairs, missing_letter_group = draw_synthetic_pairs(clean_group, inject_noise=False)
 print(f"(seed={SEED}; {missing_letter_group} of {len(pairs)} real pairs had no synthetic-key code for "
       f"their true letter and fell back to a uniform draw over all 40 codes)")
 print()
-synth_pct, synth_unkeyed_pct, synth_rows = loo(synthetic_pairs, "MATCHED SYNTHETIC CONTROL (shuffled key, same code-frequency profile, real plaintext)")
+synth_pct, synth_unkeyed_pct, synth_rows = loo(clean_pairs, "CLEAN SYNTHETIC CONTROL (shuffled key only, no noise -- PX-BRODEC2's original control, kept for comparison)")
 
-gap = real_pct - synth_pct
-print(f"=== Gate ===")
-print(f"real pooled agreement:      {real_pct:.1f}%  (unkeyed share {real_unkeyed_pct:.1f}%)")
-print(f"synthetic pooled agreement: {synth_pct:.1f}%  (unkeyed share {synth_unkeyed_pct:.1f}%)")
-print(f"gap (real - synthetic): {gap:+.1f} points")
-gate_pass = real_pct >= 80.0 and abs(gap) <= 10.0
-print(f"gate (>=80% AND within 10 points of synthetic): {'PASS' if gate_pass else 'FAIL'}")
+SEEDS = [20260925, 20260926, 20260927, 20260928, 20260929]
+noisy_results = []
+for s in SEEDS:
+    random.seed(s)
+    group = build_shuffled_key()
+    noisy_pairs, _ = draw_synthetic_pairs(group, inject_noise=True)
+    pct, unkeyed_pct, rows = loo(noisy_pairs, f"NOISE-MATCHED SYNTHETIC CONTROL (shuffled key + {100*m_rate:.1f}% confusion-pair substitution, seed={s})")
+    noisy_results.append((s, pct, unkeyed_pct, rows))
+
+noisy_pcts = [pct for s, pct, u, rows in noisy_results]
+noisy_mean = sum(noisy_pcts) / len(noisy_pcts)
+noisy_min, noisy_max = min(noisy_pcts), max(noisy_pcts)
+
+gap_clean = real_pct - synth_pct
+gap_noisy = real_pct - noisy_mean
+print(f"=== Gate (PX-BRODEC3: noise-matched synthetic replaces the clean one) ===")
+print(f"real pooled agreement:            {real_pct:.1f}%  (unkeyed share {real_unkeyed_pct:.1f}%)")
+print(f"clean synthetic (for reference):  {synth_pct:.1f}%  (gap {gap_clean:+.1f})")
+print(f"noise-matched synthetic, 5 seeds: mean={noisy_mean:.1f}%  range=[{noisy_min:.1f}, {noisy_max:.1f}]  "
+      f"(per-seed: {', '.join(f'{s}:{p:.1f}%' for s, p, u, r in noisy_results)})")
+print(f"gap (real - noise-matched mean): {gap_noisy:+.1f} points")
+gate_pass = real_pct >= 80.0 and abs(gap_noisy) <= 10.0
+print(f"gate (real >=80% AND within 10 points of noise-matched synthetic mean): {'PASS' if gate_pass else 'FAIL'}")
 
 if not gate_pass:
     print()
-    print("=== Entries dragging the gap (real pct - synthetic pct, most negative first) ===")
+    print("=== Entries dragging the gap vs. the LAST noise-matched seed (real pct - synth pct, most negative first) ===")
+    last_rows = noisy_results[-1][3]
     real_by_e = {e: (pct, compared) for e, total, compared, correct, pct, unkeyed, unk_pct in real_rows}
-    synth_by_e = {e: (pct, compared) for e, total, compared, correct, pct, unkeyed, unk_pct in synth_rows}
+    synth_by_e = {e: (pct, compared) for e, total, compared, correct, pct, unkeyed, unk_pct in last_rows}
     diffs = []
     for e in entries:
         rp, rc = real_by_e[e]
