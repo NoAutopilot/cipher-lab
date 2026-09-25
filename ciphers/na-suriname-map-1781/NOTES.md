@@ -456,3 +456,101 @@ No network requests (all work from images already on disk: `2007a_remarque_af_bl
 `2007a_nota_af_block.jpg`, `2039_cartouche.jpg`, cropped/zoomed locally with PIL, no re-fetch). 2 Sonnet
 subagents (independent blind transcription of clauses B/D/E/F, one already using the atlas as ground truth,
 per the job brief's cap).
+
+## Reading (VX-RD03D, 25 Sept 2026) -- final worker on this target, LANE VX
+
+**Intake gate:** unchanged from VX-CS04's verdict above; no new intake-relevant material this pass.
+
+**What this job set out to do:** (1) resolve the loop/hook-glyph family + the з contradiction via native-res
+crops; (2) count, per target sheet (2039, 2046, 2077), which signs it uses and how many are keyed now;
+(3) decode each target as far as the key allows, label by label; (4) judge + fresh-instance re-derivation.
+
+### Step 1: the loop/hook-glyph family was a transcription-precision problem, not a structural one
+
+The IIIF native-res crops already on disk (`2007a_nota_af_block.jpg`, `2007a_remarque_af_block.jpg`) turn
+out to already be native pixel density (info.json's own `sizes`/`maxWidth` confirm 8998px is the sheet's true
+native width, and the region requests already returned 1:1 pixels for their crop area) -- there is no
+"higher native resolution" left to fetch; RD03C's suggestion to re-fetch was based on an unverified
+assumption. What DID work: a careful local re-read at 5x zoom of clause B's "zwaare" (`images/strips/
+clauseB_full.png`, already on disk). Pass A's transcription had read this word's first glyph as `λ`, which
+-- forced against Z-W-A-A-R-E -- produced the "λ=Z" contradiction RD03C flagged as the real blocker. Re-read
+at higher local zoom, that glyph is clearly a distinct trident/fork shape (`ψ`), not λ. **The contradiction
+resolves as a pass-A mis-segmentation, not a real one-glyph-two-values case** -- consistent with every other
+apparent key.tsv conflict so far. With `ψ` correctly separated out, "zwaare" reads as 6 glyphs for 6 letters
+with zero compression, and THREE already-confirmed signs (`4`=w, `[delta]`=a, `7`=e) land exactly on their
+expected position, unforced -- a genuine transfer confirmation within the same source sheet. Two new signs
+surface at single-instance confidence (`ψ`->Z candidate, a dot-checkmark shape->2nd A candidate,
+`[o-tail]`->R candidate) but are NOT promoted to key.tsv, per this file's own >=2-independent-read bar (see
+glyphs.md "RD03D" section, conflicts.tsv). The з/Signatuure U-vs-E-vs-5 conflict (RD03C) was re-examined
+(`images/2007a_remarque_af_block.jpg`, the "De Signatuure als..." line) but **not resolved** this pass --
+this worker's own read of that specific word did not clearly reproduce the position-4/5/6/9 alignment
+RD03B/RD03C report, and forcing a resolution from one more uncorroborated read would repeat the mistake
+already flagged in this file; left open for a successor with a dedicated two-pass reconciliation of that one
+word.
+
+### Step 2: sign coverage on 2039, 2046, 2077
+
+Two Sonnet subagents independently transcribed cipher glyphs on the three target sheets against the current
+17-sign key.tsv (mechanical matching only, not asked to interpret meaning), plus this worker's own direct
+read of 2077's cartouche and legend block (native-res local crops of `images/2077_full.jpg`, fetched this
+pass -- default_full_url, capped 5000x2385 vs the sheet's true 10711x5110, 1 request to service.archief.nl).
+
+- **2077** (this worker + 1 subagent, cross-checked): cartouche + 2 legend entries ("a", "q"), 27 glyphs
+  sampled -- **9/27 (33%) high-confidence MATCHED**, 4/27 (15%) tentative-only matches not counted in the
+  headline figure, 14/27 (52%) genuinely UNMATCHED. The cartouche's first word decodes cleanly and
+  unforced to **PLAN** ([s-loop] c [delta] [h-loop] = P-L-A-N), independently confirmed by this worker's own
+  direct read and the subagent's cross-check against the reference crops -- the strongest, most reliable
+  single result of this pass. No other run of 4+ consecutive matched glyphs was found in the two legend
+  entries sampled (only ~2 of ~18 entries checked; most of the sheet's legend text is untranscribed).
+- **2039 + 2046** (1 subagent, single uncorroborated pass, M-grade not confirmed): **72 glyphs on 2039
+  (46 matched, 64%)**, **56 glyphs on 2046 (36 matched, 64%)** across the full 3-line title on each sheet.
+  This subagent did NOT find the exact 4-glyph "PLAN" run on either sheet: on 2039 it read the cartouche's
+  second word as `[s-loop][delta][h-loop]` = P-A-N (missing the L in between, a near-miss) rather than the
+  "van" (`5`[delta][h-loop] = V-A-N) that RD03C's NOTES.md entry above reported finding at the same
+  position. **This is an unresolved disagreement about a single glyph's identity (digit `5`=v vs `[s-loop]`=p
+  at that specific position), not a new finding either way** -- this worker ran out of time-box to settle it
+  with a third independent read before the 80%-of-box mark and is flagging it rather than picking a side.
+  No 4+-glyph run on 2039 or 2046 decoded to a clear, plausible Dutch word (2039's best candidate, "ENSPE",
+  is flagged by the subagent itself as unlikely to be meaningful; 2046's best run was only 3 glyphs, "DER").
+  These figures are a single pass and should be treated as directional (coverage is clearly non-trivial and
+  in the same range on both sheets) rather than a precise, confirmed percentage.
+
+**No formal ciphertext.tsv/decode was built for 2039, 2046 or 2077 this pass.** Building one honestly needs a
+transcription both this file's own standard (>=2 independent reads agreeing) and rule 7 would accept as a
+candidate reading; what exists after this pass is single-pass coverage counts (2039/2046) and one
+double-checked 4-glyph word (2077's "Plan") -- real progress, but not a base to decode a full legend/cartouche
+from without risking exactly the forced-reading problem rule 7 exists to prevent. No judge was run (nothing
+meeting the bar of a candidate reading exists to judge), and no fresh-instance re-derivation subagent was
+launched this pass (no new key.tsv entries were promoted, so there is nothing rule 7 requires re-deriving).
+
+### State at close (final worker, LANE VX)
+
+**Status: partial.** What is established (grade C, ~C37/M1/U18 self-consistency on the key's own 56-token
+source material, `tools/decode_key.py --check` exits 0): a 17-sign homophonic-substitution key for this
+1781 Wollant fortification-cipher family, built entirely from 2007A/2061's own on-sheet interlinear glosses
+and 2007B's plain twin -- period, ours, in the 25 Sept 2026 key-source sense. The key transfers out of sample:
+it reads "van" (2039, RD03C) and "Plan" (2039 near-miss / 2077 confirmed, this pass) correctly on sheets it
+was never built from. What is NOT established: a reading of any target sheet (2039, 2046, 2077) -- coverage
+sits at roughly a third to two-thirds of running-text glyphs depending on sheet and method, well short of the
+~20+ signs (currently 17, several still single-homophone) a Dutch legend needs to read as continuous prose
+rather than isolated confirmed words. Grade counts across all material on file: **C 56, M 1, U 18** (key-source
+label lines only); zero target-sheet tokens graded at all (none transcribed to the reliability bar this file
+requires).
+
+**Single best next step for a future lane:** settle the "van" vs "PAN" disagreement on 2039's cartouche line 2
+with one more independent, high-zoom read of that specific 3-glyph position (this is a fast, cheap, high-value
+check -- it either confirms digit `5`=v transfers out of sample too, strengthening the key, or reveals a second
+homophone/mis-reading that would need fixing before any target decode is attempted); then use 2077's
+already-open, already-partly-read legend block (`images/2077_full.jpg`, `images/2077_legend_5000.jpg`, both on
+disk) as the next transcription target over 2039/2046, since it mixes plain Dutch entries with ciphered ones on
+the same list -- a crib structure similar to 2007A/2061's gloss pattern, and likely the fastest path past the
+current ~17-sign ceiling. A full two-pass transcription of 2007A's remaining Nota/Remarque clauses (still only
+partly read, per RD03B/RD03C) is the other standing option and would add more signs before any target sheet is
+attempted, per every prior worker's own recommendation in this file.
+
+### Hosts and requests (this pass)
+
+`service.archief.nl`: 1 request (2077's default_full_url, capped 5000x2385; >=1.5s spacing n/a, single
+request). No other host touched. 2 Sonnet subagents (mechanical sign-coverage counting on 2039+2046, and on
+2077; read-only, no file edits by either subagent). This worker's own direct reads used only images already
+on disk plus the one 2077 fetch above, all local PIL crops/zooms, no further network calls.
