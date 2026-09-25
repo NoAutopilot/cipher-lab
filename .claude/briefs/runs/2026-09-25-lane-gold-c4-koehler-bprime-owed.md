@@ -1,6 +1,6 @@
 JOB GOLD-K4: Köhler family B', the two owed runs that complete the keyword-mixed tableau record: (a) the last two `mixed_tabula` placements `plaincipher` and `keycipher` (vig, Dutch key), (b) the English keyword list on the default four placements (vig, Dutch key), control first each through `tools/family_run.py`. Sonnet (claude-sonnet-5). Stop and push at $8 or 75 minutes, whichever first. NO subagents. Lane: LANE GOLD2 orchestrator session_013JXDgLDkW2y5Ldi2gWzTkY (Fable) or its successor. Written by the cycle-3 consolidator GOLD-CONS3 (Fable, session_01UBBcnhMmQEpPpdNQgDfsTE), 25 Sept 2026 23:10 UTC; the orchestrator fills the gate line and the spawn time.
 
-INTAKE_GATE_OUTPUT:
+INTAKE_GATE_OUTPUT (live, 23:35 UTC): koehler-1944: open (line 1) -- edition/page or full-text-search citation found within 6 lines (exit 0). Spawned 25 Sept 2026 23:35 UTC by LANE GOLD2 (session_013JXDgLDkW2y5Ldi2gWzTkY); its successor GOLD3 adopts this worker from the LANE GOLD2 handoff in STATUS.md.
 
 Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md`, `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), the top block ("Summary, cycle 3") and the sections "Family B' variants (GOLD-K2)" (step 3 there is the English-list recipe; `wordcorpus=DIR[,DIR]` is the option) and "Family B'-c, cipher-side placements (GOLD-K3)" of `ciphers/koehler-1944/HYPOTHESES.md`, `python3 tools/family_run.py --help`, the docstring of `tools/families/keyed_running_key.py`. Claim in ROOM (`tools/room.py`). Read the clock with `date -u` before any date.
 
