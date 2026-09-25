@@ -1,11 +1,11 @@
 {"target": "ciphers/vanbeuningen-dewitt-1657",
- "note": "Partial key recovery, 25 Sept 2026 (LANE OX OX-VBS). Nomenclator (3-digit codes) + a partial homophonic letter alphabet, both derived by aligning ciphertext.tsv to the known printed plaintext (plaintext_print.txt). Most 2-digit letter codes remain unkeyed ('?'); see NOTES.md 'Key recovery, 25 Sept 2026'.",
+ "note": "Partial key recovery, 25 Sept 2026 (LANE OX OX-VBS round 1, OX-VBS2 round 2). Nomenclator (3-digit codes) + a homophonic letter alphabet (21 letters, most with 2+ homophones), derived by a scripted global word alignment (align.py) of ciphertext.tsv against the known printed plaintext (plaintext_print.txt), voted per code. 2 codes (11, 40) are genuine conflicts between two well-supported values, kept as 'a|b' grade M rather than forced; 1 code (106) stays unkeyed ('?') as too weak to commit. See NOTES.md 'Key recovery round 2'.",
  "jobs": [
   {"ciphertext": "ciphertext.tsv", "key": "key.tsv", "reading": "reading.txt", "tokens": "reading_tokens.tsv",
    "format": "tsv", "style": "spaced", "unknown_values": [], "unkeyed_value": "?", "unkeyed_grade": "U",
    "uncertain_conf": ["M"],
    "header": ["# Mechanical partial reading of vanbeuningen-dewitt-1657 cipher copy (ff.210-211) with key.tsv (tools/decode_key.py).",
               "# {name}: cipher tokens {total}: {HCSMIU} (U = code not yet keyed, shown as [code]). Plain Dutch words pass through as transcribed (grade 'clear', not counted above).",
-              "# Status: PARTIAL. Nomenclator (9 codes) and 13 homophonic letters recovered (grade C, cross-validated incl. by an independent fresh-instance re-derivation); 1 more letter tentative (grade M, single-context); most 2-digit letter codes still unkeyed."]}
+              "# Status: PARTIAL. Nomenclator (9 codes) and 21 letters (53 code-values) recovered by voted alignment (align.py); 2 codes (11, 40) are genuine unresolved conflicts between two values (shown 'a|b', grade M); 1 code (106) stays unkeyed."]}
  ]
 }

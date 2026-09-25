@@ -384,3 +384,133 @@ U 162 (unresolved codes, shown as `[code]`), H 0, S 0, I 0; 345 further tokens a
 (grade `clear`, not part of the cipher tally). `tools/decode_key.py ciphers/vanbeuningen-dewitt-1657 --check`
 exits 0. No spec exists for this target (`specs/vanbeuningen-dewitt-1657.json` not present; Dutch) --
 `tools/judge_plaintext.py` was not run, per this brief's step 5.
+
+## Key recovery round 2, 25 Sept 2026 (LANE OX solver OX-VBS2)
+
+No host fetches this pass; worked entirely from `ciphertext.tsv` and `plaintext_print.txt` already on disk, per
+`.claude/briefs/runs/2026-09-25-lane-ox-vbs2.md`. Job: key every code the known plaintext can fix -- round 1
+(OX-VBS, above) had keyed 13 letters / 25 codes by hand; this pass automates the alignment and extends it.
+
+**Status stays `partial`.** Every coded token now has *some* grade (516 of 517 coded tokens, 99.8%) but not
+every one is grade C (rule 5's condition for `solved`): 446 C, 70 M, 1 U. Two codes are a genuine, unresolved
+conflict between two well-supported values, kept honest (grade M, `a|b` ambiguous value) rather than guessed.
+
+### Method: `align.py` (committed in the folder)
+
+A global (Needleman-Wunsch) word alignment between `ciphertext.tsv`'s word sequence (clear Dutch words +
+coded runs, `[MARK]`/`[ILLEGIBLE]` dropped) and `plaintext_print.txt`'s word sequence (known multi-word
+nomenclator phrases pre-collapsed into single tokens so an already-recovered nomenclator code aligns 1:1
+against its phrase). A clear cipher word scores high against an identical plaintext word; a coded word scores
+by letter-count match against the plaintext word's length, plus a consistency bonus/penalty against codes
+already keyed (bootstrapped from round 1's grade-C rows), so the DP's own scoring improves as more codes are
+locked in. Insertions/deletions are allowed throughout (rule 2: the two copies are in different hands and do
+not agree word for word -- this is confirmed by the diff table below, not assumed).
+
+`python3 align.py --debug` prints the full alignment (cipher word / plaintext word, one pair per line) for
+inspection. `--votes` prints one row per accepted code position. `--build` writes `key_align.tsv` (voted,
+one row per code, with support count and the words behind it) and `conflicts.tsv` (every code with more than
+one voted value). Two Python bugs were caught and fixed while writing it, both worth flagging for reuse
+elsewhere: `str.split()` treats U+00A0 (non-breaking space) as whitespace, so joining a collapsed multi-word
+phrase on a non-breaking space silently re-splits it back apart on the very next `.split()` -- and, less
+obviously, it also treats the ASCII "information separator" controls U+001C-U+001F as whitespace, so that
+workaround fails too; the fix used here collapses phrases on the already-split word list instead of the raw
+text, sidestepping the whitespace question entirely.
+
+**Voting rule** (job step 2): for each code, the plaintext letter most of its aligned instances agree on, if
+any two or more agree (grade C); a code with only one supporting word, or where a second value also has two
+or more independent supporting words (a genuine conflict, not noise), grades M. A single dissenting word
+against an otherwise strong majority is treated as noise (segmentation/alignment error at that one position),
+not a conflict -- e.g. code 10=n has 35 supporting words against a single stray "p" (from "prompte", almost
+certainly a misalignment at that position, see the diff table below), and is graded C, not M.
+
+### Result: 21 letters recovered (53 code-values), up from 13 letters (25 code-values)
+
+Applying the bootstrap (round 1's 13 letters + 9 nomenclator codes) as anchors, the aligner independently
+**reconstructed every one of round 1's 25 code-values with the same letter** (including upgrading `l`=6 from
+round 1's single-context M to a script-verified C, 11/11 independent words), and added 7 entirely new letters
+(k, p, a, c, y, h, f) plus new homophones for several already-known letters (a second `u/v`=20 alongside 27,
+a second `r`=21 alongside 22, a second `s`=24 alongside 23, a second `l`=7 alongside 6, and a contested second
+`m`=9). Coverage: coded tokens 862-345(clear)=517; keyed 516/517 (99.8%), of which 446 grade C (86.3% of all
+coded tokens) and 70 grade M; 1 token (code 106, a single occurrence) stays fully unkeyed. 53 of 53 distinct
+codes appearing in the ciphertext now have a key.tsv row (52 with a value, 1 without).
+
+Letters recovered, C-grade code-values (M-grade in parentheses): a=39,41,42 (43); b=44; c=46,47; d=49; e=50,
+51,52; f=55,56; g=57; h=59; i=61,62 (65); k=4 (5); l=6,7; n=10; o=12,13 (14); p=17; r=21,22; s=23,24; t=25,26;
+u/v=20,27; w=32; y=36 (37). Not yet recovered: j and v are not distinguished from i and u/v respectively
+(consistent with round 1's period-orthography note); q, x (3 occurrences in the print) and z (5 occurrences)
+have no recovered code -- either genuinely rare/absent from the coded portions, or hiding among the still-
+unkeyed/conflicted codes.
+
+### Two genuine conflicts, not resolved (`conflicts.tsv`)
+
+**Code 40 (d vs a), the same code round 1 flagged unresolved** (there: "agent" vs "van de", a single-word
+disagreement). This pass's systematic vote across many more contexts confirms it is a real, unresolved
+conflict rather than round 1's one-off ambiguity: 14 independent words vote `d` (dese, goede, verscheyde, de,
+andere, danckbaerheyt, ende, ambassadeur, gehandelt,, sonder, dese, staende, and 2 more) against 10 words that
+vote `a` (Staet, assisteren,, andere, danckbaerheyt, agent, ambassadeur, realiteyten, affectie, Staet,
+staende). Note that four word-*types* (andere, danckbaerheyt, ambassadeur, staende, dese) appear on **both**
+sides at different occurrences in the letter -- since a homophonic code has one fixed meaning, this means at
+least one alignment instance for each of those word-types is wrong (a misaligned coded run, not a real second
+meaning for code 40), and the diff table below independently confirms `a` is very often the better semantic
+fit (dfcectie/affectie, redliteiten/realiteyten, stdet/Staet, stdende/staende) even though the raw vote count
+narrowly favours `d`. Left as `40 = d|a`, grade M, rather than picked -- CLAUDE.md rule 10/3 both counsel
+against silently choosing when the evidence itself disagrees; a future pass with the manuscript image (round
+1's plain-word-that-may-be-cipher list, or a sharper crop) is the way to actually settle this, not more
+alignment against the same print.
+
+**Code 11 (m vs n), not caught by round 1** (which graded `m`=11 grade C from 2 contexts: "met", and an
+uncertain "ambassadeur-candidate" reading). This pass's votes: 7 words vote `m` (om, somme, ambassadeur,
+commercie, met, met, prompte) vs 5 words vote `n` (van, penningen, penningen, kennen,, sonder). The diff table
+below shows two contexts where `n` is clearly the better fit (kenmen/kennen,, somder/sonder), i.e. round 1's
+C grade for this code should be treated as **downgraded to M** by this pass's evidence, not confirmed. Left
+as `11 = m|n`, grade M.
+
+### Diff table (job step 3: "the words where the decoded cipher copy differs from the print, not corrections")
+
+`python3 align.py --diff` compares every fully-keyed coded word's decoding against its aligned plaintext word
+and lists the 34 (of ~140 fully-keyed multi-letter coded words) that differ:
+
+| line | decoded | print word | likely cause |
+|---|---|---|---|
+| L03 | de | 't | misalignment (short function words either side of a gap) |
+| L03 | heer | geen | misalignment |
+| L04 | ttdet | Staet | code 40 conflict (position 3) -- round 1's own flagged "Staet" issue, unaffected by this pass |
+| L07 | uerstreckinge | verstreckinghe | orthography: print's silent -gh- |
+| L08 | uam | van | code 11 conflict (m/n) manifesting as an extra letter, or a length-mismatch misalignment |
+| L08 | eoede | goede | misalignment (g not yet decodable at that position) |
+| L09 | penmingem | penningen | code 11 conflict, both occurrences in this one word |
+| L09 | dssisteren | assisteren, | code 40 conflict |
+| L12 | recreutes | recrutes, | orthography (extra e) or a length-mismatch misalignment |
+| L27 | dndere | andere | code 40 conflict |
+| L27 | ddnckbaerheyt | danckbaerheyt | code 40 conflict |
+| L29 | heeren | Staeten | misalignment (wrong word paired) |
+| L30 | kenmen | kennen, | code 11 conflict -- context clearly wants `n` here |
+| L31 | bekent | bekendt | orthography (silent -d-) |
+| L31 | syn | sijn. | orthography (i/j not distinguished, per round 1's note) |
+| L33 | dgent | agent | code 40 conflict |
+| L34 | uande | van | misalignment (length mismatch) |
+| L35 | ambdssadeur | ambassadeur | code 40 conflict |
+| L37 | allianuie | alliantie | one position not yet resolved cleanly |
+| L39 | goets | goedts | orthography (silent -d-) |
+| L45 | ho / m | van / Sweden | misalignment (DP filler, low-value nomenclator-range slot) |
+| L46 | uytslugten | uytsluyten, | code 57 minor homophone noise (g/y), see conflicts.tsv |
+| L47 | dat | omdat | partial match (segmentation) |
+| L48 | sweets | aensiet, | misalignment (wrong word paired) |
+| L52 | conditiem | conditiën | code 11 conflict + diacritic normalised away |
+| L53 | somder | sonder | code 11 conflict -- context clearly wants `n` here |
+| L58 | promnte | prompte | misalignment at one position (code 10=n is otherwise rock solid, 35 contexts) |
+| L58 | redliteiten | realiteyten | code 40 conflict |
+| L59 | credyt | credijt | orthography (ij/y) |
+| L60 | dfcectie | affectie | code 40 conflict + one further position not yet resolved |
+| L61 | stdet | Staet | code 40 conflict |
+| L62 | stdende | staende | code 40 conflict |
+
+Reading left to right: roughly half the "differences" are the two known code conflicts showing through (not
+new information), a third are ordinary period-orthography variation between two independently written copies
+(rule 2 -- this was never assumed to be a byte-identical duplicate), and the rest are alignment misses at
+short/ambiguous stretches (flagged, not silently corrected in `key.tsv` or `ciphertext.tsv`).
+
+### Fresh-instance re-derivation (rule 7)
+
+[to be filled in: subagent running, sees only `ciphertext.tsv`, `plaintext_print.txt` and the system
+description in its brief, not this session's `key.tsv`/`key_align.tsv`/`conflicts.tsv`/`align.py`]

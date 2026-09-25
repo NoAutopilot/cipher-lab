@@ -197,41 +197,89 @@ Coppenhagen	Coppenhagen	clear	transcription	plain Dutch text, uncoded
 104:	Elseneur	C	known-plaintext alignment 25 Sept 2026	nomenclator entry, count+context matched against plaintext_print.txt
 222:	Londen	C	known-plaintext alignment 25 Sept 2026	nomenclator entry, count+context matched against plaintext_print.txt
 172:	Denemarcken	C	known-plaintext alignment 25 Sept 2026	nomenclator entry, count+context matched against plaintext_print.txt
-50,	e	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-50:	e	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-51,	e	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-51:	e	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-25,	t	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-25:	t	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-10,	n	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-10:	n	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-57,	g	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-57:	g	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-32,	w	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-32:	w	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-61,	i	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-61:	i	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-27,	u/v	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-27:	u/v	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-23,	s	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-23:	s	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (Rosewinge/agent/wil/uytsluyten/vande-met)
-22,	r	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (versoeck/ambassadeur/met), upgraded from tentative
-22:	r	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (versoeck/ambassadeur/met), upgraded from tentative
-12,	o	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (versoeck/ambassadeur/met), upgraded from tentative
-12:	o	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (versoeck/ambassadeur/met), upgraded from tentative
-6,	l	M	known-plaintext alignment 25 Sept 2026	homophonic letter code, single-context tentative, not cross-validated
-6:	l	M	known-plaintext alignment 25 Sept 2026	homophonic letter code, single-context tentative, not cross-validated
-11,	m	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (versoeck/ambassadeur/met), upgraded from tentative
-11:	m	C	known-plaintext alignment 25 Sept 2026	homophonic letter code, cross-validated in 2+ independent coded words (versoeck/ambassadeur/met), upgraded from tentative
-52,	e	C	known-plaintext alignment 25 Sept 2026	third homophone for 'e'; 'een' (e,e,n = 51,52,10) recurs twice unambiguously (L37, L48)
-52:	e	C	known-plaintext alignment 25 Sept 2026	third homophone for 'e'; 'een' (e,e,n = 51,52,10) recurs twice unambiguously (L37, L48)
-13,	o	C	known-plaintext alignment 25 Sept 2026 (fresh-instance subagent, independent)	homophone/new letter confirmed via 'geobtineert' (g-e-o-b-t-i-n-e-e-r-t, 11 letters vs 11-code run) or 'de' (isolated 2-letter word, d + already-established e=51); found independently by the fresh-instance re-derivation subagent, cross-checked against this session's own stream
-13:	o	C	known-plaintext alignment 25 Sept 2026 (fresh-instance subagent, independent)	homophone/new letter confirmed via 'geobtineert' (g-e-o-b-t-i-n-e-e-r-t, 11 letters vs 11-code run) or 'de' (isolated 2-letter word, d + already-established e=51); found independently by the fresh-instance re-derivation subagent, cross-checked against this session's own stream
-62,	i	C	known-plaintext alignment 25 Sept 2026 (fresh-instance subagent, independent)	homophone/new letter confirmed via 'geobtineert' (g-e-o-b-t-i-n-e-e-r-t, 11 letters vs 11-code run) or 'de' (isolated 2-letter word, d + already-established e=51); found independently by the fresh-instance re-derivation subagent, cross-checked against this session's own stream
-62:	i	C	known-plaintext alignment 25 Sept 2026 (fresh-instance subagent, independent)	homophone/new letter confirmed via 'geobtineert' (g-e-o-b-t-i-n-e-e-r-t, 11 letters vs 11-code run) or 'de' (isolated 2-letter word, d + already-established e=51); found independently by the fresh-instance re-derivation subagent, cross-checked against this session's own stream
-44,	b	C	known-plaintext alignment 25 Sept 2026 (fresh-instance subagent, independent)	homophone/new letter confirmed via 'geobtineert' (g-e-o-b-t-i-n-e-e-r-t, 11 letters vs 11-code run) or 'de' (isolated 2-letter word, d + already-established e=51); found independently by the fresh-instance re-derivation subagent, cross-checked against this session's own stream
-44:	b	C	known-plaintext alignment 25 Sept 2026 (fresh-instance subagent, independent)	homophone/new letter confirmed via 'geobtineert' (g-e-o-b-t-i-n-e-e-r-t, 11 letters vs 11-code run) or 'de' (isolated 2-letter word, d + already-established e=51); found independently by the fresh-instance re-derivation subagent, cross-checked against this session's own stream
-26,	t	C	known-plaintext alignment 25 Sept 2026 (fresh-instance subagent, independent)	homophone/new letter confirmed via 'geobtineert' (g-e-o-b-t-i-n-e-e-r-t, 11 letters vs 11-code run) or 'de' (isolated 2-letter word, d + already-established e=51); found independently by the fresh-instance re-derivation subagent, cross-checked against this session's own stream
-26:	t	C	known-plaintext alignment 25 Sept 2026 (fresh-instance subagent, independent)	homophone/new letter confirmed via 'geobtineert' (g-e-o-b-t-i-n-e-e-r-t, 11 letters vs 11-code run) or 'de' (isolated 2-letter word, d + already-established e=51); found independently by the fresh-instance re-derivation subagent, cross-checked against this session's own stream
-49,	d	C	known-plaintext alignment 25 Sept 2026 (fresh-instance subagent, independent)	homophone/new letter confirmed via 'geobtineert' (g-e-o-b-t-i-n-e-e-r-t, 11 letters vs 11-code run) or 'de' (isolated 2-letter word, d + already-established e=51); found independently by the fresh-instance re-derivation subagent, cross-checked against this session's own stream
-49:	d	C	known-plaintext alignment 25 Sept 2026 (fresh-instance subagent, independent)	homophone/new letter confirmed via 'geobtineert' (g-e-o-b-t-i-n-e-e-r-t, 11 letters vs 11-code run) or 'de' (isolated 2-letter word, d + already-established e=51); found independently by the fresh-instance re-derivation subagent, cross-checked against this session's own stream
+4,	k	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 3/3 (danckbaerheyt, gebreck, versoeck,)
+4:	k	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 3/3 (danckbaerheyt, gebreck, versoeck,)
+5,	k	M	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 1/1 (kennen,)
+5:	k	M	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 1/1 (kennen,)
+6,	l	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 11/11 (al, alle, alliantie, gehandelt,, gelt, leeren)
+6:	l	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 11/11 (al, alle, alliantie, gehandelt,, gelt, leeren)
+7,	l	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 2/2 (alle, alliantie)
+7:	l	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 2/2 (alle, alliantie)
+9,	m	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 2/2 (commercie, somme)
+9:	m	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 2/2 (commercie, somme)
+10,	n	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 35/36 (Croon, Rosewinge, agent, alliantie, andere, assisteren,)
+10:	n	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 35/36 (Croon, Rosewinge, agent, alliantie, andere, assisteren,)
+12,	o	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 10/10 (Croon, Rosewinge, goede, officiers, prompte, somme)
+12:	o	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 10/10 (Croon, Rosewinge, goede, officiers, prompte, somme)
+13,	o	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 6/6 (Croon, commercie, geobtineert, om)
+13:	o	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 6/6 (Croon, commercie, geobtineert, om)
+14,	o	M	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 1/1 (Croon)
+14:	o	M	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 1/1 (Croon)
+17,	p	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 3/3 (penningen, prompte, vruntschap)
+17:	p	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 3/3 (penningen, prompte, vruntschap)
+20,	u	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 6/7 (van, verliesen., verscheyde, vruntschap)
+20:	u	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 6/7 (van, verliesen., verscheyde, vruntschap)
+21,	r	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 15/16 (Croon, ambassadeur, andere, assisteren,, beter, commercie)
+21:	r	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 15/16 (Croon, ambassadeur, andere, assisteren,, beter, commercie)
+22,	r	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 10/10 (Croon, Rosewinge, geobtineert, heer,, interventie, realiteyten)
+22:	r	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 10/10 (Croon, Rosewinge, geobtineert, heer,, interventie, realiteyten)
+23,	s	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 16/16 (Rosewinge, Staet, ambassadeur, assisteren,, dese, officiers)
+23:	s	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 16/16 (Rosewinge, Staet, ambassadeur, assisteren,, dese, officiers)
+24,	s	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 4/4 (ambassadeur, assisteren,, verliesen., vruntschap)
+24:	s	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 4/4 (ambassadeur, assisteren,, verliesen., vruntschap)
+25,	t	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 26/27 (Staet, affectie, agent, assisteren,, beter, danckbaerheyt)
+25:	t	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 26/27 (Staet, affectie, agent, assisteren,, beter, danckbaerheyt)
+26,	t	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 8/8 (gehandelt,, geobtineert, interventie, tot, tracteren,, uyt)
+26:	t	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 8/8 (gehandelt,, geobtineert, interventie, tot, tracteren,, uyt)
+27,	u	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 10/10 (ambassadeur, interventie, uyt, uytsluyten,, van, versoeck,)
+27:	u	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 10/10 (ambassadeur, interventie, uyt, uytsluyten,, van, versoeck,)
+32,	w	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 4/4 (Rosewinge, wegens, wel, wil)
+32:	w	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 4/4 (Rosewinge, wegens, wel, wil)
+36,	y	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 5/5 (danckbaerheyt, uyt, uytsluyten,, verscheyde)
+36:	y	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 5/5 (danckbaerheyt, uyt, uytsluyten,, verscheyde)
+37,	y	M	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 1/1 (by)
+37:	y	M	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 1/1 (by)
+39,	a	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 9/9 (alliantie, ambassadeur, danckbaerheyt, gehandelt,, van)
+39:	a	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 9/9 (alliantie, ambassadeur, danckbaerheyt, gehandelt,, van)
+41,	a	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 3/3 (al, tracteren,, vruntschap)
+41:	a	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 3/3 (al, tracteren,, vruntschap)
+42,	a	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 2/2 (alle, ambassadeur)
+42:	a	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 2/2 (alle, ambassadeur)
+43,	a	M	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 1/1 (alliantie)
+43:	a	M	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 1/1 (alliantie)
+44,	b	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 6/6 (ambassadeur, beter, by, danckbaerheyt, gebreck, geobtineert)
+44:	b	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 6/6 (ambassadeur, beter, by, danckbaerheyt, gebreck, geobtineert)
+46,	c	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 10/11 (Croon, affectie, commercie, danckbaerheyt, effecten, gebreck)
+46:	c	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 10/11 (Croon, affectie, commercie, danckbaerheyt, effecten, gebreck)
+47,	c	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 4/4 (Croon, commercie, officiers)
+47:	c	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 4/4 (Croon, commercie, officiers)
+49,	d	M	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 1/1 (de)
+49:	d	M	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 1/1 (de)
+50,	e	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 34/36 (Staet, affectie, agent, alle, andere, commercie)
+50:	e	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 34/36 (Staet, affectie, agent, alle, andere, commercie)
+51,	e	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 28/28 (Rosewinge, Staet, ambassadeur, andere, assisteren,, beter)
+51:	e	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 28/28 (Rosewinge, Staet, ambassadeur, andere, assisteren,, beter)
+52,	e	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 14/14 (assisteren,, beter, danckbaerheyt, dese, een, effecten)
+52:	e	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 14/14 (assisteren,, beter, danckbaerheyt, dese, een, effecten)
+53,	e	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 11/11 (affectie, alliantie, effecten, gehandelt,, goede, interventie)
+53:	e	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 11/11 (affectie, alliantie, effecten, gehandelt,, goede, interventie)
+54,	e	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 5/5 (interventie, kennen,, somme, tracteren,, verscheyde)
+54:	e	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 5/5 (interventie, kennen,, somme, tracteren,, verscheyde)
+55,	f	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 3/3 (affectie, effecten, officiers)
+55:	f	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 3/3 (affectie, effecten, officiers)
+56,	f	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 2/2 (effecten, officiers)
+56:	f	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 2/2 (effecten, officiers)
+57,	g	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 8/9 (Rosewinge, agent, gebreck, gehandelt,, gelt, geobtineert)
+57:	g	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 8/9 (Rosewinge, agent, gebreck, gehandelt,, gelt, geobtineert)
+59,	h	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 5/6 (danckbaerheyt, gehandelt,, heer,, verscheyde, vruntschap)
+59:	h	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 5/6 (danckbaerheyt, gehandelt,, heer,, verscheyde, vruntschap)
+61,	i	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 10/11 (Rosewinge, affectie, alliantie, commercie, niet, officiers)
+61:	i	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 10/11 (Rosewinge, affectie, alliantie, commercie, niet, officiers)
+62,	i	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 5/5 (alliantie, assisteren,, geobtineert, interventie)
+62:	i	C	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 5/5 (alliantie, assisteren,, geobtineert, interventie)
+65,	i	M	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 1/1 (officiers)
+65:	i	M	known-plaintext alignment (align.py) 25 Sept 2026	align.py vote 1/1 (officiers)
+40,	d|a	M	known-plaintext alignment (align.py) 25 Sept 2026	genuine conflict, not resolved: 14 words vote d (dese, goede, verscheyde, de, andere, danckbaerheyt, ende, ambassadeur, gehandelt,, sonder, dese, staende) vs 10 words vote a (Staet, assisteren,, andere, danckbaerheyt, agent, ambassadeur, realiteyten, affectie, Staet, staende); see conflicts.tsv row 40. This is the same code flagged unresolved in the 25 Sept 2026 (OX-VBS) pass (agent vs van de).
+40:	d|a	M	known-plaintext alignment (align.py) 25 Sept 2026	genuine conflict, not resolved: see 40, above and conflicts.tsv row 40.
+11,	m|n	M	known-plaintext alignment (align.py) 25 Sept 2026	genuine conflict, not caught by the 25 Sept 2026 (OX-VBS) pass which graded m=11 C from 2 contexts: 7 words vote m (om, somme, ambassadeur, commercie, met, met, prompte) vs 5 words vote n (van, penningen, penningen, kennen,, sonder); see conflicts.tsv row 11.
+11:	m|n	M	known-plaintext alignment (align.py) 25 Sept 2026	genuine conflict, not resolved: see 11, above and conflicts.tsv row 11.
