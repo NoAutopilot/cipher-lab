@@ -345,3 +345,33 @@ line	pos	code	marks	action	conf	note
 13	23	_		plain	M	continuation stroke
 13	24	_		plain	M	"q"-like initial of a final short word, low share (.63) already flagged this
 13	25	_		plain	M	flourish ending the line
+14	1	m	1	confirm	M	low share (.76) already flagged this; cursive m-shape plausible but could be plain
+14	2	f		confirm	H
+14	3	w		confirm	H
+14	4	bh		confirm	H
+14	5	S7		confirm	H
+14	6	#		confirm	H
+14	7	e	+	confirm	H
+14	8	S		confirm	M	swirl/5-like shape, low share (.44) already flagged this
+14	9	g		confirm	H	bold "8"-like loop, clear match
+14	10	phi		correct	H	clear circle-threaded-on-stem shape, matches the phi cluster (seen elsewhere on this leaf's lines), not bh; low share (.58) already flagged this
+14	11	rz		confirm	M	low wide arc/hook shape, no strong contradiction
+14	12	Z		confirm	H
+14	13	S7		confirm	H
+14	14	#	dot	confirm	H
+14	15	lam	dot	confirm	M	small mark, ambiguous exact shape
+14	16	y	5	confirm	H
+14	17	e	dot|#	confirm	H
+14	18	]	ot	confirm	H
+14	19	w		confirm	H
+14	20	bh		confirm	M	tall stylized "3"/beta-like loop, low share (.61) already flagged this; kept as bh, no better match found
+14	21	S7		confirm	H
+14	22	#		confirm	H
+14	23	dl		correct	M	clear rounded "a"-like letter shape, not blank; closest established cluster is dl, low share (.61 on _) already flagged this as uncertain
+14	24	eps	5	confirm	H
+14	25	_		plain	H	first of two cross-shaped marginal flag marks
+14	26	_		plain	H	second flag-mark cross, followed by a colon
+14	27	_		plain	H	"A" capital, start of a short annotation word
+14	28	_		plain	H	"d" of the same word
+14	29	_		plain	M	loop/descender continuing the word, reads roughly "Adi" or "Adij" -- possible dateline-style annotation ("a di", "on the day")
+14	30	_		plain	M	final tick/period ending the word
