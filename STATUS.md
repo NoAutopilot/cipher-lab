@@ -90,14 +90,14 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
-## LANE GOLD handoff (session_01DKDynpdEwZK5EokxtjCM3P), 25 September 2026, kept current (last 17:23 UTC)
+## LANE GOLD handoff (session_01DKDynpdEwZK5EokxtjCM3P), 25 September 2026, kept current (last 18:27 UTC)
 
-Standing lane on koehler-1944 then debosnys-1883 (brief `.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md`; owner amendment 16:51: Fable for tool/family design, consolidator cap $15). Both targets check-solved `open`, `intake_gate_check.py` exit 0 (17:21).
-- Köhler: family A recovery GOLD-1A running (session_012i9FKxBKg4uHiogV2PopJ5; TNA, FBI Vault, Kahn footnote, Bourdeau prior attempts, ciphertext-variants.tsv). Family B tool GOLD-2A running (session_01FtLfcQNgSGdP1Yi9EqZ1Et, tools/running_key.py landed 120cbb6; gate: control >=60 percent pooled on 3 seeds before any target run). Six-group Schmeh/Bourdeau discrepancy: ASKS 53. Prior period 2-30 negative: spec cheap_test_done.
-- Debosnys: GOLD-4A running (session_01AgfLAn9zg6JxzBSoWkR4UY; cryptogram 4 fetch, merged inventory, second pass, reconcile). Museum ask ASKS 52. Unrun lead: Sektu blog 2017 series on cryptogram 4 (NOTES.md item 8) -- read before any anneal.
-- Corpora: tools/data/de20, nl20, fr19 (GOLD-C).
-- Next: GOLD-2B swarm if the gate passes; GOLD-4B form test + fr19 anneal controls after 4A; consolidator cycle 1 about 21:00 UTC.
-- Spend: workers so far 9.66 dollars ledgered (0K 3.61, 0D 4.10, C 1.95).
+Standing lane on koehler-1944 then debosnys-1883 (brief `.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md`; owner amendment 16:51: Fable for tool/family design, consolidator cap $15; parent 18:18: families run through tools/family_run.py). Both targets check-solved `open`, intake gate exit 0.
+- Köhler. Family A recovery (GOLD-1A): nothing at TNA; FBI HQ file RG 65 105-9673 box 156 located, unopened; Farago 1971 unread (ASKS 55); six-group Schmeh/Bourdeau discrepancy, Kahn pp.65-66 (ASKS 53), variants in ciphertext-variants.tsv. Prior attempts: Bourdeau 15 Sept, six families excluded with controls (HYPOTHESES.md). Family B standard-tableau running key PARKED (GOLD-2A, tools/running_key.py): control 60-79 pct on 3 seeds, target at one-time-key noise. Running: GOLD-2C (Fable, session_01MD88FhWpv6brRnw9QfVG5n) keyed-tableau running key: distribution exclusion test first, then family_run with gate 0.5. After that: family C (book/word-sum code), then D (one-time key: park, only A remains).
+- Debosnys. Images of all four cryptograms on disk (B2 + GOLD-4A). Inventory split by eye to 160 ids (GOLD-4C; 36 composites); IC 1251 signs .039 vs uniform-at-K .006-.017, fr .07. Form test (GOLD-4B) not significant (r 0.44, 93.6th pct); Sektu 2017 already rejected the alexandrine idea. Running: GOLD-4D (Sonnet, session_01NpdQZpF7KA8MoamdqFx9mS) blind pass B2, reconcile, homophonic control at N,K. Museum ask ASKS 52.
+- Corpora: tools/data/de20, nl20, fr19 (GOLD-C); spec judges point at de20 / fr19.
+- Next: consolidator cycle 1 (Fable, $15) after 2C and 4D report, about 20:00-21:00 UTC.
+- Spend: workers 37.71 dollars ledgered (0K 3.61, 0D 4.10, C 1.95, 1A 3.63, 4A 5.60, 2A 4.99, 4B 2.91, 4C 10.22).
 
 ## Parent handoff (owner account, session_01FXDfYR3CvGk7tcid1Aav1n), from 25 Sept 2026 00:30 UTC, kept current
 
