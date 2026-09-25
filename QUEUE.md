@@ -6092,3 +6092,69 @@ clones covered search and drop-check). No DECODE, no Gallica, no Google Books.
 nomination: mslv0638-brochado-1712 | copy-free | kind recovery | José da Cunha Brochado, envoy in London,
 letters copied 1712-1713, contemporary decipherment for >=6 letters in the same volume | ANTT PT/TT/MSLIV/0638
 (docId 7049343e7af44ba7b4ec18e74e1b2cd7)
+
+### DigitArq by period spelling and scope note (LANE PX PX-SCDIGI4, 25 Sept 2026)
+
+Brief `.claude/briefs/runs/2026-09-25-lane-px-scdigi4.md`. Method: `GET /api/docs/search?query=TERM` (top-10 +
+`total`, same broken-pagination-past-10 limitation as every earlier DigitArq pass). Every query and its total,
+never re-running PX-SCDIGI3's 24 queries:
+
+**Standalone period spellings** (16): `deciffrada` 2, `decifrada` 2, `decifradas` 2914, `decifrado` 3,
+`decifrados` 2125, `decifração` 17142, `decifrar` 6, `cyfra` 244, `cifras` 267, `zifra` 255, `em cifra` 330,
+`de cifra` 1551, `cifra e decifração` 10, `contracifra` 9, `letra de cifra` 15, `carta de cifra` 130.
+**Scope-note phrases** (8): `excertos decifrados` 2, `cópia decifrada` 0, `com a decifração` 2082, `em claro`
+8119, `parcialmente em cifra` 3, `entrelinhas` 105, `chave da cifra` 12, `cifra que` 197.
+**Narrowing pairs** on the noisiest base terms (12): `decifração Utrecht` 0, `decifração Londres` 30,
+`decifração Cunha` 529, `decifração Tarouca` 50, `decifração Cadaval` 43, `decifração Alegrete` 10, `decifração
+Viena` 373, `decifração Madrid` 29, `decifração Corte-Real` 504, `decifração Roma` 49, `em claro cifra` 4,
+`decifradas cifra` 2.
+
+**Method finding, worth keeping for the next pass:** several single-word period spellings return large totals
+because this search does fuzzy/stemmed matching across unrelated Portuguese words sharing a root or letters, not
+exact-string matching -- `decifradas`/`decifrados`/`decifração` alone chiefly hit `declarada(s)`/`declarado(s)`/
+`declaração` and `decorada(s)`/`decoração` (spot-checked: both the 2914 and the 17142 result's first ten rows are
+entirely `Declaração`/`Loiças decoradas`-type titles, zero cipher content); `de cifra` and `em claro` are common
+word sequences unrelated to cryptography (8119/1551 hits, not sampled further past confirming the pattern
+matches the same false-friend problem). Pairing a noisy base term with a second (place/person) term does perform
+a real AND-style narrowing -- `decifração Utrecht`=0 versus `decifração Cunha`=529 (a common surname) shows the
+two terms are genuinely intersected, not just concatenated -- but it does not fix the false-friend matching
+itself: every pair result sampled (Alegrete, em claro cifra, decifradas cifra) was `Declaração`/surname-
+coincidence/genealogy noise or an already-known row, never new cipher content. The clean, low-noise terms
+(`deciffrada`, `decifrada`, `decifrado`, `decifrar`, `contracifra`, `cifra e decifração`, `chave da cifra`,
+`excertos decifrados`, `cópia decifrada`, `parcialmente em cifra`) stayed small enough (0-15) to review by hand
+directly, and did the real work this pass -- confirming PX-SCDIGI3's own finding that a scope-note phrase
+(`excertos decifrados`) rather than a title word is what actually surfaces a hit (it returned exactly PX-01 and
+one unrelated 1962 item, nothing else, out of a whole-archive search).
+
+**One digitized hit, checked and rejected, not listed as a row:** `PT/TT/FRA/11.03/000008` "Fragmento de cifra"
+(hit under `cyfra`/`cifras`), `hasImages:true`, 20 files, undated, no description beyond the title; parent unit
+`PT/TT/FRA/11.03` "Folhas de livros de contas" (pages from account books), fonds `PT/TT/FRA` "Fragmentos" (loose
+fragments). Full-resolution leaves m0001 and m0010 pulled and eye-checked (`tools/digitarq_fetch.py --full`):
+ordinary Portuguese cursive prose, a list of short dash-separated entries (place/name pairs, e.g. "a — [place] —
+a [name]"), not a cryptographic cipher. In this account-book context "cifra" almost certainly carries its other
+period sense (numerals/figures, as in "escrita em cifra" = written in Arabic numerals), not cryptography -- the
+one hit this pass that actually matched a cipher-specific word and still had to be dropped on inspection.
+
+**Three new copy-order leads**, all `filesCount:0`/not digitized (not eye-confirmable, not copy-free) -- logged
+rather than pursued, following PP-05..PP-10's precedent, numbered after PX-01:
+
+| Row | Archive / signatura | Date | Description (archive's own note) | Copy-free | Kind |
+|---|---|---|---|---|---|
+| PX-02 | ANTT `PT/TT/MNE-ASC/R/4` (series **Expediente e arquivo**, `PT/TT/MNE-ASC/R`, 1716-1847; fonds **Ministério dos Negócios Estrangeiros**) | undated within 1788-1806 | Title "Cifra"; description "Inclui cifra antiga, cifrante-decifrante" (includes an old cipher, enciphering-deciphering [table]) -- explicit period-language description of a cipher table sitting in the Foreign Ministry's own archive fonds | copy-order | recovery (key/table only, if it survives) |
+| PX-03 | ANTT `PT/TT/MRM/M027.001` (fonds **Marqueses de Rio Maior**) | 1796-1802 | Title/description "Correspondência avulsa [tem junto tabelas criptográficas para encriptar e decifrar documentos]" (loose correspondence with attached cryptographic tables for enciphering and deciphering documents) | copy-order | recovery (key and letters together, if surviving) |
+| PX-04 | ANTT `PT/TT/ASG/C/010/000013` | Jul 1824 | Title "Ofício reservado, parcialmente em cifra, do marquês de Palmela para António Saldanha da Gama, remetendo uma carta que recebeu do barão Hyde de Neuville e resposta que a ela foi dada" (reserved dispatch, partly in cipher, forwarding a letter from Baron Hyde de Neuville and its reply) -- surfaced here under `parcialmente em cifra`; also present in PX-SCDIGI3's own earlier `cifra Palmela`=2 total but not called out there | copy-order | cryptanalysis (single dispatch, correspondent pair already on the embassy list) |
+
+**Drop-check:** PX-02/03/04 and `PT/TT/FRA/11.03/000008` are absent from QUEUE.md, CATALOG.md, LANDSCAPE.md and
+every `ciphers/*/NOTES.md` (grepped case-insensitively for `MNE-ASC`, `MRM/M027`/`MRM.M027`, `ASG/C/010`/
+`ASG.C.010` and `Fragmento de cifra`; no clone of the solver repositories run this pass, out of this brief's
+named drop-check scope). The already-known rows resurfaced correctly and were not re-listed: PX-01 (`MSLIV/0638`)
+under `decifrado`, `excertos decifrados` and `decifradas cifra`; PP-08 (`MMIP/23`) under `decifrar` and `chave da
+cifra`; PP-09 (`CPN/000210`) under `em cifra` and `parcialmente em cifra`.
+
+**Per-host report:** `digitarq.arquivos.pt` 43 requests this pass (2 reachability/spot-check queries, 23
+search-term queries across the two named batches, 12 narrowing-pair queries, 3 `docs/details` calls, 1 `--list`
+filelist call, 2 full-resolution leaf pulls via `tools/digitarq_fetch.py --full`), all >=3.2s apart, well under
+the brief's <=55 cap. No other host used this pass (no WebSearch, no DECODE, no Gallica, no solver-repo clones).
+
+No ciphers/ folder created, no nomination posted (scouts don't solve or promote): this pass's one digitized hit
+was eye-confirmed not to be a cipher, and the three new finds are all undigitized copy-order leads.
