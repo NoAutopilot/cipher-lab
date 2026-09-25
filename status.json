@@ -2202,17 +2202,17 @@
     },
     {
       "target": "untersberg-code",
-      "title": "Untersberg code: abbreviation-shaped (36 vs 12); Herzog 1929 p.28 prints it from Hs 2398 with eleven other witnesses, one in plain Latin",
-      "next": "collate Hs 1 against Herzog's witnesses (Hs 12 as crib) with a shuffle control",
+      "title": "Untersberg code: Herzog 1929 prints Hs 2398 with eleven witnesses; Hs 12 initial-letter alignment at chance (3/6 vs shuffle 2.1)",
+      "next": "joint alignment against Hs 13/3/3a/11 with token length; blind transcription of the confirmed leaf",
       "lane": "B4",
-      "touched": "25 Sept 2026 23:21"
+      "touched": "25 Sept 2026 23:56"
     },
     {
       "target": "blitz-ciphers",
-      "title": "Blitz ciphers: IC with the English controls (0.0628), but simple substitution of English excluded (control 0.994 vs judge FAIL) and not a transposition (chi2 6270)",
-      "next": "homophonic at case-sensitive K=48 and masc on German, controls first; then the six-page fetch",
+      "title": "Blitz ciphers: IC with the English controls, but masc English (0.994 vs FAIL), homophonic K=48 English (0.971 vs FAIL) and masc German (0.956 vs FAIL, judge register mismatch) excluded",
+      "next": "rerun the German test with a de20 judge; then transcribe the six untranscribed pages",
       "lane": "B4",
-      "touched": "25 Sept 2026 22:10"
+      "touched": "25 Sept 2026 23:56"
     }
   ]
 }

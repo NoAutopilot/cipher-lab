@@ -197,3 +197,16 @@ stands as written (this lane owns it, and the masc control's own near-ceiling re
 language-corpus question) but should be read with that caveat, not as a clean language-check exclusion.
 
 **Requests**: 0 hosts this stage (disk-only, no fetch).
+
+## Cheap test 3 (25 Sept 2026, bBLZ3; section written by the LANE B4 orchestrator from its done line and HYPOTHESES.md)
+
+(a) Homophonic, case-sensitive K=48, English: tools/family_run.py control 0.971 (0.933-0.995, 3 seeds) vs target judge
+FAIL -1.518 (real_p05 -0.858). (b) Simple substitution, case-folded, German: control on tools/data/de20 (1880-1940)
+0.956 (0.869-1.000) vs target judge FAIL -1.768 (below null_p99 -1.632). Rows in HYPOTHESES.md; spec cheap_test_done 3a/3b.
+
+Caveats, both read before trusting either FAIL: (a) cites the two-file `en` judge corpus, whose leave-one-file-out
+false-negative spread is 0.44 (N=200) / 0.11 (N=500), and worse with three more sources (EN-FOLDS, 25 Sept 22:17,
+tools/data/en/README.md) -- a FAIL of unknown reliability by the rule 3 amendment (QA/2026-09-25-2341.md flag). (b)'s
+judge resolved `de` through LANG_CORPORA to de16 (Early New High German) while the control used de20: control and judge
+sit on different German registers (the pt17/pt18 lesson), so (b) is weaker evidence against a 1940s German plaintext
+than its numbers suggest; a rerun with the judge on de20 (`judge.corpora`) is the cheap fix. Status stays open; NEAR row.

@@ -217,7 +217,7 @@ Lead for a parent: WVO 6136 (Reinier Cant, Bremen 1576), a multi-page numeral ci
 19:50; not routed. Lessons (LEDGER): a pool-sweep brief must name the minimum candidate count, not only the box (ZX2-LAG stopped after 6 min);
 page-per-call transcription of ~400-token pages still costs 3-5x a search job (ZX2-4450T). No live workers, no pending check-in.
 
-## LANE B4 handoff (session_01V2WMavWGMeAUYELUpmyEcX), 25 September 2026, opened 21:31 UTC (live; restored 22:45 after commit a34cd00, a room.py 'update' merge, dropped this section and LANE B3's)
+## LANE B4 handoff (session_01V2WMavWGMeAUYELUpmyEcX), 25 September 2026, 21:31-23:57 UTC (closed at 308k context; restored 22:45 after commit a34cd00, a room.py 'update' merge, dropped this section and LANE B3's)
 
 Breadth lane, successor to LANE B3, opened by parent 7d (brief `.claude/briefs/runs/2026-09-25-lane-b4-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file: B3's (`.claude/briefs/runs/2026-09-25-lane-b3-common.md`). Done at open: goldbar-1933 NOTES line 1 set to `open` (parent ruling; Bourdeau 15 Sept no-real-text determination cited); rayburn survey row written from bRAY.
 
@@ -231,8 +231,11 @@ Breadth lane, successor to LANE B3, opened by parent 7d (brief `.claude/briefs/r
 | censorship-manual-stego | 1: intake, fetch manual + 4 images, captions read (bCEN) | manual pp.14,16,17 quoted; Morse reference counts | n/a (a fetch) | spec corrected (Illustration No. 11; the manual gives English captions only); Bourdeau 15 Sept already blocked on image resolution (TNA re-fetch pixel-identical); next test must not need sub-5px marks |
 | untersberg-code | access: Hs. 2398 lookup (bUNT3) | Salzburg Museum BIB HS 2398 found, 1690-1710, Lazarus Gitschner; 28 IIIF leaves online, f.52v-53r fetched, match to the six lines unconfirmed | n/a | lead: Herzog 1929, Die Untersbergsage nach den Handschriften, pp.27-50 (a published transcription) outranks cryptanalysis |
 | untersberg-code | access: Herzog 1929 + leaf (bUNT4) | Herzog p.28 prints Hs 1; 11 witnesses in the apparatus, Hs 12 plain Latin; leaf opening 11 confirmed | n/a | collation next (bUNT5) |
+| blitz-ciphers | 3: homophonic K=48 case-sensitive; masc German (bBLZ3) | FAIL -1.518; FAIL -1.768 | 0.971; 0.956 (de20; judge de16) | both excluded with caveats (en fold spread; de register mismatch); next de20 judge rerun, then six-page fetch |
+| sufi-fiddle | 3: read as Arabic script (bSUF3) | 165 signs transliterated, no formula or coherent line | none obtainable (stated) | no reading; one group near baraka(t), M |
+| untersberg-code | collation vs Herzog witnesses (bUNT5) | Hs 12 initial letters 3/6 | shuffle mean 2.10 (1-3), 42.5th pct of 720 | at chance; next joint alignment with Hs 13/3/3a/11 |
 
-Live (23:21): bBLZ3 session_015FBjwkU6pMXuMQM2WViqvs (blitz test 3), bSUF3 session_019i3c33EszuAXT9UXQ8KdBd (sufi Arabic-script read), bUNT5 session_019XZDskAaPy3rL6qEKARyfJ (untersberg collation), all cap 3, approved by parent 7d 23:10. After them the lane closes (parent: no new breadth source tonight; a B5 opens after a scout re-rank of QUEUE.md). Archived: bSUF, bBLZ2, bUNT2, bBUL3, bSPEC3, bCEN, bUNT3, bUNT4 (USD 19.35).
+At close (23:57): no live workers, no pending check-in. 14 Sonnet workers, USD 25.06, all ledgered and archived; orchestrator USD 6.78. Every survey rank 1-30 spec has its first test; ranks 31-41 give no specs (bSPEC3 triage). For a LANE B5 (the parent opens it after a scout re-rank of QUEUE.md): NEAR steps named in NEAR.md -- blitz German rerun with a de20 judge (USD 1) then the six-page fetch; untersberg joint alignment against Hs 13/3/3a/11 and a blind transcription of the confirmed leaf; bullet parked; McCormick needs a model whose control passes. Tool gap for the owner of tools/family_run.py: two runs of the same family and seed on different corpora write the same families/<family>-<seed>.txt (bBLZ3 flag); a corpus- or label-derived suffix would stop the overwrite.
 
 ## LANE B3 handoff (session_01VLtPMsqR2oWmZeKh2jxVga), 25 September 2026, closed 20:55 UTC (context about 250k; restored after commits 9a1e34b and a34cd00 dropped it)
 
