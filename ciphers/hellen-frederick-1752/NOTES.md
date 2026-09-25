@@ -1,4 +1,61 @@
 open
+Politische Correspondenz Friedrichs des Grossen vols. 9-10 (1752, read by a prior LANE N4 pass),
+13 (1756) and 23 (1763) -- archive.org, full-text searched for "Hellen" and vol. 13/23 djvu.txt
+read directly by this worker -- cover all 8 target dates and print only Frederick's own outgoing
+replies to Hellen, none marked dechiffrirt/entziffert/déchiffré, so the ciphertexts themselves are
+letter absent in the one edition most likely to print a deciphered report from this correspondent.
+
+## Check-solved (LANE CX2, 25 Sep 2026) -- re-check, extending the edition search to 1756 and 1763
+
+This target already carries a full six-source sweep (24 Sept 2026, LANE N4 csNA) plus a duplicate-
+collection recovery check (25 Sept, OX-HEL2), both kept intact below. Both are still current: DECODE
+status, Bourdeau's and Aymeloglu's pages, and the NA Fagel inv. 5206 finding were not re-checked
+today (nothing suggests any of them changed in the intervening day). This pass's job (per
+`.claude/briefs/runs/2026-09-25-lane-cx2-nord.md`) was to extend the one gap the prior sweep left:
+it read Politische Correspondenz vols. 9-10 for the **1752** letter (R1953) only, and never checked
+the volumes covering the **1756** letter (R1049, 7 Sept) or the six **1763** letters (R1045-R1048,
+R1060, R1061).
+
+1. **Located the right volumes first, by full-text search rather than guessing from publication
+   dates** (archive.org's own volume metadata gives no date range, only a Roman-numeral part
+   number). Queried `be-api.us.archive.org/fts/v1/search?q=Hellen&identifier=<id>` across all 15
+   Google-scanned `politischecorres09fred..182freduoft` volumes (9, 10, 11, 12, 13, 14, 15, 16,
+   17, 18/1, 18/2, 19, 20, 21, 22) plus 23, 24 and 25: every volume from 9 through 23 shows
+   "Hellen" hits with a dated snippet (e.g. vol. 13: "Potsdam, 3 juillet 1756" and "Haag ... 6
+   août"; vol. 22: "11 aoüt 1762" and "3 Sep[tembre 1762]"; vol. 23: "Berlin, 16 avril 1763",
+   "le 6 mai", "le 27 mai", "Haag 26 juillet"); vols. 24 and 25 return zero "Hellen" hits, so the
+   correspondence with Hellen (or his successor) ends within vol. 23. **Vol. 13 is therefore the
+   volume for the 7 Sept 1756 letter (R1049); vol. 23 is the volume for all six 1763 letters
+   (R1045-R1048, R1060, R1061), which run 15 Apr-5 Jul 1763 -- exactly inside vol. 23's dated
+   range of 16 Apr-26 Jul 1763.**
+2. **Read vol. 13 and vol. 23 directly** (`archive.org/download/<id>/<id>_djvu.txt`, 2 requests,
+   1 fetch each, then grepped and read on disk -- not re-fetched per request per the good-citizen
+   rule). Grepped every "Hellen" occurrence (115 in vol. 13, matching count not separately logged
+   for vol. 23) against "chiffr", "entziffer", "dechiffr" and "déchiffr" in the surrounding lines:
+   the only "déchiffré"/"déchiffrée" hits in either volume (vol. 23, two occurrences) are in
+   unrelated letters about a Rexin dispatch from Constantinople and a report from Vienna -- not
+   near any Hellen passage. **No entry anywhere in vol. 13 or vol. 23 marks a Hellen report as
+   deciphered; every dated entry near "Hellen" is either Frederick's own outgoing letter or an
+   editorial footnote summarising what Hellen "berichtet" (reports), never a decoded text quoted
+   in the edition.** This matches the pattern already established for vols. 9-10 (1752) by the
+   prior pass, now confirmed to hold for 1756 and 1763 as well, and is consistent with Bourdeau's
+   cited De Leeuw fact ("no Prussian codes broken between April 1757 and October 1763") -- though
+   that citation alone did not cover the 7 Sept 1756 letter (R1049), which this pass's vol. 13
+   read now separately clears.
+3. Not re-run this pass (unchanged from 24-25 Sept, still current): DECODE listing (all 8 still
+   Non-decrypted per the cached TSV), Bourdeau's `hellen1752.html`, Aymeloglu's repository grep,
+   Tomokiyo's `dutch.htm`, and the NA Fagel inv. 5206 page-by-page finding (closed as a false lead
+   for all 8 dates, per the 25 Sept correction below).
+
+**Verdict stands `open`**, now with the full 1752-1763 span of the standard edition actually read
+by a check-solved worker for every one of the 8 target dates, not only the 1752 one. Rule 10: no
+novelty wording used above; this is a search result, not a verifier's classification.
+
+Requests this pass: `be-api.us.archive.org` 18 (fts search, 15 volumes 9-22 plus 23/24/25, run as
+one background batch, >=1.6s apart, no 429/403), `archive.org/download` 2 (vol. 13 and vol. 23
+djvu.txt, full fetch then read from disk). No DECODE, no GitHub clones, no WebSearch this pass.
+
+## Prior check-solved and recovery-lane passes (24-25 September 2026, kept intact below)
 
 # W.B. von der Hellen to Frederick II of Prussia, 8 ciphertexts, 4 Jan 1752 – 5 Jul 1763
 
