@@ -1,0 +1,46 @@
+{
+ "slug": "bullet-tuscany-1944",
+ "rank": 20,
+ "schmeh_top50": 44,
+ "name": "WW2 bullet cryptogram, Tuscany",
+ "date": "8/13/44 (13 August 1944, as dated on the note itself)",
+ "language_candidates": [
+  "en"
+ ],
+ "ciphertext": {
+  "header": "QM",
+  "body": [
+   "CBFUK YYEVO ZILOO",
+   "ZVNCW JKQRS AWBYZ",
+   "UGYTZ WYBAT RSUA"
+  ],
+  "footer": "605YZ/FF"
+ },
+ "ciphertext_source": "Cipherbrain post 44 (Schmeh 2017, sources/schmeh/posts/44-bullet.txt), 'A hidden and encrypted message' section, transcribed by Schmeh from the scan: 'QM / CBFUK YYEVO ZILOO / ZVNCW JKQRS AWBYZ / UGYTZ WYBAT RSUA / 605YZ/FF'. Originally reported by the news portal SPLOID (January 2015), found by an Italian metal detectorist in a German bullet casing in southern Tuscany. Schmeh: 'The first (QM) and the last line (605YZ/FF) probably contain some meta information. The main part of the message has 44 letters.'",
+ "alphabet": "Latin capitals A-Z, main body 44 letters in nine 5-letter groups (last group 4 letters), plus a 2-letter header (QM) and an alphanumeric footer (605YZ/FF) treated as metadata, not part of the enciphered body",
+ "constraints": {
+  "body_letters": 44,
+  "body_distinct": 21,
+  "dated": "8/13/44, probably written by an Allied soldier during the 1944 liberation of Tuscany from German occupation",
+  "form": "5-letter groups (the classic WW2 field-cipher group format), all-letter (no digits within the body, unlike Slidex which mixes letters and digits)",
+  "rejected_solution": "a forum poster (via the SPLOID article) proposed: 'THEY THROW GRENADES WE PULL PINS AND THROW BACK' for the 5-letter groups and 'NOTIFY REINFORCEMENTS STAND DOWN - NOT NEEDED' for the final code; Schmeh rejects this explicitly -- no method was shown for how the decryption works, and the claimed plaintext ('the Germans really so stupid?', 'why would a soldier write down such a message, encrypt it and hide it in a bullet?') does not hold up under scrutiny",
+  "candidate_ciphers": "Schmeh's own guess is a British or American field cipher (hand-usable, no heavy machine); notes Slidex mixes letters and digits (the body here is letters-only, an argument against Slidex specifically); mentions the M-209 (US) as the most popular contemporary field-cipher machine, plus the older M-94/M-138 as backup devices, without committing to any one"
+ },
+ "cheap_tests_in_order": [
+  "1. Test the rejected forum 'solution' properly and mechanically: attempt to reconstruct any cipher method (Vigenere-family, simple substitution, M-209-style) that actually maps CBFUK YYEVO ZILOO ZVNCW JKQRS AWBYZ UGYTZ WYBAT RSUA to THEYTHROWGRENADESWEPULLPINSANDTHROWBACK under some key; if none exists this closes that claim rather than leaving Schmeh's rejection as prose-only. Cost $1, Sonnet.",
+  "2. Simple Vigenere/Caesar-family search with short keys (1-8 letters, including QM and 605YZ/FF read as possible indicator/key material) against an English-military-vocabulary crib list (GRENADE, PIN, REINFORCEMENT, PULL, THROW), judged with a matched control: an English plaintext of N=44 enciphered the same way, same solver, several seeds. At N=44 expect this control itself to read only partially (CLAUDE.md's harry-caroline lesson: small N gives a weak control) -- report both numbers regardless. Cost $1-2.",
+  "3. Index-of-coincidence test on the 44-letter body to distinguish monoalphabetic from polyalphabetic before committing to a specific family, matched control: English plaintext N=44 under each candidate family. Cost under $1."
+ ],
+ "matched_control": "not yet run; test 2 above names the design (English plaintext, N=44, same cipher family, same solver); flagged in advance that N=44 is small enough that even a correct method's control may read only partially",
+ "judge": {
+  "language": "en",
+  "letters_min": 40,
+  "letters_max": 48,
+  "control_samples": 200
+ },
+ "value": "medium: a datable, single-author military message with a plausible real-world context (unlike several purely mysterious items in this batch), a named and explicitly rejected false solution to avoid repeating, and a short named list of candidate cipher families (Slidex ruled out by letters-only form, M-209/M-94/M-138 as live candidates) to try in order",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open; 'a forum solution without a method, rejected by Schmeh' per the survey row; no accepted solution as of the 2017 post",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. The header (QM) and footer (605YZ/FF) are kept separate from the 44-letter body per Schmeh's own reading ('probably contain some meta information') and are not folded into the judge's letter count.",
+ "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5"
+}
