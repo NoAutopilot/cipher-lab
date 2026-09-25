@@ -46,6 +46,24 @@
       "derived_from": "NL-HaNA_1.02.04_63_0001.jpg",
       "region_px_original": [0, 2000, 1946, 2450],
       "note": "1.6x upscale crop, address line 'A Doña Antonija de Albanylla &a'"
+    },
+    {
+      "file": "crop_u1.jpg",
+      "derived_from": "NL-HaNA_1.02.04_63_0001.jpg",
+      "region_px_original": [0, 1840, 1946, 1910],
+      "note": "4x upscale, VX-RD01 25 Sept 2026: the first UNGLOSSED cipher line, '61.68.2).88.)8.', directly under the 'forma.' flourish"
+    },
+    {
+      "file": "crop_u2_top.jpg",
+      "derived_from": "NL-HaNA_1.02.04_63_0001.jpg",
+      "region_px_original": [0, 1900, 1946, 1970],
+      "note": "4x upscale, VX-RD01 25 Sept 2026: first physical row of the second UNGLOSSED (postscript, underlined) cipher line, opening '△.59.24.n(ring).34...'"
+    },
+    {
+      "file": "crop_u2_bottom.jpg",
+      "derived_from": "NL-HaNA_1.02.04_63_0001.jpg",
+      "region_px_original": [0, 2005, 1946, 2065],
+      "note": "4x upscale, VX-RD01 25 Sept 2026: second physical row of the postscript line, '6).54.8).65.11.&a' (closes with the clear abbreviation '&a' = etc.)"
     }
   ]
 }
