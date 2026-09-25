@@ -414,8 +414,8 @@ canvas	line	idx	token	gloss	context_before	context_after
 30	4	6	74		30	11
 30	4	7	11		74	29
 30	4	8	29		11	quil neluy eschapast
-30	5	1	91	quil ne signe pas	et je feray bien en sorte	21
-30	5	2	21		91	86
+30	5	1	97	quil ne signe pas	et je feray bien en sorte	21
+30	5	2	21		97	86
 30	5	3	86		21	17
 30	5	4	17		86	17
 30	5	5	17		17	86
@@ -433,9 +433,9 @@ canvas	line	idx	token	gloss	context_before	context_after
 30	7	1	17	Se les Srs Donia, Riperda	sondee a ce quil mande / sur ce quil ne croid pas	76
 30	7	2	76		17	30
 30	7	3	30		76	17
-30	7	4	17		30	15
-30	7	5	15		17	32
-30	7	6	32		15	29
+30	7	4	17		30	13
+30	7	5	13		17	32
+30	7	6	32		13	29
 30	7	7	29		32	30
 30	7	8	30		29	53
 30	7	9	53		30	87

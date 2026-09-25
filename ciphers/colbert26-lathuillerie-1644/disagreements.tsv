@@ -1,0 +1,114 @@
+canvas	a_pos	a_token	b_pos	b_token	kind	note
+20	3	zz	3	ee	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	11	z	11	fi	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	13	e			A-only (B missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	18	th	17	θ	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	21	43	20	13	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	23	9o	22	o	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	28	c'	27	cv	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	29	th	28	θ	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	35	m°	34	mo	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	38	el	37	ll	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	42	g	41	z	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20			44	h	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	49	i"	49	c	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	50	th	50	θ	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	53	el	53	ll	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	55	z	55	3	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	70	70	70	to	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	73	m+	73	mt	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	88	&	88	ll	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	89	11	89	n	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	98	z			A-only (B missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	115	&	114	ll	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+20	116	q	115	g	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	7	yz	7	z	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	15	5e	15	z	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	17	7	17	y	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	20	8	20	y	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	22	h'	22	o	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	26	56	26	z	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			27	23	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	30	w'	31	m	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			35	25	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	41	uf	43	nt	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	42	43	44	4	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	45	re	47	ee	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	47	d	49	cn	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	48	ll	50	11	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	50	59	52	58	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	55	re	57	ee	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	58	y2	60	82	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	61	y6	63	z	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			66	f	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	67	h'	70	z	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	68	23	71	83	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	69	uy	72	m	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			77	z	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	76	gr	80	ll	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	78	99	82	z	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	79	re	83	ee	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	82	h'	86	z	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	86	0	90	θ	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	89	cn	93	m	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	90	Ell	94	E	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			95	ll	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	92	h'	97	z	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21	95	re	100	ee	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			102	z0	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			103	mt	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			104	72	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			105	ll	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			106	36	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			107	z0	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			108	h	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			109	43	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			110	mt	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			111	16	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			112	y	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			113	z0	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			114	v	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			115	47	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			116	θ	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			117	23	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+21			118	h	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	6	33	6	35	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	7	0	7	e	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27			8	n	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	27	9	28	q	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	29	n	30	u	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	34	Ir	35	E	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27			36	S	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	40	46	42	16	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	50	D	52	d	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27			54	S	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	53	8	56	y	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27			57	25	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27			58	6	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	60	83	65	S	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27			66	89	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	73	L	79	S	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27			81	y	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	77	52	84	32	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	80	5	87	S	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	86	51	93	31	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	88	10	95	40	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	94	re	101	ee	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	97	n	104	47	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27			105	u	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	99	26	107	36	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	101	96	109	46	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	102	43	110	13	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	108	n	116	u	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	113	L	121	S	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	114	Ir	122	E	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27			130	S	B-only (A missed / different segmentation)	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	130	v	139	u	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	143	n	152	u	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	145	w	154	u	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	150	n	159	u	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+27	158	53	167	55	replace	not settled this pass (budget) -- ciphertext.tsv is pass A; check both readings against the crop before treating either as final
+30	14	51	14	41	replace	checked against crop by KX-LATHTR, genuinely ambiguous (51/41, 17/47 shapes both plausible in this hand) -- ciphertext.tsv kept as pass A, not settled
+30	15	17	15	47	replace	checked against crop by KX-LATHTR, genuinely ambiguous (51/41, 17/47 shapes both plausible in this hand) -- ciphertext.tsv kept as pass A, not settled
+30	46	91	46	97	replace	settled from crop by KX-LATHTR: B correct, ciphertext.tsv corrected 91->97
+30	66	15	66	13	replace	settled from crop by KX-LATHTR: B correct, ciphertext.tsv corrected 15->13
