@@ -1,0 +1,19 @@
+Real Hs12 order: ['Bellum', 'Famus', 'Gestas', 'Res', 'Mores', 'Amicus']
+Real order match count: 3/6
+Shuffle 1: ['Amicus', 'Res', 'Mores', 'Bellum', 'Famus', 'Gestas'] -> 2/6
+Shuffle 2: ['Gestas', 'Famus', 'Bellum', 'Amicus', 'Res', 'Mores'] -> 3/6
+Shuffle 3: ['Mores', 'Res', 'Famus', 'Amicus', 'Gestas', 'Bellum'] -> 2/6
+Shuffle 4: ['Gestas', 'Bellum', 'Res', 'Famus', 'Amicus', 'Mores'] -> 3/6
+Shuffle 5: ['Amicus', 'Mores', 'Res', 'Gestas', 'Famus', 'Bellum'] -> 1/6
+Shuffle 6: ['Amicus', 'Res', 'Bellum', 'Mores', 'Famus', 'Gestas'] -> 2/6
+Shuffle 7: ['Famus', 'Gestas', 'Mores', 'Bellum', 'Amicus', 'Res'] -> 3/6
+Shuffle 8: ['Amicus', 'Bellum', 'Mores', 'Famus', 'Res', 'Gestas'] -> 2/6
+Shuffle 9: ['Gestas', 'Bellum', 'Famus', 'Mores', 'Res', 'Amicus'] -> 1/6
+Shuffle 10: ['Mores', 'Bellum', 'Famus', 'Gestas', 'Amicus', 'Res'] -> 2/6
+
+Shuffle mean: 2.10/6, range [1, 3]
+Real (3/6) vs shuffle mean (2.10/6): ABOVE the shuffle mean
+3/10 shuffles tie or beat the real order's 3/6
+
+Exact distribution over all 720 permutations: mean 2.333/6, range [0, 5]
+306/720 permutations (42.5%) tie or beat the real order's 3/6 -- this is the real order's percentile under an exact permutation test

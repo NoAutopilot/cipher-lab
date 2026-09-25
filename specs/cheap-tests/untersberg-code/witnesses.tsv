@@ -1,0 +1,199 @@
+siglum	line	token_index	token	note
+# Herzog 1929 pp.28-29 apparatus, Hs 1 (= Salzburg Museum Hs 2398) inscription and its 11 collated witnesses.
+# Transcribed from sources/herzog-1929/herzog1929_full_djvu.txt (OCR), checked token-by-token against the page
+# image sources/herzog-1929/herzog1929_pp28-29.jpg (rule 2, image over transcription) 25 Sept 2026, LANE B4 bUNT5.
+# OCR errors found and corrected against the image: Hs1 line1 "fr. fr." -> "eth. eth." (a crossed-d suspension
+# glyph misOCR'd as "fr", rendered here as literal "eth" for a plain-ASCII TSV; Herzog's own text calls this an
+# "alter[e] Buchstabenform" not accounted for in his diplomatic transcription -- see NOTES.md); Hs1 line2 "5. 1. d."
+# -> "5. l. d." (digit-1/letter-l OCR confusion); Hs7 "eni"->"cui", "fra"->"fru", "nnlantz"->"unlantz", "exem"->"excm";
+# Hs13 "Farnes"->"Fames" (OCR misread m as rn). Hs1 line6's final "g" carries Herzog's own footnote marker "d)"
+# (the editorial footnote about the arch-frame and diplomatic-transcription principle) as a superscript -- this is
+# an apparatus reference, NOT a 12th ciphertext letter; recorded as token "g" with note "footnote-marker-d-attached".
+# Tokenization: split on BOTH period and internal space (elementary tokens), matching the 71-token / 61-letter-token
+# count already used by LANE B4 bUNT2's expander control (NOTES.md), for consistency across passes on this target.
+1	1	1	S
+1	1	2	eth	crossed-d suspension glyph, OCR misread as "fr"; not a Latin letter
+1	1	3	eth	crossed-d suspension glyph, OCR misread as "fr"; not a Latin letter
+1	1	4	occo
+1	1	5	x
+1	2	1	Satrnrop	trailing comma in print, stripped
+1	2	2	5	digit
+1	2	3	a
+1	2	4	f
+1	2	5	5	digit
+1	2	6	l	OCR gave digit 1, image shows letter l
+1	2	7	d
+1	3	1	P
+1	3	2	6	digit
+1	3	3	m
+1	3	4	6	digit
+1	3	5	a
+1	3	6	t
+1	3	7	5	digit
+1	3	8	q
+1	3	9	o
+1	3	10	t
+1	3	11	m
+1	3	12	5	digit
+1	3	13	r
+1	3	14	u
+1	3	15	a
+1	3	16	t
+1	4	1	m
+1	4	2	519	digit
+1	4	3	r
+1	4	4	l
+1	4	5	v
+1	4	6	e
+1	4	7	p
+1	4	8	55	digit
+1	4	9	a
+1	4	10	tt
+1	4	11	tt
+1	4	12	l
+1	4	13	x
+1	4	14	missm
+1	5	1	ariu
+1	5	2	a
+1	5	3	o
+1	5	4	u
+1	5	5	st
+1	5	6	g
+1	5	7	c
+1	5	8	x
+1	5	9	5	digit
+1	5	10	l
+1	5	11	19	digit
+1	5	12	alto
+1	5	13	mvraco
+1	6	1	mic
+1	6	2	r
+1	6	3	l
+1	6	4	y
+1	6	5	pymi
+1	6	6	l
+1	6	7	o
+1	6	8	p
+1	6	9	m	printed with a macron/bar over the m (nasal-suspension mark), not independently confirmed as "mm"/"men"
+1	6	10	i
+1	6	11	v
+1	6	12	m
+1	6	13	l
+1	6	14	t
+1	6	15	t
+1	6	16	g	Herzog's footnote marker "d)" is a superscript on this letter -- apparatus reference, not ciphertext
+2	1	1	N	"2 hat nur N. N."
+2	1	2	N
+4	1	1	BLANK	"in 4 ist etwas Raum freigelassen" -- space left blank, no text at all
+7	1	1	n
+7	1	2	et
+7	2	1	ac
+7	2	2	ca
+7	2	3	et
+7	2	4	sal
+7	2	5	cui
+7	2	6	r
+7	2	7	ax
+7	2	8	P
+7	2	9	eth	crossed-d glyph again (footnote b lists 7 among witnesses using "silber und vergoldenen" forms)
+7	2	10	m
+7	2	11	gal
+7	2	12	d
+7	2	13	tm
+7	2	14	fru
+7	2	15	et
+7	3	1	in
+7	3	2	ext
+7	3	3	v
+7	3	4	s
+7	3	5	s
+7	3	6	s
+7	3	7	vuls
+7	3	8	mox
+7	3	9	d
+7	3	10	in
+7	3	11	aces
+7	3	12	pros
+7	3	13	tinen
+7	4	1	unlantz
+7	4	2	as
+7	4	3	et
+7	4	4	v
+7	4	5	sig
+7	4	6	ex
+7	4	7	seg
+7	4	8	nale
+7	4	9	inter
+7	4	10	anno
+7	4	11	seomex
+7	5	1	q
+7	5	2	try
+7	5	3	i
+7	5	4	e
+7	5	5	K
+7	5	6	Krim
+7	5	7	et
+7	5	8	excm
+7	5	9	et
+7	5	10	in
+7	5	11	m
+7	5	12	j
+3	1	1	S
+3	1	2	O
+3	1	3	R
+3	1	4	C
+3	1	5	E
+3	1	6	J
+3	1	7	S
+3	1	8	A
+3	1	9	T
+3	1	10	O
+3	1	11	M
+3a	1	1	S
+3a	1	2	O
+3a	1	3	R
+3a	1	4	C
+3a	1	5	E
+3a	1	6	T
+3a	1	7	S
+3a	1	8	A
+3a	1	9	T
+3a	1	10	O
+3a	1	11	N
+11	1	1	S
+11	1	2	U
+11	1	3	R
+11	1	4	C
+11	1	5	E
+11	1	6	T
+11	1	7	S
+11	1	8	A
+11	1	9	T
+11	1	10	U
+11	1	11	S
+13	1	1	Bellum	trailing comma
+13	1	2	Fames	OCR gave "Farnes", image confirms "Fames"
+13	1	3	corias
+13	1	4	peseit
+13	2	1	Moesque
+13	2	2	Z
+13	3	1	i
+13	4	1	Siore
+13	4	2	P
+13	5	1	S
+13	6	1	F
+13	7	1	U
+13	8	1	Jnnen
+13	8	2	voslam
+13	8	3	i
+13	9	1	h
+13	10	1	h
+13	11	1	h
+13	12	1	h
+12	1	1	Bellum
+12	2	1	Famus
+12	3	1	Gestas
+12	4	1	Res
+12	5	1	Mores
+12	6	1	Amicus
+12	7	1	Orpheus	printed on its own centered sub-line below the six-word list -- read as a coda/name, not a 7th line of the 6-line set (see NOTES.md)
