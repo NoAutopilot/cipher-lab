@@ -287,6 +287,8 @@ def main(argv=None):
     if a.shuffle_target is not None:
         pshow = (pshow + "," if pshow else "") + f"shuffle_target={a.shuffle_target}"
     dsuffix = f"-shuffle{a.shuffle_target}" if a.shuffle_target is not None else ""
+    if a.param:  # DSN2 (25 Sept 2026): variants of one family on one seed no longer overwrite each other's decode
+        dsuffix += "-" + re.sub(r"[^A-Za-z0-9=.,~#+_-]", "_", ",".join(a.param))[:80]
     plan = (f"family {a.family}: {fam.DESCRIPTION}\nspec {a.spec} slug {slug}\nciphertext: {len(msgs)} message(s), "
             f"N={N} signs, K={K} distinct, tokens={mode}" +
             (f" (target letters shuffled, seed {a.shuffle_target}, false-positive floor)" if a.shuffle_target is not None else "") +
