@@ -1,0 +1,231 @@
+identifier	line	n_lines	numerals	distinct	repeat_rate	prose_words	context
+despatchesinstru00fran	553	1	4	4	0.00	7	 / 9  No  2,  16  July  1778. / 
+despatchesinstru00fran	576	1	4	4	0.00	8	 / 10  No  3,  18  July  1778. / 
+despatchesinstru00fran	580	2	8	6	0.25	3	 / 12  No  4,  19  July  1778. /  / 13  No  5,  19  July  1778. / 
+despatchesinstru00fran	587	1	4	4	0.00	6	 / 14  N°  6,  25  July  1778. / 
+despatchesinstru00fran	592	2	8	6	0.25	5	 / 15  No  7,  25  July  1778. /  / 16  N°  8,  25  July  1778. / 
+despatchesinstru00fran	608	1	4	4	0.00	5	 / 20  N°  10,  7   August   1778. / 
+despatchesinstru00fran	628	1	4	3	0.25	6	 / 22  N°  12,  12    August    1778. / 
+despatchesinstru00fran	694	1	4	4	0.00	12	 / 36  N°  24,  10    September    1778. / 
+despatchesinstru00fran	701	2	8	7	0.12	4	 / 38  N°  26,  10  September  1778. /  / 39  N°  27,  12  September  1778. / 
+despatchesinstru00fran	711	3	12	10	0.17	5	 / 41  N°  28,  18  September  1778. /  / 42  N°  29,  20  September  1778. /  / 43  N°  30,  24  September  1778. / 
+despatchesinstru00fran	721	1	4	4	0.00	4	 / 45  No  32,  4  October  1778. / 
+despatchesinstru00fran	751	1	4	4	0.00	7	 / 51  N°  35,  3   November   1778. / 
+despatchesinstru00fran	756	2	8	7	0.12	7	 / 52  N«  36,  10  November  1778. /  / 53  N°  37,  14  November  1778. / 
+despatchesinstru00fran	866	1	4	4	0.00	9	 / 72  N°  52,  10   January   1779. / 
+despatchesinstru00fran	875	1	4	4	0.00	8	 / 73  N°  53,  17    January   1779. / 
+despatchesinstru00fran	916	1	4	4	0.00	10	 / 74  N°  54,  17    January    1779. / 
+despatchesinstru00fran	1069	1	4	4	0.00	2	 / 118  No  87,  21  May  1779. / 
+despatchesinstru00fran	1073	1	4	4	0.00	2	 / 120  No  89,  21  May  1779. / 
+despatchesinstru00fran	1111	1	4	4	0.00	8	 / 123  N°  91,  29  May  1779. / 
+despatchesinstru00fran	1117	1	4	4	0.00	4	 / 124  N°  92,  29  May  1779. / 
+despatchesinstru00fran	1121	1	4	4	0.00	6	 / 126  N°  94,  30  May  1779. / 
+despatchesinstru00fran	1158	2	8	7	0.12	9	 / 130  No  98,  12  June  1779. /  / 131  No  99,  17  June  1779. / 
+despatchesinstru00fran	1227	1	4	4	0.00	5	 / 140  No  105,  14  July  1779. / 
+despatchesinstru00fran	1247	1	4	4	0.00	14	 / 141  N°  106,  18  July  1779. / 
+despatchesinstru00fran	1260	1	4	4	0.00	10	 / 142  No  107,  18  July  1779. / 
+despatchesinstru00fran	1266	1	4	4	0.00	9	 / 143  N°  108,  19  July   1779. / 
+despatchesinstru00fran	1274	2	8	7	0.12	7	 / 144  N°  109,  20  July  1779. /  / 145  N°  110,  31  July  1779. / 
+despatchesinstru00fran	1280	1	4	4	0.00	5	 / 147  No  112,  8  August  1779. / 
+despatchesinstru00fran	1284	1	5	5	0.00	6	 / Holker,  26,  31  juillet,  3,  5  août  1779. / 
+despatchesinstru00fran	1322	3	12	8	0.33	14	 / 148  N°  113,  8  August  1779. /  / 149  N°  114,  8  August  1779. /  / 150  N°  115,  8  August  1779. / 
+despatchesinstru00fran	1397	1	4	4	0.00	4	 / 155  N°  120,  8    September    1779. / 
+despatchesinstru00fran	1447	3	12	10	0.17	4	 / 157  No  121,  10  September  1779. /  / 158  N°  122,  17  September   1779. /  / 159  N°  123,  25  September  1779. / 
+despatchesinstru00fran	4907	1	10	10	0.00	6	 / 1.  See  Journals,  17  April  1777  ;  n<>s  62,  63,  64,  66,  72,  73,  74,  post. / 
+despatchesinstru00fran	5012	1	19	19	0.00	10	 / 1.  See  n°s  9,  12,  13,  26,  28,  29,  30,  33,  34,  35,  36,  39,  42,  43,  44,  45,  48,  52; / 53,  54,  75,  post.
+despatchesinstru00fran	5070	1	6	6	0.00	5	 / 2.  See  n°s  62,   63,   66,   70,   73,   post. / 
+despatchesinstru00fran	12289	1	11	11	0.00	24	the  same  date  as  this.  They  are  those  which  he  numbered  13,  14,  15,  16,  18, / 19,  21,  22  (nos  23,  24,  26,  28,  30,  31,  ante,  and  33,  34,  post).  The  newspapers / mentioned  as  being  enclosed  have  not  been  
+despatchesinstru00fran	14816	1	4	4	0.00	20	ration [Journals,  XII,  1071).  Other  memorials  of  McNutt  are  in  PCC,  N°  41, / VII,  fî.  77,  99,  121,  125. / 
+despatchesinstru00fran	18431	1	7	7	0.00	9	 / 2.  N«8  12,  13,  14,  15,  16,  19,  ante. / 
+despatchesinstru00fran	19166	1	9	9	0.00	6	 / 2.  Cf.  Burnett,  III,  n™  568,  574,  576,  588,  595,  599,  618,  643. / 
+despatchesinstru00fran	19275	1	13	13	0.00	12	 / 2.  Nos  9,  10,  23,  24,  26,  28,  30,  31,  32,  33,  34,  35,  ante.      This  first  paragraph / does  not  appear  in  the  copy.
+despatchesinstru00fran	19341	1	5	5	0.00	3	 / 7.  See  n0B  26,  28,  33,  34,  ante. / 
+despatchesinstru00fran	21473	1	6	6	0.00	15	request  of  the  delegates  from  Georgia  (Journals,  XII,  1188,  1195).  Cf.  Bur- / nett, III,  n°s  652,  655,  658,  662,  682,  686. / 
+despatchesinstru00fran	21832	1	8	8	0.00	25	upon  the  letter  of  resignation  are  in  Burnett,  III,  n°  663.  See  also  ibid., / nos  662,  664-668,  671,  672,  676,  677,  680,  683,  687. / 
+despatchesinstru00fran	23517	1	6	6	0.00	13	 / 2.  Nos  36?  37j  38,  39,  43,  44,  45,  ante. / 
+despatchesinstru00fran	24660	1	8	6	0.25	21	7.  In  the  margin  of  the  original  appears  the  note  "  §  Toutes  ces  pieces  aux / 7  Xbre  1778       2.  6.  12  et  14  Jan'  N°s  6,  7  ". / 
+despatchesinstru00fran	27798	1	14	14	0.00	13	J'ai  reçu,  M,  les  dépêches  que  vous  m'aviez  fait  l'hr  de  m'ecrire / sous  les  Nos  29.  33.  34.  35.  36.  37.  38.  39.  40.  41.  42.  43.  44.  45.  et / 46  2.  une  partie  desquelles  m'a  été  remise  par  M.  le  Mis  d
+despatchesinstru00fran	27825	1	16	16	0.00	6	 / 2.  N«s  42,  47,  48,  51,  52,  53,  55,  56,  57,  58,  59,  60,  61,  62,  63.  ante. / 
+despatchesinstru00fran	29370	1	7	6	0.14	5	 / 4.  See  Journals,  23,  27  February,  1,  3,  4  March  1779. / 
+despatchesinstru00fran	30877	1	9	9	0.00	44	Carolina  voted  against  the  motion.  The  entire  correspondence  is  printed  in / Burnett,  IV,  n°s  177,  178,  181,  184,  185,  186,  187,  195,  196.  With  regard  to / the  date  of  the  final  vote  see  ibid.,  nos  167  n., 
+despatchesinstru00fran	31554	2	32	26	0.19	32	its  conclusion,  the  following  references  will  be  of  use  :  Journals,  under  dates / of  26  January,  1,  15,  16,  18,  22.  24  February,  1,  17,  23.  25-27.  29,  30  March, / 1,  3,  12,  15,  16,  24,  26-28  April  1779  ;
+despatchesinstru00fran	31609	2	15	15	0.00	26	{Journals,  XIII,  443-444).  See  Burnett,  III,  n™  482  n.,  627  n.,  IV,  n°*  58  n., / 209,  412.  Cf.  Journals,  26  August,  21  September,  6  November  1778,  5,  7,  12, / 20,  22,  27  January,  13  May,  17  April  1779. / 
+despatchesinstru00fran	35847	1	13	13	0.00	37	between  France  and  the  United  States.  They  were  dated  26  May,  9,  16,  23, / 30  June,  11,  18  August,  1,  8,  15,  22  September^  6,  13,  20,  27  October,  3,  10  No- / vember, 1,  15,  22  December  1779,  5,  12,  26  [
+despatchesinstru00fran	36708	1	9	9	0.00	7	6.  See   Journals,   XIV,   631-633,   667,   668,   673-675  ;   Burnett,    IV,   n*"  312, / 313,  314,  319,  322,  330,  349,  354,  355,  357. / 
+despatchesinstru00fran	37186	1	7	7	0.00	7	8.  This  action  was  taken  8  July  1779  (Journals,  XIV,  700-705).       See  Bur- / nett, IV,  n08  286,  328,  344,  345,  354,  421,  518. / 
+despatchesinstru00fran	38252	1	6	6	0.00	1	 / 3.  See  n08  49,  82,  90,  96,  111,  ante. / 
+despatchesinstru00fran	38362	1	5	5	0.00	8	 / 7.  See  n°9  94,  110,  114,  130,  ante. / 
+despatchesinstru00fran	38661	1	7	7	0.00	3	 / 2.  See  nos  49,  82,  90,  96,  111,  132,  ante. / 
+despatchesinstru00fran	39016	1	8	8	0.00	17	 / 14.  See  nos  49,  82,  90,  96,  111,  132,  135,  ante. / 
+despatchesinstru00fran	39890	1	10	10	0.00	29	committee  laid  before  Congress  13  July,  and  printed  in  Journals,  XIV,  823- / 824.  See  also  Burnett,  IV,  nos  314,  319,  322,  330,  349,  354,  355,  357,  400, / 403,  407,  409  ;  Correspondence  of  Jay  (ed.  Johnston)
+despatchesinstru00fran	39951	1	6	6	0.00	7	 / 4.  See  n08  94,  110,  114,  130,  133,  ante. / 
+despatchesinstru00fran	40004	1	6	6	0.00	9	 / 6.  See  nos  55,  66,  68,  70,  71,  ante. / 
+despatchesinstru00fran	41703	1	5	5	0.00	17	two  letters  were  read  in  Congress  19  July  (Journals,  XIV,  851).  Cf.  Burnett, / IV,  n°s  428,  429,  430,  443,  444. / 
+despatchesinstru00fran	44171	1	9	9	0.00	12	6.  In  connection  with  the  Paca-Drayton  information  and  its  publication / in  August,  1779,  see  Burnett,  IV,  nos  215,  216,  226,  240,  471,  478,  479,  513, / 533  ;  Mass.  Hist.  Soc,  Collections  :  Warren-Adams  Letter
+despatchesinstru00fran	45099	1	8	8	0.00	14	 / 9.  Cf.  ii°b  94,  110,  114,  130,  133,  139,  144,  ante. / 
+despatchesinstru00fran	45180	1	4	4	0.00	9	2.  La  Luzerne  arrived  in  Philadelphia  21  September  1779.  See  Burnett, / IV,  n08  500,  541,  542,  546. / 
+despatchesinstru00fran	46677	1	10	10	0.00	33	2.  See  n°  157,  ante,  note  14.  Foreign  affairs  were  taken  under  considera- / tion 18,  20,  23,  24,  25  September  1779  {Journals,  XV,  1086,  1090,  1095,  1103, / 1105-1107).  The  Journals  give  no  account  of  the  prop
+despatchesinstru00fran	46928	1	10	10	0.00	22	was  not  in  nomination,  the  vote  was  ruled  invalid.  See  ibid.,  n08  552,  554, / 556,  557,  559,  560,  562,  564,  565,  566,  569,  572  ;  Wharton,  III,  336-338. / 
+despatchesinstru00fran	47070	1	6	6	0.00	10	 / 6.  See  nos  7,  10,  63,  94,  105,  ante. / 
+despatchesinstru00fran	47159	1	11	11	0.00	24	256).  See  Journals,  XV,  1183  ;  Burnett,  IV,  n°s  225,  366,  488,  500,  535,  546, / 555,  558,  560,  565,  572,  593,  595,  601,  604,  609,  617.  Cf.  Monaghan,  John / Jay,  chapter  7,  passim  ;  James  L.  Howard,  Seth  H
+despatchesinstru00fran	47942	1	4	4	0.00	4	fisheries,  105-115  ;  and  French  al- / liance,  98-99,    107,   423,   501,    520, / 
+despatchesinstru00fran	48044	1	6	6	0.00	7	356,  409n.,  456-458,  578  ;  effect,  89, / 95,  112,  266,  303,  662,  781  ;  anni- / versary, 227-228,  512,  and  confede-
+despatchesinstru00fran	48053	2	9	9	0.00	2	101,  109,  118-119,  141-142,  148-149, / 174-175,  197n.,  200,  211,  267,  340, / 355-356,  363-365,  371-372,  394-395, / 431,  470-472,  474,  475,  543,  587, / 634,  638-639,  865-866;  and  Jay,
+despatchesinstru00fran	48095	1	4	4	0.00	8	"  Americanus  ",  writings  of,  658,  690- / 691,  709,  710-712,  718n.,  733,  767, / 768  ;  identity  of,  690  n.
+despatchesinstru00fran	48446	3	18	18	0.00	10	 / Boston,  Mass.,  79,  136,  141,  152,  309, / 365,  626,  676,  712,  722,  826,  872  ; / S.  Adams  in,  718  ;  British  threat  to, / 280,  284-287,  306,  313,  330,  331, / 366  ;  and  Burgoyne's  troops,  221  ;
+despatchesinstru00fran	48453	1	5	5	0.00	9	in,  481n.  ;  d'Estaing  in,  170-171, / 236n.,  237,  252,  262,  269n.,  307,  315, / 348,  362,  377  ;  French  consul  in,
+despatchesinstru00fran	48464	1	5	5	0.00	9	taxes,  507,  800  ;  Temple  in,  617-618, / 732  ;  vessels  in,  216,  243,  402,  660, / 677-678,  680
+despatchesinstru00fran	48635	1	6	6	0.00	10	Byron,  John,  British  admiral,  143  ; / fleet  of,  237,  286,  288,  308,  377,  382, / 385-388,  389-390,  444,  539  ;  at  Gre-
+despatchesinstru00fran	48652	1	5	5	0.00	3	 / Cadiz,  224,  271,  488,  646,  710  ;  French / consul  in,  138n.  ;  Gérard  in,  120,
+despatchesinstru00fran	48681	1	5	5	0.00	9	boundaries,  425,  564  ;  British  in, / 241,  242,  262,  275n.,  282,  494;  and / fisheries,  866,  884,  891  ;  and  France,
+despatchesinstru00fran	48687	2	8	8	0.00	8	posed attacks  on,  114,  118,  129,  153- / 154,  159,  241,  289,  301-302,  339- / 343,  347-349,  352,  364,  416,  427- / 428n.,  458,  461-462,  464-465,  524,
+despatchesinstru00fran	48707	1	4	4	0.00	3	 / Cape  Cod,  382,  388,  401,  437 / 
+despatchesinstru00fran	48810	2	12	12	0.00	3	fense of,  312,  320,  486-487,  496- / 498,  511,  548,  562,  580,  706,  714, / 730,    731,    735,    751,    759,    772-776, / 
+despatchesinstru00fran	48823	1	5	5	0.00	6	607-608  ;  Miralles  in,  185  ;  news / from,  164,  187n.,  195,  499,  503,  553, / 577n.  ;  Pulaski  in,  214n.  ;  supplies
+despatchesinstru00fran	48859	1	4	4	0.00	9	 / Chesapeake  Bay,  160,  315,  316,  401, / 497,    732
+despatchesinstru00fran	48913	2	9	9	0.00	7	money,  331  ;  declaration,  254-257  ; / operations,  264,  280,  282,  285,  287, / 320,  323,  329-330,  449-450,  582,  599, / 608-609,  611,  624,  714-715,  723,
+despatchesinstru00fran	48950	2	15	15	0.00	15	49,  51,  58,  60  ;  and  independence / 63  ;  rebellion  in,  44,  46,  51,  66,  88 / and  Spain,  53  ;  strength,  58.  Bri / tish  :  boundaries,  103,  552.  French / 54,  70,  360  ;  guarantee  of,  78,  82 / 85,  102-103  ;  supp
+despatchesinstru00fran	48967	1	5	5	0.00	4	84,  303,  369,  431  ;  debate  on,  748- / 749  ;  with  Europe,  70,  155,  228,  232, / 272-278,  283-284,  301,  321,  340,
+despatchesinstru00fran	49130	1	4	4	0.00	10	719  ;  local  politics,  48n.  ;  military / operations  in,  342,  566,  580,  799, / 807n.,  823;  militia,  581,  786;  and
+despatchesinstru00fran	49173	1	4	4	0.00	3	261,  284n.,  303,  320n.,  320-321, / 325,  394,  436,  454n.,  565,  802n., / 908n.  ;  operations,  127,  231-232,  236-
+despatchesinstru00fran	49183	2	9	9	0.00	8	457,  501,  608,  870  ;  supplies,  131n., / 212,  229,  273-278,  304,  427,  467, / 507-508,  660,  713-714,  869,  870,  876, / 888-889  ;  see  also  Military  Opera-
+despatchesinstru00fran	49191	1	6	6	0.00	5	194,  205-210,  218,  241,  311-312,  325- / 326,  400-401,  426,  431,  478,  563,  586, / 597,  723-724,  762,  771-772,  791-793,
+despatchesinstru00fran	49195	1	4	4	0.00	3	322,  326,  374,  386-387,421-422,  463, / 542,  544,  559-561,  575,  638,  640-641, / 715,  749,  824-825,  846n.,  847-848,
+despatchesinstru00fran	49202	2	8	8	0.00	4	232,  233,  248-257,  260,  265-266,  281- / 282,  300-302,  311,  321,  333-337,  360, / 366,  369-370,  372,  390,  569,  873- / 874,  876-877  ;  and  Canada,  159,  339-
+despatchesinstru00fran	49209	2	13	13	0.00	2	79-80,  91-92,  119,  158,  177,  199-200, / 206-213,  230,  250,  253,  361,  367,  386- / 387,  408,  410,  427, 432,  450,  457,  522, / 557,  584-585,  723-725  ;  committees,
+despatchesinstru00fran	49217	1	5	5	0.00	0	501,  504-505,  508-509,  517-522,  525- / 531,  542,  544,  547n.,  549,  554,  556- / 559,  571-573,  576-578,  586-587,  589,
+despatchesinstru00fran	49231	2	12	12	0.00	4	tion troops,  97-98,  233,  248-257,  259, / 260,  265,  331-332,  350,  375,  456,  463, / 640  ;  and  Deane,  61,  95-96,  136-137, / 169,  227,  310,  321-322,  326,  406-408, / 414-419,  429-430,  442,  444-445,  467-
+despatchesinstru00fran	49249	1	4	4	0.00	0	408,  415-416,  422n.,  430,  445-459, / 471-473,  501,  519-520,  524,  526,  532, / 538-539,  543-544,  549-555,  557-561,
+despatchesinstru00fran	49284	1	4	4	0.00	4	motions  in,  251n.,  326,  417n.,  429- / 430,  565,  571,  573-574,  655-657,  777, / 808-809,  811-813,  815,  821-822,  842-
+despatchesinstru00fran	49291	1	4	4	0.00	6	367-368,  379,  418-419,  424-426  ; / proclamations,  255,  684,  688,  888  ; / and  propaganda,  222,  363  ;  protocol,
+despatchesinstru00fran	49299	3	16	16	0.00	1	230-231n.,  238,  249-253,  255n.,  259- / 260,  264n.,  265,  269,  274,  281-283, /  /  / 288n.,  311,  325-327,  351,  352,  365, / 366,  375,  379-381,  399n.,  403,  405n., / 411,  417,  426,  428,  436,  442-443n., / 455-456,  458,  4
+despatchesinstru00fran	49308	5	29	29	0.00	1	501,  504  n.,  508n.,  511n.,  524n., / 547n.,  552,  571-573,  576,  578,  581, / 583,  587,  593-598,  604n.,  607,  615- / 616n.,  632n.,  638,  639,  647n.,  649, / 651,  653,  677,  680,  682,  684-686, / 688,  706,  714,  715,  717-7
+despatchesinstru00fran	49323	1	4	4	0.00	5	376,  505,  642,  769-771  ;  and  states, / 215,  304,  396-397,  445,  597,  512- / 515,  606-607,  721,  798;  and  sup-
+despatchesinstru00fran	49334	1	4	4	0.00	5	votes  in,  33,  616,  617,  654-656, / 727n.,  778,  808-809,  811,  815,  816, / 821-822,  842-843,  846,  868,  869n.,
+despatchesinstru00fran	49364	1	4	4	0.00	0	 / 471n.,  474,  500,  508n.,  521,  587, / 588,  594n.,  633-634,  636-637,  641,
+despatchesinstru00fran	49523	1	5	5	0.00	5	rens,  429-430  ;  and  Lee  controversy / 51,  59,  61,  87,  95-97,  136-137,  169 / 406-408,  414-417,  421n.,  422n.,  429
+despatchesinstru00fran	49556	2	10	10	0.00	5	on  British  peace  commission,  177  ; / character  of,  100,  108,  310,  361, / 400-401,  403-404,  407,  425,  470n., / 472,  557-558,  573,  586,  605n.,  616, / 686-687  ;  on  fisheries,  578,  586,  651-
+despatchesinstru00fran	49578	1	5	5	0.00	7	 / 404,  434,  457,  459,  475-479,  555, / 641-642,  660,  868-869  ;  state,  208-
+despatchesinstru00fran	49610	1	4	4	0.00	6	 / Delaware  River,  175,  315,  390,  401, / 623  ;  defenses  of,  147,  216,  230-
+despatchesinstru00fran	49811	1	5	5	0.00	3	 / 382  ;  troops  at,  241,  243,  319,  330 / 
+despatchesinstru00fran	49865	2	9	9	0.00	8	admiral,  American  expedition,  41n., / 89,  127,  188,  401  ;  at  Boston,  252, / 258,  263,  269n.,  284n.,  285,  287, / 307,  327-328,  377  ;  and  Congress,
+despatchesinstru00fran	49874	1	5	5	0.00	3	252-253,  258-259,  280,  374-375  ; / news  from,  131,  143,  146,  294,  355, / 362  ;  officers,  348n.,  903n.  ;  opera-
+despatchesinstru00fran	49887	2	11	11	0.00	10	sketch  of,  127n.  ;  strength  of  fleet, / 137,  153-155,  192,  232,  305,  444  j / and  Sullivan,  258n.,  481  ;  supplies, / 118, 149, 158,  229,  274,  400-401,  416,' / 497,  497-498n.,  660,  732,  828-836',
+despatchesinstru00fran	49893	1	5	5	0.00	7	398,  499,  503-504,  538,  826-827' / 854,  857,  864,  868,  869;  letters  : / to  Gérard,  151-155,  258,  623-624  ;
+despatchesinstru00fran	49902	4	26	26	0.00	7	 / Europe,  101,  221,  282,  308,  313,  375, / 410,  420,  427,  430,  487,  570,  572, / 573,  595,  598n.,  617,  631,  710,  711, / 747,  787,  796,  822,  840,  868,  875, / 902  ;  British  policy  in,  54,  178,  192-
+despatchesinstru00fran	49910	2	16	16	0.00	9	360  ;  general  situation  in,  100,  145- / 146,  191,  192,  241,  314,  352,  403, / 525-526,  602,  664,  805;  loans  to / U.  S.,  275,  307,  458,  466,  479,  581, / 599-603,  709  ;  naval  operations  in,
+despatchesinstru00fran	49916	3	23	23	0.00	11	526,  565,  640  ;  opinion  of  U.  S.  in, / 44,  91,  156,  168,  209,  408,  411,  433, / 450,  457,  538,  672,  722  ;  prices  in, / 483  ;  trade  with  U.  S.,  277,  283- / 284,  417,  438  ;  U.  S.  agents  in,  101, / 171,  201
+despatchesinstru00fran	50015	2	13	13	0.00	8	T.  Paine  on,  810n.  ;  public  opinion / on,  658,  762,  763,  767,  768;  and / Spain,  128,  866-867  ;  in  terms  of / peace,  103-115,  523-524,  527,  546, / 547,  552,  578,  593-597,  606,  640, / 651-652,  654-659,  704-706,  7
+despatchesinstru00fran	50048	1	5	5	0.00	13	143.  French  :  in  America,  165,  167, / 174,  176,  179,  194  ;  in  Europe,  143, / 190-193  ;  supplies  for,  139,  149,
+despatchesinstru00fran	50073	1	5	5	0.00	9	governor,  157n.,  312n.  ;  proposed / attack  on,  103,  114,  128,  129,  159, / 344-346,  348,  431-432,  435,  458,
+despatchesinstru00fran	50080	1	4	4	0.00	7	in  terms  of  peace,  103-118,  420-421, / 501,  547,  552,  604n.,  810,  842-843, / 847,  884-888,  889n.,  891-892,  894  ;
+despatchesinstru00fran	50162	4	25	25	0.00	5	and  Bermuda,  652-653  ;  and  Bri- / tain, 44,  47,  50,  54,  58,  60,  64-66, / 71-73,  80,  84,  88,  92,  98,  110,  126, / 127,  137,  143-145,  167-168,  190-193, / 249,  254,  256-257,  281,  303,  318, / 320,  369,  372,  391,  45
+despatchesinstru00fran	50175	1	5	5	0.00	2	373-374,  404-406,  450-451,  521n., / 538,  581,  585,  610-611,  634,  637, / 641-642  ;     and     fisheries,     103-116,
+despatchesinstru00fran	50207	1	4	4	0.00	3	99-100,  102-103,  111,  127-129,  138, / 145,  185-188,  222,  242,  375,  433- / 435,  451-453  492-494,  534-537,  598,
+despatchesinstru00fran	50213	1	5	5	0.00	9	trade,  45,  62,  70,  137-138,  199-200, / 240,  277,  375-376,  417,  508,  537, / 580,  608,  640  ;  and  treaty  of  1763,
+despatchesinstru00fran	50249	1	5	5	0.00	5	and     Chaumont,     61,     136n.  ;     and / Congress,  326,  463,  561,  565,  826 / and    Cooper,   481  ;    and    Deane,    68
+despatchesinstru00fran	50309	1	5	5	0.00	6	Gambier,  James,  British  admiral, / 313,  323,  489  ;  operations,  307,  308, / 366  ;  sketch  of,  308n.  ;  letters   :  to
+despatchesinstru00fran	50360	3	15	15	0.00	7	312n.,  448,  472-473,  486-487,  491- / 498,  503-505,  511,  517-520,  522,  531, / 548,  553,  562,  581,  582,  625,  648, / 660n.,  687n.,  714,  759,  797,  799, / 810,  864  ;  and  Continental  Army,
+despatchesinstru00fran	50392	1	4	4	0.00	4	tion,  445,  729  ;  audiences  with / Congress,  98,  100,  104,  112,  148- / 149n.,  149-150,  521,  524-531,  554-
+despatchesinstru00fran	50406	1	4	4	0.00	3	282-284,  289-290,  306,  309n.,  313- / 316,  413,  416n.,  423,  492-494,  501, / 504-505,  508-509,  517-522,  537,  545-
+despatchesinstru00fran	50410	1	4	4	0.00	3	623-624,  632,  634-635,  642,  652- / 653,  713-714,  719,  790,  831,  870- / 871,  876-877  ;  and  Congress,  pas-
+despatchesinstru00fran	50431	3	18	18	0.00	5	78-84,  98-99,  126,  137,  142,  379- / 380  ;  health,  118,  121,  354,  368, / 432,  506,  541,  567,  573,  593,  604- / 605,  631,  676,  688,  736,  745,  752  ; / and  Holker,  828-836,  851-853,  855-
+despatchesinstru00fran	50442	1	4	4	0.00	4	722-724,  865-870  ;  interviews  with / delegates,  100,  102,  110,  157,  531- / 532,  543,  550-552,  558-561,  564-
+despatchesinstru00fran	50449	2	12	12	0.00	0	635-636,  641,  643-644,  651-652, / 656,  685-686,  717,  723,  726,  729- / 731,  763-767,  779-782,  785,  786, / 791-794,  809,  823,  847,  849,  850, / 860-861,  875,  884-887,  894;  and
+despatchesinstru00fran	50460	1	5	5	0.00	5	H.  Laurens,  148-149,  176-177,  225, / 249,  297,  299,  379-380,  391,  400, / 408-411,  413,  430-431,  491-494,
+despatchesinstru00fran	50468	2	9	9	0.00	6	899-900  ;  and  long  truce,  102,  451- / 453,    561,    659,    706,   738-739,    786- /  / 787,  791,  813  ;  and  Md.,  414,  424, / 441,  446-447,  554n.,  616n.,  763-767,
+despatchesinstru00fran	50493	1	4	4	0.00	6	132,  397-398,  411,  428  ;  propaganda, / 161n.,  249,  251,  267,  482,  689-691, / 709,  733,  762  ;  and  Quakers,  296-
+despatchesinstru00fran	50501	1	4	4	0.00	6	activities,  174-175,  233-234,  285n., / 394-395,  433,  512,  621,  758;  and / S.  C,  414,  849  ;  on  Spanish  policy,
+despatchesinstru00fran	50511	2	11	11	0.00	3	 / 73,  115,  128,  285,  420-421,  528- / 529,  574-575,  860,  885-886,  903- / 904,  905-907  ;  termination  of  mis- / sion, 119-120,  354,  506,  631,  736, / 752,  781,  785,  874-875,  878-883,
+despatchesinstru00fran	50519	7	38	38	0.00	5	94  ;  transmission  of  despatches,  94, / 131,  160,  187-188,  225,  230,  240, / 252,  258,  264-265,  267,  279,  281, / 284-285,  313,  317,  327,  355,  371, / 380,  391,  398,  412,  418,  435,  445, / 449,  464,  488,  533,  584,  
+despatchesinstru00fran	50538	1	4	4	0.00	1	385,  397,  411n.,  442n.,  468n.,  470- / 471n.,  474,  500,  508n.,  521,  572, / 587,  588,  594n.,  633-634,  636-637,
+despatchesinstru00fran	50689	3	16	16	0.00	4	44,  47-48,  54-56,  58,  65-66,  71-75, / 78,  82-84,  88,  92,  98-99,  110,  126, / 137,  143-145,  190-193,  303,  356- / 362,  372,  391,  410,  470-472,  474- / 475,  534,  564,  573,  576-578,  584, / 611-612,  662,  711,  784  ;  in
+despatchesinstru00fran	50699	1	5	5	0.00	5	43-44,  65,  93-95,  113,  127,  148n., / 159,  183,  192,  196,  217,  236-239, / 241-242,  254,  261-262,  264,  268-271,
+despatchesinstru00fran	50725	1	4	4	0.00	2	tion, 51n.,  70,  73,  78-79,  81,  88,  94- / 95,  98,  106.  125-126,  165-168,  175, / 179,  188-189,  191-192,  225-227,  232,
+despatchesinstru00fran	50730	1	5	5	0.00	3	390,  394,  409n.,  558-559,  565,  569- / 570,  572-573,  587,  639,  709,  747, / 784,  873-874,  876-877  ;  and  Sara-
+despatchesinstru00fran	50742	2	14	14	0.00	6	treaty  of  1763,  594-595  ;  and  U.  S., / 44,  92,  93,  102,  109,  113,  128,  242, / 267,  282,  300-302,  303n.,  356-362, / 372,  414,  418n.,  458,  462,  526-532, / 540,  641,  764,  765-766n.,  780-782,
+despatchesinstru00fran	50827	4	23	23	0.00	6	 / Halifax,  270,  282,  301,  412,  539,  871  ; / British  in,  286,  323,  393,  548,  800  ; / proposed  attack  on,  289,  290,  311, / 340,  342-343,  453,  524,  536,  623- / 624,  639,  771  ;  supplies  in,  377,  385, / 397,  411
+despatchesinstru00fran	50901	1	4	4	0.00	4	 / Havana,  159,  170,  187-188,  305,  307 / 
+despatchesinstru00fran	51009	1	6	6	0.00	9	608  ;  independence  of,  266,  764, / 784  ;  loans,  275,  307,  367,  403,  430, / 538  ;  neutrality,  71-72  ;  news  from,
+despatchesinstru00fran	51063	1	5	5	0.00	9	and  Gambier,  307n.,  308n.  ;  ope- / rations, 192,  194,  218,  271,  292, / 305,  362,  448  ;  and  peace  commis-
+despatchesinstru00fran	51081	3	15	15	0.00	10	Hudson  River,  military  operations / along,  170,  309,  313,  320,  323,  324, / 329,  390,  401,  437-439,  710,  714- / 716,  730,  735,  753,  758,  802-803, / 818-819,  826,  871,  872
+despatchesinstru00fran	51136	1	5	5	0.00	7	 / Illinois  River,  342,  493,  368,  564,  710 / 
+despatchesinstru00fran	51141	2	10	10	0.00	7	391,  451-453;  effect  of,  65;  and / France,  49,  62,  72,  84-85,  93,  99, / 101-102,  110,  126,  137,  222,  266, / 356,  371-372  ;  and  mediation,  144,
+despatchesinstru00fran	51147	1	7	7	0.00	8	neutral  league,  72  ;  opinion  on,  46- / 48,  50,  64,  71,  77,  81,  92-93,  104, / 211,  253,  260,  407  ;  opposition  to,
+despatchesinstru00fran	51152	2	13	13	0.00	8	and  Quakers,  296  ;  recognition  of, / 54,  64,  68,  73,  76,  81,  98,  112,  138n., / 168,  249,  250,  350,  360-361,  812; / and  Spain,  195,  271  ;  see  also  United
+despatchesinstru00fran	51171	1	5	5	0.00	5	Indians,  American,  attitude  of,  347- / 348,  438-439,  458,  580,  624,  803  ; / and  Congress,  694-703,  707-709,  734-
+despatchesinstru00fran	51179	1	5	5	0.00	6	618-619,  648,  819,  872  ;  in  south, / 163,  312,  443,  495,  511  ;  and  To- / ries, 268  ;  in  Vt.,  425  ;  in  west,  313,
+despatchesinstru00fran	51227	1	5	5	0.00	13	Jamaica,  West  Indies,  British  in,  305, / 317,  382,  437,  448  ;  fleet  from,  230, / 304,  871  ;  and  Spain,  128
+despatchesinstru00fran	51365	1	5	5	0.00	10	Kings  Bridge,  N.  Y.,  military  opera- / tions near,  196,  287,  292,  309,  324, / 353,  751
+despatchesinstru00fran	51369	1	4	4	0.00	5	Kings  Ferry,  N.  Y.,  military  operations / near,  170,  437-438,  714,  715,  802, / 818
+despatchesinstru00fran	51498	1	4	4	0.00	6	148-149,  176-177,  198-199,  202,  225, / 249,  297,  299,  313-316,  379-380,  391, / 400,  408-411,  413,  430-431,  491-494,
+despatchesinstru00fran	51564	1	5	5	0.00	9	Lee,  Arthur,  American  commissioner / to  France,  67,  68,  76,  83,  87,  100- / 101,  416n.,  787,  788  ;  S.  Adams  on,
+despatchesinstru00fran	51575	1	5	5	0.00	6	844-845,  862,  874-875,  899-900  ;  and / France,  51,  69,  87,  101,  116,  171n., / 421-423,  446,  605,  866,  899-900;
+despatchesinstru00fran	51580	2	10	10	0.00	8	and  Md.,  444  ;  recall,  117,  118,  421- / 423,  542,  587,  615n.,  616-618,  630, / 643,  719,  726,  727n.,  749,  825,  863, / 895-897  ;  and  secret  aid,  49,  51,  52,
+despatchesinstru00fran	51640	1	4	4	0.00	6	147n.,  310,  409n.,  445-446,  559-560, / 569,  589,  605,  606,  656n.,  685n., / 874-875,  900  ;  and  Holker,  832  ;  and
+despatchesinstru00fran	51673	1	4	4	0.00	6	opposition  to,  849  ;  politics,  574n., / 718  ;  reputation,  92,  811,  866 / 
+despatchesinstru00fran	51699	1	4	4	0.00	7	ral, operations  in  south,  486,  511n., / 553,  751,  759,  772-775,  797n.,  798, / 800-801  ;  sketch  of,  486n.
+despatchesinstru00fran	51730	2	13	13	0.00	7	269,  307,  373-374,  450-451,  458, / 466,  479,  523,  538,  581,  599-603, / 685  ;  to  French  officers,  132  ;  pro- / jected, 275,  403,  406,  545,  709,  733, / 749,  766n.,  771,  888-889  ;  see  also
+despatchesinstru00fran	51739	4	25	25	0.00	5	 / London,  69,  79,  82,  87,  88,  143,  144, / 191,  192,  241,  282,  298n.,  350,  356, / 357,  360,  361,  363,  372,  373,  375, / 449,  451,  534,  540,  552,  611-613, / 646,  746,  783n.,  786,  796  ;  Gamier
+despatchesinstru00fran	51748	1	5	5	0.00	4	568  ;  W.  Lee  in,  416,  469  ;  lord  mayor, / 161  ;  news  from,  162,  167,  195,  198, / 262  ;  newspapers  of,  237,  242,  362  ;
+despatchesinstru00fran	51784	2	18	18	0.00	12	portrait,  395,  733  ;  and  secret  aid, / 50,  52,  53,  55,  56,  60  ;  and  Spain, / 78  ;  and  U.  S.,  70,  74,  76-78,  80,  81, / 88,  105,  125,  130,  266,  512,  539,  854- / 855  ;  and  Vergennes,  49  ;  letters  :
+despatchesinstru00fran	51791	1	6	6	0.00	12	marchais, 49-50  ;  Congress,  632n., / 634,  726,  733,  878,  879,  880 / 
+despatchesinstru00fran	51890	1	7	7	0.00	12	Martinique,  West  Indies,  228,  290, / 305,  306,  309,  311,  316,  398,  477, / 597,  625,  827n.,  876  ;  Gérard  in,  120,
+despatchesinstru00fran	51904	2	9	9	0.00	10	336  ;  and  confederation,  208,  243, / 378,  414-415,  424,  431,  441,  510, / 512-515,  543,  578,  640,  720,  727-729, / 764-767,  791-793,  850  ;  constitution,
+despatchesinstru00fran	51909	1	5	5	0.00	6	toms, 325  ;  delegates  in  Congress, / 116,  119,  204,  207,  232,  253n.,  283n., / 310n.,  367,  378-379,  413n.,  414,  424,
+despatchesinstru00fran	51914	1	5	5	0.00	5	878n.,  896n.  ;  and  fisheries,  594n., / 778,  780,  793,  808,  809n.,  811n.,  816  ; / French  consul  in,  424  ;  and  Gérard,
+despatchesinstru00fran	52045	1	4	4	0.00	7	74,  99-102,  222,  356-362,  642,  662- / 663,  705,  711,  769-770,  806;  and / Congress,   99-101  ;   and   France,  99-
+despatchesinstru00fran	52125	1	4	4	0.00	1	888-889  ;  British,  183,  268-271,  279- / 280,  282,  305-309,  311-313,  317,  319, / 321,  323-325,  327-331,  363-365,  373,
+despatchesinstru00fran	52142	1	4	4	0.00	6	170,  802-803,  818-819,  826  ;  in  south, / 162-164,  499,  503-505,  511,  553,  562, / 772-776,  797-798,  800-801,  803,  826,
+despatchesinstru00fran	52149	1	6	6	0.00	8	Militia,  American  dependence  on,  214- / 215,  287,  491,  619,  624,  799;  of / Conn.,  566,  786  ;  of  Ga.,  503,  511  ;  of
+despatchesinstru00fran	52194	2	11	11	0.00	6	115,  186-187,  344-346,  359-360,  434, / 493,  522,  529,  531-532,  537,  547, / 563-564,  573-574,  576-577,  583,  586, / 595,  771,  810,  842-843,  847,  884-890, / 894  ;    settlements    along,    275,    368,
+despatchesinstru00fran	52294	1	4	4	0.00	7	fisheries,  738n.,  817n.  ;  and  Gérard, / 103,  110,  119-120,  175,  311,  340- / 345,  420n.,  537,  551n.,  573-574  ;  on
+despatchesinstru00fran	52391	2	9	9	0.00	1	397-398,  401-402,  437-439,  444,  447- / 450,  486-487,  489-499,  503,  538,  539, / 548,  618,  648,  715-716,  854,  857  ;  in / Europe,  365n.,  389,  436-438  ;  Fran-
+despatchesinstru00fran	52439	1	5	5	0.00	7	285  ;  constitutions,  473  ;  and  fishe- / ries, 103-115,  546,  594,  640,  644,  652, / 667-675,  717-718,  808-809,  811-812,
+despatchesinstru00fran	52480	2	13	13	0.00	9	259n.,  312m,  317,  319-320,  327,  329- / 331,  390,  500,  516,  553,  566,  580, / 706,  823  ;  militia,  215,  241,  243,  319, / 329,  735  ;  and  N.  Y.,  415  ;  news  from,
+despatchesinstru00fran	52498	6	41	41	0.00	12	New  York,  City  of,  167,  176,  221,  230, / 270,  301,  304,  336,  365,  402,  428n., / 486,  488,  495,  518,  539,  543,  730, / 735,  759,  871,  872;  Berkenhout  in, / 259n.  ;  blockade  of,  156n.  ;  British / forces  in,  66, 
+despatchesinstru00fran	52513	4	24	24	0.00	9	394,  436-439,  447-448,  499,  548, / 572,  648,  872  ;  newspapers,  213,  237, / 242,  323  ;  proposed  attack  upon,  241, / 275,  624  ;  rumored  evacuation  of, / 192,  241-242,  268-269,  279,  282,  288, / 297,  315,  323-325,  3
+despatchesinstru00fran	52571	1	4	4	0.00	6	623-624  ;  fisheries,  103-115, 118,  340, / 342-343,  359,  523-524,  527,  547,  552, / 578,  593-594n.,  594-596,  606,  636,
+despatchesinstru00fran	52585	1	5	5	0.00	8	British  forces  in,  286,  301,  305,  323, / 390,  397,  437,  439,  548  ;  captured / frigate  at,  196n.  ;  Fleury  at,  908n.  ;
+despatchesinstru00fran	52653	1	6	6	0.00	9	379n.,  528n.  ;  hurricane  in,  303-304  ; / militia,  235,  245,  246,  443,  515,  580  ; / and  Mississippi  navigation,  577  ;  and
+despatchesinstru00fran	52668	1	6	6	0.00	10	575,  576  ;  in  peace  terms,  549-551, / 556,  558,  586,  593-597,  843,  847,  848  ; / in  Spanish  policy,  373  ;  supplies  in,
+despatchesinstru00fran	52788	2	12	12	0.00	8	Paris,  Almodovar  in,  746  ;  American / commissioners  in,  68,  76,  80,  81, / 86-88,  91, 100, 101, 120, 190n.,  374n., / 379n.,  419,  442n.,  446,  447,  500, / 594n.,  713  ;  Aranda  in,  391n.  ;  Dea-
+despatchesinstru00fran	52796	1	7	7	0.00	10	spies  in,  69n.,  126n.  ;  treaty  of  1763, / 104,  552,  556,  574,  655,  667,  712  ; / treaty  of  1783,  149n.
+despatchesinstru00fran	52862	1	5	5	0.00	7	conquests,  129;  danger  of  separate, / 82,  85,  95,  98,  100-102,  106, 126-127, / 142-144,  198-199,  301-302,  363n.,
+despatchesinstru00fran	52873	1	4	4	0.00	4	and  Canada,  809  ;  debate  on,  103- / 115,  177,  187,  307,  452-453,  521- / 524,  526-532,  545-552,  554-561,  563-
+despatchesinstru00fran	52926	2	15	14	0.07	4	606-607  ;  constitution,  352,  367,  395- / 396,  398,  456,  473,  511,  555,  566,  658, / 693,  722  ;  council,  161,  250-231n., / 386n.,  479,  524,  566,  750,  750-751n., / 830,  831n.,  833n.,  834,  838n.,  852-
+despatchesinstru00fran	52947	1	4	4	0.00	7	tentiaries, 896n.,  897n.  ;  politics, / 365,  367,  386,  394-397,  511,  759- / 761,  865,  867  ;  president,  462,  644-
+despatchesinstru00fran	52979	1	6	6	0.00	8	posed attack  on,  435,  497  ;  in  Spanish / policy,  128,  344,  346,  359,  529,  537  ; / in  terms  of  peace,  547  ;  in  U.  S.
+despatchesinstru00fran	53007	1	6	6	0.00	7	260  ;  British  in,  103,  147n.,  156,  179., / 183,  199,  209,  232,  242,  276,  296- / 297,  390  ;  Catholic  priests  in,  172  ;
+despatchesinstru00fran	53014	1	5	5	0.00	3	597  ;  Deane  in,  136n.,  147n.  ;,  de- / fenses of,  216,  230,  320,  438,  582, / 599,  819  ;  delegates  in,  175  n.,  220n.,
+despatchesinstru00fran	53164	1	5	5	0.00	5	403-405,  417,  479,  483-484,  507-508, / 522,  537,  750,  800  ;  European,  483  ; / increases  in,  304,  580-581,  584-585,
+despatchesinstru00fran	53188	1	5	5	0.00	9	Privateers,  323  ;  American,  216-217, / 321,  330,  369,  397,  411-412,  499, / 618,  646-647,  872  ;  British,  715  ;  and
+despatchesinstru00fran	53259	1	4	4	0.00	8	battle  of,  348n.  ;  proposed  attack / upon,  311,  340,  342-343,    453,  536 / 
+despatchesinstru00fran	53296	1	6	5	0.17	9	106,  125-126,  311  ;  danger  of,  70,  73, / 75,  88,  97  ;  and  France,  81,  89,  97  ; / and  U.  S.,  78-79,  93-95  ;  see  also
+despatchesinstru00fran	53361	1	6	6	0.00	6	British  in,  264n.,  285,  287,  393,  401, / 448,  487,  624,  730,  751,  771  ;  dele- / gates in  Congress,  148n.,  203,  493n.,
+despatchesinstru00fran	53567	1	5	5	0.00	9	Sandy  Hook,  282,  735;  British  fleet / at,  305,  308,  330,  365,  366,  381- / 382,  390,  437
+despatchesinstru00fran	53579	1	4	4	0.00	10	317-318,  331-332,  375  ;  and  Con- / gress, 98,  225-227,  233,  259,  260, / 281n.,  350,  640  ;  terms,  97  ;  Ver-
+despatchesinstru00fran	53663	1	4	4	0.00	8	294-295,  399-400,  404-405,  416- / 417,  467-468,  471,  488,  521n.,  538, / 642  ;  responsibility  for,  51  ;  and
+despatchesinstru00fran	53830	2	15	15	0.00	9	assembly,  562,  863  ;  British  ope- / rations in,  312,  315,  317,  378,  392, / 410,  437,  486-487,  491,  495-498, / 503-505,  511,  548,  553,  581-582, / 611,  721,  799,  863-864,  870;  and / confederation,  208,  729  ;  and  Co
+despatchesinstru00fran	53838	2	9	9	0.00	6	751n.  ;  delegates  in  Congress,  116, / 119,  148n.,  149n.,  204,  207,  209, / 211n.,  267,  270n.,  310n.,  339n., / 413m,  416n.,  426n.,  493n.,  508n., / 562,  577,  650-651,  654,  713n.,  725, / 727n.,  738n.,  749n.,  751n.,  79
+despatchesinstru00fran	53886	1	5	5	0.00	4	and  Franco-American  treaties,  77- / 80,  82,  84,  128,  188m,  521m,  539  ; / and  Gérard,  658,  681-683,  903-907  ;
+despatchesinstru00fran	53893	2	10	10	0.00	5	602,  887m,  894  ;  mediation  of,  99- / 102,  144-145,  250,  356-363,  375,  410, / 451-453,  526,  534-536,  540,  573-575, / 611-614,  627,  642,  662-663,  705,  711, / 746m,  769-770,  784-785,  806,  860-
+despatchesinstru00fran	53949	1	5	5	0.00	8	Staten  Island,  British  in,  329,  330, / 382,  391,  393,  448,  548  ;  proposed / attack  upon,  624  ;  Sullivan  at,
+despatchesinstru00fran	54019	1	5	5	0.00	5	Subsidies,  American  desire  for  Spa- / nish, 115,  495,  547,  602,  887n.,  894  ; / French  to  U.  S.,  71,  84,  129-130,
+despatchesinstru00fran	54041	2	10	10	0.00	7	rard, 618,  621  ;  at  Newport,  234- / 241,  271,  280,  287,  290  ;  operations / in  west,  619,  799,  826,  870,  872  ; / protest  to  d'Estaing,  237-239,  258  ,
+despatchesinstru00fran	54070	1	5	5	0.00	6	54,  58,  60-62,  66,  69-70,  184,  215- / 217,  302,  580,  585,  634,  636-637, / 713-714,   722-723,   726,   889
+despatchesinstru00fran	54124	1	5	5	0.00	7	251n.,  252-253,  260,  409-411,  414, / 420,  432,  444,  472,  618  ;  Deane  on, / 406-407  ;  Gérard  on,  427  ;  in  Hol-
+despatchesinstru00fran	54173	1	5	5	0.00	7	200,  233-234,  260,  267-268,  330, / 427,  431,  437-439,  443,  544,  619, / 730,  826  ;  and  British  peace  com-
+despatchesinstru00fran	54195	2	10	10	0.00	13	594n.,  655  ;  Paris  (1763),  85,  185, / 552,  556,  574,  594n.,  594-595,  655, / 712  ;  Aranjuez  (1779),  612n.  ;  Paris / (1783),  149n.  ;  congressional  plan  of, / 67-71,  77,  78,  81,  82,  84;  Deane's / model  for,  68  ; 
+despatchesinstru00fran	54203	1	4	4	0.00	7	847-848  ;  proposed  Spanish-Ame- / rican, 115,  847,  862,  863,  893-894, / 897-898  ;  proposed  tripartite,  842-
+despatchesinstru00fran	54215	1	4	4	0.00	4	128-129,  141-142,  346,  380,  411, / 441,  446-447,  465,  728,  738,  740- / 744,  810-811  ;  publication,  88,  142,
+despatchesinstru00fran	54392	2	13	13	0.00	12	56-58,  64  ;  and  Sartine,  537-538  ; / and  secret  aid,  46,  49,  50,  52,  58,  63, / 132,  400n.  ;  successor  of,  904n.  ; / transmission  and  receipt  of  instruc- / tions, 363,  517,  626,  632,  715,  752, / 769,  859-860,  8
+despatchesinstru00fran	54402	1	4	4	0.00	9	Floridablanca,  77n.  ;  Franklin,  610n.  ; / Gamier,  44;  Gérard,  89,  103,  106, / 116-117, 121  ;  Grimaldi,  73  ;  Guines,
+despatchesinstru00fran	54419	1	5	5	0.00	8	Deane,  67,  120  ;  Franklin,  610n.  ; / Gérard,  82,  107,  110,  118,  119  ; / Grimaldi,  73  ;  Guines,  79  ;  La  Lu-
+despatchesinstru00fran	54440	2	11	11	0.00	4	 / Versailles,  43,  64,  65,  87,  88,  90,  93, / 111,  161,  192n.,  224,  242n.,  411, / 446,  612n.,  613n.,  749n.,  753n.,
+despatchesinstru00fran	54469	1	7	7	0.00	8	British  in,  648,  660,  676-680,  687, / 706,  714,  716,  721,  723,  732,  888  ; / British  prisoners  in,  390,  437,  710  ;
+despatchesinstru00fran	54485	1	5	5	0.00	7	294-295,  745  ;  and  fisheries,  594n., / 738,  778,  780,  793,  808,  809n., / 811n.,  816  ;  and  Florida,  431-432  ;
+despatchesinstru00fran	54585	1	4	4	0.00	8	Lovell,  844n.  ;  military  operations, / 65,  66,  170,  309,  312-313,  319-320, / 323,  330,  390,  437-439,  466-467,
+despatchesinstru00fran	54658	1	7	7	0.00	8	West  Indies,  and  Britain,  65,  226,  241- / 242,  261,  262,  269,  279,  282,  286, / 287,  305-309,  312n.,  328-331,  341,
+despatchesinstru00fran	54667	2	9	9	0.00	9	143n.,  153-155,  351,  377-378,  397- / 398,  503-504,  508n.,  520,  538,  854, / 857,  864,  865,  869,  870;  proposed / reprisals  on,  807n.  ;  supplies  for,
+despatchesinstru00fran	54755	1	4	4	0.00	5	 / Williamsburg,  Va.,  196,  366,  438,  584, / 741

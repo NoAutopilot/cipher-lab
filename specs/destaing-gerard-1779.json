@@ -1,0 +1,41 @@
+{
+ "slug": "destaing-gerard-1779",
+ "name": "Admiral d'Estaing to Conrad Alexandre Gerard",
+ "date": "30 April 1779, Martinique (aboard the Languedoc, Fort Royal roadstead)",
+ "language_candidates": ["fr"],
+ "ciphertext": "ciphers/destaing-gerard-1779/ciphertext.tsv",
+ "ciphertext_note": "217-numbers-cited (Bourdeau/cyphersolver, 15 Sept 2026) vs this worker's own structural tokenization (25 Sept 2026, tools in ciphers/destaing-gerard-1779/tokenize_ciphertext.py): 216 CODE tokens, 104 distinct, max 597 -- a naive digit regex over the raw transcription over-counts by 2 (the dateline's '30' in 'le 30 avril 1779' and the plain '9' inside the embedded clear clause 'le 9 de mars dernier'), which this tool excludes using the document's own line/clause structure. Two separate cipher runs: BODY_CODE_A (code_idx 0-139, 140 codes) precedes a clear French clause naming the 9 March 1779 cipher letter; BODY_CODE_B (code_idx 140-215, 76 codes) follows it, after 'si ce la est'. A CLEAR paragraph (Georgia/Spanish/Americans) and the signature follow in plain French, not enciphered.",
+ "alphabet": "1-3 digit code numbers, space separated, range 2-597 (Bourdeau: max 597, consistent with a nomenclator of roughly 600 entries -- letters, syllables and words, typical of French diplomatic/naval codes of the period per sources/cryptiana/web/marbois.htm)",
+ "constraints": {
+  "n_code_tokens": 216,
+  "n_distinct": 104,
+  "max_code": 597,
+  "min_code": 2,
+  "hapax_legomena": 56,
+  "most_frequent": {"401": 13, "382": 10, "152": 8, "109": 7, "450": 6, "235": 6},
+  "value_range_histogram": {"0-99": 31, "100-199": 36, "200-299": 41, "300-399": 44, "400-499": 55, "500-599": 9},
+  "one_part_vs_two_part": "not testable directly from this letter alone (no code number sits immediately adjacent to a clear French word it could be checked against -- the clear text brackets whole cipher runs, not individual codes); sources/cryptiana/web/marbois.htm states the four contemporary (1780-82) French codes it partially reconstructs (A/B/C/D, different correspondents) are explicitly non-alphabetical (two-part); taken as a weak period prior only, grade M, not evidence about this code specifically",
+  "unicity": "below unicity distance for cryptanalysis of a ~600-entry nomenclator from 216 tokens alone (LESSONS.md 'Large nomenclator, one letter' category names this exact target; Bourdeau/cyphersolver skipped it 15 Sept 2026 for the same reason). A key or a sibling in the same code is the only route named in LESSONS.md; this worker's sibling search (siblings.tsv) found none reachable this session.",
+  "history": "Clements Library, Clinton Papers vol.64:14; intercepted by the British and forwarded by Sir Henry Clinton in July 1779. Skipped by Bourdeau/cyphersolver (15 Sept 2026): 'the deciphered copy would be in AAE Correspondance politique, Etats-Unis supplements t.1 (not online)'."
+ },
+ "cheap_tests_in_order": [
+  "1. Tokenize + structural stats (frequency, repeats, value-range histogram, parity, mod-5) -- done 25 Sept 2026 (ZX2-EST); see constraints above and ciphers/destaing-gerard-1779/ciphertext.tsv, period_code_test.py.",
+  "2. Sibling search: Clements Library finding aid (blocked, Cloudflare/403), Doniol vol.IV numeral-run sweep (archive.org 500, not reached), Meng despatchesinstru00fran numeral-run sweep (negative: 230 clusters, all book-index page lists, none cipher-shaped). Done 25 Sept 2026 (ZX2-EST); see siblings.tsv. No sibling ciphertext found under these routes this session.",
+  "3. Period-code overlap test: sources/cryptiana/web/marbois.htm's four 1780-82 codes (A/B/C/D, Vergennes/Luzerne/Montmorin/Castries correspondence) against this letter's 104 distinct codes, with a matched random-draw control (1000 draws, same N and value range). Done 25 Sept 2026 (ZX2-EST): overlap is inside the control's 5-95th percentile band for every specimen tested (Code A/B specimen 17 hits vs control mean 14.51 sd 3.28 [10,20]; Code C specimen 6 hits vs control mean 4.41 sd 1.76 [2,8]; combined 22 vs control mean 18.17 sd 3.52 [13,24]) -- a control-backed negative: these are not the same codebook as this letter's. See period_code_test.py output in NOTES.md.",
+  "4. Crib extraction from Doniol vol.IV p.774 (histoiredelapart04doniuoft, be-api full-text search): done 25 Sept 2026 (ZX2-EST); Doniol's own narrative on that page paraphrases THIS letter ('Estaing ecrivait alors de la Martinique a Gerard qu'il esperait...') and, per the check-solved worker's earlier search, includes the phrase 'etre a la fin de may sur la croisiere de la Caroline Meridionale' -- a plausible (grade M, not decoded) candidate for the content of BODY_CODE_B. See cribs.tsv.",
+  "5. Next (not run this session, no key or sibling in hand): AAE Correspondance politique Etats-Unis Supt.1 (not online) is the only named route to the actual key/decipherment; a nomenclator anneal at N=216 against a ~600-entry codebook has no realistic power (below unicity) and is not recommended without a key or a sibling first."
+ ],
+ "matched_control": "period_code_test.py (this folder): 1000 random draws matching this letter's N=104 distinct codes and 2-597 value range, tested for chance overlap with marbois.htm's partial code dictionaries; see cheap_tests_in_order item 3.",
+ "judge": {
+  "language": "fr",
+  "note_corpus": "fr18 (French diplomatic/official prose c.1680-1790) not yet built as of 25 Sept 2026 19:16 UTC when this spec was written (LANE ZX2 worker ZX2-FR18 claimed it the same round); this spec uses the default 'fr' corpus (tools/data/fr16, Catherine de Medici letters, 16th c.) per the job brief's fallback instruction, with the era mismatch (16th c. corpus vs an 18th c. letter) logged here, not silently accepted -- CLAUDE.md rule 3's V6-PTCORP lesson: re-point this spec's language to 'fr18' once tools/data/fr18 exists and re-run any judged candidate before trusting a FAIL.",
+  "letters_min": 100,
+  "letters_max": 500,
+  "min_word_cover": 0.6,
+  "control_samples": 200
+ },
+ "crib_candidates_note": "No cribs are wired into the hard judge gate: every candidate found this session is grade M (inferred from a same-page paraphrase in Doniol, not a confirmed plaintext fragment), and CLAUDE.md's crib-loop discipline is not to force a decode by baking an unconfirmed guess into the pass/fail gate. See ciphers/destaing-gerard-1779/cribs.tsv for the candidates and their sourcing; a future worker with a candidate decode of BODY_CODE_B can check it against 'etre a la fin de may sur la croisiere de la Caroline Meridionale' by eye rather than through this judge block.",
+ "value": "large nomenclator below unicity distance, no key or sibling located this session; the period-code test and crib extraction are the two moves this letter still had available without a key, both now done and negative/inconclusive respectively",
+ "model": "n/a (no solver run this session; structural + sibling + period-code + crib work only)",
+ "written": "25 Sept 2026, LANE ZX2 worker ZX2-EST (Sonnet)"
+}
