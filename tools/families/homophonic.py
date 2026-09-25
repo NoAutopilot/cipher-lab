@@ -40,32 +40,38 @@ def _target_sign_counts(params):
 def _make_control_profile(plain_text, K, N, model, seed, target_counts):
     """profile=target: see module docstring. target_counts: the target's own sorted sign counts.
 
-    Two steps, kept separate so K is always exactly right: (1) how many homophones each letter gets (m_a) is
-    the same largest-remainder-by-frequency rule as homophonic_anneal.make_control, so profile=target's
-    letter/homophone shape matches the plain default control; (2) the target's own K counts, sorted descending,
-    are handed out as those homophones' WEIGHTS, walking letters in frequency order -- so the biggest target
-    bucket becomes a homophone of the single most frequent letter, the next biggest buckets go to the next
-    letters' homophones, and so on, which is what makes the control's marginal sign-count profile track the
-    target's shape (e.g. one very common sign, most of the rest rare)."""
+    Fair-share greedy, not a fixed per-letter homophone count: (1) reserve the L smallest target buckets (L =
+    number of distinct plaintext letters in the window), one per letter, rarest letter <- smallest bucket, so
+    every letter is covered and K is never short; (2) hand out the remaining K-L buckets largest-first, each to
+    whichever letter's allocation-so-far is furthest below its corpus share (min of got/want) -- so the single
+    biggest bucket goes to the most frequent letter, and once that letter's running total approaches its own
+    share, further big buckets go to the next most under-served letter instead of piling onto the first. This is
+    what lets ONE control sign end up carrying close to the target's own top share (e.g. Debosnys' X at 16.1 pct
+    of N): splitting a letter's homophones by the plain largest-remainder rule (proportional to K, not to the
+    target's own lumpy counts) would spread that letter's occurrences over many similar-sized signs instead."""
     rng = random.Random(seed + 1000)
     p = ha.fold(plain_text)[:N]
     cnt = Counter(p)
-    letters = [a for a, _ in cnt.most_common()]
-    m = {a: 1 for a in letters}
-    extra = K - len(letters)
-    while extra > 0:
-        a = max(letters, key=lambda a: cnt[a] / m[a])
-        m[a] += 1
-        extra -= 1
+    letters = [a for a, _ in cnt.most_common()]  # present letters, most frequent first
+    L = len(letters)
     counts = list(target_counts) if target_counts else []
     counts = (counts + [1] * K)[:K] if len(counts) < K else counts[:K]
-    homs, weights, i, qi = {}, {}, 0, 0
+    counts_desc = sorted(counts, reverse=True)
+    reserve = counts_desc[-L:] if L <= len(counts_desc) else counts_desc + [1] * (L - len(counts_desc))
+    remaining = counts_desc[:len(counts_desc) - L] if L <= len(counts_desc) else []
+    letters_asc = list(reversed(letters))  # rarest first, paired with the smallest reserved buckets
+    alloc = {a: [reserve[i]] for i, a in enumerate(letters_asc)}
+    want = {a: model.freq[a] * N for a in letters}
+    got = {a: alloc[a][0] for a in letters}
+    for b in remaining:  # largest bucket first
+        a = min(letters, key=lambda a: got[a] / want[a] if want[a] > 0 else float("inf"))
+        alloc[a].append(b)
+        got[a] += b
+    homs, i = {}, 0
     for a in letters:
-        homs[a] = [f"s{i + j}" for j in range(m[a])]
-        weights[a] = counts[qi:qi + m[a]]
-        i += m[a]
-        qi += m[a]
-    seq = [rng.choices(homs[a], weights=weights[a])[0] for a in p]
+        homs[a] = [f"s{i + j}" for j in range(len(alloc[a]))]
+        i += len(alloc[a])
+    seq = [rng.choices(homs[a], weights=alloc[a])[0] for a in p]
     truth = {s: a for a, ss in homs.items() for s in ss}
     return seq, p, truth
 

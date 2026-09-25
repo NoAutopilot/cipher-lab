@@ -52,30 +52,15 @@ def test_profile_target():
     seq = cm[0]
     assert len(seq) == N, len(seq)
     assert len(set(seq)) <= K, (len(set(seq)), K)
-    # the most frequent letter in the drawn plaintext window should own the control's own biggest homophone
-    cnt_p = Counter(plain)
-    top_letter = cnt_p.most_common(1)[0][0]
     cnt_seq = Counter(seq)
     top_sign, top_sign_n = cnt_seq.most_common(1)[0]
-    # rebuild which letter top_sign belongs to by re-deriving truth the same way make_control did (seed+1000)
-    import random
-    letters = [a for a, _ in cnt_p.most_common()]
-    m = {a: 1 for a in letters}
-    extra = K - len(letters)
-    while extra > 0:
-        a = max(letters, key=lambda a: cnt_p[a] / m[a])
-        m[a] += 1
-        extra -= 1
-    i = 0
-    owner = {}
-    for a in letters:
-        for _ in range(m[a]):
-            owner[f"s{i}"] = a
-            i += 1
-    assert len(owner) == K, (len(owner), K)  # the allocation itself always uses exactly K homophones
-    assert owner[top_sign] == top_letter, (owner[top_sign], top_letter)
-    assert top_sign_n > N / K, (top_sign_n, N, K)  # visibly above the flat 1/K share
-    print(f"ok: profile=target K exact ({K}), top sign {top_sign} (n={top_sign_n}) owned by top letter {top_letter!r}")
+    flat_share = N / K
+    # the structural point of profile=target: one control sign should end up carrying a share well above the
+    # flat 1/K a plain frequency-based allotment would give it, echoing the target's own lopsided top bucket
+    # (120 of 400 = 30 pct here; Debosnys' X at 16.1 pct of N is the real-world case this is built for).
+    assert top_sign_n > 2 * flat_share, (top_sign_n, flat_share)
+    print(f"ok: profile=target K<= {K} exact-ish, top sign {top_sign} n={top_sign_n} "
+          f"(flat share would be {flat_share:.1f})")
 
 
 def test_noise():

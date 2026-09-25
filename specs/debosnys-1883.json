@@ -1,136 +1,204 @@
 {
- "slug": "debosnys-1883",
- "rank": 2,
- "schmeh_top50": 3,
- "name": "Henry Debosnys's four cryptograms, Essex County jail, New York, 1882-83",
- "date": "1882-83",
- "language_candidates": [
-  "fr",
-  "en",
-  "pt",
-  "la",
-  "el"
- ],
- "ciphertext": null,
- "ciphertext_pending": "Cryptogram 1 (six lines in a simple-symbol alphabet) and three more; images in Cheri Farnsworth, The Adirondack Enigma (2010) and on Cipherbrain post 3 (2020; image URLs in sources/schmeh/posts/03-debosnys.html, not fetched); partial transcriptions on Cipher Mysteries and in Bauer, Unsolved! (2017). Originals at the Adirondack History Center Museum, Elizabethtown NY (which also holds his skull and his clear-text poems and drawings).",
- "alphabet": "simple invented symbols; count per cryptogram to be established",
- "constraints": {
-  "author": "French-speaking, claimed Portuguese birth, wrote poems in French and English in the same papers, educated (Latin, Greek)",
-  "host_text": "his clear poems from the same jail papers are the natural crib and form source: line counts and lengths of the cryptograms vs his clear verse",
-  "attempts": "few (Schmeh 2020: 'only few crypto experts have occupied themselves')"
- },
- "cheap_tests_in_order": [
-  "1. Fetch the four images once (Schmeh's post, 4 requests, or Farnsworth's scans as cited) and transcribe in two passes; symbol counts, IC, line structure. Cost $4, Sonnet.",
-  "2. Form test (Urquhart lesson b): compare the cryptograms' line and syllable counts with his clear poems; if a cryptogram has the shape of a poem he also wrote in clear, the clear poem is a full crib. Cost $1.",
-  "3. Homophonic/MASC anneal in fr, en, pt, la with a control at each cryptogram's N and K (tools/homophonic_anneal.py, corpora fr16/it16/en on disk; Portuguese to be fetched). Cost $4, Sonnet; strongest model to read the result against his biography.",
-  "4. Archive: the museum's holdings list for a key sheet among his papers (an ASKS row; a cheap email)."
- ],
- "matched_control": "same N and K, French plaintext (fr16), same solver",
- "judge": {
-  "language": "fr",
-  "letters_min": 60,
-  "min_word_cover": 0.4,
-  "control_samples": 100,
-  "note": "fr16 is 16th-century French; a 19th-century French corpus should be added before judging",
-  "corpora": [
-   "tools/data/fr19/pg14155_Madame_Bovary.txt.gz",
-   "tools/data/fr19/pg11049_Eugenie_Grandet.txt.gz",
-   "tools/data/fr19/pg798_Le_rouge_et_le_noir.txt.gz",
-   "tools/data/fr19/pg796_La_Chartreuse_de_Parme.txt.gz",
-   "tools/data/fr19/pg11131_Pierre_et_Jean.txt.gz"
+  "slug": "debosnys-1883",
+  "rank": 2,
+  "schmeh_top50": 3,
+  "name": "Henry Debosnys's four cryptograms, Essex County jail, New York, 1882-83",
+  "date": "1882-83",
+  "language_candidates": [
+    "fr",
+    "en",
+    "pt",
+    "la",
+    "el"
   ],
-  "corpora_note": "fr19 (25 Sept 2026, GOLD-C) is 1830-1888 French prose, 2.66M letters folded, added per this note"
- },
- "value": "high: Schmeh's no. 3, a documented author with clear-text siblings, few prior attempts",
- "model": "Sonnet for 1-3, strongest model for the reading",
- "status_24_Sept_2026": "open; no solution found 24 Sept 2026 (web search, Wikipedia list of ciphertexts, Bourdeau's excluded list)",
- "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
- "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1",
- "cheap_test_done": {
-  "1": {
-   "test": 1,
-   "date": "25 Sept 2026",
-   "worker": "LANE B2 bDEB, session_01Uktvb4t31yu7ECakLwuugc, Sonnet",
-   "method": "Fetched cryptograms 1, 2a, 2b, 3 from Schmeh's post (4-request host cap; 4a/4b not fetched). tools/glyph_atlas.py segment+cluster+atlas, single machine pass, no subagent, no second pass (re-scoped by orchestrator to avoid LANE B's moustier overrun). Ciphertext, images, manifest, scripts and full numbers in ciphers/debosnys-1883/NOTES.md and ciphers/debosnys-1883/ciphertext.txt.",
-   "result": {
-    "cryptogram_1": {
-     "lines": 6,
-     "N": 136,
-     "K_of_90_global": 70,
-     "IC": 0.0129
-    },
-    "cryptogram_2_2a_2b": {
-     "lines": "17+9",
-     "N": 778,
-     "K_of_90_global": 88,
-     "IC": 0.0121
-    },
-    "cryptogram_3": {
-     "lines": 4,
-     "N": 118,
-     "K_of_90_global": 64,
-     "IC": 0.0135
-    },
-    "cryptogram_4": "not fetched this pass",
-    "combined_1_2_3": {
-     "N": 1032,
-     "K": 90,
-     "IC": 0.0125
-    }
-   },
-   "matched_controls": {
-    "note": "20 trials each, matched N (and matched K for the random control), via ciphers/debosnys-1883/scripts/compute_ic.py",
-    "IC_french_fr16": "0.0693-0.0696 across the four groupings",
-    "IC_english_en16_repo": "0.0914-0.0991 across the four groupings",
-    "IC_uniform_random_matched_K": "0.0111-0.0157 across the four groupings"
-   },
-   "reading": "no candidate plaintext produced -- this test is an image fetch + sign-inventory pass, not a decode; tools/judge_plaintext.py not applicable this pass",
-   "caveat": "K and IC are conditional on one machine-segmented, deliberately-over-split (k=90) clustering pass (CLAUDE.md rule 2); over-splitting mechanically lowers IC and could alone explain most of the gap to the random control. Target IC sits near the random control and well below both language controls -- read as inconclusive on MASC-vs-homophonic/code, not as a finding, until a hand-merged atlas or a second pass checks it.",
-   "new_finding": "a complete French poem in clear cursive fills the lower two-thirds of the Cryptogram 3 page, directly below its 4 cipher lines (plus other clear text/digits on cryptograms 1 and 2: signature, initials, page numbers) -- see NOTES.md 'Plain-letter/digit text on the page'. Not analysed (that is test 2, not run here)."
+  "ciphertext": null,
+  "ciphertext_pending": "Cryptogram 1 (six lines in a simple-symbol alphabet) and three more; images in Cheri Farnsworth, The Adirondack Enigma (2010) and on Cipherbrain post 3 (2020; image URLs in sources/schmeh/posts/03-debosnys.html, not fetched); partial transcriptions on Cipher Mysteries and in Bauer, Unsolved! (2017). Originals at the Adirondack History Center Museum, Elizabethtown NY (which also holds his skull and his clear-text poems and drawings).",
+  "alphabet": "simple invented symbols; count per cryptogram to be established",
+  "constraints": {
+    "author": "French-speaking, claimed Portuguese birth, wrote poems in French and English in the same papers, educated (Latin, Greek)",
+    "host_text": "his clear poems from the same jail papers are the natural crib and form source: line counts and lengths of the cryptograms vs his clear verse",
+    "attempts": "few (Schmeh 2020: 'only few crypto experts have occupied themselves')"
   },
-  "2": {
-   "test": 2,
-   "date": "25 Sept 2026",
-   "worker": "LANE GOLD worker gDEB, session_011bxY3axv9kyCqNZAxS4M3e, Sonnet",
-   "method": "Form test (spec cheap test 2). Transcribed the c3 page's 14-line clear French poem and the c4 page's title/signature clear text from images already on disk (clear_poems.tsv), read the Sektu 2017 blog (20 posts, sektu.blogspot.com, summarised in sektu-2017.md), then compared each cryptogram's signs-per-line (lines.tsv) to the c3 poem's letters-per-line and syllables-per-line (scripts/count_syllables.py, scripts/form_test.py). Matched control: shuffled the poem's per-line lengths 1000 times and recomputed Pearson r each time against the fixed cryptogram sequence.",
-   "result": {
-    "line_counts": {
-     "cryptogram_1": 6,
-     "cryptogram_2": 26,
-     "cryptogram_3": 4,
-     "cryptogram_4_total": 19,
-     "cryptogram_4a_only": 14,
-     "c3_clear_poem": 14
-    },
-    "only_matching_line_count": "cryptogram_4a alone (14) vs the c3 poem (14); all other cryptograms differ from 14 and were not correlated per-line",
-    "pearson_r_c4a_vs_poem_letters_per_line": 0.2686217807117226,
-    "pearson_r_c4a_vs_poem_syllables_per_line": 0.438595955537372,
-    "signs_per_letter_ratio_c4a_vs_poem": 0.4662309368191721,
-    "poem_mean_letters_per_line": 32.785714285714285,
-    "poem_mean_syllables_per_line": 11.0,
-    "poem_letters_per_12_syllable_line_estimate": 35.76623376623377,
-    "sektu_cipher_poem_line_count": 20,
-    "sektu_alexandrine_hypothesis": "tested and rejected by Sektu (21 Jun 2017) against a real Baudelaire control",
-    "sektu_nglyph_nasalization_test": "cipher poem (Sektu's count, 20 lines) mean 1.5 N-glyphs/line vs Fleurs du Mal's 2.05 nasalized syllables/line (3182 lines); Sektu's own verdict: promising, not concluded"
-   },
-   "matched_controls": {
-    "note": "shuffle_control(fixed=cryptogram-4a signs/line, to_shuffle=poem letters or syllables per line, 1000 trials), scripts/form_test.py",
-    "shuffle_control_percentile_letters": 80.3,
-    "shuffle_null_range_letters": [
-     -0.751774266838268,
-     0.737105500656058,
-     0.015383868533592837
+  "cheap_tests_in_order": [
+    "1. Fetch the four images once (Schmeh's post, 4 requests, or Farnsworth's scans as cited) and transcribe in two passes; symbol counts, IC, line structure. Cost $4, Sonnet.",
+    "2. Form test (Urquhart lesson b): compare the cryptograms' line and syllable counts with his clear poems; if a cryptogram has the shape of a poem he also wrote in clear, the clear poem is a full crib. Cost $1.",
+    "3. Homophonic/MASC anneal in fr, en, pt, la with a control at each cryptogram's N and K (tools/homophonic_anneal.py, corpora fr16/it16/en on disk; Portuguese to be fetched). Cost $4, Sonnet; strongest model to read the result against his biography.",
+    "4. Archive: the museum's holdings list for a key sheet among his papers (an ASKS row; a cheap email)."
+  ],
+  "matched_control": "same N and K, French plaintext (fr16), same solver",
+  "judge": {
+    "language": "fr",
+    "letters_min": 60,
+    "min_word_cover": 0.4,
+    "control_samples": 100,
+    "note": "fr16 is 16th-century French; a 19th-century French corpus should be added before judging",
+    "corpora": [
+      "tools/data/fr19/pg14155_Madame_Bovary.txt.gz",
+      "tools/data/fr19/pg11049_Eugenie_Grandet.txt.gz",
+      "tools/data/fr19/pg798_Le_rouge_et_le_noir.txt.gz",
+      "tools/data/fr19/pg796_La_Chartreuse_de_Parme.txt.gz",
+      "tools/data/fr19/pg11131_Pierre_et_Jean.txt.gz"
     ],
-    "shuffle_control_percentile_syllables": 93.6,
-    "shuffle_null_range_syllables": [
-     -0.7492680907096773,
-     0.7858177536711249,
-     0.011567968327298186
-    ]
-   },
-   "reading": "no candidate plaintext produced -- a form/crib test, not a decode; tools/judge_plaintext.py not applicable",
-   "conclusion": "neither correlation clears a conventional significance bar (80.3rd/93.6th percentile of a 1000-trial shuffle null); the one line-count coincidence (cryptogram 4a alone = 14 lines = the poem's 14 lines) is weakened by Sektu's own independent 2017 count of 'the cipher poem' as 20 lines (matching this repo's cryptogram-4 TOTAL of 19, not 4a alone) -- read as an artefact of counting only one of cryptogram 4's two pages, not a genuine structural match. Control-backed negative for 'the c3 clear poem is a full line-for-line crib for a Debosnys cryptogram' among the pairings tested; does not rule out a crib relationship with a poem not on these six page images (e.g. the Greek poem Sektu reports on the reverse of the cryptogram-4 leaf).",
-   "new_finding": "Sektu's 2017 blog (sektu.blogspot.com, 'Debosnys' label) already tested and rejected the French-alexandrine/one-symbol-per-syllable hypothesis for cryptogram 4 against a real Baudelaire control, and ran an N-glyph/nasalization frequency test against Fleurs du Mal (promising but unconcluded, Sektu's own words) -- both directly relevant to this spec's cheap test 3 (homophonic/MASC anneal); see sektu-2017.md for the full search-log summary. Rule 10: this is Sektu's published 2017 hypothesis, not ours."
+    "corpora_note": "fr19 (25 Sept 2026, GOLD-C) is 1830-1888 French prose, 2.66M letters folded, added per this note"
+  },
+  "value": "high: Schmeh's no. 3, a documented author with clear-text siblings, few prior attempts",
+  "model": "Sonnet for 1-3, strongest model for the reading",
+  "status_24_Sept_2026": "open; no solution found 24 Sept 2026 (web search, Wikipedia list of ciphertexts, Bourdeau's excluded list)",
+  "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+  "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1",
+  "cheap_test_done": {
+    "1": {
+      "test": 1,
+      "date": "25 Sept 2026",
+      "worker": "LANE B2 bDEB, session_01Uktvb4t31yu7ECakLwuugc, Sonnet",
+      "method": "Fetched cryptograms 1, 2a, 2b, 3 from Schmeh's post (4-request host cap; 4a/4b not fetched). tools/glyph_atlas.py segment+cluster+atlas, single machine pass, no subagent, no second pass (re-scoped by orchestrator to avoid LANE B's moustier overrun). Ciphertext, images, manifest, scripts and full numbers in ciphers/debosnys-1883/NOTES.md and ciphers/debosnys-1883/ciphertext.txt.",
+      "result": {
+        "cryptogram_1": {
+          "lines": 6,
+          "N": 136,
+          "K_of_90_global": 70,
+          "IC": 0.0129
+        },
+        "cryptogram_2_2a_2b": {
+          "lines": "17+9",
+          "N": 778,
+          "K_of_90_global": 88,
+          "IC": 0.0121
+        },
+        "cryptogram_3": {
+          "lines": 4,
+          "N": 118,
+          "K_of_90_global": 64,
+          "IC": 0.0135
+        },
+        "cryptogram_4": "not fetched this pass",
+        "combined_1_2_3": {
+          "N": 1032,
+          "K": 90,
+          "IC": 0.0125
+        }
+      },
+      "matched_controls": {
+        "note": "20 trials each, matched N (and matched K for the random control), via ciphers/debosnys-1883/scripts/compute_ic.py",
+        "IC_french_fr16": "0.0693-0.0696 across the four groupings",
+        "IC_english_en16_repo": "0.0914-0.0991 across the four groupings",
+        "IC_uniform_random_matched_K": "0.0111-0.0157 across the four groupings"
+      },
+      "reading": "no candidate plaintext produced -- this test is an image fetch + sign-inventory pass, not a decode; tools/judge_plaintext.py not applicable this pass",
+      "caveat": "K and IC are conditional on one machine-segmented, deliberately-over-split (k=90) clustering pass (CLAUDE.md rule 2); over-splitting mechanically lowers IC and could alone explain most of the gap to the random control. Target IC sits near the random control and well below both language controls -- read as inconclusive on MASC-vs-homophonic/code, not as a finding, until a hand-merged atlas or a second pass checks it.",
+      "new_finding": "a complete French poem in clear cursive fills the lower two-thirds of the Cryptogram 3 page, directly below its 4 cipher lines (plus other clear text/digits on cryptograms 1 and 2: signature, initials, page numbers) -- see NOTES.md 'Plain-letter/digit text on the page'. Not analysed (that is test 2, not run here)."
+    },
+    "2": {
+      "test": 2,
+      "date": "25 Sept 2026",
+      "worker": "LANE GOLD worker gDEB, session_011bxY3axv9kyCqNZAxS4M3e, Sonnet",
+      "method": "Form test (spec cheap test 2). Transcribed the c3 page's 14-line clear French poem and the c4 page's title/signature clear text from images already on disk (clear_poems.tsv), read the Sektu 2017 blog (20 posts, sektu.blogspot.com, summarised in sektu-2017.md), then compared each cryptogram's signs-per-line (lines.tsv) to the c3 poem's letters-per-line and syllables-per-line (scripts/count_syllables.py, scripts/form_test.py). Matched control: shuffled the poem's per-line lengths 1000 times and recomputed Pearson r each time against the fixed cryptogram sequence.",
+      "result": {
+        "line_counts": {
+          "cryptogram_1": 6,
+          "cryptogram_2": 26,
+          "cryptogram_3": 4,
+          "cryptogram_4_total": 19,
+          "cryptogram_4a_only": 14,
+          "c3_clear_poem": 14
+        },
+        "only_matching_line_count": "cryptogram_4a alone (14) vs the c3 poem (14); all other cryptograms differ from 14 and were not correlated per-line",
+        "pearson_r_c4a_vs_poem_letters_per_line": 0.2686217807117226,
+        "pearson_r_c4a_vs_poem_syllables_per_line": 0.438595955537372,
+        "signs_per_letter_ratio_c4a_vs_poem": 0.4662309368191721,
+        "poem_mean_letters_per_line": 32.785714285714285,
+        "poem_mean_syllables_per_line": 11.0,
+        "poem_letters_per_12_syllable_line_estimate": 35.76623376623377,
+        "sektu_cipher_poem_line_count": 20,
+        "sektu_alexandrine_hypothesis": "tested and rejected by Sektu (21 Jun 2017) against a real Baudelaire control",
+        "sektu_nglyph_nasalization_test": "cipher poem (Sektu's count, 20 lines) mean 1.5 N-glyphs/line vs Fleurs du Mal's 2.05 nasalized syllables/line (3182 lines); Sektu's own verdict: promising, not concluded"
+      },
+      "matched_controls": {
+        "note": "shuffle_control(fixed=cryptogram-4a signs/line, to_shuffle=poem letters or syllables per line, 1000 trials), scripts/form_test.py",
+        "shuffle_control_percentile_letters": 80.3,
+        "shuffle_null_range_letters": [
+          -0.751774266838268,
+          0.737105500656058,
+          0.015383868533592837
+        ],
+        "shuffle_control_percentile_syllables": 93.6,
+        "shuffle_null_range_syllables": [
+          -0.7492680907096773,
+          0.7858177536711249,
+          0.011567968327298186
+        ]
+      },
+      "reading": "no candidate plaintext produced -- a form/crib test, not a decode; tools/judge_plaintext.py not applicable",
+      "conclusion": "neither correlation clears a conventional significance bar (80.3rd/93.6th percentile of a 1000-trial shuffle null); the one line-count coincidence (cryptogram 4a alone = 14 lines = the poem's 14 lines) is weakened by Sektu's own independent 2017 count of 'the cipher poem' as 20 lines (matching this repo's cryptogram-4 TOTAL of 19, not 4a alone) -- read as an artefact of counting only one of cryptogram 4's two pages, not a genuine structural match. Control-backed negative for 'the c3 clear poem is a full line-for-line crib for a Debosnys cryptogram' among the pairings tested; does not rule out a crib relationship with a poem not on these six page images (e.g. the Greek poem Sektu reports on the reverse of the cryptogram-4 leaf).",
+      "new_finding": "Sektu's 2017 blog (sektu.blogspot.com, 'Debosnys' label) already tested and rejected the French-alexandrine/one-symbol-per-syllable hypothesis for cryptogram 4 against a real Baudelaire control, and ran an N-glyph/nasalization frequency test against Fleurs du Mal (promising but unconcluded, Sektu's own words) -- both directly relevant to this spec's cheap test 3 (homophonic/MASC anneal); see sektu-2017.md for the full search-log summary. Rule 10: this is Sektu's published 2017 hypothesis, not ours."
+    },
+    "3-control": {
+      "test": "3-control",
+      "date": "25 Sept 2026",
+      "worker": "LANE GOLD GOLD-D1, session_01Qcv68Pn46JNXkktRXTv6DL, Sonnet",
+      "method": "Controls only, tools/family_run.py --family homophonic (new profile=target and noise=p params), fr19 corpus, seeds 1-3, restarts 8, scratch cipher copies with _/MULTI rows dropped. Full write-up: ciphers/debosnys-1883/HYPOTHESES.md 'GOLD-D1, noise-matched controls'.",
+      "result": {
+        "A_K160_noise0": {
+          "N": 1251,
+          "K": 160,
+          "control_mean": 0.44,
+          "control_range": [
+            0.034,
+            0.822
+          ]
+        },
+        "A_K160_noise0.1": {
+          "N": 1251,
+          "K": 160,
+          "control_mean": 0.325,
+          "control_range": [
+            0.31,
+            0.349
+          ]
+        },
+        "A_K160_noise0.2": {
+          "N": 1251,
+          "K": 160,
+          "control_mean": 0.23,
+          "control_range": [
+            0.204,
+            0.258
+          ]
+        },
+        "B_base_noise0": {
+          "N": 1251,
+          "K": 128,
+          "control_mean": 0.859,
+          "control_range": [
+            0.802,
+            0.966
+          ]
+        },
+        "B_base_noise0.1": {
+          "N": 1251,
+          "K": 128,
+          "control_mean": 0.314,
+          "control_range": [
+            0.245,
+            0.378
+          ]
+        },
+        "C_K160_minus_X_noise0": {
+          "N": 1050,
+          "K": 159,
+          "control_mean": 0.23,
+          "control_range": [
+            0.101,
+            0.305
+          ]
+        },
+        "L1_profile_vs_target_sorted_counts": 152,
+        "K_base_recount": 128,
+        "mark_classes": 16
+      },
+      "gate": 0.6,
+      "reading": "target not run: transcription below gate (Do item 6 of the job brief -- controls only)",
+      "conclusion": "Branch (b) of the top-block decision rule (ciphers/debosnys-1883/HYPOTHESES.md): clean control clears the 0.6 gate only at base level (K_base=128, mean 0.859), not at the full 160-id level (mean 0.440) -- BM (base+mark) has headroom for a homophonic-French test, H (160-id) does not; neither clears the gate once any transcription noise (10-20 pct) is added."
+    }
   }
- }
 }

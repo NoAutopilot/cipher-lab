@@ -595,3 +595,14 @@ Suggested next (one line, not started): a reconciler session opens `disagreement
 GOLD-4C's c4 ceiling (91%) if the same inventory-confusion pattern holds for c1.
 
 Requests this job: none (disk and CPU only, one `pip install pillow` for local image upscaling). Subagents: none.
+
+## GOLD-D1 (25 Sept 2026, session_01Qcv68Pn46JNXkktRXTv6DL, Sonnet)
+
+Controls-only job pricing the transcription before any more transcription spend: a base+mark recount of
+GOLD-4C's 160-id inventory (K_base 128, 16 mark classes) and profile-/noise-matched homophonic-French controls
+at K 160, at base level, and at K 160 minus X, fr19 corpus, 3 seeds each, never the target. Full numbers, the
+recount table, the two new `tools/families/homophonic.py` params (`profile=target`, `noise=p`) and the branch
+decision: `HYPOTHESES.md` section "GOLD-D1, noise-matched controls". Headline: clean control clears the 0.6 gate
+only at base level (K_base 128, mean 0.859), not at the full 160-id level (mean 0.440) -- branch (b), BM has
+headroom, H does not; no design clears the gate once 10-20 pct transcription noise is added. No decoding, no
+images, no transcription; status stays `open`; grade S throughout, 0 H, 0 C.
