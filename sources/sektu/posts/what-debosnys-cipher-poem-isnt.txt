@@ -1,0 +1,28 @@
+TITLE: What the Debosnys Cipher Poem isn't
+URL: https://sektu.blogspot.com/2017/06/what-debosnys-cipher-poem-isnt.html
+PUBLISHED: 2017-06-21T12:40:00.000-07:00
+
+I've been testing the hypothesis that the Debosnys cipher poem (DCP) is written in French, fits (roughly) an alexandrine meter, and each symbol represents a syllable. 
+
+My hypothesis is failing my tests. 
+
+I hunted through Beaudelaire's alexandrines and looked at the ones with AABB rhyme schemes, to use for comparison. I divided lines from these poems into syllables using five different approaches. In no case did the result resemble the pattern of symbol frequencies in the DCP, even accounting for the possibility that some of the DCP symbols might be nulls. The two main problems are these: 
+
+ High frequency symbols in the DCP occur more frequently than high-frequency syllables in French, even if the French text is spelled out phonetically. 
+ There are significantly more repeated pairs of symbols in the DCP text than there are repeated pairs of syllables in a Beaudelaire poem. 
+
+One possibility is that Debosnys is a boring poet who uses the same words over and over again, while Beaudelaire is an interesting poet who uses a broader vocabulary. 
+
+But another possibility is that the language of the poem isn't French, but Greek or Latin. 
+
+The other side of the page containing the DCP has a poem in Greek, which Klaus Schmeh mentions in his blog post . A reader of his blog transcribed the Greek poem and translated it into German. I searched for the Greek text and found that it is taken largely from a poem written by Thomas Moore as a preface to his Odes of Anacreon, though Debosnys drops a few lines. 
+
+Debosnys 
+
+Thomas Moore 
+
+Maybe there is some significance to the dropped lines, maybe not. In any case, Debosnys' Greek poem leaves off part-way through the text of Thomas Moore's original ode, with 20-21 lines remaining. 
+
+This raises the possibility that the cipher poem encodes the last 20 lines of the ode by Thomas Moore. If it does, it doesn't look like a straightforward cipher. More generally, this raises the possibility that the cipher poem encodes something in Greek, or perhaps in Latin. 
+
+End-rhyme is not a common feature of classical Greek or Latin poetry, so if there really is end-rhyme then this is more likely a composition by Debosnys.

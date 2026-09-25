@@ -1,0 +1,19 @@
+TITLE: Pasigraphie
+URL: https://sektu.blogspot.com/2017/06/pasigraphie.html
+PUBLISHED: 2017-06-30T08:34:00.001-07:00
+
+Debosnys claimed that his cipher was in common use in Europe, but so far I haven't found any evidence to support that. Many books were printed in 19th-century France on secret writing, but serious ciphers of that era tended to eschew mysterious symbols in favor of using letters, numbers and early cryptologic methods. 
+
+If Debosnys' account of his life before 1871 is true (and there is not yet any reason to believe that) then one possibility is that his cipher was in common use among criminal fraternities, secret societies or as an unofficial means of secret communication among the lower ranks of the military. 
+
+All of that is speculation until we find evidence. 
+
+But in the search for evidence of such a system is I have read or skimmed quite a number of 19th-century French books on various specialized systems of writing: Stenography, Okygraphy, Tachygraphy, "French Hieroglyphs", etc. Among these I have found a few books on Pasigraphie. 
+
+I'm not quite sure how to characterize Pasigraphie. It is probably most like a universal language, but one that was never intended to be spoken. The graphemes of Pasigraphie do not have any phonetic value, but can be treated as digits in a base-12 number system. 
+
+These symbols are used to build words, which really are addresses pointing to entries in a nomenclator: 
+
+The graphemes can then be joined together, so complex symbols can be built from the simpler elements: 
+
+[Edit] Apparently Pasilalie was the spoken form of Pasigraphie .

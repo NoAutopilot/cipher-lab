@@ -1,0 +1,47 @@
+TITLE: Back to the cipher
+URL: https://sektu.blogspot.com/2017/07/back-to-cipher.html
+PUBLISHED: 2017-07-19T23:37:00.000-07:00
+
+I've been doing a lot of background research in order to get an idea of the context in which Debosnys produced his cipher. To be honest, it's been pretty depressing to read about 19th century French prisons, the Paris Commune, and the Franco Prussian war. I have built a picture of Debosnys as a plagiarist, a liar, and a murderer, the product of a brutal period in history and a brutal prison culture. 
+
+For that reason, I am eager to get away from the background research and into the features of the cipher. I have completed a transcription of all of the cipher text in the images in Farnsworth's book, and started analysis. 
+
+In my transcription I count 1188 total glyphs in the text, from an inventory of 425 separate types. 
+
+There are 65 pairs of glyphs that repeat in the text. The most common repeated sequence in my transcription is this one: 
+
+frequency = 8 (0.67%) 
+
+The following two sequences are represented differently in my transcription, but if they are the same, they would represent the most common sequence: 
+
+ frequency = 5 (0.42%) 
+
+frequency = 4 (0.34%) 
+
+Also frequent are these: 
+
+frequency = 5 (0.42%) 
+
+frequency = 4 (0.34%) 
+
+The top five most frequent glyphs are these: 
+
+89 
+
+43 
+
+30 
+
+29 
+
+22 
+
+7.5% 
+
+3.6% 
+
+2.5% 
+
+2.4% 
+
+1.9%

@@ -1,0 +1,28 @@
+TITLE: What is Debosnys' "Portuguese"?
+URL: https://sektu.blogspot.com/2017/06/what-is-debosnys-portuguese.html
+PUBLISHED: 2017-06-23T13:27:00.002-07:00
+
+I just bought Farnsworth's Adirondack Enigma , so I've had a chance to read a bit more about Debosnys. 
+
+One page in Adirondack Enigma  shows samples of Debosnys' writing in Latin, Portuguese, French, English and Spanish. The Latin, French and English are good (though the Latin is just a quote from the Vulgate bible). I can't see enough of the Spanish to tell if it is good. The Portuguese is puzzling. 
+
+Here is that piece of text: 
+
+ Comoderondas inacia bêco olondo inoto para 
+ Imbiabo kotaronc molonk niarotan pérana 
+
+I've never studied Portuguese, but if I look at a page of Portuguese text I can usually make it out based on what I know of French and Spanish. Of this, however, I can make neither heads nor tails. Likewise, I have trouble with this text, which is not specifically identified as "Portuguese", but is not anything else that I would recognize: 
+
+ inno calledaz 
+
+ Ontro de palade mosa kaen faleï tonüe dhala pico indor kouniss plaira colrose, inbello monozy impiodo cara. ûntez noüméa, tintems oda formandore, artosa passat Otiva ...(remaining text not clear or cut off) 
+
+Some of the words can be found in a Portuguese dictionary, if it is big enough, but I can't find most of them, and many are phonologically and orthographically problematic. For example, the word-initial k-  in kotaronc, kaen  and kouniss  would be unexpected in any Romance language, since that sound is normally represented by c  before a  and o . The cluster dh  in dhala  is odd as well. Likewise, not a single word is repeated, and there is only one monosyllabic word in the bunch. 
+
+It seems there are three possible interpretations here: 
+
+ This is Portuguese, but Debosnys learned it only as a spoken language and writes it phonetically in a way that is difficult to decipher 
+ This is another knowable language, such as a secret argot, a creole, or an obscure language 
+ This is not a knowable language--either it is nonsense, or a twin language, or an invented language 
+
+Time may tell. Or not.

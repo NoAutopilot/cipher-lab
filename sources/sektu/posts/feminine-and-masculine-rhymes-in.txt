@@ -1,0 +1,11 @@
+TITLE: Feminine and Masculine Rhymes in Debosnys' Poem
+URL: https://sektu.blogspot.com/2017/06/feminine-and-masculine-rhymes-in.html
+PUBLISHED: 2017-06-13T10:02:00.000-07:00
+
+I've been reading a lot of Beaudelaire's poetry over the last couple of days, in order to better understand the structure of French poetry. (I picked Beaudelaire because I think there is a fair chance that Debosnys might have been influenced by him.) 
+
+One of the fairly consistent features of French rhyme in Beaudelaire, as well as in Debosnys' plaintext poem, is the alternation of masculine and feminine rhymes. A feminine rhyme is a rhyme ending in the silent e . In Debosnys' plaintext poem, the feminine rhymes are: grâce  / passe , blessure / dure , brave / nuage  (!). 
+
+I think there is a high likelihood, if the cipher poem is in French, that it alternates masculine and feminine rhymes. Weak supporting evidence for this is the fact that the only repeating rhyme occurs on the odd-numbered couplets 1 and 9. Since that rhyme would either be masculine or feminine, it should occur only on either odd or even lines. 
+
+There is nothing obvious that indicates which lines are masculine and which are feminine. There are two odd rhymes that use symbols that are variations on ♀, and one even rhyme that uses a symbol that is a variation on♂, but that is far from conclusive.

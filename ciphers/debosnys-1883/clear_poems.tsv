@@ -1,0 +1,18 @@
+page	line	text_as_written	syllables	letters	note
+c3	1	Oh! mes amis je vous supplie en grâce	10	29
+c3	2	de bien vouloir un instant m'écoute	9	29
+c3	3	Car en ce lieu, pour un moment je passe.	10	30
+c3	4	montrez moi un peu d'humanité.	9	24	no space before opening quote mark visible in image; quote-mark opens here, not closed until later text
+c3	5	Oui croyez le, mon cœur a plus qu'une blessure	11	36
+c3	6	dont je pourrai vous en faire le triste récis	13	37
+c3	7	j'ai bien souffert, je crois les peines les plus dure	12	42
+c3	8	Ah! offrez moi vos mains en bons amis?	10	29
+c3	9	Consolez-vous, car je veux rester brave.	10	32
+c3	10	Cessez de me plaindre. je ne peut plus pleuré,	12	36
+c3	11	Le passé pour moi, ne fut qu'un nuage	9	28
+c3	12	Que le vent emporte, et que je ne veut pas regreté.	15	39
+c3	13	Car Devant moi l'avenir est beau et plus sure	12	36	"et" appears interlined/inserted above the line between "beau" and "plus"; transcribed in reading order, flagged not silently repaired (rule "image over transcription")
+c3	14	c'est là, où je veux aller pour l'éternité.	12	32	line continues "No.11. (next page la suite)" -- page/continuation notation, excluded from poem text and from syllable/letter counts
+c4a	title	monographe. verse.	[?]	[?]	title only, not verse text; not counted as a poem line (spec cheap_tests_in_order calls it "monographe. verse." literally)
+c4a	banner	HENRY.D.DEBOSNYS	[?]	[?]	circular banner text around the bird-and-key monogram drawing, appears twice (mirrored top/bottom of the circle); not verse
+c4b	signature	Hênêcos Debosnostys.	[?]	[?]	signature under cryptogram 4's cipher lines; near-anagram/variant spelling of "Henry D. Debosnys", not verse

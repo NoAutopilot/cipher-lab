@@ -1,0 +1,28 @@
+TITLE: Debosnys' Real Name
+URL: https://sektu.blogspot.com/2017/06/debosnys-real-name.html
+PUBLISHED: 2017-06-28T09:22:00.000-07:00
+
+Debosnys claimed to be living under a pseudonym. Resolving the question of his true name could help solve the cipher, because one of the passages ends with what looks like a signature line: 
+
+If this encodes his real name, and if we can determine what that name is, then this could provide us with a crib. 
+
+I've been reading and re-reading Debosnys' account of his life as presented in Farnsworth's Adirondack Enigma , looking for circumstances in which his real name would have become a matter of record. One puzzling item was a note that Debosnys wrote in the margin of his autobiography: 
+
+"Change of name in October [1870] and sent to the army of the Rhone, franc terror of the death under Bourbaky and associated with the franck terror" 
+
+My initial thought was that there had been a horrible incident ("the franc terror") that led him to change his name in order to dissociate himself from it. 
+
+But now I understand that he was claiming to be a franc-tireur , a volunteer in the French guerrilla forces that resisted the Prussian invasion during the Franco-Prussian war. I've skimmed the autobiographies of a couple of francs-tireurs , and I am fairly confident he sequence of events in his autobiography related to clashes with the Prussians is either drawn from or written in imitation of the rapport journalier  of a captain of the francs-tireurs . 
+
+The francs-tireurs  were generally named after their place of origin or their commander. Debosnys uses the expression "franc terror of the death", but I haven't found any reference to a formation of francs-tireurs  by that name. Perhaps it was a nickname. 
+
+Debosnys claims to have "volunteered for the Franco-Prussian war in 1870 with 600 men from America", and the narrative suggests that he was their leader. This doesn't seem to have been an uncommon sequence of events, and reflects somewhat the experience of Le Comte de Foudras, the commandant of the francs-tireurs de la Sarthe , who came from Belgium, gathered 338 volunteers, and organized them into four companies under his own command. 
+
+A formation of 600 Americans ought to be mentioned somewhere. Luckily, there is someone named Antan who has written a blog post about the names of formations of francs-tireurs . Apparently there were 599 formations, so a review of the full list may be necessary (if I can find the publication where they are listed), but the following from the blog post are interesting: 
+
+ST 428 Francs-tireurs Franco – Américains, capitaine Rampon 
+ST 453 Enfants Perdus d’Amérique (Français), capitaine Laugran 
+ST 519 Enfants Perdus de l’Amérique du Nord, lieutenant Laugran 
+ST 553 Volontaires Franco – Américains (ou Légion Américaine), lieutenant Soula
+
+This list gives us three names to research: Rampon, Laugran and Soula.

@@ -1,0 +1,21 @@
+TITLE: 19th Century Sténographie Française
+URL: https://sektu.blogspot.com/2017/06/19th-century-stenographie-francaise.html
+PUBLISHED: 2017-06-15T12:29:00.000-07:00
+
+One of the things that is impressive about the Debosnys cipher, if it encodes syllables, is the efficiency with which it does so. Most of the rhyming syllables require only three pen strokes to write the syllable. 
+
+Thinking about this has led me to read a bunch of 19th century French manuals on stenography, to get an idea of how a 19th-century francophone might have thought about efficiently encoding language. 
+
+A wide variety of stenographic systems seems to have blossomed in 19th-century France. The goal of stenography (as reiterated in many of the manuals) was to enable the user to write at the speed of speech. To this end, a number of compression strategies are used, among which the following three are quite common: 
+
+ Compression by writing phonetically. For example, instead of writing ph , write f . 
+ Compression by removing vowels. For example, remove all vowels except the initial and final ones, and remove the final vowel if it is e muet . So instead of writing sténographie française , write stngrfi frnçs . 
+ Compression through the use of efficient alphabets. In addition to the use of curves and straight lines, these systems use spatial strategies such as direction and size to load each stroke with additional information. 
+
+Strategy #3 above seems to lead to a similar appearance in all of the scripts--an appearance reminiscent of Tironian notes--that is not present in the Debosnys cipher. While Debosnys might have used some spatial strategies (such as orientation) to encode information, he appears to have been more concerned with obfuscation than with efficiency. 
+
+The Stolze system of stenography originated in Prussia, but was adapted to French. It is interesting because it uses a phonetic approach, breaks down words syllabically, and encodes each syllable as a separate symbol. Of particular interest is the way in which it divides syllables: 
+
+In this system, the "primary syllable" of a word is identified, and one graph represents everything from the onset to the coda of that syllable. Subsequent "secondary" syllables are broken at the nucleus of the syllable, and so they represent only the rhyme. (Prefixes are handled in an analogous way). 
+
+So, instead of me-tal , we have met-al . In poem written using the Stolze system, all of the rhymes could be written with the same symbol, just as in the Debosnys poem.

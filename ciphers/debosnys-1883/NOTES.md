@@ -355,3 +355,89 @@ c4b_xpage}.tsv`, `glyphs/strips/*.jpg` (55 line crops, all four cryptograms); `p
 
 Requests this pass: scienceblogs.de 2 (step 1 only; everything else was disk/CPU work, no other
 host touched). Subagents: 1 (Sonnet, Pass B, blind, per the LANE R4 common-rule cap).
+
+## GOLD-4B, form test (25 Sept 2026, session_011bxY3axv9kyCqNZAxS4M3e)
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-gold-debosnys-form.md`. Spec cheap test 2. No images
+newly fetched (used `images/` already on disk); no decoding attempted; grade throughout is **S**
+(cryptanalytic/descriptive, arithmetic on the existing transcription), 0 H, 0 C.
+
+**1. Clear poems transcribed** (`clear_poems.tsv`, from the images already on disk, by eye):
+- **Cryptogram 3 page**: the 14-line clear French poem filling the lower two-thirds of the page,
+  below the 4 cipher lines ("Oh! mes amis je vous supplie en grâce" ... "c'est là, où je veux
+  aller pour l'éternité."). Syllable counts (heuristic French-prosody counter,
+  `scripts/count_syllables.py` -- vowel-group nuclei, word-final unaccented "e" mute unless it is
+  a word's only vowel or the word sits mid-line before a consonant, elisions read off the
+  transcription's own apostrophes) range **9-15 syllables/line, mean 11.0**; letters/line range
+  24-42, mean 32.8. **Not a regular alexandrine** -- consistent with Sektu's own independent
+  finding on the same poem (below), which also reports irregular meter topping out at 14-15
+  syllables.
+- **Cryptogram 4 page**: no clear poem (the whole page is cipher). Clear text present is only the
+  title **"monographe. verse."**, a circular banner reading **"HENRY.D.DEBOSNYS"** (around a
+  bird-and-key monogram drawing, appears twice), and the signature **"Hênêcos Debosnostys."** at
+  the foot of 4b -- transcribed in `clear_poems.tsv` with syllable/letter columns marked `[?]`
+  since these are not verse lines.
+
+**2. Sektu blog** (sektu.blogspot.com, "Debosnys" label, 20 posts, 8 Jun - 7 Aug 2017, author
+credited as "Sektu"): full summary with every hypothesis, test, number and post URL/date in
+`sektu-2017.md`. Headline items: the alexandrine/one-symbol-per-syllable hypothesis for the
+"cipher poem" (cryptogram 4) was **tested and rejected** against a real Baudelaire alexandrine
+control (21 Jun 2017); the N-glyph/nasalization test against *Fleurs du Mal* (3182 lines, mean
+2.05 nasalized syllables/line) found the cipher poem's N-glyphs (20 lines, mean 1.5/line) "a
+promising match, but more work needs to be done" (7 Aug 2017, explicitly not a solve); Sektu's
+own corpus-wide transcription (his own segmentation convention, not this repo's) counts 1188 glyph
+instances of 425 types, most frequent glyph 89 occurrences (7.5%). **Rule 10: none of this is our
+claim** -- credited to Sektu throughout, per rule 8.
+
+**3. Form test** (`scripts/form_test.py`, reads `lines.tsv` and `clear_poems.tsv`):
+
+| group | lines | mean signs/line | vs poem's 14 lines |
+|---|---|---|---|
+| cryptogram 1 | 6 | 22.67 | line count differs, no per-line pairing possible |
+| cryptogram 2 (2a+2b) | 26 | 29.92 | line count differs, no per-line pairing possible |
+| cryptogram 3 | 4 | 29.5 | line count differs, no per-line pairing possible |
+| cryptogram 4 (4a+4b) | 19 | 14.89 | line count differs (19 vs 14), no per-line pairing possible |
+| cryptogram 4a alone | **14** | 15.29 | **line count matches the c3 poem's 14 lines exactly** |
+
+Only cryptogram 4a's line count (14) matches the clear poem's (14), so it is the only pairing a
+per-line correlation can test. Pearson r between cryptogram-4a signs/line and the poem's
+letters/line = **0.269** (shuffle-control percentile **80.3** of 1000 trials, null range
+-0.75..+0.74); against the poem's syllables/line, r = **0.439** (percentile **93.6**, null range
+-0.75..+0.79). Neither clears a conventional significance bar (e.g. >=95th/97.5th percentile), and
+80th/93rd-percentile correlations of this size are unremarkable at n=14 with a two-sided null this
+wide -- **read as a weak, inconclusive shape match, not a crib finding.**
+Signs/letter ratio (paired, cryptogram 4a total signs / poem total letters) = 214/459 = **0.466**
+signs per poem letter (about 2.1 poem-letters per cipher sign) -- consistent with the spec's
+code/homophonic-alphabet hypothesis (a sign standing for more than one letter) rather than 1
+sign = 1 letter, but this is arithmetic on an assumed pairing that step "b" below weakens, not
+independent support for it.
+Letters-per-12-syllable-line estimate, derived from the poem's own letters/syllable ratio
+(459 letters / 154 syllables = 2.98 letters/syllable x 12 = **35.8 letters**, since no 19th-c.
+French verse-line sample exists in tools/data to draw 500 alexandrine lines from, per the brief):
+no cryptogram's mean signs/line (13-30) is close to 35.8, for any cryptogram under any of the
+sign=letter or sign=syllable readings.
+
+**Cross-check against Sektu's own numbers weakens the cryptogram-4a/poem line-count match**:
+Sektu's 2017 post ("Another note on N-Glyphs") states plainly "of the **20** lines of the cipher
+poem" -- his own count of the same object (the two-page cryptogram 4 cipher, not just page 4a) is
+20 lines, which is far closer to this repo's combined-cryptogram-4 total (**19** lines, c4a's 14 +
+c4b's 5) than to cryptogram 4a's 14 lines alone. Read together, the 14-line coincidence between
+cryptogram 4a in isolation and the c3 clear poem looks like an artefact of only counting half of
+"the cipher poem" (the object Sektu, working independently in 2017 from different scans, treats as
+one 19-20-line unit spanning both pages), not a genuine structural match -- **downgraded from
+"candidate" to "not supported once cryptogram 4 is counted as Sektu counts it."**
+
+**Conclusion**: no cryptogram's line count and line-length profile is a convincing match for the
+c3 clear poem once cryptogram 4 is counted correctly as one 19-20-line unit; the one candidate
+that did line up (cryptogram 4a alone, 14 lines) is better explained as counting only one of
+cryptogram 4's two pages. This is a control-backed negative for "the clear c3 poem is a full crib
+for a Debosnys cryptogram" among the four cryptograms and pairing tested here, not a claim that no
+crib relationship exists (a different clear poem not on these six pages, or the Greek poem Sektu
+identifies on the reverse of the cryptogram-4 leaf, remain untested; neither is on disk here).
+
+Files: `clear_poems.tsv`, `sektu-2017.md`, `sources/sektu/` (raw feed JSON + 20 per-post text
+extracts, not committed as images), `scripts/count_syllables.py`, `scripts/form_test.py`,
+`form_test_result.json`.
+
+Requests this pass: sektu.blogspot.com 2 (see `sektu-2017.md`). No other host touched; no new
+images fetched (rule "image over transcription" satisfied from images already on disk).

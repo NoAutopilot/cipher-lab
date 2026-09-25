@@ -1,0 +1,181 @@
+{
+ "poem": {
+  "n_lines": 14,
+  "letters_per_line": [
+   29,
+   29,
+   30,
+   24,
+   36,
+   37,
+   42,
+   29,
+   32,
+   36,
+   28,
+   39,
+   36,
+   32
+  ],
+  "syllables_per_line": [
+   10,
+   9,
+   10,
+   9,
+   11,
+   13,
+   12,
+   10,
+   10,
+   12,
+   9,
+   15,
+   12,
+   12
+  ],
+  "mean_letters_per_line": 32.785714285714285,
+  "mean_syllables_per_line": 11.0,
+  "letters_per_syllable": 2.9805194805194803,
+  "letters_per_12_syllable_line_estimate": 35.76623376623377
+ },
+ "cryptograms": {
+  "c1": {
+   "n_lines": 6,
+   "signs_per_line": [
+    22,
+    21,
+    29,
+    23,
+    23,
+    18
+   ],
+   "mean_signs_per_line": 22.666666666666668,
+   "total_signs": 136,
+   "signs_per_letter_ratio_vs_poem_mean": 0.6913580246913581,
+   "signs_per_syllable_ratio_vs_poem_mean": 2.0606060606060606,
+   "line_count_matches_poem": false,
+   "note": "line count 6 != poem's 14; no per-line pairing possible"
+  },
+  "c2": {
+   "n_lines": 26,
+   "signs_per_line": [
+    34,
+    28,
+    26,
+    27,
+    34,
+    31,
+    32,
+    26,
+    41,
+    33,
+    32,
+    36,
+    39,
+    31,
+    36,
+    32,
+    31,
+    37,
+    26,
+    31,
+    28,
+    23,
+    31,
+    26,
+    13,
+    14
+   ],
+   "mean_signs_per_line": 29.923076923076923,
+   "total_signs": 778,
+   "signs_per_letter_ratio_vs_poem_mean": 0.9126864420982068,
+   "signs_per_syllable_ratio_vs_poem_mean": 2.7202797202797204,
+   "line_count_matches_poem": false,
+   "note": "line count 26 != poem's 14; no per-line pairing possible"
+  },
+  "c3": {
+   "n_lines": 4,
+   "signs_per_line": [
+    35,
+    33,
+    32,
+    18
+   ],
+   "mean_signs_per_line": 29.5,
+   "total_signs": 118,
+   "signs_per_letter_ratio_vs_poem_mean": 0.8997821350762527,
+   "signs_per_syllable_ratio_vs_poem_mean": 2.6818181818181817,
+   "line_count_matches_poem": false,
+   "note": "line count 4 != poem's 14; no per-line pairing possible"
+  },
+  "c4": {
+   "n_lines": 19,
+   "signs_per_line": [
+    14,
+    13,
+    13,
+    18,
+    18,
+    15,
+    14,
+    17,
+    15,
+    17,
+    11,
+    19,
+    17,
+    13,
+    11,
+    15,
+    13,
+    16,
+    14
+   ],
+   "mean_signs_per_line": 14.894736842105264,
+   "total_signs": 283,
+   "signs_per_letter_ratio_vs_poem_mean": 0.45430569888774225,
+   "signs_per_syllable_ratio_vs_poem_mean": 1.354066985645933,
+   "line_count_matches_poem": false,
+   "note": "line count 19 != poem's 14; no per-line pairing possible"
+  },
+  "c4a_only": {
+   "n_lines": 14,
+   "signs_per_line": [
+    14,
+    13,
+    13,
+    18,
+    18,
+    15,
+    14,
+    17,
+    15,
+    17,
+    11,
+    19,
+    17,
+    13
+   ],
+   "mean_signs_per_line": 15.285714285714286,
+   "total_signs": 214,
+   "signs_per_letter_ratio_vs_poem_mean": 0.46623093681917216,
+   "signs_per_syllable_ratio_vs_poem_mean": 1.3896103896103897,
+   "line_count_matches_poem": true,
+   "pearson_r_vs_letters_per_line": 0.2686217807117226,
+   "shuffle_control_percentile_letters": 80.3,
+   "shuffle_null_range_letters": [
+    -0.751774266838268,
+    0.737105500656058,
+    0.015383868533592837
+   ],
+   "pearson_r_vs_syllables_per_line": 0.438595955537372,
+   "shuffle_control_percentile_syllables": 93.6,
+   "shuffle_null_range_syllables": [
+    -0.7492680907096773,
+    0.7858177536711249,
+    0.011567968327298186
+   ],
+   "signs_per_letter_ratio_paired": 0.4662309368191721
+  }
+ }
+}

@@ -1,0 +1,51 @@
+TITLE: First hypothesis for the Debosnys cipher
+URL: https://sektu.blogspot.com/2017/06/first-hypothesis-for-debosnys-cipher.html
+PUBLISHED: 2017-06-09T12:59:00.003-07:00
+
+In my last post I noted that the last symbol on each line of the Debosnys poem seems to represent the whole rhyme and nothing but the rhyme. To me, this says three things: 
+
+ The cipher is phonetic 
+ Some symbols represent rhymes. 
+ The onsets of syllables are either left out or encoded in some other way 
+
+The first thing I thought of when I saw this was a type of pseudo-language used in the English version of Hergé's book Tintin and the Picaros . (I wish I had a copy of the French original to compare, but alas, I don't). 
+
+The Picaros use a language with phrases like the following: 
+
+ Goh'blimeh! wa'samma ta, li li li va? Lem eshohya! 
+ Sum in'ksup wivit! 
+
+The words are accented English, spelled phonetically, and broken in unnatural places. The process of obfuscation could be described in three steps: 
+
+Plain Text: "Something's up with it" 
+Accented Phonetic: sumink's up wiv it 
+Broken: sum in' ks up wiv it 
+Re-merged: sum in'ksup wivit 
+
+One of the Debosnys pages shows a poem in French that is roughly in iambic pentameter, with an ABAB rhyme scheme. (This strikes me as the product of an English speaker who learned French as a second language, since iambic pentameter isn't common in modern French verse...though of course it was common on Old French.) 
+
+Suppose we take the first two lines of Debosnys' plaintext French poem, represent them phonetically, and break them up into groups representing the rhymes of each syllable combined with the onset of the next: 
+
+ oh! mes amis je vous supplie en grâce 
+ de bien vouloir un instant m'écouté 
+
+Step 1: Represent it phonetically. I'll do that using an 1880 phonetic dictionary : 
+
+ ō mé-z-ămī jĕ vǒû süplī ĕñ grâs 
+ dě bĭĕñ vǒûlwâr üǹ ăñstăñ m-ékŏûté 
+
+Step 2: Break at the onset of rhyme 
+
+ |ō m|é-z-|ăm|ī j|ĕ v|ǒû s|üpl|ī |ĕñ gr|âs 
+ d|ě b|ĭĕñ v|ǒûlw|âr |üǹ |ăñst|ăñ m-|ék|ŏût|é 
+
+Step 3: Merge 
+
+ ōm éz ăm īj ĕv ǒûs üpl ī ĕñgr âs 
+ d ěb ĭĕñv ǒûlw âr üǹ ăñst ăñm ék ŏût é 
+
+Suppose Debosnys encoded each group of this text as a separate symbol. For a line of iambic pentameter, the product of this type of process would normally have 10-11 symbols. The lines of the cipher poem have, on average, 15 symbols per line. If the cipher poem is in iambic pentameter, then presumably complex or uncommon groups (like  ĕñgr ,  ǒûlw ) could be represented as two symbols, for example: 
+
+ ōm éz ăm īj ĕv ǒûs üp l ī ĕñ g r âs 
+
+ d ěb ĭĕñ v ǒûl w âr üǹ ăñ s t ăñ m ék ŏût é

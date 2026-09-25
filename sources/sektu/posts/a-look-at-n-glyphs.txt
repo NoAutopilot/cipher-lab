@@ -1,0 +1,29 @@
+TITLE: A look at N-Glyphs
+URL: https://sektu.blogspot.com/2017/08/a-look-at-n-glyphs.html
+PUBLISHED: 2017-08-07T10:00:00.001-07:00
+
+In this post I'll take a look at a single class of Debosnys glyphs that I call "N-Glyphs", in hopes of ferreting out some details on how the cipher works. 
+
+N-glyphs are characterized by having a subglyph at the top that looks like a tilde (~), which I transliterate as N. The N subglyph has the following properties: 
+
+ It cannot occur on its own, but only in combination with other subglyphs 
+ It can only occur at the top of a glyph, or else directly under another N subglyph 
+ Though N cannot occur on its own, N.N frequently occurs on its own 
+
+The following are examples of all of the types of N-glyphs that I have identified: 
+
+If we assume that these glyphs represent syllables, then the observed properties of the N subglyph may give us a clue into what it represents. 
+
+The greatest challenge is to explain why N cannot occur on its own, but N.N can. However, many subglyphs can occur as pairs, and I think it is possible that pairs such as N.N, I.I and O.O may represent different subglyphs from the corresponding singles N, I and O. If we can accept that explanation, then two possibilities suggest themselves: 
+
+1. N is a consonant that can only occur in syllable-initial position. 
+
+ It cannot occur on its own because it must be accompanied by a vowel to make a syllable 
+ It can only occur at the top of a glyph because it is a consonant (such as French b  or d ) that can only occur in syllable-initial position. 
+
+2. N is a marker of a vocalic feature 
+
+ It cannot occur on its own because it is a feature of another subglyph (in this case a vowel) which must be present. 
+ It only occurs at the top of a glyph because it is used as a suprasegmental mark 
+
+At the moment I'm favoring the idea that the N is a marker of nasalization, directly influenced by the use of the tilde in certain languages as a suprasegmental mark of nasalization (e.g. ã, ẽ, ĩ, õ, ũ). To test this theory, I will look at the frequency of the N subglyph in the cipher poem, and compare it to the frequency of nasalized syllables in a large set of French Alexandrine lines.

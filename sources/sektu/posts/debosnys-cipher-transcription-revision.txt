@@ -1,0 +1,24 @@
+TITLE: Debosnys Cipher Transcription Revision
+URL: https://sektu.blogspot.com/2017/08/debosnys-cipher-transcription-revision.html
+PUBLISHED: 2017-08-04T16:37:00.001-07:00
+
+My initial transcription of the Debosnys cipher texts allocated one transcription to one glyph, where I have defined a glyph as a cluster of graphemes bounded to the left and right by white space. So, for example, the "signature" line is analyzed as six glyphs: 
+
+ C2B2 XP NU ZOO OM2N SHI 
+
+With the Debosnys material, this yields a text of 1188 instances of 425 glyphs. That means a lot of the text will consist of glyphs that only occur once, which makes contextual analysis difficult. I thought it would be useful to be able to do some analysis on deconstructed glyphs as well. So I created a second transcription that looks at the internal structure of the glyphs: 
+
+ <C2 B2> <X DOT> <N U> <O Z O> <O2RNO> <CROSSB> 
+
+There is an order to the internal structures of glyphs. For example, using Backus-Naur form, you could describe a whole set of glyphs as follows: 
+
+<n-glyph> ::= N <n-tail> 
+<n-tail> ::= <n-medial> | <n-medial> <n-final> 
+<n-medial> ::= N | U | X | O 
+<n-final> ::= X | O 
+
+I am currently exploring the idea that these structures correspond to syllable structures, with subglyphs representing letters or phonemes. 
+
+The distribution of sub-glyphs follows Zipf's law, with the subglyph O being most common. In French, the most common letter is e , and there is a favorable comparison between the frequency of the O subglyph in the cipher poem and the vowel e  in a comparable number of lines of Beaudelaire's poetry. 
+
+More on that when I have time.

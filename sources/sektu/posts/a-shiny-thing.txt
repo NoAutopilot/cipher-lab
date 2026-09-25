@@ -1,0 +1,11 @@
+TITLE: A shiny thing
+URL: https://sektu.blogspot.com/2017/06/a-shiny-thing.html
+PUBLISHED: 2017-06-08T15:48:00.002-07:00
+
+I was looking for substitution ciphers to test my new tools on, and I discovered one I hadn't heard about, thanks to Nick Pelling's Cipher Foundation site: The Debosnys Cipher . 
+
+Among the Debosnys cipher pages (the images of which I got from Pelling's site) there are the following two, which are clearly a poem. 
+
+It is appears from looking at the text that these are rhyming couplets with a scheme of AA BB. Assuming this is a conventional European end-rhyme, the rhyme should consist minimally of the nucleus and coda of the last syllable of the word. Since the visual rhyme appears to be limited to the last grapheme of each line, that grapheme seems to represents the whole rhyme and only the rhyme. 
+
+Suppose each symbol represents either an onset or a rhyme. In that case, we would expect the rhyming symbols at the ends of the lines to be slightly more frequent in the second position on each line than random chance would allow, since the first symbol would presumably represent an onset, and the second a rhyme. Indeed, out of 20 lines, four have end-rhyme symbols in the second position (20%), compared to one in first position (5%) and one in second-to-last position (5%).

@@ -1,0 +1,23 @@
+TITLE: Minor update on the Debosnys poem
+URL: https://sektu.blogspot.com/2017/06/minor-update-on-debosnys-poem.html
+PUBLISHED: 2017-06-11T08:06:00.004-07:00
+
+I've done some reading on French poetry and some work on transcribing the Debosnys cipher texts, and found three things that are interesting. 
+
+1. Identical rhyme 
+
+Conventional French rhyme apparently often includes the onset of the syllable in the rhyme, so  cœur  rhymes with  vainqueur , and  sonores  rhymes with  Maures . 
+
+If the rhyme includes the onset of the syllable, then the rhyming symbols of the text could quite easily correspond to full syllables, rather than needing to be broken at the nucleus of the syllable. 
+
+Debosnys did not use this type of rhyme in his plaintext poem, but that is no guarantee that the cipher poem does not use it. It is also possible that the text of the cipher poem was not authored by him. For all we know, he may have enciphered a poem by some other author. 
+
+2. Irregular Meter 
+
+I initially thought Debosnys' plaintext French poem was in iambic pentameter, but that was only on the basis of the first four lines. When I counted syllables for the rest of the lines, I found a fair amount of variation. Some of the other lines have the 12 syllables of an alexandrine, but there is no strict rule, and the longest line has 14-15 syllables. 
+
+If the cipher poem was authored by him, then the variation in the number of symbols per line could correspond to a variation in the number of syllables. 
+
+3. At least two languages 
+
+I have transcribed the cipher poem and one block of text (appearing above a plaintext poem in French), and I think they use the same cipher to write two different languages. The symbol frequency and inventory are quite different. Apparently Debosnys was a bit of a polyglot, so I don't know which two languages these are.

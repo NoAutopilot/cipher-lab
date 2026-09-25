@@ -1,0 +1,28 @@
+TITLE: Another note on N-Glyphs
+URL: https://sektu.blogspot.com/2017/08/another-note-on-n-glyphs.html
+PUBLISHED: 2017-08-07T12:08:00.002-07:00
+
+To test the hypothesis that the subglyph N represents nasalization of a vowel, I looked at the frequency of nasalized syllables in Beaudelaire's Fleurs du Mal  and compared it to the cipher poem. 
+
+I have a copy of Fleurs du Mal  containing 3182 Alexandrine lines. (One poem in this copy is not an Alexandrine). Among these lines, I count 6536 nasalized syllables, so an average of 2.05 nasalized syllables per line. 
+
+If the Debosnys cipher poem is a French Alexandrine, and the N subglyph represents nasalization (and is the only representation of nasalization), then we should expect to find a similar distribution of N subglyphs in the cipher poem. 
+
+Of the 20 lines of the cipher poem, I counted a total of 30 n-glyphs, so an average of 1.5 n-glyphs per line. More specifically, the number of n-glyphs per line was distributed as follows: 
+
+0 n-glyphs: 2 lines, 10% 
+1 n-glyph: 6 lines, 30% 
+2 n-glyphs: 9 lines, 45% 
+3 n-glyphs: 2 lines, 10% 
+
+Among the Alexandrine lines of Fleurs du Mal  we have the following distribution: 
+
+0 nasalized vowels: 366 lines, 11.5% 
+1 nasalized vowel: 816 lines, 25.6% 
+2 nasalized vowels: 897 lines, 28.2% 
+3 nasalized vowels: 658 lines, 20.1% 
+4 nasalized vowels: 312 lines, 9.8% 
+5 nasalized vowels: 101 lines, 3.2% 
+6-7 nasalized vowels: 32 lines, 1.6% 
+
+This looks like a promising match, but more work needs to be done obviously.
