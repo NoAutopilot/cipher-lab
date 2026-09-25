@@ -16,6 +16,9 @@ A family is one module in this package exposing:
       solver's own objective for the best restart (higher is better), info a small dict for the decode file.
   score_recovery(plain, truth) -> float
       share of positions read correctly, 0..1.
+  split_decode(dec, msgs) -> list[str] | None      (optional, LANE R8 DSN 25 Sept 2026)
+      how family_run.py breaks the target decode into the decode file's lines when a token is not one letter
+      (a syllable sign); None falls back to slicing by message token count.
 
 Shared helpers below: draw_window() cuts a control plaintext out of a corpus and returns the corpus with that
 window removed; letters() flattens messages. Families wrap existing tools (homophonic_anneal.py, running_key.py)
@@ -26,7 +29,7 @@ TOOLS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if TOOLS not in sys.path:
     sys.path.insert(0, TOOLS)
 
-REGISTRY = ("masc", "homophonic", "periodic_vigenere", "running_key", "keyed_running_key", "permuted_tableau")
+REGISTRY = ("masc", "homophonic", "periodic_vigenere", "running_key", "keyed_running_key", "permuted_tableau", "syllabary")
 
 
 def draw_window(text, n, seed, accept=None, tries=200, margin=2000):

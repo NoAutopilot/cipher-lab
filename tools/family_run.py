@@ -32,6 +32,9 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
   running_key        book-key Vigenere: running_key.py two-stream beam decoder (needs >= 3 corpus texts; slow)
   keyed_running_key  book key through a keyword-mixed tableau (family B', 25 Sept 2026): stage 1 ranks keywords by the
                      ciphertext letter counts, stage 2 beam-decodes the top ones (--param kcorpus=tools/data/nl20 top=3)
+  syllabary          partial syllabary (LANE R8 DSN, 25 Sept 2026): base code = letter, a superscript mark on a consonant
+                     base = the following vowel; control laid on the spec's row_pattern with the CM3 measured error mix
+                     (--param err=0.05 gap=2 use=auto); recovery is token accuracy
   permuted_tableau   book key through a GENERAL permuted tableau, first B''-c: a free permutation on the cipher side
                      (family B'', GOLD-B2D 25 Sept 2026): sort-match start, anneal under an n-gram sum-stream proxy,
                      beam rescoring; control = random S3 of 26! (--param kcorpus=tools/data/nl20 chains=3 evals=30000)
@@ -122,8 +125,8 @@ def read_spec_cipher(spec, mode):
     if mode == "auto":
         mode = auto_mode([l for l in c if isinstance(l, str)])
     for line in c:
-        if not isinstance(line, str) or not line.strip() or line.lstrip().startswith("#"):
-            continue
+        if not isinstance(line, str) or not line.strip() or re.match(r"\s*#(\s|$)", line):
+            continue  # a comment line is "#" followed by a space or nothing; "#^ ..." is a sign named # (Salviati)
         t = _tokens_of_line(line, mode)
         if t:
             msgs.append(t)
@@ -327,10 +330,13 @@ def main(argv=None):
         shuf_note = f"; TARGET LETTERS SHUFFLED (seed {a.shuffle_target}, false-positive floor)" if a.shuffle_target is not None else ""
         f.write(f"# {slug} {a.family} seed {a.seed} restarts {a.restarts} {date} UTC; control mean {ctl}; score {sc:.3f}{shuf_note}\n")
         f.write(f"# {json.dumps(info, ensure_ascii=False, default=str)[:2000]}\n")
-        pos = 0
-        for m in msgs:
-            f.write(dec[pos:pos + len(m)] + "\n")
-            pos += len(m)
+        lines = fam.split_decode(dec, msgs) if hasattr(fam, "split_decode") else None
+        if lines is None:
+            lines, pos = [], 0
+            for m in msgs:
+                lines.append(dec[pos:pos + len(m)]); pos += len(m)
+        for line in lines:
+            f.write(line + "\n")
     verdict = run_judge(a.spec, dpath) if spec.get("judge") else "no judge block"
     print(f"TARGET best score {sc:.3f}; decode -> {rel(dpath)}; judge: {verdict}")
     append_row(out, [date, a.family, par, a.seed, ctl, f"{sc:.3f}", verdict, f"yes (gate {a.gate})", a.label or "-"])
