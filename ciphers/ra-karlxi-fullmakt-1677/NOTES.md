@@ -1,3 +1,82 @@
+open
+Sverges traktater med främmande magter -- the standard treaty edition for this genre -- has no
+volume covering 1677 at all (LIBRIS xsearch, the Swedish national library's own catalog API, lists
+all 39 published parts and they jump from vol. 6 Förra hälft 1, 1646-1648, straight to vol. 8,
+1723-1771), and a full-text search of Internet Archive and Google Books for Loenbom's Handlingar
+til Konung Carl XI:tes historia and for a later Historisk tidskrift key-publication found no
+citation of this document either.
+
+## Check-solved (LANE CX2, 25 Sep 2026) -- print-question follow-up
+
+This target already carries a full six-source check-solved sweep from 24 Sept 2026 (below, kept
+intact): web, community lists, DECODE, Bourdeau and Aymeloglu all came back "not found" and were
+not re-run today (nothing suggests they are stale). This pass's job (per
+`.claude/briefs/runs/2026-09-25-lane-cx2-nord.md`) was narrower: settle the one open item that
+pass left standing -- whether Sverges traktater med främmande magter volume 7 (or any volume
+covering 1672-1697) exists and prints this document.
+
+1. **Sverges traktater volume enumeration -- resolved, and it is a negative.** LIBRIS xsearch
+   (`libris.kb.se/xsearch?query=Sverges+traktater+med+främmande+magter+Rydberg&format=json&n=39`,
+   1 request; the LIBRIS HTML catalog front end itself is Anubis-bot-challenged and not usable
+   from this container, but its xsearch JSON API answers plain curl) returns all 39 catalogued
+   parts of this series. Sorted by part number, the run is: D.1 (822-1335) ... D.5 in three
+   physical halves (1572-1645, with a 1628-1634 supplement) ... **D.6, Förra hälft (first half), 1
+   (1646-1648)** ... **D.8, in three parts (1723-1739, 1740-1751, 1751-1771)** ... D.10-D.15
+   (1815-1905), plus a border-maps volume (1752-1766 and 1810). No part numbered 7 appears
+   anywhere in the 39 records, and no part of any number covers any year between 1648 and 1723.
+   Two independent secondary sources corroborate the same gap: (a) a Google Books catalogue
+   description of the full set (`PFMOMwEACAAJ`) lists "dl. 5. pt. 1 ... dl. 5. pt. 2, dl. 6. pt.
+   1 ... dl. 8 ... dl. 12 ... dl. 13, 14 ... dl. 15" with no "dl. 7" between 6 and 8; (b) a
+   web-search snippet of a library holdings summary gives the identical span "D. 1(822/1335)-6:
+   Förra hälft:1(1646/1648), D. 8(1723/1771), D. 10(1815/1845)-15(1900/1905)". **Conclusion: this
+   edition -- the natural home for a royal commissioners' full power, and the only specific lead
+   QUEUE.md and the 24 Sept pass named -- was never published for any year between 1648 and 1723,
+   so it cannot contain the 6 May 1677 Nääs full power under any volume number.** This resolves
+   the "inconclusive, not negative" flag the 24 Sept pass left open; it is now a clean negative,
+   not an unread edition, and this target no longer needs to be held on that account.
+2. **Nijmegen congress literature.** WebSearch for a printed edition of the Nijmegen congress
+   (1678-79) carrying Swedish plenipotentiaries' full powers (Mignet, a Sylloge/Actes collection)
+   found only secondary historical accounts (Wikipedia, EBSCO, Wiley) and one Library of Congress
+   authority record mentioning a "fullmåchtige" title without giving a printed source; no edition
+   was located or opened. Not found, not resolved -- flagged as still open if anyone later has a
+   specific title to check, but no further lead surfaced this pass.
+3. **Loenbom, Handlingar til Konung Carl XI:tes historia** (Stockholm, Lars Salvii, 1763-1774; 12+
+   samlingar). WebSearch for its contents against "fullmakt", "kommissarier" and "fredsfördrag"
+   found only bibliographic listings (WorldCat, HathiTrust catalog record, Google Books, Online
+   Books Page) giving volume/samling titles, no table of contents detailed enough to confirm or
+   rule out this document; the volumes were not opened page-by-page this pass (out of the print-
+   question scope this brief set; a next worker with more budget could fetch a samling from
+   HathiTrust or archive.org and full-text search it, though HathiTrust page images are
+   Cloudflare-blocked from the cloud per the Access playbook table). Not found, not conclusively
+   searched.
+4. **Historisk tidskrift, a later key publication** (the "key lost" -> journal-search lesson in
+   check-solved.md, after Torpadie's 1888 Gustav II Adolf precedent). WebSearch for a Historisk
+   tidskrift review or key-publication naming this fullmakt, its shelfmark, or "Nääs 1677 chiffer"
+   found nothing beyond general Karl XI biography pages and one unrelated Historisk tidskrift
+   volume's OCR dump on archive.org (not opened, no hit in the search-engine's own indexing).
+   Not found.
+
+Riksarkivet's own digitised-image route named in NOTES.md (the `data.riksarkivet.se/api/records`
+check) was already run on 24 Sept 2026 and confirmed not digitised; not re-run today since nothing
+suggests that has changed in one day.
+
+**Verdict stands `open`**, and is now on firmer ground than the 24 Sept pass: the one named
+edition family that could plausibly print this document does not cover its year at all (a
+resolved negative, not an open question), Loenbom and a Historisk tidskrift key-publication search
+turned up nothing, and the document remains undigitised and unread anywhere. Rule 10: no novelty
+wording used above; this is a search result, not a verifier's classification.
+
+Requests this pass: `libris.kb.se` 1 (xsearch JSON API; the HTML front end at the same host is
+Anubis-challenged and was not retried, per the good-citizen one-retry rule -- not yet in the Access
+playbook table, added here for the next worker: **LIBRIS (libris.kb.se): HTML catalog pages are
+behind an Anubis bot challenge from this container; the `xsearch` JSON endpoint
+(`libris.kb.se/xsearch?query=...&format=json`) is not challenged and answers plain curl -- use it,
+not the HTML search, for any future Swedish-library bibliographic check**), `googleapis.com/books`
+4 (GOOGLE_BOOKS_KEY + country=US), WebSearch 6. No archive.org, no DECODE, no GitHub clones this
+pass (the 24 Sept sweep's findings on those sources stand unchanged).
+
+## Check-solved sweep, 24 September 2026 (prior pass, kept intact below)
+
 # ra-karlxi-fullmakt-1677
 
 Status: open
