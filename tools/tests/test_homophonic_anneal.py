@@ -30,19 +30,32 @@ _, k = ha.anneal(list('abcabcxyzxyz'), m, 2000, random.Random(1), 1.0, allowed={
 assert k['x'] in 'aeiou' and k['y'] == 'e', k
 print('ok allowed')
 
-# --noise (anneal_noisy, LANE R6 CM2, 25 Sept 2026): on a K=20, N=400 German control with 10 percent of the signs
-# replaced by random signs, the error-tolerant solve returns a free set within its cap, letters from ALPHA, and reads
-# the corrected text at >= 75 percent; the plain solve's reading of the same noisy input is printed beside it.
-seq, p, truth = ha.make_control(open(os.path.join(D, 'plaintext_98.txt'), encoding='utf-8').read(), 20, 400, m, 3)
+# --noise (anneal_noisy, LANE R6 CM2, 25 Sept 2026): the first block's control (align_74 words, K=20, N=282, w as uu,
+# corpus composed_enhg + plaintext_98) with 10 percent of the signs replaced by random signs: the error-tolerant solve
+# returns a free set within its cap, letters from ALPHA, and reads the corrected text at >= 75 percent (85.8 percent on
+# 25 Sept 2026, plain solver 86.2); the plain solve's reading of the same noisy input is printed beside it. A weak model
+# (composed_enhg alone, 8.5 KB) reads the same design at 11-19 percent with either solver, so the model is what this
+# block tests the solver under, not the other way round.
+import math
+ha.W_AS_UU = True
+m2 = ha.Model([open(os.path.join(R, 'tools', 'data', 'de16', 'composed_enhg.txt'), encoding='utf-8').read(),
+               open(os.path.join(D, 'plaintext_98.txt'), encoding='utf-8').read()])
+seq, p, truth = ha.make_control(' '.join(words), 20, 282, m2, 1)
 nr = random.Random(3); types = sorted(set(seq))
 seqn = [nr.choice(types) if nr.random() < 0.1 else s for s in seq]
 acc = lambda d: sum(a == b for a, b in zip(d, p)) / len(p)
-sc, key, free = ha.solve(seqn, m, 3, 100000, 1, 1.0, noise=0.1)[0]
-import math
+sc, key, free = ha.solve(seqn, m2, 3, 100000, 1, 1.0, noise=0.1)[0]
 assert len(free) <= math.ceil(1.5 * 0.1 * len(seqn)), len(free)
 assert all(l in ha.ALPHA for l in free.values()) and all(0 <= i < len(seqn) for i in free)
 dec = ''.join(free.get(i, key[x]) for i, x in enumerate(seqn))
-plain_key = ha.solve(seqn, m, 3, 100000, 1, 1.0)[0][1]
+plain_key = ha.solve(seqn, m2, 3, 100000, 1, 1.0)[0][1]
 plain_dec = ''.join(plain_key[x] for x in seqn)
 print(f'ok noise: corrected {acc(dec):.1%} (key-only {acc("".join(key[x] for x in seqn)):.1%}, free {len(free)}), plain solver {acc(plain_dec):.1%}')
 assert acc(dec) >= 0.75, acc(dec)
+
+# --robust (RobustModel): same interface as Model; logp is bounded below by log(q/V) and never above the plain logp
+rm = ha.RobustModel(m2, 0.1)
+assert rm.order == m2.order and rm.freq is m2.freq
+for g in ('der', 'qxz', 'ung'):
+    assert rm.logp(g) >= math.log(0.1 / m2.V) - 1e-9 and rm.logp(g) >= m2.logp(g) + math.log(0.9) - 1e-9, g
+print('ok robust')

@@ -1393,3 +1393,76 @@ measured residual error rate. Suggestion (not done): `codemark_curve.py` design 
 Regenerate: `python3 control/codemark_curve.py stats --leaves all`; `[CM_RESTARTS=24] [CM_NOISE=p] python3
 control/codemark_curve.py control cm 2820 SEED --leaves all`; `[CM_RESTARTS=24] python3 control/codemark_curve.py
 target cm SEED --leaves all`. Each run about 16 s (6 restarts) or 60 s (24). Requests: none.
+
+## CM2: error-tolerant code+mark (25 Sept 2026, LANE R6)
+
+Worker CM2 (Fable, cap $15, box 75 minutes), 18:53-19:30 UTC. Brief `.claude/briefs/runs/2026-09-25-lane-r6-cm2-salviati-tolerant.md`.
+Disk only, no hosts, no subagents. **No reading; grades stay H0 C0 S0 M0 I0; no reading_cm2.txt.** Rows in HYPOTHESES.md
+(new) and `control_curve.tsv`; every run is the pooled eight-leaf stream (N=2,820 signs, 223 code+mark types), 24 restarts,
+the CM noise controls (`CM_NOISE=0.1` and `0.2`, seeds 1-3, the same seed-fixed noisy streams CM solved).
+
+**1. What the passes actually confuse** (recon_box_f54v..f57v/disagreements.tsv, 519 rows over seven leaves, before
+settlement): sign vs plain box 368 (70.9%), a different base code 106 (20.4%, of which 23 also differ in marks),
+a box one pass missed 45 (8.7%), same code with different marks 0. Commonest code pairs: #/+ (10), g/y (5), bh/g, #/Z,
+f/y, bh/phi (3 each). So the measured transcription error is mostly a sign dropped to plain or a plain box read as a sign
+(a deletion or insertion in the sign stream), then base-code confusions; marks alone never split a reading. CM's
+`CM_NOISE` (type substitution at the target's own frequencies) models the second class, not the first; a matched
+insertion/deletion control is not built here (suggestion at the end).
+
+**2. Ceilings of the merging variant** (types collapsed, control key of seed 1-3): base code only, 36 symbols, the
+majority letter per symbol covers 71.7-73.1% of tokens; base code + mark class (none / dot / digit-led / other), 106-111
+symbols, 87.9-88.7%; on the 10%-noise stream 80.9%. A base-code-only solver cannot pass a 60% gate with any margin under
+noise, so it was not run; the base+class design is `cmc` below.
+
+**3. Variants built** (both in the shared tool, `tools/homophonic_anneal.py`, with `--help` text and an offline test in
+`tools/tests/test_homophonic_anneal.py`, which passes in 26 s (run 19:28 UTC; it also caught, and now guards against, a first version that solved once per position); `control/codemark_curve.py` passes them through as env `CM_TOL` and `CM_ROBUST`
+and gained design `cmc`):
+- `--noise p` / `anneal_noisy`: the homophonic key plus a per-position erasure variable. Generative model: each position
+  is key[sign] with probability 1-p, else a letter from the corpus unigram distribution. The solver may mark up to
+  1.5·p·N positions as misread and put its own letter there, at a prior cost log p + log freq(letter) - log(1-p) each;
+  position moves start halfway through the schedule (started at once, they absorb the key search: 12-51% vs 88% on a
+  900-letter synthetic). The output names the corrected positions.
+- `--robust q` / `RobustModel`: bounded loss, logp(g) = log((1-q)·P(g) + q/24), so one misread sign cannot cost more than
+  about -log(q/24) per n-gram.
+- `cmc`: the cm cipher read through merged symbols (base code + mark class).
+
+**4. Controls** (token accuracy, seeds 1/2/3; plain cm solver of LANE R6 CM on the identical streams in the last column):
+
+| variant | 10% noise | 20% noise | plain cm solver, 10% / 20% |
+|---|---|---|---|
+| erasure `CM_TOL` | 27.3 / 35.7 / 39.4% (key-only 28.1 / 36.3 / 40.1; 83-91 positions corrected) | 27.5 / 40.3 / 13.1% (key-only 28.2 / 41.6 / 13.3) | 42.9 / 26.5 / 34.7 ; 26.5 / 23.7 / 25.4 |
+| bounded loss `CM_ROBUST` | 41.5 / 42.8 / 58.3% | 25.3 / 29.9 / 37.8% | same |
+| merged `cmc` | 48.8 / 47.1 / 51.5% | 30.8 / 18.5 / 2.7% | same (ceiling 80.9% at 10%) |
+| merged `cmc` under bounded loss q=0.1 | 41.6 / 29.5 / 16.6% | not run | same |
+
+**Gate (above 60% on the 10% control on 2 of 3 seeds): **not met by any variant** (best single seed 58.3%, bounded loss, seed 3; the erasure solve 27-39%, the merged design 47-52%). The target was not run** (the brief: fails -> report
+both numbers and stop; the model is still untested, not negative).
+
+**5. Why the erasure variant cannot pass, measured.** With the true key applied to the 10%-noise stream (no corrections),
+token accuracy is 90.3-91.2% and the plain objective scores -7400.5 / -7363.9 / -7285.8 (seeds 1/2/3) against the clean
+plaintext's -6622.8; CM's plain solver found -7347.1 / -7410.9 / -7314.2. So on seed 1 the wrong key it found scores
+*above* the true key: at this noise the objective's optimum is no longer the true key, and on seeds 2 and 3 the true key
+leads by only 47 and 28 nats over 2,820 symbols, a landscape flat enough that 24 restarts miss it. Under the erasure
+objective the true key with every one of its 249-273 wrong positions corrected scores -7854 to -7960, far *below* the
+-7399 to -7572 the solver found with 81-91 corrections: a wrong letter costs the trigram model about 3.1 nats on average,
+a correction costs 5.4, so correcting is never worth it under the model's own prior, and the erasure variable is idle
+(key-only and corrected accuracies differ by under 1 point). A weaker prior would let the solver fabricate Italian at
+clean positions instead. The trigram model's discrimination per letter, not the search, is the limit.
+
+**Bounded loss and merging: a lift, not a pass.** On the 10% control the bounded-loss objective reads 41.5 / 42.8 / 58.3%
+at q=0.1 (plain 42.9 / 26.5 / 34.7), 57.1 / 44.4 / 42.7% at q=0.05 and 42.0 / 12.8 / 54.2% at q=0.3: a mean lift of
+13 points over the plain solver (47.5-48.1% vs 34.7%), on 5 of 6 seed-by-q runs at q<=0.1, but no seed reaches 60% at any
+weight. The merged design cmc reads 48.8 / 47.1 / 51.5% at 10% (mean 49.1%, +14 over plain, the tightest spread of any
+variant; its own ceiling is 80.9% on that stream) and 30.8 / 18.5 / 2.7% at 20%. The two are not stacked here
+Stacked (cmc under bounded loss, q=0.1) they read 41.6 / 29.5 / 16.6%: worse than either alone, so the two lifts
+are not additive.
+
+**6. Requests:** none (disk only). Regenerate: `CM_RESTARTS=24 CM_NOISE=0.1 CM_TOL=0.1 python3 control/codemark_curve.py
+control cm 2820 SEED --leaves all` (about 165 s with six runs sharing four cores); `CM_ROBUST=0.1` likewise; design
+`cmc` in place of `cm`; the true-key diagnostic is the inline script quoted in git history of this section's commit
+(three lines: build with NOISE=0 for the key, rebuild with NOISE=p, score the decode).
+
+**Suggestions (not done, one line each):** a control with the *measured* error classes (sign<->plain insertions and
+deletions at the settled rate, plus the #/+, g/y code pairs) rather than type substitution; a 4-gram or word-aware
+model, since the per-letter discrimination is what fails; more observations per type (pools-first: a sibling Salviati
+letter under the same 36 base codes) before any further solver work.
