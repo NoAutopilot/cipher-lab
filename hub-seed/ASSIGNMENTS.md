@@ -453,3 +453,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T16:58Z	session_015t6VAAyCgCAmcVQQ1P62h6	LANE R6 Y6 done $6.84 N, archived	espagnol142-mercy-1648	521 tokens, no key
 2026-09-25T16:58Z	session_01DG2K4JMGBjdPSvB2SvW3iB	LANE R6 Y4b done $7.22 D-, archived	clairambault296 sweep	129/316, not pinned
 2026-09-25T16:56Z	session_01GDdVUg8RRD8MkK7KkBAw8y	retrospective i done $2.30 D, archived	RETRO-2026-09-25i.md; proposals 1-2 applied by the parent	commit follows
+2026-09-25T16:57Z	session_01Mm3Ez9uXdarTGdxaCxezPQ	LANE R6 L1c (Sonnet, cap 6)	salviati f55v pass C on 87 disagreements	brief 2026-09-25-lane-r6-l1c-salviati-f55v-passc.md
+2026-09-25T16:57Z	session_01YZU5WBr7EVRgwuytyskZFF	LANE R6 Y7 (Sonnet, cap 5)	clair1161 locate, Gallica	brief 2026-09-25-lane-r6-y7-clair1161-locate.md
+2026-09-25T16:57Z	session_0164uM2PUPD88ka9fZ3h7a5P	LANE R6 Y8 (Sonnet, cap 5)	espagnol142-mercy-1648 spec + test 1	brief 2026-09-25-lane-r6-y8-mercy-spec.md
