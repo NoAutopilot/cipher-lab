@@ -1,96 +1,96 @@
 leaf	order	code	gloss	note
-210	1	782	une
-210	2	597	expédition
-210	3	1128	ennemie
-210	4	1135	forte	long-s used for final digit (1135)
-210	5	564	de
-210	6	1	soixante
-210	7	454	et
-210	8	427	onze
-210	9	1185	voiles
-210	10	190	en
-210	11	568	ar	word fragment, continues "arrivée" on next line
-210	12	976	ri	continues "ar-ri-"
-210	13	363	vé
-210	14	472	e	completes "arrivée"
-210	15	689	le
-210	16	997	quatre
-210	17	547	aout,	comma written after word in ms
-211	18	314	devant	first 3 lines (order 1-17) repeat verbatim at top of this leaf's photo before new text begins; not re-logged
-211	19	264	la
-211	20	554	rade
-211	21	930	et
-211	22	570	débarqua
-211	23	142	les
-211	24	590	troupes
-211	25	1090	à
-211	26	444	L'	apostrophe as written
-211	27	190	est	same code 190 as order 10 ("en"); reused for different word
-211	28	564	de	same code 564 as order 5
-211	29	739	la
-211	30	700	ville
-211	31	692	&	gloss is a scrawled ampersand-like mark (looks like a slashed "3"/"ß"); could instead be a paraph or "et" shorthand
-211	32	1145	nous
-211	33	1150	avons
-211	34	140	dé
-211	35	29	tru
-211	36	938	it	glyph obscured by an ink blot; could read "is" (détruis vs détruit)
-211	37	1018	nos	gloss cursive, reads "nos" with large terminal loop
-211	38	835	ma
-211	39	1001	ga
-211	40	303	zi	digit's "3"s are open loops that can resemble "9"; slip copy confirms 303 clearly
-211	41	748	ins	written in bold/reinforced ink in both this leaf and the slip
-211	42	225	de
-211	43	1132	Su	begins word completed by "cre" (next line) = "Sucre"
-211	44	905	cre	completes "Sucre"
-211	45	411	ca	begins "café"
-211	46	624	fé	completes "café"
-211	47	516	et
-211	48	1074	po	begins word completed over next 3 codes, probably "poivre"
-211	49	904	î	accent mark ambiguous (looks like two dots, dieresis or stray ink); read as "î"/"i"
-211	50	304	vr	glyph could also be read "ur"; taken with surrounding cells as part of "poivre"
-211	51	1190	e	completes "po-î-vr-e" = likely "poivre"
-211	52	930	et	same code as order 21
-211	53	384	nous
-211	54	1085	sommes
-211	55	965	porté	i.e. "portés"
-211	56	1186	Dans
-211	57	966	le
-211	58	411	ca	same code as order 45; begins "camp"
-211	59	108	m
-211	60	396	p	completes "camp"
-211	61	456	re	glyph looks like "rc"; read as "re", continues into next word "retranché"
-211	62	235	tra
-211	63	99	n
-211	64	1137	ché	completes "retranché" (re-tra-n-ché)
-211	65	508	destiné
-211	66	545	pour
-211	67	850	cela
-211	68	225	de	same code as order 42
-211	69	893	puis	i.e. "depuis"
-211	70	339	six
-211	71	840	mois
-211	72	1197	[illegible]	entire word struck through/crossed out in ms, cannot be read
-211	73	900	ils
-212	74	190	est	same code as orders 10, 27
-212	75	394	pro
-212	76	980	ba
-212	77	697	ble	completes "probable"
-212	78	1146	que
-212	79	338	dans	digit's first two loops resemble "9" but slip copy confirms "338"
-212	80	1180	quelques
-212	81	762	jours
-212	82	131	une	middle digit ambiguous, could be read 9 (=191/931) rather than 3 (=131) in this cursive hand; slip copy leans 131
-212	83	819	affaire
-212	84	841	de	begins "décisive" (de-ci-si-ve, spread over next 3 codes)
-212	85	244	ci
-212	86	1041	si
-212	87	363	ve	completes "décisive"; same code 363 as order 13, different word
-212	88	13	au	begins "aura"
-212	89	299	ra	completes "aura"
-212	90	738	lieu
-212	91	990	.	period mark, own code/cell
-212	92	420	fin
-212	93	204	Batavia
-212	94	241	7	gloss written as Arabic numeral "7", not spelled out
-212	95	547	aoust	same code 547 as order 17; here spelled "aoust"
+500	1	782	une	
+500	2	597	expédition	
+500	3	1128	ennemie	
+500	4	1135	forte	long-s used for final digit (1135)
+500	5	564	de	
+500	6	1	soixante	
+500	7	454	et	
+500	8	427	onze	
+500	9	1185	voiles	
+500	10	190	en	
+500	11	568	ar	"word fragment, continues ""arrivée"" on next line"
+500	12	976	ri	"continues ""ar-ri-"""
+500	13	363	vé	
+500	14	472	e	"completes ""arrivée"""
+500	15	689	le	
+500	16	997	quatre	
+500	17	547	aout,	comma written after word in ms
+500	18	314	devant	first 3 lines (order 1-17) repeat verbatim at top of this leaf's photo before new text begins; not re-logged
+500	19	264	la	
+500	20	554	rade	
+500	21	930	et	
+500	22	570	débarqua	
+500	23	142	les	
+500	24	590	troupes	
+500	25	1090	à	
+500	26	444	L'	apostrophe as written
+500	27	190	est	"same code 190 as order 10 (""en""); reused for different word"
+500	28	564	de	same code 564 as order 5
+500	29	739	la	
+500	30	700	ville	
+500	31	692	&	"gloss is a scrawled ampersand-like mark (looks like a slashed ""3""/""ß""); could instead be a paraph or ""et"" shorthand"
+500	32	1145	nous	
+500	33	1150	avons	
+500	34	140	dé	
+500	35	29	tru	
+500	36	938	it	"glyph obscured by an ink blot; could read ""is"" (détruis vs détruit)"
+500	37	1018	nos	"gloss cursive, reads ""nos"" with large terminal loop"
+500	38	835	ma	
+500	39	1001	ga	
+500	40	303	zi	"digit's ""3""s are open loops that can resemble ""9""; slip copy confirms 303 clearly"
+500	41	748	ins	written in bold/reinforced ink in both this leaf and the slip
+500	42	225	de	
+500	43	1132	Su	"begins word completed by ""cre"" (next line) = ""Sucre"""
+500	44	905	cre	"completes ""Sucre"""
+500	45	411	ca	"begins ""café"""
+500	46	624	fé	"completes ""café"""
+500	47	516	et	
+500	48	1074	po	"begins word completed over next 3 codes, probably ""poivre"""
+500	49	904	î	"accent mark ambiguous (looks like two dots, dieresis or stray ink); read as ""î""/""i"""
+500	50	304	vr	"glyph could also be read ""ur""; taken with surrounding cells as part of ""poivre"""
+500	51	1190	e	"completes ""po-î-vr-e"" = likely ""poivre"""
+500	52	930	et	same code as order 21
+500	53	384	nous	
+500	54	1085	sommes	
+500	55	965	porté	"i.e. ""portés"""
+500	56	1186	Dans	
+500	57	966	le	
+500	58	411	ca	"same code as order 45; begins ""camp"""
+500	59	108	m	
+500	60	396	p	"completes ""camp"""
+500	61	456	re	"glyph looks like ""rc""; read as ""re"", continues into next word ""retranché"""
+500	62	235	tra	
+500	63	99	n	
+500	64	1137	ché	"completes ""retranché"" (re-tra-n-ché)"
+500	65	508	destiné	
+500	66	545	pour	
+500	67	850	cela	
+500	68	225	de	same code as order 42
+500	69	893	puis	"i.e. ""depuis"""
+500	70	339	six	
+500	71	840	mois	
+500	72	1197	[illegible]	entire word struck through/crossed out in ms, cannot be read
+500	73	900	ils	
+500	74	190	est	same code as orders 10, 27
+500	75	394	pro	
+500	76	980	ba	
+500	77	697	ble	"completes ""probable"""
+500	78	1146	que	
+500	79	338	dans	"digit's first two loops resemble ""9"" but slip copy confirms ""338"""
+500	80	1180	quelques	
+500	81	762	jours	
+500	82	131	une	middle digit ambiguous, could be read 9 (=191/931) rather than 3 (=131) in this cursive hand; slip copy leans 131
+500	83	819	affaire	
+500	84	841	de	"begins ""décisive"" (de-ci-si-ve, spread over next 3 codes)"
+500	85	244	ci	
+500	86	1041	si	
+500	87	363	ve	"completes ""décisive""; same code 363 as order 13, different word"
+500	88	13	au	"begins ""aura"""
+500	89	299	ra	"completes ""aura"""
+500	90	738	lieu	
+500	91	990	.	period mark, own code/cell
+500	92	420	fin	
+500	93	204	Batavia	
+500	94	241	7	"gloss written as Arabic numeral ""7"", not spelled out"
+500	95	547	aoust	"same code 547 as order 17; here spelled ""aoust"""

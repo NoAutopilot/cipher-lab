@@ -1,96 +1,96 @@
 leaf	order	code	gloss	note
-210	1	782	une	also appears identically at the top of leaf 211 (repeated heading of the message)
-210	2	597	expedition
-210	3	1128	ennemie
-210	4	1135	forte	digit 5 written in the scribe's long-s-like numeral form, read as ordinary 5
-210	5	564	de
-211	6	1	Soixante	codes for this row are also visible on leaf 210, but the gloss there is hidden under the pasted clean-copy slip, so gloss taken from leaf 211; low code "1" may be a sentence/line marker rather than a normal word-code
-211	7	454	et
-211	8	427	onze
-211	9	1185	Voiles
-211	10	190	en
-211	11	568	ar	word cut short with a trailing dash after "ar", likely abbreviation for "armement"
-211	12	976	ri	continues "ar" + "ri" + "ve" + "e" = "arrivée"
-211	13	363	ve
-211	14	472	e
-211	15	689	le
-211	16	997	quatre
-211	17	547	aoust
-211	18	314	devant	first digit hard to read on this leaf (could look like 2 or 9 followed by 1,1); leaf 210's clean-copy slip shows this digit unambiguously as 314, used here
-211	19	264	la
-211	20	554	Rade
-211	21	930	et
-211	22	570	Debargue
-211	23	142	les
-211	24	590	Troupes
-211	25	1090	a
-211	26	444	L'
-211	27	190	est
-211	28	564	de
-211	29	739	La	digit could be read as 729; leaf 210's clean-copy slip clearly shows 739, used here
-211	30	700	Ville
-211	31	692	ß	gloss symbol unclear, resembles a cursive "ß" or a flourish/abbreviation mark rather than a standard letter
-211	32	1145	nous
-211	33	1150	avons
-211	34	140	dé
-211	35	29	tru
-211	36	938	it	word hard to read, could be "in"; digit partly obscured by an ink blot, read against leaf 210's clean-copy slip (938)
-211	37	1018	nou	word trails into an unclear flourish, possibly "nous" or "notre"; digit itself obscured by a heavy ink blot on this leaf, read as 1018 against leaf 210's clean-copy slip
-211	38	835	ma	word has trailing dots after it, possibly indicating an abbreviation or just descender ink
-211	39	1001	ga	continues "ma"+"ga"+"zi"+"ns" = "magazins" (magasins)
-211	40	303	zi
-211	41	748	ns	code written in noticeably bolder/darker ink than the surrounding codes, on both this leaf and the leaf-210 clean-copy slip
-211	42	225	de
-211	43	1132	Su	continues "Su"+"cre" = "Sucre" on the next row
-211	44	905	cre
-211	45	411	ca	continues "ca"+"fé" = "café"
-211	46	624	fé
-211	47	516	et
-211	48	1074	po
-211	49	904	ï	gloss written as "ï" (i with two dots), not obviously completing a word with the following row's "vr"
-211	50	304	vr	gloss word preceded by an X-shaped mark, possibly a caret/insertion or correction mark
-211	51	1190	a
-211	52	930	et
-211	53	384	nous
-211	54	1085	sommes
-211	55	965	porté
-211	56	1186	Dans
-211	57	966	le
-211	58	411	ca	continues "ca"+"m"+"p" = "camp"
-211	59	108	m
-211	60	396	p
-211	61	456	rc	could plausibly be "re" (cursive e/c easily confused here); combined with the next row's "tra n ché" would read "retranché" ("camp retranché", entrenched camp, a coherent military phrase), but transcribed literally as it appears
-211	62	235	tra
-211	63	99	n
-211	64	1137	ché	digit trio after "1" is hard to read, compared against leaf 210's clean-copy slip which shows 1137 at this position (an interlinear glyph that could also be read 1197 elsewhere in the document)
-211	65	508	Destiné
-211	66	545	pour
-211	67	850	cela
-211	68	225	de	repeat of code 225 (also used earlier for the gloss "de"), consistent with a nomenclator reusing the same code for the same short word
-211	69	893	puis
-211	70	339	Six
-211	71	840	mois
-211	72	1197	[illegible]	gloss word struck through/crossed out, illegible under the cancellation
-211	73	900	ils
-212	74	190	est
-212	75	394	pro
-212	76	980	ba
-212	77	697	ble
-212	78	1146	que
-212	79	938	Dans	repeat of code 938, used earlier for the gloss "it"
-212	80	1180	quelques
-212	81	762	jours
-212	82	191	une	digit could be read as 131; leaf 210's clean-copy slip shows 131 at the corresponding position in its sequence
-212	83	819	affaire
-212	84	841	de
-212	85	244	à
-212	86	1541	si	digit could be read as 1041 (5 vs 0 in the second position); leaf 210's clean-copy slip shows 1041 at the corresponding position
-212	87	363	ve
-212	88	13	au
-212	89	299	ra	continues "au"+"ra" = "aura"
-212	90	738	lieu
-212	91	990	.	code glossed with a period/full stop mark rather than a word
-212	92	420	fin	code is heavily corrected/overwritten in the manuscript (retraced digits, final 0 crossed/slashed); leaf 210's clean-copy slip shows 420 clearly
-212	93	204	Batavia
-212	94	241	7
-212	95	547	aoust	repeat of code 547, used earlier for the gloss "aoust"
+500	1	782	une	also appears identically at the top of leaf 211 (repeated heading of the message)
+500	2	597	expedition	
+500	3	1128	ennemie	
+500	4	1135	forte	digit 5 written in the scribe's long-s-like numeral form, read as ordinary 5
+500	5	564	de	
+500	6	1	Soixante	"codes for this row are also visible on leaf 210, but the gloss there is hidden under the pasted clean-copy slip, so gloss taken from leaf 211; low code ""1"" may be a sentence/line marker rather than a normal word-code"
+500	7	454	et	
+500	8	427	onze	
+500	9	1185	Voiles	
+500	10	190	en	
+500	11	568	ar	"word cut short with a trailing dash after ""ar"", likely abbreviation for ""armement"""
+500	12	976	ri	"continues ""ar"" + ""ri"" + ""ve"" + ""e"" = ""arrivée"""
+500	13	363	ve	
+500	14	472	e	
+500	15	689	le	
+500	16	997	quatre	
+500	17	547	aoust	
+500	18	314	devant	first digit hard to read on this leaf (could look like 2 or 9 followed by 1,1); leaf 210's clean-copy slip shows this digit unambiguously as 314, used here
+500	19	264	la	
+500	20	554	Rade	
+500	21	930	et	
+500	22	570	Debargue	
+500	23	142	les	
+500	24	590	Troupes	
+500	25	1090	a	
+500	26	444	L'	
+500	27	190	est	
+500	28	564	de	
+500	29	739	La	digit could be read as 729; leaf 210's clean-copy slip clearly shows 739, used here
+500	30	700	Ville	
+500	31	692	ß	"gloss symbol unclear, resembles a cursive ""ß"" or a flourish/abbreviation mark rather than a standard letter"
+500	32	1145	nous	
+500	33	1150	avons	
+500	34	140	dé	
+500	35	29	tru	
+500	36	938	it	"word hard to read, could be ""in""; digit partly obscured by an ink blot, read against leaf 210's clean-copy slip (938)"
+500	37	1018	nou	"word trails into an unclear flourish, possibly ""nous"" or ""notre""; digit itself obscured by a heavy ink blot on this leaf, read as 1018 against leaf 210's clean-copy slip"
+500	38	835	ma	word has trailing dots after it, possibly indicating an abbreviation or just descender ink
+500	39	1001	ga	"continues ""ma""+""ga""+""zi""+""ns"" = ""magazins"" (magasins)"
+500	40	303	zi	
+500	41	748	ns	code written in noticeably bolder/darker ink than the surrounding codes, on both this leaf and the leaf-210 clean-copy slip
+500	42	225	de	
+500	43	1132	Su	"continues ""Su""+""cre"" = ""Sucre"" on the next row"
+500	44	905	cre	
+500	45	411	ca	"continues ""ca""+""fé"" = ""café"""
+500	46	624	fé	
+500	47	516	et	
+500	48	1074	po	
+500	49	904	ï	"gloss written as ""ï"" (i with two dots), not obviously completing a word with the following row's ""vr"""
+500	50	304	vr	gloss word preceded by an X-shaped mark, possibly a caret/insertion or correction mark
+500	51	1190	a	
+500	52	930	et	
+500	53	384	nous	
+500	54	1085	sommes	
+500	55	965	porté	
+500	56	1186	Dans	
+500	57	966	le	
+500	58	411	ca	"continues ""ca""+""m""+""p"" = ""camp"""
+500	59	108	m	
+500	60	396	p	
+500	61	456	rc	"could plausibly be ""re"" (cursive e/c easily confused here); combined with the next row's ""tra n ché"" would read ""retranché"" (""camp retranché"", entrenched camp, a coherent military phrase), but transcribed literally as it appears"
+500	62	235	tra	
+500	63	99	n	
+500	64	1137	ché	"digit trio after ""1"" is hard to read, compared against leaf 210's clean-copy slip which shows 1137 at this position (an interlinear glyph that could also be read 1197 elsewhere in the document)"
+500	65	508	Destiné	
+500	66	545	pour	
+500	67	850	cela	
+500	68	225	de	"repeat of code 225 (also used earlier for the gloss ""de""), consistent with a nomenclator reusing the same code for the same short word"
+500	69	893	puis	
+500	70	339	Six	
+500	71	840	mois	
+500	72	1197	[illegible]	gloss word struck through/crossed out, illegible under the cancellation
+500	73	900	ils	
+500	74	190	est	
+500	75	394	pro	
+500	76	980	ba	
+500	77	697	ble	
+500	78	1146	que	
+500	79	938	Dans	"repeat of code 938, used earlier for the gloss ""it"""
+500	80	1180	quelques	
+500	81	762	jours	
+500	82	191	une	digit could be read as 131; leaf 210's clean-copy slip shows 131 at the corresponding position in its sequence
+500	83	819	affaire	
+500	84	841	de	
+500	85	244	à	
+500	86	1541	si	digit could be read as 1041 (5 vs 0 in the second position); leaf 210's clean-copy slip shows 1041 at the corresponding position
+500	87	363	ve	
+500	88	13	au	
+500	89	299	ra	"continues ""au""+""ra"" = ""aura"""
+500	90	738	lieu	
+500	91	990	.	code glossed with a period/full stop mark rather than a word
+500	92	420	fin	code is heavily corrected/overwritten in the manuscript (retraced digits, final 0 crossed/slashed); leaf 210's clean-copy slip shows 420 clearly
+500	93	204	Batavia	
+500	94	241	7	
+500	95	547	aoust	"repeat of code 547, used earlier for the gloss ""aoust"""

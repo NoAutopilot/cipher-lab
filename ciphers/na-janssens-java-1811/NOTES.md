@@ -429,5 +429,62 @@ different decipherment (code+gloss table, ending "3 Août. Signé Vanteau" on le
 not Janssens, not transcribed this pass (out of this job's scope), flagged here as a lead.
 
 Two blind Sonnet subagent transcription passes of the No.5 interlinear decipherment + pasted clean-copy slip
-were launched (`keysource_no5_passA/B.tsv`, `no5_cleancopy_passA/B.tsv`); reconciliation, key.tsv merge,
-redecode of leaf 188, judge re-run and fresh-instance re-derivation of the newly added codes follow below.
+were launched (`keysource_no5_passA/B.tsv`, `no5_cleancopy_passA/B.tsv`). Both independently corrected this
+worker's own framing: the pasted clean-copy slip physically sits on the leaf whose scan order is 210 (not 211
+as first guessed from the thumbnail), and the interlinear decipherment runs continuously from leaf 210's first
+couple of rows through leaf 211 (uninterrupted) to leaf 212's signature -- both passes agree with each other on
+this correction even though they split the 95-code sequence across the three leaf-images differently row for
+row, which is why the two pass TSVs were reconciled as ONE continuous 95-code sequence (synthetic id `no5`,
+shown as `no5(210-212)` in key.tsv/conflicts.tsv) rather than per-leaf: aligning by leaf label would have
+compared pass A's 5-row "leaf 210" against pass B's 17-row "leaf 210" and manufactured false disagreements from
+a page-boundary artefact, not a reading difference.
+
+### Key merge and redecode
+
+`combined_passA.tsv`/`combined_passB.tsv` = the existing No.2/No.3 passes + the new No.5 passes, reconciled by
+the same `scripts/build_key.py` (sequence-aligned per leaf, unchanged logic):
+
+```
+aligned code positions: 541  agree: 509  disagree: 32  agreement: 94.1%
+codes only one pass saw (sequence gap): 29
+unique codes: 202  clean (single gloss): 208  conflicting: 17
+```
+
+`key.tsv` grew from **167 codes to 208** (+41 net new/reconfirmed codes from the No.5 material; some No.5 codes
+duplicate No.2/No.3 codes and independently cross-validate them -- e.g. code 190, already a known M-graded
+"est"/"en" homophone, gets 2 more clean "en" readings from No.5, shifting the majority value from "est" to
+"en"). `conflicts.tsv` grew from 13 to 17 M-graded codes (four new: 99 "n'"/"n", 624 "fe"/"fé", 997 "4"/"quatre"
+digit-vs-spelled-out, 1150 "avoir"/"avons").
+
+Leaf 188 redecoded (`tools/decode_key.py`): **163 tokens, C 49, M 22, U 92** (was C 44, M 21, U 98) -- coverage
+rises from 65/163 (39.9%) to **71/163 (43.6%)**, a real but modest gain (dispatch No.1's vocabulary still
+mostly doesn't overlap with No.2/No.3/No.5's). New readable fragments include line 7 "...qu'il [?] [?] le
+débarquer [?] [?] [?] Le seules" (echoes No.5's own "débarqua les troupes") and line 12 "...tous [?] [?]
+l'ennemie" (echoes No.5's "expédition ennemie").
+
+`tools/judge_plaintext.py specs/na-janssens-java-1811.json --file reading.txt`:
+```
+FAIL language: score=-1.45, null_p99=-1.871, real_p05=-0.877, real_median=-0.779, mode=both, N=508
+ok   words: cover=0.803, min=0.3, real_text_median_cover=0.947
+FAIL - na-janssens-java-1811 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Reported as a **FAIL** per rule 7, same as before the merge (still 56.4% gap tokens breaking the n-gram
+stream) -- word coverage improves 0.791 -> 0.803. This is still a partial cryptanalytic-adjacent decode, not a
+solved reading. Leaf 188 ("Numero Un") itself has **no decipherment found anywhere in this pass's sweep**, so
+it is still the reading target, not a control, per the brief's own framing.
+
+### Not done this pass (time-box, one line each)
+
+- **Fresh-instance re-derivation of the newly added No.5 codes** (rule 7, named in the brief's step 3) was not
+  run -- the two transcription subagents plus the merge took most of the 45-minute box; a successor should run
+  one fresh-instance subagent against `no5_cleancopy_passA.tsv`'s underlying images only (or re-crop) before
+  any of the No.5-sourced codes are relied on for a claimed reading elsewhere.
+- **Cross-check the No.5 raw-cipher slip's own decode against `no5_plaintext.txt`** (the independent plain
+  fair copy on leaf 214) was not run -- decoding `no5_cleancopy_passA/B.tsv`'s 95 codes through the merged
+  `key.tsv` and diffing against `no5_plaintext.txt` word-for-word would be a strong, genuinely independent
+  control on the whole key (not a same-decipherment self-check like the No.2/No.3 controls), and is cheap
+  (no network, everything already on disk) -- named here as the highest-value next step.
+- Leaf 208's left-page decipherment tail (signed "Vanteau", not Janssens, ending leaf 209) was not transcribed
+  -- a different correspondent/decipherer, out of this job's scope, flagged as a lead.
+- Leaves 1-179 and 218-233 remain only sparsely sampled; a further densified or exhaustive pass could still
+  find a "Numero Un" decipherment or more key material.

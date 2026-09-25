@@ -1,22 +1,23 @@
 # NA 2.01.27.05 invnr 12, leaf 188 ('Numero Un. Triplicata'), Janssens (Java) to the
-# Minister, dispatch No.1. Decoded against key.tsv (VX-RD02, 25 Sept 2026), built from
-# the bundle's own contemporary decipherment of dispatches No.2 (leaves 190-192) and
-# No.3 (leaves 199-200) -- a period decipherment of OTHER text in the same bundle, so
-# every keyed token grades C (rule 4); M where key.tsv itself flags the code ambiguous
-# or single-pass-only; [?] = code never seen in the key source.
-# tokens 163: H 0, C 44, S 0, M 21, I 0, U 98
+# Minister, dispatch No.1. Decoded against key.tsv (VX-RD02, 25 Sept 2026; extended
+# VX-RD02B, 25 Sept 2026), built from the bundle's own contemporary decipherment of
+# dispatches No.2 (leaves 190-192), No.3 (leaves 199-200) and No.5 (leaves 210-212,
+# 'no5' in key.tsv's pages column) -- a period decipherment of OTHER text in the same
+# bundle, so every keyed token grades C (rule 4); M where key.tsv itself flags the code
+# ambiguous or single-pass-only; [?] = code never seen in the key source.
+# tokens 163: H 0, C 49, S 0, M 22, I 0, U 92
 1	[79] [441] [497] [853] [1121] l' état [130] [1173] [573] [1027]
-2	de [1024] [403] est . [364] [456] [551] Sont e puis
-3	[1014] ; l' [984] n' [1021] [1039] [456] [1146] peu de
-4	[176] . [156] les [585] [748] [125] A [206] [1137] [899]
+2	de [1024] [403] en . [364] [456] [551] Sont e puis
+3	[1014] ; l' [984] n' [1021] [1039] [456] que peu de
+4	[176] . [156] les [585] [748] [125] A [206] ché [899]
 5	la De [1126] [882] le [50] [270] [708] de l' [987] r
-6	[627] [493] [403] [550] reçu ; il [333] [628] [306] [1146] [364]
-7	[453] [901] qu'il [719] [1136] le débarquer [443] [3] [270] de seules
-8	[535] [449] de leur mal . [1041] [904] [110] ai le [929]
+6	[627] [493] [403] [550] reçu ; il [333] [628] [306] que [364]
+7	[453] [901] qu'il [719] [1136] le débarquer [443] [3] [270] Le seules
+8	[535] [449] de leur mal . si [904] [110] ai le [929]
 9	[904] [824] [1121] [449] [467] les [375] [757] les a [206]
 10	C. [462] [23] ât [983] . [1160] [79] [441] [497] part chargent
 11	de [125] [1065] et de la mal [236] [72] [1169] [1095]
 12	[442] . [156] [443] [62] [645] [335] tous [881] [476] l' ennemie
-13	[457] [344] un [305] . des [590] [350] [130] [984] ages
+13	[457] [344] un [305] . des Troupes [350] [130] [984] ages
 14	[443] [164] ar ri vé a [929] peu vent [514] er
-15	[585] . [420]
+15	[585] . fin

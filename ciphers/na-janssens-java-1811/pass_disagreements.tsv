@@ -19,3 +19,15 @@ leaf	order	codeA	glossA	noteA	codeB	glossB	noteB
 200	102	1128	ennemi		1128	ennemie	
 200	112	1190	e	uncertain	1190	a	
 200	113	190	on	uncertain	190	en	
+no5(210-212)	2	597	expedition		597	expédition	
+no5(210-212)	13	363	ve		363	vé	
+no5(210-212)	17	547	aoust		547	aout,	comma written after word in ms
+no5(210-212)	22	570	Debargue		570	débarqua	
+no5(210-212)	25	1090	a		1090	à	
+no5(210-212)	31	692	ß	"gloss symbol unclear, resembles a cursive ""ß"" or a flourish/abbreviation mark rather than a standard letter"	692	&	"gloss is a scrawled ampersand-like mark (looks like a slashed ""3""/""ß""); could instead be a paraph or ""et"" shorthand"
+no5(210-212)	37	1018	nou	"word trails into an unclear flourish, possibly ""nous"" or ""notre""; digit itself obscured by a heavy ink blot on this leaf, read as 1018 against leaf 210's clean-copy slip"	1018	nos	"gloss cursive, reads ""nos"" with large terminal loop"
+no5(210-212)	41	748	ns	code written in noticeably bolder/darker ink than the surrounding codes, on both this leaf and the leaf-210 clean-copy slip	748	ins	written in bold/reinforced ink in both this leaf and the slip
+no5(210-212)	49	904	ï	"gloss written as ""ï"" (i with two dots), not obviously completing a word with the following row's ""vr"""	904	î	"accent mark ambiguous (looks like two dots, dieresis or stray ink); read as ""î""/""i"""
+no5(210-212)	51	1190	a		1190	e	"completes ""po-î-vr-e"" = likely ""poivre"""
+no5(210-212)	61	456	rc	"could plausibly be ""re"" (cursive e/c easily confused here); combined with the next row's ""tra n ché"" would read ""retranché"" (""camp retranché"", entrenched camp, a coherent military phrase), but transcribed literally as it appears"	456	re	"glyph looks like ""rc""; read as ""re"", continues into next word ""retranché"""
+no5(210-212)	85	244	à		244	ci	

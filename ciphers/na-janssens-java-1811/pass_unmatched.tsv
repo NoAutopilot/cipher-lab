@@ -22,3 +22,9 @@ leaf	order	pass	code	gloss	note
 200	60	B	844		crossed-out
 200	62	A	617		crossed-out
 200	62	B	647		crossed-out
+no5(210-212)	79	A	938	Dans	"repeat of code 938, used earlier for the gloss ""it"""
+no5(210-212)	79	B	338	dans	"digit's first two loops resemble ""9"" but slip copy confirms ""338"""
+no5(210-212)	82	A	191	une	digit could be read as 131; leaf 210's clean-copy slip shows 131 at the corresponding position in its sequence
+no5(210-212)	82	B	131	une	middle digit ambiguous, could be read 9 (=191/931) rather than 3 (=131) in this cursive hand; slip copy leans 131
+no5(210-212)	86	A	1541	si	digit could be read as 1041 (5 vs 0 in the second position); leaf 210's clean-copy slip shows 1041 at the corresponding position
+no5(210-212)	86	B	1041	si	
