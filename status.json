@@ -1,5 +1,5 @@
 {
- "updated": "25 Sep 2026 02:40 UTC",
+ "updated": "25 Sep 2026 03:55 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -617,6 +617,14 @@
  ],
  "log": [
   {
+   "when": "25 Sep, 03:32",
+   "what": "Van Beuningen 1657: verifier classes the key and decipherment of the cipher copy N3; the letter's text is N1 (printed 1919, whose footnote calls the cipher unsolved)."
+  },
+  {
+   "when": "25 Sep, 03:10",
+   "what": "Lane LX closed on its handoff; the Linhares second opinion is queued for the ChatGPT runner."
+  },
+  {
    "when": "25 Sep, 02:04",
    "what": "Linhares: separate verifier writes AUDIT.md, both the m0002 reading and the Vieyra 1809 identification N3 (no prior print or decipherment located)."
   },
@@ -1024,10 +1032,18 @@
   },
   {
    "date": "25 Sept 2026",
-   "kind": "recovery",
-   "title": "Van Beuningen to De Witt, 1657: cipher copy found beside its plain copy; key recovery under way",
-   "grade": "partial key (plaintext in print)",
-   "line": "Nationaal Archief 3.01.17 inv.nr 1538 holds both the plain copy (ff.208-209) and the cipher copy (ff.210-211) of the 19/29 Sept 1657 letter printed in Brieven aan Johan de Witt I pp.405-406. The cipher copy is transcribed (862 tokens) and a closed nomenclator is being rebuilt from the pair. The text is already known, so this is a key for others, not a new reading.",
+   "kind": "negative",
+   "title": "Paget from Genoa, 1714: first cryptanalytic attempt negative with a matched control",
+   "grade": "negative with controls",
+   "line": "Both Paget letters (Clairambault 1225 ff.60-66) are transcribed: 500 cipher tokens, 122 codes, one key. A crib attack from the four interlinear glosses failed against its control; one more attempt is allowed before the target closes.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clairambault1225-paget-1714"
+  },
+  {
+   "date": "25 Sept 2026",
+   "kind": "contribution",
+   "title": "Van Beuningen to De Witt, 1657: the cipher copy the 1919 edition called 'unsolved' now has a key",
+   "grade": "key/decipherment N3; letter text N1 (in print); C 446 of 517 coded tokens",
+   "line": "Nationaal Archief 3.01.17 inv.nr 1538 holds the plain copy (ff.208-209) and the cipher copy (ff.210-211) of the 19/29 Sept 1657 letter printed in Brieven aan Johan de Witt I (1919) pp.405-406, whose footnote calls the cipher 'onopgelost'. Aligning the pair rebuilt 53 codes; a fresh re-derivation agrees on every code it found evidence for. A separate verifier classes the key N3; the letter's text is N1, since it is already printed. Named gap: Postma's 2006 dissertation on this correspondence was not reachable.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/vanbeuningen-dewitt-1657"
   },
   {
@@ -1754,13 +1770,13 @@
  "lanes": [
   {
    "name": "Lane LX, Linhares dictionary code",
-   "live": 1,
-   "focus": "book identified (Vieyra 1809 Part I); m0002 reads 25/26 at H; verifier N3; next: AUDIT.md synced to the corrected token, the ChatGPT second-opinion prompt, maço 86 sibling search (15 of 21 items checked, no more cipher yet)"
+   "live": 0,
+   "focus": "closed on handoff 03:10: book Vieyra 1809 Part I (12/12), m0002 H 25 M 1, AUDIT N3/N3, SO-LINHARES-M0002 queued for the ChatGPT runner; maço 86 sibling sweep 17 of 21 items, no further cipher"
   },
   {
    "name": "Lane OX, orphaned open targets",
    "live": 1,
-   "focus": "triage of twelve done; van Beuningen 1657 key recovery from its plain copy; Willem van Hessen 1567 sibling carries an interlinear decipherment; Paget 1714 two letters in transcription; Hellen 1752 decipherment series; Vaudemont and Breda found-solved"
+   "focus": "van Beuningen 1657 key N3 (letter text N1); Paget 1714 attempt 1 negative with control; Willem van Hessen 1069 transcription under the 60% gate; La Garde 1577 editions do not decipher it; Hellen 1752 waits on DECODE images; Vaudemont and Breda found-solved"
   },
   {
    "name": "Lane DX, DECODE",
