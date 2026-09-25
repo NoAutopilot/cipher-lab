@@ -1,0 +1,23 @@
+{
+  "fetched": "25 Sept 2026",
+  "worker": "OX-LAG",
+  "host": "resources.huygens.knaw.nl",
+  "source_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=6467",
+  "files": [
+    {
+      "file": "6467_GSME.pdf",
+      "url": "https://resources.huygens.knaw.nl/media/wvo/images/edities/GSME/06467_ed.pdf",
+      "pages": 3,
+      "text_extract": "6467_GSME.txt",
+      "edition": "Gerlo, Aloïs, en Rudolf De Smet, eds. Marnixi Epistulae. De briefwisseling van Marnix van Sint-Aldegonde. Een kritische uitgave. 3 dln. (Brussel 1990-1996). Deel II, p. 133-135, nr. 97."
+    },
+    {
+      "file": "6467_LMSAC.pdf",
+      "url": "https://resources.huygens.knaw.nl/media/wvo/images/edities/LMSAC/06467_ed.pdf",
+      "pages": 2,
+      "text_extract": "6467_LMSAC.txt",
+      "edition": "Marnix de Sainte Aldegonde, Ph., Correspondance et mélanges... Précédés d'une introduction par Alb. Lacroix (Paris-Bruxelles-Genève 1860), p. 241-242."
+    }
+  ],
+  "note": "Both PDFs are OCR'd scans of the printed editions (not born-digital); text extracted with PyMuPDF, not corrected beyond what is quoted in NOTES.md. Text extraction used, not image capture, since both are typeset print (rule 2 applies to the manuscript image, already captured separately as images/06467_p2.png)."
+}

@@ -326,3 +326,93 @@ just those lines; none of the 9 changes the negative result's shape (they are si
 lines that already read no better than gibberish either way). Novelty not classified (not this brief's job).
 
 Requests: none (offline, no network, per brief). Cost: well under $4 cap.
+
+## OX-LAG: print check of 6467's cited editions (25 September 2026, LANE OX worker, Sonnet, $4 cap, no subagents)
+
+**Job:** check whether the two printed editions WVO cites for **6467** (Marnix to Willem van Oranje, 2 Nov 1577 --
+the letter with the WVO-noted "oplossing in de marge", margin solution, beside its first cipher run) print a key,
+a decipherment, or a plaintext crib for 6179's or 6467's own cipher passages, and re-confirm Groen VI 249-251 for
+6179.
+
+**Fetched** (`editions/manifest.json`, both PDFs + PyMuPDF text extracts saved to `editions/`):
+- **GSME**: Gerlo, Aloïs, en Rudolf De Smet, eds., *Marnixi Epistulae* (Brussel 1990-1996), II, 133-135, nr. 97.
+  `resources.huygens.knaw.nl/media/wvo/images/edities/GSME/06467_ed.pdf` (3pp, OCR'd scan).
+- **LMSAC**: Marnix de Sainte Aldegonde, Ph., *Correspondance et mélanges*, ed. Lacroix (Paris-Bruxelles-Genève
+  1860), pp. 241-242. `resources.huygens.knaw.nl/media/wvo/images/edities/LMSAC/06467_ed.pdf` (2pp, OCR'd scan).
+- Also confirmed in the 6467 record itself: a third citation, Groen van Prinsterer, *Archives d'Orange-Nassau*
+  VI, 219-221 nr. DCCLXXVIII -- **this is 6467's own Groen citation, a different page range from 6179's** (VI,
+  249-251, Lettre DCCLXXXIX, already read directly by the 24 Sept check-solved sweep above). Not re-fetched
+  this pass (no PDF link offered on the 6467 record page for this edition; GSME/LMSAC already answer the
+  question for 6467, and DBNL/Groen VI for 6179 was already read directly and quoted with its own footnote by
+  that sweep -- re-fetching would duplicate a already-settled, directly-quoted finding on a host another
+  lane (LANE V2) has used for this same volume).
+
+**What each prints for 6467's cipher passages.** Both editions print the letter's clear French text
+continuously around the cipher; **neither deciphers either passage**:
+- **GSME reproduces the raw cipher digit-groups in running text**, unlike a decipherment: `"Si on pouvoit
+  justifier le faict de Gand, 7.8.2.11.10.14.14.12.9.3. $.4.14.4.8.15.2.4.$. 11.4.3.9.2.17.5.11 ce seroit un
+  grand poinct, car j'entends que ce que V[ostre] E[xcellence] a veu n'est pas autentique et que 10.8.2.10.
+  5.7.9.$.4.10.8.9.$*.4.7.1.3.12."` (`editions/6467_GSME.txt`). Its footnote apparatus glosses the surrounding
+  *history*, not the cipher: `"17 Ie faict de Gand] De arrestatie van Aarschot en zijn aanhang."` (the arrest of
+  the Duke of Aarschot and his following) -- a content note, not a key. No footnote anywhere in the 3pp
+  addresses the numerals themselves, and none reproduces or mentions a marginal annotation.
+- **LMSAC gives clear text only, and treats the two cipher runs inconsistently**: the *first* run is dropped
+  silently with no mark at all -- its text reads straight through, `"...ny contentement. Si on pouvoit
+  justifier le faict de Gand, ce seroit un grand poinct, car j'entends que ce que V. Exc. a veu n'est pas
+  autenticque et que"` -- while the *second* run is marked with an ellipsis and an editorial footnote:
+  `"....... ..(l)."` ... `"(1) Ce passage est en chiffres"` (this passage is in cipher) (`editions/6467_LMSAC.txt`).
+  Same pattern as Groen VI on 6179 (cipher passages omitted from print), but LMSAC does not even flag the first
+  omission as a lacuna.
+
+**Correction to this file's own margin-note reading.** R15's section above transcribed a note beside 6467 run 1
+as *"Justiffier le faict du grand"* and treated it as a short marginal gloss. Both print editions independently
+agree the letter's own **running main-text clause** immediately before run 1 reads **"justifier le faict de
+Gand"** (the Ghent/Aarschot affair, per GSME's footnote), not "du grand" -- R15's read of "du grand" is very
+likely that same main-text clause read with two letters confused ("de Gand" / "du grand" look similar
+abbreviated), not a distinct annotation. This does **not** resolve WVO's own claim of a genuine marginal
+solution (Opmerkingen: *"waarvan de eerste met oplossing in de marge"*, of which the first passage has a
+solution in the margin) -- neither edition reproduces or mentions any marginal annotation at all, so if one
+exists it is manuscript-only, still unconfirmed by any worker on this target, and remains the one live lead
+here (see "left for whoever picks this up" below).
+
+**Transcription cross-check (a side-value of this print check, not itself a decode).** GSME's digit sequence
+lines up almost exactly, position for position, against this file's own reconciled `ciphertext_6467_v2.tsv`,
+once GSME's `$`/`$*` placeholder (used where GSME's typesetter had no glyph) is read against this file's `07`/
+`[mark]` notation for the same recurring flourish:
+- **Run 1** (27 signs): GSME `7 8 2 11 10 [14] 14 12 9 3 $ 4 14 4 8 [15] 2 4 $ 11 4 3 9 2 17 5 11` vs v2's base
+  digits (p2L6+p2L7+p2L8) `7 8 2 11 10 [19] 14 12 9 3 07 4 14 4 8 [11] 2 4 07 11 4 3 9 2 17 5 11` -- 25 of 27
+  agree exactly, including both `$`=`07` positions. Two new mismatches, **not previously flagged as disputed**
+  (both currently graded H in v2): position 6 (v2 `19`/p2L6 pos6 vs GSME `14`) and position 16 (v2 `11`/p2L7
+  pos7 vs GSME `15`). One existing internal dispute is resolved toward the file's own current reading: p2L7
+  pos12 (`4`, alt `B:24`) -- GSME agrees `4`.
+- **Run 2** (18 signs, dropping the free-standing `[mark]` row p2L11 pos8 which has no numeral counterpart):
+  GSME `10 8 2 10 5 7 9 $ 4 10 8 9 $* 4 7 1 3 12` vs v2 (p2L10+p2L11) `10 8 2 10 5 7 9 07 4 10 8 9 07[mark] 4 7 1
+  5 12` -- **every position agrees**, including the asterisked `$*`/`07`+`[mark]` position (13th), which both
+  witnesses independently flag as unusual. One existing internal dispute is resolved **away from** the file's
+  current primary reading: p2L11 pos12 currently reads `5^` (alt `B:3^`) -- GSME agrees with the alternate,
+  `3^`, not the committed `5^`.
+- Not acted on in `ciphertext_6467_v2.tsv` itself (out of this print-check brief's scope -- a transcription
+  reconciliation call, not a print check): the file is left as L4 wrote it. A future transcription pass should
+  weigh GSME as a third independent witness at these four positions (two now-resolved disputes, two new
+  mismatches) before any further solver rerun; GSME's own text is an OCR'd scan of a 1990s scholarly edition,
+  not itself infallible, so this is evidence to weigh, not an automatic overwrite.
+
+**Groen VI 249-251 (6179, re-confirmed, not re-fetched).** Stands as the check-solved sweep above already
+found and quoted: the printed edition's gaps are explicitly captioned *"Les lacunes sont occasionnées par des
+passages chiffrés"* -- 6179's own cipher passages are omitted from print, not deciphered.
+
+**Verdict (per the brief's three options): (c) neither.** No key or decipherment of this cipher family is
+printed in GSME, LMSAC, or Groen VI; no plaintext crib for either passage's own enciphered words exists in any
+of the three. All three print or gloss the clear text *around* the cipher, never through it. This is a
+negative for the print-check route on 6467 and reconfirms the existing negative on 6179's own edition.
+
+**Left for whoever picks this up:** (1) the manuscript margin beside 6467 run 1 (`images/06467_p2.png`) is the
+one remaining lead in this record -- WVO's own field says a solution sits there, and no worker has yet
+confirmed by eye whether it is a real word-for-word decipherment (as opposed to R15's likely misreading of the
+adjacent main-text clause, corrected above); a focused native-resolution crop of just that margin, not the
+full page, is the cheap next test. (2) Weigh the four GSME cross-check positions above into
+`ciphertext_6467_v2.tsv` on the next reconciliation pass. Novelty not classified (not this brief's job).
+
+Requests: resources.huygens.knaw.nl 3 (1 record page `brief?nr=6467`, 2 PDF fetches, all ≥1.5s apart). No other
+hosts touched (archive.org and www.googleapis.com, listed as possible hosts in the brief, were not needed once
+GSME/LMSAC answered the question directly). No subagents. Cost well under $4 cap.
