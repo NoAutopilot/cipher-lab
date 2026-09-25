@@ -1,5 +1,5 @@
 {
- "updated": "25 Sep 2026 15:40 UTC",
+ "updated": "25 Sept 2026, 15:55 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -616,6 +616,10 @@
   }
  ],
  "log": [
+  {
+   "when": "25 Sep, 15:45",
+   "what": "Usage restored on both accounts. Other account opens R6, V6, B2 and takes the Linhares judge re-run; owner account opens ZX and CX2 on work that does not overlap."
+  },
   {
    "when": "25 Sep, 13:55",
    "what": "Seven-day window at allowed_warning: YX and CX close, no new workers until about 05:00 UTC 26 Sept. Linhares stays held: judge calibration inconclusive (verdict C); judge bug that scored comment headers fixed."
@@ -1851,6 +1855,41 @@
  ],
  "lanes": [
   {
+   "name": "Lane ZX, three partial targets (owner account)",
+   "live": 0,
+   "focus": "opened 15:43: the Brochado letterbook passage (image checks on the entries that drag its control, then letter 134), Clair 349 Este-Guise 1556 (shared-atlas re-pass of the ciphertext), Barriere 1654 (permutation test on the gloss positions)"
+  },
+  {
+   "name": "Lane CX2, check-solved round 2 (owner account)",
+   "live": 0,
+   "focus": "opened 15:43: formal checks for an existing decipherment on the print-check campaigns (SP 35, 54, 87, 90; Karl XI) and the remaining gate failures; passing targets go to the other account's R6"
+  },
+  {
+   "name": "Lane R6, recovery (other account)",
+   "live": 0,
+   "focus": "opened 15:39 by parent 7b: Salviati leaves f.55v-f.57v, then the 13 gate-passing targets from CX's sweep, cheapest route first"
+  },
+  {
+   "name": "Lane V6, verification (other account)",
+   "live": 0,
+   "focus": "opened 15:39 by parent 7b: Portuguese 1780-1830 judge corpus and the Linhares re-run (a clean PASS with its control brings Linhares back), verifier for the Digby found-solved, verifiers for any new reading, a rolling QA every two hours"
+  },
+  {
+   "name": "Lane B2, breadth (other account)",
+   "live": 0,
+   "focus": "opened 15:39 by parent 7b: first cheap test per public-list spec (Harry-Caroline 1863, Lima 1916, Moustier, Debosnys, Kaliningrad, Powers, Dorabella), matched controls"
+  },
+  {
+   "name": "Lane YX, left-open targets",
+   "live": 0,
+   "focus": "closed 13:34: Brochado letter 134 FAILs the Portuguese judge; Barriere negative re-reported on two passes; Clair 349 key transcribed; Wellington: library copies only; 99 targets triaged"
+  },
+  {
+   "name": "Lane CX, check-solved sweep",
+   "live": 0,
+   "focus": "closed 12:56: 21 targets checked, 13 pass the intake gate (now with R6), 3 blocked on your machine (L8, L9, L13/L14), 1 found-solved (Digby = Wheatstone 1862, verifier with V6)"
+  },
+  {
    "name": "Lane R6, recovery and deep work (7b)",
    "live": 1,
    "focus": "started 15:39: Salviati f.55v to f.57v then the code-and-mark run; YX's 13 gate-passing targets by lead class; PP-04 Costa Cabral 1865"
@@ -1864,16 +1903,6 @@
    "name": "Lane B2, breadth (7b)",
    "live": 1,
    "focus": "started 15:39: first cheap test per remaining spec at $3, next tests where a spec moved, ten more specs from the survey"
-  },
-  {
-   "name": "Lane YX, left-open targets",
-   "live": 0,
-   "focus": "closed 13:34 on the seven-day allowed_warning (no new workers anywhere): Brochado letter 134 FAILs the Portuguese judge (no reading); Barriere 1654 negative re-reported on two reconciled passes (30.0 vs control 31.1); Clair 349 key transcribed, ciphertext held under the 60% gate; Wellington dictionary: library copies only; Baluze 156 second Sabran key negative with control"
-  },
-  {
-   "name": "Lane CX, check-solved sweep",
-   "live": 0,
-   "focus": "closed 12:56: 21 targets given a formal check-solved; 13 now pass the intake gate (handed to YX), 3 blocked on your machine (L8, L9, L13/L14), 4 partial, 1 found-solved (bl-charles-digby = Wheatstone 1862)"
   },
   {
    "name": "Lane VX, key beside the letter",
@@ -1921,7 +1950,7 @@
    "focus": "hall of fame view live from CITATIONS.md: one public citation (Cryptiana, 24 Sept 2026) and the pending replies list"
   }
  ],
- "headline": "25 Sept 2026: the other account's day produced 13 board entries at N3 or better after two audits (17 letters), 4 with our own key; parent 7b's lanes of 24 Sept died on the weekly limit without handoffs and are being closed on the record. Usage is clear on this account: LANE R6 (Salviati and the 13 gate-passing targets), LANE V6 (judge corpus, verifiers, rolling QA) and LANE B2 (breadth) restarted at 15:39 under the lessons of 25 Sept.",
+ "headline": "25 Sept, 15:55 UTC: 17 letters (12 board entries) at N3 or better after two audits, 3 with our own key: Orange to August of Saxony 1561 (WVO 53, pure cryptanalysis), the van Beuningen 1657 key and Jan van Nassau's cipher lines of 17 Apr 1574 (WVO 5551). Linhares (our key) is held out until the Portuguese language judge, re-run on a corpus of its own period, passes it with a control. Both accounts are live again: the other account's parent runs R6 (Salviati and the 13 gate-passing targets), V6 (the Linhares judge re-run, verifiers, rolling QA) and B2 (breadth); the owner account runs ZX (Brochado, Clair 349, Barriere) and CX2 (check-solved round 2). The ChatGPT second-opinion runner is live; three prompts are queued.",
  "sidequests": [
   {
    "title": "Grants applications",
