@@ -397,3 +397,107 @@ line	pos	code	marks	action	conf	note
 15	22	nt		confirm	H	
 15	23	bh		confirm	H	
 15	24	w		confirm	M	share only 0.60 but shape clearly matches w
+16	1	_		confirm	H	
+16	2	lam		confirm	H	
+16	3	_		confirm	H	
+16	4	bh		confirm	H	
+16	5	sq	ot	confirm	H	
+16	6	wd		confirm	H	
+16	7	bh		confirm	H	
+16	8	H	o|1	confirm	H	
+16	9	o.		confirm	H	
+16	10	bh		confirm	H	
+16	11	psi		confirm	H	
+16	12	eps		confirm	H	
+16	13	w		confirm	H	
+16	14	o.		confirm	H	
+16	15	Z		confirm	H	
+16	16	e		confirm	H	
+16	17	g	dot	confirm	H	
+16	18	_		confirm	H	
+16	19	w		confirm	H	
+16	20	y		correct	H	clear y (loop+tail) shape, not g; classifier share only 0.43
+16	21	rz		confirm	H	
+16	22	Z		correct	H	clear Z letterform with its usual entry-flourish above, not plain; classifier share 0.82
+16	23	g	5	confirm	H	
+16	24	phi		confirm	H	
+16	25	]	o	confirm	H	
+17	1	g		confirm	H	
+17	2	psi		confirm	H	
+17	3	m	~	confirm	H	
+17	4	_		confirm	H	
+17	5	o.		confirm	H	
+17	6	phi		split	M	box holds a phi glyph on top and a plain cursive flourish below it (see pos6.5); classifier tagged the whole box plain "_" at share 0.81
+17	6.5	_		split	M	bottom part of original box 6; plain cursive tail/flourish, possibly connecting toward the marginal note noted at pos15-24
+17	7	_		confirm	H	
+17	8	S7		confirm	H	
+17	9	o.		confirm	H	
+17	10	rz		confirm	H	
+17	11	_		confirm	H	
+17	12	nt		confirm	H	
+17	13	g	~	confirm	H	
+17	14	S4		confirm	H	
+17	15	_		confirm	H	IMPORTANT: plain cursive text, reads roughly "Cb" or "ch"; together with pos16-24 this forms a continuous plain marginal annotation running along the second half of this line (approx. "Cb scrium v.s. ft lt fus de..."), most likely a later cataloguer's/archivist's note (cf. "v.s." = Latin "ut/vide supra"), NOT part of the cipher text - flagging prominently for NOTES.md
+17	16	_		confirm	H	wide (117px) box, clearly reads as plain cursive "scrium" or similar; part of the same marginal annotation as pos15, see note there
+17	17	_		correct	M	part of the same plain marginal annotation (reads like the "v" of "v.s."); classifier's cipher code "v" at share 0.62 is this same ink shape read as a cipher-code label rather than as the plain letter it is in context
+17	18	_		correct	H	part of the same marginal annotation (the ".s." of "v.s."); classifier's code "S" is this shape misread as cipher
+17	19	_		correct	M	part of the same marginal annotation; classifier's code "y" at share 0.80 is again this shape misread as cipher in isolation
+17	20	_		confirm	H	part of the marginal annotation
+17	21	_		confirm	H	part of the marginal annotation (reads roughly "fus")
+17	22	_		correct	M	part of the marginal annotation (reads roughly "de"); classifier's code "nt" at share 0.39 was this shape misread as cipher
+17	23	_		confirm	H	part of the marginal annotation
+17	24	_		correct	L	trailing end of the marginal annotation; classifier's code "lam" at share 0.39 is again this shape read as cipher in isolation; the exact letter here is genuinely hard to make out
+18	1	#		confirm	H	
+18	2	#		confirm	H	
+18	3	f		confirm	L	hook shape, low share (0.37); the cluster hint "ch" is also plausible and not clearly ruled out
+18	4	S7		correct	H	clear numeral-7 shape, not w's flat squiggle; classifier share only 0.38
+18	5	S4	1	confirm	M	share 0.78 but shape matches the established S4 pattern (diagonal+crossbar) seen elsewhere on this leaf
+18	6	dl		confirm	H	
+18	7	Z		confirm	H	the "?" mark placeholder resolves as no real second mark - just Z's usual entry-flourish
+18	8	S7	#	confirm	H	
+18	9	phi		confirm	H	
+18	10	L		confirm	H	
+18	11	g		confirm	H	
+18	12	Z		confirm	H	
+18	13	psi		confirm	H	
+18	14	lam	5	confirm	H	
+18	15	rz		confirm	H	
+18	16	nt		confirm	H	
+18	17	+	ot	confirm	H	
+18	18	S7		confirm	H	
+18	19	_		confirm	H	
+18	20	bh	dot	confirm	H	
+18	21	S7		confirm	H	
+18	22	bh		correct	M	curved hook at the top, not tee's straight crossbar; classifier share only 0.79
+18	23	w		confirm	H	
+19	1	o.		confirm	H	
+19	2	S7		confirm	H	
+19	3	eps	7	confirm	H	
+19	4	m	~	confirm	H	
+19	5	phi		confirm	H	
+19	6	e	#	confirm	H	
+19	7	g		confirm	H	
+19	8	e	#	confirm	H	
+19	9	g		correct	H	clear g (closed loop) shape, not plain; classifier share was 1.00 but the code was "_"
+19	10	]	o	confirm	H	
+19	11	S7		confirm	H	
+19	12	psi	#	confirm	H	
+19	13	f		correct	M	hook+cross shape matches f (also the classifier's own cluster hint) better than y; share only 0.61
+19	14	w		confirm	H	
+19	15	y		confirm	H	
+19	16	K		confirm	H	
+19	17	a	7	confirm	H	
+19	18	eps	7	confirm	H	
+19	19	lam		confirm	H	
+19	20	y	7	confirm	H	
+19	21	m	~	confirm	H	
+19	22	g	5	confirm	H	
+19	23	nt		correct	M	clear crossed-diagonal shape matching nt (with its usual flourish), not Lx; classifier share only 0.47
+19	24	S7		confirm	H	
+19	25	tee		split	M	box holds 2 signs: a cross/tee shape on top, "y" (mark 7) below (see pos25.5); classifier tagged the whole box "g" at share 0.60
+19	25.5	y	7	split	M	bottom sign of the pair merged into original box 25
+19	26	S7		confirm	H	
+19	27	eps	7	confirm	H	
+19	28	eps	5	confirm	H	
+19	29	S7		confirm	H	
+19	30	_		delete	H	essentially blank paper far below the text baseline (y~2002 vs line baseline ~1650), no discernible ink; not a folio-stamp-like mark either (no legible digits), just empty margin
