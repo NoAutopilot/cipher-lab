@@ -1111,3 +1111,12 @@ that this repository has no way to reconstruct by search alone. ASKS.md row adde
 tool: 4 page loads, one of them a custom short Playwright script doing 2 typeahead field-fills in one page visit).
 `landesarchiv.hessen.de`: 1 (the archive's own contact page, for REQUEST.md's address). WebSearch: 3 (locating
 the fonds name/node, and the archive's contact details as a cross-check). No logins, no credentials.
+
+## Correction logged by LANE V6 (25 Sept 2026, from V6-SOCHK's check of SO-NASSAU-5551)
+
+The "Christoph(ff) of/van Wurttemberg" killed at Mookerheide (lines 782-784, 805-806, 991 above, and
+PROMPT-chatgpt-5551.md line 14) follows the WVO summary's wording and is wrong: he was Pfalzgraf Christoph, son of
+Elector Friedrich III of the Palatinate (Volker Press, BMGN 99 (1984) p.691, citing Glawischnig, Niederlande
+pp.105-111; Christoph of Württemberg died in 1568). The WVO quotation at line 782 is left as the catalogue prints it;
+read every paraphrase of it above as "Pfalzgraf Christoph". No reading, grade or class depends on this. See
+second-opinions/CHECK-SO-NASSAU-5551.md row 8.

@@ -894,3 +894,11 @@ key validation in `BOOK.md`, the 26/26 fresh-instance re-derivation, per-token H
 Status stays `blocked` (unrelated: the intake-gate block is about the unread Textos Políticos edition, not the
 judge check) -- this section does not itself unblock the target; `key.tsv`, `reading.txt` and `AUDIT.md` are
 untouched, per this brief's scope.
+
+## Correction logged by LANE V6 (25 Sept 2026, from V6-SOCHK's check of SO-LINHARES-M0002)
+
+The key sheet's trim rule is "do principio, ou do fim da palavra": letters may be trimmed from the beginning or the
+end of the dictionary headword. second-opinions/PROMPT-chatgpt.md (line 30, "trim from the end") states it as
+end-only, which is wrong; any later prompt, control or re-derivation must allow both directions. The committed
+reading and key.tsv were built from the key's own wording and are not changed by this. See
+second-opinions/CHECK-SO-LINHARES-M0002.md row 7.
