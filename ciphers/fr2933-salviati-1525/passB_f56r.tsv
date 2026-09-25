@@ -458,3 +458,30 @@ line	pos	code	marks	action	conf	note
 17	27	_		plain	M	"mi" ("to me"), low share (.59) already flagged this
 17	28	_		plain	H	"ha" ("has")
 17	29	_		plain	H	"par[?]" start of a verb (par[so]/par[lato]?) continuing past the line end
+18	1	_		plain	H	"la" of "lato" (continuing "par[lato]" from the end of line 17: "mi ha parlato", "has spoken to me")
+18	2	_		plain	M	"to" ending "parlato", low share (.59) already flagged this
+18	3	dl		confirm	H
+18	4	+		confirm	M	low share (.77) already flagged this
+18	5	w		confirm	H
+18	6	tee		confirm	H
+18	7	w		confirm	H
+18	8	w		confirm	H
+18	9	y		confirm	H
+18	10	S7		confirm	H
+18	11	eps	1	confirm	M	low share (.78) already flagged this
+18	12	S7		confirm	H
+18	13	eps	~	confirm	H
+18	14	wd		confirm	H
+18	15	_		confirm	M	blank/mark between signs
+18	16	rz		confirm	H
+18	17	g	5	confirm	H
+18	18	phi		confirm	H	clear circle-on-stem shape
+18	19	y		confirm	H
+18	20	_		confirm	M	low share (.67) already flagged this, no clear alternative code
+18	21	_		confirm	M	hook/tail stroke, kept as blank
+18	22	w		confirm	H
+18	23	a	1	confirm	H
+18	24	lam		confirm	H
+18	25	a	7	confirm	H
+18	26	H	1	confirm	H
+18	27	g		confirm	H
