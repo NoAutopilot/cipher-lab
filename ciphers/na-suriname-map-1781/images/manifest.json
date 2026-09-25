@@ -27,8 +27,25 @@
       "files": {
         "2007a_overview.jpg": "full sheet, 2249px wide",
         "2007a_titletext.jpg": "title block, native-res crop -- shows a later plain-Dutch interlinear pencil gloss above each ciphered line",
-        "2007a_nota.jpg": "mid-river text block, native-res crop, same gloss pattern",
-        "2007a_aanmerkinge.jpg": "bottom-left annotation, native-res crop, same gloss pattern"
+        "2007a_nota.jpg": "river-feature caption 'Mangroe en Parumaribos' + a small weir/passage caption, native-res crop, same gloss pattern (NOT the big 'Nota A-F' legend block despite the filename -- see 2007a_nota_af_block.jpg for that)",
+        "2007a_aanmerkinge.jpg": "'Palissade en Krijgs Landen' caption, native-res crop, same gloss pattern (a short legend note, NOT the big 'Remarque' paragraph -- see 2007a_remarque_af_block.jpg for that)",
+        "2007a_nota_af_block.jpg": "RD03 25 Sept: native-res IIIF region crop (3900,2550,2300,1050) of the full 'Nota A-F' enumerated legend paragraph (the same one 2007B spells out in plain: A-F clauses on troop/ship dispositions) -- this block also carries its own interlinear gloss, not fully transcribed this pass (bonus find beyond the job brief's scope, flagged for a follow-on worker)",
+        "2007a_remarque_af_block.jpg": "RD03 25 Sept: native-res IIIF region crop (300,5800,2500,900) of the 'Remarque' paragraph -- reads differently from 2007B's Remarque (2007A's explains the LETTER signatures/legend, not river-depth numbers); own interlinear gloss present, not fully transcribed this pass",
+        "2007a_info.json": "RD03 25 Sept: cached IIIF info.json for 2007A (native 8998x6753), used to compute the two region crops above"
+      }
+    },
+    {
+      "invnr": "4.VEL 2007B",
+      "title": "Blad 2, kopie, cijferschrift vertaald, 1781 (plain-Dutch twin of 2007A)",
+      "date": "1781",
+      "native_px": "delivered capped at 5000x3771 by the default endpoint (not the true native size); fine for reading, not for pixel-precise alignment",
+      "default_full_url": "https://service.archief.nl/api/file/v1/default/222db0d8-5e8a-4023-9417-cfa290e8646f",
+      "files": {
+        "2007b_full.jpg": "RD03 25 Sept: full sheet at the endpoint's capped 5000px width",
+        "2007b_overview.jpg": "RD03 25 Sept: 1600px-wide viewing downscale of 2007b_full.jpg",
+        "2007b_title_crop.jpg": "RD03 25 Sept: title block crop, entirely plain Dutch -- 'Generaal Plan van Defensie van den Mond van de Rivier Suriname, en deszelfs environneerende Situatien, banken en diepten van 't Water. 1781.'",
+        "2007b_nota_crop.jpg": "RD03 25 Sept: the 'Nota A-F' enumerated legend paragraph, plain Dutch",
+        "2007b_remarques_crop.jpg": "RD03 25 Sept: the 'Remarque' paragraph, plain Dutch -- 'De in de Rivier gemarqueerde getallen betekenen de diepten...' (NOTE: this is a DIFFERENT remark from 2007A's own Remarque, which explains the letter signatures instead of the depth numbers -- the two sheets are not word-for-word twins in their marginal text, only in the map drawing itself)"
       }
     },
     {
