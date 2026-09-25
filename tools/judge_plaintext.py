@@ -41,6 +41,8 @@ LANG_CORPORA = {
            DATA / "it16" / "lettereinedited00tassgoog.txt", DATA / "it16" / "lettereinedited01cibrgoog.txt",
            DATA / "it16" / "lettereineditedi01carouoft.txt", DATA / "it16" / "letterescrittea01vanzgoog.txt"],
     "pt": [DATA / "pt17" / "vieira_cartas_tomoIV_1855.txt.gz", DATA / "pt17" / "vieira_cartas_1912.txt.gz"],
+    "pt18": [DATA / "pt18" / "correiobrazilie00unkngoog.txt.gz", DATA / "pt18" / "correiobrazilie02unkngoog.txt.gz",
+             DATA / "pt18" / "oinvestigadorpo03unkngoog.txt.gz", DATA / "pt18" / "oinvestigadorpo05unkngoog.txt.gz"],
     # nl, es, la (25 Sept 2026, YX-PTJUDGE): tools/data/nl_repo, es_repo, la_repo each hold only one or two
     # target's own committed readings/plaintext-print files (a few KB each, nowhere near the ~200k-character
     # floor a language check needs, and for es_repo/la_repo the sole file *is* the target's own reading --

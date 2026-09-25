@@ -795,3 +795,102 @@ which this check moves in either direction. Per this brief's file scope, `specs/
 **not** edited (that action is reserved for a clean verdict A); the orchestrator may still want to apply the
 `#`-line scoring-bug fix identified in Step 1 to `tools/judge_plaintext.py` generally, since it is not specific
 to this target's design. Status stays unchanged by this check.
+
+(25 Sept 2026: the `#`-line scoring-bug fix LX-JUDGE recommended above is now applied -- `tools/judge_plaintext.py`
+`--file` strips `#`-prefixed lines before folding -- so the section below's direct `judge_plaintext.py --file`
+run scores the decode itself, not the comment header; see its N=102 vs. this section's bug-inflated N=467.)
+
+## V6-PTCORP pt18 judge re-run (25 Sept 2026)
+
+Worker V6-PTCORP (`.claude/briefs/runs/2026-09-25-lane-v6-ptcorp.md`, LANE V6): LX-JUDGE's postmortem above
+named the real problem with the YX-PTJUDGE FAIL as two things, only one of which (the `#`-line bug) was fixable
+without new data -- the other was that `tools/data/pt17` (Vieira's own letters, 1648-1697) is ~120-160 years
+off this target's c.1811-12 hand, which LX-JUDGE showed costs real text an 8.5 pct false-negative rate against
+pt17's own thresholds at this length. This pass builds `tools/data/pt18` (see `tools/data/pt18/README.md` and
+`MANIFEST.tsv`): 3,226,102 letters after `fold()` from four Internet Archive Google Books scans of two
+London-printed, Portuguese-language Peninsular-War-era periodicals -- **Correio Braziliense, ou, Armazem
+Literario** (Hipólito José da Costa, 1808-1822; `correiobrazilie00unkngoog`, `correiobrazilie02unkngoog`) and
+**O Investigador Portuguez em Inglaterra** (1811-1819; `oinvestigadorpo03unkngoog`, `oinvestigadorpo05unkngoog`)
+-- none of it Vieira, none of it Linhares/Sousa Coutinho/this target's own material, none of it the Vieyra
+dictionary the key uses, no translation, no verse, no single source above 31.2 pct of the total. Wired into
+`tools/judge_plaintext.py`'s `LANG_CORPORA["pt18"]`, with an offline test
+(`tools/tests/test_judge_plaintext_lang_pt18.py`: a held-out passage from a fifth, uncommitted volume of the
+same periodical -- Dom João VI's 1807 decree transferring the court to Brazil, printed in
+`correiobrazilie04unkngoog` -- passes the language gate; the same passage shuffled, and a random-letter string
+of the same length, both fail it; a fourth test checks the corpus folds to >=1,000,000 letters). All of
+`tools/tests/test_*.py` that this environment can run were re-run; the pt/pt18 judge tests and every other
+previously-passing test still pass (three unrelated pre-existing failures, `numpy`/`PIL` not installed in this
+container, and one target's stale `reading.txt` unrelated to this brief, all unchanged by this pass).
+
+**(i) Committed spec, judge_plaintext.py directly** (`specs/antt-linhares-chave.json`'s `judge.language` switched
+to `"pt18"` -- see below):
+
+```
+$ python3 tools/judge_plaintext.py specs/antt-linhares-chave.json --file ciphers/antt-linhares-chave/reading.txt
+ok   language: score=-1.051, null_p99=-1.452, real_p05=-1.122, real_median=-0.849, mode=both, N=102
+ok   words: cover=0.922, min=0.5, real_text_median_cover=0.951
+PASS - antt-linhares-chave (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+**PASS** (score -1.051 clears real_p05 -1.122 by 0.071 and null_p99 -1.452 by 0.401). N=102 here (not 98) because
+this run scores `reading.txt` with only the `#` comment lines stripped (the judge's own `--file` behavior,
+fixed since LX-JUDGE's pass); it keeps the literal word "null" for the one null-marked group, which LX-JUDGE's
+Step 1 found changes the score by <0.002 -- not the source of the PASS.
+
+**(ii) Normalized 25-word rendering, LX-JUDGE's own script, `--lang pt18`** (added this pass; `--lang pt` still
+reproduces the exact pt17 numbers in the table above unchanged):
+
+```
+$ python3 ciphers/antt-linhares-chave/scripts/judge_discrimination_check.py --lang pt18 --samples 200 --seed 1
+=== Step 1: what the judge actually scored ===
+raw reading.txt (comments + data): 467 letters, score=-1.431
+normalized rendering (25 real decoded words, null token dropped): 98 letters, score=-1.044
+
+=== Step 2: design-matched controls, N=98 letters / 25 words, 200 draws, seed=1 ===
+(a) real Portuguese prose, 1808 (exposiodosfa00cevauoft, held out of pt18's four training files):
+  n=200 mean=-0.907 p05=-1.082 p50=-0.891 p95=-0.794 -- reading at 7.5th percentile (15/200 draws <= reading)
+(b_plain) random Vieyra-dict headword sequences, whole words:
+  n=200 mean=-1.099 p05=-1.200 p50=-1.101 p95=-0.995 -- reading at 80.5th percentile
+(b_trim) same, 36 pct of tokens end-trimmed like the reading's own 9/25:
+  n=200 mean=-1.149 p05=-1.241 p50=-1.151 p95=-1.049 -- reading at 95.0th percentile
+(c) committed reading, word order shuffled:
+  n=200 mean=-1.083 p05=-1.146 p50=-1.082 p95=-1.027 -- reading at 86.5th percentile
+
+=== Step 2b === AUC P(b_plain > a) = 0.052   AUC P(b_trim > a) = 0.034
+=== Step 2c === deployed thresholds at N=98 (pt18): null_p99=-1.472 real_p05=-1.100
+genuine, fluent, non-cipher 1808 Portuguese windows that PASS: 192/200 (96.0 pct) -- 4.0 pct false-negative rate
+reading's normalized score -1.044 vs these thresholds: PASS (null test alone: pass)
+```
+
+**Side by side with the pt17/Vieira run in the LX-JUDGE section above** (same reading, same controls script,
+same seed and draw count, only the corpus changes):
+
+| | pt17 (Vieira, 1648-1697) | pt18 (Correio Braziliense + Investigador Portuguez, 1808-1819) |
+|---|---|---|
+| normalized reading score | -1.145 | -1.044 |
+| deployed null_p99 (N=98) | -1.540 | -1.472 |
+| deployed real_p05 (N=98) | -1.101 | -1.100 |
+| language check verdict | **FAIL** (below real_p05 by 0.044) | **PASS** (above real_p05 by 0.056) |
+| reading's percentile in control (a), real period prose | 5.5th (low tail) | 7.5th (low tail, near-identical) |
+| reading's percentile in control (b_plain), dict salad | 70.5th | 80.5th |
+| reading's percentile in control (b_trim), design-matched salad | 91.5th | 95.0th |
+| reading's percentile in control (c), shuffled reading | 44.5th | 86.5th |
+| AUC P(b_plain > a) / P(b_trim > a) (near 0 = good separation) | 0.058 / 0.036 | 0.052 / 0.034 |
+| control (a) false-negative rate at deployed thresholds | 8.5 pct (17/200) | 4.0 pct (8/200) |
+
+**Verdict: PASS.** The reading clears both null_p99 and real_p05 under pt18, on both the committed spec's direct
+run (i) and LX-JUDGE's own normalized-rendering script (ii). The move from FAIL to PASS is not an artifact of a
+looser corpus: separation power is essentially unchanged (AUC ~0.03-0.05 under both corpora, i.e. the judge
+still tells real prose from dictionary salad about as sharply), and the real-prose false-negative rate at this
+N *improves* under pt18 (4.0 pct vs pt17's 8.5 pct) rather than degrading -- consistent with pt18 being the
+better-matched corpus the era mismatch predicted, not a corpus that simply passes everything. The reading still
+sits in the low tail of genuine running prose (7.5th percentile of control (a), similar to pt17's 5.5th) --
+expected for a short (25-word), fragmentary, trim-heavy (36 pct) mid-letter dictionary-code decode, which is
+not shaped like continuous narrative prose -- but it clears the deployed real_p05 threshold at that same tail
+position because pt18's real-text distribution itself sits closer to the reading's own register/period than
+pt17's does. Per this brief, `specs/antt-linhares-chave.json`'s `judge.language` is now `"pt18"`. This PASS is a
+gate for a verifier per rule 10, not a new grade on the reading; the reading's own evidence (12/12 worked-example
+key validation in `BOOK.md`, the 26/26 fresh-instance re-derivation, per-token H/M grading) is unchanged by it.
+Status stays `blocked` (unrelated: the intake-gate block is about the unread Textos Políticos edition, not the
+judge check) -- this section does not itself unblock the target; `key.tsv`, `reading.txt` and `AUDIT.md` are
+untouched, per this brief's scope.

@@ -29,7 +29,13 @@ things the judge itself does not check:
 Neither fetched corpus is committed to the repo (out of this brief's touched-file list); both are cached under
 scripts/_cache (gitignored by being undeclared) and re-fetched from the URLs below if the cache is missing.
 
-Usage: python3 judge_discrimination_check.py [--cache DIR] [--samples 200] [--seed 1] [--json-out FILE]
+Usage: python3 judge_discrimination_check.py [--cache DIR] [--samples 200] [--seed 1] [--json-out FILE] [--lang pt|pt18]
+
+--lang pt18 (added 25 Sept 2026, V6-PTCORP): scores against tools/data/pt18 (four 1808-1819 London-printed
+Portuguese periodical volumes, Correio Braziliense and O Investigador Portuguez em Inglaterra, ~3.2M letters)
+instead of tools/data/pt17 (Vieira's own letters, 1648-1697) -- a period-matched corpus for this c.1811-12
+target instead of one ~120-160 years off. Control (a) (exposiodosfa00cevauoft, an 1808 pamphlet) is not among
+the four pt18 files, so it stays a valid held-out real-text control under either --lang.
 """
 import argparse, csv, json, random, re, sys, urllib.request
 from pathlib import Path
@@ -108,10 +114,11 @@ def main():
     ap.add_argument("--samples", type=int, default=200)
     ap.add_argument("--seed", type=int, default=1)
     ap.add_argument("--json-out")
+    ap.add_argument("--lang", default="pt", choices=["pt", "pt18"])
     a = ap.parse_args()
     cache = Path(a.cache)
 
-    model = jp.NgramModel([jp.read_corpus(p) for p in jp.LANG_CORPORA["pt"]])
+    model = jp.NgramModel([jp.read_corpus(p) for p in jp.LANG_CORPORA[a.lang]])
     words, total_tokens = load_reading_tokens()
     normalized = " ".join(words)
     raw_text = (TARGET / "reading.txt").read_text(encoding="utf-8")
@@ -202,12 +209,12 @@ def main():
           f"toward 0 = a consistently scores higher than b, i.e. real separation)")
     print()
 
-    print("=== Step 2c: baseline false-negative rate of the DEPLOYED judge (pt17/Vieira thresholds) on genuine "
+    print(f"=== Step 2c: baseline false-negative rate of the DEPLOYED judge ({a.lang} thresholds) on genuine "
           "1808 prose at this N ===")
     real17, null17, cov17 = model.controls(N, samples=a.samples, seed=a.seed)
     null_p99, real_p05 = pct(null17, 0.99), pct(real17, 0.05)
     passes = sum(1 for s in period_scores if s > null_p99 and s > real_p05)
-    print(f"deployed thresholds at N={N} (pt17): null_p99={null_p99:.3f} real_p05={real_p05:.3f}")
+    print(f"deployed thresholds at N={N} ({a.lang}): null_p99={null_p99:.3f} real_p05={real_p05:.3f}")
     print(f"genuine, fluent, non-cipher 1808 Portuguese prose windows that PASS these thresholds: "
           f"{passes}/{a.samples} ({100*passes/a.samples:.1f} pct) -- i.e. even real text has a "
           f"{100*(a.samples-passes)/a.samples:.1f} pct false-negative rate at this N, corpus and threshold")
@@ -216,7 +223,7 @@ def main():
           f"(null test alone: {'pass' if norm_score>null_p99 else 'FAIL'})")
 
     if a.json_out:
-        out = {"raw_score": round(raw_score,4), "raw_N": len(raw_letters), "raw_comment_letters": len(comment_letters),
+        out = {"lang": a.lang, "raw_score": round(raw_score,4), "raw_N": len(raw_letters), "raw_comment_letters": len(comment_letters),
                "norm_score": round(norm_score,4), "norm_N": N, "n_words": len(words),
                "period_source": "archive.org exposiodosfa00cevauoft (1808)",
                "dict_source": "archive.org newpocketdiction00viey Part I, regex headword extraction",

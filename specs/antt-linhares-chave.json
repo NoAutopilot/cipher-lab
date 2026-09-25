@@ -14,6 +14,6 @@
  "cheap_tests_in_order": [
   "decode all 26 groups against the identified 1809 edition and judge the result as Portuguese prose (LX-DEC, 25 Sept 2026) -- expected to be a weak/negative language-model signal given the fragment length (26 tokens) and the mid-letter cut, not a positive result on its own"
  ],
- "judge": {"language": "pt", "min_word_cover": 0.5},
+ "judge": {"language": "pt18", "min_word_cover": 0.5},
  "written": "25 Sept 2026, LX-DEC (LANE LX), for the judge step of .claude/briefs/runs/2026-09-25-lane-lx-dec.md"
 }
