@@ -501,3 +501,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T18:28Z	session_012RiiYfwp3KEw4ma3SE5n5U	NEAR-TOOL (Sonnet, cap 8)	board Near solves view from status.json.near; tools/near_check.py	prompt inline; UPDATES.md near-solve row
 2026-09-25T18:36Z	session_01UPvnBQxYHoncGSjmr2sgyA	done	bRUB rubin-1953 intake + test 1	pushed 4c33aeb
 2026-09-25T18:36Z	session_01LX1KVigw2GyV3JG3YBHUcm	done	bINT retro intake moustier, kaliningrad	pushed e944781, c027fbf
+2026-09-25T18:34Z	session_01Ni7SCWavoqfgw2VR4ypGXX	LANE B2 bMCC2 (Sonnet, cap 5)	mccormick-1999 test 2 family_run masc x2 corpora (NEAR row)	brief 2026-09-25-lane-b2-mccormick-1999-t2.md
+2026-09-25T18:34Z	session_014qQzx56jpDoJBe6kFjiL5z	LANE B2 bPOL2 (Sonnet, cap 5)	pollaky-1865-1875 test 2 pass B + diff vs Bourdeau (NEAR row)	brief 2026-09-25-lane-b2-pollaky-1865-1875-t2.md
