@@ -556,3 +556,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T20:22Z	session_01FErd6DB5jVrf9YhYN1u9Sk	bFAI done 2.28 D, archived
 2026-09-25T20:22Z	session_01R1hZ23tX4j7RCMxwYm9J65	bSSR (Sonnet, cap 3)	ss-radio-lippert-1944 test 1 (scienceblogs.de holder)	LANE B3 brief
 2026-09-25T20:22Z	session_01RZGDw5jSBy5bQiYyq1hJdp	bMCC4 (Sonnet, cap 3)	mccormick-1999 token/nomenclator test (NEAR step)	LANE B3 brief
+2026-09-25T20:40Z	session_01Fe2ED9BVfMXVgB728sJ9Kr	LEARN done $0.10 X, archived	stopped on injection suspicion; respawned as LEARN-2
+2026-09-25T20:40Z	session_015aWAEGAyRXSR3wi3znjRd8	LEARN-2 (Sonnet, cap 5)	cross-account read, window since 17:18; brief learn-cross-account.md
+2026-09-25T20:40Z	session_01M9XHYBXkupfXbhK1kVhZLW	retrospective l (Sonnet, cap 10)	13 rows since retro k, USD 89; NEAR review; breadth first-test format; STATUS.md section loss 9a1e34b; LEARN injection stop
