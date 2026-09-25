@@ -1,0 +1,24 @@
+{
+  "jobs": [
+    {
+      "ciphertext": "ciphertext_appendix.tsv",
+      "key": "key.tsv",
+      "format": "tsv",
+      "line_column": "entry_label",
+      "folio_column": "leaf",
+      "style": "concat",
+      "reading": "reading_appendix.txt",
+      "tokens": "reading_appendix_tokens.tsv",
+      "header": [
+        "# antt-msliv0638-brochado-1712 appendix (m0280-296), decoded against key.tsv (a period key rebuilt by",
+        "# us from the appendix's own contemporary Deciffrada glosses -- key source grade 'period', PX-BROKEY",
+        "# + PX-BROKEY2, 25 Sept 2026). This is the control described in NOTES.md 'PX-BROKEY2': the key must",
+        "# re-read its own source. It is NOT a rule-7 reading of anything beyond the appendix itself -- there is",
+        "# no spec/judge for this target yet, and every entry here is already given in plaintext by the",
+        "# manuscript's own Deciffrada line (see plaintext_appendix.tsv); see conflicts.tsv for the per-entry",
+        "# agreement between this decode and that plaintext.",
+        "# tokens {total}: {HCSMIU} (U = code with no key.tsv row; M = key value held by <65% majority)"
+      ]
+    }
+  ]
+}

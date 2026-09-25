@@ -1,0 +1,46 @@
+# antt-msliv0638-brochado-1712 appendix (m0280-296), decoded against key.tsv (a period key rebuilt by
+# us from the appendix's own contemporary Deciffrada glosses -- key source grade 'period', PX-BROKEY
+# + PX-BROKEY2, 25 Sept 2026). This is the control described in NOTES.md 'PX-BROKEY2': the key must
+# re-read its own source. It is NOT a rule-7 reading of anything beyond the appendix itself -- there is
+# no spec/judge for this target yet, and every entry here is already given in plaintext by the
+# manuscript's own Deciffrada line (see plaintext_appendix.tsv); see conflicts.tsv for the per-entry
+# agreement between this decode and that plaintext.
+# tokens 1702: H 0, C 1371, S 0, M 292, I 0, U 39 (U = code with no key.tsv row; M = key value held by <65% majority)
+m0280 Carta 13 | estesmnistrosestamquemosconuencemaisospdadehesemairiteeitesestamaperdereaseguieoceucroiectoothesogeeieodauidaedahoneaeesigiamasuaginganca
+m0281 Carta 15 | da·moutqu·a·ainhamndoueaceogoeae·eeicoehgmacaetacom·eimentosamandauaeesocesoquaseuco·a
+m0281 Carta 23 | sairdebulingbrocnossoinimigo
+m0282 Carta 30 | asocradoduquedebuquincan
+m0282 Carta 58 | onaofoisemdetiuenciansobornodaspesoassabeicoqaqducamdosaiustes
+m0282 Carta 61 | seodiaboseueraotesoureirouelhacoatacadosdiuntaroparlamdnto
+m0283 Carta 70 | paranospreiudicareestesministrosualomesmoperederresignarsedaraincn
+m0284 Carta 71 | estarespostahehumadrandhparuoisedehumfinouelhaco
+m0284 Passage 2a | sedhsoesdemim
+m0284 Passage 3a | nambastaesthuelhaco
+m0285 Passage 4a | inulehssolimestarestituicam
+m0285 Carta 72 | euitaramentrarcomiuoemiuuandoasescondidasteruiuersaca·
+m0285 Passage 5a | amheresposta
+m0286 Passage 3a | animuuemclaranocursodesta
+m0286 Carta 73 | semordreinaraoaquiestesuelhacos
+m0286 Carta 74 | eschro·ueoarta·ontleamport·raiocasi·mmahstestaremarhsoostaco·ocastelhano
+m0287 Carta 78 | em·serdestesuelhacos
+m0287 Carta 79 | aquinamseatesdearasamahuumaeesthuhlhacolotesoureiroseuphrataiborne
+m0287 Carta 80 | humfinodesprosito
+m0288 Carta 81 | ooficialsuislhecomunica
+m0288 Carta 85 | atrocdealcansarem·notratadodeisuenderamtodomundo
+m0288 Passage 2a | esteshomasfechadoatodanopapelode·aforotratamstodos
+m0289 Carta 89 | atndaquetstohemen·rabomseralhdmetam·edo
+m0289 Carta 91 | segundoprometeapoucauidadam
+m0289 Carta 92 | esteutlhacohstadeclaradofrancese·umdhstesdias·antandoe·ca·ado·docbt·ssehum·ilpamdeprauoissescomfbeca
+m0290 Carta 93 | enamhstae·boainte··genciacomoafortepulinebrocee
+m0290 Passage 2a | quecuel·aouoshupdpoderiamestarnhsete·poforadosunddoudoein·sterioneuundoasindispo··coesdahihasuioldnciasdos··nistros
+m0291 Passage 3a | pel·osnh·ucs·entmadadoprinciphdehanouerporescociaparapreuiniradopc
+m0291 Carta 94 | pudesseenueruonharestarainha
+m0291 Carta 96 | crdrogostocomqudficoodiabolduaotdssoureiro
+m0292 Carta 101 | masopudnhapprnddntreportadah·
+m0292 Carta 105 | sepordebocheconhecidoporhumpobretalento
+m0292 Passage 2a | emquesoentrouoprincipe
+m0293 Carta 106 | estahiuiuerdopddebolinobroupsermosudndidos
+m0293 Carta 107 | bemliuradosquedu
+m0293 Passage 2a | esteuelhacobulinbruahenossoinimigo
+m0294 Carta 110 | esteuhlhacopamrespopdermefogedemimasuamentira
+m0294 Passage 2a | eenosmetsrpaddpndenciade·

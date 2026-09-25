@@ -302,6 +302,48 @@ Method unchanged from the prior pass (`01_segment.py` → `02_anchor.py` → `03
 above. Key source grade is still `period` (rebuilt by us from the volume's own contemporary
 decipherments).
 
+## PX-BROKEY2, step 3: decode.json + the "key re-reads its own source" control
+
+`decode.json` runs `tools/decode_key.py` against `ciphertext_appendix.tsv` + `key.tsv` (tsv format,
+`line_column: entry_label`, `folio_column: leaf`, `style: concat`, matching the antt-linhares-chave
+precedent). `python3 tools/decode_key.py ciphers/antt-msliv0638-brochado-1712 --check` exits 0: it
+regenerates `reading_appendix.txt` and `reading_appendix_tokens.tsv` byte-for-byte from the two inputs
+(1702 tokens: C 1371, M 292, U 39 -- U is a code with no `key.tsv` row at all, none of it silently
+guessed).
+
+This is **not a rule-7 reading of anything new** -- every entry the appendix contains is already given in
+plain Portuguese by the manuscript's own Deciffrada line (`plaintext_appendix.tsv`); there is no spec or
+judge for this target yet (that is the next worker's job, per the "Not done this pass" note below). What
+this step checks is the control CLAUDE.md's job brief asks for: **the key must re-read its own source.**
+`scripts/06_decode_agreement.py` compares, per entry, the letters `03_align_pairs.py` actually paired to
+each code (its `_pairs.json`, the ground truth `04_build_key.py` was built from) against
+`decode_key.py`'s own mechanical output for the same tokens (`difflib`-aligned, so a token dropped by an
+upstream mismatch doesn't cascade into misaligning every later token in the same entry).
+
+**Result: 19 of 38 entries have at least one code-letter pair to check against** (the other 19 either
+contributed zero pairs at all -- every one of their CODE spans fell into `03_align_pairs.py`'s
+length-mismatch list rather than a clean pair, most often because of a length gap between the transcribed
+cipher tokens and the transcribed Deciffrada text that alignment fixes above did not resolve -- or, for
+Carta 30/58/61/70/72/73/74/79/80/91/92/96/101/105/106/107 etc. that DO appear in the anchored-OK list,
+still had every one of their individual CODE-run spans land on the mismatch side rather than the pairs
+side; see `03_align_pairs.py`'s own mismatch printout for the per-span detail). Of those 19, **3 entries
+decode at 100% agreement with their own pairs** (Carta 23, Carta 105, m0292's Passage 2a) and **16 are
+listed in `conflicts.tsv`** at 75-93% agreement (384 positions compared overall, 340 agree, 88.5%). Every
+recorded disagreement is a **homophone case**, not a decoding bug: each mismatching position is a code
+whose `key.tsv` value is the tallied *majority* letter (grade C, >=65% of >=2 observations) but this
+particular occurrence's own aligned letter was one of the *minority* readings the same code also carries
+(e.g. `26` is `u` at 65% majority but genuinely also stands for `v` in ~30% of its observed entries,
+consistent with the u/v orthographic looseness already noted for this code; `8` is `i` at 79% but also
+`j` in a handful of entries). `conflicts.tsv` lists the exact `expected!=decoded` letter pairs per entry
+so a future worker can see at a glance which of these are real homophones (period Portuguese didn't
+always distinguish u/v, or c/g in this hand) versus a transcription slip worth re-checking against the
+image. No entry shows a wholesale, systematic mismatch (e.g. every position off by a fixed shift) that
+would suggest a broken key or a mis-keyed alphabet.
+
+**Not done this pass (next worker, per this job's brief -- out of PX-BROKEY2's scope):** the body-passage
+sweep beyond m0276, `specs/antt-msliv0638-brochado-1712.json` + `tools/judge_plaintext.py`, and a
+fresh-instance re-derivation blind to this worker's scripts.
+
 ### Host report (this pass)
 
 No network access; this pass worked entirely from the images and TSVs already on disk.
