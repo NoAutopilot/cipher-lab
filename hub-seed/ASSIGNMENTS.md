@@ -491,3 +491,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T18:14Z	session_01XavLajPispv8YaywQUjLWK	done	bSCO scorpion-1991 test 1	pushed
 2026-09-25T18:13Z	session_01UPvnBQxYHoncGSjmr2sgyA	LANE B2 bRUB (Sonnet, cap 3)	rubin-1953 intake + test 1 images + single pass	brief 2026-09-25-lane-b2-rubin-1953.md
 2026-09-25T18:13Z	session_01LX1KVigw2GyV3JG3YBHUcm	LANE B2 bINT (Sonnet, cap 3)	retro intake check-solved moustier-altars, kaliningrad-2015	brief 2026-09-25-lane-b2-intake-mou-kal.md
+2026-09-25T18:20Z	session_01EsMqJkeG1n6MypgrFwF6sN	LANE R6 CM done $1.99 N, archived	salviati cm	untestable at 10-20 pct error
+2026-09-25T18:20Z	session_0165uktQtXTmrEztFN5qpUD4	LANE R6 M2 done $10.20 D, archived	mercy reading	S494 M27, judge register FAIL
+2026-09-25T18:18Z	session_01ALeDhDTreUY82fsxhRk3xE	LANE R6 MJ (Sonnet, cap 4)	mercy es17c chancery corpus + re-judge	brief 2026-09-25-lane-r6-mj-mr-mercy-judge.md
+2026-09-25T18:18Z	session_01QbniS3J4WHAZNtSCw1ThUq	LANE R6 MR (Sonnet, cap 2)	mercy fresh re-derivation	same
