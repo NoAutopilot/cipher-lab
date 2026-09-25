@@ -272,3 +272,128 @@ line	pos	code	marks	action	conf	note
 10	18	e		confirm	H	unlisted +-like mark visible above the e
 10	19	g	~	confirm	H	
 10	20	#		correct	H	clear hash/cross-hatch shape, not nt; classifier's own share was only 0.23, correctly flagging its uncertainty
+11	1	phi		confirm	H	
+11	2	phi		confirm	H	
+11	3	e	dot	confirm	H	
+11	4	a	5	confirm	H	
+11	5	e	dot	confirm	H	
+11	6	S7		confirm	H	
+11	7	g	+	confirm	H	
+11	8	g	1	confirm	H	
+11	9	_		confirm	H	plain, resembles the "et"-ligature-like flourish seen elsewhere on this leaf (cf. line7 pos19)
+11	10	eps	5	confirm	H	
+11	11	S7	~	confirm	H	
+11	12	o.		confirm	M	open-hook shape, a bit atypical for o.'s usual closed circle, but no better match found; share 0.80
+11	13	rz		confirm	H	
+11	14	g	~	confirm	H	
+11	15	o.		split	M	box holds 2 stacked signs: "o." above "S7" (see pos15.5); classifier called the whole box "y" at share 0.80
+11	15.5	S7		split	M	bottom sign of the pair merged into original box 15
+11	16	S7		confirm	H	
+11	17	y		confirm	H	
+11	18	w		confirm	H	
+11	19	+		correct	H	single crossbar visible, not a double hash; matches the marks-column hint "+" better than code "#"; classifier share only 0.60
+11	20	o.		confirm	H	
+11	21	f	dot|dot	confirm	H	
+12	1	w		confirm	H	
+12	2	o.		confirm	H	
+12	3	phi		confirm	H	
+12	4	v	7	confirm	H	
+12	5	g		confirm	H	
+12	6	y		confirm	H	
+12	7	K		confirm	H	
+12	8	S		confirm	H	
+12	9	o.		split	M	box holds 2 side-by-side signs: "o." and "nt" (see pos9.5); classifier tagged the whole 77px-wide box a single "nt" at share 0.63
+12	9.5	nt		split	M	second sign of the pair merged into original box 9
+12	10	e	dot	confirm	H	
+12	11	eps	1	confirm	H	
+12	12	S		confirm	H	
+12	13	K		confirm	H	
+12	14	o.	dot	confirm	H	
+12	15	S7		confirm	H	
+12	16	Z		confirm	H	
+12	17	psi		confirm	H	
+12	18	lam		confirm	H	
+12	19	w		confirm	H	
+12	20	_	ot	confirm	H	
+12	21	g		correct	M	box holds 2 stacked signs: a small "g" above a large "H" (see pos21.5); classifier tagged the whole box "g" at share 0.81
+12	21.5	H		split	M	bottom sign of the pair merged into original box 21, much larger and more prominent than the top g
+12	22	v	ot	confirm	H	
+13	1	Z		confirm	H	
+13	2	nt		confirm	H	
+13	3	y		confirm	H	
+13	4	_	1	confirm	H	genuinely blank/tiny, no structured ink visible
+13	5	w		correct	M	clear w (flat-wave) shape with an extra double-tick mark above not captured by "marks=1"; classifier called it plain at share 0.81
+13	6	Z	ot	confirm	H	
+13	7	nt		confirm	H	
+13	8	o.		confirm	H	
+13	9	rz		confirm	H	
+13	10	S7	#	confirm	H	
+13	11	]	dot|o	confirm	H	
+13	12	eps		confirm	H	
+13	13	y		confirm	H	
+13	14	o.		confirm	H	
+13	15	rz		confirm	H	
+13	16	g	5	confirm	M	
+13	17	lam		split	M	box holds 2 stacked signs: a hooked diagonal (lam-like) above an open "v"-shaped curve (see pos17.5); classifier tagged the whole box plain "_" at share 1.00
+13	17.5	v		split	M	bottom sign of the pair merged into original box 17
+13	18	v	5|1	confirm	H	
+13	19	m		confirm	H	
+13	20	bh		confirm	H	
+13	21	w		split	M	box holds 2 side-by-side signs: "w" and "o." (see pos21.5); classifier's own share was only 0.44
+13	21.5	o.		split	M	second sign of the pair merged into original box 21
+13	22	o.		confirm	H	
+13	23	nt		confirm	H	
+14	1	g	1	confirm	H	
+14	2	g		confirm	H	
+14	3	y	~	confirm	H	
+14	4	bh		confirm	H	
+14	5	a	1	confirm	H	
+14	6	#		correct	M	double-cross/hash-like shape, not p; classifier share only 0.40
+14	7	o.		confirm	H	
+14	8	w		confirm	H	
+14	9	S4		confirm	H	
+14	10	dl		correct	M	closed loop+hook shape matches dl atlas pattern, not plain; classifier tagged it "_" at share 1.00
+14	11	rz		confirm	H	
+14	12	tee		confirm	H	
+14	13	eps	1	confirm	H	
+14	14	S7		confirm	H	
+14	15	eps	~	confirm	H	
+14	16	wd		confirm	H	
+14	17	o.		confirm	H	
+14	18	rz		confirm	H	
+14	19	g	~	confirm	H	
+14	20	y		split	M	box holds 2 side-by-side signs: "y" and "y" (see pos20.5); classifier tagged the whole box plain "_" at share 0.45
+14	20.5	y		split	M	second sign of the pair merged into original box 20
+14	21	L		confirm	H	
+14	22	S7		confirm	H	
+14	23	lam		confirm	H	
+14	24	_		confirm	M	tiny faint mark, likely the descender-tail of neighboring pos25's g, not a distinct sign
+14	25	g		correct	M	matches the recurring tall ascender-hook+loop "g" pattern seen repeatedly on this leaf; classifier tagged it "_"/cluster bh at share 0.59
+14	26	y		correct	M	clear y shape (loop+tail), not f/Z; classifier share only 0.40
+14	27	H	1|o	confirm	H	
+15	1	S7		confirm	H	
+15	2	w		confirm	H	
+15	3	y		split	M	box holds 2 stacked signs: "y" above an "S"-like flourish (see pos3.5); classifier's own share was only 0.61
+15	3.5	S		split	M	bottom sign of the pair merged into original box 3
+15	4	S7		confirm	H	
+15	5	Z		confirm	H	
+15	6	y	5	confirm	H	
+15	7	g	1	confirm	H	
+15	8	_		confirm	H	connected cursive strokes resembling a plain italic word/flourish (reads roughly like "goyt"), not cipher; classifier fully confident this is plain
+15	9	H		correct	M	box dominated by a clear block "H" shape, with pos8's y-tail bleeding in on the left edge; classifier called it plain/cluster y at share 0.40
+15	10	g	1	confirm	H	
+15	11	_		confirm	H	plain cursive flourish/ligature, consistent with other such wide plain boxes on this leaf
+15	12	Z		confirm	H	
+15	13	_		confirm	H	clean plain cursive "h" letterform
+15	14	w		confirm	H	
+15	15	y		confirm	H	
+15	16	S7		split	M	box holds 2 stacked signs: "S7" above "lam" (see pos16.5); classifier tagged the whole box plain "_" at share 0.81
+15	16.5	lam		split	M	bottom sign of the pair merged into original box 16
+15	17	H	1	confirm	H	
+15	18	e	o|#	confirm	H	
+15	19	wd		confirm	H	
+15	20	bh		confirm	H	
+15	21	y		confirm	H	
+15	22	nt		confirm	H	
+15	23	bh		confirm	H	
+15	24	w		confirm	M	share only 0.60 but shape clearly matches w
