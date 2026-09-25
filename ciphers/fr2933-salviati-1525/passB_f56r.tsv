@@ -375,3 +375,28 @@ line	pos	code	marks	action	conf	note
 14	28	_		plain	H	"d" of the same word
 14	29	_		plain	M	loop/descender continuing the word, reads roughly "Adi" or "Adij" -- possible dateline-style annotation ("a di", "on the day")
 14	30	_		plain	M	final tick/period ending the word
+15	1	_		plain	H	"s" of "sonr/sono" ("I am"), plain Italian cursive opening the line
+15	2	_		plain	H	"o" of "sonr/sono"
+15	3	_		plain	M	"n" of "sonr/sono", low share (.62) already flagged this
+15	4	_		plain	M	final flourish/"r" of the same word
+15	5	_		plain	H	"v." abbreviation (v.s. = "vostra signoria", Your Lordship)
+15	6	_		plain	M	"." dot after v, low share (.60) already flagged this
+15	7	_		plain	M	"s." second abbreviation letter
+15	8	_		plain	M	descender "p" of "per", low share (.62) already flagged this
+15	9	_		plain	M	continuation stroke, low share (.56) already flagged this
+15	10	_		plain	M	tail of the same word, low share (.40) already flagged this
+15	11	_		plain	M	"s" of "sappia" ("[may] know"), low share (.60) already flagged this
+15	12	_		plain	H	"el" (article "the")
+15	13	_		plain	H	"Tutto" ("everything"), bold ascender+body
+15	14	_		plain	H	Tironian "et" ligature ("and")
+15	15	_		plain	H	continuation of the "et" mark
+15	16	_		plain	H	"P" capital of "Pensi" ("think")
+15	17	_		plain	M	"ensi" body of "Pensi", low share (.62) already flagged this
+15	18	_		plain	H	"quello" ("that"), q-loop start
+15	19	_		plain	H	"uello" body
+15	20	_		plain	H	"ha" of "hanno" ("have")
+15	21	_		plain	M	"nno" ending, low share (.76) already flagged this
+15	22	_		plain	H	"a" of "aviso" ("notice/advice")
+15	23	_		plain	M	"viso" body, low share (.60) already flagged this
+15	24	_		plain	M	trailing stroke, low share (.60) already flagged this
+15	25	_		plain	H	final "p[?]" word start at line end
