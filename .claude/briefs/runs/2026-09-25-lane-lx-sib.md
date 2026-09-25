@@ -1,0 +1,10 @@
+LX-SIB (Sonnet, cap $6 as a stall alarm, at most 2 subagents). Target: ciphers/antt-linhares-chave. Job: eye-check ANTT maco 86 (fonds PT/TT/CLNH) for more ciphertext under this key -- above all the missing pages 1 and 4 of m0002's letter. Kind: recovery. Parent: LANE LX orchestrator session_01UXTpujdthrPiBDUG57oNwf. Read the lane COMMON (.claude/briefs/runs/2026-09-25-lane-lx-COMMON.md) and .claude/briefs/transcription.md.
+
+Read first: ciphers/antt-linhares-chave/NOTES.md, section "## More under this key" (LX-TR's list of 12 of the 21 items of maco 86 with docIds, and the 8 not surfaced: /03 /04 /06 /08 /09 /12 /19 /21), and QUEUE.md's DigitArq notes. Use tools/digitarq_fetch.py (anonymous image API: file list, thumbnails, dissemination). DigitArq: one request at a time, >=3 s apart, at most 60 requests this session; plan the budget before starting (file lists first, then thumbnails at low resolution, full resolution only for a leaf that shows digit groups).
+
+Steps:
+1. Try once more to surface the 8 missing items (other search phrasings; stop at 10 requests on this).
+2. For each item with images: file list, then thumbnails; look for leaves carrying runs of 4-7 digit groups (with small numbers beneath some), as on m0002. Record per item: images checked, what they show in one line, cipher yes/no.
+3. For any leaf with such groups: fetch full resolution into images/, then transcribe it exactly as LX-TR did m0002 (two blind Sonnet passes from the image, reconcile, settle from crops; every group must parse under the key rule: first digit 1-3 = page-digit count, next digit column 1-3, rest rank >= 1; groups starting 4-9 are nulls). Write ciphertext_<unit>.tsv in ciphertext.tsv's columns. Do not decode.
+4. NOTES.md: extend "## More under this key" with a table of every item checked, and whether any leaf continues m0002's letter (hand, paper, page numbering).
+If nothing carries cipher: that is the result; say how many items and images were checked of 21. Touch only ciphers/antt-linhares-chave/** and ROOM.md. Report requests to digitarq.arquivos.pt.
