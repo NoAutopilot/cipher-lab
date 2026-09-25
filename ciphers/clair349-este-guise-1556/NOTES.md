@@ -1235,8 +1235,7 @@ gloss agreement (aligned columns where every pass wrote a gloss): 441/728 = 60.6
 
 **Gate: PASSES.** Pooled token agreement **70.7%** (902/1276 columns) against the 60% gate, beside 39.3% (ZX-349, Sonnet,
 un-margined stitched crops) and 42.0% (ZX-TR349C, Sonnet, stitched 3895 px crops with the gloss band). 26 of 33 lines
-are at or over 0.60; under it: 12 (0.59), 17 (0.47, the truncated tail), 26 (0.45), 27 (0.50), 28 (0.51), and none
-other under 0.60 except those. **Gloss agreement 441/728 = 60.6%** (columns where both passes wrote a gloss), against
+are at or over 0.60; under it: 12 (0.59), 17 (0.47, the truncated tail), 26 (0.45), 27 (0.50), 28 (0.51). **Gloss agreement 441/728 = 60.6%** (columns where both passes wrote a gloss), against
 10/19 in ZX-TR349C: the gloss is now read on about 70% of tokens by each pass, not 5-14%. What changed between the
 runs is three things at once (narrower crops, Opus instead of Sonnet, a zoom instruction), so this run does not say
 which of them moved the number.
