@@ -1,4 +1,57 @@
 open
+*The Wentworth Papers 1705-1739* (Cartwright ed. 1883, archive.org wentworthpapers00stra) read in full via
+djvu text and grepped by this worker, control "Utrecht" 18 hits confirming readable OCR; found real content
+about William, Lord Paget's death and his aborted Hanover mission in early 1713 (consistent with the target's
+identification) but no mention of a ciphered 14 Jan 1713 letter to Pontchartrain or of Clairambault 296.
+
+## Check-solved (LANE CX, 2026-09-25)
+
+Six-source sweep run fresh this pass (LANE CX worker CX-CLAIR), on top of -- not only quoting -- the 24 Sept
+2026 pass kept below (which already identified William Paget, 6th Baron Paget, d. 26 Feb 1713, as the likely
+correspondent and ruled out M4's unrelated 16th-century "Paget's Cipher" false friend).
+
+1. **Web search.** `William Paget baron Paget 1713 mort lettre Pontchartrain Clairambault correspondance
+   diplomatique` -- confirmed via Wikipedia/VIAF that William Paget, 6th Baron Paget (1637-1713), English
+   peer and ambassador, died 26 Feb 1713 at his London home, six weeks after the target's 14 Jan 1713 date --
+   same figure the 24 Sept pass proposed, now corroborated by a second independent source. No hit identifying
+   this specific ciphered letter or Clairambault 296.
+2. **Standard printed edition, opened and read.** *The Wentworth Papers 1705-1739*, selected from the private
+   and family correspondence of Thomas Wentworth, 1st Earl of Strafford (James J. Cartwright, 1883) --
+   Strafford was a fellow English diplomat active in the Utrecht negotiations in exactly this period, the
+   nearest standard English printed source for London political/diplomatic gossip of Jan-Feb 1713.
+   archive.org `wentworthpapers00stra` fetched in full (`_djvu.txt`, HTTP 200, 1.4MB) and grepped: control
+   "Utrecht" 18 hits (confirms the OCR is readable and the volume covers this exact negotiation); "1713" 28
+   hits; "Paget" 13 hits, all read in context -- includes "My Lord Paget is dead and hath left all he could
+   from his son to his housekeeper" (p. near djvu line 14937) and earlier letters noting "My Lord Paget's not
+   going to Hannover" (djvu lines 17624, 17884-17891, an aborted embassy to Hanover shortly before his death) --
+   real, substantive confirmation this is the right Paget, but no mention anywhere of a ciphered letter, of
+   Pontchartrain, or of Clairambault 296. "Cipher" 1 hit, unrelated context. No dedicated French Utrecht-
+   negotiation edition (the Archives diplomatiques inventory flagged 24 Sept) opened this pass either --
+   budget.
+3. **Community lists.** Cryptiana local snapshot re-grepped for "Paget", "Clairambault 296": no hit (repeats
+   24 Sept finding; M4's `sources/cryptiana/web/mary.htm` entry remains the only "Paget's Cipher" hit and is
+   the unrelated 16th-century Charles Paget item). No Cipherbrain hit by web search.
+4. **DECODE.** `unsolved-ciphers/catalogue/decode-catalog.csv` (fresh clone, 25 Sept 2026) grepped for
+   "clairambault 296", "pontchartrain.*1713", "paget.*1713": zero hits for all three (repeats and extends the
+   24 Sept null result).
+5. **Bourdeau** (fresh shallow clone, 25 Sept 2026). Grepped for "Paget", "Clairambault 296": same result as
+   24 Sept -- every "Paget" hit checked is the unrelated Elizabethan Charles Paget material; no shelfmark hit.
+6. **Aymeloglu** (fresh shallow clone, 25 Sept 2026). Grepped for "Paget", "Clairambault 296": no hit.
+
+Requests this section: archive.org 1 (`_djvu.txt` fetch for Wentworth Papers). WebSearch 1. github.com 0 new
+(clones reused from target 1).
+
+## Verdict (confirmed, LANE CX 2026-09-25)
+
+Stays **open, stage 2 verified unsolved (conditional)**, gate now closed with a real edition read. The
+Wentworth Papers read corroborates the sender identification (William, 6th Baron Paget, active in exactly
+this period, died six weeks after the target letter) without finding the letter itself in print -- a genuine
+negative for this source, not a duplicate of the 24 Sept pass's catalogue-only check. Still conditional: no
+dedicated Utrecht-negotiation French diplomatic edition or Paget correspondence collection has been opened.
+Worth checking together with M4 (Clairambault 1225) as the same correspondent's two known cipher letters, one
+day short of a year apart.
+
+---
 
 # "Lettre en partie chiffrée de Paget" -- BnF Clairambault 296-299
 
