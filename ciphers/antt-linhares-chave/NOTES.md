@@ -715,3 +715,83 @@ decode as "not expected to be complete sentences" (a mid-letter, 2-page fragment
 tokens) and the language check's own control block confirms N=467 letters is being scored against windows
 of real running Portuguese prose, which a deliberately fragmentary decode is not shaped like. Status stays
 unchanged by this re-run.
+
+## LX-JUDGE judge-discrimination check (25 Sept 2026)
+
+Parent worker LX-JUDGE (`.claude/briefs/runs/2026-09-25-parent-linhares-judge.md`): does the YX-PTJUDGE FAIL
+above tell us anything about the reading, or does the judge simply not discriminate on a 26-token dictionary-code
+fragment? Script: `ciphers/antt-linhares-chave/scripts/judge_discrimination_check.py` (re-runnable; two external
+corpora it needs are cached under `scripts/_cache/`, not committed, out of this brief's touched-file list, and
+re-fetch themselves from the named archive.org URLs if the cache is missing).
+
+**Step 1 -- what the judge actually scored.** `reading.txt` is 9 lines: 5 `#` comment-header lines (provenance,
+token-grade summary, "Portuguese as decoded... English gloss below in NOTES.md", etc.) followed by 4 lines of
+the actual Portuguese decode. `tools/judge_plaintext.py`'s `fold()` strips everything but letters and does **not**
+skip `#` lines -- it folds the whole file. Measured: the full file folds to 467 letters, exactly the N the
+YX-PTJUDGE run reports; of those, **365 letters (78 pct) come from the English comment header**, not the
+Portuguese decode (only 102 letters, 22 pct, are the actual reading, `null` marker included). The word-cover
+side effect is visible too: `cover=0.758` on the raw file vs `cover=0.959` measured below on the clean text --
+the raw run was already failing to reflect the decode cleanly on both of the judge's checks, not just language.
+A normalized rendering (the 25 real decoded words, space-joined, the mid-letter null token dropped since it
+carries no lexical content -- keeping the literal word "null" instead changes the score by <0.002 and doesn't
+change any conclusion below) is 98 letters and scores **-1.145** against the same pt17/Vieira model the deployed
+judge uses, against a deployed real_p05 of -1.101 at this N -- still a FAIL, but by 0.044, not the 0.545 gap the
+raw run reported, and it clears the null_p99 threshold (-1.540) comfortably. **Recommend to the orchestrator (not
+applied here, out of this brief's scope): `judge_plaintext.py` should skip `#`-prefixed lines before folding, or
+NOTES.md's rule-7 protocol should require a comment-stripped copy of any `reading.txt` that carries a header
+before it is judged** -- this is a real scoring bug, independent of anything below about the design.
+
+**Step 2 -- design-matched controls, N=98 letters / 25 words, 200 draws, seed 1, same pt17/Vieira model:**
+
+| control | mean | p05 | p50 | p95 | reading (-1.145) sits at |
+|---|---|---|---|---|---|
+| (a) real Portuguese prose, 1808, *not* Vieira (`exposiodosfa00cevauoft`, a contemporaneous Napoleonic-era political pamphlet -- named per rule 3) | -0.971 | -1.168 | -0.957 | -0.835 | 5.5th percentile (low tail of real prose) |
+| (b_plain) random Vieyra-dictionary headword sequences, whole words, 12,047-headword pool from Part I | -1.178 | -1.294 | -1.178 | -1.073 | 70.5th percentile |
+| (b_trim) same, but 36 pct of tokens end-trimmed the way 9/25 of the reading's own tokens are (key.tsv's trim mechanic, matching *design* not just length -- rule 3's Salviati lesson) | -1.244 | -1.365 | -1.249 | -1.125 | 91.5th percentile |
+| (c) the committed reading, word order shuffled (`fold()` strips spaces, so this changes real n-grams at former word boundaries, not a no-op) | -1.135 | -1.212 | -1.138 | -1.047 | 44.5th percentile of its own shuffles |
+
+Pairwise separation between (a) and the dictionary-salad controls: **AUC P(b_plain > a) = 0.058, AUC
+P(b_trim > a) = 0.036** (0.5 = indistinguishable; near 0 = (a) consistently scores above (b)). The judge's
+n-gram score *does* separate genuine running prose from random dictionary-word salad fairly well on average at
+this length, and separates it *better*, not worse, once the salad is made design-faithful (trimmed) -- so this
+is not a case of the check having no discriminating power at all.
+
+Two checks are near-uninformative for this specific target, though. **Word-cover: 200/200 of every dictionary-salad
+draw, plain or trimmed, also clears the spec's 0.5 floor** (mean cover 0.88-0.89, reading 0.959) -- because every
+drawn token is by construction a real dictionary headword, `min_word_cover` cannot tell a correct decode from a
+wrong-key decode for a dictionary-code design; it is not evidence either way here. **Word order: shuffling the
+reading's own 25 words moves its score to the 44.5th percentile of its own shuffle distribution** -- essentially
+unchanged -- so at N=98 the 4-gram model is reading local letter/digraph statistics, not macro coherence; it is
+not testing "does this read as a sentence."
+
+**Step 2c -- a baseline noise check that puts the FAIL in context.** Scored against the *deployed* judge's own
+thresholds (pt17/Vieira, null_p99=-1.540, real_p05=-1.101 at N=98): of the 200 genuine, fluent, **non-cipher**
+1808 Portuguese windows in control (a), **17/200 (8.5 pct) themselves fail** (score below real_p05), from length
+and corpus-mismatch noise alone -- pt17 is Vieira's own letters, 1648-1697, roughly 120-160 years before this
+target's c.1811-12 hand, an era mismatch by rule 3's own standard. The reading's post-normalization score sits
+inside that same noise band (worse than real_p05 by 0.044, on a corpus about a real 8.5 pct false-negative rate
+at this exact N), not far outside it.
+
+**Verdict: C.** Neither (A) nor (B) as posed fits the numbers. (A) is wrong on its premise: the judge *does*
+separate real prose from dictionary-word salad at this length (AUC 0.04-0.06 away from 0, i.e. strong separation,
+not "cannot discriminate"), and gets *sharper*, not weaker, once the salad control is trim-matched to the actual
+design. (B) is wrong on its conclusion: the reading does not "score with" the salad -- it beats 70.5 pct of
+plain-headword salad and 91.5 pct of design-matched (trimmed) salad, while sitting only in the low tail (not
+outside the range) of genuine prose. What actually happened: (1) the reported FAIL score (-1.559) was
+substantially inflated by a real scoring bug -- 78 pct of the 467 letters scored were English comment-header
+text, not the decode; (2) after fixing that, the corrected score (-1.145) is a narrow, marginal FAIL against an
+anachronistic real-text threshold (pt17/Vieira, ~150 years off), at a window length (N=98) where even genuine,
+non-cipher period prose misses the same threshold 8.5 pct of the time from noise alone; (3) against both a better
+period-matched real-text control and a properly design-matched wrong-key control, the reading tracks distinctly
+closer to genuine text than to random dictionary salad, though not decisively inside either distribution's core.
+**Net: the raw FAIL is not trustworthy evidence against the reading** (bug-inflated, then noise- and
+corpus-mismatch-dominated at this length) **but the corrected signal is also not a clean vindication** -- it is
+a genuine, if weak, positive lean, consistent with what a short, fragmentary, trim-heavy mid-letter translation
+should look like, not with a wrong-key salad. This target's own evidence base does not need the language check
+either way: the reading rests on the 12/12 worked-example key validation (`BOOK.md`), the fresh-instance
+re-derivation (26/26 agreement on the mechanical page/column/rank/trim arithmetic after adjudicating 3 initial
+disagreements, one token -- p3l1pos4 -- still open per the section above), and per-token H/M grading, none of
+which this check moves in either direction. Per this brief's file scope, `specs/antt-linhares-chave.json` is
+**not** edited (that action is reserved for a clean verdict A); the orchestrator may still want to apply the
+`#`-line scoring-bug fix identified in Step 1 to `tools/judge_plaintext.py` generally, since it is not specific
+to this target's design. Status stays unchanged by this check.
