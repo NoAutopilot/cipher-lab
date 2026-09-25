@@ -1252,3 +1252,85 @@ being matched to S40 instead of S33, confirmed by eye on line 02 s1 at x~1450, w
 r follows 60); `S79` (Florence) glossed que/quel (the Y-shape is S32 = Q); `68` glossed ll (the Doubles ll code is 69);
 `S35` glossed "so"; `8` glossed a/o (28 or 82 split); `60` (I) mixed t/l/r (12/23 match). The settle step below
 inherits these as known confusions.
+
+**Step 4: settle, promote, key-vs-gloss.** The gate passed, so every non-agree column was settled from the lines_h
+crops: 683 columns (374 sign, 309 gloss-only), laid out by a scripted alignment (`settle_aligned.tsv`: the
+reconciler's nw alignment with both passes' sign, gloss and note per column). 683 columns were more than this worker
+could read by eye inside the box, so the settling was done by four Opus subagents under this worker (lines 01-08,
+09-16, 17-25, 26-33; they had the crops, the atlas and the two passes' values, not the key TSVs and not each other),
+each told to zoom 2-3x on every column and to write G, H, a third value, `DEL` (a column that is an artefact of one
+pass splitting a code the other kept whole) or `?`; this worker checked coverage (one settled row per non-agree
+column, 684 rows = 683 + 1 added) and eye-checked one pattern (below). Decisions: G 272, H 173, both (gloss choice) 75,
+new value 60, DEL 103, unsettled `?` 2 signs (06/22, 11/56). Rules the four applied alike, from the image: 1-0-z tight
+= one code 102 (not 10 + 2); `4 4` under one o gloss = 44; `2 6`, `2 8`, `6 4`, `8 2` under one gloss = 26, 28, 64,
+82; a two-part gloss (curve plus separate top tick) = e, a one-stroke flagged curve = c; long descenders from the
+line above are not glosses. Line 17's sloping tail was confirmed from the top of line18_s2 (G already had it).
+
+`promote_settled.py` (new; `--check` exits 1 if stale) writes **`ciphertext.tsv`**: line, position, sign, gloss,
+confidence, source, why; **1174 rows** (1075 cipher tokens + 99 dividers), **593 H** (both blind passes agree on token
+and gloss) / **581 M** (settled from the image); 874 rows carry a gloss. Rows per line: 01:24 02:34 03:34 04:33 05:30
+06:38 07:37 08:35 09:39 10:35 11:68 (two text rows) 12:33 13:38 14:40 15:36 16:35 17:33 18:38 19:33 20:30 21:34 22:35
+23:34 24:40 25:30 26:32 27:37 28:34 29:37 30:33 31:34 32:37 33:34. `ciphertext_draft.tsv`, `disagreements.tsv` and
+`agreement.tsv` are the reconciler's G/H outputs of step 3. Plain marginal words (14 rows across the passes) are left
+out of ciphertext.tsv.
+
+`python3 key_vs_gloss.py --ciphertext ciphertext.tsv [--lenient]` (full settled gloss set, 872 glossed tokens):
+**exact 472/872 = 54.1%; lenient (u=v, i=j, prefix of a word code, Doubles pair) 530/872 = 60.8%.** Match share per
+code (n >= 4; `key_vs_gloss.tsv` has all 62, written by the lenient run):
+
+| code | key | n | match | share | | code | key | n | match | share |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 16 | E | 75 | 63 | 0.84 | | 102 | V | 15 | 14 | 0.93 |
+| 26 | E | 55 | 39 | 0.71 | | 44 | O | 15 | 13 | 0.87 |
+| 15 | N | 43 | 39 | 0.91 | | 104 | V | 14 | 14 | 1.00 |
+| 5 | D,L | 42 | 31 | 0.74 | | 28 | A | 14 | 14 | 1.00 |
+| 60 | I | 37 | 17 | 0.46 | | S35 | S | 12 | 1 | 0.08 |
+| S34 | R | 36 | 29 | 0.81 | | S29 | M | 11 | 9 | 0.82 |
+| 12 | A | 33 | 31 | 0.94 | | S38 | T | 11 | 11 | 1.00 |
+| S37 | T,fit | 33 | 32 | 0.97 | | 22 | sc?,pour | 9 | 6 | 0.67 |
+| 9 | C,ss | 32 | 25 | 0.78 | | S27 | L | 9 | 4 | 0.44 |
+| 62 | E | 28 | 23 | 0.82 | | S16 | Guyse | 7 | 0 | 0.00 |
+| 14 | A | 23 | 22 | 0.96 | | S33 | R | 7 | 3 | 0.43 |
+| 64 | I | 22 | 7 | 0.32 | | S30 | N | 6 | 6 | 1.00 |
+| 7 | V | 22 | 20 | 0.91 | | S52 | ne | 6 | 0 | 0.00 |
+| S31 | P | 18 | 17 | 0.94 | | 24 | I | 5 | 2 | 0.40 |
+| S32 | Q,n'aye | 18 | 9 | 0.50 | | S28 | M | 5 | 5 | 1.00 |
+| 82 | O | 17 | 16 | 0.94 | | 17, 73 | H, Y | 4, 4 | 2, 2 | 0.50 |
+| S40 | Z | 16 | 1 | 0.06 | | S23, S44 | armee de mer, nulle | 4, 4 | 0, 0 | 0.00 |
+
+Not in the key at all: 210 of 1075 tokens -- `4` 82 (gloss s 33, blank 21, f 13, o 9), `2` 31 (gloss blank 25), `X`
+29, `6` 21, `10` 20 (gloss u 18), `8` 9, `68` 8 (gloss ll 7), and eight singletons. **What the mismatches point at
+(leads for the decode job, not settled here):**
+1. **The lone `4` glossed s/f (82 tokens) is most likely S36, S's second homophone, not a digit.** Eye-checked at
+   line 02 s1 x~1180-1260 (`26` then the mark): a tall stroke from gloss height runs down through a crossing bar,
+   the shape of the key's S36 ("x crossed over a long descender"), not a 4 with a separate long-s gloss. The pass
+   prompt's one added hint ("the 4 is a cross-like stroke with a tail, a digit not a sign") very likely pushed all
+   four passes into this reading; that hint was this worker's and is logged as a fault in the prompt. The ones
+   glossed f are candidates for S02 (F, "crossed x joined to a t").
+2. `10` glossed u (20): leftover 102/104 splits the settle did not reach (agreed rows were not re-opened).
+3. `S40` (Z) glossed r (15/16): the passes match the ciphertext's R-loop to S40; it is R's S33 (seen on line 02).
+4. `S35` glossed "so"/"vo" (11/12) and `S32` glossed que/quel: the gloss writes a syllable or word above a sign,
+   so a prefix rule is not enough; the decode should read these as word or syllable glosses.
+5. Lone `2` / `6` / `8` with blank gloss: the other half of a 26/62/28/82 split in rows the passes agreed on (S4:
+   "both passes split 2 e | 6" at 31/8-9, 33/4-5); `68` glossed ll is the Doubles ll code 69.
+6. `60` (I) at 0.46 and `64` (I) at 0.32: the crossed-z gloss over 60/64 was transcribed `z`; whether it is a
+   secretary-hand i/j or a real z is for the decode job to settle against the key, not here.
+
+Eleven codes (n >= 10, share >= 0.9: 15, 12, S37, 14, 7, S31, 82, 102, 104, 28, S38) account for 230 of 243 glossed tokens agreeing with the key (a selection by
+share, so descriptive, not evidence by itself); the overall figures above are the ones to cite. No line has been decoded and
+nothing here is a reading; grade C is available for the glossed tokens once the decode job applies the key and reads
+the gloss against it.
+
+**Grades (rule 4):** no reading claimed. ciphertext.tsv's confidence column grades the transcription (H two blind
+passes agree, M settled from the image), not plaintext.
+
+**Hosts:** none (all from images on disk). Subagents: 8, all Opus, at most 4 at once (4 blind-pass halves, then 4
+settlers). Files: `images/lines_h/` (66, new), `images/lines_g/` (deleted), `images/manifest.json`, `passG.tsv`,
+`passH.tsv`, `disagreements.tsv`, `ciphertext_draft.tsv`, `agreement.tsv` (regenerated from G/H),
+`settle_aligned.tsv`, `settled.tsv`, `promote_settled.py`, `ciphertext.tsv` (all new), `key_vs_gloss.py` (new
+`--ciphertext`, `--lenient`; default output unchanged, 1/10 on passE/passF as before), `key_vs_gloss.tsv`
+(regenerated). tools/ not touched. Status stays `partial`. cost: see the lane ledger.
+
+**Next job (one line):** decode job: first recode the 82 lone `4`s as S36/S02 from the image (and re-open the
+agreed 10/2, 2/6, 8/2 splits), then apply key_alpha/key_nomen with `tools/decode_key.py`, grading glossed tokens C
+where gloss and key agree and flagging every gloss-key conflict for a look at the image.
