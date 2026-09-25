@@ -1,6 +1,6 @@
 LANE R7 MSIB -- espagnol142-mercy-1648: the 15 April 1648 sibling instruction to Mercy in Brussels (Sonnet, cap $5, box 50 minutes).
 Common: 2026-09-25-lane-r7-common.md. NEAR.md row "espagnol142-mercy-1648", next step (2). Search and print check only: no decoding, no key edits.
-Intake gate (live, 25 Sept 20:10 UTC): "espagnol142-mercy-1648: partial (line 1) -- edition/page or full-text-search citation found within 6 lines" (exit 0).
+Intake gate (live, 25 Sept 20:00 UTC): "espagnol142-mercy-1648: partial (line 1) -- edition/page or full-text-search citation found within 6 lines" (exit 0).
 State: our reading of BnF Espagnol 144 f.22 (instruction to the abbé/Baron de Mercy, Barneton 6 June 1648; unsigned; S 494 M 27 of 521 codes)
 is N3, key ours (AUDIT.md). AUDIT.md section 3 (c): Lonchay 1896 (*La rivalité de la France et de l'Espagne aux Pays-Bas*, p.445) cites
 instructions to Mercy of 15 April 1648 "jointes à la dépêche de Léopold au roi du 18", Brussels Archives générales du Royaume, Secrétairerie

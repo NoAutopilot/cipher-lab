@@ -1,6 +1,6 @@
 LANE R7 ATF57V -- fr2933-salviati-1525: glyph-atlas re-pass on leaf f57v to merge near-duplicate types (Sonnet, cap $6, box 60 minutes).
 Common: 2026-09-25-lane-r7-common.md. NEAR.md row "fr2933-salviati-1525", next step (1). No solving, no key, no reading.
-Intake gate (live, 25 Sept 20:10 UTC): "fr2933-salviati-1525: open (line 1) -- edition/page or full-text-search citation found within 6 lines" (exit 0).
+Intake gate (live, 25 Sept 20:00 UTC): "fr2933-salviati-1525: open (line 1) -- edition/page or full-text-search citation found within 6 lines" (exit 0).
 State (NOTES.md "Code+mark at the pooled N (LANE R6 CM)" and "CM2"): pooled 2,820 sign tokens, 36 base codes, **223 code+mark types**; the cm solver
 reads its noise-free control at 94% but 27-43% at 10% type noise, and CM2's error-tolerant variants still miss the 60% gate. The lever is the
 transcription: if many of the 223 types are the same glyph written or read two ways (mark strings that differ only in how a pass spelled them, a

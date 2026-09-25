@@ -1,4 +1,4 @@
-LANE R7 WORKER COMMON (parent: LANE R7 orchestrator, session_01UpWfpbLwYL1xmDG1vFyi6h). Written 25 Sept 2026 20:15 UTC.
+LANE R7 WORKER COMMON (parent: LANE R7 orchestrator, session_01UpWfpbLwYL1xmDG1vFyi6h). Written 25 Sept 2026 20:01 UTC.
 Read, in order: CLAUDE.md; `.claude/briefs/runs/2026-09-24-lane-r4-common.md` (base rules); `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md`
 (25 Sept addendum, wins where they differ); `.claude/briefs/runs/2026-09-25-lane-r6-common.md` (its overrides still hold); this file; your job brief.
 First command: `python3 tools/room.py --start`. ROOM lines through `tools/room.py` only.
