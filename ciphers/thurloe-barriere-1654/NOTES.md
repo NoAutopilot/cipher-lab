@@ -1,5 +1,11 @@
-closed-negative
-Closed 25 Sept 2026 (ZX-BAR): a permutation z-test on the letter's real gloss positions gives z=-0.46 (key-shuffle
+open
+Status corrected closed-negative -> open by the LANE ZX orchestrator, 25 Sept 2026 16:25 UTC: ZX-BAR's permutation
+test ran on bare digits with the printed marks ignored, and its 0/64 follows mechanically from key_gloss.tsv's own
+conflict rows (its section says so). Its matched control has no marks and a correct gloss alignment by construction, so
+the test cannot tell "no transferable key" from "code+mark design" (the marks on about half the numerals may split the
+9 conflicting codes, as in Salviati) or "sequential gloss alignment wrong". Not closed until a mark-typed rerun
+against a control of the same code+mark design. ZX-BAR's numbers stand as measured:
+Measured 25 Sept 2026 (ZX-BAR): a permutation z-test on the letter's real gloss positions gives z=-0.46 (key-shuffle
 null) / z=-0.33 (token-shuffle null), both near zero and far below a matched control's z range (14.6-25.0 /
 5.7-12.4 over 10 seeds) -- the gloss's own repeated code occurrences do not even predict each other above chance,
 let alone the unglossed tokens; see the "ZX-BAR" section at the end of this file.

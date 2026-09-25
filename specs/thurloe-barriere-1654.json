@@ -1,7 +1,9 @@
 {
  "slug": "thurloe-barriere-1654",
  "name": "Barriere to the prince of Conde, London 20 Nov 1654 N.S. (Birch, Thurloe State Papers vol.2 pp.721-722)",
- "language_candidates": ["fr"],
+ "language_candidates": [
+  "fr"
+ ],
  "ciphertext": "ciphers/thurloe-barriere-1654/ciphertext.tsv (YX-BARB, 25 Sept 2026: passA.tsv, TX-BARRT's single eye transcription, reconciled against passB.tsv, a second blind Sonnet pass, and settled from the page images -- 33 runs, 400 tokens; see NOTES.md 'YX-BARB' section. passA.tsv/passB.tsv kept for provenance.)",
  "ciphertext_source": "archive.org collectionofstat02thur, leaves 729-730 (images/manifest.json), printed pages 721-722",
  "alphabet": "1-2 digit numerals (mostly 4-99) plus a small set of italic single-letter codes (a b c d e f m o p r u x, and the doubled 'll') and two astrological/planetary-looking symbols, embedded inline within otherwise plain French prose (a nomenclature/code-word system, not a full-text substitution); roughly half the numeral tokens carry a diacritic-like mark printed directly above them (circumflex, grave, acute, macron/overline, caron, diaeresis) whose exact type this pass could not reliably distinguish at the available resolution -- mark presence only is recorded (passA.tsv trailing '*'), not type",
@@ -16,30 +18,33 @@
   "a permutation z-test (key-shuffle null and token-shuffle null) on the letter's own real gloss positions, leave-one-out: is a held-out gloss occurrence of a code predictable from that code's OTHER gloss occurrences, more than chance? -- ZX-BAR, 25 Sept 2026, done, see cheap_test_done[1] below"
  ],
  "cheap_test_done": [
- {
-  "date": "25 Sept 2026 (TX-BARRT), reconciled and re-run 25 Sept 2026 (YX-BARB)",
-  "worker": "TX-BARRT, reconciled by YX-BARB",
-  "method": "tools' equivalent: ciphers/thurloe-barriere-1654/coverage_test.py (target) and matched_control.py (control, 10 seeds, extended with --ctpath by YX-BARB)",
-  "target_coverage_before": "on passA.tsv (TX-BARRT, single unreconciled pass): 108/368 tokens read (29.3%) by the 30-code non-conflicting 'primary' key",
-  "target_coverage_after": "on ciphertext.tsv (YX-BARB, passA.tsv reconciled against a second blind pass and the page images -- recovered a 25-token line pass A had skipped entirely, plus 3 other dropped/misread tokens): 120/400 tokens read (30.0%) by the SAME unchanged 30-code key",
-  "target_sense_check": "no ground truth available for the target (that is the open question), so a numeric sense rate cannot be computed for it the way it can for the control",
-  "control_coverage_before": "average 33.4% over 10 seeds (range 28.5-37.0%), matched to passA.tsv's 42-run/368-token/gloss-reveal profile",
-  "control_coverage_after": "average 31.1% over 10 seeds (range 26.5-34.0%), matched to ciphertext.tsv's 33-run/400-token profile; k_gloss per run is the original passA.tsv glossed-position set projected onto ciphertext.tsv by the same alignment used to reconcile it (deliberately conservative -- see matched_control.py docstring for why a naive raw-gloss-word-count version was rejected, it roughly doubled the control's key size)",
-  "control_sense_rate": "average 74.2% (before) / 65.8% (after) over 10 seeds of the control's newly-covered (beyond-gloss) tokens land on the correct word",
-  "verdict": "negative with a matched control (CLAUDE.md rule 3), CONFIRMED, no longer provisional (25 Sept 2026, YX-BARB): the QA/YX-FIX flag that this rested on one unreconciled pass is resolved -- pass B landed, reconciled against the images (tools/reconcile_passes.py plus manual image settling of every real disagreement, see NOTES.md 'YX-BARB' section), and the SAME unchanged 30-code primary key re-run on the reconciled ciphertext.tsv gives 30.0% vs. a re-matched control's 31.1% (10 seeds) -- still indistinguishable, target still inside the control's range. Fixing the transcription (a whole missing line, 3 other tokens) did not move the result: this negative is not a transcription artifact. Per the breadth rule (CLAUDE.md 3a), no further test was run and no campaign is proposed.",
-  "next_test_not_run": "a token-shuffle or key-shuffle permutation z-test on the SAME (now reconciled) letter (LESSONS.md s.'Controls, always') would be a sharper next cheap test than a second freshly-built control, since it reuses the real gloss positions instead of resampling them; still not run (breadth rule: one test per spec per worker)."
- },
- {
-  "date": "25 Sept 2026 (ZX-BAR)",
-  "worker": "ZX-BAR",
-  "method": "ciphers/thurloe-barriere-1654/permutation_test.py (target, leave-one-out over key_gloss.tsv's 64 grade-C rows, 1000 permutations each of a key-shuffle null and a token-shuffle null, seeds 0/1) and permutation_control.py (imports permutation_test.py and matched_control.py's new build_control_observations(), same statistic/nulls/seeds/n, 10 control seeds matched to ciphertext.tsv's profile)",
-  "statistic": "count of held-out gloss occurrences (leave-one-out) whose value is correctly predicted from that code's other gloss occurrences alone, after lowercase + long-s/f, u/v, i/j normalization",
-  "target_result": "0/64 (0.0%) held-out occurrences correctly predicted; Null A (key shuffle) mean=0.409 sd=0.891 z=-0.459 p=1.0000; Null B (token shuffle) mean=0.256 sd=0.768 z=-0.333 p=1.0000 -- real statistic at or below both null means",
-  "control_result": "10 seeds, matched design (ciphertext.tsv's 33-run/400-token profile, fr16 period French, same homophone/conflict-generating construction): real 6-8 of 50 (12.0-16.0%) correctly predicted every seed; zA range 14.577-24.972 (mean 20.397); zB range 5.727-12.371 (mean 8.525) -- every control seed strongly positive",
-  "verdict": "clean negative (CLAUDE.md rule 3, both numbers reported): the target's z (-0.459 / -0.333, both near zero) sits nowhere near the control's z range (14.6-25.0 / 5.7-12.4) -- a real nomenclature of this exact design is trivially self-consistent under leave-one-out (control z well over 10 every seed), while this letter's gloss-derived code assignments are not even as consistent with themselves as a random relabelling. The gloss positions carry no transferable key; this sharpens (does not merely repeat) the coverage test's earlier negative. Status set to closed-negative in NOTES.md.",
-  "next_test_not_run": "none proposed by this worker (per the brief, one job); NOTES.md s.5's two live leads (the solver-repositories' noted separate 1655 cipher for this correspondence; DECODE's Add MS 4200 records 8395/8398, both unopened) remain the more likely route to an actual key than further cryptanalysis of this one letter's gloss alone."
- }
+  {
+   "date": "25 Sept 2026 (TX-BARRT), reconciled and re-run 25 Sept 2026 (YX-BARB)",
+   "worker": "TX-BARRT, reconciled by YX-BARB",
+   "method": "tools' equivalent: ciphers/thurloe-barriere-1654/coverage_test.py (target) and matched_control.py (control, 10 seeds, extended with --ctpath by YX-BARB)",
+   "target_coverage_before": "on passA.tsv (TX-BARRT, single unreconciled pass): 108/368 tokens read (29.3%) by the 30-code non-conflicting 'primary' key",
+   "target_coverage_after": "on ciphertext.tsv (YX-BARB, passA.tsv reconciled against a second blind pass and the page images -- recovered a 25-token line pass A had skipped entirely, plus 3 other dropped/misread tokens): 120/400 tokens read (30.0%) by the SAME unchanged 30-code key",
+   "target_sense_check": "no ground truth available for the target (that is the open question), so a numeric sense rate cannot be computed for it the way it can for the control",
+   "control_coverage_before": "average 33.4% over 10 seeds (range 28.5-37.0%), matched to passA.tsv's 42-run/368-token/gloss-reveal profile",
+   "control_coverage_after": "average 31.1% over 10 seeds (range 26.5-34.0%), matched to ciphertext.tsv's 33-run/400-token profile; k_gloss per run is the original passA.tsv glossed-position set projected onto ciphertext.tsv by the same alignment used to reconcile it (deliberately conservative -- see matched_control.py docstring for why a naive raw-gloss-word-count version was rejected, it roughly doubled the control's key size)",
+   "control_sense_rate": "average 74.2% (before) / 65.8% (after) over 10 seeds of the control's newly-covered (beyond-gloss) tokens land on the correct word",
+   "verdict": "negative with a matched control (CLAUDE.md rule 3), CONFIRMED, no longer provisional (25 Sept 2026, YX-BARB): the QA/YX-FIX flag that this rested on one unreconciled pass is resolved -- pass B landed, reconciled against the images (tools/reconcile_passes.py plus manual image settling of every real disagreement, see NOTES.md 'YX-BARB' section), and the SAME unchanged 30-code primary key re-run on the reconciled ciphertext.tsv gives 30.0% vs. a re-matched control's 31.1% (10 seeds) -- still indistinguishable, target still inside the control's range. Fixing the transcription (a whole missing line, 3 other tokens) did not move the result: this negative is not a transcription artifact. Per the breadth rule (CLAUDE.md 3a), no further test was run and no campaign is proposed.",
+   "next_test_not_run": "a token-shuffle or key-shuffle permutation z-test on the SAME (now reconciled) letter (LESSONS.md s.'Controls, always') would be a sharper next cheap test than a second freshly-built control, since it reuses the real gloss positions instead of resampling them; still not run (breadth rule: one test per spec per worker)."
+  },
+  {
+   "date": "25 Sept 2026 (ZX-BAR)",
+   "worker": "ZX-BAR",
+   "method": "ciphers/thurloe-barriere-1654/permutation_test.py (target, leave-one-out over key_gloss.tsv's 64 grade-C rows, 1000 permutations each of a key-shuffle null and a token-shuffle null, seeds 0/1) and permutation_control.py (imports permutation_test.py and matched_control.py's new build_control_observations(), same statistic/nulls/seeds/n, 10 control seeds matched to ciphertext.tsv's profile)",
+   "statistic": "count of held-out gloss occurrences (leave-one-out) whose value is correctly predicted from that code's other gloss occurrences alone, after lowercase + long-s/f, u/v, i/j normalization",
+   "target_result": "0/64 (0.0%) held-out occurrences correctly predicted; Null A (key shuffle) mean=0.409 sd=0.891 z=-0.459 p=1.0000; Null B (token shuffle) mean=0.256 sd=0.768 z=-0.333 p=1.0000 -- real statistic at or below both null means",
+   "control_result": "10 seeds, matched design (ciphertext.tsv's 33-run/400-token profile, fr16 period French, same homophone/conflict-generating construction): real 6-8 of 50 (12.0-16.0%) correctly predicted every seed; zA range 14.577-24.972 (mean 20.397); zB range 5.727-12.371 (mean 8.525) -- every control seed strongly positive",
+   "verdict": "clean negative (CLAUDE.md rule 3, both numbers reported): the target's z (-0.459 / -0.333, both near zero) sits nowhere near the control's z range (14.6-25.0 / 5.7-12.4) -- a real nomenclature of this exact design is trivially self-consistent under leave-one-out (control z well over 10 every seed), while this letter's gloss-derived code assignments are not even as consistent with themselves as a random relabelling. The gloss positions carry no transferable key; this sharpens (does not merely repeat) the coverage test's earlier negative. Status set to closed-negative in NOTES.md.",
+   "next_test_not_run": "type the marks on every numeral token (two blind passes on high-resolution crops), rebuild key_gloss.tsv with code+mark as the key unit, and rerun permutation_test.py against a control of the same code+mark design; none proposed by this worker (per the brief, one job); NOTES.md s.5's two live leads (the solver-repositories' noted separate 1655 cipher for this correspondence; DECODE's Add MS 4200 records 8395/8398, both unopened) remain the more likely route to an actual key than further cryptanalysis of this one letter's gloss alone.",
+   "orchestrator_correction": "LANE ZX orchestrator, 25 Sept 2026 16:25 UTC: verdict downgraded from 'clean negative' to 'not decisive'. The test ran on bare digits (marks ignored) and its 0/64 follows mechanically from key_gloss.tsv's conflict rows; the control has no marks and a correct alignment by construction, so the design is not matched (CLAUDE.md rule 3, Salviati lesson). Status stays open."
+  }
  ],
- "judge": {"language": "fr"},
+ "judge": {
+  "language": "fr"
+ },
  "written": "25 Sept 2026, TX-BARRT (LANE TX), for .claude/briefs/runs/2026-09-25-lane-tx-barrt.md"
 }
