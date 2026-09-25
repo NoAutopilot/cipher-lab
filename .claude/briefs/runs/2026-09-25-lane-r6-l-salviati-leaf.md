@@ -1,4 +1,9 @@
-LANE R6 L1-L5 -- fr2933-salviati-1525: one leaf per worker, box-keyed method (Sonnet, cap $12, box 60 minutes; disk only, no fetches).
+LANE R6 L1-L5 -- fr2933-salviati-1525: one leaf per worker, box-keyed method (Sonnet; disk only, no fetches).
+Split every leaf into two capped jobs, not one: (a) classify + pass A + pass B + gate, cap $8, box 40 minutes;
+(b) settle only if the gate fails or disagreements exceed 10 percent, a separate worker, cap $5, box 25 minutes,
+reading only the disagreement rows from recon_box_<leaf>/ (RETRO-2026-09-25j: L2/L3/L4 ran their leaf as one
+$12/60min job and overran at 1.37x/1.33x/1.07x; the two jobs the orchestrator had to split off mid-window, L2b and
+L5c, stayed within their smaller caps).
 Common: 2026-09-25-lane-r6-common.md. Intake gate: pasted into your spawn prompt (it must read exit 0; if it does not, stop).
 Read NOTES.md sections "Leaves f.54v-f.57v (LANE R4 J)", "Leaf f.55v (LANE R5 H2)" and "Leaf f.55r (LANE R5 H1)" -- H1's is the method that
 passed at 84.8 percent for about $7.
@@ -15,7 +20,9 @@ pattern), resumed with SendMessage in batches of about five lines, each batch wr
 `python3 recon_box.py passA_<leaf>.tsv passB_<leaf>.tsv recon_box_<leaf>`. Gate >= 80 percent base-code agreement. Pass -> settle every
 disagreement from 5x recrops (settled.tsv with a reason per row), write ciphertext_<leaf>.tsv exactly as ciphertext_f55r.tsv. Fail -> push,
 report and stop, no hand-settling.
-Cost: get_session on yourself after every batch; estimate pass B at your pass A's cost; at 80 percent of cap push a progress section.
+Cost: WALL-CLOCK box only, per the common tail -- never get_session on yourself (RETRO-2026-09-25j: L2/L3/L4 overran
+while reading their own cost as at or under cap). At 75 percent of the box's minutes, push a progress section and stop
+regardless of what a self-read says.
 Notes: do NOT edit NOTES.md (five workers share it). Write your section to `ciphers/fr2933-salviati-1525/leafnotes/<leaf>.md` headed
 "## Leaf <leaf> (25 Sept 2026, LANE R6 L<n>)"; the orchestrator merges. ROOM done: "for LANE R6: salviati <leaf> agreement <x>%,
 <tokens> sign tokens". No solving.

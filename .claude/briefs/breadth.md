@@ -2,7 +2,10 @@
 
 Spec: `specs/<slug>.json`. Run `cheap_tests_in_order[0]` and its matched control, nothing else. Write both
 numbers into the spec's `cheap_test_done` (with date, method, cost). Judge any candidate plaintext with
-`tools/judge_plaintext.py` and paste its output. Cap $3. Report in five lines; do not run test 2.
+`tools/judge_plaintext.py` and paste its output. Cap $3, or $6 if the first test needs an image fetch plus a
+two-pass transcription (never both a subagent pass B and a fetch in the same $3 job -- RETRO-2026-09-25j: bMOU ran
+$7.61 on the flat $3 cap this way, 2.5x over, while every disk-only first test that window landed at $1-2.31). Report
+in five lines; do not run test 2.
 
 Intake step (added 25 Sept 2026 18:14 UTC by LANE B2 after QA/2026-09-25-1740.md failure 3: bMOU, bKAL, bDEB and bPOL ran transcription/IC work with no check-solved verdict on file). Before the cheap test: if `ciphers/<slug>/NOTES.md` exists, run `python3 tools/intake_gate_check.py <slug>` and paste its output into your NOTES.md; exit 0 lets you proceed. Otherwise (no folder, or a nonzero exit) do a minimal check-solved first and write its verdict as NOTES.md lines 1-2 in the gate's format (status word on line 1; line 2 names what was read, with dates): the Cipherbrain post and its comment thread already on disk under sources/schmeh/, a grep of both solver repositories for the item (clone shallow, grep, delete), and one OpenAlex plus one Semantic Scholar query for the item's name with 'solved' or 'decrypted'. Re-run the gate; proceed only on exit 0, else stop with a `blocked` line and the reason. This step counts inside the cap.
 
