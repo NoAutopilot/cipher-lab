@@ -32,6 +32,9 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
   running_key        book-key Vigenere: running_key.py two-stream beam decoder (needs >= 3 corpus texts; slow)
   keyed_running_key  book key through a keyword-mixed tableau (family B', 25 Sept 2026): stage 1 ranks keywords by the
                      ciphertext letter counts, stage 2 beam-decodes the top ones (--param kcorpus=tools/data/nl20 top=3)
+  permuted_tableau   book key through a GENERAL permuted tableau, first B''-c: a free permutation on the cipher side
+                     (family B'', GOLD-B2D 25 Sept 2026): sort-match start, anneal under an n-gram sum-stream proxy,
+                     beam rescoring; control = random S3 of 26! (--param kcorpus=tools/data/nl20 chains=3 evals=30000)
 
 Modes: --target-only-if-gated (default) runs the control, then the target only if the gate is met;
 --control-only runs the control alone (calibration) and logs it. --seeds N runs the control on seeds

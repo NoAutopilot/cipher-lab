@@ -26,7 +26,7 @@ TOOLS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if TOOLS not in sys.path:
     sys.path.insert(0, TOOLS)
 
-REGISTRY = ("masc", "homophonic", "periodic_vigenere", "running_key", "keyed_running_key")
+REGISTRY = ("masc", "homophonic", "periodic_vigenere", "running_key", "keyed_running_key", "permuted_tableau")
 
 
 def draw_window(text, n, seed, accept=None, tries=200, margin=2000):
