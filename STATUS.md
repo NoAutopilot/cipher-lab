@@ -106,6 +106,8 @@ Check-in 25 Sept 02:48 UTC: rate limit allowed on every lane. LX has its N3/N3 A
 
 Check-in 25 Sept 03:52 UTC: LX closed on handoff 03:10 (reopens only for the SO-LINHARES-M0002 pull request, none open yet). OX live, next check-in 03:54: van Beuningen 1657 AUDIT.md, key N3 and letter N1; Paget attempt 1 negative with control; WVH 1069 under the transcription gate; La Garde editions checked; Hellen waits on DECODE images. Rate limit allowed. Still no open copy-free target outside OX's pool.
 
+Check-in 25 Sept 04:25 UTC: LX-ED could not reach Textos Politicos 1993 by any cloud route; queued as LOCAL-QUEUE L10 for the owner's machine (Linhares stays N3). Second opinions queued: SO-LINHARES-M0002, SO-VANBEUNINGEN-1657. Intake had run dry (no open copy-free target outside a lane), so LANE PX opened (session_01KapVpHVzNpnnQce5C8c3LY): DigitArq past its ten-result search limit, dictionary and book codes copy-free, check-solved under the intake gate, then readings.
+
 ## Parent handoff (cipher-lab-7b, session_01K7ZbE95o1pUW5gof8VA5PR, from 18:45 UTC 24 Sept 2026; 7a was session_01EFmUvFAifLKGdBSsW9mjEG, 23 Sept 15:12 to 24 Sept 18:45), kept current
 
 The parent orchestrator runs the hourly check-in (trigger trig_01Ks1wNXPjfn7XW9EucmV9ru (parent 7b, 30-minute cadence while a worker runs, 90 otherwise), self-bound, re-armed by send_later at every firing; its prompt is the
