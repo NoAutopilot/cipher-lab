@@ -1,0 +1,16 @@
+[
+  {
+    "id": "Scorpion-Letter-2.jpg",
+    "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2014/03/Scorpion-Letter-2.jpg",
+    "size": 62115,
+    "sha1": "b49f1215e4f02612dc7b464a75a046e44ace30af",
+    "note": "first encrypted passage per Schmeh (70 chars, 53 unique) -- despite filename order, this is the FIRST cryptogram"
+  },
+  {
+    "id": "Scorpion-Letter-1.jpg",
+    "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2014/03/Scorpion-Letter-1.jpg",
+    "size": 174411,
+    "sha1": "d8324152e2c90cc30b670197a00fbcf2f9cb227b",
+    "note": "second cryptogram per Schmeh (180 chars, 155 unique) -- despite filename order, this is the SECOND cryptogram"
+  }
+]

@@ -1,0 +1,54 @@
+code	count	description	example_position
+PI	2	Greek-pi-like mark: horizontal top bar, two vertical legs	r1c1, r7c1(K reused-no, see K)
+K	2	Latin letter K	r1c2, r7c1
+A	1	Latin letter A	r1c3
+BOWL	1	solid black flat-top dome (filled semicircle, flat side up)	r1c4
+SQNOTCH	1	filled black square with a small white square notch cut near the bottom	r1c5
+GAMMA	1	horizontal top bar with a vertical stroke down (like a mirrored Greek Gamma)	r1c6
+O	4	plain circle outline	r1c7, r3c3-ish(distinct as OWEDGE), r5c7, r6c5
+HOOK	2	corner-bracket stroke, foot turned like a flag (resembles a mirrored numeral 7)	r1c8, r4c2
+DROP	1	thick filled black teardrop/comma shape	r1c9
+HCIRCL	1	circle, left half solid black, right half outline	r1c10
+HEADPHONE	2	arc with a small circle at each end, like a headphone band	r2c1, r7c6
+VENUS	1	small circle over a plus/cross stem (Venus-symbol-like)	r2c2
+CFLAG	1	circle with a small black wedge/flag inside (upper area)	r2c3
+DASH2	1	two short parallel horizontal dashes, one glyph	r2c4
+Y	1	Latin letter Y	r2c5
+Q	1	Latin letter Q	r2c6
+BRACKET1	3	corner-bracket stroke, horizontal top + vertical right descender	r2c7, r5c9, r7c7
+BRACKET2	1	corner-bracket stroke, mirrored/rotated relative to BRACKET1	r2c8
+TFILL	2	thick filled black "T" (flat top bar, solid stem)	r2c9, r3c5
+TARGET	1	circle with a cross through it, crosshair/reticle style	r2c10
+S	2	Latin letter S	r3c1, r6c7
+LAMBDA	2	caret/wedge shape, no baseline (like Greek lambda or "^")	r3c2, r6c8
+OWEDGE	2	circle mostly outline with a small black wedge cut in (variant of CFLAG)	r3c3, r4c3
+TABLE	2	inverted-T / small altar shape, wide flat top on a short stem	r3c4, r6c9
+SQDOT	1	square outline with a small dot centered inside	r3c6
+SQDIAG	1	square split on the diagonal, one triangle solid black	r3c7
+N	1	Latin letter N	r3c8
+FLAG2	1	open flag/bracket shape, partly filled black on one side	r3c9
+ARCH	1	tall solid black dome/arch shape	r3c10
+B	1	Latin letter B	r4c1
+SQSTRIPE	1	filled black square with a thin white horizontal stripe near the bottom	r4c4
+M	1	Latin letter M	r4c5
+CIRCBLACK	1	circle almost entirely solid black with a small white notch	r4c6
+CROSS	1	horizontal bar crossed by a short vertical tick (dagger/plus-like)	r4c7
+R	2	Latin letter R	r4c8, r5c8
+TARGET2	1	circle with a smaller cross through it (smaller variant of TARGET)	r4c9
+RECTNOTCH	3	solid black vertical rectangle with a white notch cut from one side	r4c10, r5c3, r7c8
+U	1	Latin letter U	r5c1
+SQTRI	1	square outline containing a solid black triangle	r5c2
+RECTCORNER	1	rectangle outline with one corner filled solid black	r5c4
+CIRCPIE	1	circle mostly solid black with a pie-slice wedge left white	r5c5
+SLASH	1	single diagonal stroke ("/")	r5c6
+HALFCIRCB	1	circle, bottom half solid black, top half outline	r5c10
+CIRCPIE2	1	circle mostly solid black, wedge cut from a different side than CIRCPIE	r6c1
+SQFLAG	1	square/rectangle mostly solid black with an angled white cut (flag-like)	r6c2
+RECTBLACK	2	solid black rectangle, thick	r6c3, r7c9
+I	2	Latin letter I (plain vertical stroke, serif top)	r6c4, r7c10
+DBLBAR	1	two close vertical strokes forming one glyph (like Roman numeral II)	r6c6
+CUPDOT	1	small upward arc ("u"-shape) with a dot above it	r6c10
+TRIDOT	1	triangle with a dot inside	r7c2
+Z	1	Latin letter Z	r7c3
+SQHALF	1	square, top portion solid black, bottom portion outline	r7c4
+REVE	1	mirrored Latin letter E (or numeral 3 reversed)	r7c5

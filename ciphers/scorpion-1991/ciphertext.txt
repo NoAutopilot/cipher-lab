@@ -1,0 +1,11 @@
+# Scorpion cryptogram 1 (Schmeh's "first encrypted passage", file Scorpion-Letter-2.jpg).
+# Single blind pass, LANE B2 worker bSCO, 25 Sept 2026. 70 tokens, row-major (7 rows x 10),
+# reading top-to-bottom then left-to-right within each row, matching the printed layout.
+# Sign codes are this worker's own inventory (sign_table1.tsv); no word spacing in source.
+PI K A BOWL SQNOTCH GAMMA O HOOK DROP HCIRCL
+HEADPHONE VENUS CFLAG DASH2 Y Q BRACKET1 BRACKET2 TFILL TARGET
+S LAMBDA OWEDGE TABLE TFILL SQDOT SQDIAG N FLAG2 ARCH
+B HOOK OWEDGE SQSTRIPE M CIRCBLACK CROSS R TARGET2 RECTNOTCH
+U SQTRI RECTNOTCH RECTCORNER CIRCPIE SLASH O R BRACKET1 HALFCIRCB
+CIRCPIE2 SQFLAG RECTBLACK I O DBLBAR S LAMBDA TABLE CUPDOT
+K TRIDOT Z SQHALF REVE HEADPHONE BRACKET1 RECTNOTCH RECTBLACK I
