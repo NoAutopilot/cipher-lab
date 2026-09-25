@@ -1,0 +1,25 @@
+{
+ "slug": "clair349-este-guise-1556",
+ "name": "Este (Ferrara) to the duc de Guise, 4 Jan 1557, BnF Clairambault 349 f.9 (cipher letter with a contemporary interlinear decipherment)",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext": "ciphers/clair349-este-guise-1556/ciphertext.tsv (ZX-TR349D, 25 Sept 2026: two blind Opus passes G/H over images/lines_h reconciled and settled from the image; ZX-DEC349 recodes in corrections.tsv applied by promote_settled.py). Columns line, position, sign, gloss (the interlinear decipherment written above the codes), confidence.",
+ "ciphertext_source": "Gallica, BnF Clairambault 349 f.9 (images/clair349_f9_right_full.jpg; images/manifest.json)",
+ "key_source": "BnF fr.20974 pp.57 and 69 (period key, same template, read cell by cell in ZX-KEY349: key_alpha.tsv, key_nomen.tsv)",
+ "alphabet": "digits 3-106 (1-3 digit codes, the 2 written as a z), 80 atlas signs S01-S80 (letters, doubles, nulls, word codes), and a word divider '|'",
+ "constraints": [
+  "homophonic substitution with doubles, ten nulls and a nomenclator of about 56 word codes (key_alpha.tsv, key_nomen.tsv)",
+  "the leaf carries a small contemporary interlinear decipherment above most codes (874 of 1174 rows glossed): known plaintext, grade C where it agrees with the key",
+  "key homographs as drawn: 5 = D and L; 22 = sc? and pour; 9 = C and round-ss; S37 = T and fit; S17 = Monsr and fist; S32 = Q and n'aye (settled per token in exceptions.tsv from the gloss)",
+  "the vertical bar is a word divider, not in the key"
+ ],
+ "cheap_tests_in_order": [
+  "apply the period key with tools/decode_key.py (decode.json) and judge the reading against fr16 with a within-line token-shuffle control (5 seeds) -- ZX-DEC349, 25 Sept 2026"
+ ],
+ "cheap_test_done": [],
+ "judge": {
+  "language": "fr"
+ },
+ "written": "25 Sept 2026, ZX-DEC349 (LANE ZX), for .claude/briefs/runs/2026-09-25-lane-zx-dec349.md"
+}

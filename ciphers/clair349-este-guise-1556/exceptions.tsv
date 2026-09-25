@@ -1,0 +1,443 @@
+line	position	sign	value	grade	reason
+01	6	9	c	I	gloss read s over 9, but the word needs c (receu 01, escrire 02, ce 03): 9=c, the gloss s is a c
+01	10	62	e	M	gloss 'i' disagrees with key 62=e; key kept
+01	11	S23	s	I	word code S23 (armee de mer) inside spelled text, glossed 's': atlas confusion, gloss taken
+01	13	5	l	C	gloss l over 5 (D and L share 5; gloss d 21, l 10)
+01	16	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+01	18	S32	que	I	gloss quel over S32: Q standing for que
+01	19	S35	vous	I	S35 glossed so: the vous word sign (S51) matched to S35 (secretary v read s)
+01	23	5	l	C	gloss l over 5 (D and L share 5; gloss d 21, l 10)
+02	5	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+02	6	9	c	I	gloss read s over 9, but the word needs c (receu 01, escrire 02, ce 03): 9=c, the gloss s is a c
+02	9	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+02	10	26	e	M	gloss 'u' disagrees with key 26=e; key kept
+02	12	S16	d	I	S16 (Le Duc de Guyse) glossed d/du in running text: an atlas confusion with a d-form; gloss taken
+02	18	S03	g	M	gloss 'a' disagrees with key S03=g; key kept
+02	19	4	t	I	unkeyed sign 4; value from its gloss
+02	22	S03	g	M	gloss 'a' disagrees with key S03=g; key kept
+02	26	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+02	30	S16	d	I	S16 (Le Duc de Guyse) glossed d/du in running text: an atlas confusion with a d-form; gloss taken
+03	1	4	ss	I	unkeyed sign 4; value from its gloss
+03	4	22	pour	C	rule 22=pour (gloss po/pu 7 of 9 glossed; never sc)
+03	7	26	e	M	gloss 'c' disagrees with key 26=e; key kept
+03	8	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+03	12	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+03	13	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+03	17	S16	d	I	S16 (Le Duc de Guyse) glossed d/du in running text: an atlas confusion with a d-form; gloss taken
+03	19	9	c	I	gloss read s over 9, but the word needs c (receu 01, escrire 02, ce 03): 9=c, the gloss s is a c
+03	21	S32	que	C	gloss que over S32: Q standing for que
+03	23	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+03	24	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+03	27	64	i	M	gloss 'l' disagrees with key 64=i; key kept
+03	30	S35	vous	I	S35 glossed so: the vous word sign (S51) matched to S35 (secretary v read s)
+04	1	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+04	5	S16	d	I	S16 (Le Duc de Guyse) glossed d/du in running text: an atlas confusion with a d-form; gloss taken
+04	7	S16	d	I	S16 (Le Duc de Guyse) glossed d/du in running text: an atlas confusion with a d-form; gloss taken
+04	8	26	e	M	gloss 't' disagrees with key 26=e; key kept
+04	9	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+04	12	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+04	13	5	l	C	gloss l over 5 (D and L share 5; gloss d 21, l 10)
+04	15	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+04	18	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+04	20	22	pour	C	rule 22=pour (gloss po/pu 7 of 9 glossed; never sc)
+04	21	5	l	C	gloss l over 5 (D and L share 5; gloss d 21, l 10)
+04	23	S32	que	I	gloss quel over S32: Q standing for que
+04	27	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+04	28	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+05	8	S16	d	I	S16 (Le Duc de Guyse) glossed d/du in running text: an atlas confusion with a d-form; gloss taken
+05	9	26	e	M	gloss 'r' disagrees with key 26=e; key kept
+05	10	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+05	15	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+05	18	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+05	19	S32	q	C	rule S32=q before a V code (gloss q 9)
+05	22	68	tt	I	unkeyed sign 68; value from its gloss
+06	1	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+06	7	15	n	M	gloss 'en' disagrees with key 15=n; key kept
+06	13	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+06	16	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+06	19	7	u	M	gloss 'y' disagrees with key 7=u; key kept
+06	24	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+06	27	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+06	29	11	n	I	unkeyed sign 11; value from its gloss
+06	30	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+06	31	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+06	34	S32	que	C	gloss que over S32: Q standing for que
+06	35	5	l	C	gloss l over 5 (D and L share 5; gloss d 21, l 10)
+06	37	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+06	38	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+07	3	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+07	5	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+07	7	S32	que	I	gloss quel over S32: Q standing for que
+07	8	S35	vous	I	S35 glossed so: the vous word sign (S51) matched to S35 (secretary v read s)
+07	14	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+07	18	60	i	M	gloss 't' disagrees with key 60=i; key kept
+07	21	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+07	23	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+07	26	68	ll	I	68 is not a key code; the Doubles ll code is 69
+07	28	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+07	30	S32	que	C	gloss que over S32: Q standing for que
+07	31	S35	vous	I	S35 glossed so: the vous word sign (S51) matched to S35 (secretary v read s)
+07	35	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+08	4	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+08	8	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+08	11	68	ll	I	68 is not a key code; the Doubles ll code is 69
+08	16	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+08	18	22	pour	C	rule 22=pour (gloss po/pu 7 of 9 glossed; never sc)
+08	20	S27	l	M	gloss 'f' disagrees with key S27=l; key kept
+08	22	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+08	24	S14	g	I	word code S14 (leurs) inside spelled text, glossed 'g': atlas confusion, gloss taken
+08	27	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+08	29	S16	d	I	S16 (Le Duc de Guyse) glossed d/du in running text: an atlas confusion with a d-form; gloss taken
+08	32	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+08	35	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+09	3	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+09	4	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+09	6	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+09	9	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+09	11	5	l	C	gloss l over 5 (D and L share 5; gloss d 21, l 10)
+09	13	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+09	21	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+09	28	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+09	30	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+09	35	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+09	37	5	l	C	gloss l over 5 (D and L share 5; gloss d 21, l 10)
+10	1	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+10	3	11	n	I	unkeyed sign 11; value from its gloss
+10	10	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+10	11	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+10	12	26	e	M	gloss 'u' disagrees with key 26=e; key kept
+10	14	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+10	22	5	l	C	gloss l over 5 (D and L share 5; gloss d 21, l 10)
+10	30	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+10	32	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+10	34	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+11	1	22	pour	C	rule 22=pour (gloss po/pu 7 of 9 glossed; never sc)
+11	2	S37	t	I	rule S37=t (gloss t 32 of 35; never fit)
+11	7	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+11	14	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+11	17	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+11	19	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+11	20	16	e	M	gloss 'i' disagrees with key 16=e; key kept
+11	23	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+11	25	S52	ne	M	gloss 'lle' disagrees with key S52=ne; key kept
+11	30	15	n	M	gloss 'h' disagrees with key 15=n; key kept
+11	34	60	i	M	gloss 'l' disagrees with key 60=i; key kept
+11	42	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+11	50	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+11	53	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+11	55	S31	p	M	gloss 'r' disagrees with key S31=p; key kept
+11	56	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+11	58	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+11	60	S32	q	C	rule S32=q before a V code (gloss q 9)
+11	63	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+11	65	S32	que	C	gloss que over S32: Q standing for que
+12	4	S27	l	M	gloss 'r' disagrees with key S27=l; key kept
+12	9	S32	que	C	gloss que over S32: Q standing for que
+12	10	S35	vous	I	S35 glossed vos: the vous word sign (S51) matched to S35
+12	11	S52	m	I	word code S52 (ne) inside spelled text, glossed 'm': atlas confusion, gloss taken
+12	16	73	y	M	gloss 'll' disagrees with key 73=y; key kept
+12	26	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+12	27	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+12	28	26	e	M	gloss 'o' disagrees with key 26=e; key kept
+12	29	9	c	I	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+12	32	22	pour	I	rule 22=pour (gloss po/pu 7 of 9 glossed; never sc)
+13	6	S32	que	I	rule S32 not before V = que (gloss que/quel 8; never n'aye)
+13	7	S35	vous	I	S35 glossed vo: the vous word sign (S51) matched to S35
+13	10	S76	r	I	word code S76 (Le Duc d'Aumale) inside spelled text, glossed 'r': atlas confusion, gloss taken
+13	12	73	y	M	gloss 'z' disagrees with key 73=y; key kept
+13	16	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+13	19	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+13	22	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+13	26	8	c	I	unkeyed sign 8; value from its gloss
+13	28	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+13	31	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+13	33	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+13	35	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+13	36	17	h	M	gloss 'ch' disagrees with key 17=h; key kept
+13	38	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+14	8	S40	r	I	S40 (Z) glossed r: the R-loop S33 matched to S40 (ZX-TR349D lead 3)
+14	11	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+14	14	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+14	22	12	a	M	gloss 'd' disagrees with key 12=a; key kept
+14	24	15	n	M	gloss 'u' disagrees with key 15=n; key kept
+14	25	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+14	28	S32	que	I	rule S32 not before V = que (gloss que/quel 8; never n'aye)
+14	30	S35	vous	I	S35 glossed so: the vous word sign (S51) matched to S35 (secretary v read s)
+14	32	14	a	M	gloss 'u' disagrees with key 14=a; key kept
+14	33	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+14	36	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+14	38	S40	z	M	gloss 'x' disagrees with key S40=z; key kept
+15	2	S35	vous	I	S35 glossed vo: the vous word sign (S51) matched to S35
+15	7	72	i	I	unkeyed sign 72; value from its gloss
+15	11	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+15	12	26	e	M	gloss 'u' disagrees with key 26=e; key kept
+15	14	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+15	17	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+15	20	6	um	I	unkeyed sign 6; value from its gloss
+15	28	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+15	31	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+15	36	16	e	M	gloss 'o' disagrees with key 16=e; key kept
+16	7	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+16	9	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+16	14	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+16	16	S32	q	C	rule S32=q before a V code (gloss q 9)
+16	20	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+16	23	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+16	25	52	pp	M	gloss 'pr' disagrees with key 52=pp; key kept
+17	3	44	o	M	gloss 'e' disagrees with key 44=o; key kept
+17	4	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+17	6	S32	que	I	rule S32 not before V = que (gloss que/quel 8; never n'aye)
+17	8	16	e	M	gloss 'c' disagrees with key 16=e; key kept
+17	11	S37	t	I	rule S37=t (gloss t 32 of 35; never fit)
+17	15	X	faut	I	unkeyed sign X; value from its gloss
+17	16	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+17	17	16	e	M	gloss 'c' disagrees with key 16=e; key kept
+17	18	68	ll	I	68 is not a key code; the Doubles ll code is 69
+17	20	60	i	M	gloss 'r' disagrees with key 60=i; key kept
+17	22	S32	q	C	rule S32=q before a V code (gloss q 9)
+17	24	24	i	M	gloss 'tt' disagrees with key 24=i; key kept
+17	25	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+17	27	X	t	I	unkeyed sign X; value from its gloss
+17	29	10	u	I	10 is not a key code: a split 102/104 (V)
+17	31	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+17	32	X	o	I	unkeyed sign X; value from its gloss
+18	4	S34	r	M	gloss 'f' disagrees with key S34=r; key kept
+18	9	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+18	14	X	quil	I	unkeyed sign X; value from its gloss
+18	16	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+18	17	S29	m	M	gloss 'gm' disagrees with key S29=m; key kept
+18	18	6	e	I	unkeyed sign 6; value from its gloss
+18	19	60	i	M	gloss 't' disagrees with key 60=i; key kept
+18	20	68	ll	I	68 is not a key code; the Doubles ll code is 69
+18	21	2	u	I	unkeyed sign 2; value from its gloss
+18	23	10	u	I	10 is not a key code: a split 102/104 (V)
+18	30	8	l	I	unkeyed sign 8; value from its gloss
+18	31	82	o	M	gloss 'e' disagrees with key 82=o; key kept
+18	32	15	n	M	gloss 'u' disagrees with key 15=n; key kept
+18	33	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+18	36	12	a	M	gloss 'd' disagrees with key 12=a; key kept
+18	37	6	e	I	unkeyed sign 6; value from its gloss
+19	1	S27	l	M	gloss 's' disagrees with key S27=l; key kept
+19	3	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+19	9	S32	que	I	rule S32 not before V = que (gloss que/quel 8; never n'aye)
+19	10	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+19	12	X	n	I	unkeyed sign X; value from its gloss
+19	14	60	i	M	gloss 'l' disagrees with key 60=i; key kept
+19	16	S29	m	M	gloss 'on' disagrees with key S29=m; key kept
+19	18	64	i	M	gloss 'h' disagrees with key 64=i; key kept
+19	22	6	e	I	unkeyed sign 6; value from its gloss
+19	24	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+19	26	X	et	I	unkeyed sign X; value from its gloss
+19	27	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+19	30	6	e	I	unkeyed sign 6; value from its gloss
+19	31	60	i	M	gloss 'l' disagrees with key 60=i; key kept
+19	32	68	ll	I	68 is not a key code; the Doubles ll code is 69
+20	11	9	c	I	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+20	16	68	ll	I	68 is not a key code; the Doubles ll code is 69
+20	22	9	c	I	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+20	23	60	i	M	gloss 'l' disagrees with key 60=i; key kept
+20	26	58	tt	M	gloss 'd' disagrees with key 58=tt; key kept
+20	27	2	o	I	unkeyed sign 2; value from its gloss
+20	29	S37	t	I	rule S37=t (gloss t 32 of 35; never fit)
+20	30	22	pour	I	rule 22=pour (gloss po/pu 7 of 9 glossed; never sc)
+21	1	9	c	I	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+21	4	S13	t	I	word code S13 (artillerie) inside spelled text, glossed 't': atlas confusion, gloss taken
+21	9	S76	r	I	word code S76 (Le Duc d'Aumale) inside spelled text, glossed 'r': atlas confusion, gloss taken
+21	11	60	i	M	gloss 't' disagrees with key 60=i; key kept
+21	13	S52	m	I	word code S52 (ne) inside spelled text, glossed 'm': atlas confusion, gloss taken
+21	14	S35	s	M	gloss 'le' disagrees with key S35=s; key kept
+21	15	9	c	I	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+21	17	64	i	M	gloss 't' disagrees with key 64=i; key kept
+21	19	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+21	20	60	i	M	gloss 't' disagrees with key 60=i; key kept
+21	21	S33	r	M	gloss 'u' disagrees with key S33=r; key kept
+21	25	10	u	I	10 is not a key code: a split 102/104 (V)
+21	27	S13	tu	I	word code S13 (artillerie) inside spelled text, glossed 'tu': atlas confusion, gloss taken
+21	30	9	c	I	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+21	31	17	h	M	gloss 's' disagrees with key 17=h; key kept
+21	32	4	o	I	unkeyed sign 4; value from its gloss
+21	33	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+22	3	X	n	I	unkeyed sign X; value from its gloss
+22	4	16	e	M	gloss 'a' disagrees with key 16=e; key kept
+22	6	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+22	9	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+22	11	16	e	M	gloss 'u' disagrees with key 16=e; key kept
+22	13	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+22	14	4	o	I	unkeyed sign 4; value from its gloss
+22	17	26	e	M	gloss 'd' disagrees with key 26=e; key kept
+22	18	S23	e	I	word code S23 (armee de mer) inside spelled text, glossed 'e': atlas confusion, gloss taken
+22	21	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+22	23	10	u	I	10 is not a key code: a split 102/104 (V)
+22	24	4	z	I	unkeyed sign 4; value from its gloss
+22	26	X	n	I	unkeyed sign X; value from its gloss
+22	29	52	pp	M	gloss 'd' disagrees with key 52=pp; key kept
+22	30	6	e	I	unkeyed sign 6; value from its gloss
+22	32	S27	l	M	gloss 'f' disagrees with key S27=l; key kept
+22	33	64	i	M	gloss 'f' disagrees with key 64=i; key kept
+22	34	10	u	I	10 is not a key code: a split 102/104 (V)
+23	1	60	i	M	gloss 't' disagrees with key 60=i; key kept
+23	3	S32	que	I	rule S32 not before V = que (gloss que/quel 8; never n'aye)
+23	4	24	i	M	gloss 't' disagrees with key 24=i; key kept
+23	11	4	o	I	unkeyed sign 4; value from its gloss
+23	15	60	i	M	gloss 't' disagrees with key 60=i; key kept
+23	17	10	u	I	10 is not a key code: a split 102/104 (V)
+23	19	62	e	M	gloss 'u' disagrees with key 62=e; key kept
+23	20	S34	r	M	gloss 's' disagrees with key S34=r; key kept
+23	22	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+23	23	10	u	I	10 is not a key code: a split 102/104 (V)
+23	26	22	pour	C	rule 22=pour (gloss po/pu 7 of 9 glossed; never sc)
+23	28	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+23	29	10	u	I	10 is not a key code: a split 102/104 (V)
+23	32	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+24	2	S33	r	M	gloss 'f' disagrees with key S33=r; key kept
+24	6	10	u	I	10 is not a key code: a split 102/104 (V)
+24	8	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+24	9	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+24	10	S34	r	M	gloss 'x' disagrees with key S34=r; key kept
+24	13	62	e	M	gloss 'z' disagrees with key 62=e; key kept
+24	18	S64	b	I	word code S64 (quant) inside spelled text, glossed 'b': atlas confusion, gloss taken
+24	19	5	l	C	gloss l over 5 (D and L share 5; gloss d 21, l 10)
+24	22	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+24	26	4	o	I	unkeyed sign 4; value from its gloss
+24	32	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+24	34	S32	que	I	rule S32 not before V = que (gloss que/quel 8; never n'aye)
+24	35	X	f	I	unkeyed sign X; value from its gloss
+24	38	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+24	39	S34	r	M	gloss 'x' disagrees with key S34=r; key kept
+25	1	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+25	2	26	e	M	gloss 'a' disagrees with key 26=e; key kept
+25	4	60	i	M	gloss 'l' disagrees with key 60=i; key kept
+25	6	22	pour	C	rule 22=pour (gloss po/pu 7 of 9 glossed; never sc)
+25	7	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+25	8	26	e	M	gloss 'le' disagrees with key 26=e; key kept
+25	9	87	o	I	unkeyed sign 87; value from its gloss
+25	12	10	u	I	10 is not a key code: a split 102/104 (V)
+25	14	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+25	16	S34	r	M	gloss 'x' disagrees with key S34=r; key kept
+25	18	8	a	I	unkeyed sign 8; value from its gloss
+25	23	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+25	24	64	i	M	gloss 'f' disagrees with key 64=i; key kept
+25	28	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+25	29	9	c	I	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+25	30	44	o	M	gloss 'po' disagrees with key 44=o; key kept
+26	1	X	uu	I	unkeyed sign X; value from its gloss
+26	2	26	e	M	gloss 'c' disagrees with key 26=e; key kept
+26	4	S35	s	M	gloss 'bo' disagrees with key S35=s; key kept
+26	8	16	e	M	gloss 'u' disagrees with key 16=e; key kept
+26	9	10	u	I	10 is not a key code: a split 102/104 (V)
+26	11	S34	r	M	gloss 'u' disagrees with key S34=r; key kept
+26	12	26	e	M	gloss 'c' disagrees with key 26=e; key kept
+26	14	S32	que	I	rule S32 not before V = que (gloss que/quel 8; never n'aye)
+26	17	S52	m	I	word code S52 (ne) inside spelled text, glossed 'm': atlas confusion, gloss taken
+26	18	4	f	I	lone 4 glossed f: S02 (F) or S36 per ZX-TR349D lead 1
+26	20	X	f	I	unkeyed sign X; value from its gloss
+26	21	16	e	M	gloss 'i' disagrees with key 16=e; key kept
+26	24	S32	que	I	rule S32 not before V = que (gloss que/quel 8; never n'aye)
+26	25	S35	s	M	gloss 'bo' disagrees with key S35=s; key kept
+26	27	16	e	M	gloss 'u' disagrees with key 16=e; key kept
+26	28	X	n	I	unkeyed sign X; value from its gloss
+26	29	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+26	30	8	s	I	unkeyed sign 8; value from its gloss
+27	5	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+27	6	10	u	I	10 is not a key code: a split 102/104 (V)
+27	8	16	e	M	gloss 'co' disagrees with key 16=e; key kept
+27	14	S04	&	M	gloss 'e' disagrees with key S04=&; key kept
+27	15	S32	que	I	rule S32 not before V = que (gloss que/quel 8; never n'aye)
+27	16	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+27	17	26	e	M	gloss 'c' disagrees with key 26=e; key kept
+27	18	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+27	19	16	e	M	gloss 'c' disagrees with key 16=e; key kept
+27	20	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+27	22	S52	ac	I	word code S52 (ne) inside spelled text, glossed 'ac': atlas confusion, gloss taken
+27	23	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+27	24	16	e	M	gloss 'u' disagrees with key 16=e; key kept
+27	29	X	g	I	unkeyed sign X; value from its gloss
+27	31	62	e	M	gloss 'a' disagrees with key 62=e; key kept
+27	32	S33	r	M	gloss 'ra' disagrees with key S33=r; key kept
+27	35	X	r	I	unkeyed sign X; value from its gloss
+27	37	26	e	M	gloss 'c' disagrees with key 26=e; key kept
+28	2	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+28	3	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+28	6	9	c	I	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+28	12	4	o	I	unkeyed sign 4; value from its gloss
+28	14	10	d	I	unkeyed sign 10; value from its gloss
+28	17	6	rr	I	unkeyed sign 6; value from its gloss
+28	19	X	f	I	unkeyed sign X; value from its gloss
+28	24	22	pour	I	rule 22=pour (gloss po/pu 7 of 9 glossed; never sc)
+28	25	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+28	26	10	u	I	10 is not a key code: a split 102/104 (V)
+28	33	S64	bo	I	word code S64 (quant) inside spelled text, glossed 'bo': atlas confusion, gloss taken
+29	1	10	u	I	10 is not a key code: a split 102/104 (V)
+29	3	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+29	5	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+29	6	64	i	M	gloss 'b' disagrees with key 64=i; key kept
+29	7	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+29	8	S23	f	I	word code S23 (armee de mer) inside spelled text, glossed 'f': atlas confusion, gloss taken
+29	10	S33	r	M	gloss 'e' disagrees with key S33=r; key kept
+29	13	8	o	I	unkeyed sign 8; value from its gloss
+29	14	2	u	I	unkeyed sign 2; value from its gloss
+29	17	2	i	I	unkeyed sign 2; value from its gloss
+29	20	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+29	22	60	i	M	gloss 'f' disagrees with key 60=i; key kept
+29	24	4	u	I	unkeyed sign 4; value from its gloss
+29	28	10	u	I	10 is not a key code: a split 102/104 (V)
+29	30	4	o	I	unkeyed sign 4; value from its gloss
+29	34	S60	o	I	word code S60 (vne?) inside spelled text, glossed 'o': atlas confusion, gloss taken
+29	36	6	e	I	unkeyed sign 6; value from its gloss
+30	2	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+30	4	68	ll	I	68 is not a key code; the Doubles ll code is 69
+30	8	60	i	M	gloss 't' disagrees with key 60=i; key kept
+30	9	X	g	I	unkeyed sign X; value from its gloss
+30	10	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+30	12	S17	fist|Monsr [ ]	M	S17 gloss 'l' settles neither fist nor Monsr
+30	18	8	b	I	unkeyed sign 8; value from its gloss
+30	20	S52	m	I	word code S52 (ne) inside spelled text, glossed 'm': atlas confusion, gloss taken
+30	21	S65	mon?	M	gloss 'wol' disagrees with key S65=mon?; key kept
+30	22	26	e	M	gloss 'u' disagrees with key 26=e; key kept
+30	24	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+30	25	4	o	I	unkeyed sign 4; value from its gloss
+30	29	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+31	1	S23	fa	I	word code S23 (armee de mer) inside spelled text, glossed 'fa': atlas confusion, gloss taken
+31	3	60	i	M	gloss 'l' disagrees with key 60=i; key kept
+31	4	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+31	6	X	n	I	unkeyed sign X; value from its gloss
+31	7	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+31	8	2	r	I	unkeyed sign 2; value from its gloss
+31	11	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+31	13	S34	r	M	gloss 'z' disagrees with key S34=r; key kept
+31	23	X	fait	I	unkeyed sign X; value from its gloss
+31	24	9	c	I	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+31	25	1	p	I	unkeyed sign 1; value from its gloss
+31	26	6	e	I	unkeyed sign 6; value from its gloss
+31	28	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+31	29	2	i	I	unkeyed sign 2; value from its gloss
+31	32	S32	que	I	rule S32 not before V = que (gloss que/quel 8; never n'aye)
+31	33	5	l	C	gloss l over 5 (D and L share 5; gloss d 21, l 10)
+32	2	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+32	4	4	o	I	unkeyed sign 4; value from its gloss
+32	8	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+32	10	4	y	I	unkeyed sign 4; value from its gloss
+32	13	8	o	I	unkeyed sign 8; value from its gloss
+32	15	X	n	I	unkeyed sign X; value from its gloss
+32	16	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)
+32	18	4	y	I	unkeyed sign 4; value from its gloss
+32	20	26	e	M	gloss 'c' disagrees with key 26=e; key kept
+32	22	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+32	25	10	u	I	10 is not a key code: a split 102/104 (V)
+32	30	18	cc	M	gloss 'u' disagrees with key 18=cc; key kept
+32	31	4	s	I	lone 4 glossed s: S36 (S) per ZX-TR349D lead 1
+32	33	9	c	C	rule 9=c (gloss c 22 of 33; the 3 glossed s sit in receu/escrire/ce; never the round-ss double)
+32	34	8	o	I	unkeyed sign 8; value from its gloss
+32	35	7	u	M	gloss 'umm' disagrees with key 7=u; key kept
+33	1	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+33	3	S17	fist	C	gloss f over S17: fist (Monsr/fist homograph)
+33	5	6	e	I	unkeyed sign 6; value from its gloss
+33	8	06	uu	I	unkeyed sign 06; value from its gloss
+33	9	62	e	M	gloss 'r' disagrees with key 62=e; key kept
+33	14	10	u	I	10 is not a key code: a split 102/104 (V)
+33	16	4	o	I	unkeyed sign 4; value from its gloss
+33	18	10	u	I	10 is not a key code: a split 102/104 (V)
+33	20	5	d|l	M	no gloss: 5 is D or L (gloss d 21, l 10; no positional rule separates them)
+33	21	5	d	C	gloss d over 5 (D and L share 5; gloss d 21, l 10)
+33	23	8	o	I	unkeyed sign 8; value from its gloss
+33	28	S37	t	C	rule S37=t (gloss t 32 of 35; never fit)

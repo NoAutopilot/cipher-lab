@@ -14,6 +14,34 @@ import csv, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 
+def apply_corrections(rows):
+    """corrections.tsv (ZX-DEC349, 25 Sept 2026): one row per token recoded from the lines_h image after the
+    settle, keyed by line and the ZX-TR349D ciphertext.tsv position (the row order before any correction):
+    line, position, old, new, partner, reason, grade. new=DEL drops the token (the second half of a split code)."""
+    p = os.path.join(HERE, 'corrections.tsv')
+    if not os.path.exists(p):
+        return rows
+    corr = {(r['line'].zfill(2), int(r['position'])): r
+            for r in csv.DictReader(open(p, encoding='utf-8'), delimiter='\t')}
+    out, n, last = [], 0, None
+    for row in rows:
+        ln = row[0]
+        n = n + 1 if ln == last else 1
+        last = ln
+        c = corr.pop((ln, n), None)
+        if c is None:
+            out.append(row)
+            continue
+        if c['old'] != row[2]:
+            raise SystemExit(f'corrections.tsv {ln}/{n}: old {c["old"]!r} but ciphertext has {row[2]!r}')
+        if c['new'] == 'DEL':
+            continue
+        out.append((ln, row[1], c['new'], row[3], 'M', 'recode', c['reason']))
+    if corr:
+        raise SystemExit(f'corrections.tsv rows not matched: {sorted(corr)}')
+    return out
+
+
 def build():
     settled = {}
     for r in csv.DictReader(open(os.path.join(HERE, 'settled.tsv'), encoding='utf-8'), delimiter='\t'):
@@ -34,6 +62,7 @@ def build():
         if s['sign'] != 'DEL':
             rows.append((ln, float(pos), s['sign'], s['gloss'], 'M', 'new', s['why']))
     rows.sort(key=lambda x: (x[0], x[1]))
+    rows = apply_corrections(rows)
     out, n, last = [], 0, None
     for ln, _, sign, gloss, conf, src, why in rows:
         n = n + 1 if ln == last else 1
