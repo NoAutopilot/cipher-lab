@@ -1,5 +1,43 @@
 partial
 
+Ingram, *Two Views of British India: the private correspondence of Mr. Dundas and Lord Wellesley, 1798-1801*
+(Bath, 1970; IA `twoviewsofbritis0000melv`) searched by this worker via `be-api.us.archive.org/fts/v1/search`
+with control "Dundas" (hit, five real body-text snippets returned, e.g. "Wellesley also wrote to Dundas
+fourteen secret and confidential letters"): no hit for the D623/4-5, /22, /24, /28-29 catalogue phrases, no
+hit for either 5 or 9 July/March 1800 date forms, "Admiral Rainier" (D623/36) recurs only generically (same
+false-positive pattern as the earlier Montgomery Martin check), and "cipher" itself returns zero hits
+anywhere in the book.
+
+## Check-solved (LANE CX, 25 Sept 2026)
+
+This pass closes the one named risk left open by the 23 September 2026 sweep below (the "Edition risk not
+yet closed" section): whether Ingram 1970 prints any of the still-open D623 despatches. The full six-source
+sweep (web, print, community lists, DECODE, Bourdeau, Aymeloglu) was already run and logged in the 23
+September 2026 sections below by an earlier worker; this session did not re-run those five, only the Ingram
+addition, per this session's job brief.
+
+1. **Route-finding.** `archive.org/advancedsearch.php?q=title:(Two Views of British India)` (1 request) found
+   identifier `twoviewsofbritis0000melv`; `archive.org/metadata/twoviewsofbritis0000melv` (1 request) shows
+   `access-restricted-item: true`, collections `internetarchivebooks`/`inlibrary`/`printdisabled` — a
+   lending-only, print-disabled-tier item (Access playbook: cannot be borrowed by this account). Per CLAUDE.md
+   item 3, full-text search still works on lending-only items via `be-api.us.archive.org/fts/v1/search`.
+2. **Controlled full-text search (be-api, no login).** Control query `q=Dundas` returned a real hit with body
+   text (not just metadata), confirming the route works and the OCR text is genuinely searchable, not just a
+   catalogue stub. Target queries: `"proclamation issued at Mauritius"` (D623/4-5, 0 hits), `"I flatter myself
+   you will now be of the opinion"` (D623/22, 0 hits), `"re-distributing"` (D623/24, 0 hits), `"government
+   records" Seringapatam` (D623/28-29, 0 hits), `"Admiral Rainier"` (D623/36, 1 hit but the name recurs five
+   times in unrelated naval-command sentences — the same generic-name false positive already documented for
+   "treaty of Hyderabad" in the Montgomery Martin check, not the despatch itself, whose own scope text is only
+   "Extract from a letter to Admiral R, mainly in cipher" with no distinctive content to search on), `"5th of
+   March, 1800"` and `"9th of July, 1800"` (0 hits each), and `cipher` alone (0 hits anywhere in the book — the
+   editor never discusses ciphered despatches). 10 be-api requests, >=1.6s apart.
+3. **Item-level scope text refetched** (`searcharchives.bl.uk`, 8 requests this pass: D623/4, /5, /24, /27,
+   /28, /30, /35, /36) to get exact catalogue wording for the search terms above; D623/30 and /35 both read
+   only "Extract from a letter, mainly in cipher" — no distinctive content in the catalogue record at all, so
+   no phrase search is possible for those two from the catalogue alone (unchanged blocker, not new).
+
+Intake verdict: open.
+
 # Mornington (Wellesley) despatches to Dundas, 1798-1800 — BL Mss Eur D623
 
 QUEUE row: N1 (sources/solver-diffs/2026-09-23-non-decode-hits.tsv, "Candidates not on DECODE").
@@ -173,3 +211,9 @@ proposed, before committing to the full nine-item run. No email sent, no price g
 ## Edition risk not yet closed (23 September 2026, orchestrator)
 
 Edward Ingram, ed., *Two Views of British India: The Private Correspondence of Mr Dundas and Lord Wellesley, 1798-1801* (Bath, 1970) prints the private Dundas-Wellesley letters of exactly these years and is not on the Internet Archive. Despatches to Dundas "mostly in cipher" are likely to be that private correspondence. Before any imaging payment, check Ingram 1970 by date for D623/4, /5, /22, /24, /27, /28, /30, /35, /36: an IA loan if held, HathiTrust search-only, or a library copy. Until then the best case for this target is unknown, not N3.
+
+**(corrected LANE CX 25 Sept 2026): Ingram 1970 *is* on the Internet Archive** (`twoviewsofbritis0000melv`,
+a lending-only/print-disabled item, not full-view or borrowable, but full-text searchable without login via
+`be-api.us.archive.org/fts/v1/search` — see the "Check-solved (LANE CX, 25 Sept 2026)" section above). Checked
+with a control and found no hit for any of the still-open despatches; this conditional is now cleared, no IA
+loan or library copy needed for the Ingram question specifically.
