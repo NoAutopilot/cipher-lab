@@ -102,6 +102,8 @@ may stay; secrets may not); spend is not a restriction on the Max plan, the rate
 blocks, route around it; all credentials fixed on this account at 00:47 UTC. The other account's parent (7b) and its
 lanes (R5, N4, B, V2) are idle until its window resets 26 Sept 13:00 UTC; their targets are theirs.
 
+Check-in 25 Sept 02:48 UTC: rate limit allowed on every lane. LX has its N3/N3 AUDIT.md synced to the corrected reading (H 25, M 1) and SO-LINHARES-M0002 queued for the ChatGPT runner (no [SO-] pull request open yet); maco 86 sibling sweep at 17 of 21 items, no further cipher; LX expected to write its handoff at its 03:09 check-in. DX closed on handoff 02:12. OX live with four workers (van Beuningen key, Hellen 1752, Paget 1714, Breda confirmed found-solved). No new lane opened: the queue holds no open, copy-free target outside OX's pool; the next unlocks are the owner's copy orders, the DECRYPT role upgrade (ASKS 42/43) and the other account's R5 intake when it resumes.
+
 ## Parent handoff (cipher-lab-7b, session_01K7ZbE95o1pUW5gof8VA5PR, from 18:45 UTC 24 Sept 2026; 7a was session_01EFmUvFAifLKGdBSsW9mjEG, 23 Sept 15:12 to 24 Sept 18:45), kept current
 
 The parent orchestrator runs the hourly check-in (trigger trig_01Ks1wNXPjfn7XW9EucmV9ru (parent 7b, 30-minute cadence while a worker runs, 90 otherwise), self-bound, re-armed by send_later at every firing; its prompt is the
