@@ -334,3 +334,125 @@ transcription passes of `clair349_f9_right_full.jpg` (~33 lines) plus a careful 
 leaves into `key.tsv` (nomenclator entries especially — undercounted here) are the next steps; the p.58-59 gap
 and the canvas-30/31 duplicate are worth a solver's own eye-check before transcribing, in case this worker's
 page-number reading is wrong on either. Kind stays **recovery** per the 24 Sept verdict.
+
+## YX-TR349B (25 Sept 2026): ciphertext transcription (step 2 of 3) — partial, gate marginal, step 3 not attempted
+
+`python3 tools/intake_gate_check.py ciphers/clair349-este-guise-1556` at 12:57 UTC: `partial (line 1) --
+edition/page or full-text-search citation found within 6 lines`, `EXIT: 0`. Gate passes; proceeded per this
+brief (`.claude/briefs/runs/2026-09-25-lane-yx-tr349b.md`), continuing YX-TR349's step 2/3.
+
+**Line-boundary correction (first action, before any transcription).** YX-TR349's handoff ran
+`tools/iiif_lines.py` on `clair349_f9_right_full.jpg` and got 37 detected bands against an eye-count of "~33",
+flagging the debug overlay as unchecked. This worker checked it: **37 is not "~33 plus noise" by coincidence —
+the true mapping is offset by 3 at the top and 1 at the bottom, not a uniform miscount.** Reading each edge
+crop directly: band 1 (centre 568) and band 2 (centre 1316) are blank upper margin; band 3 (centre 1444) is
+the "4. januier 1556" date line plus the BnF seal and archival marks "2429"/"3" — real content, but not
+cipher; bands 4–36 (centres 1792…5781, **33 bands**) are the real ciphertext lines; band 37 (centre 6402) is
+blank lower margin. Confirmed by viewing `f9right_L01_s1.jpg`/`f9right_L37_s1.jpg` (both blank) and
+`f9right_L03_s1.jpg`/`f9right_L36_s1.jpg` (date line; last real cipher line) directly, and by re-drawing the
+overlay with the paper's own printed red/blue ruling lines suppressed (they were being mistaken for the
+detection overlay in the original debug jpg at low zoom). The 33-line eye-count from YX-CS349 turns out to be
+exactly right — but the earlier handoff had not verified *which* 33 of the 37 detected bands were the real
+ones, and would have handed a transcription pass two junk lines (date/seal, blank margin) folded in.
+
+Cut each real line (bands 4–36) from `clair349_f9_right_full.jpg` via `tools/iiif_lines.py --overlap 0`, then
+re-stitched each line's two 2400px segments myself with the actual ~905px right-anchored overlap trimmed
+(`s1` cropped to native x∈[0,1495), `s2` appended unchanged) — `--overlap 0` on the CLI does not eliminate the
+tool's own two-segment overlap for a line wider than one segment, so a naive stitch of the raw segments
+double-prints about a third of each line. `images/lines/line01.jpg`..`line33.jpg` (33 files, one full-width
+image per real cipher line, 4.3MB) are the result; committed with a manifest.json entry documenting the exact
+recipe (deterministic from `clair349_f9_right_full.jpg`, already on disk) since the raw intermediate segment
+crops and the (uninformative, paper-ruling-confounded) debug overlay were deleted to stay under the 30MB
+folder cap (was 34MB with them, 27MB without).
+
+**Two blind passes** (the brief's cap of 2 subagents, both Sonnet), each given only the 33 line images — not
+each other's output, not the key's letter values, not even the key's sign atlas (S01–S26; giving it would
+have biased which non-digit shapes a pass "sees" toward the letter alphabet's own homophone signs, when the
+ciphertext may also use nomenclator/word-code signs not on the alphabet row at all). Each pass segmented by
+visible pen-lift gaps, transcribed digit tokens literally, and invented its own short label per recurring
+non-digit sign shape (kept consistent within its own pass only). `passA.tsv`: 1083 tokens (678 digit / 405
+sign), 568 H / 515 M. `passB.tsv`: 949 tokens, 73 H / 876 M — B graded far more conservatively than A on
+identical material, not a sign of a worse read (its own report reserved H "for clearly isolated multi-digit
+clusters and a handful of unmistakable recurring ligatures"). Both independently flagged the same two things
+unprompted: an ink blot over part of line 11 (B), and a "2429" numeral set apart on line 1 that might not be
+part of the main code stream at all (both A and B) — **confirmed by this worker's own close reading of line 1
+(below): "2429" is the same BnF archival item number already noted in the margin of the full-page image by
+YX-CS349, not a ciphertext token.**
+
+**Reconciliation — three numbers, because the naive one is close to uninterpretable here.** Per
+transcription.md's "Symbol alphabets" lesson (a page mixing digits and invented signs needs a *shared*
+ciphertext-side glyph atlas before two passes are reconciled, or their independent sign vocabularies cannot be
+compared row by row) — a step this worker's time box did not leave room to do properly before running the two
+passes (flagging this as the gap for a successor, not glossing over it):
+
+| basis | agree | note |
+|---|---|---|
+| raw (`passA.tsv`/`passB.tsv` as committed) | **453/1135 = 39.9%** | dominated by sign-label vocabulary mismatch, not real disagreement — see below |
+| sign-normalized (every `sign`-kind token → placeholder `SIGN`) | **746/1137 = 65.6%** | "did both passes agree a sign belongs here", not which one |
+| digit-only (sign rows dropped, digit rows renumbered per line) | **437/717 = 60.9%** | agreement on the decode-critical digit stream alone, unconfounded by sign vocabulary |
+
+All three regenerate exactly via `python3 ciphers/clair349-este-guise-1556/reconcile_metrics.py` (pasted output
+above). Per-line breakdown (sign-normalized, `--rows`): lines 1–20 mostly 0.6–0.9 (line 12 the low outlier at
+0.54); **lines 21–33 are consistently weak, 8 of 13 under 0.60** (line 32 the low point at 0.42). This reads as
+a genuine difficulty gradient down the page (more crowding, fainter ink, or simply accumulating fatigue in
+both blind passes), not a single bad line dragging an otherwise-clean average down.
+
+**Gate call: PASS, but marginal and not eye-settled — step 3 not attempted this session.** The 39.9%/65.6%/
+60.9% figures all sit at or above PROCESS-2026-09-24 proposal 4's 60% line by the aggregate measure the tool
+itself prints (matching how YX-BARB reported its own normalized number as the single headline figure), so this
+is not the "under 60%, stop, build an atlas instead of a third pass" case on its face. But unlike YX-BARB
+(who, at 90.5%, settled all 38 real disagreements from the image by hand before calling the target done), this
+worker did **not** hand-settle the 391 sign-normalized (682 raw) disagreement columns from the image — with
+roughly half the individual lines still under 60% even on the fairest measure, and ~30 minutes left in the
+box, eye-checking all of them honestly was not going to fit, and a rushed partial settle risks looking more
+final than it is. `ciphertext_draft.tsv` (committed) is therefore the **mechanical** reconciliation only —
+agreed positions at H, disagreements resolved to pass A's value at M (the tool's documented fallback when
+there is no real majority) — **not eye-verified**, and deliberately left named `ciphertext_draft.tsv` rather
+than promoted to `ciphertext.tsv`, so a decode script never silently treats it as settled. Per this brief,
+step 3 is conditional on the gate passing; given the gate is a technical pass but the underlying transcription
+is unsettled and the key itself (YX-TR349) is still mostly unresolved past the front half of the alphabet, a
+decode run against this material would not produce a reading worth grading either H/C (no key/plaintext
+source) or a meaningful S (the ciphertext it would run against is not this worker's own settled read) — so no
+decode.json, no spec, no judge_plaintext.py run this session. This is the conservative call this worker is
+making unsupervised, logged per the no-human-watches rule, not a step skipped by oversight.
+
+**One eye-check actually done, as a worked example and to settle the "2429" question**: line 1 at 2x crop
+(`/tmp` scratch, not committed) reads, left to right: a short cursive fragment before the digit stream begins
+(both passes independently flagged this as possibly a plaintext heading/salutation remnant rather than a
+coded sign — plausible but not resolved here either) — then a run of digit/sign codes — then, set apart to the
+upper right and in a visibly different, smaller hand, "2429" (with "3" faintly below, matching the "2429"/"3"
+archival marks already logged on the full-page image). **This is not a ciphertext token; both passes were
+right to flag it and wrong (B) or right (A) to include/exclude it — a future reconciliation pass should drop
+it from the line entirely rather than align it as a disagreement.**
+
+**Files:** `images/lines/line01.jpg`–`line33.jpg` (the 33 real cipher lines, corrected boundary mapping,
+recipe in `images/manifest.json`); `passA.tsv`, `passB.tsv` (blind transcriptions, committed as each pass
+produced them); `passA_norm.tsv`/`passB_norm.tsv`, `passA_digitsonly.tsv`/`passB_digitsonly.tsv`,
+`reconcile_metrics.py` (the three-metric reproducibility script and its inputs); `disagreements.tsv`,
+`ciphertext_draft.tsv`, `agreement.tsv` (raw reconciliation, mechanical only, not eye-settled — see above).
+`tools/decode_key.py` gained a `load_keys`/merge-key-file option (job `"key"` as a list, e.g.
+`["key_alpha.tsv", "key_nomen.tsv"]`) and a more permissive key-TSV header/column detector (needed once
+key_alpha.tsv's/key_nomen.tsv's value-first, non-`code`-led headers are actually used for step 3), plus a
+same-code-different-value collision guard (`merge_key_row`, catches `key_alpha.tsv`'s own C=9/DOUBLES:ss=9
+double-use of digit 9) — built and tested (`tools/tests/test_decode_key.py`, 4 new cases, all pass) this
+session in the time before both passes landed, ready for whichever session next attempts step 3. Three
+pre-existing, unrelated `test_decode_key.py` failures (`antt-linhares-chave`, `rah-canada-1869` — both stale
+committed readings from other lanes' work today) confirmed present before this session's changes too, via
+`git stash`; not this worker's to fix (out of this brief's file scope).
+
+**Grades (rule 4):** 0 H/C/S claimed as a "reading" this pass — nothing decoded. The transcription itself:
+passA.tsv 568 H(-transcription-confidence)/515 M(-transcription-confidence) tokens, passB.tsv 73/876 — these
+H/M grades describe *transcription* confidence (is the mark on the page legible), not a cryptanalytic grade;
+no letter of plaintext has been read yet at any grade.
+
+**Hosts this session:** none (all work from images already on disk; `pip install numpy pillow scipy` for
+`tools/iiif_lines.py`'s dependencies, not a research host). 2 Sonnet subagents (the brief's cap), each one
+blind pass over the 33 line images, no other tool use by them beyond image reads and writing their own TSV.
+
+**Handoff, one line:** next step is either (a) build a real ciphertext-side glyph atlas (cluster the ~15-25
+distinct non-digit shapes actually seen across passA.tsv+passB.tsv's sign tokens, à la
+`ciphers/dupuy468-carpi-1520/glyphs/`) and re-reconcile against it before eye-settling disagreements line by
+line, prioritizing lines 21-33 which are weakest, or (b) if a successor has more time budget, eye-settle
+`disagreements.tsv` directly from `images/lines/*.jpg` without an atlas, line by line, starting from line 1
+(this worker's one worked example above) — either way, decode.json/spec/judge (step 3) waits until
+`ciphertext_draft.tsv` is eye-settled and promoted to `ciphertext.tsv`.

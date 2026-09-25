@@ -1,0 +1,1136 @@
+line	position	sign	confidence	alt	why
+01	1	2429	M	A:-	gap
+01	2	salutation-cursive	M	B:flourish-open	differ
+01	3	6	H		agree
+01	4	cross-mark	M	B:plus-mark	differ
+01	5	1	M	B:12	differ
+01	6	z-flourish	M	B:tie-flourish	differ
+01	7	73	H		agree
+01	8	Ao-ligature	M	B:-	gap
+01	9	z-flourish	M	B:Ao-lig	differ
+01	10	6	H		agree
+01	11	9	H		agree
+01	12	16	H		agree
+01	13	10	H		agree
+01	14	4	H		agree
+01	15	ff-ligature	M	B:ff-lig	differ
+01	16	6	H		agree
+01	17	tie-flourish	M	A:-	gap
+01	18	z-flourish	M	B:bar	differ
+01	19	5	H		agree
+01	20	16	H		agree
+01	21	5	H		agree
+01	22	R-loop	M	B:R-mark	differ
+01	23	6	H		agree
+01	24	tie-flourish	M	A:-	gap
+01	25	z-flourish	M	B:Y-mark	differ
+01	26	loop-Y	M	B:bar	differ
+01	27	12	H		agree
+01	28	9	M	A:-	gap
+01	29	05	M	B:5	differ
+01	30	z-flourish	M	B:tie-flourish	differ
+01	31	6	H		agree
+01	32	2429	M	B:-	gap
+02	1	10	H		agree
+02	2	z-flourish	M	B:tie-flourish	differ
+02	3	uu-ligature	M	B:uu-sign	differ
+02	4	6	H		agree
+02	5	cross-mark	M	B:x-mark	differ
+02	6	9	H		agree
+02	7	Ao-ligature	M	B:Ao-lig	differ
+02	8	ff-ligature	M	B:loop-sign	differ
+02	9	6	H		agree
+02	10	R-loop	M	B:R-mark	differ
+02	11	z-flourish	M	B:tie-flourish	differ
+02	12	6	H		agree
+02	13	bar	M	A:-	gap
+02	14	9	H		agree
+02	15	10	H		agree
+02	16	z-flourish	M	B:tie-flourish	differ
+02	17	7	M	B:16	differ
+02	18	6	H		agree
+02	19	cross-mark	M	B:4	differ
+02	20	1	H		agree
+02	21	g-hook	M	B:5	differ
+02	22	cross-mark	M	B:Ao-lig	differ
+02	23	10	H		agree
+02	24	4	H		agree
+02	25	cross-mark	M	B:-	gap
+02	26	na-ligature	M	B:nao-sign	differ
+02	27	6	H		agree
+02	28	z-flourish	M	B:tie-flourish	differ
+02	29	6	H		agree
+02	30	cross-mark	M	B:-	gap
+02	31	uu-ligature	M	B:uu-sign	differ
+02	32	16	H		agree
+02	33	5	M	A:-	gap
+02	34	104	H		agree
+02	35	f-hook	M	B:-	gap
+02	36	12	M	B:fia-sign	differ
+03	1	cross-mark	M	B:7	differ
+03	2	6	H		agree
+03	3	z-flourish	M	B:tie-flourish	differ
+03	4	22	H		agree
+03	5	z-flourish	M	B:-	gap
+03	6	Ao-ligature	M	B:tie-flourish	differ
+03	7	z-flourish	M	B:Ao-lig	differ
+03	8	6	H		agree
+03	9	4	H		agree
+03	10	bar	M	A:-	gap
+03	11	5	H		agree
+03	12	8	M	B:-	gap
+03	13	z-flourish	M	B:tie-flourish	differ
+03	14	15	H		agree
+03	15	9	H		agree
+03	16	R-loop	M	B:pi-mark	differ
+03	17	z-flourish	M	B:tie-flourish	differ
+03	18	6	H		agree
+03	19	bar	M	A:-	gap
+03	20	5	H		agree
+03	21	16	H		agree
+03	22	9	H		agree
+03	23	z-flourish	M	B:tie-flourish	differ
+03	24	6	H		agree
+03	25	loop-Y	M	B:Y-mark	differ
+03	26	cross-mark	M	B:plus-mark	differ
+03	27	9	H		agree
+03	28	60	H		agree
+03	29	9	H		agree
+03	30	tie-flourish	M	A:-	gap
+03	31	cross-mark	M	B:plus-mark	differ
+03	32	cross-mark	M	B:7	differ
+03	33	flag-mark	M	B:bar	differ
+03	34	5	H		agree
+03	35	14	H		agree
+03	36	Ao-ligature	M	B:Ao-lig	differ
+03	37	16	M	B:6	differ
+04	1	cross-mark	M	B:plus-mark	differ
+04	2	6	H		agree
+04	3	5	M	A:-	gap
+04	4	delta-mark	M	B:tie-flourish	differ
+04	5	na-ligature	M	B:na-sign	differ
+04	6	104	H		agree
+04	7	z-flourish	M	B:tie-flourish	differ
+04	8	6	H		agree
+04	9	cross-mark	M	B:plus-mark	differ
+04	10	7	H		agree
+04	11	R-loop	M	B:pi-mark	differ
+04	12	5	H		agree
+04	13	16	H		agree
+04	14	hash-mark	M	B:x-mark	differ
+04	15	14	H		agree
+04	16	64	H		agree
+04	17	to-ligature	M	B:to-sign	differ
+04	18	z-flourish	M	B:tie-flourish	differ
+04	19	5	H		agree
+04	20	16	H		agree
+04	21	uy-ligature	M	B:uy-sign	differ
+04	22	f-hook	M	B:bar	differ
+04	23	6	H		agree
+04	24	tie-flourish	M	A:-	gap
+04	25	cross-mark	M	B:x-mark	differ
+04	26	to-ligature	M	B:to	differ
+04	27	z-flourish	M	B:9	differ
+04	28	bo-ligature	M	B:tie-flourish	differ
+04	29	tc-ligature	M	B:bo-sign	differ
+04	30	104	M	B:tc-sign	differ
+05	1	z-flourish	M	B:tie-flourish	differ
+05	2	6	H		agree
+05	3	15	H		agree
+05	4	16	M	A:-	gap
+05	5	tie-flourish	M	A:-	gap
+05	6	10	M	B:bar	differ
+05	7	z-flourish	M	B:5	differ
+05	8	delta-mark	M	B:tie-flourish	differ
+05	9	z-flourish	M	B:5	differ
+05	10	Ao-ligature	M	B:Ao-lig	differ
+05	11	6	M	B:5	differ
+05	12	z-flourish	M	B:tie-flourish	differ
+05	13	6	H		agree
+05	14	9	H		agree
+05	15	14	M	B:1	differ
+05	16	8	M	B:4	differ
+05	17	12	M	B:bar	differ
+05	18	R-loop	M	B:pi-mark	differ
+05	19	ff-ligature	M	B:ff-lig	differ
+05	20	z-flourish	M	B:tie-flourish	differ
+05	21	6	H		agree
+05	22	4	H		agree
+05	23	delta-mark	M	B:-	gap
+05	24	z-flourish	M	B:loop-sign	differ
+05	25	10	H		agree
+05	26	z-flourish	M	B:-	gap
+05	27	16	M	B:-	gap
+05	28	6	H		agree
+05	29	z-flourish	M	B:16	differ
+05	30	6	H		agree
+05	31	z-flourish	M	B:tie-flourish	differ
+05	32	f-hook	M	B:bar	differ
+05	33	5	H		agree
+05	34	6	H		agree
+05	35	0	M	B:4	differ
+05	36	12	H		agree
+05	37	z-flourish	M	B:-	gap
+05	38	z-flourish	M	B:-	gap
+05	39	6	M	B:tie-flourish	differ
+06	1	cross-mark	M	B:plus-mark	differ
+06	2	to-ligature	M	B:tc-sign	differ
+06	3	16	H		agree
+06	4	bar	M	A:-	gap
+06	5	z-flourish	M	B:3	differ
+06	6	60	H		agree
+06	7	na-ligature	M	B:tie-flourish	differ
+06	8	66	H		agree
+06	9	z-flourish	M	B:tie-flourish	differ
+06	10	6	H		agree
+06	11	ua-ligature	M	B:ua-sign	differ
+06	12	f-hook	M	B:bar	differ
+06	13	44	H		agree
+06	14	Ao-ligature	M	B:Ao-lig	differ
+06	15	to-ligature	M	B:to	differ
+06	16	12	M	B:1	differ
+06	17	flag-mark	M	B:25	differ
+06	18	cross-mark	M	B:plus-mark	differ
+06	19	16	H		agree
+06	20	z-flourish	M	B:bar	differ
+06	21	6	H		agree
+06	22	15	H		agree
+06	23	to	H		agree
+06	24	6	H		agree
+06	25	tie-flourish	M	A:-	gap
+06	26	z-flourish	M	B:pi-mark	differ
+06	27	R-loop	M	B:R-mark	differ
+06	28	16	H		agree
+06	29	loop-Y	M	B:Y-mark	differ
+06	30	5	H		agree
+06	31	164	H		agree
+06	32	cross-mark	M	B:plus-mark	differ
+07	1	5	H		agree
+07	2	z-flourish	M	B:tie-flourish	differ
+07	3	Ao-ligature	M	B:Ao-lig	differ
+07	4	9	H		agree
+07	5	16	H		agree
+07	6	cross-mark	M	B:x-mark	differ
+07	7	np-ligature	M	B:bar	differ
+07	8	ff-ligature	M	B:np-sign	differ
+07	9	uu-ligature	M	B:uu-sign	differ
+07	10	z-flourish	M	B:tie-flourish	differ
+07	11	6	H		agree
+07	12	1	M	B:15	differ
+07	13	16	H		agree
+07	14	loop-SL	M	B:-	gap
+07	15	f-hook	M	B:pi-mark	differ
+07	16	5	M	B:bar	differ
+07	17	44	M	B:544	differ
+07	18	6	H		agree
+07	19	0	M	B:-	gap
+07	20	z-flourish	M	B:tie-flourish	differ
+07	21	6	H		agree
+07	22	1	M	B:15	differ
+07	23	5	M	B:to	differ
+07	24	to-ligature	M	B:bar	differ
+07	25	6	M	B:to	differ
+07	26	z-flourish	M	B:tie-flourish	differ
+07	27	11	M	B:66	differ
+07	28	5	M	B:16	differ
+07	29	R-loop	M	B:x-mark	differ
+07	30	16	M	B:ny-sign	differ
+07	31	loop-Y	M	B:bar	differ
+07	32	5	H		agree
+07	33	uu	M	A:-	gap
+07	34	12	M	A:-	gap
+07	35	15	M	A:-	gap
+07	36	164	M	B:16	differ
+08	1	77	H		agree
+08	2	bar	M	A:-	gap
+08	3	cross-mark	M	B:tc-sign	differ
+08	4	SL-loop	M	B:5L-sign	differ
+08	5	ua-ligature	M	B:ua-sign	differ
+08	6	44	H		agree
+08	7	1	H		agree
+08	8	5	H		agree
+08	9	f-hook	M	B:tie-flourish	differ
+08	10	16	M	B:6	differ
+08	11	10	H		agree
+08	12	4	H		agree
+08	13	64	M	B:-	gap
+08	14	z-flourish	M	B:65	differ
+08	15	6	M	B:26	differ
+08	16	uu-ligature	M	B:uu	differ
+08	17	6	H		agree
+08	18	z-flourish	M	B:-	gap
+08	19	1	M	B:tie-flourish	differ
+08	20	5	M	B:15	differ
+08	21	to	H		agree
+08	22	z-flourish	M	B:tie-flourish	differ
+08	23	hash-mark	M	B:ff-lig	differ
+08	24	16	H		agree
+08	25	R-loop	M	B:pi-mark	differ
+08	26	z-flourish	M	B:tie-flourish	differ
+08	27	6	H		agree
+08	28	g-hook	M	B:-	gap
+08	29	1	M	B:-	gap
+08	30	z-flourish	M	B:-	gap
+08	31	Ao-ligature	M	B:12	differ
+08	32	5	M	B:Ao-lig	differ
+08	33	10	M	B:510	differ
+08	34	cross-mark	M	B:x-mark	differ
+08	35	12	H		agree
+08	36	60	H		agree
+08	37	tc-ligature	M	B:td	differ
+09	1	5104	M	A:-	gap
+09	2	x	M	A:-	gap
+09	3	5	H		agree
+09	4	104	M	B:64	differ
+09	5	5	M	B:9	differ
+09	6	649	M	B:tc-sign	differ
+09	7	to-ligature	M	B:bar	differ
+09	8	cross-mark	M	B:x-mark	differ
+09	9	60	H		agree
+09	10	5	M	B:8	differ
+09	11	cross-mark	M	B:bar	differ
+09	12	16	H		agree
+09	13	Ao-ligature	M	B:-	gap
+09	14	z-flourish	M	B:Ao-lig	differ
+09	15	6	H		agree
+09	16	bar	M	A:-	gap
+09	17	16	H		agree
+09	18	11	M	B:15	differ
+09	19	to-ligature	M	B:to	differ
+09	20	6	H		agree
+09	21	z-flourish	M	B:tie-flourish	differ
+09	22	R-loop	M	B:pi-mark	differ
+09	23	14	H		agree
+09	24	8	M	B:-	gap
+09	25	z-flourish	M	B:bar	differ
+09	26	9	H		agree
+09	27	14	H		agree
+09	28	flag-mark	M	B:tie-flourish	differ
+09	29	4	H		agree
+09	30	flag-mark	M	B:-	gap
+09	31	te-ligature	M	B:loop-sign	differ
+09	32	16	H		agree
+09	33	5	H		agree
+09	34	z-flourish	M	B:tie-flourish	differ
+09	35	6	H		agree
+10	1	to	H		agree
+10	2	4	M	A:-	gap
+10	3	14	M	B:uu-sign	differ
+10	4	ua-ligature	M	B:tc-sign	differ
+10	5	16	H		agree
+10	6	Ao-ligature	M	B:Ao-lig	differ
+10	7	flag-mark	M	B:bar	differ
+10	8	12	M	B:loop-sign	differ
+10	9	R-loop	M	B:pi-mark	differ
+10	10	9	H		agree
+10	11	z-flourish	M	B:tie-flourish	differ
+10	12	6	H		agree
+10	13	5	H		agree
+10	14	to	M	B:-	gap
+10	15	16	H		agree
+10	16	6	M	A:-	gap
+10	17	10	M	A:-	gap
+10	18	tie-flourish	M	A:-	gap
+10	19	60	M	B:44	differ
+10	20	4	M	B:64	differ
+10	21	4	M	B:tie-flourish	differ
+10	22	6	H		agree
+10	23	z-flourish	M	B:bar	differ
+10	24	5	H		agree
+10	25	12	M	B:-	gap
+10	26	uu-ligature	M	B:uu-sign	differ
+10	27	12	H		agree
+10	28	z-flourish	M	B:tie-flourish	differ
+10	29	6	H		agree
+10	30	16	H		agree
+10	31	18	M	B:15	differ
+10	32	98	M	B:95	differ
+10	33	z-flourish	M	B:tie-flourish	differ
+10	34	R-loop	M	B:pi-mark	differ
+10	35	6	H		agree
+10	36	z-flourish	M	B:-	gap
+10	37	f-hook	M	B:tie-flourish	differ
+11	1	22	H		agree
+11	2	46	M	B:-	gap
+11	3	8	M	B:16	differ
+11	4	z-flourish	M	B:9	differ
+11	5	104	H		agree
+11	6	tc-ligature	M	B:tc-sign	differ
+11	7	16	H		agree
+11	8	4	M	B:bar	differ
+11	9	z-flourish	M	B:tie-flourish	differ
+11	10	9	H		agree
+11	11	10	H		agree
+11	12	tc-sign	M	A:-	gap
+11	13	Ao-ligature	M	B:Ao-lig	differ
+11	14	16	H		agree
+11	15	4	M	B:bar	differ
+11	16	8	H		agree
+11	17	z-flourish	M	B:-	gap
+11	18	9	H		agree
+11	19	12	H		agree
+11	20	4	M	B:-	gap
+11	21	16	H		agree
+11	22	4	H		agree
+11	23	4	H		agree
+11	24	15	H		agree
+11	25	k-hook	M	B:tc	differ
+11	26	hash-mark	M	B:hash	differ
+11	27	10	H		agree
+11	28	4	H		agree
+11	29	4	H		agree
+11	30	6	M	B:-	gap
+11	31	4	M	B:64	differ
+11	32	14	H		agree
+11	33	15	H		agree
+11	34	tc-ligature	M	B:tc	differ
+11	35	9	H		agree
+11	36	bonato-sign	M	A:-	gap
+11	37	12	M	A:-	gap
+11	38	ff-lig	M	A:-	gap
+11	39	14	M	A:-	gap
+11	40	Ao-lig	M	A:-	gap
+11	41	16	M	A:-	gap
+11	42	4	M	A:-	gap
+11	43	4	M	A:-	gap
+11	44	8	M	B:tie-flourish	differ
+11	45	z-flourish	M	B:6	differ
+12	1	z-flourish	M	B:-	gap
+12	2	8	M	B:-	gap
+12	3	64	H		agree
+12	4	to-ligature	M	B:-	gap
+12	5	z-flourish	M	B:-	gap
+12	6	4	M	B:-	gap
+12	7	z-flourish	M	B:-	gap
+12	8	6	M	B:tc-sign	differ
+12	9	Ao-ligature	M	B:Ao-lig	differ
+12	10	z-flourish	M	B:tie-flourish	differ
+12	11	4	H		agree
+12	12	26	H		agree
+12	13	loop-sign	M	A:-	gap
+12	14	tie-flourish	M	A:-	gap
+12	15	loop-Y	M	B:bar	differ
+12	16	hash-mark	M	B:Y-mark	differ
+12	17	5	H		agree
+12	18	hash	M	A:-	gap
+12	19	44	M	B:544	differ
+12	20	60	H		agree
+12	21	6	H		agree
+12	22	z-flourish	M	B:-	gap
+12	23	73	H		agree
+12	24	pi-mark	M	A:-	gap
+12	25	F-loop	M	B:9	differ
+12	26	12	H		agree
+12	27	5	H		agree
+12	28	tie-flourish	M	A:-	gap
+12	29	4	M	B:6	differ
+12	30	z-flourish	M	B:fa-sign	differ
+12	31	flag-mark	M	B:5	differ
+12	32	8	H		agree
+12	33	plus-mark	M	A:-	gap
+12	34	15	M	B:5	differ
+12	35	6	H		agree
+12	36	9	H		agree
+12	37	12	M	B:tie-flourish	differ
+13	1	12	H		agree
+13	2	Ao-ligature	M	B:Ao-lig	differ
+13	3	60	M	B:6	differ
+13	4	z-flourish	M	B:tie-flourish	differ
+13	5	loop-Y	M	B:Y-mark	differ
+13	6	5	H		agree
+13	7	14	H		agree
+13	8	10	H		agree
+13	9	z-flourish	M	B:-	gap
+13	10	Ao-ligature	M	B:Ao-lig	differ
+13	11	16	H		agree
+13	12	3	M	B:-	gap
+13	13	z-flourish	M	B:tie-flourish	differ
+13	14	R-loop	M	B:bar	differ
+13	15	1	M	B:6	differ
+13	16	5	M	B:15	differ
+13	17	to-ligature	M	B:to	differ
+13	18	16	H		agree
+13	19	ua-ligature	M	B:ua-sign	differ
+13	20	104	H		agree
+13	21	9	M	B:-	gap
+13	22	4	M	B:94	differ
+13	23	7	M	B:47	differ
+13	24	6	H		agree
+13	25	16	H		agree
+13	26	to-ligature	M	B:to	differ
+13	27	4	H		agree
+13	28	4	H		agree
+13	29	10	H		agree
+13	30	4	H		agree
+13	31	to	H		agree
+13	32	z-flourish	M	B:tie-flourish	differ
+13	33	6	H		agree
+13	34	9	H		agree
+13	35	17	M	A:-	gap
+13	36	178	M	B:8	differ
+13	37	z-flourish	M	B:tie-flourish	differ
+14	1	5	H		agree
+14	2	8	M	B:-	gap
+14	3	9	H		agree
+14	4	1	M	A:-	gap
+14	5	14	M	B:4	differ
+14	6	5	H		agree
+14	7	4	H		agree
+14	8	16	H		agree
+14	9	R-loop	M	B:R-mark	differ
+14	10	z-flourish	M	B:tie-flourish	differ
+14	11	loop-Y	M	B:15	differ
+14	12	to-ligature	M	B:to	differ
+14	13	5	H		agree
+14	14	flag-mark	M	B:plus-mark	differ
+14	15	12	H		agree
+14	16	60	H		agree
+14	17	Ao-ligature	M	B:Ao-lig	differ
+14	18	16	H		agree
+14	19	z-flourish	M	B:bar	differ
+14	20	12	H		agree
+14	21	6	H		agree
+14	22	f-hook	M	B:plus-mark	differ
+14	23	15	H		agree
+14	24	cross-mark	M	B:plus-mark	differ
+14	25	60	H		agree
+14	26	loop-Y	M	B:Y-mark	differ
+14	27	5	H		agree
+14	28	14	H		agree
+14	29	100	H		agree
+14	30	z	M	B:-	gap
+14	31	60	H		agree
+14	32	to-ligature	M	B:-	gap
+14	33	16	H		agree
+14	34	R-loop	M	B:-	gap
+14	35	z-flourish	M	B:pi-mark	differ
+14	36	6	H		agree
+15	1	v-loop	M	B:loop-sign	differ
+15	2	4	H		agree
+15	3	5	H		agree
+15	4	12	H		agree
+15	5	104	H		agree
+15	6	Ao-ligature	M	B:Ao-lig	differ
+15	7	16	H		agree
+15	8	R-loop	M	B:R-mark	differ
+15	9	6	H		agree
+15	10	z-flourish	M	B:tie-flourish	differ
+15	11	15	H		agree
+15	12	to-ligature	M	B:to	differ
+15	13	z-flourish	M	B:tie-flourish	differ
+15	14	6	H		agree
+15	15	ua-ligature	M	B:-	gap
+15	16	9	M	B:-	gap
+15	17	flag-mark	M	B:uas-sign	differ
+15	18	98	H		agree
+15	19	z-flourish	M	B:tie-flourish	differ
+15	20	7	H		agree
+15	21	16	H		agree
+15	22	6	H		agree
+15	23	60	M	B:bo	differ
+15	24	6	H		agree
+15	25	z-flourish	M	B:tie-flourish	differ
+15	26	74	H		agree
+15	27	4	M	B:-	gap
+15	28	10	M	B:-	gap
+15	29	z-flourish	M	B:410	differ
+15	30	55	M	B:255	differ
+15	31	60	H		agree
+15	32	4	M	B:-	gap
+15	33	m-ligature	M	B:mz-sign	differ
+15	34	z-flourish	M	B:6	differ
+15	35	65	M	B:5	differ
+15	36	58	M	B:8	differ
+15	37	16	H		agree
+16	1	Ao-ligature	M	B:-	gap
+16	2	7	H		agree
+16	3	Ao	M	B:Ao-lig	differ
+16	4	6	H		agree
+16	5	z-flourish	M	B:tie-flourish	differ
+16	6	5	H		agree
+16	7	10	H		agree
+16	8	z-flourish	M	B:tie-flourish	differ
+16	9	cross-mark	M	B:x-mark	differ
+16	10	5	H		agree
+16	11	1	H		agree
+16	12	cross-mark	M	B:4	differ
+16	13	Ao-ligature	M	B:Ao	differ
+16	14	16	H		agree
+16	15	to-ligature	M	B:to	differ
+16	16	60	H		agree
+16	17	R-loop	M	B:loop-sign	differ
+16	18	10	H		agree
+16	19	z-flourish	M	B:tie-flourish	differ
+16	20	16	H		agree
+16	21	bar	M	A:-	gap
+16	22	57	H		agree
+16	23	9	H		agree
+16	24	z-flourish	M	B:tie-flourish	differ
+16	25	8	H		agree
+16	26	flag-mark	M	B:tie-flourish	differ
+16	27	60	H		agree
+16	28	tc-ligature	M	B:-	gap
+16	29	6	M	B:tie-flourish	differ
+16	30	12	H		agree
+16	31	6	H		agree
+16	32	4	M	B:-	gap
+16	33	1	H		agree
+16	34	5	M	B:15	differ
+16	35	16	H		agree
+16	36	loop-flourish	M	B:loop-sign	differ
+17	1	10	M	B:16	differ
+17	2	4	M	B:tie-flourish	differ
+17	3	64	H		agree
+17	4	hash-mark	M	B:ff-lig	differ
+17	5	9	H		agree
+17	6	16	H		agree
+17	7	tau-mark	M	B:tautc-sign	differ
+17	8	14	H		agree
+17	9	16	H		agree
+17	10	1	M	B:-	gap
+17	11	z-flourish	M	B:-	gap
+17	12	1	M	B:-	gap
+17	13	5	M	B:15	differ
+17	14	to	H		agree
+17	15	x-mark	M	A:-	gap
+17	16	flag-mark	M	B:fty-sign	differ
+17	17	f-hook	M	B:tautcc-sign	differ
+17	18	tau-mark	M	B:ff-lig	differ
+17	19	9	H		agree
+17	20	16	H		agree
+17	21	6	H		agree
+17	22	9	M	A:-	gap
+17	23	1	H		agree
+17	24	4	H		agree
+17	25	v0	M	B:400	differ
+17	26	flag-mark	M	B:tie-flourish	differ
+17	27	7	H		agree
+17	28	z-flourish	M	B:-	gap
+17	29	4	H		agree
+17	30	5	H		agree
+18	1	loop-flourish	M	B:bar	differ
+18	2	4	M	B:167	differ
+18	3	m-ligature	M	B:to	differ
+18	4	167	M	B:1	differ
+18	5	to-ligature	M	B:tie-flourish	differ
+18	6	16	H		agree
+18	7	4	H		agree
+18	8	g-hook	M	B:9	differ
+18	9	R-loop	M	B:loop-sign	differ
+18	10	6	H		agree
+18	11	to-ligature	M	B:4	differ
+18	12	ny-ligature	M	B:tie-flourish	differ
+18	13	quil-ligature	M	B:guic-sign	differ
+18	14	f-hook	M	B:ny-sign	differ
+18	15	ny-ligature	M	B:uu-sign	differ
+18	16	uu-ligature	M	B:66	differ
+18	17	60	H		agree
+18	18	6	H		agree
+18	19	z-flourish	M	B:tie-flourish	differ
+18	20	6	H		agree
+18	21	10	H		agree
+18	22	4	H		agree
+18	23	Ao-ligature	M	B:Ao-lig	differ
+18	24	6	H		agree
+18	25	z-flourish	M	B:tie-flourish	differ
+18	26	7	H		agree
+18	27	4	H		agree
+18	28	58	M	B:5	differ
+18	29	R-loop	M	B:8	differ
+18	30	12	M	B:tie-flourish	differ
+18	31	15	H		agree
+18	32	to	H		agree
+18	33	16	H		agree
+19	1	ff-ligature	M	B:ff-lig	differ
+19	2	14	H		agree
+19	3	to-ligature	M	B:-	gap
+19	4	z-flourish	M	B:to	differ
+19	5	15	M	B:tie-flourish	differ
+19	6	to-ligature	M	B:5	differ
+19	7	16	H		agree
+19	8	Ao-ligature	M	B:Ao-lig	differ
+19	9	v-loop	M	B:quesn-sign	differ
+19	10	5	H		agree
+19	11	f-hook	M	B:-	gap
+19	12	ua-ligature	M	B:uu-sign	differ
+19	13	12	H		agree
+19	14	60	H		agree
+19	15	14	H		agree
+19	16	uu-ligature	M	B:-	gap
+19	17	z	M	B:-	gap
+19	18	8	M	B:-	gap
+19	19	cross-mark	M	B:uu-sign	differ
+19	20	f-hook	M	B:2p-sign	differ
+19	21	z-flourish	M	B:tie-flourish	differ
+19	22	6	H		agree
+19	23	5	H		agree
+19	24	to-ligature	M	B:to	differ
+19	25	16	H		agree
+19	26	6	M	B:-	gap
+19	27	tau-mark	M	B:tie-flourish	differ
+19	28	5	H		agree
+19	29	m-ligature	M	B:-	gap
+19	30	z-flourish	M	B:m-sign	differ
+19	31	6	H		agree
+19	32	60	H		agree
+19	33	57	M	B:-	gap
+19	34	16	H		agree
+20	1	Ao-ligature	M	B:Ao-lig	differ
+20	2	6	H		agree
+20	3	z-flourish	M	B:tie-flourish	differ
+20	4	10	H		agree
+20	5	6	H		agree
+20	6	z-flourish	M	B:tie-flourish	differ
+20	7	R-loop	M	B:pi-mark	differ
+20	8	14	H		agree
+20	9	1	M	B:-	gap
+20	10	5	M	B:15	differ
+20	11	9	H		agree
+20	12	z-flourish	M	B:tie-flourish	differ
+20	13	6	H		agree
+20	14	7	H		agree
+20	15	tau-mark	M	B:-	gap
+20	16	1	M	B:uu-sign	differ
+20	17	66	H		agree
+20	18	8	M	B:-	gap
+20	19	z-flourish	M	B:tie-flourish	differ
+20	20	6	H		agree
+20	21	R-loop	M	B:pi-mark	differ
+20	22	10	M	B:16	differ
+20	23	10	H		agree
+20	24	4	H		agree
+20	25	960	H		agree
+20	26	Ao-ligature	M	B:Ao-lig	differ
+20	27	14	H		agree
+20	28	58	M	B:5	differ
+20	29	z-flourish	M	B:tie-flourish	differ
+20	30	15	H		agree
+20	31	to	H		agree
+21	1	9	H		agree
+21	2	z-flourish	M	B:-	gap
+21	3	6	M	B:-	gap
+21	4	15	M	B:tie-flourish	differ
+21	5	cross-mark	M	B:5	differ
+21	6	z-flourish	M	B:tie-flourish	differ
+21	7	6	H		agree
+21	8	17	M	A:-	gap
+21	9	14	M	B:4	differ
+21	10	167	H		agree
+21	11	Ao-lig	M	A:-	gap
+21	12	Ao	M	B:6	differ
+21	13	z-flourish	M	B:tie-flourish	differ
+21	14	60	H		agree
+21	15	Ao	M	B:6	differ
+21	16	z-flourish	M	B:tie-flourish	differ
+21	17	hash-mark	M	B:hash	differ
+21	18	8	H		agree
+21	19	9	M	A:-	gap
+21	20	97	M	B:7	differ
+21	21	64	H		agree
+21	22	flag-mark	M	B:x-mark	differ
+21	23	5	H		agree
+21	24	60	H		agree
+21	25	R-loop	M	B:pi-mark	differ
+21	26	16	H		agree
+21	27	12	H		agree
+21	28	10	H		agree
+21	29	z-flourish	M	B:tie-flourish	differ
+21	30	Ao	M	B:Ao-lig	differ
+21	31	6	H		agree
+21	32	9	H		agree
+21	33	174	M	B:-	gap
+21	34	4	M	B:1744	differ
+22	1	z-flourish	M	B:tie-flourish	differ
+22	2	6	H		agree
+22	3	na	H		agree
+22	4	16	H		agree
+22	5	tie-flourish	M	A:-	gap
+22	6	to-ligature	M	B:to	differ
+22	7	14	H		agree
+22	8	5	M	B:15	differ
+22	9	to	H		agree
+22	10	16	H		agree
+22	11	15	H		agree
+22	12	9	M	B:94	differ
+22	13	44	M	B:4	differ
+22	14	Ao-ligature	M	B:Ao-lig	differ
+22	15	z-flourish	M	B:tie-flourish	differ
+22	16	6	H		agree
+22	17	cross-mark	M	B:x-mark	differ
+22	18	R-loop	M	B:pi-mark	differ
+22	19	z-flourish	M	B:tie-flourish	differ
+22	20	6	H		agree
+22	21	to	H		agree
+22	22	z-flourish	M	B:tie-flourish	differ
+22	23	104	H		agree
+22	24	Ao	M	B:Ao-lig	differ
+22	25	na	H		agree
+22	26	6	H		agree
+22	27	z-flourish	M	B:bar	differ
+22	28	5	H		agree
+22	29	tie-flourish	M	A:-	gap
+22	30	6	H		agree
+22	31	tc-ligature	M	B:-	gap
+22	32	ff-ligature	M	B:ff-lig	differ
+22	33	6	H		agree
+22	34	4	M	B:-	gap
+22	35	10	H		agree
+23	1	60	M	B:-	gap
+23	2	8	M	B:608	differ
+23	3	z-flourish	M	B:Y-mark	differ
+23	4	loop-Y	M	B:tie-flourish	differ
+23	5	4	H		agree
+23	6	14	M	B:-	gap
+23	7	7	M	B:147	differ
+23	8	z-flourish	M	B:tie-flourish	differ
+23	9	6	H		agree
+23	10	1	M	B:-	gap
+23	11	7	H		agree
+23	12	4	M	B:44	differ
+23	13	16	H		agree
+23	14	q-hook	M	B:cy-sign	differ
+23	15	6	H		agree
+23	16	9	M	B:-	gap
+23	17	z-flourish	M	B:tie-flourish	differ
+23	18	6	H		agree
+23	19	10	H		agree
+23	20	6	H		agree
+23	21	z-flourish	M	B:-	gap
+23	22	F-loop	M	B:5	differ
+23	23	f-hook	M	B:5	differ
+23	24	10	H		agree
+23	25	z-flourish	M	B:-	gap
+23	26	6	H		agree
+23	27	4	M	B:-	gap
+23	28	22	H		agree
+23	29	12	H		agree
+23	30	5	M	B:-	gap
+23	31	10	M	B:-	gap
+23	32	60	M	B:510	differ
+23	33	tc-ligature	M	B:6	differ
+23	34	16	H		agree
+23	35	Ao	M	B:-	gap
+24	1	hash-mark	M	B:-	gap
+24	2	11	M	B:-	gap
+24	3	z-flourish	M	B:hash	differ
+24	4	6	H		agree
+24	5	4	M	B:-	gap
+24	6	5	H		agree
+24	7	z-flourish	M	B:-	gap
+24	8	10	H		agree
+24	9	5	M	B:-	gap
+24	10	5	H		agree
+24	11	Ao-ligature	M	B:-	gap
+24	12	10	M	B:Ao-lig	differ
+24	13	6	H		agree
+24	14	z-flourish	M	B:-	gap
+24	15	6	H		agree
+24	16	1	M	B:-	gap
+24	17	5	M	B:-	gap
+24	18	to	M	B:-	gap
+24	19	z-flourish	M	B:15	differ
+24	20	6	H		agree
+24	21	uu-ligature	M	B:-	gap
+24	22	z	M	B:uu-sign	differ
+24	23	5	H		agree
+24	24	16	H		agree
+24	25	m-ligature	M	B:-	gap
+24	26	5	H		agree
+24	27	loop-flourish	M	B:6	differ
+24	28	f-hook	M	B:1	differ
+24	29	4	H		agree
+24	30	7	H		agree
+24	31	z-flourish	M	B:-	gap
+24	32	16	H		agree
+24	33	15	H		agree
+24	34	to-ligature	M	B:-	gap
+24	35	v-loop	M	B:Y-mark	differ
+24	36	12	H		agree
+24	37	7	H		agree
+24	38	3	M	B:-	gap
+24	39	Ao-ligature	M	B:Ao-lig	differ
+24	40	14	H		agree
+25	1	to	H		agree
+25	2	z-flourish	M	B:-	gap
+25	3	6	H		agree
+25	4	1	M	B:-	gap
+25	5	5	M	B:15	differ
+25	6	60	H		agree
+25	7	Ao-ligature	M	B:Ao-lig	differ
+25	8	z-flourish	M	B:20	differ
+25	9	5	H		agree
+25	10	z-flourish	M	B:-	gap
+25	11	6	H		agree
+25	12	v0	M	B:-	gap
+25	13	7	M	B:Y-mark	differ
+25	14	6	M	B:16	differ
+25	15	9	H		agree
+25	16	tau-mark	M	B:-	gap
+25	17	6	M	B:-	gap
+25	18	z-flourish	M	B:-	gap
+25	19	to	H		agree
+25	20	6	H		agree
+25	21	z-flourish	M	B:-	gap
+25	22	Ao	M	B:Ao-lig	differ
+25	23	m-ligature	M	B:m-sign	differ
+25	24	5	H		agree
+25	25	6	H		agree
+25	26	z-flourish	M	B:-	gap
+25	27	cross-mark	M	B:plus-mark	differ
+25	28	60	H		agree
+25	29	f-hook	M	B:-	gap
+25	30	tri-flourish	M	B:-	gap
+25	31	5	M	B:-	gap
+25	32	64	M	B:hash-like	differ
+25	33	z-flourish	M	B:564	differ
+25	34	6	H		agree
+25	35	15	H		agree
+25	36	flag-mark	M	B:-	gap
+25	37	9	M	B:-	gap
+25	38	44	M	B:594	differ
+26	1	v-loop	M	B:Y-mark	differ
+26	2	62	H		agree
+26	3	loop-flourish	M	B:-	gap
+26	4	5	H		agree
+26	5	ff-ligature	M	B:ff-lig	differ
+26	6	16	H		agree
+26	7	10	H		agree
+26	8	cross-mark	M	B:-	gap
+26	9	Ao-ligature	M	B:tie-flourish	differ
+26	10	z-flourish	M	B:Ao-lig	differ
+26	11	6	H		agree
+26	12	7	H		agree
+26	13	R-loop	M	B:-	gap
+26	14	loop-Y	M	B:pi-mark	differ
+26	15	5	M	B:Y-mark	differ
+26	16	66	H		agree
+26	17	m-ligature	M	B:-	gap
+26	18	tau-mark	M	B:hash	differ
+26	19	60	H		agree
+26	20	f-hook	M	B:-	gap
+26	21	16	H		agree
+26	22	Ao	M	B:-	gap
+26	23	14	M	B:-	gap
+26	24	loop-flourish	M	B:-	gap
+26	25	9	M	B:-	gap
+26	26	60	M	B:Ao-lig	differ
+26	27	m-ligature	M	B:4	differ
+26	28	nu-ligature	M	B:pi-mark	differ
+26	29	15	H		agree
+26	30	16	H		agree
+26	31	ua-ligature	M	B:ua	differ
+26	32	32	H		agree
+26	33	64	H		agree
+27	1	v0	M	B:-	gap
+27	2	SL-loop	M	B:35	differ
+27	3	14	H		agree
+27	4	5	M	B:-	gap
+27	5	10	M	B:-	gap
+27	6	z-flourish	M	B:510	differ
+27	7	16	H		agree
+27	8	Ao-ligature	M	B:Ao-lig	differ
+27	9	to	H		agree
+27	10	67	M	B:-	gap
+27	11	z-flourish	M	B:7	differ
+27	12	hash-mark	M	B:hash	differ
+27	13	loop-Y	M	B:Y-mark	differ
+27	14	5	H		agree
+27	15	z-flourish	M	B:-	gap
+27	16	6	H		agree
+27	17	5	M	B:-	gap
+27	18	16	H		agree
+27	19	9	H		agree
+27	20	z-flourish	M	B:-	gap
+27	21	5	M	B:-	gap
+27	22	hash-mark	M	B:hash	differ
+27	23	16	H		agree
+27	24	5	H		agree
+27	25	8	M	B:-	gap
+27	26	9	H		agree
+27	27	1	M	B:-	gap
+27	28	z-flourish	M	B:-	gap
+27	29	Ao	M	B:Ao-lig	differ
+27	30	5	H		agree
+27	31	6	H		agree
+27	32	z-flourish	M	B:-	gap
+27	33	tc-ligature	M	B:-	gap
+27	34	4	M	B:-	gap
+27	35	Ao	M	B:pi-mark	differ
+27	36	60	M	B:14	differ
+27	37	z-flourish	M	B:bar	differ
+27	38	6	H		agree
+28	1	13	M	B:-	gap
+28	2	16	M	B:-	gap
+28	3	z-flourish	M	B:1310	differ
+28	4	9	H		agree
+28	5	z-flourish	M	B:-	gap
+28	6	6	H		agree
+28	7	loop-Y	M	B:x-mark	differ
+28	8	16	H		agree
+28	9	6	M	B:-	gap
+28	10	44	H		agree
+28	11	10	H		agree
+28	12	z-flourish	M	B:-	gap
+28	13	16	H		agree
+28	14	tie-flourish	M	A:-	gap
+28	15	flag-mark	M	B:28	differ
+28	16	hash-mark	M	B:hash	differ
+28	17	28	H		agree
+28	18	64	H		agree
+28	19	Ao-ligature	M	B:Ao-lig	differ
+28	20	16	H		agree
+28	21	22	M	B:-	gap
+28	22	5	H		agree
+28	23	104	H		agree
+28	24	z-flourish	M	B:-	gap
+28	25	6	H		agree
+28	26	15	H		agree
+28	27	60	H		agree
+28	28	Ao	M	B:Ao-lig	differ
+28	29	12	H		agree
+28	30	344	H		agree
+29	1	10	H		agree
+29	2	z-flourish	M	B:-	gap
+29	3	to	M	B:60	differ
+29	4	5	H		agree
+29	5	64	H		agree
+29	6	3	H		agree
+29	7	flag-mark	M	B:x-mark	differ
+29	8	16	H		agree
+29	9	to-ligature	M	B:-	gap
+29	10	v-loop	M	B:-	gap
+29	11	po-ligature	M	B:-	gap
+29	12	uu	M	B:-	gap
+29	13	66	M	B:-	gap
+29	14	tau-mark	M	B:-	gap
+29	15	7	H		agree
+29	16	loop-Y	M	B:pouu-sign	differ
+29	17	z-flourish	M	B:11	differ
+29	18	14	M	B:loop-sign	differ
+29	19	z-flourish	M	B:7	differ
+29	20	4	H		agree
+29	21	5	M	B:-	gap
+29	22	z-flourish	M	B:25	differ
+29	23	6	H		agree
+29	24	60	H		agree
+29	25	z-flourish	M	B:-	gap
+29	26	v-loop	M	B:-	gap
+29	27	flag-mark	M	B:-	gap
+29	28	16	M	B:-	gap
+29	29	1	M	B:tie-flourish	differ
+29	30	16	H		agree
+29	31	loop-flourish	M	B:11	differ
+29	32	44	M	B:4	differ
+29	33	64	M	B:tie-flourish	differ
+30	1	5	M	B:-	gap
+30	2	12	M	B:-	gap
+30	3	loop-flourish	M	B:-	gap
+30	4	m-ligature	M	B:-	gap
+30	5	Ao	M	B:-	gap
+30	6	5	H		agree
+30	7	fa-ligature	M	B:tie-flourish	differ
+30	8	68	H		agree
+30	9	16	H		agree
+30	10	m-ligature	M	B:-	gap
+30	11	z-flourish	M	B:m-sign	differ
+30	12	5	H		agree
+30	13	60	H		agree
+30	14	3	M	B:-	gap
+30	15	z-flourish	M	B:tie-flourish	differ
+30	16	6	H		agree
+30	17	ff-ligature	M	B:ff-lig	differ
+30	18	16	H		agree
+30	19	4	M	B:-	gap
+30	20	tau-mark	M	B:tie-flourish	differ
+30	21	7	H		agree
+30	22	16	H		agree
+30	23	52	H		agree
+30	24	hash-mark	M	B:-	gap
+30	25	16	M	B:-	gap
+30	26	z-flourish	M	B:hash	differ
+30	27	6	H		agree
+30	28	15	H		agree
+30	29	9	H		agree
+30	30	44	H		agree
+30	31	Ao-ligature	M	B:Ao-lig	differ
+30	32	16	H		agree
+31	1	12	H		agree
+31	2	60	H		agree
+31	3	to	H		agree
+31	4	16	H		agree
+31	5	ua	M	B:-	gap
+31	6	to	M	B:-	gap
+31	7	z-flourish	M	B:tie-flourish	differ
+31	8	6	H		agree
+31	9	5	H		agree
+31	10	Ao	M	B:Ao-lig	differ
+31	11	64	H		agree
+31	12	R-loop	M	B:-	gap
+31	13	19	M	B:pi-mark	differ
+31	14	z-flourish	M	B:10	differ
+31	15	64	H		agree
+31	16	m-ligature	M	B:-	gap
+31	17	z-flourish	M	B:m-sign	differ
+31	18	6	H		agree
+31	19	fait-ligature	M	B:-	gap
+31	20	po-ligature	M	B:-	gap
+31	21	5	M	B:-	gap
+31	22	6	M	B:9	differ
+31	23	tau-mark	M	B:16	differ
+31	24	1	M	B:Ao-lig	differ
+32	1	9	H		agree
+32	2	17	H		agree
+32	3	4	M	B:44	differ
+32	4	4	M	B:bar	differ
+32	5	5	H		agree
+32	6	6	H		agree
+32	7	z-flourish	M	B:-	gap
+32	8	7	M	B:-	gap
+32	9	tau-mark	M	B:-	gap
+32	10	1	M	B:-	gap
+32	11	5	M	B:tie-flourish	differ
+32	12	5	M	B:15	differ
+32	13	cross-mark	M	B:x-mark	differ
+32	14	8	H		agree
+32	15	z-flourish	M	B:-	gap
+32	16	na	M	B:tie-flourish	differ
+32	17	to	H		agree
+32	18	5	H		agree
+32	19	tau-mark	M	B:x-mark	differ
+32	20	6	H		agree
+32	21	5	M	B:-	gap
+32	22	9	M	B:-	gap
+32	23	17	M	B:-	gap
+32	24	1	M	B:5917	differ
+32	25	10	H		agree
+32	26	66	M	B:-	gap
+32	27	18	M	B:-	gap
+32	28	loop-flourish	M	B:-	gap
+32	29	25	M	B:6618	differ
+32	30	7	M	B:bar	differ
+32	31	616	M	B:7616	differ
+33	1	5	M	B:-	gap
+33	2	ff-ligature	M	B:ff-lig	differ
+33	3	6	H		agree
+33	4	16	H		agree
+33	5	0	M	B:6	differ
+33	6	62	M	B:tie-flourish	differ
+33	7	m-ligature	M	B:mu	differ
+33	8	60	H		agree
+33	9	10	H		agree
+33	10	44	H		agree
+33	11	10	H		agree
+33	12	45	M	B:-	gap
+33	13	5	M	B:-	gap
+33	14	Ao	M	B:455	differ
+33	15	8	M	B:Ao-lig	differ
+33	16	64	H		agree
+33	17	16	H		agree
+33	18	15	H		agree
+33	19	to	H		agree
+33	20	flag-mark	M	B:-	gap
+33	21	12	H		agree
+33	22	60	H		agree
+33	23	Ao	M	B:-	gap
+33	24	6	M	B:-	gap
+33	25	fait-flourish	M	B:Ao-lig	differ

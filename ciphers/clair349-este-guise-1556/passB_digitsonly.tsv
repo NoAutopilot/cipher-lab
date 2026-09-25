@@ -1,0 +1,583 @@
+line	position	token	kind	grade	note
+01	1	2429	digit	M	small numerals upper right corner of the image, different apparent scale from the main line; possibly a marginal/foliation numeral or bleed-through, not confidently part of the main code stream
+01	2	6	digit	M	single digit, small mark above, exact diacritic unclear
+01	3	12	digit	H	clear paired digits
+01	4	73	digit	H	clear digits
+01	5	6	digit	M	single digit, small dot above
+01	6	9	digit	M	single digit, small curl above
+01	7	16	digit	H	clear
+01	8	10	digit	M	"could be ""10"" or ""1o"", small tick above"
+01	9	4	digit	M	crowded against neighbours
+01	10	6	digit	M	superscript loop above, could be part of ff-lig instead
+01	11	5	digit	M	
+01	12	16	digit	M	crowded, second digit uncertain
+01	13	5	digit	M	
+01	14	6	digit	M	
+01	15	12	digit	H	
+01	16	9	digit	M	
+01	17	5	digit	M	
+01	18	6	digit	M	line ends on this digit
+02	1	10	digit	M	"line begins with ""10"", small tick above"
+02	2	6	digit	M	
+02	3	9	digit	M	
+02	4	6	digit	M	
+02	5	6	digit	M	
+02	6	9	digit	M	
+02	7	10	digit	M	
+02	8	16	digit	M	
+02	9	6	digit	M	
+02	10	4	digit	M	
+02	11	1	digit	M	"tiny stroke, could be ""i"" flourish rather than digit ""1"""
+02	12	5	digit	M	
+02	13	10	digit	M	
+02	14	4	digit	M	
+02	15	6	digit	M	
+02	16	6	digit	M	
+02	17	16	digit	M	
+02	18	5	digit	M	
+02	19	104	digit	M	crowded triple digit near right edge
+03	1	7	digit	M	single digit at line start
+03	2	6	digit	M	
+03	3	22	digit	M	"paired digits, could be ""22"" or ""zz"""
+03	4	6	digit	M	
+03	5	4	digit	M	
+03	6	5	digit	M	"tall loop, could be ""S"" abbreviation instead of digit 5"
+03	7	15	digit	M	
+03	8	9	digit	M	
+03	9	6	digit	M	
+03	10	5	digit	M	
+03	11	16	digit	H	
+03	12	9	digit	M	
+03	13	6	digit	M	
+03	14	9	digit	M	
+03	15	60	digit	M	
+03	16	9	digit	M	
+03	17	7	digit	M	
+03	18	5	digit	M	
+03	19	14	digit	M	
+03	20	6	digit	M	line ends
+04	1	6	digit	M	
+04	2	5	digit	M	
+04	3	104	digit	M	
+04	4	6	digit	M	
+04	5	7	digit	M	
+04	6	5	digit	M	
+04	7	16	digit	H	
+04	8	14	digit	M	
+04	9	64	digit	M	
+04	10	5	digit	M	
+04	11	16	digit	M	
+04	12	6	digit	M	
+04	13	9	digit	M	
+05	1	6	digit	M	
+05	2	15	digit	M	
+05	3	16	digit	M	
+05	4	5	digit	M	
+05	5	5	digit	M	
+05	6	5	digit	M	
+05	7	6	digit	M	
+05	8	9	digit	M	
+05	9	1	digit	M	
+05	10	4	digit	M	
+05	11	6	digit	M	
+05	12	4	digit	M	
+05	13	10	digit	M	
+05	14	6	digit	M	
+05	15	16	digit	M	
+05	16	6	digit	M	
+05	17	5	digit	M	
+05	18	6	digit	M	
+05	19	4	digit	M	
+05	20	12	digit	M	
+06	1	16	digit	M	
+06	2	3	digit	M	"small isolated digit, could be ""z"" instead"
+06	3	60	digit	M	
+06	4	66	digit	M	
+06	5	6	digit	M	
+06	6	44	digit	M	
+06	7	1	digit	M	
+06	8	25	digit	M	
+06	9	16	digit	M	
+06	10	6	digit	M	
+06	11	15	digit	M	
+06	12	6	digit	M	
+06	13	16	digit	M	
+06	14	5	digit	M	
+06	15	164	digit	M	crowded triple digit near line end
+07	1	5	digit	M	line begins
+07	2	9	digit	M	
+07	3	16	digit	M	
+07	4	6	digit	M	
+07	5	15	digit	M	
+07	6	16	digit	M	
+07	7	544	digit	M	crowded triple digit
+07	8	6	digit	M	
+07	9	6	digit	M	
+07	10	15	digit	M	
+07	11	66	digit	M	
+07	12	16	digit	M	
+07	13	5	digit	M	
+07	14	12	digit	M	
+07	15	15	digit	M	
+07	16	16	digit	M	line ends
+08	1	77	digit	M	line begins, crowded
+08	2	44	digit	M	
+08	3	1	digit	M	
+08	4	5	digit	M	
+08	5	6	digit	M	
+08	6	10	digit	M	
+08	7	4	digit	M	
+08	8	65	digit	M	
+08	9	26	digit	M	
+08	10	6	digit	M	
+08	11	15	digit	M	
+08	12	16	digit	M	
+08	13	6	digit	M	
+08	14	12	digit	M	
+08	15	510	digit	M	crowded triple digit
+08	16	12	digit	M	
+08	17	60	digit	M	
+09	1	5104	digit	M	crowded cluster at line start
+09	2	x	digit	M	single mark, could be digit or sign
+09	3	5	digit	M	
+09	4	64	digit	M	
+09	5	9	digit	M	
+09	6	60	digit	M	
+09	7	8	digit	M	
+09	8	16	digit	M	
+09	9	6	digit	M	
+09	10	16	digit	M	
+09	11	15	digit	M	
+09	12	6	digit	M	
+09	13	14	digit	M	
+09	14	9	digit	M	
+09	15	14	digit	M	
+09	16	4	digit	M	
+09	17	16	digit	M	
+09	18	5	digit	M	
+09	19	6	digit	M	line ends
+10	1	4	digit	M	
+10	2	16	digit	M	
+10	3	9	digit	M	
+10	4	6	digit	M	
+10	5	5	digit	M	
+10	6	16	digit	M	
+10	7	6	digit	M	
+10	8	10	digit	M	
+10	9	44	digit	M	
+10	10	64	digit	M	
+10	11	6	digit	M	
+10	12	5	digit	M	
+10	13	12	digit	M	
+10	14	6	digit	M	
+10	15	16	digit	M	
+10	16	15	digit	M	
+10	17	95	digit	M	
+10	18	6	digit	M	
+11	1	22	digit	M	line begins, faint
+11	2	16	digit	M	
+11	3	9	digit	M	
+11	4	104	digit	M	
+11	5	16	digit	M	
+11	6	9	digit	M	
+11	7	10	digit	M	
+11	8	16	digit	M	
+11	9	8	digit	M	
+11	10	9	digit	M	
+11	11	12	digit	M	
+11	12	16	digit	M	
+11	13	4	digit	M	
+11	14	4	digit	M	
+11	15	15	digit	M	
+11	16	10	digit	M	
+11	17	4	digit	M	
+11	18	4	digit	M	
+11	19	64	digit	M	
+11	20	14	digit	M	
+11	21	15	digit	M	
+11	22	9	digit	M	line's second half badly obscured by a large ink blot; several digit readings below the blot area are unreliable
+11	23	12	digit	M	
+11	24	14	digit	M	
+11	25	16	digit	M	
+11	26	4	digit	M	
+11	27	4	digit	M	obscured by ink blot, low confidence
+11	28	6	digit	M	line ends, near blot
+12	1	64	digit	M	line begins
+12	2	4	digit	M	
+12	3	26	digit	M	
+12	4	5	digit	M	
+12	5	544	digit	M	
+12	6	60	digit	M	
+12	7	6	digit	M	
+12	8	73	digit	M	
+12	9	9	digit	M	
+12	10	12	digit	M	
+12	11	5	digit	M	
+12	12	6	digit	M	
+12	13	5	digit	M	
+12	14	8	digit	M	
+12	15	5	digit	M	
+12	16	6	digit	M	
+12	17	9	digit	M	
+13	1	12	digit	M	line begins
+13	2	6	digit	M	
+13	3	5	digit	M	
+13	4	14	digit	M	
+13	5	10	digit	M	
+13	6	16	digit	M	
+13	7	6	digit	M	
+13	8	15	digit	M	
+13	9	16	digit	M	
+13	10	104	digit	M	
+13	11	94	digit	M	
+13	12	47	digit	M	
+13	13	6	digit	M	
+13	14	16	digit	M	
+13	15	4	digit	M	
+13	16	4	digit	M	
+13	17	10	digit	M	
+13	18	4	digit	M	
+13	19	6	digit	M	
+13	20	9	digit	M	
+13	21	17	digit	M	
+13	22	8	digit	M	
+14	1	5	digit	M	line begins
+14	2	9	digit	M	
+14	3	1	digit	M	
+14	4	4	digit	M	
+14	5	5	digit	M	
+14	6	4	digit	M	
+14	7	16	digit	M	
+14	8	15	digit	M	
+14	9	5	digit	M	
+14	10	12	digit	M	
+14	11	60	digit	M	
+14	12	16	digit	M	
+14	13	12	digit	M	
+14	14	6	digit	M	
+14	15	15	digit	M	
+14	16	60	digit	M	
+14	17	5	digit	M	
+14	18	14	digit	M	
+14	19	100	digit	M	
+14	20	60	digit	M	
+14	21	16	digit	M	
+14	22	6	digit	M	line ends
+15	1	4	digit	M	
+15	2	5	digit	M	
+15	3	12	digit	M	
+15	4	104	digit	M	
+15	5	16	digit	M	
+15	6	6	digit	M	
+15	7	15	digit	M	
+15	8	6	digit	M	
+15	9	98	digit	M	
+15	10	7	digit	M	
+15	11	16	digit	M	
+15	12	6	digit	M	
+15	13	6	digit	M	
+15	14	74	digit	M	
+15	15	410	digit	M	
+15	16	255	digit	M	
+15	17	60	digit	M	
+15	18	6	digit	M	
+15	19	5	digit	M	
+15	20	8	digit	M	
+15	21	16	digit	M	line ends
+16	1	7	digit	M	line begins
+16	2	6	digit	M	
+16	3	5	digit	M	
+16	4	10	digit	M	
+16	5	5	digit	M	
+16	6	1	digit	M	
+16	7	4	digit	M	
+16	8	16	digit	M	
+16	9	60	digit	M	
+16	10	10	digit	M	
+16	11	16	digit	M	
+16	12	57	digit	M	
+16	13	9	digit	M	
+16	14	8	digit	M	
+16	15	60	digit	M	
+16	16	12	digit	M	
+16	17	6	digit	M	
+16	18	1	digit	M	
+16	19	15	digit	M	
+16	20	16	digit	M	
+17	1	16	digit	M	line begins
+17	2	64	digit	M	
+17	3	9	digit	M	
+17	4	16	digit	M	
+17	5	14	digit	M	
+17	6	16	digit	M	
+17	7	15	digit	M	
+17	8	9	digit	M	
+17	9	16	digit	M	
+17	10	6	digit	M	
+17	11	9	digit	M	
+17	12	1	digit	M	
+17	13	4	digit	M	
+17	14	400	digit	M	
+17	15	7	digit	M	
+17	16	4	digit	M	
+17	17	5	digit	M	line ends
+18	1	167	digit	M	
+18	2	1	digit	M	
+18	3	16	digit	M	
+18	4	4	digit	M	
+18	5	9	digit	M	
+18	6	6	digit	M	
+18	7	4	digit	M	
+18	8	66	digit	M	
+18	9	60	digit	M	
+18	10	6	digit	M	
+18	11	6	digit	M	
+18	12	10	digit	M	
+18	13	4	digit	M	
+18	14	6	digit	M	
+18	15	7	digit	M	
+18	16	4	digit	M	
+18	17	5	digit	M	
+18	18	8	digit	M	
+18	19	15	digit	M	
+18	20	16	digit	M	line ends
+19	1	14	digit	M	
+19	2	5	digit	M	
+19	3	16	digit	M	
+19	4	5	digit	M	
+19	5	12	digit	M	
+19	6	60	digit	M	
+19	7	14	digit	M	
+19	8	6	digit	M	
+19	9	5	digit	M	
+19	10	16	digit	M	
+19	11	5	digit	M	
+19	12	6	digit	M	
+19	13	60	digit	M	
+19	14	16	digit	M	line ends
+20	1	6	digit	M	
+20	2	10	digit	M	
+20	3	6	digit	M	
+20	4	14	digit	M	
+20	5	15	digit	M	
+20	6	9	digit	M	
+20	7	6	digit	M	
+20	8	7	digit	M	
+20	9	66	digit	M	
+20	10	6	digit	M	
+20	11	16	digit	M	
+20	12	10	digit	M	
+20	13	4	digit	M	
+20	14	960	digit	M	
+20	15	14	digit	M	
+20	16	5	digit	M	
+20	17	15	digit	M	
+21	1	9	digit	M	line begins
+21	2	5	digit	M	
+21	3	6	digit	M	
+21	4	17	digit	M	
+21	5	4	digit	M	
+21	6	167	digit	M	
+21	7	6	digit	M	
+21	8	60	digit	M	
+21	9	6	digit	M	
+21	10	8	digit	M	
+21	11	9	digit	M	
+21	12	7	digit	M	
+21	13	64	digit	M	
+21	14	5	digit	M	
+21	15	60	digit	M	
+21	16	16	digit	M	
+21	17	12	digit	M	
+21	18	10	digit	M	
+21	19	6	digit	M	
+21	20	9	digit	M	
+21	21	1744	digit	M	crowded cluster, line ends
+22	1	6	digit	M	
+22	2	16	digit	M	
+22	3	14	digit	M	
+22	4	15	digit	M	
+22	5	16	digit	M	
+22	6	15	digit	M	
+22	7	94	digit	M	
+22	8	4	digit	M	
+22	9	6	digit	M	
+22	10	6	digit	M	
+22	11	104	digit	M	
+22	12	6	digit	M	
+22	13	5	digit	M	
+22	14	6	digit	M	
+22	15	6	digit	M	
+22	16	10	digit	M	line ends
+23	1	608	digit	M	line begins
+23	2	4	digit	M	
+23	3	147	digit	M	
+23	4	6	digit	M	
+23	5	7	digit	M	
+23	6	44	digit	M	
+23	7	16	digit	M	
+23	8	6	digit	M	
+23	9	6	digit	M	
+23	10	10	digit	M	
+23	11	6	digit	M	
+23	12	5	digit	M	
+23	13	5	digit	M	
+23	14	10	digit	M	
+23	15	6	digit	M	
+23	16	22	digit	M	
+23	17	12	digit	M	
+23	18	510	digit	M	
+23	19	6	digit	M	
+23	20	16	digit	M	line ends
+24	1	6	digit	M	
+24	2	5	digit	M	
+24	3	10	digit	M	
+24	4	5	digit	M	
+24	5	6	digit	M	
+24	6	6	digit	M	
+24	7	15	digit	M	
+24	8	6	digit	M	
+24	9	5	digit	M	
+24	10	16	digit	M	
+24	11	5	digit	M	
+24	12	6	digit	M	
+24	13	1	digit	M	
+24	14	4	digit	M	
+24	15	7	digit	M	
+24	16	16	digit	M	
+24	17	15	digit	M	
+24	18	12	digit	M	
+24	19	7	digit	M	
+24	20	14	digit	M	line ends
+25	1	6	digit	M	
+25	2	15	digit	M	
+25	3	60	digit	M	
+25	4	20	digit	M	
+25	5	5	digit	M	
+25	6	6	digit	M	
+25	7	16	digit	M	
+25	8	9	digit	M	
+25	9	6	digit	M	
+25	10	5	digit	M	
+25	11	6	digit	M	
+25	12	60	digit	M	
+25	13	564	digit	M	
+25	14	6	digit	M	
+25	15	15	digit	M	
+25	16	594	digit	M	line ends
+26	1	62	digit	M	
+26	2	5	digit	M	
+26	3	16	digit	M	
+26	4	10	digit	M	
+26	5	6	digit	M	
+26	6	7	digit	M	
+26	7	66	digit	M	
+26	8	60	digit	M	
+26	9	16	digit	M	
+26	10	4	digit	M	
+26	11	15	digit	M	
+26	12	16	digit	M	
+26	13	32	digit	M	
+26	14	64	digit	M	line ends
+27	1	35	digit	M	line begins, faint
+27	2	14	digit	M	
+27	3	510	digit	M	
+27	4	16	digit	M	
+27	5	7	digit	M	
+27	6	5	digit	M	
+27	7	6	digit	M	
+27	8	16	digit	M	
+27	9	9	digit	M	
+27	10	16	digit	M	
+27	11	5	digit	M	
+27	12	9	digit	M	
+27	13	5	digit	M	
+27	14	6	digit	M	
+27	15	14	digit	M	
+27	16	6	digit	M	line ends
+28	1	1310	digit	M	line begins
+28	2	9	digit	M	
+28	3	6	digit	M	
+28	4	16	digit	M	
+28	5	44	digit	M	
+28	6	10	digit	M	
+28	7	16	digit	M	
+28	8	28	digit	M	
+28	9	28	digit	M	
+28	10	64	digit	M	
+28	11	16	digit	M	
+28	12	5	digit	M	
+28	13	104	digit	M	
+28	14	6	digit	M	
+28	15	15	digit	M	
+28	16	60	digit	M	
+28	17	12	digit	M	
+28	18	344	digit	M	line ends
+29	1	10	digit	M	line begins
+29	2	60	digit	M	
+29	3	5	digit	M	
+29	4	64	digit	M	
+29	5	3	digit	M	
+29	6	16	digit	M	
+29	7	7	digit	M	
+29	8	11	digit	M	
+29	9	7	digit	M	
+29	10	4	digit	M	
+29	11	25	digit	M	
+29	12	6	digit	M	
+29	13	60	digit	M	
+29	14	16	digit	M	
+29	15	11	digit	M	
+29	16	4	digit	M	
+30	1	5	digit	M	line begins
+30	2	68	digit	M	
+30	3	16	digit	M	
+30	4	5	digit	M	
+30	5	60	digit	M	
+30	6	6	digit	M	
+30	7	16	digit	M	
+30	8	7	digit	M	
+30	9	16	digit	M	
+30	10	52	digit	M	
+30	11	6	digit	M	
+30	12	15	digit	M	
+30	13	9	digit	M	
+30	14	44	digit	M	
+30	15	16	digit	M	line ends
+31	1	12	digit	M	line begins
+31	2	60	digit	M	
+31	3	16	digit	M	
+31	4	6	digit	M	
+31	5	5	digit	M	
+31	6	64	digit	M	
+31	7	10	digit	M	
+31	8	64	digit	M	
+31	9	6	digit	M	
+31	10	9	digit	M	
+31	11	16	digit	M	
+32	1	9	digit	M	line begins
+32	2	17	digit	M	
+32	3	44	digit	M	
+32	4	5	digit	M	
+32	5	6	digit	M	
+32	6	15	digit	M	
+32	7	8	digit	M	
+32	8	5	digit	M	
+32	9	6	digit	M	
+32	10	5917	digit	M	
+32	11	10	digit	M	
+32	12	6618	digit	M	
+32	13	7616	digit	M	line ends
+33	1	6	digit	M	
+33	2	16	digit	M	
+33	3	6	digit	M	
+33	4	60	digit	M	
+33	5	10	digit	M	
+33	6	44	digit	M	
+33	7	10	digit	M	
+33	8	455	digit	M	
+33	9	64	digit	M	
+33	10	16	digit	M	
+33	11	15	digit	M	
+33	12	12	digit	M	
+33	13	60	digit	M	

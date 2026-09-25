@@ -1,0 +1,950 @@
+line	position	token	kind	grade	note
+01	1	2429	digit	M	small numerals upper right corner of the image, different apparent scale from the main line; possibly a marginal/foliation numeral or bleed-through, not confidently part of the main code stream
+01	2	SIGN	sign	M	opening cursive loop/word-like shape just before the line's first digits, under the seal impression; could be a plain-hand heading fragment rather than a cipher sign
+01	3	6	digit	M	single digit, small mark above, exact diacritic unclear
+01	4	SIGN	sign	H	"clear ""+""-shaped cross stroke"
+01	5	12	digit	H	clear paired digits
+01	6	SIGN	sign	M	"small hook/loop mark following, resembles ""z"" or ""="""
+01	7	73	digit	H	clear digits
+01	8	SIGN	sign	H	"A with raised small ""o"", recurring ligature/abbreviation shape"
+01	9	6	digit	M	single digit, small dot above
+01	10	9	digit	M	single digit, small curl above
+01	11	16	digit	H	clear
+01	12	10	digit	M	"could be ""10"" or ""1o"", small tick above"
+01	13	4	digit	M	crowded against neighbours
+01	14	SIGN	sign	H	clear double-f / long-s crossbar ligature
+01	15	6	digit	M	superscript loop above, could be part of ff-lig instead
+01	16	SIGN	sign	M	small hook after digit
+01	17	SIGN	sign	H	vertical divider stroke
+01	18	5	digit	M	
+01	19	16	digit	M	crowded, second digit uncertain
+01	20	5	digit	M	
+01	21	SIGN	sign	M	"capital ""R""-like shape with trailing stroke/period, could be abbreviation rather than digit-code sign"
+01	22	6	digit	M	
+01	23	SIGN	sign	M	
+01	24	SIGN	sign	M	"capital ""Y""-like flourish"
+01	25	SIGN	sign	M	possible bracket/divider, unclear if literal bar or sign
+01	26	12	digit	H	
+01	27	9	digit	M	
+01	28	5	digit	M	
+01	29	SIGN	sign	M	
+01	30	6	digit	M	line ends on this digit
+02	1	10	digit	M	"line begins with ""10"", small tick above"
+02	2	SIGN	sign	M	
+02	3	SIGN	sign	M	"double-loop shape resembling ""uu""/""un"", not a clear digit"
+02	4	6	digit	M	
+02	5	SIGN	sign	M	"small ""x""-shaped cross"
+02	6	9	digit	M	
+02	7	SIGN	sign	H	
+02	8	SIGN	sign	M	rounded loop shape, unclear letter/sign
+02	9	6	digit	M	
+02	10	SIGN	sign	M	capital R-like shape
+02	11	SIGN	sign	M	
+02	12	6	digit	M	
+02	13	SIGN	sign	M	
+02	14	9	digit	M	
+02	15	10	digit	M	
+02	16	SIGN	sign	M	
+02	17	16	digit	M	
+02	18	6	digit	M	
+02	19	4	digit	M	
+02	20	1	digit	M	"tiny stroke, could be ""i"" flourish rather than digit ""1"""
+02	21	5	digit	M	
+02	22	SIGN	sign	H	
+02	23	10	digit	M	
+02	24	4	digit	M	
+02	25	SIGN	sign	M	"loop+tail shape resembling ""nao""/""na"", not confidently a digit"
+02	26	6	digit	M	
+02	27	SIGN	sign	M	
+02	28	6	digit	M	
+02	29	SIGN	sign	M	repeated double-loop shape as position 3
+02	30	16	digit	M	
+02	31	5	digit	M	
+02	32	104	digit	M	crowded triple digit near right edge
+02	33	SIGN	sign	M	small loop+tail cluster at line end, ambiguous
+03	1	7	digit	M	single digit at line start
+03	2	6	digit	M	
+03	3	SIGN	sign	M	
+03	4	22	digit	M	"paired digits, could be ""22"" or ""zz"""
+03	5	SIGN	sign	M	
+03	6	SIGN	sign	H	
+03	7	6	digit	M	
+03	8	4	digit	M	
+03	9	SIGN	sign	H	clear vertical stroke
+03	10	5	digit	M	"tall loop, could be ""S"" abbreviation instead of digit 5"
+03	11	SIGN	sign	M	
+03	12	15	digit	M	
+03	13	9	digit	M	
+03	14	SIGN	sign	M	capital pi/n-with-flourish shape
+03	15	SIGN	sign	M	
+03	16	6	digit	M	
+03	17	SIGN	sign	M	
+03	18	5	digit	M	
+03	19	16	digit	H	
+03	20	9	digit	M	
+03	21	SIGN	sign	M	
+03	22	6	digit	M	
+03	23	SIGN	sign	M	capital Y-like flourish
+03	24	SIGN	sign	H	clear cross stroke
+03	25	9	digit	M	
+03	26	60	digit	M	
+03	27	9	digit	M	
+03	28	SIGN	sign	M	
+03	29	SIGN	sign	M	
+03	30	7	digit	M	
+03	31	SIGN	sign	M	
+03	32	5	digit	M	
+03	33	14	digit	M	
+03	34	SIGN	sign	H	
+03	35	6	digit	M	line ends
+04	1	SIGN	sign	M	small cross at line start
+04	2	6	digit	M	
+04	3	5	digit	M	
+04	4	SIGN	sign	M	
+04	5	SIGN	sign	M	"loop+tail resembling ""na"""
+04	6	104	digit	M	
+04	7	SIGN	sign	M	
+04	8	6	digit	M	
+04	9	SIGN	sign	H	
+04	10	7	digit	M	
+04	11	SIGN	sign	M	
+04	12	5	digit	M	
+04	13	16	digit	H	
+04	14	SIGN	sign	M	"small ""x""-shaped stroke overlaying a digit, could just be a crossed 4"
+04	15	14	digit	M	
+04	16	64	digit	M	
+04	17	SIGN	sign	M	"loop+tail resembling ""to""/abbreviation"
+04	18	SIGN	sign	M	
+04	19	5	digit	M	
+04	20	16	digit	M	
+04	21	SIGN	sign	M	small double stroke, ambiguous
+04	22	SIGN	sign	M	
+04	23	6	digit	M	
+04	24	SIGN	sign	M	
+04	25	SIGN	sign	M	
+04	26	SIGN	sign	M	loop+tail, same as pos17 shape reused
+04	27	9	digit	M	
+04	28	SIGN	sign	M	
+04	29	SIGN	sign	M	"loop shape resembling ""bo"""
+04	30	SIGN	sign	M	small ligature, line ends crowded near edge
+05	1	SIGN	sign	M	line begins mid-cluster, first visible mark
+05	2	6	digit	M	
+05	3	15	digit	M	
+05	4	16	digit	M	
+05	5	SIGN	sign	M	
+05	6	SIGN	sign	M	
+05	7	5	digit	M	
+05	8	SIGN	sign	M	
+05	9	5	digit	M	
+05	10	SIGN	sign	H	
+05	11	5	digit	M	
+05	12	SIGN	sign	M	
+05	13	6	digit	M	
+05	14	9	digit	M	
+05	15	1	digit	M	
+05	16	4	digit	M	
+05	17	SIGN	sign	M	
+05	18	SIGN	sign	M	
+05	19	SIGN	sign	H	
+05	20	SIGN	sign	M	
+05	21	6	digit	M	
+05	22	4	digit	M	
+05	23	SIGN	sign	M	small rounded shape, unclear
+05	24	10	digit	M	
+05	25	6	digit	M	
+05	26	16	digit	M	
+05	27	6	digit	M	
+05	28	SIGN	sign	M	
+05	29	SIGN	sign	M	
+05	30	5	digit	M	
+05	31	6	digit	M	
+05	32	4	digit	M	
+05	33	12	digit	M	
+05	34	SIGN	sign	M	line ends crowded
+06	1	SIGN	sign	M	cross-shaped mark, line begins
+06	2	SIGN	sign	M	small ligature
+06	3	16	digit	M	
+06	4	SIGN	sign	M	
+06	5	3	digit	M	"small isolated digit, could be ""z"" instead"
+06	6	60	digit	M	
+06	7	SIGN	sign	M	
+06	8	66	digit	M	
+06	9	SIGN	sign	M	
+06	10	6	digit	M	
+06	11	SIGN	sign	M	"loop shape resembling ""ua"""
+06	12	SIGN	sign	M	
+06	13	44	digit	M	
+06	14	SIGN	sign	H	
+06	15	SIGN	sign	M	loop+tail, reused shape
+06	16	1	digit	M	
+06	17	25	digit	M	
+06	18	SIGN	sign	M	
+06	19	16	digit	M	
+06	20	SIGN	sign	M	
+06	21	6	digit	M	
+06	22	15	digit	M	
+06	23	SIGN	sign	M	
+06	24	6	digit	M	
+06	25	SIGN	sign	M	
+06	26	SIGN	sign	M	
+06	27	SIGN	sign	M	
+06	28	16	digit	M	
+06	29	SIGN	sign	M	
+06	30	5	digit	M	
+06	31	164	digit	M	crowded triple digit near line end
+06	32	SIGN	sign	M	line ends
+07	1	5	digit	M	line begins
+07	2	SIGN	sign	M	
+07	3	SIGN	sign	H	
+07	4	9	digit	M	
+07	5	16	digit	M	
+07	6	SIGN	sign	M	
+07	7	SIGN	sign	M	
+07	8	SIGN	sign	M	small loop cluster
+07	9	SIGN	sign	M	
+07	10	SIGN	sign	M	
+07	11	6	digit	M	
+07	12	15	digit	M	
+07	13	16	digit	M	
+07	14	SIGN	sign	M	
+07	15	SIGN	sign	M	
+07	16	544	digit	M	crowded triple digit
+07	17	6	digit	M	
+07	18	SIGN	sign	M	
+07	19	6	digit	M	
+07	20	15	digit	M	
+07	21	SIGN	sign	M	
+07	22	SIGN	sign	M	
+07	23	SIGN	sign	M	
+07	24	SIGN	sign	M	
+07	25	66	digit	M	
+07	26	16	digit	M	
+07	27	SIGN	sign	M	
+07	28	SIGN	sign	M	small ligature
+07	29	SIGN	sign	M	
+07	30	5	digit	M	
+07	31	SIGN	sign	M	
+07	32	12	digit	M	
+07	33	15	digit	M	
+07	34	16	digit	M	line ends
+08	1	77	digit	M	line begins, crowded
+08	2	SIGN	sign	M	
+08	3	SIGN	sign	M	
+08	4	SIGN	sign	M	"unclear ligature, possibly ""5"" plus loop"
+08	5	SIGN	sign	M	
+08	6	44	digit	M	
+08	7	1	digit	M	
+08	8	5	digit	M	
+08	9	SIGN	sign	M	
+08	10	6	digit	M	
+08	11	10	digit	M	
+08	12	4	digit	M	
+08	13	65	digit	M	
+08	14	26	digit	M	
+08	15	SIGN	sign	M	
+08	16	6	digit	M	
+08	17	SIGN	sign	M	
+08	18	15	digit	M	
+08	19	SIGN	sign	M	
+08	20	SIGN	sign	M	
+08	21	SIGN	sign	H	
+08	22	16	digit	M	
+08	23	SIGN	sign	M	
+08	24	SIGN	sign	M	
+08	25	6	digit	M	
+08	26	12	digit	M	
+08	27	SIGN	sign	H	
+08	28	510	digit	M	crowded triple digit
+08	29	SIGN	sign	M	
+08	30	12	digit	M	
+08	31	60	digit	M	
+08	32	SIGN	sign	M	small ligature, line ends
+09	1	5104	digit	M	crowded cluster at line start
+09	2	x	digit	M	single mark, could be digit or sign
+09	3	5	digit	M	
+09	4	64	digit	M	
+09	5	9	digit	M	
+09	6	SIGN	sign	M	
+09	7	SIGN	sign	M	
+09	8	SIGN	sign	M	
+09	9	60	digit	M	
+09	10	8	digit	M	
+09	11	SIGN	sign	M	
+09	12	16	digit	M	
+09	13	SIGN	sign	H	
+09	14	6	digit	M	
+09	15	SIGN	sign	M	
+09	16	16	digit	M	
+09	17	15	digit	M	
+09	18	SIGN	sign	M	
+09	19	6	digit	M	
+09	20	SIGN	sign	M	
+09	21	SIGN	sign	M	
+09	22	14	digit	M	
+09	23	SIGN	sign	M	
+09	24	9	digit	M	
+09	25	14	digit	M	
+09	26	SIGN	sign	M	
+09	27	4	digit	M	
+09	28	SIGN	sign	M	
+09	29	16	digit	M	
+09	30	5	digit	M	
+09	31	SIGN	sign	M	
+09	32	6	digit	M	line ends
+10	1	SIGN	sign	M	line begins
+10	2	4	digit	M	
+10	3	SIGN	sign	M	
+10	4	SIGN	sign	M	
+10	5	16	digit	M	
+10	6	SIGN	sign	H	
+10	7	SIGN	sign	M	
+10	8	SIGN	sign	M	
+10	9	SIGN	sign	M	
+10	10	9	digit	M	
+10	11	SIGN	sign	M	
+10	12	6	digit	M	
+10	13	5	digit	M	
+10	14	16	digit	M	
+10	15	6	digit	M	
+10	16	10	digit	M	
+10	17	SIGN	sign	M	
+10	18	44	digit	M	
+10	19	64	digit	M	
+10	20	SIGN	sign	M	
+10	21	6	digit	M	
+10	22	SIGN	sign	M	
+10	23	5	digit	M	
+10	24	SIGN	sign	M	
+10	25	12	digit	M	
+10	26	SIGN	sign	M	
+10	27	6	digit	M	
+10	28	16	digit	M	
+10	29	15	digit	M	
+10	30	95	digit	M	
+10	31	SIGN	sign	M	
+10	32	SIGN	sign	M	
+10	33	6	digit	M	
+10	34	SIGN	sign	M	line ends
+11	1	22	digit	M	line begins, faint
+11	2	16	digit	M	
+11	3	9	digit	M	
+11	4	104	digit	M	
+11	5	SIGN	sign	M	
+11	6	16	digit	M	
+11	7	SIGN	sign	H	
+11	8	SIGN	sign	M	
+11	9	9	digit	M	
+11	10	10	digit	M	
+11	11	SIGN	sign	M	
+11	12	SIGN	sign	H	
+11	13	16	digit	M	
+11	14	SIGN	sign	M	
+11	15	8	digit	M	
+11	16	9	digit	M	
+11	17	12	digit	M	
+11	18	16	digit	M	
+11	19	4	digit	M	
+11	20	4	digit	M	
+11	21	15	digit	M	
+11	22	SIGN	sign	M	
+11	23	SIGN	sign	H	"clear ""#""-shaped cross-hatch mark"
+11	24	10	digit	M	
+11	25	4	digit	M	
+11	26	4	digit	M	
+11	27	64	digit	M	
+11	28	14	digit	M	
+11	29	15	digit	M	
+11	30	SIGN	sign	M	
+11	31	9	digit	M	line's second half badly obscured by a large ink blot; several digit readings below the blot area are unreliable
+11	32	SIGN	sign	M	loop cluster near left margin second row, ambiguous, possibly bleed-through from line above
+11	33	12	digit	M	
+11	34	SIGN	sign	H	
+11	35	14	digit	M	
+11	36	SIGN	sign	H	
+11	37	16	digit	M	
+11	38	4	digit	M	
+11	39	4	digit	M	obscured by ink blot, low confidence
+11	40	SIGN	sign	M	near ink blot
+11	41	6	digit	M	line ends, near blot
+12	1	64	digit	M	line begins
+12	2	SIGN	sign	M	
+12	3	SIGN	sign	H	
+12	4	SIGN	sign	M	
+12	5	4	digit	M	
+12	6	26	digit	M	
+12	7	SIGN	sign	M	small mark
+12	8	SIGN	sign	M	
+12	9	SIGN	sign	M	
+12	10	SIGN	sign	M	
+12	11	5	digit	M	
+12	12	SIGN	sign	H	
+12	13	544	digit	M	
+12	14	60	digit	M	
+12	15	6	digit	M	
+12	16	73	digit	M	
+12	17	SIGN	sign	M	
+12	18	9	digit	M	
+12	19	12	digit	M	
+12	20	5	digit	M	
+12	21	SIGN	sign	M	
+12	22	6	digit	M	
+12	23	SIGN	sign	M	small ligature, unclear
+12	24	5	digit	M	
+12	25	8	digit	M	
+12	26	SIGN	sign	M	
+12	27	5	digit	M	
+12	28	6	digit	M	
+12	29	9	digit	M	
+12	30	SIGN	sign	M	line ends
+13	1	12	digit	M	line begins
+13	2	SIGN	sign	H	
+13	3	6	digit	M	
+13	4	SIGN	sign	M	
+13	5	SIGN	sign	M	
+13	6	5	digit	M	
+13	7	14	digit	M	
+13	8	10	digit	M	
+13	9	SIGN	sign	H	
+13	10	16	digit	M	
+13	11	SIGN	sign	M	
+13	12	SIGN	sign	M	
+13	13	6	digit	M	
+13	14	15	digit	M	
+13	15	SIGN	sign	M	
+13	16	16	digit	M	
+13	17	SIGN	sign	M	
+13	18	104	digit	M	
+13	19	94	digit	M	
+13	20	47	digit	M	
+13	21	6	digit	M	
+13	22	16	digit	M	
+13	23	SIGN	sign	M	
+13	24	4	digit	M	
+13	25	4	digit	M	
+13	26	10	digit	M	
+13	27	4	digit	M	
+13	28	SIGN	sign	M	
+13	29	SIGN	sign	M	
+13	30	6	digit	M	
+13	31	9	digit	M	
+13	32	17	digit	M	
+13	33	8	digit	M	
+13	34	SIGN	sign	M	line ends
+14	1	5	digit	M	line begins
+14	2	9	digit	M	
+14	3	1	digit	M	
+14	4	4	digit	M	
+14	5	5	digit	M	
+14	6	4	digit	M	
+14	7	16	digit	M	
+14	8	SIGN	sign	M	
+14	9	SIGN	sign	M	
+14	10	15	digit	M	
+14	11	SIGN	sign	M	
+14	12	5	digit	M	
+14	13	SIGN	sign	M	
+14	14	12	digit	M	
+14	15	60	digit	M	
+14	16	SIGN	sign	H	
+14	17	16	digit	M	
+14	18	SIGN	sign	M	
+14	19	12	digit	M	
+14	20	6	digit	M	
+14	21	SIGN	sign	M	
+14	22	15	digit	M	
+14	23	SIGN	sign	M	
+14	24	60	digit	M	
+14	25	SIGN	sign	M	
+14	26	5	digit	M	
+14	27	14	digit	M	
+14	28	100	digit	M	
+14	29	60	digit	M	
+14	30	16	digit	M	
+14	31	SIGN	sign	M	
+14	32	6	digit	M	line ends
+15	1	SIGN	sign	M	line begins, small filled dot shape
+15	2	4	digit	M	
+15	3	5	digit	M	
+15	4	12	digit	M	
+15	5	104	digit	M	
+15	6	SIGN	sign	H	
+15	7	16	digit	M	
+15	8	SIGN	sign	M	
+15	9	6	digit	M	
+15	10	SIGN	sign	M	
+15	11	15	digit	M	
+15	12	SIGN	sign	M	
+15	13	SIGN	sign	M	
+15	14	6	digit	M	
+15	15	SIGN	sign	M	small ligature cluster
+15	16	98	digit	M	
+15	17	SIGN	sign	M	
+15	18	7	digit	M	
+15	19	16	digit	M	
+15	20	6	digit	M	
+15	21	SIGN	sign	M	
+15	22	6	digit	M	
+15	23	SIGN	sign	M	
+15	24	74	digit	M	
+15	25	410	digit	M	
+15	26	255	digit	M	
+15	27	60	digit	M	
+15	28	SIGN	sign	M	small ligature, unclear
+15	29	6	digit	M	
+15	30	5	digit	M	
+15	31	8	digit	M	
+15	32	16	digit	M	line ends
+16	1	7	digit	M	line begins
+16	2	SIGN	sign	H	
+16	3	6	digit	M	
+16	4	SIGN	sign	M	
+16	5	5	digit	M	
+16	6	10	digit	M	
+16	7	SIGN	sign	M	
+16	8	SIGN	sign	M	
+16	9	5	digit	M	
+16	10	1	digit	M	
+16	11	4	digit	M	
+16	12	SIGN	sign	M	small second Ao-like mark
+16	13	16	digit	M	
+16	14	SIGN	sign	M	
+16	15	60	digit	M	
+16	16	SIGN	sign	M	
+16	17	10	digit	M	
+16	18	SIGN	sign	M	
+16	19	16	digit	M	
+16	20	SIGN	sign	M	
+16	21	57	digit	M	
+16	22	9	digit	M	
+16	23	SIGN	sign	M	
+16	24	8	digit	M	
+16	25	SIGN	sign	M	
+16	26	60	digit	M	
+16	27	SIGN	sign	M	
+16	28	12	digit	M	
+16	29	6	digit	M	
+16	30	1	digit	M	
+16	31	15	digit	M	
+16	32	16	digit	M	
+16	33	SIGN	sign	M	line ends near right margin loop
+17	1	16	digit	M	line begins
+17	2	SIGN	sign	M	
+17	3	64	digit	M	
+17	4	SIGN	sign	H	
+17	5	9	digit	M	
+17	6	16	digit	M	
+17	7	SIGN	sign	M	small ligature cluster, ambiguous
+17	8	14	digit	M	
+17	9	16	digit	M	
+17	10	15	digit	M	
+17	11	SIGN	sign	M	
+17	12	SIGN	sign	M	
+17	13	SIGN	sign	M	small ligature
+17	14	SIGN	sign	M	similar ligature cluster to pos7
+17	15	SIGN	sign	H	
+17	16	9	digit	M	
+17	17	16	digit	M	
+17	18	6	digit	M	
+17	19	9	digit	M	
+17	20	1	digit	M	
+17	21	4	digit	M	
+17	22	400	digit	M	
+17	23	SIGN	sign	M	
+17	24	7	digit	M	
+17	25	4	digit	M	
+17	26	5	digit	M	line ends
+18	1	SIGN	sign	M	line begins with what may be a divider
+18	2	167	digit	M	
+18	3	SIGN	sign	M	
+18	4	1	digit	M	
+18	5	SIGN	sign	M	
+18	6	16	digit	M	
+18	7	4	digit	M	
+18	8	9	digit	M	
+18	9	SIGN	sign	M	
+18	10	6	digit	M	
+18	11	4	digit	M	
+18	12	SIGN	sign	M	
+18	13	SIGN	sign	M	"small ligature, resembles ""gui"""
+18	14	SIGN	sign	M	
+18	15	SIGN	sign	M	
+18	16	66	digit	M	
+18	17	60	digit	M	
+18	18	6	digit	M	
+18	19	SIGN	sign	M	
+18	20	6	digit	M	
+18	21	10	digit	M	
+18	22	4	digit	M	
+18	23	SIGN	sign	H	
+18	24	6	digit	M	
+18	25	SIGN	sign	M	
+18	26	7	digit	M	
+18	27	4	digit	M	
+18	28	5	digit	M	
+18	29	8	digit	M	
+18	30	SIGN	sign	M	
+18	31	15	digit	M	
+18	32	SIGN	sign	M	
+18	33	16	digit	M	line ends
+19	1	SIGN	sign	H	line begins
+19	2	14	digit	M	
+19	3	SIGN	sign	M	
+19	4	SIGN	sign	M	
+19	5	5	digit	M	
+19	6	16	digit	M	
+19	7	SIGN	sign	H	
+19	8	SIGN	sign	M	small ligature cluster
+19	9	5	digit	M	
+19	10	SIGN	sign	M	
+19	11	12	digit	M	
+19	12	60	digit	M	
+19	13	14	digit	M	
+19	14	SIGN	sign	M	
+19	15	SIGN	sign	M	small ligature
+19	16	SIGN	sign	M	
+19	17	6	digit	M	
+19	18	5	digit	M	
+19	19	SIGN	sign	M	
+19	20	16	digit	M	
+19	21	SIGN	sign	M	
+19	22	5	digit	M	
+19	23	SIGN	sign	M	"small ""m""-like shape"
+19	24	6	digit	M	
+19	25	60	digit	M	
+19	26	16	digit	M	line ends
+20	1	SIGN	sign	H	line begins
+20	2	6	digit	M	
+20	3	SIGN	sign	M	
+20	4	10	digit	M	
+20	5	6	digit	M	
+20	6	SIGN	sign	M	
+20	7	SIGN	sign	M	
+20	8	14	digit	M	
+20	9	15	digit	M	
+20	10	9	digit	M	
+20	11	SIGN	sign	M	
+20	12	6	digit	M	
+20	13	7	digit	M	
+20	14	SIGN	sign	M	
+20	15	66	digit	M	
+20	16	SIGN	sign	M	
+20	17	6	digit	M	
+20	18	SIGN	sign	M	
+20	19	16	digit	M	
+20	20	10	digit	M	
+20	21	4	digit	M	
+20	22	960	digit	M	
+20	23	SIGN	sign	H	
+20	24	14	digit	M	
+20	25	5	digit	M	
+20	26	SIGN	sign	M	
+20	27	15	digit	M	
+20	28	SIGN	sign	M	line ends
+21	1	9	digit	M	line begins
+21	2	SIGN	sign	M	
+21	3	5	digit	M	
+21	4	SIGN	sign	M	
+21	5	6	digit	M	
+21	6	17	digit	M	
+21	7	4	digit	M	
+21	8	167	digit	M	
+21	9	SIGN	sign	H	
+21	10	6	digit	M	
+21	11	SIGN	sign	M	
+21	12	60	digit	M	
+21	13	6	digit	M	
+21	14	SIGN	sign	M	
+21	15	SIGN	sign	M	obscured, possibly a hash-mark under ink smudge
+21	16	8	digit	M	
+21	17	9	digit	M	
+21	18	7	digit	M	
+21	19	64	digit	M	
+21	20	SIGN	sign	M	
+21	21	5	digit	M	
+21	22	60	digit	M	
+21	23	SIGN	sign	M	
+21	24	16	digit	M	
+21	25	12	digit	M	
+21	26	10	digit	M	
+21	27	SIGN	sign	M	
+21	28	SIGN	sign	H	
+21	29	6	digit	M	
+21	30	9	digit	M	
+21	31	1744	digit	M	crowded cluster, line ends
+22	1	SIGN	sign	M	line begins
+22	2	6	digit	M	
+22	3	SIGN	sign	M	small ligature
+22	4	16	digit	M	
+22	5	SIGN	sign	M	
+22	6	SIGN	sign	M	
+22	7	14	digit	M	
+22	8	15	digit	M	
+22	9	SIGN	sign	M	
+22	10	16	digit	M	
+22	11	15	digit	M	
+22	12	94	digit	M	
+22	13	4	digit	M	
+22	14	SIGN	sign	H	
+22	15	SIGN	sign	M	
+22	16	6	digit	M	
+22	17	SIGN	sign	M	
+22	18	SIGN	sign	M	
+22	19	SIGN	sign	M	
+22	20	6	digit	M	
+22	21	SIGN	sign	M	
+22	22	SIGN	sign	M	
+22	23	104	digit	M	
+22	24	SIGN	sign	H	
+22	25	SIGN	sign	M	
+22	26	6	digit	M	
+22	27	SIGN	sign	M	
+22	28	5	digit	M	
+22	29	SIGN	sign	M	
+22	30	6	digit	M	
+22	31	SIGN	sign	H	
+22	32	6	digit	M	
+22	33	10	digit	M	line ends
+23	1	608	digit	M	line begins
+23	2	SIGN	sign	M	
+23	3	SIGN	sign	M	
+23	4	4	digit	M	
+23	5	147	digit	M	
+23	6	SIGN	sign	M	
+23	7	6	digit	M	
+23	8	7	digit	M	
+23	9	44	digit	M	
+23	10	16	digit	M	
+23	11	SIGN	sign	M	"small ligature resembling ""cy"""
+23	12	6	digit	M	
+23	13	SIGN	sign	M	
+23	14	6	digit	M	
+23	15	10	digit	M	
+23	16	6	digit	M	
+23	17	5	digit	M	
+23	18	5	digit	M	
+23	19	10	digit	M	
+23	20	6	digit	M	
+23	21	22	digit	M	
+23	22	12	digit	M	
+23	23	510	digit	M	
+23	24	6	digit	M	
+23	25	16	digit	M	line ends
+24	1	SIGN	sign	H	line begins with clear hash-mark
+24	2	6	digit	M	
+24	3	5	digit	M	
+24	4	10	digit	M	
+24	5	5	digit	M	
+24	6	SIGN	sign	H	
+24	7	6	digit	M	
+24	8	6	digit	M	
+24	9	15	digit	M	
+24	10	6	digit	M	
+24	11	SIGN	sign	M	
+24	12	5	digit	M	
+24	13	16	digit	M	
+24	14	5	digit	M	
+24	15	6	digit	M	
+24	16	1	digit	M	
+24	17	4	digit	M	
+24	18	7	digit	M	
+24	19	16	digit	M	
+24	20	15	digit	M	
+24	21	SIGN	sign	M	
+24	22	12	digit	M	
+24	23	7	digit	M	
+24	24	SIGN	sign	H	
+24	25	14	digit	M	line ends
+25	1	SIGN	sign	M	line begins
+25	2	6	digit	M	
+25	3	15	digit	M	
+25	4	60	digit	M	
+25	5	SIGN	sign	H	
+25	6	20	digit	M	
+25	7	5	digit	M	
+25	8	6	digit	M	
+25	9	SIGN	sign	M	"small ligature ""iY"" cluster"
+25	10	16	digit	M	
+25	11	9	digit	M	
+25	12	SIGN	sign	M	
+25	13	6	digit	M	
+25	14	SIGN	sign	H	
+25	15	SIGN	sign	M	
+25	16	5	digit	M	
+25	17	6	digit	M	
+25	18	SIGN	sign	M	
+25	19	60	digit	M	
+25	20	SIGN	sign	M	small ligature resembling hash, faint
+25	21	564	digit	M	
+25	22	6	digit	M	
+25	23	15	digit	M	
+25	24	594	digit	M	line ends
+26	1	SIGN	sign	M	line begins
+26	2	62	digit	M	
+26	3	5	digit	M	
+26	4	SIGN	sign	H	
+26	5	16	digit	M	
+26	6	10	digit	M	
+26	7	SIGN	sign	M	
+26	8	SIGN	sign	H	
+26	9	6	digit	M	
+26	10	7	digit	M	
+26	11	SIGN	sign	M	
+26	12	SIGN	sign	M	
+26	13	66	digit	M	
+26	14	SIGN	sign	H	
+26	15	60	digit	M	
+26	16	16	digit	M	
+26	17	SIGN	sign	H	
+26	18	4	digit	M	
+26	19	SIGN	sign	M	
+26	20	15	digit	M	
+26	21	16	digit	M	
+26	22	SIGN	sign	M	
+26	23	32	digit	M	
+26	24	64	digit	M	line ends
+27	1	35	digit	M	line begins, faint
+27	2	14	digit	M	
+27	3	510	digit	M	
+27	4	16	digit	M	
+27	5	SIGN	sign	H	
+27	6	SIGN	sign	M	
+27	7	7	digit	M	
+27	8	SIGN	sign	H	
+27	9	SIGN	sign	M	
+27	10	5	digit	M	
+27	11	6	digit	M	
+27	12	16	digit	M	
+27	13	9	digit	M	
+27	14	SIGN	sign	H	
+27	15	16	digit	M	
+27	16	5	digit	M	
+27	17	9	digit	M	
+27	18	SIGN	sign	H	
+27	19	5	digit	M	
+27	20	6	digit	M	
+27	21	SIGN	sign	M	
+27	22	14	digit	M	
+27	23	SIGN	sign	M	
+27	24	6	digit	M	line ends
+28	1	1310	digit	M	line begins
+28	2	9	digit	M	
+28	3	6	digit	M	
+28	4	SIGN	sign	M	
+28	5	16	digit	M	
+28	6	44	digit	M	
+28	7	10	digit	M	
+28	8	16	digit	M	
+28	9	SIGN	sign	M	
+28	10	28	digit	M	
+28	11	SIGN	sign	H	
+28	12	28	digit	M	
+28	13	64	digit	M	
+28	14	SIGN	sign	H	
+28	15	16	digit	M	
+28	16	5	digit	M	
+28	17	104	digit	M	
+28	18	6	digit	M	
+28	19	15	digit	M	
+28	20	60	digit	M	
+28	21	SIGN	sign	H	
+28	22	12	digit	M	
+28	23	344	digit	M	line ends
+29	1	10	digit	M	line begins
+29	2	60	digit	M	
+29	3	5	digit	M	
+29	4	64	digit	M	
+29	5	3	digit	M	
+29	6	SIGN	sign	M	
+29	7	16	digit	M	
+29	8	7	digit	M	
+29	9	SIGN	sign	M	small ligature cluster
+29	10	11	digit	M	
+29	11	SIGN	sign	M	
+29	12	7	digit	M	
+29	13	4	digit	M	
+29	14	25	digit	M	
+29	15	6	digit	M	
+29	16	60	digit	M	
+29	17	SIGN	sign	M	
+29	18	16	digit	M	
+29	19	11	digit	M	
+29	20	4	digit	M	
+29	21	SIGN	sign	M	line ends
+30	1	5	digit	M	line begins
+30	2	SIGN	sign	M	
+30	3	68	digit	M	
+30	4	16	digit	M	
+30	5	SIGN	sign	M	
+30	6	5	digit	M	
+30	7	60	digit	M	
+30	8	SIGN	sign	M	
+30	9	6	digit	M	
+30	10	SIGN	sign	H	
+30	11	16	digit	M	
+30	12	SIGN	sign	M	
+30	13	7	digit	M	
+30	14	16	digit	M	
+30	15	52	digit	M	
+30	16	SIGN	sign	H	
+30	17	6	digit	M	
+30	18	15	digit	M	
+30	19	9	digit	M	
+30	20	44	digit	M	
+30	21	SIGN	sign	H	
+30	22	16	digit	M	line ends
+31	1	12	digit	M	line begins
+31	2	60	digit	M	
+31	3	SIGN	sign	M	
+31	4	16	digit	M	
+31	5	SIGN	sign	M	
+31	6	6	digit	M	
+31	7	5	digit	M	
+31	8	SIGN	sign	H	
+31	9	64	digit	M	
+31	10	SIGN	sign	M	
+31	11	10	digit	M	
+31	12	64	digit	M	
+31	13	SIGN	sign	M	
+31	14	6	digit	M	
+31	15	9	digit	M	
+31	16	16	digit	M	
+31	17	SIGN	sign	H	line ends
+32	1	9	digit	M	line begins
+32	2	17	digit	M	
+32	3	44	digit	M	
+32	4	SIGN	sign	M	
+32	5	5	digit	M	
+32	6	6	digit	M	
+32	7	SIGN	sign	M	
+32	8	15	digit	M	
+32	9	SIGN	sign	M	
+32	10	8	digit	M	
+32	11	SIGN	sign	M	
+32	12	SIGN	sign	M	
+32	13	5	digit	M	
+32	14	SIGN	sign	M	
+32	15	6	digit	M	
+32	16	5917	digit	M	
+32	17	10	digit	M	
+32	18	6618	digit	M	
+32	19	SIGN	sign	M	
+32	20	7616	digit	M	line ends
+33	1	SIGN	sign	H	line begins, clear ligature
+33	2	6	digit	M	
+33	3	16	digit	M	
+33	4	6	digit	M	
+33	5	SIGN	sign	M	
+33	6	SIGN	sign	M	small ligature
+33	7	60	digit	M	
+33	8	10	digit	M	
+33	9	44	digit	M	
+33	10	10	digit	M	
+33	11	455	digit	M	
+33	12	SIGN	sign	H	
+33	13	64	digit	M	
+33	14	16	digit	M	
+33	15	15	digit	M	
+33	16	SIGN	sign	M	
+33	17	12	digit	M	
+33	18	60	digit	M	
+33	19	SIGN	sign	H	line ends
