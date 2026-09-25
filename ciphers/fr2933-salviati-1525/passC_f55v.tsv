@@ -1,0 +1,88 @@
+line	pos	code	marks	conf	note
+1	8	phi		H	slashed-circle-on-stem, exact match to phi atlas (loop+diagonal+stem), not plain o.
+1	8.5	g	+	M	separate loop-with-tail matches g atlas; triangular stroke below could be the + mark but reads more like a flourish/underline
+2	6	_		M	part of a continuous plain cursive run (pos6-12), joined ascender/descender strokes, not a cipher glyph shape
+2	7	_		M	same continuous plain cursive run as pos6
+2	8	_		M	same continuous plain cursive run
+2	9	_		H	unmistakable cursive letter 'a'
+2	10	_		M	cursive s-like curl, part of the same plain run
+2	11	_		M	M/AC-shaped flourish, part of the same plain run, not a clean Lx match
+2	12	_		M	f-N ligature, tail end of the same plain run
+2	16	+		H	clean single cross/plus stroke, matches + atlas, not the crosshatch of #
+2	18	o.		H	circle with a clear center dot, exact match to o. atlas
+3	5	+		H	single cross with small serif, matches + atlas better than # crosshatch
+3	12	#		L	crosshatched multi-stroke mark (more strokes than a simple +), closer to # atlas; differs from both A's S4 and B's plain call -- three-way split
+3	25	_		H	clearly legible plain italic cursive, spells like 'aps'/'afs'
+4	3	_		H	plain cursive letters 'sso'
+4	8	_		H	plain cursive ': Pu' -- ordinary script
+4	19	eps		H	clean epsilon-squiggle, exact atlas eps match
+4	20	_		M	plain cursive 'cu' ligature, no cipher shape
+5	11	S7		M	numeral-7-like hook dominates the box; merged with extra ink, kept at S7 over a plain read
+5	23	g		H	loop-with-descender tail, clear g atlas match
+5	29	eps		H	epsilon squiggle with trailing stroke, matches eps atlas
+6	4	S7		M	single hooked diagonal stroke closest to the S7 numeral-7 shape among codebook entries
+6	16	S7		M	numeral-7 stroke with extra ligature above, kept at S7
+6	20	_		L	heavy ink blot/smudge, no clean glyph shape recoverable; likeliest a plain-script flourish under the ink
+7	13	lam		L	wedge/triangle top stroke resembles lam; box also carries a separate S-like stroke below not accounted for here
+7	15	m		M	cursive m-loop clearly visible at the foot of the box, matches m atlas; extra numeral strokes above may belong to a neighbour box
+7	30	_		M	plain cursive 'nu'/'ne' ligature
+8	15	v		H	clean script v, matches v atlas
+8	22	_		H	plain cursive 'Ass'
+8	24	_		H	plain cursive 'saj'
+8	26	_		M	plain cursive continuing '...se'
+8	28	N		M	cursive N-loop, reasonable N atlas match
+9	1	Z		M	script Z-loop shape, closest atlas match despite the trailing tee-like stroke
+9	2	S		M	curled S shape at the end of the box
+9	3	S		L	S/psi ligature heavily merged, kept at S as the dominant curl
+9	11	tee		M	cross/T-bar shape matches tee atlas; a numeral-7 stroke below may belong to a neighbour box
+9	14	S		L	S-curl and a separate eps-like loop both visible in one tall box; kept at S for the upper glyph
+10	1	sq		M	square/rectangular closed box, closer to sq atlas than the rounded ]
+10	2	Lx		M	vertical stroke with a hooked descender, matches Lx atlas
+10	4	g		M	g-loop-with-tail visible at the left edge; most of the box is blank margin
+10	6	S7		L	multiple numeral-like strokes (3,7,1,1), no single clean match; kept at S7 for the dominant shape
+10	19	Lx		M	vertical-plus-hook shape, matches Lx atlas
+10	22	Lx		M	same vertical-plus-hook shape as pos19
+11	3	sq		H	clean closed square/rectangle, exact sq atlas match
+11	4	_		H	plain cursive 'iw-' fragment
+11	8	_		M	plain capital T + cursive a, reads as ordinary script 'Ta'
+11	16	e		L	loop crossed by two diagonal strokes -- looks like an e-bowl with a strikethrough/correction rather than a clean single sign
+11	22	dl		M	loop-with-tail on the left half, matches dl atlas
+11	22.5	f		M	cross-stroke-with-descender on the right half, matches f atlas
+12	3	_		M	plain cursive digits/letters '12a', no cipher shape
+13	3	tee		M	cross/T-bar shape, close match to tee atlas
+13	6	S7		M	numeral-7 hook, matches S7 atlas
+13	7	f		M	cross-stroke over a loop, closest to f atlas despite the extra 'u' ligature above
+14	7	_		L	two thin crossing strokes with dots -- ambiguous, likely a punctuation/accent fragment rather than a coded sign
+14	13	_		H	plain cursive 'fa'
+14	18	_		M	plain cursive m-loop, part of a flowing word
+14	19	_		H	unmistakable cursive 'a'
+14	20	S		M	isolated S-curl, matches S atlas
+15	7	S7		M	numeral-7 stroke, left half of the compound box
+15	7.5	H		H	H-with-'10'-subscript shape, an exact match to the H atlas plate
+15	18	eps		H	clean epsilon squiggle
+15	20	#		H	crosshatched mark, clear # atlas match
+16	10	g		L	multiple merged glyphs (y/b/3/g) in one box; kept at g for the clearest shape, needs re-split
+16	12	]		M	flat-topped bracket/hook shape, closer to ] atlas than tee
+16	13	phi		M	circle with a diagonal cross-stroke, closer to phi atlas than a plain dotted o.
+16	26	_		M	cursive u with an underline flourish, reads as plain script
+17	1	S		M	S-curl with a small dot, matches S atlas
+17	2	_		M	plain cursive word fragment '...th'/'M tri'
+17	3	eps		H	clean epsilon squiggle
+17	5	_		L	single thin diagonal stroke with a dot, no clear codebook match; likeliest a stray pen stroke
+17	7	_		M	plain cursive 'tis'/'His' fragment
+17	9	p		M	loop with a clear cross-bar/tail, matches p atlas
+17	10	_		H	plain cursive 'qu' ligature
+17	14	bh		M	hook-with-descender shape, matches bh atlas
+17	17	_		H	plain cursive 'tto'
+18	1	p		M	hook with a cross-tail, closer to p atlas than a plain letter
+18	2	_		H	plain cursive 'pa'
+18	4	_		H	plain cursive 'rtn'
+18	5	_		M	single loop-with-tail stroke, reads as a plain cursive f/J, consistent with this line's dominant plain-run pattern
+18	6	S		M	isolated S-curl
+18	7	nt		M	t-cross plus N-loop ligature, matches nt atlas
+18	7.5	S		M	S-curl, second half of the split box
+18	10	_		M	plain capital-letter flourish ('M'), no clean cipher match
+18	13	_		M	plain cursive 'ts'
+18	15	_		L	merged cluster of strokes, illegible as a single sign
+18	18	_		H	plain cursive 'rN'
+19	18	S7	+	M	numeral-7 shape with a + cross mark above it, compound box
