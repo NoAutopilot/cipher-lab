@@ -801,3 +801,31 @@ positions; the v07 split adds 1 token and turns 1 S into 2 M). `reading.txt`, `r
 Grade: cryptanalytic (S/M per rule 4, no H or C). Not classifying novelty (rule 10) -- AUDIT.md is LANE V6's file
 and was not touched here. Search log: nothing searched this pass (disk-only edit of an existing transcription
 against images already on disk); no hosts, no subagents.
+
+## IA-BORROW: correspondancede0006jose p.647, 25 Sept 2026
+
+parent worker IA-BORROW (Sonnet, session_01DzmCQYEVbNRHz3etXbHcrV), per ASKS row 59. Attempted to borrow
+`correspondancede0006jose` (Cuvelier-Lefèvre, *Correspondance de la Cour d'Espagne VI*, 1937) and read p.647
+(the index entry for Mercy) to confirm or correct the Fable verifier's existing be-api snippet.
+
+**Result: borrow succeeds, page cannot be read by script.** `browse_book` returns `{"success": true}` (this
+also surfaced and fixed a live bug in `tools/ia_borrow.py`: it previously never checked the JSON `success`
+field, only the HTTP status). But `<id>_page_numbers.json`, which would map the printed page number 647 to a
+BookReaderJSIA leaf index, answers HTTP 403 even with the loan active and a valid `loan-<id>` token -- there is
+no script route to that mapping. A leaf fetched anyway (leaf 300 of 944, chosen arbitrarily to test the image
+endpoint, not because it is near p.647) came back with an `X-Obfuscate` header and no JPEG magic bytes: the
+image is obfuscated for the archive.org web reader, confirming the 23-24 Sept 2026 finding (CLAUDE.md, ASKS
+row 18) holds for this item specifically, not only in general. Loan returned immediately after each test
+(two short loans held this session, both < 2 minutes, both returned).
+
+**No new page-647 text beyond what ASKS row 59 already has** (the be-api full-text snippet: "... chiffre a cet
+effet. Il en est de même de l'abbé de Mercy qui a été envoyé par Léopold-Guillaume pour traiter ..."). Did not
+attempt a fresh be-api query for pp.15/20 in this pass (out of the borrow test's scope once the page-image
+route was confirmed closed; a plain be-api search for "Mercy" against this identifier would find any further
+snippets without borrowing).
+
+**Still: the owner is the only route to page 647's actual text** (ASKS row 59 unchanged, status still `open` --
+this pass could not move it). Job stopped after this item per its brief: item 2 in the same job
+(`sim_cryptologia_1981-04_5_2`) hard-failed the borrow step itself (HTTP 400, print-disabled tier, not this
+target's problem) -- see CLAUDE.md's Internet Archive paragraph, dated 25 Sept 2026, for the full finding.
+Items 3-5 of that job (hamilton-1650, dorabella-1897, koehler-1944/Farago) were not attempted.

@@ -84,7 +84,13 @@ def browse_book(session, identifier):
                       headers={"Referer": f"https://archive.org/details/{identifier}"}, timeout=30)
     if r.status_code != 200:
         die(f"borrow failed ({r.status_code}): {r.text[:300]}")
-    return r.json()
+    j = r.json()
+    if not j.get("success"):
+        # A 200 status here does not mean the loan was granted; e.g. print-disabled-tier or
+        # already-fully-loaned items answer 200 with success:false, which this used to treat
+        # as a successful borrow (confirmed as a live bug, IA-BORROW 25 Sept 2026).
+        die(f"borrow failed (json success=false): {j}")
+    return j
 
 def return_loan(session, identifier):
     r = session.post("https://archive.org/services/loans/loan/",

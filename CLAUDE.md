@@ -469,6 +469,23 @@ Getting the material is most of the work. Try routes in this order and record wh
    it equals the item's total `imagecount` (confirmed on two different items) -- so this route can confirm a
    term is present/absent and show the surrounding sentence, but cannot cite a page number; page images and
    raw OCR files (`_djvu.txt`, `_hocr_searchtext.txt.gz`, `_page_numbers.json`) all 403 without a valid loan.
+   **IA-BORROW job, 25 Sept 2026 (parent worker IA-BORROW, session_01DzmCQYEVbNRHz3etXbHcrV):** `tools/ia_borrow.py`'s
+   `browse_book` had a live bug -- it only checked the HTTP status, not the response JSON's `success` field, so a
+   200 response carrying `{"success": false, ...}` was logged and treated as a successful borrow; fixed (now
+   `die()`s on `success` false, whatever the field's own docstring, message says). Confirmed on real loans this
+   session: (1) `correspondancede0006jose` (Correspondance de la Cour d'Espagne VI, collections `inlibrary` +
+   `internetarchivebooks` + `printdisabled`) borrows fine (`browse_book` returns `{"success": true}`), but even
+   with an active loan and a valid `loan-<id>` token, `<id>_page_numbers.json` still answers 403 -- there is no
+   script route from a held loan to a printed-page-to-leaf mapping, only to the leaf-indexed BookReaderJSIA
+   manifest; a leaf fetched anyway (leaf 300 of 944, arbitrary) came back with an `X-Obfuscate` header and no
+   JPEG magic bytes, confirming the 23-24 Sept obfuscation finding holds for this item too. (2) A `sim_*`
+   microfilm/journal item carrying only the `printdisabled` collection (no `inlibrary`/`internetarchivebooks`) --
+   `sim_cryptologia_1981-04_5_2` -- hard-fails `browse_book` itself: HTTP 400, body
+   `{"error":"This book is not available to borrow at this time. Please try again later."}`, reproduced on one
+   retry after a 20 s pause. This is a second, independent confirmation of the print-disabled-tier finding above
+   (ASKS row 26, Daussy 2001): a `printdisabled`-only item cannot be borrowed by this account regardless of
+   retries. Per this job's brief, the whole job stopped here (first hard failure of the borrow step) rather than
+   attempting items 3-5.
    JSTOR: JSTOR_USER and JSTOR_PASS (set 20 Sept 2026) are the owner's JSTOR account, on JPASS monthly from 24 Sept 2026 (unlimited online reading,
    10 PDF downloads a month), used only from the owner's machine (Cloudflare blocks the cloud), online reading only, never PDF downloads; log the article and date in AUDIT.md and never print the credentials.
    **DECODE (de-crypt.org) login, confirmed 20 Sept 2026:** plain CSRF-protected form POST, no client-side

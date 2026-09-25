@@ -209,3 +209,10 @@ exit code: 0
   decoder objective is climbable only within about 3 swaps of the truth (HYPOTHESES.md "Family B'', permuted tableau").
   Park B'' unless a search with the decoder's power at the proxy's price appears; GOLD-K3's keyword-restricted cipher-side
   placements are the live corner of the cipher-side family.
+- IA-BORROW (25 Sept 2026, parent worker session_01DzmCQYEVbNRHz3etXbHcrV): attempted to borrow `sim_cryptologia_1981-04_5_2`
+  (Kahn, Cryptologia April 1981, pp.65-66, ASKS row 53's six disputed five-letter groups) -- `browse_book` hard-fails HTTP 400
+  "This book is not available to borrow at this time", reproduced on one retry after 20s. The item carries only the
+  `printdisabled` collection tag (no `inlibrary`/`internetarchivebooks`), the same tier that already blocked Daussy 2001
+  (ASKS row 26): this account cannot borrow it at all, not just "readable only by a person" as ASKS row 53 previously said.
+  ASKS row 53 updated with the finding, still `open`/the owner. Job stopped here per its brief (first hard borrow failure);
+  did not reach the Farago (Game of the Foxes) item planned for this target's ARCHIVE.md (ASKS 55b).
