@@ -183,3 +183,36 @@ What exists:
 Suggested follow-up (not done): if anyone wants the ciphertext for checking the f.278 decipherment glyph by
 glyph, reconcile passA/passB against the crops and rewrite `ciphertext.txt` from them.
 
+## DECODE fetch, 25 Sept 2026
+
+LANE DX job 2 (the one DECODE login worker), one login shared with `ciphers/intercepted-royalist-1646` (record
+8725), `ciphers/boswell-1628` (record 413) and `ciphers/bne20211-ferdinand-1478` (records 1172, 1180) —
+`tools/decode_browser_login.js`, `--fetch-page /decrypt-web/RecordsView/4930`, `--guess-fullsize`. This answers
+the "next step" logged above ("DECODE R4931 (this record) and R4930 (the nearby key record) once login works").
+R4931 itself (this letter, f.277) was **not** fetched this run — only R4930 was in the brief; R4931 is a
+follow-up for whoever picks this target up next.
+
+**RecordsView/4930 fields (real content):** ID 4930, Name `BL_Cotton_MS_Caligula_C_II_076-077`, Country England,
+City London / "British Library, Cotton MS Caligula C II. f 76-77.", Region England, Scotland, **Type: Key**
+(confirms Bourdeau's catalogue description of R4930 as a key record, not a second cipher letter), Status N/A
+(DECODE does not apply Decrypted/Non-decrypted to Key-type records), Cipher Type Unknown, Symbol Sets Alphabet,
+Pages 3, Creation Date 2023-04-13, Access mode Authentication required, Cleartext "English?", Created by
+`lehoanna`. No Author/Sender/Receiver given (consistent with a key sheet, not a letter).
+
+| file | bytes | sha1 | content |
+|---|---|---|---|
+| record_4930.html | 122942 | 3701549ff591b40de5835f0cd9dd55df32c2c70e | real (RecordsView metadata, scrubbed) |
+| TH_IMG_R4930_I28614_P1.jpg | 15482 | 73e63534d3964b1bec5f50d2e36dad4b95f44c55 | real thumbnail |
+| TH_IMG_R4930_I28614_P2.jpg | 14268 | 2bf73e2acd56116576cf22fd8e976767fbc5b663 | real thumbnail |
+| TH_IMG_R4930_I28614_P3.jpg | 13712 | 0ea51e5170073a3b375be484f32cefc178809131 | real thumbnail |
+| TH_IMG_R4930_I28614_P4.jpg | 9644 | 3a086b901d5a0299bdc59052da8ff363e609682d | real thumbnail |
+| TH_IMG_R4930_I28614_P5.jpg | 12584 | 038081e466407f725160339d77730a07103c5038 | real thumbnail |
+| TH_IMG_R4930_I28614_P6.jpg | 9565 | b6ecb92d3d15e4b5ec4b0ce6955751d95240a8ea | real thumbnail |
+| IMG_R4930_I28614_P1.jpg .. P6.jpg (6 files) | 17947 each | 035489a0605851154ab88372216354b63596ca22 | **placeholder** ("Insufficient permissions to see the full image") for all 6 full-size pages |
+
+f.277's key candidate is a 3-page/6-image record at full resolution, entirely placeholder-blocked for this
+account — the "fit R4930's key to f.277/f.278" step (item 2 of the follow-up list above) still needs either a
+role upgrade (outreach already drafted, `outreach/decode-image-access.md`) or the thumbnails read at their
+current ~200-268px resolution, which is likely too small for glyph-level key work. Not attempted this pass
+(out of this worker's brief — solving is a separate role). No novelty classification (rule 10).
+

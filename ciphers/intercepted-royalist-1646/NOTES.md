@@ -271,3 +271,23 @@ records are Key-type (status N/A, not applicable to a cipher/decrypted distincti
 second already-Decrypted single-page Cipher record adjacent to f.104 worth noting for later but out of this
 brief's scope (no document check run on it). This corroborates the folder's existing "Verdict: Still open" for
 f.9/f.10 from an independent DECODE-side source (status field, not a text search), rather than changing it.
+
+## DECODE fetch, 25 Sept 2026
+
+LANE DX job 2 (the one DECODE login worker), one login, `tools/decode_browser_login.js`. Re-fetched record 8725
+(f.104) in the same run as records 413, 4930, 1172 and 1180 (owed to sibling clusters; those four are filed under
+their own targets' `decode/` folders, not here — see `ciphers/boswell-1628/NOTES.md`,
+`ciphers/randolph-sussex-1569/NOTES.md`, `ciphers/bne20211-ferdinand-1478/NOTES.md`).
+
+| file | bytes | sha1 | content |
+|---|---|---|---|
+| record_8725.html | 121578 | 84bb8d5f9fc2f28a8bff9010051cb6de85b8e816 | real (RecordsView metadata; unchanged from 24 Sept: Status Decrypted, Cipher Type Unknown, Symbol Sets Numerical, 1 page) |
+| TH_IMG_R8725_I40320_P1.jpg | 14280 | 95245bec0fb2ece60a4f4e2fcb7abc4e9fb84aad | real thumbnail, unchanged |
+| TH_IMG_R8725_I40320_P2.jpg | 8466 | 84b80b1617bd8e0268db8f2035a9b0d12ce2dbf7 | real thumbnail, unchanged |
+| IMG_R8725_I40320_P1.jpg, IMG_R8725_I40320_P2.jpg | 17947 each | 035489a0605851154ab88372216354b63596ca22 | **placeholder** ("Insufficient permissions to see the full image"), same sha1 as 24 Sept and as the owner's own browser test |
+| DOC_8725_2024-Oct-12-01-33-12_24005.jpg, DOC_8725_2024-Oct-12-01-36-20_15694.txt | 17947 each | 035489a0605851154ab88372216354b63596ca22 | **placeholder**, same as 24 Sept — the "Decipher of the beginning" document is still unreadable by this account |
+
+No change from the 24 Sept 2026 finding: this account has RecordsView metadata access to record 8725 but not
+Documents/full-image content access. `ASKS.md` row 1 updated with today's date. Requests to de-crypt.org this run:
+2 (login) + 1 (primary RecordsView) + 4 (`--fetch-page` for 413/4930/1172/1180) + 32 (auto-discovered/guessed
+filesrv links across all five records) = 39, all ≥1.5s apart, well under the session cap. One login only.

@@ -83,3 +83,42 @@ MSS/20211 not checked this pass).
 Hosts this pass: WebSearch 3, academia.edu (WebFetch) 1 (403), web.archive.org (WebFetch 1 + curl 1, both
 failed/blocked), digibug.ugr.es (WebFetch 1 + curl 1, both 504), catalogo.bne.es (WebFetch 2, empty render),
 github.com 2 shallow clones (shared with D2/D3/D8, grep only, not counted twice).
+
+## DECODE fetch, 25 Sept 2026
+
+LANE DX job 2 (the one DECODE login worker), one login shared with `ciphers/intercepted-royalist-1646` (record
+8725), `ciphers/boswell-1628` (record 413) and `ciphers/randolph-sussex-1569` (record 4930) —
+`tools/decode_browser_login.js`, `--fetch-page /decrypt-web/RecordsView/1172,/decrypt-web/RecordsView/1180`,
+`--guess-fullsize`. Both records confirmed against this worker's own DECODE mirror figures above.
+
+**RecordsView/1172 fields (real content):** ID 1172, Name `NLS_MSS_20211_123` (DECODE's own "NLS" prefix,
+despite the City field reading "National Library of Spain, MSS/20211/123" — not National Library of Scotland;
+report literally), Country Spain, City Madrid, Author Ferdinand V, Receiver King John II of Aragon, Type Cipher,
+**Status: Non-decrypted**, Cipher Type Homophonic substitution, Symbol Sets Alphabet, Graphic signs, Pages 2,
+Creation Date 2019-08-26, Cleartext Spanish, Plaintext blank, Created by `lehoanna`.
+
+**RecordsView/1180 fields (real content):** ID 1180, Name `NLS_MSS_20211_126`, Country Spain, City Madrid /
+"National Library of Spain, MSS/20211/126" / "Trujillo" (matches the "Trujillo, 4 diciembre 1478" catalogue
+description above), Author Ferdinand V, Receiver King John II of Aragon, Type Cipher, **Status: Decrypted**,
+Cipher Type Homophonic substitution, Symbol Sets Graphic signs, Numerical, Pages 2, Creation Date 2019-08-26,
+Cleartext Spanish, **Plaintext Spanish** (DECODE's own field says a Spanish plaintext exists, but the attached
+document itself is placeholder-blocked below), Created by `lehoanna`.
+
+| file | bytes | sha1 | content |
+|---|---|---|---|
+| record_1172.html | 120883 | dd9e81f7e6d72848cab7021779d5084f9f3d6f9a | real (RecordsView metadata, scrubbed) |
+| record_1180.html | 121502 | 7f17cfa55d17b4424a28349aa577eb4e1a040c1e | real (RecordsView metadata, scrubbed) |
+| TH_IMG_R1172_I5878_P1.png | 118326 | cfcb3ae96be665e4c852828bf7dc58b1de0618b5 | real thumbnail |
+| TH_IMG_R1172_I5879_P2.png | 80518 | c88b99561ac6fedf319bce58f5ce8145db313dbb | real thumbnail |
+| TH_IMG_R1180_I5897_P1.png | 111985 | 4c22b4af522d8d9d73362a2f65d9e7bcb639de87 | real thumbnail |
+| TH_IMG_R1180_I5898_P2.png | 45794 | cf7b359beed66d900fd77f2f825f99d6d93e19f9 | real thumbnail |
+| TH_IMG_R1180_I5899_P3.png | 73377 | fcb5bb568289c7830fefb5ced88ef7b1e644a947 | real thumbnail |
+| IMG_R1172_I5878_P1.png, IMG_R1172_I5879_P2.png, IMG_R1180_I5897_P1.png, IMG_R1180_I5898_P2.png, IMG_R1180_I5899_P3.png | 17947 each | 035489a0605851154ab88372216354b63596ca22 | **placeholder** ("Insufficient permissions to see the full image") for every full-size page of both records |
+
+Same account-wide block already documented for record 8725 (`ciphers/intercepted-royalist-1646/NOTES.md`):
+metadata is readable, full images and R1180's plaintext document are not. R1180's DECODE-recorded Spanish
+plaintext therefore cannot yet be read or quoted from this account — the crib this target needs (LESSONS.md
+"Look for the sibling") exists on DECODE but is not accessible without a role upgrade
+(`outreach/decode-image-access.md`, sent 24 Sept 2026, reply pending) or the BNE catalogue image route (still
+blocked per the search log above). Not classifying novelty (rule 10); not a solver step, out of this worker's
+brief.
