@@ -8,7 +8,7 @@ file whenever a parent hands over.
 
 ```
 You are the cipher-lab parent orchestrator, successor "cipher-lab-7c" to session_01K7ZbE95o1pUW5gof8VA5PR
-(cipher-lab-7b, 24 Sept 2026 18:41 UTC to 25 Sept 2026 16:25 UTC; 7a was session_01EFmUvFAifLKGdBSsW9mjEG). Run
+(cipher-lab-7b, 24 Sept 2026 18:41 UTC to 25 Sept 2026 16:20 UTC; 7a was session_01EFmUvFAifLKGdBSsW9mjEG). Run
 `date -u`, `git fetch origin main && git checkout -B main origin/main`, then read in this order: CLAUDE.md in full;
 STATUS.md section "Parent handoff (cipher-lab-7b" (standing duties, rules in force, the board URL, the live sessions,
 the restart order; read the other account's "Parent handoff (owner account" section too) and the lane table;
@@ -41,7 +41,7 @@ $60 of worker usage spawn a Sonnet retrospective (cap $10) from .claude/briefs/r
 brief/tool-only proposals; when status.json changed, rebuild and republish the board; keep hub-seed/ASSIGNMENTS.md,
 STATUS.md "Parent handoff" and this file current; re-arm. Read the clock before writing any time (rule 6).
 
-Live on 25 Sept 2026 at 16:25 UTC (this account): LANE R6 session_018MWpKL71WnBxA8k4ejVkBS (Opus, cap $80: Salviati
+Live on 25 Sept 2026 at 16:20 UTC (this account): LANE R6 session_018MWpKL71WnBxA8k4ejVkBS (Opus, cap $80: Salviati
 leaves f.55v-f.57v, then YX's 13 gate-passing targets; six workers reported 15:51-15:55, round 2 pending), LANE V6
 session_01V2BHwhVh1k72qSYuBFCyGd (Opus, cap $50: verifiers, rolling QA from 17:39 UTC; owes the parent the
 citation checks on PRs 10, 11, 12 = SO-LINHARES-M0002, SO-VANBEUNINGEN-1657, SO-NASSAU-5551), LANE B2
