@@ -604,3 +604,98 @@ a scout/QUEUE row of its own -- this worker does not touch QUEUE.md per scope.
 Requests: resources.huygens.knaw.nl 7 (PDF fetches for 424, 6136, 6178, 6221, 6238, 5227, 10700; all ≥2.1s
 apart). No other hosts. No subagents (all rendering/cropping done locally with pymupdf + Pillow, installed from
 PyPI, offline after fetch). Novelty not classified (not this brief's job).
+
+## ZX2-LAG2: finish the WVO sibling sweep (25 Sept 2026, LANE ZX2)
+
+**Job:** the predecessor's 5 (brief said 6; recount below) remaining unchecked 1576-1579 candidates, then a
+live WVO query for La Garde/Schoonhoven correspondent + opmerkingen cipher terms, since the harvest on disk
+may predate or miss hits.
+
+**Intake gate:** `python3 tools/intake_gate_check.py la-garde-1577` -> `la-garde-1577: open (line 1) -- edition/page
+or full-text-search citation found within 6 lines` (exit 0, re-checked at claim time).
+
+**Recount.** Re-grepping `sources/wvo/cipher-letters-2026-09-24.tsv` for 1576-1579 gives 15 rows, not the
+brief's "13": 424, 5227, **5228**, **5561**, 5564, 6136, 6178, 6179, 6221, 6238, 6467, 10700, **10725**,
+**12630**, **12631**. Minus the 3 already on file (6179, 6467, 5564) = 12 candidates, minus ZX2-LAG's 7 fetched
+(424, 6136, 6178, 6221, 6238, 5227, 10700) = **5** remaining, not 6 -- all 5 are now fetched and checked below;
+none were left unaccounted for.
+
+### Step 1: the 5 remaining candidates, same method (fetch PDF, render contact sheet, eye-check, delete PDF)
+
+- **5228** (Willem van Oranje to Jan van Nassau, 4 Apr 1576): **cipher present**, p2 -- dot-separated numeral
+  groups mixed with roman letters and symbol nulls, e.g. "69.p.4. 61.94.61.z.[symbol].20.62. 77.84.55.88...123.
+  51.72.d.52. 64.E.l.U.d.q.n. faict grand bien 83.k.55.W...3.2." (full crop `images/siblings/5228_p2_full.jpg`),
+  values running into the 120s. This matches the Jan-van-Nassau house-cipher design already established from
+  5227/5564 (numeral groups with roman-letter/symbol nulls, values well above 24), not the La Garde/Marnix
+  design -- **not a pooling match**. p6 also carries a clear-text numbered list ("1. le dic de saxe...", 10
+  items) that looks like a policy/resolution summary, unrelated to this cipher passage; not pursued (out of
+  scope).
+- **5561** (Jan van Nassau to Willem van Oranje, 9 May 1576): continuous clear German prose throughout all 3
+  pages, address leaf with seal, no digit groups anywhere -- **no cipher on this leaf**.
+- **10725** (Willem van Oranje to Jan van der Linden, 20 Jun 1579): headed "Copia de carta del Principe de
+  Orange...descifrada" -- an already-deciphered Simancas Spanish copy, same pattern as 10700, continuous clear
+  prose, **no raw cipher digits**.
+- **12630** (gedeputeerden van Duitse Rijk to Willem van Oranje, 25 Jun 1579): "Copia de carta...confirmada",
+  continuous clear Spanish prose, **no cipher digits**.
+- **12631** (Willem van Oranje to Heinrich-Otto von Schwartzemberg, 29 Apr 1579): headed "descifrada",
+  continuous clear Spanish prose, **no cipher digits**.
+
+Confirms by eye, not just inference, the cluster read the predecessor had flagged as unverified for 5228/5561
+(Jan van Nassau cluster) and 10725/12630/12631 (1579 Gachard-cited "gedeputeerden" cluster): every member
+checked reads the same way as its cluster's already-checked representative. **Result: 0 of 5 same-system,
+1 with cipher present but wrong design (5228).**
+
+### Step 2: live WVO query
+
+`resources.huygens.knaw.nl/wvo/app/zoek_geavanceerd` gives the real advanced-search field names (`brieven?geavanceerd=1`
+alone only re-lists the default 25 rows regardless of query params -- confirmed by sending a nonsense
+correspondent name and getting the identical "25 resultaten"; do not trust that route). The working route is
+`brieven?af_naam_vol=<name>&af_naam_volBool=AND&geavanceerd=1&batch_size=100` for correspondent (br_rich
+direction defaults to "beide", both to/from) and `brieven?opmerkingen=<term>&opmerkingenBool=AND&jaar=1576&
+eindjaar=1579&datumBool=AND&geavanceerd=1&batch_size=100` for a date-scoped remarks search.
+
+- **Correspondent, "La Garde"**: 11 hits (1809, 1878, 1977, 2004, 2365, 3103, 3109, 3112, 6179, 6277, 8428) --
+  exactly matches R9's 24 Sept count ("11 found via the correspondent index"), confirming no new La Garde
+  letters since. Only 6179 (the target) carries cipher, per R9's already-run combined query (not re-run here,
+  per this worker's brief).
+- **Correspondent, "de la Garde"**: same 11 hits (the site's field does substring/fuzzy match, "La Garde"
+  already covers it).
+- **Correspondent, "Lagarde"** (no space): 0 hits.
+- **"The Schoonhoven office"**: tried two readings. `af_naam_vol=Schoonhoven` (surname match) returns 26 hits,
+  almost all "van Schoonhoven" as a personal surname, not La Garde's office -- too broad to be the intended
+  lead and not pursued further (out of this brief's time box). `plaats=Schoonhoven` (place of origin) returns
+  3 hits, one in range: **10761** (Hugo van Groenhoven, 6 Sept 1577, from Schoonhoven) -- opmerkingen field
+  read directly, no cipher mention ("Gericht aan Gilbert van Est..."), not a cipher letter. The other two
+  (4751, 1575; 5820, 1566) fall outside 1576-1579.
+- **Opmerkingen date-scoped re-run, 1576-1579, term "cijfer"**: live query returns exactly the same 15
+  briefnrs as the on-disk `cipher-letters-2026-09-24.tsv` for this range (424, 5227, 5228, 5561, 5564, 6136,
+  6178, 6179, 6221, 6238, 6467, 10700, 10725, 12630, 12631) -- **the harvest is current, no staleness found**.
+- **Opmerkingen date-scoped re-run, 1576-1579, term "chiffre"**: 0 hits (matches the 24 Sept harvest's finding
+  that chiffre's one hit, 6131, falls outside this range).
+- `gecijferd` and `cijferschrift` not separately re-run live: both are substrings of `cijfer`, already proven
+  a complete superset by the 24 Sept harvest (sources/wvo/NOTES.md item 3) and re-confirmed current by the
+  `cijfer` date-scoped re-run above returning the identical 15-row set the disk TSV has.
+
+**Minimum met:** every La Garde letter in WVO is listed in `siblings.tsv` with cipher yes/no (11 correspondent
+hits, only 6179 carries cipher, per R9 + this pass's live re-confirmation).
+
+### Step 3: same-system hit with an image
+
+None. All 5 fetched candidates plus the live query turned up 0 new same-system hits. **Pooled count unchanged:
+239 signs (6179 193 + 6467 46), same as ZX2-LAG and L4.** Nothing crossed the 150-sign pooling threshold from
+new material because there was no new material of the right design to pool.
+
+**Conclusion.** The WVO sibling pool for the La Garde/Marnix dot-separated 1-24 numeral system is now fully
+enumerated at 2 letters (6179, 6467), 239 pooled tokens. Every 1576-1579 Orange-circle cipher record in WVO has
+been checked by eye (12 of 12 non-target candidates: 7 by ZX2-LAG, 5 by this worker) or is a plaintext-copy
+duplicate already excluded by design (5228/5561/10725/12630/12631 confirm rather than merely infer the two
+clusters ZX2-LAG had flagged). This route is exhausted; any further pooling needs a different lead (a
+non-WVO archive, a different correspondent circle, or a period key/crib), not more WVO querying.
+
+Requests: resources.huygens.knaw.nl 17, all ≥2.1s apart, descriptive User-Agent: 5 PDF fetches
+(5228/5561/10725/12630/12631); 4 route-discovery fetches (`brieven?correspondent=...&geavanceerd=1` with a
+real name and with a nonsense name, confirming that param is silently ignored -- both return the identical
+"25 resultaten" default listing; `brieven?geavanceerd=1` and `zoek_geavanceerd` read to find the real field
+name, `af_naam_vol`); 7 working search queries (`af_naam_vol`: La Garde, Lagarde, de la Garde, Schoonhoven;
+`plaats`: Schoonhoven; `opmerkingen` date-scoped 1576-1579: cijfer, chiffre); 1 detail-page fetch (10761). No
+other hosts. No subagents. Novelty not classified (not this worker's job).

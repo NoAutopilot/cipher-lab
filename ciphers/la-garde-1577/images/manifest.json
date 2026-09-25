@@ -11,7 +11,12 @@
       "shelfmark": "Koninklijk Huisarchief Den Haag, A 11/XIV C/G-1",
       "pages": 4,
       "status": "target, partly in unsolved cipher per WVO Opmerkingen ('Gedeeltelijk in onopgelost cijferschrift'); printed by Groen van Prinsterer but the cipher passages themselves are omitted, not printed (see NOTES.md)",
-      "images": ["06179_p1.png", "06179_p2.png", "06179_p3.png", "06179_p4.png"]
+      "images": [
+        "06179_p1.png",
+        "06179_p2.png",
+        "06179_p3.png",
+        "06179_p4.png"
+      ]
     },
     {
       "briefnr": 6467,
@@ -22,7 +27,12 @@
       "shelfmark": "Koninklijk Huisarchief Den Haag, A 11/XIV C/M-12",
       "pages": 4,
       "status": "candidate sibling -- same numeral cipher design as 6179 (dot-separated 1-3 digit groups). WVO Opmerkingen: 'Twee passages in cijferschrift, waarvan de eerste met oplossing in de marge' (two cipher passages, the first with a solution in the margin). NOTE: this record's Brongegevens already lists TWO printed-edition PDFs (edities/GSME and edities/LMSAC) -- this letter has been printed somewhere; not chased further, out of this brief's scope.",
-      "images": ["06467_p1.png", "06467_p2.png", "06467_p3.png", "06467_p4.png"]
+      "images": [
+        "06467_p1.png",
+        "06467_p2.png",
+        "06467_p3.png",
+        "06467_p4.png"
+      ]
     },
     {
       "briefnr": 5564,
@@ -33,24 +43,100 @@
       "shelfmark": "Koninklijk Huisarchief Den Haag, A 11/XIV A/5-31",
       "pages": 3,
       "status": "candidate sibling -- different design from 6179 (German text, numeral groups with roman-letter labels mixed in, e.g. 'a.32.b', 'x.k.p.a', not pure numerals). WVO Opmerkingen: 'Met opgelost cijferschrift' (with solved cipher) -- solution status per WVO's own field, not a plaintext visible on these leaves (only the cipher pages themselves were fetched; no separate decipherment sheet in this 3pp file, p3 is the address leaf).",
-      "images": ["05564_p1.png", "05564_p2.png", "05564_p3.png"]
+      "images": [
+        "05564_p1.png",
+        "05564_p2.png",
+        "05564_p3.png"
+      ]
     }
   ],
-  "not_pursued": ["8428 (van de la Garde, 5-12-1581, different year, not fetched)"],
+  "not_pursued": [
+    "8428 (van de la Garde, 5-12-1581, different year, not fetched)"
+  ],
   "confirmed": "6179 fetched in full (4pp) and rendered; two 1577 siblings with cipher/oplossing notes (6467, 5564) fetched and rendered per brief's 'at most three'. Not transcribed. See inventory.tsv for per-page detail.",
   "margin_crops_25_sept_2026": {
     "by": "LANE R6 worker Y1, resolution check against 06467.pdf's own embedded page-2 image (fitz.Pixmap on xref 18: native 831x1244 grayscale, LOWER resolution than the already-saved 06467_p2.png at 1241x1754, which is itself an upscaled render) -- confirms 06467_p2.png already on disk is the best available resolution from this host; no higher-res source found (WVO record page links only the same PDF plus a small thumbnail).",
     "source_image": "06467_p2.png (no re-fetch needed, already correct)",
     "crops": [
-      {"file": "margin_6467_run1_4x.png", "region_px": [40, 390, 340, 500], "scale": "4x LANCZOS", "content": "margin note beside cipher run 1: 'Justifier le faict du grand' (two lines)"},
-      {"file": "margin_6467_run2_4x.png", "region_px": [40, 640, 260, 720], "scale": "4x LANCZOS", "content": "margin note beside cipher run 2: short abbreviation, read 'N.[c?].f.' -- native resolution ceiling, cannot be sharpened further"},
-      {"file": "margin_6467_leftcolumn_3x.png", "region_px": [0, 380, 340, 1000], "scale": "3x LANCZOS", "content": "whole left-margin column beside both cipher runs, confirms no other marginal annotation exists on this page"}
+      {
+        "file": "margin_6467_run1_4x.png",
+        "region_px": [
+          40,
+          390,
+          340,
+          500
+        ],
+        "scale": "4x LANCZOS",
+        "content": "margin note beside cipher run 1: 'Justifier le faict du grand' (two lines)"
+      },
+      {
+        "file": "margin_6467_run2_4x.png",
+        "region_px": [
+          40,
+          640,
+          260,
+          720
+        ],
+        "scale": "4x LANCZOS",
+        "content": "margin note beside cipher run 2: short abbreviation, read 'N.[c?].f.' -- native resolution ceiling, cannot be sharpened further"
+      },
+      {
+        "file": "margin_6467_leftcolumn_3x.png",
+        "region_px": [
+          0,
+          380,
+          340,
+          1000
+        ],
+        "scale": "3x LANCZOS",
+        "content": "whole left-margin column beside both cipher runs, confirms no other marginal annotation exists on this page"
+      }
     ]
   },
   "zx2_lag_sibling_sweep_25_sept_2026": {
     "by": "LANE ZX2 worker ZX2-LAG, source list from sources/wvo/cipher-letters-2026-09-24.tsv (fetch-once harvest) filtered to 1576-1579, not re-queried against WVO's search endpoint",
-    "fetched": ["424", "6136", "6178", "6221", "6238", "5227", "10700"],
+    "fetched": [
+      "424",
+      "6136",
+      "6178",
+      "6221",
+      "6238",
+      "5227",
+      "10700"
+    ],
     "note": "PDFs deleted after rendering (30MB folder cap); each briefnr's full page set was rendered once to a contact-sheet JPG (images/siblings/<nr>_contact.jpg) plus close-up crops for the two hits with a numeral-cipher passage (5227, 6238) and for 424's two text pages (checking the 'solved on leaf' tag turned up no cipher on this leaf). Re-fetch from sources/wvo/cipher-letters-2026-09-24.tsv's pdf_url column if a closer look is needed.",
-    "files": ["siblings/424_contact.jpg", "siblings/424_p2_full.jpg", "siblings/424_p3_full.jpg", "siblings/6136_contact.jpg", "siblings/6178_contact.jpg", "siblings/6221_contact.jpg", "siblings/6238_contact.jpg", "siblings/6238_p1_botleft.jpg", "siblings/5227_contact.jpg", "siblings/5227_p3_botleft.jpg", "siblings/5227_p4_botleft.jpg", "siblings/10700_contact.jpg"]
+    "files": [
+      "siblings/424_contact.jpg",
+      "siblings/424_p2_full.jpg",
+      "siblings/424_p3_full.jpg",
+      "siblings/6136_contact.jpg",
+      "siblings/6178_contact.jpg",
+      "siblings/6221_contact.jpg",
+      "siblings/6238_contact.jpg",
+      "siblings/6238_p1_botleft.jpg",
+      "siblings/5227_contact.jpg",
+      "siblings/5227_p3_botleft.jpg",
+      "siblings/5227_p4_botleft.jpg",
+      "siblings/10700_contact.jpg"
+    ]
+  },
+  "zx2_lag2_sibling_sweep_25_sept_2026": {
+    "by": "LANE ZX2 worker ZX2-LAG2, finishing ZX2-LAG's sweep: 5 remaining 1576-1579 candidates from sources/wvo/cipher-letters-2026-09-24.tsv not fetched by the predecessor",
+    "fetched": [
+      "5228",
+      "5561",
+      "10725",
+      "12630",
+      "12631"
+    ],
+    "note": "PDFs deleted after rendering (30MB folder cap); each fetched to a contact-sheet JPG, plus one close-up crop (5228 p2) for the cipher passage found.",
+    "files": [
+      "siblings/5228_contact.jpg",
+      "siblings/5228_p2_full.jpg",
+      "siblings/5561_contact.jpg",
+      "siblings/10725_contact.jpg",
+      "siblings/12630_contact.jpg",
+      "siblings/12631_contact.jpg"
+    ]
   }
 }
