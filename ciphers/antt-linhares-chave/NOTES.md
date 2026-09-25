@@ -402,3 +402,36 @@ Not run this pass: Part II (English-Portuguese) of the same volume (would test t
 attempt at the page85/rank19 mismatch beyond the third check above (it may be the caret-digit transcription that
 still needs review, not the dictionary count); the print check and novelty search (a verifier's job, not a
 solver's, per CLAUDE.md rule 10 and this brief).
+
+## Maço 86 eye-check continued (LX-SIB2, 25 Sept 2026)
+
+Continued LX-SIB's eye-check in the order its note recommended: the six small unchecked items first
+(`/13 /14 /15 /16 /18 /20`), then the remaining items smallest first. `filelist.json` for all 20 non-`/11`
+items was already on disk from LX-SIB's Part 1 pass and was not refetched.
+
+**Eye-checked this pass** (thumbnail, `--stride 1`, full coverage of the item, montage built and read for
+each): `/13` (6 images), `/14` (4), `/15` (4), `/16` (4), `/18` (4), `/20` (4), then continuing smallest-first
+`/05` (8), `/07` (8), `/17` (12) -- 54 images across 9 items. **All nine are ordinary correspondence**: cursive
+prose letters (readable running Portuguese hand, signatures on several), blank or foxed/water-stained versos,
+and address panels with wax seals (`/13` m0001/m0006, `/14` m0004, `/07` m0008). **None carries numeral-group
+ciphertext**, none continues `m0002`'s hand, paper or page numbering, none shows the folded/stamped format of
+the key unit (`/11`) or its ciphertext leaf.
+
+**Cumulative result across LX-SIB + LX-SIB2: 15 of 21 maço 86 items eye-checked** (the original `/11`, plus
+`/06 /08 /12 /19 /21` from LX-SIB, plus `/13 /14 /15 /16 /18 /20 /05 /07 /17` this pass) -- **70 of 604 images**
+in the maço opened, **no sibling ciphertext found in any of them.** `m0002`'s missing pages 1 and 4 remain
+unlocated.
+
+**Not eye-checked** (budget; smallest-first order continues): `/10` (28 images), `/03` (40), `/04` (46), `/01`
+(82), `/02` (126), `/09` (212) -- 6 items, 534 images, none opened. `/10` is the next cheapest step (~28
+requests, leaves headroom in a fresh 60-request session for a first look at `/03` too); the three large bundles
+(`/01 /02 /09`, 420 images together) still dwarf a single session's budget and would need either a much larger
+request allowance or a sampling strategy (e.g. every Nth leaf) rather than full coverage.
+
+Per-host report (this pass): `digitarq.arquivos.pt` 54 requests -- 9 `--thumbs` calls, one per item, full
+coverage (6+4+4+4+4+4+8+8+12 = 54 images/requests), all >=3s apart, one at a time; no `--list` calls needed
+(filelists already on disk). Stopped at 54 of the 60-request session cap (the brief's stated stop point was 57;
+stopped short of that because the next item in order, `/10` at 28 images, would have exceeded either figure, and
+partial coverage of an item is not useful for a "no cipher found" claim). No 429/403/challenge seen. Files
+added: `images/maco86_scan/doc{13,14,15,16,18,20,05,07,17}/thumb_*.jpg` and `montage_01.jpg` per item (~9 files
+x up to 12 images, well under 1 MB total).
