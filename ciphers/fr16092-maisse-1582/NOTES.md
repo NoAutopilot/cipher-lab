@@ -1,10 +1,55 @@
+blocked
+Boucher, Lettres de Henri III, roi de France, tomes V-VI (2000/2006) is the standard edition for this despatch volume's date range and remains unread by any worker (not on IA, HathiTrust or Google Books full view from the cloud, confirmed by direct search); queued as LOCAL-QUEUE.tsv row L9 for a home-IP check.
+
 # BnF fr.16092 — Dépêches de la Cour à André Hurault de Maisse, ambassadeur à Venise, août 1582-décembre 1585
 
-Status: open
+Status: open (superseded by the `blocked` intake-gate verdict above, LANE CX 25 Sept 2026 — see the "## Check-solved (LANE CX, 25 Sept 2026)" section below).
 
 Check-solved pass, 24 September 2026 (Sonnet, orchestrator brief for M13-M16). Not a full six-source check-solved
 run; this is the editions-first + one-leaf pass the brief asked for. A formal check-solved (blind, six sources)
 is still owed before this goes on the board at stage 2.
+
+## Check-solved (LANE CX, 25 Sept 2026)
+
+Formal six-source sweep per `.claude/briefs/check-solved.md`. Two prior passes already below ("Check-solved pass,
+24 Sept" and "Locate-ciphertext + print check pass, 24 Sept") did most of the legwork; this section completes it
+to the check-solved format and adds what those passes did not cover.
+
+1. **Web search.** `"fr.16092" OR "Hurault de Maisse" cipher "solves" Claude GPT Vals AI` (this worker, 25 Sept
+   2026) surfaced the BnF/Gallica catalogue pages, the Biblissima person record, and `dbourdeau/cyphersolver`
+   pull request #7 (Henri IV to Maisse, Venice 1592-93 — i.e. fr.16093, the *other* volume, already distinguished
+   from this one by the 24 Sept pass). A second query, `"fr.16092" Maisse cipher solves Claude GPT solved
+   "Boucher" decipherment`, surfaced the same PR and general cryptography history pages. No hit names fr.16092,
+   this specific despatch volume, or a solution to it. Model-solve-announcement family (Vals AI/Schneier/
+   itdoeswhatnow, checked once for all four of this worker's targets) found only the unrelated Urquhart 1653 and
+   Cyphral Distich stories.
+2. **Standard edition/calendar.** Boucher tomes V-VI: **blocked**, as line 2 states — confirmed again this pass
+   (Google Books, IA advancedsearch, HathiTrust bibliographic API all already tried and negative per the 24 Sept
+   "Locate-ciphertext + print check pass" section below; not re-run). LOCAL-QUEUE.tsv row L9 already queues this
+   exact check for a home IP; not duplicated.
+3. **Community lists.** Tomokiyo (`henryiii.htm`, read via Bourdeau's mirror, 24 Sept pass below) already quoted
+   verbatim: key reconstructed, "I have not seen its actual use" — the closest thing to a community-list verdict
+   on this volume, and it does not claim a decipherment. No dedicated Cipherbrain/Schmeh page found for this
+   volume (the web search above is this worker's Cipherbrain-equivalent check).
+4. **DECODE.** `sources/decode/records-non-decrypted-2026-09-24.tsv` and the Aymeloglu-repository's cached DECODE
+   catalogue mirror (`catalogue/decode-catalog.csv`) both grepped by this worker for "maisse"/"16092": zero hits
+   in either.
+5. **Bourdeau** (`github.com/dbourdeau/cyphersolver`, fresh depth-1 clone by this worker, 25 Sept 2026): only
+   `maisse1592/` (fr.16093, a different volume, different method — already distinguished by the 24 Sept pass); no
+   hit on "16092" anywhere in the repository (re-confirmed on this worker's own fresh clone, not just the 24 Sept
+   pass's).
+6. **Aymeloglu** (`github.com/aaymeloglu/unsolved-ciphers`, fresh depth-1 clone by this worker, 25 Sept 2026): no
+   hit on "16092" or "Maisse" tied to this volume.
+
+**Verdict: `blocked`.** Not because the volume is inaccessible (Gallica serves it fully) but because the one
+source that could settle whether any fr.16092 despatch is already printed from a lost decipherment — Boucher's
+critical apparatus — cannot be opened from this environment by any route tried, and per the intake gate an
+edition that cannot be opened makes the target `blocked` regardless of what else was found. LOCAL-QUEUE.tsv row
+L9 already carries this exact request. Novelty not classified (rule 10; not this brief's job).
+
+Requests this pass: github.com 2 (fresh shallow clones, dbourdeau + aaymeloglu, deleted after grep). WebSearch 2
+queries. No other hosts (all image/Gallica/Google-Books/IA/HathiTrust work reuses the 24 Sept passes' already-
+logged results, not repeated). No subagents, no logins, no credentials.
 
 ## What the target is
 
