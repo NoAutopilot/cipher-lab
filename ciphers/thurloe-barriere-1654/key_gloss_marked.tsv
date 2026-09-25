@@ -1,0 +1,70 @@
+# key_gloss.tsv with code+mark as the key unit (ZX-BAR2, 25 Sept 2026). See NOTES.md ZX-BAR2
+# section and marks.tsv/mark_positions.tsv for how each mark was read and reconciled.
+# status/note columns are copied unchanged from key_gloss.tsv (they describe the BARE-code
+# conflict, not recomputed for code+mark -- the conflict count after marking is reported in
+# NOTES.md, not by these columns).
+code	value	grade	status	source_run	note
+o-none	le	C	primary	R004	from the 19-word/19-token exact match, R004+R005
+70-macron	parlement	C	primary	R004	
+12-dot	le	C	conflict	R004	conflicts with 12=si (R007)
+34-acute	protecteur	C	primary	R004	appears twice in the same 19-token run with 71, both "protecteur" -- consistent, not a conflict
+66-diaeresis	estant	C	conflict	R004	conflicts with 66=be (R039, tentative)
+40-circumflex	fort	C	conflict	R004	conflicts with 40=chef (R014) and 40=mil (R039, tentative)
+26-circumflex	oppose	C	primary	R004	
+68-diaeresis	si	C	primary	R004	
+[circle-dot]-none	quoique	C	primary	R004	astrological/planetary-looking symbol, distinct from the "[phi-symbol]" used at several line starts elsewhere in the letter
+d-none	je	C	conflict	R004	conflicts with d=de (R010), d=deffein (R024), d=le (R041, tentative) -- "d" conflicts more than any other token in this pass; see NOTES.md s.3
+61-none	ne	C	conflict	R004	conflicts with 61=que (R006), 61=premier (R014), 61=la (R015) -- the most conflicted digit in this pass
+75-diaeresis	doute	C	primary	R004	
+88-macron	point	C	conflict	R004	conflicts with 88=un (R026, tentative), 88=le (R039, tentative)
+78-circumflex	que	C	primary	R004	
+44-circumflex	le	C	conflict	R004	conflicts with 44=pourroit (R024) and 44=ne (R026, tentative)
+71-grave	protecteur	C	primary	R004	see note on 34
+89-caron	demeure	C	conflict	R004	conflicts with 89=tira (R024)
+79-acute	le	C	primary	R004	
+31-caron	maistre	C	conflict	R004	conflicts with 31=traiter (R021, tentative)
+83-caron	puis	C	primary	R006	from the 5-word/5-token exact match at the start of R006
+61-none(2nd obs)	que	C	conflict	R006	see 61 above; recorded again to show the conflict is not a one-off
+13-none	je	C	primary	R006	distinct code from d; both "je" -- homophones, not a conflict
+16-none	feur	C	primary	R006	printed "feur" (long-s); read literally, plausibly "sceur"/an old spelling this pass did not resolve further
+8-acute	qu'illes	C	conflict	R006	conflicts with 8=le (R041, tentative)
+9-macron	su	C	primary	R007	from the 5-word/5-token exact match at the start of R007 ("fu c fe fi e")
+59-none	c	C	primary	R007	value is the single letter "c" as printed -- unusual for a French word; flagged uncertain interpretation, not necessarily wrong
+63-caron	se	C	primary	R007	
+12-macron(2nd obs)	si	C	conflict	R007	see 12 above
+90-caron	e	C	conflict	R007	conflicts with 90=lequel (R024) and 90=chofes (R039, tentative)
+91-acute	changer	C	primary	R010	from the partial (5 of 9 tokens) mapping in R010
+43-macron	se	C	primary	R010	distinct code from 63; both "se" -- homophones, not a conflict
+a-none	le	C	primary	R010	from R010 only this pass; a different "a" reading was not independently confirmed elsewhere
+61-none(3rd obs)	premier	C	conflict	R014	see 61 above
+40-none(2nd obs)	chef	C	conflict	R014	see 40 above
+61-none(4th obs)	la	C	conflict	R015	see 61 above
+x-none	vie	C	primary	R015	
+86-grave	seurement	C	conflict	R017	tentative (near-match, 4 items for 4 tokens); conflicts with 86=propofition (R026, tentative)
+69-diaeresis	la	C	primary	R017	tentative
+36-unreadable	partie	C	primary	R017	tentative
+m-none	de l'armee	C	primary	R017	tentative; treated as one gloss item, not split into "de" + "l'armee"
+37-dot	separee	C	conflict	R018	tentative singleton; conflicts with 37=le (R026, tentative)
+31-macron(2nd obs)	traiter	C	conflict	R021	tentative singleton; see 31 above
+90-acute(2nd obs)	lequel	C	conflict	R024	from the 7-word/7-token exact match R022+R023+R024; see 90 above
+d-none(2nd obs)	deffein	C	conflict	R024	see d above
+92-macron	d'eux	C	primary	R024	
+39-circumflex	le	C	primary	R024	distinct code from o/12/44/79/a; all "le" -- homophones consistent with a common word needing many slots
+22-none	a	C	primary	R024	value is the single letter/preposition "a" as printed
+44-none(2nd obs)	pourroit	C	conflict	R024	see 44 above
+89-caron(2nd obs)	tira	C	conflict	R024	see 89 above
+15-none	Espagne	C	primary	R026	tentative (6-for-6 sequential prefix match)
+44-none(3rd obs)	ne	C	conflict	R026	tentative; see 44 above
+45-none	faifant	C	primary	R026	tentative
+88-none(2nd obs)	un	C	conflict	R026	tentative; see 88 above
+37-none(2nd obs)	le	C	conflict	R026	tentative; see 37 above
+86-none(2nd obs)	propofition	C	conflict	R026	tentative; see 86 above
+24-unreadable	ordre	C	conflict	R035	very low confidence (1 word for 16 tokens, position guessed); not applied even though nothing else claims 24 this pass -- excluded from primary on confidence grounds, not a same-code conflict
+40-caron(3rd obs)	mil	C	conflict	R039	tentative; see 40 above
+88-caron(3rd obs)	le	C	conflict	R039	tentative; see 88 above
+66-circumflex(2nd obs)	be	C	conflict	R039	tentative; see 66 above
+c-none	les	C	primary	R039	tentative; distinct token from the value "c" (59=c) -- this is the glyph "c" itself as a token, meaning "les"
+90-caron(3rd obs)	chofes	C	conflict	R039	tentative; see 90 above
+19-none	Il	C	primary	R041	tentative (3-for-3 prefix match, "Il le le")
+d-none(3rd obs)	le	C	conflict	R041	tentative; see d above
+8-macron(2nd obs)	le	C	conflict	R041	tentative; see 8 above

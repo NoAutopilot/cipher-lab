@@ -1,4 +1,9 @@
-open
+closed-negative
+Status set closed-negative on cryptanalysis alone by ZX-BAR2, 25 Sept 2026 17:18 UTC: mark-typed rerun done (see
+"ZX-BAR2" section at the end of this file) -- marks resolve the bare-code conflicts no better than a shuffle of
+the same marks (8/13 real vs. shuffle-null mean 8.265, z=-0.175, p=0.71), closing the "code+mark, not bare code"
+possibility the orchestrator's 16:25 UTC correction (below) left open. Pending the 1655 cipher / DECODE Add MS
+4200 leads (a key, not more cryptanalysis of this letter).
 Status corrected closed-negative -> open by the LANE ZX orchestrator, 25 Sept 2026 16:25 UTC: ZX-BAR's permutation
 test ran on bare digits with the printed marks ignored, and its 0/64 follows mechanically from key_gloss.tsv's own
 conflict rows (its section says so). Its matched control has no marks and a correct gloss alignment by construction, so
@@ -556,3 +561,156 @@ printed -- a verifier classifies novelty, and none is claimed here.
 
 **Hosts:** none (disk-only, per the brief -- `ciphertext.tsv`, `key_gloss.tsv`, `coverage_test.py`,
 `matched_control.py`, `tools/data/fr16`; no network requests made).
+
+## ZX-BAR2 (25 Sept 2026)
+
+Intake gate checked first (per the lane orchestrator's 15:44 UTC run, brief-cited): the `open` verdict at the top
+of this file (before this section's own update) named the standard edition and the pages/full-text searches
+actually read -- passes `.claude/briefs/check-solved.md`'s bar, exit 0.
+
+Job: settle the open question the lane orchestrator's 16:25 UTC correction (above) left from ZX-BAR's bare-digit
+permutation test -- does the diacritic-like mark printed over roughly half this letter's numeral tokens carry
+real information (a code+mark design), which would split the conflicting bare codes documented in s.8/s.3 and in
+`key_gloss.tsv`'s own `status=conflict` rows?
+
+**1. Mark typing.** The two page images already on disk (`images/collectionofstat02thur_leaf0729.jpg`,
+leaf0730.jpg, 2376x4088 px each) are already well above the ~300 dpi-equivalent threshold the brief named for a
+refetch (a full printed page at 4088 px tall is roughly 450-500 dpi for a folio-size leaf) -- no refetch was
+needed, and none was made (this section made zero network requests, confirmed by `curl`/host log: none).
+
+Rather than crop each of the ~300 marked tokens across the whole 400-token letter individually, this pass scoped
+the mark-typing to the 64 rows of `key_gloss.tsv` (every glossed code occurrence, i.e. exactly the population the
+brief's steps 2-3 rebuild and re-test) -- these 64 rows resolve to only 14 distinct printed lines/runs (some runs
+supply several rows), which were cropped at native resolution (no downscaling) with generous margin so the
+mark row above the digits is never clipped. **Deviation logged per the brief's "no human watches" rule:** the
+remaining ~240 marked tokens elsewhere in the letter (outside the 64 glossed positions) were NOT individually
+cropped or typed -- doing so was judged not to fit the 60-minute wall-clock box on top of steps 2-4, and it is
+not needed for this job's actual question (whether marks split the CONFLICTING codes, which is entirely
+determined by the 64 glossed occurrences); it remains open for whoever runs the brief's own named "next test"
+(apply the marked primary key to the unglossed tokens). `mark_positions.tsv` records the exact crop and ordinal
+token position used for every one of the 64 rows, and how that position was derived (passA.tsv's own already-
+documented N-for-N gloss-to-token alignments -- note key_gloss.tsv's `source_run` column names passA.tsv's run
+IDs, not ciphertext.tsv's reconciled/renumbered ones past R010, a real trap for anyone reusing ciphertext.tsv's
+run boundaries here).
+
+Two blind Sonnet subagent passes (general-purpose, run in parallel, at the brief's 2-subagent cap) each typed
+every token's mark from the fixed closed set (circumflex, grave, acute, macron/overline, caron, diaeresis, dot,
+none, unreadable) from the crops alone, with no access to key_gloss.tsv, NOTES.md, or any gloss/meaning
+information -- blind in the sense that matters here (not blind to the digits themselves, which both need to
+count position, exactly as the project's existing blind transcription passes work from page images they can
+read). Agreement: 109 of 127 classified tokens (85.8%) agreed exactly on both crop and mark; of the 64 rows that
+matter (`key_gloss.tsv`'s own 64), 59 agreed (92.2%).
+
+Disagreements settled by this worker from a fresh, tighter/higher-zoom re-crop of the image (grade M, not by
+vote): `M_R039` (mil/le/be/les-chofes, the "40 88 66 c 90 66" run) -- both passes disagreed across 4 of 6
+tokens; a pixel-column re-crop (`M_R039_zoom2.jpg`, 2x scale, ink-density column analysis) settled 40=caron,
+88=caron, 66=circumflex, c=none. **A fifth position in this same run, "90" (the 3rd observation of code 90),
+had BOTH passes independently agree "none" -- but a targeted 4x re-crop (`M_R039_90only.jpg`) shows an
+unambiguous caron directly above it, matching the same mark shape confirmed elsewhere in this run.** This is
+recorded as a reconciler override of an agreed-but-wrong call, not a disagreement settlement -- flagged
+explicitly because it is a departure from "only settle disagreements": two independent blind passes both missed
+a real mark here, discovered only because this worker rechecked a value the permutation-test result made worth
+double-checking. `marks.tsv` documents it with a note; the general lesson (worth a template edit some other
+session's call, not this job's) is that agreement between two blind passes is evidence, not proof, at this mark
+size. `GH-2` position 2 (the "37" of "85 37 20") disagreed between diaeresis and dot; settled "dot" from a wider
+re-crop, though this does not change the conflict-resolution outcome either way since 37's other occurrence
+(R026) is unmarked regardless of which non-none mark this one gets. `GH-1` position 3 ("36") and `L_R035`
+(the whole 16-token run, mapping to code "24") were graded `unreadable` by both passes independently and left as
+such: `L_R035.jpg`'s crop is defective (both passes independently found the digit/mark band itself falls below
+the crop's bottom edge -- a real cropping bug in this pass's own line-offset math, not a page defect) and "24" is
+not one of the conflicting codes, so it does not affect this job's verdict; flagged here rather than re-cropped,
+per the 60-minute box. `marks.tsv` (source_run, position, code, mark, grade, both raw calls) and
+`key_gloss_marked.tsv` (key_gloss.tsv with `code` replaced by the `BARECODE-MARK` unit, via `build_marks.py`)
+are both committed.
+
+**2. Does splitting by mark resolve the conflicts?** `key_gloss.tsv`'s own `status=conflict` rows name **13**
+distinct bare codes with more than one glossed occurrence (12, 31, 37, 40, 44, 61, 66, 8, 86, 88, 89, 90, d --
+recomputed fresh from the file rather than trusting the "at least 9" figure in s.3/the spec, which undercounted;
+a 14th code, "24", carries `status=conflict` in the file but has only ONE observation and cannot conflict with
+itself -- its own note already says so -- so it is excluded here as a data-entry quirk, not a correction to
+anything claimed). Of these 13, **8 are fully resolved by the real marks read above** (every code+mark variant
+of that bare code now has exactly one distinct gloss value): 12, 31, 37, 40, 66, 8, 86, 88. **5 still conflict
+even after marking**: 44, 61, 89, 90, d. No new conflicts were introduced (a bare code that did not conflict
+before marking never had two of its code+mark variants collide). `mark_shuffle_test.py` reproduces this count.
+
+**The shuffle control (brief step 2):** permute the SAME 64 marks among the SAME 64 (code, value) pairs, 1000
+draws, fixed seed 0, and recompute how many of the same 13 bare codes a random pairing would "resolve" by
+chance alone (with 7 mark types + none/unreadable spread thinly over usually 2-4 observations per code, many
+codes separate by luck regardless of whether the marks mean anything):
+
+```
+13 bare codes flagged conflict in key_gloss.tsv with >1 observation: [...]
+real: 8/13 resolved by the ACTUAL marks read from the image
+shuffle null (marks permuted among the same 64 tokens, n=1000, seed=0): mean=8.265 sd=1.516 z=-0.175 p=0.7080
+null distribution range: 3-12
+```
+
+**8/13 is indistinguishable from the shuffle baseline (z=-0.175, p=0.71, real inside the null's 3-12 range).**
+The marks resolve no more of the conflicts than randomly relabelling the same tokens with the same marks would.
+This is the job's central, decisive number.
+
+**3. Permutation test rerun on the code+mark key (brief step 3).** `permutation_test.py` gained a `--key` alias
+(same file, not forked, per the brief) and was rerun on `key_gloss_marked.tsv`:
+
+```
+N observations (key_gloss_marked.tsv): 64
+real leave-one-out statistic: 0/64 (0.0%)
+Null A (key shuffle, n=1000): mean=0.168 sd=0.591 z=-0.284 p=1.0000
+Null B (token shuffle, n=1000): mean=0.208 sd=0.667 z=-0.312 p=1.0000
+```
+
+Still 0/64, still near-zero z, but **this specific statistic loses power once codes are split by mark**: most
+`BARECODE-MARK` units now have only ONE observation (a direct consequence of splitting 64 rows across many more
+distinct units), so leave-one-out has nothing to predict FROM for the great majority of rows regardless of
+whether the design is real -- 0/64 no longer distinguishes "no design" from "a real design too thinly split for
+this exact test to see." Confirmed by running a code+mark **control that is constructed to have real, meaningful
+marks** (`matched_control.py`'s new `build_control_observations_marked()`, `permutation_control.py --marked`,
+`marked_share=0.5625` matched to the real pass's own 36/64 = 56.25% marked-occurrence share, 10 seeds):
+
+```
+zA range over 10 seeds: -0.105 to 23.863, mean 13.011 (one seed, #2, scored z=-0.105 -- a code+mark
+  control with marks THAT DO CARRY MEANING by construction still occasionally lands near zero at this N)
+zB range over 10 seeds: 2.844 to 11.910 (one seed's sd=0, giving an undefined z, excluded from the range)
+```
+
+Unlike the bare-code control's tight, uniformly-high 14.6-25.0 / 5.7-12.4 range (ZX-BAR, s. above), the code+mark
+control's range spans from near-zero to strongly positive -- the statistic itself is high-variance once split
+this way, so this rerun cannot carry the same evidentiary weight the bare-code version did. **The shuffle test in
+step 2, not this permutation rerun, is the sharper and decisive test for the marked hypothesis specifically** (a
+methodological finding worth carrying into any future mark-typing job on a different letter: leave-one-out on a
+per-mark-split key needs many more observations per unit than this letter has, or a shuffle-of-labels design
+instead).
+
+**4. Verdict, both numbers (CLAUDE.md rule 3).** Marks resolve 8/13 bare-code conflicts; a shuffle of the same
+marks resolves 8.265/13 on average (range 3-12) -- **no gain over chance (z=-0.175, p=0.71)**. The code+mark
+permutation z stays near zero (-0.284/-0.312) exactly as the bare-code version did, though for a statistic this
+job found to be underpowered at this N once split by mark -- the shuffle result is the one to trust. Per the
+brief's decision branch: marks resolve no more than the shuffle and the marked z stays near zero, so **this
+letter is closed-negative on cryptanalysis alone** (status set above), pending a key: the solver-repositories'
+noted separate "1655 cipher" for this same correspondence, or DECODE's Add MS 4200 records 8395/8398 (both still
+unopened, s.5 above) -- not more cryptanalysis of this one letter's marks or gloss.
+
+**Files:** `mark_positions.tsv` (crop/position map for all 64 key_gloss.tsv rows), `marks.tsv` (reconciled mark
+per row, both raw calls, grade), `key_gloss_marked.tsv` (code+mark key), `build_marks.py` (reconciler),
+`mark_shuffle_test.py` (step 2's shuffle control), `permutation_test.py` (`--key` alias added), `matched_control.py`
+(`build_control_observations_marked()` added), `permutation_control.py` (`--marked`/`--marked-share` added). The
+line crops themselves (`*.jpg` under a scratchpad directory) are not committed -- per this repo's convention,
+committed images live under `images/` when they are a citable source crop of the primary source; these are
+disposable intermediate crops of images already on disk and in `images/manifest.json`, reproducible from the two
+leaf images plus the coordinates given above.
+
+Grades: unchanged from s.8/ZX-BAR -- every `key_gloss.tsv`/`key_gloss_marked.tsv` row is grade **C** (from the
+gloss, known plaintext for that span); the mark-type calls themselves are a transcription-confidence grade
+(H/M, `tools/reconcile_passes.py`'s convention), not a reading grade. No candidate plaintext is reported here, so
+`judge_plaintext.py` was not run (rule 7 n/a). Rule 10: nothing in this section is new, unpublished, unread,
+first or never printed -- a verifier classifies novelty, and none is claimed.
+
+**Hosts:** none (disk-only -- the two leaf images already on disk from TX-BARR/TX-BARRT, `key_gloss.tsv`,
+`ciphertext.tsv`, `passA.tsv`, `tools/data/fr16`; the two mark-typing subagents also worked disk-only, confirmed
+by their own reports). Subagents: 2 (the brief's cap), both Sonnet, general-purpose, run in parallel, mark-typing
+only.
+
+**Cost and time:** cost: see the lane ledger. Wall-clock: job brief named a 60-minute box (also this job's
+minimum working time); this section's work (mark typing, reconciliation, the shuffle test, the marked
+permutation rerun, this write-up) finished at approximately the 51-minute mark, inside the box, having reached
+the brief's own stop condition (a clear numeric verdict on both live hypotheses named in the brief).

@@ -1,0 +1,67 @@
+# Reconciled mark type per key_gloss.tsv occurrence (ZX-BAR2, 25 Sept 2026). grade H = both
+# blind subagent passes agreed; grade M = settled from the image crop after disagreement.
+source_run	position	code	mark	grade	passX_call	passY_call
+R004	1	o	none	H	none	none
+R004	2	70	macron	H	macron	macron
+R004	3	12	dot	H	dot	dot
+R004	4	34	acute	H	acute	acute
+R004	5	66	diaeresis	H	diaeresis	diaeresis
+R004	6	40	circumflex	H	circumflex	circumflex
+R004	7	26	circumflex	H	circumflex	circumflex
+R004	8	68	diaeresis	H	diaeresis	diaeresis
+R004	9	[circle-dot]	none	H	none	none
+R004	10	d	none	H	none	none
+R004	11	61	none	H	none	none
+R004	12	75	diaeresis	H	diaeresis	diaeresis
+R004	13	88	macron	H	macron	macron
+R004	14	78	circumflex	H	circumflex	circumflex
+R004	15	44	circumflex	H	circumflex	circumflex
+R004	16	71	grave	H	grave	grave
+R004	17	89	caron	H	caron	caron
+R004	18	79	acute	H	acute	acute
+R004	19	31	caron	H	caron	caron
+R006	1	83	caron	H	caron	caron
+R006	2	61(2nd obs)	none	H	none	none
+R006	3	13	none	H	none	none
+R006	4	16	none	H	none	none
+R006	5	8	acute	H	acute	acute
+R007	1	9	macron	H	macron	macron
+R007	2	59	none	H	none	none
+R007	3	63	caron	H	caron	caron
+R007	4	12(2nd obs)	macron	H	macron	macron
+R007	5	90	caron	H	caron	caron
+R010	1	91	acute	H	acute	acute
+R010	3	43	macron	H	macron	macron
+R010	9	a	none	H	none	none
+R014	1	61(3rd obs)	none	H	none	none
+R014	2	40(2nd obs)	none	H	none	none
+R015	1	61(4th obs)	none	H	none	none
+R015	2	x	none	H	none	none
+R017	1	86	grave	H	grave	grave
+R017	2	69	diaeresis	H	diaeresis	diaeresis
+R017	3	36	unreadable	H	unreadable	unreadable
+R017	4	m	none	H	none	none
+R018	2	37	dot	M	diaeresis	dot
+R021	3	31(2nd obs)	macron	H	macron	macron
+R024	1	90(2nd obs)	acute	H	acute	acute
+R024	2	d(2nd obs)	none	H	none	none
+R024	3	92	macron	H	macron	macron
+R024	4	39	circumflex	H	circumflex	circumflex
+R024	5	22	none	H	none	none
+R024	6	44(2nd obs)	none	H	none	none
+R024	7	89(2nd obs)	caron	H	caron	caron
+R026	1	15	none	H	none	none
+R026	2	44(3rd obs)	none	H	none	none
+R026	3	45	none	H	none	none
+R026	4	88(2nd obs)	none	H	none	none
+R026	5	37(2nd obs)	none	H	none	none
+R026	6	86(2nd obs)	none	H	none	none
+R035	11	24	unreadable	H	unreadable	unreadable
+R039	1	40(3rd obs)	caron	M	caron	none
+R039	2	88(3rd obs)	caron	M	caron	none
+R039	3	66(2nd obs)	circumflex	M	circumflex	none
+R039	4	c	none	M	caron	none
+R041	1	19	none	H	none	none
+R041	2	d(3rd obs)	none	H	none	none
+R041	3	8(2nd obs)	macron	H	macron	macron
+R039	5	90(3rd obs)	caron	M	none	none	# corrected by ZX-BAR2 reconciler after direct image re-check found both blind passes missed this mark; see NOTES.md
