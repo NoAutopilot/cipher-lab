@@ -43,6 +43,44 @@ This survey applies that: `specs/<slug>.json` is the repository; `tools/judge_pl
 the ranking prefers a cheap, self-judging first test over fame; and every row states where the item was searched
 before any test is proposed. The process changes are in `PROCESS-2026-09-24.md`.
 
+### Added 25 Sept 2026: what the Navier-Stokes result adds (OpenAI, 8 Sept 2026)
+
+Source and what could be fetched: `sources/openai/NOTES.md` (the announcement page is 403 from the cloud; the paper PDF
+is on disk; the method figures below are OpenAI's words as quoted in the coverage). Added by parent 7c at the owner's
+request. The result: about 10,000 coordinating agents, in groups that talked inside the group, with a cached internet
+and code execution, resolved forced Navier-Stokes blow-up in 88 hours (2.7 million messages, about 130 billion output
+tokens), after about 100 agents had first resolved the easier unforced Euler problem in 50 hours; the Navier-Stokes
+group was "prompted with the Euler resolution", the model was upgraded mid-effort, a separate tool consolidated "the
+most useful insights" between rounds, and a Lean formalization (17 more hours) is what confirmed validity while the
+human evaluation stays "deliberately unhurried". Seven points transfer, each with its cipher form:
+
+1. **Sibling first, then transfer.** Before any spend on the target under hypothesis family H, make the solver read a
+   matched synthetic under H (rule 3 as the organising principle, not a footnote), and hand the solved control's
+   method, parameters and pitfalls to the target run as its prompt. A family whose control does not read is not run
+   on the target at all.
+2. **Groups that talk inside the group.** One hypothesis family is one group of workers sharing one append-only file,
+   `ciphers/<t>/HYPOTHESES.md` (what was tried, the control and target numbers side by side, partial decodes, cribs,
+   dead ends). Groups need not read each other; the consolidator does.
+3. **Consolidate, then re-prompt.** Each cycle an Opus or Fable consolidator rewrites the file's summary and the next
+   round's worker brief from what the swarm found. The swarm is Sonnet; the consolidation and the hypothesis design are
+   the strongest model; that is our "upgrade mid-effort".
+4. **Scale is attempts, not one long think.** One result cost millions of messages. The cipher form is a standing lane
+   on the two or three items where some family has headroom: many short Sonnet restarts over seeds, corpora, key texts
+   and tabula variants, every negative written into the spec with its control, and no expectation that any single
+   worker reads the target.
+5. **Cached internet, code execution.** Fetch once (Kahn 1981, the KV 2 catalogue, the Gutenberg key texts) into
+   `sources/` and the target folder; every test is a script that reruns from disk.
+6. **The machine verdict is the only gate.** `tools/judge_plaintext.py` with its control, then a fresh-instance
+   re-derivation, are what let a candidate reading leave the lane; a separate verifier lane classes it (rule 10). The
+   lane never says solved, and the judge says "worth a verifier", never "right".
+7. **Literature and priority first.** OpenAI conceded priority on forced Euler to work it had not seen. Check-solved
+   with the intake gate before the campaign, the archive route before cryptanalysis (an Abwehr decrypt in HW 19 or a KV 2
+   file ends Köhler as found-solved), and a phrase search after any reading.
+
+What does not transfer: the concurrency (one account's rate window; the lane runs at most eight live workers) and the
+formal checker (a language judge is a statistic, not a proof). The lane built on these points is LANE GOLD
+(`.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md`, PROCESS-2026-09-24.md proposal 6).
+
 ## Ranking rule
 
 Expected value = P(the cheap test moves the item) x value of moving it / cost of the test. "Moves" means a reading
@@ -128,6 +166,19 @@ control. Highest expected value on the list: real historical text, a documented 
 tests under $1. A transcription caveat for the record: Kahn's third message is headed 137 but has 140 letters as
 printed on Cipherbrain.
 
+*Gold-lane ladder for Köhler (25 Sept 2026).* Test 2 (periodic IC and Kasiski, period 2-30, LANE B bKOE) was run with
+both controls and reads flat: not a fixed-period Vigenère family; consistent with a one-time key, a running key on a
+book text, or a code with letter arithmetic. The families, in the order the lane runs them, each with its control
+before the target: **A recovery** (TNA Discovery API: KV 2 on Koehler, HW 19 ISOS for Abwehr Paris, Feb 1944; FBI
+Vault; Kahn's 1981 footnote); **B running key** on a Dutch or German natural-language key text (the FBI-run channel used
+a Dutch prayer book, so the Paris channel plausibly used a book too; a running key leaves exactly the flat, weakly
+non-uniform distribution seen), attacked by two-stream n-gram decoding in which plaintext and key must both read as
+language, crib-dragging of high-frequency German and Dutch words, then key-text identification against Gutenberg Dutch
+and German texts; the control is German plaintext of the five message lengths under a Dutch book running key, same
+solver, and the period scan is extended to 31-120 in passing; **C book or word-sum code** (Thouless-type, Bean 2019
+ranking of candidate key texts), only after B is logged; **D one-time key**, which no statistic falsifies: if B and C
+fail while their controls read, the item is parked as "consistent with a one-time key" and only A remains.
+
 **2. Debosnys (no. 3).** Four cryptograms in a simple invented alphabet by a French-speaking, educated prisoner who
 also left clear-text poems in the same papers. The cheap test is the form test of the Urquhart lesson: transcribe (two
 Sonnet passes from Schmeh's or Farnsworth's images, $4), count lines and signs, and compare the cryptograms' line
@@ -135,6 +186,12 @@ structure with his clear poems; a cryptogram with the shape of a poem he also wr
 homophonic/MASC anneal in French, English, Portuguese and Latin with a control at each cryptogram's N and K ($4, Sonnet;
 strongest model to read the output against his biography). Value high (Schmeh's no. 3, few prior attempts, a museum
 that holds his papers and could be asked for a key sheet). Ciphertext not yet on disk.
+
+*Gold-lane ladder for Debosnys (25 Sept 2026).* Moved from LANE B2 to LANE GOLD. Test 1 as specified (four images
+once, two blind passes, reconcile, counts, IC per cryptogram), then the form test against his clear poems, then a
+19th-century French corpus (`tools/data/fr19`, Gutenberg prose, before any judging: fr16 is not matched) and the
+anneal in fr, en, pt and la with a control at each cryptogram's N and K; the strongest model reads outputs against his
+biography; an ASKS row for the Adirondack History Center Museum's clear-text poems and any key sheet.
 
 **3. Somerton code (no. 5).** Not a cipher by consensus (Abbott's group: word initials), so the only cheap test is
 host-text-as-key: the letters were written inside a FitzGerald Rubaiyat. Cheap test 3 run today
