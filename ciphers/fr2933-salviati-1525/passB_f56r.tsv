@@ -1,0 +1,141 @@
+line	pos	code	marks	action	conf	note
+1	1	_		confirm	H
+1	2	_		plain	H	"a" of "ha", plain Italian cursive misread as N
+1	3	_		plain	H	"P" of "Parla", plain capital misread as bh (tall stem+hooked loop)
+1	4	_		confirm	H
+1	5	_		confirm	H
+1	6	_		confirm	H
+1	7	_		confirm	H
+1	8	_		plain	H	"ll" of "Callama", plain cursive with pen flourish misread as Lx
+1	9	_		plain	H	"ama" of "Callama", plain cursive misread as w
+1	10	_		confirm	M
+1	11	_		confirm	H
+1	12	_		confirm	H
+1	13	_		confirm	H
+1	14	ch		confirm	H
+1	15	S4		confirm	H
+1	16	Lx		correct	H	X-cross-with-crossbar matches Lx (Λ with bar across right leg), not Z; low share (.43) already flagged this
+1	17	S7		confirm	H
+1	18	#		confirm	H
+1	19	Z		correct	H	bold curling "3"-like stroke matches Z, not nt; the real nt sign is the next box (20)
+1	20	nt		confirm	H
+1	21	S7		confirm	H
+1	22	#		correct	M	double-barred cross mark sitting between S7(21) and e(23), read as blank ink; box is unusually tall (h=65), likely a mis-split fragment of the neighboring e's own # mark
+1	23	e	dot	confirm	H
+1	24	wd		confirm	H
+1	25	S		confirm	M	isolated far above and right of the rest of line 1's ink (separate ink patch), but the serpentine shape still matches S well
+1	26	_		plain	M	isolated bold flourished loop, doesn't match any atlas sign well (nearest classifier guess was Z at share .21); reads as an ordinary decorative capital letter, not a cipher glyph
+2	1	o.		confirm	H
+2	2	g		confirm	H
+2	3	y		confirm	H
+2	4	]	ot	confirm	H
+2	5	g		confirm	H
+2	6	S		confirm	H
+2	7	S		confirm	H
+2	8	o.		correct	H	clear ring-with-dot sign, misread as blank ink
+2	9	phi		correct	H	clear circle+stem+tail shape (with descender flourish), misread as blank ink
+2	10	m	1	confirm	H
+2	11	w		confirm	H
+2	12	S		confirm	H
+2	13	]	o	confirm	M	bracket shows extra internal double-bar strokes not seen in typical atlas exemplars, but orientation and the o mark above match well
+2	14	H	1|o	confirm	H
+2	15	e	+	correct	H	clear looped-e bowl with a + mark above it, not a w shape; low share (.41) already flagged this
+2	16	m	~	confirm	H
+2	17	g		confirm	H
+2	18	S7		confirm	H
+2	19	e	#	confirm	M	mark renders as two short ticks rather than a crisp ##, but e itself is clear and this hand regularly pairs e with #
+2	20	eps	5|dot	confirm	H
+2	21	S7		confirm	H
+2	22	]	dot|o	confirm	H
+2	23	y		confirm	H
+2	24	tee		confirm	H
+2	25	f		confirm	H
+2	26	w		confirm	H
+2	27	o.		confirm	H
+2	28	g		confirm	H
+2	29	e	#	confirm	H
+2	30	nt		confirm	H
+2	31	y		confirm	H
+3	1	_		delete	H	faint smudge/stain (paper damage, no ink), classifier's low-share (.60) "g" call was on noise, not a glyph
+3	2	e	dot	confirm	M	mark above reads as an x-cross plus a separate dot, ambiguous between +/dot, but the base e bowl is clear
+3	3	psi		confirm	M	psi/y confusable pair; tail reads straight rather than fully looped, favoring psi over y
+3	4	lam	1	confirm	M	crop shows mainly one stroke of the Λ, likely the second leg is cut at the box edge
+3	5	m	~	confirm	H
+3	6	g		confirm	H
+3	7	g	~	confirm	H
+3	8	H		confirm	H
+3	9	a		split	H	box merges two stacked signs (h=58, unusually tall): this is the upper one, a bold cursive "a" (bowl+flourish), not Z
+3	9.5	sq		split	H	lower stacked sign in the same merged box: a clear closed square, matches sq atlas
+3	10	psi		confirm	M	psi/y confusable pair; loop+tail shape
+3	11	_		delete	M	small hook with no crossbar; reads as the continuation/second arm of psi(10)'s tail, over-segmented into its own box, not a genuine f
+3	12	phi		confirm	H
+3	13	H	#	confirm	M	mark renders as a light cursive squiggle rather than a crisp ##, but the H itself is unambiguous
+3	14	v	1|5	confirm	H
+3	15	rz		confirm	H
+3	16	nt		confirm	M	crossed, Z-like rendering, but on balance matches nt's n+crossbar pattern better than a fresh Z
+3	17	rz		confirm	H
+3	18	S7		correct	H	clear 7-shape, misread as blank ink
+3	19	e	#	confirm	H
+3	20	_	dot	confirm	M	only a faint mark, no base sign ink, matches classifier's blank+dot call
+3	21	psi		confirm	M
+3	22	f		correct	H	clear tall ascender with crossbar (f), misread as blank ink; sits right after psi(21)'s trailing arm
+3	23	w		confirm	H
+3	24	bh		confirm	H
+3	25	eps	1	confirm	H
+3	26	w		confirm	H
+3	27	e	dot|dot	confirm	M	mark reads more like a single cross than two dots, but the base e is clear
+4	1	S7	+	split	H	box is unusually tall (h=86) and holds two stacked S7 signs, not blank ink; this is the upper one, with a + mark above it
+4	1.5	S7		split	H	lower S7 sign in the same merged box
+4	2	]		confirm	H
+4	3	_		delete	M	small ring+diagonal ("ot"-mark-shaped) ink, likely spillover from box 2's ] mark; no n-hump visible, so not a genuine nt sign
+4	4	psi		confirm	M
+4	5	m	1	confirm	H
+4	6	w		confirm	H
+4	7	S7		confirm	H
+4	8	o.		split	H	unusually wide box (w=62) merges two signs: this is the first, a clear ring-with-dot (o.)
+4	8.5	nt		split	H	second sign in the same merged box: a clear n+crossbar
+4	9	bh		confirm	H
+4	10	]	ot	confirm	H
+4	11	v		correct	M	single rounded hook, not a 3-humped m; closer to v. Low share (.40, cluster suggested Z) already flagged this box
+4	12	_	#	confirm	H
+4	13	e	#	confirm	H
+4	14	nt		correct	H	clear n+crossbar shape, not the wavy w atlas pattern; low share (.63) already flagged this
+4	15	rz		confirm	H
+4	16	eps	5	confirm	H
+4	17	]		correct	M	rounded, open-to-the-left bracket shape, not a 7; low share (.41) already flagged this
+4	18	S7		split	H	tall merged box (h=74): upper sign is a clear S7, not blank ink
+4	18.5	m		split	M	lower sign in the same merged box; reads as m with a trailing curl (possibly a y-like tail), kept as m
+4	19	eps		confirm	H
+4	20	g	~|~	confirm	H
+4	21	e	dot|+	confirm	H
+4	22	sq	ot	confirm	H
+4	23	psi		confirm	M
+4	24	lam	5	confirm	H
+4	25	]	o	confirm	H
+4	26	S7	+	confirm	H
+5	1	lam		confirm	H
+5	2	bh		confirm	H
+5	3	S7		confirm	H
+5	4	#		confirm	H
+5	5	psi		confirm	M	share .37 already flagged; psi/y ambiguous, kept psi
+5	6	eps		confirm	H
+5	7	w		confirm	H
+5	8	o.		correct	H	clear ring-with-dot sign, misread as blank ink
+5	9	Z	dot	confirm	M	bold curling shape, matches one of Z's variant renderings in the atlas
+5	10	S7	#	confirm	H
+5	11	e	#	confirm	H
+5	12	g	dot	confirm	H
+5	13	y		confirm	M
+5	14	a	1	confirm	H
+5	15	S7		confirm	H
+5	16	y	#	confirm	H
+5	17	dl		correct	M	large box (w=59,h=55) holds a loop with a long curling tail, matching dl's own "long tilde tail" description as one sign; misread as blank ink
+5	18	phi		confirm	H
+5	19	S4		confirm	H
+5	20	dl		confirm	M
+5	21	_		confirm	H	plain legible cursive, start of a word ("Am...")
+5	22	_		confirm	H	plain cursive continuing
+5	23	_		confirm	H	plain cursive continuing
+5	24	_		plain	H	part of legible plain word "stretto", misread as N
+5	25	_		confirm	H	plain, "stretto" continuing
+5	26	_		plain	H	part of legible plain word "stretto" (the "tto" ending), misread as #
