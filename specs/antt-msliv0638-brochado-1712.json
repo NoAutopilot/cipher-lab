@@ -1,0 +1,20 @@
+{
+ "slug": "antt-msliv0638-brochado-1712",
+ "name": "ANTT PT/TT/MSLIV/0638, letter 134 body cipher run (m0275-r1+m0276-r1, m0276-r2), Jose da Cunha Brochado to the Portuguese court, London, 1712-13",
+ "language_candidates": ["pt"],
+ "ciphertext": "ciphers/antt-msliv0638-brochado-1712/body_ciphertext.tsv (letter_no=134 rows), decoded via tools/decode_key.py + key.tsv into reading_body_letter134.txt",
+ "ciphertext_source": "ANTT DigitArq docId 7049343e7af44ba7b4ec18e74e1b2cd7, images/full_PT-TT-MSLIV-0638_m0275.jpg.jpg and m0276.jpg.jpg",
+ "alphabet": "1-2 digit numeric codes and single-letter codes (homophonic letter substitution), applied to selected words inside otherwise-clear period Portuguese; the letterbook's own m0279-m0296 appendix (39 entries) gives each coded word's plaintext under a 'Deciffrada' heading",
+ "constraints": [
+  "key known: rebuilt from the appendix's own 38 aligned Deciffrada entries (period key, grade 'period'; PX-BROKEY/PX-BROKEY2/PX-BROGLYPH/YX-BRO79), majority-letter vote per code, 40 codes / 29 at grade C",
+  "letter 134 (m0275-m0276) has NO appendix entry (past Carta 123, the appendix's highest numbered entry) -- this is an un-glossed body passage, the genuine candidate reading, not a self-check",
+  "letters 80/81 (m0179/m0180) ARE appendix entries and serve only as controls (their own Deciffrada already gives the plaintext independently of this key)",
+  "leave-one-out control over the 379 aligned code-letter pairs (noise-matched synthetic control, 5 seeds): real 82.6% vs synthetic mean 91.4% (range 90.0-94.4), gap -8.8 points, within the +/-10 point band (YX-BRO79, 25 Sept 2026, after correcting a Carta 79 transcription/gloss error) -- the gate this spec's reading is conditioned on",
+  "this is a short, un-glossed fragment (70 coded tokens across two spans in an otherwise-clear-Portuguese letter), not expected to read as a complete independent sentence -- no Portuguese language-model corpus is on disk for this repo's judge script (tools/data has no 'pt' entry in LANG_CORPORA), so the 'language'/'words' checks below cannot run; a PASS on this spec is a length/crib gate only, not a language-model pass (same caveat LX-BOOK/LX-DEC already recorded for specs/antt-linhares-chave.json)"
+ ],
+ "cheap_tests_in_order": [
+  "decode letter 134 against the period key and report per-token C/M/U grades (YX-BRO79, 25 Sept 2026)"
+ ],
+ "judge": {"language": "pt", "letters_min": 40, "letters_max": 70},
+ "written": "25 Sept 2026, YX-BRO79 (LANE YX), for step 4 of .claude/briefs/runs/2026-09-25-lane-px-brodec.md as directed by .claude/briefs/runs/2026-09-25-lane-yx-bro79.md"
+}

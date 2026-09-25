@@ -1115,3 +1115,240 @@ worker's brief does not name STATUS.md or the lane handoff among its touchable f
 No network access; this pass worked entirely from the TSVs already on disk (`ciphertext_appendix.tsv`,
 `plaintext_appendix.tsv`, `disagreements.tsv`, `key.tsv`, `scripts/_pairs.json`). No subagents (the gate
 failed before step 3, which would have used one). Cost: not visible to me.
+
+## YX-BRO79 (25 Sept 2026)
+
+Worker YX-BRO79 (Sonnet), job: hand-check Carta 79 against the image (LANE PX's single named next test),
+re-run the LOO gate, and run PX-BRODEC's steps 3-5 if it closes. Parent: LANE YX orchestrator
+(session_01PHaEdHeQY2FtMHLo9yGeoe). No network access needed or used; worked from images already on disk
+(`images/full_PT-TT-MSLIV-0638_m0287.jpg.jpg`, `m0276.jpg.jpg`) and the TSVs/scripts already on disk.
+
+### Step 1-2: Carta 79 (m0287) hand-checked against the image; three corrections
+
+Cropped and zoomed `images/full_PT-TT-MSLIV-0638_m0287.jpg.jpg` (Python/Pillow, native res, 3-8x) over
+every one of Carta 79's 66 cipher tokens and its full Deciffrada gloss. Existing accent-fold convention
+(`ã/á/à/â->a, é/ê->e, í->i, ó/ô/õ->o, ú->u, ç->c`, case-insensitive, already used by
+`scripts/03_align_pairs.py`/`11_loo_control.py`) kept unchanged; the corrections below are plain misreads
+and one gloss-abbreviation error, not spelling-convention variants (u/v, i/j, y/i, doubled consonants were
+not the cause here, so that broader normalization pass named in the brief is not done this pass -- flagged
+as still open, see "Not done" below).
+
+**Corrections table** (leaf, entry, position, old, new, reason, grade):
+
+| leaf | entry | position | old | new | reason |
+|---|---|---|---|---|---|
+| m0287 | Carta 79 | 13 (ciphertext_appendix.tsv) | `4` | `14` | image: the digit clearly reads "...19.17.3.19.**14**.2.19.17.12..." (crop `carta79_pos13`, 7x) -- a plain "1" stroke precedes the "4", distinct from the single-digit "4" three tokens earlier in the same line (position 8, re-confirmed as a genuine bare 4). Grade stays H (already H; this was a false-confidence transcription error, not an M downgrade). |
+| m0287 | Carta 79 | 24 (ciphertext_appendix.tsv) | `c` (M) | `e` (H) | image: clear lowercase cursive "e" with its characteristic small closed loop ("y.10.**e**.26...", crop `carta79_pos22_24`, 8x), not a "c" (open curve, no loop). Settles the M-graded dispute image-side; grade raised to H. |
+| m0287 | Carta 79 | 28 (ciphertext_appendix.tsv) | `7` (M) | `2` (H) | image: a clean loop-shaped numeral "2" ("26.18.17.**2**.19.4.3...", crop `carta79_pos24_28`, 8x) -- NOT the barred-7 glyph PX-BROGLYPH's atlas settled elsewhere on this same leaf; this token has no crossbar at all, matching the atlas's own "genuine loop-shaped numeral 2" exemplar. Grade raised to H. |
+| m0287 | Carta 79 | deciffrada_line (plaintext_appendix.tsv) | `pra` | `para` | image: the gloss word after "Caminho" is written out in full, "p" + "ara" with a plain descender p and no abbreviation mark (crop `carta79_para3`, 10x) -- there is no tilde, superscript, or period signalling a period abbreviation. The `pra` previously on file matched the coded span's length (12 letters for "pra Sai bornex" = 12 tokens) but was not what the image shows. |
+
+Also re-confirmed as correct (no change): positions 4-5 (`8.14`, a tight compound but two genuine digits,
+matches the atlas's already-settled reading), position 8 (a bare `4`, distinct from position 13's `14`),
+and every other token in the 66-token run, plus the plain words `vai`/`Caminho` (correctly excluded from
+ciphertext_appendix.tsv as clear-text insertions, not codes) and the full Deciffrada text "Aqui não se
+atende a Razão algum, este Velhaco do Thesoureiro vai seu Caminho para Sai bornex± V." -- the final word
+"bornex" remains genuinely hard to read at any zoom (consistent with the pre-existing `±` uncertainty
+mark) and the capital letter beginning "Sai" is ambiguous between S and B at this resolution; neither is
+changed (left as `M`/uncertain, not asserted either way).
+
+**Why this mattered (not generic noise, an entry-level letter/code count mismatch):** `scripts/03_align_pairs.py`
+only accepts a coded span as evidence when its token count exactly equals the deciffrada span's letter
+count. With `pra` (3 letters), "pra Sai bornex±" = 12 letters, exactly matching the span's 12 codes, so the
+script accepted a full 12-pair alignment for Carta 79's tail -- silently building 12 of `key.tsv`'s pairs
+from ground truth that could not actually be right (the true gloss word is 4 letters, not 3). With `para`
+restored, the same span is now 13 letters against 12 codes -- a mismatch, and `03_align_pairs.py`'s
+existing (unmodified) mismatch check now correctly EXCLUDES it, exactly as it already excludes Carta 81's
+own 23-vs-19 token/letter mismatch (PX-BRODEC2). This is the "entry is mis-paired, exclude it from both
+real and control" case CLAUDE.md rule 3 and this job's brief anticipate -- done here by fixing the
+transcription that fed the mismatch check, not by hand-editing `_pairs.json`.
+
+Re-ran `scripts/01_segment.py` -> `02_anchor.py` -> `03_align_pairs.py` -> `04_build_key.py` in order (no
+manual edits to any generated file). Total aligned pairs: 391 -> **379** (Carta 79's 12-pair "para Sai
+bornex" span now correctly reported as a mismatch, `ntoks=12 nletters=13`; its 3-pair "seu" span, s/e/u,
+unaffected and still contributes). `key.tsv`: still 40 codes; `decode_key.py --check` exits 0
+(`ciphertext_appendix.tsv: tokens 1702: C 1419, M 244, U 39`, +1 C/-1 M from the position-24 and -28 fixes
+net of the position-13 fix, which was already graded H).
+
+### Step 3: gate re-run -- PASSES
+
+`scripts/06_decode_agreement.py` (self-consistency, positional, PX-BRODEC3's bug-fixed version):
+**328/379 = 86.5%** (was 338/390 = 86.7% before this fix -- essentially unchanged; this metric was never
+the gate).
+
+`scripts/11_loo_control.py` (leave-one-out over aligned pairs vs. a noise-matched synthetic control, same
+method/seeds as PX-BRODEC3 -- shuffled-key control plus the measured 6.6% transcription-M substitution
+noise and the unchanged 81.6% gloss-drop rate, 5 seeds 20260925-20260929, none cherry-picked):
+
+| | before (PX-BRODEC3) | after (YX-BRO79) |
+|---|---|---|
+| aligned pairs | 391 | 379 |
+| Carta 79 LOO (n compared / correct) | 15 cmp, 4 correct = 26.7% | 3 cmp, 3 correct = **100.0%** |
+| real pooled LOO agreement | 80.2% (unkeyed 3.1%) | **82.6%** (unkeyed 3.2%) |
+| clean synthetic control (reference) | 96.7% | 96.8% |
+| noise-matched synthetic control, 5-seed mean (range) | 91.0% (89.8-92.8) | **91.4%** (90.0-94.4) |
+| gap (real - noise-matched mean) | -10.8 | **-8.8** |
+| gate (real >=80% AND gap within +/-10) | FAIL | **PASS** |
+
+Carta 79 alone accounted for essentially the whole gap closure (its own LOO score goes from the single
+worst-dragging entry, -66.7 points below its synthetic match, to a clean 100% on its remaining 3 pairs);
+every other previously-named dragging entry (Carta 15, Carta 80, Passage 2a m0284, Carta 101, Passage 2a
+m0294) is untouched by this fix and not re-examined this pass (time-boxed; brief allowed this "only if
+time allows" and the gate had already closed). Named as the next thing to check if a future gap reopens
+or a verifier wants tighter margins.
+
+### Step 4 (PX-BRODEC brief step 3): letter 134 decoded
+
+Letter 134 (past the appendix's highest entry, Carta 123 -- an un-glossed body passage, not a self-check)
+spans two separate coded runs on leaves m0275-m0276, confirmed by re-reading `images/full_PT-TT-MSLIV-0638_
+m0276.jpg.jpg` directly against `body_ciphertext.tsv`'s own token list (every token matches the image
+digit-for-digit; no new transcription corrections found on this leaf). Surrounding plain-Portuguese context
+(read from the image, not previously transcribed in NOTES.md): "...e não sei se este **[Span A]** mas isto
+hé impossivel, nem o tempo o permite, e só serve **[Span B]**. Cá não cuido de dizer que o novo Enviado
+seria melhor recebido de levar-se a nova de huma Paz feita á satisfação de Portugal." -- consistent with
+the historical setting (Brochado, London, during the Utrecht peace congress).
+
+**Span A = m0275-r1 + m0276-r1 (one continuous run across the page break, no plain text between, 50 tokens):**
+
+| pos | code | letter | grade |
+|---|---|---|---|
+| 1 | 26 | u | M |
+| 2 | 9 | _ | U |
+| 3 | 20 | l | C |
+| 4 | 16 | f | M |
+| 5 | 17 | a | C |
+| 6 | 5 | c | C |
+| 7 | 15 | o | C |
+| 8 | ff? | _ | U |
+| 9 | 12 | r | C |
+| 10 | 7 | e | C |
+| 11 | 3 | t | C |
+| 12 | 19 | e | C |
+| 13 | 14 | n | C |
+| 14 | x | d | C |
+| 15 | 24 | h | M |
+| 16 | 12 | r | C |
+| 17 | y | a | C |
+| 18 | 2 | d | M |
+| 19 | 22 | i | C |
+| 20 | 20 | l | C |
+| 21 | 23 | a | C |
+| 22 | 3 | t | C |
+| 23 | 17 | a | C |
+| 24 | 12 | r | C |
+| 25 | y | a | C |
+| 26 | m | n | C |
+| 27 | 25 | o | C |
+| 28 | 4 | s | C |
+| 29 | f | s | C |
+| 30 | 17 | a | C |
+| 31 | dd? | _ | U |
+| 32 | y | a | C |
+| 33 | x | d | C |
+| 34 | 55 | p | C |
+| 35 | 17 | a | M |
+| 36 | 12 | r | C |
+| 37 | 23 | a | C |
+| 38 | 14 | n | C |
+| 39 | d | o | M |
+| 40 | f | s | C |
+| 41 | 16 | f | M |
+| 42 | 17 | a | C |
+| 43 | ff? | _ | U |
+| 44 | z | r | M |
+| 45 | 12 | r | C |
+| 46 | 5 | c | C |
+| 47 | z | r | M |
+| 48 | x | d | M |
+| 49 | d | o | M |
+| 50 | 12 | r | C |
+
+Raw string (C/M shown as their letter, U as `_`): `u_lfaco_retendhradilataranossa_adparanosfa_rrcrdor`
+(C 35, M 11, U 4 of 50).
+
+**Span B = m0276-r2 (separate run, after the plain sentence above, 20 tokens):**
+
+| pos | code | letter | grade |
+|---|---|---|---|
+| 1 | x | d | C |
+| 2 | z | r | M |
+| 3 | 55 | p | C |
+| 4 | 52 | r | C |
+| 5 | 15 | o | C |
+| 6 | 26 | u | M |
+| 7 | y | a | C |
+| 8 | 20 | l | C |
+| 9 | 25 | o | C |
+| 10 | f | s | C |
+| 11 | 24 | h | M |
+| 12 | e | g | M |
+| 13 | 3 | t | C |
+| 14 | 17 | a | C |
+| 15 | 20 | l | C |
+| 16 | t | _ | U |
+| 17 | 19 | e | C |
+| 18 | m | n | C |
+| 19 | a | t | C |
+| 20 | d | o | M |
+
+Raw string: `drproualoshgtal_ento` (C 14, M 5, U 1 of 20).
+
+**Whole run: 70 tokens, C 49 (70.0%), M 16 (22.9%), U 5 (7.1%).** This does not segment into confident
+Portuguese words beyond a couple of recognizable fragments -- "dilatar a nossa" (to delay/postpone our
+...) inside Span A's tail is plausible given the diplomatic context (Utrecht peace terms) but is graded
+**I** (inferred), not folded into the C reading, per the brief; no other word completion is proposed. Rule
+4 counts for the whole run: **C 49, M 16, I 0 (one candidate word-break noted in prose only, not counted as
+a token grade), U 5.** This is reported as a candidate reading at this grade mix, not a settled decipherment
+-- the LOO gate measures the KEY's generalisation (82.6% pooled), not per-token certainty on a passage the
+key was never trained against, so an appreciable minority of even the C-graded letters here are expected to
+be wrong on the same base rate.
+
+### Step 5 (PX-BRODEC brief step 4): judge
+
+`specs/antt-msliv0638-brochado-1712.json` written (pattern of `specs/antt-linhares-chave.json`).
+**No Portuguese corpus exists in `tools/data` (`LANG_CORPORA` has only en/de/fr) -- the same gap
+LX-BOOK/LX-DEC already flagged for the Linhares spec** -- so the judge's `language`/`words` checks cannot
+run; only the `letters` (length) check is live. Judge output, pasted verbatim:
+
+```
+ok   length: got=65, min=40, max=70
+PASS - antt-msliv0638-brochado-1712 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+**This PASS is a length-only gate, not a language-model pass** -- it says nothing about whether the 65
+decoded letters are actually Portuguese. Building a real Portuguese 4-gram corpus for `tools/judge_plaintext.py`
+(e.g. from the Dória 1944 or Mendes dos Remédios 1909 editions already named in this file's search log, or
+the Memórias da Paz de Utrecht at purl.pt/23773) is out of this job's scope; named again here as the
+concrete next step before any pt-language spec's judge output means anything.
+
+### Step 6 (PX-BRODEC brief step 5): fresh-instance re-derivation
+
+Launched one Sonnet subagent given only `ciphertext_appendix.tsv`, `plaintext_appendix.tsv` and
+`body_ciphertext.tsv` (no `key.tsv`, no `scripts/`, no `NOTES.md`), instructed to rebuild a code->letter
+key from scratch by the same anchor/count-match method and independently decode letter 134, at the same
+time as steps 1-4 above (it does not touch this target's key or scripts, so no ordering conflict). Result
+pending at push time; appended below when it returns, per rule 7 ("a difference beyond the M/U positions
+goes in NOTES.md as unresolved").
+
+### Status
+
+Stays **`partial`**. The gate now passes and letter 134 has a candidate reading, but the judge PASS above
+is a length-only gate (no Portuguese language model on disk) and the fresh-instance re-derivation has not
+yet returned -- neither of rule 7's two conditions for moving off `partial` is met yet. Do not describe
+this as a solved letter or a confirmed reading outside this repo.
+
+### Not done this pass, next steps
+
+- Carta 15, Carta 80, Passage 2a (m0284), Carta 101, Passage 2a (m0294) -- the other entries PX-BRODEC3
+  named as dragging the (now-closed) gap -- not individually hand-checked against the image this pass
+  (gate already passed; brief made this conditional on time).
+- The broader spelling-convention normalization RETRO-2026-09-25h proposal 2 named (u/v, i/j, y/i, doubled
+  consonants, period abbreviations beyond the accent-fold already in the scripts) -- not needed to fix
+  Carta 79 (its problem was a token-count mismatch from an abbreviation error, not a spelling variant), so
+  not built this pass; still open for whichever entry needs it.
+- A real Portuguese corpus for `tools/judge_plaintext.py` (named above).
+- No verifier, no AUDIT.md, no second opinion for this target yet -- unchanged from the LANE PX handoff.
+
+### Host report
+
+No network access; no hosts contacted. One Sonnet subagent (fresh-instance re-derivation, step 6), within
+the brief's 2-subagent limit. Cost: see the lane ledger.

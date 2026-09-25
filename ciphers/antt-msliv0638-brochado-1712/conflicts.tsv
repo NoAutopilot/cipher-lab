@@ -15,7 +15,6 @@ m0286	Carta 73	31	26	84%	p!=o; e!=d; u!=e; s!=o; v!=u
 m0286	Carta 74	0	0		no resolved tokens (entry had no usable anchors)
 m0286	Passage 3a	8	6	75%	[difflib-aligned, length gap: expected 8 resolved letters, 25 keyed decode values] n!=m; g!=u
 m0287	Carta 78	0	0		no resolved tokens (entry had no usable anchors)
-m0287	Carta 79	14	13	93%	[difflib-aligned, length gap: expected 15 resolved letters, 66 keyed decode values] s!=t
 m0287	Carta 80	17	10	59%	m!=n; d!=o; o!=d; p!=e; r!=s; o!=p; p!=r
 m0288	Carta 81	0	0		no resolved tokens (entry had no usable anchors)
 m0288	Carta 85	0	0		no resolved tokens (entry had no usable anchors)

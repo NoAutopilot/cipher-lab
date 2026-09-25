@@ -5,7 +5,7 @@
 # no spec/judge for this target yet, and every entry here is already given in plaintext by the
 # manuscript's own Deciffrada line (see plaintext_appendix.tsv); see conflicts.tsv for the per-entry
 # agreement between this decode and that plaintext.
-# tokens 1702: H 0, C 1420, S 0, M 243, I 0, U 39 (U = code with no key.tsv row; M = key value held by <65% majority)
+# tokens 1702: H 0, C 1419, S 0, M 244, I 0, U 39 (U = code with no key.tsv row; M = key value held by <65% majority)
 m0280 Carta 13 | estesmnistrosestamquemosconuencemaisospdadehesemairiteeitesestamaperdereaseguiroceucroiectoothesogreirodauidaedahoneaeesigiamasuaginganca
 m0281 Carta 15 | da·moutqu·a·ainhamndoueaceogoeae·eeicoehgmacaetacom·eimrntosamandauaeesocesoquaseuco·a
 m0281 Carta 23 | sairdebulingbrocnossoinimigo
@@ -23,7 +23,7 @@ m0286 Passage 3a | animuuemclaranocursodesta
 m0286 Carta 73 | semordreinaraoaquiestesuelhacos
 m0286 Carta 74 | eschro·ueoarta·ontleamport·raiocasi·mmahstestaremarhsoostaco·ocastelhano
 m0287 Carta 78 | em·serdestesuelhacos
-m0287 Carta 79 | aquinamseatesdearasamahuumaeesthuhlhacolotesoureiroseuphrataiborne
+m0287 Carta 79 | aquinamseatendearasamahgumadesthuhlhacolotesoureiroseuphrataiborne
 m0287 Carta 80 | humfinodesprosito
 m0288 Carta 81 | ooficialsuislhecomunica
 m0288 Carta 85 | atrocdealcansarem·notratadodeisuenderamtodomundo
