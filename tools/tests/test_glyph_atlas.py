@@ -67,6 +67,15 @@ def main():
     run('segment', '--page', f'p2={p2}', '--out', d2, '--min-area', '0.05')
     S2 = list(csv.DictReader(open(os.path.join(d2, 'signs.tsv')), delimiter='\t'))
     assert max(int(s['h']) for s in S2) < 400, [(s['sid'], s['h']) for s in S2]
+
+    # crop: --image/--box mode (no segment run needed) and --out/--sid mode (reuses signs.tsv boxes).
+    crops = os.path.join(d, 'crops_out')
+    run('crop', '--image', p, '--box', '100,170,150,230:manual', '--dest', crops)
+    im = cv2.imread(os.path.join(crops, 'manual.png'), cv2.IMREAD_GRAYSCALE)
+    assert im is not None and im.shape == ((230 - 170 + 12) * 4, (150 - 100 + 12) * 4), im.shape
+    some_sid = S[0]['sid']
+    run('crop', '--out', d, '--sid', some_sid, '--dest', crops)
+    assert os.path.exists(os.path.join(crops, f'{some_sid}.png'))
     print('ok')
 
 

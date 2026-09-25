@@ -5,6 +5,8 @@
   python3 tools/glyph_atlas.py cluster --out DIR [--k 60] [--k-marks 16]
   python3 tools/glyph_atlas.py atlas --out DIR --labels labels.json [--per 10] [--prefer PAGE]
   python3 tools/glyph_atlas.py classify --out DIR --labels labels.json --page PAGE --tsv boxes.tsv [--strips DIR2]
+  python3 tools/glyph_atlas.py crop --image PAGE.jpg --box x0,y0,x1,y1[:label] [--box ...] --dest DIR [--scale 4]
+  python3 tools/glyph_atlas.py crop --out DIR --sid ID [--sid ...] --dest DIR2 [--scale 4]
 
 Generalises ciphers/dupuy452-carpi-1520/glyphs/ (segment.py, cluster.py, montage.py: page-specific there) for any
 page set, and adds what a mixed page needs (fr.2933 Salviati 1525): small marks written ABOVE a sign (tilde, #,
@@ -26,6 +28,12 @@ atlas    labels.json {"signs": {"<cluster>": "CODE"|"_"}, "marks": {"<cluster>":
          Writes DIR/atlas.tsv (code, desc, count, pages, exemplar sign ids, attribute marks seen) and DIR/atlas.png:
          one row per code, the code and its count, then --per exemplars cut from the grey page with context margin.
 
+crop     Cut one or more individual glyph crops for an atlas or a by-eye dispute (no clustering pipeline needed).
+         --image mode: pixel boxes straight out of any plain image on disk (a full DigitArq/Gallica page,
+         no `segment` run required first). --out/--sid mode: reuses a prior `segment` run's own signs.tsv/
+         marks.tsv box positions instead of hand-picked pixel coordinates. Either way, each crop gets a fixed
+         context margin, is upscaled (--scale, default 4x cubic) for a small secretary-hand glyph, and is
+         written as one PNG per box under --dest (named by the box's label/sid, or IMAGE_x0-y0-x1-y1.png).
 classify Every box of one page against the labelled boxes of ALL pages (the atlas, labels.json incl. "override"):
          same features as cluster, k nearest labelled boxes (--knn 5, the box itself excluded), distance-weighted vote.
          '_' (plain script, noise) is a class like any code. Writes one row per box in reading order: line, box id, bbox,
@@ -312,6 +320,50 @@ def cmd_atlas(a):
     print(f'{len(rows_out)} codes, {sum(int(r[2]) for r in rows_out)} signs labelled')
 
 
+def cmd_crop(a):
+    os.makedirs(a.dest, exist_ok=True)
+    made = []
+    if a.sid:
+        if not a.out:
+            sys.exit('--sid needs --out (the segment run to read signs.tsv/marks.tsv from)')
+        signs = {r['sid']: r for r in read(a.out, 'signs.tsv')}
+        marks = {r['mid']: r for r in read(a.out, 'marks.tsv')}
+        cache = {}
+        for sid in a.sid:
+            r = signs.get(sid) or marks.get(sid)
+            if r is None:
+                print(f'no such id: {sid}', file=sys.stderr)
+                continue
+            if r['page'] not in cache:
+                cache[r['page']] = cv2.imread(os.path.join(a.out, 'crops', r['page'] + '.png'), cv2.IMREAD_GRAYSCALE)
+            g = cache[r['page']]
+            x, y, w, h = (int(float(r[k])) for k in 'xywh')
+            y0, y1 = max(0, y - a.margin), min(g.shape[0], y + h + a.margin)
+            x0, x1 = max(0, x - a.margin), min(g.shape[1], x + w + a.margin)
+            sub = cv2.resize(g[y0:y1, x0:x1], None, fx=a.scale, fy=a.scale, interpolation=cv2.INTER_CUBIC)
+            p = os.path.join(a.dest, f'{sid}.png')
+            cv2.imwrite(p, sub)
+            made.append(p)
+    else:
+        if not a.image or not a.box:
+            sys.exit('--box mode needs --image and at least one --box x0,y0,x1,y1[:label]')
+        img = cv2.imread(a.image, cv2.IMREAD_GRAYSCALE)
+        if img is None:
+            sys.exit(f'cannot read {a.image}')
+        stem = os.path.splitext(os.path.basename(a.image))[0]
+        for spec in a.box:
+            box, _, label = spec.partition(':')
+            x0, y0, x1, y1 = (int(v) for v in box.split(','))
+            ym0, ym1 = max(0, y0 - a.margin), min(img.shape[0], y1 + a.margin)
+            xm0, xm1 = max(0, x0 - a.margin), min(img.shape[1], x1 + a.margin)
+            sub = cv2.resize(img[ym0:ym1, xm0:xm1], None, fx=a.scale, fy=a.scale, interpolation=cv2.INTER_CUBIC)
+            name = label or f'{stem}_{x0}-{y0}-{x1}-{y1}'
+            p = os.path.join(a.dest, f'{name}.png')
+            cv2.imwrite(p, sub)
+            made.append(p)
+    print(f'{len(made)} crops -> {a.dest}')
+
+
 def cmd_classify(a):
     from sklearn.neighbors import NearestNeighbors
     L = json.load(open(a.labels))
@@ -424,8 +476,17 @@ def main(argv=None):
     k.add_argument('--pca-scale', choices=['unit', 'shared'], default='unit')
     k.add_argument('--strips', help='directory for per-line strips with box numbers')
     k.add_argument('--max-w', type=int, default=1800, help='cut a line strip into parts under this width (px)')
+    r = sp.add_parser('crop')
+    r.add_argument('--image', help='a plain image file to cut pixel --box crops from directly')
+    r.add_argument('--box', action='append', default=[], help='x0,y0,x1,y1[:label] in --image, repeatable')
+    r.add_argument('--out', help="a prior 'segment' run's output dir, for --sid mode")
+    r.add_argument('--sid', action='append', default=[], help="a signs.tsv/marks.tsv id from --out, repeatable")
+    r.add_argument('--dest', required=True, help='directory to write one PNG per crop into')
+    r.add_argument('--margin', type=int, default=6, help='pixels of context kept around each box (default 6)')
+    r.add_argument('--scale', type=int, default=4, help='upscale factor, cubic interpolation (default 4)')
     a = ap.parse_args(argv)
-    {'segment': cmd_segment, 'cluster': cmd_cluster, 'atlas': cmd_atlas, 'classify': cmd_classify}[a.cmd](a)
+    {'segment': cmd_segment, 'cluster': cmd_cluster, 'atlas': cmd_atlas, 'classify': cmd_classify,
+     'crop': cmd_crop}[a.cmd](a)
 
 
 if __name__ == '__main__':
