@@ -42,8 +42,25 @@
   "2. Exact-duplicate and long-common-substring scan across the 16 lines (and within each line) for repeated tokens -- Schmeh's post says lines are 'some of which... repeated' but does not name which; if two lines (or long substrings) repeat, that is a strong crib-independent structural lead (e.g. a repeated name or bar-serial code across bars). Cost under $1, disk-only.",
   "3. Fetch the seven Goldbar-N.jpg images (scienceblogs.de, one host, already used for post 49's fetch) to check the commenter's proposed line-8 correction and any other transcription-vs-image drift directly on the image, and to look for accompanying non-Latin script or numerals near each cryptogram line that might anchor which bar each line belongs to. Cost $2, Sonnet."
  ],
- "matched_control": "not yet run; test 1 above specifies the correct control design (a random permutation of the same letter multiset, since the cipher already reads as engineered toward near-uniform frequency by construction, not by chance) -- a fresh-English-text-of-the-same-N control would not be matched here (CLAUDE.md rule 3: match the design, not only the length)",
- "cheap_test_done": [],
+ "matched_control": "run 25 Sept 2026 (LANE B3 worker bGLD, see cheap_test_done.1): the spec's originally-proposed control language, 'a random permutation of the same letter multiset', turned out to be degenerate for a whole-corpus letter-frequency chi-squared statistic (any permutation of a fixed multiset has identical letter counts, hence identical chi-squared -- confirmed empirically). The control that actually implements this test's intent (does chance alone produce a corpus this flat) is 1000 fresh i.i.d.-uniform random N-letter draws, matching Bourdeau's own Monte Carlo design in dbourdeau/cyphersolver's goldbar/NOTES.md (200,000 draws there) -- a fresh-English-text-of-the-same-N control would still not be matched here (CLAUDE.md rule 3: match the design, not only the length), since the question is chance-vs-engineered flatness, not English/Chinese-pinyin readability.",
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "25 Sept 2026",
+   "worker": "LANE B3 bGLD (Sonnet, session_012QfjvWAiHwLhjcGLsqP1aU)",
+   "method": "per-letter frequency chi-squared (25 df) against uniform expectation, both as-printed (N=263) and with the Bret Bowen / dbourdeau line-8 correction (N=262, in memory only, ciphertext.txt unchanged); disk-only, no images fetched (deferred to test 3). Script and raw output: specs/cheap-tests/goldbar-1933/freq_test.py, freq_test_output.json.",
+   "target": {
+    "as_printed_N263_chi_squared_25df": 1.251,
+    "bowen_correction_N262_chi_squared_25df": 1.1756
+   },
+   "control": {
+    "design": "1000 fresh i.i.d.-uniform random N-letter draws (see matched_control note above for why a literal permutation-of-the-same-multiset control is degenerate for this statistic)",
+    "as_printed_N263": {"mean": 24.9232, "min": 8.1711, "max": 52.8555, "p5": 14.3004, "p95": 36.8403},
+    "bowen_correction_N262": {"mean": 24.7617, "min": 8.5191, "max": 55.3588, "p5": 14.2748, "p95": 37.4962}
+   },
+   "verdict": "closed-negative on substitution/transposition/short-key-Vigenere/OTP encryption of natural-language plaintext -- target chi-squared sits at 0.0th percentile (below all 1000 control draws) for both readings; independently reproduces dbourdeau/cyphersolver's finding (chi-squared 1.251/1.176-1.374 across readings, P about 1e-12 to 1e-13 against 200,000 draws), credited per CLAUDE.md rule 8. Not a NEAR candidate: a control-backed floor, not a gap. Full writeup ciphers/goldbar-1933/NOTES.md."
+  }
+ ],
  "judge": {
   "letters_min": 250,
   "letters_max": 270,
