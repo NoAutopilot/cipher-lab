@@ -1,0 +1,88 @@
+line	pos	code	marks	source	reason
+1	8	phi		BC	C agrees with B (phi) against A (o.): slashed-circle-on-stem, exact match to phi atlas (loop+diagonal+stem), not plain o.
+1	8.5	g	+	BC	C agrees with B (g) against A (MISSING): separate loop-with-tail matches g atlas; triangular stroke below could be the + mark but reads more like a flourish/underline
+2	6	_		BC	C agrees with B (_) against A (bh): part of a continuous plain cursive run (pos6-12), joined ascender/descender strokes, not a cipher glyph shape
+2	7	_		BC	C agrees with B (_) against A (tee): same continuous plain cursive run as pos6
+2	8	_		BC	C agrees with B (_) against A (tee): same continuous plain cursive run
+2	9	_		BC	C agrees with B (_) against A (N): unmistakable cursive letter 'a'
+2	10	_		BC	C agrees with B (_) against A (S): cursive s-like curl, part of the same plain run
+2	11	_		BC	C agrees with B (_) against A (Lx): M/AC-shaped flourish, part of the same plain run, not a clean Lx match
+2	12	_		BC	C agrees with B (_) against A (v): f-N ligature, tail end of the same plain run
+2	16	+		BC	C agrees with B (+) against A (#): clean single cross/plus stroke, matches + atlas, not the crosshatch of #
+2	18	o.		BC	C agrees with B (o.) against A (_): circle with a clear center dot, exact match to o. atlas
+3	5	+		BC	C agrees with B (+) against A (#): single cross with small serif, matches + atlas better than # crosshatch
+3	12	_		3-way->B	A=S4 B=_ C=#, all differ; B's high-confidence note situates a plain '+'-shaped punctuation mark directly before the word 'Cosi'; more convincing than C's isolated '#' guess or A's S4
+3	25	_		BC	C agrees with B (_) against A (f): clearly legible plain italic cursive, spells like 'aps'/'afs'
+4	3	_		BC	C agrees with B (_) against A (S): plain cursive letters 'sso'
+4	8	_		BC	C agrees with B (_) against A (p): plain cursive ': Pu' -- ordinary script
+4	19	eps		AC	C agrees with A (eps) against B (_): clean epsilon-squiggle, exact atlas eps match
+4	20	_		AC	C agrees with A (_) against B (rz): plain cursive 'cu' ligature, no cipher shape
+5	11	S7	+	BC	C agrees with B (S7) against A (_): numeral-7-like hook dominates the box; merged with extra ink, kept at S7 over a plain read
+5	23	g	dot	AC	C agrees with A (g) against B (_): loop-with-descender tail, clear g atlas match
+5	29	eps		AC	C agrees with A (eps) against B (_): epsilon squiggle with trailing stroke, matches eps atlas
+6	4	S7	dot	AC	C agrees with A (S7) against B (_): single hooked diagonal stroke closest to the S7 numeral-7 shape among codebook entries
+6	16	S7	#	BC	C agrees with B (S7) against A (_): numeral-7 stroke with extra ligature above, kept at S7
+6	20	_		AC	C agrees with A (_) against B (o.): heavy ink blot/smudge, no clean glyph shape recoverable; likeliest a plain-script flourish under the ink
+7	13	lam	7	AC	C agrees with A (lam) against B (a): wedge/triangle top stroke resembles lam; box also carries a separate S-like stroke below not accounted for here
+7	15	m	3	AC	C agrees with A (m) against B (S7): cursive m-loop clearly visible at the foot of the box, matches m atlas; extra numeral strokes above may belong to a neighbour box
+7	30	_		BC	C agrees with B (_) against A (Z): plain cursive 'nu'/'ne' ligature
+8	15	v		3-way->C	A=_ B=rz C=v, all differ; B's note places this inside an unbroken run of confirmed signs, ruling out A's plain read; C's independent 'v' (hook-then-loop) is kept over B's 'rz' as the closer atlas shape match
+8	22	_		BC	C agrees with B (_) against A (S): plain cursive 'Ass'
+8	24	_		BC	C agrees with B (_) against A (H): plain cursive 'saj'
+8	26	_		BC	C agrees with B (_) against A (S): plain cursive continuing '...se'
+8	28	N		AC	C agrees with A (N) against B (_): cursive N-loop, reasonable N atlas match
+9	1	_		3-way->B	A=S7 B=_ C=Z, all differ; B reads a coherent plain-text stretch opening at this box (a Z-shaped plain letter); outweighs A's S7 and C's isolated Z-glyph match
+9	2	_		3-way->B	A=tee B=_ C=S, all differ; same plain stretch as 9/1 and 9/3 (B: cursive 't'); C's isolated tee-shape match does not survive the word context
+9	3	_		3-way->B	A=g B=_ C=S, all differ; same plain stretch, B reads 's' with dot completing '...ts;'; C's isolated g match does not survive the word context
+9	11	tee		AC	C agrees with A (tee) against B (+): cross/T-bar shape matches tee atlas; a numeral-7 stroke below may belong to a neighbour box
+9	14	S		BC	C agrees with B (S) against A (_): S-curl and a separate eps-like loop both visible in one tall box; kept at S for the upper glyph
+10	1	]	o	3-way->B	A=y B=] C=sq, all differ; B's '⊐ box open to the left plus a small o mark above' is a precise match to the ] (open bracket) atlas rather than C's closed-square 'sq'
+10	2	Lx		BC	C agrees with B (Lx) against A (_): vertical stroke with a hooked descender, matches Lx atlas
+10	4	phi		3-way->B	A=y B=phi C=g, all differ; B's slashed-circle-on-stem description matches the same phi shape independently confirmed elsewhere on this leaf (line1 pos8); C's 'g' read a small edge mark in an otherwise blank crop
+10	6	lam	3	3-way->B	A=_ B=lam C=S7, all differ; B identifies real ink (a lam stroke plus a numeral-3 mark, partly in a fold's shadow) that A's classifier missed as plain; consistent with C's own note of multiple numeral-like strokes here
+10	19	Lx		BC	C agrees with B (Lx) against A (_): vertical-plus-hook shape, matches Lx atlas
+10	22	Lx	dot	BC	C agrees with B (Lx) against A (_): same vertical-plus-hook shape as pos19
+11	3	sq	ot	AC	C agrees with A (sq) against B (]): clean closed square/rectangle, exact sq atlas match
+11	4	_		AC	C agrees with A (_) against B (w): plain cursive 'iw-' fragment
+11	8	tee		3-way->B	A=S7 B=tee C=_, all differ; A (S7) and B (tee) both independently read a sign here, not plain; B's 'T-like vertical-with-crossbar' description is literally the tee atlas shape, so C's 'plain capital T' read is probably the same ink
+11	16	g		3-way->B	A=_ B=g C=e, all differ; genuinely marginal on all three passes (A 'uncertain', B share 0.63, C conf L); kept to B's atlas-anchored 'loop with crossing strokes, closer to g' as the least contrived of three weak reads
+11	22	dl		BC	C agrees with B (dl) against A (_): loop-with-tail on the left half, matches dl atlas
+11	22.5	f		BC	C agrees with B (f) against A (MISSING): cross-stroke-with-descender on the right half, matches f atlas
+12	3	_		BC	C agrees with B (_) against A (S7): plain cursive digits/letters '12a', no cipher shape
+13	3	tee		BC	C agrees with B (tee) against A (S7): cross/T-bar shape, close match to tee atlas
+13	6	S7	dot	BC	C agrees with B (S7) against A (_): numeral-7 hook, matches S7 atlas
+13	7	nt		3-way->B	A=Z B=nt C=f, all differ; B's high-confidence description (u/n hook joined to a crossed vertical, matching nt atlas exemplars) and cited precedent at line12 pos15 outweigh A's low-confidence Z and C's independent f guess
+14	7	_		AC	C agrees with A (_) against B (): two thin crossing strokes with dots -- ambiguous, likely a punctuation/accent fragment rather than a coded sign
+14	13	_		AC	C agrees with A (_) against B (f): plain cursive 'fa'
+14	18	_		AC	C agrees with A (_) against B (nt): plain cursive m-loop, part of a flowing word
+14	19	_		AC	C agrees with A (_) against B (N): unmistakable cursive 'a'
+14	20	S		BC	C agrees with B (S) against A (_): isolated S-curl, matches S atlas
+15	7	S7	5	BC	C agrees with B (S7) against A (_): numeral-7 stroke, left half of the compound box
+15	7.5	H		BC	C agrees with B (H) against A (MISSING): H-with-'10'-subscript shape, an exact match to the H atlas plate
+15	18	eps	~	BC	C agrees with B (eps) against A (_): clean epsilon squiggle
+15	20	#		BC	C agrees with B (#) against A (+): crosshatched mark, clear # atlas match
+16	10	g		AC	C agrees with A (g) against B (y): multiple merged glyphs (y/b/3/g) in one box; kept at g for the clearest shape, needs re-split
+16	12	]		AC	C agrees with A (]) against B ([): flat-topped bracket/hook shape, closer to ] atlas than tee
+16	13	dl		3-way->B	A=nt B=dl C=phi, all differ; three genuinely weak reads (nt/dl/phi); kept to B's dl, which explicitly weighs the low classifier share (0.62) against the loop+diagonal-flourish-tick shape
+16	26	w		3-way->B	A=y B=w C=_, all differ; B's specific atlas comparison (flat hump-over-tail vs y's diagonal descender) is better reasoned than A's unexplained confirm or C's plain read of the same flourish
+17	1	S		BC	C agrees with B (S) against A (_): S-curl with a small dot, matches S atlas
+17	2	_		AC	C agrees with A (_) against B (N): plain cursive word fragment '...th'/'M tri'
+17	3	S		3-way->B	A=_ B=S C=eps, all differ; B's 'squiggle matching atlas S' beats C's eps guess (S/eps are a known confusable pair) and A's plain-with-marks read, which is internally inconsistent (plain boxes elsewhere on this leaf carry no marks)
+17	5	_		3-way->C	A=g B=S7 C=_, all differ; B itself flags this as 'genuinely uncertain' and entertains a plain connecting ligature rather than a full sign; A's g call needs a loop B says isn't there; C's independent 'stray stroke, no codebook match' read is the most conservative and matches B's own doubt
+17	7	_		AC	C agrees with A (_) against B (S): plain cursive 'tis'/'His' fragment
+17	9	f		3-way->B	A=y B=f C=p, all differ; B's stroke-order description (vertical, small loop near top, horizontal crossbar lower) matches the f atlas more precisely than C's p guess (f/p are a close confusable pair); overrides A's y
+17	10	_		BC	C agrees with B (_) against A (e): plain cursive 'qu' ligature
+17	14	bh	dot	BC	C agrees with B (bh) against A (_): hook-with-descender shape, matches bh atlas
+17	17	_		BC	C agrees with B (_) against A (#): plain cursive 'tto'
+18	1	_		3-way->B	A=y B=_ C=p, all differ; B's reading that this begins the word 'Parti' continuing into pos2-4 is corroborated by C's own independent plain reads of 18/2 ('pa') and 18/4 ('rtn') in this same pass, which together spell the same word
+18	2	_		BC	C agrees with B (_) against A (p): plain cursive 'pa'
+18	4	_		BC	C agrees with B (_) against A (#): plain cursive 'rtn'
+18	5	_		BC	C agrees with B (_) against A (y): single loop-with-tail stroke, reads as a plain cursive f/J, consistent with this line's dominant plain-run pattern
+18	6	S		BC	C agrees with B (S) against A (_): isolated S-curl
+18	7	nt		BC	C agrees with B (nt) against A (_): t-cross plus N-loop ligature, matches nt atlas
+18	7.5	S	~	BC	C agrees with B (S) against A (MISSING): S-curl, second half of the split box
+18	10	_		BC	C agrees with B (_) against A (Lx): plain capital-letter flourish ('M'), no clean cipher match
+18	13	_		BC	C agrees with B (_) against A (S): plain cursive 'ts'
+18	15	_		BC	C agrees with B (_) against A (H): merged cluster of strokes, illegible as a single sign
+18	18	_		BC	C agrees with B (_) against A (N): plain cursive 'rN'
+19	18	S7	+	BC	C agrees with B (S7) against A (Z): numeral-7 shape with a + cross mark above it, compound box
