@@ -1,0 +1,24 @@
+{
+  "fetched": "25 Sept 2026",
+  "by": "LANE B3 worker bSSR",
+  "source": "scienceblogs.de/klausis-krypto-kolumne (Cipherbrain), post 'The Top 50 unsolved encrypted messages: 25. The SS radio message', 7 Aug 2017",
+  "requests": [
+    {
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2014/04/SS-Code.jpg",
+      "file": "SS-Code.jpg",
+      "http_status": 200,
+      "size_bytes": 211193,
+      "sha1": "bef76105261ccf0ebe4e02b780389a87b8b618c4",
+      "note": "original photograph, 600x729, Exif shows iPhone 4 camera, dated 2012:03:27 in the file's own metadata (photo predates the 2017 blog post; owner Nick Gessler per the post text)"
+    }
+  ],
+  "derived_crops": [
+    {"file": "crop_lines.png", "note": "3x upscaled overview of all 6 cipher lines, used for the blind transcription pass"},
+    {"file": "crop_right.png", "note": "3x upscaled crop of the right-hand (post-separator) letter groups"},
+    {"file": "crop_seps2.png", "note": "further upscaled crop isolating the separator column (=, /, =, :, =)"},
+    {"file": "crop_p4sx.png", "note": "close crop confirming line 6 'KOMM   P4SX' has no separator character"}
+  ],
+  "host_requests_this_session": {
+    "scienceblogs.de": 2
+  }
+}

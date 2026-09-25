@@ -7,8 +7,8 @@
  "language_candidates": [
   "de"
  ],
- "ciphertext_pending": "No Latin-letter transcription of the ciphertext lines exists anywhere in the post text or its 28-comment thread (sources/schmeh/posts/25-ss-radio.txt, read in full this pass) -- only two embedded images: the full message (files/2014/04/SS-Code.jpg) and a close-up of the sender's rank stamp (files/2014/04/SS-Code-Stempel.png). A transcription pass from the image is the whole of cheap test 1; nothing downstream is runnable without it.",
- "alphabet": "unknown until transcribed; per Schmeh's own description, five of the six lines are divided internally by an equal sign, a slash or a colon -- 'None of the WW2 encryption methods I know produces ciphertexts that look like this'",
+ "ciphertext": "MASS=QRLZ / H9/OSLY / ALAP=DETL / 27163:KSSY / J1=EFLS / KOMM P4SX (ciphers/ss-radio-lippert-1944/ciphertext.txt, one blind pass off images/SS-Code.jpg, 25 Sept 2026, LANE B3 worker bSSR)",
+ "alphabet": "45 symbols total (37 letters, 8 digits): 18 distinct letters (A D E F H J K L M O P Q R S T X Y Z), 7 distinct digits (1,2,3,4,6,7,9); five of six lines divided internally by an equal sign, a slash or a colon (line 6, KOMM P4SX, has no separator character) -- 'None of the WW2 encryption methods I know produces ciphertexts that look like this' (Schmeh)",
  "constraints": {
   "num_lines": 6,
   "separators": "five of six lines divided by =, / or :",
@@ -24,8 +24,23 @@
   "2. Once transcribed, compare the form's field layout (date, addressee, serial number fields implied by the punctuation) against the WW2 Wehrmacht Spruchformular and its May-1941 successor (cryptomuseum.com/crypto/enigma/forms, named by a commenter) to separate plaintext form-fields from actual cipher groups before attempting any language judge. Cost $1.",
   "3. If a cipher-group segment is isolated, run it against German with a matched control (synthetic German plaintext of the same N, same solver) -- but treat the authenticity dispute (constraints.authenticity_dispute) as a live possibility that no amount of cryptanalysis resolves: a forged Funkspruch may encode nothing at all. Cost $2-3."
  ],
- "matched_control": "not yet run; no ciphertext on disk to test",
- "cheap_test_done": [],
+ "matched_control": "run 25 Sept 2026: German-prose control (tools/data/de20, era-matched 1880-1940, N=37 letters, 5 seeds x 200 draws) mean IC 0.0725 [0.0465,0.1066]; uniform-random control (K=18, N=37, 5 seeds x 200 draws) mean IC 0.0554 [0.0420,0.0751]",
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "25 Sept 2026",
+   "worker": "LANE B3 bSSR",
+   "method": "fetched images/SS-Code.jpg (scienceblogs.de), single blind transcription pass, no subagent; computed letter-only index of coincidence (specs/cheap-tests/ss-radio-lippert-1944/ic_test.py) against a German-prose control (tools/data/de20, same N) and a uniform-random control (same K), both at 5 seeds x 200 draws",
+   "target_N_letters": 37,
+   "target_N_all": 45,
+   "target_K_letters": 18,
+   "target_IC": 0.0631,
+   "german_control_IC": "mean 0.0725, 95% range [0.0465, 0.1066]",
+   "uniform_control_IC": "mean 0.0554, 95% range [0.0420, 0.0751]",
+   "verdict": "inconclusive -- target IC falls inside both 95% ranges; N=37 letters split across six short code-like groups is too little text for IC to discriminate at all, not a control-backed negative either way",
+   "cost": "see the lane ledger"
+  }
+ ],
  "judge": {
   "language": "de",
   "letters_min": 20,
