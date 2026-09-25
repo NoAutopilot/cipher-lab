@@ -320,3 +320,28 @@ line	pos	code	marks	action	conf	note
 12	21	eps	5	confirm	M
 12	22	Z	ot	correct	M	bracket-like "⊐" shape closer to the ] cluster than Z; low share (.59) already flagged this
 12	23	Z		correct	M	tall stroke with crossbar at line's right edge, more like a t/d-cross shape than Z; low share (.41) already flagged this, possibly a catchword/paragraph mark rather than a cipher sign
+13	1	_		plain	M	paragraph/initial mark before the flag crosses and colon, not a clean y
+13	2	_		plain	H	first of two cross-shaped marginal flag marks ("+ +")
+13	3	_		plain	H	second flag-mark cross
+13	4	_		plain	H	colon punctuation ":"
+13	5	_		plain	H	"h" of "ha"
+13	6	_		plain	H	"a" of "ha"
+13	7	_		plain	H	"in" of "inteso"
+13	8	_		plain	M	"te" of "inteso"
+13	9	_		plain	M	"so" ending of "inteso"
+13	10	_		plain	M	"qu" of "quello" (ch-shaped ligature), low share (.61) already flagged this
+13	11	_		plain	H	"ello" of "quello"
+13	12	_		plain	H	"ch" of "che"
+13	13	_		plain	M	"e" of "che"
+13	14	_		plain	M	"qu" of "qua[ndo/le]"
+13	15	_		plain	M	"a" ending, low share (.59) already flagged this
+13	16	_		plain	H	"e" (verb e/e')
+13	17	_		plain	H	"s" of "stato"
+13	18	_		plain	H	"tato" body of "stato"
+13	19	_		plain	H	"scr" of "scripto"
+13	20	_		plain	M	"ipto" ending of "scripto", low share (.80) already flagged this
+13	21	_		plain	M	mark/flourish after "scripto"
+13	22	_		plain	M	small tick/arrow mark, low share (.52) already flagged this
+13	23	_		plain	M	continuation stroke
+13	24	_		plain	M	"q"-like initial of a final short word, low share (.63) already flagged this
+13	25	_		plain	M	flourish ending the line
