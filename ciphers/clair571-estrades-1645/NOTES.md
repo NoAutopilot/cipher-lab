@@ -141,6 +141,11 @@ recovered], 2 altcha-challenged `services/engine/search/sru` probes standing dow
 headless-browser fetch of the same challenged endpoint. catalogue.bnf.fr 1 (reachable, no useful hit). WebSearch
 2. No DECODE requests this pass (cached catalogue data reused, per above). No subagents used.
 
+## Access request written (LANE YX worker YX-REQ571, 25 Sept 2026)
+
+A batched BnF reproduction request for the three leaves this file names above (Clair 575 p.1209, Clair 574
+f.3-4, Clair 579 p.341) is now written: `REQUEST.md`. Status: waiting on the owner.
+
 ## Check-solved (LANE CX, 2026-09-25)
 
 Six-source sweep run fresh this pass (LANE CX worker CX-CLAIR), on top of -- not only quoting -- the 24 Sept
