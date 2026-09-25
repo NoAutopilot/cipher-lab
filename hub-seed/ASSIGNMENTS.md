@@ -510,3 +510,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T18:53Z	session_01AtRe8LEF72DEuye52Rg7Pi	LANE R6 CM2 (Fable, cap 15)	salviati error-tolerant code+mark	brief 2026-09-25-lane-r6-cm2-salviati-tolerant.md
 2026-09-25T19:02Z	session_01Ni7SCWavoqfgw2VR4ypGXX	done	bMCC2 mccormick-1999 test 2	pushed 3d29cb3
 2026-09-25T19:02Z	session_014qQzx56jpDoJBe6kFjiL5z	done	bPOL2 pollaky-1865-1875 test 2	pushed c610f85, b25465f
+2026-09-25T19:02Z	session_01PmhUa6TvpUCGWqnG13xbSh	LANE B2 bMLH (Sonnet, cap 3)	mlh-1976 intake + test 1 image + single pass	brief 2026-09-25-lane-b2-mlh-1976.md
