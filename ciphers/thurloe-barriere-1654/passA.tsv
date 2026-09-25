@@ -1,0 +1,50 @@
+# Pass A (this worker, TX-BARRT, eye transcription from the images at 1.8-3.5x crops), 25 Sept 2026.
+# Birch, Thurloe State Papers vol.2 pp.721-722, Barriere to Conde, London 20 Nov 1654 N.S.
+# One row per run of consecutive numeral/letter/symbol codes (a "run" ends at the first intervening clear French
+# word; print-line wraps inside a run are NOT run boundaries -- e.g. run003 crosses the 729L2/729L3 line wrap).
+# Columns: run_id, tokens (space-separated; a trailing '*' on a token = a diacritic mark was visible above it,
+#   type not distinguished this pass), gloss_as_printed (verbatim italic text below, or blank), ctx_left, ctx_right,
+#   leaf, note
+run_id	tokens	gloss_as_printed	ctx_left	ctx_right	leaf	note
+R001	85 57* 23* 80 12 82		touchant	qui certainement a esté fort	729
+R002	8*		a esté fort	à qui est encore	729
+R003	61 x 30 47* 20 52* 68* 72* 75* 22* 28* 93* 86* 56* 52* ll 10* 68* 36* 88	fi toutes chofes fe changent fort ||| d'eftably pour le gouvernement :	à qui est encore	en l'estat ou sont les	729	gloss printed as two phrases: left phrase under approx tokens 3-8 (30,47,20,52,68,72); right phrase under approx tokens 18-20 (68,36,88); tokens 9-17 have no visible gloss. ||| separates the two printed phrases.
+R004	o 70 12 34 66 40 26 68 [circle-dot] d 61		affaires	ni ayant rien	729	part 1 of a run split by clear "ni ayant rien"; see R004+R005 combined gloss below
+R005	75* 88* 78 44 71* 89* 79 31	le parlement & le protecteur eftant fort oppofé, fi quoique je ne doubte point que le protecteur demeure le maiftre,	ni ayant rien	[line wrap, new sentence follows]	729	gloss is printed as one continuous line below R004+R005 combined (19 tokens excluding the clear "ni ayant rien" between them); word count of the gloss excluding "&" = 19, an exact match to the 19 combined tokens -- the best-supported run in the letter (see NOTES.md s.2)
+R006	83 61 13 16 8* 53 61 47 45 20* 7* 59 6* 96 a 53 8* 17* 7* 72 25 f 32* 88 18 77	puis que je feur qu'illes ||| prefentement ||| oppofée ||| ce prot. ne fit,	[new sentence]	qui feftet	729	4 gloss phrases under a 26-token run; first phrase sits under the first 5 tokens (83,61,13,16,8) -- an exact 5-for-5 sequential match; the other 3 phrases (prefentement / oppofée / ce prot. ne fit,) sit further right but their exact token span could not be pinned down confidently at this pass's resolution
+R007	9* 59 63 12* 90 41* 73 c 14 x 93 a 31	fu c fe fi e	qui feftet	[new clause]	729	gloss sits under the first 5 of 13 tokens (9,59,63,12,90) -- exact 5-for-5 sequential match, remaining 8 tokens unglossed
+R008	47 20 26 91 9 16 6* 65 40* d 53*		[new clause]	[new sentence]	729	no gloss
+R009	80* 29* 58* 70* 21		[new sentence]	& qui ne vouloit point qu'il eust une	729	no gloss directly under this span
+R010	91 d 43* 92* 28 f 73* 9 a	changer ||| de fe ||| nt. ||| le	qu'il eust une	;	729	4 short gloss fragments; approximate positions: changer~91, de~d, fe(se)~43, nt.~92 (fragment, meaning unclear), le~a (last token, far right); 28,f,73,9 unglossed
+R011	68 39 74 58* e ll	parl. eft le majeur il cas fe ra la armée	mais croy que peu à peu il la fera	en lui faifant voir, que fi	729	9 gloss words for 6 tokens -- sparse/mismatched, no confident per-token mapping attempted
+R012	89		que fi	[new sentence]	729	no gloss
+R013	61 8 88 18 75 89 59 22 27 14 a	parlements ||| au	[new sentence]	& qu'apres cela il voudroit fçavoir les raifons	729	"parlements" position uncertain among the first ~4 tokens; "au" far right, likely gloss overflow onto the next line -- no confident per-token mapping
+R014	61* 40*	premier chef	pourquoy elle a rompue les deux derniers	de fon	729	exact 2-for-2 sequential match
+R015	61* x	la vi e	de fon	qui est un crime	729	read as "la vie" (2 words) for 2 tokens -- exact 2-for-2 sequential match
+R016	51*	ra me ne ront à (uncertain attribution, overflow?)	qui est un crime	[line wrap]	729	5-word gloss for 1 token, clearly not a clean per-token match; not used
+R017	86 69 36 m	feurement la partie de l'armee	& par confequent ou il va de	:	729	tentative 4-for-4 if "de l'armee" is treated as one gloss item (seurement=86, la=69, partie=36, "de l'armee"=m); moderate confidence only
+R018	85* 37 20	feparée	ces raifons-là	[line wrap]	729	"feparée" (separee) sits roughly centered near "37"; 85 and 20 unglossed; moderate confidence singleton
+R019	23* 25 7* 47* 27	de	[line wrap]	[new clause]	729	"de" position uncertain among 5 tokens -- not used
+R020	[phi-symbol] 59* 42^ 32* 32 86 55 x 72 b 14 a 14	hafter	[new clause]	feftet	729	1 word for 13 tokens, position not confidently pinned -- not used
+R021	58* 51* 31* 36^ 72	traiter	feftet	lui 10 ces incertitudes	729	"traiter" centered roughly near "31" -- moderate confidence singleton
+R022	90 d 92* 39^		tudes font que 40 ne veut pas ce	de	729	part 1 of the 7-token run continued as R023+R024; combined gloss below
+R023	22 44		de	ne fachant pas encor	729	part 2 of the 7-token run
+R024	89	lequel deffein d'eux le a pourroit tira,	ne fachant pas encor	[new sentence]	729	R022+R023+R024 = 7 tokens (90,d,92,39,22,44,89); the gloss "lequel deffein d'eux le a pourroit tira" is exactly 7 words in sequence -- the second-best-supported run in the letter (see NOTES.md s.2): 90=lequel, d=deffein, 92=d'eux, 39=le, 22=a, 44=pourroit, 89=tira
+R025	58* 51* 32*		[new sentence]	ce qui ne ce fera que le 19 de	729	no gloss; "le 19" that follows is read as a real ordinal/date, not a code (no mark, ordinary usage)
+R026	15* 44 45 88 37 86 85 d 8 74 99 [phi-symbol]	Efpagne ne faifant un le propofition,	que le 19 de	[new sentence]	729	gloss is 6 words (Espagne,ne,faifant,un,le,propofition) under the first 6 of 12 tokens -- tentative 6-for-6 sequential prefix match; remaining 6 tokens (85,d,8,74,99,phi) unglossed
+R027	42* o 40		[new sentence]	ce qu'il va à craindre c'eft que le	729	no gloss directly under this short span
+R028	27^ 84 6 45 o 55 21 89 85 22 70 70	ou que la [f?]fe la paix avecque la France	c'eft que le	[new sentence]	729	9 gloss words for 15 combined R027+R028 tokens -- sparse, no confident per-token mapping attempted; second "70" token uncertain (possibly a distinct glyph, OCR-doubtful, kept as printed)
+R029	97 37* 7* 45 [phi-symbol] 59* 86 57* 9 8* 86 80 40	qui eft al lé e à la	[new sentence]	eft fort perfuadé, que cela ne fe fera pas,	729	5 gloss words for 13 tokens -- sparse, not used
+R030	49 14* 8* 56 89 x 26 85* 37 25 82 92 39 23* 7* a 28		Il eft vrai, qu'on croit que	[line wrap]	729	no gloss observed under this line
+R031	10* 83 77		[continues]	le bruit eft tout commun, que fi	729	no gloss
+R032	11 31* c 53 42 21 71* 21 44 73 85* 32		que fi	[line wrap]	729	no gloss
+R033	59* 11* 85* 88* 7* 22* 22* 37* 16* 87* 12^ 6* d 77 84* 90 26* 91* 82 a 32* d 88 75* 40		[continues]	[line wrap]	729	no gloss
+R034	83* r 30* 38* 20* 70 49 62* 74* 84* 6* 90 92* 37* 85*		[continues]	dans peu de temps nous en ferons efclaircis.	729	no gloss
+R035	46 16* u 79 32 31* 72* 85* 52* 74 24* 84* 52* 69* 21 92*	ordre	Je vis hier 17 pour lui	[end of line, page continues on leaf 730]	729	1 gloss word for 16 tokens; tentative position near "24" (moderate-low confidence) -- not used in the applied key
+R036	12* 84* 53* 85* a 43* 87*		Je vis hier 17 pour lui [wrap from 729] / Je lui dis que j'en avois eu	Je lui dis que j'en avois eu	730	continuation of R035's sentence onto leaf 730; no gloss seen directly under this span
+R037	44 6* a		Je lui dis que j'en avois eu	il avot long temps, mais que ma maladie m'avoit empefché de m'aquiter de ce devoir. Il n'y a forte de compli-	730	no gloss; "pour V.S." appears as a short phrase below the next line's start, not clearly under this span
+R038	71* 22*		qu'il ne me fit	& me dit	730	"pour V.S." gloss fragment sits in this area but position not confidently pinned to these 2 tokens; not used
+R039	40 88 66* c 90* 66*	mil le be les chofes	& me dit	fur ce que V.S. avoit fait à Arras	730	5 gloss words for 6 tokens -- tentative near-match (40=mil,88=le,66=be,c=les,90=chofes), last "66" left over; moderate-low confidence
+R040	84* 91^ 7* 23 7* ll 5* 77 12^ 9* 94 x 18^ 7 80 38 40 73 65 71 89 16^ 21 39		fur ce que V.S. avoit fait à Arras, & que cefte action avoit plus pu l'embaff. d'Efpagne, de crainte en mieux	de vos ennemis, que s'ils en refentent	730	no gloss observed under this long span
+R041	19 d 8* 71* 75 21 45 58* [phi-symbol] d 60 p 99 62 65 26 75 88 75	Il le le ||| à V.S. qu'il le	de vos ennemis, que s'ils en refentent	finit, en me priant	730	"Il le le" (3 words) sits under the first ~3 tokens (19,d,8) -- tentative 3-for-3 prefix match; "à V.S. qu'il le" (4 words) sits further right/wraps onto the next printed line, position not confidently pinned to specific tokens
+R042	28^ 24 12* 88 89* 48*		de mandre	affeurent.	730	no gloss; letter ends here (unsigned in print)

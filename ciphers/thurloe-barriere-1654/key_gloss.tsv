@@ -1,0 +1,74 @@
+# Key candidates from the printed interlinear gloss, this pass (TX-BARRT), 25 Sept 2026.
+# Grade C throughout (rule 4: from known plaintext -- the gloss word IS the plaintext for that span; the digit-to-
+# word assignment is by sequential order within the glossed span, per NOTES.md s.2, since typesetting does not
+# column-align gloss words under their exact source token).
+# status: primary = the only confident/tentative value seen for this code this pass, applied in the cheap test;
+#         conflict = two or more confident/tentative sources give this SAME code different values (see NOTES.md
+#         s.3) -- recorded here for the record, NOT applied in the cheap test's key.tsv.
+# A code appearing twice with the SAME value from two different runs (true homophones/duplication, e.g. 34 and 71
+# both "protecteur") is not a conflict; only a same-code-different-value pair is flagged conflict.
+code	value	grade	status	source_run	note
+o	le	C	primary	R004	from the 19-word/19-token exact match, R004+R005
+70	parlement	C	primary	R004
+34	protecteur	C	primary	R004	appears twice in the same 19-token run with 71, both "protecteur" -- consistent, not a conflict
+66	estant	C	conflict	R004	conflicts with 66=be (R039, tentative)
+40	fort	C	conflict	R004	conflicts with 40=chef (R014) and 40=mil (R039, tentative)
+26	oppose	C	primary	R004
+68	si	C	primary	R004
+[circle-dot]	quoique	C	primary	R004	astrological/planetary-looking symbol, distinct from the "[phi-symbol]" used at several line starts elsewhere in the letter
+d	je	C	conflict	R004	conflicts with d=de (R010), d=deffein (R024), d=le (R041, tentative) -- "d" conflicts more than any other token in this pass; see NOTES.md s.3
+61	ne	C	conflict	R004	conflicts with 61=que (R006), 61=premier (R014), 61=la (R015) -- the most conflicted digit in this pass
+75	doute	C	primary	R004
+88	point	C	conflict	R004	conflicts with 88=un (R026, tentative), 88=le (R039, tentative)
+78	que	C	primary	R004
+44	le	C	conflict	R004	conflicts with 44=pourroit (R024) and 44=ne (R026, tentative)
+71	protecteur	C	primary	R004	see note on 34
+89	demeure	C	conflict	R004	conflicts with 89=tira (R024)
+79	le	C	primary	R004
+31	maistre	C	conflict	R004	conflicts with 31=traiter (R021, tentative)
+83	puis	C	primary	R006	from the 5-word/5-token exact match at the start of R006
+61(2nd obs)	que	C	conflict	R006	see 61 above; recorded again to show the conflict is not a one-off
+13	je	C	primary	R006	distinct code from d; both "je" -- homophones, not a conflict
+16	feur	C	primary	R006	printed "feur" (long-s); read literally, plausibly "sceur"/an old spelling this pass did not resolve further
+8	qu'illes	C	conflict	R006	conflicts with 8=le (R041, tentative)
+9	su	C	primary	R007	from the 5-word/5-token exact match at the start of R007 ("fu c fe fi e")
+59	c	C	primary	R007	value is the single letter "c" as printed -- unusual for a French word; flagged uncertain interpretation, not necessarily wrong
+63	se	C	primary	R007
+12	le	C	conflict	R004	conflicts with 12=si (R007)
+12(2nd obs)	si	C	conflict	R007	see 12 above
+90	e	C	conflict	R007	conflicts with 90=lequel (R024) and 90=chofes (R039, tentative)
+91	changer	C	primary	R010	from the partial (5 of 9 tokens) mapping in R010
+43	se	C	primary	R010	distinct code from 63; both "se" -- homophones, not a conflict
+a	le	C	primary	R010	from R010 only this pass; a different "a" reading was not independently confirmed elsewhere
+40(2nd obs)	chef	C	conflict	R014	see 40 above
+61(3rd obs)	premier	C	conflict	R014	see 61 above
+61(4th obs)	la	C	conflict	R015	see 61 above
+x	vie	C	primary	R015
+86	seurement	C	conflict	R017	tentative (near-match, 4 items for 4 tokens); conflicts with 86=propofition (R026, tentative)
+69	la	C	primary	R017	tentative
+36	partie	C	primary	R017	tentative
+m	de l'armee	C	primary	R017	tentative; treated as one gloss item, not split into "de" + "l'armee"
+37	separee	C	conflict	R018	tentative singleton; conflicts with 37=le (R026, tentative)
+31(2nd obs)	traiter	C	conflict	R021	tentative singleton; see 31 above
+90(2nd obs)	lequel	C	conflict	R024	from the 7-word/7-token exact match R022+R023+R024; see 90 above
+d(2nd obs)	deffein	C	conflict	R024	see d above
+92	d'eux	C	primary	R024
+39	le	C	primary	R024	distinct code from o/12/44/79/a; all "le" -- homophones consistent with a common word needing many slots
+22	a	C	primary	R024	value is the single letter/preposition "a" as printed
+44(2nd obs)	pourroit	C	conflict	R024	see 44 above
+89(2nd obs)	tira	C	conflict	R024	see 89 above
+15	Espagne	C	primary	R026	tentative (6-for-6 sequential prefix match)
+44(3rd obs)	ne	C	conflict	R026	tentative; see 44 above
+45	faifant	C	primary	R026	tentative
+88(2nd obs)	un	C	conflict	R026	tentative; see 88 above
+37(2nd obs)	le	C	conflict	R026	tentative; see 37 above
+86(2nd obs)	propofition	C	conflict	R026	tentative; see 86 above
+19	Il	C	primary	R041	tentative (3-for-3 prefix match, "Il le le")
+d(3rd obs)	le	C	conflict	R041	tentative; see d above
+8(2nd obs)	le	C	conflict	R041	tentative; see 8 above
+40(3rd obs)	mil	C	conflict	R039	tentative; see 40 above
+88(3rd obs)	le	C	conflict	R039	tentative; see 88 above
+66(2nd obs)	be	C	conflict	R039	tentative; see 66 above
+c	les	C	primary	R039	tentative; distinct token from the value "c" (59=c) -- this is the glyph "c" itself as a token, meaning "les"
+90(3rd obs)	chofes	C	conflict	R039	tentative; see 90 above
+24	ordre	C	conflict	R035	very low confidence (1 word for 16 tokens, position guessed); not applied even though nothing else claims 24 this pass -- excluded from primary on confidence grounds, not a same-code conflict

@@ -1,0 +1,30 @@
+{
+ "slug": "thurloe-barriere-1654",
+ "name": "Barriere to the prince of Conde, London 20 Nov 1654 N.S. (Birch, Thurloe State Papers vol.2 pp.721-722)",
+ "language_candidates": ["fr"],
+ "ciphertext": "ciphers/thurloe-barriere-1654/passA.tsv (TX-BARRT, 25 Sept 2026, single eye transcription from the images at 1.8-3.5x crops; a second blind Sonnet pass was run in parallel and its reconciliation against this pass is recorded in NOTES.md when it lands)",
+ "ciphertext_source": "archive.org collectionofstat02thur, leaves 729-730 (images/manifest.json), printed pages 721-722",
+ "alphabet": "1-2 digit numerals (mostly 4-99) plus a small set of italic single-letter codes (a b c d e f m o p r u x, and the doubled 'll') and two astrological/planetary-looking symbols, embedded inline within otherwise plain French prose (a nomenclature/code-word system, not a full-text substitution); roughly half the numeral tokens carry a diacritic-like mark printed directly above them (circumflex, grave, acute, macron/overline, caron, diaeresis) whose exact type this pass could not reliably distinguish at the available resolution -- mark presence only is recorded (passA.tsv trailing '*'), not type",
+ "constraints": [
+  "design is word-per-code nomenclature, not letter substitution: two spans give an exact word-count match between a fully-printed interlinear gloss phrase and the run's token count (19 tokens / 19 words; 7 tokens / 7 words -- see NOTES.md s.2), read in sequential order (typesetting does not column-align gloss words under their source token)",
+  "the gloss is sparse and partial: of 42 runs (368 code tokens total, this pass's count) only 25 runs have any printed gloss at all, and most of those reveal only the first few words of the run, not the whole thing",
+  "heavy homophone/conflict structure: the same bare digit recurs with DIFFERENT gloss-derived values at different confidently-glossed spots for at least 9 codes (61, 12, 40, 44, 88, 90, 89, 31, d -- see key_gloss.tsv 'conflict' rows), consistent with a nomenclature that gives its most frequent short words (le/la/que/ne/de/se) many interchangeable code slots specifically to defeat frequency attack -- this pass's 'primary' key uses only the 30 codes that showed no such conflict",
+  "no full key or prior decipherment of this letter is known (check-solved: open, see NOTES.md; the correspondence's separate 1655 cipher noted in the solver repositories is a different key per TX-BARR's inventory)"
+ ],
+ "cheap_tests_in_order": [
+  "apply the gloss-derived 'primary' (non-conflicting) key to every run in the letter and measure coverage, then compare against a matched control of the same design (word-per-code nomenclature, same 42-run/368-token structure, same per-run gloss-reveal counts, homophone conflicts, built over fresh unrelated period French instead of the target's own words) -- TX-BARRT, 25 Sept 2026, done, see cheap_test_done below"
+ ],
+ "cheap_test_done": {
+  "date": "25 Sept 2026",
+  "worker": "TX-BARRT",
+  "method": "tools' equivalent: ciphers/thurloe-barriere-1654/coverage_test.py (target) and matched_control.py (control, 10 seeds)",
+  "target_coverage": "108/368 tokens read (29.3%) by the 30-code non-conflicting 'primary' key built from the letter's own sparse gloss; 36 of those 108 are in runs that had no printed gloss at all (the only tokens this test can call a 'new' reading)",
+  "target_sense_check": "no ground truth available for the target (that is the open question), so a numeric sense rate cannot be computed for it the way it can for the control; qualitatively, the 36 newly-covered tokens are dominated by the same handful of ultra-common short words the primary key already contains (le, se, de, que, a, je), so their appearance elsewhere in French prose is not on its own informative",
+  "control_coverage": "average 33.4% over 10 seeds (range 28.5-37.0%), i.e. AT OR ABOVE the target's own 29.3%, from a control built with the identical run/gloss-reveal structure but fresh, unrelated French text and randomly-assigned homophone codes",
+  "control_sense_rate": "average 74.2% over 10 seeds (range 62.8-84.2%) of the control's newly-covered (beyond-gloss) tokens land on the correct word, purely because the reused homophone codes decode to ultra-common short French words (le/de/que/se/a) that are correct at a high prior rate anywhere in French prose",
+  "verdict": "negative with a matched control (CLAUDE.md rule 3): the target's raw coverage number is not distinguishable from -- and is in fact slightly below -- what an unrelated control of the identical design achieves by chance, so this first cheap test gives no evidence that key_gloss.tsv reads anything beyond the spans the gloss itself already gave. Per the breadth rule (CLAUDE.md 3a), this spec's first test did not move it; no further test was run this pass and no campaign is proposed from this worker.",
+  "next_test_not_run": "a token-shuffle or key-shuffle permutation z-test on the SAME letter (LESSONS.md s.'Controls, always') would be a sharper next cheap test than a second freshly-built control, since it reuses the real gloss positions instead of resampling them; not run here (breadth rule: one test per spec per worker)."
+ },
+ "judge": {"language": "fr"},
+ "written": "25 Sept 2026, TX-BARRT (LANE TX), for .claude/briefs/runs/2026-09-25-lane-tx-barrt.md"
+}

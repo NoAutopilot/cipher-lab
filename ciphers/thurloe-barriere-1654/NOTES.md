@@ -198,3 +198,99 @@ Domestic 1654 x1) 4; www.british-history.ac.uk (toc + one content page) 2, plus 
 `images/` (7 jpg + manifest.json, 12 MB), this NOTES.md. No `ciphertext.txt`, no key, no decode script -- this
 job did not decode (brief scope). A future solver should start `ciphertext.txt` from the image transcription in
 section 2 (not yet done as a formal line-by-line pass) rather than from the djvu OCR, per rule 2.
+
+## 8. Transcription, alignment, spec and first cheap test (TX-BARRT, session_01GdGCckTNN8ftrRQRpsM17A, 25 Sept 2026)
+
+Intake gate checked: this target's `open` verdict (top of file, section 4) names the standard edition (Birch
+1742, pp.685-722) and the specific editions/pages/full-text searches actually read by TX-BARR (BHO in full,
+Aumale vol.6 appendix TOC in full, CSP Domestic 1654 full-text search) -- passes .claude/briefs/check-solved.md's
+bar, not `blocked`.
+
+**Design finding.** The target letter is a **word-per-code nomenclature**, not a letter-substitution cipher.
+Two spans give an exact word-count match between a fully-printed interlinear gloss phrase and the run's token
+count, decoded in sequential reading order (typesetting does not column-align a gloss word under its exact
+source token -- confirmed by comparing gloss-word x-position against token x-position on several short runs,
+which disagree by up to several token-widths even where the word-count matches exactly):
+- R004+R005 (`o 70 12 34 66 40 26 68 [circle-dot] d 61` ... `75 88 78 44 71 89 79 31`, 19 tokens split by the
+  clear French "ni ayant rien"): gloss "le parlement & le protecteur eftant fort oppofé, fi quoique je ne
+  doubte point que le protecteur demeure le maiftre," is exactly 19 words excluding "&" -- 19-for-19.
+- R022+R023+R024 (`90 d 92 39` ... `22 44` ... `89`, 7 tokens): gloss "lequel deffein d'eux le a pourroit tira,"
+  is exactly 7 words -- 7-for-7.
+
+Beyond these two, the gloss is **sparse and partial**: of 42 runs (368 code tokens total by this pass's count,
+`passA.tsv`), only 25 have any printed gloss at all, and most of those give only the first few words of a much
+longer run (e.g. R006, 26 tokens, gloss gives only the first 5 confidently; R026, 12 tokens, gloss gives the
+first 6). This matches TX-BARR's inventory characterisation (section 2 above) better than TX-THUR's OCR-only
+"mostly unglossed" (rule 2 vindicated again).
+
+**Conflict finding (important).** Building `key_gloss.tsv` from every confidently/tentatively glossed span and
+checking for the same bare digit assigned different values at different spots (not to be confused with two
+*different* digits both meaning the same common word, e.g. 34 and 71 both "protecteur" -- that is an ordinary
+homophone, not a conflict): at least 9 codes conflict -- **61** (four different values across R004/R006/R014/
+R015: ne, que, premier, la), **12** (le vs si), **40** (fort, chef, mil), **44** (le, pourroit, ne), **88**
+(point, un, le), **90** (e, lequel, chofes), **89** (demeure, tira), **31** (maistre, traiter), and **d** (je,
+de, deffein, le -- the single most conflicted code). This held even for two of the *cleanest* short exact-match
+spans (R014 "premier chef" and R015 "la vie", each an unambiguous 2-for-2 sequential match). The most likely
+reading, per LESSONS.md's "genuine break" table and CLAUDE.md rule 3's Salviati lesson: this is a nomenclature
+that gives its handful of highest-frequency short French words (le/la/que/ne/de/se) many interchangeable
+homophone slots specifically to defeat exactly this kind of frequency/crib attack, rather than each digit having
+one stable meaning. Marks were visible on roughly half of all numeral tokens (circumflex, grave, acute, macron/
+overline, caron, diaeresis shapes all observed) and might in principle disambiguate some of these conflicts, but
+this pass could not reliably distinguish mark *type* at the resolution available (only presence, recorded as a
+trailing `*` in `passA.tsv`) -- flagged as the most promising unresolved lead for a dedicated high-resolution
+mark-typing pass, not resolved here.
+
+**Files:** `passA.tsv` (this worker's transcription, run-based: run_id, tokens with mark-presence flags, gloss
+text, left/right clear context, leaf, note), `key_gloss.tsv` (every gloss-derived code/value/grade-C candidate,
+with an explicit `status` column: `primary` = the 30 non-conflicting codes used below, `conflict` = recorded but
+not applied), `coverage_test.py` (applies the primary key to every run in `passA.tsv` and reports coverage),
+`matched_control.py` (builds a control of the identical run/gloss-reveal structure over fresh, unrelated period
+French from `tools/data/fr16`, with ground truth, over N seeds).
+
+`tools/interlinear_align.py` does not fit this target (checked, per brief): it is built for the Blake/Montagu
+convention (a full decipherment line printed *above* each cipher line, one djvu-OCR pair per manuscript line),
+not for this letter's sparse phrase-level gloss printed *below* only some spans of inline-embedded code. Manual
+position + sequential-order alignment (above) was used instead, documented run by run in `passA.tsv`.
+
+**First cheap test (breadth rule, one test only, per spec).** Applied the 30-code non-conflicting `primary` key
+to every run of the letter (not just the glossed ones) and compared against a matched control of the identical
+design (CLAUDE.md rule 3: same N, same alphabet/homophone structure, same 42-run/368-token layout, same per-run
+gloss-reveal counts, same conflict pattern, but built over unrelated real period French with randomly-assigned
+homophone codes, so ground truth is known):
+
+| | tokens | key size | coverage | newly-covered (beyond the gloss itself) | sense rate on the newly-covered |
+|---|---|---|---|---|---|
+| **target** (this letter) | 368 | 30 | 108/368 = **29.3%** | 36 | not computable (no ground truth -- that is the open question); qualitatively dominated by le/se/de/que/a/je |
+| **control**, avg of 10 seeds | 368 | 42-46 | avg **33.4%** (range 28.5-37.0%) | avg 74/run-structure | avg **74.2%** (range 62.8-84.2%) |
+
+`python3 coverage_test.py` and `python3 matched_control.py --seeds 10` reproduce these numbers (both scripts
+read only `passA.tsv`/`key_gloss.tsv` and, for the control, `tools/data/fr16`; no network).
+
+**Verdict: negative with a matched control.** The target's raw coverage (29.3%) is not distinguishable from --
+and is in fact slightly *below* -- what an unrelated control of the identical design achieves purely by chance
+(avg 33.4%, and the control's own sense rate on its "newly covered" tokens is a respectable 74% purely because
+the reused homophone codes decode to ultra-common short words that are correct at a high prior rate anywhere in
+French prose). This is exactly the failure mode CLAUDE.md rule 3's Salviati lesson warns against: a coverage
+number, on its own, from a design with this much homophone/null reuse for common short words, demonstrates
+nothing. Per the breadth rule (CLAUDE.md 3a), this first test did not move the spec; no campaign is proposed
+from this worker, and no further test was run (one test per spec per breadth worker). The spec's
+`cheap_test_done` records both numbers.
+
+**What would be worth trying next (not this job's scope, listed for the next worker):**
+1. A token-shuffle or key-shuffle permutation z-test on this *same* letter's real gloss positions (LESSONS.md
+   "Controls, always"), which reuses the actual glossed spans rather than resampling a fresh control -- sharper
+   than rebuilding another synthetic control.
+2. A dedicated high-resolution re-crop specifically to type the marks (circumflex vs grave vs acute vs macron vs
+   caron vs diaeresis) rather than just flagging presence, to test whether marks resolve the 9 digit conflicts
+   found above -- this is the single most promising unresolved lead from this pass.
+3. TX-BARR's section 5 leads (the solver-repositories' note of a distinct "1655 cipher" for this same
+   correspondence, and DECODE's Add MS 4200 records 8395/8398, both still unopened) remain the more likely route
+   to an actual key than further cryptanalysis of this one letter alone, per LESSONS.md's "almost nothing fell
+   to pure cryptanalysis" table (this letter's ~320-token nomenclature-with-heavy-homophones sits squarely in
+   the "large nomenclator, one letter" blocked category, not the "genuine ciphertext-only break" one).
+
+No claim of a reading is made here (rule 7: no candidate plaintext is reported, so `judge_plaintext.py` was not
+run against a candidate -- only the spec file records the cheap test's judge block for a future worker).
+Grades: every `key_gloss.tsv` row is grade **C** (from the gloss, i.e. known plaintext for that span); nothing
+here is graded H or S. Rule 10: nothing in this section is new, unpublished, unread, first or never printed --
+a verifier classifies novelty, and none is claimed.
