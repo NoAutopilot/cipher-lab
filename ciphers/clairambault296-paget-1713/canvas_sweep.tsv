@@ -127,3 +127,140 @@ canvas	class	note
 314	endpaper	worker Y4; marbled paste-down (inside back cover)
 315	calibration-card	Gallica 'Texte deteriore -- reliure defectueuse / NF Z 43-120-11' card, twin of f316's card
 316	calibration-card	worker Y4; Gallica 'Contraste insuffisant / NF Z 43-120-14' end-of-digitisation card
+2	other	Gallica placeholder card "Texte deteriore -- reliure defectueuse, NF Z 43.120-11", not a real leaf
+4	blank	near-blank leaves, label "PL/819 794" mounted
+6	print	title page "Melanges pour servir a l'Histoire" Vol. 296 -- the volume's own opening title leaf
+7	print	printed pamphlet text, two columns
+8	blank	near-blank/blank leaves
+9	print	printed royal act "CHARLES PAR LA GRACE DE DIEU ROY DE FRANCE A..." with printed signature block, 16th-c.
+10	blank	blank/faint leaves
+12	print	printed pamphlet text continues
+14	print	printed pamphlet text
+16	print	printed pamphlet text
+17	FAILED TWICE, not retried (connection reset)	not read
+18	blank	near-blank leaf
+19	blank	blank leaves
+20	blank	blank leaf, faint printed impression showing through from facing leaf
+22	print	printed heraldic table "Suites des Chapitres...de l'Ordre du Sainct Esprit" (coats of arms grid)
+24	print	same heraldic-table pamphlet continues
+27	print	same heraldic-table pamphlet continues ("Suite du huictiesme Chapitre...")
+29	print	same heraldic-table pamphlet continues
+32	blank	blank/faint leaves
+34	print	same heraldic-table pamphlet continues
+37	print	title page "Suivent les Tables, contenant les noms...de l'Ordre du Benoist sainct Esprit...Loys treiziesme"
+39	print	same heraldic-table pamphlet continues ("Suite du premier chapitre tenu par le Roy Louys le Iuste")
+42	print	title page "LA GLOIRE DU VALDEGRACE" pamphlet, engraved frontispiece
+44	print	printed verse text continues (Valdegrace)
+47	print	printed verse text continues
+49	print	printed verse text continues
+52	print	printed verse/prose text continues
+54	print	printed legal text "LOY sur les Rebelles" (old-form black-letter print)
+57	print	printed pamphlet text continues
+59	print	printed pamphlet text continues
+62	print	printed pamphlet text continues
+64	FAILED TWICE, not retried (connection reset)	not read
+67	print	printed pamphlet text continues
+69	print	printed pamphlet text continues
+72	print	printed pamphlet text continues
+74	print	printed pamphlet text continues
+77	print	printed pamphlet text continues
+79	print	printed pamphlet text continues
+82	print	printed pamphlet "FACTUM..." title fragment + text
+84	print	printed pamphlet "ETAT DU PROCEZ VERBAL"
+87	print	printed pamphlet "TERMES DU PROCEZ VERBAL"
+89	print	printed pamphlet "TERMES DE L'INTERROGATOIRE...DE LA CONNESTABLE"
+92	print	printed pamphlet "TERMES DE L'INTERROGATOIRE" continues
+94	print	printed pamphlet "TERMES DE L'INTERROGATOIRE" continues, mentions "Dame de Sainte Laurence"
+97	print	printed pamphlet "TERMES DE L'INTERROGATOIRE" continues
+99	print	printed pamphlet "TERMES D'UNE REQUESTE DE LA Dame de Saint Laurens" / "REPONSE DE MRS. LES FERMIERS"
+102	print	printed pamphlet text continues
+104	print	printed pamphlet text continues
+107	print	printed pamphlet text continues
+109	print	printed pamphlet "TERMES DE L'INTERROGATOIRE" continues
+112	print	printed pamphlet "APPEL" / response text
+114	print	printed pamphlet "REPONSE"/legal text continues
+117	print	printed pamphlet text continues
+119	print	printed pamphlet text continues
+122	print	printed pamphlet "OBJECTIONS OU REPONSES du Sieur Fabricant"
+124	print	printed pamphlet text continues
+126	FAILED TWICE, not retried (connection reset)	not read
+127	print	printed pamphlet text continues
+128	print	printed pamphlet text continues
+129	print	printed pamphlet text continues
+132	print	printed pamphlet text continues
+134	print	printed pamphlet text continues
+136	print	title page "PANEGYRIQUE DE STE THERESE" -- confirms/extends worker P's f137 find one canvas earlier
+138	print	"Panegyrique de Ste Therese" pamphlet text continues
+140	print	"Panegyrique de Ste Therese" pamphlet text continues
+142	print	printed pamphlet text continues
+143	print	printed pamphlet text continues
+146	print	printed pamphlet text continues
+149	print	printed pamphlet text continues
+150	print	printed pamphlet "Panegyrique de St Fiacre" begins
+152	print	"Panegyrique de St Fiacre" continues
+153	print	"Panegyrique de St Fiacre" continues
+156	print	printed pamphlet text continues
+157	print	printed pamphlet text continues
+159	print	printed pamphlet text continues
+160	print	printed pamphlet "St Fiacre" text continues
+162	print	printed pamphlet text continues
+163	print	printed pamphlet text continues
+166	print	printed pamphlet "EXTRAIT DU PARLEMENT" / engraved plate
+167	blank	near-blank/faint leaves
+169	print	printed "DECLARATION DU ROY" text
+170	FAILED TWICE, not retried (connection reset)	not read
+172	print	printed pamphlet text continues
+173	print	printed pamphlet text continues
+176	print	printed pamphlet "REQUESTE" text
+177	print	printed pamphlet text continues
+179	print	printed pamphlet "DE LA MODE" text continues
+180	print	printed pamphlet text continues
+182	print	printed pamphlet text continues
+183	print	printed pamphlet text continues
+186	print	printed pamphlet text continues
+187	print	printed pamphlet text, marginal ms annotation "Pour d'Armanville...Septembre" (a filing note, not a letter)
+189	print	printed pamphlet "ORAISON FUNEBRE" title + text
+190	print	printed pamphlet text continues
+192	print	printed pamphlet text continues
+193	print	printed pamphlet text continues
+196	print	printed pamphlet text continues
+199	print	printed pamphlet text continues
+200	print	printed pamphlet text continues
+202	print	printed pamphlet text continues
+203	print	printed pamphlet text continues
+206	print	printed pamphlet text continues
+209	print	printed pamphlet text continues
+210	blank	blank leaves
+212	print	printed pamphlet "ORAISON FUNEBRE DE...MARIE ANNE CHRISTINE DE BAVIERE DAUPHINE DE FRANCE"
+213	print	same Oraison Funebre (Dauphine de Baviere) continues
+216	print	printed pamphlet text continues
+217	print	printed pamphlet text continues
+218	print	printed pamphlet text continues
+219	print	printed pamphlet text continues
+222	print	printed pamphlet text continues
+223	print	printed pamphlet "ORAISON FUNEBRE DE MARIE THERESE D'AUTRICHE...REYNE DE FRANCE"
+226	print	same Oraison Funebre (Marie Therese d'Autriche) continues
+227	print	same Oraison Funebre continues
+229	print	same Oraison Funebre continues
+232	print	printed pamphlet text continues
+234	print	printed pamphlet text continues
+236	print	printed pamphlet text continues
+237	print	printed bilingual "HIC JACET / CY GIST" epitaph plate for a religious figure
+239	print	printed pamphlet text continues
+242	print	printed pamphlet text continues
+244	print	printed pamphlet text continues
+247	print	printed pamphlet text continues
+248	print	printed pamphlet text continues
+252	print	printed pamphlet text continues
+254	print	printed pamphlet text continues
+256	print	printed pamphlet text continues
+257	print	printed pamphlet text continues
+259	print	printed pamphlet text continues
+262	print	printed pamphlet "DE LA BATAILLE D'YURY" text continues
+264	print	printed title page "D. LODOVICO BOUCHERAT...MAUSOLEUM" (Latin funeral text, Chancellor Boucherat)
+266	print	printed pamphlet text continues
+267	print	printed verse text continues
+269	print	printed pamphlet "TRAICTE PIECE DE LA REPUBLICQUE" text continues
+272	print	printed "DISCOURS AU PARLEMENT / A LA REPUBLIQUE DE VENISE" text
+274	print	printed pamphlet "TRAICTIER" text continues
+285	print	printed verse text (Latin/French)

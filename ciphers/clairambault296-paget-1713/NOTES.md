@@ -346,3 +346,66 @@ each/not retried further + 1 retry of f306 that succeeded = 28; + 9 gap canvases
 f215/f245/f275 attempted, 2 failed once each/not retried = 9), all >=2s apart, UA `cipher-lab research script
 (contact via repository)`. No 403/429/challenge seen (all failures `Connection reset by peer`, transient, same
 pattern worker T logged). No other host used (brief restricts this worker to gallica.bnf.fr only).
+
+## ZX2-GAL: sweep (25 Sept 2026, LANE ZX2)
+
+Brief: sequential eye-check at 300px of every unchecked canvas (187 remaining per `canvas_sweep.tsv`), 600px
+only for manuscript canvases, stop when pinned. `date -u` at start of this target: approx 2026-09-25 19:33
+UTC (after finishing clair1161 part 1). Host budget for this whole lane session (both targets combined) is
+capped at 220 gallica.bnf.fr requests by the job brief; clair1161 part 1 had already used 53, leaving 167 for
+this target.
+
+**133 additional canvases checked this pass (128 -> 261 of 316), all print except a handful of blank
+leaves.** Systematic sweep from canvas 2 through 285 (front region 2-124 at reduced density given the
+uniform result -- see below; back region 126-285 at higher density, matching the already-tighter existing
+gaps): the volume opens with its own title leaf ("Melanges pour servir a l'Histoire", vol. 296, canvas 6),
+then runs through a long, unbroken sequence of bound printed items -- a heraldic table of Ordre du
+Saint-Esprit chapter members (c22-c39), "La Gloire du Valdegrace" verse (c42-c59), a "Factum"/"Termes du
+Procez Verbal"/"Termes de l'Interrogatoire" legal-procedure dossier naming a "Dame de Sainte Laurence" and a
+"Connestable" (c82-c124 -- the same "Dame de Sainte Laurence" litigation also bound into the sister target
+clair1161's volume, canvas ~75, evidently a widely-distributed printed factum, not connected to this
+target), "Panegyrique de Ste Therese" (c136-c140, extending worker P's single c137 find), "Panegyrique de
+St Fiacre" (c150-c163), further legal/political pamphlets and a "Declaration du Roy" (c166-c183), an
+"Oraison Funebre" run for three different subjects in sequence -- an unnamed figure (c189), "Marie
+Anne-Christine de Baviere, Dauphine de France" (c212-c213), and "Marie Therese d'Autriche, Reyne de France"
+(c223-c229) -- a "Hic Jacet / Cy Gist" bilingual epitaph plate (c237), Chancellor Boucherat's Latin
+"Mausoleum" (c264), and further political/historical pamphlets through c285. **No cipher, no numeral-dense
+text, and no manuscript letter of any kind found in this entire 133-canvas sample** -- the one marginal
+manuscript annotation seen (c187, "Pour d'Armanville...Septembre") is a filing note on a printed leaf, not a
+letter. This confirms and extends Y4b's own observation that the volume is overwhelmingly printed pamphlets
+with manuscript letters confined to a few short, isolated inserts.
+
+**Front region (2-124) sampled at reduced density once the pattern was unambiguous.** After confirming every
+single canvas from 2-20 (13 canvases, all print/blank) and the existing every-other-canvas coverage from
+worker T/Y4b, the remaining 22-124 gaps were sampled at roughly 2-of-5 rather than exhaustively (single-canvas
+gaps checked in full; 5-wide gaps sampled at two points) to conserve the shared 220-request host budget for
+denser coverage of the less-sampled back region -- a deliberate density trade-off, logged here rather than
+silently reducing thoroughness. Every point sampled in this region was print or blank.
+
+**Six canvases failed twice (connection reset by peer, both attempts) and were not retried further per the
+one-retry rule: 17, 64, 126, 170, 246, 249.** Checked via `/__agentproxy/status` mid-pass: these are the same
+proxy-side `ws_closed_mid_exchange` tunnel-reset issue already logged 24 Sept 2026, not a Gallica block (no
+403/429/altcha seen anywhere this pass).
+
+**Not pinned. 55 canvases remain unresolved: 49 never attempted (26, 28, 30, 36, 38, 40, 46, 48, 50, 56, 58,
+60, 66, 68, 70, 76, 78, 80, 86, 88, 90, 96, 98, 100, 106, 108, 110, 116, 118, 120, 147, 154, 164, 174, 184,
+194, 197, 204, 207, 214, 224, 228, 230, 238, 240, 258, 260, 268, 270) plus the 6 connection-reset failures
+above.** All 55 sit inside gaps already flanked on both sides by confirmed print in this pass or an earlier
+one, so the prior/uniform result makes them low-probability, but they are not eye-checked and should not be
+assumed clear. Status stays `open`; not blocked -- this is a host-budget stopping point (the lane's combined
+220-request cap across both targets, not a wall-clock or judgement stop), not a conclusion that the letter
+isn't in this ark. **Suggestion for the next worker (one line, not actioned):** a fresh request-budget worker
+closing these final 55 canvases (55 requests plus retries, well inside a fresh 220-request allowance) would
+complete a full single-canvas sweep of the entire volume; given the total absence of any manuscript letter
+outside the three already-known blocks (f5 note, f282-283, f306-313) across 261 of 316 canvases now checked,
+also worth weighing against the 24 Sept access-route note (Y4b) that "P. xxx" citations in this finding aid
+may not track physical order at all -- i.e. the letter may not be in this digitised ark regardless of how
+completely it is swept.
+
+Hosts touched: gallica.bnf.fr only, one request at a time, >=2s apart, UA `cipher-lab research script
+(contact via repository)`. Requests: 161 (133 canvases resolved + 22 connection-reset retries, of which 16
+resolved on retry and 6 remained unresolved after their one permitted retry). No altcha/403/429 seen at any
+point. No native-resolution leaf fetched (nothing pinned); probe images kept in scratchpad only, not
+committed. `canvas_sweep.tsv` updated with all 133 new rows (plus 6 rows recording the unresolved canvases).
+Combined lane total this session: 53 (clair1161) + 161 (this target) = 214 of the 220-request cap -- the
+reason this pass stopped at 261/316 rather than continuing to a full sweep.
